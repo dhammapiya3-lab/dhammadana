@@ -16,7 +16,7 @@
   .row{display:flex;flex-direction:column;gap:6px;margin:12px 0}
   .row label{font-size:14px;font-weight:500}
   select,input[type=password],input[type=text]{height:44px;border:1px solid var(--line);border-radius:8px;padding:0 12px;background:var(--paper);font-size:15px;width:100%}
-  .seg2{display:flex;gap:8px}
+  .seg2{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
   .seg2 label{flex:1;line-height:1.3;border:1px solid var(--line);border-radius:8px;padding:10px;text-align:center;cursor:pointer;font-size:15px}
   .seg2 input{display:none}
   .seg2 label:has(input:checked){border-color:var(--robe);background:var(--robe-soft);color:var(--robe);font-weight:600}
@@ -53,7 +53,7 @@
     </div>
     <div class="card">
       <h2>2. 파일 종류</h2>
-      <div class="seg2"><label><input type="radio" name="kind" value="pdf" checked>PDF<br><small>화면(온라인)용</small></label><label><input type="radio" name="kind" value="pdf_print">PDF<br><small>인쇄용</small></label><label><input type="radio" name="kind" value="epub">EPUB</label></div>
+      <div class="seg2"><label><input type="radio" name="kind" value="pdf" checked>PDF<br><small>화면(온라인)용</small></label><label><input type="radio" name="kind" value="pdf_print">PDF<br><small>인쇄용 (본문)</small></label><label><input type="radio" name="kind" value="pdf_cover">PDF<br><small>인쇄용 표지</small></label><label><input type="radio" name="kind" value="epub">EPUB</label></div>
     </div>
     <div class="card">
       <h2>3. 파일 올리기</h2>
@@ -114,7 +114,7 @@ async function pickBook(){
   const r=await gh(`/contents/content/books/${id}.json?ref=main`); if(!r.ok){ show('err','책 정보를 불러오지 못했습니다.'); return; }
   const j=await r.json(); BOOKSHA=j.sha; BOOK=JSON.parse(dec(j.content));
   const eds=BOOK.editions||[];
-  $('#ed').innerHTML=eds.map((e,i)=>`<option value="${i}" ${e.current?'selected':''}>${esc(e.label||('판 '+(i+1)))}${e.current?' (최신판)':''}${e.pdf&&e.pdf.url?' · 화면용 PDF 있음':''}${e.pdf_print&&e.pdf_print.url?' · 인쇄용 PDF 있음':''}${e.epub&&e.epub.url?' · EPUB 있음':''}</option>`).join('');
+  $('#ed').innerHTML=eds.map((e,i)=>`<option value="${i}" ${e.current?'selected':''}>${esc(e.label||('판 '+(i+1)))}${e.current?' (최신판)':''}${e.pdf&&e.pdf.url?' · 화면용 PDF 있음':''}${e.pdf_print&&e.pdf_print.url?' · 인쇄용 PDF 있음':''}${e.pdf_cover&&e.pdf_cover.url?' · 인쇄용 표지 있음':''}${e.epub&&e.epub.url?' · EPUB 있음':''}</option>`).join('');
   $('#ed').disabled=!eds.length; if(!eds.length) show('err','이 책에 판 정보가 없습니다. 관리자 화면에서 판을 먼저 더해 주세요.'); else $('#out').innerHTML='';
   upd();
 }
@@ -138,10 +138,10 @@ function show(cls,html){ $('#out').innerHTML=`<div class="msg ${cls}">${html}</d
 
 $('#go').onclick=async()=>{
   const k=kind(), ei=+$('#ed').value, ed=BOOK.editions[ei], ext=k==='epub'?'epub':'pdf';
-  const KN={pdf:'화면용 PDF',pdf_print:'인쇄용 PDF',epub:'EPUB'}[k];
+  const KN={pdf:'화면용 PDF',pdf_print:'인쇄용 PDF (본문)',pdf_cover:'인쇄용 표지 PDF',epub:'EPUB'}[k];
   if(!FILE.name.toLowerCase().endsWith('.'+ext)){ show('err',`고른 종류(${KN})와 파일이 다릅니다.`); return; }
   const label=(ed.label||('판'+(ei+1))).replace(/[\/\\\s]+/g,'');
-  const key=`${ext}/${BOOK.id}/${BOOK.id}_${label}${k==='pdf_print'?'_인쇄용':''}.${ext}`;
+  const key=`${ext}/${BOOK.id}/${BOOK.id}_${label}${{pdf_print:'_인쇄용',pdf_cover:'_인쇄용표지'}[k]||''}.${ext}`;
   $('#go').disabled=true; $('#prog').hidden=false; $('#prog').value=0; show('', '올리는 중…');
   try{
     await new Promise((res,rej)=>{

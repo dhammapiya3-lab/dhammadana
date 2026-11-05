@@ -70,7 +70,8 @@ function formats(b) {
     f.push({ k, name, ext: false, url: `/download/${b.id}/${kind}` });
   };
   add('pdf', 'PDF', both ? 'PDF (화면용)' : 'PDF');
-  add('pdf_print', 'PDF', 'PDF (인쇄용)');
+  add('pdf_print', 'PDF', ok(e.pdf_cover) ? 'PDF (인쇄용 본문)' : 'PDF (인쇄용)');
+  add('pdf_cover', 'PDF', 'PDF (인쇄용 표지)');
   add('epub', 'EPUB', 'EPUB');
   if (e.reader) f.push({ k: '온라인 읽기', name: '온라인 읽기' });
   return f;
@@ -87,7 +88,8 @@ const DOWNLOADS = {};
 function dlName(b, e, kind) {
   const d = ymd(e.file_created) || ymd(e.published);
   const ext = kind === 'epub' ? 'epub' : 'pdf';
-  return safeName(`${b.title}${kind === 'pdf_print' ? '_인쇄용' : ''}${d ? '_' + d : ''}`) + '.' + ext;
+  const tag = { pdf_print: e.pdf_cover && e.pdf_cover.url ? '_인쇄용_본문' : '_인쇄용', pdf_cover: '_인쇄용_표지' }[kind] || '';
+  return safeName(`${b.title}${tag}${d ? '_' + d : ''}`) + '.' + ext;
 }
 const readerManifest = b => { const e = curEd(b); return e.reader ? fileUrl(`reader/${b.id}/${encodeURIComponent(e.label || 'ed')}/manifest.json`) : ''; };
 
@@ -275,7 +277,7 @@ for (const b of BOOKS) {
   <div><div class="crumb"><a href="/library/">법보시 도서관</a>${tr ? ` › <a href="/library/?trad=${tr.id}">${esc(tr.name)}</a> › <a href="/teacher/${t.id}/">${esc(t.name)}</a>` : ''}</div>
     ${b.series ? `<div class="small muted">${esc(b.series)}</div>` : ''}
     <h1>${esc(b.title)}</h1>${b.subtitle ? `<div class="orig" style="font-style:normal">${esc(b.subtitle)}</div>` : ''}${b.original_title || b.original_language ? `<div class="orig">${esc(b.original_title || '')}${b.original_language ? `<span class="lang-tag">${esc(b.original_language)} 원서</span>` : ''}</div>` : ''}
-    <div class="people">${t ? `스승 <a href="/teacher/${t.id}/">${esc(t.name)}</a> · ` : ''}<span class="muted">책 표기:</span> ${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>
+    <div class="people">${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>
     ${pl ? `<div style="margin:2px 0 8px"><a class="small" href="/dhammatalk/?pl=${pl.id}">▶ ${esc(t.name)}의 법문 바로 듣기</a></div>` : ''}
     <div class="actions">${e.reader ? `<a class="btn" href="/read/${b.id}/">온라인으로 읽기</a>` : ''}
       ${f.filter(x => x.k !== '온라인 읽기').map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">${x.name} 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>${x.name} 내려받기</a>`).join('')}
