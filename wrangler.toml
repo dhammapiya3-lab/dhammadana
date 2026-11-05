@@ -1,0 +1,8 @@
+# Cloudflare Pages 설정 (R2 저장소 연결)
+name = "dhammadana"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-11-01"
+
+[[r2_buckets]]
+binding = "FILES"
+bucket_name = "dhammadana-files"

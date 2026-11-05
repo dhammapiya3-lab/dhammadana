@@ -7,7 +7,7 @@
 - 호스팅: Cloudflare Pages (빌드 명령 `npm run build`, 출력 `dist`). main 에 push 하면 자동 배포.
 - 큰 파일(PDF·EPUB·쪽 그림): Cloudflare R2, 주소 `https://files.dhammadana.kr/` (`content/settings.json` 의 files_base).
   - `pdf/<ID>/<ID>_<판>.pdf`, `epub/<ID>/...`, `reader/<ID>/<판>/manifest.json` + `p/0001.webp`, `big/0001.webp`
-- 관리자 화면: `/admin` (Sveltia CMS, `public/admin/config.yml`). 운영자는 여기서 글·책 정보를 고친다.
+- 관리자 화면: `/admin`, 책 파일 올리기: `/admin/upload/` (functions/api/upload.js, R2 바인딩 FILES — wrangler.toml)
 - 화면 동작: `public/assets/app.js`, 디자인: `public/assets/site.css`.
 
 ## 자료 (content/)

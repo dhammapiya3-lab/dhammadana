@@ -22,7 +22,7 @@ collections:
   - name: books
     label: 책
     label_singular: 책
-    description: 도서관의 책들입니다. 책 한 권 = 파일 하나(자료번호.json)입니다.
+    description: "도서관의 책들입니다. 책 파일(PDF·EPUB)은 https://dhammadana.kr/admin/upload/ 에서 올리면 저절로 연결됩니다."
     folder: content/books
     format: json
     extension: json

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>책 파일 올리기 · 관리자</title>
+<link rel="icon" href="/images/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+  body{background:var(--paper)}
+  .up{max-width:680px;margin:0 auto;padding:30px 18px 80px}
+  .up h1{font-size:26px;margin:0 0 4px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-top:18px}
+  .card h2{font-size:16px;margin:0 0 12px}
+  .row{display:flex;flex-direction:column;gap:6px;margin:12px 0}
+  .row label{font-size:14px;font-weight:500}
+  select,input[type=password],input[type=text]{height:44px;border:1px solid var(--line);border-radius:8px;padding:0 12px;background:var(--paper);font-size:15px;width:100%}
+  .seg2{display:flex;gap:8px}
+  .seg2 label{flex:1;border:1px solid var(--line);border-radius:8px;padding:10px;text-align:center;cursor:pointer;font-size:15px}
+  .seg2 input{display:none}
+  .seg2 label:has(input:checked){border-color:var(--robe);background:var(--robe-soft);color:var(--robe);font-weight:600}
+  .drop{border:2px dashed var(--line);border-radius:12px;padding:30px 16px;text-align:center;cursor:pointer;color:var(--ink-soft)}
+  .drop.over{border-color:var(--robe);background:var(--robe-soft)}
+  .drop b{color:var(--ink)}
+  progress{width:100%;height:14px;accent-color:var(--robe)}
+  .msg{border-radius:8px;padding:12px 14px;font-size:14.5px;margin-top:14px;line-height:1.6}
+  .msg.ok{background:var(--leaf-soft);color:var(--leaf)}
+  .msg.err{background:#F6E1DC;color:#8A2E1C}
+  .note{font-size:13px;color:var(--ink-soft);line-height:1.6}
+  .top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<div class="up">
+  <div class="top"><a href="/admin/">← 관리자 화면</a><a href="/" target="_blank" rel="noopener">사이트 보기 ↗</a></div>
+  <h1 style="margin-top:18px">책 파일 올리기</h1>
+  <p class="note">PDF나 EPUB 파일을 올리면 파일 저장소(files.dhammadana.kr)에 들어가고, 책 정보의 내려받기 단추에 저절로 연결됩니다. 1~2분 뒤 사이트에 반영됩니다.</p>
+
+  <div class="card" id="tokCard" hidden>
+    <h2>관리자 열쇠</h2>
+    <p class="note">관리자 화면에 로그인할 때 쓴 GitHub 열쇠(github_pat_…)를 한 번 넣어 주세요. 이 브라우저에만 저장됩니다.</p>
+    <div class="row"><input type="password" id="tok" placeholder="github_pat_…" autocomplete="off"></div>
+    <button class="btn" id="tokSave">확인</button>
+    <div id="tokMsg"></div>
+  </div>
+
+  <div id="main" hidden>
+    <div class="card">
+      <h2>1. 책 고르기</h2>
+      <div class="row"><label for="book">책</label><select id="book"><option value="">불러오는 중…</option></select></div>
+      <div class="row"><label for="ed">판</label><select id="ed" disabled></select></div>
+    </div>
+    <div class="card">
+      <h2>2. 파일 종류</h2>
+      <div class="seg2"><label><input type="radio" name="kind" value="pdf" checked>PDF</label><label><input type="radio" name="kind" value="epub">EPUB</label></div>
+    </div>
+    <div class="card">
+      <h2>3. 파일 올리기</h2>
+      <div class="drop" id="drop" tabindex="0" role="button"><b>여기를 눌러 파일을 고르거나</b><br>파일을 끌어다 놓으세요<br><span class="note">한 파일 100MB까지</span></div>
+      <input type="file" id="file" accept=".pdf,.epub" hidden>
+      <div id="picked" class="note" style="margin-top:10px"></div>
+      <button class="btn" id="go" style="margin-top:12px;width:100%" disabled>올리기</button>
+      <progress id="prog" max="100" value="0" hidden style="margin-top:12px"></progress>
+      <div id="out"></div>
+    </div>
+    <p class="note" style="margin-top:18px">· 같은 판에 같은 종류 파일을 다시 올리면 새 파일로 바뀝니다.<br>· 온라인 읽기(쪽마다 넘겨 보기)는 PDF를 쪽 그림으로 바꾸는 작업이 따로 필요합니다. Claude에게 PDF를 주며 부탁하세요.<br>· <button class="link-btn" id="logout">열쇠 지우기</button></p>
+  </div>
+</div>
+<script>
+(function(){
+const REPO='dhammapiya3-lab/dhammadana', API='https://api.github.com/repos/'+REPO;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let TOKEN='', BOOK=null, BOOKSHA='', FILE=null;
+
+function findToken(){
+  try{ const t=localStorage.getItem('dd-gh-token'); if(t) return t; }catch(e){}
+  try{ for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if(!/sveltia/i.test(k)) continue;
+    const v=localStorage.getItem(k); const m=v&&v.match(/"token"\s*:\s*"([^"]+)"/); if(m) return m[1]; } }catch(e){}
+  return '';
+}
+const gh=(path,opt={})=>fetch(API+path,{...opt,headers:{authorization:'Bearer '+TOKEN,accept:'application/vnd.github+json',...(opt.headers||{})}});
+const dec=b64=>new TextDecoder().decode(Uint8Array.from(atob(b64.replace(/\n/g,'')),c=>c.charCodeAt(0)));
+const enc=str=>{const b=new TextEncoder().encode(str);let s='';for(let i=0;i<b.length;i+=8192)s+=String.fromCharCode.apply(null,b.subarray(i,i+8192));return btoa(s);};
+
+async function check(t){
+  const r=await fetch(API,{headers:{authorization:'Bearer '+t,accept:'application/vnd.github+json'}});
+  if(!r.ok) return false; const j=await r.json(); return !!(j.permissions&&(j.permissions.push||j.permissions.admin));
+}
+async function start(){
+  TOKEN=findToken();
+  if(TOKEN && await check(TOKEN)){ $('#main').hidden=false; loadBooks(); }
+  else { $('#tokCard').hidden=false; }
+}
+$('#tokSave').onclick=async()=>{
+  const t=$('#tok').value.trim(); $('#tokMsg').innerHTML='<p class="note">확인 중…</p>';
+  if(await check(t)){ TOKEN=t; try{localStorage.setItem('dd-gh-token',t)}catch(e){} $('#tokCard').hidden=true; $('#main').hidden=false; loadBooks(); }
+  else $('#tokMsg').innerHTML='<div class="msg err">이 열쇠로는 사이트를 고칠 수 없습니다. 열쇠가 맞는지, 기한이 지나지 않았는지 확인해 주세요.</div>';
+};
+$('#logout').onclick=()=>{try{localStorage.removeItem('dd-gh-token')}catch(e){} location.reload();};
+
+async function loadBooks(){
+  const r=await gh('/contents/content/books?ref=main'); const list=r.ok?await r.json():[];
+  let titles={}; try{ (await (await fetch('/data/site.json')).json()).books.forEach(b=>titles[b.id]=b.title);}catch(e){}
+  const ids=list.filter(f=>/^DL-\d{4}\.json$/.test(f.name)).map(f=>f.name.replace('.json','')).sort().reverse();
+  $('#book').innerHTML='<option value="">— 책을 고르세요 —</option>'+ids.map(id=>`<option value="${id}">${id} · ${esc(titles[id]||'(숨김 또는 새 책)')}</option>`).join('');
+  const want=new URLSearchParams(location.search).get('book'); if(want&&ids.includes(want)){ $('#book').value=want; pickBook(); }
+}
+$('#book').onchange=pickBook;
+async function pickBook(){
+  const id=$('#book').value; BOOK=null; $('#ed').innerHTML=''; $('#ed').disabled=true; upd();
+  if(!id) return;
+  const r=await gh(`/contents/content/books/${id}.json?ref=main`); if(!r.ok){ show('err','책 정보를 불러오지 못했습니다.'); return; }
+  const j=await r.json(); BOOKSHA=j.sha; BOOK=JSON.parse(dec(j.content));
+  const eds=BOOK.editions||[];
+  $('#ed').innerHTML=eds.map((e,i)=>`<option value="${i}" ${e.current?'selected':''}>${esc(e.label||('판 '+(i+1)))}${e.current?' (최신판)':''}${e.pdf&&e.pdf.url?' · PDF 있음':''}${e.epub&&e.epub.url?' · EPUB 있음':''}</option>`).join('');
+  $('#ed').disabled=!eds.length; if(!eds.length) show('err','이 책에 판 정보가 없습니다. 관리자 화면에서 판을 먼저 더해 주세요.'); else $('#out').innerHTML='';
+  upd();
+}
+const kind=()=>document.querySelector('input[name=kind]:checked').value;
+function setFile(f){
+  if(!f) return; const ext=(f.name.split('.').pop()||'').toLowerCase();
+  if(!['pdf','epub'].includes(ext)){ show('err','PDF나 EPUB 파일만 올릴 수 있습니다.'); return; }
+  if(f.size>100*1024*1024){ show('err','파일이 100MB보다 큽니다. Claude에게 부탁해 주세요.'); return; }
+  document.querySelector(`input[name=kind][value=${ext}]`).checked=true;
+  FILE=f; $('#picked').textContent=`고른 파일: ${f.name} (${(f.size/1048576).toFixed(1)}MB)`; $('#out').innerHTML=''; upd();
+}
+function upd(){ $('#go').disabled=!(BOOK&&FILE&&!$('#ed').disabled); }
+const drop=$('#drop');
+drop.onclick=()=>$('#file').click(); drop.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();$('#file').click();}};
+$('#file').onchange=e=>setFile(e.target.files[0]);
+['dragenter','dragover'].forEach(t=>drop.addEventListener(t,e=>{e.preventDefault();drop.classList.add('over');}));
+['dragleave','drop'].forEach(t=>drop.addEventListener(t,e=>{e.preventDefault();drop.classList.remove('over');}));
+drop.addEventListener('drop',e=>setFile(e.dataTransfer.files[0]));
+function show(cls,html){ $('#out').innerHTML=`<div class="msg ${cls}">${html}</div>`; }
+
+$('#go').onclick=async()=>{
+  const k=kind(), ei=+$('#ed').value, ed=BOOK.editions[ei];
+  if(!FILE.name.toLowerCase().endsWith('.'+k)){ show('err',`고른 종류(${k.toUpperCase()})와 파일이 다릅니다.`); return; }
+  const label=(ed.label||('판'+(ei+1))).replace(/[\/\\\s]+/g,'');
+  const key=`${k}/${BOOK.id}/${BOOK.id}_${label}.${k}`;
+  $('#go').disabled=true; $('#prog').hidden=false; $('#prog').value=0; show('', '올리는 중…');
+  try{
+    await new Promise((res,rej)=>{
+      const x=new XMLHttpRequest(); x.open('POST','/api/upload');
+      x.setRequestHeader('authorization','Bearer '+TOKEN); x.setRequestHeader('x-key',encodeURIComponent(key));
+      x.upload.onprogress=e=>{ if(e.lengthComputable) $('#prog').value=e.loaded/e.total*100; };
+      x.onload=()=>{ let j={}; try{j=JSON.parse(x.responseText)}catch(e){} x.status===200&&j.ok?res(j):rej(new Error(j.error||('오류 '+x.status))); };
+      x.onerror=()=>rej(new Error('인터넷 연결을 확인해 주세요.')); x.send(FILE);
+    });
+    $('#prog').value=100; show('', '파일을 올렸습니다. 책 정보에 연결하는 중…');
+    // 책 정보 고치기 (최신 내용을 다시 받아서 고침)
+    const r=await gh(`/contents/content/books/${BOOK.id}.json?ref=main`); const j=await r.json();
+    const b=JSON.parse(dec(j.content)); const e2=b.editions[ei];
+    e2[k]={...(e2[k]||{}),mode:'file',url:key};
+    if(!e2.file_created) e2.file_created=new Date().toLocaleDateString('sv-SE');
+    const put=await gh(`/contents/content/books/${BOOK.id}.json`,{method:'PUT',headers:{'content-type':'application/json'},
+      body:JSON.stringify({message:`책 파일 연결: ${BOOK.id} ${e2.label||''} ${k.toUpperCase()}`,content:enc(JSON.stringify(b,null,2)+'\n'),sha:j.sha,branch:'main'})});
+    if(!put.ok) throw new Error('파일은 올렸지만 책 정보 연결에 실패했습니다. 관리자 화면에서 '+k.toUpperCase()+' 주소에 '+key+' 를 적어 주세요.');
+    BOOK=b; FILE=null; $('#picked').textContent=''; $('#file').value='';
+    show('ok',`다 됐습니다! 『${esc(b.title)}』 ${esc(e2.label||'')} ${k.toUpperCase()}를 올리고 연결했습니다.<br>1~2분 뒤 <a href="/book/${b.id}/" target="_blank" rel="noopener">책 페이지 ↗</a>에 내려받기 단추가 나타납니다.`);
+    pickBook();
+  }catch(err){ show('err',esc(err.message)); }
+  finally{ $('#prog').hidden=true; upd(); }
+};
+start();
+})();
+</script>
+</body>
+</html>
