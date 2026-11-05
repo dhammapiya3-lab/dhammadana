@@ -190,7 +190,10 @@ async function pickZip(f){
   if(!f) return; if(!/\.zip$/i.test(f.name)){ zshow('err','zip 파일을 골라 주세요.'); return; }
   zshow('','묶음을 살펴보는 중…');
   try{
-    const ff=await loadFflate(); const files=ff.unzipSync(new Uint8Array(await f.arrayBuffer()));
+    const ff=await loadFflate(); const raw=ff.unzipSync(new Uint8Array(await f.arrayBuffer()));
+    // zip 안의 한글 이름 바로잡기 (UTF-8 표시가 없는 zip 은 이름이 깨져 보임)
+    const fixName=n=>{ if([...n].some(c=>c.charCodeAt(0)>255)) return n; try{ return new TextDecoder('utf-8',{fatal:true}).decode(Uint8Array.from([...n].map(c=>c.charCodeAt(0)))); }catch(e){ return n; } };
+    const files={}; for(const k of Object.keys(raw)) files[fixName(k).normalize('NFC')]=raw[k];
     const keys=Object.keys(files).filter(k=>!k.endsWith('/')&&!/(^|\/)(\.|__MACOSX)/.test(k));
     const R=/^reader\/(DL-\d{4})\/([^/]+)\/(manifest\.json|(p|big)\/\d{4}\.webp)$/, P=/^pdf\/(DL-\d{4})\/[^/]+\.pdf$/;
     const bad=keys.filter(k=>!R.test(k)&&!P.test(k)); if(bad.length) throw new Error('묶음 안에 알 수 없는 파일이 있습니다: '+esc(bad[0]));
