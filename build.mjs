@@ -8,6 +8,9 @@ const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const C = p => path.join(ROOT, 'content', p);
 const OUT = path.join(ROOT, 'dist');
 const readJSON = p => JSON.parse(fs.readFileSync(C(p), 'utf8'));
+import crypto from 'node:crypto';
+const ver = f => crypto.createHash('md5').update(fs.readFileSync(path.join(ROOT, 'public', f))).digest('hex').slice(0, 8);
+const V = { css: ver('assets/site.css'), js: ver('assets/app.js') };
 
 /* ---------- 자료 읽기 ---------- */
 function readMd(file) {
@@ -89,7 +92,7 @@ function layout({ title, nav = '', page = '', body, desc = '', image = '' }) {
 <link rel="icon" href="/images/icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/site.css?v=${V.css}">
 <script>try{var m=localStorage.getItem('dd-mode');m=m?JSON.parse(m):'auto';if(m!=='auto')document.documentElement.classList.add('mode-'+m)}catch(e){}</script>
 </head>
 <body data-page="${page}">
@@ -124,7 +127,7 @@ ${body}
   <div class="opt"><label for="pRate">빠르기</label><select id="pRate"><option value="0.8">0.8배</option><option value="1" selected>1배</option><option value="1.25">1.25배</option><option value="1.5">1.5배</option></select>
     <label class="inline"><input type="checkbox" id="pAuto" checked>연속 재생</label><button class="tbtn" id="pHide" aria-label="재생기 닫기">✕</button></div>
 </div><audio id="pAudio" preload="metadata"></audio></div>
-<script src="/assets/app.js" defer></script>
+<script src="/assets/app.js?v=${V.js}" defer></script>
 </body>
 </html>
 `;
