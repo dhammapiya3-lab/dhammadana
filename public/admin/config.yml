@@ -96,6 +96,7 @@ collections:
         fields:
           - { name: label, label: 판 이름, hint: "초판, 개정1판 …" }
           - { name: published, label: 발행일, required: false, hint: "예: 2024-05-01" }
+          - { name: page_count, label: 쪽수, widget: number, value_type: int, required: false, hint: "책의 전체 쪽수 (숫자만)" }
           - { name: file_created, label: 파일 만든 날, required: false }
           - { name: changes, label: 바뀐 내용, required: false }
           - { name: current, label: 최신판, widget: boolean, default: true }
