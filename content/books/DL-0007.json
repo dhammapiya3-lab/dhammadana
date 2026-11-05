@@ -38,7 +38,8 @@
       },
       "pdf_print": {
         "mode": "file",
-        "url": "pdf/DL-0007/DL-0007_개정판_인쇄용.pdf"
+        "url": "pdf/DL-0007/DL-0007_개정판_인쇄용.pdf",
+        "site": ""
       },
       "pdf_cover": {
         "mode": "file",
@@ -51,7 +52,13 @@
         "site": ""
       },
       "reader": false,
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://blog.naver.com/k3a3n3g3/222720005809",
+          "checked": "2026년 11월 6일",
+          "archive": ""
+        }
+      ],
       "collection": "我無말들 자체 제작",
       "collected": "",
       "permissions": [
