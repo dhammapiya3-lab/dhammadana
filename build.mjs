@@ -386,7 +386,7 @@ function talksBody() {
   return `<div class="wrap"><div class="prose" style="padding-bottom:0"><h1>법문 바로 듣기</h1><p class="muted">재생목록에서 법문을 골라 바로 들을 수 있습니다. 다른 메뉴로 옮겨 가도 아래 재생기는 계속 재생됩니다.</p></div>
   <div class="talks"><nav class="pl-list" aria-label="법문 모음">${PLAYLISTS.map(x => (x.group !== g ? `<div class="pl-group">${esc(g = x.group)}</div>` : '') + `<button class="pl" data-pl="${x.id}"><span class="n">${esc(x.name)}</span><span class="s">${x.list.length}개${x.subs.length > 1 ? ` · 재생목록 ${x.subs.length - 1}개` : ''} · ${esc(x.source || '')}</span></button>`).join('')}</nav>
   <section>${PLAYLISTS.map(p => `<div class="pl-panel" data-panel="${p.id}" hidden>
-    <div class="section-head"><h2>${esc(p.name)}</h2></div>
+    <div class="section-head"><h2>${esc(p.name)}</h2>${p.podbbang ? `<a class="btn sm ghost" href="https://www.podbbang.com/channels/${encodeURIComponent(p.podbbang)}" target="_blank" rel="noopener">팟빵 채널로 가기 ↗</a>` : p.link ? `<a class="btn sm ghost" href="${esc(p.link)}" target="_blank" rel="noopener">채널로 가기 ↗</a>` : ''}</div>
     ${p.teacher ? `<div class="small" style="margin-bottom:8px"><a href="/teacher/${p.teacher}/">${esc(teacherById(p.teacher)?.name || '')}의 책 보기 →</a></div>` : ''}
     ${!p.list.length ? `<p class="muted">법문 목록을 불러오지 못했습니다. 잠시 뒤 다시 확인해 주세요.</p>` : ''}
     ${p.subs.length > 1 ? `<div class="chips sub-chips" role="tablist" aria-label="재생목록">${p.subs.map(s => `<button class="chip" role="tab" data-sub="${p.id}:${s.id}">${esc(s.name)}<span class="n">${s.list.length}</span></button>`).join('')}</div>` : ''}
