@@ -48,7 +48,12 @@
       "permissions": [
         "amumaldeul-self"
       ],
-      "note": ""
+      "note": "",
+      "pdf_cover": {
+        "mode": "file",
+        "url": "pdf/DL-0007/DL-0007_개정판_인쇄용표지.pdf",
+        "site": ""
+      }
     }
   ]
 }
