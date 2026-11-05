@@ -418,3 +418,6 @@ button.chip{cursor:pointer;font-family:inherit;font-size:14px}
 .toc.static li.sub{padding-left:1.4em;font-size:.95em;color:var(--ink-soft)}
 .toc.static li span:last-child:not(:first-child){color:var(--ink-soft);font-variant-numeric:tabular-nums}
 .toc.static li span:first-child{color:var(--ink);font-size:15px}
+/* 꼬리말 로고: 바탕에 어울리게 */
+footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85;padding:0;background:none;border:0}
+:root.mode-night footer.site .logo-img{mix-blend-mode:normal;filter:invert(1);opacity:.7}
