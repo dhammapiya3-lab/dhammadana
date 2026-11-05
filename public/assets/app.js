@@ -97,7 +97,7 @@ function lightbox(src, title) {
 /* ---------- 도서관 찾아보기 ---------- */
 function initLibrary() {
   const q = new URLSearchParams(location.search);
-  const want = { trad: q.getAll('trad'), teacher: q.getAll('teacher'), topic: q.getAll('topic'), main: q.getAll('main'), fmt: q.getAll('fmt') };
+  const want = { trad: q.getAll('trad'), teacher: q.getAll('teacher'), topic: q.getAll('topic'), main: q.getAll('main'), fmt: q.getAll('fmt'), lang: q.getAll('lang') };
   $$('.filters input[data-f]').forEach(c => { if ((want[c.dataset.f] || []).includes(c.value)) c.checked = true; });
   const showEmpty = $('#showEmpty');
   showEmpty.checked = store.get('showEmpty', false);
@@ -114,7 +114,7 @@ function initLibrary() {
     let shown = 0;
     for (const b of books) {
       const has = (k, list) => !list || list.some(v => (b.dataset[k] || '').split('|').includes(v));
-      let ok = has('main', sel.main) && has('topics', sel.topic) && has('fmts', sel.fmt);
+      let ok = has('main', sel.main) && has('topics', sel.topic) && has('fmts', sel.fmt) && has('lang', sel.lang);
       // 전통과 스승은 '또는'으로 묶음
       if (ok && (sel.trad || sel.teacher)) ok = (sel.trad || []).includes(b.dataset.trad) || (sel.teacher || []).includes(b.dataset.teacher);
       b.hidden = !ok; if (ok) shown++;
@@ -191,6 +191,7 @@ async function runSearch() {
   for (const b of D.books) {
     const why = [];
     if ((scope === 'all' || scope === 'title') && [b.title, b.subtitle, b.orig].some(has)) why.push('제목');
+    if (scope === 'all' && b.lang && has(b.lang) && !why.length) why.push('원서 언어');
     if ((scope === 'all' || scope === 'author') && [b.byline, b.teacher, b.teacherRoman, b.tradition, ...(b.teacherAliases || [])].some(has)) why.push('스승·저자');
     if ((scope === 'all' || scope === 'tr') && has(b.tr)) why.push('옮긴이');
     if ((scope === 'all' || scope === 'topic') && [...b.topics, ...b.main].some(has)) why.push('주제');

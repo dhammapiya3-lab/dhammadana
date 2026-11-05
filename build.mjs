@@ -137,7 +137,7 @@ ${body}
 function coverCard(b) {
   const f = formats(b);
   const tr = b.teacher ? tradOfTeacher(b.teacher) : null;
-  return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${tr ? tr.id : ''}" data-teacher="${b.teacher || ''}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(f.map(x => x.k).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}">
+  return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${tr ? tr.id : ''}" data-teacher="${b.teacher || ''}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(f.map(x => x.k).join('|'))}" data-lang="${esc(b.original_language || '')}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}">
   <div class="cover">${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지" loading="lazy">` : `<div class="cover-ph">${esc(b.title)}</div>`}</div>
   <div class="t">${esc(b.title)}</div><div class="a">${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>
   ${f.length ? `<div class="fmt">${f.map(x => `<span>${x.k}${x.ext ? ' ↗' : ''}</span>`).join('')}</div>` : ''}</a>`;
@@ -207,6 +207,7 @@ put('press/support/index.html', layout({ title: '후원계좌', nav: 'press', pa
   <ul style="list-style:disc;padding-left:1.2em;margin:1.8em 0 0"><li>법보시 출판 전용 계좌입니다.</li><li>개인 계좌이기 때문에 기부금영수증 발행은 어렵습니다.</li></ul></div>`) }));
 
 // 도서관
+const LANGS = ['빠알리어', '영어', '미얀마어', '태국어', '싱할라어', '한국어', '기타'].filter(l => BOOKS.some(b => b.original_language === l));
 function libraryBody() {
   const chk = (set, val, label, n, extra = '') => `<label class="${n === 0 && set === 'teacher' ? 'zero' : ''}"><input type="checkbox" data-f="${set}" value="${esc(val)}">${label}${extra}<span class="n">${n}</span></label>`;
   let g = '', trad = '';
@@ -223,6 +224,7 @@ function libraryBody() {
     <h3>수행전통 · 스승</h3>${trad}
     <label class="small muted" style="margin-top:6px"><input type="checkbox" id="showEmpty">준비 중인 전통도 보기</label>
     <h3>주제</h3>${topics}
+    ${LANGS.length ? `<h3>원서의 언어</h3>${LANGS.map(l => chk('lang', l, esc(l), BOOKS.filter(b => b.original_language === l).length)).join('')}` : ''}
     <h3>형식</h3>${['PDF', 'EPUB', '온라인 읽기'].map(f => chk('fmt', f, f, BOOKS.filter(b => formats(b).some(x => x.k === f)).length)).join('')}
   </div></details>
   <section><div class="toolbar"><div><h1 class="h-page">법보시 도서관</h1><div class="muted small">자료 <span id="libCount">${BOOKS.length}</span>권</div></div>
@@ -248,7 +250,7 @@ for (const b of BOOKS) {
   <div><div class="cover-box">${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지">` : `<div class="cover-ph big">${esc(b.title)}</div>`}</div></div>
   <div><div class="crumb"><a href="/library/">법보시 도서관</a>${tr ? ` › <a href="/library/?trad=${tr.id}">${esc(tr.name)}</a> › <a href="/teacher/${t.id}/">${esc(t.name)}</a>` : ''}</div>
     ${b.series ? `<div class="small muted">${esc(b.series)}</div>` : ''}
-    <h1>${esc(b.title)}</h1>${b.subtitle ? `<div class="orig" style="font-style:normal">${esc(b.subtitle)}</div>` : ''}${b.original_title ? `<div class="orig">${esc(b.original_title)}</div>` : ''}
+    <h1>${esc(b.title)}</h1>${b.subtitle ? `<div class="orig" style="font-style:normal">${esc(b.subtitle)}</div>` : ''}${b.original_title || b.original_language ? `<div class="orig">${esc(b.original_title || '')}${b.original_language ? `<span class="lang-tag">${esc(b.original_language)} 원서</span>` : ''}</div>` : ''}
     <div class="people">${t ? `스승 <a href="/teacher/${t.id}/">${esc(t.name)}</a> · ` : ''}<span class="muted">책 표기:</span> ${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>
     ${pl ? `<div style="margin:2px 0 8px"><a class="small" href="/dhammatalk/?pl=${pl.id}">▶ ${esc(t.name)}의 법문 바로 듣기</a></div>` : ''}
     <div class="actions">${e.reader ? `<a class="btn" href="/read/${b.id}/">온라인으로 읽기</a>` : ''}
@@ -263,6 +265,7 @@ for (const b of BOOKS) {
       <dl class="kv"><dt>자료번호</dt><dd>${b.id}</dd>
       <dt>저자·스승</dt><dd>${t ? `<a href="/teacher/${t.id}/">${esc(t.name)}</a>${t.roman ? ` <span class="muted small">(${esc(t.roman)})</span>` : ''}` : esc(b.byline)}</dd>
       <dt>번역·편자</dt><dd>${esc(b.translator || b.byline)}</dd>
+      ${b.original_language ? `<dt>원서의 언어</dt><dd>${esc(b.original_language)}</dd>` : ''}
       ${b.original_source ? `<dt>원서 정보</dt><dd>${esc(b.original_source)}</dd>` : ''}
       <dt>자료 제공</dt><dd>${prov ? esc(prov.name) + (prov.urls || []).map(u => ` <a href="${esc(u)}" target="_blank" rel="noopener">↗</a>`).join('') : '—'}</dd>
       <dt>원본 출처</dt><dd>${(e.sources || []).length ? e.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>${s.checked ? ` <span class="muted small">(${esc(s.checked)} 확인)</span>` : ''}${s.archive ? ` · <a href="${esc(s.archive)}" target="_blank" rel="noopener">보관본</a>` : ''}`).join('<br>') : '—'}</dd>
@@ -443,7 +446,7 @@ const site = {
   variants: VARIANTS,
   books: BOOKS.map(b => {
     const t = teacherById(b.teacher), tr = b.teacher ? tradOfTeacher(b.teacher) : null;
-    return { id: b.id, title: b.title, subtitle: b.subtitle || '', orig: b.original_title || '', cover: b.cover || '', byline: b.byline, tr: b.translator || '', teacher: t ? t.name : '', teacherRoman: t ? t.roman : '', teacherAliases: t ? t.aliases : [], tradition: tr ? tr.name : '', topics: b.topics || [], main: b.main || [], manifest: readerManifest(b), desc: (b.description || '').slice(0, 300) };
+    return { id: b.id, title: b.title, subtitle: b.subtitle || '', orig: b.original_title || '', lang: b.original_language || '', cover: b.cover || '', byline: b.byline, tr: b.translator || '', teacher: t ? t.name : '', teacherRoman: t ? t.roman : '', teacherAliases: t ? t.aliases : [], tradition: tr ? tr.name : '', topics: b.topics || [], main: b.main || [], manifest: readerManifest(b), desc: (b.description || '').slice(0, 300) };
   }),
   aliases: [...TEACHERS.map(t => [t.name, ...(t.aliases || []), t.roman].filter(Boolean)), ...TRADS.map(t => [t.name])]
 };

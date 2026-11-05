@@ -36,6 +36,7 @@ collections:
       - { name: title, label: 제목 }
       - { name: subtitle, label: 부제, required: false }
       - { name: original_title, label: 원서 제목, required: false }
+      - { name: original_language, label: 원서의 언어, widget: select, required: false, options: [빠알리어, 영어, 미얀마어, 태국어, 싱할라어, 한국어, 기타], hint: "이 책을 옮길 때 바탕으로 삼은 원서의 언어" }
       - { name: series, label: 총서·시리즈, required: false }
       - name: teacher
         label: 스승
