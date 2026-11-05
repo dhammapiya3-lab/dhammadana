@@ -100,12 +100,22 @@ collections:
           - { name: current, label: 최신판, widget: boolean, default: true }
           - { name: public, label: 공개, widget: boolean, default: true }
           - name: pdf
-            label: PDF
+            label: PDF (화면용)
             widget: object
             collapsed: true
             fields:
               - { name: mode, label: 방식, widget: select, options: [{ label: "없음", value: none }, { label: "우리 저장소(R2)", value: file }, { label: "다른 사이트로 연결", value: link }], default: none }
               - { name: url, label: 주소, required: false, hint: "R2면 pdf/DL-0007/DL-0007_초판.pdf 처럼, 다른 사이트면 https:// 로 시작하는 주소" }
+              - { name: site, label: 연결할 사이트 이름, required: false }
+          - name: pdf_print
+            label: PDF (인쇄용)
+            hint: 인쇄용 PDF가 따로 있을 때. 위의 PDF는 화면(온라인)용입니다.
+            widget: object
+            collapsed: true
+            required: false
+            fields:
+              - { name: mode, label: 방식, widget: select, options: [{ label: "없음", value: none }, { label: "우리 저장소(R2)", value: file }, { label: "다른 사이트로 연결", value: link }], default: none }
+              - { name: url, label: 주소, required: false }
               - { name: site, label: 연결할 사이트 이름, required: false }
           - name: epub
             label: EPUB

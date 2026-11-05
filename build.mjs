@@ -60,11 +60,15 @@ const curEd = b => (b.editions || []).find(e => e.current) || (b.editions || [])
 const fileUrl = u => !u ? '' : /^https?:\/\//.test(u) ? u : S.files_base.replace(/\/$/, '') + '/' + u.replace(/^\//, '');
 function formats(b) {
   const e = curEd(b), f = [];
-  if (e.pdf && e.pdf.mode !== 'none' && e.pdf.url) f.push({ k: 'PDF', ext: e.pdf.mode === 'link', url: fileUrl(e.pdf.url), site: e.pdf.site || '제공처 사이트' });
-  if (e.epub && e.epub.mode !== 'none' && e.epub.url) f.push({ k: 'EPUB', ext: e.epub.mode === 'link', url: fileUrl(e.epub.url), site: e.epub.site || '제공처 사이트' });
-  if (e.reader) f.push({ k: '온라인 읽기' });
+  const ok = x => x && x.mode && x.mode !== 'none' && x.url;
+  const both = ok(e.pdf) && ok(e.pdf_print);
+  if (ok(e.pdf)) f.push({ k: 'PDF', name: both ? 'PDF (화면용)' : 'PDF', ext: e.pdf.mode === 'link', url: fileUrl(e.pdf.url), site: e.pdf.site || '제공처 사이트' });
+  if (ok(e.pdf_print)) f.push({ k: 'PDF', name: both ? 'PDF (인쇄용)' : 'PDF (인쇄용)', ext: e.pdf_print.mode === 'link', url: fileUrl(e.pdf_print.url), site: e.pdf_print.site || '제공처 사이트' });
+  if (ok(e.epub)) f.push({ k: 'EPUB', name: 'EPUB', ext: e.epub.mode === 'link', url: fileUrl(e.epub.url), site: e.epub.site || '제공처 사이트' });
+  if (e.reader) f.push({ k: '온라인 읽기', name: '온라인 읽기' });
   return f;
 }
+const uniqK = f => [...new Map(f.map(x => [x.k, x])).values()];
 const readerManifest = b => { const e = curEd(b); return e.reader ? fileUrl(`reader/${b.id}/${encodeURIComponent(e.label || 'ed')}/manifest.json`) : ''; };
 
 /* ---------- 도구 ---------- */
@@ -137,10 +141,10 @@ ${body}
 function coverCard(b) {
   const f = formats(b);
   const tr = b.teacher ? tradOfTeacher(b.teacher) : null;
-  return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${tr ? tr.id : ''}" data-teacher="${b.teacher || ''}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(f.map(x => x.k).join('|'))}" data-lang="${esc(b.original_language || '')}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}">
+  return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${tr ? tr.id : ''}" data-teacher="${b.teacher || ''}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(uniqK(f).map(x => x.k).join('|'))}" data-lang="${esc(b.original_language || '')}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}">
   <div class="cover">${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지" loading="lazy">` : `<div class="cover-ph">${esc(b.title)}</div>`}</div>
   <div class="t">${esc(b.title)}</div><div class="a">${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>
-  ${f.length ? `<div class="fmt">${f.map(x => `<span>${x.k}${x.ext ? ' ↗' : ''}</span>`).join('')}</div>` : ''}</a>`;
+  ${f.length ? `<div class="fmt">${uniqK(f).map(x => `<span>${x.k}${x.ext ? ' ↗' : ''}</span>`).join('')}</div>` : ''}</a>`;
 }
 const countTopic = t => BOOKS.filter(b => (b.topics || []).includes(t)).length;
 const countMain = t => BOOKS.filter(b => (b.main || []).includes(t)).length;
@@ -254,7 +258,7 @@ for (const b of BOOKS) {
     <div class="people">${t ? `스승 <a href="/teacher/${t.id}/">${esc(t.name)}</a> · ` : ''}<span class="muted">책 표기:</span> ${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>
     ${pl ? `<div style="margin:2px 0 8px"><a class="small" href="/dhammatalk/?pl=${pl.id}">▶ ${esc(t.name)}의 법문 바로 듣기</a></div>` : ''}
     <div class="actions">${e.reader ? `<a class="btn" href="/read/${b.id}/">온라인으로 읽기</a>` : ''}
-      ${f.filter(x => x.k !== '온라인 읽기').map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">${x.k} 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>${x.k} 내려받기</a>`).join('')}
+      ${f.filter(x => x.k !== '온라인 읽기').map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">${x.name} 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>${x.name} 내려받기</a>`).join('')}
       ${!f.length ? `<span class="muted small">파일을 준비하고 있습니다.</span>` : ''}</div>
     ${extF.length ? `<div class="small muted" style="margin-bottom:4px">↗ 표시된 파일은 ${esc(extF[0].site)}로 넘어가서 내려받습니다.</div>` : ''}
     <div class="ed-line">${esc(e.label || '')}${e.published ? ' · ' + esc(e.published) : ''} · ${esc(b.license)} · 자료번호 ${b.id}</div>
