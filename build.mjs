@@ -320,10 +320,19 @@ const fmtDate = d => { const t = Date.parse(d); return isNaN(t) ? '' : new Date(
 // 팟빵 채널 번호로 가져오기 (팟빵 앱이 쓰는 공개 목록 주소. 팟빵이 바꾸면 고쳐야 함)
 // 팟빵: 팟빵 앱이 쓰는 공개 목록 주소 (offset 은 '몇 번째 묶음'). 팟빵이 바꾸면 고쳐야 함
 const PB = 'https://app-api6.podbbang.com';
-async function getJSON(url) {
-  const ac = new AbortController(); const to = setTimeout(() => ac.abort(), 20000);
-  try { const r = await fetch(url, { signal: ac.signal, headers: { accept: 'application/json', 'user-agent': 'dhammadana-library-build' } }); if (!r.ok) throw new Error('HTTP ' + r.status); return await r.json(); }
-  finally { clearTimeout(to); }
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+async function getJSON(url, tries = 3) {
+  for (let k = 1; ; k++) {
+    const ac = new AbortController(); const to = setTimeout(() => ac.abort(), 20000);
+    try {
+      const r = await fetch(url, { signal: ac.signal, headers: { accept: 'application/json', 'user-agent': 'Mozilla/5.0 (dhammadana-library-build)' } });
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      await sleep(150); return await r.json();
+    } catch (err) {
+      console.warn(`[팟빵] ${k}번째 시도 실패: ${url.replace(PB, '')} — ${err.message}${err.cause ? ' / ' + (err.cause.code || err.cause.message) : ''}`);
+      if (k >= tries) throw err; await sleep(1500 * k);
+    } finally { clearTimeout(to); }
+  }
 }
 const pbEp = e => ({ id: e.id, title: e.title, date: (e.publishedAt || '').slice(0, 10), t: e.publishedAt || '', duration: e.media?.durationText || '', audio: e.media?.url || '' });
 async function pbAll(path) {
