@@ -1,0 +1,37 @@
+{
+  "groups": [
+    {
+      "name": "국내 법보시 사이트",
+      "desc": "우리말 법보시 자료를 나누는 곳입니다.",
+      "items": [
+        {
+          "name": "dhammayut-kor.org",
+          "url": "https://dhammayut-kor.org/books-list/",
+          "note": "태국 숲속 전통 스승들의 번역 서적과 수행 자료"
+        }
+      ]
+    },
+    {
+      "name": "해외 법보시 사이트",
+      "desc": "외국어 법문과 전자책을 나누는 곳입니다.",
+      "items": [
+        {
+          "name": "dhammadownload.com",
+          "url": "https://www.dhammadownload.com/index.htm",
+          "note": "미얀마 스님들의 법문 음성·영상·전자책 무료 도서관"
+        }
+      ]
+    },
+    {
+      "name": "빠알리 삼장·사전 도구",
+      "desc": "원문과 사전을 찾아볼 때 쓰는 곳입니다.",
+      "items": [
+        {
+          "name": "tipitaka.org",
+          "url": "https://tipitaka.org/",
+          "note": "6차 결집본 빠알리 삼장 원문"
+        }
+      ]
+    }
+  ]
+}

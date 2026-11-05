@@ -1,0 +1,50 @@
+{
+  "id": "DL-0004",
+  "title": "빠알리어-한국어-영어 색인",
+  "subtitle": "",
+  "original_title": "Pāli-Korean-English Index",
+  "series": "",
+  "teacher": "",
+  "byline": "오원탁 편저",
+  "translator": "",
+  "main": [],
+  "topics": [
+    "빠알리어",
+    "사전"
+  ],
+  "provider": "amumaldeul",
+  "press": true,
+  "cover": "/covers/DL-0004.jpg",
+  "description": "",
+  "license": "CC BY-NC-ND",
+  "original_source": "",
+  "added": "2026-11-06",
+  "order": 4,
+  "hidden": false,
+  "editions": [
+    {
+      "label": "초판",
+      "published": "",
+      "file_created": "",
+      "changes": "",
+      "current": true,
+      "public": true,
+      "pdf": {
+        "mode": "none",
+        "url": ""
+      },
+      "epub": {
+        "mode": "none",
+        "url": ""
+      },
+      "reader": false,
+      "sources": [],
+      "collection": "我無말들 자체 제작",
+      "collected": "",
+      "permissions": [
+        "amumaldeul-self"
+      ],
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "DL-0003",
+  "title": "행복을 찾아서",
+  "subtitle": "",
+  "original_title": "",
+  "series": "",
+  "teacher": "shweaung",
+  "byline": "우 쉐아웅 지음",
+  "translator": "식카와띠 위뿔라냐니 옮김",
+  "main": [],
+  "topics": [],
+  "provider": "amumaldeul",
+  "press": true,
+  "cover": "/covers/DL-0003.jpg",
+  "description": "",
+  "license": "CC BY-NC-ND",
+  "original_source": "",
+  "added": "2026-11-06",
+  "order": 3,
+  "hidden": false,
+  "editions": [
+    {
+      "label": "초판",
+      "published": "",
+      "file_created": "",
+      "changes": "",
+      "current": true,
+      "public": true,
+      "pdf": {
+        "mode": "none",
+        "url": ""
+      },
+      "epub": {
+        "mode": "none",
+        "url": ""
+      },
+      "reader": false,
+      "sources": [],
+      "collection": "我無말들 자체 제작",
+      "collected": "",
+      "permissions": [
+        "amumaldeul-self"
+      ],
+      "note": ""
+    }
+  ]
+}

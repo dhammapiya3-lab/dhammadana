@@ -1,0 +1,47 @@
+{
+  "id": "DL-0002",
+  "title": "참사람의 길",
+  "subtitle": "나와 우리의 행복을 위한 붓다의 가르침",
+  "original_title": "",
+  "series": "난다말라 사야도 시리즈 ②",
+  "teacher": "nandamala",
+  "byline": "난다말라비왐사 큰스님 지음",
+  "translator": "식카와띠 위뿔라냐니 옮김",
+  "main": [],
+  "topics": [],
+  "provider": "amumaldeul",
+  "press": true,
+  "cover": "/covers/DL-0002.jpg",
+  "description": "",
+  "license": "CC BY-NC-ND",
+  "original_source": "",
+  "added": "2026-11-06",
+  "order": 2,
+  "hidden": false,
+  "editions": [
+    {
+      "label": "초판",
+      "published": "",
+      "file_created": "",
+      "changes": "",
+      "current": true,
+      "public": true,
+      "pdf": {
+        "mode": "none",
+        "url": ""
+      },
+      "epub": {
+        "mode": "none",
+        "url": ""
+      },
+      "reader": false,
+      "sources": [],
+      "collection": "我無말들 자체 제작",
+      "collected": "",
+      "permissions": [
+        "amumaldeul-self"
+      ],
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+# 관리자 화면 설정 (Sveltia CMS) — 여기 적힌 칸들이 관리자 화면에 나옵니다.
+backend:
+  name: github
+  repo: dhammapiya3-lab/dhammadana
+  branch: main
+  commit_messages:
+    create: "새로 만듦: {{collection}} {{slug}}"
+    update: "고침: {{collection}} {{slug}}"
+    delete: "지움: {{collection}} {{slug}}"
+    uploadMedia: "그림 올림: {{path}}"
+    deleteMedia: "그림 지움: {{path}}"
+
+site_url: https://dhammadana.kr
+display_url: https://dhammadana.kr
+logo_url: /images/icon.svg
+media_folder: public/uploads
+public_folder: /uploads
+locale: ko
+
+collections:
+  # ───────── 책 ─────────
+  - name: books
+    label: 책
+    label_singular: 책
+    description: 도서관의 책들입니다. 책 한 권 = 파일 하나(자료번호.json)입니다.
+    folder: content/books
+    format: json
+    extension: json
+    identifier_field: id
+    slug: "{{fields.id}}"
+    create: true
+    summary: "{{id}} · {{title}}"
+    sortable_fields: [id, title, added]
+    fields:
+      - { name: id, label: 자료번호, hint: "DL-0008 처럼 차례대로 붙입니다. 한 번 정하면 바꾸지 마세요.", pattern: ['^DL-\d{4}$', 'DL-0000 꼴로 적어 주세요'] }
+      - { name: title, label: 제목 }
+      - { name: subtitle, label: 부제, required: false }
+      - { name: original_title, label: 원서 제목, required: false }
+      - { name: series, label: 총서·시리즈, required: false }
+      - name: teacher
+        label: 스승
+        hint: 이 책의 가르침을 펴신 스승. 목록에 없으면 먼저 '목록 → 스승'에 더하세요. 사전처럼 스승이 없는 책은 비워 둡니다.
+        widget: relation
+        collection: lists
+        file: teachers
+        value_field: "items.*.id"
+        search_fields: ["items.*.name", "items.*.roman"]
+        display_fields: ["items.*.name"]
+        required: false
+      - { name: byline, label: 책에 적힌 저자 표기, hint: "책에 인쇄된 그대로 (예: 난다말라비왐사 큰스님 지음)" }
+      - { name: translator, label: 옮긴이·편자, required: false, hint: "책에 인쇄된 그대로 (예: 식카와띠 위뿔라냐니 옮김)" }
+      - name: main
+        label: 주요 자료
+        widget: relation
+        collection: lists
+        file: topics
+        value_field: "main.*.label"
+        search_fields: ["main.*.label"]
+        multiple: true
+        required: false
+      - name: topics
+        label: 주제
+        hint: 여러 개 고를 수 있습니다. 새 주제는 '목록 → 주제'에서 더합니다.
+        widget: relation
+        collection: lists
+        file: topics
+        value_field: "items.*.label"
+        search_fields: ["items.*.label", "items.*.group"]
+        display_fields: ["items.*.label"]
+        multiple: true
+        required: false
+      - name: provider
+        label: 자료 제공처
+        widget: relation
+        collection: lists
+        file: providers
+        value_field: "items.*.id"
+        search_fields: ["items.*.name"]
+        display_fields: ["items.*.name"]
+      - { name: press, label: 我無말들 출판물, widget: boolean, default: false }
+      - { name: cover, label: 표지 그림, widget: image, required: false }
+      - { name: description, label: 책 소개, widget: markdown, required: false }
+      - { name: license, label: 라이선스, widget: select, options: ["CC BY-NC-ND", "CC BY-NC-SA", "CC BY-NC", "CC BY", "저작권자 허락", "자유 이용(퍼블릭 도메인)"], default: "CC BY-NC-ND" }
+      - { name: original_source, label: 원서 정보, required: false, hint: "원서 출판사·연도 등" }
+      - { name: added, label: 등록일, widget: datetime, type: date, format: "YYYY-MM-DD" }
+      - { name: order, label: 순서, widget: number, value_type: int, required: false, hint: "같은 날 등록한 책끼리의 순서 (클수록 앞)" }
+      - { name: hidden, label: 숨기기, widget: boolean, default: false, hint: "켜면 사이트에 나오지 않습니다" }
+      - name: editions
+        label: 판 (초판·개정판)
+        label_singular: 판
+        hint: 새 판이 나오면 '판 더하기'로 더하고, 새 판에만 '최신판'을 켜세요. 이전 판은 지우지 말고 보관합니다.
+        widget: list
+        summary: "{{fields.label}} {{fields.published}}"
+        fields:
+          - { name: label, label: 판 이름, hint: "초판, 개정1판 …" }
+          - { name: published, label: 발행일, required: false, hint: "예: 2024-05-01" }
+          - { name: file_created, label: 파일 만든 날, required: false }
+          - { name: changes, label: 바뀐 내용, required: false }
+          - { name: current, label: 최신판, widget: boolean, default: true }
+          - { name: public, label: 공개, widget: boolean, default: true }
+          - name: pdf
+            label: PDF
+            widget: object
+            collapsed: true
+            fields:
+              - { name: mode, label: 방식, widget: select, options: [{ label: "없음", value: none }, { label: "우리 저장소(R2)", value: file }, { label: "다른 사이트로 연결", value: link }], default: none }
+              - { name: url, label: 주소, required: false, hint: "R2면 pdf/DL-0007/DL-0007_초판.pdf 처럼, 다른 사이트면 https:// 로 시작하는 주소" }
+              - { name: site, label: 연결할 사이트 이름, required: false }
+          - name: epub
+            label: EPUB
+            widget: object
+            collapsed: true
+            fields:
+              - { name: mode, label: 방식, widget: select, options: [{ label: "없음", value: none }, { label: "우리 저장소(R2)", value: file }, { label: "다른 사이트로 연결", value: link }], default: none }
+              - { name: url, label: 주소, required: false }
+              - { name: site, label: 연결할 사이트 이름, required: false }
+          - { name: reader, label: 온라인 읽기, widget: boolean, default: false, hint: "PDF를 읽기 자료로 바꿔 R2에 올린 뒤에 켜세요" }
+          - name: sources
+            label: 원본 출처
+            widget: list
+            required: false
+            fields:
+              - { name: url, label: 주소 }
+              - { name: checked, label: 확인한 날, required: false }
+              - { name: archive, label: 보관본 주소, required: false, hint: "web.archive.org 에 저장한 주소" }
+          - { name: collection, label: 수집 경로, required: false, hint: "예: 저자에게서 직접 받음" }
+          - { name: collected, label: 받은 날, required: false }
+          - name: permissions
+            label: 게시 허락
+            widget: relation
+            collection: lists
+            file: permissions
+            value_field: "items.*.id"
+            search_fields: ["items.*.name"]
+            display_fields: ["items.*.name"]
+            multiple: true
+            required: false
+          - { name: note, label: 메모 (사이트에 안 나옴), widget: text, required: false }
+
+  # ───────── 소식 ─────────
+  - name: news
+    label: 소식
+    label_singular: 소식
+    description: 블로그·카페 글을 그대로 붙여넣어도 됩니다.
+    folder: content/news
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{fields.slugword}}"
+    summary: "{{date}} · {{title}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: 제목 }
+      - { name: slugword, label: 주소용 짧은 영문, hint: "예: new-book (영문·숫자·-만)", pattern: ['^[a-z0-9-]+$', '영문 소문자·숫자·- 만 써 주세요'] }
+      - { name: date, label: 날짜, widget: datetime, type: date, format: "YYYY-MM-DD" }
+      - { name: category, label: 구분, widget: select, options: [{ label: "도서관 소식", value: library }, { label: "我無말들 소식", value: press }], default: library }
+      - { name: source, label: 원문 주소 (블로그·카페), required: false }
+      - name: book
+        label: 관련 책
+        widget: relation
+        collection: books
+        value_field: id
+        search_fields: [id, title]
+        display_fields: ["{{id}} {{title}}"]
+        required: false
+      - { name: body, label: 본문, widget: markdown }
+
+  # ───────── 글 페이지 ─────────
+  - name: pages
+    label: 글 페이지
+    files:
+      - name: about
+        label: 소개
+        file: content/pages/about.md
+        fields:
+          - { name: title, label: 제목 }
+          - { name: homage, label: 귀경게, required: false }
+          - { name: body, label: 본문, widget: markdown }
+      - name: press-about
+        label: 출판사 소개
+        file: content/pages/press-about.md
+        fields:
+          - { name: title, label: 제목 }
+          - { name: body, label: 본문, widget: markdown }
+      - name: press-support
+        label: 후원계좌
+        file: content/pages/press-support.md
+        fields:
+          - { name: title, label: 제목 }
+          - { name: bank, label: 은행 }
+          - { name: account, label: 계좌번호 }
+          - { name: holder, label: 예금주 }
+          - { name: body, label: 안내 글 (두 줄), widget: text }
+
+  # ───────── 목록 ─────────
+  - name: lists
+    label: 목록 (스승·주제·제공처 등)
+    files:
+      - name: settings
+        label: 사이트 기본 정보
+        file: content/settings.json
+        fields:
+          - { name: site_name, label: 사이트 이름 }
+          - { name: site_sub, label: 영문 부제 }
+          - { name: site_url, label: 사이트 주소 }
+          - { name: files_base, label: 파일 저장소 주소, hint: "보통 바꾸지 않습니다" }
+          - { name: verse_pali, label: 첫 화면 빨리어 게송 }
+          - { name: verse_ko, label: 첫 화면 게송 우리말 }
+          - { name: verse_cite, label: 게송 출처 }
+          - name: publisher
+            label: 출판사 정보
+            widget: object
+            fields:
+              - { name: name, label: 출판사 }
+              - { name: publisher_person, label: 발행인 }
+              - { name: phone, label: 전화 }
+              - { name: email, label: 이메일 }
+              - { name: registration, label: 출판등록 }
+              - { name: license, label: 기본 라이선스 }
+          - { name: footer_license, label: 맨 아래 라이선스 안내, widget: text }
+          - { name: footer_sadhu, label: 맨 아래 회향 글 }
+      - name: teachers
+        label: 스승
+        file: content/teachers.json
+        fields:
+          - name: items
+            label: 스승
+            label_singular: 스승
+            widget: list
+            summary: "{{fields.name}} ({{fields.tradition}})"
+            fields:
+              - { name: id, label: 영문 아이디, hint: "주소에 쓰입니다. 영문 소문자·- 만. 한 번 정하면 바꾸지 마세요.", pattern: ['^[a-z0-9-]+$', '영문 소문자·숫자·- 만'] }
+              - { name: name, label: 대표 이름, hint: "사이트에 나오는 이름 (예: 우 조띠까 사야도)" }
+              - { name: roman, label: 로마자, required: false }
+              - { name: aliases, label: 다른 표기들, widget: list, required: false, hint: "책마다 다르게 적힌 이름. 검색에 쓰입니다." }
+              - name: tradition
+                label: 수행전통
+                widget: relation
+                collection: lists
+                file: traditions
+                value_field: "items.*.id"
+                search_fields: ["items.*.name"]
+                display_fields: ["items.*.name"]
+              - { name: bio, label: 소개, widget: markdown, required: false }
+              - { name: photo, label: 사진, widget: image, required: false }
+      - name: traditions
+        label: 수행전통
+        file: content/traditions.json
+        fields:
+          - name: items
+            label: 수행전통
+            label_singular: 전통
+            widget: list
+            summary: "{{fields.region}} · {{fields.name}}"
+            fields:
+              - { name: id, label: 영문 아이디, pattern: ['^[a-z0-9-]+$', '영문 소문자·숫자·- 만'] }
+              - { name: region, label: 지역 묶음, hint: "미얀마, 태국, 한국, 학자·서구 등" }
+              - { name: name, label: 이름 }
+              - name: representatives
+                label: 대표 스승
+                widget: relation
+                collection: lists
+                file: teachers
+                value_field: "items.*.id"
+                search_fields: ["items.*.name"]
+                display_fields: ["items.*.name"]
+                multiple: true
+                required: false
+      - name: topics
+        label: 주제
+        file: content/topics.json
+        fields:
+          - name: main
+            label: 주요 자료
+            widget: list
+            summary: "{{fields.label}}"
+            fields: [{ name: label, label: 이름 }]
+          - name: items
+            label: 주제
+            label_singular: 주제
+            hint: 위아래로 끌어 순서를 바꿀 수 있습니다. 같은 묶음은 붙여 두세요. 이름을 바꾸면 책들의 주제도 함께 고쳐야 합니다.
+            widget: list
+            summary: "{{fields.group}} › {{fields.label}}"
+            fields:
+              - { name: label, label: 주제 이름 }
+              - { name: group, label: 묶음, hint: "교리, 믿음·공덕, 계율, 수행, 경전·교학, 언어·사전 …" }
+      - name: providers
+        label: 자료 제공처·협력 단체
+        file: content/providers.json
+        fields:
+          - name: items
+            label: 제공처
+            label_singular: 제공처
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { name: id, label: 영문 아이디, pattern: ['^[a-z0-9-]+$', '영문 소문자·숫자·- 만'] }
+              - { name: name, label: 이름 }
+              - { name: kind, label: 종류, widget: select, options: [출판사, 단체, 승원·사원, 개인, 기타] }
+              - { name: urls, label: 사이트 주소들, widget: list, required: false }
+              - { name: partner, label: 협력 단체로 보이기, widget: boolean, default: false }
+              - { name: note, label: 짧은 설명, required: false }
+      - name: permissions
+        label: 게시 허락 기록
+        file: content/permissions.json
+        fields:
+          - name: items
+            label: 허락
+            label_singular: 허락
+            widget: list
+            summary: "{{fields.name}} · {{fields.scope}}"
+            fields:
+              - { name: id, label: 영문 아이디, pattern: ['^[a-z0-9-]+$', '영문 소문자·숫자·- 만'] }
+              - { name: kind, label: 개인/단체, widget: select, options: [개인, 단체] }
+              - { name: name, label: 허락한 분·단체 }
+              - { name: scope, label: 허락 범위, hint: "예: 이 단체의 모든 자료 / 『자애수행』 한 권" }
+              - { name: conditions, label: 조건, required: false }
+              - { name: date, label: 허락 날짜, required: false }
+              - { name: method, label: 받은 방법, required: false, hint: "이메일, 서면, 구두 …" }
+              - { name: image, label: 허락서 그림, widget: image, required: false }
+              - { name: image_public, label: 허락서를 누구나 보게 하기, widget: boolean, default: false }
+              - { name: status, label: 상태, widget: select, options: [유효, 만료, 철회], default: 유효 }
+              - { name: note, label: 메모 (사이트에 안 나옴), widget: text, required: false }
+      - name: links
+        label: 추천 사이트
+        file: content/links.json
+        fields:
+          - name: groups
+            label: 묶음
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { name: name, label: 묶음 이름 }
+              - { name: desc, label: 설명, required: false }
+              - name: items
+                label: 사이트
+                widget: list
+                summary: "{{fields.name}}"
+                fields:
+                  - { name: name, label: 이름 }
+                  - { name: url, label: 주소 }
+                  - { name: note, label: 설명, required: false }
+      - name: playlists
+        label: 법문 재생목록
+        file: content/playlists.json
+        fields:
+          - name: items
+            label: 재생목록
+            widget: list
+            summary: "{{fields.group}} › {{fields.name}}"
+            fields:
+              - { name: id, label: 영문 아이디, pattern: ['^[a-z0-9-]+$', '영문 소문자·숫자·- 만'] }
+              - { name: group, label: 묶음, hint: "선원별, 스승별 …" }
+              - { name: name, label: 이름 }
+              - name: teacher
+                label: 스승 (있으면 책 페이지와 이어짐)
+                widget: relation
+                collection: lists
+                file: teachers
+                value_field: "items.*.id"
+                search_fields: ["items.*.name"]
+                display_fields: ["items.*.name"]
+                required: false
+              - { name: source, label: 출처 표시, hint: "예: 팟빵 · 한국마하시선원" }
+              - { name: rss, label: 팟캐스트 RSS 주소, required: false, hint: "넣어 두면 사이트를 새로 만들 때마다 새 법문이 자동으로 들어옵니다" }
+              - name: episodes
+                label: 직접 넣는 법문 (RSS가 없을 때)
+                widget: list
+                required: false
+                fields:
+                  - { name: title, label: 제목 }
+                  - { name: audio, label: 음성 파일 주소 }
+                  - { name: date, label: 날짜, required: false }
+                  - { name: duration, label: 길이, required: false }
+      - name: variants
+        label: 표기 사전 (검색용)
+        file: content/variants.json
+        fields:
+          - name: items
+            label: 같은 말 묶음
+            hint: 한 묶음에 같은 뜻의 여러 표기를 적으면, 어느 것으로 찾아도 함께 찾아집니다.
+            widget: list
+            summary: "{{fields.words}}"
+            fields:
+              - { name: words, label: 표기들, widget: list }

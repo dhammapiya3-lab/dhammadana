@@ -1,0 +1,366 @@
+{
+  "items": [
+    {
+      "id": "mahasi",
+      "name": "마하시 사야도",
+      "roman": "Mahāsi Sayādaw",
+      "aliases": [],
+      "tradition": "mahasi",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "pandita",
+      "name": "빤디따라마 사야도",
+      "roman": "Sayādaw U Paṇḍita",
+      "aliases": [
+        "우 빤디따 사야도"
+      ],
+      "tradition": "mahasi",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "chanmyay",
+      "name": "찬매 사야도",
+      "roman": "Chanmyay Sayādaw",
+      "aliases": [
+        "우 자나까",
+        "찬메 사야도"
+      ],
+      "tradition": "mahasi",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "jatila",
+      "name": "우 자띨라 사야도",
+      "roman": "Sayādaw U Jaṭila",
+      "aliases": [],
+      "tradition": "mahasi",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "vasava",
+      "name": "우 와사와 사야도",
+      "roman": "U Vāsava",
+      "aliases": [],
+      "tradition": "mahasi",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "silananda",
+      "name": "우 실라난다 사야도",
+      "roman": "Sayādaw U Sīlānanda",
+      "aliases": [],
+      "tradition": "mahasi",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "saddhamma",
+      "name": "삿담마랑시 사야도",
+      "roman": "Saddhammaraṃsi Sayādaw",
+      "aliases": [
+        "삿담마란시 사야도"
+      ],
+      "tradition": "mahasi",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "fronsdal",
+      "name": "길 프론스달",
+      "roman": "Gil Fronsdal",
+      "aliases": [],
+      "tradition": "mahasi",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "shweoomin",
+      "name": "쉐우민 사야도",
+      "roman": "Shwe Oo Min Sayādaw",
+      "aliases": [],
+      "tradition": "shweoomin",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "tejaniya",
+      "name": "우 떼자니야 사야도",
+      "roman": "Sayādaw U Tejaniya",
+      "aliases": [],
+      "tradition": "shweoomin",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "khemavamsa",
+      "name": "케마왐사 스님",
+      "roman": "Khemavaṃsa",
+      "aliases": [
+        "케마왕사 스님"
+      ],
+      "tradition": "shweoomin",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "nanuttara",
+      "name": "냐눗따라 스님",
+      "roman": "Ñāṇuttara",
+      "aliases": [],
+      "tradition": "shweoomin",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "sasana",
+      "name": "사사나 스님",
+      "roman": "Sāsana",
+      "aliases": [],
+      "tradition": "shweoomin",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "dogyeong",
+      "name": "도경 스님",
+      "roman": "",
+      "aliases": [],
+      "tradition": "shweoomin",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "paauk",
+      "name": "파욱 사야도",
+      "roman": "Pa-Auk Sayādaw",
+      "aliases": [],
+      "tradition": "paauk",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "revata",
+      "name": "우 레와따 사야도",
+      "roman": "U Revata",
+      "aliases": [],
+      "tradition": "paauk",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "sila",
+      "name": "우 실라 사야도",
+      "roman": "U Sīla",
+      "aliases": [],
+      "tradition": "paauk",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "dipankara",
+      "name": "디빵까라 세얄레이",
+      "roman": "Sayalay Dīpaṅkarā",
+      "aliases": [
+        "사야레이"
+      ],
+      "tradition": "paauk",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "mogok",
+      "name": "모곡 사야도",
+      "roman": "Mogok Sayādaw",
+      "aliases": [],
+      "tradition": "mogok",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "ledi",
+      "name": "레디 사야도",
+      "roman": "Ledi Sayādaw",
+      "aliases": [],
+      "tradition": "ledi",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "bakhin",
+      "name": "우 바 킨",
+      "roman": "Sayagyi U Ba Khin",
+      "aliases": [],
+      "tradition": "ledi",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "goenka",
+      "name": "S. N. 고엔카",
+      "roman": "S. N. Goenka",
+      "aliases": [
+        "고엔카"
+      ],
+      "tradition": "ledi",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "nandamala",
+      "name": "난다말라비왐사 사야도",
+      "roman": "Nandamālābhivaṃsa",
+      "aliases": [
+        "난다말라비왕사",
+        "난다말라 사야도",
+        "난다말라비왐사 큰스님"
+      ],
+      "tradition": "myanmar-etc",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "mahagandhayon",
+      "name": "마하간다용 사야도",
+      "roman": "Mahāgandhāyon Sayādaw",
+      "aliases": [
+        "아신 자나까비왐사"
+      ],
+      "tradition": "myanmar-etc",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "jotika",
+      "name": "우 조띠까 사야도",
+      "roman": "U Jotika",
+      "aliases": [
+        "우 조티카 사야도",
+        "조티카"
+      ],
+      "tradition": "myanmar-etc",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "shweaung",
+      "name": "우 쉐아웅",
+      "roman": "U Shwe Aung",
+      "aliases": [],
+      "tradition": "myanmar-etc",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "mun",
+      "name": "아잔 문",
+      "roman": "Ajahn Mun",
+      "aliases": [
+        "아짠 문",
+        "아잔 만"
+      ],
+      "tradition": "forest",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "chah",
+      "name": "아잔 차",
+      "roman": "Ajahn Chah",
+      "aliases": [
+        "아짠 차"
+      ],
+      "tradition": "forest",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "mahabua",
+      "name": "아잔 마하부와",
+      "roman": "Ajahn Mahā Bua",
+      "aliases": [],
+      "tradition": "forest",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "lee",
+      "name": "아잔 리 담마다로",
+      "roman": "Ajahn Lee Dhammadharo",
+      "aliases": [],
+      "tradition": "forest",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "sumedho",
+      "name": "아잔 수메도",
+      "roman": "Ajahn Sumedho",
+      "aliases": [],
+      "tradition": "forest",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "brahm",
+      "name": "아잔 브람",
+      "roman": "Ajahn Brahm",
+      "aliases": [],
+      "tradition": "forest",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "buddhadasa",
+      "name": "붓다다사 스님",
+      "roman": "Buddhadāsa Bhikkhu",
+      "aliases": [],
+      "tradition": "buddhadasa",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "panyavanta",
+      "name": "빤냐완따 스님",
+      "roman": "",
+      "aliases": [],
+      "tradition": "korea",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "panyavaro",
+      "name": "아잔 빤냐와로 스님",
+      "roman": "",
+      "aliases": [
+        "아짠 빤냐와로 스님"
+      ],
+      "tradition": "korea",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "gakmuk",
+      "name": "각묵 스님",
+      "roman": "",
+      "aliases": [],
+      "tradition": "scholar",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "gorkom",
+      "name": "니나 반 고르콤",
+      "roman": "Nina van Gorkom",
+      "aliases": [],
+      "tradition": "scholar",
+      "bio": "",
+      "photo": ""
+    }
+  ]
+}

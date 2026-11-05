@@ -1,0 +1,19 @@
+{
+  "site_name": "테라와다불교 법보시 도서관",
+  "site_sub": "DHAMMADĀNA LIBRARY · dhammadana.kr",
+  "site_url": "https://dhammadana.kr",
+  "files_base": "https://files.dhammadana.kr",
+  "verse_pali": "Sabbadānaṃ dhammadānaṃ jināti",
+  "verse_ko": "법의 보시는 모든 보시를 뛰어넘는다",
+  "verse_cite": "법구경 354게송",
+  "publisher": {
+    "name": "我無말들(아무말들)",
+    "publisher_person": "담마삐야",
+    "phone": "010-3239-5401",
+    "email": "dhammapiya3@gmail.com",
+    "registration": "제2021-000048호 (2021.5.18.)",
+    "license": "CC BY-NC-ND"
+  },
+  "footer_license": "모든 자료는 무료 법보시입니다. 자료마다 표시된 라이선스(대부분 CC BY-NC-ND)를 따라 비영리로만 나누어 주세요.",
+  "footer_sadhu": "이 법보시의 공덕을 모든 존재와 함께 나눕니다. Sādhu! Sādhu! Sādhu!"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "DL-0007",
+  "title": "자애수행",
+  "subtitle": "",
+  "original_title": "Mettā Bhāvanā",
+  "series": "",
+  "teacher": "chanmyay",
+  "byline": "찬매 사야도 법문",
+  "translator": "디라왐사 스님 편역",
+  "main": [],
+  "topics": [
+    "자애·사무량심"
+  ],
+  "provider": "amumaldeul",
+  "press": true,
+  "cover": "/covers/DL-0007.jpg",
+  "description": "",
+  "license": "CC BY-NC-ND",
+  "original_source": "",
+  "added": "2026-11-06",
+  "order": 7,
+  "hidden": false,
+  "editions": [
+    {
+      "label": "초판",
+      "published": "",
+      "file_created": "",
+      "changes": "",
+      "current": true,
+      "public": true,
+      "pdf": {
+        "mode": "none",
+        "url": ""
+      },
+      "epub": {
+        "mode": "none",
+        "url": ""
+      },
+      "reader": false,
+      "sources": [],
+      "collection": "我無말들 자체 제작",
+      "collected": "",
+      "permissions": [
+        "amumaldeul-self"
+      ],
+      "note": ""
+    }
+  ]
+}

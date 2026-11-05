@@ -1,0 +1,49 @@
+{
+  "id": "DL-0006",
+  "title": "죽음과 재생 시의 업",
+  "subtitle": "",
+  "original_title": "",
+  "series": "",
+  "teacher": "nandamala",
+  "byline": "난다말라비왐사 사야도 지음",
+  "translator": "웨싼따라 옮김",
+  "main": [],
+  "topics": [
+    "업과 윤회"
+  ],
+  "provider": "amumaldeul",
+  "press": true,
+  "cover": "/covers/DL-0006.jpg",
+  "description": "",
+  "license": "CC BY-NC-ND",
+  "original_source": "",
+  "added": "2026-11-06",
+  "order": 6,
+  "hidden": false,
+  "editions": [
+    {
+      "label": "초판",
+      "published": "",
+      "file_created": "",
+      "changes": "",
+      "current": true,
+      "public": true,
+      "pdf": {
+        "mode": "none",
+        "url": ""
+      },
+      "epub": {
+        "mode": "none",
+        "url": ""
+      },
+      "reader": false,
+      "sources": [],
+      "collection": "我無말들 자체 제작",
+      "collected": "",
+      "permissions": [
+        "amumaldeul-self"
+      ],
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "items": [
+    {
+      "id": "mahasi",
+      "region": "미얀마",
+      "name": "마하시 전통",
+      "representatives": [
+        "mahasi",
+        "pandita",
+        "chanmyay"
+      ]
+    },
+    {
+      "id": "shweoomin",
+      "region": "미얀마",
+      "name": "쉐우민 전통",
+      "representatives": [
+        "shweoomin",
+        "tejaniya"
+      ]
+    },
+    {
+      "id": "paauk",
+      "region": "미얀마",
+      "name": "파욱 전통",
+      "representatives": [
+        "paauk"
+      ]
+    },
+    {
+      "id": "mogok",
+      "region": "미얀마",
+      "name": "모곡 전통",
+      "representatives": [
+        "mogok"
+      ]
+    },
+    {
+      "id": "ledi",
+      "region": "미얀마",
+      "name": "레디–우바킨–고엔카",
+      "representatives": [
+        "ledi",
+        "bakhin",
+        "goenka"
+      ]
+    },
+    {
+      "id": "myanmar-etc",
+      "region": "미얀마",
+      "name": "교학·기타",
+      "representatives": [
+        "nandamala",
+        "mahagandhayon"
+      ]
+    },
+    {
+      "id": "forest",
+      "region": "태국",
+      "name": "숲속 전통",
+      "representatives": [
+        "mun",
+        "chah",
+        "mahabua"
+      ]
+    },
+    {
+      "id": "buddhadasa",
+      "region": "태국",
+      "name": "붓다다사",
+      "representatives": [
+        "buddhadasa"
+      ]
+    },
+    {
+      "id": "korea",
+      "region": "한국",
+      "name": "한국 테라와다",
+      "representatives": []
+    },
+    {
+      "id": "scholar",
+      "region": "기타",
+      "name": "전통 무관(교학·학술)",
+      "representatives": []
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "DL-0005",
+  "title": "생각할 거리를 드립니다",
+  "subtitle": "",
+  "original_title": "",
+  "series": "",
+  "teacher": "jotika",
+  "byline": "우 조티카 사야도 지음",
+  "translator": "위무띠 법주 스님 옮김",
+  "main": [],
+  "topics": [],
+  "provider": "amumaldeul",
+  "press": true,
+  "cover": "/covers/DL-0005.jpg",
+  "description": "",
+  "license": "CC BY-NC-ND",
+  "original_source": "",
+  "added": "2026-11-06",
+  "order": 5,
+  "hidden": false,
+  "editions": [
+    {
+      "label": "초판",
+      "published": "",
+      "file_created": "",
+      "changes": "",
+      "current": true,
+      "public": true,
+      "pdf": {
+        "mode": "none",
+        "url": ""
+      },
+      "epub": {
+        "mode": "none",
+        "url": ""
+      },
+      "reader": false,
+      "sources": [],
+      "collection": "我無말들 자체 제작",
+      "collected": "",
+      "permissions": [
+        "amumaldeul-self"
+      ],
+      "note": ""
+    }
+  ]
+}

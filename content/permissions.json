@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "id": "amumaldeul-self",
+      "kind": "단체",
+      "name": "我無말들 출판사",
+      "scope": "이 단체의 모든 자료",
+      "conditions": "비영리, 출처 표시, 변경 금지",
+      "date": "",
+      "method": "자체 제작",
+      "image": "",
+      "image_public": false,
+      "status": "유효",
+      "note": ""
+    }
+  ]
+}

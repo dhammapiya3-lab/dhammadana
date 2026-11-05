@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "id": "amumaldeul",
+      "name": "我無말들 출판사",
+      "kind": "출판사",
+      "urls": [],
+      "partner": false,
+      "note": ""
+    },
+    {
+      "id": "theravada-kr",
+      "name": "(사)한국테라와다불교",
+      "kind": "단체",
+      "urls": [
+        "https://theravada.co.kr/"
+      ],
+      "partner": true,
+      "note": "theravada.co.kr"
+    },
+    {
+      "id": "shweoomin-kr",
+      "name": "쉐우민지혜명상센터",
+      "kind": "승원·사원",
+      "urls": [
+        "https://cafe.naver.com/shweoomin"
+      ],
+      "partner": true,
+      "note": "네이버 카페 · cafe.naver.com/shweoomin"
+    }
+  ]
+}
