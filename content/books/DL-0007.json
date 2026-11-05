@@ -59,8 +59,8 @@
       "current": true,
       "public": true,
       "pdf": {
-        "mode": "none",
-        "url": "",
+        "mode": "file",
+        "url": "pdf/DL-0007/DL-0007_개정판.pdf",
         "site": ""
       },
       "pdf_print": {
@@ -78,7 +78,7 @@
         "url": "epub/DL-0007/DL-0007_개정판.epub",
         "site": ""
       },
-      "reader": false,
+      "reader": true,
       "sources": [
         {
           "url": "https://blog.naver.com/k3a3n3g3/222720005809",
