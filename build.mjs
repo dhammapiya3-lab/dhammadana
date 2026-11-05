@@ -181,7 +181,7 @@ put('about/index.html', layout({ title: '소개', nav: 'about', page: 'about', b
 
 // 출판사
 function pressShell(tab, inner) {
-  return `<div class="wrap press"><aside><img class="logo-img" src="/images/logo.png" alt="我無말들">
+  return `<div class="wrap press"><aside>
   <div class="side-nav">${[['/press/', '출판도서', 'all'], ['/press/about/', '출판사 소개', 'about'], ['/press/notice/', '공지사항', 'notice'], ['/press/support/', '후원계좌', 'support']].map(([h, l, k]) => `<a href="${h}" class="${tab === k ? 'on' : ''}">${l}</a>`).join('')}</div>
   </aside><section>${inner}</section></div>`;
 }

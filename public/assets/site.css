@@ -131,7 +131,8 @@ footer.site{border-top:1px solid var(--line);margin-top:40px;padding:34px 0 46px
 /* 출판사 */
 .press{display:grid;grid-template-columns:230px 1fr;gap:44px;padding-top:36px}
 @media (max-width:860px){.press{grid-template-columns:1fr;gap:24px}}
-.press aside{border-top:3px solid var(--ink);padding-top:22px}
+.press aside{padding-top:0}
+.press aside .side-nav{margin-top:0;border-top:3px solid var(--ink)}
 .press aside .logo-img{height:auto;width:100%;max-width:220px;padding:0}
 .side-nav{list-style:none;padding:18px 0;margin:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
 .side-nav button{border:0;background:none;padding:2px 0;cursor:pointer;text-align:left;font-size:15px;color:var(--ink-soft)}
