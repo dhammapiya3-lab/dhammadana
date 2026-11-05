@@ -317,8 +317,27 @@ async function fetchRss(url) {
   } catch (err) { console.warn('[RSS] 가져오기 실패:', url, err.message); return null; }
 }
 const fmtDate = d => { const t = Date.parse(d); return isNaN(t) ? '' : new Date(t).toISOString().slice(0, 10); };
+// 팟빵 채널 번호로 가져오기 (팟빵 앱이 쓰는 공개 목록 주소. 팟빵이 바꾸면 고쳐야 함)
+async function fetchPodbbang(id) {
+  const out = [];
+  try {
+    for (let off = 0, total = Infinity; off < total && off < 3000; off += 50) {
+      const ac = new AbortController(); const to = setTimeout(() => ac.abort(), 15000);
+      const r = await fetch(`https://app-api6.podbbang.com/channels/${encodeURIComponent(id)}/episodes?offset=${off}&limit=50&sort=desc`, { signal: ac.signal, headers: { accept: 'application/json', 'user-agent': 'dhammadana-library-build' } }); clearTimeout(to);
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      const j = await r.json(); const d = j.data || [];
+      total = j.summary?.totalCount ?? 0;
+      for (const e of d) {
+        const sec = +(e.duration || e.media?.duration || 0);
+        out.push({ title: e.title, date: (e.publishedAt || '').slice(0, 10), duration: sec ? `${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, '0')}` : '', audio: e.media?.url || '' });
+      }
+      if (!d.length) break;
+    }
+    return out.filter(x => x.audio);
+  } catch (err) { console.warn('[팟빵] 가져오기 실패:', id, err.message); return out.length ? out.filter(x => x.audio) : null; }
+}
 for (const p of PLAYLISTS) {
-  const got = p.rss ? await fetchRss(p.rss) : null;
+  const got = p.podbbang ? await fetchPodbbang(p.podbbang) : p.rss ? await fetchRss(p.rss) : null;
   p.list = (got && got.length ? got : (p.episodes || [])).map(e => ({ title: e.title, date: fmtDate(e.date) || e.date || '', duration: e.duration || '', audio: e.audio }));
   p.fetched = !!(got && got.length);
 }
