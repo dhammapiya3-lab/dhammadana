@@ -25,6 +25,32 @@
   "hidden": false,
   "editions": [
     {
+      "label": "초판",
+      "published": "초판 발행 2013년 7월 1일",
+      "file_created": "",
+      "changes": "",
+      "current": false,
+      "public": false,
+      "pdf": {
+        "mode": "none",
+        "url": "",
+        "site": ""
+      },
+      "epub": {
+        "mode": "none",
+        "url": "",
+        "site": ""
+      },
+      "reader": false,
+      "sources": [],
+      "collection": "我無말들 자체 제작",
+      "collected": "",
+      "permissions": [
+        "amumaldeul-self"
+      ],
+      "note": "책 판권면(개정판)에 적힌 초판 발행일"
+    },
+    {
       "label": "개정판",
       "published": "2024년 7월 20일",
       "page_count": 132,
