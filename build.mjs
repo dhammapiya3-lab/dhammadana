@@ -62,13 +62,33 @@ function formats(b) {
   const e = curEd(b), f = [];
   const ok = x => x && x.mode && x.mode !== 'none' && x.url;
   const both = ok(e.pdf) && ok(e.pdf_print);
-  if (ok(e.pdf)) f.push({ k: 'PDF', name: both ? 'PDF (화면용)' : 'PDF', ext: e.pdf.mode === 'link', url: fileUrl(e.pdf.url), site: e.pdf.site || '제공처 사이트' });
-  if (ok(e.pdf_print)) f.push({ k: 'PDF', name: both ? 'PDF (인쇄용)' : 'PDF (인쇄용)', ext: e.pdf_print.mode === 'link', url: fileUrl(e.pdf_print.url), site: e.pdf_print.site || '제공처 사이트' });
-  if (ok(e.epub)) f.push({ k: 'EPUB', name: 'EPUB', ext: e.epub.mode === 'link', url: fileUrl(e.epub.url), site: e.epub.site || '제공처 사이트' });
+  const add = (kind, k, name) => {
+    const x = e[kind]; if (!ok(x)) return;
+    if (x.mode === 'link') { f.push({ k, name, ext: true, url: fileUrl(x.url), site: x.site || '제공처 사이트' }); return; }
+    if (/^https?:/.test(x.url)) { f.push({ k, name, ext: false, url: x.url }); return; }
+    (DOWNLOADS[b.id] = DOWNLOADS[b.id] || {})[kind] = { key: x.url.replace(/^\//, ''), name: dlName(b, e, kind) };
+    f.push({ k, name, ext: false, url: `/download/${b.id}/${kind}` });
+  };
+  add('pdf', 'PDF', both ? 'PDF (화면용)' : 'PDF');
+  add('pdf_print', 'PDF', 'PDF (인쇄용)');
+  add('epub', 'EPUB', 'EPUB');
   if (e.reader) f.push({ k: '온라인 읽기', name: '온라인 읽기' });
   return f;
 }
 const uniqK = f => [...new Map(f.map(x => [x.k, x])).values()];
+// 내려받을 때 파일 이름: 책제목_날짜.pdf (날짜 = 파일 만든 날, 없으면 출간일)
+function ymd(t) {
+  const m = String(t || '').match(/(\d{4})\s*[.\-/년]\s*(\d{1,2})(?:\s*[.\-/월]\s*(\d{1,2}))?/);
+  if (!m) { const y = String(t || '').match(/(\d{4})/); return y ? y[1] : ''; }
+  return m[1] + '-' + m[2].padStart(2, '0') + (m[3] ? '-' + m[3].padStart(2, '0') : '');
+}
+const safeName = s => String(s).replace(/[\\/:*?"<>|\u0000-\u001f]+/g, ' ').replace(/\s+/g, ' ').trim();
+const DOWNLOADS = {};
+function dlName(b, e, kind) {
+  const d = ymd(e.file_created) || ymd(e.published);
+  const ext = kind === 'epub' ? 'epub' : 'pdf';
+  return safeName(`${b.title}${kind === 'pdf_print' ? '_인쇄용' : ''}${d ? '_' + d : ''}`) + '.' + ext;
+}
 const readerManifest = b => { const e = curEd(b); return e.reader ? fileUrl(`reader/${b.id}/${encodeURIComponent(e.label || 'ed')}/manifest.json`) : ''; };
 
 /* ---------- 도구 ---------- */
@@ -456,6 +476,7 @@ const site = {
 };
 fs.mkdirSync(path.join(OUT, 'data'), { recursive: true });
 fs.writeFileSync(path.join(OUT, 'data/site.json'), JSON.stringify(site));
+fs.writeFileSync(path.join(OUT, 'data/downloads.json'), JSON.stringify(DOWNLOADS));
 fs.writeFileSync(path.join(OUT, '_redirects'), `/read/:id/:page /read/:id/ 200\n`);
 console.log(`[팟빵·RSS] ${PLAYLISTS.map(p => p.name + ' ' + p.list.length + '개, 재생목록 ' + (p.subs.length - 1) + '개').join(' / ')}`);
 console.log(`만든 페이지 ${Object.keys(pages).length}개, 책 ${BOOKS.length}권, 법문 모음 ${PLAYLISTS.length}개`);
