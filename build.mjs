@@ -70,7 +70,7 @@ const slugT = s => encodeURIComponent(s);
 const NAV = [['/about/', '소개', 'about'], ['/press/', '我無말들 출판사', 'press'], ['/library/', '법보시 도서관', 'library'], ['/dhammatalk/', '법문 바로 듣기', 'dhammatalk'], ['/links/', '추천·협력 사이트', 'links'], ['/news/', '소식', 'news']];
 const wheel = cls => `<svg class="${cls}" viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="20" cy="20" r="15"/><circle cx="20" cy="20" r="3.2"/><path d="M20 5v30M5 20h30M9.4 9.4l21.2 21.2M30.6 9.4L9.4 30.6"/></g></svg>`;
 
-function layout({ title, nav = '', page = '', body, desc = '' }) {
+function layout({ title, nav = '', page = '', body, desc = '', image = '' }) {
   const t = title ? `${title} · ${S.site_name}` : S.site_name;
   const P = S.publisher;
   return `<!DOCTYPE html>
@@ -80,7 +80,12 @@ function layout({ title, nav = '', page = '', body, desc = '' }) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(t)}</title>
 <meta name="description" content="${esc(desc || '부처님과 테라와다 스승들의 가르침을 우리말로 옮긴 법보시 서적을 무료로 찾고, 내려받고, 읽는 곳')}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="${esc(S.site_name)}">
 <meta property="og:title" content="${esc(t)}">
+<meta property="og:description" content="${esc(desc || '부처님과 테라와다 스승들의 가르침을 우리말로 옮긴 법보시 서적을 무료로 찾고, 내려받고, 읽는 곳')}">
+<meta property="og:image" content="${esc(S.site_url.replace(/\/$/, '') + (image || '/images/og.jpg'))}">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/images/icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
@@ -236,7 +241,7 @@ for (const b of BOOKS) {
   const pl = PLAYLISTS.find(p => p.teacher && p.teacher === b.teacher);
   const extF = f.filter(x => x.ext);
   put(`book/${b.id}/index.html`, layout({
-    title: b.title, nav: 'library', page: 'book', desc: `${b.title} — ${b.byline}${b.translator ? ', ' + b.translator : ''}`, body: `<div class="wrap detail">
+    title: b.title, nav: 'library', page: 'book', image: b.cover || '', desc: `${b.title} — ${b.byline}${b.translator ? ', ' + b.translator : ''}`, body: `<div class="wrap detail">
   <div><div class="cover-box">${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지">` : `<div class="cover-ph big">${esc(b.title)}</div>`}</div></div>
   <div><div class="crumb"><a href="/library/">법보시 도서관</a>${tr ? ` › <a href="/library/?trad=${tr.id}">${esc(tr.name)}</a> › <a href="/teacher/${t.id}/">${esc(t.name)}</a>` : ''}</div>
     ${b.series ? `<div class="small muted">${esc(b.series)}</div>` : ''}
