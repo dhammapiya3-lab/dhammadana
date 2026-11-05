@@ -3,19 +3,20 @@
   "title": "자애수행",
   "subtitle": "",
   "original_title": "Mettā Bhāvanā",
-  "original_language": "",
+  "original_language": "미얀마어",
   "series": "",
   "teacher": "chanmyay",
   "byline": "찬매 사야도 법문",
   "translator": "디라왐사 스님 편역",
   "main": [],
   "topics": [
-    "자애·사무량심"
+    "자애·사무량심",
+    "사마타"
   ],
   "provider": "amumaldeul",
   "press": true,
   "cover": "/covers/DL-0007.jpg",
-  "description": "",
+  "description": "찬매 사야도께서는 미얀마 양곤의 찬매 수행처와 세계 여러 나라의 수행처에서 위빠사나 수행을 위한 기본 수행법으로, 마음의 집중과 평온을 얻기 위한 기본 토대가 되는 자애수행을 가르치셨습니다.\n\n이 책은 사야도께서 2004년도에 미얀마인을 위해 설법하신 미얀마어 자애법문을 바탕으로, 1992년에 뉴질랜드에서 영어로 설법하신 『Mettā-Bhāvanā』와 『Discourse on the practice of Vipassana Meditation』, 『위빳사나 수행 28일』에 실린 자애수행법 내용을 첨삭하여 한 권으로 편집한 법보시 책입니다.\n\n이 법보시 인연으로 많은 사람들이 부처님 가르침 따라 거룩한 삶을 삶며 열반으로 향하기를 기원합니다. 나아가 『Brahmavihāra Dhamma 거룩한 머묾 - 마하시 사야도』 법문도 더 공부하고 실천할 수 있기를 바랍니다. 그리하여 이 세상이 ‘자애-연민-같이기뻐함-평온’의 네 가지 거룩한 마음으로 충만하기를 또한 기원합니다.",
   "license": "CC BY-NC-ND",
   "original_source": "",
   "added": "2026-11-06",
@@ -23,19 +24,21 @@
   "hidden": false,
   "editions": [
     {
-      "label": "초판",
-      "published": "",
-      "file_created": "",
+      "label": "개정판",
+      "published": "개정판 발행 2024년 7월 20일",
+      "file_created": "2026년 3월 3일",
       "changes": "",
       "current": true,
       "public": true,
       "pdf": {
         "mode": "none",
-        "url": ""
+        "url": "",
+        "site": ""
       },
       "epub": {
         "mode": "none",
-        "url": ""
+        "url": "",
+        "site": ""
       },
       "reader": false,
       "sources": [],
