@@ -298,6 +298,8 @@ for (const b of BOOKS) {
     <dl class="gb-kv"><dt>판</dt><dd>${esc(edText(e) || '—')}</dd>${e.page_count ? `<dt>쪽수</dt><dd>${esc(e.page_count)}쪽</dd>` : ''}${(b.editions || []).filter(x => x !== e && (x.published || x.label)).length ? `<dt>펴낸 이력</dt><dd>${(b.editions || []).map(x => esc(edText(x))).filter(Boolean).join('<br>')}</dd>` : ''}<dt>라이선스</dt><dd>${esc(b.license)}</dd><dt>자료번호</dt><dd>${b.id}</dd></dl></div></aside><div class="d-rest">
     <div class="labels">${(b.main || []).map(m => `<a class="t" href="/library/?main=${slugT(m)}">${esc(m)}</a>`).join('')}${(b.topics || []).map(x => `<a class="t" href="/library/?topic=${slugT(x)}">${esc(x)}</a>`).join('')}${tr ? `<a href="/library/?trad=${tr.id}">${esc(tr.name)}</a>` : ''}${b.press ? `<a href="/press/">我無말들 출간</a>` : ''}</div>
     ${b.description ? `<div class="desc">${marked.parse(b.description)}</div>` : ''}
+    ${b.author_intro && b.author_intro.trim() ? `<h2 class="h-sub">저자 소개</h2><div class="desc intro">${marked.parse(b.author_intro)}</div>` : ''}
+    ${b.translator_intro && b.translator_intro.trim() ? `<h2 class="h-sub">옮긴이 소개</h2><div class="desc intro">${marked.parse(b.translator_intro)}</div>` : ''}
     ${b.contents && b.contents.trim() ? contentsHtml(b.contents) : ''}
     ${e.reader && !(b.contents && b.contents.trim()) ? `<div id="tocMount" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}"></div>` : ''}
     <details class="record"><summary>자료 기록 (출처 · 판 · 라이선스)</summary><div class="record-body">
