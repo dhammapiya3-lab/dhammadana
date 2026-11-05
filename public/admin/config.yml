@@ -81,6 +81,7 @@ collections:
       - { name: press, label: 我無말들 출판물, widget: boolean, default: false }
       - { name: cover, label: 표지 그림, widget: image, required: false }
       - { name: description, label: 책 소개, widget: markdown, required: false }
+      - { name: contents, label: 목차, widget: text, required: false, hint: "한 줄에 한 장씩 적습니다. 아랫단계는 줄 앞에 '-' 를 붙입니다. 쪽수는 '제1장 자애란 ... 15' 처럼 끝에 적으면 오른쪽에 나옵니다." }
       - { name: license, label: 라이선스, widget: select, options: ["CC BY-NC-ND", "CC BY-NC-SA", "CC BY-NC", "CC BY", "저작권자 허락", "자유 이용(퍼블릭 도메인)"], default: "CC BY-NC-ND" }
       - { name: original_source, label: 원서 정보, required: false, hint: "원서 출판사·연도 등" }
       - { name: added, label: 등록일, widget: datetime, type: date, format: "YYYY-MM-DD" }

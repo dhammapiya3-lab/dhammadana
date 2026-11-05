@@ -78,6 +78,16 @@ function formats(b) {
 }
 // 판 표시: '개정판 발행 2024년 7월 20일' (발행일 글에 판 이름이 이미 있으면 그대로)
 const edText = e => { const l = (e.label || '').trim(), p = (e.published || '').trim(); if (!p) return l; if (!l || p.includes(l)) return p; return `${l} 발행 ${p}`; };
+// 목차: 한 줄에 하나. 앞에 공백 2칸 또는 '-' 를 붙이면 아랫단계. 줄 끝 '... 15' 같은 쪽수는 오른쪽에
+function contentsHtml(t) {
+  const rows = t.split('\n').map(l => l.replace(/\s+$/, '')).filter(l => l.trim()).map(l => {
+    const sub = /^(\s{2,}|\t|-\s)/.test(l); let x = l.replace(/^[\s\-]+/, '');
+    const m = x.match(/^(.*?)(?:\s*[.·…]{2,}\s*|\s{2,})(\d+)$/); let pg = '';
+    if (m) { x = m[1]; pg = m[2]; }
+    return `<li class="${sub ? 'sub' : ''}"><span>${esc(x)}</span>${pg ? `<span>${esc(pg)}</span>` : ''}</li>`;
+  });
+  return `<h2 class="h-sub">목차</h2><ol class="toc static">${rows.join('')}</ol>`;
+}
 const uniqK = f => [...new Map(f.map(x => [x.k, x])).values()];
 // 내려받을 때 파일 이름: 책제목_날짜.pdf (날짜 = 파일 만든 날, 없으면 출간일)
 function ymd(t) {
@@ -288,7 +298,8 @@ for (const b of BOOKS) {
     <div class="ed-line">${esc(edText(e))} · ${esc(b.license)} · 자료번호 ${b.id}</div>
     <div class="labels">${(b.main || []).map(m => `<a class="t" href="/library/?main=${slugT(m)}">${esc(m)}</a>`).join('')}${(b.topics || []).map(x => `<a class="t" href="/library/?topic=${slugT(x)}">${esc(x)}</a>`).join('')}${tr ? `<a href="/library/?trad=${tr.id}">${esc(tr.name)}</a>` : ''}${b.press ? `<a href="/press/">我無말들 출간</a>` : ''}</div>
     ${b.description ? `<div class="desc">${marked.parse(b.description)}</div>` : ''}
-    ${e.reader ? `<div id="tocMount" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}"></div>` : ''}
+    ${b.contents && b.contents.trim() ? contentsHtml(b.contents) : ''}
+    ${e.reader && !(b.contents && b.contents.trim()) ? `<div id="tocMount" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}"></div>` : ''}
     <details class="record"><summary>자료 기록 (출처 · 판 · 라이선스)</summary><div class="record-body">
       <dl class="kv"><dt>자료번호</dt><dd>${b.id}</dd>
       <dt>저자·스승</dt><dd>${t ? `<a href="/teacher/${t.id}/">${esc(t.name)}</a>${t.roman ? ` <span class="muted small">(${esc(t.roman)})</span>` : ''}` : esc(b.byline)}</dd>
