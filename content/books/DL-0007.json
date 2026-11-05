@@ -36,8 +36,8 @@
         "site": ""
       },
       "epub": {
-        "mode": "none",
-        "url": "",
+        "mode": "file",
+        "url": "epub/DL-0007/DL-0007_개정판.epub",
         "site": ""
       },
       "reader": false,
