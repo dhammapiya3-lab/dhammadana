@@ -318,6 +318,7 @@ async function fetchRss(url) {
 }
 const fmtDate = d => { const t = Date.parse(d); return isNaN(t) ? '' : new Date(t).toISOString().slice(0, 10); };
 // 팟빵 채널 번호로 가져오기 (팟빵 앱이 쓰는 공개 목록 주소. 팟빵이 바꾸면 고쳐야 함)
+const PB_DEBUG = [];
 async function fetchPodbbang(id) {
   const out = [];
   try {
@@ -326,6 +327,7 @@ async function fetchPodbbang(id) {
       const r = await fetch(`https://app-api6.podbbang.com/channels/${encodeURIComponent(id)}/episodes?offset=${off}&limit=50&sort=desc`, { signal: ac.signal, headers: { accept: 'application/json', 'user-agent': 'dhammadana-library-build' } }); clearTimeout(to);
       if (!r.ok) throw new Error('HTTP ' + r.status);
       const j = await r.json(); const d = j.data || [];
+      PB_DEBUG.push({ off, keys: Object.keys(j), summary: j.summary || null, n: d.length, extra: Object.fromEntries(Object.entries(j).filter(([k]) => k !== 'data')) });
       total = j.summary?.totalCount ?? 0;
       for (const e of d) {
         out.push({ title: e.title, date: (e.publishedAt || '').slice(0, 10), duration: e.media?.durationText || '', audio: e.media?.url || '' });
@@ -406,6 +408,7 @@ const site = {
 };
 fs.mkdirSync(path.join(OUT, 'data'), { recursive: true });
 fs.writeFileSync(path.join(OUT, 'data/site.json'), JSON.stringify(site));
+fs.writeFileSync(path.join(OUT, 'data/podbbang-check.json'), JSON.stringify(PB_DEBUG, null, 1));
 fs.writeFileSync(path.join(OUT, '_redirects'), `/read/:id/:page /read/:id/ 200\n`);
 console.log(`[팟빵·RSS] ${PLAYLISTS.map(p => p.name + ' ' + p.list.length + '개').join(', ')}`);
 console.log(`만든 페이지 ${Object.keys(pages).length}개, 책 ${BOOKS.length}권, 재생목록 ${PLAYLISTS.map(p => `${p.name}(${p.list.length}${p.fetched ? '' : ', RSS 못 가져옴'})`).join(', ')}`);
