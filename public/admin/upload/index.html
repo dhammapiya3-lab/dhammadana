@@ -64,6 +64,16 @@
       <progress id="prog" max="100" value="0" hidden style="margin-top:12px"></progress>
       <div id="out"></div>
     </div>
+    <div class="card">
+      <h2>온라인 읽기 자료 올리기</h2>
+      <p class="note">Claude가 PDF로 만들어 드린 <b>온라인 읽기 묶음(zip)</b>을 여기에 올리면, 쪽 그림과 본문이 모두 올라가고 그 책의 '온라인 읽기'가 저절로 켜집니다. 책과 판은 묶음 안에 적혀 있어 따로 고를 필요가 없습니다.</p>
+      <div class="drop" id="zdrop" tabindex="0" role="button"><b>여기를 눌러 zip 파일을 고르거나</b><br>끌어다 놓으세요</div>
+      <input type="file" id="zfile" accept=".zip" hidden>
+      <div id="zpicked" class="note" style="margin-top:10px"></div>
+      <button class="btn" id="zgo" style="margin-top:12px;width:100%" disabled>올리기</button>
+      <progress id="zprog" max="100" value="0" hidden style="margin-top:12px"></progress>
+      <div id="zout"></div>
+    </div>
     <p class="note" style="margin-top:18px">· 같은 판에 같은 종류 파일을 다시 올리면 새 파일로 바뀝니다.<br>· 온라인 읽기(쪽마다 넘겨 보기)는 PDF를 쪽 그림으로 바꾸는 작업이 따로 필요합니다. Claude에게 PDF를 주며 부탁하세요.<br>· <button class="link-btn" id="logout">열쇠 지우기</button></p>
   </div>
 </div>
@@ -170,6 +180,66 @@ $('#go').onclick=async()=>{
     pickBook();
   }catch(err){ show('err',esc(err.message)); }
   finally{ $('#prog').hidden=true; upd(); }
+};
+
+/* ---- 온라인 읽기 묶음(zip) ---- */
+let ZIP=null;
+const zshow=(cls,html)=>{ $('#zout').innerHTML=`<div class="msg ${cls}">${html}</div>`; };
+function loadFflate(){ return window.fflate?Promise.resolve(window.fflate):new Promise((res,rej)=>{const sc=document.createElement('script');sc.src='https://unpkg.com/fflate@0.8.2/umd/index.js';sc.onload=()=>res(window.fflate);sc.onerror=()=>rej(new Error('압축 풀기 도구를 불러오지 못했습니다.'));document.head.appendChild(sc);}); }
+async function pickZip(f){
+  if(!f) return; if(!/\.zip$/i.test(f.name)){ zshow('err','zip 파일을 골라 주세요.'); return; }
+  zshow('','묶음을 살펴보는 중…');
+  try{
+    const ff=await loadFflate(); const files=ff.unzipSync(new Uint8Array(await f.arrayBuffer()));
+    const keys=Object.keys(files).filter(k=>!k.endsWith('/')&&!/(^|\/)(\.|__MACOSX)/.test(k));
+    const R=/^reader\/(DL-\d{4})\/([^/]+)\/(manifest\.json|(p|big)\/\d{4}\.webp)$/, P=/^pdf\/(DL-\d{4})\/[^/]+\.pdf$/;
+    const bad=keys.filter(k=>!R.test(k)&&!P.test(k)); if(bad.length) throw new Error('묶음 안에 알 수 없는 파일이 있습니다: '+esc(bad[0]));
+    const man=keys.find(k=>k.endsWith('manifest.json')); if(!man) throw new Error('묶음 안에 manifest.json 이 없습니다.');
+    const [,id,label]=man.match(R); if(keys.some(k=>!k.includes('/'+id+'/'))) throw new Error('한 묶음에는 한 책만 들어 있어야 합니다.');
+    const m=JSON.parse(new TextDecoder().decode(files[man]));
+    ZIP={files,keys,id,label,pages:(m.pages||[]).length,pdf:keys.find(k=>P.test(k))};
+    $('#zpicked').innerHTML=`${esc(id)} · ${esc(label)} · ${ZIP.pages}쪽 · 파일 ${keys.length}개${ZIP.pdf?' (PDF 포함)':''}`;
+    $('#zout').innerHTML=''; $('#zgo').disabled=false;
+  }catch(err){ ZIP=null; $('#zgo').disabled=true; zshow('err',esc(err.message)); }
+}
+const zdrop=$('#zdrop');
+zdrop.onclick=()=>$('#zfile').click(); zdrop.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();$('#zfile').click();}};
+$('#zfile').onchange=e=>pickZip(e.target.files[0]);
+['dragenter','dragover'].forEach(t=>zdrop.addEventListener(t,e=>{e.preventDefault();zdrop.classList.add('over');}));
+['dragleave','drop'].forEach(t=>zdrop.addEventListener(t,e=>{e.preventDefault();zdrop.classList.remove('over');}));
+zdrop.addEventListener('drop',e=>pickZip(e.dataTransfer.files[0]));
+function putOne(key,data){ return new Promise((res,rej)=>{ const x=new XMLHttpRequest(); x.open('POST','/api/upload');
+  x.setRequestHeader('authorization','Bearer '+TOKEN); x.setRequestHeader('x-key',encodeURIComponent(key));
+  x.onload=()=>{let j={};try{j=JSON.parse(x.responseText)}catch(e){} x.status===200&&j.ok?res():rej(new Error(j.error||('오류 '+x.status)));};
+  x.onerror=()=>rej(new Error('인터넷 연결을 확인해 주세요.')); x.send(new Blob([data])); }); }
+$('#zgo').onclick=async()=>{
+  if(!ZIP) return; const Z=ZIP; $('#zgo').disabled=true; $('#zprog').hidden=false; $('#zprog').value=0;
+  // 쪽 그림 먼저, manifest 는 맨 나중에 (다 올라간 뒤에 읽기 화면이 열리도록)
+  const order=Z.keys.filter(k=>!k.endsWith('manifest.json')).concat(Z.keys.filter(k=>k.endsWith('manifest.json')));
+  let done=0; zshow('',`올리는 중… 0 / ${order.length}`);
+  try{
+    const queue=order.slice(0,-1); const workers=Array.from({length:4},async()=>{ while(queue.length){ const k=queue.shift();
+      for(let t=0;;t++){ try{ await putOne(k,Z.files[k]); break; }catch(e){ if(t>=2) throw new Error(k+' — '+e.message); await new Promise(r=>setTimeout(r,1000)); } }
+      done++; $('#zprog').value=done/order.length*100; zshow('',`올리는 중… ${done} / ${order.length}`); } });
+    await Promise.all(workers);
+    await putOne(order[order.length-1],Z.files[order[order.length-1]]); done++; $('#zprog').value=100;
+    zshow('','책 정보에 연결하는 중…');
+    let ok=false, title='';
+    for(let t=0;t<4&&!ok;t++){
+      if(t) await new Promise(r=>setTimeout(r,1500*t));
+      const r=await gh(`/contents/content/books/${Z.id}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); if(!r.ok) throw new Error('책 정보('+Z.id+')를 찾지 못했습니다.');
+      const j=await r.json(); const b=JSON.parse(dec(j.content)); title=b.title;
+      const e=(b.editions||[]).find(x=>x.label===Z.label); if(!e) throw new Error(`이 책에 '${esc(Z.label)}' 판이 없습니다. 관리자 화면에서 판 이름을 확인해 주세요.`);
+      e.reader=true; if(Z.pdf&&!(e.pdf&&e.pdf.url)) e.pdf={mode:'file',url:Z.pdf,site:''};
+      const put=await gh(`/contents/content/books/${Z.id}.json`,{method:'PUT',headers:{'content-type':'application/json'},
+        body:JSON.stringify({message:`온라인 읽기 연결: ${Z.id} ${Z.label}`,content:enc(JSON.stringify(b,null,2)+'\n'),sha:j.sha,branch:'main'})});
+      ok=put.ok;
+    }
+    if(!ok) throw new Error('파일은 모두 올렸지만 책 정보 연결에 실패했습니다. 관리자 화면에서 그 판의 "온라인 읽기"를 켜 주세요.');
+    zshow('ok',`다 됐습니다! 『${esc(title)}』 ${esc(Z.label)} ${Z.pages}쪽을 올리고 '온라인 읽기'를 켰습니다.<br>1~2분 뒤 <a href="/read/${Z.id}/" target="_blank" rel="noopener">읽기 화면 ↗</a>에서 확인하세요.`);
+    ZIP=null; $('#zpicked').textContent='';
+  }catch(err){ zshow('err',esc(err.message)+`<br><span class="small">올라간 파일: ${done} / ${order.length}. 다시 올리기를 누르면 처음부터 다시 올립니다.</span>`); $('#zgo').disabled=false; }
+  finally{ $('#zprog').hidden=true; }
 };
 start();
 })();

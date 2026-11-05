@@ -51,22 +51,44 @@ except Exception:
 if a.offset is not None:
     labels = [str(i + 1 - a.offset) if i + 1 - a.offset > 0 else '' for i in range(N)]
 
-ODD = re.compile(r'[�-]')
-def clean(t):
-    t = unicodedata.normalize('NFC', t.replace('\r', '\n'))
-    t = re.sub(r'[ \t]+', ' ', t)
-    lines = [l.strip() for l in t.split('\n')]
-    # 빈 줄 = 문단 나눔. 줄 끝 하이픈 이음은 그대로 둠(한국어 책이 대부분)
-    out, buf = [], []
-    for l in lines:
-        if not l:
-            if buf: out.append(' '.join(buf)); buf = []
-        else:
-            buf.append(l)
-    if buf: out.append(' '.join(buf))
-    return '\n\n'.join(out)
+ODD = re.compile(r'[\ufffd\ue000-\uf8ff]')
+END = re.compile(r'[.?!。…”’"\')」』:]$')
+def clean(t, label='', full=None):
+    """원문 글자는 하나도 바꾸지 않고, 줄바꿈만 정리합니다.
+    - 줄 끝에 빈칸이 있으면(낱말 사이) 빈칸으로 잇고, 없으면(낱말 중간) 붙여 잇습니다.
+    - 줄이 오른쪽 끝까지 차지 않았으면(제목·문단 끝) 줄을 나눕니다.
+    - 빈칸 없이 문장부호로 끝난 줄은 문단(게송이면 한 줄) 끝으로 봅니다. 글자로 끝나면 낱말 중간이라 붙입니다.
+    - 맨 위 줄이 쪽 번호뿐이면(머리·꼬리 쪽 번호) 뺍니다."""
+    t = unicodedata.normalize('NFC', t.replace('\r\n', '\n').replace('\r', '\n'))
+    lines = t.split('\n')
+    full = full or [True] * len(lines)
+    if lines and lines[0].strip() and lines[0].strip() == str(label): lines = lines[1:]; full = full[1:]
+    paras, buf = [], ''
+    for k, raw in enumerate(lines):
+        if not raw.strip():
+            if buf.strip(): paras.append(buf.strip()); buf = ''
+            continue
+        line = raw.replace('\t', ' ')
+        if not buf: buf = line.lstrip()
+        else: buf += line
+        if line.endswith(' '):
+            continue                      # 낱말 사이 줄바꿈: 빈칸 그대로 둠
+        last = line.rstrip()[-1:]
+        if (last and not last.isalnum()) or last.isdigit() or not full[k]:
+            paras.append(buf.strip()); buf = ''   # 문장부호로 끝난 줄: 문단(또는 게송 줄) 끝
+        # 그 밖에는 낱말 중간 줄바꿈: 다음 줄을 붙여 이음
+    if buf.strip(): paras.append(buf.strip())
+    return '\n\n'.join(re.sub(r' {2,}', ' ', p) for p in paras)
 
-pages, odd_pages = [], []
+def same_text(raw, out, label=''):
+    """빈칸·줄바꿈·쪽번호를 빼고 원문과 글자가 똑같은지 확인"""
+    r = unicodedata.normalize('NFC', raw)
+    rl = r.replace('\r', '').split('\n')
+    if rl and rl[0].strip() == str(label): rl = rl[1:]
+    strip = lambda x: re.sub(r'\s+', '', x)
+    return strip('\n'.join(rl)) == strip(out)
+
+pages, odd_pages, changed_pages = [], [], []
 for i in range(N):
     pg = doc[i]
     w, h = pg.get_size()
@@ -75,7 +97,21 @@ for i in range(N):
         img.save(os.path.join(base, d, f'{i+1:04d}.webp'), 'WEBP', quality=a.quality, method=4)
     text = ''
     if not a.no_text:
-        tp = pg.get_textpage(); text = clean(tp.get_text_range()); tp.close()
+        tp = pg.get_textpage(); raw = tp.get_text_range()
+        # 줄마다 오른쪽 끝 위치: 꽉 찬 줄인지(낱말 중간 줄바꿈 가능) 알아보기
+        rights, pos = [], 0
+        for ln in raw.split('\r\n'):
+            st = ln.rstrip(); r = None
+            if st:
+                try: r = tp.get_charbox(pos + len(st) - 1)[2]
+                except Exception: r = None
+            rights.append(r); pos += len(ln) + 2
+        known = [r for r in rights if r is not None]
+        edge = max(known) if known else 0
+        full = [r is None or r >= edge - 14 for r in rights]
+        tp.close()
+        text = clean(raw, labels[i] or (i + 1), full)
+        if not same_text(raw, text, labels[i] or (i + 1)): changed_pages.append(i + 1)
         if ODD.search(text): odd_pages.append(i + 1)
     pages.append({'img': f'p/{i+1:04d}.webp', 'big': f'big/{i+1:04d}.webp', 'w': round(w), 'h': round(h), 'label': labels[i], 'text': text})
     print(f'\r  {i+1}/{N}', end='', flush=True)
@@ -114,6 +150,10 @@ print(f'  목차 {len(toc)}개' + ('' if toc else ' — PDF에 목차(책갈피)
 print('  인쇄 쪽 번호: ' + ('있음' if any(labels) else '없음 — 필요하면 --offset 을 쓰세요.'))
 if not a.no_text and not any(p['text'] for p in pages):
     print('  ⚠ 글자를 뽑지 못했습니다. 스캔본이면 쪽 보기만 됩니다(검색·듣기·밑줄 안 됨).')
+if changed_pages:
+    print(f'  ⚠ 원문과 글자가 달라진 쪽: {changed_pages} — 확인이 필요합니다.')
+else:
+    print('  ✓ 모든 쪽의 본문 글자가 원문과 똑같습니다 (빈칸·줄바꿈·쪽번호 제외).')
 if odd_pages:
     print(f'  ⚠ 깨진 글자가 있는 쪽: {odd_pages[:20]}{" …" if len(odd_pages) > 20 else ""} — 빨리어 점 글자가 깨졌을 수 있으니 확인하세요.')
 print(f'다음: 책 자료({a.book_id})의 이 판에서 "온라인 읽기"를 켜고, PDF 주소를 pdf/{a.book_id}/{a.book_id}_{a.edition}.pdf 로 적으세요.')

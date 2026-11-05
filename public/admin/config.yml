@@ -147,6 +147,8 @@ collections:
               - { name: archive, label: 보관본 주소, required: false, hint: "web.archive.org 에 저장한 주소" }
           - { name: collection, label: 수집 경로, required: false, hint: "예: 저자에게서 직접 받음" }
           - { name: collected, label: 받은 날, required: false }
+          - { name: permission_note, label: 게시 허락 문구 (책 속 문구), widget: text, required: false, hint: "예: 본 도서는 법보시용 도서(비매품)입니다. … 책에 적힌 그대로 옮겨 적습니다." }
+          - { name: permission_image, label: 이 판의 허락서 그림, widget: image, required: false, hint: "허락서를 찍은 사진이나 스캔 파일. 누구나 '허락서 보기'로 볼 수 있습니다." }
           - name: permissions
             label: 게시 허락
             widget: relation

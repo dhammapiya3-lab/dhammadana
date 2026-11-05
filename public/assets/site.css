@@ -498,3 +498,4 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 .sub .rep{flex:none;white-space:nowrap;font-size:10.5px;padding:0 5px;line-height:1.6;margin-left:4px}
 .filters label{align-items:flex-start;line-height:1.45}
 .filters label input{margin-top:3px;flex:none}
+.perm-note{margin:8px 0 2px;padding:8px 12px;border-left:3px solid var(--robe-soft);background:var(--paper-2);font-size:13.5px;line-height:1.7;color:var(--ink)}
