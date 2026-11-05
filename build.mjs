@@ -76,6 +76,8 @@ function formats(b) {
   if (e.reader) f.push({ k: '온라인 읽기', name: '온라인 읽기' });
   return f;
 }
+// 판 표시: '개정판 발행 2024년 7월 20일' (발행일 글에 판 이름이 이미 있으면 그대로)
+const edText = e => { const l = (e.label || '').trim(), p = (e.published || '').trim(); if (!p) return l; if (!l || p.includes(l)) return p; return `${l} 발행 ${p}`; };
 const uniqK = f => [...new Map(f.map(x => [x.k, x])).values()];
 // 내려받을 때 파일 이름: 책제목_날짜.pdf (날짜 = 파일 만든 날, 없으면 출간일)
 function ymd(t) {
@@ -283,7 +285,7 @@ for (const b of BOOKS) {
       ${f.filter(x => x.k !== '온라인 읽기').map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">${x.name} 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>${x.name} 내려받기</a>`).join('')}
       ${!f.length ? `<span class="muted small">파일을 준비하고 있습니다.</span>` : ''}</div>
     ${extF.length ? `<div class="small muted" style="margin-bottom:4px">↗ 표시된 파일은 ${esc(extF[0].site)}로 넘어가서 내려받습니다.</div>` : ''}
-    <div class="ed-line">${esc(e.label || '')}${e.published ? ' · ' + esc(e.published) : ''} · ${esc(b.license)} · 자료번호 ${b.id}</div>
+    <div class="ed-line">${esc(edText(e))} · ${esc(b.license)} · 자료번호 ${b.id}</div>
     <div class="labels">${(b.main || []).map(m => `<a class="t" href="/library/?main=${slugT(m)}">${esc(m)}</a>`).join('')}${(b.topics || []).map(x => `<a class="t" href="/library/?topic=${slugT(x)}">${esc(x)}</a>`).join('')}${tr ? `<a href="/library/?trad=${tr.id}">${esc(tr.name)}</a>` : ''}${b.press ? `<a href="/press/">我無말들 출간</a>` : ''}</div>
     ${b.description ? `<div class="desc">${marked.parse(b.description)}</div>` : ''}
     ${e.reader ? `<div id="tocMount" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}"></div>` : ''}
