@@ -74,6 +74,14 @@
       <progress id="zprog" max="100" value="0" hidden style="margin-top:12px"></progress>
       <div id="zout"></div>
     </div>
+    <div class="card">
+      <h2>창고 정리 (잘못 올라간 파일 지우기)</h2>
+      <p class="note">책을 고르면 파일 창고에 있는 그 책의 파일 묶음이 나옵니다. <b>이름이 깨진 묶음</b>은 미리 골라져 있습니다. 지운 파일은 되살릴 수 없으니 확인하고 누르세요.</p>
+      <div class="row"><select id="cbook"><option value="">— 책을 고르세요 —</option></select></div>
+      <div id="clist"></div>
+      <button class="btn ghost" id="cdel" style="margin-top:10px;width:100%" hidden>고른 묶음 지우기</button>
+      <div id="cout"></div>
+    </div>
     <p class="note" style="margin-top:18px">· 같은 판에 같은 종류 파일을 다시 올리면 새 파일로 바뀝니다.<br>· 온라인 읽기(쪽마다 넘겨 보기)는 PDF를 쪽 그림으로 바꾸는 작업이 따로 필요합니다. Claude에게 PDF를 주며 부탁하세요.<br>· <button class="link-btn" id="logout">열쇠 지우기</button></p>
   </div>
 </div>
@@ -114,6 +122,7 @@ async function loadBooks(){
   const r=await gh('/contents/content/books?ref=main'); const list=r.ok?await r.json():[];
   let titles={}; try{ (await (await fetch('/data/site.json')).json()).books.forEach(b=>titles[b.id]=b.title);}catch(e){}
   const ids=list.filter(f=>/^DL-\d{4}\.json$/.test(f.name)).map(f=>f.name.replace('.json','')).sort().reverse();
+  $('#cbook').innerHTML='<option value="">— 책을 고르세요 —</option>'+ids.map(id=>`<option value="${id}">${id} · ${esc(titles[id]||'')}</option>`).join('');
   $('#book').innerHTML='<option value="">— 책을 고르세요 —</option>'+ids.map(id=>`<option value="${id}">${id} · ${esc(titles[id]||'(숨김 또는 새 책)')}</option>`).join('');
   const want=new URLSearchParams(location.search).get('book'); if(want&&ids.includes(want)){ $('#book').value=want; pickBook(); }
 }
@@ -243,6 +252,29 @@ $('#zgo').onclick=async()=>{
     ZIP=null; $('#zpicked').textContent='';
   }catch(err){ zshow('err',esc(err.message)+`<br><span class="small">올라간 파일: ${done} / ${order.length}. 다시 올리기를 누르면 처음부터 다시 올립니다.</span>`); $('#zgo').disabled=false; }
   finally{ $('#zprog').hidden=true; }
+};
+
+/* ---- 창고 정리 ---- */
+const broken=t=>/[\u0080-\u00ff]/.test(t);
+const mb=n=>(n/1048576).toFixed(1)+'MB';
+async function loadClean(){
+  const id=$('#cbook').value; $('#clist').innerHTML=''; $('#cdel').hidden=true; $('#cout').innerHTML=''; if(!id) return;
+  $('#clist').innerHTML='<p class="note">불러오는 중…</p>';
+  const r=await fetch('/api/files?book='+id,{headers:{authorization:'Bearer '+TOKEN}}); const j=await r.json().catch(()=>({}));
+  if(!r.ok){ $('#clist').innerHTML=`<div class="msg err">${esc(j.error||'불러오지 못했습니다.')}</div>`; return; }
+  if(!j.groups.length){ $('#clist').innerHTML='<p class="note">이 책의 파일이 창고에 없습니다.</p>'; return; }
+  $('#clist').innerHTML=j.groups.map((g,i)=>`<label style="display:flex;gap:8px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px"><input type="checkbox" data-p="${esc(g.prefix)}" ${broken(g.prefix)?'checked':''} style="margin-top:4px"><span>${esc(g.prefix)}${broken(g.prefix)?' <b style="color:#8A2E1C">(이름 깨짐)</b>':''}<br><span class="note">파일 ${g.count}개 · ${mb(g.size)}</span></span></label>`).join('');
+  $('#cdel').hidden=false;
+}
+$('#cbook').onchange=loadClean;
+$('#cdel').onclick=async()=>{
+  const ps=[...document.querySelectorAll('#clist input:checked')].map(x=>x.dataset.p); if(!ps.length){ $('#cout').innerHTML='<div class="msg err">지울 묶음을 골라 주세요.</div>'; return; }
+  if(!confirm(ps.length+'개 묶음을 지웁니다. 되살릴 수 없습니다. 지울까요?')) return;
+  $('#cdel').disabled=true; $('#cout').innerHTML='<p class="note">지우는 중…</p>';
+  const r=await fetch('/api/files',{method:'POST',headers:{authorization:'Bearer '+TOKEN,'content-type':'application/json'},body:JSON.stringify({delete:ps})}); const j=await r.json().catch(()=>({}));
+  $('#cdel').disabled=false;
+  $('#cout').innerHTML=r.ok?`<div class="msg ok">파일 ${j.deleted}개를 지웠습니다.</div>`:`<div class="msg err">${esc(j.error||'지우지 못했습니다.')}</div>`;
+  if(r.ok) setTimeout(loadClean,800);
 };
 start();
 })();

@@ -1,24 +1,11 @@
+import { canWriteToken as canWrite } from './_auth.js';
 // 관리자용 책 파일 올리기: 브라우저에서 보낸 PDF·EPUB을 R2(dhammadana-files)에 넣습니다.
 // 허락 확인: 관리자 화면에서 쓰는 GitHub 열쇠로 이 사이트 저장소에 '쓰기' 권한이 있는지 GitHub에 물어봅니다.
-const REPO = 'dhammapiya3-lab/dhammadana';
 const KEY_RE = /^(pdf|epub)\/DL-\d{4}\/[^/\\]{1,120}\.(pdf|epub)$/i;
 const READER_RE = /^reader\/DL-\d{4}\/[^/\\]{1,40}\/(manifest\.json|(p|big)\/\d{4}\.webp)$/;
 const okKey = k => KEY_RE.test(k) || READER_RE.test(k);
 const TYPES = { pdf: 'application/pdf', epub: 'application/epub+zip', webp: 'image/webp', json: 'application/json; charset=utf-8' };
 const json = (o, status = 200) => new Response(JSON.stringify(o), { status, headers: { 'content-type': 'application/json; charset=utf-8' } });
-
-const OK = new Map();
-async function canWrite(token) {
-  if (!token) return false;
-  const t = OK.get(token); if (t && Date.now() - t < 10 * 60 * 1000) return true;
-  const ok = await checkGitHub(token); if (ok) OK.set(token, Date.now()); return ok;
-}
-async function checkGitHub(token) {
-  const r = await fetch(`https://api.github.com/repos/${REPO}`, { headers: { authorization: `Bearer ${token}`, 'user-agent': 'dhammadana-upload', accept: 'application/vnd.github+json' } });
-  if (!r.ok) return false;
-  const j = await r.json();
-  return !!(j.permissions && (j.permissions.push || j.permissions.admin));
-}
 
 export async function onRequestPost({ request, env }) {
   if (!env.FILES) return json({ error: 'R2 저장소가 연결되어 있지 않습니다 (FILES).' }, 500);
