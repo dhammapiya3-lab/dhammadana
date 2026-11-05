@@ -90,7 +90,7 @@ collections:
       - name: editions
         label: 판 (초판·개정판)
         label_singular: 판
-        hint: 판마다 한 칸입니다. 파일이 없는 지난 판(예: 초판)도 '판 더하기'로 발행일만 적어 기록할 수 있습니다. 지금 내려받기·읽기에 쓰는 판에만 '최신판'을 켜세요. 이전 판은 지우지 말고 보관합니다.
+        hint: "판마다 한 칸입니다. 파일이 없는 지난 판(예를 들어 초판)도 '판 더하기'로 발행일만 적어 기록할 수 있습니다. 지금 내려받기·읽기에 쓰는 판에만 '최신판'을 켜세요. 이전 판은 지우지 말고 보관합니다."
         widget: list
         summary: "{{fields.label}} {{fields.published}}"
         fields:
