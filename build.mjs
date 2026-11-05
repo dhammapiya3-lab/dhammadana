@@ -328,13 +328,12 @@ async function fetchPodbbang(id) {
       const j = await r.json(); const d = j.data || [];
       total = j.summary?.totalCount ?? 0;
       for (const e of d) {
-        const sec = +(e.duration || e.media?.duration || 0);
-        out.push({ title: e.title, date: (e.publishedAt || '').slice(0, 10), duration: sec ? `${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, '0')}` : '', audio: e.media?.url || '' });
+        out.push({ title: e.title, date: (e.publishedAt || '').slice(0, 10), duration: e.media?.durationText || '', audio: e.media?.url || '' });
       }
       if (!d.length) break;
     }
     return out.filter(x => x.audio);
-  } catch (err) { console.warn('[팟빵] 가져오기 실패:', id, err.message); return out.length ? out.filter(x => x.audio) : null; }
+  } catch (err) { console.warn('[팟빵] 가져오기 실패:', id, err.message, '(가져온 것', out.length + '개)'); return out.length ? out.filter(x => x.audio) : null; }
 }
 for (const p of PLAYLISTS) {
   const got = p.podbbang ? await fetchPodbbang(p.podbbang) : p.rss ? await fetchRss(p.rss) : null;
@@ -408,4 +407,5 @@ const site = {
 fs.mkdirSync(path.join(OUT, 'data'), { recursive: true });
 fs.writeFileSync(path.join(OUT, 'data/site.json'), JSON.stringify(site));
 fs.writeFileSync(path.join(OUT, '_redirects'), `/read/:id/:page /read/:id/ 200\n`);
+console.log(`[팟빵·RSS] ${PLAYLISTS.map(p => p.name + ' ' + p.list.length + '개').join(', ')}`);
 console.log(`만든 페이지 ${Object.keys(pages).length}개, 책 ${BOOKS.length}권, 재생목록 ${PLAYLISTS.map(p => `${p.name}(${p.list.length}${p.fetched ? '' : ', RSS 못 가져옴'})`).join(', ')}`);
