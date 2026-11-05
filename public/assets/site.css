@@ -421,3 +421,12 @@ button.chip{cursor:pointer;font-family:inherit;font-size:14px}
 /* 꼬리말 로고: 바탕에 어울리게 */
 footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85;padding:0;background:none;border:0}
 :root.mode-night footer.site .logo-img{mix-blend-mode:normal;filter:invert(1);opacity:.7}
+/* 법문 목록 촘촘히, 선원 카드 색 띠 */
+.ep{padding:8px 6px;gap:10px}
+.ep .no{width:26px;height:26px;font-size:11px}
+.ep .et{font-size:15px}
+.ep br{display:none}
+.ep .em{margin-left:10px}
+.pl{border-left:4px solid var(--pl-c,var(--robe))}
+.pl.on{box-shadow:none;background:color-mix(in srgb,var(--pl-c,var(--robe)) 8%,var(--card))}
+@media (max-width:600px){.ep .em{display:block;margin-left:0}}
