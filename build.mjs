@@ -318,39 +318,63 @@ async function fetchRss(url) {
 }
 const fmtDate = d => { const t = Date.parse(d); return isNaN(t) ? '' : new Date(t).toISOString().slice(0, 10); };
 // 팟빵 채널 번호로 가져오기 (팟빵 앱이 쓰는 공개 목록 주소. 팟빵이 바꾸면 고쳐야 함)
-const PB_DEBUG = [];
-async function fetchPodbbang(id) {
+// 팟빵: 팟빵 앱이 쓰는 공개 목록 주소 (offset 은 '몇 번째 묶음'). 팟빵이 바꾸면 고쳐야 함
+const PB = 'https://app-api6.podbbang.com';
+async function getJSON(url) {
+  const ac = new AbortController(); const to = setTimeout(() => ac.abort(), 20000);
+  try { const r = await fetch(url, { signal: ac.signal, headers: { accept: 'application/json', 'user-agent': 'dhammadana-library-build' } }); if (!r.ok) throw new Error('HTTP ' + r.status); return await r.json(); }
+  finally { clearTimeout(to); }
+}
+const pbEp = e => ({ id: e.id, title: e.title, date: (e.publishedAt || '').slice(0, 10), t: e.publishedAt || '', duration: e.media?.durationText || '', audio: e.media?.url || '' });
+async function pbAll(path) {
   const out = [];
+  for (let page = 0, total = Infinity; out.length < total && page < 60; page++) {
+    const j = await getJSON(`${PB}${path}${path.includes('?') ? '&' : '?'}offset=${page}&limit=50`);
+    const d = j.data || []; if (j.summary?.totalCount != null) total = j.summary.totalCount;
+    out.push(...d.map(pbEp)); if (!d.length) break;
+  }
+  return out.filter(x => x.audio);
+}
+async function fetchPodbbang(id) {
   try {
-    for (let off = 0, total = Infinity; off < total && off < 3000; off += 50) {
-      const ac = new AbortController(); const to = setTimeout(() => ac.abort(), 15000);
-      const r = await fetch(`https://app-api6.podbbang.com/channels/${encodeURIComponent(id)}/episodes?offset=${off}&limit=50&sort=desc`, { signal: ac.signal, headers: { accept: 'application/json', 'user-agent': 'dhammadana-library-build' } }); clearTimeout(to);
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      const j = await r.json(); const d = j.data || [];
-      PB_DEBUG.push({ off, keys: Object.keys(j), summary: j.summary || null, n: d.length, extra: Object.fromEntries(Object.entries(j).filter(([k]) => k !== 'data')) });
-      total = j.summary?.totalCount ?? 0;
-      for (const e of d) {
-        out.push({ title: e.title, date: (e.publishedAt || '').slice(0, 10), duration: e.media?.durationText || '', audio: e.media?.url || '' });
+    const all = await pbAll(`/channels/${encodeURIComponent(id)}/episodes?sort=desc`);
+    const subs = [{ id: 'all', name: '전체 법문', list: all }];
+    try {
+      const pls = (await getJSON(`${PB}/channels/${encodeURIComponent(id)}/playlists`)).data || [];
+      for (const pl of pls) {
+        try {
+          const l = await pbAll(`/channels/${encodeURIComponent(id)}/playlists/${pl.id}/episodes`);
+          l.sort((x, y) => x.t.localeCompare(y.t)); // 재생목록은 1강부터
+          if (l.length) subs.push({ id: String(pl.id), name: pl.name, list: l });
+        } catch (err) { console.warn('[팟빵] 재생목록 실패:', pl.name, err.message); }
       }
-      if (!d.length) break;
-    }
-    return out.filter(x => x.audio);
-  } catch (err) { console.warn('[팟빵] 가져오기 실패:', id, err.message, '(가져온 것', out.length + '개)'); return out.length ? out.filter(x => x.audio) : null; }
+    } catch (err) { console.warn('[팟빵] 재생목록 목록 실패:', err.message); }
+    return subs;
+  } catch (err) { console.warn('[팟빵] 가져오기 실패:', id, err.message); return null; }
 }
 for (const p of PLAYLISTS) {
-  const got = p.podbbang ? await fetchPodbbang(p.podbbang) : p.rss ? await fetchRss(p.rss) : null;
-  p.list = (got && got.length ? got : (p.episodes || [])).map(e => ({ title: e.title, date: fmtDate(e.date) || e.date || '', duration: e.duration || '', audio: e.audio }));
-  p.fetched = !!(got && got.length);
+  let subs = null;
+  if (p.podbbang) subs = await fetchPodbbang(p.podbbang);
+  else if (p.rss) { const l = await fetchRss(p.rss); if (l && l.length) subs = [{ id: 'all', name: '전체 법문', list: l.map(e => ({ ...e, date: fmtDate(e.date) || e.date })) }]; }
+  p.fetched = !!(subs && subs[0].list.length);
+  if (!p.fetched) subs = [{ id: 'all', name: '전체 법문', list: (p.episodes || []).map(e => ({ title: e.title, date: e.date || '', duration: e.duration || '', audio: e.audio })) }];
+  p.subs = subs; p.list = subs[0].list;
 }
 function talksBody() {
   let g = '';
+  const row = (p, s, e, i) => `<div class="ep" role="listitem" tabindex="0" data-ep="${i}" data-epl="${p.id}:${s.id}" data-audio="${esc(e.audio)}" data-title="${esc(e.title)}" data-plname="${esc(p.name + (s.id === 'all' ? '' : ' · ' + s.name))}"${i >= 50 ? ' hidden data-later' : ''}><span class="no">${i + 1}</span><span><span class="et">${esc(e.title)}</span><br><span class="em">${esc(e.date)}</span></span><span class="ed">${esc(e.duration)}</span></div>`;
   return `<div class="wrap"><div class="prose" style="padding-bottom:0"><h1>법문 바로 듣기</h1><p class="muted">재생목록에서 법문을 골라 바로 들을 수 있습니다. 다른 메뉴로 옮겨 가도 아래 재생기는 계속 재생됩니다.</p></div>
-  <div class="talks"><nav class="pl-list" aria-label="재생목록">${PLAYLISTS.map(x => (x.group !== g ? `<div class="pl-group">${esc(g = x.group)}</div>` : '') + `<button class="pl" data-pl="${x.id}"><span class="n">${esc(x.name)}</span><span class="s">${x.list.length}개 · ${esc(x.source || '')}</span></button>`).join('')}</nav>
+  <div class="talks"><nav class="pl-list" aria-label="법문 모음">${PLAYLISTS.map(x => (x.group !== g ? `<div class="pl-group">${esc(g = x.group)}</div>` : '') + `<button class="pl" data-pl="${x.id}"><span class="n">${esc(x.name)}</span><span class="s">${x.list.length}개${x.subs.length > 1 ? ` · 재생목록 ${x.subs.length - 1}개` : ''} · ${esc(x.source || '')}</span></button>`).join('')}</nav>
   <section>${PLAYLISTS.map(p => `<div class="pl-panel" data-panel="${p.id}" hidden>
-    <div class="section-head"><h2>${esc(p.name)}</h2>${p.list.length ? `<button class="btn sm" data-playall="${p.id}">▶ 처음부터 모두 듣기</button>` : ''}</div>
-    ${p.teacher ? `<div class="small"><a href="/teacher/${p.teacher}/">${esc(teacherById(p.teacher)?.name || '')}의 책 보기 →</a></div>` : ''}
+    <div class="section-head"><h2>${esc(p.name)}</h2></div>
+    ${p.teacher ? `<div class="small" style="margin-bottom:8px"><a href="/teacher/${p.teacher}/">${esc(teacherById(p.teacher)?.name || '')}의 책 보기 →</a></div>` : ''}
     ${!p.list.length ? `<p class="muted">법문 목록을 불러오지 못했습니다. 잠시 뒤 다시 확인해 주세요.</p>` : ''}
-    <div role="list">${p.list.map((e, i) => `<div class="ep" role="listitem" tabindex="0" data-ep="${i}" data-epl="${p.id}" data-audio="${esc(e.audio)}" data-title="${esc(e.title)}" data-plname="${esc(p.name)}"><span class="no">${i + 1}</span><span><span class="et">${esc(e.title)}</span><br><span class="em">${esc(e.date)}</span></span><span class="ed">${esc(e.duration)}</span></div>`).join('')}</div>
+    ${p.subs.length > 1 ? `<div class="chips sub-chips" role="tablist" aria-label="재생목록">${p.subs.map(s => `<button class="chip" role="tab" data-sub="${p.id}:${s.id}">${esc(s.name)}<span class="n">${s.list.length}</span></button>`).join('')}</div>` : ''}
+    ${p.subs.map(s => `<div class="sub-panel" data-subpanel="${p.id}:${s.id}" hidden>
+      <div class="sub-head"><b>${esc(s.name)}</b> <span class="muted small">${s.list.length}개${s.id === 'all' ? ' · 최근 올린 순' : ' · 1강부터'}</span>${s.list.length ? ` <button class="btn sm" data-playall="${p.id}:${s.id}">▶ 처음부터 모두 듣기</button>` : ''}</div>
+      <div role="list">${s.list.map((e, i) => row(p, s, e, i)).join('')}</div>
+      ${s.list.length > 50 ? `<div class="more-wrap"><button class="btn sm ghost" data-more>더 보기</button></div>` : ''}
+    </div>`).join('')}
   </div>`).join('')}</section></div></div>`;
 }
 put('dhammatalk/index.html', layout({ title: '법문 바로 듣기', nav: 'dhammatalk', page: 'talks', body: talksBody() }));
@@ -408,7 +432,6 @@ const site = {
 };
 fs.mkdirSync(path.join(OUT, 'data'), { recursive: true });
 fs.writeFileSync(path.join(OUT, 'data/site.json'), JSON.stringify(site));
-fs.writeFileSync(path.join(OUT, 'data/podbbang-check.json'), JSON.stringify(PB_DEBUG, null, 1));
 fs.writeFileSync(path.join(OUT, '_redirects'), `/read/:id/:page /read/:id/ 200\n`);
-console.log(`[팟빵·RSS] ${PLAYLISTS.map(p => p.name + ' ' + p.list.length + '개').join(', ')}`);
-console.log(`만든 페이지 ${Object.keys(pages).length}개, 책 ${BOOKS.length}권, 재생목록 ${PLAYLISTS.map(p => `${p.name}(${p.list.length}${p.fetched ? '' : ', RSS 못 가져옴'})`).join(', ')}`);
+console.log(`[팟빵·RSS] ${PLAYLISTS.map(p => p.name + ' ' + p.list.length + '개, 재생목록 ' + (p.subs.length - 1) + '개').join(' / ')}`);
+console.log(`만든 페이지 ${Object.keys(pages).length}개, 책 ${BOOKS.length}권, 법문 모음 ${PLAYLISTS.length}개`);

@@ -231,7 +231,6 @@ function playEp(plId, i, list) {
   store.set('plast', { pl: plId, i, list });
   markEp();
 }
-function markEp() { $$('.ep').forEach(x => x.classList.toggle('on', x.dataset.epl === PL.pl && +x.dataset.ep === PL.i)); }
 function initPlayer() {
   const a = $('#pAudio');
   $('#pRate').value = String(store.get('prate', 1));
@@ -258,14 +257,39 @@ function initTalks() {
   const q = new URLSearchParams(location.search);
   const ids = $$('.pl').map(b => b.dataset.pl);
   let cur = q.get('pl') || store.get('pl', ids[0]); if (!ids.includes(cur)) cur = ids[0];
-  const show = id => { cur = id; store.set('pl', id); $$('.pl').forEach(b => b.classList.toggle('on', b.dataset.pl === id)); $$('.pl-panel').forEach(p => p.hidden = p.dataset.panel !== id); };
+  const showSub = key => {
+    const pl = key.split(':')[0];
+    $$(`[data-panel="${CSS.escape(pl)}"] [data-sub]`).forEach(c => { const on = c.dataset.sub === key; c.classList.toggle('on', on); c.setAttribute('aria-selected', on); });
+    $$(`[data-panel="${CSS.escape(pl)}"] .sub-panel`).forEach(x => x.hidden = x.dataset.subpanel !== key);
+    store.set('sub-' + pl, key);
+    const u = new URL(location.href); u.searchParams.set('pl', pl); u.searchParams.set('sub', key.split(':')[1]); history.replaceState(history.state, '', u);
+  };
+  const show = id => {
+    cur = id; store.set('pl', id);
+    $$('.pl').forEach(b => b.classList.toggle('on', b.dataset.pl === id));
+    $$('.pl-panel').forEach(p => p.hidden = p.dataset.panel !== id);
+    const want = q.get('pl') === id && q.get('sub') ? `${id}:${q.get('sub')}` : store.get('sub-' + id, `${id}:all`);
+    showSub($(`[data-subpanel="${CSS.escape(want)}"]`) ? want : `${id}:all`);
+  };
   $$('.pl').forEach(b => b.onclick = () => show(b.dataset.pl));
+  $$('[data-sub]').forEach(c => c.onclick = () => showSub(c.dataset.sub));
   $$('.ep').forEach(e => { const go = () => playEp(e.dataset.epl, +e.dataset.ep); e.onclick = go; e.onkeydown = k => { if (k.key === 'Enter' || k.key === ' ') { k.preventDefault(); go(); } }; });
   $$('[data-playall]').forEach(b => b.onclick = () => playEp(b.dataset.playall, 0));
+  // 스크롤하면 50개씩 더 보이기
+  const more = btn => { const panel = btn.closest('.sub-panel'); $$('[data-later][hidden]', panel).slice(0, 50).forEach(x => x.hidden = false); if (!$('[data-later][hidden]', panel)) btn.parentElement.remove(); };
+  $$('[data-more]').forEach(btn => {
+    btn.onclick = () => more(btn);
+    if ('IntersectionObserver' in window) new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting && btn.isConnected && !btn.closest('[hidden]')) more(btn); }), { rootMargin: '400px' }).observe(btn);
+  });
   if (cur) show(cur);
   markEp();
 }
-
+function markEp() {
+  $$('.ep').forEach(x => {
+    const on = x.dataset.epl === PL.pl && +x.dataset.ep === PL.i; x.classList.toggle('on', on);
+    if (on && x.hidden) { x.hidden = false; }
+  });
+}
 /* ---------- 책 상세: 목차 ---------- */
 async function initBook() {
   const m = $('#tocMount'); if (!m) return;

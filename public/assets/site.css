@@ -345,3 +345,10 @@ body.has-player footer.site{padding-bottom:110px}
 .lc-name{font-family:var(--serif);font-size:16px}
 [hidden]{display:none!important}
 .portrait img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.sub-chips{margin:6px 0 18px}
+.chip.on{background:var(--robe);border-color:var(--robe);color:var(--paper)}
+.chip.on .n{color:var(--paper);opacity:.8}
+button.chip{cursor:pointer;font-family:inherit;font-size:14px}
+.sub-head{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:6px 0 10px;border-bottom:1px solid var(--line)}
+.sub-head .btn{margin-left:auto}
+.more-wrap{text-align:center;padding:18px 0}
