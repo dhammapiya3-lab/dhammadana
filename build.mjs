@@ -309,7 +309,7 @@ for (const b of BOOKS) {
       <dt>자료 제공</dt><dd>${prov ? esc(prov.name) + (prov.urls || []).map(u => ` <a href="${esc(u)}" target="_blank" rel="noopener">↗</a>`).join('') : '—'}</dd>
       <dt>원본 출처</dt><dd>${(e.sources || []).length ? e.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>${s.checked ? ` <span class="muted small">(${esc(s.checked)} 확인)</span>` : ''}${s.archive ? ` · <a href="${esc(s.archive)}" target="_blank" rel="noopener">보관본</a>` : ''}`).join('<br>') : '—'}</dd>
       <dt>수집 경로</dt><dd>${esc(e.collection || '—')}${e.collected ? ` <span class="muted small">(${esc(e.collected)})</span>` : ''}</dd>
-      <dt>게시 허락</dt><dd>${perms.length ? perms.map(p => `허락 확인됨 <span class="muted small">(${esc(p.kind)} · ${esc(p.scope)})</span>${p.image && p.image_public ? ` · <button class="link-btn" data-permit="${esc(p.image)}" data-title="${esc(b.title)}">허락서 보기</button>` : ''}`).join('<br>') : '—'}</dd>
+      <dt>게시 허락</dt><dd>${perms.length ? perms.map(p => `허락 확인됨${p.image && p.image_public ? ` · <button class="link-btn" data-permit="${esc(p.image)}" data-title="${esc(b.title)}">허락서 보기</button>` : ''}`).join('<br>') : '—'}</dd>
       <dt>라이선스</dt><dd>${esc(b.license)}</dd></dl>
       <table class="tbl"><thead><tr><th>판</th><th>발행일</th><th>바뀐 내용</th><th>공개</th></tr></thead><tbody>${pubEds.map(x => `<tr><td>${esc(x.label)}</td><td>${esc(x.published || '—')}</td><td>${esc(x.changes || '—')}</td><td>${x.current ? '<span class="pill">최신판</span>' : x.public ? '이전 판 공개' : '보관'}</td></tr>`).join('')}</tbody></table>
       <p class="small muted" style="margin-top:10px">새 판이 올라오면 이전 판은 보관되고, 최신판만 내려받기와 온라인 읽기에 나옵니다.</p>
