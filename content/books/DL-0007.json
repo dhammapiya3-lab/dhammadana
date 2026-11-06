@@ -29,11 +29,12 @@
     {
       "label": "초판",
       "published": "초판 발행 2013년 7월 1일",
-      "page_count": null,
+      "page_count": 132,
+      "isbn": "979-11-980922-6-7",
       "file_created": "2026-11-06",
       "changes": "",
-      "current": false,
-      "public": false,
+      "current": true,
+      "public": true,
       "pdf": {
         "mode": "none",
         "url": "",
@@ -44,9 +45,13 @@
         "url": "pdf/DL-0007/DL-0007_초판_인쇄용.pdf",
         "site": ""
       },
-      "pdf_cover": null,
-      "epub": {
+      "pdf_cover": {
         "mode": "none",
+        "url": "",
+        "site": ""
+      },
+      "epub": {
+        "mode": "file",
         "url": "",
         "site": ""
       },
@@ -65,6 +70,7 @@
       "label": "개정판",
       "published": "2024년 7월 20일",
       "page_count": 132,
+      "isbn": "",
       "file_created": "2026년 3월 3일",
       "changes": "",
       "current": true,
