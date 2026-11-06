@@ -551,6 +551,8 @@ const PALI = (() => {
 const PALI_MARK = /[āīūṭḍṇṅñṃṁḷĀĪŪṬḌṆṄÑṂṀḶ]/;
 const PALI_WORDS = new Set(['dhamma', 'sutta', 'metta', 'vipassana', 'samatha', 'sati', 'nibbana', 'buddha', 'sangha', 'sila', 'samadhi', 'panna', 'kamma', 'dana', 'bhikkhu', 'bhikkhuni', 'sadhu', 'jhana', 'arahant', 'dukkha', 'anicca', 'anatta', 'karuna', 'mudita', 'upekkha', 'brahmavihara', 'abhidhamma', 'vinaya', 'tipitaka', 'nikaya', 'paticcasamuppada', 'satipatthana', 'anapanasati', 'kusala', 'akusala', 'citta', 'cetasika', 'rupa', 'nama', 'khandha', 'bhavana', 'parami', 'puñña', 'punna']);
 const LATIN = "A-Za-zĀ-žḀ-ỿ";
+// 점·막대가 없어도 빨리어처럼 생긴 낱말: 빨리어 글자로만 되어 있고, 겹자음이 있고, 모음으로 끝남 (akkhanti, dukkha …)
+const looksPali = w => w.length >= 4 && /^[a-z]+$/i.test(w) && !/[fqwxz]/i.test(w) && /(kk|gg|cc|jj|tt|dd|pp|bb|mm|nn|ss|ll)/i.test(w) && /[aeiou]$/i.test(w) && !!PALI(w);
 function sayable(s) {
   let t = String(s || '');
   // 한글 바로 뒤에 붙은 로마자 풀이(예: 위빳사나Vipassanā, 사야도Chanmyay Sayadaw)는 한 번만 읽도록 뺌
@@ -560,8 +562,14 @@ function sayable(s) {
   // 빨리어 로마자 낱말 → 빨리어 소리대로 한글
   // 로마자 낱말이 이어진 덩어리에 빨리어 표시 글자가 하나라도 있으면 덩어리 전체를 빨리어로 읽음
   t = t.replace(new RegExp(`[${LATIN}]+(?:[\\s,;:.!?'’‘\\-]+[${LATIN}]+)*`, 'g'), run => {
+    // 덩어리에 빨리어 표시 글자가 있으면 덩어리 전체를 빨리어로
     const all = PALI_MARK.test(run);
-    return run.replace(new RegExp(`[${LATIN}]+`, 'g'), w => (all || PALI_MARK.test(w) || PALI_WORDS.has(w.toLowerCase())) ? (PALI(w) || w) : w);
+    // 붙임표로 이은 낱말(akkhanti-sutta)은 한 부분이라도 빨리어면 전체를 빨리어로, 붙임표는 띄어 읽기
+    return run.replace(new RegExp(`[${LATIN}]+(?:-[${LATIN}]+)*`, 'g'), comp => {
+      const parts = comp.split('-');
+      const pali = all || parts.some(w => PALI_MARK.test(w) || PALI_WORDS.has(w.toLowerCase()) || looksPali(w));
+      return pali ? parts.map(w => PALI(w) || w).join(' ') : comp;
+    });
   });
   // 한글 음역의 장음 표시(까라니-야, 삿따-)는 읽지 않음
   t = t.replace(/([가-힣])-(?=[가-힣\s,.!?)’”]|$)/g, '$1');
