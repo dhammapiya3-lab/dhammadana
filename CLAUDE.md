@@ -23,6 +23,7 @@
 ## 자주 하는 일
 - **PDF를 도서관 책으로 (지금 방식)**: `python3 tools/pdf2reader.py 책.pdf DL-0007 개정판 --offset N --toc toc.txt` → 원문 대조 ✓ 확인 — 보통 `--visible-only --footnotes --headings --visual-order --line-breaks` 를 붙이고 manifest2text 에는 `--keep-order` (숨은 옛 글 빼기·각주 [^n] 표시·큰 글씨 줄을 ## 소제목으로·인쇄된 위→아래 순서 지키기). **순서·내용을 임의로 바꾸지 말 것** — 인쇄된 순서가 기준. 목차 파일은 '제목<TAB>쪽', 아랫단계는 줄 앞에 빈칸 두 개. out/…/hidden.txt 확인. manifest2text 에 `--header "쪽 머리글"` 을 주면 머리글을 뺀다 → `python3 tools/manifest2text.py tools/out/reader/<ID>/<판>/manifest.json` 로 `content/texts/<ID>.json` 을 만들어 commit (이 글 파일이 있으면 글로 읽기가 켜짐, 관리자 화면 '책 본문'에서 고칠 수 있음). PDF 파일은 운영자가 /admin/upload/ 에서 올림. 읽기 화면은 글로 보기만 씀.
 - **책 맨 앞(1쪽 첫머리)에 인쇄된 책 제목은 글로 읽기 본문과 목차에서 뺀다** (운영자 요청, 2026-11). 목차는 예경문 등 본문 첫 부분부터 시작. manifest2text 에 `--drop-title "책 제목"`.
+- **장 제목 정하기**: 책에 인쇄된 장 제목이 있으면 그대로 쓰고, 없으면 '예경문'·'저자 소개'·'역자 소개'·'머리말'·'일러두기'·'차례'·'발원문'·'회향'·'판권지'처럼 알맞은 일반 이름을 쓴다. **본문의 첫 줄(사람 이름, 첫 문장 등)을 장 제목으로 쓰지 않는다** (운영자 요청, 2026-11).
 - **(예전 방식)**: `python3 tools/pdf2reader.py 책.pdf DL-0007 초판 [--offset N] [--toc toc.txt]` → 결과 확인(깨진 빨리어 글자 경고 확인) → `python3 tools/upload.py` → 책 JSON 의 해당 판에서 `reader: true`, `pdf: {mode: file, url: pdf/DL-0007/DL-0007_초판.pdf}` → commit·push.
 - 새 책: `content/books/` 에 다음 번호로 파일 추가(형식은 기존 파일 참고), 표지는 `public/covers/<ID>.jpg`.
 - 확인: `npm run dev` → http://localhost:4321
