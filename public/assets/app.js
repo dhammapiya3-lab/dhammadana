@@ -450,7 +450,7 @@ function reflowHtml() {
   const body = R.pages.slice(c.from - 1, c.to).map(p => {
     const ps = paras(p.text); const sub = subs.filter(t => t.page === p.n);
     if (!ps.length) return `<span id="pm-${p.n}"></span>`;
-    return `<span class="pmark" id="pm-${p.n}">${esc(pageName(p))}</span>${ps.map((s, k) => blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ' class="fn"' : ''}>${fnMark(markUl(s, p.n))}</p>`).join('') || ''}`;
+    return `<span class="pmark" id="pm-${p.n}">${esc(pageName(p))}</span>${ps.map((s, k) => blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : ''}>${fnMark(markUl(s, p.n))}</p>`).join('') || ''}`;
   }).join('');
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}</h3></div>` : ''}${body}${nav}</div>`;
@@ -790,7 +790,7 @@ function sayable(s, o = ttsOpt()) {
   t = o.sym ? t.replace(SYM_RE, c => ` ${SYM_NAME[c] || ''} `) : t.replace(SYM_RE, ' ');
   return t.replace(/\(\s*\)/g, ' ').replace(/\s+([.,!?])/g, '$1').replace(/([.,!?])(?:\s*[.,])+/g, '$1').replace(/\s{2,}/g, ' ').trim();
 }
-const fnMark = h => h.replace(/^\[\^([^\]]+)\]:\s*/, '<sup class="fn-no">$1</sup> ').replace(/\[\^([^\]]+)\]/g, '<sup class="fn-ref">$1</sup>');
+const fnMark = h => h.replace(/^\[\^([^\]]+)\]:\s*/, '<span class="fn-no" data-fnno="$1">$1</span>').replace(/\[\^([^\]]+)\]/g, '<sup class="fn-ref" role="button" tabindex="0" data-fn="$1" aria-label="각주 $1">$1</sup>');
 // 본문 속 그림 ![설명](주소) 과 표(| 칸 | 칸 |)
 const FIG_RE = /^!\[([^\]]*)\]\(([^)\s]+)\)\s*$/;
 const isTable = p => /^\|.*\|\s*$/m.test(p) && p.split('\n').filter(l => l.trim()).every(l => /^\|/.test(l.trim()));
@@ -830,7 +830,7 @@ function speak(fromK = 0, firstText = null) {
     const raw = first && first.trim() ? first : sentences[k]; first = null;
     if ((!o.fn && isFootnote(sentences[k])) || FIG_RE.test(sentences[k]) || isTable(sentences[k])) { k++; next(); return; }
     const el = $(`[data-pg="${p.n}"][data-s="${k}"]`); if (el) { el.classList.add('speaking'); if (o.follow) el.scrollIntoView({ block: 'nearest' }); }
-    const text = sayable(raw.replace(/^\[\^[^\]]+\]:\s*/, isFootnote(raw) ? '각주. ' : ''), o);
+    const text = sayable(raw.replace(/^\[\^([^\]]+)\]:\s*/, (m, n) => `각주 ${n}. `), o);
     if (!text) { k++; next(); return; }
     const u = new SpeechSynthesisUtterance(text); u.lang = voice ? voice.lang : 'ko-KR'; if (voice) u.voice = voice;
     u.rate = +o.rate; u.pitch = pv.pitch;
@@ -905,3 +905,25 @@ initHeader();
 initPlayer();
 initPage();
 })();
+
+/* ---------- 각주 번호를 누르면 각주 내용 보여주기 ---------- */
+document.addEventListener('click', e => {
+  const old = document.getElementById('fnPop');
+  const sup = e.target.closest && e.target.closest('.fn-ref');
+  if (!sup) { if (old && !e.target.closest('#fnPop')) old.remove(); return; }
+  e.preventDefault(); e.stopPropagation(); if (old) old.remove();
+  const n = sup.dataset.fn, here = sup.closest('[data-pg]');
+  const cands = [...document.querySelectorAll(`.fn-no[data-fnno="${CSS.escape(n)}"]`)];
+  const tgt = (here && cands.find(x => x.closest('[data-pg]').dataset.pg === here.dataset.pg)) || cands[0];
+  const pop = document.createElement('div'); pop.id = 'fnPop'; pop.setAttribute('role', 'dialog'); pop.setAttribute('aria-label', '각주 ' + n);
+  if (tgt) { const c = tgt.closest('p').cloneNode(true); c.removeAttribute('data-pg'); c.removeAttribute('data-s'); pop.innerHTML = `<div class="fnpop-h">각주 ${n}<button class="fnpop-x" aria-label="닫기">✕</button></div>`; c.querySelector('.fn-no') && c.querySelector('.fn-no').remove(); pop.appendChild(c);
+    const go = document.createElement('button'); go.className = 'link-btn small'; go.textContent = '각주 자리로 가기 ↓'; go.onclick = () => { pop.remove(); tgt.closest('p').scrollIntoView({ block: 'center' }); tgt.closest('p').classList.add('found'); setTimeout(() => tgt.closest('p').classList.remove('found'), 1600); }; pop.appendChild(go); }
+  else pop.innerHTML = `<div class="fnpop-h">각주 ${n}<button class="fnpop-x" aria-label="닫기">✕</button></div><p class="muted">이 각주는 다른 쪽에 있습니다.</p>`;
+  document.body.appendChild(pop);
+  const r = sup.getBoundingClientRect(), W = Math.min(420, innerWidth - 24);
+  pop.style.width = W + 'px'; pop.style.left = Math.max(12, Math.min(innerWidth - W - 12, r.left - W / 2)) + 'px';
+  const below = r.bottom + 8, h = pop.offsetHeight;
+  pop.style.top = (below + h < innerHeight - 8 ? below : Math.max(8, r.top - h - 8)) + 'px';
+  pop.querySelector('.fnpop-x').onclick = () => pop.remove();
+}, true);
+document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('fn-ref')) { e.preventDefault(); e.target.click(); } if (e.key === 'Escape') { const p = document.getElementById('fnPop'); if (p) p.remove(); } });

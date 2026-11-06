@@ -27,6 +27,7 @@ ap.add_argument('--out', default=os.path.join(os.path.dirname(__file__), 'out'))
 ap.add_argument('--width', type=int, default=1000); ap.add_argument('--big', type=int, default=1800)
 ap.add_argument('--quality', type=int, default=80)
 ap.add_argument('--visible-only', action='store_true', help='화면에 보이지 않는 숨은 글(InDesign 에 남은 옛 글 등)은 빼고 읽기')
+ap.add_argument('--footnotes', action='store_true', help='작은 글씨 위첨자 숫자는 [^번호], 각주 줄은 [^번호]: 로 표시')
 ap.add_argument('--no-text', action='store_true', help='본문 글을 넣지 않음 (그림만)')
 a = ap.parse_args()
 
@@ -60,6 +61,46 @@ def fix_hyphen(t):
     한글 음역의 장음 표시(예: 아웨라- 혼뚜)는 뒤에 빈칸이 있으므로 빈칸도 살립니다."""
     return HY.sub(lambda m: m.group(1) + ('- ' if '\uac00' <= m.group(1) <= '\ud7a3' else '-'), t)
 
+
+FNREF = re.compile(r'\[\^([0-9]+)\]:?')
+def unmark(t): return FNREF.sub(lambda m: m.group(1), t)
+def mark_footnotes(tp, raw):
+    """글자 크기로 각주를 찾아 표시만 붙입니다(글자는 그대로).
+    - 본문보다 아주 작은 숫자(위첨자) → [^번호]
+    - 본문보다 작은 글씨 줄이 '번호 + 빈칸'으로 시작 → [^번호]: (각주 본문)"""
+    import pypdfium2.raw as R2
+    n = tp.count_chars()
+    def size(i):
+        try: l, b, r, t = tp.get_charbox(i, loose=True); return t - b
+        except Exception: return 0
+    cs = [(tp.get_text_range(i, 1), size(i)) for i in range(n)]
+    if ''.join(c for c, _ in cs) != raw: return raw
+    from collections import Counter
+    sizes = Counter(round(z, 1) for c, z in cs if c.strip() and c not in '0123456789')
+    if not sizes: return raw
+    tot = sum(sizes.values())
+    big = [z for z, k in sizes.items() if k >= max(30, 0.15 * tot)]
+    body = max(big) if big else sizes.most_common(1)[0][0]   # 본문 크기 (각주가 더 많은 쪽도 있어서 '많이 쓰인 크기 중 가장 큰 것')
+    out, i, line_start = [], 0, True
+    while i < n:
+        c, z = cs[i]
+        if c in '0123456789':
+            j = i
+            while j < n and cs[j][0] in '0123456789': j += 1
+            num = ''.join(x for x, _ in cs[i:j])
+            nxt = cs[j][0] if j < n else ''
+            if z < body * 0.95 and (nxt == '\u3000' or (line_start and body * 0.75 <= z and nxt in (' ', '\t'))):
+                out.append(f'[^{num}]:'); i = j; line_start = False; continue
+            prev = out[-1][-1:] if out else ''
+            if z < body * 0.75 and prev and not prev.isspace():
+                out.append(f'[^{num}]'); i = j; line_start = False; continue
+            out.append(num); i = j; line_start = False; continue
+        out.append(c)
+        if c == '\n': line_start = True
+        elif c.strip(): line_start = False
+        i += 1
+    return ''.join(out)
+
 def clean(t, label='', full=None):
     """원문 글자는 하나도 바꾸지 않고, 줄바꿈만 정리합니다.
     - 줄 끝에 빈칸이 있으면(낱말 사이) 빈칸으로 잇고, 없으면(낱말 중간) 붙여 잇습니다.
@@ -80,6 +121,8 @@ def clean(t, label='', full=None):
         else: buf += line
         if line.endswith(' '):
             continue                      # 낱말 사이 줄바꿈: 빈칸 그대로 둠
+        if re.search(r'\[\^\d+\]$', line.rstrip()) and full[k]:
+            continue                      # 각주 번호로 끝난 꽉 찬 줄: 문단 중간
         last = line.rstrip()[-1:]
         if (last and not last.isalnum()) or last.isdigit() or not full[k]:
             paras.append(buf.strip()); buf = ''   # 문장부호로 끝난 줄: 문단(또는 게송 줄) 끝
@@ -93,7 +136,7 @@ def same_text(raw, out, label=''):
     rl = r.replace('\r', '').split('\n')
     if rl and rl[0].strip() == str(label): rl = rl[1:]
     strip = lambda x: re.sub(r'\s+', '', x)
-    return strip('\n'.join(rl)) == strip(out)
+    return strip('\n'.join(rl)) == strip(unmark(out))
 
 
 # 숨은 글 찾기: 글 덩어리 하나를 지웠을 때 쪽 그림이 전혀 바뀌지 않으면 보이지 않는 글입니다.
@@ -102,18 +145,69 @@ from PIL import ImageChops as _IC
 _DATA = None
 def _tobjs(page): return [o for o in page.get_objects(max_depth=1) if o.type == _R.FPDF_PAGEOBJ_TEXT]
 def _rend(page): return page.render(scale=2, grayscale=True).to_pil().convert('L')
+def _addr(h):
+    import ctypes; return ctypes.cast(h, ctypes.c_void_p).value
+def _render_without(i, ks):
+    d = pdfium.PdfDocument(_DATA); p = d[i]; objs = _tobjs(p)
+    for k in sorted(ks, reverse=True): p.remove_obj(objs[k])
+    p.gen_content(); return d, p
 def hidden_removed_page(i):
-    """i번째 쪽에서 보이지 않는 글 덩어리를 뺀 새 쪽과, 뺀 글을 돌려줍니다."""
-    base = _rend(pdfium.PdfDocument(_DATA)[i]); n = len(_tobjs(pdfium.PdfDocument(_DATA)[i])); inv = []
-    for k in range(n):
-        d2 = pdfium.PdfDocument(_DATA); p2 = d2[i]; p2.remove_obj(_tobjs(p2)[k]); p2.gen_content()
-        if _IC.difference(base, _rend(p2)).getbbox() is None: inv.append(k)
-    d = pdfium.PdfDocument(_DATA); p = d[i]; objs = _tobjs(p); tp0 = p.get_textpage(); gone = []
+    """i번째 쪽에서 보이지 않는 글 덩어리를 뺀 새 쪽과, 뺀 글을 돌려줍니다.
+    1) 하나씩 지워 봐서 쪽 그림이 그대로인 덩어리를 고르고,
+    2) 고른 것을 한꺼번에 지워도 그림이 그대로인 것만 남깁니다(보이는 글이 같이 사라지지 않게).
+    3) 다른 글 바로 위에 똑같이 겹쳐 찍힌 짧은 글(겹친 옛 글)도 뺍니다."""
+    base = _rend(pdfium.PdfDocument(_DATA)[i]); n = len(_tobjs(pdfium.PdfDocument(_DATA)[i]))
+    def changed(ks):  # 지웠을 때 눈에 띄게 바뀐 점의 수
+        df = _IC.difference(base, _rend(_render_without(i, ks)[1]))
+        return sum(1 for v in df.getdata() if v > 40) if df.getbbox() else 0
+    d0 = pdfium.PdfDocument(_DATA); p0 = d0[i]; t0 = p0.get_textpage(); o0 = _tobjs(p0); lens = []
+    for o in o0:
+        try: o.textpage = t0; lens.append(len(re.sub(r'\s', '', o.extract())))
+        except Exception: lens.append(0)
+    # 글자 4개 이상인 덩어리가 지워도 점 몇 개(25개 이하)만 바뀌면 숨은 글로 봅니다(숨은 글이 남기는 작은 점 자국 포함).
+    digits_only = []
+    for o in o0:
+        try: digits_only.append(bool(re.fullmatch(r'\s*[0-9]{1,2}\s*', o.extract())))
+        except Exception: digits_only.append(False)
+    allow = lambda ks: sum(25 if lens[k] >= 4 else (12 if digits_only[k] else 0) for k in ks)
+    cand = [k for k in range(n) if changed([k]) <= allow([k])]
+    inv = []
+    for k in cand:
+        if changed(inv + [k]) <= allow(inv + [k]): inv.append(k)
+    # 겹쳐 찍힌 글
+    d, p = _render_without(i, inv); objs = _tobjs(p); addr = {_addr(o.raw): j for j, o in enumerate(objs)}
+    tp = p.get_textpage(); chars = {}
+    for c in range(tp.count_chars()):
+        ch = tp.get_text_range(c, 1)
+        if not ch.strip(): continue
+        j = addr.get(_addr(_R.FPDFText_GetTextObject(tp.raw, c)))
+        if j is None: continue
+        chars.setdefault(j, []).append((ch, tp.get_charbox(c)))
+    def ov(a, b):
+        w = min(a[2], b[2]) - max(a[0], b[0]); h = min(a[3], b[3]) - max(a[1], b[1])
+        if w <= 0 or h <= 0: return 0
+        return w * h / max(1e-6, min((a[2]-a[0])*(a[3]-a[1]), (b[2]-b[0])*(b[3]-b[1])))
+    dup = []
+    for j, cs in chars.items():
+        if len(cs) > 200: continue
+        hit = 0; partner = {}
+        for ch, bx in cs:
+            for j2, cs2 in chars.items():
+                if j2 == j or j2 in dup: continue
+                if any(c2 == ch and ov(bx, b2) > 0.6 for c2, b2 in cs2): hit += 1; partner[j2] = partner.get(j2, 0) + 1; break
+        if cs and hit / len(cs) >= 0.9 and all(len(chars[j2]) >= len(cs) for j2 in partner): dup.append(j)
+    tp0 = p.get_textpage(); gone = []
     for k in inv:
-        try: objs[k].textpage = tp0; gone.append(objs[k].extract())
+        pass
+    od = pdfium.PdfDocument(_DATA); op = od[i]; oobjs = _tobjs(op); otp = op.get_textpage()
+    for k in inv:
+        try: oobjs[k].textpage = otp; gone.append(oobjs[k].extract())
         except Exception: gone.append('')
-    for k in sorted(inv, reverse=True): p.remove_obj(objs[k])
-    p.gen_content()
+    for j in dup:
+        try: objs[j].textpage = tp0; gone.append('(겹친 글) ' + objs[j].extract())
+        except Exception: gone.append('(겹친 글)')
+    for j in sorted(dup, reverse=True): p.remove_obj(objs[j])
+    if dup: p.gen_content()
     return d, p, gone
 
 if a.visible_only: _DATA = open(a.pdf, 'rb').read()
@@ -144,7 +238,9 @@ for i in range(N):
         edge = max(known) if known else 0
         full = [r is None or r >= edge - 14 for r in rights]
         tp.close()
-        text = clean(raw, labels[i] or (i + 1), full)
+        raw_m = mark_footnotes(src.get_textpage(), raw) if a.footnotes else raw
+        text = clean(raw_m, labels[i] or (i + 1), full)
+        if a.footnotes: text = re.sub(r'[ \t]*(?<!^)(?<!\n)(\[\^\d+\]:)', r'\n\n\1', text)  # 문단 중간에 붙은 각주는 따로 떼기
         if not same_text(raw, text, labels[i] or (i + 1)): changed_pages.append(i + 1)
         if ODD.search(text): odd_pages.append(i + 1)
     pages.append({'img': f'p/{i+1:04d}.webp', 'big': f'big/{i+1:04d}.webp', 'w': round(w), 'h': round(h), 'label': labels[i], 'text': text})

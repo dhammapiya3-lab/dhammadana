@@ -671,3 +671,18 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 .tbl-wrap .tbl td{vertical-align:top}
 .tbl-wrap .tbl td .small{white-space:nowrap}
 .ed-h{font-size:14px;margin:18px 0 0;color:var(--ink)}
+
+/* ---------- 각주 (글로 읽기) ---------- */
+.reflow sup{line-height:0;vertical-align:super;font-size:.68em}
+.reflow sup.fn-ref{color:var(--robe);font-weight:700;cursor:pointer;padding:0 2px;border-radius:3px}
+.reflow sup.fn-ref::before{content:"["}.reflow sup.fn-ref::after{content:"]"}
+.reflow sup.fn-ref:hover,.reflow sup.fn-ref:focus-visible{background:var(--robe-soft);outline:none}
+.reflow p.fn{font-size:.82em;line-height:1.65;color:var(--ink-soft);border-top:0;padding:0 0 0 2.6em;margin:0 0 .55em;position:relative}
+.reflow p.fn-first{margin-top:1.4em;padding-top:1.9em}
+.reflow p.fn-first::before{content:"각주";position:absolute;left:0;top:0;font-size:.85em;font-weight:700;color:var(--ink-soft);border-top:1px solid var(--line);width:5.5em;padding-top:.15em;letter-spacing:.05em}
+.reflow p.fn .fn-no{position:absolute;left:0;min-width:2em;text-align:center;font-weight:700;color:var(--robe);font-size:.95em;border:1px solid var(--robe-soft);border-radius:4px;line-height:1.5}
+.reflow p.fn-first .fn-no{top:1.9em}
+#fnPop{position:fixed;z-index:60;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.18);padding:12px 14px;max-height:50vh;overflow:auto;font-size:15px;line-height:1.7}
+#fnPop .fnpop-h{display:flex;justify-content:space-between;align-items:center;font-weight:700;color:var(--robe);margin-bottom:6px;font-size:13px}
+#fnPop .fnpop-x{border:0;background:none;font-size:16px;cursor:pointer;color:var(--ink-soft);padding:2px 6px}
+#fnPop p{margin:0 0 8px;padding:0;font-size:15px;color:var(--ink)}
