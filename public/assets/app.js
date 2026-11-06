@@ -293,8 +293,6 @@ function markEp() {
 }
 /* ---------- 책 상세: 목차 ---------- */
 async function initBook() {
-  // 긴 저자·옮긴이 소개는 접어 두고 '더 보기'
-  $$('.person-card').forEach(c => { const d = $('.clamp', c), b = $('.more-btn', c); if (d.scrollHeight > d.clientHeight + 8) { b.hidden = false; b.onclick = () => { const o = c.classList.toggle('open'); b.textContent = o ? '접기' : '더 보기'; }; } else c.classList.add('open'); });
   const m = $('#tocMount'); if (!m) return;
   try {
     const man = await manifest(m.dataset.manifest);
