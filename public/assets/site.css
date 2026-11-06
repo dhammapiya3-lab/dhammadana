@@ -555,3 +555,10 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 .player button:disabled,.player input:disabled,.player select:disabled{opacity:.4;cursor:not-allowed}
 #pLock[aria-pressed=true],#rLock[aria-pressed=true]{background:var(--robe);color:var(--paper);border-color:var(--robe)}
 #rSpeak:disabled{opacity:.45}
+/* 이 책에서 찾기 */
+#p-find{width:min(380px,calc(100vw - 24px));max-height:calc(100vh - 140px);overflow:auto}
+.find-list{list-style:none;padding:0;margin:6px 0 0}
+.find-list li{border-bottom:1px solid var(--line)}
+.find-list button{display:block;width:100%;text-align:left;padding:8px 2px;font-size:13.5px;line-height:1.55;color:var(--ink);background:none;border:0;cursor:pointer}
+.find-list button:hover{background:var(--paper-2)}
+.reflow p.found{background:var(--robe-soft);transition:background 1.5s}

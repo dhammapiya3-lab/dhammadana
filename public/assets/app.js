@@ -414,7 +414,7 @@ function renderReader() {
   el.innerHTML = `<div class="r-top"><button class="tbtn" id="rClose" aria-label="읽기 닫기">← 닫기</button>
     <div class="r-title">${esc(R.title)}<small>${esc(R.by)}${ch ? ' · ' + esc(ch.title) : ''}</small></div>
     <div class="r-tools">
-      ${R.toc.length ? '<button class="tbtn" data-panel="toc">목차</button>' : ''}
+      ${R.toc.length ? '<button class="tbtn" data-panel="toc">목차</button>' : ''}${hasText ? '<button class="tbtn" data-panel="find" aria-label="본문 검색">🔍 찾기</button>' : ''}
       <button class="tbtn" data-panel="font" aria-label="글씨 크기">가<span style="font-size:16px">가</span></button>
       ${hasText && R.speaking ? `<button class="tbtn ${R.ttsLocked ? 'on' : ''}" id="rLock" aria-pressed="${!!R.ttsLocked}" title="잠그면 실수로 멈추지 않습니다">${R.ttsLocked ? '🔒 잠김' : '🔓 잠금'}</button>` : ''}${hasText ? `<button class="tbtn ${R.speaking ? 'on' : ''}" id="rSpeak" ${R.ttsLocked ? 'disabled' : ''}>${R.speaking ? '■ 멈춤' : '▶ 듣기'}</button><button class="tbtn" data-panel="tts" aria-label="듣기 설정">듣기 설정</button>` : ''}
       <button class="tbtn" data-panel="mode">화면</button>
@@ -427,6 +427,9 @@ function renderReader() {
     <div class="r-bottom"><button class="tbtn" id="rPrev" ${R.i === 0 ? 'disabled' : ''} aria-label="이전 쪽">‹</button>
       <label for="rRange" class="sr">쪽 이동</label><input type="range" id="rRange" min="1" max="${N}" value="${n}">
       <span class="pg">${p.label ? esc(p.label) + '쪽 · ' : ''}${n} / ${N}</span><button class="tbtn" id="rNext" ${R.i === N - 1 ? 'disabled' : ''} aria-label="다음 쪽">›</button></div>
+    <div class="panel" id="p-find"><h5>이 책에서 찾기</h5>
+      <form id="findForm" class="row" style="gap:6px"><input id="findQ" placeholder="찾을 말" aria-label="찾을 말" value="${esc(R.findQ || '')}" style="flex:1;height:36px;border:1px solid var(--line);border-radius:8px;padding:0 10px;background:var(--paper)"><button class="tbtn" type="submit">찾기</button></form>
+      <div id="findRes">${R.findRes || '<p class="note">낱말을 넣으면 이 책의 모든 쪽에서 찾습니다. 위빳사나·vipassanā처럼 다른 표기도 함께 찾습니다.</p>'}</div></div>
     <div class="panel" id="p-toc"><h5>목차</h5><ul>${R.toc.map(t => `<li class="${/^\s/.test(t.title) ? 'sub' : ''}"><button class="link" data-go="${t.page}">${esc(t.title.trim())}</button><span class="muted">${esc(t.label || '')}</span></li>`).join('')}</ul></div>
     <div class="panel" id="p-font"><h5>글씨</h5>
       ${R.view === 'page' && hasImg ? `<div class="row">쪽 확대 <span><button class="tbtn" data-zoom="-1">−</button> ${Math.round(R.zoom * 100)}% <button class="tbtn" data-zoom="1">+</button></span></div>${hasText ? '<p class="note">쪽 보기에서는 원본 쪽을 확대합니다. 글자만 크게 보거나 밑줄을 그으려면 ‘글로 보기’로 바꾸세요.</p>' : ''}` :
@@ -457,6 +460,27 @@ function bindReader() {
   const reopen = id => $('#' + id).classList.add('open');
   $('#rClose').onclick = exitReader;
   $('#rPrev').onclick = () => go(R.i); $('#rNext').onclick = () => go(R.i + 2); $('#rRange').onchange = e => go(+e.target.value);
+  const ff = $('#findForm'); if (ff) ff.onsubmit = async ev => {
+    ev.preventDefault(); const q = $('#findQ').value.trim(); R.findQ = q; if (!q) return;
+    let V = []; try { V = (await data()).variants; } catch (e) {}
+    const { terms, group } = expand(q, V);
+    const hits = [];
+    for (const pgx of R.pages) {
+      const ps = paras(pgx.text);
+      ps.forEach((t, k) => { if (terms.some(x => norm(t).includes(x))) hits.push({ n: pgx.n, k, s: snippet(t, terms) || t.slice(0, 80) }); });
+    }
+    const ch = n => { const c = chapters()[chapterOf(n)]; return c && c.title ? c.title : ''; };
+    R.findTerms = terms;
+    R.findRes = `<p class="note">${hits.length ? `${hits.length}곳을 찾았습니다.` : '찾는 말이 없습니다.'}${group ? ` (${group.map(esc).join(', ')} 함께 찾음)` : ''}</p>
+      <ul class="find-list">${hits.slice(0, 200).map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}"><span class="muted small">${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span><br>${hl(h.s, terms)}</button></li>`).join('')}</ul>${hits.length > 200 ? '<p class="note">앞의 200곳만 보입니다. 더 자세한 말로 찾아보세요.</p>' : ''}`;
+    $('#findRes').innerHTML = R.findRes; bindFind();
+  };
+  const bindFind = () => $$('[data-find]', el).forEach(b => b.onclick = () => {
+    R.hl = R.findTerms || []; const n = +b.dataset.find, k = +b.dataset.k;
+    R.i = n - 1; stopSpeak(false); renderReader(); $('#p-find').classList.add('open');
+    const t = $(`[data-pg="${n}"][data-s="${k}"]`); if (t) { t.scrollIntoView({ block: 'center' }); t.classList.add('found'); setTimeout(() => t.classList.remove('found'), 1800); }
+  });
+  bindFind();
   const ho = $('#hlOff'); if (ho) ho.onclick = () => { R.hl = []; history.replaceState(null, '', location.pathname); renderReader(); };
   
   $$('[data-panel]', el).forEach(b => b.onclick = () => { const p = $('#p-' + b.dataset.panel); const o = p.classList.contains('open'); $$('.panel', el).forEach(x => x.classList.remove('open')); if (!o) p.classList.add('open'); });
