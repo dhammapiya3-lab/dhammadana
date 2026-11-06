@@ -20,6 +20,7 @@ locale: ko
 collections:
   # ───────── 책 ─────────
   - name: books
+    editor: { preview: false }
     label: 책
     label_singular: 책
     description: "도서관의 책들입니다. 책 파일(PDF·EPUB)은 https://dhammadana.kr/admin/upload/ 에서 올리면 저절로 연결됩니다."
@@ -35,9 +36,9 @@ collections:
       - { name: id, label: 자료번호, hint: "DL-0008 처럼 차례대로 붙입니다. 한 번 정하면 바꾸지 마세요.", pattern: ['^DL-\d{4}$', 'DL-0000 꼴로 적어 주세요'] }
       - { name: title, label: 제목 }
       - { name: subtitle, label: 부제, required: false }
-      - { name: original_title, label: 원서 제목, required: false }
-      - { name: original_language, label: 원서의 언어, widget: select, required: false, options: [빠알리어, 영어, 미얀마어, 태국어, 싱할라어, 한국어, 기타], hint: "이 책을 옮길 때 바탕으로 삼은 원서의 언어" }
-      - { name: series, label: 총서·시리즈, required: false }
+      - { name: cover, label: 표지 그림, widget: image, required: false }
+      - { name: byline, label: 책에 적힌 저자 표기, hint: "책에 인쇄된 그대로 (예: 난다말라비왐사 큰스님 지음)" }
+      - { name: translator, label: 옮긴이·편자, required: false, hint: "책에 인쇄된 그대로 (예: 식카와띠 위뿔라냐니 옮김)" }
       - name: teacher
         label: 스승
         hint: 이 책의 가르침을 펴신 스승. 목록에 없으면 먼저 '목록 → 스승'에 더하세요. 사전처럼 스승이 없는 책은 비워 둡니다.
@@ -48,8 +49,19 @@ collections:
         search_fields: ["items.*.name", "items.*.roman"]
         display_fields: ["items.*.name"]
         required: false
-      - { name: byline, label: 책에 적힌 저자 표기, hint: "책에 인쇄된 그대로 (예: 난다말라비왐사 큰스님 지음)" }
-      - { name: translator, label: 옮긴이·편자, required: false, hint: "책에 인쇄된 그대로 (예: 식카와띠 위뿔라냐니 옮김)" }
+      - name: provider
+        label: 자료 제공처
+        widget: relation
+        collection: lists
+        file: providers
+        value_field: "items.*.id"
+        search_fields: ["items.*.name"]
+        display_fields: ["items.*.name"]
+      - { name: press, label: 我無말들 출판물, widget: boolean, default: false }
+      - { name: original_title, label: 원서 제목, required: false }
+      - { name: original_language, label: 원서의 언어, widget: select, required: false, options: [빠알리어, 영어, 미얀마어, 태국어, 싱할라어, 한국어, 기타], hint: "이 책을 옮길 때 바탕으로 삼은 원서의 언어" }
+      - { name: original_source, label: 원서 정보, required: false, hint: "원서 출판사·연도 등" }
+      - { name: series, label: 총서·시리즈, required: false }
       - name: main
         label: 주요 자료
         widget: relation
@@ -70,33 +82,21 @@ collections:
         display_fields: ["items.*.label"]
         multiple: true
         required: false
-      - name: provider
-        label: 자료 제공처
-        widget: relation
-        collection: lists
-        file: providers
-        value_field: "items.*.id"
-        search_fields: ["items.*.name"]
-        display_fields: ["items.*.name"]
-      - { name: press, label: 我無말들 출판물, widget: boolean, default: false }
-      - { name: cover, label: 표지 그림, widget: image, required: false }
       - { name: description, label: 책 소개, widget: markdown, required: false }
       - { name: author_intro, label: 저자 소개, widget: markdown, required: false, hint: "책에 실린 저자(스승) 소개. 목차 위에 나옵니다." }
       - { name: translator_intro, label: 옮긴이 소개, widget: markdown, required: false, hint: "옮긴이·편역자 소개. 저자 소개 아래, 목차 위에 나옵니다." }
       - { name: contents, label: 목차, widget: text, required: false, hint: "한 줄에 한 장씩 적습니다. 아랫단계는 줄 앞에 '-' 를 붙입니다. 쪽수는 '제1장 자애란 ... 15' 처럼 끝에 적으면 오른쪽에 나옵니다." }
-      - { name: license, label: 라이선스, widget: select, options: ["CC BY-NC-ND", "CC BY-NC-SA", "CC BY-NC", "CC BY", "저작권자 허락", "자유 이용(퍼블릭 도메인)"], default: "CC BY-NC-ND" }
-      - { name: original_source, label: 원서 정보, required: false, hint: "원서 출판사·연도 등" }
-      - { name: added, label: 등록일, widget: datetime, type: date, format: "YYYY-MM-DD" }
-      - { name: order, label: 순서, widget: number, value_type: int, required: false, hint: "같은 날 등록한 책끼리의 순서 (클수록 앞)" }
-      - { name: hidden, label: 숨기기, widget: boolean, default: false, hint: "켜면 사이트에 나오지 않습니다" }
       - name: editions
         label: 판 (초판·개정판)
         label_singular: 판
+        collapsed: true
         hint: "판마다 한 칸입니다. 파일이 없는 지난 판(예를 들어 초판)도 '판 더하기'로 발행일만 적어 기록할 수 있습니다. 지금 내려받기·읽기에 쓰는 판에만 '최신판'을 켜세요. 이전 판은 지우지 말고 보관합니다."
         widget: list
         summary: "{{fields.label}} {{fields.published}}"
         fields:
           - { name: label, label: 판 이름, hint: "초판, 개정1판 …" }
+          - { name: current, label: 최신판, widget: boolean, default: true }
+          - { name: public, label: 공개, widget: boolean, default: true }
           - { name: page_count, label: 쪽수, widget: number, value_type: int, required: false, hint: "책의 전체 쪽수 (숫자만)" }
           - { name: published, label: 종이책 발행일, required: false, hint: "예: 2024년 5월 1일" }
           - { name: publisher_print, label: 종이책 출판사, required: false, hint: "종이책을 펴낸 출판사 (없거나 모르면 비워 두세요)" }
@@ -106,8 +106,6 @@ collections:
           - { name: isbn_ebook, label: 전자책 ISBN, required: false, hint: "전자책 ISBN이 따로 있으면 적어 주세요" }
           - { name: file_created, label: 파일 만든 날, required: false }
           - { name: changes, label: 바뀐 내용, required: false }
-          - { name: current, label: 최신판, widget: boolean, default: true }
-          - { name: public, label: 공개, widget: boolean, default: true }
           - name: pdf
             label: PDF (화면용)
             widget: object
@@ -142,6 +140,7 @@ collections:
           - name: sources
             label: 원본 출처
             widget: list
+            collapsed: true
             required: false
             fields:
               - { name: url, label: 주소 }
@@ -163,9 +162,14 @@ collections:
             multiple: true
             required: false
           - { name: note, label: 메모 (사이트에 안 나옴), widget: text, required: false }
+      - { name: license, label: 라이선스, widget: select, options: ["CC BY-NC-ND", "CC BY-NC-SA", "CC BY-NC", "CC BY", "저작권자 허락", "자유 이용(퍼블릭 도메인)"], default: "CC BY-NC-ND" }
+      - { name: added, label: 등록일, widget: datetime, type: date, format: "YYYY-MM-DD" }
+      - { name: order, label: 순서, widget: number, value_type: int, required: false, hint: "같은 날 등록한 책끼리의 순서 (클수록 앞)" }
+      - { name: hidden, label: 숨기기, widget: boolean, default: false, hint: "켜면 사이트에 나오지 않습니다" }
 
   # ───────── 책 본문 (글로 읽기) ─────────
   - name: texts
+    editor: { preview: false }
     label: 책 본문 (글로 읽기)
     label_singular: 책 본문
     description: "읽기 화면에 나오는 글입니다. 고치고 저장하면 1~2분 뒤 읽기 화면에 반영됩니다. 고치기 전 내용은 기록으로 남아 언제든 되돌릴 수 있습니다."
@@ -211,6 +215,7 @@ collections:
 
   # ───────── 소식 ─────────
   - name: news
+    editor: { preview: false }
     label: 소식
     label_singular: 소식
     description: 블로그·카페 글을 그대로 붙여넣어도 됩니다.
@@ -237,6 +242,7 @@ collections:
 
   # ───────── 글 페이지 ─────────
   - name: pages
+    editor: { preview: false }
     label: 글 페이지
     files:
       - name: about
@@ -264,6 +270,7 @@ collections:
 
   # ───────── 목록 ─────────
   - name: lists
+    editor: { preview: false }
     label: 목록 (스승·주제·제공처 등)
     files:
       - name: settings
