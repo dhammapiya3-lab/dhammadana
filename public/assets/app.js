@@ -563,7 +563,7 @@ function bindReader() {
     if (!('speechSynthesis' in window)) return toast('이 기기에서는 음성 읽기를 쓸 수 없습니다');
     if (!LEX.pali) { loadLex().then(() => tt.onclick()); return; }
     const o = ttsOpt(); const pv = pickVoice(o), v = pv.voice;
-    speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(sayable('법의 보시는 모든 보시를 뛰어넘는다. Sabbadānaṃ dhammadānaṃ jināti. (법구경 354게송)', o));
+    speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(sayable('법보시는 모든 보시를 능가한다. Sabbadānaṃ dhammadānaṃ jināti. (법구경 354게송)', o));
     u.lang = v ? v.lang : 'ko-KR'; if (v) u.voice = v; u.rate = +o.rate; u.pitch = pv.pitch; speechSynthesis.speak(u);
   };
   const trs = $('#ttsReset'); if (trs) trs.onclick = () => { store.set('tts', {}); renderReader(); $('#p-tts').classList.add('open'); toast('처음 설정으로 돌렸습니다'); };
