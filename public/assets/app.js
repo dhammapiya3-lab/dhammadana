@@ -420,7 +420,8 @@ async function initReaderPage() {
 const pageName = p => p.label ? `${p.label}쪽` : `${p.n}번째 쪽`;
 function closeReader() { stopSpeak(); R = null; const el = $('#reader'); if (el) el.remove(); document.body.style.overflow = ''; }
 function exitReader() { if (R && R.ttsLocked) { toast('듣기가 잠겨 있습니다. 🔒 잠김 단추를 눌러 풀어 주세요'); return; } const id = R && R.id; closeReader(); location.href = '/book/' + id + '/'; }
-const paras = t => String(t || '').split(/\n\s*\n/).map(s => s.trim().split('\n').every(l => /^\s*\|/.test(l)) ? s.trim() : s.replace(/\s*\n\s*/g, ' ').trim()).filter(Boolean);
+// 빈 줄 = 문단 나눔, 문단 안의 한 줄 바꿈 = 줄 바꿈(게송·회향문처럼 인쇄된 대로)
+const paras = t => String(t || '').split(/\n\s*\n/).map(s => s.trim().split('\n').map(l => l.trim()).join('\n')).filter(Boolean);
 function markUl(s, n) {
   if (R.hl.length) return hl(s, R.hl);
   const rg = uls().filter(h => h.id === R.id && h.p === n && h.text && s.includes(h.text)).map(h => { const a = s.indexOf(h.text); return [a, a + h.text.length, h.k]; }).sort((x, y) => x[0] - y[0]);
@@ -472,7 +473,7 @@ function reflowHtml() {
     const keep = k => !(p.n === c.from && k < (c.k0 || 0)) && !(p.n === c.to && c.kEnd != null && k >= c.kEnd);
     const heads = new Set(R.toc.filter(t => t.page === p.n || t.page === p.n - 1).map(t => headKey(t.title)));
     if (!ps.length) return `<span id="pm-${p.n}"></span>`;
-    return `<span class="pmark" id="pm-${p.n}">${esc(pageName(p))}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? (p.n === c.from && headKey(s) === headKey(c.title) ? ' class="sub-h ch-dup"' : ' class="sub-h" role="heading" aria-level="4"') : ''}>${fnMark(markUl(s.replace(/^## /, ''), p.n))}</p>`).join('') || ''}`;
+    return `<span class="pmark" id="pm-${p.n}">${esc(pageName(p))}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? (p.n === c.from && headKey(s) === headKey(c.title) ? ' class="sub-h ch-dup"' : ' class="sub-h" role="heading" aria-level="4"') : ''}>${fnMark(markUl(s.replace(/^## /, ''), p.n)).replace(/\n/g, '<br>')}</p>`).join('') || ''}`;
   }).join('');
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}" data-ci="${ci - 1}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}" data-ci="${ci + 1}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}</h3></div>` : ''}${body}${nav}</div>`;
@@ -656,6 +657,7 @@ function domToSrc(src, off) {
   while (i < src.length && d < off) {
     const m = src.slice(i).match(/^\[\^([^\]]+)\]/);
     if (m) { if (d + m[1].length > off) return i; d += m[1].length; i += m[0].length; continue; }
+    if (src[i] === '\n') { i++; continue; }  // 줄 바꿈은 화면 글자에 없음
     i++; d++;
   }
   return i;

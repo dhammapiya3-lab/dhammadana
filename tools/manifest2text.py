@@ -44,6 +44,8 @@ for i, p in enumerate(m['pages']):
     if not a.keep_order: paras = [x for x in paras if not FN.match(x)] + [x for x in paras if FN.match(x)]
     parts.append(f'=== {label}쪽 ===\n' + '\n\n'.join(paras))
 body = '\n\n'.join(parts) + '\n'
+# 각주 문단은 늘 새 문단으로 시작
+body = re.sub(r'(?<!\n)\n(\[\^\d+\]:)', r'\n\n\1', body)
 # 4) 각주 번호로 끝났지만 문장 중간인 문단은 다음 문단과 잇기 (예: …만료(āyukkhaya)[^1] / 입니다.)
 body = re.sub(r'([^.?!”’"\n])(\[\^\d+\])\n\n(?!## |\[\^|=== )', r'\1\2', body)
 # 5) 각주가 문장부호 없이 끝나고 다음 줄로 이어진 경우 한 각주로 잇기

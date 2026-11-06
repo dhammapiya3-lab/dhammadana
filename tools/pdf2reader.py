@@ -30,8 +30,10 @@ ap.add_argument('--visible-only', action='store_true', help='화면에 보이지
 ap.add_argument('--footnotes', action='store_true', help='작은 글씨 위첨자 숫자는 [^번호], 각주 줄은 [^번호]: 로 표시')
 ap.add_argument('--headings', action='store_true', help='본문보다 큰 글씨 줄은 소제목(## )으로 표시')
 ap.add_argument('--visual-order', action='store_true', help='줄을 쪽에 인쇄된 위치(위→아래) 순서로 다시 놓기 (PDF 안의 저장 순서가 인쇄 순서와 다를 때)')
+ap.add_argument('--line-breaks', action='store_true', help='짧은 줄(게송 등)은 인쇄된 대로 줄을 바꿈')
 ap.add_argument('--no-text', action='store_true', help='본문 글을 넣지 않음 (그림만)')
 a = ap.parse_args()
+LINEBREAKS = a.line_breaks
 
 if not re.fullmatch(r'DL-\d{4}', a.book_id):
     sys.exit('자료번호는 DL-0001 처럼 써 주세요.')
@@ -182,6 +184,13 @@ def clean(t, label='', full=None):
         line = raw.replace('\t', ' ')
         if not buf: buf = line.lstrip()
         else: buf += line
+        if full and not full[k] and LINEBREAKS:
+            # 오른쪽 끝까지 차지 않은 짧은 줄(게송·발원문·문단 끝): 문장부호로 끝나면 문단 끝, 아니면 인쇄된 대로 줄만 바꿈
+            if re.search(r'\[\^\d+\]$', line.rstrip()) or re.fullmatch(r'\s*\[\^\d+\]\s*', line):
+                buf = buf.rstrip(); continue   # 위첨자 각주 번호 때문에 갈라진 줄: 그대로 이어 붙임
+            if re.search(r'[.?!。…”’"\')」』]$', line.rstrip()): paras.append(buf.strip()); buf = ''
+            else: buf = buf.rstrip() + '\n'
+            continue
         if line.endswith(' '):
             continue                      # 낱말 사이 줄바꿈: 빈칸 그대로 둠
         if re.search(r'\[\^\d+\]$', line.rstrip()) and full[k]:
@@ -191,7 +200,7 @@ def clean(t, label='', full=None):
             paras.append(buf.strip()); buf = ''   # 문장부호로 끝난 줄: 문단(또는 게송 줄) 끝
         # 그 밖에는 낱말 중간 줄바꿈: 다음 줄을 붙여 이음
     if buf.strip(): paras.append(buf.strip())
-    return '\n\n'.join(re.sub(r' {2,}', ' ', p) for p in paras)
+    return '\n\n'.join(re.sub(r' *\n *', '\n', re.sub(r' {2,}', ' ', p)).strip() for p in paras)
 
 def same_text(raw, out, label=''):
     """빈칸·줄바꿈·쪽번호를 빼고 원문과 글자가 똑같은지 확인"""
