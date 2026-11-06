@@ -300,8 +300,8 @@ for (const b of BOOKS) {
     ${b.description ? `<div class="desc">${marked.parse(b.description)}</div>` : ''}
     ${b.author_intro && b.author_intro.trim() ? `<h2 class="h-sub">저자 소개</h2><div class="desc intro">${marked.parse(b.author_intro)}</div>` : ''}
     ${b.translator_intro && b.translator_intro.trim() ? `<h2 class="h-sub">옮긴이 소개</h2><div class="desc intro">${marked.parse(b.translator_intro)}</div>` : ''}
-    ${b.contents && b.contents.trim() ? contentsHtml(b.contents) : ''}
-    ${e.reader && !(b.contents && b.contents.trim()) ? `<div id="tocMount" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}"></div>` : ''}
+    ${b.contents && b.contents.trim() && !e.reader ? contentsHtml(b.contents) : ''}
+    ${e.reader ? `<div id="tocMount" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}"></div>` : ''}
     <details class="record"><summary>자료 기록 (출처 · 판 · 라이선스)</summary><div class="record-body">
       <dl class="kv"><dt>자료번호</dt><dd>${b.id}</dd>
       <dt>저자·스승</dt><dd>${t ? `<a href="/teacher/${t.id}/">${esc(t.name)}</a>${t.roman ? ` <span class="muted small">(${esc(t.roman)})</span>` : ''}` : esc(b.byline)}</dd>

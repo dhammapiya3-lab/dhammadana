@@ -499,3 +499,11 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 .filters label{align-items:flex-start;line-height:1.45}
 .filters label input{margin-top:3px;flex:none}
 .perm-note{margin:8px 0 2px;padding:8px 12px;border-left:3px solid var(--robe-soft);background:var(--paper-2);font-size:13.5px;line-height:1.7;color:var(--ink)}
+/* 글로 보기: 장 단위 */
+.ch-head{text-align:center;margin:6px 0 28px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.ch-head h3{font-family:var(--serif);font-size:1.35em;margin:6px 0 0}
+.ch-nav{display:flex;justify-content:space-between;gap:12px;margin:40px 0 10px;padding-top:18px;border-top:1px solid var(--line)}
+.ch-nav .tbtn{max-width:48%;white-space:normal;text-align:left;height:auto;min-height:38px;padding:8px 12px}
+.ch-nav .tbtn:last-child{text-align:right}
+.toc li.sub a,.panel li.sub{padding-left:1.2em}
+.toc li.sub{font-size:.95em}

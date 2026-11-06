@@ -296,7 +296,7 @@ async function initBook() {
   const m = $('#tocMount'); if (!m) return;
   try {
     const man = await manifest(m.dataset.manifest);
-    if (man.toc && man.toc.length) m.innerHTML = `<h2 class="h-sub">목차</h2><ol class="toc">${man.toc.map(t => `<li><a href="/read/${m.dataset.book}/${t.page}">${esc(t.title)}</a><span>${esc(t.label || t.page)}</span></li>`).join('')}</ol>`;
+    if (man.toc && man.toc.length) m.innerHTML = `<h2 class="h-sub">목차</h2><ol class="toc">${man.toc.map(t => `<li class="${/^\s/.test(t.title) ? 'sub' : ''}"><a href="/read/${m.dataset.book}/${t.page}?view=text">${esc(t.title.trim())}</a><span>${esc(t.label || t.page)}</span></li>`).join('')}</ol><p class="small muted" style="margin-top:8px">목차를 누르면 그 장을 글로 읽을 수 있습니다. 읽기 화면 위쪽에서 ‘쪽 보기’로 바꾸면 책 모양 그대로 볼 수 있습니다.</p>`;
   } catch (e) {}
 }
 
@@ -322,6 +322,7 @@ async function initReaderPage() {
     view: store.get('rview', 'page'), zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), lh: store.get('rlh', 1.9), font: store.get('rfont', 'serif'),
     hl: hlp ? hlp.split('|').filter(Boolean) : [], speaking: false
   };
+  const qv = new URLSearchParams(location.search).get('view'); if (qv === 'text' || qv === 'page') R.view = qv;
   if (!pages.some(p => p.text)) R.view = 'page';
   if (!pages.some(p => p.img)) R.view = 'text';
   renderReader();
@@ -342,10 +343,25 @@ function pageHtml(p) {
   const src = R.zoom > 1.2 && p.big ? p.big : p.img;
   return `<div class="page-sheet img-sheet" style="width:min(${Math.round(560 * R.zoom)}px,100%);${p.w && p.h ? `aspect-ratio:${p.w}/${p.h}` : ''}"><img src="${esc(src)}" alt="${esc(R.title)} ${esc(pageName(p))}" draggable="false"></div>`;
 }
+// 글로 보기: 목차의 큰 장(들여쓰지 않은 항목) 단위로 보여 주기
+function chapters() {
+  const top = R.toc.filter(t => !/^\s/.test(t.title)).sort((a, b) => a.page - b.page);
+  if (!top.length) return [{ title: '', from: 1, to: R.pages.length }];
+  const out = [];
+  if (top[0].page > 1) out.push({ title: '앞부분', from: 1, to: top[0].page - 1 });
+  top.forEach((t, i) => out.push({ title: t.title.trim(), from: t.page, to: (top[i + 1] ? top[i + 1].page - 1 : R.pages.length) }));
+  return out.filter(c => c.to >= c.from);
+}
+function chapterOf(n) { const cs = chapters(); return cs.findIndex(c => n >= c.from && n <= c.to); }
 function reflowHtml() {
-  return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}" style="--fs:${R.fs};--lh:${R.lh}">${R.pages.map(p => {
-    const ps = paras(p.text); return `<span class="pmark" id="pm-${p.n}">${esc(pageName(p))}</span>${ps.map((s, k) => `<p data-pg="${p.n}" data-s="${k}">${markUl(s, p.n)}</p>`).join('')}`;
-  }).join('')}</div>`;
+  const cs = chapters(), ci = Math.max(0, chapterOf(R.i + 1)), c = cs[ci];
+  const subs = R.toc.filter(t => /^\s/.test(t.title) && t.page >= c.from && t.page <= c.to);
+  const body = R.pages.slice(c.from - 1, c.to).map(p => {
+    const ps = paras(p.text); const sub = subs.filter(t => t.page === p.n);
+    return `<span class="pmark" id="pm-${p.n}">${esc(pageName(p))}</span>${ps.map((s, k) => `<p data-pg="${p.n}" data-s="${k}">${markUl(s, p.n)}</p>`).join('') || '<p class="muted small">(글이 없는 쪽입니다. 쪽 보기로 확인하세요.)</p>'}`;
+  }).join('');
+  const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
+  return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}" style="--fs:${R.fs};--lh:${R.lh}">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}</h3></div>` : ''}${body}${nav}</div>`;
 }
 function tocFor(n) { let cur = null; for (const t of R.toc) if (t.page <= n) cur = t; return cur; }
 function renderReader() {
@@ -372,7 +388,7 @@ function renderReader() {
       <label for="rRange" class="sr">쪽 이동</label><input type="range" id="rRange" min="1" max="${N}" value="${n}">
       <span class="pg">${p.label ? esc(p.label) + '쪽 · ' : ''}${n} / ${N}</span><button class="tbtn" id="rNext" ${R.i === N - 1 ? 'disabled' : ''} aria-label="다음 쪽">›</button>
       <button class="tbtn" id="rCopy" title="이 쪽 주소와 출처 복사">출처 복사</button></div>
-    <div class="panel" id="p-toc"><h5>목차</h5><ul>${R.toc.map(t => `<li><button class="link" data-go="${t.page}">${esc(t.title)}</button><span class="muted">${esc(t.label || '')}</span></li>`).join('')}</ul></div>
+    <div class="panel" id="p-toc"><h5>목차</h5><ul>${R.toc.map(t => `<li class="${/^\s/.test(t.title) ? 'sub' : ''}"><button class="link" data-go="${t.page}">${esc(t.title.trim())}</button><span class="muted">${esc(t.label || '')}</span></li>`).join('')}</ul></div>
     <div class="panel" id="p-font"><h5>글씨</h5>
       ${R.view === 'page' && hasImg ? `<div class="row">쪽 확대 <span><button class="tbtn" data-zoom="-1">−</button> ${Math.round(R.zoom * 100)}% <button class="tbtn" data-zoom="1">+</button></span></div>${hasText ? '<p class="note">쪽 보기에서는 원본 쪽을 확대합니다. 글자만 크게 보거나 밑줄을 그으려면 ‘글로 보기’로 바꾸세요.</p>' : ''}` :
       `<div class="row">글자 크기 <span class="seg">${[0.85, 1, 1.15, 1.3, 1.5].map((v, i) => `<button data-fs="${v}" class="${R.fs === v ? 'on' : ''}">${i + 1}</button>`).join('')}</span></div>
@@ -389,13 +405,13 @@ function renderReader() {
       <div class="row" style="margin-top:12px"><input id="bmNote" placeholder="이 쪽에 한 줄 메모" aria-label="책갈피 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"><button class="tbtn" id="bmSave">저장</button></div>
       <p class="note">회원가입 없이 이 기기의 브라우저에만 저장됩니다. 다른 기기로 옮길 때는 내 서재의 ‘옮기기’를 쓰세요.</p></div>`;
   bindReader();
-  if (R.view === 'text') { const pm = $('#pm-' + n); if (pm && R.i > 0) pm.scrollIntoView({ block: 'start' }); }
+  if (R.view === 'text') { const c = chapters()[Math.max(0, chapterOf(n))]; const pm = $('#pm-' + n); if (pm && n !== c.from) pm.scrollIntoView({ block: 'start' }); else $('#rBody').scrollTop = 0; }
   // 다음 쪽 그림 미리 받기
   const nx = R.pages[R.i + 1]; if (nx && nx.img && R.view === 'page') { const im = new Image(); im.src = nx.img; }
   store.set('pos-' + R.id, n);
   history.replaceState(history.state, '', `/read/${R.id}/${n}` + location.search);
 }
-function go(n) { if (!R) return; R.i = Math.max(0, Math.min(R.pages.length - 1, n - 1)); stopSpeak(); renderReader(); $('#rBody').scrollTop = 0; }
+function go(n) { if (!R) return; R.i = Math.max(0, Math.min(R.pages.length - 1, n - 1)); stopSpeak(); renderReader(); if (R.view === 'page') $('#rBody').scrollTop = 0; }
 function bindReader() {
   const el = $('#reader');
   const reopen = id => $('#' + id).classList.add('open');
