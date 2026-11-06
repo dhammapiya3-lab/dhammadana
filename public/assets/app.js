@@ -746,7 +746,7 @@ function ttsPanel() {
     <div class="tts-row"><label>빠르기 <b id="ttsRateV">${(+o.rate).toFixed(1)}배</b></label><input type="range" min="0.6" max="1.8" step="0.1" value="${o.rate}" data-tts="rate"></div>
     <div class="tts-row"><label>목소리 높낮이 <b id="ttsPitchV">${(+o.pitch).toFixed(1)}</b></label><input type="range" min="0.6" max="1.4" step="0.1" value="${o.pitch}" data-tts="pitch"></div>
     <div class="tts-sub">읽을 것</div>
-    ${ck('pali', '빠알리어', '빠알리어 소리대로 읽음')}${ck('gloss', '한글 옆 원어 풀이도 읽기', '위빳사나Vipassanā, 지도법사(Nāyaka Sayadaw)처럼 한글과 같은 말을 한 번 더 읽음')}${ck('en', '영어')}${ck('hanja', '한자')}${ck('fn', '각주', '본문 속 번호는 「각주 1」로 읽고, 각주 내용은 쪽 끝에서 읽음')}${ck('sym', '특수부호', '괄호·따옴표 등을 이름으로 읽음')}
+    ${ck('pali', '빠알리어', '빠알리어 소리대로 읽음')}${ck('gloss', '한글 옆 원어 풀이도 읽기', '위빳사나Vipassanā, 지도법사(Nāyaka Sayadaw)처럼 한글과 같은 말을 한 번 더 읽음')}${ck('en', '영어')}${ck('hanja', '한자')}${ck('paren', '괄호 ( ) 안', '끄면 ( ) 안의 풀이·원어·참고를 건너뜀')}${ck('brack', '대괄호 [ ] 안', '끄면 옮긴이가 덧붙인 [ ] 안을 건너뜀')}${ck('fn', '각주', '본문 속 번호는 「각주 1」로 읽고, 각주 내용은 쪽 끝에서 읽음')}${ck('sym', '특수부호', '괄호·따옴표 등을 이름으로 읽음')}
     <div class="tts-sub">읽는 방식</div>
     <div class="tts-row"><label>문단 사이 쉼</label>${sel('pause', [[0, '쉬지 않음'], [0.3, '짧게'], [0.8, '보통'], [1.5, '길게']])}</div>
     <div class="tts-row"><label>꺼짐 예약</label>${sel('sleep', [[0, '끄지 않음'], [15, '15분 뒤'], [30, '30분 뒤'], [60, '1시간 뒤']])}</div>
@@ -755,12 +755,14 @@ function ttsPanel() {
     <p class="note">목소리는 이 기기에 깔린 한국어 목소리 가운데서 고릅니다. 남성 목소리가 목록에 없으면 ‘낮은 목소리’를 고르거나, 컴퓨터에서는 마이크로소프트 엣지(Edge) 브라우저로 열면 남성 목소리(InJoon, Hyunsu)를 고를 수 있습니다. 설정은 이 기기의 브라우저에 저장되고, 듣는 중에 바꾸면 다음 문단부터 적용됩니다. 빨리어 낱말 목록: Digital Pāḷi Dictionary (CC BY-NC-SA 4.0).</p>`;
 }
 // 듣기 설정 (이 브라우저에 저장)
-const TTS_DEF = { voice: '', rate: 1, pitch: 1, gloss: false, sym: false, en: true, pali: true, hanja: true, fn: false, pause: 0.3, chapterStop: false, sleep: 0, follow: true };
+const TTS_DEF = { voice: '', rate: 1, pitch: 1, gloss: false, sym: false, en: true, pali: true, hanja: true, fn: false, paren: true, brack: true, pause: 0.3, chapterStop: false, sleep: 0, follow: true };
 const ttsOpt = () => Object.assign({}, TTS_DEF, store.get('tts', {}));
 const SYM_NAME = { '(': '괄호 열고', ')': '괄호 닫고', '[': '대괄호 열고', ']': '대괄호 닫고', '‘': '작은따옴표', '’': '작은따옴표', '“': '큰따옴표', '”': '큰따옴표', '"': '큰따옴표', "'": '작은따옴표', '「': '낫표', '」': '낫표', '『': '겹낫표', '』': '겹낫표', '《': '겹화살괄호', '》': '겹화살괄호', '〈': '홑화살괄호', '〉': '홑화살괄호', '<': '홑화살괄호', '>': '홑화살괄호', '＜': '홑화살괄호', '＞': '홑화살괄호', '·': '가운뎃점', 'ㆍ': '가운뎃점', '…': '줄임표', '~': '물결표', '*': '별표', '/': '빗금', '|': '세로줄', '—': '줄표', '–': '줄표', '－': '붙임표' };
 const SYM_RE = /[()\[\]‘’“”"'「」『』《》〈〉<>＜＞·ㆍ…~*/|—–－]/g;
 function sayable(s, o = ttsOpt()) {
   let t = String(s || '');
+  if (o.paren === false) { let prev; do { prev = t; t = t.replace(/\s?[(（][^()（）]*[)）]/g, ''); } while (t !== prev); }
+  if (o.brack === false) t = t.replace(/\s?\[(?!\^)[^\[\]]*\]/g, '');
   t = t.replace(/\[\^([^\]]+)\]/g, (m, n) => o.fn ? ` 각주 ${n}, ` : ''); // 본문 속 각주 번호: '각주 읽기'를 켜면 '각주 1'로, 끄면 읽지 않음
   // 한글 바로 뒤에 붙은 로마자 풀이(예: 위빳사나Vipassanā, 사야도Chanmyay Sayadaw)는 한 번만 읽도록 뺌
   // 한글 바로 뒤에 띄어 쓰지 않고 붙은 로마자는 앞 한글의 원어 풀이로 봄 (위빳사나Vipassanā, 도사dosa, 사야도Chanmyay Sayadaw)
