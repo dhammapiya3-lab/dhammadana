@@ -663,3 +663,7 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
   .mode-menu .mode-pop{right:auto;left:0}
   .head-tools .mode-menu:last-child .mode-pop{left:auto;right:0}
 }
+.panel .row.row-col{flex-direction:column;align-items:stretch;gap:6px}
+.seg.seg-grid{display:grid;grid-template-columns:repeat(5,1fr);width:100%}
+.seg.seg-grid button{padding:0 4px;white-space:nowrap}
+.seg.seg-grid button+button{border-left:1px solid var(--line)}
