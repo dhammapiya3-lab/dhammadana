@@ -252,7 +252,7 @@ function updatesList() {
   return rows.sort((a, b) => b.d.localeCompare(a.d)).slice(0, 8);
 }
 put('index.html', layout({
-  page: 'home', body: `<section class="verse wrap"><div class="verse-bg" aria-hidden="true">${wheel('')}</div>${wheel('wheel')}
+  page: 'home', body: `<section class="verse wrap">${wheel('wheel')}
   <div class="pali-line">${esc(S.verse_pali)}</div><div class="ko-line">${esc(S.verse_ko)}</div><div class="cite">${esc(S.verse_cite)}</div>
   <form class="hero-search" action="/search/" role="search"><label for="hq" class="sr">자료 검색</label>
     <input id="hq" name="q" placeholder="제목, 스승, 옮긴이, 주제어, 본문으로 찾기" autocomplete="off"><button class="btn" type="submit">찾기</button></form>
