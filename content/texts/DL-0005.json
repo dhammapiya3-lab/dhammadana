@@ -29,8 +29,13 @@
     {
       "title": "일러두기",
       "page": 4,
-      "sub": true,
-      "at": ""
+      "sub": false,
+      "at": "일러두기"
+    },
+    {
+      "title": "본문",
+      "page": 5,
+      "sub": false
     },
     {
       "title": "판권지",
