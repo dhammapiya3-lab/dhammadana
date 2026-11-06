@@ -1,54 +1,74 @@
 {
   "id": "DL-0005",
   "title": "생각할 거리를 드립니다",
-  "subtitle": "",
-  "original_title": "",
-  "original_language": "",
-  "series": "",
-  "teacher": "jotika",
+  "subtitle": "우 조티카 사야도 잠언집",
+  "cover": "/uploads/생각할거리를드립니다_표지.jpg",
   "byline": "우 조티카 사야도 지음",
   "translator": "위무띠 법주 스님 옮김",
-  "main": [],
-  "topics": [],
+  "teacher": "jotika",
   "provider": "amumaldeul",
   "press": true,
-  "cover": "/covers/DL-0005.jpg",
-  "description": "",
-  "license": "CC BY-NC-ND",
+  "original_title": "သိစရာ၊ တွေးစရာ",
+  "original_language": "미얀마어",
   "original_source": "",
-  "added": "2026-11-06",
-  "order": 5,
-  "hidden": false,
+  "series": "",
+  "main": [],
+  "topics": [
+    "재가자의 삶"
+  ],
+  "description": "“이 책에 담은 아포리즘을 숙고하며 읽어주기 바랍니다. 간결하게 요점만 적어 놓아서 한 번만 읽어서는 이해하지 못할 수 있습니다. 생각하는 취미가 있는 사람은 간결함 속에 숨어 있는 진실을 발견하는 재미를 맛볼 수 있으리라 생각합니다. 그러다 삶 속에서 경험을 통해 온전히 그 의미를 이해할 순간이 올 것입니다.”",
+  "author_intro": "우 조띠까 사야도\nU Jotika Sayadaw\n\n미얀마인들이 가장 존경하는 큰스님. 1947년 미얀마에서 태어나 가톨릭 미션 스쿨에서 교육을 받았고, 1973년 전자공학을 전공으로 대학을 졸업한 후, 불교에 관심을 갖게 되었다. 26세에 출가. 1974년 따웅뿔루 사야도(Taung Pu Lu Sayadaw)를 은사로 비구계를 받았다. 스님의 저서들은 외국에서도 인기가 높으며, 지금까지 13권의 책을 출판하였다. 대표 저서로 《여름에 내린 눈(Snow in the Summer)》, 《마음의 지도(Map of the Journey)》, 《붓다의 무릎에 앉아(The Residence of Mindfulness)》가 있다.",
+  "translator_intro": "위무띠 법주 스님\n\n한국테라와다불교 사띠빳타나 수행센터 연방죽 선원장. 미얀마인들이 존경하는 큰스님 우 조티카 사야도의 법문을 담은 《여름에 내린 눈》, 《행복이 온다》를 번역하였다.\nhttp://cafe.daum.net/lotuspond",
+  "contents": "저자 소개 2\n머리말 3\n생각할 거리를 드립니다 5",
   "editions": [
     {
-      "label": "초판",
-      "published": "",
-      "file_created": "",
-      "changes": "",
+      "label": "개정3판",
       "current": true,
       "public": true,
+      "page_count": 84,
+      "published": "2026년 11월 3일",
+      "publisher_print": "我無말들",
+      "isbn": "979-11-980922-7-4",
+      "published_ebook": "2026년 11월 3일",
+      "publisher_ebook": "我無말들",
+      "isbn_ebook": "979-11-980922-0-5",
+      "file_created": "2026년 11월 3일",
+      "changes": "",
       "pdf": {
         "mode": "none",
-        "url": ""
+        "url": "",
+        "site": ""
+      },
+      "pdf_print": {
+        "mode": "none",
+        "url": "",
+        "site": ""
+      },
+      "pdf_cover": {
+        "mode": "none",
+        "url": "",
+        "site": ""
       },
       "epub": {
         "mode": "none",
-        "url": ""
+        "url": "",
+        "site": ""
       },
       "reader": false,
       "sources": [],
       "collection": "我無말들 자체 제작",
       "collected": "",
+      "permission_status": "",
+      "permission_note": "",
+      "permission_image": "",
       "permissions": [
         "amumaldeul-self"
       ],
-      "note": "",
-      "pdf_print": {
-        "mode": "none"
-      },
-      "pdf_cover": {
-        "mode": "none"
-      }
+      "note": ""
     }
-  ]
+  ],
+  "license": "CC BY-NC-ND",
+  "added": "2026-11-06",
+  "order": 5,
+  "hidden": false
 }
