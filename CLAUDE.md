@@ -21,7 +21,7 @@
 - 이메일 등 개인정보는 사이트 표기 외 다른 곳에 보내지 않는다.
 
 ## 자주 하는 일
-- **PDF를 도서관 책으로 (지금 방식)**: `python3 tools/pdf2reader.py 책.pdf DL-0007 개정판 --offset N --toc toc.txt` → 원문 대조 ✓ 확인 → `python3 tools/manifest2text.py tools/out/reader/<ID>/<판>/manifest.json` 로 `content/texts/<ID>.json` 을 만들어 commit (이 글 파일이 있으면 글로 읽기가 켜짐, 관리자 화면 '책 본문'에서 고칠 수 있음). PDF 파일은 운영자가 /admin/upload/ 에서 올림. 읽기 화면은 글로 보기만 씀.
+- **PDF를 도서관 책으로 (지금 방식)**: `python3 tools/pdf2reader.py 책.pdf DL-0007 개정판 --offset N --toc toc.txt` → 원문 대조 ✓ 확인 (InDesign PDF에 화면에 안 보이는 옛 글이 남아 있으면 `--visible-only` 를 붙이고 out/…/hidden.txt 확인) → `python3 tools/manifest2text.py tools/out/reader/<ID>/<판>/manifest.json` 로 `content/texts/<ID>.json` 을 만들어 commit (이 글 파일이 있으면 글로 읽기가 켜짐, 관리자 화면 '책 본문'에서 고칠 수 있음). PDF 파일은 운영자가 /admin/upload/ 에서 올림. 읽기 화면은 글로 보기만 씀.
 - **(예전 방식)**: `python3 tools/pdf2reader.py 책.pdf DL-0007 초판 [--offset N] [--toc toc.txt]` → 결과 확인(깨진 빨리어 글자 경고 확인) → `python3 tools/upload.py` → 책 JSON 의 해당 판에서 `reader: true`, `pdf: {mode: file, url: pdf/DL-0007/DL-0007_초판.pdf}` → commit·push.
 - 새 책: `content/books/` 에 다음 번호로 파일 추가(형식은 기존 파일 참고), 표지는 `public/covers/<ID>.jpg`.
 - 확인: `npm run dev` → http://localhost:4321
