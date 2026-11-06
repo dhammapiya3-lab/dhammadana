@@ -22,7 +22,7 @@ def split_heads(paras, titles):
     for q in paras:
         done = False
         for t in titles:
-            if q.strip() == t or t not in q or len(q) <= len(t): continue
+            if q.startswith('## ') or q.strip() == t or t not in q or len(q) <= len(t): continue
             i = q.find(t); before, after = q[:i].rstrip(), q[i + len(t):].lstrip()
             # 제목이 문단 처음/끝에 붙어 있을 때만 (문장 속 우연한 같은 말은 건드리지 않음)
             if before and not re.search(r'[.?!”’)\]]$', before): continue

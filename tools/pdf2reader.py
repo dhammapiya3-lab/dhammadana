@@ -28,6 +28,7 @@ ap.add_argument('--width', type=int, default=1000); ap.add_argument('--big', typ
 ap.add_argument('--quality', type=int, default=80)
 ap.add_argument('--visible-only', action='store_true', help='화면에 보이지 않는 숨은 글(InDesign 에 남은 옛 글 등)은 빼고 읽기')
 ap.add_argument('--footnotes', action='store_true', help='작은 글씨 위첨자 숫자는 [^번호], 각주 줄은 [^번호]: 로 표시')
+ap.add_argument('--headings', action='store_true', help='본문보다 큰 글씨 줄은 소제목(## )으로 표시')
 ap.add_argument('--no-text', action='store_true', help='본문 글을 넣지 않음 (그림만)')
 a = ap.parse_args()
 
@@ -101,6 +102,34 @@ def mark_footnotes(tp, raw):
         i += 1
     return ''.join(out)
 
+HMARK = '\x01'; HSTART = '\x02'
+def heading_lines(tp, raw):
+    """본문보다 큰 글씨(1.2배 이상)로 된 줄 번호들 (raw 는 pdfium 원래 글, 줄은 \r\n 으로 나뉨)"""
+    n = tp.count_chars()
+    if ''.join(tp.get_text_range(i, 1) for i in range(n)) != raw: return {}
+    def size(i):
+        try: l, b, r, t = tp.get_charbox(i, loose=True); return t - b
+        except Exception: return 0
+    from collections import Counter
+    sz = [size(i) if raw[i].strip() else 0 for i in range(n)]
+    allsz = Counter(round(z, 1) for i, z in enumerate(sz) if raw[i].strip())
+    tot = sum(allsz.values()); big = [z for z, k in allsz.items() if k >= max(30, 0.15 * tot)]
+    body = max(big) if big else (allsz.most_common(1)[0][0] if allsz else 0)
+    out, pos = {}, 0
+    for li, ln in enumerate(raw.split('\r\n')):
+        ss = sorted(sz[pos + k] for k, c in enumerate(ln) if c.strip())
+        if body and ss and sum(1 for c in ln if c.isalpha()) >= 2 and ss[len(ss) // 2] >= body * 1.2: out[li] = ss[len(ss) // 2]
+        pos += len(ln) + 2
+    return out
+def add_hmarks(t, idx):
+    # 크기가 같은 소제목 줄끼리만 한 제목으로 잇고(\x01), 크기가 다르면 새 제목으로 시작(\x02)
+    ls = t.split('\r\n'); out = []
+    for i, l in enumerate(ls):
+        if i not in idx: out.append(l); continue
+        cont = (i - 1) in idx and abs(idx[i - 1] - idx[i]) <= idx[i] * 0.1
+        out.append((HMARK if cont else HSTART) + l)
+    return '\r\n'.join(out)
+
 def clean(t, label='', full=None):
     """원문 글자는 하나도 바꾸지 않고, 줄바꿈만 정리합니다.
     - 줄 끝에 빈칸이 있으면(낱말 사이) 빈칸으로 잇고, 없으면(낱말 중간) 붙여 잇습니다.
@@ -115,6 +144,13 @@ def clean(t, label='', full=None):
     for k, raw in enumerate(lines):
         if not raw.strip():
             if buf.strip(): paras.append(buf.strip()); buf = ''
+            continue
+        if raw[:1] in (HMARK, HSTART):     # 소제목 줄: 앞 문단을 끝내고, 이어지는 같은 크기 소제목 줄끼리만 잇기
+            h = raw[1:].replace('\t', ' ')
+            if buf.strip() and (raw[0] == HSTART or not buf.startswith('## ')): paras.append(buf.strip()); buf = ''
+            buf = ('## ' + h.lstrip()) if not buf else (buf + h)
+            nxt = lines[k + 1] if k + 1 < len(lines) else ''
+            if not nxt.startswith(HMARK): paras.append(buf.strip()); buf = ''
             continue
         line = raw.replace('\t', ' ')
         if not buf: buf = line.lstrip()
@@ -136,7 +172,7 @@ def same_text(raw, out, label=''):
     rl = r.replace('\r', '').split('\n')
     if rl and rl[0].strip() == str(label): rl = rl[1:]
     strip = lambda x: re.sub(r'\s+', '', x)
-    return strip('\n'.join(rl)) == strip(unmark(out))
+    return strip('\n'.join(rl)) == strip(re.sub(r'(^|\n)## ', r'\1', unmark(out)))
 
 
 # 숨은 글 찾기: 글 덩어리 하나를 지웠을 때 쪽 그림이 전혀 바뀌지 않으면 보이지 않는 글입니다.
@@ -238,7 +274,9 @@ for i in range(N):
         edge = max(known) if known else 0
         full = [r is None or r >= edge - 14 for r in rights]
         tp.close()
+        hidx = heading_lines(src.get_textpage(), raw) if a.headings else set()
         raw_m = mark_footnotes(src.get_textpage(), raw) if a.footnotes else raw
+        if hidx: raw_m = add_hmarks(raw_m, hidx)
         text = clean(raw_m, labels[i] or (i + 1), full)
         if a.footnotes: text = re.sub(r'[ \t]*(?<!^)(?<!\n)(\[\^\d+\]:)', r'\n\n\1', text)  # 문단 중간에 붙은 각주는 따로 떼기
         if not same_text(raw, text, labels[i] or (i + 1)): changed_pages.append(i + 1)

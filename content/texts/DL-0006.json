@@ -3,6 +3,21 @@
   "edition": "초판",
   "toc": [
     {
+      "title": "예경문",
+      "page": 1,
+      "sub": false
+    },
+    {
+      "title": "독자들에게",
+      "page": 2,
+      "sub": false
+    },
+    {
+      "title": "차례",
+      "page": 3,
+      "sub": false
+    },
+    {
       "title": "저자 소개",
       "page": 6,
       "sub": false
