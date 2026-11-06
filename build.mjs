@@ -211,7 +211,6 @@ ${body}
     <p>${esc(P.name)} · 발행인 ${esc(P.publisher_person)} · 전화 ${esc(P.phone)} · 출판등록 ${esc(P.registration)} · 이메일 ${esc(P.email)}</p>
     <p>${esc(S.footer_license)}</p>
     <p class="sadhu">${esc(S.footer_sadhu)}</p>
-    <p class="small"><a href="/members/" rel="nofollow">회원 자료실</a></p>
   </div>
 </div></footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
