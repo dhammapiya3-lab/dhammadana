@@ -507,3 +507,27 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 .ch-nav .tbtn:last-child{text-align:right}
 .toc li.sub a,.panel li.sub{padding-left:1.2em}
 .toc li.sub{font-size:.95em}
+/* ===== 책 소개 부분 ===== */
+.sec-nav{display:flex;gap:6px;flex-wrap:wrap;margin:26px 0 4px;padding:6px;background:var(--paper-2);border-radius:999px;width:max-content;max-width:100%}
+.sec-nav a{padding:6px 14px;border-radius:999px;font-size:13.5px;color:var(--ink-soft)}
+.sec-nav a:hover{background:var(--card);color:var(--ink);text-decoration:none}
+.bsec{margin-top:34px;scroll-margin-top:20px}
+.bsec-h{display:flex;align-items:center;gap:10px;font-size:18px;margin:0 0 16px;font-family:var(--serif)}
+.bsec-h::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+.bsec-w{width:18px;height:18px;color:var(--robe);flex:none}
+.lead-first>p:first-child{font-size:17.5px;line-height:1.8;color:var(--ink);padding-left:14px;border-left:3px solid var(--robe-soft)}
+.desc p{margin:0 0 1em}
+.person-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.pc-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.pc-ph{width:46px;height:46px;border-radius:50%;background:var(--robe-soft);color:var(--robe);display:grid;place-items:center;font-family:var(--serif);font-size:18px;flex:none;overflow:hidden}
+.pc-ph img{width:100%;height:100%;object-fit:cover}
+.pc-k{display:block;font-size:12px;color:var(--ink-soft)}
+.pc-n{font-family:var(--serif);font-size:16px}
+.person-card .desc{font-size:15px;max-width:none}
+.person-card .clamp{max-height:9.5em;overflow:hidden;position:relative}
+.person-card:not(.open) .clamp::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3em;background:linear-gradient(transparent,var(--card))}
+.person-card.open .clamp{max-height:none}
+.more-btn{margin-top:6px;font-size:13.5px}
+.bsec .toc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px 18px}
+.bsec .toc li:last-child{border-bottom:0}
+.bsec .toc li:not(.sub) a,.bsec .toc.static li:not(.sub) span:first-child{font-weight:600}

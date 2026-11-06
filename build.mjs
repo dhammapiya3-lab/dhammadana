@@ -86,7 +86,21 @@ function contentsHtml(t) {
     if (m) { x = m[1]; pg = m[2]; }
     return `<li class="${sub ? 'sub' : ''}"><span>${esc(x)}</span>${pg ? `<span>${esc(pg)}</span>` : ''}</li>`;
   });
-  return `<h2 class="h-sub">목차</h2><ol class="toc static">${rows.join('')}</ol>`;
+  return `<ol class="toc static">${rows.join('')}</ol>`;
+}
+
+// 책 페이지 아래쪽: 책 소개 · 저자 소개 · 옮긴이 소개 · 목차
+function bookSections(b, e, t) {
+  const has = x => x && String(x).trim();
+  const secs = [];
+  if (has(b.description)) secs.push({ id: 'intro', name: '책 소개', html: `<div class="desc lead-first">${marked.parse(b.description)}</div>` });
+  const person = (label, who, photo, text) => `<div class="person-card"><div class="pc-head"><span class="pc-ph" aria-hidden="true">${photo ? `<img src="${esc(photo)}" alt="">` : esc((who || label).replace(/^(우|아잔|아신)\s+/, '')[0] || '')}</span><span><span class="pc-k">${label}</span><b class="pc-n">${esc(who)}</b></span></div><div class="desc clamp">${marked.parse(text)}</div><button class="link-btn more-btn" hidden>더 보기</button></div>`;
+  if (has(b.author_intro)) secs.push({ id: 'author', name: '저자 소개', html: person('저자', t ? t.name : b.byline, t && t.photo, b.author_intro) });
+  if (has(b.translator_intro)) secs.push({ id: 'translator', name: '옮긴이 소개', html: person('옮긴이', (b.translator || '').replace(/\s*(옮김|편역|번역|역)$/, ''), '', b.translator_intro) });
+  if (e.reader) secs.push({ id: 'toc', name: '목차', html: `<div id="tocMount" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}"></div>` });
+  else if (has(b.contents)) secs.push({ id: 'toc', name: '목차', html: contentsHtml(b.contents) });
+  if (!secs.length) return '';
+  return `${secs.length > 1 ? `<nav class="sec-nav" aria-label="책 정보 바로 가기">${secs.map(x => `<a href="#sec-${x.id}">${x.name}</a>`).join('')}</nav>` : ''}${secs.map(x => `<section class="bsec" id="sec-${x.id}"><h2 class="bsec-h">${wheel('bsec-w')}<span>${x.name}</span></h2>${x.html}</section>`).join('')}`;
 }
 // 발행일 칸: 앞의 '초판 발행' 같은 판 이름은 빼고 날짜만
 const pubDate = x => { let p = (x.published || '').trim(); const l = (x.label || '').trim(); if (l && p.startsWith(l)) p = p.slice(l.length).trim(); return p.replace(/^발행\s*/, '').trim(); };
@@ -322,11 +336,7 @@ for (const b of BOOKS) {
     ${extF.length ? `<div class="small muted" style="margin-bottom:4px">↗ 표시된 파일은 ${esc(extF[0].site)}로 넘어가서 내려받습니다.</div>` : ''}
     <dl class="gb-kv"><dt>판</dt><dd>${esc(edText(e) || '—')}</dd>${e.page_count ? `<dt>쪽수</dt><dd>${esc(e.page_count)}쪽</dd>` : ''}${(b.editions || []).filter(x => x !== e && (x.published || x.label)).length ? `<dt>펴낸 이력</dt><dd>${(b.editions || []).map(x => esc(edText(x))).filter(Boolean).join('<br>')}</dd>` : ''}<dt>라이선스</dt><dd>${esc(b.license)}</dd><dt>자료번호</dt><dd>${b.id}</dd></dl></div></aside><div class="d-rest">
     <div class="labels">${(b.main || []).map(m => `<a class="t" href="/library/?main=${slugT(m)}">${esc(m)}</a>`).join('')}${(b.topics || []).map(x => `<a class="t" href="/library/?topic=${slugT(x)}">${esc(x)}</a>`).join('')}${tr ? `<a href="/library/?trad=${tr.id}">${esc(tr.name)}</a>` : ''}${b.press ? `<a href="/press/">我無말들 출간</a>` : ''}</div>
-    ${b.description ? `<div class="desc">${marked.parse(b.description)}</div>` : ''}
-    ${b.author_intro && b.author_intro.trim() ? `<h2 class="h-sub">저자 소개</h2><div class="desc intro">${marked.parse(b.author_intro)}</div>` : ''}
-    ${b.translator_intro && b.translator_intro.trim() ? `<h2 class="h-sub">옮긴이 소개</h2><div class="desc intro">${marked.parse(b.translator_intro)}</div>` : ''}
-    ${b.contents && b.contents.trim() && !e.reader ? contentsHtml(b.contents) : ''}
-    ${e.reader ? `<div id="tocMount" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}"></div>` : ''}
+    ${bookSections(b, e, t)}
     <details class="record"><summary>자료 기록 (출처 · 판 · 라이선스)</summary><div class="record-body">
       <dl class="kv"><dt>자료번호</dt><dd>${b.id}</dd>
       <dt>저자·스승</dt><dd>${t ? `<a href="/teacher/${t.id}/">${esc(t.name)}</a>${t.roman ? ` <span class="muted small">(${esc(t.roman)})</span>` : ''}` : esc(b.byline)}</dd>

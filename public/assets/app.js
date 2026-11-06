@@ -293,10 +293,12 @@ function markEp() {
 }
 /* ---------- 책 상세: 목차 ---------- */
 async function initBook() {
+  // 긴 저자·옮긴이 소개는 접어 두고 '더 보기'
+  $$('.person-card').forEach(c => { const d = $('.clamp', c), b = $('.more-btn', c); if (d.scrollHeight > d.clientHeight + 8) { b.hidden = false; b.onclick = () => { const o = c.classList.toggle('open'); b.textContent = o ? '접기' : '더 보기'; }; } else c.classList.add('open'); });
   const m = $('#tocMount'); if (!m) return;
   try {
     const man = await manifest(m.dataset.manifest);
-    if (man.toc && man.toc.length) m.innerHTML = `<h2 class="h-sub">목차</h2><ol class="toc">${man.toc.map(t => `<li class="${/^\s/.test(t.title) ? 'sub' : ''}"><a href="/read/${m.dataset.book}/${t.page}?view=text">${esc(t.title.trim())}</a><span>${esc(t.label || t.page)}</span></li>`).join('')}</ol><p class="small muted" style="margin-top:8px">목차를 누르면 그 장을 읽을 수 있습니다.</p>`;
+    if (man.toc && man.toc.length) m.innerHTML = `<ol class="toc">${man.toc.map(t => `<li class="${/^\s/.test(t.title) ? 'sub' : ''}"><a href="/read/${m.dataset.book}/${t.page}?view=text">${esc(t.title.trim())}</a><span>${esc(t.label || t.page)}</span></li>`).join('')}</ol><p class="small muted" style="margin-top:8px">목차를 누르면 그 장을 읽을 수 있습니다.</p>`;
   } catch (e) {}
 }
 
