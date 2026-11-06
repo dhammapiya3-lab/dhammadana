@@ -51,9 +51,9 @@
         "url": "pdf/DL-0006/DL-0006_초판_인쇄용표지.pdf"
       },
       "epub": {
+        "site": "",
         "mode": "file",
-        "url": "",
-        "site": ""
+        "url": "epub/DL-0006/DL-0006_초판.epub"
       },
       "reader": true,
       "sources": [],
