@@ -89,7 +89,7 @@ function formats(b) {
   return f;
 }
 // 판 표시: '개정판 발행 2024년 7월 20일' (발행일 글에 판 이름이 이미 있으면 그대로)
-const edText = e => { const l = (e.label || '').trim(), p = (e.published || '').trim(); if (!p) return l; if (!l || p.includes(l)) return p; return `${l} 발행 ${p}`; };
+const edText = e => { const l = (e.label || '').trim(), p = (e.published || e.published_ebook || '').trim(); if (!p) return l; if (!l || p.includes(l)) return p; return `${l} 발행 ${p}`; };
 // 목차: 한 줄에 하나. 앞에 공백 2칸 또는 '-' 를 붙이면 아랫단계. 줄 끝 '... 15' 같은 쪽수는 오른쪽에
 function contentsHtml(t) {
   const rows = t.split('\n').map(l => l.replace(/\s+$/, '')).filter(l => l.trim()).map(l => {
@@ -365,7 +365,7 @@ for (const b of BOOKS) {
       ${f.filter(x => x.k !== '온라인 읽기').map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">${x.name} 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>${x.name} 내려받기</a>`).join('')}
       ${!f.length ? `<div class="soon-box">파일을 준비하고 있습니다.<br><span class="small">소식에서 올라오는 대로 알려 드립니다.</span></div>` : ''}</div>
     ${extF.length ? `<div class="small muted" style="margin-bottom:4px">↗ 표시된 파일은 ${esc(extF[0].site)}로 넘어가서 내려받습니다.</div>` : ''}
-    <dl class="gb-kv"><dt>판</dt><dd>${esc(edText(e) || '—')}</dd>${e.page_count ? `<dt>쪽수</dt><dd>${esc(e.page_count)}쪽</dd>` : ''}${e.isbn ? `<dt>ISBN${e.isbn_ebook ? ' (종이책)' : ''}</dt><dd>${esc(e.isbn)}</dd>` : ''}${e.published_ebook ? `<dt>전자책 발행</dt><dd>${esc(e.published_ebook)}</dd>` : ''}${e.isbn_ebook ? `<dt>ISBN (전자책)</dt><dd>${esc(e.isbn_ebook)}</dd>` : ''}${(b.editions || []).filter(x => x !== e && (x.published || x.label)).length ? `<dt>펴낸 이력</dt><dd>${(b.editions || []).map(x => esc(edText(x))).filter(Boolean).join('<br>')}</dd>` : ''}<dt>라이선스</dt><dd>${esc(b.license)}</dd><dt>자료번호</dt><dd>${b.id}</dd></dl></div></aside><div class="d-rest">
+    <dl class="gb-kv"><dt>판</dt><dd>${esc(edText(e) || '—')}</dd>${e.page_count ? `<dt>쪽수</dt><dd>${esc(e.page_count)}쪽</dd>` : ''}${(b.editions || []).filter(x => x !== e && (x.published || x.label)).length ? `<dt>펴낸 이력</dt><dd>${(b.editions || []).map(x => esc(edText(x))).filter(Boolean).join('<br>')}</dd>` : ''}<dt>라이선스</dt><dd>${esc(b.license)}</dd><dt>자료번호</dt><dd>${b.id}</dd></dl></div></aside><div class="d-rest">
     <div class="labels">${(b.main || []).map(m => `<a class="t" href="/library/?main=${slugT(m)}">${esc(m)}</a>`).join('')}${(b.topics || []).map(x => `<a class="t" href="/library/?topic=${slugT(x)}">${esc(x)}</a>`).join('')}${tr ? `<a href="/library/?trad=${tr.id}">${esc(tr.name)}</a>` : ''}${b.press ? `<a href="/press/">我無말들 출간</a>` : ''}</div>
     ${bookSections(b, e, t)}
     <details class="record"><summary>자료 기록 (출처 · 판 · 라이선스)</summary><div class="record-body">
