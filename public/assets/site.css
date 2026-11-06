@@ -696,3 +696,4 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 .reflow p.orn{text-align:center;color:var(--robe);margin:1.2em 0 .6em;font-size:1.1em}
 .r-fig .fig-btn img{max-height:62vh;width:auto;max-width:100%;margin:0 auto;display:block}
 .r-fig .fig-btn img[src*="chanmyay"]{max-height:40vh}
+.press section .prose > .h-page{margin-bottom:22px}
