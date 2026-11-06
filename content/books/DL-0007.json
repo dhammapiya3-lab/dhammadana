@@ -30,7 +30,10 @@
       "label": "초판",
       "published": "초판 발행 2013년 7월 1일",
       "page_count": 132,
+      "publisher_print": "",
       "isbn": "979-11-980922-6-7",
+      "publisher_ebook": "",
+      "isbn_ebook": "979-11-980922-5-0",
       "file_created": "2024-12-19",
       "changes": "",
       "current": false,
@@ -41,10 +44,14 @@
         "site": ""
       },
       "pdf_print": {
-        "mode": "none"
+        "mode": "none",
+        "url": "",
+        "site": ""
       },
       "pdf_cover": {
-        "mode": "none"
+        "mode": "none",
+        "url": "",
+        "site": ""
       },
       "epub": {
         "mode": "none",
@@ -55,6 +62,7 @@
       "sources": [],
       "collection": "我無말들 자체 제작",
       "collected": "",
+      "permission_status": "",
       "permission_note": "* 본 도서는 법보시용 도서(비매품)입니다.\n상업적 목적이 아닌 한 무단 복제와 전재를 마음껏 하십시오.\n단, 내용을 임의로 변경해서는 안 됩니다.",
       "permission_image": "",
       "permissions": [
@@ -66,7 +74,10 @@
       "label": "개정판",
       "published": "2024년 7월 20일",
       "page_count": 132,
+      "publisher_print": "",
       "isbn": "979-11-980922-6-7",
+      "publisher_ebook": "",
+      "isbn_ebook": "979-11-980922-5-0",
       "file_created": "2026년 3월 3일",
       "changes": "",
       "current": true,
@@ -101,6 +112,7 @@
       ],
       "collection": "我無말들 자체 제작",
       "collected": "",
+      "permission_status": "confirmed",
       "permission_note": "* 본 도서는 법보시용 도서(비매품)입니다.\n상업적 목적이 아닌 한 무단 복제와 전재를 마음껏 하십시오.\n단, 내용을 임의로 변경해서는 안 됩니다.",
       "permission_image": "",
       "permissions": [
