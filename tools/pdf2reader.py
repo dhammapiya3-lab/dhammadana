@@ -51,15 +51,21 @@ except Exception:
 if a.offset is not None:
     labels = [str(i + 1 - a.offset) if i + 1 - a.offset > 0 else '' for i in range(N)]
 
-ODD = re.compile(r'[\ufffd\ue000-\uf8ff]')
+ODD = re.compile(r'[\ufffd\ufffe\uffff\ue000-\uf8ff]')
 END = re.compile(r'[.?!。…”’"\')」』:]$')
+HY = re.compile(r'(.)\ufffe')
+def fix_hyphen(t):
+    """pdfium 은 줄 끝에 인쇄된 붙임표(-)를 U+FFFE 로 내줍니다. 인쇄된 그대로 '-' 로 되돌립니다.
+    한글 음역의 장음 표시(예: 아웨라- 혼뚜)는 뒤에 빈칸이 있으므로 빈칸도 살립니다."""
+    return HY.sub(lambda m: m.group(1) + ('- ' if '\uac00' <= m.group(1) <= '\ud7a3' else '-'), t)
+
 def clean(t, label='', full=None):
     """원문 글자는 하나도 바꾸지 않고, 줄바꿈만 정리합니다.
     - 줄 끝에 빈칸이 있으면(낱말 사이) 빈칸으로 잇고, 없으면(낱말 중간) 붙여 잇습니다.
     - 줄이 오른쪽 끝까지 차지 않았으면(제목·문단 끝) 줄을 나눕니다.
     - 빈칸 없이 문장부호로 끝난 줄은 문단(게송이면 한 줄) 끝으로 봅니다. 글자로 끝나면 낱말 중간이라 붙입니다.
     - 맨 위 줄이 쪽 번호뿐이면(머리·꼬리 쪽 번호) 뺍니다."""
-    t = unicodedata.normalize('NFC', t.replace('\r\n', '\n').replace('\r', '\n'))
+    t = unicodedata.normalize('NFC', fix_hyphen(t).replace('\r\n', '\n').replace('\r', '\n'))
     lines = t.split('\n')
     full = full or [True] * len(lines)
     if lines and lines[0].strip() and lines[0].strip() == str(label): lines = lines[1:]; full = full[1:]
@@ -82,7 +88,7 @@ def clean(t, label='', full=None):
 
 def same_text(raw, out, label=''):
     """빈칸·줄바꿈·쪽번호를 빼고 원문과 글자가 똑같은지 확인"""
-    r = unicodedata.normalize('NFC', raw)
+    r = unicodedata.normalize('NFC', fix_hyphen(raw))
     rl = r.replace('\r', '').split('\n')
     if rl and rl[0].strip() == str(label): rl = rl[1:]
     strip = lambda x: re.sub(r'\s+', '', x)
