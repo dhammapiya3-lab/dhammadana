@@ -26,6 +26,7 @@ ap.add_argument('--toc', help='목차 파일 (제목<TAB>PDF쪽번호)')
 ap.add_argument('--out', default=os.path.join(os.path.dirname(__file__), 'out'))
 ap.add_argument('--width', type=int, default=1000); ap.add_argument('--big', type=int, default=1800)
 ap.add_argument('--quality', type=int, default=80)
+ap.add_argument('--visible-only', action='store_true', help='화면에 보이지 않는 숨은 글(InDesign 에 남은 옛 글 등)은 빼고 읽기')
 ap.add_argument('--no-text', action='store_true', help='본문 글을 넣지 않음 (그림만)')
 a = ap.parse_args()
 
@@ -94,6 +95,29 @@ def same_text(raw, out, label=''):
     strip = lambda x: re.sub(r'\s+', '', x)
     return strip('\n'.join(rl)) == strip(out)
 
+
+# 숨은 글 찾기: 글 덩어리 하나를 지웠을 때 쪽 그림이 전혀 바뀌지 않으면 보이지 않는 글입니다.
+import pypdfium2.raw as _R
+from PIL import ImageChops as _IC
+_DATA = None
+def _tobjs(page): return [o for o in page.get_objects(max_depth=1) if o.type == _R.FPDF_PAGEOBJ_TEXT]
+def _rend(page): return page.render(scale=2, grayscale=True).to_pil().convert('L')
+def hidden_removed_page(i):
+    """i번째 쪽에서 보이지 않는 글 덩어리를 뺀 새 쪽과, 뺀 글을 돌려줍니다."""
+    base = _rend(pdfium.PdfDocument(_DATA)[i]); n = len(_tobjs(pdfium.PdfDocument(_DATA)[i])); inv = []
+    for k in range(n):
+        d2 = pdfium.PdfDocument(_DATA); p2 = d2[i]; p2.remove_obj(_tobjs(p2)[k]); p2.gen_content()
+        if _IC.difference(base, _rend(p2)).getbbox() is None: inv.append(k)
+    d = pdfium.PdfDocument(_DATA); p = d[i]; objs = _tobjs(p); tp0 = p.get_textpage(); gone = []
+    for k in inv:
+        try: objs[k].textpage = tp0; gone.append(objs[k].extract())
+        except Exception: gone.append('')
+    for k in sorted(inv, reverse=True): p.remove_obj(objs[k])
+    p.gen_content()
+    return d, p, gone
+
+if a.visible_only: _DATA = open(a.pdf, 'rb').read()
+hidden_log = {}
 pages, odd_pages, changed_pages = [], [], []
 for i in range(N):
     pg = doc[i]
@@ -103,7 +127,11 @@ for i in range(N):
         img.save(os.path.join(base, d, f'{i+1:04d}.webp'), 'WEBP', quality=a.quality, method=4)
     text = ''
     if not a.no_text:
-        tp = pg.get_textpage(); raw = tp.get_text_range()
+        src = pg
+        if a.visible_only:
+            _keep, src, gone = hidden_removed_page(i)
+            if any(g.strip() for g in gone): hidden_log[i + 1] = gone
+        tp = src.get_textpage(); raw = tp.get_text_range()
         # 줄마다 오른쪽 끝 위치: 꽉 찬 줄인지(낱말 중간 줄바꿈 가능) 알아보기
         rights, pos = [], 0
         for ln in raw.split('\r\n'):
@@ -129,7 +157,7 @@ if a.toc:
     for line in open(a.toc, encoding='utf-8'):
         if '\t' in line:
             t, p = line.rstrip('\n').rsplit('\t', 1)
-            if p.strip().isdigit(): toc.append({'title': t.strip(), 'page': int(p)})
+            if p.strip().isdigit(): toc.append({'title': t.rstrip(), 'page': int(p)})  # 앞 공백 = 아랫단계
 else:
     def walk(items, depth=0):
         for it in items:
@@ -143,6 +171,9 @@ else:
 for t in toc:
     t['label'] = labels[t['page'] - 1] if 0 < t['page'] <= N else ''
 
+if a.visible_only:
+    with open(os.path.join(base, 'hidden.txt'), 'w', encoding='utf-8') as f:
+        for k, v in hidden_log.items(): f.write(f'=== {k}쪽 (뺀 숨은 글) ===\n' + '\n'.join(v) + '\n\n')
 man = {'book': a.book_id, 'edition': a.edition, 'pages': pages, 'toc': toc}
 with open(os.path.join(base, 'manifest.json'), 'w', encoding='utf-8') as f:
     json.dump(man, f, ensure_ascii=False)
@@ -152,6 +183,7 @@ shutil.copyfile(a.pdf, os.path.join(pdf_dir, f'{a.book_id}_{a.edition}.pdf'))
 
 size = sum(os.path.getsize(os.path.join(r, f)) for r, _, fs in os.walk(base) for f in fs)
 print(f'완료: {base}  ({size/1e6:.1f} MB)')
+print(f'  숨은 글을 뺀 쪽: {len(hidden_log)}쪽 → hidden.txt 에서 확인') if a.visible_only else None
 print(f'  목차 {len(toc)}개' + ('' if toc else ' — PDF에 목차(책갈피)가 없습니다. --toc 로 직접 줄 수 있습니다.'))
 print('  인쇄 쪽 번호: ' + ('있음' if any(labels) else '없음 — 필요하면 --offset 을 쓰세요.'))
 if not a.no_text and not any(p['text'] for p in pages):
