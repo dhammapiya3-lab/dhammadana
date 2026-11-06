@@ -94,9 +94,9 @@ function bookSections(b, e, t) {
   const has = x => x && String(x).trim();
   const secs = [];
   if (has(b.description)) secs.push({ id: 'intro', name: '책 소개', html: `<div class="desc lead-first">${marked.parse(b.description)}</div>` });
-  const person = (label, who, photo, text) => `<div class="person-card"><div class="pc-head"><span class="pc-ph" aria-hidden="true">${photo ? `<img src="${esc(photo)}" alt="">` : esc((who || label).replace(/^(우|아잔|아신)\s+/, '')[0] || '')}</span><span><span class="pc-k">${label}</span><b class="pc-n">${esc(who)}</b></span></div><div class="desc clamp">${marked.parse(text)}</div><button class="link-btn more-btn" hidden>더 보기</button></div>`;
-  if (has(b.author_intro)) secs.push({ id: 'author', name: '저자 소개', html: person('저자', t ? t.name : b.byline, t && t.photo, b.author_intro) });
-  if (has(b.translator_intro)) secs.push({ id: 'translator', name: '옮긴이 소개', html: person('옮긴이', (b.translator || '').replace(/\s*(옮김|편역|번역|역)$/, ''), '', b.translator_intro) });
+  const person = text => `<div class="person-card"><div class="desc clamp">${marked.parse(text)}</div><button class="link-btn more-btn" hidden>더 보기</button></div>`;
+  if (has(b.author_intro)) secs.push({ id: 'author', name: '저자 소개', html: person(b.author_intro) });
+  if (has(b.translator_intro)) secs.push({ id: 'translator', name: '옮긴이 소개', html: person(b.translator_intro) });
   if (e.reader) secs.push({ id: 'toc', name: '목차', html: `<div id="tocMount" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}"></div>` });
   else if (has(b.contents)) secs.push({ id: 'toc', name: '목차', html: contentsHtml(b.contents) });
   if (!secs.length) return '';
