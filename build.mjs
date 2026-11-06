@@ -105,6 +105,28 @@ function dlName(b, e, kind) {
 }
 const readerManifest = b => { const e = curEd(b); return e.reader ? fileUrl(`reader/${b.id}/${encodeURIComponent(e.label || 'ed')}/manifest.json`) : ''; };
 
+// 창고(R2)에서 지워진 파일은 단추를 숨김: 사이트를 만들 때 파일이 실제로 있는지 확인
+// (인터넷이 안 되는 곳에서 만들 때는 확인을 건너뛰고 그대로 둠)
+async function exists(url) {
+  try {
+    const ac = new AbortController(); const to = setTimeout(() => ac.abort(), 10000);
+    const r = await fetch(url, { method: 'HEAD', signal: ac.signal }); clearTimeout(to);
+    return r.status === 404 ? false : true;
+  } catch (e) { return true; }
+}
+{
+  const jobs = [];
+  for (const b of BOOKS) for (const e of (b.editions || [])) {
+    if (!e.current) continue;
+    for (const k of ['pdf', 'pdf_print', 'pdf_cover', 'epub']) {
+      const x = e[k];
+      if (x && x.mode === 'file' && x.url && !/^https?:/.test(x.url)) jobs.push(exists(fileUrl(x.url)).then(ok => { if (!ok) { console.warn(`[파일 없음] ${b.id} ${k}: ${x.url} → 단추 숨김`); x.mode = 'none'; } }));
+    }
+    if (e.reader) jobs.push(exists(fileUrl(`reader/${b.id}/${encodeURIComponent(e.label || 'ed')}/manifest.json`)).then(ok => { if (!ok) { console.warn(`[파일 없음] ${b.id} 온라인 읽기 → 숨김`); e.reader = false; } }));
+  }
+  await Promise.all(jobs);
+}
+
 /* ---------- 도구 ---------- */
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const slugT = s => encodeURIComponent(s);

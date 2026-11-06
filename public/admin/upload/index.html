@@ -273,8 +273,26 @@ $('#cdel').onclick=async()=>{
   $('#cdel').disabled=true; $('#cout').innerHTML='<p class="note">지우는 중…</p>';
   const r=await fetch('/api/files',{method:'POST',headers:{authorization:'Bearer '+TOKEN,'content-type':'application/json'},body:JSON.stringify({delete:ps})}); const j=await r.json().catch(()=>({}));
   $('#cdel').disabled=false;
-  $('#cout').innerHTML=r.ok?`<div class="msg ok">파일 ${j.deleted}개를 지웠습니다.</div>`:`<div class="msg err">${esc(j.error||'지우지 못했습니다.')}</div>`;
-  if(r.ok) setTimeout(loadClean,800);
+  if(!r.ok){ $('#cout').innerHTML=`<div class="msg err">${esc(j.error||'지우지 못했습니다.')}</div>`; return; }
+  // 책 정보에서 지운 파일 연결 풀기 (이 책 받기 단추·온라인 읽기 자동으로 없어짐)
+  let unlinked=0;
+  try{
+    const id=$('#cbook').value;
+    for(let t=0;t<4;t++){
+      if(t) await new Promise(r=>setTimeout(r,1500*t));
+      const g=await gh(`/contents/content/books/${id}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); if(!g.ok) break;
+      const gj=await g.json(); const b=JSON.parse(dec(gj.content)); unlinked=0;
+      for(const e of (b.editions||[])){
+        for(const k of ['pdf','pdf_print','pdf_cover','epub']){ const x=e[k]; if(x&&x.url&&ps.includes(x.url.replace(/^\//,''))){ e[k]={mode:'none',url:'',site:''}; unlinked++; } }
+        if(e.reader&&ps.some(p=>p===`reader/${id}/${e.label}/`)){ e.reader=false; unlinked++; }
+      }
+      if(!unlinked) break;
+      const put=await gh(`/contents/content/books/${id}.json`,{method:'PUT',headers:{'content-type':'application/json'},body:JSON.stringify({message:`창고에서 지운 파일 연결 풀기: ${id}`,content:enc(JSON.stringify(b,null,2)+'\n'),sha:gj.sha,branch:'main'})});
+      if(put.ok) break;
+    }
+  }catch(e){}
+  $('#cout').innerHTML=`<div class="msg ok">파일 ${j.deleted}개를 지웠습니다.${unlinked?` 책 정보에서 연결 ${unlinked}개를 풀었습니다. 1~2분 뒤 책 페이지의 단추가 사라집니다.`:''}</div>`;
+  setTimeout(loadClean,800);
 };
 start();
 })();
