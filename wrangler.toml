@@ -7,7 +7,7 @@ compatibility_date = "2026-11-01"
 binding = "FILES"
 bucket_name = "dhammadana-files"
 
-# 회원 자료실 전용 창고 (공개 주소를 연결하지 않음)
+# 학습 자료실 전용 창고 (공개 주소를 연결하지 않음)
 [[r2_buckets]]
 binding = "MEMBERS"
 bucket_name = "dhammadana-study"

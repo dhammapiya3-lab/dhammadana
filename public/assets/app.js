@@ -93,7 +93,7 @@ function initPage() {
   $$('[data-permit]').forEach(b => b.onclick = () => lightbox(b.dataset.permit, b.dataset.title));
 }
 
-/* ---------- 회원 자료실 ---------- */
+/* ---------- 학습 자료실 ---------- */
 async function initMembers() {
   const root = $('#membersRoot');
   const size = n => n > 1048576 ? (n / 1048576).toFixed(1) + 'MB' : Math.max(1, Math.round(n / 1024)) + 'KB';

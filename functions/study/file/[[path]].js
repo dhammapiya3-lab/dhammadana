@@ -1,4 +1,4 @@
-// 회원 자료실 파일 열기·내려받기
+// 학습 자료실 파일 열기·내려받기
 export async function onRequestGet({ env, params, request }) {
   if (!env.MEMBERS) return new Response('준비 중', { status: 503 });
   const key = (params.path || []).map(decodeURIComponent).join('/');

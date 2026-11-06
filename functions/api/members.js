@@ -1,4 +1,4 @@
-// 관리자용 회원 자료실 창고(MEMBERS) 관리: 목록 보기, 올리기, 지우기 (관리자 열쇠 필요)
+// 관리자용 학습 자료실 창고(MEMBERS) 관리: 목록 보기, 올리기, 지우기 (관리자 열쇠 필요)
 import { canWriteToken } from './_auth.js';
 const json = (o, status = 200) => new Response(JSON.stringify(o), { status, headers: { 'content-type': 'application/json; charset=utf-8' } });
 const tokenOf = r => (r.headers.get('authorization') || '').replace(/^Bearer\s+/i, '');
@@ -6,7 +6,7 @@ const okKey = k => typeof k === 'string' && k.length > 0 && k.length <= 300 && !
 const TYPES = { pdf: 'application/pdf', epub: 'application/epub+zip', mp3: 'audio/mpeg', m4a: 'audio/mp4', mp4: 'video/mp4', jpg: 'image/jpeg', jpeg: 'image/jpeg', png: 'image/png', webp: 'image/webp', txt: 'text/plain; charset=utf-8', md: 'text/plain; charset=utf-8', html: 'text/plain; charset=utf-8', docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', hwp: 'application/x-hwp', hwpx: 'application/haansofthwp', xlsx: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', zip: 'application/zip' };
 
 async function guard(request, env) {
-  if (!env.MEMBERS) return json({ error: '회원 전용 창고가 아직 연결되지 않았습니다 (MEMBERS).' }, 503);
+  if (!env.MEMBERS) return json({ error: '학습 자료실 전용 창고가 아직 연결되지 않았습니다 (MEMBERS).' }, 503);
   if (!(await canWriteToken(tokenOf(request)))) return json({ error: '허락되지 않았습니다. 관리자 열쇠를 확인해 주세요.' }, 401);
   return null;
 }

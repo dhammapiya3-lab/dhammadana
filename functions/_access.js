@@ -1,4 +1,4 @@
-// 회원 자료실 문지기: Cloudflare Access 가 붙여 주는 출입증(JWT)이 진짜인지 확인합니다.
+// 학습 자료실 문지기: Cloudflare Access 가 붙여 주는 출입증(JWT)이 진짜인지 확인합니다.
 // 설정값(Cloudflare Pages → 설정 → 변수): ACCESS_TEAM (예: dhammadana.cloudflareaccess.com), ACCESS_AUD (애플리케이션 AUD 태그)
 const KEYS = { at: 0, team: '', list: [] };
 const b64u = s => Uint8Array.from(atob(s.replace(/-/g, '+').replace(/_/g, '/').padEnd(Math.ceil(s.length / 4) * 4, '=')), c => c.charCodeAt(0));
