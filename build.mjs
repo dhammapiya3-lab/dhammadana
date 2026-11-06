@@ -45,6 +45,18 @@ const BOOKS = fs.readdirSync(C('books')).filter(f => f.endsWith('.json'))
   .map(f => JSON.parse(fs.readFileSync(C('books/' + f), 'utf8')))
   .filter(b => !b.hidden)
   .sort((a, b) => (b.added || '').localeCompare(a.added || '') || (b.order || 0) - (a.order || 0) || b.id.localeCompare(a.id));
+// 글로 읽기 본문 (관리자 화면에서 고치는 글): content/texts/<자료번호>.json
+const TEXTS = {};
+if (fs.existsSync(C('texts'))) for (const f of fs.readdirSync(C('texts')).filter(f => f.endsWith('.json'))) {
+  const t = JSON.parse(fs.readFileSync(C('texts/' + f), 'utf8'));
+  if (!t.book || !t.body) continue;
+  const pages = []; const re = /^===\s*(.*?)\s*===\s*$/gm; let m, last = null;
+  const body = t.body.replace(/\r\n/g, '\n');
+  while ((m = re.exec(body))) { if (last) last.text = body.slice(last.start, m.index).trim(); last = { label: m[1].replace(/\s*쪽$/, ''), start: re.lastIndex }; pages.push(last); }
+  if (last) last.text = body.slice(last.start).trim();
+  if (!pages.length) pages.push({ label: '', text: body.trim() });
+  TEXTS[t.book] = { edition: t.edition || '', pages: pages.map(p => ({ label: p.label, text: p.text })), toc: (t.toc || []).filter(x => x && x.title && x.page).map(x => ({ title: (x.sub ? '  ' : '') + x.title, page: +x.page })) };
+}
 const NEWS = fs.readdirSync(C('news')).filter(f => f.endsWith('.md')).map(f => {
   const d = readMd(C('news/' + f));
   return { slug: f.replace(/\.md$/, ''), ...d.meta, html: d.html, text: d.body };
@@ -120,7 +132,8 @@ function dlName(b, e, kind) {
   const tag = { pdf_print: e.pdf_cover && e.pdf_cover.url ? '_인쇄용_본문' : '_인쇄용', pdf_cover: '_인쇄용_표지' }[kind] || '';
   return safeName(`${b.title}${tag}${d ? '_' + d : ''}`) + '.' + ext;
 }
-const readerManifest = b => { const e = curEd(b); return e.reader ? fileUrl(`reader/${b.id}/${encodeURIComponent(e.label || 'ed')}/manifest.json`) : ''; };
+const hasText = b => { const e = curEd(b), t = TEXTS[b.id]; return !!(t && (!t.edition || t.edition === e.label)); };
+const readerManifest = b => { const e = curEd(b); if (hasText(b)) return `/texts/${b.id}.json`; return e.reader ? fileUrl(`reader/${b.id}/${encodeURIComponent(e.label || 'ed')}/manifest.json`) : ''; };
 
 // 창고(R2)에서 지워진 파일은 단추를 숨김: 사이트를 만들 때 파일이 실제로 있는지 확인
 // (인터넷이 안 되는 곳에서 만들 때는 확인을 건너뛰고 그대로 둠)
@@ -139,6 +152,7 @@ async function exists(url) {
       const x = e[k];
       if (x && x.mode === 'file' && x.url && !/^https?:/.test(x.url)) jobs.push(exists(fileUrl(x.url)).then(ok => { if (!ok) { console.warn(`[파일 없음] ${b.id} ${k}: ${x.url} → 단추 숨김`); x.mode = 'none'; } }));
     }
+    if (TEXTS[b.id] && (!TEXTS[b.id].edition || TEXTS[b.id].edition === e.label)) { e.reader = true; continue; }
     if (e.reader) jobs.push(exists(fileUrl(`reader/${b.id}/${encodeURIComponent(e.label || 'ed')}/manifest.json`)).then(ok => { if (!ok) { console.warn(`[파일 없음] ${b.id} 온라인 읽기 → 숨김`); e.reader = false; } }));
   }
   await Promise.all(jobs);
@@ -330,7 +344,7 @@ for (const b of BOOKS) {
     <h1>${esc(b.title)}</h1>${b.subtitle ? `<div class="orig" style="font-style:normal">${esc(b.subtitle)}</div>` : ''}${b.original_title || b.original_language ? `<div class="orig">${esc(b.original_title || '')}${b.original_language ? `<span class="lang-tag">${esc(b.original_language)} 원서</span>` : ''}</div>` : ''}
     <div class="people">${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>
     ${pl ? `<div style="margin:2px 0 8px"><a class="small" href="/dhammatalk/?pl=${pl.id}">▶ ${esc(t.name)}의 법문 바로 듣기</a></div>` : ''}
-    </div><aside class="d-side"><div class="get-box"><div class="gb-title">이 책 받기</div><div class="actions">${e.reader ? `<a class="btn" href="/read/${b.id}/">온라인으로 읽기</a>` : ''}
+    </div><aside class="d-side"><div class="get-box"><div class="gb-title">이 책 읽어보기</div><div class="actions">${e.reader ? `<a class="btn" href="/read/${b.id}/">온라인으로 읽기</a>` : ''}
       ${f.filter(x => x.k !== '온라인 읽기').map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">${x.name} 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>${x.name} 내려받기</a>`).join('')}
       ${!f.length ? `<div class="soon-box">파일을 준비하고 있습니다.<br><span class="small">소식에서 올라오는 대로 알려 드립니다.</span></div>` : ''}</div>
     ${extF.length ? `<div class="small muted" style="margin-bottom:4px">↗ 표시된 파일은 ${esc(extF[0].site)}로 넘어가서 내려받습니다.</div>` : ''}
@@ -530,6 +544,8 @@ const site = {
 fs.mkdirSync(path.join(OUT, 'data'), { recursive: true });
 fs.writeFileSync(path.join(OUT, 'data/site.json'), JSON.stringify(site));
 fs.writeFileSync(path.join(OUT, 'data/downloads.json'), JSON.stringify(DOWNLOADS));
+fs.mkdirSync(path.join(OUT, 'texts'), { recursive: true });
+for (const [id, t] of Object.entries(TEXTS)) fs.writeFileSync(path.join(OUT, 'texts', id + '.json'), JSON.stringify({ book: id, edition: t.edition, pages: t.pages, toc: t.toc }));
 fs.writeFileSync(path.join(OUT, '_redirects'), `/read/:id/:page /read/:id/ 200\n`);
 console.log(`[팟빵·RSS] ${PLAYLISTS.map(p => p.name + ' ' + p.list.length + '개, 재생목록 ' + (p.subs.length - 1) + '개').join(' / ')}`);
 console.log(`만든 페이지 ${Object.keys(pages).length}개, 책 ${BOOKS.length}권, 법문 모음 ${PLAYLISTS.length}개`);

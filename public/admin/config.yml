@@ -164,6 +164,42 @@ collections:
             required: false
           - { name: note, label: 메모 (사이트에 안 나옴), widget: text, required: false }
 
+  # ───────── 책 본문 (글로 읽기) ─────────
+  - name: texts
+    label: 책 본문 (글로 읽기)
+    label_singular: 책 본문
+    description: "읽기 화면에 나오는 글입니다. 고치고 저장하면 1~2분 뒤 읽기 화면에 반영됩니다. 고치기 전 내용은 기록으로 남아 언제든 되돌릴 수 있습니다."
+    folder: content/texts
+    format: json
+    extension: json
+    identifier_field: book
+    slug: "{{fields.book}}"
+    create: true
+    summary: "{{book}} · {{edition}}"
+    fields:
+      - name: book
+        label: 책
+        widget: relation
+        collection: books
+        value_field: id
+        search_fields: [id, title]
+        display_fields: ["{{id}} {{title}}"]
+      - { name: edition, label: 판 이름, hint: "책 정보의 '최신판' 판 이름과 같아야 합니다 (예: 개정판)" }
+      - name: toc
+        label: 목차
+        label_singular: 목차 항목
+        widget: list
+        summary: "{{fields.page}}쪽 · {{fields.title}}"
+        hint: "읽기 화면의 목차와 장 나누기에 쓰입니다. 쪽은 아래 본문의 '=== ○쪽 ===' 순서(몇 번째 쪽인지)입니다."
+        fields:
+          - { name: title, label: 제목 }
+          - { name: page, label: 쪽, widget: number, value_type: int }
+          - { name: sub, label: 아랫단계, widget: boolean, default: false }
+      - name: body
+        label: 본문
+        widget: text
+        hint: "'=== 12쪽 ===' 줄은 쪽의 시작입니다. 이 줄은 지우거나 바꾸지 마세요. 문단과 문단 사이는 빈 줄 하나로 나눕니다."
+
   # ───────── 소식 ─────────
   - name: news
     label: 소식
