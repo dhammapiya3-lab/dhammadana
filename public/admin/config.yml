@@ -195,6 +195,15 @@ collections:
           - { name: title, label: 제목 }
           - { name: page, label: 쪽, widget: number, value_type: int }
           - { name: sub, label: 아랫단계, widget: boolean, default: false }
+      - name: images
+        label: 그림 올리기
+        label_singular: 그림
+        widget: list
+        required: false
+        hint: "본문에 넣을 그림을 여기에 올리고, 본문의 원하는 자리에 빈 줄을 두고 ![그림 설명](/uploads/파일이름.jpg) 처럼 적습니다. 표는 | 칸 | 칸 | 처럼 줄마다 세로줄로 나눠 적습니다."
+        fields:
+          - { name: image, label: 그림, widget: image }
+          - { name: caption, label: 설명, required: false }
       - name: body
         label: 본문
         widget: text

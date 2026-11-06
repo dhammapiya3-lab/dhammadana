@@ -562,3 +562,28 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 .find-list button{display:block;width:100%;text-align:left;padding:8px 2px;font-size:13.5px;line-height:1.55;color:var(--ink);background:none;border:0;cursor:pointer}
 .find-list button:hover{background:var(--paper-2)}
 .reflow p.found{background:var(--robe-soft);transition:background 1.5s}
+/* 글 너비 */
+.reflow{max-width:var(--mw,36em)}
+/* 그림·표 */
+.r-fig{margin:1.4em 0;text-align:center}
+.r-fig .fig-btn{border:0;background:none;padding:0;cursor:zoom-in;display:block;width:100%}
+.r-fig img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+.r-fig figcaption{font-size:.85em;color:var(--ink-soft);margin-top:6px}
+.r-tbl{margin:1.4em 0;overflow-x:auto}
+.r-table{border-collapse:collapse;font-size:.9em;width:100%;font-family:var(--sans)}
+.r-table th,.r-table td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
+.r-table th{background:var(--paper-2)}
+.r-tbl .tbtn{margin-top:6px}
+.zoomer .lb-wrap{overflow:auto}
+.zoomer .zoom-in{transform:scale(var(--z));transform-origin:top left;background:var(--paper);color:var(--ink);padding:16px;border-radius:8px;display:inline-block;max-width:none}
+.zoomer .zoom-in img{max-width:90vw;display:block}
+.zoomer .zm{display:flex;gap:6px}
+/* 읽기 기록 */
+.hist{display:flex;flex-direction:column;gap:14px;margin-top:14px}
+.hist-item{display:grid;grid-template-columns:72px minmax(0,1fr);gap:16px;padding:14px;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.hist-cover{display:block;width:72px;aspect-ratio:234/330;background:var(--paper-2);border:1px solid var(--line);overflow:hidden}
+.hist-cover img{width:100%;height:100%;object-fit:cover}
+.hist-t{font-family:var(--serif);font-weight:600;font-size:16px;color:var(--ink)}
+.hist-bar{height:6px;background:var(--paper-2);border-radius:6px;margin:8px 0 6px;overflow:hidden}
+.hist-bar span{display:block;height:100%;background:var(--robe)}
+.hist-item .acts{display:flex;gap:10px;align-items:center;margin-top:8px}

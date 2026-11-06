@@ -522,6 +522,8 @@ for (const n of NEWS) {
 // 내 서재
 put('mynotes/index.html', layout({ title: '내 서재', page: 'mynotes', body: `<div class="wrap"><div class="prose" style="padding-bottom:0"><h1>내 서재</h1><p class="muted">밑줄과 책갈피를 책별로 모아 봅니다. 회원가입 없이 이 기기의 브라우저에만 저장됩니다.</p></div><div id="notesRoot"></div></div>` }));
 
+// 인터넷이 없을 때
+put('offline.html', layout({ title: '인터넷 연결 없음', page: 'offline', body: `<div class="wrap prose"><h1>인터넷에 연결되어 있지 않습니다</h1><p>이 페이지는 아직 이 기기에 저장되지 않았습니다. 인터넷이 될 때 한 번 열어 둔 책과 페이지는 인터넷 없이도 읽을 수 있습니다.</p><p><a href="/mynotes/">내 서재에서 읽던 책 보기 →</a></p></div>` }));
 // 404
 put('404.html', layout({ title: '페이지를 찾을 수 없습니다', page: 'notfound', body: `<div class="wrap prose"><h1>페이지를 찾을 수 없습니다</h1><p>주소가 바뀌었거나 없는 페이지입니다. <a href="/library/">도서관</a>이나 <a href="/search/">검색</a>에서 찾아보세요.</p></div>` }));
 
