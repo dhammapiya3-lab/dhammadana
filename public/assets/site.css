@@ -531,3 +531,9 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 .bsec .toc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px 18px}
 .bsec .toc li:last-child{border-bottom:0}
 .bsec .toc li:not(.sub) a,.bsec .toc.static li:not(.sub) span:first-child{font-weight:600}
+/* 휴대폰 밑줄 단추 */
+@media (pointer: coarse){
+  .sel-pop{padding:6px;gap:4px;border-radius:12px}
+  .sel-pop button{padding:10px 14px;font-size:15px}
+}
+.reflow{-webkit-touch-callout:default;user-select:text;-webkit-user-select:text}

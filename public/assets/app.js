@@ -433,15 +433,27 @@ function bindReader() {
   // 밀어서 넘기기 (쪽 보기)
   let sx = null; body.addEventListener('touchstart', e => { if (R.view === 'page' && R.zoom <= 1) sx = e.touches[0].clientX; }, { passive: true });
   body.addEventListener('touchend', e => { if (sx == null) return; const dx = e.changedTouches[0].clientX - sx; sx = null; if (Math.abs(dx) > 70 && !window.getSelection().toString()) go(R.i + (dx < 0 ? 2 : 0)); });
-  const onSel = () => setTimeout(() => {
+  // 글 고르기 → 밑줄 단추 (컴퓨터: 마우스, 휴대폰: 길게 눌러 고르기)
+  const touch = matchMedia('(pointer: coarse)').matches;
+  const onSel = () => {
     const s = window.getSelection(), pop = $('#selPop'); if (!pop) return;
-    if (!s || s.isCollapsed || !s.toString().trim()) { pop.classList.remove('show'); return; }
+    if (!s || s.isCollapsed || !s.toString().trim()) { if (!pop._hold) pop.classList.remove('show'); return; }
     const node = s.anchorNode && (s.anchorNode.nodeType === 1 ? s.anchorNode : s.anchorNode.parentElement); const para = node && node.closest('[data-pg]');
     if (!para || !body.contains(para)) { pop.classList.remove('show'); return; }
-    const r = s.getRangeAt(0).getBoundingClientRect(); pop.style.left = Math.max(8, Math.min(window.innerWidth - 260, r.left + r.width / 2 - 110)) + 'px'; pop.style.top = Math.max(8, r.top - 48) + 'px';
+    const r = s.getRangeAt(0).getBoundingClientRect(), pw = pop.offsetWidth || 240, ph = 46;
+    pop.style.left = Math.max(8, Math.min(window.innerWidth - pw - 8, r.left + r.width / 2 - pw / 2)) + 'px';
+    // 휴대폰은 위쪽에 기기 자체의 복사 메뉴가 뜨므로 아래쪽에 둠
+    let top = touch ? r.bottom + 14 : r.top - ph - 4;
+    if (top < 8) top = r.bottom + 14;
+    if (top > window.innerHeight - ph - 70) top = Math.max(8, r.top - ph - 50);
+    pop.style.top = top + 'px';
     pop.classList.add('show'); pop._sel = { text: s.toString().replace(/\s+/g, ' ').trim(), p: +para.dataset.pg };
-  }, 10);
-  body.addEventListener('mouseup', onSel); body.addEventListener('touchend', onSel); body.addEventListener('keyup', onSel);
+  };
+  let selT; window._ddOnSel = () => { clearTimeout(selT); selT = setTimeout(onSel, touch ? 350 : 30); };
+  if (!window._ddSelBound) { document.addEventListener('selectionchange', () => window._ddOnSel && window._ddOnSel()); window._ddSelBound = true; }
+  body.addEventListener('mouseup', window._ddOnSel); body.addEventListener('keyup', window._ddOnSel);
+  // 단추를 누를 때 고른 글이 풀리지 않도록
+  $$('#selPop button').forEach(b => { b.addEventListener('pointerdown', e => e.preventDefault()); b.addEventListener('mousedown', e => e.preventDefault()); });
   const plabel = n => (R.pages[n - 1] || {}).label || '';
   const addUl = withNote => {
     const pop = $('#selPop'), d = pop._sel; if (!d) return; const l = uls(); const k = Date.now();
