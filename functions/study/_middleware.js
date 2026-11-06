@@ -1,4 +1,4 @@
-// /members/ 아래는 Cloudflare Access 로 허락받은 사람만 볼 수 있습니다.
+// /study/ 아래는 Cloudflare Access 로 허락받은 사람만 볼 수 있습니다.
 import { accessUser } from '../_access.js';
 const page = (title, msg, status) => new Response(`<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>${title}</title><link rel="stylesheet" href="/assets/site.css"></head><body><div class="wrap prose" style="padding:60px 20px"><h1>${title}</h1>${msg}<p><a href="/">← 법보시 도서관으로</a></p></div></body></html>`, { status, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', 'x-robots-tag': 'noindex' } });
 

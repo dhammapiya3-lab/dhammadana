@@ -99,12 +99,12 @@ async function initMembers() {
   const size = n => n > 1048576 ? (n / 1048576).toFixed(1) + 'MB' : Math.max(1, Math.round(n / 1024)) + 'KB';
   const icon = k => /\.(mp3|m4a|wav)$/i.test(k) ? '🎧' : /\.(mp4|mov)$/i.test(k) ? '🎬' : /\.(jpe?g|png|webp|gif)$/i.test(k) ? '🖼' : /\.pdf$/i.test(k) ? '📕' : /\.epub$/i.test(k) ? '📗' : '📄';
   let j;
-  try { const r = await fetch('/members/api/list', { cache: 'no-store' }); if (!r.ok) throw 0; j = await r.json(); } catch (e) { root.innerHTML = '<p class="muted">목록을 불러오지 못했습니다. 새로고침해 주세요.</p>'; return; }
+  try { const r = await fetch('/study/api/list', { cache: 'no-store' }); if (!r.ok) throw 0; j = await r.json(); } catch (e) { root.innerHTML = '<p class="muted">목록을 불러오지 못했습니다. 새로고침해 주세요.</p>'; return; }
   const who = j.email ? `<p class="small muted">${esc(j.email)} 로 들어왔습니다 · <a href="/cdn-cgi/access/logout">나가기</a></p>` : '';
   if (!j.files.length) { root.innerHTML = who + '<p class="muted">아직 올라온 자료가 없습니다.</p>'; return; }
   const groups = {};
   j.files.sort((a, b) => a.key.localeCompare(b.key, 'ko')).forEach(f => { const i = f.key.lastIndexOf('/'); (groups[i > 0 ? f.key.slice(0, i) : ''] = groups[i > 0 ? f.key.slice(0, i) : ''] || []).push(f); });
-  const url = k => '/members/file/' + k.split('/').map(encodeURIComponent).join('/');
+  const url = k => '/study/file/' + k.split('/').map(encodeURIComponent).join('/');
   root.innerHTML = who + Object.keys(groups).sort((a, b) => a.localeCompare(b, 'ko')).map(g => `<section class="mb-group"><h2 class="mb-h">📁 ${esc(g || '자료')}</h2><ul class="mb-list">${groups[g].map(f => { const n = f.key.split('/').pop(), au = /\.(mp3|m4a|wav)$/i.test(n); return `<li><span class="mb-ic">${icon(n)}</span><div class="mb-b"><a href="${url(f.key)}" target="_blank" rel="noopener">${esc(n)}</a><div class="small muted">${size(f.size)} · ${esc(String(f.uploaded || '').slice(0, 10))}</div>${au ? `<audio controls preload="none" src="${url(f.key)}"></audio>` : ''}</div><a class="mb-dl" href="${url(f.key)}?dl" aria-label="${esc(n)} 내려받기">내려받기</a></li>`; }).join('')}</ul></section>`).join('');
 }
 
