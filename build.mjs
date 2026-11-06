@@ -334,6 +334,7 @@ for (const b of BOOKS) {
   const prov = providerById(b.provider);
   const same = BOOKS.filter(x => x !== b && b.teacher && x.teacher === b.teacher);
   const perms = (e.permissions || []).map(permById).filter(Boolean);
+  const permLabel = e.permission_status === 'public' ? '공개 배포됨' : e.permission_status === 'confirmed' || perms.length ? '허락 확인됨' : '';
   const pubEds = (b.editions || []);
   const pl = PLAYLISTS.find(p => p.teacher && p.teacher === b.teacher);
   const extF = f.filter(x => x.ext);
@@ -361,7 +362,7 @@ for (const b of BOOKS) {
       <dt>자료 제공</dt><dd>${prov ? esc(prov.name) + (prov.urls || []).map(u => ` <a href="${esc(u)}" target="_blank" rel="noopener">↗</a>`).join('') : '—'}</dd>
       <dt>원본 출처</dt><dd>${(e.sources || []).length ? e.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>${s.checked ? ` <span class="muted small">(${esc(s.checked)} 확인)</span>` : ''}${s.archive ? ` · <a href="${esc(s.archive)}" target="_blank" rel="noopener">보관본</a>` : ''}`).join('<br>') : '—'}</dd>
       <dt>수집 경로</dt><dd>${esc(e.collection || '—')}${e.collected ? ` <span class="muted small">(${esc(e.collected)})</span>` : ''}</dd>
-      <dt>게시 허락</dt><dd>${perms.length || e.permission_note || e.permission_image ? `${perms.length ? '허락 확인됨' : ''}${perms.filter(p => p.image && p.image_public).map(p => ` · <button class="link-btn" data-permit="${esc(p.image)}" data-title="${esc(b.title)}">허락서 보기</button>`).join('')}${e.permission_image ? `${perms.length ? ' · ' : ''}<button class="link-btn" data-permit="${esc(e.permission_image)}" data-title="${esc(b.title)}">허락서 보기</button>` : ''}${e.permission_note ? `<blockquote class="perm-note">${esc(e.permission_note).replace(/\n/g, '<br>')}</blockquote>` : ''}` : '—'}</dd>
+      <dt>게시 허락</dt><dd>${permLabel || e.permission_note || e.permission_image ? `${permLabel}${perms.filter(p => p.image && p.image_public).map(p => ` · <button class="link-btn" data-permit="${esc(p.image)}" data-title="${esc(b.title)}">허락서 보기</button>`).join('')}${e.permission_image ? `${permLabel ? ' · ' : ''}<button class="link-btn" data-permit="${esc(e.permission_image)}" data-title="${esc(b.title)}">허락서 보기</button>` : ''}${e.permission_note ? `<blockquote class="perm-note">${esc(e.permission_note).replace(/\n/g, '<br>')}</blockquote>` : ''}` : '—'}</dd>
       <dt>라이선스</dt><dd>${esc(b.license)}</dd></dl>
       <table class="tbl"><thead><tr><th>판</th><th>발행일</th><th>쪽수</th>${pubEds.some(x => x.isbn) ? '<th>ISBN</th>' : ''}<th>바뀐 내용</th><th>공개</th></tr></thead><tbody>${pubEds.map(x => `<tr><td>${esc(x.label)}</td><td>${esc(pubDate(x) || '—')}</td><td>${x.page_count ? esc(x.page_count) + '쪽' : '—'}</td>${pubEds.some(y => y.isbn) ? `<td>${esc(x.isbn || '—')}</td>` : ''}<td>${esc(x.changes || '—')}</td><td>${x.current ? '<span class="pill">최신판</span>' : !edHasFile(x) ? '—' : x.public ? '이전 판 공개' : '보관'}</td></tr>`).join('')}</tbody></table>
       <p class="small muted" style="margin-top:10px">새 판이 올라오면 이전 판은 보관되고, 최신판만 내려받기와 온라인 읽기에 나옵니다.</p>
