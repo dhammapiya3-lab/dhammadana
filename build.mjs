@@ -338,7 +338,19 @@ for (const b of BOOKS) {
   const permLabel = e.permission_status === 'public' ? '공개 배포됨' : e.permission_status === 'confirmed' || perms.length ? '허락 확인됨' : '';
   const pubEds = (b.editions || []);
   const hasPrint = pubEds.some(x => x.isbn || x.publisher_print), hasEbook = pubEds.some(x => x.isbn_ebook || x.publisher_ebook || x.published_ebook);
-  const pubCell = (pb, no, dt) => { const a = [pb ? esc(pb) : '', dt ? `<span class="small">${esc(dt)} 발행</span>` : '', no ? `<span class="small">ISBN ${esc(no)}</span>` : ''].filter(Boolean); return a.length ? a.join('<br>') : '—'; };
+  const statusCell = x => x.current ? '<span class="pill">최신판</span>' : !edHasFile(x) ? '—' : x.public ? '이전 판 공개' : '보관';
+  const edTable = (title, rows, cols) => { const use = cols.filter(c => c.always || rows.some(c.get)); return `<h4 class="ed-h">${title}</h4><div class="tbl-wrap"><table class="tbl"><thead><tr>${use.map(c => `<th>${c.h}</th>`).join('')}</tr></thead><tbody>${rows.map(x => `<tr>${use.map(c => `<td>${c.html ? c.get(x) || '—' : esc(c.get(x) || '—')}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`; };
+  const ebookEds = pubEds.filter(x => x.isbn_ebook || x.publisher_ebook || x.published_ebook);
+  const edTables = (hasEbook ? edTable('종이책', pubEds, [
+      { h: '판', get: x => x.label, always: 1 }, { h: '발행일', get: x => pubDate(x), always: 1 }, { h: '쪽수', get: x => x.page_count ? x.page_count + '쪽' : '' , always: 1 },
+      { h: '출판사', get: x => x.publisher_print }, { h: 'ISBN', get: x => x.isbn }])
+    + edTable('전자책', ebookEds, [
+      { h: '판', get: x => x.label, always: 1 }, { h: '발행일', get: x => x.published_ebook, always: 1 },
+      { h: '출판사', get: x => x.publisher_ebook }, { h: 'ISBN', get: x => x.isbn_ebook }])
+    + edTable('이 사이트의 파일', pubEds, [{ h: '판', get: x => x.label, always: 1 }, { h: '공개', get: statusCell, always: 1, html: 1 }])
+    : edTable('판', pubEds, [
+      { h: '판', get: x => x.label, always: 1 }, { h: '발행일', get: x => pubDate(x), always: 1 }, { h: '쪽수', get: x => x.page_count ? x.page_count + '쪽' : '', always: 1 },
+      { h: '출판사', get: x => x.publisher_print }, { h: 'ISBN', get: x => x.isbn }, { h: '공개', get: statusCell, always: 1, html: 1 }]).replace('<h4 class="ed-h">판</h4>', ''));
   const pl = PLAYLISTS.find(p => p.teacher && p.teacher === b.teacher);
   const extF = f.filter(x => x.ext);
   put(`book/${b.id}/index.html`, layout({
@@ -367,7 +379,7 @@ for (const b of BOOKS) {
       <dt>수집 경로</dt><dd>${esc(e.collection || '—')}${e.collected ? ` <span class="muted small">(${esc(e.collected)})</span>` : ''}</dd>
       <dt>게시 허락</dt><dd>${permLabel || e.permission_note || e.permission_image ? `${permLabel}${perms.filter(p => p.image && p.image_public).map(p => ` · <button class="link-btn" data-permit="${esc(p.image)}" data-title="${esc(b.title)}">허락서 보기</button>`).join('')}${e.permission_image ? `${permLabel ? ' · ' : ''}<button class="link-btn" data-permit="${esc(e.permission_image)}" data-title="${esc(b.title)}">허락서 보기</button>` : ''}${e.permission_note ? `<blockquote class="perm-note">${esc(e.permission_note).replace(/\n/g, '<br>')}</blockquote>` : ''}` : '—'}</dd>
       <dt>라이선스</dt><dd>${esc(b.license)}</dd></dl>
-      <div class="tbl-wrap"><table class="tbl"><thead><tr><th>판</th><th>${pubEds.some(x => x.published_ebook) ? '발행일 (종이책)' : '발행일'}</th><th>쪽수</th>${hasPrint ? '<th>종이책</th>' : ''}${hasEbook ? '<th>전자책</th>' : ''}<th>공개</th></tr></thead><tbody>${pubEds.map(x => `<tr><td>${esc(x.label)}</td><td>${esc(pubDate(x) || '—')}</td><td>${x.page_count ? esc(x.page_count) + '쪽' : '—'}</td>${hasPrint ? `<td>${pubCell(x.publisher_print, x.isbn)}</td>` : ''}${hasEbook ? `<td>${pubCell(x.publisher_ebook, x.isbn_ebook, x.published_ebook)}</td>` : ''}<td>${x.current ? '<span class="pill">최신판</span>' : !edHasFile(x) ? '—' : x.public ? '이전 판 공개' : '보관'}</td></tr>`).join('')}</tbody></table></div>
+      ${edTables}
       <p class="small muted" style="margin-top:10px">새 판이 올라오면 이전 판은 보관되고, 최신판만 내려받기와 온라인 읽기에 나옵니다.</p>
     </div></details>
     ${same.length ? `<h2 class="h-sub">${esc(t.name)}의 다른 책</h2><div class="grid">${same.map(coverCard).join('')}</div>` : ''}
