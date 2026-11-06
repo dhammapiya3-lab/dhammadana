@@ -449,8 +449,9 @@ function reflowHtml() {
   const subs = R.toc.filter(t => /^\s/.test(t.title) && t.page >= c.from && t.page <= c.to);
   const body = R.pages.slice(c.from - 1, c.to).map(p => {
     const ps = paras(p.text); const sub = subs.filter(t => t.page === p.n);
+    const heads = new Set(R.toc.filter(t => t.page === p.n || t.page === p.n - 1).map(t => headKey(t.title)));
     if (!ps.length) return `<span id="pm-${p.n}"></span>`;
-    return `<span class="pmark" id="pm-${p.n}">${esc(pageName(p))}</span>${ps.map((s, k) => blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : ''}>${fnMark(markUl(s, p.n))}</p>`).join('') || ''}`;
+    return `<span class="pmark" id="pm-${p.n}">${esc(pageName(p))}</span>${ps.map((s, k) => blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : heads.has(headKey(s)) && s.length < 80 ? (p.n === c.from && headKey(s) === headKey(c.title) ? ' class="sub-h ch-dup"' : ' class="sub-h" role="heading" aria-level="4"') : ''}>${fnMark(markUl(s, p.n))}</p>`).join('') || ''}`;
   }).join('');
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}</h3></div>` : ''}${body}${nav}</div>`;
@@ -792,8 +793,10 @@ function sayable(s, o = ttsOpt()) {
   t = o.sym ? t.replace(SYM_RE, c => ` ${SYM_NAME[c] || ''} `) : t.replace(SYM_RE, ' ');
   return t.replace(/\(\s*\)/g, ' ').replace(/\s+([.,!?])/g, '$1').replace(/([.,!?])(?:\s*[.,])+/g, '$1').replace(/\s{2,}/g, ' ').trim();
 }
-const fnMark = h => h.replace(/^\[\^([^\]]+)\]:\s*/, '<span class="fn-no" data-fnno="$1">$1</span>').replace(/\[\^([^\]]+)\]/g, '<sup class="fn-ref" role="button" tabindex="0" data-fn="$1" aria-label="각주 $1">$1</sup>');
+const fnMark = h => h.replace(/^\[\^([^\]]+)\]:\s*/, '<span class="fn-no" data-fnno="$1" role="button" tabindex="0" aria-label="각주 $1 본문 자리로 가기" title="본문 자리로 가기">$1</span>').replace(/\[\^([^\]]+)\]/g, '<sup class="fn-ref" role="button" tabindex="0" data-fn="$1" aria-label="각주 $1">$1</sup>');
 // 본문 속 그림 ![설명](주소) 과 표(| 칸 | 칸 |)
+// 소제목 알아보기: 빈칸·괄호 속 풀이를 빼고 목차 제목과 같으면 소제목
+const headKey = t => String(t || '').replace(/\([^)]*\)/g, '').replace(/[\s‘’'"“”]/g, '').replace(/^[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩIVX]+\./, m => m.replace(/[IVX]+/g, x => ({I:'Ⅰ',II:'Ⅱ',III:'Ⅲ',IV:'Ⅳ',V:'Ⅴ',VI:'Ⅵ',VII:'Ⅶ',VIII:'Ⅷ',IX:'Ⅸ',X:'Ⅹ'}[x] || x)));
 const FIG_RE = /^!\[([^\]]*)\]\(([^)\s]+)\)\s*$/;
 const isTable = p => /^\|.*\|\s*$/m.test(p) && p.split('\n').filter(l => l.trim()).every(l => /^\|/.test(l.trim()));
 function tableHtml(p) {
@@ -911,6 +914,16 @@ initPage();
 /* ---------- 각주 번호를 누르면 각주 내용 보여주기 ---------- */
 document.addEventListener('click', e => {
   const old = document.getElementById('fnPop');
+  const back = e.target.closest && e.target.closest('.reflow .fn-no');
+  if (back) {  // 쪽 끝 각주 번호 → 본문의 각주 번호 자리로
+    e.preventDefault(); e.stopPropagation(); if (old) old.remove();
+    const n = back.dataset.fnno, pgn = back.closest('[data-pg]').dataset.pg;
+    const refs = [...document.querySelectorAll(`.reflow .fn-ref[data-fn="${CSS.escape(n)}"]`)];
+    const ref = refs.find(r => r.closest('[data-pg]').dataset.pg === pgn) || refs.filter(r => +r.closest('[data-pg]').dataset.pg <= +pgn).pop() || refs[0];
+    if (ref) { ref.scrollIntoView({ block: 'center' }); ref.classList.add('fn-here'); ref.focus({ preventScroll: true }); setTimeout(() => ref.classList.remove('fn-here'), 2000); }
+    else toast('이 각주의 본문 자리가 다른 장에 있습니다');
+    return;
+  }
   const sup = e.target.closest && e.target.closest('.fn-ref');
   if (!sup) { if (old && !e.target.closest('#fnPop')) old.remove(); return; }
   e.preventDefault(); e.stopPropagation(); if (old) old.remove();
@@ -928,4 +941,4 @@ document.addEventListener('click', e => {
   pop.style.top = (below + h < innerHeight - 8 ? below : Math.max(8, r.top - h - 8)) + 'px';
   pop.querySelector('.fnpop-x').onclick = () => pop.remove();
 }, true);
-document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('fn-ref')) { e.preventDefault(); e.target.click(); } if (e.key === 'Escape') { const p = document.getElementById('fnPop'); if (p) p.remove(); } });
+document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && (e.target.classList.contains('fn-ref') || e.target.classList.contains('fn-no'))) { e.preventDefault(); e.target.click(); } if (e.key === 'Escape') { const p = document.getElementById('fnPop'); if (p) p.remove(); } });
