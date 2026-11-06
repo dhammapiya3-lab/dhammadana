@@ -485,6 +485,7 @@ function bindReader() {
   });
   const tt = $('#ttsTry'); if (tt) tt.onclick = () => {
     if (!('speechSynthesis' in window)) return toast('이 기기에서는 음성 읽기를 쓸 수 없습니다');
+    if (!LEX.pali) { loadLex().then(() => tt.onclick()); return; }
     const o = ttsOpt(); const pv = pickVoice(o), v = pv.voice;
     speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(sayable('법의 보시는 모든 보시를 뛰어넘는다. Sabbadānaṃ dhammadānaṃ jināti. (법구경 354게송)', o));
     u.lang = v ? v.lang : 'ko-KR'; if (v) u.voice = v; u.rate = +o.rate; u.pitch = pv.pitch; speechSynthesis.speak(u);
@@ -612,6 +613,23 @@ const PALI = (() => {
 const PALI_MARK = /[āīūṭḍṇṅñṃṁḷĀĪŪṬḌṆṄÑṂṀḶ]/;
 const PALI_WORDS = new Set(['dhamma', 'sutta', 'metta', 'vipassana', 'samatha', 'sati', 'nibbana', 'buddha', 'sangha', 'sila', 'samadhi', 'panna', 'kamma', 'dana', 'bhikkhu', 'bhikkhuni', 'sadhu', 'jhana', 'arahant', 'dukkha', 'anicca', 'anatta', 'karuna', 'mudita', 'upekkha', 'brahmavihara', 'abhidhamma', 'vinaya', 'tipitaka', 'nikaya', 'paticcasamuppada', 'satipatthana', 'anapanasati', 'kusala', 'akusala', 'citta', 'cetasika', 'rupa', 'nama', 'khandha', 'bhavana', 'parami', 'puñña', 'punna']);
 const LATIN = "A-Za-zĀ-žḀ-ỿ";
+// 빨리어·영어 낱말 목록 (빨리어: Digital Pāḷi Dictionary, CC BY-NC-SA 4.0 / 영어: SCOWL). 듣기를 처음 쓸 때 한 번 받음
+const LEX = { pali: null, en: null, loading: null };
+function loadLex() {
+  if (LEX.loading) return LEX.loading;
+  const set = t => new Set(t.split('\n').filter(x => x && x[0] !== '#'));
+  LEX.loading = Promise.all(['/data/pali-words.txt', '/data/en-words.txt'].map(u => fetch(u).then(r => r.ok ? r.text() : ''))).then(([p, e]) => { LEX.pali = set(p); LEX.en = set(e); }).catch(() => { LEX.pali = new Set(); LEX.en = new Set(); });
+  return LEX.loading;
+}
+const plainW = w => w.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+// 낱말 하나: P(빨리어) E(영어) B(둘 다 있음) ?(모름)
+function langOf(w) {
+  if (PALI_MARK.test(w)) return 'P';
+  const x = plainW(w), p = (LEX.pali && LEX.pali.has(x)) || PALI_WORDS.has(x), e = LEX.en && LEX.en.has(x);
+  if (p && !e) return 'P'; if (e && !p) return 'E';
+  if (!p && !e) return looksPali(w) ? 'P' : '?';
+  return 'B';
+}
 // 점·막대가 없어도 빨리어처럼 생긴 낱말: 빨리어 글자로만 되어 있고, 겹자음이 있고, 모음으로 끝남 (akkhanti, dukkha …)
 const looksPali = w => w.length >= 4 && /^[a-z]+$/i.test(w) && !/[fqwxz]/i.test(w) && /(kk|gg|cc|jj|tt|dd|pp|bb|mm|nn|ss|ll)/i.test(w) && /[aeiou]$/i.test(w) && !!PALI(w);
 // 한국어 목소리만 (이름으로 남·여를 알 수 있으면 표시)
@@ -646,7 +664,7 @@ function ttsPanel() {
     <div class="tts-row"><label>꺼짐 예약</label>${sel('sleep', [[0, '끄지 않음'], [15, '15분 뒤'], [30, '30분 뒤'], [60, '1시간 뒤']])}</div>
     ${ck('chapterStop', '한 장이 끝나면 멈추기')}${ck('follow', '읽는 곳을 따라 화면 움직이기')}
     <div class="row"><button class="tbtn" id="ttsTry">▶ 미리 듣기</button><button class="tbtn" id="ttsReset">처음 설정으로</button></div>
-    <p class="note">목소리는 이 기기에 깔린 한국어 목소리 가운데서 고릅니다. 남성 목소리가 목록에 없으면 ‘낮은 목소리’를 고르거나, 컴퓨터에서는 마이크로소프트 엣지(Edge) 브라우저로 열면 남성 목소리(InJoon, Hyunsu)를 고를 수 있습니다. 설정은 이 기기의 브라우저에 저장되고, 듣는 중에 바꾸면 다음 문단부터 적용됩니다.</p>`;
+    <p class="note">목소리는 이 기기에 깔린 한국어 목소리 가운데서 고릅니다. 남성 목소리가 목록에 없으면 ‘낮은 목소리’를 고르거나, 컴퓨터에서는 마이크로소프트 엣지(Edge) 브라우저로 열면 남성 목소리(InJoon, Hyunsu)를 고를 수 있습니다. 설정은 이 기기의 브라우저에 저장되고, 듣는 중에 바꾸면 다음 문단부터 적용됩니다. 빨리어 낱말 목록: Digital Pāḷi Dictionary (CC BY-NC-SA 4.0).</p>`;
 }
 // 듣기 설정 (이 브라우저에 저장)
 const TTS_DEF = { voice: '', rate: 1, pitch: 1, gloss: false, sym: false, en: true, pali: true, hanja: true, fn: false, pause: 0.3, chapterStop: false, sleep: 0, follow: true };
@@ -661,18 +679,22 @@ function sayable(s, o = ttsOpt()) {
   //  - 풀이 읽기를 끄면 건너뜀, 켜면 빨리어 소리로 한 번 더 읽음
   t = t.replace(new RegExp(`([가-힣])([${LATIN}][${LATIN}\\-]*(?:\\s+[${LATIN}][${LATIN}\\-]*)*)`, 'g'), (m, h, lat) => {
     if (!o.gloss) return h;
-    const pali = PALI_MARK.test(lat) || /[a-z]/.test(lat[0]) || lat.split(/[\s-]+/).some(w => PALI_WORDS.has(w.toLowerCase()) || looksPali(w));
+    const ws = lat.split(/[\s-]+/).filter(Boolean), pc = ws.filter(w => langOf(w) === 'P').length, ec = ws.filter(w => langOf(w) === 'E').length;
+    const pali = PALI_MARK.test(lat) || pc > ec || (pc === ec && /[a-z]/.test(lat[0]));
     return h + ' ' + (pali ? (o.pali ? lat.split(/[\s-]+/).map(w => PALI(w) || w).join(' ') : '') : (o.en ? lat : ''));
   });
   // 한글 뒤 괄호 안이 로마자·숫자뿐이면(원어 풀이) 뺌: 지도법사(Nāyaka Sayadaw)
   if (!o.gloss) t = t.replace(/([가-힣])\s?\(([^()가-힣]*)\)/g, (m, h, inner) => /[A-Za-zĀ-ž]/.test(inner) ? h : m);
-  // 로마자 덩어리: 빨리어는 빨리어 소리로(또는 건너뜀), 영어는 그대로(또는 건너뜀)
+  // 로마자 덩어리: 낱말 목록으로 빨리어·영어를 가름. 정하기 어려운 낱말은 덩어리의 다수를 따름
   t = t.replace(new RegExp(`[${LATIN}]+(?:[\\s,;:.!?'’‘\\-]+[${LATIN}]+)*`, 'g'), run => {
-    const all = PALI_MARK.test(run);
+    const comps = run.match(new RegExp(`[${LATIN}]+(?:-[${LATIN}]+)*`, 'g')) || [];
+    const lab = comps.map(c => { const ls = c.split('-').map(langOf); return ls.includes('P') ? 'P' : ls.includes('E') ? 'E' : ls.includes('B') ? 'B' : '?'; });
+    const pc = lab.filter(x => x === 'P').length, ec = lab.filter(x => x === 'E').length;
+    const runPali = PALI_MARK.test(run) || pc > ec;
+    let k = 0;
     return run.replace(new RegExp(`[${LATIN}]+(?:-[${LATIN}]+)*`, 'g'), comp => {
-      const parts = comp.split('-');
-      const pali = all || parts.some(w => PALI_MARK.test(w) || PALI_WORDS.has(w.toLowerCase()) || looksPali(w));
-      if (pali) return o.pali ? parts.map(w => PALI(w) || w).join(' ') : ' ';
+      const l = lab[k++]; const pali = l === 'P' || ((l === 'B' || l === '?') && runPali && (l === 'B' || pc > 0));
+      if (pali) return o.pali ? comp.split('-').map(w => PALI(w) || w).join(' ') : ' ';
       return o.en ? comp : ' ';
     });
   });
@@ -688,6 +710,7 @@ const isFootnote = p => /^\[\^[^\]]+\]:/.test(p);
 // fromK: 그 쪽의 몇 번째 문단부터, firstText: 첫 문단은 이 글부터(고른 곳부터 읽기)
 function speak(fromK = 0, firstText = null) {
   if (!('speechSynthesis' in window)) { toast('이 기기에서는 음성 읽기를 쓸 수 없습니다'); return; }
+  if (!LEX.pali) { toast('읽기를 준비하는 중입니다…'); loadLex().then(() => speak(fromK, firstText)); return; }
   const o = ttsOpt();
   const p = R.pages[R.i]; const sentences = paras(p.text);
   if (!sentences.length) { if (R.i < R.pages.length - 1) { R.i++; renderReader(); setTimeout(() => speak(), 200); } return; }
