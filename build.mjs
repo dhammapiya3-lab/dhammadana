@@ -88,6 +88,8 @@ function contentsHtml(t) {
   });
   return `<h2 class="h-sub">목차</h2><ol class="toc static">${rows.join('')}</ol>`;
 }
+// 발행일 칸: 앞의 '초판 발행' 같은 판 이름은 빼고 날짜만
+const pubDate = x => { let p = (x.published || '').trim(); const l = (x.label || '').trim(); if (l && p.startsWith(l)) p = p.slice(l.length).trim(); return p.replace(/^발행\s*/, '').trim(); };
 const edHasFile = x => ['pdf', 'pdf_print', 'pdf_cover', 'epub'].some(k => x[k] && x[k].mode && x[k].mode !== 'none' && x[k].url) || !!x.reader;
 const uniqK = f => [...new Map(f.map(x => [x.k, x])).values()];
 // 내려받을 때 파일 이름: 책제목_날짜.pdf (날짜 = 파일 만든 날, 없으면 출간일)
@@ -336,7 +338,7 @@ for (const b of BOOKS) {
       <dt>수집 경로</dt><dd>${esc(e.collection || '—')}${e.collected ? ` <span class="muted small">(${esc(e.collected)})</span>` : ''}</dd>
       <dt>게시 허락</dt><dd>${perms.length || e.permission_note || e.permission_image ? `${perms.length ? '허락 확인됨' : ''}${perms.filter(p => p.image && p.image_public).map(p => ` · <button class="link-btn" data-permit="${esc(p.image)}" data-title="${esc(b.title)}">허락서 보기</button>`).join('')}${e.permission_image ? `${perms.length ? ' · ' : ''}<button class="link-btn" data-permit="${esc(e.permission_image)}" data-title="${esc(b.title)}">허락서 보기</button>` : ''}${e.permission_note ? `<blockquote class="perm-note">${esc(e.permission_note).replace(/\n/g, '<br>')}</blockquote>` : ''}` : '—'}</dd>
       <dt>라이선스</dt><dd>${esc(b.license)}</dd></dl>
-      <table class="tbl"><thead><tr><th>판</th><th>발행일</th><th>쪽수</th><th>바뀐 내용</th><th>공개</th></tr></thead><tbody>${pubEds.map(x => `<tr><td>${esc(x.label)}</td><td>${esc(x.published || '—')}</td><td>${x.page_count ? esc(x.page_count) + '쪽' : '—'}</td><td>${esc(x.changes || '—')}</td><td>${x.current ? '<span class="pill">최신판</span>' : !edHasFile(x) ? '—' : x.public ? '이전 판 공개' : '보관'}</td></tr>`).join('')}</tbody></table>
+      <table class="tbl"><thead><tr><th>판</th><th>발행일</th><th>쪽수</th><th>바뀐 내용</th><th>공개</th></tr></thead><tbody>${pubEds.map(x => `<tr><td>${esc(x.label)}</td><td>${esc(pubDate(x) || '—')}</td><td>${x.page_count ? esc(x.page_count) + '쪽' : '—'}</td><td>${esc(x.changes || '—')}</td><td>${x.current ? '<span class="pill">최신판</span>' : !edHasFile(x) ? '—' : x.public ? '이전 판 공개' : '보관'}</td></tr>`).join('')}</tbody></table>
       <p class="small muted" style="margin-top:10px">새 판이 올라오면 이전 판은 보관되고, 최신판만 내려받기와 온라인 읽기에 나옵니다.</p>
     </div></details>
     ${same.length ? `<h2 class="h-sub">${esc(t.name)}의 다른 책</h2><div class="grid">${same.map(coverCard).join('')}</div>` : ''}
