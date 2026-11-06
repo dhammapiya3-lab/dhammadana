@@ -484,7 +484,7 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 /* 13 소식 아래 */
 .more-box{margin-top:44px}
 .get-box .actions .btn{font-size:13.5px;padding-left:10px;padding-right:10px;white-space:nowrap}
-.d-body{grid-template-columns:minmax(0,1fr) 270px}
+@media (min-width:1101px){.d-body{grid-template-columns:minmax(0,1fr) 270px}}
 .verse-bg{opacity:.045}
 /* 고른 조건 단추와 책 사이 여백, 찾아보기 칸 스크롤바 여백 */
 .active-filters{gap:8px;margin:0 0 22px}
