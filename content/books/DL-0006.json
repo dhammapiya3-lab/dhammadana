@@ -41,9 +41,9 @@
         "site": ""
       },
       "pdf_print": {
+        "site": "",
         "mode": "file",
-        "url": "",
-        "site": ""
+        "url": "pdf/DL-0006/DL-0006_초판_인쇄용.pdf"
       },
       "pdf_cover": {
         "mode": "file",
