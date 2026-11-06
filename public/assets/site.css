@@ -625,3 +625,14 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 .mb-b a{font-weight:600}
 .mb-b audio{width:100%;margin-top:8px}
 .mb-dl{flex:0 0 auto;border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px;text-decoration:none;color:var(--ink)}
+
+/* ---------- 큰 글자 (저시력 독자) ---------- */
+.fs-step{display:inline-flex;align-items:center;gap:10px}
+.fs-step .tbtn{min-width:52px;min-height:44px;font-size:17px;font-weight:600}
+.fs-step b{min-width:3.5em;text-align:center;font-size:16px}
+.reflow.bold{font-weight:600}
+.reflow.bold h3,.reflow.bold b,.reflow.bold strong{font-weight:800}
+.reflow.big{overflow-wrap:anywhere;word-break:keep-all}
+.reflow.big .ch-head h3{font-size:1.25em}
+.reflow.big .ch-nav, .reflow.big .ch-nav *{font-size:max(15px,.7em)}
+.reflow.big table{font-size:.8em}
