@@ -399,7 +399,7 @@ function renderReader() {
     <div class="panel" id="p-uledit"><h5>밑줄</h5><div class="quote" id="ulText" style="font-size:13.5px"></div>
       <div class="row"><input id="ulNote" placeholder="메모 한 줄" aria-label="밑줄 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"></div>
       <div class="row"><button class="tbtn" id="ulSave">메모 저장</button><button class="tbtn" id="ulCopy">출처와 함께 복사</button><button class="tbtn" id="ulDel">밑줄 지우기</button></div></div>
-    <div class="sel-pop" id="selPop" role="toolbar" aria-label="고른 글"><button id="selUl">밑줄 긋기</button><button id="selNote">밑줄+메모</button><button id="selCopy">복사</button></div>
+    <div class="sel-pop" id="selPop" role="toolbar" aria-label="고른 글"><button id="selUl">밑줄 긋기</button><button id="selNote">밑줄+메모</button><button id="selCopy">복사</button>${R.pages.some(x => x.text) ? '<button id="selPlay">▶ 여기부터 듣기</button>' : ''}</div>
     <div class="panel" id="p-bm"><h5>내 책갈피</h5><ul>${bms().map((m, k) => `<li><span><a class="link" href="/read/${m.id}/${m.p}">『${esc(m.t)}』 ${esc(m.pl || m.p)}쪽</a>${m.note ? `<br><span class="muted small">${esc(m.note)}</span>` : ''}</span><button class="link" data-bmdel="${k}" aria-label="책갈피 지우기">지우기</button></li>`).join('') || '<li class="muted">아직 책갈피가 없습니다.</li>'}</ul>
       <div class="row" style="margin-top:12px"><input id="bmNote" placeholder="이 쪽에 한 줄 메모" aria-label="책갈피 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"><button class="tbtn" id="bmSave">저장</button></div>
       <p class="note">회원가입 없이 이 기기의 브라우저에만 저장됩니다. 다른 기기로 옮길 때는 내 서재의 ‘옮기기’를 쓰세요.</p></div>`;
@@ -463,6 +463,16 @@ function bindReader() {
     if (withNote) openUl(k); else toast('밑줄을 그었습니다. ‘밑줄 모음’과 내 서재에서 모아 볼 수 있습니다');
   };
   $('#selUl').onclick = () => addUl(false); $('#selNote').onclick = () => addUl(true);
+  const sp2 = $('#selPlay'); if (sp2) sp2.onclick = () => {
+    const sel = window.getSelection(); const pop = $('#selPop'); pop.classList.remove('show');
+    if (!sel || !sel.rangeCount) return;
+    const rg = sel.getRangeAt(0); const node = rg.startContainer.nodeType === 1 ? rg.startContainer : rg.startContainer.parentElement;
+    const para = node && node.closest('[data-pg]'); if (!para) return;
+    const pre = document.createRange(); pre.setStart(para, 0); pre.setEnd(rg.startContainer, rg.startOffset);
+    const rest = para.textContent.slice(pre.toString().length);
+    const pg = +para.dataset.pg, k = +para.dataset.s; sel.removeAllRanges();
+    stopSpeak(false); R.i = pg - 1; speak(k, rest);
+  };
   $('#selCopy').onclick = () => { const d = $('#selPop')._sel; if (d) copy(`“${d.text}” — ${R.by}, 『${R.title}』 ${plabel(d.p) || d.p}쪽 (${SITE})`, '고른 글을 출처와 함께 복사했습니다'); $('#selPop').classList.remove('show'); };
   $$('u.ul', el).forEach(u => u.onclick = e => { e.stopPropagation(); openUl(+u.dataset.hid); });
 }
@@ -475,21 +485,24 @@ function openUl(k) {
   $('#ulCopy').onclick = () => copy(`“${h.text}” — ${h.by}, 『${h.t}』 ${h.pl || h.p}쪽 (${SITE})`, '출처와 함께 복사했습니다');
 }
 function sayable(s) { let t = s; Object.entries(PRON).forEach(([k, v]) => { t = t.split(k).join(v); }); return t; }
-function speak() {
+// fromK: 그 쪽의 몇 번째 문단부터, firstText: 첫 문단은 이 글부터(고른 곳부터 읽기)
+function speak(fromK = 0, firstText = null) {
   if (!('speechSynthesis' in window)) { toast('이 기기에서는 음성 읽기를 쓸 수 없습니다'); return; }
   const p = R.pages[R.i]; const sentences = paras(p.text);
   if (!sentences.length) { if (R.i < R.pages.length - 1) { R.i++; renderReader(); setTimeout(speak, 200); } return; }
-  R.speaking = true; renderReader(); let k = 0;
+  try { speechSynthesis.cancel(); } catch (e) {}
+  R.speaking = true; renderReader(); let k = Math.min(fromK, sentences.length - 1), first = firstText;
   const next = () => {
     if (!R || !R.speaking) return;
     $$('.speaking').forEach(x => x.classList.remove('speaking'));
     if (k >= sentences.length) { if (R.i < R.pages.length - 1) { R.i++; renderReader(); speak(); } else stopSpeak(true); return; }
     const el = $(`[data-pg="${p.n}"][data-s="${k}"]`); if (el) { el.classList.add('speaking'); el.scrollIntoView({ block: 'nearest' }); }
-    const u = new SpeechSynthesisUtterance(sayable(sentences[k])); u.lang = 'ko-KR'; u.rate = +store.get('rate', 1);
-    u.onend = () => { k++; next(); }; u.onerror = () => stopSpeak(true);
+    const say = first && first.trim() ? first : sentences[k]; first = null;
+    const u = new SpeechSynthesisUtterance(sayable(say)); u.lang = 'ko-KR'; u.rate = +store.get('rate', 1);
+    u.onend = () => { if (!R || !R.speaking) return; k++; next(); }; u.onerror = e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); };
     speechSynthesis.speak(u);
   };
-  try { speechSynthesis.cancel(); } catch (e) {} next();
+  next();
 }
 function stopSpeak(rerender) { try { speechSynthesis.cancel(); } catch (e) {} if (R) { const was = R.speaking; R.speaking = false; if (rerender && was) renderReader(); } }
 document.addEventListener('keydown', e => {
