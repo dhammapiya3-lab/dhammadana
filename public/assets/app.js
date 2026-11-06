@@ -301,7 +301,6 @@ async function initBook() {
 }
 
 /* ---------- 읽기 화면 ---------- */
-const PRON = { 'mettā': '메따', 'metta': '메따', 'Mettā': '메따', 'Bhāvanā': '바와나', 'bhāvanā': '바와나', 'Dhamma': '담마', 'dhamma': '담마', 'Sutta': '숫따', 'sutta': '숫따', 'Nibbāna': '닙바나', 'nibbāna': '닙바나', 'sati': '사띠', 'vipassanā': '위빳사나', 'samatha': '사마타' };
 let R = null;
 const bms = () => store.get('bm', []);
 const uls = () => store.get('ul', []);
@@ -484,8 +483,90 @@ function openUl(k) {
   $('#ulDel').onclick = () => { store.set('ul', uls().filter(x => x.k !== k)); renderReader(); toast('밑줄을 지웠습니다'); };
   $('#ulCopy').onclick = () => copy(`“${h.text}” — ${h.by}, 『${h.t}』 ${h.pl || h.p}쪽 (${SITE})`, '출처와 함께 복사했습니다');
 }
-function sayable(s) { let t = s; Object.entries(PRON).forEach(([k, v]) => { t = t.split(k).join(v); }); return t; }
-// fromK: 그 쪽의 몇 번째 문단부터, firstText: 첫 문단은 이 글부터(고른 곳부터 읽기)
+// 빨리어 로마자 → 한글 소리 (니까야 번역 용어집 v1.1 음역 규칙)
+const PALI = (() => {
+  const CHO = { 'ㄱ': 0, 'ㄲ': 1, 'ㄴ': 2, 'ㄷ': 3, 'ㄸ': 4, 'ㄹ': 5, 'ㅁ': 6, 'ㅂ': 7, 'ㅃ': 8, 'ㅅ': 9, 'ㅇ': 11, 'ㅈ': 12, 'ㅉ': 13, 'ㅊ': 14, 'ㅋ': 15, 'ㅌ': 16, 'ㅍ': 17, 'ㅎ': 18 };
+  const JONG = { '': 0, 'ㄱ': 1, 'ㄴ': 4, 'ㄹ': 8, 'ㅁ': 16, 'ㅂ': 17, 'ㅅ': 19, 'ㅇ': 21 };
+  const V = { a: [0, 2, 9], ā: [0, 2, 9], i: [20, 20, 16], ī: [20, 20, 16], u: [13, 17, 13], ū: [13, 17, 13], e: [5, 7, 15], o: [8, 12, 8] }; // [보통, y붙음, w붙음]
+  const ONSET = { k: 'ㄲ', kh: 'ㅋ', g: 'ㄱ', gh: 'ㄱ', c: 'ㅉ', ch: 'ㅊ', j: 'ㅈ', jh: 'ㅈ', 'ṭ': 'ㄸ', 'ṭh': 'ㅌ', 'ḍ': 'ㄷ', 'ḍh': 'ㄷ', t: 'ㄸ', th: 'ㅌ', d: 'ㄷ', dh: 'ㄷ', p: 'ㅃ', ph: 'ㅍ', b: 'ㅂ', bh: 'ㅂ', n: 'ㄴ', 'ṇ': 'ㄴ', 'ñ': 'ㄴ', m: 'ㅁ', y: 'ㅇ', r: 'ㄹ', l: 'ㄹ', 'ḷ': 'ㄹ', s: 'ㅅ', h: 'ㅎ', v: 'ㅇ', 'ṅ': 'ㅇ', 'ṃ': 'ㅇ' };
+  const CODA = { k: 'ㄱ', kh: 'ㄱ', g: 'ㄱ', gh: 'ㄱ', c: 'ㅅ', ch: 'ㅅ', j: 'ㅅ', jh: 'ㅅ', 'ṭ': 'ㅅ', 'ṭh': 'ㅅ', 'ḍ': 'ㅅ', 'ḍh': 'ㅅ', t: 'ㅅ', th: 'ㅅ', d: 'ㅅ', dh: 'ㅅ', s: 'ㅅ', p: 'ㅂ', ph: 'ㅂ', b: 'ㅂ', bh: 'ㅂ', n: 'ㄴ', 'ṇ': 'ㄴ', 'ñ': 'ㄴ', m: 'ㅁ', 'ṅ': 'ㅇ', 'ṃ': 'ㅇ', l: 'ㄹ', 'ḷ': 'ㄹ' };
+  const NASAL = new Set(['n', 'ṇ', 'ñ', 'm', 'ṅ', 'ṃ']);
+  const base = c => c.replace('h', '') || c;
+  const syl = (cho, jung, jong = '') => String.fromCharCode(0xAC00 + (CHO[cho] * 21 + jung) * 28 + JONG[jong]);
+  function units(w) {
+    const out = []; let i = 0;
+    while (i < w.length) {
+      const two = w.slice(i, i + 2), one = w[i];
+      if (V[one]) { out.push({ v: one }); i++; continue; }
+      if (two.length === 2 && two[1] === 'h' && ONSET[two]) { out.push({ c: two }); i += 2; continue; }
+      if (ONSET[one]) { out.push({ c: one }); i++; continue; }
+      return null; // 빨리어가 아닌 글자
+    }
+    return out;
+  }
+  function conv(word) {
+    const w = word.toLowerCase().normalize('NFC').replace(/ṁ/g, 'ṃ').replace(/vaṃs/g, 'vams'); // 스승 이름 -vaṃsa 는 '왐사' (사이트 결정)
+    const u = units(w); if (!u || !u.some(x => x.v)) return null;
+    const S = []; // {cho, jung, jong}
+    const plain = c => S.push({ cho: ONSET[c] === undefined ? 'ㅇ' : ONSET[c], jung: 18, jong: '' }); // 모음 없는 자음: '으'
+    let i = 0;
+    while (i < u.length) {
+      // 자음 묶음 모으기
+      const cl = []; while (i < u.length && u[i].c) cl.push(u[i++].c);
+      const vow = i < u.length ? u[i++].v : null;
+      let k = 0;
+      // 앞 음절 받침
+      if (S.length && cl.length) {
+        const prev = S[S.length - 1], c0 = cl[0];
+        if (cl.length === 1 && (c0 === 'l' || c0 === 'ḷ') && vow) prev.jong = prev.jong || 'ㄹ';           // 모음 사이 l: ㄹ 덧붙임
+        else if (c0 === 'ṃ' || c0 === 'ṅ') { prev.jong = 'ㅇ'; k = 1; }
+        else if (cl.length >= 2 && (base(c0) === base(cl[1]) || NASAL.has(c0) || c0 === 'l' || c0 === 'ḷ') && CODA[c0] && !(cl[1] === 'y' && !NASAL.has(c0) && base(c0) !== base(cl[1]))) {
+          if (base(c0) === 'y' || base(c0) === 'v') k = 1; else { prev.jong = CODA[c0]; k = 1; }
+        } else if (!vow && CODA[c0] && cl.length === 1) { prev.jong = CODA[c0]; k = 1; }
+      }
+      // 남은 자음: 마지막 하나는 첫소리, 그 앞은 '으' (단, 자음+y 는 합침)
+      const rest = cl.slice(k);
+      if (!vow) { rest.forEach(plain); break; }
+      let onset = 'ㅇ', glide = 0;
+      if (rest.length) {
+        let last = rest[rest.length - 1], before = rest.slice(0, -1);
+        if (last === 'y' && before.length) { last = before.pop(); glide = 1; }
+        else if (last === 'y') glide = 1;
+        else if (last === 'v') { glide = 2; if (before.length) { last = before.pop(); } else last = 'v'; }
+        else if (last === 'ñ' && 'aāeo'.includes(vow)) glide = 1;
+        before.forEach(plain);
+        onset = ONSET[last];
+      }
+      let jung = V[vow][glide];
+      if (glide === 2 && onset !== 'ㅇ') { // 자음+v: 자음에 '으'를 붙이고 와/위…
+        S.push({ cho: onset, jung: 18, jong: '' }); onset = 'ㅇ';
+      }
+      S.push({ cho: onset, jung, jong: '' });
+    }
+    return S.map(x => syl(x.cho, x.jung, x.jong)).join('');
+  }
+  return conv;
+})();
+// 소리 내어 읽을 글 다듬기
+const PALI_MARK = /[āīūṭḍṇṅñṃṁḷĀĪŪṬḌṆṄÑṂṀḶ]/;
+const PALI_WORDS = new Set(['dhamma', 'sutta', 'metta', 'vipassana', 'samatha', 'sati', 'nibbana', 'buddha', 'sangha', 'sila', 'samadhi', 'panna', 'kamma', 'dana', 'bhikkhu', 'bhikkhuni', 'sadhu', 'jhana', 'arahant', 'dukkha', 'anicca', 'anatta', 'karuna', 'mudita', 'upekkha', 'brahmavihara', 'abhidhamma', 'vinaya', 'tipitaka', 'nikaya', 'paticcasamuppada', 'satipatthana', 'anapanasati', 'kusala', 'akusala', 'citta', 'cetasika', 'rupa', 'nama', 'khandha', 'bhavana', 'parami', 'puñña', 'punna']);
+const LATIN = "A-Za-zĀ-žḀ-ỿ";
+function sayable(s) {
+  let t = String(s || '');
+  // 한글 바로 뒤에 붙은 로마자 풀이(예: 위빳사나Vipassanā, 사야도Chanmyay Sayadaw)는 한 번만 읽도록 뺌
+  t = t.replace(new RegExp(`([가-힣])([${LATIN}][${LATIN}\\-]*(?:\\s+[${LATIN}][${LATIN}\\-]*)*)`, 'g'), (m, h, lat) => /[A-Z]/.test(lat[0]) || PALI_MARK.test(lat) || PALI_WORDS.has(lat.toLowerCase()) ? h : m);
+  // 한글 뒤 괄호 안이 로마자·숫자뿐이면(원어 풀이) 뺌: 지도법사(Nāyaka Sayadaw)
+  t = t.replace(/([가-힣])\s?\(([^()가-힣]*)\)/g, (m, h, inner) => /[A-Za-zĀ-ž]/.test(inner) ? h : m);
+  // 빨리어 로마자 낱말 → 빨리어 소리대로 한글
+  // 로마자 낱말이 이어진 덩어리에 빨리어 표시 글자가 하나라도 있으면 덩어리 전체를 빨리어로 읽음
+  t = t.replace(new RegExp(`[${LATIN}]+(?:[\\s,;:.!?'’‘\\-]+[${LATIN}]+)*`, 'g'), run => {
+    const all = PALI_MARK.test(run);
+    return run.replace(new RegExp(`[${LATIN}]+`, 'g'), w => (all || PALI_MARK.test(w) || PALI_WORDS.has(w.toLowerCase())) ? (PALI(w) || w) : w);
+  });
+  // 한글 음역의 장음 표시(까라니-야, 삿따-)는 읽지 않음
+  t = t.replace(/([가-힣])-(?=[가-힣\s,.!?)’”]|$)/g, '$1');
+  return t;
+}// fromK: 그 쪽의 몇 번째 문단부터, firstText: 첫 문단은 이 글부터(고른 곳부터 읽기)
 function speak(fromK = 0, firstText = null) {
   if (!('speechSynthesis' in window)) { toast('이 기기에서는 음성 읽기를 쓸 수 없습니다'); return; }
   const p = R.pages[R.i]; const sentences = paras(p.text);
