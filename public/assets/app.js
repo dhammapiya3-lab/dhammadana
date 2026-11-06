@@ -443,9 +443,9 @@ function bindReader() {
   });
   const tt = $('#ttsTry'); if (tt) tt.onclick = () => {
     if (!('speechSynthesis' in window)) return toast('이 기기에서는 음성 읽기를 쓸 수 없습니다');
-    const o = ttsOpt(); const v = o.voice && speechSynthesis.getVoices().find(x => x.voiceURI === o.voice);
+    const o = ttsOpt(); const pv = pickVoice(o), v = pv.voice;
     speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(sayable('법의 보시는 모든 보시를 뛰어넘는다. Sabbadānaṃ dhammadānaṃ jināti. (법구경 354게송)', o));
-    u.lang = v ? v.lang : 'ko-KR'; if (v) u.voice = v; u.rate = +o.rate; u.pitch = +o.pitch; speechSynthesis.speak(u);
+    u.lang = v ? v.lang : 'ko-KR'; if (v) u.voice = v; u.rate = +o.rate; u.pitch = pv.pitch; speechSynthesis.speak(u);
   };
   const trs = $('#ttsReset'); if (trs) trs.onclick = () => { store.set('tts', {}); renderReader(); $('#p-tts').classList.add('open'); toast('처음 설정으로 돌렸습니다'); };
   const body = $('#rBody');
@@ -572,11 +572,22 @@ const PALI_WORDS = new Set(['dhamma', 'sutta', 'metta', 'vipassana', 'samatha', 
 const LATIN = "A-Za-zĀ-žḀ-ỿ";
 // 점·막대가 없어도 빨리어처럼 생긴 낱말: 빨리어 글자로만 되어 있고, 겹자음이 있고, 모음으로 끝남 (akkhanti, dukkha …)
 const looksPali = w => w.length >= 4 && /^[a-z]+$/i.test(w) && !/[fqwxz]/i.test(w) && /(kk|gg|cc|jj|tt|dd|pp|bb|mm|nn|ss|ll)/i.test(w) && /[aeiou]$/i.test(w) && !!PALI(w);
+// 한국어 목소리만 (이름으로 남·여를 알 수 있으면 표시)
+const MALE_V = /injoon|hyunsu|bongjin|gookmin|minsu|jihoon|male|남성|남자/i, FEMALE_V = /sunhi|heami|yuna|seoyeon|jimin|seohyun|yujin|soonbok|jihyun|female|여성|여자/i;
+function koVoices() { return ('speechSynthesis' in window ? speechSynthesis.getVoices() : []).filter(v => /^ko/i.test(v.lang)); }
 function voiceOptions(cur) {
-  const vs = ('speechSynthesis' in window ? speechSynthesis.getVoices() : []);
-  const ko = vs.filter(v => /^ko/i.test(v.lang)), other = vs.filter(v => !/^ko/i.test(v.lang));
-  const opt = v => `<option value="${esc(v.voiceURI)}" ${v.voiceURI === cur ? 'selected' : ''}>${esc(v.name)}${v.localService ? '' : ' (인터넷)'}</option>`;
-  return `<option value="">기기 기본 한국어 목소리</option>${ko.map(opt).join('')}${other.length ? `<optgroup label="다른 언어 목소리">${other.map(opt).join('')}</optgroup>` : ''}`;
+  const ko = koVoices();
+  const tag = v => MALE_V.test(v.name) ? ' · 남성' : FEMALE_V.test(v.name) ? ' · 여성' : '';
+  const opt = v => `<option value="${esc(v.voiceURI)}" ${v.voiceURI === cur ? 'selected' : ''}>${esc(v.name)}${tag(v)}${v.localService ? '' : ' (인터넷)'}</option>`;
+  const male = ko.filter(v => MALE_V.test(v.name)), rest = ko.filter(v => !MALE_V.test(v.name));
+  return `<option value="">기기 기본 한국어 목소리</option>${male.length ? `<optgroup label="남성 목소리">${male.map(opt).join('')}</optgroup>` : ''}${rest.length ? `<optgroup label="${male.length ? '그 밖의 목소리' : '한국어 목소리'}">${rest.map(opt).join('')}</optgroup>` : ''}
+    <option value="__low" ${cur === '__low' ? 'selected' : ''}>낮은 목소리 (기본 목소리를 낮춰서)</option>`;
+}
+// 고른 목소리와 높낮이 정하기
+function pickVoice(o) {
+  if (o.voice === '__low') return { voice: koVoices()[0] || null, pitch: Math.max(0.1, +o.pitch * 0.62) };
+  const v = o.voice && koVoices().find(x => x.voiceURI === o.voice);
+  return { voice: v || null, pitch: +o.pitch };
 }
 function ttsPanel() {
   const o = ttsOpt();
@@ -593,7 +604,7 @@ function ttsPanel() {
     <div class="tts-row"><label>꺼짐 예약</label>${sel('sleep', [[0, '끄지 않음'], [15, '15분 뒤'], [30, '30분 뒤'], [60, '1시간 뒤']])}</div>
     ${ck('chapterStop', '한 장이 끝나면 멈추기')}${ck('follow', '읽는 곳을 따라 화면 움직이기')}
     <div class="row"><button class="tbtn" id="ttsTry">▶ 미리 듣기</button><button class="tbtn" id="ttsReset">처음 설정으로</button></div>
-    <p class="note">설정은 이 기기의 브라우저에 저장됩니다. 듣는 중에 바꾸면 다음 문단부터 적용됩니다. 목소리 종류는 기기마다 다릅니다.</p>`;
+    <p class="note">목소리는 이 기기에 깔린 한국어 목소리 가운데서 고릅니다. 남성 목소리가 목록에 없으면 ‘낮은 목소리’를 고르거나, 컴퓨터에서는 마이크로소프트 엣지(Edge) 브라우저로 열면 남성 목소리(InJoon, Hyunsu)를 고를 수 있습니다. 설정은 이 기기의 브라우저에 저장되고, 듣는 중에 바꾸면 다음 문단부터 적용됩니다.</p>`;
 }
 // 듣기 설정 (이 브라우저에 저장)
 const TTS_DEF = { voice: '', rate: 1, pitch: 1, gloss: false, sym: false, en: true, pali: true, hanja: true, fn: false, pause: 0.3, chapterStop: false, sleep: 0, follow: true };
@@ -636,7 +647,7 @@ function speak(fromK = 0, firstText = null) {
   try { speechSynthesis.cancel(); } catch (e) {}
   if (!R.speaking) { R.ttsStart = Date.now(); R.ttsChapter = chapterOf(R.i + 1); }
   R.speaking = true; renderReader(); let k = Math.min(fromK, sentences.length - 1), first = firstText;
-  const voice = o.voice && speechSynthesis.getVoices().find(v => v.voiceURI === o.voice);
+  const pv = pickVoice(o), voice = pv.voice;
   const next = () => {
     if (!R || !R.speaking) return;
     $$('.speaking').forEach(x => x.classList.remove('speaking'));
@@ -652,7 +663,7 @@ function speak(fromK = 0, firstText = null) {
     const text = sayable(raw.replace(/^\[\^[^\]]+\]:\s*/, isFootnote(raw) ? '각주. ' : ''), o);
     if (!text) { k++; next(); return; }
     const u = new SpeechSynthesisUtterance(text); u.lang = voice ? voice.lang : 'ko-KR'; if (voice) u.voice = voice;
-    u.rate = +o.rate; u.pitch = +o.pitch;
+    u.rate = +o.rate; u.pitch = pv.pitch;
     u.onend = () => { if (!R || !R.speaking) return; k++; setTimeout(next, Math.max(0, +o.pause * 1000)); };
     u.onerror = e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); };
     speechSynthesis.speak(u);
