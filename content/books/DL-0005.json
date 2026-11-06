@@ -45,9 +45,9 @@
         "url": "pdf/DL-0005/DL-0005_개정3판_인쇄용.pdf"
       },
       "pdf_cover": {
-        "mode": "none",
-        "url": "",
-        "site": ""
+        "site": "",
+        "mode": "file",
+        "url": "pdf/DL-0005/DL-0005_개정3판_인쇄용표지.pdf"
       },
       "epub": {
         "mode": "none",
