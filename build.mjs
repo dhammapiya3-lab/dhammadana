@@ -55,7 +55,7 @@ if (fs.existsSync(C('texts'))) for (const f of fs.readdirSync(C('texts')).filter
   while ((m = re.exec(body))) { if (last) last.text = body.slice(last.start, m.index).trim(); last = { label: m[1].replace(/\s*쪽$/, ''), start: re.lastIndex }; pages.push(last); }
   if (last) last.text = body.slice(last.start).trim();
   if (!pages.length) pages.push({ label: '', text: body.trim() });
-  TEXTS[t.book] = { edition: t.edition || '', pages: pages.map(p => ({ label: p.label, text: p.text })), toc: (t.toc || []).filter(x => x && x.title && x.page).map(x => ({ title: (x.sub ? '  ' : '') + x.title, page: +x.page })) };
+  TEXTS[t.book] = { edition: t.edition || '', pages: pages.map(p => ({ label: p.label, text: p.text })), toc: (t.toc || []).filter(x => x && x.title && x.page).map(x => ({ title: (x.sub ? '  ' : '') + x.title, page: +x.page, ...(x.at ? { at: String(x.at) } : {}) })) };
 }
 const NEWS = fs.readdirSync(C('news')).filter(f => f.endsWith('.md')).map(f => {
   const d = readMd(C('news/' + f));

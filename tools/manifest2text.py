@@ -38,7 +38,10 @@ for i, p in enumerate(m['pages']):
     paras = split_heads(paras, [t['title'] for t in toc if t['page'] == i + 1])
     paras = [x for x in paras if not FN.match(x)] + [x for x in paras if FN.match(x)]
     parts.append(f'=== {label}쪽 ===\n' + '\n\n'.join(paras))
-out = {'book': book, 'edition': ed, 'toc': toc, 'body': '\n\n'.join(parts) + '\n'}
+body = '\n\n'.join(parts) + '\n'
+# 4) 각주 번호로 끝났지만 문장 중간인 문단은 다음 문단과 잇기 (예: …만료(āyukkhaya)[^1] / 입니다.)
+body = re.sub(r'([^.?!”’"\n])(\[\^\d+\])\n\n(?!## |\[\^|=== )', r'\1\2', body)
+out = {'book': book, 'edition': ed, 'toc': toc, 'body': body}
 dst = os.path.join(os.path.dirname(__file__), '..', 'content', 'texts', f'{book}.json')
 with open(dst, 'w', encoding='utf-8') as f:
     json.dump(out, f, ensure_ascii=False, indent=2); f.write('\n')

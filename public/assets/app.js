@@ -434,26 +434,47 @@ function pageHtml(p) {
 }
 // 글로 보기: 목차의 큰 장(들여쓰지 않은 항목) 단위로 보여 주기
 function chapters() {
-  const top = R.toc.filter(t => !/^\s/.test(t.title)).sort((a, b) => a.page - b.page);
-  if (!top.length) return [{ title: '', from: 1, to: R.pages.length }];
-  const out = [];
-  // 첫 장 앞쪽에 글이 있을 때만 '앞부분'을 둠 (표지처럼 빈 쪽은 건너뜀)
-  if (top[0].page > 1 && R.pages.slice(0, top[0].page - 1).some(p => p.text && p.text.trim())) out.push({ title: '앞부분', from: 1, to: top[0].page - 1 });
-  top.forEach((t, i) => out.push({ title: t.title.trim(), from: t.page, to: (top[i + 1] ? top[i + 1].page - 1 : R.pages.length) }));
-  return out.filter(c => c.to >= c.from);
+  if (R._chs && R._chsToc === R.toc) return R._chs;
+  const top = R.toc.filter(t => !/^\s/.test(t.title)).sort((a, b) => a.page - b.page || paraIdx(a) - paraIdx(b));
+  let out = [];
+  if (!top.length) out = [{ title: '', from: 1, to: R.pages.length, k0: 0, kEnd: null }];
+  else {
+    // 첫 장 앞쪽에 글이 있을 때만 '앞부분'을 둠 (표지처럼 빈 쪽은 건너뜀)
+    if (top[0].page > 1 && R.pages.slice(0, top[0].page - 1).some(p => p.text && p.text.trim())) out.push({ title: '앞부분', from: 1, to: top[0].page - 1, k0: 0, kEnd: null });
+    top.forEach((t, i) => {
+      const nx = top[i + 1], k0 = paraIdx(t);
+      // 다음 장이 같은 쪽 중간에서 시작하면(at) 이 장은 그 쪽의 그 문단 앞까지
+      const midNext = nx && paraIdx(nx) > 0;
+      out.push({ title: t.title.trim(), from: t.page, k0, to: nx ? (midNext ? nx.page : nx.page - 1) : R.pages.length, kEnd: midNext ? paraIdx(nx) : null });
+    });
+    out = out.filter(c => c.to >= c.from);
+  }
+  R._chs = out; R._chsToc = R.toc; return out;
 }
-function chapterOf(n) { const cs = chapters(); const k = cs.findIndex(c => n >= c.from && n <= c.to); return k < 0 ? 0 : k; }
+// 목차 항목의 at(쪽 중간 시작 글)이 있으면 그 쪽에서 몇 번째 문단인지
+function paraIdx(t) {
+  if (!t || !t.at) return 0;
+  const ps = paras((R.pages[t.page - 1] || {}).text), key = String(t.at).replace(/\s/g, '');
+  const k = ps.findIndex(s => s.replace(/^## /, '').replace(/\s/g, '').startsWith(key));
+  return k < 0 ? 0 : k;
+}
+function chapterOf(n) {
+  const cs = chapters();
+  if (R.chForce != null && cs[R.chForce] && n >= cs[R.chForce].from && n <= cs[R.chForce].to) return R.chForce;
+  const k = cs.findIndex(c => n >= c.from && n <= c.to); return k < 0 ? 0 : k;
+}
 function firstContent(pages, toc) { const t = toc.filter(x => !/^\s/.test(x.title)).map(x => x.page).sort((a, b) => a - b)[0]; const f = pages.findIndex(p => p.text && p.text.trim()) + 1; return Math.min(t || Infinity, f || Infinity) === Infinity ? 1 : Math.min(t || Infinity, f || Infinity); }
 function reflowHtml() {
   const cs = chapters(), ci = Math.max(0, chapterOf(R.i + 1)), c = cs[ci];
   const subs = R.toc.filter(t => /^\s/.test(t.title) && t.page >= c.from && t.page <= c.to);
   const body = R.pages.slice(c.from - 1, c.to).map(p => {
     const ps = paras(p.text); const sub = subs.filter(t => t.page === p.n);
+    const keep = k => !(p.n === c.from && k < (c.k0 || 0)) && !(p.n === c.to && c.kEnd != null && k >= c.kEnd);
     const heads = new Set(R.toc.filter(t => t.page === p.n || t.page === p.n - 1).map(t => headKey(t.title)));
     if (!ps.length) return `<span id="pm-${p.n}"></span>`;
-    return `<span class="pmark" id="pm-${p.n}">${esc(pageName(p))}</span>${ps.map((s, k) => blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? (p.n === c.from && headKey(s) === headKey(c.title) ? ' class="sub-h ch-dup"' : ' class="sub-h" role="heading" aria-level="4"') : ''}>${fnMark(markUl(s.replace(/^## /, ''), p.n))}</p>`).join('') || ''}`;
+    return `<span class="pmark" id="pm-${p.n}">${esc(pageName(p))}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? (p.n === c.from && headKey(s) === headKey(c.title) ? ' class="sub-h ch-dup"' : ' class="sub-h" role="heading" aria-level="4"') : ''}>${fnMark(markUl(s.replace(/^## /, ''), p.n))}</p>`).join('') || ''}`;
   }).join('');
-  const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
+  const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}" data-ci="${ci - 1}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}" data-ci="${ci + 1}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}</h3></div>` : ''}${body}${nav}</div>`;
 }
 function tocFor(n) { let cur = null; for (const t of R.toc) if (t.page <= n) cur = t; return cur; }
@@ -482,7 +503,7 @@ function renderReader() {
     <div class="panel" id="p-find"><h5>이 책에서 찾기</h5>
       <form id="findForm" class="row" style="gap:6px"><input id="findQ" placeholder="찾을 말" aria-label="찾을 말" value="${esc(R.findQ || '')}" style="flex:1;height:36px;border:1px solid var(--line);border-radius:8px;padding:0 10px;background:var(--paper)"><button class="tbtn" type="submit">찾기</button></form>
       <div id="findRes">${R.findRes || '<p class="note">낱말을 넣으면 이 책의 모든 쪽에서 찾습니다. 위빳사나·vipassanā처럼 다른 표기도 함께 찾습니다.</p>'}</div></div>
-    <div class="panel" id="p-toc"><h5>목차</h5><ul>${R.toc.map(t => `<li class="${/^\s/.test(t.title) ? 'sub' : ''}"><button class="link" data-go="${t.page}">${esc(t.title.trim())}</button><span class="muted">${esc(t.label || '')}</span></li>`).join('')}</ul></div>
+    <div class="panel" id="p-toc"><h5>목차</h5><ul>${R.toc.map(t => `<li class="${/^\s/.test(t.title) ? 'sub' : ''}"><button class="link" data-go="${t.page}"${!/^\s/.test(t.title) ? ` data-ci="${chapters().findIndex(c => c.title === t.title.trim() && c.from === t.page)}"` : ''}>${esc(t.title.trim())}</button><span class="muted">${esc(t.label || '')}</span></li>`).join('')}</ul></div>
     <div class="panel" id="p-font"><h5>글씨</h5>
       ${R.view === 'page' && hasImg ? `<div class="row">쪽 확대 <span><button class="tbtn" data-zoom="-1">−</button> ${Math.round(R.zoom * 100)}% <button class="tbtn" data-zoom="1">+</button></span></div>${hasText ? '<p class="note">쪽 보기에서는 원본 쪽을 확대합니다. 글자만 크게 보거나 밑줄을 그으려면 ‘글로 보기’로 바꾸세요.</p>' : ''}` :
       `<div class="row">글자 크기 <span class="fs-step"><button class="tbtn" data-fsd="-1" aria-label="글자 작게">가−</button><b aria-live="polite">${Math.round(R.fs * 100)}%</b><button class="tbtn" data-fsd="1" aria-label="글자 크게">가+</button></span></div>
@@ -510,13 +531,13 @@ function renderReader() {
   saveHistory(n);
   history.replaceState(history.state, '', `/read/${R.id}/${n}` + location.search);
 }
-function go(n) { if (!R) return; if (R.ttsLocked) { toast('듣기가 잠겨 있습니다. 🔒 잠김 단추를 눌러 풀어 주세요'); return; } R.i = Math.max(0, Math.min(R.pages.length - 1, n - 1)); stopSpeak(); renderReader(); if (R.view === 'page') $('#rBody').scrollTop = 0; }
+function go(n, ci) { if (!R) return; if (R.ttsLocked) { toast('듣기가 잠겨 있습니다. 🔒 잠김 단추를 눌러 풀어 주세요'); return; } R.chForce = ci == null || isNaN(ci) ? null : ci; R.i = Math.max(0, Math.min(R.pages.length - 1, n - 1)); stopSpeak(); renderReader(); if (R.view === 'page') $('#rBody').scrollTop = 0; }
 function bindReader() {
   const el = $('#reader');
   const reopen = id => $('#' + id).classList.add('open');
   $('#rClose').onclick = exitReader;
   // 글로 보기에서는 한 화면이 한 장(章)이므로 ‹ › 는 장 단위로 넘깁니다 (쪽 단위면 같은 화면이 되풀이됨)
-  const stepCh = d => { const cs = chapters(), ci = chapterOf(R.i + 1), t = cs[ci + d]; if (t) { go(t.from); $('#rBody').scrollTop = 0; window.scrollTo(0, 0); } };
+  const stepCh = d => { const cs = chapters(), ci = chapterOf(R.i + 1), t = cs[ci + d]; if (t) { go(t.from, ci + d); $('#rBody').scrollTop = 0; window.scrollTo(0, 0); } };
   $('#rPrev').onclick = () => R.view === 'text' ? stepCh(-1) : go(R.i); $('#rNext').onclick = () => R.view === 'text' ? stepCh(1) : go(R.i + 2); $('#rRange').onchange = e => go(+e.target.value);
   const ff = $('#findForm'); if (ff) ff.onsubmit = async ev => {
     ev.preventDefault(); const q = $('#findQ').value.trim(); R.findQ = q; if (!q) return;
@@ -544,7 +565,7 @@ function bindReader() {
   const ho = $('#hlOff'); if (ho) ho.onclick = () => { R.hl = []; history.replaceState(null, '', location.pathname); renderReader(); };
   
   $$('[data-panel]', el).forEach(b => b.onclick = () => { const p = $('#p-' + b.dataset.panel); const o = p.classList.contains('open'); $$('.panel', el).forEach(x => x.classList.remove('open')); if (!o) p.classList.add('open'); });
-  $$('[data-go]', el).forEach(b => b.onclick = () => go(+b.dataset.go));
+  $$('[data-go]', el).forEach(b => b.onclick = () => go(+b.dataset.go, b.dataset.ci != null ? +b.dataset.ci : null));
   $$('[data-zoom]', el).forEach(b => b.onclick = () => { R.zoom = Math.max(.75, Math.min(2.5, +(R.zoom + (+b.dataset.zoom) * .25).toFixed(2))); store.set('rzoom', R.zoom); renderReader(); reopen('p-font'); });
   $$('[data-fs]', el).forEach(b => b.onclick = () => { R.fs = +b.dataset.fs; store.set('rfs', R.fs); renderReader(); reopen('p-font'); });
   const FS = [0.85, 1, 1.15, 1.3, 1.5, 1.75, 2, 2.25, 2.5, 3, 3.5, 4];
@@ -618,12 +639,26 @@ function bindReader() {
     const rg = sel.getRangeAt(0); const node = rg.startContainer.nodeType === 1 ? rg.startContainer : rg.startContainer.parentElement;
     const para = node && node.closest('[data-pg]'); if (!para) return;
     const pre = document.createRange(); pre.setStart(para, 0); pre.setEnd(rg.startContainer, rg.startOffset);
-    const rest = para.textContent.slice(pre.toString().length);
     const pg = +para.dataset.pg, k = +para.dataset.s; sel.removeAllRanges();
+    // 화면 글자 위치 → 원래 글(각주 표시 [^1] 등 포함) 위치로 바꿔서, 각주 번호가 '1'이 아니라 '각주 1'로 읽히게
+    const src = (paras((R.pages[pg - 1] || {}).text)[k]) || para.textContent;
+    const rest = src.slice(domToSrc(src, pre.toString().length));
     stopSpeak(false); R.i = pg - 1; speak(k, rest);
   };
   $('#selCopy').onclick = () => { const d = $('#selPop')._sel; if (d) copy(`“${d.text}” — ${R.by}, 『${R.title}』 ${plabel(d.p) || d.p}쪽 (${SITE})`, '고른 글을 출처와 함께 복사했습니다'); $('#selPop').classList.remove('show'); };
   $$('u.ul', el).forEach(u => u.onclick = e => { e.stopPropagation(); openUl(+u.dataset.hid); });
+}
+function domToSrc(src, off) {
+  // 화면에는 '## ' 가 없고, [^12]: 는 '12', [^12] 는 '12' 로 보입니다
+  let i = 0, d = 0;
+  if (src.startsWith('## ')) i = 3;
+  const m0 = src.slice(i).match(/^\[\^([^\]]+)\]:\s*/); if (m0) { if (off < m0[1].length) return i; d += m0[1].length; i += m0[0].length; }
+  while (i < src.length && d < off) {
+    const m = src.slice(i).match(/^\[\^([^\]]+)\]/);
+    if (m) { if (d + m[1].length > off) return i; d += m[1].length; i += m[0].length; continue; }
+    i++; d++;
+  }
+  return i;
 }
 function openUl(k) {
   const h = uls().find(x => x.k === k); if (!h) return; const el = $('#reader');
