@@ -475,9 +475,9 @@ function renderReader() {
     </div></div>
     ${R.hl.length ? `<div class="variant-note" style="border-radius:0">찾은 말을 표시하고 있습니다. <button id="hlOff">표시 끄기</button></div>` : ''}
     <div class="r-body" id="rBody">${R.view === 'page' ? pageHtml(p) : reflowHtml()}</div>
-    <div class="r-bottom"><button class="tbtn" id="rPrev" ${R.i === 0 ? 'disabled' : ''} aria-label="이전 쪽">‹</button>
+    <div class="r-bottom"><button class="tbtn" id="rPrev" ${(R.view === 'text' ? chapterOf(n) === 0 : R.i === 0) ? 'disabled' : ''} aria-label="${R.view === 'text' ? '이전 장' : '이전 쪽'}">‹</button>
       <label for="rRange" class="sr">쪽 이동</label><input type="range" id="rRange" min="1" max="${N}" value="${n}">
-      <span class="pg">${p.label ? esc(p.label) + '쪽 · ' : ''}${n} / ${N}</span><button class="tbtn" id="rNext" ${R.i === N - 1 ? 'disabled' : ''} aria-label="다음 쪽">›</button></div>
+      <span class="pg">${p.label ? esc(p.label) + '쪽 · ' : ''}${n} / ${N}</span><button class="tbtn" id="rNext" ${(R.view === 'text' ? chapterOf(n) >= chapters().length - 1 : R.i === N - 1) ? 'disabled' : ''} aria-label="${R.view === 'text' ? '다음 장' : '다음 쪽'}">›</button></div>
     <div class="panel" id="p-find"><h5>이 책에서 찾기</h5>
       <form id="findForm" class="row" style="gap:6px"><input id="findQ" placeholder="찾을 말" aria-label="찾을 말" value="${esc(R.findQ || '')}" style="flex:1;height:36px;border:1px solid var(--line);border-radius:8px;padding:0 10px;background:var(--paper)"><button class="tbtn" type="submit">찾기</button></form>
       <div id="findRes">${R.findRes || '<p class="note">낱말을 넣으면 이 책의 모든 쪽에서 찾습니다. 위빳사나·vipassanā처럼 다른 표기도 함께 찾습니다.</p>'}</div></div>
@@ -514,7 +514,9 @@ function bindReader() {
   const el = $('#reader');
   const reopen = id => $('#' + id).classList.add('open');
   $('#rClose').onclick = exitReader;
-  $('#rPrev').onclick = () => go(R.i); $('#rNext').onclick = () => go(R.i + 2); $('#rRange').onchange = e => go(+e.target.value);
+  // 글로 보기에서는 한 화면이 한 장(章)이므로 ‹ › 는 장 단위로 넘깁니다 (쪽 단위면 같은 화면이 되풀이됨)
+  const stepCh = d => { const cs = chapters(), ci = chapterOf(R.i + 1), t = cs[ci + d]; if (t) { go(t.from); $('#rBody').scrollTop = 0; window.scrollTo(0, 0); } };
+  $('#rPrev').onclick = () => R.view === 'text' ? stepCh(-1) : go(R.i); $('#rNext').onclick = () => R.view === 'text' ? stepCh(1) : go(R.i + 2); $('#rRange').onchange = e => go(+e.target.value);
   const ff = $('#findForm'); if (ff) ff.onsubmit = async ev => {
     ev.preventDefault(); const q = $('#findQ').value.trim(); R.findQ = q; if (!q) return;
     let V = []; try { V = (await data()).variants; } catch (e) {}
