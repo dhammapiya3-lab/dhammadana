@@ -358,7 +358,7 @@ function reflowHtml() {
   const body = R.pages.slice(c.from - 1, c.to).map(p => {
     const ps = paras(p.text); const sub = subs.filter(t => t.page === p.n);
     if (!ps.length) return `<span id="pm-${p.n}"></span>`;
-    return `<span class="pmark" id="pm-${p.n}">${esc(pageName(p))}</span>${ps.map((s, k) => `<p data-pg="${p.n}" data-s="${k}">${markUl(s, p.n)}</p>`).join('') || ''}`;
+    return `<span class="pmark" id="pm-${p.n}">${esc(pageName(p))}</span>${ps.map((s, k) => `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ' class="fn"' : ''}>${fnMark(markUl(s, p.n))}</p>`).join('') || ''}`;
   }).join('');
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}" style="--fs:${R.fs};--lh:${R.lh}">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}</h3></div>` : ''}${body}${nav}</div>`;
@@ -375,7 +375,7 @@ function renderReader() {
     <div class="r-tools">
       ${R.toc.length ? '<button class="tbtn" data-panel="toc">목차</button>' : ''}
       <button class="tbtn" data-panel="font" aria-label="글씨 크기">가<span style="font-size:16px">가</span></button>
-      ${hasText ? `<button class="tbtn ${R.speaking ? 'on' : ''}" id="rSpeak">${R.speaking ? '■ 멈춤' : '▶ 듣기'}</button>` : ''}
+      ${hasText ? `<button class="tbtn ${R.speaking ? 'on' : ''}" id="rSpeak">${R.speaking ? '■ 멈춤' : '▶ 듣기'}</button><button class="tbtn" data-panel="tts" aria-label="듣기 설정">듣기 설정</button>` : ''}
       <button class="tbtn" data-panel="mode">화면</button>
       <button class="tbtn ${marked ? 'on' : ''}" id="rMark" aria-pressed="${marked}">${marked ? '★ 책갈피' : '☆ 책갈피'}</button>
       <button class="tbtn" data-panel="bm">책갈피 목록</button>
@@ -392,6 +392,7 @@ function renderReader() {
       `<div class="row">글자 크기 <span class="seg">${[0.85, 1, 1.15, 1.3, 1.5].map((v, i) => `<button data-fs="${v}" class="${R.fs === v ? 'on' : ''}">${i + 1}</button>`).join('')}</span></div>
        <div class="row">줄 간격 <span class="seg">${[[1.6, '좁게'], [1.9, '보통'], [2.2, '넓게']].map(([v, l]) => `<button data-lh="${v}" class="${R.lh === v ? 'on' : ''}">${l}</button>`).join('')}</span></div>
        <div class="row">글꼴 <span class="seg"><button data-font="serif" class="${R.font === 'serif' ? 'on' : ''}">명조</button><button data-font="sans" class="${R.font === 'sans' ? 'on' : ''}">고딕</button></span></div>`}</div>
+    <div class="panel" id="p-tts">${ttsPanel()}</div>
     <div class="panel" id="p-mode"><h5>화면 모드</h5><div class="seg">${[['day', '기본'], ['mono', '흑백'], ['night', '밤']].map(([k, v]) => `<button data-rmode="${k}" class="${store.get('mode', 'auto') === k ? 'on' : ''}">${v}</button>`).join('')}</div><p class="note">고른 모드는 사이트 전체에 적용되고 다음에 와도 유지됩니다.</p></div>
     <div class="panel" id="p-ul"><h5>이 책의 밑줄</h5><ul>${uls().filter(h => h.id === R.id).sort((a, b) => a.p - b.p).map(h => `<li style="display:block"><button class="link" data-go="${h.p}">${esc(h.pl || h.p)}쪽</button><div class="quote" style="font-size:13.5px">${esc(h.text)}</div>${h.note ? `<div class="small muted">${esc(h.note)}</div>` : ''}</li>`).join('') || '<li class="muted">글을 끌어서 고르면 밑줄을 그을 수 있습니다.</li>'}</ul>
       <div class="row"><a class="tbtn" href="/mynotes/">내 서재에서 모두 보기</a></div></div>
@@ -429,6 +430,24 @@ function bindReader() {
   $('#bmSave').onclick = () => { const l = bms(), n = cur().n; let m = l.find(m => m.id === R.id && m.p === n); if (!m) { m = { id: R.id, t: R.title, p: n, pl: cur().label, d: today() }; l.push(m); } m.note = $('#bmNote').value.trim(); store.set('bm', l); renderReader(); reopen('p-bm'); toast('메모를 저장했습니다'); };
   $$('[data-bmdel]', el).forEach(b => b.onclick = () => { const l = bms(); l.splice(+b.dataset.bmdel, 1); store.set('bm', l); renderReader(); reopen('p-bm'); });
   const sp = $('#rSpeak'); if (sp) sp.onclick = () => R.speaking ? stopSpeak(true) : speak();
+  $$('[data-tts]', el).forEach(inp => {
+    const save = () => {
+      const o = store.get('tts', {}), k = inp.dataset.tts;
+      o[k] = inp.type === 'checkbox' ? inp.checked : (inp.type === 'range' || k === 'pause' || k === 'sleep') ? +inp.value : inp.value;
+      store.set('tts', o);
+      if (k === 'rate') $('#ttsRateV').textContent = (+inp.value).toFixed(1) + '배';
+      if (k === 'pitch') $('#ttsPitchV').textContent = (+inp.value).toFixed(1);
+      if (k === 'sleep' && R.speaking) R.ttsStart = Date.now();
+    };
+    inp.addEventListener(inp.type === 'range' ? 'input' : 'change', save);
+  });
+  const tt = $('#ttsTry'); if (tt) tt.onclick = () => {
+    if (!('speechSynthesis' in window)) return toast('이 기기에서는 음성 읽기를 쓸 수 없습니다');
+    const o = ttsOpt(); const v = o.voice && speechSynthesis.getVoices().find(x => x.voiceURI === o.voice);
+    speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(sayable('법의 보시는 모든 보시를 뛰어넘는다. Sabbadānaṃ dhammadānaṃ jināti. (법구경 354게송)', o));
+    u.lang = v ? v.lang : 'ko-KR'; if (v) u.voice = v; u.rate = +o.rate; u.pitch = +o.pitch; speechSynthesis.speak(u);
+  };
+  const trs = $('#ttsReset'); if (trs) trs.onclick = () => { store.set('tts', {}); renderReader(); $('#p-tts').classList.add('open'); toast('처음 설정으로 돌렸습니다'); };
   const body = $('#rBody');
   // 밀어서 넘기기 (쪽 보기)
   let sx = null; body.addEventListener('touchstart', e => { if (R.view === 'page' && R.zoom <= 1) sx = e.touches[0].clientX; }, { passive: true });
@@ -553,42 +572,89 @@ const PALI_WORDS = new Set(['dhamma', 'sutta', 'metta', 'vipassana', 'samatha', 
 const LATIN = "A-Za-zĀ-žḀ-ỿ";
 // 점·막대가 없어도 빨리어처럼 생긴 낱말: 빨리어 글자로만 되어 있고, 겹자음이 있고, 모음으로 끝남 (akkhanti, dukkha …)
 const looksPali = w => w.length >= 4 && /^[a-z]+$/i.test(w) && !/[fqwxz]/i.test(w) && /(kk|gg|cc|jj|tt|dd|pp|bb|mm|nn|ss|ll)/i.test(w) && /[aeiou]$/i.test(w) && !!PALI(w);
-function sayable(s) {
+function voiceOptions(cur) {
+  const vs = ('speechSynthesis' in window ? speechSynthesis.getVoices() : []);
+  const ko = vs.filter(v => /^ko/i.test(v.lang)), other = vs.filter(v => !/^ko/i.test(v.lang));
+  const opt = v => `<option value="${esc(v.voiceURI)}" ${v.voiceURI === cur ? 'selected' : ''}>${esc(v.name)}${v.localService ? '' : ' (인터넷)'}</option>`;
+  return `<option value="">기기 기본 한국어 목소리</option>${ko.map(opt).join('')}${other.length ? `<optgroup label="다른 언어 목소리">${other.map(opt).join('')}</optgroup>` : ''}`;
+}
+function ttsPanel() {
+  const o = ttsOpt();
+  const ck = (k, label, hint = '') => `<label class="tts-ck"><input type="checkbox" data-tts="${k}" ${o[k] ? 'checked' : ''}><span>${label}${hint ? `<small>${hint}</small>` : ''}</span></label>`;
+  const sel = (k, list) => `<select data-tts="${k}">${list.map(([v, l]) => `<option value="${v}" ${String(o[k]) === String(v) ? 'selected' : ''}>${l}</option>`).join('')}</select>`;
+  return `<h5>듣기 설정</h5>
+    <div class="tts-row"><label for="ttsVoice">목소리</label><select id="ttsVoice" data-tts="voice">${voiceOptions(o.voice)}</select></div>
+    <div class="tts-row"><label>빠르기 <b id="ttsRateV">${(+o.rate).toFixed(1)}배</b></label><input type="range" min="0.6" max="1.8" step="0.1" value="${o.rate}" data-tts="rate"></div>
+    <div class="tts-row"><label>목소리 높낮이 <b id="ttsPitchV">${(+o.pitch).toFixed(1)}</b></label><input type="range" min="0.6" max="1.4" step="0.1" value="${o.pitch}" data-tts="pitch"></div>
+    <div class="tts-sub">읽을 것</div>
+    ${ck('pali', '빠알리어', '빠알리어 소리대로 읽음')}${ck('gloss', '한글 옆 원어 풀이도 읽기', '위빳사나Vipassanā, 지도법사(Nāyaka Sayadaw)처럼 한글과 같은 말을 한 번 더 읽음')}${ck('en', '영어')}${ck('hanja', '한자')}${ck('fn', '각주')}${ck('sym', '특수부호', '괄호·따옴표 등을 이름으로 읽음')}
+    <div class="tts-sub">읽는 방식</div>
+    <div class="tts-row"><label>문단 사이 쉼</label>${sel('pause', [[0, '쉬지 않음'], [0.3, '짧게'], [0.8, '보통'], [1.5, '길게']])}</div>
+    <div class="tts-row"><label>꺼짐 예약</label>${sel('sleep', [[0, '끄지 않음'], [15, '15분 뒤'], [30, '30분 뒤'], [60, '1시간 뒤']])}</div>
+    ${ck('chapterStop', '한 장이 끝나면 멈추기')}${ck('follow', '읽는 곳을 따라 화면 움직이기')}
+    <div class="row"><button class="tbtn" id="ttsTry">▶ 미리 듣기</button><button class="tbtn" id="ttsReset">처음 설정으로</button></div>
+    <p class="note">설정은 이 기기의 브라우저에 저장됩니다. 듣는 중에 바꾸면 다음 문단부터 적용됩니다. 목소리 종류는 기기마다 다릅니다.</p>`;
+}
+// 듣기 설정 (이 브라우저에 저장)
+const TTS_DEF = { voice: '', rate: 1, pitch: 1, gloss: false, sym: false, en: true, pali: true, hanja: true, fn: false, pause: 0.3, chapterStop: false, sleep: 0, follow: true };
+const ttsOpt = () => Object.assign({}, TTS_DEF, store.get('tts', {}));
+const SYM_NAME = { '(': '괄호 열고', ')': '괄호 닫고', '[': '대괄호 열고', ']': '대괄호 닫고', '‘': '작은따옴표', '’': '작은따옴표', '“': '큰따옴표', '”': '큰따옴표', '"': '큰따옴표', "'": '작은따옴표', '「': '낫표', '」': '낫표', '『': '겹낫표', '』': '겹낫표', '《': '겹화살괄호', '》': '겹화살괄호', '〈': '홑화살괄호', '〉': '홑화살괄호', '<': '홑화살괄호', '>': '홑화살괄호', '＜': '홑화살괄호', '＞': '홑화살괄호', '·': '가운뎃점', 'ㆍ': '가운뎃점', '…': '줄임표', '~': '물결표', '*': '별표', '/': '빗금', '|': '세로줄', '—': '줄표', '–': '줄표', '－': '붙임표' };
+const SYM_RE = /[()\[\]‘’“”"'「」『』《》〈〉<>＜＞·ㆍ…~*/|—–－]/g;
+function sayable(s, o = ttsOpt()) {
   let t = String(s || '');
+  t = t.replace(/\[\^[^\]]+\]/g, ''); // 각주 표시
   // 한글 바로 뒤에 붙은 로마자 풀이(예: 위빳사나Vipassanā, 사야도Chanmyay Sayadaw)는 한 번만 읽도록 뺌
-  t = t.replace(new RegExp(`([가-힣])([${LATIN}][${LATIN}\\-]*(?:\\s+[${LATIN}][${LATIN}\\-]*)*)`, 'g'), (m, h, lat) => /[A-Z]/.test(lat[0]) || PALI_MARK.test(lat) || PALI_WORDS.has(lat.toLowerCase()) ? h : m);
+  if (o.gloss) t = t.replace(new RegExp(`([가-힣])(?=[${LATIN}])`, 'g'), '$1 ');
+  if (!o.gloss) t = t.replace(new RegExp(`([가-힣])([${LATIN}][${LATIN}\\-]*(?:\\s+[${LATIN}][${LATIN}\\-]*)*)`, 'g'), (m, h, lat) => /[A-Z]/.test(lat[0]) || PALI_MARK.test(lat) || PALI_WORDS.has(lat.toLowerCase()) ? h : m);
   // 한글 뒤 괄호 안이 로마자·숫자뿐이면(원어 풀이) 뺌: 지도법사(Nāyaka Sayadaw)
-  t = t.replace(/([가-힣])\s?\(([^()가-힣]*)\)/g, (m, h, inner) => /[A-Za-zĀ-ž]/.test(inner) ? h : m);
-  // 빨리어 로마자 낱말 → 빨리어 소리대로 한글
-  // 로마자 낱말이 이어진 덩어리에 빨리어 표시 글자가 하나라도 있으면 덩어리 전체를 빨리어로 읽음
+  if (!o.gloss) t = t.replace(/([가-힣])\s?\(([^()가-힣]*)\)/g, (m, h, inner) => /[A-Za-zĀ-ž]/.test(inner) ? h : m);
+  // 로마자 덩어리: 빨리어는 빨리어 소리로(또는 건너뜀), 영어는 그대로(또는 건너뜀)
   t = t.replace(new RegExp(`[${LATIN}]+(?:[\\s,;:.!?'’‘\\-]+[${LATIN}]+)*`, 'g'), run => {
-    // 덩어리에 빨리어 표시 글자가 있으면 덩어리 전체를 빨리어로
     const all = PALI_MARK.test(run);
-    // 붙임표로 이은 낱말(akkhanti-sutta)은 한 부분이라도 빨리어면 전체를 빨리어로, 붙임표는 띄어 읽기
     return run.replace(new RegExp(`[${LATIN}]+(?:-[${LATIN}]+)*`, 'g'), comp => {
       const parts = comp.split('-');
       const pali = all || parts.some(w => PALI_MARK.test(w) || PALI_WORDS.has(w.toLowerCase()) || looksPali(w));
-      return pali ? parts.map(w => PALI(w) || w).join(' ') : comp;
+      if (pali) return o.pali ? parts.map(w => PALI(w) || w).join(' ') : ' ';
+      return o.en ? comp : ' ';
     });
   });
+  if (!o.hanja) t = t.replace(/[\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]+/g, ' ');
   // 한글 음역의 장음 표시(까라니-야, 삿따-)는 읽지 않음
   t = t.replace(/([가-힣])-(?=[가-힣\s,.!?)’”]|$)/g, '$1');
-  return t;
-}// fromK: 그 쪽의 몇 번째 문단부터, firstText: 첫 문단은 이 글부터(고른 곳부터 읽기)
+  // 특수부호: 읽기를 켜면 이름으로 읽고, 끄면 소리 내지 않음
+  t = o.sym ? t.replace(SYM_RE, c => ` ${SYM_NAME[c] || ''} `) : t.replace(SYM_RE, ' ');
+  return t.replace(/\(\s*\)/g, ' ').replace(/\s+([.,!?])/g, '$1').replace(/([.,!?])(?:\s*[.,])+/g, '$1').replace(/\s{2,}/g, ' ').trim();
+}
+const fnMark = h => h.replace(/^\[\^([^\]]+)\]:\s*/, '<sup class="fn-no">$1</sup> ').replace(/\[\^([^\]]+)\]/g, '<sup class="fn-ref">$1</sup>');
+const isFootnote = p => /^\[\^[^\]]+\]:/.test(p);
+// fromK: 그 쪽의 몇 번째 문단부터, firstText: 첫 문단은 이 글부터(고른 곳부터 읽기)
 function speak(fromK = 0, firstText = null) {
   if (!('speechSynthesis' in window)) { toast('이 기기에서는 음성 읽기를 쓸 수 없습니다'); return; }
+  const o = ttsOpt();
   const p = R.pages[R.i]; const sentences = paras(p.text);
-  if (!sentences.length) { if (R.i < R.pages.length - 1) { R.i++; renderReader(); setTimeout(speak, 200); } return; }
+  if (!sentences.length) { if (R.i < R.pages.length - 1) { R.i++; renderReader(); setTimeout(() => speak(), 200); } return; }
   try { speechSynthesis.cancel(); } catch (e) {}
+  if (!R.speaking) { R.ttsStart = Date.now(); R.ttsChapter = chapterOf(R.i + 1); }
   R.speaking = true; renderReader(); let k = Math.min(fromK, sentences.length - 1), first = firstText;
+  const voice = o.voice && speechSynthesis.getVoices().find(v => v.voiceURI === o.voice);
   const next = () => {
     if (!R || !R.speaking) return;
     $$('.speaking').forEach(x => x.classList.remove('speaking'));
-    if (k >= sentences.length) { if (R.i < R.pages.length - 1) { R.i++; renderReader(); speak(); } else stopSpeak(true); return; }
-    const el = $(`[data-pg="${p.n}"][data-s="${k}"]`); if (el) { el.classList.add('speaking'); el.scrollIntoView({ block: 'nearest' }); }
-    const say = first && first.trim() ? first : sentences[k]; first = null;
-    const u = new SpeechSynthesisUtterance(sayable(say)); u.lang = 'ko-KR'; u.rate = +store.get('rate', 1);
-    u.onend = () => { if (!R || !R.speaking) return; k++; next(); }; u.onerror = e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); };
+    if (o.sleep && Date.now() - R.ttsStart > o.sleep * 60000) { stopSpeak(true); toast('정한 시간이 되어 듣기를 멈췄습니다'); return; }
+    if (k >= sentences.length) {
+      if (R.i >= R.pages.length - 1) { stopSpeak(true); return; }
+      if (o.chapterStop && chapterOf(R.i + 2) !== R.ttsChapter) { stopSpeak(true); toast('이 장을 다 읽었습니다'); return; }
+      R.i++; renderReader(); speak(); return;
+    }
+    const raw = first && first.trim() ? first : sentences[k]; first = null;
+    if (!o.fn && isFootnote(sentences[k])) { k++; next(); return; }
+    const el = $(`[data-pg="${p.n}"][data-s="${k}"]`); if (el) { el.classList.add('speaking'); if (o.follow) el.scrollIntoView({ block: 'nearest' }); }
+    const text = sayable(raw.replace(/^\[\^[^\]]+\]:\s*/, isFootnote(raw) ? '각주. ' : ''), o);
+    if (!text) { k++; next(); return; }
+    const u = new SpeechSynthesisUtterance(text); u.lang = voice ? voice.lang : 'ko-KR'; if (voice) u.voice = voice;
+    u.rate = +o.rate; u.pitch = +o.pitch;
+    u.onend = () => { if (!R || !R.speaking) return; k++; setTimeout(next, Math.max(0, +o.pause * 1000)); };
+    u.onerror = e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); };
     speechSynthesis.speak(u);
   };
   next();
@@ -635,6 +701,7 @@ function renderNotes() {
 }
 
 /* ---------- 시작 ---------- */
+if ('speechSynthesis' in window) speechSynthesis.addEventListener && speechSynthesis.addEventListener('voiceschanged', () => { const v = $('#ttsVoice'); if (v) v.innerHTML = voiceOptions(ttsOpt().voice); });
 initHeader();
 initPlayer();
 initPage();
