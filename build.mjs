@@ -216,7 +216,7 @@ ${body}
   <div class="ctr"><button id="pPrev" aria-label="이전 법문">⏮</button><button class="main" id="pPlay" aria-label="재생">▶</button><button id="pNext" aria-label="다음 법문">⏭</button></div>
   <div class="mid"><div class="pt" id="pTitle">—</div><div class="bar"><span id="pCur">0:00</span><label for="pSeek" class="sr">재생 위치</label><input type="range" id="pSeek" min="0" max="100" value="0" step="0.1"><span id="pDur">0:00</span></div></div>
   <div class="opt"><label for="pRate">빠르기</label><select id="pRate"><option value="0.8">0.8배</option><option value="1" selected>1배</option><option value="1.25">1.25배</option><option value="1.5">1.5배</option></select>
-    <label class="inline"><input type="checkbox" id="pAuto" checked>연속 재생</label><button class="tbtn" id="pHide" aria-label="재생기 닫기">✕</button></div>
+    <label class="inline"><input type="checkbox" id="pAuto" checked>연속 재생</label><button class="tbtn" id="pLock" aria-pressed="false" title="잠그면 실수로 멈추지 않습니다">🔓 잠금</button><button class="tbtn" id="pHide" aria-label="재생기 닫기">✕</button></div>
 </div><audio id="pAudio" preload="metadata"></audio></div>
 <script src="/assets/app.js?v=${V.js}" defer></script>
 </body>

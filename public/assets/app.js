@@ -215,6 +215,17 @@ async function runSearch() {
   const eb = $('#exactBtn'); if (eb) eb.onclick = () => { exact = !exact; runSearch(); };
 }
 
+/* ---------- 화면 켜 두기 (휴대폰에서 소리가 끊기지 않도록) ---------- */
+const WAKE = { lock: null, want: new Set() };
+async function wake(on, who) {
+  on ? WAKE.want.add(who) : WAKE.want.delete(who);
+  try {
+    if (WAKE.want.size && !WAKE.lock && 'wakeLock' in navigator) { WAKE.lock = await navigator.wakeLock.request('screen'); WAKE.lock.addEventListener('release', () => { WAKE.lock = null; }); }
+    if (!WAKE.want.size && WAKE.lock) { await WAKE.lock.release(); WAKE.lock = null; }
+  } catch (e) {}
+}
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && WAKE.want.size) wake(true, [...WAKE.want][0]); });
+
 /* ---------- 법문 재생기 ---------- */
 const PL = { pl: null, i: 0, list: [] };
 const fmtT = s => { if (!isFinite(s)) return '0:00'; s = Math.floor(s); const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = String(s % 60).padStart(2, '0'); return h ? `${h}:${String(m).padStart(2, '0')}:${x}` : `${m}:${x}`; };
@@ -230,19 +241,43 @@ function playEp(plId, i, list) {
   $('#player').classList.add('show'); document.body.classList.add('has-player');
   $('#pTitle').innerHTML = `${esc(e.title)}<small>${esc(e.plname)}</small>`;
   store.set('plast', { pl: plId, i, list });
-  markEp();
+  markEp(); setMedia(e);
+}
+// 잠금 화면·이어폰 단추에서 조절 (휴대폰 잠금 화면, 컴퓨터 미디어 키)
+function setMedia(e) {
+  if (!('mediaSession' in navigator)) return;
+  try {
+    navigator.mediaSession.metadata = new MediaMetadata({ title: e.title, artist: e.plname, album: '테라와다불교 법보시 도서관 · 법문 바로 듣기', artwork: [{ src: '/images/og.jpg', sizes: '1200x630', type: 'image/jpeg' }] });
+  } catch (x) {}
 }
 function initPlayer() {
   const a = $('#pAudio');
   $('#pRate').value = String(store.get('prate', 1));
   $('#pAuto').checked = store.get('pauto', true);
-  $('#pPlay').onclick = () => { if (!PL.pl) { const l = store.get('plast'); if (l) playEp(l.pl, l.i, l.list); return; } a.paused ? a.play() : a.pause(); };
+  $('#pPlay').onclick = () => { if (PL.locked) return; if (!PL.pl) { const l = store.get('plast'); if (l) playEp(l.pl, l.i, l.list); return; } a.paused ? a.play() : a.pause(); };
   $('#pNext').onclick = () => { if (PL.pl && PL.i < PL.list.length - 1) playEp(PL.pl, PL.i + 1, PL.list); };
   $('#pPrev').onclick = () => { if (!PL.pl) return; if (a.currentTime > 3) a.currentTime = 0; else if (PL.i > 0) playEp(PL.pl, PL.i - 1, PL.list); };
   $('#pSeek').oninput = e => { if (a.duration) a.currentTime = a.duration * e.target.value / 100; };
   $('#pRate').onchange = e => { a.playbackRate = +e.target.value; store.set('prate', +e.target.value); };
   $('#pAuto').onchange = e => store.set('pauto', e.target.checked);
-  $('#pHide').onclick = () => { a.pause(); $('#player').classList.remove('show'); document.body.classList.remove('has-player'); };
+  $('#pHide').onclick = () => { if (PL.locked) return lockedMsg(); a.pause(); $('#player').classList.remove('show'); document.body.classList.remove('has-player'); };
+  // 잠금: 실수로 멈추거나 넘기지 않도록 (잠그면 화면도 켜 둠)
+  const lockedMsg = () => toast('잠겨 있습니다. 🔒 잠금 단추를 눌러 풀어 주세요');
+  const setLock = on => {
+    PL.locked = on; $('#player').classList.toggle('locked', on);
+    $('#pLock').textContent = on ? '🔒 잠김' : '🔓 잠금'; $('#pLock').setAttribute('aria-pressed', on);
+    ['#pPrev', '#pPlay', '#pNext', '#pSeek', '#pRate'].forEach(x => { $(x).disabled = on; });
+    wake(on && !a.paused, 'player');
+  };
+  $('#pLock').onclick = () => setLock(!PL.locked);
+  if ('mediaSession' in navigator) {
+    const ms = navigator.mediaSession, h = (k, f) => { try { ms.setActionHandler(k, f); } catch (e) {} };
+    h('play', () => a.play());
+    h('pause', () => { if (PL.locked) return; a.pause(); });
+    h('previoustrack', () => { if (!PL.locked) $('#pPrev').onclick(); });
+    h('nexttrack', () => { if (!PL.locked) $('#pNext').onclick(); });
+    h('seekto', d => { if (!PL.locked && d.seekTime != null) a.currentTime = d.seekTime; });
+  }
   let last = 0;
   a.ontimeupdate = () => {
     $('#pCur').textContent = fmtT(a.currentTime); $('#pDur').textContent = fmtT(a.duration);
@@ -250,7 +285,13 @@ function initPlayer() {
     if (PL.pl && Date.now() - last > 3000) { last = Date.now(); store.set('ppos-' + PL.list[PL.i].audio, a.currentTime); }
   };
   a.onplay = () => { $('#pPlay').textContent = '❚❚'; $('#pPlay').setAttribute('aria-label', '일시정지'); };
-  a.onpause = () => { $('#pPlay').textContent = '▶'; $('#pPlay').setAttribute('aria-label', '재생'); };
+  a.onpause = () => {
+    $('#pPlay').textContent = '▶'; $('#pPlay').setAttribute('aria-label', '재생');
+    // 잠겨 있는데 저절로 멈추면(이어폰 빠짐 등) 다시 재생
+    if (PL.locked && !a.ended && a.src) setTimeout(() => { if (PL.locked && a.paused && !a.ended) a.play().catch(() => {}); }, 400);
+    else wake(false, 'player');
+  };
+  a.addEventListener('play', () => { if (PL.locked) wake(true, 'player'); });
   a.onended = () => { if (PL.pl) store.set('ppos-' + PL.list[PL.i].audio, 0); if ($('#pAuto').checked && PL.pl && PL.i < PL.list.length - 1) playEp(PL.pl, PL.i + 1, PL.list); };
   a.onerror = () => { if (a.src) toast('이 법문을 불러오지 못했습니다. 다음 법문을 골라 주세요'); };
 }
@@ -327,7 +368,7 @@ async function initReaderPage() {
 }
 const pageName = p => p.label ? `${p.label}쪽` : `${p.n}번째 쪽`;
 function closeReader() { stopSpeak(); R = null; const el = $('#reader'); if (el) el.remove(); document.body.style.overflow = ''; }
-function exitReader() { const id = R && R.id; closeReader(); location.href = '/book/' + id + '/'; }
+function exitReader() { if (R && R.ttsLocked) { toast('듣기가 잠겨 있습니다. 🔒 잠김 단추를 눌러 풀어 주세요'); return; } const id = R && R.id; closeReader(); location.href = '/book/' + id + '/'; }
 const paras = t => String(t || '').split(/\n\s*\n/).map(s => s.replace(/\s*\n\s*/g, ' ').trim()).filter(Boolean);
 function markUl(s, n) {
   if (R.hl.length) return hl(s, R.hl);
@@ -375,7 +416,7 @@ function renderReader() {
     <div class="r-tools">
       ${R.toc.length ? '<button class="tbtn" data-panel="toc">목차</button>' : ''}
       <button class="tbtn" data-panel="font" aria-label="글씨 크기">가<span style="font-size:16px">가</span></button>
-      ${hasText ? `<button class="tbtn ${R.speaking ? 'on' : ''}" id="rSpeak">${R.speaking ? '■ 멈춤' : '▶ 듣기'}</button><button class="tbtn" data-panel="tts" aria-label="듣기 설정">듣기 설정</button>` : ''}
+      ${hasText && R.speaking ? `<button class="tbtn ${R.ttsLocked ? 'on' : ''}" id="rLock" aria-pressed="${!!R.ttsLocked}" title="잠그면 실수로 멈추지 않습니다">${R.ttsLocked ? '🔒 잠김' : '🔓 잠금'}</button>` : ''}${hasText ? `<button class="tbtn ${R.speaking ? 'on' : ''}" id="rSpeak" ${R.ttsLocked ? 'disabled' : ''}>${R.speaking ? '■ 멈춤' : '▶ 듣기'}</button><button class="tbtn" data-panel="tts" aria-label="듣기 설정">듣기 설정</button>` : ''}
       <button class="tbtn" data-panel="mode">화면</button>
       <button class="tbtn ${marked ? 'on' : ''}" id="rMark" aria-pressed="${marked}">${marked ? '★ 책갈피' : '☆ 책갈피'}</button>
       <button class="tbtn" data-panel="bm">책갈피 목록</button>
@@ -410,7 +451,7 @@ function renderReader() {
   store.set('pos-' + R.id, n);
   history.replaceState(history.state, '', `/read/${R.id}/${n}` + location.search);
 }
-function go(n) { if (!R) return; R.i = Math.max(0, Math.min(R.pages.length - 1, n - 1)); stopSpeak(); renderReader(); if (R.view === 'page') $('#rBody').scrollTop = 0; }
+function go(n) { if (!R) return; if (R.ttsLocked) { toast('듣기가 잠겨 있습니다. 🔒 잠김 단추를 눌러 풀어 주세요'); return; } R.i = Math.max(0, Math.min(R.pages.length - 1, n - 1)); stopSpeak(); renderReader(); if (R.view === 'page') $('#rBody').scrollTop = 0; }
 function bindReader() {
   const el = $('#reader');
   const reopen = id => $('#' + id).classList.add('open');
@@ -429,7 +470,8 @@ function bindReader() {
   $('#rMark').onclick = () => { const l = bms(), n = cur().n, k = l.findIndex(m => m.id === R.id && m.p === n); if (k > -1) { l.splice(k, 1); toast('책갈피를 지웠습니다'); } else { l.push({ id: R.id, t: R.title, p: n, pl: cur().label, note: '', d: today() }); toast(`${pageName(cur())}에 책갈피를 달았습니다`); } store.set('bm', l); renderReader(); };
   $('#bmSave').onclick = () => { const l = bms(), n = cur().n; let m = l.find(m => m.id === R.id && m.p === n); if (!m) { m = { id: R.id, t: R.title, p: n, pl: cur().label, d: today() }; l.push(m); } m.note = $('#bmNote').value.trim(); store.set('bm', l); renderReader(); reopen('p-bm'); toast('메모를 저장했습니다'); };
   $$('[data-bmdel]', el).forEach(b => b.onclick = () => { const l = bms(); l.splice(+b.dataset.bmdel, 1); store.set('bm', l); renderReader(); reopen('p-bm'); });
-  const sp = $('#rSpeak'); if (sp) sp.onclick = () => R.speaking ? stopSpeak(true) : speak();
+  const sp = $('#rSpeak'); if (sp) sp.onclick = () => { if (R.ttsLocked) return toast('잠겨 있습니다. 🔒 잠김 단추를 눌러 풀어 주세요'); R.speaking ? stopSpeak(true) : speak(); };
+  const lk = $('#rLock'); if (lk) lk.onclick = () => { R.ttsLocked = !R.ttsLocked; renderReader(); toast(R.ttsLocked ? '잠갔습니다. 실수로 멈추거나 닫히지 않습니다' : '잠금을 풀었습니다'); };
   $$('[data-tts]', el).forEach(inp => {
     const save = () => {
       const o = store.get('tts', {}), k = inp.dataset.tts;
@@ -615,8 +657,13 @@ function sayable(s, o = ttsOpt()) {
   let t = String(s || '');
   t = t.replace(/\[\^[^\]]+\]/g, ''); // 각주 표시
   // 한글 바로 뒤에 붙은 로마자 풀이(예: 위빳사나Vipassanā, 사야도Chanmyay Sayadaw)는 한 번만 읽도록 뺌
-  if (o.gloss) t = t.replace(new RegExp(`([가-힣])(?=[${LATIN}])`, 'g'), '$1 ');
-  if (!o.gloss) t = t.replace(new RegExp(`([가-힣])([${LATIN}][${LATIN}\\-]*(?:\\s+[${LATIN}][${LATIN}\\-]*)*)`, 'g'), (m, h, lat) => /[A-Z]/.test(lat[0]) || PALI_MARK.test(lat) || PALI_WORDS.has(lat.toLowerCase()) ? h : m);
+  // 한글 바로 뒤에 띄어 쓰지 않고 붙은 로마자는 앞 한글의 원어 풀이로 봄 (위빳사나Vipassanā, 도사dosa, 사야도Chanmyay Sayadaw)
+  //  - 풀이 읽기를 끄면 건너뜀, 켜면 빨리어 소리로 한 번 더 읽음
+  t = t.replace(new RegExp(`([가-힣])([${LATIN}][${LATIN}\\-]*(?:\\s+[${LATIN}][${LATIN}\\-]*)*)`, 'g'), (m, h, lat) => {
+    if (!o.gloss) return h;
+    const pali = PALI_MARK.test(lat) || /[a-z]/.test(lat[0]) || lat.split(/[\s-]+/).some(w => PALI_WORDS.has(w.toLowerCase()) || looksPali(w));
+    return h + ' ' + (pali ? (o.pali ? lat.split(/[\s-]+/).map(w => PALI(w) || w).join(' ') : '') : (o.en ? lat : ''));
+  });
   // 한글 뒤 괄호 안이 로마자·숫자뿐이면(원어 풀이) 뺌: 지도법사(Nāyaka Sayadaw)
   if (!o.gloss) t = t.replace(/([가-힣])\s?\(([^()가-힣]*)\)/g, (m, h, inner) => /[A-Za-zĀ-ž]/.test(inner) ? h : m);
   // 로마자 덩어리: 빨리어는 빨리어 소리로(또는 건너뜀), 영어는 그대로(또는 건너뜀)
@@ -646,6 +693,7 @@ function speak(fromK = 0, firstText = null) {
   if (!sentences.length) { if (R.i < R.pages.length - 1) { R.i++; renderReader(); setTimeout(() => speak(), 200); } return; }
   try { speechSynthesis.cancel(); } catch (e) {}
   if (!R.speaking) { R.ttsStart = Date.now(); R.ttsChapter = chapterOf(R.i + 1); }
+  wake(true, 'tts');
   R.speaking = true; renderReader(); let k = Math.min(fromK, sentences.length - 1), first = firstText;
   const pv = pickVoice(o), voice = pv.voice;
   const next = () => {
@@ -670,9 +718,10 @@ function speak(fromK = 0, firstText = null) {
   };
   next();
 }
-function stopSpeak(rerender) { try { speechSynthesis.cancel(); } catch (e) {} if (R) { const was = R.speaking; R.speaking = false; if (rerender && was) renderReader(); } }
+function stopSpeak(rerender) { try { speechSynthesis.cancel(); } catch (e) {} wake(false, 'tts'); if (R) { R.ttsLocked = false; const was = R.speaking; R.speaking = false; if (rerender && was) renderReader(); } }
 document.addEventListener('keydown', e => {
   if (!R || e.target.matches('input,select,textarea')) return;
+  if (R.ttsLocked && e.key !== 'Tab') { if ([' ', 'ArrowRight', 'ArrowLeft', 'Escape'].includes(e.key)) { e.preventDefault(); toast('듣기가 잠겨 있습니다'); } return; }
   if (e.key === 'ArrowRight') go(R.i + 2); else if (e.key === 'ArrowLeft') go(R.i);
   else if (e.key === ' ' && $('#rSpeak')) { e.preventDefault(); R.speaking ? stopSpeak(true) : speak(); }
   else if (e.key === 'Escape') { if ($$('#reader .panel.open').length) $$('#reader .panel').forEach(x => x.classList.remove('open')); else exitReader(); }
