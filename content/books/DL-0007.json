@@ -51,7 +51,7 @@
         "site": ""
       },
       "epub": {
-        "mode": "file",
+        "mode": "none",
         "url": "",
         "site": ""
       },

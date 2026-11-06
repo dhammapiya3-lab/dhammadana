@@ -107,7 +107,6 @@ collections:
           - name: pdf
             label: PDF (화면용)
             widget: object
-            collapsed: true
             fields:
               - { name: mode, label: 방식, widget: select, options: [{ label: "없음", value: none }, { label: "우리 저장소(R2)", value: file }, { label: "다른 사이트로 연결", value: link }], default: none }
               - { name: url, label: 주소, required: false, hint: "R2면 pdf/DL-0007/DL-0007_초판.pdf 처럼, 다른 사이트면 https:// 로 시작하는 주소" }
@@ -116,8 +115,6 @@ collections:
             label: PDF (인쇄용 / 인쇄용 본문)
             hint: 인쇄용 PDF가 따로 있을 때. 표지가 따로 있으면 여기는 본문을, 아래 '인쇄용 표지'에 표지를 넣습니다.
             widget: object
-            collapsed: true
-            required: false
             fields:
               - { name: mode, label: 방식, widget: select, options: [{ label: "없음", value: none }, { label: "우리 저장소(R2)", value: file }, { label: "다른 사이트로 연결", value: link }], default: none }
               - { name: url, label: 주소, required: false }
@@ -126,8 +123,6 @@ collections:
             label: PDF (인쇄용 표지)
             hint: 인쇄용 표지 PDF가 본문과 따로 있을 때
             widget: object
-            collapsed: true
-            required: false
             fields:
               - { name: mode, label: 방식, widget: select, options: [{ label: "없음", value: none }, { label: "우리 저장소(R2)", value: file }, { label: "다른 사이트로 연결", value: link }], default: none }
               - { name: url, label: 주소, required: false }
@@ -135,7 +130,6 @@ collections:
           - name: epub
             label: EPUB
             widget: object
-            collapsed: true
             fields:
               - { name: mode, label: 방식, widget: select, options: [{ label: "없음", value: none }, { label: "우리 저장소(R2)", value: file }, { label: "다른 사이트로 연결", value: link }], default: none }
               - { name: url, label: 주소, required: false }
