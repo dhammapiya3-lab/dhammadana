@@ -25,7 +25,7 @@ const norm = s => String(s || '').normalize('NFD').replace(/[̀-̣̱ͯ̇]/g, '')
 
 /* ---------- 화면 모드 ---------- */
 function applyMode(m) {
-  const r = document.documentElement; r.classList.remove('mode-day', 'mode-mono', 'mode-night');
+  const r = document.documentElement; r.classList.remove('mode-day', 'mode-mono', 'mode-night', 'mode-contrast');
   if (m !== 'auto') r.classList.add('mode-' + m);
   store.set('mode', m); $$('#modePop button').forEach(b => b.classList.toggle('on', b.dataset.mode === m));
 }
@@ -35,6 +35,15 @@ function initHeader() {
   $$('button', pop).forEach(b => b.onclick = () => { applyMode(b.dataset.mode); pop.classList.remove('open'); btn.setAttribute('aria-expanded', false); });
   document.addEventListener('click', () => pop.classList.remove('open'));
   applyMode(store.get('mode', 'auto'));
+  const fb = $('#fsBtn'), fp = $('#fsPop');
+  const setFs = n => { const r = document.documentElement; r.classList.remove('sfs-1', 'sfs-2'); if (n > 0) r.classList.add('sfs-' + n); store.set('sitefs', n); $$('button', fp).forEach(b => { b.classList.toggle('on', +b.dataset.sfs === n); b.setAttribute('aria-checked', +b.dataset.sfs === n); }); };
+  if (fb) {
+    fb.onclick = e => { e.stopPropagation(); pop.classList.remove('open'); const o = fp.classList.toggle('open'); fb.setAttribute('aria-expanded', o); };
+    btn.addEventListener('click', () => fp.classList.remove('open'));
+    $$('button', fp).forEach(b => { b.setAttribute('role', 'menuitemradio'); b.onclick = () => { setFs(+b.dataset.sfs); fp.classList.remove('open'); fb.setAttribute('aria-expanded', false); }; });
+    document.addEventListener('click', () => fp.classList.remove('open'));
+    setFs(+store.get('sitefs', 0) || 0);
+  }
 }
 
 /* ---------- 부드러운 이동 (재생기 유지) ---------- */
@@ -482,7 +491,7 @@ function renderReader() {
        <div class="row">글꼴 <span class="seg"><button data-font="serif" class="${R.font === 'serif' ? 'on' : ''}">명조</button><button data-font="sans" class="${R.font === 'sans' ? 'on' : ''}">고딕</button></span></div>
        <div class="row">글 너비 <span class="seg">${[[28, '좁게'], [36, '보통'], [46, '넓게'], [70, '화면 가득']].map(([v, l]) => `<button data-mw="${v}" class="${R.mw === v ? 'on' : ''}">${l}</button>`).join('')}</span></div>`}</div>
     <div class="panel" id="p-tts">${ttsPanel()}</div>
-    <div class="panel" id="p-mode"><h5>화면 모드</h5><div class="seg">${[['day', '기본'], ['mono', '흑백'], ['night', '밤']].map(([k, v]) => `<button data-rmode="${k}" class="${store.get('mode', 'auto') === k ? 'on' : ''}">${v}</button>`).join('')}</div><p class="note">고른 모드는 사이트 전체에 적용되고 다음에 와도 유지됩니다.</p></div>
+    <div class="panel" id="p-mode"><h5>화면 모드</h5><div class="seg">${[['day', '기본'], ['mono', '흑백'], ['night', '밤'], ['contrast', '고대비']].map(([k, v]) => `<button data-rmode="${k}" class="${store.get('mode', 'auto') === k ? 'on' : ''}">${v}</button>`).join('')}</div><p class="note">고른 모드는 사이트 전체에 적용되고 다음에 와도 유지됩니다.</p></div>
     <div class="panel" id="p-ul"><h5>이 책의 밑줄</h5><ul>${uls().filter(h => h.id === R.id).sort((a, b) => a.p - b.p).map(h => `<li style="display:block"><button class="link" data-go="${h.p}">${esc(h.pl || h.p)}쪽</button><div class="quote" style="font-size:13.5px">${esc(h.text)}</div>${h.note ? `<div class="small muted">${esc(h.note)}</div>` : ''}</li>`).join('') || '<li class="muted">글을 끌어서 고르면 밑줄을 그을 수 있습니다.</li>'}</ul>
       <div class="row"><a class="tbtn" href="/mynotes/">내 서재에서 모두 보기</a></div></div>
     <div class="panel" id="p-uledit"><h5>밑줄</h5><div class="quote" id="ulText" style="font-size:13.5px"></div>

@@ -184,7 +184,7 @@ function layout({ title, nav = '', page = '', body, desc = '', image = '' }) {
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css?v=${V.css}">
-<script>try{var m=localStorage.getItem('dd-mode');m=m?JSON.parse(m):'auto';if(m!=='auto')document.documentElement.classList.add('mode-'+m)}catch(e){}</script>
+<script>try{var m=localStorage.getItem('dd-mode');m=m?JSON.parse(m):'auto';if(m!=='auto')document.documentElement.classList.add('mode-'+m);var f=JSON.parse(localStorage.getItem('dd-sitefs')||'0');if(f>0)document.documentElement.classList.add('sfs-'+f)}catch(e){}</script>
 </head>
 <body data-page="${page}">
 <a class="skip" href="#app">본문으로 건너뛰기</a>
@@ -195,7 +195,9 @@ function layout({ title, nav = '', page = '', body, desc = '', image = '' }) {
       <a class="icon-btn" href="/mynotes/">내 서재</a>
       <a class="icon-btn" href="/search/"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>검색</a>
       <div class="mode-menu"><button class="icon-btn" id="modeBtn" aria-haspopup="true" aria-expanded="false">화면 모드</button>
-        <div class="mode-pop" id="modePop" role="menu"><button data-mode="auto">기기 설정 따르기</button><button data-mode="day">기본 (상아빛)</button><button data-mode="mono">흑백</button><button data-mode="night">밤 모드</button></div></div>
+        <div class="mode-pop" id="modePop" role="menu"><button data-mode="auto">기기 설정 따르기</button><button data-mode="day">기본 (상아빛)</button><button data-mode="mono">흑백</button><button data-mode="night">밤 모드</button><button data-mode="contrast">고대비 (검정 바탕·노란 글씨)</button></div></div>
+      <div class="mode-menu"><button class="icon-btn" id="fsBtn" aria-haspopup="true" aria-expanded="false" aria-label="글자 크기">가<span style="font-size:1.25em">가</span></button>
+        <div class="mode-pop" id="fsPop" role="menu"><button data-sfs="0">글자 보통</button><button data-sfs="1" style="font-size:16px">글자 크게</button><button data-sfs="2" style="font-size:18px">글자 아주 크게</button></div></div>
     </div>
   </div>
   <nav class="main" aria-label="주 메뉴">${NAV.map(([h, l, k]) => `<a href="${h}" data-nav="${k}"${k === nav ? ' class="on" aria-current="page"' : ''}>${l}</a>`).join('')}</nav>

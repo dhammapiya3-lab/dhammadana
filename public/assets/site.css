@@ -8,12 +8,12 @@
   color-scheme:light;
 }
 @media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]):not(.mode-mono):not(.mode-day){
+  :root:not([data-theme="light"]):not(.mode-mono):not(.mode-day):not(.mode-contrast){
     --paper:#1E1A17; --paper-2:#26211D; --ink:#ECE4D8; --ink-soft:#AFA496; --line:#3A332D;
     --robe:#D69A6A; --robe-soft:#3A2B20; --leaf:#A9B596; --leaf-soft:#2C3128; --card:#231F1B; color-scheme:dark;
   }
 }
-:root[data-theme="dark"]:not(.mode-mono):not(.mode-day), :root.mode-night{
+:root[data-theme="dark"]:not(.mode-mono):not(.mode-day):not(.mode-contrast), :root.mode-night{
   --paper:#1E1A17; --paper-2:#26211D; --ink:#ECE4D8; --ink-soft:#AFA496; --line:#3A332D;
   --robe:#D69A6A; --robe-soft:#3A2B20; --leaf:#A9B596; --leaf-soft:#2C3128; --card:#231F1B; color-scheme:dark;
 }
@@ -636,3 +636,30 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 .reflow.big .ch-head h3{font-size:1.25em}
 .reflow.big .ch-nav, .reflow.big .ch-nav *{font-size:max(15px,.7em)}
 .reflow.big table{font-size:.8em}
+
+/* ---------- 고대비 모드 (검정 바탕·노란 글씨) ---------- */
+:root.mode-contrast{
+  --paper:#000000; --paper-2:#141414; --ink:#FFE600; --ink-soft:#FFFFFF; --line:#8A8A8A;
+  --robe:#7FE7FF; --robe-soft:#06343F; --leaf:#FFFFFF; --leaf-soft:#1C1C1C; --card:#000000; color-scheme:dark;
+}
+:root.mode-contrast a{text-decoration:underline;text-underline-offset:3px}
+:root.mode-contrast .icon-btn,:root.mode-contrast .tbtn,:root.mode-contrast .btn,:root.mode-contrast button{border-color:#FFE600}
+:root.mode-contrast mark{background:#7FE7FF;color:#000}
+:root.mode-contrast :focus-visible{outline:3px solid #7FE7FF !important;outline-offset:2px}
+:root.mode-contrast img.cover-img{filter:contrast(1.1)}
+:root.mode-contrast footer.site .logo-img{mix-blend-mode:normal;filter:invert(1) brightness(2)}
+:root.mode-contrast .page-sheet{filter:invert(1) hue-rotate(180deg) contrast(1.2)}
+:root.mode-contrast .muted,:root.mode-contrast .note,:root.mode-contrast small{color:#FFFFFF !important}
+
+/* ---------- 사이트 전체 글자 크기 ---------- */
+:root.sfs-1 body{zoom:1.2}
+:root.sfs-2 body{zoom:1.45}
+/* 글로 읽기 본문은 따로 글자 크기를 정하므로 겹쳐 커지지 않게 */
+:root.sfs-1 .reflow{zoom:calc(1 / 1.2)}
+:root.sfs-2 .reflow{zoom:calc(1 / 1.45)}
+@media (max-width:640px){
+  .head-tools{flex-wrap:wrap;justify-content:flex-start !important}
+  .head-tools .icon-btn{padding:0 11px}
+  .mode-menu .mode-pop{right:auto;left:0}
+  .head-tools .mode-menu:last-child .mode-pop{left:auto;right:0}
+}
