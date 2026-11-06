@@ -40,10 +40,14 @@
         "url": "",
         "site": ""
       },
-      "pdf_print": null,
-      "pdf_cover": null,
+      "pdf_print": {
+        "mode": "none"
+      },
+      "pdf_cover": {
+        "mode": "none"
+      },
       "epub": {
-        "mode": "file",
+        "mode": "none",
         "url": "",
         "site": ""
       },

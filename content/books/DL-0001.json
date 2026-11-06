@@ -42,7 +42,13 @@
       "permissions": [
         "amumaldeul-self"
       ],
-      "note": ""
+      "note": "",
+      "pdf_print": {
+        "mode": "none"
+      },
+      "pdf_cover": {
+        "mode": "none"
+      }
     }
   ]
 }
