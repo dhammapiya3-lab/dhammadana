@@ -196,6 +196,7 @@ async function runSearch() {
   const { terms, group } = expand(q, D.variants);
   const has = s => { const n = norm(s); return terms.some(t => n.includes(t)); };
   const res = [];
+  const isToc = t => { const ls = String(t || '').split('\n').map(x => x.trim()).filter(Boolean); return /^(차례|목차|contents)$/i.test(ls[0] || '') || (ls.length > 3 && ls.filter(x => /[|·.\s]\s*\d{1,3}$/.test(x)).length / ls.length > 0.5); };
   for (const b of D.books) {
     const why = [];
     if ((scope === 'all' || scope === 'title') && [b.title, b.subtitle, b.orig].some(has)) why.push('제목');
@@ -205,21 +206,36 @@ async function runSearch() {
     if ((scope === 'all' || scope === 'topic') && [...b.topics, ...b.main].some(has)) why.push('주제');
     let body = [];
     if ((scope === 'all' || scope === 'body') && b.manifest) {
-      try { const m = await manifest(b.manifest); body = (m.pages || []).map((p, i) => ({ ...p, n: i + 1 })).filter(p => p.text && has(p.text)).slice(0, 5).map(p => ({ n: p.n, label: p.label ? p.label + '쪽' : p.n + '번째 쪽', s: snippet(p.text, terms) })); } catch (e) {}
-      if (body.length) why.push('본문');
+      try {
+        const m = await manifest(b.manifest);
+        const hits = (m.pages || []).map((p, i) => ({ ...p, n: i + 1 })).filter(p => p.text && has(p.text));
+        if (hits.some(p => isToc(p.text)) && scope === 'all') why.push('목차');
+        body = hits.filter(p => !isToc(p.text)).slice(0, 60).map(p => ({ n: p.n, label: p.label ? p.label + '쪽' : p.n + '번째', s: snippet(p.text.replace(/\s+/g, ' '), terms) }));
+      } catch (e) {}
     }
     if ((scope === 'all') && has(b.desc) && !why.length) why.push('소개');
-    if (why.length) res.push({ b, why, body });
+    if (why.length || body.length) res.push({ b, why, body });
   }
   const hq = encodeURIComponent(terms.join('|'));
+  const info = res.filter(r => r.why.length), inBody = res.filter(r => r.body.length);
+  const nBody = inBody.reduce((a, r) => a + r.body.length, 0);
+  const thumb = b => `<a class="sr-cov" href="/book/${b.id}/" tabindex="-1" aria-hidden="true">${b.cover ? `<img src="${esc(b.cover)}" alt="" loading="lazy">` : ''}</a>`;
+  const infoHtml = info.map(({ b, why }) => `<div class="sr-book">${thumb(b)}<div class="sr-bi">
+      <a class="sr-t" href="/book/${b.id}/">${hl(b.title, terms)}</a>
+      <div class="sr-m">${hl(b.byline, terms)}${b.tr ? ' | ' + hl(b.tr, terms) : ''}</div>
+      ${[...b.topics].some(t => terms.some(x => norm(t).includes(x))) ? `<div class="sr-m">주제: ${b.topics.map(t => hl(t, terms)).join(', ')}</div>` : ''}
+      <div class="sr-why">${why.map(w => `<span>${w}에서 찾음</span>`).join('')}</div></div></div>`).join('');
+  const bodyHtml = inBody.map(({ b, body }) => `<div class="sr-group">
+      <div class="sr-gh">${thumb(b)}<div><a class="sr-t" href="/book/${b.id}/">${esc(b.title)}</a><div class="sr-m">${body.length}${body.length >= 60 ? '곳 이상' : '곳'}</div></div></div>
+      <ol class="sr-hits">${body.map((x, i) => `<li${i >= 4 ? ' hidden' : ''}><a href="/read/${b.id}/${x.n}?hl=${hq}"><span class="sr-pg">${esc(x.label)}</span><span class="sr-s">${hl(x.s, terms)}</span></a></li>`).join('')}</ol>
+      ${body.length > 4 ? `<button class="sr-more">${body.length - 4}곳 더 보기</button>` : ''}</div>`).join('');
   box.innerHTML = (group ? `<div class="variant-note"><span>‘${esc(q)}’와 같은 말인 ${group.filter(x => norm(x) !== norm(q)).map(x => `‘${esc(x)}’`).join(', ')}도 함께 찾았습니다.</span><button id="exactBtn">입력한 표기만 찾기</button></div>`
       : exact ? `<div class="variant-note"><span>입력한 표기 ‘${esc(q)}’만 찾았습니다.</span><button id="exactBtn">비슷한 표기도 찾기</button></div>` : '')
-    + `<p class="small muted" style="margin:14px 0 4px">${res.length}권을 찾았습니다.</p>`
-    + (res.length ? res.map(({ b, why, body }) => `<div class="hit"><a class="h-t" href="/book/${b.id}/">${hl(b.title, terms)}</a>
-      <div class="h-m">${hl(b.byline, terms)}${b.tr ? ' | ' + hl(b.tr, terms) : ''} · <span class="pill">${why.join(' · ')}</span></div>
-      ${[...b.topics].some(t => terms.some(x => norm(t).includes(x))) ? `<div class="h-m">주제: ${b.topics.map(t => hl(t, terms)).join(', ')}</div>` : ''}
-      ${body.map(x => `<div class="h-s"><a href="/read/${b.id}/${x.n}?hl=${hq}">${esc(x.label)}</a> ${hl(x.s, terms)}</div>`).join('')}</div>`).join('')
+    + (res.length ? `<div class="sr-sum">${info.length ? `<a href="#srInfo">책 <b>${info.length}</b>권</a>` : ''}${inBody.length ? `<a href="#srBody">본문 <b>${nBody}</b>곳${inBody.some(r => r.body.length >= 60) ? ' 이상' : ''}</a>` : ''}</div>`
+      + (info.length ? `<section id="srInfo" class="sr-sec"><h2 class="sr-h">📚 책 정보에서 찾음 <small>제목·저자·옮긴이·주제</small></h2>${infoHtml}</section>` : '')
+      + (inBody.length ? `<section id="srBody" class="sr-sec"><h2 class="sr-h">📖 책 본문에서 찾음 <small>누르면 그 쪽을 바로 엽니다</small></h2>${bodyHtml}</section>` : '')
       : `<p class="muted">찾는 자료가 없습니다. 다른 표기나 더 짧은 말로 찾아보세요. <a href="/library/">도서관에서 둘러보기 →</a></p>`);
+  $$('.sr-more', box).forEach(btn => btn.onclick = () => { $$('li[hidden]', btn.previousElementSibling).forEach(li => li.hidden = false); btn.remove(); });
   const eb = $('#exactBtn'); if (eb) eb.onclick = () => { exact = !exact; runSearch(); };
 }
 
