@@ -205,7 +205,7 @@ collections:
         label_singular: 그림
         widget: list
         required: false
-        hint: "본문에 넣을 그림을 여기에 올리고, 본문의 원하는 자리에 빈 줄을 두고 ![그림 설명](/uploads/파일이름.jpg) 처럼 적습니다. 표는 | 칸 | 칸 | 처럼 줄마다 세로줄로 나눠 적습니다."
+        hint: "본문에 넣을 그림을 여기에 올리고, 본문의 원하는 자리에 빈 줄을 두고 ![그림 설명](/uploads/파일이름.jpg) 처럼 적습니다(설명을 화면에 보이지 않게 하려면 ![#그림 설명](…) 처럼 # 을 붙임). 표는 | 칸 | 칸 | 처럼 줄마다 세로줄로 나눠 적습니다."
         fields:
           - { name: image, label: 그림, widget: image }
           - { name: caption, label: 설명, required: false }
