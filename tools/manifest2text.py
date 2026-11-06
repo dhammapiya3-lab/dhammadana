@@ -11,6 +11,7 @@
 import argparse, json, os, re
 ap = argparse.ArgumentParser()
 ap.add_argument('manifest'); ap.add_argument('--header', default='')
+ap.add_argument('--drop-title', default='', help='책 맨 앞(첫 글이 있는 쪽 첫머리)에 인쇄된 책 제목을 뺌 (운영자 요청)')
 ap.add_argument('--keep-order', action='store_true', help='쪽 안의 순서를 그대로 둠 (pdf2reader 에서 --visual-order 로 이미 인쇄 순서로 놓았을 때)')
 a = ap.parse_args()
 m = json.load(open(a.manifest, encoding='utf-8'))
@@ -32,9 +33,15 @@ def split_heads(paras, titles):
     return out
 
 parts = []
+title_done = not a.drop_title
 for i, p in enumerate(m['pages']):
     label = p.get('label') or str(i + 1)
     paras = [x for x in (p.get('text') or '').strip().split('\n\n') if x.strip()]
+    if not title_done and paras:
+        first = paras[0].split('\n')
+        if re.sub(r'\s', '', first[0].replace('## ', '')) == re.sub(r'\s', '', a.drop_title):
+            first = first[1:]; paras = (['\n'.join(first)] if first else []) + paras[1:]
+        title_done = True
     if a.header:
         paras = [x for x in paras if x.strip() != f'{a.header} {label}']
         # 아래쪽 머리글이 마지막 줄에 붙어 버린 경우: '…택죽음과 재생 시의 업 77' → '…택'
