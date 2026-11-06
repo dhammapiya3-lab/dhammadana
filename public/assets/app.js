@@ -203,6 +203,7 @@ async function runSearch() {
     if (scope === 'all' && b.lang && has(b.lang) && !why.length) why.push('원서 언어');
     if ((scope === 'all' || scope === 'author') && [b.byline, b.teacher, b.teacherRoman, b.tradition, ...(b.teacherAliases || [])].some(has)) why.push('스승·저자');
     if ((scope === 'all' || scope === 'tr') && has(b.tr)) why.push('옮긴이');
+    const qd = q.replace(/[^0-9xX]/g, ''); if (scope === 'all' && qd.length >= 10 && (b.isbn || []).some(x => x.replace(/[^0-9xX]/g, '') === qd)) why.push('ISBN');
     if ((scope === 'all' || scope === 'topic') && [...b.topics, ...b.main].some(has)) why.push('주제');
     let body = [];
     if ((scope === 'all' || scope === 'body') && b.manifest) {
