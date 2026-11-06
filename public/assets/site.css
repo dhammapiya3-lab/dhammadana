@@ -613,3 +613,15 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 .sr-pg{flex:0 0 auto;align-self:flex-start;margin-top:2px;font-size:12px;font-weight:600;color:var(--robe);border:1px solid currentColor;border-radius:6px;padding:0 7px;line-height:1.7;min-width:3.4em;text-align:center}
 .sr-s{min-width:0;word-break:keep-all;overflow-wrap:anywhere}
 .sr-more{margin-top:8px;width:100%;border:1px solid var(--line);background:transparent;border-radius:8px;padding:8px;cursor:pointer;color:var(--ink-soft);font-size:13.5px}
+
+/* ---------- 회원 자료실 ---------- */
+#membersRoot{padding:0 0 60px}
+.mb-group{margin-top:24px}
+.mb-h{font-size:17px;margin:0 0 8px;padding-bottom:8px;border-bottom:2px solid var(--line)}
+.mb-list{list-style:none;margin:0;padding:0}
+.mb-list li{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line)}
+.mb-ic{font-size:22px;line-height:1.2}
+.mb-b{flex:1;min-width:0;overflow-wrap:anywhere}
+.mb-b a{font-weight:600}
+.mb-b audio{width:100%;margin-top:8px}
+.mb-dl{flex:0 0 auto;border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px;text-decoration:none;color:var(--ink)}

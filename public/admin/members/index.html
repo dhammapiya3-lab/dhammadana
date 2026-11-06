@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>회원 자료실 관리 · 관리자</title>
+<link rel="icon" href="/images/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+  body{background:var(--paper)}
+  .up{max-width:680px;margin:0 auto;padding:30px 18px 80px}
+  .up h1{font-size:26px;margin:0 0 4px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-top:18px}
+  .card h2{font-size:16px;margin:0 0 12px}
+  .row{display:flex;flex-direction:column;gap:6px;margin:12px 0}
+  .row label{font-size:14px;font-weight:500}
+  select,input[type=password],input[type=text]{height:44px;border:1px solid var(--line);border-radius:8px;padding:0 12px;background:var(--paper);font-size:15px;width:100%}
+  .seg2{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+  .seg2 label{flex:1;line-height:1.3;border:1px solid var(--line);border-radius:8px;padding:10px;text-align:center;cursor:pointer;font-size:15px}
+  .seg2 input{display:none}
+  .seg2 label:has(input:checked){border-color:var(--robe);background:var(--robe-soft);color:var(--robe);font-weight:600}
+  .drop{border:2px dashed var(--line);border-radius:12px;padding:30px 16px;text-align:center;cursor:pointer;color:var(--ink-soft)}
+  .drop.over{border-color:var(--robe);background:var(--robe-soft)}
+  .drop b{color:var(--ink)}
+  progress{width:100%;height:14px;accent-color:var(--robe)}
+  .msg{border-radius:8px;padding:12px 14px;font-size:14.5px;margin-top:14px;line-height:1.6}
+  .msg.ok{background:var(--leaf-soft);color:var(--leaf)}
+  .msg.err{background:#F6E1DC;color:#8A2E1C}
+  .note{font-size:13px;color:var(--ink-soft);line-height:1.6}
+  .top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+  .fl{list-style:none;margin:0;padding:0}
+  .fl li{display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
+  .fl li span{flex:1;min-width:0;overflow-wrap:anywhere}
+  .fl .fd{font-weight:600;background:var(--leaf-soft);padding:6px 8px;border-radius:6px;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="up">
+  <div class="top"><a href="/admin/">← 관리자 화면</a><a href="/members/" target="_blank" rel="noopener">회원 자료실 보기 ↗</a></div>
+  <h1 style="margin-top:18px">회원 자료실 관리</h1>
+  <p class="note">여기 올린 파일은 <b>회원 전용 창고</b>에 들어가고, 허락받은 분이 로그인해야만 볼 수 있습니다. 공개 파일 저장소(files.dhammadana.kr)와는 따로 떨어져 있습니다.<br>들어올 사람(이메일) 허락·빼기는 Cloudflare 화면의 Access 정책에서 합니다.</p>
+
+  <div class="card" id="tokCard" hidden>
+    <h2>관리자 열쇠</h2>
+    <p class="note">관리자 화면에 로그인할 때 쓴 GitHub 열쇠(github_pat_…)를 한 번 넣어 주세요. 이 브라우저에만 저장됩니다.</p>
+    <div class="row"><input type="password" id="tok" placeholder="github_pat_…" autocomplete="off"></div>
+    <button class="btn" id="tokSave">확인</button>
+    <div id="tokMsg"></div>
+  </div>
+
+  <div id="main" hidden>
+    <div class="card">
+      <h2>1. 폴더 이름</h2>
+      <p class="note">자료를 묶을 이름입니다. 예: 수행 모임 자료, 번역 원고. 비워 두면 '자료'에 들어갑니다.</p>
+      <div class="row"><input type="text" id="folder" list="folders" placeholder="예: 수행 모임 자료"><datalist id="folders"></datalist></div>
+    </div>
+    <div class="card">
+      <h2>2. 파일 올리기</h2>
+      <div class="drop" id="drop" tabindex="0" role="button"><b>여기를 눌러 파일을 고르거나</b><br>파일을 끌어다 놓으세요 (여러 개 가능)<br><span class="note">PDF·EPUB·한글·워드·mp3·사진 등, 한 파일 100MB까지</span></div>
+      <input type="file" id="file" multiple hidden>
+      <div id="picked" class="note" style="margin-top:10px"></div>
+      <button class="btn" id="go" style="margin-top:12px;width:100%" disabled>올리기</button>
+      <progress id="prog" max="100" value="0" hidden style="margin-top:12px"></progress>
+      <div id="out"></div>
+    </div>
+    <div class="card">
+      <h2>올라와 있는 자료</h2>
+      <p class="note">지울 파일을 골라 '고른 파일 지우기'를 누르세요. 지운 파일은 되살릴 수 없습니다.</p>
+      <ul class="fl" id="list"><li class="note">불러오는 중…</li></ul>
+      <button class="btn" id="del" style="margin-top:12px" disabled>고른 파일 지우기</button>
+      <div id="dout"></div>
+    </div>
+    <p class="note" style="margin-top:18px"><button class="link-btn" id="logout">열쇠 지우기</button></p>
+  </div>
+</div>
+<script>
+(function(){
+const API='https://api.github.com/repos/dhammapiya3-lab/dhammadana';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const size=n=>n>1048576?(n/1048576).toFixed(1)+'MB':Math.max(1,Math.round(n/1024))+'KB';
+let TOKEN='', FILES=[];
+function findToken(){
+  try{ const t=localStorage.getItem('dd-gh-token'); if(t) return t; }catch(e){}
+  try{ for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if(!/sveltia/i.test(k)) continue;
+    const v=localStorage.getItem(k); const m=v&&v.match(/"token"\s*:\s*"([^"]+)"/); if(m) return m[1]; } }catch(e){}
+  return '';
+}
+async function check(t){ const r=await fetch(API,{headers:{authorization:'Bearer '+t,accept:'application/vnd.github+json'}}); if(!r.ok) return false; const j=await r.json(); return !!(j.permissions&&(j.permissions.push||j.permissions.admin)); }
+async function start(){ TOKEN=findToken(); if(TOKEN&&await check(TOKEN)){ $('#main').hidden=false; load(); } else $('#tokCard').hidden=false; }
+$('#tokSave').onclick=async()=>{ const t=$('#tok').value.trim(); $('#tokMsg').innerHTML='<p class="note">확인 중…</p>';
+  if(await check(t)){ TOKEN=t; try{localStorage.setItem('dd-gh-token',t)}catch(e){} $('#tokCard').hidden=true; $('#main').hidden=false; load(); }
+  else $('#tokMsg').innerHTML='<div class="msg err">이 열쇠로는 사이트를 고칠 수 없습니다.</div>'; };
+$('#logout').onclick=()=>{try{localStorage.removeItem('dd-gh-token')}catch(e){} location.reload();};
+const api=(opt={})=>fetch('/api/members',{...opt,headers:{authorization:'Bearer '+TOKEN,...(opt.headers||{})}});
+
+async function load(){
+  const r=await api(); const j=await r.json().catch(()=>({}));
+  if(!r.ok){ $('#list').innerHTML=`<li class="msg err">${esc(j.error||'목록을 불러오지 못했습니다.')}</li>`; return; }
+  const g={}; (j.files||[]).sort((a,b)=>a.key.localeCompare(b.key,'ko')).forEach(f=>{const i=f.key.lastIndexOf('/'); const d=i>0?f.key.slice(0,i):''; (g[d]=g[d]||[]).push(f);});
+  $('#folders').innerHTML=Object.keys(g).filter(Boolean).map(d=>`<option value="${esc(d)}">`).join('');
+  $('#list').innerHTML=Object.keys(g).length?Object.keys(g).map(d=>`<li class="fd">📁 ${esc(d||'자료')}</li>`+g[d].map(f=>`<li><input type="checkbox" value="${esc(f.key)}"><span>${esc(f.key.split('/').pop())}</span><small class="note">${size(f.size)}</small></li>`).join('')).join(''):'<li class="note">아직 올라온 자료가 없습니다.</li>';
+  document.querySelectorAll('#list input').forEach(c=>c.onchange=()=>{$('#del').disabled=!document.querySelector('#list input:checked');});
+}
+const pick=fs=>{ FILES=[...fs]; $('#picked').innerHTML=FILES.map(f=>esc(f.name)+' ('+size(f.size)+')').join('<br>'); $('#go').disabled=!FILES.length; };
+$('#drop').onclick=()=>$('#file').click(); $('#drop').onkeydown=e=>{if(e.key==='Enter'||e.key===' ')$('#file').click();};
+$('#file').onchange=e=>pick(e.target.files);
+['dragover','dragenter'].forEach(t=>$('#drop').addEventListener(t,e=>{e.preventDefault();$('#drop').classList.add('over');}));
+['dragleave','drop'].forEach(t=>$('#drop').addEventListener(t,e=>{e.preventDefault();$('#drop').classList.remove('over');}));
+$('#drop').addEventListener('drop',e=>pick(e.dataTransfer.files));
+const clean=s=>s.normalize('NFC').replace(/[\\/]/g,'-').replace(/[\x00-\x1f]/g,'').trim();
+$('#go').onclick=async()=>{
+  const folder=($('#folder').value||'').split('/').map(clean).filter(x=>x&&x!=='.'&&x!=='..').join('/')||'자료';
+  $('#go').disabled=true; $('#prog').hidden=false; let ok=0, bad=[];
+  for(let i=0;i<FILES.length;i++){ const f=FILES[i]; $('#prog').value=Math.round(i/FILES.length*100);
+    const key=folder+'/'+clean(f.name);
+    try{ const r=await api({method:'PUT',headers:{'x-key':encodeURIComponent(key)},body:f}); const j=await r.json().catch(()=>({})); if(r.ok) ok++; else bad.push(f.name+': '+(j.error||r.status)); }catch(e){ bad.push(f.name+': 연결 오류'); } }
+  $('#prog').value=100; $('#out').innerHTML=`<div class="msg ${bad.length?'err':'ok'}">${ok}개를 '${esc(folder)}' 폴더에 올렸습니다.${bad.length?'<br>올리지 못한 파일:<br>'+bad.map(esc).join('<br>'):''}</div>`;
+  FILES=[]; $('#picked').innerHTML=''; $('#file').value=''; load();
+};
+$('#del').onclick=async()=>{
+  const keys=[...document.querySelectorAll('#list input:checked')].map(c=>c.value); if(!keys.length) return;
+  if(!confirm(keys.length+'개 파일을 지울까요? 되살릴 수 없습니다.')) return;
+  const r=await api({method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({delete:keys})}); const j=await r.json().catch(()=>({}));
+  $('#dout').innerHTML=r.ok?`<div class="msg ok">${j.deleted}개를 지웠습니다.</div>`:`<div class="msg err">${esc(j.error||'지우지 못했습니다.')}</div>`; load();
+};
+start();
+})();
+</script>
+</body>
+</html>
