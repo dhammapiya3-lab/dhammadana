@@ -29,6 +29,7 @@ ap.add_argument('--quality', type=int, default=80)
 ap.add_argument('--visible-only', action='store_true', help='화면에 보이지 않는 숨은 글(InDesign 에 남은 옛 글 등)은 빼고 읽기')
 ap.add_argument('--footnotes', action='store_true', help='작은 글씨 위첨자 숫자는 [^번호], 각주 줄은 [^번호]: 로 표시')
 ap.add_argument('--headings', action='store_true', help='본문보다 큰 글씨 줄은 소제목(## )으로 표시')
+ap.add_argument('--visual-order', action='store_true', help='줄을 쪽에 인쇄된 위치(위→아래) 순서로 다시 놓기 (PDF 안의 저장 순서가 인쇄 순서와 다를 때)')
 ap.add_argument('--no-text', action='store_true', help='본문 글을 넣지 않음 (그림만)')
 a = ap.parse_args()
 
@@ -130,6 +131,30 @@ def add_hmarks(t, idx):
         out.append((HMARK if cont else HSTART) + l)
     return '\r\n'.join(out)
 
+def visual_order(tp, raw, t, full):
+    """줄들을 인쇄된 위치(위→아래, 같은 높이면 왼쪽→오른쪽) 순서로 놓습니다. 줄 안의 글자 순서는 그대로."""
+    n = tp.count_chars()
+    if ''.join(tp.get_text_range(i, 1) for i in range(n)) != raw: return t, full
+    rl = raw.split('\r\n'); tl = t.split('\r\n')
+    if len(rl) != len(tl): return t, full
+    keys, pos = [], 0
+    for li, ln in enumerate(rl):
+        bs, xs = [], []
+        for k, c in enumerate(ln):
+            if c.strip():
+                try: l, b, r, tt = tp.get_charbox(pos + k); bs.append(b); xs.append(l)
+                except Exception: pass
+        keys.append((-(sorted(bs)[len(bs) // 2]) if bs else None, min(xs) if xs else 0))
+        pos += len(ln) + 2
+    # 빈 줄은 바로 앞 줄 자리에 붙여 둠
+    last = (0, 0); ks = []
+    for k in keys:
+        if k[0] is None: ks.append((last[0], last[1] + 0.001))
+        else: ks.append(k); last = k
+    # 높이가 2pt 안쪽이면 같은 줄 높이로 보고 왼쪽부터
+    order = sorted(range(len(tl)), key=lambda i: (round(ks[i][0] / 2), ks[i][1], i))
+    return '\r\n'.join(tl[i] for i in order), [full[i] for i in order] if full and len(full) == len(tl) else full
+
 def clean(t, label='', full=None):
     """원문 글자는 하나도 바꾸지 않고, 줄바꿈만 정리합니다.
     - 줄 끝에 빈칸이 있으면(낱말 사이) 빈칸으로 잇고, 없으면(낱말 중간) 붙여 잇습니다.
@@ -140,6 +165,8 @@ def clean(t, label='', full=None):
     lines = t.split('\n')
     full = full or [True] * len(lines)
     if lines and lines[0].strip() and lines[0].strip() == str(label): lines = lines[1:]; full = full[1:]
+    while lines and not lines[-1].strip(): lines = lines[:-1]; full = full[:-1]
+    if lines and lines[-1].strip() == str(label): lines = lines[:-1]; full = full[:-1]   # 아래쪽 쪽 번호
     paras, buf = [], ''
     for k, raw in enumerate(lines):
         if not raw.strip():
@@ -277,9 +304,16 @@ for i in range(N):
         hidx = heading_lines(src.get_textpage(), raw) if a.headings else set()
         raw_m = mark_footnotes(src.get_textpage(), raw) if a.footnotes else raw
         if hidx: raw_m = add_hmarks(raw_m, hidx)
+        if a.visual_order: raw_m, full = visual_order(src.get_textpage(), raw, raw_m, full)
         text = clean(raw_m, labels[i] or (i + 1), full)
         if a.footnotes: text = re.sub(r'[ \t]*(?<!^)(?<!\n)(\[\^\d+\]:)', r'\n\n\1', text)  # 문단 중간에 붙은 각주는 따로 떼기
-        if not same_text(raw, text, labels[i] or (i + 1)): changed_pages.append(i + 1)
+        if a.visual_order:
+            from collections import Counter as _C
+            _r = unicodedata.normalize('NFC', fix_hyphen(raw)); _rl = _r.replace('\r', '').split('\n')
+            if _rl and _rl[0].strip() == str(labels[i] or (i + 1)): _rl = _rl[1:]
+            _o = re.sub(r'(^|\n)## ', r'\1', unmark(text))
+            if _C(re.sub(r'\s', '', '\n'.join(_rl))) != _C(re.sub(r'\s', '', _o)): changed_pages.append(i + 1)
+        elif not same_text(raw, text, labels[i] or (i + 1)): changed_pages.append(i + 1)
         if ODD.search(text): odd_pages.append(i + 1)
     pages.append({'img': f'p/{i+1:04d}.webp', 'big': f'big/{i+1:04d}.webp', 'w': round(w), 'h': round(h), 'label': labels[i], 'text': text})
     print(f'\r  {i+1}/{N}', end='', flush=True)

@@ -860,6 +860,7 @@ function speak(fromK = 0, firstText = null) {
   if (!R.speaking) { R.ttsStart = Date.now(); R.ttsChapter = chapterOf(R.i + 1); }
   wake(true, 'tts');
   R.speaking = true; renderReader(); let k = Math.min(fromK, sentences.length - 1), first = firstText;
+  const lastBody = (() => { for (let j = sentences.length - 1; j >= 0; j--) if (!isFootnote(sentences[j]) && !FIG_RE.test(sentences[j]) && !isTable(sentences[j])) return j; return -1; })();
   const pv = pickVoice(o), voice = pv.voice;
   const next = () => {
     if (!R || !R.speaking) return;
@@ -870,7 +871,16 @@ function speak(fromK = 0, firstText = null) {
       if (o.chapterStop && chapterOf(R.i + 2) !== R.ttsChapter) { stopSpeak(true); toast('이 장을 다 읽었습니다'); return; }
       R.i++; renderReader(); speak(); return;
     }
-    const raw = first && first.trim() ? first : sentences[k]; first = null;
+    if (R.ttsSkip && R.ttsSkip.n === p.n && R.ttsSkip.k === k) { R.ttsSkip = null; k++; next(); return; }  // 앞 쪽 끝에서 이미 이어 읽은 문단
+    let raw = first && first.trim() ? first : sentences[k]; first = null;
+    // 쪽 끝에서 문장이 끊긴 문단은 다음 쪽 첫 문단과 이어서 한 번에 읽기 (끊어 읽으면 낱말이 뭉개짐)
+    if (k === lastBody && !isFootnote(raw) && !isHead(raw) && !/[.?!。…”’"')\]」』:]\s*$/.test(raw.replace(/\[\^[^\]]+\]\s*$/, ''))) {
+      const np = R.pages[R.i + 1], nps = np ? paras(np.text) : [], nk = nps.findIndex(x => x.trim());
+      if (np && nk >= 0 && !isFootnote(nps[nk]) && !isHead(nps[nk]) && !FIG_RE.test(nps[nk])) {
+        const a = raw.replace(/\s+$/, ''), b = nps[nk].replace(/^\s+/, '');
+        raw = a + (/[가-힣]$/.test(a) && /^[가-힣]/.test(b) ? '' : ' ') + b; R.ttsSkip = { n: np.n || R.i + 2, k: nk };
+      }
+    }
     if ((!o.fn && isFootnote(sentences[k])) || FIG_RE.test(sentences[k]) || isTable(sentences[k])) { k++; next(); return; }
     const el = $(`[data-pg="${p.n}"][data-s="${k}"]`); if (el) { el.classList.add('speaking'); if (o.follow) el.scrollIntoView({ block: 'nearest' }); }
     const text = sayable(raw.replace(/^\[\^([^\]]+)\]:\s*/, (m, n) => `각주 ${n}. `), o);

@@ -11,6 +11,7 @@
 import argparse, json, os, re
 ap = argparse.ArgumentParser()
 ap.add_argument('manifest'); ap.add_argument('--header', default='')
+ap.add_argument('--keep-order', action='store_true', help='쪽 안의 순서를 그대로 둠 (pdf2reader 에서 --visual-order 로 이미 인쇄 순서로 놓았을 때)')
 a = ap.parse_args()
 m = json.load(open(a.manifest, encoding='utf-8'))
 book, ed = m['book'], m['edition']
@@ -34,13 +35,19 @@ parts = []
 for i, p in enumerate(m['pages']):
     label = p.get('label') or str(i + 1)
     paras = [x for x in (p.get('text') or '').strip().split('\n\n') if x.strip()]
-    if a.header: paras = [x for x in paras if x.strip() != f'{a.header} {label}']
+    if a.header:
+        paras = [x for x in paras if x.strip() != f'{a.header} {label}']
+        # 아래쪽 머리글이 마지막 줄에 붙어 버린 경우: '…택죽음과 재생 시의 업 77' → '…택'
+        if paras and paras[-1].endswith(f'{a.header} {label}') and paras[-1].strip() != f'{a.header} {label}':
+            paras[-1] = paras[-1][: -len(f'{a.header} {label}')].rstrip()
     paras = split_heads(paras, [t['title'] for t in toc if t['page'] == i + 1])
-    paras = [x for x in paras if not FN.match(x)] + [x for x in paras if FN.match(x)]
+    if not a.keep_order: paras = [x for x in paras if not FN.match(x)] + [x for x in paras if FN.match(x)]
     parts.append(f'=== {label}쪽 ===\n' + '\n\n'.join(paras))
 body = '\n\n'.join(parts) + '\n'
 # 4) 각주 번호로 끝났지만 문장 중간인 문단은 다음 문단과 잇기 (예: …만료(āyukkhaya)[^1] / 입니다.)
 body = re.sub(r'([^.?!”’"\n])(\[\^\d+\])\n\n(?!## |\[\^|=== )', r'\1\2', body)
+# 5) 각주가 문장부호 없이 끝나고 다음 줄로 이어진 경우 한 각주로 잇기
+body = re.sub(r'(\n\[\^\d+\]:[^\n]*[^.?!”’"\n)])\n\n(?!## |\[\^|=== )', r'\1 ', body)
 out = {'book': book, 'edition': ed, 'toc': toc, 'body': body}
 dst = os.path.join(os.path.dirname(__file__), '..', 'content', 'texts', f'{book}.json')
 with open(dst, 'w', encoding='utf-8') as f:
