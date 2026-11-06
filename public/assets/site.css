@@ -667,3 +667,6 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 .seg.seg-grid{display:grid;grid-template-columns:repeat(5,1fr);width:100%}
 .seg.seg-grid button{padding:0 4px;white-space:nowrap}
 .seg.seg-grid button+button{border-left:1px solid var(--line)}
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tbl-wrap .tbl td{vertical-align:top}
+.tbl-wrap .tbl td .small{white-space:nowrap}

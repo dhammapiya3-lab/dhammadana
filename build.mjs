@@ -338,6 +338,8 @@ for (const b of BOOKS) {
   const perms = (e.permissions || []).map(permById).filter(Boolean);
   const permLabel = e.permission_status === 'public' ? '공개 배포됨' : e.permission_status === 'confirmed' || perms.length ? '허락 확인됨' : '';
   const pubEds = (b.editions || []);
+  const hasPrint = pubEds.some(x => x.isbn || x.publisher_print), hasEbook = pubEds.some(x => x.isbn_ebook || x.publisher_ebook);
+  const pubCell = (pb, no) => pb || no ? `${pb ? esc(pb) : ''}${pb && no ? '<br>' : ''}${no ? `<span class="small">ISBN ${esc(no)}</span>` : ''}` : '—';
   const pl = PLAYLISTS.find(p => p.teacher && p.teacher === b.teacher);
   const extF = f.filter(x => x.ext);
   put(`book/${b.id}/index.html`, layout({
@@ -352,7 +354,7 @@ for (const b of BOOKS) {
       ${f.filter(x => x.k !== '온라인 읽기').map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">${x.name} 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>${x.name} 내려받기</a>`).join('')}
       ${!f.length ? `<div class="soon-box">파일을 준비하고 있습니다.<br><span class="small">소식에서 올라오는 대로 알려 드립니다.</span></div>` : ''}</div>
     ${extF.length ? `<div class="small muted" style="margin-bottom:4px">↗ 표시된 파일은 ${esc(extF[0].site)}로 넘어가서 내려받습니다.</div>` : ''}
-    <dl class="gb-kv"><dt>판</dt><dd>${esc(edText(e) || '—')}</dd>${e.page_count ? `<dt>쪽수</dt><dd>${esc(e.page_count)}쪽</dd>` : ''}${e.isbn ? `<dt>ISBN</dt><dd>${esc(e.isbn)}</dd>` : ''}${(b.editions || []).filter(x => x !== e && (x.published || x.label)).length ? `<dt>펴낸 이력</dt><dd>${(b.editions || []).map(x => esc(edText(x))).filter(Boolean).join('<br>')}</dd>` : ''}<dt>라이선스</dt><dd>${esc(b.license)}</dd><dt>자료번호</dt><dd>${b.id}</dd></dl></div></aside><div class="d-rest">
+    <dl class="gb-kv"><dt>판</dt><dd>${esc(edText(e) || '—')}</dd>${e.page_count ? `<dt>쪽수</dt><dd>${esc(e.page_count)}쪽</dd>` : ''}${e.isbn ? `<dt>ISBN${e.isbn_ebook ? ' (종이책)' : ''}</dt><dd>${esc(e.isbn)}</dd>` : ''}${e.isbn_ebook ? `<dt>ISBN (전자책)</dt><dd>${esc(e.isbn_ebook)}</dd>` : ''}${(b.editions || []).filter(x => x !== e && (x.published || x.label)).length ? `<dt>펴낸 이력</dt><dd>${(b.editions || []).map(x => esc(edText(x))).filter(Boolean).join('<br>')}</dd>` : ''}<dt>라이선스</dt><dd>${esc(b.license)}</dd><dt>자료번호</dt><dd>${b.id}</dd></dl></div></aside><div class="d-rest">
     <div class="labels">${(b.main || []).map(m => `<a class="t" href="/library/?main=${slugT(m)}">${esc(m)}</a>`).join('')}${(b.topics || []).map(x => `<a class="t" href="/library/?topic=${slugT(x)}">${esc(x)}</a>`).join('')}${tr ? `<a href="/library/?trad=${tr.id}">${esc(tr.name)}</a>` : ''}${b.press ? `<a href="/press/">我無말들 출간</a>` : ''}</div>
     ${bookSections(b, e, t)}
     <details class="record"><summary>자료 기록 (출처 · 판 · 라이선스)</summary><div class="record-body">
@@ -366,7 +368,7 @@ for (const b of BOOKS) {
       <dt>수집 경로</dt><dd>${esc(e.collection || '—')}${e.collected ? ` <span class="muted small">(${esc(e.collected)})</span>` : ''}</dd>
       <dt>게시 허락</dt><dd>${permLabel || e.permission_note || e.permission_image ? `${permLabel}${perms.filter(p => p.image && p.image_public).map(p => ` · <button class="link-btn" data-permit="${esc(p.image)}" data-title="${esc(b.title)}">허락서 보기</button>`).join('')}${e.permission_image ? `${permLabel ? ' · ' : ''}<button class="link-btn" data-permit="${esc(e.permission_image)}" data-title="${esc(b.title)}">허락서 보기</button>` : ''}${e.permission_note ? `<blockquote class="perm-note">${esc(e.permission_note).replace(/\n/g, '<br>')}</blockquote>` : ''}` : '—'}</dd>
       <dt>라이선스</dt><dd>${esc(b.license)}</dd></dl>
-      <table class="tbl"><thead><tr><th>판</th><th>발행일</th><th>쪽수</th>${pubEds.some(x => x.isbn) ? '<th>ISBN</th>' : ''}<th>공개</th></tr></thead><tbody>${pubEds.map(x => `<tr><td>${esc(x.label)}</td><td>${esc(pubDate(x) || '—')}</td><td>${x.page_count ? esc(x.page_count) + '쪽' : '—'}</td>${pubEds.some(y => y.isbn) ? `<td>${esc(x.isbn || '—')}</td>` : ''}<td>${x.current ? '<span class="pill">최신판</span>' : !edHasFile(x) ? '—' : x.public ? '이전 판 공개' : '보관'}</td></tr>`).join('')}</tbody></table>
+      <div class="tbl-wrap"><table class="tbl"><thead><tr><th>판</th><th>발행일</th><th>쪽수</th>${hasPrint ? '<th>종이책</th>' : ''}${hasEbook ? '<th>전자책</th>' : ''}<th>공개</th></tr></thead><tbody>${pubEds.map(x => `<tr><td>${esc(x.label)}</td><td>${esc(pubDate(x) || '—')}</td><td>${x.page_count ? esc(x.page_count) + '쪽' : '—'}</td>${hasPrint ? `<td>${pubCell(x.publisher_print, x.isbn)}</td>` : ''}${hasEbook ? `<td>${pubCell(x.publisher_ebook, x.isbn_ebook)}</td>` : ''}<td>${x.current ? '<span class="pill">최신판</span>' : !edHasFile(x) ? '—' : x.public ? '이전 판 공개' : '보관'}</td></tr>`).join('')}</tbody></table></div>
       <p class="small muted" style="margin-top:10px">새 판이 올라오면 이전 판은 보관되고, 최신판만 내려받기와 온라인 읽기에 나옵니다.</p>
     </div></details>
     ${same.length ? `<h2 class="h-sub">${esc(t.name)}의 다른 책</h2><div class="grid">${same.map(coverCard).join('')}</div>` : ''}
@@ -545,7 +547,7 @@ const site = {
   variants: VARIANTS,
   books: BOOKS.map(b => {
     const t = teacherById(b.teacher), tr = b.teacher ? tradOfTeacher(b.teacher) : null;
-    return { id: b.id, title: b.title, subtitle: b.subtitle || '', orig: b.original_title || '', lang: b.original_language || '', cover: b.cover || '', byline: b.byline, tr: b.translator || '', teacher: t ? t.name : '', teacherRoman: t ? t.roman : '', teacherAliases: t ? t.aliases : [], tradition: tr ? tr.name : '', topics: b.topics || [], main: b.main || [], isbn: (b.editions || []).map(x => x.isbn).filter(Boolean), manifest: readerManifest(b), desc: (b.description || '').slice(0, 300) };
+    return { id: b.id, title: b.title, subtitle: b.subtitle || '', orig: b.original_title || '', lang: b.original_language || '', cover: b.cover || '', byline: b.byline, tr: b.translator || '', teacher: t ? t.name : '', teacherRoman: t ? t.roman : '', teacherAliases: t ? t.aliases : [], tradition: tr ? tr.name : '', topics: b.topics || [], main: b.main || [], isbn: (b.editions || []).flatMap(x => [x.isbn, x.isbn_ebook]).filter(Boolean), manifest: readerManifest(b), desc: (b.description || '').slice(0, 300) };
   }),
   aliases: [...TEACHERS.map(t => [t.name, ...(t.aliases || []), t.roman].filter(Boolean)), ...TRADS.map(t => [t.name])]
 };
