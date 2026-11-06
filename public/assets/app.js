@@ -318,7 +318,7 @@ async function initReaderPage() {
   const last = store.get('pos-' + id, 1);
   R = {
     id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, pages, toc: man.toc || [],
-    i: Math.min(Math.max(want || last || 1, 1), pages.length) - 1,
+    i: Math.min(Math.max(want || (last > 1 ? last : 0) || firstContent(pages, man.toc || []), 1), pages.length) - 1,
     view: 'text', zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), lh: store.get('rlh', 1.9), font: store.get('rfont', 'serif'),
     hl: hlp ? hlp.split('|').filter(Boolean) : [], speaking: false
   };
@@ -346,16 +346,19 @@ function chapters() {
   const top = R.toc.filter(t => !/^\s/.test(t.title)).sort((a, b) => a.page - b.page);
   if (!top.length) return [{ title: '', from: 1, to: R.pages.length }];
   const out = [];
-  if (top[0].page > 1) out.push({ title: '앞부분', from: 1, to: top[0].page - 1 });
+  // 첫 장 앞쪽에 글이 있을 때만 '앞부분'을 둠 (표지처럼 빈 쪽은 건너뜀)
+  if (top[0].page > 1 && R.pages.slice(0, top[0].page - 1).some(p => p.text && p.text.trim())) out.push({ title: '앞부분', from: 1, to: top[0].page - 1 });
   top.forEach((t, i) => out.push({ title: t.title.trim(), from: t.page, to: (top[i + 1] ? top[i + 1].page - 1 : R.pages.length) }));
   return out.filter(c => c.to >= c.from);
 }
-function chapterOf(n) { const cs = chapters(); return cs.findIndex(c => n >= c.from && n <= c.to); }
+function chapterOf(n) { const cs = chapters(); const k = cs.findIndex(c => n >= c.from && n <= c.to); return k < 0 ? 0 : k; }
+function firstContent(pages, toc) { const t = toc.filter(x => !/^\s/.test(x.title)).map(x => x.page).sort((a, b) => a - b)[0]; const f = pages.findIndex(p => p.text && p.text.trim()) + 1; return Math.min(t || Infinity, f || Infinity) === Infinity ? 1 : Math.min(t || Infinity, f || Infinity); }
 function reflowHtml() {
   const cs = chapters(), ci = Math.max(0, chapterOf(R.i + 1)), c = cs[ci];
   const subs = R.toc.filter(t => /^\s/.test(t.title) && t.page >= c.from && t.page <= c.to);
   const body = R.pages.slice(c.from - 1, c.to).map(p => {
     const ps = paras(p.text); const sub = subs.filter(t => t.page === p.n);
+    if (!ps.length) return `<span id="pm-${p.n}"></span>`;
     return `<span class="pmark" id="pm-${p.n}">${esc(pageName(p))}</span>${ps.map((s, k) => `<p data-pg="${p.n}" data-s="${k}">${markUl(s, p.n)}</p>`).join('') || ''}`;
   }).join('');
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
