@@ -27,7 +27,7 @@
     {
       "label": "초판",
       "published": "초판 발행 2013년 7월 1일",
-      "file_created": "",
+      "file_created": "2026-11-06",
       "changes": "",
       "current": false,
       "public": false,
@@ -48,7 +48,11 @@
       "permissions": [
         "amumaldeul-self"
       ],
-      "note": "책 판권면(개정판)에 적힌 초판 발행일"
+      "note": "책 판권면(개정판)에 적힌 초판 발행일",
+      "pdf_print": {
+        "mode": "file",
+        "url": "pdf/DL-0007/DL-0007_초판_인쇄용.pdf"
+      }
     },
     {
       "label": "개정판",
