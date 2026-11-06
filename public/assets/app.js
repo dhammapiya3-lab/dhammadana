@@ -296,7 +296,7 @@ async function initBook() {
   const m = $('#tocMount'); if (!m) return;
   try {
     const man = await manifest(m.dataset.manifest);
-    if (man.toc && man.toc.length) m.innerHTML = `<h2 class="h-sub">목차</h2><ol class="toc">${man.toc.map(t => `<li class="${/^\s/.test(t.title) ? 'sub' : ''}"><a href="/read/${m.dataset.book}/${t.page}?view=text">${esc(t.title.trim())}</a><span>${esc(t.label || t.page)}</span></li>`).join('')}</ol><p class="small muted" style="margin-top:8px">목차를 누르면 그 장을 글로 읽을 수 있습니다. 읽기 화면 위쪽에서 ‘쪽 보기’로 바꾸면 책 모양 그대로 볼 수 있습니다.</p>`;
+    if (man.toc && man.toc.length) m.innerHTML = `<h2 class="h-sub">목차</h2><ol class="toc">${man.toc.map(t => `<li class="${/^\s/.test(t.title) ? 'sub' : ''}"><a href="/read/${m.dataset.book}/${t.page}?view=text">${esc(t.title.trim())}</a><span>${esc(t.label || t.page)}</span></li>`).join('')}</ol><p class="small muted" style="margin-top:8px">목차를 누르면 그 장을 읽을 수 있습니다.</p>`;
   } catch (e) {}
 }
 
@@ -319,12 +319,10 @@ async function initReaderPage() {
   R = {
     id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, pages, toc: man.toc || [],
     i: Math.min(Math.max(want || last || 1, 1), pages.length) - 1,
-    view: store.get('rview', 'page'), zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), lh: store.get('rlh', 1.9), font: store.get('rfont', 'serif'),
+    view: 'text', zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), lh: store.get('rlh', 1.9), font: store.get('rfont', 'serif'),
     hl: hlp ? hlp.split('|').filter(Boolean) : [], speaking: false
   };
-  const qv = new URLSearchParams(location.search).get('view'); if (qv === 'text' || qv === 'page') R.view = qv;
   if (!pages.some(p => p.text)) R.view = 'page';
-  if (!pages.some(p => p.img)) R.view = 'text';
   renderReader();
   if (!want && last > 1) toast(`지난번에 읽던 ${pageName(R.pages[R.i])}을 열었습니다`);
 }
@@ -358,7 +356,7 @@ function reflowHtml() {
   const subs = R.toc.filter(t => /^\s/.test(t.title) && t.page >= c.from && t.page <= c.to);
   const body = R.pages.slice(c.from - 1, c.to).map(p => {
     const ps = paras(p.text); const sub = subs.filter(t => t.page === p.n);
-    return `<span class="pmark" id="pm-${p.n}">${esc(pageName(p))}</span>${ps.map((s, k) => `<p data-pg="${p.n}" data-s="${k}">${markUl(s, p.n)}</p>`).join('') || '<p class="muted small">(글이 없는 쪽입니다. 쪽 보기로 확인하세요.)</p>'}`;
+    return `<span class="pmark" id="pm-${p.n}">${esc(pageName(p))}</span>${ps.map((s, k) => `<p data-pg="${p.n}" data-s="${k}">${markUl(s, p.n)}</p>`).join('') || ''}`;
   }).join('');
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}" style="--fs:${R.fs};--lh:${R.lh}">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}</h3></div>` : ''}${body}${nav}</div>`;
@@ -373,7 +371,6 @@ function renderReader() {
   el.innerHTML = `<div class="r-top"><button class="tbtn" id="rClose" aria-label="읽기 닫기">← 닫기</button>
     <div class="r-title">${esc(R.title)}<small>${esc(R.by)}${ch ? ' · ' + esc(ch.title) : ''}</small></div>
     <div class="r-tools">
-      ${hasText && hasImg ? `<div class="seg" role="group" aria-label="보기 방식"><button data-view="page" class="${R.view === 'page' ? 'on' : ''}">쪽 보기</button><button data-view="text" class="${R.view === 'text' ? 'on' : ''}">글로 보기</button></div>` : ''}
       ${R.toc.length ? '<button class="tbtn" data-panel="toc">목차</button>' : ''}
       <button class="tbtn" data-panel="font" aria-label="글씨 크기">가<span style="font-size:16px">가</span></button>
       ${hasText ? `<button class="tbtn ${R.speaking ? 'on' : ''}" id="rSpeak">${R.speaking ? '■ 멈춤' : '▶ 듣기'}</button>` : ''}
@@ -395,7 +392,7 @@ function renderReader() {
        <div class="row">줄 간격 <span class="seg">${[[1.6, '좁게'], [1.9, '보통'], [2.2, '넓게']].map(([v, l]) => `<button data-lh="${v}" class="${R.lh === v ? 'on' : ''}">${l}</button>`).join('')}</span></div>
        <div class="row">글꼴 <span class="seg"><button data-font="serif" class="${R.font === 'serif' ? 'on' : ''}">명조</button><button data-font="sans" class="${R.font === 'sans' ? 'on' : ''}">고딕</button></span></div>`}</div>
     <div class="panel" id="p-mode"><h5>화면 모드</h5><div class="seg">${[['day', '기본'], ['mono', '흑백'], ['night', '밤']].map(([k, v]) => `<button data-rmode="${k}" class="${store.get('mode', 'auto') === k ? 'on' : ''}">${v}</button>`).join('')}</div><p class="note">고른 모드는 사이트 전체에 적용되고 다음에 와도 유지됩니다.</p></div>
-    <div class="panel" id="p-ul"><h5>이 책의 밑줄</h5><ul>${uls().filter(h => h.id === R.id).sort((a, b) => a.p - b.p).map(h => `<li style="display:block"><button class="link" data-go="${h.p}">${esc(h.pl || h.p)}쪽</button><div class="quote" style="font-size:13.5px">${esc(h.text)}</div>${h.note ? `<div class="small muted">${esc(h.note)}</div>` : ''}</li>`).join('') || '<li class="muted">‘글로 보기’에서 글을 끌어서 고르면 밑줄을 그을 수 있습니다.</li>'}</ul>
+    <div class="panel" id="p-ul"><h5>이 책의 밑줄</h5><ul>${uls().filter(h => h.id === R.id).sort((a, b) => a.p - b.p).map(h => `<li style="display:block"><button class="link" data-go="${h.p}">${esc(h.pl || h.p)}쪽</button><div class="quote" style="font-size:13.5px">${esc(h.text)}</div>${h.note ? `<div class="small muted">${esc(h.note)}</div>` : ''}</li>`).join('') || '<li class="muted">글을 끌어서 고르면 밑줄을 그을 수 있습니다.</li>'}</ul>
       <div class="row"><a class="tbtn" href="/mynotes/">내 서재에서 모두 보기</a></div></div>
     <div class="panel" id="p-uledit"><h5>밑줄</h5><div class="quote" id="ulText" style="font-size:13.5px"></div>
       <div class="row"><input id="ulNote" placeholder="메모 한 줄" aria-label="밑줄 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"></div>
@@ -418,7 +415,7 @@ function bindReader() {
   $('#rClose').onclick = exitReader;
   $('#rPrev').onclick = () => go(R.i); $('#rNext').onclick = () => go(R.i + 2); $('#rRange').onchange = e => go(+e.target.value);
   const ho = $('#hlOff'); if (ho) ho.onclick = () => { R.hl = []; history.replaceState(null, '', location.pathname); renderReader(); };
-  $$('[data-view]', el).forEach(b => b.onclick = () => { R.view = b.dataset.view; store.set('rview', R.view); renderReader(); });
+  
   $$('[data-panel]', el).forEach(b => b.onclick = () => { const p = $('#p-' + b.dataset.panel); const o = p.classList.contains('open'); $$('.panel', el).forEach(x => x.classList.remove('open')); if (!o) p.classList.add('open'); });
   $$('[data-go]', el).forEach(b => b.onclick = () => go(+b.dataset.go));
   $$('[data-zoom]', el).forEach(b => b.onclick = () => { R.zoom = Math.max(.75, Math.min(2.5, +(R.zoom + (+b.dataset.zoom) * .25).toFixed(2))); store.set('rzoom', R.zoom); renderReader(); reopen('p-font'); });
@@ -498,7 +495,7 @@ function renderNotes() {
   const ulHtml = Object.keys(groups).length ? Object.entries(groups).map(([id, l]) => `<div class="book-group"><h3>『${esc(l[0].t)}』</h3><div class="small muted">${esc(l[0].by)} · 밑줄 ${l.length}개</div>
     ${l.sort((a, c) => a.p - c.p).map(h => `<div class="note-item"><div class="meta"><a href="/read/${id}/${h.p}">${esc(h.pl || h.p)}쪽에서 보기 →</a><span>${esc(h.d || '')}</span></div><div class="quote">${esc(h.text)}</div>${h.note ? `<div class="memo">메모: ${esc(h.note)}</div>` : ''}
     <div class="acts"><button data-ncopy="${h.k}">출처와 함께 복사</button><button data-ndel="${h.k}">지우기</button></div></div>`).join('')}</div>`).join('')
-    : `<p class="muted">아직 밑줄이 없습니다. 읽기 화면의 ‘글로 보기’에서 글을 끌어서 고르면 ‘밑줄 긋기’ 단추가 나옵니다.</p>`;
+    : `<p class="muted">아직 밑줄이 없습니다. 읽기 화면에서 글을 끌어서 고르면 ‘밑줄 긋기’ 단추가 나옵니다.</p>`;
   const bmHtml = B.length ? B.map((m, k) => `<div class="note-item"><div class="meta"><a href="/read/${m.id}/${m.p}">『${esc(m.t)}』 ${esc(m.pl || m.p)}쪽 →</a><span>${esc(m.d || '')}</span></div>${m.note ? `<div class="memo">${esc(m.note)}</div>` : ''}<div class="acts"><button data-bdel="${k}">지우기</button></div></div>`).join('') : '<p class="muted">아직 책갈피가 없습니다.</p>';
   root.innerHTML = `<div class="tabs" role="tablist"><button role="tab" data-ntb="ul" class="${notesTab === 'ul' ? 'on' : ''}">밑줄 ${U.length}</button><button role="tab" data-ntb="bm" class="${notesTab === 'bm' ? 'on' : ''}">책갈피 ${B.length}</button><button role="tab" data-ntb="io" class="${notesTab === 'io' ? 'on' : ''}">옮기기</button></div>
    <div style="max-width:760px">${notesTab === 'ul' ? (U.length ? `<div style="margin:12px 0"><button class="btn sm ghost" id="copyAll">밑줄 모두 복사 (출처 포함)</button></div>` : '') + ulHtml : notesTab === 'bm' ? bmHtml :
