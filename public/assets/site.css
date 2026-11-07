@@ -833,3 +833,8 @@ a.paper-request:hover{filter:brightness(1.08)}
 .r-fig .fig-btn img[src*="-bridge"]{max-height:26px;border:0;background:none;border-radius:0}
 .r-fig:has(img[src*="-bridge"]){margin:1em 0}
 .r-fig .fig-btn img[alt="장식"]{max-height:26px;border:0;background:none;border-radius:0}
+
+/* 글로 읽기: 색 강조(==글==, 원본의 하늘색), 속표지 큰 제목(^^ 글) */
+.hl{color:#00aeef}
+:root.mode-mono .hl,:root.mode-contrast .hl{color:inherit;text-decoration:underline}
+.reflow p.r-title{font-size:1.7em;font-weight:700;text-align:center;text-indent:0;line-height:1.45;margin:2.2em 0 1.6em}

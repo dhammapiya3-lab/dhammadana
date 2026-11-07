@@ -29,7 +29,7 @@ bounds, pending, ptr, miss = [], [], 0, []
 for i, pg in enumerate(doc):
     label = f'{i + first}쪽'
     H = pg.rect.height  # 쪽 번호·머리글(맨 위·맨 아래 짧은 줄)은 뺌
-    t = norm(''.join(b[4] for b in pg.get_text('blocks') if not re.fullmatch(r'\s*\d{1,3}\s*', b[4]) and not ((b[3] < 60 or b[1] > H - 80) and len(b[4].strip()) < 30)))
+    t = norm(''.join(b[4] for b in pg.get_text('blocks') if not re.fullmatch(r'\s*\d{1,3}\s*', b[4]) and not ((b[3] < 60 or b[1] > H - 80) and len(b[4].strip()) < 40 and re.search(r'\d', b[4]))))
     start = None
     if len(t) >= 8:
         cands = [(k, 24) for k in range(0, max(0, min(len(t) - 24, 300)) + 1, 8)] + [(k, 10) for k in range(0, min(len(t) - 10, 300) + 1, 10)]
@@ -69,7 +69,9 @@ for i, pg in enumerate(doc):
     pending = []
     bounds.append((p, label)); ptr = start + 1
 end = len(clean)
-for e in pending: bounds.append((end, e))
+if '--keep-tail' in sys.argv:  # 마지막으로 찾은 쪽 뒤의, 전자책에 없는 쪽은 기본으로 넣지 않음
+    for e in pending: bounds.append((end, e))
+elif pending: print('뒤쪽에 넣지 않은 쪽:', pending)
 # 종이책에 없는 장: 쪽 번호 없는 경계
 tops = [t for t in d['toc'] if not t.get('sub')]
 for t in tops:
