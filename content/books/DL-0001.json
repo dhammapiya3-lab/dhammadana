@@ -29,6 +29,7 @@
   "editions": [
     {
       "label": "초판",
+      "label_display": "",
       "current": false,
       "public": false,
       "page_count": 228,
@@ -74,11 +75,11 @@
       "permissions": [
         "amumaldeul-self"
       ],
-      "note": "",
-      "label_display": ""
+      "note": ""
     },
     {
       "label": "개정판",
+      "label_display": "개정판 (epub는 초판)",
       "current": true,
       "public": true,
       "page_count": 240,
@@ -93,7 +94,7 @@
         "mode": "file",
         "url": "pdf/DL-0001/DL-0001_개정판.pdf",
         "site": "",
-        "created": "2022년 6월 8일"
+        "created": "2023년 11월 17일"
       },
       "pdf_print": {
         "mode": "file",
@@ -105,13 +106,13 @@
         "mode": "file",
         "url": "pdf/DL-0001/DL-0001_개정판_인쇄용표지.pdf",
         "site": "",
-        "created": "2023년 11월 17일"
+        "created": "2023년 5월 11일"
       },
       "epub": {
         "mode": "file",
         "url": "epub/DL-0001/DL-0001_초판.epub",
         "site": "",
-        "created": "2026년 11월 8일"
+        "created": "2022년 6월 8일"
       },
       "reader": true,
       "sources": [
@@ -143,8 +144,7 @@
       "permissions": [
         "amumaldeul-self"
       ],
-      "note": "",
-      "label_display": "개정판 (epub는 초판)"
+      "note": ""
     }
   ],
   "license": "CC BY-NC-ND",
