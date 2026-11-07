@@ -690,6 +690,8 @@ function openShare(d, pl) {
   $$('#p-share [data-sh]').forEach(b => b.onclick = async () => {
     const k = b.dataset.sh, open = u => window.open(u, '_blank', 'noopener,width=620,height=640');
     if (k === 'app') { try { await navigator.share({ title: `『${R.title}』`, text: q(d.text), url }); } catch (e) {} return; }
+    // 휴대폰: 기기 공유 화면 → 카카오톡을 고르면 고른 글 전체가 일반 메시지로 감 (글자 수 제한 없음)
+    if (k === 'kakao' && navigator.share && matchMedia('(pointer: coarse)').matches) { try { await navigator.share({ title: `『${R.title}』`, text: q(d.text), url }); } catch (e) {} return; }
     if (k === 'kakao' && window.Kakao && Kakao.isInitialized && Kakao.isInitialized()) {
       // 텍스트형 메시지: 고른 글이 카톡 말풍선에 글로 그대로 보임 (카카오 제한 200자)
       const tail = `\n\n${src}`, room = 200 - tail.length - 2;
@@ -700,7 +702,6 @@ function openShare(d, pl) {
         return;
       } catch (e) {}
     }
-    if (k === 'kakao' && navigator.share && matchMedia('(pointer: coarse)').matches) { try { await navigator.share({ title: `『${R.title}』`, text: q(d.text), url }); } catch (e) {} return; }
     if (k === 'kakao') { copy(full, '복사했습니다. 카카오톡 대화창에 붙여넣기(Ctrl+V) 하세요'); return; }
     if (k === 'band') return open(`https://band.us/plugin/share?body=${encodeURIComponent(full)}&route=${encodeURIComponent(SITE)}`);
     if (k === 'x') return open(`https://x.com/intent/post?text=${encodeURIComponent(q(short(180)))}&url=${encodeURIComponent(url)}`);
