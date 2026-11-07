@@ -104,7 +104,8 @@ collections:
           - { name: published_ebook, label: 전자책 발행일, required: false, hint: "전자책을 종이책과 다른 날 펴냈으면 적어 주세요. 예: 2024년 8월 1일" }
           - { name: publisher_ebook, label: 전자책 출판사, required: false, hint: "전자책(EPUB·PDF)을 펴낸 곳이 종이책과 다르면 적어 주세요" }
           - { name: isbn_ebook, label: 전자책 ISBN, required: false, hint: "전자책 ISBN이 따로 있으면 적어 주세요" }
-          - { name: file_created, label: 파일 만든 날, required: false }
+          - { name: file_created_print, label: 종이책 파일 만든 날, required: false, hint: "인쇄용 PDF(본문·표지)를 만든 날. 예: 2024년 5월 1일" }
+          - { name: file_created, label: 전자책 파일 만든 날, required: false, hint: "화면용 PDF·EPUB을 만든 날. 예: 2024년 8월 1일" }
           - { name: changes, label: 바뀐 내용, required: false }
           - name: pdf
             label: PDF (화면용)

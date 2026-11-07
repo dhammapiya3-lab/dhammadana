@@ -118,7 +118,7 @@ function bookSections(b, e, t) {
 const pubDate = x => { let p = (x.published || '').trim(); const l = (x.label || '').trim(); if (l && p.startsWith(l)) p = p.slice(l.length).trim(); return p.replace(/^발행\s*/, '').trim(); };
 const edHasFile = x => ['pdf', 'pdf_print', 'pdf_cover', 'epub'].some(k => x[k] && x[k].mode && x[k].mode !== 'none' && x[k].url) || !!x.reader;
 const uniqK = f => [...new Map(f.map(x => [x.k, x])).values()];
-// 내려받을 때 파일 이름: 책제목_날짜.pdf (날짜 = 파일 만든 날, 없으면 출간일)
+// 내려받을 때 파일 이름: 책제목_날짜.pdf (날짜 = 파일 만든 날 — 인쇄용은 종이책 파일 만든 날, 화면용·EPUB은 전자책 파일 만든 날 — 없으면 발행일)
 function ymd(t) {
   const m = String(t || '').match(/(\d{4})\s*[.\-/년]\s*(\d{1,2})(?:\s*[.\-/월]\s*(\d{1,2}))?/);
   if (!m) { const y = String(t || '').match(/(\d{4})/); return y ? y[1] : ''; }
@@ -127,7 +127,8 @@ function ymd(t) {
 const safeName = s => String(s).replace(/[\\/:*?"<>|\u0000-\u001f]+/g, ' ').replace(/\s+/g, ' ').trim();
 const DOWNLOADS = {};
 function dlName(b, e, kind) {
-  const d = ymd(e.file_created) || ymd(e.published);
+  const print = kind === 'pdf_print' || kind === 'pdf_cover';
+  const d = print ? (ymd(e.file_created_print) || ymd(e.published)) : (ymd(e.file_created) || ymd(e.published_ebook) || ymd(e.published));
   const ext = kind === 'epub' ? 'epub' : 'pdf';
   const tag = { pdf_print: e.pdf_cover && e.pdf_cover.url ? '_인쇄용_본문' : '_인쇄용', pdf_cover: '_인쇄용_표지' }[kind] || '';
   return safeName(`${b.title}${tag}${d ? '_' + d : ''}`) + '.' + ext;
@@ -248,7 +249,7 @@ const put = (p, html) => { pages[p] = html; };
 function updatesList() {
   const rows = [];
   for (const b of BOOKS) for (const e of b.editions || []) {
-    if (e.changes && (e.file_created || e.published)) rows.push({ d: e.file_created || e.published, b, c: `${e.label} · ${e.changes}` });
+    if (e.changes && (e.file_created || e.file_created_print || e.published)) rows.push({ d: e.file_created || e.file_created_print || e.published, b, c: `${e.label} · ${e.changes}` });
   }
   for (const b of BOOKS) rows.push({ d: b.added || '', b, c: '등록' });
   return rows.sort((a, b) => b.d.localeCompare(a.d)).slice(0, 8);
