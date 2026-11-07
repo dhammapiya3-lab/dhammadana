@@ -371,7 +371,7 @@ for (const b of BOOKS) {
     <details class="record"><summary>자료 기록 (출처 · 판 · 라이선스)</summary><div class="record-body">
       <dl class="kv"><dt>자료번호</dt><dd>${b.id}</dd>
       <dt>저자·스승</dt><dd>${t ? `<a href="/teacher/${t.id}/">${esc(t.name)}</a>${t.roman ? ` <span class="muted small">(${esc(t.roman)})</span>` : ''}` : esc(b.byline)}</dd>
-      <dt>번역·편자</dt><dd>${esc(b.translator || b.byline)}</dd>
+      ${b.translator ? `<dt>번역·편자</dt><dd>${esc(b.translator)}</dd>` : ''}
       ${b.original_language ? `<dt>원서의 언어</dt><dd>${esc(b.original_language)}</dd>` : ''}
       ${b.original_source ? `<dt>원서 정보</dt><dd>${esc(b.original_source)}</dd>` : ''}
       <dt>자료 제공</dt><dd>${prov ? esc(prov.name) + (prov.urls || []).map(u => ` <a href="${esc(u)}" target="_blank" rel="noopener">↗</a>`).join('') : '—'}</dd>
