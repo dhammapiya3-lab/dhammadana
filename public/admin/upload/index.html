@@ -177,8 +177,9 @@ $('#go').onclick=async()=>{
       if(tryN) await new Promise(r=>setTimeout(r,1500*tryN));
       const r=await gh(`/contents/content/books/${BOOK.id}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); const j=await r.json();
       b=JSON.parse(dec(j.content)); e2=b.editions[ei];
-      e2[k]={site:'',...(e2[k]||{}),mode:'file',url:key};
-      if(!e2.file_created) e2.file_created=new Date().toLocaleDateString('sv-SE');
+      e2[k]={site:'',created:'',...(e2[k]||{}),mode:'file',url:key};
+      if(!e2[k].created){ const t=new Date(); e2[k].created=`${t.getFullYear()}년 ${t.getMonth()+1}월 ${t.getDate()}일`; }  // 이 파일 만든 날 (비어 있을 때만 오늘 날짜)
+      delete e2.file_created; delete e2.file_created_print;
       const put=await gh(`/contents/content/books/${BOOK.id}.json`,{method:'PUT',headers:{'content-type':'application/json'},
         body:JSON.stringify({message:`책 파일 연결: ${BOOK.id} ${e2.label||''} ${KN}`,content:enc(JSON.stringify(b,null,2)+'\n'),sha:j.sha,branch:'main'})});
       done=put.ok;
