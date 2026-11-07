@@ -33,28 +33,30 @@
       "published_ebook": "2015년 4월 8일",
       "publisher_ebook": "보리수선원",
       "isbn_ebook": "979-11-86509-08-1",
-      "file_created_print": "",
-      "file_created": "",
       "changes": "",
       "pdf": {
         "mode": "none",
         "url": "",
-        "site": ""
+        "site": "",
+        "created": ""
       },
       "pdf_print": {
         "mode": "none",
         "url": "",
-        "site": ""
+        "site": "",
+        "created": ""
       },
       "pdf_cover": {
         "mode": "none",
         "url": "",
-        "site": ""
+        "site": "",
+        "created": ""
       },
       "epub": {
         "mode": "none",
         "url": "",
-        "site": ""
+        "site": "",
+        "created": ""
       },
       "reader": false,
       "sources": [],
@@ -79,28 +81,30 @@
       "published_ebook": "2024년 7월 1일",
       "publisher_ebook": "我無말들",
       "isbn_ebook": "979-11-980922-5-0",
-      "file_created_print": "",
-      "file_created": "2026년 3월 3일",
       "changes": "",
       "pdf": {
         "mode": "file",
         "url": "pdf/DL-0007/DL-0007_개정판.pdf",
-        "site": ""
+        "site": "",
+        "created": "2026년 3월 3일"
       },
       "pdf_print": {
         "mode": "file",
         "url": "pdf/DL-0007/DL-0007_개정판_인쇄용.pdf",
-        "site": ""
+        "site": "",
+        "created": ""
       },
       "pdf_cover": {
         "mode": "file",
         "url": "pdf/DL-0007/DL-0007_개정판_인쇄용표지.pdf",
-        "site": ""
+        "site": "",
+        "created": ""
       },
       "epub": {
         "mode": "file",
         "url": "epub/DL-0007/DL-0007_개정판.epub",
-        "site": ""
+        "site": "",
+        "created": "2026년 3월 3일"
       },
       "reader": true,
       "sources": [

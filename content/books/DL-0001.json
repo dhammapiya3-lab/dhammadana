@@ -23,18 +23,18 @@
     {
       "label": "초판",
       "published": "",
-      "file_created_print": "",
-      "file_created": "",
       "changes": "",
       "current": true,
       "public": true,
       "pdf": {
         "mode": "none",
-        "url": ""
+        "url": "",
+        "created": ""
       },
       "epub": {
         "mode": "none",
-        "url": ""
+        "url": "",
+        "created": ""
       },
       "reader": false,
       "sources": [],
@@ -45,10 +45,12 @@
       ],
       "note": "",
       "pdf_print": {
-        "mode": "none"
+        "mode": "none",
+        "created": ""
       },
       "pdf_cover": {
-        "mode": "none"
+        "mode": "none",
+        "created": ""
       }
     }
   ]

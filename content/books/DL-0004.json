@@ -33,28 +33,30 @@
       "published_ebook": "2022년 11월 30일",
       "publisher_ebook": "我無말들",
       "isbn_ebook": "979-11-977072-9-2",
-      "file_created_print": "",
-      "file_created": "2022년 11월 30일",
       "changes": "",
       "pdf": {
         "mode": "file",
         "url": "pdf/DL-0004/DL-0004_초판.pdf",
-        "site": ""
+        "site": "",
+        "created": "2022년 11월 30일"
       },
       "pdf_print": {
         "mode": "none",
         "url": "",
-        "site": ""
+        "site": "",
+        "created": ""
       },
       "pdf_cover": {
         "mode": "none",
         "url": "",
-        "site": ""
+        "site": "",
+        "created": ""
       },
       "epub": {
         "mode": "none",
         "url": "",
-        "site": ""
+        "site": "",
+        "created": ""
       },
       "reader": false,
       "sources": [],

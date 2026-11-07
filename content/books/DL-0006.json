@@ -33,28 +33,30 @@
       "published_ebook": "2023년 6월 6일",
       "publisher_ebook": "我無말들",
       "isbn_ebook": "979-11-980922-1-2",
-      "file_created_print": "",
-      "file_created": "2025년 1월 3일",
       "changes": "",
       "pdf": {
         "mode": "none",
         "url": "",
-        "site": ""
+        "site": "",
+        "created": ""
       },
       "pdf_print": {
         "site": "",
         "mode": "file",
-        "url": "pdf/DL-0006/DL-0006_초판_인쇄용.pdf"
+        "url": "pdf/DL-0006/DL-0006_초판_인쇄용.pdf",
+        "created": ""
       },
       "pdf_cover": {
         "site": "",
         "mode": "file",
-        "url": "pdf/DL-0006/DL-0006_초판_인쇄용표지.pdf"
+        "url": "pdf/DL-0006/DL-0006_초판_인쇄용표지.pdf",
+        "created": ""
       },
       "epub": {
         "site": "",
         "mode": "file",
-        "url": "epub/DL-0006/DL-0006_초판.epub"
+        "url": "epub/DL-0006/DL-0006_초판.epub",
+        "created": "2025년 1월 3일"
       },
       "reader": true,
       "sources": [],

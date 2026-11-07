@@ -104,8 +104,6 @@ collections:
           - { name: published_ebook, label: 전자책 발행일, required: false, hint: "전자책을 종이책과 다른 날 펴냈으면 적어 주세요. 예: 2024년 8월 1일" }
           - { name: publisher_ebook, label: 전자책 출판사, required: false, hint: "전자책(EPUB·PDF)을 펴낸 곳이 종이책과 다르면 적어 주세요" }
           - { name: isbn_ebook, label: 전자책 ISBN, required: false, hint: "전자책 ISBN이 따로 있으면 적어 주세요" }
-          - { name: file_created_print, label: 종이책 파일 만든 날, required: false, hint: "인쇄용 PDF(본문·표지)를 만든 날. 예: 2024년 5월 1일" }
-          - { name: file_created, label: 전자책 파일 만든 날, required: false, hint: "화면용 PDF·EPUB을 만든 날. 예: 2024년 8월 1일" }
           - { name: changes, label: 바뀐 내용, required: false }
           - name: pdf
             label: PDF (화면용)
@@ -114,6 +112,7 @@ collections:
               - { name: mode, label: 방식, widget: select, options: [{ label: "없음", value: none }, { label: "우리 저장소(R2)", value: file }, { label: "다른 사이트로 연결", value: link }], default: none }
               - { name: url, label: 주소, required: false, hint: "R2면 pdf/DL-0007/DL-0007_초판.pdf 처럼, 다른 사이트면 https:// 로 시작하는 주소" }
               - { name: site, label: 연결할 사이트 이름, required: false }
+              - { name: created, label: 이 파일 만든 날, required: false, hint: "예: 2024년 5월 1일 (내려받는 파일 이름에 붙습니다)" }
           - name: pdf_print
             label: PDF (인쇄용 / 인쇄용 본문)
             hint: 인쇄용 PDF가 따로 있을 때. 표지가 따로 있으면 여기는 본문을, 아래 '인쇄용 표지'에 표지를 넣습니다.
@@ -122,6 +121,7 @@ collections:
               - { name: mode, label: 방식, widget: select, options: [{ label: "없음", value: none }, { label: "우리 저장소(R2)", value: file }, { label: "다른 사이트로 연결", value: link }], default: none }
               - { name: url, label: 주소, required: false }
               - { name: site, label: 연결할 사이트 이름, required: false }
+              - { name: created, label: 이 파일 만든 날, required: false, hint: "예: 2024년 5월 1일 (내려받는 파일 이름에 붙습니다)" }
           - name: pdf_cover
             label: PDF (인쇄용 표지)
             hint: 인쇄용 표지 PDF가 본문과 따로 있을 때
@@ -130,6 +130,7 @@ collections:
               - { name: mode, label: 방식, widget: select, options: [{ label: "없음", value: none }, { label: "우리 저장소(R2)", value: file }, { label: "다른 사이트로 연결", value: link }], default: none }
               - { name: url, label: 주소, required: false }
               - { name: site, label: 연결할 사이트 이름, required: false }
+              - { name: created, label: 이 파일 만든 날, required: false, hint: "예: 2024년 5월 1일 (내려받는 파일 이름에 붙습니다)" }
           - name: epub
             label: EPUB
             widget: object
@@ -137,6 +138,7 @@ collections:
               - { name: mode, label: 방식, widget: select, options: [{ label: "없음", value: none }, { label: "우리 저장소(R2)", value: file }, { label: "다른 사이트로 연결", value: link }], default: none }
               - { name: url, label: 주소, required: false }
               - { name: site, label: 연결할 사이트 이름, required: false }
+              - { name: created, label: 이 파일 만든 날, required: false, hint: "예: 2024년 5월 1일 (내려받는 파일 이름에 붙습니다)" }
           - { name: reader, label: 온라인 읽기, widget: boolean, default: false, hint: "PDF를 읽기 자료로 바꿔 R2에 올린 뒤에 켜세요" }
           - name: sources
             label: 원본 출처
