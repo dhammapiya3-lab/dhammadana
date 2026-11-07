@@ -832,3 +832,11 @@ a.paper-request:hover{filter:brightness(1.08)}
 /* 구분 장식 그림(작게) */
 .r-fig .fig-btn img[src*="-bridge"]{max-height:26px;border:0;background:none;border-radius:0}
 .r-fig:has(img[src*="-bridge"]){margin:1em 0}
+/* 추천·협력 사이트 카드: 사이트 주소·카페 표시 */
+.lc-meta{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.lc-badge{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:600;line-height:1;padding:5px 9px;border-radius:999px;color:#fff}
+.lc-badge.naver{background:#03A94D}
+.lc-badge.naver::before{content:"N";font-weight:800;font-family:Arial,sans-serif}
+.lc-badge.daum{background:#3A6BE0}
+.lc-host{font-size:12.5px;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.lc-note{line-height:1.6}
