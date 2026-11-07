@@ -47,9 +47,9 @@
         "url": "pdf/DL-0003/DL-0003_초판_인쇄용.pdf"
       },
       "pdf_cover": {
+        "site": "",
         "mode": "file",
-        "url": "",
-        "site": ""
+        "url": "pdf/DL-0003/DL-0003_초판_인쇄용표지.pdf"
       },
       "epub": {
         "mode": "file",
