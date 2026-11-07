@@ -326,7 +326,7 @@ const PAPER_BOOKS = BOOKS.filter(b => b.press && b.paper === 'request').map(b =>
 put('paper-books.json', JSON.stringify(PAPER_BOOKS));
 put('press/request/index.html', layout({ title: '종이책 보시 신청', nav: 'press', page: 'press', body: pressShell('request', `<div class="pq">
   <h1 class="h-page">종이책 보시 신청</h1>
-  <p class="muted">我無말들에서 펴낸 책의 종이책을 법보시로 보내 드립니다. 신청 글은 모두 <b>비밀글</b>이라, 받는 분 이름·연락처·주소는 신청하신 분과 출판사만 볼 수 있습니다.</p>
+  <p class="muted">我無말들에서 펴낸 책의 종이책을 법보시(무료)로 보내 드립니다. 신청 글은 모두 <b>비밀글</b>이라, 받는 분 이름·연락처·주소는 신청하신 분과 출판사만 볼 수 있습니다.</p>
   <p class="pq-books small">지금 신청할 수 있는 책: ${PAPER_BOOKS.map(b => `『${esc(b.title)}』`).join(', ') || '없음'}</p>
   <div id="pqRoot" data-books='${esc(JSON.stringify(PAPER_BOOKS))}'><p class="muted">불러오는 중…</p></div>
   <noscript><p>이 게시판은 자바스크립트를 켜야 쓸 수 있습니다.</p></noscript>
