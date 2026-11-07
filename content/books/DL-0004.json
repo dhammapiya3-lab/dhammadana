@@ -58,8 +58,15 @@
         "site": "",
         "created": ""
       },
-      "reader": false,
-      "sources": [],
+      "reader": true,
+      "sources": [
+        {
+          "file": "pdf",
+          "url": "https://blog.naver.com/k3a3n3g3/222720005809",
+          "checked": "2026년 11월 7일",
+          "archive": ""
+        }
+      ],
       "collection": "我無말들 자체 제작",
       "collected": "",
       "permission_status": "confirmed",
