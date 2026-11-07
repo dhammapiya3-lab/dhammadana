@@ -838,3 +838,7 @@ a.paper-request:hover{filter:brightness(1.08)}
 .hl{color:#00aeef}
 :root.mode-mono .hl,:root.mode-contrast .hl{color:inherit;text-decoration:underline}
 .reflow p.r-title{font-size:1.7em;font-weight:700;text-align:center;text-indent:0;line-height:1.45;margin:2.2em 0 1.6em}
+/* DL-0010: 연꽃 구분 장식(작게), 사야도 서명(오른쪽) */
+.r-fig .fig-btn img[src*="DL-0010-aa"]{max-height:34px;border:0;border-radius:0}
+.r-fig:has(img[src*="DL-0010-aa"]){margin:1.2em 0}
+.r-fig .fig-btn img[src*="DL-0010-write"]{max-height:110px;border:0;margin:0 0 0 auto}
