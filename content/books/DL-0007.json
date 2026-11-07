@@ -83,32 +83,33 @@
       "isbn_ebook": "979-11-980922-5-0",
       "changes": "",
       "pdf": {
-        "mode": "file",
-        "url": "pdf/DL-0007/DL-0007_개정판.pdf",
+        "mode": "none",
+        "url": "",
         "site": "",
-        "created": "2026년 3월 3일"
+        "created": ""
       },
       "pdf_print": {
         "mode": "file",
         "url": "pdf/DL-0007/DL-0007_개정판_인쇄용.pdf",
         "site": "",
-        "created": ""
+        "created": "2026년 3월 3일"
       },
       "pdf_cover": {
         "mode": "file",
         "url": "pdf/DL-0007/DL-0007_개정판_인쇄용표지.pdf",
         "site": "",
-        "created": ""
+        "created": "2026년 4월 13일"
       },
       "epub": {
         "mode": "file",
         "url": "epub/DL-0007/DL-0007_개정판.epub",
         "site": "",
-        "created": "2026년 3월 3일"
+        "created": "2026년 3월 5일"
       },
       "reader": true,
       "sources": [
         {
+          "file": "",
           "url": "https://blog.naver.com/k3a3n3g3/222720005809",
           "checked": "2026년 11월 6일",
           "archive": ""
