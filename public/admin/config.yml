@@ -95,6 +95,7 @@ collections:
         summary: "{{fields.label}} {{fields.published}}"
         fields:
           - { name: label, label: 판 이름, hint: "초판, 개정1판 …" }
+          - { name: label_display, label: 책 정보에 보일 판 이름, required: false, hint: "판 이름과 다르게 보여 주고 싶을 때만. 예: 개정판 (epub는 초판)" }
           - { name: current, label: 최신판, widget: boolean, default: true }
           - { name: public, label: 공개, widget: boolean, default: true }
           - { name: page_count, label: 쪽수, widget: number, value_type: int, required: false, hint: "책의 전체 쪽수 (숫자만)" }

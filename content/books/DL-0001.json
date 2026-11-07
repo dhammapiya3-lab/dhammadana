@@ -77,6 +77,7 @@
     },
     {
       "label": "개정판",
+      "label_display": "개정판 (epub는 초판)",
       "current": true,
       "public": true,
       "page_count": 240,
