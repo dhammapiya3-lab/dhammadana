@@ -46,6 +46,7 @@
       "publisher_ebook": "我無말들",
       "isbn_ebook": "979-11-980922-8-1",
       "changes": "",
+      "hide_update": false,
       "pdf": {
         "mode": "none",
         "url": "",
@@ -98,5 +99,6 @@
   "license": "CC BY-NC-ND",
   "added": "2026-11-08",
   "order": null,
-  "hidden": false
+  "hidden": false,
+  "hide_update": true
 }
