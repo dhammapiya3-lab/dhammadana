@@ -283,6 +283,43 @@ async function wake(on, who) {
 }
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && WAKE.want.size) wake(true, [...WAKE.want][0]); });
 
+/* ---------- 화면을 잠가도 글 듣기가 이어지도록 (안드로이드, 시험 중) ----------
+   소리 없는 오디오를 함께 틀어 휴대폰이 '음악 재생 중'으로 여기게 하고, 잠금 화면에 재생·멈춤·앞뒤 단추를 둡니다. */
+const IS_ANDROID = /Android/i.test(navigator.userAgent);
+const KEEP = { a: null, on: false }; window._ddKeep = KEEP;
+function silentWav(sec = 10, rate = 8000) {
+  const n = sec * rate, b = new ArrayBuffer(44 + n), v = new DataView(b), w = (o, t) => [...t].forEach((c, i) => v.setUint8(o + i, c.charCodeAt(0)));
+  w(0, 'RIFF'); v.setUint32(4, 36 + n, true); w(8, 'WAVEfmt '); v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true);
+  v.setUint32(24, rate, true); v.setUint32(28, rate, true); v.setUint16(32, 1, true); v.setUint16(34, 8, true); w(36, 'data'); v.setUint32(40, n, true);
+  for (let i = 0; i < n; i++) v.setUint8(44 + i, 128);
+  return URL.createObjectURL(new Blob([b], { type: 'audio/wav' }));
+}
+function keepAlive(on) {
+  if (!on) {
+    if (!KEEP.on) return; KEEP.on = false;
+    if (KEEP.a) KEEP.a.pause();
+    if ('mediaSession' in navigator) { try { navigator.mediaSession.playbackState = 'none'; navigator.mediaSession.metadata = null; } catch (e) {} if (PL.ms) PL.ms(); }
+    return;
+  }
+  if (!IS_ANDROID || !R || !ttsOpt().bg) return;
+  const pa = $('#pAudio'); if (pa && !pa.paused) pa.pause();
+  if (!KEEP.a) { KEEP.a = new Audio(silentWav()); KEEP.a.loop = true; }
+  KEEP.on = true; KEEP.a.play().catch(() => {});
+  if (!('mediaSession' in navigator)) return;
+  const ms = navigator.mediaSession, h = (k, f) => { try { ms.setActionHandler(k, f); } catch (e) {} };
+  try {
+    const cs = chapters(), c = cs[chapterOf(R.i + 1)];
+    ms.metadata = new MediaMetadata({ title: R.title || '글 듣기', artist: c && c.title ? c.title : '', album: '테라와다불교 법보시 도서관 · 글 듣기', artwork: [{ src: R.cover || '/images/og.jpg', sizes: '512x512' }] });
+    ms.playbackState = 'playing';
+  } catch (e) {}
+  const pos = () => (R && R.ttsPos && R.ttsPos.i === R.i ? R.ttsPos.k : 0);
+  h('play', () => { if (!R) return; if (!R.speaking) speak(pos()); });
+  h('pause', () => { if (!R || !R.speaking) return; stopSpeak(true, true); KEEP.a.pause(); try { ms.playbackState = 'paused'; } catch (e) {} });
+  h('nexttrack', () => { if (!R) return; const k = pos() + 1; stopSpeak(true, true); if (k < paras(R.pages[R.i].text).length) speak(k); else if (R.i < R.pages.length - 1) { R.i++; renderReader(); speak(); } });
+  h('previoustrack', () => { if (!R) return; stopSpeak(true, true); speak(Math.max(0, pos() - 1)); });
+  try { h('seekto', null); h('seekbackward', null); h('seekforward', null); } catch (e) {}
+}
+
 /* ---------- 법문 재생기 ---------- */
 const PL = { pl: null, i: 0, list: [] };
 const fmtT = s => { if (!isFinite(s)) return '0:00'; s = Math.floor(s); const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = String(s % 60).padStart(2, '0'); return h ? `${h}:${String(m).padStart(2, '0')}:${x}` : `${m}:${x}`; };
@@ -291,6 +328,8 @@ function playEp(plId, i, list) {
   list = list || epList(plId); if (!list[i]) return;
   PL.pl = plId; PL.i = i; PL.list = list;
   const e = list[i], a = $('#pAudio');
+  if (R && R.speaking) stopSpeak(true);
+  keepAlive(false); if (PL.ms) PL.ms();
   a.src = e.audio; a.playbackRate = +$('#pRate').value;
   const pos = store.get('ppos-' + e.audio, 0);
   a.onloadedmetadata = () => { if (pos > 5 && pos < a.duration - 5) a.currentTime = pos; };
@@ -327,14 +366,15 @@ function initPlayer() {
     wake(on && !a.paused, 'player');
   };
   $('#pLock').onclick = () => setLock(!PL.locked);
-  if ('mediaSession' in navigator) {
+  PL.ms = () => { if (!('mediaSession' in navigator)) return;
     const ms = navigator.mediaSession, h = (k, f) => { try { ms.setActionHandler(k, f); } catch (e) {} };
     h('play', () => a.play());
     h('pause', () => { if (PL.locked) return; a.pause(); });
     h('previoustrack', () => { if (!PL.locked) $('#pPrev').onclick(); });
     h('nexttrack', () => { if (!PL.locked) $('#pNext').onclick(); });
     h('seekto', d => { if (!PL.locked && d.seekTime != null) a.currentTime = d.seekTime; });
-  }
+  };
+  PL.ms();
   let last = 0;
   a.ontimeupdate = () => {
     $('#pCur').textContent = fmtT(a.currentTime); $('#pDur').textContent = fmtT(a.duration);
@@ -875,12 +915,12 @@ function ttsPanel() {
     <div class="tts-sub">읽는 방식</div>
     <div class="tts-row"><label>문단 사이 쉼</label>${sel('pause', [[0, '쉬지 않음'], [0.3, '짧게'], [0.8, '보통'], [1.5, '길게']])}</div>
     <div class="tts-row"><label>꺼짐 예약</label>${sel('sleep', [[0, '끄지 않음'], [15, '15분 뒤'], [30, '30분 뒤'], [60, '1시간 뒤']])}</div>
-    ${ck('chapterStop', '한 장이 끝나면 멈추기')}${ck('follow', '읽는 곳을 따라 화면 움직이기')}
+    ${ck('chapterStop', '한 장이 끝나면 멈추기')}${ck('follow', '읽는 곳을 따라 화면 움직이기')}${IS_ANDROID ? ck('bg', '화면을 잠가도 계속 듣기 (시험 중)', '잠금 화면에 재생·멈춤 단추가 나옵니다. 다른 음악은 멈춥니다') : ''}
     <div class="row"><button class="tbtn" id="ttsTry">▶ 미리 듣기</button><button class="tbtn" id="ttsReset">처음 설정으로</button></div>
     <p class="note">목소리는 이 기기에 깔린 한국어 목소리 가운데서 고릅니다. 남성 목소리가 목록에 없으면 ‘낮은 목소리’를 고르거나, 컴퓨터에서는 마이크로소프트 엣지(Edge) 브라우저로 열면 남성 목소리(InJoon, Hyunsu)를 고를 수 있습니다. 설정은 이 기기의 브라우저에 저장되고, 듣는 중에 바꾸면 다음 문단부터 적용됩니다. 빨리어 낱말 목록: Digital Pāḷi Dictionary (CC BY-NC-SA 4.0).</p>`;
 }
 // 듣기 설정 (이 브라우저에 저장)
-const TTS_DEF = { voice: '', rate: 1, pitch: 1, gloss: false, sym: false, en: true, pali: true, hanja: true, fn: false, table: false, enVoice: true, enRate: 0.85, paren: true, brack: true, pause: 0.3, chapterStop: false, sleep: 0, follow: true };
+const TTS_DEF = { voice: '', rate: 1, pitch: 1, gloss: false, sym: false, en: true, pali: true, hanja: true, fn: false, table: false, enVoice: true, enRate: 0.85, paren: true, brack: true, pause: 0.3, chapterStop: false, sleep: 0, follow: true, bg: true };
 const ttsOpt = () => Object.assign({}, TTS_DEF, store.get('tts', {}));
 const SYM_NAME = { '(': '괄호 열고', ')': '괄호 닫고', '[': '대괄호 열고', ']': '대괄호 닫고', '‘': '작은따옴표', '’': '작은따옴표', '“': '큰따옴표', '”': '큰따옴표', '"': '큰따옴표', "'": '작은따옴표', '「': '낫표', '」': '낫표', '『': '겹낫표', '』': '겹낫표', '《': '겹화살괄호', '》': '겹화살괄호', '〈': '홑화살괄호', '〉': '홑화살괄호', '<': '홑화살괄호', '>': '홑화살괄호', '＜': '홑화살괄호', '＞': '홑화살괄호', '·': '가운뎃점', 'ㆍ': '가운뎃점', '…': '줄임표', '~': '물결표', '*': '별표', '/': '빗금', '|': '세로줄', '—': '줄표', '–': '줄표', '－': '붙임표' };
 const SYM_RE = /[()\[\]‘’“”"'「」『』《》〈〉<>＜＞·ㆍ…~*/|—–－]/g;
@@ -1000,7 +1040,7 @@ function speak(fromK = 0, firstText = null) {
   if (!sentences.length) { if (R.i < R.pages.length - 1) { R.i++; renderReader(); setTimeout(() => speak(), 200); } return; }
   try { speechSynthesis.cancel(); } catch (e) {}
   if (!R.speaking) { R.ttsStart = Date.now(); R.ttsChapter = chapterOf(R.i + 1); }
-  wake(true, 'tts');
+  wake(true, 'tts'); keepAlive(true);
   R.speaking = true; renderReader(); let k = Math.min(fromK, sentences.length - 1), first = firstText;
   const lastBody = (() => { for (let j = sentences.length - 1; j >= 0; j--) if (!isFootnote(sentences[j]) && !FIG_RE.test(sentences[j]) && !isTable(sentences[j])) return j; return -1; })();
   const pv = pickVoice(o), voice = pv.voice;
@@ -1015,6 +1055,7 @@ function speak(fromK = 0, firstText = null) {
       R.i++; renderReader(); speak(); return;
     }
     if (R.ttsSkip && R.ttsSkip.n === p.n && R.ttsSkip.k === k) { R.ttsSkip = null; k++; next(); return; }  // 앞 쪽 끝에서 이미 이어 읽은 문단
+    R.ttsPos = { i: R.i, k };
     let raw = first && first.trim() ? first : sentences[k]; first = null;
     // 쪽 끝에서 문장이 끊긴 문단은 다음 쪽 첫 문단과 이어서 한 번에 읽기 (끊어 읽으면 낱말이 뭉개짐)
     if (k === lastBody && chapterOf(R.i + 1) === chapterOf(R.i + 2) && !isFootnote(raw) && !isHead(raw) && !/[.?!。…”’"')\]」』:]\s*$/.test(raw.replace(/\[\^[^\]]+\]\s*$/, ''))) {
@@ -1035,7 +1076,7 @@ function speak(fromK = 0, firstText = null) {
   };
   next();
 }
-function stopSpeak(rerender) { try { speechSynthesis.cancel(); } catch (e) {} wake(false, 'tts'); if (R) { R.ttsLocked = false; const was = R.speaking; R.speaking = false; if (rerender && was) renderReader(); } }
+function stopSpeak(rerender, soft) { try { speechSynthesis.cancel(); } catch (e) {} wake(false, 'tts'); if (!soft) keepAlive(false); if (R) { R.ttsLocked = false; const was = R.speaking; R.speaking = false; if (rerender && was) renderReader(); } }
 document.addEventListener('keydown', e => {
   if (!R || e.target.matches('input,select,textarea')) return;
   if (R.ttsLocked && e.key !== 'Tab') { if ([' ', 'ArrowRight', 'ArrowLeft', 'Escape'].includes(e.key)) { e.preventDefault(); toast('듣기가 잠겨 있습니다'); } return; }
