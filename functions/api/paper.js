@@ -5,10 +5,11 @@ import { canWriteToken as canWrite } from './_auth.js';
 const json = (o, status = 200) => new Response(JSON.stringify(o), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
 const STATUS = { received: '접수', sent: '발송 완료' };
 const KEEP_DAYS = 90;  // 발송 완료 뒤 90일이 지나면 지움
-const LIM = { name: 40, phone: 30, postcode: 10, address: 200, memo: 1000, qty: 3 };
+const LIM = { name: 40, phone: 30, address: 200, memo: 1000 };
 
 const mask = n => { const s = [...String(n || '').trim()]; return s.length <= 1 ? (s[0] || '') + '○' : s[0] + '○'.repeat(s.length - 1); };
 const clean = (s, n) => String(s ?? '').replace(/[\u0000-\u0008\u000b-\u001f]/g, '').trim().slice(0, n);
+const rid = () => [...crypto.getRandomValues(new Uint8Array(4))].map(x => x.toString(16).padStart(2, '0')).join('');
 const newId = () => { const d = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10).replace(/-/g, ''); const r = crypto.getRandomValues(new Uint8Array(6)); return d + '-' + [...r].map(x => x.toString(16).padStart(2, '0')).join(''); };
 const okId = id => /^\d{8}-[0-9a-f]{12}$/.test(String(id || ''));
 const hex = b => [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join('');
@@ -20,7 +21,7 @@ const sha = async s => hex(await crypto.subtle.digest('SHA-256', new TextEncoder
 
 async function getJ(env, key, def) { const o = await env.PAPER.get(key); if (!o) return def; try { return await o.json(); } catch (e) { return def; } }
 const putJ = (env, key, v) => env.PAPER.put(key, JSON.stringify(v), { httpMetadata: { contentType: 'application/json; charset=utf-8' } });
-const pub = r => ({ id: r.id, who: mask(r.name), book: r.bookTitle, qty: r.qty, date: r.created.slice(0, 10), status: r.status, edited: !!r.updated });
+const pub = r => ({ id: r.id, who: mask(r.name), book: r.bookTitle, qty: r.qty, date: r.created.slice(0, 10), status: r.status, edited: !!r.updated, replies: (r.replies || []).length });
 async function saveIndex(env, list) { await putJ(env, 'index.json', list.sort((a, b) => b.id.localeCompare(a.id))); }
 async function upsertIndex(env, r) { const l = (await getJ(env, 'index.json', [])).filter(x => x.id !== r.id); l.push(pub(r)); await saveIndex(env, l); }
 async function dropIndex(env, id) { await saveIndex(env, (await getJ(env, 'index.json', [])).filter(x => x.id !== id)); }
@@ -37,7 +38,7 @@ async function limited(env, request, kind, max, mins) {
 function mailText(r, what) {
   return [`[종이책 보시 신청] ${what}`, '',
     `신청 번호: ${r.id}`, `책: 『${r.bookTitle}』 ${r.qty}권`, `받는 분: ${r.name}`, `연락처: ${r.phone}`,
-    `주소: ${r.postcode ? '(' + r.postcode + ') ' : ''}${r.address}`, `남길 말: ${r.memo || '(없음)'}`,
+    `주소: ${r.address}`, `남길 말: ${r.memo || '(없음)'}`,
     `신청한 때: ${r.created.replace('T', ' ').slice(0, 16)}`, r.updated ? `고친 때: ${r.updated.replace('T', ' ').slice(0, 16)}` : '', '',
     '관리 화면: https://dhammadana.kr/admin/paper/'].filter(x => x !== '').join('\n');
 }
@@ -52,7 +53,7 @@ const kst = () => new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 19);
 
 function readFields(b, books) {
   const book = books.find(x => x.id === b.book);
-  const f = { book: book ? book.id : '', bookTitle: book ? book.title : '', name: clean(b.name, LIM.name), phone: clean(b.phone, LIM.phone), postcode: clean(b.postcode, LIM.postcode), address: clean(b.address, LIM.address), memo: clean(b.memo, LIM.memo), qty: Math.max(1, Math.min(20, parseInt(b.qty, 10) || 1)) };
+  const f = { book: book ? book.id : '', bookTitle: book ? book.title : '', name: clean(b.name, LIM.name), phone: clean(b.phone, LIM.phone), address: clean(b.address, LIM.address), memo: clean(b.memo, LIM.memo), qty: Math.max(1, Math.min(99999, parseInt(b.qty, 10) || 1)) };
   if (!book) return [null, '신청할 책을 골라 주세요.'];
   if (!f.name) return [null, '받는 분 이름을 적어 주세요.'];
   if (!/[0-9]{2,}.*[0-9]{3,}/.test(f.phone)) return [null, '연락처(전화번호)를 적어 주세요.'];
@@ -93,12 +94,21 @@ export async function onRequestPost(ctx) {
   const act = b.action;
 
   // ── 관리자 ──
-  if (act === 'status' || act === 'delete') {
+  if (act === 'status' || act === 'delete' || act === 'reply' || act === 'unreply') {
     const token = (request.headers.get('authorization') || '').replace(/^Bearer\s+/i, '');
     if (!(await canWrite(token))) return json({ error: '허락되지 않았습니다.' }, 401);
     if (!okId(b.id)) return json({ error: '번호 오류' }, 400);
     if (act === 'delete') { await env.PAPER.delete(`req/${b.id}.json`); await dropIndex(env, b.id); return json({ ok: true }); }
     const r = await getJ(env, `req/${b.id}.json`, null); if (!r) return json({ error: '없는 신청입니다.' }, 404);
+    // 댓글(관리자·신청자): 신청한 분이 비밀번호로 글을 열었을 때만 보임 (목록에는 '댓글 n'만)
+    if (act === 'reply' || act === 'unreply') {
+      r.replies = r.replies || [];
+      if (act === 'reply') { const text = clean(b.text, 1000); if (!text) return json({ error: '댓글 내용을 적어 주세요.' }, 400); r.replies.push({ id: rid(), at: kst(), text, by: 'admin' }); }
+      else r.replies = r.replies.filter(x => (x.id || x.at) !== (b.rid || b.at));
+      await putJ(env, `req/${r.id}.json`, r);
+      const l = (await getJ(env, 'index.json', [])).filter(x => x.id !== r.id); l.push({ ...pub(r), sentAt: r.sentAt }); await saveIndex(env, l);
+      return json({ ok: true, replies: r.replies });
+    }
     if (!STATUS[b.status]) return json({ error: '상태 오류' }, 400);
     r.status = b.status; r.sentAt = b.status === 'sent' ? kst() : '';
     await putJ(env, `req/${r.id}.json`, r);
@@ -119,13 +129,21 @@ export async function onRequestPost(ctx) {
     ctx.waitUntil(notify(env, r, '새 신청'));
     return json({ ok: true, id: r.id });
   }
-  if (act === 'view' || act === 'update' || act === 'cancel') {
+  if (act === 'view' || act === 'update' || act === 'cancel' || act === 'comment') {
     if (!okId(b.id)) return json({ error: '번호 오류' }, 400);
     if (await limited(env, request, 'pw', 20, 30)) return json({ error: '비밀번호를 너무 여러 번 넣었습니다. 30분 뒤 다시 해 주세요.' }, 429);
     const r = await getJ(env, `req/${b.id}.json`, null);
     if (!r || (await hashPw(String(b.password || ''), r.salt)) !== r.pw) return json({ error: '비밀번호가 맞지 않습니다.' }, 403);
     const { pw, salt, ...mine } = r;
     if (act === 'view') return json({ ok: true, item: mine });
+    if (act === 'comment') {  // 신청자 댓글 (발송 뒤에도 가능)
+      const text = clean(b.text, 1000); if (!text) return json({ error: '댓글 내용을 적어 주세요.' }, 400);
+      if ((r.replies || []).filter(x => x.by === 'user').length >= 30) return json({ error: '댓글이 너무 많습니다.' }, 400);
+      r.replies = r.replies || []; r.replies.push({ id: rid(), at: kst(), text, by: 'user' });
+      await putJ(env, `req/${r.id}.json`, r); await upsertIndex(env, r);
+      ctx.waitUntil(notify(env, { ...r, memo: `[신청자 댓글] ${text}` }, '신청자 댓글'));
+      const { pw: _p, salt: _s, ...out } = r; return json({ ok: true, item: out });
+    }
     if (r.status === 'sent') return json({ error: '이미 발송한 신청은 고치거나 취소할 수 없습니다.' }, 400);
     if (act === 'cancel') { await env.PAPER.delete(`req/${r.id}.json`); await dropIndex(env, r.id); ctx.waitUntil(notify(env, r, '신청 취소')); return json({ ok: true }); }
     const bl = await bookList(request); if (r.book && !bl.some(x => x.id === r.book)) bl.push({ id: r.book, title: r.bookTitle });

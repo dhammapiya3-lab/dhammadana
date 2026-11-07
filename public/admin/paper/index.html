@@ -30,6 +30,12 @@
   .acts button{border:1px solid var(--line);background:var(--paper);border-radius:8px;padding:8px 12px;cursor:pointer;font:inherit;font-size:14px;color:var(--ink)}
   .acts button.main{background:var(--robe);border-color:var(--robe);color:var(--paper)}
   .acts button.del{color:#A23A22}
+  .rp{border-top:1px dashed var(--line);padding-top:10px;margin-top:4px}
+  .rpi{background:var(--paper-2);border-radius:8px;padding:8px 12px;margin-bottom:8px}
+  .rpt{white-space:pre-wrap;font-size:15px}
+  .rpi.u{background:var(--leaf-soft)}
+  .rpdel{border:0;background:none;color:#A23A22;cursor:pointer;font-size:12.5px}
+  .rpin{width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:8px;padding:9px 12px;background:var(--paper);font:inherit;font-size:15px;margin-bottom:8px}
 </style>
 </head>
 <body>
@@ -86,12 +92,16 @@ function draw(){
   const l=ITEMS.filter(x=>!TAB||x.status===TAB).sort((a,b)=>TAB==='received'?a.id.localeCompare(b.id):b.id.localeCompare(a.id));
   $('#list').innerHTML=l.map(x=>`<div class="card" data-id="${x.id}">
     <div class="hd"><b>『${esc(x.bookTitle)}』 ${x.qty}권 · ${esc(x.name)}</b><span class="st ${x.status}">${x.status==='sent'?'발송 완료':'접수'}</span></div>
-    <dl class="rq"><dt>연락처</dt><dd>${esc(x.phone)}</dd><dt>주소</dt><dd>${x.postcode?'('+esc(x.postcode)+') ':''}${esc(x.address)}</dd><dt>남길 말</dt><dd>${esc(x.memo)||'—'}</dd>
+    <dl class="rq"><dt>연락처</dt><dd>${esc(x.phone)}</dd><dt>주소</dt><dd>${esc(x.address)}</dd><dt>남길 말</dt><dd>${esc(x.memo)||'—'}</dd>
     <dt>신청</dt><dd>${esc(x.created.replace('T',' ').slice(0,16))}${x.updated?' · 고침 '+esc(x.updated.replace('T',' ').slice(0,16)):''}${x.sentAt?' · 발송 '+esc(x.sentAt.slice(0,10)):''}</dd><dt>번호</dt><dd>${esc(x.id)}</dd></dl>
+    <div class="rp">${(x.replies||[]).map(c=>`<div class="rpi ${c.by==='user'?'u':''}"><div class="note"><b>${c.by==='user'?'신청한 분':'我無말들(나)'}</b> · ${esc(c.at.replace('T',' ').slice(0,16))} <button class="rpdel" data-rid="${esc(c.id||c.at)}">지우기</button></div><div class="rpt">${esc(c.text)}</div></div>`).join('')}
+    <textarea class="rpin" rows="2" maxlength="1000" placeholder="신청한 분에게 남길 댓글 (신청한 분만 비밀번호로 볼 수 있습니다)"></textarea><div class="acts" style="margin-bottom:10px"><button data-reply>댓글 달기</button></div></div>
     <div class="acts">${x.status==='sent'?'<button data-st="received">접수로 되돌리기</button>':'<button class="main" data-st="sent">발송 완료로 바꾸기</button>'}<button data-copy>주소·연락처 복사</button><button class="del" data-del>지우기</button></div></div>`).join('')||'<p class="note" style="margin-top:16px">해당하는 신청이 없습니다.</p>';
   document.querySelectorAll('[data-st]').forEach(b=>b.onclick=async()=>{ const id=b.closest('[data-id]').dataset.id; b.disabled=true; const j=await call({action:'status',id,status:b.dataset.st}); if(j.error) alert(j.error); load(); });
+  document.querySelectorAll('[data-reply]').forEach(b=>b.onclick=async()=>{ const c=b.closest('[data-id]'); const text=c.querySelector('.rpin').value.trim(); if(!text) return; b.disabled=true; const j=await call({action:'reply',id:c.dataset.id,text}); if(j.error) alert(j.error); load(); });
+  document.querySelectorAll('.rpdel').forEach(b=>b.onclick=async()=>{ if(!confirm('이 댓글을 지울까요?')) return; const c=b.closest('[data-id]'); const j=await call({action:'unreply',id:c.dataset.id,rid:b.dataset.rid}); if(j.error) alert(j.error); load(); });
   document.querySelectorAll('[data-del]').forEach(b=>b.onclick=async()=>{ const id=b.closest('[data-id]').dataset.id; if(!confirm('이 신청을 완전히 지울까요? 되돌릴 수 없습니다.')) return; const j=await call({action:'delete',id}); if(j.error) alert(j.error); load(); });
-  document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=()=>{ const x=ITEMS.find(i=>i.id===b.closest('[data-id]').dataset.id); const t=`${x.name} ${x.phone}\n${x.postcode?'('+x.postcode+') ':''}${x.address}`; navigator.clipboard.writeText(t).then(()=>{b.textContent='복사했습니다';setTimeout(()=>b.textContent='주소·연락처 복사',1500);}); });
+  document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=()=>{ const x=ITEMS.find(i=>i.id===b.closest('[data-id]').dataset.id); const t=`${x.name} ${x.phone}\n${x.address}`; navigator.clipboard.writeText(t).then(()=>{b.textContent='복사했습니다';setTimeout(()=>b.textContent='주소·연락처 복사',1500);}); });
 }
 start();
 })();

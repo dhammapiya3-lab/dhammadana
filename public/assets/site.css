@@ -794,3 +794,13 @@ a.paper-request:hover{filter:brightness(1.08)}
 .share-btns button:hover{border-color:var(--robe);color:var(--robe)}
 .share-btns .sh-main{grid-column:1/-1;background:var(--robe);border-color:var(--robe);color:var(--paper);font-weight:500}
 .share-btns .sh-main:hover{color:var(--paper);filter:brightness(1.08)}
+.pq-rc{font-size:12px;color:var(--robe);white-space:nowrap}
+.pq-replies{margin:6px 0 14px}
+.pq-replies h3{font-size:14.5px;margin:0 0 8px}
+.pq-reply{background:var(--robe-soft);border-radius:10px;padding:10px 14px;margin-bottom:8px}
+.pq-ra{font-size:12.5px;color:var(--robe);margin-bottom:3px}
+.pq-rt{white-space:pre-wrap;font-size:15px;line-height:1.7}
+.pq-reply.me{background:var(--paper-2);margin-left:24px}
+.pq-reply.me .pq-ra{color:var(--ink-soft)}
+.pq-cm{display:flex;gap:8px;align-items:flex-end;margin-top:8px}
+.pq-cm textarea{flex:1;font:inherit;font-size:15px;border:1px solid var(--line);border-radius:8px;padding:9px 12px;background:var(--paper);color:var(--ink)}
