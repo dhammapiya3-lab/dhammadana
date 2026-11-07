@@ -25,6 +25,7 @@
     if (!cur.length && want && BOOKS.some(b => b.id === want)) pick.set(want, 1);
     const all = [...BOOKS, ...cur.filter(x => !BOOKS.some(b => b.id === x.id))];
     return `<form class="pq-form" id="pqForm" autocomplete="on">
+      <div class="pq-row"><label for="fTitle">글 제목 <span class="muted small">(선택 · 비워 두면 '『책』 신청합니다'로 보입니다)</span></label><input id="fTitle" name="title" maxlength="60" value="${esc(v.title)}"></div>
       <fieldset class="pq-row pq-bk"><legend>신청할 책 <span class="muted small">(여러 권을 함께 고를 수 있습니다)</span></legend>
         ${all.map(b => { const on = pick.has(b.id); return `<div class="pq-bi${on ? ' on' : ''}"><label><input type="checkbox" data-bk="${esc(b.id)}" data-title="${esc(b.title)}"${on ? ' checked' : ''}> 『${esc(b.title)}』</label><span class="pq-q"><input type="number" min="1" inputmode="numeric" data-q="${esc(b.id)}" value="${on ? pick.get(b.id) : 1}" aria-label="『${esc(b.title)}』 권수"${on ? '' : ' disabled'}> 권</span></div>`; }).join('')}
       </fieldset>
@@ -51,7 +52,7 @@
     return `<ul class="pq-list">${items.map((x, i) => `<li class="${x.id === openId ? 'open' : ''}">
       <button class="pq-item" data-id="${x.id}" aria-expanded="${x.id === openId}">
         <span class="pq-no">${items.length - i}</span>
-        <span class="pq-t">🔒 비밀글 · ${esc(x.book)} 신청합니다${x.edited ? ' <span class="muted small">(고침)</span>' : ''}${x.replies ? ` <span class="pq-rc">💬 댓글 ${x.replies}</span>` : ''}</span>
+        <span class="pq-t">🔒 비밀글 · ${x.title ? esc(x.title) : esc(x.book) + ' 신청합니다'}${x.edited ? ' <span class="muted small">(고침)</span>' : ''}${x.replies ? ` <span class="pq-rc">💬 댓글 ${x.replies}</span>` : ''}</span>
         <span class="pq-w">${esc(x.who)}</span><span class="pq-d">${esc(x.date.slice(5).replace('-', '.'))}</span>
         <span class="pq-s ${x.status}">${ST[x.status] || ''}</span></button>
       ${x.id === openId ? `<div class="pq-open">${openBody(x)}</div>` : ''}</li>`).join('')}</ul>`;
@@ -60,7 +61,7 @@
     if (!mine || mine.id !== x.id) return `<form class="pq-pw" id="pqPw"><label for="pPw">비밀글입니다. 신청할 때 정한 비밀번호를 넣어 주세요.</label><div class="row"><input id="pPw" type="password" autocomplete="current-password" required><button class="btn sm" type="submit">보기</button></div><div class="pq-msg" id="pwMsg" role="status"></div></form>`;
     if (mine._edit) return formHtml(mine, true);
     const m = mine;
-    return `<dl class="pq-dl"><dt>신청 번호</dt><dd>${esc(m.id)}</dd><dt>책</dt><dd>${esc(summary(m))}</dd><dt>받는 분</dt><dd>${esc(m.name)}</dd><dt>연락처</dt><dd>${esc(m.phone)}</dd><dt>주소</dt><dd>${esc(m.address)}</dd><dt>남길 말</dt><dd>${esc(m.memo) || '—'}</dd><dt>상태</dt><dd>${ST[m.status]}</dd></dl>
+    return `<dl class="pq-dl"><dt>신청 번호</dt><dd>${esc(m.id)}</dd>${m.title ? `<dt>글 제목</dt><dd>${esc(m.title)}</dd>` : ''}<dt>책</dt><dd>${esc(summary(m))}</dd><dt>받는 분</dt><dd>${esc(m.name)}</dd><dt>연락처</dt><dd>${esc(m.phone)}</dd><dt>주소</dt><dd>${esc(m.address)}</dd><dt>남길 말</dt><dd>${esc(m.memo) || '—'}</dd><dt>상태</dt><dd>${ST[m.status]}</dd></dl>
       <div class="pq-replies"><h3>댓글</h3>${(m.replies || []).map(x => `<div class="pq-reply ${x.by === 'user' ? 'me' : ''}"><div class="pq-ra">${x.by === 'user' ? '신청한 분' : '담마삐야'} · ${esc(x.at.slice(5, 16).replace('T', ' ').replace('-', '.'))}</div><div class="pq-rt">${esc(x.text)}</div></div>`).join('') || '<p class="muted small">아직 댓글이 없습니다.</p>'}
         <form class="pq-cm" id="pqCm"><textarea id="cmText" rows="2" maxlength="1000" placeholder="출판사에 남길 댓글" required></textarea><button class="btn sm" type="submit">댓글 달기</button></form></div>
       ${m.status === 'sent' ? '<p class="muted small">발송한 신청은 고치거나 취소할 수 없습니다.</p>' : '<div class="pq-btns"><button class="btn sm" id="pqEdit">고치기</button><button class="btn sm ghost" id="pqCancel">신청 취소</button></div>'}
@@ -133,7 +134,7 @@
         e.preventDefault(); const msg = ef.querySelector('#pqMsg'); msg.className = 'pq-msg'; msg.textContent = '저장하는 중…';
         const j = await api({ action: 'update', id: openId, password: pwKeep, ...formData(ef) });
         if (j.error) { msg.className = 'pq-msg err'; msg.textContent = j.error; return; }
-        mine = j.item; const it = items.find(x => x.id === openId); if (it) { it.book = booksOf(mine).map(x => `『${x.title}』`).join(', '); it.edited = true; }
+        mine = j.item; const it = items.find(x => x.id === openId); if (it) { it.book = booksOf(mine).map(x => `『${x.title}』`).join(', '); it.title = mine.title || ''; it.edited = true; }
         redrawList(); const m2 = document.getElementById('pqMsg2'); if (m2) { m2.className = 'pq-msg ok'; m2.textContent = '고친 내용을 저장했습니다.'; }
       };
     }

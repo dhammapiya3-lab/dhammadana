@@ -5,7 +5,7 @@ import { canWriteToken as canWrite } from './_auth.js';
 const json = (o, status = 200) => new Response(JSON.stringify(o), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
 const STATUS = { received: '접수', sent: '발송 완료' };
 const KEEP_DAYS = 90;  // 발송 완료 뒤 90일이 지나면 지움
-const LIM = { name: 40, phone: 30, address: 200, memo: 1000 };
+const LIM = { title: 60, name: 40, phone: 30, address: 200, memo: 1000 };
 
 const mask = n => { const s = [...String(n || '').trim()]; return s.length <= 1 ? (s[0] || '') + '○' : s[0] + '○'.repeat(s.length - 1); };
 const clean = (s, n) => String(s ?? '').replace(/[\u0000-\u0008\u000b-\u001f]/g, '').trim().slice(0, n);
@@ -25,7 +25,7 @@ const putJ = (env, key, v) => env.PAPER.put(key, JSON.stringify(v), { httpMetada
 const booksOf = r => r.books && r.books.length ? r.books : (r.book ? [{ id: r.book, title: r.bookTitle, qty: r.qty }] : []);
 const summary = r => booksOf(r).map(x => `『${x.title}』 ${x.qty}권`).join(', ');
 // 공개 목록: 책 제목만 (권수는 신청한 분·관리자만)
-const pub = r => ({ v: 2, id: r.id, who: mask(r.name), book: booksOf(r).map(x => `『${x.title}』`).join(', '), date: r.created.slice(0, 10), status: r.status, edited: !!r.updated, replies: (r.replies || []).length });
+const pub = r => ({ v: 3, id: r.id, who: mask(r.name), book: booksOf(r).map(x => `『${x.title}』`).join(', '), title: r.title || '', date: r.created.slice(0, 10), status: r.status, edited: !!r.updated, replies: (r.replies || []).length });
 async function saveIndex(env, list) { await putJ(env, 'index.json', list.sort((a, b) => b.id.localeCompare(a.id))); }
 async function upsertIndex(env, r) { const l = (await getJ(env, 'index.json', [])).filter(x => x.id !== r.id); l.push(pub(r)); await saveIndex(env, l); }
 async function dropIndex(env, id) { await saveIndex(env, (await getJ(env, 'index.json', [])).filter(x => x.id !== id)); }
@@ -41,7 +41,7 @@ async function limited(env, request, kind, max, mins) {
 
 function mailText(r, what) {
   return [`[종이책 보시 신청] ${what}`, '',
-    `신청 번호: ${r.id}`, `책: ${summary(r)}`, `받는 분: ${r.name}`, `연락처: ${r.phone}`,
+    `신청 번호: ${r.id}`, r.title ? `글 제목: ${r.title}` : '', `책: ${summary(r)}`, `받는 분: ${r.name}`, `연락처: ${r.phone}`,
     `주소: ${r.address}`, `남길 말: ${r.memo || '(없음)'}`,
     `신청한 때: ${r.created.replace('T', ' ').slice(0, 16)}`, r.updated ? `고친 때: ${r.updated.replace('T', ' ').slice(0, 16)}` : '', '',
     '관리 화면: https://dhammadana.kr/admin/paper/'].filter(x => x !== '').join('\n');
@@ -61,7 +61,7 @@ function readFields(b, books) {
     const bk = books.find(y => y.id === (x && x.id)); if (!bk || seen.has(bk.id)) continue; seen.add(bk.id);
     list.push({ id: bk.id, title: bk.title, qty: Math.max(1, Math.min(99999, parseInt(x.qty, 10) || 1)) });
   }
-  const f = { books: list, book: '', bookTitle: '', qty: 0, name: clean(b.name, LIM.name), phone: clean(b.phone, LIM.phone), address: clean(b.address, LIM.address), memo: clean(b.memo, LIM.memo) };
+  const f = { title: clean(b.title, LIM.title), books: list, book: '', bookTitle: '', qty: 0, name: clean(b.name, LIM.name), phone: clean(b.phone, LIM.phone), address: clean(b.address, LIM.address), memo: clean(b.memo, LIM.memo) };
   if (!list.length) return [null, '신청할 책을 하나 이상 골라 주세요.'];
   if (!f.name) return [null, '받는 분 이름을 적어 주세요.'];
   if (!/[0-9]{2,}.*[0-9]{3,}/.test(f.phone)) return [null, '연락처(전화번호)를 적어 주세요.'];
@@ -92,7 +92,7 @@ export async function onRequestGet({ request, env }) {
     return json({ ready: true, notify: !!env.PAPER_NOTIFY_URL, items });
   }
   let l = await getJ(env, 'index.json', []);
-  if (l.some(x => x.v !== 2)) {  // 예전 목록 형식이면 신청 글에서 다시 만듦
+  if (l.some(x => x.v !== 3)) {  // 예전 목록 형식이면 신청 글에서 다시 만듦
     const rs = (await Promise.all(l.map(x => getJ(env, `req/${x.id}.json`, null)))).filter(Boolean);
     l = rs.map(r => ({ ...pub(r), sentAt: r.sentAt || '' })); await saveIndex(env, l);
   }
