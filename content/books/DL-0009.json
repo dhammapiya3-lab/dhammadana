@@ -48,10 +48,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "2026년 11월 8일",
         "mode": "file",
-        "url": "pdf/DL-0009/DL-0009_초판.pdf"
+        "url": "pdf/DL-0009/DL-0009_초판.pdf",
+        "site": "",
+        "created": "2025년 3월 10일"
       },
       "pdf_print": {
         "mode": "none",
@@ -66,10 +66,10 @@
         "created": ""
       },
       "epub": {
-        "site": "",
-        "created": "2026년 11월 8일",
         "mode": "file",
-        "url": "epub/DL-0009/DL-0009_초판.epub"
+        "url": "epub/DL-0009/DL-0009_초판.epub",
+        "site": "",
+        "created": "2025년 6월 18일"
       },
       "reader": true,
       "sources": [
