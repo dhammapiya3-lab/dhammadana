@@ -34,22 +34,22 @@
       "isbn_ebook": "979-11-980922-0-5",
       "changes": "",
       "pdf": {
-        "site": "",
         "mode": "file",
         "url": "pdf/DL-0005/DL-0005_개정3판.pdf",
+        "site": "",
         "created": "2026년 11월 3일"
       },
       "pdf_print": {
-        "site": "",
         "mode": "file",
         "url": "pdf/DL-0005/DL-0005_개정3판_인쇄용.pdf",
-        "created": ""
+        "site": "",
+        "created": "2026년 11월 4일"
       },
       "pdf_cover": {
-        "site": "",
         "mode": "file",
         "url": "pdf/DL-0005/DL-0005_개정3판_인쇄용표지.pdf",
-        "created": ""
+        "site": "",
+        "created": "2024년 11월 15일"
       },
       "epub": {
         "mode": "none",
