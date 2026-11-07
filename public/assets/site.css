@@ -804,3 +804,12 @@ a.paper-request:hover{filter:brightness(1.08)}
 .pq-reply.me .pq-ra{color:var(--ink-soft)}
 .pq-cm{display:flex;gap:8px;align-items:flex-end;margin-top:8px}
 .pq-cm textarea{flex:1;font:inherit;font-size:15px;border:1px solid var(--line);border-radius:8px;padding:9px 12px;background:var(--paper);color:var(--ink)}
+.pq-bk{border:0;padding:0;margin:0}
+.pq-bk legend{font-size:14px;font-weight:500;margin-bottom:6px;padding:0}
+.pq-bi{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin-bottom:6px;background:var(--paper)}
+.pq-bi.on{border-color:var(--robe);background:var(--robe-soft)}
+.pq-bi label{display:flex;align-items:center;gap:8px;cursor:pointer;font-size:15px;flex:1}
+.pq-bi input[type=checkbox]{width:18px;height:18px;accent-color:var(--robe)}
+.pq-q{display:flex;align-items:center;gap:6px;font-size:14px;white-space:nowrap}
+.pq-form .pq-q input{width:84px;padding:6px 8px;text-align:right}
+.pq-q input:disabled{opacity:.45}

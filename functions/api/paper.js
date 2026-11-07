@@ -21,7 +21,10 @@ const sha = async s => hex(await crypto.subtle.digest('SHA-256', new TextEncoder
 
 async function getJ(env, key, def) { const o = await env.PAPER.get(key); if (!o) return def; try { return await o.json(); } catch (e) { return def; } }
 const putJ = (env, key, v) => env.PAPER.put(key, JSON.stringify(v), { httpMetadata: { contentType: 'application/json; charset=utf-8' } });
-const pub = r => ({ id: r.id, who: mask(r.name), book: r.bookTitle, qty: r.qty, date: r.created.slice(0, 10), status: r.status, edited: !!r.updated, replies: (r.replies || []).length });
+// 책 여러 권: r.books = [{ id, title, qty }] (예전 한 권짜리 r.book·bookTitle·qty 도 읽음)
+const booksOf = r => r.books && r.books.length ? r.books : (r.book ? [{ id: r.book, title: r.bookTitle, qty: r.qty }] : []);
+const summary = r => booksOf(r).map(x => `『${x.title}』 ${x.qty}권`).join(', ');
+const pub = r => ({ id: r.id, who: mask(r.name), book: summary(r), qty: booksOf(r).reduce((a, x) => a + x.qty, 0), date: r.created.slice(0, 10), status: r.status, edited: !!r.updated, replies: (r.replies || []).length });
 async function saveIndex(env, list) { await putJ(env, 'index.json', list.sort((a, b) => b.id.localeCompare(a.id))); }
 async function upsertIndex(env, r) { const l = (await getJ(env, 'index.json', [])).filter(x => x.id !== r.id); l.push(pub(r)); await saveIndex(env, l); }
 async function dropIndex(env, id) { await saveIndex(env, (await getJ(env, 'index.json', [])).filter(x => x.id !== id)); }
@@ -37,7 +40,7 @@ async function limited(env, request, kind, max, mins) {
 
 function mailText(r, what) {
   return [`[종이책 보시 신청] ${what}`, '',
-    `신청 번호: ${r.id}`, `책: 『${r.bookTitle}』 ${r.qty}권`, `받는 분: ${r.name}`, `연락처: ${r.phone}`,
+    `신청 번호: ${r.id}`, `책: ${summary(r)}`, `받는 분: ${r.name}`, `연락처: ${r.phone}`,
     `주소: ${r.address}`, `남길 말: ${r.memo || '(없음)'}`,
     `신청한 때: ${r.created.replace('T', ' ').slice(0, 16)}`, r.updated ? `고친 때: ${r.updated.replace('T', ' ').slice(0, 16)}` : '', '',
     '관리 화면: https://dhammadana.kr/admin/paper/'].filter(x => x !== '').join('\n');
@@ -46,15 +49,19 @@ async function notify(env, r, what) {
   if (!env.PAPER_NOTIFY_URL) return;
   try {
     await fetch(env.PAPER_NOTIFY_URL, { method: 'POST', headers: { 'content-type': 'text/plain; charset=utf-8' },
-      body: JSON.stringify({ key: env.PAPER_NOTIFY_KEY || '', subject: `[종이책 보시 신청] ${what} · 『${r.bookTitle}』 ${r.name}`, body: mailText(r, what) }) });
+      body: JSON.stringify({ key: env.PAPER_NOTIFY_KEY || '', subject: `[종이책 보시 신청] ${what} · ${r.name} · ${summary(r)}`.slice(0, 160), body: mailText(r, what) }) });
   } catch (e) {}
 }
 const kst = () => new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 19);
 
 function readFields(b, books) {
-  const book = books.find(x => x.id === b.book);
-  const f = { book: book ? book.id : '', bookTitle: book ? book.title : '', name: clean(b.name, LIM.name), phone: clean(b.phone, LIM.phone), address: clean(b.address, LIM.address), memo: clean(b.memo, LIM.memo), qty: Math.max(1, Math.min(99999, parseInt(b.qty, 10) || 1)) };
-  if (!book) return [null, '신청할 책을 골라 주세요.'];
+  const seen = new Set(), list = [];
+  for (const x of Array.isArray(b.books) ? b.books : []) {
+    const bk = books.find(y => y.id === (x && x.id)); if (!bk || seen.has(bk.id)) continue; seen.add(bk.id);
+    list.push({ id: bk.id, title: bk.title, qty: Math.max(1, Math.min(99999, parseInt(x.qty, 10) || 1)) });
+  }
+  const f = { books: list, book: '', bookTitle: '', qty: 0, name: clean(b.name, LIM.name), phone: clean(b.phone, LIM.phone), address: clean(b.address, LIM.address), memo: clean(b.memo, LIM.memo) };
+  if (!list.length) return [null, '신청할 책을 하나 이상 골라 주세요.'];
   if (!f.name) return [null, '받는 분 이름을 적어 주세요.'];
   if (!/[0-9]{2,}.*[0-9]{3,}/.test(f.phone)) return [null, '연락처(전화번호)를 적어 주세요.'];
   if (f.address.length < 5) return [null, '받을 주소를 적어 주세요.'];
@@ -146,7 +153,7 @@ export async function onRequestPost(ctx) {
     }
     if (r.status === 'sent') return json({ error: '이미 발송한 신청은 고치거나 취소할 수 없습니다.' }, 400);
     if (act === 'cancel') { await env.PAPER.delete(`req/${r.id}.json`); await dropIndex(env, r.id); ctx.waitUntil(notify(env, r, '신청 취소')); return json({ ok: true }); }
-    const bl = await bookList(request); if (r.book && !bl.some(x => x.id === r.book)) bl.push({ id: r.book, title: r.bookTitle });
+    const bl = await bookList(request); for (const x of booksOf(r)) if (!bl.some(y => y.id === x.id)) bl.push({ id: x.id, title: x.title });
     const [f, err] = readFields(b, bl); if (err) return json({ error: err }, 400);
     Object.assign(r, f, { updated: kst() });
     await putJ(env, `req/${r.id}.json`, r); await upsertIndex(env, r);

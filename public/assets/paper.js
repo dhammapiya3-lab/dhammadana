@@ -21,10 +21,13 @@
     <li>동의하지 않으실 수 있지만, 동의하지 않으면 신청할 수 없습니다.</li></ul></details>`;
 
   function formHtml(v = {}, edit = false) {
-    const book = v.book || want || (BOOKS[0] && BOOKS[0].id);
+    const cur = booksOf(v), pick = new Map(cur.map(x => [x.id, x.qty]));
+    if (!cur.length && want && BOOKS.some(b => b.id === want)) pick.set(want, 1);
+    const all = [...BOOKS, ...cur.filter(x => !BOOKS.some(b => b.id === x.id))];
     return `<form class="pq-form" id="pqForm" autocomplete="on">
-      <div class="pq-row"><label for="fBook">신청할 책</label><select id="fBook" name="book" required>${BOOKS.map(b => `<option value="${b.id}"${b.id === book ? ' selected' : ''}>${esc(b.title)}</option>`).join('')}${v.book && !BOOKS.some(b => b.id === v.book) ? `<option value="${esc(v.book)}" selected>${esc(v.bookTitle)}</option>` : ''}</select></div>
-      <div class="pq-row sm"><label for="fQty">권수</label><input id="fQty" name="qty" type="number" min="1" value="${esc(v.qty || 1)}" required></div>
+      <fieldset class="pq-row pq-bk"><legend>신청할 책 <span class="muted small">(여러 권을 함께 고를 수 있습니다)</span></legend>
+        ${all.map(b => { const on = pick.has(b.id); return `<div class="pq-bi${on ? ' on' : ''}"><label><input type="checkbox" data-bk="${esc(b.id)}" data-title="${esc(b.title)}"${on ? ' checked' : ''}> 『${esc(b.title)}』</label><span class="pq-q"><input type="number" min="1" inputmode="numeric" data-q="${esc(b.id)}" value="${on ? pick.get(b.id) : 1}" aria-label="『${esc(b.title)}』 권수"${on ? '' : ' disabled'}> 권</span></div>`; }).join('')}
+      </fieldset>
       <div class="pq-row"><label for="fName">받는 분 이름</label><input id="fName" name="name" maxlength="40" value="${esc(v.name)}" autocomplete="name" required></div>
       <div class="pq-row"><label for="fPhone">연락처 (전화번호)</label><input id="fPhone" name="phone" maxlength="30" inputmode="tel" value="${esc(v.phone)}" autocomplete="tel" placeholder="010-0000-0000" required></div>
       <div class="pq-row"><label for="fAddr">받을 주소</label><textarea id="fAddr" name="address" maxlength="200" rows="2" autocomplete="street-address" required>${esc(v.address)}</textarea></div>
@@ -37,14 +40,18 @@
       <div class="pq-btns"><button class="btn" type="submit">${edit ? '고친 내용 저장' : '신청하기'}</button>${edit ? '<button class="btn ghost" type="button" id="pqEditCancel">그만두기</button>' : ''}</div>
     </form>`;
   }
-  const formData = f => Object.fromEntries(new FormData(f).entries());
+  const booksOf = v => v && v.books && v.books.length ? v.books : (v && v.book ? [{ id: v.book, title: v.bookTitle, qty: v.qty }] : []);
+  const summary = v => booksOf(v).map(x => `『${x.title}』 ${x.qty}권`).join(', ');
+  const pickedBooks = f => [...f.querySelectorAll('[data-bk]:checked')].map(c => ({ id: c.dataset.bk, qty: +(f.querySelector(`[data-q="${c.dataset.bk}"]`).value || 1) }));
+  const bindBooks = f => f.querySelectorAll('[data-bk]').forEach(c => c.onchange = () => { const q = f.querySelector(`[data-q="${c.dataset.bk}"]`); q.disabled = !c.checked; c.closest('.pq-bi').classList.toggle('on', c.checked); if (c.checked) q.focus(); });
+  const formData = f => ({ ...Object.fromEntries(new FormData(f).entries()), books: pickedBooks(f) });
 
   function listHtml() {
     if (!items.length) return '<p class="muted pq-empty">아직 신청 글이 없습니다.</p>';
     return `<ul class="pq-list">${items.map((x, i) => `<li class="${x.id === openId ? 'open' : ''}">
       <button class="pq-item" data-id="${x.id}" aria-expanded="${x.id === openId}">
         <span class="pq-no">${items.length - i}</span>
-        <span class="pq-t">🔒 비밀글 · 『${esc(x.book)}』 ${x.qty}권${x.edited ? ' <span class="muted small">(고침)</span>' : ''}${x.replies ? ` <span class="pq-rc">💬 댓글 ${x.replies}</span>` : ''}</span>
+        <span class="pq-t">🔒 비밀글 · ${esc(x.book)}${x.edited ? ' <span class="muted small">(고침)</span>' : ''}${x.replies ? ` <span class="pq-rc">💬 댓글 ${x.replies}</span>` : ''}</span>
         <span class="pq-w">${esc(x.who)}</span><span class="pq-d">${esc(x.date.slice(5).replace('-', '.'))}</span>
         <span class="pq-s ${x.status}">${ST[x.status] || ''}</span></button>
       ${x.id === openId ? `<div class="pq-open">${openBody(x)}</div>` : ''}</li>`).join('')}</ul>`;
@@ -53,7 +60,7 @@
     if (!mine || mine.id !== x.id) return `<form class="pq-pw" id="pqPw"><label for="pPw">비밀글입니다. 신청할 때 정한 비밀번호를 넣어 주세요.</label><div class="row"><input id="pPw" type="password" autocomplete="current-password" required><button class="btn sm" type="submit">보기</button></div><div class="pq-msg" id="pwMsg" role="status"></div></form>`;
     if (mine._edit) return formHtml(mine, true);
     const m = mine;
-    return `<dl class="pq-dl"><dt>신청 번호</dt><dd>${esc(m.id)}</dd><dt>책</dt><dd>『${esc(m.bookTitle)}』 ${m.qty}권</dd><dt>받는 분</dt><dd>${esc(m.name)}</dd><dt>연락처</dt><dd>${esc(m.phone)}</dd><dt>주소</dt><dd>${esc(m.address)}</dd><dt>남길 말</dt><dd>${esc(m.memo) || '—'}</dd><dt>상태</dt><dd>${ST[m.status]}</dd></dl>
+    return `<dl class="pq-dl"><dt>신청 번호</dt><dd>${esc(m.id)}</dd><dt>책</dt><dd>${esc(summary(m))}</dd><dt>받는 분</dt><dd>${esc(m.name)}</dd><dt>연락처</dt><dd>${esc(m.phone)}</dd><dt>주소</dt><dd>${esc(m.address)}</dd><dt>남길 말</dt><dd>${esc(m.memo) || '—'}</dd><dt>상태</dt><dd>${ST[m.status]}</dd></dl>
       <div class="pq-replies"><h3>댓글</h3>${(m.replies || []).map(x => `<div class="pq-reply ${x.by === 'user' ? 'me' : ''}"><div class="pq-ra">${x.by === 'user' ? '신청한 분' : '我無말들'} · ${esc(x.at.slice(5, 16).replace('T', ' ').replace('-', '.'))}</div><div class="pq-rt">${esc(x.text)}</div></div>`).join('') || '<p class="muted small">아직 댓글이 없습니다.</p>'}
         <form class="pq-cm" id="pqCm"><textarea id="cmText" rows="2" maxlength="1000" placeholder="출판사에 남길 댓글" required></textarea><button class="btn sm" type="submit">댓글 달기</button></form></div>
       ${m.status === 'sent' ? '<p class="muted small">발송한 신청은 고치거나 취소할 수 없습니다.</p>' : '<div class="pq-btns"><button class="btn sm" id="pqEdit">고치기</button><button class="btn sm ghost" id="pqCancel">신청 취소</button></div>'}
@@ -77,8 +84,10 @@
     document.getElementById('pqWriteBtn').onclick = () => { const w = document.getElementById('write'); if (w.hidden) openWrite(true); else { w.hidden = true; document.getElementById('pqWriteBtn').setAttribute('aria-expanded', 'false'); } };
     const t0 = Date.now();
     const f = document.querySelector('#write #pqForm');
+    if (f) bindBooks(f);
     if (f) f.onsubmit = async e => {
       e.preventDefault(); const msg = f.querySelector('#pqMsg'); const btn = f.querySelector('[type=submit]');
+      if (!pickedBooks(f).length) { msg.className = 'pq-msg err'; msg.textContent = '신청할 책을 하나 이상 골라 주세요.'; return; }
       btn.disabled = true; msg.className = 'pq-msg'; msg.textContent = '보내는 중…';
       const j = await api({ action: 'create', t: t0, ...formData(f), agree: f.agree.checked });
       btn.disabled = false;
@@ -118,12 +127,13 @@
     };
     const ef = root.querySelector('.pq-open #pqForm');
     if (ef) {
+      bindBooks(ef);
       ef.querySelector('#pqEditCancel').onclick = () => { mine._edit = false; redrawList(); };
       ef.onsubmit = async e => {
         e.preventDefault(); const msg = ef.querySelector('#pqMsg'); msg.className = 'pq-msg'; msg.textContent = '저장하는 중…';
         const j = await api({ action: 'update', id: openId, password: pwKeep, ...formData(ef) });
         if (j.error) { msg.className = 'pq-msg err'; msg.textContent = j.error; return; }
-        mine = j.item; const it = items.find(x => x.id === openId); if (it) { it.book = mine.bookTitle; it.qty = mine.qty; it.edited = true; }
+        mine = j.item; const it = items.find(x => x.id === openId); if (it) { it.book = summary(mine); it.edited = true; }
         redrawList(); const m2 = document.getElementById('pqMsg2'); if (m2) { m2.className = 'pq-msg ok'; m2.textContent = '고친 내용을 저장했습니다.'; }
       };
     }
