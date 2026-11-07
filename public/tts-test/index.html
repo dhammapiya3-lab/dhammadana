@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>인공지능 목소리 듣기 시험 · 테라와다불교 법보시 도서관</title>
+<style>
+  :root { --ink:#2b2622; --soft:#7a6f66; --line:#e4dccf; --bg:#faf6ef; --card:#fff; --acc:#9a5b2e; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; }
+  main { max-width: 720px; margin: 0 auto; padding: 18px 16px 80px; }
+  h1 { font-size: 1.35rem; margin: .2em 0 .2em; }
+  .lead { color: var(--soft); margin: 0 0 1em; font-size: .95rem; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin: 12px 0; }
+  .card h2 { font-size: 1.05rem; margin: 0 0 .5em; }
+  label { display: block; font-size: .9rem; color: var(--soft); margin: .6em 0 .2em; }
+  select, textarea, input[type=range] { width: 100%; font-size: 1rem; }
+  select, textarea { padding: 8px; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink); }
+  textarea { min-height: 120px; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+  button { font-size: 1rem; padding: 10px 16px; border-radius: 10px; border: 1px solid var(--line); background: #fff; color: var(--ink); cursor: pointer; }
+  button.main { background: var(--acc); color: #fff; border-color: var(--acc); }
+  button:disabled { opacity: .45; cursor: default; }
+  .bar { height: 10px; background: #eee6da; border-radius: 6px; overflow: hidden; margin: 6px 0; }
+  .bar > i { display: block; height: 100%; width: 0; background: var(--acc); transition: width .2s; }
+  .status { font-size: .95rem; }
+  .now { font-size: 1.05rem; background: #fbf3e6; border-radius: 8px; padding: 10px 12px; min-height: 3em; }
+  .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px 14px; font-size: .92rem; }
+  .stats b { font-variant-numeric: tabular-nums; }
+  .log { font: 12.5px/1.5 ui-monospace, Menlo, Consolas, monospace; background: #2b2622; color: #f3ead9; border-radius: 8px; padding: 10px; max-height: 280px; overflow: auto; white-space: pre-wrap; }
+  .note { font-size: .85rem; color: var(--soft); }
+  .good { color: #2e7d32; } .bad { color: #b3261e; }
+  a { color: var(--acc); }
+</style>
+</head>
+<body>
+<main>
+  <p class="note"><a href="/">← 테라와다불교 법보시 도서관</a></p>
+  <h1>인공지능 목소리 듣기 시험</h1>
+  <p class="lead">휴대폰 안에서 인공지능이 목소리를 직접 만들어 읽어 주는 방식을 시험하는 페이지입니다. 화면을 잠가도 계속 읽는지, 빨리어를 어떻게 읽는지 확인해 주세요. (시험용이라 사이트 메뉴에는 없습니다.)</p>
+
+  <div class="card">
+    <h2>1. 목소리 모델 받기</h2>
+    <p class="note">처음 한 번만 약 400MB를 내려받습니다. <b>와이파이에서</b> 해 주세요. 받은 파일은 이 기기에 저장되어 다음부터는 바로 시작합니다.</p>
+    <div class="status" id="status">준비 중…</div>
+    <div class="bar"><i id="bar"></i></div>
+    <div class="row">
+      <button class="main" id="loadBtn">모델 받기 · 준비</button>
+      <button id="clearBtn">저장한 모델 지우기</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>2. 읽을 글 고르기</h2>
+    <label for="src">글</label>
+    <select id="src">
+      <option value="pali">빨리어 발음 시험 문장</option>
+      <option value="book">도서관 책의 한 장</option>
+      <option value="own">직접 입력</option>
+    </select>
+    <div id="bookPick" hidden>
+      <label for="book">책</label>
+      <select id="book">
+        <option value="DL-0010">마음가짐이 바르게 되었을 때 수행하십시오</option>
+        <option value="DL-0009">위빠사나 수행의 목적과 방법</option>
+        <option value="DL-0008">수행과 지혜</option>
+      </select>
+      <label for="chap">장</label>
+      <select id="chap"></select>
+    </div>
+    <div id="ownPick" hidden>
+      <label for="own">읽을 글</label>
+      <textarea id="own" placeholder="여기에 읽을 글을 붙여 넣으세요."></textarea>
+    </div>
+    <label for="voice">목소리</label>
+    <select id="voice">
+      <option value="F1">여성 1</option><option value="F2">여성 2</option><option value="F3">여성 3</option><option value="F4">여성 4</option><option value="F5">여성 5</option>
+      <option value="M1" selected>남성 1</option><option value="M2">남성 2</option><option value="M3">남성 3</option><option value="M4">남성 4</option><option value="M5">남성 5</option>
+    </select>
+    <label for="speed">빠르기 <b id="speedV">1.0</b>배</label>
+    <input type="range" id="speed" min="0.7" max="1.6" step="0.05" value="1.0">
+    <label for="quality">음질 <b id="qualityV">8</b> <span class="note">(숫자가 클수록 좋지만 느립니다. 휴대폰이 느리면 4~5로)</span></label>
+    <input type="range" id="quality" min="3" max="12" step="1" value="8">
+    <div class="row">
+      <button class="main" id="playBtn" disabled>▶ 듣기 시작</button>
+      <button id="stopBtn" disabled>■ 멈추기</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>3. 지금 읽는 문단</h2>
+    <div class="now" id="now">—</div>
+  </div>
+
+  <div class="card">
+    <h2>4. 시험 결과</h2>
+    <div class="stats">
+      <span>계산 방식</span><b id="sBackend">—</b>
+      <span>미리 만들어 둔 문단</span><b id="sAhead">0</b>
+      <span>만드는 속도</span><b id="sRtf">—</b>
+      <span>끊겨서 기다린 횟수</span><b id="sStall">0</b>
+      <span>읽은 문단</span><b id="sDone">0</b>
+      <span>화면 잠근 뒤 들은 시간</span><b id="sHidden">—</b>
+    </div>
+    <p class="note">'만드는 속도'가 1보다 크면 읽는 것보다 빨리 만든다는 뜻입니다(끊김 없음). 1보다 작으면 문단 사이에서 기다리게 됩니다.</p>
+    <div class="log" id="log"></div>
+    <div class="row"><button id="copyLog">기록 복사하기</button></div>
+    <p class="note">시험이 끝나면 '기록 복사하기'를 눌러 대화창에 붙여 넣어 주시면, 결과를 보고 고치기 쉽습니다.</p>
+  </div>
+
+  <p class="note">목소리 모델: Supertonic 3 © Supertone Inc. (BigScience OpenRAIL-M 라이선스, 해로운 용도로 쓰지 않는다는 이용 제한이 따릅니다). 실행 코드: Supertonic 웹 예제(MIT), ONNX Runtime Web(MIT). 모델 파일은 Hugging Face 의 supertone-oss-archive/supertonic-3 에서 받습니다. 글과 목소리는 이 기기 밖으로 보내지 않습니다.</p>
+</main>
+<audio id="player" preload="auto"></audio>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
