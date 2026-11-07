@@ -41,21 +41,21 @@
         "created": ""
       },
       "pdf_print": {
-        "site": "",
         "mode": "file",
         "url": "pdf/DL-0006/DL-0006_초판_인쇄용.pdf",
-        "created": ""
+        "site": "",
+        "created": "2026년 5월 11일"
       },
       "pdf_cover": {
-        "site": "",
         "mode": "file",
         "url": "pdf/DL-0006/DL-0006_초판_인쇄용표지.pdf",
-        "created": ""
+        "site": "",
+        "created": "2025년 3월 7일"
       },
       "epub": {
-        "site": "",
         "mode": "file",
         "url": "epub/DL-0006/DL-0006_초판.epub",
+        "site": "",
         "created": "2025년 1월 3일"
       },
       "reader": true,
