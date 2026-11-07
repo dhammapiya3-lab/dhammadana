@@ -133,7 +133,9 @@ async function genLoop(run) {
       log(`만듦 ${idx + 1}/${S.items.length}: 소리 ${duration[0].toFixed(1)}초를 ${(ms / 1000).toFixed(1)}초에 만듦${document.hidden ? ' (화면 잠김 중)' : ''}`);
     } catch (e) { log(`만들기 오류 ${idx + 1}: ${e.message}`); S.ready.set(idx, { url: '', dur: 0 }); }
     S.gen++; stats();
-    if (S.waiting && S.ready.has(S.play)) { S.waiting = false; playCur(); }
+    // 처음에는 2문단을 만들어 둔 뒤 시작 (곧바로 끊기지 않게)
+    const need = S.done === 0 && S.play === 0 ? Math.min(2, S.items.length) : 1;
+    if (S.waiting && S.gen - S.play >= need) { S.waiting = false; playCur(); }
   }
 }
 function playCur() {
