@@ -351,7 +351,7 @@ for (const b of BOOKS) {
   const prov = providerById(b.provider);
   const same = BOOKS.filter(x => x !== b && b.teacher && x.teacher === b.teacher);
   const perms = (e.permissions || []).map(permById).filter(Boolean);
-  const permLabel = e.permission_status === 'public' ? '공개 배포됨' : e.permission_status === 'confirmed' || perms.length ? '허락 확인됨' : '';
+  const permLabel = e.permission_status === 'pending' ? '허락 대기 중' : e.permission_status === 'public' ? '공개 배포됨' : e.permission_status === 'confirmed' || perms.length ? '허락 확인됨' : '';
   const pubEds = (b.editions || []);
   const hasPrint = pubEds.some(x => x.isbn || x.publisher_print), hasEbook = pubEds.some(x => x.isbn_ebook || x.publisher_ebook || x.published_ebook);
   const statusCell = x => x.current ? '<span class="pill">최신판</span>' : !edHasFile(x) ? '—' : x.public ? '이전 판 공개' : '보관';
