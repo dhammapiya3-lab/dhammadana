@@ -344,7 +344,7 @@ const sp = PAGES['press-support'];
 put('press/support/index.html', layout({ title: '후원계좌', nav: 'press', page: 'press', body: pressShell('support', `<div class="prose" style="padding-top:0"><h1 class="h-page">${esc(sp.meta.title)}</h1>
   ${sp.body.trim().split('\n').filter(Boolean).map((l, i) => `<p style="margin:${i === 0 ? '0 0 .2em' : '0 0 1em'}">${esc(l)}</p>`).join('')}
   <table class="info-tbl"><tr><td>은행</td><td>${esc(sp.meta.bank)}</td></tr><tr><td>계좌번호</td><td>${esc(sp.meta.account)}</td></tr><tr><td>예금주</td><td>${esc(sp.meta.holder)}</td></tr></table>
-  <ul style="list-style:disc;padding-left:1.2em;margin:1.8em 0 0"><li>법보시 출판 전용 계좌입니다.</li><li>개인 계좌이기 때문에 기부금영수증 발행은 어렵습니다.</li></ul></div>`) }));
+  <ul style="list-style:disc;padding-left:1.2em;margin:1.8em 0 0"><li>법보시 출판 전용 계좌입니다.</li><li>개인 계좌이기 때문에 기부금영수증 발행은 어렵습니다.</li><li>새로 인쇄할 때마다 인쇄 지출 내역과 후원 내역을 함께 올립니다.</li><li>원하는 분은 카카오뱅크 모임 계좌에 초대해드립니다. 입출금 내역을 실시간으로 확인하실 수 있습니다.</li><li>후원 문의: 담마삐야 <a href="tel:01032395401">010-3239-5401</a></li></ul></div>`) }));
 
 // 도서관
 const LANGS = ['빠알리어', '영어', '미얀마어', '태국어', '싱할라어', '한국어', '기타'].filter(l => BOOKS.some(b => b.original_language === l));
