@@ -45,6 +45,12 @@
     <p class="note">처음 한 번만 약 400MB를 내려받습니다. <b>와이파이에서</b> 해 주세요. 받은 파일은 이 기기에 저장되어 다음부터는 바로 시작합니다.</p>
     <div class="status" id="status">준비 중…</div>
     <div class="bar"><i id="bar"></i></div>
+    <label for="ep">계산 방식</label>
+    <select id="ep">
+      <option value="auto">자동 (그래픽 장치 먼저)</option>
+      <option value="webgpu">그래픽 장치 (WebGPU)</option>
+      <option value="wasm">처리 장치 (WebAssembly)</option>
+    </select>
     <div class="row">
       <button class="main" id="loadBtn">모델 받기 · 준비</button>
       <button id="clearBtn">저장한 모델 지우기</button>
@@ -80,8 +86,8 @@
     </select>
     <label for="speed">빠르기 <b id="speedV">1.0</b>배</label>
     <input type="range" id="speed" min="0.7" max="1.6" step="0.05" value="1.0">
-    <label for="quality">음질 <b id="qualityV">8</b> <span class="note">(숫자가 클수록 좋지만 느립니다. 휴대폰이 느리면 4~5로)</span></label>
-    <input type="range" id="quality" min="3" max="12" step="1" value="8">
+    <label for="quality">음질 <b id="qualityV">4</b> <span class="note">(숫자가 클수록 좋지만 느립니다. 휴대폰이 느리면 4~5로)</span></label>
+    <input type="range" id="quality" min="3" max="12" step="1" value="4">
     <div class="row">
       <button class="main" id="playBtn" disabled>▶ 듣기 시작</button>
       <button id="stopBtn" disabled>■ 멈추기</button>

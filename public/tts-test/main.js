@@ -44,12 +44,15 @@ setOnBytes((got, total, name) => {
 });
 
 $('#loadBtn').onclick = async () => {
-  $('#loadBtn').disabled = true;
+  $('#loadBtn').disabled = true; $('#ep').disabled = true;
   try { if (navigator.storage && navigator.storage.persist) log(`저장 공간 지키기 요청: ${(await navigator.storage.persist()) ? '허락됨' : '허락 안 됨(나중에 지워질 수 있음)'}`); } catch (e) {}
   const tic = Date.now();
   const tryLoad = async ep => { const r = await loadTextToSpeech(ONNX, { executionProviders: [ep], graphOptimizationLevel: 'all' }); S.tts = r.textToSpeech; S.backend = ep === 'webgpu' ? 'WebGPU (그래픽 장치)' : `WebAssembly (처리 장치 ${ort.env.wasm.numThreads}개)`; };
   try {
-    if ('gpu' in navigator) { try { await tryLoad('webgpu'); } catch (e) { log('WebGPU 를 쓸 수 없어 WebAssembly 로 바꿉니다: ' + e.message); await tryLoad('wasm'); } }
+    const ep = $('#ep').value; log(`계산 방식 선택: ${ep}`);
+    if (ep === 'wasm') await tryLoad('wasm');
+    else if (ep === 'webgpu') await tryLoad('webgpu');
+    else if ('gpu' in navigator) { try { await tryLoad('webgpu'); } catch (e) { log('WebGPU 를 쓸 수 없어 WebAssembly 로 바꿉니다: ' + e.message); await tryLoad('wasm'); } }
     else await tryLoad('wasm');
     bar(100); status(`준비됐습니다 (${((Date.now() - tic) / 1000).toFixed(0)}초). 글을 고르고 [듣기 시작]을 눌러 주세요.`, 'good');
     log(`모델 준비 완료 · ${S.backend} · ${((Date.now() - tic) / 1000).toFixed(1)}초`);
