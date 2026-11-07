@@ -606,8 +606,7 @@ function bindReader() {
     if (!('speechSynthesis' in window)) return toast('이 기기에서는 음성 읽기를 쓸 수 없습니다');
     if (!LEX.pali) { loadLex().then(() => tt.onclick()); return; }
     const o = ttsOpt(); const pv = pickVoice(o), v = pv.voice;
-    speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(sayable('법보시는 모든 보시를 능가한다. Sabbadānaṃ dhammadānaṃ jināti. (법구경 354게송)', o));
-    u.lang = v ? v.lang : 'ko-KR'; if (v) u.voice = v; u.rate = +o.rate; u.pitch = pv.pitch; speechSynthesis.speak(u);
+    speechSynthesis.cancel(); speakSegs(sayable('법보시는 모든 보시를 능가한다. Sabbadānaṃ dhammadānaṃ jināti. (법구경 354게송) Dhamma is the best gift.', o, true), o, pv, () => {}, () => {});
   };
   const trs = $('#ttsReset'); if (trs) trs.onclick = () => { store.set('tts', {}); renderReader(); $('#p-tts').classList.add('open'); toast('처음 설정으로 돌렸습니다'); };
   const body = $('#rBody');
@@ -761,9 +760,13 @@ function langOf(w) {
   if (PALI_MARK.test(w)) return 'P';
   const x = plainW(w), p = (LEX.pali && LEX.pali.has(x)) || PALI_WORDS.has(x), e = LEX.en && LEX.en.has(x);
   if (p && !e) return 'P'; if (e && !p) return 'E';
-  if (!p && !e) return looksPali(w) ? 'P' : '?';
+  if (!p && !e) return looksPali(w) ? 'P' : notPali(w) ? 'E' : '?';
   return 'B';
 }
+// 빨리어에는 없는 글자·소리 짜임이 있으면 영어로 봄 (English, Korean, Index …): f q w x z, sh, ck, 모음 두 개 잇달아, ṃ 이외의 자음으로 끝남
+// 미얀마 존칭·호칭: 영어 목소리로 읽으면 어색하므로 한국어 소리로
+const BUR = { sayadaw: '사야도', sayādaw: '사야도', u: '우', ashin: '아신', daw: '도', bhante: '반떼', sayalay: '사얄레이' };
+const notPali = w => /^[A-Za-z]+$/.test(w) && w.length >= 2 && (/[fqwxz]|sh|ck|[aeiou]{2}/i.test(w) || /[bcdfghjklmnpqrstvwxyz]$/i.test(w));
 // 점·막대가 없어도 빨리어처럼 생긴 낱말: 빨리어 글자로만 되어 있고, 겹자음이 있고, 모음으로 끝남 (akkhanti, dukkha …)
 const looksPali = w => w.length >= 4 && /^[a-z]+$/i.test(w) && !/[fqwxz]/i.test(w) && /(kk|gg|cc|jj|tt|dd|pp|bb|mm|nn|ss|ll)/i.test(w) && /[aeiou]$/i.test(w) && !!PALI(w);
 // 한국어 목소리만 (이름으로 남·여를 알 수 있으면 표시)
@@ -778,6 +781,27 @@ function voiceOptions(cur) {
     <option value="__low" ${cur === '__low' ? 'selected' : ''}>낮은 목소리 (기본 목소리를 낮춰서)</option>`;
 }
 // 고른 목소리와 높낮이 정하기
+function enVoice() {
+  const vs = ('speechSynthesis' in window ? speechSynthesis.getVoices() : []).filter(v => /^en/i.test(v.lang));
+  const score = v => (/^en[-_]US/i.test(v.lang) ? 4 : /^en[-_]GB/i.test(v.lang) ? 3 : 1) + (/natural|neural|online|google|samantha|aria|jenny|guy/i.test(v.name) ? 2 : 0) + (v.localService ? 0.5 : 0);
+  return vs.sort((a, b) => score(b) - score(a))[0] || null;
+}
+// 한 문단을 한국어·영어 구간으로 나눠 차례로 읽음 (영어는 영어 목소리)
+function speakSegs(text, o, pv, onend, onerror) {
+  const ev = o.enVoice !== false ? enVoice() : null;
+  let segs = [];
+  if (ev) text.split(/(\u0001[^\u0002]*\u0002)/).forEach(x => { if (!x) return; const isEn = x[0] === EN_A; const t = x.replace(/[\u0001\u0002]/g, '').trim(); if (t && /[\p{L}\p{N}]/u.test(t)) segs.push({ t, en: isEn }); });
+  else segs = [{ t: text.replace(/[\u0001\u0002]/g, ''), en: false }];
+  if (!segs.length) { onend(); return; }
+  segs.forEach((g, i) => {
+    const u = new SpeechSynthesisUtterance(g.t);
+    if (g.en) { u.voice = ev; u.lang = ev.lang; u.pitch = +o.pitch; } else { u.lang = pv.voice ? pv.voice.lang : 'ko-KR'; if (pv.voice) u.voice = pv.voice; u.pitch = pv.pitch; }
+    u.rate = +o.rate;
+    if (i === segs.length - 1) u.onend = onend;
+    u.onerror = onerror;
+    speechSynthesis.speak(u);
+  });
+}
 function pickVoice(o) {
   if (o.voice === '__low') return { voice: koVoices()[0] || null, pitch: Math.max(0.1, +o.pitch * 0.62) };
   const v = o.voice && koVoices().find(x => x.voiceURI === o.voice);
@@ -792,7 +816,7 @@ function ttsPanel() {
     <div class="tts-row"><label>빠르기 <b id="ttsRateV">${(+o.rate).toFixed(1)}배</b></label><input type="range" min="0.6" max="1.8" step="0.1" value="${o.rate}" data-tts="rate"></div>
     <div class="tts-row"><label>목소리 높낮이 <b id="ttsPitchV">${(+o.pitch).toFixed(1)}</b></label><input type="range" min="0.6" max="1.4" step="0.1" value="${o.pitch}" data-tts="pitch"></div>
     <div class="tts-sub">읽을 것</div>
-    ${ck('pali', '빠알리어', '빠알리어 소리대로 읽음')}${ck('gloss', '한글 옆 원어 풀이도 읽기', '위빳사나Vipassanā, 지도법사(Nāyaka Sayadaw)처럼 한글과 같은 말을 한 번 더 읽음')}${ck('en', '영어')}${ck('hanja', '한자')}${ck('paren', '괄호 ( ) 안', '끄면 ( ) 안의 풀이·원어·참고를 건너뜀')}${ck('brack', '대괄호 [ ] 안', '끄면 옮긴이가 덧붙인 [ ] 안을 건너뜀')}${ck('fn', '각주', '본문 속 번호는 「각주 1」로 읽고, 각주 내용은 쪽 끝에서 읽음')}${ck('table', '표', '켜면 표를 한 줄씩 읽음 (색인 표는 지금 화면에 보이는 줄만)')}${ck('sym', '특수부호', '괄호·따옴표 등을 이름으로 읽음')}
+    ${ck('pali', '빠알리어', '빠알리어 소리대로 읽음')}${ck('gloss', '한글 옆 원어 풀이도 읽기', '위빳사나Vipassanā, 지도법사(Nāyaka Sayadaw)처럼 한글과 같은 말을 한 번 더 읽음')}${ck('en', '영어')}${ck('enVoice', '영어는 영어 목소리로', '영어 낱말·문장을 기기의 영어 목소리로 읽어 발음이 자연스러움 (영어 목소리가 없는 기기는 한국어 목소리로)')}${ck('hanja', '한자')}${ck('paren', '괄호 ( ) 안', '끄면 ( ) 안의 풀이·원어·참고를 건너뜀')}${ck('brack', '대괄호 [ ] 안', '끄면 옮긴이가 덧붙인 [ ] 안을 건너뜀')}${ck('fn', '각주', '본문 속 번호는 「각주 1」로 읽고, 각주 내용은 쪽 끝에서 읽음')}${ck('table', '표', '켜면 표를 한 줄씩 읽음 (색인 표는 지금 화면에 보이는 줄만)')}${ck('sym', '특수부호', '괄호·따옴표 등을 이름으로 읽음')}
     <div class="tts-sub">읽는 방식</div>
     <div class="tts-row"><label>문단 사이 쉼</label>${sel('pause', [[0, '쉬지 않음'], [0.3, '짧게'], [0.8, '보통'], [1.5, '길게']])}</div>
     <div class="tts-row"><label>꺼짐 예약</label>${sel('sleep', [[0, '끄지 않음'], [15, '15분 뒤'], [30, '30분 뒤'], [60, '1시간 뒤']])}</div>
@@ -801,11 +825,13 @@ function ttsPanel() {
     <p class="note">목소리는 이 기기에 깔린 한국어 목소리 가운데서 고릅니다. 남성 목소리가 목록에 없으면 ‘낮은 목소리’를 고르거나, 컴퓨터에서는 마이크로소프트 엣지(Edge) 브라우저로 열면 남성 목소리(InJoon, Hyunsu)를 고를 수 있습니다. 설정은 이 기기의 브라우저에 저장되고, 듣는 중에 바꾸면 다음 문단부터 적용됩니다. 빨리어 낱말 목록: Digital Pāḷi Dictionary (CC BY-NC-SA 4.0).</p>`;
 }
 // 듣기 설정 (이 브라우저에 저장)
-const TTS_DEF = { voice: '', rate: 1, pitch: 1, gloss: false, sym: false, en: true, pali: true, hanja: true, fn: false, table: false, paren: true, brack: true, pause: 0.3, chapterStop: false, sleep: 0, follow: true };
+const TTS_DEF = { voice: '', rate: 1, pitch: 1, gloss: false, sym: false, en: true, pali: true, hanja: true, fn: false, table: false, enVoice: true, paren: true, brack: true, pause: 0.3, chapterStop: false, sleep: 0, follow: true };
 const ttsOpt = () => Object.assign({}, TTS_DEF, store.get('tts', {}));
 const SYM_NAME = { '(': '괄호 열고', ')': '괄호 닫고', '[': '대괄호 열고', ']': '대괄호 닫고', '‘': '작은따옴표', '’': '작은따옴표', '“': '큰따옴표', '”': '큰따옴표', '"': '큰따옴표', "'": '작은따옴표', '「': '낫표', '」': '낫표', '『': '겹낫표', '』': '겹낫표', '《': '겹화살괄호', '》': '겹화살괄호', '〈': '홑화살괄호', '〉': '홑화살괄호', '<': '홑화살괄호', '>': '홑화살괄호', '＜': '홑화살괄호', '＞': '홑화살괄호', '·': '가운뎃점', 'ㆍ': '가운뎃점', '…': '줄임표', '~': '물결표', '*': '별표', '/': '빗금', '|': '세로줄', '—': '줄표', '–': '줄표', '－': '붙임표' };
 const SYM_RE = /[()\[\]‘’“”"'「」『』《》〈〉<>＜＞·ㆍ…~*/|—–－]/g;
-function sayable(s, o = ttsOpt()) {
+const EN_A = '\u0001', EN_B = '\u0002';  // 영어 구간 표시 (영어 목소리로 읽을 부분)
+function sayable(s, o = ttsOpt(), mark = false) {
+  const en = w => mark ? EN_A + w + EN_B : w;
   let t = String(s || '').replace(/^## /, '');
   if (o.paren === false) { let prev; do { prev = t; t = t.replace(/\s?[(（][^()（）]*[)）]/g, ''); } while (t !== prev); }
   if (o.brack === false) t = t.replace(/\s?\[(?!\^)[^\[\]]*\]/g, '');
@@ -817,7 +843,7 @@ function sayable(s, o = ttsOpt()) {
     if (!o.gloss) return h;
     const ws = lat.split(/[\s-]+/).filter(Boolean), pc = ws.filter(w => langOf(w) === 'P').length, ec = ws.filter(w => langOf(w) === 'E').length;
     const pali = PALI_MARK.test(lat) || pc > ec || (pc === ec && /[a-z]/.test(lat[0]));
-    return h + ' ' + (pali ? (o.pali ? lat.split(/[\s-]+/).map(w => PALI(w) || w).join(' ') : '') : (o.en ? lat : ''));
+    return h + ' ' + (pali ? (o.pali ? lat.split(/[\s-]+/).map(w => PALI(w) || w).join(' ') : '') : (o.en ? en(lat) : ''));
   });
   // 한글 뒤 괄호 안이 로마자·숫자뿐이면(원어 풀이) 뺌: 지도법사(Nāyaka Sayadaw)
   if (!o.gloss) t = t.replace(/([가-힣])\s?\(([^()가-힣]*)\)/g, (m, h, inner) => /[A-Za-zĀ-ž]/.test(inner) ? h : m);
@@ -830,8 +856,11 @@ function sayable(s, o = ttsOpt()) {
     let k = 0;
     return run.replace(new RegExp(`[${LATIN}]+(?:-[${LATIN}]+)*`, 'g'), comp => {
       const l = lab[k++]; const pali = l === 'P' || ((l === 'B' || l === '?') && runPali && (l === 'B' || pc > 0));
+      if (BUR[comp.toLowerCase()]) return BUR[comp.toLowerCase()];  // 미얀마 존칭은 한국어 소리로
+      // 붙임표로 이은 말은 조각마다 가름 (Pāli-Korean-English → 빨리 / 영어 / 영어)
+      if (comp.includes('-')) return comp.split('-').map(w => { const lw = langOf(w); const wp = lw === 'P' || ((lw === 'B' || lw === '?') && pali); return wp ? (o.pali ? (PALI(w) || w) : '') : (o.en ? en(w) : ''); }).join(' ');
       if (pali) return o.pali ? comp.split('-').map(w => PALI(w) || w).join(' ') : ' ';
-      return o.en ? comp : ' ';
+      return o.en ? en(comp) : ' ';
     });
   });
   if (!o.hanja) t = t.replace(/[\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]+/g, ' ');
@@ -839,6 +868,7 @@ function sayable(s, o = ttsOpt()) {
   t = t.replace(/([가-힣])-(?=[가-힣\s,.!?)’”]|$)/g, '$1');
   // 특수부호: 읽기를 켜면 이름으로 읽고, 끄면 소리 내지 않음
   t = o.sym ? t.replace(SYM_RE, c => ` ${SYM_NAME[c] || ''} `) : t.replace(SYM_RE, ' ');
+  if (mark) t = t.replace(/\u0002([\s,;:.!?'’‘\-]*)\u0001/g, '$1');
   return t.replace(/\(\s*\)/g, ' ').replace(/\s+([.,!?])/g, '$1').replace(/([.,!?])(?:\s*[.,])+/g, '$1').replace(/\s{2,}/g, ' ').trim();
 }
 const fnMark = h => h.replace(/^\[\^([^\]]+)\]:\s*/, '<span class="fn-no" data-fnno="$1" role="button" tabindex="0" aria-label="각주 $1 본문 자리로 가기" title="본문 자리로 가기">$1</span>').replace(/\[\^([^\]]+)\]/g, '<sup class="fn-ref" role="button" tabindex="0" data-fn="$1" aria-label="각주 $1">$1</sup>');
@@ -928,7 +958,7 @@ function speak(fromK = 0, firstText = null) {
     if (R.ttsSkip && R.ttsSkip.n === p.n && R.ttsSkip.k === k) { R.ttsSkip = null; k++; next(); return; }  // 앞 쪽 끝에서 이미 이어 읽은 문단
     let raw = first && first.trim() ? first : sentences[k]; first = null;
     // 쪽 끝에서 문장이 끊긴 문단은 다음 쪽 첫 문단과 이어서 한 번에 읽기 (끊어 읽으면 낱말이 뭉개짐)
-    if (k === lastBody && !isFootnote(raw) && !isHead(raw) && !/[.?!。…”’"')\]」』:]\s*$/.test(raw.replace(/\[\^[^\]]+\]\s*$/, ''))) {
+    if (k === lastBody && chapterOf(R.i + 1) === chapterOf(R.i + 2) && !isFootnote(raw) && !isHead(raw) && !/[.?!。…”’"')\]」』:]\s*$/.test(raw.replace(/\[\^[^\]]+\]\s*$/, ''))) {
       const np = R.pages[R.i + 1], nps = np ? paras(np.text) : [], nk = nps.findIndex(x => x.trim());
       if (np && nk >= 0 && !isFootnote(nps[nk]) && !isHead(nps[nk]) && !FIG_RE.test(nps[nk])) {
         const a = raw.replace(/\s+$/, ''), b = nps[nk].replace(/^\s+/, '');
@@ -939,14 +969,10 @@ function speak(fromK = 0, firstText = null) {
     if ((!o.fn && isFootnote(sentences[k])) || FIG_RE.test(sentences[k]) || (isTbl && !o.table)) { k++; next(); return; }
     if (isTbl && !tq) { tq = tableLines(sentences[k]); if (!tq.length) { tq = null; k++; next(); return; } }
     const el = $(`[data-pg="${p.n}"][data-s="${k}"]`); if (el) { el.classList.add('speaking'); if (o.follow && !tq) el.scrollIntoView({ block: 'nearest' }); }
-    const text = tq ? sayable(tq.shift(), o) : sayable(raw.replace(/^\[\^([^\]]+)\]:\s*/, (m, n) => `각주 ${n}. `), o);
+    const text = tq ? sayable(tq.shift(), o, true) : sayable(raw.replace(/^\[\^([^\]]+)\]:\s*/, (m, n) => `각주 ${n}. `), o, true);
     const adv = () => { if (tq && tq.length) return; tq = null; k++; };
     if (!text) { adv(); next(); return; }
-    const u = new SpeechSynthesisUtterance(text); u.lang = voice ? voice.lang : 'ko-KR'; if (voice) u.voice = voice;
-    u.rate = +o.rate; u.pitch = pv.pitch;
-    u.onend = () => { if (!R || !R.speaking) return; adv(); setTimeout(next, Math.max(0, +o.pause * 1000)); };
-    u.onerror = e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); };
-    speechSynthesis.speak(u);
+    speakSegs(text, o, pv, () => { if (!R || !R.speaking) return; adv(); setTimeout(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); });
   };
   next();
 }
