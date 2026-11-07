@@ -100,17 +100,6 @@
       "photo": "/uploads/teacher-tejaniya.jpg"
     },
     {
-      "id": "khemavamsa",
-      "name": "케마왐사 스님",
-      "roman": "Khemavaṃsa",
-      "aliases": [
-        "케마왕사 스님"
-      ],
-      "tradition": "shweoomin",
-      "bio": "",
-      "photo": ""
-    },
-    {
       "id": "nanuttara",
       "name": "냐눗따라 스님",
       "roman": "Ñāṇuttara",
@@ -124,6 +113,17 @@
       "name": "사사나 스님",
       "roman": "Sāsana",
       "aliases": [],
+      "tradition": "shweoomin",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "khemavamsa",
+      "name": "케마왐사 스님",
+      "roman": "Khemavaṃsa",
+      "aliases": [
+        "케마왕사 스님"
+      ],
       "tradition": "shweoomin",
       "bio": "",
       "photo": ""
