@@ -352,6 +352,7 @@ put('press/request/index.html', layout({ title: '종이책 보시 신청', nav: 
     <li>재고가 없는 경우 인쇄 후 보내드려야 해서 발송이 늦어질 수 있습니다. 양해 부탁드립니다.</li>
     <li>아래 네이버 블로그 글에 비밀 댓글로 '이름, 주소, 연락처, 원하는 책 권수'를 기재해 신청하셔도 됩니다.<br><a href="https://blog.naver.com/k3a3n3g3/222720005809" target="_blank" rel="noopener">https://blog.naver.com/k3a3n3g3/222720005809 ↗</a></li>
     ${(() => { const tj = BOOKS.find(b => b.teacher === 'tejaniya' && /^https?:\/\//.test(String(b.paper_url || '').trim())); return tj ? `<li>우 떼자니야 사야도 법문집은 아래 링크 글을 참고하여 신청하시기 바랍니다.<br><a href="${esc(tj.paper_url.trim())}" target="_blank" rel="noopener">${esc(tj.paper_url.trim())} ↗</a></li>` : ''; })()}
+    <li>냐눗따라 스님의 『위빠사나 수행의 목적과 방법』은 아래 링크 글을 참고하여 신청하시기 바랍니다.<br><a href="https://cafe.naver.com/shweoomin/1259" target="_blank" rel="noopener">https://cafe.naver.com/shweoomin/1259 ↗</a></li>
   </ul>
   <div id="pqRoot" data-books='${esc(JSON.stringify(PAPER_BOOKS))}'><p class="muted">불러오는 중…</p></div>
   <noscript><p>이 게시판은 자바스크립트를 켜야 쓸 수 있습니다.</p></noscript>
