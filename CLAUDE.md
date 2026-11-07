@@ -14,6 +14,7 @@
 - `books/DL-0001.json` … 책 하나 = 파일 하나. 판(editions) 중 `current: true` 인 것만 내려받기·읽기에 쓴다. 이전 판은 지우지 않는다.
 - `teachers.json`, `traditions.json`, `topics.json`(main + items{label,group}), `providers.json`, `permissions.json`, `links.json`, `playlists.json`(RSS는 빌드 때 가져옴), `variants.json`(검색 표기 사전), `settings.json`
 - `pages/*.md`, `news/*.md` (앞머리 + 마크다운)
+- `indexes/<ID>.json`: 색인처럼 표로 된 책의 표 자료(인쇄본의 부마다 cols·rows 를 인쇄 순서 그대로). 글로 읽기 본문의 `[[색인]]` 자리에 찾기 칸과 순서 버튼(부 바꾸기)이 있는 표로 보이고(휴대폰은 낱말 카드), 사이트 검색에도 잡힌다. 예: DL-0004 『빠알리어-한국어-영어 색인』. 표가 차지하는 쪽은 본문에 빈 쪽 표시(=== N쪽 ===)만 둔다.
 
 ## 원칙
 - 빨리어 표기: 프로젝트 문서 「빨리어 고유명사 음역 규칙」(니까야 번역 용어집 v1.1). 일반 용어는 위빳사나·사띠빳타나, **책 제목·책에 인쇄된 이름은 책 표기 그대로**, 스승 이름 -vaṃsa 는 ‘왐사’. 다른 표기는 teachers.aliases 와 variants.json 에.

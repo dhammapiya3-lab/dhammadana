@@ -237,6 +237,13 @@ async function runSearch() {
         const hits = (m.pages || []).map((p, i) => ({ ...p, n: i + 1 })).filter(p => p.text && has(p.text));
         if (hits.some(p => isToc(p.text)) && scope === 'all') why.push('목차');
         body = hits.filter(p => !isToc(p.text)).slice(0, 60).map(p => ({ n: p.n, label: p.label ? p.label + '쪽' : p.n + '번째', s: snippet(p.text.replace(/\s+/g, ' '), terms) }));
+        // 색인 표 속 낱말 (제1부 기준, 같은 낱말이 네 부에 되풀이되므로 한 번만)
+        if (m.index && m.index.parts && m.index.parts[0]) {
+          const ixPage = (m.pages || []).findIndex(p => /\[\[색인\]\]/.test(p.text || '')) + 1;
+          const P0 = m.index.parts[0];
+          const ixHits = P0.rows.filter(r => r.slice(0, 4).some(c => has(c))).slice(0, 40).map(r => ({ n: ixPage, label: '색인', s: r.slice(0, 4).filter(Boolean).join(' · ').replace(/\s+/g, ' ') }));
+          body = [...ixHits, ...body].slice(0, 60);
+        }
       } catch (e) {}
     }
     if ((scope === 'all') && has(b.desc) && !why.length) why.push('소개');
@@ -410,7 +417,8 @@ async function initReaderPage() {
     id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, pages, toc: man.toc || [],
     i: Math.min(Math.max(want || (last > 1 ? last : 0) || firstContent(pages, man.toc || []), 1), pages.length) - 1,
     view: 'text', zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), bold: store.get('rbold', false), lh: store.get('rlh', 1.9), font: store.get('rfont', 'serif'), mw: store.get('rmw', 36),
-    hl: hlp ? hlp.split('|').filter(Boolean) : [], speaking: false
+    hl: hlp ? hlp.split('|').filter(Boolean) : [], speaking: false,
+    ix: man.index || null, ixPart: store.get('ixp-' + id, 0), ixQ: hlp ? hlp.split('|')[0] : ''
   };
   if (!pages.some(p => p.text)) R.view = 'page';
   renderReader();
@@ -563,6 +571,7 @@ function bindReader() {
   bindFind();
   $$('[data-zoom-img]', el).forEach(b => b.onclick = () => zoomView(`<img src="${esc(b.dataset.zoomImg)}" alt="${esc(b.dataset.cap)}">`, b.dataset.cap || '그림'));
   $$('[data-zoom-tbl]', el).forEach(b => b.onclick = () => zoomView(b.parentElement.querySelector('table').outerHTML, '표'));
+  bindIx();
   const ho = $('#hlOff'); if (ho) ho.onclick = () => { R.hl = []; history.replaceState(null, '', location.pathname); renderReader(); };
   
   $$('[data-panel]', el).forEach(b => b.onclick = () => { const p = $('#p-' + b.dataset.panel); const o = p.classList.contains('open'); $$('.panel', el).forEach(x => x.classList.remove('open')); if (!o) p.classList.add('open'); });
@@ -836,7 +845,7 @@ const fnMark = h => h.replace(/^\[\^([^\]]+)\]:\s*/, '<span class="fn-no" data-f
 // 본문 속 그림 ![설명](주소) 과 표(| 칸 | 칸 |)
 // 소제목 알아보기: 빈칸·괄호 속 풀이를 빼고 목차 제목과 같으면 소제목
 const isHead = t => /^## /.test(t);
-const headKey = t => String(t || '').replace(/^## /, '').replace(/\([^)]*\)/g, '').replace(/[\s‘’'"“”]/g, '').replace(/^[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩIVX]+\./, m => m.replace(/[IVX]+/g, x => ({I:'Ⅰ',II:'Ⅱ',III:'Ⅲ',IV:'Ⅳ',V:'Ⅴ',VI:'Ⅵ',VII:'Ⅶ',VIII:'Ⅷ',IX:'Ⅸ',X:'Ⅹ'}[x] || x)));
+const headKey = t => String(t || '').replace(/^## /, '').replace(/\[\^[^\]]+\]/g, '').replace(/\([^)]*\)/g, '').replace(/[\s‘’'"“”]/g, '').replace(/^[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩIVX]+\./, m => m.replace(/[IVX]+/g, x => ({I:'Ⅰ',II:'Ⅱ',III:'Ⅲ',IV:'Ⅳ',V:'Ⅴ',VI:'Ⅵ',VII:'Ⅶ',VIII:'Ⅷ',IX:'Ⅸ',X:'Ⅹ'}[x] || x)));
 const FIG_RE = /^!\[([^\]]*)\]\(([^)\s]+)\)\s*$/;
 const isTable = p => /^\|.*\|\s*$/m.test(p) && p.split('\n').filter(l => l.trim()).every(l => /^\|/.test(l.trim()));
 function tableHtml(p) {
@@ -844,7 +853,43 @@ function tableHtml(p) {
   if (!rows.length) return '';
   return `<table class="r-table"><thead><tr>${rows[0].map(c => `<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${rows.slice(1).map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
 }
+// 색인 표: 네 가지 순서(인쇄본 제1~4부)를 버튼으로 바꿔 보고, 낱말로 찾기
+const ixNorm = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/\s+/g, '');
+function ixRows() {
+  const p = R.ix.parts[R.ixPart] || R.ix.parts[0], q = ixNorm(R.ixQ);
+  return q ? p.rows.filter(r => r.slice(0, 4).some(c => ixNorm(c).includes(q))) : p.rows;
+}
+function ixMark(c) {
+  const q = R.ixQ.trim(); let h = esc(c);
+  if (q) { const i = c.toLowerCase().indexOf(q.toLowerCase()); if (i >= 0) h = esc(c.slice(0, i)) + '<mark>' + esc(c.slice(i, i + q.length)) + '</mark>' + esc(c.slice(i + q.length)); }
+  return h.replace(/\n/g, '<br>');
+}
+function ixBody() {
+  const p = R.ix.parts[R.ixPart] || R.ix.parts[0], rows = ixRows(), cols = p.cols;
+  const side = cols[0] === 'hg' ? 'pali' : 'hg';
+  const role = c => c === cols[0] ? 'a-head' : c === side ? 'a-side' : 'a-line';
+  const tr = r => {
+    const ref = r.slice(1, 4).every(x => !x) && /⇒/.test(r[0]);
+    if (ref) return `<tr class="ix-ref"><td colspan="4" class="a-head">${ixMark(r[0])}</td></tr>`;
+    return `<tr>${cols.map((c, j) => `<td class="c-${c} ${role(c)}"${c === 'pali' ? ' lang="pi"' : c === 'en' ? ' lang="en"' : ''}>${ixMark(r[j])}</td>`).join('')}</tr>`;
+  };
+  return `<p class="ix-count small muted" aria-live="polite">${R.ixQ.trim() ? `‘${esc(R.ixQ.trim())}’ ${rows.length}개 찾음` : ''}</p>
+  ${rows.length ? `<table class="ix-t"><thead><tr>${cols.map(c => `<th scope="col" class="c-${c}">${esc(R.ix.colnames[c])}</th>`).join('')}</tr></thead><tbody>${rows.map(tr).join('')}</tbody></table>` : '<p class="muted">찾는 낱말이 없습니다. 다른 표기로 찾아보세요.</p>'}`;
+}
+function ixHtml() {
+  const p = R.ix.parts[R.ixPart] || R.ix.parts[0];
+  return `<div class="ix-bar"><label class="ix-find"><span class="sr">색인에서 낱말 찾기</span><input type="search" id="ixQ" value="${esc(R.ixQ)}" placeholder="낱말 찾기: 빠알리어·한국어·영어·한글 표기" autocomplete="off"></label>
+  <div class="ix-parts" role="group" aria-label="줄 세우는 순서">${R.ix.parts.map((x, i) => `<button class="ix-p${i === R.ixPart ? ' on' : ''}" data-ixp="${i}" aria-pressed="${i === R.ixPart}">${esc(x.label)}</button>`).join('')}</div></div>
+  <h4 class="ix-title">${esc(p.part)} : ${esc(p.title)}</h4>${p.note && !R.ixQ.trim() ? `<p class="ix-note">${esc(p.note).replace(/\n/g, '<br>')}</p>` : ''}<div id="ixBody">${ixBody()}</div>`;
+}
+function bindIx() {
+  const box = $('#ix'); if (!box) return;
+  const q = $('#ixQ', box); let t;
+  if (q) q.oninput = () => { clearTimeout(t); t = setTimeout(() => { R.ixQ = q.value; $('#ixBody', box).innerHTML = ixBody(); const nt = $('.ix-note', box); if (nt) nt.hidden = !!R.ixQ.trim(); }, 150); };
+  $$('[data-ixp]', box).forEach(b => b.onclick = () => { R.ixPart = +b.dataset.ixp; store.set('ixp-' + R.id, R.ixPart); box.innerHTML = ixHtml(); bindIx(); const nq = $('#ixQ', box); });
+}
 function blockHtml(s, n, k) {
+  if (s.trim() === '[[색인]]') return R && R.ix ? `<div class="ix" id="ix" data-pg="${n}" data-s="${k}" data-skip="1">${ixHtml()}</div>` : '';
   const f = s.match(FIG_RE);
   if (f && f[1].startsWith('#')) { const alt = f[1].slice(1).trim(); return `<figure class="r-fig" data-pg="${n}" data-s="${k}" data-skip="1"><button class="fig-btn" data-zoom-img="${esc(f[2])}" data-cap="${esc(alt)}" aria-label="그림 크게 보기"><img src="${esc(f[2])}" alt="${esc(alt)}" loading="lazy"></button></figure>`; }  // ![#설명](주소): 설명은 화면에 안 보이고 읽기 프로그램만 읽음
   if (f) return `<figure class="r-fig" data-pg="${n}" data-s="${k}" data-skip="1"><button class="fig-btn" data-zoom-img="${esc(f[2])}" data-cap="${esc(f[1])}" aria-label="그림 크게 보기"><img src="${esc(f[2])}" alt="${esc(f[1])}" loading="lazy"></button>${f[1] ? `<figcaption>${esc(f[1])}</figcaption>` : ''}</figure>`;

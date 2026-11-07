@@ -566,7 +566,9 @@ fs.mkdirSync(path.join(OUT, 'data'), { recursive: true });
 fs.writeFileSync(path.join(OUT, 'data/site.json'), JSON.stringify(site));
 fs.writeFileSync(path.join(OUT, 'data/downloads.json'), JSON.stringify(DOWNLOADS));
 fs.mkdirSync(path.join(OUT, 'texts'), { recursive: true });
-for (const [id, t] of Object.entries(TEXTS)) fs.writeFileSync(path.join(OUT, 'texts', id + '.json'), JSON.stringify({ book: id, edition: t.edition, pages: t.pages, toc: t.toc }));
+// 색인처럼 표로 된 자료: content/indexes/<자료번호>.json (본문의 [[색인]] 자리에 찾기·순서 바꾸기가 되는 표로 보임)
+const indexOf = id => { const f = C('indexes/' + id + '.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : null; };
+for (const [id, t] of Object.entries(TEXTS)) { const ix = indexOf(id); fs.writeFileSync(path.join(OUT, 'texts', id + '.json'), JSON.stringify({ book: id, edition: t.edition, pages: t.pages, toc: t.toc, ...(ix ? { index: { colnames: ix.colnames, parts: ix.parts } } : {}) })); }
 // 관리자 화면이 예전 설정(config.yml)을 기억하지 않도록 바뀔 때마다 주소 끝에 표시를 붙입니다.
 { const ai = path.join(OUT, 'admin', 'index.html'); if (fs.existsSync(ai)) fs.writeFileSync(ai, fs.readFileSync(ai, 'utf8').replace('/admin/config.yml"', `/admin/config.yml?v=${ver('admin/config.yml')}"`)); }
 fs.writeFileSync(path.join(OUT, '_redirects'), `/read/:id/:page /read/:id/ 200\n`);
