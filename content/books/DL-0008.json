@@ -34,7 +34,7 @@
   "editions": [
     {
       "label": "초판",
-      "label_display": "",
+      "label_display": "초판 (전자책 교정 ver.)",
       "current": true,
       "public": true,
       "page_count": 356,
@@ -52,22 +52,22 @@
         "created": ""
       },
       "pdf_print": {
-        "site": "",
-        "created": "2026년 11월 8일",
         "mode": "file",
-        "url": "pdf/DL-0008/DL-0008_초판_인쇄용.pdf"
+        "url": "pdf/DL-0008/DL-0008_초판_인쇄용.pdf",
+        "site": "",
+        "created": "2026년 11월 8일"
       },
       "pdf_cover": {
-        "site": "",
-        "created": "2026년 11월 8일",
         "mode": "file",
-        "url": "pdf/DL-0008/DL-0008_초판_인쇄용표지.pdf"
+        "url": "pdf/DL-0008/DL-0008_초판_인쇄용표지.pdf",
+        "site": "",
+        "created": "2026년 11월 8일"
       },
       "epub": {
-        "site": "",
-        "created": "2025년 3월 7일",
         "mode": "file",
-        "url": "epub/DL-0008/DL-0008_초판.epub"
+        "url": "epub/DL-0008/DL-0008_초판.epub",
+        "site": "",
+        "created": "2025년 3월 7일"
       },
       "reader": true,
       "sources": [
