@@ -9,7 +9,6 @@
   "provider": "amumaldeul",
   "press": true,
   "paper": "request",
-  "paper_url": "https://cafe.naver.com/shweoomin/703",
   "stores": [
     {
       "name": "",
@@ -46,7 +45,6 @@
       "publisher_ebook": "我無말들",
       "isbn_ebook": "979-11-980922-8-1",
       "changes": "",
-      "hide_update": false,
       "pdf": {
         "mode": "none",
         "url": "",
@@ -89,16 +87,18 @@
       "collection": "我無말들 자체 제작",
       "collected": "",
       "permission_status": "confirmed",
-      "notice": "* 쉐우민 수행센터에서 한국어 통역을 담당하시는 청현 스님을 통해 아신 떼자니야 사야도께 법보시 전자책 출간을 허락받았으며, 냐눗따라 스님께서 원고 파일을 제공해주셨습니다.\n\n* 법보시 전자책은 냐눗따라 스님과 상의하여 종이책에서 좀 더 교정하였으며, 이 사이트의 '온라인으로 읽기'에는 2025년 전자책 교정 버전을 실었습니다.",
+      "notice": "* 쉐우민 수행센터에서 한국어 통역을 담당하시는 청현 스님을 통해 아신 떼자니야 사야도께 법보시 전자책 출간을 허락받았으며, 냐눗따라 스님께서 원고 파일을 제공해주셨습니다.\n\n* 법보시 전자책은 냐눗따라 스님과 상의하여 종이책에서 좀 더 교정하였으며, 이 사이트의 '온라인으로 읽기'에는 2025년 전자책 교정 버전을 실었습니다.\n\n* 아신 떼자니야 사야도의 종이책 법문집을 법보시로 받아보고 싶으신 분들은 쉐우민 지혜명상센터(http://cafe.naver.com/shweoomin)의 ‘사야도 책 신청’ 게시판을 참고하시기 바랍니다.",
       "permission_note": "* 이 책은 법보시용이므로 판매해서는 안 됩니다. 개인적 용도나 친구들에게 보시할 목적의 복사는 허가합니다.",
       "permission_image": "",
       "permissions": [],
-      "note": ""
+      "note": "",
+      "hide_update": false
     }
   ],
   "license": "CC BY-NC-ND",
   "added": "2026-11-08",
   "order": null,
   "hidden": false,
-  "hide_update": false
+  "hide_update": false,
+  "paper_url": "https://cafe.naver.com/shweoomin/703"
 }
