@@ -34,30 +34,56 @@
       "published_ebook": "2022년 12월 23일",
       "publisher_ebook": "我無말들",
       "isbn_ebook": "979-11-977072-6-1",
+      "file_created_print": "",
       "file_created": "2023년 6월 2일",
       "changes": "",
       "pdf": {
-        "site": "",
         "mode": "file",
-        "url": "pdf/DL-0003/DL-0003_초판.pdf"
+        "url": "pdf/DL-0003/DL-0003_초판.pdf",
+        "site": ""
       },
       "pdf_print": {
-        "site": "",
         "mode": "file",
-        "url": "pdf/DL-0003/DL-0003_초판_인쇄용.pdf"
+        "url": "pdf/DL-0003/DL-0003_초판_인쇄용.pdf",
+        "site": ""
       },
       "pdf_cover": {
-        "site": "",
         "mode": "file",
-        "url": "pdf/DL-0003/DL-0003_초판_인쇄용표지.pdf"
+        "url": "pdf/DL-0003/DL-0003_초판_인쇄용표지.pdf",
+        "site": ""
       },
       "epub": {
-        "site": "",
         "mode": "file",
-        "url": "epub/DL-0003/DL-0003_초판.epub"
+        "url": "epub/DL-0003/DL-0003_초판.epub",
+        "site": ""
       },
-      "reader": false,
-      "sources": [],
+      "reader": true,
+      "sources": [
+        {
+          "file": "pdf",
+          "url": "https://cafe.naver.com/dhammadipakorea/365",
+          "checked": "2026년 11월 7일",
+          "archive": ""
+        },
+        {
+          "file": "pdf_print",
+          "url": "https://cafe.naver.com/dhammadipakorea/365",
+          "checked": "2026년 11월 7일",
+          "archive": ""
+        },
+        {
+          "file": "pdf_cover",
+          "url": "https://cafe.naver.com/dhammadipakorea/365",
+          "checked": "2026년 11월 7일",
+          "archive": ""
+        },
+        {
+          "file": "epub",
+          "url": "https://cafe.naver.com/dhammadipakorea/258",
+          "checked": "2026년 11월 7일",
+          "archive": ""
+        }
+      ],
       "collection": "我無말들 자체 제작",
       "collected": "",
       "permission_status": "public",
