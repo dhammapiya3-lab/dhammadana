@@ -121,6 +121,7 @@ collections:
           - { name: publisher_ebook, label: 전자책 출판사, required: false, hint: "전자책(EPUB·PDF)을 펴낸 곳이 종이책과 다르면 적어 주세요" }
           - { name: isbn_ebook, label: 전자책 ISBN, required: false, hint: "전자책 ISBN이 따로 있으면 적어 주세요" }
           - { name: changes, label: 바뀐 내용, required: false }
+          - { name: hide_update, label: 첫 화면 '최근 업데이트'에서 이 판 소식 빼기, widget: boolean, default: false, required: false }
           - name: pdf
             label: PDF (화면용)
             widget: object
@@ -189,6 +190,7 @@ collections:
       - { name: added, label: 등록일, widget: datetime, type: date, format: "YYYY-MM-DD" }
       - { name: order, label: 순서, widget: number, value_type: int, required: false, hint: "같은 날 등록한 책끼리의 순서 (클수록 앞)" }
       - { name: hidden, label: 숨기기, widget: boolean, default: false, hint: "켜면 사이트에 나오지 않습니다" }
+      - { name: hide_update, label: 첫 화면 '최근 업데이트'에서 등록 소식 빼기, widget: boolean, default: false, required: false, hint: "켜면 첫 화면 '최근 업데이트'에 이 책의 '등록' 항목이 나오지 않습니다. 책은 도서관에 그대로 있습니다." }
 
   # ───────── 책 본문 (글로 읽기) ─────────
   - name: texts

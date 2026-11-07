@@ -289,9 +289,9 @@ function updatesList() {
   const rows = [];
   for (const b of BOOKS) for (const e of b.editions || []) {
     const fcd = e => ['pdf', 'epub', 'pdf_print', 'pdf_cover'].map(k => (e[k] || {}).created).find(Boolean) || e.file_created || e.file_created_print;
-    if (e.changes && (fcd(e) || e.published)) rows.push({ d: fcd(e) || e.published, b, c: `${e.label} · ${e.changes}` });
+    if (e.changes && !e.hide_update && (fcd(e) || e.published)) rows.push({ d: fcd(e) || e.published, b, c: `${e.label} · ${e.changes}` });
   }
-  for (const b of BOOKS) rows.push({ d: b.added || '', b, c: '등록' });
+  for (const b of BOOKS) if (!b.hide_update) rows.push({ d: b.added || '', b, c: '등록' });
   return rows.sort((a, b) => b.d.localeCompare(a.d)).slice(0, 8);
 }
 put('index.html', layout({
