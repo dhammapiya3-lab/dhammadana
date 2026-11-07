@@ -27,6 +27,16 @@
       ],
       "partner": true,
       "note": "네이버 카페 · cafe.naver.com/shweoomin"
+    },
+    {
+      "id": "theravadabuddhists",
+      "name": "한국 테라와다 불자들의 모임 카페",
+      "kind": "단체",
+      "urls": [
+        "https://cafe.naver.com/theravadabuddhists"
+      ],
+      "partner": true,
+      "note": "네이버 카페 · cafe.naver.com/theravadabuddhists"
     }
   ]
 }

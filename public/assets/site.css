@@ -312,6 +312,7 @@ body.has-player footer.site{padding-bottom:110px}
 .prose{max-width:720px;padding-top:36px;padding-bottom:36px}
 .prose h1{font-size:30px;margin-bottom:6px}
 .prose h2{font-size:20px;margin:34px 0 10px}
+.prose h3{margin:30px 0 8px}
 .prose p,.prose li{font-size:15.5px;line-height:1.85}
 .homage{font-family:var(--serif);font-style:italic;color:var(--robe);font-size:17px;margin:4px 0 22px}
 .link-card{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;gap:4px;color:var(--ink)}
