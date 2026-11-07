@@ -66,8 +66,9 @@
       "sources": [],
       "collection": "我無말들 자체 제작",
       "collected": "",
-      "permission_status": "",
-      "permission_note": "* 본 도서는 법보시용 도서(비매품)입니다. 상업적 목적이 아닌 한\n무단 복제와 전재를 마음껏 하십시오. 단, 내용을 임의로 변경해서는 안 됩니다.\n\n\n# 알림: 담마디빠 선원 출판사에서 차후 재출판될 예정입니다.\n도서관을 통한 대출 방법은 아래 링크를 참고하시기 바랍니다.\n\nhttps://blog.naver.com/k3a3n3g3/223796951451",
+      "permission_status": "public",
+      "notice": "# 알림: 담마디빠 선원 출판사에서 차후 재출판될 예정입니다.\n도서관을 통한 대출 방법은 아래 링크를 참고하시기 바랍니다.\n\nhttps://blog.naver.com/k3a3n3g3/223796951451",
+      "permission_note": "* 본 도서는 법보시용 도서(비매품)입니다. 상업적 목적이 아닌 한\n무단 복제와 전재를 마음껏 하십시오. 단, 내용을 임의로 변경해서는 안 됩니다.",
       "permission_image": "",
       "permissions": [
         "amumaldeul-self"
