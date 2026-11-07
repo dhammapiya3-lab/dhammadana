@@ -578,21 +578,12 @@ put('dhammatalk/index.html', layout({ title: '법문 바로 듣기', nav: 'dhamm
 
 // 추천·협력
 const partners = PROVIDERS.filter(p => p.partner);
-// 카드 아래 줄: 네이버·다음 카페는 '네이버 카페' 표시 + 카페 이름, 설명에 들어 있던 주소는 뺌
-function linkMeta(l) {
-  const u = String(l.url || ''), host = (u.match(/\/\/([^/]+)/) || [])[1] || '';
-  const cafe = /cafe\.naver\.com/.test(u) ? ['naver', '네이버 카페'] : /cafe\.daum\.net/.test(u) ? ['daum', '다음 카페'] : null;
-  let note = String(l.note || '').replace(/(네이버|다음)\s*카페\s*·?\s*/g, '').replace(/(https?:\/\/)?(cafe\.naver\.com|cafe\.daum\.net)\/\S*/g, '').replace(/^[\s·|]+|[\s·|]+$/g, '').trim();
-  if (note === host.replace(/^www\./, '')) note = '';
-  const id = cafe ? (u.match(/cafe\.(?:naver\.com|daum\.net)\/([^/?#]+)/) || [])[1] || '' : '';
-  return `<span class="lc-meta">${cafe ? `<span class="lc-badge ${cafe[0]}">${cafe[1]}</span>` : (String(l.name).toLowerCase().includes(host.replace(/^www\./, '').toLowerCase()) ? '' : `<span class="lc-host">${esc(host.replace(/^www\./, ''))}</span>`)}${note ? `<span class="small muted lc-note">${esc(note)}</span>` : ''}</span>`;
-}
 const linkGroups = [{ name: '협력 단체', desc: '도서관과 함께 법보시 자료를 나누는 단체입니다.', items: partners.map(p => ({ name: p.name, url: (p.urls || [])[0] || '#', note: p.note || '' })) }, ...LINKS];
 put('links/index.html', layout({
   title: '추천·협력 사이트', nav: 'links', page: 'links', body: `<div class="wrap"><div class="prose" style="padding-bottom:4px"><h1>추천·협력 사이트</h1><p class="muted">함께 법을 나누는 곳들을 종류별로 모았습니다.</p></div>
   ${linkGroups.filter(g => g.items.length).map(g => `<section style="margin-top:30px"><div class="section-head" style="margin-bottom:12px"><h2>${esc(g.name)}</h2><span class="small muted">${g.items.length}곳</span></div>
    <p class="small muted" style="margin:-4px 0 14px">${esc(g.desc || '')}</p>
-   <div class="link-grid">${g.items.map(l => `<a class="link-card" href="${esc(l.url)}" target="_blank" rel="noopener"><img class="lc-ico" src="https://www.google.com/s2/favicons?sz=64&domain=${encodeURIComponent((l.url.match(/\/\/([^/]+)/) || [])[1] || '')}" alt="" width="28" height="28" loading="lazy" onerror="this.style.visibility='hidden'"><b class="lc-name">${esc(l.name)} ↗</b>${linkMeta(l)}</a>`).join('')}</div></section>`).join('')}</div>`
+   <div class="link-grid">${g.items.map(l => `<a class="link-card" href="${esc(l.url)}" target="_blank" rel="noopener"><img class="lc-ico" src="https://www.google.com/s2/favicons?sz=64&domain=${encodeURIComponent((l.url.match(/\/\/([^/]+)/) || [])[1] || '')}" alt="" width="28" height="28" loading="lazy" onerror="this.style.visibility='hidden'"><b class="lc-name">${esc(l.name)} ↗</b><span class="small muted">${esc(l.note || '')}</span></a>`).join('')}</div></section>`).join('')}</div>`
 }));
 
 // 소식
