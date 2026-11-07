@@ -414,7 +414,7 @@ async function initReaderPage() {
   const pages = man.pages.map((p, i) => ({ n: i + 1, label: p.label || '', img: p.img ? base + p.img : '', big: p.big ? base + p.big : '', w: p.w, h: p.h, text: p.text || '' }));
   const last = store.get('pos-' + id, 1);
   R = {
-    id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, pages, toc: man.toc || [],
+    id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, cover: root.dataset.cover || '', kakao: root.dataset.kakao || '', pages, toc: man.toc || [],
     i: Math.min(Math.max(want || (last > 1 ? last : 0) || firstContent(pages, man.toc || []), 1), pages.length) - 1,
     view: 'text', zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), bold: store.get('rbold', false), lh: store.get('rlh', 1.9), font: store.get('rfont', 'serif'), mw: store.get('rmw', 36),
     hl: hlp ? hlp.split('|').filter(Boolean) : [], speaking: false,
@@ -662,6 +662,20 @@ function bindReader() {
   $('#selShare').onclick = () => { const d = $('#selPop')._sel; $('#selPop').classList.remove('show'); if (d) openShare(d, plabel(d.p)); };
   $$('u.ul', el).forEach(u => u.onclick = e => { e.stopPropagation(); openUl(+u.dataset.hid); });
 }
+// 카카오톡 공유 (카카오 JavaScript SDK, 설정의 kakao_js_key)
+let kakaoP = null;
+function kakaoReady() {
+  if (kakaoP) return kakaoP;
+  kakaoP = new Promise(res => {
+    if (window.Kakao) { try { if (!Kakao.isInitialized()) Kakao.init(R.kakao); } catch (e) {} return res(); }
+    const sc = document.createElement('script');
+    sc.src = 'https://t1.kakaocdn.net/kakao_js_sdk/2.8.4/kakao.min.js';
+    sc.integrity = 'sha384-BGX7Wb16GmRFagri4bLJV2DgipVZaU2AI812GZtHtHzzDQJnfHasDXN5houxv45w'; sc.crossOrigin = 'anonymous';
+    sc.onload = () => { try { Kakao.init(R.kakao); } catch (e) {} res(); }; sc.onerror = () => res();
+    document.head.appendChild(sc);
+  });
+  return kakaoP;
+}
 // 고른 글을 SNS로 공유: 글 + 출처(저자, 『책』 쪽) + 그 쪽으로 오는 주소
 function openShare(d, pl) {
   const el = $('#reader'); $$('.panel', el).forEach(x => x.classList.remove('open'));
@@ -671,10 +685,18 @@ function openShare(d, pl) {
   const full = `${q(d.text)}\n${url}`;
   const short = n => d.text.length > n ? d.text.slice(0, n - 1) + '…' : d.text;
   $('#shText').textContent = full;
+  if (R.kakao) kakaoReady();  // 카카오 공유 프로그램을 미리 불러 둠 (단추를 누르는 즉시 창이 뜨도록)
   $('#p-share').classList.add('open');
   $$('#p-share [data-sh]').forEach(b => b.onclick = async () => {
     const k = b.dataset.sh, open = u => window.open(u, '_blank', 'noopener,width=620,height=640');
     if (k === 'app') { try { await navigator.share({ title: `『${R.title}』`, text: q(d.text), url }); } catch (e) {} return; }
+    if (k === 'kakao' && window.Kakao && Kakao.isInitialized && Kakao.isInitialized()) {
+      const desc = `“${short(150)}”\n${src.replace(/^— /, '')}`;
+      try {
+        Kakao.Share.sendDefault({ objectType: 'feed', content: { title: `『${R.title}』${pl ? ' ' + pl + '쪽' : ''}`, description: desc, imageUrl: R.cover || `https://${SITE}/images/og.jpg`, link: { mobileWebUrl: url, webUrl: url } }, buttons: [{ title: '이 쪽 읽으러 가기', link: { mobileWebUrl: url, webUrl: url } }] });
+        return;
+      } catch (e) {}
+    }
     if (k === 'kakao' && navigator.share && matchMedia('(pointer: coarse)').matches) { try { await navigator.share({ title: `『${R.title}』`, text: q(d.text), url }); } catch (e) {} return; }
     if (k === 'kakao') { copy(full, '복사했습니다. 카카오톡 대화창에 붙여넣기(Ctrl+V) 하세요'); return; }
     if (k === 'band') return open(`https://band.us/plugin/share?body=${encodeURIComponent(full)}&route=${encodeURIComponent(SITE)}`);

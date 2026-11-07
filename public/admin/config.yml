@@ -289,6 +289,7 @@ collections:
         fields:
           - { name: site_name, label: 사이트 이름 }
           - { name: site_sub, label: 영문 부제 }
+          - { name: kakao_js_key, label: 카카오 JavaScript 키, required: false, hint: "카카오 개발자 사이트(developers.kakao.com)의 앱 JavaScript 키. 고른 글을 컴퓨터에서도 카카오톡으로 바로 공유할 때 씁니다. 공개용 키라 사이트에 그대로 들어갑니다." }
           - { name: paper_request_url, label: 종이책 보시 신청서 주소, required: false, hint: "'종이책 보시 신청' 단추를 누르면 열릴 신청서 주소. 비워 두면 단추를 누를 수 없고 표시만 됩니다." }
           - { name: site_url, label: 사이트 주소 }
           - { name: files_base, label: 파일 저장소 주소, hint: "보통 바꾸지 않습니다" }
