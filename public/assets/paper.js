@@ -25,7 +25,7 @@
     if (!cur.length && want && BOOKS.some(b => b.id === want)) pick.set(want, 1);
     const all = [...BOOKS, ...cur.filter(x => !BOOKS.some(b => b.id === x.id))];
     return `<form class="pq-form" id="pqForm" autocomplete="on">
-      <div class="pq-row"><label for="fTitle">글 제목 <span class="muted small">(선택 · 비워 두면 '『자애 수행』(예시) 신청합니다'로 보입니다)</span></label><input id="fTitle" name="title" maxlength="60" value="${esc(v.title)}"></div>
+      <div class="pq-row"><label for="fTitle">글 제목 (선택) <span class="muted small">- 비워 두면 '『자애 수행』(예시) 신청합니다'로 보입니다.</span></label><input id="fTitle" name="title" maxlength="60" value="${esc(v.title)}"></div>
       <fieldset class="pq-row pq-bk"><legend>신청할 책 <span class="muted small">(여러 권을 함께 고를 수 있습니다)</span></legend>
         ${all.map(b => { const on = pick.has(b.id); return `<div class="pq-bi${on ? ' on' : ''}"><label><input type="checkbox" data-bk="${esc(b.id)}" data-title="${esc(b.title)}"${on ? ' checked' : ''}> 『${esc(b.title)}』</label><span class="pq-q"><input type="number" min="1" inputmode="numeric" data-q="${esc(b.id)}" value="${on ? pick.get(b.id) : 1}" aria-label="『${esc(b.title)}』 권수"${on ? '' : ' disabled'}> 권</span></div>`; }).join('')}
       </fieldset>
