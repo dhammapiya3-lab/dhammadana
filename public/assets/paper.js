@@ -61,7 +61,7 @@
     if (mine._edit) return formHtml(mine, true);
     const m = mine;
     return `<dl class="pq-dl"><dt>신청 번호</dt><dd>${esc(m.id)}</dd><dt>책</dt><dd>${esc(summary(m))}</dd><dt>받는 분</dt><dd>${esc(m.name)}</dd><dt>연락처</dt><dd>${esc(m.phone)}</dd><dt>주소</dt><dd>${esc(m.address)}</dd><dt>남길 말</dt><dd>${esc(m.memo) || '—'}</dd><dt>상태</dt><dd>${ST[m.status]}</dd></dl>
-      <div class="pq-replies"><h3>댓글</h3>${(m.replies || []).map(x => `<div class="pq-reply ${x.by === 'user' ? 'me' : ''}"><div class="pq-ra">${x.by === 'user' ? '신청한 분' : '我無말들'} · ${esc(x.at.slice(5, 16).replace('T', ' ').replace('-', '.'))}</div><div class="pq-rt">${esc(x.text)}</div></div>`).join('') || '<p class="muted small">아직 댓글이 없습니다.</p>'}
+      <div class="pq-replies"><h3>댓글</h3>${(m.replies || []).map(x => `<div class="pq-reply ${x.by === 'user' ? 'me' : ''}"><div class="pq-ra">${x.by === 'user' ? '신청한 분' : '담마삐야'} · ${esc(x.at.slice(5, 16).replace('T', ' ').replace('-', '.'))}</div><div class="pq-rt">${esc(x.text)}</div></div>`).join('') || '<p class="muted small">아직 댓글이 없습니다.</p>'}
         <form class="pq-cm" id="pqCm"><textarea id="cmText" rows="2" maxlength="1000" placeholder="출판사에 남길 댓글" required></textarea><button class="btn sm" type="submit">댓글 달기</button></form></div>
       ${m.status === 'sent' ? '<p class="muted small">발송한 신청은 고치거나 취소할 수 없습니다.</p>' : '<div class="pq-btns"><button class="btn sm" id="pqEdit">고치기</button><button class="btn sm ghost" id="pqCancel">신청 취소</button></div>'}
       <div class="pq-msg" id="pqMsg2" role="status"></div>`;
