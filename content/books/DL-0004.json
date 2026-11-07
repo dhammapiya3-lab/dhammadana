@@ -9,6 +9,12 @@
   "provider": "amumaldeul",
   "press": true,
   "paper": "ebook",
+  "stores": [
+    {
+      "name": "",
+      "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=305016275&start=pcsearch_auto"
+    }
+  ],
   "original_title": "",
   "original_language": "",
   "original_source": "",
@@ -25,6 +31,7 @@
   "editions": [
     {
       "label": "초판",
+      "label_display": "",
       "current": true,
       "public": true,
       "page_count": 154,
@@ -71,6 +78,7 @@
       "collection": "我無말들 자체 제작",
       "collected": "",
       "permission_status": "confirmed",
+      "notice": "",
       "permission_note": "* cafe.naver.com/satisamadhi에서 이 책의 한글 파일과 pdf 파일을 다운받으실 수 있습니다.",
       "permission_image": "",
       "permissions": [
