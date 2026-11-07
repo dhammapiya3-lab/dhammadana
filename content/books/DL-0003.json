@@ -1,14 +1,14 @@
 {
   "id": "DL-0003",
   "title": "행복을 찾아서",
-  "subtitle": "",
+  "subtitle": "8정도를 닦아가는 길",
   "cover": "/uploads/행복을 찾아서 표지_앞면.jpg",
   "byline": "우 쉐아웅 지음",
   "translator": "식카와띠 위뿔라냐니 옮김",
   "teacher": "shweaung",
   "provider": "amumaldeul",
   "press": true,
-  "original_title": "",
+  "original_title": "ချမ်းသာကိုရှာဖွေခြင်း",
   "original_language": "",
   "original_source": "",
   "series": "",
@@ -34,6 +34,7 @@
       "published_ebook": "2022년 12월 23일",
       "publisher_ebook": "我無말들",
       "isbn_ebook": "979-11-977072-6-1",
+      "file_created": "",
       "changes": "",
       "pdf": {
         "mode": "file",
@@ -62,28 +63,28 @@
       "reader": true,
       "sources": [
         {
-          "file": "pdf",
           "url": "https://cafe.naver.com/dhammadipakorea/365",
           "checked": "2026년 11월 7일",
-          "archive": ""
+          "archive": "",
+          "file": "pdf"
         },
         {
-          "file": "pdf_print",
           "url": "https://cafe.naver.com/dhammadipakorea/365",
           "checked": "2026년 11월 7일",
-          "archive": ""
+          "archive": "",
+          "file": "pdf_print"
         },
         {
-          "file": "pdf_cover",
           "url": "https://cafe.naver.com/dhammadipakorea/365",
           "checked": "2026년 11월 7일",
-          "archive": ""
+          "archive": "",
+          "file": "pdf_cover"
         },
         {
-          "file": "epub",
           "url": "https://cafe.naver.com/dhammadipakorea/258",
           "checked": "2026년 11월 7일",
-          "archive": ""
+          "archive": "",
+          "file": "epub"
         }
       ],
       "collection": "我無말들 자체 제작",
