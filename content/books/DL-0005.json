@@ -9,6 +9,12 @@
   "provider": "amumaldeul",
   "press": true,
   "paper": "request",
+  "stores": [
+    {
+      "name": "",
+      "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=305352325"
+    }
+  ],
   "original_title": "သိစရာ၊ တွေးစရာ",
   "original_language": "미얀마어",
   "original_source": "",
@@ -24,6 +30,7 @@
   "editions": [
     {
       "label": "개정3판",
+      "label_display": "",
       "current": true,
       "public": true,
       "page_count": 84,
