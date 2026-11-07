@@ -843,3 +843,6 @@ a.paper-request:hover{filter:brightness(1.08)}
 .r-fig:has(img[src*="DL-0010-aa"]){margin:1.2em 0}
 .r-fig .fig-btn img[src*="DL-0010-write"]{max-height:110px;border:0;margin:0 0 0 auto}
 .reflow p.r-center{text-align:center;text-indent:0}
+/* ● 항목: 다음 줄들을 ● 만큼 들여쓰기, '|| ' 문단은 앞 쪽에서 이어진 항목 */
+.reflow p.r-bul{padding-left:.95em;text-indent:-.95em}
+.reflow p.r-bul-c{padding-left:.95em;text-indent:0}
