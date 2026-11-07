@@ -691,9 +691,12 @@ function openShare(d, pl) {
     const k = b.dataset.sh, open = u => window.open(u, '_blank', 'noopener,width=620,height=640');
     if (k === 'app') { try { await navigator.share({ title: `『${R.title}』`, text: q(d.text), url }); } catch (e) {} return; }
     if (k === 'kakao' && window.Kakao && Kakao.isInitialized && Kakao.isInitialized()) {
-      const desc = `“${short(150)}”\n\n${src}`;
+      // 텍스트형 메시지: 고른 글이 카톡 말풍선에 글로 그대로 보임 (카카오 제한 200자)
+      const tail = `\n\n${src}`, room = 200 - tail.length - 2;
+      const body = d.text.length > room ? d.text.slice(0, room - 1) + '…' : d.text;
       try {
-        Kakao.Share.sendDefault({ objectType: 'feed', content: { title: `『${R.title}』${pl ? ' ' + pl + '쪽' : ''}`, description: desc, imageUrl: R.cover || `https://${SITE}/images/og.jpg`, link: { mobileWebUrl: url, webUrl: url } }, buttons: [{ title: '이 쪽 읽으러 가기', link: { mobileWebUrl: url, webUrl: url } }] });
+        Kakao.Share.sendDefault({ objectType: 'text', text: `“${body}”${tail}`, link: { mobileWebUrl: url, webUrl: url }, buttonTitle: '이 쪽 읽으러 가기' });
+        if (d.text.length > room) toast('카카오톡은 200자까지만 보낼 수 있어 앞부분만 보냈습니다. 전체는 ‘복사’로 붙여넣어 주세요');
         return;
       } catch (e) {}
     }
