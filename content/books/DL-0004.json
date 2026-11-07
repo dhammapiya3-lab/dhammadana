@@ -2,56 +2,74 @@
   "id": "DL-0004",
   "title": "빠알리어-한국어-영어 색인",
   "subtitle": "",
-  "original_title": "Pāli-Korean-English Index",
-  "original_language": "",
-  "series": "",
-  "teacher": "",
+  "cover": "/uploads/221111_Index_표지.jpg",
   "byline": "오원탁 편저",
   "translator": "",
+  "teacher": "",
+  "provider": "amumaldeul",
+  "press": true,
+  "original_title": "",
+  "original_language": "",
+  "original_source": "",
+  "series": "",
   "main": [],
   "topics": [
     "빠알리어",
     "사전"
   ],
-  "provider": "amumaldeul",
-  "press": true,
-  "cover": "/covers/DL-0004.jpg",
-  "description": "",
-  "license": "CC BY-NC-ND",
-  "original_source": "",
-  "added": "2026-11-06",
-  "order": 4,
-  "hidden": false,
+  "description": "\n이 색인은 “빠알리어”는 물론,\n“한국어”나 “영어”\n그리고 “빠알리어 한글 표기”로도\n찾아 볼 수 있는\n간단한 빠알리어 사전입니다.\n\n또한 참고 자료로 빠알리어와\n위빳사나 관련 책을 수록하였습니다.",
+  "author_intro": "",
+  "translator_intro": "오원탁(WonTag Oh, 香圓)\n\n서울대학교를 졸업한 화공기술사. 삼성 엔지니어링(주) 프로젝트 매니저. 한국가스안전공사 연구소장. 수덕사 부설 무불선학대학원 수료.\n인터넷 사이트 : https://cafe.naver.com/satisamadhi\n\n저서 :\n『법구경_하루를 살더라도』, 불교시대사, 2020.\n\n역서 :\n아신 자띨라 사야도 법문, 『큰 스승의 가르침』, 행복한 숲, 2005.\n구나라타나 스님 지음, 『부처의 길, 팔정도』, 아름드리미디어, 2014.\n냐나포니카 테라 영역, 『마하시 스님의 칠청정을 통한 지혜의 향상』, 경서원(010-3245-7121), 2021.\n니나 반 고르콤 지음, 『위빠사나 수행과 24조건』, 보리수선원(02-517-2841), 2015,",
+  "contents": "일러두기 4\n머리말 5\n빠알리어 한글 표기 7\n\n빠알리어-한국어-영어 색인\n\n제1부 빠알리어 로마자 표기 순 9\n제2부 한국어 순 39\n제3부 빠알리어 한글 표기 순 81\n제4부 영어 순 111\n\n첨부 마음부수 141\n참고 자료 145",
   "editions": [
     {
       "label": "초판",
-      "published": "",
-      "file_created": "",
-      "changes": "",
       "current": true,
       "public": true,
+      "page_count": 154,
+      "published": "2021년 9월 25일",
+      "publisher_print": "",
+      "isbn": "",
+      "published_ebook": "2022년 11월 30일",
+      "publisher_ebook": "我無말들",
+      "isbn_ebook": "979-11-977072-9-2",
+      "file_created": "2022년 11월 30일",
+      "changes": "",
       "pdf": {
+        "mode": "file",
+        "url": "",
+        "site": ""
+      },
+      "pdf_print": {
         "mode": "none",
-        "url": ""
+        "url": "",
+        "site": ""
+      },
+      "pdf_cover": {
+        "mode": "none",
+        "url": "",
+        "site": ""
       },
       "epub": {
         "mode": "none",
-        "url": ""
+        "url": "",
+        "site": ""
       },
       "reader": false,
       "sources": [],
       "collection": "我無말들 자체 제작",
       "collected": "",
+      "permission_status": "confirmed",
+      "permission_note": "* cafe.naver.com/satisamadhi에서 이 책의 한글 파일과 pdf 파일을 다운받으실 수 있습니다.",
+      "permission_image": "",
       "permissions": [
         "amumaldeul-self"
       ],
-      "note": "",
-      "pdf_print": {
-        "mode": "none"
-      },
-      "pdf_cover": {
-        "mode": "none"
-      }
+      "note": ""
     }
-  ]
+  ],
+  "license": "CC BY-NC-ND",
+  "added": "2026-11-06",
+  "order": 4,
+  "hidden": false
 }
