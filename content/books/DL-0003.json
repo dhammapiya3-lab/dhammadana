@@ -42,9 +42,9 @@
         "site": ""
       },
       "pdf_print": {
-        "site": "",
-        "mode": "file",
-        "url": "pdf/DL-0003/DL-0003_초판_인쇄용.pdf"
+        "mode": "none",
+        "url": "",
+        "site": ""
       },
       "pdf_cover": {
         "mode": "file",
