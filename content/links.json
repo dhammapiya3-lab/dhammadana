@@ -30,6 +30,16 @@
           "name": "tipitaka.org",
           "url": "https://tipitaka.org/",
           "note": "6차 결집본 빠알리 삼장 원문"
+        },
+        {
+          "name": "Digital Pāli Reader",
+          "url": "https://www.digitalpalireader.online/",
+          "note": "빠알리 삼장을 읽으며 낱말을 눌러 사전 뜻과 문법을 바로 찾아보는 도구"
+        },
+        {
+          "name": "SuttaCentral",
+          "url": "https://suttacentral.net/",
+          "note": "초기불교 경전 원문(빠알리 등)과 여러 나라 말 번역을 함께 보는 곳"
         }
       ]
     }
