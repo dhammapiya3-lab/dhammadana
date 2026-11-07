@@ -52,9 +52,9 @@
         "url": "pdf/DL-0003/DL-0003_초판_인쇄용표지.pdf"
       },
       "epub": {
+        "site": "",
         "mode": "file",
-        "url": "",
-        "site": ""
+        "url": "epub/DL-0003/DL-0003_초판.epub"
       },
       "reader": false,
       "sources": [],
