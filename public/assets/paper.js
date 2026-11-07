@@ -51,7 +51,7 @@
     if (!items.length) return '<p class="muted pq-empty">아직 신청 글이 없습니다.</p>';
     return `<ul class="pq-list">${items.map((x, i) => `<li class="${x.id === openId ? 'open' : ''}">
       <button class="pq-item" data-id="${x.id}" aria-expanded="${x.id === openId}">
-        <span class="pq-no">${items.length - i}</span>
+        <span class="pq-no">${x.no || items.length - i}</span>
         <span class="pq-t">🔒 비밀글 · ${x.title ? esc(x.title) : esc(x.book) + ' 신청합니다'}${x.edited ? ' <span class="muted small">(고침)</span>' : ''}${x.replies ? ` <span class="pq-rc">💬 댓글 ${x.replies}</span>` : ''}</span>
         <span class="pq-w">${esc(x.who)}</span><span class="pq-d">${esc(x.date.slice(5).replace('-', '.'))}</span>
         <span class="pq-s ${x.status}">${ST[x.status] || ''}</span></button>

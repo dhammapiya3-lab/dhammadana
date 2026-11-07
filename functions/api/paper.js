@@ -25,8 +25,8 @@ const putJ = (env, key, v) => env.PAPER.put(key, JSON.stringify(v), { httpMetada
 const booksOf = r => r.books && r.books.length ? r.books : (r.book ? [{ id: r.book, title: r.bookTitle, qty: r.qty }] : []);
 const summary = r => booksOf(r).map(x => `『${x.title}』 ${x.qty}권`).join(', ');
 // 공개 목록: 책 제목만 (권수는 신청한 분·관리자만)
-const pub = r => ({ v: 3, id: r.id, who: mask(r.name), book: booksOf(r).map(x => `『${x.title}』`).join(', '), title: r.title || '', date: r.created.slice(0, 10), status: r.status, edited: !!r.updated, replies: (r.replies || []).length });
-async function saveIndex(env, list) { await putJ(env, 'index.json', list.sort((a, b) => b.id.localeCompare(a.id))); }
+const pub = r => ({ v: 4, id: r.id, no: r.no || 0, at: r.created, who: mask(r.name), book: booksOf(r).map(x => `『${x.title}』`).join(', '), title: r.title || '', date: r.created.slice(0, 10), status: r.status, edited: !!r.updated, replies: (r.replies || []).length });
+async function saveIndex(env, list) { await putJ(env, 'index.json', list.sort((a, b) => (b.no || 0) - (a.no || 0) || String(b.at || '').localeCompare(String(a.at || '')) || b.id.localeCompare(a.id))); }
 async function upsertIndex(env, r) { const l = (await getJ(env, 'index.json', [])).filter(x => x.id !== r.id); l.push(pub(r)); await saveIndex(env, l); }
 async function dropIndex(env, id) { await saveIndex(env, (await getJ(env, 'index.json', [])).filter(x => x.id !== id)); }
 
@@ -92,11 +92,14 @@ export async function onRequestGet({ request, env }) {
     return json({ ready: true, notify: !!env.PAPER_NOTIFY_URL, items });
   }
   let l = await getJ(env, 'index.json', []);
-  if (l.some(x => x.v !== 3)) {  // 예전 목록 형식이면 신청 글에서 다시 만듦
-    const rs = (await Promise.all(l.map(x => getJ(env, `req/${x.id}.json`, null)))).filter(Boolean);
+  if (l.some(x => x.v !== 4)) {  // 예전 목록 형식이면 신청 글에서 다시 만듦
+    const rs = (await Promise.all(l.map(x => getJ(env, `req/${x.id}.json`, null)))).filter(Boolean).sort((a, b) => a.created.localeCompare(b.created) || a.id.localeCompare(b.id));
+    let n = Math.max(0, ...rs.map(r => r.no || 0));  // 번호 없는 예전 글은 신청한 차례대로 번호를 붙임
+    for (const r of rs) if (!r.no) { r.no = ++n; await putJ(env, `req/${r.id}.json`, r); }
+    const c = await getJ(env, 'counter.json', { n: 0 }); if (c.n < n) await putJ(env, 'counter.json', { n });
     l = rs.map(r => ({ ...pub(r), sentAt: r.sentAt || '' })); await saveIndex(env, l);
   }
-  return json({ ready: true, items: l.map(({ sentAt, v, ...x }) => x) });
+  return json({ ready: true, items: l.map(({ sentAt, v, at, ...x }) => x) });
 }
 
 export async function onRequestPost(ctx) {
@@ -136,7 +139,9 @@ export async function onRequestPost(ctx) {
     const pw = String(b.password || ''); if (pw.length < 4 || pw.length > 64) return json({ error: '비밀번호를 4자 이상 정해 주세요.' }, 400);
     const [f, err] = readFields(b, await bookList(request)); if (err) return json({ error: err }, 400);
     if (await limited(env, request, 'new', 5, 60)) return json({ error: '짧은 시간에 너무 많이 신청했습니다. 한 시간 뒤 다시 해 주세요.' }, 429);
-    const salt = newId(); const r = { id: newId(), created: kst(), updated: '', status: 'received', sentAt: '', ...f, salt, pw: await hashPw(pw, salt) };
+    const salt = newId(); const c = await getJ(env, 'counter.json', null);
+    const no = (c ? c.n : Math.max(0, ...(await getJ(env, 'index.json', [])).map(x => x.no || 0))) + 1; await putJ(env, 'counter.json', { n: no });
+    const r = { no, id: newId(), created: kst(), updated: '', status: 'received', sentAt: '', ...f, salt, pw: await hashPw(pw, salt) };
     await putJ(env, `req/${r.id}.json`, r); await upsertIndex(env, r);
     ctx.waitUntil(notify(env, r, '새 신청'));
     return json({ ok: true, id: r.id });
