@@ -9,6 +9,7 @@
   "provider": "amumaldeul",
   "press": true,
   "paper": "request",
+  "paper_url": "",
   "stores": [
     {
       "name": "",
@@ -37,7 +38,7 @@
       "label_display": "초판 (전자책 교정 ver.)",
       "current": true,
       "public": true,
-      "page_count": 356,
+      "page_count": 357,
       "published": "2022년 5월 15일",
       "publisher_print": "쉐우민 수행 센터",
       "isbn": "",
@@ -64,10 +65,10 @@
         "created": "2022년 5월 15일"
       },
       "epub": {
-        "site": "",
-        "created": "2026년 11월 8일",
         "mode": "file",
-        "url": "epub/DL-0008/DL-0008_초판.epub"
+        "url": "epub/DL-0008/DL-0008_초판.epub",
+        "site": "",
+        "created": "2026년 11월 8일"
       },
       "reader": true,
       "sources": [
