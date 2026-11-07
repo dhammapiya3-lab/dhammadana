@@ -126,6 +126,12 @@ function ymd(t) {
 }
 // 원본 출처가 어느 파일의 것인지 (비우거나 '모든 파일'이면 표시 안 함)
 // 라이선스 이름 → 설명 페이지(한국어) 링크. '저작권자 허락'처럼 맞는 페이지가 없으면 글자만
+// 글 속의 링크 주소(https://…, www.…, 도메인/…)를 누를 수 있는 링크로
+const linkify = t => esc(t).replace(/\b((?:https?:\/\/|www\.)[^\s<>"']+|[a-z0-9.-]+\.(?:kr|com|net|org|io|me|co)(?:\/[^\s<>"']*)?)/gi, m => {
+  const tail = (m.match(/[.,);:!?]+$/) || [''])[0], u = m.slice(0, m.length - tail.length);
+  const href = /^https?:\/\//i.test(u) ? u : 'https://' + u;
+  return `<a href="${href}" target="_blank" rel="noopener">${u}</a>${tail}`;
+});
 const LIC_URL = {
   'CC BY-NC-ND': 'https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ko',
   'CC BY-NC-SA': 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko',
@@ -395,7 +401,7 @@ for (const b of BOOKS) {
       <dt>수집 경로</dt><dd>${esc(e.collection || '—')}${e.collected ? ` <span class="muted small">(${esc(e.collected)})</span>` : ''}</dd>
       <dt>게시 허락</dt><dd>${permLabel || e.permission_note || e.permission_image ? `${permLabel}${perms.filter(p => p.image && p.image_public).map(p => ` · <button class="link-btn" data-permit="${esc(p.image)}" data-title="${esc(b.title)}">허락서 보기</button>`).join('')}${e.permission_image ? `${permLabel ? ' · ' : ''}<button class="link-btn" data-permit="${esc(e.permission_image)}" data-title="${esc(b.title)}">허락서 보기</button>` : ''}${e.permission_note ? `<blockquote class="perm-note">${esc(e.permission_note).replace(/\n/g, '<br>')}</blockquote>` : ''}` : '—'}</dd>
       <dt>라이선스</dt><dd>${licHtml(b.license)}</dd>
-      ${String(e.notice || '').trim() ? `<dt>알림</dt><dd>${esc(e.notice.trim()).replace(/\n/g, '<br>')}</dd>` : ''}
+      ${String(e.notice || '').trim() ? `<dt>알림</dt><dd>${linkify(e.notice.trim()).replace(/\n/g, '<br>')}</dd>` : ''}
       </dl>
       ${edTables}
       <p class="small muted" style="margin-top:10px">새 판이 올라오면 이전 판은 보관되고, 최신판만 내려받기와 온라인 읽기에 나옵니다.</p>
