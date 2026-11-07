@@ -125,6 +125,18 @@ function ymd(t) {
   return m[1] + '-' + m[2].padStart(2, '0') + (m[3] ? '-' + m[3].padStart(2, '0') : '');
 }
 // 원본 출처가 어느 파일의 것인지 (비우거나 '모든 파일'이면 표시 안 함)
+// 라이선스 이름 → 설명 페이지(한국어) 링크. '저작권자 허락'처럼 맞는 페이지가 없으면 글자만
+const LIC_URL = {
+  'CC BY-NC-ND': 'https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ko',
+  'CC BY-NC-SA': 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko',
+  'CC BY-NC': 'https://creativecommons.org/licenses/by-nc/4.0/deed.ko',
+  'CC BY-ND': 'https://creativecommons.org/licenses/by-nd/4.0/deed.ko',
+  'CC BY-SA': 'https://creativecommons.org/licenses/by-sa/4.0/deed.ko',
+  'CC BY': 'https://creativecommons.org/licenses/by/4.0/deed.ko',
+  'CC0': 'https://creativecommons.org/publicdomain/zero/1.0/deed.ko',
+  '자유 이용(퍼블릭 도메인)': 'https://creativecommons.org/publicdomain/mark/1.0/deed.ko'
+};
+const licHtml = l => LIC_URL[String(l || '').trim()] ? `<a href="${LIC_URL[String(l).trim()]}" target="_blank" rel="noopener license">${esc(l)} ↗</a>` : esc(l || '—');
 const SRC_FILE = { pdf: 'PDF(화면용)', pdf_print: 'PDF(인쇄용)', pdf_cover: 'PDF(인쇄용 표지)', epub: 'EPUB' };
 const safeName = s => String(s).replace(/[\\/:*?"<>|\u0000-\u001f]+/g, ' ').replace(/\s+/g, ' ').trim();
 const DOWNLOADS = {};
@@ -369,7 +381,7 @@ for (const b of BOOKS) {
       ${f.filter(x => x.k !== '온라인 읽기').map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">${x.name} 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>${x.name} 내려받기</a>`).join('')}
       ${!f.length ? `<div class="soon-box">파일을 준비하고 있습니다.<br><span class="small">소식에서 올라오는 대로 알려 드립니다.</span></div>` : ''}</div>
     ${extF.length ? `<div class="small muted" style="margin-bottom:4px">↗ 표시된 파일은 ${esc(extF[0].site)}로 넘어가서 내려받습니다.</div>` : ''}
-    <dl class="gb-kv"><dt>판</dt><dd>${esc((e.label || '').trim() || '—')}</dd>${e.page_count ? `<dt>쪽수</dt><dd>${esc(e.page_count)}쪽</dd>` : ''}${(b.editions || []).map(x => edText(x)).filter(Boolean).length ? `<dt>펴낸 이력</dt><dd>${(b.editions || []).map(x => esc(edText(x))).filter(Boolean).join('<br>')}</dd>` : ''}<dt>라이선스</dt><dd>${esc(b.license)}</dd><dt>자료번호</dt><dd>${b.id}</dd></dl></div></aside><div class="d-rest">
+    <dl class="gb-kv"><dt>판</dt><dd>${esc((e.label || '').trim() || '—')}</dd>${e.page_count ? `<dt>쪽수</dt><dd>${esc(e.page_count)}쪽</dd>` : ''}${(b.editions || []).map(x => edText(x)).filter(Boolean).length ? `<dt>펴낸 이력</dt><dd>${(b.editions || []).map(x => esc(edText(x))).filter(Boolean).join('<br>')}</dd>` : ''}<dt>라이선스</dt><dd>${licHtml(b.license)}</dd><dt>자료번호</dt><dd>${b.id}</dd></dl></div></aside><div class="d-rest">
     <div class="labels">${(b.main || []).map(m => `<a class="t" href="/library/?main=${slugT(m)}">${esc(m)}</a>`).join('')}${(b.topics || []).map(x => `<a class="t" href="/library/?topic=${slugT(x)}">${esc(x)}</a>`).join('')}${tr ? `<a href="/library/?trad=${tr.id}">${esc(tr.name)}</a>` : ''}${b.press ? `<a href="/press/">我無말들 출간</a>` : ''}</div>
     ${bookSections(b, e, t)}
     <details class="record"><summary>자료 기록 (출처 · 판 · 라이선스)</summary><div class="record-body">
@@ -382,7 +394,7 @@ for (const b of BOOKS) {
       <dt>원본 출처</dt><dd>${(e.sources || []).length ? e.sources.map(s => `${SRC_FILE[s.file] ? `<span class="muted small">${SRC_FILE[s.file]}:</span> ` : ''}<a href="${esc(s.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>${s.checked ? ` <span class="muted small">(${esc(s.checked)} 확인)</span>` : ''}${s.archive ? ` · <a href="${esc(s.archive)}" target="_blank" rel="noopener">보관본</a>` : ''}`).join('<br>') : '—'}</dd>
       <dt>수집 경로</dt><dd>${esc(e.collection || '—')}${e.collected ? ` <span class="muted small">(${esc(e.collected)})</span>` : ''}</dd>
       <dt>게시 허락</dt><dd>${permLabel || e.permission_note || e.permission_image ? `${permLabel}${perms.filter(p => p.image && p.image_public).map(p => ` · <button class="link-btn" data-permit="${esc(p.image)}" data-title="${esc(b.title)}">허락서 보기</button>`).join('')}${e.permission_image ? `${permLabel ? ' · ' : ''}<button class="link-btn" data-permit="${esc(e.permission_image)}" data-title="${esc(b.title)}">허락서 보기</button>` : ''}${e.permission_note ? `<blockquote class="perm-note">${esc(e.permission_note).replace(/\n/g, '<br>')}</blockquote>` : ''}` : '—'}</dd>
-      <dt>라이선스</dt><dd>${esc(b.license)}</dd></dl>
+      <dt>라이선스</dt><dd>${licHtml(b.license)}</dd></dl>
       ${edTables}
       <p class="small muted" style="margin-top:10px">새 판이 올라오면 이전 판은 보관되고, 최신판만 내려받기와 온라인 읽기에 나옵니다.</p>
     </div></details>
