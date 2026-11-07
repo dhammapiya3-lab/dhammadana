@@ -525,10 +525,13 @@ function renderReader() {
     <div class="panel" id="p-mode"><h5>화면 모드</h5><div class="seg">${[['day', '기본'], ['mono', '흑백'], ['night', '밤'], ['contrast', '고대비']].map(([k, v]) => `<button data-rmode="${k}" class="${store.get('mode', 'auto') === k ? 'on' : ''}">${v}</button>`).join('')}</div><p class="note">고른 모드는 사이트 전체에 적용되고 다음에 와도 유지됩니다.</p></div>
     <div class="panel" id="p-ul"><h5>이 책의 밑줄</h5><ul>${uls().filter(h => h.id === R.id).sort((a, b) => a.p - b.p).map(h => `<li style="display:block"><button class="link" data-go="${h.p}">${esc(h.pl || h.p)}쪽</button><div class="quote" style="font-size:13.5px">${esc(h.text)}</div>${h.note ? `<div class="small muted">${esc(h.note)}</div>` : ''}</li>`).join('') || '<li class="muted">글을 끌어서 고르면 밑줄을 그을 수 있습니다.</li>'}</ul>
       <div class="row"><a class="tbtn" href="/mynotes/">내 서재에서 모두 보기</a></div></div>
+    <div class="panel" id="p-share"><h5>고른 글 공유하기</h5><div class="quote" id="shText" style="font-size:13.5px;white-space:pre-wrap"></div>
+      <div class="share-btns">${navigator.share ? '<button class="sh-main" data-sh="app">📱 카카오톡·문자 등 앱으로 보내기</button>' : ''}<button data-sh="kakao">카카오톡</button><button data-sh="band">네이버 밴드</button><button data-sh="x">X(트위터)</button><button data-sh="fb">페이스북</button><button data-sh="mail">이메일</button><button data-sh="copy">복사</button></div>
+      <p class="note">고른 글 아래에 책 제목·저자·쪽과 이 쪽으로 오는 주소가 함께 붙습니다.</p></div>
     <div class="panel" id="p-uledit"><h5>밑줄</h5><div class="quote" id="ulText" style="font-size:13.5px"></div>
       <div class="row"><input id="ulNote" placeholder="메모 한 줄" aria-label="밑줄 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"></div>
       <div class="row"><button class="tbtn" id="ulSave">메모 저장</button><button class="tbtn" id="ulCopy">출처와 함께 복사</button><button class="tbtn" id="ulDel">밑줄 지우기</button></div></div>
-    <div class="sel-pop" id="selPop" role="toolbar" aria-label="고른 글"><button id="selUl">밑줄 긋기</button><button id="selNote">밑줄+메모</button><button id="selCopy">복사</button>${R.pages.some(x => x.text) ? '<button id="selPlay">▶ 여기부터 듣기</button>' : ''}</div>
+    <div class="sel-pop" id="selPop" role="toolbar" aria-label="고른 글"><button id="selUl">밑줄 긋기</button><button id="selNote">밑줄+메모</button><button id="selCopy">복사</button><button id="selShare">공유</button>${R.pages.some(x => x.text) ? '<button id="selPlay">▶ 여기부터 듣기</button>' : ''}</div>
     <div class="panel" id="p-bm"><h5>내 책갈피</h5><ul>${bms().map((m, k) => `<li><span><a class="link" href="/read/${m.id}/${m.p}">『${esc(m.t)}』 ${esc(m.pl || m.p)}쪽</a>${m.note ? `<br><span class="muted small">${esc(m.note)}</span>` : ''}</span><button class="link" data-bmdel="${k}" aria-label="책갈피 지우기">지우기</button></li>`).join('') || '<li class="muted">아직 책갈피가 없습니다.</li>'}</ul>
       <div class="row" style="margin-top:12px"><input id="bmNote" placeholder="이 쪽에 한 줄 메모" aria-label="책갈피 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"><button class="tbtn" id="bmSave">저장</button></div>
       <p class="note">회원가입 없이 이 기기의 브라우저에만 저장됩니다. 다른 기기로 옮길 때는 내 서재의 ‘옮기기’를 쓰세요.</p></div>`;
@@ -656,7 +659,30 @@ function bindReader() {
     stopSpeak(false); R.i = pg - 1; speak(k, rest);
   };
   $('#selCopy').onclick = () => { const d = $('#selPop')._sel; if (d) copy(`“${d.text}” — ${R.by}, 『${R.title}』 ${plabel(d.p) || d.p}쪽 (${SITE})`, '고른 글을 출처와 함께 복사했습니다'); $('#selPop').classList.remove('show'); };
+  $('#selShare').onclick = () => { const d = $('#selPop')._sel; $('#selPop').classList.remove('show'); if (d) openShare(d, plabel(d.p)); };
   $$('u.ul', el).forEach(u => u.onclick = e => { e.stopPropagation(); openUl(+u.dataset.hid); });
+}
+// 고른 글을 SNS로 공유: 글 + 출처(저자, 『책』 쪽) + 그 쪽으로 오는 주소
+function openShare(d, pl) {
+  const el = $('#reader'); $$('.panel', el).forEach(x => x.classList.remove('open'));
+  const url = `https://${SITE}/read/${R.id}/${d.p}?view=text`;
+  const src = `— ${R.by}, 『${R.title}』${pl ? ' ' + pl + '쪽' : ''}`;
+  const q = t => `“${t}”\n${src}`;
+  const full = `${q(d.text)}\n${url}`;
+  const short = n => d.text.length > n ? d.text.slice(0, n - 1) + '…' : d.text;
+  $('#shText').textContent = full;
+  $('#p-share').classList.add('open');
+  $$('#p-share [data-sh]').forEach(b => b.onclick = async () => {
+    const k = b.dataset.sh, open = u => window.open(u, '_blank', 'noopener,width=620,height=640');
+    if (k === 'app') { try { await navigator.share({ title: `『${R.title}』`, text: q(d.text), url }); } catch (e) {} return; }
+    if (k === 'kakao' && navigator.share && matchMedia('(pointer: coarse)').matches) { try { await navigator.share({ title: `『${R.title}』`, text: q(d.text), url }); } catch (e) {} return; }
+    if (k === 'kakao') { copy(full, '복사했습니다. 카카오톡 대화창에 붙여넣기(Ctrl+V) 하세요'); return; }
+    if (k === 'band') return open(`https://band.us/plugin/share?body=${encodeURIComponent(full)}&route=${encodeURIComponent(SITE)}`);
+    if (k === 'x') return open(`https://x.com/intent/post?text=${encodeURIComponent(q(short(180)))}&url=${encodeURIComponent(url)}`);
+    if (k === 'fb') { copy(q(d.text), '글과 출처를 복사했습니다. 페이스북 글쓰기 칸에 붙여넣기 하세요'); return open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`); }
+    if (k === 'mail') { location.href = `mailto:?subject=${encodeURIComponent(`『${R.title}』에서`)}&body=${encodeURIComponent(full)}`; return; }
+    if (k === 'copy') copy(full, '고른 글을 출처·주소와 함께 복사했습니다');
+  });
 }
 function domToSrc(src, off) {
   // 화면에는 '## ' 가 없고, [^12]: 는 '12', [^12] 는 '12' 로 보입니다

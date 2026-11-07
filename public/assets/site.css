@@ -788,3 +788,9 @@ a.paper-request:hover{filter:brightness(1.08)}
   .pq-t{grid-column:1/-1}
   .pq-open{padding-left:6px}
 }
+/* 고른 글 공유 */
+.share-btns{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:12px}
+.share-btns button{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:8px;padding:9px 8px;font:inherit;font-size:13.5px;cursor:pointer}
+.share-btns button:hover{border-color:var(--robe);color:var(--robe)}
+.share-btns .sh-main{grid-column:1/-1;background:var(--robe);border-color:var(--robe);color:var(--paper);font-weight:500}
+.share-btns .sh-main:hover{color:var(--paper);filter:brightness(1.08)}
