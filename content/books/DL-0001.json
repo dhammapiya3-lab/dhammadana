@@ -29,6 +29,7 @@
   "editions": [
     {
       "label": "초판",
+      "label_display": "",
       "current": false,
       "public": false,
       "page_count": 228,
@@ -68,6 +69,7 @@
       "collection": "我無말들 자체 제작",
       "collected": "",
       "permission_status": "public",
+      "notice": "",
       "permission_note": "* 본 도서는 법보시용 도서(비매품)입니다. 상업적 목적이 아닌 한\n무단 복제와 전재를 마음껏 하십시오. 단, 내용을 임의로 변경해서는 안 됩니다.",
       "permission_image": "",
       "permissions": [
@@ -89,28 +91,28 @@
       "isbn_ebook": "",
       "changes": "",
       "pdf": {
-        "site": "",
-        "created": "2026년 11월 8일",
         "mode": "file",
-        "url": "pdf/DL-0001/DL-0001_개정판.pdf"
+        "url": "pdf/DL-0001/DL-0001_개정판.pdf",
+        "site": "",
+        "created": "2022년 6월 8일"
       },
       "pdf_print": {
-        "site": "",
-        "created": "2026년 11월 8일",
         "mode": "file",
-        "url": "pdf/DL-0001/DL-0001_개정판_인쇄용.pdf"
+        "url": "pdf/DL-0001/DL-0001_개정판_인쇄용.pdf",
+        "site": "",
+        "created": "2023년 11월 17일"
       },
       "pdf_cover": {
-        "site": "",
-        "created": "2026년 11월 8일",
         "mode": "file",
-        "url": "pdf/DL-0001/DL-0001_개정판_인쇄용표지.pdf"
+        "url": "pdf/DL-0001/DL-0001_개정판_인쇄용표지.pdf",
+        "site": "",
+        "created": "2023년 11월 17일"
       },
       "epub": {
-        "site": "",
-        "created": "2026년 11월 8일",
         "mode": "file",
-        "url": "epub/DL-0001/DL-0001_개정판.epub"
+        "url": "epub/DL-0001/DL-0001_개정판.epub",
+        "site": "",
+        "created": "2026년 11월 8일"
       },
       "reader": true,
       "sources": [
@@ -136,7 +138,8 @@
       "collection": "我無말들 자체 제작",
       "collected": "",
       "permission_status": "public",
-      "permission_note": "* 본 도서는 법보시용 도서(비매품)입니다. 상업적 목적이 아닌 한\n무단 복제와 전재를 마음껏 하십시오. 단, 내용을 임의로 변경해서는 안 됩니다.",
+      "notice": "",
+      "permission_note": "* 본 도서는 법보시용 도서(비매품)입니다. 상업적 목적이 아닌 한 무단 복제와 전재를 마음껏 하십시오. 단, 내용을 임의로 변경해서는 안 됩니다.",
       "permission_image": "",
       "permissions": [
         "amumaldeul-self"
