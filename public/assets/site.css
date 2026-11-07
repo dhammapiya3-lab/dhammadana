@@ -837,7 +837,7 @@ a.paper-request:hover{filter:brightness(1.08)}
 /* 글로 읽기: 색 강조(==글==, 원본의 하늘색), 속표지 큰 제목(^^ 글) */
 .hl{color:#00aeef}
 :root.mode-mono .hl,:root.mode-contrast .hl{color:inherit;text-decoration:underline}
-.reflow p.r-title{font-size:1.7em;font-weight:700;text-align:center;text-indent:0;line-height:1.45;margin:2.2em 0 1.6em}
+.reflow p.r-ctitle{white-space:normal;overflow:visible;word-break:keep-all;font-size:1.7em;font-weight:700;text-align:center;text-indent:0;line-height:1.45;margin:2.2em 0 1.6em}
 /* DL-0010: 연꽃 구분 장식(작게), 사야도 서명(오른쪽) */
 .r-fig .fig-btn img[src*="DL-0010-aa"]{max-height:34px;border:0;border-radius:0}
 .r-fig:has(img[src*="DL-0010-aa"]){margin:1.2em 0}
@@ -846,3 +846,4 @@ a.paper-request:hover{filter:brightness(1.08)}
 /* ● 항목: 다음 줄들을 ● 만큼 들여쓰기, '|| ' 문단은 앞 쪽에서 이어진 항목 */
 .reflow p.r-bul{padding-left:.95em;text-indent:-.95em}
 .reflow p.r-bul-c{padding-left:.95em;text-indent:0}
+@media (max-width:520px){.reflow p.r-ctitle{font-size:1.4em}}
