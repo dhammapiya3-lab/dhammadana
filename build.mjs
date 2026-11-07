@@ -309,7 +309,17 @@ function pressShell(tab, inner) {
   </aside><section>${inner}</section></div>`;
 }
 const P = S.publisher;
-put('press/index.html', layout({ title: '我無말들 출판사', nav: 'press', page: 'press', body: pressShell('all', `<div class="grid press-grid">${BOOKS.filter(b => b.press).map(coverCard).join('')}</div>`) }));
+// 종이책 상태 (출판도서 페이지): request 보시 신청 / soldout 품절 / ebook 전자책 Only
+const PAPER = { request: '종이책 보시 신청', soldout: '종이책 품절', ebook: '전자책 Only' };
+function paperBadge(b) {
+  const k = b.paper; if (!PAPER[k]) return '';
+  if (k === 'request' && S.paper_request_url) {
+    const u = S.paper_request_url.replace(/\{(title|id)\}/g, (m, x) => encodeURIComponent(x === 'title' ? b.title : b.id));
+    return `<a class="paper paper-request" href="${esc(u)}" target="_blank" rel="noopener" aria-label="『${esc(b.title)}』 종이책 보시 신청 (새 창)">📖 ${PAPER[k]} <span aria-hidden="true">↗</span></a>`;
+  }
+  return `<span class="paper paper-${k}">${k === 'request' ? '📖 ' : ''}${PAPER[k]}</span>`;
+}
+put('press/index.html', layout({ title: '我無말들 출판사', nav: 'press', page: 'press', body: pressShell('all', `<div class="grid press-grid">${BOOKS.filter(b => b.press).map(b => `<div class="pbook">${coverCard(b)}${paperBadge(b)}</div>`).join('')}</div>`) }));
 put('press/about/index.html', layout({ title: '출판사 소개', nav: 'press', page: 'press', body: pressShell('about', `<div class="prose" style="padding-top:0"><h1 class="h-page">${esc(PAGES['press-about'].meta.title)}</h1>${PAGES['press-about'].html}
   <table class="info-tbl"><tr><td>출판사</td><td>${esc(P.name)}</td></tr><tr><td>발행인</td><td>${esc(P.publisher_person)}</td></tr><tr><td>전화</td><td>${esc(P.phone)}</td></tr><tr><td>이메일</td><td>${esc(P.email)}</td></tr><tr><td>출판등록</td><td>${esc(P.registration)}</td></tr>
   <tr><td>라이선스</td><td>CC BY-NC-ND (저작자표시-비영리-변경금지)<br><span class="small muted">출처를 밝히면 누구나 자유롭게 복사하고 나눌 수 있습니다. 다만 판매 등 영리 목적으로 쓰거나 내용을 고쳐 배포할 수는 없습니다.</span> <a class="small" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ko" target="_blank" rel="noopener">자세히 ↗</a></td></tr></table></div>`) }));

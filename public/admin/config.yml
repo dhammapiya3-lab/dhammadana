@@ -58,6 +58,7 @@ collections:
         search_fields: ["items.*.name"]
         display_fields: ["items.*.name"]
       - { name: press, label: 我無말들 출판물, widget: boolean, default: false }
+      - { name: paper, label: 종이책 상태, widget: select, required: false, options: [{ label: "종이책 보시 신청", value: request }, { label: "종이책 품절", value: soldout }, { label: "전자책 Only", value: ebook }], hint: "我無말들 출판도서 페이지에 표시됩니다. 비워 두면 표시하지 않습니다." }
       - { name: original_title, label: 원서 제목, required: false }
       - { name: original_language, label: 원서의 언어, widget: select, required: false, options: [빠알리어, 영어, 미얀마어, 태국어, 싱할라어, 한국어, 기타], hint: "이 책을 옮길 때 바탕으로 삼은 원서의 언어" }
       - { name: original_source, label: 원서 정보, required: false, hint: "원서 출판사·연도 등" }
@@ -288,6 +289,7 @@ collections:
         fields:
           - { name: site_name, label: 사이트 이름 }
           - { name: site_sub, label: 영문 부제 }
+          - { name: paper_request_url, label: 종이책 보시 신청서 주소, required: false, hint: "'종이책 보시 신청' 단추를 누르면 열릴 신청서 주소. 비워 두면 단추를 누를 수 없고 표시만 됩니다." }
           - { name: site_url, label: 사이트 주소 }
           - { name: files_base, label: 파일 저장소 주소, hint: "보통 바꾸지 않습니다" }
           - { name: verse_pali, label: 첫 화면 빨리어 게송 }

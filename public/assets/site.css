@@ -733,3 +733,11 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 .ix-t th.c-pali{width:24%}.ix-t th.c-ko{width:30%}.ix-t th.c-en{width:28%}.ix-t th.c-hg{width:18%}
 .reflow .ix-count:empty{display:none}
 @media (max-width:640px){.reflow .ix{width:auto;left:0;transform:none}}
+
+/* 출판도서: 종이책 상태 */
+.pbook{display:flex;flex-direction:column;gap:8px}
+.paper{align-self:flex-start;display:inline-flex;align-items:center;gap:4px;font-size:12.5px;line-height:1;padding:7px 11px;border-radius:999px;border:1px solid var(--line);color:var(--ink-soft);background:transparent;font-weight:500}
+.paper-request{background:var(--robe);border-color:var(--robe);color:var(--paper)}
+a.paper-request:hover{filter:brightness(1.08)}
+.paper-soldout{color:var(--muted,var(--ink-soft));background:var(--line);border-color:transparent}
+.paper-ebook{background:var(--leaf-soft);border-color:transparent;color:var(--leaf)}
