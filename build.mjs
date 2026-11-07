@@ -127,7 +127,7 @@ function ymd(t) {
 // 원본 출처가 어느 파일의 것인지 (비우거나 '모든 파일'이면 표시 안 함)
 // 라이선스 이름 → 설명 페이지(한국어) 링크. '저작권자 허락'처럼 맞는 페이지가 없으면 글자만
 // 글 속의 링크 주소(https://…, www.…, 도메인/…)를 누를 수 있는 링크로
-const linkify = t => esc(t).replace(/\b((?:https?:\/\/|www\.)[^\s<>"']+|[a-z0-9.-]+\.(?:kr|com|net|org|io|me|co)(?:\/[^\s<>"']*)?)/gi, m => {
+const linkify = t => esc(t).replace(/\b((?:https?:\/\/|www\.)[^\s<>"']+|(?<![@\w.-])[a-z0-9-]+(?:\.[a-z0-9-]+)*\.(?:kr|com|net|org|io|me|co)(?![@\w])(?:\/[^\s<>"']*)?)/gi, m => {
   const tail = (m.match(/[.,);:!?]+$/) || [''])[0], u = m.slice(0, m.length - tail.length);
   const href = /^https?:\/\//i.test(u) ? u : 'https://' + u;
   return `<a href="${href}" target="_blank" rel="noopener">${u}</a>${tail}`;
