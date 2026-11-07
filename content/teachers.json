@@ -205,6 +205,17 @@
       "photo": ""
     },
     {
+      "id": "mahagandhayon",
+      "name": "마하간다용 사야도",
+      "roman": "Mahāgandhāyon Sayādaw",
+      "aliases": [
+        "아신 자나까비왐사"
+      ],
+      "tradition": "myanmar-etc",
+      "bio": "",
+      "photo": ""
+    },
+    {
       "id": "nandamala",
       "name": "난다말라비왐사 사야도",
       "roman": "Nandamālābhivaṃsa",
@@ -212,17 +223,6 @@
         "난다말라비왕사",
         "난다말라 사야도",
         "난다말라비왐사 큰스님"
-      ],
-      "tradition": "myanmar-etc",
-      "bio": "",
-      "photo": ""
-    },
-    {
-      "id": "mahagandhayon",
-      "name": "마하간다용 사야도",
-      "roman": "Mahāgandhāyon Sayādaw",
-      "aliases": [
-        "아신 자나까비왐사"
       ],
       "tradition": "myanmar-etc",
       "bio": "",
@@ -251,11 +251,12 @@
     },
     {
       "id": "mun",
-      "name": "아잔 문",
+      "name": "아잔 만",
       "roman": "Ajahn Mun",
       "aliases": [
+        "아잔 문",
         "아짠 문",
-        "아잔 만"
+        "아짠 만"
       ],
       "tradition": "forest",
       "bio": "",
