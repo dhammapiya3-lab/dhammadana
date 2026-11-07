@@ -23,7 +23,7 @@ homage: Namo tassa bhagavato arahato sammāsambuddhassa
 라이선스마다 할 수 있는 일은 다음과 같습니다. '설명 보기'를 누르면 크리에이티브 커먼즈의 한국어 설명 페이지가 열립니다.
 
 - **CC BY-NC-ND (저작자표시-비영리-변경금지)**: 출처를 밝히고, 팔지 않고, 고치지 않은 그대로라면 자유롭게 복사·배포할 수 있습니다. 이 도서관의 자료는 대부분 이 라이선스입니다. [설명 보기 ↗](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ko)
-- **CC BY-NC-SA (저작자표시-비영리-동일조건변경허락)**: 출처를 밝히고 팔지 않는다면 고치거나 다른 형태(번역·발췌·편집 등)로 만들어 나눌 수 있습니다. 단, 새로 만든 것에도 같은 CC BY-NC-SA 라이선스를 붙여야 합니다. [설명 보기 ↗](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko)
+- **CC BY-NC-SA (저작자표시-비영리-동일조건변경허락)**: 출처를 밝히고 팔지 않는다면 고치거나 다른 형태(번역·발췌·수정 편집 등)로 만들어 나눌 수 있습니다. 단, 새로 만든 것에도 같은 CC BY-NC-SA 라이선스를 붙여야 합니다. [설명 보기 ↗](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko)
 - **CC BY-NC (저작자표시-비영리)**: 출처를 밝히고 팔지 않는다면 고치거나 다른 형태로 만들어 나눌 수 있습니다. 새로 만든 것에 같은 라이선스를 붙이지 않아도 됩니다. [설명 보기 ↗](https://creativecommons.org/licenses/by-nc/4.0/deed.ko)
 - **CC BY-ND (저작자표시-변경금지)**: 출처를 밝히고 고치지 않은 그대로라면 영리 목적을 포함해 자유롭게 나눌 수 있습니다. [설명 보기 ↗](https://creativecommons.org/licenses/by-nd/4.0/deed.ko)
 - **CC BY-SA (저작자표시-동일조건변경허락)**: 출처를 밝히면 영리 목적을 포함해 고치고 나눌 수 있습니다. 단, 새로 만든 것에도 같은 CC BY-SA 라이선스를 붙여야 합니다. [설명 보기 ↗](https://creativecommons.org/licenses/by-sa/4.0/deed.ko)
