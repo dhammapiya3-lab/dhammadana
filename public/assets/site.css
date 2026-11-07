@@ -827,3 +827,8 @@ a.paper-request:hover{filter:brightness(1.08)}
 .toc.static li.lv2{padding-left:2.4em;padding-top:6px;padding-bottom:6px}
 .toc.static li.lv2 span:first-child{font-size:14px;color:var(--ink-soft)}
 .toc.static li.lv0+li.lv1,.toc.static li.lv1+li.lv2{border-top:0}
+/* 쪽 번호가 없는 책(전자책으로 만든 글): 쪽 표시 줄 숨김 */
+.reflow .pmark.nolabel{display:block;height:0;margin:0;padding:0;border:0;overflow:hidden}
+/* 구분 장식 그림(작게) */
+.r-fig .fig-btn img[src*="-bridge"]{max-height:26px;border:0;background:none;border-radius:0}
+.r-fig:has(img[src*="-bridge"]){margin:1em 0}
