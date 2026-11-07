@@ -59,6 +59,16 @@ collections:
         display_fields: ["items.*.name"]
       - { name: press, label: 我無말들 출판물, widget: boolean, default: false }
       - { name: paper, label: 종이책 상태, widget: select, required: false, options: [{ label: "종이책 보시 신청", value: request }, { label: "종이책 품절", value: soldout }, { label: "전자책 Only", value: ebook }], hint: "我無말들 출판도서 페이지에 표시됩니다. 비워 두면 표시하지 않습니다." }
+      - name: stores
+        label: 인터넷 서점 링크
+        label_singular: 서점 링크
+        widget: list
+        required: false
+        summary: "{{fields.name}} {{fields.url}}"
+        hint: "책 정보의 '이 책 읽어보기' 칸에 '인터넷 서점 바로가기' 단추로 보입니다. 이름을 적으면 '교보문고 바로가기'처럼, 비워 두면 '인터넷 서점 바로가기'로 보입니다."
+        fields:
+          - { name: name, label: 서점 이름 (선택), required: false, hint: "예: 교보문고, 알라딘, YES24" }
+          - { name: url, label: 링크 주소, hint: "https:// 로 시작하는 책 판매 페이지 주소" }
       - { name: original_title, label: 원서 제목, required: false }
       - { name: original_language, label: 원서의 언어, widget: select, required: false, options: [빠알리어, 영어, 미얀마어, 태국어, 싱할라어, 한국어, 기타], hint: "이 책을 옮길 때 바탕으로 삼은 원서의 언어" }
       - { name: original_source, label: 원서 정보, required: false, hint: "원서 출판사·연도 등" }
