@@ -832,3 +832,4 @@ a.paper-request:hover{filter:brightness(1.08)}
 /* 구분 장식 그림(작게) */
 .r-fig .fig-btn img[src*="-bridge"]{max-height:26px;border:0;background:none;border-radius:0}
 .r-fig:has(img[src*="-bridge"]){margin:1em 0}
+.r-fig .fig-btn img[alt="장식"]{max-height:26px;border:0;background:none;border-radius:0}
