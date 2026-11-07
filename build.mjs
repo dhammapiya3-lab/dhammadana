@@ -90,15 +90,22 @@ function formats(b) {
 }
 // 판 표시: '개정판 발행 2024년 7월 20일' (발행일 글에 판 이름이 이미 있으면 그대로)
 const edText = e => { const l = (e.label || '').trim(), p = (e.published || e.published_ebook || '').trim(); if (!p) return l; if (!l || p.includes(l)) return p; return `${l} 발행 ${p}`; };
-// 목차: 한 줄에 하나. 앞에 공백 2칸 또는 '-' 를 붙이면 아랫단계. 줄 끝 '... 15' 같은 쪽수는 오른쪽에
+// 목차: 한 줄에 하나. 단계는 번호 모양으로 알아봄 — Ⅰ.·제1장·제1부(큰 단계) > 1.·<부록>(중간) > 1)·(1)(작은 단계).
+// 번호가 없는 줄은 큰 단계가 나온 뒤면 중간 단계로. 앞에 공백 2칸 또는 '-' 를 붙이면 바로 위보다 한 단계 아래.
+// 줄 끝 쪽수(' 15', '... 15', '| 15')는 오른쪽에
 function contentsHtml(t) {
+  const BIG = /^(제\s*\d+\s*[장부편권]|[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]+\.|[IVX]+\.\s)/, MID = /^(\d+\.\s|<부록>|\[부록\]|부록\s)/, SMALL = /^(\d+\)\s|\(\d+\)\s|[①-⑳])/;
+  let seenBig = false, last = 0;
   const rows = t.split('\n').map(l => l.replace(/\s+$/, '')).filter(l => l.trim()).map(l => {
     const sub = /^(\s{2,}|\t|-\s)/.test(l); let x = l.replace(/^[\s\-]+/, '');
-    const m = x.match(/^(.*?)(?:\s*[.·…]{2,}\s*|\s{2,})(\d+)$/); let pg = '';
-    if (m) { x = m[1]; pg = m[2]; }
-    return `<li class="${sub ? 'sub' : ''}"><span>${esc(x)}</span>${pg ? `<span>${esc(pg)}</span>` : ''}</li>`;
+    let pg = ''; const m = x.match(/^(.*?\S)(?:\s*[.·…]{2,}\s*|\s*\|\s*|\s+)(\d{1,4})$/); if (m) { x = m[1]; pg = m[2]; }
+    let lv = BIG.test(x) ? 0 : MID.test(x) ? 1 : SMALL.test(x) ? 2 : sub ? Math.min(last + 1, 2) : seenBig ? 1 : 0;
+    if (lv === 0) seenBig = true;
+    if (!sub && !SMALL.test(x)) last = lv;
+    return { lv, x, pg };
   });
-  return `<ol class="toc static">${rows.join('')}</ol>`;
+  const min = Math.min(...rows.map(r => r.lv));
+  return `<ol class="toc static">${rows.map(r => `<li class="lv${r.lv - min}"><span>${esc(r.x)}</span>${r.pg ? `<span>${esc(r.pg)}</span>` : ''}</li>`).join('')}</ol>`;
 }
 
 // 책 페이지 아래쪽: 책 소개 · 저자 소개 · 옮긴이 소개 · 목차

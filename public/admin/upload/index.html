@@ -90,6 +90,7 @@
 const REPO='dhammapiya3-lab/dhammadana', API='https://api.github.com/repos/'+REPO;
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const BFILE={}; const bf=id=>BFILE[String(id).toUpperCase()]||id;
 let TOKEN='', BOOK=null, BOOKSHA='', FILE=null;
 
 function findToken(){
@@ -121,7 +122,8 @@ $('#logout').onclick=()=>{try{localStorage.removeItem('dd-gh-token')}catch(e){} 
 async function loadBooks(){
   const r=await gh('/contents/content/books?ref=main'); const list=r.ok?await r.json():[];
   let titles={}; try{ (await (await fetch('/data/site.json')).json()).books.forEach(b=>titles[b.id]=b.title);}catch(e){}
-  const ids=list.filter(f=>/^DL-\d{4}\.json$/.test(f.name)).map(f=>f.name.replace('.json','')).sort().reverse();
+  list.filter(f=>/^DL-\d{4}\.json$/i.test(f.name)).forEach(f=>BFILE[f.name.replace(/\.json$/i,'').toUpperCase()]=f.name.replace(/\.json$/i,''));
+  const ids=Object.keys(BFILE).sort().reverse();
   $('#cbook').innerHTML='<option value="">— 책을 고르세요 —</option>'+ids.map(id=>`<option value="${id}">${id} · ${esc(titles[id]||'')}</option>`).join('');
   $('#book').innerHTML='<option value="">— 책을 고르세요 —</option>'+ids.map(id=>`<option value="${id}">${id} · ${esc(titles[id]||'(숨김 또는 새 책)')}</option>`).join('');
   const want=new URLSearchParams(location.search).get('book'); if(want&&ids.includes(want)){ $('#book').value=want; pickBook(); }
@@ -130,7 +132,7 @@ $('#book').onchange=pickBook;
 async function pickBook(){
   const id=$('#book').value; BOOK=null; $('#ed').innerHTML=''; $('#ed').disabled=true; upd();
   if(!id) return;
-  const r=await gh(`/contents/content/books/${id}.json?ref=main`); if(!r.ok){ show('err','책 정보를 불러오지 못했습니다.'); return; }
+  const r=await gh(`/contents/content/books/${bf(id)}.json?ref=main`); if(!r.ok){ show('err','책 정보를 불러오지 못했습니다.'); return; }
   const j=await r.json(); BOOKSHA=j.sha; BOOK=JSON.parse(dec(j.content));
   const eds=BOOK.editions||[];
   $('#ed').innerHTML=eds.map((e,i)=>`<option value="${i}" ${e.current?'selected':''}>${esc(e.label||('판 '+(i+1)))}${e.current?' (최신판)':''}${e.pdf&&e.pdf.url?' · 화면용 PDF 있음':''}${e.pdf_print&&e.pdf_print.url?' · 인쇄용 PDF 있음':''}${e.pdf_cover&&e.pdf_cover.url?' · 인쇄용 표지 있음':''}${e.epub&&e.epub.url?' · EPUB 있음':''}</option>`).join('');
@@ -175,12 +177,12 @@ $('#go').onclick=async()=>{
     let b, e2, done=false;
     for(let tryN=0; tryN<4 && !done; tryN++){
       if(tryN) await new Promise(r=>setTimeout(r,1500*tryN));
-      const r=await gh(`/contents/content/books/${BOOK.id}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); const j=await r.json();
+      const r=await gh(`/contents/content/books/${bf(BOOK.id)}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); const j=await r.json();
       b=JSON.parse(dec(j.content)); e2=b.editions[ei];
       e2[k]={site:'',created:'',...(e2[k]||{}),mode:'file',url:key};
       if(!e2[k].created){ const t=new Date(); e2[k].created=`${t.getFullYear()}년 ${t.getMonth()+1}월 ${t.getDate()}일`; }  // 이 파일 만든 날 (비어 있을 때만 오늘 날짜)
       delete e2.file_created; delete e2.file_created_print;
-      const put=await gh(`/contents/content/books/${BOOK.id}.json`,{method:'PUT',headers:{'content-type':'application/json'},
+      const put=await gh(`/contents/content/books/${bf(BOOK.id)}.json`,{method:'PUT',headers:{'content-type':'application/json'},
         body:JSON.stringify({message:`책 파일 연결: ${BOOK.id} ${e2.label||''} ${KN}`,content:enc(JSON.stringify(b,null,2)+'\n'),sha:j.sha,branch:'main'})});
       done=put.ok;
     }
@@ -240,11 +242,11 @@ $('#zgo').onclick=async()=>{
     let ok=false, title='';
     for(let t=0;t<4&&!ok;t++){
       if(t) await new Promise(r=>setTimeout(r,1500*t));
-      const r=await gh(`/contents/content/books/${Z.id}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); if(!r.ok) throw new Error('책 정보('+Z.id+')를 찾지 못했습니다.');
+      const r=await gh(`/contents/content/books/${bf(Z.id)}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); if(!r.ok) throw new Error('책 정보('+Z.id+')를 찾지 못했습니다.');
       const j=await r.json(); const b=JSON.parse(dec(j.content)); title=b.title;
       const e=(b.editions||[]).find(x=>x.label===Z.label); if(!e) throw new Error(`이 책에 '${esc(Z.label)}' 판이 없습니다. 관리자 화면에서 판 이름을 확인해 주세요.`);
       e.reader=true; if(Z.pdf&&!(e.pdf&&e.pdf.url)) e.pdf={mode:'file',url:Z.pdf,site:''};
-      const put=await gh(`/contents/content/books/${Z.id}.json`,{method:'PUT',headers:{'content-type':'application/json'},
+      const put=await gh(`/contents/content/books/${bf(Z.id)}.json`,{method:'PUT',headers:{'content-type':'application/json'},
         body:JSON.stringify({message:`온라인 읽기 연결: ${Z.id} ${Z.label}`,content:enc(JSON.stringify(b,null,2)+'\n'),sha:j.sha,branch:'main'})});
       ok=put.ok;
     }
@@ -283,11 +285,11 @@ async function renameFile(from){
     const id=$('#cbook').value;
     for(let t=0;t<4;t++){
       if(t) await new Promise(r=>setTimeout(r,1500*t));
-      const g=await gh(`/contents/content/books/${id}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); if(!g.ok) break;
+      const g=await gh(`/contents/content/books/${bf(id)}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); if(!g.ok) break;
       const gj=await g.json(); const b=JSON.parse(dec(gj.content)); fixed=0;
       for(const e of (b.editions||[])) for(const k of ['pdf','pdf_print','pdf_cover','epub']) if(e[k]&&e[k].url===from){ e[k].url=to; fixed++; }
       if(!fixed) break;
-      const put=await gh(`/contents/content/books/${id}.json`,{method:'PUT',headers:{'content-type':'application/json'},body:JSON.stringify({message:`파일 이름 바꿈: ${from} → ${to}`,content:enc(JSON.stringify(b,null,2)+'\n'),sha:gj.sha,branch:'main'})});
+      const put=await gh(`/contents/content/books/${bf(id)}.json`,{method:'PUT',headers:{'content-type':'application/json'},body:JSON.stringify({message:`파일 이름 바꿈: ${from} → ${to}`,content:enc(JSON.stringify(b,null,2)+'\n'),sha:gj.sha,branch:'main'})});
       if(put.ok) break;
     }
   }catch(e){}
@@ -307,14 +309,14 @@ $('#cdel').onclick=async()=>{
     const id=$('#cbook').value;
     for(let t=0;t<4;t++){
       if(t) await new Promise(r=>setTimeout(r,1500*t));
-      const g=await gh(`/contents/content/books/${id}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); if(!g.ok) break;
+      const g=await gh(`/contents/content/books/${bf(id)}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); if(!g.ok) break;
       const gj=await g.json(); const b=JSON.parse(dec(gj.content)); unlinked=0;
       for(const e of (b.editions||[])){
         for(const k of ['pdf','pdf_print','pdf_cover','epub']){ const x=e[k]; if(x&&x.url&&ps.includes(x.url.replace(/^\//,''))){ e[k]={mode:'none',url:'',site:''}; unlinked++; } }
         if(e.reader&&ps.some(p=>p===`reader/${id}/${e.label}/`)){ e.reader=false; unlinked++; }
       }
       if(!unlinked) break;
-      const put=await gh(`/contents/content/books/${id}.json`,{method:'PUT',headers:{'content-type':'application/json'},body:JSON.stringify({message:`창고에서 지운 파일 연결 풀기: ${id}`,content:enc(JSON.stringify(b,null,2)+'\n'),sha:gj.sha,branch:'main'})});
+      const put=await gh(`/contents/content/books/${bf(id)}.json`,{method:'PUT',headers:{'content-type':'application/json'},body:JSON.stringify({message:`창고에서 지운 파일 연결 풀기: ${id}`,content:enc(JSON.stringify(b,null,2)+'\n'),sha:gj.sha,branch:'main'})});
       if(put.ok) break;
     }
   }catch(e){}

@@ -16,6 +16,9 @@ logo_url: /images/icon.svg
 media_folder: public/uploads
 public_folder: /uploads
 locale: ko
+# 새로 만든 파일 이름의 대문자를 그대로 둠 (DL-0008.json 이 dl-0008.json 이 되지 않게)
+slug:
+  lowercase: false
 
 collections:
   # ───────── 책 ─────────

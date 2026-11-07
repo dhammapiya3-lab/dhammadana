@@ -818,3 +818,12 @@ a.paper-request:hover{filter:brightness(1.08)}
 .pq-notes li{position:relative;padding-left:14px;margin-bottom:4px}
 .pq-notes li::before{content:"·";position:absolute;left:2px}
 .pq-notes a{word-break:break-all}
+/* 책 정보 목차: 단계별 들여쓰기 */
+.toc.static li.lv0{padding-top:16px;border-bottom:1px solid var(--line)}
+.toc.static li.lv0:first-child{padding-top:9px}
+.toc.static li.lv0 span:first-child{font-weight:700;font-size:16px}
+.toc.static li.lv1{padding-left:1.1em}
+.toc.static li.lv1 span:first-child{font-weight:600}
+.toc.static li.lv2{padding-left:2.4em;padding-top:6px;padding-bottom:6px}
+.toc.static li.lv2 span:first-child{font-size:14px;color:var(--ink-soft)}
+.toc.static li.lv0+li.lv1,.toc.static li.lv1+li.lv2{border-top:0}
