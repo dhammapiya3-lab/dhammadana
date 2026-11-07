@@ -681,7 +681,7 @@ function openShare(d, pl) {
   const el = $('#reader'); $$('.panel', el).forEach(x => x.classList.remove('open'));
   const url = `https://${SITE}/read/${R.id}/${d.p}?view=text`;
   const src = `— ${R.by}, 『${R.title}』${pl ? ' ' + pl + '쪽' : ''}`;
-  const q = t => `“${t}”\n${src}`;
+  const q = t => `“${t}”\n\n${src}`;
   const full = `${q(d.text)}\n${url}`;
   const short = n => d.text.length > n ? d.text.slice(0, n - 1) + '…' : d.text;
   $('#shText').textContent = full;
@@ -691,7 +691,7 @@ function openShare(d, pl) {
     const k = b.dataset.sh, open = u => window.open(u, '_blank', 'noopener,width=620,height=640');
     if (k === 'app') { try { await navigator.share({ title: `『${R.title}』`, text: q(d.text), url }); } catch (e) {} return; }
     if (k === 'kakao' && window.Kakao && Kakao.isInitialized && Kakao.isInitialized()) {
-      const desc = `“${short(150)}”\n${src.replace(/^— /, '')}`;
+      const desc = `“${short(150)}”\n\n${src}`;
       try {
         Kakao.Share.sendDefault({ objectType: 'feed', content: { title: `『${R.title}』${pl ? ' ' + pl + '쪽' : ''}`, description: desc, imageUrl: R.cover || `https://${SITE}/images/og.jpg`, link: { mobileWebUrl: url, webUrl: url } }, buttons: [{ title: '이 쪽 읽으러 가기', link: { mobileWebUrl: url, webUrl: url } }] });
         return;
