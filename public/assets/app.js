@@ -481,7 +481,7 @@ function reflowHtml() {
     const keep = k => !(p.n === c.from && k < (c.k0 || 0)) && !(p.n === c.to && c.kEnd != null && k >= c.kEnd);
     const heads = new Set(R.toc.filter(t => t.page === p.n || t.page === p.n - 1).map(t => headKey(t.title)));
     if (!ps.length) return `<span id="pm-${p.n}"></span>`;
-    return `<span class="pmark${p.label ? '' : ' nolabel'}" id="pm-${p.n}">${p.label ? esc(pageName(p)) : ''}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : /^\^\^ /.test(s) ? ' class="r-title"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? (p.n === c.from && headKey(s) === headKey(c.title) ? ' class="sub-h ch-dup"' : ' class="sub-h" role="heading" aria-level="4"') : ''}>${fnMark(boldMark(markUl(s.replace(/^## |^\^\^ /, ''), p.n))).replace(/\n/g, '<br>')}</p>`).join('') || ''}`;
+    return `<span class="pmark${p.label ? '' : ' nolabel'}" id="pm-${p.n}">${p.label ? esc(pageName(p)) : ''}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : /^\^\^ /.test(s) ? ' class="r-title"' : /^:: /.test(s) ? ' class="r-center"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? (p.n === c.from && headKey(s) === headKey(c.title) ? ' class="sub-h ch-dup"' : ' class="sub-h" role="heading" aria-level="4"') : ''}>${fnMark(boldMark(markUl(s.replace(/^## |^\^\^ |^:: /, ''), p.n))).replace(/\n/g, '<br>')}</p>`).join('') || ''}`;
   }).join('');
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}" data-ci="${ci - 1}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}" data-ci="${ci + 1}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}</h3></div>` : ''}${body}${nav}</div>`;
@@ -713,7 +713,7 @@ function openShare(d, pl) {
 function domToSrc(src, off) {
   // 화면에는 '## ' 가 없고, [^12]: 는 '12', [^12] 는 '12' 로 보입니다
   let i = 0, d = 0;
-  if (src.startsWith('## ') || src.startsWith('^^ ')) i = 3;
+  if (src.startsWith('## ') || src.startsWith('^^ ') || src.startsWith(':: ')) i = 3;
   const m0 = src.slice(i).match(/^\[\^([^\]]+)\]:\s*/); if (m0) { if (off < m0[1].length) return i; d += m0[1].length; i += m0[0].length; }
   while (i < src.length && d < off) {
     const m = src.slice(i).match(/^\[\^([^\]]+)\]/);
@@ -931,7 +931,7 @@ const fnMark = h => h.replace(/^\[\^([^\]]+)\]:\s*/, '<span class="fn-no" data-f
 // 소제목 알아보기: 빈칸·괄호 속 풀이를 빼고 목차 제목과 같으면 소제목
 const isHead = t => /^## /.test(t);
 // **굵은 글씨**: 관리자 화면 본문에서 ** 로 감싼 곳 (화면에서는 굵게, 듣기·찾기·밑줄에서는 ** 를 뺌)
-const unB = s => String(s || '').replace(/\*\*|==/g, '').replace(/^\^\^ /gm, '');
+const unB = s => String(s || '').replace(/\*\*|==/g, '').replace(/^(?:\^\^|::) /gm, '');
 // **굵게**, ==색 강조(인쇄본·전자책의 하늘색 글자)==
 const boldMark = h => h.replace(/\*\*(?=\S)([\s\S]*?\S)\*\*/g, '<strong>$1</strong>').replace(/==(?=\S)([\s\S]*?\S)==/g, '<span class="hl">$1</span>');
 const headKey = t => unB(t).replace(/^## /, '').replace(/\[\^[^\]]+\]/g, '').replace(/\([^)]*\)/g, '').replace(/[\s‘’'"“”]/g, '').replace(/^[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩIVX]+\./, m => m.replace(/[IVX]+/g, x => ({I:'Ⅰ',II:'Ⅱ',III:'Ⅲ',IV:'Ⅳ',V:'Ⅴ',VI:'Ⅵ',VII:'Ⅶ',VIII:'Ⅷ',IX:'Ⅸ',X:'Ⅹ'}[x] || x)));

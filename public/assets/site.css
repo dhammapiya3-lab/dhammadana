@@ -842,3 +842,4 @@ a.paper-request:hover{filter:brightness(1.08)}
 .r-fig .fig-btn img[src*="DL-0010-aa"]{max-height:34px;border:0;border-radius:0}
 .r-fig:has(img[src*="DL-0010-aa"]){margin:1.2em 0}
 .r-fig .fig-btn img[src*="DL-0010-write"]{max-height:110px;border:0;margin:0 0 0 auto}
+.reflow p.r-center{text-align:center;text-indent:0}
