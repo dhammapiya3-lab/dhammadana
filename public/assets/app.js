@@ -234,9 +234,9 @@ async function runSearch() {
     if ((scope === 'all' || scope === 'body') && b.manifest) {
       try {
         const m = await manifest(b.manifest);
-        const hits = (m.pages || []).map((p, i) => ({ ...p, n: i + 1 })).filter(p => p.text && has(p.text));
+        const hits = (m.pages || []).map((p, i) => ({ ...p, n: i + 1 })).filter(p => p.text && has(unB(p.text)));
         if (hits.some(p => isToc(p.text)) && scope === 'all') why.push('목차');
-        body = hits.filter(p => !isToc(p.text)).slice(0, 60).map(p => ({ n: p.n, label: p.label ? p.label + '쪽' : p.n + '번째', s: snippet(p.text.replace(/\s+/g, ' '), terms) }));
+        body = hits.filter(p => !isToc(p.text)).slice(0, 60).map(p => ({ n: p.n, label: p.label ? p.label + '쪽' : p.n + '번째', s: snippet(unB(p.text).replace(/\s+/g, ' '), terms) }));
         // 색인 표 속 낱말 (제1부 기준, 같은 낱말이 네 부에 되풀이되므로 한 번만)
         if (m.index && m.index.parts && m.index.parts[0]) {
           const ixPage = (m.pages || []).findIndex(p => /\[\[색인\]\]/.test(p.text || '')) + 1;
@@ -432,7 +432,7 @@ function exitReader() { if (R && R.ttsLocked) { toast('듣기가 잠겨 있습�
 const paras = t => String(t || '').split(/\n\s*\n/).map(s => s.trim().split('\n').map(l => l.trim()).join('\n')).filter(Boolean);
 function markUl(s, n) {
   if (R.hl.length) return hl(s, R.hl);
-  const rg = uls().filter(h => h.id === R.id && h.p === n && h.text && s.includes(h.text)).map(h => { const a = s.indexOf(h.text); return [a, a + h.text.length, h.k]; }).sort((x, y) => x[0] - y[0]);
+  const rg = uls().filter(h => h.id === R.id && h.p === n && h.text && s.includes(h.text) && !/\*\*/.test(h.text)).map(h => { const a = s.indexOf(h.text); return [a, a + h.text.length, h.k]; }).sort((x, y) => x[0] - y[0]);
   let out = '', p = 0; rg.forEach(([a, b, k]) => { if (a < p) return; out += esc(s.slice(p, a)) + `<u class="ul" data-hid="${k}" title="밑줄 · 눌러서 메모나 지우기">` + esc(s.slice(a, b)) + '</u>'; p = b; });
   return out + esc(s.slice(p));
 }
@@ -481,7 +481,7 @@ function reflowHtml() {
     const keep = k => !(p.n === c.from && k < (c.k0 || 0)) && !(p.n === c.to && c.kEnd != null && k >= c.kEnd);
     const heads = new Set(R.toc.filter(t => t.page === p.n || t.page === p.n - 1).map(t => headKey(t.title)));
     if (!ps.length) return `<span id="pm-${p.n}"></span>`;
-    return `<span class="pmark" id="pm-${p.n}">${esc(pageName(p))}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? (p.n === c.from && headKey(s) === headKey(c.title) ? ' class="sub-h ch-dup"' : ' class="sub-h" role="heading" aria-level="4"') : ''}>${fnMark(markUl(s.replace(/^## /, ''), p.n)).replace(/\n/g, '<br>')}</p>`).join('') || ''}`;
+    return `<span class="pmark" id="pm-${p.n}">${esc(pageName(p))}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? (p.n === c.from && headKey(s) === headKey(c.title) ? ' class="sub-h ch-dup"' : ' class="sub-h" role="heading" aria-level="4"') : ''}>${fnMark(boldMark(markUl(s.replace(/^## /, ''), p.n))).replace(/\n/g, '<br>')}</p>`).join('') || ''}`;
   }).join('');
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}" data-ci="${ci - 1}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}" data-ci="${ci + 1}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}</h3></div>` : ''}${body}${nav}</div>`;
@@ -555,7 +555,7 @@ function bindReader() {
     const hits = [];
     for (const pgx of R.pages) {
       const ps = paras(pgx.text);
-      ps.forEach((t, k) => { if (terms.some(x => norm(t).includes(x))) hits.push({ n: pgx.n, k, s: snippet(t, terms) || t.slice(0, 80) }); });
+      ps.forEach((t, k) => { if (terms.some(x => norm(unB(t)).includes(x))) hits.push({ n: pgx.n, k, s: snippet(unB(t), terms) || unB(t).slice(0, 80) }); });
     }
     const ch = n => { const c = chapters()[chapterOf(n)]; return c && c.title ? c.title : ''; };
     R.findTerms = terms;
@@ -667,6 +667,7 @@ function domToSrc(src, off) {
     const m = src.slice(i).match(/^\[\^([^\]]+)\]/);
     if (m) { if (d + m[1].length > off) return i; d += m[1].length; i += m[0].length; continue; }
     if (src[i] === '\n') { i++; continue; }  // 줄 바꿈은 화면 글자에 없음
+    if (src.startsWith('**', i)) { i += 2; continue; }  // 굵은 글씨 표시도 화면 글자에 없음
     i++; d++;
   }
   return i;
@@ -834,7 +835,7 @@ const SYM_RE = /[()\[\]‘’“”"'「」『』《》〈〉<>＜＞·ㆍ…~*/
 const EN_A = '\u0001', EN_B = '\u0002';  // 영어 구간 표시 (영어 목소리로 읽을 부분)
 function sayable(s, o = ttsOpt(), mark = false) {
   const en = w => mark ? EN_A + w + EN_B : w;
-  let t = String(s || '').replace(/^## /, '');
+  let t = unB(s).replace(/^## /, '');
   if (o.paren === false) { let prev; do { prev = t; t = t.replace(/\s?[(（][^()（）]*[)）]/g, ''); } while (t !== prev); }
   if (o.brack === false) t = t.replace(/\s?\[(?!\^)[^\[\]]*\]/g, '');
   t = t.replace(/\[\^([^\]]+)\]/g, (m, n) => o.fn ? ` 각주 ${n}, ` : ''); // 본문 속 각주 번호: '각주 읽기'를 켜면 '각주 1'로, 끄면 읽지 않음
@@ -877,7 +878,10 @@ const fnMark = h => h.replace(/^\[\^([^\]]+)\]:\s*/, '<span class="fn-no" data-f
 // 본문 속 그림 ![설명](주소) 과 표(| 칸 | 칸 |)
 // 소제목 알아보기: 빈칸·괄호 속 풀이를 빼고 목차 제목과 같으면 소제목
 const isHead = t => /^## /.test(t);
-const headKey = t => String(t || '').replace(/^## /, '').replace(/\[\^[^\]]+\]/g, '').replace(/\([^)]*\)/g, '').replace(/[\s‘’'"“”]/g, '').replace(/^[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩIVX]+\./, m => m.replace(/[IVX]+/g, x => ({I:'Ⅰ',II:'Ⅱ',III:'Ⅲ',IV:'Ⅳ',V:'Ⅴ',VI:'Ⅵ',VII:'Ⅶ',VIII:'Ⅷ',IX:'Ⅸ',X:'Ⅹ'}[x] || x)));
+// **굵은 글씨**: 관리자 화면 본문에서 ** 로 감싼 곳 (화면에서는 굵게, 듣기·찾기·밑줄에서는 ** 를 뺌)
+const unB = s => String(s || '').replace(/\*\*/g, '');
+const boldMark = h => h.replace(/\*\*(?=\S)([\s\S]*?\S)\*\*/g, '<strong>$1</strong>');
+const headKey = t => unB(t).replace(/^## /, '').replace(/\[\^[^\]]+\]/g, '').replace(/\([^)]*\)/g, '').replace(/[\s‘’'"“”]/g, '').replace(/^[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩIVX]+\./, m => m.replace(/[IVX]+/g, x => ({I:'Ⅰ',II:'Ⅱ',III:'Ⅲ',IV:'Ⅳ',V:'Ⅴ',VI:'Ⅵ',VII:'Ⅶ',VIII:'Ⅷ',IX:'Ⅸ',X:'Ⅹ'}[x] || x)));
 const FIG_RE = /^!\[([^\]]*)\]\(([^)\s]+)\)\s*$/;
 const isTable = p => /^\|.*\|\s*$/m.test(p) && p.split('\n').filter(l => l.trim()).every(l => /^\|/.test(l.trim()));
 function tableHtml(p) {

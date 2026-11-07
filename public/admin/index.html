@@ -9,5 +9,39 @@
 </head>
 <body>
 <script src="https://unpkg.com/@sveltia/cms@0.259.0/dist/sveltia-cms.js"></script>
+<script>
+// 책 본문 굵은 글씨: 본문 칸에서 글을 고르면 'B 굵게' 단추가 뜹니다 (Ctrl+B / ⌘+B 도 됨). 고른 글을 **글** 로 감싸고, 이미 굵으면 풀어 줍니다.
+(() => {
+  const btn = document.createElement('button');
+  btn.type = 'button'; btn.textContent = 'B 굵게';
+  btn.title = '고른 글을 굵게 (다시 누르면 풀림) · Ctrl+B';
+  btn.style.cssText = 'position:fixed;z-index:99999;display:none;padding:6px 12px;border:0;border-radius:8px;background:#5b3a1e;color:#fff;font:bold 14px sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.3);cursor:pointer';
+  document.addEventListener('DOMContentLoaded', () => document.body.appendChild(btn));
+  let ta = null, mx = 0, my = 0;
+  const inTexts = () => /collections\/texts\//.test(location.hash);
+  const sel = () => { const a = document.activeElement; return a && a.tagName === 'TEXTAREA' && inTexts() && a.selectionEnd > a.selectionStart ? a : null; };
+  const show = () => { ta = sel(); if (!ta) { btn.style.display = 'none'; return; } btn.style.left = Math.min(mx + 8, innerWidth - 90) + 'px'; btn.style.top = Math.max(my - 44, 8) + 'px'; btn.style.display = 'block'; };
+  const toggle = t => {
+    let a = t.selectionStart, b = t.selectionEnd, v = t.value, x = v.slice(a, b);
+    // 앞뒤 빈칸은 굵게 안에 넣지 않음
+    while (a < b && /\s/.test(v[a])) a++; while (b > a && /\s/.test(v[b - 1])) b--; x = v.slice(a, b); if (!x) return;
+    t.focus();
+    if (/^\*\*[\s\S]*\*\*$/.test(x) && x.length > 4) { t.setSelectionRange(a, b); document.execCommand('insertText', false, x.slice(2, -2)); t.setSelectionRange(a, b - 4); }
+    else if (v.slice(a - 2, a) === '**' && v.slice(b, b + 2) === '**') { t.setSelectionRange(a - 2, b + 2); document.execCommand('insertText', false, x); t.setSelectionRange(a - 2, b - 2); }
+    else if (/\n\s*\n/.test(x)) { alert('굵게는 한 문단 안에서만 쓸 수 있습니다. 문단마다 따로 골라 주세요.'); return; }
+    else { t.setSelectionRange(a, b); document.execCommand('insertText', false, '**' + x.replace(/\*\*/g, '') + '**'); t.setSelectionRange(a + 2, a + 2 + x.replace(/\*\*/g, '').length); }
+    t.dispatchEvent(new Event('input', { bubbles: true }));
+    btn.style.display = 'none';
+  };
+  document.addEventListener('mouseup', e => { if (e.target === btn) return; mx = e.clientX; my = e.clientY; setTimeout(show, 0); });
+  document.addEventListener('keyup', e => { if (e.shiftKey && !sel()) btn.style.display = 'none'; else if (!sel()) btn.style.display = 'none'; });
+  document.addEventListener('selectionchange', () => { if (sel()) { if (!mx) { mx = innerWidth / 2 - 40; my = innerHeight - 60; } show(); } });
+  document.addEventListener('touchend', e => { const t = e.changedTouches[0]; if (t) { mx = t.clientX; my = t.clientY; } });
+  document.addEventListener('scroll', () => { btn.style.display = 'none'; }, true);
+  btn.addEventListener('mousedown', e => e.preventDefault());
+  btn.addEventListener('click', () => { const t = ta; if (t) toggle(t); });
+  document.addEventListener('keydown', e => { if ((e.ctrlKey || e.metaKey) && !e.altKey && e.key.toLowerCase() === 'b') { const t = sel(); if (t) { e.preventDefault(); toggle(t); } } });
+})();
+</script>
 </body>
 </html>
