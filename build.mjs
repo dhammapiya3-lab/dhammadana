@@ -351,7 +351,7 @@ for (const b of BOOKS) {
   const prov = providerById(b.provider);
   const same = BOOKS.filter(x => x !== b && b.teacher && x.teacher === b.teacher);
   const perms = (e.permissions || []).map(permById).filter(Boolean);
-  const permLabel = e.permission_status === 'pending' ? '허락 대기 중' : e.permission_status === 'public' ? '공개 배포됨' : e.permission_status === 'confirmed' || perms.length ? '허락 확인됨' : '';
+  const permLabel = e.permission_status === 'pending' ? '대기 중' : e.permission_status === 'public' ? '공개 배포됨' : e.permission_status === 'confirmed' || perms.length ? '허락 확인됨' : '';
   const pubEds = (b.editions || []);
   const hasPrint = pubEds.some(x => x.isbn || x.publisher_print), hasEbook = pubEds.some(x => x.isbn_ebook || x.publisher_ebook || x.published_ebook);
   const statusCell = x => x.current ? '<span class="pill">최신판</span>' : !edHasFile(x) ? '—' : x.public ? '이전 판 공개' : '보관';
@@ -394,6 +394,7 @@ for (const b of BOOKS) {
       <dt>원본 출처</dt><dd>${(e.sources || []).length ? e.sources.map(s => `${SRC_FILE[s.file] ? `<span class="muted small">${SRC_FILE[s.file]}:</span> ` : ''}<a href="${esc(s.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>${s.checked ? ` <span class="muted small">(${esc(s.checked)} 확인)</span>` : ''}${s.archive ? ` · <a href="${esc(s.archive)}" target="_blank" rel="noopener">보관본</a>` : ''}`).join('<br>') : '—'}</dd>
       <dt>수집 경로</dt><dd>${esc(e.collection || '—')}${e.collected ? ` <span class="muted small">(${esc(e.collected)})</span>` : ''}</dd>
       <dt>게시 허락</dt><dd>${permLabel || e.permission_note || e.permission_image ? `${permLabel}${perms.filter(p => p.image && p.image_public).map(p => ` · <button class="link-btn" data-permit="${esc(p.image)}" data-title="${esc(b.title)}">허락서 보기</button>`).join('')}${e.permission_image ? `${permLabel ? ' · ' : ''}<button class="link-btn" data-permit="${esc(e.permission_image)}" data-title="${esc(b.title)}">허락서 보기</button>` : ''}${e.permission_note ? `<blockquote class="perm-note">${esc(e.permission_note).replace(/\n/g, '<br>')}</blockquote>` : ''}` : '—'}</dd>
+      ${String(e.notice || '').trim() ? `<dt>알림</dt><dd>${esc(e.notice.trim()).replace(/\n/g, '<br>')}</dd>` : ''}
       <dt>라이선스</dt><dd>${licHtml(b.license)}</dd></dl>
       ${edTables}
       <p class="small muted" style="margin-top:10px">새 판이 올라오면 이전 판은 보관되고, 최신판만 내려받기와 온라인 읽기에 나옵니다.</p>
