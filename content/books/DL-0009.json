@@ -1,0 +1,100 @@
+{
+  "id": "DL-0009",
+  "title": "위빠사나 수행의 목적과 방법",
+  "subtitle": "우 떼자니야 사야도의 가르침",
+  "cover": "/uploads/앞표지.png",
+  "byline": "냐눗따라 스님 지음",
+  "translator": "",
+  "teacher": "nanuttara",
+  "provider": "amumaldeul",
+  "press": true,
+  "paper": "request",
+  "paper_url": "https://cafe.naver.com/shweoomin/1259",
+  "stores": [
+    {
+      "name": "",
+      "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=365484407"
+    }
+  ],
+  "original_title": "",
+  "original_language": "",
+  "original_source": "",
+  "series": "",
+  "main": [],
+  "topics": [
+    "위빳사나",
+    "빤냣띠·빠라맛타",
+    "무상·고·무아",
+    "수행을 돕는 법들",
+    "재가자의 삶"
+  ],
+  "description": "\n이 책은 냐눗따라 스님이 2014년에 ‘위빠사나 기초 10일 프로그램’에서 한 법문을 수정한 것입니다.\n처음 위빠사나 수행을 접하는 분들이나 기존 수행자들에도 도움이 될 수 있도록 내용을 수정하였습니다.\n특히 미얀마 쉐우민 센터의 지도 법사이신 우 떼자니야 사야도의 가르침에 따라 위빠사나 수행을 하고자 하는 분들에게 도움이 되는 정보들이 들어있습니다.",
+  "author_intro": "냐눗따라 스님은 \n\n2003년부터 주로 미얀마 쉐우민 센터 지도법사이신 우 떼자니야 사야도의 가르침에 따라 위빠사나 수행을 하고 있음. 쉐우민 센터에서 2012년에 사미계, 2014년에 비구계를 받음. 2011년부터 수행자들에게 위빠사나 수행을 안내하고 있음.\n\n유튜브: 냐눗따라 스님\n[https://www.youtube.com/@shweoomin.meditation](https://www.youtube.com/@shweoomin.meditation)\n\n네이버카페: 쉐우민지혜명상센터\n[https://cafe.naver.com/shweoomin](https://cafe.naver.com/shweoomin)",
+  "translator_intro": "",
+  "contents": "읽는 분들에게 5\n\n수행의 목적과 방법 8\n대상이란 무엇인가 32\n실재하는 것에 대한 관심과 몸의 불편한 느낌 다루기 44\n마음을 일깨워 주고 지켜보세요 62\n무슨 마음으로 수행하나요 80\n방법을 배우는 데 가치를 두세요 96\n마음이 생각합니다 112\n알면서 먹으세요 130\n무슨 마음으로 대화하고 있나요 140\n보는 줄 알고, 듣는 줄 아십시오 152",
+  "editions": [
+    {
+      "label": "초판",
+      "label_display": "",
+      "current": true,
+      "public": true,
+      "page_count": 162,
+      "published": "2025년 3월 10일",
+      "publisher_print": "쉐우민지혜명상센터 출판부",
+      "isbn": "",
+      "published_ebook": "2025년 5월 26일",
+      "publisher_ebook": "我無말들",
+      "isbn_ebook": "979-11-980922-9-8",
+      "changes": "",
+      "hide_update": false,
+      "pdf": {
+        "mode": "file",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_print": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_cover": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "epub": {
+        "mode": "file",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "reader": true,
+      "sources": [
+        {
+          "file": "pdf",
+          "url": "https://cafe.naver.com/shweoomin/1262",
+          "checked": "2026년 11월 8일",
+          "archive": ""
+        }
+      ],
+      "collection": "我無말들 자체 제작",
+      "collected": "",
+      "permission_status": "confirmed",
+      "notice": "",
+      "permission_note": "* 본 도서는 법보시용 도서(비매품)입니다. \n상업적 목적이 아닌 한 무단 복제와 전재를 마음껏 하십시오. \n단, 내용을 임의로 변경해서는 안 됩니다.",
+      "permission_image": "",
+      "permissions": [
+        "amumaldeul-self"
+      ],
+      "note": ""
+    }
+  ],
+  "license": "CC BY-NC-ND",
+  "added": "2026-11-08",
+  "order": null,
+  "hidden": false,
+  "hide_update": false
+}
