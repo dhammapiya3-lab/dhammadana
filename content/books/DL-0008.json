@@ -64,10 +64,10 @@
         "created": ""
       },
       "epub": {
-        "mode": "file",
-        "url": "",
         "site": "",
-        "created": "2025년 3월 7일"
+        "created": "2025년 3월 7일",
+        "mode": "file",
+        "url": "epub/DL-0008/DL-0008_초판.epub"
       },
       "reader": true,
       "sources": [
