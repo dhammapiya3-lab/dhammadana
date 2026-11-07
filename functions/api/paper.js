@@ -24,7 +24,8 @@ const putJ = (env, key, v) => env.PAPER.put(key, JSON.stringify(v), { httpMetada
 // 책 여러 권: r.books = [{ id, title, qty }] (예전 한 권짜리 r.book·bookTitle·qty 도 읽음)
 const booksOf = r => r.books && r.books.length ? r.books : (r.book ? [{ id: r.book, title: r.bookTitle, qty: r.qty }] : []);
 const summary = r => booksOf(r).map(x => `『${x.title}』 ${x.qty}권`).join(', ');
-const pub = r => ({ id: r.id, who: mask(r.name), book: summary(r), qty: booksOf(r).reduce((a, x) => a + x.qty, 0), date: r.created.slice(0, 10), status: r.status, edited: !!r.updated, replies: (r.replies || []).length });
+// 공개 목록: 책 제목만 (권수는 신청한 분·관리자만)
+const pub = r => ({ v: 2, id: r.id, who: mask(r.name), book: booksOf(r).map(x => `『${x.title}』`).join(', '), date: r.created.slice(0, 10), status: r.status, edited: !!r.updated, replies: (r.replies || []).length });
 async function saveIndex(env, list) { await putJ(env, 'index.json', list.sort((a, b) => b.id.localeCompare(a.id))); }
 async function upsertIndex(env, r) { const l = (await getJ(env, 'index.json', [])).filter(x => x.id !== r.id); l.push(pub(r)); await saveIndex(env, l); }
 async function dropIndex(env, id) { await saveIndex(env, (await getJ(env, 'index.json', [])).filter(x => x.id !== id)); }
@@ -90,8 +91,12 @@ export async function onRequestGet({ request, env }) {
     const items = (await Promise.all(l.map(x => getJ(env, `req/${x.id}.json`, null)))).filter(Boolean).map(({ pw, salt, ...r }) => r);
     return json({ ready: true, notify: !!env.PAPER_NOTIFY_URL, items });
   }
-  const l = await getJ(env, 'index.json', []);
-  return json({ ready: true, items: l.map(({ sentAt, ...x }) => x) });
+  let l = await getJ(env, 'index.json', []);
+  if (l.some(x => x.v !== 2)) {  // 예전 목록 형식이면 신청 글에서 다시 만듦
+    const rs = (await Promise.all(l.map(x => getJ(env, `req/${x.id}.json`, null)))).filter(Boolean);
+    l = rs.map(r => ({ ...pub(r), sentAt: r.sentAt || '' })); await saveIndex(env, l);
+  }
+  return json({ ready: true, items: l.map(({ sentAt, v, ...x }) => x) });
 }
 
 export async function onRequestPost(ctx) {

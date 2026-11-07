@@ -51,7 +51,7 @@
     return `<ul class="pq-list">${items.map((x, i) => `<li class="${x.id === openId ? 'open' : ''}">
       <button class="pq-item" data-id="${x.id}" aria-expanded="${x.id === openId}">
         <span class="pq-no">${items.length - i}</span>
-        <span class="pq-t">🔒 비밀글 · ${esc(x.book)}${x.edited ? ' <span class="muted small">(고침)</span>' : ''}${x.replies ? ` <span class="pq-rc">💬 댓글 ${x.replies}</span>` : ''}</span>
+        <span class="pq-t">🔒 비밀글 · ${esc(x.book)} 신청합니다${x.edited ? ' <span class="muted small">(고침)</span>' : ''}${x.replies ? ` <span class="pq-rc">💬 댓글 ${x.replies}</span>` : ''}</span>
         <span class="pq-w">${esc(x.who)}</span><span class="pq-d">${esc(x.date.slice(5).replace('-', '.'))}</span>
         <span class="pq-s ${x.status}">${ST[x.status] || ''}</span></button>
       ${x.id === openId ? `<div class="pq-open">${openBody(x)}</div>` : ''}</li>`).join('')}</ul>`;
@@ -133,7 +133,7 @@
         e.preventDefault(); const msg = ef.querySelector('#pqMsg'); msg.className = 'pq-msg'; msg.textContent = '저장하는 중…';
         const j = await api({ action: 'update', id: openId, password: pwKeep, ...formData(ef) });
         if (j.error) { msg.className = 'pq-msg err'; msg.textContent = j.error; return; }
-        mine = j.item; const it = items.find(x => x.id === openId); if (it) { it.book = summary(mine); it.edited = true; }
+        mine = j.item; const it = items.find(x => x.id === openId); if (it) { it.book = booksOf(mine).map(x => `『${x.title}』`).join(', '); it.edited = true; }
         redrawList(); const m2 = document.getElementById('pqMsg2'); if (m2) { m2.className = 'pq-msg ok'; m2.textContent = '고친 내용을 저장했습니다.'; }
       };
     }
