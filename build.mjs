@@ -320,6 +320,7 @@ const P = S.publisher;
 const PAPER = { request: '종이책 보시 신청', soldout: '종이책 품절', ebook: '전자책 Only' };
 function paperBadge(b) {
   const k = b.paper; if (!PAPER[k]) return '';
+  if (k === 'request' && /^https?:\/\//.test(String(b.paper_url || '').trim())) return `<a class="paper paper-request" href="${esc(String(b.paper_url).trim())}" target="_blank" rel="noopener" aria-label="『${esc(b.title)}』 종이책 보시 신청 (새 창)">📖 ${PAPER[k]} <span aria-hidden="true">↗</span></a>`;
   if (k === 'request') {
     if (S.paper_request_url) { const u = S.paper_request_url.replace(/\{(title|id)\}/g, (m, x) => encodeURIComponent(x === 'title' ? b.title : b.id));
       return `<a class="paper paper-request" href="${esc(u)}" target="_blank" rel="noopener" aria-label="『${esc(b.title)}』 종이책 보시 신청 (새 창)">📖 ${PAPER[k]} <span aria-hidden="true">↗</span></a>`; }
@@ -329,7 +330,7 @@ function paperBadge(b) {
 }
 put('press/index.html', layout({ title: '我無말들 출판사', nav: 'press', page: 'press', body: pressShell('all', `<div class="grid press-grid">${BOOKS.filter(b => b.press).map(b => `<div class="pbook">${coverCard(b)}${paperBadge(b)}</div>`).join('')}</div>`) }));
 // 종이책 보시 신청 게시판 (비밀글): 동작은 /assets/paper.js, 저장은 functions/api/paper.js
-const PAPER_BOOKS = BOOKS.filter(b => b.press && b.paper === 'request').map(b => ({ id: b.id, title: b.title }));
+const PAPER_BOOKS = BOOKS.filter(b => b.press && b.paper === 'request' && !/^https?:\/\//.test(String(b.paper_url || '').trim())).map(b => ({ id: b.id, title: b.title }));
 put('paper-books.json', JSON.stringify(PAPER_BOOKS));
 put('press/request/index.html', layout({ title: '종이책 보시 신청', nav: 'press', page: 'press', body: pressShell('request', `<div class="pq">
   <h1 class="h-page">종이책 보시 신청</h1>
