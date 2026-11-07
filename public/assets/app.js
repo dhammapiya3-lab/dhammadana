@@ -394,7 +394,7 @@ async function initBook() {
   const m = $('#tocMount'); if (!m) return;
   try {
     const man = await manifest(m.dataset.manifest);
-    if (man.toc && man.toc.length) m.innerHTML = `<ol class="toc">${man.toc.map(t => `<li class="${/^\s/.test(t.title) ? 'sub' : ''}"><a href="/read/${m.dataset.book}/${t.page}?view=text">${esc(t.title.trim())}</a><span>${esc(t.label || t.page)}</span></li>`).join('')}</ol><p class="small muted" style="margin-top:8px">목차를 누르면 그 장을 읽을 수 있습니다.</p>`;
+    if (man.toc && man.toc.length) m.innerHTML = `<ol class="toc">${man.toc.map(t => `<li class="${/^\s/.test(t.title) ? 'sub' : ''}"><a href="/read/${m.dataset.book}/${t.page}?view=text">${esc(t.title.trim())}</a><span>${esc(t.label || '')}</span></li>`).join('')}</ol><p class="small muted" style="margin-top:8px">목차를 누르면 그 장을 읽을 수 있습니다.</p>`;
   } catch (e) {}
 }
 
