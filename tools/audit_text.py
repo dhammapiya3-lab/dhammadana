@@ -25,7 +25,7 @@ for n, t in sorted(P.items()):
     pl = [N(l) for l in L.split('\n') if N(l) and not re.fullmatch(r'\d+', N(l))]
     ol = [N(l) for l in t.split('\n') if N(l) and not l.startswith('![')]
     if pl != ol: lines.append((n, len(pl), len(ol)))
-refs = re.findall(r'\[\^(\d+)\](?!:)', b); defs = re.findall(r'(?m)^\[\^(\d+)\]:', b)
+refs = re.findall(r'(?m)(?<!^)\[\^(\d+)\]', b); defs = re.findall(r'(?m)^\[\^(\d+)\]:', b)
 print(f'{bk}: {len(P)}쪽')
 print(f'1) 순서가 인쇄본과 다를 수 있는 쪽 {len(order)}곳 (같은 글귀가 되풀이되면 잘못 잡힐 수 있음)')
 for x in order: print('   ', x)
