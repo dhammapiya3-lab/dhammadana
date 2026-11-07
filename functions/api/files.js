@@ -30,6 +30,18 @@ export async function onRequestGet({ request, env }) {
 export async function onRequestPost({ request, env }) {
   if (!(await canWriteToken(tokenOf(request)))) return json({ error: '허락되지 않았습니다.' }, 401);
   const body = await request.json().catch(() => ({}));
+  // 파일 이름 바꾸기: {rename: {from: 'epub/DL-0001/옛이름.epub', to: 'epub/DL-0001/새이름.epub'}} (같은 책·같은 종류 폴더 안에서만)
+  if (body.rename) {
+    const { from, to } = body.rename; const KEY = /^(pdf|epub)\/(DL-\d{4})\/[^/]+$/;
+    const a = KEY.exec(from || ''), b = KEY.exec(to || '');
+    if (!a || !b || a[1] !== b[1] || a[2] !== b[2]) return json({ error: '같은 책의 같은 종류 파일 안에서만 이름을 바꿀 수 있습니다.' }, 400);
+    if (from === to) return json({ ok: true, renamed: 0 });
+    if (await env.FILES.head(to)) return json({ error: '그 이름의 파일이 이미 있습니다: ' + to }, 409);
+    const obj = await env.FILES.get(from); if (!obj) return json({ error: '파일을 찾지 못했습니다: ' + from }, 404);
+    await env.FILES.put(to, obj.body, { httpMetadata: obj.httpMetadata, customMetadata: obj.customMetadata });
+    await env.FILES.delete(from);
+    return json({ ok: true, renamed: 1, from, to });
+  }
   const list = Array.isArray(body.delete) ? body.delete : [];
   let n = 0;
   for (const p of list) {

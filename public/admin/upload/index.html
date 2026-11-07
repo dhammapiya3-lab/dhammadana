@@ -264,10 +264,36 @@ async function loadClean(){
   const r=await fetch('/api/files?book='+id,{headers:{authorization:'Bearer '+TOKEN}}); const j=await r.json().catch(()=>({}));
   if(!r.ok){ $('#clist').innerHTML=`<div class="msg err">${esc(j.error||'불러오지 못했습니다.')}</div>`; return; }
   if(!j.groups.length){ $('#clist').innerHTML='<p class="note">이 책의 파일이 창고에 없습니다.</p>'; return; }
-  $('#clist').innerHTML=j.groups.map((g,i)=>`<label style="display:flex;gap:8px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px"><input type="checkbox" data-p="${esc(g.prefix)}" ${broken(g.prefix)?'checked':''} style="margin-top:4px"><span>${esc(g.prefix)}${broken(g.prefix)?' <b style="color:#8A2E1C">(이름 깨짐)</b>':''}<br><span class="note">파일 ${g.count}개 · ${mb(g.size)}</span></span></label>`).join('');
+  $('#clist').innerHTML=j.groups.map((g,i)=>`<label style="display:flex;gap:8px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px"><input type="checkbox" data-p="${esc(g.prefix)}" ${broken(g.prefix)?'checked':''} style="margin-top:4px"><span>${esc(g.prefix)}${broken(g.prefix)?' <b style="color:#8A2E1C">(이름 깨짐)</b>':''}<br><span class="note">파일 ${g.count}개 · ${mb(g.size)}</span>${/^(pdf|epub)\/DL-\d{4}\/[^/]+$/.test(g.prefix)?` · <button type="button" class="link-btn" data-ren="${esc(g.prefix)}">이름 바꾸기</button>`:''}</span></label>`).join('');
+  document.querySelectorAll('[data-ren]').forEach(b=>b.onclick=e=>{ e.preventDefault(); renameFile(b.dataset.ren); });
   $('#cdel').hidden=false;
 }
 $('#cbook').onchange=loadClean;
+// 파일 이름 바꾸기 → 책 정보의 연결 주소도 함께 바꿈
+async function renameFile(from){
+  const dir=from.slice(0,from.lastIndexOf('/')+1), old=from.slice(dir.length);
+  let nn=prompt('새 파일 이름을 적어 주세요 (확장자 포함)', old); if(!nn) return; nn=nn.trim().normalize('NFC');
+  if(/[\/\\]/.test(nn)||!/\.(pdf|epub)$/i.test(nn)){ alert('파일 이름만 적어 주세요. 예: DL-0001_초판.epub'); return; }
+  const to=dir+nn; if(to===from) return;
+  $('#cout').innerHTML='<p class="note">이름 바꾸는 중…</p>';
+  const r=await fetch('/api/files',{method:'POST',headers:{authorization:'Bearer '+TOKEN,'content-type':'application/json'},body:JSON.stringify({rename:{from,to}})}); const j=await r.json().catch(()=>({}));
+  if(!r.ok){ $('#cout').innerHTML=`<div class="msg err">${esc(j.error||'바꾸지 못했습니다.')}</div>`; return; }
+  let fixed=0;
+  try{
+    const id=$('#cbook').value;
+    for(let t=0;t<4;t++){
+      if(t) await new Promise(r=>setTimeout(r,1500*t));
+      const g=await gh(`/contents/content/books/${id}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); if(!g.ok) break;
+      const gj=await g.json(); const b=JSON.parse(dec(gj.content)); fixed=0;
+      for(const e of (b.editions||[])) for(const k of ['pdf','pdf_print','pdf_cover','epub']) if(e[k]&&e[k].url===from){ e[k].url=to; fixed++; }
+      if(!fixed) break;
+      const put=await gh(`/contents/content/books/${id}.json`,{method:'PUT',headers:{'content-type':'application/json'},body:JSON.stringify({message:`파일 이름 바꿈: ${from} → ${to}`,content:enc(JSON.stringify(b,null,2)+'\n'),sha:gj.sha,branch:'main'})});
+      if(put.ok) break;
+    }
+  }catch(e){}
+  $('#cout').innerHTML=`<div class="msg ok">이름을 바꿨습니다: ${esc(old)} → ${esc(nn)}${fixed?`<br>책 정보의 연결 주소도 함께 바꿨습니다. 1~2분 뒤 사이트에 반영됩니다.`:''}</div>`;
+  loadClean();
+}
 $('#cdel').onclick=async()=>{
   const ps=[...document.querySelectorAll('#clist input:checked')].map(x=>x.dataset.p); if(!ps.length){ $('#cout').innerHTML='<div class="msg err">지울 묶음을 골라 주세요.</div>'; return; }
   if(!confirm(ps.length+'개 묶음을 지웁니다. 되살릴 수 없습니다. 지울까요?')) return;
