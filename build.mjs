@@ -124,6 +124,8 @@ function ymd(t) {
   if (!m) { const y = String(t || '').match(/(\d{4})/); return y ? y[1] : ''; }
   return m[1] + '-' + m[2].padStart(2, '0') + (m[3] ? '-' + m[3].padStart(2, '0') : '');
 }
+// 원본 출처가 어느 파일의 것인지 (비우거나 '모든 파일'이면 표시 안 함)
+const SRC_FILE = { pdf: 'PDF(화면용)', pdf_print: 'PDF(인쇄용)', pdf_cover: 'PDF(인쇄용 표지)', epub: 'EPUB' };
 const safeName = s => String(s).replace(/[\\/:*?"<>|\u0000-\u001f]+/g, ' ').replace(/\s+/g, ' ').trim();
 const DOWNLOADS = {};
 function dlName(b, e, kind) {
@@ -376,7 +378,7 @@ for (const b of BOOKS) {
       ${b.original_language ? `<dt>원서의 언어</dt><dd>${esc(b.original_language)}</dd>` : ''}
       ${b.original_source ? `<dt>원서 정보</dt><dd>${esc(b.original_source)}</dd>` : ''}
       <dt>자료 제공</dt><dd>${prov ? esc(prov.name) + (prov.urls || []).map(u => ` <a href="${esc(u)}" target="_blank" rel="noopener">↗</a>`).join('') : '—'}</dd>
-      <dt>원본 출처</dt><dd>${(e.sources || []).length ? e.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>${s.checked ? ` <span class="muted small">(${esc(s.checked)} 확인)</span>` : ''}${s.archive ? ` · <a href="${esc(s.archive)}" target="_blank" rel="noopener">보관본</a>` : ''}`).join('<br>') : '—'}</dd>
+      <dt>원본 출처</dt><dd>${(e.sources || []).length ? e.sources.map(s => `${SRC_FILE[s.file] ? `<span class="muted small">${SRC_FILE[s.file]}:</span> ` : ''}<a href="${esc(s.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>${s.checked ? ` <span class="muted small">(${esc(s.checked)} 확인)</span>` : ''}${s.archive ? ` · <a href="${esc(s.archive)}" target="_blank" rel="noopener">보관본</a>` : ''}`).join('<br>') : '—'}</dd>
       <dt>수집 경로</dt><dd>${esc(e.collection || '—')}${e.collected ? ` <span class="muted small">(${esc(e.collected)})</span>` : ''}</dd>
       <dt>게시 허락</dt><dd>${permLabel || e.permission_note || e.permission_image ? `${permLabel}${perms.filter(p => p.image && p.image_public).map(p => ` · <button class="link-btn" data-permit="${esc(p.image)}" data-title="${esc(b.title)}">허락서 보기</button>`).join('')}${e.permission_image ? `${permLabel ? ' · ' : ''}<button class="link-btn" data-permit="${esc(e.permission_image)}" data-title="${esc(b.title)}">허락서 보기</button>` : ''}${e.permission_note ? `<blockquote class="perm-note">${esc(e.permission_note).replace(/\n/g, '<br>')}</blockquote>` : ''}` : '—'}</dd>
       <dt>라이선스</dt><dd>${esc(b.license)}</dd></dl>

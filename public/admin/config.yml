@@ -143,7 +143,10 @@ collections:
             widget: list
             collapsed: true
             required: false
+            hint: "파일마다 원본을 가져온 곳이 다르면 하나씩 더해서 '어느 파일'을 골라 주세요."
+            summary: "{{fields.file}} {{fields.url}}"
             fields:
+              - { name: file, label: 어느 파일, widget: select, required: false, options: [{ label: "모든 파일", value: all }, { label: "PDF (화면용)", value: pdf }, { label: "PDF (인쇄용 / 인쇄용 본문)", value: pdf_print }, { label: "PDF (인쇄용 표지)", value: pdf_cover }, { label: "EPUB", value: epub }], hint: "비워 두면 모든 파일" }
               - { name: url, label: 주소 }
               - { name: checked, label: 확인한 날, required: false }
               - { name: archive, label: 보관본 주소, required: false, hint: "web.archive.org 에 저장한 주소" }
