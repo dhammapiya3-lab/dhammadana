@@ -41,9 +41,9 @@
         "created": ""
       },
       "pdf_print": {
-        "site": "",
         "mode": "file",
         "url": "pdf/DL-0006/DL-0006_초판_인쇄용.pdf",
+        "site": "",
         "created": "2026년 5월 11일"
       },
       "pdf_cover": {
@@ -59,7 +59,14 @@
         "created": "2025년 1월 3일"
       },
       "reader": true,
-      "sources": [],
+      "sources": [
+        {
+          "file": "",
+          "url": "https://blog.naver.com/k3a3n3g3/222720005809",
+          "checked": "2026년 11월 7일",
+          "archive": ""
+        }
+      ],
       "collection": "我無말들 자체 제작",
       "collected": "",
       "permission_status": "confirmed",
