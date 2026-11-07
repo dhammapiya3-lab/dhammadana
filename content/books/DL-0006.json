@@ -41,9 +41,9 @@
         "created": ""
       },
       "pdf_print": {
+        "site": "",
         "mode": "file",
         "url": "pdf/DL-0006/DL-0006_초판_인쇄용.pdf",
-        "site": "",
         "created": "2026년 5월 11일"
       },
       "pdf_cover": {
@@ -68,7 +68,8 @@
       "permissions": [
         "amumaldeul-self"
       ],
-      "note": ""
+      "note": "",
+      "file_created": "2026-11-07"
     }
   ],
   "license": "CC BY-NC-ND",
