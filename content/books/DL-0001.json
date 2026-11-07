@@ -29,7 +29,6 @@
   "editions": [
     {
       "label": "초판",
-      "label_display": "",
       "current": false,
       "public": false,
       "page_count": 228,
@@ -75,11 +74,11 @@
       "permissions": [
         "amumaldeul-self"
       ],
-      "note": ""
+      "note": "",
+      "label_display": ""
     },
     {
       "label": "개정판",
-      "label_display": "개정판 (epub는 초판)",
       "current": true,
       "public": true,
       "page_count": 240,
@@ -139,12 +138,13 @@
       "collected": "",
       "permission_status": "public",
       "notice": "",
-      "permission_note": "* 본 도서는 법보시용 도서(비매품)입니다. 상업적 목적이 아닌 한 무단 복제와 전재를 마음껏 하십시오. 단, 내용을 임의로 변경해서는 안 됩니다.",
+      "permission_note": "* 본 도서는 법보시용 도서(비매품)입니다. \n상업적 목적이 아닌 한 무단 복제와 전재를 마음껏 하십시오. \n단, 내용을 임의로 변경해서는 안 됩니다.",
       "permission_image": "",
       "permissions": [
         "amumaldeul-self"
       ],
-      "note": ""
+      "note": "",
+      "label_display": "개정판 (epub는 초판)"
     }
   ],
   "license": "CC BY-NC-ND",
