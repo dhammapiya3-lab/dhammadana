@@ -8,6 +8,7 @@
 - 큰 파일(PDF·EPUB·쪽 그림): Cloudflare R2, 주소 `https://files.dhammadana.kr/` (`content/settings.json` 의 files_base).
   - `pdf/<ID>/<ID>_<판>.pdf`, `epub/<ID>/...`, `reader/<ID>/<판>/manifest.json` + `p/0001.webp`, `big/0001.webp`
 - 관리자 화면: `/admin`, 책 파일 올리기: `/admin/upload/` (functions/api/upload.js, R2 바인딩 FILES — wrangler.toml)
+- 종이책 보시 신청 게시판(비밀글): `/press/request/` (public/assets/paper.js), 서버 `functions/api/paper.js`, 저장은 공개 주소 없는 R2 `PAPER` 창고(dhammadana-paper), 관리 `/admin/paper/`. 알림 메일은 Pages 비밀 변수 PAPER_NOTIFY_URL(운영자 Gmail 의 구글 Apps Script 웹 앱)로 보냄. 신청 개인정보는 다른 곳에 보내거나 저장하지 않는다. 책의 `paper` 값: request(보시 신청)·soldout(품절)·ebook(전자책 Only).
 - 화면 동작: `public/assets/app.js`, 디자인: `public/assets/site.css`.
 
 ## 자료 (content/)

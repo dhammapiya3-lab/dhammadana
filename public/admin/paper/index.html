@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>종이책 보시 신청 관리 · 관리자</title>
+<link rel="icon" href="/images/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+  body{background:var(--paper)}
+  .up{max-width:820px;margin:0 auto;padding:30px 18px 80px}
+  .up h1{font-size:26px;margin:0 0 4px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-top:14px}
+  input[type=password]{height:44px;border:1px solid var(--line);border-radius:8px;padding:0 12px;background:var(--paper);font-size:15px;width:100%}
+  .msg{border-radius:8px;padding:12px 14px;font-size:14.5px;margin-top:14px;line-height:1.6}
+  .msg.err{background:#F6E1DC;color:#8A2E1C}
+  .msg.warn{background:var(--robe-soft);color:var(--ink)}
+  .note{font-size:13px;color:var(--ink-soft);line-height:1.6}
+  .tabs2{display:flex;gap:6px;margin-top:16px;flex-wrap:wrap}
+  .tabs2 button{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:7px 14px;cursor:pointer;font:inherit;font-size:14px;color:var(--ink)}
+  .tabs2 button.on{background:var(--robe);border-color:var(--robe);color:var(--paper)}
+  .rq{display:grid;grid-template-columns:96px 1fr;gap:5px 12px;font-size:15px;margin:10px 0}
+  .rq dt{color:var(--ink-soft)} .rq dd{margin:0;white-space:pre-wrap;word-break:break-all}
+  .hd{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
+  .hd b{font-size:16px}
+  .st{font-size:12.5px;padding:4px 10px;border-radius:999px;background:var(--robe-soft);color:var(--robe)}
+  .st.sent{background:var(--leaf-soft);color:var(--leaf)}
+  .acts{display:flex;gap:8px;flex-wrap:wrap}
+  .acts button{border:1px solid var(--line);background:var(--paper);border-radius:8px;padding:8px 12px;cursor:pointer;font:inherit;font-size:14px;color:var(--ink)}
+  .acts button.main{background:var(--robe);border-color:var(--robe);color:var(--paper)}
+  .acts button.del{color:#A23A22}
+</style>
+</head>
+<body>
+<div class="up">
+  <p class="note"><a href="/admin/">← 관리자 화면</a></p>
+  <h1>종이책 보시 신청 관리</h1>
+  <p class="note">신청 글의 받는 분·연락처·주소는 이 화면에서만 보입니다. 책을 보낸 뒤 '발송 완료'를 누르면 게시판 목록에도 '발송 완료'로 보이고, 90일이 지나면 저절로 지워집니다.</p>
+  <div class="card" id="tokCard" hidden>
+    <p>관리자 열쇠(GitHub 토큰)를 넣어 주세요. 관리자 화면에 들어가 있으면 보통 저절로 채워집니다.</p>
+    <input type="password" id="tok" placeholder="ghp_… 또는 github_pat_…">
+    <div class="acts" style="margin-top:10px"><button class="main" id="tokSave">들어가기</button></div>
+    <div id="tokMsg"></div>
+  </div>
+  <div id="main" hidden>
+    <div id="warn"></div>
+    <div class="tabs2" id="tabs"></div>
+    <div id="list"><p class="note">불러오는 중…</p></div>
+    <p class="note" style="margin-top:24px"><button class="link" id="logout" style="border:0;background:none;color:var(--robe);cursor:pointer;padding:0">이 기기에서 열쇠 지우기</button></p>
+  </div>
+</div>
+<script>
+(function(){
+const REPO='dhammapiya3-lab/dhammadana', API='https://api.github.com/repos/'+REPO;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let TOKEN='', ITEMS=[], TAB='received';
+function findToken(){
+  try{ const t=localStorage.getItem('dd-gh-token'); if(t) return t; }catch(e){}
+  try{ for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if(!/sveltia/i.test(k)) continue;
+    const v=localStorage.getItem(k); const m=v&&v.match(/"token"\s*:\s*"([^"]+)"/); if(m) return m[1]; } }catch(e){}
+  return '';
+}
+async function check(t){
+  const r=await fetch(API,{headers:{authorization:'Bearer '+t,accept:'application/vnd.github+json'}});
+  if(!r.ok) return false; const j=await r.json(); return !!(j.permissions&&(j.permissions.push||j.permissions.admin));
+}
+const call=async(body)=>{ const r=await fetch('/api/paper',body?{method:'POST',headers:{'content-type':'application/json',authorization:'Bearer '+TOKEN},body:JSON.stringify(body)}:{headers:{authorization:'Bearer '+TOKEN}}); let j={}; try{j=await r.json();}catch(e){j={error:'연결 오류'};} return j; };
+async function start(){ TOKEN=findToken(); if(TOKEN&&await check(TOKEN)){ $('#main').hidden=false; load(); } else $('#tokCard').hidden=false; }
+$('#tokSave').onclick=async()=>{ const t=$('#tok').value.trim(); $('#tokMsg').innerHTML='<p class="note">확인 중…</p>';
+  if(await check(t)){ TOKEN=t; try{localStorage.setItem('dd-gh-token',t)}catch(e){} $('#tokCard').hidden=true; $('#main').hidden=false; load(); }
+  else $('#tokMsg').innerHTML='<div class="msg err">이 열쇠로는 사이트를 고칠 수 없습니다.</div>'; };
+$('#logout').onclick=()=>{try{localStorage.removeItem('dd-gh-token')}catch(e){} location.reload();};
+async function load(){
+  const j=await call();
+  if(j.error){ $('#list').innerHTML=`<div class="msg err">${esc(j.error)}</div>`; return; }
+  if(!j.ready){ $('#warn').innerHTML='<div class="msg warn">신청을 보관할 창고(PAPER)가 아직 연결되지 않았습니다. 연결되면 게시판이 열립니다.</div>'; $('#list').innerHTML=''; return; }
+  $('#warn').innerHTML=j.notify?'':'<div class="msg warn">메일 알림 주소(PAPER_NOTIFY_URL)가 아직 설정되지 않아, 새 신청이 와도 메일이 가지 않습니다.</div>';
+  ITEMS=j.items||[]; draw();
+}
+function draw(){
+  const n=s=>ITEMS.filter(x=>!s||x.status===s).length;
+  $('#tabs').innerHTML=[['received','보낼 것 (접수)'],['sent','발송 완료'],['','전체']].map(([k,l])=>`<button data-tab="${k}" class="${TAB===k?'on':''}">${l} ${n(k)}</button>`).join('');
+  document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{TAB=b.dataset.tab;draw();});
+  const l=ITEMS.filter(x=>!TAB||x.status===TAB).sort((a,b)=>TAB==='received'?a.id.localeCompare(b.id):b.id.localeCompare(a.id));
+  $('#list').innerHTML=l.map(x=>`<div class="card" data-id="${x.id}">
+    <div class="hd"><b>『${esc(x.bookTitle)}』 ${x.qty}권 · ${esc(x.name)}</b><span class="st ${x.status}">${x.status==='sent'?'발송 완료':'접수'}</span></div>
+    <dl class="rq"><dt>연락처</dt><dd>${esc(x.phone)}</dd><dt>주소</dt><dd>${x.postcode?'('+esc(x.postcode)+') ':''}${esc(x.address)}</dd><dt>남길 말</dt><dd>${esc(x.memo)||'—'}</dd>
+    <dt>신청</dt><dd>${esc(x.created.replace('T',' ').slice(0,16))}${x.updated?' · 고침 '+esc(x.updated.replace('T',' ').slice(0,16)):''}${x.sentAt?' · 발송 '+esc(x.sentAt.slice(0,10)):''}</dd><dt>번호</dt><dd>${esc(x.id)}</dd></dl>
+    <div class="acts">${x.status==='sent'?'<button data-st="received">접수로 되돌리기</button>':'<button class="main" data-st="sent">발송 완료로 바꾸기</button>'}<button data-copy>주소·연락처 복사</button><button class="del" data-del>지우기</button></div></div>`).join('')||'<p class="note" style="margin-top:16px">해당하는 신청이 없습니다.</p>';
+  document.querySelectorAll('[data-st]').forEach(b=>b.onclick=async()=>{ const id=b.closest('[data-id]').dataset.id; b.disabled=true; const j=await call({action:'status',id,status:b.dataset.st}); if(j.error) alert(j.error); load(); });
+  document.querySelectorAll('[data-del]').forEach(b=>b.onclick=async()=>{ const id=b.closest('[data-id]').dataset.id; if(!confirm('이 신청을 완전히 지울까요? 되돌릴 수 없습니다.')) return; const j=await call({action:'delete',id}); if(j.error) alert(j.error); load(); });
+  document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=()=>{ const x=ITEMS.find(i=>i.id===b.closest('[data-id]').dataset.id); const t=`${x.name} ${x.phone}\n${x.postcode?'('+x.postcode+') ':''}${x.address}`; navigator.clipboard.writeText(t).then(()=>{b.textContent='복사했습니다';setTimeout(()=>b.textContent='주소·연락처 복사',1500);}); });
+}
+start();
+})();
+</script>
+</body>
+</html>

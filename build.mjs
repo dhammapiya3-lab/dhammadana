@@ -305,7 +305,7 @@ put('about/index.html', layout({ title: '소개', nav: 'about', page: 'about', b
 // 출판사
 function pressShell(tab, inner) {
   return `<div class="wrap press"><aside>
-  <nav class="press-nav" aria-label="我無말들 출판사 메뉴"><div class="pn-title">我無말들 출판사</div>${[['/press/', '출판도서', 'all'], ['/press/about/', '출판사 소개', 'about'], ['/press/notice/', '공지사항', 'notice'], ['/press/support/', '후원계좌', 'support']].map(([h, l, k]) => `<a href="${h}"${tab === k ? ' class="on" aria-current="page"' : ''}>${l}</a>`).join('')}</nav>
+  <nav class="press-nav" aria-label="我無말들 출판사 메뉴"><div class="pn-title">我無말들 출판사</div>${[['/press/', '출판도서', 'all'], ['/press/request/', '종이책 보시 신청', 'request'], ['/press/about/', '출판사 소개', 'about'], ['/press/notice/', '공지사항', 'notice'], ['/press/support/', '후원계좌', 'support']].map(([h, l, k]) => `<a href="${h}"${tab === k ? ' class="on" aria-current="page"' : ''}>${l}</a>`).join('')}</nav>
   </aside><section>${inner}</section></div>`;
 }
 const P = S.publisher;
@@ -313,13 +313,24 @@ const P = S.publisher;
 const PAPER = { request: '종이책 보시 신청', soldout: '종이책 품절', ebook: '전자책 Only' };
 function paperBadge(b) {
   const k = b.paper; if (!PAPER[k]) return '';
-  if (k === 'request' && S.paper_request_url) {
-    const u = S.paper_request_url.replace(/\{(title|id)\}/g, (m, x) => encodeURIComponent(x === 'title' ? b.title : b.id));
-    return `<a class="paper paper-request" href="${esc(u)}" target="_blank" rel="noopener" aria-label="『${esc(b.title)}』 종이책 보시 신청 (새 창)">📖 ${PAPER[k]} <span aria-hidden="true">↗</span></a>`;
+  if (k === 'request') {
+    if (S.paper_request_url) { const u = S.paper_request_url.replace(/\{(title|id)\}/g, (m, x) => encodeURIComponent(x === 'title' ? b.title : b.id));
+      return `<a class="paper paper-request" href="${esc(u)}" target="_blank" rel="noopener" aria-label="『${esc(b.title)}』 종이책 보시 신청 (새 창)">📖 ${PAPER[k]} <span aria-hidden="true">↗</span></a>`; }
+    return `<a class="paper paper-request" href="/press/request/?book=${b.id}#write" aria-label="『${esc(b.title)}』 종이책 보시 신청">📖 ${PAPER[k]}</a>`;
   }
   return `<span class="paper paper-${k}">${k === 'request' ? '📖 ' : ''}${PAPER[k]}</span>`;
 }
 put('press/index.html', layout({ title: '我無말들 출판사', nav: 'press', page: 'press', body: pressShell('all', `<div class="grid press-grid">${BOOKS.filter(b => b.press).map(b => `<div class="pbook">${coverCard(b)}${paperBadge(b)}</div>`).join('')}</div>`) }));
+// 종이책 보시 신청 게시판 (비밀글): 동작은 /assets/paper.js, 저장은 functions/api/paper.js
+const PAPER_BOOKS = BOOKS.filter(b => b.press && b.paper === 'request').map(b => ({ id: b.id, title: b.title }));
+put('paper-books.json', JSON.stringify(PAPER_BOOKS));
+put('press/request/index.html', layout({ title: '종이책 보시 신청', nav: 'press', page: 'press', body: pressShell('request', `<div class="pq">
+  <h1 class="h-page">종이책 보시 신청</h1>
+  <p class="muted">我無말들에서 펴낸 책의 종이책을 법보시로 보내 드립니다. 신청 글은 모두 <b>비밀글</b>이라, 받는 분 이름·연락처·주소는 신청하신 분과 출판사만 볼 수 있습니다.</p>
+  <p class="pq-books small">지금 신청할 수 있는 책: ${PAPER_BOOKS.map(b => `『${esc(b.title)}』`).join(', ') || '없음'}</p>
+  <div id="pqRoot" data-books='${esc(JSON.stringify(PAPER_BOOKS))}'><p class="muted">불러오는 중…</p></div>
+  <noscript><p>이 게시판은 자바스크립트를 켜야 쓸 수 있습니다.</p></noscript>
+</div><script src="/assets/paper.js?v=${ver('assets/paper.js')}" defer></script>`) }));
 put('press/about/index.html', layout({ title: '출판사 소개', nav: 'press', page: 'press', body: pressShell('about', `<div class="prose" style="padding-top:0"><h1 class="h-page">${esc(PAGES['press-about'].meta.title)}</h1>${PAGES['press-about'].html}
   <table class="info-tbl"><tr><td>출판사</td><td>${esc(P.name)}</td></tr><tr><td>발행인</td><td>${esc(P.publisher_person)}</td></tr><tr><td>전화</td><td>${esc(P.phone)}</td></tr><tr><td>이메일</td><td>${esc(P.email)}</td></tr><tr><td>출판등록</td><td>${esc(P.registration)}</td></tr>
   <tr><td>라이선스</td><td>CC BY-NC-ND (저작자표시-비영리-변경금지)<br><span class="small muted">출처를 밝히면 누구나 자유롭게 복사하고 나눌 수 있습니다. 다만 판매 등 영리 목적으로 쓰거나 내용을 고쳐 배포할 수는 없습니다.</span> <a class="small" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ko" target="_blank" rel="noopener">자세히 ↗</a></td></tr></table></div>`) }));
