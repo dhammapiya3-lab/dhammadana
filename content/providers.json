@@ -19,17 +19,6 @@
       "note": "theravada.co.kr"
     },
     {
-      "id": "shweoomin-kr",
-      "name": "쉐우민지혜명상센터",
-      "kind": "승원·사원",
-      "urls": [
-        "https://cafe.naver.com/shweoomin"
-      ],
-      "partner": true,
-      "note": "네이버 카페 · cafe.naver.com/shweoomin",
-      "image": "/uploads/partner-shweoomin.jpg"
-    },
-    {
       "id": "theravadabuddhists",
       "name": "한국 테라와다 불자들의 모임 카페",
       "kind": "단체",
@@ -39,6 +28,17 @@
       "partner": true,
       "note": "네이버 카페 · cafe.naver.com/theravadabuddhists",
       "image": "/uploads/partner-theravadabuddhists.jpg"
+    },
+    {
+      "id": "shweoomin-kr",
+      "name": "쉐우민지혜명상센터",
+      "kind": "승원·사원",
+      "urls": [
+        "https://cafe.naver.com/shweoomin"
+      ],
+      "partner": true,
+      "note": "네이버 카페 · cafe.naver.com/shweoomin",
+      "image": "/uploads/partner-shweoomin.jpg"
     }
   ]
 }
