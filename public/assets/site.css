@@ -875,3 +875,4 @@ a.paper-request:hover{filter:brightness(1.08)}
 .r-fig .fig-btn img[src*="DL-0012-band-qr"]{max-width:140px;width:100%;max-height:none}
 .r-fig:has(img[src*="DL-0012-band-qr"]) figcaption{font-size:.78em;word-break:keep-all;line-height:1.5}
 .r-fig .fig-btn img[src*="DL-0012-band-qr"]{aspect-ratio:1/1;object-fit:contain}
+.section-head .head-btns{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
