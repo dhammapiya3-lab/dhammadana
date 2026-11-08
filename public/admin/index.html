@@ -17,6 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
   n.style.cssText = 'position:fixed;right:12px;bottom:12px;z-index:9999;display:flex;gap:6px;font:13px sans-serif';
   n.innerHTML = [['/admin/stats/', '📊 통계'], ['/admin/paper/', '📦 종이책 신청'], ['/admin/upload/', '⬆ 파일 올리기']].map(([h, t]) => `<a href="${h}" style="background:#fff;border:1px solid #ccc;border-radius:999px;padding:5px 10px;color:#5b3a1e;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,.15)">${t}</a>`).join('');
   document.body.appendChild(n);
+  // 왼쪽 아래: 학습 자료실
+  const l = document.createElement('a');
+  l.href = '/study/'; l.textContent = '📚 학습 자료실';
+  l.style.cssText = 'position:fixed;left:12px;bottom:12px;z-index:9999;font:13px sans-serif;background:#fff;border:1px solid #ccc;border-radius:999px;padding:5px 10px;color:#5b3a1e;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,.15)';
+  document.body.appendChild(l);
 });
 </script>
 <script src="https://unpkg.com/@sveltia/cms@0.259.0/dist/sveltia-cms.js"></script>
