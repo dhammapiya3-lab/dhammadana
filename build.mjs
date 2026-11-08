@@ -55,7 +55,7 @@ if (fs.existsSync(C('texts'))) for (const f of fs.readdirSync(C('texts')).filter
   while ((m = re.exec(body))) { if (last) last.text = body.slice(last.start, m.index).trim(); last = { label: m[1].replace(/\s*쪽$/, ''), start: re.lastIndex }; pages.push(last); }
   if (last) last.text = body.slice(last.start).trim();
   if (!pages.length) pages.push({ label: '', text: body.trim() });
-  TEXTS[t.book] = { edition: t.edition || '', pages: pages.map(p => ({ label: p.label, text: p.text })), toc: (t.toc || []).filter(x => x && x.title && x.page).map(x => ({ title: (x.sub ? '  ' : '') + x.title, page: +x.page, label: (pages[+x.page - 1] || {}).label || '', ...(x.at ? { at: String(x.at) } : {}) })) };
+  TEXTS[t.book] = { edition: t.edition || '', pages: pages.map(p => ({ label: p.label, text: p.text })), toc: (t.toc || []).filter(x => x && x.title && x.page).map(x => ({ title: (x.sub ? '  ' : '') + x.title, page: +x.page, label: (pages[+x.page - 1] || {}).label || '', ...(x.at ? { at: String(x.at) } : {}), ...(x.toc_title ? { list: String(x.toc_title) } : {}) })) };
 }
 const isPin = n => (n.pinned === true || n.pinned === 'true') ? 1 : 0;
 const pinTag = n => isPin(n) ? '<span class="pill pin">주요 공지</span> ' : '';
@@ -444,7 +444,7 @@ for (const b of BOOKS) {
       ${!f.length ? `<div class="soon-box">파일을 준비하고 있습니다.<br><span class="small">소식에서 올라오는 대로 알려 드립니다.</span></div>` : ''}</div>
     ${extF.length ? `<div class="small muted" style="margin-bottom:4px">↗ 표시된 파일은 ${esc(extF[0].site)}로 넘어가서 내려받습니다.</div>` : ''}
     <dl class="gb-kv"><dt>판</dt><dd>${esc((e.label_display || '').trim() || (e.label || '').trim() || '—')}</dd>${e.page_count ? `<dt>쪽수</dt><dd>${esc(e.page_count)}쪽</dd>` : ''}${edHistory(b).length ? `<dt>펴낸 이력</dt><dd>${edHistory(b).map(esc).join('<br>')}</dd>` : ''}<dt>라이선스</dt><dd>${licHtml(b.license)}</dd><dt>자료번호</dt><dd>${b.id}</dd></dl></div></aside><div class="d-rest">
-    <div class="labels">${(b.main || []).map(m => `<a class="t" href="/library/?main=${slugT(m)}">${esc(m)}</a>`).join('')}${(b.topics || []).map(x => `<a class="t" href="/library/?topic=${slugT(x)}">${esc(x)}</a>`).join('')}${tr ? `<a href="/library/?trad=${tr.id}">${esc(tr.name)}</a>` : ''}${b.press ? `<a href="/press/">我無말들 출간</a>` : ''}</div>
+    <div class="labels">${b.book_type ? `<a class="t" href="/library/?btype=${encodeURIComponent(b.book_type)}">${esc(b.book_type)}</a>` : ''}${(b.main || []).map(m => `<a class="t" href="/library/?main=${slugT(m)}">${esc(m)}</a>`).join('')}${(b.topics || []).map(x => `<a class="t" href="/library/?topic=${slugT(x)}">${esc(x)}</a>`).join('')}${tr ? `<a href="/library/?trad=${tr.id}">${esc(tr.name)}</a>` : ''}${b.press ? `<a href="/press/">我無말들 출간</a>` : ''}</div>
     ${bookSections(b, e, t)}
     <details class="record"><summary>자료 기록 (출처 · 판 · 라이선스)</summary><div class="record-body">
       <dl class="kv"><dt>자료번호</dt><dd>${b.id}</dd>

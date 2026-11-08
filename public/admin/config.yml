@@ -225,6 +225,7 @@ collections:
           - { name: title, label: 제목 }
           - { name: page, label: 쪽, widget: number, value_type: int }
           - { name: sub, label: 아랫단계, widget: boolean, default: false }
+          - { name: toc_title, label: 책 소개 목차 표기, required: false, hint: "책 소개 화면의 목차에만 다르게 보일 이름(책 '차례'에 인쇄된 표기). 비우면 위 제목을 씁니다." }
           - { name: at, label: 쪽 중간에서 시작, required: false, hint: "한 쪽 안에서 새 장이 시작될 때, 그 장 첫 문단의 앞부분 글을 적습니다 (예: 붓다 사사낭). 보통은 비워 둡니다." }
       - name: images
         label: 그림 올리기
