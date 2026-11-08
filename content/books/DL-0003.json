@@ -9,6 +9,9 @@
   "provider": "amumaldeul",
   "press": true,
   "paper": "soldout",
+  "paper_url": "",
+  "stores": [],
+  "book_type": "",
   "original_title": "ချမ်းသာကိုရှာဖွေခြင်း",
   "original_language": "",
   "original_source": "",
@@ -26,6 +29,7 @@
   "editions": [
     {
       "label": "초판",
+      "label_display": "",
       "current": true,
       "public": true,
       "page_count": 278,
@@ -36,6 +40,7 @@
       "publisher_ebook": "我無말들",
       "isbn_ebook": "979-11-977072-6-1",
       "changes": "",
+      "hide_update": false,
       "pdf": {
         "mode": "file",
         "url": "pdf/DL-0003/DL-0003_초판.pdf",
@@ -90,7 +95,7 @@
       "collection": "我無말들 자체 제작",
       "collected": "",
       "permission_status": "public",
-      "notice": "",
+      "notice": "담마디빠 선원 출판사에서 차후 재출판될 예정입니다.",
       "permission_note": "* 본 도서는 법보시용 도서(비매품)입니다. \n상업적 목적이 아닌 한 무단 복제와 전재를 마음껏 하십시오. \n단, 내용을 임의로 변경해서는 안 됩니다.",
       "permission_image": "",
       "permissions": [
@@ -102,5 +107,6 @@
   "license": "CC BY-NC-ND",
   "added": "2026-11-06",
   "order": 3,
-  "hidden": false
+  "hidden": false,
+  "hide_update": false
 }
