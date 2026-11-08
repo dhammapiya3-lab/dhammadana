@@ -481,7 +481,7 @@ function reflowHtml() {
     const keep = k => !(p.n === c.from && k < (c.k0 || 0)) && !(p.n === c.to && c.kEnd != null && k >= c.kEnd);
     const heads = new Set(R.toc.filter(t => t.page === p.n || t.page === p.n - 1).map(t => headKey(t.title)));
     if (!ps.length) return `<span id="pm-${p.n}"></span>`;
-    return `<span class="pmark${p.label ? '' : ' nolabel'}" id="pm-${p.n}">${p.label ? esc(pageName(p)) : ''}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : isChDup(s, p.n, c) ? ' class="ch-dup"' : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : /^\^\^ /.test(s) ? ' class="r-ctitle"' : /^:: /.test(s) ? ' class="r-center"' : /^● /.test(s) ? ' class="r-bul"' : /^\|\| /.test(s) ? ' class="r-bul-c"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? (p.n === c.from && headKey(s) === headKey(c.title) ? ' class="sub-h ch-dup"' : ' class="sub-h" role="heading" aria-level="4"') : ''}>${fnMark(boldMark(markUl(s.replace(/^## |^\^\^ |^:: |^\|\| /, ''), p.n))).replace(/\n/g, '<br>')}</p>`).join('') || ''}`;
+    return `<span class="pmark${p.label ? '' : ' nolabel'}" id="pm-${p.n}">${p.label ? esc(pageName(p)) : ''}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : isChDup(s, p.n, c, k) ? ' class="ch-dup"' : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : /^\^\^ /.test(s) ? ' class="r-ctitle"' : /^:: /.test(s) ? ' class="r-center"' : /^● /.test(s) ? ' class="r-bul"' : /^\|\| /.test(s) ? ' class="r-bul-c"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? (p.n === c.from && headKey(s) === headKey(c.title) ? ' class="sub-h ch-dup"' : ' class="sub-h" role="heading" aria-level="4"') : ''}>${fnMark(boldMark(markUl(s.replace(/^## |^\^\^ |^:: |^\|\| /, ''), p.n))).replace(/\n/g, '<br>')}</p>`).join('') || ''}`;
   }).join('');
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}" data-ci="${ci - 1}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}" data-ci="${ci + 1}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}</h3></div>` : ''}${body}${nav}</div>`;
@@ -1004,7 +1004,20 @@ function blockHtml(s, n, k) {
 }
 const isFootnote = p => /^\[\^[^\]]+\]:/.test(p);
 // 장 첫 쪽에서 장 제목과 같은 글(소제목·가운데 제목)은 화면에서 숨기고 소리로도 두 번 읽지 않음 — 장 제목으로 통일
-const isChDup = (s, n, c) => !!c && n === c.from && s.length < 160 && !FIG_RE.test(s) && !isFootnote(s) && headKey(s) === headKey(c.title);
+const dupKey = t => headKey(t).replace(/[.,:·\-–—!?]/g, '');
+// 장 첫머리의 문단 몇 개(예: 'Ⅰ' + '껍데기는 버리고…')를 이으면 장 제목과 같아지는지 → 그 문단들의 'n:k' 모음
+function chDups(c) {
+  if (!c || !c.title) return new Set();
+  const ps = paras((R.pages[c.from - 1] || {}).text), want = dupKey(c.title), out = [];
+  let acc = '';
+  for (let k = c.k0 || 0; k < ps.length; k++) {
+    const s = ps[k]; if (FIG_RE.test(s)) continue;
+    const dk = dupKey(s); if (!dk || isFootnote(s) || s.length > 160 || !want.startsWith(acc + dk)) break;
+    acc += dk; out.push(k); if (acc === want) return new Set(out.map(x => c.from + ':' + x));
+  }
+  return new Set();
+}
+const isChDup = (s, n, c, k) => chDups(c).has(n + ':' + k);
 // 표를 소리로 읽을 줄들: 한 줄 = 칸들을 쉼표로 이어서
 function tableLines(s) {
   if (s.trim() === '[[색인]]') return R && R.ix ? ixRows().map(r => r.slice(0, 4).filter(Boolean).join(', ').replace(/\n/g, ' ')) : [];
@@ -1041,7 +1054,7 @@ function speak(fromK = 0, firstText = null) {
         const tt = sayable(c.title.trim().replace(/^([IVXⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]+)\.\s*/, (m, r) => { const v = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10, 'Ⅰ': 1, 'Ⅱ': 2, 'Ⅲ': 3, 'Ⅳ': 4, 'Ⅴ': 5, 'Ⅵ': 6, 'Ⅶ': 7, 'Ⅷ': 8, 'Ⅸ': 9, 'Ⅹ': 10 }[r]; return v ? v + '. ' : m; }), o, true);  // 로마 숫자는 소리로 '3.'
         if (tt) { speakSegs(tt, o, pv, () => { if (!R || !R.speaking) return; setTimeout(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); }); return; }
       }
-      if (c && isChDup(sentences[k], p.n, c)) { k++; next(); return; }
+      if (c && isChDup(sentences[k], p.n, c, k)) { k++; next(); return; }
     }
     R.ttsPos = { i: R.i, k };
     let raw = first && first.trim() ? first : sentences[k]; first = null;
