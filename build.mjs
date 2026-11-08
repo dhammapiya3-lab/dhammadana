@@ -580,12 +580,33 @@ put('dhammatalk/index.html', layout({ title: '법문 바로 듣기', nav: 'dhamm
 
 // 추천·협력
 const partners = PROVIDERS.filter(p => p.partner);
-const linkGroups = [{ name: '협력 단체', desc: '도서관과 함께 법보시 자료를 나누는 단체입니다.', items: partners.map(p => ({ name: p.name, url: (p.urls || [])[0] || '#', note: p.note || '' })) }, ...LINKS];
+// 네이버 카페: 카페 대표 이미지를 빌드할 때 자동으로 가져옴 (관리자 화면의 '대표 이미지 주소'가 있으면 그것을 씀)
+async function cafeImage(url) {
+  const m = String(url || '').match(/cafe\.naver\.com\/([A-Za-z0-9_-]+)/); if (!m) return '';
+  const id = m[1], UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
+  const tries = [`https://cafe.naver.com/${id}`, `https://m.cafe.naver.com/${id}`, `https://apis.naver.com/cafe-web/cafe2/CafeGateInfo.json?cluburl=${id}`];
+  for (const u of tries) {
+    try {
+      const ac = new AbortController(), to = setTimeout(() => ac.abort(), 8000);
+      const r = await fetch(u, { signal: ac.signal, headers: { 'user-agent': UA, 'accept-language': 'ko' } }); clearTimeout(to);
+      if (!r.ok) continue;
+      const t = await r.text();
+      const og = t.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i) || t.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i);
+      let img = og && og[1];
+      if (!img || /og_cafe|cafe_og|static\/common/i.test(img)) { const k = t.match(/"(?:cafeIconImageUrl|cafeIconUrl|iconImageUrl|cafeImageUrl|mobileCafeImageUrl)"\s*:\s*"([^"]+)"/); if (k) img = k[1]; }
+      if (img) { img = img.replace(/\\u002F/g, '/').replace(/\\\//g, '/').replace(/&amp;/g, '&'); if (img.startsWith('//')) img = 'https:' + img; console.log(`[카페 이미지] ${id}: ${img}`); return img; }
+    } catch (e) {}
+  }
+  console.log(`[카페 이미지] ${id}: 찾지 못함`);
+  return '';
+}
+for (const p of partners) p._img = p.image || await cafeImage((p.urls || [])[0]);
+const linkGroups = [{ name: '협력 단체', desc: '도서관과 함께 법보시 자료를 나누는 단체입니다.', items: partners.map(p => ({ name: p.name, url: (p.urls || [])[0] || '#', note: p.note || '', img: p._img || '' })) }, ...LINKS];
 put('links/index.html', layout({
   title: '추천·협력 사이트', nav: 'links', page: 'links', body: `<div class="wrap"><div class="prose" style="padding-bottom:4px"><h1>추천·협력 사이트</h1><p class="muted">함께 법을 나누는 곳들을 종류별로 모았습니다.</p></div>
   ${linkGroups.filter(g => g.items.length).map(g => `<section style="margin-top:30px"><div class="section-head" style="margin-bottom:12px"><h2>${esc(g.name)}</h2><span class="small muted">${g.items.length}곳</span></div>
    <p class="small muted" style="margin:-4px 0 14px">${esc(g.desc || '')}</p>
-   <div class="link-grid">${g.items.map(l => `<a class="link-card" href="${esc(l.url)}" target="_blank" rel="noopener"><img class="lc-ico" src="https://www.google.com/s2/favicons?sz=64&domain=${encodeURIComponent((l.url.match(/\/\/([^/]+)/) || [])[1] || '')}" alt="" width="28" height="28" loading="lazy" onerror="this.style.visibility='hidden'"><b class="lc-name">${esc(l.name)} ↗</b><span class="small muted">${esc(l.note || '')}</span></a>`).join('')}</div></section>`).join('')}</div>`
+   <div class="link-grid">${g.items.map(l => `<a class="link-card${l.img ? ' has-img' : ''}" href="${esc(l.url)}" target="_blank" rel="noopener">${l.img ? `<img class="lc-ico lc-img" src="${esc(l.img)}" alt="" width="56" height="56" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.closest('.link-card').classList.remove('has-img');this.className='lc-ico';this.width=28;this.height=28;this.src='https://www.google.com/s2/favicons?sz=64&domain=${encodeURIComponent((l.url.match(/\/\/([^/]+)/) || [])[1] || '')}'">` : `<img class="lc-ico" src="https://www.google.com/s2/favicons?sz=64&domain=${encodeURIComponent((l.url.match(/\/\/([^/]+)/) || [])[1] || '')}" alt="" width="28" height="28" loading="lazy" onerror="this.style.visibility='hidden'">`}<b class="lc-name">${esc(l.name)} ↗</b><span class="small muted">${esc(l.note || '')}</span></a>`).join('')}</div></section>`).join('')}</div>`
 }));
 
 // 소식

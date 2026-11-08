@@ -405,6 +405,7 @@ collections:
               - { name: urls, label: 사이트 주소들, widget: list, required: false }
               - { name: partner, label: 협력 단체로 보이기, widget: boolean, default: false }
               - { name: note, label: 짧은 설명, required: false }
+              - { name: image, label: 대표 이미지 주소 (선택), required: false, hint: "추천·협력 사이트 카드에 보일 그림 주소. 비워 두면 네이버 카페는 카페 대표 이미지를 자동으로 가져옵니다." }
       - name: permissions
         label: 게시 허락 기록
         file: content/permissions.json
