@@ -50,10 +50,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "none",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "2026년 11월 8일",
+        "mode": "file",
+        "url": "pdf/DL-0012/DL-0012_초판.pdf"
       },
       "pdf_print": {
         "mode": "file",
