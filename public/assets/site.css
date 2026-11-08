@@ -876,3 +876,5 @@ a.paper-request:hover{filter:brightness(1.08)}
 .r-fig:has(img[src*="DL-0012-band-qr"]) figcaption{font-size:.78em;word-break:keep-all;line-height:1.5}
 .r-fig .fig-btn img[src*="DL-0012-band-qr"]{aspect-ratio:1/1;object-fit:contain}
 .section-head .head-btns{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.pill.pin{background:var(--robe);color:var(--paper)}
+.news-list li.pinned{background:var(--robe-soft);border-radius:8px;padding-left:10px;padding-right:10px}

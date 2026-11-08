@@ -3,6 +3,7 @@ title: <자애 수행>, <죽음과 재생 시의 업>, <생각할 거리를 드�
 slugword: viharadana
 date: 2026-11-08
 category: press
+pinned: true
 source: https://blog.naver.com/k3a3n3g3/223192037893
 book: ''
 ---
