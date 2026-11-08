@@ -320,22 +320,22 @@
       "photo": ""
     },
     {
-      "id": "panyavanta",
-      "name": "빤냐완따 스님",
-      "roman": "",
-      "aliases": [],
-      "tradition": "",
-      "bio": "",
-      "photo": ""
-    },
-    {
       "id": "panyavaro",
       "name": "아잔 빤냐와로 스님",
       "roman": "",
       "aliases": [
         "아짠 빤냐와로 스님"
       ],
-      "tradition": "",
+      "tradition": "mahasi",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "panyavanta",
+      "name": "빤냐완따 스님",
+      "roman": "",
+      "aliases": [],
+      "tradition": "mahasi",
       "bio": "",
       "photo": ""
     },
