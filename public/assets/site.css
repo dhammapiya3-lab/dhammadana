@@ -847,3 +847,5 @@ a.paper-request:hover{filter:brightness(1.08)}
 .reflow p.r-bul{padding-left:.95em;text-indent:-.95em}
 .reflow p.r-bul-c{padding-left:.95em;text-indent:0}
 @media (max-width:520px){.reflow p.r-ctitle{font-size:1.4em}}
+.panel .tts-apply{position:sticky;bottom:-16px;margin:12px -16px -16px;padding:10px 16px 14px;background:var(--card);border-top:1px solid var(--line)}
+.panel .tts-apply .tbtn{width:100%;justify-content:center;text-align:center;padding:11px;font-size:15px;background:var(--robe);color:#fff;border-color:transparent}
