@@ -29,7 +29,7 @@ bounds, pending, ptr, miss = [], [], 0, []
 for i, pg in enumerate(doc):
     label = f'{i + first}쪽'
     H = pg.rect.height  # 쪽 번호·머리글(맨 위·맨 아래 짧은 줄)은 뺌
-    t = norm(''.join(b[4] for b in pg.get_text('blocks') if not re.fullmatch(r'\s*\d{1,3}\s*', b[4]) and not ((b[3] < 60 or b[1] > H - 80) and len(b[4].strip()) < 40 and re.search(r'\d', b[4])) and not (b[3] < 30 and re.search(r'[AP]M +페이지', b[4]))))
+    t = norm(''.join(b[4] for b in pg.get_text('blocks') if not re.fullmatch(r'\s*\d{1,3}\s*', b[4]) and not ((b[3] < 60 or b[1] > H - 80) and len(b[4].strip()) < 40 and re.search(r'\d', b[4])) and not (b[3] < 30 and re.search(r'[AP]M +페이지', b[4])) and '.indd' not in b[4]))
     start = None
     if len(t) >= 8:
         cands = [(k, 24) for k in range(0, max(0, min(len(t) - 24, 300)) + 1, 8)] + [(k, 10) for k in range(0, min(len(t) - 10, 300) + 1, 10)]
