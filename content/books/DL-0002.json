@@ -9,6 +9,9 @@
   "provider": "amumaldeul",
   "press": true,
   "paper": "soldout",
+  "paper_url": "",
+  "stores": [],
+  "book_type": "법문집",
   "original_title": "",
   "original_language": "미얀마어",
   "original_source": "* 본서는 4개의 미얀마어 법문을 하나로 묶은 것이다. 1~3장은 3회차에 걸쳐 설하신 음성 법문으로 제목은 『အများ ကောင်းကျိုး ရွက်သည် ပုံ(대중의 이익을 실천하는 모습)』이다. 4~6장은 출판된 법문집으로 제목은 각각 『သာရဏီယတရား(사라니야담마)』, 『ကာလာမသုတ် အနှစ်ချုပ်(깔라마경 요약)』, 『ဘာသာတရားလိုက်နာကျင့်သုံးခြင်း၏ရည်ရွယ်ချက်(8정도를 닦는 목적)』이다.",
@@ -29,6 +32,7 @@
   "editions": [
     {
       "label": "초판",
+      "label_display": "",
       "current": true,
       "public": false,
       "page_count": 308,
@@ -39,6 +43,7 @@
       "publisher_ebook": "",
       "isbn_ebook": "",
       "changes": "",
+      "hide_update": false,
       "pdf": {
         "mode": "none",
         "url": "",
@@ -74,12 +79,12 @@
       "permissions": [
         "amumaldeul-self"
       ],
-      "note": "",
-      "label_display": ""
+      "note": ""
     }
   ],
   "license": "CC BY-NC-ND",
   "added": "2026-11-06",
   "order": 2,
-  "hidden": false
+  "hidden": false,
+  "hide_update": false
 }
