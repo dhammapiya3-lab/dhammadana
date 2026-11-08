@@ -623,7 +623,7 @@ put('news/library/index.html', layout({ title: '도서관 소식', nav: 'news', 
 for (const n of NEWS) {
   const b = n.book ? BOOKS.find(x => x.id === n.book) : null;
   put(`news/${n.slug}/index.html`, layout({
-    title: n.title, nav: 'news', page: 'news', body: `<div class="wrap"><article class="prose"><div class="small muted"><a href="/news/">소식</a> · ${n.category === 'press' ? '我無말들' : '도서관'} · ${esc(n.date || '')}</div><h1>${esc(n.title)}</h1>${n.html}
+    title: n.title, nav: 'news', page: 'news', body: `<div class="wrap"><article class="prose"><div class="small muted news-meta"><a href="/news/">소식</a> · ${n.category === 'press' ? '我無말들' : '도서관'} · ${esc(n.date || '')}</div><h1>${esc(n.title)}</h1>${n.html}
     ${n.source ? `<p><a href="${esc(n.source)}" target="_blank" rel="noopener">원문 보기 ↗</a></p>` : ''}
     ${b ? `<div class="grid" style="max-width:220px;margin-top:20px">${coverCard(b)}</div>` : ''}</article></div>`
   }));
