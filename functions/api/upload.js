@@ -16,7 +16,20 @@ export async function onRequestPost({ request, env }) {
   if (!okKey(key)) return json({ error: '파일 위치가 올바르지 않습니다: ' + key }, 400);
   const ext = key.split('.').pop().toLowerCase();
   const cache = ext === 'webp' ? 'public, max-age=31536000' : ext === 'json' ? 'public, max-age=300' : 'public, max-age=86400';
-  const obj = await env.FILES.put(key, request.body, { httpMetadata: { contentType: TYPES[ext] || 'application/octet-stream', cacheControl: cache } });
+  const meta = { httpMetadata: { contentType: TYPES[ext] || 'application/octet-stream', cacheControl: cache } };
+  // 큰 파일(100MB 넘음)은 여러 조각으로 나눠 올림: create → part(1,2,…) → complete
+  const mp = request.headers.get('x-mp');
+  if (mp) {
+    try {
+      if (mp === 'create') { const u = await env.FILES.createMultipartUpload(key, meta); return json({ ok: true, uploadId: u.uploadId }); }
+      const u = env.FILES.resumeMultipartUpload(key, request.headers.get('x-upload-id') || '');
+      if (mp === 'part') { const n = parseInt(request.headers.get('x-part')); const p = await u.uploadPart(n, await request.arrayBuffer()); return json({ ok: true, partNumber: p.partNumber, etag: p.etag }); }
+      if (mp === 'complete') { const parts = await request.json(); const obj = await u.complete(parts); return json({ ok: true, key, size: obj ? obj.size : null }); }
+      if (mp === 'abort') { await u.abort(); return json({ ok: true }); }
+    } catch (e) { return json({ error: '나눠 올리기 오류: ' + (e && e.message || e) }, 500); }
+    return json({ error: '알 수 없는 요청' }, 400);
+  }
+  const obj = await env.FILES.put(key, request.body, meta);
   return json({ ok: true, key, size: obj ? obj.size : null });
 }
 

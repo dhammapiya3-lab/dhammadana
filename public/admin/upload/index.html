@@ -57,7 +57,7 @@
     </div>
     <div class="card">
       <h2>3. 파일 올리기</h2>
-      <div class="drop" id="drop" tabindex="0" role="button"><b>여기를 눌러 파일을 고르거나</b><br>파일을 끌어다 놓으세요<br><span class="note">한 파일 100MB까지</span></div>
+      <div class="drop" id="drop" tabindex="0" role="button"><b>여기를 눌러 파일을 고르거나</b><br>파일을 끌어다 놓으세요<br><span class="note">큰 파일은 저절로 나눠서 올립니다</span></div>
       <input type="file" id="file" accept=".pdf,.epub" hidden>
       <div id="picked" class="note" style="margin-top:10px"></div>
       <button class="btn" id="go" style="margin-top:12px;width:100%" disabled>올리기</button>
@@ -143,7 +143,7 @@ const kind=()=>document.querySelector('input[name=kind]:checked').value;
 function setFile(f){
   if(!f) return; const ext=(f.name.split('.').pop()||'').toLowerCase();
   if(!['pdf','epub'].includes(ext)){ show('err','PDF나 EPUB 파일만 올릴 수 있습니다.'); return; }
-  if(f.size>100*1024*1024){ show('err','파일이 100MB보다 큽니다. Claude에게 부탁해 주세요.'); return; }
+  if(f.size>2*1024*1024*1024){ show('err','파일이 2GB보다 큽니다.'); return; }
   if(ext==='epub') document.querySelector('input[name=kind][value=epub]').checked=true;
   else if(kind()==='epub') document.querySelector('input[name=kind][value=pdf]').checked=true;
   FILE=f; $('#picked').textContent=`고른 파일: ${f.name} (${(f.size/1048576).toFixed(1)}MB)`; $('#out').innerHTML=''; upd();
@@ -165,13 +165,31 @@ $('#go').onclick=async()=>{
   const key=`${ext}/${BOOK.id}/${BOOK.id}_${label}${{pdf_print:'_인쇄용',pdf_cover:'_인쇄용표지'}[k]||''}.${ext}`;
   $('#go').disabled=true; $('#prog').hidden=false; $('#prog').value=0; show('', '올리는 중…');
   try{
-    await new Promise((res,rej)=>{
+    // 한 번 보내기 (h: 덧붙일 머리글, body: 보낼 것, base·span: 진행 막대 몫)
+    const send=(h,body,base=0,span=100)=>new Promise((res,rej)=>{
       const x=new XMLHttpRequest(); x.open('POST','/api/upload');
       x.setRequestHeader('authorization','Bearer '+TOKEN); x.setRequestHeader('x-key',encodeURIComponent(key));
-      x.upload.onprogress=e=>{ if(e.lengthComputable) $('#prog').value=e.loaded/e.total*100; };
+      for(const k in h) x.setRequestHeader(k,h[k]);
+      x.upload.onprogress=e=>{ if(e.lengthComputable) $('#prog').value=base+e.loaded/e.total*span; };
       x.onload=()=>{ let j={}; try{j=JSON.parse(x.responseText)}catch(e){} x.status===200&&j.ok?res(j):rej(new Error(j.error||('오류 '+x.status))); };
-      x.onerror=()=>rej(new Error('인터넷 연결을 확인해 주세요.')); x.send(FILE);
+      x.onerror=()=>rej(new Error('인터넷 연결을 확인해 주세요.')); x.send(body);
     });
+    const PART=20*1024*1024;
+    if(FILE.size<=90*1024*1024) await send({},FILE);
+    else {  // 큰 파일: 20MB씩 나눠 올림
+      const {uploadId}=await send({'x-mp':'create'},'');
+      const n=Math.ceil(FILE.size/PART), parts=[];
+      try{
+        for(let i=0;i<n;i++){
+          show('', `올리는 중… (${i+1}/${n} 조각)`);
+          let p, err;
+          for(let t=0;t<3&&!p;t++){ try{ p=await send({'x-mp':'part','x-upload-id':uploadId,'x-part':String(i+1)},FILE.slice(i*PART,(i+1)*PART),i/n*100,100/n); }catch(e){ err=e; } }
+          if(!p) throw err;
+          parts.push({partNumber:p.partNumber,etag:p.etag});
+        }
+        await send({'x-mp':'complete','x-upload-id':uploadId,'content-type':'application/json'},JSON.stringify(parts));
+      }catch(e){ try{ await send({'x-mp':'abort','x-upload-id':uploadId},''); }catch(_){} throw e; }
+    }
     $('#prog').value=100; show('', '파일을 올렸습니다. 책 정보에 연결하는 중…');
     // 책 정보 고치기 (최신 내용을 다시 받아서 고침, 겹치면 몇 번 다시 시도)
     let b, e2, done=false;
