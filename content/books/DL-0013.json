@@ -64,10 +64,10 @@
         "url": "pdf/DL-0013/DL-0013_초판_인쇄용표지.pdf"
       },
       "epub": {
-        "mode": "file",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "2026년 11월 8일",
+        "mode": "file",
+        "url": "epub/DL-0013/DL-0013_초판.epub"
       },
       "reader": true,
       "sources": [],
