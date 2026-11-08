@@ -3,7 +3,7 @@
     {
       "id": "mahasi",
       "name": "마하시 사야도",
-      "roman": "Mahāsi Sayādaw",
+      "roman": "Mahāsi Sayadaw",
       "aliases": [],
       "tradition": "mahasi",
       "bio": "",
@@ -12,7 +12,7 @@
     {
       "id": "pandita",
       "name": "빤디따라마 사야도",
-      "roman": "Sayādaw U Paṇḍita",
+      "roman": "Sayadaw U Paṇḍita",
       "aliases": [
         "우 빤디따 사야도"
       ],
@@ -23,7 +23,7 @@
     {
       "id": "chanmyay",
       "name": "찬매 사야도",
-      "roman": "Chanmyay Sayādaw",
+      "roman": "Chanmyay Sayadaw",
       "aliases": [
         "우 자나까",
         "찬메 사야도",
@@ -36,7 +36,7 @@
     {
       "id": "jatila",
       "name": "우 자띨라 사야도",
-      "roman": "Sayādaw U Jaṭila",
+      "roman": "Sayadaw U Jaṭila",
       "aliases": [],
       "tradition": "mahasi",
       "bio": "",
@@ -54,7 +54,7 @@
     {
       "id": "silananda",
       "name": "우 실라난다 사야도",
-      "roman": "Sayādaw U Sīlānanda",
+      "roman": "Sayadaw U Sīlānanda",
       "aliases": [],
       "tradition": "mahasi",
       "bio": "",
@@ -63,7 +63,7 @@
     {
       "id": "saddhamma",
       "name": "삿담마랑시 사야도",
-      "roman": "Saddhammaraṃsi Sayādaw",
+      "roman": "Saddhammaraṃsi Sayadaw",
       "aliases": [
         "삿담마란시 사야도"
       ],
@@ -83,7 +83,7 @@
     {
       "id": "shweoomin",
       "name": "쉐우민 사야도",
-      "roman": "Shwe Oo Min Sayādaw",
+      "roman": "Shwe Oo Min Sayadaw",
       "aliases": [],
       "tradition": "shweoomin",
       "bio": "",
@@ -92,7 +92,7 @@
     {
       "id": "tejaniya",
       "name": "우 떼자니야 사야도",
-      "roman": "Sayādaw U Tejaniya",
+      "roman": "Sayadaw U Tejaniya",
       "aliases": [
         "아신 떼자니야 사야도"
       ],
@@ -141,7 +141,7 @@
     {
       "id": "paauk",
       "name": "파욱 사야도",
-      "roman": "Pa-Auk Sayādaw",
+      "roman": "Pa-Auk Sayadaw",
       "aliases": [],
       "tradition": "paauk",
       "bio": "",
@@ -179,7 +179,7 @@
     {
       "id": "mogok",
       "name": "모곡 사야도",
-      "roman": "Mogok Sayādaw",
+      "roman": "Mogok Sayadaw",
       "aliases": [],
       "tradition": "mogok",
       "bio": "",
@@ -208,7 +208,7 @@
     {
       "id": "mahagandhayon",
       "name": "마하간다용 사야도",
-      "roman": "Mahāgandhāyon Sayādaw",
+      "roman": "Mahāgandhāyon Sayadaw",
       "aliases": [
         "아신 자나까비왐사"
       ],
@@ -226,8 +226,8 @@
         "난다말라비왐사 큰스님"
       ],
       "tradition": "myanmar-etc",
-      "bio": "난다말라비왐사 큰스님Ashin Nandamalabhivamsa\n\n인자하시고 현명하신 최고의 선승이자 학승으로 존경받는 난다말라비왐사 큰스님은 실라난다 큰스님의 뒤를 이어 현재 국제 테라와다 불교대학ITBMU 총장으로 계시면서 세계 여러 나라에서 테라와다불교의 바른 견해를 펼치고 있습니다.\n\n1939년 미얀마 신꾸시 보리수 마을에서 출생한 난다말라비왐사 큰스님은 1995년 미얀마 종교성으로부터 ‘악가마하 간타 와짜까 빤디따’라는 칭호를 받았으며, 2000년에는 ‘악가마하 빤디따(최고의 지혜의 스승)’라는 칭호를 받았습니다.\n\n2003년부터 매년 미얀마를 비롯하여 독일, 프랑스, 영국 등에서 아비담마를 가르치고 계십니다.",
-      "photo": ""
+      "bio": "난다말라비왐사 큰스님Ashin Nandamālābhivaṃsa\n\n인자하시고 현명하신 최고의 선승이자 학승으로 존경받는 난다말라비왐사 큰스님은 실라난다 큰스님의 뒤를 이어 현재 국제 테라와다 불교대학ITBMU 총장으로 계시면서 세계 여러 나라에서 테라와다불교의 바른 견해를 펼치고 있습니다.\n\n1939년 미얀마 신꾸시 보리수 마을에서 출생한 난다말라비왐사 큰스님은 1995년 미얀마 종교성으로부터 ‘악가마하 간타 와짜까 빤디따’라는 칭호를 받았으며, 2000년에는 ‘악가마하 빤디따(최고의 지혜의 스승)’라는 칭호를 받았습니다.\n\n2003년부터 매년 미얀마를 비롯하여 독일, 프랑스, 영국 등에서 아비담마를 가르치고 계십니다.",
+      "photo": "/uploads/teacher-nandamala.jpg"
     },
     {
       "id": "jotika",

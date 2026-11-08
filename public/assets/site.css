@@ -854,3 +854,5 @@ a.paper-request:hover{filter:brightness(1.08)}
 @media (max-width:640px){.reader .panel{left:12px;right:12px;width:auto}}
 .link-card.has-img{grid-template-columns:56px minmax(0,1fr)}
 .link-card .lc-img{width:56px;height:56px;border-radius:14px;object-fit:cover;background:var(--paper-2)}
+.teacher-head:has(.desc){align-items:flex-start}
+.teacher-head:has(.desc) .portrait{margin-top:28px}
