@@ -20,31 +20,6 @@
       ]
     },
     {
-      "id": "paauk",
-      "region": "미얀마",
-      "name": "파욱 전통",
-      "representatives": [
-        "paauk"
-      ]
-    },
-    {
-      "id": "mogok",
-      "region": "미얀마",
-      "name": "모곡 전통",
-      "representatives": [
-        "mogok"
-      ]
-    },
-    {
-      "id": "ledi",
-      "region": "미얀마",
-      "name": "우바킨–고엔카",
-      "representatives": [
-        "bakhin",
-        "goenka"
-      ]
-    },
-    {
       "id": "sunlun-theinngu",
       "region": "미얀마",
       "name": "순룬-떼인구 전통",
@@ -55,6 +30,31 @@
       "region": "미얀마",
       "name": "깐니 전통",
       "representatives": []
+    },
+    {
+      "id": "mogok",
+      "region": "미얀마",
+      "name": "모곡 전통",
+      "representatives": [
+        "mogok"
+      ]
+    },
+    {
+      "id": "paauk",
+      "region": "미얀마",
+      "name": "파욱 전통",
+      "representatives": [
+        "paauk"
+      ]
+    },
+    {
+      "id": "ledi",
+      "region": "미얀마",
+      "name": "우바킨-고엔카 전통",
+      "representatives": [
+        "bakhin",
+        "goenka"
+      ]
     },
     {
       "id": "myanmar-etc",
