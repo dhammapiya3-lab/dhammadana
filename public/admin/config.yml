@@ -256,7 +256,7 @@ collections:
       - { name: slugword, label: 주소용 짧은 영문, hint: "예: new-book (영문·숫자·-만)", pattern: ['^[a-z0-9-]+$', '영문 소문자·숫자·- 만 써 주세요'] }
       - { name: date, label: 날짜, widget: datetime, type: date, format: "YYYY-MM-DD" }
       - { name: category, label: 구분, widget: select, options: [{ label: "도서관 소식", value: library }, { label: "我無말들 소식", value: press }], default: library }
-      - { name: pinned, label: 주요 공지 (목록 맨 위에 고정), widget: boolean, required: false, default: false }
+      - { name: pinned, label: 주요 공지 (我無말들 공지사항 맨 위에 고정), widget: boolean, required: false, default: false }
       - { name: updated, label: 고친 날짜, widget: datetime, type: date, format: "YYYY-MM-DD", required: false, hint: "글을 새로 고쳤을 때 넣으면 목록과 글 위에 '고침 날짜'로 보입니다" }
       - { name: source, label: 원문 주소 (블로그·카페), required: false }
       - name: book

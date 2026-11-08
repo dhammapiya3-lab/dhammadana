@@ -63,7 +63,7 @@ const updTag = n => n.updated && n.updated !== n.date ? ` · 고침 ${esc(n.upda
 const NEWS = fs.readdirSync(C('news')).filter(f => f.endsWith('.md')).map(f => {
   const d = readMd(C('news/' + f));
   return { slug: f.replace(/\.md$/, ''), ...d.meta, html: d.html, text: d.body };
-}).sort((a, b) => (isPin(b) - isPin(a)) || (b.date || '').localeCompare(a.date || ''));
+}).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 const PAGES = Object.fromEntries(fs.readdirSync(C('pages')).filter(f => f.endsWith('.md')).map(f => [f.replace(/\.md$/, ''), readMd(C('pages/' + f))]));
 
 const teacherById = id => TEACHERS.find(t => t.id === id);
@@ -316,7 +316,7 @@ put('index.html', layout({
   <div><div class="section-head"><h2>我無말들 출판사</h2><a class="more" href="/press/">출판사 코너 →</a></div>
     <div class="grid three">${BOOKS.filter(b => b.press).slice(0, 3).map(coverCard).join('')}</div></div>
   <div><div class="section-head"><h2>소식</h2><a class="more" href="/news/">전체 소식 →</a></div>
-    <ul class="news-list">${NEWS.slice(0, 5).map(n => `<li${isPin(n) ? ' class="pinned"' : ''}><div class="dd">${pinTag(n)}<span class="pill ${n.category === 'press' ? 'robe' : ''}">${n.category === 'press' ? '我無말들' : '도서관'}</span> ${esc(n.date || '')}${updTag(n)}</div><a class="tt" href="/news/${n.slug}/">${esc(n.title)}</a></li>`).join('') || '<li class="muted">아직 소식이 없습니다.</li>'}</ul></div>
+    <ul class="news-list">${NEWS.slice(0, 5).map(n => `<li><div class="dd"><span class="pill ${n.category === 'press' ? 'robe' : ''}">${n.category === 'press' ? '我無말들' : '도서관'}</span> ${esc(n.date || '')}${updTag(n)}</div><a class="tt" href="/news/${n.slug}/">${esc(n.title)}</a></li>`).join('') || '<li class="muted">아직 소식이 없습니다.</li>'}</ul></div>
 </section>`
 }));
 
@@ -363,7 +363,7 @@ put('press/request/index.html', layout({ title: '종이책 보시 신청', nav: 
 put('press/about/index.html', layout({ title: '출판사 소개', nav: 'press', page: 'press', body: pressShell('about', `<div class="prose" style="padding-top:0"><h1 class="h-page">${esc(PAGES['press-about'].meta.title)}</h1>${PAGES['press-about'].html}
   <table class="info-tbl"><tr><td>출판사</td><td>${esc(P.name)}</td></tr><tr><td>발행인</td><td>${esc(P.publisher_person)}</td></tr><tr><td>전화</td><td>${esc(P.phone)}</td></tr><tr><td>이메일</td><td>${esc(P.email)}</td></tr><tr><td>출판등록</td><td>${esc(P.registration)}</td></tr>
   <tr><td>라이선스</td><td>CC BY-NC-ND (저작자표시-비영리-변경금지)<br><span class="small muted">출처를 밝히면 누구나 자유롭게 복사하고 나눌 수 있습니다. 다만 판매 등 영리 목적으로 쓰거나 내용을 고쳐 배포할 수는 없습니다.</span> <a class="small" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ko" target="_blank" rel="noopener">자세히 ↗</a></td></tr></table></div>`) }));
-const pn = NEWS.filter(n => n.category === 'press');
+const pn = NEWS.filter(n => n.category === 'press').sort((a, b) => isPin(b) - isPin(a));  // 주요 공지는 출판사 공지사항에서만 맨 위
 put('press/notice/index.html', layout({ title: '공지사항', nav: 'press', page: 'press', body: pressShell('notice', `<h1 class="h-page">공지사항</h1><ul class="news-list">${pn.map(n => `<li${isPin(n) ? ' class="pinned"' : ''}><div class="dd">${pinTag(n)}${esc(n.date || '')}${updTag(n)}</div><a class="tt" href="/news/${n.slug}/">${esc(n.title)}</a></li>`).join('') || '<li class="muted">아직 공지가 없습니다.</li>'}</ul>`) }));
 const sp = PAGES['press-support'];
 put('press/support/index.html', layout({ title: '후원계좌', nav: 'press', page: 'press', body: pressShell('support', `<div class="prose" style="padding-top:0"><h1 class="h-page">${esc(sp.meta.title)}</h1>
@@ -620,7 +620,7 @@ function newsList(cat) {
   const l = NEWS.filter(n => !cat || n.category === cat);
   return `<div class="wrap"><div class="prose" style="padding-bottom:0"><h1>소식</h1></div>
   <div class="tabs">${[['/news/', '전체', ''], ['/news/press/', '我無말들 소식', 'press'], ['/news/library/', '도서관 소식', 'library']].map(([h, lb, k]) => `<a href="${h}" class="${(cat || '') === k ? 'on' : ''}">${lb}</a>`).join('')}</div>
-  <ul class="news-list" style="max-width:760px">${l.map(n => `<li${isPin(n) ? ' class="pinned"' : ''}><div class="dd">${pinTag(n)}<span class="pill ${n.category === 'press' ? 'robe' : ''}">${n.category === 'press' ? '我無말들' : '도서관'}</span> ${esc(n.date || '')}${updTag(n)}</div><a class="tt" href="/news/${n.slug}/">${esc(n.title)}</a></li>`).join('') || '<li class="muted">아직 소식이 없습니다.</li>'}</ul>
+  <ul class="news-list" style="max-width:760px">${l.map(n => `<li><div class="dd"><span class="pill ${n.category === 'press' ? 'robe' : ''}">${n.category === 'press' ? '我無말들' : '도서관'}</span> ${esc(n.date || '')}${updTag(n)}</div><a class="tt" href="/news/${n.slug}/">${esc(n.title)}</a></li>`).join('') || '<li class="muted">아직 소식이 없습니다.</li>'}</ul>
   ${l.length < 6 ? `<div class="more-box"><div class="section-head"><h2>최근 올라온 책</h2><a class="more" href="/library/">도서관 →</a></div><div class="grid">${BOOKS.slice(0, 5).map(coverCard).join('')}</div></div>` : ''}</div>`;
 }
 put('news/index.html', layout({ title: '소식', nav: 'news', page: 'news', body: newsList('') }));
