@@ -50,6 +50,17 @@
       "partner": true,
       "note": "네이버 카페 · cafe.naver.com/dhammadipakorea",
       "image": "/uploads/partner-dhammadipa.jpg"
+    },
+    {
+      "id": "lotuspond",
+      "name": "연방죽 선원",
+      "kind": "승원·사원",
+      "urls": [
+        "https://cafe.daum.net/lotuspond"
+      ],
+      "partner": true,
+      "note": "다음 카페 · cafe.daum.net/lotuspond",
+      "image": "/uploads/partner-lotuspond.jpg"
     }
   ]
 }
