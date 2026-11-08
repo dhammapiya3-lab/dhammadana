@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>사이트 통계 · 관리자</title>
+<link rel="icon" href="/images/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+  body{background:var(--paper)}
+  .up{max-width:880px;margin:0 auto;padding:30px 18px 80px}
+  .up h1{font-size:26px;margin:0 0 4px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-top:14px}
+  .card h2{font-size:17px;margin:0 0 10px}
+  input[type=password]{height:44px;border:1px solid var(--line);border-radius:8px;padding:0 12px;background:var(--paper);font-size:15px;width:100%}
+  .msg{border-radius:8px;padding:12px 14px;font-size:14.5px;margin-top:14px;line-height:1.6}
+  .msg.err{background:#F6E1DC;color:#8A2E1C}
+  .msg.ok{background:var(--leaf-soft);color:var(--ink)}
+  .note{font-size:13px;color:var(--ink-soft);line-height:1.6}
+  .tabs2{display:flex;gap:6px;margin-top:16px;flex-wrap:wrap}
+  .tabs2 button,.acts button{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:7px 14px;cursor:pointer;font:inherit;font-size:14px;color:var(--ink)}
+  .tabs2 button.on,.acts button.main{background:var(--robe);border-color:var(--robe);color:var(--paper)}
+  .acts{display:flex;gap:8px;flex-wrap:wrap}
+  .kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:14px}
+  .kpi div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .kpi b{display:block;font-size:28px;font-variant-numeric:tabular-nums;line-height:1.2}
+  .kpi span{font-size:13px;color:var(--ink-soft)}
+  .chart{display:flex;align-items:flex-end;gap:2px;height:150px;border-bottom:1px solid var(--line);padding-top:8px}
+  .chart .c{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:stretch;height:100%;position:relative;min-width:3px}
+  .chart .v{background:var(--robe-soft);border-radius:3px 3px 0 0}
+  .chart .u{background:var(--robe);border-radius:3px 3px 0 0;position:absolute;left:0;right:0;bottom:0}
+  .axis{display:flex;justify-content:space-between;font-size:12px;color:var(--ink-soft);margin-top:4px}
+  .lg{font-size:13px;color:var(--ink-soft);display:flex;gap:14px;margin-bottom:6px}
+  .lg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+  table{width:100%;border-collapse:collapse;font-size:14.5px}
+  td{padding:7px 4px;border-top:1px solid var(--line);vertical-align:top}
+  td.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums;width:60px}
+  td small{color:var(--ink-soft);word-break:break-all}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media (max-width:640px){.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="up">
+  <p class="note"><a href="/admin/">← 관리자 화면</a> · <a href="/admin/paper/">종이책 신청 관리</a> · <a href="/admin/upload/">책 파일 올리기</a></p>
+  <h1>사이트 통계</h1>
+  <p class="note">방문자는 기기마다 무작위로 만든 번호로만 셉니다(이름·IP·이메일은 저장하지 않음). 관리자 기기의 방문은 세지 않습니다. 같은 사람이 휴대폰과 컴퓨터로 오면 2명으로 셉니다.</p>
+  <div class="card" id="tokCard" hidden>
+    <p>관리자 열쇠(GitHub 토큰)를 넣어 주세요. 관리자 화면에 들어가 있으면 보통 저절로 채워집니다.</p>
+    <input type="password" id="tok" placeholder="ghp_… 또는 github_pat_…">
+    <div class="acts" style="margin-top:10px"><button class="main" id="tokSave">들어가기</button></div>
+    <div id="tokMsg"></div>
+  </div>
+  <div id="main" hidden>
+    <div id="me"></div>
+    <div class="tabs2" id="range"></div>
+    <div id="out"><p class="note" style="margin-top:16px">불러오는 중…</p></div>
+    <p class="note" style="margin-top:24px"><button id="logout" style="border:0;background:none;color:var(--robe);cursor:pointer;padding:0;font:inherit">이 기기에서 열쇠 지우기</button></p>
+  </div>
+</div>
+<script>
+(function(){
+const API='https://api.github.com/repos/dhammapiya3-lab/dhammadana';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const num=n=>Number(n||0).toLocaleString('ko-KR');
+let TOKEN='', DAYS=7;
+function findToken(){
+  try{ const t=localStorage.getItem('dd-gh-token'); if(t) return t; }catch(e){}
+  try{ for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if(!/sveltia/i.test(k)) continue;
+    const v=localStorage.getItem(k); const m=v&&v.match(/"token"\s*:\s*"([^"]+)"/); if(m) return m[1]; } }catch(e){}
+  return '';
+}
+async function check(t){
+  const r=await fetch(API,{headers:{authorization:'Bearer '+t,accept:'application/vnd.github+json'}});
+  if(!r.ok) return false; const j=await r.json(); return !!(j.permissions&&(j.permissions.push||j.permissions.admin));
+}
+// 이 기기는 통계에서 빼기
+const isMe=()=>{ try{ return JSON.parse(localStorage.getItem('dd-notrack'))===true; }catch(e){ return false; } };
+function drawMe(){
+  $('#me').innerHTML=isMe()
+    ?'<div class="msg ok">이 기기의 방문은 통계에 들어가지 않습니다. <button id="meT" style="border:0;background:none;color:var(--robe);cursor:pointer;font:inherit;text-decoration:underline">다시 세기</button></div>'
+    :'<div class="msg err">이 기기의 방문도 지금 통계에 들어갑니다. <button id="meT" style="border:0;background:none;color:var(--robe);cursor:pointer;font:inherit;text-decoration:underline">이 기기는 통계에서 빼기</button></div>';
+  $('#meT').onclick=()=>{ try{ localStorage.setItem('dd-notrack', JSON.stringify(!isMe())); }catch(e){} drawMe(); };
+}
+async function enter(){
+  $('#main').hidden=false;
+  if(!localStorage.getItem('dd-notrack')){ try{ localStorage.setItem('dd-notrack','true'); }catch(e){} }  // 처음 들어온 관리자 기기는 저절로 빼기
+  drawMe(); load();
+}
+async function start(){ TOKEN=findToken(); if(TOKEN&&await check(TOKEN)) enter(); else $('#tokCard').hidden=false; }
+$('#tokSave').onclick=async()=>{ const t=$('#tok').value.trim(); $('#tokMsg').innerHTML='<p class="note">확인 중…</p>';
+  if(await check(t)){ TOKEN=t; try{localStorage.setItem('dd-gh-token',t)}catch(e){} $('#tokCard').hidden=true; enter(); }
+  else $('#tokMsg').innerHTML='<div class="msg err">이 열쇠로는 사이트를 고칠 수 없습니다.</div>'; };
+$('#logout').onclick=()=>{try{localStorage.removeItem('dd-gh-token')}catch(e){} location.reload();};
+
+function drawRange(){
+  $('#range').innerHTML=[[1,'오늘'],[7,'최근 7일'],[30,'최근 30일'],[90,'최근 90일'],[365,'최근 1년']].map(([d,l])=>`<button data-d="${d}" class="${DAYS===d?'on':''}">${l}</button>`).join('');
+  document.querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>{ DAYS=+b.dataset.d; load(); });
+}
+const DEV={m:'휴대폰·태블릿',pc:'컴퓨터'};
+const CT={KR:'한국',US:'미국',JP:'일본',MM:'미얀마',TH:'태국',LK:'스리랑카',CN:'중국',DE:'독일',AU:'호주',CA:'캐나다',GB:'영국',SG:'싱가포르',MY:'말레이시아',VN:'베트남',IN:'인도',TW:'대만',FR:'프랑스',NZ:'뉴질랜드',HK:'홍콩',ID:'인도네시아'};
+function table(rows){ return rows.length?`<table>${rows.join('')}</table>`:'<p class="note">아직 기록이 없습니다.</p>'; }
+async function load(){
+  drawRange(); $('#out').innerHTML='<p class="note" style="margin-top:16px">불러오는 중… (처음에는 조금 걸릴 수 있습니다)</p>';
+  let j={}; try{ const r=await fetch('/api/stats?days='+DAYS,{headers:{authorization:'Bearer '+TOKEN}}); j=await r.json(); }catch(e){ j={error:'연결 오류'}; }
+  if(j.error){ $('#out').innerHTML=`<div class="msg err">${esc(j.error)}</div>`; return; }
+  if(!j.ready){ $('#out').innerHTML='<div class="msg err">통계를 보관할 창고(PAPER)가 연결되지 않았습니다.</div>'; return; }
+  const mx=Math.max(1,...j.days.map(d=>d.views)), md=s=>s.slice(5).replace('-','/');
+  const devT=Object.values(j.dev).reduce((a,b)=>a+b,0)||1;
+  $('#out').innerHTML=`
+  <div class="kpi"><div><b>${num(j.visitors)}</b><span>방문자 (기기 수)</span></div><div><b>${num(j.views)}</b><span>본 쪽 수</span></div>
+    <div><b>${num(j.days[j.days.length-1].visitors)}</b><span>오늘 방문자</span></div><div><b>${num(j.days[j.days.length-1].views)}</b><span>오늘 본 쪽 수</span></div></div>
+  ${j.days.length>1?`<div class="card"><h2>날짜별</h2><div class="lg"><span><i style="background:var(--robe)"></i>방문자</span><span><i style="background:var(--robe-soft)"></i>본 쪽 수</span></div>
+    <div class="chart">${j.days.map(d=>`<div class="c" title="${d.date} · 방문자 ${d.visitors} · 본 쪽 ${d.views}"><div class="v" style="height:${d.views/mx*100}%"></div><div class="u" style="height:${d.visitors/mx*100}%"></div></div>`).join('')}</div>
+    <div class="axis"><span>${md(j.days[0].date)}</span><span>${md(j.days[j.days.length-1].date)}</span></div></div>`:''}
+  <div class="card"><h2>많이 본 쪽</h2>${table(j.pages.map(([p,c,t])=>`<tr><td>${esc(t||p)}<br><small><a href="${esc(p)}" target="_blank" rel="noopener">${esc(p)}</a></small></td><td class="n">${num(c)}</td></tr>`))}</div>
+  <div class="two">
+    <div class="card"><h2>들어온 곳</h2><p class="note">다른 사이트의 링크를 눌러 들어온 경우만 (주소창에 직접 입력·즐겨찾기는 빠짐)</p>${table(j.refs.map(([r,c])=>`<tr><td>${esc(r)}</td><td class="n">${num(c)}</td></tr>`))}</div>
+    <div class="card"><h2>기기 · 나라</h2>${table([...Object.entries(j.dev).map(([k,c])=>`<tr><td>${DEV[k]||esc(k)}</td><td class="n">${Math.round(c/devT*100)}%</td></tr>`),...j.ctry.map(([k,c])=>`<tr><td>${CT[k]||esc(k)}</td><td class="n">${num(c)}</td></tr>`)])}</div>
+  </div>`;
+}
+start();
+})();
+</script>
+</body>
+</html>

@@ -1124,6 +1124,13 @@ if ('speechSynthesis' in window) speechSynthesis.addEventListener && speechSynth
 initHeader();
 initPlayer();
 initPage();
+// 방문 통계: 기기마다 무작위 번호만 (개인정보 없음). 관리자 기기(통계에서 빼기)는 보내지 않음
+try {
+  if (navigator.sendBeacon && location.protocol === 'https:' && !store.get('notrack', false) && !/^\/(admin|api)\b/.test(location.pathname)) {
+    let v = store.get('vid', ''); if (!/^[0-9a-z]{8,24}$/.test(v)) { v = Math.random().toString(36).slice(2, 12) + Date.now().toString(36).slice(-4); store.set('vid', v); }
+    navigator.sendBeacon('/api/hit', JSON.stringify({ p: location.pathname, t: document.title.replace(/\s*·\s*테라와다불교 법보시 도서관$/, ''), r: document.referrer, v }));
+  }
+} catch (e) {}
 })();
 
 /* ---------- 각주 번호를 누르면 각주 내용 보여주기 ---------- */

@@ -8,6 +8,17 @@
 <link href="/admin/config.yml" type="application/yaml" rel="cms-config-url">
 </head>
 <body>
+<script>
+// 관리자 기기는 사이트 통계에서 빼기 (처음 한 번만 — /admin/stats/ 에서 바꿀 수 있음)
+try { if (!localStorage.getItem('dd-notrack')) localStorage.setItem('dd-notrack', 'true'); } catch (e) {}
+// 다른 관리 화면으로 가는 작은 단추
+document.addEventListener('DOMContentLoaded', () => {
+  const n = document.createElement('div');
+  n.style.cssText = 'position:fixed;right:12px;bottom:12px;z-index:9999;display:flex;gap:6px;font:13px sans-serif';
+  n.innerHTML = [['/admin/stats/', '📊 통계'], ['/admin/paper/', '📦 종이책 신청'], ['/admin/upload/', '⬆ 파일 올리기']].map(([h, t]) => `<a href="${h}" style="background:#fff;border:1px solid #ccc;border-radius:999px;padding:5px 10px;color:#5b3a1e;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,.15)">${t}</a>`).join('');
+  document.body.appendChild(n);
+});
+</script>
 <script src="https://unpkg.com/@sveltia/cms@0.259.0/dist/sveltia-cms.js"></script>
 <script>
 // 책 본문 굵은 글씨: 본문 칸에서 글을 고르면 'B 굵게' 단추가 뜹니다 (Ctrl+B / ⌘+B 도 됨). 고른 글을 **글** 로 감싸고, 이미 굵으면 풀어 줍니다.
