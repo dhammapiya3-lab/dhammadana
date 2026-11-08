@@ -54,25 +54,38 @@
         "created": ""
       },
       "pdf_print": {
-        "site": "",
-        "created": "2026년 11월 8일",
         "mode": "file",
-        "url": "pdf/DL-0011/DL-0011_초판_인쇄용.pdf"
+        "url": "pdf/DL-0011/DL-0011_초판_인쇄용.pdf",
+        "site": "",
+        "created": "2015년 11월 12일"
       },
       "pdf_cover": {
-        "site": "",
-        "created": "2026년 11월 8일",
         "mode": "file",
-        "url": "pdf/DL-0011/DL-0011_초판_인쇄용표지.pdf"
+        "url": "pdf/DL-0011/DL-0011_초판_인쇄용표지.pdf",
+        "site": "",
+        "created": "2015년 11월 12일"
       },
       "epub": {
-        "site": "",
-        "created": "2026년 11월 8일",
         "mode": "file",
-        "url": "epub/DL-0011/DL-0011_초판.epub"
+        "url": "epub/DL-0011/DL-0011_초판.epub",
+        "site": "",
+        "created": "2025년 12월 25일"
       },
       "reader": true,
-      "sources": [],
+      "sources": [
+        {
+          "file": "pdf_print",
+          "url": "https://cafe.naver.com/shweoomin/702",
+          "checked": "2026년 11월 8일",
+          "archive": ""
+        },
+        {
+          "file": "epub",
+          "url": "https://blog.naver.com/k3a3n3g3/222720005809",
+          "checked": "2026년 11월 8일",
+          "archive": ""
+        }
+      ],
       "collection": "我無말들 자체 제작",
       "collected": "",
       "permission_status": "confirmed",
