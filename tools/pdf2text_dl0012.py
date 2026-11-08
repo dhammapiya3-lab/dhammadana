@@ -171,6 +171,7 @@ for pi, pg in enumerate(d):
 body = ''.join(f'=== {n}쪽 ===\n' + '\n\n'.join(ps) + '\n\n' for n, ps in pages).rstrip() + '\n'
 body = re.sub(r'\*\*( ?)\*\*', r'\1', body)  # 같은 줄에서만 (줄·문단을 넘는 굵게는 화면에서 깨짐)
 # 서문·일러두기 끝의 서명: 인쇄된 줄 그대로 한 묶음으로
+body = body.replace('![#자애통찰명상원 밴드 초대 QR](/uploads/DL-0012-band-qr1.jpg)\n\n![#100일 아침명상 동참 초대 QR](/uploads/DL-0012-band-qr2.jpg)\n\n자애통찰명상원 밴드 초대코드 100일 아침명상 동참 초대코드\n\n', '![자애통찰명상원 밴드 초대코드](/uploads/DL-0012-band-qr1.jpg)\n\n![100일 아침명상 동참 초대코드](/uploads/DL-0012-band-qr2.jpg)\n\n')  # QR 두 개: 인쇄된 설명을 그림 밑에, 화면에서 나란히
 body = body.replace('**수지와 스님(Venerable Sujīva)**\n\n**1985년 6월**', '**수지와 스님(Venerable Sujīva)**\n**1985년 6월**')
 body = body.replace('**1992년 11월 2일아신 자나까비왐사**\n\n**찬매 사야도**', '**1992년 11월 2일**\n**아신 자나까비왐사**\n**찬매 사야도**')  # 이어진 굵은 글은 하나로
 body = body.replace('\n\n**아신 자나까비왐사 사야도의 출판허가서**\n\n', '\n\n:: **아신 자나까비왐사 사야도의 출판허가서**\n\n')  # 가운데 (운영자 요청)
