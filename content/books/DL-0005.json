@@ -9,12 +9,14 @@
   "provider": "amumaldeul",
   "press": true,
   "paper": "request",
+  "paper_url": "",
   "stores": [
     {
       "name": "",
       "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=305352325"
     }
   ],
+  "book_type": "잠언집",
   "original_title": "သိစရာ၊ တွေးစရာ",
   "original_language": "미얀마어",
   "original_source": "",
@@ -41,6 +43,7 @@
       "publisher_ebook": "我無말들",
       "isbn_ebook": "979-11-980922-0-5",
       "changes": "",
+      "hide_update": false,
       "pdf": {
         "mode": "file",
         "url": "pdf/DL-0005/DL-0005_개정3판.pdf",
@@ -89,5 +92,6 @@
   "license": "CC BY-NC-ND",
   "added": "2026-11-06",
   "order": 5,
-  "hidden": false
+  "hidden": false,
+  "hide_update": false
 }
