@@ -176,6 +176,9 @@ function dlName(b, e, kind) {
   return safeName(`${b.title}${tag}${d ? '_' + d : ''}`) + '.' + ext;
 }
 const hasText = b => { const e = curEd(b), t = TEXTS[b.id]; return !!(t && (!t.edition || t.edition === e.label)); };
+// 법보시 도서관에 보일 책: 온라인 읽기나 내려받을 파일이 하나라도 있는 책 (없는 책은 我無말들 출판사 쪽에만)
+const LIB_OK = b => hasText(b) || formats(b).length > 0;
+const LIB = () => BOOKS.filter(LIB_OK);
 const readerManifest = b => { const e = curEd(b); if (hasText(b)) return `/texts/${b.id}.json`; return e.reader ? fileUrl(`reader/${b.id}/${encodeURIComponent(e.label || 'ed')}/manifest.json`) : ''; };
 
 // 창고(R2)에서 지워진 파일은 단추를 숨김: 사이트를 만들 때 파일이 실제로 있는지 확인
@@ -278,10 +281,10 @@ function coverCard(b) {
   <div class="t">${esc(b.title)}</div><div class="a">${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>
   ${f.length ? `<div class="fmt">${uniqK(f).map(x => `<span>${x.k}${x.ext ? ' ↗' : ''}</span>`).join('')}</div>` : ''}</a>`;
 }
-const countTopic = t => BOOKS.filter(b => (b.topics || []).includes(t)).length;
-const countMain = t => BOOKS.filter(b => (b.main || []).includes(t)).length;
-const countTeacher = id => BOOKS.filter(b => b.teacher === id).length;
-const countTrad = id => BOOKS.filter(b => b.teacher && tradOfTeacher(b.teacher)?.id === id).length;
+const countTopic = t => LIB().filter(b => (b.topics || []).includes(t)).length;
+const countMain = t => LIB().filter(b => (b.main || []).includes(t)).length;
+const countTeacher = id => LIB().filter(b => b.teacher === id).length;
+const countTrad = id => LIB().filter(b => b.teacher && tradOfTeacher(b.teacher)?.id === id).length;
 
 /* ---------- 페이지 ---------- */
 const pages = {};
@@ -290,11 +293,11 @@ const put = (p, html) => { pages[p] = html; };
 // 첫 화면
 function updatesList() {
   const rows = [];
-  for (const b of BOOKS) for (const e of b.editions || []) {
+  for (const b of LIB()) for (const e of b.editions || []) {
     const fcd = e => ['pdf', 'epub', 'pdf_print', 'pdf_cover'].map(k => (e[k] || {}).created).find(Boolean) || e.file_created || e.file_created_print;
     if (e.changes && !e.hide_update && (fcd(e) || e.published)) rows.push({ d: fcd(e) || e.published, b, c: `${e.label} · ${e.changes}` });
   }
-  for (const b of BOOKS) if (!b.hide_update) rows.push({ d: b.added || '', b, c: '등록' });
+  for (const b of LIB()) if (!b.hide_update) rows.push({ d: b.added || '', b, c: '등록' });
   return rows.sort((a, b) => b.d.localeCompare(a.d)).slice(0, 8);
 }
 put('index.html', layout({
@@ -373,7 +376,7 @@ put('press/support/index.html', layout({ title: '후원계좌', nav: 'press', pa
 
 // 도서관
 const BTYPES = ['경전', '예불집', '법문집', '해설서', '잠언집', '수행기', '사전'];
-const LANGS = ['빠알리어', '영어', '미얀마어', '태국어', '싱할라어', '한국어', '기타'].filter(l => BOOKS.some(b => b.original_language === l));
+const LANGS = ['빠알리어', '영어', '미얀마어', '태국어', '싱할라어', '한국어', '기타'].filter(l => LIB().some(b => b.original_language === l));
 function libraryBody() {
   const chk = (set, val, label, n, extra = '') => `<label class="${n === 0 ? 'zero' : ''}"><input type="checkbox" data-f="${set}" value="${esc(val)}">${label}${extra}<span class="n">${n}</span></label>`;
   let g = '', trad = '';
@@ -390,14 +393,14 @@ function libraryBody() {
     <h3>수행전통 · 스승</h3>${trad}
     <label class="small muted" style="margin-top:6px"><input type="checkbox" id="showEmpty">준비 중인 전통도 보기</label>
     <h3>주제</h3>${topics}
-    <h3>책 형식</h3>${BTYPES.map(k => chk('btype', k, esc(k), BOOKS.filter(b => b.book_type === k).length)).join('')}
-    ${LANGS.length ? `<h3>원서의 언어</h3>${LANGS.map(l => chk('lang', l, esc(l), BOOKS.filter(b => b.original_language === l).length)).join('')}` : ''}
-    <h3>형식</h3>${['PDF', 'EPUB', '온라인 읽기'].map(f => chk('fmt', f, f, BOOKS.filter(b => formats(b).some(x => x.k === f)).length)).join('')}
+    <h3>책 형식</h3>${BTYPES.map(k => chk('btype', k, esc(k), LIB().filter(b => b.book_type === k).length)).join('')}
+    ${LANGS.length ? `<h3>원서의 언어</h3>${LANGS.map(l => chk('lang', l, esc(l), LIB().filter(b => b.original_language === l).length)).join('')}` : ''}
+    <h3>형식</h3>${['PDF', 'EPUB', '온라인 읽기'].map(f => chk('fmt', f, f, LIB().filter(b => formats(b).some(x => x.k === f)).length)).join('')}
   </div></details>
-  <section><div class="toolbar"><div><h1 class="h-page">법보시 도서관</h1><div class="muted small">자료 <span id="libCount">${BOOKS.length}</span>권</div></div>
+  <section><div class="toolbar"><div><h1 class="h-page">법보시 도서관</h1><div class="muted small">자료 <span id="libCount">${LIB().length}</span>권</div></div>
     <label class="small">정렬 <select id="sort"><option value="new">최근 등록순</option><option value="title">제목 가나다순</option></select></label></div>
     <div class="active-filters" id="activeFilters"></div>
-    <div class="grid" id="libGrid">${BOOKS.map(coverCard).join('')}</div>
+    <div class="grid" id="libGrid">${LIB().map(coverCard).join('')}</div>
     <p class="muted" id="libEmpty" hidden>조건에 맞는 자료가 아직 없습니다. 찾아보기를 줄여 보세요.</p>
   </section></div>`;
 }
@@ -407,7 +410,7 @@ put('library/index.html', layout({ title: '법보시 도서관', nav: 'library',
 for (const b of BOOKS) {
   const e = curEd(b), f = formats(b), t = teacherById(b.teacher), tr = b.teacher ? tradOfTeacher(b.teacher) : null;
   const prov = providerById(b.provider);
-  const same = BOOKS.filter(x => x !== b && b.teacher && x.teacher === b.teacher);
+  const same = LIB().filter(x => x !== b && b.teacher && x.teacher === b.teacher);
   const perms = (e.permissions || []).map(permById).filter(Boolean);
   const permLabel = e.permission_status === 'pending' ? '대기 중' : e.permission_status === 'public' ? '공개 배포됨' : e.permission_status === 'confirmed' || perms.length ? '허락 확인됨' : '';
   const pubEds = (b.editions || []);
@@ -471,7 +474,7 @@ for (const b of BOOKS) {
 
 // 스승
 for (const t of TEACHERS) {
-  const tr = tradById(t.tradition), list = BOOKS.filter(b => b.teacher === t.id), trans = BOOKS.filter(b => b.translator && b.translator.includes(t.name.replace(/ (스님|사야도)$/, '')) && b.teacher !== t.id);
+  const tr = tradById(t.tradition), list = LIB().filter(b => b.teacher === t.id), trans = LIB().filter(b => b.translator && b.translator.includes(t.name.replace(/ (스님|사야도)$/, '')) && b.teacher !== t.id);
   const pl = PLAYLISTS.find(p => p.teacher === t.id);
   put(`teacher/${t.id}/index.html`, layout({
     title: t.name, nav: 'library', page: 'teacher', body: `<div class="wrap"><div class="teacher-head"><div class="portrait" aria-hidden="true">${t.photo ? `<img src="${esc(t.photo)}" alt="">` : esc(t.name[0])}</div>
@@ -621,7 +624,7 @@ function newsList(cat) {
   return `<div class="wrap"><div class="prose" style="padding-bottom:0"><h1>소식</h1></div>
   <div class="tabs">${[['/news/', '전체', ''], ['/news/press/', '我無말들 소식', 'press'], ['/news/library/', '도서관 소식', 'library']].map(([h, lb, k]) => `<a href="${h}" class="${(cat || '') === k ? 'on' : ''}">${lb}</a>`).join('')}</div>
   <ul class="news-list" style="max-width:760px">${l.map(n => `<li><div class="dd"><span class="pill ${n.category === 'press' ? 'robe' : ''}">${n.category === 'press' ? '我無말들' : '도서관'}</span> ${esc(n.date || '')}${updTag(n)}</div><a class="tt" href="/news/${n.slug}/">${esc(n.title)}</a></li>`).join('') || '<li class="muted">아직 소식이 없습니다.</li>'}</ul>
-  ${l.length < 6 ? `<div class="more-box"><div class="section-head"><h2>최근 올라온 책</h2><a class="more" href="/library/">도서관 →</a></div><div class="grid">${BOOKS.slice(0, 5).map(coverCard).join('')}</div></div>` : ''}</div>`;
+  ${l.length < 6 ? `<div class="more-box"><div class="section-head"><h2>최근 올라온 책</h2><a class="more" href="/library/">도서관 →</a></div><div class="grid">${LIB().slice(0, 5).map(coverCard).join('')}</div></div>` : ''}</div>`;
 }
 put('news/index.html', layout({ title: '소식', nav: 'news', page: 'news', body: newsList('') }));
 put('news/press/index.html', layout({ title: '我無말들 소식', nav: 'news', page: 'news', body: newsList('press') }));
@@ -655,7 +658,7 @@ for (const [p, html] of Object.entries(pages)) {
 const site = {
   files_base: S.files_base,
   variants: VARIANTS,
-  books: BOOKS.map(b => {
+  books: LIB().map(b => {
     const t = teacherById(b.teacher), tr = b.teacher ? tradOfTeacher(b.teacher) : null;
     return { id: b.id, title: b.title, subtitle: b.subtitle || '', orig: b.original_title || '', lang: b.original_language || '', cover: b.cover || '', byline: b.byline, tr: b.translator || '', teacher: t ? t.name : '', teacherRoman: t ? t.roman : '', teacherAliases: t ? t.aliases : [], tradition: tr ? tr.name : '', topics: b.topics || [], main: b.main || [], isbn: (b.editions || []).flatMap(x => [x.isbn, x.isbn_ebook]).filter(Boolean), manifest: readerManifest(b), desc: (b.description || '').slice(0, 300) };
   }),
