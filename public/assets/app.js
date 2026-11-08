@@ -481,7 +481,7 @@ function reflowHtml() {
     const keep = k => !(p.n === c.from && k < (c.k0 || 0)) && !(p.n === c.to && c.kEnd != null && k >= c.kEnd);
     const heads = new Set(R.toc.filter(t => t.page === p.n || t.page === p.n - 1).map(t => headKey(t.title)));
     if (!ps.length) return `<span id="pm-${p.n}"></span>`;
-    return `<span class="pmark${p.label ? '' : ' nolabel'}" id="pm-${p.n}">${p.label ? esc(pageName(p)) : ''}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : /^\^\^ /.test(s) ? ' class="r-ctitle"' : /^:: /.test(s) ? ' class="r-center"' : /^● /.test(s) ? ' class="r-bul"' : /^\|\| /.test(s) ? ' class="r-bul-c"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? (p.n === c.from && headKey(s) === headKey(c.title) ? ' class="sub-h ch-dup"' : ' class="sub-h" role="heading" aria-level="4"') : ''}>${fnMark(boldMark(markUl(s.replace(/^## |^\^\^ |^:: |^\|\| /, ''), p.n))).replace(/\n/g, '<br>')}</p>`).join('') || ''}`;
+    return `<span class="pmark${p.label ? '' : ' nolabel'}" id="pm-${p.n}">${p.label ? esc(pageName(p)) : ''}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : isChDup(s, p.n, c) ? ' class="ch-dup"' : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : /^\^\^ /.test(s) ? ' class="r-ctitle"' : /^:: /.test(s) ? ' class="r-center"' : /^● /.test(s) ? ' class="r-bul"' : /^\|\| /.test(s) ? ' class="r-bul-c"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? (p.n === c.from && headKey(s) === headKey(c.title) ? ' class="sub-h ch-dup"' : ' class="sub-h" role="heading" aria-level="4"') : ''}>${fnMark(boldMark(markUl(s.replace(/^## |^\^\^ |^:: |^\|\| /, ''), p.n))).replace(/\n/g, '<br>')}</p>`).join('') || ''}`;
   }).join('');
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}" data-ci="${ci - 1}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}" data-ci="${ci + 1}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}</h3></div>` : ''}${body}${nav}</div>`;
@@ -1003,6 +1003,8 @@ function blockHtml(s, n, k) {
   return null;
 }
 const isFootnote = p => /^\[\^[^\]]+\]:/.test(p);
+// 장 첫 쪽에서 장 제목과 같은 글(소제목·가운데 제목)은 화면에서 숨기고 소리로도 두 번 읽지 않음 — 장 제목으로 통일
+const isChDup = (s, n, c) => !!c && n === c.from && s.length < 160 && !FIG_RE.test(s) && !isFootnote(s) && headKey(s) === headKey(c.title);
 // 표를 소리로 읽을 줄들: 한 줄 = 칸들을 쉼표로 이어서
 function tableLines(s) {
   if (s.trim() === '[[색인]]') return R && R.ix ? ixRows().map(r => r.slice(0, 4).filter(Boolean).join(', ').replace(/\n/g, ' ')) : [];
@@ -1032,6 +1034,15 @@ function speak(fromK = 0, firstText = null) {
       R.i++; renderReader(); speak(); return;
     }
     if (R.ttsSkip && R.ttsSkip.n === p.n && R.ttsSkip.k === k) { R.ttsSkip = null; k++; next(); return; }  // 앞 쪽 끝에서 이미 이어 읽은 문단
+    { // 장이 시작하는 곳: 장 제목을 먼저 읽고, 본문의 같은 제목 문단은 건너뜀
+      const cs = chapters(), ci = chapterOf(R.i + 1), c = cs[ci];
+      if (c && c.title && p.n === c.from && k === (c.k0 || 0) && R.ttsTitled !== ci + ':' + R.id) {
+        R.ttsTitled = ci + ':' + R.id; R.ttsPos = { i: R.i, k };
+        const tt = sayable(c.title.trim().replace(/^([IVXⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]+)\.\s*/, (m, r) => { const v = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10, 'Ⅰ': 1, 'Ⅱ': 2, 'Ⅲ': 3, 'Ⅳ': 4, 'Ⅴ': 5, 'Ⅵ': 6, 'Ⅶ': 7, 'Ⅷ': 8, 'Ⅸ': 9, 'Ⅹ': 10 }[r]; return v ? v + '. ' : m; }), o, true);  // 로마 숫자는 소리로 '3.'
+        if (tt) { speakSegs(tt, o, pv, () => { if (!R || !R.speaking) return; setTimeout(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); }); return; }
+      }
+      if (c && isChDup(sentences[k], p.n, c)) { k++; next(); return; }
+    }
     R.ttsPos = { i: R.i, k };
     let raw = first && first.trim() ? first : sentences[k]; first = null;
     // 쪽 끝에서 문장이 끊긴 문단은 다음 쪽 첫 문단과 이어서 한 번에 읽기 (끊어 읽으면 낱말이 뭉개짐)
@@ -1062,7 +1073,7 @@ document.addEventListener('visibilitychange', () => {
     toast('멈춘 곳부터 이어서 읽습니다'); speak(R.ttsPos.k);
   }, 600);
 });
-function stopSpeak(rerender) { try { speechSynthesis.cancel(); } catch (e) {} wake(false, 'tts'); if (R) { R.ttsLocked = false; const was = R.speaking; R.speaking = false; if (rerender && was) renderReader(); } }
+function stopSpeak(rerender) { try { speechSynthesis.cancel(); } catch (e) {} wake(false, 'tts'); if (R) { R.ttsTitled = null; R.ttsLocked = false; const was = R.speaking; R.speaking = false; if (rerender && was) renderReader(); } }
 document.addEventListener('keydown', e => {
   if (!R || e.target.matches('input,select,textarea')) return;
   if (R.ttsLocked && e.key !== 'Tab') { if ([' ', 'ArrowRight', 'ArrowLeft', 'Escape'].includes(e.key)) { e.preventDefault(); toast('듣기가 잠겨 있습니다'); } return; }
