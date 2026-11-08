@@ -859,3 +859,4 @@ a.paper-request:hover{filter:brightness(1.08)}
 .link-card .small{overflow-wrap:anywhere}
 .lang-row+.lang-row{margin-top:18px}
 .lang-h{font-size:14px;color:var(--ink-soft);margin:0 0 8px;font-weight:600}
+.link-card .lc-img{border:1px solid var(--line)}
