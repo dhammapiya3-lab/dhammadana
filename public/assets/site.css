@@ -849,3 +849,6 @@ a.paper-request:hover{filter:brightness(1.08)}
 @media (max-width:520px){.reflow p.r-ctitle{font-size:1.4em}}
 .panel .tts-apply{position:sticky;bottom:-16px;margin:12px -16px -16px;padding:10px 16px 14px;background:var(--card);border-top:1px solid var(--line)}
 .panel .tts-apply .tbtn{width:100%;justify-content:center;text-align:center;padding:11px;font-size:15px;background:var(--robe);color:#fff;border-color:transparent}
+.reader .panel{top:var(--ptop,58px);max-height:calc(100dvh - var(--ptop,58px) - 84px)}
+.panel .p-close{position:sticky;top:-6px;float:right;z-index:2;margin:-8px -8px 4px 8px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:16px;line-height:1;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+@media (max-width:640px){.reader .panel{left:12px;right:12px;width:auto}}

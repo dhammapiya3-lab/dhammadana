@@ -487,6 +487,11 @@ function reflowHtml() {
   return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}</h3></div>` : ''}${body}${nav}</div>`;
 }
 function tocFor(n) { let cur = null; for (const t of R.toc) if (t.page <= n) cur = t; return cur; }
+function placePanels(el) {
+  el = el || $('#reader'); if (!el) return; const t = $('.r-top', el); if (!t) return;
+  el.style.setProperty('--ptop', Math.round(t.getBoundingClientRect().bottom + 6) + 'px');
+}
+window.addEventListener('resize', () => placePanels());
 function renderReader() {
   let el = $('#reader');
   if (!el) { el = document.createElement('div'); el.id = 'reader'; el.className = 'reader'; el.setAttribute('role', 'dialog'); el.setAttribute('aria-label', '읽기 화면'); document.body.appendChild(el); document.body.style.overflow = 'hidden'; }
@@ -577,6 +582,9 @@ function bindReader() {
   bindIx();
   const ho = $('#hlOff'); if (ho) ho.onclick = () => { R.hl = []; history.replaceState(null, '', location.pathname); renderReader(); };
   
+  // 설정·목록 창: 위 단추 줄 바로 아래에 열리게 하고(단추를 가리지 않게), 창마다 ✕ 닫기 단추
+  placePanels(el);
+  $$('.panel', el).forEach(p => { if (p.querySelector(':scope > .p-close')) return; const x = document.createElement('button'); x.className = 'p-close'; x.type = 'button'; x.setAttribute('aria-label', '닫기'); x.textContent = '✕'; x.onclick = () => p.classList.remove('open'); p.prepend(x); });
   $$('[data-panel]', el).forEach(b => b.onclick = () => { const p = $('#p-' + b.dataset.panel); const o = p.classList.contains('open'); $$('.panel', el).forEach(x => x.classList.remove('open')); if (!o) p.classList.add('open'); });
   $$('[data-go]', el).forEach(b => b.onclick = () => go(+b.dataset.go, b.dataset.ci != null ? +b.dataset.ci : null));
   $$('[data-zoom]', el).forEach(b => b.onclick = () => { R.zoom = Math.max(.75, Math.min(2.5, +(R.zoom + (+b.dataset.zoom) * .25).toFixed(2))); store.set('rzoom', R.zoom); renderReader(); reopen('p-font'); });
