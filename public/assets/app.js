@@ -234,9 +234,9 @@ async function runSearch() {
     if ((scope === 'all' || scope === 'body') && b.manifest) {
       try {
         const m = await manifest(b.manifest);
-        const hits = (m.pages || []).map((p, i) => ({ ...p, n: i + 1 })).filter(p => p.text && has(unB(p.text)));
+        const hits = (m.pages || []).map((p, i) => ({ ...p, n: i + 1 })).filter(p => p.text && has(plainT(p.text)));
         if (hits.some(p => isToc(p.text)) && scope === 'all') why.push('목차');
-        body = hits.filter(p => !isToc(p.text)).slice(0, 60).map(p => ({ n: p.n, label: p.label ? p.label + '쪽' : p.n + '번째', s: snippet(unB(p.text).replace(/\s+/g, ' '), terms) }));
+        body = hits.filter(p => !isToc(p.text)).slice(0, 60).map(p => ({ n: p.n, label: p.label ? p.label + '쪽' : p.n + '번째', s: snippet(plainT(p.text).replace(/\s+/g, ' '), terms) }));
         // 색인 표 속 낱말 (제1부 기준, 같은 낱말이 네 부에 되풀이되므로 한 번만)
         if (m.index && m.index.parts && m.index.parts[0]) {
           const ixPage = (m.pages || []).findIndex(p => /\[\[색인\]\]/.test(p.text || '')) + 1;
@@ -563,7 +563,7 @@ function bindReader() {
     const hits = [];
     for (const pgx of R.pages) {
       const ps = paras(pgx.text);
-      ps.forEach((t, k) => { if (terms.some(x => norm(unB(t)).includes(x))) hits.push({ n: pgx.n, k, s: snippet(unB(t), terms) || unB(t).slice(0, 80) }); });
+      ps.forEach((t, k) => { if (terms.some(x => norm(plainT(t)).includes(x))) hits.push({ n: pgx.n, k, s: snippet(plainT(t), terms) || plainT(t).slice(0, 80) }); });
     }
     const ch = n => { const c = chapters()[chapterOf(n)]; return c && c.title ? c.title : ''; };
     R.findTerms = terms;
@@ -947,6 +947,8 @@ const fnMark = h => h.replace(/^\[\^([^\]]+)\]:\s*/, '<span class="fn-no" data-f
 const isHead = t => /^## /.test(t);
 // **굵은 글씨**: 관리자 화면 본문에서 ** 로 감싼 곳 (화면에서는 굵게, 듣기·찾기·밑줄에서는 ** 를 뺌)
 const unB = s => String(s || '').replace(/\*\*|==/g, '').replace(/^(?:\^\^|::|\|\|) /gm, '');
+// 검색 결과에 보일 글: 그림 주소·## ·각주 표시 같은 내부 부호를 뺌
+const plainT = s => unB(s).replace(/!\[[^\]]*\]\([^)]*\)/g, ' ').replace(/^#{1,6} /gm, '').replace(/\[\^\d+\]:?\s?/g, ' ').replace(/\[\[[^\]]*\]\]/g, ' ');
 // **굵게**, ==색 강조(인쇄본·전자책의 하늘색 글자)==
 const boldMark = h => h.replace(/\*\*(?!\s|\*\*)([\s\S]*?[^\s*])\*\*/g, '<strong>$1</strong>').replace(/==(?=\S)([\s\S]*?\S)==/g, '<span class="hl">$1</span>');
 const headKey = t => unB(t).replace(/^## /, '').replace(/\[\^[^\]]+\]/g, '').replace(/\([^)]*\)/g, '').replace(/[\s‘’'"“”]/g, '').replace(/^[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩIVX]+\./, m => m.replace(/[IVX]+/g, x => ({I:'Ⅰ',II:'Ⅱ',III:'Ⅲ',IV:'Ⅳ',V:'Ⅴ',VI:'Ⅵ',VII:'Ⅶ',VIII:'Ⅷ',IX:'Ⅸ',X:'Ⅹ'}[x] || x)));
