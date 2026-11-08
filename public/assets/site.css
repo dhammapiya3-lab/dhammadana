@@ -897,3 +897,5 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .acct-code b{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:22px;letter-spacing:.06em;background:var(--paper);border:1px dashed var(--robe);border-radius:8px;padding:8px 14px}
 .acct details.acct-more{border-top:1px solid var(--line);padding:10px 0}
 .acct details.acct-more summary{cursor:pointer;font-weight:600}
+
+.acct-warn { margin: 10px 0 4px; padding: 10px 14px; border: 1px solid #e0a23b; background: rgba(224,162,59,.13); color: inherit; border-radius: 8px; font-size: .95em; line-height: 1.6; }

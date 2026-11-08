@@ -1209,7 +1209,7 @@ function initAccount() {
   const q = new URLSearchParams(location.search), rt = q.get('reset');
   const msg = (t, err) => `<div class="acct-msg${err ? ' err' : ''}">${esc(t)}</div>`;
   const codeBox = c => `<div class="acct-code"><b>${esc(c)}</b><button class="tbtn sm" data-copy="${esc(c)}">복사</button></div>
-    <p class="small">이 <b>복구 코드</b>는 비밀번호를 잊었을 때 쓰는 열쇠입니다. <b>지금 한 번만</b> 보여 드리니 사진을 찍거나 적어 두세요. 운영자도 볼 수 없습니다.</p>`;
+    <div class="acct-warn">⚠ 이 <b>복구 코드</b>는 비밀번호를 잊었을 때 쓰는 열쇠입니다. <b>만들어지는 지금 한 번만 표시</b>되고, 이 화면을 벗어나면 다시 볼 수 없습니다. 운영자도 볼 수 없어 알려 드릴 수 없으니, <b>사진을 찍거나 적어서 잘 보관</b>하세요.</div>`;
   const bindCopy = () => $$('[data-copy]', root).forEach(b => b.onclick = () => copy(b.dataset.copy, '복사했습니다'));
   const form = (id, html, btn) => `<form id="${id}" class="acct-form">${html}<button class="btn" type="submit">${btn}</button><div class="out"></div></form>`;
   const F = (name, label, type = 'text', extra = '') => `<label>${label}<input name="${name}" type="${type}" ${extra}></label>`;
@@ -1229,7 +1229,7 @@ function initAccount() {
         <div class="row"><button class="btn" id="aSync">지금 맞추기</button><button class="tbtn" id="aOut">로그아웃</button></div><div id="aSyncOut"></div></div>
         <details class="acct-more"><summary>비밀번호 바꾸기</summary>${form('fPw', F('pw', '지금 비밀번호', 'password', 'autocomplete="current-password" required') + F('newPw', '새 비밀번호 (8자 이상)', 'password', PWH), '바꾸기')}</details>
         <details class="acct-more"><summary>이메일 (비밀번호 찾기용, 선택)</summary><p class="small">이메일을 넣어 두면 비밀번호를 잊었을 때 메일로 다시 정할 수 있습니다. 비밀번호 찾기 메일을 보낼 때만 쓰고 다른 곳에 쓰지 않습니다. 비우고 저장하면 지워집니다.</p>${me.mail ? '' : '<p class="small muted">(지금은 메일 보내기가 준비 중이라, 복구 코드로 찾아 주세요.)</p>'}${form('fMail', F('email', '이메일', 'email', 'autocomplete="email"') + F('pw', '지금 비밀번호', 'password', 'autocomplete="current-password" required'), '저장')}</details>
-        <details class="acct-more"><summary>복구 코드 새로 받기</summary><p class="small">복구 코드를 잃어버렸으면 새로 받으세요. 예전 코드는 못 쓰게 됩니다.</p>${form('fCode', F('pw', '지금 비밀번호', 'password', 'autocomplete="current-password" required'), '새 복구 코드 받기')}</details>
+        <details class="acct-more"><summary>복구 코드 새로 받기</summary><p class="small">복구 코드를 잃어버렸으면 새로 받으세요. 예전 코드는 못 쓰게 됩니다. 새 코드도 <b>만들어지는 순간 한 번만 표시</b>되니 잘 보관하세요.</p>${form('fCode', F('pw', '지금 비밀번호', 'password', 'autocomplete="current-password" required'), '새 복구 코드 받기')}</details>
         <details class="acct-more"><summary>회원 탈퇴</summary><p class="small">아이디와 저장소의 기록이 모두 지워집니다(이 기기에 있는 기록은 남습니다). 되돌릴 수 없습니다.</p>${form('fDel', F('pw', '지금 비밀번호', 'password', 'autocomplete="current-password" required'), '탈퇴하기')}</details>`;
       $('#aSync').onclick = async () => { await syncNow(); $('#aSyncOut').innerHTML = msg('맞췄습니다. 다른 기기의 기록도 이 기기에 들어왔습니다.'); };
       $('#aOut').onclick = async () => { try { await acctApi('logout'); } catch (e) {} acctClear(); initAccount(); toast('로그아웃했습니다. 이 기기의 기록은 그대로 남습니다'); };
@@ -1245,7 +1245,7 @@ function initAccount() {
     $$('[data-t]', root).forEach(a => a.classList.toggle('on', a.dataset.t === t));
     const P = $('#acctPane', root);
     if (t === 'login') P.innerHTML = form('fIn', F('id', '아이디', 'text', 'autocomplete="username" required') + F('pw', '비밀번호', 'password', 'autocomplete="current-password" required'), '로그인');
-    if (t === 'signup') P.innerHTML = `<p class="small">아이디와 비밀번호만 있으면 됩니다. 이메일은 넣고 싶은 분만 넣으세요(비밀번호를 메일로 찾을 때만 씀). 가입하면 비밀번호를 잊었을 때 쓰는 <b>복구 코드</b>를 드립니다.</p>` +
+    if (t === 'signup') P.innerHTML = `<p class="small">아이디와 비밀번호만 있으면 됩니다. 이메일은 넣고 싶은 분만 넣으세요(비밀번호를 메일로 찾을 때만 씀). 가입하면 비밀번호를 잊었을 때 쓰는 <b>복구 코드</b>를 드립니다. 복구 코드는 <b>만들어지는 순간 한 번만 표시</b>되니 꼭 잘 보관하세요.</p>` +
       form('fUp', F('id', '아이디 (한글·영문·숫자 2~20자)', 'text', IDH) + F('pw', '비밀번호 (8자 이상)', 'password', PWH) + F('pw2', '비밀번호 한 번 더', 'password', PWH) + F('email', '이메일 (선택)', 'email', 'autocomplete="email"'), '가입하기');
     if (t === 'find') P.innerHTML = `<h3>① 복구 코드로 찾기</h3><p class="small">가입할 때 받은 복구 코드(예: K7QM-2XPA-9TZD)를 넣고 새 비밀번호를 정하세요.</p>` +
       form('fRc', F('id', '아이디', 'text', 'autocomplete="username" required') + F('code', '복구 코드', 'text', 'required autocomplete="off"') + F('pw', '새 비밀번호 (8자 이상)', 'password', PWH), '새 비밀번호로 바꾸기') +
