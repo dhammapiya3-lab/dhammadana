@@ -45,6 +45,18 @@
       ]
     },
     {
+      "id": "sunlun-theinngu",
+      "region": "미얀마",
+      "name": "순룬-떼인구 전통",
+      "representatives": []
+    },
+    {
+      "id": "kanni",
+      "region": "미얀마",
+      "name": "깐니 전통",
+      "representatives": []
+    },
+    {
       "id": "myanmar-etc",
       "region": "미얀마",
       "name": "교학·기타",
