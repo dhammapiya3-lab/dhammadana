@@ -56,10 +56,10 @@
         "created": ""
       },
       "pdf_print": {
-        "mode": "none",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "2026년 11월 8일",
+        "mode": "file",
+        "url": "pdf/DL-0014/DL-0014_초판_인쇄용.pdf"
       },
       "pdf_cover": {
         "mode": "none",
