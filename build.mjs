@@ -239,6 +239,7 @@ function layout({ title, nav = '', page = '', body, desc = '', image = '' }) {
     <a class="brand" href="/" aria-label="${esc(S.site_name)} 첫 화면">${wheel('brand-mark')}<span><span class="brand-name">${esc(S.site_name)}</span><span class="brand-sub">${esc(S.site_sub)}</span></span></a>
     <div class="head-tools">
       <a class="icon-btn" href="/mynotes/">내 서재</a>
+      <a class="icon-btn" href="/account/" id="acctBtn">로그인</a>
       <a class="icon-btn" href="/search/"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>검색</a>
       <div class="mode-menu"><button class="icon-btn" id="modeBtn" aria-haspopup="true" aria-expanded="false">화면 모드</button>
         <div class="mode-pop" id="modePop" role="menu"><button data-mode="auto">기기 설정 따르기</button><button data-mode="day">기본 (상아빛)</button><button data-mode="mono">흑백</button><button data-mode="night">밤 모드</button><button data-mode="contrast">고대비 (검정 바탕·노란 글씨)</button></div></div>
@@ -638,6 +639,11 @@ for (const n of NEWS) {
   }));
 }
 
+// 회원: 로그인·가입·비밀번호 찾기 (화면은 app.js 의 initAccount)
+put('account/index.html', layout({ title: '로그인 · 회원', page: 'account', body: `<div class="wrap prose acct"><h1>로그인 · 회원</h1>
+  <p class="muted">로그인하지 않아도 도서관은 모두 그대로 쓸 수 있습니다. 로그인하면 <b>읽던 곳·책갈피·밑줄·내 서재</b>가 휴대폰과 컴퓨터 등 여러 기기에서 이어집니다.</p>
+  <div id="acctRoot"><p class="muted">불러오는 중…</p></div>
+  <p class="small muted" style="margin-top:28px">저장하는 것: 아이디, 되돌릴 수 없게 바꾼 비밀번호·복구 코드, 넣은 분만 이메일(비밀번호 찾기 메일에만 씀), 독서 기록. 이름·전화번호·IP 주소는 저장하지 않습니다. 탈퇴하면 모두 지워집니다.</p></div>` }));
 // 내 서재
 put('mynotes/index.html', layout({ title: '내 서재', page: 'mynotes', body: `<div class="wrap"><div class="prose" style="padding-bottom:0"><h1>내 서재</h1><p class="muted">밑줄과 책갈피를 책별로 모아 봅니다. 회원가입 없이 이 기기의 브라우저에만 저장됩니다.</p></div><div id="notesRoot"></div></div>` }));
 

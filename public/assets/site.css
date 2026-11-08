@@ -881,3 +881,19 @@ a.paper-request:hover{filter:brightness(1.08)}
 /* 『법은 어디에나』 하늘색 구분선: 바깥쪽 문단과 한 줄 간격 (안쪽 글귀와는 그대로) */
 .r-fig:has(img[src*="DL-0011-bridge."]):has(+ p.r-center){margin-top:2.6em}
 p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
+/* 회원 */
+.acct .acct-form{display:flex;flex-direction:column;gap:10px;max-width:420px;margin:12px 0 20px}
+.acct .acct-form label{display:flex;flex-direction:column;gap:4px;font-size:14px;color:var(--ink-soft)}
+.acct .acct-form input{height:44px;border:1px solid var(--line);border-radius:8px;padding:0 12px;background:var(--card);font-size:16px;color:var(--ink)}
+.acct .acct-form .btn{align-self:flex-start}
+.acct .acct-tabs{margin:18px 0 6px}
+.acct .acct-tabs a.on{font-weight:700}
+.acct-msg{background:var(--leaf-soft);border-radius:8px;padding:10px 12px;font-size:14.5px;margin-top:6px}
+.acct-msg.err{background:#F6E1DC;color:#8A2E1C}
+.acct-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.acct-card h2{margin-top:0}
+.acct-card .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.acct-code{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:10px 0}
+.acct-code b{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:22px;letter-spacing:.06em;background:var(--paper);border:1px dashed var(--robe);border-radius:8px;padding:8px 14px}
+.acct details.acct-more{border-top:1px solid var(--line);padding:10px 0}
+.acct details.acct-more summary{cursor:pointer;font-weight:600}

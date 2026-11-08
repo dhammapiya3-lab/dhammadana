@@ -7,7 +7,7 @@ const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const store = {
   get(k, d) { try { const v = localStorage.getItem('dd-' + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
-  set(k, v) { try { localStorage.setItem('dd-' + k, JSON.stringify(v)); } catch (e) {} }
+  set(k, v) { try { localStorage.setItem('dd-' + k, JSON.stringify(v)); } catch (e) {} try { syncMark(k); } catch (e) {} }
 };
 const SITE = 'dhammadana.kr';
 function toast(m) { const t = $('#toast'); t.textContent = m; t.classList.add('show'); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('show'), 2800); }
@@ -90,6 +90,8 @@ function initPage() {
   if (p === 'reader') initReaderPage();
   if (p === 'book') initBook();
   if (p === 'members') initMembers();
+  if (p === 'account') initAccount();
+  acctBtn();
   $$('[data-permit]').forEach(b => b.onclick = () => lightbox(b.dataset.permit, b.dataset.title));
 }
 
@@ -1143,6 +1145,124 @@ function renderNotes() {
   };
 }
 
+/* ---------- 회원 (독서 기록 이어 보기) ---------- */
+// 이어 보는 것: 책갈피(bm)·밑줄(ul)·내 서재 기록(hist)·읽던 쪽(pos-)·법문 재생 위치(ppos-·plast·pl·sub-)
+const SYNC_RE = /^(bm|ul|hist|plast|pl|pos-.+|ppos-.+|sub-.+)$/;
+const ACC = { get token() { try { return localStorage.getItem('dd-acct') || ''; } catch (e) { return ''; } }, get id() { try { return localStorage.getItem('dd-acct-id') || ''; } catch (e) { return ''; } } };
+const syncT = () => { try { return JSON.parse(localStorage.getItem('dd-synct') || '{}'); } catch (e) { return {}; } };
+let syncTimer = null;
+function syncMark(k) {
+  if (!SYNC_RE.test(k)) return;
+  try { const m = syncT(); m[k] = Date.now(); localStorage.setItem('dd-synct', JSON.stringify(m)); } catch (e) {}
+  if (ACC.token) { clearTimeout(syncTimer); syncTimer = setTimeout(() => syncNow(), 2500); }
+}
+async function acctApi(op, o = {}) {
+  const r = await fetch('/api/account', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ op, token: ACC.token, ...o }), keepalive: op === 'sync' });
+  let j = {}; try { j = await r.json(); } catch (e) {}
+  if (j.relogin) acctClear();
+  if (!r.ok || j.error) throw new Error(j.error || '연결이 잘 되지 않습니다. 잠시 뒤에 다시 해 주세요.');
+  return j;
+}
+function acctSet(id, token) { try { localStorage.setItem('dd-acct', token); localStorage.setItem('dd-acct-id', id); localStorage.removeItem('dd-synced'); } catch (e) {} acctBtn(); }
+function acctClear() { try { localStorage.removeItem('dd-acct'); localStorage.removeItem('dd-acct-id'); } catch (e) {} acctBtn(); }
+function acctBtn() { const b = $('#acctBtn'); if (b) b.textContent = ACC.id ? '👤 ' + ACC.id : '로그인'; }
+const LISTS = ['bm', 'ul', 'hist'];
+let syncing = false;
+async function syncNow() {
+  if (!ACC.token || syncing) return; syncing = true;
+  try {
+    const m = syncT(), first = !localStorage.getItem('dd-synced'), data = {};
+    for (let i = 0; i < localStorage.length; i++) {
+      const lk = localStorage.key(i); if (!lk || !lk.startsWith('dd-')) continue;
+      const k = lk.slice(3); if (!SYNC_RE.test(k)) continue;
+      let v; try { v = JSON.parse(localStorage.getItem(lk)); } catch (e) { continue; }
+      data[k] = { v, t: m[k] || 1 };
+    }
+    let j = await acctApi('sync', { data: first ? {} : data });
+    if (first) {  // 이 기기에서 처음: 목록(책갈피·밑줄·내 서재)은 두 쪽을 합치고, 나머지는 더 나중 것
+      const up = {};
+      for (const [k, x] of Object.entries(data)) {
+        const sv = j.data[k];
+        if (LISTS.includes(k) && sv && Array.isArray(sv.v) && Array.isArray(x.v)) {
+          const seen = new Set(sv.v.map(y => JSON.stringify(y))), add = x.v.filter(y => !seen.has(JSON.stringify(y)));
+          if (add.length) up[k] = { v: sv.v.concat(add), t: Date.now() };
+        } else if (!sv || x.t > sv.t) up[k] = x;
+      }
+      if (Object.keys(up).length) j = await acctApi('sync', { data: up });
+      localStorage.setItem('dd-synced', '1');
+    }
+    // 저장소 쪽이 더 나중이면 이 기기에 씀
+    const mm = syncT(); let changed = false;
+    for (const [k, x] of Object.entries(j.data || {})) {
+      if (!SYNC_RE.test(k)) continue;
+      if (!(k in data) || x.t > (mm[k] || 0)) { const cur = localStorage.getItem('dd-' + k), nv = JSON.stringify(x.v); if (cur !== nv) { localStorage.setItem('dd-' + k, nv); changed = true; } mm[k] = x.t; }
+    }
+    localStorage.setItem('dd-synct', JSON.stringify(mm));
+    if (changed && $('#app') && $('#app').dataset.page === 'mynotes') renderNotes();
+  } catch (e) {} finally { syncing = false; }
+}
+// 다른 기기에서 바꾼 것을 가져오기: 페이지를 열 때·다시 볼 때. 떠날 때는 남은 것을 보냄
+document.addEventListener('visibilitychange', () => { if (!ACC.token) return; if (document.visibilityState === 'visible') syncNow(); else if (syncTimer) { clearTimeout(syncTimer); syncTimer = null; syncNow(); } });
+
+function initAccount() {
+  const root = $('#acctRoot'); if (!root) return;
+  const q = new URLSearchParams(location.search), rt = q.get('reset');
+  const msg = (t, err) => `<div class="acct-msg${err ? ' err' : ''}">${esc(t)}</div>`;
+  const codeBox = c => `<div class="acct-code"><b>${esc(c)}</b><button class="tbtn sm" data-copy="${esc(c)}">복사</button></div>
+    <p class="small">이 <b>복구 코드</b>는 비밀번호를 잊었을 때 쓰는 열쇠입니다. <b>지금 한 번만</b> 보여 드리니 사진을 찍거나 적어 두세요. 운영자도 볼 수 없습니다.</p>`;
+  const bindCopy = () => $$('[data-copy]', root).forEach(b => b.onclick = () => copy(b.dataset.copy, '복사했습니다'));
+  const form = (id, html, btn) => `<form id="${id}" class="acct-form">${html}<button class="btn" type="submit">${btn}</button><div class="out"></div></form>`;
+  const F = (name, label, type = 'text', extra = '') => `<label>${label}<input name="${name}" type="${type}" ${extra}></label>`;
+  const on = (id, fn) => { const f = $('#' + id, root); if (!f) return; f.onsubmit = async ev => { ev.preventDefault(); const o = Object.fromEntries(new FormData(f)); const out = $('.out', f), btn = $('button[type=submit]', f); btn.disabled = true; out.innerHTML = ''; try { await fn(o, out); } catch (e) { out.innerHTML = msg(e.message, true); } btn.disabled = false; }; };
+  const IDH = 'autocomplete="username" required minlength="2" maxlength="20"', PWH = 'autocomplete="new-password" required minlength="8"';
+
+  if (rt) {  // 이메일 링크로 왔을 때
+    root.innerHTML = `<h2>새 비밀번호 정하기</h2>${form('fReset', F('pw', '새 비밀번호 (8자 이상)', 'password', PWH) + F('pw2', '새 비밀번호 한 번 더', 'password', PWH), '비밀번호 바꾸기')}`;
+    on('fReset', async (o, out) => { if (o.pw !== o.pw2) throw new Error('두 비밀번호가 같지 않습니다.'); const j = await acctApi('reset_pw', { rt, pw: o.pw }); acctSet(j.id, j.token); history.replaceState(null, '', '/account/'); syncNow(); initAccount(); toast('새 비밀번호로 바꾸고 로그인했습니다'); });
+    return;
+  }
+  if (ACC.token) {  // 로그인한 상태
+    root.innerHTML = `<p class="muted">불러오는 중…</p>`;
+    acctApi('me').then(me => {
+      root.innerHTML = `<div class="acct-card"><h2>👤 ${esc(me.id)}</h2><p class="small muted">가입한 날: ${esc(me.created ? new Date(me.created).toLocaleDateString('ko-KR') : '')} · 이메일: ${me.hasEmail ? esc(me.email) : '넣지 않음'}</p>
+        <p>이 기기의 책갈피·밑줄·읽던 곳·내 서재가 이 아이디에 저장되고, 다른 기기에서 같은 아이디로 로그인하면 이어집니다.</p>
+        <div class="row"><button class="btn" id="aSync">지금 맞추기</button><button class="tbtn" id="aOut">로그아웃</button></div><div id="aSyncOut"></div></div>
+        <details class="acct-more"><summary>비밀번호 바꾸기</summary>${form('fPw', F('pw', '지금 비밀번호', 'password', 'autocomplete="current-password" required') + F('newPw', '새 비밀번호 (8자 이상)', 'password', PWH), '바꾸기')}</details>
+        <details class="acct-more"><summary>이메일 (비밀번호 찾기용, 선택)</summary><p class="small">이메일을 넣어 두면 비밀번호를 잊었을 때 메일로 다시 정할 수 있습니다. 비밀번호 찾기 메일을 보낼 때만 쓰고 다른 곳에 쓰지 않습니다. 비우고 저장하면 지워집니다.</p>${me.mail ? '' : '<p class="small muted">(지금은 메일 보내기가 준비 중이라, 복구 코드로 찾아 주세요.)</p>'}${form('fMail', F('email', '이메일', 'email', 'autocomplete="email"') + F('pw', '지금 비밀번호', 'password', 'autocomplete="current-password" required'), '저장')}</details>
+        <details class="acct-more"><summary>복구 코드 새로 받기</summary><p class="small">복구 코드를 잃어버렸으면 새로 받으세요. 예전 코드는 못 쓰게 됩니다.</p>${form('fCode', F('pw', '지금 비밀번호', 'password', 'autocomplete="current-password" required'), '새 복구 코드 받기')}</details>
+        <details class="acct-more"><summary>회원 탈퇴</summary><p class="small">아이디와 저장소의 기록이 모두 지워집니다(이 기기에 있는 기록은 남습니다). 되돌릴 수 없습니다.</p>${form('fDel', F('pw', '지금 비밀번호', 'password', 'autocomplete="current-password" required'), '탈퇴하기')}</details>`;
+      $('#aSync').onclick = async () => { await syncNow(); $('#aSyncOut').innerHTML = msg('맞췄습니다. 다른 기기의 기록도 이 기기에 들어왔습니다.'); };
+      $('#aOut').onclick = async () => { try { await acctApi('logout'); } catch (e) {} acctClear(); initAccount(); toast('로그아웃했습니다. 이 기기의 기록은 그대로 남습니다'); };
+      on('fPw', async (o, out) => { await acctApi('change_pw', o); out.innerHTML = msg('비밀번호를 바꿨습니다.'); });
+      on('fMail', async (o, out) => { const j = await acctApi('set_email', o); out.innerHTML = msg(j.hasEmail ? '이메일을 저장했습니다.' : '이메일을 지웠습니다.'); });
+      on('fCode', async (o, out) => { const j = await acctApi('new_code', o); out.innerHTML = codeBox(j.recovery); bindCopy(); });
+      on('fDel', async (o) => { if (!confirm('정말 탈퇴할까요? 되돌릴 수 없습니다.')) return; await acctApi('delete', o); acctClear(); initAccount(); toast('탈퇴했습니다'); });
+    }).catch(e => { root.innerHTML = msg(e.message, true); if (!ACC.token) initAccount(); });
+    return;
+  }
+  root.innerHTML = `<div class="tabs acct-tabs"><a href="#login" data-t="login" class="on">로그인</a><a href="#signup" data-t="signup">회원 가입</a><a href="#find" data-t="find">비밀번호 찾기</a></div><div id="acctPane"></div>`;
+  const pane = t => {
+    $$('[data-t]', root).forEach(a => a.classList.toggle('on', a.dataset.t === t));
+    const P = $('#acctPane', root);
+    if (t === 'login') P.innerHTML = form('fIn', F('id', '아이디', 'text', 'autocomplete="username" required') + F('pw', '비밀번호', 'password', 'autocomplete="current-password" required'), '로그인');
+    if (t === 'signup') P.innerHTML = `<p class="small">아이디와 비밀번호만 있으면 됩니다. 이메일은 넣고 싶은 분만 넣으세요(비밀번호를 메일로 찾을 때만 씀). 가입하면 비밀번호를 잊었을 때 쓰는 <b>복구 코드</b>를 드립니다.</p>` +
+      form('fUp', F('id', '아이디 (한글·영문·숫자 2~20자)', 'text', IDH) + F('pw', '비밀번호 (8자 이상)', 'password', PWH) + F('pw2', '비밀번호 한 번 더', 'password', PWH) + F('email', '이메일 (선택)', 'email', 'autocomplete="email"'), '가입하기');
+    if (t === 'find') P.innerHTML = `<h3>① 복구 코드로 찾기</h3><p class="small">가입할 때 받은 복구 코드(예: K7QM-2XPA-9TZD)를 넣고 새 비밀번호를 정하세요.</p>` +
+      form('fRc', F('id', '아이디', 'text', 'autocomplete="username" required') + F('code', '복구 코드', 'text', 'required autocomplete="off"') + F('pw', '새 비밀번호 (8자 이상)', 'password', PWH), '새 비밀번호로 바꾸기') +
+      `<h3>② 이메일로 찾기</h3><p class="small">가입할 때(또는 나중에) 이메일을 넣어 둔 분만 쓸 수 있습니다. 새 비밀번호를 정하는 링크를 메일로 보내 드립니다.</p>` +
+      form('fMr', F('id', '아이디', 'text', 'autocomplete="username" required'), '메일 보내기') +
+      `<p class="small muted">둘 다 안 되면 계정을 되찾을 수 없습니다(운영자도 비밀번호·복구 코드를 볼 수 없습니다). 새로 가입해 주세요.</p>`;
+    on('fIn', async o => { const j = await acctApi('login', o); acctSet(j.id, j.token); await syncNow(); toast(j.id + ' 님, 로그인했습니다'); initAccount(); });
+    on('fUp', async (o, out) => { if (o.pw !== o.pw2) throw new Error('두 비밀번호가 같지 않습니다.'); const j = await acctApi('signup', { id: o.id, pw: o.pw, email: o.email }); acctSet(j.id, j.token); syncNow();
+      root.innerHTML = `<div class="acct-card"><h2>가입했습니다 🙏</h2>${codeBox(j.recovery)}<div class="row"><a class="btn" href="/account/">다 적었습니다</a></div></div>`; bindCopy(); });
+    on('fRc', async (o, out) => { const j = await acctApi('recover', o); acctSet(j.id, j.token); syncNow();
+      root.innerHTML = `<div class="acct-card"><h2>비밀번호를 바꿨습니다</h2><p>예전 복구 코드는 이제 못 씁니다. 새 복구 코드를 적어 두세요.</p>${codeBox(j.recovery)}<div class="row"><a class="btn" href="/account/">다 적었습니다</a></div></div>`; bindCopy(); });
+    on('fMr', async (o, out) => { const j = await acctApi('mail_reset', o); out.innerHTML = msg(j.msg); });
+  };
+  $$('[data-t]', root).forEach(a => a.onclick = ev => { ev.preventDefault(); pane(a.dataset.t); });
+  pane((location.hash || '#login').slice(1).replace(/[^a-z]/g, '') || 'login');
+}
+
 /* ---------- 시작 ---------- */
 // 인터넷 없이 읽기 (서비스 워커)
 if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) navigator.serviceWorker.register('/sw.js').catch(() => {});
@@ -1150,6 +1270,7 @@ if ('speechSynthesis' in window) speechSynthesis.addEventListener && speechSynth
 initHeader();
 initPlayer();
 initPage();
+if (ACC.token) syncNow();
 // 방문 통계: 기기마다 무작위 번호만 (개인정보 없음). 관리자 기기(통계에서 빼기)는 보내지 않음
 try {
   if (navigator.sendBeacon && location.protocol === 'https:' && !store.get('notrack', false) && !/^\/(admin|api)\b/.test(location.pathname)) {
