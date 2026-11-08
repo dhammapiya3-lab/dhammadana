@@ -446,6 +446,7 @@ collections:
                   - { name: name, label: 이름 }
                   - { name: url, label: 주소 }
                   - { name: note, label: 설명, required: false }
+                  - { name: lang, label: 언어 줄 (선택), required: false, hint: "예: 영어, 미얀마어. 적으면 묶음 안에서 같은 언어끼리 한 줄로 모아 보입니다." }
       - name: playlists
         label: 법문 재생목록
         file: content/playlists.json

@@ -857,3 +857,5 @@ a.paper-request:hover{filter:brightness(1.08)}
 .teacher-head:has(.desc){align-items:flex-start}
 .teacher-head:has(.desc) .portrait{margin-top:28px}
 .link-card .small{overflow-wrap:anywhere}
+.lang-row+.lang-row{margin-top:18px}
+.lang-h{font-size:14px;color:var(--ink-soft);margin:0 0 8px;font-weight:600}

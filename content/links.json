@@ -16,14 +16,28 @@
       "desc": "외국어 법문과 전자책을 나누는 곳입니다.",
       "items": [
         {
-          "name": "dhammadownload.com",
-          "url": "https://www.dhammadownload.com/index.htm",
-          "note": "미얀마 스님들의 법문 음성·영상·전자책 무료 도서관"
-        },
-        {
           "name": "Reading Faithfully",
           "url": "https://readingfaithfully.org/",
-          "note": "빠알리 경전(숫따)을 날마다 직접 읽도록 돕는 영어 사이트 · 무료 전자책·음성 자료와 경전 찾기 도구"
+          "note": "빠알리 경전(숫따)을 날마다 직접 읽도록 돕는 영어 사이트 · 무료 전자책·음성 자료와 경전 찾기 도구",
+          "lang": "영어"
+        },
+        {
+          "name": "Ancient Buddhist Texts",
+          "url": "https://ancient-buddhist-texts.net/",
+          "note": "아난다조띠 스님이 운영하는 초기 불교 경전·주석서의 원문과 영어 번역, 전자책·음성 자료",
+          "lang": "영어"
+        },
+        {
+          "name": "Dharma Storybooks",
+          "url": "https://dharma-storybooks.net/",
+          "note": "아난다조띠 스님의 그림으로 보는 불교 이야기책",
+          "lang": "영어"
+        },
+        {
+          "name": "dhammadownload.com",
+          "url": "https://www.dhammadownload.com/index.htm",
+          "note": "미얀마 스님들의 법문 음성·영상·전자책 무료 도서관",
+          "lang": "미얀마어"
         }
       ]
     },
