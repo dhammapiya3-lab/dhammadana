@@ -369,7 +369,7 @@ put('press/support/index.html', layout({ title: '후원계좌', nav: 'press', pa
   <ul style="list-style:disc;padding-left:1.2em;margin:1.8em 0 0"><li>법보시 출판 전용 계좌입니다.</li><li>개인 계좌이기 때문에 기부금영수증 발행은 어렵습니다.</li><li>새로 인쇄할 때마다 인쇄 지출 내역과 후원 내역을 함께 올립니다.</li><li>원하는 분은 카카오뱅크 모임 계좌에 초대해드립니다. 입출금 내역을 실시간으로 확인하실 수 있습니다.</li><li>후원 문의: 담마삐야 <a href="tel:01032395401">010-3239-5401</a></li></ul></div>`) }));
 
 // 도서관
-const BTYPES = ['경전', '법문집', '해설서', '잠언집', '수행기', '사전'];
+const BTYPES = ['경전', '예불집', '법문집', '해설서', '잠언집', '수행기', '사전'];
 const LANGS = ['빠알리어', '영어', '미얀마어', '태국어', '싱할라어', '한국어', '기타'].filter(l => BOOKS.some(b => b.original_language === l));
 function libraryBody() {
   const chk = (set, val, label, n, extra = '') => `<label class="${n === 0 ? 'zero' : ''}"><input type="checkbox" data-f="${set}" value="${esc(val)}">${label}${extra}<span class="n">${n}</span></label>`;
