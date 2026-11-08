@@ -170,6 +170,7 @@ for pi, pg in enumerate(d):
 
 body = ''.join(f'=== {n}쪽 ===\n' + '\n\n'.join(ps) + '\n\n' for n, ps in pages).rstrip() + '\n'
 body = re.sub(r'\*\*([ \n]*)\*\*', r'\1', body)  # 이어진 굵은 글은 하나로
+body = body.replace('\n\n**아신 자나까비왐사 사야도의 출판허가서**\n\n', '\n\n:: **아신 자나까비왐사 사야도의 출판허가서**\n\n')  # 가운데 (운영자 요청)
 # 목차 항목이 쪽 중간에서 시작하면 at
 nz = lambda x: re.sub(r'[^0-9A-Za-z가-힣]', '', x)
 PG = {int(m.group(1)): m.group(2) for m in re.finditer(r'=== (\d+)쪽 ===\n(.*?)(?=\n=== |\Z)', body, re.S)}
