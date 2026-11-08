@@ -74,10 +74,23 @@
         "created": "2026년 10월 13일"
       },
       "reader": false,
-      "sources": [],
-      "collection": "",
+      "sources": [
+        {
+          "file": "pdf",
+          "url": "https://cafe.naver.com/shweoomin/10",
+          "checked": "2026년 11월 9일",
+          "archive": ""
+        },
+        {
+          "file": "epub",
+          "url": "https://blog.naver.com/k3a3n3g3/222720005809",
+          "checked": "2026년 11월 9일",
+          "archive": ""
+        }
+      ],
+      "collection": "我無말들 자체 제작",
       "collected": "",
-      "permission_status": "",
+      "permission_status": "confirmed",
       "notice": "",
       "permission_note": "",
       "permission_image": "",
