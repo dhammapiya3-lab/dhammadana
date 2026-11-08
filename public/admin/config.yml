@@ -73,6 +73,7 @@ collections:
         fields:
           - { name: name, label: 서점 이름 (선택), required: false, hint: "예: 교보문고, 알라딘, YES24" }
           - { name: url, label: 링크 주소, hint: "https:// 로 시작하는 책 판매 페이지 주소" }
+      - { name: book_type, label: 책 형식, widget: select, required: false, options: [경전, 법문집, 해설서, 수행기], hint: "도서관 '찾아보기'의 책 형식으로 나뉩니다" }
       - { name: original_title, label: 원서 제목, required: false }
       - { name: original_language, label: 원서의 언어, widget: select, required: false, options: [빠알리어, 영어, 미얀마어, 태국어, 싱할라어, 한국어, 기타], hint: "이 책을 옮길 때 바탕으로 삼은 원서의 언어" }
       - { name: original_source, label: 원서 정보, required: false, hint: "원서 출판사·연도 등" }
