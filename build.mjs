@@ -172,7 +172,9 @@ function dlName(b, e, kind) {
   const print = kind === 'pdf_print' || kind === 'pdf_cover';
   const ext = kind === 'epub' ? 'epub' : 'pdf';
   const tag = { pdf_print: e.pdf_cover && e.pdf_cover.url ? '_인쇄용_본문' : '_인쇄용', pdf_cover: '_인쇄용_표지' }[kind] || '';
-  return safeName(`${b.title}${tag}`) + '.' + ext;  // 내려받는 파일 이름에는 날짜를 붙이지 않음 (운영자 요청, 2026-11-09)
+  // '파일 만든 날'을 넣은 파일만 이름 끝에 날짜를 붙이고, 비워 둔 파일은 날짜 없이 (운영자 요청, 2026-11-09)
+  const d = ymd((e[kind] || {}).created) || ymd(print ? e.file_created_print : e.file_created);
+  return safeName(`${b.title}${tag}${d ? '_' + d : ''}`) + '.' + ext;
 }
 const hasText = b => { const e = curEd(b), t = TEXTS[b.id]; return !!(t && (!t.edition || t.edition === e.label)); };
 // 법보시 도서관에 보일 책: 온라인 읽기나 내려받을 파일이 하나라도 있는 책 (없는 책은 我無말들 출판사 쪽에만)
