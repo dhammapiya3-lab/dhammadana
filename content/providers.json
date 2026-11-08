@@ -61,6 +61,27 @@
       "partner": true,
       "note": "다음 카페 · cafe.daum.net/lotuspond",
       "image": "/uploads/partner-lotuspond.jpg"
+    },
+    {
+      "id": "koreamahasi",
+      "name": "한국마하시 선원",
+      "kind": "승원·사원",
+      "urls": [
+        "https://cafe.naver.com/koreamahasi"
+      ],
+      "partner": true,
+      "note": "네이버 카페 · cafe.naver.com/koreamahasi",
+      "image": "/uploads/partner-koreamahasi.jpg"
+    },
+    {
+      "id": "calmvoice",
+      "name": "고요한소리",
+      "kind": "단체",
+      "urls": [
+        "http://www.calmvoice.org/"
+      ],
+      "partner": true,
+      "note": "calmvoice.org"
     }
   ]
 }
