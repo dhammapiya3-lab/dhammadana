@@ -9,12 +9,14 @@
   "provider": "amumaldeul",
   "press": true,
   "paper": "request",
+  "paper_url": "",
   "stores": [
     {
       "name": "",
       "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=318335535"
     }
   ],
+  "book_type": "법문집",
   "original_title": "『KAMMA AT DEATH AND REBIRTH』",
   "original_language": "영어",
   "original_source": "『KAMMA AT DEATH AND REBIRTH』 First edition: February, 2016 Published by the German Abhidhamma Association Bruckmuehl, Germany © Abhidhamma-Förderverein e.V. , Germany, and Sayadaw Dr. Nandamālābhivaṃsa, Myanmar",
@@ -42,6 +44,7 @@
       "publisher_ebook": "我無말들",
       "isbn_ebook": "979-11-980922-1-2",
       "changes": "",
+      "hide_update": false,
       "pdf": {
         "mode": "none",
         "url": "",
@@ -90,5 +93,6 @@
   "license": "CC BY-NC-ND",
   "added": "2026-11-06",
   "order": 6,
-  "hidden": false
+  "hidden": false,
+  "hide_update": false
 }
