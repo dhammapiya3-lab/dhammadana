@@ -840,6 +840,7 @@ a.paper-request:hover{filter:brightness(1.08)}
 /* 구분 장식 그림(작게) */
 .r-fig .fig-btn img[src*="-bridge"]{max-height:26px;border:0;background:none;border-radius:0}
 .r-fig:has(img[src*="-bridge"]){margin:1em 0}
+.r-fig:has(img[src*="DL-0011-bridge2"]){margin:2.6em 0}
 .r-fig .fig-btn img[alt="장식"]{max-height:26px;border:0;background:none;border-radius:0}
 
 /* 글로 읽기: 색 강조(==글==, 원본의 하늘색), 속표지 큰 제목(^^ 글) */
