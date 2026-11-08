@@ -624,7 +624,7 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 .sr-more{margin-top:8px;width:100%;border:1px solid var(--line);background:transparent;border-radius:8px;padding:8px;cursor:pointer;color:var(--ink-soft);font-size:13.5px}
 
 /* ---------- 회원 자료실 ---------- */
-#membersRoot{padding:0 0 60px}
+#membersRoot{padding-bottom:60px}
 .mb-group{margin-top:24px}
 .mb-h{font-size:17px;margin:0 0 8px;padding-bottom:8px;border-bottom:2px solid var(--line)}
 .mb-list{list-style:none;margin:0;padding:0}
@@ -899,3 +899,10 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .acct details.acct-more summary{cursor:pointer;font-weight:600}
 
 .acct-warn { margin: 10px 0 4px; padding: 10px 14px; border: 1px solid #e0a23b; background: rgba(224,162,59,.13); color: inherit; border-radius: 8px; font-size: .95em; line-height: 1.6; }
+
+/* 학습 자료실 자료 소개 */
+.study-book{display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px;align-items:start;margin-top:10px}
+.study-book .cover{aspect-ratio:234/330;background:var(--paper-2);border:1px solid var(--line);overflow:hidden}
+.study-book .cover img{width:100%;height:100%;object-fit:cover;display:block}
+.study-dl{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+@media (max-width:620px){.study-book{grid-template-columns:120px minmax(0,1fr);gap:16px}}

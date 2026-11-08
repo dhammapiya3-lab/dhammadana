@@ -650,7 +650,10 @@ put('mynotes/index.html', layout({ title: '내 서재', page: 'mynotes', body: `
 
 // 인터넷이 없을 때
 // 학습 자료실: 빈 틀만 만들고, 내용(파일 목록)은 로그인한 뒤 /study/api/list 에서 받아 옵니다. 자료는 공개 저장소에 두지 않습니다.
-put('study/index.html', layout({ title: '학습 자료실', page: 'members', body: `<div class="wrap"><div class="prose" style="padding-bottom:0"><h1>학습 자료실</h1><p class="muted">허락받은 분만 보는 곳입니다. 이 곳의 자료는 다른 분께 넘기지 말아 주세요.</p></div><div id="membersRoot"><p class="muted">불러오는 중…</p></div></div>` }));
+// 분류 틀(출판사·책 형식·주제)만 공개 쪽에 두고, 자료마다의 제목·소개 등은 비공개 창고(MEMBERS)의 _catalog.json 에 둡니다.
+const STUDY_CFG = { publishers: readJSON('study.json').publishers, book_types: readJSON('study.json').book_types, topics: TOPICS.groups };
+const studyCfgJson = JSON.stringify(STUDY_CFG);
+put('study/index.html', layout({ title: '학습 자료실', page: 'members', body: `<div id="membersRoot" class="wrap"><p class="muted">불러오는 중…</p></div><script type="application/json" id="studyCfg">${studyCfgJson.replace(/</g, '\\u003c')}</script>` }));
 put('offline.html', layout({ title: '인터넷 연결 없음', page: 'offline', body: `<div class="wrap prose"><h1>인터넷에 연결되어 있지 않습니다</h1><p>이 페이지는 아직 이 기기에 저장되지 않았습니다. 인터넷이 될 때 한 번 열어 둔 책과 페이지는 인터넷 없이도 읽을 수 있습니다.</p><p><a href="/mynotes/">내 서재에서 읽던 책 보기 →</a></p></div>` }));
 // 404
 put('404.html', layout({ title: '페이지를 찾을 수 없습니다', page: 'notfound', body: `<div class="wrap prose"><h1>페이지를 찾을 수 없습니다</h1><p>주소가 바뀌었거나 없는 페이지입니다. <a href="/library/">도서관</a>이나 <a href="/search/">검색</a>에서 찾아보세요.</p></div>` }));
@@ -673,6 +676,7 @@ const site = {
 };
 fs.mkdirSync(path.join(OUT, 'data'), { recursive: true });
 fs.writeFileSync(path.join(OUT, 'data/site.json'), JSON.stringify(site));
+fs.writeFileSync(path.join(OUT, 'data/study-config.json'), studyCfgJson);  // 관리자 화면(학습 자료실 관리)에서 씀
 fs.writeFileSync(path.join(OUT, 'data/downloads.json'), JSON.stringify(DOWNLOADS));
 fs.mkdirSync(path.join(OUT, 'texts'), { recursive: true });
 // 색인처럼 표로 된 자료: content/indexes/<자료번호>.json (본문의 [[색인]] 자리에 찾기·순서 바꾸기가 되는 표로 보임)

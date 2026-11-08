@@ -64,6 +64,28 @@
       <progress id="prog" max="100" value="0" hidden style="margin-top:12px"></progress>
       <div id="out"></div>
     </div>
+    <div class="card" id="catCard">
+      <h2>3. 자료 정보 (도서관처럼 분류)</h2>
+      <p class="note">올린 파일을 책 하나로 묶고 제목·출판사·형식·주제·소개를 적으면, 학습 자료실에서 법보시 도서관처럼 표지 카드와 찾아보기로 보입니다. 이 정보도 비공개 창고에만 저장됩니다(공개 GitHub 에 올라가지 않음). 정보를 넣지 않은 파일은 '분류하지 않은 자료'에 그대로 보입니다.</p>
+      <ul class="fl" id="catList"><li class="note">불러오는 중…</li></ul>
+      <button class="btn" id="catNew" style="margin-top:10px">+ 새 자료 정보</button>
+      <form id="catForm" hidden style="margin-top:14px">
+        <div class="row"><label>제목 *</label><input type="text" name="title" required></div>
+        <div class="row"><label>부제</label><input type="text" name="subtitle"></div>
+        <div class="row"><label>지은이·스승</label><input type="text" name="author"></div>
+        <div class="row"><label>옮긴이·편자</label><input type="text" name="translator"></div>
+        <div class="row"><label>출판사</label><select name="publisher"></select></div>
+        <div class="row"><label>책 형식</label><select name="book_type"></select></div>
+        <div class="row"><label>펴낸 해</label><input type="text" name="year" placeholder="예: 2014"></div>
+        <div class="row"><label>주제 (여러 개 고를 수 있음)</label><div id="catTopics" class="note"></div></div>
+        <div class="row"><label>소개</label><textarea name="description" rows="6" style="border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--paper);font-size:15px;width:100%"></textarea></div>
+        <div class="row"><label>이 자료의 파일 (여러 개 고를 수 있음)</label><div id="catFiles" class="note" style="max-height:220px;overflow:auto;border:1px solid var(--line);border-radius:8px;padding:8px"></div></div>
+        <div class="row"><label>표지 그림 (올린 그림 파일 중에서)</label><select name="cover"></select></div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" type="submit">저장</button><button class="btn ghost" type="button" id="catCancel">닫기</button><button class="btn ghost" type="button" id="catDel" style="margin-left:auto;color:#8A2E1C">이 자료 정보 지우기</button></div>
+        <p class="note">'지우기'는 자료 정보만 지웁니다. 파일은 그대로 남습니다.</p>
+      </form>
+      <div id="catOut"></div>
+    </div>
     <div class="card">
       <h2>올라와 있는 자료</h2>
       <p class="note">지울 파일을 골라 '고른 파일 지우기'를 누르세요. 지운 파일은 되살릴 수 없습니다.</p>
@@ -98,6 +120,7 @@ const api=(opt={})=>fetch('/api/members',{...opt,headers:{authorization:'Bearer 
 async function load(){
   const r=await api(); const j=await r.json().catch(()=>({}));
   if(!r.ok){ $('#list').innerHTML=`<li class="msg err">${esc(j.error||'목록을 불러오지 못했습니다.')}</li>`; return; }
+  ALL=j.files||[]; CAT=j.catalog&&Array.isArray(j.catalog.items)?j.catalog:{items:[]}; catRender();
   const g={}; (j.files||[]).sort((a,b)=>a.key.localeCompare(b.key,'ko')).forEach(f=>{const i=f.key.lastIndexOf('/'); const d=i>0?f.key.slice(0,i):''; (g[d]=g[d]||[]).push(f);});
   $('#folders').innerHTML=Object.keys(g).filter(Boolean).map(d=>`<option value="${esc(d)}">`).join('');
   $('#list').innerHTML=Object.keys(g).length?Object.keys(g).map(d=>`<li class="fd">📁 ${esc(d||'자료')}</li>`+g[d].map(f=>`<li><input type="checkbox" value="${esc(f.key)}"><span>${esc(f.key.split('/').pop())}</span><small class="note">${size(f.size)}</small></li>`).join('')).join(''):'<li class="note">아직 올라온 자료가 없습니다.</li>';
@@ -125,6 +148,44 @@ $('#del').onclick=async()=>{
   const r=await api({method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({delete:keys})}); const j=await r.json().catch(()=>({}));
   $('#dout').innerHTML=r.ok?`<div class="msg ok">${j.deleted}개를 지웠습니다.</div>`:`<div class="msg err">${esc(j.error||'지우지 못했습니다.')}</div>`; load();
 };
+
+// ---- 자료 정보 (비공개 창고의 _catalog.json) ----
+let CAT={items:[]}, ALL=[], CFG={publishers:[],book_types:[],topics:[]}, EDIT=null;
+fetch('/data/study-config.json').then(r=>r.json()).then(j=>{CFG=j;}).catch(()=>{});
+const opts=(list,cur)=>['',...list,...(cur&&!list.includes(cur)?[cur]:[])].map(v=>`<option value="${esc(v)}"${v===cur?' selected':''}>${esc(v||'— 고르지 않음 —')}</option>`).join('');
+function catRender(){
+  const L=CAT.items||[];
+  $('#catList').innerHTML=L.length?L.map(it=>`<li><span><b>${esc(it.title)}</b> <small class="note">${esc([it.publisher,it.book_type].filter(Boolean).join(' · '))} · 파일 ${(it.files||[]).length}개</small></span><button class="link-btn" data-edit="${esc(it.id)}" style="margin-left:auto">고치기</button></li>`).join(''):'<li class="note">아직 자료 정보가 없습니다.</li>';
+  document.querySelectorAll('[data-edit]').forEach(b=>b.onclick=()=>catOpen(L.find(x=>x.id===b.dataset.edit)));
+}
+function catOpen(it){
+  EDIT=it||{id:'S-'+Date.now().toString(36),title:'',topics:[],files:[],added:new Date().toLocaleDateString('sv-SE')};
+  const f=$('#catForm'); f.hidden=false; $('#catDel').hidden=!it;
+  ['title','subtitle','author','translator','year','description'].forEach(k=>f.elements[k].value=EDIT[k]||'');
+  f.elements.publisher.innerHTML=opts(CFG.publishers||[],EDIT.publisher||'');
+  f.elements.book_type.innerHTML=opts(CFG.book_types||[],EDIT.book_type||'');
+  $('#catTopics').innerHTML=(CFG.topics||[]).map(g=>`<div style="margin:4px 0"><b>${esc(g.name)}</b><br>${g.labels.map(l=>`<label style="display:inline-flex;gap:4px;margin:2px 10px 2px 0;font-weight:400"><input type="checkbox" data-topic value="${esc(l)}"${(EDIT.topics||[]).includes(l)?' checked':''}>${esc(l)}</label>`).join('')}</div>`).join('');
+  $('#catFiles').innerHTML=ALL.filter(x=>!/\.(jpe?g|png|webp|gif)$/i.test(x.key)).map(x=>`<label style="display:flex;gap:6px;font-weight:400;padding:2px 0"><input type="checkbox" data-file value="${esc(x.key)}"${(EDIT.files||[]).includes(x.key)?' checked':''}>${esc(x.key)}</label>`).join('')||'파일을 먼저 올려 주세요.';
+  f.elements.cover.innerHTML=opts(ALL.filter(x=>/\.(jpe?g|png|webp|gif)$/i.test(x.key)).map(x=>x.key),EDIT.cover||'');
+  f.scrollIntoView({behavior:'smooth',block:'start'});
+}
+async function catSave(msg){
+  const r=await api({method:'PUT',headers:{'x-key':encodeURIComponent('_catalog.json'),'content-type':'application/json'},body:JSON.stringify(CAT)});
+  const j=await r.json().catch(()=>({}));
+  $('#catOut').innerHTML=r.ok?`<div class="msg ok">${esc(msg)}</div>`:`<div class="msg err">${esc(j.error||'저장하지 못했습니다.')}</div>`;
+  return r.ok;
+}
+$('#catNew').onclick=()=>catOpen(null);
+$('#catCancel').onclick=()=>{$('#catForm').hidden=true;};
+$('#catForm').onsubmit=async e=>{ e.preventDefault(); const f=e.target;
+  const it={...EDIT}; ['title','subtitle','author','translator','year','description','publisher','book_type','cover'].forEach(k=>{const v=(f.elements[k].value||'').trim(); if(v) it[k]=v; else delete it[k];});
+  it.topics=[...document.querySelectorAll('[data-topic]:checked')].map(c=>c.value);
+  it.files=[...document.querySelectorAll('[data-file]:checked')].map(c=>c.value);
+  if(!it.title){ alert('제목을 적어 주세요.'); return; }
+  const L=CAT.items=(CAT.items||[]); const i=L.findIndex(x=>x.id===it.id); if(i>=0) L[i]=it; else L.push(it);
+  if(await catSave(`'${it.title}' 정보를 저장했습니다.`)){ f.hidden=true; catRender(); } };
+$('#catDel').onclick=async()=>{ if(!EDIT||!confirm(`'${EDIT.title}' 자료 정보를 지울까요? (파일은 남습니다)`)) return;
+  CAT.items=(CAT.items||[]).filter(x=>x.id!==EDIT.id); if(await catSave('자료 정보를 지웠습니다.')){ $('#catForm').hidden=true; catRender(); } };
 start();
 })();
 </script>

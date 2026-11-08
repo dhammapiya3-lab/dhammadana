@@ -96,18 +96,87 @@ function initPage() {
 }
 
 /* ---------- 학습 자료실 ---------- */
+// 법보시 도서관과 같은 짜임: 왼쪽 찾아보기(출판사·책 형식·주제) + 표지 카드, 누르면 자료 소개와 파일.
+// 자료 정보는 비공개 창고의 _catalog.json (관리자 화면 '학습 자료실 관리'에서 입력). 정보 없는 파일은 아래 '분류하지 않은 자료'.
 async function initMembers() {
   const root = $('#membersRoot');
+  let cfg = { publishers: [], book_types: [], topics: [] };
+  try { cfg = JSON.parse($('#studyCfg').textContent); } catch (e) {}
   const size = n => n > 1048576 ? (n / 1048576).toFixed(1) + 'MB' : Math.max(1, Math.round(n / 1024)) + 'KB';
-  const icon = k => /\.(mp3|m4a|wav)$/i.test(k) ? '🎧' : /\.(mp4|mov)$/i.test(k) ? '🎬' : /\.(jpe?g|png|webp|gif)$/i.test(k) ? '🖼' : /\.pdf$/i.test(k) ? '📕' : /\.epub$/i.test(k) ? '📗' : '📄';
+  const icon = k => /\.(mp3|m4a|wav)$/i.test(k) ? '🎧' : /\.(mp4|mov)$/i.test(k) ? '🎬' : /\.(jpe?g|png|webp|gif)$/i.test(k) ? '🖼' : /\.pdf$/i.test(k) ? '📕' : /\.epub$/i.test(k) ? '📗' : /\.(hwpx?|docx?)$/i.test(k) ? '📘' : '📄';
+  const url = k => '/study/file/' + k.split('/').map(encodeURIComponent).join('/');
+  const kind = k => (k.split('.').pop() || '').toUpperCase();
   let j;
   try { const r = await fetch('/study/api/list', { cache: 'no-store' }); if (!r.ok) throw 0; j = await r.json(); } catch (e) { root.innerHTML = '<p class="muted">목록을 불러오지 못했습니다. 새로고침해 주세요.</p>'; return; }
   const who = j.email ? `<p class="small muted">${esc(j.email)} 로 들어왔습니다 · <a href="/cdn-cgi/access/logout">나가기</a></p>` : '';
-  if (!j.files.length) { root.innerHTML = who + '<p class="muted">아직 올라온 자료가 없습니다.</p>'; return; }
-  const groups = {};
-  j.files.sort((a, b) => a.key.localeCompare(b.key, 'ko')).forEach(f => { const i = f.key.lastIndexOf('/'); (groups[i > 0 ? f.key.slice(0, i) : ''] = groups[i > 0 ? f.key.slice(0, i) : ''] || []).push(f); });
-  const url = k => '/study/file/' + k.split('/').map(encodeURIComponent).join('/');
-  root.innerHTML = who + Object.keys(groups).sort((a, b) => a.localeCompare(b, 'ko')).map(g => `<section class="mb-group"><h2 class="mb-h">📁 ${esc(g || '자료')}</h2><ul class="mb-list">${groups[g].map(f => { const n = f.key.split('/').pop(), au = /\.(mp3|m4a|wav)$/i.test(n); return `<li><span class="mb-ic">${icon(n)}</span><div class="mb-b"><a href="${url(f.key)}" target="_blank" rel="noopener">${esc(n)}</a><div class="small muted">${size(f.size)} · ${esc(String(f.uploaded || '').slice(0, 10))}</div>${au ? `<audio controls preload="none" src="${url(f.key)}"></audio>` : ''}</div><a class="mb-dl" href="${url(f.key)}?dl" aria-label="${esc(n)} 내려받기">내려받기</a></li>`; }).join('')}</ul></section>`).join('');
+  const head = `<div class="prose" style="padding-bottom:0"><h1>학습 자료실</h1><p class="muted">허락받은 분만 보는 곳입니다. 이 곳의 자료는 다른 분께 넘기지 말아 주세요.</p>${who}</div>`;
+  const fileSet = new Set(j.files.map(f => f.key)), fileBy = Object.fromEntries(j.files.map(f => [f.key, f]));
+  const items = ((j.catalog || {}).items || []).filter(it => it && it.title).map(it => ({ ...it, files: (it.files || []).filter(k => fileSet.has(k)) }));
+  const used = new Set(items.flatMap(it => [...it.files, it.cover || '']));
+  const loose = j.files.filter(f => !used.has(f.key));
+  const fileRow = f => { const n = f.key.split('/').pop(), au = /\.(mp3|m4a|wav)$/i.test(n); return `<li><span class="mb-ic">${icon(n)}</span><div class="mb-b"><a href="${url(f.key)}" target="_blank" rel="noopener">${esc(n)}</a> <span class="small muted">${size(f.size)}</span> · <a class="small" href="${url(f.key)}?dl">내려받기</a>${au ? `<audio controls preload="none" src="${url(f.key)}"></audio>` : ''}</div></li>`; };
+  const looseHtml = () => { if (!loose.length) return ''; const g = {}; loose.forEach(f => { const i = f.key.lastIndexOf('/'); const d = i > 0 ? f.key.slice(0, i) : ''; (g[d] = g[d] || []).push(f); });
+    return `<section class="study-loose"><h2 class="mb-h" style="margin-top:36px">분류하지 않은 자료</h2>` + Object.keys(g).sort((a, b) => a.localeCompare(b, 'ko')).map(d => `<section class="mb-group"><h3 class="small muted" style="margin:10px 0 0">📁 ${esc(d || '자료')}</h3><ul class="mb-list">${g[d].sort((a, b) => a.key.localeCompare(b.key, 'ko')).map(fileRow).join('')}</ul></section>`).join('') + '</section>'; };
+  if (!items.length && !loose.length) { root.innerHTML = head + '<p class="muted">아직 올라온 자료가 없습니다.</p>'; return; }
+  const cnt = (f, v) => items.filter(it => f === 'topic' ? (it.topics || []).includes(v) : it[f] === v).length;
+  const chk = (f, v) => { const n = cnt(f, v); return `<label class="${n ? '' : 'zero'}"><input type="checkbox" data-sf="${f}" value="${esc(v)}">${esc(v)}<span class="n">${n}</span></label>`; };
+  const others = (f, list) => [...new Set(items.map(it => it[f]).filter(v => v && !list.includes(v)))];
+  const topics = (cfg.topics || []).map(gr => { const n = gr.labels.reduce((a, l) => a + cnt('topic', l), 0); return `<details class="fgroup"${n ? ' open' : ''}><summary class="group-name">${esc(gr.name)} <span class="n">${n}</span></summary>${gr.labels.map(l => chk('topic', l)).join('')}</details>`; }).join('');
+  const card = it => `<a class="book" href="#${esc(it.id)}" data-id="${esc(it.id)}" data-title="${esc(it.title)}" data-added="${esc(it.added || '')}">
+    <div class="cover">${it.cover && fileSet.has(it.cover) ? `<img class="cover-img" src="${url(it.cover)}" alt="${esc(it.title)} 표지" loading="lazy">` : `<div class="cover-ph">${esc(it.title)}</div>`}</div>
+    <div class="t">${esc(it.title)}</div><div class="a">${esc([it.author, it.translator].filter(Boolean).join(' | '))}</div>
+    <div class="fmt">${[it.publisher, it.book_type].filter(Boolean).map(x => `<span>${esc(x)}</span>`).join('')}</div></a>`;
+  root.innerHTML = head + (items.length ? `<div class="lib" style="margin-top:18px"><details class="filter-toggle" open><summary>찾아보기</summary><div class="filters">
+      <h3>출판사</h3>${[...cfg.publishers, ...others('publisher', cfg.publishers)].map(v => chk('publisher', v)).join('')}
+      <h3>책 형식</h3>${[...cfg.book_types, ...others('book_type', cfg.book_types)].map(v => chk('book_type', v)).join('')}
+      <h3>주제</h3>${topics}
+    </div></details>
+    <section><div class="toolbar"><div><div class="muted small">자료 <span id="stCount">${items.length}</span>개</div></div>
+      <label class="small"><input id="stQ" type="search" placeholder="제목·지은이·소개로 찾기" style="height:34px;padding:0 10px;border:1px solid var(--line);border-radius:8px;background:var(--paper);min-width:180px"></label>
+      <label class="small">정렬 <select id="stSort"><option value="new">최근 등록순</option><option value="title">제목 가나다순</option></select></label></div>
+      <div class="active-filters" id="stActive"></div>
+      <div class="grid" id="stGrid">${items.map(card).join('')}</div>
+      <p class="muted" id="stEmpty" hidden>조건에 맞는 자료가 없습니다. 찾아보기를 줄여 보세요.</p>
+    </section></div>` : '') + looseHtml() + `<div id="stDetail" hidden></div>`;
+  const byId = Object.fromEntries(items.map(it => [it.id, it]));
+  const norm = x => String(x || '').toLowerCase().replace(/\s+/g, '');
+  const run = () => {
+    const sel = {}; $$('[data-sf]:checked', root).forEach(c => (sel[c.dataset.sf] = sel[c.dataset.sf] || []).push(c.value));
+    const q = norm(($('#stQ') || {}).value); let shown = 0;
+    $$('#stGrid .book', root).forEach(el => { const it = byId[el.dataset.id];
+      let ok = (!sel.publisher || sel.publisher.includes(it.publisher)) && (!sel.book_type || sel.book_type.includes(it.book_type)) && (!sel.topic || sel.topic.some(t => (it.topics || []).includes(t)));
+      if (ok && q) ok = norm([it.title, it.author, it.translator, it.publisher, it.description, (it.topics || []).join(' ')].join(' ')).includes(q);
+      el.hidden = !ok; if (ok) shown++; });
+    if ($('#stCount')) { $('#stCount').textContent = shown; $('#stEmpty').hidden = shown > 0; }
+    const af = $('#stActive'); if (!af) return;
+    const on = $$('[data-sf]:checked', root);
+    af.innerHTML = on.length ? on.map(c => `<button data-un="${esc(c.dataset.sf)}|${esc(c.value)}">${esc(c.value)} ✕</button>`).join('') + '<button data-un="*">모두 지우기</button>' : '';
+    $$('button', af).forEach(x => x.onclick = () => { $$('[data-sf]', root).forEach(c => { if (x.dataset.un === '*' || x.dataset.un === c.dataset.sf + '|' + c.value) c.checked = false; }); run(); });
+  };
+  $$('[data-sf]', root).forEach(c => c.onchange = run);
+  if ($('#stQ')) $('#stQ').oninput = run;
+  if ($('#stSort')) $('#stSort').onchange = () => { const g = $('#stGrid'), v = $('#stSort').value; $$('.book', g).sort((a, b) => v === 'title' ? a.dataset.title.localeCompare(b.dataset.title, 'ko') : (b.dataset.added || '').localeCompare(a.dataset.added || '')).forEach(x => g.appendChild(x)); };
+  if ($('#stSort')) $('#stSort').onchange();
+  if (window.innerWidth < 520 && $('.filter-toggle', root)) $('.filter-toggle', root).open = false;
+  const detail = () => {
+    const it = byId[decodeURIComponent(location.hash.slice(1))], d = $('#stDetail');
+    const parts = [$('.lib', root), $('.study-loose', root)].filter(Boolean);
+    if (!it) { d.hidden = true; parts.forEach(x => x.hidden = false); return; }
+    parts.forEach(x => x.hidden = true); d.hidden = false;
+    const fl = it.files.map(k => fileBy[k]).filter(Boolean);
+    d.innerHTML = `<p style="margin-top:18px"><a href="#" id="stBack">← 학습 자료실 목록</a></p>
+      <div class="study-book"><div class="cover">${it.cover && fileSet.has(it.cover) ? `<img src="${url(it.cover)}" alt="${esc(it.title)} 표지">` : `<div class="cover-ph">${esc(it.title)}</div>`}</div>
+      <div><h1 style="margin:0 0 6px">${esc(it.title)}</h1>${it.subtitle ? `<p class="muted" style="margin:0 0 8px">${esc(it.subtitle)}</p>` : ''}
+        <dl class="kv">${it.author ? `<dt>지은이·스승</dt><dd>${esc(it.author)}</dd>` : ''}${it.translator ? `<dt>옮긴이·편자</dt><dd>${esc(it.translator)}</dd>` : ''}${it.publisher ? `<dt>출판사</dt><dd>${esc(it.publisher)}</dd>` : ''}${it.book_type ? `<dt>책 형식</dt><dd>${esc(it.book_type)}</dd>` : ''}${it.year ? `<dt>펴낸 해</dt><dd>${esc(it.year)}</dd>` : ''}</dl>
+        ${(it.topics || []).length ? `<div class="labels">${it.topics.map(t => `<span class="t">${esc(t)}</span>`).join('')}</div>` : ''}
+        <div class="study-dl">${fl.map(f => `<a class="btn" href="${url(f.key)}" target="_blank" rel="noopener">${icon(f.key)} ${esc(kind(f.key))} 열기</a><a class="btn ghost" href="${url(f.key)}?dl">내려받기 <span class="small">${size(f.size)}</span></a>`).join('') || '<p class="muted">파일 준비 중</p>'}</div>
+      </div></div>
+      ${it.description ? `<h2 class="mb-h" style="margin-top:28px">소개</h2><div class="prose" style="padding:0">${esc(it.description).split(/\n{2,}/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('')}</div>` : ''}
+      ${fl.length > 1 ? `<h2 class="mb-h" style="margin-top:28px">파일</h2><ul class="mb-list">${fl.map(fileRow).join('')}</ul>` : ''}`;
+    $('#stBack').onclick = e => { e.preventDefault(); history.pushState(null, '', location.pathname + location.search); detail(); };
+    scrollTo(0, 0);
+  };
+  window.addEventListener('hashchange', detail); detail();
 }
 
 /* ---------- 허락서 보기 ---------- */
