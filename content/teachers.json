@@ -21,6 +21,17 @@
       "photo": ""
     },
     {
+      "id": "saddhamma",
+      "name": "삿담마랑시 사야도",
+      "roman": "Saddhammaraṃsi Sayadaw",
+      "aliases": [
+        "삿담마란시 사야도"
+      ],
+      "tradition": "mahasi",
+      "bio": "",
+      "photo": ""
+    },
+    {
       "id": "chanmyay",
       "name": "찬매 사야도",
       "roman": "Chanmyay Sayadaw",
@@ -55,26 +66,6 @@
       "id": "silananda",
       "name": "우 실라난다 사야도",
       "roman": "Sayadaw U Sīlānanda",
-      "aliases": [],
-      "tradition": "mahasi",
-      "bio": "",
-      "photo": ""
-    },
-    {
-      "id": "saddhamma",
-      "name": "삿담마랑시 사야도",
-      "roman": "Saddhammaraṃsi Sayadaw",
-      "aliases": [
-        "삿담마란시 사야도"
-      ],
-      "tradition": "mahasi",
-      "bio": "",
-      "photo": ""
-    },
-    {
-      "id": "fronsdal",
-      "name": "길 프론스달",
-      "roman": "Gil Fronsdal",
       "aliases": [],
       "tradition": "mahasi",
       "bio": "",
@@ -334,6 +325,15 @@
       "id": "panyavanta",
       "name": "빤냐완따 스님",
       "roman": "",
+      "aliases": [],
+      "tradition": "mahasi",
+      "bio": "",
+      "photo": ""
+    },
+    {
+      "id": "fronsdal",
+      "name": "길 프론스달",
+      "roman": "Gil Fronsdal",
       "aliases": [],
       "tradition": "mahasi",
       "bio": "",

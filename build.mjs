@@ -380,7 +380,7 @@ function libraryBody() {
   for (const t of TRADS) {
     const n = countTrad(t.id);
     if (t.region !== g) { g = t.region; trad += `<div class="group-name trad-region" data-region="${esc(g)}">${esc(g)}</div>`; }
-    const ts = [...(t.representatives || []), ...TEACHERS.filter(x => x.tradition === t.id && !(t.representatives || []).includes(x.id)).map(x => x.id)];
+    const ts = TEACHERS.filter(x => x.tradition === t.id || (t.representatives || []).includes(x.id)).map(x => x.id);  // 스승 목록(teachers.json) 순서
     trad += `<div class="trad-block${n === 0 ? ' empty' : ''}" data-trad-block="${t.id}">${chk('trad', t.id, esc(t.name), n)}
       <div class="sub" hidden>${ts.map(id => chk('teacher', id, esc(teacherById(id).name), countTeacher(id), (t.representatives || []).includes(id) ? '<span class="rep">대표</span>' : '')).join('')}</div></div>`;
   }
