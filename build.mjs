@@ -170,10 +170,9 @@ const safeName = s => String(s).replace(/[\\/:*?"<>|\u0000-\u001f]+/g, ' ').repl
 const DOWNLOADS = {};
 function dlName(b, e, kind) {
   const print = kind === 'pdf_print' || kind === 'pdf_cover';
-  const d = ymd((e[kind] || {}).created) || (print ? (ymd(e.file_created_print) || ymd(e.published)) : (ymd(e.file_created) || ymd(e.published_ebook) || ymd(e.published)));
   const ext = kind === 'epub' ? 'epub' : 'pdf';
   const tag = { pdf_print: e.pdf_cover && e.pdf_cover.url ? '_인쇄용_본문' : '_인쇄용', pdf_cover: '_인쇄용_표지' }[kind] || '';
-  return safeName(`${b.title}${tag}${d ? '_' + d : ''}`) + '.' + ext;
+  return safeName(`${b.title}${tag}`) + '.' + ext;  // 내려받는 파일 이름에는 날짜를 붙이지 않음 (운영자 요청, 2026-11-09)
 }
 const hasText = b => { const e = curEd(b), t = TEXTS[b.id]; return !!(t && (!t.edition || t.edition === e.label)); };
 // 법보시 도서관에 보일 책: 온라인 읽기나 내려받을 파일이 하나라도 있는 책 (없는 책은 我無말들 출판사 쪽에만)
