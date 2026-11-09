@@ -13,14 +13,17 @@ PROBE = """() => {
   const b = document.querySelector('#rBody'), rt = document.querySelector('.r-top'), on = !document.querySelector('#reader').classList.contains('chrome-off');
   const top = Math.max(b.getBoundingClientRect().top, on && rt ? rt.getBoundingClientRect().bottom : 0);  // 위 메뉴가 떠 있으면 그 아래부터가 보이는 곳
   const ch = (document.querySelector('.r-title small') || {}).textContent || '';
-  if (b.scrollTop < 4) return { kind: 'chapter', ch, text: '' };  // 장 처음
+  // 지금 화면 위쪽 30% 에 보이는 소제목들 (다음 › 가 이미 보이던 소제목에 또 멈추는지 보려고)
+  const seen = [...b.querySelectorAll('p.sub-h, p[data-pg]')].filter(e => { const r = e.getBoundingClientRect(), s = e.firstElementChild; return r.height > 0 && r.top >= top - 2 && r.top < top + (b.clientHeight - (top - b.getBoundingClientRect().top)) * 0.3 && (e.classList.contains('sub-h') || (s && s.tagName === 'STRONG' && s.textContent.trim() === e.textContent.trim())); }).map(e => e.textContent.trim().slice(0, 50));
+  window.__seen = seen;
+  if (b.scrollTop < 4) return { kind: 'chapter', ch, text: '', seen };  // 장 처음
   if (b.scrollTop >= b.scrollHeight - b.clientHeight - 2) return { kind: 'end', ch, text: '' };  // 장 끝까지 내려감(마지막 소제목이 화면 아래쪽)
   const els = [...b.querySelectorAll('p, img, .pmark, .r-toc, figure, h4, table')].filter(e => { const r = e.getBoundingClientRect(); return r.height > 0 && r.bottom > top + 4; });
   const e = els[0]; if (!e) return { kind: 'none', ch, text: '' };
   const t = e.textContent.trim(), s = e.firstElementChild;
   const bold = e.tagName === 'P' && e.children.length === 1 && s && s.tagName === 'STRONG' && s.textContent.trim() === t;
   const kind = e.classList.contains('sub-h') ? 'sub-h' : bold ? 'bold' : e.tagName === 'IMG' || e.closest('figure') ? 'image' : e.classList.contains('pmark') ? 'page-mark' : e.querySelector('.hl') ? 'colored' : 'para';
-  return { kind, ch, text: t.slice(0, 50), pg: e.dataset.pg || (e.closest('[data-pg]') || {dataset:{}}).dataset.pg };
+  return { kind, ch, text: t.slice(0, 50), pg: e.dataset.pg || (e.closest('[data-pg]') || {dataset:{}}).dataset.pg, seen };
 }"""
 bad = []
 with sync_playwright() as p:
@@ -32,13 +35,13 @@ with sync_playwright() as p:
         try: pg.wait_for_selector('#rNext', state='attached', timeout=15000)
         except Exception: print(bid, '읽기 화면 없음'); pg.close(); continue
         pg.evaluate("()=>{const c=document.querySelector('#p-toc [data-ci]'); c && c.click()}"); pg.wait_for_timeout(150)
-        stops, prev, same = 0, None, 0
+        stops, prev, same, prevSeen = 0, None, 0, []
         for i in range(3000):
             if pg.evaluate("document.querySelector('#rNext').disabled"): break
             # 사람이 메뉴를 띄워 놓고 › 를 누르는 것처럼 (메뉴가 글을 가리는지도 검사)
             pg.evaluate("document.querySelector('#reader').classList.remove('chrome-off'); document.querySelector('#rNext').click()"); pg.wait_for_timeout(60)
             r = pg.evaluate(PROBE); stops += 1
-            key = (r['ch'], r['text'], r['kind'])
+            key = (r['ch'], r['text'], r['kind'], r.get('pg'))
             if key == prev:
                 same += 1
                 if same == 1 and r['kind'] in ('sub-h', 'bold') and not pg.evaluate("(()=>{const r=document.querySelector('#rRange');return +r.value>=+r.max-3})()"): bad.append(f"{bid} · {r['ch'].split('·')[-1].strip()} · {r.get('pg')} · 같은 소제목에 두 번 멈춤: {r['text']}")
@@ -46,6 +49,9 @@ with sync_playwright() as p:
                     if pg.evaluate("(()=>{const r=document.querySelector('#rRange');return +r.value>=+r.max-3})()"): break  # 책 끝
                     bad.append(f"{bid} · {r['ch']} · 같은 곳에서 더 나가지 않음"); break
                 continue
+            if r['kind'] in ('sub-h', 'bold') and r['text'] in (prevSeen or []) and r['text'] != (prev or (0, 0, 0))[1]:
+                bad.append(f"{bid} · {r['ch'].split('·')[-1].strip()} · {r.get('pg')} · 이미 보이던 소제목에 또 멈춤: {r['text']}")
+            prevSeen = r.get('seen')
             same = 0; prev = key
             if os.environ.get('NAV_ALL'): print('  ', r)
             if r['kind'] not in ('chapter', 'sub-h', 'bold', 'end'):

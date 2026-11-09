@@ -851,7 +851,8 @@ function bindReader() {
     // 방금 멈춘 소제목이 늦게 받아진 그림 때문에 조금 내려가 있어도 다시 멈추지 않음
     const last = R.lastPin, near = v => v.e === last && Math.abs(v.y - cur) < body.clientHeight * 0.6;
     if (d > 0) {
-      const t = ts.find(v => v.y > cur + 12 && !near(v));
+      // 화면 위쪽(30%)에 이미 보이는 소제목은 건너뜀 — 장 처음 화면에 바로 보이는 소제목에서 또 멈추지 않게 (운영자 요청, 2026-11-10)
+      const t = ts.find(v => v.y > cur + Math.max(12, body.clientHeight * 0.3) && !near(v));
       if (t && (t.y < body.scrollHeight - body.clientHeight + 4 || cur < body.scrollHeight - body.clientHeight - 12)) { pin(t.e); return; }
       stepCh(1);
     } else {
