@@ -1,0 +1,46 @@
+# 그림책 원 사이트(dharma-storybooks.net) 매주 점검 — 도서관 사이트와는 무관
+# 매주 월요일 새벽 3시 17분(한국 시간)에 돌고, 결과는 storybooks-src 가지의 reports/latest.md
+name: storybooks-weekly
+on:
+  schedule:
+    - cron: "17 18 * * 0"   # UTC 일요일 18:17 = 한국 월요일 03:17
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: storybooks, cancel-in-progress: false }
+env:
+  SITE_BRANCH: storybooks   # 그림책 사이트를 만드는 가지 (main 에 합치면 main 으로)
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: storybooks-src, path: src }
+      - name: 원본 그림 보관함
+        uses: actions/cache@v4
+        with:
+          path: src/cache/orig
+          key: storybooks-orig-${{ github.run_id }}
+          restore-keys: storybooks-orig-
+      - name: 도구 설치
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q tesseract-ocr > /dev/null
+          pip install -q opencv-python-headless pillow numpy
+      - name: 점검
+        working-directory: src
+        env: { OMP_THREAD_LIMIT: "1" }
+        run: bash jobs/weekly.sh 2>&1 | tee jobs/weekly-log.txt
+      - name: 점검 결과 저장
+        working-directory: src
+        run: |
+          git config user.name "storybooks-bot"; git config user.email "actions@users.noreply.github.com"
+          git add -A && git commit -q -m "주간 점검 $(date +%F) [skip ci]" && git push -q || echo "바뀐 것 없음"
+      - name: 그림책 사이트 목록 갱신
+        run: |
+          git clone -q --depth 1 -b "$SITE_BRANCH" "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" site
+          if ! cmp -s src/data/catalog.json site/storybooks/data/catalog.json; then
+            cp src/data/catalog.json site/storybooks/data/catalog.json
+            cd site && git config user.name "storybooks-bot" && git config user.email "actions@users.noreply.github.com"
+            git add storybooks/data/catalog.json && git commit -q -m "그림책: 원 사이트 새 목록 반영 ($(date +%F))" && git push -q
+          else echo "목록 그대로"; fi
