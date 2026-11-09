@@ -1,0 +1,316 @@
+[
+ {
+  "img": "images/034-The-Amorous-Fish-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     310,
+     196
+    ],
+    "shape": "box",
+    "en": "Tale The of Oss Passion, gE Fish HAs Delusion, fatale, and Liberation Sat 2a (Based on the Tales of ancient Benares)",
+    "ko": "물고기 자따까\n애욕과 미혹, 그리고 해탈 이야기\n(옛 바라나시 이야기에서)"
+   }
+  ]
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     79,
+     83
+    ],
+    "shape": "box",
+    "en": "Under King Brahmadatta of ancient Benares, the Bodhisatta served as the royal family priest.",
+    "ko": "옛 바라나시의 브라흐마닷따 왕 때, 보살은 왕실의 사제였습니다."
+   },
+   {
+    "seed": [
+     601,
+     78
+    ],
+    "shape": "box",
+    "en": "He possessed rare and secret gift: the ability to understand the language of all living animals.",
+    "ko": "그에게는 드물고 비밀스러운 능력이 있었습니다. 살아 있는 모든 동물의 말을 알아듣는 것이었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     261,
+     363
+    ],
+    "shape": "box",
+    "en": "Deep in the river, river, great fish swam amorously with his wife Blinded by passion and enamored by her presence, he was entirely oblivious to the dangerous world above",
+    "ko": "깊은 강물 속에서 큰 물고기 한 마리가 아내와 정답게 헤엄치고 있었습니다. 애욕에 눈멀고 아내에게 홀딱 빠진 그는 물 위의 위험한 세상을 전혀 몰랐습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     357,
+     213
+    ],
+    "shape": "box",
+    "en": "Fishermen cast their net into the currents",
+    "ko": "어부들이 물살에 그물을 던졌습니다."
+   },
+   {
+    "seed": [
+     81,
+     378
+    ],
+    "shape": "box",
+    "en": "Sce ing the trap, the wife swiftly made circuit and escaped.",
+    "ko": "덫을 본 아내는 재빨리 돌아서 빠져나갔습니다."
+   },
+   {
+    "seed": [
+     428,
+     376
+    ],
+    "shape": "box",
+    "en": "But her spouse, blinded by desire, sailed direct! into the fatal meshes",
+    "ko": "그러나 애욕에 눈먼 남편은 곧장 죽음의 그물코로 헤엄쳐 들어갔습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     458,
+     72
+    ],
+    "shape": "box",
+    "en": "from the river, the fish was flung alive onto the burning ning sa",
+    "ko": "강에서 끌려 나온 물고기는 산 채로 뜨거운 모래 위에 내던져졌습니다."
+   },
+   {
+    "seed": [
+     513,
+     372
+    ],
+    "shape": "box",
+    "en": "The fishermen men began lighting glow emb rs and ittling inga sharp rp spit to roast him for their meal.",
+    "ko": "어부들은 그를 구워 먹으려고 숯불을 피우고 날카로운 꼬챙이를 깎기 시작했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     362,
+     346
+    ],
+    "shape": "box",
+    "en": "Death was imminent. Yet, the fish did ai fie fear Eng the embers bers or the agonizing spit",
+    "ko": "죽음이 코앞이었습니다. 그런데 물고기는 숯불도 무시무시한 꼬챙이도 두려워하지 않았습니다."
+   },
+   {
+    "seed": [
+     145,
+     376
+    ],
+    "shape": "box",
+    "en": "only ago distressing th ht that his wife would believe he had abandoned her for another.",
+    "ko": "오직 아내가 ‘그가 나를 버리고 다른 이에게 갔다’고 여길까 봐 괴로워했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     178,
+     132,
+     622,
+     246
+    ],
+    "align": "center",
+    "ko": "나 망 시땅 나 망 운항, 나 망 잘라스미 바다낭,\n얀짜 망 만냐떼 맛치: ‘안냥 소 라띠야 가또’ 띠.\n\n추위도 더위도 그물도 아니라오…\n내 아내가 ‘그가 즐거움을 찾아 다른 이에게 갔다’고 여길까 그것이 괴롭소.",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     266,
+     338
+    ],
+    "shape": "bubble",
+    "en": "Just then, the priest came to the riverside to bathe. Tuning into the language of animals, he heard the fish's bizarre lamentation over the crackling of the fire.",
+    "ko": "그때 사제가 목욕하러 강가에 왔습니다. 동물의 말에 귀 기울이던 그는, 불 타는 소리 너머로 물고기의 기이한 탄식을 들었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     491,
+     85
+    ],
+    "shape": "bubble",
+    "en": "Impending pending Death",
+    "ko": "다가온 죽음",
+    "em": 15
+   },
+   {
+    "seed": [
+     639,
+     157
+    ],
+    "shape": "bubble",
+    "en": "State of Passion/Delusion",
+    "ko": "+ 애욕과 미혹에 빠진 마음",
+    "em": 15
+   },
+   {
+    "seed": [
+     478,
+     271
+    ],
+    "shape": "bubble",
+    "en": "Rebirth in Hell",
+    "ko": "지옥에 다시 태어남",
+    "em": 15
+   },
+   {
+    "seed": [
+     258,
+     342
+    ],
+    "shape": "bubble",
+    "en": "The priest recognized profound spiritual danger. If being dies while its mind is clouded by the unhealthy lament of passion, it cannot escape rebirth in hell. He resolved to intervene.",
+    "ko": "사제는 큰 영적 위험을 알아보았습니다.\n애욕의 해로운 탄식에 마음이 흐려진 채 죽으면 지옥에 다시 태어날 수밖에 없습니다. 그는 나서기로 마음먹었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     290,
+     66
+    ],
+    "shape": "box",
+    "en": "The priest approached the ca",
+    "ko": "사제가 어부들에게 다가갔습니다."
+   },
+   {
+    "seed": [
+     310,
+     122
+    ],
+    "shape": "bubble",
+    "en": "My men, don't you supply us with fish every day for our curry?",
+    "ko": "여보게들, 날마다 우리 반찬으로 물고기를 대 주지 않았나?"
+   },
+   {
+    "seed": [
+     566,
+     130
+    ],
+    "shape": "bubble",
+    "en": "What do you say, sir? Pray, take any fish you fancy!",
+    "ko": "무슨 말씀이십니까, 나리? 마음에 드는 물고기를 얼마든지 가져가십시오!"
+   },
+   {
+    "seed": [
+     258,
+     342
+    ],
+    "shape": "bubble",
+    "en": "The priest recognized profound spiritual danger. danger, If being dies while its mind is clouded by the unhealthy lament of passion, it cannot escape rebirth in hell. He resolved to intervene.",
+    "ko": "사제는 큰 영적 위험을 알아보았습니다.\n애욕의 해로운 탄식에 마음이 흐려진 채 죽으면 지옥에 다시 태어날 수밖에 없습니다. 그는 나서기로 마음먹었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     174,
+     97
+    ],
+    "shape": "box",
+    "en": "“We don’t need any but this one,” the priest said. “Only give us this one.”",
+    "ko": "“다른 건 필요 없고 이 물고기만 주게.” 사제가 말했습니다."
+   },
+   {
+    "seed": [
+     545,
+     316
+    ],
+    "shape": "box",
+    "en": "“He’s yours, sir,” the fishermen agreed, happily surrendering their catch to the revered royal priest",
+    "ko": "“가져가십시오, 나리.” 어부들은 존경하는 왕실 사제에게 기꺼이 물고기를 내주었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     105,
+     327
+    ],
+    "shape": "box",
+    "en": "Seated on the bank, the Bodhisatta spoke to the creature:",
+    "ko": "보살은 강둑에 앉아 물고기에게 말했습니다."
+   },
+   {
+    "seed": [
+     453,
+     317
+    ],
+    "shape": "box",
+    "en": "“Friend fish, if had 3 not seen you today, Bod you would have met your death. Cease for the future to be the slave of passion.”",
+    "ko": "“벗 물고기여, 오늘 내가 너를 보지 못했다면 너는 죽었을 것이다. 앞으로는 애욕의 노예가 되지 마라.”"
+   }
+  ]
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     104,
+     253
+    ],
+    "shape": "box",
+    "en": "With this final exhortation, he threw the fish back into the sanctuary of the water, and peacefully departed for the city.",
+    "ko": "이렇게 마지막으로 타이른 뒤, 보살은 물고기를 안전한 물속으로 돌려보내고 조용히 성으로 돌아갔습니다."
+   },
+   {
+    "seed": [
+     104,
+     324
+    ],
+    "shape": "box",
+    "en": "The fish was saved from the fire, and from himself.",
+    "ko": "물고기는 불에서, 그리고 자기 자신에게서 구원받았습니다."
+   }
+  ]
+ }
+]
