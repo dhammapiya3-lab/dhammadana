@@ -907,3 +907,7 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .study-book .cover img{width:100%;height:100%;object-fit:cover;display:block}
 .study-dl{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 @media (max-width:620px){.study-book{grid-template-columns:120px minmax(0,1fr);gap:16px}}
+
+.book .a.publ{margin-top:1px;font-size:12px}
+.people.publ{font-size:14px;margin-top:2px}
+.people.publ a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
