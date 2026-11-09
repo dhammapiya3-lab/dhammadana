@@ -882,14 +882,18 @@ function bindReader() {
     }
     const ch = n => { const c = chapters()[chapterOf(n)]; return c && c.title ? c.title : ''; };
     R.findTerms = terms;
-    R.findRes = `<p class="note">${hits.length ? `${hits.length}곳을 찾았습니다.` : '찾는 말이 없습니다.'}${group ? ` (${group.map(esc).join(', ')} 함께 찾음)` : ''}</p>
-      <ul class="find-list">${hits.slice(0, 200).map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}"><span class="muted small">${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span><br>${hl(h.s, terms)}</button></li>`).join('')}</ul>${hits.length > 200 ? '<p class="note">앞의 200곳만 보입니다. 더 자세한 말로 찾아보세요.</p>' : ''}`;
+    // 쪽 번호로 찾기: '74', '74쪽', 'p.74', '74페이지' → 그 쪽으로 가는 줄을 맨 위에 (운영자 요청, 2026-11-10)
+    const pm = q.replace(/\s+/g, '').match(/^(?:p\.?|pp\.?)?(\d{1,4})(?:쪽|페이지|면|p)?$/i);
+    const pgHits = pm ? R.pages.filter(x => String(x.label || '').replace(/쪽$/, '') === pm[1]) : [];
+    const pgHtml = pgHits.map(x => `<li><button class="link" data-find="${x.n}" data-k="-1"><b>📄 ${esc(pageName(x))}으로 가기</b>${ch(x.n) ? `<br><span class="muted small">${esc(ch(x.n))}</span>` : ''}</button></li>`).join('');
+    R.findRes = `<p class="note">${pgHits.length ? `${esc(pageName(pgHits[0]))}이 있습니다. ` : ''}${hits.length ? `${hits.length}곳을 찾았습니다.` : pgHits.length ? '' : '찾는 말이 없습니다.'}${group ? ` (${group.map(esc).join(', ')} 함께 찾음)` : ''}</p>
+      <ul class="find-list">${pgHtml}${hits.slice(0, 200).map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}"><span class="muted small">${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span><br>${hl(h.s, terms)}</button></li>`).join('')}</ul>${hits.length > 200 ? '<p class="note">앞의 200곳만 보입니다. 더 자세한 말로 찾아보세요.</p>' : ''}`;
     $('#findRes').innerHTML = R.findRes; bindFind();
   };
   const bindFind = () => $$('[data-find]', el).forEach(b => b.onclick = () => {
-    R.hl = R.findTerms || []; const n = +b.dataset.find, k = +b.dataset.k;
-    R.i = n - 1; stopSpeak(false); renderReader(); $('#p-find').classList.add('open');
-    const t = $(`[data-pg="${n}"][data-s="${k}"]`); if (t) { t.scrollIntoView({ block: 'center' }); t.classList.add('found'); setTimeout(() => t.classList.remove('found'), 1800); }
+    const n = +b.dataset.find, k = +b.dataset.k; R.hl = k < 0 ? [] : (R.findTerms || []);
+    R.i = n - 1; stopSpeak(false); renderReader(); if (k >= 0) $('#p-find').classList.add('open');  // 쪽으로 가기는 찾기 창을 닫고 그 쪽 첫머리로
+    const t = k < 0 ? $('#pm-' + n) : $(`[data-pg="${n}"][data-s="${k}"]`); if (t) { t.scrollIntoView({ block: k < 0 ? 'start' : 'center' }); t.classList.add('found'); setTimeout(() => t.classList.remove('found'), 1800); }
   });
   bindFind();
   $$('[data-zoom-img]', el).forEach(b => b.onclick = () => zoomView(`<img src="${esc(b.dataset.zoomImg)}" alt="${esc(b.dataset.cap)}">`, b.dataset.cap || '그림'));
