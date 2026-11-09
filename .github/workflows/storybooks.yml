@@ -1,0 +1,33 @@
+# 그림책 번역 작업용 자동 작업 (이 가지에서만 돈다. 사이트 배포와 무관)
+name: storybooks-pipeline
+on:
+  push:
+    branches: [storybooks-src]
+    paths: ["jobs/**"]
+permissions:
+  contents: write
+concurrency: { group: storybooks, cancel-in-progress: false }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - name: 도구 설치
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q tesseract-ocr fonts-noto-cjk > /dev/null
+          pip install -q opencv-python-headless pillow numpy fonttools boto3
+      - name: 작업 실행
+        env:
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+        run: bash jobs/run.sh 2>&1 | tee jobs/last-log.txt
+      - name: 결과 저장
+        if: always()
+        run: |
+          git config user.name "storybooks-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -q -m "작업 결과 [skip ci]" || echo "바뀐 것 없음"
+          git push
