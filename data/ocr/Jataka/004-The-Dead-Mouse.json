@@ -19,13 +19,13 @@
      417
     ],
     "shape": "box",
-    "en": "The Merchant Jataka Tale of Compounding Value",
-    "conf": 91
+    "en": "The Mouse Merchant Jataka Tale of Compounding Value",
+    "conf": 92
    },
    {
     "seed": [
-     250,
-     391
+     191,
+     398
     ],
     "bbox": [
      466,
@@ -34,7 +34,7 @@
      1402
     ],
     "shape": "box",
-    "en": "single observation transformed dead mouse into an empire.",
+    "en": "How single observation transformed dead mouse into an empire.",
     "conf": 96
    }
   ],
@@ -61,7 +61,7 @@
     ],
     "shape": "box",
     "en": "In ancient Benares, Cullakasetthi the wise Treasurer, read the stars above dead mouse.",
-    "conf": 87
+    "conf": 71
    },
    {
     "seed": [
@@ -76,7 +76,7 @@
     ],
     "shape": "bubble",
     "en": "clever fellow with his wits about him could start business with just this mouse",
-    "conf": 96
+    "conf": 64
    }
   ],
   "loose": []
@@ -91,8 +91,8 @@
   "boxes": [
    {
     "seed": [
-     112,
-     67
+     113,
+     80
     ],
     "bbox": [
      116,
@@ -101,13 +101,13 @@
      354
     ],
     "shape": "box",
-    "en": "poor rusting the wise man’s young sold the man mouse to tavern to feed their cat.",
+    "en": "Trusting the wise man’s logic, poor young man sold the mouse to tavern to feed their cat.",
     "conf": 77
    },
    {
     "seed": [
      674,
-     353
+     352
     ],
     "bbox": [
      2010,
@@ -142,7 +142,7 @@
      463
     ],
     "shape": "box",
-    "en": "waten With his farthing, he bought molasses and He refreshed tired flower-gatherers returning from the forest, who paid him in blooms.",
+    "en": "With his farthing, he bought molasses and waten water. He refreshed tired flower-gatherers returning from the forest, who paid him in blooms.",
     "conf": 47
    },
    {
@@ -183,8 +183,8 @@
      317
     ],
     "shape": "box",
-    "en": "king severe storm littered the garden with debris.",
-    "conf": 96
+    "en": "severe storm littered the king’s garden with debris.",
+    "conf": 91
    },
    {
     "seed": [
@@ -198,7 +198,7 @@
      645
     ],
     "shape": "bubble",
-    "en": "will clear this entirely, if the wood.",
+    "en": "will clear this entirely, if may ke the wood.",
     "conf": 95
    }
   ],
@@ -224,11 +224,13 @@
      403
     ],
     "shape": "box",
-    "en": "To clear the heavy branches quickly, he leveraged his remaining molasses. He bribed the local children, turning monumental task into playground game.",
-    "conf": 96
+    "en": "To clear the heavy branches quickly, he leveraged his remaining molasses. He bribed ribed the local children, turning monumental task into playground game.",
+    "conf": 92
    }
   ],
-  "loose": []
+  "loose": [
+   "atiz"
+  ]
  },
  {
   "img": "images/004-The-Dead-Mouse-07-Original.jpg",
@@ -250,13 +252,28 @@
      403
     ],
     "shape": "box",
-    "en": "The king’s potter desperately needed fuel to fire palace bowls. He bought the gathered wood on the spot.",
+    "en": "The king’s potter desperately needed fuel to fire palace bowls. He bought the gathered wood on the spot",
     "conf": 92
    },
    {
     "seed": [
-     112,
-     374
+     106,
+     365
+    ],
+    "bbox": [
+     152,
+     1141,
+     896,
+     1207
+    ],
+    "shape": "bubble",
+    "en": "acquired: Sixteen",
+    "conf": 96
+   },
+   {
+    "seed": [
+     75,
+     369
     ],
     "bbox": [
      152,
@@ -265,8 +282,8 @@
      1286
     ],
     "shape": "box",
-    "en": "and five vessels.",
-    "conf": 97
+    "en": "pennies and five vessels",
+    "conf": 96
    },
    {
     "seed": [
@@ -280,14 +297,12 @@
      1359
     ],
     "shape": "box",
-    "en": "24 pennies.",
-    "conf": 95
+    "en": "24 pennies",
+    "conf": 96
    }
   ],
   "loose": [
-   "Capital",
-   "acquired:",
-   "Sixteen"
+   "TEN"
   ]
  },
  {
@@ -310,8 +325,8 @@
      407
     ],
     "shape": "box",
-    "en": "He used his vessels to hydrate 500 grass mowers, asking for nothing in return. His strategic generosity caught the eye of highly influential land and traders. sea",
-    "conf": 94
+    "en": "He used his vessels to hydrate 500 grass mowers, asking for nothing in return. His strategic generosity caught the eye of highly influential land and sea traders.",
+    "conf": 96
    }
   ],
   "loose": []
@@ -336,8 +351,8 @@
      354
     ],
     "shape": "box",
-    "en": "Hearing horse dealer was arriving, he called in favor. Each mower gave him one bundle of grass, to hold their own inventory.",
-    "conf": 71
+    "en": "Hearing horse dealer was arriving, he called in favor. Each mower gave him one bundle of grass, promising to hold their own inventory.",
+    "conf": 77
    },
    {
     "seed": [
@@ -351,8 +366,8 @@
      1316
     ],
     "shape": "box",
-    "en": "This cornered market monopoly yielded him staggering 1,000 pieces.",
-    "conf": 96
+    "en": "This cornered market monopoly Pic yielded Ided him staggering 1,000 pieces.",
+    "conf": 41
    }
   ],
   "loose": []
@@ -366,6 +381,7 @@
   "ref": 800,
   "boxes": [],
   "loose": [
+   "UNS",
    "Tipped",
    "off",
    "about",
@@ -415,11 +431,13 @@
    "cargo,",
    "only",
    "turned",
+   "away",
    "because",
-   "'great",
+   "\"great",
    "merchant\"",
    "had",
    "already",
+   "claimed",
    "it."
   ]
  },
@@ -443,7 +461,7 @@
      324
     ],
     "shape": "box",
-    "en": "To buy share in the ship, and then buy him out the 100 merchants paid massive premium.",
+    "en": "To buy share in the ship, and then buy him out entirely, the 100 merchants paid massive premium.",
     "conf": 96
    },
    {
@@ -459,12 +477,12 @@
     ],
     "shape": "box",
     "en": "Mouse",
-    "conf": 94
+    "conf": 97
    },
    {
     "seed": [
-     159,
-     329
+     165,
+     323
     ],
     "bbox": [
      486,
@@ -473,8 +491,8 @@
      1127
     ],
     "shape": "box",
-    "en": "Farthing",
-    "conf": 97
+    "en": "1 Farthing",
+    "conf": 82
    },
    {
     "seed": [
@@ -508,22 +526,7 @@
    },
    {
     "seed": [
-     533,
-     324
-    ],
-    "bbox": [
-     1623,
-     1051,
-     1947,
-     1127
-    ],
-    "shape": "box",
-    "en": "Pieces",
-    "conf": 97
-   },
-   {
-    "seed": [
-     701,
+     695,
      323
     ],
     "bbox": [
@@ -533,26 +536,25 @@
      1127
     ],
     "shape": "box",
-    "en": ",000 Pieces",
-    "conf": 90
-   },
-   {
-    "seed": [
-     261,
-     388
-    ],
-    "bbox": [
-     605,
-     1227,
-     2033,
-     1408
-    ],
-    "shape": "box",
-    "en": "In four short months, dead mouse was systematically leveraged into 200,000 pieces.",
-    "conf": 95
+    "en": ",000 Piec es",
+    "conf": 85
    }
   ],
-  "loose": []
+  "loose": [
+   "1,000",
+   "four",
+   "short",
+   "months,",
+   "dead",
+   "mouse",
+   "was",
+   "systematically",
+   "leveraged",
+   "into",
+   "200,000",
+   "pieces.",
+   "1,000"
+  ]
  },
  {
   "img": "images/004-The-Dead-Mouse-13-Original.jpg",
@@ -564,8 +566,8 @@
   "boxes": [
    {
     "seed": [
-     159,
-     374
+     183,
+     370
     ],
     "bbox": [
      420,
@@ -574,8 +576,8 @@
      1408
     ],
     "shape": "box",
-    "en": "He to Cullakasetthi with half his wealth to show deep gratitude. Impressed by his brilliance, the wise Treasurer married the young to his daughter and made him his sole heir man",
-    "conf": 92
+    "en": "He returned to Cullakase tthi with half his wealth Ith to show deep gratitude. Impressed by his brilliance, the wise Treasurer married the young man to his daughter and made him his sole heir.",
+    "conf": 93
    }
   ],
   "loose": []
@@ -601,7 +603,7 @@
     ],
     "shape": "box",
     "en": "Lifetimes later, having attained Supreme Awakening, the Buddha recounted this past life to his assembly of monks and nuns, revealing timeless truth of the universe.",
-    "conf": 94
+    "conf": 95
    }
   ],
   "loose": []
@@ -626,8 +628,8 @@
      496
     ],
     "shape": "bubble",
-    "en": "Even with little, intelligent. an skilled person, by means of an offering, raises himself up",
-    "conf": 82
+    "en": "Even with little, an intelligent, skilled person, by means of an offering, raises himself up...",
+    "conf": 90
    },
    {
     "seed": [
@@ -641,8 +643,8 @@
      1405
     ],
     "shape": "box",
-    "en": "...like small fire that has been fanned, is raised up",
-    "conf": 82
+    "en": "...like small fire that has been fanned, is raised up.",
+    "conf": 89
    }
   ],
   "loose": []

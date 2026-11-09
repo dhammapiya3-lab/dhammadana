@@ -9,6 +9,21 @@
   "boxes": [
    {
     "seed": [
+     301,
+     93
+    ],
+    "bbox": [
+     979,
+     298,
+     1666,
+     410
+    ],
+    "shape": "box",
+    "en": "The Divine Messenger.",
+    "conf": 97
+   },
+   {
+    "seed": [
      351,
      186
     ],
@@ -19,11 +34,12 @@
      893
     ],
     "shape": "box",
-    "en": "The Story King Makhadeva of",
-    "conf": 92
+    "en": "The Story of Kins Makhadeva of Mithila",
+    "conf": 69
    }
   ],
   "loose": [
+   "Wy,",
    "LY,"
   ]
  },
@@ -34,8 +50,64 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
-  "loose": []
+  "boxes": [
+   {
+    "seed": [
+     220,
+     386
+    ],
+    "bbox": [
+     109,
+     1260,
+     886,
+     1362
+    ],
+    "shape": "box",
+    "en": "84,000 years Prince. nce.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     358,
+     382
+    ],
+    "bbox": [
+     932,
+     1260,
+     1709,
+     1362
+    ],
+    "shape": "box",
+    "en": "years Viceroy.",
+    "conf": 97
+   },
+   {
+    "seed": [
+     608,
+     382
+    ],
+    "bbox": [
+     1756,
+     1260,
+     2533,
+     1362
+    ],
+    "shape": "box",
+    "en": "84,000 years King.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "VAS",
+   "WAS",
+   "the",
+   "realm",
+   "Videha,",
+   "King",
+   "Makhadeva",
+   "ruled",
+   "righteously."
+  ]
  },
  {
   "img": "images/009-The-Kings-Grey-Hair-03-Original.jpg",
@@ -57,8 +129,8 @@
      512
     ],
     "shape": "bubble",
-    "en": "Tell me, friend barber, when you see any grey hairs in my head.",
-    "conf": 95
+    "en": "Tell me, friend barber. when you see any grey hairs in my head",
+    "conf": 93
    }
   ],
   "loose": []
@@ -70,7 +142,23 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
+  "boxes": [
+   {
+    "seed": [
+     94,
+     39
+    ],
+    "bbox": [
+     109,
+     119,
+     850,
+     238
+    ],
+    "shape": "box",
+    "en": "Ye and years afte",
+    "conf": 94
+   }
+  ],
   "loose": []
  },
  {
@@ -94,17 +182,25 @@
     ],
     "shape": "bubble",
     "en": "My lord... have found single grey hair.",
+    "conf": 94
+   },
+   {
+    "seed": [
+     595,
+     326
+    ],
+    "bbox": [
+     1941,
+     916,
+     2493,
+     1250
+    ],
+    "shape": "bubble",
+    "en": "Pull it out, my friend, and lay it in my palm.",
     "conf": 96
    }
   ],
-  "loose": [
-   "Pull",
-   "out,",
-   "friend,",
-   "and",
-   "lay",
-   "palm."
-  ]
+  "loose": []
  },
  {
   "img": "images/009-The-Kings-Grey-Hair-06-Original.jpg",
@@ -113,7 +209,23 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
+  "boxes": [
+   {
+    "seed": [
+     234,
+     60
+    ],
+    "bbox": [
+     747,
+     136,
+     1894,
+     291
+    ],
+    "shape": "box",
+    "en": "With golden tongs, the barber plucked the hair. The King still had 84,000 years to live, yet...",
+    "conf": 93
+   }
+  ],
   "loose": []
  },
  {
@@ -126,8 +238,8 @@
   "boxes": [
    {
     "seed": [
-     61,
-     36
+     37,
+     37
     ],
     "bbox": [
      99,
@@ -136,8 +248,8 @@
      255
     ],
     "shape": "box",
-    "en": "the sight of that hair, one was filled with emotion.",
-    "conf": 96
+    "en": "...at the sight of that one hair, he was filled with deep emotion.",
+    "conf": 58
    },
    {
     "seed": [
@@ -151,11 +263,12 @@
      1382
     ],
     "shape": "box",
-    "en": "He saw the King Death. He felt cooped within blazing hut.",
+    "en": "He saw the King of Death. He felt cooped within blazing hut.",
     "conf": 92
    }
   ],
   "loose": [
+   "COD",
    "ORD"
   ]
  },
@@ -179,8 +292,23 @@
      555
     ],
     "shape": "bubble",
-    "en": "Foolish Makhadeva! Grey hairs have come before you rid yourself of depravities.",
-    "conf": 78
+    "en": "Foolish Makhadeva! Grey hairs have come before you rid yourself of depravities",
+    "conf": 81
+   },
+   {
+    "seed": [
+     59,
+     365
+    ],
+    "bbox": [
+     192,
+     1200,
+     1610,
+     1289
+    ],
+    "shape": "box",
+    "en": "He within, His raiment",
+    "conf": 76
    }
   ],
   "loose": []
@@ -195,6 +323,21 @@
   "boxes": [
    {
     "seed": [
+     78,
+     75
+    ],
+    "bbox": [
+     195,
+     136,
+     1990,
+     602
+    ],
+    "shape": "bubble",
+    "en": "To the barber, he granted village yielding hundred if thousand pieces of money.",
+    "conf": 80
+   },
+   {
+    "seed": [
      85,
      212
     ],
@@ -206,20 +349,10 @@
     ],
     "shape": "bubble",
     "en": "This very day, will renounce the world for the monk's life.",
-    "conf": 74
+    "conf": 71
    }
   ],
-  "loose": [
-   "the",
-   "barber,",
-   "granted",
-   "village",
-   "yielding",
-   "hundred",
-   "thousand",
-   "pieces",
-   "money."
-  ]
+  "loose": []
  },
  {
   "img": "images/009-The-Kings-Grey-Hair-10-Original.jpg",
@@ -241,8 +374,8 @@
      661
     ],
     "shape": "bubble",
-    "en": "My son, have had my fill of human joys, and fain would taste the joys divine. Take the sovereignty upon yourself.",
-    "conf": 91
+    "en": "My son, have had my fill of human joys, and fain would taste the joys divine. Take the sovereignty upon yourself",
+    "conf": 94
    }
   ],
   "loose": [
@@ -273,12 +406,12 @@
     ],
     "shape": "bubble",
     "en": "What is the reason sire, why you adopt the monk's life?",
-    "conf": 52
+    "conf": 91
    },
    {
     "seed": [
-     73,
-     363
+     75,
+     376
     ],
     "bbox": [
      212,
@@ -287,7 +420,7 @@
      1293
     ],
     "shape": "box",
-    "en": "Holding fi ee up the hair,",
+    "en": "Holding le grey hair, fi the King ee answered...",
     "conf": 48
    }
   ],
@@ -322,7 +455,7 @@
    "messengers",
    "manifest;",
    "time",
-   "forth."
+   "forth"
   ]
  },
  {
@@ -335,6 +468,21 @@
   "boxes": [
    {
     "seed": [
+     282,
+     341
+    ],
+    "bbox": [
+     916,
+     1127,
+     1726,
+     1200
+    ],
+    "shape": "box",
+    "en": "He renounced sovereignty that self-same day.",
+    "conf": 93
+   },
+   {
+    "seed": [
      178,
      373
     ],
@@ -345,11 +493,14 @@
      1306
     ],
     "shape": "box",
-    "en": "Dwell in the Mango-grove, he fostered the Four Divine Abidings for 84,000 years.",
+    "en": "Dwell ing in the Mango-grove, he fostered the Four Divine Abidings for 84,000 years.",
     "conf": 92
    }
   ],
-  "loose": []
+  "loose": [
+   "VI,",
+   "NYY"
+  ]
  },
  {
   "img": "images/009-The-Kings-Grey-Hair-14-Original.jpg",
@@ -358,7 +509,23 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
+  "boxes": [
+   {
+    "seed": [
+     189,
+     206
+    ],
+    "bbox": [
+     582,
+     678,
+     1375,
+     807
+    ],
+    "shape": "box",
+    "en": "Dyin with Absorption full and unbroken, he was reborn in the Realm of Brahma.",
+    "conf": 57
+   }
+  ],
   "loose": []
  }
 ]

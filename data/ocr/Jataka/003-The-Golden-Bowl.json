@@ -9,8 +9,8 @@
   "boxes": [
    {
     "seed": [
-     123,
-     67
+     100,
+     69
     ],
     "bbox": [
      149,
@@ -19,8 +19,8 @@
      334
     ],
     "shape": "box",
-    "en": "Five aeons ago, in the kingdom of Seri, rivalry was born.",
-    "conf": 96
+    "en": "Five aeons ago, in the kingdom of Seri, rivalry was born",
+    "conf": 95
    },
    {
     "seed": [
@@ -35,7 +35,7 @@
     ],
     "shape": "box",
     "en": "The Supreme Buddha recounts past life to illustrate the heavy cost of missing the True Dhamma.",
-    "conf": 93
+    "conf": 94
    },
    {
     "seed": [
@@ -49,8 +49,8 @@
      1359
     ],
     "shape": "box",
-    "en": "This is the tale of two hawkers, one golden bowl, and",
-    "conf": 95
+    "en": "This is the tale of two hawkers, one golden bowl, and Sate",
+    "conf": 43
    }
   ],
   "loose": []
@@ -75,8 +75,8 @@
      1442
     ],
     "shape": "box",
-    "en": "Crossing the Telavaha, dealers entered the river two city of Andhapura. Both were known as ‘the Seriva They divided the streets to hawk their Bodhisatta. wares. One was greed he was the",
-    "conf": 78
+    "en": "Crossing rossing the river Telavaha, two dealers entered the city of Andhapura. Both were known as ‘the Seriva.’ They divided the streets to hawk their wares. One was greedy. The he other OES the Bodhisatta.",
+    "conf": 42
    }
   ],
   "loose": []
@@ -91,8 +91,8 @@
   "boxes": [
    {
     "seed": [
-     96,
-     67
+     62,
+     62
     ],
     "bbox": [
      126,
@@ -101,8 +101,8 @@
      393
     ],
     "shape": "box",
-    "en": "Once rich merchants, only grandmother and granddaughte survived, stripped of their wealth",
-    "conf": 76
+    "en": "aed Once rich merchants, only grandmother and granddaughter survived, stripped of their wealth.",
+    "conf": 44
    },
    {
     "seed": [
@@ -116,13 +116,11 @@
      1319
     ],
     "shape": "box",
-    "en": "Hidden They lived by grueling hired labor. among their rusted pots lay forgotten, dirt-encrusted golden bowl—a relic of their past.",
-    "conf": 60
+    "en": "They lived by grueling hired labor. Hidden among their rusted pots lay forgotten, dirt-encrusted golden bowl—a relic of their past.",
+    "conf": 47
    }
   ],
-  "loose": [
-   "ate"
-  ]
+  "loose": []
  },
  {
   "img": "images/003-The-Golden-Bowl-04-Original.jpg",
@@ -134,8 +132,38 @@
   "boxes": [
    {
     "seed": [
-     650,
-     136
+     129,
+     66
+    ],
+    "bbox": [
+     109,
+     179,
+     658,
+     427
+    ],
+    "shape": "bubble",
+    "en": "“Waterpots to sell!” ried the greedy hawker.",
+    "conf": 57
+   },
+   {
+    "seed": [
+     541,
+     80
+    ],
+    "bbox": [
+     1716,
+     188,
+     2242,
+     450
+    ],
+    "shape": "bubble",
+    "en": "“Grandmother, please buy me trinket!”",
+    "conf": 96
+   },
+   {
+    "seed": [
+     621,
+     138
     ],
     "bbox": [
      1994,
@@ -144,28 +172,26 @@
      589
     ],
     "shape": "box",
-    "en": "“We are poor, child. What can we offer?”",
-    "conf": 96
+    "en": "“We are poor, child What can we offer?”",
+    "conf": 51
+   },
+   {
+    "seed": [
+     522,
+     266
+    ],
+    "bbox": [
+     1594,
+     784,
+     2076,
+     1075
+    ],
+    "shape": "bubble",
+    "en": "“We have this useless, dirty bowl. Let us trade it”",
+    "conf": 78
    }
   ],
-  "loose": [
-   "“Waterpots",
-   "sell!”",
-   "please",
-   "cried",
-   "the",
-   "greedy",
-   "buy",
-   "trinket!”",
-   "“We",
-   "have",
-   "this",
-   "useless",
-   "dirty",
-   "bowl.",
-   "Let",
-   "trade"
-  ]
+  "loose": []
  },
  {
   "img": "images/003-The-Golden-Bowl-05-Original.jpg",
@@ -175,21 +201,6 @@
   ],
   "ref": 800,
   "boxes": [
-   {
-    "seed": [
-     523,
-     138
-    ],
-    "bbox": [
-     1689,
-     188,
-     1990,
-     532
-    ],
-    "shape": "bubble",
-    "en": "As",
-    "conf": 80
-   },
    {
     "seed": [
      127,
@@ -202,8 +213,8 @@
      1322
     ],
     "shape": "box",
-    "en": "needle The hawker turned the bowl over. Suspecting its true nature, he secretly scratched it with Pure gold. Consumed by greed, he plotted to take the treasure without giving them single coin.",
-    "conf": 65
+    "en": "The hawker turned the bowl over. Suspecting its true nature, he secretly scratched it with needle Pure gold. Consumed by greed, he plotted to take the treasure without giving them single cain",
+    "conf": 37
    }
   ],
   "loose": []
@@ -218,6 +229,21 @@
   "boxes": [
    {
     "seed": [
+     457,
+     85
+    ],
+    "bbox": [
+     1306,
+     165,
+     2182,
+     463
+    ],
+    "shape": "bubble",
+    "en": "What at is the atte value of 9 he tet It isn worth half farthi",
+    "conf": 33
+   },
+   {
+    "seed": [
      463,
      355
     ],
@@ -228,14 +254,13 @@
      1349
     ],
     "shape": "box",
-    "en": "the dit am He into the out, to return when were",
+    "en": "He hurled the into the dit dirt am and stormed out, to return when they were",
     "conf": 55
    }
   ],
   "loose": [
-   "the",
-   "this?”",
-   "isn",
+   "pill",
+   "WA,",
    "you"
   ]
  },
@@ -249,6 +274,36 @@
   "boxes": [
    {
     "seed": [
+     67,
+     72
+    ],
+    "bbox": [
+     89,
+     165,
+     1170,
+     410
+    ],
+    "shape": "bubble",
+    "en": "By agreement, hawkers ulin tions cross into visited Streets. The Bodhisatta isatta arrived, ating",
+    "conf": 37
+   },
+   {
+    "seed": [
+     333,
+     205
+    ],
+    "bbox": [
+     929,
+     565,
+     1610,
+     903
+    ],
+    "shape": "bubble",
+    "en": "mas enn Shas first man was the maiden said. “This one looks kind. Let us",
+    "conf": 34
+   },
+   {
+    "seed": [
      218,
      390
     ],
@@ -259,29 +314,11 @@
      1356
     ],
     "shape": "box",
-    "en": "They him he bow al",
+    "en": "They him al",
     "conf": 60
    }
   ],
-  "loose": [
-   "agreement,",
-   "hawkers",
-   "coul",
-   "visited",
-   "streets.",
-   "The",
-   "Bodh",
-   "isatta",
-   "arrived,",
-   "\"The",
-   "fir",
-   "man",
-   "the",
-   "maiden",
-   "said.",
-   "“This",
-   "one"
-  ]
+  "loose": []
  },
  {
   "img": "images/003-The-Golden-Bowl-08-Original.jpg",
@@ -293,8 +330,8 @@
   "boxes": [
    {
     "seed": [
-     91,
-     74
+     98,
+     69
     ],
     "bbox": [
      116,
@@ -303,25 +340,41 @@
      327
     ],
     "shape": "box",
-    "en": "the",
-    "conf": 97
+    "en": "peeing the WE the uth,",
+    "conf": 42
+   },
+   {
+    "seed": [
+     212,
+     182
+    ],
+    "bbox": [
+     155,
+     483,
+     817,
+     794
+    ],
+    "shape": "bubble",
+    "en": "“Mother, “Mother, Bowlic is worth hundred thousand pieces. lack its value.”",
+    "conf": 36
+   },
+   {
+    "seed": [
+     492,
+     358
+    ],
+    "bbox": [
+     1561,
+     1002,
+     2410,
+     1276
+    ],
+    "shape": "bubble",
+    "en": "een “The first hawker threw it own down! Your goodness turned it to gold. Take it.”",
+    "conf": 36
    }
   ],
-  "loose": [
-   "“Mother,",
-   "this",
-   "worth",
-   "hundred",
-   "thousand",
-   "“The",
-   "first",
-   "hawker",
-   "threw",
-   "Your",
-   "goodness",
-   "turned",
-   "gold."
-  ]
+  "loose": []
  },
  {
   "img": "images/003-The-Golden-Bowl-09-Original.jpg",
@@ -335,8 +388,10 @@
    "The",
    "Bodhisatta",
    "gave",
+   "them",
    "his",
    "entire",
+   "stock",
    "and",
    "500",
    "pieces",
@@ -359,7 +414,9 @@
    "riverside",
    "with",
    "all",
-   "speed."
+   "speed",
+   "The",
+   "his"
   ]
  },
  {
@@ -369,20 +426,40 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
+  "boxes": [
+   {
+    "seed": [
+     490,
+     355
+    ],
+    "bbox": [
+     1557,
+     985,
+     2417,
+     1273
+    ],
+    "shape": "bubble",
+    "en": "“An upright master hawker gave us 4a thousand pieces and took it away.”",
+    "conf": 64
+   },
+   {
+    "seed": [
+     114,
+     343
+    ],
+    "bbox": [
+     165,
+     1012,
+     817,
+     1289
+    ],
+    "shape": "bubble",
+    "en": "\"Bring “Bring out the will give you something for it.” it.”",
+    "conf": 61
+   }
+  ],
   "loose": [
-   "out",
-   "will",
-   "“An",
-   "upright",
-   "master",
-   "hawker",
-   "gave",
-   "you",
-   "thousand",
-   "pieces",
-   "and",
-   "took"
+   "hawker"
   ]
  },
  {
@@ -395,6 +472,21 @@
   "boxes": [
    {
     "seed": [
+     83,
+     69
+    ],
+    "bbox": [
+     119,
+     165,
+     1068,
+     473
+    ],
+    "shape": "bubble",
+    "en": "“He robbed me of hundred thousand pieces!”",
+    "conf": 86
+   },
+   {
+    "seed": [
      66,
      305
     ],
@@ -405,18 +497,11 @@
      1332
     ],
     "shape": "box",
-    "en": "Intense sorrow and rage consumed him Losing all senses, he flung away his goods, stripped off his clothes, and seized his scale-beam as club",
-    "conf": 93
+    "en": "Intense sorrow and rage consumed him Losing all senses, he flung away his goods stripped off his clothes, and seized his scale-beam as club",
+    "conf": 92
    }
   ],
-  "loose": [
-   "SY;",
-   "“He",
-   "robbed",
-   "hundred",
-   "thousand",
-   "pieces!”"
-  ]
+  "loose": []
  },
  {
   "img": "images/003-The-Golden-Bowl-12-Original.jpg",
@@ -476,8 +561,8 @@
      1458
     ],
     "shape": "box",
-    "en": "Gazing at the retreating boat, blood gushed from his lips. Nis heart cracked like the mud of dried-up tank. Ne perished then and there. Gbus, Devadatta conceived his first grudge against the Bodhisatta.",
-    "conf": 51
+    "en": "Gazing at the retreating boat, blood gushed from bis lips. Nis heart cracked like the mud of dried-up tank. Ne perished then and there. Gbus, Devadatta conceived his first grudge against the Bodhisatta.",
+    "conf": 48
    }
   ],
   "loose": [
@@ -504,8 +589,8 @@
      1458
     ],
     "shape": "box",
-    "en": "Ghe Supreme Buddha concluded his lesson: “If bere you miss being certain of results in the Grue Dhamma, For time will suffer, Like the merchant in Seriva. along you",
-    "conf": 56
+    "en": "Ghe Supreme Buddha concluded 3 his lesson: If bere you miss being certain of results in the Grue Dhamma, For along long time you will suffer, Like the merchant in Seriva.",
+    "conf": 43
    }
   ],
   "loose": []

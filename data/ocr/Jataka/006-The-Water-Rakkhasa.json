@@ -19,11 +19,13 @@
      972
     ],
     "shape": "box",
-    "en": "Tale of Three Princes and the Water",
-    "conf": 96
+    "en": "The True Deva-Nature Tale of Three Princes and the Water Rakkhasa",
+    "conf": 90
    }
   ],
-  "loose": []
+  "loose": [
+   "iy,"
+  ]
  },
  {
   "img": "images/006-The-Water-Rakkhasa-02-Original.jpg",
@@ -36,7 +38,7 @@
    {
     "seed": [
      102,
-     354
+     366
     ],
     "bbox": [
      238,
@@ -45,8 +47,8 @@
      1362
     ],
     "shape": "box",
-    "en": "In Bodhisatta) ancient Kasi, the King had two sons: Mahimsasa (the and Candakumara. After their mother the King’s new Queen bore him extracting binding promise from the overjoyed monarch,",
-    "conf": 61
+    "en": "In ancient Kasi, the King had two sons: Mahimsasa Ig (the Bodhisatta) ont and nos Candakumara. 4 IS After their mother died, died, the King’s new Queen bore him Siriyakumara, ara, extracting binding promise from the overjoyed monarch.",
+    "conf": 31
    }
   ],
   "loose": []
@@ -71,23 +73,8 @@
      529
     ],
     "shape": "box",
-    "en": "later, the Queen demanded her boon the throne for The King refused. Fearing the Queen’s wicked plots, he ordered his elder sons into exile.",
-    "conf": 91
-   },
-   {
-    "seed": [
-     268,
-     314
-    ],
-    "bbox": [
-     823,
-     903,
-     1296,
-     1237
-    ],
-    "shape": "bubble",
-    "en": "LS",
-    "conf": 58
+    "en": "Years later, the Queen demanded her boon the throne for Striyakumara. The King refused. Fearing the Queen’s wicked plots, he ordered his elder sons into exile. fis",
+    "conf": 42
    }
   ],
   "loose": []
@@ -102,8 +89,23 @@
   "boxes": [
    {
     "seed": [
-     94,
-     383
+     134,
+     84
+    ],
+    "bbox": [
+     264,
+     245,
+     998,
+     486
+    ],
+    "shape": "bubble",
+    "en": "‘Retire to the forest,” the King wept, ‘return only at my death.”",
+    "conf": 78
+   },
+   {
+    "seed": [
+     95,
+     386
     ],
     "bbox": [
      238,
@@ -112,19 +114,12 @@
      1369
     ],
     "shape": "box",
-    "en": "As the brothers departed, loyal them leaving and chose to share their exile the Himalayas. saw in",
-    "conf": 89
+    "en": "As the brothers departed, loyal Suriyakumara ara saw them leaving Las] and chose 8 to share their exile in the Himalayas. Tas]",
+    "conf": 45
    }
   ],
   "loose": [
-   "the",
-   "forest,”",
-   "the",
-   "King",
-   "wept,",
-   "‘return",
-   "only",
-   "death.”"
+   "(es"
   ]
  },
  {
@@ -147,7 +142,7 @@
      823
     ],
     "shape": "box",
-    "en": "an the Deep in the forest, Mahimsas: for water. Unknown to deity Vessavana granted this to Water bound by strict condition.",
+    "en": "Deep in the forest, Mahimsasa an sent Suriya for water. Unknown to them, the deity Vessavana had granted this pool to Water Rakklasa, bound by strict condition.",
     "conf": 50
    }
   ],
@@ -174,32 +169,25 @@
     ],
     "shape": "box",
     "en": "The Rakkhasa’s Rule:",
-    "conf": 70
+    "conf": 60
+   },
+   {
+    "seed": [
+     93,
+     385
+    ],
+    "bbox": [
+     241,
+     1266,
+     2410,
+     1418
+    ],
+    "shape": "bubble",
+    "en": "He may devour anyone entering the water who does not know the “true Deva-nature.” Those who know it, or stay on land, are safe.",
+    "conf": 90
    }
   ],
-  "loose": [
-   "may",
-   "devour",
-   "anyone",
-   "entering",
-   "the",
-   "water",
-   "who",
-   "does",
-   "not",
-   "know",
-   "the",
-   "“true",
-   "Deva-nature.”",
-   "Those",
-   "who",
-   "know",
-   "it,",
-   "stay",
-   "land,",
-   "are",
-   "safe."
-  ]
+  "loose": []
  },
  {
   "img": "images/006-The-Water-Rakkhasa-07-Original.jpg",
@@ -211,8 +199,8 @@
   "boxes": [
    {
     "seed": [
-     118,
-     71
+     123,
+     66
     ],
     "bbox": [
      212,
@@ -221,7 +209,7 @@
      364
     ],
     "shape": "box",
-    "en": "entered the water. 4 The Rakkhasa struck!",
+    "en": "Suriya entered the water. water 4 The Rakkhasa struck!",
     "conf": 92
    },
    {
@@ -236,15 +224,14 @@
      876
     ],
     "shape": "bubble",
-    "en": "“The sun and moon Suriya guessed.",
-    "conf": 87
+    "en": "“The sun and moon!” Siriya guessed.",
+    "conf": 46
    }
   ],
   "loose": [
    "“What",
    "the",
    "true",
-   "Deva-nature?”",
    "“You",
    "don’t",
    "know,”",
@@ -254,7 +241,8 @@
    "dragging",
    "him",
    "watery",
-   "prison."
+   "prison.",
+   "Deva-nature?”"
   ]
  },
  {
@@ -277,8 +265,8 @@
      410
     ],
     "shape": "box",
-    "en": "When didn’t return, Mahimsasa sent Canda. He too was seized.",
-    "conf": 90
+    "en": "When Siriya didn’t return, Mahimsasa sent ent Canda. He too was seized",
+    "conf": 42
    },
    {
     "seed": [
@@ -292,13 +280,13 @@
      1111
     ],
     "shape": "bubble",
-    "en": "The four quarters of heaven.",
+    "en": "The four quarters of heaven",
     "conf": 95
    },
    {
     "seed": [
      276,
-     387
+     386
     ],
     "bbox": [
      241,
@@ -307,8 +295,8 @@
      1369
     ],
     "shape": "box",
-    "en": "He, too, was dragged into the abyss.",
-    "conf": 96
+    "en": "He, too, was dragged into the abys:",
+    "conf": 77
    }
   ],
   "loose": [
@@ -364,8 +352,8 @@
      420
     ],
     "shape": "box",
-    "en": "The Rakkhasa himself as forester.",
-    "conf": 89
+    "en": "The Rakkhasa disguised himself as forester.",
+    "conf": 93
    },
    {
     "seed": [
@@ -395,12 +383,12 @@
     ],
     "shape": "bubble",
     "en": "You took my brothers. will tell you the true Deva-nature.",
-    "conf": 91
+    "conf": 92
    },
    {
     "seed": [
-     487,
-     323
+     422,
+     333
     ],
     "bbox": [
      1091,
@@ -409,7 +397,7 @@
      1200
     ],
     "shape": "box",
-    "en": "Recognizing Tica the demon the declared",
+    "en": "Recognizing Tica Recognizing the demon, the Bodhisatta declared:",
     "conf": 47
    }
   ],
@@ -435,8 +423,8 @@
      469
     ],
     "shape": "bubble",
-    "en": "am travel-stained,’ the Bodhisatta noted",
-    "conf": 89
+    "en": "am travel-stained,” the Bodhisatta noted.",
+    "conf": 53
    },
    {
     "seed": [
@@ -450,8 +438,8 @@
      1369
     ],
     "shape": "box",
-    "en": "Desperate for the truth, the monster bathed him, served him food, and beautiful pavilion. The predator became the servant.",
-    "conf": 95
+    "en": "Desperate for the truth, the monster bathed him, served him food, and prepared beautiful pavilion. The predator became the servant. aA",
+    "conf": 46
    }
   ],
   "loose": []
@@ -466,8 +454,8 @@
   "boxes": [
    {
     "seed": [
-     184,
-     83
+     193,
+     64
     ],
     "bbox": [
      423,
@@ -476,8 +464,8 @@
      334
     ],
     "shape": "box",
-    "en": "above abo the the de demon, vealed ibe rev truth:",
-    "conf": 53
+    "en": "Seated above the demon, the Bodhisatta revealed the sacred truth:",
+    "conf": 35
    },
    {
     "seed": [
@@ -491,26 +479,13 @@
      886
     ],
     "shape": "bubble",
-    "en": "“Hirt-ottappasampanna, sukkadhammasamahita...",
-    "conf": 60
-   },
-   {
-    "seed": [
-     335,
-     272
-    ],
-    "bbox": [
-     790,
-     896,
-     1141,
-     1061
-    ],
-    "shape": "bubble",
-    "en": "aH",
-    "conf": 48
+    "en": "“Hiri-ottappasampanna, sukkadhammasamahita",
+    "conf": 89
    }
   ],
-  "loose": []
+  "loose": [
+   "9))"
+  ]
  },
  {
   "img": "images/006-The-Water-Rakkhasa-13-Original.jpg",
@@ -520,6 +495,21 @@
   ],
   "ref": 800,
   "boxes": [
+   {
+    "seed": [
+     334,
+     72
+    ],
+    "bbox": [
+     393,
+     185,
+     2248,
+     562
+    ],
+    "shape": "bubble",
+    "en": "“Santo sappurisa loke, Devadhamma ti vuccare ti.” ae",
+    "conf": 45
+   },
    {
     "seed": [
      172,
@@ -532,15 +522,12 @@
      1369
     ],
     "shape": "box",
-    "en": "Endowed with and possessing unsullied concern, an nature—these virtuous people in the world are said to have Deva-nature.",
-    "conf": 91
+    "en": "Endowed with conscience and concern, possessing an unsullied nature—these jature—these virtuous people in the world are said to have Deva-nature. wena",
+    "conf": 34
    }
   ],
   "loose": [
-   "loke,",
-   "Devadhamma",
-   "vuccare",
-   "ti.”"
+   "lie"
   ]
  },
  {
@@ -553,8 +540,8 @@
   "boxes": [
    {
     "seed": [
-     378,
-     36
+     350,
+     47
     ],
     "bbox": [
      995,
@@ -563,13 +550,13 @@
      198
     ],
     "shape": "box",
-    "en": "ize: tA",
+    "en": "Test Analyzed; ize:",
     "conf": 56
    },
    {
     "seed": [
-     284,
-     398
+     273,
+     397
     ],
     "bbox": [
      850,
@@ -578,20 +565,22 @@
      1402
     ],
     "shape": "box",
-    "en": "True divinity is urity.",
-    "conf": 92
+    "en": "“True divinity 1S moral purity.",
+    "conf": 48
    }
   ],
   "loose": [
    "Sun",
    "Moon",
    "Canda:",
+   "Four",
    "Quarters",
    "Bodhisatta:",
    "Conscience",
-   "Concern",
    "(Physical/External)",
    "(Spatial/External)",
+   "Concern",
+   "Failed",
    "Failed",
    "(Internal/Moral)",
    "Mastered"
@@ -607,8 +596,8 @@
   "boxes": [
    {
     "seed": [
-     148,
-     386
+     634,
+     368
     ],
     "bbox": [
      387,
@@ -617,11 +606,12 @@
      1369
     ],
     "shape": "box",
-    "en": "hrough Bodhisatta conquered the without striking wisdom and caution, the demon blow. By understanding the inner truth of conscience (hiri) and moral concern (ottappa), he saved everyone.",
-    "conf": 83
+    "en": "Through wisdom and caution, the Bodhisatta conquered the demon without striking blow. TED By understanding the inner truth of conscience eas (hiri) and moral concern (ottappa), he saved everyone.",
+    "conf": 34
    }
   ],
   "loose": [
+   "EN,",
    "_AS"
   ]
  }

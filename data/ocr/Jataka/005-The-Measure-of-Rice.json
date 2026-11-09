@@ -9,6 +9,21 @@
   "boxes": [
    {
     "seed": [
+     370,
+     97
+    ],
+    "bbox": [
+     393,
+     119,
+     2354,
+     711
+    ],
+    "shape": "bubble",
+    "en": "Ay pie Yap ry (Fai, Vv 5 ats wie",
+    "conf": 33
+   },
+   {
+    "seed": [
      314,
      188
     ],
@@ -20,7 +35,7 @@
     ],
     "shape": "box",
     "en": "The Price of Benares Tale of Greed and Valuation Based on the ancient Jataka Tales",
-    "conf": 90
+    "conf": 89
    }
   ],
   "loose": []
@@ -45,8 +60,8 @@
      337
     ],
     "shape": "box",
-    "en": "King Brahmadatta reigned in Kasi. The Bodhisatta served as his royal",
-    "conf": 91
+    "en": "King Brahmadatta reigned in Kasi. The Bodhisatta served as his royal valuer.",
+    "conf": 90
    },
    {
     "seed": [
@@ -87,12 +102,12 @@
     ],
     "shape": "box",
     "en": "The King was consumed by greed.",
-    "conf": 92
+    "conf": 96
    },
    {
     "seed": [
-     501,
-     290
+     525,
+     282
     ],
     "bbox": [
      1580,
@@ -101,11 +116,13 @@
      1187
     ],
     "shape": "bubble",
-    "en": "This honest valu er will exhaust my riches! must find someone cheaper to protect my gold.",
-    "conf": 96
+    "en": "This honest valuer er will exhaust my riches! must find someone cheaper to protect my gold.",
+    "conf": 91
    }
   ],
-  "loose": []
+  "loose": [
+   "ANS"
+  ]
  },
  {
   "img": "images/005-The-Measure-of-Rice-04-Original.jpg",
@@ -127,13 +144,13 @@
      321
     ],
     "shape": "box",
-    "en": "Looking the courtyard, he cspied stupid, greedy candidat",
-    "conf": 46
+    "en": "Looking into the courtyard, he espied stupid, greedy candidate",
+    "conf": 93
    },
    {
     "seed": [
-     331,
-     141
+     323,
+     145
     ],
     "bbox": [
      1038,
@@ -143,7 +160,7 @@
     ],
     "shape": "bubble",
     "en": "Oh yes, sire!",
-    "conf": 96
+    "conf": 94
    },
    {
     "seed": [
@@ -183,8 +200,8 @@
      1356
     ],
     "shape": "box",
-    "en": "Bodhisatta The Method: Objective analysis Motive: Fairness Result: Trust and prosperity",
-    "conf": 87
+    "en": "The Bodhisatta Method: Objective analysis Motive: Fairness Result: Trust and prosperity",
+    "conf": 92
    },
    {
     "seed": [
@@ -199,7 +216,7 @@
     ],
     "shape": "box",
     "en": "The Fool Method: Arbitrary fancy Motive: Pleasing the King Result: Economic chaos",
-    "conf": 95
+    "conf": 96
    }
   ],
   "loose": []
@@ -214,21 +231,6 @@
   "boxes": [
    {
     "seed": [
-     71,
-     281
-    ],
-    "bbox": [
-     192,
-     800,
-     344,
-     982
-    ],
-    "shape": "bubble",
-    "en": "ancl",
-    "conf": 47
-   },
-   {
-    "seed": [
      171,
      364
     ],
@@ -239,8 +241,8 @@
      1379
     ],
     "shape": "box",
-    "en": "horse-dealer arrived from the north country with 500 magnificent horses. The King summoned his valuer to set the price. new",
-    "conf": 92
+    "en": "horse-dealer arrived from the north country with 500 magnificent horses. The King summoned oned his new valuer to set the price.",
+    "conf": 70
    }
   ],
   "loose": []
@@ -266,7 +268,7 @@
     ],
     "shape": "bubble",
     "en": "For all 500 horses, decree the price is exactly one measure of rice! Take them to the stable!",
-    "conf": 96
+    "conf": 92
    }
   ],
   "loose": []
@@ -281,7 +283,22 @@
   "boxes": [
    {
     "seed": [
-     207,
+     420,
+     62
+    ],
+    "bbox": [
+     1217,
+     152,
+     2490,
+     605
+    ],
+    "shape": "bubble",
+    "en": "He took my entire herd fora single bowl of rice! What can do?",
+    "conf": 81
+   },
+   {
+    "seed": [
+     216,
      376
     ],
     "bbox": [
@@ -291,22 +308,11 @@
      1379
     ],
     "shape": "box",
-    "en": "Devastated, the dealer sought out the ex-valuer.",
-    "conf": 93
+    "en": "Devastated, oO the dealer sought on fe out the ex-valuer",
+    "conf": 46
    }
   ],
-  "loose": [
-   "took",
-   "entire",
-   "herd",
-   "fora",
-   "single",
-   "bowl",
-   "rice!",
-   "What",
-   "can",
-   "do?"
-  ]
+  "loose": []
  },
  {
   "img": "images/005-The-Measure-of-Rice-09-Original.jpg",
@@ -382,19 +388,24 @@
     "shape": "bubble",
     "en": "Valuer, what are 500 horses worth?",
     "conf": 95
+   },
+   {
+    "seed": [
+     347,
+     198
+    ],
+    "bbox": [
+     936,
+     565,
+     1620,
+     1365
+    ],
+    "shape": "bubble",
+    "en": "measure of rice, sire. And what is that measure of rice worth? om",
+    "conf": 75
    }
   ],
-  "loose": [
-   "measure",
-   "rice,",
-   "sire.",
-   "And",
-   "what",
-   "that",
-   "measure",
-   "rice",
-   "worth?"
-  ]
+  "loose": []
  },
  {
   "img": "images/005-The-Measure-of-Rice-12-Original.jpg",
@@ -406,8 +417,8 @@
   "boxes": [
    {
     "seed": [
-     319,
-     59
+     326,
+     63
     ],
     "bbox": [
      949,
@@ -416,12 +427,12 @@
      476
     ],
     "shape": "bubble",
-    "en": "One measure of rice is worth all of Benares and its suburbs!",
-    "conf": 93
+    "en": "One ne measure oO rice is worth th all of Benares and its suburbs!",
+    "conf": 64
    },
    {
     "seed": [
-     283,
+     261,
      380
     ],
     "bbox": [
@@ -431,8 +442,8 @@
      1451
     ],
     "shape": "box",
-    "en": "city hundred leagues priced at single of rice. measure",
-    "conf": 79
+    "en": "Acity city three hundred leagues round, priced datas at single measure of rice. ice",
+    "conf": 33
    }
   ],
   "loose": []
@@ -444,27 +455,24 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
-  "loose": [
-   "thought",
-   "the",
-   "realm",
-   "was",
-   "beyond",
-   "price!",
-   "Our",
-   "King",
-   "and",
-   "Kingdom",
-   "are",
-   "only",
-   "worth",
-   "rice!",
-   "suits",
-   "our",
-   "King",
-   "admirably!"
-  ]
+  "boxes": [
+   {
+    "seed": [
+     231,
+     40
+    ],
+    "bbox": [
+     575,
+     43,
+     1941,
+     552
+    ],
+    "shape": "bubble",
+    "en": "We thought the realm was beyond price! Our King and Kingdom are only worth bowl of rice! He suits our King admirably!",
+    "conf": 65
+   }
+  ],
+  "loose": []
  },
  {
   "img": "images/005-The-Measure-of-Rice-14-Original.jpg",
@@ -486,8 +494,8 @@
      1137
     ],
     "shape": "box",
-    "en": "Kim-agghati tandulandlikayam? Assana’ mildya vadehi, raja? Baranasim santarabahiram, Ayam-agghati tandulandlika ti!",
-    "conf": 57
+    "en": "Kim-agghati tandulandlikayam? Assana’ mildya vadehi, raja? Baranasim santarabahiram, Ayam-agghati tandulanalika ti!",
+    "conf": 39
    },
    {
     "seed": [
@@ -501,8 +509,8 @@
      1342
     ],
     "shape": "box",
-    "en": "Do you speak of the price of horses, king? Benares, he values at of rice! measure",
-    "conf": 92
+    "en": "Do 10 you speak of the price of horses, king? Benares, he values at measure of rice!",
+    "conf": 66
    }
   ],
   "loose": []

@@ -9,8 +9,8 @@
   "boxes": [
    {
     "seed": [
-     64,
-     64
+     80,
+     79
     ],
     "bbox": [
      212,
@@ -19,11 +19,15 @@
      341
     ],
     "shape": "box",
-    "en": "In the past, when Brahmadatta was of Benares, Supreme tale his past life as merchant in Kasi.",
+    "en": "In the past, when Brahmadatta was king of Benares, the Supreme Buddha recoun ted tale of his past life as merchant nt in Kasi.",
     "conf": 92
    }
   ],
-  "loose": []
+  "loose": [
+   "CTS",
+   "€@2",
+   "IWS"
+  ]
  },
  {
   "img": "images/002-The-Well-of-Perseverance-02-Original.jpg",
@@ -45,11 +49,13 @@
      350
     ],
     "shape": "box",
-    "en": "The Bodhisatta, wise trader in Kasi, prepared five hundred carts to cross brutal, sandy wilderness.",
-    "conf": 93
+    "en": "The Bodhisatta, wise trader in Kasi, prepared five hundred carts to cross brutal, sixty-league sixty-league sandy wilderness.",
+    "conf": 85
    }
   ],
-  "loose": []
+  "loose": [
+   "mye"
+  ]
  },
  {
   "img": "images/002-The-Well-of-Perseverance-03-Original.jpg",
@@ -60,6 +66,7 @@
   "ref": 800,
   "boxes": [],
   "loose": [
+   "wilt",
    "The",
    "sand",
    "was",
@@ -74,10 +81,10 @@
    "under",
    "awnings,",
    "traveling",
-   "only",
-   "the",
    "cool",
-   "night"
+   "night",
+   "ped",
+   "the"
   ]
  },
  {
@@ -100,8 +107,8 @@
      350
     ],
     "shape": "box",
-    "en": "Traversing this ocean of sand required He steered the caravan safely through the dark by the disposition of the stars.",
-    "conf": 96
+    "en": "Traversing this ocean of sand required desert-pilot. He steered the caravan safely throu the dark by the disposition of the stars.",
+    "conf": 91
    }
   ],
   "loose": []
@@ -117,7 +124,7 @@
    {
     "seed": [
      46,
-     47
+     46
     ],
     "bbox": [
      145,
@@ -126,8 +133,8 @@
      397
     ],
     "shape": "box",
-    "en": "Riise With seven left, they discarded heavy wood and water. But the exhausted pilot fell asleep. Unseen in the dark, the oxen retraced their steps.",
-    "conf": 49
+    "en": "With seven ae left, they discarded heavy wood and water. But the exhausted pilot fell asleep. Unseen in the dark, the oxen retraced their steps.",
+    "conf": 55
    }
   ],
   "loose": []
@@ -152,8 +159,8 @@
      473
     ],
     "shape": "box",
-    "en": "was too late. The day broke on",
-    "conf": 96
+    "en": "At dawn, the pilot woke. It was too late. The day broke on yesterday’s cual",
+    "conf": 50
    },
    {
     "seed": [
@@ -183,6 +190,21 @@
   "boxes": [
    {
     "seed": [
+     98,
+     35
+    ],
+    "bbox": [
+     112,
+     116,
+     1137,
+     261
+    ],
+    "shape": "box",
+    "en": "Expecting death, the men flung themselves beneath their carts in absolute despair.",
+    "conf": 96
+   },
+   {
+    "seed": [
      243,
      133
     ],
@@ -193,8 +215,8 @@
      684
     ],
     "shape": "bubble",
-    "en": "All our wood and water is gone, and we are lost.",
-    "conf": 96
+    "en": "All our wood cand water is gone, and we are lost.",
+    "conf": 58
    }
   ],
   "loose": []
@@ -209,7 +231,7 @@
   "boxes": [
    {
     "seed": [
-     246,
+     100,
      76
     ],
     "bbox": [
@@ -219,13 +241,13 @@
      407
     ],
     "shape": "box",
-    "en": "sand, he spotted solitary clump of kusa grass.",
-    "conf": 93
+    "en": "Pacing the cool morning sand, he spotted solitary clump of kusa grass",
+    "conf": 92
    },
    {
     "seed": [
-     315,
-     188
+     331,
+     165
     ],
     "bbox": [
      995,
@@ -234,7 +256,7 @@
      813
     ],
     "shape": "bubble",
-    "en": "If give in, every single one will perish.",
+    "en": "If give in every single one will perish",
     "conf": 95
    }
   ],
@@ -261,7 +283,7 @@
     ],
     "shape": "box",
     "en": "Grass meant water below. They dug shaft sixty cubits deep, only to strike an impenetrable layer of solid rock. The caravan lost heart.",
-    "conf": 96
+    "conf": 95
    }
   ],
   "loose": []
@@ -299,22 +321,24 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
-  "loose": [
-   "you",
-   "give",
-   "in,",
-   "perish.",
-   "Take",
-   "courage.",
-   "Strike",
-   "the",
-   "rock",
-   "with",
-   "this",
-   "iron",
-   "sledge-hammer!"
-  ]
+  "boxes": [
+   {
+    "seed": [
+     115,
+     72
+    ],
+    "bbox": [
+     116,
+     172,
+     1041,
+     655
+    ],
+    "shape": "bubble",
+    "en": "If you give in, we perish. Take courage. Strike the rock with this iron sledge-hammer!",
+    "conf": 85
+   }
+  ],
+  "loose": []
  },
  {
   "img": "images/002-The-Well-of-Perseverance-12-Original.jpg",
@@ -336,7 +360,7 @@
      476
     ],
     "shape": "box",
-    "en": "The rock split asunder! Water rose as high as palm tree. The caravan drank bathed, rejoiced, and fed their oxen",
+    "en": "The rock split asunder! Water rose as high as palm tree. The caravan drank, bathed, rejoiced, and fed their oxen.",
     "conf": 95
    }
   ],

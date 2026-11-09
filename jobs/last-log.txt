@@ -1,40 +1,7 @@
 books 46 stories 918 images 13186
-표지 Perfections (800, 450)
-표지 Basic-Concepts (800, 450)
-표지 Bojjhanga (800, 450)
-001-The-Waterless-Desert.htm: 그림 15 상자 21 상자밖글 30
-002-The-Well-of-Perseverance.htm: 그림 15 상자 14 상자밖글 32
-003-The-Golden-Bowl.htm: 그림 14 상자 15 상자밖글 125
-004-The-Dead-Mouse.htm: 그림 15 상자 29 상자밖글 47
-005-The-Measure-of-Rice.htm: 그림 14 상자 21 상자밖글 37
-006-The-Water-Rakkhasa.htm: 그림 15 상자 26 상자밖글 64
-009-The-Kings-Grey-Hair.htm: 그림 14 상자 11 상자밖글 42
-010-Bliss-of-Renunciation.htm: 그림 14 상자 19 상자밖글 3
-011-The-Wisdom-of-Lakkhana.htm: 그림 10 상자 12 상자밖글 1
-012-The-Golden-Deer.htm: 그림 14 상자 24 상자밖글 13
-014-The-Wind-Deer.htm: 그림 9 상자 12 상자밖글 30
-018-The-Sacrificial-Goat.htm: 그림 14 상자 21 상자밖글 20
-022-The-Teaching-of-the-Dog.htm: 그림 14 상자 15 상자밖글 22
-023-The-Noble-Warhorse.htm: 그림 14 상자 15 상자밖글 60
-026-The-State-Elephant.htm: 그림 13 상자 17 상자밖글 28
-027-Elephant-and-Dog.htm: 그림 13 상자 16 상자밖글 38
-028-Nandivisala.htm: 그림 12 상자 17 상자밖글 32
-029-Grannys-Blackie.htm: 그림 12 상자 24 상자밖글 31
-030-Deadly-Food.htm: 그림 11 상자 19 상자밖글 46
-032-The-Peacocks-Dance.htm: 그림 12 상자 18 상자밖글 54
-033-The-Quails-and-the-Net.htm: 그림 14 상자 19 상자밖글 53
-034-The-Amorous-Fish.htm: 그림 13 상자 22 상자밖글 31
-037-The-Senior-Partridge.htm: 그림 12 상자 13 상자밖글 60
-046-The-Folly-of-the-Monkeys.htm: 그림 13 상자 17 상자밖글 47
-039-Nanda-and-the-Hoard.htm: 그림 12 상자 15 상자밖글 18
-040-The-Fiery-Pit.htm: 그림 12 상자 10 상자밖글 82
-041-The-Unfortunate-Monk.htm: 그림 15 상자 18 상자밖글 24
-043-The-Monk-and-the-Viper.htm: 그림 10 상자 10 상자밖글 33
-044-The-Son-and-the-Mosquito.htm: 그림 13 상자 12 상자밖글 16
-048-The-Rain-of-Ruin.htm: 그림 15 상자 22 상자밖글 61
-049-The-Lucky-Star.htm: 그림 14 상자 16 상자밖글 3
-050-The-Kings-Stratagem.htm: 그림 15 상자 21 상자밖글 55
-
-real	8m24.230s
-user	8m48.501s
-sys	0m45.135s
+002-The-Well-of-Perseverance.htm: 그림 15 상자 16 상자밖글 24
+003-The-Golden-Bowl.htm: 그림 14 상자 25 상자밖글 64
+004-The-Dead-Mouse.htm: 그림 15 상자 28 상자밖글 62
+005-The-Measure-of-Rice.htm: 그림 14 상자 24 상자밖글 1
+006-The-Water-Rakkhasa.htm: 그림 15 상자 27 상자밖글 38
+009-The-Kings-Grey-Hair.htm: 그림 14 상자 22 상자밖글 40
