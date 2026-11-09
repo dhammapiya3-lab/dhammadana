@@ -763,7 +763,7 @@ function placePanels(el) {
 window.addEventListener('resize', () => placePanels());
 function renderReader() {
   let el = $('#reader');
-  if (!el) { el = document.createElement('div'); el.id = 'reader'; el.className = 'reader'; el.setAttribute('role', 'dialog'); el.setAttribute('aria-label', '읽기 화면'); document.body.appendChild(el); document.body.style.overflow = 'hidden'; if (immersive()) el.classList.add('chrome-off'); }
+  if (!el) { el = document.createElement('div'); el.id = 'reader'; el.className = 'reader'; el.setAttribute('role', 'dialog'); el.setAttribute('aria-label', '읽기 화면'); document.body.appendChild(el); document.body.style.overflow = 'hidden'; el.classList.add('chrome-off'); }
   const p = R.pages[R.i], n = p.n, N = R.pages.length, marked = bms().some(m => m.id === R.id && m.p === n);
   const hasText = R.pages.some(x => x.text), hasImg = R.pages.some(x => x.img);
   const ch = tocFor(n);
@@ -880,6 +880,18 @@ function bindReader() {
     let ty = null;
     el.addEventListener('touchstart', e => { ty = e.target.closest('#rBody') ? e.touches[0].clientY : null; }, { passive: true });
     el.addEventListener('touchmove', e => { if (ty == null || !immersive()) return; if (Math.abs(e.touches[0].clientY - ty) > 12 && !$('.panel.open', el)) { el.classList.add('chrome-off'); ty = null; } }, { passive: true });
+    // 컴퓨터(마우스): 화면 맨 위·맨 아래로 마우스를 가져가면 메뉴·바가 보이고, 글 쪽으로 오면 다시 숨음 (운영자 요청, 2026-11-10)
+    const hoverPC = () => matchMedia('(hover:hover) and (pointer:fine)').matches && !immersive();
+    el.addEventListener('mousemove', e => {
+      if (!hoverPC()) return;
+      const edge = 64, nearTop = e.clientY < edge, nearBot = e.clientY > innerHeight - edge;
+      const onChrome = e.target.closest && e.target.closest('.r-top,.r-bottom,.panel,#selPop');
+      if (nearTop || nearBot || onChrome) el.classList.remove('chrome-off');
+      else if (!$('.panel.open', el)) el.classList.add('chrome-off');
+    });
+    el.addEventListener('mouseleave', () => { if (hoverPC() && !$('.panel.open', el)) el.classList.add('chrome-off'); });
+    el.addEventListener('focusin', e => { if (e.target.closest('.r-top,.r-bottom')) el.classList.remove('chrome-off'); });  // 키보드(Tab)로 단추에 가면 보임
+    if (hoverPC() && !store.get('hover-hint')) { store.set('hover-hint', 1); setTimeout(() => toast('마우스를 화면 맨 위나 맨 아래로 가져가면 메뉴가 나옵니다'), 1200); }
     if (immersive() && !store.get('tap-hint')) { store.set('tap-hint', 1); setTimeout(() => toast('글을 넘기면 메뉴가 숨고, 화면을 한 번 누르면 다시 나옵니다'), 1200); }
   }
   // 설정·목록 창: 위 단추 줄 바로 아래에 열리게 하고(단추를 가리지 않게), 창마다 ✕ 닫기 단추
