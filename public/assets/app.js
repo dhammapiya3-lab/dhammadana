@@ -10,6 +10,21 @@ const store = {
   set(k, v) { try { localStorage.setItem('dd-' + k, JSON.stringify(v)); } catch (e) {} try { syncMark(k); } catch (e) {} }
 };
 const SITE = 'dhammadana.kr';
+// 카카오톡·네이버·인스타그램 등 앱 안 브라우저는 음성 읽기(speechSynthesis)를 막아 둠 → 크롬·삼성 인터넷·사파리로 열도록 안내
+const inApp = () => /KAKAOTALK|NAVER\(inapp|Instagram|FBAN|FBAV|Line\/|everytimeApp|BAND\//i.test(navigator.userAgent);
+function openOutside() {
+  const u = location.href, ua = navigator.userAgent;
+  if (/KAKAOTALK/i.test(ua)) { location.href = 'kakaotalk://web/openExternal?url=' + encodeURIComponent(u); return; }
+  if (/Android/i.test(ua)) { location.href = 'intent://' + u.replace(/^https?:\/\//, '') + '#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=' + encodeURIComponent(u) + ';end'; return; }
+  copy(u, '주소를 복사했습니다. 사파리를 열고 주소창에 붙여넣어 주세요');
+}
+function noVoice() {
+  if (!inApp()) return toast('이 브라우저에서는 음성 읽기를 쓸 수 없습니다. 크롬·삼성 인터넷·사파리에서 열어 주세요');
+  const old = $('#nvBox'); if (old) old.remove();
+  const d = document.createElement('div'); d.id = 'nvBox'; d.className = 'nv-box';
+  d.innerHTML = `<p><b>이 화면(앱 안 브라우저)에서는 듣기를 쓸 수 없습니다.</b><br>카카오톡·네이버 같은 앱 안에서 연 화면은 음성 읽기가 막혀 있습니다. 휴대폰의 기본 브라우저로 열면 들으실 수 있습니다.</p><div class="nv-b"><button class="btn" id="nvGo">${/iPhone|iPad/i.test(navigator.userAgent) && !/KAKAOTALK/i.test(navigator.userAgent) ? '주소 복사하기' : '다른 브라우저로 열기'}</button><button class="btn ghost" id="nvX">닫기</button></div>`;
+  document.body.appendChild(d); $('#nvGo').onclick = openOutside; $('#nvX').onclick = () => d.remove();
+}
 function toast(m) { const t = $('#toast'); t.textContent = m; t.classList.add('show'); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('show'), 2800); }
 function copy(text, msg) { (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject()).then(() => toast(msg)).catch(() => toast('복사할 수 없는 환경입니다. 길게 눌러 직접 복사해 주세요')); }
 const today = () => new Date().toLocaleDateString('sv-SE');
@@ -711,7 +726,7 @@ function bindReader() {
     inp.addEventListener(inp.type === 'range' ? 'input' : 'change', save);
   });
   const tt = $('#ttsTry'); if (tt) tt.onclick = () => {
-    if (!('speechSynthesis' in window)) return toast('이 기기에서는 음성 읽기를 쓸 수 없습니다');
+    if (!('speechSynthesis' in window)) return noVoice();
     if (!LEX.pali) { loadLex().then(() => tt.onclick()); return; }
     const o = ttsOpt(); const pv = pickVoice(o), v = pv.voice;
     speechSynthesis.cancel(); speakSegs(sayable('법보시는 모든 보시를 능가한다. Sabbadānaṃ dhammadānaṃ jināti. (법구경 354게송) Dhamma is the best gift.', o, true), o, pv, () => {}, () => {});
@@ -1121,7 +1136,7 @@ function tableLines(s) {
 }
 // fromK: 그 쪽의 몇 번째 문단부터, firstText: 첫 문단은 이 글부터(고른 곳부터 읽기)
 function speak(fromK = 0, firstText = null) {
-  if (!('speechSynthesis' in window)) { toast('이 기기에서는 음성 읽기를 쓸 수 없습니다'); return; }
+  if (!('speechSynthesis' in window)) { noVoice(); return; }
   if (!LEX.pali) { toast('읽기를 준비하는 중입니다…'); loadLex().then(() => speak(fromK, firstText)); return; }
   const o = ttsOpt();
   const p = R.pages[R.i]; const sentences = paras(p.text);

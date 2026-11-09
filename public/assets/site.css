@@ -916,3 +916,5 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .people a.plink:hover{color:var(--robe)}
 
 .book .snip{margin-top:6px;line-height:1.5;font-weight:400}.book .snip mark{background:#f3e3b5;color:inherit;padding:0 2px}
+
+.nv-box{position:fixed;left:12px;right:12px;bottom:84px;z-index:1000;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.18);max-width:520px;margin:0 auto}.nv-box p{margin:0 0 12px;line-height:1.6;font-size:15px}.nv-b{display:flex;gap:8px;flex-wrap:wrap}
