@@ -801,7 +801,7 @@ for (const [p, html] of Object.entries(pages)) {
     .map(([p]) => SITE + '/' + p.replace(/index\.html$/, '')).sort();
   const xe = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
   fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${xe(encodeURI(u))}</loc></url>`).join('\n')}\n</urlset>\n`);
-  fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /admin/\nDisallow: /api/\nDisallow: /account/\nDisallow: /mynotes/\nDisallow: /study/\nDisallow: /download/\nDisallow: /search/\n\nSitemap: ${SITE}/sitemap.xml\n`);
+  fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /admin/\nDisallow: /api/\nDisallow: /account/\nDisallow: /mynotes/\nDisallow: /study/\nDisallow: /archive/\nDisallow: /download/\nDisallow: /search/\n\nSitemap: ${SITE}/sitemap.xml\n`);
 }
 // 검색·내 서재·읽기에 쓰는 자료
 const site = {

@@ -15,7 +15,7 @@ try { if (!localStorage.getItem('dd-notrack')) localStorage.setItem('dd-notrack'
 document.addEventListener('DOMContentLoaded', () => {
   const n = document.createElement('div');
   n.style.cssText = 'position:fixed;right:12px;bottom:12px;z-index:9999;display:flex;gap:6px;font:13px sans-serif';
-  n.innerHTML = [['/admin/stats/', '📊 통계'], ['/admin/paper/', '📦 종이책 신청'], ['/admin/upload/', '⬆ 파일 올리기']].map(([h, t]) => `<a href="${h}" style="background:#fff;border:1px solid #ccc;border-radius:999px;padding:5px 10px;color:#5b3a1e;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,.15)">${t}</a>`).join('');
+  n.innerHTML = [['/admin/stats/', '📊 통계'], ['/admin/paper/', '📦 종이책 신청'], ['/admin/upload/', '⬆ 파일 올리기'], ['/archive/', '🗄 아카이빙 자료실']].map(([h, t]) => `<a href="${h}" style="background:#fff;border:1px solid #ccc;border-radius:999px;padding:5px 10px;color:#5b3a1e;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,.15)">${t}</a>`).join('');
   document.body.appendChild(n);
   // 왼쪽 아래: 학습 자료실
   const l = document.createElement('a');
