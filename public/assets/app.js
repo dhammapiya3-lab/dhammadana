@@ -240,7 +240,11 @@ async function stLoad(k) {
 async function studyReader(d, it, want) {
   const id = it.id, base = '#' + encodeURIComponent(id);
   d.innerHTML = `<p style="margin-top:18px"><a href="${base}">← 자료 소개</a></p><p class="muted">본문을 불러오는 중…</p>`;
-  let P; try { P = await stLoad(it.text); } catch (e) { d.innerHTML = `<p style="margin-top:18px"><a href="${base}">← 자료 소개</a></p><p>본문을 불러오지 못했습니다. 새로고침해 주세요.</p>`; return; }
+  // 압축본(.gz)을 풀 수 없는 브라우저(옛 아이폰·일부 앱 안 브라우저)는 같은 자료의 글 파일(.txt)로 읽음
+  const plainTxt = (it.files || []).find(k => /\.txt$/i.test(k));
+  const key = /\.gz$/i.test(it.text) && !('DecompressionStream' in window) && plainTxt ? plainTxt : it.text;
+  let P; try { P = await stLoad(key); } catch (e) { try { if (plainTxt && key !== plainTxt) P = await stLoad(plainTxt); } catch (e2) {} }
+  if (!P || !P.length) { d.innerHTML = `<p style="margin-top:18px"><a href="${base}">← 자료 소개</a></p><p>본문을 불러오지 못했습니다. 새로고침해 주세요.</p>`; return; }
   const S = { fs: store.get('st-fs', 1), lh: store.get('st-lh', 1.9), font: store.get('st-font', 'serif') };
   let i = Math.min(Math.max((want || store.get('stpos-' + id, 1)) - 1, 0), P.length - 1);
   const hl = (txt, q) => { const e = esc(txt); if (!q) return e; const f = stFold(txt), fq = stFold(q); if (!fq) return e;
