@@ -211,7 +211,32 @@ const slugT = s => encodeURIComponent(s);
 const NAV = [['/about/', '소개', 'about'], ['/press/', '我無말들 출판사', 'press'], ['/library/', '법보시 도서관', 'library'], ['/dhammatalk/', '법문 바로 듣기', 'dhammatalk'], ['/links/', '추천·협력 사이트', 'links'], ['/news/', '소식', 'news']];
 const wheel = cls => `<svg class="${cls}" viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="20" cy="20" r="15"/><circle cx="20" cy="20" r="3.2"/><path d="M20 5v30M5 20h30M9.4 9.4l21.2 21.2M30.6 9.4L9.4 30.6"/></g></svg>`;
 
-function layout({ title, nav = '', page = '', body, desc = '', image = '' }) {
+// 검색엔진용 책 정보 (schema.org Book). 책 JSON 에 있는 것만 씀 — 없는 정보는 넣지 않음
+const SITE_URL = S.site_url.replace(/\/$/, '');
+function bookLd(b, e, t) {
+  const o = { '@context': 'https://schema.org', '@type': 'Book', name: b.title, url: `${SITE_URL}/book/${b.id}/`, inLanguage: 'ko' };
+  if (b.subtitle) o.alternativeHeadline = b.subtitle;
+  if (b.original_title) o.alternateName = b.original_title;
+  if (b.cover) o.image = encodeURI(SITE_URL + b.cover);
+  if (b.description) o.description = String(b.description).replace(/\s+/g, ' ').slice(0, 500);
+  const who = t ? t.name : String(b.byline || '').replace(/\s*(엮음|지음|저|편저|설법|법문|씀)$/, '');
+  if (who) o.author = { '@type': 'Person', name: who };
+  if (b.translator) o.translator = { '@type': 'Person', name: String(b.translator).replace(/\s*(옮김|번역|역)$/, '') };
+  if (e) {
+    const pub = e.publisher_print || e.publisher_ebook;
+    if (pub) o.publisher = { '@type': 'Organization', name: pub };
+    if (e.isbn || e.isbn_ebook) o.isbn = e.isbn || e.isbn_ebook;
+    if (e.page_count) o.numberOfPages = +e.page_count || undefined;
+    const d = ymd(e.published || e.published_ebook); if (d) o.datePublished = d;
+    if (e.label) o.bookEdition = e.label;
+  }
+  const topics = [...(b.main || []), ...(b.topics || [])]; if (topics.length) o.keywords = topics.join(', ');
+  if (b.book_type) o.genre = b.book_type;
+  o.isAccessibleForFree = true;
+  return o;
+}
+
+function layout({ title, nav = '', page = '', body, desc = '', image = '', ld = null }) {
   const t = title ? `${title} · ${S.site_name}` : S.site_name;
   const P = S.publisher;
   return `<!DOCTYPE html>
@@ -220,7 +245,7 @@ function layout({ title, nav = '', page = '', body, desc = '', image = '' }) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(t)}</title>
-<meta name="naver-site-verification" content="227f6f00a39d09eabb4c1c916b1a7dcf371a12df">
+${ld ? `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n` : ''}<meta name="naver-site-verification" content="227f6f00a39d09eabb4c1c916b1a7dcf371a12df">
 <meta name="google-site-verification" content="BMBhirIv12i354WOEbnZHgLYmliYQ_wdhRAl8oX8wdc">
 <meta name="description" content="${esc(desc || '부처님과 테라와다 스승들의 가르침을 우리말로 옮긴 법보시 서적을 무료로 찾고, 내려받고, 읽는 곳')}">
 <meta property="og:type" content="website">
@@ -304,7 +329,7 @@ function updatesList() {
   for (const b of LIB()) if (!b.hide_update) rows.push({ d: b.added || '', b, c: '등록' });
   return rows.sort((a, b) => b.d.localeCompare(a.d)).slice(0, 8);
 }
-put('index.html', layout({
+put('index.html', layout({ ld: { '@context': 'https://schema.org', '@type': 'WebSite', name: S.site_name, url: SITE_URL + '/', inLanguage: 'ko', potentialAction: { '@type': 'SearchAction', target: SITE_URL + '/search/?q={search_term_string}', 'query-input': 'required name=search_term_string' } },
   page: 'home', body: `<section class="verse wrap">${wheel('wheel')}
   <div class="pali-line">${esc(S.verse_pali)}</div><div class="ko-line">${esc(S.verse_ko)}</div><div class="cite">${esc(S.verse_cite)}</div>
   <form class="hero-search" action="/search/" role="search"><label for="hq" class="sr">자료 검색</label>
@@ -435,7 +460,7 @@ for (const b of BOOKS) {
   const pl = PLAYLISTS.find(p => p.teacher && p.teacher === b.teacher);
   const extF = f.filter(x => x.ext);
   put(`book/${b.id}/index.html`, layout({
-    title: b.title, nav: 'library', page: 'book', image: b.cover || '', desc: `${b.title} — ${b.byline}${b.translator ? ', ' + b.translator : ''}`, body: `<div class="wrap detail">
+    title: b.title, nav: 'library', page: 'book', image: b.cover || '', ld: bookLd(b, e, t), desc: `${b.title} — ${b.byline}${b.translator ? ', ' + b.translator : ''}`, body: `<div class="wrap detail">
   <div><div class="cover-box">${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지">` : `<div class="cover-ph big">${esc(b.title)}</div>`}</div></div>
   <div class="d-body"><div class="d-head"><div class="crumb"><a href="/library/">법보시 도서관</a>${tr ? ` › <a href="/library/?trad=${tr.id}">${esc(tr.name)}</a> › <a href="/teacher/${t.id}/">${esc(t.name)}</a>` : ''}</div>
     ${b.series ? `<div class="small muted">${esc(b.series)}</div>` : ''}
