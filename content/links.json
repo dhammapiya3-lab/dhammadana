@@ -69,6 +69,24 @@
           "url": "https://dhammasource.com/",
           "note": "테라와다불교 수행자를 위한 무료 자료 모음 · 빠알리 경전 읽기·내려받기, 법 서적, 수행 영상·다큐멘터리, 사원·수행 모임 지도",
           "lang": "영어"
+        },
+        {
+          "name": "Buddhism for Beginners",
+          "url": "https://buddhismforbeginnersgroup.wordpress.com/",
+          "note": "보시·계·업·사성제·명상 등을 다룬 초심자용 글과 경전 이야기, 법문, 내려받는 전자책 · 마하시 사야도·모곡 사야도 등 미얀마 스승들의 가르침도 소개",
+          "lang": "영어"
+        },
+        {
+          "name": "DPPS e-Library (kbrl.gov.mm)",
+          "url": "https://kbrl.gov.mm/old/Catalog/Featured",
+          "note": "미얀마 정부 교법 전파국(Department of Propagation of Sasana)의 전자 도서관 · 빠알리 삼장·주석서·복주서, 미얀마어·영어 번역, 빠알리-미얀마어 사전, 법문 음성, 영어 불교 서적 약 900권",
+          "lang": "미얀마어"
+        },
+        {
+          "name": "WinMetta",
+          "url": "https://winmetta.org/dhamma-download/",
+          "note": "마하시 사야도, 레디 사야도, 모곡 사야도, 밍군 사야도, 파욱 사야도 등 미얀마 스승들의 미얀마어·영어 법 서적과 아비담마·삼장 번역 내려받기, 삼장 읽기·사전 앱",
+          "lang": "미얀마어"
         }
       ]
     },
