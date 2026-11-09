@@ -33,6 +33,8 @@ const changes = new Map(); // 원문 낱말 → 소리
 const LAT = /[A-Za-zÀ-ÖØ-öø-žḀ-ỿ][A-Za-zÀ-ÖØ-öø-žḀ-ỿ'’-]*/g;
 const same = (x, y) => x.replace(/[\s·.,()\[\]]/g, '') === y.replace(/[\s·.,()\[\]]/g, '');
 let n = 0;
+// 책에 인쇄된 철자 → 읽을 때 쓸 바른 철자 (원고에서만 바꿈)
+const SPELL = [['michacārā', 'micchācārā']];
 
 // 한글 문장 안의 로마자 풀이 빼기 (운영자 요청, 2026-11-09)
 //  - 한글 바로 뒤나 한글 낱말 + 빈칸 뒤에 덧붙인 원어는 뺌: 법 dhamma이며 → 법이며, 붓당 사라낭 갓차아미 Buddhaṃ … → 뺌
@@ -84,6 +86,8 @@ top.forEach((c, k) => {
       let pre = par, prev;
       do { prev = pre; pre = pre.replace(/\s?[(\[〔（［]([^()\[\]〔〕（）［］가-힣]*)[)\]〕）］]/g, (m, inner) => /[A-Za-zÀ-ÖØ-öø-žḀ-ỿ\u3400-\u9FFF\uF900-\uFAFF]/.test(inner) ? '' : m); } while (pre !== prev);
       pre = pre.replace(/([가-힣])[\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]+/g, '$1');
+      // 책에 잘못 인쇄된 빨리어 철자는 읽을 때만 바른 철자로 (책 본문은 그대로) — 운영자 확인, 2026-11-09
+      for (const [bad, good] of SPELL) pre = pre.split(bad).join(good);
       pre = pre.split('\n').filter(l => !(/속표지|판권지/.test(c.title) && !/[가-힣āīūṃṅñṭḍṇḷ]/.test(l))).map(stripGloss).filter(x => x).join('\n');  // 속표지·판권지의 영어 줄은 한글과 같은 내용이라 뺌
       if (!pre) return;
       const said = lib.sayable(pre, OPT);
