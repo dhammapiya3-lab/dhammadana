@@ -97,10 +97,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "file",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0015/DL-0015_개정4판4쇄.pdf"
       },
       "pdf_print": {
         "mode": "none",
