@@ -50,3 +50,10 @@
 - **오디오북 원고** (운영자 요청, 2026-11-09): 음성 파일을 만들기 전에 `node tools/audiobook_script.mjs <ID> [--gloss] [--footnotes]` 로 장마다 원고(tools/out/audiobook/<ID>/NN_장제목.txt)를 만든다. 사이트 '듣기'와 같은 규칙(app.js PALI·sayable)을 그대로 불러 로마자 빨리어를 한글 소리로(음역 규칙), 한자·각주 번호·쪽 표시·그림은 뺌. 책 본문(content/texts)은 바꾸지 않음. 바뀐 빨리어 목록 빨리어_소리_확인.tsv 를 운영자가 검토. 무료 음성은 MeloTTS(한국어, huggingface 에서 받음) — 로마자 빨리어(ā ñ ṃ 등)는 그대로 못 읽으므로 반드시 이 원고로.
 - 검색엔진: 빌드가 `sitemap.xml`·`robots.txt` 를 만든다(관리자·회원·학습 자료실·내 서재·검색 화면과 noindex 페이지는 뺌).
 - 확인: `npm run dev` → http://localhost:4321
+
+## 그림책 사이트 (storybooks.dhammadana.kr) — `storybooks/` 폴더
+- 원작: dharma-storybooks.net (아난다조띠 스님, CC BY-SA 4.0) 한국어판. **한국어판도 CC BY-SA 4.0** (도서관의 CC BY-NC-ND 와 다름). 출처 표시 필수.
+- 별도 Cloudflare Pages 프로젝트(루트 `storybooks`, 빌드 `npm run build`, 출력 `dist`) — 도서관과 같은 저장소, 독립 주소. 도서관 메뉴의 '그림책'(build.mjs NAV)이 이 주소로 연결.
+- 자료: `storybooks/data/catalog.json`(원 사이트 구조, 수집본), `ko.json`(한국어 번역: 책 제목·소개·이야기 제목·줄거리), `ready.json`(한글 그림이 준비된 이야기와 그림 수). 그림은 `img_base`(지금은 /img, 나중에 R2) 아래 `<책>/<이야기>/big/NN.jpg`(원본 크기·JPEG 92) 와 `s/NN.jpg`(800px), 표지 `covers/<책>.jpg`.
+- 그림 속 글 바꾸기 작업은 `storybooks-src` 가지(GitHub Actions): pipeline/crawl.py(수집) → parse.py → fetch_ocr.py(원본 받기·글 상자 찾기, boxes.py — 800px 축소본에서 찾음) → `ko/<책>/<이야기>.json` 에 번역(상자마다 seed·ko, 놓친 상자는 manual) → render.py(한글 그림). jobs/run.sh 를 바꿔 올리면 작업이 돈다. 내 커밋 메시지에는 [skip ci] 대신 [CF-Pages-Skip] 을 쓴다([skip ci] 는 Actions 까지 멈춤).
+- 번역 원칙: 테라와다 번역 지침(해설 합쇼체, 대화는 인물 관계에 맞게). 그림 속 글은 원문처럼 짧게 — 한글이 영어보다 가로로 길어 작은 상자는 글자가 작아지므로 줄여 쓴다. 번역 후 그림을 눈으로 확인.
