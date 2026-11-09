@@ -97,10 +97,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "pdf/DL-0015/DL-0015_개정4판4쇄.pdf"
+        "url": "pdf/DL-0015/DL-0015_개정4판4쇄.pdf",
+        "site": "",
+        "created": "2024년 9월 10일"
       },
       "pdf_print": {
         "mode": "none",
