@@ -1587,14 +1587,14 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
   let ev = null;
   const guideText = () => {
     const mob = /Android/i.test(navigator.userAgent), sam = /SamsungBrowser/i.test(navigator.userAgent);
-    return sam ? '주소창 오른쪽의 <b>⬇ 모양 아이콘(앱 설치)</b>을 누르고 <b>‘설치’</b>를 누르세요. 아이콘이 없으면 아래쪽 <b>⋮(또는 ≡) 메뉴 → ‘현재 페이지 추가’ → ‘홈 화면’</b>을 누르세요.'
+    return sam ? '아래쪽 <b>⋮(또는 ≡) 메뉴 → ‘현재 페이지 추가’ → ‘홈 화면’</b>을 누르세요. 홈 화면에 도서관 아이콘이 생겨요. (갤럭시의 ‘보안 위험 자동 차단’이 켜져 있으면 ‘앱 설치’는 ‘안전하지 않은 앱 설치 차단됨’으로 막히지만, 이 방법은 막히지 않아요.)'
       : ios ? '아래쪽(아이패드는 위쪽)의 <b>공유 단추 □↑</b>를 누르고 → <b>‘홈 화면에 추가’</b>를 고르세요. 그러면 홈 화면에 도서관 아이콘이 생겨요.'
       : mob ? '브라우저 오른쪽 위 <b>⋮ 메뉴</b> → <b>‘앱 설치’</b> 또는 <b>‘홈 화면에 추가’</b>를 누르세요.'
       : '주소창 오른쪽 끝의 <b>설치 아이콘(⊕ 또는 모니터 모양)</b>을 누르거나, 오른쪽 위 <b>⋮ 메뉴 → ‘전송, 저장, 공유’ → ‘페이지를 앱으로 설치’</b>를 누르세요.';
   };
   // 설치 창을 띄워 보고, 안 뜨거나 취소하면 메뉴로 설치하는 방법을 보여 줌 → true: 설치함
   const tryInstall = async showGuide => {
-    if (ev) { const e0 = ev; ev = null; try { await e0.prompt(); const r = await e0.userChoice; if (r && r.outcome === 'accepted') return true; } catch (e) {} }
+    if (ev && !/SamsungBrowser/i.test(navigator.userAgent)) { const e0 = ev; ev = null; try { await e0.prompt(); const r = await e0.userChoice; if (r && r.outcome === 'accepted') return true; } catch (e) {} }
     showGuide(guideText()); return false;
   };
   const off = () => { store.set('install-off', true); const b = $('#installBar'); if (b) b.remove(); };
