@@ -73,6 +73,19 @@ function stripGloss(s) {
   });
   return s.replace(/[ \t]{2,}/g, ' ').replace(/ ([,.)\]])/g, '$1').replace(/\(\s*\)|\[\s*\]/g, '').trim();
 }
+// 음성 엔진(MeloTTS)은 뒤에 단위가 없는 숫자를 한 자씩 읽음(145 → 일사오, 10 → 일영) → 한글 소리로 바꿔 씀 (2026-11-10 검수에서 찾음)
+const sino = n => { n = String(+n); if (n === '0') return '영'; const D = '영일이삼사오육칠팔구', U = ['', '십', '백', '천']; let out = '';
+  const four = s => { let r = ''; s = s.padStart(4, '0'); for (let i = 0; i < 4; i++) { const d = +s[i]; if (!d) continue; r += (d === 1 && i < 3 ? '' : D[d]) + U[3 - i]; } return r; };
+  const parts = []; let x = n; while (x.length) { parts.unshift(x.slice(-4)); x = x.slice(0, -4); }
+  const BIG = ['', '만', '억', '조']; parts.forEach((p, i) => { const w = four(p); if (w) out += (w === '일' && parts.length - 1 - i === 1 ? '' : w) + BIG[parts.length - 1 - i]; }); return out; };
+// 고유어 수(개·명·마리·살·번째 앞): 1~99 → 한/두/세/네 … 스무 …
+const NATIVE = n => { n = +n; if (n < 1 || n > 99) return null; const T = ['', '열', '스물', '서른', '마흔', '쉰', '예순', '일흔', '여든', '아흔'], O = ['', '한', '두', '세', '네', '다섯', '여섯', '일곱', '여덟', '아홉'];
+  const t = Math.floor(n / 10), o = n % 10; return (o === 0 && t === 2 ? '스무' : T[t]) + O[o]; };
+// 모든 아라비아 숫자를 한글 소리로 (음성 엔진이 숫자를 한 자씩 읽는 일이 많음: 2024 → 이영이사, 30일 → 삼영일). 0으로 시작하는 번호는 한 자씩
+const sayNum = s => s.replace(/(\d)\s?:\s?(?=\d)/g, '$1, ').replace(/\d+(?=(\s?)(개(?!월)|명|마리|살|번째|번|가지)?)/g, (d, sp, unit) => {
+  if (d.length > 1 && d[0] === '0') return d.split('').map(c => '영일이삼사오육칠팔구'[+c]).join(' ');
+  if (unit && unit !== '번' && NATIVE(d)) return NATIVE(d);
+  return sino(d); });
 top.forEach((c, k) => {
   const from = c.page, to = (top[k + 1] ? top[k + 1].page : pages.length + 1) - 1;
   const paras = []; let lastHead = false;
@@ -115,7 +128,7 @@ top.forEach((c, k) => {
   if (!paras.length && !title) return;
   n++;
   const name = String(n).padStart(2, '0') + '_' + c.title.replace(/[\u3400-\u9FFF]+/g, '').replace(/[\\/:*?"<>|]/g, '').slice(0, 40).trim() + '.txt';
-  fs.writeFileSync(path.join(outDir, name), [title, ...paras].join('\n\n') + '\n');
+  fs.writeFileSync(path.join(outDir, name), [title, ...paras].map(sayNum).join('\n\n') + '\n');
 });
 const tsv = ['원문\t소리', ...[...changes].sort((x, y) => x[0].localeCompare(y[0])).map(([w, s]) => `${w}\t${s}`)].join('\n');
 fs.writeFileSync(path.join(outDir, '빨리어_소리_확인.tsv'), tsv + '\n');
