@@ -53,7 +53,7 @@
 
 ## 그림책 사이트 (storybooks.dhammadana.kr) — `storybooks/` 폴더
 - 원작: dharma-storybooks.net (아난다조띠 스님, CC BY-SA 4.0) 한국어판. **한국어판도 CC BY-SA 4.0** (도서관의 CC BY-NC-ND 와 다름). 출처 표시 필수.
-- 별도 Cloudflare Pages 프로젝트(루트 `storybooks`, 빌드 `npm run build`, 출력 `dist`) — 도서관과 같은 저장소, 독립 주소. 도서관 메뉴의 '그림책'(build.mjs NAV)이 이 주소로 연결.
+- 별도 Cloudflare Pages 프로젝트(루트 `storybooks`, 빌드 `npm run build`, 출력 `dist`) — 도서관과 같은 저장소, 독립 주소. 도서관에서 그림책으로 가는 연결(메뉴·첫 화면 등)은 운영자가 자리를 고른 뒤에 넣는다 — 아직 넣지 않음.
 - 자료: `storybooks/data/catalog.json`(원 사이트 구조, 수집본), `ko.json`(한국어 번역: 책 제목·소개·이야기 제목·줄거리), `ready.json`(한글 그림이 준비된 이야기와 그림 수). 그림은 `img_base`(지금은 /img, 나중에 R2) 아래 `<책>/<이야기>/big/NN.jpg`(원본 크기·JPEG 92) 와 `s/NN.jpg`(800px), 표지 `covers/<책>.jpg`.
 - 그림 속 글 바꾸기 작업은 `storybooks-src` 가지(GitHub Actions): pipeline/crawl.py(수집) → parse.py → fetch_ocr.py(원본 받기·글 상자 찾기, boxes.py — 800px 축소본에서 찾음) → `ko/<책>/<이야기>.json` 에 번역(상자마다 seed·ko, 놓친 상자는 manual) → render.py(한글 그림). jobs/run.sh 를 바꿔 올리면 작업이 돈다. 내 커밋 메시지에는 [skip ci] 대신 [CF-Pages-Skip] 을 쓴다([skip ci] 는 Actions 까지 멈춤).
 - 번역 원칙: 테라와다 번역 지침(해설 합쇼체, 대화는 인물 관계에 맞게). 그림 속 글은 원문처럼 짧게 — 한글이 영어보다 가로로 길어 작은 상자는 글자가 작아지므로 줄여 쓴다. 번역 후 그림을 눈으로 확인.
