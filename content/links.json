@@ -54,7 +54,7 @@
           "name": "Buddho.org",
           "url": "https://buddho.org/books/",
           "note": "네덜란드 붓도 재단(Buddho Foundation)의 테라와다불교·명상 책 디지털 도서관 · 아잔 차, 아잔 리, 마하시 사야도, 레디 사야도, 냐나뽀니까 스님, 비구 보디 스님 등의 책과 짧은 소개",
-          "lang": "영어·네덜란드어"
+          "lang": "영어"
         },
         {
           "name": "The Open Buddhist University",
@@ -230,6 +230,11 @@
           "name": "Pāli Dictionary (dictionary.sutta.org)",
           "url": "https://dictionary.sutta.org/",
           "note": "빠알리어 낱말을 영어·중국어·일본어·베트남어·미얀마어 사전에서 한꺼번에 찾는 온라인 사전 · 빠알리 글자 입력판, 내려받아 쓰는 프로그램도 있음"
+        },
+        {
+          "name": "Dharmamitra 번역기",
+          "url": "https://dharmamitra.org/ko/translate",
+          "note": "빠알리어·산스끄리뜨어·티베트어·한문 불교 원문을 여러 나라 말로 옮겨 보는 AI 번역 도구 · UC 버클리 AI 연구소, 일본 도호쿠 대학, 짜드라 재단의 공동 사업 (AI 번역)"
         }
       ]
     }
