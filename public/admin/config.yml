@@ -102,6 +102,7 @@ collections:
       - { name: description, label: 책 소개, widget: markdown, required: false }
       - { name: author_intro, label: 저자 소개, widget: markdown, required: false, hint: "책에 실린 저자(스승) 소개. 목차 위에 나옵니다." }
       - { name: translator_intro, label: 옮긴이 소개, widget: markdown, required: false, hint: "옮긴이·편역자 소개. 저자 소개 아래, 목차 위에 나옵니다." }
+      - { name: translator_intro_title, label: 옮긴이 소개 제목, widget: string, required: false, hint: "비워 두면 ‘옮긴이 소개’. 감수자 등 다른 사람을 소개할 때 ‘감수자 소개’처럼 바꿔 씁니다." }
       - { name: contents, label: 목차, widget: text, required: false, hint: "한 줄에 한 장씩 적습니다. 아랫단계는 줄 앞에 '-' 를 붙입니다. 쪽수는 '제1장 자애란 ... 15' 처럼 끝에 적으면 오른쪽에 나옵니다." }
       - name: editions
         label: 판 (초판·개정판)

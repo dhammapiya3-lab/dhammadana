@@ -131,7 +131,7 @@ function bookSections(b, e, t) {
   if (has(b.description)) secs.push({ id: 'intro', name: '책 소개', html: `<div class="desc lead-first">${marked.parse(b.description)}</div>` });
   const person = text => `<div class="person-card"><div class="desc">${marked.parse(text)}</div></div>`;
   if (has(b.author_intro)) secs.push({ id: 'author', name: '저자 소개', html: person(b.author_intro) });
-  if (has(b.translator_intro)) secs.push({ id: 'translator', name: '옮긴이 소개', html: person(b.translator_intro) });
+  if (has(b.translator_intro)) secs.push({ id: 'translator', name: b.translator_intro_title || '옮긴이 소개', html: person(b.translator_intro) });
   if (e.reader) secs.push({ id: 'toc', name: '목차', html: `<div id="tocMount" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}"></div>` });
   else if (has(b.contents)) secs.push({ id: 'toc', name: '목차', html: contentsHtml(b.contents) });
   if (!secs.length) return '';
