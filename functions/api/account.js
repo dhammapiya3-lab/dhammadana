@@ -122,8 +122,8 @@ export async function onRequestPost({ request, env }) {
     const rt = rnd(24); await putJ(env, `acct/resets/${rt}.json`, { id: u.id, exp: Date.now() + 3600e3 });
     u.lastMail = Date.now(); await putJ(env, `acct/users/${keyOf(u.id)}.json`, u);
     const link = `https://dhammadana.kr/account/?reset=${rt}`;
-    await sendMail(env, u.email, '[테라와다불교 법보시 도서관] 비밀번호 다시 정하기',
-      `${u.id} 님, 안녕하세요.\n\n아래 링크를 눌러 새 비밀번호를 정해 주세요. 링크는 1시간 동안 한 번만 쓸 수 있습니다.\n\n${link}\n\n비밀번호 찾기를 하지 않으셨다면 이 메일은 지우셔도 됩니다. 비밀번호는 바뀌지 않습니다.\n\n— 테라와다불교 법보시 도서관 (dhammadana.kr)에서 보낸 메일입니다.`);
+    await sendMail(env, u.email, '[붓다담마 법보시 도서관] 비밀번호 다시 정하기',
+      `${u.id} 님, 안녕하세요.\n\n아래 링크를 눌러 새 비밀번호를 정해 주세요. 링크는 1시간 동안 한 번만 쓸 수 있습니다.\n\n${link}\n\n비밀번호 찾기를 하지 않으셨다면 이 메일은 지우셔도 됩니다. 비밀번호는 바뀌지 않습니다.\n\n— 붓다담마 법보시 도서관 (dhammadana.kr)에서 보낸 메일입니다.`);
     return done;
   }
   if (op === 'find_id') {  // 이메일로 아이디 알려 주기 (있든 없든 같은 대답)
@@ -140,8 +140,8 @@ export async function onRequestPost({ request, env }) {
     for (const id of x.ids) { const u = await getJ(env, `acct/users/${keyOf(id)}.json`); if (u && u.email && u.email.trim().toLowerCase() === email.toLowerCase()) ids.push(u.id); }
     if (!ids.length) return done;
     x.lastMail = Date.now(); await putJ(env, k, x);
-    await sendMail(env, email, '[테라와다불교 법보시 도서관] 아이디 안내',
-      `안녕하세요.\n\n이 이메일로 가입한 아이디는 다음과 같습니다.\n\n${ids.map(i => '· ' + i).join('\n')}\n\n비밀번호도 잊으셨다면 사이트의 '비밀번호 찾기'에서 이메일로 다시 정할 수 있습니다.\nhttps://dhammadana.kr/account/\n\n아이디 찾기를 하지 않으셨다면 이 메일은 지우셔도 됩니다.\n\n— 테라와다불교 법보시 도서관`);
+    await sendMail(env, email, '[붓다담마 법보시 도서관] 아이디 안내',
+      `안녕하세요.\n\n이 이메일로 가입한 아이디는 다음과 같습니다.\n\n${ids.map(i => '· ' + i).join('\n')}\n\n비밀번호도 잊으셨다면 사이트의 '비밀번호 찾기'에서 이메일로 다시 정할 수 있습니다.\nhttps://dhammadana.kr/account/\n\n아이디 찾기를 하지 않으셨다면 이 메일은 지우셔도 됩니다.\n\n— 붓다담마 법보시 도서관`);
     return done;
   }
   if (op === 'reset_pw') {

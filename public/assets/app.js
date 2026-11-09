@@ -375,7 +375,7 @@ function playEp(plId, i, list) {
 function setMedia(e) {
   if (!('mediaSession' in navigator)) return;
   try {
-    navigator.mediaSession.metadata = new MediaMetadata({ title: e.title, artist: e.plname, album: '테라와다불교 법보시 도서관 · 법문 바로 듣기', artwork: [{ src: '/images/og.jpg', sizes: '1200x630', type: 'image/jpeg' }] });
+    navigator.mediaSession.metadata = new MediaMetadata({ title: e.title, artist: e.plname, album: '붓다담마 법보시 도서관 · 법문 바로 듣기', artwork: [{ src: '/images/og.jpg', sizes: '1200x630', type: 'image/jpeg' }] });
   } catch (x) {}
 }
 function initPlayer() {
@@ -1347,7 +1347,7 @@ if (ACC.token) syncNow();
 try {
   if (navigator.sendBeacon && location.protocol === 'https:' && !store.get('notrack', false) && !/^\/(admin|api)\b/.test(location.pathname)) {
     let v = store.get('vid', ''); if (!/^[0-9a-z]{8,24}$/.test(v)) { v = Math.random().toString(36).slice(2, 12) + Date.now().toString(36).slice(-4); store.set('vid', v); }
-    navigator.sendBeacon('/api/hit', JSON.stringify({ p: location.pathname, t: document.title.replace(/\s*·\s*테라와다불교 법보시 도서관$/, ''), r: document.referrer, v }));
+    navigator.sendBeacon('/api/hit', JSON.stringify({ p: location.pathname, t: document.title.replace(/\s*·\s*(?:테라와다불교|붓다담마) 법보시 도서관$/, ''), r: document.referrer, v }));
   }
 } catch (e) {}
 })();
