@@ -869,6 +869,7 @@ a.paper-request:hover{filter:brightness(1.08)}
 .link-card .small{overflow-wrap:anywhere}
 .lang-row+.lang-row{margin-top:18px}
 .lang-h{font-size:14px;color:var(--ink-soft);margin:0 0 8px;font-weight:600}
+.lang-multi{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}.lang-multi>.lang-row{margin:0}.lang-multi .link-grid{grid-template-columns:1fr}
 .link-card .lc-img{border:1px solid var(--line)}
 .prose .news-meta{margin-bottom:20px}.prose .news-meta+h1{margin-top:0}
 .record .tbl-wrap{overflow-x:auto}.record .tbl td,.record .tbl th{white-space:nowrap}
