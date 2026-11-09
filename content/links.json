@@ -205,6 +205,11 @@
           "name": "GRETIL",
           "url": "https://gretil.sub.uni-goettingen.de/gretil.html#Suttapit",
           "note": "독일 괴팅겐 대학 도서관의 인도 고전어 전자 원문 모음 · 빠알리 삼장(율장·경장·논장)과 주석서·복주서·연대기·문법서 등 원문 파일, 빠알리 전체 한 번에 내려받기"
+        },
+        {
+          "name": "Digital Pāḷi Dictionary (DPD)",
+          "url": "https://www.dpdict.net/",
+          "note": "빠알리어-영어 디지털 사전 · 낱말마다 문법·어근·연음(산디) 풀이, 6차 결집본 삼장에서 굵은 글씨로 정의된 용어 찾기, 삼장 원문·번역 찾기 (영어·러시아어 화면)"
         }
       ]
     }
