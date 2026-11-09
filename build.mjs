@@ -756,7 +756,7 @@ put('account/index.html', layout({ title: '로그인 · 회원', page: 'account'
   <div id="acctRoot"><p class="muted">불러오는 중…</p></div>
   <p class="small muted" style="margin-top:28px">저장하는 것: 아이디, 되돌릴 수 없게 바꾼 비밀번호·복구 코드, 넣은 분만 이메일(아이디·비밀번호 찾기 메일에만 씀), 독서 기록. 이름·전화번호·IP 주소는 저장하지 않습니다. 탈퇴하면 모두 지워집니다.</p></div>` }));
 // 내 서재
-put('mynotes/index.html', layout({ title: '내 서재', page: 'mynotes', body: `<div class="wrap"><div class="prose" style="padding-bottom:0"><h1>내 서재</h1><p class="muted">밑줄과 책갈피를 책별로 모아 봅니다. 회원가입을 하지 않으면 이 기기의 브라우저에만 저장됩니다.</p></div><div id="installBox"></div><div id="notesRoot"></div></div>` }));
+put('mynotes/index.html', layout({ title: '내 서재', page: 'mynotes', body: `<div class="wrap"><div class="prose" style="padding-bottom:0"><h1>내 서재</h1><p class="muted">밑줄과 책갈피를 책별로 모아 봅니다. 회원가입을 하지 않으면 이 기기의 브라우저에만 저장됩니다.</p></div><div id="notesRoot"></div><div id="installBox"></div></div>` }));
 
 // 인터넷이 없을 때
 // 학습 자료실: 빈 틀만 만들고, 내용(파일 목록)은 로그인한 뒤 /study/api/list 에서 받아 옵니다. 자료는 공개 저장소에 두지 않습니다.
