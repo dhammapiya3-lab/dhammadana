@@ -10,7 +10,7 @@
 - 관리자 화면: `/admin`, 책 파일 올리기: `/admin/upload/` (functions/api/upload.js, R2 바인딩 FILES — wrangler.toml)
 - 종이책 보시 신청 게시판(비밀글): `/press/request/` (public/assets/paper.js), 서버 `functions/api/paper.js`, 저장은 공개 주소 없는 R2 `PAPER` 창고(dhammadana-paper), 관리 `/admin/paper/`. 알림 메일은 Pages 비밀 변수 PAPER_NOTIFY_URL(운영자 Gmail 의 구글 Apps Script 웹 앱)로 보냄. 신청 개인정보는 다른 곳에 보내거나 저장하지 않는다. 책의 `paper` 값: request(보시 신청)·soldout(품절)·ebook(전자책 Only).
 - 사이트 통계: `/admin/stats/` (functions/api/stats.js). 방문 기록은 app.js 가 `/api/hit`(functions/api/hit.js)로 보내 PAPER 창고 `stats/` 에 저장 — 기기별 무작위 번호만, IP·이름 저장 안 함. 지난 날은 `stats/day/<날짜>.json` 으로 묶고 낱개는 지움. 관리자 기기는 localStorage `dd-notrack` 이 true 면 보내지 않음(/admin 들어가면 저절로 켜짐).
-- 회원(독서 기록 이어 보기): `/account/` (app.js 의 initAccount·syncNow), 서버 `functions/api/account.js`, 저장은 PAPER 창고 `acct/`. 아이디+비밀번호(되돌릴 수 없게 바꾼 값만), 비밀번호 찾기는 복구 코드(모든 회원) 또는 이메일(넣은 회원만, PAPER_NOTIFY_URL 의 Apps Script 가 `to` 로 보냄). 운영자도 비밀번호·복구 코드를 볼 수 없음. 이어 보는 것: bm·ul·hist·pos-·ppos-·plast·pl·sub- (키마다 나중에 바꾼 것이 이김, 기기에서 처음 로그인할 때 책갈피·밑줄·내 서재는 합침). 이메일은 비밀번호 찾기 메일 말고 쓰지 않는다.
+- 회원(독서 기록 이어 보기): `/account/` (app.js 의 initAccount·syncNow), 서버 `functions/api/account.js`, 저장은 PAPER 창고 `acct/`. 아이디+비밀번호(되돌릴 수 없게 바꾼 값만), 비밀번호 찾기는 복구 코드(모든 회원) 또는 이메일(넣은 회원만, PAPER_NOTIFY_URL 의 Apps Script 가 `to` 로 보냄). 아이디 찾기는 이메일로(`find_id`, 색인 `acct/emails/<해시>.json` — 이메일 자체가 아닌 해시를 이름으로, 있든 없든 같은 대답). Apps Script 는 Pages 비밀 변수 PAPER_NOTIFY_KEY 와 같은 KEY 를 확인함. 운영자도 비밀번호·복구 코드를 볼 수 없음. 이어 보는 것: bm·ul·hist·pos-·ppos-·plast·pl·sub- (키마다 나중에 바꾼 것이 이김, 기기에서 처음 로그인할 때 책갈피·밑줄·내 서재는 합침). 이메일은 비밀번호 찾기 메일 말고 쓰지 않는다.
 - 학습 자료실(`/study/`, Cloudflare Access 로 허락받은 분만): 파일은 비공개 R2 `MEMBERS`(dhammadana-study). 법보시 도서관처럼 찾아보기(출판사·책 형식·주제)+표지 카드+자료 소개 화면(app.js initMembers). 자료마다의 정보(제목·출판사·형식·주제·소개·파일·표지)는 **공개 GitHub 에 두지 않고** MEMBERS 의 `_catalog.json` 에 저장, 관리 화면 `/admin/members/` 의 '자료 정보'에서 입력. 분류 틀(출판사·형식 목록)은 `content/study.json`, 주제는 topics.json 그대로.
 - 화면 동작: `public/assets/app.js`, 디자인: `public/assets/site.css`.
 
@@ -39,4 +39,5 @@
 - **완성 후 검수는 기본** (운영자 요청, 2026-11): 책 본문을 만들거나 고친 뒤에는 늘 검수하고 결과를 알린다 — ① 글자: 원문과 한 자도 다르지 않은지(pdf2reader 의 ✓, 고친 전후 글자 수 대조) ② 순서·줄 바꿈·각주: `python3 tools/audit_text.py <ID> 책.pdf` (게송·잠언·판권지 줄은 인쇄본과 같게, 산문은 이어 붙여도 됨) ③ 숨은 글(hidden.txt)·장 나눔·그림 위치를 화면으로 확인 ④ 다른 점은 고친 것과 일부러 다르게 한 것을 나눠서 보고.
 - **(예전 방식)**: `python3 tools/pdf2reader.py 책.pdf DL-0007 초판 [--offset N] [--toc toc.txt]` → 결과 확인(깨진 빨리어 글자 경고 확인) → `python3 tools/upload.py` → 책 JSON 의 해당 판에서 `reader: true`, `pdf: {mode: file, url: pdf/DL-0007/DL-0007_초판.pdf}` → commit·push.
 - 새 책: `content/books/` 에 다음 번호로 파일 추가(형식은 기존 파일 참고), 표지는 `public/covers/<ID>.jpg`.
+- 검색엔진: 빌드가 `sitemap.xml`·`robots.txt` 를 만든다(관리자·회원·학습 자료실·내 서재·검색 화면과 noindex 페이지는 뺌).
 - 확인: `npm run dev` → http://localhost:4321

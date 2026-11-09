@@ -3,7 +3,3 @@
 
 /admin/*
   Cache-Control: no-cache
-
-/tts-test/*
-  Cross-Origin-Opener-Policy: same-origin
-  Cross-Origin-Embedder-Policy: credentialless

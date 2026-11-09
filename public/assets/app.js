@@ -1297,7 +1297,7 @@ function initAccount() {
         <p>이 기기의 책갈피·밑줄·읽던 곳·내 서재가 이 아이디에 저장되고, 다른 기기에서 같은 아이디로 로그인하면 이어집니다.</p>
         <div class="row"><button class="btn" id="aSync">지금 맞추기</button><button class="tbtn" id="aOut">로그아웃</button></div><div id="aSyncOut"></div></div>
         <details class="acct-more"><summary>비밀번호 바꾸기</summary>${form('fPw', F('pw', '지금 비밀번호', 'password', 'autocomplete="current-password" required') + F('newPw', '새 비밀번호 (8자 이상)', 'password', PWH), '바꾸기')}</details>
-        <details class="acct-more"><summary>이메일 (비밀번호 찾기용, 선택)</summary><p class="small">이메일을 넣어 두면 비밀번호를 잊었을 때 메일로 다시 정할 수 있습니다. 비밀번호 찾기 메일을 보낼 때만 쓰고 다른 곳에 쓰지 않습니다. 비우고 저장하면 지워집니다.</p>${me.mail ? '' : '<p class="small muted">(지금은 메일 보내기가 준비 중이라, 복구 코드로 찾아 주세요.)</p>'}${form('fMail', F('email', '이메일', 'email', 'autocomplete="email"') + F('pw', '지금 비밀번호', 'password', 'autocomplete="current-password" required'), '저장')}</details>
+        <details class="acct-more"><summary>이메일 (아이디·비밀번호 찾기용, 선택)</summary><p class="small">이메일을 넣어 두면 아이디나 비밀번호를 잊었을 때 메일로 찾을 수 있습니다. 아이디·비밀번호 찾기 메일을 보낼 때만 쓰고 다른 곳에 쓰지 않습니다. 비우고 저장하면 지워집니다.</p>${me.mail ? '' : '<p class="small muted">(지금은 메일 보내기가 준비 중이라, 복구 코드로 찾아 주세요.)</p>'}${form('fMail', F('email', '이메일', 'email', 'autocomplete="email"') + F('pw', '지금 비밀번호', 'password', 'autocomplete="current-password" required'), '저장')}</details>
         <details class="acct-more"><summary>복구 코드 새로 받기</summary><p class="small">복구 코드를 잃어버렸으면 새로 받으세요. 예전 코드는 못 쓰게 됩니다. 새 코드도 <b>만들어지는 순간 한 번만 표시</b>되니 잘 보관하세요.</p>${form('fCode', F('pw', '지금 비밀번호', 'password', 'autocomplete="current-password" required'), '새 복구 코드 받기')}</details>
         <details class="acct-more"><summary>회원 탈퇴</summary><p class="small">아이디와 저장소의 기록이 모두 지워집니다(이 기기에 있는 기록은 남습니다). 되돌릴 수 없습니다.</p>${form('fDel', F('pw', '지금 비밀번호', 'password', 'autocomplete="current-password" required'), '탈퇴하기')}</details>`;
       $('#aSync').onclick = async () => { await syncNow(); $('#aSyncOut').innerHTML = msg('맞췄습니다. 다른 기기의 기록도 이 기기에 들어왔습니다.'); };
@@ -1309,14 +1309,16 @@ function initAccount() {
     }).catch(e => { root.innerHTML = msg(e.message, true); if (!ACC.token) initAccount(); });
     return;
   }
-  root.innerHTML = `<div class="tabs acct-tabs"><a href="#login" data-t="login" class="on">로그인</a><a href="#signup" data-t="signup">회원 가입</a><a href="#find" data-t="find">비밀번호 찾기</a></div><div id="acctPane"></div>`;
+  root.innerHTML = `<div class="tabs acct-tabs"><a href="#login" data-t="login" class="on">로그인</a><a href="#signup" data-t="signup">회원 가입</a><a href="#find" data-t="find">아이디·비밀번호 찾기</a></div><div id="acctPane"></div>`;
   const pane = t => {
     $$('[data-t]', root).forEach(a => a.classList.toggle('on', a.dataset.t === t));
     const P = $('#acctPane', root);
     if (t === 'login') P.innerHTML = form('fIn', F('id', '아이디', 'text', 'autocomplete="username" required') + F('pw', '비밀번호', 'password', 'autocomplete="current-password" required'), '로그인');
-    if (t === 'signup') P.innerHTML = `<p class="small">아이디와 비밀번호만 있으면 됩니다. 이메일은 넣고 싶은 분만 넣으세요(비밀번호를 메일로 찾을 때만 씀). 가입하면 비밀번호를 잊었을 때 쓰는 <b>복구 코드</b>를 드립니다. 복구 코드는 <b>만들어지는 순간 한 번만 표시</b>되니 꼭 잘 보관하세요.</p>` +
+    if (t === 'signup') P.innerHTML = `<p class="small">아이디와 비밀번호만 있으면 됩니다. 이메일은 넣고 싶은 분만 넣으세요(아이디·비밀번호를 메일로 찾을 때만 씀). 가입하면 비밀번호를 잊었을 때 쓰는 <b>복구 코드</b>를 드립니다. 복구 코드는 <b>만들어지는 순간 한 번만 표시</b>되니 꼭 잘 보관하세요.</p>` +
       form('fUp', F('id', '아이디 (한글·영문·숫자 2~20자)', 'text', IDH) + F('pw', '비밀번호 (8자 이상)', 'password', PWH) + F('pw2', '비밀번호 한 번 더', 'password', PWH) + F('email', '이메일 (선택)', 'email', 'autocomplete="email"'), '가입하기');
-    if (t === 'find') P.innerHTML = `<h3>① 복구 코드로 찾기</h3><p class="small">가입할 때 받은 복구 코드(예: K7QM-2XPA-9TZD)를 넣고 새 비밀번호를 정하세요.</p>` +
+    if (t === 'find') P.innerHTML = `<h3>아이디를 잊었을 때</h3><p class="small">가입할 때(또는 나중에) 넣어 둔 이메일을 적으면, 그 이메일로 가입한 아이디를 메일로 알려 드립니다. 이메일을 넣지 않은 분은 아이디를 찾을 수 없습니다.</p>` +
+      form('fFid', F('email', '이메일', 'email', 'autocomplete="email" required'), '아이디 메일로 받기') +
+      `<h3 style="margin-top:28px">비밀번호를 잊었을 때</h3><h3>① 복구 코드로 찾기</h3><p class="small">가입할 때 받은 복구 코드(예: K7QM-2XPA-9TZD)를 넣고 새 비밀번호를 정하세요.</p>` +
       form('fRc', F('id', '아이디', 'text', 'autocomplete="username" required') + F('code', '복구 코드', 'text', 'required autocomplete="off"') + F('pw', '새 비밀번호 (8자 이상)', 'password', PWH), '새 비밀번호로 바꾸기') +
       `<h3>② 이메일로 찾기</h3><p class="small">가입할 때(또는 나중에) 이메일을 넣어 둔 분만 쓸 수 있습니다. 새 비밀번호를 정하는 링크를 메일로 보내 드립니다.</p>` +
       form('fMr', F('id', '아이디', 'text', 'autocomplete="username" required'), '메일 보내기') +
@@ -1327,6 +1329,7 @@ function initAccount() {
     on('fRc', async (o, out) => { const j = await acctApi('recover', o); acctSet(j.id, j.token); syncNow();
       root.innerHTML = `<div class="acct-card"><h2>비밀번호를 바꿨습니다</h2><p>예전 복구 코드는 이제 못 씁니다. 새 복구 코드를 적어 두세요.</p>${codeBox(j.recovery)}<div class="row"><a class="btn" href="/account/">다 적었습니다</a></div></div>`; bindCopy(); });
     on('fMr', async (o, out) => { const j = await acctApi('mail_reset', o); out.innerHTML = msg(j.msg); });
+    on('fFid', async (o, out) => { const j = await acctApi('find_id', o); out.innerHTML = msg(j.msg); });
   };
   $$('[data-t]', root).forEach(a => a.onclick = ev => { ev.preventDefault(); pane(a.dataset.t); });
   pane((location.hash || '#login').slice(1).replace(/[^a-z]/g, '') || 'login');

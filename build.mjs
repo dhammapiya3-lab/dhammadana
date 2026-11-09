@@ -644,7 +644,7 @@ for (const n of NEWS) {
 put('account/index.html', layout({ title: '로그인 · 회원', page: 'account', body: `<div class="wrap prose acct"><h1>로그인 · 회원</h1>
   <p class="muted">로그인하지 않아도 도서관은 모두 그대로 쓸 수 있습니다. 로그인하면 <b>읽던 곳·책갈피·밑줄·내 서재</b>가 휴대폰과 컴퓨터 등 여러 기기에서 이어집니다.</p>
   <div id="acctRoot"><p class="muted">불러오는 중…</p></div>
-  <p class="small muted" style="margin-top:28px">저장하는 것: 아이디, 되돌릴 수 없게 바꾼 비밀번호·복구 코드, 넣은 분만 이메일(비밀번호 찾기 메일에만 씀), 독서 기록. 이름·전화번호·IP 주소는 저장하지 않습니다. 탈퇴하면 모두 지워집니다.</p></div>` }));
+  <p class="small muted" style="margin-top:28px">저장하는 것: 아이디, 되돌릴 수 없게 바꾼 비밀번호·복구 코드, 넣은 분만 이메일(아이디·비밀번호 찾기 메일에만 씀), 독서 기록. 이름·전화번호·IP 주소는 저장하지 않습니다. 탈퇴하면 모두 지워집니다.</p></div>` }));
 // 내 서재
 put('mynotes/index.html', layout({ title: '내 서재', page: 'mynotes', body: `<div class="wrap"><div class="prose" style="padding-bottom:0"><h1>내 서재</h1><p class="muted">밑줄과 책갈피를 책별로 모아 봅니다. 회원가입을 하지 않으면 이 기기의 브라우저에만 저장됩니다.</p></div><div id="notesRoot"></div></div>` }));
 
@@ -663,6 +663,16 @@ fs.rmSync(OUT, { recursive: true, force: true });
 fs.cpSync(path.join(ROOT, 'public'), OUT, { recursive: true });
 for (const [p, html] of Object.entries(pages)) {
   const f = path.join(OUT, p); fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, html);
+}
+// 검색엔진용: sitemap.xml·robots.txt (관리자·회원·학습 자료실·내 서재·검색 결과 화면은 빼고, noindex 페이지도 뺌)
+{
+  const SITE = 'https://dhammadana.kr';
+  const skip = /^(admin|account|mynotes|study|search|read|offline|404)(\/|\.|$)/;
+  const urls = Object.entries(pages).filter(([p, html]) => /(^|\/)index\.html$/.test(p) && !skip.test(p) && !/name="robots" content="[^"]*noindex/.test(html))
+    .map(([p]) => SITE + '/' + p.replace(/index\.html$/, '')).sort();
+  const xe = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+  fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `  <url><loc>${xe(encodeURI(u))}</loc></url>`).join('\n')}\n</urlset>\n`);
+  fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /admin/\nDisallow: /api/\nDisallow: /account/\nDisallow: /mynotes/\nDisallow: /study/\nDisallow: /download/\nDisallow: /search/\n\nSitemap: ${SITE}/sitemap.xml\n`);
 }
 // 검색·내 서재·읽기에 쓰는 자료
 const site = {

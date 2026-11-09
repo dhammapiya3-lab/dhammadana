@@ -2,7 +2,7 @@
 // 인터넷이 되면 늘 새 내용을 먼저 받고(그리고 저장), 안 되면 저장해 둔 것을 보여 줍니다.
 const CACHE = 'dd-offline-v2';
 const CORE = ['/', '/library/', '/mynotes/', '/offline.html', '/assets/site.css', '/assets/app.js', '/images/icon.svg', '/images/logo.png', '/data/site.json'];
-const SKIP = /^\/(admin|api|download|members|study|cdn-cgi|tts-test)(\/|$)/;
+const SKIP = /^\/(admin|api|download|members|study|cdn-cgi)(\/|$)/;
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => Promise.all(CORE.map(u => c.add(u).catch(() => {})))).then(() => self.skipWaiting()));

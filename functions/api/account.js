@@ -4,7 +4,8 @@
 //   acct/sessions/<열쇠>.json   { id, exp }      (90일)
 //   acct/data/<아이디>.json    { k: { v, t } }  읽던 곳·책갈피·밑줄·내 서재 (키마다 마지막으로 바꾼 시각)
 //   acct/resets/<열쇠>.json     { id, exp }      이메일 비밀번호 찾기 (1시간, 한 번)
-// 이메일은 비밀번호 찾기 메일을 보낼 때만 쓰고 다른 곳에 보내거나 보여 주지 않는다. 메일은 설정값 PAPER_NOTIFY_URL(운영자 Gmail Apps Script)로.
+//   acct/emails/<이메일 해시>.json { ids, lastMail } 아이디 찾기용 색인 (이메일 자체는 적지 않고 되돌릴 수 없게 바꾼 값을 이름으로)
+// 이메일은 비밀번호·아이디 찾기 메일을 보낼 때만 쓰고 다른 곳에 보내거나 보여 주지 않는다. 메일은 설정값 PAPER_NOTIFY_URL(운영자 Gmail Apps Script)로.
 const json = (o, status = 200) => new Response(JSON.stringify(o), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
 const hex = b => [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join('');
 const rnd = n => hex(crypto.getRandomValues(new Uint8Array(n)));
@@ -58,6 +59,23 @@ async function sendMail(env, to, subject, body) {
   } catch (e) { return false; }
 }
 
+// ---- 아이디 찾기용 이메일 색인 ----
+const emailKey = async e => `acct/emails/${hex(await crypto.subtle.digest('SHA-256', enc('dd-email:' + String(e).trim().toLowerCase())))}.json`;
+async function idxAdd(env, email, id) { if (!email) return; const k = await emailKey(email), x = await getJ(env, k, { ids: [] }); if (!x.ids.includes(id)) { x.ids.push(id); await putJ(env, k, x); } }
+async function idxDel(env, email, id) { if (!email) return; const k = await emailKey(email), x = await getJ(env, k); if (!x) return; x.ids = x.ids.filter(v => v !== id); if (x.ids.length) await putJ(env, k, x); else await env.PAPER.delete(k); }
+async function idxBuild(env) {  // 색인을 처음 쓸 때 한 번만, 이미 있는 회원들로 만듦
+  if (await env.PAPER.head('acct/emails/_built.json')) return;
+  let cursor; do { const r = await env.PAPER.list({ prefix: 'acct/users/', cursor, limit: 1000 });
+    for (const o of r.objects) { const u = await getJ(env, o.key); if (u && u.email) await idxAdd(env, u.email, u.id); }
+    cursor = r.truncated ? r.cursor : null; } while (cursor);
+  await putJ(env, 'acct/emails/_built.json', { at: new Date().toISOString() });
+}
+async function findBudget(env) {  // 아이디 찾기 메일: 사이트 전체 한 시간에 30번까지
+  const h = new Date().toISOString().slice(0, 13), k = `acct/rl/findid-${h}.json`;
+  const c = await getJ(env, k, { n: 0 }); if (c.n >= 30) return false;
+  c.n++; await putJ(env, k, c); return true;
+}
+
 const DATA_KEY = /^(bm|ul|hist|plast|pl|pos-[\w.-]{1,40}|ppos-[^\s]{1,300}|sub-[\w.-]{1,60})$/;
 
 export async function onRequestPost({ request, env }) {
@@ -75,6 +93,7 @@ export async function onRequestPost({ request, env }) {
     const code = newCode();
     const u = { id, pw: await makeHash(b.pw), rc: await makeHash(normCode(code)), email, created: new Date().toISOString() };
     await putJ(env, `acct/users/${keyOf(id)}.json`, u);
+    if (email) { try { await idxBuild(env); await idxAdd(env, email, id); } catch (e) {} }
     return json({ ok: true, id, token: await newSession(env, id), recovery: code, hasEmail: !!email });
   }
   if (op === 'login') {
@@ -105,6 +124,24 @@ export async function onRequestPost({ request, env }) {
     const link = `https://dhammadana.kr/account/?reset=${rt}`;
     await sendMail(env, u.email, '[테라와다불교 법보시 도서관] 비밀번호 다시 정하기',
       `${u.id} 님, 안녕하세요.\n\n아래 링크를 눌러 새 비밀번호를 정해 주세요. 링크는 1시간 동안 한 번만 쓸 수 있습니다.\n\n${link}\n\n비밀번호 찾기를 하지 않으셨다면 이 메일은 지우셔도 됩니다. 비밀번호는 바뀌지 않습니다.\n\n— 테라와다불교 법보시 도서관 (dhammadana.kr)에서 보낸 메일입니다.`);
+    return done;
+  }
+  if (op === 'find_id') {  // 이메일로 아이디 알려 주기 (있든 없든 같은 대답)
+    const email = String(b.email || '').trim();
+    const done = json({ ok: true, msg: '그 이메일로 가입한 아이디가 있으면, 아이디를 메일로 보냈습니다. 메일함(스팸함도)을 확인해 주세요.' });
+    if (!email || !okEmail(email)) return json({ error: '이메일 주소를 다시 확인해 주세요.' }, 400);
+    await idxBuild(env);
+    const k = await emailKey(email), x = await getJ(env, k);
+    if (!x || !x.ids.length) return done;
+    if (x.lastMail && Date.now() - x.lastMail < 60e3) return done;  // 1분에 한 번
+    if (!(await findBudget(env))) return done;
+    // 색인과 실제 계정이 맞는 것만 (지운 계정·바꾼 이메일은 뺌)
+    const ids = [];
+    for (const id of x.ids) { const u = await getJ(env, `acct/users/${keyOf(id)}.json`); if (u && u.email && u.email.trim().toLowerCase() === email.toLowerCase()) ids.push(u.id); }
+    if (!ids.length) return done;
+    x.lastMail = Date.now(); await putJ(env, k, x);
+    await sendMail(env, email, '[테라와다불교 법보시 도서관] 아이디 안내',
+      `안녕하세요.\n\n이 이메일로 가입한 아이디는 다음과 같습니다.\n\n${ids.map(i => '· ' + i).join('\n')}\n\n비밀번호도 잊으셨다면 사이트의 '비밀번호 찾기'에서 이메일로 다시 정할 수 있습니다.\nhttps://dhammadana.kr/account/\n\n아이디 찾기를 하지 않으셨다면 이 메일은 지우셔도 됩니다.\n\n— 테라와다불교 법보시 도서관`);
     return done;
   }
   if (op === 'reset_pw') {
@@ -144,10 +181,14 @@ export async function onRequestPost({ request, env }) {
   }
   if (op === 'set_email') {
     const email = String(b.email || '').trim(); if (!okEmail(email)) return json({ error: '이메일 주소를 다시 확인해 주세요.' }, 400);
-    u.email = email; await putJ(env, ukey, u); return json({ ok: true, email: maskEmail(email), hasEmail: !!email });
+    try { await idxBuild(env); } catch (e) {}
+    const before = u.email; u.email = email; await putJ(env, ukey, u);
+    try { if (before && before.toLowerCase() !== email.toLowerCase()) await idxDel(env, before, u.id); if (email) await idxAdd(env, email, u.id); } catch (e) {}
+    return json({ ok: true, email: maskEmail(email), hasEmail: !!email });
   }
   if (op === 'new_code') { const code = newCode(); u.rc = await makeHash(normCode(code)); await putJ(env, ukey, u); return json({ ok: true, recovery: code }); }
   if (op === 'delete') {
+    try { await idxDel(env, u.email, u.id); } catch (e) {}
     await env.PAPER.delete([ukey, `acct/data/${keyOf(u.id)}.json`, `acct/sessions/${me.token}.json`]);
     return json({ ok: true });
   }
