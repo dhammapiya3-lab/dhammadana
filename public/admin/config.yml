@@ -61,6 +61,7 @@ collections:
         search_fields: ["items.*.name"]
         display_fields: ["items.*.name"]
       - { name: press, label: 我無말들 출판물, widget: boolean, default: false }
+      - { name: provider_chip, label: "자료 제공처를 '○○ 출간' 꼬리표로", widget: boolean, default: false, required: false, hint: "켜면 책 소개의 꼬리표 줄에 'OO 출간'(자료 제공처 이름)이 붙고, 누르면 그 곳 사이트로 갑니다." }
       - { name: paper, label: 종이책 상태, widget: select, required: false, options: [{ label: "종이책 보시 신청", value: request }, { label: "종이책 품절", value: soldout }, { label: "전자책 Only", value: ebook }], hint: "我無말들 출판도서 페이지에 표시됩니다. 비워 두면 표시하지 않습니다." }
       - { name: paper_url, label: 종이책 보시 신청 외부 링크, required: false, hint: "'종이책 보시 신청'일 때, 사이트 신청 게시판 대신 이 주소(예: 카페 글)로 연결합니다. 비워 두면 사이트 신청 게시판으로 갑니다." }
       - name: stores
