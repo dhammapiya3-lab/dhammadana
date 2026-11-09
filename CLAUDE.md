@@ -40,5 +40,6 @@
 - **(예전 방식)**: `python3 tools/pdf2reader.py 책.pdf DL-0007 초판 [--offset N] [--toc toc.txt]` → 결과 확인(깨진 빨리어 글자 경고 확인) → `python3 tools/upload.py` → 책 JSON 의 해당 판에서 `reader: true`, `pdf: {mode: file, url: pdf/DL-0007/DL-0007_초판.pdf}` → commit·push.
 - 새 책: `content/books/` 에 다음 번호로 파일 추가(형식은 기존 파일 참고), 표지는 `public/covers/<ID>.jpg`.
 - 출판사: 지금 판의 종이책·전자책 출판사(publisher_print·publisher_ebook)를 책 카드와 책 소개에 'OO 출간'으로 보이고, 도서관 찾아보기 '출판사'로 모아 봄(띄어쓰기만 다른 이름은 하나로 — build.mjs pubsOf).
+- 지은이·옮긴이: 책 소개의 지은이·옮긴이 이름을 누르면 그 사람의 책 모아 보기(/library/?person=키). 이름은 byline·translator 글에서 역할 말(지음·옮김·엮음·편역 등)을 떼어 냄. 스승 이름과 같으면 그 스승으로, '정원 김재성'처럼 앞에 붙은 이름은 뒤 이름('김재성')과 같은 사람으로 묶음(build.mjs PEOPLE). 도서관 찾아보기 '지은이·옮긴이'에도 있음.
 - 검색엔진: 빌드가 `sitemap.xml`·`robots.txt` 를 만든다(관리자·회원·학습 자료실·내 서재·검색 화면과 noindex 페이지는 뺌).
 - 확인: `npm run dev` → http://localhost:4321

@@ -911,3 +911,6 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .book .a.publ{margin-top:1px;font-size:12px}
 .people.publ{font-size:14px;margin-top:2px}
 .people.publ a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+
+.people a.plink{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.people a.plink:hover{color:var(--robe)}
