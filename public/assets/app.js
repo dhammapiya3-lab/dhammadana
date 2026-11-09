@@ -401,6 +401,8 @@ async function runSearch() {
   const D = await data();
   const { terms, group } = expand(q, D.variants);
   const has = s => { const n = norm(s); return terms.some(t => n.includes(t)); };
+  // 책 본문들을 한꺼번에(동시에) 받아 둠 — 하나씩 차례로 받으면 책이 많아질수록 느려짐
+  if (scope === 'all' || scope === 'body') await Promise.all(D.books.filter(b => b.manifest).map(b => manifest(b.manifest).catch(() => null)));
   const res = [];
   const isToc = t => { const ls = String(t || '').split('\n').map(x => x.trim()).filter(Boolean); return /^(차례|목차|contents)$/i.test(ls[0] || '') || (ls.length > 3 && ls.filter(x => /[|·.\s]\s*\d{1,3}$/.test(x)).length / ls.length > 0.5); };
   for (const b of D.books) {
