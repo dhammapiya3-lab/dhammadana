@@ -91,14 +91,51 @@ def small_of(img):
     return cv2.resize(img, (REF, round(H * k)), interpolation=cv2.INTER_AREA), k
 
 
+def robust_flood(sm, seed, r=16):
+    """seed 가 글자 획 위에 떨어져 영역이 너무 작으면 둘레의 밝은 바탕에서 다시 찾는다"""
+    h, w = sm.shape[:2]
+    fl, full = flood(sm, seed)
+    if (full > 0).sum() >= 0.003 * h * w:
+        return full
+    g = cv2.cvtColor(sm, cv2.COLOR_BGR2GRAY)
+    best, ba = full, (full > 0).sum()
+    for dy in range(-r, r + 1, 3):
+        for dx in range(-r, r + 1, 3):
+            x, y = int(seed[0]) + dx, int(seed[1]) + dy
+            if not (0 <= x < w and 0 <= y < h) or g[y, x] < 170:
+                continue
+            f2 = flood(sm, (x, y))[1]; a = (f2 > 0).sum()
+            if a <= ba or a > 0.3 * h * w:
+                continue
+            cs, _ = cv2.findContours(f2, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE); c = max(cs, key=cv2.contourArea)
+            if cv2.contourArea(c) / max(1, cv2.contourArea(cv2.convexHull(c))) > 0.6:
+                best, ba = f2, a
+    return best
+
+
 def region_masks(img, seed800):
-    """원본 크기의 (상자 전체, 상자 안쪽) 마스크"""
+    """원본 크기의 (상자 전체, 상자 안쪽) 마스크.
+    seed800 이 점 여러 개([[x,y],...])면 조각들을 합쳐 볼록한 하나로 (글자에 갈린 긴 띠 상자)"""
     H, W = img.shape[:2]
     sm, k = small_of(img)
-    fl, full = flood(sm, seed800)
+    if isinstance(seed800[0], (list, tuple)):
+        u = np.zeros(sm.shape[:2], np.uint8)
+        for sd in seed800:
+            u |= flood(sm, sd)[1]
+        cs, _ = cv2.findContours(u, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        full = np.zeros_like(u)
+        cv2.drawContours(full, [cv2.convexHull(np.vstack(cs))], -1, 255, -1)
+    else:
+        full = robust_flood(sm, seed800)
+        if 0 < (full > 0).sum() < 0.02 * full.size:  # 작은 이름표: 가장자리에 붙은 글자까지 감싸게 볼록하게
+            cs, _ = cv2.findContours(full, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+            cv2.drawContours(full, [cv2.convexHull(np.vstack(cs))], -1, 255, -1)
     full = cv2.resize(full, (W, H), interpolation=cv2.INTER_LINEAR)
     full = (full > 127).astype(np.uint8) * 255
     band = max(5, int(3.5 / k))  # 테두리 선 두께만큼 안쪽으로
+    ys_ = np.where(full.any(1))[0]
+    if len(ys_):
+        band = max(3, min(band, int((ys_.max() - ys_.min()) * 0.1)))  # 작은 이름표 상자는 얇게
     inner = cv2.erode(full, np.ones((band, band), np.uint8))
     return full, inner
 

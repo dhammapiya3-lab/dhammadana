@@ -1,0 +1,298 @@
+[
+ {
+  "img": "images/005-The-Measure-of-Rice-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     314,
+     188
+    ],
+    "shape": "box",
+    "en": "The Price of Benares Tale of Greed and Valuation Based on the ancient Jataka Tales",
+    "ko": "바라나시의 값\n탐욕과 값매김 이야기\n옛 자타카 이야기에서"
+   }
+  ]
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     60,
+     58
+    ],
+    "shape": "box",
+    "en": "King Brahmadatta reigned in Kasi. The Bodhisatta served as his royal valuer.",
+    "ko": "브라흐마닷따 왕이 까시국을 다스렸습니다. 보살은 왕의 값매김 관리였습니다."
+   },
+   {
+    "seed": [
+     553,
+     78
+    ],
+    "shape": "bubble",
+    "en": "appraise horses, elephants, and jewels. Every merchant receives the precise, fair price.",
+    "ko": "나는 말과 코끼리와 보석의 값을 매깁니다. 모든 상인이 정확하고 공정한 값을 받지요."
+   }
+  ]
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     536,
+     57
+    ],
+    "shape": "box",
+    "en": "The King was consumed by greed.",
+    "ko": "그런데 왕은 탐욕에 사로잡혔습니다."
+   },
+   {
+    "seed": [
+     525,
+     282
+    ],
+    "shape": "bubble",
+    "en": "This honest valuer er will exhaust my riches! must find someone cheaper to protect my gold.",
+    "ko": "이 정직한 관리 때문에 내 재산이 바닥나겠구나! 내 금을 지켜 줄 값싼 사람을 찾아야겠다."
+   }
+  ]
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     48,
+     44
+    ],
+    "shape": "box",
+    "en": "Looking into the courtyard, he espied stupid, greedy candidate",
+    "ko": "뜰을 내려다보던 왕은 어리석고 욕심 많은 사람을 하나 눈여겨보았습니다."
+   },
+   {
+    "seed": [
+     323,
+     145
+    ],
+    "shape": "bubble",
+    "en": "Oh yes, sire!",
+    "ko": "그럼요, 전하!"
+   },
+   {
+    "seed": [
+     543,
+     268
+    ],
+    "shape": "bubble",
+    "en": "Can you value royal goods?",
+    "ko": "왕실 물건의 값을 매길 수 있겠느냐?"
+   }
+  ]
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     177,
+     317
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta Method: Objective analysis Motive: Fairness Result: Trust and prosperity",
+    "ko": "보살의 방식\n바탕: 객관적인 분석\n동기: 공정함\n결과: 믿음과 번영"
+   },
+   {
+    "seed": [
+     550,
+     318
+    ],
+    "shape": "box",
+    "en": "The Fool Method: Arbitrary fancy Motive: Pleasing the King Result: Economic chaos",
+    "ko": "어리석은 자의 방식\n바탕: 제멋대로인 생각\n동기: 왕의 비위 맞추기\n결과: 경제 혼란"
+   }
+  ]
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     171,
+     364
+    ],
+    "shape": "box",
+    "en": "horse-dealer arrived from the north country with 500 magnificent horses. The King summoned oned his new valuer to set the price.",
+    "ko": "북쪽 지방에서 말 장수가 훌륭한 말 500마리를 끌고 왔습니다. 왕은 새 관리를 불러 값을 정하게 했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     412,
+     62
+    ],
+    "shape": "bubble",
+    "en": "For all 500 horses, decree the price is exactly one measure of rice! Take them to the stable!",
+    "ko": "말 500마리 전부, 값은 쌀 한 되로 정하노라! 마구간으로 끌고 가라!"
+   }
+  ]
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     420,
+     62
+    ],
+    "shape": "bubble",
+    "en": "He took my entire herd fora single bowl of rice! What can do?",
+    "ko": "쌀 한 그릇에 내 말을 모두 빼앗기다니! 어떻게 해야 하나?"
+   },
+   {
+    "seed": [
+     216,
+     376
+    ],
+    "shape": "box",
+    "en": "Devastated, oO the dealer sought on fe out the ex-valuer",
+    "ko": "절망한 말 장수는 예전 관리였던 보살을 찾아갔습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     94,
+     99
+    ],
+    "shape": "bubble",
+    "en": "Give the fool bribe. Then, ask him to state the precise value of measure of rice in front of the King. will be there.",
+    "ko": "그 어리석은 자에게 뇌물을 주시오. 그리고 왕 앞에서 쌀 한 되의 값을 정확히 말해 달라고 하시오. 나도 그 자리에 가겠소."
+   }
+  ]
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     77,
+     61
+    ],
+    "shape": "bubble",
+    "en": "We accept the horses are worth measure of rice. Could you tell the King what that rice is actually worth?",
+    "ko": "말들이 쌀 한 되 값이라는 건 받아들이겠습니다. 그 쌀이 실제로 얼마인지 왕께 말씀드려 주시겠습니까?"
+   }
+  ]
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     356,
+     57
+    ],
+    "shape": "bubble",
+    "en": "Valuer, what are 500 horses worth?",
+    "ko": "관리여, 말 500마리는 값이 얼마인가?"
+   },
+   {
+    "seed": [
+     347,
+     198
+    ],
+    "shape": "bubble",
+    "parts": [
+     {
+      "rect": [
+       318,
+       192,
+       445,
+       245
+      ],
+      "ko": "쌀 한 되입니다, 전하."
+     },
+     {
+      "rect": [
+       335,
+       322,
+       470,
+       395
+      ],
+      "ko": "그럼 그 쌀 한 되는 값이 얼마인가?"
+     }
+    ],
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     326,
+     63
+    ],
+    "shape": "bubble",
+    "en": "One ne measure oO rice is worth th all of Benares and its suburbs!",
+    "ko": "쌀 한 되는 바라나시 성 안팎을 다 합친 값어치입니다!"
+   },
+   {
+    "seed": [
+     261,
+     380
+    ],
+    "shape": "box",
+    "en": "Acity city three hundred leagues round, priced datas at single measure of rice. ice",
+    "ko": "둘레가 300요자나인 도시가 쌀 한 되 값으로 매겨졌습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     231,
+     40
+    ],
+    "shape": "bubble",
+    "en": "We thought the realm was beyond price! Our King and Kingdom are only worth bowl of rice! He suits our King admirably!",
+    "ko": "우리 나라는 값을 매길 수 없을 만큼 귀한 줄 알았는데! 왕과 나라가 쌀 한 그릇 값이라니! 우리 왕께 딱 어울리는 관리로군!"
+   }
+  ]
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-14-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     286,
+     298
+    ],
+    "shape": "box",
+    "en": "Kim-agghati tandulandlikayam? Assana’ mildya vadehi, raja? Baranasim santarabahiram, Ayam-agghati tandulanalika ti!",
+    "ko": "낑 악가띠 딴둘라날리까, 앗사나 물라야 와데히 라자?\n바라나싱 산따라바히랑, 아얌 악가띠 딴둘라날리까!"
+   },
+   {
+    "seed": [
+     269,
+     359
+    ],
+    "shape": "box",
+    "en": "Do 10 you speak of the price of horses, king? Benares, he values at measure of rice!",
+    "ko": "왕이시여, 말 값을 물으셨습니까? 이 사람은 바라나시 성 안팎을 통틀어 쌀 한 되로 값을 매겼습니다!"
+   }
+  ]
+ }
+]

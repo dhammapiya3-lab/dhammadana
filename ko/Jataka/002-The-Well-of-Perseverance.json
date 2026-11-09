@@ -1,0 +1,283 @@
+[
+ {
+  "img": "images/002-The-Well-of-Perseverance-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     80,
+     79
+    ],
+    "shape": "box",
+    "en": "In the past, when Brahmadatta was king of Benares, the Supreme Buddha recoun ted tale of his past life as merchant nt in Kasi.",
+    "ko": "부처님께서 전생 이야기를 들려주셨습니다. 브라흐마닷따 왕이 바라나시를 다스리던 때, 까시국의 상인이었던 이야기입니다."
+   }
+  ]
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     87,
+     74
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta, wise trader in Kasi, prepared five hundred carts to cross brutal, sixty-league sixty-league sandy wilderness.",
+    "ko": "보살은 까시국의 지혜로운 상인이었습니다. 그는 수레 500대를 준비해 60요자나에 이르는 험한 모래 사막을 건너려 했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-03-Original.jpg",
+  "boxes": [
+   {
+    "ko": "낮에는 모래가 숯불처럼 뜨거웠습니다. 일행은 천막 아래 수레를 둥글게 세워 쉬고, 서늘한 밤에만 길을 갔습니다.",
+    "shape": "box",
+    "manual": true,
+    "seed": [
+     [
+      425,
+      372
+     ],
+     [
+      59,
+      378
+     ],
+     [
+      185,
+      378
+     ],
+     [
+      293,
+      378
+     ],
+     [
+      317,
+      378
+     ],
+     [
+      386,
+      378
+     ],
+     [
+      410,
+      378
+     ],
+     [
+      575,
+      378
+     ],
+     [
+      593,
+      378
+     ],
+     [
+      722,
+      378
+     ],
+     [
+      632,
+      386
+     ],
+     [
+      59,
+      396
+     ],
+     [
+      410,
+      396
+     ],
+     [
+      656,
+      396
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     125,
+     75
+    ],
+    "shape": "box",
+    "en": "Traversing this ocean of sand required desert-pilot. He steered the caravan safely throu the dark by the disposition of the stars.",
+    "ko": "이 모래 바다를 건너려면 사막 길잡이가 있어야 했습니다. 길잡이는 별자리를 보며 어둠 속에서 대상을 무사히 이끌었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     46,
+     46
+    ],
+    "shape": "box",
+    "en": "With seven ae left, they discarded heavy wood and water. But the exhausted pilot fell asleep. Unseen in the dark, the oxen retraced their steps.",
+    "ko": "7요자나만 남았을 때 일행은 무거운 땔감과 물을 버렸습니다. 그런데 지친 길잡이가 잠들어 버렸고, 어둠 속에서 소들은 왔던 길로 되돌아갔습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     79,
+     98
+    ],
+    "shape": "box",
+    "en": "At dawn, the pilot woke. It was too late. The day broke on yesterday’s cual",
+    "ko": "새벽에 길잡이가 깨어났지만 이미 늦었습니다. 날이 밝고 보니 어제 머문 야영지였습니다."
+   },
+   {
+    "seed": [
+     383,
+     306
+    ],
+    "shape": "bubble",
+    "en": "Turn the carts round!",
+    "ko": "수레를 돌려라!"
+   }
+  ]
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     98,
+     35
+    ],
+    "shape": "box",
+    "en": "Expecting death, the men flung themselves beneath their carts in absolute despair.",
+    "ko": "죽음을 예감한 사람들은 깊은 절망에 빠져 수레 밑에 몸을 던졌습니다."
+   },
+   {
+    "seed": [
+     243,
+     133
+    ],
+    "shape": "bubble",
+    "en": "All our wood cand water is gone, and we are lost.",
+    "ko": "땔감도 물도 다 떨어졌고, 우리는 길을 잃었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     100,
+     76
+    ],
+    "shape": "box",
+    "en": "Pacing the cool morning sand, he spotted solitary clump of kusa grass",
+    "ko": "보살은 서늘한 아침 모래 위를 걷다가 꾸사 풀 한 포기를 발견했습니다."
+   },
+   {
+    "seed": [
+     331,
+     165
+    ],
+    "shape": "bubble",
+    "en": "If give in every single one will perish",
+    "ko": "내가 포기하면 한 사람도 남김없이 모두 죽는다."
+   }
+  ]
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     42,
+     36
+    ],
+    "shape": "box",
+    "en": "Grass meant water below. They dug shaft sixty cubits deep, only to strike an impenetrable layer of solid rock. The caravan lost heart.",
+    "ko": "풀이 있다는 것은 땅 밑에 물이 있다는 뜻입니다. 일행은 60완척 깊이로 땅을 팠지만 단단한 바위층에 막혔습니다. 대상은 용기를 잃었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     461,
+     71
+    ],
+    "shape": "box",
+    "en": "Certain that water flowed beneath, the Bodhisatta descended. He pressed his ear to the cold stone—and heard the rush of hidden stream.",
+    "ko": "보살은 아래에 물이 흐른다고 확신하고 구덩이로 내려갔습니다. 차가운 바위에 귀를 대자 숨은 물줄기 소리가 들렸습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     115,
+     72
+    ],
+    "shape": "bubble",
+    "en": "If you give in, we perish. Take courage. Strike the rock with this iron sledge-hammer!",
+    "ko": "네가 포기하면 우리는 모두 죽는다. 용기를 내라. 이 쇠망치로 바위를 내리쳐라!"
+   }
+  ]
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     458,
+     72
+    ],
+    "shape": "box",
+    "en": "The rock split asunder! Water rose as high as palm tree. The caravan drank, bathed, rejoiced, and fed their oxen.",
+    "ko": "바위가 쩍 갈라졌습니다! 물이 야자나무 높이만큼 솟아올랐습니다. 일행은 물을 마시고 몸을 씻으며 기뻐했고, 소들에게도 먹이를 주었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-13-Original.jpg",
+  "boxes": []
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-14-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     128,
+     345
+    ],
+    "shape": "box",
+    "en": "The Physical Path: Digging untiringly through stone yields life-saving water. The Spiritual Path: Striving untiringly through ignorance yields the ultimate peace.",
+    "ko": "몸의 길: 지치지 않고 돌을 파면 생명을 살리는 물을 얻습니다.\n마음의 길: 지치지 않고 무명을 헤쳐 나가면 궁극의 평화를 얻습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-15-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     74,
+     86
+    ],
+    "shape": "bubble",
+    "en": "Untiring, digging in sandy place, they found drinking water. So the sage, endowed with strength of effort, untiring, finds peace right here in his heart.",
+    "ko": "지치지 않고 모래땅을 파서 그들은 마실 물을 찾았네. 이처럼 정진의 힘을 갖춘 현자는 지치지 않고 바로 자기 마음에서 평화를 찾네."
+   }
+  ]
+ }
+]
