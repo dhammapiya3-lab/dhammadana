@@ -84,7 +84,7 @@ top.forEach((c, k) => {
       let pre = par, prev;
       do { prev = pre; pre = pre.replace(/\s?[(\[〔（［]([^()\[\]〔〕（）［］가-힣]*)[)\]〕）］]/g, (m, inner) => /[A-Za-zÀ-ÖØ-öø-žḀ-ỿ\u3400-\u9FFF\uF900-\uFAFF]/.test(inner) ? '' : m); } while (pre !== prev);
       pre = pre.replace(/([가-힣])[\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]+/g, '$1');
-      pre = pre.split('\n').filter(l => !(/속표지|판권지/.test(c.title) && !/[가-힣]/.test(l))).map(stripGloss).filter(x => x).join('\n');  // 속표지·판권지의 영어 줄은 한글과 같은 내용이라 뺌
+      pre = pre.split('\n').filter(l => !(/속표지|판권지/.test(c.title) && !/[가-힣āīūṃṅñṭḍṇḷ]/.test(l))).map(stripGloss).filter(x => x).join('\n');  // 속표지·판권지의 영어 줄은 한글과 같은 내용이라 뺌
       if (!pre) return;
       const said = lib.sayable(pre, OPT);
       (pre.match(LAT) || []).forEach(w => { const s = lib.PALI(w.replace(/[’'-]/g, '')); if (s && lib.langOf(w) !== 'E') changes.set(w, s); });
