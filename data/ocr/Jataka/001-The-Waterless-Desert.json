@@ -1,0 +1,513 @@
+[
+ {
+  "img": "images/001-The-Waterless-Desert-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     79,
+     60
+    ],
+    "bbox": [
+     99,
+     106,
+     833,
+     393
+    ],
+    "shape": "box",
+    "en": "it was in times past...” The Buddha spoke to layman about the fatuous path versus the truth.",
+    "conf": 76
+   },
+   {
+    "seed": [
+     656,
+     379
+    ],
+    "bbox": [
+     2033,
+     1217,
+     2546,
+     1389
+    ],
+    "shape": "box",
+    "en": "Our story begins in ancient Benares.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     75,
+     40
+    ],
+    "bbox": [
+     99,
+     96,
+     850,
+     367
+    ],
+    "shape": "box",
+    "en": "Two merchants, With 500 carts, prepared to",
+    "conf": 73
+   },
+   {
+    "seed": [
+     425,
+     58
+    ],
+    "bbox": [
+     1220,
+     132,
+     1967,
+     665
+    ],
+    "shape": "bubble",
+    "en": "thousand carts will deplete the road’: resources. One of us must go first",
+    "conf": 83
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     66,
+     36
+    ],
+    "bbox": [
+     99,
+     96,
+     850,
+     367
+    ],
+    "shape": "box",
+    "en": "The Logic: Uncut roads, first pick of grass, dictate prices.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     71,
+     254
+    ],
+    "bbox": [
+     99,
+     800,
+     760,
+     1118
+    ],
+    "shape": "box",
+    "en": "The Wise Man’s Logic: Leveled roads, sweet regrowth, pre-dug wells, established prices.",
+    "conf": 88
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     495,
+     348
+    ],
+    "bbox": [
+     1580,
+     1137,
+     2536,
+     1365
+    ],
+    "shape": "box",
+    "en": "It was desolat plagued by drought and haunted by flesh-eating Amanussas. They carried heavy water jars to survive.",
+    "conf": 63
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     263,
+     36
+    ],
+    "bbox": [
+     701,
+     112,
+     1742,
+     274
+    ],
+    "shape": "box",
+    "en": "Yakkha created magnificent illusion: dripping carriage adorned with water-lilies.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     297,
+     105
+    ],
+    "bbox": [
+     870,
+     314,
+     1336,
+     641
+    ],
+    "shape": "bubble",
+    "en": "it rain ahead? You are dripping with water!",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     492,
+     279
+    ],
+    "bbox": [
+     1508,
+     823,
+     2503,
+     1365
+    ],
+    "shape": "bubble",
+    "en": "It is always raining yonder! Lakes overflow with lotuses. Break your heavy water jars to lighten your carts. You will travel easier.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     527,
+     339
+    ],
+    "bbox": [
+     1511,
+     1048,
+     2549,
+     1385
+    ],
+    "shape": "box",
+    "en": "Finding no water, the exhausted caravan collapsed at dusk. Under the cover of night, the Yakkhas feasted leaving only bare bones",
+    "conf": 89
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     484,
+     50
+    ],
+    "bbox": [
+     1481,
+     122,
+     2380,
+     446
+    ],
+    "shape": "bubble",
+    "en": "Let not palmful of water be used without my sanction Eat no unknown fruit or leaf asking me.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     204,
+     45
+    ],
+    "bbox": [
+     66,
+     76,
+     1613,
+     241
+    ],
+    "shape": "box",
+    "en": "same trick. But the Bodhisatta had ne skill to see through the",
+    "conf": 69
+   },
+   {
+    "seed": [
+     341,
+     98
+    ],
+    "bbox": [
+     932,
+     291,
+     1554,
+     645
+    ],
+    "shape": "bubble",
+    "en": "Red eyes. Aggressive bearing. No shadow. This is Yakkha.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     82,
+     43
+    ],
+    "bbox": [
+     139,
+     106,
+     965,
+     512
+    ],
+    "shape": "bubble",
+    "en": "Master! They wore wet lotuses. Let us throw away our heavy water and travel light to the rain!",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Halt.",
+   "Assemble",
+   "before",
+   "me."
+  ]
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "These",
+   "are",
+   "not",
+   "men.",
+   "They",
+   "are",
+   "as."
+  ]
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "foolish",
+   "lacked",
+   "skill",
+   "means.",
+   "was",
+   "likely",
+   "fooled",
+   "and",
+   "devoured.",
+   "Press",
+   "with",
+   "all",
+   "speed,",
+   "but",
+   "keep",
+   "every",
+   "drop",
+   "water."
+  ]
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     33,
+     30
+    ],
+    "bbox": [
+     76,
+     76,
+     985,
+     298
+    ],
+    "shape": "box",
+    "en": "They found the 500 derelict carts and skeletons.",
+    "conf": 95
+   },
+   {
+    "seed": [
+     533,
+     318
+    ],
+    "bbox": [
+     1729,
+     1015,
+     2562,
+     1405
+    ],
+    "shape": "box",
+    "en": "The fortified corral, standing guard through three watches of the night.",
+    "conf": 89
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-14-Original.jpg",
+  "size": [
+   2645,
+   1480
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     33,
+     45
+    ],
+    "bbox": [
+     73,
+     145,
+     1028,
+     390
+    ],
+    "shape": "box",
+    "en": "At dawn, they swapped their weak carts for stronger ones, and common goods for costly derelict wares.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     524,
+     397
+    ],
+    "bbox": [
+     1703,
+     1230,
+     2562,
+     1415
+    ],
+    "shape": "box",
+    "en": "value, returning home safely.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-15-Original.jpg",
+  "size": [
+   2645,
+   1487
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     43,
+     42
+    ],
+    "bbox": [
+     126,
+     129,
+     969,
+     350
+    ],
+    "shape": "box",
+    "en": "Thus the fatuous met destruction, while those who clave to the truth reached their goal.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     548,
+     343
+    ],
+    "bbox": [
+     1759,
+     1124,
+     2552,
+     1356
+    ],
+    "shape": "box",
+    "en": "Some have an unquestionable basis... the intelligent should take hold of the unquestionable.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ }
+]
