@@ -1,0 +1,296 @@
+[
+ {
+  "img": "images/029-Grannys-Blackie-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     76,
+     65
+    ],
+    "shape": "box",
+    "en": "Ayyika Kalaka The Story of Granny's Blackie lackie",
+    "ko": "아이야까 깔라까\n할머니의 검둥이 이야기"
+   },
+   {
+    "seed": [
+     561,
+     345
+    ],
+    "shape": "box",
+    "en": "tale of strength, justice, and devotion in ancient Benares.",
+    "ko": "옛 바라나시의 힘과 정의와 정성에 관한 이야기"
+   }
+  ]
+ },
+ {
+  "img": "images/029-Grannys-Blackie-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     91,
+     47
+    ],
+    "shape": "box",
+    "en": "Given to poor woman to settle lodging debt, the Bodhisatta was reared like her own child",
+    "ko": "보살은 밀린 숙박비 대신 가난한 할머니에게 맡겨져, 친자식처럼 자랐습니다."
+   },
+   {
+    "seed": [
+     582,
+     367
+    ],
+    "shape": "box",
+    "en": "He became known as Ayyika Kalaka—Granny’s Blackie",
+    "ko": "그는 ‘아이야까 깔라까’, 곧 ‘할머니의 검둥이’라 불렸습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/029-Grannys-Blackie-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     91,
+     39
+    ],
+    "shape": "box",
+    "en": "Growing up jet-black and strong, Kalaka roamed the village",
+    "ko": "새까맣고 튼튼하게 자란 깔라까는 마을을 돌아다녔습니다."
+   },
+   {
+    "seed": [
+     540,
+     350
+    ],
+    "shape": "box",
+    "en": "Village urchins rode his back and pulled his horns rns in play. He was gentle giant among the herd",
+    "ko": "마을 아이들이 등에 올라타고 뿔을 잡아당기며 놀았지만, 그는 소 떼 가운데 순한 거인이었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/029-Grannys-Blackie-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     534,
+     49
+    ],
+    "shape": "bubble",
+    "en": "“My mother is poor. She painfully reared me as her own child. must earn money to ease her hard lot.”",
+    "ko": "“우리 어머니는 가난하다. 나를 친자식처럼 힘들게 기르셨다. 돈을 벌어 어머니의 고생을 덜어 드려야겠다.”"
+   },
+   {
+    "seed": [
+     56,
+     367
+    ],
+    "shape": "box",
+    "en": "From then on, he sought job.",
+    "ko": "그때부터 그는 일거리를 찾았습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/029-Grannys-Blackie-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     246,
+     42
+    ],
+    "shape": "box",
+    "en": "young merchant arrived with five hundred wagons",
+    "ko": "젊은 상인이 수레 오백 대를 끌고 왔습니다."
+   },
+   {
+    "seed": [
+     370,
+     365
+    ],
+    "shape": "box",
+    "en": "The ford was treacherous. Even yoking all his oxen into one massive team, they could not budge single cart",
+    "ko": "여울은 험했습니다. 소를 모두 한데 묶어도 수레 한 대 움직이지 못했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/029-Grannys-Blackie-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     251,
+     61
+    ],
+    "shape": "box",
+    "en": "Spotting strength, the merchant tried to lead him away",
+    "ko": "힘센 황소를 알아본 상인은 그를 끌고 가려 했습니다."
+   },
+   {
+    "seed": [
+     502,
+     176
+    ],
+    "shape": "box",
+    "en": "But the Bodhisatta would not budge. He demanded led his pay be fixed first.",
+    "ko": "그러나 보살은 꿈쩍도 하지 않았습니다. 품삯부터 정하라는 것이었습니다."
+   },
+   {
+    "seed": [
+     285,
+     265
+    ],
+    "shape": "bubble",
+    "en": "will pay two coins per cart. One thousand coins total,” agreed the merchant.",
+    "ko": "“수레 한 대에 두 닢씩, 모두 천 닢을 주겠다.” 상인이 약속했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/029-Grannys-Blackie-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     61,
+     62
+    ],
+    "shape": "box",
+    "en": "The contract sealed, Kalaka required no force",
+    "ko": "약속이 정해지자 깔라까는 채찍질이 필요 없었습니다."
+   },
+   {
+    "seed": [
+     541,
+     195
+    ],
+    "shape": "box",
+    "en": "With immense power, he dragged the first wagon high an any with single pull.",
+    "ko": "엄청난 힘으로 첫 수레를 단번에 높은 둑 위로 끌어 올렸습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/029-Grannys-Blackie-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     52,
+     347
+    ],
+    "shape": "box",
+    "en": "Thinking ig he could cheat beast, the merchant tied ony five hundred coins around Kalaka’s neck.",
+    "ko": "짐승쯤은 속일 수 있다고 생각한 상인은 깔라까의 목에 겨우 오백 닢만 매어 주었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/029-Grannys-Blackie-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     63,
+     61
+    ],
+    "shape": "box",
+    "en": "Kalaka blocked the foremost wagon. Ne one could move him.",
+    "ko": "깔라까는 맨 앞 수레를 가로막았습니다. 아무도 그를 움직이지 못했습니다."
+   },
+   {
+    "seed": [
+     529,
+     195
+    ],
+    "shape": "bubble",
+    "en": "Realizing his error, the merchant wrapped the full thousand coins and HES them to the bull.",
+    "ko": "잘못을 깨달은 상인은 천 닢을 다 싸서 황소에게 매어 주었습니다."
+   },
+   {
+    "seed": [
+     566,
+     364
+    ],
+    "shape": "box",
+    "en": "“Here is your rightful pay.”",
+    "ko": "“여기 정당한 품삯이오.”"
+   }
+  ]
+ },
+ {
+  "img": "images/029-Grannys-Blackie-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     62,
+     61
+    ],
+    "shape": "box",
+    "en": "Exhausted, with bloodshot eyes, Kalaka ran home.",
+    "ko": "지쳐서 눈이 붉게 충혈된 깔라까는 집으로 달려갔습니다."
+   },
+   {
+    "seed": [
+     486,
+     330
+    ],
+    "shape": "box",
+    "en": "He scattered the playful village children away, ensuring the thousand coins safely reached his ‘mother.",
+    "ko": "장난치는 마을 아이들을 흩어 놓으며, 천 닢을 무사히 ‘어머니’께 가져다드렸습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/029-Grannys-Blackie-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     81,
+     61
+    ],
+    "shape": "bubble",
+    "en": "“Have any wish to live on your earnings, my child? Why endure this fatigue?”",
+    "ko": "“얘야, 내가 네가 번 돈으로 살고 싶다더냐? 왜 이렇게 고생을 하느냐?”"
+   },
+   {
+    "seed": [
+     479,
+     329
+    ],
+    "shape": "box",
+    "en": "She refused the money, washing and oiling his weary body. They lived peacefully, passing according to their deeds.",
+    "ko": "할머니는 돈을 마다하고 지친 몸을 씻기고 기름을 발라 주었습니다. 둘은 평화롭게 살다가 저마다 지은 업에 따라 떠났습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/029-Grannys-Blackie-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     69,
+     67
+    ],
+    "shape": "box",
+    "en": "Revealing his past life, the Awakened One uttered",
+    "ko": "깨달으신 분께서 전생을 밝히시며 게송을 읊으셨습니다."
+   },
+   {
+    "seed": [
+     339,
+     252
+    ],
+    "shape": "box",
+    "en": "“Yato garu dhuram, yato gambhiravattani, Taddassu Kanham yufijanti, svassu tam vahate dhuran-ti",
+    "ko": "“야또 가루 두랑, 야또 감비라왓따니,\n땃닷수 깐항 윤잔띠, 스왓수 땅 와하떼 두란 띠.”"
+   },
+   {
+    "seed": [
+     409,
+     353
+    ],
+    "shape": "box",
+    "en": "“However onerous the load, however deep the path they harness Kanha, and he carries it away",
+    "ko": "“짐이 아무리 무겁고 길이 아무리 깊어도\n사람들은 깐하에게 멍에를 씌우니, 그는 그 짐을 끌고 가네.”"
+   }
+  ]
+ }
+]

@@ -1,0 +1,265 @@
+[
+ {
+  "img": "images/030-Deadly-Food-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     274,
+     10
+    ],
+    "shape": "box",
+    "en": "Deadly Food",
+    "ko": "죽음을 부르는 먹이"
+   },
+   {
+    "seed": [
+     78,
+     78
+    ],
+    "shape": "box",
+    "en": "Long ago in Benares, two brothers did all the draught-work for family.",
+    "ko": "옛 바라나시에서 두 형제가 한 집안의 짐 끄는 일을 도맡았습니다."
+   },
+   {
+    "seed": [
+     445,
+     324
+    ],
+    "shape": "box",
+    "en": "Mahalohita, the Bodhisatta, and young Cullalohita.",
+    "ko": "보살인 마할로히따와 동생 쭐랄로히따였습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     84,
+     54
+    ],
+    "shape": "box",
+    "en": "Their days were filled with heavy burdens",
+    "ko": "날마다 무거운 짐을 졌습니다."
+   },
+   {
+    "seed": [
+     88,
+     247
+    ],
+    "shape": "box",
+    "en": "Their reward was mere grass and chaff.",
+    "ko": "받는 것은 풀과 겨뿐이었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     97,
+     55
+    ],
+    "shape": "box",
+    "en": "marriage was arranged for the householder’s daughter",
+    "ko": "주인집 딸의 혼인이 정해졌습니다."
+   },
+   {
+    "seed": [
+     515,
+     329
+    ],
+    "shape": "box",
+    "en": "To provide dainty fare for the wedding guests, they began to fatten pig named Munika",
+    "ko": "잔치 손님들에게 맛있는 음식을 내려고, 무니까라는 돼지를 살찌우기 시작했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     489,
+     364
+    ],
+    "shape": "box",
+    "en": "He feasted daily on the finest rice",
+    "ko": "무니까는 날마다 가장 좋은 쌀밥을 먹었습니다."
+   },
+   {
+    "seed": [
+     82,
+     53
+    ],
+    "ko": "무니까는 아무 일도 하지 않았습니다.",
+    "align": "left",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     456,
+     58
+    ],
+    "shape": "bubble",
+    "en": "Brother, we draw all the loads, yet eat only sorry straw",
+    "ko": "형님, 우리는 짐을 다 끄는데 먹는 건 형편없는 짚뿐이에요."
+   },
+   {
+    "seed": [
+     563,
+     309
+    ],
+    "shape": "bubble",
+    "en": "Why is this lazy pig victualled tualled on rich rice? Why is he treated so well?",
+    "ko": "저 게으른 돼지는 왜 기름진 쌀밥을 먹어요? 왜 저렇게 대접받죠?"
+   }
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     89,
+     63
+    ],
+    "shape": "bubble",
+    "en": "My dear Cullalohita envy him not He is being fed only to furnish relish for the wedding guests",
+    "ko": "사랑하는 쭐랄로히따야, 부러워하지 마라. 저 돼지는 잔치 손님들의 반찬이 되려고 먹는 것이란다."
+   },
+   {
+    "seed": [
+     610,
+     325
+    ],
+    "shape": "bubble",
+    "en": "The pig eats the food of death",
+    "ko": "저 돼지는 죽음의 먹이를 먹고 있다."
+   }
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     428,
+     248,
+     735,
+     282
+    ],
+    "dark": true,
+    "align": "center",
+    "ko": "마 무니깟사 삐하이…",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     428,
+     286,
+     735,
+     375
+    ],
+    "dark": true,
+    "align": "center",
+    "ko": "무니까를 부러워하지 마라.\n그는 괴로움으로 끝날 먹이를 먹는다.\n걱정 없이 네 겨를 먹어라.\n그것이 오래 사는 길이다.",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     88,
+     63
+    ],
+    "shape": "box",
+    "en": "Not long afterwards, the guests arrived.",
+    "ko": "얼마 뒤 손님들이 왔습니다."
+   },
+   {
+    "seed": [
+     130,
+     136
+    ],
+    "shape": "box",
+    "en": "The time of feasting had aa come.",
+    "ko": "잔치 때가 되었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     129,
+     62
+    ],
+    "shape": "box",
+    "en": "Munika was taken from his pen.",
+    "ko": "무니까는 우리에서 끌려 나왔습니다."
+   },
+   {
+    "seed": [
+     399,
+     62
+    ],
+    "shape": "box",
+    "en": "Killed, and converted into all manner of dishes.",
+    "ko": "잡혀서 온갖 음식으로 차려졌습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     122,
+     66
+    ],
+    "shape": "bubble",
+    "en": "you see Munika, dear brother?",
+    "ko": "무니까를 보았느냐, 아우야?"
+   }
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     94,
+     62
+    ],
+    "shape": "bubble",
+    "en": "[have seen the outcome of his feasting",
+    "ko": "저 잔치가 어떻게 끝나는지 보았습니다."
+   },
+   {
+    "seed": [
+     499,
+     65
+    ],
+    "shape": "bubble",
+    "en": "Better thousand times is our meager chaff. Our fare harms us not, and pledges our lives will not be cut short",
+    "ko": "우리의 보잘것없는 겨가 천 배나 낫습니다. 우리 먹이는 우리를 해치지 않고, 목숨이 끊기지 않게 지켜 줍니다."
+   }
+  ]
+ }
+]
