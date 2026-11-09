@@ -1592,7 +1592,7 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
     return sam ? '아래쪽 <b>⋮(또는 ≡) 메뉴 → ‘현재 페이지 추가’ → ‘홈 화면’</b>을 누르세요. 홈 화면에 도서관 아이콘이 생겨요. (갤럭시의 ‘보안 위험 자동 차단’이 켜져 있으면 ‘앱 설치’는 ‘안전하지 않은 앱 설치 차단됨’으로 막히지만, 이 방법은 막히지 않아요.)'
       : ios ? '아래쪽(아이패드는 위쪽)의 <b>공유 단추 □↑</b>를 누르고 → <b>‘홈 화면에 추가’</b>를 고르세요. 그러면 홈 화면에 도서관 아이콘이 생겨요.'
       : mob ? '브라우저 오른쪽 위 <b>⋮ 메뉴</b> → <b>‘앱 설치’</b> 또는 <b>‘홈 화면에 추가’</b>를 누르세요.'
-      : '주소창 오른쪽 끝의 <b>설치 아이콘(⊕ 또는 모니터 모양)</b>을 누르거나, 오른쪽 위 <b>⋮ 메뉴 → ‘전송, 저장, 공유’ → ‘페이지를 앱으로 설치’</b>를 누르세요.';
+      : '이 컴퓨터에 <b>이미 설치되어 있으면</b> 설치 창이 뜨지 않아요 — 주소창 오른쪽의 <b>‘앱에서 열기’ 아이콘</b>이나 바탕화면·시작 메뉴의 <b>‘법보시 도서관’</b>으로 여세요. 아직 설치하지 않았다면 오른쪽 위 <b>⋮ 메뉴 → ‘전송, 저장, 공유’ → ‘페이지를 앱으로 설치’</b>를 누르세요.';
   };
   // 설치 창을 띄워 보고, 안 뜨거나 취소하면 메뉴로 설치하는 방법을 보여 줌 → true: 설치함
   const tryInstall = async showGuide => {
@@ -1606,6 +1606,8 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
     if (standalone) box.innerHTML = '<p class="note">📲 지금 앱으로 열어 보고 계십니다. (이미 설치됨)</p>';
     else {
       box.innerHTML = `<div class="install-box"><div><b>📲 앱으로 설치하기</b><p class="small muted ib-t">홈 화면에서 바로 열고, 한 번 읽은 책은 인터넷 없이도 볼 수 있어요.</p></div><button class="btn" id="ibBox">앱 설치</button></div>`;
+      // 이미 이 컴퓨터에 설치했으면(크롬이 알려 주면) 설치 단추 대신 알림
+      if (navigator.getInstalledRelatedApps) navigator.getInstalledRelatedApps().then(l => { if (l && l.length) box.innerHTML = '<p class="note">📲 이 컴퓨터에 이미 앱으로 설치되어 있어요. 바탕화면·시작 메뉴의 ‘법보시 도서관’이나 주소창의 ‘앱에서 열기’로 여세요.</p>'; }).catch(() => {});
       $('#ibBox').onclick = () => tryInstall(t => { $('.ib-t', box).innerHTML = t; }).then(ok => { if (ok) { box.innerHTML = '<p class="note">설치했습니다. 홈 화면의 도서관 아이콘으로 여세요.</p>'; off(); } });
     }
   }
