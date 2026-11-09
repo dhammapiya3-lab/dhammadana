@@ -1002,7 +1002,7 @@ const PALI = (() => {
 // 소리 내어 읽을 글 다듬기
 const PALI_MARK = /[āīūṭḍṇṅñṃṁḷĀĪŪṬḌṆṄÑṂṀḶ]/;
 const PALI_WORDS = new Set(['dhamma', 'sutta', 'metta', 'vipassana', 'samatha', 'sati', 'nibbana', 'buddha', 'sangha', 'sila', 'samadhi', 'panna', 'kamma', 'dana', 'bhikkhu', 'bhikkhuni', 'sadhu', 'jhana', 'arahant', 'dukkha', 'anicca', 'anatta', 'karuna', 'mudita', 'upekkha', 'brahmavihara', 'abhidhamma', 'vinaya', 'tipitaka', 'nikaya', 'paticcasamuppada', 'satipatthana', 'anapanasati', 'kusala', 'akusala', 'citta', 'cetasika', 'rupa', 'nama', 'khandha', 'bhavana', 'parami', 'puñña', 'punna']);
-const LATIN = "A-Za-zĀ-žḀ-ỿ";
+const LATIN = "A-Za-zÀ-ÖØ-öø-žḀ-ỿ";
 // 빨리어·영어 낱말 목록 (빨리어: Digital Pāḷi Dictionary, CC BY-NC-SA 4.0 / 영어: SCOWL). 듣기를 처음 쓸 때 한 번 받음
 const LEX = { pali: null, en: null, loading: null };
 function loadLex() {
