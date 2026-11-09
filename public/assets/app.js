@@ -1193,7 +1193,7 @@ function blockHtml(s, n, k) {
 }
 const isFootnote = p => /^\[\^[^\]]+\]:/.test(p);
 // 장 첫 쪽에서 장 제목과 같은 글(소제목·가운데 제목)은 화면에서 숨기고 소리로도 두 번 읽지 않음 — 장 제목으로 통일
-const dupKey = t => headKey(t).replace(/[.,:·\-–—!?]/g, '');
+const dupKey = t => headKey(t).replace(/[.,:·\-–—!?■_]/g, '');
 // 장 첫머리의 문단 몇 개(예: 'Ⅰ' + '껍데기는 버리고…')를 이으면 장 제목과 같아지는지 → 그 문단들의 'n:k' 모음
 function chDups(c) {
   if (!c || !c.title) return new Set();
