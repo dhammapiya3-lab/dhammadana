@@ -1,0 +1,190 @@
+{
+  "id": "DL-0017",
+  "title": "부처님을 만나다",
+  "subtitle": "빠알리 성전을 통해 봄 부처님 일생",
+  "cover": "/uploads/다운로드.jpg",
+  "byline": "비구 일창 담마간다",
+  "translator": "",
+  "teacher": "",
+  "provider": "koreamahasi",
+  "press": false,
+  "provider_chip": false,
+  "paper": "",
+  "paper_url": "",
+  "stores": [
+    {
+      "name": "",
+      "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=154643390"
+    }
+  ],
+  "book_type": "해설서",
+  "original_title": "",
+  "original_language": "",
+  "original_source": "",
+  "series": "",
+  "main": [
+    "부처님의 생애"
+  ],
+  "topics": [
+    "삼보 공덕",
+    "바라밀"
+  ],
+  "description": "",
+  "author_intro": "비구 일창 담마간다\n\n1996년 서울대 화공과를 졸업하고 해인사 백련암에서 원융스님을 은사로 출가하였다. 범어사 강원을 졸업하였고 2000년과 2005년 두 차례 미얀마에 머물면서 미얀마 어와 빠알리 어 등을 공부하고 찬매 센터, 파옥 센터, 마하시 센터 등에서 수행하였다. 현재 진주 녹원정사에서 초기불교에 대해 정기적으로 강의를 하고 있으며, 한국마하시선원에서 지내며 우 소다나 스님의 통역을 도와드리고 있다. 저서로 『부처님을 만나다』, 역서로 『위빳사나 수행방법론』(전2권) 등이 있다.",
+  "translator_intro": "",
+  "contents": "\n프롤로그 불교의 출발점과 도착점\n\n제1장 서원과 수기, 그리고 바라밀\n제2장 정등각자가 되려면\n제3장 바라밀을 실천하다\n제4장 과거 24부처님\n제5장 탄생과 출가\n제6장 수행과 성도\n제7장 전법과 교화\n제8장 열반\n\n에필로그 부처님의 가르침을 결집하다",
+  "editions": [
+    {
+      "label": "초판",
+      "label_display": "",
+      "current": false,
+      "public": false,
+      "page_count": 538,
+      "published": "2012년 5월 28일",
+      "publisher_print": "이솔",
+      "isbn": "978-89-96135-55-5",
+      "published_ebook": "",
+      "publisher_ebook": "",
+      "isbn_ebook": "",
+      "changes": "",
+      "hide_update": false,
+      "pdf": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_print": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_cover": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "epub": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "reader": false,
+      "sources": [],
+      "collection": "",
+      "collected": "",
+      "permission_status": "",
+      "notice": "",
+      "permission_note": "",
+      "permission_image": "",
+      "permissions": [],
+      "note": ""
+    },
+    {
+      "label": "개정판 1쇄",
+      "label_display": "",
+      "current": false,
+      "public": false,
+      "page_count": 528,
+      "published": "2018년 6월 27일",
+      "publisher_print": "불방일",
+      "isbn": "979-11-95685-07-3",
+      "published_ebook": "",
+      "publisher_ebook": "",
+      "isbn_ebook": "",
+      "changes": "",
+      "hide_update": false,
+      "pdf": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_print": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_cover": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "epub": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "reader": false,
+      "sources": [],
+      "collection": "",
+      "collected": "",
+      "permission_status": "",
+      "notice": "",
+      "permission_note": "",
+      "permission_image": "",
+      "permissions": [],
+      "note": ""
+    },
+    {
+      "label": "개정판 2쇄",
+      "label_display": "",
+      "current": true,
+      "public": true,
+      "page_count": 528,
+      "published": "2026년 4월 30일",
+      "publisher_print": "불방일",
+      "isbn": "979-11-956850-7-3",
+      "published_ebook": "",
+      "publisher_ebook": "",
+      "isbn_ebook": "",
+      "changes": "",
+      "hide_update": false,
+      "pdf": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_print": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_cover": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "epub": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "reader": true,
+      "sources": [],
+      "collection": "저자에게서 직접 받음",
+      "collected": "",
+      "permission_status": "confirmed",
+      "notice": "법보시 게시를 허락해주신 한국마하시 선원 담마간다 스님께 감사드립니다.",
+      "permission_note": "",
+      "permission_image": "",
+      "permissions": [],
+      "note": ""
+    }
+  ],
+  "license": "CC BY-NC-ND",
+  "added": "2026-11-09",
+  "order": null,
+  "hidden": false,
+  "hide_update": false
+}
