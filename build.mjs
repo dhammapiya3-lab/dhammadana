@@ -252,7 +252,7 @@ ${ld ? `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\
 <meta property="og:site_name" content="${esc(S.site_name)}">
 <meta property="og:title" content="${esc(t)}">
 <meta property="og:description" content="${esc(desc || '부처님과 테라와다 스승들의 가르침을 우리말로 옮긴 법보시 서적을 무료로 찾고, 내려받고, 읽는 곳')}">
-<meta property="og:image" content="${esc(S.site_url.replace(/\/$/, '') + (image || '/images/og.jpg'))}">
+<meta property="og:image" content="${esc(S.site_url.replace(/\/$/, '') + (image || '/images/og.jpg?v=2'))}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/images/icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
