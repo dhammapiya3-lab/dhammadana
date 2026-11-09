@@ -98,9 +98,12 @@
       "id": "ariya",
       "name": "아리야승원",
       "kind": "승원·사원",
-      "urls": [],
-      "partner": false,
-      "note": ""
+      "urls": [
+        "https://cafe.naver.com/withthebuddha"
+      ],
+      "partner": true,
+      "note": "네이버 카페 · cafe.naver.com/withthebuddha",
+      "image": "/uploads/partner-ariya.png"
     }
   ]
 }
