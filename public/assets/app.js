@@ -1561,6 +1561,31 @@ function initAccount() {
 /* ---------- 시작 ---------- */
 // 인터넷 없이 읽기 (서비스 워커)
 if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) navigator.serviceWorker.register('/sw.js').catch(() => {});
+
+/* ---------- 앱으로 설치하기 안내 (운영자 요청, 2026-11-09) ----------
+   처음 오신 분에게만 아래쪽에 작게 보이고, '닫기'나 설치를 하면 다시 보이지 않음.
+   안드로이드·컴퓨터(크롬·엣지·삼성 인터넷): 누르면 바로 설치 창 / 아이폰·아이패드: '홈 화면에 추가' 방법 안내 */
+(() => {
+  const standalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone;
+  if (standalone || store.get('install-off', false) || inApp() || /^\/(admin|read|study)\b/.test(location.pathname)) return;
+  const ios = /iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  let ev = null;
+  const off = () => { store.set('install-off', true); const b = $('#installBar'); if (b) b.remove(); };
+  const show = () => {
+    if ($('#installBar')) return;
+    const b = document.createElement('div'); b.id = 'installBar'; b.className = 'install-bar'; b.setAttribute('role', 'region'); b.setAttribute('aria-label', '앱으로 설치하기');
+    b.innerHTML = `<span class="ib-t">📲 이 도서관을 휴대폰·컴퓨터에 <b>앱처럼 설치</b>하면 홈 화면에서 바로 열고, 읽은 책은 인터넷 없이도 볼 수 있어요.</span><span class="ib-b"><button class="btn" id="ibGo">설치하기</button><button class="tbtn" id="ibNo">닫기</button></span>`;
+    document.body.appendChild(b);
+    $('#ibNo').onclick = off;
+    $('#ibGo').onclick = async () => {
+      if (ev) { ev.prompt(); try { const r = await ev.userChoice; if (r && r.outcome === 'accepted') off(); } catch (e) {} ev = null; return; }
+      if (ios) { $('.ib-t', b).innerHTML = '아래쪽(아이패드는 위쪽)의 <b>공유 단추 □↑</b>를 누르고 → <b>‘홈 화면에 추가’</b>를 고르세요. 그러면 홈 화면에 도서관 아이콘이 생겨요.'; $('#ibGo').remove(); return; }
+    };
+  };
+  window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); ev = e; show(); });
+  window.addEventListener('appinstalled', off);
+  if (ios && /Safari/i.test(navigator.userAgent) && !/CriOS|FxiOS|EdgiOS/i.test(navigator.userAgent)) setTimeout(show, 1500);
+})();
 if ('speechSynthesis' in window) speechSynthesis.addEventListener && speechSynthesis.addEventListener('voiceschanged', () => { const v = $('#ttsVoice'); if (v) v.innerHTML = voiceOptions(ttsOpt().voice); });
 initHeader();
 initPlayer();

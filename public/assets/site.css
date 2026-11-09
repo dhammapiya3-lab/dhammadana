@@ -964,3 +964,10 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 @media (max-width:700px){.st-cmp{grid-template-columns:1fr}.st-cmp-h{display:none}.st-c + .st-c{border-left:0}
   .st-c::before{content:attr(data-ed);display:block;font-size:.72em;color:var(--ink-soft);font-weight:700;margin-bottom:2px}
   .st-c:nth-child(odd){border-bottom:0}}
+
+/* 앱으로 설치하기 안내 띠 */
+.install-bar{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:60;width:min(640px,calc(100% - 20px));display:flex;gap:10px;align-items:center;flex-wrap:wrap;
+  background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.14);padding:12px 14px;font-size:14.5px;line-height:1.5}
+.install-bar .ib-t{flex:1 1 260px}
+.install-bar .ib-b{display:flex;gap:8px;margin-left:auto}
+.install-bar .btn{min-height:38px;padding:0 16px}
