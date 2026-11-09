@@ -50,6 +50,12 @@
           "url": "https://buddho.org/books/",
           "note": "네덜란드 붓도 재단(Buddho Foundation)의 테라와다불교·명상 책 디지털 도서관 · 아잔 차, 아잔 리, 마하시 사야도, 레디 사야도, 냐나뽀니까 스님, 비구 보디 스님 등의 책과 짧은 소개",
           "lang": "영어·네덜란드어"
+        },
+        {
+          "name": "The Open Buddhist University",
+          "url": "https://buddhistuniversity.net/",
+          "note": "불교학 전반의 기초를 익히도록 강좌와 학술 자료를 엮어 둔 곳 · 모두 무료이고 오픈 소스",
+          "lang": "영어"
         }
       ]
     },
