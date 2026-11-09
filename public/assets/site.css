@@ -971,3 +971,12 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .install-bar .ib-t{flex:1 1 260px}
 .install-bar .ib-b{display:flex;gap:8px;margin-left:auto}
 .install-bar .btn{min-height:38px;padding:0 16px}
+
+/* 휴대폰 읽기: 위 메뉴·아래 바는 글 위에 떠 있고, 글을 넘기면 숨고 화면을 누르면 보임 */
+@media (max-width:700px){
+  .reader .r-top{position:absolute;top:0;left:0;right:0;z-index:4;box-shadow:0 2px 10px rgba(0,0,0,.08);transition:transform .22s ease,visibility 0s}
+  .reader .r-bottom{position:absolute;bottom:0;left:0;right:0;z-index:4;padding-bottom:calc(10px + env(safe-area-inset-bottom));box-shadow:0 -2px 10px rgba(0,0,0,.06);transition:transform .22s ease,visibility 0s}
+  .reader .r-body{padding-bottom:96px}
+  .reader.chrome-off .r-top{transform:translateY(-105%);visibility:hidden;transition:transform .22s ease,visibility 0s .22s}
+  .reader.chrome-off .r-bottom{transform:translateY(105%);visibility:hidden;transition:transform .22s ease,visibility 0s .22s}
+}

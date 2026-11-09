@@ -758,12 +758,12 @@ const chHasSubs = n => { const c = chapters()[Math.max(0, chapterOf(n))]; return
 function tocFor(n) { let cur = null; for (const t of R.toc) if (t.page <= n) cur = t; return cur; }
 function placePanels(el) {
   el = el || $('#reader'); if (!el) return; const t = $('.r-top', el); if (!t) return;
-  el.style.setProperty('--ptop', Math.round(t.getBoundingClientRect().bottom + 6) + 'px');
+  el.style.setProperty('--ptop', Math.round(t.offsetTop + t.offsetHeight + 6) + 'px');  // 숨김(밀어 올림) 상태와 관계없이 원래 자리 기준
 }
 window.addEventListener('resize', () => placePanels());
 function renderReader() {
   let el = $('#reader');
-  if (!el) { el = document.createElement('div'); el.id = 'reader'; el.className = 'reader'; el.setAttribute('role', 'dialog'); el.setAttribute('aria-label', '읽기 화면'); document.body.appendChild(el); document.body.style.overflow = 'hidden'; }
+  if (!el) { el = document.createElement('div'); el.id = 'reader'; el.className = 'reader'; el.setAttribute('role', 'dialog'); el.setAttribute('aria-label', '읽기 화면'); document.body.appendChild(el); document.body.style.overflow = 'hidden'; if (immersive()) el.classList.add('chrome-off'); }
   const p = R.pages[R.i], n = p.n, N = R.pages.length, marked = bms().some(m => m.id === R.id && m.p === n);
   const hasText = R.pages.some(x => x.text), hasImg = R.pages.some(x => x.img);
   const ch = tocFor(n);
@@ -818,6 +818,7 @@ function renderReader() {
   history.replaceState(history.state, '', `/read/${R.id}/${n}` + location.search);
 }
 function go(n, ci) { if (!R) return; if (R.ttsLocked) { toast('듣기가 잠겨 있습니다. 🔒 잠김 단추를 눌러 풀어 주세요'); return; } R.chForce = ci == null || isNaN(ci) ? null : ci; R.i = Math.max(0, Math.min(R.pages.length - 1, n - 1)); stopSpeak(); renderReader(); if (R.view === 'page') $('#rBody').scrollTop = 0; }
+const immersive = () => matchMedia('(max-width:700px)').matches;
 function bindReader() {
   const el = $('#reader');
   const reopen = id => $('#' + id).classList.add('open');
@@ -867,6 +868,20 @@ function bindReader() {
   bindIx();
   const ho = $('#hlOff'); if (ho) ho.onclick = () => { R.hl = []; history.replaceState(null, '', location.pathname); renderReader(); };
   
+  // 휴대폰: 전자책 앱처럼 글을 읽거나 손가락으로 밀어 올리면 위 메뉴·아래 바를 숨기고, 화면을 한 번 누르면 다시 보임 (운영자 요청, 2026-11-09)
+  if (!el._tapBound) {
+    el._tapBound = true;
+    const tapOk = t => t.closest('#rBody') && !t.closest('a,button,input,select,textarea,label,sup,u,img,summary,[role=button],[data-go],[data-find],[data-zoom-img],[data-zoom-tbl],.ix-bar');
+    el.addEventListener('click', e => {
+      if (!immersive() || !tapOk(e.target)) return;
+      if (String(window.getSelection() || '').trim() || ($('#selPop') && $('#selPop').classList.contains('show'))) return;
+      if (el.classList.toggle('chrome-off')) $$('.panel', el).forEach(x => x.classList.remove('open'));
+    });
+    let ty = null;
+    el.addEventListener('touchstart', e => { ty = e.target.closest('#rBody') ? e.touches[0].clientY : null; }, { passive: true });
+    el.addEventListener('touchmove', e => { if (ty == null || !immersive()) return; if (Math.abs(e.touches[0].clientY - ty) > 12 && !$('.panel.open', el)) { el.classList.add('chrome-off'); ty = null; } }, { passive: true });
+    if (immersive() && !store.get('tap-hint')) { store.set('tap-hint', 1); setTimeout(() => toast('글을 넘기면 메뉴가 숨고, 화면을 한 번 누르면 다시 나옵니다'), 1200); }
+  }
   // 설정·목록 창: 위 단추 줄 바로 아래에 열리게 하고(단추를 가리지 않게), 창마다 ✕ 닫기 단추
   placePanels(el);
   $$('.panel', el).forEach(p => { if (p.querySelector(':scope > .p-close')) return; const x = document.createElement('button'); x.className = 'p-close'; x.type = 'button'; x.setAttribute('aria-label', '닫기'); x.textContent = '✕'; x.onclick = () => p.classList.remove('open'); p.prepend(x); });
@@ -1300,14 +1315,14 @@ function chDups(c) {
   if (c._dups) return c._dups;
   const want = dupKey(c.title), found = new Set();
   // 장 첫 쪽, 그리고 첫 쪽이 제목뿐이면 다음 쪽 첫머리까지 (부 표지 쪽 + 다음 쪽 제목처럼 되풀이되는 경우)
-  for (let n = c.from; n <= Math.min(c.to, c.from + 1); n++) {
+  for (let n = c.from; n <= Math.min(c.to, c.from + 5); n++) {  // 장 첫머리가 그림·빈 쪽뿐이면 다음 쪽 첫머리까지
     const ps = paras((R.pages[n - 1] || {}).text); let acc = '', out = [], k = n === c.from ? (c.k0 || 0) : 0;
     for (; k < ps.length; k++) {
       const s = ps[k]; if (FIG_RE.test(s)) continue;
       const dk = dupKey(s); if (!dk || isFootnote(s) || s.length > 160 || !want.startsWith(acc + dk)) break;
       acc += dk; out.push(k); if (acc === want) { out.forEach(x => found.add(n + ':' + x)); break; }
     }
-    if (n === c.from && ps.some((s, i) => !found.has(n + ':' + i) && !FIG_RE.test(s) && s.trim())) break;  // 첫 쪽에 다른 글이 있으면 다음 쪽은 보지 않음
+    if (ps.some((s, i) => !found.has(n + ':' + i) && !FIG_RE.test(s) && s.trim())) break;  // 첫 쪽에 다른 글이 있으면 다음 쪽은 보지 않음
   }
   return (c._dups = found);
 }
@@ -1579,8 +1594,9 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
     document.body.appendChild(b);
     $('#ibNo').onclick = off;
     const guide = () => {
-      const mob = /Android/i.test(navigator.userAgent);
-      $('.ib-t', b).innerHTML = ios ? '아래쪽(아이패드는 위쪽)의 <b>공유 단추 □↑</b>를 누르고 → <b>‘홈 화면에 추가’</b>를 고르세요. 그러면 홈 화면에 도서관 아이콘이 생겨요.'
+      const mob = /Android/i.test(navigator.userAgent), sam = /SamsungBrowser/i.test(navigator.userAgent);
+      $('.ib-t', b).innerHTML = sam ? '주소창 오른쪽의 <b>⬇ 모양 아이콘(앱 설치)</b>을 누르고 <b>‘설치’</b>를 누르세요. 아이콘이 없으면 아래쪽 <b>⋮(또는 ≡) 메뉴 → ‘현재 페이지 추가’ → ‘홈 화면’</b>을 누르세요.'
+        : ios ? '아래쪽(아이패드는 위쪽)의 <b>공유 단추 □↑</b>를 누르고 → <b>‘홈 화면에 추가’</b>를 고르세요. 그러면 홈 화면에 도서관 아이콘이 생겨요.'
         : mob ? '브라우저 오른쪽 위 <b>⋮ 메뉴</b> → <b>‘앱 설치’</b> 또는 <b>‘홈 화면에 추가’</b>를 누르세요. (삼성 인터넷은 아래쪽 <b>≡ 메뉴 → 현재 페이지 추가 → 홈 화면</b>)'
         : '주소창 오른쪽 끝의 <b>설치 아이콘(⊕ 또는 모니터 모양)</b>을 누르거나, 오른쪽 위 <b>⋮ 메뉴 → ‘전송, 저장, 공유’ → ‘페이지를 앱으로 설치’</b>를 누르세요. 이미 설치하셨다면 이 안내는 닫으셔도 돼요.';
       const g = $('#ibGo'); if (g) g.remove();
