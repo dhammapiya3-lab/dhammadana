@@ -1,0 +1,803 @@
+﻿ <!DOCTYPE html> 
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dharma Storybooks</title>
+
+<style type="text/css">
+.information {display:none;}
+p {color:black; text-align: left; }
+#StorybooksTable {width: 100%; max-width: 100%; margin: auto; font-size: 18px;}
+#StorybooksTable th, #StorybooksTable td {text-align: left;  padding: 0px 12px;}
+#StorybooksTable thead th {position: sticky; top: 0; } 
+td p {margin-top:1em; margin-bottom:1em;}
+td {padding-top:5px!important; padding-bottom:5px !important;}
+mark {background: orange;}
+hide {display:none;}
+#NoResults {display:none;}
+.colorcode {overflow:hidden; padding:10px; position:fixed; right:30px; bottom:10px; }
+@media screen and (min-width:100px) and (max-width: 1100px) {.colorcode {display:none !important } }
+
+</style>
+
+<meta name="keywords" content="Arahats, Biography, Bodhisattva, Buddha, Chan/Zen, China, Chinese, Commentary, Dharma, Disciples, Discipline, EBT, Epic, Folklore, Germany, Great Disciples, Hinduism, India, Japan, Kings, Lao Tzu, Lay Teacher, Medieval, Meditation, Missionaries, Modern, Monastics, Myanmar, Nature, Nuns, Pāḷi, Parables, Perfections, Pilgrims, Poetry, Pre-Modern, Sanskrit, Śāsana, Schools, Southeast Asia, Sri Lanka, Tamil, Taoism, Thailand, Tibet, Vajrayāna">
+
+<link rel="shortcut icon" href="favicon.gif" />
+
+<link rel="stylesheet" type="text/css" href="includes/Main.css" />
+
+<script type="text/javascript" src="includes/jquery-1.7.2.min.js"></script>
+
+</head>
+
+<body>
+
+<script type="text/javascript" src="includes/Header-Home.js"></script>
+
+<div id="toc-wrapper">
+
+<div class="center">
+
+<p class="Heading1" id="title">Dharma Storybooks</p>
+
+<div id="summary"><p>Free illustrated, Creative Commons Dharma Storybooks made for personal study, to enrich classroom and Dharma teaching, and spread timeless wisdom. The books cover all Buddhist trdaitions. Free to read, download, print, and share worldwide. <br><br><span style="color:yellow;"><b>There are now 13,186 posters on this website <br>in <b>47</b> storybooks and 916 chapters</b> </span><br><i>November 2026</i></p></div>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////
+https://dharma-storybooks.net/app/build-tools/errors.php 
+//////////////////////////////////////////////////////////////////////////////// -->
+
+<p class="short-url center" style="margin-left:1em; font-variant:small-caps;">short url: <span><a href="https://bit.ly/DharmaSB">https://bit.ly/DharmaSB</a></span><br></p>
+
+<p class="center" ><button onclick="window.location.href='Recent/index.htm';" style="cursor: pointer;" id="navindex">RECENT ADDITIONS</button></p>
+
+<p>SEARCH THIS WEBSITE</p>
+<script async src="https://cse.google.com/cse.js?cx=91a11abd21722447d">
+</script>
+<div class="google-search-wrapper">
+<div class="gcse-search"></div>
+</div>
+
+<script type="text/javascript" src="includes/app.js"></script>
+
+<p style="width:480px; margin:auto;">The list below can be filtered by word, title, tag, style or any other element in the list. You can start typing (with or without diacritics) and the list will automatically update. Additionally, if you click on a tag it will activate the filter for the tag. </p>
+<br>
+<!--<p style="width:100%; margin:auto;">
+<span class="tag">Arahats</span> 
+<span class="tag">Biography</span> 
+<span class="tag">Bodhisattva</span> 
+<span class="tag">Buddha</span> 
+<span class="tag">Chan/Zen</span> 
+<span class="tag">China</span> 
+<span class="tag">Chinese</span> 
+<span class="tag">Commentary</span> 
+<span class="tag">Dharma</span> 
+<span class="tag">Disciples</span> 
+<span class="tag">Discipline</span> 
+<span class="tag">EBT</span> 
+<span class="tag">Epic</span> 
+<span class="tag">Folklore</span> 
+<span class="tag">Germany</span> 
+<span class="tag">Great Disciples</span> 
+<span class="tag">Hinduism</span> 
+<span class="tag">India</span> 
+<span class="tag">Japan</span> 
+<span class="tag">Kings</span> 
+<span class="tag">Lao Tzu</span> 
+<span class="tag">Lay Teacher</span> 
+<span class="tag">Medieval</span> 
+<span class="tag">Meditation</span> 
+<span class="tag">Missionaries</span> 
+<span class="tag">Modern</span> 
+<span class="tag">Monastics</span> 
+<span class="tag">Myanmar</span> 
+<span class="tag">Nature</span> 
+<span class="tag">Nuns</span> 
+<span class="tag">Pāḷi</span> 
+<span class="tag">Parables</span> 
+<span class="tag">Perfections</span> 
+<span class="tag">Pilgrims</span> 
+<span class="tag">Poetry</span> 
+<span class="tag">Pre-Modern</span> 
+<span class="tag">Sanskrit</span> 
+<span class="tag">Śāsana</span> 
+<span class="tag">Schools</span> 
+<span class="tag">Southeast Asia</span> 
+<span class="tag">Sri Lanka</span> 
+<span class="tag">Tamil</span> 
+<span class="tag">Taoism</span> 
+<span class="tag">Thailand</span> 
+<span class="tag">Tibet</span> 
+<span class="tag">Vajrayāna</span> 
+</p>-->
+<br>
+</div>
+
+<div class="check" style="max-width:720px; margin:auto;">
+
+<table id="Top">
+
+<table id="StorybooksTable">
+<thead>
+<th class="Header">
+    <div style="display: flex; justify-content: center; align-items: center; gap: 8px;">
+        <input type="text" style="width:320px; max-width:100%; padding: 0px 8px; height: 32px; line-height: 20px;" id="TableInput" placeholder="Start typing to filter the list, or click on a tag">
+        <button id="ResetTable" style="height: 32px; margin: 0; padding: 0px 10px;" onclick="ResetTable()">Reset</button>
+    </div>
+</th>
+
+<tr><td><p class="Heading3">Bodhisattva</p></td></tr>
+
+<tr><td><p><a href="Jataka/index.htm">The Pāḷi Jātaka Stories (from the first 50)</a> <br>
+based on the Revised Translation by Ānandajoti Bhikkhu<br>
+(Comic Book Style, 32 Stories, 442 Posters)<br>
+<span class="tag">Bodhisattva</span> 
+<span class="tag">Perfections</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Parables</span> 
+<span class="tag">Folklore</span> 
+<span class="tag">EBT</span> 
+<span class="tag">Pāḷi</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Pannasa/index.htm">Fifty Lannā Jātaka Stories</a> <br>
+based on the translations by I B Horner and Padmanabh S. Jaini<br>
+(Lannā Mural Painting Style, 50 Stories, 804 Posters)<br>
+<span class="tag">Bodhisattva</span> 
+<span class="tag">Perfections</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Southeast Asia</span> 
+<span class="tag">Parables</span> 
+<span class="tag">Folklore</span> 
+<span class="tag">Medieval</span> 
+<span class="tag">Pāḷi</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Jatakamala/index.htm">Jātakamāla, The Garland of Birth Stories</a> <br>
+based on the translation by J S Speyer<br>
+(Watercolour Style, 33 Stories, 500 Posters)<br>
+<span class="tag">Bodhisattva</span> 
+<span class="tag">Perfections</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Parables</span> 
+<span class="tag">Folklore</span> 
+<span class="tag">Sanskrit</span> 
+</p></td></tr>
+
+<tr><td><p class="Heading3">Buddha</p></td></tr>
+
+<tr><td><p><a href="After-Awakening/index.htm">From the Awakening to the Chief Disciples</a> <br>
+based on the Vinaya Mahākhandhaka. <br>
+(Amaravatī Style, 13 Stories, 164 Posters)<br>
+<span class="tag">Buddha</span> 
+<span class="tag">Biography</span> 
+<span class="tag">Great Disciples</span> 
+<span class="tag">Dharma</span> 
+<span class="tag">Kings</span> 
+<span class="tag">Śāsana</span> 
+<span class="tag">India</span> 
+<span class="tag">EBT</span> 
+<span class="tag">Pāḷi</span> 
+</p></td></tr>
+
+<tr><td><p><a href="The-Great-Emancipation/index.htm">The Great Emancipation</a><br>
+(Amaravatī Style, 20 Stories, 234 Posters)<br>
+<span class="tag">Buddha</span> 
+<span class="tag">Biography</span> 
+<span class="tag">Great Disciples</span> 
+<span class="tag">Dharma</span> 
+<span class="tag">Kings</span> 
+<span class="tag">Śāsana</span> 
+<span class="tag">India</span> 
+<span class="tag">EBT</span> 
+<span class="tag">Pāḷi</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Vinaya-Stories/index.htm">Stories from the Vinayapiṭaka</a><br>
+(Amaravatī Style, 39 Stories, 706 Posters)<br>
+<span class="tag">Buddha</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Disciples</span> 
+<span class="tag">Discipline</span> 
+<span class="tag">Folklore</span> 
+<span class="tag">EBT</span> 
+<span class="tag">Pāḷi</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Way-Beyond/index.htm">The Way to the Beyond</a><br>
+(Ink Wash Style, 19 Stories, 223 Posters)<br>
+<span class="tag">Buddha</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Dharma</span> 
+<span class="tag">EBT</span> 
+<span class="tag">Pāḷi</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Light-of-Asia/index.htm">Stories from The Light of Asia</a><br>
+Illustrations of the Stories in Edwin Arnold’s Masterpiece<br>
+(Watercolour Style, 8 Stories, 118 Posters)<br>
+<span class="tag">Bodhisattva</span> 
+<span class="tag">Buddha</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Poetry</span> 
+<span class="tag">Epic</span> 
+</p></td></tr>
+
+<tr><td><p class="Heading3">Foremost Disciples</p></td></tr>
+
+<tr><td><p><a href="Foremost-Monks/index.htm">The Lives of the Foremost Monks</a><br>
+Stories Based Upon the Great Chronicles of the Buddhas<br>
+(Madhubani Painting Style, 41 Stories, 513 Posters) <br>
+<span class="tag">Buddha</span> 
+<span class="tag">Arahats</span> 
+<span class="tag">Great Disciples</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Commentary</span> 
+<span class="tag">Pāḷi</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Foremost-Nuns/index.htm">The Lives of the Foremost Nuns</a><br>
+Stories Based Upon the Great Chronicles of the Buddhas<br>
+(Madhubani Painting Style, 13 Stories, 284 Posters) <br>
+<span class="tag">Buddha</span> 
+<span class="tag">Arahats</span> 
+<span class="tag">Great Disciples</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Commentary</span> 
+<span class="tag">Pāḷi</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Foremost-Laymen/index.htm">The Lives of the Foremost Laymen</a><br>
+Stories Based Upon the Great Chronicles of the Buddhas<br>
+(Madhubani Painting Style, 10 Stories, 132 Posters) <br>
+<span class="tag">Buddha</span> 
+<span class="tag">Arahats</span> 
+<span class="tag">Great Disciples</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Commentary</span> 
+<span class="tag">Pāḷi</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Foremost-Laywomen/index.htm">The Lives of the Foremost Laywomen</a><br>
+Stories Based Upon the Great Chronicles of the Buddhas<br>
+(Madhubani Painting Style, 10 Stories, 115 Posters) <br>
+<span class="tag">Buddha</span> 
+<span class="tag">Arahats</span> 
+<span class="tag">Great Disciples</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Commentary</span> 
+<span class="tag">Pāḷi</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Four-Rich-Men/index.htm">Four Rich Men with Inexhaustible Resources</a><br>
+Stories Based Upon the Great Chronicles of the Buddhas<br>
+(Madhubani Painting Style, 4 Stories, 55 Posters) <br>
+<span class="tag">Buddha</span> 
+<span class="tag">Arahats</span> 
+<span class="tag">Great Disciples</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Commentary</span> 
+<span class="tag">Pāḷi</span> 
+</p></td></tr>
+
+<tr><td><p class="Heading3">Dhamma Stories</p></td></tr>
+
+<tr><td><p><a href="Dhammapada/index.htm">Stories from the Dhammapada Commentary</a><br>
+Illustrations of the Stories from the Dhammapada Commentary<br>
+(Watercolour Style, 117 Stories, 1,621 Posters)<br>
+<span class="tag">Buddha</span> 
+<span class="tag">Arahats</span> 
+<span class="tag">Great Disciples</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Commentary</span> 
+<span class="tag">Pāḷi</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Journey/index.htm">The Journey to the West by Cheng’en Wu</a><br>
+Storybooks based on Monkey by Arthur Waley<br>
+(Gongbi Painting Style, 30 Stories, 403 Posters)<br>
+<span class="tag">Pilgrims</span> 
+<span class="tag">Parables</span> 
+<span class="tag">Medieval</span> 
+<span class="tag">Chinese</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Manimekhalai/index.htm">The Epic of Maṇimēkhalai</a><br>
+The Tamil Epic of Wisdom and Compassion<br>
+(Thanjavur Painting Style, 16 Stories, 204 Posters) <br>
+<span class="tag">Epic</span> 
+<span class="tag">Parables</span> 
+<span class="tag">Medieval</span> 
+<span class="tag">Tamil</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Rasavahini/index.htm">Stories from the Rasavāhinī (Heart Streams)</a><br>
+Tales of Karma and Virtue<br>
+(Kandy Painting Style, 20 Stories, 259 Posters) <br>
+<span class="tag">Buddha</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Sri Lanka</span> 
+<span class="tag">Dharma</span> 
+<span class="tag">Medieval</span> 
+<span class="tag">Pāḷi</span> 
+</p></td></tr>
+
+<tr><td><p class="Heading3">Chronicles</p></td></tr>
+
+<tr><td><p><a href="Asoka/index.htm">The Life of Aśoka, the Righteous</a><br>
+Based on Aśoka, the Righteous by Ānanda W P Guruge<br>
+ (Kalamkari Textile Style, 8 Stories, 103 Posters)<br>
+<span class="tag">Disciples</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Sri Lanka</span> 
+<span class="tag">Dharma</span> 
+<span class="tag">Medieval</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Sanghamitta/index.htm">Arahat Saṅghamittā’s Story</a><br>
+Stories Based Upon the Extended Mahāvaṁsa<br>
+ (5 Stories, 75 Posters)<br>
+<span class="tag">Buddha</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Sri Lanka</span> 
+<span class="tag">Dharma</span> 
+<span class="tag">Medieval</span> 
+<span class="tag">Pāḷi</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Dipavamsa/index.htm">Dīpavaṁsa</a><br>
+The Chronicle of the Island (of Sri Lanka)<br>
+ (Kandy Painting Style, 22 Chapters, 283 Posters)<br>
+<span class="tag">Buddha</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Sri Lanka</span> 
+<span class="tag">Dharma</span> 
+<span class="tag">Medieval</span> 
+<span class="tag">Pāḷi</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Thupavamsa/index.htm">Thūpavaṁsa</a><br>
+The Legend of the Thūpas<br>
+ (Madhubani Painting Style, 15 Chapters, 201 Posters)<br>
+<span class="tag">Buddha</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Sri Lanka</span> 
+<span class="tag">Dharma</span> 
+<span class="tag">Medieval</span> 
+<span class="tag">Pāḷi</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Sasanavamsa/index.htm">Sāsanavaṁsa</a><br>
+The History of the Buddha’s Religion<br>
+ (Myanmar Temple Painting Style, 11 Chapters, 155 Posters)<br>
+<span class="tag">Buddha</span> 
+<span class="tag">Biography</span> 
+<span class="tag">India</span> 
+<span class="tag">Myanmar</span> 
+<span class="tag">Dharma</span> 
+<span class="tag">Medieval</span> 
+<span class="tag">Pāḷi</span> 
+</p></td></tr>
+
+<tr><td><p class="Heading3">China</p></td></tr>
+
+<tr><td><p><a href="Eminent-Monks/index.htm">The Biographies of Eminent Monks</a><br>
+Biographies of 18 Eminent Monks who Transmitted the Dharma to China<br>
+(Mogao Style, 18 Stories, 255 Posters)<br>
+<span class="tag">Disciples</span> 
+<span class="tag">India</span> 
+<span class="tag">China</span> 
+<span class="tag">Sanskrit</span> 
+<span class="tag">Chinese</span> 
+<span class="tag">Medieval</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Transmission-of-the-Lamp/index.htm">The Transmission of the Lamp</a><br>
+Biographies of 16 Patriarchs of Chan from Mahākaśyapa to Huineng<br>
+(Zen Painting Style, 16 Stories, 202 Posters)<br>
+<span class="tag">Buddha</span> 
+<span class="tag">Disciples</span> 
+<span class="tag">India</span> 
+<span class="tag">China</span> 
+<span class="tag">Sanskrit</span> 
+<span class="tag">Chinese</span> 
+<span class="tag">Chan/Zen</span> 
+<span class="tag">Medieval</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Chinese-Nuns/index.htm">The Lives of Inspiring Chinese Nuns</a><br>
+Illustrations of the Lives of 12 Early Nuns in China<br>
+ (Watercolour Style, 12 Stories, 153 Posters)<br>
+<span class="tag">Disciples</span> 
+<span class="tag">Nuns</span> 
+<span class="tag">China</span> 
+<span class="tag">India</span> 
+<span class="tag">Sri Lanka</span> 
+<span class="tag">Medieval</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Taoist-Masters/index.htm">Seven Taoist Masters</a><br>
+ The Teachings of the Complete Reality school of Taoism<br>
+ (Zhang Daqian Style, 29 Stories, 372 Posters)<br>
+<span class="tag">China</span> 
+<span class="tag">Taoism</span> 
+<span class="tag">Lao Tzu</span> 
+<span class="tag">Schools</span> 
+<span class="tag">Medieval</span> 
+</p></td></tr>
+
+<tr><td><p class="Heading3">Japan</p></td></tr>
+
+<tr><td><p><a href="Basho/index.htm">Matsuo Bashō’s Walking Trips</a><br>
+Matsuo Bashō travels across 17th-century Japan<br>
+(Nihonga Painting Style, 5 Stories, 181 Posters)<br>
+<span class="tag">Japan</span> 
+<span class="tag">Chan/Zen</span> 
+<span class="tag">Poetry</span> 
+<span class="tag">Nature</span> 
+<span class="tag">Pre-Modern</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Issa/index.htm">Kobayashi Issa’s The Spring of My Life</a><br>
+Kobayashi Issa’s autobiographical reflections from 18th-century Japan<br>
+(Sosaku-Hanga Printing Style, 10 Stories, 132 Posters)<br>
+<span class="tag">Japan</span> 
+<span class="tag">Chan/Zen</span> 
+<span class="tag">Poetry</span> 
+<span class="tag">Nature</span> 
+<span class="tag">Pre-Modern</span> 
+</p></td></tr>
+
+<tr><td><p class="Heading3">Tibet</p></td></tr>
+
+<tr><td><p><a href="Nalanda-Masters/index.htm">The Nālandā Masters</a><br>
+Stories Based Upon Buston’s History of Buddhism<br>
+(Kalamkari Textile Style, 13 Stories, 165 Posters) <br>
+<span class="tag">Disciples</span> 
+<span class="tag">India</span> 
+<span class="tag">Tibet</span> 
+<span class="tag">Missionaries</span> 
+<span class="tag">Medieval</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Buddhism-in-Tibet/index.htm">Buddhism in Tibet</a><br>
+The Lives of Twenty Influential People in Tibet<br>
+ (Tibetan Painting Style, 20 Stories, 257 Posters)<br>
+<span class="tag">Monastics</span> 
+<span class="tag">India</span> 
+<span class="tag">Tibet</span> 
+<span class="tag">Vajrayāna</span> 
+<span class="tag">Medieval</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Marpa/index.htm">The Life of Marpa the Translator</a><br>
+Based on the 11th Century Biography by Tsangnyön Heruka<br>
+ (Menri Thangka Style, 12 Stories, 252 Posters)<br>
+<span class="tag">Monastics</span> 
+<span class="tag">India</span> 
+<span class="tag">Tibet</span> 
+<span class="tag">Vajrayāna</span> 
+<span class="tag">Medieval</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Milarepa/index.htm">The Life of Milarepa</a><br>
+Based on the 11th Century Biography by Tsangnyön Heruka<br>
+ (Menri Thangka Style, 14 Stories, 262 Posters)<br>
+<span class="tag">Monastics</span> 
+<span class="tag">India</span> 
+<span class="tag">Tibet</span> 
+<span class="tag">Vajrayāna</span> 
+<span class="tag">Medieval</span> 
+</p></td></tr>
+
+<tr><td><p class="Heading3">India</p></td></tr>
+
+<tr><td><p><a href="Ramayana/index.htm">The Ramayana, The Epic of Rama, Prince of India </a><br>
+(Prambanan Style, 13 Chapters, 189 Posters)<br>
+<span class="tag">India</span> 
+<span class="tag">Epic</span> 
+<span class="tag">Hinduism</span> 
+<span class="tag">Medieval</span> 
+<span class="tag">Poetry</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Mahabharata/index.htm">The Mahabharata, Epic of the Bharatas</a><br>
+(Kangra Painting Style, 13 Chapters, 169 Posters)<br>
+<span class="tag">India</span> 
+<span class="tag">Epic</span> 
+<span class="tag">Hinduism</span> 
+<span class="tag">Medieval</span> 
+<span class="tag">Poetry</span> 
+</p></td></tr>
+
+<tr><td> <p><a href="Pancatantra/index.htm">Tales from the Pañcatantra</a><br>
+(Indian Miniature Style, 20 Chapters, 245 Posters)<br>
+<span class="tag">India</span> 
+<span class="tag">Parables</span> 
+<span class="tag">Hinduism</span> 
+<span class="tag">Medieval</span> 
+<span class="tag">Poetry</span> 
+</p></td></tr>
+
+<tr><td><p class="Heading3">Modern Masters</p></td></tr>
+
+<tr><td><p><a href="Mahasi/index.htm">The Life of Mahāsi Sayādaw</a><br>
+(Ava Temple Painting Style, 21 Chapters, 243 Posters)<br>
+<span class="tag">Monastics</span> 
+<span class="tag">Myanmar</span> 
+<span class="tag">Meditation</span> 
+<span class="tag">Modern</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Rerukane/index.htm">The Autobiography of Ven. Rerukane Candavimala</a><br>
+(Kandy Painting Style, 4 Chapters, 54 Posters)<br>
+<span class="tag">Monastics</span> 
+<span class="tag">Sri Lanka</span> 
+<span class="tag">Meditation</span> 
+<span class="tag">Modern</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Pure-Inspiration/index.htm">Pure Inspiration, Ven. Ñāṇavimala Mahāthera<br>Recollections of his Life, Practice and Teachings</a><br>
+(German Expressionist Painting Style, 12 Chapters, 163 Posters)<br>
+<span class="tag">Monastics</span> 
+<span class="tag">Germany</span> 
+<span class="tag">Sri Lanka</span> 
+<span class="tag">Ascetics</span> 
+<span class="tag">Meditation</span> 
+<span class="tag">Modern</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Ajahn-Mun/index.htm">The Life of Ajahn Mun</a><br>
+(Isaan Hup Taem Folk Painting Style, 39 Chapters, 507 Posters)<br>
+<span class="tag">Monastics</span> 
+<span class="tag">Thailand</span> 
+<span class="tag">Ascetics</span> 
+<span class="tag">Meditation</span> 
+<span class="tag">Modern</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Ajahn-Chah/index.htm">The Life and Teachings of Ajahn Chah</a><br>
+(Thai Painting Style, 12 Chapters, 158 Posters)<br>
+<span class="tag">Monastics</span> 
+<span class="tag">Thailand</span> 
+<span class="tag">Meditation</span> 
+<span class="tag">Modern</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Ayya-Khema/index.htm">The Life of Ayyā Khemā</a><br>
+The Extraordinary Life of Ilse Kussel<br>
+(Watercolour Style, 14 Stories, 196 Posters)<br>
+<span class="tag">Monastics</span> 
+<span class="tag">Germany</span> 
+<span class="tag">Sri Lanka</span> 
+<span class="tag">Meditation</span> 
+<span class="tag">Modern</span> 
+</p></td></tr>
+
+<tr><td><p class="Heading3">Meditation Teachings</p></td></tr>
+
+<tr><td><p><a href="Bhikkhu-Sumedha/index.htm">Bhikkhu Sumedha<br>His Teachings and Paintings</a><br>
+(Sumedha Style, 9 Chapters, 113 Posters)<br>
+<span class="tag">Monastics</span> 
+<span class="tag">Germany</span> 
+<span class="tag">Sri Lanka</span> 
+<span class="tag">Modern</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Gentle-Way/index.htm">The Gentle Way of Buddhist Meditation<br>
+by Godwin Samararatne</a><br>
+(Colourful Zen Painting Style, 9 Chapters, 199 Posters)<br>
+<span class="tag">Lay Teacher</span> 
+<span class="tag">Sri Lanka</span> 
+<span class="tag">Meditation</span> 
+<span class="tag">Modern</span> 
+</p></td></tr>
+
+<tr><td><p class="Heading3">Dhamma Teachings</p></td></tr>
+
+<tr><td><p><a href="Perfections/index.htm">The Ten Perfections (Pāramī)<br>
+Mingun Sayādaw</a><br>
+(Pattachitra Painting Style, 10 Chapters, 133 Posters)<br>
+<span class="tag">Monastics</span> 
+<span class="tag">Myanmar</span> 
+<span class="tag">Perfections</span> 
+<span class="tag">Commentary</span> 
+<span class="tag">Modern</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Basic-Concepts/index.htm">Basic Buddhist Concepts<br>
+Henri van Zeyst</a><br>
+(Warli Painting Style, 13 Chapters, 169 Posters)<br>
+<span class="tag">Lay Teacher</span> 
+<span class="tag">Sri Lanka</span> 
+<span class="tag">Dharma</span> 
+<span class="tag">Meditation</span> 
+<span class="tag">Modern</span> 
+</p></td></tr>
+
+<tr><td><p><a href="Bojjhanga/index.htm">The Seven Facets of Insight (Satta Bojjhaṅga)<br>
+Henri van Zeyst</a><br>
+(Sri Lankan Temple Painting Style, 8 Chapters, 92 Posters)<br>
+<span class="tag">Lay Teacher</span> 
+<span class="tag">Sri Lanka</span> 
+<span class="tag">Dharma</span> 
+<span class="tag">Meditation</span> 
+<span class="tag">Modern</span> 
+</p></td></tr>
+
+</table>
+
+</div>
+
+<script>
+function FilterStorybooks() {
+    document.getElementById('Top').scrollIntoView();
+    
+    var input, filter, table, tr, td, i;
+    input = document.getElementById("TableInput");
+    filter = input.value.toLowerCase();
+    filter = filter.replace(/ +$/, '');
+    filter = filter.replace(/ṃ/g, "ṁ");
+    filter = filter.replace(/ṁ$/gm, '');
+    filter = filter.replace("cull", "cūḷ");
+    filter = filter.replace("bodhisatta", "bodhisattva");
+    filter = filter.replace(/-/g, "");
+    
+    table = document.getElementById("StorybooksTable");
+    tr = table.getElementsByTagName("tr");
+
+    const variations = { 
+        'a': '[aā]',
+        'i': '[iī]',
+        'u': '[uū]',
+        'n': '[nñṇṅ]',
+        't': '[tṭ]',
+        'd': '[dḍ]',
+        'l': '[lḷ]',
+        'm': '[mṃṁ]',
+    };
+    const str = filter.replace(/[aiuntdlm]/g, (m) => variations[m]);
+    const filterRegex = new RegExp(str);
+
+// Loop through all table rows
+for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+        // Check if the row is a heading
+        if (td.querySelector('.Heading3')) {
+            if (filter.length > 0) {
+                tr[i].style.display = "none";
+            } else {
+                tr[i].style.display = "";
+            }
+        } else {
+            // Strip hyphens from the target text so it matches the hyphen-stripped filter
+            var targetText = td.innerText.toLowerCase().replace(/-/g, "");
+            
+            if (filter.length === 0 || targetText.search(filterRegex) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+}
+
+    // Handle "No Results" message visibility
+    if ($('#StorybooksTable').find('tr:visible').length === 1) {
+        $('tr#NoResults').show();
+    } else {
+        $('tr#NoResults').hide();
+    }
+}
+</script>
+<script>
+function ResetTable(){
+  document.getElementById("TableInput").value = "";
+  var $rows = $('#StorybooksTable tr');
+  $rows.show();
+  $('tr#NoResults').hide()
+}
+</script>
+<script>
+var input = document.getElementById("TableInput");
+input.addEventListener("input", function() {
+    var val = this.value.trim();
+    
+    if (val.length >= 3) {
+        FilterStorybooks();
+    } else if (val.length === 0) {
+        ResetTable();
+    }
+});
+</script>
+
+<p class="Heading4">&#160;</p>
+</div>
+<script type="text/javascript" src="includes/toc.js"></script>
+<div id="toc"><div class="toc"></div></div>
+<script>
+$('.toc').toc({
+'selectors': '.Heading6, .Heading5, .Heading4, .Heading3'
+});
+$(document).ready( function() {
+    var divtop = $("#toc-wrapper").offset().top;
+    $(window).scroll(function() {
+  if($(window).scrollTop() > divtop) { 
+$(".toc").fadeIn(1500); 
+  }
+  else if ($(window).scrollTop() < divtop) { 
+$(".toc").fadeOut(500); 
+  }  
+    });
+});
+$('.toc').css('left', window.innerWidth / 2 + 400);
+window.onresize = function(event) {
+$('.toc').css('left', window.innerWidth / 2 + 400);
+}
+</script>
+
+<script>
+$(document).ready(function() {
+    // Listen for clicks on any element with the class "tag"
+    $(document).on('click', '.tag', function(e) {
+        e.preventDefault();
+        
+        // Get the text inside the clicked tag (trimming extra whitespace or special spacing characters)
+        var tagText = $(this).text().trim();
+        
+        // Set the value of the filter input box
+        document.getElementById("TableInput").value = tagText;
+        
+        // Trigger the filter function
+        FilterStorybooks();
+    });
+});
+</script>
+
+<div class="center">
+
+<img src="Buddha.jpg"  alt="Buddha"  id="cover" style="max-width:100%; margin:auto;" /></a>
+
+<p>&#160;</p>
+
+<script type="text/javascript" src="includes/checkbox.js"></script>
+
+<p>&#160;</p><p class="center" id="credit-generated">The posters were generated by<br><a href="https://notebook.google.com/" target="_blank">Gemini Notebook</a><br>under the direction of<br><span style="color:#76FF76;">Anandajoti Bhikkhu</span></p><p>If you would like to make<br>similar storybooks<br>in your own language <br><a href="guide/index.htm">I HAVE A GUIDE HERE</a><br>Let’s grow the Dhamma together!</p>
+
+<p>&#160;</p><p class="center"><a href="../includes/About.htm">About this Website</a></p>
+
+<div style="clear:both;"></div>
+
+<p>&#160;</p>
+
+<p><a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="images/CC-BY-SA.png" /></a><br><a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 4.0 Unported License</a></p>
+
+<script type="text/javascript" src="includes/Footer-End-Stories.js"></script>
+
+</div>
+
+</body>
+
+</html>
