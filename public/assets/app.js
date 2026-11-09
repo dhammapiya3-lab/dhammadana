@@ -739,6 +739,8 @@ function reflowHtml() {
   return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}</h3></div>` : ''}${body}${nav}</div>`;
 }
 // 이 장 안의 소제목 자리(화면의 문단) 목록
+// 굵은 글씨 한 줄만으로 된 짧은 문단(예: '[1. 사성제]', '수행이란 무엇인가?')도 소제목으로 봄 — 문장(. ! 로 끝남)·따옴표·괄호로 시작하는 강조 글은 빼고
+const boldHead = e => { const t = e.textContent.trim(), b = e.firstElementChild; return e.children.length === 1 && b && b.tagName === 'STRONG' && b.textContent.trim() === t && t.length >= 2 && t.length <= 40 && !/[.!。…(]$/.test(t) && !/^[‘’'“”"(]/.test(t) && !/[가-힣]-(\s|$)/.test(t); };  // '나모- 땃사…' 같은 빠알리 독송 줄도 뺌
 function subTargets(c) {
   if (!c) return [];
   // 소제목 글과 같은 문단(목차 쪽과 다음 쪽에서)을 찾아 그 자리로. 각주 문단에는 멈추지 않음 (운영자 요청, 2026-11-09)
@@ -753,9 +755,10 @@ function subTargets(c) {
     }
     const e = $(`#rBody p[data-pg="${t.page}"][data-s="${paraIdx(t)}"]`);
     return vis(e) ? e : $('#pm-' + t.page);
-  }).filter(Boolean).sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top);
+  }).concat($$('#rBody .sub-h').filter(vis), $$('#rBody p[data-pg]').filter(boldHead).filter(vis))  // 목차에 없는 본문 소제목(## 줄 등)에도 멈춤 — 모든 책 (운영자 요청, 2026-11-10)
+    .filter((e, i, a) => e && a.indexOf(e) === i).sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top);
 }
-const chHasSubs = n => { const c = chapters()[Math.max(0, chapterOf(n))]; return !!c && R.toc.some(t => /^\s/.test(t.title) && t.page >= c.from && t.page <= c.to); };
+const chHasSubs = n => { const c = chapters()[Math.max(0, chapterOf(n))]; return !!c && (R.toc.some(t => /^\s/.test(t.title) && t.page >= c.from && t.page <= c.to) || R.pages.slice(c.from - 1, c.to).some(p => /^## |^\*\*[^*\n]{2,40}\*\*$/m.test(p.text || ''))); };
 function tocFor(n) { let cur = null; for (const t of R.toc) if (t.page <= n) cur = t; return cur; }
 function placePanels(el) {
   el = el || $('#reader'); if (!el) return; const t = $('.r-top', el); if (!t) return;
