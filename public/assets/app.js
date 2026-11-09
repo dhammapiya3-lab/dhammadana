@@ -1587,8 +1587,8 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
     $('#ibGo').onclick = async () => {
       if (ev) {
         const e0 = ev; ev = null;
-        try { await e0.prompt(); const r = await e0.userChoice; if (r && r.outcome === 'accepted') { off(); return; } } catch (e) { guide(); return; }
-        return;
+        try { await e0.prompt(); const r = await e0.userChoice; if (r && r.outcome === 'accepted') { off(); return; } } catch (e) {}
+        guide(); return;  // 설치 창이 안 떴거나 취소했으면 메뉴로 설치하는 방법을 보여 줌
       }
       guide();  // 브라우저가 바로 설치 창을 열어 주지 않으면 메뉴에서 설치하는 방법을 안내
     };
