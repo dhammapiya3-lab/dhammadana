@@ -1011,3 +1011,4 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 /* 마우스를 올리면 뜨는 짧은 안내 (data-tip) */
 .tipbox{position:fixed;z-index:200;background:#2b2a27;color:#fff;font-size:12.5px;line-height:1.5;padding:7px 10px;border-radius:7px;pointer-events:none;opacity:0;transition:opacity .12s;box-shadow:0 4px 14px rgba(0,0,0,.2)}
 .tipbox.show{opacity:1}
+.st-tools select.on{border-color:var(--robe);color:var(--robe);font-weight:600}

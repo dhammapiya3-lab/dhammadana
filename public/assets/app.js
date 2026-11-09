@@ -208,7 +208,7 @@ async function initMembers() {
     const parts = [$('.lib', root), $('.study-loose', root)].filter(Boolean);
     if (!it) { d.hidden = true; parts.forEach(x => x.hidden = false); return; }
     parts.forEach(x => x.hidden = true); d.hidden = false;
-    if (hp[1] === 'read' && it.text) { studyReader(d, it, hp[2] ? +hp[2] : null, stPairOf(it, byId)); return; }
+    if (hp[1] === 'read' && it.text) { studyReader(d, it, hp[2] ? +hp[2] : null, stPairsOf(it, byId)); return; }
     const fl = it.files.map(k => fileBy[k]).filter(Boolean);
     d.innerHTML = `<p style="margin-top:18px"><a href="#" id="stBack">← 학습 자료실 목록</a></p>
       <div class="study-book"><div class="cover">${it.cover && fileSet.has(it.cover) ? `<img src="${url(it.cover)}" alt="${esc(it.title)} 표지">` : `<div class="cover-ph">${esc(it.title)}</div>`}</div>
@@ -240,10 +240,12 @@ async function stLoad(k) {
   if (!pages[0].text.trim()) pages.shift();
   return (STX[k] = pages);
 }
-// 대조할 짝 자료: 자료 정보의 pair, 없으면 이름 규칙(…-pts-N ↔ …-bjt-N)
-function stPairOf(it, byId) {
-  const p = it.pair || (/-pts-/.test(it.id) ? it.id.replace('-pts-', '-bjt-') : /-bjt-/.test(it.id) ? it.id.replace('-bjt-', '-pts-') : '');
-  return p && byId[p] && byId[p].text ? byId[p] : null;
+// 대조할 판본들: 자료 정보의 pairs(또는 pair), 없으면 이름 규칙(…-pts-N ↔ …-bjt-N ↔ …-vri-N)
+const ED_RE = /-(pts|bjt|vri)-/;
+const stEdOf = it => it.edition_label || ({ pts: 'PTS', bjt: 'BJT', vri: 'VRI 6차 결집' }[(String(it.id).match(ED_RE) || [])[1]] || '대조 판본');
+function stPairsOf(it, byId) {
+  const ids = it.pairs || (it.pair ? [it.pair] : ED_RE.test(it.id) ? ['pts', 'bjt', 'vri'].map(e => it.id.replace(ED_RE, `-${e}-`)).filter(x => x !== it.id) : []);
+  return ids.map(x => byId[x]).filter(x => x && x.text);
 }
 // 문장 나누기: 원문을 한 글자도 바꾸지 않고 자르기만 함 (자른 조각을 이으면 원문 그대로)
 function stSents(t) {
@@ -278,7 +280,8 @@ function stAlign(A, B) {
     else { rows.push([[i - 1], [j - 2, j - 1]]); i--; j -= 2; } }
   return rows.reverse();
 }
-async function studyReader(d, it, want, pair) {
+async function studyReader(d, it, want, pairs) {
+  pairs = pairs || [];
   const id = it.id, base = '#' + encodeURIComponent(id);
   d.innerHTML = `<p style="margin-top:18px"><a href="${base}">← 자료 소개</a></p><p class="muted">본문을 불러오는 중…</p>`;
   // 압축본(.gz)을 풀 수 없는 브라우저(옛 아이폰·일부 앱 안 브라우저)는 같은 자료의 글 파일(.txt)로 읽음
@@ -286,7 +289,10 @@ async function studyReader(d, it, want, pair) {
   const key = /\.gz$/i.test(it.text) && !('DecompressionStream' in window) && plainTxt ? plainTxt : it.text;
   let P; try { P = await stLoad(key); } catch (e) { try { if (plainTxt && key !== plainTxt) P = await stLoad(plainTxt); } catch (e2) {} }
   if (!P || !P.length) { d.innerHTML = `<p style="margin-top:18px"><a href="${base}">← 자료 소개</a></p><p>본문을 불러오지 못했습니다. 새로고침해 주세요.</p>`; return; }
-  const S = { fs: store.get('st-fs', 1), lh: store.get('st-lh', 1.9), font: store.get('st-font', 'serif'), cmp: !!pair && store.get('st-cmp', false) };
+  // 대조할 판본: 고른 판본 이름(PTS·BJT·VRI)을 기억해 두고, 이 자료에 그 판본이 있으면 그것으로 (운영자 요청, 2026-11-10: VRI 6차 결집본 더함)
+  const want0 = store.get('st-cmp-ed', store.get('st-cmp', false) ? 'BJT' : '');
+  let pair = pairs.find(x => stEdOf(x) === want0) || null;
+  const S = { fs: store.get('st-fs', 1), lh: store.get('st-lh', 1.9), font: store.get('st-font', 'serif'), cmp: !!pair };
   let P2 = null, P2by = null;
   const loadPair = async () => { if (P2 || !pair) return; try { P2 = await stLoad(pair.text); P2by = new Map(P2.map(p => [p.label, p])); } catch (e) { P2 = []; P2by = new Map(); } };
   if (S.cmp) await loadPair();
@@ -299,7 +305,7 @@ async function studyReader(d, it, want, pair) {
       <span class="st-tools"><button class="tbtn" data-fs="-1" aria-label="글자 작게">가−</button><button class="tbtn" data-fs="1" aria-label="글자 크게">가+</button>
       <button class="tbtn" id="stLh">줄 간격</button><button class="tbtn" id="stFont">${S.font === 'serif' ? '고딕체' : '명조체'}</button>
       <select id="stJump" aria-label="쪽으로 가기">${P.map((p, n) => `<option value="${n}">${esc(p.label)}</option>`).join('')}</select>
-      <input id="stFind" type="search" placeholder="이 책에서 찾기" value="${esc(STQ.q || '')}">${pair ? `<button class="tbtn${S.cmp ? ' on' : ''}" id="stCmp" title="같은 쪽(쪽 이름이 같은 곳)을 문장마다 나란히">⇄ ${esc(pair.edition_label || (/-bjt-/.test(pair.id) ? 'BJT' : /-pts-/.test(pair.id) ? 'PTS' : '대조'))} 판본과 대조</button>` : ''}</span></div>
+      <input id="stFind" type="search" placeholder="이 책에서 찾기" value="${esc(STQ.q || '')}">${pairs.length ? `<select id="stCmp" class="${S.cmp ? 'on' : ''}" aria-label="다른 판본과 대조" title="같은 쪽(쪽 이름이 같은 곳)을 문장마다 나란히"><option value="">⇄ 판본 대조 끄기</option>${pairs.map(x => `<option value="${esc(x.id)}" ${pair && pair.id === x.id ? 'selected' : ''}>⇄ ${esc(stEdOf(x))} 판본과 대조</option>`).join('')}</select>` : ''}</span></div>
     <div id="stHits" hidden></div>
     <article class="reflow st-page" id="stPage"></article>
     <div class="st-nav"><button class="btn ghost" id="stPrev">‹ 앞쪽</button><span class="small muted" id="stPos"></span><button class="btn ghost" id="stNext">뒤쪽 ›</button></div></div>`;
@@ -309,7 +315,7 @@ async function studyReader(d, it, want, pair) {
     const q = ($('#stFind', d).value || '').trim();
     if (S.cmp && P2by) {
       const other = P2by.get(P[i].label);
-      const me = /-bjt-/.test(id) ? 'BJT' : /-pts-/.test(id) ? 'PTS' : '이 판본', ot = /-bjt-/.test(pair.id) ? 'BJT' : /-pts-/.test(pair.id) ? 'PTS' : '대조 판본';
+      const me = stEdOf(it), ot = stEdOf(pair);
       if (!other) pg.innerHTML = `<div class="pmark">${esc(P[i].label)}</div><p class="muted small">${esc(ot)} 판본에는 이 쪽 이름(${esc(P[i].label)})이 없습니다.</p>` + body(P[i].text, q);
       else {
         const A = stSents(P[i].text.trim()), B = stSents(other.text.trim()), rows = stAlign(A, B);
@@ -327,7 +333,7 @@ async function studyReader(d, it, want, pair) {
   $('#stLh', d).onclick = () => { S.lh = S.lh >= 2.3 ? 1.5 : Math.round((S.lh + 0.2) * 10) / 10; store.set('st-lh', S.lh); apply(); };
   $('#stFont', d).onclick = e => { S.font = S.font === 'serif' ? 'sans' : 'serif'; store.set('st-font', S.font); e.target.textContent = S.font === 'serif' ? '고딕체' : '명조체'; apply(); };
   $('#stJump', d).onchange = e => show(+e.target.value);
-  if ($('#stCmp', d)) $('#stCmp', d).onclick = async e => { S.cmp = !S.cmp; store.set('st-cmp', S.cmp); e.currentTarget.classList.toggle('on', S.cmp); if (S.cmp) await loadPair(); pg.classList.toggle('wide', S.cmp); show(i, true); };
+  if ($('#stCmp', d)) $('#stCmp', d).onchange = async e => { const v = e.target.value; pair = pairs.find(x => x.id === v) || null; P2 = P2by = null; S.cmp = !!pair; store.set('st-cmp-ed', pair ? stEdOf(pair) : ''); e.target.classList.toggle('on', S.cmp); if (S.cmp) await loadPair(); pg.classList.toggle('wide', S.cmp); show(i, true); };
   pg.classList.toggle('wide', S.cmp);
   $('#stPrev', d).onclick = () => show(i - 1); $('#stNext', d).onclick = () => show(i + 1);
   const keys = e => { if (!document.contains(pg)) return document.removeEventListener('keydown', keys); if (/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)) return;
