@@ -32,7 +32,7 @@ VERSE_KEEP = {(119, 115), (354, 524)}
 
 
 def ntext(t):
-    t = re.sub(r'(?<=\S)\n', ' ', t).replace('\n', '')  # 글 안의 강제 줄바꿈(InDesign) → 낱말 사이 빈칸
+    t = t.replace('\n', '\ue0ff')  # 조판 줄바꿈(InDesign) 자리 표시 — 마지막에 SOFTBR 규칙으로 처리
     return t.replace('\x07', '').replace('\xad', '').replace('', '＊').replace('\t', ' ').replace('\r', '')
 
 
@@ -293,6 +293,8 @@ body = ''
 for n, ps, fns in pages:
     body += f'=== {n}쪽 ===\n' + '\n\n'.join(clean(x) for x in ps + fns if clean(x)) + '\n\n'
 body = re.sub(r'\*\*( ?)\*\*', r'\1', body).rstrip() + '\n'
+# 조판 줄바꿈 자리: 낱말 중간이 대부분이라 붙이고(왔습|니다, Attadaṇ|ḍa), 한글 뒤에 《 ( “ ‘ [ 〈 가 오면 빈칸
+body = re.sub(r'(.)\ue0ff[ \t]*(\n?)[ \t]*(.)', lambda m: m.group(1) + m.group(2) + ((' ' if re.match('[가-힣]', m.group(1)) and m.group(3) in '《(“‘[〈<' else '') if not m.group(2) else '') + m.group(3), body).replace('\ue0ff', '')
 
 # ---- 목차: 차례(10~17쪽)에서 ----
 nz = lambda x: re.sub(r'[^0-9A-Za-z가-힣一-龥]', '', x)
