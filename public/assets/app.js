@@ -1667,13 +1667,20 @@ function abMedia(c) {
 // 짧은 안내 (data-tip): 마우스를 올리면, 손가락으로는 꾹 누르고 있으면(0.5초) 뜸 — 꾹 눌러 안내를 본 때는 단추가 눌리지 않음 (운영자 요청, 2026-11-10)
 (() => {
   let tip = null, hold = null, held = null, hide = null;
+  let cur = null, raf = 0;
+  const place = () => {  // 단추 바로 위에 (손가락에 가리지 않게) — 화면 안에 다 보이게
+    if (!cur || !tip.classList.contains('show')) return;
+    if (!document.contains(cur)) { tip.classList.remove('show'); return; }
+    tip.style.left = '0px'; tip.style.top = '0px';  // 먼저 왼쪽 위로 옮겨 재야 줄바꿈이 바르게 됨 (오른쪽 끝에서 재면 폭이 좁아져 아주 길어짐)
+    const r = cur.getBoundingClientRect(), tw = tip.offsetWidth, th = tip.offsetHeight;
+    tip.style.left = Math.max(8, Math.min(innerWidth - tw - 8, r.left + r.width / 2 - tw / 2)) + 'px';
+    tip.style.top = Math.max(4, Math.min(innerHeight - th - 4, r.top - th - 8 < 4 ? r.bottom + 8 : r.top - th - 8)) + 'px';
+  };
+  const loop = () => { place(); if (cur && tip.classList.contains('show')) raf = requestAnimationFrame(loop); };  // 재생 바가 위아래로 움직여도 따라감
   const show = t => {
     if (!tip) { tip = document.createElement('div'); tip.className = 'tipbox'; tip.setAttribute('role', 'tooltip'); document.body.appendChild(tip); }
-    tip.textContent = t.dataset.tip; tip.classList.add('show');
-    const r = t.getBoundingClientRect(), w = Math.min(280, innerWidth - 16); tip.style.maxWidth = w + 'px';
-    const tw = tip.offsetWidth, th = tip.offsetHeight;
-    tip.style.left = Math.max(8, Math.min(innerWidth - tw - 8, r.left + r.width / 2 - tw / 2)) + 'px';
-    tip.style.top = (r.top - th - 8 < 4 ? r.bottom + 8 : r.top - th - 8) + 'px';  // 손가락에 가리지 않게 위쪽에
+    tip.textContent = t.dataset.tip; tip.style.maxWidth = Math.min(280, innerWidth - 16) + 'px'; tip.classList.add('show');
+    cur = t; cancelAnimationFrame(raf); loop();
   };
   document.addEventListener('mouseover', e => {
     const t = e.target.closest && e.target.closest('[data-tip]'); if (!t || !matchMedia('(hover:hover)').matches) return;
