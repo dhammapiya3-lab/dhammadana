@@ -817,7 +817,7 @@ function renderReader() {
     <div class="panel" id="p-uledit"><h5>밑줄</h5><div class="quote" id="ulText" style="font-size:13.5px"></div>
       <div class="row"><input id="ulNote" placeholder="메모 한 줄" aria-label="밑줄 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"></div>
       <div class="row"><button class="tbtn" id="ulSave">메모 저장</button><button class="tbtn" id="ulCopy">출처와 함께 복사</button><button class="tbtn" id="ulDel">밑줄 지우기</button></div></div>
-    <div class="sel-pop" id="selPop" role="toolbar" aria-label="고른 글"><button id="selUl">밑줄 긋기</button><button id="selNote">밑줄+메모</button><button id="selCopy">복사</button><button id="selShare">공유</button>${R.pages.some(x => x.text) ? '<button id="selPlay">▶ 여기부터 듣기</button>' : ''}</div>
+    <div class="sel-pop" id="selPop" role="toolbar" aria-label="고른 글"><button id="selUl">밑줄 긋기</button><button id="selNote">밑줄+메모</button><button id="selCopy">복사</button><button id="selShare">공유</button>${R.pages.some(x => x.text) ? '<button id="selPlay">▶ 여기부터 듣기</button>' : ''}${R.ab ? '<button id="selAb">🎧 여기부터 오디오북</button>' : ''}</div>
     <div class="panel" id="p-bm"><h5>내 책갈피</h5><ul>${bms().map((m, k) => `<li><span><a class="link" href="/read/${m.id}/${m.p}">『${esc(m.t)}』 ${esc(m.pl || m.p)}쪽</a>${m.note ? `<br><span class="muted small">${esc(m.note)}</span>` : ''}</span><button class="link" data-bmdel="${k}" aria-label="책갈피 지우기">지우기</button></li>`).join('') || '<li class="muted">아직 책갈피가 없습니다.</li>'}</ul>
       <div class="row" style="margin-top:12px"><input id="bmNote" placeholder="이 쪽에 한 줄 메모" aria-label="책갈피 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"><button class="tbtn" id="bmSave">저장</button></div>
       <p class="note">회원가입 없이 이 기기의 브라우저에만 저장됩니다. 다른 기기로 옮길 때는 내 서재의 ‘옮기기’를 쓰세요.</p></div>`;
@@ -1042,6 +1042,16 @@ function bindReader() {
     const src = (paras((R.pages[pg - 1] || {}).text)[k]) || para.textContent;
     const rest = src.slice(domToSrc(src, pre.toString().length));
     stopSpeak(false); R.i = pg - 1; speak(k, rest);
+  };
+  // 고른 곳부터 오디오북 (운영자 요청, 2026-11-10): 그 문단의 소리 시작점에서, 문단 중간이면 글자 위치만큼 앞으로
+  const sa = $('#selAb'); if (sa) sa.onclick = () => {
+    const sel = window.getSelection(); $('#selPop').classList.remove('show');
+    if (!sel || !sel.rangeCount) return;
+    const rg = sel.getRangeAt(0); const node = rg.startContainer.nodeType === 1 ? rg.startContainer : rg.startContainer.parentElement;
+    const para = node && node.closest('[data-pg]'); if (!para) return;
+    const pre = document.createRange(); pre.setStart(para, 0); pre.setEnd(rg.startContainer, rg.startOffset);
+    const frac = para.textContent.length ? pre.toString().length / para.textContent.length : 0;
+    sel.removeAllRanges(); abStartAt(+para.dataset.pg, +para.dataset.s, frac);
   };
   $('#selCopy').onclick = () => { const d = $('#selPop')._sel; if (d) copy(`“${d.text}” — ${R.by}, 『${R.title}』 ${plabel(d.p) || d.p}쪽 (${SITE})`, '고른 글을 출처와 함께 복사했습니다'); $('#selPop').classList.remove('show'); };
   $('#selShare').onclick = () => { const d = $('#selPop')._sel; $('#selPop').classList.remove('show'); if (d) openShare(d, plabel(d.p)); };
@@ -1545,6 +1555,18 @@ function abStart() {
   if (AB.on && a.src && AB.ci === v.ci && Math.abs(a.currentTime - v.t) < 600 && abIdx(R.ab.chapters[v.ci].sync, a.currentTime) === v.k) { a.play().catch(abBlocked); return; }
   if (sv && sv.ci === v.ci && abIdx(R.ab.chapters[v.ci].sync, sv.t) === v.k) v.t = sv.t;
   abPlay(v.ci, v.t);
+}
+function abStartAt(pg, sv, frac) {
+  if (!R || !R.ab) return; if (AB.locked) return abLockedMsg();
+  const chs = R.ab.chapters; let ci = chs.findIndex(c => pg >= c.page && pg <= c.to);
+  if (ci < 0) { toast('이 부분은 오디오북에 들어 있지 않습니다'); return; }
+  const sy = chs[ci].sync; let k = 0; sy.forEach(([t, p, s], i) => { if (p < pg || (p === pg && s <= sv)) k = i; });
+  const exact = sy[k][1] === pg && sy[k][2] === sv, t0 = sy[k][0], t1 = k + 1 < sy.length ? sy[k + 1][0] : (chs[ci].dur || t0);
+  // 한 문단이 소리 여러 조각이면(그림 글 등) 그대로 문단 처음부터, 한 조각이면 고른 글자 위치만큼 앞으로
+  const t = exact && !(k + 1 < sy.length && sy[k + 1][1] === pg && sy[k + 1][2] === sv) ? t0 + Math.max(0, (t1 - t0 - 0.6) * (frac || 0)) : t0;
+  stopSpeak(true); AB.detached = false; AB.userAt = 0;
+  try { const pa = $('#pAudio'); if (pa && !pa.paused) pa.pause(); } catch (e) {}
+  abPlay(ci, Math.max(0, t - (frac > 0.02 ? 1 : 0)));
 }
 const abBlocked = () => { abUi(); toast('▶ 단추를 누르면 오디오북이 시작됩니다'); };
 function abPlay(ci, t) {
