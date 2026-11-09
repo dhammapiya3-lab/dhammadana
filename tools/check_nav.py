@@ -11,18 +11,20 @@ root = os.path.join(os.path.dirname(__file__), '..', 'content', 'texts')
 ids = sys.argv[1:] or sorted(os.path.basename(f)[:-5] for f in glob.glob(os.path.join(root, 'DL-*.json')))
 PROBE = """() => {
   const b = document.querySelector('#rBody'), rt = document.querySelector('.r-top'), on = !document.querySelector('#reader').classList.contains('chrome-off');
-  const top = Math.max(b.getBoundingClientRect().top, on && rt ? rt.getBoundingClientRect().bottom : 0);  // 위 메뉴가 떠 있으면 그 아래부터가 보이는 곳
+  const top = Math.max(b.getBoundingClientRect().top, on && rt ? rt.offsetTop + rt.offsetHeight : 0);  // 메뉴가 내려오는 중이어도 다 내려온 자리 기준  // 위 메뉴가 떠 있으면 그 아래부터가 보이는 곳
   const ch = (document.querySelector('.r-title small') || {}).textContent || '';
   // 지금 화면 위쪽 30% 에 보이는 소제목들 (다음 › 가 이미 보이던 소제목에 또 멈추는지 보려고)
   const seen = [...b.querySelectorAll('p.sub-h, p[data-pg]')].filter(e => { const r = e.getBoundingClientRect(), s = e.firstElementChild; return r.height > 0 && r.top >= top - 2 && r.top < top + (b.clientHeight - (top - b.getBoundingClientRect().top)) * 0.3 && (e.classList.contains('sub-h') || (s && s.tagName === 'STRONG' && s.textContent.trim() === e.textContent.trim())); }).map(e => e.textContent.trim().slice(0, 50));
   window.__seen = seen;
   if (b.scrollTop < 4) return { kind: 'chapter', ch, text: '', seen };  // 장 처음
   if (b.scrollTop >= b.scrollHeight - b.clientHeight - 2) return { kind: 'end', ch, text: '' };  // 장 끝까지 내려감(마지막 소제목이 화면 아래쪽)
-  const els = [...b.querySelectorAll('p, img, .pmark, .r-toc, figure, h4, table')].filter(e => { const r = e.getBoundingClientRect(); return r.height > 0 && r.bottom > top + 4; });
-  const e = els[0]; if (!e) return { kind: 'none', ch, text: '' };
+  const els = [...b.querySelectorAll('p, img, .pmark, .r-toc, figure, h4, table')].filter(e => { const r = e.getBoundingClientRect(); return r.height > 0 && r.bottom > top + 12; });
+  // 맨 위 40px 안에 소제목이 있으면 그것을 멈춘 곳으로 봄 (그 위 그림의 여백 끝자락은 무시)
+  const isHead = x => x.tagName === 'P' && (x.classList.contains('sub-h') || (x.children.length === 1 && x.firstElementChild.tagName === 'STRONG' && x.firstElementChild.textContent.trim() === x.textContent.trim()));
+  const e = els.find(x => isHead(x) && x.getBoundingClientRect().top < top + 40) || els[0]; if (!e) return { kind: 'none', ch, text: '' };
   const t = e.textContent.trim(), s = e.firstElementChild;
   const bold = e.tagName === 'P' && e.children.length === 1 && s && s.tagName === 'STRONG' && s.textContent.trim() === t;
-  const kind = e.classList.contains('sub-h') ? 'sub-h' : bold ? 'bold' : e.tagName === 'IMG' || e.closest('figure') ? 'image' : e.classList.contains('pmark') ? 'page-mark' : e.querySelector('.hl') ? 'colored' : 'para';
+  const kind = e.classList.contains('fn') ? 'footnote' : e.classList.contains('sub-h') ? 'sub-h' : bold ? 'bold' : e.tagName === 'IMG' || e.closest('figure') ? 'image' : e.classList.contains('pmark') ? 'page-mark' : e.querySelector('.hl') ? 'colored' : 'para';
   return { kind, ch, text: t.slice(0, 50), pg: e.dataset.pg || (e.closest('[data-pg]') || {dataset:{}}).dataset.pg, seen };
 }"""
 bad = []

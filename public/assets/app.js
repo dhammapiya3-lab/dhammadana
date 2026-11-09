@@ -835,12 +835,14 @@ function bindReader() {
   const navOff = () => { const t = $('.r-top', el); return 8 + (t && !el.classList.contains('chrome-off') ? t.offsetHeight : 0); };
   const pin = e => {
     const body = $('#rBody'); if (!body || !e) return;
-    const place = () => { body.scrollTop = Math.max(0, e.getBoundingClientRect().top - body.getBoundingClientRect().top + body.scrollTop - navOff()); };
+    let set = 0;
+    const place = () => { body.scrollTop = Math.max(0, e.getBoundingClientRect().top - body.getBoundingClientRect().top + body.scrollTop - navOff()); set = body.scrollTop; };
     place(); const until = Date.now() + 4000; R.pinEl = e; R.lastPin = e;
-    const fix = () => { if (R && R.pinEl === e && Date.now() < until) place(); };
+    // 그 사이 읽는 분이 직접 넘겼으면(스크롤 막대·키보드 등) 다시 맞추지 않음
+    const fix = () => { if (R && R.pinEl === e && Date.now() < until && Math.abs(body.scrollTop - set) < 40) place(); };
     $$('#rBody img').forEach(im => { if (!im.complete) im.addEventListener('load', fix, { once: true }); });
     const stop = () => { if (R && R.pinEl === e) R.pinEl = null; body.removeEventListener('wheel', stop); body.removeEventListener('touchstart', stop); };
-    body.addEventListener('wheel', stop, { passive: true }); body.addEventListener('touchstart', stop, { passive: true });  // 직접 넘기기 시작하면 그만
+    body.addEventListener('wheel', stop, { passive: true }); body.addEventListener('touchstart', stop, { passive: true }); body.addEventListener('mousedown', stop); document.addEventListener('keydown', stop, { once: true });  // 직접 넘기기 시작하면 그만
   };
   const stepSub = d => {
     const body = $('#rBody'), cs = chapters(), ci = chapterOf(R.i + 1), c = cs[Math.max(0, ci)];
