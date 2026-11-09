@@ -1,0 +1,329 @@
+[
+ {
+  "img": "images/009-The-Kings-Grey-Hair-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     301,
+     93
+    ],
+    "shape": "box",
+    "en": "The Divine Messenger.",
+    "ko": "천신의 사자"
+   },
+   {
+    "seed": [
+     351,
+     186
+    ],
+    "shape": "box",
+    "en": "The Story of Kins Makhadeva of Mithila",
+    "ko": "미틸라의\n마카데와 왕 이야기"
+   },
+   {
+    "seed": [
+     310,
+     320
+    ],
+    "align": "center",
+    "ko": "출가와 시간에 관한\n그림 이야기",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     220,
+     386
+    ],
+    "shape": "box",
+    "en": "84,000 years Prince. nce.",
+    "ko": "84,000년을 왕자로"
+   },
+   {
+    "seed": [
+     358,
+     382
+    ],
+    "shape": "box",
+    "en": "years Viceroy.",
+    "ko": "84,000년을 부왕으로"
+   },
+   {
+    "seed": [
+     608,
+     382
+    ],
+    "shape": "box",
+    "en": "84,000 years King.",
+    "ko": "84,000년을 왕으로"
+   },
+   {
+    "seed": [
+     34,
+     41
+    ],
+    "align": "center",
+    "ko": "위데하 나라에서 마카데와 왕이 법답게 나라를 다스렸습니다.",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     422,
+     72
+    ],
+    "shape": "bubble",
+    "en": "Tell me, friend barber. when you see any grey hairs in my head",
+    "ko": "이발사여, 내 머리에서 흰머리를 보거든 알려 주게."
+   }
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     94,
+     39
+    ],
+    "shape": "box",
+    "en": "Ye and years afte",
+    "ko": "그리고 세월이 흐르고 흘러…"
+   }
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     330,
+     72
+    ],
+    "shape": "bubble",
+    "en": "My lord... have found single grey hair.",
+    "ko": "전하… 흰머리 한 올을 찾았습니다."
+   },
+   {
+    "seed": [
+     595,
+     326
+    ],
+    "shape": "bubble",
+    "en": "Pull it out, my friend, and lay it in my palm.",
+    "ko": "뽑아서 내 손바닥에 올려 주게."
+   }
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     234,
+     60
+    ],
+    "shape": "box",
+    "en": "With golden tongs, the barber plucked the hair. The King still had 84,000 years to live, yet...",
+    "ko": "이발사는 금 집게로 그 머리카락을 뽑았습니다. 왕에게는 아직 84,000년의 수명이 남아 있었지만…"
+   }
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     37,
+     37
+    ],
+    "shape": "box",
+    "en": "...at the sight of that one hair, he was filled with deep emotion.",
+    "ko": "…그 흰머리 한 올을 보는 순간, 깊은 감동이 밀려왔습니다."
+   },
+   {
+    "seed": [
+     581,
+     385
+    ],
+    "shape": "box",
+    "en": "He saw the King of Death. He felt cooped within blazing hut.",
+    "ko": "그는 죽음의 왕을 보았습니다. 불타는 오두막에 갇힌 듯했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     105,
+     73
+    ],
+    "shape": "bubble",
+    "en": "Foolish Makhadeva! Grey hairs have come before you rid yourself of depravities",
+    "ko": "어리석은 마카데와여! 번뇌를 다 버리기도 전에 흰머리가 찾아왔구나."
+   },
+   {
+    "seed": [
+     59,
+     365
+    ],
+    "shape": "box",
+    "en": "He within, His raiment",
+    "ko": "몸속이 불타는 듯했고, 왕의 옷이 견딜 수 없이 무겁게 느껴졌습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     85,
+     212
+    ],
+    "shape": "bubble",
+    "en": "This very day, will renounce the world for the monk's life.",
+    "ko": "오늘 당장 나는 세상을 버리고 출가하겠다."
+   },
+   {
+    "rect": [
+     64,
+     60,
+     312,
+     145
+    ],
+    "align": "left",
+    "ko": "왕은 이발사에게 해마다 십만 냥이 나오는 마을 하나를 내렸습니다.",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     318,
+     75
+    ],
+    "shape": "bubble",
+    "en": "My son, have had my fill of human joys, and fain would taste the joys divine. Take the sovereignty upon yourself",
+    "ko": "아들아, 나는 인간의 즐거움을 실컷 누렸으니 이제 천상의 즐거움을 맛보고 싶구나. 네가 나라를 맡아라."
+   },
+   {
+    "rect": [
+     155,
+     40,
+     295,
+     68
+    ],
+    "align": "center",
+    "ko": "인간의 즐거움",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     510,
+     40,
+     645,
+     68
+    ],
+    "align": "center",
+    "ko": "천상의 즐거움",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     201,
+     70
+    ],
+    "shape": "bubble",
+    "en": "What is the reason sire, why you adopt the monk's life?",
+    "ko": "전하, 어찌하여 출가하시려는 것입니까?"
+   },
+   {
+    "seed": [
+     75,
+     376
+    ],
+    "shape": "box",
+    "en": "Holding le grey hair, fi the King ee answered...",
+    "ko": "흰머리 한 올을 들어 올리며 왕이 대답했습니다…"
+   }
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     218,
+     725,
+     400
+    ],
+    "align": "center",
+    "ko": "웃따망가루하 마이항 이메 자따 와요하라,\n빠뚜부따 데와두따, 빱밧자사마요 마마 띠.\n이 흰머리가 내 젊음을 앗아 가네.\n천신의 사자가 나타났으니, 이제 출가할 때로다.",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     282,
+     341
+    ],
+    "shape": "box",
+    "en": "He renounced sovereignty that self-same day.",
+    "ko": "그날로 그는 왕위를 내려놓았습니다."
+   },
+   {
+    "seed": [
+     178,
+     373
+    ],
+    "shape": "box",
+    "en": "Dwell ing in the Mango-grove, he fostered the Four Divine Abidings for 84,000 years.",
+    "ko": "망고 숲에 머물며 84,000년 동안 네 가지 거룩한 마음가짐(사무량심)을 닦았습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-14-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     189,
+     206
+    ],
+    "shape": "box",
+    "en": "Dyin with Absorption full and unbroken, he was reborn in the Realm of Brahma.",
+    "ko": "선정이 온전하고 끊어지지 않은 채 숨을 거둔 그는 범천의 세계에 다시 태어났습니다."
+   }
+  ]
+ }
+]

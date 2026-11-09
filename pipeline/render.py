@@ -65,11 +65,24 @@ def render(src_path, boxes):
     for b in boxes:
         if not b.get("ko") and not b.get("parts"):
             continue
-        full, inner = region_masks(img, b["seed"])
-        # 상자 안쪽에서 바탕보다 뚜렷이 어두운 픽셀 = 글자
+        if b.get("rect"):  # 직접 정한 네모(ellipse 면 타원) — 800px 기준. 상자가 그림으로 새는 곳에 씀
+            kk = W / 800
+            x0_, y0_, x1_, y1_ = [round(v * kk) for v in b["rect"]]
+            full = np.zeros((H, W), np.uint8)
+            if b.get("ellipse"):
+                cv2.ellipse(full, ((x0_ + x1_) // 2, (y0_ + y1_) // 2), ((x1_ - x0_) // 2, (y1_ - y0_) // 2), 0, 0, 360, 255, -1)
+            else:
+                full[y0_:y1_, x0_:x1_] = 255
+            inner = full.copy()
+        else:
+            full, inner = region_masks(img, b["seed"])
         g = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         bg = np.median(g[inner > 0])
-        text_px = ((g < bg - 35) & (inner > 0)).astype(np.uint8) * 255
+        dark = b.get("dark", bg < 110)  # 어두운 말풍선: 밝은 글자
+        if dark:
+            text_px = ((g > bg + 45) & (inner > 0)).astype(np.uint8) * 255
+        else:  # 상자 안쪽에서 바탕보다 뚜렷이 어두운 픽셀 = 글자
+            text_px = ((g < bg - 35) & (inner > 0)).astype(np.uint8) * 255
         # 글자 자리 재기는 테두리에서 더 떨어진 안쪽에서만 (울퉁불퉁한 테두리를 글자로 잘못 재지 않게)
         deep = cv2.erode(inner, np.ones((max(5, W // 160),) * 2, np.uint8))
         ys, xs = np.where((text_px > 0) & (deep > 0))
@@ -79,7 +92,12 @@ def render(src_path, boxes):
             continue
         tb = (xs.min(), ys.min(), xs.max(), ys.max())
         k = max(3, W // 400)
-        out = cv2.inpaint(out, cv2.dilate(text_px, np.ones((k, k), np.uint8), iterations=2), max(3, W // 300), cv2.INPAINT_TELEA)
+        mk = cv2.dilate(text_px, np.ones((k, k), np.uint8), iterations=2)
+        yy, xx = np.where(mk > 0)
+        if len(xx):  # 상자 둘레만 잘라서 메움 (그림 전체를 메우면 느림)
+            m_ = 24
+            a0, b0, a1, b1 = max(0, xx.min() - m_), max(0, yy.min() - m_), min(W, xx.max() + m_ + 1), min(H, yy.max() + m_ + 1)
+            out[b0:b1, a0:a1] = cv2.inpaint(out[b0:b1, a0:a1], mk[b0:b1, a0:a1], max(3, W // 300), cv2.INPAINT_TELEA)
         full = inner
         # 원래 글자 크기 재기: 글자 조각들의 높이 중앙값 (대문자 높이 ≈ 글자 크기의 0.7)
         n_, lab, st, _ = cv2.connectedComponentsWithStats(text_px)
@@ -89,15 +107,15 @@ def render(src_path, boxes):
             kk = W / 800
             for pt in b["parts"]:
                 r = [round(v * kk) for v in pt["rect"]]
-                layout.append((tuple(r), pt["ko"], pt.get("align", "center"), em))
+                layout.append((tuple(r), pt["ko"], pt.get("align", "center"), em, dark))
             continue
-        layout.append((inner_rect(full, tb), b["ko"], b.get("align", "left" if b.get("shape") == "box" else "center"), em))
+        layout.append((inner_rect(full, tb), b["ko"], b.get("align", "left" if b.get("shape") == "box" else "center"), em, dark))
     scale = 2 if W < 1600 else 1
     pil = Image.fromarray(cv2.cvtColor(out, cv2.COLOR_BGR2RGB))
     if scale > 1:
         pil = pil.resize((W * scale, H * scale), Image.LANCZOS)
     d = ImageDraw.Draw(pil)
-    for (x0, y0, x1, y1), ko, align, em in layout:
+    for (x0, y0, x1, y1), ko, align, em, dark in layout:
         pad = max(2, W // 500)
         X0, Y0, X1, Y1 = [v * scale for v in (x0 + pad, y0 + pad, x1 - pad, y1 - pad)]
         cap = int(W * scale / 24)
@@ -108,7 +126,7 @@ def render(src_path, boxes):
         for l in lines:
             lw = d.textlength(l, font=f)
             x = X0 if align == "left" else X0 + ((X1 - X0) - lw) / 2
-            d.text((x, y), l, font=f, fill=INK)
+            d.text((x, y), l, font=f, fill=(245, 240, 230) if dark else INK)
             y += lh
     return pil
 

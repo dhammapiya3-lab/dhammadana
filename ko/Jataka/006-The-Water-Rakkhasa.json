@@ -1,0 +1,390 @@
+[
+ {
+  "img": "images/006-The-Water-Rakkhasa-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     319,
+     270
+    ],
+    "shape": "box",
+    "en": "The True Deva-Nature Tale of Three Princes and the Water Rakkhasa",
+    "ko": "참된 천신의 성품\n세 왕자와 물의 락카사 이야기"
+   }
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     102,
+     366
+    ],
+    "shape": "box",
+    "en": "In ancient Kasi, the King had two sons: Mahimsasa Ig (the Bodhisatta) ont and nos Candakumara. 4 IS After their mother died, died, the King’s new Queen bore him Siriyakumara, ara, extracting binding promise from the overjoyed monarch.",
+    "ko": "옛 까시국의 왕에게는 마힘사사(보살)와 짠다 두 왕자가 있었습니다. 어머니가 세상을 떠난 뒤 새 왕비가 수리야 왕자를 낳았고, 크게 기뻐한 왕에게서 소원 하나를 들어주겠다는 약속을 받아 냈습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     118,
+     93
+    ],
+    "shape": "box",
+    "en": "Years later, the Queen demanded her boon the throne for Striyakumara. The King refused. Fearing the Queen’s wicked plots, he ordered his elder sons into exile. fis",
+    "ko": "세월이 흘러 왕비는 그 약속을 내세워 수리야 왕자에게 왕위를 달라고 했습니다. 왕은 거절했지만, 왕비가 음모를 꾸밀까 두려워 큰아들들을 멀리 떠나보냈습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     134,
+     84
+    ],
+    "shape": "bubble",
+    "en": "‘Retire to the forest,” the King wept, ‘return only at my death.”",
+    "ko": "“숲으로 가 있거라.” 왕이 울며 말했습니다. “내가 죽거든 그때 돌아오너라.”"
+   },
+   {
+    "seed": [
+     95,
+     386
+    ],
+    "shape": "box",
+    "en": "As the brothers departed, loyal Suriyakumara ara saw them leaving Las] and chose 8 to share their exile in the Himalayas. Tas]",
+    "ko": "형들이 떠날 때, 마음 착한 수리야 왕자가 그 모습을 보고 형들과 함께 히말라야로 가기로 했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     172,
+     219
+    ],
+    "shape": "box",
+    "en": "Deep in the forest, Mahimsasa an sent Suriya for water. Unknown to them, the deity Vessavana had granted this pool to Water Rakklasa, bound by strict condition.",
+    "ko": "깊은 숲속에서 마힘사사는 수리야에게 물을 떠 오라고 보냈습니다. 그들은 몰랐지만, 웻사와나 천왕이 이 못을 물의 락카사에게 주면서 엄한 조건을 붙여 두었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     313,
+     81
+    ],
+    "shape": "box",
+    "en": "The Rakkhasa’s Rule:",
+    "ko": "락카사가 지킬 규칙:"
+   },
+   {
+    "seed": [
+     93,
+     385
+    ],
+    "shape": "bubble",
+    "en": "He may devour anyone entering the water who does not know the “true Deva-nature.” Those who know it, or stay on land, are safe.",
+    "ko": "‘참된 천신의 성품’을 모르는 채 물에 들어오는 자는 잡아먹어도 된다. 그것을 아는 자나 뭍에 있는 자는 해치지 못한다."
+   }
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     123,
+     66
+    ],
+    "shape": "box",
+    "en": "Suriya entered the water. water 4 The Rakkhasa struck!",
+    "ko": "수리야가 물에 들어서자 락카사가 덮쳤습니다!"
+   },
+   {
+    "seed": [
+     646,
+     189
+    ],
+    "shape": "bubble",
+    "en": "“The sun and moon!” Siriya guessed.",
+    "ko": "“해와 달이요!” 수리야가 짐작해 말했습니다."
+   },
+   {
+    "seed": [
+     155,
+     145
+    ],
+    "ko": "“참된 천신의 성품이 무엇이냐?”",
+    "dark": true,
+    "shape": "bubble",
+    "manual": true
+   },
+   {
+    "seed": [
+     600,
+     325
+    ],
+    "ko": "“모르는구나!” 괴물이 으르렁대며 그를 물속 감옥으로 끌고 갔습니다.",
+    "dark": true,
+    "shape": "bubble",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     132,
+     82
+    ],
+    "shape": "box",
+    "en": "When Siriya didn’t return, Mahimsasa sent ent Canda. He too was seized",
+    "ko": "수리야가 돌아오지 않자 마힘사사는 짠다를 보냈습니다. 짠다도 붙잡혔습니다."
+   },
+   {
+    "seed": [
+     619,
+     260
+    ],
+    "shape": "bubble",
+    "en": "The four quarters of heaven",
+    "ko": "하늘의 네 방위요."
+   },
+   {
+    "seed": [
+     276,
+     386
+    ],
+    "shape": "box",
+    "en": "He, too, was dragged into the abys:",
+    "ko": "짠다도 깊은 물속으로 끌려갔습니다."
+   },
+   {
+    "seed": [
+     185,
+     162
+    ],
+    "ko": "“참된 천신의 성품이 무엇이냐?”",
+    "dark": true,
+    "shape": "bubble",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     163,
+     369
+    ],
+    "shape": "box",
+    "en": "Realizing his brothers were missing, the Bodhisatta tracked them. Footprints entered the water, but none returned. Grasping his sword and bow, he waited safely on the bank.",
+    "ko": "동생들이 사라진 것을 안 보살은 발자국을 따라갔습니다. 발자국은 물로 들어갔지만 나온 것은 없었습니다. 보살은 칼과 활을 쥐고 물가에서 조심스레 기다렸습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     336,
+     91
+    ],
+    "shape": "box",
+    "en": "The Rakkhasa disguised himself as forester.",
+    "ko": "락카사는 숲지기로 변장했습니다."
+   },
+   {
+    "seed": [
+     301,
+     148
+    ],
+    "shape": "bubble",
+    "en": "“Bathe and drink, mate!” he coaxed.",
+    "ko": "“목욕도 하고 물도 마시게, 친구!” 그가 꾀었습니다."
+   },
+   {
+    "seed": [
+     414,
+     157
+    ],
+    "shape": "bubble",
+    "en": "You took my brothers. will tell you the true Deva-nature.",
+    "ko": "네가 내 동생들을 데려갔구나. 참된 천신의 성품을 말해 주겠다."
+   },
+   {
+    "seed": [
+     422,
+     333
+    ],
+    "shape": "box",
+    "en": "Recognizing Tica Recognizing the demon, the Bodhisatta declared:",
+    "ko": "악귀를 알아본 보살이 말했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     341,
+     96
+    ],
+    "shape": "bubble",
+    "en": "am travel-stained,” the Bodhisatta noted.",
+    "ko": "“나는 먼 길을 오느라 몸이 더럽소.” 보살이 말했습니다."
+   },
+   {
+    "seed": [
+     230,
+     364
+    ],
+    "shape": "box",
+    "en": "Desperate for the truth, the monster bathed him, served him food, and prepared beautiful pavilion. The predator became the servant. aA",
+    "ko": "진리가 몹시 알고 싶었던 괴물은 보살을 씻기고 음식을 대접하고 아름다운 정자를 마련했습니다. 사냥꾼이 시중드는 이가 되었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     193,
+     64
+    ],
+    "shape": "box",
+    "en": "Seated above the demon, the Bodhisatta revealed the sacred truth:",
+    "ko": "악귀보다 높은 자리에 앉아 보살은 거룩한 진리를 밝혔습니다."
+   },
+   {
+    "seed": [
+     340,
+     163
+    ],
+    "shape": "bubble",
+    "en": "“Hiri-ottappasampanna, sukkadhammasamahita",
+    "ko": "“히리옷땁빠삼빤나, 숙까담마사마히따…”"
+   }
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     172,
+     385
+    ],
+    "shape": "box",
+    "en": "Endowed with conscience and concern, possessing an unsullied nature—these jature—these virtuous people in the world are said to have Deva-nature. wena",
+    "ko": "양심과 수치심을 갖추고 깨끗한 법을 지닌 세상의 고요한 참사람들, 그들을 ‘천신의 성품을 지닌 이’라 부른다."
+   },
+   {
+    "rect": [
+     168,
+     62,
+     632,
+     112
+    ],
+    "ellipse": true,
+    "align": "center",
+    "ko": "“…산또 삽뿌리사 로께, 데와담마 띠 웃짜레 띠.”",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-14-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     350,
+     47
+    ],
+    "shape": "box",
+    "en": "Test Analyzed; ize:",
+    "ko": "시험 풀이"
+   },
+   {
+    "seed": [
+     273,
+     397
+    ],
+    "shape": "box",
+    "en": "“True divinity 1S moral purity.",
+    "ko": "참된 신성은 도덕적 청정입니다."
+   },
+   {
+    "rect": [
+     138,
+     226,
+     312,
+     294
+    ],
+    "align": "left",
+    "manual": true,
+    "shape": "box",
+    "ko": "• 수리야: 해와 달\n(물질·바깥)\n— 실패"
+   },
+   {
+    "rect": [
+     320,
+     226,
+     492,
+     294
+    ],
+    "align": "left",
+    "manual": true,
+    "shape": "box",
+    "ko": "• 짠다: 네 방위\n(공간·바깥)\n— 실패"
+   },
+   {
+    "rect": [
+     500,
+     226,
+     670,
+     304
+    ],
+    "align": "left",
+    "manual": true,
+    "shape": "box",
+    "ko": "• 보살: 양심과 수치심\n(안·도덕)\n— 통달"
+   }
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-15-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     634,
+     368
+    ],
+    "shape": "box",
+    "en": "Through wisdom and caution, the Bodhisatta conquered the demon without striking blow. TED By understanding the inner truth of conscience eas (hiri) and moral concern (ottappa), he saved everyone.",
+    "ko": "보살은 지혜와 신중함으로 칼 한 번 휘두르지 않고 악귀를 이겼습니다. 양심(히리)과 수치심(옷땁빠)이라는 내면의 진리를 이해했기에 모두를 구할 수 있었습니다."
+   }
+  ]
+ }
+]
