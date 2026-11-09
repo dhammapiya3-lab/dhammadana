@@ -13,7 +13,7 @@ PDF 쪽 = 인쇄된 쪽 (528쪽). PDF 파일은 사이트에 올리지 않고 �
 소제목: 명조 큰 글씨(17.5·19.5)·고딕 제목 줄은 '## '. 굵은 명조는 **굵게**.
 각주: 위첨자 번호 [^n], 쪽 아래 각주 [^n]: … (다음 쪽으로 넘어간 각주는 앞 각주에 이어 붙임).
 """
-import fitz, json, re, sys
+import collections, fitz, json, re, sys
 pdf = sys.argv[1]
 bk, ED = 'DL-0017', '개정판 2쇄'
 src = fitz.open(pdf)
@@ -25,6 +25,9 @@ DRAWN = {(59, 302, 253): '辟', (60, 212, 351): '辟', (429, 350, 215): '羯',
 SUP = str.maketrans('0123456789', '⁰¹²³⁴⁵⁶⁷⁸⁹')
 HEADF = re.compile(r'YDVYGOStd1[345]|NanumGothic')
 fixes = []
+JOINLOG = []
+# 폭이 우연히 인용 산문과 같은 게송 줄 (눈으로 확인, 2026-11-09): (쪽, 줄 위치)
+VERSE_KEEP = {(119, 115), (354, 524)}
 
 
 def ntext(t):
@@ -127,6 +130,25 @@ def body_paras(n, body, left=None, right=None):
     gl, gr = geom(n)
     left = gl if left is None else left; right = gr if right is None else right
     paras, cur, prev, verse, hang = [], None, None, False, None
+    # 인용 산문 가리기: 들여 짠 명조 글을 묶음(빈 줄·들여쓰기로 나뉨)마다 보고,
+    # 마지막 줄 말고 모든 줄이 같은 오른쪽 끝(±4, 거의 꽉 찬 폭)에서 끝나는 줄이 둘 이상이면 양끝 맞춤된 산문 → 이어 붙임
+    groups, g = [], []
+    for i, a in enumerate(body):
+        q = body[i - 1] if i else None
+        if not a.get('verse'): g = []; continue
+        if not g or q is None or not q.get('verse') or a['y0'] - q['y1'] > max(8.0, q['y1'] - q['y0']) * 1.2 or a['x0'] - q['x0'] >= 6:
+            g = []; groups.append(g)
+        g.append(a)
+    for g in groups:
+        base = min(a['x0'] for a in g); inner = g[:-1]
+        if len(inner) >= 2:
+            edge = max(a['x1'] for a in inner)
+            if edge - base >= 225 and all(abs(a['x1'] - edge) <= 4 for a in inner):
+                for a in g[1:]: a['qjoin'] = True
+        # 묶음 안에서도: 앞 줄이 인용 산문 폭(왼쪽 끝 + 235~241)에서 꽉 차게 끝나면 이어 붙임
+        for q, a in zip(g, g[1:]):
+            if base + 235 <= q['x1'] <= base + 241 and not a.get('qjoin') and (n, round(q['y0'])) not in VERSE_KEEP:
+                a['qjoin'] = True; JOINLOG.append((q['t'][-15:], a['t'][:12]))
     for a in body:
         t = a['t']
         if a['head']:
@@ -146,8 +168,13 @@ def body_paras(n, body, left=None, right=None):
         mark = MARK.match(a['raw']) is not None
         if hang is None and not pshort and MARK.match(prev['raw']) and a['x0'] > prev['x0'] + 3:
             hang = a['x0']  # 글머리 문단의 둘째 줄(내어쓰기)
-        if a.get('verse') and prev.get('verse') and gap <= lh * 1.2 and abs(a['x0'] - prev['x0']) < 3:
-            cur = cur.rstrip() + '\n' + t; verse = True  # 게송 줄은 인쇄된 줄 그대로
+        if a.get('verse') and prev.get('verse') and gap <= lh * 1.2 and a['x0'] - prev['x0'] >= 6:
+            paras.append(cur); cur = t; verse = False  # 인용문 안의 들여 쓴 줄 = 새 문단
+        elif a.get('verse') and prev.get('verse') and gap <= lh * 1.2 and prev['x0'] - a['x0'] < 12:
+            if a.get('qjoin'):
+                cur = cur + t  # 양끝 맞춤된 인용 산문: 꽉 찬 줄 다음은 이어 붙임
+            else:
+                cur = cur.rstrip() + '\n' + t; verse = True  # 게송 줄은 인쇄된 줄 그대로
         elif hang is not None and abs(a['x0'] - hang) < 2 and not mark and gap <= lh * 1.2:
             cur = (cur.rstrip() + '\n' + t) if pshort else cur + t
         elif 6 <= a['x0'] - left <= 10 and not a.get('verse'):
@@ -304,3 +331,5 @@ json.dump({'book': bk, 'edition': ED, 'toc': toc, 'images': [], 'body': body},
 open(f'content/texts/{bk}.json', 'a').write('\n')
 print(N, '쪽', len(toc), '목차')
 for f in dict.fromkeys(fixes): print('  ·', f)
+if '--joins' in sys.argv:
+    for j in JOINLOG: print('  이어 붙임:', j)
