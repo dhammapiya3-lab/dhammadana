@@ -29,3 +29,4 @@ books 46 stories 918 images 13186
 044-The-Son-and-the-Mosquito.htm: 그림 13 상자 12 상자밖글 27
 048-The-Rain-of-Ruin.htm: 그림 15 상자 24 상자밖글 35
 049-The-Lucky-Star.htm: 그림 14 상자 9 상자밖글 136
+050-The-Kings-Stratagem.htm: 그림 15 상자 15 상자밖글 40
