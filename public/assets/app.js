@@ -673,13 +673,14 @@ async function initReaderPage() {
   };
   if (!pages.some(p => p.text)) R.view = 'page';
   renderReader();
+  if (root.dataset.audio) abLoad(root.dataset.audio);  // 오디오북이 있는 책만 🎧 단추
   saveBookOffline(id, man);
   if ('serviceWorker' in navigator && navigator.serviceWorker.controller && !store.get('off-' + id)) { store.set('off-' + id, 1); setTimeout(() => toast('이 책을 이 기기에 저장했습니다. 이제 인터넷 없이도 읽을 수 있습니다'), 1500); }
   if (!want && last > 1) toast(`지난번에 읽던 ${pageName(R.pages[R.i])}을 열었습니다`);
 }
 const pageName = p => p.label ? `${p.label}쪽` : `${p.n}번째 쪽`;
 document.addEventListener('fullscreenchange', () => { const b = $('#rFull'); if (b) { const on = !!document.fullscreenElement; b.textContent = on ? '⛶ 전체 화면 끄기' : '⛶ 전체 화면'; b.setAttribute('aria-pressed', on); } });
-function closeReader() { try { if (document.fullscreenElement) document.exitFullscreen(); } catch (e) {} stopSpeak(); R = null; const el = $('#reader'); if (el) el.remove(); document.body.style.overflow = ''; }
+function closeReader() { try { if (document.fullscreenElement) document.exitFullscreen(); } catch (e) {} stopSpeak(); abStop(); R = null; const el = $('#reader'); if (el) el.remove(); document.body.style.overflow = ''; }
 function exitReader() { if (R && R.ttsLocked) { toast('듣기가 잠겨 있습니다. 🔒 잠김 단추를 눌러 풀어 주세요'); return; } const id = R && R.id; closeReader(); location.href = '/book/' + id + '/'; }
 // 빈 줄 = 문단 나눔, 문단 안의 한 줄 바꿈 = 줄 바꿈(게송·회향문처럼 인쇄된 대로)
 const paras = t => String(t || '').split(/\n\s*\n/).map(s => s.trim().split('\n').map(l => l.trim()).join('\n')).filter(Boolean);
@@ -777,7 +778,7 @@ function renderReader() {
     <div class="r-tools">
       ${R.toc.length ? '<button class="tbtn" data-panel="toc">목차</button>' : ''}${hasText ? '<button class="tbtn" data-panel="find" aria-label="본문 검색">🔍 찾기</button>' : ''}
       <button class="tbtn" data-panel="font" aria-label="글씨 크기">가<span style="font-size:16px">가</span></button>
-      ${hasText && R.speaking ? `<button class="tbtn ${R.ttsLocked ? 'on' : ''}" id="rLock" aria-pressed="${!!R.ttsLocked}" title="잠그면 실수로 멈추지 않습니다">${R.ttsLocked ? '🔒 잠김' : '🔓 잠금'}</button>` : ''}${hasText ? `<button class="tbtn ${R.speaking ? 'on' : ''}" id="rSpeak" ${R.ttsLocked ? 'disabled' : ''}>${R.speaking ? '■ 멈춤' : '▶ 듣기'}</button><button class="tbtn" data-panel="tts" aria-label="듣기 설정">듣기 설정</button>` : ''}
+      ${hasText && R.speaking ? `<button class="tbtn ${R.ttsLocked ? 'on' : ''}" id="rLock" aria-pressed="${!!R.ttsLocked}" title="잠그면 실수로 멈추지 않습니다">${R.ttsLocked ? '🔒 잠김' : '🔓 잠금'}</button>` : ''}${R.ab ? `<button class="tbtn ${AB.on && !abA().paused ? 'on' : ''}" id="rAb" data-tip="${AB_TIP}" aria-label="오디오북 듣기 (${AB_TIP})">${AB.on && !abA().paused ? '❚❚ 오디오북' : '🎧 오디오북'}</button>` : ''}${hasText ? `<button class="tbtn ${R.speaking ? 'on' : ''}" id="rSpeak" ${R.ttsLocked ? 'disabled' : ''}>${R.speaking ? '■ 멈춤' : '▶ 듣기'}</button><button class="tbtn" data-panel="tts" aria-label="듣기 설정">듣기 설정</button>` : ''}
       <button class="tbtn" data-panel="mode">화면</button>${document.fullscreenEnabled ? `<button class="tbtn" id="rFull" aria-pressed="${!!document.fullscreenElement}" title="F11 처럼 화면 가득 보기 (Esc 로 나가기)">${document.fullscreenElement ? '⛶ 전체 화면 끄기' : '⛶ 전체 화면'}</button>` : ''}
       <button class="tbtn ${marked ? 'on' : ''}" id="rMark" aria-pressed="${marked}">${marked ? '★ 책갈피' : '☆ 책갈피'}</button>
       <button class="tbtn" data-panel="bm">책갈피 목록</button>
@@ -818,11 +819,12 @@ function renderReader() {
   if (R.view === 'text') { const c = chapters()[Math.max(0, chapterOf(n))]; const pm = $('#pm-' + n); if (pm && n !== c.from) pm.scrollIntoView({ block: 'start' }); else $('#rBody').scrollTop = 0; }
   // 다음 쪽 그림 미리 받기
   const nx = R.pages[R.i + 1]; if (nx && nx.img && R.view === 'page') { const im = new Image(); im.src = nx.img; }
+  if (AB.on) { el.classList.add('ab-on'); abMark(!AB.detached && Date.now() - AB.userAt > 8000); }
   store.set('pos-' + R.id, n);
   saveHistory(n);
   history.replaceState(history.state, '', `/read/${R.id}/${n}` + location.search);
 }
-function go(n, ci) { if (!R) return; if (R.ttsLocked) { toast('듣기가 잠겨 있습니다. 🔒 잠김 단추를 눌러 풀어 주세요'); return; } R.chForce = ci == null || isNaN(ci) ? null : ci; R.i = Math.max(0, Math.min(R.pages.length - 1, n - 1)); stopSpeak(); renderReader(); if (R.view === 'page') $('#rBody').scrollTop = 0; }
+function go(n, ci) { if (!R) return; if (R.ttsLocked) { toast('듣기가 잠겨 있습니다. 🔒 잠김 단추를 눌러 풀어 주세요'); return; } if (AB.on) AB.detached = true; /* 직접 다른 곳으로 가면 오디오북 따라가기를 멈춤 (📍 로 다시) */ R.chForce = ci == null || isNaN(ci) ? null : ci; R.i = Math.max(0, Math.min(R.pages.length - 1, n - 1)); stopSpeak(); renderReader(); if (R.view === 'page') $('#rBody').scrollTop = 0; }
 const immersive = () => matchMedia('(max-width:700px)').matches;
 function bindReader() {
   const el = $('#reader');
@@ -962,6 +964,7 @@ function bindReader() {
   $$('[data-bmdel]', el).forEach(b => b.onclick = () => { const l = bms(); l.splice(+b.dataset.bmdel, 1); store.set('bm', l); renderReader(); reopen('p-bm'); });
   // 전체 화면으로 보기 (컴퓨터, 운영자 요청 2026-11-10) — 다시 누르거나 Esc 로 나감
   const fb = $('#rFull'); if (fb) fb.onclick = () => { try { document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen(); } catch (e) { toast('이 브라우저에서는 전체 화면을 쓸 수 없습니다'); } };
+  const ab = $('#rAb'); if (ab) ab.onclick = () => { AB.on && !abA().paused ? abA().pause() : abStart(); };
   const sp = $('#rSpeak'); if (sp) sp.onclick = () => { if (R.ttsLocked) return toast('잠겨 있습니다. 🔒 잠김 단추를 눌러 풀어 주세요'); R.speaking ? stopSpeak(true) : speak(); };
   const lk = $('#rLock'); if (lk) lk.onclick = () => { R.ttsLocked = !R.ttsLocked; renderReader(); toast(R.ttsLocked ? '잠갔습니다. 실수로 멈추거나 닫히지 않습니다' : '잠금을 풀었습니다'); };
   $$('[data-tts]', el).forEach(inp => {
@@ -1405,6 +1408,7 @@ function tableLines(s) {
 // fromK: 그 쪽의 몇 번째 문단부터, firstText: 첫 문단은 이 글부터(고른 곳부터 읽기)
 function speak(fromK = 0, firstText = null) {
   if (!('speechSynthesis' in window)) { noVoice(); return; }
+  if (AB.on && !abA().paused) abA().pause();  // 오디오북과 기계 음성 듣기는 함께 쓰지 않음
   if (!LEX.pali) { toast('읽기를 준비하는 중입니다…'); loadLex().then(() => speak(fromK, firstText)); return; }
   const o = ttsOpt();
   const p = R.pages[R.i]; const sentences = paras(p.text);
@@ -1467,6 +1471,157 @@ document.addEventListener('visibilitychange', () => {
     toast('멈춘 곳부터 이어서 읽습니다'); speak(R.ttsPos.k);
   }, 600);
 });
+// ---- 오디오북 (운영자 요청, 2026-11-10) ----
+// 미리 만든 소리 파일(장마다 mp3)을 <audio> 로 틀어서 화면을 끄거나 다른 앱을 써도 계속 들림(백그라운드 재생).
+// /data/audio/<ID>.json 의 sync [[시작 초, 쪽 순번, 문단 순번], …] 로 지금 읽는 문단을 표시하고 따라감.
+const AB_TIP = '미리 만든 오디오북을 듣습니다. 화면을 끄거나 다른 앱을 써도 계속 들립니다 (백그라운드 재생)';
+const AB = { a: null, on: false, ci: -1, k: -1, userAt: 0, saved: 0 };
+function abA() {
+  if (AB.a) return AB.a;
+  const a = AB.a = new Audio(); a.preload = 'auto';
+  a.addEventListener('timeupdate', abTick);
+  a.addEventListener('play', () => { abUi(); wake(false, 'tts'); if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'playing'; });
+  a.addEventListener('pause', () => { abSave(); abUi(); if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'paused'; });
+  a.addEventListener('ended', abNext);
+  a.addEventListener('error', () => { if (a.src) toast('오디오북 파일을 불러오지 못했습니다. 인터넷 연결을 확인해 주세요'); });
+  return a;
+}
+// 장이 끝나면 다음 장으로 (브라우저가 mp3 끝을 늦게 알아차리는 때가 있어 장 길이(dur)를 넘으면 끝난 것으로 봄)
+function abNext() {
+  if (!R || !R.ab || !AB.on || AB.ending === AB.ci) return; AB.ending = AB.ci;
+  if (AB.ci < R.ab.chapters.length - 1) abPlay(AB.ci + 1, 0);
+  else { AB.a.pause(); store.set('abpos-' + R.id, null); toast('오디오북을 끝까지 들었습니다'); abUi(); }
+}
+async function abLoad(url) {
+  try { const j = await (await fetch(url)).json(); if (!R || !j.chapters || !j.chapters.length) return; R.ab = j; renderReader(); }
+  catch (e) { return; }
+  if (new URLSearchParams(location.search).get('audio')) { history.replaceState(history.state, '', location.pathname); abStart(); }
+}
+// 지금 화면 맨 위에 보이는 문단 → 오디오북 장·시간
+function abFromView() {
+  const chs = R.ab.chapters, body = $('#rBody'); let pg = R.i + 1, sv = -1;
+  if (body && R.view === 'text') {
+    const top = body.getBoundingClientRect().top + ($('#reader').classList.contains('chrome-off') ? 0 : ($('.r-top') || { offsetHeight: 0 }).offsetHeight);
+    const el = [...$$('#rBody p[data-pg]')].find(e => e.getClientRects().length && e.getBoundingClientRect().bottom > top + 10);
+    if (el) { pg = +el.dataset.pg; sv = +el.dataset.s; }
+  }
+  let ci = chs.findIndex(c => pg >= c.page && pg <= c.to);
+  if (ci < 0) { ci = chs.findIndex(c => c.page > pg); if (ci < 0) ci = chs.length - 1; return { ci, t: 0 }; }
+  const sy = chs[ci].sync; let k = 0;
+  sy.forEach(([t, p, s], i) => { if (p < pg || (p === pg && s <= sv)) k = i; });
+  return { ci, t: k ? sy[k][0] : 0, k };
+}
+function abStart() {
+  if (!R || !R.ab) return;
+  stopSpeak(true); AB.detached = false; AB.userAt = 0;
+  try { const pa = $('#pAudio'); if (pa && !pa.paused) pa.pause(); } catch (e) {}  // 법문 바로 듣기가 나오고 있으면 멈춤
+  const a = abA(), v = abFromView(), sv = store.get('abpos-' + R.id, null);
+  // 같은 문단에서 멈췄던 곳이면 멈춘 그 초부터
+  if (AB.on && a.src && AB.ci === v.ci && Math.abs(a.currentTime - v.t) < 600 && abIdx(R.ab.chapters[v.ci].sync, a.currentTime) === v.k) { a.play().catch(abBlocked); return; }
+  if (sv && sv.ci === v.ci && abIdx(R.ab.chapters[v.ci].sync, sv.t) === v.k) v.t = sv.t;
+  abPlay(v.ci, v.t);
+}
+const abBlocked = () => { abUi(); toast('▶ 단추를 누르면 오디오북이 시작됩니다'); };
+function abPlay(ci, t) {
+  const a = abA(), c = R.ab.chapters[ci];
+  AB.on = true; AB.ci = ci; AB.k = -1; AB.ending = -1;
+  if (a.dataset.u !== c.url) { a.dataset.u = c.url; a.src = c.url; }
+  const seek = () => { try { a.currentTime = t || 0; } catch (e) {} };
+  if (a.readyState >= 1) seek(); else a.addEventListener('loadedmetadata', seek, { once: true });
+  a.playbackRate = +store.get('abrate', 1) || 1;
+  abBar(); abMedia(c);
+  a.play().catch(abBlocked);
+  const el = $('#reader'); if (el) el.classList.add('ab-on');
+}
+const abIdx = (sy, t) => { let k = 0; for (let i = 0; i < sy.length && sy[i][0] <= t + 0.05; i++) k = i; return k; };
+function abTick() {
+  const a = AB.a; if (!AB.on || !R || !R.ab) return;
+  const c = R.ab.chapters[AB.ci]; if (!c) return;
+  if (c.dur && a.currentTime >= c.dur - 0.2 && !a.paused) { abNext(); return; }
+  $('#abCur') && ($('#abCur').textContent = fmtT(a.currentTime));
+  const sk = $('#abSeek'); if (sk && !sk._drag && a.duration) sk.value = a.currentTime / a.duration * 1000;
+  if (Date.now() - AB.saved > 5000) abSave();
+  const k = abIdx(c.sync, a.currentTime); if (k === AB.k) return;
+  AB.k = k;
+  const [, p] = c.sync[k];
+  // 읽는 분이 직접 넘기지 않았으면 글도 따라감 (다른 장으로 넘어가면 그 장을 엶)
+  const free = Date.now() - AB.userAt > 8000;
+  if (R.view === 'text' && free && !AB.detached && chapterOf(p) !== chapterOf(R.i + 1)) { R.chForce = null; R.i = p - 1; renderReader(); return; }
+  abMark(free && !AB.detached);
+}
+function abMark(follow) {
+  $$('.ab-now').forEach(x => x.classList.remove('ab-now'));
+  if (!AB.on || !R || !R.ab || AB.k < 0) return;
+  const c = R.ab.chapters[AB.ci]; if (!c || !c.sync[AB.k]) return;
+  const [, p, s] = c.sync[AB.k];
+  const el = s < 0 ? $('#rBody .ch-head h3') : $(`#rBody [data-pg="${p}"][data-s="${s}"]`);
+  if (!el) return;
+  el.classList.add('ab-now');
+  if (!follow || !el.getClientRects().length) return;
+  const body = $('#rBody'), br = body.getBoundingClientRect(), r = el.getBoundingClientRect();
+  const topPad = $('#reader').classList.contains('chrome-off') ? 12 : ($('.r-top') || { offsetHeight: 0 }).offsetHeight + 12;
+  const bar = $('#abBar'), botPad = (bar ? bar.offsetHeight : 0) + 24;
+  if (r.top < br.top + topPad || r.top > br.bottom - botPad - 40) body.scrollTo({ top: body.scrollTop + r.top - br.top - topPad - Math.max(0, (br.height - topPad - botPad) * 0.15), behavior: 'smooth' });
+}
+function abSave() { if (!AB.on || !R || !AB.a) return; AB.saved = Date.now(); store.set('abpos-' + R.id, { ci: AB.ci, t: Math.round(AB.a.currentTime) }); }
+function abStop() { if (!AB.a) return; abSave(); AB.a.pause(); AB.on = false; AB.k = -1; $$('.ab-now').forEach(x => x.classList.remove('ab-now')); const b = $('#abBar'); if (b) b.remove(); const el = $('#reader'); if (el) el.classList.remove('ab-on'); }
+function abBar() {
+  let b = $('#abBar');
+  if (!b) {
+    b = document.createElement('div'); b.id = 'abBar'; b.className = 'ab-bar'; b.setAttribute('role', 'region'); b.setAttribute('aria-label', '오디오북 재생기');
+    b.innerHTML = `<div class="ab-ctr"><button id="abBack" aria-label="15초 뒤로" title="15초 뒤로">↺15</button><button id="abPlay" class="main" aria-label="재생">▶</button><button id="abFwd" aria-label="15초 앞으로" title="15초 앞으로">15↻</button></div>
+      <div class="ab-mid"><div class="ab-t" id="abTitle"></div><div class="ab-row"><span id="abCur">0:00</span><input type="range" id="abSeek" min="0" max="1000" value="0" aria-label="재생 위치"><span id="abDur">0:00</span></div></div>
+      <div class="ab-opt"><select id="abRate" aria-label="빠르기">${[0.8, 1, 1.2, 1.5, 1.8, 2].map(v => `<option value="${v}">${v}배</option>`).join('')}</select><button id="abHere" title="지금 듣는 곳의 글로 가기" aria-label="듣는 곳으로">📍</button><button id="abClose" title="오디오북 닫기" aria-label="오디오북 닫기">✕</button></div>`;
+    document.body.appendChild(b);
+    const a = abA();
+    $('#abPlay').onclick = () => a.paused ? (AB.on ? a.play().catch(abBlocked) : abStart()) : a.pause();
+    $('#abBack').onclick = () => { a.currentTime = Math.max(0, a.currentTime - 15); };
+    $('#abFwd').onclick = () => { a.currentTime = Math.min((a.duration || 1e9) - 1, a.currentTime + 15); };
+    $('#abRate').value = String(store.get('abrate', 1)); $('#abRate').onchange = e => { a.playbackRate = +e.target.value; store.set('abrate', +e.target.value); };
+    const sk = $('#abSeek');
+    sk.oninput = () => { sk._drag = true; if (a.duration) $('#abCur').textContent = fmtT(a.duration * sk.value / 1000); };
+    sk.onchange = () => { sk._drag = false; if (a.duration) a.currentTime = a.duration * sk.value / 1000; AB.userAt = 0; };
+    $('#abHere').onclick = () => { AB.userAt = 0; AB.detached = false; AB.k = -1; abTick(); };
+    $('#abClose').onclick = () => { abStop(); if (R) renderReader(); };
+    a.addEventListener('loadedmetadata', () => { const d = $('#abDur'); if (d) d.textContent = fmtT(a.duration); });
+  }
+  const c = R.ab.chapters[AB.ci];
+  $('#abTitle').textContent = `${AB.ci + 1}/${R.ab.chapters.length} · ${c.title}`;
+  $('#abDur').textContent = fmtT(c.dur);
+  abUi();
+}
+function abUi() {
+  const a = AB.a, pb = $('#abPlay'); if (pb && a) { pb.textContent = a.paused ? '▶' : '❚❚'; pb.setAttribute('aria-label', a.paused ? '재생' : '일시정지'); }
+  const rb = $('#rAb'); if (rb && a) { const on = AB.on && !a.paused; rb.classList.toggle('on', on); rb.textContent = on ? '❚❚ 오디오북' : '🎧 오디오북'; }
+}
+// 잠금 화면·이어폰·블루투스 단추로 조절
+function abMedia(c) {
+  if (!('mediaSession' in navigator)) return;
+  const ms = navigator.mediaSession, a = abA(), h = (k, f) => { try { ms.setActionHandler(k, f); } catch (e) {} };
+  try { ms.metadata = new MediaMetadata({ title: c.title, artist: R.title + (R.by ? ' · ' + R.by : ''), album: '붓다담마 법보시 도서관 · 오디오북', artwork: R.cover ? [{ src: R.cover, sizes: '512x512' }] : [{ src: '/images/icon-512.png', sizes: '512x512', type: 'image/png' }] }); } catch (e) {}
+  h('play', () => a.play()); h('pause', () => a.pause());
+  h('seekbackward', d => { a.currentTime = Math.max(0, a.currentTime - ((d && d.seekOffset) || 15)); });
+  h('seekforward', d => { a.currentTime = a.currentTime + ((d && d.seekOffset) || 15); });
+  h('seekto', d => { if (d && d.seekTime != null) a.currentTime = d.seekTime; });
+  h('previoustrack', () => { if (a.currentTime > 5 || AB.ci === 0) a.currentTime = 0; else abPlay(AB.ci - 1, 0); });
+  h('nexttrack', () => { if (R && R.ab && AB.ci < R.ab.chapters.length - 1) abPlay(AB.ci + 1, 0); });
+}
+// 읽는 분이 직접 글을 넘기면 8초 동안은 따라가지 않음
+['wheel', 'touchmove', 'keydown', 'pointerdown'].forEach(t => document.addEventListener(t, e => { if (AB.on && e.target && e.target.closest && e.target.closest('#reader')) AB.userAt = Date.now(); }, { passive: true }));
+// 마우스를 올리면 뜨는 짧은 안내 (data-tip)
+(() => {
+  let tip = null;
+  document.addEventListener('mouseover', e => {
+    const t = e.target.closest && e.target.closest('[data-tip]'); if (!t || !matchMedia('(hover:hover)').matches) return;
+    if (!tip) { tip = document.createElement('div'); tip.className = 'tipbox'; tip.setAttribute('role', 'tooltip'); document.body.appendChild(tip); }
+    tip.textContent = t.dataset.tip; tip.classList.add('show');
+    const r = t.getBoundingClientRect(), w = Math.min(280, innerWidth - 16); tip.style.maxWidth = w + 'px';
+    const tw = tip.offsetWidth, th = tip.offsetHeight;
+    tip.style.left = Math.max(8, Math.min(innerWidth - tw - 8, r.left + r.width / 2 - tw / 2)) + 'px';
+    tip.style.top = (r.bottom + 8 + th > innerHeight ? r.top - th - 8 : r.bottom + 8) + 'px';
+    t.addEventListener('mouseleave', () => tip.classList.remove('show'), { once: true });
+  });
+})();
 function stopSpeak(rerender) { try { speechSynthesis.cancel(); } catch (e) {} wake(false, 'tts'); if (R) { R.ttsTitled = null; R.ttsLocked = false; const was = R.speaking; R.speaking = false; if (rerender && was) renderReader(); } }
 document.addEventListener('keydown', e => {
   if (!R || e.target.matches('input,select,textarea')) return;

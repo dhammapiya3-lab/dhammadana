@@ -205,6 +205,20 @@ async function exists(url) {
   }
   await Promise.all(jobs);
 }
+const AB_TIP = '미리 만든 오디오북을 듣습니다. 화면을 끄거나 다른 앱을 써도 계속 들립니다 (백그라운드 재생)';
+// 오디오북 (운영자 요청, 2026-11-10): content/audiobooks/<ID>.json — 소리 파일이 파일 저장소에 모두 있을 때만 읽기 화면에 🎧 단추
+const AUDIO = {};
+if (fs.existsSync(C('audiobooks'))) {
+  const jobs = [];
+  for (const f of fs.readdirSync(C('audiobooks')).filter(f => /^DL-\d{4}\.json$/.test(f))) {
+    const a = JSON.parse(fs.readFileSync(C('audiobooks/' + f), 'utf8'));
+    if (!a.book || !(a.chapters || []).length) continue;
+    jobs.push(Promise.all(a.chapters.map(async c => {
+      try { const ac = new AbortController(); const to = setTimeout(() => ac.abort(), 10000); const r = await fetch(fileUrl(c.file), { method: 'HEAD', signal: ac.signal }); clearTimeout(to); return r.ok; } catch (e) { return false; }
+    })).then(oks => { if (oks.every(Boolean)) AUDIO[a.book] = a; else console.warn(`[오디오북 파일 없음] ${a.book}: ${oks.filter(x => !x).length}개 장의 소리 파일이 저장소에 없음 → 🎧 단추 숨김`); }));
+  }
+  await Promise.all(jobs);
+}
 
 /* ---------- 도구 ---------- */
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -550,7 +564,7 @@ for (const b of BOOKS) {
     <div class="people">${peopleLinks(b, b.byline, 'by')}${b.translator ? ' | ' + peopleLinks(b, b.translator, 'tr') : ''}</div>
     ${pubsOf(b).length ? `<div class="people publ">${pubsOf(b).map(x => `<a href="/library/?pub=${encodeURIComponent(x.key)}">${esc(x.name)}</a>${pubsOf(b).length > 1 ? (x.kinds.includes('종이책') ? ' 출간' : ' 전자책') : ' 출간'}`).join(' · ')}</div>` : ''}
     ${pl ? `<div style="margin:2px 0 8px"><a class="small" href="/dhammatalk/?pl=${pl.id}">▶ ${esc(t.name)}의 법문 바로 듣기</a></div>` : ''}
-    </div><aside class="d-side"><div class="get-box"><div class="gb-title">이 책 읽어보기</div><div class="actions">${e.reader ? `<a class="btn" href="/read/${b.id}/">온라인으로 읽기</a>` : ''}
+    </div><aside class="d-side"><div class="get-box"><div class="gb-title">이 책 읽어보기</div><div class="actions">${e.reader ? `<a class="btn" href="/read/${b.id}/">온라인으로 읽기</a>` : ''}${e.reader && AUDIO[b.id] ? `<a class="btn ghost ab-link" href="/read/${b.id}/?audio=1" data-tip="${esc(AB_TIP)}">🎧 오디오북 듣기</a>` : ''}
       ${f.filter(x => x.k !== '온라인 읽기').map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">${x.name} 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>${x.name} 내려받기</a>`).join('')}
       ${(b.stores || []).filter(x => x && /^https?:\/\//.test(String(x.url || '').trim())).map(x => `<a class="btn ghost" href="${esc(String(x.url).trim())}" target="_blank" rel="noopener">${esc((x.name || '').trim() ? x.name.trim() + ' 바로가기' : '인터넷 서점 바로가기')} ↗</a>`).join('')}
       ${!f.length ? `<div class="soon-box">파일을 준비하고 있습니다.<br><span class="small">소식에서 올라오는 대로 알려 드립니다.</span></div>` : ''}</div>
@@ -579,7 +593,7 @@ for (const b of BOOKS) {
   </div></div></div>`
   }));
   if (e.reader) put(`read/${b.id}/index.html`, layout({
-    title: `${b.title} 읽기`, nav: 'library', page: 'reader', body: `<div id="readerRoot" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}" data-title="${esc(b.title)}" data-byline="${esc(b.byline)}" data-teacher="${esc(t?.name || '')}" data-cover="${esc(b.cover ? (S.site_url || '').replace(/\/$/, '') + b.cover : '')}" data-kakao="${esc(S.kakao_js_key || '')}">
+    title: `${b.title} 읽기`, nav: 'library', page: 'reader', body: `<div id="readerRoot" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}" data-title="${esc(b.title)}" data-byline="${esc(b.byline)}" data-teacher="${esc(t?.name || '')}" data-cover="${esc(b.cover ? (S.site_url || '').replace(/\/$/, '') + b.cover : '')}" data-kakao="${esc(S.kakao_js_key || '')}"${AUDIO[b.id] ? ` data-audio="/data/audio/${b.id}.json"` : ''}>
     <div class="wrap prose"><p class="muted">읽기 화면을 불러오는 중입니다…</p><p><a href="/book/${b.id}/">← 책 정보로 돌아가기</a></p></div></div>`
   }));
 }
@@ -806,6 +820,8 @@ fs.writeFileSync(path.join(OUT, 'data/downloads.json'), JSON.stringify(DOWNLOADS
 fs.mkdirSync(path.join(OUT, 'texts'), { recursive: true });
 // 색인처럼 표로 된 자료: content/indexes/<자료번호>.json (본문의 [[색인]] 자리에 찾기·순서 바꾸기가 되는 표로 보임)
 const indexOf = id => { const f = C('indexes/' + id + '.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : null; };
+fs.mkdirSync(path.join(OUT, 'data/audio'), { recursive: true });
+for (const [id, a] of Object.entries(AUDIO)) fs.writeFileSync(path.join(OUT, 'data/audio', id + '.json'), JSON.stringify({ book: id, voice: a.voice || '', chapters: a.chapters.map(c => ({ ...c, url: fileUrl(c.file) })) }));
 for (const [id, t] of Object.entries(TEXTS)) { const ix = indexOf(id); fs.writeFileSync(path.join(OUT, 'texts', id + '.json'), JSON.stringify({ book: id, edition: t.edition, pages: t.pages, toc: t.toc, ...(t.say ? { say: t.say } : {}), ...(ix ? { index: { colnames: ix.colnames, parts: ix.parts } } : {}) })); }
 // 관리자 화면이 예전 설정(config.yml)을 기억하지 않도록 바뀔 때마다 주소 끝에 표시를 붙입니다.
 { const ai = path.join(OUT, 'admin', 'index.html'); if (fs.existsSync(ai)) fs.writeFileSync(ai, fs.readFileSync(ai, 'utf8').replace('/admin/config.yml"', `/admin/config.yml?v=${ver('admin/config.yml')}"`)); }

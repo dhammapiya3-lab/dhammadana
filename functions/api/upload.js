@@ -3,8 +3,9 @@ import { canWriteToken as canWrite } from './_auth.js';
 // 허락 확인: 관리자 화면에서 쓰는 GitHub 열쇠로 이 사이트 저장소에 '쓰기' 권한이 있는지 GitHub에 물어봅니다.
 const KEY_RE = /^(pdf|epub)\/DL-\d{4}\/[^/\\]{1,120}\.(pdf|epub)$/i;
 const READER_RE = /^reader\/DL-\d{4}\/[^/\\]{1,40}\/(manifest\.json|(p|big)\/\d{4}\.webp)$/;
-const okKey = k => KEY_RE.test(k) || READER_RE.test(k);
-const TYPES = { pdf: 'application/pdf', epub: 'application/epub+zip', webp: 'image/webp', json: 'application/json; charset=utf-8' };
+const AUDIO_RE = /^audio\/DL-\d{4}\/\d{2}\.mp3$/;  // 오디오북 장 소리 파일
+const okKey = k => KEY_RE.test(k) || READER_RE.test(k) || AUDIO_RE.test(k);
+const TYPES = { mp3: 'audio/mpeg', pdf: 'application/pdf', epub: 'application/epub+zip', webp: 'image/webp', json: 'application/json; charset=utf-8' };
 const json = (o, status = 200) => new Response(JSON.stringify(o), { status, headers: { 'content-type': 'application/json; charset=utf-8' } });
 
 export async function onRequestPost({ request, env }) {

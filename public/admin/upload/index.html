@@ -74,6 +74,16 @@
       <progress id="zprog" max="100" value="0" hidden style="margin-top:12px"></progress>
       <div id="zout"></div>
     </div>
+    <div class="card" id="abCard">
+      <h2>🎧 오디오북 올리기</h2>
+      <p class="note">위 <b>1. 책 고르기</b>에서 책을 고른 뒤, Claude가 만들어 드린 오디오북 소리 파일(<b>01_속표지.mp3</b>처럼 앞에 두 자리 번호가 붙은 mp3)을 <b>모두 한꺼번에</b> 골라 올리세요. 다 올라가면 몇 분 뒤 그 책의 읽기 화면에 '🎧 오디오북' 단추가 저절로 나타납니다.</p>
+      <div class="drop" id="adrop" tabindex="0" role="button"><b>여기를 눌러 mp3 파일들을 고르거나</b><br>끌어다 놓으세요</div>
+      <input type="file" id="afile" accept=".mp3,audio/mpeg" multiple hidden>
+      <div id="apicked" class="note" style="margin-top:10px"></div>
+      <button class="btn" id="ago" style="margin-top:12px;width:100%" disabled>올리기</button>
+      <progress id="aprog" max="100" value="0" hidden style="margin-top:12px"></progress>
+      <div id="aout"></div>
+    </div>
     <div class="card">
       <h2>창고 정리 (잘못 올라간 파일 지우기)</h2>
       <p class="note">책을 고르면 파일 창고에 있는 그 책의 파일 묶음이 나옵니다. <b>이름이 깨진 묶음</b>은 미리 골라져 있습니다. 지운 파일은 되살릴 수 없으니 확인하고 누르세요.</p>
@@ -209,6 +219,63 @@ $('#go').onclick=async()=>{
     pickBook();
   }catch(err){ show('err',esc(err.message)); }
   finally{ $('#prog').hidden=true; upd(); }
+};
+
+/* ---- 오디오북 소리 파일 (운영자 요청, 2026-11-10) ---- */
+let AFILES=[], AINFO=null;
+const ashow=(cls,html)=>{ $('#aout').innerHTML=`<div class="msg ${cls}">${html}</div>`; };
+function upBig(key,file,onp){
+  const send=(h,body,base,span)=>new Promise((res,rej)=>{ const x=new XMLHttpRequest(); x.open('POST','/api/upload');
+    x.setRequestHeader('authorization','Bearer '+TOKEN); x.setRequestHeader('x-key',encodeURIComponent(key)); for(const k in h) x.setRequestHeader(k,h[k]);
+    x.upload.onprogress=e=>{ if(e.lengthComputable) onp(base+e.loaded/e.total*span); };
+    x.onload=()=>{ let j={}; try{j=JSON.parse(x.responseText)}catch(e){} x.status===200&&j.ok?res(j):rej(new Error(j.error||('오류 '+x.status))); };
+    x.onerror=()=>rej(new Error('인터넷 연결을 확인해 주세요.')); x.send(body); });
+  const PART=20*1024*1024;
+  if(file.size<=90*1024*1024) return send({},file,0,1);
+  return (async()=>{ const {uploadId}=await send({'x-mp':'create'},'',0,0); const n=Math.ceil(file.size/PART), parts=[];
+    try{ for(let i=0;i<n;i++){ let p,err; for(let t=0;t<3&&!p;t++){ try{ p=await send({'x-mp':'part','x-upload-id':uploadId,'x-part':String(i+1)},file.slice(i*PART,(i+1)*PART),i/n,1/n); }catch(e){ err=e; } } if(!p) throw err; parts.push({partNumber:p.partNumber,etag:p.etag}); }
+      await send({'x-mp':'complete','x-upload-id':uploadId,'content-type':'application/json'},JSON.stringify(parts),1,0);
+    }catch(e){ try{ await send({'x-mp':'abort','x-upload-id':uploadId},'',0,0); }catch(_){} throw e; } })();
+}
+async function pickAudio(list){
+  AFILES=[...list].filter(f=>/\.mp3$/i.test(f.name)); $('#ago').disabled=true;
+  const id=$('#book').value; if(!id){ ashow('err','먼저 위 1번에서 책을 골라 주세요.'); return; }
+  const r=await gh(`/contents/content/audiobooks/${id}.json?ref=main&t=${Date.now()}`,{cache:'no-store'});
+  if(!r.ok){ ashow('err','이 책의 오디오북 정보가 아직 없습니다. Claude에게 오디오북 정보를 먼저 만들어 달라고 해 주세요.'); return; }
+  const j=await r.json(); AINFO={sha:j.sha,data:JSON.parse(dec(j.content))};
+  const want=AINFO.data.chapters.map(c=>String(c.n).padStart(2,'0')), got={};
+  for(const f of AFILES){ const m=f.name.normalize('NFC').match(/^(\d{2})(?:[_ .-]|\.mp3$)/); if(m) got[m[1]]=f; }
+  const miss=want.filter(n=>!got[n]), extra=AFILES.filter(f=>{const m=f.name.match(/^(\d{2})/); return !m||!want.includes(m[1]);});
+  AFILES=want.filter(n=>got[n]).map(n=>({n,file:got[n],key:`audio/${id}/${n}.mp3`}));
+  const mb=AFILES.reduce((a,x)=>a+x.file.size,0)/1048576;
+  $('#apicked').innerHTML=`고른 파일 ${AFILES.length}개 / 필요한 장 ${want.length}개 (${mb.toFixed(0)}MB)`+(miss.length?`<br><b style="color:#8A2E1C">빠진 장: ${miss.join(', ')}번</b>`:'')+(extra.length?`<br>번호가 맞지 않아 빼는 파일: ${extra.map(f=>esc(f.name)).join(', ')}`:'');
+  $('#aout').innerHTML=''; $('#ago').disabled=!AFILES.length;
+}
+const adrop=$('#adrop');
+adrop.onclick=()=>$('#afile').click(); adrop.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();$('#afile').click();}};
+$('#afile').onchange=e=>pickAudio(e.target.files);
+['dragenter','dragover'].forEach(t=>adrop.addEventListener(t,e=>{e.preventDefault();adrop.classList.add('over');}));
+['dragleave','drop'].forEach(t=>adrop.addEventListener(t,e=>{e.preventDefault();adrop.classList.remove('over');}));
+adrop.addEventListener('drop',e=>pickAudio(e.dataTransfer.files));
+$('#ago').onclick=async()=>{
+  if(!AFILES.length||!AINFO) return; const id=AINFO.data.book, list=AFILES.slice(), all=list.reduce((a,x)=>a+x.file.size,0);
+  $('#ago').disabled=true; $('#aprog').hidden=false; $('#aprog').value=0; let done=0;
+  try{
+    for(const x of list){ ashow('',`올리는 중… ${x.n}번 장 (${list.indexOf(x)+1} / ${list.length})`);
+      let ok=false, err; for(let t=0;t<3&&!ok;t++){ try{ await upBig(x.key,x.file,f=>{ $('#aprog').value=(done+x.file.size*f)/all*100; }); ok=true; }catch(e){ err=e; await new Promise(r=>setTimeout(r,1500)); } }
+      if(!ok) throw new Error(x.n+'번 장: '+(err&&err.message||'올리지 못했습니다'));
+      done+=x.file.size; $('#aprog').value=done/all*100; }
+    ashow('','다 올렸습니다. 사이트에 알리는 중…');
+    // 오디오북 정보에 올린 날을 적어 사이트를 다시 만들게 함 (빌드가 파일이 다 있는지 확인하고 🎧 단추를 켬)
+    let ok=false; for(let t=0;t<4&&!ok;t++){ if(t) await new Promise(r=>setTimeout(r,1500*t));
+      const r=await gh(`/contents/content/audiobooks/${id}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); const j=await r.json(); const d=JSON.parse(dec(j.content));
+      d.uploaded=new Date().toISOString().slice(0,10);
+      const put=await gh(`/contents/content/audiobooks/${id}.json`,{method:'PUT',headers:{'content-type':'application/json'},body:JSON.stringify({message:`오디오북 소리 파일 올림: ${id}`,content:enc(JSON.stringify(d)+'\n'),sha:j.sha,branch:'main'})});
+      ok=put.ok; }
+    ashow('ok',`다 됐습니다! ${list.length}개 장을 올렸습니다. 3~5분 뒤 <a href="/read/${id}/" target="_blank" rel="noopener">읽기 화면 ↗</a>에 '🎧 오디오북' 단추가 나타납니다.`+(ok?'':'<br>(사이트에 알리는 것은 실패했습니다. Claude에게 알려 주세요.)'));
+    AFILES=[]; $('#apicked').textContent=''; $('#afile').value='';
+  }catch(e){ ashow('err',esc(e.message)+'<br>같은 파일들을 다시 골라 한 번 더 올려 주세요.'); }
+  finally{ $('#aprog').hidden=true; $('#ago').disabled=!AFILES.length; }
 };
 
 /* ---- 온라인 읽기 묶음(zip) ---- */

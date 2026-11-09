@@ -25,6 +25,7 @@ lib.LEX.pali = words('pali-words.txt'); lib.LEX.en = words('en-words.txt');
 const OPT = { pali: true, gloss: flags.includes('--gloss'), en: true, hanja: false, fn: false, sym: false, paren: true, brack: true, enVoice: false };
 const t = JSON.parse(fs.readFileSync(path.join(root, 'content/texts', ID + '.json'), 'utf8'));
 // 오디오북에서만 바꿔 읽을 곳(책 본문은 그대로): 텍스트 JSON 의 audio_fix [[찾을 글, 바꿀 글], …] — 영어 이름을 한글 소리로, 읽을 수 없는 일본어 제목 빼기 등 (운영자와 상의해 정함)
+const origParts = t.body.split(/^=== (.+?) ===$/m);  // 고치기(audio_fix) 전 글 — 읽기 화면 문단 번호를 알아내는 데 씀
 for (const [a, b] of (t.audio_fix || [])) t.body = t.body.split(a).join(b);
 const parts = t.body.split(/^=== (.+?) ===$/m); // [앞, 이름1, 글1, 이름2, 글2 …]
 const pages = []; for (let i = 1; i < parts.length; i += 2) pages.push({ label: parts[i], text: parts[i + 1] || '' });
@@ -90,15 +91,18 @@ const sayNum = s => s.replace(/(\d)\s?:\s?(?=\d)/g, '$1, ').replace(/\d+(?=(\s?)
   return sino(d); });
 top.forEach((c, k) => {
   const from = c.page, to = (top[k + 1] ? top[k + 1].page : pages.length + 1) - 1;
-  const paras = []; let lastHead = false;
+  const paras = [], map = []; let lastHead = false;
+  const push = (x, p, s) => { paras.push(x); map.push([p, s]); };
   for (let p = from; p <= to; p++) {
     const txt = (pages[p - 1] || {}).text || '';
+    const orig = (origParts[2 * p] || '').split(/\n{2,}/);  // 읽기 화면의 문단 번호 = 빈 줄로 나눈 것 중 비지 않은 것의 순서
+    const rIdx = pi => orig.slice(0, pi).filter(x => x.trim()).length;
     let first = true;
     txt.split(/\n{2,}/).forEach((par, pi) => {
       par = par.trim(); if (!par) return;
       if (pi > 0 || !/\S/.test(par)) first = false;
-      if (/^!\[/.test(par)) { const src = (par.match(/\]\(([^)\s]+)\)/) || [])[1]; if (t.say && t.say[src]) t.say[src].split('\n').filter(x => x.trim()).forEach(x => paras.push(lib.sayable(x, OPT))); return; }  // 그림: 소리로 읽을 글(say)이 있으면 그것만
-      if (/^\[\^[^\]]+\]:/.test(par)) { if (flags.includes('--footnotes')) paras.push('각주. ' + lib.sayable(par.replace(/^\[\^[^\]]+\]:\s*/, ''), OPT)); return; }
+      if (/^!\[/.test(par)) { const src = (par.match(/\]\(([^)\s]+)\)/) || [])[1]; if (t.say && t.say[src]) t.say[src].split('\n').filter(x => x.trim()).forEach(x => push(lib.sayable(x, OPT), p, rIdx(pi))); return; }  // 그림: 소리로 읽을 글(say)이 있으면 그것만
+      if (/^\[\^[^\]]+\]:/.test(par)) { if (flags.includes('--footnotes')) push('각주. ' + lib.sayable(par.replace(/^\[\^[^\]]+\]:\s*/, ''), OPT), p, rIdx(pi)); return; }
       if (/^\|/.test(par)) return;                                    // 표
       if (/^\[\[.*\]\]$/.test(par)) return;                           // [[색인]] 같은 자리표
       // 한글과 같은 뜻으로 덧붙인 원어 풀이는 읽지 않음 (운영자 요청, 2026-11-09):
@@ -119,18 +123,20 @@ top.forEach((c, k) => {
       if (!said) return;
       // 쪽이 바뀌며 끊긴 문장은 앞 문단에 이어 붙임 (쪽 첫 문단이고, 앞 문단이 문장 끝맺음 없이 끝났을 때)
       if (first && paras.length && !lastHead && !END.test(paras[paras.length - 1])) paras[paras.length - 1] += ' ' + said;
-      else paras.push(said);
+      else push(said, p, rIdx(pi));
       lastHead = /^## /.test(par); first = false;
     });
   }
   // 장 첫머리에 장 제목과 같은 글이 또 있으면 한 번만 (사이트 듣기와 같음)
   const title = lib.sayable(c.title, OPT);
-  while (paras.length && (same(paras[0], c.title) || same(paras[0], title))) paras.shift();
+  while (paras.length && (same(paras[0], c.title) || same(paras[0], title))) { paras.shift(); map.shift(); }
   if (SKIP.test(c.title.replace(/\s/g, '')) && !flags.includes('--all')) { skipped.push(c.title); return; }
   if (!paras.length && !title) return;
   n++;
   const name = String(n).padStart(2, '0') + '_' + c.title.replace(/[\u3400-\u9FFF]+/g, '').replace(/[\\/:*?"<>|]/g, '').slice(0, 40).trim() + '.txt';
   fs.writeFileSync(path.join(outDir, name), [title, ...paras].map(sayNum).join('\n\n') + '\n');
+  // 소리 문단 → 읽기 화면 자리 [쪽 순번, 문단 순번] (첫 줄 = 장 제목 → 장 처음, 문단 -1) — 오디오북을 들으며 글 따라가기에 씀
+  fs.writeFileSync(path.join(outDir, name.replace(/\.txt$/, '.map.json')), JSON.stringify({ title: c.title, page: from, to, map: [[from, -1], ...map] }));
 });
 const tsv = ['원문\t소리', ...[...changes].sort((x, y) => x[0].localeCompare(y[0])).map(([w, s]) => `${w}\t${s}`)].join('\n');
 fs.writeFileSync(path.join(outDir, '빨리어_소리_확인.tsv'), tsv + '\n');
