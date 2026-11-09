@@ -242,6 +242,18 @@
       "photo": "/uploads/teacher-shweaung.jpg"
     },
     {
+      "id": "nyanatiloka",
+      "name": "냐나띨로까 스님",
+      "roman": "Ñāṇatiloka",
+      "aliases": [
+        "Nyanatiloka",
+        "냐나틸로카"
+      ],
+      "tradition": "myanmar-etc",
+      "bio": "",
+      "photo": ""
+    },
+    {
       "id": "mun",
       "name": "아잔 만",
       "roman": "Ajahn Mun",

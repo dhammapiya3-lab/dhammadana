@@ -220,6 +220,7 @@ function layout({ title, nav = '', page = '', body, desc = '', image = '' }) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(t)}</title>
+<meta name="google-site-verification" content="BMBhirIv12i354WOEbnZHgLYmliYQ_wdhRAl8oX8wdc">
 <meta name="description" content="${esc(desc || '부처님과 테라와다 스승들의 가르침을 우리말로 옮긴 법보시 서적을 무료로 찾고, 내려받고, 읽는 곳')}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="${esc(S.site_name)}">
