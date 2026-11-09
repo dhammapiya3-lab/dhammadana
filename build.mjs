@@ -317,6 +317,14 @@ const pubLine = b => { const ps = pubsOf(b); if (!ps.length) return '';
   if (ps.length === 1) return `${ps[0].name} 출간`;
   return ps.map(x => x.kinds.includes('종이책') ? `${x.name} 출간` : `전자책 ${x.name}`).join(' · '); };
 
+// 스승 페이지 책 목록 제목: 경전만 있으면 'OO 스님이 옮긴 책', 번역서만 있으면 'OO의 가르침을 옮긴 책', 우리말로 쓴 책이 있으면 'OO의 가르침을 담은 책'
+const josaIGa = w => { const c = String(w).trim().slice(-1).charCodeAt(0); return c >= 0xAC00 && c <= 0xD7A3 && (c - 0xAC00) % 28 ? '이' : '가'; };
+function teacherBooksHead(t, list) {
+  if (list.length && list.every(x => x.book_type === '경전')) return `${t.name}${josaIGa(t.name)} 옮긴 책 ${list.length}권`;
+  const trans = list.every(x => String(x.translator || '').trim() || (x.original_language && x.original_language !== '한국어'));
+  return `${t.name}의 가르침을 ${trans ? '옮긴' : '담은'} 책 ${list.length}권`;
+}
+
 function coverCard(b) {
   const f = formats(b);
   const tr = b.teacher ? tradOfTeacher(b.teacher) : null;
@@ -530,7 +538,7 @@ for (const t of TEACHERS) {
     <h1 class="h-page">${esc(t.name)}</h1>${t.roman ? `<div class="pali muted">${esc(t.roman)}</div>` : ''}
     ${t.bio ? `<div class="desc small">${marked.parse(t.bio)}</div>` : ''}
     ${pl ? `<p style="margin:8px 0 0"><a class="btn sm ghost" href="/dhammatalk/?pl=${pl.id}">▶ ${esc(t.name)}의 법문 듣기</a></p>` : ''}</div></div>
-    <div class="section-head" style="margin-top:20px"><h2>${esc(t.name)}의 가르침을 ${list.every(x => String(x.translator || '').trim() || (x.original_language && x.original_language !== '한국어')) ? '옮긴' : '담은'} 책 ${list.length}권</h2></div>
+    <div class="section-head" style="margin-top:20px"><h2>${esc(teacherBooksHead(t, list))}</h2></div>
     ${list.length ? `<div class="grid">${list.map(coverCard).join('')}</div>` : '<p class="muted">아직 등록된 책이 없습니다.</p>'}
     ${trans.length ? `<div class="section-head" style="margin-top:30px"><h2>옮긴 책</h2></div><div class="grid">${trans.map(coverCard).join('')}</div>` : ''}
     <div class="section-head" style="margin-top:36px"><h2>같은 전통의 스승</h2></div>
