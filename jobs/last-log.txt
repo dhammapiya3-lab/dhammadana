@@ -1,1 +1,6 @@
-할 일 없음
+049-The-Lucky-Star
+050-The-Kings-Stratagem
+remote: 
+remote: Create a pull request for 'storybooks-review' on GitHub by visiting:        
+remote:      https://github.com/dhammapiya3-lab/dhammadana/pull/new/storybooks-review        
+remote: 
