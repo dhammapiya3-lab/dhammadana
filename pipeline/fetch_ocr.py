@@ -38,12 +38,15 @@ def one(slug, sf, img, keep):
 def main():
     slug = sys.argv[1]
     keep = set(sys.argv[sys.argv.index("--keep") + 1:]) if "--keep" in sys.argv else set()
+    only = set(sys.argv[sys.argv.index("--only") + 1:]) if "--only" in sys.argv else set()
     b = cat["books"][slug]
     for sf, st in b["stories"].items():
         if keep and sf not in keep:
             continue
+        if only and sf not in only:
+            continue
         out = f"data/ocr/{slug}/{sf.rsplit('.', 1)[0]}.json"
-        if os.path.exists(out) and sf not in keep:
+        if os.path.exists(out) and sf not in keep and not os.environ.get("REDO"):
             continue
         imgs = [i["img"] for i in st["items"] if "img" in i]
         with ThreadPoolExecutor(4) as ex:

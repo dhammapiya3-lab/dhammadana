@@ -15,7 +15,8 @@ INK = (40, 30, 25)
 
 def inner_rect(full, tb):
     x0, y0, x1, y1 = tb
-    er = cv2.erode(full, np.ones((9, 9), np.uint8))
+    m = max(3, full.shape[1] // 300)
+    er = cv2.erode(full, np.ones((m, m), np.uint8))
     def ok(a, b, c, d):
         return a >= 0 and b >= 0 and c <= er.shape[1] and d <= er.shape[0] and er[b:d, a:c].size and er[b:d, a:c].min() == 255
     changed = True
@@ -46,7 +47,7 @@ def fit(draw, text, w, h, maxsize):
     for size in range(maxsize, 9, -1):
         f = ImageFont.truetype(FONT, size)
         lines = wrap(draw, text, f, w)
-        lh = size * 1.32
+        lh = size * 1.25
         if all(draw.textlength(l, font=f) <= w for l in lines) and lh * len(lines) <= h:
             return f, lines, lh
     f = ImageFont.truetype(FONT, 10)
@@ -80,7 +81,7 @@ def render(src_path, boxes):
         pil = pil.resize((W * scale, H * scale), Image.LANCZOS)
     d = ImageDraw.Draw(pil)
     for (x0, y0, x1, y1), ko, align in layout:
-        pad = max(3, W // 260)
+        pad = max(2, W // 500)
         X0, Y0, X1, Y1 = [v * scale for v in (x0 + pad, y0 + pad, x1 - pad, y1 - pad)]
         f, lines, lh = fit(d, ko, X1 - X0, Y1 - Y0, int(W * scale / 24))
         y = Y0 + ((Y1 - Y0) - lh * len(lines)) / 2

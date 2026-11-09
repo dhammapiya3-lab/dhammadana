@@ -6,12 +6,9 @@ import cv2, numpy as np, json, sys, subprocess, re
 TOL = 9  # 이웃 픽셀 색 차이 허용치 (상자 바탕 질감·그라데이션 따라가기)
 
 
-def ocr_words(img):
-    h, w = img.shape[:2]
-    scale = 2 if w < 1600 else 1
-    big = cv2.resize(img, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC) if scale > 1 else img
-    ok, buf = cv2.imencode(".png", big)
-    out = subprocess.run(["tesseract", "stdin", "stdout", "--psm", "11", "tsv"],
+def _tess(im, psm, scale):
+    ok, buf = cv2.imencode(".png", im)
+    out = subprocess.run(["tesseract", "stdin", "stdout", "--psm", psm, "tsv"],
                          input=buf.tobytes(), capture_output=True).stdout.decode("utf-8", "replace")
     words = []
     for line in out.splitlines()[1:]:
@@ -19,22 +16,54 @@ def ocr_words(img):
         if len(f) < 12 or not f[11].strip():
             continue
         conf, t = float(f[10]), f[11].strip()
-        if conf < 45 or not re.search(r"[A-Za-z]{2}|\d", t):
+        if conf < 30 or not re.search(r"[A-Za-z]{2}|\d", t) or (conf < 45 and not re.search(r"[A-Za-z]{3}", t)):
             continue
         x, y, ww, hh = [int(v) / scale for v in f[6:10]]
         words.append({"x": x, "y": y, "w": ww, "h": hh, "t": t, "c": conf})
     return words
 
 
+def ocr_words(img):
+    """흑백 원본(11·3)과 절반 크기(3)로 세 번 읽어 합친다 — 작은 글자를 놓치지 않게"""
+    g = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    if g.shape[1] < 1600:
+        g = cv2.resize(g, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC); base = 2
+    else:
+        base = 1
+    half = cv2.resize(g, None, fx=.5, fy=.5, interpolation=cv2.INTER_AREA)
+    col = img if base == 1 else cv2.resize(img, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
+    words = []
+    for im, psm, sc in ((g, "11", base), (g, "3", base), (half, "3", base / 2), (col, "11", base)):
+        for q in _tess(im, psm, sc):
+            if not any(abs(q["x"] - o["x"]) < o["h"] * .6 and abs(q["y"] - o["y"]) < o["h"] * .6 for o in words):
+                words.append(q)
+    return words
+
+
+def frame_mask(img):
+    """그림 둘레의 흰 여백을 막아 둔 floodFill 마스크"""
+    h, w = img.shape[:2]
+    g = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    rows = np.where((g < 235).mean(1) > 0.5)[0]; cols = np.where((g < 235).mean(0) > 0.5)[0]
+    mask = np.ones((h + 2, w + 2), np.uint8)
+    if len(rows) and len(cols):
+        y0, y1, x0, x1 = rows.min(), rows.max(), cols.min(), cols.max()
+        mask[y0 + 2:y1 + 1, x0 + 2:x1 + 1] = 0  # 테두리 한 줄 안쪽만 열어 둠
+    else:
+        mask[1:-1, 1:-1] = 0
+    return mask
+
+
 def flood(img, seed):
     h, w = img.shape[:2]
-    mask = np.zeros((h + 2, w + 2), np.uint8)
+    mask = frame_mask(img)
     cv2.floodFill(img.copy(), mask, (int(seed[0]), int(seed[1])), 0, (TOL,) * 3, (TOL,) * 3,
                   8 | cv2.FLOODFILL_MASK_ONLY | (255 << 8))
-    fl = mask[1:-1, 1:-1]
+    fl = (mask[1:-1, 1:-1] == 255).astype(np.uint8) * 255
     cs, _ = cv2.findContours(fl, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
     full = np.zeros_like(fl)
-    cv2.drawContours(full, [max(cs, key=cv2.contourArea)], -1, 255, -1)
+    if cs:
+        cv2.drawContours(full, [max(cs, key=cv2.contourArea)], -1, 255, -1)
     return fl, full
 
 
@@ -69,7 +98,7 @@ def region_masks(img, seed800):
     fl, full = flood(sm, seed800)
     full = cv2.resize(full, (W, H), interpolation=cv2.INTER_LINEAR)
     full = (full > 127).astype(np.uint8) * 255
-    band = max(5, int(7 / k))  # 테두리 선 두께만큼 안쪽으로
+    band = max(5, int(3.5 / k))  # 테두리 선 두께만큼 안쪽으로
     inner = cv2.erode(full, np.ones((band, band), np.uint8))
     return full, inner
 
@@ -93,6 +122,8 @@ def detect(img):
             continue
         fl, full = flood(img, s)
         area = int((full > 0).sum())
+        if area == 0:
+            continue
         ys, xs = np.where(full > 0)
         bw, bh = xs.max() - xs.min(), ys.max() - ys.min()
         if area > 0.25 * h * w or area < 0.004 * h * w or bw > 0.85 * w:
@@ -101,21 +132,30 @@ def detect(img):
             continue
         cs, _ = cv2.findContours(full, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         c = max(cs, key=cv2.contourArea)
-        if cv2.contourArea(c) / max(1, cv2.contourArea(cv2.convexHull(c))) < 0.85:
+        if cv2.contourArea(c) / max(1, cv2.contourArea(cv2.convexHull(c))) < 0.62:
             continue  # 모양이 들쭉날쭉하면 상자·말풍선이 아님
+        hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+        fl_, _ = flood(img, s)
+        if np.median(hsv[..., 1][fl_ > 0]) > 90 or np.median(hsv[..., 2][fl_ > 0]) < 170:
+            continue  # 바탕이 흰색·양피지색이 아님 (하늘 등)
         regions.append({"full": full, "seed": [int(s[0]), int(s[1])], "words": [wd],
                         "bbox": [int(xs.min()), int(ys.min()), int(xs.max()), int(ys.max())]})
     out = []
     for r in regions:
-        ws = sorted(r["words"], key=lambda q: (q["y"], q["x"]))
-        # 줄 단위로 묶어 읽는 순서 맞추기
+        if not any(q["c"] >= 60 and re.search(r"[A-Za-z]{3}", q["t"]) for q in r["words"]):
+            continue
+        ws = sorted(r["words"], key=lambda q: q["y"] + q["h"] / 2)
+        # 줄 단위로 묶어 읽는 순서 맞추기 (글자 높이의 절반 안이면 같은 줄)
         lines = []
         for q in ws:
-            if lines and abs(lines[-1][0]["y"] - q["y"]) < q["h"] * 0.6:
-                lines[-1].append(q)
+            yc = q["y"] + q["h"] / 2
+            if lines and abs(lines[-1][1] - yc) < max(q["h"], lines[-1][2]) * 0.5:
+                L = lines[-1]; L[0].append(q); L[1] = sum(z["y"] + z["h"] / 2 for z in L[0]) / len(L[0])
             else:
-                lines.append([q])
+                lines.append([[q], yc, q["h"]])
+        lines = [L[0] for L in lines]
         text = " ".join(" ".join(x["t"] for x in sorted(l, key=lambda q: q["x"])) for l in lines)
+        text = re.sub(r"\b(\w+) \1\b", r"\1", text, flags=re.I)
         fill = float((r["full"] > 0).sum()) / ((r["bbox"][2] - r["bbox"][0] + 1) * (r["bbox"][3] - r["bbox"][1] + 1))
         out.append({"seed": r["seed"], "bbox": [round(v / kk) for v in r["bbox"]], "shape": "box" if fill > 0.9 else "bubble",
                     "en": text, "conf": round(min(q["c"] for q in ws))})

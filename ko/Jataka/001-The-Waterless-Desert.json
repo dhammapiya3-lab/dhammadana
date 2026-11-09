@@ -1,0 +1,366 @@
+[
+ {
+  "img": "images/001-The-Waterless-Desert-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     85,
+     42
+    ],
+    "shape": "box",
+    "en": "“Thus it was in times past...” The Buddha spoke to layman about the fatuous path versus the truth.",
+    "ko": "“옛날 옛적에…” 부처님께서 한 재가 신자에게 어리석은 길과 진리의 길에 대해 말씀하셨습니다."
+   },
+   {
+    "seed": [
+     656,
+     379
+    ],
+    "shape": "box",
+    "en": "Our story begins in ancient Benares.",
+    "ko": "이야기는 옛 바라나시에서 시작됩니다."
+   }
+  ]
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     75,
+     41
+    ],
+    "shape": "box",
+    "en": "Two merchants, each With 500 carts, prepared to cross the wilderness. sil",
+    "ko": "두 상인이 각자 수레 500대를 이끌고 황야를 건널 채비를 했습니다."
+   },
+   {
+    "seed": [
+     425,
+     58
+    ],
+    "shape": "bubble",
+    "en": "thousand carts will deplete the road’s resources. One of us must go first.",
+    "ko": "수레 천 대가 한꺼번에 가면 길의 물과 풀이 바닥날 것이오. 우리 중 한 사람이 먼저 떠나야 하오."
+   }
+  ]
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     66,
+     36
+    ],
+    "shape": "box",
+    "en": "The Fool’s Logic: Uncut roads, first pick of grass, dictate prices.",
+    "ko": "어리석은 상인의 셈: 아무도 지나지 않은 길, 먼저 차지하는 풀, 내 마음대로 매기는 값."
+   },
+   {
+    "seed": [
+     71,
+     254
+    ],
+    "shape": "box",
+    "en": "The Wise Man’s Logic: Leveled roads, sweet regrowth, pre-dug wells, established prices.",
+    "ko": "지혜로운 상인의 셈: 다져진 길, 새로 돋은 연한 풀, 미리 파 둔 우물, 이미 정해진 값."
+   },
+   {
+    "seed": [
+     696,
+     32
+    ],
+    "shape": "bubble",
+    "en": "I will go first!",
+    "ko": "내가 먼저 가겠소!",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     38,
+     36
+    ],
+    "shape": "box",
+    "en": "The Foolish Merchant entered the sixty-league wilderness.",
+    "ko": "어리석은 상인이 60요자나 황야로 들어섰습니다."
+   },
+   {
+    "seed": [
+     495,
+     348
+    ],
+    "shape": "box",
+    "en": "It was deso late place, plagued by drought and haunted by flesh-eating Amanussas. They carried heavy water jars to survive.",
+    "ko": "그곳은 가뭄에 시달리고 사람을 잡아먹는 귀신(아마눗사)이 들끓는 황량한 땅이었습니다. 일행은 살아남으려고 무거운 물 항아리를 싣고 갔습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     263,
+     36
+    ],
+    "shape": "box",
+    "en": "Yakkha created magnificent illusion: dripping carriage adorned with water-lilies.",
+    "ko": "약카가 놀라운 환영을 만들어 냈습니다. 수련으로 꾸민, 물이 뚝뚝 떨어지는 수레였습니다."
+   },
+   {
+    "seed": [
+     297,
+     105
+    ],
+    "shape": "bubble",
+    "en": "it rain ahead? You are dripping with water!",
+    "ko": "앞에 비가 왔소? 온몸이 흠뻑 젖었구려!"
+   }
+  ]
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     492,
+     279
+    ],
+    "shape": "bubble",
+    "en": "It is always raining yonder! Lakes overflow with lotuses. Break your heavy water jars to lighten your carts. You will travel easier.",
+    "ko": "저 앞에는 늘 비가 내린다오! 호수마다 연꽃이 넘쳐 나지요. 무거운 물 항아리를 깨뜨려 수레를 가볍게 하시오. 그러면 한결 수월하게 갈 것이오."
+   }
+  ]
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     75,
+     40
+    ],
+    "shape": "box",
+    "en": "The Fool blindly obeyed.",
+    "ko": "어리석은 상인은 그대로 따랐습니다."
+   },
+   {
+    "seed": [
+     527,
+     339
+    ],
+    "shape": "box",
+    "en": "Finding no water, the exhausted caravan collapsed at dusk. Under the cover of night, the Yakkhas feasted, leaving only bare bones.",
+    "ko": "물을 찾지 못한 일행은 지쳐서 해 질 녘에 쓰러졌습니다. 밤이 되자 약카들이 몰려와 잔치를 벌였고, 남은 것은 앙상한 뼈뿐이었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     46,
+     40
+    ],
+    "shape": "box",
+    "en": "Six weeks later, the Bodhisatta departed.",
+    "ko": "한 달 반 뒤, 보살이 길을 떠났습니다."
+   },
+   {
+    "seed": [
+     484,
+     50
+    ],
+    "shape": "bubble",
+    "en": "Let not palmful be of water wat be used without my sanction. Eat no unknown fruit or leaf without asking ine.",
+    "ko": "내 허락 없이는 물 한 모금도 쓰지 마라. 내게 묻지 않고는 모르는 열매나 잎을 먹지 마라."
+   }
+  ]
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     204,
+     45
+    ],
+    "shape": "box",
+    "en": "same trick. But the Bodhisatta had the skill in means to see through the illusion.",
+    "ko": "약카는 같은 속임수를 썼습니다. 그러나 보살에게는 환영을 꿰뚫어 보는 방편의 지혜가 있었습니다."
+   },
+   {
+    "seed": [
+     341,
+     98
+    ],
+    "shape": "bubble",
+    "en": "Red eyes. Aggressive bearing. No shadow. This is Yakkha.",
+    "ko": "붉은 눈. 사나운 기색. 그림자가 없다. 이것은 약카다."
+   }
+  ]
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     82,
+     43
+    ],
+    "shape": "bubble",
+    "en": "Master! They wore wet lotuses. Let us throw away our heavy water and travel light to the rain!",
+    "ko": "주인님! 저들은 젖은 연꽃을 걸치고 있었습니다. 무거운 물을 버리고 가볍게 비 오는 곳으로 가십시다!"
+   },
+   {
+    "seed": [
+     384,
+     52
+    ],
+    "shape": "bubble",
+    "en": "Halt. Assemble before me.",
+    "ko": "멈추어라. 모두 내 앞에 모여라."
+   }
+  ]
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     60,
+     25
+    ],
+    "shape": "box",
+    "en": "Rain wind felt? No.",
+    "ko": "비바람? 없다."
+   },
+   {
+    "seed": [
+     265,
+     29
+    ],
+    "shape": "box",
+    "en": "Storm clouds seen?",
+    "ko": "먹구름? 없다."
+   },
+   {
+    "seed": [
+     491,
+     23
+    ],
+    "shape": "box",
+    "en": "Lightning spotted?",
+    "ko": "번개? 없다."
+   },
+   {
+    "seed": [
+     691,
+     26
+    ],
+    "shape": "box",
+    "en": "Thunder heard? No",
+    "ko": "천둥소리? 없다."
+   },
+   {
+    "seed": [
+     610,
+     293
+    ],
+    "shape": "bubble",
+    "en": "These are not men. They are Yakkhas. as.",
+    "ko": "저들은 사람이 아니다. 약카들이다."
+   }
+  ]
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     538,
+     275
+    ],
+    "shape": "bubble",
+    "en": "The foolish 2s merchant Su lacked 1S) 3 skill in means. He was likely fooled and devoured. Press on with all speed, but keep every drop of water.",
+    "ko": "어리석은 상인은 방편의 지혜가 없었다. 속아서 잡아먹혔을 것이다. 서둘러 나아가되, 물은 한 방울도 버리지 마라."
+   }
+  ]
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     81,
+     30
+    ],
+    "shape": "box",
+    "en": "found the 500 derelict carts and skeletons.",
+    "ko": "그들은 버려진 수레 500대와 해골들을 찾았습니다."
+   },
+   {
+    "seed": [
+     533,
+     318
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta fortified corral, standing guard through three watches of the night.",
+    "ko": "보살은 수레로 튼튼한 울타리를 치고 밤새도록 망을 보았습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-14-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     33,
+     45
+    ],
+    "shape": "box",
+    "en": "At dawn, they swapped their weak carts for stronger ones, and common goods for costly derelict wares.",
+    "ko": "새벽이 되자 일행은 약한 수레를 튼튼한 수레로, 흔한 물건을 버려진 값진 물건으로 바꾸었습니다."
+   },
+   {
+    "seed": [
+     524,
+     397
+    ],
+    "shape": "box",
+    "en": "value, returning home safely.",
+    "ko": "그리고 물건을 모두 세 배 값에 팔아 무사히 집으로 돌아왔습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/001-The-Waterless-Desert-15-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     43,
+     42
+    ],
+    "shape": "box",
+    "en": "Thus the fatuous met destruction, while those who clave to the truth reached their goal",
+    "ko": "이렇게 어리석은 이는 파멸을 맞았고, 진리를 굳게 지킨 이는 목적지에 이르렀습니다."
+   },
+   {
+    "seed": [
+     548,
+     343
+    ],
+    "shape": "box",
+    "en": "Some have an unquestionable basis... is... the intelligent should take hold of the unquestionable",
+    "ko": "“어떤 이는 확실한 것을 의지한다… 지혜로운 이는 확실한 것을 붙잡아야 한다.”"
+   }
+  ]
+ }
+]
