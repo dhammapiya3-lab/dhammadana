@@ -123,6 +123,18 @@
           "url": "https://www.buddhanet.net/",
           "note": "비영리 단체 Buddha Dharma Education Association 의 불교 사이트 · 불교 전자 도서관(Buddhist eLibrary)과 세계 불교 단체 안내(World Buddhist Directory), 법문 음성 자료",
           "lang": "영어"
+        },
+        {
+          "name": "Lotus Library",
+          "url": "https://www.lotuslibrary.com/ebook-tradition/theravada-s-e-asian/",
+          "note": "테라와다(동남아시아) 불교 전자책 목록 · 아잔 수메도, 마하시 사야도, 아야 케마, 냐나띨로까 스님 등의 책을 기본 개념·수행·업·경전 등 갈래로 나눔",
+          "lang": "영어"
+        },
+        {
+          "name": "Wisdom Library (Theravada)",
+          "url": "https://www.wisdomlib.org/theravada",
+          "note": "디가·맛지마·상윳따·앙굿따라 니까야, 율장, 법구경, 밀린다빤하, 청정도론 등의 영어 번역과 아비담마·수행 관련 책을 온라인으로 읽는 곳 · 테라와다 용어 풀이(A–Z)",
+          "lang": "영어"
         }
       ]
     },
