@@ -93,6 +93,24 @@
           "url": "http://mahadhammapala.org/",
           "note": "불교 서적과 법문을 전자 자료로 모아 지키고 누구나 볼 수 있게 하려는 미얀마 마하담마빨라 협회의 전자 도서관 · 법 서적 책장·삼장·찾기, 마하시 수행센터(바한) 도서관의 미얀마어 책 333권과 영어 책 86권을 스캔해 올림",
           "lang": "미얀마어"
+        },
+        {
+          "name": "Association for Insight Meditation (aimwell.org)",
+          "url": "https://aimwell.org/",
+          "note": "마하시 사야도에게 출가한 영국인 비구 뻬살라 스님이 엮은 마하시 사야도·레디 사야도 등의 책을 HTML·PDF로 무료 공개 · 마하시 사야도의 생애와 위빳사나 수행법, 빠알리 용어 풀이",
+          "lang": "영어"
+        },
+        {
+          "name": "Pariyatti",
+          "url": "https://pariyatti.org/",
+          "note": "미국의 비영리 단체 · 고엔까 선생님 전통의 위빳사나 자료, 무료 전자책·오디오북·음성·영상, 빠알리 삼장과 빠알리어 공부 자료 (책 판매도 함께 함)",
+          "lang": "영어"
+        },
+        {
+          "name": "Vipassana Research Institute (VRI)",
+          "url": "https://www.vridhamma.org/free-books",
+          "note": "고엔까 선생님이 세운 위빳사나 연구소의 무료 PDF 책 · 빠알리어 입문서, 법구경, 레디 사야도 해설서, 고엔까 선생님 법문, 삼장 관련 책 (영어·힌디어 등)",
+          "lang": "영어"
         }
       ]
     },
