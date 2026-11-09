@@ -990,3 +990,5 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .r-sbar{position:absolute;right:0;top:8px;bottom:8px;width:22px;z-index:3;opacity:0;transition:opacity .3s;pointer-events:none}
 .r-sbar.on{opacity:1;pointer-events:auto}
 .r-sbar i{position:absolute;right:3px;top:0;width:5px;border-radius:4px;background:var(--ink-soft);opacity:.55}
+/* 손가락 화면: 브라우저 자체 스크롤 막대는 숨기고 위의 막대(.r-sbar) 하나만 — 두 개로 보이지 않게 */
+@media (pointer:coarse){.reader .r-body{scrollbar-width:none}.reader .r-body::-webkit-scrollbar{display:none}}
