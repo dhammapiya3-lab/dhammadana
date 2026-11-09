@@ -100,6 +100,7 @@ function drawRange(){
   document.querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>{ DAYS=+b.dataset.d; load(); });
 }
 const DEV={m:'휴대폰·태블릿',pc:'컴퓨터'};
+const ctName=k=>{try{return new Intl.DisplayNames(['ko'],{type:'region'}).of(k)||k}catch(e){return k}};
 const CT={KR:'한국',US:'미국',JP:'일본',MM:'미얀마',TH:'태국',LK:'스리랑카',CN:'중국',DE:'독일',AU:'호주',CA:'캐나다',GB:'영국',SG:'싱가포르',MY:'말레이시아',VN:'베트남',IN:'인도',TW:'대만',FR:'프랑스',NZ:'뉴질랜드',HK:'홍콩',ID:'인도네시아'};
 function table(rows){ return rows.length?`<table>${rows.join('')}</table>`:'<p class="note">아직 기록이 없습니다.</p>'; }
 async function load(){
@@ -118,7 +119,7 @@ async function load(){
   <div class="card"><h2>많이 본 쪽</h2>${table(j.pages.map(([p,c,t])=>`<tr><td>${esc(t||p)}<br><small><a href="${esc(p)}" target="_blank" rel="noopener">${esc(p)}</a></small></td><td class="n">${num(c)}</td></tr>`))}</div>
   <div class="two">
     <div class="card"><h2>들어온 곳</h2><p class="note">다른 사이트의 링크를 눌러 들어온 경우만 (주소창에 직접 입력·즐겨찾기는 빠짐)</p>${table(j.refs.map(([r,c])=>`<tr><td>${esc(r)}</td><td class="n">${num(c)}</td></tr>`))}</div>
-    <div class="card"><h2>기기 · 나라</h2>${table([...Object.entries(j.dev).map(([k,c])=>`<tr><td>${DEV[k]||esc(k)}</td><td class="n">${Math.round(c/devT*100)}%</td></tr>`),...j.ctry.map(([k,c])=>`<tr><td>${CT[k]||esc(k)}</td><td class="n">${num(c)}</td></tr>`)])}</div>
+    <div class="card"><h2>기기 · 나라</h2>${table([...Object.entries(j.dev).map(([k,c])=>`<tr><td>${DEV[k]||esc(k)}</td><td class="n">${Math.round(c/devT*100)}%</td></tr>`),...j.ctry.map(([k,c])=>`<tr><td>${CT[k]||ctName(k)}</td><td class="n">${num(c)}</td></tr>`)])}</div>
   </div>`;
 }
 start();

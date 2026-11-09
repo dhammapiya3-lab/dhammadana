@@ -678,10 +678,19 @@ function reflowHtml() {
 // 이 장 안의 소제목 자리(화면의 문단) 목록
 function subTargets(c) {
   if (!c) return [];
+  // 소제목 글과 같은 문단(목차 쪽과 다음 쪽에서)을 찾아 그 자리로. 각주 문단에는 멈추지 않음 (운영자 요청, 2026-11-09)
+  const nk = x => headKey(x).replace(/[.,:·\-–—!?■_“”"]/g, '');
+  const vis = e => e && e.getClientRects().length && !e.classList.contains('fn');
   return R.toc.filter(t => /^\s/.test(t.title) && t.page >= c.from && t.page <= c.to).map(t => {
+    const want = nk(t.title).slice(0, 10);
+    for (const pg of [t.page, t.page + 1]) {
+      const ps = [...$$(`#rBody p[data-pg="${pg}"]`)].filter(vis);
+      const e = ps.find(e => e.classList.contains('sub-h') && nk(e.textContent).startsWith(want)) || ps.find(e => e.textContent.length < 160 && nk(e.textContent).startsWith(want));
+      if (e) return e;
+    }
     const e = $(`#rBody p[data-pg="${t.page}"][data-s="${paraIdx(t)}"]`);
-    return e && e.getClientRects().length ? e : $('#pm-' + t.page);
-  }).filter(Boolean);
+    return vis(e) ? e : $('#pm-' + t.page);
+  }).filter(Boolean).sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top);
 }
 const chHasSubs = n => { const c = chapters()[Math.max(0, chapterOf(n))]; return !!c && R.toc.some(t => /^\s/.test(t.title) && t.page >= c.from && t.page <= c.to); };
 function tocFor(n) { let cur = null; for (const t of R.toc) if (t.page <= n) cur = t; return cur; }
