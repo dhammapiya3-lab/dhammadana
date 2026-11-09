@@ -1,0 +1,312 @@
+[
+ {
+  "img": "images/018-The-Sacrificial-Goat-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     316,
+     185
+    ],
+    "ko": "바라문과 염소\n업 이야기\n옛 자타카 이야기에서",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     386,
+     92
+    ],
+    "shape": "bubble",
+    "en": "My sons, bathe this goat in the river, garland it, and bring it back.",
+    "ko": "얘들아, 이 염소를 강에서 씻기고 꽃목걸이를 걸어서 데려오너라."
+   },
+   {
+    "seed": [
+     69,
+     56
+    ],
+    "ko": "옛 바라나시에서 이름난 바라문이 조상 제사를 준비했습니다.",
+    "align": "left",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     62,
+     56
+    ],
+    "ko": "제자들은 염소를 정성껏 보살폈습니다. 그것이 염소의 마지막 순간을 준비하는 일인 줄은 몰랐습니다.",
+    "align": "left",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     66,
+     72
+    ],
+    "ko": "그때 염소가 갑자기 전생을 떠올렸습니다. 오늘로 괴로움의 굴레가 끝난다는 것을 알고는 항아리 깨지는 소리처럼 크게 웃었습니다.",
+    "align": "left",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     109,
+     76
+    ],
+    "shape": "box",
+    "en": "But joy quickly turned to profound SOrrow.",
+    "ko": "그러나 기쁨은 곧 깊은 슬픔으로 바뀌었습니다."
+   },
+   {
+    "seed": [
+     136,
+     148
+    ],
+    "shape": "bubble",
+    "en": "Friend goat, your voice is loud in both laughter and weeping. Why?",
+    "ko": "염소야, 너는 웃을 때도 울 때도 소리가 크구나. 왜 그러니?"
+   },
+   {
+    "seed": [
+     663,
+     281
+    ],
+    "ko": "*흑흑*",
+    "align": "center",
+    "shape": "bubble",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     414,
+     51
+    ],
+    "shape": "box",
+    "en": "Brought before the master, the goat was asked to explain.",
+    "ko": "스승님 앞에 끌려온 염소는 까닭을 말하라는 물음을 받았습니다."
+   },
+   {
+    "seed": [
+     202,
+     93
+    ],
+    "shape": "bubble",
+    "en": "Ask our master.",
+    "ko": "스승님께 여쭈어 보자."
+   },
+   {
+    "seed": [
+     638,
+     187
+    ],
+    "shape": "bubble",
+    "en": "Speak, peak, beast. Why did you laugh, and why did you weep?",
+    "ko": "말해 보아라, 짐승아. 왜 웃었고 왜 울었느냐?"
+   }
+  ]
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     146,
+     152,
+     394,
+     222
+    ],
+    "align": "center",
+    "shape": "bubble",
+    "ko": "바라문이여, 옛날에 나도 그대와 같았소.\n나도 조상 제사를 지내려고 염소를 죽였다오.",
+    "manual": true,
+    "em": 15
+   },
+   {
+    "rect": [
+     162,
+     126,
+     388,
+     154
+    ],
+    "ko": " ",
+    "shape": "box",
+    "manual": true,
+    "note": "윗줄 지우기만"
+   }
+  ]
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     149,
+     341
+    ],
+    "shape": "box",
+    "en": "suffered 499 beh eadings. Today is my 500th and final birth. laughed for freedom.",
+    "ko": "나는 오백 번에서 한 번 모자라게 목이 잘렸소. 오늘이 오백 번째, 마지막 생이오. 해방되어 웃었소."
+   },
+   {
+    "seed": [
+     436,
+     341
+    ],
+    "shape": "box",
+    "en": "By killing me, you doom yourself to the same. wept out of compassion.",
+    "ko": "나를 죽이면 그대도 같은 운명을 맞게 되오. 그대가 가여워 울었소."
+   },
+   {
+    "seed": [
+     310,
+     68
+    ],
+    "ko": "업의 법칙",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     550,
+     82
+    ],
+    "shape": "bubble",
+    "en": "Fear not, goat! will not kill you. will guard you myself.",
+    "ko": "두려워 마라, 염소야! 너를 죽이지 않겠다. 내가 몸소 지켜 주마."
+   },
+   {
+    "seed": [
+     458,
+     283
+    ],
+    "shape": "bubble",
+    "en": "Weak is your protection. Strong is my evil-doing. cannot escape death today.",
+    "ko": "그대의 보호는 약하고 내 악업은 강하오. 오늘 나는 죽음을 피할 수 없소."
+   }
+  ]
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     140,
+     74
+    ],
+    "shape": "box",
+    "en": "Setting the goat at liberty, the Brahmin followed closely, determined to cheat fate.",
+    "ko": "바라문은 염소를 풀어 주고, 운명을 피해 보려고 바짝 뒤따랐습니다."
+   },
+   {
+    "seed": [
+     529,
+     87
+    ],
+    "shape": "bubble",
+    "en": "ie Let no one touch this creature!",
+    "ko": "아무도 이 염소를 건드리지 마라!"
+   }
+  ]
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     101,
+     80
+    ],
+    "shape": "box",
+    "en": "Free at last, the goat reached out to browse on leaves near rocky outcrop.",
+    "ko": "마침내 풀려난 염소는 바위 옆 나뭇잎을 뜯으려고 고개를 뻗었습니다."
+   },
+   {
+    "seed": [
+     131,
+     250
+    ],
+    "shape": "box",
+    "en": "At very instant...",
+    "ko": "바로 그 순간…"
+   }
+  ]
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     586,
+     357
+    ],
+    "ko": "벼락이 바위를 내리쳤습니다. 커다란 바위 조각이 떨어져 나왔고…",
+    "align": "left",
+    "shape": "box",
+    "dark": true,
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     261,
+     369
+    ],
+    "shape": "box",
+    "en": "The mass tore off its head instantly. Fate could not be stopped. People crowded rowded around in awe and fear.",
+    "ko": "그 덩어리가 순식간에 염소의 목을 떨어뜨렸습니다. 운명은 막을 수 없었습니다. 사람들이 놀라고 두려워하며 모여들었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-14-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     506,
+     66
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta had been born as Tree Devata in that self-same spot. By supernatural power, he seated himself in mid-air to teach the crowd",
+    "ko": "보살은 바로 그 자리의 나무 신으로 태어나 있었습니다. 보살은 신통력으로 허공에 앉아 사람들을 가르쳤습니다."
+   }
+  ]
+ }
+]

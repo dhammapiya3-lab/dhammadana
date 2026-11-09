@@ -1,0 +1,226 @@
+[
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     176,
+     326
+    ],
+    "ko": "개의 가르침\n자타카에 나오는 정의 이야기",
+    "align": "center",
+    "shape": "box",
+    "dark": true,
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     64,
+     49
+    ],
+    "shape": "box",
+    "en": "After sunset, the state chariot was left in the courtyard. In the nights it rained",
+    "ko": "해가 진 뒤 왕의 수레를 뜰에 두었는데, 밤새 비가 내렸습니다."
+   },
+   {
+    "seed": [
+     550,
+     366
+    ],
+    "shape": "box",
+    "en": "The pampered royal dogs crept down and gnawed the wet leather harnesses.",
+    "ko": "궁에서 귀하게 기르던 개들이 몰래 내려와 젖은 가죽 끈을 물어뜯었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     359,
+     68
+    ],
+    "shape": "bubble",
+    "en": "Street dogs have destroyed my carriage! Kill every dog you see/",
+    "ko": "떠돌이 개들이 내 수레를 망가뜨렸구나! 보이는 개는 모두 죽여라!"
+   },
+   {
+    "seed": [
+     406,
+     376
+    ],
+    "shape": "box",
+    "en": "And so began great slaughter in the streets of Benares.",
+    "ko": "이렇게 바라나시 거리에서 개들을 마구 죽이는 일이 시작되었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     534,
+     76
+    ],
+    "shape": "bubble",
+    "en": "The guiltless are put to death th while the true culprits remain safe inside the palace. will discover the truth to the king and save my kin",
+    "ko": "죄 없는 개들은 죽어 가고 진짜 범인은 궁 안에서 무사하구나. 내가 왕께 진실을 알리고 동족을 구하리라."
+   }
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     272,
+     57
+    ],
+    "shape": "box",
+    "en": "Calling to mind the Ten Perfections, the Bodhisatta walked alone into the city. An aura of loving-kindness disarmed isarmed the guards. Not man grew angry.",
+    "ko": "열 가지 바라밀을 떠올리며 보살은 홀로 성 안으로 걸어 들어갔습니다. 자애의 기운에 경비병들이 무기를 거두었고, 아무도 화내지 않았습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     514,
+     195
+    ],
+    "shape": "bubble",
+    "en": "If you do not know the real culprits, it is not right to order the slaughter of the dogs.",
+    "ko": "진짜 범인을 알지 못한다면 개들을 죽이라고 명하신 것은 옳지 않습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     265,
+     54
+    ],
+    "shape": "box",
+    "en": "Those hounds reared red by the royal family, well-bred and strong—these are not slaughtered. Only the weak are killed. This is not just",
+    "ko": "왕실에서 기르는 혈통 좋고 힘센 개들은 죽이지 않고, 약한 개들만 죽입니다. 이것은 정의가 아닙니다."
+   }
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     160,
+     299
+    ],
+    "shape": "bubble",
+    "en": "Kings in trying cases should be as unbiased as the beam of balance. You are following the four Evil Courses: partiality, dislike, ignorance, and fear.",
+    "ko": "어려운 일을 판결하는 왕은 저울대처럼 치우침이 없어야 합니다. 지금 왕께서는 네 가지 그릇된 길, 곧 편애·미움·어리석음·두려움을 따르고 계십니다."
+   }
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     274,
+     68
+    ],
+    "shape": "bubble",
+    "en": "Do you know who gnawed the leather?",
+    "ko": "가죽을 누가 물어뜯었는지 아십니까?"
+   },
+   {
+    "seed": [
+     545,
+     327
+    ],
+    "shape": "bubble",
+    "en": "Fes The dogs HE in your Ss own palace Bring ‘OD. them here S38 with eal buttermilk oe and kusa grass. Oo 7) will prove it",
+    "ko": "바로 왕궁의 개들입니다. 버터밀크와 꾸사 풀을 가지고 그 개들을 데려오십시오. 제가 증명하겠습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     174,
+     361
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta ordered the kusa grass mashed into buttermilk. buttermilk. The royal dogs drank greedily, then vomited the intact bits of leather. af",
+    "ko": "보살은 꾸사 풀을 버터밀크에 으깨어 넣게 했습니다. 왕궁의 개들이 그것을 허겁지겁 마시고는 삼킨 가죽 조각을 그대로 토해 냈습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     326,
+     59
+    ],
+    "shape": "bubble",
+    "en": "It is like judgment of Perfect Buddha himself!",
+    "ko": "완전한 부처님의 판결과도 같구나!"
+   },
+   {
+    "seed": [
+     453,
+     363
+    ],
+    "shape": "box",
+    "en": "Overjoyed, the king offered 2s the royal white umbrella 2 to the ordinary street dog od",
+    "ko": "크게 기뻐한 왕은 왕의 흰 일산을 평범한 떠돌이 개에게 바쳤습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-12-Original.jpg",
+  "boxes": []
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     493,
+     51
+    ],
+    "shape": "box",
+    "en": "Having established the king in the Five Precepts, the Bodhisatta handed back the white te umbrella of kingship gsh ip.",
+    "ko": "보살은 왕을 오계에 굳게 세운 뒤 왕권의 상징인 흰 일산을 돌려주었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-14-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     102,
+     51
+    ],
+    "shape": "box",
+    "en": "The king commanded all creatures be safe from harm pan The street dogs received constant supply of royal food",
+    "ko": "왕은 모든 생명이 해를 입지 않게 하라고 명했습니다. 떠돌이 개들은 늘 왕실 음식을 받게 되었습니다."
+   }
+  ]
+ }
+]

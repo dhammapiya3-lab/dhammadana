@@ -105,6 +105,8 @@ def render(src_path, boxes):
         if hs:
             big_ = max(hs); hs = [h_ for h_ in hs if h_ >= 0.5 * big_]  # 점·쉼표 같은 작은 조각은 빼고
         em = (np.median(hs) / 0.68) if hs else None
+        if b.get("em"):  # 글자 크기 직접 지정 (800px 기준)
+            em = b["em"] * W / 800
         if b.get("parts"):  # 이어 붙은 말풍선 여럿: 지우기는 한 번에, 글은 칸마다 (rect 는 800px 기준)
             kk = W / 800
             for pt in b["parts"]:

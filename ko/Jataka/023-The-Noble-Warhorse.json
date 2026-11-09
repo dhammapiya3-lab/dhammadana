@@ -1,0 +1,359 @@
+[
+ {
+  "img": "images/023-The-Noble-Warhorse-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     229,
+     377
+    ],
+    "shape": "box",
+    "en": "The Noble Sindh: Tale of Jambudipa. classical Jataka of duty, sacrifice, and the ultimate charge.",
+    "ko": "고귀한 신두 말: 잠부디빠 이야기\n의무와 희생, 마지막 돌격을 그린 자타카"
+   }
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     614,
+     97
+    ],
+    "shape": "bubble",
+    "en": "Crimson curtains and gold-starred canopy.",
+    "ko": "진홍 휘장과 금별 박힌 차양"
+   },
+   {
+    "seed": [
+     115,
+     337
+    ],
+    "shape": "bubble",
+    "en": "Ground scented with four perfumes.",
+    "ko": "네 가지 향을 뿌린 바닥"
+   },
+   {
+    "rect": [
+     270,
+     24,
+     530,
+     70
+    ],
+    "ko": "브라흐마닷따 왕이 아끼던 신두 군마는 더없이 좋은 대우를 받았습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "seed": [
+     74,
+     136
+    ],
+    "ko": "십만 냥짜리 금 접시에 담은 3년 묵은 쌀",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "seed": [
+     624,
+     330
+    ],
+    "ko": "늘 타오르는 향기로운 기름 등불",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     266,
+     372
+    ],
+    "shape": "bubble",
+    "en": "Thei missive offered no compromi se: wo” “Yield up your kingdom to us, or give battle.”",
+    "ko": "그들의 편지는 타협을 허락하지 않았습니다.\n“나라를 내놓든지, 아니면 싸우자.”"
+   },
+   {
+    "rect": [
+     270,
+     24,
+     530,
+     72
+    ],
+    "ko": "평화가 깨졌습니다. 일곱 왕이 바라나시를 에워쌌습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     100,
+     268
+    ],
+    "shape": "bubble",
+    "en": "“Give me your noble warhorse, and could fight not seven kings only, but all the kings in Jambudipa.”",
+    "ko": "“저 고귀한 군마만 주시면 일곱 왕이 아니라 잠부디빠의 모든 왕과도 싸우겠습니다.”"
+   },
+   {
+    "rect": [
+     270,
+     24,
+     530,
+     72
+    ],
+    "ko": "대신들은 신중하자고 했지만, 충직한 기사 한 사람이 앞으로 나섰습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     84,
+     351
+    ],
+    "ko": "왕이 허락했습니다. 고귀한 군마를 끌어내 무거운 갑옷을 입혔습니다. 기사는 머리부터 발끝까지 무장하고 칼을 찼습니다. 둘은 함께 성문을 나섰습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     352,
+     52,
+     740,
+     104
+    ],
+    "ko": "번개 같은 돌격! 첫째 진을 부수고 왕을 사로잡았습니다. 다시 싸움터로 나가 둘째, 셋째, 넷째, 다섯째 진을 무너뜨렸습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     154,
+     391
+    ],
+    "shape": "box",
+    "en": "They ey orn broke the sixth camp and captured the sixth ie But an ar TOW tnd ae warhorse. deep wound streamed with blood, bringing sharp, agonizing pain.",
+    "ko": "여섯째 진을 부수고 여섯째 왕을 사로잡았습니다. 그러나 화살 하나가 군마에 꽂혔습니다. 깊은 상처에서 피가 흘렀고 날카로운 고통이 밀려왔습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     170,
+     384
+    ],
+    "shape": "box",
+    "en": "At aie king’s gate, wie knight loosened Ale Sindh’ mail. oie fhe. grievous wound, he set about arming another iors for the final battle",
+    "ko": "왕의 성문에서 기사는 신두 말의 갑옷을 풀었습니다. 깊은 상처를 본 그는 마지막 싸움을 위해 다른 말을 무장시키기 시작했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     433,
+     66
+    ],
+    "shape": "box",
+    "en": "Horse* Horse* The seventh camp holds. The knight is slain. Benares falls.",
+    "ko": "*새 말* = 일곱째 진은 버티고, 기사는 죽고, 바라나시는 무너진다."
+   },
+   {
+    "seed": [
+     325,
+     235
+    ],
+    "shape": "box",
+    "en": "Rise* Rise The seventh king falls. The Kingdom",
+    "ko": "*내가 일어나면* = 일곱째 왕이 쓰러지고, 나라를 지킨다."
+   },
+   {
+    "seed": [
+     79,
+     70
+    ],
+    "ko": "보살은 깨달았습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     272,
+     115,
+     520,
+     322
+    ],
+    "ko": "“아삐 빳세나 세마노,\n살레비 살랄리까또,\n세이요 와 왈라와 봇조,\n윤자 망 예와 사라티 띠.”\n\n(옆으로 쓰러져 화살에 꿰뚫렸어도\n혈통 좋은 말이 암말보다 낫다.\n마부여, 나에게 마구를 채워라.)",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     95,
+     390
+    ],
+    "shape": "box",
+    "en": "Wound bound and re-armed, the Bodhisatta surged forward. In one final, impossible charge, they broke the seventh camp and brought back the seventh king alive.",
+    "ko": "상처를 싸매고 다시 무장한 보살이 앞으로 내달렸습니다. 마지막, 불가능해 보이던 돌격으로 일곱째 진을 부수고 일곱째 왕을 산 채로 데려왔습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     68,
+     40,
+     330,
+     192
+    ],
+    "ellipse": true,
+    "ko": "성문에서 위대한 존재가 말했습니다. “이 왕들을 죽이지 말고 맹세로 묶으십시오. 이 기사를 높이 대하십시오.” 그리고 왕에게 바른 통치의 세 기둥을 전했습니다.",
+    "align": "center",
+    "shape": "bubble",
+    "manual": true,
+    "em": 13
+   },
+   {
+    "rect": [
+     360,
+     210,
+     482,
+     280
+    ],
+    "ellipse": true,
+    "ko": "보시를\n행하십시오.",
+    "align": "center",
+    "shape": "bubble",
+    "manual": true,
+    "em": 16
+   },
+   {
+    "rect": [
+     470,
+     262,
+     590,
+     330
+    ],
+    "ellipse": true,
+    "ko": "계를\n지키십시오.",
+    "align": "center",
+    "shape": "bubble",
+    "manual": true,
+    "em": 16
+   },
+   {
+    "rect": [
+     604,
+     316,
+     722,
+     384
+    ],
+    "ellipse": true,
+    "ko": "정의롭게\n다스리십시오.",
+    "align": "center",
+    "shape": "bubble",
+    "manual": true,
+    "em": 16
+   },
+   {
+    "rect": [
+     92,
+     148,
+     312,
+     190
+    ],
+    "ko": " ",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     300,
+     140,
+     330,
+     170
+    ],
+    "ko": " ",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     109,
+     372
+    ],
+    "shape": "box",
+    "en": "His duty fulfilled, the soldiers began taking off his mail piecemeal. Before the last piece fell, the magnificent Sindh closed his eyes and passed away",
+    "ko": "의무를 다하자 병사들이 갑옷을 하나씩 벗겼습니다. 마지막 조각이 떨어지기 전에, 위대한 신두 말은 눈을 감고 숨을 거두었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-14-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     100,
+     70
+    ],
+    "ko": "왕은 깊은 존경을 담아 말의 장례를 치렀습니다. 기사는 큰 상을 받았습니다. 일곱 왕은 다시는 전쟁하지 않겠다고 맹세하고 평화롭게 돌아갔습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
