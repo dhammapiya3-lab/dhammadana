@@ -6,13 +6,19 @@ on:
     paths: ["jobs/**"]
 permissions:
   contents: write
-concurrency: { group: storybooks, cancel-in-progress: false }
+concurrency: { group: storybooks, cancel-in-progress: true }
 jobs:
   run:
     runs-on: ubuntu-latest
     timeout-minutes: 340
     steps:
       - uses: actions/checkout@v4
+      - name: 원본 그림 보관함
+        uses: actions/cache@v4
+        with:
+          path: cache/orig
+          key: storybooks-orig-${{ github.run_id }}
+          restore-keys: storybooks-orig-
       - name: 도구 설치
         run: |
           sudo apt-get update -q && sudo apt-get install -y -q tesseract-ocr fonts-noto-cjk > /dev/null
@@ -22,12 +28,14 @@ jobs:
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
           R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
-        run: bash jobs/run.sh 2>&1 | tee jobs/last-log.txt
-      - name: 결과 저장
-        if: always()
+          OMP_THREAD_LIMIT: "1"
         run: |
           git config user.name "storybooks-bot"
           git config user.email "actions@users.noreply.github.com"
+          bash jobs/run.sh 2>&1 | tee jobs/last-log.txt
+      - name: 결과 저장
+        if: always()
+        run: |
           git add -A
           git commit -q -m "작업 결과 [skip ci]" || echo "바뀐 것 없음"
           git push

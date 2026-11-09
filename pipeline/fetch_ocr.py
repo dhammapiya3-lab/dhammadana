@@ -40,6 +40,8 @@ def main():
     keep = set(sys.argv[sys.argv.index("--keep") + 1:]) if "--keep" in sys.argv else set()
     b = cat["books"][slug]
     for sf, st in b["stories"].items():
+        if keep and sf not in keep:
+            continue
         out = f"data/ocr/{slug}/{sf.rsplit('.', 1)[0]}.json"
         if os.path.exists(out) and sf not in keep:
             continue

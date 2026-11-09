@@ -53,10 +53,35 @@ def seed_for(img, gray, wd):
     return (x0 + xs[k], y0 + ys[k])
 
 
+REF = 800  # 상자 찾기는 이 너비로 줄인 그림에서 (큰 그림은 테두리가 번져 채우기가 새어 나감)
+
+
+def small_of(img):
+    H, W = img.shape[:2]
+    k = REF / W
+    return cv2.resize(img, (REF, round(H * k)), interpolation=cv2.INTER_AREA), k
+
+
+def region_masks(img, seed800):
+    """원본 크기의 (상자 전체, 상자 안쪽) 마스크"""
+    H, W = img.shape[:2]
+    sm, k = small_of(img)
+    fl, full = flood(sm, seed800)
+    full = cv2.resize(full, (W, H), interpolation=cv2.INTER_LINEAR)
+    full = (full > 127).astype(np.uint8) * 255
+    band = max(5, int(7 / k))  # 테두리 선 두께만큼 안쪽으로
+    inner = cv2.erode(full, np.ones((band, band), np.uint8))
+    return full, inner
+
+
 def detect(img):
+    big = img
+    img, kk = small_of(big)
     h, w = img.shape[:2]
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    words = ocr_words(img)
+    words = []
+    for q in ocr_words(big):  # 글자 읽기는 원본 크기로 (더 정확)
+        words.append({**q, "x": q["x"] * kk, "y": q["y"] * kk, "w": q["w"] * kk, "h": q["h"] * kk})
     regions = []  # {full, fl, words}
     for wd in words:
         cx, cy = int(wd["x"] + wd["w"] / 2), int(wd["y"] + wd["h"] / 2)
@@ -92,14 +117,14 @@ def detect(img):
                 lines.append([q])
         text = " ".join(" ".join(x["t"] for x in sorted(l, key=lambda q: q["x"])) for l in lines)
         fill = float((r["full"] > 0).sum()) / ((r["bbox"][2] - r["bbox"][0] + 1) * (r["bbox"][3] - r["bbox"][1] + 1))
-        out.append({"seed": r["seed"], "bbox": r["bbox"], "shape": "box" if fill > 0.9 else "bubble",
+        out.append({"seed": r["seed"], "bbox": [round(v / kk) for v in r["bbox"]], "shape": "box" if fill > 0.9 else "bubble",
                     "en": text, "conf": round(min(q["c"] for q in ws))})
-    out.sort(key=lambda b: (b["bbox"][1] // 80, b["bbox"][0]))
+    out.sort(key=lambda b: (b["bbox"][1] // 200, b["bbox"][0]))
     # 상자 밖에 남은 글자(못 지운 글)
     loose = [q["t"] for q in words if not any(
-        b["bbox"][0] <= q["x"] + q["w"] / 2 <= b["bbox"][2] and b["bbox"][1] <= q["y"] + q["h"] / 2 <= b["bbox"][3] for b in out)
+        b["bbox"][0] * kk <= q["x"] + q["w"] / 2 <= b["bbox"][2] * kk and b["bbox"][1] * kk <= q["y"] + q["h"] / 2 <= b["bbox"][3] * kk for b in out)
         and q["c"] > 80 and len(q["t"]) > 2]
-    return {"size": [w, h], "boxes": out, "loose": loose}
+    return {"size": [big.shape[1], big.shape[0]], "ref": REF, "boxes": out, "loose": loose}
 
 
 if __name__ == "__main__":
