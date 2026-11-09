@@ -38,7 +38,8 @@ const TOPICS = { main: TOPICS_RAW.main.map(x => x.label), groups: [] };
 for (const it of TOPICS_RAW.items) { let g = TOPICS.groups.find(x => x.name === it.group); if (!g) TOPICS.groups.push(g = { name: it.group, labels: [] }); g.labels.push(it.label); }
 const PROVIDERS = readJSON('providers.json').items;
 const PERMS = readJSON('permissions.json').items;
-const LINKS = readJSON('links.json').groups;
+// last: true 인 항목은 늘 그 묶음의 맨 끝에 (예: 영상 사이트)
+const LINKS = readJSON('links.json').groups.map(g => ({ ...g, items: [...(g.items || []).filter(x => !x.last), ...(g.items || []).filter(x => x.last)] }));
 const PLAYLISTS = readJSON('playlists.json').items;
 const VARIANTS = readJSON('variants.json').items.map(v => v.words);
 const BOOKS = fs.readdirSync(C('books')).filter(f => f.endsWith('.json'))
