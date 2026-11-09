@@ -24,6 +24,8 @@ lib.LEX.pali = words('pali-words.txt'); lib.LEX.en = words('en-words.txt');
 
 const OPT = { pali: true, gloss: flags.includes('--gloss'), en: true, hanja: false, fn: false, sym: false, paren: true, brack: true, enVoice: false };
 const t = JSON.parse(fs.readFileSync(path.join(root, 'content/texts', ID + '.json'), 'utf8'));
+// 오디오북에서만 바꿔 읽을 곳(책 본문은 그대로): 텍스트 JSON 의 audio_fix [[찾을 글, 바꿀 글], …] — 영어 이름을 한글 소리로, 읽을 수 없는 일본어 제목 빼기 등 (운영자와 상의해 정함)
+for (const [a, b] of (t.audio_fix || [])) t.body = t.body.split(a).join(b);
 const parts = t.body.split(/^=== (.+?) ===$/m); // [앞, 이름1, 글1, 이름2, 글2 …]
 const pages = []; for (let i = 1; i < parts.length; i += 2) pages.push({ label: parts[i], text: parts[i + 1] || '' });
 const top = (t.toc || []).filter(x => !x.sub && !/^\s/.test(x.title)).sort((x, y) => x.page - y.page);
