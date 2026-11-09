@@ -425,5 +425,18 @@
         }
       }
     }
+  },
+  "bottom": {
+    "name": "함께 읽는 아시아 고전",
+    "note": "불교 경전이나 불교 역사를 직접 다루지는 않지만, 아시아의 지혜를 담은 고전 이야기입니다.",
+    "books": [
+      "Journey",
+      "Basho",
+      "Issa",
+      "Taoist-Masters",
+      "Ramayana",
+      "Mahabharata",
+      "Pancatantra"
+    ]
   }
 }

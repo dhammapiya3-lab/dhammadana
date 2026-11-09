@@ -94,3 +94,5 @@ header.site{border-bottom:1px solid var(--line)}
 footer.site{border-top:1px solid var(--line);margin-top:40px;padding:22px 0 30px;font-size:13px;color:var(--ink-soft)}
 footer.site p{margin:0 0 6px} .sadhu{color:var(--robe)}
 @media (max-width:520px){.sv-bar .lg{display:none}.sv-bar{gap:6px}.head-row{padding:12px 16px}.story h1{font-size:22px}}
+.cat.bottom{margin-top:56px;padding-top:8px;border-top:3px double var(--line)}
+.cat.bottom>p{margin:-6px 0 16px;font-size:14px}
