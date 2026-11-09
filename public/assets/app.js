@@ -1612,17 +1612,14 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
     showGuide(guideText()); return false;
   };
   const off = () => { store.set('install-off', true); const b = $('#installBar'); if (b) b.remove(); };
-  // 내 서재의 '앱 설치' 칸 (운영자 요청, 2026-11-10): 처음 안내 띠를 닫았어도 언제든 여기서 설치
+  // 내 서재의 '앱 설치' 칸 (운영자 요청, 2026-11-10): 처음 안내 띠를 닫았어도 여기서 설치.
+  // 브라우저가 '설치할 수 있다'고 알려 줄 때(beforeinstallprompt)만 단추가 생김 → 이미 설치한 컴퓨터에는 안 보이고, 앱을 지우면 다시 보임
   const box = $('#installBox');
-  if (box) {
-    if (standalone) box.innerHTML = '<p class="note">📲 지금 앱으로 열어 보고 계십니다. (이미 설치됨)</p>';
-    else {
-      box.innerHTML = `<div class="install-box"><div><b>📲 앱으로 설치하기</b><p class="small muted ib-t">홈 화면에서 바로 열고, 한 번 읽은 책은 인터넷 없이도 볼 수 있어요.</p></div><button class="btn" id="ibBox">앱 설치</button></div>`;
-      // 이미 이 컴퓨터에 설치했으면(크롬이 알려 주면) 설치 단추 대신 알림
-      if (navigator.getInstalledRelatedApps) navigator.getInstalledRelatedApps().then(l => { if (l && l.length) box.innerHTML = '<p class="note">📲 이 컴퓨터에 이미 앱으로 설치되어 있어요. 바탕화면·시작 메뉴의 ‘법보시 도서관’이나 주소창의 ‘앱에서 열기’로 여세요.</p>'; }).catch(() => {});
-      $('#ibBox').onclick = () => tryInstall(t => { $('.ib-t', box).innerHTML = t; }).then(ok => { if (ok) { box.innerHTML = '<p class="note">설치했습니다. 홈 화면의 도서관 아이콘으로 여세요.</p>'; off(); } });
-    }
-  }
+  const showBox = () => {
+    if (!box || standalone || $('#ibBox')) return;
+    box.innerHTML = `<div class="install-box"><div><b>📲 앱으로 설치하기</b><p class="small muted ib-t">바탕화면·시작 메뉴에서 바로 열고, 한 번 읽은 책은 인터넷 없이도 볼 수 있어요.</p></div><button class="btn" id="ibBox">앱 설치</button></div>`;
+    $('#ibBox').onclick = () => tryInstall(t => { $('.ib-t', box).innerHTML = t; }).then(ok => { if (ok) { box.innerHTML = '<p class="note">설치했습니다. 바탕화면·시작 메뉴의 ‘법보시 도서관’으로 여세요.</p>'; off(); } });
+  };
   const barOk = !(standalone || store.get('install-off', false) || inApp() || /^\/(admin|read|study|mynotes)\b/.test(location.pathname));
   const show = () => {
     if (!barOk || $('#installBar')) return;
@@ -1632,7 +1629,7 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
     $('#ibNo').onclick = off;
     $('#ibGo').onclick = () => tryInstall(t => { $('.ib-t', b).innerHTML = t + ' 이미 설치하셨다면 이 안내는 닫으셔도 돼요.'; const g = $('#ibGo'); if (g) g.remove(); }).then(ok => ok && off());
   };
-  window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); ev = e; show(); });
+  window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); ev = e; show(); showBox(); });
   window.addEventListener('appinstalled', () => { off(); if (box) box.innerHTML = '<p class="note">설치했습니다. 홈 화면의 도서관 아이콘으로 여세요.</p>'; });
   if (ios && /Safari/i.test(navigator.userAgent) && !/CriOS|FxiOS|EdgiOS/i.test(navigator.userAgent)) setTimeout(show, 1500);
 })();
