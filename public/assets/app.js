@@ -1626,6 +1626,8 @@ function abBar() {
       <div class="ab-mid"><div class="ab-t" id="abTitle"></div><div class="ab-row"><span id="abCur">0:00</span><input type="range" id="abSeek" min="0" max="1000" value="0" aria-label="재생 위치"><span id="abDur">0:00</span></div></div>
       <div class="ab-opt"><select id="abRate" aria-label="빠르기" data-tip="듣는 빠르기">${[0.8, 1, 1.2, 1.5, 1.8, 2].map(v => `<option value="${v}">${v}배</option>`).join('')}</select><button id="abHere" data-tip="듣는 곳으로: 지금 소리로 읽고 있는 문단으로 글을 옮기고, 다시 글이 소리를 따라가게 합니다" aria-label="듣는 곳으로 — 지금 읽고 있는 문단으로 글을 옮김">📍</button><button id="abLock" data-tip="잠금: 실수로 멈추거나 닫히지 않게, 화면도 꺼지지 않게" aria-label="잠그기" aria-pressed="false">🔓</button><button id="abClose" data-tip="오디오북 닫기" aria-label="오디오북 닫기">✕</button></div>`;
     document.body.appendChild(b);
+    // 재생 바의 빈 곳(제목·시간 글자 등)을 누르면 글을 누를 때처럼 위 메뉴·아래 바가 나타나거나 숨음 — 휴대폰에서 화면 아래쪽은 재생 바가 덮고 있어서 (운영자 요청, 2026-11-10)
+    b.addEventListener('click', e => { if (e.target.closest('button,input,select,label')) return; const el = $('#reader'); if (!el) return; if (el.classList.toggle('chrome-off')) $$('.panel', el).forEach(x => x.classList.remove('open')); });
     const a = abA();
     const L = f => (...x) => AB.locked ? abLockedMsg() : f(...x);
     $('#abLock').onclick = () => abSetLock(!AB.locked);
