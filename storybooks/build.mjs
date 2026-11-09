@@ -9,7 +9,6 @@ const CAT = rd('catalog.json');      // 원 사이트 구조 (영어 원문)
 const KO = rd('ko.json');            // 한국어 번역
 const READY = rd('ready.json');      // 한글 그림이 준비된 이야기 { "책/이야기": 그림 수 }
 const S = KO.site, U = KO.ui;
-const BOTTOM = (KO.bottom?.books || []).filter(s => CAT.books[s]); // 불교와 직접 관련 없는 책 — 맨 아래 따로
 const OUT = path.join(ROOT, 'dist');
 const V = Date.now().toString(36);
 
@@ -86,10 +85,9 @@ put('index.html', layout({ page: 'home', body: `<section class="hero"><div class
   <h1>법을 담은 그림책</h1><p>${esc(S.intro)}</p>
   <div class="filter"><input id="q" type="search" placeholder="${U.filter}" aria-label="${U.filter}"><button id="qReset" type="button">${U.reset}</button></div>
 </div></section>
-<div class="wrap">${CAT.categories.map(c => ({ ...c, books: c.books.filter(b => !BOTTOM.includes(b.slug)) })).filter(c => c.books.length).map(c => `<section class="cat"><h2>${esc(KO.categories[c.name] || c.name)}</h2>
-  <div class="grid">${c.books.map(b => card(bookInfo(b.slug))).join('')}</div></section>`).join('')}
-${BOTTOM.length ? `<section class="cat bottom"><h2>${esc(KO.bottom.name)}</h2><p class="muted">${esc(KO.bottom.note)}</p>
-  <div class="grid">${BOTTOM.map(s => card(bookInfo(s))).join('')}</div></section>` : ''}
+<div class="wrap">${KO.tiers.map((t, ti) => `<div class="tier t${ti}"><h2 class="tier-h">${esc(t.name)}</h2><p class="muted tier-note">${esc(t.note)}</p>
+${t.sections.map(([name, books]) => `<section class="cat">${name ? `<h3>${esc(name)}</h3>` : ''}
+  <div class="grid">${books.filter(b => CAT.books[b]).map(b => card(bookInfo(b))).join('')}</div></section>`).join('')}</div>`).join('')}
 <p id="noRes" class="muted" hidden>${U.no_result}</p></div>` }));
 
 // 책 화면 · 이야기 화면

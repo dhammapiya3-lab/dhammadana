@@ -426,17 +426,130 @@
       }
     }
   },
-  "bottom": {
-    "name": "함께 읽는 아시아 고전",
-    "note": "불교 경전이나 불교 역사를 직접 다루지는 않지만, 아시아의 지혜를 담은 고전 이야기입니다.",
-    "books": [
-      "Journey",
-      "Basho",
-      "Issa",
-      "Taoist-Masters",
-      "Ramayana",
-      "Mahabharata",
-      "Pancatantra"
-    ]
-  }
+  "tiers": [
+    {
+      "name": "테라와다 불교",
+      "note": "빠알리 경전과 주석서, 스리랑카·동남아시아의 전승, 현대 테라와다 스승들의 이야기입니다.",
+      "sections": [
+        [
+          "보살",
+          [
+            "Jataka",
+            "Pannasa"
+          ]
+        ],
+        [
+          "부처님",
+          [
+            "After-Awakening",
+            "The-Great-Emancipation",
+            "Vinaya-Stories",
+            "Way-Beyond",
+            "Light-of-Asia"
+          ]
+        ],
+        [
+          "으뜸 제자들",
+          [
+            "Foremost-Monks",
+            "Foremost-Nuns",
+            "Foremost-Laymen",
+            "Foremost-Laywomen",
+            "Four-Rich-Men"
+          ]
+        ],
+        [
+          "법 이야기",
+          [
+            "Dhammapada",
+            "Rasavahini"
+          ]
+        ],
+        [
+          "연대기",
+          [
+            "Asoka",
+            "Sanghamitta",
+            "Dipavamsa",
+            "Thupavamsa",
+            "Sasanavamsa"
+          ]
+        ],
+        [
+          "현대의 스승들",
+          [
+            "Mahasi",
+            "Rerukane",
+            "Pure-Inspiration",
+            "Ajahn-Mun",
+            "Ajahn-Chah",
+            "Ayya-Khema"
+          ]
+        ],
+        [
+          "명상 가르침",
+          [
+            "Bhikkhu-Sumedha",
+            "Gentle-Way"
+          ]
+        ],
+        [
+          "법의 가르침",
+          [
+            "Perfections",
+            "Basic-Concepts",
+            "Bojjhanga"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "대승 불교와 여러 전통",
+      "note": "산스끄리뜨·타밀 불교 문학과 중국·티베트 불교의 이야기입니다.",
+      "sections": [
+        [
+          "본생 이야기와 서사시",
+          [
+            "Jatakamala",
+            "Manimekhalai"
+          ]
+        ],
+        [
+          "중국",
+          [
+            "Eminent-Monks",
+            "Transmission-of-the-Lamp",
+            "Chinese-Nuns"
+          ]
+        ],
+        [
+          "티베트",
+          [
+            "Nalanda-Masters",
+            "Buddhism-in-Tibet",
+            "Marpa",
+            "Milarepa"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "함께 읽는 아시아 고전",
+      "note": "불교 경전이나 불교 역사를 직접 다루지는 않지만, 아시아의 지혜를 담은 고전 이야기입니다.",
+      "sections": [
+        [
+          "",
+          [
+            "Journey",
+            "Basho",
+            "Issa",
+            "Taoist-Masters",
+            "Ramayana",
+            "Mahabharata",
+            "Pancatantra"
+          ]
+        ]
+      ]
+    }
+  ]
 }

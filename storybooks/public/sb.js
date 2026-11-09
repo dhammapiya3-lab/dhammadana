@@ -8,7 +8,7 @@
       const v = q.value.trim().toLowerCase();
       let any = false;
       cards.forEach(c => { const on = !v || c.dataset.q.includes(v); c.hidden = !on; any ||= on; });
-      document.querySelectorAll('.cat').forEach(s => { s.hidden = ![...s.querySelectorAll('.bcard')].some(c => !c.hidden); });
+      document.querySelectorAll('.cat, .tier').forEach(s => { s.hidden = ![...s.querySelectorAll('.bcard')].some(c => !c.hidden); });
       document.getElementById('noRes').hidden = any;
     };
     q.addEventListener('input', run);
