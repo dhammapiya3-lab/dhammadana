@@ -944,7 +944,9 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .r-toc .tt{min-width:0}
 .r-toc .dots{flex:1;min-width:1.5em;border-bottom:1px dotted currentColor;opacity:.35;transform:translateY(-.3em)}
 .r-toc .tp{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.9em}
-.r-toc .l0{font-weight:700;margin-top:1.15em;font-size:1.05em}
+.r-toc .l0{margin-top:.9em}
+.r-toc .l0 + .l0{margin-top:.18em}
+.r-toc .l0 b,.r-toc .l0 strong{font-size:1.05em}
 .r-toc .l0:first-child{margin-top:0}
 .r-toc .l1{padding-left:1.5em}
 .r-toc .l2{padding-left:3em;font-size:.88em;color:var(--muted)}
