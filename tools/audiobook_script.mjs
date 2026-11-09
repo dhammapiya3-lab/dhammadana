@@ -33,6 +33,10 @@ const changes = new Map(); // 원문 낱말 → 소리
 const LAT = /[A-Za-zÀ-ÖØ-öø-žḀ-ỿ][A-Za-zÀ-ÖØ-öø-žḀ-ỿ'’-]*/g;
 const same = (x, y) => x.replace(/[\s·.,()\[\]]/g, '') === y.replace(/[\s·.,()\[\]]/g, '');
 let n = 0;
+const END = /([.?!…。]|[.?!][”’"」』)\]]*)$|[”’"」』]$/;
+// 소리로 듣기에 맞지 않는 장(약어 표·차례·광고 목록)은 원고에서 뺌 (--all 이면 모두 넣음)
+const SKIP = /^(빠알리문헌약어|약어|일러두기|차례|목차|찾아보기|색인|참고문헌|활성스님법문집〈소리문고〉)$/;
+const skipped = [];
 // 책에 인쇄된 철자 → 읽을 때 쓸 바른 철자 (원고에서만 바꿈)
 const SPELL = [['michacārā', 'micchācārā']];
 
@@ -70,11 +74,13 @@ function stripGloss(s) {
 }
 top.forEach((c, k) => {
   const from = c.page, to = (top[k + 1] ? top[k + 1].page : pages.length + 1) - 1;
-  const paras = [];
+  const paras = []; let lastHead = false;
   for (let p = from; p <= to; p++) {
     const txt = (pages[p - 1] || {}).text || '';
-    txt.split(/\n{2,}/).forEach(par => {
+    let first = true;
+    txt.split(/\n{2,}/).forEach((par, pi) => {
       par = par.trim(); if (!par) return;
+      if (pi > 0 || !/\S/.test(par)) first = false;
       if (/^!\[/.test(par)) return;                                   // 그림
       if (/^\[\^[^\]]+\]:/.test(par)) { if (flags.includes('--footnotes')) paras.push('각주. ' + lib.sayable(par.replace(/^\[\^[^\]]+\]:\s*/, ''), OPT)); return; }
       if (/^\|/.test(par)) return;                                    // 표
@@ -89,20 +95,28 @@ top.forEach((c, k) => {
       // 책에 잘못 인쇄된 빨리어 철자는 읽을 때만 바른 철자로 (책 본문은 그대로) — 운영자 확인, 2026-11-09
       for (const [bad, good] of SPELL) pre = pre.split(bad).join(good);
       pre = pre.split('\n').filter(l => !(/속표지|판권지/.test(c.title) && !/[가-힣āīūṃṅñṭḍṇḷ]/.test(l))).map(stripGloss).filter(x => x).join('\n');  // 속표지·판권지의 영어 줄은 한글과 같은 내용이라 뺌
-      if (!pre) return;
+      pre = pre.replace(/[＊※]\s*/g, '').replace(/^\*\s+/gm, '').replace(/[‘’“”]/g, '').replace(/(^|\s)\S+\.(?:html?|php|aspx?)\b/g, '$1');  // 따옴표는 소리 내지 않음(조사 앞에 빈칸이 생기지 않게), 줄에 남은 주소 조각 뺌
+      if (/판권지/.test(c.title)) pre = pre.split('\n').filter(l => !/주소|전화|팩스|지부|홈페이지|이메일|등록번호|ISBN|값 /.test(l)).join('\n');  // 판권지는 책 이름·판·사람·펴낸 곳만
+      if (!pre.trim()) return;
       const said = lib.sayable(pre, OPT);
       (pre.match(LAT) || []).forEach(w => { const s = lib.PALI(w.replace(/[’'-]/g, '')); if (s && lib.langOf(w) !== 'E') changes.set(w, s); });
-      if (said) paras.push(said);
+      if (!said) return;
+      // 쪽이 바뀌며 끊긴 문장은 앞 문단에 이어 붙임 (쪽 첫 문단이고, 앞 문단이 문장 끝맺음 없이 끝났을 때)
+      if (first && paras.length && !lastHead && !END.test(paras[paras.length - 1])) paras[paras.length - 1] += ' ' + said;
+      else paras.push(said);
+      lastHead = /^## /.test(par); first = false;
     });
   }
   // 장 첫머리에 장 제목과 같은 글이 또 있으면 한 번만 (사이트 듣기와 같음)
-  while (paras.length && same(paras[0], c.title)) paras.shift();
   const title = lib.sayable(c.title, OPT);
+  while (paras.length && (same(paras[0], c.title) || same(paras[0], title))) paras.shift();
+  if (SKIP.test(c.title.replace(/\s/g, '')) && !flags.includes('--all')) { skipped.push(c.title); return; }
   if (!paras.length && !title) return;
   n++;
-  const name = String(n).padStart(2, '0') + '_' + c.title.replace(/[\\/:*?"<>|]/g, '').slice(0, 40).trim() + '.txt';
+  const name = String(n).padStart(2, '0') + '_' + c.title.replace(/[\u3400-\u9FFF]+/g, '').replace(/[\\/:*?"<>|]/g, '').slice(0, 40).trim() + '.txt';
   fs.writeFileSync(path.join(outDir, name), [title, ...paras].join('\n\n') + '\n');
 });
 const tsv = ['원문\t소리', ...[...changes].sort((x, y) => x[0].localeCompare(y[0])).map(([w, s]) => `${w}\t${s}`)].join('\n');
 fs.writeFileSync(path.join(outDir, '빨리어_소리_확인.tsv'), tsv + '\n');
+if (skipped.length) console.log('  원고에서 뺀 장: ' + skipped.join(', '));
 console.log(`${ID}: 장 ${n}개, 빨리어 낱말 ${changes.size}개 → ${path.relative(root, outDir)}`);
