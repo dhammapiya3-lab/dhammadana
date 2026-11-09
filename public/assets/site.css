@@ -1012,3 +1012,7 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .tipbox{position:fixed;z-index:200;background:#2b2a27;color:#fff;font-size:12.5px;line-height:1.5;padding:7px 10px;border-radius:7px;pointer-events:none;opacity:0;transition:opacity .12s;box-shadow:0 4px 14px rgba(0,0,0,.2)}
 .tipbox.show{opacity:1}
 .st-tools select.on{border-color:var(--robe);color:var(--robe);font-weight:600}
+.ab-bar.locked{box-shadow:0 0 0 2px var(--robe),0 6px 24px rgba(0,0,0,.16)}
+.ab-bar.locked #abBack,.ab-bar.locked #abPlay,.ab-bar.locked #abFwd,.ab-bar.locked #abClose,.ab-bar.locked select{opacity:.4}
+.ab-bar.locked .ab-row input{pointer-events:none;opacity:.5}
+.ab-bar #abLock[aria-pressed="true"]{background:var(--robe);color:var(--paper);border-color:var(--robe)}
