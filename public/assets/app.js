@@ -1009,13 +1009,13 @@ function bindReader() {
     if (!s || s.isCollapsed || !s.toString().trim()) { if (!pop._hold) pop.classList.remove('show'); return; }
     const node = s.anchorNode && (s.anchorNode.nodeType === 1 ? s.anchorNode : s.anchorNode.parentElement); const para = node && node.closest('[data-pg]');
     if (!para || !body.contains(para)) { pop.classList.remove('show'); return; }
-    const r = s.getRangeAt(0).getBoundingClientRect(), pw = pop.offsetWidth || 240, ph = 46;
-    pop.style.left = Math.max(8, Math.min(window.innerWidth - pw - 8, r.left + r.width / 2 - pw / 2)) + 'px';
+    const z = bodyZoom(), r = s.getRangeAt(0).getBoundingClientRect(), pw = (pop.offsetWidth || 240) * z, ph = 46 * z;
+    pop.style.left = Math.max(8, Math.min(window.innerWidth - pw - 8, r.left + r.width / 2 - pw / 2)) / z + 'px';
     // 휴대폰은 위쪽에 기기 자체의 복사 메뉴가 뜨므로 아래쪽에 둠
     let top = touch ? r.bottom + 14 : r.top - ph - 4;
     if (top < 8) top = r.bottom + 14;
     if (top > window.innerHeight - ph - 70) top = Math.max(8, r.top - ph - 50);
-    pop.style.top = top + 'px';
+    pop.style.top = top / z + 'px';
     pop.classList.add('show'); pop._sel = { text: s.toString().replace(/\s+/g, ' ').trim(), p: +para.dataset.pg };
   };
   let selT; window._ddOnSel = () => { clearTimeout(selT); selT = setTimeout(onSel, touch ? 350 : 30); };
@@ -1666,6 +1666,8 @@ function abMedia(c) {
 }
 // 읽는 분이 직접 글을 넘기면 8초 동안은 따라가지 않음
 ['wheel', 'touchmove', 'keydown', 'pointerdown'].forEach(t => document.addEventListener(t, e => { if (AB.on && e.target && e.target.closest && e.target.closest('#reader')) AB.userAt = Date.now(); }, { passive: true }));
+// 사이트 글자 크기 설정(body zoom 1.2·1.45)이 켜져 있으면 화면 좌표(getBoundingClientRect)와 CSS 좌표가 달라서, 떠 있는 창 자리를 정할 때 나눠 맞춤
+function bodyZoom() { return parseFloat(getComputedStyle(document.body).zoom) || 1; }
 // 짧은 안내 (data-tip): 마우스를 올리면, 손가락으로는 꾹 누르고 있으면(0.5초) 뜸 — 꾹 눌러 안내를 본 때는 단추가 눌리지 않음 (운영자 요청, 2026-11-10)
 (() => {
   let tip = null, hold = null, held = null, hide = null;
@@ -1674,14 +1676,16 @@ function abMedia(c) {
     if (!cur || !tip.classList.contains('show')) return;
     if (!document.contains(cur)) { tip.classList.remove('show'); return; }
     tip.style.left = '0px'; tip.style.top = '0px';  // 먼저 왼쪽 위로 옮겨 재야 줄바꿈이 바르게 됨 (오른쪽 끝에서 재면 폭이 좁아져 아주 길어짐)
-    const r = cur.getBoundingClientRect(), tw = tip.offsetWidth, th = tip.offsetHeight;
-    tip.style.left = Math.max(8, Math.min(innerWidth - tw - 8, r.left + r.width / 2 - tw / 2)) + 'px';
-    tip.style.top = Math.max(4, Math.min(innerHeight - th - 4, r.top - th - 8 < 4 ? r.bottom + 8 : r.top - th - 8)) + 'px';
+    // 사이트 글자 크기 설정(body zoom 1.2·1.45)이 켜져 있으면 화면 좌표와 CSS 좌표가 달라서 z 로 나눠 맞춤
+    const z = bodyZoom();
+    const r = cur.getBoundingClientRect(), tw = tip.offsetWidth * z, th = tip.offsetHeight * z;
+    tip.style.left = Math.max(8, Math.min(innerWidth - tw - 8, r.left + r.width / 2 - tw / 2)) / z + 'px';
+    tip.style.top = Math.max(4, Math.min(innerHeight - th - 4, r.top - th - 8 < 4 ? r.bottom + 8 : r.top - th - 8)) / z + 'px';
   };
   const loop = () => { place(); if (cur && tip.classList.contains('show')) raf = requestAnimationFrame(loop); };  // 재생 바가 위아래로 움직여도 따라감
   const show = t => {
     if (!tip) { tip = document.createElement('div'); tip.className = 'tipbox'; tip.setAttribute('role', 'tooltip'); document.body.appendChild(tip); }
-    tip.textContent = t.dataset.tip; tip.style.maxWidth = Math.min(280, innerWidth - 16) + 'px'; tip.classList.add('show');
+    tip.textContent = t.dataset.tip; tip.style.maxWidth = Math.min(280, (innerWidth - 16) / bodyZoom()) + 'px'; tip.classList.add('show');
     cur = t; cancelAnimationFrame(raf); loop();
   };
   document.addEventListener('mouseover', e => {
@@ -1959,10 +1963,10 @@ document.addEventListener('click', e => {
     const go = document.createElement('button'); go.className = 'link-btn small'; go.textContent = '각주 자리로 가기 ↓'; go.onclick = () => { pop.remove(); tgt.closest('p').scrollIntoView({ block: 'center' }); tgt.closest('p').classList.add('found'); setTimeout(() => tgt.closest('p').classList.remove('found'), 1600); }; pop.appendChild(go); }
   else pop.innerHTML = `<div class="fnpop-h">각주 ${n}<button class="fnpop-x" aria-label="닫기">✕</button></div><p class="muted">이 각주는 다른 쪽에 있습니다.</p>`;
   document.body.appendChild(pop);
-  const r = sup.getBoundingClientRect(), W = Math.min(420, innerWidth - 24);
-  pop.style.width = W + 'px'; pop.style.left = Math.max(12, Math.min(innerWidth - W - 12, r.left - W / 2)) + 'px';
-  const below = r.bottom + 8, h = pop.offsetHeight;
-  pop.style.top = (below + h < innerHeight - 8 ? below : Math.max(8, r.top - h - 8)) + 'px';
+  const z = bodyZoom(), r = sup.getBoundingClientRect(), W = Math.min(420 * z, innerWidth - 24);
+  pop.style.width = W / z + 'px'; pop.style.left = Math.max(12, Math.min(innerWidth - W - 12, r.left - W / 2)) / z + 'px';
+  const below = r.bottom + 8, h = pop.offsetHeight * z;
+  pop.style.top = (below + h < innerHeight - 8 ? below : Math.max(8, r.top - h - 8)) / z + 'px';
   pop.querySelector('.fnpop-x').onclick = () => pop.remove();
 }, true);
 document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && (e.target.classList.contains('fn-ref') || e.target.classList.contains('fn-no'))) { e.preventDefault(); e.target.click(); } if (e.key === 'Escape') { const p = document.getElementById('fnPop'); if (p) p.remove(); } });
