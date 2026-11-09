@@ -828,7 +828,7 @@ function bindReader() {
   const reopen = id => $('#' + id).classList.add('open');
   $('#rClose').onclick = exitReader;
   // 글로 보기에서는 한 화면이 한 장(章)이므로 ‹ › 는 장 단위로 넘깁니다 (쪽 단위면 같은 화면이 되풀이됨)
-  const stepCh = d => { const cs = chapters(), ci = chapterOf(R.i + 1), t = cs[ci + d]; if (t) { go(t.from, ci + d); $('#rBody').scrollTop = 0; window.scrollTo(0, 0); } };
+  const stepCh = d => { const cs = chapters(), ci = chapterOf(R.i + 1), t = cs[ci + d]; if (!t) { toast(d > 0 ? '책의 끝입니다' : '책의 처음입니다'); return; } if (t) { go(t.from, ci + d); $('#rBody').scrollTop = 0; window.scrollTo(0, 0); } };
   // 장 안에 소제목(목차의 들여쓴 항목)이 있으면 › 는 다음 소제목으로, ‹ 는 앞 소제목으로 내려가고/올라가고, 장 끝·처음에서만 장을 넘김 (운영자 요청, 2026-11-09)
   // 소제목으로 옮긴 뒤 위쪽 그림이 늦게 받아져 글이 밀리면(사진·구분선 자리에 멈춘 것처럼 보임) 몇 초 동안 소제목 자리를 다시 맞춤 (운영자 요청, 2026-11-10)
   // 위 메뉴가 떠 있으면(글 위에 겹쳐 보임) 그 높이만큼 아래에 소제목이 오게 — 메뉴에 가려 사진·구분선에 멈춘 것처럼 보이지 않게
@@ -836,7 +836,7 @@ function bindReader() {
   const pin = e => {
     const body = $('#rBody'); if (!body || !e) return;
     const place = () => { body.scrollTop = Math.max(0, e.getBoundingClientRect().top - body.getBoundingClientRect().top + body.scrollTop - navOff()); };
-    place(); const until = Date.now() + 4000; R.pinEl = e;
+    place(); const until = Date.now() + 4000; R.pinEl = e; R.lastPin = e;
     const fix = () => { if (R && R.pinEl === e && Date.now() < until) place(); };
     $$('#rBody img').forEach(im => { if (!im.complete) im.addEventListener('load', fix, { once: true }); });
     const stop = () => { if (R && R.pinEl === e) R.pinEl = null; body.removeEventListener('wheel', stop); body.removeEventListener('touchstart', stop); };
@@ -845,13 +845,17 @@ function bindReader() {
   const stepSub = d => {
     const body = $('#rBody'), cs = chapters(), ci = chapterOf(R.i + 1), c = cs[Math.max(0, ci)];
     const top0 = body.getBoundingClientRect().top, cur = body.scrollTop;
-    const ts = subTargets(c).map(e => ({ e, y: e.getBoundingClientRect().top - top0 + body.scrollTop - navOff() }));
+    // 서로 아주 가까운 자리(40px 안)는 하나로 — 같은 소제목에 두 번 멈추지 않게 (운영자 요청, 2026-11-10)
+    const ts = subTargets(c).map(e => ({ e, y: e.getBoundingClientRect().top - top0 + body.scrollTop - navOff() }))
+      .filter((v, i, a) => !i || v.y - a[i - 1].y > 40);
+    // 방금 멈춘 소제목이 늦게 받아진 그림 때문에 조금 내려가 있어도 다시 멈추지 않음
+    const last = R.lastPin, near = v => v.e === last && Math.abs(v.y - cur) < body.clientHeight * 0.6;
     if (d > 0) {
-      const t = ts.find(v => v.y > cur + 12);
+      const t = ts.find(v => v.y > cur + 12 && !near(v));
       if (t && (t.y < body.scrollHeight - body.clientHeight + 4 || cur < body.scrollHeight - body.clientHeight - 12)) { pin(t.e); return; }
       stepCh(1);
     } else {
-      const t = ts.filter(v => v.y < cur - 12).pop();
+      const t = ts.filter(v => v.y < cur - 12 && !near(v)).pop();
       if (t) { pin(t.e); return; }
       if (cur > 12) { body.scrollTop = 0; return; }
       stepCh(-1);

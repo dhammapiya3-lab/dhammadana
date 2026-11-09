@@ -41,6 +41,7 @@ with sync_playwright() as p:
             key = (r['ch'], r['text'], r['kind'])
             if key == prev:
                 same += 1
+                if same == 1 and r['kind'] in ('sub-h', 'bold') and not pg.evaluate("(()=>{const r=document.querySelector('#rRange');return +r.value>=+r.max-3})()"): bad.append(f"{bid} · {r['ch'].split('·')[-1].strip()} · {r.get('pg')} · 같은 소제목에 두 번 멈춤: {r['text']}")
                 if same > 3:
                     if pg.evaluate("(()=>{const r=document.querySelector('#rRange');return +r.value>=+r.max-3})()"): break  # 책 끝
                     bad.append(f"{bid} · {r['ch']} · 같은 곳에서 더 나가지 않음"); break
