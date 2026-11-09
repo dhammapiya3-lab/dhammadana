@@ -1282,6 +1282,7 @@ function sayable(s, o = ttsOpt(), mark = false) {
   t = t.replace(/[^\n]+/g, line => /[=＝]/.test(line) && /\d\s*[-–−]\s*\d/.test(line) ? line : line
     .replace(/\d+(?:[ ]?[-–][ ]?\d+){2,}/g, m => m.replace(/[ ]?[-–][ ]?/g, ' 다시 '))
     .replace(/(^|[^\d])(\d+)[ ]?[-–][ ]?(\d+)(?!\d)/g, (m, pre, a, b) => pre + a + (+a < +b && !/(제|동|리|길|번지|번길|호)\s*$/.test(pre + '') && !/(제|동|리|길|번지|번길)\s*$/.test(line.slice(0, line.indexOf(m) + pre.length)) ? '에서 ' : ' 다시 ') + b));
+  t = t.replace(/(\S)[ \t]+[|｜│ㅣ][ \t]+(?=\S)/g, '$1, ');  // 구분 막대(엮음 | 김재성)는 짧게 쉬기 — '이'로 읽지 않게 (운영자 요청, 2026-11-10)
   if (/^%% /.test(t)) t = tocLines(t).filter(r => !r.sp).map(r => r.t + (r.p ? `, ${r.p}쪽` : '')).join('.\n');
   if (o.paren === false) { let prev; do { prev = t; t = t.replace(/\s?[(（][^()（）]*[)）]/g, ''); } while (t !== prev); }
   if (o.brack === false) t = t.replace(/\s?\[(?!\^)[^\[\]]*\]/g, '');
@@ -1488,7 +1489,7 @@ const abLockedMsg = () => toast('오디오북이 잠겨 있습니다. 🔒 잠�
 function abSetLock(on) {
   AB.locked = on; const b = $('#abBar'), l = $('#abLock');
   if (b) b.classList.toggle('locked', on);
-  if (l) { l.textContent = on ? '🔒' : '🔓'; l.title = on ? '잠김 — 눌러서 풀기' : '잠금 — 실수로 멈추거나 닫히지 않게'; l.setAttribute('aria-pressed', on); l.setAttribute('aria-label', on ? '잠김, 눌러서 풀기' : '잠그기'); }
+  if (l) { l.textContent = on ? '🔒' : '🔓'; l.dataset.tip = on ? '잠김: 눌러서 풀기' : '잠금: 실수로 멈추거나 닫히지 않게, 화면도 꺼지지 않게'; l.setAttribute('aria-pressed', on); l.setAttribute('aria-label', on ? '잠김, 눌러서 풀기' : '잠그기'); }
   wake(on && AB.a && !AB.a.paused, 'ab');
   if (on) { try { history.pushState({ abLock: 1 }, ''); } catch (e) {} toast('잠갔습니다. 화면이 꺼지지 않고, 실수로 멈추거나 닫히지 않습니다'); }
   else if (history.state && history.state.abLock) { AB.skipPop = true; try { history.back(); } catch (e) {} }  // 잠글 때 넣어 둔 '뒤로 가기' 막이를 거둠
@@ -1599,9 +1600,9 @@ function abBar() {
   let b = $('#abBar');
   if (!b) {
     b = document.createElement('div'); b.id = 'abBar'; b.className = 'ab-bar'; b.setAttribute('role', 'region'); b.setAttribute('aria-label', '오디오북 재생기');
-    b.innerHTML = `<div class="ab-ctr"><button id="abBack" aria-label="15초 뒤로" title="15초 뒤로">↺15</button><button id="abPlay" class="main" aria-label="재생">▶</button><button id="abFwd" aria-label="15초 앞으로" title="15초 앞으로">15↻</button></div>
+    b.innerHTML = `<div class="ab-ctr"><button id="abBack" aria-label="15초 뒤로" data-tip="15초 뒤로">↺15</button><button id="abPlay" class="main" aria-label="재생">▶</button><button id="abFwd" aria-label="15초 앞으로" data-tip="15초 앞으로">15↻</button></div>
       <div class="ab-mid"><div class="ab-t" id="abTitle"></div><div class="ab-row"><span id="abCur">0:00</span><input type="range" id="abSeek" min="0" max="1000" value="0" aria-label="재생 위치"><span id="abDur">0:00</span></div></div>
-      <div class="ab-opt"><select id="abRate" aria-label="빠르기">${[0.8, 1, 1.2, 1.5, 1.8, 2].map(v => `<option value="${v}">${v}배</option>`).join('')}</select><button id="abHere" title="지금 듣는 곳의 글로 가기" aria-label="듣는 곳으로">📍</button><button id="abLock" title="잠금 — 실수로 멈추거나 닫히지 않게" aria-label="잠그기" aria-pressed="false">🔓</button><button id="abClose" title="오디오북 닫기" aria-label="오디오북 닫기">✕</button></div>`;
+      <div class="ab-opt"><select id="abRate" aria-label="빠르기" data-tip="듣는 빠르기">${[0.8, 1, 1.2, 1.5, 1.8, 2].map(v => `<option value="${v}">${v}배</option>`).join('')}</select><button id="abHere" data-tip="듣는 곳으로: 지금 소리로 읽고 있는 문단으로 글을 옮기고, 다시 글이 소리를 따라가게 합니다" aria-label="듣는 곳으로 — 지금 읽고 있는 문단으로 글을 옮김">📍</button><button id="abLock" data-tip="잠금: 실수로 멈추거나 닫히지 않게, 화면도 꺼지지 않게" aria-label="잠그기" aria-pressed="false">🔓</button><button id="abClose" data-tip="오디오북 닫기" aria-label="오디오북 닫기">✕</button></div>`;
     document.body.appendChild(b);
     const a = abA();
     const L = f => (...x) => AB.locked ? abLockedMsg() : f(...x);
@@ -1641,19 +1642,28 @@ function abMedia(c) {
 }
 // 읽는 분이 직접 글을 넘기면 8초 동안은 따라가지 않음
 ['wheel', 'touchmove', 'keydown', 'pointerdown'].forEach(t => document.addEventListener(t, e => { if (AB.on && e.target && e.target.closest && e.target.closest('#reader')) AB.userAt = Date.now(); }, { passive: true }));
-// 마우스를 올리면 뜨는 짧은 안내 (data-tip)
+// 짧은 안내 (data-tip): 마우스를 올리면, 손가락으로는 꾹 누르고 있으면(0.5초) 뜸 — 꾹 눌러 안내를 본 때는 단추가 눌리지 않음 (운영자 요청, 2026-11-10)
 (() => {
-  let tip = null;
-  document.addEventListener('mouseover', e => {
-    const t = e.target.closest && e.target.closest('[data-tip]'); if (!t || !matchMedia('(hover:hover)').matches) return;
+  let tip = null, hold = null, held = null, hide = null;
+  const show = t => {
     if (!tip) { tip = document.createElement('div'); tip.className = 'tipbox'; tip.setAttribute('role', 'tooltip'); document.body.appendChild(tip); }
     tip.textContent = t.dataset.tip; tip.classList.add('show');
     const r = t.getBoundingClientRect(), w = Math.min(280, innerWidth - 16); tip.style.maxWidth = w + 'px';
     const tw = tip.offsetWidth, th = tip.offsetHeight;
     tip.style.left = Math.max(8, Math.min(innerWidth - tw - 8, r.left + r.width / 2 - tw / 2)) + 'px';
-    tip.style.top = (r.bottom + 8 + th > innerHeight ? r.top - th - 8 : r.bottom + 8) + 'px';
-    t.addEventListener('mouseleave', () => tip.classList.remove('show'), { once: true });
+    tip.style.top = (r.top - th - 8 < 4 ? r.bottom + 8 : r.top - th - 8) + 'px';  // 손가락에 가리지 않게 위쪽에
+  };
+  document.addEventListener('mouseover', e => {
+    const t = e.target.closest && e.target.closest('[data-tip]'); if (!t || !matchMedia('(hover:hover)').matches) return;
+    show(t); t.addEventListener('mouseleave', () => tip.classList.remove('show'), { once: true });
   });
+  document.addEventListener('touchstart', e => {
+    const t = e.target.closest && e.target.closest('[data-tip]'); clearTimeout(hold); if (!t) return;
+    hold = setTimeout(() => { held = t; show(t); clearTimeout(hide); hide = setTimeout(() => tip.classList.remove('show'), 3000); }, 500);
+  }, { passive: true });
+  ['touchend', 'touchmove', 'touchcancel'].forEach(k => document.addEventListener(k, () => clearTimeout(hold), { passive: true }));
+  document.addEventListener('click', e => { if (held && e.target.closest && e.target.closest('[data-tip]') === held) { e.preventDefault(); e.stopImmediatePropagation(); } held = null; }, true);
+  document.addEventListener('contextmenu', e => { if (e.target.closest && e.target.closest('[data-tip]')) e.preventDefault(); });
 })();
 function stopSpeak(rerender) { try { speechSynthesis.cancel(); } catch (e) {} wake(false, 'tts'); if (R) { R.ttsTitled = null; R.ttsLocked = false; const was = R.speaking; R.speaking = false; if (rerender && was) renderReader(); } }
 document.addEventListener('keydown', e => {
