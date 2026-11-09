@@ -1,0 +1,510 @@
+[
+ {
+  "img": "images/005-The-Measure-of-Rice-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     314,
+     188
+    ],
+    "bbox": [
+     913,
+     579,
+     1729,
+     906
+    ],
+    "shape": "box",
+    "en": "The Price of Benares Tale of Greed and Valuation Based on the ancient Jataka Tales",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     60,
+     58
+    ],
+    "bbox": [
+     182,
+     182,
+     1075,
+     337
+    ],
+    "shape": "box",
+    "en": "King Brahmadatta reigned in Kasi. The Bodhisatta served as his royal",
+    "conf": 91
+   },
+   {
+    "seed": [
+     553,
+     78
+    ],
+    "bbox": [
+     1689,
+     205,
+     2281,
+     565
+    ],
+    "shape": "bubble",
+    "en": "appraise horses, elephants, and jewels. Every merchant receives the precise, fair price.",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     536,
+     57
+    ],
+    "bbox": [
+     1739,
+     182,
+     2463,
+     278
+    ],
+    "shape": "box",
+    "en": "The King was consumed by greed.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     501,
+     290
+    ],
+    "bbox": [
+     1580,
+     863,
+     2076,
+     1187
+    ],
+    "shape": "bubble",
+    "en": "This honest valu er will exhaust my riches! must find someone cheaper to protect my gold.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     48,
+     44
+    ],
+    "bbox": [
+     145,
+     136,
+     1028,
+     321
+    ],
+    "shape": "box",
+    "en": "Looking the courtyard, he cspied stupid, greedy candidat",
+    "conf": 46
+   },
+   {
+    "seed": [
+     331,
+     141
+    ],
+    "bbox": [
+     1038,
+     430,
+     1438,
+     651
+    ],
+    "shape": "bubble",
+    "en": "Oh yes, sire!",
+    "conf": 96
+   },
+   {
+    "seed": [
+     543,
+     268
+    ],
+    "bbox": [
+     1670,
+     770,
+     2133,
+     1088
+    ],
+    "shape": "bubble",
+    "en": "Can you value royal goods?",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     177,
+     317
+    ],
+    "bbox": [
+     271,
+     1045,
+     1101,
+     1356
+    ],
+    "shape": "box",
+    "en": "Bodhisatta The Method: Objective analysis Motive: Fairness Result: Trust and prosperity",
+    "conf": 87
+   },
+   {
+    "seed": [
+     550,
+     318
+    ],
+    "bbox": [
+     1544,
+     1045,
+     2374,
+     1356
+    ],
+    "shape": "box",
+    "en": "The Fool Method: Arbitrary fancy Motive: Pleasing the King Result: Economic chaos",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     71,
+     281
+    ],
+    "bbox": [
+     192,
+     800,
+     344,
+     982
+    ],
+    "shape": "bubble",
+    "en": "ancl",
+    "conf": 47
+   },
+   {
+    "seed": [
+     171,
+     364
+    ],
+    "bbox": [
+     417,
+     1187,
+     2225,
+     1379
+    ],
+    "shape": "box",
+    "en": "horse-dealer arrived from the north country with 500 magnificent horses. The King summoned his valuer to set the price. new",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     412,
+     62
+    ],
+    "bbox": [
+     1217,
+     152,
+     2493,
+     622
+    ],
+    "shape": "bubble",
+    "en": "For all 500 horses, decree the price is exactly one measure of rice! Take them to the stable!",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     207,
+     376
+    ],
+    "bbox": [
+     417,
+     1187,
+     2225,
+     1379
+    ],
+    "shape": "box",
+    "en": "Devastated, the dealer sought out the ex-valuer.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "took",
+   "entire",
+   "herd",
+   "fora",
+   "single",
+   "bowl",
+   "rice!",
+   "What",
+   "can",
+   "do?"
+  ]
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     94,
+     99
+    ],
+    "bbox": [
+     136,
+     208,
+     1468,
+     989
+    ],
+    "shape": "bubble",
+    "en": "Give the fool bribe. Then, ask him to state the precise value of measure of rice in front of the King. will be there.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     77,
+     61
+    ],
+    "bbox": [
+     162,
+     145,
+     879,
+     701
+    ],
+    "shape": "bubble",
+    "en": "We accept the horses are worth measure of rice. Could you tell the King what that rice is actually worth?",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     356,
+     57
+    ],
+    "bbox": [
+     1015,
+     129,
+     1633,
+     476
+    ],
+    "shape": "bubble",
+    "en": "Valuer, what are 500 horses worth?",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "measure",
+   "rice,",
+   "sire.",
+   "And",
+   "what",
+   "that",
+   "measure",
+   "rice",
+   "worth?"
+  ]
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     319,
+     59
+    ],
+    "bbox": [
+     949,
+     99,
+     1617,
+     476
+    ],
+    "shape": "bubble",
+    "en": "One measure of rice is worth all of Benares and its suburbs!",
+    "conf": 93
+   },
+   {
+    "seed": [
+     283,
+     380
+    ],
+    "bbox": [
+     797,
+     1233,
+     1845,
+     1451
+    ],
+    "shape": "box",
+    "en": "city hundred leagues priced at single of rice. measure",
+    "conf": 79
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "thought",
+   "the",
+   "realm",
+   "was",
+   "beyond",
+   "price!",
+   "Our",
+   "King",
+   "and",
+   "Kingdom",
+   "are",
+   "only",
+   "worth",
+   "rice!",
+   "suits",
+   "our",
+   "King",
+   "admirably!"
+  ]
+ },
+ {
+  "img": "images/005-The-Measure-of-Rice-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     286,
+     298
+    ],
+    "bbox": [
+     598,
+     965,
+     2060,
+     1137
+    ],
+    "shape": "box",
+    "en": "Kim-agghati tandulandlikayam? Assana’ mildya vadehi, raja? Baranasim santarabahiram, Ayam-agghati tandulandlika ti!",
+    "conf": 57
+   },
+   {
+    "seed": [
+     269,
+     359
+    ],
+    "bbox": [
+     595,
+     1170,
+     2060,
+     1342
+    ],
+    "shape": "box",
+    "en": "Do you speak of the price of horses, king? Benares, he values at of rice! measure",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ }
+]

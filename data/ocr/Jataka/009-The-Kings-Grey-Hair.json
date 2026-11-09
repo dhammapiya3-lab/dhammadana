@@ -1,0 +1,364 @@
+[
+ {
+  "img": "images/009-The-Kings-Grey-Hair-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     351,
+     186
+    ],
+    "bbox": [
+     992,
+     605,
+     1650,
+     893
+    ],
+    "shape": "box",
+    "en": "The Story King Makhadeva of",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "LY,"
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": []
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     422,
+     72
+    ],
+    "bbox": [
+     1316,
+     185,
+     1888,
+     512
+    ],
+    "shape": "bubble",
+    "en": "Tell me, friend barber, when you see any grey hairs in my head.",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": []
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     330,
+     72
+    ],
+    "bbox": [
+     989,
+     212,
+     1458,
+     559
+    ],
+    "shape": "bubble",
+    "en": "My lord... have found single grey hair.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "Pull",
+   "out,",
+   "friend,",
+   "and",
+   "lay",
+   "palm."
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": []
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     61,
+     36
+    ],
+    "bbox": [
+     99,
+     112,
+     760,
+     255
+    ],
+    "shape": "box",
+    "en": "the sight of that hair, one was filled with emotion.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     581,
+     385
+    ],
+    "bbox": [
+     1845,
+     1243,
+     2543,
+     1382
+    ],
+    "shape": "box",
+    "en": "He saw the King Death. He felt cooped within blazing hut.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "ORD"
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     105,
+     73
+    ],
+    "bbox": [
+     251,
+     185,
+     962,
+     555
+    ],
+    "shape": "bubble",
+    "en": "Foolish Makhadeva! Grey hairs have come before you rid yourself of depravities.",
+    "conf": 78
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     85,
+     212
+    ],
+    "bbox": [
+     241,
+     655,
+     1058,
+     985
+    ],
+    "shape": "bubble",
+    "en": "This very day, will renounce the world for the monk's life.",
+    "conf": 74
+   }
+  ],
+  "loose": [
+   "the",
+   "barber,",
+   "granted",
+   "village",
+   "yielding",
+   "hundred",
+   "thousand",
+   "pieces",
+   "money."
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     318,
+     75
+    ],
+    "bbox": [
+     833,
+     188,
+     1719,
+     661
+    ],
+    "shape": "bubble",
+    "en": "My son, have had my fill of human joys, and fain would taste the joys divine. Take the sovereignty upon yourself.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "Joys",
+   "Human",
+   "Joys",
+   "Divine"
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     201,
+     70
+    ],
+    "bbox": [
+     608,
+     192,
+     1220,
+     569
+    ],
+    "shape": "bubble",
+    "en": "What is the reason sire, why you adopt the monk's life?",
+    "conf": 52
+   },
+   {
+    "seed": [
+     73,
+     363
+    ],
+    "bbox": [
+     212,
+     1200,
+     1597,
+     1293
+    ],
+    "shape": "box",
+    "en": "Holding fi ee up the hair,",
+    "conf": 48
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Uttamangaruha",
+   "mayham",
+   "ime",
+   "jata",
+   "vayohara,",
+   "Patubhuta",
+   "pabbajjasamayo",
+   "mama",
+   "ti.",
+   "These",
+   "greying",
+   "hairs",
+   "carry",
+   "off",
+   "youthful",
+   "life.",
+   "Divine",
+   "messengers",
+   "manifest;",
+   "time",
+   "forth."
+  ]
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     178,
+     373
+    ],
+    "bbox": [
+     579,
+     1233,
+     2063,
+     1306
+    ],
+    "shape": "box",
+    "en": "Dwell in the Mango-grove, he fostered the Four Divine Abidings for 84,000 years.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/009-The-Kings-Grey-Hair-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": []
+ }
+]

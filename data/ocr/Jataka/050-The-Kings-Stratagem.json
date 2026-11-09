@@ -1,0 +1,541 @@
+[
+ {
+  "img": "images/050-The-Kings-Stratagem-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     80,
+     64
+    ],
+    "bbox": [
+     192,
+     182,
+     1002,
+     397
+    ],
+    "shape": "box",
+    "en": "In past, the Bodhisatta was reborn as Prince Brahmadatta in Benares. Educated in the Three Vedas and Eighteen Sciences at Taxila, his father appointed him",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Benares",
+   "folk",
+   "were",
+   "given",
+   "bloody",
+   "festivals.",
+   "honor",
+   "the",
+   "Devata,",
+   "they",
+   "massacred",
+   "sheep,",
+   "goats,",
+   "poultry,",
+   "and",
+   "swine,",
+   "performing",
+   "superstitious",
+   "rites",
+   "with",
+   "gory",
+   "carcasses."
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     490,
+     93
+    ],
+    "bbox": [
+     1498,
+     251,
+     2328,
+     509
+    ],
+    "shape": "box",
+    "en": "“Led astray by superstition, men wantonly sacrifice life,” thought the Bodhisatta. “When succeed to my inheritance, will devise clever stratagem to stop this evil 2 single being.”",
+    "conf": 74
+   },
+   {
+    "seed": [
+     274,
+     412
+    ],
+    "bbox": [
+     701,
+     1346,
+     1316,
+     1485
+    ],
+    "shape": "bubble",
+    "en": "WW aS",
+    "conf": 58
+   },
+   {
+    "seed": [
+     463,
+     407
+    ],
+    "bbox": [
+     1326,
+     1346,
+     1941,
+     1485
+    ],
+    "shape": "bubble",
+    "en": "ws",
+    "conf": 50
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     99,
+     315
+    ],
+    "bbox": [
+     202,
+     969,
+     969,
+     1283
+    ],
+    "shape": "box",
+    "en": "The prince began visiting holy banyan tree. He offered perfumes and flowers, sprinkled water, and paced reverently around its trunk, behaving like true believer in the Devata.",
+    "conf": 87
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     108,
+     119
+    ],
+    "bbox": [
+     261,
+     179,
+     469,
+     1015
+    ],
+    "shape": "bubble",
+    "en": "IR 7",
+    "conf": 58
+   },
+   {
+    "seed": [
+     109,
+     318
+    ],
+    "bbox": [
+     202,
+     1025,
+     1008,
+     1283
+    ],
+    "shape": "box",
+    "en": "When his father died, the Bodhisatta ru in his stead. Shunning the four evil courses and practicing the ten royal virtues, the time arrived to fulfill his former resolve.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     207,
+     100
+    ],
+    "bbox": [
+     542,
+     215,
+     1491,
+     661
+    ],
+    "shape": "bubble",
+    "en": "“Do you know how made myself king? Have you seen reverently me worshipping the banyan tree?”",
+    "conf": 93
+   },
+   {
+    "seed": [
+     404,
+     230
+    ],
+    "bbox": [
+     1203,
+     711,
+     1594,
+     1005
+    ],
+    "shape": "bubble",
+    "en": "“Sire, we have.”",
+    "conf": 97
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     433,
+     142
+    ],
+    "bbox": [
+     215,
+     225,
+     1435,
+     979
+    ],
+    "shape": "box",
+    "en": "(it LOE",
+    "conf": 51
+   },
+   {
+    "seed": [
+     121,
+     322
+    ],
+    "bbox": [
+     202,
+     1025,
+     1008,
+     1283
+    ],
+    "shape": "box",
+    "en": "made vow,” the King declared. “If became king by the help of the Devata, would offer sacrifice to that tree. Prepare it with all speed.”",
+    "conf": 89
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“My",
+   "vow",
+   "was",
+   "this:",
+   "will",
+   "slay",
+   "all",
+   "who",
+   "are",
+   "addicted",
+   "the",
+   "Five",
+   "Defilements",
+   "and",
+   "the",
+   "Ten",
+   "Paths",
+   "Unrighteousness.",
+   "With",
+   "their",
+   "flesh",
+   "and",
+   "blood,",
+   "will",
+   "make",
+   "offering.”",
+   "ais"
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     114,
+     327
+    ],
+    "bbox": [
+     202,
+     1025,
+     1270,
+     1283
+    ],
+    "shape": "box",
+    "en": "will slay one such transgressors,” he commanded. “Proclaim by beat of drum that the king will sacrifice all subjects who break the Precepts in the god’s honor.”",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Wes"
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     471,
+     297
+    ],
+    "bbox": [
+     202,
+     952,
+     2443,
+     1283
+    ],
+    "shape": "box",
+    "en": "me upayacito, Idani khoham yajissami bahu adhammiko jano ti. The unintelligent by the thousand begged me for sacrifice, now will make sacrifice of many unrig teous people.",
+    "conf": 77
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     505,
+     60
+    ],
+    "bbox": [
+     1455,
+     188,
+     2457,
+     446
+    ],
+    "shape": "box",
+    "en": "Obedient ministers proclaimed the decree by beat of drum throughout Benares. The threat of thousand brutal sacrifices struck immediate terror into the hearts of the townsfolk.",
+    "conf": 88
+   }
+  ],
+  "loose": [
+   "ING"
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     115,
+     349
+    ],
+    "bbox": [
+     202,
+     1111,
+     2443,
+     1283
+    ],
+    "shape": "box",
+    "en": "The psychological deterrence worked Not single persisted in the old wickedness. Throughout the Bodhisatta’s reign, not one man was convicted of transgressing.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "THREAT"
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     321,
+     291
+    ],
+    "bbox": [
+     860,
+     893,
+     1223,
+     1025
+    ],
+    "shape": "bubble",
+    "en": "orl",
+    "conf": 92
+   },
+   {
+    "seed": [
+     445,
+     271
+    ],
+    "bbox": [
+     1415,
+     893,
+     1802,
+     1028
+    ],
+    "shape": "bubble",
+    "en": "sychological reat",
+    "conf": 83
+   },
+   {
+    "seed": [
+     145,
+     341
+    ],
+    "bbox": [
+     202,
+     1108,
+     2443,
+     1283
+    ],
+    "shape": "box",
+    "en": "Compassionate Strat em utilized deterrence By we onizing their own superstitions against them, he forced entire kingdom to observe the Precepts wit out harming single subject.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "Bloodl",
+   "Pea"
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     229,
+     71
+    ],
+    "bbox": [
+     159,
+     162,
+     2202,
+     731
+    ],
+    "shape": "bubble",
+    "en": "ie if it la im) AA ma!",
+    "conf": 48
+   },
+   {
+    "seed": [
+     130,
+     352
+    ],
+    "bbox": [
+     202,
+     1108,
+     2443,
+     1283
+    ],
+    "shape": "box",
+    "en": "life filled neil At the close ith gene osity the Bodhisatta and his peaceful followers passed away to throng the heavenly city of the Devas.",
+    "conf": 48
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     97,
+     359
+    ],
+    "bbox": [
+     202,
+     1111,
+     2443,
+     1283
+    ],
+    "shape": "box",
+    "en": "True leadership transforms society not through violence, but through wisdom. The clever stratagem saved the innocent, reformed the guilty, and broke the cycle of harm forever.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ }
+]

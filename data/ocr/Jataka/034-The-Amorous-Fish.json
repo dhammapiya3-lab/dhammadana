@@ -1,0 +1,510 @@
+[
+ {
+  "img": "images/034-The-Amorous-Fish-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     304,
+     235
+    ],
+    "bbox": [
+     909,
+     628,
+     1732,
+     856
+    ],
+    "shape": "box",
+    "en": "Tale of Passion, Delusion, and Liberation (Based on the Tales of ancient Benares)",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     79,
+     83
+    ],
+    "bbox": [
+     218,
+     225,
+     741,
+     390
+    ],
+    "shape": "box",
+    "en": "Under King Brahmadatta of ancient Benares, the Bodhisatta served as the royal family",
+    "conf": 91
+   },
+   {
+    "seed": [
+     601,
+     77
+    ],
+    "bbox": [
+     1891,
+     225,
+     2420,
+     387
+    ],
+    "shape": "box",
+    "en": "He possessed rare and secret gift: the ability to understand the of animals.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     261,
+     363
+    ],
+    "bbox": [
+     466,
+     1184,
+     2185,
+     1289
+    ],
+    "shape": "box",
+    "en": "Deep in the river, great fish swam amorously with his wife linded by passion and enamored by her presence, he was entirely oblivious to the dangerous world above",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     357,
+     213
+    ],
+    "bbox": [
+     959,
+     655,
+     1683,
+     714
+    ],
+    "shape": "box",
+    "en": "Fishermen cast their net into the currents.",
+    "conf": 97
+   },
+   {
+    "seed": [
+     81,
+     378
+    ],
+    "bbox": [
+     195,
+     1230,
+     1289,
+     1289
+    ],
+    "shape": "box",
+    "en": "Scenting the trap, the wife swiftly made circuit and escaped.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     437,
+     382
+    ],
+    "bbox": [
+     1352,
+     1230,
+     2450,
+     1289
+    ],
+    "shape": "box",
+    "en": "But her blinded by desire, sailed directly into the fatal meshes. spouse,",
+    "conf": 70
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     484,
+     74
+    ],
+    "bbox": [
+     1399,
+     222,
+     2430,
+     281
+    ],
+    "shape": "box",
+    "en": "he the was fl alive onto ning san",
+    "conf": 75
+   },
+   {
+    "seed": [
+     513,
+     372
+    ],
+    "bbox": [
+     1564,
+     1180,
+     2447,
+     1289
+    ],
+    "shape": "box",
+    "en": "fishermen began The glow embers and ittling as rp spit to roast their meal.",
+    "conf": 71
+   }
+  ],
+  "loose": [
+   "PEN"
+  ]
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     252,
+     346
+    ],
+    "bbox": [
+     179,
+     1091,
+     1742,
+     1160
+    ],
+    "shape": "box",
+    "en": "ai fear embers agonizing or",
+    "conf": 70
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "mam",
+   "sitam",
+   "mam",
+   "unham,",
+   "mam",
+   "jalasmi",
+   "badhanam,",
+   "Yafi-ca",
+   "mam",
+   "macchi:",
+   "ratiya",
+   "gato’",
+   "ti.",
+   "not",
+   "the",
+   "heat,",
+   "cold,",
+   "net...",
+   "but",
+   "lady",
+   "thinking:",
+   "‘He",
+   "went",
+   "for",
+   "joy",
+   "another.’"
+  ]
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     266,
+     338
+    ],
+    "bbox": [
+     727,
+     1108,
+     1914,
+     1382
+    ],
+    "shape": "bubble",
+    "en": "Just then, the priest came to the riverside to bathe. Tuning into the language of animals, he heard the bizarre lamentation over the crackling of the fire.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     539,
+     272
+    ],
+    "bbox": [
+     1485,
+     886,
+     2007,
+     989
+    ],
+    "shape": "bubble",
+    "en": "in",
+    "conf": 97
+   },
+   {
+    "seed": [
+     258,
+     342
+    ],
+    "bbox": [
+     724,
+     1108,
+     1918,
+     1382
+    ],
+    "shape": "bubble",
+    "en": "The priest recognized profound spiritual danger. If being dies while its mind is clouded by the unhealthy lament of passion, it cannot escape rebirth in hell. He to intervene.",
+    "conf": 85
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     290,
+     66
+    ],
+    "bbox": [
+     873,
+     212,
+     1769,
+     314
+    ],
+    "shape": "box",
+    "en": "The priest approached the ca",
+    "conf": 96
+   },
+   {
+    "seed": [
+     310,
+     122
+    ],
+    "bbox": [
+     896,
+     370,
+     1623,
+     641
+    ],
+    "shape": "bubble",
+    "en": "My men, don't you supply us with fish every day for our curry?",
+    "conf": 81
+   },
+   {
+    "seed": [
+     566,
+     130
+    ],
+    "bbox": [
+     1809,
+     384,
+     2394,
+     711
+    ],
+    "shape": "bubble",
+    "en": "What do you say, sir? Pray, take any fish you fancy!",
+    "conf": 96
+   },
+   {
+    "seed": [
+     258,
+     342
+    ],
+    "bbox": [
+     727,
+     1108,
+     1914,
+     1382
+    ],
+    "shape": "bubble",
+    "en": "The danger, priest recognized profound spiritual If being dies while its mind is clouded by the unhealthy lament of passion, it cannot escape rebirth in hell. He resolved to intervene.",
+    "conf": 75
+   }
+  ],
+  "loose": [
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     174,
+     97
+    ],
+    "bbox": [
+     565,
+     288,
+     982,
+     512
+    ],
+    "shape": "box",
+    "en": "“We don’t need any but this one,” the priest said. “Only give us this one.”",
+    "conf": 93
+   },
+   {
+    "seed": [
+     545,
+     316
+    ],
+    "bbox": [
+     1663,
+     1022,
+     2344,
+     1200
+    ],
+    "shape": "box",
+    "en": "“He’s yours, sir,” the fishermen agreed, happily surrendering their catch to the revered royal priest",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "INS"
+  ]
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     105,
+     327
+    ],
+    "bbox": [
+     298,
+     1071,
+     1088,
+     1200
+    ],
+    "shape": "box",
+    "en": "on Seated the bank, the Bodhisatta spoke to the creature:",
+    "conf": 84
+   },
+   {
+    "seed": [
+     453,
+     317
+    ],
+    "bbox": [
+     1455,
+     1028,
+     2354,
+     1200
+    ],
+    "shape": "box",
+    "en": "“Friend fish, if had not seen you today, you would have met your death. Cease for the future to be the slave of passion.”",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "TES",
+   "NotebookLM"
+  ]
+ },
+ {
+  "img": "images/034-The-Amorous-Fish-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     104,
+     253
+    ],
+    "bbox": [
+     298,
+     833,
+     1217,
+     1005
+    ],
+    "shape": "box",
+    "en": "With this final exhortation, sanctuary he threw the fish back into the of the water, and peacefully departed for the city.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ }
+]

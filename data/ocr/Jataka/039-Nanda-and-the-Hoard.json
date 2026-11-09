@@ -1,0 +1,380 @@
+[
+ {
+  "img": "images/039-Nanda-and-the-Hoard-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     78,
+     65
+    ],
+    "bbox": [
+     165,
+     165,
+     1108,
+     430
+    ],
+    "shape": "box",
+    "en": "ancient householder In Benares, an aging feared his young wife would squander his wealth after his death, leaving his infant son with nothing",
+    "conf": 50
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     114,
+     26
+    ],
+    "bbox": [
+     377,
+     86,
+     1326,
+     188
+    ],
+    "shape": "box",
+    "en": "Seeking to protect the inheritance, he led his household slave, Nanda, deep into the forest to bury the gold.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     594,
+     289
+    ],
+    "bbox": [
+     1732,
+     919,
+     2275,
+     1213
+    ],
+    "shape": "bubble",
+    "en": "Reveal this to my son when am gone.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     626,
+     94
+    ],
+    "bbox": [
+     1971,
+     278,
+     2394,
+     552
+    ],
+    "shape": "bubble",
+    "en": "Your father buried his money with Nanda. Get it back.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     471,
+     98
+    ],
+    "bbox": [
+     1475,
+     304,
+     1828,
+     529
+    ],
+    "shape": "bubble",
+    "en": "Uncle, where is the treasure?",
+    "conf": 96
+   },
+   {
+    "seed": [
+     598,
+     158
+    ],
+    "bbox": [
+     1908,
+     496,
+     2205,
+     691
+    ],
+    "shape": "bubble",
+    "en": "In the forest, my lord.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     636,
+     82
+    ],
+    "bbox": [
+     1977,
+     245,
+     2400,
+     503
+    ],
+    "shape": "bubble",
+    "en": "You servant of slave-wench's son! How should you have any money here?",
+    "conf": 64
+   },
+   {
+    "seed": [
+     325,
+     147
+    ],
+    "bbox": [
+     1008,
+     469,
+     1246,
+     661
+    ],
+    "shape": "bubble",
+    "en": "This way, my lord.",
+    "conf": 97
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": []
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     137,
+     73
+    ],
+    "bbox": [
+     450,
+     235,
+     1233,
+     364
+    ],
+    "shape": "box",
+    "en": "Seeking answers, the son visited his father’s wise friend—the Bodhisatta.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     337,
+     129
+    ],
+    "bbox": [
+     1018,
+     400,
+     1521,
+     681
+    ],
+    "shape": "bubble",
+    "en": "He means to reveal the gold, but the moment he stands there, he abuses me.",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     311,
+     102
+    ],
+    "bbox": [
+     833,
+     307,
+     1369,
+     592
+    ],
+    "shape": "bubble",
+    "en": "The spot where Nanda stands to abuse you is exactly where your gold lies.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "ANATOMY",
+   "ARROGANCE"
+  ]
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     221,
+     313
+    ],
+    "bbox": [
+     503,
+     1028,
+     2142,
+     1227
+    ],
+    "shape": "box",
+    "en": "know that the valuable stack is where the slave-born servant Nandaka stands and loudly curses!”",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "sovannayo",
+   "rasi,",
+   "-Yattha",
+   "daso",
+   "amajato",
+   "thito"
+  ]
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     111,
+     55
+    ],
+    "bbox": [
+     165,
+     165,
+     1111,
+     334
+    ],
+    "shape": "box",
+    "en": "the Bodhisatta’s advice, the son returned. When Nanda inevitably began his abuse, the heir didn’t hold back.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "are",
+   "to;",
+   "alk",
+   "out",
+   "lave",
+   "you",
+   "ING"
+  ]
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     580,
+     142
+    ],
+    "bbox": [
+     1871,
+     377,
+     2344,
+     1154
+    ],
+    "shape": "box",
+    "en": "He pulled Nanda from his literal high horse, took the spade, and dug exactly where the slave had been standing. The family treasure was unearthed.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "ene",
+   "alo",
+   "cos"
+  ]
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     52,
+     53
+    ],
+    "bbox": [
+     172,
+     175,
+     1316,
+     327
+    ],
+    "shape": "box",
+    "en": "The heir made Nanda carry the wealth home. Steadfast in the Bodhisatta’s wisdom, he spent his life in generosity—a master of his wealth, rather than mastered by it.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ }
+]

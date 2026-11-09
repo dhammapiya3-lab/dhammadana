@@ -1,0 +1,446 @@
+[
+ {
+  "img": "images/010-Bliss-of-Renunciation-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     76,
+     53
+    ],
+    "bbox": [
+     245,
+     172,
+     1081,
+     390
+    ],
+    "shape": "box",
+    "en": "In the past, wealthy northern brahmin realized the heavy burden of sensual desire. Seeking true peace, he abandoned his worldly life, retreating to the Himalayas to become an ascetic.",
+    "conf": 77
+   },
+   {
+    "seed": [
+     193,
+     265
+    ],
+    "bbox": [
+     347,
+     764,
+     2291,
+     1243
+    ],
+    "shape": "bubble",
+    "en": "fp",
+    "conf": 59
+   }
+  ],
+  "loose": [
+   "Bliss",
+   "Renunciation"
+  ]
+ },
+ {
+  "img": "images/010-Bliss-of-Renunciation-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     226,
+     78
+    ],
+    "bbox": [
+     721,
+     258,
+     1921,
+     450
+    ],
+    "shape": "box",
+    "en": "Through intense practice, the Bodhisatta mastered the eight Attainments. Drawn by his profound wisdom, five hundred ascetics gathered in the mountains to follow his noble path.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/010-Bliss-of-Renunciation-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     402,
+     78
+    ],
+    "bbox": [
+     1303,
+     258,
+     2387,
+     450
+    ],
+    "shape": "box",
+    "en": "When the monsoon rains set in, the Bodhisatta led his disciples on an alms pilgrimage. They traveled from the harsh Himalayas down to the great city of Benares.",
+    "conf": 77
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/010-Bliss-of-Renunciation-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     107,
+     295
+    ],
+    "bbox": [
+     264,
+     972,
+     1118,
+     1220
+    ],
+    "shape": "box",
+    "en": "the Ri For rainy months, they lived in the royal pleasure gardens. King Brahmadatta, ruling in Benares, generously supported the ascetics with his royal bounty.",
+    "conf": 50
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/010-Bliss-of-Renunciation-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     467,
+     45
+    ],
+    "bbox": [
+     1329,
+     83,
+     2516,
+     615
+    ],
+    "shape": "bubble",
+    "en": "You are old, venerable sir. Wherefore should you go back to the Himalayas? Send your pupils back there and stop here yourself.",
+    "conf": 69
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/010-Bliss-of-Renunciation-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     218,
+     112
+    ],
+    "bbox": [
+     635,
+     360,
+     1134,
+     635
+    ],
+    "shape": "bubble",
+    "en": "Go you to the Himalayas; will stop on here.",
+    "conf": 94
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/010-Bliss-of-Renunciation-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     153,
+     366
+    ],
+    "bbox": [
+     327,
+     1207,
+     2321,
+     1362
+    ],
+    "shape": "box",
+    "en": "This oldest disciple had once given up mighty kingdom to become monk. Mas- tering the eight Attainments, deep longing soon arose to see his beloved master again.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "(77"
+  ]
+ },
+ {
+  "img": "images/010-Bliss-of-Renunciation-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     96,
+     68
+    ],
+    "bbox": [
+     231,
+     218,
+     1518,
+     377
+    ],
+    "shape": "box",
+    "en": "returned to Benares to pay his respects. Lying happily on mat beside his master, he uttered joyful cry.",
+    "conf": 88
+   },
+   {
+    "seed": [
+     298,
+     156
+    ],
+    "bbox": [
+     922,
+     506,
+     1336,
+     721
+    ],
+    "shape": "bubble",
+    "en": "Oh, happiness! Oh, ness!",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/010-Bliss-of-Renunciation-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     74,
+     68
+    ],
+    "bbox": [
+     231,
+     218,
+     1518,
+     377
+    ],
+    "shape": "box",
+    "en": "King Brahmadatta arrived. Displeased that the ascetic, though seeing him, forbore to rise, the king spoke.",
+    "conf": 91
+   },
+   {
+    "seed": [
+     296,
+     152
+    ],
+    "bbox": [
+     922,
+     496,
+     1650,
+     708
+    ],
+    "shape": "bubble",
+    "en": "Venerable sir, this must have had his fill to eat, there so happily!",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/010-Bliss-of-Renunciation-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     556,
+     190
+    ],
+    "bbox": [
+     1260,
+     185,
+     2000,
+     1065
+    ],
+    "shape": "bubble",
+    "en": "if",
+    "conf": 67
+   },
+   {
+    "seed": [
+     123,
+     153
+    ],
+    "bbox": [
+     241,
+     301,
+     1246,
+     1184
+    ],
+    "shape": "bubble",
+    "en": "Sire, of old this ascetic was mighty king as you are The happiness of the monk’s life, and the happiness that brings, move him to this exalted utterance",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/010-Bliss-of-Renunciation-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     143,
+     346
+    ],
+    "bbox": [
+     453,
+     1127,
+     2185,
+     1293
+    ],
+    "shape": "box",
+    "en": "He remembers living in regal pomp, guarded by men-at-arms, never knowing peace. Now, possessing nothing, he rests in complete, unguarded security.",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/010-Bliss-of-Renunciation-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     351,
+     98
+    ],
+    "bbox": [
+     836,
+     222,
+     1944,
+     764
+    ],
+    "shape": "bubble",
+    "en": "anne na rakkhanti, yo ca anne na rakkhati, Sa ve raja sukham seti, kamesu anapekkhava ti.",
+    "conf": 47
+   },
+   {
+    "seed": [
+     276,
+     265
+    ],
+    "bbox": [
+     850,
+     827,
+     1822,
+     1253
+    ],
+    "shape": "box",
+    "en": "He who others do not guard, so he who does not guard others, lives easily, king, not having desire for sensual pleasures.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/010-Bliss-of-Renunciation-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     118,
+     345
+    ],
+    "bbox": [
+     354,
+     1127,
+     2288,
+     1293
+    ],
+    "shape": "box",
+    "en": "Appeased by the lesson in Dhamma thus the king made his salutation and returned to his palace. The disciple also took his leave and returned to the Himalayas.",
+    "conf": 85
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/010-Bliss-of-Renunciation-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     183,
+     345
+    ],
+    "bbox": [
+     469,
+     1127,
+     2172,
+     1293
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta to on there. Dying with Absorption full and unbroken, he was reborn in the transcendent Realm of Brahma.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ }
+]

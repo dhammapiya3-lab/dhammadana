@@ -1,0 +1,294 @@
+[
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     276,
+     35
+    ],
+    "bbox": [
+     807,
+     33,
+     1835,
+     169
+    ],
+    "shape": "box",
+    "en": "he Wisdom of",
+    "conf": 96
+   },
+   {
+    "seed": [
+     482,
+     358
+    ],
+    "bbox": [
+     1594,
+     1184,
+     2443,
+     1289
+    ],
+    "shape": "box",
+    "en": "In ancient Rajagaha, the revealed past life as wise leading herd of thousand deer.",
+    "conf": 89
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     285,
+     247
+    ],
+    "bbox": [
+     942,
+     787,
+     1723,
+     926
+    ],
+    "shape": "box",
+    "en": "Age forced the to divide his thousand deer. He entrusted five hundred to the alert Lakkhana, and five hundred to the dull Kala.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     83,
+     51
+    ],
+    "bbox": [
+     268,
+     169,
+     1084,
+     307
+    ],
+    "shape": "box",
+    "en": "When stand thick in Magadha, the fields become deadly. Peasants fixed protect their harvest with pitfalls, stakes, and hidden",
+    "conf": 87
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     410,
+     66
+    ],
+    "bbox": [
+     1121,
+     145,
+     2063,
+     565
+    ],
+    "shape": "bubble",
+    "en": "Many deer meet their death at this season. You must retire with your herds to the mountainous tracts. Return only when the crops are carried.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     87,
+     51
+    ],
+    "bbox": [
+     274,
+     169,
+     1359,
+     317
+    ],
+    "shape": "box",
+    "en": "The journey is perilous. Hunters know the migration routes, in wait in hiding-places along the paths destroy the passing herds.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     284,
+     381
+    ],
+    "bbox": [
+     737,
+     1253,
+     1904,
+     1438
+    ],
+    "shape": "box",
+    "en": "Ignorant of when to travel, the dullard Kala marched at dawn and dusk. By approaching the very confines of the villages, he invited mass destruction.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     311,
+     79
+    ],
+    "bbox": [
+     145,
+     152,
+     1299,
+     704
+    ],
+    "shape": "box",
+    "en": "Gh WR ‘hal",
+    "conf": 49
+   },
+   {
+    "seed": [
+     296,
+     388
+    ],
+    "bbox": [
+     737,
+     1253,
+     1904,
+     1438
+    ],
+    "shape": "box",
+    "en": "Lakkhana possessed astute skill in means. By traveling only in the dead of night and avoiding village confines, he the forest without losing head.",
+    "conf": 64
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     551,
+     322
+    ],
+    "bbox": [
+     1703,
+     1051,
+     2460,
+     1299
+    ],
+    "shape": "box",
+    "en": "For four long months, the surviving herds remained safely in the hills. They did not descend until the valley crops were fully carried.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     303,
+     385
+    ],
+    "bbox": [
+     737,
+     1253,
+     1904,
+     1438
+    ],
+    "shape": "box",
+    "en": "Reveating folly 0 his on homeward way, the stag Kala lost the last of his survivors, The stag Lakkhana safely brought back his entire herd of five hundred.",
+    "conf": 66
+   }
+  ],
+  "loose": [
+   "NY,"
+  ]
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     211,
+     40
+    ],
+    "bbox": [
+     555,
+     99,
+     2090,
+     271
+    ],
+    "shape": "box",
+    "en": "The virtuous one will prosper, he whose way of life is friendly. Look at Lakkhana, surrounded by his relatives, then look at Kala, who has lost",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ }
+]

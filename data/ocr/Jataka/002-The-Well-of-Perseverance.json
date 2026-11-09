@@ -1,0 +1,409 @@
+[
+ {
+  "img": "images/002-The-Well-of-Perseverance-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     64,
+     64
+    ],
+    "bbox": [
+     212,
+     212,
+     1557,
+     341
+    ],
+    "shape": "box",
+    "en": "In the past, when Brahmadatta was of Benares, Supreme tale his past life as merchant in Kasi.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     87,
+     74
+    ],
+    "bbox": [
+     192,
+     192,
+     899,
+     350
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta, wise trader in Kasi, prepared five hundred carts to cross brutal, sandy wilderness.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "sand",
+   "was",
+   "hot",
+   "charcoal",
+   "embers",
+   "day.",
+   "They",
+   "camped",
+   "circled",
+   "corals",
+   "under",
+   "awnings,",
+   "traveling",
+   "only",
+   "the",
+   "cool",
+   "night"
+  ]
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     125,
+     75
+    ],
+    "bbox": [
+     188,
+     192,
+     1177,
+     350
+    ],
+    "shape": "box",
+    "en": "Traversing this ocean of sand required He steered the caravan safely through the dark by the disposition of the stars.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     46,
+     47
+    ],
+    "bbox": [
+     145,
+     152,
+     1101,
+     397
+    ],
+    "shape": "box",
+    "en": "Riise With seven left, they discarded heavy wood and water. But the exhausted pilot fell asleep. Unseen in the dark, the oxen retraced their steps.",
+    "conf": 49
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     79,
+     98
+    ],
+    "bbox": [
+     235,
+     245,
+     1015,
+     473
+    ],
+    "shape": "box",
+    "en": "was too late. The day broke on",
+    "conf": 96
+   },
+   {
+    "seed": [
+     383,
+     306
+    ],
+    "bbox": [
+     1190,
+     932,
+     1613,
+     1217
+    ],
+    "shape": "bubble",
+    "en": "Turn the carts round!",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     243,
+     133
+    ],
+    "bbox": [
+     711,
+     400,
+     1286,
+     684
+    ],
+    "shape": "bubble",
+    "en": "All our wood and water is gone, and we are lost.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     246,
+     76
+    ],
+    "bbox": [
+     235,
+     245,
+     1207,
+     407
+    ],
+    "shape": "box",
+    "en": "sand, he spotted solitary clump of kusa grass.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     315,
+     188
+    ],
+    "bbox": [
+     995,
+     483,
+     1494,
+     813
+    ],
+    "shape": "bubble",
+    "en": "If give in, every single one will perish.",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     42,
+     36
+    ],
+    "bbox": [
+     112,
+     116,
+     1041,
+     387
+    ],
+    "shape": "box",
+    "en": "Grass meant water below. They dug shaft sixty cubits deep, only to strike an impenetrable layer of solid rock. The caravan lost heart.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     461,
+     71
+    ],
+    "bbox": [
+     1461,
+     205,
+     2450,
+     539
+    ],
+    "shape": "box",
+    "en": "Certain that water flowed beneath, the Bodhisatta descended. He pressed his ear to the cold stone—and heard the rush of hidden stream.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "you",
+   "give",
+   "in,",
+   "perish.",
+   "Take",
+   "courage.",
+   "Strike",
+   "the",
+   "rock",
+   "with",
+   "this",
+   "iron",
+   "sledge-hammer!"
+  ]
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     458,
+     72
+    ],
+    "bbox": [
+     1121,
+     205,
+     2450,
+     476
+    ],
+    "shape": "box",
+    "en": "The rock split asunder! Water rose as high as palm tree. The caravan drank bathed, rejoiced, and fed their oxen",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": []
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     128,
+     345
+    ],
+    "bbox": [
+     208,
+     1111,
+     2433,
+     1332
+    ],
+    "shape": "box",
+    "en": "The Physical Path: Digging untiringly through stone yields life-saving water. The Spiritual Path: Striving untiringly through ignorance yields the ultimate peace.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/002-The-Well-of-Perseverance-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     74,
+     86
+    ],
+    "bbox": [
+     165,
+     162,
+     1141,
+     674
+    ],
+    "shape": "bubble",
+    "en": "Untiring, digging in sandy place, they found drinking water. So the sage, endowed with strength of effort, untiring, finds peace right here in his heart.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Gey"
+  ]
+ }
+]

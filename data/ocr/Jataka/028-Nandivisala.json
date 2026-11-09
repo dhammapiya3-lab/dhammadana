@@ -1,0 +1,424 @@
+[
+ {
+  "img": "images/028-Nandivisala-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     332,
+     202
+    ],
+    "bbox": [
+     975,
+     631,
+     1666,
+     853
+    ],
+    "shape": "box",
+    "en": "He treated the creature like his own child, raising him with great pains on rice and rice-gruel.",
+    "conf": 85
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/028-Nandivisala-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     148,
+     79
+    ],
+    "bbox": [
+     390,
+     172,
+     1008,
+     542
+    ],
+    "shape": "bubble",
+    "en": "All Jambudipa cannot show bull with my strength. will repay his nurture.",
+    "conf": 90
+   },
+   {
+    "seed": [
+     600,
+     106
+    ],
+    "bbox": [
+     1686,
+     192,
+     2447,
+     674
+    ],
+    "shape": "bubble",
+    "en": "AR JK Pe AW) whe",
+    "conf": 46
+   },
+   {
+    "seed": [
+     354,
+     73
+    ],
+    "bbox": [
+     1071,
+     202,
+     1640,
+     635
+    ],
+    "shape": "bubble",
+    "en": "Go to merchant. Wager thousand pieces that can draw hundred loaded carts!",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/028-Nandivisala-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     95,
+     64
+    ],
+    "bbox": [
+     215,
+     165,
+     774,
+     503
+    ],
+    "shape": "bubble",
+    "en": "have bull at home who can pull hundred loaded carts.",
+    "conf": 94
+   },
+   {
+    "seed": [
+     589,
+     368
+    ],
+    "bbox": [
+     1541,
+     1167,
+     2328,
+     1289
+    ],
+    "shape": "box",
+    "en": "thousand pices. he stake",
+    "conf": 61
+   }
+  ],
+  "loose": [
+   "ANY",
+   "Make"
+  ]
+ },
+ {
+  "img": "images/028-Nandivisala-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Trace-bar",
+   "Axletree",
+   "Perfumed",
+   "rice"
+  ]
+ },
+ {
+  "img": "images/028-Nandivisala-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Now",
+   "then,",
+   "you",
+   "rascal!",
+   "Pull",
+   "them",
+   "along,",
+   "rascal!",
+   "LAS",
+   "LAN"
+  ]
+ },
+ {
+  "img": "images/028-Nandivisala-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     539,
+     98
+    ],
+    "bbox": [
+     1633,
+     231,
+     2202,
+     552
+    ],
+    "shape": "bubble",
+    "en": "not the rascal he calls me.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     339,
+     389
+    ],
+    "bbox": [
+     982,
+     1263,
+     1660,
+     1392
+    ],
+    "shape": "box",
+    "en": "et He budged not an",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "alia"
+  ]
+ },
+ {
+  "img": "images/028-Nandivisala-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     114,
+     371
+    ],
+    "bbox": [
+     268,
+     1167,
+     1194,
+     1319
+    ],
+    "shape": "box",
+    "en": "merchant made The him pay over the thousand pieces. ad",
+    "conf": 45
+   },
+   {
+    "seed": [
+     459,
+     374
+    ],
+    "bbox": [
+     1451,
+     1167,
+     2377,
+     1319
+    ],
+    "shape": "box",
+    "en": "His money gone, the brahmin lay be. down in an agony of grief.",
+    "conf": 67
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/028-Nandivisala-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     287,
+     62
+    ],
+    "bbox": [
+     889,
+     172,
+     1356,
+     370
+    ],
+    "shape": "bubble",
+    "en": "Have ever broken pot, squeezed against anyone, or made messes?",
+    "conf": 94
+   },
+   {
+    "seed": [
+     154,
+     275
+    ],
+    "bbox": [
+     483,
+     883,
+     830,
+     1012
+    ],
+    "shape": "bubble",
+    "en": "Neve my child.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     573,
+     278
+    ],
+    "bbox": [
+     1756,
+     876,
+     2195,
+     1104
+    ],
+    "shape": "bubble",
+    "en": "Then wh call me rascal? It’s you who are to blam",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/028-Nandivisala-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "and",
+   "bet",
+   "him",
+   "two",
+   "thousand",
+   "this",
+   "time.",
+   "Only",
+   "remember",
+   "not",
+   "call",
+   "rascal",
+   "again.",
+   "UME"
+  ]
+ },
+ {
+  "img": "images/028-Nandivisala-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     520,
+     80
+    ],
+    "bbox": [
+     1637,
+     222,
+     2119,
+     436
+    ],
+    "shape": "bubble",
+    "en": "Now then, my fine fellow! Pull them along, my fine fellow!",
+    "conf": 96
+   },
+   {
+    "seed": [
+     165,
+     304
+    ],
+    "bbox": [
+     476,
+     926,
+     648,
+     1118
+    ],
+    "shape": "bubble",
+    "en": "il",
+    "conf": 67
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/028-Nandivisala-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     203,
+     390
+    ],
+    "bbox": [
+     608,
+     1250,
+     2093,
+     1408
+    ],
+    "shape": "box",
+    "en": "With single pull, he tugged along the whole string of hundred carts.",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "any"
+  ]
+ },
+ {
+  "img": "images/028-Nandivisala-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     213,
+     384
+    ],
+    "bbox": [
+     608,
+     1250,
+     2093,
+     1408
+    ],
+    "shape": "box",
+    "en": "The merchant paid the two thousand. Other folks gave large sums too Thus did the greatly.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ }
+]

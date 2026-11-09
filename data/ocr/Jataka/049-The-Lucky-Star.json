@@ -1,0 +1,401 @@
+[
+ {
+  "img": "images/049-The-Lucky-Star-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     186,
+     272
+    ],
+    "bbox": [
+     228,
+     860,
+     1025,
+     1253
+    ],
+    "shape": "box",
+    "en": "Nakkhatta Jataka In the past, when Brahmadatta reigned in Benares, two families forged promising alliance.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/049-The-Lucky-Star-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     199,
+     80
+    ],
+    "bbox": [
+     341,
+     192,
+     2301,
+     413
+    ],
+    "shape": "box",
+    "en": "townsfolk asked country-girl in marriage and named the day. The arrangement was made",
+    "conf": 70
+   }
+  ],
+  "loose": [
+   "why"
+  ]
+ },
+ {
+  "img": "images/049-The-Lucky-Star-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     552,
+     329
+    ],
+    "bbox": [
+     341,
+     1038,
+     2301,
+     1296
+    ],
+    "shape": "box",
+    "en": "after the date. Piqued at being afterthought, the ascetic made thwart an up his mind to their marriage festivities.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/049-The-Lucky-Star-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     542,
+     84
+    ],
+    "bbox": [
+     1686,
+     228,
+     2212,
+     496
+    ],
+    "shape": "bubble",
+    "en": "The stars are not favourable!",
+    "conf": 97
+   },
+   {
+    "seed": [
+     428,
+     344
+    ],
+    "bbox": [
+     341,
+     1114,
+     2301,
+     1296
+    ],
+    "shape": "box",
+    "en": "if they grave misfortune would be the result.",
+    "conf": 80
+   }
+  ],
+  "loose": [
+   "Se)",
+   "VAN"
+  ]
+ },
+ {
+  "img": "images/049-The-Lucky-Star-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     134,
+     97
+    ],
+    "bbox": [
+     370,
+     222,
+     1223,
+     466
+    ],
+    "shape": "box",
+    "en": "Paralyzed by faith the in ascetic and fear of the heavens, they stayed home",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/049-The-Lucky-Star-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     140,
+     357
+    ],
+    "bbox": [
+     341,
+     1114,
+     2301,
+     1296
+    ],
+    "shape": "box",
+    "en": "country folk (ited, Finding they who town party absent, they was fixed the for today, and now have not come. Who are forsooth?”",
+    "conf": 53
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/049-The-Lucky-Star-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     563,
+     83
+    ],
+    "bbox": [
+     1633,
+     182,
+     2440,
+     473
+    ],
+    "shape": "box",
+    "en": "to let the go to waste, the country folk acted decisively. They married the girl to someone else.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/049-The-Lucky-Star-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     253,
+     351
+    ],
+    "bbox": [
+     655,
+     1108,
+     1990,
+     1296
+    ],
+    "shape": "box",
+    "en": "The next day, the townsfolk arrived and demanded the girl. The country folk stood their firmly.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/049-The-Lucky-Star-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     317,
+     82
+    ],
+    "bbox": [
+     916,
+     231,
+     1465,
+     473
+    ],
+    "shape": "bubble",
+    "en": "We asked our ascetic, the stars were unfavourable!",
+    "conf": 96
+   },
+   {
+    "seed": [
+     371,
+     284
+    ],
+    "bbox": [
+     1098,
+     883,
+     1752,
+     1246
+    ],
+    "shape": "bubble",
+    "en": "You lacked common decency and stayed away. She is How can we marry her twice over?",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/049-The-Lucky-Star-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     134,
+     88
+    ],
+    "bbox": [
+     261,
+     228,
+     2380,
+     420
+    ],
+    "shape": "box",
+    "en": "As they wrangled, wise man—a traveling merchant on business—intervened. He listened to the blame their absence on the disposition of the stars.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/049-The-Lucky-Star-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     400,
+     97
+    ],
+    "bbox": [
+     1108,
+     245,
+     2361,
+     612
+    ],
+    "shape": "bubble",
+    "en": "What, forsooth, do the stars matter? the wise man asked. \"Is not the lucky thing to get the girl?\"",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/049-The-Lucky-Star-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     202,
+     335
+    ],
+    "bbox": [
+     261,
+     1068,
+     2380,
+     1256
+    ],
+    "shape": "box",
+    "en": "Nakkhatam patimanentam atho While waiting on his lucky stars, benefit passes the fool by.",
+    "conf": 70
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/049-The-Lucky-Star-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     93,
+     323
+    ],
+    "bbox": [
+     261,
+     1065,
+     2380,
+     1256
+    ],
+    "shape": "box",
+    "en": "Re Attho atthassa nakkhattam, kim karissanti taraka ti? Benefit is benefit’s lucky star, what can the stars achieve?",
+    "conf": 49
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/049-The-Lucky-Star-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     125,
+     89
+    ],
+    "bbox": [
+     268,
+     251,
+     1071,
+     532
+    ],
+    "shape": "box",
+    "en": "As for the townsfolk, for ll their wrangling, they did not get the girl. They had to go off home again, om",
+    "conf": 48
+   }
+  ],
+  "loose": []
+ }
+]

@@ -1,0 +1,628 @@
+[
+ {
+  "img": "images/006-The-Water-Rakkhasa-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     319,
+     270
+    ],
+    "bbox": [
+     956,
+     807,
+     1689,
+     972
+    ],
+    "shape": "box",
+    "en": "Tale of Three Princes and the Water",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     102,
+     354
+    ],
+    "bbox": [
+     238,
+     1147,
+     2410,
+     1362
+    ],
+    "shape": "box",
+    "en": "In Bodhisatta) ancient Kasi, the King had two sons: Mahimsasa (the and Candakumara. After their mother the King’s new Queen bore him extracting binding promise from the overjoyed monarch,",
+    "conf": 61
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     118,
+     93
+    ],
+    "bbox": [
+     264,
+     245,
+     1111,
+     529
+    ],
+    "shape": "box",
+    "en": "later, the Queen demanded her boon the throne for The King refused. Fearing the Queen’s wicked plots, he ordered his elder sons into exile.",
+    "conf": 91
+   },
+   {
+    "seed": [
+     268,
+     314
+    ],
+    "bbox": [
+     823,
+     903,
+     1296,
+     1237
+    ],
+    "shape": "bubble",
+    "en": "LS",
+    "conf": 58
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     94,
+     383
+    ],
+    "bbox": [
+     238,
+     1266,
+     2410,
+     1369
+    ],
+    "shape": "box",
+    "en": "As the brothers departed, loyal them leaving and chose to share their exile the Himalayas. saw in",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "the",
+   "forest,”",
+   "the",
+   "King",
+   "wept,",
+   "‘return",
+   "only",
+   "death.”"
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     172,
+     219
+    ],
+    "bbox": [
+     522,
+     661,
+     2162,
+     823
+    ],
+    "shape": "box",
+    "en": "an the Deep in the forest, Mahimsas: for water. Unknown to deity Vessavana granted this to Water bound by strict condition.",
+    "conf": 50
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     313,
+     81
+    ],
+    "bbox": [
+     787,
+     179,
+     1855,
+     331
+    ],
+    "shape": "box",
+    "en": "The Rakkhasa’s Rule:",
+    "conf": 70
+   }
+  ],
+  "loose": [
+   "may",
+   "devour",
+   "anyone",
+   "entering",
+   "the",
+   "water",
+   "who",
+   "does",
+   "not",
+   "know",
+   "the",
+   "“true",
+   "Deva-nature.”",
+   "Those",
+   "who",
+   "know",
+   "it,",
+   "stay",
+   "land,",
+   "are",
+   "safe."
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     118,
+     71
+    ],
+    "bbox": [
+     212,
+     182,
+     883,
+     364
+    ],
+    "shape": "box",
+    "en": "entered the water. 4 The Rakkhasa struck!",
+    "conf": 92
+   },
+   {
+    "seed": [
+     646,
+     189
+    ],
+    "bbox": [
+     2056,
+     509,
+     2509,
+     876
+    ],
+    "shape": "bubble",
+    "en": "“The sun and moon Suriya guessed.",
+    "conf": 87
+   }
+  ],
+  "loose": [
+   "“What",
+   "the",
+   "true",
+   "Deva-nature?”",
+   "“You",
+   "don’t",
+   "know,”",
+   "the",
+   "monster",
+   "roared,",
+   "dragging",
+   "him",
+   "watery",
+   "prison."
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     132,
+     82
+    ],
+    "bbox": [
+     258,
+     241,
+     1210,
+     410
+    ],
+    "shape": "box",
+    "en": "When didn’t return, Mahimsasa sent Canda. He too was seized.",
+    "conf": 90
+   },
+   {
+    "seed": [
+     619,
+     260
+    ],
+    "bbox": [
+     1954,
+     741,
+     2367,
+     1111
+    ],
+    "shape": "bubble",
+    "en": "The four quarters of heaven.",
+    "conf": 95
+   },
+   {
+    "seed": [
+     276,
+     387
+    ],
+    "bbox": [
+     241,
+     1266,
+     2410,
+     1369
+    ],
+    "shape": "box",
+    "en": "He, too, was dragged into the abyss.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "“What",
+   "the",
+   "true",
+   "Deva-nature?”"
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     163,
+     369
+    ],
+    "bbox": [
+     238,
+     1194,
+     2410,
+     1369
+    ],
+    "shape": "box",
+    "en": "Realizing his brothers were missing, the Bodhisatta tracked them. Footprints entered the water, but none returned. Grasping his sword and bow, he waited safely on the bank.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     336,
+     91
+    ],
+    "bbox": [
+     992,
+     278,
+     1561,
+     420
+    ],
+    "shape": "box",
+    "en": "The Rakkhasa himself as forester.",
+    "conf": 89
+   },
+   {
+    "seed": [
+     301,
+     148
+    ],
+    "bbox": [
+     777,
+     466,
+     1213,
+     688
+    ],
+    "shape": "bubble",
+    "en": "“Bathe and drink, mate!” he coaxed.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     414,
+     157
+    ],
+    "bbox": [
+     1283,
+     483,
+     1812,
+     823
+    ],
+    "shape": "bubble",
+    "en": "You took my brothers. will tell you the true Deva-nature.",
+    "conf": 91
+   },
+   {
+    "seed": [
+     487,
+     323
+    ],
+    "bbox": [
+     1091,
+     1051,
+     1670,
+     1200
+    ],
+    "shape": "box",
+    "en": "Recognizing Tica the demon the declared",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     341,
+     96
+    ],
+    "bbox": [
+     1035,
+     284,
+     1610,
+     469
+    ],
+    "shape": "bubble",
+    "en": "am travel-stained,’ the Bodhisatta noted",
+    "conf": 89
+   },
+   {
+    "seed": [
+     230,
+     364
+    ],
+    "bbox": [
+     245,
+     1194,
+     2400,
+     1369
+    ],
+    "shape": "box",
+    "en": "Desperate for the truth, the monster bathed him, served him food, and beautiful pavilion. The predator became the servant.",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     184,
+     83
+    ],
+    "bbox": [
+     423,
+     212,
+     2070,
+     334
+    ],
+    "shape": "box",
+    "en": "above abo the the de demon, vealed ibe rev truth:",
+    "conf": 53
+   },
+   {
+    "seed": [
+     340,
+     163
+    ],
+    "bbox": [
+     727,
+     390,
+     1759,
+     886
+    ],
+    "shape": "bubble",
+    "en": "“Hirt-ottappasampanna, sukkadhammasamahita...",
+    "conf": 60
+   },
+   {
+    "seed": [
+     335,
+     272
+    ],
+    "bbox": [
+     790,
+     896,
+     1141,
+     1061
+    ],
+    "shape": "bubble",
+    "en": "aH",
+    "conf": 48
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     172,
+     385
+    ],
+    "bbox": [
+     387,
+     1190,
+     2261,
+     1369
+    ],
+    "shape": "box",
+    "en": "Endowed with and possessing unsullied concern, an nature—these virtuous people in the world are said to have Deva-nature.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "loke,",
+   "Devadhamma",
+   "vuccare",
+   "ti.”"
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     378,
+     36
+    ],
+    "bbox": [
+     995,
+     73,
+     1647,
+     198
+    ],
+    "shape": "box",
+    "en": "ize: tA",
+    "conf": 56
+   },
+   {
+    "seed": [
+     284,
+     398
+    ],
+    "bbox": [
+     850,
+     1266,
+     1799,
+     1402
+    ],
+    "shape": "box",
+    "en": "True divinity is urity.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Sun",
+   "Moon",
+   "Canda:",
+   "Quarters",
+   "Bodhisatta:",
+   "Conscience",
+   "Concern",
+   "(Physical/External)",
+   "(Spatial/External)",
+   "Failed",
+   "(Internal/Moral)",
+   "Mastered"
+  ]
+ },
+ {
+  "img": "images/006-The-Water-Rakkhasa-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     148,
+     386
+    ],
+    "bbox": [
+     387,
+     1190,
+     2255,
+     1369
+    ],
+    "shape": "box",
+    "en": "hrough Bodhisatta conquered the without striking wisdom and caution, the demon blow. By understanding the inner truth of conscience (hiri) and moral concern (ottappa), he saved everyone.",
+    "conf": 83
+   }
+  ],
+  "loose": [
+   "_AS"
+  ]
+ }
+]

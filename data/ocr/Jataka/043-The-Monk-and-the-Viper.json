@@ -1,0 +1,298 @@
+[
+ {
+  "img": "images/043-The-Monk-and-the-Viper-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     348,
+     181
+    ],
+    "bbox": [
+     1065,
+     569,
+     1577,
+     916
+    ],
+    "shape": "bubble",
+    "en": "The Tragedy of Veluka’s Father: Study in Attachment.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     181,
+     361
+    ],
+    "bbox": [
+     374,
+     1177,
+     2275,
+     1418
+    ],
+    "shape": "box",
+    "en": "From passion springs pain; true bliss requires its abandonment The Bodhisatta sought the Himalayas, mastering the Meditation Object and leading five hundred ascetics in pure liberation",
+    "conf": 86
+   }
+  ],
+  "loose": [
+   "INS"
+  ]
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     154,
+     56
+    ],
+    "bbox": [
+     493,
+     175,
+     2162,
+     397
+    ],
+    "shape": "box",
+    "en": "But another monk welcomed wandering, poisonous viper into his hut Embracing passion, he grew to love the deadly creature as if it were his own beloved child",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     107,
+     343
+    ],
+    "bbox": [
+     218,
+     1124,
+     2423,
+     1306
+    ],
+    "shape": "box",
+    "en": "Housed safely in joint of bamboo, the viper named “Veluka.” The ascetic’s was attachment total, the monastic community called him only “Veluka’s Father.” was so",
+    "conf": 83
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     114,
+     344
+    ],
+    "bbox": [
+     218,
+     1124,
+     2423,
+     1306
+    ],
+    "shape": "box",
+    "en": "Hearing of this danger, the Bodhisatta intervened with absolute clarity: viper on never be trusted; keep it no longer.”",
+    "conf": 58
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     92,
+     69
+    ],
+    "bbox": [
+     278,
+     202,
+     2377,
+     347
+    ],
+    "shape": "box",
+    "en": "The true poison was not the venom, but the willful ignorance of objective danger.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "Inherent",
+   "Nature:",
+   "Untrustworthy",
+   "venom.",
+   "Misplaced",
+   "Affection:",
+   "Deadly",
+   "attachment."
+  ]
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     99,
+     152
+    ],
+    "bbox": [
+     278,
+     453,
+     1108,
+     1018
+    ],
+    "shape": "box",
+    "en": "Heedless, the monk refused. “My viper is as dear to me as pupil; could not live without him.” The master foresaw his inevitable doom.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Days",
+   "1-3:",
+   "The",
+   "monks",
+   "left",
+   "forage",
+   "Trapped",
+   "alone",
+   "dark,",
+   "claustrophobic",
+   "prison,",
+   "the",
+   "forgotten",
+   "viper",
+   "grew",
+   "ravenous,",
+   "terrified,",
+   "and",
+   "enraged."
+  ]
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     290,
+     406
+    ],
+    "bbox": [
+     780,
+     1276,
+     1861,
+     1425
+    ],
+    "shape": "box",
+    "en": "Angry from its long fast, the viper struck instantly. Veluka’s Father was killed on the spot",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "Come,",
+   "son;",
+   "you",
+   "must",
+   "hungry."
+  ]
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     252,
+     89
+    ],
+    "bbox": [
+     774,
+     218,
+     1868,
+     390
+    ],
+    "shape": "box",
+    "en": "ovajjamano na karoti sasanam...",
+    "conf": 69
+   },
+   {
+    "seed": [
+     162,
+     361
+    ],
+    "bbox": [
+     519,
+     1127,
+     2126,
+     1283
+    ],
+    "shape": "box",
+    "en": "He who does not take the advice of one seeking his welfare, is in this way destroyed, like Veluka’s father.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ }
+]

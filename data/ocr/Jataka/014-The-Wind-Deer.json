@@ -1,0 +1,311 @@
+[
+ {
+  "img": "images/014-The-Wind-Deer-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     280,
+     15
+    ],
+    "bbox": [
+     208,
+     46,
+     2433,
+     222
+    ],
+    "shape": "box",
+    "en": "The Wind Deer",
+    "conf": 97
+   },
+   {
+    "seed": [
+     91,
+     279
+    ],
+    "bbox": [
+     281,
+     913,
+     2394,
+     1243
+    ],
+    "shape": "box",
+    "en": "Benares, ancient times. King Brahmadatta rules. His gardener, tends the royal pleasure gardens. wild Wind-Deer wanders in. True to its hyper-vigilant nature, the timid creature flees at the mere sight of the",
+    "conf": 91
+   },
+   {
+    "seed": [
+     475,
+     425
+    ],
+    "bbox": [
+     102,
+     1349,
+     2076,
+     1475
+    ],
+    "shape": "bubble",
+    "en": "joo",
+    "conf": 49
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/014-The-Wind-Deer-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     206,
+     106
+    ],
+    "bbox": [
+     671,
+     294,
+     1111,
+     469
+    ],
+    "shape": "bubble",
+    "en": "“Could you catch it?” asks the King.",
+    "conf": 94
+   },
+   {
+    "seed": [
+     600,
+     302
+    ],
+    "bbox": [
+     1928,
+     853,
+     2404,
+     1217
+    ],
+    "shape": "bubble",
+    "en": "“Oh, Sanjaya smiles. “If had little honey, bring it right into your palace.”",
+    "conf": 71
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/014-The-Wind-Deer-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     458,
+     77
+    ],
+    "bbox": [
+     1475,
+     241,
+     2400,
+     503
+    ],
+    "shape": "box",
+    "en": "Armed with the king’s honey, Sanjaya sets to work. He anoints the grass at the deer’s favorite spots, then hides in the brush. The snare is not made of rope or wood, but of pure sweetness.",
+    "conf": 87
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/014-The-Wind-Deer-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     214,
+     374
+    ],
+    "bbox": [
+     668,
+     1237,
+     1974,
+     1425
+    ],
+    "shape": "box",
+    "en": "The Wind-Deer tastes the honied grass. Instantly snared by the lust of taste, it becomes bound to the pleasure garden. The addiction takes root. It refuses else.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/014-The-Wind-Deer-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     614,
+     78
+    ],
+    "bbox": [
+     1901,
+     245,
+     2400,
+     1246
+    ],
+    "shape": "box",
+    "en": "Gradually, the gardener reveals himself. As craving for honey increases, the deer’s natural survival instincts dissolve. Familiarity breeds false trust. Soon, the wild creature eats directly from the man’s hand.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     64,
+     392
+    ],
+    "bbox": [
+     198,
+     1296,
+     823,
+     1392
+    ],
+    "shape": "box",
+    "en": "High Low Craving",
+    "conf": 94
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/014-The-Wind-Deer-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     70,
+     72
+    ],
+    "bbox": [
+     228,
+     238,
+     1227,
+     473
+    ],
+    "shape": "box",
+    "en": "The final Tying honey-gourd to his shoulder, Sanjaya drops wisps of sweet grass, creating trail. Blinded by desire, the deer follows him step by step, leaving the wild",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/014-The-Wind-Deer-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     72,
+     72
+    ],
+    "bbox": [
+     228,
+     238,
+     1286,
+     473
+    ],
+    "shape": "box",
+    "en": "They cross the palace threshold. Instantly, the heavy doors slam shut! Seeing men, the deer’s trance breaks. Terrified for its life, the wild creature dashes frantically around the enclosed stone hall",
+    "conf": 74
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/014-The-Wind-Deer-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     210,
+     127
+    ],
+    "bbox": [
+     565,
+     377,
+     1637,
+     701
+    ],
+    "shape": "bubble",
+    "en": "“This creature avoids human scent for week. Yet, ensnared by taste, this wild thing walked right into our halls. Truly, there is nothing viler in the world than this craving",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/014-The-Wind-Deer-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "kiratthi",
+   "rasehi",
+   "papiyo,",
+   "Avasehi",
+   "va,",
+   "santhavehi",
+   "Vatamigam",
+   "gehanissitam,",
+   "Vasam-anesi",
+   "rasehi",
+   "Sanjayo",
+   "ti.",
+   "Nothing",
+   "worse",
+   "than",
+   "tastes,",
+   "amongst",
+   "homes",
+   "acquaintances.",
+   "The",
+   "wind-deer,",
+   "dependent",
+   "his",
+   "home,",
+   "was",
+   "brought",
+   "under",
+   "Sanjaya’s",
+   "control",
+   "taste."
+  ]
+ }
+]

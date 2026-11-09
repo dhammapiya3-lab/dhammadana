@@ -1,0 +1,444 @@
+[
+ {
+  "img": "images/023-The-Noble-Warhorse-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     230,
+     372
+    ],
+    "bbox": [
+     645,
+     1230,
+     1997,
+     1435
+    ],
+    "shape": "box",
+    "en": "‘The Noble Sindh: Tale of Jambudipa. classical Jataka of duty, sacrifice, and the ultimate charge.",
+    "conf": 54
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Crimson",
+   "curtains",
+   "3-year-old",
+   "rice",
+   "and",
+   "gold-starred",
+   "100,000",
+   "coin",
+   "canopy.",
+   "golden",
+   "dish.",
+   "Scented",
+   "oil",
+   "lamps",
+   "Ground",
+   "scented",
+   "always",
+   "burning.",
+   "with",
+   "four",
+   "perfumes."
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "BENARES",
+   "Their",
+   "missive",
+   "offered",
+   "compromise:",
+   "your",
+   "kingdom",
+   "us,",
+   "give"
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     323,
+     36
+    ],
+    "bbox": [
+     886,
+     79,
+     1759,
+     271
+    ],
+    "shape": "box",
+    "en": "Tt ai is stepped Ch!",
+    "conf": 58
+   },
+   {
+    "seed": [
+     100,
+     268
+    ],
+    "bbox": [
+     238,
+     853,
+     1075,
+     1187
+    ],
+    "shape": "bubble",
+    "en": "“Give me your noble warhorse, and could fight not seven kings only, but all the kings in Jambudipa.”",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     88,
+     356
+    ],
+    "bbox": [
+     261,
+     1147,
+     2384,
+     1289
+    ],
+    "shape": "box",
+    "en": "agreed. was The King The noble led out and sheathed in heavy mail. The knight armed himself from head to foot, girding his sword. Together, they passed out of the city-gate.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     377,
+     51
+    ],
+    "bbox": [
+     1078,
+     159,
+     2509,
+     347
+    ],
+    "shape": "box",
+    "en": "lightning charge/ They broke the first ca the king dlive. to the field, they the second, third, fourth, and fifth camps.",
+    "conf": 88
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     322,
+     384
+    ],
+    "bbox": [
+     483,
+     1250,
+     2156,
+     1428
+    ],
+    "shape": "box",
+    "en": "aie the and captured the But wound streamed with blood,",
+    "conf": 52
+   }
+  ],
+  "loose": [
+   "NOY",
+   "NOY,"
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     170,
+     384
+    ],
+    "bbox": [
+     486,
+     1250,
+     2156,
+     1428
+    ],
+    "shape": "box",
+    "en": "At Ag Sindh’ the mail. Seeing the grievous wound, he set about arming another horse final battle.",
+    "conf": 56
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     433,
+     66
+    ],
+    "bbox": [
+     1055,
+     218,
+     1898,
+     350
+    ],
+    "shape": "box",
+    "en": "holds. The camp knight is slain. Benares",
+    "conf": 88
+   },
+   {
+    "seed": [
+     321,
+     252
+    ],
+    "bbox": [
+     1012,
+     774,
+     1488,
+     906
+    ],
+    "shape": "box",
+    "en": "Rise* The",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "The"
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     347,
+     132
+    ],
+    "bbox": [
+     916,
+     337,
+     1686,
+     1111
+    ],
+    "shape": "box",
+    "en": "“Api passena semano, sallebhi sallalikato, Seyyo va valava bhojjho, yufija mam yeva sarathi ti.” (Though lying side, and on my pierced by arrows, well-bred horse beats mare, harness me, driver.)",
+    "conf": 73
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     95,
+     390
+    ],
+    "bbox": [
+     298,
+     1283,
+     2344,
+     1448
+    ],
+    "shape": "box",
+    "en": "Wound bound and re-armed, the Bodhisatta surged forward. In one final, impossible charge, they broke the seventh camp and brought back the seventh king alive.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     533,
+     278
+    ],
+    "bbox": [
+     1564,
+     790,
+     1934,
+     1114
+    ],
+    "shape": "bubble",
+    "en": "Keep the Precepts.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "the",
+   "gate,",
+   "the",
+   "Great",
+   "Being",
+   "spoke:",
+   "“Slay",
+   "not",
+   "these",
+   "kings;",
+   "bind",
+   "them",
+   "oath.",
+   "Honor",
+   "this",
+   "knight.”",
+   "the",
+   "King,",
+   "imparted",
+   "three",
+   "pillars",
+   "righteous",
+   "rule:",
+   "Exercise",
+   "Generosity.",
+   "Rule",
+   "Justice"
+  ]
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     345,
+     214
+    ],
+    "bbox": [
+     965,
+     294,
+     1676,
+     1154
+    ],
+    "shape": "bubble",
+    "en": "ee. on om wi",
+    "conf": 50
+   },
+   {
+    "seed": [
+     108,
+     372
+    ],
+    "bbox": [
+     298,
+     1213,
+     2344,
+     1408
+    ],
+    "shape": "box",
+    "en": "His duty fulfilled, the soldiers began taking off his mail piecemeal. Before the last piece fell, the magnificent Sindh closed his eyes and passed away.",
+    "conf": 94
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/023-The-Noble-Warhorse-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     136,
+     76
+    ],
+    "bbox": [
+     291,
+     185,
+     2354,
+     337
+    ],
+    "shape": "box",
+    "en": "The King burned his body with profound respect. The knight received great honor. The seven kings, bound by an oath never to wage war again, were sent home in peace.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ }
+]

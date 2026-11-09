@@ -1,0 +1,461 @@
+[
+ {
+  "img": "images/030-Deadly-Food-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     274,
+     9
+    ],
+    "bbox": [
+     648,
+     23,
+     1994,
+     218
+    ],
+    "shape": "box",
+    "en": "Deadly Food",
+    "conf": 97
+   },
+   {
+    "seed": [
+     78,
+     78
+    ],
+    "bbox": [
+     251,
+     248,
+     1015,
+     397
+    ],
+    "shape": "box",
+    "en": "Long ago in Benares, two brothers did all the fora",
+    "conf": 87
+   },
+   {
+    "seed": [
+     445,
+     324
+    ],
+    "bbox": [
+     1465,
+     1041,
+     2027,
+     1200
+    ],
+    "shape": "box",
+    "en": "Mahdlohita, the Bodhisatta, and young Cullalohita.",
+    "conf": 72
+   }
+  ],
+  "loose": [
+   "NotebookLM"
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     84,
+     49
+    ],
+    "bbox": [
+     261,
+     159,
+     800,
+     321
+    ],
+    "shape": "box",
+    "en": "Their days filled were with burdens.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     88,
+     247
+    ],
+    "bbox": [
+     261,
+     810,
+     836,
+     969
+    ],
+    "shape": "box",
+    "en": "Their reward was mere grass and chaff.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "NotebookLM"
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     97,
+     52
+    ],
+    "bbox": [
+     261,
+     162,
+     956,
+     321
+    ],
+    "shape": "box",
+    "en": "marriage was arranged for the householder’s",
+    "conf": 90
+   },
+   {
+    "seed": [
+     408,
+     142
+    ],
+    "bbox": [
+     1233,
+     403,
+     1408,
+     622
+    ],
+    "shape": "bubble",
+    "en": "ay",
+    "conf": 48
+   },
+   {
+    "seed": [
+     515,
+     329
+    ],
+    "bbox": [
+     1676,
+     1078,
+     2390,
+     1296
+    ],
+    "shape": "box",
+    "en": "for To dainty the wedding guests, they began to fatten pig named Munika.",
+    "conf": 62
+   }
+  ],
+  "loose": [
+   "NotebookLM"
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     489,
+     364
+    ],
+    "bbox": [
+     1564,
+     1190,
+     2390,
+     1296
+    ],
+    "shape": "box",
+    "en": "He feasted daily on the finest rice",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "ARS",
+   "NotebookLM"
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     456,
+     58
+    ],
+    "bbox": [
+     1432,
+     155,
+     1980,
+     516
+    ],
+    "shape": "bubble",
+    "en": "Brother, we draw all the loads, yet eat only sorry straw",
+    "conf": 96
+   },
+   {
+    "seed": [
+     563,
+     309
+    ],
+    "bbox": [
+     1775,
+     939,
+     2380,
+     1313
+    ],
+    "shape": "bubble",
+    "en": "Why is this lazy pig victualled on rich rice? Why is he treated so well?",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "NotebookLM"
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     610,
+     325
+    ],
+    "bbox": [
+     1957,
+     1015,
+     2384,
+     1313
+    ],
+    "shape": "bubble",
+    "en": "The pig eats the food of death",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "dear",
+   "Cullalohita",
+   "envy",
+   "him",
+   "not",
+   "being",
+   "fed",
+   "only",
+   "furnish",
+   "relish",
+   "for",
+   "the",
+   "wedding",
+   "guests"
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ING",
+   "pihayi...",
+   "not",
+   "envy",
+   "Munika",
+   "eats",
+   "food",
+   "ending",
+   "misery",
+   "Being",
+   "unconcerned,",
+   "eat",
+   "your",
+   "chaff",
+   "that",
+   "the",
+   "mark",
+   "long",
+   "life"
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     88,
+     63
+    ],
+    "bbox": [
+     274,
+     185,
+     830,
+     367
+    ],
+    "shape": "box",
+    "en": "Not long afterwards, the guests arrived.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     130,
+     136
+    ],
+    "bbox": [
+     403,
+     433,
+     956,
+     615
+    ],
+    "shape": "box",
+    "en": "The time of feasting aa come.",
+    "conf": 83
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/030-Deadly-Food-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     129,
+     62
+    ],
+    "bbox": [
+     274,
+     185,
+     780,
+     367
+    ],
+    "shape": "box",
+    "en": "Munika was taken from his pen",
+    "conf": 90
+   },
+   {
+    "seed": [
+     426,
+     62
+    ],
+    "bbox": [
+     1303,
+     185,
+     1997,
+     367
+    ],
+    "shape": "box",
+    "en": "Killed, and converted into all manner of dishes",
+    "conf": 95
+   },
+   {
+    "seed": [
+     535,
+     284
+    ],
+    "bbox": [
+     1696,
+     116,
+     2450,
+     1352
+    ],
+    "shape": "bubble",
+    "en": "Ss SG:",
+    "conf": 50
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/030-Deadly-Food-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Did",
+   "you",
+   "see",
+   "Munika",
+   "dear",
+   "brother?"
+  ]
+ },
+ {
+  "img": "images/030-Deadly-Food-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     94,
+     62
+    ],
+    "bbox": [
+     245,
+     179,
+     922,
+     436
+    ],
+    "shape": "bubble",
+    "en": "have seen the outcome of his feasting",
+    "conf": 95
+   },
+   {
+    "seed": [
+     499,
+     65
+    ],
+    "bbox": [
+     1570,
+     175,
+     2400,
+     579
+    ],
+    "shape": "bubble",
+    "en": "Better thousand times is our meager chaff. Our fare harms us not, and pledges our lives will not be cut short",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "DAC"
+  ]
+ }
+]

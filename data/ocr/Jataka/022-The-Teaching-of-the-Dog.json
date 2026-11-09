@@ -1,0 +1,409 @@
+[
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Tea",
+   "Tale",
+   "Justice",
+   "from",
+   "the"
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     64,
+     49
+    ],
+    "bbox": [
+     212,
+     162,
+     929,
+     268
+    ],
+    "shape": "box",
+    "en": "After sunset, the state chariot was left in the courtyard. In the nights it rained.",
+    "conf": 63
+   },
+   {
+    "seed": [
+     550,
+     366
+    ],
+    "bbox": [
+     1719,
+     1210,
+     2433,
+     1313
+    ],
+    "shape": "box",
+    "en": "The pampered royal dogs crept down and gnawed the wet leather harnesses.",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "WAS"
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     406,
+     376
+    ],
+    "bbox": [
+     1342,
+     1243,
+     2433,
+     1313
+    ],
+    "shape": "box",
+    "en": "began slaughter the And so great in streets of Benares.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "Street",
+   "dogs",
+   "have",
+   "destroyed",
+   "Kill",
+   "every",
+   "dog",
+   "you",
+   "see/"
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     558,
+     62
+    ],
+    "bbox": [
+     1680,
+     172,
+     2423,
+     592
+    ],
+    "shape": "bubble",
+    "en": "The guiltless are put to dea th while the true culprits remain safe inside the palace. will discover the truth to the king and save my kin.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     272,
+     57
+    ],
+    "bbox": [
+     840,
+     159,
+     1802,
+     317
+    ],
+    "shape": "box",
+    "en": "Calling to mind the Ten Perfections, the Bodhisatta walked alone into the city. An aura of loving-kindness disarmed the guards. Not man grew angry.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "ly,"
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     547,
+     199
+    ],
+    "bbox": [
+     1524,
+     605,
+     2139,
+     899
+    ],
+    "shape": "bubble",
+    "en": "do not know the real culprits, it is not right to order the slaughter",
+    "conf": 85
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     265,
+     54
+    ],
+    "bbox": [
+     840,
+     159,
+     1805,
+     317
+    ],
+    "shape": "box",
+    "en": "Those hounds reared by the royal family, well-bred and strong—these are not slaughtered. Only the weak are killed. This is not just.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     160,
+     299
+    ],
+    "bbox": [
+     440,
+     913,
+     1187,
+     1280
+    ],
+    "shape": "bubble",
+    "en": "Kings in trying cases should be as unbiased as the beam of balance. You are following the four Evil Courses: partiality, dislike, ignorance, and fear.",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "NSS",
+   "Nes"
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     274,
+     68
+    ],
+    "bbox": [
+     777,
+     172,
+     1326,
+     397
+    ],
+    "shape": "bubble",
+    "en": "Do you know who gnawed the leather?",
+    "conf": 95
+   },
+   {
+    "seed": [
+     545,
+     327
+    ],
+    "bbox": [
+     1689,
+     1005,
+     2377,
+     1326
+    ],
+    "shape": "bubble",
+    "en": "The dogs in your own palace. Bring them here with buttermilk and kusa grass. will prove it.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "YEN"
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     174,
+     361
+    ],
+    "bbox": [
+     228,
+     1190,
+     2414,
+     1352
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta ordered the kusa grass mashed into buttermilk. The royal dogs drank greedily, then vomited the intact of leather.",
+    "conf": 75
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     348,
+     59
+    ],
+    "bbox": [
+     1025,
+     142,
+     1531,
+     390
+    ],
+    "shape": "bubble",
+    "en": "like judgment of Perfect Buddha himself!",
+    "conf": 88
+   },
+   {
+    "seed": [
+     453,
+     363
+    ],
+    "bbox": [
+     1442,
+     1190,
+     2414,
+     1352
+    ],
+    "shape": "box",
+    "en": "Overjoyed, the king offered the royal white umbrella to the ordinary street dog",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "NOS",
+   "IIS"
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     493,
+     51
+    ],
+    "bbox": [
+     1471,
+     159,
+     2394,
+     367
+    ],
+    "shape": "box",
+    "en": "Having established the king in the Five Precepts, the Bodhisatta handed back the white umbrella of kingship",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "AN)"
+  ]
+ },
+ {
+  "img": "images/022-The-Teaching-of-the-Dog-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     102,
+     51
+    ],
+    "bbox": [
+     251,
+     159,
+     1580,
+     317
+    ],
+    "shape": "box",
+    "en": "The commanded all creatures be safe from harm The street dogs received constant supply of royal food",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ }
+]

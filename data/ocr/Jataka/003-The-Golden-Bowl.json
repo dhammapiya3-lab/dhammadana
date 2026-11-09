@@ -1,0 +1,513 @@
+[
+ {
+  "img": "images/003-The-Golden-Bowl-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     123,
+     67
+    ],
+    "bbox": [
+     149,
+     222,
+     671,
+     334
+    ],
+    "shape": "box",
+    "en": "Five aeons ago, in the kingdom of Seri, rivalry was born.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     112,
+     132
+    ],
+    "bbox": [
+     331,
+     436,
+     876,
+     592
+    ],
+    "shape": "box",
+    "en": "The Supreme Buddha recounts past life to illustrate the heavy cost of missing the True Dhamma.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     580,
+     383
+    ],
+    "bbox": [
+     1898,
+     1237,
+     2496,
+     1359
+    ],
+    "shape": "box",
+    "en": "This is the tale of two hawkers, one golden bowl, and",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/003-The-Golden-Bowl-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     317,
+     375
+    ],
+    "bbox": [
+     807,
+     1164,
+     1835,
+     1442
+    ],
+    "shape": "box",
+    "en": "Crossing the Telavaha, dealers entered the river two city of Andhapura. Both were known as ‘the Seriva They divided the streets to hawk their Bodhisatta. wares. One was greed he was the",
+    "conf": 78
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/003-The-Golden-Bowl-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     96,
+     67
+    ],
+    "bbox": [
+     126,
+     182,
+     1154,
+     393
+    ],
+    "shape": "box",
+    "en": "Once rich merchants, only grandmother and granddaughte survived, stripped of their wealth",
+    "conf": 76
+   },
+   {
+    "seed": [
+     519,
+     333
+    ],
+    "bbox": [
+     1521,
+     1051,
+     2476,
+     1319
+    ],
+    "shape": "box",
+    "en": "Hidden They lived by grueling hired labor. among their rusted pots lay forgotten, dirt-encrusted golden bowl—a relic of their past.",
+    "conf": 60
+   }
+  ],
+  "loose": [
+   "ate"
+  ]
+ },
+ {
+  "img": "images/003-The-Golden-Bowl-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     650,
+     136
+    ],
+    "bbox": [
+     1994,
+     423,
+     2486,
+     589
+    ],
+    "shape": "box",
+    "en": "“We are poor, child. What can we offer?”",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "“Waterpots",
+   "sell!”",
+   "please",
+   "cried",
+   "the",
+   "greedy",
+   "buy",
+   "trinket!”",
+   "“We",
+   "have",
+   "this",
+   "useless",
+   "dirty",
+   "bowl.",
+   "Let",
+   "trade"
+  ]
+ },
+ {
+  "img": "images/003-The-Golden-Bowl-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     523,
+     138
+    ],
+    "bbox": [
+     1689,
+     188,
+     1990,
+     532
+    ],
+    "shape": "bubble",
+    "en": "As",
+    "conf": 80
+   },
+   {
+    "seed": [
+     127,
+     332
+    ],
+    "bbox": [
+     248,
+     1061,
+     2470,
+     1322
+    ],
+    "shape": "box",
+    "en": "needle The hawker turned the bowl over. Suspecting its true nature, he secretly scratched it with Pure gold. Consumed by greed, he plotted to take the treasure without giving them single coin.",
+    "conf": 65
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/003-The-Golden-Bowl-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     463,
+     355
+    ],
+    "bbox": [
+     1405,
+     1137,
+     2523,
+     1349
+    ],
+    "shape": "box",
+    "en": "the dit am He into the out, to return when were",
+    "conf": 55
+   }
+  ],
+  "loose": [
+   "the",
+   "this?”",
+   "isn",
+   "you"
+  ]
+ },
+ {
+  "img": "images/003-The-Golden-Bowl-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     218,
+     390
+    ],
+    "bbox": [
+     119,
+     1213,
+     754,
+     1356
+    ],
+    "shape": "box",
+    "en": "They him he bow al",
+    "conf": 60
+   }
+  ],
+  "loose": [
+   "agreement,",
+   "hawkers",
+   "coul",
+   "visited",
+   "streets.",
+   "The",
+   "Bodh",
+   "isatta",
+   "arrived,",
+   "\"The",
+   "fir",
+   "man",
+   "the",
+   "maiden",
+   "said.",
+   "“This",
+   "one"
+  ]
+ },
+ {
+  "img": "images/003-The-Golden-Bowl-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     91,
+     74
+    ],
+    "bbox": [
+     116,
+     185,
+     1164,
+     327
+    ],
+    "shape": "box",
+    "en": "the",
+    "conf": 97
+   }
+  ],
+  "loose": [
+   "“Mother,",
+   "this",
+   "worth",
+   "hundred",
+   "thousand",
+   "“The",
+   "first",
+   "hawker",
+   "threw",
+   "Your",
+   "goodness",
+   "turned",
+   "gold."
+  ]
+ },
+ {
+  "img": "images/003-The-Golden-Bowl-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Bodhisatta",
+   "gave",
+   "his",
+   "entire",
+   "and",
+   "500",
+   "pieces",
+   "money.",
+   "retained",
+   "only",
+   "his",
+   "scales,",
+   "his",
+   "bag,",
+   "and",
+   "eight",
+   "coins",
+   "for",
+   "the",
+   "boatman.",
+   "departed",
+   "for",
+   "the",
+   "riverside",
+   "with",
+   "all",
+   "speed."
+  ]
+ },
+ {
+  "img": "images/003-The-Golden-Bowl-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "out",
+   "will",
+   "“An",
+   "upright",
+   "master",
+   "hawker",
+   "gave",
+   "you",
+   "thousand",
+   "pieces",
+   "and",
+   "took"
+  ]
+ },
+ {
+  "img": "images/003-The-Golden-Bowl-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     66,
+     305
+    ],
+    "bbox": [
+     112,
+     962,
+     1118,
+     1332
+    ],
+    "shape": "box",
+    "en": "Intense sorrow and rage consumed him Losing all senses, he flung away his goods, stripped off his clothes, and seized his scale-beam as club",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "SY;",
+   "“He",
+   "robbed",
+   "hundred",
+   "thousand",
+   "pieces!”"
+  ]
+ },
+ {
+  "img": "images/003-The-Golden-Bowl-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "tracked",
+   "the",
+   "Bodhisatta",
+   "the",
+   "riverside,",
+   "only",
+   "find",
+   "him",
+   "already",
+   "crossing.",
+   "shrieked",
+   "the",
+   "boatman",
+   "turn",
+   "back.",
+   "The",
+   "Bodhisatta",
+   "calmly",
+   "commanded",
+   "the",
+   "boat",
+   "continue.",
+   "The",
+   "greedy",
+   "hawker",
+   "stood",
+   "helpless."
+  ]
+ },
+ {
+  "img": "images/003-The-Golden-Bowl-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     195,
+     393
+    ],
+    "bbox": [
+     585,
+     1250,
+     2056,
+     1458
+    ],
+    "shape": "box",
+    "en": "Gazing at the retreating boat, blood gushed from his lips. Nis heart cracked like the mud of dried-up tank. Ne perished then and there. Gbus, Devadatta conceived his first grudge against the Bodhisatta.",
+    "conf": 51
+   }
+  ],
+  "loose": [
+   "(Se"
+  ]
+ },
+ {
+  "img": "images/003-The-Golden-Bowl-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     248,
+     390
+    ],
+    "bbox": [
+     585,
+     1253,
+     2056,
+     1458
+    ],
+    "shape": "box",
+    "en": "Ghe Supreme Buddha concluded his lesson: “If bere you miss being certain of results in the Grue Dhamma, For time will suffer, Like the merchant in Seriva. along you",
+    "conf": 56
+   }
+  ],
+  "loose": []
+ }
+]

@@ -1,0 +1,530 @@
+[
+ {
+  "img": "images/029-Grannys-Blackie-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     76,
+     65
+    ],
+    "bbox": [
+     188,
+     182,
+     1170,
+     489
+    ],
+    "shape": "box",
+    "en": "Ayyika Kalaka The Story of lackie",
+    "conf": 90
+   },
+   {
+    "seed": [
+     561,
+     345
+    ],
+    "bbox": [
+     1752,
+     1124,
+     2453,
+     1296
+    ],
+    "shape": "box",
+    "en": "tale of strength, justice, and devotion in ancient Benares.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Gr)"
+  ]
+ },
+ {
+  "img": "images/029-Grannys-Blackie-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     91,
+     47
+    ],
+    "bbox": [
+     284,
+     122,
+     1005,
+     321
+    ],
+    "shape": "box",
+    "en": "Given to poor woman to settle lodging debt, the Bodhisatta was reared like her own child.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     674,
+     302
+    ],
+    "bbox": [
+     1964,
+     764,
+     2397,
+     1194
+    ],
+    "shape": "bubble",
+    "en": "we",
+    "conf": 47
+   },
+   {
+    "seed": [
+     582,
+     367
+    ],
+    "bbox": [
+     1861,
+     1203,
+     2500,
+     1352
+    ],
+    "shape": "box",
+    "en": "He became known as Ayyika Kalaka—Granny’s Blackie.",
+    "conf": 88
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/029-Grannys-Blackie-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     91,
+     39
+    ],
+    "bbox": [
+     284,
+     122,
+     995,
+     271
+    ],
+    "shape": "box",
+    "en": "Growing up jet-black and strong, Kalaka roamed the village.",
+    "conf": 91
+   },
+   {
+    "seed": [
+     540,
+     350
+    ],
+    "bbox": [
+     1762,
+     1151,
+     2500,
+     1352
+    ],
+    "shape": "box",
+    "en": "Village urchins rode his back and pulled his horns in play. He was gentle giant among the herd.",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/029-Grannys-Blackie-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     534,
+     48
+    ],
+    "bbox": [
+     1557,
+     53,
+     2549,
+     631
+    ],
+    "shape": "bubble",
+    "en": "“My mother is poor. She painfully reared me as her own child. must earn money to ease her hard lot.”",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/029-Grannys-Blackie-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     385,
+     366
+    ],
+    "bbox": [
+     1203,
+     1207,
+     2500,
+     1352
+    ],
+    "shape": "box",
+    "en": "The ford was treacherous. Even yoking all his oxen into one massive team, they could not budge single cart.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/029-Grannys-Blackie-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     76,
+     60
+    ],
+    "bbox": [
+     188,
+     195,
+     989,
+     350
+    ],
+    "shape": "box",
+    "en": "Kalaka’ Spotting the merchant tried to lead him",
+    "conf": 91
+   },
+   {
+    "seed": [
+     502,
+     176
+    ],
+    "bbox": [
+     1623,
+     572,
+     2457,
+     727
+    ],
+    "shape": "box",
+    "en": "But the Bodhisatta would not budge. He demanded his pay be fixed",
+    "conf": 92
+   },
+   {
+    "seed": [
+     285,
+     265
+    ],
+    "bbox": [
+     780,
+     800,
+     1465,
+     1200
+    ],
+    "shape": "bubble",
+    "en": "will pay two coins per cart. One thousand coins total,” agreed the merchant",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/029-Grannys-Blackie-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     61,
+     61
+    ],
+    "bbox": [
+     188,
+     195,
+     863,
+     354
+    ],
+    "shape": "box",
+    "en": "The contract sealed, Kalaka required no force.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     541,
+     195
+    ],
+    "bbox": [
+     1719,
+     635,
+     2437,
+     853
+    ],
+    "shape": "box",
+    "en": "With immense power, he dragged the first wagon high and dry with single pull.",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/029-Grannys-Blackie-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     655,
+     243
+    ],
+    "bbox": [
+     2119,
+     674,
+     2500,
+     959
+    ],
+    "shape": "bubble",
+    "en": "poe gw? ae",
+    "conf": 47
+   },
+   {
+    "seed": [
+     52,
+     346
+    ],
+    "bbox": [
+     172,
+     1144,
+     1253,
+     1293
+    ],
+    "shape": "box",
+    "en": "Thinking he cheat beast, the merchant tied only five hundred coins around Kalaka’s neck.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "WAG"
+  ]
+ },
+ {
+  "img": "images/029-Grannys-Blackie-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     63,
+     61
+    ],
+    "bbox": [
+     192,
+     195,
+     1005,
+     354
+    ],
+    "shape": "box",
+    "en": "the Kalaka blocked wagon. one could move him.",
+    "conf": 85
+   },
+   {
+    "seed": [
+     566,
+     364
+    ],
+    "bbox": [
+     1865,
+     1197,
+     2440,
+     1293
+    ],
+    "shape": "box",
+    "en": "“Here is your rightful pay.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "Realizing",
+   "his",
+   "error,",
+   "the",
+   "merchant",
+   "wrapped",
+   "the",
+   "full",
+   "thousand",
+   "coins",
+   "tied",
+   "them",
+   "the",
+   "bull."
+  ]
+ },
+ {
+  "img": "images/029-Grannys-Blackie-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     62,
+     61
+    ],
+    "bbox": [
+     192,
+     195,
+     913,
+     350
+    ],
+    "shape": "box",
+    "en": "Exhausted, Kalaka with eyes, ran home.",
+    "conf": 83
+   },
+   {
+    "seed": [
+     486,
+     330
+    ],
+    "bbox": [
+     1600,
+     1078,
+     2453,
+     1293
+    ],
+    "shape": "box",
+    "en": "He scattered the playful village children away, ensuring the thousand coins safely reached his ‘mother.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "WY,",
+   "ING"
+  ]
+ },
+ {
+  "img": "images/029-Grannys-Blackie-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     479,
+     329
+    ],
+    "bbox": [
+     1574,
+     1078,
+     2453,
+     1293
+    ],
+    "shape": "box",
+    "en": "She refused the money, washing and oiling his weary body. They lived peacefully, according to their deeds.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "(Ge",
+   "“Have",
+   "any",
+   "wish",
+   "live",
+   "your",
+   "earnings,",
+   "child?",
+   "Why",
+   "endure",
+   "this",
+   "fatigue?”",
+   "NSS"
+  ]
+ },
+ {
+  "img": "images/029-Grannys-Blackie-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     69,
+     67
+    ],
+    "bbox": [
+     212,
+     205,
+     1432,
+     327
+    ],
+    "shape": "box",
+    "en": "Revealing his past life, the Awakened One uttered",
+    "conf": 96
+   },
+   {
+    "seed": [
+     339,
+     252
+    ],
+    "bbox": [
+     1098,
+     823,
+     1719,
+     1104
+    ],
+    "shape": "box",
+    "en": "“Yato yato garu dhuram, yato gambhiravattani, Tadassu Kanham yufjanti, svassu tam vahate dhuran-ti.”",
+    "conf": 58
+   },
+   {
+    "seed": [
+     475,
+     357
+    ],
+    "bbox": [
+     1342,
+     1154,
+     2476,
+     1316
+    ],
+    "shape": "box",
+    "en": "onerous the load, however deep the path, they harness Kanha, and he carries it away.”",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ }
+]

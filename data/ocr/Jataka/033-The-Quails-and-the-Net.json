@@ -1,0 +1,497 @@
+[
+ {
+  "img": "images/033-The-Quails-and-the-Net-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     371,
+     197
+    ],
+    "bbox": [
+     820,
+     592,
+     1822,
+     893
+    ],
+    "shape": "box",
+    "en": "Quails and the Gowler Oale of and the Jataka",
+    "conf": 56
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/033-The-Quails-and-the-Net-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     218,
+     57
+    ],
+    "bbox": [
+     562,
+     93,
+     2080,
+     400
+    ],
+    "shape": "box",
+    "en": "the past, when Brahmadatta was king of Benares, fowler learned to imitate the note of quail. Luring thousands of birds together, he would fling his net over them, huddle them in heap, and cram them into his basket to sell. 4",
+    "conf": 78
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/033-The-Quails-and-the-Net-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     433,
+     48
+    ],
+    "bbox": [
+     1203,
+     139,
+     2371,
+     486
+    ],
+    "shape": "bubble",
+    "en": "This is making havoc among our kinsfolk. have device. When he throws the net, let each one put his head through mesh.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     461,
+     190
+    ],
+    "bbox": [
+     1286,
+     562,
+     2235,
+     893
+    ],
+    "shape": "bubble",
+    "en": "Together, we will fly away with the net and let it down ona thorn-brake.",
+    "conf": 76
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/033-The-Quails-and-the-Net-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     279,
+     23
+    ],
+    "bbox": [
+     883,
+     56,
+     1759,
+     169
+    ],
+    "shape": "box",
+    "en": "The Unity Maneuver",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/033-The-Quails-and-the-Net-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     116,
+     75
+    ],
+    "bbox": [
+     218,
+     165,
+     1118,
+     549
+    ],
+    "shape": "box",
+    "en": "while the fowler still came on was disentangling his net, and he went away empty-handed. On following days, the quails played the same trick. It became the regular thing for him to be engaged till sunset, returning home with nothing.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/033-The-Quails-and-the-Net-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     160,
+     65
+    ],
+    "bbox": [
+     367,
+     165,
+     1144,
+     565
+    ],
+    "shape": "bubble",
+    "en": "Day by day you return empty-handed! suppose you've got second establishment to keep up elsewhere.",
+    "conf": 88
+   },
+   {
+    "seed": [
+     574,
+     66
+    ],
+    "bbox": [
+     1805,
+     175,
+     2410,
+     559
+    ],
+    "shape": "bubble",
+    "en": "No, my dear. Those quails have come to work together now. The moment my net is over them, off they fly.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/033-The-Quails-and-the-Net-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Still,",
+   "they",
+   "live",
+   "unity",
+   "always.",
+   "soon",
+   "they",
+   "start",
+   "bickering,",
+   "shall",
+   "bag",
+   "the",
+   "lot.",
+   "gacchanti,",
+   "jalam-adaya",
+   "pakkhino,",
+   "Yada",
+   "vivadissanti,",
+   "tada",
+   "ehinti",
+   "vasan-",
+   "ti.",
+   "(Joyously",
+   "the",
+   "birds",
+   "fly",
+   "away,",
+   "carrying",
+   "the",
+   "net",
+   "together;",
+   "when",
+   "they",
+   "begin",
+   "quarrel,",
+   "then",
+   "they",
+   "will",
+   "come",
+   "into",
+   "power.)"
+  ]
+ },
+ {
+  "img": "images/033-The-Quails-and-the-Net-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     227,
+     69
+    ],
+    "bbox": [
+     708,
+     205,
+     1934,
+     384
+    ],
+    "shape": "box",
+    "en": "Not long after, one quail, alighting on their feeding ground, trod by accident on another’s head",
+    "conf": 91
+   },
+   {
+    "seed": [
+     591,
+     310
+    ],
+    "bbox": [
+     1855,
+     876,
+     2404,
+     1276
+    ],
+    "shape": "bubble",
+    "en": "did; but didn’t mean to. Don’t be angry",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "SSS",
+   "Who",
+   "trod",
+   "head"
+  ]
+ },
+ {
+  "img": "images/033-The-Quails-and-the-Net-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     208,
+     53
+    ],
+    "bbox": [
+     562,
+     169,
+     2080,
+     337
+    ],
+    "shape": "box",
+    "en": "Notwithstanding the apology, the other remained angry. Continuing to answer one another, they began to swap taunts.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "suppose",
+   "you",
+   "single-handed",
+   "who",
+   "lift",
+   "the",
+   "net!"
+  ]
+ },
+ {
+  "img": "images/033-The-Quails-and-the-Net-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     125,
+     73
+    ],
+    "bbox": [
+     258,
+     149,
+     1306,
+     602
+    ],
+    "shape": "bubble",
+    "en": "There’s no safety with one who is quarrelsome. They will no longer lift the net, and thereby come to great destruction can stay here no longer.",
+    "conf": 63
+   },
+   {
+    "seed": [
+     431,
+     370
+    ],
+    "bbox": [
+     1385,
+     1197,
+     2483,
+     1332
+    ],
+    "shape": "box",
+    "en": "Thereupon he and his following went elsewhere",
+    "conf": 97
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/033-The-Quails-and-the-Net-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     54,
+     48
+    ],
+    "bbox": [
+     155,
+     149,
+     952,
+     489
+    ],
+    "shape": "box",
+    "en": "Sure enough, the fowler back came few days later. Collecting them together by imitating the note of quail, he flung his net over the squabbling flock.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/033-The-Quails-and-the-Net-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     112,
+     74
+    ],
+    "bbox": [
+     281,
+     192,
+     946,
+     532
+    ],
+    "shape": "bubble",
+    "en": "They say when you were lifting the net, the hair of your head fell off. Now’s your time; lift away!",
+    "conf": 91
+   },
+   {
+    "seed": [
+     512,
+     94
+    ],
+    "bbox": [
+     1607,
+     264,
+     2258,
+     628
+    ],
+    "shape": "bubble",
+    "en": "When you were lifting, both your wings moulted Now’s your time; lift away!",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Ge)"
+  ]
+ },
+ {
+  "img": "images/033-The-Quails-and-the-Net-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     113,
+     69
+    ],
+    "bbox": [
+     218,
+     205,
+     1065,
+     476
+    ],
+    "shape": "box",
+    "en": "While they each inviting the other were to lift the net, the fowler himself lifted it for them. He crammed them in heap nto his basket and bore them off home.",
+    "conf": 94
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/033-The-Quails-and-the-Net-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     162,
+     356
+    ],
+    "bbox": [
+     350,
+     1147,
+     1084,
+     1283
+    ],
+    "shape": "box",
+    "en": "UNITY. Joyously the birds fly away, carrying the net together...",
+    "conf": 92
+   },
+   {
+    "seed": [
+     535,
+     347
+    ],
+    "bbox": [
+     1564,
+     1147,
+     2281,
+     1283
+    ],
+    "shape": "box",
+    "en": "DIVISION. ...so that his wife’s face was wreathed with smiles.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ }
+]

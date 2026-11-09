@@ -1,0 +1,462 @@
+[
+ {
+  "img": "images/032-The-Peacocks-Dance-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     134,
+     307
+    ],
+    "bbox": [
+     248,
+     956,
+     909,
+     1243
+    ],
+    "shape": "box",
+    "en": "The Golden Mallard. tale of modesty, pride, and the first cycle of the world’s history.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/032-The-Peacocks-Dance-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     181,
+     69
+    ],
+    "bbox": [
+     509,
+     198,
+     2133,
+     291
+    ],
+    "shape": "box",
+    "en": "of In the first Ic the world’s istory, the animal chose their leaders.",
+    "conf": 67
+   },
+   {
+    "seed": [
+     185,
+     364
+    ],
+    "bbox": [
+     321,
+     1147,
+     760,
+     1280
+    ],
+    "shape": "box",
+    "en": "Quadrupeds chose the Lion.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     393,
+     364
+    ],
+    "bbox": [
+     1084,
+     1147,
+     1557,
+     1280
+    ],
+    "shape": "box",
+    "en": "Fishes chose the monster-fish Ananda.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     610,
+     366
+    ],
+    "bbox": [
+     1881,
+     1147,
+     2341,
+     1280
+    ],
+    "shape": "box",
+    "en": "The birds chose the Golden Mallard.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/032-The-Peacocks-Dance-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     112,
+     83
+    ],
+    "bbox": [
+     218,
+     212,
+     1121,
+     360
+    ],
+    "shape": "box",
+    "en": "King Golden Mallard granted his daughter any boon she",
+    "conf": 96
+   },
+   {
+    "seed": [
+     583,
+     88
+    ],
+    "bbox": [
+     1828,
+     274,
+     2176,
+     397
+    ],
+    "shape": "bubble",
+    "en": "Agreed",
+    "conf": 97
+   },
+   {
+    "seed": [
+     179,
+     150
+    ],
+    "bbox": [
+     512,
+     469,
+     992,
+     741
+    ],
+    "shape": "bubble",
+    "en": "Father, allow me to choose husband after heart. my own",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/032-The-Peacocks-Dance-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     183,
+     389
+    ],
+    "bbox": [
+     479,
+     1270,
+     2162,
+     1438
+    ],
+    "shape": "box",
+    "en": "To fulfill his promise, the King summoned all winged creatures in the Himalayas. They flocked together on great plateau of bare rock, awaiting the Princess.",
+    "conf": 59
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/032-The-Peacocks-Dance-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     288,
+     210
+    ],
+    "bbox": [
+     784,
+     655,
+     1865,
+     926
+    ],
+    "shape": "box",
+    "en": "“Go, choose husband after your own heart,” he ba de her. She reviewed the great assembly, searching the endless crowd for the right companion.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/032-The-Peacocks-Dance-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     96,
+     70
+    ],
+    "bbox": [
+     192,
+     192,
+     969,
+     413
+    ],
+    "shape": "box",
+    "en": "Her eye lighted upon the peacock, with his neck of jewelled sheen and tail of varied hue.",
+    "conf": 91
+   },
+   {
+    "seed": [
+     582,
+     171
+    ],
+    "bbox": [
+     1789,
+     532,
+     2450,
+     744
+    ],
+    "shape": "bubble",
+    "en": "“Let this be my husband,” she declared.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "ANS"
+  ]
+ },
+ {
+  "img": "images/032-The-Peacocks-Dance-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     112,
+     65
+    ],
+    "bbox": [
+     192,
+     192,
+     969,
+     493
+    ],
+    "shape": "bubble",
+    "en": "Friend peacock, the princess has fixed her choice on you from among all the birds in the world.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     309,
+     18
+    ],
+    "bbox": [
+     879,
+     23,
+     1762,
+     159
+    ],
+    "shape": "box",
+    "en": "The assembly of birds approached him.",
+    "conf": 85
+   }
+  ],
+  "loose": [
+   "bag"
+  ]
+ },
+ {
+  "img": "images/032-The-Peacocks-Dance-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     119,
+     68
+    ],
+    "bbox": [
+     192,
+     192,
+     969,
+     413
+    ],
+    "shape": "box",
+    "en": "Carried away by extreme joy and blinding pride, the peacock exclaimed:",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "“Until",
+   "this",
+   "day",
+   "you",
+   "have",
+   "never",
+   "seen",
+   "how",
+   "active",
+   "Iam!”"
+  ]
+ },
+ {
+  "img": "images/032-The-Peacocks-Dance-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     574,
+     316
+    ],
+    "bbox": [
+     1825,
+     1012,
+     2443,
+     1359
+    ],
+    "shape": "box",
+    "en": "In defiance of all decency, he spread his wings and began to dance wildly. In his frenzied display, he exposed himself before the entire assembly.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/032-The-Peacocks-Dance-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     149,
+     72
+    ],
+    "bbox": [
+     212,
+     212,
+     1276,
+     321
+    ],
+    "shape": "box",
+    "en": "on ty",
+    "conf": 50
+   }
+  ],
+  "loose": [
+   "“This",
+   "fellow",
+   "has",
+   "neither",
+   "modesty",
+   "his",
+   "heart",
+   "nor",
+   "ecency",
+   "his",
+   "outward",
+   "behaviour.",
+   "will",
+   "not",
+   "give",
+   "daughter",
+   "one",
+   "shameless."
+  ]
+ },
+ {
+  "img": "images/032-The-Peacocks-Dance-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Rudam",
+   "pitthi,",
+   "giva.",
+   "Naccena",
+   "dhitaram",
+   "dadami",
+   "ti.",
+   "pleasing",
+   "voice,",
+   "brilliant",
+   "back,",
+   "neck",
+   "like",
+   "lapis",
+   "lazuli...",
+   "but",
+   "because",
+   "the",
+   "dance,",
+   "not",
+   "give",
+   "you",
+   "our",
+   "daughter."
+  ]
+ },
+ {
+  "img": "images/032-The-Peacocks-Dance-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     466,
+     101
+    ],
+    "bbox": [
+     1359,
+     255,
+     2420,
+     542
+    ],
+    "shape": "box",
+    "en": "the King Right in face of the the gave his daughter to modest young mallard, nephew of his. Covered in the peacock fled into the sky.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ }
+]

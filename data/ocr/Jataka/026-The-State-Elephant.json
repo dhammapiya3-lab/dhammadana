@@ -1,0 +1,429 @@
+[
+ {
+  "img": "images/026-The-State-Elephant-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     81,
+     66
+    ],
+    "bbox": [
+     192,
+     188,
+     962,
+     443
+    ],
+    "shape": "box",
+    "en": "In ancient Benares, King Brahmadatta relied on his wise minister, the Bodhisatta. The kingdom’s pride was Mahilamukha, the state elephant—a creature of perfect virtue who never harmed soul.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     486,
+     9
+    ],
+    "bbox": [
+     774,
+     0,
+     1868,
+     139
+    ],
+    "shape": "box",
+    "en": "The State an",
+    "conf": 82
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/026-The-State-Elephant-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     154,
+     56
+    ],
+    "bbox": [
+     509,
+     185,
+     1055,
+     354
+    ],
+    "shape": "box",
+    "en": "By night, violent burglars gathered near the elephant’s stall to plan their crimes.",
+    "conf": 72
+   },
+   {
+    "seed": [
+     284,
+     232
+    ],
+    "bbox": [
+     787,
+     764,
+     1194,
+     1071
+    ],
+    "shape": "bubble",
+    "en": "burglar must discard all goodness. Show no pity. Use cruelty and violence to take what is",
+    "conf": 94
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/026-The-State-Elephant-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     149,
+     341
+    ],
+    "bbox": [
+     489,
+     1124,
+     1580,
+     1299
+    ],
+    "shape": "box",
+    "en": "Hearing their vicious counsel night after night, the innocent elephant assumed he was being instructed. The environment rewrote his nature. He resolved to become creature of pure violence.",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/026-The-State-Elephant-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     147,
+     56
+    ],
+    "bbox": [
+     483,
+     185,
+     1243,
+     443
+    ],
+    "shape": "box",
+    "en": "The transformation was absolute. When his loyal mahout arrived at dawn, Mahilamukha seized him and dashed him to the ground. Anyone who approached met the same violent end.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/026-The-State-Elephant-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     444,
+     53
+    ],
+    "bbox": [
+     1451,
+     152,
+     2099,
+     476
+    ],
+    "shape": "bubble",
+    "en": "Mahilamukha killing is everyone in sight! Go, has wise minister. Find out what perverted our greatest beast.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/026-The-State-Elephant-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Bodhisatta",
+   "conducted",
+   "root-cause",
+   "analysis.",
+   "Finding",
+   "physical",
+   "ailments,",
+   "deduced",
+   "psychological",
+   "cause:",
+   "the",
+   "elephant",
+   "had",
+   "been",
+   "corrupted",
+   "his",
+   "auditory"
+  ]
+ },
+ {
+  "img": "images/026-The-State-Elephant-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     130,
+     51
+    ],
+    "bbox": [
+     377,
+     162,
+     1332,
+     271
+    ],
+    "shape": "box",
+    "en": "The keepers confirmed the hypothesis.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     523,
+     279
+    ],
+    "bbox": [
+     1554,
+     790,
+     2166,
+     1273
+    ],
+    "shape": "bubble",
+    "en": "The beast is not sick in body. His mind has been perverted by overhearing the dark words of thieves.",
+    "conf": 94
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/026-The-State-Elephant-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     116,
+     51
+    ],
+    "bbox": [
+     377,
+     162,
+     1561,
+     331
+    ],
+    "shape": "box",
+    "en": "To the corruption, the Bodhisatta prescribed cure antidote of equal and opposite force. an",
+    "conf": 93
+   },
+   {
+    "seed": [
+     391,
+     258
+    ],
+    "bbox": [
+     1118,
+     747,
+     1683,
+     1187
+    ],
+    "shape": "bubble",
+    "en": "Order good men, sages and brahmins, to sit in his stall tonight and speak only of",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/026-The-State-Elephant-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     150,
+     59
+    ],
+    "bbox": [
+     387,
+     195,
+     1478,
+     278
+    ],
+    "shape": "box",
+    "en": "sages took thelr seate near Fie the violent beast beast. took their seats near vio",
+    "conf": 56
+   },
+   {
+    "seed": [
+     271,
+     128
+    ],
+    "bbox": [
+     767,
+     384,
+     1418,
+     760
+    ],
+    "shape": "bubble",
+    "en": "Neither maltreat nor kill. The good must always be long-suffering, loving, and merciful.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/026-The-State-Elephant-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     114,
+     59
+    ],
+    "bbox": [
+     377,
+     195,
+     1881,
+     327
+    ],
+    "shape": "box",
+    "en": "internalized Just as before, the elephant his environment. Believing this to be his new he shed his cruelty and embraced peace.",
+    "conf": 74
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/026-The-State-Elephant-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     168,
+     59
+    ],
+    "bbox": [
+     377,
+     195,
+     1971,
+     327
+    ],
+    "shape": "box",
+    "en": "The Mec hanics of Influence: Behavior is the output of the data we consume. eves Cruelty Murder Sages Mercy Peace",
+    "conf": 51
+   }
+  ],
+  "loose": [
+   "Input",
+   "Processing",
+   "Output",
+   "(Words)",
+   "(Belief)",
+   "(Action)",
+   "The",
+   "Thieves",
+   "The",
+   "Sages"
+  ]
+ },
+ {
+  "img": "images/026-The-State-Elephant-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     223,
+     62
+    ],
+    "bbox": [
+     377,
+     195,
+     1832,
+     387
+    ],
+    "shape": "box",
+    "en": "vaco nisamma, Mahilamukho pothayam-anvacari. Considering the thieves’ words, he lashed out. Considering the words of the restrained, the elephant was established in all virtues.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/026-The-State-Elephant-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     546,
+     111
+    ],
+    "bbox": [
+     1762,
+     350,
+     2245,
+     572
+    ],
+    "shape": "bubble",
+    "en": "He can read the mind even of an animal!",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ }
+]

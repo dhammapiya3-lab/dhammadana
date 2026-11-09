@@ -1,0 +1,450 @@
+[
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     114,
+     82
+    ],
+    "bbox": [
+     231,
+     231,
+     830,
+     440
+    ],
+    "shape": "box",
+    "en": "Long ago in Varanasi, King Brahmadatta proclaimed grand festival.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     586,
+     326
+    ],
+    "bbox": [
+     1762,
+     1028,
+     2417,
+     1263
+    ],
+    "shape": "box",
+    "en": "The joyous summoning notes the festal drum echoed down into the royal pleasure gardens",
+    "conf": 79
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     102,
+     65
+    ],
+    "bbox": [
+     162,
+     169,
+     916,
+     357
+    ],
+    "shape": "box",
+    "en": "The king’s gardener longed to join the holiday-making",
+    "conf": 92
+   },
+   {
+    "seed": [
+     363,
+     70
+    ],
+    "bbox": [
+     972,
+     185,
+     1567,
+     536
+    ],
+    "shape": "bubble",
+    "en": "will get the monkeys to do the watering for me, and be off to enjoy myself.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     319,
+     71
+    ],
+    "bbox": [
+     873,
+     175,
+     1637,
+     536
+    ],
+    "shape": "bubble",
+    "en": "You enjoy these flowers and fruits. Today is holiday up in the city. Could you water the young trees while am away?",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     292,
+     60
+    ],
+    "bbox": [
+     790,
+     162,
+     1848,
+     364
+    ],
+    "shape": "box",
+    "en": "The gardener handed the water-skins and over watering-pots, entirely abdicating his responsibility.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     626,
+     95
+    ],
+    "bbox": [
+     1934,
+     298,
+     2215,
+     456
+    ],
+    "shape": "bubble",
+    "en": "mind you do!",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     143,
+     51
+    ],
+    "bbox": [
+     298,
+     139,
+     1683,
+     516
+    ],
+    "shape": "bubble",
+    "en": "We must be careful not to waste water. When this water is all gone, we shall be hard put to it to get more.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     515,
+     78
+    ],
+    "bbox": [
+     1627,
+     169,
+     2476,
+     364
+    ],
+    "shape": "box",
+    "en": "He devised perfectly destructive, empirical method.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     402,
+     319
+    ],
+    "bbox": [
+     1197,
+     998,
+     2004,
+     1263
+    ],
+    "shape": "bubble",
+    "en": "First pull each young tree up. Look at the size of its roots",
+    "conf": 57
+   }
+  ],
+  "loose": [
+   "Goal",
+   "Requirement",
+   "Action:",
+   "Result",
+   "Save",
+   "Water",
+   "Know",
+   "Root",
+   "Size",
+   "Uproot",
+   "Tree",
+   "Dead",
+   "Tree"
+  ]
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     243,
+     60
+    ],
+    "bbox": [
+     608,
+     139,
+     2033,
+     364
+    ],
+    "shape": "bubble",
+    "en": "deep, Give plenty of water to those whose roots strike but only little to those with roots.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     655,
+     130
+    ],
+    "bbox": [
+     2139,
+     393,
+     2466,
+     598
+    ],
+    "shape": "bubble",
+    "en": "To be sure!",
+    "conf": 97
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     234,
+     367
+    ],
+    "bbox": [
+     661,
+     1108,
+     2473,
+     1313
+    ],
+    "shape": "box",
+    "en": "man entered gardens. He witnessed this juncture, wise the pleasure the devastating execution of the gardener’s delegation.",
+    "conf": 89
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     284,
+     62
+    ],
+    "bbox": [
+     820,
+     162,
+     1577,
+     512
+    ],
+    "shape": "bubble",
+    "en": "Why do you pull up the trees and water them according to the size of their roots?",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     247,
+     348
+    ],
+    "bbox": [
+     661,
+     1104,
+     2470,
+     1313
+    ],
+    "shape": "box",
+    "en": "flawless execution of fundamentally flawed strategy.",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "Because",
+   "such",
+   "are",
+   "our",
+   "king’s",
+   "commands"
+  ]
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     89,
+     305
+    ],
+    "bbox": [
+     136,
+     856,
+     1131,
+     1316
+    ],
+    "shape": "box",
+    "en": "Their reply moved the wise man to reflect on profound tragedy: with every desire to do good, the ignorant and foolish only succeed in doing harm.",
+    "conf": 94
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "anatthakusalena",
+   "atthacariya",
+   "sukhavaha,",
+   "Hapeti",
+   "attham",
+   "dummedho,",
+   "kapi",
+   "aramiko",
+   "yatha",
+   "ti.",
+   "The",
+   "unintelligent",
+   "ruins",
+   "what",
+   "good,",
+   "like",
+   "the",
+   "monkey",
+   "the",
+   "park.",
+   "ANS"
+  ]
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     498,
+     342
+    ],
+    "bbox": [
+     1475,
+     1098,
+     2466,
+     1346
+    ],
+    "shape": "bubble",
+    "en": "the True wisdom requires understanding not the",
+    "conf": 62
+   }
+  ],
+  "loose": [
+   "Good",
+   "intentions,",
+   "devoid",
+   "intelligence",
+   "are",
+   "inherently",
+   "destructive"
+  ]
+ }
+]

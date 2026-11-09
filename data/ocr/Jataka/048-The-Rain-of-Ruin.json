@@ -1,0 +1,563 @@
+[
+ {
+  "img": "images/048-The-Rain-of-Ruin-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Vedabbha",
+   "Charm",
+   "tale",
+   "the",
+   "Bodhisatta.",
+   "Covetousness",
+   "the",
+   "root",
+   "ruin."
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     122,
+     72
+    ],
+    "bbox": [
+     403,
+     238,
+     1065,
+     393
+    ],
+    "shape": "box",
+    "en": "Traveling to the Bodhisatta and his master were captured by five hundred robbers known “The Dispatchers.”",
+    "conf": 93
+   },
+   {
+    "seed": [
+     433,
+     344
+    ],
+    "bbox": [
+     1395,
+     1137,
+     2225,
+     1253
+    ],
+    "shape": "box",
+    "en": "Their rule: Keep the dispatch the pupil for ransom. The Bodhisatta was sent to fetch the gold.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     462,
+     107
+    ],
+    "bbox": [
+     1280,
+     251,
+     2215,
+     830
+    ],
+    "shape": "bubble",
+    "en": "will return. Have no fear,” the Bodhisatta warned. “Tonight the planets align. Do not repeat the Vedabbha charm to call down the precious rain. If you yield to this mishap, calamity will befall you and these robbers.”",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     123,
+     72
+    ],
+    "bbox": [
+     403,
+     238,
+     1118,
+     393
+    ],
+    "shape": "box",
+    "en": "Bound and impatient, the brahmin watched the eastern horizon. Seeing the great conjunction, he bargained for his release",
+    "conf": 92
+   },
+   {
+    "seed": [
+     411,
+     344
+    ],
+    "bbox": [
+     1359,
+     1137,
+     2225,
+     1253
+    ],
+    "shape": "box",
+    "en": "Bathed and perfumed by the robbers, he lifted his eyes to the heavens and chanted the forbidden charm.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     123,
+     72
+    ],
+    "bbox": [
+     403,
+     238,
+     1018,
+     354
+    ],
+    "shape": "box",
+    "en": "Forthwith, the Seven Things of Price poured from the skies.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     130,
+     327
+    ],
+    "bbox": [
+     413,
+     1081,
+     2225,
+     1253
+    ],
+    "shape": "box",
+    "en": "ann into The robbers scrambled, wrapping the unimaginable their cloaks. Marching away with their heavy booty, the brahmin followed safely behind. Or so he thought.",
+    "conf": 47
+   }
+  ],
+  "loose": [
+   "Gea"
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     124,
+     88
+    ],
+    "bbox": [
+     403,
+     238,
+     1084,
+     354
+    ],
+    "shape": "box",
+    "en": "As luck would have it, second band of five hundred robbers ambushed them.",
+    "conf": 95
+   },
+   {
+    "seed": [
+     444,
+     72
+    ],
+    "bbox": [
+     1465,
+     238,
+     2238,
+     354
+    ],
+    "shape": "box",
+    "en": "Learning the brahmin had conjured the riches, they demanded shower of their own.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "ale",
+   "Gea",
+   "cannot,”",
+   "trembled.",
+   "“The",
+   "planets",
+   "will",
+   "not",
+   "align",
+   "for",
+   "another",
+   "year.”"
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     252,
+     342
+    ],
+    "bbox": [
+     830,
+     1127,
+     1822,
+     1253
+    ],
+    "shape": "box",
+    "en": "With sharp sword, they cut him in twain, flinging his body into the road. The warning was ignored.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "“Rascally",
+   "brahmin!”",
+   "the",
+   "robbers",
+   "roared.",
+   "“You",
+   "made",
+   "them",
+   "rich",
+   "off-hand,",
+   "but",
+   "want",
+   "wait",
+   "whole",
+   "year!”",
+   "ite"
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     165,
+     98
+    ],
+    "bbox": [
+     430,
+     278,
+     969,
+     1210
+    ],
+    "shape": "box",
+    "en": "The began massacre The second band slaughtered the first Then, fighting over the booty, they divided and slaughtered each other. 1,000 robbers fought Then 500 Then 250 Down and down they fought, until only two men remained alive",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "250"
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     173,
+     75
+    ],
+    "bbox": [
+     569,
+     195,
+     2073,
+     271
+    ],
+    "shape": "box",
+    "en": "The survivors hid the treasure. stayed to guard it; the other we",
+    "conf": 93
+   },
+   {
+    "seed": [
+     199,
+     359
+    ],
+    "bbox": [
+     655,
+     1187,
+     1987,
+     1309
+    ],
+    "shape": "box",
+    "en": "In perfect consumed them both. The guard drew his sword to murder his mate. The forager poisoned the rice to claim it all.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     165,
+     96
+    ],
+    "bbox": [
+     430,
+     278,
+     972,
+     800
+    ],
+    "shape": "box",
+    "en": "The moment the forager returned, the guard cut him down Alone with the vast treasure, the murderer sat down to eat his poisoned prize He died then and there",
+    "conf": 84
+   },
+   {
+    "seed": [
+     524,
+     353
+    ],
+    "bbox": [
+     1726,
+     1167,
+     2215,
+     1293
+    ],
+    "shape": "box",
+    "en": "By reason of the treasure, all had come to ruin",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     171,
+     109
+    ],
+    "bbox": [
+     430,
+     278,
+     972,
+     899
+    ],
+    "shape": "box",
+    "en": "Days later, the Bodhisatta returned with the ransom Finding treasure strewn about and his master’s cloven body, his heart sank His warning had been unheeded With gathered sticks and wild flowers, he built pyre and burnt his master.",
+    "conf": 81
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     201,
+     95
+    ],
+    "bbox": [
+     430,
+     278,
+     972,
+     899
+    ],
+    "shape": "box",
+    "en": "Following the bloody road, he found the bodies of the five hundred “Dispatchers.” Then two hundred and fifty Marking how the thousand had perished he knew two must have survived. He pressed into the jungle to find them",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     546,
+     56
+    ],
+    "bbox": [
+     1772,
+     172,
+     2476,
+     393
+    ],
+    "shape": "box",
+    "en": "At the secret spot, he found the treasure, the slain forager, and the poisoned guard",
+    "conf": 93
+   },
+   {
+    "seed": [
+     62,
+     319
+    ],
+    "bbox": [
+     165,
+     1045,
+     959,
+     1322
+    ],
+    "shape": "box",
+    "en": "Realising the entire story at glance he mused on the tragedy. Truly, misguided effort destroys not just oneself, but all others involved",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     556,
+     73
+    ],
+    "bbox": [
+     1746,
+     202,
+     2400,
+     575
+    ],
+    "shape": "box",
+    "en": "Anupayena yo attham icchati so Ceta hanimsu Vedabbam, sabbe te byasanam-ajjhagi ti.",
+    "conf": 48
+   }
+  ],
+  "loose": [
+   "\"He",
+   "who",
+   "wrong",
+   "means",
+   "wishes",
+   "for",
+   "benefit",
+   "suffers",
+   "hardship.",
+   "The",
+   "Ceta",
+   "thieves",
+   "killed",
+   "Vedabbha,",
+   "and",
+   "all",
+   "came",
+   "destruction.”",
+   "preached",
+   "the",
+   "Dhamma."
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     67,
+     61
+    ],
+    "bbox": [
+     169,
+     175,
+     714,
+     334
+    ],
+    "shape": "box",
+    "en": "1e Bodhisatta carried the home.",
+    "conf": 68
+   },
+   {
+    "seed": [
+     51,
+     316
+    ],
+    "bbox": [
+     165,
+     1045,
+     1280,
+     1322
+    ],
+    "shape": "box",
+    "en": "Unlike his master, he did not let consume him. He lived out his term of life in the exercise of boundless generosity and good works, he wea Ith correctly.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ }
+]

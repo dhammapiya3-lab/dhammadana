@@ -1,0 +1,465 @@
+[
+ {
+  "img": "images/041-The-Unfortunate-Monk-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     150,
+     160
+    ],
+    "bbox": [
+     347,
+     479,
+     1322,
+     1141
+    ],
+    "shape": "bubble",
+    "en": "ij 1)",
+    "conf": 49
+   }
+  ],
+  "loose": [
+   "anatomical",
+   "study",
+   "greed,",
+   "consequence,",
+   "and",
+   "the",
+   "cycle",
+   "Samsara."
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     200,
+     404
+    ],
+    "bbox": [
+     341,
+     1306,
+     2301,
+     1455
+    ],
+    "shape": "box",
+    "en": "the of Kassapa Buddha, village monk grew deeply jealous. He feared visiting Arahat would permanently steal the devotion and alms of his patron.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": []
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     300,
+     309
+    ],
+    "bbox": [
+     215,
+     995,
+     1299,
+     1326
+    ],
+    "shape": "bubble",
+    "en": "Ve",
+    "conf": 84
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     173,
+     362
+    ],
+    "bbox": [
+     536,
+     1194,
+     2106,
+     1346
+    ],
+    "shape": "box",
+    "en": "family, Mittavindaka Finally reborn in Kasi beggar brought them total ruin. Beaten and driven out, he became wandering curse.",
+    "conf": 84
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     153,
+     364
+    ],
+    "bbox": [
+     407,
+     1197,
+     2238,
+     1346
+    ],
+    "shape": "box",
+    "en": "In Benares, the Bodhisatta—a renowned, ordinary teacher—took him in. But Mittavindaka was fierce, intractable, and rejected his master’s reproofs. He ran away.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     211,
+     58
+    ],
+    "bbox": [
+     403,
+     175,
+     2238,
+     261
+    ],
+    "shape": "box",
+    "en": "contagion of misfortune. At border village, ruin followed",
+    "conf": 78
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     157,
+     56
+    ],
+    "bbox": [
+     205,
+     185,
+     1160,
+     374
+    ],
+    "shape": "box",
+    "en": "in mid-ocean. math of arma, not chance: seven consecutive times, the cursed lot fell to Mittavindaka.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     435,
+     295
+    ],
+    "bbox": [
+     1200,
+     893,
+     1442,
+     1237
+    ],
+    "shape": "bubble",
+    "en": "4",
+    "conf": 57
+   },
+   {
+    "seed": [
+     517,
+     371
+    ],
+    "bbox": [
+     1670,
+     1227,
+     2255,
+     1375
+    ],
+    "shape": "box",
+    "en": "They cast him overboard on beggar.",
+    "conf": 82
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     453,
+     102
+    ],
+    "bbox": [
+     1336,
+     281,
+     1865,
+     503
+    ],
+    "shape": "box",
+    "en": "Crystal 4 Devadhita 7 Days",
+    "conf": 88
+   },
+   {
+    "seed": [
+     458,
+     161
+    ],
+    "bbox": [
+     1336,
+     532,
+     1865,
+     760
+    ],
+    "shape": "box",
+    "en": "Silver 8 Devadhita 7 Days",
+    "conf": 91
+   },
+   {
+    "seed": [
+     457,
+     245
+    ],
+    "bbox": [
+     1336,
+     790,
+     1861,
+     1018
+    ],
+    "shape": "box",
+    "en": "Jewel 16 Devadhita 7 Days",
+    "conf": 92
+   },
+   {
+    "seed": [
+     462,
+     326
+    ],
+    "bbox": [
+     1336,
+     1048,
+     1865,
+     1256
+    ],
+    "shape": "box",
+    "en": "Gold 32 Devadhita 7",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "Hirt"
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     171,
+     385
+    ],
+    "bbox": [
+     463,
+     1263,
+     2179,
+     1435
+    ],
+    "shape": "box",
+    "en": "Ignoring the Devadhita’s warnings, he sailed to Yakkha city. Blinded by insatiable greed, he seized what he believed was mere goat for dinner.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     292,
+     289
+    ],
+    "bbox": [
+     903,
+     866,
+     1746,
+     1151
+    ],
+    "shape": "box",
+    "en": "It was Yakkhini in disguise. By her Yakkha- nature, she hurled him the dropping across ocean, him violently into the dry moat of Benares.",
+    "conf": 79
+   }
+  ],
+  "loose": [
+   "NOY,"
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     250,
+     370
+    ],
+    "bbox": [
+     774,
+     1217,
+     1871,
+     1418
+    ],
+    "shape": "box",
+    "en": "Unwilling to learn, he applied flawed logic. Seizing king’s goat, he hoped to be hurled back to the ocean palaces. Instead, royal goatherds bound him as thief.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     253,
+     369
+    ],
+    "bbox": [
+     774,
+     1217,
+     1871,
+     1418
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta, passing by, recognized his former runaway pupil. Intervening, he claimed the thief as his own slave to save him from execution",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "NOY,",
+   "bef"
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Resenting",
+   "the",
+   "Arahat’s",
+   "presence.",
+   "Fleeing",
+   "the",
+   "Bodhisatta’s",
+   "teachings.",
+   "Ignoring",
+   "the",
+   "warnings."
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     323,
+     67
+    ],
+    "bbox": [
+     962,
+     192,
+     1703,
+     526
+    ],
+    "shape": "bubble",
+    "en": "He who does not take the advice of one who seeks his good grieves like Mittaka holding onto the goat’s foot",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "NOY,"
+  ]
+ }
+]

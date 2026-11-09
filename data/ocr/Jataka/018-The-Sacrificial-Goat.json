@@ -1,0 +1,493 @@
+[
+ {
+  "img": "images/018-The-Sacrificial-Goat-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     396,
+     210
+    ],
+    "bbox": [
+     975,
+     595,
+     1666,
+     883
+    ],
+    "shape": "box",
+    "en": "Coat and Tale of Karma Based on the Ancient Jataka Tales",
+    "conf": 62
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     71,
+     59
+    ],
+    "bbox": [
+     159,
+     165,
+     932,
+     304
+    ],
+    "shape": "box",
+    "en": "In Benares, world-famed Dead. 4 Brahmin prepared Feast for the",
+    "conf": 46
+   },
+   {
+    "seed": [
+     386,
+     92
+    ],
+    "bbox": [
+     1223,
+     179,
+     1775,
+     509
+    ],
+    "shape": "bubble",
+    "en": "My sons, bathe this goat in the river, garland it and bring it back",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     156,
+     59
+    ],
+    "bbox": [
+     159,
+     165,
+     946,
+     354
+    ],
+    "shape": "box",
+    "en": "treating the goat with care, unknowingly preparing it for _its final moments.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     127,
+     69
+    ],
+    "bbox": [
+     159,
+     165,
+     998,
+     354
+    ],
+    "shape": "box",
+    "en": "goat remembered its past lives. Realizing today ended its cycle of ghed aloud like 2",
+    "conf": 86
+   },
+   {
+    "seed": [
+     578,
+     60
+    ],
+    "bbox": [
+     1504,
+     149,
+     2503,
+     724
+    ],
+    "shape": "box",
+    "en": "Ay",
+    "conf": 60
+   }
+  ],
+  "loose": [
+   "ay!"
+  ]
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     109,
+     76
+    ],
+    "bbox": [
+     235,
+     241,
+     797,
+     387
+    ],
+    "shape": "box",
+    "en": "joy quickly to profound sorrow.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     164,
+     133
+    ],
+    "bbox": [
+     403,
+     413,
+     946,
+     731
+    ],
+    "shape": "bubble",
+    "en": "Friend goat, your voice is loud in both laughter and weeping,",
+    "conf": 86
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     414,
+     51
+    ],
+    "bbox": [
+     1349,
+     169,
+     1967,
+     298
+    ],
+    "shape": "box",
+    "en": "Brought before the master, the pact was asked to explain.",
+    "conf": 61
+   },
+   {
+    "seed": [
+     202,
+     93
+    ],
+    "bbox": [
+     575,
+     291,
+     823,
+     483
+    ],
+    "shape": "bubble",
+    "en": "Ask our master",
+    "conf": 95
+   },
+   {
+    "seed": [
+     634,
+     187
+    ],
+    "bbox": [
+     1980,
+     532,
+     2457,
+     827
+    ],
+    "shape": "bubble",
+    "en": "Speak, beast. Why did you laugh, and why did you weep?",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "too,",
+   "killed",
+   "goat",
+   "offer",
+   "Feast",
+   "for",
+   "the",
+   "Dead."
+  ]
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     75,
+     343
+    ],
+    "bbox": [
+     212,
+     1124,
+     1293,
+     1263
+    ],
+    "shape": "box",
+    "en": "suffered 499 beheadings. Today is my 500th and final birth. for freedom.",
+    "conf": 95
+   },
+   {
+    "seed": [
+     436,
+     341
+    ],
+    "bbox": [
+     1349,
+     1124,
+     2430,
+     1263
+    ],
+    "shape": "box",
+    "en": "By killing me, you doom yourself to the same. wept out of compassion",
+    "conf": 45
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     205,
+     195
+    ],
+    "bbox": [
+     374,
+     212,
+     843,
+     721
+    ],
+    "shape": "bubble",
+    "en": "aa",
+    "conf": 45
+   },
+   {
+    "seed": [
+     550,
+     82
+    ],
+    "bbox": [
+     1501,
+     241,
+     2387,
+     509
+    ],
+    "shape": "bubble",
+    "en": "Fear not, goat! will not kill you. will guard you myself.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     461,
+     282
+    ],
+    "bbox": [
+     1352,
+     889,
+     2202,
+     1197
+    ],
+    "shape": "bubble",
+    "en": "Weak is your protection. Strong is my evil-doing. cannot escape death today.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     84,
+     79
+    ],
+    "bbox": [
+     231,
+     238,
+     965,
+     453
+    ],
+    "shape": "box",
+    "en": "Setting the liberty, to",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "one",
+   "touch"
+  ]
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     101,
+     80
+    ],
+    "bbox": [
+     231,
+     238,
+     965,
+     453
+    ],
+    "shape": "box",
+    "en": "Free the reached out to browse on leaves near rocky outcrop",
+    "conf": 84
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "rock.",
+   "massive",
+   "shard",
+   "was",
+   "rent",
+   "from",
+   "the",
+   "stone..."
+  ]
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     414,
+     111
+    ],
+    "bbox": [
+     889,
+     222,
+     1756,
+     946
+    ],
+    "shape": "bubble",
+    "en": "gale",
+    "conf": 52
+   },
+   {
+    "seed": [
+     261,
+     369
+    ],
+    "bbox": [
+     731,
+     1187,
+     1937,
+     1336
+    ],
+    "shape": "box",
+    "en": "be The mass tore off ts head instantly. Fate could stopped. around in awe and fear.",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/018-The-Sacrificial-Goat-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     506,
+     66
+    ],
+    "bbox": [
+     1637,
+     188,
+     2473,
+     433
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta had been born as Tree Devata in that self-same spot. By supernatural power, he seated himself in mid-air to teach the crowd.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ }
+]
