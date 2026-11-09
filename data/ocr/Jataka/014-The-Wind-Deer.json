@@ -34,23 +34,8 @@
      1243
     ],
     "shape": "box",
-    "en": "Benares, ancient times. King Brahmadatta rules. His gardener, tends the royal pleasure gardens. wild Wind-Deer wanders in. True to its hyper-vigilant nature, the timid creature flees at the mere sight of the",
-    "conf": 91
-   },
-   {
-    "seed": [
-     475,
-     425
-    ],
-    "bbox": [
-     102,
-     1349,
-     2076,
-     1475
-    ],
-    "shape": "bubble",
-    "en": "joo",
-    "conf": 49
+    "en": "Benares, ancient times. King Brahmadatta rules. His gardener, Safijaya, tends the royal pleasure gardens. wild Wind-Deer wanders in. True to its hyper-vigilant nature, the timid creature flees at the mere sight of the gardener",
+    "conf": 76
    }
   ],
   "loose": []
@@ -63,6 +48,21 @@
   ],
   "ref": 800,
   "boxes": [
+   {
+    "seed": [
+     281,
+     31
+    ],
+    "bbox": [
+     777,
+     46,
+     1865,
+     145
+    ],
+    "shape": "box",
+    "en": "Safijaya reports the elusive visitor.",
+    "conf": 82
+   },
    {
     "seed": [
      206,
@@ -80,8 +80,8 @@
    },
    {
     "seed": [
-     600,
-     302
+     605,
+     297
     ],
     "bbox": [
      1928,
@@ -90,8 +90,8 @@
      1217
     ],
     "shape": "bubble",
-    "en": "“Oh, Sanjaya smiles. “If had little honey, bring it right into your palace.”",
-    "conf": 71
+    "en": "Oh, yess\" yes,” Safijaya smiles. “If had little honey, bring it right into your palace",
+    "conf": 38
    }
   ],
   "loose": []
@@ -106,7 +106,7 @@
   "boxes": [
    {
     "seed": [
-     458,
+     459,
      77
     ],
     "bbox": [
@@ -117,7 +117,7 @@
     ],
     "shape": "box",
     "en": "Armed with the king’s honey, Sanjaya sets to work. He anoints the grass at the deer’s favorite spots, then hides in the brush. The snare is not made of rope or wood, but of pure sweetness.",
-    "conf": 87
+    "conf": 91
    }
   ],
   "loose": []
@@ -142,8 +142,8 @@
      1425
     ],
     "shape": "box",
-    "en": "The Wind-Deer tastes the honied grass. Instantly snared by the lust of taste, it becomes bound to the pleasure garden. The addiction takes root. It refuses else.",
-    "conf": 91
+    "en": "The Wind-Deer tastes the honied grass. een snared by the lust of taste, it becomes bound to the pleasure garden. The addiction takes root. It refuses to graze anywhere she",
+    "conf": 38
    }
   ],
   "loose": []
@@ -156,6 +156,21 @@
   ],
   "ref": 800,
   "boxes": [
+   {
+    "seed": [
+     362,
+     140
+    ],
+    "bbox": [
+     1170,
+     364,
+     1815,
+     463
+    ],
+    "shape": "box",
+    "en": "High Fear, Low Craving",
+    "conf": 53
+   },
    {
     "seed": [
      614,
@@ -173,8 +188,8 @@
    },
    {
     "seed": [
-     64,
-     392
+     72,
+     396
     ],
     "bbox": [
      198,
@@ -183,8 +198,8 @@
      1392
     ],
     "shape": "box",
-    "en": "High Low Craving",
-    "conf": 94
+    "en": "Low ow rear Hig craving",
+    "conf": 69
    }
   ],
   "loose": []
@@ -209,8 +224,8 @@
      473
     ],
     "shape": "box",
-    "en": "The final Tying honey-gourd to his shoulder, Sanjaya drops wisps of sweet grass, creating trail. Blinded by desire, the deer follows him step by step, leaving the wild",
-    "conf": 93
+    "en": "The final phase. Tying honey-gourd to his shoulder, Sanjaya drops wisps of sweet grass, creating trail Blinded by desire, the deer follows him step by step, leaving the wild",
+    "conf": 92
    }
   ],
   "loose": []
@@ -235,8 +250,8 @@
      473
     ],
     "shape": "box",
-    "en": "They cross the palace threshold. Instantly, the heavy doors slam shut! Seeing men, the deer’s trance breaks. Terrified for its life, the wild creature dashes frantically around the enclosed stone hall",
-    "conf": 74
+    "en": "They cross the palace threshold. threshold. Instantly, the heavy doors slam shut! Seeing men, the deer’s trance breaks. Terrified for its life, the wild creature dashes frantically around the enclosed stone hall.",
+    "conf": 34
    }
   ],
   "loose": []

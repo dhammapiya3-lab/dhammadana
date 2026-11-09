@@ -8,7 +8,7 @@
   "ref": 800,
   "boxes": [],
   "loose": [
-   "Tea",
+   "NOY",
    "Tale",
    "Justice",
    "from",
@@ -35,8 +35,8 @@
      268
     ],
     "shape": "box",
-    "en": "After sunset, the state chariot was left in the courtyard. In the nights it rained.",
-    "conf": 63
+    "en": "After sunset, the state chariot was left in the courtyard. In the nights it rained",
+    "conf": 84
    },
    {
     "seed": [
@@ -68,6 +68,21 @@
   "boxes": [
    {
     "seed": [
+     359,
+     68
+    ],
+    "bbox": [
+     975,
+     139,
+     1805,
+     532
+    ],
+    "shape": "bubble",
+    "en": "Street dogs have destroyed my carriage! Kill every dog you see/",
+    "conf": 44
+   },
+   {
+    "seed": [
      406,
      376
     ],
@@ -78,21 +93,11 @@
      1313
     ],
     "shape": "box",
-    "en": "began slaughter the And so great in streets of Benares.",
-    "conf": 93
+    "en": "And so began great slaughter in the streets of Benares.",
+    "conf": 91
    }
   ],
-  "loose": [
-   "Street",
-   "dogs",
-   "have",
-   "destroyed",
-   "Kill",
-   "every",
-   "dog",
-   "you",
-   "see/"
-  ]
+  "loose": []
  },
  {
   "img": "images/022-The-Teaching-of-the-Dog-04-Original.jpg",
@@ -104,8 +109,8 @@
   "boxes": [
    {
     "seed": [
-     558,
-     62
+     534,
+     76
     ],
     "bbox": [
      1680,
@@ -114,8 +119,8 @@
      592
     ],
     "shape": "bubble",
-    "en": "The guiltless are put to dea th while the true culprits remain safe inside the palace. will discover the truth to the king and save my kin.",
-    "conf": 96
+    "en": "The guiltless are put to death th while the true culprits remain safe inside the palace. will discover the truth to the king and save my kin",
+    "conf": 93
    }
   ],
   "loose": []
@@ -140,12 +145,12 @@
      317
     ],
     "shape": "box",
-    "en": "Calling to mind the Ten Perfections, the Bodhisatta walked alone into the city. An aura of loving-kindness disarmed the guards. Not man grew angry.",
-    "conf": 93
+    "en": "Calling to mind the Ten Perfections, the Bodhisatta walked alone into the city. An aura of loving-kindness disarmed isarmed the guards. Not man grew angry.",
+    "conf": 91
    }
   ],
   "loose": [
-   "ly,"
+   "LAK"
   ]
  },
  {
@@ -158,8 +163,8 @@
   "boxes": [
    {
     "seed": [
-     547,
-     199
+     514,
+     195
     ],
     "bbox": [
      1524,
@@ -168,8 +173,8 @@
      899
     ],
     "shape": "bubble",
-    "en": "do not know the real culprits, it is not right to order the slaughter",
-    "conf": 85
+    "en": "If you do not know the real culprits, it is not right to order the slaughter of the dogs.",
+    "conf": 80
    }
   ],
   "loose": []
@@ -194,8 +199,8 @@
      317
     ],
     "shape": "box",
-    "en": "Those hounds reared by the royal family, well-bred and strong—these are not slaughtered. Only the weak are killed. This is not just.",
-    "conf": 91
+    "en": "Those hounds reared red by the royal family, well-bred and strong—these are not slaughtered. Only the weak are killed. This is not just",
+    "conf": 85
    }
   ],
   "loose": []
@@ -225,6 +230,8 @@
    }
   ],
   "loose": [
+   "TIA",
+   "NCE",
    "NSS",
    "Nes"
   ]
@@ -250,7 +257,7 @@
     ],
     "shape": "bubble",
     "en": "Do you know who gnawed the leather?",
-    "conf": 95
+    "conf": 96
    },
    {
     "seed": [
@@ -264,13 +271,11 @@
      1326
     ],
     "shape": "bubble",
-    "en": "The dogs in your own palace. Bring them here with buttermilk and kusa grass. will prove it.",
-    "conf": 92
+    "en": "Fes The dogs HE in your Ss own palace Bring ‘OD. them here S38 with eal buttermilk oe and kusa grass. Oo 7) will prove it",
+    "conf": 49
    }
   ],
-  "loose": [
-   "YEN"
-  ]
+  "loose": []
  },
  {
   "img": "images/022-The-Teaching-of-the-Dog-10-Original.jpg",
@@ -292,11 +297,13 @@
      1352
     ],
     "shape": "box",
-    "en": "The Bodhisatta ordered the kusa grass mashed into buttermilk. The royal dogs drank greedily, then vomited the intact of leather.",
-    "conf": 75
+    "en": "The Bodhisatta ordered the kusa grass mashed into buttermilk. buttermilk. The royal dogs drank greedily, then vomited the intact bits of leather. af",
+    "conf": 59
    }
   ],
-  "loose": []
+  "loose": [
+   "Day"
+  ]
  },
  {
   "img": "images/022-The-Teaching-of-the-Dog-11-Original.jpg",
@@ -308,7 +315,7 @@
   "boxes": [
    {
     "seed": [
-     348,
+     326,
      59
     ],
     "bbox": [
@@ -318,8 +325,8 @@
      390
     ],
     "shape": "bubble",
-    "en": "like judgment of Perfect Buddha himself!",
-    "conf": 88
+    "en": "It is like judgment of Perfect Buddha himself!",
+    "conf": 90
    },
    {
     "seed": [
@@ -333,8 +340,8 @@
      1352
     ],
     "shape": "box",
-    "en": "Overjoyed, the king offered the royal white umbrella to the ordinary street dog",
-    "conf": 92
+    "en": "Overjoyed, the king offered 2s the royal white umbrella 2 to the ordinary street dog od",
+    "conf": 68
    }
   ],
   "loose": []
@@ -348,6 +355,7 @@
   "ref": 800,
   "boxes": [],
   "loose": [
+   "VE,",
    "NOS",
    "IIS"
   ]
@@ -372,7 +380,7 @@
      367
     ],
     "shape": "box",
-    "en": "Having established the king in the Five Precepts, the Bodhisatta handed back the white umbrella of kingship",
+    "en": "Having established the king in the Five Precepts, the Bodhisatta handed back the white te umbrella of kingship gsh ip.",
     "conf": 93
    }
   ],
@@ -400,8 +408,8 @@
      317
     ],
     "shape": "box",
-    "en": "The commanded all creatures be safe from harm The street dogs received constant supply of royal food",
-    "conf": 96
+    "en": "The king commanded all creatures be safe from harm pan The street dogs received constant supply of royal food",
+    "conf": 45
    }
   ],
   "loose": []

@@ -19,8 +19,8 @@
      360
     ],
     "shape": "box",
-    "en": "Th",
-    "conf": 97
+    "en": "the den Der",
+    "conf": 33
    },
    {
     "seed": [
@@ -34,8 +34,8 @@
      979
     ],
     "shape": "bubble",
-    "en": "In the past, when Brahmadatta reigning in was Benares, the Bodhisatta was born golden deer...",
-    "conf": 91
+    "en": "In the past, when Brahmadatta was reigning in Benares, the Bodhisatta was born golden deer...",
+    "conf": 89
    }
   ],
   "loose": []
@@ -60,11 +60,28 @@
      367
     ],
     "shape": "box",
-    "en": "Two golden deer kings, Nigrodha and Sakha, each led herd of five hundred in",
-    "conf": 91
+    "en": "Two golden deer kings, Nigrodha and Sakha, cade led herd of five hundred in ues rest.",
+    "conf": 40
+   },
+   {
+    "seed": [
+     549,
+     366
+    ],
+    "bbox": [
+     1762,
+     1174,
+     2020,
+     1240
+    ],
+    "shape": "box",
+    "en": "Sakha",
+    "conf": 89
    }
   ],
-  "loose": []
+  "loose": [
+   "Os)"
+  ]
  },
  {
   "img": "images/012-The-Golden-Deer-03-Original.jpg",
@@ -86,7 +103,7 @@
      374
     ],
     "shape": "box",
-    "en": "The King of Benares was fond of hunting.",
+    "en": "The King of Benares was passionately fond of hunting.",
     "conf": 93
    },
    {
@@ -102,12 +119,10 @@
     ],
     "shape": "bubble",
     "en": "This king stops all our work! We must work in his pleasure gardens to feed him!",
-    "conf": 94
+    "conf": 96
    }
   ],
-  "loose": [
-   "SSS"
-  ]
+  "loose": []
  },
  {
   "img": "images/012-The-Golden-Deer-04-Original.jpg",
@@ -144,8 +159,8 @@
      688
     ],
     "shape": "bubble",
-    "en": "Shut the gate! Henceforth, the King feeds on them here.",
-    "conf": 96
+    "en": "Shut the my Henceforth, the King feeds on them bei",
+    "conf": 38
    }
   ],
   "loose": []
@@ -171,7 +186,7 @@
     ],
     "shape": "box",
     "en": "To prevent needless wounding from random hunts, the kings agreed on tragic lottery.",
-    "conf": 93
+    "conf": 90
    },
    {
     "seed": [
@@ -186,7 +201,7 @@
     ],
     "shape": "bubble",
     "en": "Let the deer go to the block by turns. One day from my herd, the next from yours.",
-    "conf": 77
+    "conf": 95
    }
   ],
   "loose": []
@@ -211,8 +226,23 @@
      595
     ],
     "shape": "bubble",
-    "en": "Bear your own fortune. Begone!",
+    "en": "Bear your own fortune Begone!",
     "conf": 96
+   },
+   {
+    "seed": [
+     282,
+     70
+    ],
+    "bbox": [
+     836,
+     222,
+     1805,
+     334
+    ],
+    "shape": "box",
+    "en": "Ordinary Leader vs. The Bodhisatta Leader.",
+    "conf": 93
    },
    {
     "seed": [
@@ -226,8 +256,8 @@
      622
     ],
     "shape": "bubble",
-    "en": "Go in peace. will see the turn over you.",
-    "conf": 95
+    "en": "“Go in peace. Iwill will see the turn passes over you.",
+    "conf": 45
    },
    {
     "seed": [
@@ -242,7 +272,7 @@
     ],
     "shape": "bubble",
     "en": "Lord, pass over turn until my little one is born.",
-    "conf": 73
+    "conf": 93
    }
   ],
   "loose": [
@@ -259,33 +289,21 @@
   "boxes": [
    {
     "seed": [
-     597,
-     328
+     588,
+     95
     ],
     "bbox": [
-     1871,
-     879,
-     2192,
-     1187
+     1812,
+     241,
+     2387,
+     589
     ],
     "shape": "bubble",
-    "en": "NS",
-    "conf": 57
+    "en": "Why is the ki gof of the deer on the block? must tell the King!",
+    "conf": 63
    }
   ],
-  "loose": [
-   "Why",
-   "the",
-   "king",
-   "the",
-   "deer",
-   "the",
-   "block?",
-   "must",
-   "tell",
-   "the",
-   "King!"
-  ]
+  "loose": []
  },
  {
   "img": "images/012-The-Golden-Deer-08-Original.jpg",
@@ -308,7 +326,7 @@
     ],
     "shape": "bubble",
     "en": "My friend, the golden king of the deer! Did not grant you immunity? How comes it that you are lying here?",
-    "conf": 96
+    "conf": 95
    }
   ],
   "loose": []
@@ -334,7 +352,7 @@
     ],
     "shape": "bubble",
     "en": "doe prayed me to let her turn fall on another. As could not pass the doom of one onto another, take her doom upon myself.",
-    "conf": 92
+    "conf": 95
    }
   ],
   "loose": []
@@ -349,8 +367,8 @@
   "boxes": [
    {
     "seed": [
-     385,
-     135
+     358,
+     142
     ],
     "bbox": [
      1141,
@@ -359,12 +377,12 @@
      625
     ],
     "shape": "bubble",
-    "en": "have seen such loving-kindness. spare you both!",
-    "conf": 95
+    "en": "ner have seen such loving-kindness. spare you both!",
+    "conf": 35
    },
    {
     "seed": [
-     378,
+     301,
      404
     ],
     "bbox": [
@@ -374,8 +392,8 @@
      1438
     ],
     "shape": "box",
-    "en": "sty expanded outward",
-    "conf": 97
+    "en": "so, the amnesty sty expanded outward to every living creature.",
+    "conf": 93
    }
   ],
   "loose": []
@@ -400,8 +418,8 @@
      466
     ],
     "shape": "bubble",
-    "en": "Walk in righteousness, great king. Act with justice towards parents, children, townsmen, and countryfolk.",
-    "conf": 92
+    "en": "Walk in righteousness, great king. Act with justice towards parents, children townsmen, and countryfolk.",
+    "conf": 46
    },
    {
     "seed": [
@@ -431,8 +449,8 @@
   "boxes": [
    {
     "seed": [
-     101,
-     260
+     102,
+     259
     ],
     "bbox": [
      215,
@@ -441,11 +459,13 @@
      1187
     ],
     "shape": "bubble",
-    "en": "Associate with Nigrodha, associate not with Sakha better is death with Nigrodha, than is having life with Sakha",
-    "conf": 89
+    "en": "Associate with Nigrodha, associate not with Sakha; better is death with Nigrodha, than is having life with Sakha.",
+    "conf": 91
    }
   ],
-  "loose": []
+  "loose": [
+   "Cad"
+  ]
  },
  {
   "img": "images/012-The-Golden-Deer-13-Original.jpg",
@@ -482,11 +502,13 @@
      1230
     ],
     "shape": "bubble",
-    "en": "will forego my kingdom rather than my promise. Not man may harm them.",
-    "conf": 90
+    "en": "will forego my kingdom rather than my promise Not man may harm them",
+    "conf": 84
    }
   ],
-  "loose": []
+  "loose": [
+   "ANS"
+  ]
  },
  {
   "img": "images/012-The-Golden-Deer-14-Original.jpg",
@@ -508,8 +530,8 @@
      463
     ],
     "shape": "bubble",
-    "en": "Let farmer fence no his field, but merely indicate it with tied leaves",
-    "conf": 96
+    "en": "Let no farmer fence his field, but merely indicate it with tied leaves",
+    "conf": 95
    },
    {
     "seed": [
@@ -524,9 +546,11 @@
     ],
     "shape": "box",
     "en": "systemic solution built on mutual respect and instruction, not violence",
-    "conf": 93
+    "conf": 94
    }
   ],
-  "loose": []
+  "loose": [
+   "CASE"
+  ]
  }
 ]

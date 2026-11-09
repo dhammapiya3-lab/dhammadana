@@ -6,24 +6,20 @@
    1488
   ],
   "ref": 800,
-  "boxes": [
-   {
-    "seed": [
-     396,
-     210
-    ],
-    "bbox": [
-     975,
-     595,
-     1666,
-     883
-    ],
-    "shape": "box",
-    "en": "Coat and Tale of Karma Based on the Ancient Jataka Tales",
-    "conf": 62
-   }
-  ],
-  "loose": []
+  "boxes": [],
+  "loose": [
+   "“The",
+   "Brahmin",
+   "and",
+   "the",
+   "Tale",
+   "Karma",
+   "Based",
+   "the",
+   "Ancient",
+   "Jataka",
+   "Tales"
+  ]
  },
  {
   "img": "images/018-The-Sacrificial-Goat-02-Original.jpg",
@@ -33,21 +29,6 @@
   ],
   "ref": 800,
   "boxes": [
-   {
-    "seed": [
-     71,
-     59
-    ],
-    "bbox": [
-     159,
-     165,
-     932,
-     304
-    ],
-    "shape": "box",
-    "en": "In Benares, world-famed Dead. 4 Brahmin prepared Feast for the",
-    "conf": 46
-   },
    {
     "seed": [
      386,
@@ -60,11 +41,20 @@
      509
     ],
     "shape": "bubble",
-    "en": "My sons, bathe this goat in the river, garland it and bring it back",
+    "en": "My sons, bathe this goat in the river, garland it, and bring it back.",
     "conf": 96
    }
   ],
-  "loose": []
+  "loose": [
+   "Benares,",
+   "Brahmin",
+   "prepared",
+   "for",
+   "the",
+   "Dead.",
+   "world-famed",
+   "Benares,"
+  ]
  },
  {
   "img": "images/018-The-Sacrificial-Goat-03-Original.jpg",
@@ -73,24 +63,27 @@
    1488
   ],
   "ref": 800,
-  "boxes": [
-   {
-    "seed": [
-     156,
-     59
-    ],
-    "bbox": [
-     159,
-     165,
-     946,
-     354
-    ],
-    "shape": "box",
-    "en": "treating the goat with care, unknowingly preparing it for _its final moments.",
-    "conf": 90
-   }
-  ],
-  "loose": []
+  "boxes": [],
+  "loose": [
+   "The",
+   "pupils",
+   "obeyed,",
+   "treating",
+   "the",
+   "goat",
+   "with",
+   "care,",
+   "unknowingly",
+   "preparing",
+   "for",
+   "its",
+   "final",
+   "moments.",
+   "The",
+   "pupils",
+   "obeyed,",
+   "_its"
+  ]
  },
  {
   "img": "images/018-The-Sacrificial-Goat-04-Original.jpg",
@@ -99,39 +92,30 @@
    1488
   ],
   "ref": 800,
-  "boxes": [
-   {
-    "seed": [
-     127,
-     69
-    ],
-    "bbox": [
-     159,
-     165,
-     998,
-     354
-    ],
-    "shape": "box",
-    "en": "goat remembered its past lives. Realizing today ended its cycle of ghed aloud like 2",
-    "conf": 86
-   },
-   {
-    "seed": [
-     578,
-     60
-    ],
-    "bbox": [
-     1504,
-     149,
-     2503,
-     724
-    ],
-    "shape": "box",
-    "en": "Ay",
-    "conf": 60
-   }
-  ],
+  "boxes": [],
   "loose": [
+   "Suddenly,",
+   "the",
+   "goat",
+   "remembered",
+   "its",
+   "past",
+   "lives.",
+   "Realizing",
+   "today",
+   "ended",
+   "its",
+   "cycle",
+   "smashing",
+   "pot.",
+   "misery,",
+   "aloud",
+   "like",
+   "past",
+   "laughed",
+   "goat",
+   "remembered",
+   "ghed",
    "ay!"
   ]
  },
@@ -155,13 +139,13 @@
      387
     ],
     "shape": "box",
-    "en": "joy quickly to profound sorrow.",
-    "conf": 96
+    "en": "But joy quickly turned to profound SOrrow.",
+    "conf": 50
    },
    {
     "seed": [
-     164,
-     133
+     136,
+     148
     ],
     "bbox": [
      403,
@@ -170,11 +154,16 @@
      731
     ],
     "shape": "bubble",
-    "en": "Friend goat, your voice is loud in both laughter and weeping,",
-    "conf": 86
+    "en": "Friend goat, your voice is loud in both laughter and weeping. Why?",
+    "conf": 91
    }
   ],
-  "loose": []
+  "loose": [
+   "TA)",
+   "TA)",
+   "SS)",
+   "TA)"
+  ]
  },
  {
   "img": "images/018-The-Sacrificial-Goat-06-Original.jpg",
@@ -196,8 +185,8 @@
      298
     ],
     "shape": "box",
-    "en": "Brought before the master, the pact was asked to explain.",
-    "conf": 61
+    "en": "Brought before the master, the goat was asked to explain.",
+    "conf": 96
    },
    {
     "seed": [
@@ -211,12 +200,12 @@
      483
     ],
     "shape": "bubble",
-    "en": "Ask our master",
+    "en": "Ask our master.",
     "conf": 95
    },
    {
     "seed": [
-     634,
+     638,
      187
     ],
     "bbox": [
@@ -226,8 +215,8 @@
      827
     ],
     "shape": "bubble",
-    "en": "Speak, beast. Why did you laugh, and why did you weep?",
-    "conf": 96
+    "en": "Speak, peak, beast. Why did you laugh, and why did you weep?",
+    "conf": 95
    }
   ],
   "loose": []
@@ -241,6 +230,13 @@
   "ref": 800,
   "boxes": [],
   "loose": [
+   "times",
+   "past,",
+   "Brahmin,",
+   "was",
+   "just",
+   "like",
+   "you.",
    "too,",
    "killed",
    "goat",
@@ -261,8 +257,8 @@
   "boxes": [
    {
     "seed": [
-     75,
-     343
+     149,
+     341
     ],
     "bbox": [
      212,
@@ -271,8 +267,8 @@
      1263
     ],
     "shape": "box",
-    "en": "suffered 499 beheadings. Today is my 500th and final birth. for freedom.",
-    "conf": 95
+    "en": "suffered 499 beh eadings. Today is my 500th and final birth. laughed for freedom.",
+    "conf": 92
    },
    {
     "seed": [
@@ -286,11 +282,15 @@
      1263
     ],
     "shape": "box",
-    "en": "By killing me, you doom yourself to the same. wept out of compassion",
-    "conf": 45
+    "en": "By killing me, you doom yourself to the same. wept out of compassion.",
+    "conf": 95
    }
   ],
-  "loose": []
+  "loose": [
+   "OSS",
+   "TA)",
+   "TA)"
+  ]
  },
  {
   "img": "images/018-The-Sacrificial-Goat-09-Original.jpg",
@@ -300,21 +300,6 @@
   ],
   "ref": 800,
   "boxes": [
-   {
-    "seed": [
-     205,
-     195
-    ],
-    "bbox": [
-     374,
-     212,
-     843,
-     721
-    ],
-    "shape": "bubble",
-    "en": "aa",
-    "conf": 45
-   },
    {
     "seed": [
      550,
@@ -328,12 +313,12 @@
     ],
     "shape": "bubble",
     "en": "Fear not, goat! will not kill you. will guard you myself.",
-    "conf": 92
+    "conf": 94
    },
    {
     "seed": [
-     461,
-     282
+     458,
+     283
     ],
     "bbox": [
      1352,
@@ -358,8 +343,8 @@
   "boxes": [
    {
     "seed": [
-     84,
-     79
+     140,
+     74
     ],
     "bbox": [
      231,
@@ -368,13 +353,27 @@
      453
     ],
     "shape": "box",
-    "en": "Setting the liberty, to",
-    "conf": 96
+    "en": "Setting the goat at liberty, the Brahmin followed closely, determined to cheat fate.",
+    "conf": 42
+   },
+   {
+    "seed": [
+     529,
+     87
+    ],
+    "bbox": [
+     1666,
+     238,
+     2225,
+     489
+    ],
+    "shape": "bubble",
+    "en": "ie Let no one touch this creature!",
+    "conf": 50
    }
   ],
   "loose": [
-   "one",
-   "touch"
+   "she"
   ]
  },
  {
@@ -397,8 +396,23 @@
      453
     ],
     "shape": "box",
-    "en": "Free the reached out to browse on leaves near rocky outcrop",
+    "en": "Free at last, the goat reached out to browse on leaves near rocky outcrop.",
     "conf": 84
+   },
+   {
+    "seed": [
+     131,
+     250
+    ],
+    "bbox": [
+     231,
+     790,
+     823,
+     903
+    ],
+    "shape": "box",
+    "en": "At very instant...",
+    "conf": 86
    }
   ],
   "loose": []
@@ -412,7 +426,8 @@
   "ref": 800,
   "boxes": [],
   "loose": [
-   "the",
+   "NOS",
+   "thunderbolt",
    "rock.",
    "massive",
    "shard",
@@ -433,21 +448,6 @@
   "boxes": [
    {
     "seed": [
-     414,
-     111
-    ],
-    "bbox": [
-     889,
-     222,
-     1756,
-     946
-    ],
-    "shape": "bubble",
-    "en": "gale",
-    "conf": 52
-   },
-   {
-    "seed": [
      261,
      369
     ],
@@ -458,7 +458,7 @@
      1336
     ],
     "shape": "box",
-    "en": "be The mass tore off ts head instantly. Fate could stopped. around in awe and fear.",
+    "en": "The mass tore off its head instantly. Fate could not be stopped. People crowded rowded around in awe and fear.",
     "conf": 47
    }
   ],
@@ -484,7 +484,7 @@
      433
     ],
     "shape": "box",
-    "en": "The Bodhisatta had been born as Tree Devata in that self-same spot. By supernatural power, he seated himself in mid-air to teach the crowd.",
+    "en": "The Bodhisatta had been born as Tree Devata in that self-same spot. By supernatural power, he seated himself in mid-air to teach the crowd",
     "conf": 91
    }
   ],
