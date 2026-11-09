@@ -231,7 +231,7 @@ P[4][1] = ['**The Word of the Buddha**', 'An Outline of the Teaching of the Budd
            'Compiled, translated and explained by\nNYANATILOKA\n16th ed. 1981', 'Buddhist Publication Society\nKandy‧Sri Lanka']
 P[5][1] = [':: Sabbe sattā bhavantu sukhitattā\n**모든 존재가 행복하기를**\n(숫따니빠아따 Sn 145)']
 # 74쪽 팔정도 세 묶음, 108쪽 12지 연기 표 → 그림
-url74 = crop(74, (56, 70, 335, 330), 'eightfold-groups')
+url74 = '/uploads/DL-0015-eightfold.png'; images.append(url74)  # 운영자가 준 깨끗한 그림 (2026-11-09) — PDF에서 자르지 않음
 url108 = crop(108, (68, 225, 335, 392), 'paticca-table')
 
 
