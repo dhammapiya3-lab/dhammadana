@@ -1,5 +1,4 @@
-965 https://dharma-storybooks.net/Bojjhanga/04-Delight.htm
-966 https://dharma-storybooks.net/Bojjhanga/05-Tranquillity.htm
-967 https://dharma-storybooks.net/Bojjhanga/06-Concentration.htm
-968 https://dharma-storybooks.net/Bojjhanga/07-Equanimity.htm
-pages 968 assets 26519
+books 46 stories 918 images 13186
+표지 Perfections (800, 450)
+표지 Basic-Concepts (800, 450)
+표지 Bojjhanga (800, 450)
