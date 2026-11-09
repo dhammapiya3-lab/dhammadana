@@ -208,7 +208,7 @@ async function initMembers() {
     const parts = [$('.lib', root), $('.study-loose', root)].filter(Boolean);
     if (!it) { d.hidden = true; parts.forEach(x => x.hidden = false); return; }
     parts.forEach(x => x.hidden = true); d.hidden = false;
-    if (hp[1] === 'read' && it.text) { studyReader(d, it, hp[2] ? +hp[2] : null); return; }
+    if (hp[1] === 'read' && it.text) { studyReader(d, it, hp[2] ? +hp[2] : null, stPairOf(it, byId)); return; }
     const fl = it.files.map(k => fileBy[k]).filter(Boolean);
     d.innerHTML = `<p style="margin-top:18px"><a href="#" id="stBack">← 학습 자료실 목록</a></p>
       <div class="study-book"><div class="cover">${it.cover && fileSet.has(it.cover) ? `<img src="${url(it.cover)}" alt="${esc(it.title)} 표지">` : `<div class="cover-ph">${esc(it.title)}</div>`}</div>
@@ -240,7 +240,45 @@ async function stLoad(k) {
   if (!pages[0].text.trim()) pages.shift();
   return (STX[k] = pages);
 }
-async function studyReader(d, it, want) {
+// 대조할 짝 자료: 자료 정보의 pair, 없으면 이름 규칙(…-pts-N ↔ …-bjt-N)
+function stPairOf(it, byId) {
+  const p = it.pair || (/-pts-/.test(it.id) ? it.id.replace('-pts-', '-bjt-') : /-bjt-/.test(it.id) ? it.id.replace('-bjt-', '-pts-') : '');
+  return p && byId[p] && byId[p].text ? byId[p] : null;
+}
+// 문장 나누기: 원문을 한 글자도 바꾸지 않고 자르기만 함 (자른 조각을 이으면 원문 그대로)
+function stSents(t) {
+  const out = []; let cur = '';
+  const re = /(\|\|[\d\s]*\|\||[.?!](?:["'”’]+)?(?=\s)|\n\s*\n)/g; let last = 0, m;
+  while ((m = re.exec(t))) { const end = m.index + m[0].length; const ws = /^\s*/.exec(t.slice(end))[0]; out.push(t.slice(last, end + ws.length)); last = end + ws.length; re.lastIndex = last; }
+  if (last < t.length) out.push(t.slice(last));
+  const merged = []; for (const x of out) { if (merged.length && x.replace(/[^A-Za-zÀ-ɏḀ-ỿ]/g, '').length < 4) merged[merged.length - 1] += x; else merged.push(x); }
+  return merged.filter(x => x.length);
+}
+// 두 판본 문장 짝짓기 (철자·부호 차이는 무시하고 글자 세 개씩 묶어 비슷한 정도로 비교, 순서는 지킴)
+function stAlign(A, B) {
+  const nf = x => x.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z]/g, '');
+  const gr = x => { const s = nf(x), g = new Set(); for (let i = 0; i < s.length - 2; i++) g.add(s.slice(i, i + 3)); return g; };
+  const sim = (x, y) => { if (!x.size || !y.size) return 0; let c = 0; for (const g of x) if (y.has(g)) c++; return 2 * c / (x.size + y.size); };
+  const GA = A.map(gr), GB = B.map(gr), n = A.length, m = B.length;
+  const S = Array.from({ length: n + 1 }, () => new Float64Array(m + 1)), K = Array.from({ length: n + 1 }, () => new Int8Array(m + 1));
+  const u = (a, b) => { const g = new Set(a); for (const x of b) g.add(x); return g; };
+  for (let i = 0; i <= n; i++) for (let j = 0; j <= m; j++) {
+    if (!i && !j) continue; let best = -1, k = 0;
+    if (i && S[i - 1][j] > best) { best = S[i - 1][j]; k = 1; }
+    if (j && S[i][j - 1] > best) { best = S[i][j - 1]; k = 2; }
+    if (i && j) { const v = S[i - 1][j - 1] + Math.max(0, sim(GA[i - 1], GB[j - 1]) - .15); if (v > best) { best = v; k = 3; } }
+    if (i > 1 && j) { const v = S[i - 2][j - 1] + Math.max(0, sim(u(GA[i - 2], GA[i - 1]), GB[j - 1]) - .2); if (v > best) { best = v; k = 4; } }
+    if (i && j > 1) { const v = S[i - 1][j - 2] + Math.max(0, sim(GA[i - 1], u(GB[j - 2], GB[j - 1])) - .2); if (v > best) { best = v; k = 5; } }
+    S[i][j] = best; K[i][j] = k;
+  }
+  const rows = []; let i = n, j = m;
+  while (i || j) { const k = K[i][j];
+    if (k === 1) { rows.push([[i - 1], []]); i--; } else if (k === 2) { rows.push([[], [j - 1]]); j--; }
+    else if (k === 3) { rows.push([[i - 1], [j - 1]]); i--; j--; } else if (k === 4) { rows.push([[i - 2, i - 1], [j - 1]]); i -= 2; j--; }
+    else { rows.push([[i - 1], [j - 2, j - 1]]); i--; j -= 2; } }
+  return rows.reverse();
+}
+async function studyReader(d, it, want, pair) {
   const id = it.id, base = '#' + encodeURIComponent(id);
   d.innerHTML = `<p style="margin-top:18px"><a href="${base}">← 자료 소개</a></p><p class="muted">본문을 불러오는 중…</p>`;
   // 압축본(.gz)을 풀 수 없는 브라우저(옛 아이폰·일부 앱 안 브라우저)는 같은 자료의 글 파일(.txt)로 읽음
@@ -248,7 +286,10 @@ async function studyReader(d, it, want) {
   const key = /\.gz$/i.test(it.text) && !('DecompressionStream' in window) && plainTxt ? plainTxt : it.text;
   let P; try { P = await stLoad(key); } catch (e) { try { if (plainTxt && key !== plainTxt) P = await stLoad(plainTxt); } catch (e2) {} }
   if (!P || !P.length) { d.innerHTML = `<p style="margin-top:18px"><a href="${base}">← 자료 소개</a></p><p>본문을 불러오지 못했습니다. 새로고침해 주세요.</p>`; return; }
-  const S = { fs: store.get('st-fs', 1), lh: store.get('st-lh', 1.9), font: store.get('st-font', 'serif') };
+  const S = { fs: store.get('st-fs', 1), lh: store.get('st-lh', 1.9), font: store.get('st-font', 'serif'), cmp: !!pair && store.get('st-cmp', false) };
+  let P2 = null, P2by = null;
+  const loadPair = async () => { if (P2 || !pair) return; try { P2 = await stLoad(pair.text); P2by = new Map(P2.map(p => [p.label, p])); } catch (e) { P2 = []; P2by = new Map(); } };
+  if (S.cmp) await loadPair();
   let i = Math.min(Math.max((want || store.get('stpos-' + id, 1)) - 1, 0), P.length - 1);
   const hl = (txt, q) => { const e = esc(txt); if (!q) return e; const f = stFold(txt), fq = stFold(q); if (!fq) return e;
     let out = '', k = 0, j; while ((j = f.indexOf(fq, k)) >= 0) { out += esc(txt.slice(k, j)) + '<mark>' + esc(txt.slice(j, j + q.length)) + '</mark>'; k = j + q.length; } return out + esc(txt.slice(k)); };
@@ -258,7 +299,7 @@ async function studyReader(d, it, want) {
       <span class="st-tools"><button class="tbtn" data-fs="-1" aria-label="글자 작게">가−</button><button class="tbtn" data-fs="1" aria-label="글자 크게">가+</button>
       <button class="tbtn" id="stLh">줄 간격</button><button class="tbtn" id="stFont">${S.font === 'serif' ? '고딕체' : '명조체'}</button>
       <select id="stJump" aria-label="쪽으로 가기">${P.map((p, n) => `<option value="${n}">${esc(p.label)}</option>`).join('')}</select>
-      <input id="stFind" type="search" placeholder="이 책에서 찾기" value="${esc(STQ.q || '')}"></span></div>
+      <input id="stFind" type="search" placeholder="이 책에서 찾기" value="${esc(STQ.q || '')}">${pair ? `<button class="tbtn${S.cmp ? ' on' : ''}" id="stCmp" title="같은 쪽(쪽 이름이 같은 곳)을 문장마다 나란히">⇄ ${esc(pair.edition_label || (/-bjt-/.test(pair.id) ? 'BJT' : /-pts-/.test(pair.id) ? 'PTS' : '대조'))} 판본과 대조</button>` : ''}</span></div>
     <div id="stHits" hidden></div>
     <article class="reflow st-page" id="stPage"></article>
     <div class="st-nav"><button class="btn ghost" id="stPrev">‹ 앞쪽</button><span class="small muted" id="stPos"></span><button class="btn ghost" id="stNext">뒤쪽 ›</button></div></div>`;
@@ -266,6 +307,16 @@ async function studyReader(d, it, want) {
   const apply = () => { pg.style.setProperty('--fs', S.fs); pg.style.setProperty('--lh', S.lh); pg.classList.toggle('sans', S.font === 'sans'); };
   const show = (n, keep) => { i = Math.min(Math.max(n, 0), P.length - 1); store.set('stpos-' + id, i + 1);
     const q = ($('#stFind', d).value || '').trim();
+    if (S.cmp && P2by) {
+      const other = P2by.get(P[i].label);
+      const me = /-bjt-/.test(id) ? 'BJT' : /-pts-/.test(id) ? 'PTS' : '이 판본', ot = /-bjt-/.test(pair.id) ? 'BJT' : /-pts-/.test(pair.id) ? 'PTS' : '대조 판본';
+      if (!other) pg.innerHTML = `<div class="pmark">${esc(P[i].label)}</div><p class="muted small">${esc(ot)} 판본에는 이 쪽 이름(${esc(P[i].label)})이 없습니다.</p>` + body(P[i].text, q);
+      else {
+        const A = stSents(P[i].text.trim()), B = stSents(other.text.trim()), rows = stAlign(A, B);
+        const cell = (L, ix) => ix.length ? hl(ix.map(k => L[k]).join(''), q).replace(/⟦([^⟧]*)⟧/g, '<span class="st-tag">$1</span>') : '<span class="muted">—</span>';
+        pg.innerHTML = `<div class="pmark">${esc(P[i].label)}</div><div class="st-cmp"><div class="st-cmp-h">${esc(me)}</div><div class="st-cmp-h">${esc(ot)}</div>${rows.filter(([a, b]) => (a.map(k => A[k]).join('') + b.map(k => B[k]).join('')).trim()).map(([a, b]) => `<div class="st-c" data-ed="${esc(me)}">${cell(A, a)}</div><div class="st-c" data-ed="${esc(ot)}">${cell(B, b)}</div>`).join('')}</div>`;
+      }
+    } else
     pg.innerHTML = `<div class="pmark">${esc(P[i].label)}</div>` + body(P[i].text, q);
     $('#stJump', d).value = i; $('#stPos', d).textContent = `${i + 1} / ${P.length}`;
     $('#stPrev', d).disabled = i === 0; $('#stNext', d).disabled = i === P.length - 1;
@@ -276,6 +327,8 @@ async function studyReader(d, it, want) {
   $('#stLh', d).onclick = () => { S.lh = S.lh >= 2.3 ? 1.5 : Math.round((S.lh + 0.2) * 10) / 10; store.set('st-lh', S.lh); apply(); };
   $('#stFont', d).onclick = e => { S.font = S.font === 'serif' ? 'sans' : 'serif'; store.set('st-font', S.font); e.target.textContent = S.font === 'serif' ? '고딕체' : '명조체'; apply(); };
   $('#stJump', d).onchange = e => show(+e.target.value);
+  if ($('#stCmp', d)) $('#stCmp', d).onclick = async e => { S.cmp = !S.cmp; store.set('st-cmp', S.cmp); e.currentTarget.classList.toggle('on', S.cmp); if (S.cmp) await loadPair(); pg.classList.toggle('wide', S.cmp); show(i, true); };
+  pg.classList.toggle('wide', S.cmp);
   $('#stPrev', d).onclick = () => show(i - 1); $('#stNext', d).onclick = () => show(i + 1);
   const keys = e => { if (!document.contains(pg)) return document.removeEventListener('keydown', keys); if (/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)) return;
     if (e.key === 'ArrowLeft') show(i - 1); if (e.key === 'ArrowRight') show(i + 1); };

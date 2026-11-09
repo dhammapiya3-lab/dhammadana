@@ -953,3 +953,14 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .r-toc .l3{padding-left:4.5em;font-size:.85em;color:var(--muted)}
 .r-toc .tl-sp{height:.9em}
 .r-toc .tl-sp + .l0{margin-top:0}
+
+/* 학습 자료실: 두 판본 문장 대조 (같은 쪽 이름끼리, 문장마다 나란히) */
+.st-page.wide{max-width:min(1200px,96vw)}
+.st-cmp{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line)}
+.st-cmp-h{font-weight:700;font-size:.85em;color:var(--ink-soft);padding:8px 10px;border-bottom:1px solid var(--line);background:var(--paper-2)}
+.st-c{padding:8px 10px;border-bottom:1px solid var(--line);white-space:pre-line}
+.st-c:nth-child(4n+3),.st-c:nth-child(4n+4){background:color-mix(in srgb,var(--paper-2) 45%,transparent)}
+.st-c + .st-c{border-left:1px solid var(--line)}
+@media (max-width:700px){.st-cmp{grid-template-columns:1fr}.st-cmp-h{display:none}.st-c + .st-c{border-left:0}
+  .st-c::before{content:attr(data-ed);display:block;font-size:.72em;color:var(--ink-soft);font-weight:700;margin-bottom:2px}
+  .st-c:nth-child(odd){border-bottom:0}}
