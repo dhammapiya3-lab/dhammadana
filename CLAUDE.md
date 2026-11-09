@@ -13,7 +13,7 @@
 - 회원(독서 기록 이어 보기): `/account/` (app.js 의 initAccount·syncNow), 서버 `functions/api/account.js`, 저장은 PAPER 창고 `acct/`. 아이디+비밀번호(되돌릴 수 없게 바꾼 값만), 비밀번호 찾기는 복구 코드(모든 회원) 또는 이메일(넣은 회원만, PAPER_NOTIFY_URL 의 Apps Script 가 `to` 로 보냄). 아이디 찾기는 이메일로(`find_id`, 색인 `acct/emails/<해시>.json` — 이메일 자체가 아닌 해시를 이름으로, 있든 없든 같은 대답). Apps Script 는 Pages 비밀 변수 PAPER_NOTIFY_KEY 와 같은 KEY 를 확인함. 운영자도 비밀번호·복구 코드를 볼 수 없음. 이어 보는 것: bm·ul·hist·pos-·ppos-·plast·pl·sub- (키마다 나중에 바꾼 것이 이김, 기기에서 처음 로그인할 때 책갈피·밑줄·내 서재는 합침). 이메일은 비밀번호 찾기 메일 말고 쓰지 않는다.
 - 학습 자료실(`/study/`, Cloudflare Access 로 허락받은 분만): 파일은 비공개 R2 `MEMBERS`(dhammadana-study). 법보시 도서관처럼 찾아보기(출판사·책 형식·주제)+표지 카드+자료 소개 화면(app.js initMembers). 자료마다의 정보(제목·출판사·형식·주제·소개·파일·표지)는 **공개 GitHub 에 두지 않고** MEMBERS 의 `_catalog.json` 에 저장, 관리 화면 `/admin/members/` 의 '자료 정보'에서 입력. 분류 틀(출판사·형식 목록)은 `content/study.json`, 주제는 topics.json 그대로.
 - 화면 동작: `public/assets/app.js`, 디자인: `public/assets/site.css`.
-- 앱처럼 설치·인터넷 없이 읽기: `public/manifest.webmanifest`(아이콘 public/images/icon-192·512·maskable, apple-touch-icon) + `public/sw.js`(한 번 받은 페이지·본문·그림을 기기에 저장, 글꼴은 4초 넘으면 기본 글꼴). 책 소개의 '이 책 기기에 저장' 단추(app.js initSaveOff)가 읽기 화면·본문 JSON·본문 그림·책 소개를 미리 받아 둠.
+- 앱처럼 설치·인터넷 없이 읽기: `public/manifest.webmanifest`(아이콘 public/images/icon-192·512·maskable, apple-touch-icon) + `public/sw.js`(한 번 받은 페이지·본문·그림을 기기에 저장, 글꼴은 4초 넘으면 기본 글꼴). 책을 한 번 열면 본문 JSON 과 함께 본문 그림 전부·책 소개도 뒤에서 받아 둠(app.js saveBookOffline). 읽지 않은 책은 받지 않음 (운영자 요청, 2026-11-09: 따로 저장 단추는 두지 않음).
 
 ## 자료 (content/)
 - `books/DL-0001.json` … 책 하나 = 파일 하나. 판(editions) 중 `current: true` 인 것만 내려받기·읽기에 쓴다. 이전 판은 지우지 않는다.

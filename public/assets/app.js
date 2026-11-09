@@ -462,7 +462,6 @@ function markEp() {
 }
 /* ---------- 책 상세: 목차 ---------- */
 async function initBook() {
-  initSaveOff();
   const m = $('#tocMount'); if (!m) return;
   try {
     const man = await manifest(m.dataset.manifest);
@@ -470,29 +469,15 @@ async function initBook() {
   } catch (e) {}
 }
 
-// '이 책 기기에 저장': 읽기 화면·본문·그림·책 소개를 미리 받아 두면 인터넷 없이 읽을 수 있음 (sw.js 가 받은 것을 저장)
-function initSaveOff() {
-  const bt = $('#saveOff'); if (!bt || !('serviceWorker' in navigator) || !('caches' in window)) return;
-  const id = bt.dataset.book, done = () => { bt.textContent = '✓ 이 기기에 저장됨 (다시 받기)'; };
-  bt.hidden = false; if (store.get('off-' + id)) done();
-  bt.onclick = async () => {
-    if (!navigator.onLine) return toast('인터넷에 연결된 뒤 눌러 주세요');
-    bt.disabled = true; bt.textContent = '저장하는 중…';
-    try {
-      await navigator.serviceWorker.ready;
-      if (!navigator.serviceWorker.controller) { bt.disabled = false; bt.textContent = '이 책 기기에 저장'; return toast('준비 중입니다. 화면을 새로고침한 뒤 다시 눌러 주세요'); }
-      const r = await fetch(bt.dataset.man, { cache: 'no-cache' }); if (!r.ok) throw 0;
-      const txt = await r.text();
-      const imgs = [...new Set((txt.match(/\/uploads\/[^"')\s\\]+/g) || []))];
-      const cover = $('.cover-box img');
-      const urls = [`/read/${id}/`, `/book/${id}/`, '/', '/library/', '/mynotes/', ...imgs, ...(cover ? [cover.getAttribute('src')] : [])];
-      let bad = 0;
-      for (const u of urls) { try { const x = await fetch(u, { cache: 'no-cache' }); if (!x.ok) bad++; } catch (e) { bad++; } }
-      if (bad > 2) throw 0;
-      store.set('off-' + id, 1); done(); toast('이 책을 이 기기에 저장했습니다. 인터넷이 없어도 읽을 수 있습니다');
-    } catch (e) { bt.textContent = '이 책 기기에 저장'; toast('저장하지 못했습니다. 잠시 뒤 다시 눌러 주세요'); }
-    bt.disabled = false;
-  };
+// 책을 열면 인터넷 없이 읽을 수 있게: 글은 열 때 저장되고(sw.js), 본문 그림과 책 소개도 여기서 뒤에서 조용히 받아 둠.
+// 이미 저장된 것은 다시 받지 않음.
+async function saveBookOffline(id, man) {
+  if (!('serviceWorker' in navigator) || !navigator.serviceWorker.controller || !('caches' in window) || !navigator.onLine) return;
+  const txt = JSON.stringify(man.pages || []);
+  const urls = [`/book/${id}/`, ...new Set(txt.match(/\/uploads\/[^"')\s\\]+/g) || [])];
+  for (const u of urls) {
+    try { if (await caches.match(new URL(u, location.origin).href)) continue; await fetch(u); } catch (e) {}
+  }
 }
 
 /* ---------- 읽기 화면 ---------- */
@@ -519,6 +504,7 @@ async function initReaderPage() {
   };
   if (!pages.some(p => p.text)) R.view = 'page';
   renderReader();
+  saveBookOffline(id, man);
   if ('serviceWorker' in navigator && navigator.serviceWorker.controller && !store.get('off-' + id)) { store.set('off-' + id, 1); setTimeout(() => toast('이 책을 이 기기에 저장했습니다. 이제 인터넷 없이도 읽을 수 있습니다'), 1500); }
   if (!want && last > 1) toast(`지난번에 읽던 ${pageName(R.pages[R.i])}을 열었습니다`);
 }
