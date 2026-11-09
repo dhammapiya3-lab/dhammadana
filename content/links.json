@@ -208,6 +208,12 @@
           "lang": "빠알리 삼장 & 번역"
         },
         {
+          "name": "6차 결집본 빠알리, 주석서, 복주석서 (Gemini Notebook)",
+          "url": "https://notebook.google.com/notebook/820104f6-6471-46e7-a31a-790c2e22f371",
+          "note": "6차 결집본 빠알리 삼장·주석서·복주석서 파일(소스 144개)을 모아 둔 공개 Gemini 노트북 · 묻고 답하며 원문을 찾아볼 수 있음 (Google 계정으로 로그인, AI 답변은 원문과 대조해 확인)",
+          "lang": "빠알리 삼장 & 번역"
+        },
+        {
           "name": "OpenTipitaka",
           "url": "https://www.opentipitaka.org/ko",
           "note": "빠알리 삼장 원문과 여러 나라 말 번역을 문단마다 나란히 보고, 찾기·사전·음성 듣기를 쓰는 곳 (AI 번역)",
