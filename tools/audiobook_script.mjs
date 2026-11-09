@@ -33,6 +33,39 @@ const changes = new Map(); // 원문 낱말 → 소리
 const LAT = /[A-Za-zÀ-ÖØ-öø-žḀ-ỿ][A-Za-zÀ-ÖØ-öø-žḀ-ỿ'’-]*/g;
 const same = (x, y) => x.replace(/[\s·.,()\[\]]/g, '') === y.replace(/[\s·.,()\[\]]/g, '');
 let n = 0;
+
+// 한글 문장 안의 로마자 풀이 빼기 (운영자 요청, 2026-11-09)
+//  - 한글 바로 뒤나 한글 낱말 + 빈칸 뒤에 덧붙인 원어는 뺌: 법 dhamma이며 → 법이며, 붓당 사라낭 갓차아미 Buddhaṃ … → 뺌
+//  - 한글이 섞인 괄호 안의 원어도 뺌: (아나가미 Anāgāmi) → (아나가미), [jīva 영혼] → [영혼]
+//  - 한글 풀이 없이 그 자리에 원어만 쓰인 낱말(뒤에 조사가 바로 붙음)은 읽음: 1914년 Sacca-Sangaha라는, 출판사인 Sāsana …의
+//  - 한글이 없는 문단(예경문·계율 문구 등)은 그대로 읽되, 주소·연도가 든 영어 서지 문단은 읽지 않음
+const LC = 'A-Za-zÀ-ÖØ-öø-žḀ-ỿ';
+const RUN = new RegExp(`[${LC}][${LC}'’]*(?:[ \\-.:]*[${LC}][${LC}'’]*)*-?`, 'g');
+const PART = /(의|인|은|는|을|를|에|에서|한|된|및|와|과|로|으로|이라는|라는|이란)$/;
+function stripGloss(s) {
+  s = s.replace(/https?:\/\/\S+|www\.\S+|\S+@\S+\.\S+/g, '');
+  if (!/[가-힣]/.test(s)) {                                     // 한글 없는 줄: 빨리어 줄이면 읽고, 영어·서지 줄은 뺌
+    if (/\d{3,}|《|Vols?\.|ed\.|Society|Press|Publication/.test(s)) return '';
+    const ws = s.match(RUN) || [];
+    const en = ws.join(' ').split(/[\s\-]+/).filter(w => /^[A-Za-z]+$/.test(w) && lib.langOf(w) === 'E').length;
+    const all = ws.join(' ').split(/[\s\-]+/).filter(w => w).length;
+    return all && en * 2 >= all ? '' : s;
+  }
+  // 줄 첫머리에 두 낱말 이상 이어진 원어(계율 문구 등)는 읽음
+  const lead = s.match(new RegExp(`^(?:[${LC}][${LC}'’-]*\\s+){1,}[${LC}][${LC}'’-]*`));
+  if (lead) return lead[0] + stripGloss(s.slice(lead[0].length)).replace(/^(?=\S)/, ' ');
+  // 한글이 든 괄호 안의 원어 빼기
+  s = s.replace(/[(\[〔（［][^()\[\]〔〕（）［］]*[)\]〕）］]/g, m => /[가-힣]/.test(m) ? m.replace(RUN, '').replace(/\s*:\s*/, ' ').replace(/([(\[〔（［])\s+/, '$1').replace(/\s+([)\]〕）］])/, '$1') : m);
+  s = s.replace(RUN, (m, i, all) => {
+    const before = all.slice(0, i), after = all.slice(i + m.length);
+    const glued = /^[가-힣]/.test(after);
+    if (/[가-힣]$/.test(before)) return '';                       // 한글에 바로 붙음 → 풀이
+    const w = before.match(/([가-힣]+)\s+$/);
+    if (w) return glued && PART.test(w[1]) ? m : '';              // 한글 + 빈칸 뒤: 조사로 끝난 낱말 뒤 + 조사 붙음일 때만 읽음
+    return glued ? m : '';                                        // 혼자 쓰인 원어: 뒤에 조사가 붙어야 읽음
+  });
+  return s.replace(/[ \t]{2,}/g, ' ').replace(/ ([,.)\]])/g, '$1').replace(/\(\s*\)|\[\s*\]/g, '').trim();
+}
 top.forEach((c, k) => {
   const from = c.page, to = (top[k + 1] ? top[k + 1].page : pages.length + 1) - 1;
   const paras = [];
@@ -44,8 +77,17 @@ top.forEach((c, k) => {
       if (/^\[\^[^\]]+\]:/.test(par)) { if (flags.includes('--footnotes')) paras.push('각주. ' + lib.sayable(par.replace(/^\[\^[^\]]+\]:\s*/, ''), OPT)); return; }
       if (/^\|/.test(par)) return;                                    // 표
       if (/^\[\[.*\]\]$/.test(par)) return;                           // [[색인]] 같은 자리표
-      const said = lib.sayable(par, OPT);
-      (par.match(LAT) || []).forEach(w => { const s = lib.PALI(w.replace(/[’'-]/g, '')); if (s && lib.langOf(w) !== 'E') changes.set(w, s); });
+      // 한글과 같은 뜻으로 덧붙인 원어 풀이는 읽지 않음 (운영자 요청, 2026-11-09):
+      //   괄호 ( ) [ ] 〔 〕 안에 한글이 없고 빨리어·한자·영어·숫자만 있으면 뺌 → 사성제(四聖諦), 지혜로(abhiññā), 무더기[色蘊]
+      //   한글 바로 뒤에 붙은 한자·로마자도 뺌 → 사성제四聖諦, 위빳사나Vipassanā
+      //   예경문처럼 빨리어만 따로 쓰였거나, 한글 풀이 없이 빨리어만 쓰인 곳은 한글 소리로 읽음
+      let pre = par, prev;
+      do { prev = pre; pre = pre.replace(/\s?[(\[〔（［]([^()\[\]〔〕（）［］가-힣]*)[)\]〕）］]/g, (m, inner) => /[A-Za-zÀ-ÖØ-öø-žḀ-ỿ\u3400-\u9FFF\uF900-\uFAFF]/.test(inner) ? '' : m); } while (pre !== prev);
+      pre = pre.replace(/([가-힣])[\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]+/g, '$1');
+      pre = pre.split('\n').filter(l => !(/속표지|판권지/.test(c.title) && !/[가-힣]/.test(l))).map(stripGloss).filter(x => x).join('\n');  // 속표지·판권지의 영어 줄은 한글과 같은 내용이라 뺌
+      if (!pre) return;
+      const said = lib.sayable(pre, OPT);
+      (pre.match(LAT) || []).forEach(w => { const s = lib.PALI(w.replace(/[’'-]/g, '')); if (s && lib.langOf(w) !== 'E') changes.set(w, s); });
       if (said) paras.push(said);
     });
   }
