@@ -125,7 +125,8 @@ async function initMembers() {
   try { const r = await fetch('/study/api/list', { cache: 'no-store' }); if (!r.ok) throw 0; j = await r.json(); } catch (e) { root.innerHTML = '<p class="muted">목록을 불러오지 못했습니다. 새로고침해 주세요.</p>'; return; }
   const who = j.email ? `<p class="small muted">${esc(j.email)} 로 들어왔습니다 · <a href="/cdn-cgi/access/logout">나가기</a></p>` : '';
   const head = `<div class="prose" style="padding-bottom:0"><h1>학습 자료실</h1><p class="muted">허락받은 분만 보는 곳입니다. 이 곳의 자료는 다른 분께 넘기지 말아 주세요.</p>${who}</div>`;
-  const fileSet = new Set(j.files.map(f => f.key)), fileBy = Object.fromEntries(j.files.map(f => [f.key, f]));
+  j.files = j.files.filter(f => !/\.gz$/i.test(f.key));
+  const fileSet = new Set([...j.files.map(f => f.key), ...((j.catalog || {}).items || []).map(it => it.text).filter(Boolean)]), fileBy = Object.fromEntries(j.files.map(f => [f.key, f]));
   const items = ((j.catalog || {}).items || []).filter(it => it && it.title).map(it => ({ ...it, files: (it.files || []).filter(k => fileSet.has(k)) }));
   const used = new Set(items.flatMap(it => [...it.files, it.cover || '']));
   const loose = j.files.filter(f => !used.has(f.key));
@@ -155,13 +156,19 @@ async function initMembers() {
     </section></div>` : '') + looseHtml() + `<div id="stDetail" hidden></div>`;
   const byId = Object.fromEntries(items.map(it => [it.id, it]));
   // 본문 찾기: Claude 가 뽑아 둔 본문 글(_text/…txt)을 찾는 순간에만 받아 옴
-  const TX = {}; let txLoading = false;
+  const TX = {}, TXF = {}; let txLoading = false;
+  // 빠알리어 발음 기호를 빼고 찾기 (ā→a, ñ→n …): 글자 수가 같게 바꿔 찾은 자리를 원문에 그대로 표시
+  const fold = t => { let o = ''; for (const c of t) { const d = c.normalize('NFD'); o += (d.length > 1 && /^[a-zA-Z][\u0300-\u036f]+$/.test(d) ? d[0] : c).toLowerCase().replace(/\s/, ' '); } return o; };
   const loadTexts = async () => { txLoading = true; const st = $('#stTx'); if (st) st.hidden = false;
-    await Promise.all(items.filter(it => it.text && TX[it.id] == null).map(it => fetch(url(it.text)).then(r => r.ok ? r.text() : '').catch(() => '').then(t => { TX[it.id] = t; })));
+    const get = async k => { const r = await fetch(url(k)); if (!r.ok) return '';
+      if (/\.gz$/i.test(k) && 'DecompressionStream' in window) return new Response(r.body.pipeThrough(new DecompressionStream('gzip'))).text();
+      return r.text(); };
+    await Promise.all(items.filter(it => it.text && TX[it.id] == null).map(it => get(it.text).catch(() => '').then(t => { TX[it.id] = t; TXF[it.id] = fold(t); })));
     txLoading = false; if (st) st.hidden = true; };
-  const findSnip = (t, q) => { q = q.trim(); if (!q) return ''; const i = t.toLowerCase().indexOf(q.toLowerCase()); if (i < 0) return '';
-    const pg = (t.slice(0, i).match(/=== (\d+)쪽 ===/g) || []).pop(); const a = Math.max(0, i - 40);
-    return `${pg ? `<b>${pg.replace(/=/g, '').trim()}</b> ` : ''}…${esc(t.slice(a, i).replace(/=== \d+쪽 ===/g, ' '))}<mark>${esc(t.slice(i, i + q.length))}</mark>${esc(t.slice(i + q.length, i + q.length + 50).replace(/=== \d+쪽 ===/g, ' '))}…`; };
+  const findSnip = (id, q) => { q = q.trim(); if (!q) return ''; const t = TX[id], f = TXF[id] || fold(t); const i = f.indexOf(fold(q)); if (i < 0) return '';
+    let n = 0, j = -1; while ((j = f.indexOf(fold(q), j + 1)) >= 0 && n < 999) n++;
+    const pg = (t.slice(0, i).match(/=== [^=\n]+ ===/g) || []).pop(); const a = Math.max(0, i - 50), mk = /=== [^=\n]+ ===|⟦[^⟧]*⟧/g;
+    return `${pg ? `<b>${esc(pg.replace(/=/g, '').trim())}${/^\d+$/.test(pg.replace(/[=\s]/g, '')) ? '쪽' : ''}</b> ` : ''}…${esc(t.slice(a, i).replace(mk, ' '))}<mark>${esc(t.slice(i, i + q.length))}</mark>${esc(t.slice(i + q.length, i + q.length + 60).replace(mk, ' '))}…${n > 1 ? ` <span class="small muted">(이 자료에 ${n >= 999 ? '999+' : n}번)</span>` : ''}`; };
   const norm = x => String(x || '').toLowerCase().replace(/\s+/g, '');
   const run = () => {
     const sel = {}; $$('[data-sf]:checked', root).forEach(c => (sel[c.dataset.sf] = sel[c.dataset.sf] || []).push(c.value));
@@ -170,7 +177,7 @@ async function initMembers() {
       let ok = (!sel.publisher || sel.publisher.includes(it.publisher)) && (!sel.book_type || sel.book_type.includes(it.book_type)) && (!sel.topic || sel.topic.some(t => (it.topics || []).includes(t)));
       let snip = '';
       if (ok && q) { ok = norm([it.title, it.author, it.translator, it.publisher, it.description, (it.topics || []).join(' ')].join(' ')).includes(q);
-        if (!ok && TX[it.id]) { snip = findSnip(TX[it.id], ($('#stQ') || {}).value || ''); ok = !!snip; } }
+        if (!ok && TX[it.id]) { snip = findSnip(it.id, ($('#stQ') || {}).value || ''); ok = !!snip; } }
       const sn = $('.snip', el); if (sn) { sn.hidden = !snip; sn.innerHTML = snip; }
       el.hidden = !ok; if (ok) shown++; });
     if (q && q.length >= 2 && !txLoading && items.some(it => it.text && TX[it.id] == null)) loadTexts().then(run);
