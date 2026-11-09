@@ -1584,6 +1584,8 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
 (() => {
   const standalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone;
   const ios = /iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  // 컴퓨터에서만 안내 (운영자 요청, 2026-11-10: 휴대폰·태블릿은 갤럭시 자동 차단 등으로 헷갈려서 안내하지 않음)
+  if (ios || /Android|Mobile|Tablet|SamsungBrowser/i.test(navigator.userAgent)) { const bx = $('#installBox'); if (bx) bx.remove(); return; }
   let ev = null;
   const guideText = () => {
     const mob = /Android/i.test(navigator.userAgent), sam = /SamsungBrowser/i.test(navigator.userAgent);
