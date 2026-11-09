@@ -1547,27 +1547,33 @@ function abTick() {
   $('#abCur') && ($('#abCur').textContent = fmtT(a.currentTime));
   const sk = $('#abSeek'); if (sk && !sk._drag && a.duration) sk.value = a.currentTime / a.duration * 1000;
   if (Date.now() - AB.saved > 5000) abSave();
-  const k = abIdx(c.sync, a.currentTime); if (k === AB.k) return;
-  AB.k = k;
+  const k = abIdx(c.sync, a.currentTime), moved = k !== AB.k; AB.k = k;
   const [, p] = c.sync[k];
-  // 읽는 분이 직접 넘기지 않았으면 글도 따라감 (다른 장으로 넘어가면 그 장을 엶)
-  const free = Date.now() - AB.userAt > 8000;
-  if (R.view === 'text' && free && !AB.detached && chapterOf(p) !== chapterOf(R.i + 1)) { R.chForce = null; R.i = p - 1; renderReader(); return; }
-  abMark(free && !AB.detached);
+  // 읽는 분이 직접 넘기지 않았으면 글도 따라감 — 듣는 곳이 다른 장이면 그 장을 열고, 듣는 문단이 화면 밖이면 그리로 (멈췄다가 8초 지나면 다시 따라감)
+  const free = Date.now() - AB.userAt > 8000 && !AB.detached;
+  if (R.view === 'text' && free && chapterOf(p) !== chapterOf(R.i + 1)) { R.chForce = null; R.i = p - 1; renderReader(); return; }
+  if (moved) abMark(free); else if (free) abMark(true, true);
 }
-function abMark(follow) {
-  $$('.ab-now').forEach(x => x.classList.remove('ab-now'));
+// 지금 문단 안에서 얼마나 읽었는지 (0~1) — 긴 문단은 읽는 만큼 글을 올려 줌
+function abFrac() { const c = R.ab.chapters[AB.ci], sy = c.sync, k = AB.k, t0 = sy[k][0], t1 = k + 1 < sy.length ? sy[k + 1][0] : (c.dur || t0 + 1); return Math.min(1, Math.max(0, (AB.a.currentTime - t0) / Math.max(1, t1 - t0))); }
+function abMark(follow, keep) {
   if (!AB.on || !R || !R.ab || AB.k < 0) return;
   const c = R.ab.chapters[AB.ci]; if (!c || !c.sync[AB.k]) return;
   const [, p, s] = c.sync[AB.k];
   const el = s < 0 ? $('#rBody .ch-head h3') : $(`#rBody [data-pg="${p}"][data-s="${s}"]`);
+  if (!keep || !el || !el.classList.contains('ab-now')) { $$('.ab-now').forEach(x => x.classList.remove('ab-now')); if (el) el.classList.add('ab-now'); }
   if (!el) return;
-  el.classList.add('ab-now');
   if (!follow || !el.getClientRects().length) return;
   const body = $('#rBody'), br = body.getBoundingClientRect(), r = el.getBoundingClientRect();
   const topPad = $('#reader').classList.contains('chrome-off') ? 12 : ($('.r-top') || { offsetHeight: 0 }).offsetHeight + 12;
   const bar = $('#abBar'), botPad = (bar ? bar.offsetHeight : 0) + 24;
-  if (r.top < br.top + topPad || r.top > br.bottom - botPad - 40) body.scrollTo({ top: body.scrollTop + r.top - br.top - topPad - Math.max(0, (br.height - topPad - botPad) * 0.15), behavior: 'smooth' });
+  const view = br.height - topPad - botPad, top0 = br.top + topPad;
+  if (r.height > view * 0.6) {  // 화면보다 긴 문단: 지금 읽는 줄쯤(문단 안 진행 정도)이 화면 위쪽 1/4 에 오게
+    const y = r.top + r.height * abFrac();
+    if (y < top0 || y > top0 + view * 0.7) body.scrollTo({ top: body.scrollTop + y - top0 - view * 0.25, behavior: 'smooth' });
+    return;
+  }
+  if (keep ? (r.bottom < top0 || r.top > top0 + view - 20) : (r.top < top0 || r.bottom > top0 + view)) body.scrollTo({ top: body.scrollTop + r.top - top0 - Math.max(0, view * 0.15), behavior: 'smooth' });
 }
 function abSave() { if (!AB.on || !R || !AB.a) return; AB.saved = Date.now(); store.set('abpos-' + R.id, { ci: AB.ci, t: Math.round(AB.a.currentTime) }); }
 function abStop() { if (!AB.a) return; abSave(); AB.a.pause(); AB.on = false; AB.k = -1; $$('.ab-now').forEach(x => x.classList.remove('ab-now')); const b = $('#abBar'); if (b) b.remove(); const el = $('#reader'); if (el) el.classList.remove('ab-on'); }

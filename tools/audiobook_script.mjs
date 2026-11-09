@@ -33,6 +33,17 @@ const top = (t.toc || []).filter(x => !x.sub && !/^\s/.test(x.title)).sort((x, y
 const outDir = path.join(root, 'tools/out/audiobook', ID); fs.mkdirSync(outDir, { recursive: true });
 for (const f of fs.readdirSync(outDir)) fs.unlinkSync(path.join(outDir, f));
 
+// 따로 쓰인 한자의 한글 소리 (tools/hanja_sound.py — hanja 꾸러미 사전 + 불교 낱말 바로잡기). 먼저 본문의 한자 낱말을 모두 모아 한 번에 소리를 받음
+import { spawnSync } from 'child_process';
+const HAN_RUN = /[\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF](?:[\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF\s]*[\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF])?/g;
+const HAN = new Set();
+const HSAY = (() => {
+  const all = [...new Set((t.body.replace(/([가-힣])[\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]+/g, '$1').match(HAN_RUN) || []).map(w => w.replace(/\s+/g, '')))];
+  if (!all.length) return {};
+  const r = spawnSync('python3', [path.join(root, 'tools/hanja_sound.py')], { input: JSON.stringify(all), encoding: 'utf8' });
+  if (r.status) { console.error('한자 소리를 만들지 못했습니다 (pip install hanja):', r.stderr); process.exit(1); }
+  return JSON.parse(r.stdout);
+})();
 const changes = new Map(); // 원문 낱말 → 소리
 const LAT = /[A-Za-zÀ-ÖØ-öø-žḀ-ỿ][A-Za-zÀ-ÖØ-öø-žḀ-ỿ'’-]*/g;
 const same = (x, y) => x.replace(/[\s·.,()\[\]]/g, '') === y.replace(/[\s·.,()\[\]]/g, '');
@@ -112,6 +123,10 @@ top.forEach((c, k) => {
       let pre = par, prev;
       do { prev = pre; pre = pre.replace(/\s?[(\[〔（［]([^()\[\]〔〕（）［］가-힣]*)[)\]〕）］]/g, (m, inner) => /[A-Za-zÀ-ÖØ-öø-žḀ-ỿ\u3400-\u9FFF\uF900-\uFAFF]/.test(inner) ? '' : m); } while (pre !== prev);
       pre = pre.replace(/([가-힣])[\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]+/g, '$1');
+      // 한글 뒤에 붙은 한자는 풀이(성문聲聞)라 빼고, 따로 쓰인 한자(《中部》 〈四十大經〉 彌山學人)는 한글 소리로 읽음 (운영자 요청, 2026-11-10)
+      // 한글 낱말 바로 뒤 괄호 첫머리의 한자도 풀이 — '색(色, 색깔과 형태)' → '색(색깔과 형태)', '(六境, 여섯 가지 감각대상)'
+      pre = pre.replace(/([가-힣)]\s?[(（])\s*[\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF][\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF\s]*(?:[,，·]\s*|(?=[)）]))/g, '$1').replace(/[(（]\s*[)）]/g, '');
+      pre = pre.replace(HAN_RUN, w => { const k = w.replace(/\s+/g, ''); HAN.add(k); return HSAY[k] != null ? HSAY[k] : w; });
       // 책에 잘못 인쇄된 빨리어 철자는 읽을 때만 바른 철자로 (책 본문은 그대로) — 운영자 확인, 2026-11-09
       for (const [bad, good] of SPELL) pre = pre.split(bad).join(good);
       pre = pre.split('\n').filter(l => !(/속표지|판권지/.test(c.title) && !/[가-힣āīūṃṅñṭḍṇḷ]/.test(l))).map(stripGloss).filter(x => x).join('\n');  // 속표지·판권지의 영어 줄은 한글과 같은 내용이라 뺌
@@ -140,5 +155,6 @@ top.forEach((c, k) => {
 });
 const tsv = ['원문\t소리', ...[...changes].sort((x, y) => x[0].localeCompare(y[0])).map(([w, s]) => `${w}\t${s}`)].join('\n');
 fs.writeFileSync(path.join(outDir, '빨리어_소리_확인.tsv'), tsv + '\n');
+if (HAN.size) fs.writeFileSync(path.join(outDir, '한자_소리_확인.tsv'), ['한자\t소리', ...[...HAN].sort().map(w => `${w}\t${HSAY[w] ?? ''}`)].join('\n') + '\n');
 if (skipped.length) console.log('  원고에서 뺀 장: ' + skipped.join(', '));
 console.log(`${ID}: 장 ${n}개, 빨리어 낱말 ${changes.size}개 → ${path.relative(root, outDir)}`);
