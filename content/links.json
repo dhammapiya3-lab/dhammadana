@@ -8,6 +8,11 @@
           "name": "붓다의 고귀한 제자들",
           "url": "https://dhammayut-kor.org/books-list/",
           "note": "태국 숲속 전통 스승들의 번역 서적과 수행 자료"
+        },
+        {
+          "name": "에왐메수땅 빠알리어 강좌",
+          "url": "https://evammesutam.com/pali/",
+          "note": "문자·발음부터 격·명사·동사·연성·복합어 등 문법, 법구경 게송과 짧은 경 읽기까지 배우는 무료 빠알리어 온라인 강좌 (초급 일부 공개, 나머지 준비 중)"
         }
       ]
     },
@@ -210,6 +215,11 @@
           "name": "Digital Pāḷi Dictionary (DPD)",
           "url": "https://www.dpdict.net/",
           "note": "빠알리어-영어 디지털 사전 · 낱말마다 문법·어근·연음(산디) 풀이, 6차 결집본 삼장에서 굵은 글씨로 정의된 용어 찾기, 삼장 원문·번역 찾기 (영어·러시아어 화면)"
+        },
+        {
+          "name": "A Dictionary of Pāli (Gandhari.org)",
+          "url": "https://gandhari.org/dictionary?section=dop",
+          "note": "마가렛 콘(Margaret Cone)의 『A Dictionary of Pāli』(빠알리성전협회 허락)를 온라인으로 찾아보는 곳 · 낱말마다 경전·주석서 용례와 출처, PTS 사전 등 다른 사전도 함께"
         }
       ]
     }
