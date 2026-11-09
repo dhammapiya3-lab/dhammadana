@@ -15,7 +15,8 @@ const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..')
 const app = fs.readFileSync(path.join(root, 'public/assets/app.js'), 'utf8');
 const a = app.indexOf('// 빨리어 로마자 → 한글 소리'), b = app.indexOf('const fnMark');
 const unBLine = app.match(/^const unB = .*$/m)[0];
-const block = app.slice(a, b) + '\n' + unBLine + '\nreturn { PALI, sayable, LEX, langOf, PALI_MARK };';
+const tocLine = app.match(/^const tocLines = .*$/m)[0];
+const block = app.slice(a, b) + '\n' + unBLine + '\n' + tocLine + '\nreturn { PALI, sayable, LEX, langOf, PALI_MARK };';
 const store = { get: (k, d) => d, set() {} };
 const lib = new Function('store', 'window', block)(store, {});
 const words = f => new Set(fs.readFileSync(path.join(root, 'public/data', f), 'utf8').split('\n').filter(x => x && x[0] !== '#'));

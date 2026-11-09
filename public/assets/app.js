@@ -1260,6 +1260,9 @@ const EN_A = '\u0001', EN_B = '\u0002';  // 영어 구간 표시 (영어 목소�
 function sayable(s, o = ttsOpt(), mark = false) {
   const en = w => mark ? EN_A + w + EN_B : w;
   let t = unB(s).replace(/^## /, '');
+  // 숫자 사이의 줄표는 '빼기(마이너스)'가 아니라 '다시'로 읽음: 8-10 → 8 다시 10, 석수동 178-19 → 178 다시 19 (운영자 요청, 2026-11-10)
+  //  - 수학의 뺄셈일 때만 그대로(마이너스): 같은 줄에 = 가 있는 셈식(예: 5 - 3 = 2)
+  t = t.replace(/[^\n]+/g, line => /[=＝]/.test(line) && /\d\s*[-–−]\s*\d/.test(line) ? line : line.replace(/(\d)[ ]?[-–][ ]?(?=\d)/g, '$1 다시 '));
   if (/^%% /.test(t)) t = tocLines(t).filter(r => !r.sp).map(r => r.t + (r.p ? `, ${r.p}쪽` : '')).join('.\n');
   if (o.paren === false) { let prev; do { prev = t; t = t.replace(/\s?[(（][^()（）]*[)）]/g, ''); } while (t !== prev); }
   if (o.brack === false) t = t.replace(/\s?\[(?!\^)[^\[\]]*\]/g, '');
