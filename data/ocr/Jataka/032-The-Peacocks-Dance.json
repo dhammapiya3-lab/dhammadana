@@ -19,8 +19,8 @@
      1243
     ],
     "shape": "box",
-    "en": "The Golden Mallard. tale of modesty, pride, and the first cycle of the world’s history.",
-    "conf": 92
+    "en": "The Golden Mallard. Mallard. tale of modesty, pride, and the first cycle of the world’s history.",
+    "conf": 91
    }
   ],
   "loose": []
@@ -35,8 +35,8 @@
   "boxes": [
    {
     "seed": [
-     181,
-     69
+     203,
+     67
     ],
     "bbox": [
      509,
@@ -45,7 +45,7 @@
      291
     ],
     "shape": "box",
-    "en": "of In the first Ic the world’s istory, the animal chose their leaders.",
+    "en": "In the first cycle Ic of the world’s history, the animal chose th leaders,",
     "conf": 67
    },
    {
@@ -61,12 +61,12 @@
     ],
     "shape": "box",
     "en": "Quadrupeds chose the Lion.",
-    "conf": 93
+    "conf": 79
    },
    {
     "seed": [
-     393,
-     364
+     355,
+     365
     ],
     "bbox": [
      1084,
@@ -75,13 +75,13 @@
      1280
     ],
     "shape": "box",
-    "en": "Fishes chose the monster-fish Ananda.",
-    "conf": 92
+    "en": "Fishes ishes chose the monster. fish Ana nda.",
+    "conf": 54
    },
    {
     "seed": [
      610,
-     366
+     365
     ],
     "bbox": [
      1881,
@@ -90,8 +90,8 @@
      1280
     ],
     "shape": "box",
-    "en": "The birds chose the Golden Mallard.",
-    "conf": 96
+    "en": "The ee chose the Golden Mallard.",
+    "conf": 45
    }
   ],
   "loose": []
@@ -106,8 +106,8 @@
   "boxes": [
    {
     "seed": [
-     112,
-     83
+     152,
+     84
     ],
     "bbox": [
      218,
@@ -116,8 +116,8 @@
      360
     ],
     "shape": "box",
-    "en": "King Golden Mallard granted his daughter any boon she",
-    "conf": 96
+    "en": "King Mallard granted his beloved daughter any boon she desired. ed.",
+    "conf": 95
    },
    {
     "seed": [
@@ -132,7 +132,7 @@
     ],
     "shape": "bubble",
     "en": "Agreed",
-    "conf": 97
+    "conf": 96
    },
    {
     "seed": [
@@ -146,8 +146,8 @@
      741
     ],
     "shape": "bubble",
-    "en": "Father, allow me to choose husband after heart. my own",
-    "conf": 95
+    "en": "Father, allow me to choose husband after my own heart.",
+    "conf": 96
    }
   ],
   "loose": []
@@ -172,8 +172,8 @@
      1438
     ],
     "shape": "box",
-    "en": "To fulfill his promise, the King summoned all winged creatures in the Himalayas. They flocked together on great plateau of bare rock, awaiting the Princess.",
-    "conf": 59
+    "en": "To fulfill his promise, the King ing summoned all winged creatures in the Himalayas. They flocked together on great plateau of bare rock, awaiting the Princess.",
+    "conf": 56
    }
   ],
   "loose": []
@@ -198,8 +198,8 @@
      926
     ],
     "shape": "box",
-    "en": "“Go, choose husband after your own heart,” he ba de her. She reviewed the great assembly, searching the endless crowd for the right companion.",
-    "conf": 96
+    "en": "“Go, ‘0, choose husband after your own heart,” he bade de her. She reviewed the great assembly, searching the endless crowd for the right companion",
+    "conf": 60
    }
   ],
   "loose": []
@@ -225,7 +225,7 @@
     ],
     "shape": "box",
     "en": "Her eye lighted upon the peacock, with his neck of jewelled sheen and tail of varied hue.",
-    "conf": 91
+    "conf": 92
    },
    {
     "seed": [
@@ -240,10 +240,11 @@
     ],
     "shape": "bubble",
     "en": "“Let this be my husband,” she declared.",
-    "conf": 92
+    "conf": 96
    }
   ],
   "loose": [
+   "NOY",
    "ANS"
   ]
  },
@@ -267,13 +268,13 @@
      493
     ],
     "shape": "bubble",
-    "en": "Friend peacock, the princess has fixed her choice on you from among all the birds in the world.",
-    "conf": 96
+    "en": "Fond peacock, the princess has fixed her choice on you from among all the birds in the world.",
+    "conf": 51
    },
    {
     "seed": [
-     309,
-     18
+     323,
+     12
     ],
     "bbox": [
      879,
@@ -282,7 +283,7 @@
      159
     ],
     "shape": "box",
-    "en": "The assembly of birds approached him.",
+    "en": "The assembly of approached him.",
     "conf": 85
    }
   ],
@@ -311,20 +312,26 @@
     ],
     "shape": "box",
     "en": "Carried away by extreme joy and blinding pride, the peacock exclaimed:",
-    "conf": 96
+    "conf": 97
+   },
+   {
+    "seed": [
+     554,
+     263
+    ],
+    "bbox": [
+     1527,
+     704,
+     2466,
+     1296
+    ],
+    "shape": "bubble",
+    "en": "“Until this day you~ you have never seen how active Iam!”",
+    "conf": 54
    }
   ],
   "loose": [
-   "“Until",
-   "this",
-   "day",
-   "you",
-   "have",
-   "never",
-   "seen",
-   "how",
-   "active",
-   "Iam!”"
+   "SSS"
   ]
  },
  {
@@ -347,11 +354,13 @@
      1359
     ],
     "shape": "box",
-    "en": "In defiance of all decency, he spread his wings and began to dance wildly. In his frenzied display, he exposed himself before the entire assembly.",
-    "conf": 96
+    "en": "In defiance of all decency, he sprea his is wings and an began egan to dance wildly. In his frenzied display, he exposed himself before the entire assembly.",
+    "conf": 88
    }
   ],
-  "loose": []
+  "loose": [
+   "SSS"
+  ]
  },
  {
   "img": "images/032-The-Peacocks-Dance-10-Original.jpg",
@@ -363,40 +372,21 @@
   "boxes": [
    {
     "seed": [
-     149,
-     72
+     528,
+     212
     ],
     "bbox": [
-     212,
-     212,
-     1276,
-     321
+     1392,
+     536,
+     2407,
+     1157
     ],
-    "shape": "box",
-    "en": "on ty",
-    "conf": 50
+    "shape": "bubble",
+    "en": "“This fellow has neither modesty in his heart nor decency in his outward behaviour. will not give my daughter to one so shameless.”",
+    "conf": 95
    }
   ],
-  "loose": [
-   "“This",
-   "fellow",
-   "has",
-   "neither",
-   "modesty",
-   "his",
-   "heart",
-   "nor",
-   "ecency",
-   "his",
-   "outward",
-   "behaviour.",
-   "will",
-   "not",
-   "give",
-   "daughter",
-   "one",
-   "shameless."
-  ]
+  "loose": []
  },
  {
   "img": "images/032-The-Peacocks-Dance-11-Original.jpg",
@@ -421,7 +411,6 @@
    "neck",
    "like",
    "lapis",
-   "lazuli...",
    "but",
    "because",
    "the",
@@ -430,7 +419,8 @@
    "give",
    "you",
    "our",
-   "daughter."
+   "daughter.",
+   "lazuli..."
   ]
  },
  {
@@ -453,8 +443,8 @@
      542
     ],
     "shape": "box",
-    "en": "the King Right in face of the the gave his daughter to modest young mallard, nephew of his. Covered in the peacock fled into the sky.",
-    "conf": 92
+    "en": "Right in the face of the gathering, the King gave his daughter to modest young mallard, nephew of his. Covered in shame, the peacock fled into the sky.",
+    "conf": 76
    }
   ],
   "loose": []

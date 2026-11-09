@@ -20,11 +20,11 @@
     ],
     "shape": "box",
     "en": "Long ago in Varanasi, King Brahmadatta proclaimed grand festival.",
-    "conf": 93
+    "conf": 91
    },
    {
     "seed": [
-     586,
+     579,
      326
     ],
     "bbox": [
@@ -34,8 +34,8 @@
      1263
     ],
     "shape": "box",
-    "en": "The joyous summoning notes the festal drum echoed down into the royal pleasure gardens",
-    "conf": 79
+    "en": "The joyous summoning notes of the festal drum echoed down bic the royal pleasure gardens. afi",
+    "conf": 39
    }
   ],
   "loose": []
@@ -60,7 +60,7 @@
      357
     ],
     "shape": "box",
-    "en": "The king’s gardener longed to join the holiday-making",
+    "en": "The king’s gardener longed to join the he holiday-making townsfolk.",
     "conf": 92
    },
    {
@@ -76,7 +76,7 @@
     ],
     "shape": "bubble",
     "en": "will get the monkeys to do the watering for me, and be off to enjoy myself.",
-    "conf": 93
+    "conf": 90
    }
   ],
   "loose": []
@@ -102,7 +102,7 @@
     ],
     "shape": "bubble",
     "en": "You enjoy these flowers and fruits. Today is holiday up in the city. Could you water the young trees while am away?",
-    "conf": 95
+    "conf": 96
    }
   ],
   "loose": []
@@ -127,8 +127,8 @@
      364
     ],
     "shape": "box",
-    "en": "The gardener handed the water-skins and over watering-pots, entirely abdicating his responsibility.",
-    "conf": 93
+    "en": "The gardener 7s 5 handed over 2 5 the water-skins 3 5 and watering-pots, pots, entirely abdicating his responsibility.",
+    "conf": 45
    },
    {
     "seed": [
@@ -143,7 +143,7 @@
     ],
     "shape": "bubble",
     "en": "mind you do!",
-    "conf": 96
+    "conf": 95
    }
   ],
   "loose": []
@@ -168,8 +168,8 @@
      516
     ],
     "shape": "bubble",
-    "en": "We must be careful not to waste water. When this water is all gone, we shall be hard put to it to get more.",
-    "conf": 91
+    "en": "We must be careful not to waste th water. When this water is all gone, we shall be hard put to it to get more.",
+    "conf": 90
    }
   ],
   "loose": []
@@ -194,8 +194,8 @@
      364
     ],
     "shape": "box",
-    "en": "He devised perfectly destructive, empirical method.",
-    "conf": 93
+    "en": "He devised perfectly logical, yet entirely destructive, empirical irical method.",
+    "conf": 68
    },
    {
     "seed": [
@@ -209,23 +209,23 @@
      1263
     ],
     "shape": "bubble",
-    "en": "First pull each young tree up. Look at the size of its roots",
-    "conf": 57
+    "en": "First pull each young tree up. up. Look at the size of its roots.",
+    "conf": 84
    }
   ],
   "loose": [
-   "Goal",
-   "Requirement",
+   "Goal:",
+   "Requirement:",
    "Action:",
-   "Result",
+   "Result:",
    "Save",
    "Water",
    "Know",
    "Root",
    "Size",
-   "Uproot",
-   "Tree",
    "Dead",
+   "Tree",
+   "Uproot",
    "Tree"
   ]
  },
@@ -249,23 +249,23 @@
      364
     ],
     "shape": "bubble",
-    "en": "deep, Give plenty of water to those whose roots strike but only little to those with roots.",
-    "conf": 93
+    "en": "Give plenty of water to those whose roots strike deep, but only little to those with tiny roots. aves",
+    "conf": 40
    },
    {
     "seed": [
-     655,
-     130
+     737,
+     120
     ],
     "bbox": [
-     2139,
-     393,
-     2466,
-     598
+     1762,
+     139,
+     2509,
+     946
     ],
     "shape": "bubble",
-    "en": "To be sure!",
-    "conf": 97
+    "en": "Ye To be sure! Ny",
+    "conf": 45
    }
   ],
   "loose": []
@@ -280,8 +280,8 @@
   "boxes": [
    {
     "seed": [
-     234,
-     367
+     232,
+     363
     ],
     "bbox": [
      661,
@@ -290,8 +290,8 @@
      1313
     ],
     "shape": "box",
-    "en": "man entered gardens. He witnessed this juncture, wise the pleasure the devastating execution of the gardener’s delegation.",
-    "conf": 89
+    "en": "At this juncture, wise man entered the pleasure gardens, He witnessed the devastating execution of the gardener’s delegation.",
+    "conf": 80
    }
   ],
   "loose": []
@@ -332,6 +332,21 @@
   "boxes": [
    {
     "seed": [
+     300,
+     62
+    ],
+    "bbox": [
+     721,
+     159,
+     1600,
+     546
+    ],
+    "shape": "bubble",
+    "en": "Because such are our king’s commands.",
+    "conf": 88
+   },
+   {
+    "seed": [
      247,
      348
     ],
@@ -342,18 +357,11 @@
      1313
     ],
     "shape": "box",
-    "en": "flawless execution of fundamentally flawed strategy.",
-    "conf": 95
+    "en": "flawless execution of fundamentally (wen strategy.",
+    "conf": 49
    }
   ],
-  "loose": [
-   "Because",
-   "such",
-   "are",
-   "our",
-   "king’s",
-   "commands"
-  ]
+  "loose": []
  },
  {
   "img": "images/046-The-Folly-of-the-Monkeys-11-Original.jpg",
@@ -376,7 +384,7 @@
     ],
     "shape": "box",
     "en": "Their reply moved the wise man to reflect on profound tragedy: with every desire to do good, the ignorant and foolish only succeed in doing harm.",
-    "conf": 94
+    "conf": 92
    }
   ],
   "loose": []
@@ -392,7 +400,7 @@
   "loose": [
    "anatthakusalena",
    "atthacariya",
-   "sukhavaha,",
+   "sukhavaha",
    "Hapeti",
    "attham",
    "dummedho,",
@@ -404,12 +412,12 @@
    "unintelligent",
    "ruins",
    "what",
-   "good,",
+   "good",
    "like",
    "the",
    "monkey",
    "the",
-   "park.",
+   "park",
    "ANS"
   ]
  },
@@ -423,8 +431,8 @@
   "boxes": [
    {
     "seed": [
-     498,
-     342
+     504,
+     346
     ],
     "bbox": [
      1475,
@@ -433,18 +441,18 @@
      1346
     ],
     "shape": "bubble",
-    "en": "the True wisdom requires understanding not the",
-    "conf": 62
+    "en": "True wisdom requires understanding the system not just executing the command.",
+    "conf": 91
    }
   ],
   "loose": [
    "Good",
    "intentions,",
    "devoid",
-   "intelligence",
+   "intelligence,",
    "are",
    "inherently",
-   "destructive"
+   "destructive."
   ]
  }
 ]

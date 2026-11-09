@@ -17,3 +17,9 @@ books 46 stories 918 images 13186
 028-Nandivisala.htm: 그림 12 상자 19 상자밖글 17
 029-Grannys-Blackie.htm: 그림 12 상자 26 상자밖글 7
 030-Deadly-Food.htm: 그림 11 상자 19 상자밖글 34
+032-The-Peacocks-Dance.htm: 그림 12 상자 19 상자밖글 29
+033-The-Quails-and-the-Net.htm: 그림 14 상자 21 상자밖글 45
+034-The-Amorous-Fish.htm: 그림 13 상자 27 상자밖글 13
+037-The-Senior-Partridge.htm: 그림 12 상자 14 상자밖글 6
+046-The-Folly-of-the-Monkeys.htm: 그림 13 상자 18 상자밖글 41
+039-Nanda-and-the-Hoard.htm: 그림 12 상자 19 상자밖글 17

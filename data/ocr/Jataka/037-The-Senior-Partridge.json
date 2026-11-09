@@ -19,8 +19,8 @@
      856
     ],
     "shape": "box",
-    "en": "The Holiness of the Partridge Jataka Tale of Seniority and Respect",
-    "conf": 88
+    "en": "The Holiness of the Partridge Jataka Tale 2 of Seniority and Respect",
+    "conf": 71
    }
   ],
   "loose": []
@@ -45,8 +45,8 @@
      1359
     ],
     "shape": "box",
-    "en": "In the past, on the slopes of the lived three friends—an elephant, monkey, and an ordinary partridge. Yet, they lacked respect and order, living together without subordination.",
-    "conf": 92
+    "en": "In the past, on the slopes of the Himalayas, lived three friends—an elephant, monkey, and an ordinary partridge. Yet, they lacked respect and order, living together without subordination.",
+    "conf": 80
    }
   ],
   "loose": []
@@ -72,7 +72,7 @@
     ],
     "shape": "box",
     "en": "Realizing this chaos was unseemly, they decided to discover who among them was the senior, so they could honor him. To measure their ages, they looked to the great banyan tree.",
-    "conf": 94
+    "conf": 96
    }
   ],
   "loose": []
@@ -87,39 +87,21 @@
   "boxes": [
    {
     "seed": [
-     490,
-     91
+     129,
+     59
     ],
     "bbox": [
-     1395,
-     268,
-     1964,
-     754
+     367,
+     182,
+     1253,
+     582
     ],
     "shape": "bubble",
-    "en": "iN WV, fF ‘all 4",
-    "conf": 45
+    "en": "When was baby, this banyan was mere bush. wm As stood astride it, the topmost Qa. branches just reached my belly.",
+    "conf": 47
    }
   ],
-  "loose": [
-   "When",
-   "was",
-   "baby,",
-   "this",
-   "banyan",
-   "was",
-   "mere",
-   "bush.",
-   "stood",
-   "astride",
-   "it,",
-   "the",
-   "topmost",
-   "branches",
-   "just",
-   "reached",
-   "belly."
-  ]
+  "loose": []
  },
  {
   "img": "images/037-The-Senior-Partridge-05-Original.jpg",
@@ -128,26 +110,25 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
+  "boxes": [
+   {
+    "seed": [
+     119,
+     59
+    ],
+    "bbox": [
+     367,
+     182,
+     1253,
+     582
+    ],
+    "shape": "bubble",
+    "en": "When was youngster, had only to stretch out my neck as sat on the ground and could eat its topmost sprouts",
+    "conf": 96
+   }
+  ],
   "loose": [
-   "AQY",
-   "When",
-   "was",
-   "youngster,",
-   "had",
-   "only",
-   "stretch",
-   "out",
-   "neck",
-   "sat",
-   "the",
-   "ground,",
-   "and",
-   "could",
-   "eat",
-   "its",
-   "topmost",
-   "sprouts."
+   "AQY"
   ]
  },
  {
@@ -157,30 +138,25 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
+  "boxes": [
+   {
+    "seed": [
+     124,
+     60
+    ],
+    "bbox": [
+     367,
+     182,
+     1362,
+     582
+    ],
+    "shape": "bubble",
+    "en": "Tate ate the seeds of another great tree and voided them here. That was the origin of this tree. have knowledge of it from before it was born.",
+    "conf": 91
+   }
+  ],
   "loose": [
-   "ate",
-   "the",
-   "seeds",
-   "another",
-   "great",
-   "tree",
-   "and",
-   "voided",
-   "them",
-   "here.",
-   "That",
-   "was",
-   "the",
-   "origin",
-   "this",
-   "tree.",
-   "have",
-   "knowledge",
-   "from",
-   "before",
-   "was",
-   "born"
+   "BYS"
   ]
  },
  {
@@ -194,7 +170,7 @@
    {
     "seed": [
      216,
-     354
+     350
     ],
     "bbox": [
      433,
@@ -203,8 +179,8 @@
      1316
     ],
     "shape": "box",
-    "en": "the the pa ge as the elephant offered him their deepest homage, respect of word and deed, and promised to follow his counsels.",
-    "conf": 95
+    "en": "‘Recognizing aie age partridge ge as the oldest, the monkey and elephant offered him their deepest homage, respect of word and deed, and promised to follow his counsels.",
+    "conf": 42
    }
   ],
   "loose": [
@@ -231,8 +207,8 @@
      453
     ],
     "shape": "box",
-    "en": "The partridge established them in the Precepts. With proper ordering of their common life, these three ensured their rebirth in heaven. This known as the “Holiness of the Partridge.”",
-    "conf": 93
+    "en": "The partridge established them in the Precepts. With proper ordering of their common life, these three ensured their rebirth in heaven. This bec known as the “Holiness of the Partridge.”",
+    "conf": 37
    }
   ],
   "loose": [
@@ -260,8 +236,8 @@
      863
     ],
     "shape": "box",
-    "en": "The this past to the present. If animals live together in such respect, how could monks, who embrace well-tau li ve without due",
-    "conf": 92
+    "en": "The rash this past to the aA If animals coal could live together in such respect, how could monks, who embrace well-taught Faith, li ve without ithout due subordination?",
+    "conf": 35
    }
   ],
   "loose": []
@@ -287,7 +263,7 @@
     ],
     "shape": "bubble",
     "en": "Henceforth ordain, monks, that to seniority shall be paid respect of word and deed, salutation, and all due service",
-    "conf": 78
+    "conf": 87
    }
   ],
   "loose": []
@@ -302,23 +278,8 @@
   "boxes": [
    {
     "seed": [
-     682,
-     151
-    ],
-    "bbox": [
-     1795,
-     387,
-     2311,
-     754
-    ],
-    "shape": "bubble",
-    "en": "22> Ny wet os De",
-    "conf": 45
-   },
-   {
-    "seed": [
-     136,
-     340
+     201,
+     344
     ],
     "bbox": [
      420,
@@ -328,12 +289,12 @@
     ],
     "shape": "box",
     "en": "Seniority becomes the Nevermore let senior",
-    "conf": 96
+    "conf": 91
    },
    {
     "seed": [
      314,
-     339
+     346
     ],
     "bbox": [
      1005,
@@ -342,12 +303,12 @@
      1296
     ],
     "shape": "box",
-    "en": "ts the best lodging, the kept out of lodging by junior.",
-    "conf": 67
+    "en": "ttl ts to the best lodging, the best| kept out of lodging by",
+    "conf": 64
    },
    {
     "seed": [
-     543,
+     570,
      344
     ],
     "bbox": [
@@ -357,11 +318,13 @@
      1296
     ],
     "shape": "box",
-    "en": "and the best rice. Doing so is an offence.",
-    "conf": 95
+    "en": "and the best rice. Doing so is an ‘offence.",
+    "conf": 60
    }
   ],
-  "loose": []
+  "loose": [
+   "All"
+  ]
  },
  {
   "img": "images/037-The-Senior-Partridge-12-Original.jpg",
@@ -383,8 +346,8 @@
      499
     ],
     "shape": "box",
-    "en": "Ye vuddham-apacayanti nara Dhammassa kovida Ditthe va dhamme pasamsa, samparaye ca suggati ti “Those people skilled in Dhamma who pay homage to an elder are praised in this life, and in the next world go to happy state",
-    "conf": 48
+    "en": "Ye vuddham-apacayanti nara Dhammassa kovida, Ditthe va dhamme pasamsa, samparaye ca suggati ti.” “Those people skilled in Dhamma who pay homage to an elder are praised in this life, and in the next world go to happy state.”",
+    "conf": 80
    }
   ],
   "loose": []

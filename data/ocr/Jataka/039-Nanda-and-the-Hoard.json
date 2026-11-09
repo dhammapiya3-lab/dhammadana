@@ -19,8 +19,8 @@
      430
     ],
     "shape": "box",
-    "en": "ancient householder In Benares, an aging feared his young wife would squander his wealth after his death, leaving his infant son with nothing",
-    "conf": 50
+    "en": "Ses In ancient Benares, an aging householder feared his young wife would squander his wealth after his death, leaving his infant son with nothing.",
+    "conf": 48
    }
   ],
   "loose": []
@@ -60,8 +60,8 @@
      1213
     ],
     "shape": "bubble",
-    "en": "Reveal this to my son when am gone.",
-    "conf": 96
+    "en": "Reveal this to my son when Iam am gone",
+    "conf": 73
    }
   ],
   "loose": []
@@ -74,6 +74,21 @@
   ],
   "ref": 800,
   "boxes": [
+   {
+    "seed": [
+     67,
+     61
+    ],
+    "bbox": [
+     212,
+     198,
+     1375,
+     327
+    ],
+    "shape": "box",
+    "en": "The old man passed away. Years later, the son came of age, and his mother revealed the secret.",
+    "conf": 96
+   },
    {
     "seed": [
      626,
@@ -131,7 +146,9 @@
     "conf": 96
    }
   ],
-  "loose": []
+  "loose": [
+   "otis"
+  ]
  },
  {
   "img": "images/039-Nanda-and-the-Hoard-05-Original.jpg",
@@ -153,8 +170,8 @@
      503
     ],
     "shape": "bubble",
-    "en": "You servant of slave-wench's son! How should you have any money here?",
-    "conf": 64
+    "en": "You servant of slave-wench’'s son! How should you have any money here?",
+    "conf": 38
    },
    {
     "seed": [
@@ -169,7 +186,7 @@
     ],
     "shape": "bubble",
     "en": "This way, my lord.",
-    "conf": 97
+    "conf": 96
    }
   ],
   "loose": []
@@ -181,7 +198,23 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
+  "boxes": [
+   {
+    "seed": [
+     68,
+     60
+    ],
+    "bbox": [
+     212,
+     198,
+     1402,
+     327
+    ],
+    "shape": "box",
+    "en": "Pretending not to hear, the heir calmly returned home. Days later, they tried again. The exact same pattern repeated.",
+    "conf": 96
+   }
+  ],
   "loose": []
  },
  {
@@ -219,11 +252,13 @@
      681
     ],
     "shape": "bubble",
-    "en": "He means to reveal the gold, but the moment he stands there, he abuses me.",
+    "en": "He means to reveal the gold, but the momen he stands there, he abuses me.",
     "conf": 95
    }
   ],
-  "loose": []
+  "loose": [
+   "ty?"
+  ]
  },
  {
   "img": "images/039-Nanda-and-the-Hoard-08-Original.jpg",
@@ -233,6 +268,21 @@
   ],
   "ref": 800,
   "boxes": [
+   {
+    "seed": [
+     356,
+     62
+    ],
+    "bbox": [
+     410,
+     142,
+     1375,
+     245
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta instantly deduced the truth: proximity to hidden wealth unconsciously inflates the ego.",
+    "conf": 92
+   },
    {
     "seed": [
      311,
@@ -245,8 +295,8 @@
      592
     ],
     "shape": "bubble",
-    "en": "The spot where Nanda stands to abuse you is exactly where your gold lies.",
-    "conf": 96
+    "en": "The spot where Nanda stands ds to abuse you is exactly where your gold lies.",
+    "conf": 90
    }
   ],
   "loose": [
@@ -264,8 +314,8 @@
   "boxes": [
    {
     "seed": [
-     221,
-     313
+     176,
+     315
     ],
     "bbox": [
      503,
@@ -274,17 +324,20 @@
      1227
     ],
     "shape": "box",
-    "en": "know that the valuable stack is where the slave-born servant Nandaka stands and loudly curses!”",
-    "conf": 92
+    "en": "7 TI know that the valuable stack is where aie slave-born servant Nandaka stands and loudly curses!”",
+    "conf": 48
    }
   ],
   "loose": [
    "sovannayo",
-   "rasi,",
+   "sovannamala",
    "-Yattha",
    "daso",
    "amajato",
-   "thito"
+   "thullani",
+   "ti!",
+   "rasi,",
+   "Nandako,"
   ]
  },
  {
@@ -307,17 +360,27 @@
      334
     ],
     "shape": "box",
-    "en": "the Bodhisatta’s advice, the son returned. When Nanda inevitably began his abuse, the heir didn’t hold back.",
-    "conf": 91
+    "en": "the Bodhisatta’s advice, the son returned. When Nanda inevitably evitably began his abuse, the heir didn’t hold back.",
+    "conf": 68
+   },
+   {
+    "seed": [
+     256,
+     142
+    ],
+    "bbox": [
+     231,
+     360,
+     1243,
+     1098
+    ],
+    "shape": "bubble",
+    "en": "Wh om are ta Ik ng to; ou you lave",
+    "conf": 77
    }
   ],
   "loose": [
-   "are",
-   "to;",
-   "alk",
-   "out",
-   "lave",
-   "you",
+   "INS",
    "ING"
   ]
  },
@@ -341,13 +404,12 @@
      1154
     ],
     "shape": "box",
-    "en": "He pulled Nanda from his literal high horse, took the spade, and dug exactly where the slave had been standing. The family treasure was unearthed.",
-    "conf": 96
+    "en": "He pulled Nanda ae) from his literal high horse, took the spade, and dug exactly where the slave had been standing. The family ily treasure was unearthed.",
+    "conf": 49
    }
   ],
   "loose": [
    "ene",
-   "alo",
    "cos"
   ]
  },

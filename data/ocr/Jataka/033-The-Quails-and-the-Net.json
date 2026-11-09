@@ -19,8 +19,8 @@
      893
     ],
     "shape": "box",
-    "en": "Quails and the Gowler Oale of and the Jataka",
-    "conf": 56
+    "en": "ohe Quails and the Gowler Oale of Cnity and Ego from the Jataka",
+    "conf": 54
    }
   ],
   "loose": []
@@ -45,11 +45,13 @@
      400
     ],
     "shape": "box",
-    "en": "the past, when Brahmadatta was king of Benares, fowler learned to imitate the note of quail. Luring thousands of birds together, he would fling his net over them, huddle them in heap, and cram them into his basket to sell. 4",
-    "conf": 78
+    "en": "imitate if the past, note when of Brahmadatta quail. Luring thousands was king of Benares, birds Benares, together, fowler he learned would fling to his net over them, huddle them in heap, and cram them into his basket to sell 4",
+    "conf": 64
    }
   ],
-  "loose": []
+  "loose": [
+   "AG,"
+  ]
  },
  {
   "img": "images/033-The-Quails-and-the-Net-03-Original.jpg",
@@ -71,8 +73,8 @@
      486
     ],
     "shape": "bubble",
-    "en": "This is making havoc among our kinsfolk. have device. When he throws the net, let each one put his head through mesh.",
-    "conf": 92
+    "en": "This fowler is making havoc among our kinsfolk. have device. When he throws the net, let each one put his head through mesh.",
+    "conf": 90
    },
    {
     "seed": [
@@ -87,7 +89,7 @@
     ],
     "shape": "bubble",
     "en": "Together, we will fly away with the net and let it down ona thorn-brake.",
-    "conf": 76
+    "conf": 78
    }
   ],
   "loose": []
@@ -128,8 +130,8 @@
   "boxes": [
    {
     "seed": [
-     116,
-     75
+     123,
+     64
     ],
     "bbox": [
      218,
@@ -138,8 +140,8 @@
      549
     ],
     "shape": "box",
-    "en": "while the fowler still came on was disentangling his net, and he went away empty-handed. On following days, the quails played the same trick. It became the regular thing for him to be engaged till sunset, returning home with nothing.",
-    "conf": 92
+    "en": "Fvening Evening came on while the fowler was still disentangling his net, and he went away empty-handed. On following days, the quails played the same trick. It became the regular thing for him to be engaged till sunset, returning home with nothing",
+    "conf": 37
    }
   ],
   "loose": []
@@ -155,7 +157,7 @@
    {
     "seed": [
      160,
-     65
+     64
     ],
     "bbox": [
      367,
@@ -165,7 +167,7 @@
     ],
     "shape": "bubble",
     "en": "Day by day you return empty-handed! suppose you've got second establishment to keep up elsewhere.",
-    "conf": 88
+    "conf": 84
    },
    {
     "seed": [
@@ -180,7 +182,7 @@
     ],
     "shape": "bubble",
     "en": "No, my dear. Those quails have come to work together now. The moment my net is over them, off they fly.",
-    "conf": 96
+    "conf": 94
    }
   ],
   "loose": []
@@ -247,8 +249,8 @@
   "boxes": [
    {
     "seed": [
-     227,
-     69
+     264,
+     66
     ],
     "bbox": [
      708,
@@ -257,8 +259,23 @@
      384
     ],
     "shape": "box",
-    "en": "Not long after, one quail, alighting on their feeding ground, trod by accident on another’s head",
-    "conf": 91
+    "en": "Not long after, one atl alighting on their feedi ng ground, trod by accident on another’s head.",
+    "conf": 37
+   },
+   {
+    "seed": [
+     119,
+     301
+    ],
+    "bbox": [
+     271,
+     850,
+     998,
+     1303
+    ],
+    "shape": "bubble",
+    "en": "Who trod on my head?!",
+    "conf": 96
    },
    {
     "seed": [
@@ -272,15 +289,12 @@
      1276
     ],
     "shape": "bubble",
-    "en": "did; but didn’t mean to. Don’t be angry",
-    "conf": 95
+    "en": "did; but didn’t mean to. Don’t be angry.",
+    "conf": 91
    }
   ],
   "loose": [
-   "SSS",
-   "Who",
-   "trod",
-   "head"
+   "SSS"
   ]
  },
  {
@@ -305,17 +319,24 @@
     "shape": "box",
     "en": "Notwithstanding the apology, the other remained angry. Continuing to answer one another, they began to swap taunts.",
     "conf": 96
+   },
+   {
+    "seed": [
+     353,
+     163
+    ],
+    "bbox": [
+     1015,
+     450,
+     1673,
+     919
+    ],
+    "shape": "bubble",
+    "en": "suppose it is you single-handed who lift up the net!",
+    "conf": 86
    }
   ],
-  "loose": [
-   "suppose",
-   "you",
-   "single-handed",
-   "who",
-   "lift",
-   "the",
-   "net!"
-  ]
+  "loose": []
  },
  {
   "img": "images/033-The-Quails-and-the-Net-10-Original.jpg",
@@ -337,12 +358,12 @@
      602
     ],
     "shape": "bubble",
-    "en": "There’s no safety with one who is quarrelsome. They will no longer lift the net, and thereby come to great destruction can stay here no longer.",
-    "conf": 63
+    "en": "There’s no safety with one who is quarrelsome. They will no longer lift the net, and thereby come to great destruction. Ican can stay here no longer.",
+    "conf": 58
    },
    {
     "seed": [
-     431,
+     502,
      370
     ],
     "bbox": [
@@ -352,8 +373,8 @@
      1332
     ],
     "shape": "box",
-    "en": "Thereupon he and his following went elsewhere",
-    "conf": 97
+    "en": "Thereupon he and his following went elsewhere.",
+    "conf": 96
    }
   ],
   "loose": []
@@ -378,8 +399,8 @@
      489
     ],
     "shape": "box",
-    "en": "Sure enough, the fowler back came few days later. Collecting them together by imitating the note of quail, he flung his net over the squabbling flock.",
-    "conf": 96
+    "en": "Sure enough, the fowler came back few days later. Collecting them together by imitating the note of quail, he flung his net over the squabbling flock",
+    "conf": 95
    }
   ],
   "loose": []
@@ -404,13 +425,13 @@
      532
     ],
     "shape": "bubble",
-    "en": "They say when you were lifting the net, the hair of your head fell off. Now’s your time; lift away!",
+    "en": "They say when you were lifting the net, the hair of your head fell off. Now’s your our time; lift away!",
     "conf": 91
    },
    {
     "seed": [
-     512,
-     94
+     519,
+     95
     ],
     "bbox": [
      1607,
@@ -419,7 +440,7 @@
      628
     ],
     "shape": "bubble",
-    "en": "When you were lifting, both your wings moulted Now’s your time; lift away!",
+    "en": "When you were lifting, both your wings moulted. Now’s your time; lift away!",
     "conf": 92
    }
   ],
@@ -447,8 +468,8 @@
      476
     ],
     "shape": "box",
-    "en": "While they each inviting the other were to lift the net, the fowler himself lifted it for them. He crammed them in heap nto his basket and bore them off home.",
-    "conf": 94
+    "en": "While they were each inviting the other to lift the net, the fowler himself lifted it for them. He crammed them in heap into his basket and bore them off home",
+    "conf": 87
    }
   ],
   "loose": []
@@ -463,18 +484,18 @@
   "boxes": [
    {
     "seed": [
-     162,
-     356
+     321,
+     75
     ],
     "bbox": [
-     350,
-     1147,
-     1084,
-     1283
+     149,
+     136,
+     1296,
+     1326
     ],
-    "shape": "box",
-    "en": "UNITY. Joyously the birds fly away, carrying the net together...",
-    "conf": 92
+    "shape": "bubble",
+    "en": "AP Ya UNITY. Joyously the birds fly away, carrying the net together",
+    "conf": 60
    },
    {
     "seed": [
@@ -488,10 +509,12 @@
      1283
     ],
     "shape": "box",
-    "en": "DIVISION. ...so that his wife’s face was wreathed with smiles.",
+    "en": "DIVISION ...so that his wife’s face was wreathed with smiles",
     "conf": 92
    }
   ],
-  "loose": []
+  "loose": [
+   "if!"
+  ]
  }
 ]
