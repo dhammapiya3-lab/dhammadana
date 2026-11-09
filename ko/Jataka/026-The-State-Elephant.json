@@ -1,0 +1,309 @@
+[
+ {
+  "img": "images/026-The-State-Elephant-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     81,
+     66
+    ],
+    "shape": "box",
+    "en": "In ancient Benares, King Brahmadatta relied on his wise minister, the Bodhisatta. The kingdom’s pride was Mahilamukha, the state elephant—a creature of perfect virtue who never harmed soul.",
+    "ko": "옛 바라나시의 브라흐마닷따 왕은 지혜로운 대신인 보살에게 의지했습니다. 나라의 자랑은 왕실 코끼리 마힐라무카였습니다. 더없이 순하여 누구도 해친 적이 없었습니다."
+   },
+   {
+    "seed": [
+     398,
+     15
+    ],
+    "shape": "box",
+    "en": "The State El an",
+    "ko": "왕실 코끼리"
+   }
+  ]
+ },
+ {
+  "img": "images/026-The-State-Elephant-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     154,
+     56
+    ],
+    "shape": "box",
+    "en": "By night, violent burglars gathered near the elephant’s stall to plan their crimes.",
+    "ko": "밤마다 사나운 도둑들이 코끼리 우리 근처에 모여 나쁜 일을 꾸몄습니다."
+   },
+   {
+    "seed": [
+     284,
+     232
+    ],
+    "shape": "bubble",
+    "en": "burglar must discard all goodness. Show no pity. Use Lavo oa cruelty and evs violence to take what is yours/ 3",
+    "ko": "도둑은 착한 마음을 모두 버려야 한다. 동정하지 마라. 잔인하고 거칠게 굴어 원하는 것을 빼앗아라!"
+   }
+  ]
+ },
+ {
+  "img": "images/026-The-State-Elephant-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     149,
+     341
+    ],
+    "shape": "box",
+    "en": "Hearing their vicious counsel night after night, the innocent oS 5 elephant assumed he was being instructed. The environment rewrote his nature. ure. He resolved to become creature of pure violence.",
+    "ko": "밤마다 그 나쁜 말을 들은 순진한 코끼리는 자기에게 가르치는 말인 줄 알았습니다. 둘레의 말이 그의 성품을 바꾸었고, 그는 사나운 짐승이 되기로 마음먹었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/026-The-State-Elephant-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     147,
+     56
+    ],
+    "shape": "box",
+    "en": "The transformation was absolute. When his loyal mahout arrived at dawn, Mahilamukha ilamukha seized him and dashed him to the ground. Anyone who approached met the same violent end.",
+    "ko": "완전히 달라졌습니다. 새벽에 늘 돌보던 코끼리 몰이꾼이 오자, 마힐라무카는 그를 붙잡아 땅에 내동댕이쳤습니다. 다가오는 사람은 모두 같은 일을 당했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/026-The-State-Elephant-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     148,
+     56
+    ],
+    "shape": "box",
+    "en": "News of the madness reached palace.",
+    "ko": "코끼리가 미쳤다는 소식이 궁에 전해졌습니다."
+   },
+   {
+    "seed": [
+     443,
+     55
+    ],
+    "shape": "bubble",
+    "en": "Mahilamukha is killing everyone in sight! Go, wise minister. Find out what has perverted rverted our greatest beast.",
+    "ko": "마힐라무카가 보이는 사람마다 죽이고 있다! 지혜로운 대신이여, 가서 무엇이 우리 코끼리를 저렇게 만들었는지 알아 오라."
+   }
+  ]
+ },
+ {
+  "img": "images/026-The-State-Elephant-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     86,
+     328
+    ],
+    "ko": "보살은 근본 원인을 살폈습니다. 몸에는 병이 없음을 알고, 마음에 원인이 있다고 보았습니다. 코끼리가 귀로 들은 말에 물든 것이었습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/026-The-State-Elephant-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     130,
+     51
+    ],
+    "shape": "box",
+    "en": "The keepers confirmed the hypothesis.",
+    "ko": "사육사들이 그 짐작이 맞다고 확인해 주었습니다."
+   },
+   {
+    "seed": [
+     523,
+     279
+    ],
+    "shape": "bubble",
+    "en": "The beast is not sick in body. His mind has been perverted by overhearing the dark words of thieves",
+    "ko": "이 코끼리는 몸이 아픈 것이 아닙니다. 도둑들의 나쁜 말을 엿듣고 마음이 비뚤어진 것입니다."
+   }
+  ]
+ },
+ {
+  "img": "images/026-The-State-Elephant-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     116,
+     51
+    ],
+    "shape": "box",
+    "en": "To cure the corruption, the Bodhisatta prescribed an antidote of equal and opposite force.",
+    "ko": "그 물듦을 고치려고 보살은 똑같이 강한, 정반대의 약을 처방했습니다."
+   },
+   {
+    "seed": [
+     391,
+     258
+    ],
+    "shape": "bubble",
+    "en": "Order good men, sages and brahmins, to sit in his stall tonight and speak only of goodness.",
+    "ko": "오늘 밤 덕 있는 사람들, 현자와 바라문들을 우리에 앉히고 좋은 말만 하게 하십시오."
+   }
+  ]
+ },
+ {
+  "img": "images/026-The-State-Elephant-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     152,
+     59
+    ],
+    "shape": "box",
+    "en": "|The sages took thelr seate near the violent beast.",
+    "ko": "현자들이 사나운 코끼리 곁에 자리를 잡았습니다."
+   },
+   {
+    "seed": [
+     271,
+     128
+    ],
+    "shape": "bubble",
+    "en": "Neither maltreat nor kill. The good must always be long-suffering, loving, and merciful.",
+    "ko": "괴롭히지도 죽이지도 마라. 선한 이는 언제나 참을성 있고 자애롭고 자비로워야 한다."
+   }
+  ]
+ },
+ {
+  "img": "images/026-The-State-Elephant-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     114,
+     59
+    ],
+    "shape": "box",
+    "en": "Just as before, the elephant internalized his environment. Believing this to be his new instruction, he shed his cruelty and embraced peace.",
+    "ko": "이번에도 코끼리는 들은 말을 그대로 받아들였습니다. 그것이 새 가르침이라 믿고 잔인함을 버리고 평화를 품었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/026-The-State-Elephant-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     168,
+     59
+    ],
+    "shape": "box",
+    "en": "The Mec hanics of Influence: Behavior is the output of the data we consume. Thieves Cruelty Murder Sages Mercy Peace",
+    "ko": "영향의 원리: 행동은 우리가 받아들인 것에서 나온다.\n도둑 — 잔인함 — 살생   /   현자 — 자비 — 평화",
+    "align": "center"
+   },
+   {
+    "rect": [
+     258,
+     110,
+     360,
+     152
+    ],
+    "ko": "들은 것\n(말)",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     378,
+     110,
+     498,
+     152
+    ],
+    "ko": "받아들임\n(믿음)",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     505,
+     110,
+     612,
+     152
+    ],
+    "ko": "나온 것\n(행동)",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     155,
+     180,
+     240,
+     232
+    ],
+    "ko": "도둑",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     155,
+     280,
+     240,
+     330
+    ],
+    "ko": "현자",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/026-The-State-Elephant-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     223,
+     62
+    ],
+    "shape": "box",
+    "en": "Puranacorana’ vaco nisamma, Mahilamukho pothayam-anvacari. Considering the thieves’ words, he lashed out. Considering the words of the restrained, the elephant was established in all virtues.",
+    "ko": "뿌라나쪼라나 와쪼 니삼마, 마힐라무코 뽀타얌 안와짜리.\n도둑들의 말을 듣고 코끼리는 사람을 해쳤고, 절제하는 이들의 말을 듣고 모든 덕에 굳게 섰다."
+   }
+  ]
+ },
+ {
+  "img": "images/026-The-State-Elephant-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     138,
+     59
+    ],
+    "shape": "box",
+    "en": "The kingdom was safe. Through wisdom and observation, the Bodhisatta earned great honor.",
+    "ko": "나라는 안전해졌습니다. 지혜와 살핌으로 보살은 큰 영예를 얻었습니다."
+   },
+   {
+    "seed": [
+     546,
+     111
+    ],
+    "shape": "bubble",
+    "en": "He can read the mind even of an animal!",
+    "ko": "짐승의 마음까지 읽어 내는구나!"
+   }
+  ]
+ }
+]

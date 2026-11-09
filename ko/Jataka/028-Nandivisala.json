@@ -1,0 +1,272 @@
+[
+ {
+  "img": "images/028-Nandivisala-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     332,
+     202
+    ],
+    "shape": "box",
+    "en": "He treated the creature like his own child, raising him with great pains on rice and rice-gruel.",
+    "ko": "바라문은 그 송아지를 친자식처럼 아끼며 밥과 죽을 먹여 정성껏 길렀습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/028-Nandivisala-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     148,
+     79
+    ],
+    "shape": "bubble",
+    "en": "All Jambudipa cannot show bull with my strength. will repay his nurture.",
+    "ko": "잠부디빠 어디에도 나만큼 힘센 황소는 없다. 길러 주신 은혜를 갚아야지."
+   },
+   {
+    "seed": [
+     354,
+     73
+    ],
+    "shape": "bubble",
+    "en": "Go 0 to merchant. Wager thousand pieces that can draw hundred loaded carts!",
+    "ko": "상인에게 가서, 내가 짐 실은 수레 백 대를 끌 수 있다고 천 냥을 거십시오!"
+   }
+  ]
+ },
+ {
+  "img": "images/028-Nandivisala-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     95,
+     64
+    ],
+    "shape": "bubble",
+    "en": "have bull at home who can pull hundred loaded carts.",
+    "ko": "우리 집에 짐 실은 수레 백 대를 끄는 황소가 있다오."
+   },
+   {
+    "seed": [
+     208,
+     271
+    ],
+    "shape": "bubble",
+    "en": "Make it wager.",
+    "ko": "그럼 내기합시다."
+   },
+   {
+    "seed": [
+     505,
+     363
+    ],
+    "shape": "box",
+    "en": "And so, he staked thousand pices. pieces",
+    "ko": "그렇게 그는 천 냥을 걸었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/028-Nandivisala-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     305,
+     71
+    ],
+    "shape": "box",
+    "en": "One hundred carts. Loaded with sand gravel, and stones.",
+    "ko": "수레 백 대. 모래와 자갈과 돌을 실었습니다."
+   },
+   {
+    "rect": [
+     240,
+     318,
+     305,
+     338
+    ],
+    "ko": "끌채",
+    "align": "center",
+    "shape": "box",
+    "em": 11,
+    "manual": true
+   },
+   {
+    "rect": [
+     364,
+     318,
+     420,
+     338
+    ],
+    "ko": "굴대",
+    "align": "center",
+    "shape": "box",
+    "em": 11,
+    "manual": true
+   },
+   {
+    "rect": [
+     408,
+     350,
+     492,
+     370
+    ],
+    "ko": "향 뿌린 밥",
+    "align": "center",
+    "shape": "box",
+    "em": 11,
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/028-Nandivisala-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     535,
+     92
+    ],
+    "shape": "bubble",
+    "en": "Now then, Vv you 2 rascal! Pull them along, you rascal!",
+    "ko": "자, 이 못된 놈아!\n끌어라, 이 못된 놈아!"
+   }
+  ]
+ },
+ {
+  "img": "images/028-Nandivisala-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     539,
+     98
+    ],
+    "shape": "bubble",
+    "en": "not jo} the Vv rascal wn he calls me.",
+    "ko": "나는 저분이 부르는 그런 못된 놈이 아니야."
+   },
+   {
+    "seed": [
+     339,
+     389
+    ],
+    "shape": "box",
+    "en": "He budged not an atl",
+    "ko": "황소는 꿈쩍도 하지 않았습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/028-Nandivisala-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     114,
+     371
+    ],
+    "shape": "box",
+    "en": "The merchant made him pay over the thousand pieces. ad",
+    "ko": "상인은 천 냥을 받아 갔습니다."
+   },
+   {
+    "seed": [
+     491,
+     362
+    ],
+    "shape": "box",
+    "en": "His “His money gone, the brahmin lay be. down in an agony of grief.",
+    "ko": "돈을 잃은 바라문은 괴로움에 몸져누웠습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/028-Nandivisala-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     287,
+     62
+    ],
+    "shape": "bubble",
+    "en": "Have ever broken pot, squeezed against anyone, or made messes?",
+    "ko": "제가 항아리를 깨거나, 누구를 들이받거나, 어지럽힌 적이 있습니까?"
+   },
+   {
+    "seed": [
+     154,
+     275
+    ],
+    "shape": "bubble",
+    "en": "Never, my child.",
+    "ko": "한 번도 없었지, 얘야."
+   },
+   {
+    "seed": [
+     573,
+     278
+    ],
+    "shape": "bubble",
+    "en": "Then wh call me rascal? It’s you who are to blame.",
+    "ko": "그런데 왜 저를 못된 놈이라 부르셨나요? 잘못은 주인님께 있습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/028-Nandivisala-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     456,
+     69
+    ],
+    "shape": "bubble",
+    "en": "Go and bet him two thousand this time. Only remember not to call me rascal again.",
+    "ko": "이번에는 이천 냥을 거십시오. 다만 다시는 저를 못된 놈이라 부르지 마십시오."
+   }
+  ]
+ },
+ {
+  "img": "images/028-Nandivisala-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     520,
+     80
+    ],
+    "shape": "bubble",
+    "en": "Now then, my fine fellow! Pull them along, my fine fellow!",
+    "ko": "자, 착하구나!\n끌어라, 착하구나!"
+   }
+  ]
+ },
+ {
+  "img": "images/028-Nandivisala-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     192,
+     391
+    ],
+    "shape": "box",
+    "en": "With single pull, he tugged along the whole string of hundred carts.",
+    "ko": "황소는 단번에 수레 백 대를 줄줄이 끌어당겼습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/028-Nandivisala-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     213,
+     384
+    ],
+    "shape": "box",
+    "en": "The merchant paid the two thousand. Other folks gave large sums too. Thus did the ely gain greatly.",
+    "ko": "상인은 이천 냥을 내주었습니다. 구경하던 사람들도 큰돈을 주었습니다. 이렇게 바라문은 큰 이익을 얻었습니다."
+   }
+  ]
+ }
+]

@@ -1,0 +1,223 @@
+[
+ {
+  "img": "images/027-Elephant-and-Dog-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     130,
+     62
+    ],
+    "shape": "box",
+    "en": "In the days when King Brahmadate Brahmadatta ruled led Benares, stray dog haunted the royal stables. Drawn by hunger, he ate the sweet rice that fell from the state elephant’s mouth.",
+    "ko": "브라흐마닷따 왕이 바라나시를 다스리던 때, 떠돌이 개 한 마리가 왕실 마구간을 맴돌았습니다. 배가 고팠던 개는 왕실 코끼리 입에서 떨어지는 달콤한 밥을 먹었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/027-Elephant-and-Dog-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     515,
+     342
+    ],
+    "shape": "box",
+    "en": "grew inseparable. The elephant Qo refused to eat without his companion. The dog disported himself, swinging joyfully back and forth on the mighty elephant's trunk.",
+    "ko": "둘은 떨어질 수 없는 사이가 되었습니다. 코끼리는 개가 없으면 먹지 않았고, 개는 큰 코끼리의 코에 매달려 신나게 그네를 탔습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/027-Elephant-and-Dog-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     349,
+     211
+    ],
+    "shape": "box",
+    "en": "Tragedy struck when passing villager, charmed by the dog, bought him from the mahout. The dog was dragged away to an unknown home.",
+    "ko": "그런데 슬픈 일이 생겼습니다. 지나가던 마을 사람이 개를 마음에 들어 해 코끼리 몰이꾼에게서 샀습니다. 개는 낯선 집으로 끌려갔습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/027-Elephant-and-Dog-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     511,
+     81
+    ],
+    "shape": "box",
+    "en": "his is friend, the great elephant fell into dee his despair. He refused his food, ignored is water, and turned away from his bath.",
+    "ko": "벗을 잃은 큰 코끼리는 깊은 슬픔에 빠졌습니다. 먹이도 물도 마다하고 목욕도 하지 않았습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/027-Elephant-and-Dog-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     338,
+     75
+    ],
+    "shape": "bubble",
+    "en": "My state elephant a2 wastes oo away. Go, Minister. oO Find out what plagues him.",
+    "ko": "내 코끼리가 야위어 가는구나. 대신이여, 가서 무엇이 그를 괴롭히는지 알아 오라."
+   },
+   {
+    "seed": [
+     439,
+     368
+    ],
+    "shape": "box",
+    "en": "His majesty dispatched the Bodhisatta hisatta to investigate ate,",
+    "ko": "왕은 보살을 보내 살펴보게 했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/027-Elephant-and-Dog-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     475,
+     74
+    ],
+    "shape": "bubble",
+    "en": "He has no bodily ailment. This is sickness of the heart. He is sorrowing at the loss of friend.",
+    "ko": "몸에는 아무 병이 없다. 마음의 병이다. 벗을 잃고 슬퍼하는 것이다."
+   }
+  ]
+ },
+ {
+  "img": "images/027-Elephant-and-Dog-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     166,
+     69
+    ],
+    "shape": "bubble",
+    "en": "Has he become friends with anyone?",
+    "ko": "이 코끼리가 누구와 친하게 지냈는가?"
+   },
+   {
+    "seed": [
+     364,
+     76
+    ],
+    "shape": "bubble",
+    "en": "Yes, Yes, my lord. dog. But man took it away know not where.",
+    "ko": "예, 나리. 개 한 마리와요. 그런데 어떤 사람이 데려갔는데 어디로 갔는지 모릅니다."
+   }
+  ]
+ },
+ {
+  "img": "images/027-Elephant-and-Dog-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     410,
+     72
+    ],
+    "shape": "bubble",
+    "en": "There is nothing physically the matter with the elephant, sire He was very friendly with dog It is broken heart that makes him refuse to eat",
+    "ko": "대왕이시여, 코끼리는 몸에 아무 탈이 없습니다. 개 한 마리와 아주 친했는데, 마음이 아파서 먹지 않는 것입니다."
+   }
+  ]
+ },
+ {
+  "img": "images/027-Elephant-and-Dog-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     208,
+     95,
+     592,
+     345
+    ],
+    "align": "center",
+    "ko": "날랑 까발랑 빠다따웨,\n나 짜 삔당, 나 꾸세, 나 강시뚱,\n만냐미 아빈하닷사나,\n나고 스네함 아까시 꾹꾸레 띠.\n\n한 입 먹이도, 밥도, 풀도 넉넉지 않네.\n날마다 보며 지내다가\n코끼리는 개에게 깊은 정이 들었네.",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/027-Elephant-and-Dog-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     472,
+     68
+    ],
+    "shape": "bubble",
+    "en": "Hear ye! ye! harbors the “eke loved by the state ephant shall face severe penalty!",
+    "ko": "들으시오!\n왕실 코끼리가 아끼는 개를 숨기는 자는 큰 벌을 받으리라!"
+   },
+   {
+    "seed": [
+     533,
+     347
+    ],
+    "shape": "box",
+    "en": "The King acted swiftly on the sage’s advice.",
+    "ko": "왕은 현자의 조언대로 서둘러 움직였습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/027-Elephant-and-Dog-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     104,
+     57
+    ],
+    "shape": "box",
+    "en": "Hearing the royal proclamation, the terrified villager promptly let the dog loose. Away ran the dog at once, making straight path back to the palace.",
+    "ko": "왕의 포고를 들은 마을 사람은 겁이 나서 곧바로 개를 풀어 주었습니다. 개는 그 길로 곧장 궁으로 달려갔습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/027-Elephant-and-Dog-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     142,
+     387
+    ],
+    "shape": "box",
+    "en": "The elephant took the up in his trunk, placed him head, and wept",
+    "ko": "코끼리는 개를 코로 들어 올려 머리 위에 올려놓고 눈물을 흘렸습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/027-Elephant-and-Dog-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     373,
+     47
+    ],
+    "shape": "bubble",
+    "en": "Even the minds of animals are known to im.",
+    "ko": "짐승의 마음까지도 이 사람은 아는구나."
+   },
+   {
+    "seed": [
+     130,
+     388
+    ],
+    "shape": "box",
+    "en": "The King loaded the Bodhisatta with honours, recognizing wisdom that sees into all hearts.",
+    "ko": "왕은 모든 마음을 꿰뚫어 보는 지혜를 알아보고 보살에게 큰 상을 내렸습니다."
+   }
+  ]
+ }
+]
