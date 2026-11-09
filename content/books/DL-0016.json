@@ -50,10 +50,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "pdf/DL-0016/DL-0016_초판.pdf"
+        "url": "pdf/DL-0016/DL-0016_초판.pdf",
+        "site": "",
+        "created": ""
       },
       "pdf_print": {
         "mode": "none",
@@ -74,7 +74,14 @@
         "created": ""
       },
       "reader": true,
-      "sources": [],
+      "sources": [
+        {
+          "file": "pdf",
+          "url": "https://cafe.naver.com/withthebuddha/1041",
+          "checked": "2026년 11월 9일",
+          "archive": ""
+        }
+      ],
       "collection": "사람과나무 출판사",
       "collected": "2026년 5월 20일",
       "permission_status": "confirmed",
