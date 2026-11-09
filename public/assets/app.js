@@ -1343,7 +1343,8 @@ function speak(fromK = 0, firstText = null) {
     if (R.ttsSkip && R.ttsSkip.n === p.n && R.ttsSkip.k === k) { R.ttsSkip = null; k++; next(); return; }  // 앞 쪽 끝에서 이미 이어 읽은 문단
     { // 장이 시작하는 곳: 장 제목을 먼저 읽고, 본문의 같은 제목 문단은 건너뜀
       const cs = chapters(), ci = chapterOf(R.i + 1), c = cs[ci];
-      if (c && c.title && p.n === c.from && k === (c.k0 || 0) && R.ttsTitled !== ci + ':' + R.id) {
+      const atStart = c && (p.n === c.from ? k === (c.k0 || 0) : k === sentences.findIndex(x => x.trim()) && R.pages.slice(c.from - 1, R.i).every(q => !paras(q.text).some(x => x.trim())));  // 장 첫 쪽이 비어 있으면 다음 쪽 첫 문단이 시작
+      if (c && c.title && R.ttsTitled !== ci + ':' + R.id && (atStart || isChDup(sentences[k], p.n, c, k))) {
         R.ttsTitled = ci + ':' + R.id; R.ttsPos = { i: R.i, k };
         const tt = sayable(c.title.trim().replace(/^([IVXⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]+)\.\s*/, (m, r) => { const v = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10, 'Ⅰ': 1, 'Ⅱ': 2, 'Ⅲ': 3, 'Ⅳ': 4, 'Ⅴ': 5, 'Ⅵ': 6, 'Ⅶ': 7, 'Ⅷ': 8, 'Ⅸ': 9, 'Ⅹ': 10 }[r]; return v ? v + '. ' : m; }), o, true);  // 로마 숫자는 소리로 '3.'
         if (tt) { speakSegs(tt, o, pv, () => { if (!R || !R.speaking) return; setTimeout(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); }); return; }
