@@ -317,10 +317,10 @@ const pubLine = b => { const ps = pubsOf(b); if (!ps.length) return '';
   if (ps.length === 1) return `${ps[0].name} 출간`;
   return ps.map(x => x.kinds.includes('종이책') ? `${x.name} 출간` : `전자책 ${x.name}`).join(' · '); };
 
-// 스승 페이지 책 목록 제목: 경전만 있으면 'OO 스님이 옮긴 책', 번역서만 있으면 'OO의 가르침을 옮긴 책', 우리말로 쓴 책이 있으면 'OO의 가르침을 담은 책'
+// 스승 페이지 책 목록 제목: 경전만 있으면 'OO 스님이 엮은 책', 번역서만 있으면 'OO의 가르침을 옮긴 책', 우리말로 쓴 책이 있으면 'OO의 가르침을 담은 책'
 const josaIGa = w => { const c = String(w).trim().slice(-1).charCodeAt(0); return c >= 0xAC00 && c <= 0xD7A3 && (c - 0xAC00) % 28 ? '이' : '가'; };
 function teacherBooksHead(t, list) {
-  if (list.length && list.every(x => x.book_type === '경전')) return `${t.name}${josaIGa(t.name)} 옮긴 책 ${list.length}권`;
+  if (list.length && list.every(x => x.book_type === '경전')) return `${t.name}${josaIGa(t.name)} 엮은 책 ${list.length}권`;
   const trans = list.every(x => String(x.translator || '').trim() || (x.original_language && x.original_language !== '한국어'));
   return `${t.name}의 가르침을 ${trans ? '옮긴' : '담은'} 책 ${list.length}권`;
 }
