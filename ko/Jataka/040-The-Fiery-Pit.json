@@ -1,0 +1,343 @@
+[
+ {
+  "img": "images/040-The-Fiery-Pit-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     245,
+     62,
+     555,
+     158
+    ],
+    "dark": true,
+    "manual": true,
+    "shape": "box",
+    "align": "center",
+    "ko": "불의 시험\n흔들림 없는 결심 이야기\n바라나시의 자따까에서",
+    "em": 24
+   }
+  ]
+ },
+ {
+  "img": "images/040-The-Fiery-Pit-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     33,
+     42
+    ],
+    "shape": "box",
+    "en": "THE LUXURIES OF YOUTH",
+    "ko": "젊은 날의 호사"
+   },
+   {
+    "seed": [
+     280,
+     41
+    ],
+    "shape": "box",
+    "en": "THE SIX GRAND ALMS HALLS",
+    "ko": "여섯 곳의 큰 보시당"
+   },
+   {
+    "seed": [
+     75,
+     381
+    ],
+    "shape": "box",
+    "en": "In ancient Benares, the Bodhisatta was the Lord High Treasurer. Raised in unimaginable luxury, he perfected himself in virtue at sixteen, building six grand alms halls and strictly keeping the Uposatha duties.",
+    "ko": "옛 바라나시에서 보살은 재무관이었습니다. 더없이 호화롭게 자랐지만 열여섯 살에 덕을 갖추고, 큰 보시당 여섯 곳을 세웠으며 포살을 엄격히 지켰습니다."
+   },
+   {
+    "seed": [
+     535,
+     37
+    ],
+    "ko": "포살 지키기",
+    "align": "left",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/040-The-Fiery-Pit-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     34,
+     57
+    ],
+    "shape": "box",
+    "en": "Rising from seven-day trance,",
+    "ko": "이레 동안의 선정에서 일어나,"
+   },
+   {
+    "seed": [
+     59,
+     376
+    ],
+    "shape": "box",
+    "en": "Washing with water from Lake Anotatta and dressing at Manosila,",
+    "ko": "아노땃따 호수의 물로 씻고 마노실라 고원에서 가사를 입은 뒤,"
+   },
+   {
+    "seed": [
+     500,
+     376
+    ],
+    "shape": "box",
+    "en": "he called bowl into being through Supernormal Powers and passed through the air.",
+    "ko": "신통력으로 발우를 지어내 허공을 건너왔습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/040-The-Fiery-Pit-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     131,
+     54
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta the hovering sage arrive his gates.",
+    "ko": "보살은 허공에 떠 있는 성자가 문 앞에 이른 것을 보았습니다."
+   },
+   {
+    "seed": [
+     630,
+     81
+    ],
+    "shape": "bubble",
+    "en": "What am to do, my lord?",
+    "ko": "어떻게 할까요, 나리?"
+   },
+   {
+    "seed": [
+     572,
+     343
+    ],
+    "shape": "bubble",
+    "en": "“Bring ing his reverence’s bowl,” the Bodhisatta commanded without hesitation.",
+    "ko": "“스님의 발우를 받아 오너라.” 보살은 망설임 없이 일렀습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/040-The-Fiery-Pit-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     52,
+     282,
+     80
+    ],
+    "ko": "악한 마라가 크게 노하여 일어났습니다.",
+    "align": "center",
+    "shape": "box",
+    "dark": true,
+    "manual": true
+   },
+   {
+    "rect": [
+     90,
+     262,
+     322,
+     356
+    ],
+    "ko": "벽지불이 음식을 들지 못한 지 이레째다. 오늘도 못 먹으면 죽을 것이다. 그를 없애고 이 재무관의 보시를 막으리라!",
+    "align": "center",
+    "shape": "box",
+    "dark": true,
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/040-The-Fiery-Pit-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     49,
+     48
+    ],
+    "shape": "box",
+    "en": "With thought, Mara carved an eighty-cubit abyss into the mansion floor—a roaring pit of blazing Acacia-charcoal, aflame like the great hell of Avici. Mara took his stand in mid-air.",
+    "ko": "마라는 생각 하나로 저택 바닥에 깊이 80완척의 구덩이를 팠습니다. 큰 아비지옥처럼 아카시아 숯불이 활활 타오르는 구덩이였습니다. 마라는 허공에 버티고 섰습니다."
+   },
+   {
+    "rect": [
+     596,
+     338,
+     700,
+     358
+    ],
+    "ko": "깊이 80완척",
+    "align": "left",
+    "dark": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/040-The-Fiery-Pit-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     49,
+     48
+    ],
+    "shape": "box",
+    "en": "The attendants approached the abyss and recoiled. Panic-stricken by the blazing heat of the red-hot embers, they abandoned the alms and ran away as fast as their legs would carry them.",
+    "ko": "하인들이 구덩이로 다가갔다가 놀라 물러섰습니다. 시뻘건 숯불의 열기에 질린 그들은 음식을 내던지고 걸음아 날 살려라 달아났습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/040-The-Fiery-Pit-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     392,
+     86,
+     534,
+     130
+    ],
+    "ko": "“그대는 누구인가?”\n장자가 물었습니다.",
+    "align": "center",
+    "shape": "box",
+    "dark": true,
+    "manual": true
+   },
+   {
+    "rect": [
+     302,
+     152,
+     404,
+     180
+    ],
+    "ko": "“나는 마라다.”",
+    "align": "center",
+    "shape": "box",
+    "dark": true,
+    "manual": true
+   },
+   {
+    "rect": [
+     370,
+     224,
+     560,
+     284
+    ],
+    "ko": "“내 보시를 막고 이 벽지불을 해치려고 이 구덩이를 만들었는가?”",
+    "align": "center",
+    "shape": "box",
+    "dark": true,
+    "manual": true
+   },
+   {
+    "rect": [
+     306,
+     320,
+     406,
+     348
+    ],
+    "ko": "“그렇다.”",
+    "align": "center",
+    "shape": "box",
+    "dark": true,
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/040-The-Fiery-Pit-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     113,
+     362
+    ],
+    "shape": "box",
+    "en": "will not permit you to do either. have yet to learn that can be shaken by hundred, or thousand Maras. Today we will see whose might is greater.”",
+    "ko": "“나는 그 어느 것도 허락하지 않으리라. 백 명, 천 명의 마라라 해도 나를 흔들 수는 없다. 오늘 누구의 힘이 더 큰지 보자.”"
+   }
+  ]
+ },
+ {
+  "img": "images/040-The-Fiery-Pit-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     95,
+     132,
+     560,
+     247
+    ],
+    "dark": true,
+    "manual": true,
+    "shape": "box",
+    "align": "left",
+    "ko": "까망 빠따미 니라양 웃담빠도 아왕시로,\n나나리양 까릿사미, 한다 삔당 빠띡가하 띠.",
+    "em": 22
+   },
+   {
+    "rect": [
+     95,
+     252,
+     520,
+     302
+    ],
+    "dark": true,
+    "manual": true,
+    "shape": "box",
+    "align": "left",
+    "ko": "기꺼이 지옥에 거꾸로 떨어질지언정 천한 짓은 하지 않으리라. 자, 이 밥을 받으십시오."
+   },
+   {
+    "rect": [
+     555,
+     138,
+     585,
+     168
+    ],
+    "dark": true,
+    "manual": true,
+    "shape": "box",
+    "ko": " "
+   }
+  ]
+ },
+ {
+  "img": "images/040-The-Fiery-Pit-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     193,
+     353
+    ],
+    "shape": "box",
+    "en": "Grasping Qy the bowl 3 of dainty food, lo} the Bodhisatta strode with undaunted resolution right onto the surface of the terrifying pit of fire",
+    "ko": "보살은 맛있는 음식을 담은 발우를 들고 흔들림 없는 결심으로 무시무시한 불구덩이 위로 걸어 들어갔습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/040-The-Fiery-Pit-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     584,
+     54
+    ],
+    "shape": "box",
+    "en": "Instantly, peerless lotus erupted through all eighty cubits of the abyss, receiving the feet of the Great Being. shower of pollen dusted his whole body with gold.",
+    "ko": "그 순간, 더없이 아름다운 연꽃 한 송이가 80완척 깊이의 구덩이를 뚫고 솟아올라 위대한 존재의 발을 받쳤습니다. 꽃가루가 쏟아져 온몸을 금빛으로 물들였습니다."
+   }
+  ]
+ }
+]

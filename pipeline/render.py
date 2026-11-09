@@ -97,7 +97,11 @@ def render(src_path, boxes):
         if len(xx):  # 상자 둘레만 잘라서 메움 (그림 전체를 메우면 느림)
             m_ = 24
             a0, b0, a1, b1 = max(0, xx.min() - m_), max(0, yy.min() - m_), min(W, xx.max() + m_ + 1), min(H, yy.max() + m_ + 1)
-            out[b0:b1, a0:a1] = cv2.inpaint(out[b0:b1, a0:a1], mk[b0:b1, a0:a1], max(3, W // 300), cv2.INPAINT_TELEA)
+            if b.get("fill"):  # 단색 이름표: 바탕색으로 칠함 (메우기가 번지는 작은 흰 딱지)
+                col = np.median(img[(inner > 0) & (text_px == 0)], axis=0)
+                out[(cv2.dilate(mk, np.ones((3, 3), np.uint8)) > 0) & (inner > 0)] = col
+            else:
+                out[b0:b1, a0:a1] = cv2.inpaint(out[b0:b1, a0:a1], mk[b0:b1, a0:a1], max(3, W // 300), cv2.INPAINT_TELEA)
         full = inner
         # 원래 글자 크기 재기: 글자 조각들의 높이 중앙값 (대문자 높이 ≈ 글자 크기의 0.7)
         n_, lab, st, _ = cv2.connectedComponentsWithStats(text_px)

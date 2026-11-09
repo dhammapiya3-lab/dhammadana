@@ -1,0 +1,429 @@
+[
+ {
+  "img": "images/041-The-Unfortunate-Monk-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     218,
+     74
+    ],
+    "shape": "box",
+    "en": "The Karmic Ledger Toa of Mittavindaka",
+    "ko": "밋따윈다까의 업의 장부"
+   },
+   {
+    "rect": [
+     140,
+     116,
+     660,
+     132
+    ],
+    "ko": "탐욕과 그 결과, 윤회의 고리를 살펴본 이야기",
+    "align": "center",
+    "shape": "box",
+    "em": 12,
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     130,
+     395
+    ],
+    "shape": "box",
+    "en": "During the era of Kassapa Buddha, village monk grew deeply jealous. He feared visiting Arahat would permanently steal the devotion and alms of his patron.",
+    "ko": "깟사빠 부처님 시대에 한 마을 비구가 몹시 질투했습니다. 찾아온 아라한이 시주의 공경과 공양을 영영 빼앗아 갈까 두려웠던 것입니다."
+   }
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     179,
+     68
+    ],
+    "shape": "box",
+    "en": "The monk buried alms in an ember pit.",
+    "ko": "질투가 해코지를 낳았습니다.\n비구는 아라한께 올릴 좋은 공양을 숯불 구덩이에 묻어 버렸습니다."
+   },
+   {
+    "seed": [
+     542,
+     167
+    ],
+    "shape": "box",
+    "en": "Embers: Hidden completely.",
+    "ko": "숯불: 완전히 숨겨짐"
+   },
+   {
+    "seed": [
+     102,
+     347
+    ],
+    "ko": "물: 버터기름이 뜸",
+    "align": "left",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "seed": [
+     568,
+     347
+    ],
+    "ko": "땅: 까마귀가 모여듦",
+    "align": "left",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     246,
+     34
+    ],
+    "shape": "box",
+    "en": "The karmic cost of greedy sabotage",
+    "ko": "탐욕스러운 해코지의 업보:"
+   },
+   {
+    "seed": [
+     553,
+     100
+    ],
+    "shape": "box",
+    "en": "Hell: Tormented for hundreds of thousands of years.",
+    "ko": "• 지옥: 수십만 년 동안 고통받음"
+   },
+   {
+    "seed": [
+     599,
+     215
+    ],
+    "shape": "box",
+    "en": "Yakkha: 500 births, starving save for one meal of offal.",
+    "ko": "• 약카: 500생 동안 굶주리며 내장 한 끼만 먹음"
+   },
+   {
+    "seed": [
+     553,
+     331
+    ],
+    "shape": "box",
+    "en": "Dog: 500 births, starving save for one meal of vomit.",
+    "ko": "• 개: 500생 동안 굶주리며 토사물 한 끼만 먹음"
+   }
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     173,
+     362
+    ],
+    "shape": "box",
+    "en": "Finally reborn human in Kasi beggar family, family, Mittavindaka brought them total ruin. Beaten and driven out, he became wandering curse.",
+    "ko": "마침내 까시국의 거지 집안에 사람으로 태어난 밋따윈다까는 집안을 완전히 망하게 했습니다. 매 맞고 쫓겨난 그는 떠도는 저주가 되었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     153,
+     364
+    ],
+    "shape": "box",
+    "en": "In Benares, the Bodhisatta—a renowned, ordinary teacher—took him in. But Mittavindaka was fierce, intractable, and rejected his master’s reproofs. He ran away.",
+    "ko": "바라나시에서 이름난 스승이었던 보살이 그를 받아 주었습니다. 그러나 밋따윈다까는 사납고 고집 세서 스승의 꾸중을 듣지 않았고, 결국 달아났습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     211,
+     58
+    ],
+    "shape": "box",
+    "en": "contagion of misfortune. At border village, ruin followed",
+    "ko": "그는 불운을 옮기는 사람이 되었습니다. 국경 마을에 가자 재앙이 뒤따랐습니다."
+   },
+   {
+    "rect": [
+     412,
+     91,
+     562,
+     110
+    ],
+    "ko": "• 불이 일곱 번 집을 태움",
+    "align": "left",
+    "shape": "box",
+    "em": 13,
+    "manual": true,
+    "fill": true
+   },
+   {
+    "seed": [
+     67,
+     243
+    ],
+    "ko": "• 물탱크 일곱 개가 말라 버림",
+    "align": "left",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "seed": [
+     288,
+     405
+    ],
+    "ko": "다시 쫓겨났습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     157,
+     56
+    ],
+    "shape": "box",
+    "en": "ship in mid-ocean, The math of karma, arma, not chance: seven consecutive times, the cursed lot fell to Mittavindaka.",
+    "ko": "배가 바다 한가운데서 멈춰 섰습니다. 우연이 아니라 업의 셈법이었습니다. 일곱 번 연달아 불운의 제비가 밋따윈다까에게 떨어졌습니다."
+   },
+   {
+    "seed": [
+     517,
+     371
+    ],
+    "shape": "box",
+    "en": "They cast him overboard on beggar.",
+    "ko": "사람들은 그를 뗏목에 태워 바다에 띄워 보냈습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     602,
+     58
+    ],
+    "shape": "box",
+    "en": "Past obedience to Precepts under ler np Kassapa Buddha ripened pen as temporary merit viman",
+    "ko": "깟사빠 부처님 아래서 계를 지킨 지난 공덕이 잠시 동안의 복(위마나 아귀)으로 익었습니다."
+   },
+   {
+    "seed": [
+     453,
+     102
+    ],
+    "shape": "box",
+    "en": "Crystal 4 Devadhita 7 Days",
+    "ko": "수정 궁전\n천녀 넷\n이레"
+   },
+   {
+    "seed": [
+     458,
+     161
+    ],
+    "shape": "box",
+    "en": "Silver 8 Devadhita 7 Days",
+    "ko": "은 궁전\n천녀 여덟\n이레"
+   },
+   {
+    "seed": [
+     457,
+     245
+    ],
+    "shape": "box",
+    "en": "Jewel 16 Devadhita 7 Days aA",
+    "ko": "보석 궁전\n천녀 열여섯\n이레"
+   },
+   {
+    "seed": [
+     462,
+     326
+    ],
+    "shape": "box",
+    "en": "Gold 32 Devadhita 7 Days",
+    "ko": "황금 궁전\n천녀 서른둘\n이레"
+   },
+   {
+    "seed": [
+     294,
+     410
+    ],
+    "shape": "box",
+    "en": "Yet, as material terial wealth ealth and Devadhita exponentially multiplied, his restless greed forced him to abandon every palace in search of more.",
+    "ko": "그러나 재물과 천녀가 갑절로 늘어날수록 그칠 줄 모르는 탐욕에 그는 궁전마다 버리고 더 많은 것을 찾아 떠났습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     171,
+     385
+    ],
+    "shape": "box",
+    "en": "Ignoring the Devadhita’s warnings, he sailed to Yakkha city. Blinded by insatiable greed, he seized what he believed was mere goat for dinner.",
+    "ko": "천녀들의 경고를 무시하고 그는 약카의 도시로 갔습니다. 끝없는 탐욕에 눈먼 그는 저녁거리 염소인 줄 알고 무언가를 붙잡았습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     292,
+     289
+    ],
+    "shape": "box",
+    "en": "It was Yakkhini in disguise. By her Yakkha- nature, she hurled him across the ocean, dropping him violently into the dry moat of Benares.",
+    "ko": "그것은 염소로 변한 약키니였습니다. 약카의 성질대로 약키니는 그를 바다 건너로 내던졌고, 그는 바라나시의 마른 해자에 거칠게 떨어졌습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     250,
+     370
+    ],
+    "shape": "box",
+    "en": "Unwilling to learn, he applied flawed logic. Seizing king’s goat, he hoped to be hurled back to the ocean palaces. Instead, royal goatherds bound him as thief.",
+    "ko": "배울 줄 모르는 그는 엉뚱한 셈을 했습니다. 왕의 염소를 붙잡으면 다시 바다 궁전으로 던져지리라 여긴 것입니다. 그러나 왕실 염소지기들이 그를 도둑으로 묶었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     253,
+     369
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta, passing by, recognized his former runaway pupil. Intervening, he claimed the thief as his own slave to save him from execution.",
+    "ko": "지나가던 보살이 달아났던 옛 제자를 알아보았습니다. 보살은 그 도둑을 자기 종이라 하여 처형을 면하게 했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-14-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     228,
+     20
+    ],
+    "ko": "괴로움의 해부: 지혜를 거부함",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     60,
+     365,
+     265,
+     385
+    ],
+    "ko": "1. 아라한이 있는 것을 시기함",
+    "align": "center",
+    "shape": "box",
+    "em": 12,
+    "manual": true
+   },
+   {
+    "rect": [
+     290,
+     365,
+     500,
+     385
+    ],
+    "ko": "2. 보살의 가르침에서 달아남",
+    "align": "center",
+    "shape": "box",
+    "em": 12,
+    "manual": true
+   },
+   {
+    "rect": [
+     522,
+     365,
+     742,
+     385
+    ],
+    "ko": "3. 천녀들의 경고를 무시함",
+    "align": "center",
+    "shape": "box",
+    "em": 12,
+    "manual": true
+   },
+   {
+    "seed": [
+     248,
+     405
+    ],
+    "ko": "교만은 업의 빚을 불린다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/041-The-Unfortunate-Monk-15-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     323,
+     67
+    ],
+    "shape": "bubble",
+    "en": "He who does not take the advice of one who seeks his good, grieves like Mittaka holding onto the goat’s foot.",
+    "ko": "자기를 위해 주는 이의 충고를 듣지 않는 자는 염소 발을 붙잡은 밋따까처럼 슬퍼하게 된다."
+   },
+   {
+    "seed": [
+     238,
+     401
+    ],
+    "ko": "업은 결코 어긋나지 않는 장부입니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

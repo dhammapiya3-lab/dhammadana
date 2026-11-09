@@ -1,0 +1,269 @@
+[
+ {
+  "img": "images/039-Nanda-and-the-Hoard-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     78,
+     65
+    ],
+    "shape": "box",
+    "en": "Ses In ancient Benares, an aging householder feared his young wife would squander his wealth after his death, leaving his infant son with nothing.",
+    "ko": "옛 바라나시의 늙은 가장은 자기가 죽은 뒤 젊은 아내가 재산을 탕진해 어린 아들이 빈손이 될까 걱정했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     114,
+     26
+    ],
+    "shape": "box",
+    "en": "Seeking to protect the inheritance, he led his household slave, Nanda, deep into the forest to bury the gold.",
+    "ko": "유산을 지키려고 그는 집안의 종 난다를 데리고 깊은 숲에 들어가 금을 묻었습니다."
+   },
+   {
+    "seed": [
+     594,
+     289
+    ],
+    "shape": "bubble",
+    "en": "Reveal this to my son when Iam am gone",
+    "ko": "내가 죽거든 이것을 내 아들에게 알려 주어라."
+   }
+  ]
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     67,
+     61
+    ],
+    "shape": "box",
+    "en": "The old man passed away. Years later, the son came of age, and his mother revealed the secret.",
+    "ko": "노인이 세상을 떠났습니다. 세월이 흘러 아들이 자라자 어머니가 비밀을 알려 주었습니다."
+   },
+   {
+    "seed": [
+     626,
+     94
+    ],
+    "shape": "bubble",
+    "en": "Your father buried his money with Nanda. Get it back.",
+    "ko": "네 아버지가 난다와 함께 돈을 묻어 두셨단다. 되찾아 오너라."
+   }
+  ]
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     471,
+     98
+    ],
+    "shape": "bubble",
+    "en": "Uncle, where is the treasure?",
+    "ko": "아저씨, 보물이 어디 있나요?"
+   },
+   {
+    "seed": [
+     598,
+     158
+    ],
+    "shape": "bubble",
+    "en": "In the forest, my lord.",
+    "ko": "숲속에 있습니다, 도련님."
+   }
+  ]
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     636,
+     82
+    ],
+    "shape": "bubble",
+    "en": "You servant of slave-wench’'s son! How should you have any money here?",
+    "ko": "이 종년의 자식 같은 놈아! 네까짓 게 여기 무슨 돈이 있다고?"
+   },
+   {
+    "seed": [
+     325,
+     147
+    ],
+    "shape": "bubble",
+    "en": "This way, my lord.",
+    "ko": "이쪽입니다, 도련님."
+   },
+   {
+    "seed": [
+     78,
+     64
+    ],
+    "ko": "그런데 이상한 일이 벌어졌습니다.",
+    "align": "left",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     68,
+     60
+    ],
+    "shape": "box",
+    "en": "Pretending not to hear, the heir calmly returned home. Days later, they tried again. The exact same pattern repeated.",
+    "ko": "아들은 못 들은 척하고 조용히 집으로 돌아왔습니다. 며칠 뒤 다시 가 보았지만 똑같은 일이 되풀이되었습니다."
+   },
+   {
+    "seed": [
+     78,
+     368
+    ],
+    "ko": "아들은 그 자리에서만 거만해지는 것이 수수께끼라고 생각했습니다.",
+    "align": "left",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     137,
+     73
+    ],
+    "shape": "box",
+    "en": "Seeking answers, the son visited his father’s wise friend—the Bodhisatta.",
+    "ko": "답을 찾으려고 아들은 아버지의 지혜로운 벗, 보살을 찾아갔습니다."
+   },
+   {
+    "seed": [
+     337,
+     129
+    ],
+    "shape": "bubble",
+    "en": "He means to reveal the gold, but the momen he stands there, he abuses me.",
+    "ko": "보물을 알려 주려는 것 같은데, 그 자리에만 서면 저를 욕합니다."
+   }
+  ]
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     356,
+     62
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta instantly deduced the truth: proximity to hidden wealth unconsciously inflates the ego.",
+    "ko": "보살은 곧바로 진실을 알아냈습니다. 숨은 재물 가까이 있으면 저도 모르게 교만해지는 것입니다."
+   },
+   {
+    "seed": [
+     311,
+     102
+    ],
+    "shape": "bubble",
+    "en": "The spot where Nanda stands ds to abuse you is exactly where your gold lies.",
+    "ko": "난다가 서서 너를 욕하는 바로 그 자리에 네 금이 묻혀 있다."
+   }
+  ]
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     176,
+     315
+    ],
+    "shape": "box",
+    "en": "7 TI know that the valuable stack is where aie slave-born servant Nandaka stands and loudly curses!”",
+    "ko": "“종의 자식 난다까가 서서 큰 소리로 욕하는 곳, 그곳에 보물 더미가 있음을 나는 안다!”"
+   },
+   {
+    "rect": [
+     140,
+     66,
+     672,
+     298
+    ],
+    "align": "center",
+    "em": 26,
+    "ko": "만네 소완나요 라시,\n소완나말라 짜 난다꼬,\n얏타 다소 아마자또\n티또 툴라니 갓자띠 띠!",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     256,
+     142
+    ],
+    "shape": "bubble",
+    "en": "Wh om are ta Ik ng to; ou you lave",
+    "ko": "누구한테 하는 말이냐, 이 종놈아?"
+   },
+   {
+    "rect": [
+     50,
+     50,
+     338,
+     100
+    ],
+    "align": "left",
+    "ko": "보살의 조언대로 아들은 다시 숲으로 갔습니다. 난다가 어김없이 욕을 하기 시작하자, 아들은 참지 않았습니다.",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     580,
+     142
+    ],
+    "shape": "box",
+    "en": "He pulled Nanda ae) from his literal high horse, took the spade, and dug exactly where the slave had been standing. The family ily treasure was unearthed.",
+    "ko": "아들은 높은 데서 큰소리치던 난다를 끌어내리고, 삽을 들어 종이 서 있던 바로 그 자리를 팠습니다. 집안의 보물이 나왔습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/039-Nanda-and-the-Hoard-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     52,
+     53
+    ],
+    "shape": "box",
+    "en": "The heir made Nanda carry the wealth home. Steadfast in the Bodhisatta’s wisdom, he spent his life in generosity—a master of his wealth, rather than mastered by it.",
+    "ko": "아들은 난다에게 재물을 지고 집으로 가게 했습니다. 보살의 지혜를 굳게 지킨 그는 평생 너그럽게 베풀며 살았습니다. 재물에 휘둘리지 않고 재물을 다스리는 주인이 되었습니다."
+   }
+  ]
+ }
+]
