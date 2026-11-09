@@ -145,7 +145,7 @@ async function initMembers() {
   const card = it => `<a class="book" href="#${esc(it.id)}" data-id="${esc(it.id)}" data-title="${esc(it.title)}" data-added="${esc(it.added || '')}">
     <div class="cover">${it.cover && fileSet.has(it.cover) ? `<img class="cover-img" src="${url(it.cover)}" alt="${esc(it.title)} 표지" loading="lazy">` : `<div class="cover-ph">${esc(it.title)}</div>`}</div>
     <div class="t">${esc(it.title)}</div><div class="a">${esc([it.author, it.translator].filter(Boolean).join(' | '))}</div>
-    <div class="fmt">${[it.publisher, it.book_type].filter(Boolean).map(x => `<span>${esc(x)}</span>`).join('')}</div>${it.text ? '<div class="small" style="margin-top:4px;color:var(--robe)">📖 사이트에서 읽기</div>' : ''}<div class="snip small muted" hidden></div></a>`;
+    <div class="fmt">${[it.publisher, it.book_type].filter(Boolean).map(x => `<span>${esc(x)}</span>`).join('')}</div>${it.text ? `<div class="small st-cardread" role="link" tabindex="0" data-read="${esc(it.id)}" style="margin-top:4px;color:var(--robe);text-decoration:underline;cursor:pointer">📖 사이트에서 읽기</div>` : ''}<div class="snip small muted" hidden></div></a>`;
   root.innerHTML = head + (items.length ? `<div class="lib" style="margin-top:18px"><details class="filter-toggle" open><summary>찾아보기</summary><div class="filters">
       <h3>출판사</h3>${[...cfg.publishers, ...others('publisher', cfg.publishers)].map(v => chk('publisher', v)).join('')}
       <h3>책 형식</h3>${[...cfg.book_types, ...others('book_type', cfg.book_types)].map(v => chk('book_type', v)).join('')}
@@ -194,6 +194,9 @@ async function initMembers() {
     af.innerHTML = on.length ? on.map(c => `<button data-un="${esc(c.dataset.sf)}|${esc(c.value)}">${esc(c.value)} ✕</button>`).join('') + '<button data-un="*">모두 지우기</button>' : '';
     $$('button', af).forEach(x => x.onclick = () => { $$('[data-sf]', root).forEach(c => { if (x.dataset.un === '*' || x.dataset.un === c.dataset.sf + '|' + c.value) c.checked = false; }); run(); });
   };
+  // 카드의 '📖 사이트에서 읽기'는 자료 소개를 거치지 않고 바로 읽기 화면으로
+  root.addEventListener('click', e => { const r = e.target.closest('[data-read]'); if (!r) return; e.preventDefault(); e.stopPropagation(); location.hash = '#' + encodeURIComponent(r.dataset.read) + '/read'; });
+  root.addEventListener('keydown', e => { const r = e.target.closest && e.target.closest('[data-read]'); if (r && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); location.hash = '#' + encodeURIComponent(r.dataset.read) + '/read'; } });
   $$('[data-sf]', root).forEach(c => c.onchange = run);
   if ($('#stQ')) $('#stQ').oninput = run;
   if ($('#stSort')) $('#stSort').onchange = () => { const g = $('#stGrid'), v = $('#stSort').value; $$('.book', g).sort((a, b) => v === 'title' ? a.dataset.title.localeCompare(b.dataset.title, 'ko') : (b.dataset.added || '').localeCompare(a.dataset.added || '')).forEach(x => g.appendChild(x)); };
