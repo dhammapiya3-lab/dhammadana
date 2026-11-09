@@ -106,6 +106,7 @@ for (const slug of Object.keys(CAT.books)) {
   <div><h1>${esc(b.title)}</h1>${b.sub ? `<p class="sub">${esc(b.sub)}</p>` : ''}<p class="en">${esc(b.en)}</p>
   <p class="cnt">${esc(b.style)} · ${b.unit} ${b.nStory}편 · ${U.posters} ${b.nImg.toLocaleString()}장</p>
   <p class="tags">${b.tags.map(t => `<span>${esc(t)}</span>`).join('')}</p></div></div>
+  ${KO.about_work?.[slug]?.length ? `<aside class="work"><h2>문헌 정보</h2><dl>${KO.about_work[slug].map(([a, v]) => `<dt>${esc(a)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></aside>` : ''}
   <div class="prose">${b.intro ? paras(b.intro) : `<p class="muted">책 소개를 우리말로 옮기는 중입니다. 아래는 영어 원문입니다.</p><p lang="en">${esc(b.introEn)}</p>`}</div>
   <h2>차례</h2><ol class="toc">${toc}</ol>
   <p class="orig"><a href="${S.orig_url}${slug}/index.htm">${U.en_link} ↗</a></p></div>` }));

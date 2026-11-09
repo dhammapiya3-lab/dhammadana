@@ -99,3 +99,8 @@ footer.site p{margin:0 0 6px} .sadhu{color:var(--robe)}
 .tier-h{font-size:25px;margin:0 0 4px;color:var(--robe)}
 .tier-note{margin:0 0 4px;font-size:14px}
 .cat>h3{font-family:var(--serif);font-size:18px;margin:26px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.work{background:var(--paper-2);border:1px solid var(--line);border-left:4px solid var(--robe);border-radius:8px;padding:14px 18px;margin:0 0 22px;max-width:760px}
+.work h2{font-size:16px;margin:0 0 8px;color:var(--robe)}
+.work dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;margin:0;font-size:14.5px}
+.work dt{color:var(--ink-soft);font-weight:500}.work dd{margin:0}
+@media (max-width:520px){.work dl{grid-template-columns:1fr;gap:2px}.work dd{margin-bottom:6px}}
