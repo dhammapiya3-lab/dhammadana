@@ -675,6 +675,15 @@ function reflowHtml() {
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}" data-ci="${ci - 1}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}" data-ci="${ci + 1}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}</h3></div>` : ''}${body}${nav}</div>`;
 }
+// 이 장 안의 소제목 자리(화면의 문단) 목록
+function subTargets(c) {
+  if (!c) return [];
+  return R.toc.filter(t => /^\s/.test(t.title) && t.page >= c.from && t.page <= c.to).map(t => {
+    const e = $(`#rBody p[data-pg="${t.page}"][data-s="${paraIdx(t)}"]`);
+    return e && e.getClientRects().length ? e : $('#pm-' + t.page);
+  }).filter(Boolean);
+}
+const chHasSubs = n => { const c = chapters()[Math.max(0, chapterOf(n))]; return !!c && R.toc.some(t => /^\s/.test(t.title) && t.page >= c.from && t.page <= c.to); };
 function tocFor(n) { let cur = null; for (const t of R.toc) if (t.page <= n) cur = t; return cur; }
 function placePanels(el) {
   el = el || $('#reader'); if (!el) return; const t = $('.r-top', el); if (!t) return;
@@ -700,9 +709,9 @@ function renderReader() {
     </div></div>
     ${R.hl.length ? `<div class="variant-note" style="border-radius:0">찾은 말을 표시하고 있습니다. <button id="hlOff">표시 끄기</button></div>` : ''}
     <div class="r-body" id="rBody">${R.view === 'page' ? pageHtml(p) : reflowHtml()}</div>
-    <div class="r-bottom"><button class="tbtn" id="rPrev" ${(R.view === 'text' ? chapterOf(n) === 0 : R.i === 0) ? 'disabled' : ''} aria-label="${R.view === 'text' ? '이전 장' : '이전 쪽'}">‹</button>
+    <div class="r-bottom"><button class="tbtn" id="rPrev" ${(R.view === 'text' ? chapterOf(n) === 0 && !chHasSubs(n) : R.i === 0) ? 'disabled' : ''} aria-label="${R.view === 'text' ? '앞 소제목·이전 장' : '이전 쪽'}">‹</button>
       <label for="rRange" class="sr">쪽 이동</label><input type="range" id="rRange" min="1" max="${N}" value="${n}">
-      <span class="pg">${p.label ? esc(p.label) + '쪽 · ' : ''}${n} / ${N}</span><button class="tbtn" id="rNext" ${(R.view === 'text' ? chapterOf(n) >= chapters().length - 1 : R.i === N - 1) ? 'disabled' : ''} aria-label="${R.view === 'text' ? '다음 장' : '다음 쪽'}">›</button></div>
+      <span class="pg">${p.label ? esc(p.label) + '쪽 · ' : ''}${n} / ${N}</span><button class="tbtn" id="rNext" ${(R.view === 'text' ? chapterOf(n) >= chapters().length - 1 && !chHasSubs(n) : R.i === N - 1) ? 'disabled' : ''} aria-label="${R.view === 'text' ? '다음 소제목·다음 장' : '다음 쪽'}">›</button></div>
     <div class="panel" id="p-find"><h5>이 책에서 찾기</h5>
       <form id="findForm" class="row" style="gap:6px"><input id="findQ" placeholder="찾을 말" aria-label="찾을 말" value="${esc(R.findQ || '')}" style="flex:1;height:36px;border:1px solid var(--line);border-radius:8px;padding:0 10px;background:var(--paper)"><button class="tbtn" type="submit">찾기</button></form>
       <div id="findRes">${R.findRes || '<p class="note">낱말을 넣으면 이 책의 모든 쪽에서 찾습니다. 위빳사나·vipassanā처럼 다른 표기도 함께 찾습니다.</p>'}</div></div>
@@ -744,7 +753,23 @@ function bindReader() {
   $('#rClose').onclick = exitReader;
   // 글로 보기에서는 한 화면이 한 장(章)이므로 ‹ › 는 장 단위로 넘깁니다 (쪽 단위면 같은 화면이 되풀이됨)
   const stepCh = d => { const cs = chapters(), ci = chapterOf(R.i + 1), t = cs[ci + d]; if (t) { go(t.from, ci + d); $('#rBody').scrollTop = 0; window.scrollTo(0, 0); } };
-  $('#rPrev').onclick = () => R.view === 'text' ? stepCh(-1) : go(R.i); $('#rNext').onclick = () => R.view === 'text' ? stepCh(1) : go(R.i + 2); $('#rRange').onchange = e => go(+e.target.value);
+  // 장 안에 소제목(목차의 들여쓴 항목)이 있으면 › 는 다음 소제목으로, ‹ 는 앞 소제목으로 내려가고/올라가고, 장 끝·처음에서만 장을 넘김 (운영자 요청, 2026-11-09)
+  const stepSub = d => {
+    const body = $('#rBody'), cs = chapters(), ci = chapterOf(R.i + 1), c = cs[Math.max(0, ci)];
+    const top0 = body.getBoundingClientRect().top, cur = body.scrollTop;
+    const ys = subTargets(c).map(e => e.getBoundingClientRect().top - top0 + body.scrollTop - 8);
+    if (d > 0) {
+      const y = ys.find(v => v > cur + 12);
+      if (y != null && y < body.scrollHeight - body.clientHeight + 4) { body.scrollTop = y; return; }
+      if (y != null && cur < body.scrollHeight - body.clientHeight - 12) { body.scrollTop = y; return; }
+      stepCh(1);
+    } else {
+      const y = [0, ...ys].filter(v => v < cur - 12).pop();
+      if (y != null) { body.scrollTop = Math.max(0, y); return; }
+      stepCh(-1);
+    }
+  };
+  $('#rPrev').onclick = () => R.view === 'text' ? stepSub(-1) : go(R.i); $('#rNext').onclick = () => R.view === 'text' ? stepSub(1) : go(R.i + 2); $('#rRange').onchange = e => go(+e.target.value);
   const ff = $('#findForm'); if (ff) ff.onsubmit = async ev => {
     ev.preventDefault(); const q = $('#findQ').value.trim(); R.findQ = q; if (!q) return;
     let V = []; try { V = (await data()).variants; } catch (e) {}
