@@ -1240,18 +1240,23 @@ function blockHtml(s, n, k) {
 const tocLines = s => s.replace(/^%% /, '').split('\n').filter(l => l.trim()).map(l => { if (l.trim() === '~') return { sp: true, lv: 0, t: '', p: '' }; const m = l.match(/^(-*)\s*(.*?)(?:\s+\|\s*(\S+))?\s*$/); return { lv: m[1].length, t: m[2], p: m[3] || '' }; });
 const isFootnote = p => /^\[\^[^\]]+\]:/.test(p);
 // 장 첫 쪽에서 장 제목과 같은 글(소제목·가운데 제목)은 화면에서 숨기고 소리로도 두 번 읽지 않음 — 장 제목으로 통일
-const dupKey = t => headKey(t).replace(/[.,:·\-–—!?■_]/g, '');
+const dupKey = t => headKey(String(t).replace(/^(::|\^\^|##)\s*/, '').replace(/^[^┃\n]*┃/, '')).replace(/[.,:·\-–—!?■_]/g, '');  // '책 제목┃부록' 같은 쪽 머리 표시는 뒤쪽 이름만
 // 장 첫머리의 문단 몇 개(예: 'Ⅰ' + '껍데기는 버리고…')를 이으면 장 제목과 같아지는지 → 그 문단들의 'n:k' 모음
 function chDups(c) {
   if (!c || !c.title) return new Set();
-  const ps = paras((R.pages[c.from - 1] || {}).text), want = dupKey(c.title), out = [];
-  let acc = '';
-  for (let k = c.k0 || 0; k < ps.length; k++) {
-    const s = ps[k]; if (FIG_RE.test(s)) continue;
-    const dk = dupKey(s); if (!dk || isFootnote(s) || s.length > 160 || !want.startsWith(acc + dk)) break;
-    acc += dk; out.push(k); if (acc === want) return new Set(out.map(x => c.from + ':' + x));
+  if (c._dups) return c._dups;
+  const want = dupKey(c.title), found = new Set();
+  // 장 첫 쪽, 그리고 첫 쪽이 제목뿐이면 다음 쪽 첫머리까지 (부 표지 쪽 + 다음 쪽 제목처럼 되풀이되는 경우)
+  for (let n = c.from; n <= Math.min(c.to, c.from + 1); n++) {
+    const ps = paras((R.pages[n - 1] || {}).text); let acc = '', out = [], k = n === c.from ? (c.k0 || 0) : 0;
+    for (; k < ps.length; k++) {
+      const s = ps[k]; if (FIG_RE.test(s)) continue;
+      const dk = dupKey(s); if (!dk || isFootnote(s) || s.length > 160 || !want.startsWith(acc + dk)) break;
+      acc += dk; out.push(k); if (acc === want) { out.forEach(x => found.add(n + ':' + x)); break; }
+    }
+    if (n === c.from && ps.some((s, i) => !found.has(n + ':' + i) && !FIG_RE.test(s) && s.trim())) break;  // 첫 쪽에 다른 글이 있으면 다음 쪽은 보지 않음
   }
-  return new Set();
+  return (c._dups = found);
 }
 const isChDup = (s, n, c, k) => chDups(c).has(n + ':' + k);
 // 표를 소리로 읽을 줄들: 한 줄 = 칸들을 쉼표로 이어서
