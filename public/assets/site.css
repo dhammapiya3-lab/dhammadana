@@ -914,3 +914,5 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 
 .people a.plink{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
 .people a.plink:hover{color:var(--robe)}
+
+.book .snip{margin-top:6px;line-height:1.5;font-weight:400}.book .snip mark{background:#f3e3b5;color:inherit;padding:0 2px}

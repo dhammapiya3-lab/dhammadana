@@ -125,28 +125,40 @@ async function initMembers() {
   const card = it => `<a class="book" href="#${esc(it.id)}" data-id="${esc(it.id)}" data-title="${esc(it.title)}" data-added="${esc(it.added || '')}">
     <div class="cover">${it.cover && fileSet.has(it.cover) ? `<img class="cover-img" src="${url(it.cover)}" alt="${esc(it.title)} 표지" loading="lazy">` : `<div class="cover-ph">${esc(it.title)}</div>`}</div>
     <div class="t">${esc(it.title)}</div><div class="a">${esc([it.author, it.translator].filter(Boolean).join(' | '))}</div>
-    <div class="fmt">${[it.publisher, it.book_type].filter(Boolean).map(x => `<span>${esc(x)}</span>`).join('')}</div></a>`;
+    <div class="fmt">${[it.publisher, it.book_type].filter(Boolean).map(x => `<span>${esc(x)}</span>`).join('')}</div><div class="snip small muted" hidden></div></a>`;
   root.innerHTML = head + (items.length ? `<div class="lib" style="margin-top:18px"><details class="filter-toggle" open><summary>찾아보기</summary><div class="filters">
       <h3>출판사</h3>${[...cfg.publishers, ...others('publisher', cfg.publishers)].map(v => chk('publisher', v)).join('')}
       <h3>책 형식</h3>${[...cfg.book_types, ...others('book_type', cfg.book_types)].map(v => chk('book_type', v)).join('')}
       <h3>주제</h3>${topics}
     </div></details>
     <section><div class="toolbar"><div><div class="muted small">자료 <span id="stCount">${items.length}</span>개</div></div>
-      <label class="small"><input id="stQ" type="search" placeholder="제목·지은이·소개로 찾기" style="height:34px;padding:0 10px;border:1px solid var(--line);border-radius:8px;background:var(--paper);min-width:180px"></label>
+      <label class="small"><input id="stQ" type="search" placeholder="제목·지은이·본문으로 찾기" style="height:34px;padding:0 10px;border:1px solid var(--line);border-radius:8px;background:var(--paper);min-width:180px"></label>
       <label class="small">정렬 <select id="stSort"><option value="new">최근 등록순</option><option value="title">제목 가나다순</option></select></label></div>
-      <div class="active-filters" id="stActive"></div>
+      <div class="active-filters" id="stActive"></div><p class="small muted" id="stTx" hidden>책 본문에서 찾는 중…</p>
       <div class="grid" id="stGrid">${items.map(card).join('')}</div>
       <p class="muted" id="stEmpty" hidden>조건에 맞는 자료가 없습니다. 찾아보기를 줄여 보세요.</p>
     </section></div>` : '') + looseHtml() + `<div id="stDetail" hidden></div>`;
   const byId = Object.fromEntries(items.map(it => [it.id, it]));
+  // 본문 찾기: Claude 가 뽑아 둔 본문 글(_text/…txt)을 찾는 순간에만 받아 옴
+  const TX = {}; let txLoading = false;
+  const loadTexts = async () => { txLoading = true; const st = $('#stTx'); if (st) st.hidden = false;
+    await Promise.all(items.filter(it => it.text && TX[it.id] == null).map(it => fetch(url(it.text)).then(r => r.ok ? r.text() : '').catch(() => '').then(t => { TX[it.id] = t; })));
+    txLoading = false; if (st) st.hidden = true; };
+  const findSnip = (t, q) => { q = q.trim(); if (!q) return ''; const i = t.toLowerCase().indexOf(q.toLowerCase()); if (i < 0) return '';
+    const pg = (t.slice(0, i).match(/=== (\d+)쪽 ===/g) || []).pop(); const a = Math.max(0, i - 40);
+    return `${pg ? `<b>${pg.replace(/=/g, '').trim()}</b> ` : ''}…${esc(t.slice(a, i).replace(/=== \d+쪽 ===/g, ' '))}<mark>${esc(t.slice(i, i + q.length))}</mark>${esc(t.slice(i + q.length, i + q.length + 50).replace(/=== \d+쪽 ===/g, ' '))}…`; };
   const norm = x => String(x || '').toLowerCase().replace(/\s+/g, '');
   const run = () => {
     const sel = {}; $$('[data-sf]:checked', root).forEach(c => (sel[c.dataset.sf] = sel[c.dataset.sf] || []).push(c.value));
     const q = norm(($('#stQ') || {}).value); let shown = 0;
     $$('#stGrid .book', root).forEach(el => { const it = byId[el.dataset.id];
       let ok = (!sel.publisher || sel.publisher.includes(it.publisher)) && (!sel.book_type || sel.book_type.includes(it.book_type)) && (!sel.topic || sel.topic.some(t => (it.topics || []).includes(t)));
-      if (ok && q) ok = norm([it.title, it.author, it.translator, it.publisher, it.description, (it.topics || []).join(' ')].join(' ')).includes(q);
+      let snip = '';
+      if (ok && q) { ok = norm([it.title, it.author, it.translator, it.publisher, it.description, (it.topics || []).join(' ')].join(' ')).includes(q);
+        if (!ok && TX[it.id]) { snip = findSnip(TX[it.id], ($('#stQ') || {}).value || ''); ok = !!snip; } }
+      const sn = $('.snip', el); if (sn) { sn.hidden = !snip; sn.innerHTML = snip; }
       el.hidden = !ok; if (ok) shown++; });
+    if (q && q.length >= 2 && !txLoading && items.some(it => it.text && TX[it.id] == null)) loadTexts().then(run);
     if ($('#stCount')) { $('#stCount').textContent = shown; $('#stEmpty').hidden = shown > 0; }
     const af = $('#stActive'); if (!af) return;
     const on = $$('[data-sf]:checked', root);
@@ -168,6 +180,7 @@ async function initMembers() {
       <div class="study-book"><div class="cover">${it.cover && fileSet.has(it.cover) ? `<img src="${url(it.cover)}" alt="${esc(it.title)} 표지">` : `<div class="cover-ph">${esc(it.title)}</div>`}</div>
       <div><h1 style="margin:0 0 6px">${esc(it.title)}</h1>${it.subtitle ? `<p class="muted" style="margin:0 0 8px">${esc(it.subtitle)}</p>` : ''}
         <dl class="kv">${it.author ? `<dt>지은이·스승</dt><dd>${esc(it.author)}</dd>` : ''}${it.translator ? `<dt>옮긴이·편자</dt><dd>${esc(it.translator)}</dd>` : ''}${it.publisher ? `<dt>출판사</dt><dd>${esc(it.publisher)}</dd>` : ''}${it.book_type ? `<dt>책 형식</dt><dd>${esc(it.book_type)}</dd>` : ''}${it.year ? `<dt>펴낸 해</dt><dd>${esc(it.year)}</dd>` : ''}</dl>
+        ${it.text ? `<p class="small"><a href="${url(it.text)}" target="_blank" rel="noopener">📄 본문 글로 보기</a></p>` : ''}
         ${(it.topics || []).length ? `<div class="labels">${it.topics.map(t => `<span class="t">${esc(t)}</span>`).join('')}</div>` : ''}
         <div class="study-dl">${fl.map(f => `<a class="btn" href="${url(f.key)}" target="_blank" rel="noopener">${icon(f.key)} ${esc(kind(f.key))} 열기</a><a class="btn ghost" href="${url(f.key)}?dl">내려받기 <span class="small">${size(f.size)}</span></a>`).join('') || '<p class="muted">파일 준비 중</p>'}</div>
       </div></div>

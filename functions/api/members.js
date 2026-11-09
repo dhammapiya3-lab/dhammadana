@@ -14,7 +14,7 @@ async function guard(request, env) {
 export async function onRequestGet({ request, env }) {
   const g = await guard(request, env); if (g) return g;
   const files = []; let cursor;
-  do { const r = await env.MEMBERS.list({ cursor, limit: 1000 }); files.push(...r.objects.filter(o => o.key !== CAT).map(o => ({ key: o.key, size: o.size, uploaded: o.uploaded }))); cursor = r.truncated ? r.cursor : null; } while (cursor);
+  do { const r = await env.MEMBERS.list({ cursor, limit: 1000 }); files.push(...r.objects.filter(o => o.key !== CAT && !o.key.startsWith('_')).map(o => ({ key: o.key, size: o.size, uploaded: o.uploaded }))); cursor = r.truncated ? r.cursor : null; } while (cursor);
   let catalog = { items: [] };
   try { const o = await env.MEMBERS.get(CAT); if (o) catalog = await o.json(); } catch (e) {}
   return json({ files, catalog });

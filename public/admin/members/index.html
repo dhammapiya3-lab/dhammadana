@@ -70,6 +70,7 @@
       <ul class="fl" id="catList"><li class="note">불러오는 중…</li></ul>
       <button class="btn" id="catNew" style="margin-top:10px">+ 새 자료 정보</button>
       <form id="catForm" hidden style="margin-top:14px">
+        <p id="catAuto" class="msg err" hidden>이 정보는 Claude 가 책을 읽고 자동으로 채운 것입니다. 훑어보시고 틀린 곳을 고친 뒤 '저장'을 누르면 '확인 필요' 표시가 사라집니다.</p>
         <div class="row"><label>제목 *</label><input type="text" name="title" required></div>
         <div class="row"><label>부제</label><input type="text" name="subtitle"></div>
         <div class="row"><label>지은이·스승</label><input type="text" name="author"></div>
@@ -155,12 +156,13 @@ fetch('/data/study-config.json').then(r=>r.json()).then(j=>{CFG=j;}).catch(()=>{
 const opts=(list,cur)=>['',...list,...(cur&&!list.includes(cur)?[cur]:[])].map(v=>`<option value="${esc(v)}"${v===cur?' selected':''}>${esc(v||'— 고르지 않음 —')}</option>`).join('');
 function catRender(){
   const L=CAT.items||[];
-  $('#catList').innerHTML=L.length?L.map(it=>`<li><span><b>${esc(it.title)}</b> <small class="note">${esc([it.publisher,it.book_type].filter(Boolean).join(' · '))} · 파일 ${(it.files||[]).length}개</small></span><button class="link-btn" data-edit="${esc(it.id)}" style="margin-left:auto">고치기</button></li>`).join(''):'<li class="note">아직 자료 정보가 없습니다.</li>';
+  $('#catList').innerHTML=L.length?L.map(it=>`<li><span><b>${esc(it.title)}</b> <small class="note">${esc([it.publisher,it.book_type].filter(Boolean).join(' · '))} · 파일 ${(it.files||[]).length}개${it.text?' · 본문 글 있음':''}</small>${it.auto?' <small style="color:#8A2E1C;font-weight:600">자동 입력 – 확인 필요</small>':''}</span><button class="link-btn" data-edit="${esc(it.id)}" style="margin-left:auto">고치기</button></li>`).join(''):'<li class="note">아직 자료 정보가 없습니다.</li>';
   document.querySelectorAll('[data-edit]').forEach(b=>b.onclick=()=>catOpen(L.find(x=>x.id===b.dataset.edit)));
 }
 function catOpen(it){
   EDIT=it||{id:'S-'+Date.now().toString(36),title:'',topics:[],files:[],added:new Date().toLocaleDateString('sv-SE')};
   const f=$('#catForm'); f.hidden=false; $('#catDel').hidden=!it;
+  $('#catAuto').hidden=!EDIT.auto;
   ['title','subtitle','author','translator','year','description'].forEach(k=>f.elements[k].value=EDIT[k]||'');
   f.elements.publisher.innerHTML=opts(CFG.publishers||[],EDIT.publisher||'');
   f.elements.book_type.innerHTML=opts(CFG.book_types||[],EDIT.book_type||'');
@@ -179,6 +181,7 @@ $('#catNew').onclick=()=>catOpen(null);
 $('#catCancel').onclick=()=>{$('#catForm').hidden=true;};
 $('#catForm').onsubmit=async e=>{ e.preventDefault(); const f=e.target;
   const it={...EDIT}; ['title','subtitle','author','translator','year','description','publisher','book_type','cover'].forEach(k=>{const v=(f.elements[k].value||'').trim(); if(v) it[k]=v; else delete it[k];});
+  delete it.auto;
   it.topics=[...document.querySelectorAll('[data-topic]:checked')].map(c=>c.value);
   it.files=[...document.querySelectorAll('[data-file]:checked')].map(c=>c.value);
   if(!it.title){ alert('제목을 적어 주세요.'); return; }
