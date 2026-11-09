@@ -830,18 +830,30 @@ function bindReader() {
   // 글로 보기에서는 한 화면이 한 장(章)이므로 ‹ › 는 장 단위로 넘깁니다 (쪽 단위면 같은 화면이 되풀이됨)
   const stepCh = d => { const cs = chapters(), ci = chapterOf(R.i + 1), t = cs[ci + d]; if (t) { go(t.from, ci + d); $('#rBody').scrollTop = 0; window.scrollTo(0, 0); } };
   // 장 안에 소제목(목차의 들여쓴 항목)이 있으면 › 는 다음 소제목으로, ‹ 는 앞 소제목으로 내려가고/올라가고, 장 끝·처음에서만 장을 넘김 (운영자 요청, 2026-11-09)
+  // 소제목으로 옮긴 뒤 위쪽 그림이 늦게 받아져 글이 밀리면(사진·구분선 자리에 멈춘 것처럼 보임) 몇 초 동안 소제목 자리를 다시 맞춤 (운영자 요청, 2026-11-10)
+  // 위 메뉴가 떠 있으면(글 위에 겹쳐 보임) 그 높이만큼 아래에 소제목이 오게 — 메뉴에 가려 사진·구분선에 멈춘 것처럼 보이지 않게
+  const navOff = () => { const t = $('.r-top', el); return 8 + (t && !el.classList.contains('chrome-off') ? t.offsetHeight : 0); };
+  const pin = e => {
+    const body = $('#rBody'); if (!body || !e) return;
+    const place = () => { body.scrollTop = Math.max(0, e.getBoundingClientRect().top - body.getBoundingClientRect().top + body.scrollTop - navOff()); };
+    place(); const until = Date.now() + 4000; R.pinEl = e;
+    const fix = () => { if (R && R.pinEl === e && Date.now() < until) place(); };
+    $$('#rBody img').forEach(im => { if (!im.complete) im.addEventListener('load', fix, { once: true }); });
+    const stop = () => { if (R && R.pinEl === e) R.pinEl = null; body.removeEventListener('wheel', stop); body.removeEventListener('touchstart', stop); };
+    body.addEventListener('wheel', stop, { passive: true }); body.addEventListener('touchstart', stop, { passive: true });  // 직접 넘기기 시작하면 그만
+  };
   const stepSub = d => {
     const body = $('#rBody'), cs = chapters(), ci = chapterOf(R.i + 1), c = cs[Math.max(0, ci)];
     const top0 = body.getBoundingClientRect().top, cur = body.scrollTop;
-    const ys = subTargets(c).map(e => e.getBoundingClientRect().top - top0 + body.scrollTop - 8);
+    const ts = subTargets(c).map(e => ({ e, y: e.getBoundingClientRect().top - top0 + body.scrollTop - navOff() }));
     if (d > 0) {
-      const y = ys.find(v => v > cur + 12);
-      if (y != null && y < body.scrollHeight - body.clientHeight + 4) { body.scrollTop = y; return; }
-      if (y != null && cur < body.scrollHeight - body.clientHeight - 12) { body.scrollTop = y; return; }
+      const t = ts.find(v => v.y > cur + 12);
+      if (t && (t.y < body.scrollHeight - body.clientHeight + 4 || cur < body.scrollHeight - body.clientHeight - 12)) { pin(t.e); return; }
       stepCh(1);
     } else {
-      const y = [0, ...ys].filter(v => v < cur - 12).pop();
-      if (y != null) { body.scrollTop = Math.max(0, y); return; }
+      const t = ts.filter(v => v.y < cur - 12).pop();
+      if (t) { pin(t.e); return; }
+      if (cur > 12) { body.scrollTop = 0; return; }
       stepCh(-1);
     }
   };
@@ -888,7 +900,9 @@ function bindReader() {
     const hoverPC = () => matchMedia('(hover:hover) and (pointer:fine)').matches && !immersive();
     el.addEventListener('mousemove', e => {
       if (!hoverPC()) return;
-      const edge = 64, nearTop = e.clientY < edge, nearBot = e.clientY > innerHeight - edge;
+      // 맨 위·맨 아래 가장자리(좁게)에서만 나타남, 글 속 단추(장 끝의 ← 앞 장 / 다음 장 → 등) 위에서는 나타나지 않음 — 단추를 가리지 않게 (운영자 요청, 2026-11-10)
+      const onBodyBtn = e.target.closest && e.target.closest('#rBody button, #rBody a, #rBody input');
+      const nearTop = e.clientY < 40, nearBot = e.clientY > innerHeight - 28 && !onBodyBtn;
       const onChrome = e.target.closest && e.target.closest('.r-top,.r-bottom,.panel,#selPop');
       if (nearTop || nearBot || onChrome) el.classList.remove('chrome-off');
       else if (!$('.panel.open', el)) el.classList.add('chrome-off');

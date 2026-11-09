@@ -37,7 +37,7 @@ with sync_playwright() as p:
         pg = b.new_page(viewport={'width': 1200, 'height': 900})
         pg.add_init_script(STUB)
         pg.goto(f'{BASE}/read/{bid}/')
-        try: pg.wait_for_selector('#rSpeak', timeout=15000)
+        try: pg.wait_for_selector('#rSpeak', state='attached', timeout=15000)
         except Exception: print(f'{bid}: 읽기 화면 없음(건너뜀)'); pg.close(); continue
         chs = pg.evaluate("[...document.querySelectorAll('#p-toc [data-ci]')].map(b=>({t:b.textContent, go:+b.dataset.go, ci:+b.dataset.ci})).filter(x=>x.ci>=0)")
         body = json.load(open(os.path.join(root, bid + '.json')))['body']
