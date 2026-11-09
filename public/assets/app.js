@@ -80,6 +80,7 @@ async function softGo(url, push = true) {
     $$('nav.main a').forEach(a => { const on = a.dataset.nav === nav; a.classList.toggle('on', on); on ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'); });
     document.body.dataset.page = nm.dataset.page;
     if (push) history.pushState({}, '', url);
+    lastDoc = location.pathname + location.search;
     const u = new URL(url, location.href);
     if (u.hash && $(u.hash)) $(u.hash).scrollIntoView(); else window.scrollTo(0, 0);
     initPage();
@@ -93,7 +94,10 @@ document.addEventListener('click', e => {
   if (!PL.pl || $('#pAudio').paused) return;
   e.preventDefault(); softGo(a.href);
 });
-window.addEventListener('popstate', () => { if (PL.pl && !$('#pAudio').paused) softGo(location.href, false); else location.reload(); });
+// 같은 페이지 안에서 # 만 바뀐 경우(학습 자료실 자료 소개·읽기 화면 등)는 다시 불러오지 않음
+let lastDoc = location.pathname + location.search;
+window.addEventListener('popstate', () => { const now = location.pathname + location.search; if (now === lastDoc) return; lastDoc = now;
+  if (PL.pl && !$('#pAudio').paused) softGo(location.href, false); else location.reload(); });
 
 /* ---------- 페이지별 시작 ---------- */
 function initPage() {
@@ -165,6 +169,7 @@ async function initMembers() {
       return r.text(); };
     await Promise.all(items.filter(it => it.text && TX[it.id] == null).map(it => get(it.text).catch(() => '').then(t => { TX[it.id] = t; TXF[it.id] = fold(t); })));
     txLoading = false; if (st) st.hidden = true; };
+  const pageOfHit = (id, q) => { const t = TX[id] || '', i = (TXF[id] || fold(t)).indexOf(fold(q.trim())); return i < 0 ? 1 : (t.slice(0, i).match(/^=== .+? ===$/gm) || []).length + 1; };
   const findSnip = (id, q) => { q = q.trim(); if (!q) return ''; const t = TX[id], f = TXF[id] || fold(t); const i = f.indexOf(fold(q)); if (i < 0) return '';
     let n = 0, j = -1; while ((j = f.indexOf(fold(q), j + 1)) >= 0 && n < 999) n++;
     const pg = (t.slice(0, i).match(/=== [^=\n]+ ===/g) || []).pop(); const a = Math.max(0, i - 50), mk = /=== [^=\n]+ ===|⟦[^⟧]*⟧/g;
@@ -179,7 +184,9 @@ async function initMembers() {
       if (ok && q) { ok = norm([it.title, it.author, it.translator, it.publisher, it.description, (it.topics || []).join(' ')].join(' ')).includes(q);
         if (!ok && TX[it.id]) { snip = findSnip(it.id, ($('#stQ') || {}).value || ''); ok = !!snip; } }
       const sn = $('.snip', el); if (sn) { sn.hidden = !snip; sn.innerHTML = snip; }
+      el.setAttribute('href', snip ? `#${it.id}/read/${pageOfHit(it.id, ($('#stQ') || {}).value || '')}` : `#${it.id}`);
       el.hidden = !ok; if (ok) shown++; });
+    STQ.q = (($('#stQ') || {}).value || '').trim();
     if (q && q.length >= 2 && !txLoading && items.some(it => it.text && TX[it.id] == null)) loadTexts().then(run);
     if ($('#stCount')) { $('#stCount').textContent = shown; $('#stEmpty').hidden = shown > 0; }
     const af = $('#stActive'); if (!af) return;
@@ -193,16 +200,18 @@ async function initMembers() {
   if ($('#stSort')) $('#stSort').onchange();
   if (window.innerWidth < 520 && $('.filter-toggle', root)) $('.filter-toggle', root).open = false;
   const detail = () => {
-    const it = byId[decodeURIComponent(location.hash.slice(1))], d = $('#stDetail');
+    const hp = decodeURIComponent(location.hash.slice(1)).split('/');
+    const it = byId[hp[0]], d = $('#stDetail');
     const parts = [$('.lib', root), $('.study-loose', root)].filter(Boolean);
     if (!it) { d.hidden = true; parts.forEach(x => x.hidden = false); return; }
     parts.forEach(x => x.hidden = true); d.hidden = false;
+    if (hp[1] === 'read' && it.text) { studyReader(d, it, hp[2] ? +hp[2] : null); return; }
     const fl = it.files.map(k => fileBy[k]).filter(Boolean);
     d.innerHTML = `<p style="margin-top:18px"><a href="#" id="stBack">← 학습 자료실 목록</a></p>
       <div class="study-book"><div class="cover">${it.cover && fileSet.has(it.cover) ? `<img src="${url(it.cover)}" alt="${esc(it.title)} 표지">` : `<div class="cover-ph">${esc(it.title)}</div>`}</div>
       <div><h1 style="margin:0 0 6px">${esc(it.title)}</h1>${it.subtitle ? `<p class="muted" style="margin:0 0 8px">${esc(it.subtitle)}</p>` : ''}
         <dl class="kv">${it.author ? `<dt>지은이·스승</dt><dd>${esc(it.author)}</dd>` : ''}${it.translator ? `<dt>옮긴이·편자</dt><dd>${esc(it.translator)}</dd>` : ''}${it.publisher ? `<dt>출판사</dt><dd>${esc(it.publisher)}</dd>` : ''}${it.book_type ? `<dt>책 형식</dt><dd>${esc(it.book_type)}</dd>` : ''}${it.year ? `<dt>펴낸 해</dt><dd>${esc(it.year)}</dd>` : ''}</dl>
-        ${it.text ? `<p class="small"><a href="${url(it.text)}" target="_blank" rel="noopener">📄 본문 글로 보기</a></p>` : ''}
+        ${it.text ? `<p style="margin:10px 0"><a class="btn" href="#${esc(it.id)}/read">📖 사이트에서 읽기</a></p>` : ''}
         ${(it.topics || []).length ? `<div class="labels">${it.topics.map(t => `<span class="t">${esc(t)}</span>`).join('')}</div>` : ''}
         <div class="study-dl">${fl.map(f => `<a class="btn" href="${url(f.key)}" target="_blank" rel="noopener">${icon(f.key)} ${esc(kind(f.key))} 열기</a><a class="btn ghost" href="${url(f.key)}?dl">내려받기 <span class="small">${size(f.size)}</span></a>`).join('') || '<p class="muted">파일 준비 중</p>'}</div>
       </div></div>
@@ -212,6 +221,69 @@ async function initMembers() {
     scrollTo(0, 0);
   };
   window.addEventListener('hashchange', detail); detail();
+}
+
+/* ---------- 학습 자료실 읽기 화면 ---------- */
+// 본문 글(=== 쪽 표시 === 로 나뉜 .txt / .txt.gz)을 쪽마다 보여 줌. 글자는 원문 그대로, 모양만 바꿈.
+// 쪽 이름(예: 'Vin I 23')이 쪽의 열쇠라서, 나중에 번역본도 같은 쪽 이름으로 나란히 붙일 수 있음.
+const STQ = { q: '' }, STX = {};
+const stFold = t => { let o = ''; for (const c of t) { const d = c.normalize('NFD'); o += (d.length > 1 && /^[a-zA-Z][̀-ͯ]+$/.test(d) ? d[0] : c).toLowerCase().replace(/\s/, ' '); } return o; };
+async function stLoad(k) {
+  if (STX[k]) return STX[k];
+  const u = '/study/file/' + k.split('/').map(encodeURIComponent).join('/'), r = await fetch(u); if (!r.ok) throw 0;
+  const t = /\.gz$/i.test(k) && 'DecompressionStream' in window ? await new Response(r.body.pipeThrough(new DecompressionStream('gzip'))).text() : await r.text();
+  const parts = t.split(/^=== (.+?) ===$/m), pages = [{ label: '앞부분', text: parts[0] }];
+  for (let i = 1; i < parts.length; i += 2) pages.push({ label: parts[i], text: parts[i + 1] || '' });
+  pages.forEach(p => { p.f = stFold(p.text); });
+  if (!pages[0].text.trim()) pages.shift();
+  return (STX[k] = pages);
+}
+async function studyReader(d, it, want) {
+  const id = it.id, base = '#' + encodeURIComponent(id);
+  d.innerHTML = `<p style="margin-top:18px"><a href="${base}">← 자료 소개</a></p><p class="muted">본문을 불러오는 중…</p>`;
+  let P; try { P = await stLoad(it.text); } catch (e) { d.innerHTML = `<p style="margin-top:18px"><a href="${base}">← 자료 소개</a></p><p>본문을 불러오지 못했습니다. 새로고침해 주세요.</p>`; return; }
+  const S = { fs: store.get('st-fs', 1), lh: store.get('st-lh', 1.9), font: store.get('st-font', 'serif') };
+  let i = Math.min(Math.max((want || store.get('stpos-' + id, 1)) - 1, 0), P.length - 1);
+  const hl = (txt, q) => { const e = esc(txt); if (!q) return e; const f = stFold(txt), fq = stFold(q); if (!fq) return e;
+    let out = '', k = 0, j; while ((j = f.indexOf(fq, k)) >= 0) { out += esc(txt.slice(k, j)) + '<mark>' + esc(txt.slice(j, j + q.length)) + '</mark>'; k = j + q.length; } return out + esc(txt.slice(k)); };
+  const body = (txt, q) => txt.trim().split(/\n{2,}/).map(b => `<p>${hl(b, q).replace(/⟦([^⟧]*)⟧/g, '<span class="st-tag">$1</span>')}</p>`).join('');
+  d.innerHTML = `<div class="st-read">
+    <div class="st-bar"><a class="tbtn" href="${base}">← 자료 소개</a><b class="st-title">${esc(it.title)}</b>
+      <span class="st-tools"><button class="tbtn" data-fs="-1" aria-label="글자 작게">가−</button><button class="tbtn" data-fs="1" aria-label="글자 크게">가+</button>
+      <button class="tbtn" id="stLh">줄 간격</button><button class="tbtn" id="stFont">${S.font === 'serif' ? '고딕체' : '명조체'}</button>
+      <select id="stJump" aria-label="쪽으로 가기">${P.map((p, n) => `<option value="${n}">${esc(p.label)}</option>`).join('')}</select>
+      <input id="stFind" type="search" placeholder="이 책에서 찾기" value="${esc(STQ.q || '')}"></span></div>
+    <div id="stHits" hidden></div>
+    <article class="reflow st-page" id="stPage"></article>
+    <div class="st-nav"><button class="btn ghost" id="stPrev">‹ 앞쪽</button><span class="small muted" id="stPos"></span><button class="btn ghost" id="stNext">뒤쪽 ›</button></div></div>`;
+  const pg = $('#stPage', d);
+  const apply = () => { pg.style.setProperty('--fs', S.fs); pg.style.setProperty('--lh', S.lh); pg.classList.toggle('sans', S.font === 'sans'); };
+  const show = (n, keep) => { i = Math.min(Math.max(n, 0), P.length - 1); store.set('stpos-' + id, i + 1);
+    const q = ($('#stFind', d).value || '').trim();
+    pg.innerHTML = `<div class="pmark">${esc(P[i].label)}</div>` + body(P[i].text, q);
+    $('#stJump', d).value = i; $('#stPos', d).textContent = `${i + 1} / ${P.length}`;
+    $('#stPrev', d).disabled = i === 0; $('#stNext', d).disabled = i === P.length - 1;
+    history.replaceState(null, '', `${base}/read/${i + 1}`);
+    if (!keep) { const m = $('mark', pg); (m || d).scrollIntoView({ block: m ? 'center' : 'start' }); } };
+  apply(); show(i);
+  $$('[data-fs]', d).forEach(b => b.onclick = () => { S.fs = Math.min(2.2, Math.max(0.7, Math.round((S.fs + b.dataset.fs * 0.1) * 10) / 10)); store.set('st-fs', S.fs); apply(); });
+  $('#stLh', d).onclick = () => { S.lh = S.lh >= 2.3 ? 1.5 : Math.round((S.lh + 0.2) * 10) / 10; store.set('st-lh', S.lh); apply(); };
+  $('#stFont', d).onclick = e => { S.font = S.font === 'serif' ? 'sans' : 'serif'; store.set('st-font', S.font); e.target.textContent = S.font === 'serif' ? '고딕체' : '명조체'; apply(); };
+  $('#stJump', d).onchange = e => show(+e.target.value);
+  $('#stPrev', d).onclick = () => show(i - 1); $('#stNext', d).onclick = () => show(i + 1);
+  const keys = e => { if (!document.contains(pg)) return document.removeEventListener('keydown', keys); if (/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)) return;
+    if (e.key === 'ArrowLeft') show(i - 1); if (e.key === 'ArrowRight') show(i + 1); };
+  document.addEventListener('keydown', keys);
+  const find = () => { const q = ($('#stFind', d).value || '').trim(), box = $('#stHits', d); STQ.q = q;
+    if (q.length < 2) { box.hidden = true; show(i, true); return; }
+    const fq = stFold(q), hits = []; P.forEach((p, n) => { let j = p.f.indexOf(fq), c = 0; if (j < 0) return; const first = j; while (j >= 0) { c++; j = p.f.indexOf(fq, j + 1); }
+      hits.push({ n, c, s: p.text.slice(Math.max(0, first - 40), first + q.length + 50).replace(/⟦[^⟧]*⟧/g, ' ') }); });
+    box.hidden = false;
+    box.innerHTML = hits.length ? `<p class="small muted">‘${esc(q)}’ — ${hits.length}쪽에서 ${hits.reduce((a, h) => a + h.c, 0)}번</p><ul class="st-hl">${hits.slice(0, 300).map(h => `<li><button data-n="${h.n}"><b>${esc(P[h.n].label)}</b>${h.c > 1 ? ` <span class="small muted">(${h.c}번)</span>` : ''} <span>…${hl(h.s, q)}…</span></button></li>`).join('')}</ul>` : `<p class="small muted">이 책에서 ‘${esc(q)}’ 를 찾지 못했습니다.</p>`;
+    $$('[data-n]', box).forEach(b => b.onclick = () => show(+b.dataset.n));
+    show(i, true); };
+  let ft; $('#stFind', d).oninput = () => { clearTimeout(ft); ft = setTimeout(find, 300); };
+  if (STQ.q) find();
 }
 
 /* ---------- 허락서 보기 ---------- */

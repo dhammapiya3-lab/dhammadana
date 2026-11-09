@@ -918,3 +918,21 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .book .snip{margin-top:6px;line-height:1.5;font-weight:400}.book .snip mark{background:#f3e3b5;color:inherit;padding:0 2px}
 
 .nv-box{position:fixed;left:12px;right:12px;bottom:84px;z-index:1000;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.18);max-width:520px;margin:0 auto}.nv-box p{margin:0 0 12px;line-height:1.6;font-size:15px}.nv-b{display:flex;gap:8px;flex-wrap:wrap}
+
+/* 학습 자료실 읽기 화면 */
+.st-read{margin-top:14px}
+.st-bar{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line);padding:10px 0;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.st-title{font-family:var(--serif);font-size:16px;margin-right:auto}
+.st-tools{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.st-tools select,.st-tools input{height:36px;border:1px solid var(--line);border-radius:8px;background:var(--paper);padding:0 8px;font:inherit;font-size:14px;color:inherit}
+.st-tools input{min-width:150px}
+.st-page{margin:18px auto 0}
+.st-page p{white-space:pre-line}
+.st-page mark{background:#f3e3b5;color:inherit;border-radius:2px}
+.st-tag{font-family:var(--sans);font-size:11px;color:var(--ink-soft);border:1px solid var(--line);border-radius:4px;padding:0 4px;margin:0 2px;vertical-align:1px}
+.st-nav{display:flex;justify-content:space-between;align-items:center;max-width:36em;margin:26px auto 40px}
+#stHits{margin-top:12px;max-height:40vh;overflow:auto;border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+.st-hl{list-style:none;margin:0;padding:0}.st-hl li{border-bottom:1px dotted var(--line)}
+.st-hl button{all:unset;cursor:pointer;display:block;padding:7px 0;font-size:14px;line-height:1.6}
+.st-hl button:hover b{text-decoration:underline}
+.st-hl mark{background:#f3e3b5;color:inherit}
