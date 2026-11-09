@@ -58,7 +58,7 @@ if total == 0:
 else:
     def sec(title, items, fmt):
         if items:
-            L.append(f"## {title} ({len(items)})"); L += [f"- {fmt(x)}" for x in items[:60]]
+            L.append(f"## {title} ({len(items)})"); L.extend(f"- {fmt(x)}" for x in items[:60])
             if len(items) > 60: L.append(f"- … 외 {len(items) - 60}개")
             L.append("")
     sec("새 책", ch["new_books"], lambda x: f"{x['title']} (`{x['book']}`, 이야기 {x['stories']}편)")
