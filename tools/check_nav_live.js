@@ -10,11 +10,12 @@ window.__qa = async (n, wait = 900) => {
   for (let i = 0; i < n; i++) {
     const nx = document.querySelector('#rNext'); if (!nx || nx.disabled) return { done: true, bad, steps };
     const rg = document.querySelector('#rRange'); if (+rg.value >= +rg.max && prev && prev.end) return { done: true, bad, steps };
-    R0.classList.remove('chrome-off'); nx.click(); steps++;
+    const sig0 = rg.value + ':' + Math.round(b.scrollTop); R0.classList.remove('chrome-off'); nx.click(); steps++;
     await new Promise(r => setTimeout(r, wait));
     const rt = document.querySelector('.r-top'); const top = b.getBoundingClientRect().top + rt.offsetHeight;
     const ch = (document.querySelector('.r-title small') || {}).textContent || '';
     const pg = document.querySelector('#rRange').value;
+    if (pg + ':' + Math.round(b.scrollTop) === sig0 && +pg >= +rg.max - 3) return { done: true, bad, steps };  // 책 끝에서 더 나가지 않음
     if (b.scrollTop < 4) { prev = { k: 'chapter:' + ch }; prevSeen = []; continue; }
     const end = b.scrollTop >= b.scrollHeight - b.clientHeight - 2;
     const els = [...b.querySelectorAll('p,figure,.pmark,.r-toc')].filter(e => { const r = e.getBoundingClientRect(); return r.height > 0 && r.bottom > top + 12; });
