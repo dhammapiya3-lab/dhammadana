@@ -1577,9 +1577,20 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
     b.innerHTML = `<span class="ib-t">📲 이 도서관을 휴대폰·컴퓨터에 <b>앱처럼 설치</b>하면 홈 화면에서 바로 열고, 읽은 책은 인터넷 없이도 볼 수 있어요.</span><span class="ib-b"><button class="btn" id="ibGo">설치하기</button><button class="tbtn" id="ibNo">닫기</button></span>`;
     document.body.appendChild(b);
     $('#ibNo').onclick = off;
+    const guide = () => {
+      const mob = /Android/i.test(navigator.userAgent);
+      $('.ib-t', b).innerHTML = ios ? '아래쪽(아이패드는 위쪽)의 <b>공유 단추 □↑</b>를 누르고 → <b>‘홈 화면에 추가’</b>를 고르세요. 그러면 홈 화면에 도서관 아이콘이 생겨요.'
+        : mob ? '브라우저 오른쪽 위 <b>⋮ 메뉴</b> → <b>‘앱 설치’</b> 또는 <b>‘홈 화면에 추가’</b>를 누르세요. (삼성 인터넷은 아래쪽 <b>≡ 메뉴 → 현재 페이지 추가 → 홈 화면</b>)'
+        : '주소창 오른쪽 끝의 <b>설치 아이콘(⊕ 또는 모니터 모양)</b>을 누르거나, 오른쪽 위 <b>⋮ 메뉴 → ‘전송, 저장, 공유’ → ‘페이지를 앱으로 설치’</b>를 누르세요. 이미 설치하셨다면 이 안내는 닫으셔도 돼요.';
+      const g = $('#ibGo'); if (g) g.remove();
+    };
     $('#ibGo').onclick = async () => {
-      if (ev) { ev.prompt(); try { const r = await ev.userChoice; if (r && r.outcome === 'accepted') off(); } catch (e) {} ev = null; return; }
-      if (ios) { $('.ib-t', b).innerHTML = '아래쪽(아이패드는 위쪽)의 <b>공유 단추 □↑</b>를 누르고 → <b>‘홈 화면에 추가’</b>를 고르세요. 그러면 홈 화면에 도서관 아이콘이 생겨요.'; $('#ibGo').remove(); return; }
+      if (ev) {
+        const e0 = ev; ev = null;
+        try { await e0.prompt(); const r = await e0.userChoice; if (r && r.outcome === 'accepted') { off(); return; } } catch (e) { guide(); return; }
+        return;
+      }
+      guide();  // 브라우저가 바로 설치 창을 열어 주지 않으면 메뉴에서 설치하는 방법을 안내
     };
   };
   window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); ev = e; show(); });
