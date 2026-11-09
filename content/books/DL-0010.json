@@ -49,10 +49,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "none",
-        "url": "pdf/DL-0010/DL-0010_초판.pdf",
         "site": "",
-        "created": "2010년 4월 5일"
+        "created": "2010년 4월 5일",
+        "mode": "file",
+        "url": "pdf/DL-0010/DL-0010_초판.pdf"
       },
       "pdf_print": {
         "mode": "file",
