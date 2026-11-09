@@ -936,3 +936,4 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .st-hl button{all:unset;cursor:pointer;display:block;padding:7px 0;font-size:14px;line-height:1.6}
 .st-hl button:hover b{text-decoration:underline}
 .st-hl mark{background:#f3e3b5;color:inherit}
+.st-readbtn{font-size:16px;padding:0 22px}

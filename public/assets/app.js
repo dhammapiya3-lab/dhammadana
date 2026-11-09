@@ -145,7 +145,7 @@ async function initMembers() {
   const card = it => `<a class="book" href="#${esc(it.id)}" data-id="${esc(it.id)}" data-title="${esc(it.title)}" data-added="${esc(it.added || '')}">
     <div class="cover">${it.cover && fileSet.has(it.cover) ? `<img class="cover-img" src="${url(it.cover)}" alt="${esc(it.title)} 표지" loading="lazy">` : `<div class="cover-ph">${esc(it.title)}</div>`}</div>
     <div class="t">${esc(it.title)}</div><div class="a">${esc([it.author, it.translator].filter(Boolean).join(' | '))}</div>
-    <div class="fmt">${[it.publisher, it.book_type].filter(Boolean).map(x => `<span>${esc(x)}</span>`).join('')}</div><div class="snip small muted" hidden></div></a>`;
+    <div class="fmt">${[it.publisher, it.book_type].filter(Boolean).map(x => `<span>${esc(x)}</span>`).join('')}</div>${it.text ? '<div class="small" style="margin-top:4px;color:var(--robe)">📖 사이트에서 읽기</div>' : ''}<div class="snip small muted" hidden></div></a>`;
   root.innerHTML = head + (items.length ? `<div class="lib" style="margin-top:18px"><details class="filter-toggle" open><summary>찾아보기</summary><div class="filters">
       <h3>출판사</h3>${[...cfg.publishers, ...others('publisher', cfg.publishers)].map(v => chk('publisher', v)).join('')}
       <h3>책 형식</h3>${[...cfg.book_types, ...others('book_type', cfg.book_types)].map(v => chk('book_type', v)).join('')}
@@ -211,9 +211,8 @@ async function initMembers() {
       <div class="study-book"><div class="cover">${it.cover && fileSet.has(it.cover) ? `<img src="${url(it.cover)}" alt="${esc(it.title)} 표지">` : `<div class="cover-ph">${esc(it.title)}</div>`}</div>
       <div><h1 style="margin:0 0 6px">${esc(it.title)}</h1>${it.subtitle ? `<p class="muted" style="margin:0 0 8px">${esc(it.subtitle)}</p>` : ''}
         <dl class="kv">${it.author ? `<dt>지은이·스승</dt><dd>${esc(it.author)}</dd>` : ''}${it.translator ? `<dt>옮긴이·편자</dt><dd>${esc(it.translator)}</dd>` : ''}${it.publisher ? `<dt>출판사</dt><dd>${esc(it.publisher)}</dd>` : ''}${it.book_type ? `<dt>책 형식</dt><dd>${esc(it.book_type)}</dd>` : ''}${it.year ? `<dt>펴낸 해</dt><dd>${esc(it.year)}</dd>` : ''}</dl>
-        ${it.text ? `<p style="margin:10px 0"><a class="btn" href="#${esc(it.id)}/read">📖 사이트에서 읽기</a></p>` : ''}
         ${(it.topics || []).length ? `<div class="labels">${it.topics.map(t => `<span class="t">${esc(t)}</span>`).join('')}</div>` : ''}
-        <div class="study-dl">${fl.map(f => `<a class="btn" href="${url(f.key)}" target="_blank" rel="noopener">${icon(f.key)} ${esc(kind(f.key))} 열기</a><a class="btn ghost" href="${url(f.key)}?dl">내려받기 <span class="small">${size(f.size)}</span></a>`).join('') || '<p class="muted">파일 준비 중</p>'}</div>
+        <div class="study-dl">${it.text ? `<a class="btn st-readbtn" href="#${esc(it.id)}/read">📖 사이트에서 읽기</a>` : ''}${fl.map(f => `${it.text && /\.(txt|md)$/i.test(f.key) ? '' : `<a class="btn${it.text ? ' ghost' : ''}" href="${url(f.key)}" target="_blank" rel="noopener">${icon(f.key)} ${esc(kind(f.key))} 열기</a>`}<a class="btn ghost" href="${url(f.key)}?dl">${it.text && /\.(txt|md)$/i.test(f.key) ? '글 파일 내려받기' : '내려받기'} <span class="small">${size(f.size)}</span></a>`).join('') || (it.text ? '' : '<p class="muted">파일 준비 중</p>')}</div>
       </div></div>
       ${it.description ? `<h2 class="mb-h" style="margin-top:28px">소개</h2><div class="prose" style="padding:0">${esc(it.description).split(/\n{2,}/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('')}</div>` : ''}
       ${fl.length > 1 ? `<h2 class="mb-h" style="margin-top:28px">파일</h2><ul class="mb-list">${fl.map(fileRow).join('')}</ul>` : ''}`;
