@@ -85,7 +85,9 @@ put('index.html', layout({ page: 'home', body: `<section class="hero"><div class
   <h1>법을 담은 그림책</h1><p>${esc(S.intro)}</p>
   <div class="filter"><input id="q" type="search" placeholder="${U.filter}" aria-label="${U.filter}"><button id="qReset" type="button">${U.reset}</button></div>
 </div></section>
-<div class="wrap">${KO.tiers.map((t, ti) => `<div class="tier t${ti}"><h2 class="tier-h">${esc(t.name)}</h2><p class="muted tier-note">${esc(t.note)}</p>
+<div class="wrap">${(() => { const listed = new Set(KO.tiers.flatMap(t => t.sections.flatMap(x => x[1]))); const fresh = Object.keys(CAT.books).filter(b => !listed.has(b));
+  return fresh.length ? `<div class="tier"><h2 class="tier-h">새로 들어온 그림책</h2><p class="muted tier-note">원 사이트에 새로 올라온 책입니다. 곧 알맞은 자리로 옮깁니다.</p><section class="cat"><div class="grid">${fresh.map(b => card(bookInfo(b))).join('')}</div></section></div>` : ''; })()}
+${KO.tiers.map((t, ti) => `<div class="tier t${ti}"><h2 class="tier-h">${esc(t.name)}</h2><p class="muted tier-note">${esc(t.note)}</p>
 ${t.sections.map(([name, books]) => `<section class="cat">${name ? `<h3>${esc(name)}</h3>` : ''}
   <div class="grid">${books.filter(b => CAT.books[b]).map(b => card(bookInfo(b))).join('')}</div></section>`).join('')}</div>`).join('')}
 <p id="noRes" class="muted" hidden>${U.no_result}</p></div>` }));
