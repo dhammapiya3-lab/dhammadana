@@ -19,4 +19,10 @@ for d in sorted(glob.glob("out/img/*/*/big")):
     slug, sid = d.split("/")[-3], d.split("/")[-2]
     rd[f"{slug}/{sid}"] = len(glob.glob(d + "/*.jpg"))
 json.dump(rd, open("data/rendered.json", "w"), ensure_ascii=False, indent=1, sort_keys=True)
+import hashlib
+st = json.load(open("data/rendered_stamp.json")) if os.path.exists("data/rendered_stamp.json") else {}
+for d in sorted(glob.glob("out/img/*/*/big")):
+    key = "/".join(d.split("/")[-3:-1])
+    st[key] = hashlib.md5(open(f"ko/{key}.json", "rb").read()).hexdigest()
+json.dump(st, open("data/rendered_stamp.json", "w"), indent=1, sort_keys=True)
 print("R2 에 올림:", n, "개 / 한글판 이야기", len(rd), "편")

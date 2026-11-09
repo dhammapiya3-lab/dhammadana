@@ -3,10 +3,21 @@ set -e
 rm -rf out
 while read book story; do
   [ -n "$book" ] && python3 pipeline/render.py "$book" "$story" --src cache/orig --out out/img
-done < jobs/render.txt
+done < <(python3 - <<'PY'
+import glob, json, os
+# 번역이 있는데 아직 안 올렸거나, 번역 파일이 올린 뒤에 바뀐 이야기
+done = json.load(open("data/rendered.json")) if os.path.exists("data/rendered.json") else {}
+stamp = json.load(open("data/rendered_stamp.json")) if os.path.exists("data/rendered_stamp.json") else {}
+for f in sorted(glob.glob("ko/*/*.json")):
+    key = f[3:-5]; book, story = key.split("/")
+    h = __import__("hashlib").md5(open(f, "rb").read()).hexdigest()
+    if key not in done or stamp.get(key) != h:
+        print(book, story)
+PY
+)
 python3 pipeline/upload_r2.py
 # 공개 주소로 잘 보이는지 확인
-first=$(head -1 jobs/render.txt | tr ' ' '/')
+first=$(ls -d out/img/*/* 2>/dev/null | head -1 | sed 's#out/img/##')
 curl -s -o /dev/null -w "공개 주소 확인: %{http_code} %{size_download}바이트\n" "https://files.dhammadana.kr/storybooks/$first/big/01.jpg"
 rm -rf out
 # 그림책 사이트에 '한글판 준비된 이야기' 목록 반영
