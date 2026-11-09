@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """『부처님을 만나다』 개정판 2쇄(DL-0017) 종이책 PDF → content/texts/DL-0017.json
   python3 tools/pdf2text_dl0017.py 책.pdf && python3 tools/split_chapters.py --write
+  ※ 2026-11-09 이후 운영자가 관리자 화면에서 판권지 줄 묶음 등을 고쳤으므로, 다시 돌리면 그 고침이 덮어써짐 — 다시 돌리기 전 확인할 것
 
 PDF 쪽 = 인쇄된 쪽 (528쪽). PDF 파일은 사이트에 올리지 않고 글로 읽기만 씀 (운영자 요청, 2026-11-09).
 글자는 PDF 그대로 (화면에 안 보이는 조판 기호 \\x07 만 뺌). 다르게 한 곳:
