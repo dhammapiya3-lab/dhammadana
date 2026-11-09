@@ -1,0 +1,208 @@
+[
+ {
+  "img": "images/014-The-Wind-Deer-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     280,
+     15
+    ],
+    "shape": "box",
+    "en": "The Wind Deer",
+    "ko": "바람 사슴"
+   },
+   {
+    "seed": [
+     91,
+     279
+    ],
+    "shape": "box",
+    "en": "Benares, ancient times. King Brahmadatta rules. His gardener, Safijaya, tends the royal pleasure gardens. wild Wind-Deer wanders in. True to its hyper-vigilant nature, the timid creature flees at the mere sight of the gardener",
+    "ko": "옛 바라나시, 브라흐마닷따 왕이 다스리던 때입니다. 정원지기 산자야가 왕의 정원을 돌보았습니다. 어느 날 야생 바람 사슴이 정원에 들어왔습니다. 늘 경계하는 본성대로, 겁 많은 사슴은 정원지기를 보자마자 달아났습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/014-The-Wind-Deer-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     281,
+     31
+    ],
+    "shape": "box",
+    "en": "Safijaya reports the elusive visitor.",
+    "ko": "산자야가 이 날쌘 손님을 아뢰었습니다."
+   },
+   {
+    "seed": [
+     206,
+     106
+    ],
+    "shape": "bubble",
+    "en": "“Could you catch it?” asks the King.",
+    "ko": "“잡을 수 있겠느냐?” 왕이 물었습니다."
+   },
+   {
+    "seed": [
+     605,
+     297
+    ],
+    "shape": "bubble",
+    "en": "Oh, yess\" yes,” Safijaya smiles. “If had little honey, bring it right into your palace",
+    "ko": "“그럼요.” 산자야가 웃었습니다. “꿀만 조금 있으면 궁 안까지 데려오겠습니다.”"
+   }
+  ]
+ },
+ {
+  "img": "images/014-The-Wind-Deer-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     459,
+     77
+    ],
+    "shape": "box",
+    "en": "Armed with the king’s honey, Sanjaya sets to work. He anoints the grass at the deer’s favorite spots, then hides in the brush. The snare is not made of rope or wood, but of pure sweetness.",
+    "ko": "왕의 꿀을 받은 산자야는 일을 시작했습니다. 사슴이 즐겨 찾는 곳의 풀에 꿀을 바르고 덤불에 숨었습니다. 덫은 밧줄도 나무도 아닌, 오직 달콤함이었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/014-The-Wind-Deer-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     214,
+     374
+    ],
+    "shape": "box",
+    "en": "The Wind-Deer tastes the honied grass. een snared by the lust of taste, it becomes bound to the pleasure garden. The addiction takes root. It refuses to graze anywhere she",
+    "ko": "바람 사슴은 꿀 바른 풀을 맛보았습니다. 맛에 대한 욕망에 걸린 사슴은 정원을 떠나지 못하게 되었습니다. 중독이 뿌리내려, 이제 다른 곳에서는 풀을 뜯으려 하지 않았습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/014-The-Wind-Deer-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     362,
+     140
+    ],
+    "shape": "box",
+    "en": "High Fear, Low Craving",
+    "ko": "두려움 큼, 갈망 작음"
+   },
+   {
+    "seed": [
+     614,
+     78
+    ],
+    "shape": "box",
+    "en": "Gradually, the gardener reveals himself. As craving for honey increases, the deer’s natural survival instincts dissolve. Familiarity breeds false trust. Soon, the wild creature eats directly from the man’s hand.",
+    "ko": "정원지기는 조금씩 모습을 드러냈습니다. 꿀에 대한 갈망이 커질수록 사슴이 타고난 생존 본능은 녹아 없어졌습니다.\n\n익숙해지자 그릇된 믿음이 생겼습니다.\n\n곧 야생 사슴은 사람 손에 든 먹이를 받아먹게 되었습니다."
+   },
+   {
+    "seed": [
+     72,
+     396
+    ],
+    "shape": "box",
+    "en": "Low ow rear Hig craving",
+    "ko": "두려움 작음, 갈망 큼"
+   },
+   {
+    "seed": [
+     478,
+     254
+    ],
+    "ko": "균형",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/014-The-Wind-Deer-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     70,
+     72
+    ],
+    "shape": "box",
+    "en": "The final phase. Tying honey-gourd to his shoulder, Sanjaya drops wisps of sweet grass, creating trail Blinded by desire, the deer follows him step by step, leaving the wild",
+    "ko": "마지막 단계. 산자야는 꿀 박을 어깨에 매고 달콤한 풀을 조금씩 떨어뜨려 길을 냈습니다. 욕망에 눈먼 사슴은 한 걸음 한 걸음 그를 따라 숲을 떠났습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/014-The-Wind-Deer-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     72,
+     72
+    ],
+    "shape": "box",
+    "en": "They cross the palace threshold. threshold. Instantly, the heavy doors slam shut! Seeing men, the deer’s trance breaks. Terrified for its life, the wild creature dashes frantically around the enclosed stone hall.",
+    "ko": "둘은 궁의 문턱을 넘었습니다. 그 순간 무거운 문이 쾅 닫혔습니다! 사람들을 보자 사슴은 퍼뜩 정신이 들었습니다. 목숨이 두려워진 야생 사슴은 닫힌 돌 전각 안을 미친 듯이 뛰어다녔습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/014-The-Wind-Deer-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     210,
+     127
+    ],
+    "shape": "bubble",
+    "en": "“This creature avoids human scent for week. Yet, ensnared by taste, this wild thing walked right into our halls. Truly, there is nothing viler in the world than this craving",
+    "ko": "“이 사슴은 이레 동안이나 사람 냄새를 피해 다녔다. 그런데 맛에 붙들리자 제 발로 우리 궁에 걸어 들어왔구나. 참으로 세상에 이 갈망보다 더 나쁜 것은 없다.”"
+   },
+   {
+    "seed": [
+     128,
+     73
+    ],
+    "ko": "왕이 내려왔습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/014-The-Wind-Deer-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     425,
+     82,
+     770,
+     222
+    ],
+    "align": "center",
+    "ko": "나 끼랏티 라세히 빠삐요,\n아와세히 와, 산타웨히 와.\n와따미강 게하닛시땅,\n와삼아네시 라세히 산자요 띠.",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     425,
+     232,
+     770,
+     380
+    ],
+    "align": "center",
+    "ko": "집이나 벗보다도\n맛보다 더 나쁜 것은 없네.\n숲에 살던 바람 사슴을\n산자야는 맛으로 길들였네.",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

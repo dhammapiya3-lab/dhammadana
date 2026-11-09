@@ -102,6 +102,8 @@ def render(src_path, boxes):
         # 원래 글자 크기 재기: 글자 조각들의 높이 중앙값 (대문자 높이 ≈ 글자 크기의 0.7)
         n_, lab, st, _ = cv2.connectedComponentsWithStats(text_px)
         hs = [st[i, 3] for i in range(1, n_) if st[i, 4] > 6 and st[i, 3] < (tb[3] - tb[1] + 1)]
+        if hs:
+            big_ = max(hs); hs = [h_ for h_ in hs if h_ >= 0.5 * big_]  # 점·쉼표 같은 작은 조각은 빼고
         em = (np.median(hs) / 0.68) if hs else None
         if b.get("parts"):  # 이어 붙은 말풍선 여럿: 지우기는 한 번에, 글은 칸마다 (rect 는 800px 기준)
             kk = W / 800

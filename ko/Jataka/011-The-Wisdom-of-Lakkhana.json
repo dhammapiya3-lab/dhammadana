@@ -1,0 +1,202 @@
+[
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     315,
+     31
+    ],
+    "shape": "box",
+    "en": "Che he Wisdom of",
+    "ko": "락카나의 지혜"
+   },
+   {
+    "seed": [
+     482,
+     358
+    ],
+    "shape": "box",
+    "en": "In ancient Rajagaha, the Buddha revealed past life as wise stag leading herd of thousand deer.",
+    "ko": "옛 라자가하에서 부처님께서 사슴 천 마리를 이끌던 지혜로운 수사슴이었던 전생을 들려주셨습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     302,
+     238
+    ],
+    "shape": "box",
+    "en": "Age ice the Bodhisatta to divide his thousand deer. He entrusted five hundred to the alert Lakkhana, and five hundred to the dull Kala.",
+    "ko": "나이가 들자 보살은 사슴 천 마리를 나누었습니다. 오백 마리는 영리한 락카나에게, 오백 마리는 둔한 깔라에게 맡겼습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     83,
+     51
+    ],
+    "shape": "box",
+    "en": "When crops stand thick in Magadha, the fields become deadly. Peasants protect their harvest with pitfalls, fixed stakes, and hidden snares.",
+    "ko": "마가다에 곡식이 무르익으면 들판은 죽음의 땅이 됩니다. 농부들은 함정과 말뚝과 숨긴 올가미로 곡식을 지킵니다."
+   }
+  ]
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     410,
+     66
+    ],
+    "shape": "bubble",
+    "en": "Many deer meet their death at this season. You must retire with your herds to the mountainous tracts. Return only when the crops are carried",
+    "ko": "이맘때면 많은 사슴이 목숨을 잃는다. 너희는 무리를 이끌고 산속으로 가 있거라. 곡식을 다 거두어들인 뒤에야 돌아오너라."
+   }
+  ]
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     87,
+     51
+    ],
+    "shape": "box",
+    "en": "The journey is perilous. Hunters know the migration routes, ying in wait in hiding-places along the paths destroy the passing herds.",
+    "ko": "가는 길은 위험합니다. 사냥꾼들은 사슴이 옮겨 다니는 길을 알고, 길가 숨을 곳에 숨어 기다리다가 지나가는 무리를 덮칩니다."
+   }
+  ]
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     284,
+     381
+    ],
+    "shape": "box",
+    "en": "Ignorant of when to travel, the dullard Kala marched at dawn and dusk. By approaching the very confines of the sich he invited mass destruction.",
+    "ko": "언제 움직여야 할지 몰랐던 둔한 깔라는 새벽과 해 질 녘에 길을 나섰습니다. 마을 가까이로 지나가는 바람에 많은 사슴을 잃었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     296,
+     388
+    ],
+    "shape": "box",
+    "en": "Lakkhana possessed astute skill in means. By traveling only in the dead of night and avoiding village confines, he reached the fores without losing single head.",
+    "ko": "락카나에게는 뛰어난 방편의 지혜가 있었습니다. 한밤중에만 움직이고 마을 가까이를 피해서, 한 마리도 잃지 않고 숲에 이르렀습니다."
+   },
+   {
+    "rect": [
+     51,
+     53,
+     163,
+     71
+    ],
+    "ko": "깔라의 방법",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     411,
+     53,
+     523,
+     71
+    ],
+    "ko": "깔라의 결과",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     51,
+     232,
+     193,
+     249
+    ],
+    "ko": "락카나의 방법",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     411,
+     232,
+     550,
+     248
+    ],
+    "ko": "락카나의 결과",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     551,
+     322
+    ],
+    "shape": "box",
+    "en": "For four long months, the surviving herds remained safely in the hills. They did not descend until the valley crops were fully carried.",
+    "ko": "넉 달 동안 살아남은 무리는 산에서 무사히 지냈습니다. 골짜기의 곡식을 다 거두어들일 때까지 내려오지 않았습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     246,
+     395
+    ],
+    "shape": "box",
+    "en": "Repeating his folly 0 on the homeward way, the stag Kala lost the last of his survivors. The stag Lakkhana sately ly brought back his entire herd of five hundred.",
+    "ko": "돌아오는 길에도 같은 어리석음을 되풀이한 깔라는 남은 사슴마저 모두 잃었습니다. 락카나는 오백 마리 무리를 모두 무사히 데리고 돌아왔습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/011-The-Wisdom-of-Lakkhana-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     168,
+     30,
+     633,
+     82
+    ],
+    "align": "center",
+    "ko": "덕 있고 다정하게 사는 이는 번영한다. 친족에 둘러싸인 락카나를 보라. 그리고 모두를 잃은 깔라를 보라.",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

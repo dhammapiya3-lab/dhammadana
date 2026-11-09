@@ -1,0 +1,349 @@
+[
+ {
+  "img": "images/012-The-Golden-Deer-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     68,
+     68
+    ],
+    "shape": "box",
+    "en": "the den Der",
+    "ko": "황금 사슴"
+   },
+   {
+    "seed": [
+     230,
+     237
+    ],
+    "shape": "bubble",
+    "en": "In the past, when Brahmadatta was reigning in Benares, the Bodhisatta was born golden deer...",
+    "ko": "옛날 브라흐마닷따 왕이 바라나시를 다스리던 때, 보살은 황금 사슴으로 태어났다…"
+   }
+  ]
+ },
+ {
+  "img": "images/012-The-Golden-Deer-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     281,
+     69
+    ],
+    "shape": "box",
+    "en": "Two golden deer kings, Nigrodha and Sakha, cade led herd of five hundred in ues rest.",
+    "ko": "니그로다와 사카, 두 황금 사슴 왕이 숲에서 저마다 오백 마리 무리를 이끌었습니다."
+   },
+   {
+    "seed": [
+     549,
+     366
+    ],
+    "shape": "box",
+    "en": "Sakha",
+    "ko": "사카"
+   },
+   {
+    "seed": [
+     191,
+     357
+    ],
+    "ko": "니그로다",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/012-The-Golden-Deer-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     84,
+     72
+    ],
+    "shape": "box",
+    "en": "The King of Benares was passionately fond of hunting.",
+    "ko": "바라나시 왕은 사냥을 몹시 좋아했습니다."
+   },
+   {
+    "seed": [
+     601,
+     196
+    ],
+    "shape": "bubble",
+    "en": "This king stops all our work! We must work in his pleasure gardens to feed him!",
+    "ko": "이 왕 때문에 일을 못 해! 왕의 정원에서 사냥감을 대느라 우리만 고생이야!"
+   }
+  ]
+ },
+ {
+  "img": "images/012-The-Golden-Deer-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     260,
+     68
+    ],
+    "shape": "box",
+    "en": "Armed with weapons and deafening noise, the townsfolk drove both herds into the royal pleasure gardens.",
+    "ko": "사람들은 무기를 들고 요란한 소리를 내며 두 무리를 왕의 정원으로 몰아넣었습니다."
+   },
+   {
+    "seed": [
+     422,
+     135
+    ],
+    "shape": "bubble",
+    "en": "Shut the my Henceforth, the King feeds on them bei",
+    "ko": "문을 닫아라! 이제부터 왕께서는 여기서 사냥하시리라."
+   }
+  ]
+ },
+ {
+  "img": "images/012-The-Golden-Deer-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     254,
+     69
+    ],
+    "shape": "box",
+    "en": "To prevent needless wounding from random hunts, the kings agreed on tragic lottery.",
+    "ko": "마구잡이 사냥으로 쓸데없이 다치는 일을 막으려고, 두 사슴 왕은 슬픈 제비뽑기에 합의했습니다."
+   },
+   {
+    "seed": [
+     395,
+     131
+    ],
+    "shape": "bubble",
+    "en": "Let the deer go to the block by turns. One day from my herd, the next from yours.",
+    "ko": "사슴을 차례로 도마에 보내자. 하루는 내 무리에서, 다음 날은 네 무리에서."
+   }
+  ]
+ },
+ {
+  "img": "images/012-The-Golden-Deer-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     273,
+     123
+    ],
+    "shape": "bubble",
+    "en": "Bear your own fortune Begone!",
+    "ko": "네 운명은 네가 감당하라. 물러가라!"
+   },
+   {
+    "seed": [
+     282,
+     70
+    ],
+    "shape": "box",
+    "en": "Ordinary Leader vs. The Bodhisatta Leader.",
+    "ko": "보통 지도자와 보살 지도자"
+   },
+   {
+    "seed": [
+     472,
+     127
+    ],
+    "shape": "bubble",
+    "en": "“Go in peace. Iwill will see the turn passes over you.",
+    "ko": "편히 가거라. 네 차례는 내가 넘겨주겠다."
+   },
+   {
+    "seed": [
+     367,
+     223
+    ],
+    "shape": "bubble",
+    "en": "Lord, pass over turn until my little one is born.",
+    "ko": "왕이시여, 새끼를 낳을 때까지만 제 차례를 미뤄 주십시오."
+   }
+  ]
+ },
+ {
+  "img": "images/012-The-Golden-Deer-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     588,
+     95
+    ],
+    "shape": "bubble",
+    "en": "Why is the ki gof of the deer on the block? must tell the King!",
+    "ko": "사슴의 왕이 왜 도마 위에 있지? 임금님께 알려야겠다!"
+   },
+   {
+    "seed": [
+     72,
+     76
+    ],
+    "ko": "니그로다는 몸소 처형장으로 갔습니다.",
+    "align": "left",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/012-The-Golden-Deer-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     433,
+     72
+    ],
+    "shape": "bubble",
+    "en": "My friend, the golden king of the deer! Did not grant you immunity? How comes it that you are lying here?",
+    "ko": "벗이여, 황금 사슴 왕이여! 내가 그대의 목숨은 살려 주지 않았던가? 어찌하여 여기 누워 있는가?"
+   }
+  ]
+ },
+ {
+  "img": "images/012-The-Golden-Deer-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     472,
+     102
+    ],
+    "shape": "bubble",
+    "en": "doe prayed me to let her turn fall on another. As could not pass the doom of one onto another, take her doom upon myself.",
+    "ko": "암사슴 하나가 자기 차례를 다른 이에게 넘겨 달라고 빌었습니다. 한 생명의 죽음을 다른 이에게 떠넘길 수 없어, 제가 그 죽음을 대신 지기로 했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/012-The-Golden-Deer-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     358,
+     142
+    ],
+    "shape": "bubble",
+    "en": "ner have seen such loving-kindness. spare you both!",
+    "ko": "이런 자애는 처음 본다. 너희 둘을 모두 살려 주마!"
+   },
+   {
+    "shape": "box",
+    "en": "so, the amnesty sty expanded outward to every living creature.",
+    "ko": "이렇게 놓아줌은 살아 있는 모든 것에게로 넓어졌습니다.",
+    "rect": [
+     262,
+     402,
+     538,
+     432
+    ],
+    "align": "center"
+   },
+   {
+    "seed": [
+     433,
+     184
+    ],
+    "ko": "다른 이들은요?",
+    "align": "center",
+    "shape": "bubble",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/012-The-Golden-Deer-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     418,
+     62
+    ],
+    "shape": "bubble",
+    "en": "Walk in righteousness, great king. Act with justice towards parents, children townsmen, and countryfolk.",
+    "ko": "대왕이여, 법답게 사십시오. 부모와 자식, 성 안 사람과 시골 사람을 공정하게 대하십시오."
+   },
+   {
+    "seed": [
+     566,
+     380
+    ],
+    "shape": "box",
+    "en": "established the king in the Dhamma.",
+    "ko": "부처님 같은 자비로 그는 왕을 법에 굳게 세웠습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/012-The-Golden-Deer-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     102,
+     259
+    ],
+    "shape": "bubble",
+    "en": "Associate with Nigrodha, associate not with Sakha; better is death with Nigrodha, than is having life with Sakha.",
+    "ko": "니그로다를 가까이하고 사카를 가까이하지 마라. 니그로다와 함께 죽는 것이 사카와 함께 사는 것보다 낫다."
+   }
+  ]
+ },
+ {
+  "img": "images/012-The-Golden-Deer-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     457,
+     76
+    ],
+    "shape": "bubble",
+    "en": "Sire, they eat our livelihood!",
+    "ko": "임금님, 저 사슴들이 저희 먹을 것을 다 먹어 치웁니다!"
+   },
+   {
+    "seed": [
+     283,
+     292
+    ],
+    "shape": "bubble",
+    "en": "will forego my kingdom rather than my promise Not man may harm them",
+    "ko": "약속을 저버리느니 차라리 나라를 내놓겠다. 누구도 저들을 해쳐서는 안 된다."
+   },
+   {
+    "seed": [
+     62,
+     61
+    ],
+    "ko": "목숨을 보장받은 사슴들이 마을 사람들의 곡식을 먹기 시작했습니다.",
+    "align": "left",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/012-The-Golden-Deer-14-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     180,
+     68
+    ],
+    "shape": "bubble",
+    "en": "Let no farmer fence his field, but merely indicate it with tied leaves",
+    "ko": "농부는 밭에 울타리를 치지 말고, 잎을 매달아 표시만 하라."
+   },
+   {
+    "seed": [
+     543,
+     354
+    ],
+    "shape": "box",
+    "en": "systemic solution built on mutual respect and instruction, not violence",
+    "ko": "폭력이 아니라 서로 존중하고 일깨움으로써 함께 사는 길입니다."
+   }
+  ]
+ }
+]
