@@ -1,0 +1,4 @@
+# 그림책 사이트 전용 Cloudflare Pages 설정 (도서관의 wrangler.toml 을 읽지 않도록)
+name = "dhamma-storybooks"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-11-01"
