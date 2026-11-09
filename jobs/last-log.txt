@@ -1,6 +1,7 @@
-049-The-Lucky-Star
-050-The-Kings-Stratagem
-remote: 
-remote: Create a pull request for 'storybooks-review' on GitHub by visiting:        
-remote:      https://github.com/dhammapiya3-lab/dhammadana/pull/new/storybooks-review        
-remote: 
+Jataka 001-The-Waterless-Desert 15 장
+Jataka 002-The-Well-of-Perseverance 15 장
+Jataka 003-The-Golden-Bowl 14 장
+Jataka 004-The-Dead-Mouse 15 장
+Jataka 005-The-Measure-of-Rice 14 장
+R2 에 올림: 192 개 / 한글판 이야기 5 편
+공개 주소 확인: 200 1156766바이트
