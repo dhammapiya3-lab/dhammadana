@@ -345,10 +345,12 @@ P[12][1] = [f'![#가르침을 배우다 구성표]({u})']
 # 13~17쪽 차례: %% 문단 (x 자리로 단계, \x08 이음 표시는 점선)
 TOCROWS = []
 for n in range(13, 18):
-    left, _ = geom(n); out, head = [], []
+    left, _ = geom(n); out, head = [], []; py = None
     for a in lines_of(n):
         t = plain(a)
         if a['head']: head.append('## ' + t); continue
+        if py is not None and out and a['y0'] - py > 22: out.append('~')  # 인쇄본에서 줄 사이가 벌어진 곳 = 묶음 간격
+        py = a['y0']
         m = re.match(r'(.*?)\s*\x08\s*(\d+)$', t)
         title, pg = (m.group(1).strip(), m.group(2)) if m else (t.replace('\x08', '').strip(), '')
         lv = 0 if a['x0'] < left + 5 else (1 if a['x0'] < left + 13 else 2)

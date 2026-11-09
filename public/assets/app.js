@@ -1135,7 +1135,7 @@ const EN_A = '\u0001', EN_B = '\u0002';  // 영어 구간 표시 (영어 목소�
 function sayable(s, o = ttsOpt(), mark = false) {
   const en = w => mark ? EN_A + w + EN_B : w;
   let t = unB(s).replace(/^## /, '');
-  if (/^%% /.test(t)) t = tocLines(t).map(r => r.t + (r.p ? `, ${r.p}쪽` : '')).join('.\n');
+  if (/^%% /.test(t)) t = tocLines(t).filter(r => !r.sp).map(r => r.t + (r.p ? `, ${r.p}쪽` : '')).join('.\n');
   if (o.paren === false) { let prev; do { prev = t; t = t.replace(/\s?[(（][^()（）]*[)）]/g, ''); } while (t !== prev); }
   if (o.brack === false) t = t.replace(/\s?\[(?!\^)[^\[\]]*\]/g, '');
   t = t.replace(/\[\^([^\]]+)\]/g, (m, n) => o.fn ? ` 각주 ${n}, ` : ''); // 본문 속 각주 번호: '각주 읽기'를 켜면 '각주 1'로, 끄면 읽지 않음
@@ -1232,12 +1232,12 @@ function blockHtml(s, n, k) {
   const f = s.match(FIG_RE);
   if (f && f[1].startsWith('#')) { const alt = f[1].slice(1).trim(); return `<figure class="r-fig" data-pg="${n}" data-s="${k}" data-skip="1"><button class="fig-btn" data-zoom-img="${esc(f[2])}" data-cap="${esc(alt)}" aria-label="그림 크게 보기"><img src="${esc(f[2])}" alt="${esc(alt)}" loading="lazy"></button></figure>`; }  // ![#설명](주소): 설명은 화면에 안 보이고 읽기 프로그램만 읽음
   if (f) return `<figure class="r-fig" data-pg="${n}" data-s="${k}" data-skip="1"><button class="fig-btn" data-zoom-img="${esc(f[2])}" data-cap="${esc(f[1])}" aria-label="그림 크게 보기"><img src="${esc(f[2])}" alt="${esc(f[1])}" loading="lazy"></button>${f[1] ? `<figcaption>${esc(f[1])}</figcaption>` : ''}</figure>`;
-  if (/^%% /.test(s)) return `<div class="r-toc" data-pg="${n}" data-s="${k}" data-skip="1">${tocLines(s).map(r => `<div class="tl l${Math.min(r.lv, 3)}"><span class="tt">${boldMark(esc(r.t))}</span>${r.p ? `<span class="dots" aria-hidden="true"></span><span class="tp">${esc(r.p)}</span>` : ''}</div>`).join('')}</div>`;  // 차례: 인쇄본처럼 단계별 들여쓰기·점선·쪽 번호
+  if (/^%% /.test(s)) return `<div class="r-toc" data-pg="${n}" data-s="${k}" data-skip="1">${tocLines(s).map(r => r.sp ? '<div class="tl-sp" aria-hidden="true"></div>' : `<div class="tl l${Math.min(r.lv, 3)}"><span class="tt">${boldMark(esc(r.t))}</span>${r.p ? `<span class="dots" aria-hidden="true"> </span><span class="tp">${esc(r.p)}</span>` : ''}</div>`).join('')}</div>`;  // 차례: 인쇄본처럼 단계별 들여쓰기·점선·쪽 번호
   if (isTable(s)) return `<div class="r-tbl" data-pg="${n}" data-s="${k}" data-skip="1">${tableHtml(s)}<button class="tbtn sm" data-zoom-tbl>표 크게 보기</button></div>`;
   return null;
 }
 // 차례 문단 '%% ': 줄마다 앞의 - 개수 = 단계(없으면 장), ' | ' 뒤 = 쪽 번호  예) %% 제1장  서원과 수기\n- 서원을 하다 | 36\n-- 수메다 바라문 | 36
-const tocLines = s => s.replace(/^%% /, '').split('\n').filter(l => l.trim()).map(l => { const m = l.match(/^(-*)\s*(.*?)(?:\s+\|\s*(\S+))?\s*$/); return { lv: m[1].length, t: m[2], p: m[3] || '' }; });
+const tocLines = s => s.replace(/^%% /, '').split('\n').filter(l => l.trim()).map(l => { if (l.trim() === '~') return { sp: true, lv: 0, t: '', p: '' }; const m = l.match(/^(-*)\s*(.*?)(?:\s+\|\s*(\S+))?\s*$/); return { lv: m[1].length, t: m[2], p: m[3] || '' }; });
 const isFootnote = p => /^\[\^[^\]]+\]:/.test(p);
 // 장 첫 쪽에서 장 제목과 같은 글(소제목·가운데 제목)은 화면에서 숨기고 소리로도 두 번 읽지 않음 — 장 제목으로 통일
 const dupKey = t => headKey(t).replace(/[.,:·\-–—!?■_]/g, '');

@@ -951,3 +951,5 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .r-toc .l1{padding-left:1.5em}
 .r-toc .l2{padding-left:3em;font-size:.88em;color:var(--muted)}
 .r-toc .l3{padding-left:4.5em;font-size:.85em;color:var(--muted)}
+.r-toc .tl-sp{height:.9em}
+.r-toc .tl-sp + .l0{margin-top:0}
