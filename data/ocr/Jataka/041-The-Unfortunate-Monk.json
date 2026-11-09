@@ -9,18 +9,18 @@
   "boxes": [
    {
     "seed": [
-     150,
-     160
+     218,
+     74
     ],
     "bbox": [
-     347,
-     479,
-     1322,
-     1141
+     711,
+     245,
+     1931,
+     347
     ],
-    "shape": "bubble",
-    "en": "ij 1)",
-    "conf": 49
+    "shape": "box",
+    "en": "The Karmic Ledger Toa of Mittavindaka",
+    "conf": 38
    }
   ],
   "loose": [
@@ -44,8 +44,8 @@
   "boxes": [
    {
     "seed": [
-     200,
-     404
+     130,
+     395
     ],
     "bbox": [
      341,
@@ -54,8 +54,8 @@
      1455
     ],
     "shape": "box",
-    "en": "the of Kassapa Buddha, village monk grew deeply jealous. He feared visiting Arahat would permanently steal the devotion and alms of his patron.",
-    "conf": 93
+    "en": "During the era of Kassapa Buddha, village monk grew deeply jealous. He feared visiting Arahat would permanently steal the devotion and alms of his patron.",
+    "conf": 92
    }
   ],
   "loose": []
@@ -67,7 +67,38 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
+  "boxes": [
+   {
+    "seed": [
+     179,
+     68
+    ],
+    "bbox": [
+     575,
+     165,
+     2093,
+     314
+    ],
+    "shape": "box",
+    "en": "The monk buried alms in an ember pit.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     542,
+     167
+    ],
+    "bbox": [
+     1792,
+     532,
+     2371,
+     602
+    ],
+    "shape": "box",
+    "en": "Embers: Hidden completely.",
+    "conf": 97
+   }
+  ],
   "loose": []
  },
  {
@@ -80,18 +111,63 @@
   "boxes": [
    {
     "seed": [
-     300,
-     309
+     246,
+     34
     ],
     "bbox": [
-     215,
-     995,
-     1299,
-     1326
+     794,
+     73,
+     1848,
+     182
     ],
-    "shape": "bubble",
-    "en": "Ve",
-    "conf": 84
+    "shape": "box",
+    "en": "The karmic cost of greedy sabotage",
+    "conf": 96
+   },
+   {
+    "seed": [
+     553,
+     100
+    ],
+    "bbox": [
+     1792,
+     331,
+     2423,
+     473
+    ],
+    "shape": "box",
+    "en": "Hell: Tormented for hundreds of thousands of years.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     599,
+     215
+    ],
+    "bbox": [
+     1792,
+     711,
+     2423,
+     853
+    ],
+    "shape": "box",
+    "en": "Yakkha: 500 births, starving save for one meal of offal.",
+    "conf": 66
+   },
+   {
+    "seed": [
+     553,
+     331
+    ],
+    "bbox": [
+     1792,
+     1084,
+     2423,
+     1223
+    ],
+    "shape": "box",
+    "en": "Dog: 500 births, starving save for one meal of vomit.",
+    "conf": 90
    }
   ],
   "loose": []
@@ -116,7 +192,7 @@
      1346
     ],
     "shape": "box",
-    "en": "family, Mittavindaka Finally reborn in Kasi beggar brought them total ruin. Beaten and driven out, he became wandering curse.",
+    "en": "Finally reborn human in Kasi beggar family, family, Mittavindaka brought them total ruin. Beaten and driven out, he became wandering curse.",
     "conf": 84
    }
   ],
@@ -143,7 +219,7 @@
     ],
     "shape": "box",
     "en": "In Benares, the Bodhisatta—a renowned, ordinary teacher—took him in. But Mittavindaka was fierce, intractable, and rejected his master’s reproofs. He ran away.",
-    "conf": 92
+    "conf": 91
    }
   ],
   "loose": []
@@ -194,23 +270,8 @@
      374
     ],
     "shape": "box",
-    "en": "in mid-ocean. math of arma, not chance: seven consecutive times, the cursed lot fell to Mittavindaka.",
-    "conf": 92
-   },
-   {
-    "seed": [
-     435,
-     295
-    ],
-    "bbox": [
-     1200,
-     893,
-     1442,
-     1237
-    ],
-    "shape": "bubble",
-    "en": "4",
-    "conf": 57
+    "en": "ship in mid-ocean, The math of karma, arma, not chance: seven consecutive times, the cursed lot fell to Mittavindaka.",
+    "conf": 40
    },
    {
     "seed": [
@@ -225,7 +286,7 @@
     ],
     "shape": "box",
     "en": "They cast him overboard on beggar.",
-    "conf": 82
+    "conf": 88
    }
   ],
   "loose": []
@@ -238,6 +299,21 @@
   ],
   "ref": 800,
   "boxes": [
+   {
+    "seed": [
+     602,
+     58
+    ],
+    "bbox": [
+     334,
+     175,
+     2308,
+     261
+    ],
+    "shape": "box",
+    "en": "Past obedience to Precepts under ler np Kassapa Buddha ripened pen as temporary merit viman",
+    "conf": 62
+   },
    {
     "seed": [
      453,
@@ -280,8 +356,8 @@
      1018
     ],
     "shape": "box",
-    "en": "Jewel 16 Devadhita 7 Days",
-    "conf": 92
+    "en": "Jewel 16 Devadhita 7 Days aA",
+    "conf": 58
    },
    {
     "seed": [
@@ -295,13 +371,26 @@
      1256
     ],
     "shape": "box",
-    "en": "Gold 32 Devadhita 7",
+    "en": "Gold 32 Devadhita 7 Days",
     "conf": 91
+   },
+   {
+    "seed": [
+     294,
+     410
+    ],
+    "bbox": [
+     572,
+     1280,
+     2070,
+     1428
+    ],
+    "shape": "box",
+    "en": "Yet, as material terial wealth ealth and Devadhita exponentially multiplied, his restless greed forced him to abandon every palace in search of more.",
+    "conf": 86
    }
   ],
-  "loose": [
-   "Hirt"
-  ]
+  "loose": []
  },
  {
   "img": "images/041-The-Unfortunate-Monk-10-Original.jpg",
@@ -327,7 +416,9 @@
     "conf": 92
    }
   ],
-  "loose": []
+  "loose": [
+   "ASS"
+  ]
  },
  {
   "img": "images/041-The-Unfortunate-Monk-11-Original.jpg",
@@ -349,7 +440,7 @@
      1151
     ],
     "shape": "box",
-    "en": "It was Yakkhini in disguise. By her Yakkha- nature, she hurled him the dropping across ocean, him violently into the dry moat of Benares.",
+    "en": "It was Yakkhini in disguise. By her Yakkha- nature, she hurled him across the ocean, dropping him violently into the dry moat of Benares.",
     "conf": 79
    }
   ],
@@ -403,11 +494,12 @@
      1418
     ],
     "shape": "box",
-    "en": "The Bodhisatta, passing by, recognized his former runaway pupil. Intervening, he claimed the thief as his own slave to save him from execution",
-    "conf": 92
+    "en": "The Bodhisatta, passing by, recognized his former runaway pupil. Intervening, he claimed the thief as his own slave to save him from execution.",
+    "conf": 91
    }
   ],
   "loose": [
+   "NOY,",
    "NOY,",
    "bef"
   ]
@@ -419,19 +511,36 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
+  "boxes": [
+   {
+    "seed": [
+     686,
+     79
+    ],
+    "bbox": [
+     1901,
+     188,
+     2466,
+     417
+    ],
+    "shape": "bubble",
+    "en": "Lip",
+    "conf": 71
+   }
+  ],
   "loose": [
+   "Ignorance",
    "Resenting",
    "the",
-   "Arahat’s",
    "presence.",
-   "Fleeing",
    "the",
    "Bodhisatta’s",
    "teachings.",
    "Ignoring",
    "the",
-   "warnings."
+   "Devadhita’s",
+   "warnings.",
+   "Fleeing"
   ]
  },
  {
@@ -454,12 +563,12 @@
      526
     ],
     "shape": "bubble",
-    "en": "He who does not take the advice of one who seeks his good grieves like Mittaka holding onto the goat’s foot",
-    "conf": 92
+    "en": "He who does not take the advice of one who seeks his good, grieves like Mittaka holding onto the goat’s foot.",
+    "conf": 90
    }
   ],
   "loose": [
-   "NOY,"
+   "NOY"
   ]
  }
 ]

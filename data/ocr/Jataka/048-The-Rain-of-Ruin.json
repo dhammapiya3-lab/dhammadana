@@ -40,8 +40,8 @@
      393
     ],
     "shape": "box",
-    "en": "Traveling to the Bodhisatta and his master were captured by five hundred robbers known “The Dispatchers.”",
-    "conf": 93
+    "en": "Traveling to Cet, the Bodhisatta and his master were captured by five hundred robbers known as alte Dispatchers.”",
+    "conf": 36
    },
    {
     "seed": [
@@ -55,11 +55,13 @@
      1253
     ],
     "shape": "box",
-    "en": "Their rule: Keep the dispatch the pupil for ransom. The Bodhisatta was sent to fetch the gold.",
-    "conf": 92
+    "en": "Their rule: Keep the master, dispatch the pupil for ransom. The Bodhisatta was sent to fetch the gold.",
+    "conf": 72
    }
   ],
-  "loose": []
+  "loose": [
+   "wale"
+  ]
  },
  {
   "img": "images/048-The-Rain-of-Ruin-03-Original.jpg",
@@ -81,11 +83,13 @@
      830
     ],
     "shape": "bubble",
-    "en": "will return. Have no fear,” the Bodhisatta warned. “Tonight the planets align. Do not repeat the Vedabbha charm to call down the precious rain. If you yield to this mishap, calamity will befall you and these robbers.”",
-    "conf": 92
+    "en": "will return. 3 Have 5 no fear,” the 2 Bodhisatta warned. “Tonight the planets align. Do not repeat the Vedabbha charm to call down the precious cious rain. If you yield to this mishap, calamity will befall you and these robbers.”",
+    "conf": 56
    }
   ],
-  "loose": []
+  "loose": [
+   "We."
+  ]
  },
  {
   "img": "images/048-The-Rain-of-Ruin-04-Original.jpg",
@@ -97,7 +101,7 @@
   "boxes": [
    {
     "seed": [
-     123,
+     124,
      72
     ],
     "bbox": [
@@ -107,8 +111,8 @@
      393
     ],
     "shape": "box",
-    "en": "Bound and impatient, the brahmin watched the eastern horizon. Seeing the great conjunction, he bargained for his release",
-    "conf": 92
+    "en": "Bound and impatient, the brahmin watched the eastern horizon. Seeing the great conjunction, he bargained for his release.",
+    "conf": 93
    },
    {
     "seed": [
@@ -122,8 +126,8 @@
      1253
     ],
     "shape": "box",
-    "en": "Bathed and perfumed by the robbers, he lifted his eyes to the heavens and chanted the forbidden charm.",
-    "conf": 93
+    "en": "Bathed 4 and perfumed 3 by the 2 robbers, 3 he lifted 3 his eyes to the heavens and chanted the forbidden charm.",
+    "conf": 46
    }
   ],
   "loose": []
@@ -149,7 +153,7 @@
     ],
     "shape": "box",
     "en": "Forthwith, the Seven Things of Price poured from the skies.",
-    "conf": 92
+    "conf": 91
    },
    {
     "seed": [
@@ -163,13 +167,11 @@
      1253
     ],
     "shape": "box",
-    "en": "ann into The robbers scrambled, wrapping the unimaginable their cloaks. Marching away with their heavy booty, the brahmin followed safely behind. Or so he thought.",
+    "en": "The robbers ira) 2 scrambled, 3 wrapping 5 on the unimaginable on ra) 2 ann wealth into their cloaks. 4 Marching away with their heavy booty, the brahmin followed safely behind. Or so he thought.",
     "conf": 47
    }
   ],
-  "loose": [
-   "Gea"
-  ]
+  "loose": []
  },
  {
   "img": "images/048-The-Rain-of-Ruin-06-Original.jpg",
@@ -192,12 +194,12 @@
     ],
     "shape": "box",
     "en": "As luck would have it, second band of five hundred robbers ambushed them.",
-    "conf": 95
+    "conf": 58
    },
    {
     "seed": [
-     444,
-     72
+     642,
+     88
     ],
     "bbox": [
      1465,
@@ -208,21 +210,25 @@
     "shape": "box",
     "en": "Learning the brahmin had conjured the riches, they demanded shower of their own.",
     "conf": 93
+   },
+   {
+    "seed": [
+     557,
+     305
+    ],
+    "bbox": [
+     1752,
+     853,
+     2248,
+     1246
+    ],
+    "shape": "bubble",
+    "en": "cannot,” he trembled. “The planets will not align for another year.”",
+    "conf": 96
    }
   ],
   "loose": [
-   "ale",
-   "Gea",
-   "cannot,”",
-   "trembled.",
-   "“The",
-   "planets",
-   "will",
-   "not",
-   "align",
-   "for",
-   "another",
-   "year.”"
+   "ale"
   ]
  },
  {
@@ -233,6 +239,21 @@
   ],
   "ref": 800,
   "boxes": [
+   {
+    "seed": [
+     269,
+     74
+    ],
+    "bbox": [
+     714,
+     172,
+     1918,
+     466
+    ],
+    "shape": "bubble",
+    "en": "“Rascally brahmin!” the robbers roared. “You made them rich off-hand, but want us to wait whole year",
+    "conf": 92
+   },
    {
     "seed": [
      252,
@@ -250,21 +271,6 @@
    }
   ],
   "loose": [
-   "“Rascally",
-   "brahmin!”",
-   "the",
-   "robbers",
-   "roared.",
-   "“You",
-   "made",
-   "them",
-   "rich",
-   "off-hand,",
-   "but",
-   "want",
-   "wait",
-   "whole",
-   "year!”",
    "ite"
   ]
  },
@@ -288,8 +294,8 @@
      1210
     ],
     "shape": "box",
-    "en": "The began massacre The second band slaughtered the first Then, fighting over the booty, they divided and slaughtered each other. 1,000 robbers fought Then 500 Then 250 Down and down they fought, until only two men remained alive",
-    "conf": 92
+    "en": "The massacre began. The second band slaughtered the first. Then, fighting over the booty, they divided and slaughtered each other. 1,000 robbers fought. Then 500. Then 250. Down and down they fought, until only two men remained alive.",
+    "conf": 95
    }
   ],
   "loose": [
@@ -316,12 +322,12 @@
      271
     ],
     "shape": "box",
-    "en": "The survivors hid the treasure. stayed to guard it; the other we",
-    "conf": 93
+    "en": "The two survivors hid the treasure. One stayed to guard it; the other went for food",
+    "conf": 96
    },
    {
     "seed": [
-     199,
+     200,
      359
     ],
     "bbox": [
@@ -331,7 +337,7 @@
      1309
     ],
     "shape": "box",
-    "en": "In perfect consumed them both. The guard drew his sword to murder his mate. The forager poisoned the rice to claim it all.",
+    "en": "In perfect symmetry, greed consumed them both. The guard drew his sword to murder his mate. The forager poisoned the rice to claim it all",
     "conf": 93
    }
   ],
@@ -357,8 +363,8 @@
      800
     ],
     "shape": "box",
-    "en": "The moment the forager returned, the guard cut him down Alone with the vast treasure, the murderer sat down to eat his poisoned prize He died then and there",
-    "conf": 84
+    "en": "The moment the forager returned, the guard cut him down. Alone with the vast treasure, the murderer sat down to eat his poisoned prize. He died then and there.",
+    "conf": 89
    },
    {
     "seed": [
@@ -399,10 +405,12 @@
     ],
     "shape": "box",
     "en": "Days later, the Bodhisatta returned with the ransom Finding treasure strewn about and his master’s cloven body, his heart sank His warning had been unheeded With gathered sticks and wild flowers, he built pyre and burnt his master.",
-    "conf": 81
+    "conf": 91
    }
   ],
-  "loose": []
+  "loose": [
+   "RNS"
+  ]
  },
  {
   "img": "images/048-The-Rain-of-Ruin-12-Original.jpg",
@@ -415,7 +423,7 @@
    {
     "seed": [
      201,
-     95
+     98
     ],
     "bbox": [
      430,
@@ -424,8 +432,8 @@
      899
     ],
     "shape": "box",
-    "en": "Following the bloody road, he found the bodies of the five hundred “Dispatchers.” Then two hundred and fifty Marking how the thousand had perished he knew two must have survived. He pressed into the jungle to find them",
-    "conf": 96
+    "en": "Following the bloody road, he found the bodies of the five hundred “Dispatchers.” Then two hundred and fifty. Marking how the thousand had perished, he knew two must have survived. He pressed into the jungle to find them.",
+    "conf": 93
    }
   ],
   "loose": []
@@ -450,13 +458,13 @@
      393
     ],
     "shape": "box",
-    "en": "At the secret spot, he found the treasure, the slain forager, and the poisoned guard",
-    "conf": 93
+    "en": "At the secret spot, he found ne treasure, the slain forager, and the poisoned guard",
+    "conf": 63
    },
    {
     "seed": [
-     62,
-     319
+     111,
+     322
     ],
     "bbox": [
      165,
@@ -465,8 +473,8 @@
      1322
     ],
     "shape": "box",
-    "en": "Realising the entire story at glance he mused on the tragedy. Truly, misguided effort destroys not just oneself, but all others involved",
-    "conf": 95
+    "en": "Realising the entire story at glance, he mused on the tragedy. Truly, misguided effort destroys not just oneself, but all others involved.",
+    "conf": 96
    }
   ],
   "loose": []
@@ -492,17 +500,15 @@
     ],
     "shape": "box",
     "en": "Anupayena yo attham icchati so Ceta hanimsu Vedabbam, sabbe te byasanam-ajjhagi ti.",
-    "conf": 48
+    "conf": 68
    }
   ],
   "loose": [
-   "\"He",
    "who",
    "wrong",
    "means",
    "wishes",
    "for",
-   "benefit",
    "suffers",
    "hardship.",
    "The",
@@ -513,7 +519,7 @@
    "and",
    "all",
    "came",
-   "destruction.”",
+   "destruction.“",
    "preached",
    "the",
    "Dhamma."
@@ -529,8 +535,8 @@
   "boxes": [
    {
     "seed": [
-     67,
-     61
+     89,
+     60
     ],
     "bbox": [
      169,
@@ -539,7 +545,7 @@
      334
     ],
     "shape": "box",
-    "en": "1e Bodhisatta carried the home.",
+    "en": "The 1e Bodhisatta carried the treasure home.",
     "conf": 68
    },
    {
@@ -554,8 +560,8 @@
      1322
     ],
     "shape": "box",
-    "en": "Unlike his master, he did not let consume him. He lived out his term of life in the exercise of boundless generosity and good works, he wea Ith correctly.",
-    "conf": 91
+    "en": "Unlike his master, he did not let greed consume him. He lived out his term of life in the exercise of boundless generosity and good works, utilizing the wealth Ith correctly",
+    "conf": 96
    }
   ],
   "loose": []

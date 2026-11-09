@@ -20,10 +20,12 @@
     ],
     "shape": "box",
     "en": "Nakkhatta Jataka In the past, when Brahmadatta reigned in Benares, two families forged promising alliance.",
-    "conf": 91
+    "conf": 90
    }
   ],
-  "loose": []
+  "loose": [
+   "te."
+  ]
  },
  {
   "img": "images/049-The-Lucky-Star-02-Original.jpg",
@@ -32,24 +34,19 @@
    1488
   ],
   "ref": 800,
-  "boxes": [
-   {
-    "seed": [
-     199,
-     80
-    ],
-    "bbox": [
-     341,
-     192,
-     2301,
-     413
-    ],
-    "shape": "box",
-    "en": "townsfolk asked country-girl in marriage and named the day. The arrangement was made",
-    "conf": 70
-   }
-  ],
+  "boxes": [],
   "loose": [
+   "Some",
+   "townsfolk",
+   "asked",
+   "country-girl",
+   "marriage",
+   "and",
+   "named",
+   "the",
+   "day.",
+   "made.",
+   "arrangement",
    "why"
   ]
  },
@@ -60,24 +57,31 @@
    1488
   ],
   "ref": 800,
-  "boxes": [
-   {
-    "seed": [
-     552,
-     329
-    ],
-    "bbox": [
-     341,
-     1038,
-     2301,
-     1296
-    ],
-    "shape": "box",
-    "en": "after the date. Piqued at being afterthought, the ascetic made thwart an up his mind to their marriage festivities.",
-    "conf": 93
-   }
-  ],
-  "loose": []
+  "boxes": [],
+  "loose": [
+   "The",
+   "townsfolk",
+   "consulted",
+   "their",
+   "family",
+   "ascetic",
+   "only",
+   "after",
+   "the",
+   "date.",
+   "Piqued",
+   "being",
+   "afterthought,",
+   "the",
+   "ascetic",
+   "made",
+   "his",
+   "mind",
+   "their",
+   "setting",
+   "thwart",
+   "festivities."
+  ]
  },
  {
   "img": "images/049-The-Lucky-Star-04-Original.jpg",
@@ -101,26 +105,23 @@
     "shape": "bubble",
     "en": "The stars are not favourable!",
     "conf": 97
-   },
-   {
-    "seed": [
-     428,
-     344
-    ],
-    "bbox": [
-     341,
-     1114,
-     2301,
-     1296
-    ],
-    "shape": "box",
-    "en": "if they grave misfortune would be the result.",
-    "conf": 80
    }
   ],
   "loose": [
+   "The",
+   "ascetic",
+   "lied,",
+   "declaring",
+   "that",
+   "they",
+   "grave",
+   "misfortune",
+   "would",
+   "the",
+   "result.",
    "Se)",
-   "VAN"
+   "VAN",
+   "that"
   ]
  },
  {
@@ -133,18 +134,18 @@
   "boxes": [
    {
     "seed": [
-     134,
-     97
+     317,
+     59
     ],
     "bbox": [
-     370,
-     222,
-     1223,
-     466
+     347,
+     195,
+     1243,
+     489
     ],
     "shape": "box",
-    "en": "Paralyzed by faith the in ascetic and fear of the heavens, they stayed home",
-    "conf": 96
+    "en": "Paralyzed faith in the Soa by in ascetic and fear of the heavens, they stayed home.",
+    "conf": 32
    }
   ],
   "loose": []
@@ -156,24 +157,41 @@
    1488
   ],
   "ref": 800,
-  "boxes": [
-   {
-    "seed": [
-     140,
-     357
-    ],
-    "bbox": [
-     341,
-     1114,
-     2301,
-     1296
-    ],
-    "shape": "box",
-    "en": "country folk (ited, Finding they who town party absent, they was fixed the for today, and now have not come. Who are forsooth?”",
-    "conf": 53
-   }
-  ],
-  "loose": []
+  "boxes": [],
+  "loose": [
+   "country",
+   "Find",
+   "ing",
+   "the",
+   "town",
+   "party",
+   "absent,",
+   "hey",
+   "“Tt",
+   "was",
+   "who",
+   "fixed",
+   "the",
+   "for",
+   "today,",
+   "and",
+   "now",
+   "have",
+   "not",
+   "come.",
+   "Who",
+   "are",
+   "they,",
+   "folk",
+   "the",
+   "forsooth?”",
+   "The",
+   "waited.",
+   "they",
+   "marriage",
+   "they",
+   "The"
+  ]
  },
  {
   "img": "images/049-The-Lucky-Star-07-Original.jpg",
@@ -182,24 +200,26 @@
    1488
   ],
   "ref": 800,
-  "boxes": [
-   {
-    "seed": [
-     563,
-     83
-    ],
-    "bbox": [
-     1633,
-     182,
-     2440,
-     473
-    ],
-    "shape": "box",
-    "en": "to let the go to waste, the country folk acted decisively. They married the girl to someone else.",
-    "conf": 96
-   }
-  ],
-  "loose": []
+  "boxes": [],
+  "loose": [
+   "Refusing",
+   "let",
+   "the",
+   "propitious",
+   "day",
+   "waste,",
+   "the",
+   "country",
+   "folk",
+   "acted",
+   "decisively.",
+   "They",
+   "married",
+   "the",
+   "girl",
+   "someone",
+   "else."
+  ]
  },
  {
   "img": "images/049-The-Lucky-Star-08-Original.jpg",
@@ -208,24 +228,25 @@
    1488
   ],
   "ref": 800,
-  "boxes": [
-   {
-    "seed": [
-     253,
-     351
-    ],
-    "bbox": [
-     655,
-     1108,
-     1990,
-     1296
-    ],
-    "shape": "box",
-    "en": "The next day, the townsfolk arrived and demanded the girl. The country folk stood their firmly.",
-    "conf": 96
-   }
-  ],
-  "loose": []
+  "boxes": [],
+  "loose": [
+   "The",
+   "next",
+   "day,",
+   "the",
+   "townsfolk",
+   "arrived",
+   "and",
+   "demanded",
+   "the",
+   "girl.",
+   "The",
+   "folk",
+   "stood",
+   "their",
+   "firmly.",
+   "country"
+  ]
  },
  {
   "img": "images/049-The-Lucky-Star-09-Original.jpg",
@@ -248,7 +269,7 @@
     ],
     "shape": "bubble",
     "en": "We asked our ascetic, the stars were unfavourable!",
-    "conf": 96
+    "conf": 95
    },
    {
     "seed": [
@@ -262,11 +283,14 @@
      1246
     ],
     "shape": "bubble",
-    "en": "You lacked common decency and stayed away. She is How can we marry her twice over?",
-    "conf": 95
+    "en": "You lacked common decency and stayed away. She is another's. How can we marry her twice over?",
+    "conf": 56
    }
   ],
-  "loose": []
+  "loose": [
+   "townsfolk",
+   "pleaded."
+  ]
  },
  {
   "img": "images/049-The-Lucky-Star-10-Original.jpg",
@@ -288,8 +312,8 @@
      420
     ],
     "shape": "box",
-    "en": "As they wrangled, wise man—a traveling merchant on business—intervened. He listened to the blame their absence on the disposition of the stars.",
-    "conf": 92
+    "en": "As they wrangled, wise man—a traveling merchant on business—intervened. He listened to the townsfolk blame their absence on the unfavourable disposition of the stars.",
+    "conf": 91
    }
   ],
   "loose": []
@@ -314,8 +338,8 @@
      612
     ],
     "shape": "bubble",
-    "en": "What, forsooth, do the stars matter? the wise man asked. \"Is not the lucky thing to get the girl?\"",
-    "conf": 93
+    "en": "\"What, forsooth, do the stars matter?\" the wise man asked. \"Is not the lucky thing to get the girl?\"",
+    "conf": 90
    }
   ],
   "loose": []
@@ -340,8 +364,8 @@
      1256
     ],
     "shape": "box",
-    "en": "Nakkhatam patimanentam atho While waiting on his lucky stars, benefit passes the fool by.",
-    "conf": 70
+    "en": "Nakkhatam patimanentam atho balan balam upaccaga. While waiting on his lucky stars, benefit passes the fool by.",
+    "conf": 35
    }
   ],
   "loose": []
@@ -356,8 +380,8 @@
   "boxes": [
    {
     "seed": [
-     93,
-     323
+     179,
+     339
     ],
     "bbox": [
      261,
@@ -366,11 +390,13 @@
      1256
     ],
     "shape": "box",
-    "en": "Re Attho atthassa nakkhattam, kim karissanti taraka ti? Benefit is benefit’s lucky star, what can the stars achieve?",
+    "en": "Re taraka Attho atthassa nakkhattam, kim karissanti ti? Benefit is benefit’s lucky star, what can the stars achieve?",
     "conf": 49
    }
   ],
-  "loose": []
+  "loose": [
+   "SAN"
+  ]
  },
  {
   "img": "images/049-The-Lucky-Star-14-Original.jpg",
@@ -379,23 +405,27 @@
    1488
   ],
   "ref": 800,
-  "boxes": [
-   {
-    "seed": [
-     125,
-     89
-    ],
-    "bbox": [
-     268,
-     251,
-     1071,
-     532
-    ],
-    "shape": "box",
-    "en": "As for the townsfolk, for ll their wrangling, they did not get the girl. They had to go off home again, om",
-    "conf": 48
-   }
-  ],
-  "loose": []
+  "boxes": [],
+  "loose": [
+   "for",
+   "the",
+   "townsfolk,",
+   "for",
+   "all",
+   "their",
+   "wrangling,",
+   "they",
+   "did",
+   "not",
+   "get",
+   "the",
+   "girl.",
+   "They",
+   "had",
+   "off",
+   "home",
+   "again,",
+   "empty-handed."
+  ]
  }
 ]

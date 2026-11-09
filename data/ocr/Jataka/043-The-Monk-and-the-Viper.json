@@ -20,7 +20,7 @@
     ],
     "shape": "bubble",
     "en": "The Tragedy of Veluka’s Father: Study in Attachment.",
-    "conf": 91
+    "conf": 92
    }
   ],
   "loose": []
@@ -45,8 +45,8 @@
      1418
     ],
     "shape": "box",
-    "en": "From passion springs pain; true bliss requires its abandonment The Bodhisatta sought the Himalayas, mastering the Meditation Object and leading five hundred ascetics in pure liberation",
-    "conf": 86
+    "en": "From passion springs pain; true bliss requires its abandonment. The Bodhisatta sought the Himalayas, mastering the Meditation Object and leading five hundred ascetics in pure liberation.",
+    "conf": 84
    }
   ],
   "loose": [
@@ -74,7 +74,7 @@
     ],
     "shape": "box",
     "en": "But another monk welcomed wandering, poisonous viper into his hut Embracing passion, he grew to love the deadly creature as if it were his own beloved child",
-    "conf": 96
+    "conf": 95
    }
   ],
   "loose": []
@@ -99,11 +99,13 @@
      1306
     ],
     "shape": "box",
-    "en": "Housed safely in joint of bamboo, the viper named “Veluka.” The ascetic’s was attachment total, the monastic community called him only “Veluka’s Father.” was so",
-    "conf": 83
+    "en": "Housed safely in joint of bamboo, the viper was named “Veluka.” The ascetic’s attachment was so total, the monastic community called him only “Veluka’s Father.”",
+    "conf": 81
    }
   ],
-  "loose": []
+  "loose": [
+   "ONG"
+  ]
  },
  {
   "img": "images/043-The-Monk-and-the-Viper-05-Original.jpg",
@@ -115,8 +117,8 @@
   "boxes": [
    {
     "seed": [
-     114,
-     344
+     183,
+     342
     ],
     "bbox": [
      218,
@@ -125,8 +127,8 @@
      1306
     ],
     "shape": "box",
-    "en": "Hearing of this danger, the Bodhisatta intervened with absolute clarity: viper on never be trusted; keep it no longer.”",
-    "conf": 58
+    "en": "Hearing of this danger, the Bodhisatta intervened with ore clarity: viper can never be trusted; keep it no longer.”",
+    "conf": 57
    }
   ],
   "loose": []
@@ -151,8 +153,8 @@
      347
     ],
     "shape": "box",
-    "en": "The true poison was not the venom, but the willful ignorance of objective danger.",
-    "conf": 96
+    "en": "The true poison was not the venom, io) but the willful ignorance io) of objective ive danger.",
+    "conf": 46
    }
   ],
   "loose": [
@@ -163,7 +165,9 @@
    "Misplaced",
    "Affection:",
    "Deadly",
-   "attachment."
+   "attachment.",
+   "ion",
+   "isplaced"
   ]
  },
  {
@@ -186,11 +190,13 @@
      1018
     ],
     "shape": "box",
-    "en": "Heedless, the monk refused. “My viper is as dear to me as pupil; could not live without him.” The master foresaw his inevitable doom.",
+    "en": "Heedless, the monk refused My viper is as dear to me as pupil; could not live without him The master foresaw his inevitable doom",
     "conf": 92
    }
   ],
-  "loose": []
+  "loose": [
+   "ala"
+  ]
  },
  {
   "img": "images/043-The-Monk-and-the-Viper-08-Original.jpg",
@@ -202,7 +208,7 @@
   "boxes": [],
   "loose": [
    "Days",
-   "1-3:",
+   "1-3",
    "The",
    "monks",
    "left",
@@ -219,7 +225,7 @@
    "ravenous,",
    "terrified,",
    "and",
-   "enraged."
+   "enraged"
   ]
  },
  {
@@ -232,7 +238,22 @@
   "boxes": [
    {
     "seed": [
-     290,
+     197,
+     224
+    ],
+    "bbox": [
+     463,
+     575,
+     836,
+     936
+    ],
+    "shape": "bubble",
+    "en": "Come, my son; you must be hungry.",
+    "conf": 90
+   },
+   {
+    "seed": [
+     289,
      406
     ],
     "bbox": [
@@ -242,17 +263,11 @@
      1425
     ],
     "shape": "box",
-    "en": "Angry from its long fast, the viper struck instantly. Veluka’s Father was killed on the spot",
-    "conf": 91
+    "en": "Angry from its long fast, the viper struck instantly. Veluka Father was killed on the spot",
+    "conf": 90
    }
   ],
-  "loose": [
-   "Come,",
-   "son;",
-   "you",
-   "must",
-   "hungry."
-  ]
+  "loose": []
  },
  {
   "img": "images/043-The-Monk-and-the-Viper-10-Original.jpg",
@@ -264,8 +279,8 @@
   "boxes": [
    {
     "seed": [
-     252,
-     89
+     242,
+     73
     ],
     "bbox": [
      774,
@@ -274,8 +289,8 @@
      390
     ],
     "shape": "box",
-    "en": "ovajjamano na karoti sasanam...",
-    "conf": 69
+    "en": "Yo atthakamassa, hitanukampino ovajjamano na karoti sasanam...",
+    "conf": 88
    },
    {
     "seed": [
@@ -290,7 +305,7 @@
     ],
     "shape": "box",
     "en": "He who does not take the advice of one seeking his welfare, is in this way destroyed, like Veluka’s father.",
-    "conf": 91
+    "conf": 93
    }
   ],
   "loose": []

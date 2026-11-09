@@ -23,3 +23,9 @@ books 46 stories 918 images 13186
 037-The-Senior-Partridge.htm: 그림 12 상자 14 상자밖글 6
 046-The-Folly-of-the-Monkeys.htm: 그림 13 상자 18 상자밖글 41
 039-Nanda-and-the-Hoard.htm: 그림 12 상자 19 상자밖글 17
+040-The-Fiery-Pit.htm: 그림 12 상자 14 상자밖글 87
+041-The-Unfortunate-Monk.htm: 그림 15 상자 25 상자밖글 26
+043-The-Monk-and-the-Viper.htm: 그림 10 상자 11 상자밖글 32
+044-The-Son-and-the-Mosquito.htm: 그림 13 상자 12 상자밖글 27
+048-The-Rain-of-Ruin.htm: 그림 15 상자 24 상자밖글 35
+049-The-Lucky-Star.htm: 그림 14 상자 9 상자밖글 136

@@ -9,14 +9,15 @@
   "boxes": [],
   "loose": [
    "The",
-   "ATale",
+   "Tale",
    "Unyielding",
    "Resolve",
    "From",
    "the",
    "Jataka",
    "Tales",
-   "Benares"
+   "Benares",
+   "Test"
   ]
  },
  {
@@ -29,18 +30,33 @@
   "boxes": [
    {
     "seed": [
-     598,
-     54
+     33,
+     42
     ],
     "bbox": [
-     1759,
+     109,
      126,
-     2278,
+     628,
      192
     ],
     "shape": "box",
-    "en": "OB:",
-    "conf": 91
+    "en": "THE LUXURIES OF YOUTH",
+    "conf": 96
+   },
+   {
+    "seed": [
+     280,
+     41
+    ],
+    "bbox": [
+     926,
+     126,
+     1518,
+     192
+    ],
+    "shape": "box",
+    "en": "THE SIX GRAND ALMS HALLS",
+    "conf": 93
    },
    {
     "seed": [
@@ -55,10 +71,13 @@
     ],
     "shape": "box",
     "en": "In ancient Benares, the Bodhisatta was the Lord High Treasurer. Raised in unimaginable luxury, he perfected himself in virtue at sixteen, building six grand alms halls and strictly keeping the Uposatha duties.",
-    "conf": 91
+    "conf": 92
    }
   ],
-  "loose": []
+  "loose": [
+   "gill",
+   "OB:"
+  ]
  },
  {
   "img": "images/040-The-Fiery-Pit-03-Original.jpg",
@@ -68,6 +87,21 @@
   ],
   "ref": 800,
   "boxes": [
+   {
+    "seed": [
+     34,
+     57
+    ],
+    "bbox": [
+     109,
+     126,
+     770,
+     192
+    ],
+    "shape": "box",
+    "en": "Rising from seven-day trance,",
+    "conf": 96
+   },
    {
     "seed": [
      59,
@@ -81,7 +115,7 @@
     ],
     "shape": "box",
     "en": "Washing with water from Lake Anotatta and dressing at Manosila,",
-    "conf": 92
+    "conf": 91
    },
    {
     "seed": [
@@ -111,6 +145,36 @@
   "boxes": [
    {
     "seed": [
+     131,
+     54
+    ],
+    "bbox": [
+     159,
+     155,
+     827,
+     278
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta the hovering sage arrive his gates.",
+    "conf": 78
+   },
+   {
+    "seed": [
+     630,
+     81
+    ],
+    "bbox": [
+     2066,
+     261,
+     2357,
+     456
+    ],
+    "shape": "bubble",
+    "en": "What am to do, my lord?",
+    "conf": 93
+   },
+   {
+    "seed": [
      572,
      343
     ],
@@ -121,15 +185,11 @@
      1313
     ],
     "shape": "bubble",
-    "en": "“Bring his reverence’s bowl,” the Bodhisatta commanded without hesitation",
-    "conf": 91
+    "en": "“Bring ing his reverence’s bowl,” the Bodhisatta commanded without hesitation.",
+    "conf": 73
    }
   ],
-  "loose": [
-   "What",
-   "do,",
-   "lord?"
-  ]
+  "loose": []
  },
  {
   "img": "images/040-The-Fiery-Pit-05-Original.jpg",
@@ -144,7 +204,7 @@
    "the",
    "Wicked",
    "arose",
-   "fury",
+   "fury.",
    "seven",
    "days",
    "since",
@@ -187,13 +247,13 @@
     ],
     "shape": "box",
     "en": "With thought, Mara carved an eighty-cubit abyss into the mansion floor—a roaring pit of blazing Acacia-charcoal, aflame like the great hell of Avici. Mara took his stand in mid-air.",
-    "conf": 91
+    "conf": 89
    }
   ],
   "loose": [
-   "(GNS",
    "Cubits",
-   "Deep"
+   "Deep",
+   "(GNS"
   ]
  },
  {
@@ -216,11 +276,13 @@
      327
     ],
     "shape": "box",
-    "en": "The attendants approached the abyss and recoiled. Panic-stricken by by the blazing heat of the red-hot embers, they abandoned the alms and ran as fast as their legs would carry them.",
+    "en": "The attendants approached the abyss and recoiled. Panic-stricken by the blazing heat of the red-hot embers, they abandoned the alms and ran away as fast as their legs would carry them.",
     "conf": 92
    }
   ],
-  "loose": []
+  "loose": [
+   "INS"
+  ]
  },
  {
   "img": "images/040-The-Fiery-Pit-08-Original.jpg",
@@ -231,13 +293,12 @@
   "ref": 800,
   "boxes": [],
   "loose": [
-   "“Who",
+   "Who",
    "are",
    "you?”",
    "the",
    "householder",
-   "“Tam",
-   "Mara.”",
+   "asked",
    "“Did",
    "you",
    "create",
@@ -246,9 +307,14 @@
    "stop",
    "alms-giving",
    "and",
-   "destroy",
    "this",
-   "Paccekabuddha?”"
+   "Paccekabuddha?”",
+   "“Yes,",
+   "did.”",
+   "destroy",
+   "“Tam",
+   "Mara.”",
+   "“Did"
   ]
  },
  {
@@ -271,8 +337,8 @@
      1408
     ],
     "shape": "box",
-    "en": "will not permit you to do either. have yet to learn that can be shaken by hundred, or thousand Maras. Today will see whose might is greater.” we",
-    "conf": 92
+    "en": "will not permit you to do either. have yet to learn that can be shaken by hundred, or thousand Maras. Today we will see whose might is greater.”",
+    "conf": 90
    }
   ],
   "loose": []
@@ -286,12 +352,12 @@
   "ref": 800,
   "boxes": [],
   "loose": [
+   "Kamam",
    "patami",
-   "nirayarh",
-   "uddham",
+   "nirayam",
+   "uddha",
    "avamsiro,",
    "Nanariyam",
-   "karissami,",
    "handa",
    "pindam",
    "patiggaha",
@@ -323,8 +389,8 @@
   "boxes": [
    {
     "seed": [
-     222,
-     349
+     193,
+     353
     ],
     "bbox": [
      278,
@@ -333,8 +399,8 @@
      1408
     ],
     "shape": "box",
-    "en": "the Bodhisatta of dainty food, the strode with undaunted resolution right onto the surface of the terrifying pit of fire.",
-    "conf": 93
+    "en": "Grasping Qy the bowl 3 of dainty food, lo} the Bodhisatta strode with undaunted resolution right onto the surface of the terrifying pit of fire",
+    "conf": 45
    }
   ],
   "loose": []
@@ -349,7 +415,7 @@
   "boxes": [
    {
     "seed": [
-     556,
+     584,
      54
     ],
     "bbox": [
@@ -359,7 +425,7 @@
      592
     ],
     "shape": "box",
-    "en": "Instantly, peerless lotus erupted through all eighty cubits of the abyss, receiving the feet of the Great Being. shower of pollen dusted his whole body with gold",
+    "en": "Instantly, peerless lotus erupted through all eighty cubits of the abyss, receiving the feet of the Great Being. shower of pollen dusted his whole body with gold.",
     "conf": 96
    }
   ],

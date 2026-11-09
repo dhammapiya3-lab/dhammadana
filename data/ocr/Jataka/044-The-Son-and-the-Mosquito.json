@@ -10,7 +10,7 @@
    {
     "seed": [
      296,
-     362
+     361
     ],
     "bbox": [
      668,
@@ -19,8 +19,8 @@
      1422
     ],
     "shape": "box",
-    "en": "The Mosquito and the Axe. tale of misplaced intentions from the Jataka.",
-    "conf": 93
+    "en": "The Mosquito and the Axe. hm tale of misplaced intentions awe from the Jataka.",
+    "conf": 44
    }
   ],
   "loose": []
@@ -35,8 +35,8 @@
   "boxes": [
    {
     "seed": [
-     115,
-     88
+     123,
+     80
     ],
     "bbox": [
      222,
@@ -45,7 +45,7 @@
      526
     ],
     "shape": "box",
-    "en": "past, Brahmadatta re Benares, the Bodhisatta lived as traveling trader. His journeys brought him to village of carpenters in Kasi. See",
+    "en": "the past, when Brahmadatta reigned in Benares, the Bodhisatta lived ved as traveling trader. His journeys brought him to village of carpenters ers in Kasi. See",
     "conf": 46
    }
   ],
@@ -61,8 +61,8 @@
   "boxes": [
    {
     "seed": [
-     87,
-     347
+     110,
+     338
     ],
     "bbox": [
      225,
@@ -71,8 +71,8 @@
      1276
     ],
     "shape": "box",
-    "en": "he trader rested in shop where an old man planed wood. The bald head glistened brightly, like copper bowl in the sun 4",
-    "conf": 64
+    "en": "The he trader rested in shop where an old man planed wood. The carpenter's bald head glistened brightly, like copper bowl in the sun. 4",
+    "conf": 58
    }
   ],
   "loose": []
@@ -101,7 +101,9 @@
     "conf": 93
    }
   ],
-  "loose": []
+  "loose": [
+   "\\99"
+  ]
  },
  {
   "img": "images/044-The-Son-and-the-Mosquito-05-Original.jpg",
@@ -123,11 +125,13 @@
      499
     ],
     "shape": "bubble",
-    "en": "boy, there’s mosquito stinging the head; me on do drive it away.",
+    "en": "boy, there’s mosquito stinging me on the head; do drive it away.",
     "conf": 92
    }
   ],
-  "loose": []
+  "loose": [
+   "Las"
+  ]
  },
  {
   "img": "images/044-The-Son-and-the-Mosquito-06-Original.jpg",
@@ -149,11 +153,14 @@
      423
     ],
     "shape": "bubble",
-    "en": "Hold still then, father. One blow will settle it.",
-    "conf": 93
+    "en": "Hold still then, father. One blow will settle it",
+    "conf": 91
    }
   ],
-  "loose": []
+  "loose": [
+   "NOY",
+   "(we"
+  ]
  },
  {
   "img": "images/044-The-Son-and-the-Mosquito-07-Original.jpg",
@@ -164,6 +171,7 @@
   "ref": 800,
   "boxes": [],
   "loose": [
+   "ays",
    "The",
    "trader",
    "watched",
@@ -197,14 +205,25 @@
     ],
     "shape": "bubble",
     "en": "Rid me of it! Rid me of it!",
-    "conf": 96
+    "conf": 97
+   },
+   {
+    "seed": [
+     606,
+     338
+    ],
+    "bbox": [
+     1947,
+     989,
+     2404,
+     1243
+    ],
+    "shape": "bubble",
+    "en": "All right, father.",
+    "conf": 94
    }
   ],
-  "loose": [
-   "All",
-   "right,",
-   "father."
-  ]
+  "loose": []
  },
  {
   "img": "images/044-The-Son-and-the-Mosquito-09-Original.jpg",
@@ -216,7 +235,7 @@
   "boxes": [
    {
     "seed": [
-     568,
+     569,
      68
     ],
     "bbox": [
@@ -226,7 +245,7 @@
      443
     ],
     "shape": "box",
-    "en": "Intending only to kill the mosquito, the foolish son cleft his father’s head in twain. The old man fell dead on the spot",
+    "en": "Intending only to kill the mosquito, the foolish son cleft his father’s head in twain. The old man fell dead on the spot.",
     "conf": 96
    }
   ],
@@ -252,8 +271,8 @@
      1445
     ],
     "shape": "box",
-    "en": "The trader realized pr truth: foolish ally far dangerous than calculated foe. more",
-    "conf": 95
+    "en": "The trader realized an profound 5 truth: foolish ally is far more dangerous than calculated foe",
+    "conf": 48
    }
   ],
   "loose": [
@@ -267,25 +286,19 @@
    1488
   ],
   "ref": 800,
-  "boxes": [
-   {
-    "seed": [
-     372,
-     157
-    ],
-    "bbox": [
-     794,
-     403,
-     2242,
-     1098
-    ],
-    "shape": "box",
-    "en": "Seyyo amitto matiya upeto Na tveva mitto mativippahino, elamtigo ‘Makasam vadhissan’-ti hi Putto abbhida uttamangan-ti",
-    "conf": 82
-   }
-  ],
+  "boxes": [],
   "loose": [
-   "wie;"
+   "Seyyo",
+   "amitto",
+   "matiya",
+   "upeto",
+   "tveva",
+   "mitto",
+   "mativippahino,",
+   "‘Makasam",
+   "vadhissan’-ti",
+   "abbhida",
+   "Putto"
   ]
  },
  {
@@ -308,13 +321,11 @@
      1445
     ],
     "shape": "box",
-    "en": "Better is foe endowed with wisdom than friend who is lacking in wisdom. Thinking, will kill mosquito,’ the foolish son split his father’s head",
-    "conf": 90
+    "en": "Better is foe endowed with wisdom than friend who is lacking in wisdom. Thinking, will kill mosquito the foolish son split his father’s head open",
+    "conf": 83
    }
   ],
-  "loose": [
-   "aye"
-  ]
+  "loose": []
  },
  {
   "img": "images/044-The-Son-and-the-Mosquito-13-Original.jpg",
@@ -336,7 +347,7 @@
      688
     ],
     "shape": "box",
-    "en": "Good intentions without wisdom are like swinging axe at mosquito. an",
+    "en": "Good intentions without wisdom are like swinging an axe at mosquito.",
     "conf": 96
    }
   ],
