@@ -835,13 +835,16 @@ function bindReader() {
   const navOff = () => { const t = $('.r-top', el); return 8 + (t && !el.classList.contains('chrome-off') ? t.offsetHeight : 0); };
   const pin = e => {
     const body = $('#rBody'); if (!body || !e) return;
-    let set = 0;
-    const place = () => { body.scrollTop = Math.max(0, e.getBoundingClientRect().top - body.getBoundingClientRect().top + body.scrollTop - navOff()); set = body.scrollTop; };
-    place(); const until = Date.now() + 4000; R.pinEl = e; R.lastPin = e;
-    // 그 사이 읽는 분이 직접 넘겼으면(스크롤 막대·키보드 등) 다시 맞추지 않음
-    const fix = () => { if (R && R.pinEl === e && Date.now() < until && Math.abs(body.scrollTop - set) < 40) place(); };
+    const place = () => { body.scrollTop = Math.max(0, e.getBoundingClientRect().top - body.getBoundingClientRect().top + body.scrollTop - navOff()); };
+    place(); const until = Date.now() + 6000; R.pinEl = e; R.lastPin = e;
+    // 그림이 늦게 받아지거나 글꼴(한글 글꼴은 필요한 글자 묶음을 나중에 받음)이 바뀌어 글 높이가 달라지면 소제목 자리를 다시 맞춤.
+    // 읽는 분이 직접 넘기면(휠·터치·스크롤 막대·키보드) 그만 — stop
+    const fix = () => { if (R && R.pinEl === e && Date.now() < until) place(); };
     $$('#rBody img').forEach(im => { if (!im.complete) im.addEventListener('load', fix, { once: true }); });
-    const stop = () => { if (R && R.pinEl === e) R.pinEl = null; body.removeEventListener('wheel', stop); body.removeEventListener('touchstart', stop); };
+    let ro = null; const box = e.closest('.reflow') || body.firstElementChild;
+    if (window.ResizeObserver && box) { ro = new ResizeObserver(fix); ro.observe(box); setTimeout(() => ro && ro.disconnect(), 6000); }
+    if (document.fonts && document.fonts.addEventListener) { document.fonts.addEventListener('loadingdone', fix); setTimeout(() => document.fonts.removeEventListener('loadingdone', fix), 6000); }
+    const stop = () => { if (R && R.pinEl === e) R.pinEl = null; if (ro) { ro.disconnect(); ro = null; } body.removeEventListener('wheel', stop); body.removeEventListener('touchstart', stop); };
     body.addEventListener('wheel', stop, { passive: true }); body.addEventListener('touchstart', stop, { passive: true }); body.addEventListener('mousedown', stop); document.addEventListener('keydown', stop, { once: true });  // 직접 넘기기 시작하면 그만
   };
   const stepSub = d => {
