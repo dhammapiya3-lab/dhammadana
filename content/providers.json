@@ -93,6 +93,14 @@
       "partner": true,
       "note": "네이버 카페 · cafe.naver.com/satisamadhi",
       "image": "/uploads/partner-satisamadhi.jpg"
+    },
+    {
+      "id": "ariya",
+      "name": "아리야승원",
+      "kind": "승원·사원",
+      "urls": [],
+      "partner": false,
+      "note": ""
     }
   ]
 }
