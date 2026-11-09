@@ -82,7 +82,7 @@ top.forEach((c, k) => {
     txt.split(/\n{2,}/).forEach((par, pi) => {
       par = par.trim(); if (!par) return;
       if (pi > 0 || !/\S/.test(par)) first = false;
-      if (/^!\[/.test(par)) return;                                   // 그림
+      if (/^!\[/.test(par)) { const src = (par.match(/\]\(([^)\s]+)\)/) || [])[1]; if (t.say && t.say[src]) t.say[src].split('\n').filter(x => x.trim()).forEach(x => paras.push(lib.sayable(x, OPT))); return; }  // 그림: 소리로 읽을 글(say)이 있으면 그것만
       if (/^\[\^[^\]]+\]:/.test(par)) { if (flags.includes('--footnotes')) paras.push('각주. ' + lib.sayable(par.replace(/^\[\^[^\]]+\]:\s*/, ''), OPT)); return; }
       if (/^\|/.test(par)) return;                                    // 표
       if (/^\[\[.*\]\]$/.test(par)) return;                           // [[색인]] 같은 자리표

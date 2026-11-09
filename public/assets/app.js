@@ -664,7 +664,8 @@ async function initReaderPage() {
   const pages = man.pages.map((p, i) => ({ n: i + 1, label: p.label || '', img: p.img ? base + p.img : '', big: p.big ? base + p.big : '', w: p.w, h: p.h, text: p.text || '' }));
   const last = store.get('pos-' + id, 1);
   R = {
-    id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, cover: root.dataset.cover || '', kakao: root.dataset.kakao || '', pages, toc: man.toc || [],
+    id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, cover: root.dataset.cover || '', kakao: root.dataset.kakao || '', pages, toc: man.toc || [], say: man.say || {},  // say: 그림·표를 소리로 읽을 글 (그림 주소 → 글, 운영자 요청 2026-11-10)
+   
     i: Math.min(Math.max(want || (last > 1 ? last : 0) || firstContent(pages, man.toc || []), 1), pages.length) - 1,
     view: 'text', zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), bold: store.get('rbold', false), lh: store.get('rlh', 1.9), font: store.get('rfont', 'serif'), mw: store.get('rmw', 36),
     hl: hlp ? hlp.split('|').filter(Boolean) : [], speaking: false,
@@ -1264,9 +1265,13 @@ const EN_A = '\u0001', EN_B = '\u0002';  // 영어 구간 표시 (영어 목소�
 function sayable(s, o = ttsOpt(), mark = false) {
   const en = w => mark ? EN_A + w + EN_B : w;
   let t = unB(s).replace(/^## /, '');
-  // 숫자 사이의 줄표는 '빼기(마이너스)'가 아니라 '다시'로 읽음: 8-10 → 8 다시 10, 석수동 178-19 → 178 다시 19 (운영자 요청, 2026-11-10)
-  //  - 수학의 뺄셈일 때만 그대로(마이너스): 같은 줄에 = 가 있는 셈식(예: 5 - 3 = 2)
-  t = t.replace(/[^\n]+/g, line => /[=＝]/.test(line) && /\d\s*[-–−]\s*\d/.test(line) ? line : line.replace(/(\d)[ ]?[-–][ ]?(?=\d)/g, '$1 다시 '));
+  // 숫자 사이의 줄표는 '빼기(마이너스)'로 읽지 않음 (운영자 요청, 2026-11-10)
+  //  - 범위(앞 수 < 뒤 수: 8-10, 1-2, 3-7, 1885-1910, 238-242쪽)는 물결(~)처럼 '에서': 8에서 10
+  //  - 그 밖(주소 178-19·51-41, 제1-1권, 전화·날짜처럼 줄표가 여러 번)은 '다시': 178 다시 19
+  //  - 수학의 뺄셈(같은 줄에 = 가 있는 셈식, 예: 5 - 3 = 2)만 그대로(마이너스)
+  t = t.replace(/[^\n]+/g, line => /[=＝]/.test(line) && /\d\s*[-–−]\s*\d/.test(line) ? line : line
+    .replace(/\d+(?:[ ]?[-–][ ]?\d+){2,}/g, m => m.replace(/[ ]?[-–][ ]?/g, ' 다시 '))
+    .replace(/(^|[^\d])(\d+)[ ]?[-–][ ]?(\d+)(?!\d)/g, (m, pre, a, b) => pre + a + (+a < +b && !/(제|동|리|길|번지|번길|호)\s*$/.test(pre + '') && !/(제|동|리|길|번지|번길)\s*$/.test(line.slice(0, line.indexOf(m) + pre.length)) ? '에서 ' : ' 다시 ') + b));
   if (/^%% /.test(t)) t = tocLines(t).filter(r => !r.sp).map(r => r.t + (r.p ? `, ${r.p}쪽` : '')).join('.\n');
   if (o.paren === false) { let prev; do { prev = t; t = t.replace(/\s?[(（][^()（）]*[)）]/g, ''); } while (t !== prev); }
   if (o.brack === false) t = t.replace(/\s?\[(?!\^)[^\[\]]*\]/g, '');
@@ -1441,7 +1446,8 @@ function speak(fromK = 0, firstText = null) {
       }
     }
     const isTbl = isTable(sentences[k]) || sentences[k].trim() === '[[색인]]';
-    if ((!o.fn && isFootnote(sentences[k])) || FIG_RE.test(sentences[k]) || (isTbl && !o.table)) { k++; next(); return; }
+    { const fg = sentences[k].match(FIG_RE); if (fg && R.say && R.say[fg[2]]) raw = R.say[fg[2]]; }  // 그림 내용을 소리로 읽을 글이 있으면 그것을 읽음
+    if ((!o.fn && isFootnote(sentences[k])) || (FIG_RE.test(sentences[k]) && !(R.say && R.say[(sentences[k].match(FIG_RE) || [])[2]])) || (isTbl && !o.table)) { k++; next(); return; }
     if (isTbl && !tq) { tq = tableLines(sentences[k]); if (!tq.length) { tq = null; k++; next(); return; } }
     const el = $(`[data-pg="${p.n}"][data-s="${k}"]`); if (el) { el.classList.add('speaking'); if (o.follow && !tq) el.scrollIntoView({ block: 'nearest' }); }
     const text = tq ? sayable(tq.shift(), o, true) : sayable(raw.replace(/^\[\^([^\]]+)\]:\s*/, (m, n) => `각주 ${n}. `), o, true);
