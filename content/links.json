@@ -175,31 +175,31 @@
           "name": "tipitaka.org",
           "url": "https://tipitaka.org/",
           "note": "6차 결집본 빠알리 삼장 원문",
-          "lang": "빠알리 삼장"
+          "lang": "빠알리 삼장 & 번역"
         },
         {
           "name": "Digital Pāli Reader",
           "url": "https://www.digitalpalireader.online/",
           "note": "빠알리 삼장을 읽으며 낱말을 눌러 사전 뜻과 문법을 바로 찾아보는 도구",
-          "lang": "빠알리 삼장"
+          "lang": "빠알리 삼장 & 번역"
         },
         {
           "name": "SuttaCentral",
           "url": "https://suttacentral.net/",
           "note": "초기불교 경전 원문(빠알리 등)과 여러 나라 말 번역을 함께 보는 곳",
-          "lang": "빠알리 삼장"
+          "lang": "빠알리 삼장 & 번역"
         },
         {
           "name": "BuddhaDust",
           "url": "https://buddhadust.net/backmatter/indexes/sutta/sutta_toc.htm",
           "note": "디가·맛지마·상윳따·앙굿따라·쿳다까 니까야와 율장·논장, 밀린다빤하의 경전 목록 · 경마다 짧은 소개, 빠알리 원문(1995년 스리랑카 붓다 자얀띠 판을 다듬음)과 리즈 데이비즈·호너·비구 보디·타니사로 스님 등 여러 영어 번역을 서로 이어 대조",
-          "lang": "빠알리 삼장"
+          "lang": "빠알리 삼장 & 번역"
         },
         {
           "name": "GRETIL",
           "url": "https://gretil.sub.uni-goettingen.de/gretil.html#Suttapit",
           "note": "독일 괴팅겐 대학 도서관의 인도 고전어 전자 원문 모음 · 빠알리 삼장(율장·경장·논장)과 주석서·복주서·연대기·문법서 등 원문 파일, 빠알리 전체 한 번에 내려받기",
-          "lang": "빠알리 삼장"
+          "lang": "빠알리 삼장 & 번역"
         },
         {
           "name": "OpenTipitaka",
@@ -253,6 +253,12 @@
           "name": "Pāli Dictionary (dictionary.sutta.org)",
           "url": "https://dictionary.sutta.org/",
           "note": "빠알리어 낱말을 영어·중국어·일본어·베트남어·미얀마어 사전에서 한꺼번에 찾는 온라인 사전 · 빠알리 글자 입력판, 내려받아 쓰는 프로그램도 있음",
+          "lang": "사전"
+        },
+        {
+          "name": "Dictionary of Pāli Proper Names (DPPN)",
+          "url": "https://aimwell.org/DPPN/index.html",
+          "note": "말랄라세께라(G.P. Malalasekera)의 빠알리 고유명사 사전 온라인판 · 사람·곳·경 이름 약 4천 항목의 짧은 설명, 자따까·디가·맛지마·숫따니빠따·상윳따 색인, 통째로 내려받기 (aimwell.org)",
           "lang": "사전"
         }
       ]
