@@ -530,7 +530,7 @@ for (const t of TEACHERS) {
     <h1 class="h-page">${esc(t.name)}</h1>${t.roman ? `<div class="pali muted">${esc(t.roman)}</div>` : ''}
     ${t.bio ? `<div class="desc small">${marked.parse(t.bio)}</div>` : ''}
     ${pl ? `<p style="margin:8px 0 0"><a class="btn sm ghost" href="/dhammatalk/?pl=${pl.id}">▶ ${esc(t.name)}의 법문 듣기</a></p>` : ''}</div></div>
-    <div class="section-head" style="margin-top:20px"><h2>${esc(t.name)}의 가르침을 옮긴 책 ${list.length}권</h2></div>
+    <div class="section-head" style="margin-top:20px"><h2>${esc(t.name)}의 가르침을 ${list.every(x => String(x.translator || '').trim() || (x.original_language && x.original_language !== '한국어')) ? '옮긴' : '담은'} 책 ${list.length}권</h2></div>
     ${list.length ? `<div class="grid">${list.map(coverCard).join('')}</div>` : '<p class="muted">아직 등록된 책이 없습니다.</p>'}
     ${trans.length ? `<div class="section-head" style="margin-top:30px"><h2>옮긴 책</h2></div><div class="grid">${trans.map(coverCard).join('')}</div>` : ''}
     <div class="section-head" style="margin-top:36px"><h2>같은 전통의 스승</h2></div>
