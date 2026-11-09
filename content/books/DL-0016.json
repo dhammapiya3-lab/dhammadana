@@ -50,10 +50,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "file",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0016/DL-0016_초판.pdf"
       },
       "pdf_print": {
         "mode": "none",
