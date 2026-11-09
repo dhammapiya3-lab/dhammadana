@@ -9,8 +9,8 @@
   "boxes": [
    {
     "seed": [
-     230,
-     372
+     229,
+     377
     ],
     "bbox": [
      645,
@@ -19,8 +19,8 @@
      1435
     ],
     "shape": "box",
-    "en": "‘The Noble Sindh: Tale of Jambudipa. classical Jataka of duty, sacrifice, and the ultimate charge.",
-    "conf": 54
+    "en": "The Noble Sindh: Tale of Jambudipa. classical Jataka of duty, sacrifice, and the ultimate charge.",
+    "conf": 92
    }
   ],
   "loose": []
@@ -32,29 +32,51 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
+  "boxes": [
+   {
+    "seed": [
+     614,
+     97
+    ],
+    "bbox": [
+     1660,
+     298,
+     2417,
+     503
+    ],
+    "shape": "bubble",
+    "en": "Crimson curtains and gold-starred canopy.",
+    "conf": 91
+   },
+   {
+    "seed": [
+     115,
+     337
+    ],
+    "bbox": [
+     248,
+     1111,
+     1028,
+     1250
+    ],
+    "shape": "bubble",
+    "en": "Ground scented with four perfumes.",
+    "conf": 96
+   }
+  ],
   "loose": [
-   "Crimson",
-   "curtains",
+   "King",
+   "ahr",
    "3-year-old",
    "rice",
-   "and",
-   "gold-starred",
-   "100,000",
    "coin",
-   "canopy.",
    "golden",
    "dish.",
    "Scented",
    "oil",
    "lamps",
-   "Ground",
-   "scented",
    "always",
-   "burning.",
-   "with",
-   "four",
-   "perfumes."
+   "burning."
   ]
  },
  {
@@ -64,17 +86,25 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
+  "boxes": [
+   {
+    "seed": [
+     266,
+     372
+    ],
+    "bbox": [
+     760,
+     1131,
+     1888,
+     1451
+    ],
+    "shape": "bubble",
+    "en": "Thei missive offered no compromi se: wo” “Yield up your kingdom to us, or give battle.”",
+    "conf": 49
+   }
+  ],
   "loose": [
-   "BENARES",
-   "Their",
-   "missive",
-   "offered",
-   "compromise:",
-   "your",
-   "kingdom",
-   "us,",
-   "give"
+   "BENARES"
   ]
  },
  {
@@ -85,21 +115,6 @@
   ],
   "ref": 800,
   "boxes": [
-   {
-    "seed": [
-     323,
-     36
-    ],
-    "bbox": [
-     886,
-     79,
-     1759,
-     271
-    ],
-    "shape": "box",
-    "en": "Tt ai is stepped Ch!",
-    "conf": 58
-   },
    {
     "seed": [
      100,
@@ -116,7 +131,17 @@
     "conf": 92
    }
   ],
-  "loose": []
+  "loose": [
+   "The",
+   "ministers",
+   "advised",
+   "caution.",
+   "But",
+   "loyal",
+   "knight",
+   "stepped",
+   "forward:"
+  ]
  },
  {
   "img": "images/023-The-Noble-Warhorse-05-Original.jpg",
@@ -125,24 +150,39 @@
    1488
   ],
   "ref": 800,
-  "boxes": [
-   {
-    "seed": [
-     88,
-     356
-    ],
-    "bbox": [
-     261,
-     1147,
-     2384,
-     1289
-    ],
-    "shape": "box",
-    "en": "agreed. was The King The noble led out and sheathed in heavy mail. The knight armed himself from head to foot, girding his sword. Together, they passed out of the city-gate.",
-    "conf": 90
-   }
-  ],
-  "loose": []
+  "boxes": [],
+  "loose": [
+   "The",
+   "King",
+   "agreed.",
+   "The",
+   "warhorse",
+   "was",
+   "led",
+   "out",
+   "and",
+   "sheathed",
+   "heavy",
+   "mail.",
+   "The",
+   "knight",
+   "armed",
+   "himself",
+   "from",
+   "head",
+   "foot,",
+   "girding",
+   "his",
+   "sword.",
+   "Together,",
+   "they",
+   "passed",
+   "out",
+   "the",
+   "city-gate.",
+   "noble",
+   "city-gate."
+  ]
  },
  {
   "img": "images/023-The-Noble-Warhorse-06-Original.jpg",
@@ -151,24 +191,30 @@
    1488
   ],
   "ref": 800,
-  "boxes": [
-   {
-    "seed": [
-     377,
-     51
-    ],
-    "bbox": [
-     1078,
-     159,
-     2509,
-     347
-    ],
-    "shape": "box",
-    "en": "lightning charge/ They broke the first ca the king dlive. to the field, they the second, third, fourth, and fifth camps.",
-    "conf": 88
-   }
-  ],
-  "loose": []
+  "boxes": [],
+  "loose": [
+   "lightning",
+   "They",
+   "broke",
+   "the",
+   "first",
+   "camp,",
+   "takin",
+   "the",
+   "king",
+   "the",
+   "field,",
+   "they",
+   "shattere",
+   "the",
+   "second,",
+   "third,",
+   "fourth,",
+   "and",
+   "fifth",
+   "camps.",
+   "alive."
+  ]
  },
  {
   "img": "images/023-The-Noble-Warhorse-07-Original.jpg",
@@ -180,8 +226,8 @@
   "boxes": [
    {
     "seed": [
-     322,
-     384
+     154,
+     391
     ],
     "bbox": [
      483,
@@ -190,8 +236,8 @@
      1428
     ],
     "shape": "box",
-    "en": "aie the and captured the But wound streamed with blood,",
-    "conf": 52
+    "en": "They ey orn broke the sixth camp and captured the sixth ie But an ar TOW tnd ae warhorse. deep wound streamed with blood, bringing sharp, agonizing pain.",
+    "conf": 37
    }
   ],
   "loose": [
@@ -219,8 +265,8 @@
      1428
     ],
     "shape": "box",
-    "en": "At Ag Sindh’ the mail. Seeing the grievous wound, he set about arming another horse final battle.",
-    "conf": 56
+    "en": "At aie king’s gate, wie knight loosened Ale Sindh’ mail. oie fhe. grievous wound, he set about arming another iors for the final battle",
+    "conf": 35
    }
   ],
   "loose": []
@@ -245,13 +291,13 @@
      350
     ],
     "shape": "box",
-    "en": "holds. The camp knight is slain. Benares",
-    "conf": 88
+    "en": "Horse* Horse* The seventh camp holds. The knight is slain. Benares falls.",
+    "conf": 89
    },
    {
     "seed": [
-     321,
-     252
+     325,
+     235
     ],
     "bbox": [
      1012,
@@ -260,12 +306,15 @@
      906
     ],
     "shape": "box",
-    "en": "Rise* The",
-    "conf": 89
+    "en": "Rise* Rise The seventh king falls. The Kingdom",
+    "conf": 83
    }
   ],
   "loose": [
-   "The"
+   "The",
+   "Bodhisatta",
+   "realized:",
+   "NOY"
   ]
  },
  {
@@ -288,8 +337,8 @@
      1111
     ],
     "shape": "box",
-    "en": "“Api passena semano, sallebhi sallalikato, Seyyo va valava bhojjho, yufija mam yeva sarathi ti.” (Though lying side, and on my pierced by arrows, well-bred horse beats mare, harness me, driver.)",
-    "conf": 73
+    "en": "“Api passena semano, sallebhi sallalikato, Seyyo va valava bhojjho, yufija mam yeva sarathi ti.” (Though lying on my side, and pierced by arrows, well-bred horse beats mare, harness me, driver.)",
+    "conf": 74
    }
   ],
   "loose": []
@@ -327,23 +376,7 @@
    1488
   ],
   "ref": 800,
-  "boxes": [
-   {
-    "seed": [
-     533,
-     278
-    ],
-    "bbox": [
-     1564,
-     790,
-     1934,
-     1114
-    ],
-    "shape": "bubble",
-    "en": "Keep the Precepts.",
-    "conf": 96
-   }
-  ],
+  "boxes": [],
   "loose": [
    "the",
    "gate,",
@@ -370,8 +403,11 @@
    "rule:",
    "Exercise",
    "Generosity.",
+   "Keep",
+   "the",
+   "Precepts.",
    "Rule",
-   "Justice"
+   "Justice."
   ]
  },
  {
@@ -384,22 +420,7 @@
   "boxes": [
    {
     "seed": [
-     345,
-     214
-    ],
-    "bbox": [
-     965,
-     294,
-     1676,
-     1154
-    ],
-    "shape": "bubble",
-    "en": "ee. on om wi",
-    "conf": 50
-   },
-   {
-    "seed": [
-     108,
+     109,
      372
     ],
     "bbox": [
@@ -409,8 +430,8 @@
      1408
     ],
     "shape": "box",
-    "en": "His duty fulfilled, the soldiers began taking off his mail piecemeal. Before the last piece fell, the magnificent Sindh closed his eyes and passed away.",
-    "conf": 94
+    "en": "His duty fulfilled, the soldiers began taking off his mail piecemeal. Before the last piece fell, the magnificent Sindh closed his eyes and passed away",
+    "conf": 96
    }
   ],
   "loose": []
@@ -422,23 +443,34 @@
    1488
   ],
   "ref": 800,
-  "boxes": [
-   {
-    "seed": [
-     136,
-     76
-    ],
-    "bbox": [
-     291,
-     185,
-     2354,
-     337
-    ],
-    "shape": "box",
-    "en": "The King burned his body with profound respect. The knight received great honor. The seven kings, bound by an oath never to wage war again, were sent home in peace.",
-    "conf": 96
-   }
-  ],
-  "loose": []
+  "boxes": [],
+  "loose": [
+   "The",
+   "King",
+   "his",
+   "body",
+   "with",
+   "profound",
+   "respect.",
+   "The",
+   "knight",
+   "received",
+   "great",
+   "honor.",
+   "The",
+   "NOY,",
+   "seven",
+   "kings,",
+   "bound",
+   "oath",
+   "never",
+   "wage",
+   "war",
+   "again,",
+   "were",
+   "sent",
+   "home",
+   "peace."
+  ]
  }
 ]

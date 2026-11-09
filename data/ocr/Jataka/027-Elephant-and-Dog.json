@@ -9,8 +9,8 @@
   "boxes": [
    {
     "seed": [
-     160,
-     70
+     130,
+     62
     ],
     "bbox": [
      370,
@@ -19,11 +19,13 @@
      370
     ],
     "shape": "box",
-    "en": "when King Brahmadate led TU Benares, stray dog haunted the royal stables. Drawn by hunger, he ate the sweet rice that fell from the elephant’s mouth. state",
+    "en": "In the days when King Brahmadate Brahmadatta ruled led Benares, stray dog haunted the royal stables. Drawn by hunger, he ate the sweet rice that fell from the state elephant’s mouth.",
     "conf": 47
    }
   ],
-  "loose": []
+  "loose": [
+   "WAG"
+  ]
  },
  {
   "img": "images/027-Elephant-and-Dog-02-Original.jpg",
@@ -35,8 +37,8 @@
   "boxes": [
    {
     "seed": [
-     498,
-     333
+     515,
+     342
     ],
     "bbox": [
      1544,
@@ -45,8 +47,8 @@
      1273
     ],
     "shape": "box",
-    "en": "oon, they grew inseparable. The elephant refused to eat without his companion. The dog disported himself, swinging joyfully back and orth on the trunk.",
-    "conf": 93
+    "en": "grew inseparable. The elephant Qo refused to eat without his companion. The dog disported himself, swinging joyfully back and forth on the mighty elephant's trunk.",
+    "conf": 44
    }
   ],
   "loose": []
@@ -61,7 +63,7 @@
   "boxes": [
    {
     "seed": [
-     337,
+     349,
      211
     ],
     "bbox": [
@@ -71,8 +73,8 @@
      846
     ],
     "shape": "box",
-    "en": "struck passing villager, rage when charmed by the dog, bought him from the unknown mahout. The dog was dragged away to an home.",
-    "conf": 92
+    "en": "Tragedy struck when passing villager, charmed by the dog, bought him from the mahout. The dog was dragged away to an unknown home.",
+    "conf": 73
    }
   ],
   "loose": []
@@ -97,8 +99,8 @@
      407
     ],
     "shape": "box",
-    "en": "the his great elephant fell into dee despair. He refused his food, ignored water, and turned from is away his bath",
-    "conf": 94
+    "en": "his is friend, the great elephant fell into dee his despair. He refused his food, ignored is water, and turned away from his bath.",
+    "conf": 87
    }
   ],
   "loose": []
@@ -123,13 +125,13 @@
      486
     ],
     "shape": "bubble",
-    "en": "My state elephant wastes away. what Go, Minister. Find out plagues him",
-    "conf": 96
+    "en": "My state elephant a2 wastes oo away. Go, Minister. oO Find out what plagues him.",
+    "conf": 51
    },
    {
     "seed": [
      439,
-     367
+     368
     ],
     "bbox": [
      1372,
@@ -138,8 +140,8 @@
      1280
     ],
     "shape": "box",
-    "en": "His majesty dispatched investi ate, the Bodhisatta to",
-    "conf": 80
+    "en": "His majesty dispatched the Bodhisatta hisatta to investigate ate,",
+    "conf": 69
    }
   ],
   "loose": []
@@ -165,10 +167,12 @@
     ],
     "shape": "bubble",
     "en": "He has no bodily ailment. This is sickness of the heart. He is sorrowing at the loss of friend.",
-    "conf": 92
+    "conf": 93
    }
   ],
-  "loose": []
+  "loose": [
+   "aye"
+  ]
  },
  {
   "img": "images/027-Elephant-and-Dog-07-Original.jpg",
@@ -191,12 +195,12 @@
     ],
     "shape": "bubble",
     "en": "Has he become friends with anyone?",
-    "conf": 96
+    "conf": 97
    },
    {
     "seed": [
-     357,
-     81
+     364,
+     76
     ],
     "bbox": [
      1141,
@@ -205,13 +209,11 @@
      526
     ],
     "shape": "bubble",
-    "en": "Yes, my lord. dog. But man took it away know not where.",
+    "en": "Yes, Yes, my lord. dog. But man took it away know not where.",
     "conf": 85
    }
   ],
-  "loose": [
-   "ANE"
-  ]
+  "loose": []
  },
  {
   "img": "images/027-Elephant-and-Dog-08-Original.jpg",
@@ -237,9 +239,7 @@
     "conf": 96
    }
   ],
-  "loose": [
-   "SNE"
-  ]
+  "loose": []
  },
  {
   "img": "images/027-Elephant-and-Dog-09-Original.jpg",
@@ -253,7 +253,6 @@
    "Nalam",
    "kabalam",
    "padatave,",
-   "pindam,",
    "kuse,",
    "Mannami",
    "abhinhadassana,",
@@ -271,8 +270,7 @@
    "the",
    "elephant",
    "formed",
-   "deep",
-   "affection"
+   "deep"
   ]
  },
  {
@@ -285,6 +283,21 @@
   "boxes": [
    {
     "seed": [
+     472,
+     68
+    ],
+    "bbox": [
+     1306,
+     132,
+     2033,
+     585
+    ],
+    "shape": "bubble",
+    "en": "Hear ye! ye! harbors the “eke loved by the state ephant shall face severe penalty!",
+    "conf": 52
+   },
+   {
+    "seed": [
      533,
      347
     ],
@@ -295,25 +308,11 @@
      1286
     ],
     "shape": "box",
-    "en": "The King on the sage’s advice.",
+    "en": "The King acted swiftly on the sage’s advice.",
     "conf": 92
    }
   ],
-  "loose": [
-   "Hear",
-   "ye!",
-   "harbors",
-   "the",
-   "loved",
-   "the",
-   "state",
-   "elephant",
-   "shall",
-   "face",
-   "severe",
-   "penalty!",
-   "Vass"
-  ]
+  "loose": []
  },
  {
   "img": "images/027-Elephant-and-Dog-11-Original.jpg",
@@ -336,7 +335,7 @@
     ],
     "shape": "box",
     "en": "Hearing the royal proclamation, the terrified villager promptly let the dog loose. Away ran the dog at once, making straight path back to the palace.",
-    "conf": 95
+    "conf": 96
    }
   ],
   "loose": []
@@ -388,22 +387,7 @@
     ],
     "shape": "bubble",
     "en": "Even the minds of animals are known to im.",
-    "conf": 86
-   },
-   {
-    "seed": [
-     539,
-     125
-    ],
-    "bbox": [
-     1395,
-     165,
-     2212,
-     1088
-    ],
-    "shape": "bubble",
-    "en": "We el fe re",
-    "conf": 48
+    "conf": 91
    },
    {
     "seed": [

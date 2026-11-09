@@ -20,7 +20,7 @@
     ],
     "shape": "box",
     "en": "He treated the creature like his own child, raising him with great pains on rice and rice-gruel.",
-    "conf": 85
+    "conf": 89
    }
   ],
   "loose": []
@@ -46,22 +46,7 @@
     ],
     "shape": "bubble",
     "en": "All Jambudipa cannot show bull with my strength. will repay his nurture.",
-    "conf": 90
-   },
-   {
-    "seed": [
-     600,
-     106
-    ],
-    "bbox": [
-     1686,
-     192,
-     2447,
-     674
-    ],
-    "shape": "bubble",
-    "en": "AR JK Pe AW) whe",
-    "conf": 46
+    "conf": 91
    },
    {
     "seed": [
@@ -75,8 +60,8 @@
      635
     ],
     "shape": "bubble",
-    "en": "Go to merchant. Wager thousand pieces that can draw hundred loaded carts!",
-    "conf": 96
+    "en": "Go 0 to merchant. Wager thousand pieces that can draw hundred loaded carts!",
+    "conf": 86
    }
   ],
   "loose": []
@@ -102,12 +87,27 @@
     ],
     "shape": "bubble",
     "en": "have bull at home who can pull hundred loaded carts.",
-    "conf": 94
+    "conf": 95
    },
    {
     "seed": [
-     589,
-     368
+     208,
+     271
+    ],
+    "bbox": [
+     631,
+     813,
+     870,
+     1045
+    ],
+    "shape": "bubble",
+    "en": "Make it wager.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     505,
+     363
     ],
     "bbox": [
      1541,
@@ -116,13 +116,12 @@
      1289
     ],
     "shape": "box",
-    "en": "thousand pices. he stake",
-    "conf": 61
+    "en": "And so, he staked thousand pices. pieces",
+    "conf": 43
    }
   ],
   "loose": [
-   "ANY",
-   "Make"
+   "ANY"
   ]
  },
  {
@@ -132,8 +131,25 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
+  "boxes": [
+   {
+    "seed": [
+     305,
+     71
+    ],
+    "bbox": [
+     235,
+     225,
+     1399,
+     321
+    ],
+    "shape": "box",
+    "en": "One hundred carts. Loaded with sand gravel, and stones.",
+    "conf": 96
+   }
+  ],
   "loose": [
+   "all",
    "Trace-bar",
    "Axletree",
    "Perfumed",
@@ -147,16 +163,25 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
+  "boxes": [
+   {
+    "seed": [
+     535,
+     92
+    ],
+    "bbox": [
+     1514,
+     165,
+     2351,
+     803
+    ],
+    "shape": "bubble",
+    "en": "Now then, Vv you 2 rascal! Pull them along, you rascal!",
+    "conf": 61
+   }
+  ],
   "loose": [
-   "Now",
-   "then,",
-   "you",
-   "rascal!",
-   "Pull",
-   "them",
-   "along,",
-   "rascal!",
+   "Gyr",
    "LAS",
    "LAN"
   ]
@@ -181,8 +206,8 @@
      552
     ],
     "shape": "bubble",
-    "en": "not the rascal he calls me.",
-    "conf": 96
+    "en": "not jo} the Vv rascal wn he calls me.",
+    "conf": 55
    },
    {
     "seed": [
@@ -196,12 +221,14 @@
      1392
     ],
     "shape": "box",
-    "en": "et He budged not an",
-    "conf": 46
+    "en": "He budged not an atl",
+    "conf": 33
    }
   ],
   "loose": [
-   "alia"
+   "Gyr",
+   "ala",
+   "ING"
   ]
  },
  {
@@ -224,13 +251,13 @@
      1319
     ],
     "shape": "box",
-    "en": "merchant made The him pay over the thousand pieces. ad",
+    "en": "The merchant made him pay over the thousand pieces. ad",
     "conf": 45
    },
    {
     "seed": [
-     459,
-     374
+     491,
+     362
     ],
     "bbox": [
      1451,
@@ -239,8 +266,8 @@
      1319
     ],
     "shape": "box",
-    "en": "His money gone, the brahmin lay be. down in an agony of grief.",
-    "conf": 67
+    "en": "His “His money gone, the brahmin lay be. down in an agony of grief.",
+    "conf": 39
    }
   ],
   "loose": []
@@ -266,7 +293,7 @@
     ],
     "shape": "bubble",
     "en": "Have ever broken pot, squeezed against anyone, or made messes?",
-    "conf": 94
+    "conf": 96
    },
    {
     "seed": [
@@ -280,8 +307,8 @@
      1012
     ],
     "shape": "bubble",
-    "en": "Neve my child.",
-    "conf": 96
+    "en": "Never, my child.",
+    "conf": 97
    },
    {
     "seed": [
@@ -295,8 +322,8 @@
      1104
     ],
     "shape": "bubble",
-    "en": "Then wh call me rascal? It’s you who are to blam",
-    "conf": 91
+    "en": "Then wh call me rascal? It’s you who are to blame.",
+    "conf": 81
    }
   ],
   "loose": []
@@ -308,21 +335,25 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
+  "boxes": [
+   {
+    "seed": [
+     456,
+     69
+    ],
+    "bbox": [
+     1468,
+     175,
+     2205,
+     529
+    ],
+    "shape": "bubble",
+    "en": "Go and bet him two thousand this time. Only remember not to call me rascal again.",
+    "conf": 95
+   }
+  ],
   "loose": [
-   "and",
-   "bet",
-   "him",
-   "two",
-   "thousand",
-   "this",
-   "time.",
-   "Only",
-   "remember",
-   "not",
-   "call",
-   "rascal",
-   "again.",
+   "als",
    "UME"
   ]
  },
@@ -347,22 +378,7 @@
     ],
     "shape": "bubble",
     "en": "Now then, my fine fellow! Pull them along, my fine fellow!",
-    "conf": 96
-   },
-   {
-    "seed": [
-     165,
-     304
-    ],
-    "bbox": [
-     476,
-     926,
-     648,
-     1118
-    ],
-    "shape": "bubble",
-    "en": "il",
-    "conf": 67
+    "conf": 95
    }
   ],
   "loose": []
@@ -377,8 +393,8 @@
   "boxes": [
    {
     "seed": [
-     203,
-     390
+     192,
+     391
     ],
     "bbox": [
      608,
@@ -415,10 +431,13 @@
      1408
     ],
     "shape": "box",
-    "en": "The merchant paid the two thousand. Other folks gave large sums too Thus did the greatly.",
-    "conf": 96
+    "en": "The merchant paid the two thousand. Other folks gave large sums too. Thus did the ely gain greatly.",
+    "conf": 31
    }
   ],
-  "loose": []
+  "loose": [
+   "OF,",
+   "GEN"
+  ]
  }
 ]

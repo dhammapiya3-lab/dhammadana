@@ -11,3 +11,9 @@ books 46 stories 918 images 13186
 014-The-Wind-Deer.htm: 그림 9 상자 13 상자밖글 30
 018-The-Sacrificial-Goat.htm: 그림 14 상자 16 상자밖글 93
 022-The-Teaching-of-the-Dog.htm: 그림 14 상자 16 상자밖글 16
+023-The-Noble-Warhorse.htm: 그림 14 상자 12 상자밖글 135
+026-The-State-Elephant.htm: 그림 13 상자 19 상자밖글 30
+027-Elephant-and-Dog.htm: 그림 13 상자 16 상자밖글 23
+028-Nandivisala.htm: 그림 12 상자 19 상자밖글 17
+029-Grannys-Blackie.htm: 그림 12 상자 26 상자밖글 7
+030-Deadly-Food.htm: 그림 11 상자 19 상자밖글 34

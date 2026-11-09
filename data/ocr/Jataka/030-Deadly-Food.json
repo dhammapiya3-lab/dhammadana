@@ -10,7 +10,7 @@
    {
     "seed": [
      274,
-     9
+     10
     ],
     "bbox": [
      648,
@@ -20,7 +20,7 @@
     ],
     "shape": "box",
     "en": "Deadly Food",
-    "conf": 97
+    "conf": 96
    },
    {
     "seed": [
@@ -34,8 +34,8 @@
      397
     ],
     "shape": "box",
-    "en": "Long ago in Benares, two brothers did all the fora",
-    "conf": 87
+    "en": "Long ago in Benares, two brothers did all the draught-work for family.",
+    "conf": 92
    },
    {
     "seed": [
@@ -49,8 +49,8 @@
      1200
     ],
     "shape": "box",
-    "en": "Mahdlohita, the Bodhisatta, and young Cullalohita.",
-    "conf": 72
+    "en": "Mahalohita, the Bodhisatta, and young Cullalohita.",
+    "conf": 62
    }
   ],
   "loose": [
@@ -68,7 +68,7 @@
    {
     "seed": [
      84,
-     49
+     54
     ],
     "bbox": [
      261,
@@ -77,7 +77,7 @@
      321
     ],
     "shape": "box",
-    "en": "Their days filled were with burdens.",
+    "en": "Their days were filled with heavy burdens",
     "conf": 92
    },
    {
@@ -111,7 +111,7 @@
    {
     "seed": [
      97,
-     52
+     55
     ],
     "bbox": [
      261,
@@ -120,23 +120,8 @@
      321
     ],
     "shape": "box",
-    "en": "marriage was arranged for the householder’s",
-    "conf": 90
-   },
-   {
-    "seed": [
-     408,
-     142
-    ],
-    "bbox": [
-     1233,
-     403,
-     1408,
-     622
-    ],
-    "shape": "bubble",
-    "en": "ay",
-    "conf": 48
+    "en": "marriage was arranged for the householder’s daughter",
+    "conf": 92
    },
    {
     "seed": [
@@ -150,7 +135,7 @@
      1296
     ],
     "shape": "box",
-    "en": "for To dainty the wedding guests, they began to fatten pig named Munika.",
+    "en": "To provide dainty fare for the wedding guests, they began to fatten pig named Munika",
     "conf": 62
    }
   ],
@@ -183,6 +168,7 @@
    }
   ],
   "loose": [
+   "aly",
    "ARS",
    "NotebookLM"
   ]
@@ -222,11 +208,12 @@
      1313
     ],
     "shape": "bubble",
-    "en": "Why is this lazy pig victualled on rich rice? Why is he treated so well?",
-    "conf": 93
+    "en": "Why is this lazy pig victualled tualled on rich rice? Why is he treated so well?",
+    "conf": 60
    }
   ],
   "loose": [
+   "lotebookLM",
    "NotebookLM"
   ]
  },
@@ -238,6 +225,21 @@
   ],
   "ref": 800,
   "boxes": [
+   {
+    "seed": [
+     89,
+     63
+    ],
+    "bbox": [
+     258,
+     162,
+     1263,
+     665
+    ],
+    "shape": "bubble",
+    "en": "My dear Cullalohita envy him not He is being fed only to furnish relish for the wedding guests",
+    "conf": 93
+   },
    {
     "seed": [
      610,
@@ -254,22 +256,7 @@
     "conf": 96
    }
   ],
-  "loose": [
-   "dear",
-   "Cullalohita",
-   "envy",
-   "him",
-   "not",
-   "being",
-   "fed",
-   "only",
-   "furnish",
-   "relish",
-   "for",
-   "the",
-   "wedding",
-   "guests"
-  ]
+  "loose": []
  },
  {
   "img": "images/030-Deadly-Food-07-Original.jpg",
@@ -280,25 +267,25 @@
   "ref": 800,
   "boxes": [],
   "loose": [
-   "ING",
    "pihayi...",
    "not",
    "envy",
-   "Munika",
+   "Munika,",
    "eats",
    "food",
    "ending",
-   "misery",
+   "misery.",
    "Being",
    "unconcerned,",
    "eat",
    "your",
-   "chaff",
+   "chaff;",
    "that",
    "the",
    "mark",
    "long",
-   "life"
+   "life.",
+   "ING"
   ]
  },
  {
@@ -336,11 +323,15 @@
      615
     ],
     "shape": "box",
-    "en": "The time of feasting aa come.",
-    "conf": 83
+    "en": "The time of feasting had aa come.",
+    "conf": 81
    }
   ],
-  "loose": []
+  "loose": [
+   "Des",
+   "INS",
+   "NotebookLM"
+  ]
  },
  {
   "img": "images/030-Deadly-Food-09-Original.jpg",
@@ -362,12 +353,12 @@
      367
     ],
     "shape": "box",
-    "en": "Munika was taken from his pen",
-    "conf": 90
+    "en": "Munika was taken from his pen.",
+    "conf": 91
    },
    {
     "seed": [
-     426,
+     399,
      62
     ],
     "bbox": [
@@ -377,26 +368,13 @@
      367
     ],
     "shape": "box",
-    "en": "Killed, and converted into all manner of dishes",
-    "conf": 95
-   },
-   {
-    "seed": [
-     535,
-     284
-    ],
-    "bbox": [
-     1696,
-     116,
-     2450,
-     1352
-    ],
-    "shape": "bubble",
-    "en": "Ss SG:",
-    "conf": 50
+    "en": "Killed, and converted into all manner of dishes.",
+    "conf": 96
    }
   ],
-  "loose": []
+  "loose": [
+   "NotebookLM"
+  ]
  },
  {
   "img": "images/030-Deadly-Food-10-Original.jpg",
@@ -405,15 +383,24 @@
    1488
   ],
   "ref": 800,
-  "boxes": [],
-  "loose": [
-   "Did",
-   "you",
-   "see",
-   "Munika",
-   "dear",
-   "brother?"
-  ]
+  "boxes": [
+   {
+    "seed": [
+     122,
+     66
+    ],
+    "bbox": [
+     274,
+     179,
+     856,
+     463
+    ],
+    "shape": "bubble",
+    "en": "you see Munika, dear brother?",
+    "conf": 91
+   }
+  ],
+  "loose": []
  },
  {
   "img": "images/030-Deadly-Food-11-Original.jpg",
@@ -435,8 +422,8 @@
      436
     ],
     "shape": "bubble",
-    "en": "have seen the outcome of his feasting",
-    "conf": 95
+    "en": "[have seen the outcome of his feasting",
+    "conf": 81
    },
    {
     "seed": [
@@ -451,11 +438,13 @@
     ],
     "shape": "bubble",
     "en": "Better thousand times is our meager chaff. Our fare harms us not, and pledges our lives will not be cut short",
-    "conf": 95
+    "conf": 96
    }
   ],
   "loose": [
-   "DAC"
+   "VAN",
+   "DAC",
+   "NotebookLM"
   ]
  }
 ]
