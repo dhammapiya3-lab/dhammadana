@@ -23,7 +23,13 @@ self.addEventListener('fetch', e => {
   const req = e.request; if (req.method !== 'GET') return;
   const url = new URL(req.url);
   if (FONT.test(url.origin)) { // 글꼴: 저장해 둔 것을 먼저
-    e.respondWith(caches.open(CACHE).then(async c => (await c.match(req)) || fetch(req).then(r => { c.put(req, r.clone()); return r; })));
+    // 인터넷이 약하거나 없을 때 글꼴을 오래 기다리지 않도록 4초가 지나면 기본 글꼴로 보여 줌
+    e.respondWith(caches.open(CACHE).then(async c => {
+      const hit = await c.match(req); if (hit) return hit;
+      const ctl = new AbortController(); const to = setTimeout(() => ctl.abort(), 4000);
+      try { const r = await fetch(req, { signal: ctl.signal }); clearTimeout(to); if (r.ok) c.put(req, r.clone()); return r; }
+      catch (err) { return new Response('', { status: 504, headers: { 'content-type': url.hostname.startsWith('fonts.googleapis') ? 'text/css' : 'font/woff2' } }); }
+    }));
     return;
   }
   if (url.origin !== location.origin || SKIP.test(url.pathname)) return;

@@ -256,6 +256,12 @@ ${ld ? `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\
 <meta property="og:image" content="${esc(S.site_url.replace(/\/$/, '') + (image || '/images/og.jpg?v=2'))}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/images/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<meta name="theme-color" content="#F7F1E5">
+<meta name="apple-mobile-web-app-title" content="법보시 도서관">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css?v=${V.css}">
@@ -544,7 +550,7 @@ for (const b of BOOKS) {
     <div class="people">${peopleLinks(b, b.byline, 'by')}${b.translator ? ' | ' + peopleLinks(b, b.translator, 'tr') : ''}</div>
     ${pubsOf(b).length ? `<div class="people publ">${pubsOf(b).map(x => `<a href="/library/?pub=${encodeURIComponent(x.key)}">${esc(x.name)}</a>${pubsOf(b).length > 1 ? (x.kinds.includes('종이책') ? ' 출간' : ' 전자책') : ' 출간'}`).join(' · ')}</div>` : ''}
     ${pl ? `<div style="margin:2px 0 8px"><a class="small" href="/dhammatalk/?pl=${pl.id}">▶ ${esc(t.name)}의 법문 바로 듣기</a></div>` : ''}
-    </div><aside class="d-side"><div class="get-box"><div class="gb-title">이 책 읽어보기</div><div class="actions">${e.reader ? `<a class="btn" href="/read/${b.id}/">온라인으로 읽기</a>` : ''}
+    </div><aside class="d-side"><div class="get-box"><div class="gb-title">이 책 읽어보기</div><div class="actions">${e.reader ? `<a class="btn" href="/read/${b.id}/">온라인으로 읽기</a>` : ''}${e.reader && hasText(b) ? `<button class="btn ghost" id="saveOff" data-book="${b.id}" data-man="${esc(readerManifest(b))}" hidden>이 책 기기에 저장</button>` : ''}
       ${f.filter(x => x.k !== '온라인 읽기').map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">${x.name} 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>${x.name} 내려받기</a>`).join('')}
       ${(b.stores || []).filter(x => x && /^https?:\/\//.test(String(x.url || '').trim())).map(x => `<a class="btn ghost" href="${esc(String(x.url).trim())}" target="_blank" rel="noopener">${esc((x.name || '').trim() ? x.name.trim() + ' 바로가기' : '인터넷 서점 바로가기')} ↗</a>`).join('')}
       ${!f.length ? `<div class="soon-box">파일을 준비하고 있습니다.<br><span class="small">소식에서 올라오는 대로 알려 드립니다.</span></div>` : ''}</div>
