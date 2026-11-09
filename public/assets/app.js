@@ -925,6 +925,18 @@ function bindReader() {
     if (hoverPC() && !store.get('hover-hint')) { store.set('hover-hint', 1); setTimeout(() => toast('마우스를 화면 맨 위나 맨 아래로 가져가면 메뉴가 나옵니다'), 1200); }
     if (immersive() && !store.get('tap-hint')) { store.set('tap-hint', 1); setTimeout(() => toast('글을 넘기면 메뉴가 숨고, 화면을 한 번 누르면 다시 나옵니다'), 1200); }
   }
+  // 휴대폰: 위아래로 넘길 때 오른쪽에 스크롤 막대(지금 위치)를 잠깐 보여 줌 — 손가락으로 끌어 빨리 넘길 수도 있음 (운영자 요청, 2026-11-10)
+  if (matchMedia('(pointer:coarse)').matches) {
+    const body = $('#rBody'); const sb = document.createElement('div'); sb.className = 'r-sbar'; sb.innerHTML = '<i></i>'; sb.setAttribute('aria-hidden', 'true'); el.appendChild(sb);
+    const th = sb.firstChild; let hideT = null;
+    const draw = () => { const H = body.scrollHeight, h = body.clientHeight; if (H <= h + 4) { sb.style.display = 'none'; return; } sb.style.display = ''; const tr = sb.clientHeight, tl = Math.max(36, tr * h / H); th.style.height = tl + 'px'; th.style.transform = `translateY(${(tr - tl) * body.scrollTop / (H - h)}px)`; };
+    const show = () => { draw(); sb.classList.add('on'); clearTimeout(hideT); hideT = setTimeout(() => sb.classList.remove('on'), 1200); };
+    body.addEventListener('scroll', show, { passive: true });
+    let drag = null;
+    sb.addEventListener('touchstart', e => { const r = sb.getBoundingClientRect(); drag = { y: e.touches[0].clientY, top: body.scrollTop }; e.preventDefault(); show(); }, { passive: false });
+    sb.addEventListener('touchmove', e => { if (!drag) return; e.preventDefault(); const tr = sb.clientHeight, H = body.scrollHeight, h = body.clientHeight, tl = Math.max(36, tr * h / H); body.scrollTop = drag.top + (e.touches[0].clientY - drag.y) * (H - h) / Math.max(1, tr - tl); }, { passive: false });
+    sb.addEventListener('touchend', () => { drag = null; });
+  }
   // 설정·목록 창: 위 단추 줄 바로 아래에 열리게 하고(단추를 가리지 않게), 창마다 ✕ 닫기 단추
   placePanels(el);
   $$('.panel', el).forEach(p => { if (p.querySelector(':scope > .p-close')) return; const x = document.createElement('button'); x.className = 'p-close'; x.type = 'button'; x.setAttribute('aria-label', '닫기'); x.textContent = '✕'; x.onclick = () => p.classList.remove('open'); p.prepend(x); });
