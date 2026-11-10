@@ -1,21 +1,48 @@
+검수 Jataka/001-The-Waterless-Desert 13번 그림 상자2 [자리] 한글 글(2151,1214)이 상자 점(1762,1051)에서 멀리 그려짐
+Jataka 001-The-Waterless-Desert 15 장
+Jataka 002-The-Well-of-Perseverance 15 장
+Jataka 003-The-Golden-Bowl 14 장
+검수 Jataka/004-The-Dead-Mouse 09번 그림 상자2 [자리] 한글 글(2228,1294)이 상자 점(2030,1107)에서 멀리 그려짐
+Jataka 004-The-Dead-Mouse 15 장
+Jataka 005-The-Measure-of-Rice 14 장
 Jataka 006-The-Water-Rakkhasa 15 장
 Jataka 009-The-Kings-Grey-Hair 14 장
 Jataka 010-Bliss-of-Renunciation 14 장
+Jataka 011-The-Wisdom-of-Lakkhana 10 장
+Jataka 012-The-Golden-Deer 14 장
 Jataka 014-The-Wind-Deer 9 장
+Jataka 018-The-Sacrificial-Goat 14 장
+Jataka 022-The-Teaching-of-the-Dog 14 장
 Jataka 023-The-Noble-Warhorse 14 장
+Jataka 026-The-State-Elephant 13 장
 Jataka 027-Elephant-and-Dog 13 장
+검수 Jataka/028-Nandivisala 03번 그림 상자2 [작음] 글자 크기 34 (원래 113)
+검수 Jataka/028-Nandivisala 08번 그림 상자1 [작음] 글자 크기 34 (원래 90)
+검수 Jataka/028-Nandivisala 08번 그림 상자3 [작음] 글자 크기 35 (원래 138)
+Jataka 028-Nandivisala 12 장
 Jataka 029-Grannys-Blackie 12 장
+검수 Jataka/030-Deadly-Food 06번 그림 상자1 [자리] 한글 글(756,389)이 상자 점(294,208)에서 멀리 그려짐
+Jataka 030-Deadly-Food 11 장
 Jataka 032-The-Peacocks-Dance 12 장
+검수 Jataka/033-The-Quails-and-the-Net 09번 그림 상자2 [자리] 한글 글(1343,693)이 상자 점(1167,538)에서 멀리 그려짐
 Jataka 033-The-Quails-and-the-Net 14 장
 Jataka 034-The-Amorous-Fish 13 장
 Jataka 037-The-Senior-Partridge 12 장
+Jataka 039-Nanda-and-the-Hoard 12 장
 Jataka 040-The-Fiery-Pit 12 장
+Jataka 041-The-Unfortunate-Monk 15 장
+Jataka 043-The-Monk-and-the-Viper 10 장
 Jataka 044-The-Son-and-the-Mosquito 13 장
 Jataka 046-The-Folly-of-the-Monkeys 13 장
 Jataka 048-The-Rain-of-Ruin 15 장
 Jataka 049-The-Lucky-Star 14 장
 Jataka 050-The-Kings-Stratagem 15 장
-R2 에 올림: 494 개 / 한글판 이야기 32 편
-공개 주소 확인: 200 1418251바이트
+자동 검수: 문제 의심 7 곳
+remote: 
+remote: Create a pull request for 'storybooks-qa' on GitHub by visiting:        
+remote:      https://github.com/dhammapiya3-lab/dhammadana/pull/new/storybooks-qa        
+remote: 
+R2 에 올림: 890 개 / 한글판 이야기 32 편
+공개 주소 확인: 200 1156766바이트
 50-Mahasudassana
 41-42-Sariputta-and-Others
