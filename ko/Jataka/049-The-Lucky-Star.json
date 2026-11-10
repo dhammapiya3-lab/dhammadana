@@ -1,0 +1,266 @@
+[
+ {
+  "img": "images/049-The-Lucky-Star-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     186,
+     272
+    ],
+    "shape": "box",
+    "en": "Nakkhatta Jataka In the past, when Brahmadatta reigned in Benares, two families forged promising alliance.",
+    "ko": "낙캇따 자따까\n\n옛날 브라흐마닷따 왕이 바라나시를 다스릴 때, 두 집안이 좋은 혼사를 맺기로 했습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/049-The-Lucky-Star-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     128,
+     60,
+     672,
+     122
+    ],
+    "ko": "어느 도시 사람들이 시골 처녀에게 청혼하고 혼인 날을 잡았습니다. 혼약이 맺어졌습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/049-The-Lucky-Star-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     128,
+     312,
+     672,
+     390
+    ],
+    "ko": "도시 사람들은 날을 다 잡고 나서야 집안의 고행자에게 물었습니다. 나중에야 자기에게 물은 것이 언짢았던 고행자는 그들의 혼례를 망쳐 놓기로 마음먹었습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/049-The-Lucky-Star-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     542,
+     84
+    ],
+    "shape": "bubble",
+    "en": "The stars are not favourable!",
+    "ko": "별자리가 좋지 않다!"
+   },
+   {
+    "rect": [
+     160,
+     336,
+     640,
+     398
+    ],
+    "ko": "고행자는 거짓말을 했습니다. 그대로 밀고 나가면 큰 불행이 닥칠 것이라고.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/049-The-Lucky-Star-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     317,
+     59
+    ],
+    "shape": "box",
+    "en": "Paralyzed faith in the Soa by in ascetic and fear of the heavens, they stayed home.",
+    "ko": "고행자를 믿는 마음과 하늘에 대한 두려움에 꼼짝 못 하고, 그들은 집에 머물렀습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/049-The-Lucky-Star-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     112,
+     338,
+     698,
+     398
+    ],
+    "ko": "시골 사람들은 기다렸습니다. 도시 쪽 사람들이 오지 않자 그들은 말했습니다. “오늘로 혼인 날을 잡은 건 저 사람들인데 오지를 않네. 대체 저 사람들은 뭐란 말인가?”",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/049-The-Lucky-Star-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     498,
+     62,
+     740,
+     142
+    ],
+    "ko": "좋은 날을 헛되이 보낼 수 없어 시골 사람들은 결단을 내렸습니다. 처녀를 다른 사람에게 시집보낸 것입니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/049-The-Lucky-Star-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     336,
+     602,
+     390
+    ],
+    "ko": "이튿날 도시 사람들이 와서 처녀를 내놓으라고 했습니다. 시골 사람들은 단호히 버텼습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/049-The-Lucky-Star-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     317,
+     82
+    ],
+    "shape": "bubble",
+    "en": "We asked our ascetic, the stars were unfavourable!",
+    "ko": "우리 고행자님께 여쭈었더니 별자리가 나쁘다고 했단 말이오!"
+   },
+   {
+    "seed": [
+     371,
+     284
+    ],
+    "shape": "bubble",
+    "en": "You lacked common decency and stayed away. She is another's. How can we marry her twice over?",
+    "ko": "당신들은 예의도 없이 오지 않았소. 그 아이는 이미 남의 사람이오. 어떻게 두 번 시집을 보낸단 말이오?"
+   },
+   {
+    "rect": [
+     352,
+     134,
+     490,
+     162
+    ],
+    "ko": "도시 사람들이 사정했습니다.",
+    "fill": true,
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     580,
+     350,
+     728,
+     384
+    ],
+    "ko": "시골 사람들이 대답했습니다.",
+    "fill": true,
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/049-The-Lucky-Star-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     134,
+     88
+    ],
+    "shape": "box",
+    "en": "As they wrangled, wise man—a traveling merchant on business—intervened. He listened to the townsfolk blame their absence on the unfavourable disposition of the stars.",
+    "ko": "그들이 다투고 있을 때, 장사하러 다니던 지혜로운 상인이 끼어들었습니다. 그는 도시 사람들이 오지 못한 탓을 별자리가 나빴던 데로 돌리는 말을 들었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/049-The-Lucky-Star-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     400,
+     97
+    ],
+    "shape": "bubble",
+    "en": "\"What, forsooth, do the stars matter?\" the wise man asked. \"Is not the lucky thing to get the girl?\"",
+    "ko": "“별이 대체 무슨 상관이오?” 지혜로운 이가 물었습니다. “처녀를 얻는 것, 그것이 바로 행운 아니겠소?”"
+   }
+  ]
+ },
+ {
+  "img": "images/049-The-Lucky-Star-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     202,
+     335
+    ],
+    "shape": "box",
+    "en": "Nakkhatam patimanentam atho balan balam upaccaga. While waiting on his lucky stars, benefit passes the fool by.",
+    "ko": "낙캇땅 빠띠마넨땅 아토 발랑 우빳짜가.\n행운의 별을 기다리는 사이, 이익은 어리석은 이를 지나쳐 간다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/049-The-Lucky-Star-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     179,
+     339
+    ],
+    "shape": "box",
+    "en": "Re taraka Attho atthassa nakkhattam, kim karissanti ti? Benefit is benefit’s lucky star, what can the stars achieve?",
+    "ko": "앗토 앗탓사 낙캇땅, 낑 까릿산띠 따라까 띠?\n이익이 곧 이익의 행운의 별, 별들이 무엇을 해 주겠는가?",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/049-The-Lucky-Star-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     76,
+     72,
+     330,
+     166
+    ],
+    "ko": "도시 사람들은 그렇게 다투었어도 처녀를 얻지 못했습니다. 그들은 빈손으로 집에 돌아가야 했습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

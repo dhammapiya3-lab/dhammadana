@@ -1,0 +1,304 @@
+[
+ {
+  "img": "images/050-The-Kings-Stratagem-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     80,
+     64
+    ],
+    "shape": "box",
+    "en": "In the past, the Bodhisatta was reborn as Prince Brahmadatta in Benares. Educated in the Three Vedas and Eighteen Sciences at Taxila, his father appointed him viceroy.",
+    "ko": "옛날 보살은 바라나시의 브라흐마닷따 왕자로 태어났습니다. 딱까실라에서 세 베다와 열여덟 가지 학문을 배우고 돌아오자, 부왕은 그를 태자로 삼았습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     346,
+     742,
+     416
+    ],
+    "ko": "바라나시 사람들은 피비린내 나는 제사를 즐겼습니다. 데와따를 섬긴다며 양과 염소와 닭과 돼지를 마구 잡아, 그 피 흐르는 몸으로 미신의 의식을 치렀습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     490,
+     93
+    ],
+    "shape": "box",
+    "en": "“Led astray by superstition, men wantonly sacrifice life,” thought the Bodhisatta. “When succeed to my inheritance, will devise clever stratagem to stop this evil without harming 2 single human being.”",
+    "ko": "“미신에 홀려 사람들이 함부로 생명을 죽이는구나.” 보살은 생각했습니다. “내가 왕위를 이으면 꾀를 내어, 사람 하나 다치지 않고 이 악을 그치게 하리라.”"
+   }
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     99,
+     315
+    ],
+    "shape": "box",
+    "en": "The prince began visiting holy banyan tree. He offered perfumes and flowers, sprinkled water, and paced reverently around its trunk, behaving like true believer in the Devata.",
+    "ko": "왕자는 신성한 반얀나무를 찾아가기 시작했습니다. 향과 꽃을 바치고 물을 뿌리고, 공손히 나무를 돌았습니다. 데와따를 참으로 믿는 사람처럼 행동한 것입니다."
+   }
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     109,
+     318
+    ],
+    "shape": "box",
+    "en": "When his father died, the Bodhisatta ruled in his stead. Shunning the four evil courses and practicing the ten royal virtues, the time arrived to fulfill his former resolve.",
+    "ko": "부왕이 세상을 떠나자 보살이 뒤를 이어 왕이 되었습니다. 네 가지 그릇된 길을 멀리하고 왕의 열 가지 덕목을 행하던 그는, 마침내 예전의 결심을 이룰 때가 왔음을 알았습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     207,
+     100
+    ],
+    "shape": "bubble",
+    "en": "“Do you know how made myself king? Have you seen me reverently worshipping the banyan tree?”",
+    "ko": "“내가 어떻게 왕이 되었는지 아는가? 내가 반얀나무를 공손히 섬기는 것을 보았는가?”"
+   },
+   {
+    "seed": [
+     404,
+     230
+    ],
+    "shape": "bubble",
+    "en": "“Sire, we have.”",
+    "ko": "“보았습니다, 대왕이시여.”"
+   }
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     121,
+     322
+    ],
+    "shape": "box",
+    "en": "made vow,” the King declared. “If became king by the help of the Devata, would offer sacrifice to that tree. Prepare it with all speed.”",
+    "ko": "“나는 서원을 세웠다.” 왕이 말했습니다. “데와따의 도움으로 왕이 되면 그 나무에 제물을 바치겠다고. 서둘러 준비하라.”"
+   }
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     206,
+     86
+    ],
+    "shape": "bubble",
+    "en": "“My vow was this: will slay all who are addicted to the Five Defilements and the Ten Paths of Unrighteousness. With their flesh and blood, Iwill will make my offering.”",
+    "ko": "“나의 서원은 이러했다. 다섯 가지 악행과 열 가지 불선업의 길에 빠진 자를 모두 죽여, 그 살과 피로 제물을 바치겠다고.”"
+   }
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     114,
+     327
+    ],
+    "shape": "box",
+    "en": "“Twill will slay one thousand such transgressors,” he commanded. “Proclaim by beat of drum that the king will sacrifice all subjects who break the Precepts in the god’s honor.”",
+    "ko": "“그런 죄인 천 명을 죽이겠다.” 왕이 명령했습니다. “북을 쳐서 알려라. 계를 어기는 백성은 누구든 왕이 신께 제물로 바칠 것이라고.”"
+   }
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     342,
+     295
+    ],
+    "shape": "box",
+    "en": "Dummedhanam sahassena yarinio me upayacito, Idani khoham yajissami bahu adhammiko jano ti. The unintelligent by the thousand begged me for sacrifice, now will make sacrifice of many unrighteous teous people.",
+    "ko": "둠메다낭 사핫세나 얀뇨 메 우빠야찌또,\n이다니 코항 야짓사미 바후 아담미꼬 자노 띠.\n\n어리석은 이 천 명을 제물로 바치겠다고 나는 빌었다. 이제 나는 법답지 못한 많은 사람으로 제사를 지내리라."
+   }
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     505,
+     60
+    ],
+    "shape": "box",
+    "en": "Obedient ministers proclaimed the decree by beat of drum throughout Benares. The threat of thousand brutal sacrifices struck immediate terror into the hearts of the townsfolk.",
+    "ko": "충직한 신하들이 북을 치며 바라나시 곳곳에 왕명을 알렸습니다. 천 명을 잔혹하게 제물로 바친다는 말에 성안 사람들은 곧바로 두려움에 떨었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     115,
+     349
+    ],
+    "shape": "box",
+    "en": "The psychological deterrence worked anit instantly. instantly. Not single cif persisted 7 old wickedness. Throughout the Bodhisatta’s reign, not one man was convicted of transgressing.",
+    "ko": "마음을 겨냥한 이 경고는 곧바로 효과를 냈습니다. 예전의 악행을 이어 간 사람은 하나도 없었습니다. 보살이 다스리는 동안 계를 어겨 벌을 받은 사람은 한 명도 없었습니다."
+   },
+   {
+    "rect": [
+     148,
+     58,
+     288,
+     86
+    ],
+    "dark": true,
+    "align": "center",
+    "ko": "위협",
+    "shape": "box",
+    "manual": true,
+    "em": 18
+   },
+   {
+    "rect": [
+     503,
+     58,
+     648,
+     86
+    ],
+    "dark": true,
+    "align": "center",
+    "ko": "현실",
+    "shape": "box",
+    "manual": true,
+    "em": 18
+   }
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     102,
+     341
+    ],
+    "shape": "box",
+    "en": "The Compassionate Strata em utilized deterrence over violence. By wea onizing their own superstitions against them, he forced the entire kingdom to observe the Precepts without out harming single subject.",
+    "ko": "자비로운 꾀는 폭력 대신 경고를 썼습니다. 사람들의 미신을 거꾸로 이용해, 백성 하나 다치지 않고 온 나라가 계를 지키게 했습니다."
+   },
+   {
+    "rect": [
+     95,
+     272,
+     205,
+     310
+    ],
+    "align": "center",
+    "ko": "믿는 척하기",
+    "shape": "box",
+    "manual": true,
+    "em": 15
+   },
+   {
+    "rect": [
+     265,
+     272,
+     370,
+     310
+    ],
+    "align": "center",
+    "ko": "절대 왕권",
+    "shape": "box",
+    "manual": true,
+    "em": 15
+   },
+   {
+    "rect": [
+     435,
+     272,
+     550,
+     310
+    ],
+    "align": "center",
+    "ko": "마음의 경고",
+    "shape": "box",
+    "manual": true,
+    "em": 15
+   },
+   {
+    "rect": [
+     605,
+     272,
+     715,
+     310
+    ],
+    "align": "center",
+    "ko": "피 없는 평화",
+    "shape": "box",
+    "manual": true,
+    "em": 15
+   }
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-14-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     130,
+     352
+    ],
+    "shape": "box",
+    "en": "At the close of life filled with ith gene osity and 1600 neil works, rks, the Bodhisatta and his peaceful followers passed away to throng the heavenly city of the Devas.",
+    "ko": "보시와 선행으로 가득한 삶을 마치고, 보살과 그를 따른 평화로운 백성들은 세상을 떠나 데와들의 하늘 도시를 가득 채웠습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/050-The-Kings-Stratagem-15-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     97,
+     359
+    ],
+    "shape": "box",
+    "en": "True leadership transforms society not through violence, but through wisdom. The clever stratagem saved the innocent, reformed the guilty, and broke the cycle of harm forever.",
+    "ko": "참된 지도력은 폭력이 아니라 지혜로 세상을 바꿉니다. 이 슬기로운 꾀는 죄 없는 이를 구하고, 죄 지은 이를 바로잡고, 해침의 고리를 영원히 끊었습니다."
+   }
+  ]
+ }
+]

@@ -1,0 +1,330 @@
+[
+ {
+  "img": "images/048-The-Rain-of-Ruin-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     70,
+     312,
+     258
+    ],
+    "dark": true,
+    "align": "center",
+    "ko": "웨답바 주문\n\n보살의 이야기\n탐욕은 파멸의 뿌리입니다.",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "fill": true
+   }
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     122,
+     72
+    ],
+    "shape": "box",
+    "en": "Traveling to Cet, the Bodhisatta and his master were captured by five hundred robbers known as alte Dispatchers.”",
+    "ko": "쩨따 나라로 가던 보살과 스승은 ‘보내는 자들’이라 불리는 도적 오백 명에게 붙잡혔습니다."
+   },
+   {
+    "seed": [
+     433,
+     344
+    ],
+    "shape": "box",
+    "en": "Their rule: Keep the master, dispatch the pupil for ransom. The Bodhisatta was sent to fetch the gold.",
+    "ko": "그들의 규칙은 이렇습니다. 스승은 붙잡아 두고 제자는 몸값을 가지러 보낸다. 그래서 보살이 금을 가지러 떠났습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     462,
+     107
+    ],
+    "shape": "bubble",
+    "en": "will return. 3 Have 5 no fear,” the 2 Bodhisatta warned. “Tonight the planets align. Do not repeat the Vedabbha charm to call down the precious cious rain. If you yield to this mishap, calamity will befall you and these robbers.”",
+    "ko": "“제가 돌아올 테니 두려워 마십시오.” 보살이 일렀습니다. “오늘 밤 별들이 모입니다. 보배 비를 부르는 웨답바 주문을 외지 마십시오. 이 유혹에 넘어가시면 스승님도 이 도적들도 재앙을 만납니다.”"
+   }
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     124,
+     72
+    ],
+    "shape": "box",
+    "en": "Bound and impatient, the brahmin watched the eastern horizon. Seeing the great conjunction, he bargained for his release.",
+    "ko": "묶인 채 조바심이 난 바라문은 동쪽 하늘을 지켜보았습니다. 큰 별자리가 모인 것을 보자, 풀려나는 조건으로 흥정을 했습니다."
+   },
+   {
+    "seed": [
+     411,
+     344
+    ],
+    "shape": "box",
+    "en": "Bathed 4 and perfumed 3 by the 2 robbers, 3 he lifted 3 his eyes to the heavens and chanted the forbidden charm.",
+    "ko": "도적들이 목욕시키고 향을 발라 주자, 바라문은 하늘을 우러러 금지된 주문을 외웠습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     123,
+     72
+    ],
+    "shape": "box",
+    "en": "Forthwith, the Seven Things of Price poured from the skies.",
+    "ko": "그러자 곧 일곱 가지 보배가 하늘에서 쏟아졌습니다."
+   },
+   {
+    "seed": [
+     130,
+     327
+    ],
+    "shape": "box",
+    "en": "The robbers ira) 2 scrambled, 3 wrapping 5 on the unimaginable on ra) 2 ann wealth into their cloaks. 4 Marching away with their heavy booty, the brahmin followed safely behind. Or so he thought.",
+    "ko": "도적들은 앞다투어 엄청난 재물을 옷에 싸 담았습니다. 무거운 보물을 지고 떠나는 도적들 뒤를 바라문은 무사히 따라갔습니다. 그렇게 생각했지요."
+   }
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     124,
+     88
+    ],
+    "shape": "box",
+    "en": "As luck would have it, second band of five hundred robbers ambushed them.",
+    "ko": "공교롭게도 또 다른 도적 오백 명이 그들을 덮쳤습니다."
+   },
+   {
+    "seed": [
+     642,
+     88
+    ],
+    "shape": "box",
+    "en": "Learning the brahmin had conjured the riches, they demanded shower of their own.",
+    "ko": "바라문이 재물을 불러냈다는 것을 알자, 그들은 자기들에게도 보배 비를 내리라고 다그쳤습니다."
+   },
+   {
+    "seed": [
+     557,
+     305
+    ],
+    "shape": "bubble",
+    "en": "cannot,” he trembled. “The planets will not align for another year.”",
+    "ko": "“할 수 없소.” 바라문이 떨며 말했습니다. “별들이 다시 모이려면 한 해를 기다려야 하오.”",
+    "em": 14
+   }
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     269,
+     74
+    ],
+    "shape": "bubble",
+    "en": "“Rascally brahmin!” the robbers roared. “You made them rich off-hand, but want us to wait whole year",
+    "ko": "“고약한 바라문 놈!” 도적들이 고함쳤습니다. “저놈들은 당장 부자로 만들어 주고, 우리는 한 해나 기다리라고?”",
+    "rect": [
+     238,
+     72,
+     560,
+     114
+    ],
+    "fill": true,
+    "align": "center"
+   },
+   {
+    "seed": [
+     252,
+     342
+    ],
+    "shape": "box",
+    "en": "With sharp sword, they cut him in twain, flinging his body into the road. The warning was ignored.",
+    "ko": "도적들은 날카로운 칼로 바라문을 두 동강 내어 길에 내던졌습니다. 경고를 듣지 않은 탓이었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     165,
+     98
+    ],
+    "shape": "box",
+    "en": "The massacre began. The second band slaughtered the first. Then, fighting over the booty, they divided and slaughtered each other. 1,000 robbers fought. Then 500. Then 250. Down and down they fought, until only two men remained alive.",
+    "ko": "살육이 시작되었습니다. 둘째 무리가 첫째 무리를 죽였습니다.\n\n그다음엔 보물을 두고 다투다 패가 갈려 서로 죽였습니다.\n\n천 명이 싸웠습니다.\n\n그다음엔 오백 명.\n\n그다음엔 이백오십 명.\n\n싸우고 또 싸워, 마침내 두 사람만 살아남았습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     173,
+     75
+    ],
+    "shape": "box",
+    "en": "The two survivors hid the treasure. One stayed to guard it; the other went for food",
+    "ko": "살아남은 둘은 보물을 숨겼습니다. 하나는 남아서 지키고, 하나는 먹을 것을 구하러 갔습니다."
+   },
+   {
+    "seed": [
+     200,
+     359
+    ],
+    "shape": "box",
+    "en": "In perfect symmetry, greed consumed them both. The guard drew his sword to murder his mate. The forager poisoned the rice to claim it all",
+    "ko": "똑같이, 탐욕이 둘 다 삼켜 버렸습니다. 지키던 자는 동무를 죽이려고 칼을 뽑았고, 먹을 것을 구하러 간 자는 다 차지하려고 밥에 독을 탔습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     165,
+     96
+    ],
+    "shape": "box",
+    "en": "The moment the forager returned, the guard cut him down. Alone with the vast treasure, the murderer sat down to eat his poisoned prize. He died then and there.",
+    "ko": "먹을 것을 구하러 간 자가 돌아오자마자 지키던 자가 그를 베었습니다.\n\n엄청난 보물을 홀로 차지한 살인자는 앉아서 독이 든 밥을 먹었습니다.\n\n그는 그 자리에서 죽었습니다."
+   },
+   {
+    "seed": [
+     524,
+     353
+    ],
+    "shape": "box",
+    "en": "By reason of the treasure, all had come to ruin",
+    "ko": "보물 때문에 모두가 파멸했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     171,
+     109
+    ],
+    "shape": "box",
+    "en": "Days later, the Bodhisatta returned with the ransom Finding treasure strewn about and his master’s cloven body, his heart sank His warning had been unheeded With gathered sticks and wild flowers, he built pyre and burnt his master.",
+    "ko": "며칠 뒤 보살이 몸값을 가지고 돌아왔습니다.\n\n보물이 흩어져 있고 스승의 몸이 두 동강 나 있는 것을 보자 마음이 무너졌습니다. 경고를 듣지 않으셨구나.\n\n보살은 나뭇가지와 들꽃을 모아 장작더미를 쌓고 스승을 화장했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     201,
+     98
+    ],
+    "shape": "box",
+    "en": "Following the bloody road, he found the bodies of the five hundred “Dispatchers.” Then two hundred and fifty. Marking how the thousand had perished, he knew two must have survived. He pressed into the jungle to find them.",
+    "ko": "피로 물든 길을 따라가다 ‘보내는 자들’ 오백 명의 시신을 보았습니다. 그다음엔 이백오십 명. 천 명이 어떻게 죽어 갔는지 헤아려 보고, 두 사람이 살아남았음을 알았습니다. 보살은 그들을 찾아 밀림 속으로 들어갔습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     546,
+     56
+    ],
+    "shape": "box",
+    "en": "At the secret spot, he found ne treasure, the slain forager, and the poisoned guard",
+    "ko": "숨겨 둔 곳에서 보살은 보물과 베인 자와 독을 먹은 자를 보았습니다."
+   },
+   {
+    "seed": [
+     111,
+     322
+    ],
+    "shape": "box",
+    "en": "Realising the entire story at glance, he mused on the tragedy. Truly, misguided effort destroys not just oneself, but all others involved.",
+    "ko": "한눈에 모든 일을 알아차리고 보살은 이 비극을 곰곰이 생각했습니다. 참으로, 그릇된 방법으로 애쓰면 자기만 망치는 것이 아니라 함께한 모두를 망칩니다."
+   }
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-14-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     556,
+     73
+    ],
+    "shape": "box",
+    "en": "Anupayena yo attham icchati so Ceta hanimsu Vedabbam, sabbe te byasanam-ajjhagi ti.",
+    "ko": "아누빠예나 요 앗탕\n잇차띠 소 위한냐띠,\n쩨따 하닝수 웨답방,\n삽베 떼 뱌사남앗자구 띠."
+   },
+   {
+    "rect": [
+     46,
+     318,
+     400,
+     400
+    ],
+    "dark": true,
+    "align": "left",
+    "ko": "“그릇된 방법으로 이익을 구하는 자는 괴로움을 겪는다. 쩨따의 도적들이 웨답바를 죽였고, 그들 모두 파멸에 이르렀다.”\n보살은 이렇게 법을 설했습니다.",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/048-The-Rain-of-Ruin-15-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     89,
+     60
+    ],
+    "shape": "box",
+    "en": "The 1e Bodhisatta carried the treasure home.",
+    "ko": "보살은 보물을 집으로 가져갔습니다."
+   },
+   {
+    "seed": [
+     51,
+     316
+    ],
+    "shape": "box",
+    "en": "Unlike his master, he did not let greed consume him. He lived out his term of life in the exercise of boundless generosity and good works, utilizing the wealth Ith correctly",
+    "ko": "스승과 달리 보살은 탐욕에 휘둘리지 않았습니다. 그는 끝없는 보시와 선행을 행하며 재물을 바르게 쓰고 수명을 다했습니다."
+   }
+  ]
+ }
+]
