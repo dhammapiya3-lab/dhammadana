@@ -1,0 +1,504 @@
+[
+ {
+  "img": "images/16-Cowherds-Hut-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ths",
+   "The",
+   "Birth-Story",
+   "the",
+   "Cowherd’s",
+   "Tale",
+   "Merit",
+   "and",
+   "Architecture",
+   "Hut",
+   "The"
+  ]
+ },
+ {
+  "img": "images/16-Cowherds-Hut-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     274,
+     50
+    ],
+    "bbox": [
+     853,
+     53,
+     1792,
+     205
+    ],
+    "shape": "box",
+    "en": "The Jataka Nae rative ive Cycle",
+    "conf": 58
+   },
+   {
+    "seed": [
+     352,
+     195
+    ],
+    "bbox": [
+     1094,
+     595,
+     1554,
+     721
+    ],
+    "shape": "box",
+    "en": "1. Paccuppannavatth phe Present Context ext",
+    "conf": 58
+   },
+   {
+    "seed": [
+     124,
+     323
+    ],
+    "bbox": [
+     324,
+     1005,
+     721,
+     1157
+    ],
+    "shape": "box",
+    "en": "3. Samodh ana: The Synthesis",
+    "conf": 91
+   },
+   {
+    "seed": [
+     602,
+     319
+    ],
+    "bbox": [
+     1941,
+     1005,
+     2347,
+     1157
+    ],
+    "shape": "box",
+    "en": "4 Pee Atitavatthu: titavatthu: The Past Life",
+    "conf": 32
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/16-Cowherds-Hut-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     285,
+     376
+    ],
+    "bbox": [
+     337,
+     1200,
+     2304,
+     1382
+    ],
+    "shape": "box",
+    "en": "The rene Marvelous Small Act Traveling near Jetavana, the Buddha observes humble cowherd’s hut of kusa-grass. He remarks to Sariputta and Ananda on the extraordinary karmic fruit born from this small act of merit.",
+    "conf": 31
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/16-Cowherds-Hut-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Heavenly",
+   "Result:",
+   "Rebirth",
+   "Gopala",
+   "devaputta,",
+   "inheriting",
+   "golden",
+   "mansion",
+   "and",
+   "thousand",
+   "deva-maidens.",
+   "The",
+   "Architecture",
+   "Karma",
+   "Earthly",
+   "Action:",
+   "Constructing",
+   "grass",
+   "imsa",
+   "avat"
+  ]
+ },
+ {
+  "img": "images/16-Cowherds-Hut-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     252,
+     87
+    ],
+    "bbox": [
+     708,
+     208,
+     1928,
+     460
+    ],
+    "shape": "box",
+    "en": "The Past: King Dhammaraja aja of Jambudipa Ipa Reflecting under his white parasol, King Dhammaraja aja realizes his royal splendor is the ov direct 2 fruit of ee past Ww merit. Seeking oo higher wisdom, he initiates massive campaign of giving.",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/16-Cowherds-Hut-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     555,
+     65
+    ],
+    "bbox": [
+     704,
+     212,
+     1928,
+     469
+    ],
+    "shape": "box",
+    "en": "The Walled City of Merit POSS The King builds four radiant huts at the city gateways Distributing 400,000 gold pieces daily, his immense generosity causes the very earth to tremble",
+    "conf": 38
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/16-Cowherds-Hut-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     109,
+     91
+    ],
+    "bbox": [
+     202,
+     205,
+     1170,
+     727
+    ],
+    "shape": "bubble",
+    "en": "The Heavens Respond The King’s supreme merit generates warmth in Sakka’s celestial abode. Sakka descends in flower-mansion to invite Dhammaraja to witness the deva-world.",
+    "conf": 78
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/16-Cowherds-Hut-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     316,
+     326
+    ],
+    "bbox": [
+     678,
+     1045,
+     1974,
+     1313
+    ],
+    "shape": "box",
+    "en": "Glimpse of Divine Fruit For one night, the royal couple experiences fh, 2 3 deva-like BS happiness. Witnessing this bliss, the King’s resolve solidifies: human status is merely vehicle to accumulate further merit.",
+    "conf": 45
+   }
+  ],
+  "loose": [
+   "Sic"
+  ]
+ },
+ {
+  "img": "images/16-Cowherds-Hut-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     298,
+     328
+    ],
+    "bbox": [
+     678,
+     1045,
+     1974,
+     1319
+    ],
+    "shape": "box",
+    "en": "The Return to Jambudipa udipa Exhorted by Sakka to remain diligent, Dhammaraja returns. He commands his people to make merit with pure minds, ensuring their collective rebirth in the deva-worlds.",
+    "conf": 32
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/16-Cowherds-Hut-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     535,
+     320
+    ],
+    "bbox": [
+     1610,
+     985,
+     2519,
+     1352
+    ],
+    "shape": "box",
+    "en": "BQ The Buddha’s Instruction Concluding the past narrative, the Teacher explains to the Elders the specific, supreme karmic advantages of building vihara (monastic dwelling) in secluded forest.",
+    "conf": 67
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/16-Cowherds-Hut-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     215,
+     63
+    ],
+    "bbox": [
+     559,
+     86,
+     2030,
+     314
+    ],
+    "shape": "bubble",
+    "en": "is LE The he #latrix bof of eit Merit: Actions ons and Fra Frut {3",
+    "conf": 32
+   },
+   {
+    "seed": [
+     271,
+     129
+    ],
+    "bbox": [
+     638,
+     341,
+     1286,
+     635
+    ],
+    "shape": "bubble",
+    "en": "Action: Giving thanks for vihara",
+    "conf": 86
+   },
+   {
+    "seed": [
+     494,
+     148
+    ],
+    "bbox": [
+     1326,
+     341,
+     2023,
+     641
+    ],
+    "shape": "bubble",
+    "en": "Fruit: 1 Eon of Happiness",
+    "conf": 95
+   },
+   {
+    "seed": [
+     226,
+     200
+    ],
+    "bbox": [
+     622,
+     651,
+     1286,
+     956
+    ],
+    "shape": "bubble",
+    "en": "anal Action: Giving wealth to buyers of avihara vihara",
+    "conf": 34
+   },
+   {
+    "seed": [
+     507,
+     243
+    ],
+    "bbox": [
+     1359,
+     671,
+     2000,
+     936
+    ],
+    "shape": "box",
+    "en": "Fruit: 8 Eons of Happiness",
+    "conf": 96
+   },
+   {
+    "seed": [
+     280,
+     317
+    ],
+    "bbox": [
+     622,
+     989,
+     1286,
+     1273
+    ],
+    "shape": "box",
+    "en": "Action: Giving own wealth for habitation",
+    "conf": 95
+   },
+   {
+    "seed": [
+     495,
+     319
+    ],
+    "bbox": [
+     1326,
+     989,
+     2020,
+     1273
+    ],
+    "shape": "box",
+    "en": "ponte Fruit: Abundant Happiness for 1 Eon",
+    "conf": 35
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/16-Cowherds-Hut-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     329,
+     309
+    ],
+    "bbox": [
+     608,
+     995,
+     2033,
+     1382
+    ],
+    "shape": "box",
+    "en": "The Highest of All Gifts To build vihara with completely pure mind for the sake of habitation is declared the ultimate offering, ensuring continuous happiness across eons.",
+    "conf": 81
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/16-Cowherds-Hut-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "King",
+   "Dhamma",
+   "rajakumara",
+   "(Past",
+   "Father)",
+   "ast",
+   "Son",
+   "The",
+   "Bodhisatta)",
+   "King",
+   "The",
+   "(Present",
+   "Father)",
+   "(Present)",
+   "Samodhana:",
+   "The",
+   "Identification",
+   "The",
+   "Teacher",
+   "links",
+   "the",
+   "epochs:",
+   "The",
+   "father",
+   "the",
+   "Bodhisatta",
+   "now",
+   "King",
+   "Suddhodana.",
+   "The",
+   "wise",
+   "Buddha",
+   "himself.",
+   "King",
+   "Dhammaraja",
+   "the",
+   "Dhammaraja",
+   "(Past",
+   "Suddhodana",
+   "hisatta",
+   "ing"
+  ]
+ }
+]

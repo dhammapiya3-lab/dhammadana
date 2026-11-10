@@ -1,0 +1,455 @@
+[
+ {
+  "img": "images/19-Sirivipulakitti-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Epic",
+   "‘King",
+   "Pannasa",
+   "Jataka",
+   "Tale",
+   "Filial",
+   "Piety",
+   "nnasa"
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Buddha",
+   "praises",
+   "monk",
+   "for",
+   "offering",
+   "his",
+   "alms",
+   "his",
+   "elderly",
+   "parents.",
+   "“This",
+   "monk",
+   "verily",
+   "the",
+   "Way.",
+   "illustrate",
+   "supreme",
+   "devotion,",
+   "the",
+   "Teacher",
+   "recounts",
+   "past",
+   "life.",
+   "offering",
+   "The"
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     126,
+     123
+    ],
+    "bbox": [
+     231,
+     370,
+     846,
+     1051
+    ],
+    "shape": "box",
+    "en": "oc In ancient Campa, the righteous but childless King Yasakitti and Queen Sirimati aspire for an heir. Through the incandescence of the Queen’s Uposatha vows, the deva-king Sakka entreats the Bodhisatta to descend.",
+    "conf": 54
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/19-Sirivipulakitti-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     262,
+     380
+    ],
+    "bbox": [
+     724,
+     1210,
+     1918,
+     1455
+    ],
+    "shape": "box",
+    "en": "greedy ore edy rival king attacks Campa. 1 Refusing iota) to cause harm, Yasakitti Ta] prioritizes his morality over his kingdom. He and the pregnant Queen Sirimati choose forest exile on Mount Vipula, embracing the ascetic life",
+    "conf": 39
+   }
+  ],
+  "loose": [
+   "els",
+   "Cat"
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     107,
+     56
+    ],
+    "bbox": [
+     169,
+     159,
+     840,
+     469
+    ],
+    "shape": "box",
+    "en": "Yasakitti rescues lost woodlander, generously feeding him for seven day: Consumed by gree the ungrateful man betrays his savior’s location to the rival king for hundred thousand golden pieces.",
+    "conf": 74
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/19-Sirivipulakitti-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     228,
+     367
+    ],
+    "bbox": [
+     552,
+     1200,
+     2090,
+     1359
+    ],
+    "shape": "box",
+    "en": "Soldiers seize King Yasakitti, subjecting him to the cruel fivefold pinion. Alone in the deep forest, Queen Sirimati gives birth toa golden-hued son, naming him Sirivipulakitti.",
+    "conf": 72
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/19-Sirivipulakitti-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     614,
+     326
+    ],
+    "bbox": [
+     1835,
+     1061,
+     2450,
+     1289
+    ],
+    "shape": "bubble",
+    "en": "Learning of his father’s imprisonment, the Bodhisatta departs to find him. He takes only his mother’s diamond seal-ring and woven woollen cloth as undeniable proof of his royal lineage",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/19-Sirivipulakitti-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     268,
+     66
+    ],
+    "bbox": [
+     612,
+     198,
+     1478,
+     407
+    ],
+    "shape": "box",
+    "en": "Finding his father miserable in prison, the Bodhisatta—possessing ing on the strength 2 of seven en elephants—refuses violence. olence. Instead, he offers his own life to the rival king to buy his father’s freedom",
+    "conf": 57
+   }
+  ],
+  "loose": [
+   "(3,8)",
+   "“AY"
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     393,
+     179
+    ],
+    "bbox": [
+     1068,
+     489,
+     1574,
+     995
+    ],
+    "shape": "bubble",
+    "en": "The rival king demands execution, but the Bodhisatta’s merit is invulnerable Esecutioners’ swords shatter, charging elephant flees, giant lotus sbields him from embers, and Naga-king rescues him from precipice.",
+    "conf": 84
+   }
+  ],
+  "loose": [
+   "go>"
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     114,
+     67
+    ],
+    "bbox": [
+     145,
+     152,
+     1005,
+     397
+    ],
+    "shape": "box",
+    "en": "Consumed by escalating rage at the Bodhisatta’s miraculous lous survival, the evil king’s karma ripens instantly. The great earth splits apart, swallowing him into the horrific fires of Avici Niraya.",
+    "conf": 66
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/19-Sirivipulakitti-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     53,
+     348
+    ],
+    "bbox": [
+     145,
+     1088,
+     1002,
+     1332
+    ],
+    "shape": "box",
+    "en": "mums, Consecrated as King by the Nagas, Sirivipulakitti hurries to the forest to fetch his mother. He arrives too late; Queen Sirimati has died of starvation and severe grief in the leaf-hut.",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/19-Sirivipulakitti-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Overcome",
+   "with",
+   "sorrow,",
+   "the",
+   "Bodhisatta",
+   "lies",
+   "his",
+   "mother’s",
+   "funeral",
+   "pyre,",
+   "demanding",
+   "die",
+   "beside",
+   "her.",
+   "The",
+   "pyre",
+   "lit,",
+   "but",
+   "his",
+   "absolute",
+   "filial",
+   "piety",
+   "renders",
+   "his",
+   "body",
+   "entirely",
+   "untouched",
+   "the",
+   "fierce",
+   "flames"
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     592,
+     358
+    ],
+    "bbox": [
+     1898,
+     1121,
+     2496,
+     1332
+    ],
+    "shape": "box",
+    "en": "Great Being erects magnificent golden cetiya for his mother’s remains. He establishes village to perform perpetual homage, ensuring all who make merit there are reborn in celestial realms.",
+    "conf": 86
+   }
+  ],
+  "loose": [
+   "Var"
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "PAST",
+   "PRESENT",
+   "Rascally",
+   "King",
+   "Devadatta",
+   "Yasakitti",
+   "Suddhodana",
+   "Sirimati",
+   "Mahamaya",
+   "Sirivipulakitti",
+   "The",
+   "Tathagata",
+   "Returning",
+   "the",
+   "present,",
+   "the",
+   "Buddha",
+   "identifies",
+   "the",
+   "rebirths:",
+   "The",
+   "rival",
+   "king",
+   "was",
+   "Devadatta.",
+   "King",
+   "Yasakitti",
+   "was",
+   "Suddhodana.",
+   "Queen",
+   "Sirimati",
+   "was",
+   "Mahamaya.",
+   "And",
+   "the",
+   "perfectly",
+   "Self-Awakened",
+   "Tathagata",
+   "was",
+   "King",
+   "Sirivipulakitti."
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "ultimate",
+   "perfection",
+   "virtue.",
+   "The",
+   "Buddha",
+   "demonstrates",
+   "that",
+   "true",
+   "spiritual",
+   "awakening",
+   "requires",
+   "upholding",
+   "supreme",
+   "filial",
+   "piety",
+   "and",
+   "absolute",
+   "non-violence,",
+   "regardless",
+   "the",
+   "lifetimes",
+   "trials",
+   "demands."
+  ]
+ }
+]

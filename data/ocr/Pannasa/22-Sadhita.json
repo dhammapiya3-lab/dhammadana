@@ -1,0 +1,386 @@
+[
+ {
+  "img": "images/22-Sadhita-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sadhitaraja",
+   "Jatak",
+   "Supreme",
+   "COD",
+   "the",
+   "Anatomy",
+   "Generosit"
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Jetavana,",
+   "the",
+   "Teacher",
+   "addressed",
+   "the",
+   "assembled",
+   "monastics:",
+   "“Formerly,",
+   "when",
+   "was",
+   "faring",
+   "along",
+   "samsara",
+   "the",
+   "status",
+   "ordinary",
+   "person,",
+   "daily",
+   "gave",
+   "the",
+   "great",
+   "populace.”"
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     269,
+     39
+    ],
+    "bbox": [
+     641,
+     3,
+     2060,
+     800
+    ],
+    "shape": "bubble",
+    "en": "“Reigning in Mithila, King Sadhita surveyed his royal bliss and realized profound truth: his present joy was entirely the fruit of merit worked in past lives. The cycle had to continue.” 3",
+    "conf": 81
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/22-Sadhita-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     413,
+     163
+    ],
+    "bbox": [
+     1121,
+     354,
+     2367,
+     1144
+    ],
+    "shape": "bubble",
+    "en": "The Architec pail of Charity: XK wea aN LSS Li Commanding expert carpenters to harvest mighty sala trees, the King constructed six great alms-halls to encircle and anchor the city of Mithila.",
+    "conf": 48
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/22-Sadhita-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Distributing",
+   "massive",
+   "wealth",
+   "daily,",
+   "the",
+   "King",
+   "visited",
+   "the",
+   "halls",
+   "morning",
+   "and",
+   "evening.",
+   "The",
+   "great",
+   "populace",
+   "Mithila",
+   "ceased",
+   "their",
+   "ploughing,",
+   "sustained",
+   "entirely",
+   "his",
+   "supreme,",
+   "joyous",
+   "generosity.",
+   "(As"
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Such",
+   "pure,",
+   "concentrated",
+   "merit",
+   "violently",
+   "shook",
+   "the",
+   "earth",
+   "where",
+   "there",
+   "had",
+   "once",
+   "been",
+   "terror.",
+   "the",
+   "celestial",
+   "sphere",
+   "above,",
+   "the",
+   "very",
+   "throne",
+   "Sakka,",
+   "king",
+   "devas,",
+   "grew",
+   "hot.",
+   "fiercely"
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Descending",
+   "from",
+   "the",
+   "deva-world,",
+   "Sakka",
+   "illuminated",
+   "the",
+   "palace.",
+   "raise",
+   "arms",
+   "you",
+   "honour",
+   "for",
+   "this",
+   "giving,”",
+   "Sakka",
+   "declared.",
+   "“In",
+   "the",
+   "future,",
+   "Self-Awakened",
+   "One.”",
+   "will"
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Escalation",
+   "Grace:",
+   "Returning",
+   "his",
+   "realm,",
+   "Sakka",
+   "orchestrated",
+   "miraculous",
+   "seven-day",
+   "sequence",
+   "divine",
+   "rain,",
+   "compounding",
+   "the",
+   "King’s",
+   "merit",
+   "into",
+   "unimaginable",
+   "cascade",
+   "earthly",
+   "and",
+   "celestial",
+   "wealth.",
+   "fad"
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "King",
+   "Sadhita",
+   "scattered",
+   "the",
+   "celestial",
+   "wealth",
+   "his",
+   "exhorted",
+   "the",
+   "populace",
+   "practice",
+   "their",
+   "own",
+   "giving,",
+   "securing",
+   "their",
+   "future",
+   "rebirth",
+   "the",
+   "Tusita",
+   "deva-world.",
+   "than",
+   "hoard",
+   "divine",
+   "dividend,",
+   "through",
+   "alms-halls.",
+   "halls."
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "fad",
+   "Concl",
+   "his",
+   "Teacher",
+   "the",
+   "Dhamma",
+   "the",
+   "Four",
+   "Truths.",
+   "this,",
+   "the",
+   "monastics",
+   "attained",
+   "the",
+   "fruits",
+   "stream-entry,",
+   "once-return,",
+   "no-return,",
+   "and",
+   "pure",
+   "ara",
+   "hantship.",
+   "the",
+   "expounded",
+   "Hearing",
+   "assemble",
+   "turn,",
+   "the",
+   "nastics",
+   "rn,"
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Identity",
+   "Matrix:",
+   "igures",
+   "King",
+   "Sadhita",
+   "The",
+   "Buddha",
+   "Queen",
+   "Samula",
+   "Yasodhara",
+   "Wife",
+   "the",
+   "Budd",
+   "Sakka",
+   "Arahat",
+   "Monk",
+   "the",
+   "king",
+   "gods",
+   "Ananda",
+   "Arahat",
+   "Monk",
+   "Chief",
+   "Official",
+   "Sadhita",
+   "The",
+   "Buddha",
+   "Queen",
+   "Samula",
+   "Yasodhara",
+   "Sakka",
+   "Anuruddha",
+   "Chief",
+   "Official",
+   "Ananda",
+   "Royal",
+   "Parents",
+   "Mahamaya",
+   "Suddhodana",
+   "Past",
+   "Figures",
+   "Present",
+   "Figures",
+   "The"
+  ]
+ }
+]

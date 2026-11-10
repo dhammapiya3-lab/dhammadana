@@ -1,0 +1,546 @@
+[
+ {
+  "img": "images/12-Narajiva-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     324,
+     366
+    ],
+    "bbox": [
+     836,
+     1151,
+     1805,
+     1425
+    ],
+    "shape": "bubble",
+    "en": "The Birth-Story of Pafifiasa Jataka of Kathina Merit and Karmic Consequence",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-Narajiva-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     82,
+     72
+    ],
+    "bbox": [
+     175,
+     182,
+     929,
+     423
+    ],
+    "shape": "box",
+    "en": "King Pasenadi of Kosala offered kathina-cloth to the Sangha, achieving stream-entry but not omniscience.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     538,
+     357
+    ],
+    "bbox": [
+     1709,
+     1108,
+     2483,
+     1356
+    ],
+    "shape": "box",
+    "en": "The Buddha explained that supreme awakening requires immense past aspirations, prompting him to recount his former life.",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "fis"
+  ]
+ },
+ {
+  "img": "images/12-Narajiva-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     68,
+     73
+    ],
+    "bbox": [
+     175,
+     182,
+     926,
+     427
+    ],
+    "shape": "box",
+    "en": "Eons ago in Hamsavati, the Bodhisatta ‘was humble wage-earner named Narajiva, devoted to supporting his mother.",
+    "conf": 51
+   },
+   {
+    "seed": [
+     558,
+     358
+    ],
+    "bbox": [
+     1709,
+     1108,
+     2483,
+     1369
+    ],
+    "shape": "box",
+    "en": "He guarded fields for pious householder who lived in nearby village alongside four close friends.",
+    "conf": 94
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-Narajiva-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     92,
+     365
+    ],
+    "bbox": [
+     179,
+     1194,
+     1118,
+     1405
+    ],
+    "shape": "box",
+    "en": "The householder invited red his friends to offer kathina-cloth. Only the barber recognized the merit.",
+    "conf": 61
+   },
+   {
+    "seed": [
+     479,
+     365
+    ],
+    "bbox": [
+     1514,
+     1194,
+     2483,
+     1405
+    ],
+    "shape": "box",
+    "en": "The chariot-maker, hunter, and bird-catcher refused, prioritizing worldly maintenance over spiritual generosity.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-Narajiva-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     104,
+     364
+    ],
+    "bbox": [
+     179,
+     1194,
+     1118,
+     1405
+    ],
+    "shape": "box",
+    "en": "The householder and Narajiva presented the sacred kathina-cloth to Lord Padumuttara.",
+    "conf": 91
+   },
+   {
+    "seed": [
+     477,
+     364
+    ],
+    "bbox": [
+     1514,
+     1194,
+     2483,
+     1405
+    ],
+    "shape": "box",
+    "en": "The Buddha expounded its immense nse fruits: boundless happiness, noble birth,and eternal liberation from states of woe.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-Narajiva-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     123,
+     95
+    ],
+    "bbox": [
+     175,
+     284,
+     734,
+     512
+    ],
+    "shape": "box",
+    "en": "Narajiva fell at Lord Padumuttara’s feet, aspiring to future Buddhahood.",
+    "conf": 91
+   },
+   {
+    "seed": [
+     659,
+     103
+    ],
+    "bbox": [
+     1885,
+     278,
+     2516,
+     691
+    ],
+    "shape": "bubble",
+    "en": "Simultaneously, three ee bystanders offered cloak, turban, and seal-ring, fervently wishing to become his future wife, son, and father.",
+    "conf": 49
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-Narajiva-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     360,
+     217
+    ],
+    "bbox": [
+     1147,
+     665,
+     1494,
+     827
+    ],
+    "shape": "box",
+    "en": "Actions bear unavoidable fruit.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     269,
+     282
+    ],
+    "bbox": [
+     813,
+     883,
+     1137,
+     1028
+    ],
+    "shape": "box",
+    "en": "The generous householder became an Earth-devata. The helpful barber was reborn as merchant.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     477,
+     283
+    ],
+    "bbox": [
+     1504,
+     876,
+     1822,
+     1028
+    ],
+    "shape": "box",
+    "en": "The three rejecting friends devolved into tiger, yakkha, and woodpecker.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "aly"
+  ]
+ },
+ {
+  "img": "images/12-Narajiva-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     110,
+     29
+    ],
+    "bbox": [
+     304,
+     73,
+     1243,
+     202
+    ],
+    "shape": "box",
+    "en": "The merchant travelled toward Suvannabhumi.",
+    "conf": 45
+   },
+   {
+    "seed": [
+     162,
+     390
+    ],
+    "bbox": [
+     440,
+     1273,
+     2202,
+     1432
+    ],
+    "shape": "box",
+    "en": "Along the winding forest paths, he encountered the tiger, the yakkha, and the woodpecker. Bound by their past friendship, the beasts guarded him rather than devouring him.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-Narajiva-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     80,
+     72
+    ],
+    "bbox": [
+     155,
+     195,
+     1008,
+     489
+    ],
+    "shape": "box",
+    "en": "Reaching Mount Gandhamadana, the merchant was welcomed by the Earth-devata.",
+    "conf": 59
+   },
+   {
+    "seed": [
+     418,
+     342
+    ],
+    "bbox": [
+     1250,
+     1101,
+     2523,
+     1382
+    ],
+    "shape": "box",
+    "en": "Recognizing his former friend, the devata bestowed immense wealth upon the merchant in deep gratitude for his past support.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-Narajiva-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     305,
+     23
+    ],
+    "bbox": [
+     856,
+     53,
+     1779,
+     228
+    ],
+    "shape": "box",
+    "en": "Returning to Baranasi, the merchant wed banker’s daughter.",
+    "conf": 90
+   },
+   {
+    "seed": [
+     257,
+     388
+    ],
+    "bbox": [
+     800,
+     1233,
+     1852,
+     1438
+    ],
+    "shape": "box",
+    "en": "Envious of his sudden fortune, treacherous young men lured him into the vast forest, robbed him, and abandoned him to perish.",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-Narajiva-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     88,
+     289
+    ],
+    "bbox": [
+     155,
+     919,
+     764,
+     1124
+    ],
+    "shape": "box",
+    "en": "The Earth-devata rescued the merchant, revealing magical tree of desires",
+    "conf": 92
+   },
+   {
+    "seed": [
+     358,
+     384
+    ],
+    "bbox": [
+     1055,
+     1210,
+     2073,
+     1385
+    ],
+    "shape": "box",
+    "en": "He snapped off the ‘Lovely’ and ‘Monkey branches, offering karmic justice through their potent, mystical fruits",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "‘Monkey"
+  ]
+ },
+ {
+  "img": "images/12-Narajiva-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     145,
+     355
+    ],
+    "bbox": [
+     268,
+     1101,
+     975,
+     1356
+    ],
+    "shape": "bubble",
+    "en": "Tasting the ‘Lovely’ branch, the ugly merchant instantly transformed into man of shining beauty.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     522,
+     368
+    ],
+    "bbox": [
+     1660,
+     1121,
+     2380,
+     1352
+    ],
+    "shape": "box",
+    "en": "The greedy robbers, stealing the ‘Monkey’ branch, were permanently transfigured SUE into forest monkeys.",
+    "conf": 44
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-Narajiva-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     224,
+     400
+    ],
+    "bbox": [
+     532,
+     1246,
+     2109,
+     1438
+    ],
+    "shape": "box",
+    "en": "The Buddha concluded the tale, tale, drawing the karmic threads together. together. The merchant is Channa, the Devata is Elder Naga, and the bystanders are Yasodhara, Rahula, and Suddhodana. The wage-earner Narajiva is the Tathagata.",
+    "conf": 50
+   }
+  ],
+  "loose": [
+   "Counsellor",
+   "Channa",
+   "The",
+   "Merchant",
+   "Elder",
+   "Naga",
+   "The",
+   "Earth-",
+   "The",
+   "Young",
+   "Man",
+   "Rahula",
+   "The",
+   "Daughter",
+   "The",
+   "Banker",
+   "The",
+   "Tathagata",
+   "Narajiva"
+  ]
+ }
+]

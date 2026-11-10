@@ -1,0 +1,785 @@
+[
+ {
+  "img": "images/38-Sirasakumara-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Veluvana,",
+   "monks",
+   "discussed",
+   "Devadatta’s",
+   "hostility",
+   "toward",
+   "the",
+   "Tathagata.",
+   "The",
+   "Teacher",
+   "explained:",
+   "“Not",
+   "only",
+   "now,",
+   "but",
+   "the",
+   "past,",
+   "Devadatta’s",
+   "enmity",
+   "subjected",
+   "him",
+   "great",
+   "misfortune.”",
+   "began",
+   "the",
+   "tale",
+   "King",
+   "Pathamaraja.",
+   "raja.",
+   "Thus"
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Before",
+   "conception,",
+   "Queen",
+   "Surasidevi",
+   "saw",
+   "soiled",
+   "cloth",
+   "walking",
+   "the",
+   "river.",
+   "That",
+   "night,",
+   "the",
+   "Bodhisatta",
+   "appeared",
+   "dream,",
+   "declaring:",
+   "shall",
+   "your",
+   "son",
+   "and",
+   "rule",
+   "all",
+   "residents",
+   "the",
+   "Palisanagara",
+   "kingdom.”"
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Born",
+   "miraculously",
+   "from",
+   "her",
+   "mouth",
+   "into",
+   "folded",
+   "cloth,",
+   "the",
+   "infant",
+   "grew",
+   "immensely",
+   "heavy.",
+   "When",
+   "washed",
+   "the",
+   "river,",
+   "all",
+   "dirt",
+   "vanished.",
+   "The",
+   "cloth",
+   "became",
+   "extremely",
+   "pure",
+   "and",
+   "clean,",
+   "like",
+   "lotus",
+   "leaf",
+   "which",
+   "water",
+   "has",
+   "CWS"
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     70,
+     176
+    ],
+    "bbox": [
+     159,
+     436,
+     833,
+     1084
+    ],
+    "shape": "bubble",
+    "en": "To test his father’s affection, nine-month-old Sirasakumara hid inside massive jewel chest. Distraught, the King circled Palisanagara seven times. When finally discovered, the prince sat among precious clothes, shining brilliantly Pahl like golden lotus.",
+    "conf": 43
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Sirasakumara-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Majjaharaka,",
+   "greedy",
+   "Brahman",
+   "advisor,",
+   "secretly",
+   "threw",
+   "the",
+   "treasury’s",
+   "wealth",
+   "into",
+   "the",
+   "Ganges.",
+   "Exploiting",
+   "the",
+   "King’s",
+   "weak",
+   "intellect,",
+   "claimed",
+   "the",
+   "prince’s",
+   "unnatural",
+   "birth",
+   "would",
+   "cause",
+   "the",
+   "river",
+   "sweep",
+   "away",
+   "and",
+   "destroy",
+   "the",
+   "entire",
+   "jaharaka,"
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     455,
+     46
+    ],
+    "bbox": [
+     1372,
+     109,
+     2546,
+     440
+    ],
+    "shape": "box",
+    "en": "The King decreed the infant must be cast upon the Ganges. The Queen pleaded, “Our son is like your finger. If your finger deserves to be cut off, then cut it off.” The King ignored her desperation.",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Sirasakumara-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     138,
+     50
+    ],
+    "bbox": [
+     119,
+     119,
+     1303,
+     446
+    ],
+    "shape": "box",
+    "en": "Four-year-old Prince Devakama defied the decree. He held his baby brother to his bosom, drew his sword, and offered the Brahmans nine million gold coins and six hundred elephants ses his life. They refused.",
+    "conf": 42
+   }
+  ],
+  "loose": [
+   "ASS"
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     492,
+     334
+    ],
+    "bbox": [
+     1435,
+     1015,
+     2460,
+     1326
+    ],
+    "shape": "box",
+    "en": "Unable to abandon her youngest son, Queen Surasidevi instructed her other children to rule justly without anger. She boarded the exile ship, suspending Sirasakumara from her neck in cloth swing, choosing shared ate ov er separation.",
+    "conf": 75
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Sirasakumara-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Due",
+   "the",
+   "majesty,",
+   "provided",
+   "celestial",
+   "food",
+   "upon",
+   "the",
+   "Ganges.",
+   "Simultaneously,",
+   "divine",
+   "rain",
+   "revived",
+   "thirty-six",
+   "thousand",
+   "grieving",
+   "citizens",
+   "fallen",
+   "unconscious,",
+   "allowing",
+   "them",
+   "witness",
+   "the",
+   "miracle.",
+   "Sakka"
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     78,
+     86
+    ],
+    "bbox": [
+     182,
+     182,
+     992,
+     489
+    ],
+    "shape": "box",
+    "en": "Bereft of virtue, Palisanagara collapsed. Elephants wept and refused water. Royal mango groves withered into dust. By the Bodhisatta’s power, not single drop of rain fell, and the wells of the evil Brahmans dried completely.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Sirasakumara-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "aged",
+   "army",
+   "chief",
+   "arrived",
+   "and",
+   "the",
+   "truth",
+   "fool",
+   "who",
+   "joins",
+   "another",
+   "fool",
+   "goes",
+   "from",
+   "bad",
+   "worse.",
+   "Let",
+   "one",
+   "associate",
+   "only",
+   "with",
+   "the",
+   "good;",
+   "you",
+   "will",
+   "never",
+   "evil.”",
+   "delivered",
+   "ultimate",
+   "army",
+   "the"
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     575,
+     158
+    ],
+    "bbox": [
+     1832,
+     446,
+     2463,
+     1032
+    ],
+    "shape": "box",
+    "en": "Placed in golden receptacle, the prince was bathed in perfumed water. At the citizens’ proclamation, proclamation, Sakka released celestial water and shower of seven jewels, proving him true Buddha-sprout.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Sirasakumara-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     495,
+     325
+    ],
+    "bbox": [
+     1514,
+     1035,
+     2496,
+     1342
+    ],
+    "shape": "box",
+    "en": "The celestial water revealed each So soul's spiritual purity. Touching the meritorious, single drop emitted fragrance agrance for seven yojanas, Upon the wicked, it remained as scentless as ordinary river water.",
+    "conf": 46
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Sirasakumara-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     577,
+     172
+    ],
+    "bbox": [
+     1825,
+     446,
+     2463,
+     1032
+    ],
+    "shape": "box",
+    "en": "Seeking the celestial fragrance, King Pathama’s evil Brahmans stole the Bodhisatta’s auspicious horse. The royal beast rejected their wickedness, throwing them to the earth and trampling them until streams of blood flowed.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Sirasakumara-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Prince",
+   "Devakama",
+   "retrieved",
+   "the",
+   "royal",
+   "horse",
+   "and",
+   "arrived",
+   "the",
+   "golden",
+   "pier.",
+   "Soon",
+   "after,",
+   "King",
+   "Pathama",
+   "and",
+   "240,000",
+   "citizens",
+   "arrived",
+   "grand",
+   "procession",
+   "worship",
+   "the",
+   "Bodhisatta",
+   "with",
+   "perfumes",
+   "and",
+   "scattered",
+   "popcorn."
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "wicked",
+   "Brahmans",
+   "attempted",
+   "consecrate",
+   "the",
+   "prince",
+   "retribution",
+   "struck",
+   "instantly.",
+   "Their",
+   "pitchers",
+   "exploded",
+   "into",
+   "700",
+   "shards,",
+   "permanently",
+   "embedding",
+   "deep",
+   "into",
+   "their",
+   "flesh",
+   "and",
+   "causing",
+   "agonizing,",
+   "incurable",
+   "swellings",
+   "ay!",
+   "ards,",
+   "embedding"
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     276,
+     347
+    ],
+    "bbox": [
+     717,
+     952,
+     1918,
+     1451
+    ],
+    "shape": "bubble",
+    "en": "Breaking ing his is lifelong silence, lence, the Bodhisatta spoke. By the power of accumulated merit, he remembered 2 his previous ao existence tence and revealed the hidden karmic truth behind his suffering on the River Ganges.",
+    "conf": 48
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Sirasakumara-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     291,
+     346
+    ],
+    "bbox": [
+     542,
+     956,
+     1924,
+     1432
+    ],
+    "shape": "bubble",
+    "en": "In the past, was prince who loved flowers. When bird ruined my bouquet, angrily poisoned it. This single wicked act condemned the innocent Bodhisatta to float helpless on the river.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "avy"
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Just",
+   "pitcher",
+   "filled",
+   "drop",
+   "drop,",
+   "fool",
+   "fills",
+   "himself",
+   "with",
+   "miseries",
+   "The",
+   "Bodhisatta",
+   "warned",
+   "the",
+   "assembly",
+   "purify",
+   "their",
+   "actions",
+   "teaching",
+   "that",
+   "seeds",
+   "sown",
+   "with",
+   "evil",
+   "companions",
+   "only",
+   "burn",
+   "ANS"
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     272,
+     352
+    ],
+    "bbox": [
+     711,
+     1091,
+     1931,
+     1448
+    ],
+    "shape": "bubble",
+    "en": "He 2 warned Ss 3 his 2 father of six treacherous So fe enemies disguised as companions. 2 Like fed snake, they bite their master. Awise wise ruler must avoid them at distance.",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "REQ",
+   "INA"
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     308,
+     336
+    ],
+    "bbox": [
+     668,
+     1025,
+     1921,
+     1435
+    ],
+    "shape": "bubble",
+    "en": "yoy True oe wealth £8 lies in generosity. om Zo The 2 Bodhisatta 8 Ss 2 instructed the king to rule without 3 anger, 2 patronize beggars, feed aged animals, and surround himself only with the wise to secure heavenly rebirth.",
+    "conf": 40
+   }
+  ],
+  "loose": [
+   "ENG"
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     312,
+     351
+    ],
+    "bbox": [
+     698,
+     982,
+     1918,
+     1451
+    ],
+    "shape": "bubble",
+    "en": "Al Having taught the Dhamma, his human work was complete. Disappearing by the majesty of his supernatural powers, he ascended to magnificent twelve-yojana golden palace in the Tavatimsa heaven.",
+    "conf": 62
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Sirasakumara-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     293,
+     346
+    ],
+    "bbox": [
+     717,
+     1091,
+     1921,
+     1451
+    ],
+    "shape": "bubble",
+    "en": "yf Hearing Surasidevi's deep lamentations, the Bodhisatta descended in an illuminated jeweled chamber. He opened the eyes of the public, granting them joyous, miraculous vision of the heavenly abodes.",
+    "conf": 57
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Sirasakumara-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     304,
+     62
+    ],
+    "bbox": [
+     846,
+     149,
+     1789,
+     423
+    ],
+    "shape": "box",
+    "en": "The Teacher concluded the Jataka, revealing the karmic threads connecting the characters of the past to the present samsara. 2",
+    "conf": 57
+   }
+  ],
+  "loose": [
+   "Vas",
+   "Kin",
+   "Majjaharaka",
+   "Deva",
+   "datta",
+   "Pathama",
+   "devi",
+   "Mahamaya",
+   "Prince",
+   "Devak",
+   "Army",
+   "Sakka",
+   "Anuruddha",
+   "Ananda",
+   "“King",
+   "Suddhodana"
+  ]
+ }
+]

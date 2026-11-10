@@ -1,0 +1,539 @@
+[
+ {
+  "img": "images/28-Mahasurasena-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     134,
+     188
+    ],
+    "bbox": [
+     145,
+     152,
+     764,
+     1342
+    ],
+    "shape": "bubble",
+    "en": "sth gel ef",
+    "conf": 41
+   }
+  ],
+  "loose": [
+   "King",
+   "The",
+   "Perfection",
+   "Giving",
+   "Lanna",
+   "Mural",
+   "Tradition"
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Jetavana,",
+   "monks",
+   "praised",
+   "supreme",
+   "generosity.",
+   "Overhearing",
+   "them,",
+   "the",
+   "Buddha",
+   "revealed",
+   "that",
+   "true",
+   "charity",
+   "transcends",
+   "material",
+   "wealth.",
+   "‘In",
+   "the",
+   "past",
+   "also,",
+   "the",
+   "wise",
+   "men",
+   "gave",
+   "away",
+   "their",
+   "very",
+   "heads.’"
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     310,
+     49
+    ],
+    "bbox": [
+     794,
+     139,
+     1848,
+     258
+    ],
+    "shape": "box",
+    "en": "The Anatomy of Char ity",
+    "conf": 89
+   },
+   {
+    "seed": [
+     128,
+     363
+    ],
+    "bbox": [
+     258,
+     1151,
+     1041,
+     1346
+    ],
+    "shape": "box",
+    "en": "Bahira-dana (External): Giving iving wealth, clothes, and sustenance. Yields great merit but cannot satisfy the highest aspiration.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     525,
+     358
+    ],
+    "bbox": [
+     1604,
+     1151,
+     2377,
+     1346
+    ],
+    "shape": "box",
+    "en": "Ajjhattik (Internal): Giving one's own flesh, blood, or head. The ultimate sacrifice required for Perfect Enlightenment.",
+    "conf": 70
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/28-Mahasurasena-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     450,
+     359
+    ],
+    "bbox": [
+     1425,
+     1151,
+     2453,
+     1346
+    ],
+    "shape": "box",
+    "en": "In ancient Baranasi, King Mahasirasena perfected external giving. Distributing 600,000 coins daily at his Charity Halls, he fulfilled every material request. Yet, this vast generosity left his heart unsatisfied",
+    "conf": 56
+   }
+  ],
+  "loose": [
+   "SSS"
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "his",
+   "charity,",
+   "the",
+   "King",
+   "realized:",
+   "give",
+   "external",
+   "objects.",
+   "How",
+   "wonderful",
+   "would",
+   "if,",
+   "today,",
+   "beggars",
+   "asked",
+   "for",
+   "eye,",
+   "head,",
+   "flesh,",
+   "blood.",
+   "would",
+   "give",
+   "them",
+   "away",
+   "attain",
+   "omniscience.”",
+   "Reflecting",
+   "merely"
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "pure",
+   "aspiration",
+   "destabilizes",
+   "cosmos.",
+   "The",
+   "majesty",
+   "his",
+   "vow",
+   "give",
+   "internal",
+   "gifts",
+   "triggered",
+   "divine",
+   "chain",
+   "reaction,",
+   "causing",
+   "the",
+   "great",
+   "earth",
+   "shake",
+   "and",
+   "Sakka’s",
+   "heavenly",
+   "the"
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Knowing",
+   "the",
+   "King",
+   "was",
+   "Sakka",
+   "descended",
+   "fulfill",
+   "his",
+   "aspiration.",
+   "Disguised",
+   "headless",
+   "young",
+   "man,",
+   "entered",
+   "the",
+   "royal",
+   "courtyard.",
+   "“You",
+   "are",
+   "refuge",
+   "now,”",
+   "the",
+   "youth",
+   "begged.",
+   "give",
+   "your",
+   "head.”",
+   "Buddha-sprout,"
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Rather",
+   "than",
+   "fear,",
+   "the",
+   "Bodhisatta’s",
+   "heart",
+   "with",
+   "joy.",
+   "easily",
+   "placing",
+   "bag",
+   "coins",
+   "outspread",
+   "palms,",
+   "agreed",
+   "without",
+   "wavering.",
+   "“My",
+   "heart",
+   "delights",
+   "charity,",
+   "and",
+   "shall",
+   "give",
+   "for",
+   "the",
+   "sake",
+   "enlightenment.”",
+   "filled"
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "stability,",
+   "the",
+   "King",
+   "poured",
+   "water",
+   "from",
+   "golden",
+   "ewer",
+   "onto",
+   "his",
+   "son",
+   "Varaja’s",
+   "hands,",
+   "passing",
+   "the",
+   "kingdom",
+   "him.",
+   "then",
+   "called",
+   "upon",
+   "Queen",
+   "Vijjulata",
+   "support",
+   "his",
+   "ultimate",
+   "act",
+   "giving."
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "royal",
+   "court",
+   "was",
+   "consumed",
+   "grief.",
+   "Following",
+   "him",
+   "the",
+   "park,",
+   "the",
+   "harem",
+   "wept",
+   "bitterly.",
+   "When",
+   "commanded",
+   "sever",
+   "the",
+   "head,",
+   "Minister",
+   "Sucisena",
+   "raised",
+   "his",
+   "Joined",
+   "palms",
+   "and",
+   "refused",
+   "again",
+   "and",
+   "again.",
+   "The"
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "sword,",
+   "the",
+   "Bodhisatta",
+   "looked",
+   "the",
+   "sky,",
+   "aspiring",
+   "only",
+   "perfect",
+   "enlightenment",
+   "for",
+   "the",
+   "welfare",
+   "all",
+   "beings.",
+   "fearlessly",
+   "severed",
+   "his",
+   "own",
+   "head",
+   "and",
+   "placed",
+   "the",
+   "hands."
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“At",
+   "that",
+   "very",
+   "moment,",
+   "the",
+   "earth",
+   "stretching",
+   "the",
+   "great",
+   "ocean",
+   "shook",
+   "violently.",
+   "Hosts",
+   "gods",
+   "cried,",
+   "“Excellent,",
+   "excellent!”",
+   "and",
+   "showered",
+   "heavenly",
+   "blossoms",
+   "all",
+   "directions,",
+   "validating",
+   "the",
+   "impossible",
+   "sacrifice."
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     554,
+     64
+    ],
+    "bbox": [
+     1703,
+     175,
+     2476,
+     453
+    ],
+    "shape": "box",
+    "en": "The earthly realm was overcome with sorrow. Minister Sucisena smeared the King’s blood on his own head in deep respect, while the women of the court sprinkled cool water to revive the fainting Queen and Prince.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/28-Mahasurasena-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     108,
+     321
+    ],
+    "bbox": [
+     212,
+     1025,
+     1207,
+     1309
+    ],
+    "shape": "box",
+    "en": "Sakka co aot dropped a6 la} his disguise Er and shone 68 or forth in the sky. With the power of his majesty, he instantaneously reattached ts the given at head and sprinkled it with wai ambrosial water, restoring oD the Bodhisatta to life.",
+    "conf": 34
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/28-Mahasurasena-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "rince",
+   "Varaja",
+   "Rahula",
+   "jjulata",
+   "King",
+   "Buddha",
+   "Minister",
+   "Sucisena",
+   "ale",
+   "Queen"
+  ]
+ }
+]

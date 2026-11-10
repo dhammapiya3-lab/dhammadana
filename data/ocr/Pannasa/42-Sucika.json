@@ -1,0 +1,611 @@
+[
+ {
+  "img": "images/42-Sucika-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     415,
+     183
+    ],
+    "bbox": [
+     1058,
+     562,
+     1584,
+     1372
+    ],
+    "shape": "box",
+    "en": "wt The Birth-Story of the Ascetic Sucika. latina ao Gt es Jataka of Wisdom and Riddles.",
+    "conf": 46
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/42-Sucika-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Two",
+   "eras.",
+   "Two",
+   "predators.",
+   "Two",
+   "wise",
+   "arbiters.",
+   "The",
+   "Buddha",
+   "reveals",
+   "how",
+   "worldly",
+   "ignorance",
+   "defeated",
+   "transcendent",
+   "wisdom",
+   "across",
+   "the",
+   "cycle",
+   "eras."
+  ]
+ },
+ {
+  "img": "images/42-Sucika-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "FANE",
+   "Himavanta,",
+   "hungry",
+   "crow",
+   "threatens",
+   "giant",
+   "worm",
+   "(kimina).",
+   "The",
+   "clever",
+   "prey",
+   "demands",
+   "answers",
+   "four",
+   "riddles,",
+   "under",
+   "penalty",
+   "shattered",
+   "skull."
+  ]
+ },
+ {
+  "img": "images/42-Sucika-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     445,
+     334
+    ],
+    "bbox": [
+     691,
+     704,
+     2549,
+     1385
+    ],
+    "shape": "bubble",
+    "en": "Ignorant of the answers, the crow flies the worm to Jetavana, suspended by creeper-rope. The Buddha smiles, ready to illuminate the truth. Ea",
+    "conf": 50
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/42-Sucika-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     118,
+     56
+    ],
+    "bbox": [
+     192,
+     142,
+     998,
+     264
+    ],
+    "shape": "box",
+    "en": "trix",
+    "conf": 97
+   },
+   {
+    "seed": [
+     170,
+     195
+    ],
+    "bbox": [
+     195,
+     532,
+     870,
+     876
+    ],
+    "shape": "box",
+    "en": "Greatest?",
+    "conf": 96
+   },
+   {
+    "seed": [
+     416,
+     183
+    ],
+    "bbox": [
+     985,
+     532,
+     1656,
+     873
+    ],
+    "shape": "box",
+    "en": "Crow: God (devo).",
+    "conf": 96
+   },
+   {
+    "seed": [
+     581,
+     169
+    ],
+    "bbox": [
+     1775,
+     529,
+     2447,
+     873
+    ],
+    "shape": "box",
+    "en": "Buddha: Supermundane dhamma (nibbana).",
+    "conf": 55
+   },
+   {
+    "seed": [
+     417,
+     310
+    ],
+    "bbox": [
+     989,
+     936,
+     1656,
+     1342
+    ],
+    "shape": "box",
+    "en": "Crow: Horses.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     581,
+     308
+    ],
+    "bbox": [
+     1775,
+     936,
+     2447,
+     1342
+    ],
+    "shape": "box",
+    "en": "Buddha: Mind following mind ind without ithout interruption.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "Fastest?",
+   "Vad"
+  ]
+ },
+ {
+  "img": "images/42-Sucika-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     171,
+     47
+    ],
+    "bbox": [
+     192,
+     142,
+     998,
+     264
+    ],
+    "shape": "box",
+    "en": "Matrix BS of",
+    "conf": 67
+   },
+   {
+    "seed": [
+     604,
+     52
+    ],
+    "bbox": [
+     1785,
+     99,
+     2437,
+     469
+    ],
+    "shape": "bubble",
+    "en": "“As Ey pall He) Ly SSS LE Soy?",
+    "conf": 35
+   },
+   {
+    "seed": [
+     429,
+     183
+    ],
+    "bbox": [
+     985,
+     532,
+     1656,
+     873
+    ],
+    "shape": "box",
+    "en": "Crow: Horn arrowhead.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     581,
+     182
+    ],
+    "bbox": [
+     1775,
+     532,
+     2447,
+     873
+    ],
+    "shape": "box",
+    "en": "Buddha Water",
+    "conf": 96
+   },
+   {
+    "seed": [
+     425,
+     310
+    ],
+    "bbox": [
+     989,
+     936,
+     1670,
+     1342
+    ],
+    "shape": "box",
+    "en": "Crow: Narayana’s power.",
+    "conf": 83
+   }
+  ],
+  "loose": [
+   "Sharpest?",
+   "Buddha:",
+   "The",
+   "Fully",
+   "Strongest?",
+   "Enlightened",
+   "One,",
+   "the",
+   "Tathagata."
+  ]
+ },
+ {
+  "img": "images/42-Sucika-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     116,
+     90
+    ],
+    "bbox": [
+     248,
+     245,
+     1081,
+     625
+    ],
+    "shape": "box",
+    "en": "The monks marvel at the Tathagata’s aga ta’s deep, sweet answers. The Buddha reveals: Even in the past, answered various questions of these two oO animals. ls.",
+    "conf": 59
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/42-Sucika-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     321,
+     171
+    ],
+    "bbox": [
+     985,
+     532,
+     1660,
+     926
+    ],
+    "shape": "box",
+    "en": "In ancient Baranasi, Bodhisatta Sucika renounced immense wealth. Retiring to Himavanta, he attained deep trances: Because of my dwelling in the forest, shall certainly become Buddha.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/42-Sucika-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     520,
+     129
+    ],
+    "bbox": [
+     1670,
+     317,
+     2394,
+     605
+    ],
+    "shape": "box",
+    "en": "By nigrodha tree, ravenous eagle traps giant moth. Mirroring the present, the moth poses four cosmic riddles to stall its doom",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "WAZ"
+  ]
+ },
+ {
+  "img": "images/42-Sucika-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Matrix",
+   "Illusion",
+   "vs.",
+   "Dhamma",
+   "Sucika:",
+   "Five-fold",
+   "Eagle:",
+   "Most",
+   "beautiful?",
+   "Autumn",
+   "moon.",
+   "pure",
+   "conduct.",
+   "Most",
+   "subtle?",
+   "Sucika:",
+   "Eagle:",
+   "Carded",
+   "cotton.",
+   "Knowing",
+   "the",
+   "scriptures."
+  ]
+ },
+ {
+  "img": "images/42-Sucika-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Matrix",
+   "Illusion",
+   "vs.",
+   "Dhamma",
+   "Eagle",
+   "Sucika:",
+   "Good",
+   "Farthest?",
+   "long",
+   "path",
+   "from",
+   "evil",
+   "Less",
+   "than",
+   "Sucika",
+   "Eagle",
+   "Death",
+   "Parinibbana",
+   "nothing?",
+   "Enlightened",
+   "One"
+  ]
+ },
+ {
+  "img": "images/42-Sucika-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "answers",
+   "riddles.",
+   "The",
+   "predators",
+   "spare",
+   "‘their",
+   "prey.",
+   "The",
+   "Bodhisatta",
+   "imparts",
+   "the",
+   "Five",
+   "Precepts,",
+   "replacing",
+   "deadly",
+   "with",
+   "righteous",
+   "conduct.",
+   "satisfy",
+   "the",
+   "answers"
+  ]
+ },
+ {
+  "img": "images/42-Sucika-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "concludes",
+   "preaching",
+   "the",
+   "path",
+   "cessation",
+   "Suffering",
+   "exists",
+   "three",
+   "worlds",
+   "The",
+   "Desire",
+   "path",
+   "leads",
+   "causes",
+   "there",
+   "Nibbana",
+   "cessation"
+  ]
+ },
+ {
+  "img": "images/42-Sucika-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     99,
+     60
+    ],
+    "bbox": [
+     119,
+     129,
+     800,
+     1362
+    ],
+    "shape": "box",
+    "en": "nN Moth Eagle we King Sew EZ, Mother Father fed Ascetic Sucika",
+    "conf": 45
+   },
+   {
+    "seed": [
+     347,
+     52
+    ],
+    "bbox": [
+     873,
+     129,
+     1769,
+     321
+    ],
+    "shape": "bubble",
+    "en": "Che Wheel Curns",
+    "conf": 88
+   },
+   {
+    "seed": [
+     615,
+     85
+    ],
+    "bbox": [
+     1838,
+     126,
+     2523,
+     1362
+    ],
+    "shape": "bubble",
+    "en": "BES Sariputta diamputta Moggallana medit wisdom “Be Ananda faithful Mahamaya 5 OY The Tathagata",
+    "conf": 32
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/42-Sucika-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Wisdom",
+   "always",
+   "shines.",
+   "This",
+   "wisdom",
+   "always",
+   "releases",
+   "beings,",
+   "whether",
+   "humans,",
+   "animals,",
+   "birds,",
+   "from",
+   "suffering.",
+   "Listen",
+   "this",
+   "Jataka",
+   "with",
+   "great",
+   "respect.",
+   "Jataka"
+  ]
+ }
+]

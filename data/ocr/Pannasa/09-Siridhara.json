@@ -1,0 +1,399 @@
+[
+ {
+  "img": "images/09-Siridhara-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Incandescence",
+   "Giving",
+   "Birth-Story",
+   "Siridhara",
+   "Ninth",
+   "nnasa",
+   "Jataka",
+   "iving",
+   "iridhara",
+   "irth-Story",
+   "ndescence",
+   "inth"
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     564,
+     95
+    ],
+    "bbox": [
+     1633,
+     258,
+     2493,
+     727
+    ],
+    "shape": "box",
+    "en": "ecognizing that all constructions are impermanent, poor couple in Savatthi reallocated their humble income. By dedicating two-thirds of their earnings to giving, they attained De immense prosperity.",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "THE",
+   "MERIT",
+   "GIVING",
+   "ECONOMICS",
+   "IR,"
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "THE",
+   "the",
+   "fruit",
+   "their",
+   "faith,",
+   "the",
+   "Buddha",
+   "recounted",
+   "past",
+   "life.",
+   "the",
+   "city",
+   "lived",
+   "Siridhara",
+   "great",
+   "merchant",
+   "firmly",
+   "established",
+   "the",
+   "five",
+   "moral",
+   "habits",
+   "explain"
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     135,
+     288
+    ],
+    "bbox": [
+     188,
+     903,
+     1104,
+     1313
+    ],
+    "shape": "box",
+    "en": "Emerging from seven days of cessation, paccekabuddha traveled through the sky. He stood at Siridhara’s doorway precisely as meal of sumptuous foods was being produced.",
+    "conf": 64
+   }
+  ],
+  "loose": [
+   "THE",
+   "ARRIVES"
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     143,
+     310
+    ],
+    "bbox": [
+     188,
+     936,
+     1108,
+     1313
+    ],
+    "shape": "box",
+    "en": "Siridhara planted the glorious seed of Giving. perfect karmic seed requires an awakened recipient, pure offering, and believing mind",
+    "conf": 59
+   }
+  ],
+  "loose": [
+   "THE",
+   "PURE",
+   "FERING",
+   "The",
+   "Recipient",
+   "(Awakened)",
+   "The",
+   "Object",
+   "(Pure",
+   "offering)",
+   "Mind",
+   "(Believing)",
+   "RING"
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "incandescence",
+   "gift,",
+   "may",
+   "all",
+   "devas",
+   "men",
+   "maintain",
+   "their",
+   "life-",
+   "spans.",
+   "the",
+   "fruit",
+   "this",
+   "gift,",
+   "may",
+   "assuredly",
+   "become",
+   "omniscien",
+   "hrough",
+   "Buddha.”",
+   "dha.”"
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     127,
+     42
+    ],
+    "bbox": [
+     89,
+     102,
+     1286,
+     1392
+    ],
+    "shape": "bubble",
+    "en": "Following his resolute determination, the merchant's old wooden home vanished. In its place, mansion of solid gold miraculously appeared, demonstrating how spiritual wealth physically manifests.",
+    "conf": 73
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Siridhara-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "meal",
+   "golden",
+   "hundred",
+   "Even",
+   "after",
+   "feeding",
+   "thousand",
+   "members",
+   "the",
+   "populace,",
+   "the",
+   "exquisite",
+   "food",
+   "remained",
+   "unexhausted.",
+   "bowls",
+   "multiplied",
+   "Asin",
+   "hundred",
+   "into",
+   "hundred",
+   "ained"
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     534,
+     349
+    ],
+    "bbox": [
+     1666,
+     1151,
+     2552,
+     1392
+    ],
+    "shape": "box",
+    "en": "The resonance sf of perfect merit fi ripple pled across realms. Citizens offered praise, the Naga-king brought piles of jewels, and Sakka filled the sky with silver and gold flags.",
+    "conf": 49
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Siridhara-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Hearing",
+   "this",
+   "supreme",
+   "merit,",
+   "King",
+   "Brahmadatta",
+   "dedicated",
+   "his",
+   "entire",
+   "wealth—giving",
+   "hundreds",
+   "elephants,",
+   "chariots,",
+   "and",
+   "attendants",
+   "simply",
+   "pay",
+   "homage",
+   "the",
+   "Great",
+   "Being’s",
+   "Dhamma."
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Siridhara",
+   "erected",
+   "alms-hall,",
+   "spending",
+   "hundred",
+   "thousand",
+   "daily",
+   "distribute",
+   "gifts.",
+   "After",
+   "life",
+   "diligent",
+   "giving,",
+   "was",
+   "reborn",
+   "the",
+   "majestic",
+   "Tusita",
+   "deva-world.",
+   "istribute"
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Rebirth",
+   "Matrix:",
+   "Brahmadatta",
+   "Sariputta",
+   "Naga-king",
+   "Channa",
+   "ife",
+   "The",
+   "Wife",
+   "Present",
+   "Buddha"
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Concluding",
+   "the",
+   "tale,",
+   "the",
+   "Buddha",
+   "taught",
+   "the",
+   "Four",
+   "Noble",
+   "Truths",
+   "Hearing",
+   "this",
+   "synthesis",
+   "Dhamma,",
+   "the",
+   "poor",
+   "husband",
+   "and",
+   "wife",
+   "instantly",
+   "attained",
+   "the",
+   "fruit"
+  ]
+ }
+]

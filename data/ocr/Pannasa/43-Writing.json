@@ -1,0 +1,570 @@
+[
+ {
+  "img": "images/43-Writing-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     309,
+     164
+    ],
+    "bbox": [
+     830,
+     473,
+     1815,
+     641
+    ],
+    "shape": "bubble",
+    "en": "ve journey through the Pafifiasa Jataka of Lanna, revealing the infinite karmic fruits of preserving the Tipitaka.",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "The",
+   "Akkhar",
+   "alikhitaj",
+   "ataka",
+   "The",
+   "Cosmic",
+   "Merit",
+   "the",
+   "Written",
+   "Word",
+   "kharalikhitaj"
+  ]
+ },
+ {
+  "img": "images/43-Writing-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sariputta",
+   "Seeks",
+   "the",
+   "Fruits",
+   "Preservation",
+   "Venerable",
+   "Sariputta",
+   "approached",
+   "the",
+   "Buddha,",
+   "joyful",
+   "heart.",
+   "asked:",
+   "“What",
+   "happiness",
+   "accrues",
+   "one",
+   "who",
+   "devoutly",
+   "writes,",
+   "causes",
+   "written,",
+   "the",
+   "words",
+   "the",
+   "Tipitaka?”",
+   "Seeks"
+  ]
+ },
+ {
+  "img": "images/43-Writing-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Wise",
+   "Minister’s",
+   "Vow",
+   "During",
+   "the",
+   "era",
+   "the",
+   "Former",
+   "Gotama",
+   "Buddha,",
+   "the",
+   "Bodhisatta",
+   "was",
+   "born",
+   "wise",
+   "minister.",
+   "preserve",
+   "the",
+   "teachings",
+   "for",
+   "5,000",
+   "years,",
+   "guided",
+   "men",
+   "record",
+   "the",
+   "Tipitaka.",
+   "AWise",
+   "Vow"
+  ]
+ },
+ {
+  "img": "images/43-Writing-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Supreme",
+   "Offering",
+   "ejoicing,",
+   "the",
+   "Bodhisatta",
+   "presented",
+   "the",
+   "scriptures.",
+   "The",
+   "Former",
+   "Gotama",
+   "Buddha",
+   "praised",
+   "this",
+   "ultimate",
+   "act",
+   "faith,",
+   "prophesying",
+   "endless,",
+   "boundless",
+   "merit",
+   "for",
+   "those",
+   "who",
+   "preserve",
+   "the",
+   "Dhamma",
+   "writing."
+  ]
+ },
+ {
+  "img": "images/43-Writing-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Vision",
+   "Future",
+   "Awaken",
+   "The",
+   "Former",
+   "Gotama",
+   "foresaw",
+   "the",
+   "minister’s",
+   "destiny.",
+   "prophesied",
+   "the",
+   "Bodhisatta",
+   "would",
+   "receive",
+   "prediction",
+   "from",
+   "Dipankara",
+   "Buddha,",
+   "inevitably",
+   "becoming",
+   "the",
+   "Buddha",
+   "Gotama"
+  ]
+ },
+ {
+  "img": "images/43-Writing-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     165,
+     62
+    ],
+    "bbox": [
+     169,
+     162,
+     913,
+     641
+    ],
+    "shape": "box",
+    "en": "Immediate Rebirth in Celestial Realms As the first fruit of his monumental merit, the Bodhisatta was reborn in the Tavatimsa heaven. He experienced immense bliss in massive golden palace adorned with exquisite jewels.",
+    "conf": 82
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/43-Writing-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Miraculous",
+   "Return",
+   "Following",
+   "his",
+   "celestial",
+   "life,",
+   "was",
+   "conceived",
+   "Queen",
+   "birth,",
+   "shone",
+   "like",
+   "golden",
+   "image.",
+   "Sakka",
+   "miraculously",
+   "caused",
+   "rain",
+   "seven",
+   "jewels",
+   "fall",
+   "across",
+   "the",
+   "city."
+  ]
+ },
+ {
+  "img": "images/43-Writing-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     641,
+     307
+    ],
+    "bbox": [
+     1924,
+     962,
+     2509,
+     1144
+    ],
+    "shape": "bubble",
+    "en": "Beasts: Beasts: Noble Horses",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "The",
+   "Cosmos",
+   "Offers",
+   "Homage",
+   "Noble",
+   "Elephants",
+   "Gods:",
+   "Celestial",
+   "maidens",
+   "and",
+   "pavilions",
+   "Lions:",
+   "Excellent",
+   "sustenance",
+   "Nagas:",
+   "and",
+   "jewels",
+   "Perfumed"
+  ]
+ },
+ {
+  "img": "images/43-Writing-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     386,
+     96
+    ],
+    "bbox": [
+     1104,
+     274,
+     2328,
+     486
+    ],
+    "shape": "box",
+    "en": "Ascending as Universal Monarch Endowed with incomparable strength, the Bodhisatta ruled as great universal monarch. Possessing celestial wife and 1,000 valiant sons, he sent them to govern the great continents.",
+    "conf": 53
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/43-Writing-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Worldly",
+   "Fruits",
+   "the",
+   "Written",
+   "Word",
+   "Noble",
+   "families.",
+   "Form:",
+   "Great",
+   "beauty,",
+   "sweet",
+   "speech.",
+   "Wealth:",
+   "Boundless",
+   "rich",
+   "Health:",
+   "Free",
+   "disease",
+   "and",
+   "untimely",
+   "death.",
+   "gold.",
+   "Worldly",
+   "Noble",
+   "Health:",
+   "Free"
+  ]
+ },
+ {
+  "img": "images/43-Writing-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Spiritual",
+   "Protection",
+   "the",
+   "Destiny:",
+   "Reborn",
+   "god",
+   "foremost",
+   "amongst",
+   "men.",
+   "Supreme",
+   "wisdom",
+   "and",
+   "supernatural",
+   "powers.",
+   "Protection:",
+   "Never",
+   "reborn",
+   "hells",
+   "animals.",
+   "Spiritual"
+  ]
+ },
+ {
+  "img": "images/43-Writing-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Righteous",
+   "Reign",
+   "Endowed",
+   "with",
+   "boundless",
+   "glory,",
+   "the",
+   "Bodhisatta",
+   "continually",
+   "advised",
+   "his",
+   "subjects:",
+   "charity,",
+   "keep",
+   "the",
+   "precepts,",
+   "and",
+   "honor",
+   "your",
+   "Merit",
+   "all",
+   "beings",
+   "the",
+   "excellent",
+   "gives"
+  ]
+ },
+ {
+  "img": "images/43-Writing-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Ascent",
+   "Beyond",
+   "Samsara",
+   "The",
+   "merit",
+   "preserving",
+   "teachings",
+   "culminates",
+   "beyond",
+   "worldly",
+   "realms.",
+   "The",
+   "writer",
+   "ultimately",
+   "attains",
+   "their",
+   "highest",
+   "aspiration:",
+   "becoming",
+   "disciple,",
+   "Paccekabuddha,",
+   "achieving",
+   "Omniscience",
+   "and",
+   "excellent",
+   "Nibbana."
+  ]
+ },
+ {
+  "img": "images/43-Writing-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     274,
+     34
+    ],
+    "bbox": [
+     473,
+     86,
+     2172,
+     589
+    ],
+    "shape": "bubble",
+    "en": "Revealing the Threads of Rebirth afi",
+    "conf": 55
+   },
+   {
+    "seed": [
+     306,
+     175
+    ],
+    "bbox": [
+     913,
+     486,
+     1732,
+     754
+    ],
+    "shape": "bubble",
+    "en": "King Inda is now King Suddhodana.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     327,
+     297
+    ],
+    "bbox": [
+     903,
+     899,
+     1742,
+     1147
+    ],
+    "shape": "bubble",
+    "en": "Queen Ananda is now Queen Mahamaya.",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "The",
+   "Universal",
+   "Monarch",
+   "the",
+   "Buddha"
+  ]
+ },
+ {
+  "img": "images/43-Writing-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Infinite",
+   "Harvest",
+   "venerable",
+   "Sariputta,",
+   "the",
+   "good",
+   "fruits",
+   "that",
+   "follow",
+   "from",
+   "writing",
+   "down",
+   "the",
+   "Tipitaka",
+   "are",
+   "infinite,",
+   "measureless,",
+   "and",
+   "plentiful.",
+   "Live",
+   "long,",
+   "and",
+   "hold",
+   "this",
+   "Jataka",
+   "with",
+   "respect",
+   "your",
+   "heart.",
+   "ipitaka"
+  ]
+ }
+]

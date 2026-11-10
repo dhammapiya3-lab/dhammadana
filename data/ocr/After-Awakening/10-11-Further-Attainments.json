@@ -1,0 +1,403 @@
+[
+ {
+  "img": "images/10-11-Further-Attainments-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     289,
+     312
+    ],
+    "bbox": [
+     946,
+     1012,
+     1703,
+     1349
+    ],
+    "shape": "box",
+    "en": "The First Teachings The of Ordination es oO and the oo Characteristic of Non-Self",
+    "conf": 37
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/10-11-Further-Attainments-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     408,
+     327
+    ],
+    "bbox": [
+     1289,
+     1035,
+     2566,
+     1399
+    ],
+    "shape": "box",
+    "en": "Afha awn Kondafifia, having penetrated the Dhamma and crossed over uncertainty, asked for full ordination. The Fortunate One said: ‘Come, monk, the Dhamma has been well-proclaimed.’ Thus, Kondafifia became the first monk in the dispensation.",
+    "conf": 32
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/10-11-Further-Attainments-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Soon",
+   "after,",
+   "Vappa,",
+   "Bhaddiya,",
+   "Mahanama,",
+   "and",
+   "Assaji",
+   "also",
+   "saw",
+   "the",
+   "They",
+   "realized:",
+   "‘Whatever",
+   "has",
+   "the",
+   "nature",
+   "arising,",
+   "all",
+   "that",
+   "has",
+   "the",
+   "nature",
+   "ceasing.’",
+   "They",
+   "too",
+   "received",
+   "full",
+   "ordination",
+   "from",
+   "the",
+   "Fortunate",
+   "One."
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Kes",
+   "With",
+   "the",
+   "group",
+   "five",
+   "assembled,",
+   "the",
+   "Fortunate",
+   "One",
+   "delivered",
+   "his",
+   "second",
+   "great",
+   "discourse:",
+   "The",
+   "Characteristic",
+   "Non-Self.",
+   "began",
+   "deconstructing",
+   "our",
+   "ultimate",
+   "control",
+   "over",
+   "the",
+   "components",
+   "our",
+   "existence.",
+   "2))"
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "this",
+   "were",
+   "Self",
+   "Control:",
+   "form",
+   "thus.",
+   "our",
+   "bodily",
+   "form",
+   "were",
+   "truly",
+   "our",
+   "‘Self,”",
+   "could",
+   "it:",
+   "“Let",
+   "form",
+   "thus.”",
+   "Because",
+   "not",
+   "Self,",
+   "lack",
+   "ultimate",
+   "control,",
+   "and",
+   "our",
+   "physical",
+   "form",
+   "inevitably",
+   "leads",
+   "affliction.",
+   "Affliction:",
+   "cannot",
+   "Reality",
+   "command",
+   "it.",
+   "Let"
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "applied",
+   "this",
+   "logic",
+   "‘lack",
+   "control’",
+   "the",
+   "five",
+   "aggregates",
+   "making",
+   "human",
+   "experience",
+   "Bodily",
+   "Form",
+   "Feeling,",
+   "Perception",
+   "Mental",
+   "Processes",
+   "Consciousness"
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "lmpermanent,",
+   "venerable",
+   "Sir.",
+   "form",
+   "permanent",
+   "impermanent?",
+   "But",
+   "that",
+   "which",
+   "impermanent,",
+   "that",
+   "unpleasant",
+   "pleasant?",
+   "Unpleasant,",
+   "venerable",
+   "Sir.",
+   "bodily"
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“But",
+   "that",
+   "which",
+   "unpleasant",
+   "and",
+   "changeable,",
+   "proper",
+   "regard",
+   "thus:",
+   "This",
+   "mine,",
+   "this",
+   "am,",
+   "this",
+   "Self?’",
+   "‘Certainly",
+   "not,",
+   "venerable",
+   "Sir.’"
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "This",
+   "truth",
+   "must",
+   "with",
+   "full",
+   "exactly",
+   "is,",
+   "across",
+   "all",
+   "phenomena:",
+   "Whether",
+   "past,",
+   "future,",
+   "present.",
+   "Internal",
+   "external.",
+   "Gross",
+   "fine.",
+   "Inferior",
+   "excellent.",
+   "Far",
+   "near.",
+   "seen",
+   "wisdom,"
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     85,
+     41
+    ],
+    "bbox": [
+     69,
+     53,
+     1071,
+     344
+    ],
+    "shape": "bubble",
+    "en": "Seeing in this way, the learned, Noble disciple progresses",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "(AN"
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "liberation,",
+   "there",
+   "the",
+   "absolute",
+   "knowledge:",
+   "‘Destroyed",
+   "rebirth,",
+   "accomplished",
+   "the",
+   "spiritual",
+   "life,",
+   "done",
+   "what",
+   "ought",
+   "done,",
+   "there",
+   "more",
+   "this",
+   "mundane"
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "this",
+   "sermon",
+   "was",
+   "given,",
+   "the",
+   "minds",
+   "the",
+   "five",
+   "monks",
+   "were",
+   "utterly",
+   "liberated",
+   "from",
+   "pollutants,",
+   "without",
+   "attachment.",
+   "that",
+   "time,",
+   "there",
+   "were",
+   "exactly",
+   "six",
+   "Worthy",
+   "Ones",
+   "the",
+   "world."
+  ]
+ }
+]

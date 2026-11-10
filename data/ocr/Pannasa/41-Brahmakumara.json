@@ -1,0 +1,384 @@
+[
+ {
+  "img": "images/41-Brahmakumara-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     262,
+     198
+    ],
+    "bbox": [
+     724,
+     595,
+     1921,
+     889
+    ],
+    "shape": "box",
+    "en": "The Birth-Story Birth-Story of Prince Brahmakumara BSS Jataka we 8 Tale 8 of Merit and 3 Light wey 4",
+    "conf": 41
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-Brahmakumara-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     577,
+     125
+    ],
+    "bbox": [
+     1716,
+     341,
+     2473,
+     1144
+    ],
+    "shape": "box",
+    "en": "At Jetavana, monks marveled at the Teacher’s six-coloured rays. The Buddha revealed this radiance was not merely mark of Buddhahood, but the precise karmic fruit of humble, past-life devotion.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-Brahmakumara-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     121,
+     325
+    ],
+    "bbox": [
+     304,
+     1048,
+     2338,
+     1339
+    ],
+    "shape": "box",
+    "en": "Born into poverty in Baranasi, the Bodhisatta discovered an overgrown forgotten stiipa. Abandoning his own livelihood, he painstakingly cleared the thorns, levelled the sacred ground, and resolved to attain Buddhahood",
+    "conf": 65
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-Brahmakumara-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Selling",
+   "his",
+   "own",
+   "clothing,",
+   "purchased",
+   "oil",
+   "light",
+   "lamps",
+   "eight",
+   "directions.",
+   "Using",
+   "his",
+   "remaining",
+   "garment,",
+   "crafted",
+   "banner,",
+   "attain",
+   "omniscience",
+   "and",
+   "ultimate",
+   "happiness.",
+   "vowing",
+   "supreme"
+  ]
+ },
+ {
+  "img": "images/41-Brahmakumara-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     250,
+     326
+    ],
+    "bbox": [
+     519,
+     1058,
+     2123,
+     1342
+    ],
+    "shape": "box",
+    "en": "Through these pure acts, he was reborn in Tusita heaven as Pufifacitta. He dwelt in magnificent jewelled palace filled with celestial music, lotus ponds, and heavenly joy.",
+    "conf": 77
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-Brahmakumara-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     121,
+     336
+    ],
+    "bbox": [
+     314,
+     1098,
+     2328,
+     1369
+    ],
+    "shape": "box",
+    "en": "Descending from heaven, he was reborn immaculate as Bice Prince Brahmakumara. Empowered by his past merit, one hundred kings of Jambudipa miraculously arrived bearing royal gifts on the day of his birth.",
+    "conf": 41
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-Brahmakumara-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     253,
+     337
+    ],
+    "bbox": [
+     456,
+     1078,
+     2189,
+     1342
+    ],
+    "shape": "box",
+    "en": "Exceedingly ingly gly wise by age sixteen, he married virtuous princess. Incess. Th one hundred kings consecrated him im as the ruler of Baranasi, ar na Si, where he shone resplendently like keak king of the gods.",
+    "conf": 76
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-Brahmakumara-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "His",
+   "past",
+   "actions",
+   "yielded",
+   "precise",
+   "karmic",
+   "fruits:",
+   "The",
+   "banner",
+   "manifested",
+   "infinite",
+   "wealth",
+   "and",
+   "parasols",
+   "honor.",
+   "The",
+   "lamps",
+   "granted",
+   "penetrating",
+   "wisdom",
+   "and",
+   "physical",
+   "radiance.",
+   "Clearing",
+   "the",
+   "ensured",
+   "prosperous,",
+   "fear-free",
+   "realm."
+  ]
+ },
+ {
+  "img": "images/41-Brahmakumara-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Remembering",
+   "his",
+   "past",
+   "charity",
+   "with",
+   "great",
+   "joy,",
+   "the",
+   "King",
+   "ruled",
+   "instructed",
+   "his",
+   "citizens",
+   "shun",
+   "evil",
+   "company,",
+   "associate",
+   "only",
+   "with",
+   "the",
+   "wise,",
+   "and",
+   "give",
+   "generously",
+   "with",
+   "absolute",
+   "faith",
+   "righteously."
+  ]
+ },
+ {
+  "img": "images/41-Brahmakumara-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     546,
+     38
+    ],
+    "bbox": [
+     1676,
+     109,
+     2536,
+     595
+    ],
+    "shape": "bubble",
+    "en": "Guided by the Bodhisatta, the citizens lived virtuously and performed meritorious deeds Upon passing, they were reborn in heavenly abodes. Brahmakumara, having lived fully, returned once more to Tusita heaven. mes",
+    "conf": 40
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-Brahmakumara-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     495,
+     41
+    ],
+    "bbox": [
+     1395,
+     119,
+     2519,
+     638
+    ],
+    "shape": "bubble",
+    "en": "Concluding the Jataka, the Teacher expounded the Four Noble Truths: Suffering, Origin, Cessation, and the Eight-fold Path. Hearing this, many monks instantly attained Arhatship and other stages of",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-Brahmakumara-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "identified",
+   "the",
+   "past:",
+   "The",
+   "parents",
+   "are",
+   "now",
+   "and",
+   "Suddhodana.",
+   "The",
+   "wife",
+   "The",
+   "citizens",
+   "are",
+   "the",
+   "current",
+   "assembly",
+   "King",
+   "Brahmakumara",
+   "the",
+   "himself.",
+   "Mahamaya"
+  ]
+ },
+ {
+  "img": "images/41-Brahmakumara-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     174,
+     82
+    ],
+    "bbox": [
+     430,
+     231,
+     2212,
+     493
+    ],
+    "shape": "box",
+    "en": "All of you who desire three-fold happiness for yourselves should hold this Jataka with great respect in your hearts.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ }
+]

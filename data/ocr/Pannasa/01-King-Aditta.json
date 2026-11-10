@@ -1,0 +1,539 @@
+[
+ {
+  "img": "images/01-King-Aditta-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "th-Story",
+   "King",
+   "Aditta.",
+   "Jataka",
+   "Tale",
+   "Generosity.",
+   "The",
+   "Birth-Story",
+   "Supreme",
+   "APa",
+   "nnasa"
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     231,
+     64
+    ],
+    "bbox": [
+     572,
+     106,
+     2060,
+     443
+    ],
+    "shape": "bubble",
+    "en": "The Architecture of Jataka 1. The Present: The Buddha’s context",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "The",
+   "Past:",
+   "The",
+   "Bodhisatta’",
+   "historical",
+   "Cosmic",
+   "Validation:",
+   "Universal",
+   "reaction.",
+   "Identification:",
+   "Linking",
+   "past",
+   "and",
+   "present",
+   "lives.",
+   "fiz"
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Present:",
+   "Jetavana",
+   "Monaster",
+   "The",
+   "Buddha",
+   "reflected",
+   "his",
+   "past",
+   "lives",
+   "Mundane",
+   "gifts",
+   "could",
+   "not",
+   "satisfy",
+   "him;",
+   "knew",
+   "_only",
+   "supreme,",
+   "intrinsic",
+   "sacrifice",
+   "could",
+   "serve",
+   "the",
+   "ground",
+   "for",
+   "omniscience.",
+   "ience",
+   "ifice",
+   "isfy"
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     107,
+     62
+    ],
+    "bbox": [
+     172,
+     155,
+     827,
+     506
+    ],
+    "shape": "box",
+    "en": "The Past: Joti ity. King Aditta built six alms-halls, halls, raining down wealth like ke great cloud. He gave six hundred thousand daily to the populace.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "004"
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Dana",
+   "Matrix:",
+   "Resolving",
+   "for",
+   "Supreme",
+   "Giving",
+   "External",
+   "Wealth:",
+   "Rice,",
+   "Gold,",
+   "Kingdom",
+   "Internal",
+   "Wealth:",
+   "Eyes,",
+   "Flesh,",
+   "Blood,",
+   "Life.",
+   "The",
+   "King",
+   "resolved",
+   "give",
+   "intrinsically",
+   "for",
+   "the",
+   "sake",
+   "Awakening."
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "First",
+   "Cosmic",
+   "Quake",
+   "The",
+   "great",
+   "earth",
+   "trembled",
+   "and",
+   "roared.",
+   "The",
+   "ocean",
+   "churned",
+   "Mount",
+   "Sineru",
+   "bent",
+   "toward",
+   "Joti",
+   "city,",
+   "acknowledging",
+   "the",
+   "King’s",
+   "incandescent",
+   "resolve",
+   "irst"
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sakka’s",
+   "Descent.",
+   "the",
+   "deva-world,",
+   "Sakka’s",
+   "stone-seat",
+   "grew",
+   "hot.",
+   "Recognizing",
+   "Buddha-sprout,",
+   "descended",
+   "disguised",
+   "feeble",
+   "old",
+   "brahman",
+   "complete",
+   "the",
+   "King’s",
+   "perfection.",
+   "Descent."
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "First",
+   "Test",
+   "The",
+   "brahman",
+   "demanded",
+   "meal.",
+   "When",
+   "King",
+   "Aditta",
+   "joyfully",
+   "provided",
+   "golden",
+   "vessel",
+   "rice,",
+   "the",
+   "brahman",
+   "violently",
+   "threw",
+   "aside.",
+   "The",
+   "King",
+   "remained",
+   "entirely",
+   "without",
+   "ill-will",
+   "tad"
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     365,
+     46
+    ],
+    "bbox": [
+     222,
+     96,
+     2199,
+     846
+    ],
+    "shape": "bubble",
+    "en": "The Second Test. Assuming the guise of young brahman, Sakka demanded Queen Sankha. The King, his mind delighting in giving, did not shrink, offering his beloved wife.",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "Tea"
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     354,
+     62
+    ],
+    "bbox": [
+     820,
+     149,
+     2172,
+     1028
+    ],
+    "shape": "bubble",
+    "en": "The Supreme Gift. King Aditta poured perfumed water of dedication over the brahman’s hands. “Let this gift of my wife 4 be the ground for omniscience itself.”",
+    "conf": 47
+   }
+  ],
+  "loose": [
+   "whe"
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Queen’s",
+   "Resolve",
+   "Though",
+   "dragged",
+   "the",
+   "hair,",
+   "Queen",
+   "Sankha",
+   "harbored",
+   "anger.",
+   "She",
+   "roared",
+   "lion’s",
+   "roar",
+   "“You",
+   "are",
+   "overlord;",
+   "whatever",
+   "one",
+   "wishes",
+   "should",
+   "given.",
+   "for,",
+   "Nil"
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Second",
+   "Cosmic",
+   "Quake",
+   "The",
+   "earth",
+   "roared",
+   "like",
+   "sugar-cane",
+   "press",
+   "Inda,",
+   "Brahma,",
+   "and",
+   "Yama",
+   "applauded",
+   "the",
+   "supreme",
+   "sacrifice",
+   "The",
+   "universe",
+   "validated",
+   "the",
+   "perfection",
+   "giving",
+   "Sas",
+   "SLE"
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Revelation.",
+   "Sakka",
+   "revealed",
+   "his",
+   "radiant",
+   "deva",
+   "form",
+   "and",
+   "returned",
+   "the",
+   "Queen.",
+   "“As",
+   "milk",
+   "anda",
+   "conch-shell",
+   "are",
+   "the",
+   "same",
+   "color,",
+   "you",
+   "share",
+   "the",
+   "same",
+   "pure",
+   "intention"
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Tenfold",
+   "Duties",
+   "King.",
+   "Before",
+   "departing,",
+   "Sakka",
+   "instructed",
+   "Aditta",
+   "rule",
+   "justly:",
+   "behaving",
+   "rightly",
+   "towards",
+   "parents,",
+   "wife,",
+   "subjects,",
+   "recluses,",
+   "beasts,",
+   "and",
+   "birds",
+   "attain",
+   "heavenly",
+   "place.",
+   "HES"
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     222,
+     61
+    ],
+    "bbox": [
+     347,
+     122,
+     2417,
+     665
+    ],
+    "shape": "bubble",
+    "en": "Past Life Present Lifes Sakka The is Identification now Anuruddha. Tie ip Ww",
+    "conf": 31
+   },
+   {
+    "seed": [
+     328,
+     211
+    ],
+    "bbox": [
+     688,
+     668,
+     1848,
+     929
+    ],
+    "shape": "bubble",
+    "en": "Queen Sankha is Yasodhara. The parents are Suddhodana and Mahamaya",
+    "conf": 92
+   },
+   {
+    "seed": [
+     330,
+     291
+    ],
+    "bbox": [
+     506,
+     913,
+     2202,
+     1369
+    ],
+    "shape": "bubble",
+    "en": "King Aditta is the fully Awakened Buddha. 5.",
+    "conf": 62
+   }
+  ],
+  "loose": [
+   "IN/"
+  ]
+ }
+]

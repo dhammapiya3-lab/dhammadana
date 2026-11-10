@@ -1,0 +1,544 @@
+[
+ {
+  "img": "images/02-Tulakapandita-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     308,
+     344
+    ],
+    "bbox": [
+     870,
+     1041,
+     1789,
+     1418
+    ],
+    "shape": "box",
+    "en": "The Birth-Story of Tulakapandita. Par asa Jataka of Lanna illustrating the ultimate Perfection of Giving (Dana Parami).",
+    "conf": 80
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Tulakapandita-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     83,
+     71
+    ],
+    "bbox": [
+     83,
+     89,
+     1422,
+     625
+    ],
+    "shape": "bubble",
+    "en": "During ing the dispensation of Lord Konagamana thirty-three ty-three virtuous Ss monastics walked through the city of Cinna. Their Ir serene presence threatened the King’s ing corrupt religious 1g ious adviser who feared losing his own wealth and influence",
+    "conf": 50
+   }
+  ],
+  "loose": [
+   "te)"
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     285,
+     291
+    ],
+    "bbox": [
+     840,
+     913,
+     1805,
+     1379
+    ],
+    "shape": "box",
+    "en": "Driven by jealousy, the Brahman lied These vo are thieves vo coming oD to plunder your city Fooled by the deception, King Cinna ordered the innocent monastics bound beaten, and taken to the charnel ground to be impaled",
+    "conf": 62
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Tulakapandita-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     152,
+     69
+    ],
+    "bbox": [
+     364,
+     165,
+     2281,
+     440
+    ],
+    "shape": "box",
+    "en": "At the execution grounds, the great Elder Nagadipaka agad comforted fhe the weeping monks. He reminded them that their suffering was merely the unavoidable shadow of past karma following them through sarnsara.",
+    "conf": 37
+   }
+  ],
+  "loose": [
+   "Gemini",
+   "Notebook"
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     97,
+     121
+    ],
+    "bbox": [
+     198,
+     298,
+     926,
+     1190
+    ],
+    "shape": "box",
+    "en": "Hearing of this profound injustice, the wise layman Tulakapandita struck daring bargain with the King to save the monastics: he would purchase their lives with their exact physical weight in gold.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Tulakapandita-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     447,
+     344
+    ],
+    "bbox": [
+     1088,
+     1078,
+     2453,
+     1332
+    ],
+    "shape": "box",
+    "en": "Tulakapandita is) isc] exhausted 3 wn his 714 family’s wat vast 3 wn fortunes 3 Ww upon the leather scales. He successfully purchased the freedom of exactly thirty monks before his abundant gold completely vanished",
+    "conf": 47
+   }
+  ],
+  "loose": [
+   "(9)",
+   "Bia"
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     562,
+     136
+    ],
+    "bbox": [
+     1726,
+     347,
+     2420,
+     1141
+    ],
+    "shape": "box",
+    "en": "Three condemned remained. Unwavering in his pursuit of Awakening, Tulakapandita bartered his beloved wife and child into servitude, securing just enough gold to free two more monks.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Tulakapandita-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     111,
+     87
+    ],
+    "bbox": [
+     182,
+     202,
+     1190,
+     512
+    ],
+    "shape": "box",
+    "en": "Only one terrified eo novice remained bound to ae the stake. With his gold completely re exhausted and his family gone, Tulakapandita Qa had nothing EP left to barter. 1",
+    "conf": 50
+   }
+  ],
+  "loose": [
+   "fa)"
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "will",
+   "give",
+   "life",
+   "for",
+   "yours.’",
+   "Tulakapandita",
+   "offered",
+   "his",
+   "own",
+   "the",
+   "executioners,",
+   "taking",
+   "the",
+   "novice’s",
+   "place",
+   "the",
+   "stake",
+   "fulfill",
+   "the",
+   "ultimate",
+   "Perfection",
+   "Giving.",
+   "body",
+   "EOD"
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     122,
+     71
+    ],
+    "bbox": [
+     182,
+     202,
+     1190,
+     512
+    ],
+    "shape": "box",
+    "en": "Moments before the execution, Tulakapandita’s is] ate father arrived by boat jo) 3 with immense riches. Desperate, he offered to pay his own son’s weight in gold to the King to halt the slaughter.",
+    "conf": 45
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Tulakapandita-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     286,
+     197
+    ],
+    "bbox": [
+     840,
+     575,
+     1805,
+     909
+    ],
+    "shape": "box",
+    "en": "The spared novice attained full ordination. Making exertion, all thirty-three monastics rapidly attained Arahantship. They rose into the sky, displaying wondrous marvels that terrified the King.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Tulakapandita-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     478,
+     90
+    ],
+    "bbox": [
+     1491,
+     179,
+     2457,
+     512
+    ],
+    "shape": "box",
+    "en": "Tulakapandita calmed the fearful King, revealing the monks’ true virtue. The King built agreat great monastery, while the lying Brahman was swallowed by the fires of Avici Niraya",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Tulakapandita-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     567,
+     70
+    ],
+    "bbox": [
+     1640,
+     182,
+     2460,
+     628
+    ],
+    "shape": "box",
+    "en": "The Architecture of Dana The Perfection of Giving escalates through three tiers of surrender Awakening demands the relinquishment of material wealth, earthly attachments and ultimately, one’s own existence",
+    "conf": 78
+   }
+  ],
+  "loose": [
+   "The",
+   "Self",
+   "(Life)",
+   "Inner",
+   "Bonds",
+   "(Family)",
+   "Outer",
+   "Possessions",
+   "(Gold)",
+   "Self"
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     303,
+     94
+    ],
+    "bbox": [
+     668,
+     284,
+     1309,
+     443
+    ],
+    "shape": "box",
+    "en": "Past Life (Konagamana’s Era)",
+    "conf": 54
+   },
+   {
+    "seed": [
+     447,
+     86
+    ],
+    "bbox": [
+     1332,
+     284,
+     1974,
+     443
+    ],
+    "shape": "box",
+    "en": "Present Life (Gotama’s Era)",
+    "conf": 90
+   },
+   {
+    "seed": [
+     249,
+     144
+    ],
+    "bbox": [
+     658,
+     463,
+     1316,
+     585
+    ],
+    "shape": "box",
+    "en": "Tulakapandita",
+    "conf": 91
+   },
+   {
+    "seed": [
+     208,
+     204
+    ],
+    "bbox": [
+     658,
+     595,
+     1316,
+     721
+    ],
+    "shape": "box",
+    "en": "King Cinna 5",
+    "conf": 61
+   },
+   {
+    "seed": [
+     461,
+     188
+    ],
+    "bbox": [
+     1326,
+     595,
+     1984,
+     721
+    ],
+    "shape": "box",
+    "en": "Ananda",
+    "conf": 97
+   },
+   {
+    "seed": [
+     445,
+     145
+    ],
+    "bbox": [
+     1326,
+     460,
+     1984,
+     585
+    ],
+    "shape": "box",
+    "en": "The Buddha",
+    "conf": 96
+   },
+   {
+    "seed": [
+     245,
+     228
+    ],
+    "bbox": [
+     658,
+     731,
+     1316,
+     856
+    ],
+    "shape": "box",
+    "en": "Wife Sambhara",
+    "conf": 87
+   },
+   {
+    "seed": [
+     251,
+     267
+    ],
+    "bbox": [
+     658,
+     866,
+     1316,
+     989
+    ],
+    "shape": "bubble",
+    "en": "Evil Brahman",
+    "conf": 91
+   },
+   {
+    "seed": [
+     230,
+     348
+    ],
+    "bbox": [
+     674,
+     1088,
+     1964,
+     1332
+    ],
+    "shape": "box",
+    "en": "As is custom, the Buddha concluded the birth-story by revealing the karmic threads connecting the characters of the past to the present dispensation",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Soy"
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     299,
+     157
+    ],
+    "bbox": [
+     734,
+     443,
+     1908,
+     1041
+    ],
+    "shape": "box",
+    "en": "Through ultimate sacrifice, life is not lost but transformed. By protecting the Dhamma at all costs, Tulakapandita secured the path to omniscient knowledge, leading countless beings across samsara.",
+    "conf": 85
+   }
+  ],
+  "loose": []
+ }
+]

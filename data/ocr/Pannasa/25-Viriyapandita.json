@@ -1,0 +1,672 @@
+[
+ {
+  "img": "images/25-Viriyapandita-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     259,
+     196
+    ],
+    "bbox": [
+     608,
+     585,
+     1561,
+     899
+    ],
+    "shape": "box",
+    "en": "The Perfection of Miraculous Tale of the",
+    "conf": 93
+   },
+   {
+    "seed": [
+     476,
+     196
+    ],
+    "bbox": [
+     1551,
+     585,
+     2033,
+     899
+    ],
+    "shape": "bubble",
+    "en": "Charity Jataka",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/25-Viriyapandita-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     86,
+     82
+    ],
+    "bbox": [
+     198,
+     222,
+     1081,
+     1094
+    ],
+    "shape": "box",
+    "en": "At Jetavana, monks marveled at the Teacher giving the bliss of freedom The Buddha replied: “To you it is astonishing now. But formerly, as an ordinary man, sold my family and cut my own flesh for charity.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "MEX"
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     274,
+     335
+    ],
+    "bbox": [
+     453,
+     1002,
+     2205,
+     1395
+    ],
+    "shape": "bubble",
+    "en": "King Paricala sent costly red blanket. Seeking to elevate his friend’s wrong views, King Maharatha countered: “In this world there is no jewel comparable to the Buddha jewel.” He commissioned an eighteen-hand golden Buddha image.",
+    "conf": 63
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/25-Viriyapandita-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     508,
+     88
+    ],
+    "bbox": [
+     1600,
+     205,
+     2513,
+     823
+    ],
+    "shape": "box",
+    "en": "The image sailed toward Pajcala. The ocean shone like gold. Jewels broke the surface. Naga kings encircled the ship, dancing to sweet voices, while gods scattered divine flowers from the sky. The majesty was incalculable.",
+    "conf": 48
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/25-Viriyapandita-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     648,
+     90
+    ],
+    "bbox": [
+     2017,
+     258,
+     2473,
+     423
+    ],
+    "shape": "box",
+    "en": "9p, Yellow Earth like ball of gold",
+    "conf": 61
+   }
+  ],
+  "loose": [
+   "Blue",
+   "Earth",
+   "Aficana",
+   "flower",
+   "Lustrous",
+   "White",
+   "White",
+   "Earth",
+   "Earth",
+   "bright",
+   "the",
+   "moon",
+   "like",
+   "silver",
+   "plate",
+   "Crimson",
+   "Earth",
+   "Red",
+   "Earth",
+   "like",
+   "red",
+   "cloth",
+   "Anoja",
+   "flower",
+   "took",
+   "refuge.",
+   "Immediately,",
+   "the",
+   "image",
+   "rose",
+   "into",
+   "sky,",
+   "emitting",
+   "six-coloured",
+   "rays",
+   "that",
+   "permeated",
+   "the",
+   "bounded",
+   "universes",
+   "reaching",
+   "the",
+   "sixteen",
+   "abodes",
+   "the",
+   "Brahmas",
+   "asilver",
+   "King",
+   "Blue",
+   "Earth",
+   "White",
+   "White",
+   "Earth",
+   "Red",
+   "took"
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Awed,",
+   "King",
+   "commissioned",
+   "sandalwood",
+   "replica",
+   "twice",
+   "the",
+   "size",
+   "proclaimed",
+   "“Whosoever",
+   "has",
+   "gold",
+   "let",
+   "him",
+   "cover",
+   "the",
+   "Buddha",
+   "image",
+   "with",
+   "the",
+   "king",
+   "Viriyapandita,",
+   "poor",
+   "man",
+   "immense",
+   "faith,",
+   "resolved",
+   "join",
+   "the",
+   "king’s",
+   "merit"
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     311,
+     186
+    ],
+    "bbox": [
+     962,
+     519,
+     1613,
+     698
+    ],
+    "shape": "box",
+    "en": "Costly red blanket, Sandalwood",
+    "conf": 96
+   },
+   {
+    "seed": [
+     389,
+     231
+    ],
+    "bbox": [
+     962,
+     717,
+     1610,
+     896
+    ],
+    "shape": "box",
+    "en": "plates, Vermillion",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "Comparison",
+   "Matrix:",
+   "The",
+   "Scale",
+   "Dana",
+   "Material",
+   "Wealth",
+   "Supreme",
+   "Paficala",
+   "King",
+   "Maharatha",
+   "While",
+   "trade",
+   "precious",
+   "goods,",
+   "true",
+   "demands",
+   "more.",
+   "acquire",
+   "gold",
+   "and",
+   "paint",
+   "the",
+   "image,",
+   "Viriyapandita",
+   "must",
+   "surrender",
+   "what",
+   "cannot",
+   "bought.",
+   "kings",
+   "perfection",
+   "King",
+   "Viriyapandita"
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Both",
+   "you",
+   "are",
+   "virtuous",
+   "friends.",
+   "Please",
+   "help",
+   "fulfill",
+   "perfections.”",
+   "Viriyapandita",
+   "sold",
+   "his",
+   "beloved",
+   "wife",
+   "Sujata",
+   "and",
+   "son",
+   "Revatakumara",
+   "into",
+   "servitude.",
+   "With",
+   "the",
+   "wealth,",
+   "fashioned",
+   "single",
+   "golden",
+   "plate.",
+   "CAD"
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "poo",
+   "rman",
+   "entry.",
+   "King",
+   "image",
+   "itself",
+   "speaks,",
+   "will",
+   "allow",
+   "you.”",
+   "Viriyapandita",
+   "prostrated.",
+   "The",
+   "image",
+   "shook,",
+   "emitting",
+   "sweet",
+   "sounds:",
+   "“Excellent,",
+   "Viriyapandita,",
+   "you",
+   "wish.”",
+   "the",
+   "man",
+   "King",
+   "mocked:",
+   "“If",
+   "King"
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     90,
+     139
+    ],
+    "bbox": [
+     179,
+     360,
+     876,
+     1045
+    ],
+    "shape": "box",
+    "en": "The plate only covered single finger. Realizing he must offer his own flesh to create more gold, the Bodhisatta made his supreme resolve. The great earth, two hundred thousand yojanas wide, shook Mount Sineru bent in reverence.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/25-Viriyapandita-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     196,
+     51
+    ],
+    "bbox": [
+     466,
+     99,
+     2205,
+     456
+    ],
+    "shape": "bubble",
+    "en": "Sakka's divine abode grew hot. He descended disguised as goldsmith. “May knife quickly fall from the sky for the sake of enlightenment.” The Great Being cut his own flesh without hesitation. Sakka fashioned it into hand-sized golden plate.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "WES"
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     59,
+     80
+    ],
+    "bbox": [
+     119,
+     99,
+     1220,
+     595
+    ],
+    "shape": "box",
+    "en": "Anointing the image, Viriyapandita collapsed. Sakka sprinkled divine medicine and ambrosial water. Restored, the Great Being took on golden celestial hue. Sakka prophesied: “By this merit, you will become Buddha without fail.”",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "ES:"
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Cosmos",
+   "Sakka",
+   "yen",
+   "The",
+   "Chain",
+   "Purina",
+   "(creates",
+   "single",
+   "act",
+   "supreme",
+   "devotion",
+   "does",
+   "not",
+   "exist",
+   "isolation.",
+   "The",
+   "creation",
+   "the",
+   "Buddha",
+   "image",
+   "initiated",
+   "karmic",
+   "ripple",
+   "elevating",
+   "the",
+   "artisan,",
+   "converting",
+   "the",
+   "King,",
+   "and",
+   "crystallizing",
+   "the",
+   "Bodhisatta’s",
+   "perfection",
+   "thy"
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     142,
+     75
+    ],
+    "bbox": [
+     433,
+     116,
+     2209,
+     489
+    ],
+    "shape": "bubble",
+    "en": "Ww the Teacher concluded at Jetavana, he identified Menened the rebirths: “Viriyapandita is me, the Lord of the Universe. All others are now the four-fold congregation. Hold this Jataka in great reverence.”",
+    "conf": 34
+   },
+   {
+    "seed": [
+     341,
+     170
+    ],
+    "bbox": [
+     893,
+     489,
+     1825,
+     879
+    ],
+    "shape": "bubble",
+    "en": "The Enlightened One Sakka Goldsmith)",
+    "conf": 86
+   },
+   {
+    "seed": [
+     609,
+     235
+    ],
+    "bbox": [
+     1855,
+     493,
+     2410,
+     1167
+    ],
+    "shape": "bubble",
+    "en": "Anuruddha (Disciple with divine eye) Parents",
+    "conf": 91
+   },
+   {
+    "seed": [
+     159,
+     239
+    ],
+    "bbox": [
+     347,
+     724,
+     734,
+     1227
+    ],
+    "shape": "bubble",
+    "en": "Sujata (Wife) Revata (Son)",
+    "conf": 92
+   },
+   {
+    "seed": [
+     313,
+     266
+    ],
+    "bbox": [
+     780,
+     694,
+     1280,
+     969
+    ],
+    "shape": "bubble",
+    "en": "Yasodhara",
+    "conf": 59
+   },
+   {
+    "seed": [
+     277,
+     332
+    ],
+    "bbox": [
+     744,
+     853,
+     1283,
+     1200
+    ],
+    "shape": "bubble",
+    "en": "Rahula",
+    "conf": 91
+   },
+   {
+    "seed": [
+     455,
+     316
+    ],
+    "bbox": [
+     1309,
+     896,
+     1881,
+     1197
+    ],
+    "shape": "bubble",
+    "en": "Suddhodana Mahamaya",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/25-Viriyapandita-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     328,
+     73
+    ],
+    "bbox": [
+     354,
+     142,
+     2291,
+     522
+    ],
+    "shape": "box",
+    "en": "The Fruit of Dhamma Whether in wood, stone, clay, or gold, those who construct or anoint Buddha image according to their ability will live long, fearless, and endowed with great glory until they atin Nibbana.",
+    "conf": 66
+   }
+  ],
+  "loose": []
+ }
+]

@@ -1,0 +1,453 @@
+[
+ {
+  "img": "images/21-35-Miracles-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     93,
+     70
+    ],
+    "bbox": [
+     139,
+     188,
+     631,
+     526
+    ],
+    "shape": "box",
+    "en": "The vireo at Uruvela The Subjugation of Kassapa’s Ego",
+    "conf": 30
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/21-35-Miracles-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "IVA",
+   "Uruvela,",
+   "two",
+   "spiritual",
+   "forces",
+   "converge.",
+   "Uruvela,",
+   "two",
+   "spiritual",
+   "forces",
+   "converge.",
+   "Uruvelakassapa,",
+   "leader",
+   "500",
+   "matted-hair",
+   "yogis,",
+   "relies",
+   "status",
+   "and",
+   "fire",
+   "rituals.",
+   "The",
+   "Buddha,",
+   "seeking",
+   "shelter",
+   "the",
+   "sacrificial",
+   "firehouse,",
+   "offers",
+   "new",
+   "paradigm",
+   "quiet",
+   "liberation.",
+   "verge.",
+   "fire"
+  ]
+ },
+ {
+  "img": "images/21-35-Miracles-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "with",
+   "escalating",
+   "Kassapa",
+   "repeats",
+   "singular,",
+   "defensive",
+   "refrain:",
+   "“Powerful",
+   "this",
+   "Great",
+   "Ascetic...",
+   "but",
+   "not",
+   "Worthy",
+   "One",
+   "like",
+   "am.”",
+   "This",
+   "ego",
+   "becomes",
+   "his",
+   "self-made",
+   "prison."
+  ]
+ },
+ {
+  "img": "images/21-35-Miracles-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "fierce,",
+   "venomous",
+   "Dragon-",
+   "occupies",
+   "the",
+   "firehouse.",
+   "nafraid,",
+   "Buddha",
+   "meets",
+   "the",
+   "beast’s",
+   "smoke",
+   "and",
+   "flames",
+   "with",
+   "his",
+   "own",
+   "radiant",
+   "fire-element,",
+   "the",
+   "shelter",
+   "without",
+   "single",
+   "scale.",
+   "Unafraid,",
+   "the",
+   "illuminating",
+   "harming",
+   "element,"
+  ]
+ },
+ {
+  "img": "images/21-35-Miracles-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Morning",
+   "reveals",
+   "the",
+   "Dragon",
+   "tamed,",
+   "resting",
+   "peacefully",
+   "the",
+   "Buddha’s",
+   "alms",
+   "bowl.",
+   "True",
+   "power",
+   "subdues",
+   "violence",
+   "with",
+   "compassion,",
+   "leaving",
+   "flesh",
+   "and",
+   "bone",
+   "Kassapa’s",
+   "ego",
+   "holds",
+   "firm",
+   "untouched."
+  ]
+ },
+ {
+  "img": "images/21-35-Miracles-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     143,
+     53
+    ],
+    "bbox": [
+     69,
+     129,
+     1706,
+     420
+    ],
+    "shape": "box",
+    "en": "fe cosmos descends to listen. The Four Great Kings, Sakka, and Brahma Sahampati visit on successive nights, illuminating the jungle like great masses of fire.",
+    "conf": 60
+   }
+  ],
+  "loose": [
+   "as!"
+  ]
+ },
+ {
+  "img": "images/21-35-Miracles-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Kassapa",
+   "witnesses",
+   "the",
+   "highest",
+   "divine",
+   "authorities",
+   "bowing",
+   "mortal",
+   "ascetic",
+   "hear",
+   "the",
+   "Dhamma.",
+   "The",
+   "gods",
+   "themselves",
+   "recognize",
+   "the",
+   "Buddha’s",
+   "spiritual",
+   "supremacy,",
+   "deepening",
+   "Kassapa",
+   "cognitive",
+   "dissonance",
+   "YAS",
+   "age"
+  ]
+ },
+ {
+  "img": "images/21-35-Miracles-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     309,
+     17
+    ],
+    "bbox": [
+     655,
+     30,
+     2004,
+     231
+    ],
+    "shape": "box",
+    "en": "Distance and realms present no barrier. To fetch morning meals, the Buddha effortlessly retrieves the Rose-Apple, Mango, Myrobalans, and celestial Coral Tree flowers before Kassapa even arrives",
+    "conf": 79
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/21-35-Miracles-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Fearing",
+   "the",
+   "Buddha",
+   "will",
+   "outshine",
+   "him",
+   "great",
+   "sacrifice",
+   "for",
+   "Anga",
+   "and",
+   "Magadha,",
+   "Kassapa",
+   "wishes",
+   "him",
+   "away.",
+   "Reading",
+   "his",
+   "mind,",
+   "the",
+   "Buddha",
+   "quietly",
+   "departs",
+   "for",
+   "Northern",
+   "Kuru,",
+   "showing",
+   "absolute",
+   "detachment",
+   "from",
+   "worldly",
+   "honor."
+  ]
+ },
+ {
+  "img": "images/21-35-Miracles-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     343,
+     65
+    ],
+    "bbox": [
+     893,
+     159,
+     1769,
+     443
+    ],
+    "shape": "box",
+    "en": "THE BUDDHA The 500 yogis suddenly cannot chop wood, woo light, or extinguish their sacred fires. With single word, the Buddha releases the elements, commanding fhe very physics of their aos saat",
+    "conf": 36
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/21-35-Miracles-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "unseasonal",
+   "flood",
+   "submerges",
+   "the",
+   "land,",
+   "Kassapa",
+   "rushes",
+   "out",
+   "boat.",
+   "finds",
+   "the",
+   "ing",
+   "calmly",
+   "island",
+   "dusty",
+   "ground",
+   "the",
+   "middle",
+   "the",
+   "raging",
+   "waters.",
+   "ouched,"
+  ]
+ },
+ {
+  "img": "images/21-35-Miracles-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Anatomy",
+   "Power",
+   "vs.",
+   "Purity",
+   "Psychic",
+   "power",
+   "alters",
+   "reality.",
+   "Spiritual",
+   "liberation",
+   "conquers",
+   "the",
+   "self.",
+   "The",
+   "Buddha:",
+   "Kassapa:",
+   "Effortless,",
+   "Beneficial,",
+   "Rooted",
+   "status,",
+   "Harmonious,",
+   "Blind",
+   "reality,",
+   "Anatomy",
+   "Defensive,",
+   "Lacking",
+   "The"
+  ]
+ },
+ {
+  "img": "images/21-35-Miracles-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "easts",
+   "tamed.",
+   "Gods",
+   "humbled.",
+   "Space",
+   "traversed.",
+   "Minds",
+   "read.",
+   "Elements",
+   "commanded.",
+   "The",
+   "Buddha",
+   "dismantled",
+   "every",
+   "conceivable",
+   "domain",
+   "his",
+   "stubborn",
+   "ego",
+   "nowhere",
+   "left",
+   "hide.",
+   "asts",
+   "leaving",
+   "traversed.",
+   "Elements"
+  ]
+ }
+]

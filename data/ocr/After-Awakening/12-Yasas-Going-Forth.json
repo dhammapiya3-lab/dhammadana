@@ -1,0 +1,333 @@
+[
+ {
+  "img": "images/12-Yasas-Going-Forth-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Going",
+   "Forth",
+   "The",
+   "Progress",
+   "the",
+   "Sasana"
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     647,
+     60
+    ],
+    "bbox": [
+     1676,
+     172,
+     2523,
+     522
+    ],
+    "shape": "box",
+    "en": "Young Yasa Young Yasa possessed immense wealth, enjoying three seasonal palaces. Endowed with the five strands of sensual pleasure, he lived surrounded by female musical ensemble, trapped in deep indulgence. 4",
+    "conf": 72
+   }
+  ],
+  "loose": [
+   "fff"
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Young",
+   "Yasa",
+   "Waking",
+   "the",
+   "night,",
+   "Yasa",
+   "saw",
+   "his",
+   "sleeping",
+   "retinue—dishevelled,",
+   "dribbling,",
+   "muttering.",
+   "The",
+   "luxurious",
+   "palace",
+   "suddenly",
+   "appeared",
+   "cemetery.",
+   "profound",
+   "danger",
+   "became",
+   "clear,",
+   "establishing",
+   "his",
+   "mind",
+   "deep",
+   "world-weariness.",
+   "Yasa"
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Young",
+   "Yasa",
+   "“Tribulation",
+   "indeed,",
+   "ruination",
+   "indeed!”",
+   "cried.",
+   "Fleeing",
+   "the",
+   "palace,",
+   "divine",
+   "beings",
+   "silently",
+   "opened",
+   "the",
+   "heavy",
+   "city",
+   "gates,",
+   "ensuring",
+   "worldly",
+   "obstacle",
+   "could",
+   "block",
+   "his",
+   "path",
+   "the",
+   "AGB",
+   "homeless"
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "dawn,",
+   "Yasa",
+   "reached",
+   "the",
+   "Deer",
+   "Park",
+   "The",
+   "Buddha,",
+   "walking",
+   "the",
+   "open",
+   "air,",
+   "saw",
+   "the",
+   "young",
+   "man",
+   "approaching",
+   "from",
+   "afar",
+   "and",
+   "prepared",
+   "seat"
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Yasa",
+   "cried",
+   "out",
+   "his",
+   "despair.",
+   "The",
+   "Buddha",
+   "replied:",
+   "\"This",
+   "not",
+   "tribulation,",
+   "this",
+   "not",
+   "ruination.",
+   "Come,",
+   "Yasa,",
+   "sit",
+   "down.",
+   "will",
+   "teach",
+   "you.”",
+   "Joyful",
+   "and",
+   "uplifted,",
+   "Yasa",
+   "sat",
+   "his",
+   "side.",
+   "ONS"
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "guided",
+   "Yasa",
+   "the",
+   "gradual",
+   "teaching:",
+   "Giving",
+   "Virtue",
+   "Heaven",
+   "Danger",
+   "Sensual",
+   "Desires",
+   "Renunciation",
+   "The",
+   "Buddha"
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Yasa’s",
+   "Before:",
+   "Weary,",
+   "‘and",
+   "After:",
+   "ready,",
+   "ped",
+   "sensual",
+   "pleasures.",
+   "uplifted,",
+   "and",
+   "confident",
+   "mind.",
+   "Aready,",
+   "trapped"
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     505,
+     105
+    ],
+    "bbox": [
+     1418,
+     175,
+     2602,
+     1154
+    ],
+    "shape": "bubble",
+    "en": "Just as clean, unstained cloth takes dye perfectly, Yasa’s thoroughly prepared mind was now ready to absorb the highest truth.",
+    "conf": 58
+   }
+  ],
+  "loose": [
+   "TAY"
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Awakened",
+   "One",
+   "revealed",
+   "the",
+   "ultimate",
+   "Dhamma",
+   "discovered",
+   "the",
+   "Suffering",
+   "Cessation",
+   "The",
+   "Path",
+   "Buddhas:",
+   "Origination"
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "that",
+   "very",
+   "seat,",
+   "stainless",
+   "Vision",
+   "the",
+   "Dhamma",
+   "arose",
+   "Yasa:",
+   "“Whatever",
+   "has",
+   "the",
+   "nature",
+   "arising,",
+   "all",
+   "that",
+   "has",
+   "the",
+   "nature",
+   "ceasing"
+  ]
+ }
+]

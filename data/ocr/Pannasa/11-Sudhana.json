@@ -1,0 +1,889 @@
+[
+ {
+  "img": "images/11-Sudhana-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     359,
+     247
+    ],
+    "bbox": [
+     866,
+     215,
+     1703,
+     1326
+    ],
+    "shape": "bubble",
+    "en": "The Birth-Stor of Prince Sudhana Lanna Pannasa Jataka Tale",
+    "conf": 59
+   }
+  ],
+  "loose": [
+   "Abe"
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "fo,",
+   "monk",
+   "became",
+   "dissatisfied",
+   "after",
+   "seeing",
+   "beautiful",
+   "woman.",
+   "The",
+   "Buddha",
+   "warned",
+   "that",
+   "lustful",
+   "thoughts",
+   "overpower",
+   "the",
+   "mind,",
+   "recounting",
+   "life",
+   "where",
+   "even",
+   "wise",
+   "men",
+   "abandoned",
+   "kingdoms",
+   "for",
+   "women.",
+   "Jetavana,",
+   "The",
+   "that"
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     400,
+     87
+    ],
+    "bbox": [
+     873,
+     122,
+     2433,
+     1124
+    ],
+    "shape": "bubble",
+    "en": "Descending from Tavatitnsa, the Bodhisatta was born as Prince Sudhana in Uttara-paficala. At his birth, the earth trembled and four treasure-urns miraculously appeared. Radiant and brilliant, he soon mastered all royal arts. ey AZ",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-Sudhana-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "naga-king",
+   "Jambucitta",
+   "blessed",
+   "Uttara-paficala",
+   "with",
+   "abundant",
+   "rain.",
+   "Conversely,",
+   "neighboring",
+   "suffered",
+   "severe",
+   "famine.",
+   "Envious",
+   "this",
+   "prosperity,",
+   "king",
+   "sought",
+   "power",
+   "steal",
+   "his",
+   "destroy",
+   "the",
+   "naga-king’s",
+   "back."
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "fox",
+   "greedy",
+   "brahman,",
+   "versed",
+   "the",
+   "Alampayana",
+   "spell,",
+   "recited",
+   "the",
+   "incantation,",
+   "the",
+   "lake",
+   "boiled.",
+   "The",
+   "snake-king,",
+   "burning",
+   "with",
+   "fever,",
+   "realized",
+   "would",
+   "captured",
+   "unless",
+   "found",
+   "ally.",
+   "targeted",
+   "Jambucitta."
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     404,
+     27
+    ],
+    "bbox": [
+     149,
+     86,
+     2162,
+     622
+    ],
+    "shape": "bubble",
+    "en": "mere Taking human form, Jambucitta pleaded with the forester Pundarika. Following the naga’s instructions, truct ions, the hunter shot the corrupt brahman, saving the snake-king. king In gratitude, Jambucitta offered immense wealth Ith and an eternal alliance. iance",
+    "conf": 36
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-Sudhana-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Deep",
+   "the",
+   "Himavant",
+   "forest,",
+   "Pundarika",
+   "discovered",
+   "hidden",
+   "pond.",
+   "watched",
+   "awe",
+   "seven",
+   "magnificent",
+   "kinnaris—daughters",
+   "Dumaraja",
+   "descended",
+   "from",
+   "the",
+   "sky",
+   "bathe.",
+   "resolved",
+   "capture",
+   "one."
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "ascetic",
+   "Kassapa",
+   "warned",
+   "that",
+   "only",
+   "magical",
+   "snake-noose",
+   "could",
+   "capture",
+   "kinnari.",
+   "Relying",
+   "their",
+   "alliance,",
+   "Pundarika",
+   "requested",
+   "the",
+   "sacred",
+   "weapon.",
+   "Reluctantly,",
+   "the",
+   "naga-king",
+   "yielded",
+   "his",
+   "protective",
+   "treasure",
+   "repay",
+   "his",
+   "life-debt."
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "\\7,",
+   "Pundarika",
+   "cast",
+   "the",
+   "mystical",
+   "noose,",
+   "ensnaring",
+   "the",
+   "eldest",
+   "kinnari",
+   "princess.",
+   "Terrified,",
+   "her",
+   "six",
+   "sisters",
+   "fled",
+   "into",
+   "the",
+   "sky,",
+   "weeping",
+   "for",
+   "their",
+   "lost",
+   "sibling.",
+   "Trapped",
+   "and",
+   "powerless,",
+   "surrendered",
+   "the",
+   "hunter’s",
+   "will.",
+   "Manohara"
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "with",
+   "Prince",
+   "Manohara,",
+   "the",
+   "Bodhisatta",
+   "was",
+   "overwhelmed",
+   "the",
+   "city,",
+   "the",
+   "hunter",
+   "crossed",
+   "paths",
+   "karmic",
+   "connection",
+   "from",
+   "past",
+   "life.",
+   "rewarded",
+   "the",
+   "hunter",
+   "immensely,",
+   "making",
+   "her",
+   "his",
+   "chief",
+   "consort.",
+   "Returning",
+   "Sudhana.",
+   "urning"
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Meanwhile,",
+   "Manohara’s",
+   "mother",
+   "descended",
+   "search",
+   "for",
+   "her.",
+   "Finding",
+   "only",
+   "scattered",
+   "flowers",
+   "and",
+   "her",
+   "jewelled",
+   "girdle,",
+   "the",
+   "queen",
+   "fell",
+   "unconscious,",
+   "devastated",
+   "the",
+   "impermanence",
+   "and",
+   "separation",
+   "inherent",
+   "all",
+   "existence.",
+   "existence."
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "new",
+   "religious",
+   "adviser,",
+   "Kusala,",
+   "grew",
+   "intensely",
+   "Prince",
+   "Sudhana.",
+   "Fearing",
+   "for",
+   "his",
+   "position,",
+   "the",
+   "brahman",
+   "whispered",
+   "calumny",
+   "King",
+   "Adiccavamsa,",
+   "falsely",
+   "claiming",
+   "the",
+   "prince",
+   "intended",
+   "usurp",
+   "the",
+   "throne.",
+   "Uttara-pancala,"
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "When",
+   "adversaries",
+   "attacked",
+   "border",
+   "village,",
+   "the",
+   "advisor",
+   "the",
+   "king",
+   "Sudhana",
+   "take",
+   "care",
+   "rting",
+   "heartbroken",
+   "it.",
+   "ara,",
+   "the",
+   "prince",
+   "rode",
+   "war,",
+   "secretly",
+   "protected",
+   "deva",
+   "convinced",
+   "send",
+   "Comforting",
+   "the"
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "morning",
+   "approached,",
+   "King",
+   "Adiccavarnsa",
+   "terrifying",
+   "dream:",
+   "his",
+   "own",
+   "intestines",
+   "emerged",
+   "and",
+   "encircled",
+   "Jambudipa",
+   "three",
+   "times.",
+   "Panicking,",
+   "the",
+   "king",
+   "summoned",
+   "his",
+   "religious",
+   "adviser",
+   "interpret",
+   "the",
+   "experienced"
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Seizing",
+   "the",
+   "opportunity",
+   "destroy",
+   "Sudhana,",
+   "the",
+   "corrupt",
+   "brahman",
+   "lied",
+   "about",
+   "the",
+   "dream.",
+   "claimed",
+   "foretold",
+   "three",
+   "imminent",
+   "dangers",
+   "and",
+   "demanded",
+   "massive",
+   "sacrifice",
+   "living",
+   "beings",
+   "save",
+   "the",
+   "kingdom."
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     138,
+     184
+    ],
+    "bbox": [
+     288,
+     569,
+     1048,
+     916
+    ],
+    "shape": "box",
+    "en": "Persuaded by an evil religious adviser, King Adiccavamsa orders the 2 sacrifice Oo bol of et princess Manohara. He is falsely led to believe this 1S gruesome act will ensure his safety and the kingdom’s prosperity. it",
+    "conf": 46
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-Sudhana-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     315,
+     376
+    ],
+    "bbox": [
+     946,
+     1167,
+     1703,
+     1372
+    ],
+    "shape": "box",
+    "en": "Refusing her tragic fate, the kinnari princess Manohara performs final dance. Unfurling her hidden wings, she escapes into the sky, beginning her long journey back to her father on Mount Kelasa.",
+    "conf": 55
+   }
+  ],
+  "loose": [
+   "222"
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     84,
+     124
+    ],
+    "bbox": [
+     152,
+     324,
+     708,
+     1160
+    ],
+    "shape": "box",
+    "en": "Stopping at ascetic Kassapa’s hermitage, Manohara leaves diamond ring, red blanket, and magical pills. She warns of perilous path, leaving detailed instructions should her husband attempt to follow her.",
+    "conf": 33
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-Sudhana-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     568,
+     307
+    ],
+    "bbox": [
+     1637,
+     982,
+     2430,
+     1332
+    ],
+    "shape": "box",
+    "en": "Returning from battle, Prince Sudhana is devastated by his wife’s disappearance. Disregarding his mother’s tearful pleas, the Bodhisatta arms himself and sets out into the dense Himavant forest.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-Sudhana-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "For",
+   "seven",
+   "years,",
+   "seven",
+   "months,",
+   "and",
+   "seven",
+   "days,",
+   "Sudhana",
+   "transverses",
+   "impossible",
+   "thickets.",
+   "Armed",
+   "with",
+   "spells",
+   "and",
+   "medicinal",
+   "pills,",
+   "conquers",
+   "giant",
+   "yakkhas,",
+   "boa-constrictor",
+   "bridges,",
+   "and",
+   "clashing",
+   "mountains.",
+   "VEE"
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     355,
+     371
+    ],
+    "bbox": [
+     929,
+     1200,
+     1713,
+     1415
+    ],
+    "shape": "box",
+    "en": "Reaching the Kinnara kingdom, Sudhana encounters maidens gathering water to bathe Manohara. He secretly drops his diamond ring into golden pot, signaling his arrival to his beloved.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-Sudhana-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "prove",
+   "his",
+   "worth,",
+   "King",
+   "Dumaraja",
+   "tests",
+   "the",
+   "might.",
+   "Sudhana’s",
+   "arrow",
+   "effortlessly",
+   "pierces",
+   "seven",
+   "palmyra",
+   "trees,",
+   "iron",
+   "planks,",
+   "and",
+   "stone",
+   "pillars",
+   "before",
+   "magically",
+   "returning",
+   "his",
+   "hand."
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "second",
+   "trial,",
+   "Sudhana",
+   "calls",
+   "upon",
+   "the",
+   "perfection",
+   "truth.",
+   "Through",
+   "the",
+   "incandescence",
+   "his",
+   "merit,",
+   "lifts",
+   "massive",
+   "blue-black",
+   "stone—heavy",
+   "nature—as",
+   "were",
+   "mere",
+   "straw."
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     244,
+     383
+    ],
+    "bbox": [
+     708,
+     1190,
+     1941,
+     1408
+    ],
+    "shape": "box",
+    "en": "The final tes identifying Manohara among seven identical maidens idens. Recognizing izing the Bodhisatta’s tta’ resolute determination 10n for truth Sakka, os king op of Ge devas, wa appears 2) as golden a5) fly to guide him to his true wife",
+    "conf": 55
+   }
+  ],
+  "loose": [
+   "Yad"
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Triumphant,",
+   "Sudhana",
+   "and",
+   "Manohara",
+   "return",
+   "Uttara-paficala.",
+   "They",
+   "rule",
+   "righteously,",
+   "supporting",
+   "their",
+   "parents",
+   "and",
+   "performing",
+   "great",
+   "deeds",
+   "merit",
+   "until",
+   "the",
+   "end",
+   "their",
+   "life-span,",
+   "earning",
+   "rebirth",
+   "the",
+   "Tusita",
+   "heaven.",
+   "Gemini",
+   "Notebook"
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Concluding",
+   "the",
+   "birth-story,",
+   "the",
+   "Buddha",
+   "reveals",
+   "the",
+   "truth:",
+   "the",
+   "evil",
+   "adviser",
+   "was",
+   "Devadatta,",
+   "Manohara",
+   "was",
+   "Yasodhara,",
+   "and",
+   "Prince",
+   "Sudhana",
+   "was",
+   "the",
+   "Buddha",
+   "himself.",
+   "Thus,",
+   "the",
+   "teaching",
+   "the",
+   "Dhamma",
+   "fulfilled."
+  ]
+ }
+]

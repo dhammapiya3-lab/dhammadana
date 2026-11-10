@@ -1,0 +1,577 @@
+[
+ {
+  "img": "images/05-Sumbhamitta-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     267,
+     349
+    ],
+    "bbox": [
+     787,
+     1144,
+     1855,
+     1471
+    ],
+    "shape": "box",
+    "en": "The Birth-Story of WwW eS Itta. Pannasa Fataka from the traditional Lanna mural manuscripts. Spoken by the Buddha to reveal the ancient roots of Devadatta’s hatred, tracing the best ‘journey of an exiled king.",
+    "conf": 36
+   }
+  ],
+  "loose": [
+   "ates"
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     483,
+     51
+    ],
+    "bbox": [
+     1250,
+     106,
+     2536,
+     575
+    ],
+    "shape": "bubble",
+    "en": "The Catalyst of Exile In ancient Campa, Prince Asumbhamitta plots to usurp the throne",
+    "conf": 66
+   },
+   {
+    "seed": [
+     79,
+     339
+    ],
+    "bbox": [
+     102,
+     807,
+     1428,
+     1379
+    ],
+    "shape": "bubble",
+    "en": "Rather than shed the blood of his subjects in civil il war, King Sumbhamitta chooses 6) wo the path of profound rs) renunciation vu abandoning his kingdom Ss in the dead Ss of night",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "SOP"
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Vow",
+   "Sumbhamitta",
+   "urges",
+   "his",
+   "wife",
+   "remain",
+   "and",
+   "distribute",
+   "her",
+   "wealth",
+   "the",
+   "virtuous.",
+   "Rejecting",
+   "jewels",
+   "and",
+   "safety,",
+   "Queen",
+   "refuses",
+   "abandon",
+   "him.",
+   "Together,",
+   "the",
+   "royal",
+   "famil",
+   "embraces",
+   "the",
+   "terrors",
+   "the",
+   "wilderness."
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Great",
+   "River.",
+   "deep,",
+   "rushing",
+   "river",
+   "blocks",
+   "their",
+   "path",
+   "Unable",
+   "carry",
+   "all",
+   "three,",
+   "the",
+   "King",
+   "ferries",
+   "his",
+   "young",
+   "sons",
+   "distant",
+   "sandbank,",
+   "leaving",
+   "the",
+   "Queen",
+   "behind",
+   "The",
+   "family",
+   "physically",
+   "severed",
+   "river"
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "First",
+   "Severance",
+   "the",
+   "King",
+   "struggles",
+   "back",
+   "across",
+   "the",
+   "treacherous",
+   "currents,",
+   "fishermen",
+   "spot",
+   "the",
+   "undefended",
+   "princes.",
+   "Believin",
+   "them",
+   "abandoned,",
+   "they",
+   "seize",
+   "the",
+   "boys",
+   "and",
+   "row",
+   "away",
+   "into",
+   "the",
+   "dawn",
+   "the"
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Second",
+   "Severance.",
+   "Simultaneously,",
+   "merchant",
+   "boatman",
+   "discovers",
+   "the",
+   "solitary",
+   "Queen.",
+   "Captivated",
+   "her",
+   "auspicious",
+   "marks,",
+   "abducts",
+   "her",
+   "The",
+   "King",
+   "returns",
+   "empty",
+   "shore,",
+   "stripped",
+   "his",
+   "family",
+   "and",
+   "his",
+   "crown",
+   "ing"
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Kamma.",
+   "Why",
+   "this",
+   "immense",
+   "suffering?",
+   "Lifetimes",
+   "ago,",
+   "the",
+   "princes",
+   "plucked",
+   "three",
+   "feathers",
+   "from",
+   "baby",
+   "bird",
+   "their",
+   "parents",
+   "watched.",
+   "This",
+   "seemingly",
+   "minor",
+   "cruelty",
+   "ripened",
+   "into",
+   "five",
+   "hundred",
+   "lifetimes",
+   "agonizing",
+   "separation.",
+   "Root"
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Wilderness",
+   "Despair.",
+   "Bereft",
+   "family,",
+   "kingdom,",
+   "and",
+   "hope,",
+   "the",
+   "Great",
+   "Being",
+   "collapses",
+   "the",
+   "wilderness",
+   "tastes",
+   "the",
+   "bitter,",
+   "inescapable",
+   "fruit",
+   "his",
+   "past",
+   "actions,",
+   "wandering",
+   "alone",
+   "toward",
+   "distant",
+   "Takkasila",
+   "ast"
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "afé",
+   "The",
+   "State-Chariot",
+   "Takkasila,",
+   "king",
+   "dies",
+   "without",
+   "heir.",
+   "The",
+   "sacred",
+   "state-chariot",
+   "sent",
+   "find",
+   "ruler",
+   "supreme",
+   "merit.",
+   "stops",
+   "beside",
+   "the",
+   "sleeping",
+   "Sumbhamitta,",
+   "recognizing",
+   "his",
+   "royal",
+   "destiny"
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Righteous",
+   "Kingship",
+   "Restored",
+   "Enthroned",
+   "merit,",
+   "King",
+   "Sumbhamitta",
+   "rules",
+   "through",
+   "Dhamma.",
+   "Soon",
+   "local",
+   "fishermen",
+   "present",
+   "with",
+   "two",
+   "golden-skinned",
+   "boys",
+   "royal",
+   "servants",
+   "The",
+   "King",
+   "recognizes",
+   "his",
+   "children",
+   "but",
+   "keeps",
+   "silent",
+   "est"
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     687,
+     61
+    ],
+    "bbox": [
+     2073,
+     122,
+     2526,
+     1362
+    ],
+    "shape": "box",
+    "en": "The Shield of Virtue The boatman arrives in Takkasila to trade Unable to violate Queen Kesini due to the scorching power of her unshakeable morality, he keeps her captive The King assigns his new wards to guard the vessel",
+    "conf": 83
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Sumbhamitta-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Midnight",
+   "Discovery",
+   "Under",
+   "the",
+   "moonlight,",
+   "the",
+   "boys",
+   "recount",
+   "their",
+   "tragic",
+   "history",
+   "stay",
+   "awake.",
+   "Hearing",
+   "her",
+   "own",
+   "story",
+   "spoken",
+   "the",
+   "darkness,",
+   "the",
+   "captive",
+   "Queen",
+   "parts",
+   "the",
+   "curtain",
+   "and",
+   "recognizes",
+   "her",
+   "long-lost",
+   "sons.",
+   "The"
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Severance",
+   "Healed.",
+   "Brought",
+   "before",
+   "the",
+   "King,",
+   "the",
+   "truth",
+   "spoken.",
+   "Sumbhamitta",
+   "leaps",
+   "from",
+   "his",
+   "throne",
+   "clasp",
+   "his",
+   "family.",
+   "The",
+   "karmic",
+   "debt",
+   "the",
+   "three",
+   "feathers",
+   "exhausted;",
+   "the",
+   "family",
+   "whole",
+   "ary",
+   "finally",
+   "ALY"
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Fruits",
+   "Action.",
+   "EN;",
+   "The",
+   "scales",
+   "kamma",
+   "balance",
+   "perfectly.",
+   "The",
+   "evil",
+   "usurper",
+   "Asumbhamitta",
+   "falls",
+   "into",
+   "the",
+   "agonies",
+   "Niraya.",
+   "King",
+   "Sumbhamitta",
+   "ruling",
+   "with",
+   "profound",
+   "righteousness",
+   "leads",
+   "his",
+   "family",
+   "into",
+   "the",
+   "Deva-worlds"
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Transmigration",
+   "Matrix.",
+   "King",
+   "Sumbhamitta",
+   "The",
+   "Buddha",
+   "Queen",
+   "Kesini",
+   "Yasodhara",
+   "Prince",
+   "Jeyyasena",
+   "Rahula",
+   "Prince",
+   "Jeyyadatta",
+   "Ananda",
+   "Brahman",
+   "Adviser",
+   "Sariputta",
+   "vil",
+   "Devadatta",
+   "Evil"
+  ]
+ }
+]

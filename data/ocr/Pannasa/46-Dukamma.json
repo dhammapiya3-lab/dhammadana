@@ -1,0 +1,449 @@
+[
+ {
+  "img": "images/46-Dukamma-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     292,
+     249
+    ],
+    "bbox": [
+     863,
+     711,
+     1779,
+     1276
+    ],
+    "shape": "box",
+    "en": "Dukammarajajataka Pafifiasa Jataka Tale of Cause, Effect, and Wisdom.",
+    "conf": 86
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/46-Dukamma-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Dying",
+   "Father’s",
+   "Hypothesis",
+   "Never",
+   "marry",
+   "who",
+   "has",
+   "Never",
+   "live",
+   "king",
+   "thrice",
+   "renounced",
+   "the",
+   "world.",
+   "acts",
+   "rashly,",
+   "without",
+   "foresight.",
+   "thrice-widowed",
+   "woman.",
+   "befriend",
+   "under"
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Deliberate",
+   "Test",
+   "Dukamma",
+   "remembered",
+   "his",
+   "father’s",
+   "admonitions.",
+   "“What",
+   "could",
+   "father’s",
+   "reasons?",
+   "Let",
+   "examine",
+   "it.”",
+   "Seeking",
+   "opportunity",
+   "test",
+   "the",
+   "advice,",
+   "married",
+   "the",
+   "widow",
+   "and",
+   "befriended",
+   "the",
+   "fickle",
+   "man.",
+   "iended",
+   "ied"
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Ruse",
+   "the",
+   "Golden",
+   "Swan",
+   "force",
+   "the",
+   "experiment’s",
+   "climax,",
+   "Dukamma",
+   "engineered",
+   "crime.",
+   "safely",
+   "hid",
+   "the",
+   "royal",
+   "swan,",
+   "cooked",
+   "common",
+   "bird,",
+   "and",
+   "falsely",
+   "confessed",
+   "treason",
+   "his",
+   "new",
+   "wife."
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     314,
+     329
+    ],
+    "bbox": [
+     913,
+     1071,
+     1729,
+     1405
+    ],
+    "shape": "box",
+    "en": "The Dual Betrayal The first two warnings 6D hold true. Lured by 1000 coins, the wife 2 eagerly surrendered 5 2 3 him. On the road to execution, the thrice-renounced friend demanded Dukamma’s very clothes.",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/46-Dukamma-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Rash",
+   "Decree",
+   "King",
+   "furious",
+   "and",
+   "acting",
+   "entirely",
+   "without",
+   "investigation,",
+   "ordered",
+   "Dukamma",
+   "beheaded",
+   "the",
+   "charnel",
+   "grounds",
+   "that",
+   "very",
+   "evening."
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Taxonomy",
+   "Haste",
+   "uth",
+   "Four",
+   "gatekeepers",
+   "blocked",
+   "the",
+   "night",
+   "execution.",
+   "Through",
+   "four",
+   "ancient",
+   "tragedies,",
+   "they",
+   "proved",
+   "the",
+   "catastrophic",
+   "misery",
+   "born",
+   "from",
+   "unconsidered",
+   "action.",
+   "South"
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Vindication",
+   "revealed",
+   "the",
+   "truth:",
+   "“My",
+   "father",
+   "admonished",
+   "me,",
+   "and",
+   "did",
+   "this",
+   "investigate.",
+   "now",
+   "see",
+   "what",
+   "right",
+   "and",
+   "wrong.”",
+   "The",
+   "swan",
+   "was",
+   "found",
+   "alive.",
+   "Dukamma"
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Impressed,",
+   "the",
+   "king",
+   "offered",
+   "half",
+   "his",
+   "kingdom",
+   "Dukamma",
+   "refused.",
+   "Having",
+   "witnessed",
+   "the",
+   "danger",
+   "wicked,",
+   "thoughtless",
+   "king,",
+   "honored",
+   "his",
+   "father's",
+   "final",
+   "warning",
+   "and",
+   "departed",
+   "for",
+   "Takkasila",
+   "Nig",
+   "Rejection",
+   "awicked,"
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Magic",
+   "Chariot",
+   "the",
+   "seventh",
+   "day,",
+   "the",
+   "heirless",
+   "kingdom",
+   "Takkasila",
+   "released",
+   "the",
+   "phussaratha.",
+   "The",
+   "magic",
+   "chariot",
+   "circled",
+   "Dukamma,",
+   "recognizing",
+   "his",
+   "supreme",
+   "merit",
+   "rule",
+   "righteously."
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     547,
+     63
+    ],
+    "bbox": [
+     1660,
+     172,
+     2476,
+     678
+    ],
+    "shape": "box",
+    "en": "AR Righteous ghteous us Reign ign Unlike ike the reine King of Bari ar nasi King ing Dukamma ruled with th profound foresight resight and compassion, is) establishing ing six massive charity-halls ity halls to sustain in the vulnerable.",
+    "conf": 37
+   }
+  ],
+  "loose": [
+   "(BA"
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Karmic",
+   "Convergence",
+   "Unable",
+   "earn",
+   "livelihood,",
+   "the",
+   "wicked",
+   "wife",
+   "and",
+   "false",
+   "friend",
+   "wandered",
+   "Takkasila",
+   "Destitute,",
+   "they",
+   "found",
+   "themselves",
+   "begging",
+   "the",
+   "very",
+   "charity-halls",
+   "the",
+   "man",
+   "they",
+   "had",
+   "betrayed"
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Jataka",
+   "Rebirth",
+   "Map",
+   "“One",
+   "should",
+   "associate",
+   "only",
+   "with",
+   "good",
+   "people,”",
+   "the",
+   "Buddha",
+   "concluded.",
+   "The",
+   "wicked",
+   "friend",
+   "was",
+   "Devadatta.",
+   "The",
+   "wicked",
+   "wife",
+   "was",
+   "And",
+   "King",
+   "Dukamma",
+   "was",
+   "the",
+   "Tathagata."
+  ]
+ }
+]

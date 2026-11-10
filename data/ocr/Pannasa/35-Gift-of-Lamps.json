@@ -1,0 +1,595 @@
+[
+ {
+  "img": "images/35-Gift-of-Lamps-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Padipadanajataka",
+   "(35):",
+   "The",
+   "Gift",
+   "Lamps",
+   "Lanna",
+   "Jataka",
+   "revealing",
+   "the",
+   "ancient",
+   "origins",
+   "the",
+   "Buddha’s",
+   "path",
+   "enlightenment",
+   "taka",
+   "anaja",
+   "dipad"
+  ]
+ },
+ {
+  "img": "images/35-Gift-of-Lamps-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     114,
+     135
+    ],
+    "bbox": [
+     281,
+     423,
+     1124,
+     969
+    ],
+    "shape": "box",
+    "en": "The Monks’ onk Question on At Jetavana, monks onks asked Gotama Buddha When good people worship the three jewels by lighting lamps what will they become?” The Buddha recounted ibe past life",
+    "conf": 34
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/35-Gift-of-Lamps-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Elder’s",
+   "Aspiration.",
+   "100,020",
+   "asankhyeyya",
+   "aeons",
+   "ING",
+   "ago,",
+   "the",
+   "Elder",
+   "Tipitakadhara",
+   "lit",
+   "countless",
+   "lamps",
+   "for",
+   "the",
+   "Former",
+   "Dipankara",
+   "Buddha,",
+   "resolving",
+   "attain",
+   "Buddhahood",
+   "himself."
+  ]
+ },
+ {
+  "img": "images/35-Gift-of-Lamps-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     326,
+     358
+    ],
+    "bbox": [
+     655,
+     1018,
+     1987,
+     1438
+    ],
+    "shape": "bubble",
+    "en": "The First Prophecy Seeing his devotion, Former Dipankara prophesied: After 100,016 asankhyeyya aeons, this monk will be born as the Lord of the Universe. He will become Buddha named Dipankara.”",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/35-Gift-of-Lamps-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "als",
+   "The",
+   "Golden",
+   "Vessel.",
+   "Seeking",
+   "more",
+   "oil,",
+   "the",
+   "Elder",
+   "entered",
+   "royal",
+   "courtyard.",
+   "princess,",
+   "cousin",
+   "the",
+   "Buddha,",
+   "joyfully",
+   "offered",
+   "golden",
+   "sesame",
+   "oil",
+   "golden",
+   "lin",
+   "ing"
+  ]
+ },
+ {
+  "img": "images/35-Gift-of-Lamps-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "FE,",
+   "The",
+   "Bodhisatta’s",
+   "Resolve",
+   "Placing",
+   "the",
+   "vessel",
+   "her",
+   "head,",
+   "she",
+   "resolved:",
+   "“Just",
+   "cousin",
+   "Buddha,",
+   "too",
+   "shall",
+   "become",
+   "Buddha.",
+   "Let",
+   "name",
+   "Siddhattha.”"
+  ]
+ },
+ {
+  "img": "images/35-Gift-of-Lamps-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Proxy",
+   "Offering.",
+   "The",
+   "Elder",
+   "performed",
+   "the",
+   "lamp-worship",
+   "her",
+   "behalf,",
+   "conveying",
+   "her",
+   "earnest",
+   "desire",
+   "for",
+   "Buddhahood",
+   "the",
+   "Former",
+   "Dipankara.",
+   "of:",
+   "(OR"
+  ]
+ },
+ {
+  "img": "images/35-Gift-of-Lamps-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     340,
+     278
+    ],
+    "bbox": [
+     377,
+     916,
+     2265,
+     1180
+    ],
+    "shape": "bubble",
+    "en": "The imitation. Limitation. The Former Dipankara replied that he could not make prophecy for the princess at present. She was female and lacked the complete eight factors for Buddhahood.",
+    "conf": 61
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/35-Gift-of-Lamps-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     149,
+     163
+    ],
+    "bbox": [
+     473,
+     536,
+     1167,
+     625
+    ],
+    "shape": "bubble",
+    "en": "1. Human Birth (Both)",
+    "conf": 89
+   },
+   {
+    "seed": [
+     148,
+     198
+    ],
+    "bbox": [
+     489,
+     631,
+     1167,
+     724
+    ],
+    "shape": "bubble",
+    "en": "2. Wholesome Roots (Both)",
+    "conf": 96
+   },
+   {
+    "seed": [
+     157,
+     224
+    ],
+    "bbox": [
+     489,
+     731,
+     1167,
+     823
+    ],
+    "shape": "bubble",
+    "en": "3. Buddha's Sight (Both)",
+    "conf": 83
+   },
+   {
+    "seed": [
+     148,
+     257
+    ],
+    "bbox": [
+     489,
+     830,
+     1164,
+     919
+    ],
+    "shape": "bubble",
+    "en": "4. Virtues (Both)",
+    "conf": 96
+   },
+   {
+    "seed": [
+     148,
+     288
+    ],
+    "bbox": [
+     489,
+     922,
+     1167,
+     1018
+    ],
+    "shape": "bubble",
+    "en": "5. Aspiration (Both)",
+    "conf": 96
+   },
+   {
+    "seed": [
+     174,
+     341
+    ],
+    "bbox": [
+     486,
+     1124,
+     1167,
+     1217
+    ],
+    "shape": "bubble",
+    "en": "7. Male Gender (Elder only)",
+    "conf": 92
+   },
+   {
+    "seed": [
+     200,
+     311
+    ],
+    "bbox": [
+     489,
+     1025,
+     1167,
+     1118
+    ],
+    "shape": "bubble",
+    "en": "6. Will-power (Both)",
+    "conf": 91
+   },
+   {
+    "seed": [
+     152,
+     372
+    ],
+    "bbox": [
+     489,
+     1223,
+     1167,
+     1306
+    ],
+    "shape": "box",
+    "en": "8. Renu ion (Elder only)",
+    "conf": 94
+   }
+  ],
+  "loose": [
+   "Prerequisites",
+   "for",
+   "Prophecy",
+   "The",
+   "Elder",
+   "The"
+  ]
+ },
+ {
+  "img": "images/35-Gift-of-Lamps-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     312,
+     357
+    ],
+    "bbox": [
+     479,
+     1164,
+     2162,
+     1326
+    ],
+    "shape": "box",
+    "en": "The Cosmic Vision. Unable to grant the prophecy directly, the Buddha projected his knowledge into her distant future births, seeing she would uld eventually fulfill all conditions.",
+    "conf": 74
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/35-Gift-of-Lamps-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Path",
+   "Through",
+   "Samsara",
+   "Through",
+   "her",
+   "gift’s",
+   "merit",
+   "she",
+   "would",
+   "abandon",
+   "her",
+   "female",
+   "existence,",
+   "reborn",
+   "golden",
+   "male",
+   "god",
+   "Tusita",
+   "heaven,",
+   "and",
+   "traverse",
+   "existence",
+   "for",
+   "100,016",
+   "asankhyeyya",
+   "aeons",
+   "khyeyya",
+   ",016",
+   "tence,",
+   "tence"
+  ]
+ },
+ {
+  "img": "images/35-Gift-of-Lamps-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Final",
+   "Rebi",
+   "Conceived",
+   "Queen",
+   "Sumedha",
+   "living",
+   "10,000",
+   "years",
+   "before",
+   "witnessing",
+   "the",
+   "four",
+   "sights.",
+   "She",
+   "would",
+   "undertake",
+   "the",
+   "Great",
+   "Renunciation",
+   "and",
+   "experience",
+   "Perfect",
+   "Enlightenment."
+  ]
+ },
+ {
+  "img": "images/35-Gift-of-Lamps-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Merit",
+   "Light",
+   "Fruits",
+   "lamp-worship:",
+   "Wisdom",
+   "and",
+   "Insight",
+   "(Fearlessness)",
+   "Status",
+   "and",
+   "Glory",
+   "(Praise)",
+   "Wealth",
+   "and",
+   "Health",
+   "(Freedom",
+   "from",
+   "disease)",
+   "Paths",
+   "and",
+   "Fruits",
+   "(Attainment",
+   "Nibbana)",
+   "ALS",
+   "CAF",
+   "LIS"
+  ]
+ },
+ {
+  "img": "images/35-Gift-of-Lamps-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Great",
+   "Reveal",
+   "The",
+   "Teacher",
+   "concluded:",
+   "“The",
+   "Elder",
+   "Tipitakadhara",
+   "was",
+   "the",
+   "Latter",
+   "Dipankara",
+   "That",
+   "princess,",
+   "the",
+   "donor",
+   "sesame",
+   "oil,",
+   "the",
+   "Enlightened",
+   "One,",
+   "the",
+   "present",
+   "Lord",
+   "the",
+   "Universe"
+  ]
+ },
+ {
+  "img": "images/35-Gift-of-Lamps-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Three-Fold",
+   "Happiness.",
+   "“All",
+   "you",
+   "who",
+   "desire",
+   "the",
+   "three-fold",
+   "happiness,",
+   "remember",
+   "this",
+   "Jataka",
+   "with",
+   "your",
+   "heart",
+   "full",
+   "respect.”",
+   "Thus",
+   "ends",
+   "the",
+   "Birth",
+   "Story",
+   "the",
+   "Gift",
+   "Lamps."
+  ]
+ }
+]

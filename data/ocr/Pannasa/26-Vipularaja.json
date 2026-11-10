@@ -1,0 +1,512 @@
+[
+ {
+  "img": "images/26-Vipularaja-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     117,
+     300
+    ],
+    "bbox": [
+     215,
+     982,
+     1167,
+     1256
+    ],
+    "shape": "box",
+    "en": "From the Perfumed Chamber, the Tathagata heard his monks marveling at his endless giving. He revealed his mastery of the Perfection of Charity began long ago, when he gave away far more than mere wealth to attain Buddhahood.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "(OES"
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     90,
+     91
+    ],
+    "bbox": [
+     215,
+     225,
+     1108,
+     496
+    ],
+    "shape": "box",
+    "en": "In Sudhammavati, ily King Vipula established six Halls of Charity. Dispensing pensing 600,000 ,000 coins daily, he showered citizens with external gifts—wealth, food, and clothing—like great rain cloud satisfying the earth.",
+    "conf": 57
+   },
+   {
+    "seed": [
+     478,
+     198
+    ],
+    "bbox": [
+     1432,
+     641,
+     1852,
+     760
+    ],
+    "shape": "bubble",
+    "en": "600, 000 daily Coin",
+    "conf": 42
+   }
+  ],
+  "loose": [
+   "coins",
+   "600",
+   "Co,",
+   "Ney"
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     208,
+     180
+    ],
+    "bbox": [
+     307,
+     122,
+     1213,
+     744
+    ],
+    "shape": "bubble",
+    "en": "Path",
+    "conf": 94
+   },
+   {
+    "seed": [
+     566,
+     180
+    ],
+    "bbox": [
+     1432,
+     122,
+     2235,
+     747
+    ],
+    "shape": "bubble",
+    "en": "Path",
+    "conf": 93
+   },
+   {
+    "seed": [
+     285,
+     345
+    ],
+    "bbox": [
+     800,
+     1127,
+     1842,
+     1372
+    ],
+    "shape": "box",
+    "en": "Looking out his golden window, the king felt unfulfilled give only external 3 gifts. gs Should Sos someone ask for my head, my eyes, or my flesh, would give it. would even give myself as slave.",
+    "conf": 41
+   },
+   {
+    "seed": [
+     157,
+     374
+    ],
+    "bbox": [
+     298,
+     1203,
+     674,
+     1316
+    ],
+    "shape": "bubble",
+    "en": "20na na GA EXTERNAL GIFTS",
+    "conf": 50
+   },
+   {
+    "seed": [
+     629,
+     364
+    ],
+    "bbox": [
+     1967,
+     1203,
+     2344,
+     1316
+    ],
+    "shape": "bubble",
+    "en": "(ads 3 Ga INTERNAL RNAL GIFTS",
+    "conf": 51
+   }
+  ],
+  "loose": [
+   "C10)"
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     62,
+     343
+    ],
+    "bbox": [
+     142,
+     1134,
+     1048,
+     1346
+    ],
+    "shape": "box",
+    "en": "The majesty of his resolve to give internal charity shattered mundane equilibrium. The great earth shook. The ocean agitated. Mount Sineru bent like wet reed. In the heavens, Sakka’s throne grew hot.",
+    "conf": 70
+   }
+  ],
+  "loose": [
+   "“We"
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     483,
+     66
+    ],
+    "bbox": [
+     1309,
+     208,
+     2437,
+     473
+    ],
+    "shape": "box",
+    "en": "Realizing izing King Vipula was true Buddha-sprout bound for omniscience, isclence Sakka descended from the divine realm. Taking ing the guise ise of young Brahman, he approached the king to test his ultimate imate resolve.",
+    "conf": 66
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/26-Vipularaja-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     283,
+     377
+    ],
+    "bbox": [
+     770,
+     1217,
+     1875,
+     1422
+    ],
+    "shape": "box",
+    "en": "The Brahman ie asked for one Queen Canda. Fearless, Vipula poured the water of dedication. The queen, roaring lion’s roar, declared, am thy slave; give me to whomever you want.” The earth shook in witness.",
+    "conf": 37
+   }
+  ],
+  "loose": [
+   "SOD",
+   "Wis"
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     505,
+     357
+    ],
+    "bbox": [
+     1498,
+     1174,
+     2463,
+     1395
+    ],
+    "shape": "box",
+    "en": "Disguised as another Brahman, Sakka returned for Prince Vijala. Kissing his son’s head, the king gave him away for enlightenment. horrendous, hair-raising tumult arose as the city celebrated the impossible sacrifice.",
+    "conf": 87
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/26-Vipularaja-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     323,
+     51
+    ],
+    "bbox": [
+     817,
+     142,
+     1825,
+     360
+    ],
+    "shape": "box",
+    "en": "Appearing as frail, old Brahman, Sakka asked for the kingdom itself. Vipula surrendered his royal fortune, aspiring only to omniscience so he might lead all beings across the ocean of sariisdra to Nibbana.",
+    "conf": 57
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/26-Vipularaja-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     240,
+     58
+    ],
+    "bbox": [
+     747,
+     139,
+     1914,
+     251
+    ],
+    "shape": "box",
+    "en": "The Anatomy of Ultimate Charit",
+    "conf": 92
+   },
+   {
+    "seed": [
+     555,
+     226
+    ],
+    "bbox": [
+     1719,
+     717,
+     1974,
+     817
+    ],
+    "shape": "box",
+    "en": "Ter",
+    "conf": 96
+   },
+   {
+    "seed": [
+     549,
+     313
+    ],
+    "bbox": [
+     1719,
+     1035,
+     1974,
+     1134
+    ],
+    "shape": "box",
+    "en": "kka",
+    "conf": 91
+   },
+   {
+    "seed": [
+     174,
+     413
+    ],
+    "bbox": [
+     529,
+     1286,
+     2113,
+     1442
+    ],
+    "shape": "box",
+    "en": "Each escalating request peeled away layer of worldly attachment, matched by escalating cosmological tremors as Vipula proved his Dana Parami.",
+    "conf": 49
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/26-Vipularaja-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     90,
+     318
+    ],
+    "bbox": [
+     179,
+     1045,
+     896,
+     1336
+    ],
+    "shape": "box",
+    "en": "Sakka revealed his true, radiant form. Returning the queen, the prince, and the kingdom, Sakka declared that Vipula had conquered all adversaries and guaranteed his future Buddhahood.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/26-Vipularaja-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     495,
+     178
+    ],
+    "bbox": [
+     1577,
+     589,
+     1894,
+     661
+    ],
+    "shape": "bubble",
+    "en": "anok ata prevents low rebir'",
+    "conf": 55
+   },
+   {
+    "seed": [
+     265,
+     383
+    ],
+    "bbox": [
+     631,
+     1256,
+     2014,
+     1458
+    ],
+    "shape": "box",
+    "en": "shower of seven jewels fell upon the Charity Hall. Sakka praised this is absolute charity as the noble vehicle. Such giving prevents rebirth in lower destinies and ensures the ultimate fruit.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/26-Vipularaja-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     322,
+     41
+    ],
+    "bbox": [
+     873,
+     119,
+     1769,
+     235
+    ],
+    "shape": "box",
+    "en": "The Karmic Rebirth Map",
+    "conf": 96
+   },
+   {
+    "seed": [
+     227,
+     403
+    ],
+    "bbox": [
+     595,
+     1283,
+     2047,
+     1395
+    ],
+    "shape": "box",
+    "en": "Phe The ties of ultimate sacrifice forged in Sudhammavati echoed across lifetimes, culminating in the Tathagata’s final awakening at Jetavana.",
+    "conf": 38
+   }
+  ],
+  "loose": [
+   "chong",
+   "uddha",
+   "(Prince",
+   "Sakka",
+   "Queen",
+   "Canda",
+   "Rahula"
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     163,
+     349
+    ],
+    "bbox": [
+     261,
+     1151,
+     2380,
+     1303
+    ],
+    "shape": "box",
+    "en": "“Desirous of merits and taking delight in giving, that King Vipula is now myself, the Tathagata, the Lord of the Universe.” Thus the Jataka was concluded, holding the perfect cycle of charity in faith.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ }
+]

@@ -1,0 +1,404 @@
+[
+ {
+  "img": "images/08-Dhammikapandita-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Tale",
+   "King",
+   "Dhammikapandita",
+   "The",
+   "Eighth",
+   "Pannasa",
+   "Jataka",
+   "Merit,",
+   "Wealth,",
+   "and",
+   "the",
+   "Heaven",
+   "NOY",
+   "kapand",
+   "Ascent",
+   "hth",
+   "ita"
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     211,
+     375
+    ],
+    "bbox": [
+     631,
+     1154,
+     2007,
+     1455
+    ],
+    "shape": "box",
+    "en": "Th Meghavati, wealthy householder erected pavilion, giving seven-day gift of the eight requisites to the Order. The Teacher praised him, noting that wise men of old gave similar gifts",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Dhammikapandita-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     209,
+     379
+    ],
+    "bbox": [
+     645,
+     1167,
+     2000,
+     1451
+    ],
+    "shape": "box",
+    "en": "Mcp The Buddha recounted the past. King Dhammikapandita reigned in Baranasi with rightness. With his chief consort, Sudhamma, he erected great pavilion to offer an immense seven-day gift to the populace.",
+    "conf": 44
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Dhammikapandita-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     226,
+     360
+    ],
+    "bbox": [
+     546,
+     1187,
+     2096,
+     1442
+    ],
+    "shape": "box",
+    "en": "The King’s King’s immense generosity caused the great earth to tremble. The ocean bounded upwards, Mount Sineru bent like moistened bamboo shoot, and unseasonable lightning burst forth. In the heavens, Sakka’s seat grew hot.",
+    "conf": 89
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Dhammikapandita-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Recognizing",
+   "future",
+   "Buddha,",
+   "Sakka",
+   "created",
+   "chariot-mansion",
+   "with",
+   "seven",
+   "kinds",
+   "jewels.",
+   "descended",
+   "from",
+   "the",
+   "deva-world,",
+   "standing",
+   "before",
+   "King",
+   "Dhammikapandita",
+   "invite",
+   "him",
+   "heaven.",
+   "adorned",
+   "FEZ"
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "mounted",
+   "the",
+   "sky-chariot.",
+   "Arriving",
+   "the",
+   "deva-world,",
+   "marveled",
+   "countless",
+   "golden",
+   "mansions",
+   "ornamented",
+   "with",
+   "jewels,",
+   "asking",
+   "Sakka",
+   "what",
+   "deeds",
+   "merit",
+   "the",
+   "devas",
+   "obtained",
+   "such",
+   "splendor.",
+   "Bodhisatta",
+   "Bodhisatta",
+   "world,"
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Architecture",
+   "Sakka",
+   "explained",
+   "how",
+   "earthly",
+   "generosity",
+   "physically",
+   "manifests",
+   "divine",
+   "architecture.",
+   "EARTHLY",
+   "DIVINE",
+   "GLORIOUS",
+   "MANSION",
+   "GIFTS",
+   "REWARDS",
+   "JEWEL-MANSION",
+   "Bridge",
+   "Hall",
+   "Glorious",
+   "Mansion",
+   "Lamp",
+   "Jewel-Mansion",
+   "EARTHLY",
+   "MANSION",
+   "30)"
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sakka",
+   "invited",
+   "the",
+   "Bodhisatta",
+   "dwell",
+   "permanently",
+   "gifted",
+   "mansion.",
+   "However,",
+   "the",
+   "Bodhisatta",
+   "realized",
+   "this",
+   "chariot",
+   "and",
+   "wealth",
+   "were",
+   "merely",
+   "borrowed",
+   "things,",
+   "handed",
+   "over",
+   "another.",
+   "politely",
+   "refused",
+   "the",
+   "unearned",
+   "reward."
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "THE",
+   "SPECIAL",
+   "gifted.",
+   "The",
+   "Bodhisatta",
+   "chose",
+   "Special",
+   "Wealth—merit",
+   "created",
+   "his",
+   "own",
+   "actions.",
+   "chose",
+   "return",
+   "men",
+   "practice",
+   "giving,",
+   "morality,",
+   "and",
+   "meditation",
+   "merit",
+   "cannot",
+   "WEALTH",
+   "BORROWED",
+   "not",
+   "The",
+   "his"
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Returned",
+   "Baranasi,",
+   "the",
+   "Great",
+   "Being",
+   "described",
+   "the",
+   "deva-world’s",
+   "splendors—palaces,",
+   "wish-fulfilling",
+   "trees,",
+   "and",
+   "celestial",
+   "music.",
+   "Inspired,",
+   "the",
+   "populace",
+   "devoted",
+   "their",
+   "lives",
+   "merit,",
+   "securing",
+   "their",
+   "own",
+   "heavenly",
+   "rebirths.",
+   "remaining",
+   "Baranasi,"
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Wheel",
+   "the",
+   "Four",
+   "Truths",
+   "The",
+   "Buddha",
+   "concluded",
+   "the",
+   "ultimate",
+   "Dhamma:",
+   "Anguish",
+   "Arisin",
+   "stages",
+   "being)",
+   "(Craving)",
+   "Cessation",
+   "The",
+   "Way",
+   "(Nibbana)",
+   "(Ariyan",
+   "Eightf",
+   "Eightfold)"
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Past",
+   "The",
+   "Jataka",
+   "Rebirth",
+   "Map",
+   "The",
+   "identities",
+   "the",
+   "past",
+   "were",
+   "revealed:",
+   "Sakka",
+   "now",
+   "Anuruddha",
+   "Sudhamma",
+   "now",
+   "Yasodhara",
+   "King",
+   "Dhammikapandita",
+   "the",
+   "Tathagata,",
+   "the",
+   "fully",
+   "Self-Awakened",
+   "One."
+  ]
+ }
+]

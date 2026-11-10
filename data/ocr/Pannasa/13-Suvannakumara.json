@@ -1,0 +1,410 @@
+[
+ {
+  "img": "images/13-Suvannakumara-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Way",
+   "Suvannakumara",
+   "Jataka",
+   "Wisdom",
+   "Golden",
+   "Prin"
+  ]
+ },
+ {
+  "img": "images/13-Suvannakumara-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     229,
+     379
+    ],
+    "bbox": [
+     628,
+     1237,
+     2014,
+     1451
+    ],
+    "shape": "box",
+    "en": "The Omniscient ient Buddha, residing at Jetavana, heard his monks praising his unmatched ability to answer questions and dispel doubt. To illustrate that his vast wisdom spanned across samsara, he began recounting story from his past.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Suvannakumara-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     195,
+     380
+    ],
+    "bbox": [
+     628,
+     1237,
+     2014,
+     1451
+    ],
+    "shape": "box",
+    "en": "In ancient Baranasi, King Brahmadatta impregnated concubine. Enraged, the malignant Chief Queen demanded action. Deeply ashamed but bowing to pressure, the King lied and secretly ordered an executioner to take the pregnant woman outside the city to be killed.",
+    "conf": 72
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Suvannakumara-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     261,
+     381
+    ],
+    "bbox": [
+     691,
+     1260,
+     1951,
+     1442
+    ],
+    "shape": "box",
+    "en": "devaputta inhabiting the royal white parasol intervened, altering the executioner’s mind. Hidden safely in his captor’s home, the concubine gave birth to golden-colored son named Suvannakuméara. By age seven, the boy radiated immense beauty and intellect.",
+    "conf": 55
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Suvannakumara-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     86,
+     342
+    ],
+    "bbox": [
+     142,
+     1098,
+     1088,
+     1336
+    ],
+    "shape": "box",
+    "en": "The devaputta appeared in the sky, presenting nting eri question. Jf the King failed to answer, celestial iron mace would split his head into exactly seven pieces. The terrified King could not comprehend single riddle.",
+    "conf": 32
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Suvannakumara-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     599,
+     69
+    ],
+    "bbox": [
+     1805,
+     188,
+     2476,
+     417
+    ],
+    "shape": "bubble",
+    "en": "Endowed with wisdom due to three root-conditions, Suvannakumara volunteered to save the realm. The city was decorated like deva-world. Seated upon grand and couch beneath the royal parasol, the young Great Being prepared to expound the Dhamma.",
+    "conf": 82
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Suvannakumara-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     105,
+     342
+    ],
+    "bbox": [
+     185,
+     1101,
+     1088,
+     1332
+    ],
+    "shape": "box",
+    "en": "Through supreme wisdom, the Bodhisatta illuminated the devaputta's riddle, establishing the absolute foundations of Dhamma. With each perfect answer, celestial gems showered from the heavens, and the King paid tremendous homage",
+    "conf": 51
+   }
+  ],
+  "loose": [
+   "Three",
+   "Refuges",
+   "Disciples",
+   "One",
+   "Omnis",
+   "Buddha",
+   "Chief",
+   "ples",
+   "ent"
+  ]
+ },
+ {
+  "img": "images/13-Suvannakumara-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     83,
+     345
+    ],
+    "bbox": [
+     172,
+     1101,
+     1094,
+     1332
+    ],
+    "shape": "box",
+    "en": "The teachings elevated into realms of moral purification and sensuous cosmology. In awe, King Brahmadatta continually rewarded the boy, offering hundreds of slaves, cattle, and -dancing-women to honor the majestic unfolding of the Dhamma.",
+    "conf": 44
+   }
+  ],
+  "loose": [
+   "Six",
+   "Sensuous",
+   "Fivefold",
+   "Moral",
+   "Habit",
+   "Fou",
+   "rfold",
+   "Moral",
+   "Habit",
+   "Moral"
+  ]
+ },
+ {
+  "img": "images/13-Suvannakumara-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     123,
+     205
+    ],
+    "bbox": [
+     225,
+     645,
+     1035,
+     922
+    ],
+    "shape": "box",
+    "en": "Reaching the zenith of realization, the Bodhisatta perfectly outlined the path to Nibbana. The devaputta scattered celestial flowers, declaring the golden boy's wisdom to be entirely unique, an absolute protection for the world",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "10.",
+   "Ten-fold",
+   "Moral",
+   "Habits",
+   "Ninefold",
+   "Supermundane",
+   "States",
+   "Way",
+   "Seven",
+   "Factors",
+   "Eightfold"
+  ]
+ },
+ {
+  "img": "images/13-Suvannakumara-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     309,
+     371
+    ],
+    "bbox": [
+     717,
+     1154,
+     1931,
+     1445
+    ],
+    "shape": "box",
+    "en": "eer The devaputta revealed the truth: “Great King, this boy is your true son, Suvannakumara.” Overjoyed, the executioner confessed his righteous deception. The King immediately consecrated the Bodhisatta with kingship and elevated his mother to chief consort.",
+    "conf": 32
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Suvannakumara-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Spiritual",
+   "Mastery",
+   "Secular",
+   "Governance",
+   "Having",
+   "demonstrated",
+   "perfect",
+   "spiritual",
+   "mastery",
+   "save",
+   "the",
+   "realm,",
+   "the",
+   "newly",
+   "crowned",
+   "King",
+   "Suvannakumara",
+   "immediately",
+   "expounded",
+   "the",
+   "secular",
+   "framework",
+   "necessary",
+   "govern",
+   "it:",
+   "the",
+   "Ten-Fold",
+   "Duties",
+   "ruler.",
+   "righteous"
+  ]
+ },
+ {
+  "img": "images/13-Suvannakumara-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     320,
+     155
+    ],
+    "bbox": [
+     962,
+     486,
+     1683,
+     836
+    ],
+    "shape": "box",
+    "en": "Standing firm in Dhamma, King Suvannakumara cultivated profound loving-kindness. He exhorted his populace to generate merit through giving and morality, ensuring that upon death, the entire kingdom was reborn together into glorious deva-worlds.",
+    "conf": 64
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Suvannakumara-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Concluding",
+   "the",
+   "teaching,",
+   "the",
+   "Buddha",
+   "identified",
+   "the",
+   "souls",
+   "traversing",
+   "samsara.",
+   "The",
+   "malignant",
+   "queen",
+   "was",
+   "reborn",
+   "the",
+   "deceitful",
+   "while",
+   "the",
+   "golden",
+   "child",
+   "possessing",
+   "swift,",
+   "acute,",
+   "and",
+   "great",
+   "wisdom",
+   "was",
+   "the",
+   "Tathagata",
+   "himself.",
+   "Executioner",
+   "Ananda",
+   "Mother",
+   "Mahamaya",
+   "King",
+   "Brahmadatta",
+   "Malignant",
+   "Queen",
+   "Brahman",
+   "girl",
+   "Suvannakumara",
+   "The",
+   "(Buddha)",
+   "Suddhodana",
+   "Tathagata"
+  ]
+ }
+]

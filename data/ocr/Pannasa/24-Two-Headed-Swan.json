@@ -1,0 +1,485 @@
+[
+ {
+  "img": "images/24-Two-Headed-Swan-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Jataka",
+   "Lanna.",
+   "Headed",
+   "nnasa",
+   "Two-Headed"
+  ]
+ },
+ {
+  "img": "images/24-Two-Headed-Swan-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Savatthi,",
+   "two",
+   "men",
+   "lived",
+   "utterly",
+   "inseparable.",
+   "The",
+   "marveled",
+   "this",
+   "extreme",
+   "attachment.",
+   "The",
+   "Buddha",
+   "explained:",
+   "their",
+   "bond",
+   "spanned",
+   "lifetimes,",
+   "forged",
+   "past",
+   "merits.",
+   "WA,",
+   "monks"
+  ]
+ },
+ {
+  "img": "images/24-Two-Headed-Swan-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "During",
+   "Buddha",
+   "couple",
+   "made",
+   "Husband's",
+   "vow:",
+   "“Always",
+   "reborn",
+   "vow:",
+   "“Be",
+   "reborn",
+   "male;",
+   "animals,",
+   "share",
+   "one",
+   "body,",
+   "two",
+   "heads,",
+   "united",
+   "era,",
+   "ring",
+   "era,"
+  ]
+ },
+ {
+  "img": "images/24-Two-Headed-Swan-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Bound",
+   "kamma,",
+   "their",
+   "resolves",
+   "ripened.",
+   "Through",
+   "successive",
+   "brothers,",
+   "they",
+   "were",
+   "ultimately",
+   "reborn",
+   "Mount",
+   "Himavanta",
+   "radiant",
+   "golden",
+   "swan",
+   "with",
+   "one",
+   "body",
+   "and",
+   "two",
+   "heads.",
+   "26)",
+   "lives",
+   "their"
+  ]
+ },
+ {
+  "img": "images/24-Two-Headed-Swan-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "captured",
+   "the",
+   "marvel,",
+   "presenting",
+   "King",
+   "Bar",
+   "Queen",
+   "Sudhamm",
+   "neyed",
+   "grain.",
+   "golden",
+   "cage,",
+   "feeding",
+   "itho",
+   "Dhammika",
+   "kept",
+   "captivated",
+   "dweller",
+   "forest",
+   "Aforest-dweller",
+   "eller",
+   "Dhammika",
+   "ted,"
+  ]
+ },
+ {
+  "img": "images/24-Two-Headed-Swan-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     115,
+     73
+    ],
+    "bbox": [
+     248,
+     152,
+     989,
+     569
+    ],
+    "shape": "bubble",
+    "en": "Queen Sudhamma proposed division: keep one swan inside, display the other outside. King Dhammika challenged his ministers to sever the inseparable. Aclever clever minister accepted.",
+    "conf": 62
+   }
+  ],
+  "loose": [
+   "nner",
+   "Chamber",
+   "Outer"
+  ]
+ },
+ {
+  "img": "images/24-Two-Headed-Swan-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "minister",
+   "employed",
+   "psychological",
+   "division.",
+   "whispered",
+   "nothing",
+   "ear,",
+   "laugh",
+   "ed,",
+   "and",
+   "walked",
+   "away.",
+   "Suspicion",
+   "was",
+   "planted.",
+   "into",
+   "The"
+  ]
+ },
+ {
+  "img": "images/24-Two-Headed-Swan-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Head",
+   "\"What",
+   "did",
+   "whisper?”",
+   "Head",
+   "\"He",
+   "said",
+   "nothing.”",
+   "saw",
+   "him!",
+   "You",
+   "despise",
+   "me.",
+   "Vig",
+   "KIM",
+   "friendship",
+   "lie",
+   "ara",
+   "noia",
+   "Trust",
+   "dis",
+   "into",
+   "ing.",
+   "Head",
+   "ise",
+   "WO)",
+   "paranoia."
+  ]
+ },
+ {
+  "img": "images/24-Two-Headed-Swan-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Blinded",
+   "rage,",
+   "the",
+   "heads",
+   "reviled",
+   "Flapping",
+   "their",
+   "wings",
+   "with",
+   "violent",
+   "fury,",
+   "they",
+   "tore",
+   "their",
+   "shared",
+   "body",
+   "apart.",
+   "Anger",
+   "severed",
+   "what",
+   "nature",
+   "had",
+   "unified.",
+   "fou",
+   "each"
+  ]
+ },
+ {
+  "img": "images/24-Two-Headed-Swan-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     208,
+     146
+    ],
+    "bbox": [
+     417,
+     443,
+     1303,
+     734
+    ],
+    "shape": "bubble",
+    "en": "Unified: Mutual love shared existence",
+    "conf": 96
+   },
+   {
+    "seed": [
+     456,
+     147
+    ],
+    "bbox": [
+     1339,
+     443,
+     2225,
+     731
+    ],
+    "shape": "bubble",
+    "en": "Divided: Suspicion individual kamma",
+    "conf": 66
+   },
+   {
+    "seed": [
+     159,
+     277
+    ],
+    "bbox": [
+     413,
+     767,
+     1303,
+     1144
+    ],
+    "shape": "box",
+    "en": "Waa Ny Outcome Ly, Peace",
+    "conf": 39
+   },
+   {
+    "seed": [
+     440,
+     257
+    ],
+    "bbox": [
+     1339,
+     767,
+     2228,
+     1144
+    ],
+    "shape": "box",
+    "en": "li ‘Outcome: Outcome: Enmity, IMP the cit 3 lf separation ae",
+    "conf": 35
+   }
+  ],
+  "loose": [
+   "The",
+   "Unified",
+   "Swan",
+   "Divided",
+   "Swans",
+   "The",
+   "ownership",
+   "shatters",
+   "under",
+   "the",
+   "weight",
+   "anger."
+  ]
+ },
+ {
+  "img": "images/24-Two-Headed-Swan-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "King",
+   "Dhammika",
+   "realized:",
+   "Anger",
+   "distorts",
+   "truth.",
+   "Beings",
+   "ignore",
+   "their",
+   "own",
+   "massive",
+   "flaws—huge",
+   "Mount",
+   "Sineru—while",
+   "magnifying",
+   "the",
+   "faults",
+   "others,",
+   "though",
+   "small",
+   "mustard",
+   "seed."
+  ]
+ },
+ {
+  "img": "images/24-Two-Headed-Swan-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Unconsidered",
+   "acts",
+   "yield",
+   "misery,",
+   "like",
+   "the",
+   "divided",
+   "swan",
+   "But",
+   "good",
+   "seeds",
+   "sown",
+   "fertile",
+   "fields",
+   "yield",
+   "happiness.",
+   "Beings",
+   "inherit",
+   "nothing",
+   "but",
+   "their",
+   "own",
+   "kamma.",
+   "iness.",
+   "her"
+  ]
+ },
+ {
+  "img": "images/24-Two-Headed-Swan-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     355,
+     388
+    ],
+    "bbox": [
+     820,
+     1217,
+     1795,
+     1389
+    ],
+    "shape": "bubble",
+    "en": "Remember this Jataka Jatak thee thus.",
+    "conf": 39
+   }
+  ],
+  "loose": [
+   "Sariputta",
+   "The",
+   "Clever",
+   "Minister",
+   "Ananda",
+   "Kaludayi",
+   "Swans",
+   "Yasodhara",
+   "The",
+   "Buddha",
+   "The",
+   "Golden",
+   "Queen",
+   "King",
+   "Re."
+  ]
+ }
+]

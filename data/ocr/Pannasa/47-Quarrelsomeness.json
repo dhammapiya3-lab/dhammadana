@@ -1,0 +1,399 @@
+[
+ {
+  "img": "images/47-Quarrelsomeness-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     291,
+     342
+    ],
+    "bbox": [
+     721,
+     1104,
+     1924,
+     1342
+    ],
+    "shape": "bubble",
+    "en": "Vivadajataka: The Tale of Quarrelsomeness ALanna Lanna Panifiasa Jataka moral fresco on hypocrisy, justice, and nd the consequences of the company we keep",
+    "conf": 58
+   }
+  ],
+  "loose": [
+   "fix"
+  ]
+ },
+ {
+  "img": "images/47-Quarrelsomeness-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     143,
+     102
+    ],
+    "bbox": [
+     109,
+     93,
+     1623,
+     658
+    ],
+    "shape": "bubble",
+    "en": "In the Jetavana monastery, monks engaged in bitter disputes. Hearing their quarrels with his Heavenly Ear, the Buddha emerged from his Perfumed Chamber, noting that such quarrelsomeness plagued beings in the past as well. He then recounted this ancient tale.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/47-Quarrelsomeness-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     291,
+     355
+    ],
+    "bbox": [
+     737,
+     1164,
+     1904,
+     1402
+    ],
+    "shape": "box",
+    "en": "Deep in the Himavanta forest stood magnificent, thousand-branched rose-apple tree housing four distinct bird clans in its cardinal branches. In neighboring mango tree lived vast flock led by the Bodhisatta, pes as wise sarika bird.",
+    "conf": 41
+   }
+  ],
+  "loose": [
+   "6@>",
+   "KAY",
+   "(a9"
+  ]
+ },
+ {
+  "img": "images/47-Quarrelsomeness-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     549,
+     359
+    ],
+    "bbox": [
+     708,
+     1091,
+     1937,
+     1415
+    ],
+    "shape": "bubble",
+    "en": "wandering crow settled atop the rose-apple tree. Ke ji When the local birds demanded he leave their lineage, he refused, Ue claiming he vo sought only ond to peacefully observe 72) uv 2 strict 2 moral precepts vu yu wn (sila) ila) among them. Trusting his vow, the parents left to forage.",
+    "conf": 45
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/47-Quarrelsomeness-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     294,
+     354
+    ],
+    "bbox": [
+     737,
+     1164,
+     1904,
+     1395
+    ],
+    "shape": "box",
+    "en": "The crow’s piety was deadly performance. The Pretense: Tying his beak with creeper, he vowed to observe silent meditation. The Reality: Once alone, he discarded the creeper and ruthlessly devo the def nseless chicks",
+    "conf": 87
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/47-Quarrelsomeness-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     228,
+     361
+    ],
+    "bbox": [
+     701,
+     1157,
+     1941,
+     1389
+    ],
+    "shape": "box",
+    "en": "Discovering vering their missing young, the grief-stricken birds grew suspicious. The wise ise parrot chief devised trap. He instructed his chicks to hide deep within an inner nest chamber, while the adults concealed themselves in the dense foliage to watch the crow. NE",
+    "conf": 53
+   }
+  ],
+  "loose": [
+   "SAN"
+  ]
+ },
+ {
+  "img": "images/47-Quarrelsomeness-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     276,
+     367
+    ],
+    "bbox": [
+     638,
+     1194,
+     2000,
+     1471
+    ],
+    "shape": "bubble",
+    "en": "Believing he was alone, the crow crept into the parrots’ nest. Instantly, ‘antly, the parents seized his throat and legs. The entire flock descended, pecking and tearing at him until he bled profusely, crying out ‘kaka’ in agony and terror.",
+    "conf": 38
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/47-Quarrelsomeness-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     256,
+     336
+    ],
+    "bbox": [
+     592,
+     1088,
+     2047,
+     1412
+    ],
+    "shape": "bubble",
+    "en": "The flock is) dragged 6p the wicked crow before the Bodhisatta. ns Confronted, 2 the crow confessed and vomited up his victims. The Bodhisatta decreed royal punishment of thousand stnike strikes for this cruel betrayal, leaving the crow battered and completely defeated.",
+    "conf": 45
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/47-Quarrelsomeness-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     104,
+     254
+    ],
+    "bbox": [
+     86,
+     317,
+     810,
+     1399
+    ],
+    "shape": "bubble",
+    "en": "SS [ard aly AX 1",
+    "conf": 36
+   }
+  ],
+  "loose": [
+   "Granting",
+   "the",
+   "crow",
+   "his",
+   "life,",
+   "the",
+   "Bodhisatta",
+   "banished",
+   "from",
+   "the",
+   "canopy",
+   "forever.",
+   "declared",
+   "that",
+   "henceforth,",
+   "the",
+   "crow’s",
+   "treacherous",
+   "lineage",
+   "would",
+   "only",
+   "permitted",
+   "consume",
+   "rotten-smelling",
+   "cadavers",
+   "the",
+   "cremation",
+   "grounds,",
+   "far",
+   "removed",
+   "from",
+   "righteous",
+   "society.",
+   "him"
+  ]
+ },
+ {
+  "img": "images/47-Quarrelsomeness-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     311,
+     195
+    ],
+    "bbox": [
+     777,
+     562,
+     1881,
+     922
+    ],
+    "shape": "bubble",
+    "en": "The Bodhisatta taught the law of association: The Contagion: Wrap rotten fish in kusa grass, and the blade reeks of decay. Such is fool’s company. The Fragrance: Carry tagara flower in leaf, and the Dla leaf becomes sweet. Such is the company of the wise.",
+    "conf": 44
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/47-Quarrelsomeness-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "wicked",
+   "from",
+   "shed.",
+   "sky",
+   "far",
+   "the",
+   "the",
+   "Bodhisatta",
+   "admoni",
+   "“One",
+   "who",
+   "betrays",
+   "friends",
+   "falls",
+   "like",
+   "broken",
+   "branch.",
+   "But",
+   "one",
+   "who",
+   "honors",
+   "friends",
+   "firm",
+   "like",
+   "deeply",
+   "rooted",
+   "nigrodha",
+   "tree,",
+   "unmoved",
+   "the",
+   "fiercest",
+   "earth,",
+   "and",
+   "good,”",
+   "ply",
+   "“The"
+  ]
+ },
+ {
+  "img": "images/47-Quarrelsomeness-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     281,
+     71
+    ],
+    "bbox": [
+     823,
+     132,
+     1822,
+     360
+    ],
+    "shape": "box",
+    "en": "Vis Concluding cluding fre he Jataka, the Buddha Bu ddha 4) revealed ed the karmic lineages:",
+    "conf": 40
+   }
+  ],
+  "loose": [
+   "angh",
+   "Sumangala",
+   "Parrot:",
+   "Ananda",
+   "Crow:",
+   "Devadatta",
+   "Sarika:",
+   "The",
+   "Buddha",
+   "Cankora:",
+   "Moggallana",
+   "“Hold",
+   "this",
+   "tale",
+   "with",
+   "great",
+   "respect",
+   "your",
+   "Janghara:"
+  ]
+ }
+]

@@ -1,0 +1,482 @@
+[
+ {
+  "img": "images/41-42-Sariputta-and-Others-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "the",
+   "Deathless",
+   "The",
+   "Transmission",
+   "the",
+   "Dhamma",
+   "Rajagaha",
+   "Deathless"
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sariputta",
+   "and",
+   "lived",
+   "the",
+   "spiritual",
+   "life",
+   "under",
+   "the",
+   "skeptic",
+   "Safijaya.",
+   "Dissatisfied,",
+   "they",
+   "made",
+   "pact:",
+   "Whoever",
+   "attains",
+   "the",
+   "Deathless",
+   "first,",
+   "should",
+   "inform",
+   "the",
+   "other",
+   "Moggallana"
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     673,
+     86
+    ],
+    "bbox": [
+     1951,
+     258,
+     2543,
+     460
+    ],
+    "shape": "box",
+    "en": "Pleasing in looking ahead and around",
+    "conf": 95
+   },
+   {
+    "seed": [
+     668,
+     200
+    ],
+    "bbox": [
+     1951,
+     631,
+     2543,
+     843
+    ],
+    "shape": "box",
+    "en": "Pleasing in bending and stretching",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "The",
+   "Mindfulness:",
+   "going",
+   "and",
+   "back",
+   "with",
+   "cast",
+   "eyes",
+   "iment",
+   "ing"
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sariputta",
+   "saw",
+   "clear",
+   "faculties",
+   "and",
+   "bright",
+   "skin",
+   "“On",
+   "account",
+   "whom",
+   "did",
+   "you",
+   "forth?",
+   "Who",
+   "your",
+   "teacher?",
+   "What",
+   "Dhamma",
+   "you",
+   "prefer?”",
+   "Assaji,",
+   "claiming",
+   "ordained,",
+   "only",
+   "the",
+   "brief",
+   "meaning.",
+   "offered",
+   "explain"
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Whatever",
+   "things",
+   "have",
+   "cause",
+   "and",
+   "source,",
+   "their",
+   "cause",
+   "the",
+   "Realised",
+   "One",
+   "has",
+   "told.",
+   "And",
+   "also",
+   "that",
+   "which",
+   "their",
+   "cessation",
+   "such",
+   "the",
+   "Great",
+   "Ascetic’s",
+   "doctrine."
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "dust-free,",
+   "stainless",
+   "Upon",
+   "hearing",
+   "this",
+   "brief",
+   "inst",
+   "Vision-of-the-Dhamma",
+   "arose",
+   "Sariputta:",
+   "“Whatever",
+   "has",
+   "the",
+   "nature",
+   "all",
+   "that",
+   "has",
+   "the",
+   "nature",
+   "ceasing.”",
+   "uctic",
+   "hearing",
+   "ver"
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Moggallana",
+   "saw",
+   "Sariputta",
+   "from",
+   "afar.",
+   "faculties",
+   "are",
+   "very",
+   "clear,",
+   "purified",
+   "your",
+   "skin",
+   "and",
+   "bright.",
+   "Have",
+   "you",
+   "attained",
+   "the",
+   "Deathless?”",
+   "friend,",
+   "have",
+   "attained",
+   "the",
+   "Deathless.”"
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     518,
+     13
+    ],
+    "bbox": [
+     1713,
+     30,
+     2261,
+     109
+    ],
+    "shape": "box",
+    "en": "THE NEW PATH|",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "OLD",
+   "PATH",
+   "ANN",
+   "Radical",
+   "skepticism.",
+   "The",
+   "Buddha:",
+   "The",
+   "Great",
+   "Ascetic.",
+   "Leads",
+   "clinging,",
+   "chaos,",
+   "Teaches",
+   "cause",
+   "and",
+   "cessation.",
+   "Leads",
+   "clarity",
+   "and",
+   "the",
+   "Sorrowless",
+   "State.",
+   "illness.",
+   "and",
+   "physical"
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "you",
+   "venerable",
+   "ones",
+   "will",
+   "live",
+   "the",
+   "spiritual",
+   "life",
+   "under",
+   "the",
+   "Great",
+   "Ascetic",
+   "all",
+   "will",
+   "surely",
+   "live",
+   "the",
+   "spiritual",
+   "life",
+   "under",
+   "the",
+   "Great",
+   "Ascetic",
+   "Two",
+   "hundred",
+   "and",
+   "fifty",
+   "wanderers",
+   "departed"
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "saw",
+   "them",
+   "from",
+   "afar",
+   "and",
+   "procla-",
+   "aimed",
+   "These",
+   "two",
+   "orones",
+   "who",
+   "are",
+   "companions",
+   "coming,",
+   "Kolita",
+   "and",
+   "Upatissa,",
+   "will",
+   "pair",
+   "Chief",
+   "Disciples,",
+   "auspicious",
+   "Wal!"
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "sudden",
+   "mass",
+   "ordinations",
+   "shocked",
+   "Rajagaha.",
+   "People",
+   "grumbled",
+   "“The",
+   "Ascetic",
+   "Gotama’s",
+   "method",
+   "family-smashing.",
+   "makes",
+   "families",
+   "childless",
+   "causes",
+   "breakage",
+   "and",
+   "loss",
+   "will",
+   "lead",
+   "off",
+   "now?”",
+   "Who"
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     542,
+     68
+    ],
+    "bbox": [
+     1428,
+     56,
+     2638,
+     516
+    ],
+    "shape": "box",
+    "en": "This noise will not last long, monks it will last for only seven days Scold them back with this verse “The Realised Ones lead with the True Dhamma Why be jealous of the wise?”",
+    "conf": 48
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "tlasts",
+   "Noise.",
+   "Like",
+   "all",
+   "things",
+   "that",
+   "arise,",
+   "the",
+   "public",
+   "uproar",
+   "ceased.",
+   "seven",
+   "days,",
+   "the",
+   "noise",
+   "disappeared,",
+   "and",
+   "Magadha",
+   "recognized",
+   "that",
+   "Sakyan",
+   "son",
+   "leads",
+   "only",
+   "the",
+   "True",
+   "Dhamma."
+  ]
+ }
+]

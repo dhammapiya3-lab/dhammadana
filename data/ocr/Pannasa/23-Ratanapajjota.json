@@ -1,0 +1,637 @@
+[
+ {
+  "img": "images/23-Ratanapajjota-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ota",
+   "Jataka",
+   "Tale",
+   "Supreme",
+   "Sacrifice",
+   "nnasa"
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Jetavana,",
+   "monks",
+   "scolded",
+   "thin",
+   "brother",
+   "for",
+   "giving",
+   "his",
+   "alms",
+   "his",
+   "mother.",
+   "The",
+   "Buddha",
+   "praised",
+   "him",
+   "instead,",
+   "stating:",
+   "“The",
+   "supporting",
+   "parents",
+   "indeed",
+   "the",
+   "lineage",
+   "wise",
+   "men.”"
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     465,
+     67
+    ],
+    "bbox": [
+     1461,
+     182,
+     2460,
+     754
+    ],
+    "shape": "box",
+    "en": "In past life, Queen Siriratanagabbha dreamt red-eyed demon ripped out her heart and fled West. Brahmans interpreted this terrible omen: great separation would soon fall upon her and King Maharatha.",
+    "conf": 89
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/23-Ratanapajjota-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Why",
+   "did",
+   "their",
+   "boat",
+   "split",
+   "Ancient",
+   "karma.",
+   "Baranasi,",
+   "they",
+   "once",
+   "rocked",
+   "terrified",
+   "novice",
+   "monk’",
+   "the",
+   "great",
+   "flood?",
+   "boat",
+   "small",
+   "bad",
+   "deed",
+   "may",
+   "have",
+   "widespread",
+   "fruition,",
+   "misery",
+   "even",
+   "royal",
+   "lives",
+   "bringing"
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     522,
+     262
+    ],
+    "bbox": [
+     1465,
+     840,
+     2516,
+     1342
+    ],
+    "shape": "box",
+    "en": "Washing ashore on Mount Canda, the Queen’s plight heated Sakka’s celestial throne. He ordered Visukamma to build leaf-hut roofed with five-colored lotuses. There, she birthed the Bodhisatta, named Ratanapajjota for the shining gems of the mountain.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/23-Ratanapajjota-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "While",
+   "gathering",
+   "roots,",
+   "the",
+   "Queen",
+   "was",
+   "captured",
+   "the",
+   "terrifying",
+   "yakkha",
+   "Balhahaka.",
+   "Hearing",
+   "her",
+   "cries,",
+   "five-year-old",
+   "Ratanapajjota",
+   "found",
+   "them",
+   "beneath",
+   "banyan",
+   "tree,",
+   "immediately",
+   "resolving",
+   "trade",
+   "his",
+   "life",
+   "for",
+   "hers.",
+   "the"
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     483,
+     158
+    ],
+    "bbox": [
+     1491,
+     522,
+     1921,
+     638
+    ],
+    "shape": "box",
+    "en": "Ultimate Paramattha-parami",
+    "conf": 74
+   }
+  ],
+  "loose": [
+   "The",
+   "yakkka",
+   "demanded",
+   "“large",
+   "heart.”",
+   "Ratanapajjota",
+   "explained",
+   "true",
+   "scale:",
+   "“Those",
+   "working",
+   "merit",
+   "for",
+   "nibbana",
+   "possess",
+   "large",
+   "heart",
+   "small",
+   "body",
+   "Giving",
+   "external",
+   "riches",
+   "great,",
+   "but",
+   "sacrificing",
+   "one’s",
+   "own",
+   "flesh",
+   "and",
+   "heart",
+   "the",
+   "supreme",
+   "perfection"
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "With",
+   "weapon",
+   "manifested",
+   "truth,",
+   "Ratanapajjota",
+   "extracted",
+   "his",
+   "heart.",
+   "“With",
+   "this",
+   "gift,",
+   "not",
+   "aspire",
+   "for",
+   "human",
+   "bliss",
+   "the",
+   "royalty",
+   "Indra,",
+   "but",
+   "all-awakened",
+   "Buddha",
+   "the",
+   "future.”"
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     94,
+     80
+    ],
+    "bbox": [
+     106,
+     99,
+     1022,
+     1240
+    ],
+    "shape": "bubble",
+    "en": "As the yakkka devoured the heart, the great earth quivered. Nature itself roared in cosmic recognition of sacrifice so profound it guaranteed his future Awakening The boy fell dead at his mother's feet",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/23-Ratanapajjota-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sakka",
+   "intervened",
+   "with",
+   "diamond",
+   "hook,",
+   "forcing",
+   "the",
+   "yakkha",
+   "apply",
+   "divine",
+   "medicine.",
+   "The",
+   "Queen",
+   "proclaimed",
+   "her",
+   "flawless",
+   "fidelity.",
+   "the",
+   "majesty",
+   "this",
+   "threefold",
+   "truthful",
+   "resolution,",
+   "Ratanapajjota",
+   "regained",
+   "his",
+   "breath",
+   "and",
+   "rose.",
+   "hook,",
+   "the"
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     87,
+     62
+    ],
+    "bbox": [
+     112,
+     119,
+     1699,
+     777
+    ],
+    "shape": "bubble",
+    "en": "Transported in golden palanquin, they returned to Meghavati. King Maharatha anointed his son. Ratanapajjota rejected sensory indulgence, transforming his kingdom into arealm realm of universal charity and righteous law.",
+    "conf": 84
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/23-Ratanapajjota-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     298,
+     355
+    ],
+    "bbox": [
+     757,
+     1137,
+     1885,
+     1438
+    ],
+    "shape": "bubble",
+    "en": "True freedom lay beyond the throne. Ratanapajjota discarded his royal garments for ascetic bark. Entering the Himavanta, he mastered meditation, attained the five abhinna and eight samapatti, and was reborn in the Brahmaloka.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "whs"
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     252,
+     113
+    ],
+    "bbox": [
+     334,
+     367,
+     1207,
+     456
+    ],
+    "shape": "box",
+    "en": "Ancient Past",
+    "conf": 95
+   },
+   {
+    "seed": [
+     484,
+     114
+    ],
+    "bbox": [
+     1432,
+     367,
+     2311,
+     460
+    ],
+    "shape": "bubble",
+    "en": "Present Assembly",
+    "conf": 93
+   },
+   {
+    "seed": [
+     556,
+     158
+    ],
+    "bbox": [
+     1709,
+     516,
+     2298,
+     615
+    ],
+    "shape": "bubble",
+    "en": "Anuruddha",
+    "conf": 92
+   },
+   {
+    "seed": [
+     182,
+     206
+    ],
+    "bbox": [
+     347,
+     674,
+     936,
+     777
+    ],
+    "shape": "bubble",
+    "en": "Yakkha Balhahaka alhahak:",
+    "conf": 34
+   },
+   {
+    "seed": [
+     543,
+     207
+    ],
+    "bbox": [
+     1709,
+     674,
+     2301,
+     777
+    ],
+    "shape": "bubble",
+    "en": "ig Angulimala",
+    "conf": 51
+   },
+   {
+    "seed": [
+     157,
+     253
+    ],
+    "bbox": [
+     321,
+     833,
+     962,
+     932
+    ],
+    "shape": "box",
+    "en": "Queen Siriratanagabbhay",
+    "conf": 62
+   },
+   {
+    "seed": [
+     163,
+     302
+    ],
+    "bbox": [
+     344,
+     992,
+     939,
+     1094
+    ],
+    "shape": "bubble",
+    "en": "cng Maharatha",
+    "conf": 35
+   },
+   {
+    "seed": [
+     558,
+     253
+    ],
+    "bbox": [
+     1709,
+     833,
+     2298,
+     936
+    ],
+    "shape": "bubble",
+    "en": "Mahamaya",
+    "conf": 92
+   },
+   {
+    "seed": [
+     593,
+     301
+    ],
+    "bbox": [
+     1713,
+     995,
+     2301,
+     1094
+    ],
+    "shape": "bubble",
+    "en": "Suddhodana",
+    "conf": 92
+   },
+   {
+    "seed": [
+     175,
+     350
+    ],
+    "bbox": [
+     344,
+     1154,
+     936,
+     1253
+    ],
+    "shape": "bubble",
+    "en": "Ratanapajjota",
+    "conf": 92
+   },
+   {
+    "seed": [
+     546,
+     357
+    ],
+    "bbox": [
+     1709,
+     1154,
+     2301,
+     1253
+    ],
+    "shape": "bubble",
+    "en": "The Tathagata",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "The",
+   "Teacher",
+   "concluded",
+   "revealing",
+   "the",
+   "turning",
+   "the",
+   "wheel",
+   "across",
+   "lifetimes",
+   "The",
+   "ancient",
+   "cast",
+   "lives",
+   "again",
+   "the",
+   "present",
+   "assembly."
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Hold",
+   "this",
+   "jataka",
+   "thus,",
+   "with",
+   "great",
+   "respect,",
+   "your",
+   "mind.’",
+   "The",
+   "highest",
+   "perfections",
+   "Buddha",
+   "begin",
+   "with",
+   "the",
+   "humblest",
+   "duties",
+   "The",
+   "supporting",
+   "parents",
+   "the",
+   "eternal",
+   "tradition",
+   "the",
+   "wise"
+  ]
+ }
+]

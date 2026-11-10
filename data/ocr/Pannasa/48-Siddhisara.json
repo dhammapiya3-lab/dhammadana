@@ -1,0 +1,542 @@
+[
+ {
+  "img": "images/48-Siddhisara-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     266,
+     33
+    ],
+    "bbox": [
+     688,
+     73,
+     1987,
+     218
+    ],
+    "shape": "box",
+    "en": "The Story of the Meritorious Siddhisara",
+    "conf": 54
+   },
+   {
+    "seed": [
+     134,
+     117
+    ],
+    "bbox": [
+     307,
+     337,
+     853,
+     592
+    ],
+    "shape": "bubble",
+    "en": "The Lord has well accomplished meritorious deeds. At the Jetavana assembly, the Buddha recounts past life to illustrate the profound, diverging ig paths of karmic merit.",
+    "conf": 75
+   }
+  ],
+  "loose": [
+   "DE,"
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Baranasi,",
+   "two",
+   "golden-complexioned",
+   "sons",
+   "born",
+   "from",
+   "the",
+   "Tusita",
+   "heaven:",
+   "Siddhisara,",
+   "son",
+   "Queen",
+   "Vimala,",
+   "and",
+   "son",
+   "the",
+   "minister.",
+   "less.",
+   "Blessed",
+   "grew",
+   "fear!",
+   "si,",
+   "were",
+   "with",
+   "immense",
+   "they",
+   "Wey"
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Their",
+   "fierce",
+   "childh",
+   "royal",
+   "court.",
+   "The",
+   "unforgiving",
+   "king",
+   "banished",
+   "both",
+   "boys.",
+   "Weeping,",
+   "Siddhisara",
+   "and",
+   "left",
+   "their",
+   "magnificent",
+   "city",
+   "behind,",
+   "wandering",
+   "deep",
+   "into",
+   "the",
+   "treacherous",
+   "tropical",
+   "forest.",
+   "SEN",
+   "games",
+   "angered",
+   "ara",
+   "CAE",
+   "WARS"
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     562,
+     116
+    ],
+    "bbox": [
+     1405,
+     129,
+     2516,
+     1356
+    ],
+    "shape": "bubble",
+    "en": "Pr Right Eye: Grants the destiny ofa Cakkavatti (Wheel-Turning Monarch). (Eaten by Siddhisara).",
+    "conf": 51
+   }
+  ],
+  "loose": [
+   "Anigrodha",
+   "tree",
+   "deity",
+   "merit",
+   "with",
+   "magical",
+   "Eye:",
+   "Emits",
+   "seven",
+   "kinds",
+   "jewels",
+   "when",
+   "laughing.",
+   "(Eaten",
+   "Pufifiasara).",
+   "tree",
+   "deity"
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Following",
+   "divine",
+   "guidance,",
+   "the",
+   "friends",
+   "reached",
+   "crossroads",
+   "square",
+   "lotus",
+   "pond.",
+   "Using",
+   "lotus",
+   "stem,",
+   "they",
+   "rew",
+   "boundary,",
+   "embraced,",
+   "and",
+   "parted",
+   "ways—Siddhisara",
+   "toward",
+   "the",
+   "into",
+   "the",
+   "drew",
+   "city,"
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Mithila,",
+   "the",
+   "magic",
+   "chariot",
+   "(phussa-ratha)",
+   "sought",
+   "rightful",
+   "heir,",
+   "finding",
+   "asleep.",
+   "Recognizing",
+   "his",
+   "auspicious",
+   "marks,",
+   "ministers",
+   "instantly",
+   "consecrated",
+   "him",
+   "Cakkavatti",
+   "king."
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "arrived",
+   "Kusuma.",
+   "princess",
+   "marvelled",
+   "laughed,",
+   "showering",
+   "seven",
+   "kinds",
+   "jewels",
+   "from",
+   "his",
+   "mouth.",
+   "They",
+   "married,",
+   "but",
+   "her",
+   "greedy",
+   "father",
+   "secretly",
+   "coveted",
+   "his",
+   "limitless",
+   "wealth."
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "wicked",
+   "king",
+   "served",
+   "poisoned",
+   "liquor",
+   "the",
+   "park.",
+   "collapsed",
+   "agony,",
+   "fearsome",
+   "yakkhas",
+   "approached",
+   "from",
+   "the",
+   "shadows",
+   "devour",
+   "him.",
+   "wicked"
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "deity",
+   "deterred",
+   "the",
+   "yakkhas,",
+   "who",
+   "dropped",
+   "three",
+   "celestial",
+   "artifacts:",
+   "Golden",
+   "Sandals:",
+   "Celestial",
+   "Jar:",
+   "Carrying",
+   "Pole:",
+   "Revives",
+   "the",
+   "dying.",
+   "Half-gold,",
+   "half-silver.",
+   "Grants",
+   "the",
+   "power",
+   "flight."
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Lured",
+   "Mount",
+   "Himavanta",
+   "his",
+   "deceitful",
+   "wife,",
+   "fell",
+   "asleep",
+   "inside",
+   "bery]",
+   "hall.",
+   "The",
+   "treacherous",
+   "princess",
+   "stole",
+   "the",
+   "magical",
+   "jar,",
+   "pole,",
+   "and",
+   "sandals,",
+   "flying",
+   "away",
+   "and",
+   "abandoning",
+   "him.",
+   "si<",
+   "Lured",
+   "Mount",
+   "Himavanta",
+   "his",
+   "deceitful"
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "sympathe",
+   "infused",
+   "the",
+   "tree",
+   "agical",
+   "fruits",
+   "Topmost:",
+   "Restores",
+   "radiant",
+   "beauty",
+   "and",
+   "strength.",
+   "Wes",
+   "East:",
+   "Bear",
+   "North:",
+   "Crane",
+   "with",
+   "magical",
+   "Monkey",
+   "pathetic",
+   "most:"
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Eating",
+   "the",
+   "northern",
+   "fruit,",
+   "became",
+   "crane",
+   "find",
+   "his",
+   "wife.",
+   "After",
+   "restoring",
+   "his",
+   "human",
+   "form,",
+   "fed",
+   "the",
+   "western",
+   "fruits",
+   "his",
+   "wicked",
+   "in-laws,",
+   "transforming",
+   "them",
+   "into",
+   "monkeys."
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "His",
+   "trials",
+   "complete,",
+   "soared",
+   "through",
+   "the",
+   "sky",
+   "his",
+   "golden",
+   "sandals",
+   "finally",
+   "reunite",
+   "with",
+   "his",
+   "childhood",
+   "friend,",
+   "King",
+   "Siddhisara.",
+   "sara."
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ate",
+   "Siddhisara",
+   "generously",
+   "shared",
+   "the",
+   "deer’s",
+   "right",
+   "eye.",
+   "The",
+   "citizens",
+   "consecrated",
+   "and",
+   "the",
+   "two",
+   "friends",
+   "ruled",
+   "symmetrically",
+   "immensely",
+   "powerful,",
+   "righteous",
+   "Cakkavatti",
+   "monarchs.",
+   "red"
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "concluded",
+   "the",
+   "birth",
+   "story:",
+   "Deities",
+   "Channa,",
+   "Suddhodana",
+   "Royal",
+   "Parents",
+   "Mahamaya",
+   "Punnasara:",
+   "Ananda",
+   "Siddhisara:",
+   "The",
+   "Buddha",
+   "ts:"
+  ]
+ }
+]

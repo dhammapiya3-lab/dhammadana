@@ -1,0 +1,613 @@
+[
+ {
+  "img": "images/14-Surupa-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Surtipa",
+   "visual",
+   "exploration",
+   "absolute",
+   "giving",
+   "(Dana)",
+   "from",
+   "the",
+   "Northern",
+   "Thai",
+   "Pannasa",
+   "Jataka",
+   "tales",
+   "Anatomy",
+   "Ulitimate",
+   "The",
+   "Anatomy",
+   "Ultimate"
+  ]
+ },
+ {
+  "img": "images/14-Surupa-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "reveals",
+   "past",
+   "life",
+   "defined",
+   "unparalleled",
+   "generosity",
+   "the",
+   "convocation-hall",
+   "Jetavana,",
+   "the",
+   "Teacher",
+   "recounts",
+   "giving",
+   "away",
+   "his",
+   "wife,",
+   "child,",
+   "and",
+   "physical",
+   "body",
+   "for",
+   "the",
+   "sake",
+   "hearing",
+   "the",
+   "Dhamma"
+  ]
+ },
+ {
+  "img": "images/14-Surupa-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ite",
+   "virtuous",
+   "monarch",
+   "possessing",
+   "the",
+   "tenfold",
+   "duties,",
+   "the",
+   "Bodhisatta",
+   "enjoys",
+   "royal",
+   "bliss",
+   "alongside",
+   "his",
+   "chief",
+   "consort,",
+   "Queen",
+   "Sundari,",
+   "and",
+   "his",
+   "son,",
+   "Prince",
+   "Sundara.",
+   "Surupa",
+   "the",
+   "city"
+  ]
+ },
+ {
+  "img": "images/14-Surupa-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "monarch",
+   "recognizes",
+   "the",
+   "fragile,",
+   "impermanent",
+   "nature",
+   "the",
+   "body",
+   "Reflecting",
+   "his",
+   "physical",
+   "frame,",
+   "realizes",
+   "his",
+   "life-span",
+   "dissolves",
+   "quickly",
+   "the",
+   "approach",
+   "death.",
+   "River",
+   "Foam",
+   "Mirage",
+   "Plantain",
+   "Dew-drop",
+   "Pith-less",
+   "€9>",
+   "Pla",
+   "ntain"
+  ]
+ },
+ {
+  "img": "images/14-Surupa-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "seven-year",
+   "search",
+   "yields",
+   "speaker",
+   "the",
+   "glorious",
+   "Dhamma",
+   "Despite",
+   "offering",
+   "hundred",
+   "thousand",
+   "gold",
+   "pieces",
+   "and",
+   "glorious",
+   "jewelled",
+   "casket,",
+   "the",
+   "drums",
+   "Indapattha",
+   "fall",
+   "silent.",
+   "Dhamma-speaker",
+   "can",
+   "found.",
+   "Days"
+  ]
+ },
+ {
+  "img": "images/14-Surupa-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     49,
+     49
+    ],
+    "bbox": [
+     112,
+     116,
+     1812,
+     946
+    ],
+    "shape": "bubble",
+    "en": "The Great Being vows to sacrifice everything for profound wisdom Overcome by grief, Suriipa formulates an escalating vow of Dana, willing to trade all worldly and personal attachments to hear the Dhamma.",
+    "conf": 70
+   }
+  ],
+  "loose": [
+   "Internal",
+   "Wealth",
+   "Flesh",
+   "Life",
+   "Cognizant",
+   "Wealth",
+   "Wife",
+   "Child",
+   "Alt",
+   "External",
+   "Wealth:",
+   "Kingdom",
+   "Gold",
+   "We:"
+  ]
+ },
+ {
+  "img": "images/14-Surupa-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "vow’s",
+   "incandescence",
+   "causes",
+   "Mount",
+   "Sineru",
+   "tremble",
+   "Sensing",
+   "this",
+   "Buddha-sprout’s",
+   "resolve,",
+   "the",
+   "deva-king",
+   "Sakka",
+   "abandons",
+   "his",
+   "individuality",
+   "manifest",
+   "terrifying",
+   "yakkha",
+   "test",
+   "the",
+   "king."
+  ]
+ },
+ {
+  "img": "images/14-Surupa-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Queen",
+   "Sundari",
+   "willingly",
+   "fulfills",
+   "the",
+   "the",
+   "first",
+   "test",
+   "cognizant",
+   "wealth",
+   "Demanding",
+   "flesh",
+   "teach",
+   "the",
+   "Dhamma,",
+   "the",
+   "yakkha",
+   "accepts",
+   "the",
+   "Queen.",
+   "Sakka",
+   "magically",
+   "conceals",
+   "her.",
+   "feigning",
+   "crunch",
+   "her",
+   "bones",
+   "test"
+  ]
+ },
+ {
+  "img": "images/14-Surupa-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Prince",
+   "Sundara",
+   "offers",
+   "his",
+   "life",
+   "complete",
+   "his",
+   "father’s",
+   "intention",
+   "Undeterred",
+   "the",
+   "Queen’s",
+   "disappearance,",
+   "the",
+   "King",
+   "surrenders",
+   "his",
+   "legitimate",
+   "son.",
+   "The",
+   "yakkha",
+   "feigns",
+   "devouring",
+   "him,",
+   "terrifying",
+   "the",
+   "great",
+   "populace.",
+   "athe",
+   "So:"
+  ]
+ },
+ {
+  "img": "images/14-Surupa-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "offers",
+   "his",
+   "own",
+   "physical",
+   "frame",
+   "the",
+   "ultimate",
+   "price",
+   "Esteeming",
+   "the",
+   "glorious",
+   "Dhamma",
+   "above",
+   "his",
+   "own",
+   "survival,",
+   "the",
+   "Kin",
+   "the",
+   "yakkha",
+   "jewelled",
+   "couch,",
+   "preparing",
+   "eaten.",
+   "the",
+   "King"
+  ]
+ },
+ {
+  "img": "images/14-Surupa-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     359,
+     296
+    ],
+    "bbox": [
+     1081,
+     641,
+     1561,
+     1121
+    ],
+    "shape": "bubble",
+    "en": "Grief Fear",
+    "conf": 85
+   },
+   {
+    "seed": [
+     230,
+     342
+    ],
+    "bbox": [
+     651,
+     1131,
+     896,
+     1246
+    ],
+    "shape": "bubble",
+    "en": "Sense- Pleasures",
+    "conf": 75
+   }
+  ],
+  "loose": [
+   "The",
+   "glorious",
+   "Dhamma",
+   "Kassapa",
+   "Buddha",
+   "severs",
+   "the",
+   "roots",
+   "suffering",
+   "The",
+   "yakkka",
+   "reveals",
+   "the",
+   "supreme",
+   "teaching:",
+   "ultimate",
+   "freedom",
+   "requires",
+   "eradicating",
+   "the",
+   "causal",
+   "roots",
+   "earthly",
+   "torment.",
+   "GOD"
+  ]
+ },
+ {
+  "img": "images/14-Surupa-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "earth",
+   "roars",
+   "Sakka",
+   "reveals",
+   "his",
+   "radiant",
+   "form",
+   "Suriipa",
+   "gives",
+   "himself",
+   "gift,",
+   "earthquakes",
+   "erupt.",
+   "Sakka",
+   "restores",
+   "the",
+   "royal",
+   "family,",
+   "praising",
+   "the",
+   "King’s",
+   "assured",
+   "path",
+   "becoming",
+   "Buddha."
+  ]
+ },
+ {
+  "img": "images/14-Surupa-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     119,
+     35
+    ],
+    "bbox": [
+     46,
+     53,
+     1723,
+     757
+    ],
+    "shape": "bubble",
+    "en": "Absolute giving ensures rebirth in the celestial deva-worlds Exhorted to diligently perform meritorious deeds, King Surupa and his subjects live righteously, eventually ascending to glorious palace realms upon their passing.",
+    "conf": 84
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/14-Surupa-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     219,
+     123
+    ],
+    "bbox": [
+     430,
+     387,
+     1316,
+     1349
+    ],
+    "shape": "box",
+    "en": "Past (City of Indapattha) Queen Mother Queen Sundari VA Zid ty Prince Sundara ‘ot Sakka ke Ni Wi pia Surupa",
+    "conf": 38
+   },
+   {
+    "seed": [
+     453,
+     119
+    ],
+    "bbox": [
+     1326,
+     387,
+     2212,
+     1349
+    ],
+    "shape": "box",
+    "en": "Present (Jetavana Assembly) Mahamaya Yasodhara 8 Rahula Anuruddha The Bi aos dha 2a",
+    "conf": 34
+   }
+  ],
+  "loose": [
+   "The",
+   "entities",
+   "Indapattha",
+   "manifest",
+   "the",
+   "present",
+   "Jetavana",
+   "assembly",
+   "Concluding",
+   "the",
+   "birth-story,",
+   "the",
+   "Self-Awakened",
+   "One",
+   "maps",
+   "the",
+   "virtuous",
+   "figures",
+   "his",
+   "past",
+   "his",
+   "current",
+   "disciples",
+   "and",
+   "family."
+  ]
+ },
+ {
+  "img": "images/14-Surupa-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "perfection",
+   "giving",
+   "demands",
+   "detachment",
+   "even",
+   "from",
+   "the",
+   "self",
+   "ultimate",
+   "sacrifice",
+   "proves",
+   "that",
+   "escaping",
+   "the",
+   "mirage",
+   "existence",
+   "requires",
+   "surrendering",
+   "everything",
+   "hold",
+   "dear",
+   "for",
+   "the",
+   "supreme",
+   "truth",
+   "Dhamma"
+  ]
+ }
+]

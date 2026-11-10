@@ -1,0 +1,496 @@
+[
+ {
+  "img": "images/15-Kambala-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Jataka",
+   "Birth-Story",
+   "King",
+   "Kambala",
+   "The",
+   "Supreme",
+   "Fruit",
+   "the",
+   "Kathina",
+   "Offering"
+  ]
+ },
+ {
+  "img": "images/15-Kambala-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     235,
+     305
+    ],
+    "bbox": [
+     658,
+     969,
+     1987,
+     1329
+    ],
+    "shape": "bubble",
+    "en": "While the Lord stayed in Jetavana, the king of Saketa invited the Venerable Elder Kondafifia and his monks to remain in his royal park for the rains retreat.",
+    "conf": 78
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-Kambala-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     489,
+     244
+    ],
+    "bbox": [
+     1468,
+     754,
+     2301,
+     1104
+    ],
+    "shape": "box",
+    "en": "Surveying his vast fortune, the king realized he would one day arrive empty-handed in the world beyond. To secure lasting merit, he decided to immediately offer kathina-cloth to the Elder.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-Kambala-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     579,
+     310
+    ],
+    "bbox": [
+     1666,
+     1015,
+     2500,
+     1339
+    ],
+    "shape": "box",
+    "en": "Commanding his populace, the king had garments cut, sewn, and dyed. He bestowed the kathina robe-material upon Elder Kondania, filling the generals and the people with profound happiness.",
+    "conf": 69
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-Kambala-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     531,
+     339
+    ],
+    "bbox": [
+     1594,
+     1091,
+     2417,
+     1316
+    ],
+    "shape": "box",
+    "en": "Hearing the monks praise the ing’s grand offering, the Buddha arrived. “It is not only now,” he declared. Formerly, in sarnsara, myself gave kathina-cloth to the Lord Saranankara.”",
+    "conf": 75
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-Kambala-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     541,
+     328
+    ],
+    "bbox": [
+     1666,
+     1015,
+     2500,
+     1339
+    ],
+    "shape": "box",
+    "en": "In the past, King Kambala reigned with righteousness. The Bodhisatta, reborn in householder’s family, possessed deep morality. Hearing Lord Saranankara teach, his mind filled with pure faith.",
+    "conf": 87
+   }
+  ],
+  "loose": [
+   "ass"
+  ]
+ },
+ {
+  "img": "images/15-Kambala-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     251,
+     46
+    ],
+    "bbox": [
+     691,
+     89,
+     1891,
+     1065
+    ],
+    "shape": "bubble",
+    "en": "er li he Md Li Qe Khia By 2. ee Reg ee anf See",
+    "conf": 35
+   },
+   {
+    "seed": [
+     560,
+     333
+    ],
+    "bbox": [
+     1719,
+     1068,
+     2490,
+     1322
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta commanded his man to buy cloth.) cloth. Presenting the kathina and utensils to Lord Saranankara, he made grand aspiration: “May the gift of this kathina-cloth kathina-cloth result in my omniscient knowledge.”",
+    "conf": 43
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-Kambala-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     125,
+     88
+    ],
+    "bbox": [
+     218,
+     238,
+     952,
+     618
+    ],
+    "shape": "bubble",
+    "en": "Later, King Kambala approached Lord Saranankara kara with profound question: “Revered sir, what merit brings maturing ing happiness to all beings? What gift is of the greatest fruit?”",
+    "conf": 87
+   }
+  ],
+  "loose": [
+   "LORE"
+  ]
+ },
+ {
+  "img": "images/15-Kambala-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     573,
+     339
+    ],
+    "bbox": [
+     1723,
+     1068,
+     2483,
+     1322
+    ],
+    "shape": "box",
+    "en": "Lord rd Saranankara replied: “The leading gift is kathina-cloth. The donor acquires great renown, wealth, th, and deva-like happiness, ultimately itely attaining the supreme happiness of nibbana.”",
+    "conf": 40
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-Kambala-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Fruits",
+   "Preparation:",
+   "Buying",
+   "Cloth:",
+   "Selecting",
+   "Thread:",
+   "Cutting",
+   "Garments:",
+   "Great",
+   "wealth",
+   "and",
+   "fame.",
+   "Happiness",
+   "and",
+   "self-possession.",
+   "Becoming",
+   "clever,",
+   "proficient",
+   "right",
+   "aims",
+   "and",
+   "practices.",
+   "ing",
+   "ing",
+   "Thread:"
+  ]
+ },
+ {
+  "img": "images/15-Kambala-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     141,
+     380
+    ],
+    "bbox": [
+     165,
+     1213,
+     833,
+     1346
+    ],
+    "shape": "box",
+    "en": "Sewing: Rebirth as wheel-turning lord of devas.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     317,
+     386
+    ],
+    "bbox": [
+     985,
+     1213,
+     1656,
+     1346
+    ],
+    "shape": "box",
+    "en": "Dyeing: golden, handsome body liked by all.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     575,
+     388
+    ],
+    "bbox": [
+     1809,
+     1213,
+     2473,
+     1346
+    ],
+    "shape": "box",
+    "en": "Fumigating: Great fame possessions, and an endless lifespan.",
+    "conf": 59
+   }
+  ],
+  "loose": [
+   "The",
+   "Fruits",
+   "Crafting:"
+  ]
+ },
+ {
+  "img": "images/15-Kambala-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "single",
+   "kathina-cloth",
+   "surpasses",
+   "infinite",
+   "worldly",
+   "treasures.",
+   "Eighty-four",
+   "thousand",
+   "viharas,",
+   "hundreds",
+   "elephants,",
+   "immense",
+   "heaps",
+   "gold",
+   "are",
+   "not",
+   "worth",
+   "sixteenth",
+   "part",
+   "this",
+   "supreme",
+   "offering.",
+   "26)"
+  ]
+ },
+ {
+  "img": "images/15-Kambala-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     119,
+     101
+    ],
+    "bbox": [
+     274,
+     182,
+     1316,
+     589
+    ],
+    "shape": "bubble",
+    "en": "Filled with joy, King Kambala dedicated his life to giving kathina robe-material every year Upon his death, his tremendous merit carried him to rebirth in glorious Tusita-abode.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-Kambala-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     421,
+     105
+    ],
+    "bbox": [
+     975,
+     347,
+     2189,
+     734
+    ],
+    "shape": "bubble",
+    "en": "King Kambala is now Sariputta.",
+    "conf": 60
+   },
+   {
+    "seed": [
+     405,
+     229
+    ],
+    "bbox": [
+     942,
+     751,
+     2228,
+     1137
+    ],
+    "shape": "bubble",
+    "en": "The man who bought cloth is Ananda.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     380,
+     353
+    ],
+    "bbox": [
+     691,
+     1157,
+     1944,
+     1392
+    ],
+    "shape": "bubble",
+    "en": "The householder’s son is now the Self-Awakened Tathagata.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "The",
+   "Buddha",
+   "concluded",
+   "the",
+   "birth-story:"
+  ]
+ },
+ {
+  "img": "images/15-Kambala-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     197,
+     172
+    ],
+    "bbox": [
+     258,
+     493,
+     1121,
+     959
+    ],
+    "shape": "bubble",
+    "en": "Expounding the Four Truths— anguish, its arising (craving), ing), its ceasing tet) (nibbana), and the Eightfold Way— many monks instantly attained ined fruits from Stream-entry to Arahantship. ip.",
+    "conf": 61
+   }
+  ],
+  "loose": []
+ }
+]

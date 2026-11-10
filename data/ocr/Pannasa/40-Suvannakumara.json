@@ -1,0 +1,821 @@
+[
+ {
+  "img": "images/40-Suvannakumara-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "LY)",
+   "The",
+   "Birth-Story",
+   "Prince",
+   "Suvanna",
+   "Jataka",
+   "The",
+   "Pannas"
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "monks",
+   "marvel",
+   "the",
+   "Tathagata’s",
+   "supreme",
+   "majesty.",
+   "The",
+   "Buddha",
+   "reveals",
+   "his",
+   "power",
+   "not",
+   "new,",
+   "but",
+   "rooted",
+   "his",
+   "past",
+   "deeds",
+   "Bodhisatta",
+   "(3)"
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "Bodhisatta",
+   "descends",
+   "from",
+   "Tusita",
+   "Born",
+   "Queen",
+   "and",
+   "King",
+   "Surabhata,",
+   "gleams",
+   "like",
+   "golden",
+   "image",
+   "and",
+   "named",
+   "Suvannakumara.",
+   "nnakumara",
+   "nasi,",
+   "heaven.",
+   "Tusita"
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     281,
+     53
+    ],
+    "bbox": [
+     149,
+     152,
+     1769,
+     727
+    ],
+    "shape": "bubble",
+    "en": "PEGE: yal",
+    "conf": 41
+   }
+  ],
+  "loose": [
+   "“ge"
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "merit",
+   "real,",
+   "let",
+   "the",
+   "ocean",
+   "become",
+   "lik",
+   "eartht",
+   "The",
+   "waters",
+   "part",
+   "for",
+   "84,000",
+   "yojanas.",
+   "goddess",
+   "ents",
+   "celestial",
+   "white",
+   "elephant.",
+   "pres",
+   "majesty",
+   "merit",
+   "the",
+   "ocean"
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "jewel-light",
+   "Naga",
+   "kings,",
+   "the",
+   "returns.",
+   "His",
+   "parents",
+   "declare",
+   "his",
+   "merit",
+   "akin",
+   "king,",
+   "lord",
+   "the",
+   "four",
+   "Prince",
+   "Cakkavatti",
+   "continents.",
+   "hed",
+   "Naga",
+   "the"
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Root",
+   "Majesty.",
+   "the",
+   "era",
+   "Lord",
+   "Vipassi,",
+   "the",
+   "Bodhisatta’s",
+   "pure",
+   "offering",
+   "and",
+   "dedicatory",
+   "water",
+   "forged",
+   "this",
+   "present",
+   "glory.",
+   "The",
+   "Root",
+   "Majesty."
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Hearing",
+   "the",
+   "white",
+   "King",
+   "Bhatosura",
+   "Sihala",
+   "erupts",
+   "anger.",
+   "demands",
+   "the",
+   "sacred",
+   "beast,",
+   "threatening",
+   "reduce",
+   "Baranasi",
+   "rubble.",
+   "elephant,"
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Rooted",
+   "Merit",
+   "Pride",
+   "Protec",
+   "osmic",
+   "Law",
+   "itary",
+   "Force",
+   "True",
+   "Merit",
+   "vs.",
+   "Vain",
+   "Pride.",
+   "While",
+   "Sihala",
+   "relies",
+   "chariots",
+   "and",
+   "wrath,",
+   "the",
+   "Bodhisatta",
+   "rotects",
+   "his",
+   "realm",
+   "through",
+   "the",
+   "unshakeable",
+   "power",
+   "de.",
+   "ile"
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "King",
+   "Surabhata",
+   "bestows",
+   "the",
+   "five",
+   "royal",
+   "consecration.",
+   "Empowered,",
+   "Prince",
+   "Suvannakumara",
+   "vows",
+   "make",
+   "the",
+   "aggressive",
+   "King",
+   "Bhatosura",
+   "bow",
+   "their",
+   "feet."
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Before",
+   "battle,",
+   "the",
+   "Prince",
+   "dedicates",
+   "great",
+   "almsgiving",
+   "the",
+   "sheer",
+   "force",
+   "this",
+   "merit,",
+   "suffering",
+   "beings",
+   "from",
+   "Avici",
+   "hell",
+   "are",
+   "instantly",
+   "reborn",
+   "heaven",
+   "iss"
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sakka",
+   "bestows",
+   "the",
+   "magical",
+   "Indadhanu",
+   "and",
+   "five",
+   "specific",
+   "arrows",
+   "shatter",
+   "the",
+   "enemy’s",
+   "pride:",
+   "Cutter",
+   "hair,",
+   "Producer",
+   "vehicles,",
+   "Fashioner",
+   "sky-abodes,",
+   "Producer",
+   "bonfires,",
+   "Bringer",
+   "death.",
+   "The",
+   "god",
+   "The",
+   "Sakka"
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     113,
+     55
+    ],
+    "bbox": [
+     136,
+     142,
+     797,
+     413
+    ],
+    "shape": "box",
+    "en": "Empowered by cosmic weaponry and supreme merit, the Bodhisatta boards his great ship. The host of ocean gods carry him swiftly toward Sihala.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/40-Suvannakumara-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     256,
+     36
+    ],
+    "bbox": [
+     724,
+     30,
+     1918,
+     172
+    ],
+    "shape": "box",
+    "en": "The Ultimatum at Sihala",
+    "conf": 77
+   },
+   {
+    "seed": [
+     198,
+     379
+    ],
+    "bbox": [
+     592,
+     1223,
+     2050,
+     1451
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta’s messenger delivers stark choice: surrender or face destruction. King Bhatosura, lord of Sthala, is overcome with fierce, serpentine anger at the sudden threat to his sovereignty.",
+    "conf": 46
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/40-Suvannakumara-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     335,
+     193
+    ],
+    "bbox": [
+     982,
+     565,
+     1660,
+     919
+    ],
+    "shape": "box",
+    "en": "The Four Arrows of Compassion Suvanpnakumara 5 fires 2 four 5 miraculous arrows, 5 wa demonstrating ts! absolute 3 2 vu power 2 uv without bloodshed: 2 3 5 Humiliation: Shearing the army's hair. Provision: Manifesting transport. Awe: Suspending heavenly palace. Terror: Igniting the sky.",
+    "conf": 38
+   }
+  ],
+  "loose": [
+   "BO:"
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     650,
+     56
+    ],
+    "bbox": [
+     503,
+     86,
+     2295,
+     717
+    ],
+    "shape": "bubble",
+    "en": "The Breaking ing of Pride ide ig bass",
+    "conf": 38
+   },
+   {
+    "seed": [
+     366,
+     213
+    ],
+    "bbox": [
+     1035,
+     681,
+     1607,
+     896
+    ],
+    "shape": "box",
+    "en": "Trembling os and stripped 25 of his aS arrogance, 99 ga Bhatosura offers his entire kingdom and vast st wealth for his life, The Bodhisatta rejects ts the worldly tribute, revealing far higher motivation.",
+    "conf": 46
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/40-Suvannakumara-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     245,
+     368
+    ],
+    "bbox": [
+     757,
+     1134,
+     1885,
+     1365
+    ],
+    "shape": "box",
+    "en": "Siivarmakumara reveals his true objective: winning hearts through merit. He teaches that preventing others from committing evil is the supreme form of friendship, far surpassing any wish- filling jewel.",
+    "conf": 59
+   }
+  ],
+  "loose": [
+   "Onquest",
+   "Righteousness"
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     275,
+     66
+    ],
+    "bbox": [
+     648,
+     165,
+     1997,
+     304
+    ],
+    "shape": "box",
+    "en": "“See The Four-Fold Army of Sih ala",
+    "conf": 41
+   },
+   {
+    "seed": [
+     223,
+     347
+    ],
+    "bbox": [
+     476,
+     1094,
+     2166,
+     1339
+    ],
+    "shape": "box",
+    "en": "Joyfully converted, Bhatosura marshals his vast forces for peaceful escort. The grand military machine—10,000 golden elephants, swift horses, lotus- adorned chariots, and vibrant infantry—is repurposed for the Dhamma.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "dod",
+   "48>"
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     327,
+     95
+    ],
+    "bbox": [
+     919,
+     274,
+     1723,
+     559
+    ],
+    "shape": "box",
+    "en": "STE Nature and the divine realms cons pire to ensure the Bodhisatta’s smooth passage. Over er seven Nagas gas guide the ships across th ean an while istain the grand assembly 5S with ith celestial feasts. af",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "The",
+   "Divine",
+   "Voyage"
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     99,
+     90
+    ],
+    "bbox": [
+     172,
+     271,
+     1336,
+     516
+    ],
+    "shape": "box",
+    "en": "Word of Suvannakumara’s majestic power prea The kings of all Jambudipa gather at Baranasi, joyfully surrendering their realms. True universal sovereignty is achieved through sheer moral supremacy.",
+    "conf": 37
+   }
+  ],
+  "loose": [
+   "Universal",
+   "Surrender",
+   "Baranasi",
+   "RON"
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     395,
+     143
+    ],
+    "bbox": [
+     1121,
+     327,
+     1402,
+     539
+    ],
+    "shape": "bubble",
+    "en": "Beauty",
+    "conf": 97
+   },
+   {
+    "seed": [
+     94,
+     168
+    ],
+    "bbox": [
+     205,
+     539,
+     727,
+     1108
+    ],
+    "shape": "box",
+    "en": "When asked the secret of his unparalleled success, the Bodhisatta explains the mechanics of kamma. Internal ethical purity and truthful speech directly engineer external beauty, political power, and universal respect.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "The",
+   "Roots",
+   "Power",
+   "Majesty",
+   "Majesty",
+   "Proper",
+   "Consideration’"
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     47,
+     44
+    ],
+    "bbox": [
+     119,
+     119,
+     612,
+     377
+    ],
+    "shape": "box",
+    "en": "The Ethical Kingdom ingdom Suvanpakumara establishes utopian society built on radical generosity and strict morality. He redistributes 600,000 coins daily through six Halls of Charity, ensuring all citizens rigorously observe the Five Precepts.",
+    "conf": 37
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/40-Suvannakumara-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     352,
+     12
+    ],
+    "bbox": [
+     813,
+     13,
+     1828,
+     152
+    ],
+    "shape": "bubble",
+    "en": "The Samodhana",
+    "conf": 91
+   },
+   {
+    "seed": [
+     425,
+     168
+    ],
+    "bbox": [
+     1075,
+     542,
+     1689,
+     592
+    ],
+    "shape": "bubble",
+    "en": "Buddha ha",
+    "conf": 94
+   },
+   {
+    "seed": [
+     381,
+     247
+    ],
+    "bbox": [
+     1131,
+     817,
+     1527,
+     866
+    ],
+    "shape": "box",
+    "en": "Sakka Anuruddha",
+    "conf": 92
+   },
+   {
+    "seed": [
+     308,
+     326
+    ],
+    "bbox": [
+     946,
+     1071,
+     1706,
+     1141
+    ],
+    "shape": "bubble",
+    "en": "navel Royal Parents Suddhodana Mahama",
+    "conf": 58
+   },
+   {
+    "seed": [
+     223,
+     394
+    ],
+    "bbox": [
+     519,
+     1273,
+     2086,
+     1465
+    ],
+    "shape": "bubble",
+    "en": "The Buddha concludes by identifying the pote past figures with the present assembly. The noble king Suvannakumara was none other than the Buddha himself, perfectly walking the ancient path to awakening.",
+    "conf": 33
+   }
+  ],
+  "loose": [
+   "The",
+   "Present:",
+   "Time",
+   "The",
+   "Past:",
+   "Suvannakumara’s",
+   "Time"
+  ]
+ }
+]

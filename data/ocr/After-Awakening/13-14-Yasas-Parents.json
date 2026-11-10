@@ -1,0 +1,475 @@
+[
+ {
+  "img": "images/13-14-Yasas-Parents-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     306,
+     220
+    ],
+    "bbox": [
+     724,
+     635,
+     1924,
+     906
+    ],
+    "shape": "box",
+    "en": "The First Lay Disciples The Conversion of Yasa’s Family at Isipatana",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Discovering",
+   "Yasa",
+   "missing,",
+   "the",
+   "merchant",
+   "dispatched",
+   "scouts",
+   "and",
+   "rode",
+   "toward",
+   "Isipatana",
+   "Recognizing",
+   "his",
+   "son’s",
+   "cast-off",
+   "golden",
+   "sandals,",
+   "followed",
+   "trail",
+   "into",
+   "the",
+   "the"
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "merchant",
+   "approach,",
+   "the",
+   "Fortunate",
+   "One",
+   "used",
+   "psychic",
+   "powers",
+   "conceal",
+   "Yasa.",
+   "invited",
+   "the",
+   "father",
+   "sit,",
+   "promising",
+   "might",
+   "soon",
+   "see",
+   "his",
+   "son",
+   "Seeing"
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Fortunate",
+   "One",
+   "the",
+   "gradual",
+   "teaching",
+   "prepare",
+   "the",
+   "father’s",
+   "mind",
+   "desires",
+   "Heaven",
+   "delivered",
+   "The",
+   "aven"
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Knowing",
+   "the",
+   "merchant’s",
+   "mind",
+   "was",
+   "ready,",
+   "pliable,",
+   "open,",
+   "uplifted,",
+   "and",
+   "confident,",
+   "the",
+   "Awakened",
+   "One",
+   "explained",
+   "the",
+   "Suffering.",
+   "Cessation.",
+   "Origi"
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Like",
+   "clean",
+   "clo",
+   "the",
+   "dust-free",
+   "Vision-of-the-Dhamm",
+   "has",
+   "the",
+   "nature",
+   "ari",
+   "all",
+   "that",
+   "has",
+   "the",
+   "nature",
+   "cea",
+   "UVE",
+   "clo",
+   "the",
+   "atever",
+   "ceasing.’"
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Overcoming",
+   "all",
+   "doubt,",
+   "the",
+   "father",
+   "declared",
+   "his",
+   "lifelong",
+   "refuge",
+   "the",
+   "Buddha,",
+   "Dhamma,",
+   "and",
+   "Sangha.",
+   "became",
+   "the",
+   "first",
+   "disciple",
+   "globally",
+   "use",
+   "the",
+   "three-refuge",
+   "formula.",
+   "ATS"
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Listening",
+   "his",
+   "father’s",
+   "instruction,",
+   "Yasa",
+   "reflected.",
+   "His",
+   "mind",
+   "became",
+   "utterly",
+   "liberated",
+   "from",
+   "all",
+   "pollutants,",
+   "without",
+   "attachment.",
+   "could",
+   "never",
+   "return",
+   "lay",
+   "life."
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     316,
+     278
+    ],
+    "bbox": [
+     1028,
+     893,
+     1703,
+     1266
+    ],
+    "shape": "box",
+    "en": "The Fortunate One Ore allayed his psychic powers. Seeing Yasa, the father pleaded with him to relieve his mother’s grief The Buddha explained Yasa’s irreversible liberation",
+    "conf": 70
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "merchant",
+   "joyfully",
+   "invited",
+   "them",
+   "for",
+   "meal.",
+   "After",
+   "left,",
+   "Yasa",
+   "requested",
+   "full",
+   "ordination.",
+   "monk,’",
+   "said",
+   "the",
+   "Buddha.",
+   "Yasa",
+   "became",
+   "the",
+   "seventh",
+   "Worthy",
+   "One",
+   "the",
+   "world."
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "morning,",
+   "the",
+   "Fortunate",
+   "One",
+   "and",
+   "venerable",
+   "Yasa—now",
+   "attending",
+   "him",
+   "ascetic—arrived",
+   "the",
+   "merchant’s",
+   "home,",
+   "sitting",
+   "prepared",
+   "seats."
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Yasa’s",
+   "mother",
+   "and",
+   "former",
+   "wife",
+   "approached",
+   "and",
+   "worshipped",
+   "the",
+   "Fortunate",
+   "One.",
+   "delivered",
+   "the",
+   "gradual",
+   "teaching,",
+   "preparing",
+   "their",
+   "pliable,",
+   "confident",
+   "minds."
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Awakened",
+   "One",
+   "taught",
+   "them",
+   "the",
+   "Four",
+   "Noble",
+   "Truths.",
+   "Like",
+   "clean",
+   "taking",
+   "dye,",
+   "the",
+   "dust-free",
+   "Vision-of-the-Dhamma",
+   "arose",
+   "them",
+   "simultaneously."
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "They",
+   "took",
+   "refuge",
+   "the",
+   "Buddha,",
+   "Dhamma,",
+   "and",
+   "Sangha,",
+   "becoming",
+   "the",
+   "first",
+   "female",
+   "lay",
+   "disciples",
+   "via",
+   "the",
+   "three-refuge",
+   "formula.",
+   "They",
+   "then",
+   "served",
+   "excellent",
+   "meal.",
+   "They"
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Lay",
+   "Male:",
+   "Yasa’s",
+   "Father",
+   "Female:",
+   "Mother",
+   "Upasika",
+   "Realization",
+   "Realization:",
+   "Vision-of-the-Dhamma",
+   "Vision-of-the-Dhamma",
+   "Milestone",
+   "Milestone",
+   "First",
+   "global",
+   "upasaka",
+   "First",
+   "global",
+   "upasikas",
+   "Gradual",
+   "Teaching",
+   "Teaching:",
+   "Gradual",
+   "Teaching",
+   "Noble",
+   "Truths",
+   "Noble",
+   "Truths",
+   "Former"
+  ]
+ }
+]

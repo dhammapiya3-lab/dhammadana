@@ -1,0 +1,914 @@
+[
+ {
+  "img": "images/37-Vattanguli-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     297,
+     345
+    ],
+    "bbox": [
+     727,
+     1094,
+     1914,
+     1405
+    ],
+    "shape": "box",
+    "en": "“The Living ing Icon” The King Vattanguli Jataka",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Vattanguli-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     127,
+     168
+    ],
+    "bbox": [
+     331,
+     483,
+     1256,
+     995
+    ],
+    "shape": "box",
+    "en": "King Pasenadi of Kosala arrived at Jetavana, bearing perfumes and garlands. Finding the residence empty, he and his citizens were overcome with agitation. Without the Enlightened One, the world seemed empty, entirely devoid of refuge or protector.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "OSES",
+   "Ro."
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "begged",
+   "permission",
+   "create",
+   "perfect",
+   "image",
+   "for",
+   "reverence.",
+   "The",
+   "Teacher",
+   "consented,",
+   "explaining",
+   "that",
+   "great",
+   "majesty",
+   "stems",
+   "from",
+   "even",
+   "small",
+   "act",
+   "devotion—just",
+   "wise",
+   "man",
+   "once",
+   "achieved",
+   "power",
+   "repairing",
+   "broken",
+   "clay",
+   "finger.",
+   "Pasenadi",
+   "enadi",
+   "create",
+   "eache",
+   "ems",
+   "act",
+   "ust",
+   "once",
+   "power"
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     36,
+     70
+    ],
+    "bbox": [
+     109,
+     122,
+     1643,
+     512
+    ],
+    "shape": "bubble",
+    "en": "fl 4 In the past, the merchant Bandhumanava entered beautiful monastery in Angavati. Inside, lying on the floor, he discovered the broken finger of Buddha-image. -image So Recognizing rare opportunity, he resolved to accumulate merit.",
+    "conf": 42
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Vattanguli-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ripple",
+   "Merit",
+   "‘Ge",
+   "pulverized",
+   "the",
+   "clay",
+   "himself,",
+   "mixing",
+   "with",
+   "molasses",
+   "and",
+   "oil",
+   "restore",
+   "the",
+   "finger",
+   "its",
+   "original",
+   "state.",
+   "then",
+   "paid",
+   "performa",
+   "lamp-worship",
+   "before",
+   "the",
+   "restored",
+   "image"
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     511,
+     73
+    ],
+    "bbox": [
+     1534,
+     165,
+     2483,
+     691
+    ],
+    "shape": "box",
+    "en": "Seated before the image, the Bodhisatta made profound resolve: to become Fully Enghtened One, to be strong, beautiful, and long-lived, and to be entirely impervious to thieves and fearsome adversaries.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Vattanguli-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     121,
+     267
+    ],
+    "bbox": [
+     139,
+     631,
+     1200,
+     1346
+    ],
+    "shape": "bubble",
+    "en": "Ake: long heavenly existence, he was reborn as Prince Vattanguli in Baranasi. Endowed with incredible majesty, even as playing child, he could pacify others simply by raising single finger.",
+    "conf": 36
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Vattanguli-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     331,
+     66
+    ],
+    "bbox": [
+     314,
+     112,
+     2040,
+     645
+    ],
+    "shape": "bubble",
+    "en": "mee Seeking wealth for charity to attain Buddhahood, King Vattanguli demanded gifts from one hundred kings across Jambudipa. Affronted by their royal pride, the kings assembled eighteen akkhobhinis of soldiers and marched to war.",
+    "conf": 35
+   }
+  ],
+  "loose": [
+   "26)"
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     597,
+     311
+    ],
+    "bbox": [
+     1673,
+     975,
+     2582,
+     1418
+    ],
+    "shape": "box",
+    "en": "Forbidding his ministers from fighting, Vattanguli faced the armies alone. By merely raising one finger, his sheer karmic majesty caused the kings, elephants, and horses to spin and fall face down, entirely pacified.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Vattanguli-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     86,
+     55
+    ],
+    "bbox": [
+     116,
+     66,
+     1141,
+     684
+    ],
+    "shape": "box",
+    "en": "Full of pity, he granted the vanquished kings safety. He treated them to lavish meal and administered the five precepts, transforming fierce adversaries into devoted allies through the power of his merit.",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Vattanguli-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Contemplating",
+   "the",
+   "origin",
+   "his",
+   "invincibility,",
+   "caused",
+   "the",
+   "celestial",
+   "abode",
+   "warm.",
+   "Sakka,",
+   "king",
+   "gods,",
+   "descended",
+   "radiant",
+   "light",
+   "inquire",
+   "about",
+   "the",
+   "meritorious",
+   "deeds",
+   "that",
+   "birthed",
+   "such",
+   "immense",
+   "power.",
+   "unseen"
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Empowered",
+   "Sakka,",
+   "the",
+   "Bodhisatta",
+   "recalled",
+   "his",
+   "previous",
+   "births.",
+   "revealed",
+   "his",
+   "past",
+   "identity",
+   "the",
+   "merchant",
+   "explaining",
+   "how",
+   "restored",
+   "the",
+   "broken",
+   "clay",
+   "finger",
+   "Buddha-image",
+   "with",
+   "molasses",
+   "and",
+   "oil."
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     169,
+     171
+    ],
+    "bbox": [
+     36,
+     506,
+     1270,
+     1438
+    ],
+    "shape": "bubble",
+    "en": "ws Birth only in ksatriya or brahmana families xs Immense wealth ww Attended by slaves The Bodhisatta explained the economy of merit. single act of creating or repairing Buddha- image guarantees supreme earthly status, radiant physical beauty, and an existence entirely free from enmity.",
+    "conf": 59
+   },
+   {
+    "seed": [
+     436,
+     171
+    ],
+    "bbox": [
+     1369,
+     506,
+     2212,
+     1280
+    ],
+    "shape": "box",
+    "en": "ws Well-proportioned ws Golden hue ws Beautiful and healthy ws Long-lived",
+    "conf": 61
+   }
+  ],
+  "loose": [
+   "‘The",
+   "Matrix",
+   "Merit:",
+   "Part",
+   "Earthly",
+   "Status",
+   "Phy",
+   "Att"
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     182,
+     213
+    ],
+    "bbox": [
+     43,
+     179,
+     1270,
+     1438
+    ],
+    "shape": "bubble",
+    "en": "as Never born in hells ws Born among gods as Surrounded by divine hosts Beyond ere Beyon earthly realms, this merit prevents rebirth in hells, ensuring celestial joy. Ultimately, it fuels the journey across samsara, culminating in the complete deliverance of Nibbana. Pea",
+    "conf": 37
+   },
+   {
+    "seed": [
+     460,
+     213
+    ],
+    "bbox": [
+     1369,
+     678,
+     2212,
+     1280
+    ],
+    "shape": "box",
+    "en": "Omniscience Ws Crossing the ocean of birth and death ws Attaining Nibbana",
+    "conf": 49
+   }
+  ],
+  "loose": [
+   "(GL",
+   "ANS",
+   "if:",
+   "Part",
+   "Attainment",
+   "Ultimate"
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     537,
+     325
+    ],
+    "bbox": [
+     1660,
+     998,
+     2615,
+     1422
+    ],
+    "shape": "box",
+    "en": "Hearing op the astonishing results of honoring ap Las} 3 Buddha-image, image, Sakka admonished the kings to seek forgiveness. The hundred kings happily returned ry to their kingdoms, sending annual tributes of wealth and jewels to Vattanguli forevermore.",
+    "conf": 48
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Vattanguli-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     316,
+     185
+    ],
+    "bbox": [
+     572,
+     509,
+     2066,
+     952
+    ],
+    "shape": "bubble",
+    "en": "The Economy of Merit: The Vattangulirajajataka reveals profound karmic physics. Immense macro-cosmic power—invincible kingship, heavenly rebirth, and ultimate liberation—stems directly from the focused intention of single, micro-scale act of devotion.",
+    "conf": 44
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Vattanguli-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     548,
+     138
+    ],
+    "bbox": [
+     1564,
+     149,
+     2400,
+     1088
+    ],
+    "shape": "bubble",
+    "en": "King ing Pasenadi of Kosala seeks to preserve the Buddha’s teaching for future generations. The Buddha grants him per- mission to create an image, ensuring the prosperity of the entire world.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Vattanguli-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Saddha",
+   "Merit",
+   "arises",
+   "from",
+   "faith",
+   "not",
+   "wealth.",
+   "Whether",
+   "crafted",
+   "from",
+   "humble",
+   "clay",
+   "precious",
+   "jewels,",
+   "making",
+   "Buddha",
+   "image",
+   "according",
+   "one’s",
+   "ability",
+   "yields",
+   "unimaginable",
+   "fruit."
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     280,
+     199
+    ],
+    "bbox": [
+     823,
+     433,
+     2176,
+     1118
+    ],
+    "shape": "bubble",
+    "en": "This merit defies magical calculation. It exceeds counting peas across four islands, measuring all water with raft, or filling the heavens entirely with silver and gold.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "2.8"
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     282,
+     375
+    ],
+    "bbox": [
+     93,
+     1151,
+     1908,
+     1392
+    ],
+    "shape": "bubble",
+    "en": "The king harvests an excellent sandalwood tree. Me Artisans carve magnificent likeness, anoint it with fragrant oil, and drape it in divine cloth the color of lac.",
+    "conf": 55
+   }
+  ],
+  "loose": [
+   "EOD"
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "vie",
+   "BRS"
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     297,
+     282
+    ],
+    "bbox": [
+     952,
+     903,
+     2199,
+     1303
+    ],
+    "shape": "box",
+    "en": "The Buddha extends The Buddha extends his right arm—resembling red lightning and the trunk of Eravana —to halt the statue. “Stay in my order (sdsana),” he commands, entrusting the teaching to the image for 5,000 years",
+    "conf": 72
+   }
+  ],
+  "loose": [
+   "ASD",
+   "ANS"
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     591,
+     334
+    ],
+    "bbox": [
+     1716,
+     1055,
+     2556,
+     1379
+    ],
+    "shape": "box",
+    "en": "Witnessing vu the ov lifeless 2 image 2 honor 2 5 the teacher, 3 5 2 the crowd rejoices. Following great meal, Pasenadi asks: “What is the future state of those who make your image? wish to hear about that fruit.”",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Vattanguli-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     248,
+     46
+    ],
+    "bbox": [
+     479,
+     145,
+     2162,
+     512
+    ],
+    "shape": "box",
+    "en": "The Karmic Matrix: Avoidance The faithful image-maker escapes miserable rebirths. They are entirely protected from the very hot Safjiva and cold Lokantara hells, the realms of ghosts, and severe physical afflictions.",
+    "conf": 40
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Vattanguli-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     256,
+     77
+    ],
+    "bbox": [
+     813,
+     172,
+     1828,
+     503
+    ],
+    "shape": "box",
+    "en": "The Karmic Matrix: Worldly Rewards While wandering in samsara, they experience supreme joy. They are reborn into exalted families, endowed with radiant beauty, and sport with gods to divine music in the heavenly Nandana garden.",
+    "conf": 59
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Vattanguli-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     308,
+     334
+    ],
+    "bbox": [
+     883,
+     1032,
+     1762,
+     1303
+    ],
+    "shape": "box",
+    "en": "The Karmic Matrix: Ultimate Attainment The final reward perfectly matches one’s deepest spiritual aspiration. Image-makers secure the karmic momentum to become disciple (savaka), Paccekabuddha, or attain Supreme Buddhahood and final nibbdna.",
+    "conf": 39
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Vattanguli-27-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Creation",
+   "not",
+   "the",
+   "only",
+   "path",
+   "supreme",
+   "merit.",
+   "Faithfully",
+   "repairing",
+   "even",
+   "single",
+   "broken",
+   "finger",
+   "old,",
+   "weathered",
+   "Buddha",
+   "image",
+   "yields",
+   "impossibly",
+   "great",
+   "and",
+   "indescribable",
+   "karmic",
+   "fruit."
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-28-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     325,
+     296
+    ],
+    "bbox": [
+     764,
+     936,
+     1878,
+     1283
+    ],
+    "shape": "box",
+    "en": "Filled with extreme joy, King Pasenadi makes profound resolution: to remember his past lives, protect the teaching, free his mother and subjects from fear, and ultimately fulfill the perfections of Buddha.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Vattanguli-29-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     330,
+     169
+    ],
+    "bbox": [
+     946,
+     483,
+     1713,
+     998
+    ],
+    "shape": "box",
+    "en": "The Samodhiana (Identification) The Buddha concludes by revealing the truth of past lives. King Vattanguli’s messenger is now Ananda, Sakka is Anuruddha, and the great King Vattanguli himself is the Fully Enlightened One.",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "Constellation",
+   "King",
+   "Past",
+   "Present",
+   "Royal",
+   "Messenger",
+   "Ananda",
+   "Sakka",
+   "Anuruddha",
+   "Mapping",
+   "pping",
+   "uruddha"
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-30-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     308,
+     314
+    ],
+    "bbox": [
+     836,
+     982,
+     1809,
+     1260
+    ],
+    "shape": "box",
+    "en": "The creation of the living icon binds the miraculous folklore of the past to the preservation of the sdsana. It serves as an eternal promise of ultimate liberation for all who remember with faith.",
+    "conf": 44
+   }
+  ],
+  "loose": []
+ }
+]

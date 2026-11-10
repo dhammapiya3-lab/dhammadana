@@ -1,0 +1,590 @@
+[
+ {
+  "img": "images/03-Sammajiva-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     293,
+     180
+    ],
+    "bbox": [
+     681,
+     423,
+     2004,
+     965
+    ],
+    "shape": "bubble",
+    "en": "\"The Sammajiva Jataka Lanna Tale of Right Livelihood, Filial Piety, and the Path to Omniscience",
+    "conf": 48
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-Sammajiva-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     229,
+     357
+    ],
+    "bbox": [
+     655,
+     1071,
+     1987,
+     1412
+    ],
+    "shape": "box",
+    "en": "At Jetavana, monk grew thin feeding his alms to his parents. His peers fiercely criticized him, accusing him of improperly wasting gifts of faith on laypeople. ba.",
+    "conf": 51
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-Sammajiva-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     288,
+     299
+    ],
+    "bbox": [
+     717,
+     903,
+     1881,
+     1280
+    ],
+    "shape": "bubble",
+    "en": "The Buddha summoned the monk, validating his actions: The supporting of parents is the very lineage of true men... wise men of old sacrificed even their life for the sake of their parents. ‘bed sae",
+    "conf": 42
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-Sammajiva-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Livelihood",
+   "Loop",
+   "the",
+   "Bodhisatta",
+   "was",
+   "born",
+   "poor.",
+   "earned",
+   "the",
+   "name",
+   "(Right",
+   "Livelihood)",
+   "supporting",
+   "his",
+   "parents",
+   "through",
+   "continuous",
+   "cycle",
+   "honest",
+   "labor,",
+   "devotion,",
+   "and",
+   "merit.",
+   "ancient",
+   "Baranasi,",
+   "parents"
+  ]
+ },
+ {
+  "img": "images/03-Sammajiva-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "guard",
+   "merchant’s",
+   "crops,",
+   "and",
+   "his",
+   "mother",
+   "lived",
+   "simple",
+   "field-shed.",
+   "While",
+   "the",
+   "mother",
+   "slept,",
+   "terribly",
+   "venomous",
+   "snake",
+   "slithered",
+   "from",
+   "anthill",
+   "and",
+   "bit",
+   "her",
+   "foot."
+  ]
+ },
+ {
+  "img": "images/03-Sammajiva-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Snake]",
+   "[Spare",
+   "Snake]",
+   "Forgive",
+   "injury,",
+   "avenged,",
+   "but",
+   "morality",
+   "destroyed",
+   "preserve",
+   "morality.",
+   "Finding",
+   "the",
+   "snake,",
+   "weighed",
+   "his",
+   "choices.",
+   "realized",
+   "killing",
+   "could",
+   "not",
+   "restore",
+   "his",
+   "mother,",
+   "but",
+   "would",
+   "destroy",
+   "his",
+   "morality",
+   "(Sila)",
+   "spared",
+   "it,",
+   "saying:",
+   "“Go",
+   "off",
+   "ease.",
+   "the",
+   "injury,",
+   "are",
+   "Forgive",
+   "his",
+   "uld",
+   "ying:"
+  ]
+ },
+ {
+  "img": "images/03-Sammajiva-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Recognizing",
+   "pure",
+   "merit,",
+   "Sakka",
+   "disguised",
+   "brahman.",
+   "offered",
+   "life-restoring",
+   "mantra,",
+   "but",
+   "demanded",
+   "gruesome",
+   "payment:",
+   "the",
+   "fresh",
+   "flesh",
+   "human",
+   "heart.",
+   "himself"
+  ]
+ },
+ {
+  "img": "images/03-Sammajiva-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "FER",
+   "Anxious",
+   "fulfill",
+   "the",
+   "perfection",
+   "Resolute",
+   "Determination",
+   "(Adhitthdna)",
+   "split",
+   "open",
+   "his",
+   "chest.",
+   "desired",
+   "neither",
+   "worldly",
+   "power",
+   "nor",
+   "rebirth",
+   "offering",
+   "his",
+   "heart",
+   "solely",
+   "condition",
+   "for",
+   "omniscient",
+   "knowledge",
+   "ajiva"
+  ]
+ },
+ {
+  "img": "images/03-Sammajiva-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     237,
+     102
+    ],
+    "bbox": [
+     99,
+     102,
+     1250,
+     916
+    ],
+    "shape": "bubble",
+    "en": "eee aif aes VAS aS Seren ESS",
+    "conf": 33
+   },
+   {
+    "seed": [
+     108,
+     406
+    ],
+    "bbox": [
+     231,
+     1243,
+     2410,
+     1445
+    ],
+    "shape": "box",
+    "en": "With the heart placed upon her face and sprinkled with the waters of the undying, the mother awoke as if deep leep. Simultaneously, the Great Being Mes dead.",
+    "conf": 41
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-Sammajiva-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Awaking",
+   "find",
+   "her",
+   "son",
+   "dead,",
+   "the",
+   "mother",
+   "was",
+   "plunged",
+   "into",
+   "suffering",
+   "Tormented",
+   "and",
+   "utterly",
+   "desolate",
+   "she",
+   "realized",
+   "she",
+   "was",
+   "entirely",
+   "without",
+   "protector"
+  ]
+ },
+ {
+  "img": "images/03-Sammajiva-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "power",
+   "truthful",
+   "utterance",
+   "(Sacca-kiriya),",
+   "she",
+   "faced",
+   "east:",
+   "have",
+   "harmed",
+   "nothing,",
+   "taken",
+   "nothing",
+   "not",
+   "given,",
+   "spoken",
+   "lies,",
+   "and",
+   "drunk",
+   "intoxicants.",
+   "this",
+   "speaking",
+   "truth,",
+   "may",
+   "son",
+   "live.”",
+   "Recalling",
+   "“Thave"
+  ]
+ },
+ {
+  "img": "images/03-Sammajiva-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     249,
+     66
+    ],
+    "bbox": [
+     443,
+     76,
+     2199,
+     443
+    ],
+    "shape": "box",
+    "en": "The Dual Sacrifices",
+    "conf": 96
+   },
+   {
+    "seed": [
+     256,
+     184
+    ],
+    "bbox": [
+     565,
+     562,
+     2076,
+     863
+    ],
+    "shape": "box",
+    "en": "The Son: Gave his physical heart Mechanism: Resolute Determination (Adhitthana) Result: Revived the Mother",
+    "conf": 93
+   },
+   {
+    "seed": [
+     208,
+     315
+    ],
+    "bbox": [
+     565,
+     965,
+     2076,
+     1260
+    ],
+    "shape": "box",
+    "en": "The Mother: Gave her flawless moral record Mechanism: Power of Truth (Sacca) Result: Revived the Son SS",
+    "conf": 87
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-Sammajiva-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sprinkled",
+   "with",
+   "the",
+   "waters",
+   "the",
+   "undying,",
+   "arose",
+   "unimpaired.",
+   "Sakka",
+   "revealed",
+   "his",
+   "effulgent",
+   "form,",
+   "instructing",
+   "them",
+   "remain",
+   "diligent",
+   "assuring",
+   "Sammajiva",
+   "his",
+   "future",
+   "Buddhahood"
+  ]
+ },
+ {
+  "img": "images/03-Sammajiva-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     569,
+     71
+    ],
+    "bbox": [
+     1640,
+     195,
+     2457,
+     516
+    ],
+    "shape": "box",
+    "en": "Sammajiva journey systematically fulfilled the requirements for Awakening (Paramis)",
+    "conf": 61
+   },
+   {
+    "seed": [
+     125,
+     101
+    ],
+    "bbox": [
+     284,
+     284,
+     635,
+     423
+    ],
+    "shape": "bubble",
+    "en": "Gen eae",
+    "conf": 40
+   },
+   {
+    "seed": [
+     145,
+     293
+    ],
+    "bbox": [
+     337,
+     827,
+     929,
+     1154
+    ],
+    "shape": "bubble",
+    "en": "1. Sila (Morality) Sparing the venomous snake",
+    "conf": 95
+   },
+   {
+    "seed": [
+     352,
+     298
+    ],
+    "bbox": [
+     1058,
+     889,
+     1584,
+     1151
+    ],
+    "shape": "box",
+    "en": "2. Dana (Generosity) Giving his own heart",
+    "conf": 31
+   },
+   {
+    "seed": [
+     534,
+     288
+    ],
+    "bbox": [
+     1716,
+     889,
+     2351,
+     1154
+    ],
+    "shape": "box",
+    "en": "3. Adhitthana (Determination): Directing these acts explicitly toward omniscience.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-Sammajiva-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "concluded",
+   "the",
+   "discourse",
+   "identifying",
+   "the",
+   "rebirths:",
+   "The",
+   "Merchan",
+   "King",
+   "Ananda",
+   "ajiva",
+   "The",
+   "Buddha",
+   "for",
+   "Sammajiva"
+  ]
+ }
+]
