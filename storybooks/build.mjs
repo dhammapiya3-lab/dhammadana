@@ -36,6 +36,9 @@ function bookInfo(slug) {
     tags: (h.tags || []).map(t => KO.tags[t] || t), cover: `${S.img_base}/covers/${slug}.jpg`, d,
   };
 }
+// 번역을 마친 책만 공개 (운영자 요청, 2026-11-10). ko.json site.only_ready=false 로 끄면 46권 모두 보임.
+const ONLY = S.only_ready !== false;
+const PUB = new Set(Object.keys(CAT.books).filter(slug => !ONLY || Object.values(CAT.books[slug].stories).some(s => READY[`${slug}/${sid(s.file)}`])));
 const storyTitle = (slug, s) => KO.book_detail[slug]?.stories?.[s.file]?.title || s.title;
 
 function layout({ title, body, desc = '', page = '', image = '' }) {
@@ -85,15 +88,16 @@ put('index.html', layout({ page: 'home', body: `<section class="hero"><div class
   <h1>법을 담은 그림책</h1><p>${esc(S.intro)}</p>
   <div class="filter"><input id="q" type="search" placeholder="${U.filter}" aria-label="${U.filter}"><button id="qReset" type="button">${U.reset}</button></div>
 </div></section>
-<div class="wrap">${(() => { const listed = new Set(KO.tiers.flatMap(t => t.sections.flatMap(x => x[1]))); const fresh = Object.keys(CAT.books).filter(b => !listed.has(b));
+<div class="wrap">${(() => { const listed = new Set(KO.tiers.flatMap(t => t.sections.flatMap(x => x[1]))); const fresh = Object.keys(CAT.books).filter(b => !listed.has(b) && PUB.has(b));
   return fresh.length ? `<div class="tier"><h2 class="tier-h">새로 들어온 그림책</h2><p class="muted tier-note">원 사이트에 새로 올라온 책입니다. 곧 알맞은 자리로 옮깁니다.</p><section class="cat"><div class="grid">${fresh.map(b => card(bookInfo(b))).join('')}</div></section></div>` : ''; })()}
-${KO.tiers.map((t, ti) => `<div class="tier t${ti}"><h2 class="tier-h">${esc(t.name)}</h2><p class="muted tier-note">${esc(t.note)}</p>
+${KO.tiers.map(t => ({ ...t, sections: t.sections.map(([n, bs]) => [n, bs.filter(b => CAT.books[b] && PUB.has(b))]).filter(x => x[1].length) })).filter(t => t.sections.length).map((t, ti) => `<div class="tier t${ti}"><h2 class="tier-h">${esc(t.name)}</h2><p class="muted tier-note">${esc(t.note)}</p>
 ${t.sections.map(([name, books]) => `<section class="cat">${name ? `<h3>${esc(name)}</h3>` : ''}
-  <div class="grid">${books.filter(b => CAT.books[b]).map(b => card(bookInfo(b))).join('')}</div></section>`).join('')}</div>`).join('')}
+  <div class="grid">${books.map(b => card(bookInfo(b))).join('')}</div></section>`).join('')}</div>`).join('')}
+${ONLY ? `<p class="muted soon">다른 그림책들도 우리말로 옮기는 대로 하나씩 더합니다.</p>` : ''}
 <p id="noRes" class="muted" hidden>${U.no_result}</p></div>` }));
 
 // 책 화면 · 이야기 화면
-for (const slug of Object.keys(CAT.books)) {
+for (const slug of Object.keys(CAT.books).filter(b => PUB.has(b))) {
   const B = CAT.books[slug], b = bookInfo(slug), d = b.d;
   const list = Object.values(B.stories);
   const toc = B.toc.filter(t => t.h || t.story).map(t => t.h
@@ -137,11 +141,11 @@ put('about/index.html', layout({ title: '소개', page: 'about', body: `<div cla
 <h1>붓다담마 그림책 소개</h1>
 <p>${esc(S.intro)}</p>
 <h2>원작</h2><p>이 그림책들은 아난다조띠 스님(Bhante Ānandajoti)이 기획하고 이끈 『Dharma Storybooks』(<a href="${S.orig_url}">dharma-storybooks.net</a>)를 우리말로 옮긴 것입니다. 원작의 그림은 스님의 지도로 Gemini Notebook이 만들었습니다. 스님은 1987년부터 아시아에서 지내며 1996년 테라와다 전통에서 비구계를 받았습니다.</p>
-<h2>한국어판</h2><p>그림 속 말풍선과 설명 상자의 영어를 지우고 우리말을 넣었습니다. 그림 자체는 원작 그대로입니다. 책 소개와 줄거리도 우리말로 옮겼습니다. 아직 번역하지 않은 이야기는 영어 원본으로 연결됩니다. 번역은 <a href="${S.library_url}">붓다담마 법보시 도서관</a>(我無말들)이 맡았습니다.</p>
+<h2>한국어판</h2><p>그림 속 말풍선과 설명 상자의 영어를 지우고 우리말을 넣었습니다. 그림 자체는 원작 그대로입니다. 책 소개와 줄거리도 우리말로 옮겼습니다. 원작의 다른 그림책들도 우리말로 옮기는 대로 하나씩 더합니다. 번역은 <a href="${S.library_url}">붓다담마 법보시 도서관</a>(我無말들)이 맡았습니다.</p>
 <h2>라이선스</h2><p>${esc(S.license)}</p>
 </article></div>` }));
 
 put('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${S.url}/sitemap.xml\n`);
-const urls = ['/', '/about/', ...Object.keys(CAT.books).flatMap(s => [`/${s}/`, ...Object.values(CAT.books[s].stories).map(x => `/${s}/${sid(x.file)}/`)])];
+const urls = ['/', '/about/', ...[...PUB].flatMap(s => [`/${s}/`, ...Object.values(CAT.books[s].stories).map(x => `/${s}/${sid(x.file)}/`)])];
 put('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(u => `<url><loc>${S.url}${u}</loc></url>`).join('')}</urlset>\n`);
 console.log('pages', urls.length, 'ready stories', Object.keys(READY).length);
