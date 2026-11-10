@@ -854,6 +854,10 @@ a.paper-request:hover{filter:brightness(1.08)}
 .r-fig .fig-btn img[src*="DL-0010-write"]{max-height:110px;border:0;margin:0 0 0 auto}
 .reflow p.r-center{text-align:center;text-indent:0}
 .reflow p.r-right{text-align:right;text-indent:0}
+/* '++ ' 인쇄본에서 들여 쓴 묶음(게송·독송문) — 번호로 시작하면 번호 뒤 글과 다음 줄들을 맞춤 (운영자 요청, 2026-11-11) */
+.reflow p.r-ind{padding-left:2.6em;text-indent:0}
+.reflow p.r-ind.r-num{padding-left:2.6em;text-indent:-1.6em}
+.reflow p.r-num:has(+ p.r-num){margin-bottom:.15em}  /* 인쇄본처럼 번호 묶음끼리는 붙여서 */
 /* ● 항목: 다음 줄들을 ● 만큼 들여쓰기, '|| ' 문단은 앞 쪽에서 이어진 항목 */
 .reflow p.r-bul{padding-left:.95em;text-indent:-.95em}
 .reflow p.r-bul-c{padding-left:.95em;text-indent:0}

@@ -11,7 +11,7 @@
 import glob, json, re, sys
 
 MARK = re.compile(r'(?m)^===\s*(.*?)\s*===\s*$')
-plain = lambda s: re.sub(r'^(?:## |\^\^ |:: |\|\| )+', '', s.strip()).replace('**', '').replace('==', '')
+plain = lambda s: re.sub(r'^(?:## |\^\^ |:: |\|\| |\+\+ )+', '', s.strip()).replace('**', '').replace('==', '')
 
 
 def parse(body):

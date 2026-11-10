@@ -741,7 +741,7 @@ function reflowHtml() {
     const keep = k => !(p.n === c.from && k < (c.k0 || 0)) && !(p.n === c.to && c.kEnd != null && k >= c.kEnd);
     const heads = new Set(R.toc.filter(t => t.page === p.n || t.page === p.n - 1).map(t => headKey(t.title)));
     if (!ps.length) return `<span id="pm-${p.n}"></span>`;
-    return `<span class="pmark${p.label ? '' : ' nolabel'}" id="pm-${p.n}">${p.label ? esc(pageName(p)) : ''}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : isChDup(s, p.n, c, k) ? ' class="ch-dup"' : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : /^\^\^ /.test(s) ? ' class="r-ctitle"' : /^:: /.test(s) ? ' class="r-center"' : /^>> /.test(s) ? ' class="r-right"' : /^● /.test(s) ? ' class="r-bul"' : /^\|\| /.test(s) ? ' class="r-bul-c"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? ' class="sub-h" role="heading" aria-level="4"' : ''}>${fnMark(phMark(boldMark(markUl(s.replace(/^## |^\^\^ |^:: |^>> |^\|\| /, ''), p.n)))).replace(/\n/g, '<br>')}</p>`).join('') || ''}`;
+    return `<span class="pmark${p.label ? '' : ' nolabel'}" id="pm-${p.n}">${p.label ? esc(pageName(p)) : ''}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : isChDup(s, p.n, c, k) ? ' class="ch-dup"' : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : /^\^\^ /.test(s) ? ' class="r-ctitle"' : /^:: /.test(s) ? ' class="r-center"' : /^>> /.test(s) ? ' class="r-right"' : /^\+\+ /.test(s) ? (/^\+\+ \d+\. /.test(s) ? ' class="r-ind r-num"' : ' class="r-ind"') : /^● /.test(s) ? ' class="r-bul"' : /^\|\| /.test(s) ? ' class="r-bul-c"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? ' class="sub-h" role="heading" aria-level="4"' : ''}>${fnMark(phMark(boldMark(markUl(s.replace(/^## |^\^\^ |^:: |^>> |^\|\| |^\+\+ /, ''), p.n)))).replace(/\n/g, '<br>')}</p>`).join('') || ''}`;
   }).join('');
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}" data-ci="${ci - 1}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}" data-ci="${ci + 1}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}</h3></div>` : ''}${body}${nav}</div>`;
@@ -1108,7 +1108,7 @@ function openShare(d, pl) {
 function domToSrc(src, off) {
   // 화면에는 '## ' 가 없고, [^12]: 는 '12', [^12] 는 '12' 로 보입니다
   let i = 0, d = 0;
-  if (src.startsWith('## ') || src.startsWith('^^ ') || src.startsWith(':: ') || src.startsWith('>> ') || src.startsWith('|| ')) i = 3;
+  if (src.startsWith('## ') || src.startsWith('^^ ') || src.startsWith(':: ') || src.startsWith('>> ') || src.startsWith('|| ') || src.startsWith('++ ')) i = 3;
   const m0 = src.slice(i).match(/^\[\^([^\]]+)\]:\s*/); if (m0) { if (off < m0[1].length) return i; d += m0[1].length; i += m0[0].length; }
   while (i < src.length && d < off) {
     const m = src.slice(i).match(/^\[\^([^\]]+)\]/);
@@ -1337,7 +1337,7 @@ const fnMark = h => h.replace(/^\[\^([^\]]+)\]:\s*/, '<span class="fn-no" data-f
 // 소제목 알아보기: 빈칸·괄호 속 풀이를 빼고 목차 제목과 같으면 소제목
 const isHead = t => /^## /.test(t);
 // **굵은 글씨**: 관리자 화면 본문에서 ** 로 감싼 곳 (화면에서는 굵게, 듣기·찾기·밑줄에서는 ** 를 뺌)
-const unB = s => String(s || '').replace(/\*\*|==/g, '').replace(/^(?:\^\^|::|>>|\|\|) /gm, '');
+const unB = s => String(s || '').replace(/\*\*|==/g, '').replace(/^(?:\^\^|::|>>|\|\||\+\+) /gm, '');
 // 검색 결과에 보일 글: 그림 주소·## ·각주 표시 같은 내부 부호를 뺌
 const plainT = s => unB(s).replace(/!\[[^\]]*\]\([^)]*\)/g, ' ').replace(/^#{1,6} /gm, '').replace(/\[\^\d+\]:?\s?/g, ' ').replace(/\[\[[^\]]*\]\]/g, ' ');
 // **굵게**, ==색 강조(인쇄본·전자책의 하늘색 글자)==
@@ -1406,7 +1406,7 @@ function blockHtml(s, n, k) {
 const tocLines = s => s.replace(/^%% /, '').split('\n').filter(l => l.trim()).map(l => { if (l.trim() === '~') return { sp: true, lv: 0, t: '', p: '' }; const m = l.match(/^(-*)\s*(.*?)(?:\s+\|\s*(\S+))?\s*$/); return { lv: m[1].length, t: m[2], p: m[3] || '' }; });
 const isFootnote = p => /^\[\^[^\]]+\]:/.test(p);
 // 장 첫 쪽에서 장 제목과 같은 글(소제목·가운데 제목)은 화면에서 숨기고 소리로도 두 번 읽지 않음 — 장 제목으로 통일
-const dupKey = t => headKey(String(t).replace(/^(::|\^\^|##)\s*/, '').replace(/^[^┃\n]*┃/, '')).replace(/[.,:·\-–—!?■□●○◆◇◎◉★☆▶▷◀◁※•_]/g, '');  // '책 제목┃부록' 같은 쪽 머리 표시는 뒤쪽 이름만
+const dupKey = t => headKey(String(t).replace(/^(::|\^\^|##|\+\+)\s*/, '').replace(/^[^┃\n]*┃/, '')).replace(/[.,:·\-–—!?■□●○◆◇◎◉★☆▶▷◀◁※•_]/g, '');  // '책 제목┃부록' 같은 쪽 머리 표시는 뒤쪽 이름만
 // 장 첫머리의 문단 몇 개(예: 'Ⅰ' + '껍데기는 버리고…')를 이으면 장 제목과 같아지는지 → 그 문단들의 'n:k' 모음
 function chDups(c) {
   if (!c || !c.title) return new Set();
