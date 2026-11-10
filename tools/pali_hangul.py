@@ -43,6 +43,10 @@ def patch_font(src):
             cur.append((op, a))
             if op in ('closePath', 'endPath'): out.append(tuple(cur)); cur = []
         return out
+    def contours_of(gn):
+        return contours(gn)
+    def bb(c):
+        xs = [x for op, a in c for x, y in a]; ys = [y for op, a in c for x, y in a]; return min(xs), min(ys), max(xs), max(ys)
     def marks(ref, base):
         b = set(contours(G(base))); return [c for c in contours(lig(ref)) if c not in b]
     NEW = [('ph.bya_long', '뱌', marks('바\uFE20', '바'), ['uniFE20']),
@@ -68,8 +72,8 @@ def patch_font(src):
     def rect(x0, y0, x1, y1): return (('moveTo', ((x0, y0),)), ('lineTo', ((x1, y0),)), ('lineTo', ((x1, y1),)), ('lineTo', ((x0, y1),)), ('closePath', ()))
     SOLO_SHAPES = {'″': marks('야\u02BA', '야'), '᷾': marks('이\u0346', '이'), '᷃': marks('오\u030C', '오'),
                    '᷇': marks('바\uFE20', '바'), '̫': marks('냐\u0330', '냐'),
-                   '˔': [rect(40, 300, 280, 340), rect(140, 340, 180, 560)],   # ⊥ 위쪽 점 → 첫소리 (인쇄본 모양)
-                   '˕': [rect(40, 520, 280, 560), rect(140, 300, 180, 520)]}   # ⊤ 아래쪽 점 → 끝소리
+                   '˔': [rect(40, 250, 340, 300), rect(165, 300, 215, 560)],   # ⊥ 위쪽 점 → 첫소리 (인쇄본 모양)
+                   '˕': [rect(40, 510, 340, 560), rect(165, 250, 215, 510)]}   # ⊤ 아래쪽 점 → 끝소리
     cmap_tables = [t for t in f['cmap'].tables if t.isUnicode()]
     for ch, mk in SOLO_SHAPES.items():
         assert mk, ch
@@ -81,6 +85,17 @@ def patch_font(src):
         cs.charStrings[name] = len(cs.charStringsIndex); cs.charStringsIndex.append(pen.getCharString(private=top.Private, globalSubrs=cff.GlobalSubrs))
         top.charset.append(name); order.append(name); f['hmtx'][name] = (w, 60)
         for t in cmap_tables: t.cmap[SOLO[ch]] = name
+    # 낱자 'ㄴ̫' (439쪽 'ㄴ̫'는 … 설명) — 글꼴에 낱자 ㄴ 이 없어 '느'의 ㄴ 을 낱자 크기로 늘리고, 그 아래에 '빤̫'의 ñ 물결 (U+E907)
+    nieun = [c for c in contours_of(G('느')) if bb(c)[3] > 200][0]
+    x0, y0, x1, y1 = bb(nieun); sy = 1.35; ty = 110 - y0 * sy
+    nieun = tuple((op, tuple((x, y * sy + ty) for x, y in a)) for op, a in nieun)
+    til = marks('빤\u0330', '빤'); tx0, _, tx1, _ = bb([q for c in til for q in c]); dx = (x0 + x1) / 2 - (tx0 + tx1) / 2
+    pen = T2CharStringPen(936, gs)
+    for c in [nieun] + [tuple((op, tuple((x + dx, y + 40) for x, y in a)) for op, a in c) for c in til]:
+        for op, a in c: getattr(pen, op)(*a)
+    cs.charStrings['ph.nieun_ny'] = len(cs.charStringsIndex); cs.charStringsIndex.append(pen.getCharString(private=top.Private, globalSubrs=cff.GlobalSubrs))
+    top.charset.append('ph.nieun_ny'); order.append('ph.nieun_ny'); f['hmtx']['ph.nieun_ny'] = (936, int(x0))
+    for t in cmap_tables: t.cmap[0xE907] = 'ph.nieun_ny'
     f.setGlyphOrder(order); f['maxp'].numGlyphs = len(order)
     out = tempfile.mktemp(suffix='.otf'); f.save(out); return out
 
@@ -132,7 +147,11 @@ for bid in ids:
     ws = sorted({w for w in WRE.findall(t['body']) if re.search('[' + M + ']', w)})
     fix = t.get('ph_fix', {})  # 운영자가 정한 바른 표기 {책 본문 낱말: 책과 같은 부호로 쓴 바른 표기} — 본문은 그대로, 화면에만
     t['ph'] = {w: SYL.sub(lambda m: syl(m.group(1), m.group(2)), fix.get(w, w)) for w in ws}
-    for m in re.finditer('(?<![가-힣' + M + '])([' + M + '])', t['body']):
+    # ph_show {책 본문 구절: 책 부호 표기} — ˔ ˕ 를 글꼴 선택(어느 소리에 붙는지)과 함께 인쇄본처럼 보이는 기호로도 (437쪽 설명)
+    for k, v in t.get('ph_show', {}).items():
+        t['ph'][k] = SYL.sub(lambda m: syl(m.group(1), m.group(2)) + ''.join(chr(SOLO[c]) for c in m.group(2) if c in '˔˕'), v)
+    if 'ㄴ̫' in t['body']: t['ph']['ㄴ̫'] = '\uE907'
+    for m in re.finditer('(?<![가-힣ㄱ-ㅎ' + M + '])([' + M + '])', t['body']):
         c = m.group(1)
         if ord(c) in (0x2033,) or c in SOLO: t['ph'][c] = chr(SOLO[c])
     allw |= set(t['ph'].values())
@@ -141,6 +160,6 @@ for bid in ids:
 if left: print('글꼴에 합친 글자가 없어 부호를 따로 둔 곳:', ' '.join(sorted(set(left))))
 with tempfile.NamedTemporaryFile('w', suffix='.txt', delete=False) as f:
     f.write('\n'.join(sorted(allw)))
-subprocess.run(['pyftsubset', font_path, '--text-file=' + f.name, '--unicodes=U+0020,U+FE00,U+FE01,U+302C,U+302D,U+E900-E906',
+subprocess.run(['pyftsubset', font_path, '--text-file=' + f.name, '--unicodes=U+0020,U+FE00,U+FE01,U+302C,U+302D,U+E900-E907',
                 '--layout-features=ccmp,liga,rlig', '--flavor=woff2', '--output-file=public/fonts/PaliHangul.woff2'], check=True)
 print('public/fonts/PaliHangul.woff2 만듦')
