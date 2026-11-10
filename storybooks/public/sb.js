@@ -108,8 +108,9 @@
   const fullBtn = sv.querySelector('.sv-full');
   const phone = matchMedia('(hover:none) and (pointer:coarse)').matches;
   const isMax = () => document.fullscreenElement === sv || sv.classList.contains('sv-max');
+  const within = (p, ms) => Promise.race([Promise.resolve(p).catch(() => {}), new Promise(r => setTimeout(r, ms))]);  // 브라우저가 대답을 안 해도 멈추지 않게
   const lockLand = async () => {
-    try { if (screen.orientation?.lock) { await screen.orientation.lock('landscape'); return true; } } catch (e) {}
+    try { if (screen.orientation?.lock) { await within(screen.orientation.lock('landscape'), 700); return true; } } catch (e) {}
     try { const l = screen.lockOrientation || screen.webkitLockOrientation; if (l) return l.call(screen, 'landscape'); } catch (e) {}
     return false;
   };
@@ -117,8 +118,8 @@
     // 크롬·삼성 인터넷 등: 전체 화면 + 가로 고정 (옛 삼성 인터넷은 webkit 이름으로)
     const req = sv.requestFullscreen || sv.webkitRequestFullscreen;
     if (req && (document.fullscreenEnabled || document.webkitFullscreenEnabled)) {
-      try { await req.call(sv, { navigationUI: 'hide' }); } catch (e) {}
-      if (phone) await lockLand();
+      try { await within(req.call(sv, { navigationUI: 'hide' }), 800); } catch (e) {}
+      if (phone && document.fullscreenElement) await lockLand();
     }
     if (document.fullscreenElement !== sv) { sv.classList.add('sv-max'); document.documentElement.classList.add('sv-lock'); }
     sv.focus();
@@ -131,7 +132,7 @@
     sv.classList.remove('sv-max', 'sv-rot'); document.documentElement.classList.remove('sv-lock'); setTimeout(() => go(cur, false), 50);
   };
   fullBtn.onclick = () => isMax() ? leave() : enter();
-  document.addEventListener('fullscreenchange', () => { if (document.fullscreenElement === sv && phone) lockLand().then(() => setTimeout(() => { if (innerHeight <= innerWidth) sv.classList.remove('sv-rot'); go(cur, false); }, 300)); if (!document.fullscreenElement) sv.classList.remove('sv-rot'); if (!document.fullscreenElement && screen.orientation?.unlock) try { screen.orientation.unlock(); } catch (e) {} setTimeout(() => go(cur, false), 50); });
+  document.addEventListener('fullscreenchange', () => { if (document.fullscreenElement === sv && phone && !sv.classList.contains('sv-max')) lockLand().then(() => setTimeout(() => { if (innerHeight <= innerWidth) sv.classList.remove('sv-rot'); go(cur, false); }, 300)); if (!document.fullscreenElement) sv.classList.remove('sv-rot'); if (!document.fullscreenElement && screen.orientation?.unlock) try { screen.orientation.unlock(); } catch (e) {} setTimeout(() => go(cur, false), 50); });
   sv.addEventListener('keydown', e => { if (e.key === 'Escape' && sv.classList.contains('sv-max')) leave(); });
   if (phone) {
     // 세로로 들고 볼 때: 위에 '가로로 크게 보기' 안내 / 휴대폰을 가로로 돌리면 저절로 화면을 꽉 채움

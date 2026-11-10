@@ -112,8 +112,8 @@ footer.site p{margin:0 0 6px} .sadhu{color:var(--robe)}
 .sv.sv-max .sv-page{aspect-ratio:auto;height:calc(100dvh - 46px)}
 html.sv-lock,html.sv-lock body{overflow:hidden}
 /* 자동 회전이 꺼진 휴대폰: 뷰어를 90도 돌려 가로로 */
-.sv.sv-max.sv-rot{inset:auto;top:0;left:100vw;width:100vh;width:100dvh;height:100vw;transform-origin:top left;transform:rotate(90deg)}
-.sv.sv-max.sv-rot .sv-page{height:calc(100vw - 46px)}
+.sv.sv-rot{position:fixed;z-index:1000;inset:auto;top:0;left:100vw;width:100vh;width:100dvh;height:100vw;max-width:none;transform-origin:top left;transform:rotate(90deg);border-radius:0;display:flex;flex-direction:column;justify-content:center;background:#000}
+.sv.sv-rot .sv-page{aspect-ratio:auto;height:calc(100vw - 46px)}
 .sv.sv-rot .sv-track{overflow-x:hidden;touch-action:none}
 /* 한 화 끝: 다음 이야기 이어 보기 */
 .sv-end{color:#eee;text-align:center}
