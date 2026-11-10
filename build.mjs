@@ -141,9 +141,9 @@ function bookSections(b, e, t) {
 const pubDate = x => { let p = (x.published || '').trim(); const l = (x.label || '').trim(); if (l && p.startsWith(l)) p = p.slice(l.length).trim(); return p.replace(/^발행\s*/, '').trim(); };
 const edHasFile = x => ['pdf', 'pdf_print', 'pdf_cover', 'epub'].some(k => x[k] && x[k].mode && x[k].mode !== 'none' && x[k].url) || !!x.reader;
 const uniqK = f => [...new Map(f.map(x => [x.k, x])).values()];
-// 오디오북 정보 (관리자 화면 '오디오북 정보': 낭독자·제작기관·파일 만든 날·원본 출처) (운영자 요청, 2026-11-11)
+// 오디오북 정보 (관리자 화면 '오디오북 정보': 낭독자·제작기관·제작년도·원본 출처) (운영자 요청, 2026-11-11)
 const abInfo = b => { const a = b.audiobook || {}; const t = x => String(x || '').trim(); return { narrator: t(a.narrator), producer: t(a.producer), made: t(a.made), source: t(a.source), note: t(a.source_note) }; };
-const abInfoHtml = b => { const a = abInfo(b); const parts = [a.narrator && `낭독 ${esc(a.narrator)}`, a.producer && `제작 ${esc(a.producer)}`, a.made && `파일 만든 날 ${esc(a.made)}`].filter(Boolean); const src = [a.source && `<a href="${esc(a.source)}" target="_blank" rel="noopener">원본 출처 ↗</a>`, a.note && esc(a.note)].filter(Boolean); return parts.concat(src).join(' · '); };
+const abInfoHtml = b => { const a = abInfo(b); const parts = [a.narrator && `낭독 ${esc(a.narrator)}`, a.producer && `제작 ${esc(a.producer)}`, a.made && `제작년도 ${esc(a.made)}`].filter(Boolean); const src = [a.source && `<a href="${esc(a.source)}" target="_blank" rel="noopener">원본 출처 ↗</a>`, a.note && esc(a.note)].filter(Boolean); return parts.concat(src).join(' · '); };
 // 내려받을 때 파일 이름: 책제목_날짜.pdf (날짜 = 그 파일의 '이 파일 만든 날', 없으면 발행일)
 function ymd(t) {
   const m = String(t || '').match(/(\d{4})\s*[.\-/년]\s*(\d{1,2})(?:\s*[.\-/월]\s*(\d{1,2}))?/);
