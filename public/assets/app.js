@@ -36,7 +36,8 @@ const manifests = {};
 function manifest(url) { return manifests[url] || (manifests[url] = fetch(url).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })); }
 
 /* 글자 맞추기: 빨리어 점·막대 없애고 한글은 붙여서 비교 */
-const norm = s => String(s || '').normalize('NFD').replace(/[̀-̣̱ͯ̇]/g, '').normalize('NFC').toLowerCase().replace(/\s+/g, ' ').trim();
+const norm = s => String(s || '').replace(/[\u302c\u302d\u1dc0-\u1dff\u2033\u02ba\u02d1\u02d4\u02d5\ufe00-\ufe0f\ufe20-\ufe2f\ue900-\ue906]/g, '').replace(/\ue907/g, 'ㄴ').normalize('NFD')  // 빠알리어 한글 표기 부호(〬 〭 ᷇ ̫ ″ ˑ 등)는 찾을 때 무시 — '식카빠당'으로 '식카᷇빠당'을 찾음 (운영자 요청, 2026-11-11)
+  .replace(/[̀-̣̱ͯ̇]/g, '').normalize('NFC').toLowerCase().replace(/\s+/g, ' ').trim();
 
 /* ---------- 화면 모드 ---------- */
 function applyMode(m) {
@@ -433,7 +434,8 @@ function hl(text, terms) {
   // norm 은 글자 수를 바꿀 수 있어 원문과 위치가 같을 때만 정확히 표시
   if (nt.length !== text.length) {
     let out = esc(text);
-    terms.forEach(t => { if (t) out = out.replace(new RegExp(t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), m => `<mark>${m}</mark>`); });
+    const MK = '[\\u302c\\u302d\\u1dc0-\\u1dff\\u2033\\u02ba\\u02d1\\u02d4\\u02d5\\u0300-\\u036f\\ufe00-\\ufe0f\\ufe20-\\ufe2f]*';  // 빠알리어 한글 표기 부호는 건너뛰며 표시
+    terms.forEach(t => { if (t) out = out.replace(new RegExp([...t].map(c => c.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join(MK) + MK, 'gi'), m => `<mark>${m}</mark>`); });
     return out;
   }
   const rg = []; terms.forEach(t => { let i = 0; while (t && (i = nt.indexOf(t, i)) > -1) { rg.push([i, i + t.length]); i += t.length; } });
@@ -741,7 +743,7 @@ function reflowHtml() {
     const keep = k => !(p.n === c.from && k < (c.k0 || 0)) && !(p.n === c.to && c.kEnd != null && k >= c.kEnd);
     const heads = new Set(R.toc.filter(t => t.page === p.n || t.page === p.n - 1).map(t => headKey(t.title)));
     if (!ps.length) return `<span id="pm-${p.n}"></span>`;
-    return `<span class="pmark${p.label ? '' : ' nolabel'}" id="pm-${p.n}">${p.label ? esc(pageName(p)) : ''}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : isChDup(s, p.n, c, k) ? ' class="ch-dup"' : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : /^\^\^ /.test(s) ? ' class="r-ctitle"' : /^:: /.test(s) ? ' class="r-center"' : /^>> /.test(s) ? ' class="r-right"' : /^\+\+ /.test(s) ? (/^\+\+ \d+\. /.test(s) ? ' class="r-ind r-num"' : ' class="r-ind"') : /^● /.test(s) ? ' class="r-bul"' : /^\|\| /.test(s) ? ' class="r-bul-c"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? ' class="sub-h" role="heading" aria-level="4"' : ''}>${fnMark(phMark(boldMark(markUl(s.replace(/^## |^\^\^ |^:: |^>> |^\|\| |^\+\+ /, ''), p.n)))).replace(/\n/g, '<br>')}</p>`).join('') || ''}`;
+    return `<span class="pmark${p.label ? '' : ' nolabel'}" id="pm-${p.n}">${p.label ? esc(pageName(p)) : ''}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : isChDup(s, p.n, c, k) ? ' class="ch-dup"' : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : /^\^\^ /.test(s) ? ' class="r-ctitle"' : /^:: /.test(s) ? ' class="r-center"' : /^>> /.test(s) ? ' class="r-right"' : /^\+\+ /.test(s) ? (/^\+\+ \d+\. /.test(s) ? ' class="r-ind r-num"' : ' class="r-ind"') : /^● /.test(s) ? ' class="r-bul"' : /^\|\| /.test(s) ? ' class="r-bul-c"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? ' class="sub-h" role="heading" aria-level="4"' : ''}>${fnMark(phMark(boldMark(markUl(s.replace(/^## |^\^\^ |^:: |^>> |^\|\| |^\+\+ /, '').replace(/\n(?:\^\^|::|>>) /g, '\n'), p.n)))).replace(/\n/g, '<br>')}</p>`).join('') || ''}`;
   }).join('');
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}" data-ci="${ci - 1}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}" data-ci="${ci + 1}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}</h3></div>` : ''}${body}${nav}</div>`;
@@ -896,7 +898,7 @@ function bindReader() {
     const pgHits = pm ? R.pages.filter(x => String(x.label || '').replace(/쪽$/, '') === pm[1]) : [];
     const pgHtml = pgHits.map(x => `<li><button class="link" data-find="${x.n}" data-k="-1"><b>📄 ${esc(pageName(x))}으로 가기</b>${ch(x.n) ? `<br><span class="muted small">${esc(ch(x.n))}</span>` : ''}</button></li>`).join('');
     R.findRes = `<p class="note">${pgHits.length ? `${esc(pageName(pgHits[0]))}이 있습니다. ` : ''}${hits.length ? `${hits.length}곳을 찾았습니다.` : pgHits.length ? '' : '찾는 말이 없습니다.'}${group ? ` (${group.map(esc).join(', ')} 함께 찾음)` : ''}</p>
-      <ul class="find-list">${pgHtml}${hits.slice(0, 200).map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}"><span class="muted small">${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span><br>${hl(h.s, terms)}</button></li>`).join('')}</ul>${hits.length > 200 ? '<p class="note">앞의 200곳만 보입니다. 더 자세한 말로 찾아보세요.</p>' : ''}`;
+      <ul class="find-list">${pgHtml}${hits.slice(0, 200).map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}"><span class="muted small">${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span><br>${phMark(hl(h.s, terms))}</button></li>`).join('')}</ul>${hits.length > 200 ? '<p class="note">앞의 200곳만 보입니다. 더 자세한 말로 찾아보세요.</p>' : ''}`;
     $('#findRes').innerHTML = R.findRes; bindFind();
   };
   const bindFind = () => $$('[data-find]', el).forEach(b => b.onclick = () => {

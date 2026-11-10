@@ -53,6 +53,8 @@ def patch_font(src):
            ('ph.ttan_ny', '딴', marks('빤\u0330', '빤'), ['uni0330']),
            ('ph.ro_dbl', '로', marks('요\u02BA', '요'), ['uni02BA'])]
     cff = f['CFF '].cff; top = cff.topDictIndex[0]; cs = top.CharStrings
+    # CFF 글자 폭은 nominalWidthX 를 뺀 값으로 적어야 함 — 안 그러면 윈도 크롬 등에서 새 글자 뒤가 한 칸 벌어짐 (2026-11-11 고침)
+    cw = lambda w: w - getattr(top.Private, 'nominalWidthX', 0)
     tgt = None
     for lk in f['GSUB'].table.LookupList.Lookup:
         if lk.LookupType == 4:
@@ -61,7 +63,7 @@ def patch_font(src):
     for name, base, mk, comp in NEW:
         assert mk, name
         rp = RecordingPen(); gs[G(base)].draw(rp)
-        pen = T2CharStringPen(f['hmtx'][G(base)][0], gs); rp.replay(pen)
+        pen = T2CharStringPen(cw(f['hmtx'][G(base)][0]), gs); rp.replay(pen)
         for c in mk:
             for op, a in c: getattr(pen, op)(*a)
         cs.charStrings[name] = len(cs.charStringsIndex); cs.charStringsIndex.append(pen.getCharString(private=top.Private, globalSubrs=cff.GlobalSubrs))
@@ -78,7 +80,7 @@ def patch_font(src):
     for ch, mk in SOLO_SHAPES.items():
         assert mk, ch
         xs = [x for c in mk for op, a in c for x, y in a]; dx = 60 - min(xs); w = max(xs) - min(xs) + 120
-        pen = T2CharStringPen(w, gs)
+        pen = T2CharStringPen(cw(w), gs)
         for c in mk:
             for op, a in c: getattr(pen, op)(*[(x + dx, y) for x, y in a])
         name = 'ph.solo%04X' % ord(ch)
@@ -90,7 +92,7 @@ def patch_font(src):
     x0, y0, x1, y1 = bb(nieun); sy = 1.35; ty = 110 - y0 * sy
     nieun = tuple((op, tuple((x, y * sy + ty) for x, y in a)) for op, a in nieun)
     til = marks('빤\u0330', '빤'); tx0, _, tx1, _ = bb([q for c in til for q in c]); dx = (x0 + x1) / 2 - (tx0 + tx1) / 2
-    pen = T2CharStringPen(936, gs)
+    pen = T2CharStringPen(cw(936), gs)
     for c in [nieun] + [tuple((op, tuple((x + dx, y + 40) for x, y in a)) for op, a in c) for c in til]:
         for op, a in c: getattr(pen, op)(*a)
     cs.charStrings['ph.nieun_ny'] = len(cs.charStringsIndex); cs.charStringsIndex.append(pen.getCharString(private=top.Private, globalSubrs=cff.GlobalSubrs))
@@ -162,4 +164,7 @@ with tempfile.NamedTemporaryFile('w', suffix='.txt', delete=False) as f:
     f.write('\n'.join(sorted(allw)))
 subprocess.run(['pyftsubset', font_path, '--text-file=' + f.name, '--unicodes=U+0020,U+FE00,U+FE01,U+302C,U+302D,U+E900-E907',
                 '--layout-features=ccmp,liga,rlig', '--flavor=woff2', '--output-file=public/fonts/PaliHangul.woff2'], check=True)
-print('public/fonts/PaliHangul.woff2 만듦')
+import hashlib
+h = hashlib.md5(open('public/fonts/PaliHangul.woff2', 'rb').read()).hexdigest()[:8]  # 글꼴이 바뀌면 주소도 바꿔 기기에 저장된 옛 글꼴을 쓰지 않게
+css = open('public/assets/site.css').read(); css = re.sub(r"url\(/fonts/PaliHangul\.woff2(\?v=\w+)?\)", "url(/fonts/PaliHangul.woff2?v=%s)" % h, css); open('public/assets/site.css', 'w').write(css)
+print('public/fonts/PaliHangul.woff2 만듦 (v=%s)' % h)

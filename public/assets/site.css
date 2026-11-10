@@ -1025,7 +1025,7 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 [data-tip]{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
 
 /* 빠알리어 한글 표기 (발음 부호가 붙은 한글) — PaliHangul 글꼴, 쓰인 글자만 담은 작은 파일 (tools/pali_hangul.py) */
-@font-face{font-family:'PaliHangul';src:url(/fonts/PaliHangul.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'PaliHangul';src:url(/fonts/PaliHangul.woff2?v=b73be89c) format('woff2');font-display:swap}
 .ph{font-family:'PaliHangul',serif;font-feature-settings:'ccmp','liga','rlig'}
 /* 이 글꼴엔 굵은 글씨가 없어 소제목·굵은 글 속에서는 획에 테두리를 둘러 굵게 (브라우저가 흉내 내는 굵기보다 고르게) */
 .sub-h .ph,strong .ph,b .ph,h1 .ph,h2 .ph,h3 .ph,h4 .ph{font-synthesis:none;-webkit-text-stroke:.032em currentColor;paint-order:stroke fill}
