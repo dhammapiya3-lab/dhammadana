@@ -1017,3 +1017,4 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .ab-bar.locked .ab-row input{pointer-events:none;opacity:.5}
 .ab-bar #abLock[aria-pressed="true"]{background:var(--robe);color:var(--paper);border-color:var(--robe)}
 .ab-bar button{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+[data-tip]{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}

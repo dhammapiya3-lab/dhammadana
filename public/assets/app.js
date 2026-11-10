@@ -1692,11 +1692,15 @@ function bodyZoom() { return parseFloat(getComputedStyle(document.body).zoom) ||
     const t = e.target.closest && e.target.closest('[data-tip]'); if (!t || !matchMedia('(hover:hover)').matches) return;
     show(t); t.addEventListener('mouseleave', () => tip.classList.remove('show'), { once: true });
   });
+  // 아이폰(사파리)은 꾹 누르면 기기 자체 메뉴를 띄우며 touchcancel 을 보내므로, 손가락을 뗄 때(touchend)와 많이 움직일 때만 취소함
+  let tx = 0, ty0 = 0;
   document.addEventListener('touchstart', e => {
     const t = e.target.closest && e.target.closest('[data-tip]'); clearTimeout(hold); if (!t) return;
-    hold = setTimeout(() => { held = t; show(t); clearTimeout(hide); hide = setTimeout(() => tip.classList.remove('show'), 3000); }, 500);
+    tx = e.touches[0].clientX; ty0 = e.touches[0].clientY;
+    hold = setTimeout(() => { held = t; show(t); clearTimeout(hide); hide = setTimeout(() => tip.classList.remove('show'), 3500); }, 450);
   }, { passive: true });
-  ['touchend', 'touchmove', 'touchcancel'].forEach(k => document.addEventListener(k, () => clearTimeout(hold), { passive: true }));
+  document.addEventListener('touchmove', e => { if (Math.abs(e.touches[0].clientX - tx) + Math.abs(e.touches[0].clientY - ty0) > 12) clearTimeout(hold); }, { passive: true });
+  document.addEventListener('touchend', () => { clearTimeout(hold); if (held) setTimeout(() => { held = null; }, 700); }, { passive: true });
   document.addEventListener('click', e => { if (held && e.target.closest && e.target.closest('[data-tip]') === held) { e.preventDefault(); e.stopImmediatePropagation(); } held = null; }, true);
   document.addEventListener('contextmenu', e => { if (e.target.closest && e.target.closest('[data-tip]')) e.preventDefault(); });
 })();
