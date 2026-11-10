@@ -148,6 +148,6 @@
   "license": "CC BY-NC-ND",
   "added": "2026-11-09",
   "order": null,
-  "hidden": true,
+  "hidden": false,
   "hide_update": false
 }
