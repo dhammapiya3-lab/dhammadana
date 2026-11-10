@@ -65,6 +65,7 @@
   addEventListener('popstate', () => location.reload());
 
   const go = (i, smooth = true) => {
+    if (endCard && i > pages.length && cur >= pages.length) { loadNext(); return; }  // 끝 화면에서 › → 다음 이야기
     i = Math.max(0, Math.min(last(), i));
     track.scrollTo({ left: i * track.clientWidth, behavior: smooth ? 'smooth' : 'auto' });
   };
@@ -106,7 +107,9 @@
   };
   // 전체 화면: 휴대폰은 가로로 돌려 크게 (안드로이드는 화면을 가로로 고정, 아이폰은 화면을 꽉 채우고 돌려 달라고 안내)
   const fullBtn = sv.querySelector('.sv-full');
-  const phone = matchMedia('(hover:none) and (pointer:coarse)').matches;
+  // 휴대폰: 삼성 인터넷은 hover 를 다르게 알려 주는 일이 있어 기기 이름·손가락 화면으로도 봄
+  const phone = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) || matchMedia('(pointer:coarse)').matches;
+  if (phone) document.documentElement.classList.add('is-phone');
   const isMax = () => document.fullscreenElement === sv || sv.classList.contains('sv-max');
   let rotating = false;
   const within = (p, ms) => Promise.race([Promise.resolve(p).catch(() => {}), new Promise(r => setTimeout(r, ms))]);  // 브라우저가 대답을 안 해도 멈추지 않게
