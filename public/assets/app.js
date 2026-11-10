@@ -896,9 +896,17 @@ function bindReader() {
     // 쪽 번호로 찾기: '74', '74쪽', 'p.74', '74페이지' → 그 쪽으로 가는 줄을 맨 위에 (운영자 요청, 2026-11-10)
     const pm = q.replace(/\s+/g, '').match(/^(?:p\.?|pp\.?)?(\d{1,4})(?:쪽|페이지|면|p)?$/i);
     const pgHits = pm ? R.pages.filter(x => String(x.label || '').replace(/쪽$/, '') === pm[1]) : [];
+    // 각주 번호로 찾기: '각주 13', '13번 각주', '[13]', '주13' 또는 숫자만 — 본문 자리와 각주 글을 맨 위에 (운영자 요청, 2026-11-11)
+    const fm = q.replace(/\s+/g, '').match(/^(?:각주|주|\[\^?|\^)?(\d{1,4})(?:\]|번|번각주|각주)?$/);
+    const fnHits = [];
+    if (fm) for (const pgx of R.pages) paras(pgx.text).forEach((t, k) => {
+      if (t.startsWith('[^' + fm[1] + ']:')) fnHits.push({ n: pgx.n, k, def: true, s: plainT(t).trim().slice(0, 90) });
+      else if (t.includes('[^' + fm[1] + ']') && !/^\[\^/.test(t)) { const i = t.indexOf('[^' + fm[1] + ']'), a = plainT(t.slice(Math.max(0, i - 60), i)).trim(); fnHits.push({ n: pgx.n, k, def: false, s: (i > 60 ? '…' : '') + a.slice(-45) }); }
+    });
+    const fnHtml = fnHits.map(x => `<li><button class="link" data-find="${x.n}" data-k="${x.k}"><span class="muted small">${esc(pageName(R.pages[x.n - 1]))}${ch(x.n) ? ' · ' + esc(ch(x.n)) : ''}</span><br><b>${x.def ? '📝 각주 ' + fm[1] + ' 내용' : '📝 각주 ' + fm[1] + ' 본문 자리'}</b> ${phMark(esc(x.s))}${x.def ? '' : '<sup>' + fm[1] + '</sup>'}</button></li>`).join('');
     const pgHtml = pgHits.map(x => `<li><button class="link" data-find="${x.n}" data-k="-1"><b>📄 ${esc(pageName(x))}으로 가기</b>${ch(x.n) ? `<br><span class="muted small">${esc(ch(x.n))}</span>` : ''}</button></li>`).join('');
-    R.findRes = `<p class="note">${pgHits.length ? `${esc(pageName(pgHits[0]))}이 있습니다. ` : ''}${hits.length ? `${hits.length}곳을 찾았습니다.` : pgHits.length ? '' : '찾는 말이 없습니다.'}${group ? ` (${group.map(esc).join(', ')} 함께 찾음)` : ''}</p>
-      <ul class="find-list">${pgHtml}${hits.slice(0, 200).map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}"><span class="muted small">${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span><br>${phMark(hl(h.s, terms))}</button></li>`).join('')}</ul>${hits.length > 200 ? '<p class="note">앞의 200곳만 보입니다. 더 자세한 말로 찾아보세요.</p>' : ''}`;
+    R.findRes = `<p class="note">${pgHits.length ? `${esc(pageName(pgHits[0]))}이 있습니다. ` : ''}${fnHits.length ? `각주 ${fm[1]}번이 있습니다. ` : ''}${hits.length ? `${hits.length}곳을 찾았습니다.` : pgHits.length || fnHits.length ? '' : '찾는 말이 없습니다.'}${group ? ` (${group.map(esc).join(', ')} 함께 찾음)` : ''}</p>
+      <ul class="find-list">${pgHtml}${fnHtml}${hits.slice(0, 200).map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}"><span class="muted small">${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span><br>${phMark(hl(h.s, terms))}</button></li>`).join('')}</ul>${hits.length > 200 ? '<p class="note">앞의 200곳만 보입니다. 더 자세한 말로 찾아보세요.</p>' : ''}`;
     $('#findRes').innerHTML = R.findRes; bindFind();
   };
   const bindFind = () => $$('[data-find]', el).forEach(b => b.onclick = () => {
