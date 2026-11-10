@@ -3,7 +3,7 @@
   const root = document.getElementById('pqRoot'); if (!root) return;
   const BOOKS = JSON.parse(root.dataset.books || '[]');
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const ST = { received: '접수', sent: '발송 완료' };
+  const ST = { received: '접수 대기', accepted: '접수 완료', sent: '발송 완료' };
   const api = async (body) => {
     const r = await fetch('/api/paper', body ? { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) } : {});
     let j = {}; try { j = await r.json(); } catch (e) { j = { error: '잠시 연결이 고르지 않습니다. 다시 해 주세요.' }; }

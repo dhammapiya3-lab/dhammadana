@@ -3,7 +3,7 @@ import { canWriteToken as canWrite } from './_auth.js';
 // 저장: R2 'PAPER' 창고 (공개 주소 없음). req/<번호>.json = 신청 한 건, index.json = 목록(가린 이름·책·날짜·상태만)
 // 알림: 설정값 PAPER_NOTIFY_URL (구글 Apps Script 주소, Cloudflare 비밀 변수) 로 신청 내용 전체를 보내 담마삐야님 Gmail 로 메일
 const json = (o, status = 200) => new Response(JSON.stringify(o), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
-const STATUS = { received: '접수', sent: '발송 완료' };
+const STATUS = { received: '접수 대기', accepted: '접수 완료', sent: '발송 완료' };
 const KEEP_DAYS = 90;  // 발송 완료 뒤 90일이 지나면 지움
 const LIM = { title: 60, name: 40, phone: 30, address: 200, memo: 1000 };
 
@@ -125,7 +125,7 @@ export async function onRequestPost(ctx) {
       return json({ ok: true, replies: r.replies });
     }
     if (!STATUS[b.status]) return json({ error: '상태 오류' }, 400);
-    r.status = b.status; r.sentAt = b.status === 'sent' ? kst() : '';
+    r.status = b.status; r.sentAt = b.status === 'sent' ? kst() : ''; r.acceptedAt = b.status === 'received' ? '' : (r.acceptedAt || kst());
     await putJ(env, `req/${r.id}.json`, r);
     const l = (await getJ(env, 'index.json', [])).filter(x => x.id !== r.id); l.push({ ...pub(r), sentAt: r.sentAt }); await saveIndex(env, l);
     return json({ ok: true });

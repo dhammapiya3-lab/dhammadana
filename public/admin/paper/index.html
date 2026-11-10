@@ -26,6 +26,7 @@
   .hd b{font-size:16px}
   .st{font-size:12.5px;padding:4px 10px;border-radius:999px;background:var(--robe-soft);color:var(--robe)}
   .st.sent{background:var(--leaf-soft);color:var(--leaf)}
+  .st.accepted{background:#e6f0fa;color:#2b5d8f}
   .acts{display:flex;gap:8px;flex-wrap:wrap}
   .acts button{border:1px solid var(--line);background:var(--paper);border-radius:8px;padding:8px 12px;cursor:pointer;font:inherit;font-size:14px;color:var(--ink)}
   .acts button.main{background:var(--robe);border-color:var(--robe);color:var(--paper)}
@@ -42,7 +43,7 @@
 <div class="up">
   <p class="note"><a href="/admin/">← 관리자 화면</a> · <a href="/admin/stats/">사이트 통계</a></p>
   <h1>종이책 보시 신청 관리</h1>
-  <p class="note">신청 글의 받는 분·연락처·주소는 이 화면에서만 보입니다. 책을 보낸 뒤 '발송 완료'를 누르면 게시판 목록에도 '발송 완료'로 보이고, 90일이 지나면 저절로 지워집니다.</p>
+  <p class="note">신청 글의 받는 분·연락처·주소는 이 화면에서만 보입니다. 신청을 확인하면 '접수 완료', 책을 보낸 뒤 '발송 완료'를 누르면 게시판 목록에도 그대로 보이고, 90일이 지나면 저절로 지워집니다.</p>
   <div class="card" id="tokCard" hidden>
     <p>관리자 열쇠(GitHub 토큰)를 넣어 주세요. 관리자 화면에 들어가 있으면 보통 저절로 채워집니다.</p>
     <input type="password" id="tok" placeholder="ghp_… 또는 github_pat_…">
@@ -87,16 +88,16 @@ async function load(){
 }
 function draw(){
   const n=s=>ITEMS.filter(x=>!s||x.status===s).length;
-  $('#tabs').innerHTML=[['received','보낼 것 (접수)'],['sent','발송 완료'],['','전체']].map(([k,l])=>`<button data-tab="${k}" class="${TAB===k?'on':''}">${l} ${n(k)}</button>`).join('');
+  $('#tabs').innerHTML=[['received','새 신청 (접수 대기)'],['accepted','보낼 것 (접수 완료)'],['sent','발송 완료'],['','전체']].map(([k,l])=>`<button data-tab="${k}" class="${TAB===k?'on':''}">${l} ${n(k)}</button>`).join('');
   document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{TAB=b.dataset.tab;draw();});
-  const l=ITEMS.filter(x=>!TAB||x.status===TAB).sort((a,b)=>TAB==='received'?a.id.localeCompare(b.id):b.id.localeCompare(a.id));
+  const l=ITEMS.filter(x=>!TAB||x.status===TAB).sort((a,b)=>TAB!=='sent'&&TAB?a.id.localeCompare(b.id):b.id.localeCompare(a.id));
   $('#list').innerHTML=l.map(x=>`<div class="card" data-id="${x.id}">
-    <div class="hd"><b>${esc(x.name)}</b>${x.title?` <span class="note">· ${esc(x.title)}</span>`:''}<span class="st ${x.status}">${x.status==='sent'?'발송 완료':'접수'}</span></div>
+    <div class="hd"><b>${esc(x.name)}</b>${x.title?` <span class="note">· ${esc(x.title)}</span>`:''}<span class="st ${x.status}">${({received:'접수 대기',accepted:'접수 완료',sent:'발송 완료'})[x.status]||''}</span></div>
     <dl class="rq"><dt>책</dt><dd>${esc(((x.books&&x.books.length)?x.books:(x.book?[{title:x.bookTitle,qty:x.qty}]:[])).map(b=>'『'+b.title+'』 '+b.qty+'권').join('\n'))}</dd><dt>연락처</dt><dd>${esc(x.phone)}</dd><dt>주소</dt><dd>${esc(x.address)}</dd><dt>남길 말</dt><dd>${esc(x.memo)||'—'}</dd>
-    <dt>신청</dt><dd>${esc(x.created.replace('T',' ').slice(0,16))}${x.updated?' · 고침 '+esc(x.updated.replace('T',' ').slice(0,16)):''}${x.sentAt?' · 발송 '+esc(x.sentAt.slice(0,10)):''}</dd><dt>번호</dt><dd>${esc(x.id)}</dd></dl>
+    <dt>신청</dt><dd>${esc(x.created.replace('T',' ').slice(0,16))}${x.updated?' · 고침 '+esc(x.updated.replace('T',' ').slice(0,16)):''}${x.acceptedAt?' · 접수 '+esc(x.acceptedAt.slice(0,10)):''}${x.sentAt?' · 발송 '+esc(x.sentAt.slice(0,10)):''}</dd><dt>번호</dt><dd>${esc(x.id)}</dd></dl>
     <div class="rp">${(x.replies||[]).map(c=>`<div class="rpi ${c.by==='user'?'u':''}"><div class="note"><b>${c.by==='user'?'신청한 분':'담마삐야(나)'}</b> · ${esc(c.at.replace('T',' ').slice(0,16))} <button class="rpdel" data-rid="${esc(c.id||c.at)}">지우기</button></div><div class="rpt">${esc(c.text)}</div></div>`).join('')}
     <textarea class="rpin" rows="2" maxlength="1000" placeholder="신청한 분에게 남길 댓글 (신청한 분만 비밀번호로 볼 수 있습니다)"></textarea><div class="acts" style="margin-bottom:10px"><button data-reply>댓글 달기</button></div></div>
-    <div class="acts">${x.status==='sent'?'<button data-st="received">접수로 되돌리기</button>':'<button class="main" data-st="sent">발송 완료로 바꾸기</button>'}<button data-copy>주소·연락처 복사</button><button class="del" data-del>지우기</button></div></div>`).join('')||'<p class="note" style="margin-top:16px">해당하는 신청이 없습니다.</p>';
+    <div class="acts">${x.status==='sent'?'<button data-st="accepted">접수 완료로 되돌리기</button>':x.status==='accepted'?'<button class="main" data-st="sent">발송 완료로 바꾸기</button><button data-st="received">접수 대기로 되돌리기</button>':'<button class="main" data-st="accepted">접수 완료로 바꾸기</button><button data-st="sent">발송 완료로 바꾸기</button>'}<button data-copy>주소·연락처 복사</button><button class="del" data-del>지우기</button></div></div>`).join('')||'<p class="note" style="margin-top:16px">해당하는 신청이 없습니다.</p>';
   document.querySelectorAll('[data-st]').forEach(b=>b.onclick=async()=>{ const id=b.closest('[data-id]').dataset.id; b.disabled=true; const j=await call({action:'status',id,status:b.dataset.st}); if(j.error) alert(j.error); load(); });
   document.querySelectorAll('[data-reply]').forEach(b=>b.onclick=async()=>{ const c=b.closest('[data-id]'); const text=c.querySelector('.rpin').value.trim(); if(!text) return; b.disabled=true; const j=await call({action:'reply',id:c.dataset.id,text}); if(j.error) alert(j.error); load(); });
   document.querySelectorAll('.rpdel').forEach(b=>b.onclick=async()=>{ if(!confirm('이 댓글을 지울까요?')) return; const c=b.closest('[data-id]'); const j=await call({action:'unreply',id:c.dataset.id,rid:b.dataset.rid}); if(j.error) alert(j.error); load(); });

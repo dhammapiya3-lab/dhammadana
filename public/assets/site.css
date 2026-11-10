@@ -782,6 +782,7 @@ a.paper-request:hover{filter:brightness(1.08)}
 .pq-w,.pq-d{color:var(--ink-soft);font-size:13.5px}
 .pq-s{font-size:12px;padding:4px 9px;border-radius:999px;background:var(--robe-soft);color:var(--robe);white-space:nowrap}
 .pq-s.sent{background:var(--leaf-soft);color:var(--leaf)}
+.pq-s.accepted{background:#e6f0fa;color:#2b5d8f}
 .pq-open{padding:6px 6px 18px 46px}
 .pq-pw label{display:block;font-size:14px;margin-bottom:6px}
 .pq-pw .row{display:flex;gap:8px}
