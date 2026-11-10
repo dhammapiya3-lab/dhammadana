@@ -38,9 +38,12 @@ curl -s -o /dev/null -w "공개 주소 확인: %{http_code} %{size_download}바�
 rm -rf out
 # 그림책 사이트에 '한글판 준비된 이야기' 목록 반영
 git clone -q --depth 1 -b storybooks "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}" /tmp/site
-if ! cmp -s data/rendered.json /tmp/site/storybooks/data/ready.json; then
+# stamp.json: 이야기마다 그림 판 번호 — 그림을 다시 만들면 주소(?v=)가 바뀌어 예전 그림이 기기·CDN 에 남지 않음
+python3 -c "import json;d=json.load(open('data/rendered_stamp.json'));json.dump({k:v[:8] for k,v in d.items()},open('/tmp/stamp.json','w'),indent=0)"
+if ! cmp -s data/rendered.json /tmp/site/storybooks/data/ready.json || ! cmp -s /tmp/stamp.json /tmp/site/storybooks/data/stamp.json; then
   cp data/rendered.json /tmp/site/storybooks/data/ready.json
-  cd /tmp/site && git -c user.name=storybooks-bot -c user.email=actions@users.noreply.github.com commit -qam "그림책: 한글판 이야기 목록 갱신" && git push -q && cd - >/dev/null
+  cp /tmp/stamp.json /tmp/site/storybooks/data/stamp.json
+  cd /tmp/site && git add storybooks/data && git -c user.name=storybooks-bot -c user.email=actions@users.noreply.github.com commit -qm "그림책: 한글판 이야기 목록·그림 판 갱신" && git push -q && cd - >/dev/null
 fi
 # 다음 책 글 상자 읽기 + 번역용 800px 미리보기 (jobs/next_books.txt 에 적은 책, 이미 읽은 이야기는 건너뜀)
 if [ -s jobs/next_books.txt ]; then
