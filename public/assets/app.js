@@ -1975,7 +1975,11 @@ document.addEventListener('click', e => {
   const pop = document.createElement('div'); pop.id = 'fnPop'; pop.setAttribute('role', 'dialog'); pop.setAttribute('aria-label', '각주 ' + n);
   if (tgt) { const c = tgt.closest('p').cloneNode(true); c.removeAttribute('data-pg'); c.removeAttribute('data-s'); pop.innerHTML = `<div class="fnpop-h">각주 ${n}<button class="fnpop-x" aria-label="닫기">✕</button></div>`; c.querySelector('.fn-no') && c.querySelector('.fn-no').remove(); pop.appendChild(c);
     const go = document.createElement('button'); go.className = 'link-btn small'; go.textContent = '각주 자리로 가기 ↓'; go.onclick = () => { pop.remove(); tgt.closest('p').scrollIntoView({ block: 'center' }); tgt.closest('p').classList.add('found'); setTimeout(() => tgt.closest('p').classList.remove('found'), 1600); }; pop.appendChild(go); }
-  else pop.innerHTML = `<div class="fnpop-h">각주 ${n}<button class="fnpop-x" aria-label="닫기">✕</button></div><p class="muted">이 각주는 다른 쪽에 있습니다.</p>`;
+  else {  // 각주 글이 지금 장에 없으면(다음 장 첫 쪽 등) 책 전체에서 가장 가까운 쪽의 각주 글을 찾아 보여 줌 (2026-11-11)
+    const hp = here ? +here.dataset.pg : 1; let best = null;
+    for (const pgx of (R && R.pages) || []) for (const q of paras(pgx.text)) if (q.startsWith('[^' + n + ']:') && (!best || Math.abs(pgx.n - hp) < Math.abs(best.n - hp))) best = { n: pgx.n, q };
+    pop.innerHTML = `<div class="fnpop-h">각주 ${n}<button class="fnpop-x" aria-label="닫기">✕</button></div>` + (best ? `<p>${phMark(boldMark(esc(best.q.replace(/^\[\^[^\]]+\]:\s*/, ''))))}</p>` : '<p class="muted">이 각주는 다른 쪽에 있습니다.</p>');
+  }
   document.body.appendChild(pop);
   const z = bodyZoom(), r = sup.getBoundingClientRect(), W = Math.min(420 * z, innerWidth - 24);
   pop.style.width = W / z + 'px'; pop.style.left = Math.max(12, Math.min(innerWidth - W - 12, r.left - W / 2)) / z + 'px';
