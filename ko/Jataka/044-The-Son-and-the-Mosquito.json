@@ -1,0 +1,198 @@
+[
+ {
+  "img": "images/044-The-Son-and-the-Mosquito-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     296,
+     361
+    ],
+    "shape": "box",
+    "en": "The Mosquito and the Axe. hm tale of misplaced intentions awe from the Jataka.",
+    "ko": "모기와 도끼\n자따까에 나오는 빗나간 선의 이야기"
+   }
+  ]
+ },
+ {
+  "img": "images/044-The-Son-and-the-Mosquito-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     123,
+     80
+    ],
+    "shape": "box",
+    "en": "the past, when Brahmadatta reigned in Benares, the Bodhisatta lived ved as traveling trader. His journeys brought him to village of carpenters ers in Kasi. See",
+    "ko": "옛날 브라흐마닷따 왕이 바라나시를 다스리던 때, 보살은 떠돌이 장사꾼이었습니다. 장사 길에 그는 까시국의 목수 마을에 들렀습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/044-The-Son-and-the-Mosquito-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     110,
+     338
+    ],
+    "shape": "box",
+    "en": "The he trader rested in shop where an old man planed wood. The carpenter's bald head glistened brightly, like copper bowl in the sun. 4",
+    "ko": "장사꾼은 한 늙은이가 나무를 대패질하는 가게에서 쉬었습니다. 목수의 대머리가 햇빛 받은 구리 그릇처럼 반짝였습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/044-The-Son-and-the-Mosquito-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     128,
+     335
+    ],
+    "shape": "box",
+    "en": "Drawn to the gleam, mosquito settled on his scalp and struck with its dart-like sting",
+    "ko": "반짝임에 이끌린 모기 한 마리가 그의 머리에 앉아 화살 같은 침을 꽂았습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/044-The-Son-and-the-Mosquito-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     188,
+     74
+    ],
+    "shape": "bubble",
+    "en": "boy, there’s mosquito stinging me on the head; do drive it away.",
+    "ko": "얘야, 모기가 내 머리를 쏘는구나. 좀 쫓아 다오."
+   }
+  ]
+ },
+ {
+  "img": "images/044-The-Son-and-the-Mosquito-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     256,
+     74
+    ],
+    "shape": "bubble",
+    "en": "Hold still then, father. One blow will settle it",
+    "ko": "그럼 가만히 계세요, 아버지. 한 방이면 끝납니다."
+   }
+  ]
+ },
+ {
+  "img": "images/044-The-Son-and-the-Mosquito-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     88,
+     358
+    ],
+    "ko": "장사꾼은 말없이 지켜보며 텅 빈 머리가 얼마나 위험한지 보았습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/044-The-Son-and-the-Mosquito-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     94,
+     233
+    ],
+    "shape": "bubble",
+    "en": "Rid me of it! Rid me of it!",
+    "ko": "어서 쫓아! 어서 쫓아!"
+   },
+   {
+    "seed": [
+     606,
+     338
+    ],
+    "shape": "bubble",
+    "en": "All right, father.",
+    "ko": "알았어요, 아버지."
+   }
+  ]
+ },
+ {
+  "img": "images/044-The-Son-and-the-Mosquito-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     569,
+     68
+    ],
+    "shape": "box",
+    "en": "Intending only to kill the mosquito, the foolish son cleft his father’s head in twain. The old man fell dead on the spot.",
+    "ko": "모기만 잡으려던 어리석은 아들은 아버지의 머리를 두 쪽으로 쪼개 버렸습니다. 늙은이는 그 자리에서 죽었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/044-The-Son-and-the-Mosquito-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     254,
+     392
+    ],
+    "shape": "box",
+    "en": "The trader realized an profound 5 truth: foolish ally is far more dangerous than calculated foe",
+    "ko": "장사꾼은 깊은 진리를 깨달았습니다. 어리석은 벗은 꾀 많은 적보다 훨씬 위험하다는 것을."
+   }
+  ]
+ },
+ {
+  "img": "images/044-The-Son-and-the-Mosquito-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     256,
+     156,
+     672,
+     296
+    ],
+    "align": "center",
+    "em": 22,
+    "ko": "세이요 아밋또 마띠야 우뻬또\n나 뜨웨와 밋또 마띠윕빠히노,\n‘마까상 와딧산’ 띠 히 엘라무고\n뿟또 삐뚜 아빗다 웃따망간 띠.",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/044-The-Son-and-the-Mosquito-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     254,
+     373
+    ],
+    "shape": "box",
+    "en": "Better is foe endowed with wisdom than friend who is lacking in wisdom. Thinking, will kill mosquito the foolish son split his father’s head open",
+    "ko": "지혜 있는 적이 지혜 없는 벗보다 낫다. ‘모기를 죽이리라’ 하고 어리석은 아들이 아버지의 머리를 쪼갰다."
+   }
+  ]
+ },
+ {
+  "img": "images/044-The-Son-and-the-Mosquito-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     316,
+     176
+    ],
+    "shape": "box",
+    "en": "Good intentions without wisdom are like swinging an axe at mosquito.",
+    "ko": "지혜 없는 선의는 모기를 향해 도끼를 휘두르는 것과 같습니다."
+   }
+  ]
+ }
+]

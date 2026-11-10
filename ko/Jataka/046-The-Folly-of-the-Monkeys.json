@@ -1,0 +1,330 @@
+[
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     114,
+     82
+    ],
+    "shape": "box",
+    "en": "Long ago in Varanasi, King Brahmadatta proclaimed grand festival.",
+    "ko": "옛날 바라나시의 브라흐마닷따 왕이 큰 축제를 열었습니다."
+   },
+   {
+    "seed": [
+     579,
+     326
+    ],
+    "shape": "box",
+    "en": "The joyous summoning notes of the festal drum echoed down bic the royal pleasure gardens. afi",
+    "ko": "축제를 알리는 흥겨운 북소리가 왕의 정원까지 울려 퍼졌습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     102,
+     65
+    ],
+    "shape": "box",
+    "en": "The king’s gardener longed to join the he holiday-making townsfolk.",
+    "ko": "왕의 정원지기는 축제를 즐기는 성 안 사람들과 어울리고 싶었습니다."
+   },
+   {
+    "seed": [
+     363,
+     70
+    ],
+    "shape": "bubble",
+    "en": "will get the monkeys to do the watering for me, and be off to enjoy myself.",
+    "ko": "원숭이들한테 물을 주라고 하고 나는 놀러 가야지."
+   }
+  ]
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     319,
+     71
+    ],
+    "shape": "bubble",
+    "en": "You enjoy these flowers and fruits. Today is holiday up in the city. Could you water the young trees while am away?",
+    "ko": "너희는 이 꽃과 열매를 실컷 즐겨라. 오늘 성 안은 축제란다. 내가 없는 동안 어린 나무에 물을 좀 주겠니?"
+   }
+  ]
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     292,
+     60
+    ],
+    "shape": "box",
+    "en": "The gardener 7s 5 handed over 2 5 the water-skins 3 5 and watering-pots, pots, entirely abdicating his responsibility.",
+    "ko": "정원지기는 물주머니와 물동이를 넘겨주고, 맡은 일을 통째로 떠넘겼습니다."
+   },
+   {
+    "seed": [
+     626,
+     95
+    ],
+    "shape": "bubble",
+    "en": "mind you do!",
+    "ko": "꼭 해야 한다!"
+   }
+  ]
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     143,
+     51
+    ],
+    "shape": "bubble",
+    "en": "We must be careful not to waste th water. When this water is all gone, we shall be hard put to it to get more.",
+    "ko": "물을 낭비하지 않도록 조심해야 한다. 이 물이 다 떨어지면 다시 구하기 어렵다."
+   }
+  ]
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     515,
+     78
+    ],
+    "shape": "box",
+    "en": "He devised perfectly logical, yet entirely destructive, empirical irical method.",
+    "ko": "원숭이 우두머리는 그럴듯하지만 아주 해로운 방법을 생각해 냈습니다."
+   },
+   {
+    "seed": [
+     402,
+     319
+    ],
+    "shape": "bubble",
+    "en": "First pull each young tree up. up. Look at the size of its roots.",
+    "ko": "먼저 어린 나무를 하나씩 뽑아라. 뿌리 크기를 보아라."
+   },
+   {
+    "rect": [
+     168,
+     150,
+     258,
+     202
+    ],
+    "ko": "목표:\n물 아끼기",
+    "align": "center",
+    "shape": "box",
+    "em": 13,
+    "manual": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     290,
+     148,
+     404,
+     204
+    ],
+    "ko": "필요한 것:\n뿌리 크기 알기",
+    "align": "center",
+    "shape": "box",
+    "em": 13,
+    "manual": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     434,
+     150,
+     536,
+     202
+    ],
+    "ko": "행동:\n나무 뽑기",
+    "align": "center",
+    "shape": "box",
+    "em": 13,
+    "manual": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     568,
+     150,
+     660,
+     202
+    ],
+    "ko": "결과:\n죽은 나무",
+    "align": "center",
+    "shape": "box",
+    "em": 13,
+    "manual": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     243,
+     60
+    ],
+    "shape": "bubble",
+    "en": "Give plenty of water to those whose roots strike deep, but only little to those with tiny roots. aves",
+    "ko": "뿌리가 깊은 나무에는 물을 넉넉히, 뿌리가 작은 나무에는 조금만 주어라."
+   },
+   {
+    "seed": [
+     737,
+     120
+    ],
+    "shape": "bubble",
+    "en": "Ye To be sure! Ny",
+    "ko": "알겠습니다!"
+   }
+  ]
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     232,
+     363
+    ],
+    "shape": "box",
+    "en": "At this juncture, wise man entered the pleasure gardens, He witnessed the devastating execution of the gardener’s delegation.",
+    "ko": "그때 한 지혜로운 사람이 정원에 들어왔습니다. 그는 정원지기의 부탁이 낳은 끔찍한 결과를 보았습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     284,
+     62
+    ],
+    "shape": "bubble",
+    "en": "Why do you pull up the trees and water them according to the size of their roots?",
+    "ko": "왜 나무를 뽑아서 뿌리 크기에 따라 물을 주느냐?"
+   }
+  ]
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     300,
+     62
+    ],
+    "shape": "bubble",
+    "en": "Because such are our king’s commands.",
+    "ko": "우리 왕께서 그렇게 명하셨기 때문이오."
+   },
+   {
+    "seed": [
+     247,
+     348
+    ],
+    "shape": "box",
+    "en": "flawless execution of fundamentally (wen strategy.",
+    "ko": "근본부터 잘못된 계획을 빈틈없이 실행했습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     268,
+     340,
+     388
+    ],
+    "ko": "그 대답에 지혜로운 사람은 깊은 비극을 떠올렸습니다. 어리석은 이는 좋은 일을 하려 할수록 해만 끼칠 뿐이라는 것을.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     92,
+     116,
+     716,
+     224
+    ],
+    "ko": "나 웨 아낫타꾸살레나 앗타짜리야 수카와하,\n하뻬띠 앗탕 둠메도, 까삐 아라미꼬 야타 띠.",
+    "align": "center",
+    "shape": "box",
+    "em": 26,
+    "manual": true,
+    "thr": 18,
+    "grow": 4
+   },
+   {
+    "rect": [
+     150,
+     258,
+     650,
+     340
+    ],
+    "ko": "어리석은 이는 좋은 것을 망친다.\n정원의 원숭이처럼.",
+    "align": "center",
+    "shape": "box",
+    "em": 21,
+    "manual": true,
+    "thr": 18,
+    "grow": 4
+   }
+  ]
+ },
+ {
+  "img": "images/046-The-Folly-of-the-Monkeys-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     504,
+     346
+    ],
+    "shape": "bubble",
+    "en": "True wisdom requires understanding the system not just executing the command.",
+    "ko": "참된 지혜는 시킨 일을 해내는 것만이 아니라 전체를 이해하는 것입니다."
+   },
+   {
+    "rect": [
+     60,
+     58,
+     350,
+     108
+    ],
+    "ko": "지혜 없는 선의는 본래 해롭습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

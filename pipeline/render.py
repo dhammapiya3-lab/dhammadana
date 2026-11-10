@@ -82,7 +82,7 @@ def render(src_path, boxes):
         if dark:
             text_px = ((g > bg + 45) & (inner > 0)).astype(np.uint8) * 255
         else:  # 상자 안쪽에서 바탕보다 뚜렷이 어두운 픽셀 = 글자
-            text_px = ((g < bg - 35) & (inner > 0)).astype(np.uint8) * 255
+            text_px = ((g < bg - b.get("thr", 35)) & (inner > 0)).astype(np.uint8) * 255
         # 글자 자리 재기는 테두리에서 더 떨어진 안쪽에서만 (울퉁불퉁한 테두리를 글자로 잘못 재지 않게)
         deep = cv2.erode(inner, np.ones((max(5, W // 160),) * 2, np.uint8))
         ys, xs = np.where((text_px > 0) & (deep > 0))
@@ -92,7 +92,7 @@ def render(src_path, boxes):
             continue
         tb = (xs.min(), ys.min(), xs.max(), ys.max())
         k = max(3, W // 400)
-        mk = cv2.dilate(text_px, np.ones((k, k), np.uint8), iterations=2)
+        mk = cv2.dilate(text_px, np.ones((k, k), np.uint8), iterations=b.get("grow", 2))
         yy, xx = np.where(mk > 0)
         if len(xx):  # 상자 둘레만 잘라서 메움 (그림 전체를 메우면 느림)
             m_ = 24

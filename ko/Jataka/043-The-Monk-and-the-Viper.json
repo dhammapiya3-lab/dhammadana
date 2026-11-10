@@ -1,0 +1,207 @@
+[
+ {
+  "img": "images/043-The-Monk-and-the-Viper-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     348,
+     181
+    ],
+    "shape": "bubble",
+    "en": "The Tragedy of Veluka’s Father: Study in Attachment.",
+    "ko": "웰루까 아버지의 비극:\n집착에 관한 이야기"
+   }
+  ]
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     181,
+     361
+    ],
+    "shape": "box",
+    "en": "From passion springs pain; true bliss requires its abandonment. The Bodhisatta sought the Himalayas, mastering the Meditation Object and leading five hundred ascetics in pure liberation.",
+    "ko": "애욕에서 괴로움이 생기니, 참된 행복은 애욕을 버려야 얻는다. 보살은 히말라야에 들어가 명상 주제를 통달하고, 수행자 오백 명을 해탈의 청정한 길로 이끌었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     154,
+     56
+    ],
+    "shape": "box",
+    "en": "But another monk welcomed wandering, poisonous viper into his hut Embracing passion, he grew to love the deadly creature as if it were his own beloved child",
+    "ko": "그런데 다른 한 수행자는 떠돌던 독사를 자기 오두막에 들였습니다. 애욕을 끌어안은 그는 그 무서운 독사를 친자식처럼 사랑하게 되었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     107,
+     343
+    ],
+    "shape": "box",
+    "en": "Housed safely in joint of bamboo, the viper was named “Veluka.” The ascetic’s attachment was so total, the monastic community called him only “Veluka’s Father.”",
+    "ko": "대나무 마디 속에 고이 넣어 기른 독사의 이름은 ‘웰루까’였습니다. 수행자의 집착이 어찌나 깊었던지, 수행자들은 그를 ‘웰루까의 아버지’라고만 불렀습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     183,
+     342
+    ],
+    "shape": "box",
+    "en": "Hearing of this danger, the Bodhisatta intervened with ore clarity: viper can never be trusted; keep it no longer.”",
+    "ko": "이 위험을 들은 보살은 분명하게 일렀습니다.\n“독사는 결코 믿을 수 없다. 더는 기르지 마라.”"
+   }
+  ]
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     92,
+     69
+    ],
+    "shape": "box",
+    "en": "The true poison was not the venom, io) but the willful ignorance io) of objective ive danger.",
+    "ko": "참된 독은 독사의 독이 아니라, 눈앞의 위험을 애써 외면하는 어리석음이었습니다."
+   },
+   {
+    "rect": [
+     92,
+     138,
+     262,
+     184
+    ],
+    "ko": "타고난 성품:\n믿을 수 없는 독",
+    "align": "left",
+    "shape": "box",
+    "em": 14,
+    "manual": true,
+    "fill": true
+   },
+   {
+    "rect": [
+     555,
+     332,
+     720,
+     368
+    ],
+    "ko": "잘못된 애정:\n죽음을 부르는 집착",
+    "align": "left",
+    "shape": "box",
+    "em": 14,
+    "manual": true,
+    "fill": true
+   }
+  ]
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     99,
+     152
+    ],
+    "shape": "box",
+    "en": "Heedless, the monk refused My viper is as dear to me as pupil; could not live without him The master foresaw his inevitable doom",
+    "ko": "고집 센 수행자는 거절했습니다.\n“제 독사는 제자처럼 소중합니다. 이것 없이는 살 수 없습니다.”\n스승은 그의 피할 수 없는 죽음을 내다보았습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     90,
+     150,
+     162
+    ],
+    "ko": "첫째~셋째 날:\n수행자들이 열매를 따러 떠났습니다.",
+    "align": "center",
+    "shape": "box",
+    "em": 14,
+    "manual": true,
+    "fill": true
+   },
+   {
+    "rect": [
+     200,
+     360,
+     700,
+     412
+    ],
+    "ko": "어둡고 갑갑한 감옥에 홀로 갇혀 잊힌 독사는 굶주리고 겁에 질려 사나워졌습니다.",
+    "align": "center",
+    "shape": "box",
+    "em": 15,
+    "manual": true,
+    "fill": true
+   }
+  ]
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     197,
+     224
+    ],
+    "shape": "bubble",
+    "en": "Come, my son; you must be hungry.",
+    "ko": "“자, 내 아들아. 배고프지?”"
+   },
+   {
+    "seed": [
+     289,
+     406
+    ],
+    "shape": "box",
+    "en": "Angry from its long fast, the viper struck instantly. Veluka Father was killed on the spot",
+    "ko": "오래 굶어 화가 난 독사가 곧바로 물었습니다. 웰루까의 아버지는 그 자리에서 죽었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/043-The-Monk-and-the-Viper-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     242,
+     73
+    ],
+    "shape": "box",
+    "en": "Yo atthakamassa, hitanukampino ovajjamano na karoti sasanam...",
+    "ko": "요 앗타까맛사, 히따누깜삐노\n오왓자마노 나 까로띠 사사낭…"
+   },
+   {
+    "seed": [
+     162,
+     361
+    ],
+    "shape": "box",
+    "en": "He who does not take the advice of one seeking his welfare, is in this way destroyed, like Veluka’s father.",
+    "ko": "자기를 위해 주는 이의 충고를 듣지 않는 자는\n웰루까의 아버지처럼 이렇게 죽음에 이른다."
+   }
+  ]
+ }
+]
