@@ -115,3 +115,10 @@ html.sv-lock,html.sv-lock body{overflow:hidden}
 .sv.sv-max.sv-rot{inset:auto;top:0;left:100vw;width:100vh;width:100dvh;height:100vw;transform-origin:top left;transform:rotate(90deg)}
 .sv.sv-max.sv-rot .sv-page{height:calc(100vw - 46px)}
 .sv.sv-rot .sv-track{overflow-x:hidden;touch-action:none}
+/* 한 화 끝: 다음 이야기 이어 보기 */
+.sv-end{color:#eee;text-align:center}
+.sv-end .e1{font-size:15px;opacity:.8;margin:0 0 14px}
+.sv-end .e2{border:0;border-radius:12px;background:var(--robe);color:#fff;font:inherit;font-size:17px;padding:14px 26px;cursor:pointer;line-height:1.5}
+.sv-end .e2 b{display:block;font-size:20px}
+.sv-end .e3{font-size:13px;opacity:.6;margin:12px 0 0}
+.sv.loading{opacity:.6;pointer-events:none}

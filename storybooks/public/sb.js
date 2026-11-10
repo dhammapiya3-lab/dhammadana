@@ -19,20 +19,57 @@
   const sv = document.getElementById('sv');
   if (!sv) return;
   const track = sv.querySelector('.sv-track');
-  const pages = [...sv.querySelectorAll('.sv-page')];
+  let pages, thumbs, KEY, endCard;
   const count = sv.querySelector('.sv-count');
-  const thumbs = [...document.querySelectorAll('.sv-thumbs button')];
   const autoBtn = sv.querySelector('.sv-auto');
-  const KEY = 'sb-pos-' + sv.dataset.key;
   let cur = 0, timer = null;
+  const last = () => pages.length - (endCard ? 0 : 1);  // 끝 화면(다음 이야기)이 있으면 그것까지
+  // 한 화를 다 보면 끝 화면: 전체 화면에서 나가지 않고 다음 이야기를 이 자리에서 이어 봄
+  const setup = () => {
+    pages = [...sv.querySelectorAll('.sv-page:not(.sv-end)')];
+    thumbs = [...document.querySelectorAll('.sv-thumbs button')];
+      KEY = 'sb-pos-' + sv.dataset.key;
+    endCard = null;
+    if (sv.dataset.next) {
+      endCard = document.createElement('figure');
+      endCard.className = 'sv-page sv-end';
+      endCard.innerHTML = `<div><p class="e1">이야기를 다 보셨습니다</p><button type="button" class="e2">다음 이야기 ▶<b></b></button><p class="e3">화면을 나가지 않고 바로 이어집니다</p></div>`;
+      endCard.querySelector('b').textContent = sv.dataset.nextTitle;
+      endCard.querySelector('button').onclick = e => { e.stopPropagation(); loadNext(); };
+      track.append(endCard);
+    }
+  };
+  const loadNext = async () => {
+    const url = sv.dataset.next;
+    if (!url || sv.classList.contains('loading')) return;
+    sv.classList.add('loading');
+    try {
+      const doc = new DOMParser().parseFromString(await (await fetch(url)).text(), 'text/html');
+      const nv = doc.getElementById('sv');
+      if (!nv) { location.href = url; return; }
+      track.innerHTML = nv.querySelector('.sv-track').innerHTML;
+      for (const k of ['key', 'next', 'nextTitle']) { if (nv.dataset[k]) sv.dataset[k] = nv.dataset[k]; else delete sv.dataset[k]; }
+      for (const sel of ['.story h1', '.sv-thumbs', '.story .prose', '.story .pn', '.story .orig']) {
+        const a = document.querySelector(sel), b = doc.querySelector(sel);
+        if (a && b) a.replaceWith(document.importNode(b, true));
+      }
+      document.title = doc.title;
+      history.pushState({}, '', url);
+      setup();
+      if (saveBtn.getAttribute('aria-pressed') === 'true') setSave(true);
+      track.scrollTo({ left: 0 }); cur = -1; show(0);
+    } catch (e) { location.href = url; }
+    sv.classList.remove('loading');
+  };
+  addEventListener('popstate', () => location.reload());
 
   const go = (i, smooth = true) => {
-    i = Math.max(0, Math.min(pages.length - 1, i));
+    i = Math.max(0, Math.min(last(), i));
     track.scrollTo({ left: i * track.clientWidth, behavior: smooth ? 'smooth' : 'auto' });
   };
   const show = i => {
     cur = i;
-    count.textContent = `${i + 1} / ${pages.length}`;
+    count.textContent = i >= pages.length ? '다음 이야기' : `${i + 1} / ${pages.length}`;
     thumbs.forEach((t, j) => t.classList.toggle('on', j === i));
     thumbs[i]?.scrollIntoView({ block: 'nearest', inline: 'nearest' });
     try { localStorage.setItem(KEY, i); } catch (e) {}
@@ -48,6 +85,7 @@
     if (['ArrowRight', 'k', ' ', 'PageDown'].includes(e.key)) { go(cur + 1); e.preventDefault(); }
     if (['ArrowLeft', 'j', 'PageUp'].includes(e.key)) { go(cur - 1); e.preventDefault(); }
     if (e.key === 'Home') go(0); if (e.key === 'End') go(pages.length - 1);
+    if (e.key === 'Enter' && endCard && cur >= pages.length) loadNext();
   });
   let t0 = null;
   track.addEventListener('touchstart', e => { if (sv.classList.contains('sv-rot')) t0 = e.touches[0]; }, { passive: true });
@@ -64,7 +102,7 @@
   autoBtn.onclick = () => {
     if (timer) { clearInterval(timer); timer = null; autoBtn.setAttribute('aria-pressed', 'false'); autoBtn.innerHTML = '▶ 자동<span class="lg"> 넘김</span>'; return; }
     autoBtn.setAttribute('aria-pressed', 'true'); autoBtn.textContent = '❚❚ 멈춤';
-    timer = setInterval(() => { if (cur >= pages.length - 1) autoBtn.onclick(); else go(cur + 1); }, 6000);
+    timer = setInterval(() => { if (cur >= pages.length && endCard) loadNext(); else if (cur >= last()) autoBtn.onclick(); else go(cur + 1); }, 6000);
   };
   // 전체 화면: 휴대폰은 가로로 돌려 크게 (안드로이드는 화면을 가로로 고정, 아이폰은 화면을 꽉 채우고 돌려 달라고 안내)
   const fullBtn = sv.querySelector('.sv-full');
@@ -109,6 +147,7 @@
   };
   saveBtn.onclick = () => setSave(saveBtn.getAttribute('aria-pressed') !== 'true');
   try { if (localStorage.getItem('sb-save')) setSave(true); } catch (e) {}
+  setup();
   let start = 0;
   try { start = +localStorage.getItem(KEY) || 0; } catch (e) {}
   if (start > 0 && start < pages.length) requestAnimationFrame(() => go(start, false));

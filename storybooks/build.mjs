@@ -120,7 +120,7 @@ for (const slug of Object.keys(CAT.books).filter(b => PUB.has(b))) {
     const k = d.stories?.[s.file] || {};
     const prev = list[i - 1], next = list[i + 1];
     const imgs = n ? Array.from({ length: n }, (_, j) => String(j + 1).padStart(2, '0')) : [];
-    const viewer = n ? `<div class="sv" id="sv" data-key="${esc(key)}" tabindex="0" aria-label="그림책 보기 (← → 키로 넘기기)">
+    const viewer = n ? `<div class="sv" id="sv" data-key="${esc(key)}"${next && READY[`${slug}/${sid(next.file)}`] ? ` data-next="/${slug}/${sid(next.file)}/" data-next-title="${esc(storyTitle(slug, next))}"` : ''} tabindex="0" aria-label="그림책 보기 (← → 키로 넘기기)">
   <div class="sv-track">${imgs.map((x, j) => `<figure class="sv-page"><img src="${S.img_base}/${key}/big/${x}.jpg" data-big="${S.img_base}/${key}/big/${x}.jpg" data-s="${S.img_base}/${key}/s/${x}.jpg" alt="${j + 1}쪽" ${j > 1 ? 'loading="lazy"' : ''}></figure>`).join('')}</div>
   <button class="sv-btn prev" aria-label="앞 그림">‹</button><button class="sv-btn next" aria-label="다음 그림">›</button>
   <div class="sv-bar"><span class="sv-count">1 / ${n}</span><button class="sv-auto" aria-pressed="false">▶ 자동<span class="lg"> 넘김</span></button><button class="sv-save" aria-pressed="false" title="작은 그림으로 보아 휴대폰 데이터를 아낍니다"><span class="lg">데이터 </span>절약</button><button class="sv-full">⛶ 전체<span class="lg"> 화면</span></button></div></div>
