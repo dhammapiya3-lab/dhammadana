@@ -193,13 +193,17 @@
     "ko": "살아남은 둘은 보물을 숨겼습니다. 하나는 남아서 지키고, 하나는 먹을 것을 구하러 갔습니다."
    },
    {
-    "seed": [
-     200,
-     359
-    ],
     "shape": "box",
     "en": "In perfect symmetry, greed consumed them both. The guard drew his sword to murder his mate. The forager poisoned the rice to claim it all",
-    "ko": "똑같이, 탐욕이 둘 다 삼켜 버렸습니다. 지키던 자는 동무를 죽이려고 칼을 뽑았고, 먹을 것을 구하러 간 자는 다 차지하려고 밥에 독을 탔습니다."
+    "ko": "똑같이, 탐욕이 둘 다 삼켜 버렸습니다. 지키던 자는 동무를 죽이려고 칼을 뽑았고, 먹을 것을 구하러 간 자는 다 차지하려고 밥에 독을 탔습니다.",
+    "rect": [
+     200,
+     358,
+     600,
+     400
+    ],
+    "fill": true,
+    "align": "left"
    }
   ]
  },

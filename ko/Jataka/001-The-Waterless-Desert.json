@@ -188,13 +188,17 @@
   "img": "images/001-The-Waterless-Desert-09-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     204,
-     45
-    ],
     "shape": "box",
     "en": "same trick. But the Bodhisatta had the skill in means to see through the illusion.",
-    "ko": "약카는 같은 속임수를 썼습니다. 그러나 보살에게는 환영을 꿰뚫어 보는 방편의 지혜가 있었습니다."
+    "ko": "약카는 같은 속임수를 썼습니다. 그러나 보살에게는 환영을 꿰뚫어 보는 방편의 지혜가 있었습니다.",
+    "rect": [
+     24,
+     20,
+     486,
+     72
+    ],
+    "fill": true,
+    "align": "left"
    },
    {
     "seed": [

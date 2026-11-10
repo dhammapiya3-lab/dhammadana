@@ -141,7 +141,7 @@ def render(src_path, boxes):
             continue
         ys2, xs2 = np.where(full > 0)
         QA.append(dict(tb=tuple(int(v) for v in tb), region=(int(xs2.min()), int(ys2.min()), int(xs2.max()), int(ys2.max())),
-                       area=int((full > 0).sum()), rect=bool(b.get("rect")), ko=b["ko"], em=em, seed=b.get("seed"), li=len(layout)))
+                       area=int((full > 0).sum()), rect=bool(b.get("rect")), ko=b["ko"], em=em, seed=b.get("seed"), li=len(layout), mask=(full > 0) if not b.get("cover") and not b.get("rect") else None))
         if b.get("cover"):  # 덮은 카드: 글 자리는 네모 전체
             ys3, xs3 = np.where(inner > 0); tb = (int(xs3.min()), int(ys3.min()), int(xs3.max()), int(ys3.max()))
         layout.append((inner_rect(full, tb), b["ko"], b.get("align", "left" if b.get("shape") == "box" else "center"), em, dark))
@@ -166,6 +166,7 @@ def render(src_path, boxes):
             lw = d.textlength(l, font=fl)
             x = X0 if align == "left" else X0 + ((X1 - X0) - lw) / 2
             d.text((x, y), l, font=fl, fill=(245, 240, 230) if dark else INK)
+            drawn[-1].setdefault("lines", []).append((x / scale, (y + lh * .15) / scale, (x + lw) / scale, (y + lh * .85) / scale))
             y += lh
     render.qa = check(img, out, QA, drawn, W, H)
     return pil
@@ -198,6 +199,16 @@ def check(img, out, QA, drawn, W, H):
             bh = dr["ty"][1] - dr["ty"][0]
             if abs(cy - sy) > max(0.1 * H, bh) or abs(cx - sx) > max(0.3 * W, dr["tw"]):
                 bad.append((n, "자리", f"한글 글({int(cx)},{int(cy)})이 상자 점({int(sx)},{int(sy)})에서 멀리 그려짐"))
+        if q.get("mask") is not None:  # 글 줄이 말풍선(상자) 가장자리에 너무 붙거나 밖으로 나갔는지
+            dist = cv2.distanceTransform(q["mask"].astype(np.uint8), cv2.DIST_L2, 3)
+            lim = max(1.5, W * 0.0022)
+            worst = 1e9
+            for lx0, ly0, lx1, ly1 in dr.get("lines", []):
+                for px, py in ((lx0, ly0), (lx1, ly0), (lx0, ly1), (lx1, ly1), (lx0, (ly0+ly1)/2), (lx1, (ly0+ly1)/2)):
+                    px, py = int(min(W - 1, max(0, px))), int(min(H - 1, max(0, py)))
+                    worst = min(worst, float(dist[py, px]))
+            if worst < lim:
+                bad.append((n, "삐져나옴", f"글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 {worst:.0f}px)"))
         tb_area = max(1, tw_ * th_)
         if not q["rect"] and q["area"] > 6 * tb_area and q["area"] > 0.06 * W * H:
             bad.append((n, "번짐", f"상자로 잡은 곳이 글 자리의 {q['area'] / tb_area:.0f}배 (그림 바탕까지 잡았을 수 있음)"))

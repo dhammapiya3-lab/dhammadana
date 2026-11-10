@@ -137,13 +137,17 @@
   "img": "images/044-The-Son-and-the-Mosquito-09-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     569,
-     68
-    ],
     "shape": "box",
     "en": "Intending only to kill the mosquito, the foolish son cleft his father’s head in twain. The old man fell dead on the spot.",
-    "ko": "모기만 잡으려던 어리석은 아들은 아버지의 머리를 두 쪽으로 쪼개 버렸습니다. 늙은이는 그 자리에서 죽었습니다."
+    "ko": "모기만 잡으려던 어리석은 아들은 아버지의 머리를 두 쪽으로 쪼개 버렸습니다. 늙은이는 그 자리에서 죽었습니다.",
+    "rect": [
+     496,
+     52,
+     748,
+     132
+    ],
+    "fill": true,
+    "align": "left"
    }
   ]
  },
