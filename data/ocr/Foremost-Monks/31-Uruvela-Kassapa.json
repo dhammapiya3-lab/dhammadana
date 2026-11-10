@@ -1,0 +1,542 @@
+[
+ {
+  "img": "images/31-Uruvela-Kassapa-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     251,
+     325
+    ],
+    "bbox": [
+     800,
+     1068,
+     1842,
+     1332
+    ],
+    "shape": "box",
+    "en": "Uruvela Kassapa Foremost in Followers fy",
+    "conf": 55
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     163,
+     50
+    ],
+    "bbox": [
+     423,
+     159,
+     2218,
+     427
+    ],
+    "shape": "box",
+    "en": "Eons ago in Hamsavati, avati, noble youth witnessed Buddha Padumuttara name disciple foremost in followers. After seven days of grand offerings, he vowed to attain that exact title.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "CALA",
+   "AVA"
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     345,
+     117
+    ],
+    "bbox": [
+     1084,
+     354,
+     1742,
+     1104
+    ],
+    "shape": "box",
+    "en": "Buddha Padumuttara reviewed the youth’s aspiration. His prophecy: “You will be named by Buddha Gotama as the foremost monastic in his teaching with big following.”",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     92,
+     327
+    ],
+    "bbox": [
+     225,
+     1061,
+     2414,
+     1382
+    ],
+    "shape": "box",
+    "en": "Ninety-two aeons ago, the future Uruvela Kassapa was born as the eldest royal half-brother to Buddha Phussa. The three brothers devoutly served the Sangha during Rains Retreat.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     188,
+     56
+    ],
+    "bbox": [
+     499,
+     149,
+     2142,
+     271
+    ],
+    "shape": "box",
+    "en": "their final existence, the brothers mastered the Vedas.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     370,
+     104
+    ],
+    "bbox": [
+     926,
+     337,
+     1719,
+     423
+    ],
+    "shape": "box",
+    "en": "‘Nadi’",
+    "conf": 92
+   },
+   {
+    "seed": [
+     87,
+     381
+    ],
+    "bbox": [
+     241,
+     1250,
+     2400,
+     1336
+    ],
+    "shape": "box",
+    "en": "Uruvela: Forest 500 pupils",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Wig"
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     220,
+     55
+    ],
+    "bbox": [
+     575,
+     175,
+     2076,
+     367
+    ],
+    "shape": "box",
+    "en": "Mastering the three Vedas, they realized the teachings lacked knowledge of the hereafter.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     252,
+     380
+    ],
+    "bbox": [
+     774,
+     1253,
+     1868,
+     1408
+    ],
+    "shape": "box",
+    "en": "Seeking ultimate truth, they renounced the world to become ascetic fire-worshippers.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "After",
+   "dispatching",
+   "Arahats",
+   "spread",
+   "the",
+   "Dhamma,",
+   "Buddha",
+   "Gotama",
+   "saw",
+   "the",
+   "spiritual",
+   "ripeness",
+   "the",
+   "Kassapa",
+   "brothers.",
+   "approached",
+   "the",
+   "Uruvela",
+   "forest",
+   "alone.",
+   "WH."
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     202,
+     81
+    ],
+    "bbox": [
+     648,
+     175,
+     1994,
+     367
+    ],
+    "shape": "box",
+    "en": "“To break the ie pride of ‘ite the foremost Brother: brother, the Buddha displayed 3,500 miracles.",
+    "conf": 40
+   },
+   {
+    "seed": [
+     248,
+     380
+    ],
+    "bbox": [
+     774,
+     1253,
+     1868,
+     1408
+    ],
+    "shape": "box",
+    "en": "The most striking: peacefully taminga fierce Naga in the fire chamber.",
+    "conf": 58
+   }
+  ],
+  "loose": [
+   "INGN",
+   "SSS",
+   "INON"
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     58,
+     56
+    ],
+    "bbox": [
+     179,
+     182,
+     883,
+     384
+    ],
+    "shape": "box",
+    "en": "Uruvela submitted. Seeing their leader yield, his younger brothers and all followers joined.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     431,
+     83
+    ],
+    "bbox": [
+     1356,
+     192,
+     1845,
+     684
+    ],
+    "shape": "bubble",
+    "en": "One thousand ascetics were ordained with single phrase: “Come, monastic.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "ats",
+   "BSS"
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "transformed",
+   "their",
+   "physical",
+   "fire",
+   "worship",
+   "into",
+   "realization:",
+   "the",
+   "sense,",
+   "form,",
+   "and",
+   "formless",
+   "realms",
+   "are",
+   "burning.",
+   "All",
+   "1,000",
+   "attained",
+   "Arahatship.",
+   "sense,"
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "King",
+   "isara’s",
+   "20,00",
+   "Brahmins",
+   "hesitated.",
+   "Unsure",
+   "whether",
+   "the",
+   "Buddha",
+   "the",
+   "famous",
+   "Uruvela",
+   "Kassapa",
+   "was",
+   "the",
+   "master,",
+   "their",
+   "minds",
+   "were",
+   "clouded",
+   "with",
+   "doubt."
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     110,
+     67
+    ],
+    "bbox": [
+     205,
+     208,
+     929,
+     509
+    ],
+    "shape": "box",
+    "en": "“The Fortunate One is my teacher; Iam am mis disciple.”",
+    "conf": 67
+   },
+   {
+    "seed": [
+     514,
+     257
+    ],
+    "bbox": [
+     1653,
+     757,
+     2460,
+     1217
+    ],
+    "shape": "box",
+    "en": "the crowd’s Kassapa levitated from one to seven palm-trees high, descending to bow at the Buddha’s feet each time.",
+    "conf": 88
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     289,
+     72
+    ],
+    "bbox": [
+     813,
+     152,
+     1828,
+     344
+    ],
+    "shape": "box",
+    "en": "Buddha Sinan",
+    "conf": 32
+   }
+  ],
+  "loose": [
+   "XOXO",
+   "King",
+   "Bimbis",
+   "ara",
+   "110,000",
+   "Brahmins",
+   "attained",
+   "Stream-",
+   "entry",
+   "The",
+   "remaining",
+   "10,000",
+   "took",
+   "the",
+   "Three",
+   "Treasures",
+   "their",
+   "refuge."
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     70,
+     54
+    ],
+    "bbox": [
+     162,
+     169,
+     813,
+     390
+    ],
+    "shape": "box",
+    "en": "At Jetavana, the Buddha declared him foremost in having massive following.",
+    "conf": 89
+   },
+   {
+    "seed": [
+     516,
+     314
+    ],
+    "bbox": [
+     1617,
+     1008,
+     2486,
+     1329
+    ],
+    "shape": "box",
+    "en": "If his constant following of 1,000 Arahats each act as preceptors, the Sangha multiplies exponentially to 2,000, then 3,000.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "From",
+   "ancient",
+   "vow",
+   "Hamsavati",
+   "the",
+   "foremost",
+   "leader",
+   "under",
+   "Buddha",
+   "Gotama.",
+   "ash"
+  ]
+ }
+]

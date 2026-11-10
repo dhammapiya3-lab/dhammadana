@@ -1,0 +1,822 @@
+[
+ {
+  "img": "images/14-Khadiravaniya-Revata-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Venerable",
+   "the",
+   "Acacia",
+   "Revata",
+   "Forest",
+   "LEN"
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "100,000",
+   "aeons",
+   "ago",
+   "Hamsavati,",
+   "the",
+   "virtuous",
+   "ferryman",
+   "Revata",
+   "carried",
+   "Buddha",
+   "Padumuttara",
+   "and",
+   "100,000",
+   "monks",
+   "across",
+   "the",
+   "river",
+   "Ganges",
+   "magnificent,",
+   "floral-draped",
+   "barge.",
+   "EXS"
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     353,
+     167
+    ],
+    "bbox": [
+     922,
+     479,
+     1729,
+     1055
+    ],
+    "shape": "bubble",
+    "en": "Witnessing monk declared the foremost forest-dweller (arafifiaka), Revata performed grand alms giving (maha-dana). He aspired for this exact title. The Buddha prophesied his success during Buddha Gotama’s Dispensation.",
+    "conf": 84
+   }
+  ],
+  "loose": [
+   "ASS"
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     110,
+     66
+    ],
+    "bbox": [
+     192,
+     188,
+     952,
+     503
+    ],
+    "shape": "box",
+    "en": "Reborn in Magadha to the Brahmin Rupasari. His elder siblings—including Upatissa (Ven. Sariputta)—all ordained. Only young Revata remained bound to the household life.",
+    "conf": 88
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     70,
+     57
+    ],
+    "bbox": [
+     192,
+     165,
+     1336,
+     456
+    ],
+    "shape": "bubble",
+    "en": "Fearing they would lose their last son, Revata’s parents arranged marriage with bride of equal wealth and distinction, seeking to bind him early to household life",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     318,
+     182
+    ],
+    "bbox": [
+     972,
+     532,
+     1613,
+     1164
+    ],
+    "shape": "box",
+    "en": "At the wedding, the parents instructed the bride to bow to Revata’s 120-year-old grandmother. They offered blessing: “Dear daughter, may you live longer than your grandmother here 1!”",
+    "conf": 56
+   }
+  ],
+  "loose": [
+   "NAAAAAAA"
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     320,
+     312
+    ],
+    "bbox": [
+     820,
+     975,
+     1855,
+     1326
+    ],
+    "shape": "box",
+    "en": "The Inevitable etsy Reality Youth: Fair, tender, infatuating beauty. Decay: White-haired, toothless, wrinkled, What is the use of infatuation with physical beauty that has the nature of growing old?",
+    "conf": 33
+   }
+  ],
+  "loose": [
+   "Sila",
+   "AAA"
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Revata",
+   "feigned",
+   "game",
+   "runners-and-chasers",
+   "with",
+   "friends.",
+   "Gradually",
+   "delaying",
+   "his",
+   "returns,",
+   "seized",
+   "his",
+   "third",
+   "turn",
+   "run",
+   "full",
+   "speed",
+   "toward",
+   "forest-",
+   "dwelling",
+   "ascetic",
+   "monks"
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WAN",
+   "Seeing",
+   "his",
+   "fine",
+   "attire,",
+   "the",
+   "monks",
+   "refused",
+   "ordination.",
+   "Revata",
+   "cried",
+   "out,",
+   "being",
+   "robbed!”—meaning",
+   "was",
+   "being",
+   "robbed",
+   "the",
+   "threefold",
+   "bliss",
+   "Devas,",
+   "humans,",
+   "and",
+   "Nibbana."
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Revata",
+   "revealed",
+   "his",
+   "eldest",
+   "brother",
+   "was",
+   "Upatissa,",
+   "now",
+   "Ven.",
+   "Sariputta.",
+   "Honoring",
+   "Sariputta’s",
+   "prior",
+   "request",
+   "ordain",
+   "his",
+   "relatives,",
+   "the",
+   "monks",
+   "granted",
+   "Revata",
+   "the",
+   "taca-paficaka",
+   "meditation",
+   "and",
+   "ordained",
+   "him.",
+   "Whe",
+   "Wy,"
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "UY,",
+   "age",
+   "20,",
+   "took",
+   "full",
+   "ordination.",
+   "entered",
+   "rough",
+   "stony",
+   "acacia",
+   "forest,",
+   "vowing",
+   "never",
+   "see",
+   "the",
+   "Buddha",
+   "his",
+   "brother",
+   "until",
+   "achieved",
+   "the",
+   "Arahat",
+   "fruition",
+   "(Arahatta-phala)."
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Struggle",
+   "for",
+   "Deliverance",
+   "Environment:",
+   "Uneven,",
+   "stony",
+   "acacia",
+   "forest.",
+   "Nourishment:",
+   "Coarse",
+   "food",
+   "challenging",
+   "his",
+   "wealthy",
+   "upbringing.",
+   "Effort:",
+   "Assiduous",
+   "meditation.",
+   "After",
+   "the",
+   "Rains",
+   "Retreat,",
+   "his",
+   "unyielding",
+   "perseverance",
+   "culminated",
+   "Arahatship.",
+   "Zil"
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     596,
+     302
+    ],
+    "bbox": [
+     1908,
+     989,
+     2543,
+     1372
+    ],
+    "shape": "box",
+    "en": "“Knowing Revata had achieved his goal, the Buddha finally permitted Ven. Sariputta to visit. An overwhelming company of monks followed, lowed, eager to see the golden complexion of the Buddha and the triumphant eee",
+    "conf": 36
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "NZ,",
+   "would",
+   "soon",
+   "crowd",
+   "the",
+   "area,",
+   "disturbing",
+   "Ven.",
+   "Revata’s",
+   "quietude.",
+   "protect",
+   "the",
+   "forest-dweller’s",
+   "peace,",
+   "the",
+   "Budd",
+   "departed",
+   "for",
+   "Revata’s",
+   "remote",
+   "acacia",
+   "forest.",
+   "Buddha",
+   "knew",
+   "visitors",
+   "SY,",
+   "The",
+   "Buddha"
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     446,
+     177
+    ],
+    "bbox": [
+     1326,
+     512,
+     2073,
+     972
+    ],
+    "shape": "box",
+    "en": "Ven. Revata saw the Buddha approaching his stone slab from distance. Welcoming the Great Teacher with deep reverence, he prepared to receive him amidst the wild, thorny acacia trees.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     210,
+     93
+    ],
+    "bbox": [
+     572,
+     238,
+     2073,
+     506
+    ],
+    "shape": "box",
+    "en": "‘Dear son,’ the Buddha asked, ‘what do you do when wild elephants and lions roar?’ Revata replied, ‘Exalted Buddha, their sounds repeatedly bring me delight in the forest (araffia-rati).’",
+    "conf": 43
+   }
+  ],
+  "loose": [
+   "N/AG",
+   "VIN",
+   "WAS",
+   "ang"
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "After",
+   "teaching",
+   "500",
+   "verses,",
+   "the",
+   "ONY",
+   "Buddha",
+   "miraculously",
+   "departed.",
+   "Using",
+   "his",
+   "supernatural",
+   "power,",
+   "caused",
+   "the",
+   "mocking",
+   "monks",
+   "forget",
+   "their",
+   "staffs,",
+   "umbrellas,",
+   "INS",
+   "footwear,",
+   "and",
+   "ointment",
+   "bottles",
+   "the",
+   "wilderness."
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     478,
+     116
+    ],
+    "bbox": [
+     1537,
+     314,
+     2318,
+     625
+    ],
+    "shape": "box",
+    "en": "Returning for their gear, the restless monks faced the natural, unmiraculous path. Exhausted, they crawled on their knees through harsh bushes, thorns pebbles, and incredibly uneven terrain Fs",
+    "conf": 47
+   }
+  ],
+  "loose": [
+   "WY;"
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Finding",
+   "their",
+   "acacia",
+   "stumps,",
+   "the",
+   "truth.",
+   "“What",
+   "wonder!”",
+   "Ven.",
+   "Revata’s",
+   "immense",
+   "belongings",
+   "hanging",
+   "exhausted",
+   "monks",
+   "the",
+   "they",
+   "gasped,",
+   "finally",
+   "recognizing",
+   "supernatural",
+   "power.",
+   "the"
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     82,
+     61
+    ],
+    "bbox": [
+     179,
+     169,
+     1200,
+     582
+    ],
+    "shape": "box",
+    "en": "In Savatthi, the lay supporter rter vee asked the early-arriving monks about the forest. “tt is pleasant and delightful,’ they answered. “Exactly like the celestial gardens of Nandana and Cittalata!”",
+    "conf": 48
+   }
+  ],
+  "loose": [
+   "Wal",
+   "Cws"
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     121,
+     73
+    ],
+    "bbox": [
+     179,
+     169,
+     1200,
+     582
+    ],
+    "shape": "box",
+    "en": "Visakha akh then asked the ite arriving restless monks. They complained bitterly. “It is barren high ground, great acacia forest with an extremely uneven surface full of rocks. Revata lives SEL",
+    "conf": 31
+   }
+  ],
+  "loose": [
+   "NIN"
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     297,
+     12
+    ],
+    "bbox": [
+     754,
+     40,
+     1888,
+     162
+    ],
+    "shape": "box",
+    "en": "aes iews of the Acacia Forest",
+    "conf": 37
+   },
+   {
+    "seed": [
+     155,
+     143
+    ],
+    "bbox": [
+     350,
+     407,
+     1015,
+     648
+    ],
+    "shape": "box",
+    "en": "ane Early Montes Monks Pleasant, delightful resembling celestial gardens",
+    "conf": 36
+   },
+   {
+    "seed": [
+     222,
+     402
+    ],
+    "bbox": [
+     618,
+     1289,
+     2027,
+     1399
+    ],
+    "shape": "box",
+    "en": "hy did th experiences so vias",
+    "conf": 36
+   }
+  ],
+  "loose": [
+   "Restless",
+   "Monks:",
+   "Barren,",
+   "uneven,",
+   "filled",
+   "with",
+   "pebbles,",
+   "thorns,",
+   "and",
+   "misery."
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     169,
+     72
+    ],
+    "bbox": [
+     179,
+     169,
+     1729,
+     529
+    ],
+    "shape": "box",
+    "en": "on these contradictory reports Visakcha Visakha visited the Buddha Offering unguent and flowers, she asked, “Exalted Buddha, why do some praise his residence while others speak ill of it?”",
+    "conf": 35
+   }
+  ],
+  "loose": [
+   "ANY"
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "explained",
+   "that",
+   "worldly",
+   "comfort",
+   "does",
+   "not",
+   "dictate",
+   "true",
+   "peace.",
+   "“Visakha,",
+   "place",
+   "which",
+   "the",
+   "minds",
+   "the",
+   "noble",
+   "ones",
+   "take",
+   "delight",
+   "pleasant,",
+   "whether",
+   "pleasant",
+   "unpleasant",
+   "worldly",
+   "terms.”",
+   "WOT",
+   "ZW)",
+   "So:",
+   "SSS"
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WANE",
+   "Game",
+   "yadi",
+   "ninne",
+   "yadi",
+   "thale;",
+   "Whether",
+   "village",
+   "forest,",
+   "low",
+   "valley",
+   "high",
+   "ground—",
+   "wherever",
+   "Arahats",
+   "dwell,",
+   "that",
+   "place",
+   "truly",
+   "delightful.",
+   "(Dhammapada",
+   "98)"
+  ]
+ }
+]

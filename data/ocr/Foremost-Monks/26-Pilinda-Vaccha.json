@@ -1,0 +1,408 @@
+[
+ {
+  "img": "images/26-Pilinda-Vaccha-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "NAF",
+   "The",
+   "Karmic",
+   "Tapestry",
+   "Pilinda",
+   "Magic,",
+   "Habit,",
+   "and",
+   "the",
+   "Path",
+   "Awakening",
+   "Pav"
+  ]
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     344,
+     313
+    ],
+    "bbox": [
+     1048,
+     1015,
+     2400,
+     1253
+    ],
+    "shape": "box",
+    "en": "In ancient wealthy man marvelled as Buddha Padumuttara praised monk adored by Devas. He vowed to achieve this exact honour. The Buddha saw his destiny and prophesied its fulfillment",
+    "conf": 65
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     190,
+     348
+    ],
+    "bbox": [
+     602,
+     1131,
+     2043,
+     1369
+    ],
+    "shape": "box",
+    "en": "Lifetimes later, ruling as Universal Monarch, he established his people in the five moral precepts. This virtuous leadership guided countless subjects to the Deva realms, forging an eternal karmic bond of gratitude with the divine.",
+    "conf": 94
+   }
+  ],
+  "loose": [
+   "rs,"
+  ]
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     417,
+     329
+    ],
+    "bbox": [
+     1313,
+     1012,
+     2500,
+     1369
+    ],
+    "shape": "box",
+    "en": "Reborn in as the Brahmin Pilinda Vaccha, he shunned worldly life. Mastering the Cla Gandhara mantras, he commanded immense power—flying through the sky and reading minds. He became Rajagaha’s greatest, wealthiest sage.",
+    "conf": 49
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     214,
+     349
+    ],
+    "bbox": [
+     605,
+     1134,
+     2037,
+     1365
+    ],
+    "shape": "box",
+    "en": "‘When Realizing Buddha his worldly Gotama magic arrived was lower in Rajagaha, art eclipsed Pilinda’s by supreme powers vanished master, he humbly approached the Buddha to learn this higher truth.",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     432,
+     311
+    ],
+    "bbox": [
+     1418,
+     1012,
+     2500,
+     1369
+    ],
+    "shape": "box",
+    "en": "Told that ordination was the prerequisite, Pilinda became monk. The Buddha gave him tailored meditation subject. Endowed with sufficing conditions from past lives, Pilinda gained deep insight trading worldly spells for ultimate Awakening.",
+    "conf": 62
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Despite",
+   "Awakening,",
+   "Pilinda",
+   "called",
+   "everyone",
+   "outcaste",
+   "The",
+   "Buddha",
+   "explained",
+   "500",
+   "past",
+   "lives",
+   "haughty",
+   "Brahmin",
+   "created",
+   "ingrained",
+   "habit",
+   "Arahat",
+   "speaks",
+   "without",
+   "malice;",
+   "his",
+   "words",
+   "though",
+   "sounding",
+   "harsh",
+   "are",
+   "utterly",
+   "harmless"
+  ]
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     246,
+     83
+    ],
+    "bbox": [
+     645,
+     212,
+     1200,
+     589
+    ],
+    "shape": "bubble",
+    "en": "What is in your bowl outcaste?",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "droppings",
+   "venerable",
+   "sir",
+   "ADD",
+   "During",
+   "round,",
+   "Pilinda",
+   "greeted",
+   "pepper",
+   "merchant.",
+   "Offended,",
+   "the",
+   "angry",
+   "merchant",
+   "spitefully",
+   "lied",
+   "about",
+   "his",
+   "goods.",
+   "Speaking",
+   "purely",
+   "from",
+   "his",
+   "harmless",
+   "-life",
+   "habit,",
+   "Pilinda",
+   "it,",
+   "outcaste.",
+   "simply",
+   "replied:",
+   "eaking"
+  ]
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     500,
+     75
+    ],
+    "bbox": [
+     1485,
+     202,
+     2450,
+     1118
+    ],
+    "shape": "box",
+    "en": "The merchant’s angry lie against an Arahat brought immediate karmic consequence He crushed the contents in his hand—the entire cartload of valuable pepper had physically transformed into worthless rat’s droppings His spirits sank in despair",
+    "conf": 82
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     606,
+     100
+    ],
+    "bbox": [
+     1792,
+     238,
+     2367,
+     628
+    ],
+    "shape": "bubble",
+    "en": "So be it rascal",
+    "conf": 96
+   },
+   {
+    "seed": [
+     108,
+     353
+    ],
+    "bbox": [
+     245,
+     1157,
+     2397,
+     1435
+    ],
+    "shape": "box",
+    "en": "Advised by bystander, Toe the Signed and truthfully stated he carried pepper. Pilinda replied without malice. Instantly, the harsh karmic effect was reversed, and the cartload sally reverted to valuable pepper.",
+    "conf": 31
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WE,",
+   "Because",
+   "had",
+   "guided",
+   "many",
+   "heaven",
+   "Universal",
+   "Monarch,",
+   "Devas",
+   "worshipped",
+   "him",
+   "daily.",
+   "Fulfilling",
+   "the",
+   "ancient",
+   "prophecy,",
+   "the",
+   "Buddha",
+   "declared",
+   "Ven.",
+   "Pilinda",
+   "Vaccha",
+   "ANE",
+   "the",
+   "foremost",
+   "monastic",
+   "disciple",
+   "adored",
+   "Devas.",
+   "VAN",
+   "had"
+  ]
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     569,
+     70
+    ],
+    "bbox": [
+     1828,
+     182,
+     2466,
+     1299
+    ],
+    "shape": "box",
+    "en": "The Karmic Tapestry Shrine Offerings wove his Awakening Monarch rule wove the adoration of Devas 500 Brahmin lives wove his harmless habit Every present reality is perfectly woven from the intricate threads of past intentions",
+    "conf": 81
+   },
+   {
+    "seed": [
+     445,
+     302
+    ],
+    "bbox": [
+     1322,
+     929,
+     1706,
+     1164
+    ],
+    "shape": "bubble",
+    "en": "Outcaste",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "(Ve"
+  ]
+ }
+]

@@ -1,0 +1,446 @@
+[
+ {
+  "img": "images/11-Bhadda-Kaccana-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     115,
+     328
+    ],
+    "bbox": [
+     324,
+     1061,
+     2318,
+     1399
+    ],
+    "shape": "box",
+    "en": "The Foremost mere oremost in Supernormal Powers The extraordinary fas) aS. cosmic journey of Ven. Bhadda ns! Kaccana, an unmatched oO ad master da of aan) memory ay and nS; spiritual insight.",
+    "conf": 34
+   }
+  ],
+  "loose": [
+   "NY:"
+  ]
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     294,
+     294
+    ],
+    "bbox": [
+     956,
+     929,
+     1686,
+     1481
+    ],
+    "shape": "box",
+    "en": "Inseparably Linked Destinies Masses of water follow the tide. Before reaching ultimate liberation, she was known as Yasodhara. Her path was bound to the future Buddha across lifetimes, his journey through the worldly realms before transcending them.",
+    "conf": 84
+   }
+  ],
+  "loose": [
+   "NIG"
+  ]
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     71,
+     308
+    ],
+    "bbox": [
+     142,
+     998,
+     1392,
+     1352
+    ],
+    "shape": "box",
+    "en": "An Ancient Vow at Hamsavati During the era of Buddha Padumuttara, she witnessed nun declared foremost in great supernormal power. Inspired, she made profound aspiration to achieve this exact spiritual pinnacle, receiving confirmation from the Buddha.",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "fil",
+   "VAN"
+  ]
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     512,
+     45
+    ],
+    "bbox": [
+     1627,
+     136,
+     2503,
+     648
+    ],
+    "shape": "box",
+    "en": "Traversing One Hundred Thousand Aeons For 100,000 aeons following her vow, she cycled exclusively through the Deva and human realms. She avoided all lower rebirths, steadily perfecting the virtues required for her ultimate realization",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     165,
+     299
+    ],
+    "bbox": [
+     129,
+     985,
+     1408,
+     1365
+    ],
+    "shape": "box",
+    "en": "SSS",
+    "conf": 62
+   },
+   {
+    "seed": [
+     146,
+     308
+    ],
+    "bbox": [
+     142,
+     998,
+     1395,
+     1352
+    ],
+    "shape": "box",
+    "en": "The Final Royal Birth In the time of Buddha Gotama, she was born as Bhadda Kaccana, daughter of the Sakyan Prince Suppabuddha She married Prince Siddhattha, becoming his Chief Queen and the mother of Prince Rahula",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     281,
+     336
+    ],
+    "bbox": [
+     271,
+     1111,
+     2371,
+     1385
+    ],
+    "shape": "box",
+    "en": "The Path to ian Renunciation The worldly life soon shattered. Prince Siddhattha renounced the world on the night Rahula was born. Five years after attaining Perfect Awakening, the Buddha resumed, awakening ng his kith nd kin to the Dhamma.",
+    "conf": 39
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     497,
+     56
+    ],
+    "bbox": [
+     1468,
+     172,
+     2490,
+     661
+    ],
+    "shape": "box",
+    "en": "Entering the Sangha Following the king’s death, the royal women left the palace. Princesses Bhadda Kaccana and Nanda ordained as nuns, taking Maha Pajapati Gotami as their preceptress She traded golden ornaments for the ascetic robes of monastic",
+    "conf": 84
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     289,
+     336
+    ],
+    "bbox": [
+     271,
+     1111,
+     2371,
+     1385
+    ],
+    "shape": "box",
+    "en": "Achieving True Insight Renunciation was only the beginning. Applying herself with immense diligence, Ven. Bhadda Kaccana strove to gain insight. Through unwavering effo rt, she eradicated all defilements and attained the ultimate liberation of an Arahat",
+    "conf": 86
+   }
+  ],
+  "loose": [
+   "ANY",
+   "AV,"
+  ]
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     117,
+     360
+    ],
+    "bbox": [
+     271,
+     1114,
+     2371,
+     1385
+    ],
+    "shape": "box",
+    "en": "Th The Power of Avajjana She mastered great supernormal powers. In single sitting, with just one adverting of her mind (avajjana), she could instantly recall past existences with flawless clarity. his ext ra ordinary mental feat astonished the monastic world.",
+    "conf": 49
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     77,
+     116
+    ],
+    "bbox": [
+     238,
+     334,
+     995,
+     1151
+    ],
+    "shape": "box",
+    "en": "The Scale of Her Vision Most masters could recall existences across 100,000 aeons. Ven. Bhadda Kaccana’s vision pierced infinitely further. She could simultaneously observe lifetimes spanning one entire incalculable period plus 100,000 aeons.",
+    "conf": 80
+   },
+   {
+    "seed": [
+     349,
+     183
+    ],
+    "bbox": [
+     1108,
+     529,
+     1534,
+     956
+    ],
+    "shape": "bubble",
+    "en": "ff 100,000 Aeons LE",
+    "conf": 45
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     292,
+     135
+    ],
+    "bbox": [
+     906,
+     407,
+     1739,
+     1081
+    ],
+    "shape": "box",
+    "en": "The Four Exceptional Masters. Only four of the Buddha’s disciples possessed this elite magnitude of supernormal memory. While others recalled 100,000 aeons, these four alone could pierce the veil of one incalculable period. She stood as an equal among giants.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     189,
+     198
+    ],
+    "bbox": [
+     546,
+     655,
+     817,
+     717
+    ],
+    "shape": "box",
+    "en": "Ven. Siriput",
+    "conf": 44
+   },
+   {
+    "seed": [
+     566,
+     200
+    ],
+    "bbox": [
+     1766,
+     648,
+     2192,
+     714
+    ],
+    "shape": "box",
+    "en": "Ven. Maha Moggallana",
+    "conf": 58
+   },
+   {
+    "seed": [
+     200,
+     382
+    ],
+    "bbox": [
+     565,
+     1263,
+     800,
+     1326
+    ],
+    "shape": "box",
+    "en": "Ven. Ven. Bakula",
+    "conf": 48
+   },
+   {
+    "seed": [
+     565,
+     397
+    ],
+    "bbox": [
+     1762,
+     1263,
+     2166,
+     1326
+    ],
+    "shape": "box",
+    "en": "Ven. Bhadda Kaccina",
+    "conf": 52
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     269,
+     342
+    ],
+    "bbox": [
+     248,
+     1121,
+     2394,
+     1448
+    ],
+    "shape": "box",
+    "en": "The Supreme Declaration tion “Monastics, among my female monastic disciples who are endowed with great supernormal powers, Bhadda Kaccana is the foremost (etad-agga).” With these words at Jetavana, the Buddha formally sealed her legacy in the Sangha.",
+    "conf": 86
+   }
+  ],
+  "loose": [
+   "ste",
+   "NIG",
+   "ATE"
+  ]
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     271,
+     351
+    ],
+    "bbox": [
+     225,
+     1154,
+     2417,
+     1481
+    ],
+    "shape": "box",
+    "en": "The Golden Fulfillment Because of her radiant, golden complexion, she was also known as Bhadda Kaficana The aspiration made eons ago before Buddha Padumuttara had perfectly ripened The golden queen had become the foremost master of memory",
+    "conf": 85
+   }
+  ],
+  "loose": [
+   "ANY"
+  ]
+ }
+]

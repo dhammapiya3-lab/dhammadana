@@ -1,0 +1,403 @@
+[
+ {
+  "img": "images/08-Pindola-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Lion’s",
+   "Roar:",
+   "The",
+   "Karmic",
+   "Ven.",
+   "Pindola",
+   "Bharadvaja"
+  ]
+ },
+ {
+  "img": "images/08-Pindola-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ASS",
+   "Aeons",
+   "ago,",
+   "lion",
+   "witnessed",
+   "Buddha",
+   "Padumuttara",
+   "hovering",
+   "deep",
+   "meditation",
+   "LAN",
+   "Awestruck",
+   "this",
+   "miracle,",
+   "the",
+   "lion",
+   "crafted",
+   "elaborate",
+   "floral",
+   "seats",
+   "for",
+   "seven",
+   "days,",
+   "planting",
+   "the",
+   "karmic",
+   "seed",
+   "for",
+   "his",
+   "ultimate",
+   "awakening",
+   "Zon)"
+  ]
+ },
+ {
+  "img": "images/08-Pindola-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Reborn",
+   "son,",
+   "praised",
+   "for",
+   "speaking",
+   "bold",
+   "truths.",
+   "offered",
+   "seven-day",
+   "feast,",
+   "vowing",
+   "achieve",
+   "that",
+   "exact",
+   "honor.",
+   "The",
+   "Buddha",
+   "prophesied",
+   "his",
+   "success,",
+   "shielding",
+   "him",
+   "from",
+   "suffering",
+   "states",
+   "for",
+   "100,000",
+   "aeons",
+   "witnessed",
+   "monk"
+  ]
+ },
+ {
+  "img": "images/08-Pindola-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Born",
+   "Rajagaha,",
+   "Bharadvaja",
+   "mastered",
+   "the",
+   "Vedas",
+   "but",
+   "succumbed",
+   "gluttony.",
+   "Obsessively",
+   "seeking",
+   "gruel",
+   "and",
+   "rice",
+   "every",
+   "feeding",
+   "place,",
+   "earned",
+   "the",
+   "nickname",
+   "“Pindola”—the",
+   "aggressive",
+   "seeker",
+   "food."
+  ]
+ },
+ {
+  "img": "images/08-Pindola-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ordained",
+   "monk,",
+   "his",
+   "earthly",
+   "greed",
+   "persisted",
+   "through",
+   "enormous",
+   "alms",
+   "bowl.",
+   "Hidden",
+   "under",
+   "his",
+   "couch,",
+   "repeated",
+   "friction",
+   "against",
+   "the",
+   "rough",
+   "stone",
+   "ground",
+   "wore",
+   "the",
+   "massive",
+   "pot",
+   "down",
+   "into",
+   "modest",
+   "vessel—",
+   "physically",
+   "grinding",
+   "away",
+   "his",
+   "worldly",
+   "attachments."
+  ]
+ },
+ {
+  "img": "images/08-Pindola-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Having",
+   "attained",
+   "Arahatship,",
+   "Pindola",
+   "used",
+   "supernatural",
+   "powers",
+   "retrieve",
+   "sandalwood",
+   "bowl",
+   "suspended",
+   "high",
+   "merchant.",
+   "The",
+   "Buddha",
+   "sharply",
+   "rebuked",
+   "him:",
+   "displaying",
+   "superhuman",
+   "states",
+   "for",
+   "unworthy",
+   "material",
+   "gain",
+   "was",
+   "forbidden."
+  ]
+ },
+ {
+  "img": "images/08-Pindola-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     62,
+     377
+    ],
+    "bbox": [
+     53,
+     1223,
+     1194,
+     1438
+    ],
+    "shape": "box",
+    "en": "Reproached: Performing magical feats for material reward",
+    "conf": 93
+   },
+   {
+    "seed": [
+     444,
+     377
+    ],
+    "bbox": [
+     1451,
+     1223,
+     2582,
+     1438
+    ],
+    "shape": "box",
+    "en": "Praised: The ‘True Miracle’ of boldly declaring one’s Awakening and the fi end of suffering.",
+    "conf": 78
+   }
+  ],
+  "loose": [
+   "The",
+   "Buddha",
+   "established",
+   "firm",
+   "boundary",
+   "supernatural",
+   "displays.",
+   "CAs"
+  ]
+ },
+ {
+  "img": "images/08-Pindola-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     255,
+     26
+    ],
+    "bbox": [
+     754,
+     50,
+     1888,
+     274
+    ],
+    "shape": "box",
+    "en": "How did the gluttonous seeker attain perfection? Through Three Faculties:",
+    "conf": 92
+   },
+   {
+    "seed": [
+     74,
+     318
+    ],
+    "bbox": [
+     165,
+     1045,
+     833,
+     1127
+    ],
+    "shape": "box",
+    "en": "1. Mindfulness (satindriya) Gatindriva))",
+    "conf": 51
+   },
+   {
+    "seed": [
+     287,
+     319
+    ],
+    "bbox": [
+     906,
+     1045,
+     1739,
+     1127
+    ],
+    "shape": "box",
+    "en": "2. Concentration (samadhindriya)",
+    "conf": 69
+   },
+   {
+    "seed": [
+     558,
+     320
+    ],
+    "bbox": [
+     1825,
+     1045,
+     2476,
+     1127
+    ],
+    "shape": "box",
+    "en": "Ete 3. Wisdom (pafinindriya)",
+    "conf": 36
+   },
+   {
+    "seed": [
+     236,
+     391
+    ],
+    "bbox": [
+     754,
+     1293,
+     1888,
+     1445
+    ],
+    "shape": "box",
+    "en": "Developing eloping these forces spemaneth shattered his cycle of rebirth, old age, and death.",
+    "conf": 41
+   }
+  ],
+  "loose": [
+   "WO)"
+  ]
+ },
+ {
+  "img": "images/08-Pindola-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ANS",
+   "“Those",
+   "who",
+   "have",
+   "doubt",
+   "regarding",
+   "the",
+   "path",
+   "and",
+   "fruition,",
+   "let",
+   "them",
+   "ask",
+   "me!”",
+   "The",
+   "Buddha",
+   "declared",
+   "Ven.",
+   "Pindola",
+   "the",
+   "foremost",
+   "among",
+   "his",
+   "disciples",
+   "who",
+   "fearlessly",
+   "speak",
+   "the",
+   "Lion",
+   "Roar."
+  ]
+ }
+]

@@ -1,0 +1,688 @@
+[
+ {
+  "img": "images/16-Sona-Kolivisa-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     294,
+     315
+    ],
+    "bbox": [
+     870,
+     969,
+     1772,
+     1289
+    ],
+    "shape": "bubble",
+    "en": "The Lives of Sona Kolivisa The Path of Strenuous Effort",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "WAWZ"
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     109,
+     357
+    ],
+    "bbox": [
+     212,
+     1164,
+     856,
+     1342
+    ],
+    "shape": "box",
+    "en": "Sirivaddha, young merchant listens to the Buddha",
+    "conf": 92
+   },
+   {
+    "seed": [
+     307,
+     352
+    ],
+    "bbox": [
+     992,
+     1164,
+     1650,
+     1342
+    ],
+    "shape": "box",
+    "en": "He witnesses amon monk declared foremost in strenuous effort (araddha-viriya)",
+    "conf": 79
+   },
+   {
+    "seed": [
+     594,
+     352
+    ],
+    "bbox": [
+     1785,
+     1164,
+     2427,
+     1342
+    ],
+    "shape": "box",
+    "en": "seed is planted too should become like this monk!",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "The",
+   "Era",
+   "Buddha",
+   "Buddha"
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     117,
+     359
+    ],
+    "bbox": [
+     215,
+     1164,
+     1250,
+     1342
+    ],
+    "shape": "box",
+    "en": "To seal his aspiration, Sirivaddha hosts mahda-dana (great almsgiving) for seven days",
+    "conf": 39
+   },
+   {
+    "seed": [
+     433,
+     357
+    ],
+    "bbox": [
+     1392,
+     1164,
+     2427,
+     1342
+    ],
+    "shape": "box",
+    "en": "The Buddha foresees the fulfillment of his wish and makes prophecy of his future success.",
+    "conf": 94
+   }
+  ],
+  "loose": [
+   "KWA",
+   "The",
+   "Merit",
+   "Fou",
+   "The"
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     156,
+     55
+    ],
+    "bbox": [
+     89,
+     96,
+     1432,
+     1167
+    ],
+    "shape": "bubble",
+    "en": "Rebirth in Baranasi Due to immense merit, Sirivaddha cycles only through Deva and human realms for 100,000 aeons. V7 ca LD VA AN",
+    "conf": 45
+   },
+   {
+    "seed": [
+     617,
+     300
+    ],
+    "bbox": [
+     1868,
+     903,
+     2473,
+     1289
+    ],
+    "shape": "box",
+    "en": "After Buddha Kassapa’s Parinibbana in this Bhadda-kappa, he is reborn into virtuous Baranasi family.",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "(EN",
+   "VEN"
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     596,
+     260
+    ],
+    "bbox": [
+     1904,
+     698,
+     2407,
+     1243
+    ],
+    "shape": "bubble",
+    "en": "He asks him to wait: “Tomorrow we shall build uild dwelling and offer it to you.”",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "Preparing",
+   "for",
+   "the",
+   "Vassa",
+   "the",
+   "Ganges,",
+   "Sirivaddha",
+   "meets",
+   "Paccekabuddha",
+   "gathering",
+   "sticks",
+   "build",
+   "Rains",
+   "Retreat",
+   "(Vassa)",
+   "dwelling."
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Constructing",
+   "the",
+   "Refuge",
+   "day",
+   "resort",
+   "night",
+   "resort",
+   "walk-way",
+   "The",
+   "Paccekabuddha",
+   "accepts,",
+   "arriving",
+   "for",
+   "alms",
+   "the",
+   "next",
+   "day.",
+   "Working",
+   "tirelessly,",
+   "Sirivaddha",
+   "and",
+   "his",
+   "friends",
+   "complete",
+   "beautiful",
+   "dwelling",
+   "complex",
+   "for",
+   "the",
+   "three-month",
+   "retreat,",
+   "featuring",
+   "walk-way",
+   "alongside",
+   "day",
+   "and",
+   "night",
+   "resorts."
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     186,
+     103
+    ],
+    "bbox": [
+     562,
+     337,
+     2080,
+     542
+    ],
+    "shape": "box",
+    "en": "To protect the Paccekabuddha’s feet from mud, Sirivaddha smears the ground with wet cowdung. He then respectfully lays down his own brilliantly colored pee cloak, valued at one pistes of money.",
+    "conf": 45
+   }
+  ],
+  "loose": [
+   "Peculiar",
+   "Act",
+   "Devotion"
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     147,
+     96
+    ],
+    "bbox": [
+     294,
+     314,
+     850,
+     489
+    ],
+    "shape": "box",
+    "en": "Noticing the cloak matches the Paccekabuddha’s body color, he vows",
+    "conf": 74
+   },
+   {
+    "seed": [
+     618,
+     113
+    ],
+    "bbox": [
+     1858,
+     367,
+     2351,
+     1012
+    ],
+    "shape": "box",
+    "en": "Mi? my hands hand’ and feet be beautifully red like Hibiscus flowers! May the touch my body be like cotton wool dressed 100 times!",
+    "conf": 35
+   }
+  ],
+  "loose": [
+   "The",
+   "Aspiration",
+   "Form"
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     136,
+     343
+    ],
+    "bbox": [
+     430,
+     1084,
+     962,
+     1309
+    ],
+    "shape": "box",
+    "en": "After serving fully for three months, Sirivaddha offers set of three robes at ur Pavarana ceremony",
+    "conf": 47
+   },
+   {
+    "seed": [
+     519,
+     343
+    ],
+    "bbox": [
+     1680,
+     1084,
+     2212,
+     1309
+    ],
+    "shape": "box",
+    "en": "equipped, the Paccekabuddha departs for the peaks of Mount Gandhamadana.",
+    "conf": 88
+   }
+  ],
+  "loose": [
+   "Departure",
+   "Gandhamadana",
+   "Nis"
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     81,
+     98
+    ],
+    "bbox": [
+     228,
+     264,
+     1045,
+     1217
+    ],
+    "shape": "box",
+    "en": "Seeking the Apex of Asceticism Avoiding adoring crowds, Ven. Sona retreated to the secluded Sitavana cemetery. Believing his exquisitely tender body hindered spiritual progress, he rejected sitting and sleeping, adopting strenuous meditation of continuous walking.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "NS)",
+   "ISS",
+   "ISS",
+   "VIN",
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     98,
+     108
+    ],
+    "bbox": [
+     321,
+     185,
+     2321,
+     658
+    ],
+    "shape": "box",
+    "en": "Strenuous Engagement Als Callouses on his soft soles burst. Unable to walk, he crawled until his elbows and knees bled. The terraced walkway became deep fed: resembling ees ian",
+    "conf": 45
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     244,
+     342
+    ],
+    "bbox": [
+     225,
+     1061,
+     2417,
+     1356
+    ],
+    "shape": "box",
+    "en": "The Doubt of the Pada-parama Perhaps am pada-parama—one making no progress despite immense effort What use is being monk? should revert to lay life and do good works with my wealth",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     100,
+     98
+    ],
+    "bbox": [
+     228,
+     268,
+     1217,
+     856
+    ],
+    "shape": "box",
+    "en": "The Bloody Walkway Knowing Sona’s mind, the Buddha visited his dwelling. “Monks, whose walkway is this that is red like slaughterhouse?” Though he knew, the Buddha asked to initiate his teaching",
+    "conf": 58
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WIS",
+   "The",
+   "Parable",
+   "the",
+   "Harp",
+   "Knowing",
+   "standard",
+   "meditation",
+   "work,",
+   "the",
+   "Buddha",
+   "recalled",
+   "Sona’s",
+   "past",
+   "skilled",
+   "lay",
+   "musician.",
+   "utilized",
+   "the",
+   "art",
+   "the",
+   "harp",
+   "deliver",
+   "profound",
+   "spiritual",
+   "knowledge."
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     505,
+     86
+    ],
+    "bbox": [
+     1256,
+     93,
+     2552,
+     711
+    ],
+    "shape": "bubble",
+    "en": "Strings too tight break. Excess energy (viriya) causes restlessness (uddhacca).",
+    "conf": 90
+   },
+   {
+    "seed": [
+     482,
+     289
+    ],
+    "bbox": [
+     1488,
+     780,
+     2552,
+     1389
+    ],
+    "shape": "box",
+    "en": "Strings too loose cannot play. Inadequate energy causes indolence (kosajja).",
+    "conf": 78
+   }
+  ],
+  "loose": [
+   "ING",
+   "FIN"
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Perfect",
+   "Pitch",
+   "Suppose",
+   "the",
+   "strings",
+   "are",
+   "set",
+   "perfect",
+   "balance",
+   "Will",
+   "your",
+   "harp",
+   "make",
+   "pleasant",
+   "sound?",
+   "Equal",
+   "effort",
+   "yields",
+   "lasting",
+   "resonance.",
+   "itch"
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     433,
+     28
+    ],
+    "bbox": [
+     453,
+     93,
+     2189,
+     661
+    ],
+    "shape": "bubble",
+    "en": "wa Proportionate Practice The Buddha instructed Sona to 4) balance energy with concentration. we COS” Ss Soe",
+    "conf": 33
+   }
+  ],
+  "loose": [
+   "NAN",
+   "Faith",
+   "Mindfulness",
+   "Concentration",
+   "Energy",
+   "(viriya)",
+   "(sati)",
+   "(samadhi)",
+   "VAN"
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "NEG",
+   "Apex",
+   "Mastering",
+   "the",
+   "balance,",
+   "Sona",
+   "succeeded",
+   "where",
+   "extreme",
+   "effort",
+   "failed.",
+   "“Among",
+   "disciples",
+   "possessing",
+   "strenuous",
+   "energy",
+   "(araddha-viriya),",
+   "Sona",
+   "Kolivisa",
+   "the",
+   "foremost",
+   "(etad-agga).”",
+   "The"
+  ]
+ }
+]

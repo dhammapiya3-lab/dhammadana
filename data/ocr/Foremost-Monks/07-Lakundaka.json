@@ -1,0 +1,488 @@
+[
+ {
+  "img": "images/07-Lakundaka-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     188,
+     35
+    ],
+    "bbox": [
+     585,
+     106,
+     2066,
+     278
+    ],
+    "shape": "box",
+    "en": "The Karmic Scroll of Ven. Lakundaka Bhaddiya journey of cause, effect, and ultimate awakening across aeons.",
+    "conf": 81
+   }
+  ],
+  "loose": [
+   "GAS"
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     530,
+     59
+    ],
+    "bbox": [
+     172,
+     159,
+     2344,
+     473
+    ],
+    "shape": "bubble",
+    "en": "Ges aN ye WW WAN) Qs SS aS ane wet es CH SS SX 6\" SIAIND ANN",
+    "conf": 31
+   },
+   {
+    "seed": [
+     207,
+     7
+    ],
+    "bbox": [
+     503,
+     17,
+     2139,
+     109
+    ],
+    "shape": "box",
+    "en": "he Kar ic Matri Seeds and fi",
+    "conf": 83
+   },
+   {
+    "seed": [
+     209,
+     148
+    ],
+    "bbox": [
+     427,
+     489,
+     1002,
+     546
+    ],
+    "shape": "bubble",
+    "en": "sweet eet",
+    "conf": 96
+   },
+   {
+    "seed": [
+     630,
+     148
+    ],
+    "bbox": [
+     1531,
+     489,
+     2470,
+     546
+    ],
+    "shape": "box",
+    "en": "Result: Foremost in sweet voice.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     149,
+     431
+    ],
+    "bbox": [
+     231,
+     1408,
+     982,
+     1468
+    ],
+    "shape": "bubble",
+    "en": "Deed: practic",
+    "conf": 93
+   },
+   {
+    "seed": [
+     525,
+     427
+    ],
+    "bbox": [
+     1508,
+     1408,
+     2466,
+     1468
+    ],
+    "shape": "bubble",
+    "en": "Ul timate Awakenin (Arahatship",
+    "conf": 77
+   }
+  ],
+  "loose": [
+   "Deed:",
+   "Reducing",
+   "shrine’s",
+   "size",
+   "Result:",
+   "Dwarfish,",
+   "stature",
+   "Deed:",
+   "short"
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     347,
+     197
+    ],
+    "bbox": [
+     946,
+     638,
+     1703,
+     1025
+    ],
+    "shape": "box",
+    "en": "100,000 Aeons Ago: The Aspiration wealthy householder in Harnsavatt offered seven-day feast to Buddha Padumuttara. He made single wish: to become the foremost monk with sweet voice in future Buddha’s dispensation. the Buddha confirmed his elles se",
+    "conf": 38
+   }
+  ],
+  "loose": [
+   "VAN"
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     569,
+     174
+    ],
+    "bbox": [
+     1729,
+     539,
+     2440,
+     1005
+    ],
+    "shape": "box",
+    "en": "Life as Cittapatta Cuckoo 0 During the time of Buddha Vipassi the future Bhaddiya lived as cuckoo bird. Seeing the Buddha, he joyfully altered his flight and dropped single ripe mango into the alms bowl",
+    "conf": 41
+   }
+  ],
+  "loose": [
+   "ate"
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     583,
+     263
+    ],
+    "bbox": [
+     1852,
+     860,
+     2437,
+     1293
+    ],
+    "shape": "box",
+    "en": "The Seed of Sweet Voice Overjoyed by his offering, the cuckoo spent week reflecting on the Buddha’s attributes without eating. This pure, sustained mental joy was specific karmic catalyst guaranteeing his exquisitely sweet voice in future lives.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/07-Lakundaka-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     544,
+     320
+    ],
+    "bbox": [
+     1650,
+     1051,
+     2407,
+     1385
+    ],
+    "shape": "box",
+    "en": "The Shrinking Shrine After Buddha Kassapa’s Parinibbana, devotees debated relic shrine’s size. The master carpenter intervened, drastically reducing the proposed seven-league shrine down to one league to ensure it could be easily repaired in the future.",
+    "conf": 51
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/07-Lakundaka-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     287,
+     373
+    ],
+    "bbox": [
+     648,
+     1233,
+     1997,
+     1445
+    ],
+    "shape": "box",
+    "en": "The Law of Karmic Consequence The cosmic law of karma is mathematically precise. Because the carpenter deliberately reduced the physical size of the supreme Buddha’s shrine, he was reborn with dwarfish, extremely short body in all subsequent existences.",
+    "conf": 86
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/07-Lakundaka-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     289,
+     373
+    ],
+    "bbox": [
+     648,
+     1233,
+     1997,
+     1445
+    ],
+    "shape": "box",
+    "en": "The Final Existence in Savatthi Reborn as Bhaddiya, his outward stature was small, but his faith was immense. He ordained under Buddha Gotama, receiving direct meditation instructions to nurture stout, undefiled heart.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "WAN",
+   "ASS"
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     298,
+     373
+    ],
+    "bbox": [
+     648,
+     1233,
+     1997,
+     1445
+    ],
+    "shape": "box",
+    "en": "The Dried River of Craving Guided by Ven. Sariputta, Bhaddiya attained full Awakening (Arahatship). The morally defiling river of craving that binds beings to Sarnsara was permanently dried up by the sun of the Arahat path.",
+    "conf": 48
+   }
+  ],
+  "loose": [
+   "NESS"
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     299,
+     373
+    ],
+    "bbox": [
+     648,
+     1233,
+     1997,
+     1445
+    ],
+    "shape": "box",
+    "en": "The Illusion of Appearance Outwardly, worldly monks mocked Bhaddiya's dwarfish frame. Inwardly, his mind was untouched. To protect his mockers from karma, the compassionate Bhaddiya walked silently behind them, entirely free from the fetters of anger.",
+    "conf": 70
+   }
+  ],
+  "loose": [
+   "NEX",
+   "Wii",
+   "KIN"
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     265,
+     48
+    ],
+    "bbox": [
+     503,
+     159,
+     2149,
+     291
+    ],
+    "shape": "box",
+    "en": "The Anatomy of Flawless Chariot Buddha Gotama revealed Bhaddiya’s inner perfection through the of chariot:",
+    "conf": 91
+   },
+   {
+    "seed": [
+     175,
+     148
+    ],
+    "bbox": [
+     212,
+     446,
+     744,
+     608
+    ],
+    "shape": "box",
+    "en": "Wheel: Flawless Morality",
+    "conf": 96
+   },
+   {
+    "seed": [
+     111,
+     251
+    ],
+    "bbox": [
+     212,
+     744,
+     744,
+     903
+    ],
+    "shape": "box",
+    "en": "Spokes: Incomparable Mindfulness",
+    "conf": 96
+   },
+   {
+    "seed": [
+     113,
+     329
+    ],
+    "bbox": [
+     212,
+     1025,
+     744,
+     1187
+    ],
+    "shape": "box",
+    "en": "Wheel: Flawless Morality",
+    "conf": 97
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/07-Lakundaka-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     311,
+     373
+    ],
+    "bbox": [
+     648,
+     1233,
+     1997,
+     1445
+    ],
+    "shape": "box",
+    "en": "Master of Absorptions Outwardly small, inwardly ly giant. nt. The Buddha ddha declared that Bhaddiya ya possesse immense supernormal ernorma. powers, having ig mastered every state ate of form, formless, and fruitional absorption.",
+    "conf": 54
+   }
+  ],
+  "loose": [
+   "QOL",
+   "IN)"
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     290,
+     373
+    ],
+    "bbox": [
+     648,
+     1233,
+     1997,
+     1445
+    ],
+    "shape": "box",
+    "en": "The Foremost Title Achieved “Monks, Lakundaka Bhaddiya is the foremost amon hous disciples having sweet voice.” The aspiration planted as wealthy eholder 100,000 aeons ago was finally, beautifully fulfilled.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ }
+]

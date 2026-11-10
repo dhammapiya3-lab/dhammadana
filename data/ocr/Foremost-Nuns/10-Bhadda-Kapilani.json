@@ -1,0 +1,362 @@
+[
+ {
+  "img": "images/10-Bhadda-Kapilani-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ven.",
+   "Bhadda",
+   "The",
+   "Foremost",
+   "Remembering",
+   "Past",
+   "Existences",
+   "ilani",
+   "Ke)"
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Ancient",
+   "Aspiration",
+   "100,000",
+   "aeons",
+   "ago",
+   "Hamsavati,",
+   "wealthy",
+   "woman",
+   "witnessed",
+   "nun",
+   "declared",
+   "foremost",
+   "remembering",
+   "past",
+   "lives",
+   "Making",
+   "profound",
+   "offering",
+   "Padumuttara",
+   "Buddha,",
+   "she",
+   "planted",
+   "the",
+   "seed",
+   "her",
+   "destiny.",
+   "Sos"
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Cycle",
+   "Rebirth",
+   "For",
+   "100,000",
+   "aeons,",
+   "she",
+   "cycled",
+   "between",
+   "human",
+   "and",
+   "Deva",
+   "realms.",
+   "She",
+   "carried",
+   "her",
+   "aspiration",
+   "across",
+   "countless",
+   "lifetimes",
+   "and",
+   "was",
+   "reborn",
+   "LASS"
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Quarrel",
+   "bitter",
+   "quarrel",
+   "with",
+   "her",
+   "sister-in-law",
+   "erupted.",
+   "Blinded",
+   "fury,",
+   "she",
+   "snatched",
+   "Paccekabuddha’s",
+   "bowl",
+   "and",
+   "discarded",
+   "the",
+   "offered",
+   "food,",
+   "and",
+   "vengefully",
+   "filled",
+   "with",
+   "mud",
+   "ay."
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Sweet",
+   "Repentance",
+   "Shocked",
+   "into",
+   "her",
+   "senses,",
+   "she",
+   "cleansed",
+   "the",
+   "bowl",
+   "thoroughly",
+   "and",
+   "offered:",
+   "Scented",
+   "powder",
+   "Catu-madhu",
+   "(four",
+   "sweet",
+   "foods)",
+   "Pure",
+   "white",
+   "ghee,",
+   "like",
+   "lotus",
+   "pollen",
+   "weet"
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Glistening",
+   "Wish",
+   "Returning",
+   "the",
+   "purified",
+   "bowl",
+   "she",
+   "made",
+   "distinct",
+   "karmic",
+   "wish",
+   "\"Just",
+   "this",
+   "food",
+   "glistens",
+   "may",
+   "complexion",
+   "glisten",
+   "The",
+   "seed",
+   "physical",
+   "attribute",
+   "was",
+   "sown"
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "004",
+   "WAS",
+   "The",
+   "Great",
+   "Renunciation",
+   "her",
+   "final",
+   "lifetime,",
+   "she",
+   "married",
+   "Pippali.",
+   "Bound",
+   "shared",
+   "spiritual",
+   "urgency,",
+   "husband",
+   "and",
+   "wife",
+   "shed",
+   "their",
+   "worldly",
+   "wealth",
+   "become",
+   "wandering",
+   "ascetics"
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     268,
+     80
+    ],
+    "bbox": [
+     605,
+     175,
+     2526,
+     1068
+    ],
+    "shape": "bubble",
+    "en": "The Diverging Paths At forked road, their paths diverged. Maha Kassapa turned right, eventually meeting the Buddha. Bhadda Kapilani turned left, walking alone into the wilderness",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "ASS"
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     271,
+     80
+    ],
+    "bbox": [
+     605,
+     175,
+     2142,
+     1002
+    ],
+    "shape": "bubble",
+    "en": "“Five ive Years of Wandering Women were not yet admitted into the Sangha. She endured solitary wait. Parica vassani nivasim parib vate ate aham “For five years lived as wanderer.” wanderer.”",
+    "conf": 32
+   }
+  ],
+  "loose": [
+   "ALA"
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Ultimate",
+   "‘al",
+   "Attainment",
+   "Upon",
+   "finally",
+   "entering",
+   "the",
+   "Sangha",
+   "and",
+   "attaining",
+   "Awakening,",
+   "her",
+   "mind",
+   "unlocked.",
+   "She",
+   "achieved",
+   "extraordinary",
+   "mastery",
+   "over",
+   "the",
+   "memories",
+   "her",
+   "past",
+   "existences.",
+   "SSS",
+   "INS"
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     91,
+     81
+    ],
+    "bbox": [
+     142,
+     155,
+     1369,
+     922
+    ],
+    "shape": "bubble",
+    "en": "The Foremost Title “Monastics, among my female monastic disciples who can recall past existences, Bhadda Kapilant is the foremost (etad-agga).”",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ }
+]

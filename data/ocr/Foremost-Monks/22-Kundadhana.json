@@ -1,0 +1,587 @@
+[
+ {
+  "img": "images/22-Kundadhana-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Karmic",
+   "Echo",
+   "Tale",
+   "Intention,",
+   "Illusion,",
+   "and",
+   "Awakening",
+   "Kundadhana",
+   "(IG"
+  ]
+ },
+ {
+  "img": "images/22-Kundadhana-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     254,
+     181
+    ],
+    "bbox": [
+     794,
+     595,
+     1858,
+     949
+    ],
+    "shape": "box",
+    "en": "Th Journey of Single Soul Padumuttara Era: The Aspiration. wealthy layman wishes for future honors. Kassapa Era: The Fall. Deva’s prank destroys sacred friendship. Gotama Era: The Awakening. mocked monastic endures his karma and attains peace.",
+    "conf": 81
+   }
+  ],
+  "loose": [
+   "WAS"
+  ]
+ },
+ {
+  "img": "images/22-Kundadhana-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "era",
+   "Buddha",
+   "wealthy",
+   "layman",
+   "witnessed",
+   "monk",
+   "honored",
+   "foremost",
+   "receiving",
+   "alms.",
+   "Struck",
+   "this",
+   "grace,",
+   "offered",
+   "alms",
+   "for",
+   "seven",
+   "days,",
+   "making",
+   "fervent",
+   "aspiration",
+   "achieve",
+   "this",
+   "exact",
+   "honor",
+   "under",
+   "future",
+   "Buddha.",
+   "Padumuttara,"
+  ]
+ },
+ {
+  "img": "images/22-Kundadhana-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Eons",
+   "later,",
+   "reborn",
+   "terrestrial",
+   "Deva",
+   "under",
+   "Buddha",
+   "Kassapa,",
+   "sought",
+   "test",
+   "the",
+   "unbreakable",
+   "bond",
+   "two",
+   "monastic",
+   "friends.",
+   "one",
+   "monk",
+   "exited",
+   "thicket,",
+   "the",
+   "Deva",
+   "conjured",
+   "the",
+   "illusion",
+   "disheveled",
+   "woman",
+   "following",
+   "close",
+   "behind",
+   "him.",
+   "Nis",
+   "(Be"
+  ]
+ },
+ {
+  "img": "images/22-Kundadhana-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Deceived",
+   "the",
+   "apparition,",
+   "the",
+   "waiting",
+   "monk",
+   "accused",
+   "his",
+   "innocent",
+   "friend",
+   "vile",
+   "behavior.",
+   "Despite",
+   "frantic",
+   "denials,",
+   "the",
+   "accuser",
+   "handed",
+   "back",
+   "his",
+   "friend's",
+   "bowl",
+   "and",
+   "severed",
+   "their",
+   "lifelong",
+   "bond,",
+   "refusing",
+   "join",
+   "the",
+   "Observance",
+   "Day",
+   "assembly",
+   "with",
+   "him.",
+   "his"
+  ]
+ },
+ {
+  "img": "images/22-Kundadhana-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ANY",
+   "VE,",
+   "Though",
+   "the",
+   "Deva",
+   "confessed",
+   "reunited",
+   "monastics,",
+   "law",
+   "demanded",
+   "spent",
+   "the",
+   "entire",
+   "interval",
+   "between",
+   "Buddha",
+   "Kassapa",
+   "and",
+   "Buddha",
+   "Gotama",
+   "suffering",
+   "lower",
+   "realms.",
+   "When",
+   "finally",
+   "reborn",
+   "human,",
+   "was",
+   "constantly",
+   "blamed",
+   "for",
+   "the",
+   "misdeeds",
+   "others.",
+   "karmic",
+   "balance."
+  ]
+ },
+ {
+  "img": "images/22-Kundadhana-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "OVA)",
+   "Reborn",
+   "Dhana",
+   "during",
+   "Buddha",
+   "Gotama’s",
+   "entered",
+   "life.",
+   "his",
+   "past",
+   "karma",
+   "materialized.",
+   "phantom",
+   "woman—an",
+   "exact",
+   "echo",
+   "his",
+   "ancient",
+   "trick—",
+   "followed",
+   "him",
+   "everywhere.",
+   "When",
+   "walked,",
+   "she",
+   "walked.",
+   "Whe",
+   "opped.",
+   "stopped,",
+   "time,",
+   "she",
+   "monastic",
+   "Immediately,",
+   "ma’s",
+   "ped."
+  ]
+ },
+ {
+  "img": "images/22-Kundadhana-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "SSS",
+   "The",
+   "Mechanics",
+   "Karma",
+   "The",
+   "phantom",
+   "was",
+   "localized",
+   "illusion.",
+   "Ven.",
+   "Dhana",
+   "could",
+   "not",
+   "see",
+   "the",
+   "woman",
+   "all.",
+   "However,",
+   "the",
+   "villagers",
+   "and",
+   "fellow",
+   "monks,",
+   "she",
+   "was",
+   "entirely",
+   "visible.",
+   "This",
+   "specific",
+   "blindness",
+   "ensured",
+   "suffered",
+   "the",
+   "exact",
+   "false",
+   "accusations",
+   "once",
+   "inflicted.",
+   "AAS",
+   "hanics"
+  ]
+ },
+ {
+  "img": "images/22-Kundadhana-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "lech",
+   "ANS",
+   "Endlessly",
+   "mocked",
+   "‘Kundadhana’",
+   "(Dhana",
+   "the",
+   "lecher),",
+   "his",
+   "patience",
+   "shattered.",
+   "lashed",
+   "out,",
+   "shouting",
+   "harsh,",
+   "abusive",
+   "insults",
+   "his",
+   "fellow",
+   "monks.",
+   "His",
+   "angry",
+   "retaliation",
+   "only",
+   "multiplied",
+   "his",
+   "suffering,",
+   "prompting",
+   "the",
+   "monastics",
+   "report",
+   "his",
+   "behavior",
+   "directly",
+   "the",
+   "Buddha.",
+   "(ai",
+   "ind",
+   "Onastics",
+   "port"
+  ]
+ },
+ {
+  "img": "images/22-Kundadhana-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Wo,",
+   "The",
+   "Buddha",
+   "diagnosed",
+   "his",
+   "with",
+   "metaphor:",
+   "\"Do",
+   "not",
+   "use",
+   "harsh",
+   "words;",
+   "retribution",
+   "will",
+   "strike",
+   "back",
+   "like",
+   "ashes",
+   "against",
+   "the",
+   "wind.",
+   "you",
+   "can",
+   "keep",
+   "calm",
+   "and",
+   "quiet",
+   "like",
+   "gong",
+   "with",
+   "broken",
+   "rim,",
+   "you",
+   "will",
+   "attain",
+   "suffering",
+   "Buddha"
+  ]
+ },
+ {
+  "img": "images/22-Kundadhana-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "272",
+   "Hearing",
+   "the",
+   "scandalous",
+   "rumors,",
+   "King",
+   "Pasenadi",
+   "personally",
+   "investigated.",
+   "Standing",
+   "outside,",
+   "clearly",
+   "saw",
+   "the",
+   "woman",
+   "enter",
+   "Dhana’s",
+   "dwelling.",
+   "But",
+   "upon",
+   "storming",
+   "inside",
+   "search",
+   "the",
+   "room,",
+   "found",
+   "the",
+   "monk",
+   "entirely",
+   "alone.",
+   "The",
+   "King",
+   "realized",
+   "the",
+   "woman",
+   "was",
+   "merely",
+   "karmic",
+   "apparition."
+  ]
+ },
+ {
+  "img": "images/22-Kundadhana-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     156,
+     356
+    ],
+    "bbox": [
+     476,
+     1144,
+     2146,
+     1468
+    ],
+    "shape": "box",
+    "en": "Recognizing the monk’s innocence and the heavy burden of his karma, King Pasenadi became his dedicated lay supporter. He guaranteed the provision of all daily alms, explicitly commanding Ven. Kundadhana to focus entirely on his religious practice without anxiety.",
+    "conf": 84
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/22-Kundadhana-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     163,
+     356
+    ],
+    "bbox": [
+     476,
+     1144,
+     2146,
+     1468
+    ],
+    "shape": "box",
+    "en": "Free from the anxiety of livelihood and grounded by the Buddha’s teaching, Ven. Kundadhana developed deep insight. He attained Arahatship. The moment his mind reached total liberation, the karmic debt was settled, and the phantom woman vanished forever.",
+    "conf": 88
+   }
+  ],
+  "loose": [
+   "Ay)"
+  ]
+ },
+ {
+  "img": "images/22-Kundadhana-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     327,
+     357
+    ],
+    "bbox": [
+     615,
+     1174,
+     2027,
+     1422
+    ],
+    "shape": "box",
+    "en": "The Karmic Mirror Karma operates with flawless symmetry. The intention to sow discord using an illusion eons ago perfectly mirrored the consequence: suffering social ruin through an illusion. The ledger was not cleared until the mind ceased reacting.",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "YY,",
+   "WAY",
+   "OF,"
+  ]
+ },
+ {
+  "img": "images/22-Kundadhana-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     168,
+     355
+    ],
+    "bbox": [
+     476,
+     1144,
+     2146,
+     1468
+    ],
+    "shape": "box",
+    "en": "Through sheer spiritual mastery, Ven. Kundadhana claimed the right to draw the first lot for alms before 500 monastics. The Buddha publicly declared him the Foremost among those who draw lots—finally fulfilling the aspiration he made eons ago.",
+    "conf": 86
+   }
+  ],
+  "loose": []
+ }
+]

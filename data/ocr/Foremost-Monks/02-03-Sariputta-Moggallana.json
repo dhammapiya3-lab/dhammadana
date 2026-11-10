@@ -1,0 +1,1715 @@
+[
+ {
+  "img": "images/02-03-Sariputta-Moggallana-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     238,
+     343
+    ],
+    "bbox": [
+     635,
+     1108,
+     2007,
+     1451
+    ],
+    "shape": "box",
+    "en": "Ven. Sariputta and Ven. Mogg allana are the two chief disciples of the Buddha. Their journey began together one immeasurable period and 100,000 aeons ago. This is the story of their past aspirations.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "ENS)",
+   "SIN"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     222,
+     336
+    ],
+    "bbox": [
+     694,
+     1108,
+     1957,
+     1425
+    ],
+    "shape": "box",
+    "en": "In the distant past, the future Sariputta was Sarada, wealthy Brahmin youth. The future Moggallana was Sirivaddhana, householder. Intimate childhood friends, their paths soon diverged: Sirivaddhana embraced worldly life, while Sarada questioned its ultimate value.",
+    "conf": 87
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     236,
+     335
+    ],
+    "bbox": [
+     694,
+     1108,
+     1957,
+     1425
+    ],
+    "shape": "box",
+    "en": "Realizing wealth cannot conquer desi, caida sought liberation from samsara. He surrendered his immense fortune to the destitute and retreated to the mountains. There, he became matted-hair ascetic, gathering 74,000 ese and mastering jhana meditation.",
+    "conf": 30
+   }
+  ],
+  "loose": [
+   "Lif"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "085",
+   "Buddha",
+   "through",
+   "the",
+   "Seeing",
+   "Sarada’s",
+   "vast",
+   "potential,",
+   "the",
+   "Buddha",
+   "descended",
+   "from",
+   "the",
+   "sky",
+   "like",
+   "lion-king,",
+   "arriving",
+   "alone",
+   "the",
+   "mountain",
+   "hermitage",
+   "spark",
+   "great",
+   "Dhamma",
+   "destiny.",
+   "surveyed",
+   "world",
+   "compassion"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     139,
+     357
+    ],
+    "bbox": [
+     212,
+     1174,
+     2430,
+     1402
+    ],
+    "shape": "box",
+    "en": "zing the Buddha's Buddha’s physical splendou Sarada explained his un matched greatness to his pupils: “Do not compare mustard seed with the great Mount Meru.” Realizing his supreme nature, the 74,000 pupils immediately prostrated before the Buddha.",
+    "conf": 51
+   }
+  ],
+  "loose": [
+   "(AA"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sarada",
+   "and",
+   "his",
+   "pupils",
+   "offered",
+   "magnificent",
+   "and",
+   "filtered",
+   "water.",
+   "the",
+   "Buddha",
+   "accepted",
+   "the",
+   "humble",
+   "offering,",
+   "celestial",
+   "Devas",
+   "miraculously",
+   "filled",
+   "his",
+   "alms",
+   "with",
+   "divine",
+   "ambrosia.",
+   "Soon,",
+   "100,000",
+   "arrived",
+   "join",
+   "him.",
+   "fruits",
+   "Arahats",
+   "and"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "the",
+   "pupils",
+   "floral",
+   "seats.",
+   "The",
+   "Buddha’s",
+   "lotus",
+   "throne",
+   "spanned",
+   "full",
+   "league,",
+   "the",
+   "chief",
+   "seats",
+   "stretched",
+   "three",
+   "miles,",
+   "and",
+   "even",
+   "youngest",
+   "floral",
+   "honour",
+   "Sangha,",
+   "miraculously",
+   "colossal",
+   "the",
+   "received",
+   "towering",
+   "half-mile",
+   "throne."
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Buddha",
+   "Anomadassi",
+   "For",
+   "seven",
+   "days,",
+   "Buddha",
+   "Anomadassi",
+   "entered",
+   "the",
+   "attainment",
+   "cessation",
+   "Sarada",
+   "stood",
+   "unmoving,",
+   "holding",
+   "magnificent",
+   "floral",
+   "umbrella",
+   "over",
+   "the",
+   "Buddha.",
+   "ate",
+   "nothing,",
+   "sustaining",
+   "himself",
+   "entirely",
+   "the",
+   "spiritual",
+   "food",
+   "rapture",
+   "(piti)",
+   "(0)"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     182,
+     348
+    ],
+    "bbox": [
+     443,
+     1137,
+     2199,
+     1455
+    ],
+    "shape": "box",
+    "en": "Emerging fr om ce the Buddha taught the Dhamm Instantly, all 74,000 pupils attained Arahat fruition. The Buddha pronounced, “Come, monks,” and they mira received prange robes ung shaved heads,",
+    "conf": 42
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     374,
+     78
+    ],
+    "bbox": [
+     1018,
+     182,
+     1422,
+     486
+    ],
+    "shape": "bubble",
+    "en": "son ate, 3",
+    "conf": 37
+   }
+  ],
+  "loose": [
+   "Why",
+   "did",
+   "Sarada",
+   "not",
+   "awaken?",
+   "was",
+   "entirely",
+   "distracted.",
+   "Watching",
+   "Ven.",
+   "Nisabha,",
+   "the",
+   "right-hand",
+   "chief",
+   "disciple,",
+   "powerful",
+   "aspiration",
+   "consumed",
+   "him",
+   "must",
+   "gain",
+   "this",
+   "exact",
+   "position",
+   "the",
+   "Dispensation",
+   "future",
+   "Buddha.”",
+   "Watching",
+   "Ven."
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sarada",
+   "formally",
+   "expressed",
+   "his",
+   "deep",
+   "wish.",
+   "Buddha",
+   "Anomadassi",
+   "foresaw",
+   "the",
+   "future",
+   "and",
+   "prophesied:",
+   "“In",
+   "one",
+   "immeasurable",
+   "and",
+   "100,000",
+   "aeons,",
+   "you",
+   "will",
+   "become",
+   "Buddha",
+   "Gotama’s",
+   "right-hand",
+   "chief",
+   "disciple"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     250,
+     360
+    ],
+    "bbox": [
+     288,
+     1184,
+     2354,
+     1435
+    ],
+    "shape": "box",
+    "en": "Overjoyed, Sarada arada sent bis his is newly ewl yor ordained dai ined pupils to his old friend, Sirivaddhana, with vital message: have aspired for the right-hand. discipleship. You must now aspire for the left.”",
+    "conf": 67
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     182,
+     373
+    ],
+    "bbox": [
+     430,
+     1227,
+     2209,
+     1438
+    ],
+    "shape": "box",
+    "en": "Sirivaddhana immediately leveled 14 acres of land, spread white sand, and built magnificent shed roofed with blue lotuses. For seven days, he offered immense alms to Buddha Anomadassi and his entire Sangha",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     187,
+     373
+    ],
+    "bbox": [
+     430,
+     1227,
+     2212,
+     1438
+    ],
+    "shape": "box",
+    "en": "On the final day, Sirivaddhana declared clared his aspiration. Buddha Anomadassi prophesied his success: “You will become Buddha Gotama’s second chief disciple on the left hand side, Moggallana",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     183,
+     373
+    ],
+    "bbox": [
+     430,
+     1227,
+     2212,
+     1438
+    ],
+    "shape": "box",
+    "en": "Their destinies sealed, both friends daniel Hak remaining years to meritorious deeds. Sarada developed the sublime practices and was reborn in the Brahma realm, while Sirivaddhana ascended to the Heavenly Sense Realms.",
+    "conf": 30
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "S05",
+   "The",
+   "Spiritual",
+   "Quest",
+   "Sariputta",
+   "and",
+   "Moggallana",
+   "Part",
+   "II:",
+   "The",
+   "Existence",
+   "Final",
+   "Moggallana"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     286,
+     366
+    ],
+    "bbox": [
+     800,
+     1203,
+     1842,
+     1425
+    ],
+    "shape": "box",
+    "en": "Two great families, friends for seven welcomed sons just before Gotama’s appearance: Upatissa and Kolita.",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "Upatissa",
+   "Village",
+   "Villag",
+   "lila",
+   "WIA"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     271,
+     365
+    ],
+    "bbox": [
+     800,
+     1203,
+     1842,
+     1425
+    ],
+    "shape": "box",
+    "en": "Both youths mastered all crafts and lived in absolute luxury. Upatissa traveled with 500 golden palanquins. Kolita was escorted by 500 horse-drawn chariots.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     244,
+     55
+    ],
+    "bbox": [
+     724,
+     152,
+     1924,
+     384
+    ],
+    "shape": "box",
+    "en": "At an annual Rajagaha festival, era their amusement faded Realizing all present would vanish within century, ihey recognized the emptiness of worldly pleasure.",
+    "conf": 39
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     326,
+     365
+    ],
+    "bbox": [
+     800,
+     1203,
+     1842,
+     1425
+    ],
+    "shape": "box",
+    "en": "\"Enjoyment is empty. Seeking liberation from Samsara, the friends agreed to abandon their wealth vealth and adopt the ascetic life together.",
+    "conf": 43
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     278,
+     55
+    ],
+    "bbox": [
+     724,
+     152,
+     1924,
+     384
+    ],
+    "shape": "box",
+    "en": "Joining the ascetic Saiijaya with 500 attendants, they mastered his doctrines in days—only to realize his brahma eae never lead to true liberation.",
+    "conf": 45
+   }
+  ],
+  "loose": [
+   "INS"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     314,
+     364
+    ],
+    "bbox": [
+     800,
+     1203,
+     1842,
+     1425
+    ],
+    "shape": "box",
+    "en": "ae across Jambudipa, they found no sage who understood the deathless. They made pact: whoever discovers the truth first must tell the other.",
+    "conf": 57
+   }
+  ],
+  "loose": [
+   "VAW"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     242,
+     367
+    ],
+    "bbox": [
+     800,
+     1203,
+     1842,
+     1425
+    ],
+    "shape": "box",
+    "en": "In Rajagaha, Upatissa met Arahat Assaji. Hearing the verse on the cause of all things, Upatissa instantly ly bec ame Stream-enterer (Sotapanna). ie",
+    "conf": 51
+   }
+  ],
+  "loose": [
+   "JES"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     308,
+     56
+    ],
+    "bbox": [
+     784,
+     175,
+     1868,
+     397
+    ],
+    "shape": "box",
+    "en": "Keeping ved pact, Upatissa shared the Dhamma verse with Kolita, who also became Sotapanna. Together, they led their followers to the Buddha.",
+    "conf": 36
+   }
+  ],
+  "loose": [
+   "vig"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     592,
+     118
+    ],
+    "bbox": [
+     1931,
+     350,
+     2149,
+     569
+    ],
+    "shape": "bubble",
+    "en": "Day 15 (Magh",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "(KG",
+   "Ordained",
+   "the",
+   "Buddha,",
+   "Maha",
+   "attained",
+   "Arahatship",
+   "his",
+   "seventh",
+   "day.",
+   "Sariputta",
+   "attained",
+   "his",
+   "fifteenth",
+   "day,",
+   "the",
+   "full",
+   "moon",
+   "Bud"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     309,
+     226
+    ],
+    "bbox": [
+     952,
+     691,
+     1696,
+     939
+    ],
+    "shape": "box",
+    "en": "At fons Jetavana, the Buddha declared them his chief disciples: Sariputta as foremost great wisdom, and Maha Moggallana as foremost in supernormal powers.",
+    "conf": 39
+   }
+  ],
+  "loose": [
+   "fal"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-27-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     289,
+     91
+    ],
+    "bbox": [
+     952,
+     278,
+     1696,
+     529
+    ],
+    "shape": "box",
+    "en": "Reaching the apex of their Perfections, these venerables practiced for 44 years. They left vast legacy of discourses for the welfare welfé of all beings",
+    "conf": 45
+   }
+  ],
+  "loose": [
+   "NAY"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-28-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     158,
+     323
+    ],
+    "bbox": [
+     496,
+     1058,
+     2166,
+     1336
+    ],
+    "shape": "box",
+    "en": "The Last Days and Parinibbana of Ven. Sariputta Tale of Gratitude, Wisdom, and Impermanence (Part 3/4 of Sariputta’s and Moggallana’s stories)",
+    "conf": 84
+   }
+  ],
+  "loose": [
+   "als"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-29-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     496,
+     302
+    ],
+    "bbox": [
+     1362,
+     972,
+     2566,
+     1399
+    ],
+    "shape": "box",
+    "en": "The Final Resolution: Realizing only seven days of life remained, Ven Sariputta made crucial decision. To repay his mother Ripasart’s debt and dissolve her false views, he would attain Parinibbana in his birth chamber.",
+    "conf": 53
+   }
+  ],
+  "loose": [
+   "<9)"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-30-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     644,
+     60
+    ],
+    "bbox": [
+     1799,
+     152,
+     2549,
+     641
+    ],
+    "shape": "box",
+    "en": "Seeking Permission: Accompanied by 500 monks, Ven Sariputta approached the exalted Buddha 'The time has come for me to attain Parinibbana,\" he supplicated, asking permission to return to Nalaka village for his final days",
+    "conf": 87
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-31-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     80,
+     89
+    ],
+    "bbox": [
+     175,
+     245,
+     952,
+     1270
+    ],
+    "shape": "box",
+    "en": "The Lion’s Sport Granted permission, Ven Sariputta displayed unmatched mastery Floating in the sky, he created visions of suns moons, and mountains—performing magnificent miracles while delivering final profound discourse to the people of Savatthi",
+    "conf": 86
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-32-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     331,
+     271
+    ],
+    "bbox": [
+     873,
+     886,
+     1809,
+     1342
+    ],
+    "shape": "box",
+    "en": "The Final Homage Ven. Sariputta walked backward until the Buddha vanished from sight lotus rain fell; the earth quaked Leading his followers away, he taught the weeping crowds core truth \"Conditioned things end by passing away.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-33-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     59,
+     90
+    ],
+    "bbox": [
+     175,
+     245,
+     952,
+     1174
+    ],
+    "shape": "box",
+    "en": "The Return to Nalaka: Ven. Sariputta sent his nephew to inform Rupasari. Believing her aging son finally wished to return to lay life, she joyfully cleaned his birth chamber and prepared lodgings for the 500 monks",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-34-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     330,
+     331
+    ],
+    "bbox": [
+     754,
+     1084,
+     1885,
+     1412
+    ],
+    "shape": "box",
+    "en": "Celestial Visitors: Struck by severe illness, Ven. Sariputta lay in his chamber. In radiant light, celestial beings descended to pay final respects: The Four Great Kings, then Sakka, and finally Maha Brahma.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-35-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     470,
+     112
+    ],
+    "bbox": [
+     1448,
+     281,
+     2427,
+     1263
+    ],
+    "shape": "box",
+    "en": "Rupasari's Wonder Awestruck by the celestial light Rupasari questioned Ven. Cunda Learning that even her supreme god, Maha Brahma, revered her son, on, her worldview shifted Tf my son’s magnificence is such how great is his Master?”",
+    "conf": 61
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-36-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     569,
+     70
+    ],
+    "bbox": [
+     1531,
+     172,
+     2523,
+     668
+    ],
+    "shape": "box",
+    "en": "The Supreme Gift: Perceiving ber joyful mind, Ven. Sariputta expounded the Buddha's virtues. Ripasari attained Stream-entry (Sotapatti-phala). Nis ultimate filial duty complete, he asked the monastic assembly for their final forgiveness.",
+    "conf": 31
+   }
+  ],
+  "loose": [
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-37-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     127,
+     355
+    ],
+    "bbox": [
+     284,
+     1164,
+     2380,
+     1412
+    ],
+    "shape": "box",
+    "en": "Parinibbana: Entering the nine absorptions progressively and regressively, Ven. Sariputta attained Parinibbana. The great earth roared. His mother wept bitterly at his feet, regretting she had not fully known his virtues while he lived",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-38-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WAY",
+   "“by",
+   "The",
+   "Golden",
+   "Pavilions",
+   "grand",
+   "99-cubit",
+   "fragrant",
+   "pyre",
+   "was",
+   "built.",
+   "honor",
+   "him,",
+   "commissioned",
+   "500",
+   "golden",
+   "pavilions;",
+   "Sakka",
+   "commanded",
+   "Vissakamma",
+   "create",
+   "500",
+   "more.",
+   "Devas",
+   "and",
+   "humans",
+   "mingled",
+   "reverence",
+   "during",
+   "the",
+   "elaborate",
+   "cremation.",
+   "VAS"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-39-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     303,
+     57
+    ],
+    "bbox": [
+     794,
+     182,
+     1861,
+     691
+    ],
+    "shape": "box",
+    "en": "Conveying the Relics: Ven. Cunda carefully collected his brother’s pure white relics, alms bowl and robes. Traveling to Savatthi, he entrusted them to Ven. Ananda, who carried the sorrowful news to the exalted Buddha",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "(NS)"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-40-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     310,
+     346
+    ],
+    "bbox": [
+     476,
+     1134,
+     2166,
+     1422
+    ],
+    "shape": "box",
+    "en": "The Buddha’s Tribute: Holding the pure relics, the Buddha praised his Chief Disciple “Behold the relics of Sariputta! He possessed vast, penetrative wisdom He held forbearance mighty as the great earth, humble as beggar’s son",
+    "conf": 34
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-41-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     485,
+     67
+    ],
+    "bbox": [
+     1570,
+     198,
+     2509,
+     790
+    ],
+    "shape": "box",
+    "en": "The Nature of Impermanence: Seeing Ven. Ananda weeping, the Buddha asked “Did Sariputta take your wisdom with him? How can conditioned things not pass away? It is as if great tree’s largest branch has fallen",
+    "conf": 83
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-42-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     535,
+     67
+    ],
+    "bbox": [
+     1570,
+     198,
+     2509,
+     714
+    ],
+    "shape": "box",
+    "en": "The Island of Self: “Live depending on yourself, not on others. Rely on the Dhamma as your island.” With this final instruction, the Buddha had Ven. Sariputta’s relics enshrined in golden cetiya.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-43-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-44-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     253,
+     345
+    ],
+    "bbox": [
+     364,
+     1118,
+     2281,
+     1442
+    ],
+    "shape": "box",
+    "en": "The Buddha resided at Veluvana in Rajagaha. Venerable Maha Moggallana sought the quiet stone slab of Kalasila on Mount Isigili.",
+    "conf": 82
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-45-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     274,
+     71
+    ],
+    "bbox": [
+     777,
+     149,
+     1941,
+     618
+    ],
+    "shape": "bubble",
+    "en": "Venerable in Visions of Moggallana Ussada hell and Deva realms. ected",
+    "conf": 31
+   },
+   {
+    "seed": [
+     545,
+     215
+    ],
+    "bbox": [
+     1326,
+     569,
+     2271,
+     992
+    ],
+    "shape": "bubble",
+    "en": "Public faith in the Dhamma grows.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     276,
+     323
+    ],
+    "bbox": [
+     364,
+     1015,
+     2278,
+     1442
+    ],
+    "shape": "box",
+    "en": "299 00,0 bd (3 TAS gq Ge 2 yyy Heretics lose ca Ne wealth and support. gy Su ee",
+    "conf": 36
+   }
+  ],
+  "loose": [
+   "SOE",
+   "GOS"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-46-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     183,
+     337
+    ],
+    "bbox": [
+     324,
+     1088,
+     1590,
+     1481
+    ],
+    "shape": "box",
+    "en": "Jealous heretics conspired. They paid 1,000 coins to the chief own robber, Samanaguttaka, fc to assassinate We) the noble elder.",
+    "conf": 47
+   }
+  ],
+  "loose": [
+   "020",
+   "0000",
+   "090",
+   "000",
+   "000",
+   "900",
+   "000",
+   "0°00",
+   "200",
+   "250",
+   "200",
+   "208",
+   "0296",
+   "000090000",
+   "200",
+   "000",
+   "000990000",
+   "290"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-47-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     306,
+     300
+    ],
+    "bbox": [
+     797,
+     965,
+     1855,
+     1385
+    ],
+    "shape": "bubble",
+    "en": "For six days, the robbers surrounded Kalasila. Each time, Maha Moggallana simply vanished into the air, evading capture through supernormal powers.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "NIA"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-48-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     272,
+     61
+    ],
+    "bbox": [
+     853,
+     96,
+     1799,
+     479
+    ],
+    "shape": "bubble",
+    "en": "Aparapariya-akusala-kamma: Past karma catching up.",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "Like",
+   "live",
+   "coal",
+   "hidden",
+   "under",
+   "ash",
+   "Like",
+   "hunter’s",
+   "hound",
+   "finally",
+   "biting",
+   "its",
+   "prey."
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-49-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     131,
+     378
+    ],
+    "bbox": [
+     327,
+     1217,
+     2341,
+     1432
+    ],
+    "shape": "box",
+    "en": "Lifetimes ago, blinded by slander, he abandoned his blind parents to robbers. Though he felt remorse and saved them, the karmic seed was sown.",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-50-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     212,
+     67
+    ],
+    "bbox": [
+     162,
+     215,
+     1180,
+     407
+    ],
+    "shape": "box",
+    "en": "the seventh day, karmic weight grounded him. The robbers pounded his bones to dust—palalapithika—and threw him into bush.",
+    "conf": 87
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-51-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     278,
+     359
+    ],
+    "bbox": [
+     536,
+     1174,
+     2106,
+     1442
+    ],
+    "shape": "box",
+    "en": "Through sheer willpower, he fastened his shattered body with psychic bandage. He flew one last time to pay homage to the Exalted Buddha",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "ORS"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-52-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     324,
+     90
+    ],
+    "bbox": [
+     817,
+     281,
+     1832,
+     608
+    ],
+    "shape": "bubble",
+    "en": "‘Thave have given up the control of my life process, dyu-sankhara’ The Buddha asked for final Dhamma talk from his beloved disciple",
+    "conf": 46
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-53-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     630,
+     114
+    ],
+    "bbox": [
+     2037,
+     235,
+     2407,
+     1203
+    ],
+    "shape": "bubble",
+    "en": "Rising to the height of seven palm trees, he displayed magnificent miracles, taught the Dhamma, returned to Kalasila, and attained Parinibbana.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-54-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     208,
+     382
+    ],
+    "bbox": [
+     628,
+     1177,
+     2027,
+     1458
+    ],
+    "shape": "bubble",
+    "en": "The 9 Sah celestia astial Mowe chi hical ndalwood wood pyre rained with fo Cosmos mourn togeth er as one",
+    "conf": 36
+   }
+  ],
+  "loose": [
+   "AN,"
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-55-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     213,
+     61
+    ],
+    "bbox": [
+     575,
+     172,
+     2076,
+     450
+    ],
+    "shape": "box",
+    "en": "King Ajatasattu’s detectives heard the robbers fighting in liquor shop. They confessed, exposing the naked heretics who funded the murder",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-56-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     157,
+     392
+    ],
+    "bbox": [
+     483,
+     1280,
+     2218,
+     1465
+    ],
+    "shape": "box",
+    "en": "The king buried the 500 heretics and murderers navel-deep. They were burned in straw, and the ashes ploughed into the earth with iron.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-57-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     415,
+     72
+    ],
+    "bbox": [
+     1296,
+     228,
+     2473,
+     582
+    ],
+    "shape": "box",
+    "en": "Maha Moggallana’s relics ics were enshrined at Veluvana in Rajagaha.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ }
+]

@@ -1,0 +1,1276 @@
+[
+ {
+  "img": "images/02-Khema-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Journey",
+   "Supreme",
+   "Knowledge",
+   "The",
+   "Lives",
+   "Venerable",
+   "Khema"
+  ]
+ },
+ {
+  "img": "images/02-Khema-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Spanning",
+   "100,000",
+   "aeons,",
+   "supreme",
+   "spiritual",
+   "attainment",
+   "meticulously",
+   "cultivated.",
+   "This",
+   "the",
+   "timeline",
+   "Venerable",
+   "Khema’s",
+   "karmic",
+   "momentum",
+   "across",
+   "the",
+   "eras",
+   "four",
+   "past",
+   "Buddhas.",
+   "Vipassi",
+   "Kassapa",
+   "Padumuttara",
+   "Konagamana"
+  ]
+ },
+ {
+  "img": "images/02-Khema-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     190,
+     363
+    ],
+    "bbox": [
+     555,
+     1151,
+     2090,
+     1435
+    ],
+    "shape": "box",
+    "en": "In Hamsavati, 100,000 aeons ago, the future Khema offered an extraordinary seven-day feast to Buddha Padumuttara and his Sangha, firmly establishing herself in the three refuges.",
+    "conf": 82
+   }
+  ],
+  "loose": [
+   "ANE"
+  ]
+ },
+ {
+  "img": "images/02-Khema-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     238,
+     356
+    ],
+    "bbox": [
+     555,
+     1151,
+     2090,
+     1435
+    ],
+    "shape": "box",
+    "en": "Inspired by elder nun Sujata, she formed great aspiration. Buddha Padumuttara prophesied that in 100,000 aeons, under Buddha Gotama, she would become the foremost female monastic in knowledge.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Khema-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     494,
+     119
+    ],
+    "bbox": [
+     1633,
+     350,
+     2351,
+     1144
+    ],
+    "shape": "box",
+    "en": "Boundless merit propelled her through five celesial Deva realms and the human world. In every single rebirth, she reigned as Queen, enjoying glorious states for aeons.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "aranimmitavasavati",
+   "Nimmanarati",
+   "Yama",
+   "Tavatimsa",
+   "Human",
+   "Realm",
+   "als",
+   "alg"
+  ]
+ },
+ {
+  "img": "images/02-Khema-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ninety-one",
+   "aeons",
+   "ago,",
+   "under",
+   "Buddha",
+   "ordained",
+   "For",
+   "lifespan",
+   "10,000",
+   "years,",
+   "she",
+   "led",
+   "pure",
+   "life,",
+   "the",
+   "threefold",
+   "training.",
+   "becoming",
+   "perfect",
+   "model",
+   "she",
+   "inety-one",
+   "Buddha"
+  ]
+ },
+ {
+  "img": "images/02-Khema-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "She",
+   "evolved",
+   "into",
+   "bold",
+   "exponent",
+   "the",
+   "four",
+   "noble",
+   "truths.",
+   "Her",
+   "supreme",
+   "skill",
+   "lay",
+   "unraveling",
+   "the",
+   "profound",
+   "complexity",
+   "conditional",
+   "origination",
+   "(paticca-samuppada)."
+  ]
+ },
+ {
+  "img": "images/02-Khema-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Reborn",
+   "the",
+   "Tusita",
+   "Realm,",
+   "her",
+   "Vipassi-era",
+   "religious",
+   "practices",
+   "continuously",
+   "endowed",
+   "her",
+   "with",
+   "pure",
+   "morality,",
+   "vast",
+   "resources,",
+   "wise",
+   "following,",
+   "and",
+   "superior",
+   "social",
+   "status."
+  ]
+ },
+ {
+  "img": "images/02-Khema-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "present",
+   "aeon,",
+   "during",
+   "the",
+   "time",
+   "Buddha",
+   "Konagamana,",
+   "she",
+   "and",
+   "two",
+   "noble",
+   "women,",
+   "and",
+   "Sumedha,",
+   "financed",
+   "and",
+   "built",
+   "vast",
+   "monastic",
+   "complex",
+   "for",
+   "the",
+   "Sangha."
+  ]
+ },
+ {
+  "img": "images/02-Khema-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "LIS",
+   "Sudhamma",
+   "Dhammadinna",
+   "Visakha",
+   "Under",
+   "Buddha",
+   "Kassapa,",
+   "she",
+   "was",
+   "born",
+   "Princess",
+   "Samani,",
+   "eldest",
+   "King",
+   "Kiki’s",
+   "seven",
+   "daughters",
+   "Each",
+   "sister",
+   "was",
+   "destined",
+   "become",
+   "prominent,",
+   "foremost",
+   "disciple",
+   "Buddha",
+   "Gotama",
+   "Samani",
+   "Bhikkhu",
+   "lakesi",
+   "Sanghadasi",
+   "gutta",
+   "kesi"
+  ]
+ },
+ {
+  "img": "images/02-Khema-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Denied",
+   "ordination",
+   "their",
+   "royal",
+   "father,",
+   "the",
+   "seven",
+   "sisters",
+   "made",
+   "common",
+   "resolve.",
+   "They",
+   "remained",
+   "spinsters",
+   "for",
+   "20,000",
+   "years",
+   "flawlessly",
+   "supporting",
+   "Buddha",
+   "Kassapa",
+   "with",
+   "the",
+   "four",
+   "monastic",
+   "requisites"
+  ]
+ },
+ {
+  "img": "images/02-Khema-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     590,
+     231
+    ],
+    "bbox": [
+     1835,
+     737,
+     2119,
+     860
+    ],
+    "shape": "bubble",
+    "en": "jas ae Po]",
+    "conf": 53
+   }
+  ],
+  "loose": [
+   "Princess",
+   "Samani",
+   "became",
+   "profoundly",
+   "absorbed",
+   "Buddha",
+   "Kassapa’s",
+   "Long",
+   "Discourse",
+   "Causation",
+   "(Maha-nidana-sutta,",
+   "15).",
+   "She",
+   "learned",
+   "the",
+   "vast,",
+   "complex",
+   "teaching",
+   "heart",
+   "and",
+   "recited",
+   "constantly."
+  ]
+ },
+ {
+  "img": "images/02-Khema-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "ultimate",
+   "karmic",
+   "result",
+   "these",
+   "accumulated",
+   "deeds,",
+   "she",
+   "passed",
+   "away",
+   "and",
+   "was",
+   "reborn",
+   "the",
+   "Tavatimsa",
+   "Realm",
+   "the",
+   "Chief",
+   "Queen",
+   "Sakka,",
+   "awaiting",
+   "her",
+   "final",
+   "life."
+  ]
+ },
+ {
+  "img": "images/02-Khema-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     123,
+     311
+    ],
+    "bbox": [
+     341,
+     1018,
+     2301,
+     1339
+    ],
+    "shape": "box",
+    "en": "Reborn as oe Queen Khe she brought peace to Sag Sigala, cE by King Bimbisara, she grew conceited about her immense beauty. Fearing the Buddha’s renowned critiques of physical attachment, she steadfastly avoided visiting his residence at the Veluvana monastery.",
+    "conf": 44
+   }
+  ],
+  "loose": [
+   "Wwe",
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/02-Khema-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "King",
+   "Bimbisara,",
+   "devoted",
+   "lay",
+   "supporter,",
+   "devised",
+   "plan.",
+   "commissioned",
+   "poets",
+   "compose",
+   "magnificent",
+   "song",
+   "praising",
+   "the",
+   "Veluvana",
+   "Grove,",
+   "ordering",
+   "musicians",
+   "sing",
+   "within",
+   "earshot",
+   "his",
+   "queen."
+  ]
+ },
+ {
+  "img": "images/02-Khema-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     220,
+     145
+    ],
+    "bbox": [
+     678,
+     443,
+     1964,
+     1045
+    ],
+    "shape": "box",
+    "en": "The song likened the Buddha’s residence to the heavenly Nandana Park of the Devas. Enchanted by descriptions of lush flora, singing cuckoos, and quiet seclusion, Queen Khema’s curiosity overpowered her pride. She arranged royal visit",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "CHA",
+   "(6)"
+  ]
+ },
+ {
+  "img": "images/02-Khema-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Arriving",
+   "when",
+   "she",
+   "thought",
+   "absent,",
+   "Khema",
+   "approached",
+   "his",
+   "chamber.",
+   "Using",
+   "his",
+   "powers,",
+   "the",
+   "Buddha",
+   "conjured",
+   "maiden",
+   "unsurpasssed",
+   "beauty",
+   "fan",
+   "him.",
+   "Khema’s",
+   "attachment",
+   "her",
+   "own",
+   "looks",
+   "dissolved",
+   "into",
+   "sheer",
+   "fascination.",
+   "Buddha",
+   "was",
+   "225"
+  ]
+ },
+ {
+  "img": "images/02-Khema-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Khema",
+   "gazed,",
+   "the",
+   "Buddha",
+   "caused",
+   "the",
+   "age",
+   "rapidly.",
+   "Within",
+   "moments,",
+   "the",
+   "radiant",
+   "maiden",
+   "transformed",
+   "into",
+   "decrepit,",
+   "wrinkled",
+   "woman",
+   "gasping",
+   "for",
+   "breath,",
+   "before",
+   "collapsing",
+   "lifelessly",
+   "the",
+   "ground",
+   "illusion"
+  ]
+ },
+ {
+  "img": "images/02-Khema-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     530,
+     315
+    ],
+    "bbox": [
+     1699,
+     969,
+     2562,
+     1399
+    ],
+    "shape": "box",
+    "en": "Witnessing this sudden decay induced intense spiritual urgency (samvega). Khema instantly realized the stark truth: the physical body, which she so foolishly cherished, is inpermanent, impure, and fundamentally loathsome.",
+    "conf": 35
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Khema-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     94,
+     370
+    ],
+    "bbox": [
+     261,
+     1203,
+     2400,
+     1478
+    ],
+    "shape": "box",
+    "en": "The Buddha spoke: “Look at the body that is afflicted with pain and impure. Cultivate perception of unsubstantiality. Note closely the rising and falling of phenomena to quell the fires burning within you.”",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "OOD",
+   "bes"
+  ]
+ },
+ {
+  "img": "images/02-Khema-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     518,
+     303
+    ],
+    "bbox": [
+     1650,
+     975,
+     2552,
+     1389
+    ],
+    "shape": "box",
+    "en": "“Just as the spider follows the web of its own making, so also so sentient beings, who ho have attachment, wore hment, follow the stream of defilements of their own making.” The wise cut this stream and go forth to Nibbana.",
+    "conf": 40
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Khema-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "KG,",
+   "Seeing",
+   "her",
+   "receptive",
+   "mind,",
+   "the",
+   "the",
+   "Maha-nidana-sutta.",
+   "Having",
+   "learned",
+   "this",
+   "very",
+   "discourse",
+   "past",
+   "life",
+   "Princess",
+   "Samani,",
+   "Khema",
+   "remembered",
+   "deeply",
+   "and",
+   "instantly",
+   "attained",
+   "Stream-entry",
+   "knowledge.",
+   "Buddha",
+   "delivered",
+   "SIN"
+  ]
+ },
+ {
+  "img": "images/02-Khema-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     195,
+     343
+    ],
+    "bbox": [
+     479,
+     1114,
+     2162,
+     1392
+    ],
+    "shape": "box",
+    "en": "Now noble one (ariya), Khema 3 prostrated bat 2 3 to make vo amends. wa She apologized for her foolish vanity and for failing to pay homage. The Buddha compassionately replied, \"Let it be, Khema.\"",
+    "conf": 34
+   }
+  ],
+  "loose": [
+   "NY,",
+   "(ORY",
+   "IIS",
+   "WIEN"
+  ]
+ },
+ {
+  "img": "images/02-Khema-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Returning",
+   "palace,",
+   "she",
+   "the",
+   "King’s",
+   "strategy",
+   "and",
+   "permission",
+   "ordain.",
+   "Recognizing",
+   "from",
+   "her",
+   "serene",
+   "demeanor",
+   "that",
+   "she",
+   "had",
+   "attained",
+   "path-knowledge,",
+   "King",
+   "Bimbisara",
+   "reverently",
+   "joined",
+   "his",
+   "palms",
+   "and",
+   "agreed.",
+   "AWA",
+   "praised",
+   "asked"
+  ]
+ },
+ {
+  "img": "images/02-Khema-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     500,
+     51
+    ],
+    "bbox": [
+     1617,
+     145,
+     2496,
+     496
+    ],
+    "shape": "box",
+    "en": "“May your renouncing of the world come to its fulfilsment,” the King declared With great joy and royal state, he placed Queen Khema on golden palanquin and sent her to the nunnery",
+    "conf": 67
+   }
+  ],
+  "loose": [
+   "(Ay",
+   "LAS"
+  ]
+ },
+ {
+  "img": "images/02-Khema-27-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "her",
+   "fifteenth",
+   "day",
+   "monastic,",
+   "Ven.",
+   "Khema",
+   "contemplated",
+   "oil",
+   "lamp",
+   "during",
+   "the",
+   "Uposatha.",
+   "Observing",
+   "the",
+   "flame",
+   "rise",
+   "and",
+   "extinguish,",
+   "she",
+   "applied",
+   "this",
+   "insight",
+   "rising",
+   "and",
+   "falling",
+   "all",
+   "conditioned",
+   "phenomena.",
+   "7,2"
+  ]
+ },
+ {
+  "img": "images/02-Khema-28-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     189,
+     386
+    ],
+    "bbox": [
+     546,
+     1250,
+     2123,
+     1481
+    ],
+    "shape": "box",
+    "en": "Through this profound spiritual urgency, Ven. Khema gained Supreme Awakening (Arahatship), with six supernormal powers. She became utterly unrivalled in her exposition of the Dhamma and application of the Abhidhamma method.",
+    "conf": 52
+   }
+  ],
+  "loose": [
+   "Sav",
+   "ALLA"
+  ]
+ },
+ {
+  "img": "images/02-Khema-29-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     286,
+     134
+    ],
+    "bbox": [
+     870,
+     370,
+     1772,
+     1114
+    ],
+    "shape": "box",
+    "en": "While camping at Torana, King Pasenadi of Kosala sought Spiritual guidance. Finding no ascetics, his courtiers directed him to Ven. Khema—a wise, perspicacious disciple of the Buddha. The King approached her with profound inquiry.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "WRK"
+  ]
+ },
+ {
+  "img": "images/02-Khema-30-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     220,
+     31
+    ],
+    "bbox": [
+     589,
+     76,
+     2066,
+     228
+    ],
+    "shape": "box",
+    "en": "The King asked Khema four unanswerable qu regarding sentient iL being after de ath:",
+    "conf": 48
+   },
+   {
+    "seed": [
+     176,
+     233
+    ],
+    "bbox": [
+     532,
+     734,
+     926,
+     797
+    ],
+    "shape": "box",
+    "en": "Doe exist?",
+    "conf": 96
+   },
+   {
+    "seed": [
+     110,
+     391
+    ],
+    "bbox": [
+     304,
+     1280,
+     1144,
+     1356
+    ],
+    "shape": "bubble",
+    "en": "3. exist and not exist?",
+    "conf": 78
+   },
+   {
+    "seed": [
+     648,
+     391
+    ],
+    "bbox": [
+     1481,
+     1283,
+     2367,
+     1356
+    ],
+    "shape": "bubble",
+    "en": "Does it ne her exist not ot exist?",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "ENS",
+   "Does",
+   "not",
+   "exist?",
+   "“We"
+  ]
+ },
+ {
+  "img": "images/02-Khema-31-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     276,
+     157
+    ],
+    "bbox": [
+     846,
+     483,
+     1792,
+     1002
+    ],
+    "shape": "box",
+    "en": "To every question, Ven. Khema gave the exact same reply: “Great King, the Buddha does not say.” The King, at his wit’s end, asked why the Buddha refused to answer these four questions.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "KO)"
+  ]
+ },
+ {
+  "img": "images/02-Khema-32-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     301,
+     156
+    ],
+    "bbox": [
+     850,
+     483,
+     1795,
+     1002
+    ],
+    "shape": "box",
+    "en": "Khema replied with question: “Can any arithmetician count the grains of sand in the Ganges? Or measure the water in the great ocean?” “No,” the King replied. “The ocean is deep, beyond measure, incomprehensible.”",
+    "conf": 83
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Khema-33-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     205,
+     42
+    ],
+    "bbox": [
+     618,
+     99,
+     2023,
+     397
+    ],
+    "shape": "box",
+    "en": "“Likewise, ikewi se the Buddha has eradicated ted the five aggregates—like an uprooted palm tree stump, incapable of arising again. in. Liberated from materiality ty and consciousness, the Buddha is like the great ocean: beyond measure and incomprehensible.”",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "WAS"
+  ]
+ },
+ {
+  "img": "images/02-Khema-34-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     460,
+     61
+    ],
+    "bbox": [
+     1491,
+     169,
+     2483,
+     466
+    ],
+    "shape": "box",
+    "en": "Delighted, the King departed. Later, at Jetavana monastery, he visited the Buddha and asked the exact same four questions about sentient being after death.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Khema-35-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha’s",
+   "answers",
+   "were",
+   "identical",
+   "Khema’s.",
+   "Astounded,",
+   "the",
+   "King",
+   "exclaimed:",
+   "“Marvellous!",
+   "The",
+   "Buddha’s",
+   "exposition",
+   "and",
+   "that",
+   "his",
+   "disciple",
+   "are",
+   "exactly",
+   "the",
+   "same,",
+   "any",
+   "discrepancy.”",
+   "down",
+   "the",
+   "They",
+   "are",
+   "full",
+   "agreement",
+   "letter.",
+   "without"
+  ]
+ },
+ {
+  "img": "images/02-Khema-36-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "KIA)",
+   "Why",
+   "the",
+   "silence?",
+   "Craving",
+   "Ultimate",
+   "True",
+   "Questions",
+   "Being",
+   "Understanding",
+   "existence",
+   "arise",
+   "Only",
+   "the",
+   "five",
+   "Knowing",
+   "the",
+   "Four",
+   "from",
+   "attachment",
+   "aggregates",
+   "exist",
+   "Noble",
+   "Truths",
+   "the",
+   "Buddha",
+   "has",
+   "dissolves",
+   "such",
+   "eradicated",
+   "all",
+   "views.",
+   "craving",
+   "regates",
+   "aving:",
+   "loble",
+   "Truth:",
+   "icn",
+   "WAY,"
+  ]
+ },
+ {
+  "img": "images/02-Khema-37-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Because",
+   "her",
+   "profound",
+   "discour",
+   "na,",
+   "the",
+   "Buddha",
+   "gathered",
+   "the",
+   "monastic",
+   "congregation.",
+   "formally",
+   "designated",
+   "Ven.",
+   "Khema",
+   "the",
+   "foremost",
+   "female",
+   "monastic",
+   "profound",
+   "kno",
+   "(eta",
+   "Torana,",
+   "her",
+   "the",
+   "the"
+  ]
+ },
+ {
+  "img": "images/02-Khema-38-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     319,
+     170
+    ],
+    "bbox": [
+     1015,
+     503,
+     2129,
+     982
+    ],
+    "shape": "box",
+    "en": "In her own verses, Khema recorded this triumph: “The conqueror of the five deaths, the supreme one... being satisfied with my excellence in expounding the Dhamma, has designated me as the foremost among the eminently wise.”",
+    "conf": 71
+   }
+  ],
+  "loose": []
+ }
+]

@@ -1,0 +1,790 @@
+[
+ {
+  "img": "images/05-Dhammadinna-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "bad",
+   "fal",
+   "The",
+   "Awakening",
+   "Dhammadinna",
+   "From",
+   "Life",
+   "Foremost",
+   "Expounder",
+   "the",
+   "Dhamma.",
+   "(Ge",
+   "(7)"
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "wise",
+   "working-class",
+   "girl",
+   "met",
+   "Ven.",
+   "Sujata",
+   "after",
+   "arose",
+   "from",
+   "the",
+   "attainment",
+   "cessation.",
+   "Her",
+   "immediate",
+   "offering",
+   "simple",
+   "planted",
+   "the",
+   "seed",
+   "immense",
+   "merit.",
+   "AN?"
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Devo",
+   "her",
+   "tion",
+   "surging",
+   "she",
+   "cut",
+   "and",
+   "sold",
+   "air",
+   "offer",
+   "proper",
+   "meal",
+   "Ven.",
+   "Sujat",
+   "Moved",
+   "her",
+   "noble",
+   "conduct,",
+   "her",
+   "master",
+   "married",
+   "her",
+   "his",
+   "son,",
+   "ansforming",
+   "her",
+   "into",
+   "rich",
+   "man’s",
+   "daughter-in-law.",
+   "lag",
+   "offer",
+   "proper",
+   "meal",
+   "Moved"
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Visiting",
+   "Buddha",
+   "Padumuttara,",
+   "she",
+   "saw",
+   "nun",
+   "named",
+   "foremost",
+   "expounding",
+   "the",
+   "doctrine.",
+   "Aspiring",
+   "this",
+   "title,",
+   "she",
+   "made",
+   "extraordinary",
+   "offerings.",
+   "The",
+   "Buddha",
+   "predicted",
+   "her",
+   "wish",
+   "would",
+   "fulfilled",
+   "under",
+   "Buddha",
+   "Gotama."
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "For",
+   "aeons,",
+   "she",
+   "cycled",
+   "through",
+   "fortunate",
+   "rebirths.",
+   "royal",
+   "treasurer’s",
+   "generous",
+   "wife,",
+   "later",
+   "Princess",
+   "Sudhamma,",
+   "she",
+   "remained",
+   "chaste",
+   "for",
+   "20,000",
+   "jointly",
+   "building",
+   "magnificent",
+   "monastic",
+   "complex.",
+   "years,",
+   "SAS"
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Reborn",
+   "Rajagaha",
+   "during",
+   "Buddha",
+   "Gotama’s",
+   "era,",
+   "she",
+   "married",
+   "the",
+   "wealthy",
+   "Visakha,",
+   "resuming",
+   "karmic",
+   "their",
+   "shared",
+   "prior.",
+   "life",
+   "immense",
+   "privilege,",
+   "noted",
+   "for",
+   "continuous",
+   "liberality."
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     387,
+     287
+    ],
+    "bbox": [
+     1237,
+     913,
+     2076,
+     1025
+    ],
+    "shape": "box",
+    "en": "Once-returning (Sakadagami) ami)",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "Non-returning",
+   "(Andgami)",
+   "Stream-entry",
+   "listened",
+   "the",
+   "Buddha",
+   "and",
+   "rapidly",
+   "awakened.",
+   "single",
+   "day",
+   "528",
+   "BCE,",
+   "later",
+   "sequentially",
+   "Once-returning,",
+   "and",
+   "finally",
+   "Non-returning",
+   "Anagami-phala).",
+   "His",
+   "mind",
+   "achieved",
+   "profound",
+   "attained",
+   "Stream-entry,",
+   "progressing",
+   "tranquility.",
+   "and",
+   "Buddha",
+   "quility."
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     77,
+     374
+    ],
+    "bbox": [
+     79,
+     1237,
+     1276,
+     1395
+    ],
+    "shape": "box",
+    "en": "Before: Smiling, expectant, amiably holding ng his wife’s hand.",
+    "conf": 57
+   },
+   {
+    "seed": [
+     434,
+     374
+    ],
+    "bbox": [
+     1365,
+     1237,
+     2562,
+     1395
+    ],
+    "shape": "box",
+    "en": "After: Sedate, eating alone in silence like monastic, sleeping alone on simple wooden cot.",
+    "conf": 58
+   }
+  ],
+  "loose": [
+   "hammadinna",
+   "noticed",
+   "sudden,",
+   "transformation"
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Tortured",
+   "unfounded",
+   "fears",
+   "infidelity",
+   "personal",
+   "fault,",
+   "she",
+   "meekly",
+   "confronted",
+   "him",
+   "with",
+   "palms",
+   "joined",
+   "salutation:",
+   "“Why",
+   "you",
+   "stay",
+   "aloof",
+   "from",
+   "though",
+   "were",
+   "total",
+   "strangers?",
+   "you",
+   "see",
+   "any",
+   "fault",
+   "me?”"
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "explained:",
+   "the",
+   "supermundane",
+   "Dhamma.",
+   "Mundane",
+   "affairs",
+   "are",
+   "now",
+   "incompatible",
+   "with",
+   "me.”",
+   "offered",
+   "her",
+   "their",
+   "entire",
+   "800",
+   "treasure,",
+   "asking",
+   "only",
+   "treated",
+   "brother",
+   "son.",
+   "Visakha",
+   "have",
+   "comprehended"
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "all",
+   "ay,",
+   "ONS",
+   "Satisfied,",
+   "Dhammadinna",
+   "asked",
+   "question:",
+   "“Is",
+   "the",
+   "supermundane",
+   "Dhamma",
+   "solely",
+   "for",
+   "men?",
+   "Are",
+   "women",
+   "also",
+   "capable",
+   "understanding",
+   "it?”",
+   "Visakha",
+   "confirmed:",
+   "Anyone",
+   "with",
+   "due",
+   "diligence",
+   "and",
+   "past",
+   "merit",
+   "can",
+   "realize",
+   "it.",
+   "momentous"
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ANS",
+   "“Please",
+   "give",
+   "permission",
+   "become",
+   "nun,’",
+   "she",
+   "replied.",
+   "Rejoicing,",
+   "Visakha",
+   "petitioned",
+   "King",
+   "Bimbisara,",
+   "who",
+   "cleansed",
+   "the",
+   "city",
+   "and",
+   "provided",
+   "golden",
+   "palanquin",
+   "for",
+   "her",
+   "triumphant",
+   "departure",
+   "into",
+   "homelessness.",
+   "als",
+   "90,"
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     202,
+     369
+    ],
+    "bbox": [
+     641,
+     1220,
+     1990,
+     1412
+    ],
+    "shape": "box",
+    "en": "Visakhb bathed ed Dbammadinna in scented water, arranging fragrant procession to the nunnery. Re assured the female elders she was not being cast out, but was taking up the monastic life of her own accord.",
+    "conf": 33
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Dhammadinna-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     495,
+     368
+    ],
+    "bbox": [
+     648,
+     1098,
+     2232,
+     1412
+    ],
+    "shape": "bubble",
+    "en": "rel aa Instructed by senior nun, she reflected on the body’s five constituent parts: head hair, body hair, nails, teeth, and skin. Her hair was shaved, and she donned the orange robes of the Sangha,",
+    "conf": 38
+   }
+  ],
+  "loose": [
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     256,
+     388
+    ],
+    "bbox": [
+     612,
+     1227,
+     2030,
+     1405
+    ],
+    "shape": "box",
+    "en": "Receiving immense respect and many gifts, Ven. Dhammadinna had little time to meditate. Realising Visakha had attained Anagami as layman, she resolved to do the same, requesting to move to quiet wallace,",
+    "conf": 37
+   }
+  ],
+  "loose": [
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Due",
+   "meditative",
+   "exercises",
+   "past",
+   "existences,",
+   "she",
+   "swiftly",
+   "gained",
+   "insight.",
+   "She",
+   "became",
+   "Arahat,",
+   "endowed",
+   "with",
+   "the",
+   "four",
+   "analytic",
+   "knowledges.",
+   "help",
+   "her",
+   "kith",
+   "and",
+   "kin,",
+   "she",
+   "returned"
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "VAS",
+   "Hearing",
+   "her",
+   "return,",
+   "Visakha",
+   "visited.",
+   "test",
+   "her",
+   "state",
+   "mind",
+   "without",
+   "asking",
+   "plainly,",
+   "posed",
+   "profound",
+   "doctrinal",
+   "questions",
+   "concerning",
+   "the",
+   "the",
+   "objects",
+   "clinging",
+   "aggregates",
+   "that",
+   "(sakkaya-ditthi)."
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     225,
+     282
+    ],
+    "bbox": [
+     516,
+     767,
+     2033,
+     1415
+    ],
+    "shape": "bubble",
+    "en": "ZB G7) EO) Je GZ de Wh oO ORS} Ne Ww BREWS) She answered flawlessly. Her responses were as prompt as racing horse galloping away, and as precise as lotus stems cut by sat blade. Misakha realize her ep intellect.",
+    "conf": 39
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Dhammadinna-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Visakha",
+   "proceeded",
+   "mit,",
+   "asking:",
+   "What",
+   "the",
+   "counterpart",
+   "Nibbana?",
+   "Ven.",
+   "Dhammadinna",
+   "replied:",
+   "Your",
+   "question",
+   "The",
+   "ends",
+   "Ask",
+   "One.",
+   "beyond",
+   "his",
+   "knowledge",
+   "too",
+   "far.",
+   "practice",
+   "Nibbana.",
+   "the",
+   "Fortunate"
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     202,
+     368
+    ],
+    "bbox": [
+     602,
+     1184,
+     2030,
+     1405
+    ],
+    "shape": "bubble",
+    "en": "Visakha rec ounted nted the exchange to ‘ifs the Buddha, who declared: Dhammadinna is free of all craving for the aggregates (khandha). He who does not one who is free from pollutants, call Brahmin.",
+    "conf": 31
+   }
+  ],
+  "loose": [
+   "(6)"
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ven.",
+   "The",
+   "Buddha",
+   "praised",
+   "reat",
+   "wisdom,",
+   "stating",
+   "would",
+   "have",
+   "answered",
+   "identically.",
+   "When",
+   "orsed",
+   "the",
+   "disciple’s",
+   "discourse",
+   "like",
+   "message",
+   "sealed",
+   "the",
+   "King.",
+   "Buddha,",
+   "becomes",
+   "the",
+   "Buddha’s",
+   "adinna",
+   "ASS"
+  ]
+ },
+ {
+  "img": "images/05-Dhammadinna-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     271,
+     371
+    ],
+    "bbox": [
+     565,
+     1108,
+     2076,
+     1425
+    ],
+    "shape": "bubble",
+    "en": "monastery, the Budd ha formally re cognized her mastery: Monastics, among my female monastic disciples who are skilled in expounding the Dhamma, Dhammadinna is the foremost (etad-aggam).",
+    "conf": 81
+   }
+  ],
+  "loose": [
+   "ONG",
+   "WAN"
+  ]
+ }
+]

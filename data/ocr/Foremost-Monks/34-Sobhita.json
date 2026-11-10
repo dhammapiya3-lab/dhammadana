@@ -1,0 +1,454 @@
+[
+ {
+  "img": "images/34-Sobhita-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Venerable",
+   "Sobhita",
+   "The",
+   "Foremost",
+   "Mind",
+   "Past-Life",
+   "Recall",
+   "Foremost",
+   "Mind",
+   "Recall"
+  ]
+ },
+ {
+  "img": "images/34-Sobhita-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Eons",
+   "ago",
+   "young",
+   "seeker",
+   "listened",
+   "Buddha",
+   "Padumuttara.",
+   "Witnessing",
+   "monastic",
+   "honored",
+   "for",
+   "remembering",
+   "past",
+   "lives,",
+   "made",
+   "extraordinary",
+   "offerings",
+   "and",
+   "firmly",
+   "aspired",
+   "achieve",
+   "that",
+   "very",
+   "same",
+   "title."
+  ]
+ },
+ {
+  "img": "images/34-Sobhita-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Passing",
+   "away",
+   "this",
+   "state,",
+   "was",
+   "reborn",
+   "the",
+   "form",
+   "Before",
+   "his",
+   "final",
+   "birth,",
+   "mastered",
+   "deep",
+   "absorption.",
+   "realm",
+   "devoid",
+   "consciousness,",
+   "resting",
+   "silent",
+   "suspension",
+   "for",
+   "exactly",
+   "500",
+   "aeons.",
+   "Whi",
+   "away",
+   "deep",
+   "reborn",
+   "ting",
+   "silent"
+  ]
+ },
+ {
+  "img": "images/34-Sobhita-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Reborn",
+   "the",
+   "Brahmin",
+   "youth",
+   "Sobhita",
+   "Savatthi,",
+   "his",
+   "devotion",
+   "ignited",
+   "upon",
+   "hearing",
+   "Buddha",
+   "Gotama’s",
+   "discourses.",
+   "renounced",
+   "worldly",
+   "life",
+   "embrace",
+   "the",
+   "ascetic",
+   "path.",
+   "Mig"
+  ]
+ },
+ {
+  "img": "images/34-Sobhita-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     247,
+     357
+    ],
+    "bbox": [
+     665,
+     1167,
+     1980,
+     1448
+    ],
+    "shape": "box",
+    "en": "Endowed sS with profound Ss 5 spiritual RS 3 ripeness, Ven. Sobhita strove diligently. ligently. Engaging if fully in the noble practice, he destroyed al utants to attain Arahatship.",
+    "conf": 38
+   }
+  ],
+  "loose": [
+   "Key",
+   "AS,",
+   "(KS"
+  ]
+ },
+ {
+  "img": "images/34-Sobhita-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WY,",
+   "Remembering",
+   "Past",
+   "Existences",
+   "Upon",
+   "awakening,",
+   "gained",
+   "three",
+   "supreme",
+   "faculties:",
+   "Divine",
+   "Sight",
+   "Destruction",
+   "Pollutants",
+   "(9."
+  ]
+ },
+ {
+  "img": "images/34-Sobhita-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Exercising",
+   "his",
+   "mastery,",
+   "Ven.",
+   "Sobhita",
+   "cast",
+   "his",
+   "mind",
+   "backward.",
+   "observed",
+   "his",
+   "present",
+   "rebirth,",
+   "smoothl",
+   "tracing",
+   "the",
+   "causal",
+   "thread",
+   "back",
+   "the",
+   "exact",
+   "death-conscious",
+   "moment",
+   "his",
+   "previous",
+   "life.",
+   "conscious",
+   "act"
+  ]
+ },
+ {
+  "img": "images/34-Sobhita-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "mystery",
+   "arose.",
+   "Upon",
+   "reaching",
+   "his",
+   "second-to-last",
+   "existence,",
+   "psychic",
+   "vision",
+   "went",
+   "completely",
+   "dark.",
+   "could",
+   "not",
+   "penetrate",
+   "the",
+   "existence",
+   "before",
+   "his",
+   "most",
+   "recent",
+   "past",
+   "life.",
+   "his",
+   "WE,"
+  ]
+ },
+ {
+  "img": "images/34-Sobhita-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "EA,",
+   "Why",
+   "the",
+   "blind",
+   "spot?",
+   "Past-life",
+   "recall",
+   "traces",
+   "the",
+   "causal",
+   "links",
+   "mental",
+   "requires",
+   "observing",
+   "the",
+   "exact",
+   "unbroken",
+   "moments",
+   "death",
+   "and",
+   "rebirth",
+   "consciousness.",
+   "ing"
+  ]
+ },
+ {
+  "img": "images/34-Sobhita-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "form",
+   "realm",
+   "devoid",
+   "consciousness",
+   "produces",
+   "mental",
+   "phenomena.",
+   "Lacking",
+   "stream",
+   "consciousness",
+   "trace,",
+   "remains",
+   "entirely",
+   "invisible",
+   "standard",
+   "psychic",
+   "scrutiny."
+  ]
+ },
+ {
+  "img": "images/34-Sobhita-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Facing",
+   "the",
+   "unknowable,",
+   "Ven.",
+   "Sobhita",
+   "applied",
+   "profound",
+   "intuition:",
+   "“Aggregates",
+   "arise",
+   "ceaselessly,",
+   "except",
+   "the",
+   "unconscious",
+   "form",
+   "realm.",
+   "That",
+   "realm",
+   "lasts",
+   "exactly",
+   "500",
+   "aeons.",
+   "must",
+   "have",
+   "been",
+   "there.”",
+   "able",
+   "@2)"
+  ]
+ },
+ {
+  "img": "images/34-Sobhita-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     233,
+     344
+    ],
+    "bbox": [
+     651,
+     1131,
+     1990,
+     1336
+    ],
+    "shape": "box",
+    "en": "Deducing an unconscious past life is normally reserved solely for Buddhas. Ven. Sobhita’s mental feat was like hitting yak’s hair with ith dart, or printing footprints in the sky.",
+    "conf": 78
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/34-Sobhita-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     341,
+     63
+    ],
+    "bbox": [
+     1002,
+     162,
+     2423,
+     532
+    ],
+    "shape": "bubble",
+    "en": "Recognizing this unparalleled mastery of both psychic power and intuitive reasoning, the Buddha declared: “Among my disciples who recollect their past existences, Ven. Sobhita is the foremost.”",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/34-Sobhita-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Wil",
+   "True",
+   "awakening",
+   "blends",
+   "deep",
+   "meditative",
+   "power",
+   "with",
+   "razor-sharp",
+   "insight.",
+   "Ven.",
+   "Sobhita’s",
+   "mind",
+   "brilliantly",
+   "bridged",
+   "the",
+   "ultimate",
+   "void,",
+   "revealing",
+   "the",
+   "unbroken",
+   "continuity",
+   "existence.",
+   "CAL"
+  ]
+ }
+]

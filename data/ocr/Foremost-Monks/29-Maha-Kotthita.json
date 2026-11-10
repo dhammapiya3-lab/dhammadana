@@ -1,0 +1,405 @@
+[
+ {
+  "img": "images/29-Maha-Kotthita-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Great",
+   "Chronicles:",
+   "Venerable",
+   "Maha",
+   "Kotthita",
+   "Foremost",
+   "Analytical",
+   "Knowledge",
+   "Sy,",
+   "visual",
+   "journey",
+   "aspiration,",
+   "lifetimes",
+   "merit,",
+   "and",
+   "ultimate",
+   "awakening.",
+   "The",
+   "WAY"
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     150,
+     117
+    ],
+    "bbox": [
+     218,
+     334,
+     1015,
+     1237
+    ],
+    "shape": "bubble",
+    "en": "Che Goal: ih Fourfold Analytical Knowledge (Patisambbida-fiana) ml Venerable Kotthita mastered this profound wisdom: 1. Analysis of Meaning 1 2. Analysis of Gruth 1 3. Analysis of Language 4, Analysis of Intellect Ghis is the story of rhe. bis achievement.",
+    "conf": 50
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/29-Maha-Kotthita-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     356,
+     49
+    ],
+    "bbox": [
+     225,
+     142,
+     2338,
+     436
+    ],
+    "shape": "box",
+    "en": "Vow in Namsavati €ons ago, under Buddha Padumuttara, the future Kotthita was born into vast wealth. pearing the Buddha preach, he witnessed monastic being praised as foremost in analytical knowledge.",
+    "conf": 61
+   }
+  ],
+  "loose": [
+   "NOY"
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     429,
+     64
+    ],
+    "bbox": [
+     1088,
+     145,
+     2437,
+     489
+    ],
+    "shape": "box",
+    "en": "The Great Offering Deeply inspired, the youth longed to achieve that exact title. He prepared magnificent offering for the Buddha and the Sangha, 3 publicly expressing his profound future aspiration",
+    "conf": 62
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/29-Maha-Kotthita-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Before",
+   "departing",
+   "for",
+   "his",
+   "monastery,",
+   "Buddha",
+   "Padumuttara",
+   "looked",
+   "upon",
+   "the",
+   "young",
+   "man",
+   "and",
+   "made",
+   "powerful",
+   "prediction:",
+   "his",
+   "noble",
+   "aspiration",
+   "would",
+   "flawlessly",
+   "fulfilled",
+   "distant,",
+   "future",
+   "era.",
+   "The",
+   "Prophecy"
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     329,
+     194
+    ],
+    "bbox": [
+     969,
+     579,
+     1660,
+     916
+    ],
+    "shape": "box",
+    "en": "Lifetimes ryan of Merit with Following his vow, he lived lives filled with wholesome deeds. He passed away and cycled gracefully between blissful Deva realms and fortunate human births ripening his spiritual potential.",
+    "conf": 36
+   }
+  ],
+  "loose": [
+   "Ve."
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Savatthi",
+   "During",
+   "the",
+   "era",
+   "Buddha",
+   "Gotama,",
+   "was",
+   "reborn",
+   "Savatthi",
+   "Kotthita,",
+   "part",
+   "elite",
+   "Brahmin",
+   "family.",
+   "Coming",
+   "age,",
+   "brilliantly",
+   "mastered",
+   "the",
+   "three",
+   "ancient",
+   "Vedas."
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "at,",
+   "Wet",
+   "Hearing",
+   "the",
+   "True",
+   "Dhamma",
+   "Upon",
+   "hearing",
+   "discourse",
+   "from",
+   "the",
+   "Buddha,",
+   "Kotthita",
+   "was",
+   "overwhelmed",
+   "profound",
+   "devotion.",
+   "Leaving",
+   "his",
+   "elite",
+   "Brahmin",
+   "life",
+   "and",
+   "worldly",
+   "education",
+   "behind,",
+   "officially",
+   "joined",
+   "the",
+   "Sangha."
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Awakening",
+   "Meditating",
+   "for",
+   "profound",
+   "insight,",
+   "Ven.",
+   "Kotthita",
+   "pierced",
+   "through",
+   "ignorance",
+   "become",
+   "Arahat.",
+   "Instantly,",
+   "was",
+   "endowed",
+   "with",
+   "the",
+   "fourfold",
+   "analytical",
+   "knowledge",
+   "had",
+   "wished",
+   "for",
+   "ago.",
+   "(patisambhida-nana)",
+   "eons"
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Profound",
+   "Dialogues",
+   "adept",
+   "master,",
+   "Ven.",
+   "Kotthita",
+   "frequently",
+   "posed",
+   "deeply",
+   "complex",
+   "questions",
+   "regarding",
+   "the",
+   "Dhamma.",
+   "His",
+   "brilliant",
+   "interrogations",
+   "formed",
+   "the",
+   "basis",
+   "the",
+   "renowned",
+   "Long",
+   "Discourse",
+   "giving",
+   "Elaboration",
+   "43)."
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Foremost",
+   "Title",
+   "Recognizing",
+   "his",
+   "unmatched",
+   "mastery,",
+   "the",
+   "Buddha",
+   "declared:",
+   "\"Monastics,",
+   "among",
+   "monastic",
+   "disciples",
+   "who",
+   "attained",
+   "the",
+   "fourfold",
+   "analytical",
+   "knowledge,",
+   "Maha",
+   "Kotthita",
+   "the",
+   "foremost",
+   "tthita"
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Circle",
+   "Completed",
+   "The",
+   "Seed",
+   "The",
+   "Fruit",
+   "Era:",
+   "Buddha",
+   "Padumuttara",
+   "Era:",
+   "Buddha",
+   "Gotama",
+   "Role:",
+   "Wealthy",
+   "Nobleman",
+   "Role:",
+   "Arahat",
+   "Monk",
+   "Result:",
+   "Foremost",
+   "The",
+   "Great",
+   "Vow",
+   "Analytical",
+   "Knowledge",
+   "Buddha",
+   "Action:",
+   "ra:",
+   "ction:"
+  ]
+ }
+]

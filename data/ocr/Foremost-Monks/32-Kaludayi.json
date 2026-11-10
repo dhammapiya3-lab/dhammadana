@@ -1,0 +1,414 @@
+[
+ {
+  "img": "images/32-Kaludayi-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     310,
+     351
+    ],
+    "bbox": [
+     665,
+     1157,
+     1977,
+     1392
+    ],
+    "shape": "box",
+    "en": "Missing Envoy wee Kaludayi and the 60-League Aerial Bridge",
+    "conf": 32
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/32-Kaludayi-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "THE",
+   "THE",
+   "KINDLER",
+   "DEVOTION",
+   "Eons",
+   "ago",
+   "Hamsavati,",
+   "devoted",
+   "layman",
+   "witnessed",
+   "Buddha",
+   "Padumuttara",
+   "honor",
+   "disciple.",
+   "vowed",
+   "achieve",
+   "that",
+   "exact",
+   "honor:",
+   "the",
+   "foremost",
+   "kindler",
+   "devotion",
+   "for",
+   "future",
+   "Awakened",
+   "One.",
+   "vow"
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Destinies",
+   "entwined",
+   "the",
+   "exact",
+   "day",
+   "Prince",
+   "Siddhattha",
+   "was",
+   "born,",
+   "boy",
+   "with",
+   "dark",
+   "skin",
+   "(kala)",
+   "arose",
+   "(udaya)",
+   "the",
+   "court.",
+   "They",
+   "named",
+   "him",
+   "Kaludayi"
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "VAY",
+   "Raised",
+   "within",
+   "the",
+   "vibrant",
+   "walls",
+   "Kapilavatthu,",
+   "the",
+   "two",
+   "boys,",
+   "and",
+   "Prince",
+   "Siddhattha,",
+   "became",
+   "inseparable",
+   "playmates",
+   "This",
+   "deep",
+   "childhood",
+   "bond",
+   "forged",
+   "loyalty",
+   "that",
+   "would",
+   "one",
+   "day",
+   "alter",
+   "history",
+   "hin",
+   "Kapi",
+   "lavatthu,"
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Year",
+   "528",
+   "BCE.",
+   "King",
+   "Suddhodana",
+   "yearns",
+   "see",
+   "his",
+   "Awakened",
+   "son.",
+   "dispatches",
+   "nine",
+   "successive",
+   "embassies",
+   "across",
+   "leagues",
+   "the",
+   "Veluvana",
+   "monastery",
+   "Rajagaha.",
+   "None",
+   "return."
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Spi",
+   "Event",
+   "Horizon",
+   "9,000",
+   "men",
+   "arrive",
+   "deliver",
+   "royal",
+   "summons.",
+   "Instead,",
+   "they",
+   "hear",
+   "the",
+   "Dhamma,",
+   "attain",
+   "Awakening,",
+   "and",
+   "vanish",
+   "into",
+   "the",
+   "monastic",
+   "sangha,",
+   "completely",
+   "indifferent",
+   "worldly",
+   "errands"
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Helps",
+   "King",
+   "agrees",
+   "bring",
+   "the",
+   "Buddha",
+   "home",
+   "one",
+   "absolute",
+   "condition:",
+   "too",
+   "must",
+   "allowed",
+   "renounce",
+   "the",
+   "world.",
+   "The",
+   "desperate",
+   "King",
+   "consents",
+   "Suddhodana"
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Reaching",
+   "Rajagaha,",
+   "Kaludayi",
+   "attains",
+   "Awakening",
+   "and",
+   "ordains.",
+   "Yet,",
+   "remembers",
+   "his",
+   "promise.",
+   "Knowing",
+   "winter",
+   "too",
+   "harsh",
+   "for",
+   "the",
+   "Buddha",
+   "travel,",
+   "the",
+   "Arahat",
+   "sits",
+   "under",
+   "bare",
+   "branches,",
+   "waiting."
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     468,
+     161
+    ],
+    "bbox": [
+     1415,
+     483,
+     2245,
+     992
+    ],
+    "shape": "bubble",
+    "en": "The March Fite moon brings spring. Through 60 verses praising the blooming foliage and pleasant roads, Ven. Kaludayi signals to the Buddha: it is time to return to Kapilavatthu",
+    "conf": 38
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/32-Kaludayi-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "60-League",
+   "Aerial",
+   "Bridge.",
+   "The",
+   "Buddha",
+   "walks",
+   "leisurely",
+   "pace",
+   "one",
+   "league",
+   "day.",
+   "Above,",
+   "flies",
+   "miraculously",
+   "Kapilavatthu",
+   "each",
+   "morning",
+   "fetch",
+   "the",
+   "King’s",
+   "own",
+   "prepared",
+   "food.",
+   "whe",
+   "League",
+   "Day"
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Daily,",
+   "Kaludayi",
+   "retrieves",
+   "the",
+   "King’s",
+   "meal",
+   "pauses",
+   "mid-air,",
+   "delivers",
+   "discourses",
+   "detailing",
+   "the",
+   "Buddha’s",
+   "noble",
+   "qualities,",
+   "slowly",
+   "warming",
+   "the",
+   "royal",
+   "family’s",
+   "hearts.",
+   "ay;",
+   "Daily,",
+   "Kaludayi",
+   "the",
+   "ng’s"
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Among",
+   "disciples",
+   "able",
+   "kindle",
+   "devotion",
+   "kinsmen,",
+   "Kaludayi",
+   "the",
+   "foremost.",
+   "ancient",
+   "vow,",
+   "fulfilled",
+   "through",
+   "perfect",
+   "alignment",
+   "karmic",
+   "birth",
+   "and",
+   "unwavering",
+   "loyalty.",
+   "NBS"
+  ]
+ }
+]

@@ -1,0 +1,1208 @@
+[
+ {
+  "img": "images/38-Maha-Kappina-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     302,
+     333
+    ],
+    "bbox": [
+     671,
+     1091,
+     1971,
+     1339
+    ],
+    "shape": "box",
+    "en": "Maha Kappina: Journey of Merit",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Maha-Kappina-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     321,
+     76
+    ],
+    "bbox": [
+     965,
+     238,
+     2404,
+     506
+    ],
+    "shape": "box",
+    "en": "In Harhsavati, the future Maha Kappina witnessed Buddha Padumuttara honouring monk as foremost in admonishing others. Inspired, he made extraordinary offerings and formed an aspirational vow (panidhana) for that exact distinction. The Buddha prophesied its fulfillment.",
+    "conf": 56
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Maha-Kappina-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     418,
+     75
+    ],
+    "bbox": [
+     1213,
+     238,
+     2404,
+     506
+    ],
+    "shape": "box",
+    "en": "Reborn as chief weaver in Baranasi, his life intersected with 1,000 Pacekabuddhas. Leaving their Himalayan retreats for the rainy season, these silent sages approached the city, seeking builders for their monastic dwellings",
+    "conf": 80
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Maha-Kappina-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     79,
+     346
+    ],
+    "bbox": [
+     205,
+     1134,
+     2437,
+     1276
+    ],
+    "shape": "box",
+    "en": "The King of Baranasi, distracted by his annual ploughing festival, delayed the Paccekabuddhas. But the weaver’s wife, possessing innate wisdom, encountered them in the city. Recognizing the rare karmic field, she paid immediate obeisance.",
+    "conf": 88
+   }
+  ],
+  "loose": [
+   "ial",
+   "INA"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     551,
+     100
+    ],
+    "bbox": [
+     1620,
+     284,
+     2321,
+     549
+    ],
+    "shape": "bubble",
+    "en": "Venerable sirs, there village are 1,000 households in my village. Each will offer food.",
+    "conf": 34
+   },
+   {
+    "seed": [
+     167,
+     400
+    ],
+    "bbox": [
+     450,
+     1322,
+     2192,
+     1438
+    ],
+    "shape": "box",
+    "en": "Taking the lead, she boldly invited all 1,000 Paccekabuddhas, rallying her community to prepare choice delicacies and rice gruel for the following morning.",
+    "conf": 82
+   }
+  ],
+  "loose": [
+   "INV"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     326,
+     163
+    ],
+    "bbox": [
+     932,
+     456,
+     1709,
+     1032
+    ],
+    "shape": "bubble",
+    "en": "She galvanized the village for the Rains Retreat. Every householder brought axes and adzes Through collective labor, they gathered timber and built 1,000 thatched dwellings, eagerly tending to the sages for three months",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Maha-Kappina-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     292,
+     274
+    ],
+    "bbox": [
+     840,
+     823,
+     1832,
+     1329
+    ],
+    "shape": "bubble",
+    "en": "At the retreat’s LA close, wn the weaver’s wife called for final offering. Each household donated robe worth 1,000 pieces of money to the Paccekabuddha they had sheltered. The sages delivered appreciative discourses and departed",
+    "conf": 52
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Maha-Kappina-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     552,
+     118
+    ],
+    "bbox": [
+     1729,
+     347,
+     2377,
+     1131
+    ],
+    "shape": "box",
+    "en": "This collective merit propelled the entire weaver’s village to shared rebirth the Tavatimsa Deva realm. After exhausting their celestial lifespans, they descended back to Baranasi, reborn together into the families of wealthy householders.",
+    "conf": 73
+   }
+  ],
+  "loose": [
+   "lif"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     195,
+     372
+    ],
+    "bbox": [
+     476,
+     1180,
+     2166,
+     1445
+    ],
+    "shape": "box",
+    "en": "Now chief householder, he and his wife visited Buddha Kassapa. Caught in sudden deluge without monastic relatives to shelter them, they stood drenched in the compound. They recognized this disgrace as lack of spiritual roots.",
+    "conf": 40
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Maha-Kappina-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     328,
+     163
+    ],
+    "bbox": [
+     1084,
+     539,
+     1422,
+     598
+    ],
+    "shape": "box",
+    "en": "[Wives: cach]",
+    "conf": 33
+   },
+   {
+    "seed": [
+     394,
+     247
+    ],
+    "bbox": [
+     1012,
+     787,
+     1491,
+     853
+    ],
+    "shape": "box",
+    "en": "Householders 500 each",
+    "conf": 97
+   },
+   {
+    "seed": [
+     198,
+     367
+    ],
+    "bbox": [
+     645,
+     1180,
+     1997,
+     1349
+    ],
+    "shape": "box",
+    "en": "They pooled their wealth to construct great pinnacled monastery for Buddha Kassapa. When initial funds fell short, every donor contributed an exact fifty-percent top-up to finish it.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     419,
+     312
+    ],
+    "bbox": [
+     979,
+     1032,
+     1524,
+     1098
+    ],
+    "shape": "box",
+    "en": "Chief Householder: 1,000",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "50%",
+   "Top-Up"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     206,
+     363
+    ],
+    "bbox": [
+     483,
+     1180,
+     2159,
+     1442
+    ],
+    "shape": "box",
+    "en": "grand seven-day festival marked the transfer of the Great Monastery to Buddha Kassapa. The unified community finalized their monumental effort by offering robe to each of the 20,000 Arabats present.",
+    "conf": 35
+   }
+  ],
+  "loose": [
+   "All"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     528,
+     98
+    ],
+    "bbox": [
+     1610,
+     298,
+     2334,
+     1164
+    ],
+    "shape": "box",
+    "en": "The chief’s wife offered golden-hued robe and golden Asoka flowers at the Buddha’s feet. She voiced her aspiration: “May have complexion as golden as these flowers, and bear their name, Anoja.” Buddha Kassapa assented.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Maha-Kappina-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Reborn",
+   "Kukkutavati,",
+   "King",
+   "Maha",
+   "Kappina",
+   "and",
+   "golden-complexioned",
+   "Queen",
+   "Anoja",
+   "ruled",
+   "alongside",
+   "1,000",
+   "loyal",
+   "ministers",
+   "Bound",
+   "past",
+   "merits,",
+   "this",
+   "united",
+   "court",
+   "shared",
+   "all",
+   "royal",
+   "glories",
+   "equally"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     431,
+     48
+    ],
+    "bbox": [
+     820,
+     159,
+     1825,
+     390
+    ],
+    "shape": "box",
+    "en": "The sought sou zh spiritual Ai awakening. Daily, four royal riders galloped three leagues in every direction from the city gates, seeking wondrous news of Buddha, Dhamma, oF Sangha. chi",
+    "conf": 33
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Maha-Kappina-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     316,
+     48
+    ],
+    "bbox": [
+     820,
+     159,
+     1825,
+     390
+    ],
+    "shape": "box",
+    "en": "fis his supreme horse Supatta, the King encountered 500 weary merchants They carried unprecedented news from the city of Savatthi, 120 leagues away.",
+    "conf": 61
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Maha-Kappina-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     115,
+     146
+    ],
+    "bbox": [
+     145,
+     112,
+     913,
+     1309
+    ],
+    "shape": "box",
+    "en": "Mage ISS KF VG. ip Su ED Rare) CIES La Buddha Appeared: rad. Fainted from joy. Awarded 100,000 silver.",
+    "conf": 30
+   },
+   {
+    "seed": [
+     432,
+     145
+    ],
+    "bbox": [
+     922,
+     112,
+     1719,
+     1296
+    ],
+    "shape": "box",
+    "en": "SF VG ae we UTS ES oo Dhamma re Fainted from joy. Awarded 100,000 silver.",
+    "conf": 33
+   },
+   {
+    "seed": [
+     664,
+     145
+    ],
+    "bbox": [
+     1729,
+     112,
+     2496,
+     1309
+    ],
+    "shape": "box",
+    "en": "KS ee Wii ne Ee ES ia Sangha Apnea Fainted from joy. Awarded 100,000 silver.",
+    "conf": 36
+   },
+   {
+    "seed": [
+     243,
+     403
+    ],
+    "bbox": [
+     717,
+     1332,
+     1924,
+     1435
+    ],
+    "shape": "box",
+    "en": "Total otal devotion: 300,000 300,000 silver. silver",
+    "conf": 94
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Maha-Kappina-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     353,
+     48
+    ],
+    "bbox": [
+     820,
+     159,
+     1825,
+     390
+    ],
+    "shape": "box",
+    "en": "life lost all appeal The King etched golden plate, transferring supreme rule to Queen Anoja, and rode forth with his ministers to become monastics.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "AY,"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     460,
+     121
+    ],
+    "bbox": [
+     1415,
+     96,
+     2549,
+     1190
+    ],
+    "shape": "bubble",
+    "en": "vip sy SS SU LZ. WE WW) Reviewing the world, the Buddha 3 saw the King’s imminent arrival and capacity for Arahatship. Ss Displaying six radiances, He waited beneath Bodhi tree at 4 the River Candabhaga. aga. le OWS SOG BA ONO SUZ WEE GAG)",
+    "conf": 33
+   }
+  ],
+  "loose": [
+   "ESS"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     557,
+     59
+    ],
+    "bbox": [
+     1805,
+     159,
+     2483,
+     817
+    ],
+    "shape": "box",
+    "en": "Obstacle: River Aparaccha (2 miles wide) Sacca-kiriya: The Buddha has crossed the floods of samsara Result: 1,000 horses crossed; water never touched their hooves",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "INS",
+   "NO)"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     557,
+     59
+    ],
+    "bbox": [
+     1805,
+     155,
+     2483,
+     817
+    ],
+    "shape": "box",
+    "en": "Obstacle: River Nilavahini (Half-league wide) Sacca-kiriya: The noble path leads to the absolute happiness of Nibbana Result: The waters yielded; hooves remained perfectly dry",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "AGE"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     557,
+     59
+    ],
+    "bbox": [
+     1805,
+     152,
+     2483,
+     817
+    ],
+    "shape": "box",
+    "en": "Obstacle: River Candabhaga ag (One league wide) Sacca-kiriya: kiriya: The Sangha is the incomparable field of merit. Result: Safe passage to the Buddha’s feet, hoof-tips dry.",
+    "conf": 69
+   },
+   {
+    "seed": [
+     445,
+     93
+    ],
+    "bbox": [
+     1246,
+     222,
+     1673,
+     506
+    ],
+    "shape": "bubble",
+    "en": "Hoof-tips dry ry",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "Vid"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Unshakeable",
+   "faith",
+   "ysical",
+   "boundaries.",
+   "Through",
+   "the",
+   "Power",
+   "Truth",
+   "the",
+   "perilous",
+   "floods",
+   "were",
+   "conquered,",
+   "turning",
+   "insurmountable",
+   "rivers",
+   "into",
+   "bridges",
+   "liberation",
+   "dissolves",
+   "sarnsara",
+   "WY,"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "King",
+   "Maha",
+   "Kappina",
+   "beholds",
+   "six-colored",
+   "radiances",
+   "emanating",
+   "from",
+   "Buddha",
+   "Gotama",
+   "beneath",
+   "the",
+   "Bodhi",
+   "tree.",
+   "Drawn",
+   "moving",
+   "through",
+   "cool",
+   "liquid",
+   "realgar,",
+   "the",
+   "king",
+   "and",
+   "his",
+   "1,000",
+   "ministers",
+   "approach,",
+   "bowing",
+   "profound",
+   "reverence."
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "gradual",
+   "generosity,",
+   "morality,",
+   "heavenly",
+   "realms,",
+   "and",
+   "the",
+   "path,",
+   "King",
+   "Maha",
+   "Kappina",
+   "and",
+   "his",
+   "1,000",
+   "ministers",
+   "attain",
+   "Stream-entry",
+   "Through",
+   "discourse",
+   "ministers",
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Recognizing",
+   "their",
+   "past",
+   "merit",
+   "donating",
+   "robes",
+   "Paccekabuddhas,",
+   "the",
+   "Buddha",
+   "says,",
+   "“Come,",
+   "monastics.”",
+   "Instantly,",
+   "the",
+   "king",
+   "and",
+   "ministers",
+   "transform",
+   "into",
+   "monks",
+   "sixty",
+   "years’",
+   "standing,",
+   "complete",
+   "with",
+   "alms",
+   "bowls",
+   "and",
+   "robes",
+   "INN",
+   "BY)",
+   "the"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     319,
+     29
+    ],
+    "bbox": [
+     889,
+     46,
+     2503,
+     916
+    ],
+    "shape": "bubble",
+    "en": "In Savatthi, merchants tell Queen Anoja of the Buddha, and Sangha. Overwhelmed by joyous rapture, she falls senseless three times. She rewards them 1,200,000 pieces of money.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "WN)"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-27-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Learning",
+   "the",
+   "king",
+   "renounced",
+   "his",
+   "crown,",
+   "Queen",
+   "declares",
+   "worldly",
+   "sovereign",
+   "glory",
+   "like",
+   "swallowing",
+   "saliva.",
+   "Alongside",
+   "1,000",
+   "ministers’",
+   "wives,",
+   "she",
+   "abandons",
+   "the",
+   "palace,",
+   "mounting",
+   "chariots",
+   "seek",
+   "the",
+   "ascetic",
+   "life."
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-28-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Reaching",
+   "three",
+   "unfordable",
+   "rivers,",
+   "Queen",
+   "Anoja",
+   "makes",
+   "asseveration",
+   "truth.",
+   "Through",
+   "her",
+   "deep",
+   "devotion",
+   "the",
+   "Three",
+   "Treasures,",
+   "the",
+   "water",
+   "hardens",
+   "into",
+   "(MZ",
+   "solid",
+   "rock,",
+   "leaving",
+   "the",
+   "chariot",
+   "wheels",
+   "perfectly",
+   "dry."
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-29-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Arriving",
+   "the",
+   "Bodhi",
+   "tree,",
+   "the",
+   "women",
+   "cannot",
+   "see",
+   "their",
+   "husbands.",
+   "The",
+   "Buddha",
+   "conceals",
+   "the",
+   "men",
+   "using",
+   "psychic",
+   "power",
+   "preventing",
+   "worldly",
+   "attachment",
+   "from",
+   "blocking",
+   "the",
+   "women’s",
+   "women’s",
+   "ability",
+   "hear",
+   "the"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-30-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Upon",
+   "hearing",
+   "the",
+   "discourse,",
+   "the",
+   "women",
+   "attain",
+   "Stream-entry",
+   "(Sotapatti-phala)",
+   "and",
+   "their",
+   "husbands",
+   "are",
+   "revealed.",
+   "the",
+   "Buddha’s",
+   "will,",
+   "Elder",
+   "nun",
+   "Uppalavanna",
+   "appears",
+   "and",
+   "admits",
+   "Queen",
+   "Anoja",
+   "and",
+   "her",
+   "companions",
+   "into",
+   "the",
+   "Sangha"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-31-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     29,
+     33
+    ],
+    "bbox": [
+     76,
+     83,
+     1227,
+     1399
+    ],
+    "shape": "bubble",
+    "en": "Ven. Maha Kappina completes the noble path, attaining Arahatship. Dwelling in solitary liberation, he joyously exclaims, “Blissful it is! Blissful it is!” Other monastics mistake this for yearning after past royal pleasures. RS",
+    "conf": 52
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/38-Maha-Kappina-32-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "corrects",
+   "their",
+   "declaring",
+   "that",
+   "Maha",
+   "Kappina",
+   "extols",
+   "the",
+   "joy",
+   "the",
+   "paths:",
+   "“He",
+   "who",
+   "drinks",
+   "the",
+   "Dhamma",
+   "lives",
+   "happily",
+   "with",
+   "serene",
+   "mind.",
+   "The",
+   "wise",
+   "always",
+   "find",
+   "delight.”",
+   "misunderstanding,",
+   "INV"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-33-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ven.",
+   "Maha",
+   "Kappina,",
+   "dwelling",
+   "continually",
+   "the",
+   "fruition",
+   "Arahatship,",
+   "gives",
+   "instruction",
+   "his",
+   "1,000",
+   "former",
+   "ministers.",
+   "The",
+   "Buddha",
+   "intervenes,",
+   "urging",
+   "him:",
+   "“From",
+   "now",
+   "on,",
+   "give",
+   "discourses",
+   "your",
+   "close",
+   "pupils.”"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-34-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Obeying",
+   "the",
+   "Buddha,",
+   "Ven.",
+   "Maha",
+   "Kappina",
+   "delivers",
+   "profound",
+   "discourse",
+   "his",
+   "devoted",
+   "followers.",
+   "that",
+   "very",
+   "moment,",
+   "all",
+   "1,000",
+   "monastics",
+   "shatter",
+   "their",
+   "remaining",
+   "fetters",
+   "and",
+   "attain",
+   "complete",
+   "Arahatship.",
+   "1,000"
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-35-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     202,
+     355
+    ],
+    "bbox": [
+     595,
+     1114,
+     2060,
+     1365
+    ],
+    "shape": "bubble",
+    "en": "In great congregation, the wo Buddha at formally bs elevates 2 him. declaring: “Monastics, among 3 cq 60 my monastic 2 So 2 disciples 4 2 who give instruction 5 3 42) to monastics, Maha Kappina is the foremost (etad-agga).",
+    "conf": 32
+   }
+  ],
+  "loose": []
+ }
+]

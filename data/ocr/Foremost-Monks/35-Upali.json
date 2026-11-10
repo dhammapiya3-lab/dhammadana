@@ -1,0 +1,493 @@
+[
+ {
+  "img": "images/35-Upali-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     260,
+     321
+    ],
+    "bbox": [
+     585,
+     1028,
+     2066,
+     1392
+    ],
+    "shape": "box",
+    "en": "The Master of Discipline The Karmic Journey ano Wisdom of Venerable Upali",
+    "conf": 74
+   }
+  ],
+  "loose": [
+   "LESS"
+  ]
+ },
+ {
+  "img": "images/35-Upali-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     557,
+     119
+    ],
+    "bbox": [
+     1795,
+     182,
+     2440,
+     939
+    ],
+    "shape": "bubble",
+    "en": "In Hamsavati, worthy man witnessed Buddha Padumuttara honor monastic for upholding the Vinaya. Offering great gifts, he made timeless vow to achieve this same title.",
+    "conf": 87
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/35-Upali-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     233,
+     327
+    ],
+    "bbox": [
+     741,
+     1068,
+     1901,
+     1418
+    ],
+    "shape": "box",
+    "en": "Reborn as Upali in the barber caste, he humbly served six noble Sakyan princes. life of quiet duty laid the foundation for his profound mastery.",
+    "conf": 88
+   }
+  ],
+  "loose": [
+   "INS"
+  ]
+ },
+ {
+  "img": "images/35-Upali-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     91,
+     107
+    ],
+    "bbox": [
+     182,
+     188,
+     863,
+     1280
+    ],
+    "shape": "bubble",
+    "en": "At the Anupiya Mango grove, the princes and their barber renounced worldly life. Embracing the Buddha’s path, Upali donned the bright orange robes of monastic.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/35-Upali-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     271,
+     36
+    ],
+    "bbox": [
+     774,
+     46,
+     1871,
+     503
+    ],
+    "shape": "bubble",
+    "en": "Upali requested forest isolation. The Buddha offered choice: the forest brings only insight, but staying near the Buddha yields both profound insight and supreme scholastic learning.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "UNS"
+  ]
+ },
+ {
+  "img": "images/35-Upali-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     111,
+     361
+    ],
+    "bbox": [
+     241,
+     1170,
+     2400,
+     1392
+    ],
+    "shape": "box",
+    "en": "Choosing the path of learning, Upali achieved Arahatship. The Buddha personally imparted the extensive Vinaya, forging master of monastic law.",
+    "conf": 71
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/35-Upali-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     513,
+     121
+    ],
+    "bbox": [
+     1005,
+     367,
+     2410,
+     1061
+    ],
+    "shape": "bubble",
+    "en": "monastic from the seaport Bharukaccha dreamt of his former wife Consumed by guilt, he believed his vows were broken and sought to leave the Sangha",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/35-Upali-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Upali",
+   "intercepted",
+   "him,",
+   "declaring:",
+   "dreams",
+   "lack",
+   "waking",
+   "volition.",
+   "With",
+   "conscious",
+   "intent,",
+   "e02",
+   "rule",
+   "broken.",
+   "profound",
+   "distinction",
+   "between",
+   "physical",
+   "reality",
+   "and",
+   "nocturnal",
+   "illusion.",
+   "eos"
+  ]
+ },
+ {
+  "img": "images/35-Upali-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Nephew",
+   "Ajj",
+   "Biological",
+   "Son",
+   "Vesali,",
+   "dyin",
+   "ntrusted",
+   "Ven.",
+   "Ajjuka",
+   "give",
+   "his",
+   "estate",
+   "only",
+   "the",
+   "chose",
+   "the",
+   "nephew.",
+   "heir",
+   "devoted",
+   "the",
+   "Three",
+   "rightfull",
+   "layman",
+   "Treasures.",
+   "Ajjuka",
+   "Nephew",
+   "entrusted"
+  ]
+ },
+ {
+  "img": "images/35-Upali-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     242,
+     56
+    ],
+    "bbox": [
+     734,
+     185,
+     1908,
+     483
+    ],
+    "shape": "box",
+    "en": "The biological son protested to Ven. Ananda. Without examining the underlying instructions, Ananda hastily declared Ven. Ajjuka fallen from monastic life for misdirecting the inheritance.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/35-Upali-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Upali",
+   "intervened,",
+   "questioning",
+   "Ananda",
+   "monastic",
+   "simply",
+   "follows",
+   "dying",
+   "man’s",
+   "exact",
+   "instructions,",
+   "what",
+   "fault",
+   "exists?”",
+   "Ananda",
+   "conceded:",
+   "fault",
+   "not",
+   "even",
+   "minor",
+   "offense",
+   "Gyr"
+  ]
+ },
+ {
+  "img": "images/35-Upali-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     254,
+     142
+    ],
+    "bbox": [
+     589,
+     460,
+     1078,
+     645
+    ],
+    "shape": "box",
+    "en": "Bharukaccha Act: Sexual dream.",
+    "conf": 91
+   },
+   {
+    "seed": [
+     496,
+     142
+    ],
+    "bbox": [
+     1600,
+     460,
+     2205,
+     645
+    ],
+    "shape": "box",
+    "en": "Verdict: Blameless (No waking volition).",
+    "conf": 91
+   },
+   {
+    "seed": [
+     208,
+     281
+    ],
+    "bbox": [
+     608,
+     919,
+     1078,
+     1101
+    ],
+    "shape": "box",
+    "en": "Vesali Nee Act: Disputed wealth.",
+    "conf": 50
+   },
+   {
+    "seed": [
+     497,
+     281
+    ],
+    "bbox": [
+     1597,
+     919,
+     2209,
+     1101
+    ],
+    "shape": "box",
+    "en": "Verdict: Blameless (Followed instructions).",
+    "conf": 93
+   },
+   {
+    "seed": [
+     117,
+     381
+    ],
+    "bbox": [
+     294,
+     1256,
+     2351,
+     1356
+    ],
+    "shape": "box",
+    "en": "True discipline demands evaluating intent, not just superficial appearances",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/35-Upali-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Hearing",
+   "these",
+   "rulings,",
+   "the",
+   "Buddha",
+   "praised",
+   "Upali’s",
+   "flawless",
+   "logic.",
+   "likened",
+   "Upali’s",
+   "legal",
+   "wisdom",
+   "tracing",
+   "invisible",
+   "foot-track",
+   "the",
+   "boundless",
+   "sky."
+  ]
+ },
+ {
+  "img": "images/35-Upali-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     293,
+     345
+    ],
+    "bbox": [
+     235,
+     1131,
+     2390,
+     1405
+    ],
+    "shape": "box",
+    "en": "Before re este Sai he Buddha uddha officially declared Upali foremost (etad-agga) among monastics who strictly uphold the Vinaya. The ancient vow of Harhsava was fulfilled.",
+    "conf": 37
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/35-Upali-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     234,
+     341
+    ],
+    "bbox": [
+     668,
+     1098,
+     1977,
+     1415
+    ],
+    "shape": "box",
+    "en": "Venerable Upali remains the eternal guardian of discipline. His journey teaches that true monastic law is guided by profound, compassionate insight, never rigid blindness.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "SAS"
+  ]
+ }
+]

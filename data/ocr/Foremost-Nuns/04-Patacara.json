@@ -1,0 +1,1191 @@
+[
+ {
+  "img": "images/04-Patacara-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     432,
+     337
+    ],
+    "bbox": [
+     866,
+     1114,
+     1775,
+     1451
+    ],
+    "shape": "box",
+    "en": "BTA atic ara The Story of Ven. Patacara Part 1: The Descent into Sarhsara An ancient tale of love, unfathomable loss, and the fragility of worldly attachments FORA ORL TAR DZ",
+    "conf": 37
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Patacara-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WAG)",
+   "she",
+   "heard",
+   "Buddha",
+   "Padumuttara",
+   "praise",
+   "nun",
+   "foremost",
+   "Vinaya",
+   "rules.",
+   "Making",
+   "extraordinary",
+   "offering,",
+   "she",
+   "aspired",
+   "this",
+   "exact",
+   "honor.",
+   "The",
+   "Buddha",
+   "prophesied",
+   "her",
+   "future",
+   "success.",
+   "LIS"
+  ]
+ },
+ {
+  "img": "images/04-Patacara-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ial",
+   "Cycling",
+   "Deva",
+   "and",
+   "human",
+   "realms,",
+   "she",
+   "was",
+   "named",
+   "Bhikkhuni,",
+   "daughter",
+   "King",
+   "Baranasi.",
+   "During",
+   "Buddha",
+   "Kassapa’s",
+   "era,",
+   "she",
+   "and",
+   "six",
+   "sisters",
+   "lived",
+   "chaste",
+   "lay",
+   "lives",
+   "for",
+   "20,000",
+   "years,",
+   "dedicating",
+   "vast",
+   "monastery.",
+   "NY,",
+   "ile",
+   "uman"
+  ]
+ },
+ {
+  "img": "images/04-Patacara-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     54,
+     58
+    ],
+    "bbox": [
+     165,
+     179,
+     1081,
+     536
+    ],
+    "shape": "box",
+    "en": "In Buddha Gotama’s time, she was reborn to wealthy Savatthi family. Coming of age, she fell deeply in love with humble household servant, rejecting her parents’ arranged betrothal to rich heir.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "all"
+  ]
+ },
+ {
+  "img": "images/04-Patacara-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "SY,",
+   "SZ,",
+   "She",
+   "del",
+   "ultimatum:",
+   "elope",
+   "end",
+   "the",
+   "affair.",
+   "True",
+   "her,",
+   "the",
+   "servant",
+   "took",
+   "his",
+   "meager",
+   "savings.",
+   "They",
+   "fled",
+   "stealthily",
+   "into",
+   "the",
+   "night,",
+   "seeking",
+   "shelter",
+   "desolate,",
+   "distant",
+   "village."
+  ]
+ },
+ {
+  "img": "images/04-Patacara-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Pregnant",
+   "and",
+   "fearful",
+   "the",
+   "desolate",
+   "village,",
+   "she",
+   "fled",
+   "toward",
+   "Savatthi",
+   "alone.",
+   "Her",
+   "timid",
+   "husband",
+   "caught",
+   "just",
+   "she",
+   "gave",
+   "birth",
+   "the",
+   "road.",
+   "With",
+   "the",
+   "child",
+   "safely",
+   "delivered,",
+   "they",
+   "returned.",
+   "SY,"
+  ]
+ },
+ {
+  "img": "images/04-Patacara-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "NZS",
+   "Pregnant",
+   "again,",
+   "history",
+   "repeated.",
+   "She",
+   "fled",
+   "for",
+   "her",
+   "parents’",
+   "home;",
+   "followed.",
+   "Torrential",
+   "rains",
+   "trapped",
+   "them",
+   "the",
+   "road.",
+   "she",
+   "gave",
+   "birth",
+   "the",
+   "storm,",
+   "desperately",
+   "built",
+   "rickety",
+   "shelter."
+  ]
+ },
+ {
+  "img": "images/04-Patacara-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Searching",
+   "for",
+   "grass",
+   "block",
+   "the",
+   "rain,",
+   "carelessly",
+   "pulled",
+   "tufts",
+   "from",
+   "earthen",
+   "mound,",
+   "disturbing",
+   "resting",
+   "cobra.",
+   "The",
+   "snake",
+   "bit",
+   "him,",
+   "and",
+   "fell",
+   "dead",
+   "the",
+   "spot.",
+   "WAS"
+  ]
+ },
+ {
+  "img": "images/04-Patacara-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Waiting",
+   "all",
+   "night",
+   "the",
+   "storm,",
+   "she",
+   "found",
+   "his",
+   "body",
+   "dawn.",
+   "“My",
+   "husband",
+   "met",
+   "his",
+   "death",
+   "all",
+   "account",
+   "me!”",
+   "she",
+   "wailed.",
+   "Carrying",
+   "her",
+   "infant",
+   "and",
+   "leading",
+   "her",
+   "toddler,",
+   "she",
+   "marched",
+   "toward",
+   "Savatthi."
+  ]
+ },
+ {
+  "img": "images/04-Patacara-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "swollen,",
+   "raging",
+   "stream",
+   "blocked",
+   "her",
+   "path.",
+   "Unable",
+   "carry",
+   "both",
+   "safely,",
+   "she",
+   "left",
+   "her",
+   "toddler",
+   "the",
+   "bank.",
+   "She",
+   "crossed,",
+   "wrapped",
+   "her",
+   "infant",
+   "securely",
+   "the",
+   "far",
+   "side,",
+   "and",
+   "waded",
+   "back."
+  ]
+ },
+ {
+  "img": "images/04-Patacara-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Midway",
+   "across,",
+   "hawk",
+   "swooped",
+   "down",
+   "upon",
+   "her",
+   "infant.",
+   "Frantic,",
+   "she",
+   "waved",
+   "scare",
+   "it.",
+   "The",
+   "toddler,",
+   "mistaking",
+   "her",
+   "gestures",
+   "call,",
+   "stepped",
+   "into",
+   "the",
+   "swift",
+   "current",
+   "and",
+   "was",
+   "Swept",
+   "away."
+  ]
+ },
+ {
+  "img": "images/04-Patacara-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Both",
+   "children",
+   "were",
+   "gone",
+   "before",
+   "she",
+   "reached",
+   "either",
+   "shore.",
+   "‘Both",
+   "two",
+   "sons",
+   "are",
+   "dead",
+   "and",
+   "gone!’",
+   "‘And",
+   "husband",
+   "too",
+   "had",
+   "died",
+   "the",
+   "way!’",
+   "Weeping,",
+   "she",
+   "continued",
+   "toward"
+  ]
+ },
+ {
+  "img": "images/04-Patacara-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     181,
+     350
+    ],
+    "bbox": [
+     542,
+     1121,
+     2099,
+     1408
+    ],
+    "shape": "box",
+    "en": "She arrived to find her childhood home destroyed by violent gale Townspeople pointed to single wisp of smoke: her parents and brother had been crushed and cremated on shared pyre",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Patacara-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     112,
+     138
+    ],
+    "bbox": [
+     261,
+     413,
+     1038,
+     1038
+    ],
+    "shape": "box",
+    "en": "‘What did you say?’ she whispered, then fainted. She awoke with her mind shattered Uncaring of decency, she stripped off her clothes in unutterable grief, wandering naked toward the pyre",
+    "conf": 78
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Patacara-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Shocked",
+   "the",
+   "dazed,",
+   "naked",
+   "woman,",
+   "crowds",
+   "mocked",
+   "her.",
+   "away,",
+   "mad",
+   "woman!",
+   "they",
+   "yelled,",
+   "throwing",
+   "dirt",
+   "and",
+   "stones.",
+   "She",
+   "became",
+   "known",
+   "Patacari—the",
+   "shameless",
+   "one—lost",
+   "entirely",
+   "her",
+   "devastating",
+   "sorrow."
+  ]
+ },
+ {
+  "img": "images/04-Patacara-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     116,
+     62
+    ],
+    "bbox": [
+     185,
+     188,
+     1243,
+     456
+    ],
+    "shape": "box",
+    "en": "Seeing her faculties had ripened, ripened, the Buddha stopped the crowd from turning the frantic woman away.",
+    "conf": 95
+   },
+   {
+    "seed": [
+     491,
+     151
+    ],
+    "bbox": [
+     1577,
+     493,
+     1898,
+     694
+    ],
+    "shape": "bubble",
+    "en": "Patacara, be mindful",
+    "conf": 46
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Patacara-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     82,
+     339
+    ],
+    "bbox": [
+     165,
+     1118,
+     1177,
+     1319
+    ],
+    "shape": "box",
+    "en": "Aware of her nakedness, ae she crouched down to hide until bystander threw her garment.",
+    "conf": 58
+   },
+   {
+    "seed": [
+     494,
+     347
+    ],
+    "bbox": [
+     1465,
+     1118,
+     2476,
+     1319
+    ],
+    "shape": "box",
+    "en": "Clothed and lucid, she drew near the Buddha.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "Hearing",
+   "words,",
+   "instantly",
+   "senses."
+  ]
+ },
+ {
+  "img": "images/04-Patacara-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     187,
+     142
+    ],
+    "bbox": [
+     155,
+     314,
+     1187,
+     794
+    ],
+    "shape": "box",
+    "en": "7 Dory Wy Spe veh al TAX aif tc My husband died;",
+    "conf": 30
+   },
+   {
+    "seed": [
+     521,
+     212
+    ],
+    "bbox": [
+     1455,
+     314,
+     2486,
+     794
+    ],
+    "shape": "bubble",
+    "en": "ATT SS hawk took my baby;",
+    "conf": 57
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Patacara-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     217,
+     49
+    ],
+    "bbox": [
+     559,
+     159,
+     2083,
+     264
+    ],
+    "shape": "box",
+    "en": "The Buddha explained the vastness of Samsara:",
+    "conf": 96
+   },
+   {
+    "seed": [
+     129,
+     375
+    ],
+    "bbox": [
+     403,
+     1227,
+     2238,
+     1375
+    ],
+    "shape": "box",
+    "en": "The tears you have shed for lost loved ones throughout the beginningless round of existences are greater than the waters of the four great oceans.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Patacara-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     502,
+     288
+    ],
+    "bbox": [
+     1613,
+     939,
+     2364,
+     1207
+    ],
+    "shape": "box",
+    "en": "Knowing this lack of protection, the wise person, restrained by morality, makes haste to clear the noble path to Nibbana.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Patacara-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     97,
+     80
+    ],
+    "bbox": [
+     245,
+     255,
+     717,
+     625
+    ],
+    "shape": "box",
+    "en": "Hearing this profound perspective, her grief abated.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     566,
+     224
+    ],
+    "bbox": [
+     1871,
+     638,
+     2453,
+     1256
+    ],
+    "shape": "box",
+    "en": "GN ela Sila SVAN 4 Patacara burnt up infinite defilements and was firmly established in Stream-entry 4 (Sotapatti-magga). magga). SS Se See) TAS",
+    "conf": 44
+   }
+  ],
+  "loose": [
+   "VAIN"
+  ]
+ },
+ {
+  "img": "images/04-Patacara-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     543,
+     93
+    ],
+    "bbox": [
+     1739,
+     255,
+     2397,
+     427
+    ],
+    "shape": "box",
+    "en": "As Stream-enterer she requested ordination",
+    "conf": 91
+   },
+   {
+    "seed": [
+     582,
+     196
+    ],
+    "bbox": [
+     1924,
+     612,
+     2397,
+     1111
+    ],
+    "shape": "box",
+    "en": "The Buddha directed her to nunnery, where she was formally admitted into the Sangha of female monastics.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "TAS"
+  ]
+ },
+ {
+  "img": "images/04-Patacara-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     544,
+     78
+    ],
+    "bbox": [
+     1739,
+     255,
+     2397,
+     493
+    ],
+    "shape": "box",
+    "en": "Washing her feet, she watched the first cup of water stop at short rt distance.",
+    "conf": 83
+   },
+   {
+    "seed": [
+     587,
+     217
+    ],
+    "bbox": [
+     1924,
+     691,
+     2397,
+     1111
+    ],
+    "shape": "box",
+    "en": "She realized: just like this stream, sentient beings are liable to die in their youth.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "WAN",
+   "Youth"
+  ]
+ },
+ {
+  "img": "images/04-Patacara-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     566,
+     78
+    ],
+    "bbox": [
+     1739,
+     255,
+     2397,
+     493
+    ],
+    "shape": "box",
+    "en": "second cup flowed slightly farther before stopp",
+    "conf": 73
+   },
+   {
+    "seed": [
+     583,
+     217
+    ],
+    "bbox": [
+     1924,
+     691,
+     2397,
+     1111
+    ],
+    "shape": "box",
+    "en": "She understood: just like this extending stream, sentient beings are liable to die in middle age.",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "Middle",
+   "Age"
+  ]
+ },
+ {
+  "img": "images/04-Patacara-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     326,
+     70
+    ],
+    "bbox": [
+     1075,
+     222,
+     2417,
+     314
+    ],
+    "shape": "box",
+    "en": "The had cup owed the farthest, then perished",
+    "conf": 31
+   },
+   {
+    "seed": [
+     326,
+     130
+    ],
+    "bbox": [
+     1075,
+     427,
+     2417,
+     582
+    ],
+    "shape": "box",
+    "en": "she reflected: all streams must end, just as all ving beings must eventually give up their tenure of life.",
+    "conf": 54
+   }
+  ],
+  "loose": [
+   "Old",
+   "Age"
+  ]
+ },
+ {
+  "img": "images/04-Patacara-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     254,
+     28
+    ],
+    "bbox": [
+     582,
+     86,
+     2060,
+     175
+    ],
+    "shape": "box",
+    "en": "From ihe the disappearing water, insight dawned.",
+    "conf": 44
+   },
+   {
+    "seed": [
+     191,
+     106
+    ],
+    "bbox": [
+     618,
+     331,
+     1296,
+     1144
+    ],
+    "shape": "bubble",
+    "en": "ea yl Impermanence (Anicca)",
+    "conf": 47
+   },
+   {
+    "seed": [
+     485,
+     217
+    ],
+    "bbox": [
+     1346,
+     331,
+     2007,
+     1141
+    ],
+    "shape": "bubble",
+    "en": "“Al Suffering (Dukkha)",
+    "conf": 51
+   },
+   {
+    "seed": [
+     359,
+     312
+    ],
+    "bbox": [
+     1032,
+     708,
+     1610,
+     1184
+    ],
+    "shape": "bubble",
+    "en": "Non-self (Anatta)",
+    "conf": 91
+   },
+   {
+    "seed": [
+     100,
+     381
+    ],
+    "bbox": [
+     317,
+     1237,
+     2324,
+     1392
+    ],
+    "shape": "box",
+    "en": "She clearly perceived ne three characteristics of all conditioned impermanence (anicca), suffering (dukkha), and non-self (gnatta).",
+    "conf": 40
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Patacara-27-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     151,
+     38
+    ],
+    "bbox": [
+     89,
+     89,
+     1504,
+     962
+    ],
+    "shape": "bubble",
+    "en": "hae TENN ED OES 4 Pondering deeply in Her dwelling, she placed lighted lamp. EIEIO ON OO ESI FFI",
+    "conf": 35
+   },
+   {
+    "seed": [
+     712,
+     316
+    ],
+    "bbox": [
+     1160,
+     592,
+     2552,
+     1395
+    ],
+    "shape": "bubble",
+    "en": "Wishing to EL Soa Wishing to extinguish it, she took pointed needle and pulled ine wick down into the oil.",
+    "conf": 30
+   }
+  ],
+  "loose": [
+   "WV."
+  ]
+ },
+ {
+  "img": "images/04-Patacara-28-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     247,
+     297
+    ],
+    "bbox": [
+     727,
+     979,
+     1881,
+     1253
+    ],
+    "shape": "box",
+    "en": "“More re worthwhile indeed is si single day’s life perceiving the arising and perishing of mind and body, than living 100 years blind to it. 2",
+    "conf": 59
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Patacara-29-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     152,
+     76
+    ],
+    "bbox": [
+     496,
+     212,
+     2146,
+     324
+    ],
+    "shape": "box",
+    "en": "Just as the physical flame her defilements vanished.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     220,
+     371
+    ],
+    "bbox": [
+     701,
+     1227,
+     1977,
+     1349
+    ],
+    "shape": "box",
+    "en": "At the end of the dicourse, Patacara became an Arahat, fully endowed with the four discriminative knowledges.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Patacara-30-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     279,
+     59
+    ],
+    "bbox": [
+     889,
+     188,
+     1752,
+     367
+    ],
+    "shape": "box",
+    "en": "Mastering the monastic rules she made wise judgments.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "Buddha",
+   "declared",
+   "her",
+   "etad-agga—the",
+   "foremost",
+   "among",
+   "all",
+   "his",
+   "female",
+   "monastic",
+   "disciples",
+   "the",
+   "knowledge",
+   "the",
+   "Vinaya.",
+   "The",
+   "her"
+  ]
+ }
+]

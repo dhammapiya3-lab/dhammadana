@@ -1,0 +1,1223 @@
+[
+ {
+  "img": "images/01-Kondanna-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     179,
+     99
+    ],
+    "bbox": [
+     291,
+     222,
+     2361,
+     608
+    ],
+    "shape": "box",
+    "en": "“The Karmic are Arc of Ven. ver Konda 100,000-Aeon Journey of Aspiration and Generosi Yaa 2",
+    "conf": 35
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Kondanna-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     84,
+     381
+    ],
+    "bbox": [
+     218,
+     1187,
+     754,
+     1399
+    ],
+    "shape": "box",
+    "en": "100,000 aeons ago: The initial aspiration under Buddha Padumuttara.",
+    "conf": 91
+   },
+   {
+    "seed": [
+     359,
+     365
+    ],
+    "bbox": [
+     1058,
+     1194,
+     1590,
+     1399
+    ],
+    "shape": "box",
+    "en": "91 aeons ago: The supreme cultivation under Buddha Vipassi.",
+    "conf": 79
+   },
+   {
+    "seed": [
+     587,
+     373
+    ],
+    "bbox": [
+     1898,
+     1194,
+     2433,
+     1399
+    ],
+    "shape": "box",
+    "en": "The Fortunate Aeon: Final realization under Buddha Gotama.",
+    "conf": 82
+   }
+  ],
+  "loose": [
+   "gina",
+   "ble",
+   "epochs",
+   "The",
+   "jour",
+   "spans",
+   "spans",
+   "unimaginable"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     384,
+     72
+    ],
+    "bbox": [
+     1190,
+     155,
+     2552,
+     469
+    ],
+    "shape": "box",
+    "en": "‘In Hamsavati, wealthy layman witnesses Buddha Padumuttara declare monastic foremost in realizing the Four Truths. profound aspiration takes root: to become the fi rst to awaken under future Buddha.",
+    "conf": 83
+   }
+  ],
+  "loose": [
+   "AS,",
+   "(6)"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     401,
+     63
+    ],
+    "bbox": [
+     1190,
+     155,
+     2549,
+     473
+    ],
+    "shape": "box",
+    "en": "lofty designation requires extraordinary merit. For seven successive days, the layman offers grand feast and fine Vanga robes to 100,000 monastics, laying the required karmic foundation nforhisvow. for his vow.",
+    "conf": 60
+   }
+  ],
+  "loose": [
+   "thi"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Buddha",
+   "unhindered",
+   "intellect",
+   "peers",
+   "across",
+   "100,000",
+   "aeons",
+   "The",
+   "prophecy",
+   "sealed:",
+   "Under",
+   "Buddha",
+   "Gotama,",
+   "this",
+   "layman",
+   "will",
+   "become",
+   "Ven",
+   "the",
+   "first",
+   "realize",
+   "the",
+   "OSS",
+   "Buddha"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "aeons",
+   "ago,",
+   "the",
+   "future",
+   "reborn",
+   "Mahakala.",
+   "Buddha",
+   "Vipassi",
+   "arises.",
+   "King",
+   "Bandhuma",
+   "monopolizes",
+   "all",
+   "offerings",
+   "the",
+   "Sangha,",
+   "forbidding",
+   "citize",
+   "from",
+   "their",
+   "merit.",
+   "strictly",
+   "ing",
+   "rit.",
+   "own"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Merit",
+   "cannot",
+   "monopolized.",
+   "Citizens",
+   "threaten",
+   "rebellion",
+   "for",
+   "their",
+   "right",
+   "serve",
+   "the",
+   "Buddha.",
+   "fierce",
+   "tug-of-war",
+   "for",
+   "spiritual",
+   "access",
+   "erupts",
+   "between",
+   "the",
+   "King",
+   "and",
+   "the",
+   "General’s",
+   "civilian",
+   "forces.",
+   "ANS",
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "After",
+   "negotiating",
+   "down",
+   "seven",
+   "years,",
+   "the",
+   "King",
+   "concentrates",
+   "his",
+   "grand",
+   "offerings",
+   "into",
+   "seven",
+   "days.",
+   "Tearfully,",
+   "relinquishes",
+   "his",
+   "monopoly,",
+   "allowing",
+   "the",
+   "citizens",
+   "their",
+   "vital",
+   "turn",
+   "practice",
+   "generosity.",
+   "from"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Mahakala",
+   "proposes",
+   "offering",
+   "the",
+   "tender,",
+   "newly",
+   "ripened",
+   "grain",
+   "milk",
+   "rice.",
+   "refuses,",
+   "fearing",
+   "the",
+   "loss",
+   "harvest.",
+   "They",
+   "physically",
+   "divide",
+   "their",
+   "acres",
+   "separate",
+   "their",
+   "mindsets",
+   "abundance",
+   "and",
+   "scarcity."
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Mahakala",
+   "establishes",
+   "lentless",
+   "cycle",
+   "agga-dana",
+   "(first-fruit",
+   "offerings).",
+   "repeatedly",
+   "offers",
+   "the",
+   "very",
+   "first",
+   "yield",
+   "nine",
+   "distinct",
+   "agricultural",
+   "stages,",
+   "from",
+   "tender",
+   "grain",
+   "granary",
+   "SO)",
+   "storage.",
+   "(FA",
+   "WAS"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Supreme",
+   "generosity",
+   "does",
+   "not",
+   "deplete;",
+   "exponentially",
+   "multiplies.",
+   "Whenever",
+   "extracted",
+   "the",
+   "tender",
+   "grain",
+   "for",
+   "the",
+   "Sangha,",
+   "the",
+   "ears",
+   "miraculously",
+   "refilled.",
+   "His",
+   "harvest",
+   "continuously",
+   "grew",
+   "larger",
+   "than",
+   "before."
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Nearby,",
+   "King",
+   "Suddhodana",
+   "presented",
+   "the",
+   "wealthy",
+   "Brahmin",
+   "prodigy,",
+   "newborn",
+   "Bodhisatta",
+   "108",
+   "Brahmins,",
+   "seeking",
+   "mastered",
+   "the",
+   "Vedas.",
+   "prophecies",
+   "from",
+   "eight",
+   "wise",
+   "men."
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Seven",
+   "paths.",
+   "Universal",
+   "Monarch",
+   "Buddha.",
+   "Kondanna:",
+   "One",
+   "path.",
+   "Recognizing",
+   "the",
+   "sole",
+   "marks,",
+   "boldly",
+   "predicted",
+   "absolute",
+   "Buddhahood",
+   "nna:",
+   "Two"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "age",
+   "29,",
+   "the",
+   "recognized",
+   "the",
+   "limits",
+   "royal",
+   "pleasure.",
+   "rode",
+   "Kanthaka",
+   "the",
+   "Anoma",
+   "river,",
+   "beginning",
+   "the",
+   "great",
+   "renunciation"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-16-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "elder",
+   "Brahmins",
+   "passed.",
+   "recruited",
+   "their",
+   "sons.",
+   "Four",
+   "joined",
+   "him,",
+   "donning",
+   "bright",
+   "orange",
+   "robes.",
+   "Together",
+   "they",
+   "formed",
+   "the",
+   "Group-of-Five,",
+   "awaiting",
+   "the",
+   "Bodhisatta’s",
+   "enlightenment."
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-17-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "For",
+   "six",
+   "years",
+   "Uruvela,",
+   "the",
+   "Bodhisatta",
+   "endured",
+   "extreme",
+   "austerity,",
+   "consuming",
+   "mere",
+   "single",
+   "grains.",
+   "The",
+   "Group-of-Five",
+   "attended",
+   "him",
+   "devotedly,",
+   "anticipating",
+   "his",
+   "imminent",
+   "awakening.",
+   "TF,",
+   "ISS"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-18-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "[The",
+   "Middle",
+   "Way]:",
+   "Realizing",
+   "austerity",
+   "fails,",
+   "the",
+   "Bodhisatta",
+   "consumes",
+   "normal",
+   "food.",
+   "[The",
+   "Disillusioned",
+   "and",
+   "frustrated,",
+   "the",
+   "Group-of-Five",
+   "depart",
+   "for",
+   "Isipatana."
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Strengthened",
+   "milk",
+   "rice,",
+   "sat",
+   "beneath",
+   "the",
+   "Maha",
+   "Bodhi",
+   "tree.",
+   "Defeating",
+   "Mara",
+   "before",
+   "sunset,",
+   "resolved",
+   "achieve",
+   "Buddhahood",
+   "that",
+   "very",
+   "day.",
+   "ita"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Last",
+   "Watch:",
+   "Insight",
+   "into",
+   "dependent",
+   "origination.",
+   "attained",
+   "unique",
+   "omniscience.",
+   "First",
+   "Watch:",
+   "Knowledge",
+   "previous",
+   "lives.",
+   "Middle",
+   "Watch:",
+   "The",
+   "divine",
+   "eye."
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Requested",
+   "Brahma",
+   "teach,",
+   "the",
+   "Buddha",
+   "considered",
+   "his",
+   "audience.",
+   "Recalling",
+   "their",
+   "past",
+   "devotion,",
+   "chose",
+   "the",
+   "the",
+   "Group-of-Five",
+   "hear",
+   "the",
+   "Dhamma",
+   "first."
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Agreement:",
+   "will",
+   "absolutely",
+   "not",
+   "serve",
+   "him.",
+   "The",
+   "Reality:",
+   "His",
+   "profound",
+   "presence",
+   "broke",
+   "their",
+   "stubborn",
+   "resolve.",
+   "They",
+   "his",
+   "feet",
+   "and",
+   "prepared",
+   "his",
+   "seat.",
+   "instantly",
+   "washed"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "delivered",
+   "the",
+   "first",
+   "discourse.",
+   "Kondafifia",
+   "penetrated",
+   "the",
+   "four",
+   "truths",
+   "first.",
+   "The",
+   "Buddha",
+   "declared:",
+   "Kondafifia",
+   "has",
+   "penetrated",
+   "the",
+   "truths!",
+   "became"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "After",
+   "illuminating",
+   "the",
+   "land",
+   "with",
+   "thousands",
+   "new",
+   "noble",
+   "ones",
+   "the",
+   "Buddha",
+   "declared:",
+   "monastic",
+   "disciples",
+   "long",
+   "standing",
+   "the",
+   "foremost."
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Rattannu:",
+   "Knower",
+   "Nights",
+   "Time:",
+   "Senior-most",
+   "monastic.",
+   "Insight:",
+   "Earliest",
+   "realizer",
+   "the",
+   "four",
+   "truths.",
+   "Awareness:",
+   "First",
+   "Arahat",
+   "with",
+   "supreme",
+   "mastery",
+   "over",
+   "time.",
+   "ness:"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-27-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     110,
+     375
+    ],
+    "bbox": [
+     334,
+     1197,
+     2314,
+     1395
+    ],
+    "shape": "box",
+    "en": "In the Buddha’s assembly, Chief Disciples Sariputta and Moggallana flanked the central Dhamma throne. Behind them sat Venerable Afififidsi the very first to comprehend the Four Noble Truths, his seniority casting profound, inescapable presence over the gathering.",
+    "conf": 41
+   }
+  ],
+  "loose": [
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-28-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     111,
+     367
+    ],
+    "bbox": [
+     334,
+     1197,
+     2314,
+     1395
+    ],
+    "shape": "box",
+    "en": "The Chief Disciples felt shy before his immense spiritual gravity, viewing him as radiant mass of fire. Meanwhile, Devas and humans flocked to honour him, interrupting his blissful fruition-attainment. To ease the assembly’s tension, he sought absolute solitude",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "TAS"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-29-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     111,
+     364
+    ],
+    "bbox": [
+     334,
+     1197,
+     2314,
+     1395
+    ],
+    "shape": "box",
+    "en": "Passing his earthly legacy acy to his nephew Punna, Kondajifia approached the €xalted One. “Exalted Bud arural rural residence is unsuitable. Permit me to live in the Chaddanta forest.” The Buddha silently consented to his noble departure.",
+    "conf": 34
+   }
+  ],
+  "loose": [
+   "WAG"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-30-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Lake",
+   "Mandakini,",
+   "8,000",
+   "ancient",
+   "elephants",
+   "rejoiced",
+   "the",
+   "arrival",
+   "fertile",
+   "field",
+   "merit.",
+   "prevent",
+   "the",
+   "Elder",
+   "from",
+   "returning",
+   "with",
+   "unwashed",
+   "bowl,",
+   "they",
+   "organized",
+   "strict,",
+   "unselfish",
+   "roster",
+   "service."
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-31-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     512,
+     333
+    ],
+    "bbox": [
+     1570,
+     1045,
+     2536,
+     1428
+    ],
+    "shape": "bubble",
+    "en": "Lake Mandakini was fifty-league paradise. Crystal waters were ringed by perfectly concentric half-league bands: vibrant lotuses, fragrant red paddy, towering sugarcane, and endless groves of bananas, jackfruit, and mangoes.",
+    "conf": 79
+   }
+  ],
+  "loose": [
+   "NOY"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-32-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     339,
+     160
+    ],
+    "bbox": [
+     1041,
+     443,
+     1610,
+     1008
+    ],
+    "shape": "bubble",
+    "en": "The elephants executed flawless daily cycle. cycle. The duty-elephant kin ed pine fire, heated river stones, warmed the bathing basins, fashioned firewood toothbrushes, and swept the meditation hut with branch brooms",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Kondanna-33-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     507,
+     88
+    ],
+    "bbox": [
+     1557,
+     228,
+     2533,
+     625
+    ],
+    "shape": "bubble",
+    "en": "Sustenance came from nature and the divine. Elephants offered sun-baked lotus-honey, drum- thick lotus milk, Ik, and stone-crushed sugarcane cakes. From the Keldsa hill, Deva Nagadatta provided pure milk food infused with sweet lotus pollen.",
+    "conf": 60
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Kondanna-34-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     212,
+     333
+    ],
+    "bbox": [
+     542,
+     1051,
+     2109,
+     1392
+    ],
+    "shape": "bubble",
+    "en": "After twelve years, Kondajifia realized his life process was ending Grateful to his elephant caretakers, he resolved to pass away in their forest, but first projected himself back to Rajagaha for final farewell",
+    "conf": 39
+   }
+  ],
+  "loose": [
+   "all"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-35-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     88,
+     79
+    ],
+    "bbox": [
+     139,
+     179,
+     1451,
+     661
+    ],
+    "shape": "bubble",
+    "en": "At Veluvana monastery, Kondafifia bowed, tightly gripping and kissing the Buddha’s feet. “Exalted Buddha! am Kondafinia; Gracious One! am Kondafiia.” The assembly watched this profound unprecedented display in reverent silence",
+    "conf": 37
+   }
+  ],
+  "loose": [
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-36-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     86,
+     318
+    ],
+    "bbox": [
+     225,
+     1051,
+     1600,
+     1309
+    ],
+    "shape": "box",
+    "en": "Venerable Vangisa spontaneously sang his praises, immortalizing Kondaijifia's virtues: the Awakened follower (Buddhanubuddha), master of the threefold knowledge (Tevijja), and reader of minds (Ceto-pariyaya-kovida), parivaye who fully inherited the supermundane ermundane legacy.",
+    "conf": 33
+   }
+  ],
+  "loose": [
+   "ISS"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-37-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“My",
+   "first",
+   "obeisance",
+   "was",
+   "the",
+   "Deer",
+   "Park;",
+   "this",
+   "last.”",
+   "Standing",
+   "the",
+   "doorway,",
+   "admonished",
+   "the",
+   "weeping",
+   "crowd:",
+   "“Do",
+   "not",
+   "lament.",
+   "There",
+   "none",
+   "among",
+   "the",
+   "conditioned",
+   "who",
+   "will",
+   "not",
+   "come",
+   "destruction.”",
+   "Wud"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-38-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     140,
+     319
+    ],
+    "bbox": [
+     179,
+     1051,
+     1471,
+     1342
+    ],
+    "shape": "box",
+    "en": "Returning Chaddanta, he entered Parinibbana IS before 2 dawn. Unseasonal flowers burst 2 open across the Himavanta. At sunrise, the duty-elephant ty-elephant discovered his breathless body and unleashed mournful ful trumpet that echoed across the world.",
+    "conf": 65
+   }
+  ],
+  "loose": [
+   "MY,"
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-39-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     118,
+     100
+    ],
+    "bbox": [
+     307,
+     235,
+     883,
+     1296
+    ],
+    "shape": "bubble",
+    "en": "Deva Vissakamma forged nine-league pinnacled coffin. cosmic relay ascended the heavens: Elephants bore him first, passing the coffin to Sky Devas, Cloud Devas, Tavatimsa Devas, and finally the Brahmas, before returning him to earth.",
+    "conf": 79
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Kondanna-40-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     356,
+     55
+    ],
+    "bbox": [
+     1035,
+     182,
+     2509,
+     469
+    ],
+    "shape": "box",
+    "en": "Following the nine-league sandalwood pyre, his relics emerged pure as jasmine buds. The Buddha received them, stretching his hand toward the earth. Instantly, colossal silver-bubble cetiya erupted from the ground, forever enshrining the Arahat's legacy.",
+    "conf": 86
+   }
+  ],
+  "loose": []
+ }
+]

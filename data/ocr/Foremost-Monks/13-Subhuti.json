@@ -1,0 +1,451 @@
+[
+ {
+  "img": "images/13-Subhuti-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "(al",
+   "(YES",
+   "Venerable",
+   "Foremost",
+   "Twofold",
+   "Virtue.",
+   "Chronicle",
+   "Non-Conflict",
+   "and",
+   "Loving-Kindness.",
+   "iT)"
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     259,
+     332
+    ],
+    "bbox": [
+     625,
+     1075,
+     2027,
+     1442
+    ],
+    "shape": "box",
+    "en": "100,000 aeons ago, ascetic Nanda led 44,000 followers. Buddha Padumuttara ara visited them, and all 44,000 attained ed Arahatship. Araha Nanda, however, was mesmerized by teaching monk. He did not attain awakening, but found his ultimate elles,",
+    "conf": 48
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Subhuti-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "NOW.",
+   "Witnessing",
+   "the",
+   "monk’s",
+   "purity,",
+   "Nanda",
+   "made",
+   "powerful",
+   "aspiration:",
+   "become",
+   "the",
+   "foremost",
+   "disciple",
+   "twofold",
+   "virtue",
+   "under",
+   "future",
+   "Buddha.",
+   "Buddha",
+   "Padumuttara",
+   "prophesied",
+   "his",
+   "success.",
+   "Nanda",
+   "was",
+   "later",
+   "reborn",
+   "the",
+   "Brahma",
+   "realm."
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     144,
+     49
+    ],
+    "bbox": [
+     116,
+     145,
+     1650,
+     598
+    ],
+    "shape": "box",
+    "en": "later, reborn as Subhiti in Savattht. His uncle, Anathapindika, purchased the Jetavana grove with gold coins and dedicated it to our Buddha. Hearing the Dhamma at this dedication, Subhiti’s faith blossomed into ordination.",
+    "conf": 39
+   }
+  ],
+  "loose": [
+   "SSS",
+   "AC)"
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Monk",
+   "Subhuti",
+   "mastered",
+   "ascetic",
+   "practices.",
+   "dwelling",
+   "deep",
+   "loving-kindness",
+   "meditation",
+   "(metta-jhana),",
+   "developed",
+   "profound",
+   "insight",
+   "Through",
+   "this",
+   "gentle",
+   "path,",
+   "reached",
+   "ultimate",
+   "becoming",
+   "Arahat.",
+   "KES",
+   "monastic",
+   "rules",
+   "liberation,"
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "SSS",
+   "Buddha",
+   "Ven",
+   "bhiti",
+   "foremost",
+   "among",
+   "all",
+   "disc",
+   "two",
+   "distinct",
+   "Living",
+   "detached",
+   "from",
+   "defilements",
+   "(Arana-vihari).",
+   "worthy",
+   "the",
+   "best",
+   "offerings",
+   "(Dakkhineyya).",
+   "ples",
+   "The",
+   "declared"
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     152,
+     357
+    ],
+    "bbox": [
+     212,
+     1141,
+     2437,
+     1415
+    ],
+    "shape": "box",
+    "en": "Honor 1: Arana-vihari (Non-Lamenter). (Non-Lamenter). Subhiti lived in supreme bliss, completely free from passion and hatred. He avoided all worldly conflicts, dwelling in the pure, unshakeable peace of internal li beration.",
+    "conf": 74
+   }
+  ],
+  "loose": [
+   "BSS",
+   "WAS"
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     275,
+     24
+    ],
+    "bbox": [
+     797,
+     36,
+     1852,
+     169
+    ],
+    "shape": "box",
+    "en": "Teach Teaching ing Methods",
+    "conf": 96
+   },
+   {
+    "seed": [
+     98,
+     351
+    ],
+    "bbox": [
+     126,
+     1131,
+     1230,
+     1405
+    ],
+    "shape": "box",
+    "en": "Others: Person-Focused. Praises or censures individuals Risks flattery or humiliatio",
+    "conf": 90
+   },
+   {
+    "seed": [
+     486,
+     348
+    ],
+    "bbox": [
+     1422,
+     1131,
+     2523,
+     1405
+    ],
+    "shape": "box",
+    "en": "Subhiti Subhuti: ubhiti: Dhamma-Focused. Speaks onl only of the ultimate objective truth. Pure, objective, nd entirely free from conflict.",
+    "conf": 36
+   }
+  ],
+  "loose": [
+   "NZ,",
+   "LAS"
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Six",
+   "Factors",
+   "Non-Conflict:",
+   "Walking",
+   "the",
+   "Middle",
+   "Path,",
+   "objective",
+   "Dhamma.",
+   "Cultivating",
+   "internal",
+   "happiness.",
+   "Speaking",
+   "truthful,",
+   "profitable",
+   "words",
+   "without",
+   "Avoiding",
+   "over",
+   "foreign",
+   "Walking",
+   "the",
+   "Teaching",
+   "Speaking"
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     187,
+     22
+    ],
+    "bbox": [
+     258,
+     36,
+     2453,
+     420
+    ],
+    "shape": "bubble",
+    "en": "Honor 2 Dakkh ineyya (Worthy of Gifts). When receiving iving alms, Subhiti sought ht to multiply the spiritual tual benefits for his supporters. rters He transformed simple le daily routine ine into fae] profound ahs} 5 act Oo ae} of aL, grace. oO",
+    "conf": 30
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Subhuti-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "accepting",
+   "food,",
+   "paused",
+   "enter",
+   "absorption",
+   "(metta-jhana).",
+   "His",
+   "radiant",
+   "compassion",
+   "softened",
+   "the",
+   "donors’",
+   "hearts,",
+   "purifying",
+   "their",
+   "act",
+   "giving",
+   "and",
+   "their",
+   "karmic",
+   "reward.",
+   "Before",
+   "loving-kindness"
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     405,
+     26
+    ],
+    "bbox": [
+     932,
+     46,
+     1716,
+     179
+    ],
+    "shape": "box",
+    "en": "Purifying the Alms",
+    "conf": 97
+   }
+  ],
+  "loose": [
+   "Ven.",
+   "Sariputta:",
+   "Purified",
+   "the",
+   "Object",
+   "(Himself).",
+   "Attained",
+   "the",
+   "cessation",
+   "feeling",
+   "before",
+   "receiving.",
+   "Ven.",
+   "Purified",
+   "the",
+   "Act",
+   "(The",
+   "Donor).",
+   "Radiated",
+   "loving-kindness",
+   "inspire",
+   "the",
+   "donor’s",
+   "tender",
+   "respect."
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     227,
+     313
+    ],
+    "bbox": [
+     552,
+     989,
+     2096,
+     1385
+    ],
+    "shape": "box",
+    "en": "Ven. Subhuti’s legacy proves that supreme awakening is not merely personal liberation. Through unwavering loving-kindness and objective truth, monk becomes perfect vessel of peace and merit for the entire world.",
+    "conf": 67
+   }
+  ],
+  "loose": []
+ }
+]

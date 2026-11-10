@@ -1,2 +1,7 @@
 자동 검수: 문제 의심 0 곳
-cp: cannot stat 'out/img/*/*/s/*.jpg': No such file or directory
+R2 에 올림: 46 개 / 한글판 이야기 32 편
+공개 주소 확인: 404 27150바이트
+41-Mogharaja.htm: 그림 53 상자 28 상자밖글 803
+41-Mogharaja
+13-Singalakamata.htm: 그림 13 상자 20 상자밖글 4
+13-Singalakamata

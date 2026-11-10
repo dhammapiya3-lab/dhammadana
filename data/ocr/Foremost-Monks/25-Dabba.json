@@ -1,0 +1,533 @@
+[
+ {
+  "img": "images/25-Dabba-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Master",
+   "Logistics",
+   "The",
+   "Karmic",
+   "and",
+   "Miracles",
+   "Venerable",
+   "Dabba",
+   "VAY",
+   "The"
+  ]
+ },
+ {
+  "img": "images/25-Dabba-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     540,
+     118
+    ],
+    "bbox": [
+     1663,
+     198,
+     2453,
+     1280
+    ],
+    "shape": "box",
+    "en": "Ghe Ancient Aspiration 100,000 aeons ago, worthy layman witnessed Buddha Padumuttara praise monk for organizing monastic dwellings. Ne made profound vow to achieve this exact foremost title in the future",
+    "conf": 85
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/25-Dabba-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Mountain",
+   "Return",
+   "During",
+   "Buddha",
+   "Kassapa’s",
+   "era,",
+   "seven",
+   "ascetics",
+   "climbed",
+   "peak",
+   "and",
+   "pushed",
+   "away",
+   "the",
+   "ladder,",
+   "risking",
+   "death",
+   "for",
+   "Awakening.",
+   "Two",
+   "succeeded.",
+   "Five",
+   "remained",
+   "the",
+   "cycle",
+   "rebirth."
+  ]
+ },
+ {
+  "img": "images/25-Dabba-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     344,
+     181
+    ],
+    "bbox": [
+     1022,
+     598,
+     1620,
+     734
+    ],
+    "shape": "bubble",
+    "en": "Pabbate yya",
+    "conf": 71
+   },
+   {
+    "seed": [
+     364,
+     238
+    ],
+    "bbox": [
+     1022,
+     764,
+     1617,
+     903
+    ],
+    "shape": "bubble",
+    "en": "Bahiya",
+    "conf": 92
+   },
+   {
+    "seed": [
+     353,
+     285
+    ],
+    "bbox": [
+     1025,
+     932,
+     1617,
+     1078
+    ],
+    "shape": "bubble",
+    "en": "Rajagaha sane",
+    "conf": 32
+   }
+  ],
+  "loose": [
+   "The",
+   "Fates",
+   "the",
+   "Five",
+   "Ascetics",
+   "King",
+   "Pukkusati",
+   "Sabhiya",
+   "Ven.",
+   "Bahiya",
+   "Kumara",
+   "Kassapa",
+   "Anupiya",
+   "Ven.",
+   "Dabba",
+   "Anupiya"
+  ]
+ },
+ {
+  "img": "images/25-Dabba-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Miraculous",
+   "Final",
+   "Birth",
+   "His",
+   "mother",
+   "died",
+   "before",
+   "delivery.",
+   "When",
+   "her",
+   "pyre",
+   "was",
+   "lit,",
+   "the",
+   "heat",
+   "burst",
+   "the",
+   "womb.",
+   "Lifted",
+   "past",
+   "merit,",
+   "the",
+   "infant",
+   "flew",
+   "safely",
+   "onto",
+   "pile",
+   "dabba",
+   "grass",
+   "Aly"
+  ]
+ },
+ {
+  "img": "images/25-Dabba-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Entering",
+   "the",
+   "Sangha",
+   "age",
+   "seven,",
+   "enthralled",
+   "Gotama",
+   "Buddha",
+   "the",
+   "Mango",
+   "Grove,",
+   "young",
+   "Dabba",
+   "requested",
+   "ordination.",
+   "The",
+   "Buddha",
+   "immediately",
+   "instructed",
+   "elder",
+   "monk",
+   "admit",
+   "the",
+   "boy."
+  ]
+ },
+ {
+  "img": "images/25-Dabba-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Clean-shaven",
+   "First",
+   "circle",
+   "Full",
+   "Arahat",
+   "Stream-entry",
+   "Third",
+   "circle",
+   "Second",
+   "circle",
+   "Non-returning",
+   "Once-returning",
+   "The",
+   "Stages",
+   "Awakening",
+   "Ordination",
+   "and",
+   "ultimate",
+   "Awakening",
+   "occurred",
+   "simultaneously.",
+   "Stages",
+   "‘Awakening"
+  ]
+ },
+ {
+  "img": "images/25-Dabba-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WWANY",
+   "Allocating",
+   "The",
+   "Divine",
+   "Administrator",
+   "Allocating",
+   "living",
+   "places",
+   "Despite",
+   "his",
+   "youth,",
+   "Dabba",
+   "volunteered",
+   "serve",
+   "the",
+   "Sangha.",
+   "The",
+   "Buddha",
+   "Directing",
+   "monks",
+   "assigned",
+   "him",
+   "dual",
+   "task:",
+   "alms",
+   "supporters",
+   "village"
+  ]
+ },
+ {
+  "img": "images/25-Dabba-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     526,
+     357
+    ],
+    "bbox": [
+     631,
+     1137,
+     2010,
+     1432
+    ],
+    "shape": "bubble",
+    "en": "SQ AH Guiding ai GO? C2 Guiding Lights ol Visiting monks demanded obscure living quarters at odd hours. Dabba manifested mind-made replicas of himself and turned his fingers into glowing lamps to guide them through the dark.",
+    "conf": 55
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/25-Dabba-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     496,
+     75
+    ],
+    "bbox": [
+     1187,
+     205,
+     2437,
+     569
+    ],
+    "shape": "bubble",
+    "en": "The Foremost Title Honoring his flawless management of eighteen monastic compounds, the Buddha officially declared Ven. Dabba etad-agga—the foremost disciple in arranging living places. The ancient vow was fulfilled.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "SSS"
+  ]
+ },
+ {
+  "img": "images/25-Dabba-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     415,
+     170
+    ],
+    "bbox": [
+     1263,
+     522,
+     1835,
+     998
+    ],
+    "shape": "box",
+    "en": "The Karmic Stain Ven. Dabba faced false slander of misconduct from Jealous monastics. This was not failure of his virtue, but the unavoidable echo of slandering an Arahat 91 aeons ago.",
+    "conf": 75
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/25-Dabba-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Time",
+   "Departure",
+   "Reviewing",
+   "his",
+   "life-faculty,",
+   "Ven.",
+   "Dabba",
+   "realized",
+   "his",
+   "time",
+   "was",
+   "ending.",
+   "approached",
+   "the",
+   "Buddha",
+   "bid",
+   "final",
+   "farewell,",
+   "moving",
+   "the",
+   "unawakened",
+   "monastics",
+   "tears."
+  ]
+ },
+ {
+  "img": "images/25-Dabba-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "inal",
+   "Miracles",
+   "Commanded",
+   "the",
+   "Buddha",
+   "dispel",
+   "any",
+   "lingering",
+   "doubts",
+   "from",
+   "the",
+   "slander,",
+   "Ven.",
+   "Dabba",
+   "displayed",
+   "breathtaking",
+   "miracles—multiplying",
+   "his",
+   "form",
+   "and",
+   "vanishing—proving",
+   "his",
+   "absolute",
+   "purity.",
+   "Final",
+   "(Ce"
+  ]
+ },
+ {
+  "img": "images/25-Dabba-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Heat",
+   "Element",
+   "Floating",
+   "mind-made",
+   "earth,",
+   "entered",
+   "absorption",
+   "using",
+   "heat",
+   "device",
+   "(tejo-kasina).",
+   "Desiring",
+   "complete",
+   "release,",
+   "his",
+   "body",
+   "burst",
+   "ash",
+   "remained.",
+   "Parinibbana",
+   "into",
+   "world-destroying"
+  ]
+ },
+ {
+  "img": "images/25-Dabba-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Complete",
+   "Circle",
+   "From",
+   "aspiration",
+   "made",
+   "100,000",
+   "aeons",
+   "ago,",
+   "through",
+   "fierce",
+   "mountain",
+   "asceticism",
+   "and",
+   "tireless",
+   "service",
+   "seven-year-old",
+   "Arahat,",
+   "Ven.",
+   "Dabba’s",
+   "karmic",
+   "journey",
+   "ended",
+   "total",
+   "liberation.",
+   "VAS"
+  ]
+ }
+]

@@ -1,0 +1,1905 @@
+[
+ {
+  "img": "images/05-Anuruddha-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     252,
+     284
+    ],
+    "bbox": [
+     704,
+     873,
+     1944,
+     1237
+    ],
+    "shape": "box",
+    "en": "The Roots of the Divine IV ine Eye The Life of Venerable ie) car) Anuruddha far)",
+    "conf": 40
+   }
+  ],
+  "loose": [
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Al}",
+   "100,000",
+   "aeons",
+   "ago,",
+   "unknown",
+   "householder",
+   "heard",
+   "Buddha",
+   "Padumuttara",
+   "declare",
+   "monk",
+   "foremost",
+   "the",
+   "divine",
+   "nna",
+   "eye",
+   "(dibba-cakkhu-abhi",
+   "profound",
+   "aspiration",
+   "arose:",
+   "shall",
+   "achieve",
+   "this",
+   "future",
+   "Buddha’s",
+   "era.",
+   "aly"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "plant",
+   "the",
+   "seed",
+   "his",
+   "immense",
+   "aspiration,",
+   "the",
+   "householder",
+   "invited",
+   "the",
+   "Buddha",
+   "and",
+   "the",
+   "Sangha.",
+   "For",
+   "seven",
+   "consecutive",
+   "days,",
+   "performed",
+   "great",
+   "alms",
+   "giving",
+   "(dana)",
+   "excellent",
+   "robes",
+   "and",
+   "meals.",
+   "NAS",
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Kneeling,",
+   "expressed",
+   "his",
+   "true",
+   "goal:",
+   "“Exalted",
+   "Buddha,",
+   "offer",
+   "these",
+   "not",
+   "for",
+   "divine",
+   "luxury",
+   "human",
+   "pleasure.",
+   "wish",
+   "the",
+   "foremost",
+   "among",
+   "those",
+   "with",
+   "the",
+   "divine",
+   "eye",
+   "Future",
+   "Dispensation",
+   "aly"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     251,
+     66
+    ],
+    "bbox": [
+     605,
+     188,
+     2043,
+     582
+    ],
+    "shape": "box",
+    "en": "Buddha Padumuttara surveyed the future and prophesied: “In 100,000 aeons, Buddha Gotama will appear. You shall be Anuruddha, the foremost of those ose possessing the psychic power of the divine eye.",
+    "conf": 60
+   }
+  ],
+  "loose": [
+   "SSS"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     212,
+     314
+    ],
+    "bbox": [
+     688,
+     1022,
+     1994,
+     1356
+    ],
+    "shape": "box",
+    "en": "After the ane Buddha’s Parinibbana, the householder seholder built massive golden shrine. Seeking to prepare his mind for the divine eye, he asked the Sangha for guidance. The monks replied “The gift of Nal should be given.”",
+    "conf": 35
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Anuruddha-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     238,
+     314
+    ],
+    "bbox": [
+     688,
+     1022,
+     1994,
+     1356
+    ],
+    "shape": "box",
+    "en": "He manifested an ocean of illumination. He offered 1,000 massive trees bearing 1,000 torches each, followed by 1,000 medium trees, and 1,000 small trees. His gifts of light were innumerable",
+    "conf": 94
+   }
+  ],
+  "loose": [
+   "INS"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     124,
+     127
+    ],
+    "bbox": [
+     387,
+     410,
+     2295,
+     668
+    ],
+    "shape": "box",
+    "en": "100,000 aeons passed. In this Fortunate Aeon Bhadda- aha he was reborn in Baranasi. Following Buddha Kassapa’s Parinibbana, he built one-league shrine, surrounding it with thousands of illuminated butter-oil cups.",
+    "conf": 34
+   }
+  ],
+  "loose": [
+   "INS"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     243,
+     314
+    ],
+    "bbox": [
+     688,
+     1022,
+     1994,
+     1356
+    ],
+    "shape": "box",
+    "en": "For himself, He crafted golden naa with 000 lighted wicks. Balancing this crown of fire he circumambulated the shrine through all three watches of the night, Sustains immense merit.",
+    "conf": 34
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Anuruddha-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     249,
+     21
+    ],
+    "bbox": [
+     784,
+     69,
+     1865,
+     225
+    ],
+    "shape": "box",
+    "en": "The Architecture of Merit",
+    "conf": 97
+   },
+   {
+    "seed": [
+     188,
+     225
+    ],
+    "bbox": [
+     188,
+     704,
+     1266,
+     893
+    ],
+    "shape": "box",
+    "en": "Padumuttara Era: Offered forests of illuminated trees to ignite the aspiration.",
+    "conf": 59
+   },
+   {
+    "seed": [
+     512,
+     227
+    ],
+    "bbox": [
+     1382,
+     704,
+     2460,
+     893
+    ],
+    "shape": "box",
+    "en": "Kassapa Era: Wore physical crown of 1,000 lights to sustain the merit. it.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "Ale"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     280,
+     186
+    ],
+    "bbox": [
+     870,
+     589,
+     1779,
+     952
+    ],
+    "shape": "box",
+    "en": "The Karmic Architecture of Pure Gift The story of Annabhara and the mechanics of immediate merit (punna).",
+    "conf": 88
+   }
+  ],
+  "loose": [
+   "WV)",
+   "4NE"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     301,
+     42
+    ],
+    "bbox": [
+     906,
+     102,
+     1739,
+     258
+    ],
+    "shape": "box",
+    "en": "Two Men in Baranasi",
+    "conf": 90
+   },
+   {
+    "seed": [
+     296,
+     376
+    ],
+    "bbox": [
+     893,
+     1237,
+     1749,
+     1418
+    ],
+    "shape": "box",
+    "en": "Annabhiara lived in poverty, laboring for Sumana, wealthy merchant who gave lavishly at his gates to travelers and beggars.",
+    "conf": 31
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Anuruddha-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     264,
+     42
+    ],
+    "bbox": [
+     787,
+     112,
+     1861,
+     271
+    ],
+    "shape": "box",
+    "en": "The vo of Giving fe",
+    "conf": 50
+   },
+   {
+    "seed": [
+     331,
+     100
+    ],
+    "bbox": [
+     909,
+     327,
+     1742,
+     420
+    ],
+    "shape": "box",
+    "en": "all gifts ua.",
+    "conf": 61
+   },
+   {
+    "seed": [
+     144,
+     296
+    ],
+    "bbox": [
+     294,
+     979,
+     1071,
+     1068
+    ],
+    "shape": "box",
+    "en": "Lavish Wealth",
+    "conf": 96
+   },
+   {
+    "seed": [
+     535,
+     297
+    ],
+    "bbox": [
+     1570,
+     979,
+     2347,
+     1071
+    ],
+    "shape": "box",
+    "en": "Meager ae Meal",
+    "conf": 51
+   },
+   {
+    "seed": [
+     120,
+     338
+    ],
+    "bbox": [
+     294,
+     1118,
+     1071,
+     1210
+    ],
+    "shape": "box",
+    "en": "Ordinary Recipients",
+    "conf": 96
+   },
+   {
+    "seed": [
+     569,
+     339
+    ],
+    "bbox": [
+     1570,
+     1118,
+     2347,
+     1210
+    ],
+    "shape": "box",
+    "en": "Pure Recipient",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Anuruddha-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     582,
+     73
+    ],
+    "bbox": [
+     1670,
+     222,
+     2374,
+     440
+    ],
+    "shape": "bubble",
+    "en": "Emerging from Cessation",
+    "conf": 92
+   },
+   {
+    "seed": [
+     553,
+     178
+    ],
+    "bbox": [
+     1594,
+     519,
+     2483,
+     863
+    ],
+    "shape": "box",
+    "en": "At Mount Gandhamadana, Paccekabuddha Uparittha emerged from nirodha-samapatti. Compassionate to the poor, he appeared before Annabhara.",
+    "conf": 79
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Anuruddha-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     265,
+     360
+    ],
+    "bbox": [
+     681,
+     1154,
+     1961,
+     1408
+    ],
+    "shape": "box",
+    "en": "The Offering of the pestitute Yearning for liberation from poverty, Annabhara and his wife placed their only portions of food into the Paccekabuddha’s bowl.",
+    "conf": 33
+   }
+  ],
+  "loose": [
+   "AW]"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     292,
+     51
+    ],
+    "bbox": [
+     797,
+     89,
+     1855,
+     324
+    ],
+    "shape": "box",
+    "en": "The Nature of Food Before eating, the Paccekabuddha practiced Ahdre-patikila-sanfd, fa, contemplating food’s true nature.",
+    "conf": 52
+   }
+  ],
+  "loose": [
+   "Seeking",
+   "Excretion",
+   "Eating",
+   "Digestion"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     271,
+     393
+    ],
+    "bbox": [
+     737,
+     1207,
+     1904,
+     1455
+    ],
+    "shape": "box",
+    "en": "Goddess Applauds auds th Uparittha blessed the couple. Instantly, the guardian goddess of Sumana’s umbrella cheered three times for the poor man’s superior gift.",
+    "conf": 48
+   }
+  ],
+  "loose": [
+   "ISN"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     359,
+     133
+    ],
+    "bbox": [
+     1012,
+     393,
+     1637,
+     1081
+    ],
+    "shape": "box",
+    "en": "Merit Cannot Be Bought Jealous, Sumana offered up to 1,000 coins to buy Annabhara’s merit. Annabhara refused to sell, but hesitated when asked to share.",
+    "conf": 40
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Anuruddha-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     110,
+     81
+    ],
+    "bbox": [
+     208,
+     218,
+     1485,
+     499
+    ],
+    "shape": "box",
+    "en": "Seeking the Paccekabuddha’s Counsel Unsure if sharing would diminish his own spiritual reward, An rushed back sas Uparittha for guid ai",
+    "conf": 37
+   }
+  ],
+  "loose": [
+   "fay"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Lamp",
+   "Uparittha",
+   "explained:",
+   "Sharing",
+   "merit",
+   "does",
+   "not",
+   "divide",
+   "it.",
+   "the",
+   "light.",
+   "ile",
+   "multiplies"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     311,
+     367
+    ],
+    "bbox": [
+     708,
+     1137,
+     1937,
+     1448
+    ],
+    "shape": "bubble",
+    "en": "The Augmentation of Merit Annabhara joyfully shared his merit. In return, Sumana gave him 1,000 coins and freed him from his labor.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "Gy»"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     454,
+     48
+    ],
+    "bbox": [
+     298,
+     129,
+     2351,
+     446
+    ],
+    "shape": "box",
+    "en": "Dittha-dhamma-vedantya: Same-Day Results Giving to Paccekabuddha emerging from nirodha-samapatti triggers immediate karmic fruition",
+    "conf": 56
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Anuruddha-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     137,
+     340
+    ],
+    "bbox": [
+     165,
+     1098,
+     1134,
+     1362
+    ],
+    "shape": "box",
+    "en": "The King’s Gare Sumana brought Annabhara to the palace. Captivated by his merit, the King ignored the merchant and awarded Annabhara ara another 1,000 coins.",
+    "conf": 77
+   }
+  ],
+  "loose": [
+   "WYN"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     327,
+     214
+    ],
+    "bbox": [
+     939,
+     661,
+     1709,
+     1005
+    ],
+    "shape": "bubble",
+    "en": "The Karmic Key When building Annabhara’s house they found jars of gold. But they could only be retrieved in Annabhara’s name.",
+    "conf": 86
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Anuruddha-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     316,
+     127
+    ],
+    "bbox": [
+     979,
+     304,
+     1217,
+     546
+    ],
+    "shape": "bubble",
+    "en": "leks",
+    "conf": 72
+   },
+   {
+    "seed": [
+     258,
+     385
+    ],
+    "bbox": [
+     575,
+     1270,
+     2066,
+     1408
+    ],
+    "shape": "box",
+    "en": "Annabhara’s instant rise to Maha Dhanasetthi required three pillars: recipient emerging from cessation, pure intention, and joyful sha:",
+    "conf": 73
+   }
+  ],
+  "loose": [
+   "Pure",
+   "Intention"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     117,
+     323
+    ],
+    "bbox": [
+     301,
+     1055,
+     2364,
+     1263
+    ],
+    "shape": "box",
+    "en": "Anuruddha’s Awakening: The Path to the Divine Eye. The ascetic journey of Sakyan prince from gifted monk to enlightened Arahat.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Anuruddha-27-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "THE",
+   "GREAT",
+   "RENUNCIATION",
+   "Prince",
+   "Anuruddha",
+   "left",
+   "Kapilavatthu.",
+   "the",
+   "Anupiya",
+   "grove,",
+   "and",
+   "five",
+   "fellow",
+   "princes",
+   "ordained",
+   "Theravada",
+   "monks",
+   "alongside",
+   "the",
+   "barber",
+   "Under",
+   "the",
+   "Buddha’s",
+   "guidance,",
+   "they",
+   "exchanged",
+   "royal",
+   "power",
+   "for",
+   "strict",
+   "ascetic",
+   "discipline.",
+   "YING"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-28-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "During",
+   "his",
+   "first",
+   "Rains",
+   "Retreat,",
+   "Ven.",
+   "Anuruddha",
+   "quickly",
+   "mastered",
+   "the",
+   "eight",
+   "attainments",
+   "developed",
+   "the",
+   "divine",
+   "eye",
+   "(dibba-cakkhu),",
+   "unlocking",
+   "the",
+   "psychic",
+   "power",
+   "clearly",
+   "perceive",
+   "one",
+   "thousand",
+   "universes."
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-29-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     215,
+     160
+    ],
+    "bbox": [
+     651,
+     499,
+     1194,
+     731
+    ],
+    "shape": "box",
+    "en": "Claim: Seeing 1,000 universes",
+    "conf": 95
+   },
+   {
+    "seed": [
+     472,
+     160
+    ],
+    "bbox": [
+     1471,
+     499,
+     2023,
+     731
+    ],
+    "shape": "box",
+    "en": "Hindrance: Conceit (mana)",
+    "conf": 91
+   },
+   {
+    "seed": [
+     246,
+     231
+    ],
+    "bbox": [
+     651,
+     754,
+     1194,
+     1008
+    ],
+    "shape": "box",
+    "en": "Claim: Unflinching effort",
+    "conf": 91
+   },
+   {
+    "seed": [
+     471,
+     230
+    ],
+    "bbox": [
+     1471,
+     754,
+     2023,
+     1008
+    ],
+    "shape": "box",
+    "en": "Hindrance: Restlessness (uddhacca)",
+    "conf": 92
+   },
+   {
+    "seed": [
+     227,
+     325
+    ],
+    "bbox": [
+     651,
+     1028,
+     1194,
+     1280
+    ],
+    "shape": "box",
+    "en": "Claim: Still unliberated",
+    "conf": 92
+   },
+   {
+    "seed": [
+     473,
+     313
+    ],
+    "bbox": [
+     1471,
+     1028,
+     2023,
+     1280
+    ],
+    "shape": "box",
+    "en": "Hindrance: Doubt (samsaya-kukkucca)",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Ven.",
+   "Sariputta",
+   "diagnosed",
+   "three",
+   "hindrances",
+   "blocking",
+   "Anuruddha’s",
+   "liberation:"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-30-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sariputta’s",
+   "counsel",
+   "was",
+   "direct",
+   "“Discard",
+   "these",
+   "three",
+   "things:",
+   "conceit",
+   "restlessness,",
+   "and",
+   "doubt",
+   "Without",
+   "being",
+   "conscious",
+   "these",
+   "things,",
+   "direct",
+   "your",
+   "mind",
+   "the",
+   "deathless",
+   "Nibbana!”"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-31-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Illuminated",
+   "Madhubani",
+   "Manuscript",
+   "Seeking",
+   "solitude",
+   "Cetiya,",
+   "Ven.",
+   "Anuruddha",
+   "practiced",
+   "intense",
+   "asceticism",
+   "the",
+   "Eastern",
+   "Bamboo",
+   "Grove",
+   "For",
+   "fifteen",
+   "days,",
+   "forwent",
+   "sleep,",
+   "practicing",
+   "walking",
+   "meditation",
+   "continuously",
+   "until",
+   "total",
+   "exhaustion",
+   "forced",
+   "him",
+   "rest.",
+   "Wil",
+   "(6)"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-32-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Resting",
+   "under",
+   "the",
+   "bamboo,",
+   "seven",
+   "thoughts",
+   "great",
+   "man",
+   "arose.",
+   "Ven.",
+   "Anuruddha",
+   "Supermundane",
+   "states",
+   "require:",
+   "Few",
+   "wants",
+   "Mindfulness",
+   "Contentment",
+   "Concentration",
+   "Quiet",
+   "Wisdom",
+   "Energy",
+   "als"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-33-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     196,
+     168
+    ],
+    "bbox": [
+     592,
+     555,
+     1296,
+     595
+    ],
+    "shape": "box",
+    "en": "1. Requisites: cepting les: than offered.",
+    "conf": 73
+   },
+   {
+    "seed": [
+     421,
+     174
+    ],
+    "bbox": [
+     1346,
+     555,
+     2050,
+     595
+    ],
+    "shape": "box",
+    "en": "2, Attainment: Hiding spiritual realiz",
+    "conf": 82
+   },
+   {
+    "seed": [
+     194,
+     306
+    ],
+    "bbox": [
+     592,
+     1008,
+     1296,
+     1051
+    ],
+    "shape": "bubble",
+    "en": "3. Learning: ing: Concealing deep",
+    "conf": 90
+   },
+   {
+    "seed": [
+     425,
+     306
+    ],
+    "bbox": [
+     1349,
+     1008,
+     2050,
+     1051
+    ],
+    "shape": "box",
+    "en": "4. Austerity: Keeping ascetic vows secret.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "Few",
+   "wants’",
+   "(appiccha)",
+   "manifests",
+   "four",
+   "ways",
+   "Requisites:",
+   "Accepting",
+   "less",
+   "than",
+   "offered.",
+   "Learning:",
+   "Concealing",
+   "deep",
+   "scriptural",
+   "knowledge",
+   "Attainment:",
+   "Hiding",
+   "spiritual",
+   "realization",
+   "Austerity:",
+   "Keeping",
+   "ascetic",
+   "vows",
+   "secret",
+   "alt"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-34-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     326,
+     313
+    ],
+    "bbox": [
+     344,
+     1025,
+     2298,
+     1263
+    ],
+    "shape": "box",
+    "en": "Exhausted after the seventh reflection, Anuruddha’s contemplation stalled. Knowing his disciple’s weariness, the Buddha instantly appeared in his mind-made som body to provide the crucial missing eighth thought.",
+    "conf": 31
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Anuruddha-35-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "revealed",
+   "the",
+   "eighth",
+   "thought:",
+   "Supermundane",
+   "states",
+   "belong",
+   "one",
+   "who",
+   "delights",
+   "entirely",
+   "free",
+   "from",
+   "the",
+   "expanding",
+   "factors",
+   "(paparica)",
+   "craving,",
+   "conceit,",
+   "and",
+   "wrong",
+   "view."
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-36-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "elaborated",
+   "the",
+   "fourfold",
+   "noble",
+   "lineage",
+   "creating",
+   "practical",
+   "framework:",
+   "Contentment",
+   "Contentment",
+   "robes",
+   "food",
+   "Contentment",
+   "Delight",
+   "dwelling",
+   "meditation",
+   "The"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-37-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Applying",
+   "these",
+   "teachings",
+   "the",
+   "next",
+   "Rains",
+   "Retreat,",
+   "Ven.",
+   "Anuruddha",
+   "destroyed",
+   "all",
+   "pollutants",
+   "achieved",
+   "Arahatship,",
+   "fully",
+   "endowed",
+   "with",
+   "the",
+   "threefold",
+   "knowledge."
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-38-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     283,
+     154
+    ],
+    "bbox": [
+     866,
+     436,
+     1775,
+     1051
+    ],
+    "shape": "bubble",
+    "en": "Overjoyed, Ven. Anuruddha uttered solemn verse: The Fortunate One knew my thoughts. He taught me the unconditioned Nibbana. have put it into practice, reaching the goal.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Anuruddha-39-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Jetavana,",
+   "the",
+   "Buddha",
+   "convened",
+   "great",
+   "assembly.",
+   "officially",
+   "declared",
+   "Ven.",
+   "Anuruddha",
+   "the",
+   "foremost",
+   "(etad-agga)",
+   "among",
+   "all",
+   "his",
+   "disciples",
+   "possessing",
+   "the",
+   "divine",
+   "eye",
+   "(dibba-cakkhu)."
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-40-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Divine",
+   "Offering",
+   "The",
+   "Making",
+   "Ven.",
+   "Anuruddha’s",
+   "Robe",
+   "Ivine"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-41-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     456,
+     102
+    ],
+    "bbox": [
+     1352,
+     298,
+     2390,
+     1243
+    ],
+    "shape": "box",
+    "en": "While staying at Veluvana Rajagaha, Ven. Anuruddha sought discarded rags to make humble robe While residing at the Bamboo Grove (Veluvana) in Rajagaha, Ven. Anuruddha was in need of new robe. Following the monastic tradition of wearing robes made from discarded cloth, he searched dust heaps and cemeteries for suitable rags",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "ave"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-42-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     205,
+     359
+    ],
+    "bbox": [
+     479,
+     1121,
+     2152,
+     1445
+    ],
+    "shape": "box",
+    "en": "Jalini, deity from Tavatimsa and his former wife brought divine cloth. Knowing he wouldn't accept luxury, she hid it in dust heap, exposing only the edges",
+    "conf": 64
+   }
+  ],
+  "loose": [
+   "WAS",
+   "WAS"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-43-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     175,
+     358
+    ],
+    "bbox": [
+     496,
+     1134,
+     2152,
+     1445
+    ],
+    "shape": "box",
+    "en": "Believing them to be top-quality rags, Ven. Anuruddha took the cloth. To aid him, the exalted Buddha and 500 monks arrived to stitch the robe",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "WAS",
+   "(ey"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-44-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     384,
+     347
+    ],
+    "bbox": [
+     496,
+     1134,
+     2152,
+     1451
+    ],
+    "shape": "box",
+    "en": "sacred collaboration: Kassapa: Seated at the start Sariputta: Seated at the middle Ananda: Seated at the far end The Buddha: Threading the needle",
+    "conf": 43
+   }
+  ],
+  "loose": [
+   "Ven.",
+   "Kassapa",
+   "Ven.",
+   "Sariputta",
+   "Ven.",
+   "Ananda",
+   "Buddha",
+   "Sari"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-45-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     455,
+     99
+    ],
+    "bbox": [
+     1455,
+     248,
+     2390,
+     1243
+    ],
+    "shape": "box",
+    "en": "The heavens assisted: Jalini urged citizens to bring food. Ven. Moggallana gathered Jambu plums. Sakka leveled the ground, making it shine like liquid lac.",
+    "conf": 86
+   }
+  ],
+  "loose": [
+   "NES"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-46-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     85,
+     84
+    ],
+    "bbox": [
+     231,
+     231,
+     975,
+     780
+    ],
+    "shape": "box",
+    "en": "The resulting feast was monumental The 500 monks could not finish the fruit, and leftover rice and gruel were plentiful",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "WAS",
+   "NVA"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-47-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     79,
+     331
+    ],
+    "bbox": [
+     212,
+     1088,
+     1283,
+     1243
+    ],
+    "shape": "box",
+    "en": "Monks’ View: Anuruddha over-ordered to show off his large number of supporters.",
+    "conf": 72
+   },
+   {
+    "seed": [
+     415,
+     332
+    ],
+    "bbox": [
+     1369,
+     1088,
+     2437,
+     1243
+    ],
+    "shape": "box",
+    "en": "The Truth: Anuruddha asked for nothing; the abundance was manifested by deity’s power.",
+    "conf": 91
+   },
+   {
+    "seed": [
+     221,
+     398
+    ],
+    "bbox": [
+     493,
+     1276,
+     2156,
+     1481
+    ],
+    "shape": "bubble",
+    "en": "Perception vs. Reality",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Anuruddha-48-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     495,
+     163
+    ],
+    "bbox": [
+     1561,
+     486,
+     2374,
+     972
+    ],
+    "shape": "box",
+    "en": "The Buddha clarified: “Arahats never speak with an emphasis on requisites. This food occurred by the power of deity!” bid",
+    "conf": 45
+   }
+  ],
+  "loose": [
+   "OR."
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-49-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     615,
+     154
+    ],
+    "bbox": [
+     1934,
+     479,
+     2374,
+     684
+    ],
+    "shape": "box",
+    "en": "2. Bhava (Continuation)",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "Arahat",
+   "destroys",
+   "the",
+   "four",
+   "pollutants",
+   "without",
+   "trace:",
+   "Kama",
+   "(Sense",
+   "desires)",
+   "Ditthi",
+   "Avijja",
+   "(Wrong",
+   "views)",
+   "(Ignorance)"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-50-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     289,
+     90
+    ],
+    "bbox": [
+     896,
+     255,
+     1775,
+     575
+    ],
+    "shape": "box",
+    "en": "Free from tanhd (craving) and ditthi (wrong views), the enlightened mind remains entirely unattached to food or material requisites.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Anuruddha-51-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Nibbana",
+   "the",
+   "ultimate",
+   "resort",
+   "Freedom",
+   "emptiness",
+   "Animitta-vimokkha",
+   "Appanihita-vimokkha:",
+   "Causeless",
+   "freedom",
+   "Freedom",
+   "desirelessness",
+   "desirelessness",
+   "DO»"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-52-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     147,
+     309
+    ],
+    "bbox": [
+     288,
+     989,
+     2331,
+     1313
+    ],
+    "shape": "bubble",
+    "en": "‘Just ZS as the track of ae bird 7a in the air is impossible a4 ga Yo to trace, oF the vo path of the vo Arahat into Nibbana iT is untraceable by ordinary minds.” Dhammapada 93 ise)",
+    "conf": 45
+   }
+  ],
+  "loose": [
+   "WAS"
+  ]
+ },
+ {
+  "img": "images/05-Anuruddha-53-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     250,
+     307
+    ],
+    "bbox": [
+     496,
+     959,
+     2156,
+     1256
+    ],
+    "shape": "box",
+    "en": "By the end of the Buddha’s discourse, large multitude attained Stream-entry (Sotapatti-phala) and other spiritual awakenings.",
+    "conf": 76
+   }
+  ],
+  "loose": []
+ }
+]

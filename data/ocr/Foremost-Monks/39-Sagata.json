@@ -1,0 +1,310 @@
+[
+ {
+  "img": "images/39-Sagata-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     307,
+     158
+    ],
+    "bbox": [
+     998,
+     469,
+     1643,
+     1015
+    ],
+    "shape": "box",
+    "en": "Fire, ire Folly, and Awakening visual chronicle of mundane power, the danger of intoxication, and the path to ultimate liberation.",
+    "conf": 74
+   }
+  ],
+  "loose": [
+   "WAS",
+   "NAN"
+  ]
+ },
+ {
+  "img": "images/39-Sagata-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     245,
+     324
+    ],
+    "bbox": [
+     476,
+     1045,
+     2166,
+     1422
+    ],
+    "shape": "box",
+    "en": "Lifetimes of Preparation Fulfill an Ancient Aspiration Witnessing monk honored for heat element mastery by Buddha Padumuttara, young man aspired to that glory. Reborn later as Sagata, he mastered mundane absorption and supernormal powers.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/39-Sagata-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     532,
+     116
+    ],
+    "bbox": [
+     1577,
+     278,
+     2433,
+     1223
+    ],
+    "shape": "box",
+    "en": "Vengeful Serpent Plagues the Ferry Crossing murdered ferryman was reborn as vicious serpent at the mango tree crossing. Holding deep grudge, it unleashed dark powers to cause droughts and unseasonal floods, terrorizing the local villagers.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/39-Sagata-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     119,
+     310
+    ],
+    "bbox": [
+     215,
+     1015,
+     2427,
+     1365
+    ],
+    "shape": "box",
+    "en": "Sagata Overpowers the Serpent with Superior Heat Sagata entered the serpent’s den in deep meditation. The angry Naga unleashed hot fumes and raging flames. Using his mastery of the heat element, Sagata produced fire of vastly greater intensity, overpowering the beast.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/39-Sagata-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     521,
+     75
+    ],
+    "bbox": [
+     1620,
+     205,
+     2437,
+     1233
+    ],
+    "shape": "box",
+    "en": "The Tamed Beast Brings Rains and Bountiful Harvests Realizing he was outmatched the Naga surrendered. Sagata directed the serpent to take refuge in the Buddha. The beast became friendly, proper rains returned, and bumper crops were harvested. Sagata’s fame spread instantly.",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "WAS",
+   "OSX"
+  ]
+ },
+ {
+  "img": "images/39-Sagata-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     97,
+     75
+    ],
+    "bbox": [
+     231,
+     205,
+     1018,
+     1233
+    ],
+    "shape": "box",
+    "en": "Worldly Monks Advise Dangerous Offering Grateful Kosambi citizens asked how to honor Sagata. Comfort-seeking monks—the Group-of-Six—intervened. They instructed the simple folk to brew rare, delightful alcoholic drink, clear and red like pigeon's foot.",
+    "conf": 85
+   }
+  ],
+  "loose": [
+   "Als"
+  ]
+ },
+ {
+  "img": "images/39-Sagata-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     147,
+     51
+    ],
+    "bbox": [
+     228,
+     152,
+     2414,
+     427
+    ],
+    "shape": "box",
+    "en": "Sagata Innocently Accepts the Intoxicating Brew With no monastic rule yet existing against alcohol, Sagata saw no wrong. Wanting to oblige his devoted supporters, he accepted and drank little of the red liquor at every single house.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "Why",
+   "ONG"
+  ]
+ },
+ {
+  "img": "images/39-Sagata-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     77,
+     240
+    ],
+    "bbox": [
+     182,
+     767,
+     1058,
+     1296
+    ],
+    "shape": "box",
+    "en": "The Master Collapses in Disrespectful Stupor Leaving the city, the great ascetic collapsed, completely overcome by intoxication. Carried back to the monastery, the senseless Sagata turned in his stupor, pointing his feet directly at the Buddha—losing all reverence.",
+    "conf": 86
+   }
+  ],
+  "loose": [
+   "YIN"
+  ]
+ },
+ {
+  "img": "images/39-Sagata-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     153,
+     52
+    ],
+    "bbox": [
+     225,
+     152,
+     2417,
+     427
+    ],
+    "shape": "box",
+    "en": "Intoxication Instantly Destroys Mundane Power The Buddha asked: “Could Sagata, in his present state, vanquish the serpent now?” The monks replied, “No, venerable sir.” Mundane powers are fragile. Intoxication destroys mindfulness, reverence, and spiritual strength in an instant.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/39-Sagata-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     174,
+     316
+    ],
+    "bbox": [
+     555,
+     1022,
+     2086,
+     1329
+    ],
+    "shape": "box",
+    "en": "The Buddha Establishes the Rule Against Alcohol Declaring co the act improper Qa. and unbecoming, wv vu oO the Buddha Cc co established co uw new wv training rule: Any monastic who consumes alcoholic drink incurs confesable offense. Intoxication destroys faith and ruins spiritual discipline",
+    "conf": 46
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/39-Sagata-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     486,
+     268
+    ],
+    "bbox": [
+     1580,
+     863,
+     2483,
+     1319
+    ],
+    "shape": "box",
+    "en": "Sagata Attains True Liberation and Foremost Honor Recovering his senses, Sagata was filled with spiritual urgency. He developed deep insight and attained Arahatship. The Buddha later declared him foremost among disciples adept at the heat element absorption, fulfilling his ancient aspiration.",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "ING",
+   "WIN",
+   "ING",
+   "ASS",
+   "ING",
+   "ING"
+  ]
+ }
+]

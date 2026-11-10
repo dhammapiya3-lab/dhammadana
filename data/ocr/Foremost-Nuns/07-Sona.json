@@ -1,0 +1,529 @@
+[
+ {
+  "img": "images/07-Sona-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     472,
+     60
+    ],
+    "bbox": [
+     1485,
+     162,
+     2490,
+     529
+    ],
+    "shape": "box",
+    "en": "The vo Journey 5 of Smt Ven. 5 Sona: From Worldly Burden to Foremost in Effort",
+    "conf": 45
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/07-Sona-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     268,
+     354
+    ],
+    "bbox": [
+     384,
+     1170,
+     2261,
+     1448
+    ],
+    "shape": "box",
+    "en": "The Ancient wore in Hathsavati Co uss ti During rey) the era of Buddha aS Padumuttara, 3 wealthy woman witnessed nun named vo foremost in earnest endeavour. Moved, she made an extraordinary offering and vowed to attain that exact title.",
+    "conf": 44
+   }
+  ],
+  "loose": [
+   "INN"
+  ]
+ },
+ {
+  "img": "images/07-Sona-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     228,
+     342
+    ],
+    "bbox": [
+     476,
+     1118,
+     2166,
+     1455
+    ],
+    "shape": "box",
+    "en": "Bahuputtike: The Mother of Wen, In Savatthi, she bore ten children. When her husband renounced the world, she arranged their marriages and bequeathed all her property to them, leaving absolutely nothing for herself.",
+    "conf": 48
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/07-Sona-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     250,
+     343
+    ],
+    "bbox": [
+     476,
+     1118,
+     2166,
+     1455
+    ],
+    "shape": "box",
+    "en": "The Betrayal of eae Attachme ts Her worldly supports quickly failed. Ungrateful, none of her ten children allowed her to stay more than three days. The wealthy mother became an unwanted, helpless burden",
+    "conf": 33
+   }
+  ],
+  "loose": [
+   "Yip",
+   "AIK"
+  ]
+ },
+ {
+  "img": "images/07-Sona-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     245,
+     376
+    ],
+    "bbox": [
+     476,
+     1121,
+     2166,
+     1455
+    ],
+    "shape": "box",
+    "en": "Seeking Refuge in the Sangha gha Realizing her dire and helpless position in the world she renounced lay life to become nun",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Vig"
+  ]
+ },
+ {
+  "img": "images/07-Sona-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "dicule",
+   "Peace",
+   "was",
+   "elusive.",
+   "Senior",
+   "nuns",
+   "scolded",
+   "her,",
+   "assigning",
+   "punitive",
+   "duties.",
+   "Watching",
+   "her",
+   "sweep,",
+   "her",
+   "children",
+   "mocked:",
+   "“This",
+   "old",
+   "woman",
+   "has",
+   "still",
+   "not",
+   "learnt",
+   "the",
+   "monastic",
+   "discipline!”",
+   "Burden"
+  ]
+ },
+ {
+  "img": "images/07-Sona-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Mockery",
+   "Realization",
+   "Old",
+   "Age",
+   "Spiritual",
+   "Urgency",
+   "ery",
+   "The",
+   "Catalyst",
+   "Samvega",
+   "Ridicule",
+   "triggered",
+   "profound",
+   "spiritual",
+   "urgency",
+   "(samvega).",
+   "Realizing",
+   "she",
+   "had",
+   "little",
+   "time",
+   "left,",
+   "she",
+   "resolved",
+   "herself",
+   "against",
+   "unfortunate",
+   "destinies",
+   "through",
+   "relentless",
+   "practice."
+  ]
+ },
+ {
+  "img": "images/07-Sona-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     39,
+     147
+    ],
+    "bbox": [
+     76,
+     126,
+     843,
+     1418
+    ],
+    "shape": "bubble",
+    "en": "NZ GFF. wees Ga SE",
+    "conf": 33
+   }
+  ],
+  "loose": [
+   "The",
+   "Method:",
+   "Parts",
+   "the",
+   "She",
+   "let",
+   "time",
+   "pass—whether",
+   "sitting,",
+   "standing,",
+   "lying",
+   "down—without",
+   "internally",
+   "reciting",
+   "and",
+   "the",
+   "constituent",
+   "parts",
+   "the",
+   "body.",
+   "contemplating",
+   "hod:"
+  ]
+ },
+ {
+  "img": "images/07-Sona-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Support",
+   "Aware",
+   "her",
+   "advanced",
+   "age,",
+   "she",
+   "spent",
+   "all",
+   "free",
+   "moments",
+   "meditating",
+   "through",
+   "the",
+   "night.",
+   "avoid",
+   "losing",
+   "her",
+   "balance",
+   "the",
+   "dark,",
+   "she",
+   "firmly",
+   "held",
+   "onto",
+   "wooden",
+   "pillar.",
+   "Ultimate"
+  ]
+ },
+ {
+  "img": "images/07-Sona-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "VAY",
+   "Foremost",
+   "Effort",
+   "During",
+   "walking",
+   "meditation",
+   "the",
+   "dark,",
+   "she",
+   "guided",
+   "herself",
+   "holding",
+   "tree.",
+   "Her",
+   "absolute",
+   "dedication",
+   "earned",
+   "her",
+   "new",
+   "name",
+   "from",
+   "the",
+   "Sangha",
+   "(One",
+   "with",
+   "Earnest",
+   "Endeavour).",
+   "Araddhaviriya:"
+  ]
+ },
+ {
+  "img": "images/07-Sona-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "The",
+   "Buddha",
+   "sent",
+   "forth",
+   "his",
+   "radiance,",
+   "saying:",
+   "“More",
+   "worthwhile",
+   "single",
+   "day’s",
+   "life",
+   "one",
+   "who",
+   "perceives",
+   "the",
+   "sublime",
+   "Dhamma.’",
+   "Hearing",
+   "this,",
+   "she",
+   "became",
+   "Arahat.",
+   "Radiance",
+   "Awakening"
+  ]
+ },
+ {
+  "img": "images/07-Sona-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Unlit",
+   "Hearth",
+   "Instructed",
+   "boil",
+   "water,",
+   "Ven.",
+   "Sond",
+   "placed",
+   "the",
+   "pot",
+   "but",
+   "left",
+   "the",
+   "fire",
+   "unlit.",
+   "When",
+   "junior",
+   "nuns",
+   "checked,",
+   "the",
+   "water",
+   "was",
+   "miraculously",
+   "hot,",
+   "proving",
+   "her",
+   "profound",
+   "attainment."
+  ]
+ },
+ {
+  "img": "images/07-Sona-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     266,
+     59
+    ],
+    "bbox": [
+     202,
+     195,
+     1805,
+     519
+    ],
+    "shape": "box",
+    "en": "Reverence Replaces Ridicule Realizing she was an Arahat, the Sangha was humbled. Junior nuns bowed fully to the floor, and senior nuns squatted in reverence, begging pardon for their past dis",
+    "conf": 81
+   }
+  ],
+  "loose": [
+   "NOY",
+   "NOY",
+   "NOY"
+  ]
+ },
+ {
+  "img": "images/07-Sona-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     390,
+     47
+    ],
+    "bbox": [
+     605,
+     109,
+     1944,
+     460
+    ],
+    "shape": "box",
+    "en": "The Ancient Vow Addressing the congregation, the Buddha declared: “Monastics among my female monastic disciples who have diligence and make earnest effort, Sona is the foremost",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/07-Sona-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     241,
+     9
+    ],
+    "bbox": [
+     635,
+     30,
+     2010,
+     152
+    ],
+    "shape": "box",
+    "en": "The Two Ident 1t1es Ven. Son na",
+    "conf": 47
+   }
+  ],
+  "loose": [
+   "Many)",
+   "Relied",
+   "worldly",
+   "wealth",
+   "and",
+   "ungrateful",
+   "Relied",
+   "the",
+   "sublime",
+   "Dhamma",
+   "and",
+   "children.",
+   "Ended",
+   "sorrow.",
+   "mindful",
+   "effort.",
+   "Ended",
+   "Awakening.",
+   "Bahuputtika",
+   "BSN",
+   "Araddhaviriya"
+  ]
+ }
+]

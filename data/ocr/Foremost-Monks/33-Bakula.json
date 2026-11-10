@@ -1,0 +1,867 @@
+[
+ {
+  "img": "images/33-Bakula-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Architect",
+   "Health:",
+   "The",
+   "Past",
+   "Lives",
+   "Ven.",
+   "Bakula.",
+   "NOY"
+  ]
+ },
+ {
+  "img": "images/33-Bakula-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     304,
+     302
+    ],
+    "bbox": [
+     205,
+     489,
+     1842,
+     1273
+    ],
+    "shape": "bubble",
+    "en": "Anomadassi1 Vipassi",
+    "conf": 36
+   }
+  ],
+  "loose": [
+   "Path",
+   "Perfect",
+   "Over",
+   "one",
+   "asankhyeyya-kappa",
+   "and",
+   "100,000",
+   "aeons,",
+   "specific",
+   "kammic",
+   "seeds",
+   "were",
+   "planted",
+   "across",
+   "four",
+   "distinct",
+   "Buddha",
+   "eras.",
+   "Kassapa",
+   "The",
+   "Health",
+   "INS"
+  ]
+ },
+ {
+  "img": "images/33-Bakula-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Buddha",
+   "Anomadassi’s",
+   "Era:",
+   "The",
+   "Mountain",
+   "Recluse.",
+   "LEG",
+   "Renouncing",
+   "worldly",
+   "mastery",
+   "the",
+   "three",
+   "Vedas,",
+   "the",
+   "future",
+   "Bakula",
+   "gained",
+   "the",
+   "five",
+   "and",
+   "eight",
+   "jhana",
+   "remote",
+   "mountain",
+   "isolation.",
+   "Can"
+  ]
+ },
+ {
+  "img": "images/33-Bakula-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     98,
+     323
+    ],
+    "bbox": [
+     205,
+     1065,
+     1842,
+     1273
+    ],
+    "shape": "box",
+    "en": "The First Healing. When Buddha Anomadassi suffered from colic, the recluse delivered mountain herbs. single dose completely cured the Fortunate One.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "RSL",
+   "Wy)"
+  ]
+ },
+ {
+  "img": "images/33-Bakula-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "AS)",
+   "The",
+   "Solemn",
+   "Vow.",
+   "made",
+   "profound",
+   "aspiration:",
+   "free",
+   "from",
+   "disease",
+   "throughout",
+   "avoiding",
+   "even",
+   "the",
+   "slightest",
+   "ailment",
+   "‘for",
+   "the",
+   "duration",
+   "the",
+   "milking",
+   "cow.’",
+   "ASS"
+  ]
+ },
+ {
+  "img": "images/33-Bakula-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     288,
+     147
+    ],
+    "bbox": [
+     860,
+     258,
+     1782,
+     1164
+    ],
+    "shape": "bubble",
+    "en": "Buddha Padumuttara’s Era Rebirth in Hamsavati Passing into the Brahma world he cycled strictly through Deva and human realms for one asankhyeyya-kappa, reborn into wealthy family",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/33-Bakula-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     300,
+     74
+    ],
+    "bbox": [
+     724,
+     119,
+     2109,
+     1286
+    ],
+    "shape": "bubble",
+    "en": "The Great Aspiration. Witnessing the Buddha declare monastic foremost in health, he made massive offerings to the Sangha, securing the prediction for his own future title",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/33-Bakula-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     299,
+     74
+    ],
+    "bbox": [
+     109,
+     119,
+     2050,
+     886
+    ],
+    "shape": "bubble",
+    "en": "Buddha Vipasst’s Era: Return to the Mountain. Born in Bandhumati 91 aeons ago he returned to his recluse roots near Khema, \"The Sanctuary.",
+    "conf": 36
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/33-Bakula-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Poisonous",
+   "Wind.",
+   "Toxic",
+   "pollen",
+   "from",
+   "the",
+   "Himavanta",
+   "swept",
+   "through",
+   "the",
+   "Sanctuary,",
+   "inflicting",
+   "severe",
+   "headaches",
+   "upon",
+   "6,800,000",
+   "monastics.",
+   "Only",
+   "the",
+   "Buddha",
+   "and",
+   "his",
+   "chief",
+   "disciples",
+   "were",
+   "spared."
+  ]
+ },
+ {
+  "img": "images/33-Bakula-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     324,
+     48
+    ],
+    "bbox": [
+     612,
+     119,
+     2007,
+     860
+    ],
+    "shape": "bubble",
+    "en": "The Mass Antidote. Seeing the Sangha afflicted, the recluse independently gathered herbs, prepared the exact 2 medicine, and immediately cured the multitudes. Zz",
+    "conf": 56
+   }
+  ],
+  "loose": [
+   "ATES"
+  ]
+ },
+ {
+  "img": "images/33-Bakula-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "(AE",
+   "LAY",
+   "Buddha",
+   "Kassapa’s",
+   "Era:",
+   "The",
+   "Discovery.",
+   "Reborn",
+   "householder",
+   "timber",
+   "expedition",
+   "repair",
+   "his",
+   "own",
+   "home",
+   "led",
+   "him",
+   "abandoned,",
+   "ruined",
+   "monastery.",
+   "scovery.",
+   "Ary"
+  ]
+ },
+ {
+  "img": "images/33-Bakula-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Rebuilding",
+   "the",
+   "Sanctuary",
+   "Abandoning",
+   "his",
+   "personal",
+   "home",
+   "repairs,",
+   "directed",
+   "his",
+   "carpenters",
+   "fully",
+   "renovate",
+   "the",
+   "monastery,",
+   "dedicating",
+   "extensive",
+   "medical",
+   "and",
+   "comfort",
+   "facilities",
+   "the",
+   "Sangha.",
+   "Hot",
+   "bathroom",
+   "for",
+   "cold",
+   "season",
+   "Clinic",
+   "Medicine",
+   "(ointments,",
+   "snuffs,",
+   "inhalants)",
+   "Fire-house",
+   "Store"
+  ]
+ },
+ {
+  "img": "images/33-Bakula-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Architecture",
+   "Merit.",
+   "Bakula’s",
+   "unmatched",
+   "immunity",
+   "was",
+   "constructed",
+   "through",
+   "precise",
+   "actions",
+   "across",
+   "aeons",
+   "treating",
+   "Buddha,",
+   "curing",
+   "multitude,",
+   "and",
+   "building",
+   "permanent",
+   "medical",
+   "infrastructure",
+   "Medical",
+   "Infrastructure",
+   "Individual",
+   "Healing",
+   "Mass",
+   "Healing",
+   "Buddha",
+   "Buddha",
+   "Vipassi",
+   "Buddha",
+   "Kassapa",
+   "RY)",
+   "Anomadassi"
+  ]
+ },
+ {
+  "img": "images/33-Bakula-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Fruits",
+   "Dedication.",
+   "specific",
+   "seeds",
+   "merit",
+   "—medicine,",
+   "care,",
+   "and",
+   "shelter—culminated",
+   "Ven.",
+   "Bakula",
+   "becoming",
+   "the",
+   "foremost",
+   "monastic",
+   "perfect",
+   "health",
+   "These"
+  ]
+ },
+ {
+  "img": "images/33-Bakula-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     326,
+     271
+    ],
+    "bbox": [
+     579,
+     840,
+     2063,
+     1395
+    ],
+    "shape": "box",
+    "en": "Bakula’s Final Existence: The Child of Two Families tale of miraculous survival, past merit, and perfect health.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/33-Bakula-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     271,
+     302
+    ],
+    "bbox": [
+     698,
+     863,
+     1990,
+     1346
+    ],
+    "shape": "bubble",
+    "en": "Born to wealthy Kosambi merchant, the infant was endowed with immense past merit. Seeking health and long life, his mother arranged al bath in the River Yamuna.",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "(5),",
+   "AOK"
+  ]
+ },
+ {
+  "img": "images/33-Bakula-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     130,
+     334
+    ],
+    "bbox": [
+     274,
+     1081,
+     2367,
+     1359
+    ],
+    "shape": "box",
+    "en": "Mistaking the baby for food, massive fish swallowed him whole. Destined to become an Arahat, dormant path-knowledge (magga-hana) protected him. He felt as comfortable as if lying in soft bed.",
+    "conf": 74
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/33-Bakula-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     358,
+     90
+    ],
+    "bbox": [
+     1124,
+     271,
+     2328,
+     608
+    ],
+    "shape": "box",
+    "en": "Tortured by the child’s immense merit, the fish felt as though it had swallowed burning iron ball. It swam downstream for thirty leagues, finally arriving at Baranasi.",
+    "conf": 45
+   }
+  ],
+  "loose": [
+   "GAL",
+   "WAAN",
+   "far",
+   "We)",
+   "SSS",
+   "[ZG"
+  ]
+ },
+ {
+  "img": "images/33-Bakula-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     100,
+     324
+    ],
+    "bbox": [
+     271,
+     1068,
+     2377,
+     1322
+    ],
+    "shape": "box",
+    "en": "Caught in net, the fish died instantly—spared from beating by the baby’s power. It could not be cut open, and was eventually sold whole for an unprecedented 1,000 pieces of money",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/33-Bakula-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     116,
+     325
+    ],
+    "bbox": [
+     228,
+     1045,
+     2414,
+     1336
+    ],
+    "shape": "box",
+    "en": "Purchased by wealthy, childless Baranasi merchant, his wife took the fish to the kitchen. Slicing it open from the back, she gleefully discovered the living, golden-hued baby inside.",
+    "conf": 35
+   }
+  ],
+  "loose": [
+   "oy,"
+  ]
+ },
+ {
+  "img": "images/33-Bakula-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     348,
+     86
+    ],
+    "bbox": [
+     1025,
+     228,
+     1617,
+     1260
+    ],
+    "shape": "box",
+    "en": "News reached Kosambi, and the natural parents traveled to Baranasi. dispute erupted: The natural mother claimed blood and birth, while the foster mother claimed rightful legal purchase of the fish.",
+    "conf": 41
+   }
+  ],
+  "loose": [
+   "SSS"
+  ]
+ },
+ {
+  "img": "images/33-Bakula-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     283,
+     317
+    ],
+    "bbox": [
+     807,
+     1035,
+     1838,
+     1303
+    ],
+    "shape": "box",
+    "en": "The King decreed flawless compromise: The Kosambi wife had an unshakable claim by birth The Baranasi wife had legal claim by purchase The child would belong to both th families.",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "AAA",
+   "YUN"
+  ]
+ },
+ {
+  "img": "images/33-Bakula-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     247,
+     285
+    ],
+    "bbox": [
+     493,
+     820,
+     2139,
+     1375
+    ],
+    "shape": "bubble",
+    "en": "He was named Bakula KumGra—“the child of two families Entitled to inherit from both merchant empires, his presence brought unprecedented fortune, fame, and wealth to both households",
+    "conf": 62
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/33-Bakula-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     134,
+     356
+    ],
+    "bbox": [
+     397,
+     1167,
+     2245,
+     1425
+    ],
+    "shape": "box",
+    "en": "Bakula lived in unimaginable luxury for 80 years, never experiencing single moment of illness. He spent four months in each city, traveling between them on grand barge attended by entertainers.",
+    "conf": 89
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/33-Bakula-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "AVA",
+   "When",
+   "Bakula",
+   "was",
+   "80,",
+   "Buddha",
+   "Gotama",
+   "arrived",
+   "Kosambi.",
+   "Prompted",
+   "lifetimes",
+   "meritorious",
+   "deeds,",
+   "Bakula",
+   "offered",
+   "flowers",
+   "and",
+   "listened",
+   "the",
+   "Dhamma.",
+   "immediately",
+   "abandoned",
+   "his",
+   "wealth",
+   "ordain."
+  ]
+ },
+ {
+  "img": "images/33-Bakula-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     191,
+     342
+    ],
+    "bbox": [
+     202,
+     1071,
+     2440,
+     1438
+    ],
+    "shape": "bubble",
+    "en": "As monastic, he remained worldling for just seven days. At the dawn of the eighth day, Venerable Bakula attained Arahatship, complete with the fourfold analytical knowledge.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "ING",
+   "AD)",
+   "ING"
+  ]
+ },
+ {
+  "img": "images/33-Bakula-27-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     194,
+     309
+    ],
+    "bbox": [
+     562,
+     992,
+     2080,
+     1369
+    ],
+    "shape": "box",
+    "en": "Even as monk, his dual heritage provided for him perfectly. He wore Kosambi offerings for half month, and Baranasi offerings for the other half, lacking absolutely nothing.",
+    "conf": 62
+   }
+  ],
+  "loose": [
+   "Ay)"
+  ]
+ },
+ {
+  "img": "images/33-Bakula-28-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     223,
+     255
+    ],
+    "bbox": [
+     579,
+     833,
+     2063,
+     1408
+    ],
+    "shape": "box",
+    "en": "Because he never experienced even fleeting moment of illness in his entire life, the Buddha declared him etad-agga: Monastics, among my monastic disciples who enjoy good health, Bakula is the foremost.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ }
+]

@@ -1,0 +1,860 @@
+[
+ {
+  "img": "images/27-Bahiya-Daruciriya-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Story",
+   "Ven.",
+   "Bahiya",
+   "Daruciriya",
+   "(Part",
+   "journey",
+   "Samsara—from",
+   "mountain",
+   "peak",
+   "shattered",
+   "ship.",
+   "WF,",
+   "Bahiya",
+   "through"
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     127,
+     317
+    ],
+    "bbox": [
+     331,
+     1032,
+     2311,
+     1352
+    ],
+    "shape": "box",
+    "en": "In Hamsavati, layman witnessed ed Buddha Padumuttara praise monk for rapid Awakening. Offering grand gifts, he aspired to that exact distinction.",
+    "conf": 66
+   }
+  ],
+  "loose": [
+   "Oss",
+   "AY,",
+   "alt"
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     164,
+     43
+    ],
+    "bbox": [
+     413,
+     129,
+     2232,
+     602
+    ],
+    "shape": "bubble",
+    "en": "Eras later during in Buddha Kassapa’s waning teaching, seven ascetics climbed sheer cliff and pushed away their ladder, choosing death or Awakening.",
+    "conf": 61
+   }
+  ],
+  "loose": [
+   "NiS",
+   "INS"
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     159,
+     332
+    ],
+    "bbox": [
+     334,
+     1035,
+     2308,
+     1356
+    ],
+    "shape": "box",
+    "en": "The eldest hone an Arahat in five ay He offered supernormal alms from Uttarakuru. The remaining six refused, ee honoring their life-or-death -or- pact.",
+    "conf": 32
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "second",
+   "attained",
+   "the",
+   "state.",
+   "The",
+   "remaining",
+   "five",
+   "perished",
+   "unawakened.",
+   "Drifting",
+   "through",
+   "realms,",
+   "they",
+   "were",
+   "reborn",
+   "Buddha",
+   "Gotama’s",
+   "era",
+   "King",
+   "Pukkusati,",
+   "Sabhiya,",
+   "Kumara",
+   "Kassapa,",
+   "Ven.",
+   "Dabba,",
+   "and",
+   "Bahiya.",
+   "WAS"
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "IN'",
+   "Reborn",
+   "the",
+   "Bahiya",
+   "grew",
+   "merchant.",
+   "Seeking",
+   "fortune,",
+   "embarked",
+   "sea",
+   "voyage",
+   "toward",
+   "Suvannabhumi.",
+   "wealthy",
+   "ahiya",
+   "country,"
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     60,
+     36
+    ],
+    "bbox": [
+     69,
+     76,
+     1547,
+     850
+    ],
+    "shape": "bubble",
+    "en": "OAT OTT NEL NEEL NEL NEEL OIA RON AGN VA EES DSS, Disaster struck on the high SS iS 4 The perished, VA LOS seas. crew Sy ELEN Ss 4 consumed by fish and turtles. VA Destined for his final existence, VBA VA Bahiya drifted on shattered iw wood for seven days. WA KZ FS SSS WS Fes EEN ESN EEE NEN",
+    "conf": 31
+   }
+  ],
+  "loose": [
+   "ASN"
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Washing",
+   "ashore",
+   "Supparaka,",
+   "naked",
+   "and",
+   "destitute,",
+   "fashioned",
+   "crude",
+   "garment",
+   "from",
+   "reservoir",
+   "water",
+   "plants",
+   "and",
+   "claimed",
+   "broken",
+   "vessel",
+   "his",
+   "alms",
+   "bowl."
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ING",
+   "His",
+   "ated",
+   "the",
+   "town.",
+   "Believing",
+   "him",
+   "Arahat,",
+   "fine",
+   "clothes.",
+   "Craving",
+   "continued",
+   "reverence,",
+   "Bahiya",
+   "refused,",
+   "cementing",
+   "his",
+   "holy",
+   "facade.",
+   "WY.",
+   "Arahat,",
+   "offered",
+   "his",
+   "extreme",
+   "austeri",
+   "offered"
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Trapped",
+   "public",
+   "perception,",
+   "committed",
+   "the",
+   "act.",
+   "Stringing",
+   "together",
+   "wood",
+   "fibres,",
+   "became",
+   "forever",
+   "known",
+   "“Bahiya",
+   "Daruciriya",
+   "Bahiya",
+   "the",
+   "wooden",
+   "garments",
+   "VAS"
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     430,
+     33
+    ],
+    "bbox": [
+     1339,
+     76,
+     2410,
+     589
+    ],
+    "shape": "bubble",
+    "en": "Performative Asceticism NW, LAS",
+    "conf": 44
+   },
+   {
+    "seed": [
+     246,
+     374
+    ],
+    "bbox": [
+     241,
+     1227,
+     2400,
+     1392
+    ],
+    "shape": "box",
+    "en": "tragic contrast: contrast: the monastic ai once chose starvation over broken rules now lived as bogus Arahat, surviving on the credulity of villagers.",
+    "conf": 49
+   }
+  ],
+  "loose": [
+   "ING"
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     394,
+     315
+    ],
+    "bbox": [
+     440,
+     770,
+     2404,
+     1395
+    ],
+    "shape": "bubble",
+    "en": "The Anagami from the mountain, now Suddhavasa Brahma, reviewed his friends’ fates. Seeing Bahiya’s deceit, he descended in divine splendor to am Wie shatter the illusion.",
+    "conf": 49
+   }
+  ],
+  "loose": [
+   "AND",
+   "WY,"
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "You",
+   "are",
+   "Arahat,",
+   "Bahiya.",
+   "You",
+   "have",
+   "not",
+   "even",
+   "begun",
+   "the",
+   "path.",
+   "Buddha",
+   "Gotama",
+   "has",
+   "appeared",
+   "the",
+   "world.",
+   "Jetavana"
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     254,
+     271
+    ],
+    "bbox": [
+     681,
+     863,
+     1961,
+     1253
+    ],
+    "shape": "box",
+    "en": "Driven by spiritual urgency, Bahiya Daructriya traveled 120 leagues in single night. He reached Savatthi by morning, seeking the path to Nibbana.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "(NA",
+   "ISS"
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     291,
+     61
+    ],
+    "bbox": [
+     936,
+     172,
+     2146,
+     546
+    ],
+    "shape": "box",
+    "en": "At Jetavana monastery, resting monastics advised him to wash and wait. But Bahiya, acutely aware of life’s fragility and uncertain of his own lifespan, refused. He rushed directly into the city to find the Buddha.",
+    "conf": 88
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     175,
+     74
+    ],
+    "bbox": [
+     469,
+     155,
+     2172,
+     387
+    ],
+    "shape": "box",
+    "en": "Finding aime the Buddha on alms round, Bahiya prostrated in the street. Twice he passionately begged for discourse. Twice the Buddha declined, stating they were in the city and it was not the pro er time.",
+    "conf": 83
+   }
+  ],
+  "loose": [
+   "BY,"
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     74,
+     91
+    ],
+    "bbox": [
+     215,
+     274,
+     926,
+     1210
+    ],
+    "shape": "box",
+    "en": "The Buddha waited for third request, allowing four essential conditions to align: 1. Bahiya’s mind calmed into equanimity. 2. Extreme physical fatigue faded. 3. Spiritual faculties fully ripened. 4, Fatal danger to his life became imminent.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     121,
+     325
+    ],
+    "bbox": [
+     337,
+     1061,
+     2304,
+     1316
+    ],
+    "shape": "box",
+    "en": "Recognizing the moment, the Buddha delivered profound instruction on bare awareness: ‘In the seen, just the seen. In the heard, just the heard. In the experienced, just the experienced. In the cognized, just the cognized.’",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "OLA",
+   "INS"
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Attachment",
+   "Hatred",
+   "Delusion",
+   "stopping",
+   "bare",
+   "awareness,",
+   "attachment,",
+   "hatred,",
+   "and",
+   "delusion",
+   "cannot",
+   "arise.",
+   "Without",
+   "these",
+   "pollutants",
+   "clouding",
+   "perception,",
+   "craving",
+   "and",
+   "conceit",
+   "vanish.",
+   "The",
+   "illusion",
+   "and",
+   "“mine”",
+   "completely",
+   "shattered."
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "When",
+   "you",
+   "are",
+   "not",
+   "subjected",
+   "craving,",
+   "conceit,",
+   "wrong",
+   "view,",
+   "you",
+   "will",
+   "longer",
+   "reborn.",
+   "The",
+   "non-arising",
+   "fresh",
+   "mind-and-matter",
+   "the",
+   "complete",
+   "end",
+   "dukkha."
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Listening",
+   "intently,",
+   "Bahiya",
+   "instantly",
+   "attained",
+   "Arahatship",
+   "alongside",
+   "the",
+   "fourfold",
+   "analytical",
+   "knowledge",
+   "(patisambhida-nana).",
+   "Endowed",
+   "with",
+   "inherent",
+   "past",
+   "merit,",
+   "effortlessly",
+   "destroyed",
+   "all",
+   "mental",
+   "pollutants",
+   "single,",
+   "transformative",
+   "moment."
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     156,
+     377
+    ],
+    "bbox": [
+     374,
+     1213,
+     625,
+     1349
+    ],
+    "shape": "bubble",
+    "en": "CEN",
+    "conf": 79
+   }
+  ],
+  "loose": [
+   "Having",
+   "Awakened,",
+   "Bahiya",
+   "requested",
+   "join",
+   "the",
+   "Sangha.",
+   "The",
+   "Buddha",
+   "instructed",
+   "him",
+   "first",
+   "gather",
+   "alms",
+   "bowl",
+   "and",
+   "robes.",
+   "While",
+   "searching",
+   "the",
+   "city",
+   "for",
+   "rags,",
+   "Bahiya",
+   "was",
+   "tragically",
+   "gored",
+   "death",
+   "protective",
+   "cow.",
+   "(Cr"
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "whe",
+   "whe",
+   "whe",
+   "Discovering",
+   "Bahiya’s",
+   "body,",
+   "the",
+   "Buddha",
+   "instructed",
+   "the",
+   "monastics",
+   "carry",
+   "him",
+   "stretcher.",
+   "ordered",
+   "them",
+   "perform",
+   "proper",
+   "cremation",
+   "and",
+   "enshrine",
+   "his",
+   "relics",
+   "stupa,",
+   "honoring",
+   "his",
+   "profound",
+   "achievement."
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     118,
+     344
+    ],
+    "bbox": [
+     281,
+     1131,
+     2371,
+     1408
+    ],
+    "shape": "box",
+    "en": "When ihe monastics asked BOWE about Bahiya’s rebirth, ae Buddha confirmed his supermundane attainment “Bahiya was wise. He trained in accordance with the truth and caused me no trouble. He has made See eu of dukkha.”",
+    "conf": 34
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "als",
+   "Marveling",
+   "his",
+   "rapid",
+   "Awakeni",
+   "ng,",
+   "the",
+   "Buddha",
+   "uttered",
+   "Dhammapada",
+   "vs.",
+   "101:",
+   "“Better",
+   "than",
+   "thousand",
+   "useless",
+   "verses",
+   "one",
+   "beneficial",
+   "verse",
+   "that",
+   "calms",
+   "the",
+   "hearer.”",
+   "Upon",
+   "hearing",
+   "this,",
+   "many",
+   "others",
+   "the",
+   "assembly",
+   "ate",
+   "gained",
+   "path-knowledge.",
+   "ning,",
+   "ledge."
+  ]
+ },
+ {
+  "img": "images/27-Bahiya-Daruciriya-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Later,",
+   "the",
+   "Buddha",
+   "formally",
+   "declared",
+   "Bahiya",
+   "Daruciriya",
+   "the",
+   "foremost",
+   "(etad-agga)",
+   "among",
+   "his",
+   "disciples",
+   "who",
+   "gained",
+   "path-knowledge",
+   "quickly",
+   "permanent",
+   "testament",
+   "immense",
+   "power",
+   "ripe",
+   "faculties",
+   "and",
+   "urgent,",
+   "unwavering",
+   "practice."
+  ]
+ }
+]

@@ -1,0 +1,488 @@
+[
+ {
+  "img": "images/06-Bhaddiya-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     234,
+     74
+    ],
+    "bbox": [
+     645,
+     112,
+     2004,
+     836
+    ],
+    "shape": "bubble",
+    "en": "Ven. Bhaddiya’s karmic journey of royal renunciation and supreme bliss. Discover how king abandoned his throne to become the foremost monastic of high family",
+    "conf": 37
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/06-Bhaddiya-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "100,000",
+   "aeons",
+   "ago,",
+   "Buddha",
+   "Padumuttara",
+   "declared",
+   "monk",
+   "foremost",
+   "among",
+   "those",
+   "high",
+   "family.",
+   "Inspired,",
+   "wealthy",
+   "householder",
+   "resolved",
+   "achieve",
+   "this",
+   "exact",
+   "spiritual",
+   "honor",
+   "the",
+   "future.",
+   "KKK"
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     495,
+     74
+    ],
+    "bbox": [
+     1478,
+     231,
+     2473,
+     579
+    ],
+    "shape": "bubble",
+    "en": "To seal his aspiration, he hosted magnificent seven-day almsgiving for the Sangha. He sought no worldly luxury or status—only the supreme spiritual title of foremost in noble birth",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "VIN,"
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "AGY",
+   "Surveying",
+   "the",
+   "future,",
+   "the",
+   "Buddha",
+   "made",
+   "definitive",
+   "prophecy.",
+   "declared",
+   "that",
+   "exactly",
+   "100,000",
+   "aeons,",
+   "under",
+   "the",
+   "Dispensation",
+   "Buddha",
+   "Gotama,",
+   "the",
+   "householder’s",
+   "wish",
+   "would",
+   "perfectly",
+   "fulfilled.",
+   "WAN",
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     353,
+     163
+    ],
+    "bbox": [
+     942,
+     390,
+     1706,
+     1154
+    ],
+    "shape": "bubble",
+    "en": "Assured of his destiny, he spent lifetimes accumulating specific merits He donated teachers’ seats beautifully woven covers, fans and brilliant lights for the monastic assembly",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "(SS"
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Born",
+   "later",
+   "noticed",
+   "Paccekabuddhas",
+   "dining",
+   "uncomfortably",
+   "the",
+   "Ganges.",
+   "installed",
+   "eight",
+   "great",
+   "stone",
+   "slabs",
+   "for",
+   "their",
+   "comfort,",
+   "offering",
+   "them",
+   "food",
+   "daily",
+   "for",
+   "his",
+   "entire",
+   "life."
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     233,
+     82
+    ],
+    "bbox": [
+     251,
+     126,
+     2400,
+     522
+    ],
+    "shape": "bubble",
+    "en": "His is final rebirth was Prince Bhaddiya of Kapilavatthu. His mother was Kaligodha, the eldest Sakyan princess. He belonged to the absolute pinnacle of royal society.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "WIN"
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Because",
+   "King",
+   "Suddhodana",
+   "was",
+   "over",
+   "ninety",
+   "years",
+   "old,",
+   "leadership",
+   "passed",
+   "the",
+   "younge",
+   "generation.",
+   "the",
+   "senior-most",
+   "noble,",
+   "Bhaddiya",
+   "was",
+   "elected",
+   "King",
+   "the",
+   "Sakyans."
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "VINE",
+   "Abandoning",
+   "the",
+   "Bhaddiya",
+   "ordained",
+   "alongside",
+   "five",
+   "fellow",
+   "Sakyan",
+   "princes",
+   "Upali",
+   "the",
+   "barber.",
+   "traded",
+   "immense",
+   "royal",
+   "power",
+   "for",
+   "the",
+   "pursuit",
+   "total",
+   "liberation",
+   "throne,"
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     351,
+     90
+    ],
+    "bbox": [
+     909,
+     294,
+     1739,
+     529
+    ],
+    "shape": "box",
+    "en": "During his very first Rains Retreat at the Anupiya Mango Grove, Ven. Bhaddiya realized the ultimate truth, becoming fully awakened Arahat.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "(NG"
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     229,
+     50
+    ],
+    "bbox": [
+     43,
+     89,
+     1058,
+     635
+    ],
+    "shape": "bubble",
+    "en": "INS",
+    "conf": 87
+   }
+  ],
+  "loose": [
+   "Experiencing",
+   "the",
+   "profound",
+   "bliss",
+   "liberation,",
+   "repeatedly",
+   "exclaimed,",
+   "\"Blissful",
+   "am!\"",
+   "Worldling",
+   "monks",
+   "misunderstood,",
+   "assuming",
+   "was",
+   "nostalgic",
+   "for",
+   "his",
+   "lost",
+   "royal",
+   "luxuries."
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     82,
+     99
+    ],
+    "bbox": [
+     155,
+     202,
+     850,
+     1339
+    ],
+    "shape": "box",
+    "en": "The monks reported this behavior to the Buddha. The Buddha clarified that Bhaddiya’s profound joy came not from worldly attachment, but from absolute spiritual freedom.",
+    "conf": 83
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/06-Bhaddiya-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     269,
+     47
+    ],
+    "bbox": [
+     526,
+     109,
+     2123,
+     417
+    ],
+    "shape": "box",
+    "en": "Fulfiling Fulfilling vow made 100,000 aeons cone prior, the Buddha. declared Ven. Bhaddiya the absolute foremost among all monastic disciples belonging to anf family.",
+    "conf": 39
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/06-Bhaddiya-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     138,
+     95
+    ],
+    "bbox": [
+     357,
+     215,
+     956,
+     314
+    ],
+    "shape": "box",
+    "en": "The Seeds",
+    "conf": 97
+   }
+  ],
+  "loose": [
+   "The",
+   "Maha-Dana",
+   "Foremost",
+   "Offering",
+   "Spiritual",
+   "Title",
+   "Donating",
+   "Royal",
+   "Stone",
+   "Slabs",
+   "Birth",
+   "Giving",
+   "Ultimate",
+   "Kingship",
+   "Spiritual",
+   "Bliss",
+   "Sakyan"
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ven.",
+   "Bhaddiya",
+   "proves",
+   "that",
+   "worldly",
+   "nobility",
+   "pales",
+   "compared",
+   "the",
+   "Dhamma.",
+   "was",
+   "king",
+   "who",
+   "found",
+   "true",
+   "majesty",
+   "only",
+   "robes.",
+   "WAN"
+  ]
+ }
+]

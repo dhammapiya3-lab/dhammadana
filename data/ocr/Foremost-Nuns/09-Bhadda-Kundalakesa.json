@@ -1,0 +1,802 @@
+[
+ {
+  "img": "images/09-Bhadda-Kundalakesa-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     320,
+     33
+    ],
+    "bbox": [
+     896,
+     56,
+     1746,
+     483
+    ],
+    "shape": "box",
+    "en": "The Lives of Bhadda Kundalakesa",
+    "conf": 86
+   }
+  ],
+  "loose": [
+   "SNG"
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     87,
+     72
+    ],
+    "bbox": [
+     188,
+     192,
+     1408,
+     546
+    ],
+    "shape": "box",
+    "en": "In Jfarnsavati, before Buddha Padumuttara, she saw nun Subba praised for quickest insight. Making grand offering, she aspired for this exact honor. The Buddha prophesied her future success.",
+    "conf": 43
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Wis",
+   "Princess",
+   "Kassapa’s",
+   "era",
+   "Baranasi.",
+   "and",
+   "ber",
+   "sisters",
+   "lived",
+   "chastity",
+   "for",
+   "20,000",
+   "years,",
+   "supporting",
+   "vast",
+   "monastic",
+   "complex",
+   "for",
+   "the",
+   "and",
+   "building",
+   "immense",
+   "merit.",
+   "Bhikkbadayika",
+   "Reborn",
+   "during",
+   "She"
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Reborn",
+   "That",
+   "same",
+   "Sattuka",
+   "was",
+   "born",
+   "the",
+   "king’s",
+   "counsellor.",
+   "Astrological",
+   "stars",
+   "aligned",
+   "with",
+   "violence;",
+   "weapons",
+   "mysteriously",
+   "across",
+   "the",
+   "city.",
+   "Sattuka’s",
+   "thief",
+   "was",
+   "sealed.",
+   "ttuka",
+   "dark",
+   "fate",
+   "day,"
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     511,
+     63
+    ],
+    "bbox": [
+     1544,
+     185,
+     2463,
+     631
+    ],
+    "shape": "box",
+    "en": "Sattuka stole from age two. Abandoned by bis father with dark cloth and rope ladder, be became Rajagaha’s most formidable housebreaker, leaving gaping boles in the city’s wealthy homes. yee",
+    "conf": 34
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Caught",
+   "undercover",
+   "guards,",
+   "the",
+   "king",
+   "sentenced",
+   "Sattuka",
+   "death.",
+   "Bound",
+   "and",
+   "savagely",
+   "whipped",
+   "with",
+   "1,000",
+   "lashes",
+   "every",
+   "crossroads,",
+   "the",
+   "thief",
+   "was",
+   "marched",
+   "toward",
+   "the",
+   "south",
+   "gate",
+   "for",
+   "execution."
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     434,
+     261
+    ],
+    "bbox": [
+     1365,
+     780,
+     2466,
+     1309
+    ],
+    "shape": "box",
+    "en": "Watching through her window, Bhadda saw the bleeding thief. Bound by mutual affection from past existences, she fell deeply in love, declaring to her parents she would rather die than live without him.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Cle",
+   "(0)",
+   "Ke)"
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     223,
+     59
+    ],
+    "bbox": [
+     701,
+     175,
+     1934,
+     483
+    ],
+    "shape": "box",
+    "en": "Desperate, her father bribed the mayor with 1,000 coins substitute prisoner was stealthily executed at sundown Sattuka was bathed in scented water, finely adorned and secretly delivered to Bhadda.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     193,
+     325
+    ],
+    "bbox": [
+     238,
+     1075,
+     2371,
+     1322
+    ],
+    "shape": "box",
+    "en": "Coveting Bhadda’ Bha dd lavish ornaments, Sattuka hatched wicked plot. He falsely claimed he owed his life to the guardian spirit of Mount Corapapata, insisting they must climb the mountain together to make an offering.",
+    "conf": 83
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     69,
+     64
+    ],
+    "bbox": [
+     202,
+     192,
+     1217,
+     546
+    ],
+    "shape": "box",
+    "en": "Innocent Bhadda prepared grand offerings. At the mountain’s base, Sattuka deceitfully dismissed her attendants. Carrying the offering on her head, Bhadda climbed the steep path alone with her husband, unaware of his murderous intent.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     202,
+     334
+    ],
+    "bbox": [
+     529,
+     1061,
+     2113,
+     1303
+    ],
+    "shape": "box",
+    "en": "At the summit, Sattuka’s tone turned violent. “Take “Take off your ornaments and wrap them up. brought you here to rob you, not to worship.” Bhadda suddenly realized her grave peril",
+    "conf": 73
+   }
+  ],
+  "loose": [
+   "ASS"
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     110,
+     65
+    ],
+    "bbox": [
+     228,
+     188,
+     2414,
+     479
+    ],
+    "shape": "box",
+    "en": "Masking her realization, Bhadda employed her wit. She asked for one final embrace. ‘Allow me to show my love, to embrace you from the front, the sides, and the rear,’ she pleaded.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     78,
+     65
+    ],
+    "bbox": [
+     188,
+     188,
+     1372,
+     628
+    ],
+    "shape": "box",
+    "en": "She embraced him from the front, then slipped to his rear. Pretending to hug him again, she shoved him violently over the precipice. He fell headlong into the deep crevice, torn apart",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "INS"
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     112,
+     326
+    ],
+    "bbox": [
+     228,
+     1058,
+     2414,
+     1316
+    ],
+    "shape": "box",
+    "en": "Witnessing her courage, the mountain spirit praised her astute wisdom: wise person is not always man. woman with discerning wit who quickly finds solution, can very well be the wise one.”",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "Ly,"
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     174,
+     73
+    ],
+    "bbox": [
+     542,
+     212,
+     2103,
+     460
+    ],
+    "shape": "box",
+    "en": "Disillusioned by worldly life, Bhadda left the mountain. Wandering until she found female ascetics, she requested the most valued mode of admission, stepping onto the path of ultimate liberation.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Her",
+   "ascetic",
+   "teachers",
+   "plucked",
+   "Bhadda’s",
+   "When",
+   "her",
+   "hair",
+   "regrew",
+   "tight",
+   "rings,",
+   "hair",
+   "with",
+   "palmyra",
+   "shell—a",
+   "painful",
+   "she",
+   "new",
+   "name:",
+   "but",
+   "initiation.",
+   "“one",
+   "with",
+   "earring-like",
+   "coils",
+   "hair.”",
+   "DOS",
+   "NWA"
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Exhausting",
+   "her",
+   "teachers’",
+   "knowledge,",
+   "Kundalakesa",
+   "roamed",
+   "unmatched",
+   "debater.",
+   "each",
+   "town,",
+   "she",
+   "built",
+   "sand",
+   "heap",
+   "topped",
+   "with",
+   "rose-apple",
+   "twig.",
+   "Anyone",
+   "daring",
+   "challenge",
+   "her",
+   "was",
+   "signaled",
+   "trample",
+   "it.",
+   "VAN"
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Arriving",
+   "Savatthi,",
+   "Kundalakesa",
+   "erected",
+   "her",
+   "challenge.",
+   "Ven.",
+   "Sariputta,",
+   "Captain",
+   "the",
+   "Doctrine,",
+   "noticed",
+   "the",
+   "symbol",
+   "while",
+   "completing",
+   "his",
+   "humble",
+   "monastic",
+   "duties",
+   "tending",
+   "the",
+   "monastery",
+   "and",
+   "the",
+   "sick.",
+   "ale",
+   "all"
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ause",
+   "Effect",
+   "the",
+   "Ven.",
+   "Sariputta",
+   "instructed",
+   "local",
+   "children",
+   "trample",
+   "it.",
+   "Discovering",
+   "her",
+   "destroyed",
+   "challenge,",
+   "Kundalakesa",
+   "rallied",
+   "massive",
+   "crowd,",
+   "this",
+   "worthy",
+   "meaning,",
+   "seeking",
+   "public",
+   "victory",
+   "against",
+   "opponent.",
+   "ing,",
+   "Cause",
+   "the"
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Seated",
+   "beneath",
+   "tree,",
+   "the",
+   "great",
+   "debate",
+   "commenced.",
+   "unleashed",
+   "her",
+   "vast",
+   "doctrinal",
+   "knowledge,",
+   "aggressively",
+   "questioning",
+   "Ven.",
+   "Sariputta.",
+   "With",
+   "calm",
+   "mastery,",
+   "effortlessly",
+   "answered",
+   "every",
+   "single",
+   "inquiry",
+   "she",
+   "posed."
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     297,
+     156
+    ],
+    "bbox": [
+     840,
+     489,
+     1802,
+     995
+    ],
+    "shape": "box",
+    "en": "Then, the tables turned. Ven. Sariputta asked one question: “What is the one factor that needs to be fully understood?” (ekam nama kim). Stunned, the brilliant Kundalakesa could not answer.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Recognizing",
+   "his",
+   "profound",
+   "wisdom,",
+   "she",
+   "asked",
+   "him",
+   "for",
+   "refuge.",
+   "Ven.",
+   "Sariputta",
+   "humbly",
+   "directed",
+   "her",
+   "away",
+   "from",
+   "himself,",
+   "pointing",
+   "toward",
+   "Jetavana",
+   "monastery:",
+   "“Go",
+   "and",
+   "take",
+   "refuge",
+   "the",
+   "Buddha.”",
+   "ZA)"
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Kundalakesa",
+   "approached",
+   "the",
+   "Kundalakesa",
+   "approached",
+   "the",
+   "Buddha,",
+   "who",
+   "knew",
+   "her",
+   "mind",
+   "was",
+   "ripe",
+   "for",
+   "Awakening.",
+   "spoke",
+   "verse:",
+   "“Better",
+   "than",
+   "thousand",
+   "useless",
+   "verses",
+   "one",
+   "single",
+   "verse",
+   "that",
+   "brings",
+   "peace.”"
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     95,
+     327
+    ],
+    "bbox": [
+     222,
+     1071,
+     2420,
+     1313
+    ],
+    "shape": "box",
+    "en": "Hearing this, Kundalakesa instantly became an Arahat endowed with the four analytic knowledges. She requested ordination and joyfully ene the Sangha uly ordained nun.",
+    "conf": 34
+   }
+  ],
+  "loose": [
+   "VW,",
+   "VW,",
+   "VW,",
+   "VW,",
+   "oje"
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Surrounded",
+   "the",
+   "assembly,",
+   "the",
+   "Buddha",
+   "declared",
+   "Bhadda",
+   "Kundalakesa",
+   "foremost",
+   "(etad-agga)",
+   "among",
+   "his",
+   "female",
+   "monastic",
+   "disciples",
+   "who",
+   "attain",
+   "path-knowledge",
+   "quickly",
+   "nnanam",
+   "knowledge",
+   "WAS"
+  ]
+ }
+]

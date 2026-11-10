@@ -1,0 +1,1197 @@
+[
+ {
+  "img": "images/30-Ananda-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Lives",
+   "Ven.",
+   "Ananda",
+   "100,000",
+   "aeons",
+   "merit,",
+   "preparation,",
+   "and",
+   "devotion."
+  ]
+ },
+ {
+  "img": "images/30-Ananda-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "100,000",
+   "aeons",
+   "ago",
+   "Buddha",
+   "Padumuttara",
+   "appeared.",
+   "His",
+   "royal",
+   "father,",
+   "King",
+   "Ananda,",
+   "attended",
+   "him.",
+   "The",
+   "Buddha’s",
+   "half-brother,",
+   "Prince",
+   "Sumana,",
+   "governed",
+   "distant",
+   "province."
+  ]
+ },
+ {
+  "img": "images/30-Ananda-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     140,
+     89
+    ],
+    "bbox": [
+     136,
+     274,
+     1286,
+     985
+    ],
+    "shape": "bubble",
+    "en": "Worldly Wealth (left behind at death) WS Td AS Sot <6",
+    "conf": 36
+   },
+   {
+    "seed": [
+     501,
+     84
+    ],
+    "bbox": [
+     1359,
+     274,
+     2506,
+     436
+    ],
+    "shape": "box",
+    "en": "Meritorious Wealth (eternal)",
+    "conf": 96
+   },
+   {
+    "seed": [
+     144,
+     331
+    ],
+    "bbox": [
+     136,
+     1078,
+     1286,
+     1339
+    ],
+    "shape": "box",
+    "en": "Worldly Wealth (left behind at death) Elephants, gems, towns.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     498,
+     326
+    ],
+    "bbox": [
+     1359,
+     1078,
+     2506,
+     1339
+    ],
+    "shape": "box",
+    "en": "Mer Meritorious ito orious rious Wealth (eternal) Attending the Buddha for one Rains Retreat (Vassa).",
+    "conf": 72
+   }
+  ],
+  "loose": [
+   "After",
+   "quelling",
+   "rebellion,",
+   "Prince",
+   "Sumana",
+   "earned",
+   "royal",
+   "boon.",
+   "chose:",
+   "fter"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     508,
+     66
+    ],
+    "bbox": [
+     1574,
+     136,
+     2569,
+     631
+    ],
+    "shape": "box",
+    "en": "The King warned dt that hat the Buddha’s mind is unknown. At the monastery, monastics explained they could not simply demand an audience. Only his personal attendant, Ven. Sumana, held that privilege.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "WY,"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-05-Original.jpg",
+  "size": [
+   2645,
+   1487
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     258,
+     33
+    ],
+    "bbox": [
+     704,
+     69,
+     2053,
+     526
+    ],
+    "shape": "box",
+    "en": "Ven. ra Sumana entered the apo-kasina-jhana -kasina -jhana (water-object bje ct absorption). He turned solid earth into mind-made -made water, diving seamlessly into the Buddha’s Perfumed Chamber to announce the Prince.",
+    "conf": 55
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/30-Ananda-06-Original.jpg",
+  "size": [
+   2645,
+   1487
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     310,
+     403
+    ],
+    "bbox": [
+     962,
+     1319,
+     1676,
+     1435
+    ],
+    "shape": "box",
+    "en": "2. Keeping morality",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "The",
+   "Prince",
+   "asked:",
+   "“How",
+   "does",
+   "one",
+   "become",
+   "close",
+   "disciple?”",
+   "The",
+   "Buddha",
+   "revealed",
+   "three",
+   "pillars",
+   "practice:",
+   "Giving",
+   "generosity",
+   "Observing",
+   "precepts"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-07-Original.jpg",
+  "size": [
+   2645,
+   1487
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     509,
+     197
+    ],
+    "bbox": [
+     1577,
+     532,
+     2380,
+     1018
+    ],
+    "shape": "box",
+    "en": "The Buddha accepted the retreat invitation. Prince Sumana built magnificent rest-houses at one-league intervals along the entire 120-league journey for the Buddha and 100,000 monastics.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "ANY"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     491,
+     119
+    ],
+    "bbox": [
+     1580,
+     393,
+     2056,
+     469
+    ],
+    "shape": "box",
+    "en": "Perfumed Chamber",
+    "conf": 96
+   },
+   {
+    "seed": [
+     357,
+     281
+    ],
+    "bbox": [
+     674,
+     704,
+     1967,
+     1170
+    ],
+    "shape": "bubble",
+    "en": "SS latrines, and tk day-and-night sheds AF aad",
+    "conf": 39
+   }
+  ],
+  "loose": [
+   "The",
+   "bought",
+   "Sobhana",
+   "Park",
+   "for",
+   "100,000",
+   "pieces",
+   "money.",
+   "spent",
+   "another",
+   "100,000",
+   "constructing:",
+   "quarters",
+   "for",
+   "100,000",
+   "monastics",
+   "INE",
+   "Prince",
+   "Prince",
+   "The",
+   "pieces",
+   "money."
+  ]
+ },
+ {
+  "img": "images/30-Ananda-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "For",
+   "three",
+   "months,",
+   "Prince",
+   "Sumana",
+   "entrusted",
+   "his",
+   "followers",
+   "serve",
+   "the",
+   "Knowing",
+   "Buddhas",
+   "value",
+   "Dhamma",
+   "over",
+   "material",
+   "gifts,",
+   "stayed",
+   "the",
+   "monastery",
+   "wearing",
+   "only",
+   "two",
+   "cloths,",
+   "observing",
+   "the",
+   "ten",
+   "precepts.",
+   "Sangha.",
+   "eos"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     150,
+     84
+    ],
+    "bbox": [
+     417,
+     215,
+     1643,
+     499
+    ],
+    "shape": "box",
+    "en": "At the retreat’s end, Prince Sumana offered three robes to 100,000 monastics. He declared his vow: Not for worldly glory, glory, but to become the personal attendant to future Buddha.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/30-Ananda-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     494,
+     259
+    ],
+    "bbox": [
+     1438,
+     840,
+     2457,
+     1289
+    ],
+    "shape": "box",
+    "en": "Buddha Padumuttara reviewed the future and prophesied the Prince’s aspiration would be fulfilled Prince Sumana felt as certain as if he were to serve Buddha Gotama the very next day.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/30-Ananda-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     290,
+     138
+    ],
+    "bbox": [
+     850,
+     436,
+     1792,
+     731
+    ],
+    "shape": "box",
+    "en": "After Deva rebirth, his merit continued. During Buddha Kassapa’s era, he donated his own cloak to monastic to serve as resting base for his alms bowl.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/30-Ananda-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     122,
+     271
+    ],
+    "bbox": [
+     142,
+     873,
+     1111,
+     1349
+    ],
+    "shape": "box",
+    "en": "Reborn eight Paccekabuddhas as ths King of Baranasi, flying he from saw Mount Gandhamadana. He built them eight royal dwellings with ruby stands for their bowls, serving them for 10,000 years.",
+    "conf": 39
+   }
+  ],
+  "loose": [
+   "MOUNT",
+   "GANDHAMADANA",
+   "ese"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-14-Original.jpg",
+  "size": [
+   2645,
+   1487
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     145,
+     72
+    ],
+    "bbox": [
+     245,
+     145,
+     2414,
+     479
+    ],
+    "shape": "box",
+    "en": "great aspiration requires unimaginable patience. Across 100,000 aeons—from border prince to King of Baranasi—Ven. Ananda perfected generosity, morality, and precepts to prepare for his ultimate role.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "Padumuttara",
+   "Buddha",
+   "Kassapa",
+   "The",
+   "Future",
+   "(The",
+   "Vow)",
+   "(The",
+   "Cloak)",
+   "(The",
+   "Ruby",
+   "Stands)",
+   "Buddha",
+   "Paccekabuddhas"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "foundation",
+   "merit",
+   "was",
+   "laid",
+   "across",
+   "aeons.",
+   "The",
+   "time",
+   "for",
+   "the",
+   "fulfillment",
+   "the",
+   "great",
+   "prophecy",
+   "approaches."
+  ]
+ },
+ {
+  "img": "images/30-Ananda-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     208,
+     266
+    ],
+    "bbox": [
+     658,
+     856,
+     1984,
+     1223
+    ],
+    "shape": "box",
+    "en": "After 100,000 aeons of merit, he passed from the Tusita Realm. Reborn in Kapilavatthu to Prince Amitodana, he was named Ananda—meaning ‘Joy —for the happiness his birth brought the family.",
+    "conf": 84
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/30-Ananda-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "During",
+   "Buddha",
+   "Gotama’s",
+   "first",
+   "visit",
+   "Kapilavatthu,",
+   "Ananda",
+   "renounced",
+   "worldly",
+   "life.",
+   "Alongside",
+   "Sakyan",
+   "princes",
+   "led",
+   "Bhaddiya,",
+   "ordained",
+   "monastic",
+   "disciple",
+   "the",
+   "lush",
+   "Anupiya",
+   "Grove.",
+   "pilavatthu,"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     243,
+     295
+    ],
+    "bbox": [
+     774,
+     962,
+     1868,
+     1332
+    ],
+    "shape": "box",
+    "en": "Ven. Mantaniputta Punna taught: just as face reflects in mirror through cause, the conceit am” arises through the five aggregates. Realizing this impermanence, Ven. Ananda attained Stream-entry (Sotdpatti-phala).",
+    "conf": 88
+   }
+  ],
+  "loose": [
+   "ANN"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     216,
+     49
+    ],
+    "bbox": [
+     665,
+     145,
+     1977,
+     443
+    ],
+    "shape": "box",
+    "en": "For 20 years, the Buddha lacked permanent attendant. Mishaps occurred: temporary attendants like Ven Nagasamala ignored the Buddha's advice, taking wrong paths that led to injury, and mental hindrance.",
+    "conf": 36
+   }
+  ],
+  "loose": [
+   "fag"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     457,
+     121
+    ],
+    "bbox": [
+     1491,
+     314,
+     2433,
+     1167
+    ],
+    "shape": "box",
+    "en": "Aging, the Buddha requested permanent attendant. Great disciples like Ven. Sariputta eagerly offered. The Buddha declined, stating their primary duty was expounding the doctrine, just as the Realised One does.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "ING",
+   "All",
+   "ews"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     475,
+     60
+    ],
+    "bbox": [
+     1494,
+     149,
+     2486,
+     612
+    ],
+    "shape": "box",
+    "en": "Ven. Ananda sat in silence. Urged by others to volunteer, he gently replied “Aposition position relating to the Fortunate One is not something to be asked for. If he wishes, he will choose me.”",
+    "conf": 68
+   }
+  ],
+  "loose": [
+   "CER"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     59,
+     121
+    ],
+    "bbox": [
+     136,
+     347,
+     1088,
+     1137
+    ],
+    "shape": "box",
+    "en": "To prevent criticism of favoritism, Ven. Ananda requested four restraints. The Buddha must not give him 1. Fine robes 2. Fine food 3. Lodging in the Buddha’s chamber 4, Invitations to lay supporters’ homes",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "Ws:"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     68,
+     121
+    ],
+    "bbox": [
+     136,
+     347,
+     1088,
+     1137
+    ],
+    "shape": "box",
+    "en": "To serve others effectively, he requested four privileges: 1. Accepting lay invitations on the Buddha’s behalf 2. Immediate audiences for distant visitors 3. Elucidation of complex doctrines 4, Recounting discourses given in is",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "WAS",
+   "LY)"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     57,
+     122
+    ],
+    "bbox": [
+     93,
+     360,
+     1084,
+     1184
+    ],
+    "shape": "box",
+    "en": "Granted these eight boons, Ven. Ananda became the permanent attendant. He served tirelessly—preparing water, scrubbing the Buddha’s back, and keeping loving vigil, circling the chamber nine times every night with lamp",
+    "conf": 88
+   }
+  ],
+  "loose": [
+   "WZ,",
+   "al;",
+   "wha"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     173,
+     308
+    ],
+    "bbox": [
+     334,
+     1018,
+     2318,
+     1418
+    ],
+    "shape": "box",
+    "en": "The Buddha 8 declared ven! Ananda fore (eta d-ag among monastics in five areas: Wide learning Diligence bearing the teaching Mindfulness retaining discourses Personal service Comprenendinig hend ing the eaching",
+    "conf": 34
+   }
+  ],
+  "loose": [
+   "INS"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Forty",
+   "years",
+   "after",
+   "the",
+   "First",
+   "Council",
+   "483",
+   "BCE,",
+   "Venerable",
+   "Ananda",
+   "reached",
+   "120",
+   "years",
+   "age.",
+   "Reviewing",
+   "his",
+   "life-maintaining",
+   "faculty,",
+   "the",
+   "elder",
+   "monk",
+   "realized",
+   "his",
+   "time",
+   "was",
+   "concluding.",
+   "saw",
+   "had",
+   "exactly",
+   "seven",
+   "days",
+   "left",
+   "live,",
+   "and",
+   "informed",
+   "his",
+   "pupils.",
+   "LOO",
+   "GIN"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-27-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     292,
+     183
+    ],
+    "bbox": [
+     922,
+     542,
+     1726,
+     998
+    ],
+    "shape": "box",
+    "en": "News spread to the Sakyans ano Koliyans. Separated by the River Rohini— historical boundary of conflict over water distribution both factions claimed Ven. Ananda had benefited them most, demanding he pass away on their side.",
+    "conf": 70
+   }
+  ],
+  "loose": [
+   "Yor",
+   "Yor"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-28-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     314,
+     167
+    ],
+    "bbox": [
+     913,
+     463,
+     1736,
+     992
+    ],
+    "shape": "bubble",
+    "en": "Ven. Ananda foresaw the danger If pass away on one side, they will fight for my relics. would become the cause of strife If there is to be peace, must be the cause of peace",
+    "conf": 90
+   },
+   {
+    "seed": [
+     566,
+     377
+    ],
+    "bbox": [
+     1871,
+     1246,
+     2483,
+     1332
+    ],
+    "shape": "box",
+    "en": "He formulated flawless plan.",
+    "conf": 59
+   }
+  ],
+  "loose": [
+   "ata"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-29-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "support",
+   "ers",
+   "their",
+   "equal",
+   "devotion:",
+   "the",
+   "him.",
+   "instructed",
+   "them",
+   "not",
+   "cross",
+   "ters,",
+   "but",
+   "gather",
+   "strictly",
+   "their",
+   "own",
+   "resp",
+   "sides",
+   "the",
+   "River",
+   "acknowledged",
+   "was",
+   "none",
+   "among",
+   "them",
+   "who",
+   "had",
+   "not",
+   "ructed",
+   "wat",
+   "dressing",
+   "there",
+   "was",
+   "none",
+   "among",
+   "them",
+   "cross"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-30-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "seventh",
+   "day,",
+   "Ven.",
+   "Ananda",
+   "ascended",
+   "into",
+   "the",
+   "sky.",
+   "Remaining",
+   "aloft",
+   "exactly",
+   "seven",
+   "palm",
+   "trees’",
+   "height,",
+   "sitting",
+   "perfectly",
+   "cross-legged",
+   "above",
+   "the",
+   "middle",
+   "the",
+   "River",
+   "delivered",
+   "his",
+   "final,",
+   "unifying",
+   "discourse",
+   "the",
+   "gathered",
+   "multitudes",
+   "below.",
+   "KAS"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-31-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     44,
+     48
+    ],
+    "bbox": [
+     83,
+     83,
+     1375,
+     1399
+    ],
+    "shape": "bubble",
+    "en": "He willed his body to divide in two, entering absorption (jhana) on the fire element (tejo-dhatu). AN Emerging, his body became ablaze. The final death-consciousness arose, realizing complete Nibbana and making an end of all traces of existence.",
+    "conf": 53
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/30-Ananda-32-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "CYA",
+   "Exactly",
+   "had",
+   "willed,",
+   "his",
+   "blazing",
+   "form",
+   "split",
+   "perfectly",
+   "two",
+   "down",
+   "the",
+   "center.",
+   "Through",
+   "his",
+   "supernormal",
+   "power,",
+   "one",
+   "portion",
+   "his",
+   "revered",
+   "relics",
+   "fell",
+   "the",
+   "Sakyan",
+   "side",
+   "the",
+   "and",
+   "the",
+   "other",
+   "the",
+   "side.",
+   "Koliyan"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-33-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "People",
+   "both",
+   "sides",
+   "wailed",
+   "wildly,",
+   "their",
+   "lamentations",
+   "sounding",
+   "the",
+   "earth",
+   "itself",
+   "were",
+   "crumbling.",
+   "This",
+   "pitiable,",
+   "desperate",
+   "grief",
+   "lasted",
+   "for",
+   "four",
+   "whole",
+   "months",
+   "the",
+   "masses",
+   "wept",
+   "over",
+   "the",
+   "beloved",
+   "elder",
+   "who",
+   "maintained",
+   "total",
+   "peace",
+   "his",
+   "last",
+   "breath,",
+   "until",
+   "over"
+  ]
+ },
+ {
+  "img": "images/30-Ananda-34-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     199,
+     300
+    ],
+    "bbox": [
+     407,
+     754,
+     2235,
+     1352
+    ],
+    "shape": "bubble",
+    "en": "They mourned: ‘As long as we saw his assistant holding the Buddha’s bowl and robes, we found solace. Now, that person is gone.’ With Venerable Ananda’s passing, the final trace of the Buddha’s era was complete for them.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ }
+]

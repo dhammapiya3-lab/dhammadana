@@ -1,0 +1,452 @@
+[
+ {
+  "img": "images/13-Singalakamata-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     94,
+     163
+    ],
+    "bbox": [
+     222,
+     337,
+     1276,
+     1190
+    ],
+    "shape": "bubble",
+    "en": "Ven. Singalakamatu: The Foremost in Faith 100,000-aeon journey of unwavering conviction.",
+    "conf": 58
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Singalakamata-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     359,
+     318
+    ],
+    "bbox": [
+     1131,
+     929,
+     1934,
+     1422
+    ],
+    "shape": "bubble",
+    "en": "During the time of Buddha Padumuttara, court official's daughter observed flawless morality. Possessing fervent desire simply imply to look upon the Awakened One, she dedicated her life to the Three Treasures.",
+    "conf": 46
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Singalakamata-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     221,
+     360
+    ],
+    "bbox": [
+     268,
+     1101,
+     1071,
+     1425
+    ],
+    "shape": "bubble",
+    "en": "Witnessing the Bu dha name nun as foremost in faith (saddha), powerful seed was planted.",
+    "conf": 67
+   },
+   {
+    "seed": [
+     501,
+     360
+    ],
+    "bbox": [
+     1544,
+     1101,
+     2404,
+     1425
+    ],
+    "shape": "bubble",
+    "en": "She made an unwavering vow to achieve this exact supreme honor in future life.",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Singalakamata-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     295,
+     65
+    ],
+    "bbox": [
+     922,
+     69,
+     1723,
+     486
+    ],
+    "shape": "bubble",
+    "en": "The True Wealth",
+    "conf": 96
+   },
+   {
+    "seed": [
+     284,
+     347
+    ],
+    "bbox": [
+     767,
+     1045,
+     1858,
+     1425
+    ],
+    "shape": "bubble",
+    "en": "Buddha Padumuttara declared: One possessing deep faith in the Buddha, Dhamma, and Sarigha, alongside flawless morality and right view, is never poo! This conviction is the ultimate, enduring wealth.",
+    "conf": 80
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Singalakamata-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     304,
+     206
+    ],
+    "bbox": [
+     873,
+     592,
+     1792,
+     1084
+    ],
+    "shape": "bubble",
+    "en": "The wo Buddha prophesied her aspiration as xc would blossom in the distant 8 future. Sustained by this promise, she practiced the Dhamma righteously, traversing fortunate rebirths for 100,000 aeons.",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Singalakamata-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     485,
+     96
+    ],
+    "bbox": [
+     1432,
+     231,
+     2427,
+     803
+    ],
+    "shape": "bubble",
+    "en": "In her final existence during the era of Buddha Gotama, she was reborn into immense wealth in Rajagaha. Marrying into another rich clan, she gave birth to son, acquiring the name Singalakamatu.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Aaa",
+   "aaa"
+  ]
+ },
+ {
+  "img": "images/13-Singalakamata-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     75,
+     88
+    ],
+    "bbox": [
+     142,
+     195,
+     671,
+     546
+    ],
+    "shape": "bubble",
+    "en": "Singalaka held wrong views.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     623,
+     77
+    ],
+    "bbox": [
+     1977,
+     195,
+     2509,
+     546
+    ],
+    "shape": "bubble",
+    "en": "Bound by blind tradition, he performed daily ritual of worshipping the eight compass directions.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     57,
+     337
+    ],
+    "bbox": [
+     136,
+     1025,
+     661,
+     1349
+    ],
+    "shape": "bubble",
+    "en": "ignorant of the true path to liberation.",
+    "conf": 97
+   },
+   {
+    "seed": [
+     614,
+     337
+    ],
+    "bbox": [
+     1987,
+     1028,
+     2513,
+     1349
+    ],
+    "shape": "bubble",
+    "en": "Until he came across the Buddha’s Teaching",
+    "conf": 84
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Singalakamata-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     98,
+     368
+    ],
+    "bbox": [
+     231,
+     1213,
+     2410,
+     1372
+    ],
+    "shape": "box",
+    "en": "While on alms round, Buddha Gotama intercepted Singalaka’s ritual, preaching the profound Singala-sutta. Upon hearing this discourse, two billion listeners realized the four noble truths.",
+    "conf": 82
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Singalakamata-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     80,
+     116
+    ],
+    "bbox": [
+     172,
+     238,
+     1005,
+     998
+    ],
+    "shape": "bubble",
+    "en": "Awakened by the teaching, Singalakamatu attained Stream-entry knowledge. She abandoned her worldly riches and joined the Sangha, beginning her final ascent toward liberation.",
+    "conf": 89
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Singalakamata-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     411,
+     295
+    ],
+    "bbox": [
+     1174,
+     959,
+     2433,
+     1270
+    ],
+    "shape": "bubble",
+    "en": "Empowered by her ancient vow, her facult of faith was unparalleled. Whenever she visited 2 AY he monastery, she could not turn her gaze awa from the glorious person of the Buddha",
+    "conf": 67
+   }
+  ],
+  "loose": [
+   "soo"
+  ]
+ },
+ {
+  "img": "images/13-Singalakamata-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     522,
+     130
+    ],
+    "bbox": [
+     1475,
+     337,
+     2440,
+     1203
+    ],
+    "shape": "bubble",
+    "en": "The Mechanics of Awakening Knowing her intense devotion, the Buddha delivered targeted discourses. Using Saddha as her springboard, she transitioned into deep insight meditation, attaining Arahatship with conviction as the dominant factor.",
+    "conf": 37
+   },
+   {
+    "seed": [
+     301,
+     250
+    ],
+    "bbox": [
+     932,
+     823,
+     1260,
+     929
+    ],
+    "shape": "bubble",
+    "en": "Targeted Discourses",
+    "conf": 96
+   },
+   {
+    "seed": [
+     165,
+     368
+    ],
+    "bbox": [
+     506,
+     1194,
+     1022,
+     1299
+    ],
+    "shape": "box",
+    "en": "Unwavering Devotion (Saddha)",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-Singalakamata-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     309,
+     56
+    ],
+    "bbox": [
+     863,
+     165,
+     2344,
+     499
+    ],
+    "shape": "bubble",
+    "en": "Etad-aggam bhikkhave mama savikanam bhikkhuninam saddhadhimuttanam yad-idam Singalaka-matu. St Monastics, among my female monastic disciples who have strong conviction, Singalakamatu is the foremost",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "‘Ai"
+  ]
+ },
+ {
+  "img": "images/13-Singalakamata-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     188,
+     340
+    ],
+    "bbox": [
+     307,
+     1111,
+     2341,
+     1369
+    ],
+    "shape": "box",
+    "en": "100,000-aeon journey complete. Ven. Singalakamatu’s life proves that pure conviction, when paired with right view and dedicated practice, is an unstoppable vehicle to ultimate liberation.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ }
+]

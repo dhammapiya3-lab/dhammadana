@@ -1,0 +1,967 @@
+[
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Pajapati",
+   "The",
+   "Path",
+   "and",
+   "Aspiration,",
+   "Leadership,"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Hamsavati,",
+   "the",
+   "future",
+   "Gotami",
+   "heard",
+   "Buddha",
+   "Padumuttara",
+   "declare",
+   "nun",
+   "foremost",
+   "among",
+   "earliest",
+   "Awakened",
+   "monastics.",
+   "Inspired,",
+   "she",
+   "made",
+   "extraordinary",
+   "offerings,",
+   "aspiring",
+   "this",
+   "exact",
+   "distinction.",
+   "The",
+   "Buddha",
+   "predicted",
+   "her",
+   "success."
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "signifies",
+   "the",
+   "earliest",
+   "Awakened.",
+   "Within",
+   "the",
+   "Sangha,",
+   "this",
+   "distinction",
+   "carries",
+   "three",
+   "meanings:",
+   "The",
+   "senior-most",
+   "monastic.",
+   "The",
+   "earliest",
+   "understand",
+   "the",
+   "Four",
+   "Noble",
+   "Truths.",
+   "The",
+   "earliest",
+   "attain",
+   "Arahat",
+   "fruition."
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "After",
+   "lifetime",
+   "generosity,",
+   "she",
+   "was",
+   "reborn",
+   "the",
+   "Deva",
+   "realm.",
+   "Between",
+   "the",
+   "eras",
+   "two",
+   "Buddhas,",
+   "she",
+   "returned",
+   "earth",
+   "Baranasi,",
+   "born",
+   "into",
+   "the",
+   "slave",
+   "class",
+   "head",
+   "the",
+   "water",
+   "carriers."
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Seeking",
+   "Rains",
+   "Retreat",
+   "(Vassa)",
+   "dwellings,",
+   "five",
+   "Paccekabuddhas",
+   "from",
+   "Nandamila",
+   "Cave",
+   "were",
+   "rejected",
+   "Baranasi’s",
+   "wealthy",
+   "elite.",
+   "Meeting",
+   "them",
+   "the",
+   "gates,",
+   "the",
+   "head",
+   "water",
+   "carrier",
+   "merit.",
+   "realized",
+   "opportunity",
+   "for",
+   "unparalleled"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     229,
+     331
+    ],
+    "bbox": [
+     651,
+     1045,
+     2017,
+     1379
+    ],
+    "shape": "bubble",
+    "en": "4 Learning that even slaves could donate dwellings, she rallied 500 female water carriers at the communal well Do you want to be slaves to others all the time? Or do pay want freedom from servitude?”",
+    "conf": 38
+   }
+  ],
+  "loose": [
+   "INS"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Mobilizing",
+   "the",
+   "community:",
+   "Women",
+   "persuaded",
+   "500",
+   "men",
+   "went",
+   "the",
+   "The",
+   "community",
+   "built",
+   "five",
+   "their",
+   "husbands.",
+   "forest",
+   "cut",
+   "trees.",
+   "modest",
+   "dwellings",
+   "with",
+   "walkways,",
+   "preparing",
+   "sanctuary",
+   "for",
+   "the",
+   "Vassa."
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     498,
+     40
+    ],
+    "bbox": [
+     1415,
+     106,
+     2546,
+     1382
+    ],
+    "shape": "bubble",
+    "en": "Throughout the three-month Vassa, the community took turns offering daily meals. If poorer water carrier lacked food on her appointed day, the leader generously provided the necessary provisions, ensuring shared merit.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ending",
+   "the",
+   "retreat,",
+   "the",
+   "500",
+   "women",
+   "wove",
+   "rough",
+   "cloth,",
+   "exchanged",
+   "for",
+   "five",
+   "sets",
+   "fine",
+   "robes,",
+   "and",
+   "offered",
+   "them.",
+   "Receiving",
+   "the",
+   "robes,",
+   "the",
+   "Paccekabuddhas",
+   "departed",
+   "through",
+   "the",
+   "sky",
+   "toward",
+   "Mount",
+   "Gandhamadana."
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Devoted",
+   "merit,",
+   "the",
+   "women",
+   "were",
+   "reborn",
+   "Devas.",
+   "Passing",
+   "from",
+   "the",
+   "heavenly",
+   "realm,",
+   "their",
+   "leader",
+   "returned",
+   "the",
+   "human",
+   "realm",
+   "once",
+   "again—this",
+   "time",
+   "chief",
+   "weaver",
+   "village",
+   "near",
+   "Baranasi.",
+   "all"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     270,
+     195
+    ],
+    "bbox": [
+     780,
+     625,
+     1865,
+     863
+    ],
+    "shape": "box",
+    "en": "500 Paccekabuddhas stood ignored at the royal palace doors Returning empty-handed, they passed the weaver’s village. Filled with devotion, the chief weaver joyfully offered them food before they departed for Mount Gandhamadana.",
+    "conf": 63
+   }
+  ],
+  "loose": [
+   "Wis"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "path",
+   "becoming",
+   "the",
+   "earliest",
+   "Awakened",
+   "was",
+   "not",
+   "built",
+   "wealth.",
+   "was",
+   "forged",
+   "through",
+   "lifetimes",
+   "relentless",
+   "generosity,",
+   "collective",
+   "leadership,",
+   "and",
+   "uplifting",
+   "the",
+   "marginalized—cycling",
+   "purposefully",
+   "between",
+   "human",
+   "and",
+   "Deva",
+   "realms.",
+   "Collective",
+   "Leaders",
+   "hip",
+   "ING",
+   "ING",
+   "Ase",
+   "Aspiration",
+   "Gen"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     115,
+     118
+    ],
+    "bbox": [
+     159,
+     159,
+     1104,
+     1263
+    ],
+    "shape": "bubble",
+    "en": "The Sisters of Devadaha Born into the Sakyan royal family, Princesses Maha Maya and Gotami possessed distinctive signs. Vedic astrologers read their forms and delivered striking prophecy: those born to both sisters were destined to become Universal Monarchs.",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "Wit"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Following",
+   "Prince",
+   "Siddhatthna’s",
+   "birth,",
+   "Queen",
+   "Maha",
+   "Maya",
+   "passed",
+   "away.",
+   "Gotami,",
+   "now",
+   "Chief",
+   "Queen,",
+   "gave",
+   "birth",
+   "Prince",
+   "Nanda",
+   "days",
+   "later.",
+   "She",
+   "made",
+   "profound",
+   "choice:",
+   "nursing",
+   "the",
+   "Bodhisatta",
+   "from",
+   "her",
+   "own",
+   "breast,",
+   "entrusting",
+   "her",
+   "own",
+   "son",
+   "wet",
+   "nurses.",
+   "Devotion"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     116,
+     190
+    ],
+    "bbox": [
+     248,
+     552,
+     1322,
+     1316
+    ],
+    "shape": "box",
+    "en": "Severing Royal Ties Following the Buddha's Awakening, his royal family began their spiritual paths. During his fifth Rains Retreat, King Suddhodana attained Arahantship under the royal white umbrella, passing away the same day. Gotami's worldly tethers were now completely dissolved. (2",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "CNB",
+   "Wes",
+   "wil"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     350,
+     101
+    ],
+    "bbox": [
+     1018,
+     222,
+     1832,
+     1263
+    ],
+    "shape": "bubble",
+    "en": "The First Petition Seeking liberation, Queen Gotami and 500 Sakyan princesses consorts of newly ordained princes— resolved to renounce the world Gotam! became their spokeswoman, requesting the Buddha’s permission for female admission into the Sangha. Her initial plea was firmly declined",
+    "conf": 69
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     199,
+     44
+    ],
+    "bbox": [
+     321,
+     122,
+     2321,
+     450
+    ],
+    "shape": "box",
+    "en": "An Unyielding Iding Determination 2 inat ion Undeterred, the 500 Sakyan women shaved their heads and donned dyed robes. They marched barefoot from Kapilavatthu to the Kitagara agara monastery in Vesall, arriving exhausted but resolute. Their deep commitment paved the way for an unprecedented spiritual revolution.",
+    "conf": 71
+   }
+  ],
+  "loose": [
+   "wie",
+   "vie",
+   "et,"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     144,
+     72
+    ],
+    "bbox": [
+     400,
+     139,
+     1108,
+     1147
+    ],
+    "shape": "bubble",
+    "en": "An eae Advocate for Equality Seeing the princesses’ unwavering resolve, Ven. Ananda became their advocate. He reasoned with the Buddha, pleading for their admission into the Sangha. Through this vital intercession, the Buddha finally granted women the right to ordain as female monastics.",
+    "conf": 41
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     316,
+     106
+    ],
+    "bbox": [
+     770,
+     281,
+     1868,
+     628
+    ],
+    "shape": "box",
+    "en": "Two Paths Path Ss of Admission Maha Pajapati Gotami’s ordination was unique: she was admitted by accepting the eight principal vows (garu-dhamma). The 500 Sakyan princesses were formally admitted by monastic assembly, laying the enduring foundation for the female monastic order.",
+    "conf": 53
+   }
+  ],
+  "loose": [
+   "les",
+   "LAG",
+   "06,"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     313,
+     122
+    ],
+    "bbox": [
+     843,
+     218,
+     1825,
+     1213
+    ],
+    "shape": "bubble",
+    "en": "Dual Streams of Awakening Though ordained together, they awakened through different discourses Ven. Gotami attained Arahantship upon hearing the Sankhitta-sutta (AN 8.53). The 500 Nuns achieved Awakening after hearing Ven. Nandaka's advice in the Nandakovdda-sutta (MN 146)",
+    "conf": 38
+   }
+  ],
+  "loose": [
+   "ING"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     290,
+     255
+    ],
+    "bbox": [
+     790,
+     797,
+     1852,
+     1379
+    ],
+    "shape": "box",
+    "en": "Etad-agga: The Foremost Disciple At Jetavana monastery, the Buddha formally recognized her extraordinary journey: “Monastics, among my female monastic disciples who are of long standing in the Sangha, Maha Pajapati Gotamt is the foremost.” surrogate mother became the mother of lineage.",
+    "conf": 54
+   }
+  ],
+  "loose": [
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "120",
+   "years",
+   "age",
+   "Venerable",
+   "Got",
+   "ami",
+   "entered",
+   "the",
+   "attainment",
+   "Arahat",
+   "fruition.",
+   "Emerging",
+   "from",
+   "absorption,",
+   "she",
+   "reviewed",
+   "her",
+   "past",
+   "merits",
+   "and",
+   "saw",
+   "her",
+   "lifespan",
+   "was",
+   "end.",
+   "VGN",
+   "age"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     58,
+     261
+    ],
+    "bbox": [
+     142,
+     727,
+     1246,
+     1332
+    ],
+    "shape": "box",
+    "en": "She thought: af shall not live to see the passing ing of my son, the Buddha, nor my grandson Rahula, nor Ananda. Iw will predecease them.” ss)",
+    "conf": 39
+   }
+  ],
+  "loose": [
+   "SS)",
+   "WAS",
+   "27)"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     226,
+     151
+    ],
+    "bbox": [
+     615,
+     410,
+     2027,
+     1075
+    ],
+    "shape": "box",
+    "en": "Miraculously, five hundred female monastics of Sakyan origin shared this exact realization. Their minds aligned, they too resolved to pass away alongside their beloved teacher",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "Wiz"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     101,
+     331
+    ],
+    "bbox": [
+     225,
+     1061,
+     2417,
+     1365
+    ],
+    "shape": "box",
+    "en": "At that profound moment, the earth quaked violently. Unseasonable rains thundered across the sky. The guardian spirits of the nunneries, sensing the impending departure, wailed in deep sorrow.",
+    "conf": 83
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     321,
+     124
+    ],
+    "bbox": [
+     1025,
+     311,
+     1617,
+     1187
+    ],
+    "shape": "bubble",
+    "en": "The nuns approached Venerable Gotami, reporting the spirits’ wailing. Gotami revealed her plan to pass away, and the five hundred nuns shared their identical resolve to depart together.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-27-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     149,
+     58
+    ],
+    "bbox": [
+     473,
+     182,
+     2172,
+     493
+    ],
+    "shape": "box",
+    "en": "“They gently asked the guardian spirits for pardon for any past offenses. Casting one final, serene glance at the nunnery that had sheltered them, Venerable Gotami departed. rics",
+    "conf": 68
+   }
+  ],
+  "loose": [
+   "ING",
+   "Aly,",
+   "ry)",
+   "VAL!"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-28-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     183,
+     315
+    ],
+    "bbox": [
+     559,
+     1018,
+     2083,
+     1313
+    ],
+    "shape": "box",
+    "en": "She deca declared: ed: proceed to the unconditioned Nibbana. There is no ageing or death, no association with the disliked, and no separation from what is held dear.”",
+    "conf": 66
+   }
+  ],
+  "loose": [
+   "44)",
+   "EOS"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-29-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Hearing",
+   "this,",
+   "those",
+   "who",
+   "had",
+   "not",
+   "yet",
+   "conquered",
+   "attachment—Devas",
+   "and",
+   "humans",
+   "alike—wept",
+   "miserably.",
+   "the",
+   "nuns",
+   "walked",
+   "the",
+   "main",
+   "street,",
+   "devotees",
+   "knelt",
+   "before",
+   "them",
+   "deep",
+   "distress"
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-30-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     297,
+     59
+    ],
+    "bbox": [
+     889,
+     149,
+     2496,
+     559
+    ],
+    "shape": "box",
+    "en": "Unmoved by grief, the Buddha’s step-mother spoke with perfect compassion and wisdom. Through gentle words of truth, Venerable Gotami calmed their minds and helped quell their sorrow.",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "AN,",
+   "NON"
+  ]
+ }
+]

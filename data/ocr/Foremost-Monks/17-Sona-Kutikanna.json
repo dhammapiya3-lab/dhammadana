@@ -1,0 +1,898 @@
+[
+ {
+  "img": "images/17-Sona-Kutikanna-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     307,
+     158
+    ],
+    "bbox": [
+     800,
+     446,
+     1842,
+     1038
+    ],
+    "shape": "box",
+    "en": "The Karmic Journey of Venerable Sona Kutikanna From Ancient Aspiration to Arahatship in the Dispensation of Buddha Gotama.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "AYE"
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     481,
+     70
+    ],
+    "bbox": [
+     1402,
+     165,
+     2476,
+     714
+    ],
+    "shape": "box",
+    "en": "An ancient aspiration bridges lifetimes. During the era of Buddha Padumuttara, virtuous layman performed seven-day mahda-dana. He wished to become foremost among monks teaching with sweet voice (kalyana-vakkarana). The Buddha prophesied this wish would ripen under Buddha Gotama.",
+    "conf": 34
+   }
+  ],
+  "loose": [
+   "CV,"
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     138,
+     147
+    ],
+    "bbox": [
+     251,
+     397,
+     1223,
+     1041
+    ],
+    "shape": "box",
+    "en": "july 528 BCE: The unseen Dhamma transforms the listener. While the Yakkha generals Satagiri and Hemavata discussed the Buddha’s newly turned Dhamma Wheel in the sky, Kali overheard them from her house below. She instantly became Sotapanna—the first female noble Stream-enterer.",
+    "conf": 85
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     255,
+     352
+    ],
+    "bbox": [
+     698,
+     1104,
+     1947,
+     1438
+    ],
+    "shape": "box",
+    "en": "noble on son is born with marks of destiny. On the very night of her awakening, Kali gave birth to son Because he wore magnificent earrings worth ten million, he became known as Sona Kutikanna",
+    "conf": 53
+   }
+  ],
+  "loose": [
+   "the"
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     512,
+     86
+    ],
+    "bbox": [
+     1435,
+     222,
+     2437,
+     731
+    ],
+    "shape": "box",
+    "en": "Early seeds of spiritual urgency. Ven. Maha Kaccayana relied on Kuraraghara for alms. Young Sona constantly waited upon him Absorbing the elder’s continuous Dhamma teachings, profound sense of (spiritual urgency) began to root itself in the boy’s mind.",
+    "conf": 66
+   }
+  ],
+  "loose": [
+   "CZ.",
+   "ANG",
+   "NSS",
+   "Wey"
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     264,
+     70
+    ],
+    "bbox": [
+     704,
+     149,
+     1937,
+     532
+    ],
+    "shape": "box",
+    "en": "solitary path into the unknown. While traveling to Ujjeni, Sona slept apart from the noisy caravan. Awaking completely alone the next morning, he hurried down the forest trail, unknowingly walking toward terrifying confrontation with the laws of kamma.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "INSS"
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     257,
+     67
+    ],
+    "bbox": [
+     645,
+     149,
+     2000,
+     304
+    ],
+    "shape": "box",
+    "en": "The inescapable mirrors of past kamma.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     107,
+     351
+    ],
+    "bbox": [
+     258,
+     1121,
+     1111,
+     1322
+    ],
+    "shape": "box",
+    "en": "The Deceitful Merchant: Earned wealth through fraud and told alms-seeking monks to eat your own flesh. Result: Devours himself.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     504,
+     362
+    ],
+    "bbox": [
+     1544,
+     1121,
+     2397,
+     1322
+    ],
+    "shape": "box",
+    "en": "The Perfume Merchants: Cursed their mother for feeding Arahats, wishing black blood upon them. Result: Mouths ooze black blood.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     147,
+     370
+    ],
+    "bbox": [
+     311,
+     1121,
+     2338,
+     1405
+    ],
+    "shape": "bubble",
+    "en": "Fear ear of the endless cycle cle takes root. profoundly dly shaken, cone Sona returned to Kura raghara. hara Ven. Maha Kaccayana taught him the deep dangers of Samsara and the liberation of non-becoming. Sona immediately asked to shave his head and ordain.",
+    "conf": 69
+   }
+  ],
+  "loose": [
+   "AWA",
+   "ING,",
+   "ABA",
+   "ONG",
+   "ING"
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     149,
+     194
+    ],
+    "bbox": [
+     271,
+     608,
+     721,
+     727
+    ],
+    "shape": "box",
+    "en": "Request 1 Denied.",
+    "conf": 86
+   },
+   {
+    "seed": [
+     374,
+     198
+    ],
+    "bbox": [
+     1015,
+     618,
+     1461,
+     741
+    ],
+    "shape": "box",
+    "en": "Request 2 Denied.",
+    "conf": 97
+   },
+   {
+    "seed": [
+     622,
+     210
+    ],
+    "bbox": [
+     1809,
+     661,
+     2295,
+     784
+    ],
+    "shape": "box",
+    "en": "Accepted as Novice.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     516,
+     289
+    ],
+    "bbox": [
+     1432,
+     903,
+     2506,
+     1382
+    ],
+    "shape": "box",
+    "en": "Patience and the ripening of wisdom. Ven. Maha Kaccayana saw Sona’s faculties were immature. He denied him twice, instructing him to practice solitary sleeping and eating first. Upon the third request, his wisdom had ripened, but he could only be ordained as samanera.",
+    "conf": 88
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     425,
+     191
+    ],
+    "bbox": [
+     1098,
+     519,
+     1541,
+     962
+    ],
+    "shape": "bubble",
+    "en": "Goal: 10 Monks Needed for Upasampada.",
+    "conf": 90
+   },
+   {
+    "seed": [
+     231,
+     354
+    ],
+    "bbox": [
+     341,
+     1088,
+     2298,
+     1405
+    ],
+    "shape": "box",
+    "en": "The three-year trial ral for higher ordination. Remote Avanti lacked monks. The Vinaya required quorum of ten. Ven. Maha Kaccayana would gather few, but they would leave before the rest arrived. It took three arduous years to finalize lize Sona’s higher ordination. rdination.",
+    "conf": 43
+   }
+  ],
+  "loose": [
+   "WAZ",
+   "hee"
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     534,
+     275
+    ],
+    "bbox": [
+     1623,
+     873,
+     2493,
+     1326
+    ],
+    "shape": "box",
+    "en": "The ers swift realization of Arahatship Finally ordained, Ven. Sona Kutikanna engaged assiduously in vipassana ssand meditation During that very Rains Retreat, he attained Arahatship and mastered the Sutta-nipata under his preceptor’s guidance",
+    "conf": 39
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     223,
+     66
+    ],
+    "bbox": [
+     655,
+     126,
+     2004,
+     503
+    ],
+    "shape": "box",
+    "en": "sacred message for the Exalted Buddha. Buddha. After the Pavarana invitation, Sona wished to see the Buddha Ven. Maha Kaccayana gave his blessing The Buddha will invite you to his Perfumed Chamber to teach Pay homage in my name!",
+    "conf": 46
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     539,
+     121
+    ],
+    "bbox": [
+     1673,
+     341,
+     2314,
+     1177
+    ],
+    "shape": "box",
+    "en": "Ven. Sona Kutikanna sought permission to travel. His mother, Kali, gave him an intricately woven rug “Spread it in the Buddha’s Perfumed Chamber,” she requested Thus, equipped with her devoted offering, he departed for Savatthi",
+    "conf": 32
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     248,
+     332
+    ],
+    "bbox": [
+     645,
+     1048,
+     1924,
+     1395
+    ],
+    "shape": "box",
+    "en": "At Coes the Buddha greeted Sona warmly. Recognizing his disciple’s pure intent, the Buddha instructed Ven. Ananda to prepare exceptional lodging. Sona was invited to stay inside the sacred Perfumed Chamber itself.",
+    "conf": 38
+   }
+  ],
+  "loose": [
+   "lid",
+   "NWA"
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     182,
+     202
+    ],
+    "bbox": [
+     476,
+     628,
+     2159,
+     922
+    ],
+    "shape": "box",
+    "en": "Through the night, the Buddha and Sona practiced jhana in the open air. Later, both retreated inside. As dawn approached, the Buddha rested mindfully in the stha-seyya (lion’s posture).",
+    "conf": 53
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     527,
+     173
+    ],
+    "bbox": [
+     1630,
+     473,
+     2361,
+     1058
+    ],
+    "shape": "box",
+    "en": "“Dear son Sona, recite something for me,’ the Buddha asked. Sona chanted the sixteen discourses of the Atthaka-vagga. His sweet, flawless voice articulated the profound Dhamma without single error.",
+    "conf": 83
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     77,
+     286
+    ],
+    "bbox": [
+     182,
+     916,
+     1468,
+     1316
+    ],
+    "shape": "box",
+    "en": "The Buddha praised the Flawless recitation, asking why Sona ordained so late. Sona explained that despite seeing the dangers of sensual pleasures, the tangled, endless duties of household life had delayed his monastic journey.",
+    "conf": 39
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     117,
+     92
+    ],
+    "bbox": [
+     274,
+     264,
+     797,
+     1213
+    ],
+    "shape": "box",
+    "en": "The Buddha uttered solemn verse of insight (vipassana): “The noble one, seeing the world’s impermanence and suffering, and penetrating Nibbana—the end of all attachments (upadhi)—finds no joy in evil deeds.”",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "IES",
+   "ZZ)"
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "time",
+   "had",
+   "come",
+   "for",
+   "Ven.",
+   "Maha",
+   "Kaccayana’s",
+   "message.",
+   "Bowing",
+   "respectfully,",
+   "Sona",
+   "presented",
+   "five",
+   "urgent",
+   "requests",
+   "for",
+   "the",
+   "southern",
+   "region",
+   "Avanti—a",
+   "rugged",
+   "borderland",
+   "requiring",
+   "practical",
+   "adaptations",
+   "the",
+   "strict",
+   "monastic",
+   "Vinaya"
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     541,
+     101
+    ],
+    "bbox": [
+     1772,
+     311,
+     2331,
+     496
+    ],
+    "shape": "box",
+    "en": "1. Ordination: 5 monks (not 10)",
+    "conf": 94
+   },
+   {
+    "seed": [
+     538,
+     165
+    ],
+    "bbox": [
+     1772,
+     522,
+     2331,
+     711
+    ],
+    "shape": "box",
+    "en": "2. Footwear: Layered sandals for rough ground",
+    "conf": 96
+   },
+   {
+    "seed": [
+     538,
+     229
+    ],
+    "bbox": [
+     1772,
+     737,
+     2331,
+     926
+    ],
+    "shape": "box",
+    "en": "3. Hygiene: Daily bathing permitted",
+    "conf": 96
+   },
+   {
+    "seed": [
+     537,
+     293
+    ],
+    "bbox": [
+     1775,
+     949,
+     2331,
+     1141
+    ],
+    "shape": "box",
+    "en": "4, Spreads: Animal skins allowed over grass",
+    "conf": 95
+   },
+   {
+    "seed": [
+     538,
+     356
+    ],
+    "bbox": [
+     1772,
+     1164,
+     2331,
+     1356
+    ],
+    "shape": "box",
+    "en": "5. Robes: Acceptance permitted outside the Sima",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "The",
+   "Five",
+   "Avanti",
+   "Exceptions:",
+   "(CA"
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     509,
+     75
+    ],
+    "bbox": [
+     1518,
+     192,
+     2460,
+     582
+    ],
+    "shape": "box",
+    "en": "The Buddha approved all five allowances for distant border regions",
+    "conf": 96
+   },
+   {
+    "seed": [
+     526,
+     222
+    ],
+    "bbox": [
+     1518,
+     678,
+     2460,
+     1299
+    ],
+    "shape": "box",
+    "en": "This profound ruling demonstrated that the Dhamma remains adaptable and compassionate to geographic hardships, without ever compromising ethical purity",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     476,
+     83
+    ],
+    "bbox": [
+     1518,
+     192,
+     2460,
+     625
+    ],
+    "shape": "box",
+    "en": "Before departing, Sona fulfilled his mother’s devoted wish. He presented Kali’s rug to the Buddha, carefully spreading it as mat on the floor of the Fragrant Chamber Then, he journeyed back to Avanti",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     208,
+     277
+    ],
+    "bbox": [
+     357,
+     889,
+     2281,
+     1299
+    ],
+    "shape": "box",
+    "en": "Standing for alms at his mother’s door, Sona confirmed his successful mission saw the Fortunate One and spread your rug,” he told Kali who was overjoyed by her son’s safe and blessed return",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "why"
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     208,
+     277
+    ],
+    "bbox": [
+     360,
+     893,
+     2281,
+     1299
+    ],
+    "shape": "box",
+    "en": "Kali revealed miraculous truth: “The guardian spirit told me of your blessing! Devas across 10,000 world-systems rejoiced. Please, son, recite for me exactly what you chanted for the Buddha.”",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "(ex"
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     188,
+     78
+    ],
+    "bbox": [
+     397,
+     162,
+     1134,
+     648
+    ],
+    "shape": "box",
+    "en": "Under grand pavilion built at their gates, Ven. Sona Kutikanna hosted magnificent Dhamma gathering. He shared the flawless Atthaka-vagga recitation, bringing the echoes of the Fragrant oh Chamber to his hometown.",
+    "conf": 59
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     326,
+     185
+    ],
+    "bbox": [
+     807,
+     559,
+     1832,
+     1018
+    ],
+    "shape": "bubble",
+    "en": "Later, am idst the noble assembly, SS sity the ire Buddha bestowed the highest honor: “Monks, among my disciples who give pious talks in sweet and pleasant voice (kalyana-vakkarana), Sona Kutikanna is foremost.”",
+    "conf": 30
+   }
+  ],
+  "loose": [
+   "tap"
+  ]
+ }
+]

@@ -1,0 +1,1826 @@
+[
+ {
+  "img": "images/41-Mogharaja-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     292,
+     150
+    ],
+    "bbox": [
+     751,
+     450,
+     1891,
+     1035
+    ],
+    "shape": "box",
+    "en": "The Lives of Ven. Mogharaja An Ancient Chronicle of Karma and Kingship",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-Mogharaja-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ancient",
+   "Hamsavati,",
+   "the",
+   "future",
+   "witnessed",
+   "Buddha",
+   "Padumuttara",
+   "praise",
+   "monk",
+   "for",
+   "wearing",
+   "inferior",
+   "rag",
+   "robes.",
+   "made",
+   "vast",
+   "offerings",
+   "and",
+   "formed",
+   "powerful",
+   "aspiration",
+   "achieve",
+   "this",
+   "same",
+   "foremost",
+   "status",
+   "future",
+   "life",
+   "Mogharaja",
+   "5),",
+   "bes."
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WAS",
+   "Aeons",
+   "era",
+   "Kassapa,",
+   "master",
+   "carpenter",
+   "Baranasi",
+   "led",
+   "guild",
+   "16,017",
+   "craftsmen.",
+   "Fearing",
+   "the",
+   "drudgery",
+   "old",
+   "age,",
+   "the",
+   "master",
+   "conceived",
+   "bold",
+   "plan",
+   "elevate",
+   "his",
+   "people",
+   "the",
+   "later,",
+   "before",
+   "ial",
+   "YESS"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Using",
+   "light",
+   "forest",
+   "wood,",
+   "the",
+   "master",
+   "crafted",
+   "magnificent",
+   "flying",
+   "machine",
+   "shaped",
+   "like",
+   "the",
+   "Garula",
+   "bird.",
+   "The",
+   "guild",
+   "secretly",
+   "built",
+   "fleet,",
+   "packed",
+   "their",
+   "families,",
+   "and",
+   "launched",
+   "into",
+   "the",
+   "sky",
+   "escape",
+   "their",
+   "humble",
+   "origins"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "They",
+   "flew",
+   "from",
+   "Baranasi",
+   "the",
+   "Himalayas,",
+   "establishing",
+   "new",
+   "kingdom.",
+   "The",
+   "master",
+   "was",
+   "crowned",
+   "King",
+   "Katthavahana—",
+   "rider",
+   "the",
+   "wooden",
+   "vehicle.’",
+   "The",
+   "future",
+   "Mogharaja",
+   "became",
+   "one",
+   "his",
+   "sixteen",
+   "righteous",
+   "ministers"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Wis",
+   "Through",
+   "travelling",
+   "merchants,",
+   "King",
+   "Katthavahana",
+   "forged",
+   "unseen",
+   "alliance",
+   "with",
+   "the",
+   "King",
+   "Though",
+   "they",
+   "never",
+   "met",
+   "face-to-face,",
+   "the",
+   "monarchs",
+   "granted",
+   "mutual",
+   "tax",
+   "exemptions",
+   "and",
+   "vowed",
+   "share",
+   "any",
+   "wondrous",
+   "discoveries",
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Katthavahana",
+   "acquired",
+   "sun-dazzling",
+   "fabric.",
+   "gifted",
+   "Baranasi,",
+   "cleverly",
+   "concealing",
+   "the",
+   "cloth",
+   "inside",
+   "eight",
+   "ivory",
+   "caskets",
+   "disguised",
+   "within",
+   "plain",
+   "lac",
+   "balls.",
+   "king",
+   "smashed",
+   "the",
+   "lac",
+   "reveal",
+   "the",
+   "breathtaking",
+   "treasure."
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     112,
+     150
+    ],
+    "bbox": [
+     350,
+     493,
+     1078,
+     598
+    ],
+    "shape": "box",
+    "en": "The he Pinnacle of Wealth",
+    "conf": 50
+   },
+   {
+    "seed": [
+     488,
+     329
+    ],
+    "bbox": [
+     1524,
+     1055,
+     2338,
+     1270
+    ],
+    "shape": "bubble",
+    "en": "The Three Treasures Buddha, Dhamma, Sangha",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "match",
+   "this",
+   "priceless",
+   "material",
+   "gift,",
+   "the",
+   "King",
+   "Baranasi",
+   "realized",
+   "only",
+   "spiritual",
+   "wealth",
+   "would",
+   "suffice.",
+   "sent",
+   "news",
+   "that",
+   "Buddha",
+   "Kassapa,",
+   "the",
+   "Dhamma,",
+   "and",
+   "the",
+   "Sangha",
+   "had",
+   "appeared",
+   "the",
+   "world"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Scented",
+   "Musk",
+   "Wood",
+   "Emerald",
+   "Red",
+   "Ruby",
+   "Gold",
+   "Silver",
+   "The",
+   "Dhamma",
+   "was",
+   "inscribed",
+   "gold",
+   "and",
+   "nestled",
+   "within",
+   "eight",
+   "precious",
+   "caskets:",
+   "from",
+   "scented",
+   "musk",
+   "wood",
+   "down",
+   "core",
+   "seven",
+   "gems.",
+   "was",
+   "the",
+   "ultimate",
+   "reliquary",
+   "truth."
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "majestic",
+   "tusker",
+   "musk",
+   "draped",
+   "gold",
+   "lace,",
+   "carried",
+   "the",
+   "Dhamma",
+   "the",
+   "border.",
+   "Kings",
+   "along",
+   "the",
+   "route",
+   "paid",
+   "joyful",
+   "homage",
+   "the",
+   "sacred",
+   "return",
+   "gift",
+   "beneath",
+   "white",
+   "umbrella",
+   "route",
+   "mage",
+   "ite"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "(0)",
+   "Opening",
+   "the",
+   "caskets,",
+   "Katthavahana",
+   "read",
+   "the",
+   "golden",
+   "plate.",
+   "Overwhelmed",
+   "the",
+   "revelation",
+   "the",
+   "Three",
+   "Treasures,",
+   "immediately",
+   "resolved",
+   "find",
+   "the",
+   "Buddha,",
+   "sending",
+   "his",
+   "nephew",
+   "and",
+   "sixteen",
+   "ministers",
+   "ahead."
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "sixteen",
+   "ministers,",
+   "including",
+   "the",
+   "future",
+   "Mogharaja,",
+   "raced",
+   "towards",
+   "Baranasi",
+   "with",
+   "16,000",
+   "followers.",
+   "They",
+   "rested",
+   "only",
+   "once,",
+   "(0)",
+   "driven",
+   "urgent",
+   "quest",
+   "witness",
+   "the",
+   "living",
+   "Buddha",
+   "Kassapa.",
+   "ANS",
+   "OOG"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "They",
+   "arrived",
+   "too",
+   "late;",
+   "Buddha",
+   "Kassapa",
+   "had",
+   "just",
+   "passed",
+   "away.",
+   "Heartbroken,",
+   "they",
+   "wept",
+   "before",
+   "the",
+   "monks,",
+   "who",
+   "consoled",
+   "them",
+   "with",
+   "the",
+   "Buddha’s",
+   "final",
+   "teachings",
+   "seek",
+   "refuge,",
+   "observe",
+   "precepts,",
+   "and",
+   "practice",
+   "generosity."
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Deeply",
+   "moved,",
+   "the",
+   "sixteen",
+   "ministers",
+   "and",
+   "their",
+   "16,000",
+   "followers",
+   "abandoned",
+   "worldly",
+   "life",
+   "for",
+   "mass",
+   "ordination.",
+   "They",
+   "embraced",
+   "the",
+   "monastic",
+   "path,",
+   "dedicating",
+   "their",
+   "remaining",
+   "days",
+   "the",
+   "Buddha’s",
+   "discipline.",
+   "worldly",
+   "astic",
+   "cipline"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     116,
+     67
+    ],
+    "bbox": [
+     208,
+     172,
+     1266,
+     803
+    ],
+    "shape": "box",
+    "en": "Reborn in the human world Reborn in the human world before Buddha Gotama’s advent, the former master craftsman became Bavari chaplain to King Maha Kosala. His 16,000 followers were reborn in Savatthi",
+    "conf": 51
+   }
+  ],
+  "loose": [
+   "CAE"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     345,
+     129
+    ],
+    "bbox": [
+     863,
+     225,
+     1885,
+     813
+    ],
+    "shape": "bubble",
+    "en": "Bavari mastered the three Vedas. Among his 16,000 followers emerged sixteen chief pupils—including the wise Mogharaja and the elderly Pingiya. Together, this united community of 16,017 Brahmins sought ultimate truth.",
+    "conf": 83
+   }
+  ],
+  "loose": [
+   "TAN"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     213,
+     323
+    ],
+    "bbox": [
+     519,
+     1015,
+     2126,
+     1319
+    ],
+    "shape": "box",
+    "en": "Under King Pasenadi, Bavari realized Vedic learning offered no salvation in the hereafter. Resolving to renounce the world, he yielded to the king's pleas, residing as recluse in royal gardens.",
+    "conf": 84
+   }
+  ],
+  "loose": [
+   "VAN"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     406,
+     81
+    ],
+    "bbox": [
+     1177,
+     129,
+     2285,
+     602
+    ],
+    "shape": "bubble",
+    "en": "The royal gardens proved too turbulent for the recluses. Longing for remote tranquility, Bavari requested to leave. After three persistent pleas, King Pasenadi yielded, sending ministers and wealth to establish distant hermitage.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-Mogharaja-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     345,
+     334
+    ],
+    "bbox": [
+     823,
+     1018,
+     1815,
+     1349
+    ],
+    "shape": "bubble",
+    "en": "Journeying south, they found pristine island where the Godhavari river parted. Royal ministers purchased five-league forest from Kings Assaka and Alaka. grand hermitage was built for the 16,017 recluses.",
+    "conf": 60
+   }
+  ],
+  "loose": [
+   "ale"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     542,
+     63
+    ],
+    "bbox": [
+     1544,
+     155,
+     2483,
+     731
+    ],
+    "shape": "box",
+    "en": "Attracted by Bavari’s virtue, families settled the estate. The community flourished, providing daily alms and sustenance for the ascetics. The village generated an immense annual revenue of 100,000 pieces of money.",
+    "conf": 65
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-Mogharaja-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     107,
+     334
+    ],
+    "bbox": [
+     162,
+     1012,
+     1283,
+     1342
+    ],
+    "shape": "bubble",
+    "en": "The regional kings redirected the village revenue to Bavari. Rejecting personal wealth, the master established vast annual charity, distributing the 100,000 pieces to the destitute and spreading his fame across Jambudipa.",
+    "conf": 48
+   }
+  ],
+  "loose": [
+   "igi"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     119,
+     78
+    ],
+    "bbox": [
+     162,
+     188,
+     1299,
+     704
+    ],
+    "shape": "box",
+    "en": "Following one grand charity, an exhausted Bavari was ambushed by bogus Brahmin—driven by nagging wife—demanding 500 pieces of money. Having given everything away, Bavari had absolutely nothing left to offer.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "ISS"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     234,
+     63
+    ],
+    "bbox": [
+     456,
+     165,
+     2192,
+     423
+    ],
+    "shape": "box",
+    "en": "Enraged, the bogus Brahmin ory performed dark ritual at Bavari’s door. He chanted terrifying curse: “If you refuse me, may your head splinter into seven pieces on the seventh day!”",
+    "conf": 34
+   }
+  ],
+  "loose": [
+   "ENS"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     516,
+     291
+    ],
+    "bbox": [
+     1564,
+     932,
+     2440,
+     1280
+    ],
+    "shape": "box",
+    "en": "Deeply disturbed by the curse, Bavari lay sleepless. Seeing his distress, the guardian goddess of the hermitage—his mother from past life—manifested to comfort him.",
+    "conf": 82
+   }
+  ],
+  "loose": [
+   "VAN",
+   "VAS"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ISS",
+   "“That",
+   "charlatan",
+   "only",
+   "wants",
+   "money,”",
+   "the",
+   "Goddess",
+   "revealed.",
+   "“He",
+   "knows",
+   "nothing",
+   "‘the",
+   "head’",
+   "nor",
+   "the",
+   "true",
+   "cause",
+   "that",
+   "makes",
+   "split",
+   "asunder.”",
+   "Relieved,",
+   "Bavari",
+   "asked",
+   "who",
+   "held",
+   "this",
+   "ultimate",
+   "knowledge."
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     493,
+     287
+    ],
+    "bbox": [
+     1425,
+     863,
+     2539,
+     1382
+    ],
+    "shape": "box",
+    "en": "The Goddess proclaimed: “Only the all-knowing Buddha possesses this wisdom. He now resides at Jetavana monastery in Savatthi.” Hearing the word “Buddha,” Bavari’s worries completely vanished.",
+    "conf": 80
+   }
+  ],
+  "loose": [
+   "WIJ",
+   "VIN",
+   "NON",
+   "ING"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-27-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     255,
+     311
+    ],
+    "bbox": [
+     582,
+     876,
+     2033,
+     1385
+    ],
+    "shape": "bubble",
+    "en": "Expecting death soon, the aged Bavari summoned his sixteen pupils. He taught them the profound “head-breaker” questions, instructing them to travel north, find the Buddha, and verify his awakening.",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "GES"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-28-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     172,
+     101
+    ],
+    "bbox": [
+     231,
+     83,
+     975,
+     1223
+    ],
+    "shape": "bubble",
+    "en": "Knowing his wise pupils might attain Awakening and never return, Bavari made special plea to his nephew Pingiya you must return without fail Tell me the benefits of the supermundane",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-Mogharaja-29-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "pupils",
+   "undertook",
+   "vast",
+   "pilgrimage",
+   "from",
+   "Alaka",
+   "Mahissati",
+   "Word",
+   "spread",
+   "their",
+   "quest",
+   "question",
+   "the",
+   "Buddha,",
+   "and",
+   "the",
+   "procession",
+   "swelled",
+   "six",
+   "long,",
+   "drawing",
+   "thousands",
+   "seeking",
+   "the",
+   "ultimate",
+   "truth."
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-30-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     115,
+     122
+    ],
+    "bbox": [
+     294,
+     314,
+     936,
+     1170
+    ],
+    "shape": "box",
+    "en": "Knowing their faculties were ripening, the Buddha foresaw the great benefit of teaching at the pre-Buddhist Pasanaka Shrine. He departed Savatthi early, allowing the growing multitude to converge where their awakening was destined.",
+    "conf": 55
+   }
+  ],
+  "loose": [
+   "NES",
+   "tad"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-31-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     538,
+     117
+    ],
+    "bbox": [
+     1706,
+     314,
+     2347,
+     1170
+    ],
+    "shape": "box",
+    "en": "Arriving in Savattht, the seekers found miraculous footprint. footprint. Without the hollows of lust, the backward incline of hatred, or the heavy heels of delusion—they immediately recognized the mark of fully awakened being.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-Mogharaja-32-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "pilgrims",
+   "finally",
+   "the",
+   "Shrine.",
+   "Exhausted",
+   "but",
+   "elated—like",
+   "weary",
+   "travelers",
+   "finding",
+   "cool",
+   "shade—they",
+   "rushed",
+   "forward",
+   "behold",
+   "the",
+   "Buddha",
+   "teaching",
+   "amidst",
+   "vast",
+   "assembly.",
+   "Shrine.",
+   "(2)"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-33-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "TIX",
+   "Ajita",
+   "mentally",
+   "projected",
+   "Bavari’s",
+   "questions:",
+   "What",
+   "our",
+   "master’s",
+   "age?",
+   "What",
+   "marks",
+   "does",
+   "bear?",
+   "The",
+   "Buddha",
+   "answered",
+   "aloud,",
+   "detailing",
+   "Bavari’s",
+   "120",
+   "years",
+   "and",
+   "three",
+   "marks",
+   "great",
+   "man,",
+   "astonishing",
+   "the",
+   "silent",
+   "crowd."
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-34-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     57,
+     301
+    ],
+    "bbox": [
+     169,
+     932,
+     1273,
+     1319
+    ],
+    "shape": "box",
+    "en": "Bow Upon hearing the profound Dhamma, Ajita and his thousand pupils instantly attained Arahatship. Summoned by the Buddha, they miraculously appeared as elder monastics in orange robes, fully equipped ed and liberated.",
+    "conf": 36
+   }
+  ],
+  "loose": [
+   "ANS",
+   "GAN"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-35-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Mogharaja,",
+   "proud",
+   "and",
+   "considering",
+   "himself",
+   "the",
+   "wisest,",
+   "stood",
+   "ask",
+   "his",
+   "question",
+   "next.",
+   "Knowing",
+   "his",
+   "conceit",
+   "and",
+   "unripened",
+   "faculties,",
+   "the",
+   "Buddha",
+   "commanded",
+   "him",
+   "wait,",
+   "administering",
+   "necessary,",
+   "humbling",
+   "chastisement."
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-36-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Mogharaja",
+   "sat",
+   "silently,",
+   "watching",
+   "fourteen",
+   "other",
+   "pupils",
+   "take",
+   "their",
+   "turns.",
+   "Fearful",
+   "becoming",
+   "the",
+   "most",
+   "junior",
+   "disciple,",
+   "his",
+   "heavy",
+   "pride",
+   "dissolved.",
+   "Finally,",
+   "his",
+   "mind",
+   "ripened,",
+   "and",
+   "the",
+   "Buddha",
+   "him",
+   "speak.",
+   "YIN",
+   "Nice"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-37-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "\"Twice",
+   "asked,",
+   "and",
+   "twice",
+   "was",
+   "ignored,”",
+   "Mogharaja",
+   "began.",
+   "\"Now,",
+   "ask:",
+   "How",
+   "should",
+   "one",
+   "perceive",
+   "the",
+   "world",
+   "that",
+   "Mara,",
+   "the",
+   "King",
+   "Death,",
+   "cannot",
+   "see",
+   "him",
+   "anymore?\""
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-38-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "AYA",
+   "(GA",
+   "44)",
+   "Die",
+   "The",
+   "Buddha",
+   "replied:",
+   "avekkhassu,",
+   "Mogharaja",
+   "sada",
+   "sato",
+   "Perceive",
+   "the",
+   "world",
+   "empty,",
+   "Mogharaja,",
+   "being",
+   "ever",
+   "mindful",
+   "Abandon",
+   "the",
+   "wrong",
+   "view",
+   "self,",
+   "and",
+   "you",
+   "will",
+   "cross",
+   "beyond",
+   "Death.\"",
+   "lokam",
+   "CAV"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-39-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "IPS",
+   "discarding",
+   "delusion",
+   "personal",
+   "viewing",
+   "all",
+   "conditioned",
+   "phenomena",
+   "insubstantial",
+   "and",
+   "empty,",
+   "Mogharaja",
+   "conquered",
+   "Mara.",
+   "and",
+   "his",
+   "thousand",
+   "followers",
+   "instantly",
+   "realized",
+   "the",
+   "Arahat",
+   "fruition"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-40-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Transformed",
+   "the",
+   "Dhamma,",
+   "Mogharaja",
+   "and",
+   "his",
+   "followers",
+   "were",
+   "summoned",
+   "into",
+   "the",
+   "monastic",
+   "life",
+   "ING",
+   "instant,",
+   "they",
+   "appeared",
+   "with",
+   "shaved",
+   "heads",
+   "and",
+   "vibrant",
+   "orange",
+   "robes,",
+   "joining",
+   "serene",
+   "DD,",
+   "WY,",
+   "ING"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-41-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "00)",
+   "Even",
+   "awakened",
+   "Arahat,",
+   "Ven.",
+   "Mogharaja",
+   "embraced",
+   "strict",
+   "austerity.",
+   "habitually",
+   "wore",
+   "coarse,",
+   "poorly",
+   "dyed",
+   "robes",
+   "stitched",
+   "from",
+   "discarded",
+   "rags,",
+   "demonstrating",
+   "ultimate",
+   "non-attachment",
+   "worldly",
+   "comforts.",
+   "ING"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-42-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Recognizing",
+   "his",
+   "exceptional",
+   "discipline,",
+   "the",
+   "Buddha",
+   "praised",
+   "Ven.",
+   "Mogharaja",
+   "before",
+   "great",
+   "congregation.",
+   "was",
+   "formally",
+   "declared",
+   "the",
+   "foremost",
+   "disciple",
+   "wearing",
+   "coarse",
+   "robes",
+   "turning",
+   "his",
+   "former",
+   "pride",
+   "into",
+   "supreme",
+   "humility.",
+   "YEN"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-43-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     160,
+     354
+    ],
+    "bbox": [
+     476,
+     1157,
+     2179,
+     1435
+    ],
+    "shape": "box",
+    "en": "Fifteen of Bavari’s pupils, up to Ven. Mogharaja, questioned the Buddha. All fifteen, alongside their thousands of pupils, swiftly became Arahats, fully liberated from the hes cycle of rebirth.",
+    "conf": 33
+   }
+  ],
+  "loose": [
+   "pag",
+   "fil",
+   "CON",
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-44-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     364,
+     31
+    ],
+    "bbox": [
+     1167,
+     86,
+     2559,
+     436
+    ],
+    "shape": "box",
+    "en": "The sixteenth pupil, Pingiya—Bavari’s nephew—was 120 years old. Worn out and frail, he pleaded with the Buddha: “Show me the supermundane Dhamma that abandons rebirth and ageing before die in ignorance.”",
+    "conf": 70
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-Mogharaja-45-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     51,
+     277
+    ],
+    "bbox": [
+     152,
+     886,
+     1180,
+     1336
+    ],
+    "shape": "box",
+    "en": "The Buddha instructed Pingiya to abandon craving. Due to his advanced age and wandering mind—worrying that his uncle Bavari missed this teaching—Pingiya attained only the third level of Awakening: Non-returner (Anagami).",
+    "conf": 87
+   }
+  ],
+  "loose": [
+   "SIZ"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-46-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     363,
+     32
+    ],
+    "bbox": [
+     1167,
+     86,
+     2559,
+     436
+    ],
+    "shape": "box",
+    "en": "While the Buddha returned to Savatthi, Ven. Pingiya traveled to the banks of the Godhavari River. He returned to his uncle’s dwelling to share the profound teaching of the Parayana (The Way to the Beyond)",
+    "conf": 82
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-Mogharaja-47-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ZAIN",
+   "his",
+   "nephew",
+   "monastic",
+   "robes,",
+   "Bavari",
+   "realized",
+   "the",
+   "Buddha",
+   "had",
+   "appeared",
+   "the",
+   "world.",
+   "and",
+   "his",
+   "500",
+   "pupils",
+   "prepared",
+   "special",
+   "seat.",
+   "Ven.",
+   "Pingiya",
+   "sat",
+   "and",
+   "delivered",
+   "discourse",
+   "praising",
+   "the",
+   "Awakened",
+   "One.",
+   "Seeing"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-48-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     199,
+     80
+    ],
+    "bbox": [
+     592,
+     225,
+     2080,
+     625
+    ],
+    "shape": "box",
+    "en": "“Like bird that leaves lowly bushes of scanty fruit and resorts to fruitful grove, so also have left lesser minds Like golden swan, have reached great lake of immense wisdom",
+    "conf": 94
+   }
+  ],
+  "loose": [
+   "WIS",
+   "ING"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-49-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     252,
+     63
+    ],
+    "bbox": [
+     784,
+     175,
+     1858,
+     651
+    ],
+    "shape": "box",
+    "en": "Bavari asked: “If the Buddha’s wisdom is infinite and leads to the end of craving, why do you ever stay away from him?” Ven. Pingiya replied: do not stay away from him even for moment.”",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "ala"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-50-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     229,
+     321
+    ],
+    "bbox": [
+     661,
+     1038,
+     1980,
+     1425
+    ],
+    "shape": "box",
+    "en": "“With mindfulness, see the Buddha in my mind as clearly as with my eyes. Wherever the Awakened One goes, bow in my mind in that direction. My mind is always connected with his presence.”",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-Mogharaja-51-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     242,
+     322
+    ],
+    "bbox": [
+     592,
+     1038,
+     2050,
+     1425
+    ],
+    "shape": "box",
+    "en": "Knowing their faculties were mature, the Buddha sent golden shaft of radiance from Savatthi. Seeing the light, Pingiya exclaimed: “Look! The Buddha has come!” Bavari stood and raised his joined palms in profound reverence.",
+    "conf": 70
+   }
+  ],
+  "loose": [
+   "ONS",
+   "WAY",
+   "IDX"
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-52-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     331,
+     287
+    ],
+    "bbox": [
+     1081,
+     879,
+     2483,
+     1319
+    ],
+    "shape": "box",
+    "en": "The Buddha intensified the radiance, revealing his form He urged Pingiya: “Place your confidence in the Three Treasures and cross over from the domain of Death.” Upon hearing this, Ven. Pingiya became an Arahat",
+    "conf": 87
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-Mogharaja-53-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WZ.",
+   "Ven.",
+   "Pingiya’s",
+   "liberation",
+   "was",
+   "complete.",
+   "His",
+   "uncle,",
+   "Bavari,",
+   "attained",
+   "the",
+   "fruit",
+   "Non-returner,",
+   "and",
+   "his",
+   "500",
+   "pupils",
+   "entered",
+   "the",
+   "stream",
+   "Awakening.",
+   "Pingiya",
+   "rejoiced:",
+   "“The",
+   "Buddha",
+   "has",
+   "removed",
+   "the",
+   "roof",
+   "Sarnsara!”"
+  ]
+ }
+]

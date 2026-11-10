@@ -1,0 +1,1428 @@
+[
+ {
+  "img": "images/04-Maha-Kassapa-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "King",
+   "Nanda.",
+   "tale",
+   "Kamma,",
+   "Dana,",
+   "and",
+   "Renunciation",
+   "from",
+   "the",
+   "past",
+   "lives",
+   "Maha",
+   "Kassapa.",
+   "Nanda.",
+   "Chronicle"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     191,
+     366
+    ],
+    "bbox": [
+     569,
+     1194,
+     2080,
+     1438
+    ],
+    "shape": "box",
+    "en": "Unwilling to wear coarse garments, young Nanda seeks finer clothing His mother offers an auspicious blessing: wish you kingship of Baranast Guided by past merit, Nanda departs for the royal garden",
+    "conf": 79
+   }
+  ],
+  "loose": [
+   "Gye",
+   "Or)"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "King",
+   "Baranasi",
+   "passes",
+   "without",
+   "heir.",
+   "Guided",
+   "the",
+   "chaplain,",
+   "the",
+   "state",
+   "chariot",
+   "ventures",
+   "through",
+   "the",
+   "eastern",
+   "gate",
+   "find",
+   "deserving",
+   "monarch,",
+   "followed",
+   "four",
+   "army",
+   "divisions",
+   "and",
+   "resounding",
+   "music."
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "chariot",
+   "circumambulates",
+   "Nanda.",
+   "Inspecting",
+   "his",
+   "soles,",
+   "the",
+   "chaplain",
+   "declares",
+   "him",
+   "worthy",
+   "rule",
+   "Jambudipa.",
+   "Awakened,",
+   "Nanda",
+   "accepts",
+   "the",
+   "empty",
+   "throne",
+   "and",
+   "consecrated",
+   "alongside",
+   "the",
+   "late",
+   "king’s",
+   "daughter."
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     359,
+     358
+    ],
+    "bbox": [
+     622,
+     1184,
+     2020,
+     1415
+    ],
+    "shape": "box",
+    "en": "King da the Wish-Fulfilling “Fulfilling Trees Rejecting worldly garments, King Nanda tosses water to the four directions Instantly, thirty-two wish-fulfilling trees erupt from the earth. Adorned in divine robes, he ascends the palace to enjoy the fruits of his past Kamma.",
+    "conf": 69
+   }
+  ],
+  "loose": [
+   "ING"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     200,
+     362
+    ],
+    "bbox": [
+     509,
+     1164,
+     2133,
+     1408
+    ],
+    "shape": "box",
+    "en": "Years pass in royal luxury. Queen Padumavati observes with pity. She warns the King: ‘Your luxurious life stems from past faith, but you plant no seeds for future happiness. Rare indeed is new act of merit.",
+    "conf": 86
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Maha-Kassapa-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     252,
+     357
+    ],
+    "bbox": [
+     661,
+     1127,
+     1980,
+     1369
+    ],
+    "shape": "box",
+    "en": "King Nanda Seeks to Give vea Dana Seeking to practice Dana, the King prepares grand offerings. For three days, the Queen invites Arahats from the Eastern, Southern, and Western gates. No one he appears. On the fourth day, she turns to the North.",
+    "conf": 61
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Maha-Kassapa-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     272,
+     307
+    ],
+    "bbox": [
+     222,
+     989,
+     2430,
+     1276
+    ],
+    "shape": "box",
+    "en": "From the northern gate appear five hundred Paccekabuddhas, led by Maha Paduma. Accepting the royal invitation, the noble ones wash their faces at Lake Anotatta and materialize before the King and Queen.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "500",
+   "Paccekabuddhas"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     205,
+     369
+    ],
+    "bbox": [
+     608,
+     1203,
+     2033,
+     1422
+    ],
+    "shape": "box",
+    "en": "The royals offer alms and petition the Paccekabuddhas to remain. They construct five hundred lodgings and meditation paths in the royal garden, dutifully supplying the four requisites to support their silent reflection.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Maha-Kassapa-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "OS)",
+   "AVA",
+   "Border",
+   "unrest",
+   "erupts.",
+   "King",
+   "Nanda",
+   "departs",
+   "quell",
+   "the",
+   "rebellion,",
+   "leaving",
+   "Queen",
+   "Padumavati",
+   "safeguard",
+   "the",
+   "garden",
+   "sanctuary.",
+   "She",
+   "attentively",
+   "maintains",
+   "the",
+   "four",
+   "requisites,",
+   "ensuring",
+   "the",
+   "Paccekabuddhas",
+   "remain",
+   "undisturbed.",
+   "guard",
+   "turbed",
+   "ion",
+   "ing",
+   "NZ,"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     330,
+     372
+    ],
+    "bbox": [
+     691,
+     1230,
+     1957,
+     1475
+    ],
+    "shape": "box",
+    "en": "PARINIBBANA As the King’s return nears, the Paccekabuddhas reach the end of their life process. Entering jhana, Maha Paduma stands against his wooden backrest and attains Parinibbana. The remaining five hundred silently follow.",
+    "conf": 75
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Maha-Kassapa-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     166,
+     284
+    ],
+    "bbox": [
+     175,
+     939,
+     1170,
+     1306
+    ],
+    "shape": "box",
+    "en": "PREPARING FOR THE HE NOBLE NO ONES Preparing seats and perfumes, the Queen awaits them. She sends servant, who finds Maha Paduma leaning against the wood. Touching his cold, stiff feet, the servant realizes the noble ones have passed.",
+    "conf": 37
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Maha-Kassapa-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     258,
+     382
+    ],
+    "bbox": [
+     727,
+     1256,
+     1914,
+     1425
+    ],
+    "shape": "box",
+    "en": "The Queen weeps bitterly. Citizens gather in the royal garden to perform funeral rites and cremation. Gathering their sacred relics, Queen Padumavatt builds magnificent shrine to honor their immaculate lives.",
+    "conf": 76
+   }
+  ],
+  "loose": [
+   "way"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     273,
+     381
+    ],
+    "bbox": [
+     727,
+     1256,
+     1914,
+     1425
+    ],
+    "shape": "box",
+    "en": "Returning victorious, the King asks after the Paccekabuddhas. Hearing of their Parinibbdna, he is struck by profound realization: ‘Even to these wise ones, death occurred! How can there be liberation from death for us?’",
+    "conf": 84
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Maha-Kassapa-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     230,
+     368
+    ],
+    "bbox": [
+     546,
+     1167,
+     2106,
+     1428
+    ],
+    "shape": "box",
+    "en": "Reno Renouncing uncin the crown rT to his son, the Kine King embraces asceticism. The Queen follows suit. Exchanging material wealth for spiritual liberation, they develop jhana and ascend to the Brahma realms. tis,",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "ING"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Ascetic",
+   "Life",
+   "His",
+   "Final",
+   "Existence:",
+   "Story",
+   "Maha",
+   "Kassapa",
+   "Bhadda",
+   "Kapilani",
+   "The",
+   "NOY"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Two",
+   "exceptional",
+   "youths,",
+   "born",
+   "Magadhan",
+   "Brahmin",
+   "families,",
+   "longed",
+   "for",
+   "homeless",
+   "life.",
+   "Pippali",
+   "lived",
+   "Mahatittha;",
+   "Bhadda",
+   "Kapilani",
+   "Sagala.",
+   "Pressured",
+   "marry,",
+   "Pippali",
+   "vowed",
+   "toc",
+   "care",
+   "for",
+   "his",
+   "parents,",
+   "then",
+   "renounce",
+   "the",
+   "world.",
+   "secretly",
+   "exceptional",
+   "gadhan",
+   "Brahmin",
+   "families,"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     468,
+     65
+    ],
+    "bbox": [
+     1455,
+     188,
+     2513,
+     827
+    ],
+    "shape": "box",
+    "en": "To deter his mother’s marriage demands, Pippali commissioned magnificent golden statue adorned in red garments. He presented it to her, vowing to remain house- holder only if woman matching its exact beauty was found.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Maha-Kassapa-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     34,
+     310
+    ],
+    "bbox": [
+     69,
+     992,
+     1263,
+     1418
+    ],
+    "shape": "box",
+    "en": "At Sagala bathing ford, Bhadda’s attendant mistook the golden statue for her mistress and struck it. Realizing the truth, she declared Bhadda’ beauty was thousand times greater, effortlessly illuminating dark room, thus securing the match.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Maha-Kassapa-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     298,
+     281
+    ],
+    "bbox": [
+     496,
+     870,
+     2152,
+     1395
+    ],
+    "shape": "bubble",
+    "en": "we Neither desired marriage. Pippali and Bhadda secretly sent letters urging the other to find different match. Midway, messengers intercepted the scrolls, destroyed them, and forged ey acceptances ices instead.",
+    "conf": 39
+   }
+  ],
+  "loose": [
+   "LAA"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "16%",
+   "Ny)",
+   "The",
+   "Purity",
+   "Pact",
+   "Forced",
+   "into",
+   "marriage,",
+   "they",
+   "maintained",
+   "absolute",
+   "celibacy.",
+   "Two",
+   "fresh",
+   "floral",
+   "garlands",
+   "divided",
+   "their",
+   "bed,",
+   "remaining",
+   "permanently",
+   "unwithered—a",
+   "reflection",
+   "their",
+   "pure,",
+   "unattached",
+   "minds.",
+   "inds.",
+   "ing",
+   "ined",
+   "ivided",
+   "£3)"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     79,
+     235
+    ],
+    "bbox": [
+     56,
+     777,
+     952,
+     836
+    ],
+    "shape": "box",
+    "en": "MASSIVE GOLD COINS",
+    "conf": 96
+   },
+   {
+    "seed": [
+     610,
+     238
+    ],
+    "bbox": [
+     1696,
+     777,
+     2592,
+     836
+    ],
+    "shape": "box",
+    "en": "MECHANIZED HANIZED DAMS",
+    "conf": 74
+   },
+   {
+    "seed": [
+     88,
+     424
+    ],
+    "bbox": [
+     56,
+     1395,
+     952,
+     1461
+    ],
+    "shape": "box",
+    "en": "LEPHANT DIVISIONS",
+    "conf": 65
+   },
+   {
+    "seed": [
+     304,
+     423
+    ],
+    "bbox": [
+     995,
+     1392,
+     1653,
+     1461
+    ],
+    "shape": "bubble",
+    "en": "MAGADH CUP GOLD DUST",
+    "conf": 93
+   },
+   {
+    "seed": [
+     662,
+     431
+    ],
+    "bbox": [
+     1696,
+     1395,
+     2592,
+     1461
+    ],
+    "shape": "box",
+    "en": "FARMS",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "Upon",
+   "their",
+   "parents’",
+   "death,",
+   "their",
+   "inherited",
+   "worldly",
+   "burden",
+   "was",
+   "immense:",
+   "870",
+   "million",
+   "gold,",
+   "fourteen",
+   "villages,",
+   "fourteen",
+   "elephant",
+   "divisions,",
+   "and",
+   "sixty",
+   "mechanized",
+   "dams.",
+   "Even",
+   "the",
+   "gold",
+   "dust",
+   "washed",
+   "from",
+   "Pippali’s",
+   "body",
+   "filled",
+   "twelve",
+   "Magadha",
+   "cups",
+   "daily."
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "BEES",
+   "Both",
+   "realized",
+   "their",
+   "870",
+   "million",
+   "wealth",
+   "demanded",
+   "the",
+   "suffering",
+   "others.",
+   "Pippali",
+   "saw",
+   "crows",
+   "eating",
+   "earthworms",
+   "his",
+   "fields.",
+   "Bhadda",
+   "saw",
+   "birds",
+   "eating",
+   "insects",
+   "her",
+   "sesame.",
+   "The",
+   "olerable.",
+   "karmic",
+   "burden",
+   "their",
+   "vast",
+   "riches",
+   "became",
+   "int",
+   "utterly"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Returning",
+   "home,",
+   "Pippali",
+   "entrusted",
+   "his",
+   "vast",
+   "Bhadda,",
+   "declaring",
+   "his",
+   "intent",
+   "become",
+   "recluse.",
+   "Overjoyed,",
+   "she",
+   "replied",
+   "she",
+   "had",
+   "been",
+   "waiting",
+   "for",
+   "his",
+   "return",
+   "exactly",
+   "the",
+   "same",
+   "fortune",
+   "Returning",
+   "thing."
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ANS",
+   "The",
+   "Great",
+   "Renunciation",
+   "Walking",
+   "away",
+   "from",
+   "their",
+   "massive",
+   "empire,",
+   "they",
+   "shaved",
+   "their",
+   "heads,",
+   "donned",
+   "ascetic",
+   "robes,",
+   "and",
+   "went",
+   "forth",
+   "into",
+   "homelessness,",
+   "dedicating",
+   "their",
+   "renunciation",
+   "the",
+   "Arahats."
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     328,
+     39
+    ],
+    "bbox": [
+     734,
+     89,
+     2599,
+     886
+    ],
+    "shape": "bubble",
+    "en": "Departing through the gates, their weeping servants recognized them. The couple refused to return, instead granting the servants their absolute freedom, urging them to wash their heads, abandon servitude, and We liberated.",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Maha-Kassapa-27-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Earth-Shaking",
+   "Separation",
+   "prevent",
+   "rumors",
+   "worldly",
+   "attachment,",
+   "they",
+   "parted",
+   "ways",
+   "forever.",
+   "This",
+   "act",
+   "supreme",
+   "renunciation",
+   "was",
+   "profound",
+   "the",
+   "earth",
+   "itself",
+   "roared",
+   "and",
+   "quaked.",
+   "ALL",
+   "(S2"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-28-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "OOS",
+   "two",
+   "paths,",
+   "the",
+   "arth",
+   "qua",
+   "reverence.",
+   "Thundering",
+   "sounds",
+   "filled",
+   "the",
+   "sky,",
+   "while",
+   "Mount",
+   "Meru",
+   "and",
+   "the",
+   "Cakkavala",
+   "mountains",
+   "grew",
+   "higher,",
+   "unable",
+   "bear",
+   "the",
+   "sheer",
+   "weight",
+   "their",
+   "virtue.",
+   "these",
+   "perfected",
+   "beings",
+   "separate",
+   "ked",
+   "NAA",
+   "VAS",
+   "VA)"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-29-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     283,
+     362
+    ],
+    "bbox": [
+     605,
+     1137,
+     2037,
+     1478
+    ],
+    "shape": "box",
+    "en": "Meeting oN the Buddha: as The Ordination Inat ion of Maha Kassapa",
+    "conf": 65
+   }
+  ],
+  "loose": [
+   "Aly"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-30-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     266,
+     350
+    ],
+    "bbox": [
+     661,
+     1137,
+     1980,
+     1448
+    ],
+    "shape": "box",
+    "en": "The Buddha sensed the great earth quaking. Reflecting, he knew: ‘It is the power of Pippali and Bhaddakapilani renouncing their incomparable wealth. must do favour to them.’",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "=6~"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-31-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     455,
+     324
+    ],
+    "bbox": [
+     1392,
+     1055,
+     2543,
+     1415
+    ],
+    "shape": "box",
+    "en": "Walking three miles iles alone, the Buddha waited. To inspire faith, he did not conceal his splendour. Emanating ingara radiance lance like ke thousand suns, he bathed the forest grove in light, turning the Bahuputtaka banyan tree entirely ire ly golden.",
+    "conf": 61
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Maha-Kassapa-32-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     110,
+     66
+    ],
+    "bbox": [
+     149,
+     212,
+     1256,
+     625
+    ],
+    "shape": "box",
+    "en": "Approaching the radiant teacher, Ven. Maha Kassapa bowed deeply and declared three times: “Satthd me Bhagava, savakoham asmi.” (Exalted Buddha, you are my teacher! Iam am your disciple!)",
+    "conf": 65
+   }
+  ],
+  "loose": [
+   "pis",
+   "AN)",
+   "CNS"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-34-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     154,
+     359
+    ],
+    "bbox": [
+     370,
+     1108,
+     2271,
+     1418
+    ],
+    "shape": "box",
+    "en": "Be seated, dear son Kassapa, shall give you an inheritance. The Buddha delivered three profound pieces of advice Receiving them respectfully became Maha Kassapa’s unique monastic ordination (ovdda-patiggahana-upasampada).",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "ON,"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-35-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     179,
+     65
+    ],
+    "bbox": [
+     63,
+     122,
+     833,
+     1151
+    ],
+    "shape": "bubble",
+    "en": "oy UD aS age Ke Ve 1; Dis: aX LAINE, Dy Ay diy",
+    "conf": 34
+   },
+   {
+    "seed": [
+     57,
+     379
+    ],
+    "bbox": [
+     119,
+     1210,
+     787,
+     1442
+    ],
+    "shape": "box",
+    "en": "1. Conscience Concern: Abandons Brahmin caste pride.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     329,
+     375
+    ],
+    "bbox": [
+     998,
+     1210,
+     1653,
+     1442
+    ],
+    "shape": "box",
+    "en": "2. Respectful Listening: Abandons arrogance of high intelligence.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     591,
+     380
+    ],
+    "bbox": [
+     1861,
+     1207,
+     2533,
+     1442
+    ],
+    "shape": "box",
+    "en": "3. Mindfulness of Body: Abandons vanity over physical beauty.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "by/",
+   "Ses"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-36-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     187,
+     219
+    ],
+    "bbox": [
+     354,
+     691,
+     2295,
+     942
+    ],
+    "shape": "box",
+    "en": "Bearing the 32 marks of great being, the Buddha journeyed forward Ven. Maha Kassapa, graceful with seven marks, followed closely behind him like small golden boat trailing grand one",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Maha-Kassapa-37-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     543,
+     108
+    ],
+    "bbox": [
+     1547,
+     284,
+     2427,
+     1256
+    ],
+    "shape": "box",
+    "en": "Stepping ing off the path to rest, the Buddha hinted he wished to sit For or the master’s welfare, Ven. Maha Kassapa folded his is exceptionally 10na Il soft upper robe fourfold offering it as royal seat",
+    "conf": 51
+   }
+  ],
+  "loose": [
+   "AQ)",
+   "Als"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-38-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     458,
+     74
+    ],
+    "bbox": [
+     1329,
+     212,
+     2490,
+     572
+    ],
+    "shape": "box",
+    "en": "Why exchange robes? The Buddha knew his chief disciples would attain Parinibbana before him. He foresaw Kassapa living 120 years and holding the First Council (Sangayana), ensuring the Dhamma would endure for 5,000 years",
+    "conf": 90
+   },
+   {
+    "seed": [
+     667,
+     380
+    ],
+    "bbox": [
+     1875,
+     1237,
+     2377,
+     1346
+    ],
+    "shape": "box",
+    "en": "5,000 Years Car",
+    "conf": 54
+   }
+  ],
+  "loose": [
+   "14,"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-39-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     193,
+     361
+    ],
+    "bbox": [
+     341,
+     1164,
+     2311,
+     1432
+    ],
+    "shape": "box",
+    "en": "The Buddha offered his worn rag-robe—so heavy with virtue the earth had quaked when he first found it. As they exchanged robes, the great earth quaked violently again to honor this unprecedented succession.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Maha-Kassapa-40-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     154,
+     383
+    ],
+    "bbox": [
+     337,
+     1164,
+     2311,
+     1432
+    ],
+    "shape": "box",
+    "en": "Receiving the robe brought no arrogance. Kassapa vowed to practice the austere practices (dhutanga). Through profound effort, he became an Arahat with fourfold analytical knowledge (patisambhida-ndna) in just eight days.",
+    "conf": 31
+   }
+  ],
+  "loose": [
+   "chy"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-41-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "continually",
+   "praised",
+   "his",
+   "supreme",
+   "gentleness",
+   "“Monks,",
+   "Kassapa",
+   "approaches",
+   "his",
+   "supporters",
+   "controlling",
+   "his",
+   "deeds,",
+   "words,",
+   "and",
+   "thoughts",
+   "like",
+   "the",
+   "moon—absolutely",
+   "free",
+   "from",
+   "physical,",
+   "verbal,",
+   "and",
+   "mental",
+   "roughness"
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-42-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     195,
+     366
+    ],
+    "bbox": [
+     337,
+     1164,
+     2311,
+     1432
+    ],
+    "shape": "box",
+    "en": "The Buddha declared him foremost (efad-agga): “Monks, among my disciples who practice and teach the excellent ascetic practices (dhutanga) which shake off defilements, 3 Maha Kassapa is the foremost.”",
+    "conf": 61
+   }
+  ],
+  "loose": [
+   "NAG",
+   "ANS"
+  ]
+ }
+]

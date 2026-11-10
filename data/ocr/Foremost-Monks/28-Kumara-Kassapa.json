@@ -1,0 +1,399 @@
+[
+ {
+  "img": "images/28-Kumara-Kassapa-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Tale",
+   "Ven.",
+   "Kumara",
+   "Kassapa",
+   "The",
+   "Foremost",
+   "Speaker",
+   "Similes",
+   "journey",
+   "through",
+   "past",
+   "lives,",
+   "unwavering",
+   "ascetic",
+   "rigor,",
+   "and",
+   "the",
+   "Buddha’s",
+   "profound",
+   "fifteen-point",
+   "puzzle.",
+   "INS"
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     108,
+     256
+    ],
+    "bbox": [
+     149,
+     757,
+     1118,
+     1349
+    ],
+    "shape": "bubble",
+    "en": "ago, seven monks climbed steep mountain, kicking away their ladder to ensure absolute dedication. Two attained Awakening. The others, including the future Kumara Kassapa, were reborn to continue. their relentless que Ss",
+    "conf": 67
+   }
+  ],
+  "loose": [
+   "WA,",
+   "SSS",
+   "ANS"
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     251,
+     320
+    ],
+    "bbox": [
+     631,
+     1051,
+     2010,
+     1329
+    ],
+    "shape": "box",
+    "en": "ed bef her ordinatio on, Kassapa’s mo ther was protected by the Buddha’s pure judgment. Born like golden statue, the boy was raised by King Pasenadi. At age seven, Prince Kassapa became novice monk.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     279,
+     378
+    ],
+    "bbox": [
+     734,
+     1177,
+     1908,
+     1448
+    ],
+    "shape": "box",
+    "en": "While meditating in the forest, rie Brahma appeared. He was Kassapa’s former mountain companion. He delivered mysterious fifteen-point puzzle about burning anthill, urging Kassapa to seek the Buddha’s answers.",
+    "conf": 43
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     230,
+     356
+    ],
+    "bbox": [
+     678,
+     1174,
+     1964,
+     1448
+    ],
+    "shape": "box",
+    "en": "“An anthil il emit smoke by night ight and flames by day.” The Buddha explained: The anthill is the human body. Smoke represents our midnight ruminations. Flames are the physical and verbal actions we carry out by day.",
+    "conf": 65
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     350,
+     173
+    ],
+    "bbox": [
+     1141,
+     542,
+     1504,
+     595
+    ],
+    "shape": "box",
+    "en": "Brahmin Teacher",
+    "conf": 92
+   },
+   {
+    "seed": [
+     553,
+     350
+    ],
+    "bbox": [
+     1653,
+     1088,
+     2595,
+     1445
+    ],
+    "shape": "box",
+    "en": "The Brahmin teacher is the Buddha. Budd The wise pupil is the meditating monastic. The sword represents supermundane knowledge Digging diligently is persistent effort. Armed with these, the pupil unearths the mind's secrets.",
+    "conf": 30
+   },
+   {
+    "seed": [
+     402,
+     380
+    ],
+    "bbox": [
+     1160,
+     1256,
+     1481,
+     1313
+    ],
+    "shape": "bubble",
+    "en": "Wise Pupil",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "Persistent"
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "nds",
+   "begins.",
+   "The",
+   "pupil",
+   "door-bolt,",
+   "representing",
+   "Ignorance",
+   "blocking",
+   "the",
+   "path.",
+   "Next,",
+   "blown-up",
+   "toad",
+   "appears,",
+   "symbolizing",
+   "Wrath.",
+   "Like",
+   "toad,",
+   "anger",
+   "renders",
+   "blind,",
+   "immobile,",
+   "and",
+   "vulnerable"
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     471,
+     311
+    ],
+    "bbox": [
+     1313,
+     985,
+     2509,
+     1346
+    ],
+    "shape": "bubble",
+    "en": "ian Deeper dow lies forked road, the danger of Uncertainty stalling progress. Then, water-strainer symbolizes the Five Hindrances—which let merit and concentration drain away uselessly, like water slipping pba soapy sand.",
+    "conf": 32
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     398,
+     60
+    ],
+    "bbox": [
+     883,
+     192,
+     1838,
+     489
+    ],
+    "shape": "box",
+    "en": "REE emerges: its five limbs represent the Five Aggregates of clinging. Then, knife and mincing-board are found, signifying the Five Sense-pleasures that slice our attention and attach us to the worldly realm.",
+    "conf": 34
+   }
+  ],
+  "loose": [
+   "[77",
+   "Ry,",
+   "ING"
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     206,
+     350
+    ],
+    "bbox": [
+     635,
+     1078,
+     2007,
+     1369
+    ],
+    "shape": "box",
+    "en": "The pupil uncovers lump of meat. This is sensual craving. Cherished by all, yet the source of all woes, this deep attachment relentlessly binds beings to the cycle of rebirth.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "$25"
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     70,
+     78
+    ],
+    "bbox": [
+     192,
+     192,
+     1084,
+     489
+    ],
+    "shape": "box",
+    "en": "Finally, Finally, at the bottom ies the Naga—the Naga—the pure Arahat. The Buddha instructed: Let the Naga remain. Do not intrude upon him. Worship him. The Arahat is fully liberated, never reverting to defilements.",
+    "conf": 52
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Puzzle",
+   "Synthesized:",
+   "Knowledge",
+   "Ignorance",
+   "Wrath",
+   "Hindrances",
+   "Aggregates",
+   "Craving",
+   "The",
+   "Arahat",
+   "Anthill"
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     260,
+     363
+    ],
+    "bbox": [
+     731,
+     1170,
+     1888,
+     1375
+    ],
+    "shape": "bubble",
+    "en": "Armed with the Buddha’s translation, Kumara Kassapa returned to the forest and swiftly became an Arahat. For his mastery of profound allegories, the Buddha declared him the foremost among monastics who employ imagery and similes.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "(6),",
+   "ING"
+  ]
+ }
+]

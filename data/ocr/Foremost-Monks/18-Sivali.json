@@ -1,0 +1,498 @@
+[
+ {
+  "img": "images/18-Sivali-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     332,
+     317
+    ],
+    "bbox": [
+     764,
+     1015,
+     1885,
+     1399
+    ],
+    "shape": "box",
+    "en": "Ven. 5 Sivali: The Foremost 5 Recipient ipient The os Great Las) Chronicles cles Journey of Karma, Merit, and Awakening akening",
+    "conf": 36
+   }
+  ],
+  "loose": [
+   "bea",
+   "bea"
+  ]
+ },
+ {
+  "img": "images/18-Sivali-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     54,
+     85
+    ],
+    "bbox": [
+     175,
+     116,
+     899,
+     460
+    ],
+    "shape": "bubble",
+    "en": "3, Fruition: Arahatship and unparalleled abundance:",
+    "conf": 68
+   }
+  ],
+  "loose": [
+   "Trial:",
+   "karmic",
+   "debts.",
+   "The",
+   "Path",
+   "Ven.",
+   "Aspiration:",
+   "Seeds",
+   "planted",
+   "past",
+   "lives",
+   "Every",
+   "action",
+   "echoes",
+   "through",
+   "Samsara",
+   "Trial:"
+  ]
+ },
+ {
+  "img": "images/18-Sivali-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     533,
+     112
+    ],
+    "bbox": [
+     1491,
+     288,
+     2480,
+     1293
+    ],
+    "shape": "box",
+    "en": "During Buddha Padumuttara’s time nobleman offered grand seven-day almsgiving He made powerful wish to become the foremost monk in receiving material gains in future Buddha’s dispensation",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/18-Sivali-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     300,
+     313
+    ],
+    "bbox": [
+     913,
+     959,
+     2516,
+     1375
+    ],
+    "shape": "box",
+    "en": "Lifetimes later, villager refused 1,000 coins for humble honey and curds He offered this meal directly to Buddha Vipassi wishing for fame and an abundant retinue",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/18-Sivali-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "NOY",
+   "Reborn",
+   "Princess",
+   "Suppavasa,",
+   "his",
+   "conception",
+   "sparked",
+   "endless",
+   "prosperity",
+   "Baskets",
+   "gifts",
+   "arrived",
+   "day",
+   "and",
+   "night",
+   "Touched",
+   "seeds",
+   "yielded",
+   "thousands",
+   "sprouts,",
+   "and",
+   "ladled",
+   "food",
+   "never",
+   "ran",
+   "short"
+  ]
+ },
+ {
+  "img": "images/18-Sivali-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     535,
+     341
+    ],
+    "bbox": [
+     1475,
+     975,
+     2592,
+     1445
+    ],
+    "shape": "bubble",
+    "en": "Present Result Trapped in his mother’s womb for seven years, enduring seven days of intense labor pains.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     68,
+     340
+    ],
+    "bbox": [
+     188,
+     1084,
+     1104,
+     1392
+    ],
+    "shape": "box",
+    "en": "The Weight ight of Past Actions Past Deed: Besieging city, blocking its gates for seven years and seven days.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/18-Sivali-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WSs",
+   "Despite",
+   "severe",
+   "the",
+   "She",
+   "endured",
+   "deeply",
+   "reflecting",
+   "the",
+   "pure",
+   "attributes",
+   "the",
+   "Buddha,",
+   "the",
+   "Dhamma",
+   "Sangha,",
+   "the",
+   "happiness",
+   "Nibbana.",
+   "agony,",
+   "Princess",
+   "suffered",
+   "and",
+   "the",
+   "and",
+   "absolute",
+   "peaceful",
+   "WAS",
+   "Despite",
+   "severe",
+   "the"
+  ]
+ },
+ {
+  "img": "images/18-Sivali-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "May",
+   "Princess",
+   "Suppavasa",
+   "healthy.",
+   "May",
+   "she",
+   "give",
+   "birth",
+   "healthy",
+   "son!’",
+   "Instantly,",
+   "the",
+   "seven-year",
+   "ordeal",
+   "ended.",
+   "The",
+   "boy",
+   "Sivali",
+   "was",
+   "born",
+   "without",
+   "pain,",
+   "bringing",
+   "immense",
+   "joy.",
+   "cess",
+   "‘May"
+  ]
+ },
+ {
+  "img": "images/18-Sivali-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     459,
+     79
+    ],
+    "bbox": [
+     1422,
+     218,
+     2480,
+     701
+    ],
+    "shape": "box",
+    "en": "To celebrate, his parents hosted grand almsgiving for the Sangha. Born fully capable after seven years in the womb, seven-year-old Sivali joyfully filtered water for the monastics.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/18-Sivali-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     283,
+     315
+    ],
+    "bbox": [
+     866,
+     1012,
+     2562,
+     1412
+    ],
+    "shape": "box",
+    "en": "Ven. Sariputta asked Sivali if he wished to ordain after suffering so long in the womb. With his joyful mother’s blessing, Sivalideparted for the monastery to embrace the ascetic life.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "SS."
+  ]
+ },
+ {
+  "img": "images/18-Sivali-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     336,
+     157
+    ],
+    "bbox": [
+     992,
+     440,
+     1656,
+     1104
+    ],
+    "shape": "bubble",
+    "en": "Instantaneous Liberation Meditating on bodily suffering during shaving: ist round: Stream-entry 2nd round: Once-returning 3rd round: Non-returning Shaving complete: Arahatship achieved simultaneously.",
+    "conf": 67
+   }
+  ],
+  "loose": [
+   "BIE"
+  ]
+ },
+ {
+  "img": "images/18-Sivali-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     698,
+     175
+    ],
+    "bbox": [
+     2185,
+     572,
+     2552,
+     615
+    ],
+    "shape": "box",
+    "en": "Mount nt Gandhamadana amadana",
+    "conf": 66
+   },
+   {
+    "seed": [
+     62,
+     285
+    ],
+    "bbox": [
+     109,
+     906,
+     879,
+     1382
+    ],
+    "shape": "box",
+    "en": "Ven. Sivali led 500 monks through dangerous forests toward the Himavanta. At eight deserted landmarks, celestial Devas materialized to offer grand, seven-day almsgivings.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Aciravati"
+  ]
+ },
+ {
+  "img": "images/18-Sivali-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     541,
+     60
+    ],
+    "bbox": [
+     1656,
+     169,
+     2536,
+     615
+    ],
+    "shape": "box",
+    "en": "On Mount Gandhamadana, Deva Nagadatta offered endless milk and butter-rice. The Deva explained this abundance was the karmic result of his past merit during Buddha Kassapa’s time.",
+    "conf": 48
+   }
+  ],
+  "loose": [
+   "the"
+  ]
+ },
+ {
+  "img": "images/18-Sivali-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Observing",
+   "the",
+   "the",
+   "dangerous",
+   "journey,",
+   "the",
+   "Buddha",
+   "declared:",
+   "“Monks,",
+   "among",
+   "monastic",
+   "disciples",
+   "receive",
+   "abundant",
+   "requisites,",
+   "foremost.”",
+   "celestial",
+   "endless",
+   "supplies",
+   "who",
+   "Sivali"
+  ]
+ },
+ {
+  "img": "images/18-Sivali-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     371,
+     251
+    ],
+    "bbox": [
+     1008,
+     780,
+     1643,
+     1481
+    ],
+    "shape": "bubble",
+    "en": "The Tapestry of Merit Ven. Sivali's journey reveals the profound architecture of karma. single pure aspiration, nurtured through lifetimes of generosity, withstands karmic debt to blossom into total liberation and unparalleled abundance.",
+    "conf": 44
+   }
+  ],
+  "loose": []
+ }
+]

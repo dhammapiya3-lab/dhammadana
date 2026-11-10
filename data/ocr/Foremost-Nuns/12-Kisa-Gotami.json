@@ -1,0 +1,948 @@
+[
+ {
+  "img": "images/12-Kisa-Gotami-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     262,
+     340
+    ],
+    "bbox": [
+     658,
+     1124,
+     1984,
+     1465
+    ],
+    "shape": "box",
+    "en": "The 7 of Kisa eae Gotami Part 1: The Accumulation of Merit SSS",
+    "conf": 32
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-Kisa-Gotami-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     497,
+     48
+    ],
+    "bbox": [
+     1643,
+     152,
+     2500,
+     453
+    ],
+    "shape": "box",
+    "en": "An Ancient Aspiration in Hamsavati Before Buddha Padumuttara, she saw nun praised for wearing coarse robes. Making an extraordinary offering, she aspired to this path. The Buddha prophesied her success under Buddha Gotama.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "(AO"
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     54,
+     332
+    ],
+    "bbox": [
+     136,
+     1091,
+     1137,
+     1342
+    ],
+    "shape": "box",
+    "en": "One Hundred Thousand Aeons of Purity For 100,000 aeons, she was reborn only in fortunate realms Under Buddha Kassapa, she became Princess Dhamma of Baranasi, Baranasi purely observing the ten precepts for her 20,000-year lifespan",
+    "conf": 52
+   }
+  ],
+  "loose": [
+   "WZ,",
+   "NZ,",
+   "fe,",
+   "lex",
+   "WW)"
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     87,
+     48
+    ],
+    "bbox": [
+     155,
+     159,
+     1041,
+     460
+    ],
+    "shape": "box",
+    "en": "The Descent into poverty Reborn from the Tavatimsa Realm into Savatthi family, their fortunes dwindled into severe poverty. Named Gotami, her emaciated frame earned her the enduring nickname Kisa Gotami—‘Gotami the lean one.”",
+    "conf": 49
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-Kisa-Gotami-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     226,
+     50
+    ],
+    "bbox": [
+     698,
+     152,
+     1977,
+     278
+    ],
+    "shape": "box",
+    "en": "The of Exhausted Merit",
+    "conf": 79
+   },
+   {
+    "seed": [
+     340,
+     314
+    ],
+    "bbox": [
+     86,
+     1038,
+     1190,
+     1392
+    ],
+    "shape": "box",
+    "en": "ae When merit is exhausted, everything is lost (Nidhi-kanda-sutta) In Savatthi, wealthy merchant's fortune mysteriously turned to black charcoal. Starving and despondent, he took to his bed in despair.",
+    "conf": 41
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-Kisa-Gotami-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     76,
+     308
+    ],
+    "bbox": [
+     165,
+     1008,
+     959,
+     1313
+    ],
+    "shape": "box",
+    "en": "Practical Test of Kamma “Spread mat in the bazaar and sell your charcoal. Only person endowed with great past merit will see its true form.”",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "WAY",
+   "ARN"
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     609,
+     23
+    ],
+    "bbox": [
+     608,
+     76,
+     2033,
+     198
+    ],
+    "shape": "box",
+    "en": "The jaa) 50 oF ions",
+    "conf": 47
+   },
+   {
+    "seed": [
+     150,
+     378
+    ],
+    "bbox": [
+     387,
+     1233,
+     2255,
+     1359
+    ],
+    "shape": "box",
+    "en": "He sat at the bazaar. azaar. zaar. Ordinary passers-by mocked him Why you Sell charcoal charcoa He simp replied, “One ne sells what one own ithout imm se past merit, rit, they saw on ruin uin",
+    "conf": 83
+   }
+  ],
+  "loose": [
+   "(EO"
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     56,
+     56
+    ],
+    "bbox": [
+     179,
+     182,
+     1114,
+     278
+    ],
+    "shape": "box",
+    "en": "The Vision sion of Accumulated Merit",
+    "conf": 94
+   },
+   {
+    "seed": [
+     190,
+     393
+    ],
+    "bbox": [
+     628,
+     1296,
+     2043,
+     1418
+    ],
+    "shape": "box",
+    "en": "Kisa Gotami arrived at the bazaar. Endowed with profound past merit, she was bewildered. ‘Father,’ she asked, ‘why are you selling gold and silver?’ The test had found its subject.",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "Mey,"
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     508,
+     64
+    ],
+    "bbox": [
+     1640,
+     192,
+     2457,
+     612
+    ],
+    "shape": "box",
+    "en": "Reality Transforme by Single Touch ‘Where are the gold and silver?’ the merchant asked. She placed handful of his goods into his hands. Upon her touch, the charcoal instantly reverted to shining wealth.",
+    "conf": 57
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-Kisa-Gotami-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     65,
+     55
+    ],
+    "bbox": [
+     179,
+     179,
+     965,
+     278
+    ],
+    "shape": "box",
+    "en": "The he Union of Fortunes",
+    "conf": 96
+   },
+   {
+    "seed": [
+     225,
+     379
+    ],
+    "bbox": [
+     741,
+     1253,
+     1904,
+     1418
+    ],
+    "shape": "box",
+    "en": "Discovering her identity, the merchant brought Kisé Gotami home and married her to his son. Through her profound past merit, his entire fortune of 400 million was fully restored.",
+    "conf": 81
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-Kisa-Gotami-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WAS",
+   "ASS",
+   "Bip,",
+   "rief",
+   "and",
+   "Delusion",
+   "Just",
+   "her",
+   "son",
+   "reached",
+   "the",
+   "age",
+   "romp",
+   "about,",
+   "died.",
+   "Unfamiliar",
+   "with",
+   "such",
+   "loss,",
+   "she",
+   "refused",
+   "abandon",
+   "him",
+   "the",
+   "cemetery.",
+   "Clinging",
+   "his",
+   "body,",
+   "she",
+   "roamed",
+   "from",
+   "house",
+   "house,",
+   "desperately",
+   "begging",
+   "for",
+   "medicine",
+   "restore",
+   "his",
+   "life.",
+   "Grief",
+   "ched",
+   "miliar",
+   "don",
+   "ore"
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Compassionate",
+   "Intervention",
+   "Most",
+   "villagers",
+   "jeered",
+   "her",
+   "senseless",
+   "plea,",
+   "flipping",
+   "their",
+   "fingers",
+   "mockery.",
+   "However,",
+   "compassionate",
+   "wise",
+   "man",
+   "saw",
+   "her",
+   "grief-induced",
+   "delusion.",
+   "directed",
+   "her",
+   "the",
+   "Jetavana",
+   "monastery,",
+   "saying",
+   "the",
+   "Buddha",
+   "possessed",
+   "the",
+   "right",
+   "medicine.",
+   "AW,"
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "VIN",
+   "The",
+   "Holding",
+   "her",
+   "child,",
+   "she",
+   "begged",
+   "the",
+   "Buddha",
+   "for",
+   "the",
+   "cure.",
+   "Seeing",
+   "her",
+   "past",
+   "merit,",
+   "instructed:",
+   "\"Bring",
+   "small",
+   "quantity",
+   "mustard",
+   "oil",
+   "from",
+   "house",
+   "where",
+   "death",
+   "has",
+   "ever",
+   "occurred.\"",
+   "Filled",
+   "with",
+   "hope,",
+   "she",
+   "departed.",
+   "Mustard",
+   "Seed",
+   "Remedy",
+   "Seed"
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Impossible",
+   "Condition",
+   "the",
+   "first",
+   "house,",
+   "family",
+   "eagerly",
+   "offered",
+   "mustard",
+   "oil.",
+   "But",
+   "when",
+   "she",
+   "asked",
+   "anyone",
+   "had",
+   "ever",
+   "died",
+   "there,",
+   "the",
+   "householder",
+   "replied,",
+   "‘What",
+   "question!",
+   "Who",
+   "can",
+   "remember",
+   "the",
+   "number",
+   "people",
+   "that",
+   "have",
+   "died",
+   "this",
+   "family?’",
+   "The",
+   "Condition",
+   "NZ.",
+   "ING",
+   "DY,"
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Reality",
+   "She",
+   "refused",
+   "the",
+   "oil",
+   "and",
+   "moved",
+   "on,",
+   "but",
+   "the",
+   "reply",
+   "was",
+   "identical",
+   "everywhere.",
+   "Truth",
+   "finally",
+   "dawned",
+   "She",
+   "realized",
+   "the",
+   "Buddha",
+   "knew",
+   "this",
+   "profound",
+   "reality",
+   "there",
+   "family",
+   "the",
+   "city",
+   "untouched",
+   "death",
+   "WW.",
+   "eality",
+   "all"
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Shattering",
+   "the",
+   "Delusion",
+   "spiritual",
+   "urgency",
+   "awoke",
+   "within",
+   "her.",
+   "She",
+   "carried",
+   "her",
+   "child",
+   "the",
+   "cemetery,",
+   "finally",
+   "letting",
+   "him",
+   "go.",
+   "She",
+   "whispered,",
+   "“Dear",
+   "son,",
+   "wrongly",
+   "thought",
+   "death",
+   "came",
+   "you",
+   "alone.",
+   "But",
+   "death",
+   "common",
+   "everybody.’",
+   "NEY",
+   "NAN",
+   "Shattering",
+   "VIN",
+   "“Dear"
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "She",
+   "returned",
+   "the",
+   "Buddha",
+   "empty-handed.",
+   "When",
+   "asked",
+   "for",
+   "the",
+   "oil,",
+   "she",
+   "replied,",
+   "have",
+   "need",
+   "for",
+   "mustard",
+   "oil,",
+   "venerable",
+   "sir.",
+   "Only",
+   "give",
+   "firm",
+   "ground",
+   "stand",
+   "upon!”",
+   "law",
+   "Seeking",
+   "Firm",
+   "Ground",
+   "finally",
+   "grasped",
+   "the",
+   "inescapable",
+   "aniccata."
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Flood",
+   "The",
+   "Buddha",
+   "taught:",
+   "“One",
+   "intoxicated",
+   "with",
+   "children",
+   "and",
+   "wealth",
+   "carried",
+   "away",
+   "Death,",
+   "like",
+   "sleeping",
+   "village",
+   "swept",
+   "huge",
+   "flood.”",
+   "Hearing",
+   "this,",
+   "she",
+   "attained",
+   "Stream-entry",
+   "(Sotapatti-phala),",
+   "perceiving",
+   "the",
+   "arising",
+   "and",
+   "perishing",
+   "all",
+   "conditioned",
+   "things.",
+   "Swept",
+   "the",
+   "all",
+   "nel",
+   "Wis",
+   "NUS"
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Entering",
+   "the",
+   "Sangha",
+   "Seeking",
+   "the",
+   "path,",
+   "she",
+   "requested",
+   "become",
+   "nun.",
+   "After",
+   "walking",
+   "three",
+   "rounds",
+   "around",
+   "the",
+   "Buddha,",
+   "she",
+   "was",
+   "admitted",
+   "into",
+   "the",
+   "Sangha",
+   "female",
+   "monastics.",
+   "Now",
+   "Ven.",
+   "Kisa",
+   "Gotami,",
+   "she",
+   "worked",
+   "diligently",
+   "gain",
+   "deep",
+   "spiritual",
+   "insight",
+   "len",
+   "STIC",
+   "orke"
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Flickering",
+   "While",
+   "tending",
+   "the",
+   "lighting",
+   "the",
+   "Assembly",
+   "continuously",
+   "rise",
+   "and",
+   "vanish.",
+   "profound",
+   "Hall,",
+   "she",
+   "intently",
+   "observed",
+   "single",
+   "flame",
+   "perception",
+   "arose:",
+   "all",
+   "living",
+   "beings",
+   "are",
+   "like",
+   "this",
+   "flame,",
+   "endlessly",
+   "born",
+   "only",
+   "die",
+   "The"
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Rising",
+   "and",
+   "Falling",
+   "The",
+   "flame",
+   "revealed",
+   "the",
+   "ultimate",
+   "truth.",
+   "Only",
+   "those",
+   "who",
+   "attain",
+   "the",
+   "deathless",
+   "Nibbana",
+   "escape",
+   "this",
+   "relentless",
+   "cycle",
+   "arising",
+   "and",
+   "falling",
+   "Perceiving",
+   "her",
+   "thoughts",
+   "from",
+   "his",
+   "chamber,",
+   "the",
+   "Buddha",
+   "prepared",
+   "guide",
+   "her",
+   "final",
+   "realization."
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha’s",
+   "Radiance",
+   "The",
+   "Buddha",
+   "sent",
+   "his",
+   "radiance,",
+   "confirming",
+   "her",
+   "insight:",
+   "“Your",
+   "thinking",
+   "right.",
+   "better",
+   "live",
+   "single",
+   "day",
+   "perceiving",
+   "the",
+   "deathless",
+   "Nibbana",
+   "through",
+   "path-knowledge",
+   "than",
+   "hundred",
+   "years",
+   "blindness",
+   "Buddha’s"
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ultimate",
+   "Liberation",
+   "the",
+   "end",
+   "this",
+   "profound",
+   "discourse,",
+   "Ven.",
+   "Kisa",
+   "Gotami",
+   "completely",
+   "extinguished",
+   "all",
+   "mental",
+   "intoxicants.",
+   "She",
+   "attained",
+   "becoming",
+   "Arahat.",
+   "The",
+   "grieving",
+   "mother",
+   "had",
+   "transformed",
+   "into",
+   "fully",
+   "liberated",
+   "sage.",
+   "Awakening,",
+   "ONG"
+  ]
+ }
+]

@@ -1,0 +1,446 @@
+[
+ {
+  "img": "images/08-Sakula-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     315,
+     348
+    ],
+    "bbox": [
+     906,
+     1151,
+     1736,
+     1418
+    ],
+    "shape": "box",
+    "en": "Venerable Sakula Foremost in the Divine Eye multi-lifetime journey of aspiration, merit, and awakening.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Sakula-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     402,
+     170
+    ],
+    "bbox": [
+     985,
+     489,
+     1812,
+     995
+    ],
+    "shape": "box",
+    "en": "Venerable Sakula is renowned Arahat nun. Our narrative relies on the Theri-gatha commentary, which preserves the most extensive record of her multi-lifetime history.",
+    "conf": 71
+   }
+  ],
+  "loose": [
+   "ant"
+  ]
+ },
+ {
+  "img": "images/08-Sakula-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     324,
+     51
+    ],
+    "bbox": [
+     896,
+     69,
+     1746,
+     473
+    ],
+    "shape": "box",
+    "en": "Eons ago, during the era of Buddha Padumuttara, the future Sakula was born as Princess Nanda, the Buddha’s half-sister.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Sakula-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     142,
+     288
+    ],
+    "bbox": [
+     182,
+     893,
+     1098,
+     1309
+    ],
+    "shape": "box",
+    "en": "Attending discourse, Princess Nanda witnessed the Buddha declare nun foremost in the divine eye—a supernormal power granting knowledge of past existences.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Sakula-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "SANG",
+   "Filled",
+   "with",
+   "deep",
+   "spiritual",
+   "desire,",
+   "Princess",
+   "Nanda",
+   "made",
+   "extraordinary",
+   "offerings",
+   "Buddha",
+   "Padumuttara.",
+   "She",
+   "solemnly",
+   "aspired",
+   "achieve",
+   "that",
+   "exact",
+   "same",
+   "foremost",
+   "power."
+  ]
+ },
+ {
+  "img": "images/08-Sakula-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "uddha",
+   "Padumuttara",
+   "looked",
+   "into",
+   "the",
+   "future",
+   "and",
+   "prophesied:",
+   "Princess",
+   "Nanda’s",
+   "era",
+   "Buddha",
+   "ama",
+   "aspiration",
+   "would",
+   "perfectly",
+   "the",
+   "Buddha",
+   "during"
+  ]
+ },
+ {
+  "img": "images/08-Sakula-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "After",
+   "dwelling",
+   "heavenly",
+   "realms,",
+   "she",
+   "was",
+   "reborn",
+   "Brahmin",
+   "family",
+   "during",
+   "the",
+   "era",
+   "Buddha",
+   "Kassapa.",
+   "She",
+   "embraced",
+   "the",
+   "secluded",
+   "life",
+   "wandering",
+   "ascetic.",
+   "Cis)"
+  ]
+ },
+ {
+  "img": "images/08-Sakula-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Obtaining",
+   "small",
+   "amount",
+   "alms-oil",
+   "she",
+   "made",
+   "profound",
+   "offering.",
+   "She",
+   "kept",
+   "lamps",
+   "burning",
+   "brightly",
+   "all",
+   "night",
+   "the",
+   "stupa",
+   "enshrining",
+   "Buddha",
+   "Kassapa’s",
+   "relics."
+  ]
+ },
+ {
+  "img": "images/08-Sakula-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "She",
+   "was",
+   "reborn",
+   "the",
+   "realm",
+   "Deva,",
+   "This",
+   "offering",
+   "yielded",
+   "spectacular",
+   "result.",
+   "endowed",
+   "with",
+   "remarkably",
+   "powerful",
+   "faculty",
+   "vision.",
+   "ale",
+   "light",
+   "ENG"
+  ]
+ },
+ {
+  "img": "images/08-Sakula-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "During",
+   "the",
+   "era",
+   "Buddha",
+   "Gotama,",
+   "she",
+   "was",
+   "reborn",
+   "Savatthi",
+   "Sakula",
+   "Attending",
+   "the",
+   "donation",
+   "Jetavana",
+   "monastery,",
+   "she",
+   "heard",
+   "the",
+   "Buddha",
+   "and",
+   "became",
+   "lay",
+   "disciple.",
+   "Tas",
+   "born",
+   "uring"
+  ]
+ },
+ {
+  "img": "images/08-Sakula-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     183,
+     336
+    ],
+    "bbox": [
+     542,
+     1078,
+     2099,
+     1435
+    ],
+    "shape": "box",
+    "en": "Hearing profound discourse from an Arahat sparked intense spiritual urgency (samvega). This profound realization led her to renounce worldly life and ordain as anun. nun",
+    "conf": 64
+   }
+  ],
+  "loose": [
+   "CK)",
+   "NZ,"
+  ]
+ },
+ {
+  "img": "images/08-Sakula-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     529,
+     254
+    ],
+    "bbox": [
+     1696,
+     810,
+     2486,
+     1313
+    ],
+    "shape": "box",
+    "en": "She strove diligently in the noble practice of purity. Through unwavering effort, Ven. Sakula soon severed all worldly bonds and achieved the ultimate goal of Arahatship.",
+    "conf": 87
+   }
+  ],
+  "loose": [
+   "Bis",
+   "whe",
+   "ANS"
+  ]
+ },
+ {
+  "img": "images/08-Sakula-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     181,
+     334
+    ],
+    "bbox": [
+     546,
+     1078,
+     2096,
+     1432
+    ],
+    "shape": "box",
+    "en": "Deven by her past aspirations and offerings of light, Ven. Sakula devoted herself to the supernormal power of the divine eye (Deva-cakkhu), becoming an absolute adept.",
+    "conf": 45
+   }
+  ],
+  "loose": [
+   "CAV",
+   "(Og"
+  ]
+ },
+ {
+  "img": "images/08-Sakula-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     301,
+     37
+    ],
+    "bbox": [
+     665,
+     69,
+     1984,
+     380
+    ],
+    "shape": "box",
+    "en": "The Buddha formally declared: Monastics, among my female monastic disciples who are proficient in the supernormal power of the divine eye, Sakula is the foremost (etad-agga).",
+    "conf": 73
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Sakula-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     282,
+     326
+    ],
+    "bbox": [
+     546,
+     1078,
+     2096,
+     1432
+    ],
+    "shape": "box",
+    "en": "The Mechanics cha nic of Attainment nment 1. The Seed: Princess Nanda’s vow (Buddha Padumuttara) 2. The Condition: Offering of light (Buddha Kassapa) 3. The Fruition: Diligent purity (Buddha Gotama) Result: Arahatship the Foremost Divine BYE",
+    "conf": 42
+   }
+  ],
+  "loose": [
+   "VAG"
+  ]
+ }
+]

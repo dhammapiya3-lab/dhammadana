@@ -1,0 +1,525 @@
+[
+ {
+  "img": "images/40-Radha-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Scroll",
+   "Venerable",
+   "Radha",
+   "The",
+   "Gratitude"
+  ]
+ },
+ {
+  "img": "images/40-Radha-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     153,
+     33
+    ],
+    "bbox": [
+     476,
+     89,
+     2166,
+     255
+    ],
+    "shape": "box",
+    "en": "Radha’s spiritual journey spanned eons:",
+    "conf": 92
+   },
+   {
+    "seed": [
+     96,
+     126
+    ],
+    "bbox": [
+     278,
+     413,
+     863,
+     622
+    ],
+    "shape": "box",
+    "en": "1. Buddha Padumuttara: Aspired to be foremost disciple.",
+    "conf": 76
+   },
+   {
+    "seed": [
+     334,
+     126
+    ],
+    "bbox": [
+     1025,
+     413,
+     1617,
+     622
+    ],
+    "shape": "box",
+    "en": "2. Buddha Vipasst: Earned immense merit by offering delicious mango",
+    "conf": 81
+   },
+   {
+    "seed": [
+     564,
+     126
+    ],
+    "bbox": [
+     1792,
+     413,
+     2364,
+     622
+    ],
+    "shape": "box",
+    "en": "3. Buddha Gotama: Reborn as Brahmin in the city of Rajagaha.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/40-Radha-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     510,
+     68
+    ],
+    "bbox": [
+     1613,
+     192,
+     2351,
+     1194
+    ],
+    "shape": "box",
+    "en": "In old age, Radha’s family abandoned him Seeking refuge, he begged to join the Sangha. The monastics refused, dismissing the decrepit Brahmin as too old to serve them Emaciated and worn he caught the Buddha’s compassionate eye",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/40-Radha-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     96,
+     334
+    ],
+    "bbox": [
+     255,
+     1088,
+     2387,
+     1342
+    ],
+    "shape": "box",
+    "en": "Venerable Sariputta remembered spoonful of rice the old man once gave to him on alms round.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "ING"
+  ]
+ },
+ {
+  "img": "images/40-Radha-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Old",
+   "Method:",
+   "Simple",
+   "admission",
+   "via",
+   "the",
+   "Three",
+   "Refuges.",
+   "New",
+   "Rule:",
+   "Admission",
+   "formal",
+   "Sangha",
+   "announcement",
+   "and",
+   "three",
+   "proposals",
+   "(natti-catuttha)."
+  ]
+ },
+ {
+  "img": "images/40-Radha-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     89,
+     333
+    ],
+    "bbox": [
+     255,
+     1088,
+     2387,
+     1342
+    ],
+    "shape": "box",
+    "en": "Sariputta prioritized Radha’s care, sharing his senior alms-food. Restored to health and meticulously instructed by his grateful teacher, Radha worked diligently. Soon, the formerly rejected elder became fully Awakened Arahat.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "WY."
+  ]
+ },
+ {
+  "img": "images/40-Radha-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "OWA",
+   "The",
+   "Buddha",
+   "extolled",
+   "Radha’s",
+   "remarkable",
+   "amenability",
+   "instruction:",
+   "‘lf",
+   "wise",
+   "person",
+   "points",
+   "out",
+   "your",
+   "faults,",
+   "you",
+   "should",
+   "not",
+   "show",
+   "resentment.",
+   "Associate",
+   "with",
+   "them",
+   "they",
+   "had",
+   "revealed",
+   "hidden",
+   "treasures",
+   "you",
+   "fo)"
+  ]
+ },
+ {
+  "img": "images/40-Radha-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     472,
+     281
+    ],
+    "bbox": [
+     1451,
+     906,
+     2519,
+     1372
+    ],
+    "shape": "box",
+    "en": "The monastics marveled at Sariputta’s deep gratitude. The Buddha revealed this was not new virtue. He recounted the Alinacitta Jataka, proving Sariputta possessed this noble trait even in distant past life.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "XAB"
+  ]
+ },
+ {
+  "img": "images/40-Radha-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "fa)",
+   "the",
+   "wooden",
+   "spike",
+   "piercing",
+   "its",
+   "foot.",
+   "Recognizing",
+   "their",
+   "skill,",
+   "the",
+   "elephant",
+   "approached",
+   "500",
+   "carpenters.",
+   "They",
+   "carefully",
+   "extracted",
+   "CAN",
+   "elephant",
+   "suffered",
+   "with",
+   "ancient",
+   "noble",
+   "the",
+   "splinter",
+   "and",
+   "dressed",
+   "the",
+   "wound",
+   "until",
+   "healed."
+  ]
+ },
+ {
+  "img": "images/40-Radha-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WIN",
+   "repay",
+   "his",
+   "healers,",
+   "the",
+   "noble",
+   "tusker",
+   "returned",
+   "with",
+   "magnificent",
+   "gift:",
+   "his",
+   "own",
+   "son,",
+   "auspicious",
+   "white",
+   "elephant",
+   "calf.",
+   "commanded",
+   "the",
+   "calf",
+   "assist",
+   "the",
+   "carpenters,",
+   "their",
+   "kindness",
+   "lifelong",
+   "labor.",
+   "with",
+   "wis",
+   "OYA",
+   "with"
+  ]
+ },
+ {
+  "img": "images/40-Radha-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     539,
+     55
+    ],
+    "bbox": [
+     1749,
+     159,
+     2433,
+     602
+    ],
+    "shape": "box",
+    "en": "Years later, the white calf became the royal mount of Baranasi. When the king died, the Kosalan King besieged the grieving city. The Queen presented the newborn Prince Alinacitta to the elephant begging for protection.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "83800"
+  ]
+ },
+ {
+  "img": "images/40-Radha-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Wailing",
+   "for",
+   "his",
+   "late",
+   "master,",
+   "the",
+   "loyal",
+   "elephant",
+   "charged",
+   "through",
+   "the",
+   "enemy",
+   "forces.",
+   "captured",
+   "the",
+   "invading",
+   "Kosalan",
+   "King",
+   "alive",
+   "and",
+   "placed",
+   "him",
+   "the",
+   "infant",
+   "feet,",
+   "securing",
+   "the",
+   "realm’s",
+   "sovereignty",
+   "forever."
+  ]
+ },
+ {
+  "img": "images/40-Radha-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     145,
+     16
+    ],
+    "bbox": [
+     397,
+     53,
+     2245,
+     175
+    ],
+    "shape": "box",
+    "en": "Awakening requires both teacher and student.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     388,
+     147
+    ],
+    "bbox": [
+     840,
+     321,
+     1802,
+     1276
+    ],
+    "shape": "bubble",
+    "en": "aby nis Ww NY Va. Together, they create the perfect fz. conditions for oS 4 liberation. SSC wis 32",
+    "conf": 32
+   },
+   {
+    "seed": [
+     491,
+     84
+    ],
+    "bbox": [
+     1570,
+     274,
+     2285,
+     499
+    ],
+    "shape": "box",
+    "en": "Teacher’s Gratitude: Uplifts the vulnerable, honoring even the smallest past kindness.",
+    "conf": 90
+   },
+   {
+    "seed": [
+     516,
+     308
+    ],
+    "bbox": [
+     1623,
+     1012,
+     2341,
+     1289
+    ],
+    "shape": "box",
+    "en": "Student’s Amenability: Accepts correction joyfully, treating criticism as map to hidden treasure.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "fn)",
+   "OY,"
+  ]
+ },
+ {
+  "img": "images/40-Radha-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     154,
+     298
+    ],
+    "bbox": [
+     238,
+     949,
+     2414,
+     1326
+    ],
+    "shape": "box",
+    "en": "Because of Radha’s deep conviction, he constantly inspired the Buddha’s teachings. Honoring an aspiration made eons ago, the Buddha declared Venerable Radha the foremost disciple in arousing the facility to amplify discourses (patibhaneyyaka).",
+    "conf": 89
+   }
+  ],
+  "loose": []
+ }
+]
