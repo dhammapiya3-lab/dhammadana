@@ -1406,7 +1406,7 @@ function blockHtml(s, n, k) {
 const tocLines = s => s.replace(/^%% /, '').split('\n').filter(l => l.trim()).map(l => { if (l.trim() === '~') return { sp: true, lv: 0, t: '', p: '' }; const m = l.match(/^(-*)\s*(.*?)(?:\s+\|\s*(\S+))?\s*$/); return { lv: m[1].length, t: m[2], p: m[3] || '' }; });
 const isFootnote = p => /^\[\^[^\]]+\]:/.test(p);
 // 장 첫 쪽에서 장 제목과 같은 글(소제목·가운데 제목)은 화면에서 숨기고 소리로도 두 번 읽지 않음 — 장 제목으로 통일
-const dupKey = t => headKey(String(t).replace(/^(::|\^\^|##)\s*/, '').replace(/^[^┃\n]*┃/, '')).replace(/[.,:·\-–—!?■_]/g, '');  // '책 제목┃부록' 같은 쪽 머리 표시는 뒤쪽 이름만
+const dupKey = t => headKey(String(t).replace(/^(::|\^\^|##)\s*/, '').replace(/^[^┃\n]*┃/, '')).replace(/[.,:·\-–—!?■□●○◆◇◎◉★☆▶▷◀◁※•_]/g, '');  // '책 제목┃부록' 같은 쪽 머리 표시는 뒤쪽 이름만
 // 장 첫머리의 문단 몇 개(예: 'Ⅰ' + '껍데기는 버리고…')를 이으면 장 제목과 같아지는지 → 그 문단들의 'n:k' 모음
 function chDups(c) {
   if (!c || !c.title) return new Set();
