@@ -213,6 +213,7 @@ if (fs.existsSync(C('audiobooks'))) {
     const a = JSON.parse(fs.readFileSync(C('audiobooks/' + f), 'utf8'));
     if (!a.book || !(a.chapters || []).length) continue;
     jobs.push(Promise.all(a.chapters.map(async c => {
+      if (process.env.DD_AUDIO_OK) return true;  // 로컬 검사용: 저장소 확인 없이 단추 켬
       try { const ac = new AbortController(); const to = setTimeout(() => ac.abort(), 10000); const r = await fetch(fileUrl(c.file), { method: 'HEAD', signal: ac.signal }); clearTimeout(to); return r.ok; } catch (e) { return false; }
     })).then(oks => { if (oks.every(Boolean)) AUDIO[a.book] = a; else console.warn(`[오디오북 파일 없음] ${a.book}: ${oks.filter(x => !x).length}개 장의 소리 파일이 저장소에 없음 → 🎧 단추 숨김`); }));
   }
