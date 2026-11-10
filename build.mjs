@@ -261,11 +261,11 @@ function layout({ title, nav = '', page = '', body, desc = '', image = '', ld = 
 <title>${esc(t)}</title>
 ${ld ? `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n` : ''}<meta name="naver-site-verification" content="227f6f00a39d09eabb4c1c916b1a7dcf371a12df">
 <meta name="google-site-verification" content="BMBhirIv12i354WOEbnZHgLYmliYQ_wdhRAl8oX8wdc">
-<meta name="description" content="${esc(desc || '테라와다불교·근본불교 — 부처님과 테라와다 스승들의 가르침을 담은 서적을 무료로 찾고, 내려받고, 온라인으로 읽고 듣는 곳')}">
+<meta name="description" content="${esc(desc || '부처님과 근본불교·테라와다불교 스승들의 가르침을 담은 서적을 무료로 찾고, 내려받고, 온라인으로 읽고 듣는 곳')}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="${esc(S.site_name)}">
 <meta property="og:title" content="${esc(t)}">
-<meta property="og:description" content="${esc(desc || '테라와다불교·근본불교 — 부처님과 테라와다 스승들의 가르침을 담은 서적을 무료로 찾고, 내려받고, 온라인으로 읽고 듣는 곳')}">
+<meta property="og:description" content="${esc(desc || '부처님과 근본불교·테라와다불교 스승들의 가르침을 담은 서적을 무료로 찾고, 내려받고, 온라인으로 읽고 듣는 곳')}">
 <meta property="og:image" content="${esc(S.site_url.replace(/\/$/, '') + (image || '/images/og.jpg?v=2'))}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/images/icon.svg" type="image/svg+xml">
