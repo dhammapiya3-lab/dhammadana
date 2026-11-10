@@ -28,7 +28,7 @@ print("자동 검수: 문제 의심", len(rows), "곳")
 PY
 rm -f out/img/qa.jsonl
 rm -rf /tmp/qa && git clone -q --depth 1 -b storybooks-qa "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}" /tmp/qa 2>/dev/null || (mkdir -p /tmp/qa && cd /tmp/qa && git init -q -b storybooks-qa)
-for d in out/img/*/*; do k=${d#out/img/}; rm -rf "/tmp/qa/$k"; mkdir -p "/tmp/qa/$k"; cp "$d"/s/*.jpg "/tmp/qa/$k/"; done
+for d in out/img/*/*; do [ -d "$d/s" ] || continue; k=${d#out/img/}; rm -rf "/tmp/qa/$k"; mkdir -p "/tmp/qa/$k"; cp "$d"/s/*.jpg "/tmp/qa/$k/"; done
 cp reports/qa.md /tmp/qa/qa.md
 (cd /tmp/qa && git add -A && git -c user.name=storybooks-bot -c user.email=actions@users.noreply.github.com commit -qm "검수용 한글 그림 [skip ci]" && git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}" storybooks-qa) || true
 python3 pipeline/upload_r2.py
