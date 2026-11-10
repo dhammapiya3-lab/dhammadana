@@ -33,6 +33,7 @@ with sync_playwright() as p:
     for bid in ids:
         pg = br.new_page(viewport=({'width': 390, 'height': 800} if os.environ.get('NAV_MOBILE') else {'width': 1280, 'height': 800}))
         pg.add_init_script(f"localStorage.setItem('dd-pos-{bid}','1')")
+        if os.environ.get('NAV_SFS'): pg.add_init_script(f"localStorage.setItem('dd-sitefs','{os.environ['NAV_SFS']}')")  # 사이트 글자 크기 1=크게 2=아주 크게
         pg.goto(f'{BASE}/read/{bid}/')
         try: pg.wait_for_selector('#rNext', state='attached', timeout=15000)
         except Exception: print(bid, '읽기 화면 없음'); pg.close(); continue

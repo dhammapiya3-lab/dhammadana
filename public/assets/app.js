@@ -750,12 +750,14 @@ function reflowHtml() {
 }
 // 이 장 안의 소제목 자리(화면의 문단) 목록
 // 굵은 글씨 한 줄만으로 된 짧은 문단(예: '[1. 사성제]', '수행이란 무엇인가?')도 소제목으로 봄 — 문장(. ! 로 끝남)·따옴표·괄호로 시작하는 강조 글은 빼고
-const boldHead = e => { const t = e.textContent.trim(), b = e.firstElementChild; return e.children.length === 1 && b && b.tagName === 'STRONG' && b.textContent.trim() === t && t.length >= 2 && t.length <= 40 && !/[.!。…(]$/.test(t) && !/^[‘’'“”"(]/.test(t) && !/[가-힣]-(\s|$)/.test(t); };  // '나모- 땃사…' 같은 빠알리 독송 줄도 뺌
+const boldHead = e => { const t = e.textContent.trim(), b = e.firstElementChild; return !e.classList.contains('r-right') && e.children.length === 1 && b && b.tagName === 'STRONG' && b.textContent.trim() === t && t.length >= 2 && t.length <= 40 && !/[.!。…(]$/.test(t) && !/^[‘’'“”"(]/.test(t) && !/[가-힣]-(\s|$)/.test(t); };  // '나모- 땃사…' 같은 빠알리 독송 줄도 뺌
 function subTargets(c) {
   if (!c) return [];
   // 소제목 글과 같은 문단(목차 쪽과 다음 쪽에서)을 찾아 그 자리로. 각주 문단에는 멈추지 않음 (운영자 요청, 2026-11-09)
   const nk = x => headKey(x).replace(/[.,:·\-–—!?■_“”"]/g, '');
   const vis = e => e && e.getClientRects().length && !e.classList.contains('fn');
+  // 장 끝의 굵은 한 줄(뒤에 본문 글이 없음 — 머리말 끝 서명 '…합장' 등)은 소제목이 아님: 거기 멈추면 장 끝 각주·사진에 멈춘 것처럼 보임 (운영자 요청, 2026-11-11)
+  const hasAfter = e => { for (let x = e.nextElementSibling; x; x = x.nextElementSibling) if (x.matches('p[data-pg]:not(.fn):not(.ch-dup)') && !boldHead(x) && x.textContent.trim()) return true; return false; };
   return R.toc.filter(t => /^\s/.test(t.title) && t.page >= c.from && t.page <= c.to).map(t => {
     const want = nk(t.title).slice(0, 10);
     for (const pg of [t.page, t.page + 1]) {
@@ -765,7 +767,7 @@ function subTargets(c) {
     }
     const e = $(`#rBody p[data-pg="${t.page}"][data-s="${paraIdx(t)}"]`);
     return vis(e) ? e : $('#pm-' + t.page);
-  }).concat($$('#rBody .sub-h').filter(vis), $$('#rBody p[data-pg]').filter(boldHead).filter(vis))  // 목차에 없는 본문 소제목(## 줄 등)에도 멈춤 — 모든 책 (운영자 요청, 2026-11-10)
+  }).concat($$('#rBody .sub-h').filter(vis), $$('#rBody p[data-pg]').filter(boldHead).filter(vis).filter(hasAfter))  // 목차에 없는 본문 소제목(## 줄 등)에도 멈춤 — 모든 책 (운영자 요청, 2026-11-10)
     .filter((e, i, a) => e && a.indexOf(e) === i).sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top);
 }
 const chHasSubs = n => { const c = chapters()[Math.max(0, chapterOf(n))]; return !!c && (R.toc.some(t => /^\s/.test(t.title) && t.page >= c.from && t.page <= c.to) || R.pages.slice(c.from - 1, c.to).some(p => /^## |^\*\*[^*\n]{2,40}\*\*$/m.test(p.text || ''))); };
@@ -1959,7 +1961,6 @@ try {
     navigator.sendBeacon('/api/hit', JSON.stringify({ p: location.pathname, t: document.title.replace(/\s*·\s*(?:테라와다불교|붓다담마) 법보시 도서관$/, ''), r: document.referrer, v }));
   }
 } catch (e) {}
-})();
 
 /* ---------- 각주 번호를 누르면 각주 내용 보여주기 ---------- */
 document.addEventListener('click', e => {
@@ -1996,3 +1997,4 @@ document.addEventListener('click', e => {
   pop.querySelector('.fnpop-x').onclick = () => pop.remove();
 }, true);
 document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && (e.target.classList.contains('fn-ref') || e.target.classList.contains('fn-no'))) { e.preventDefault(); e.target.click(); } if (e.key === 'Escape') { const p = document.getElementById('fnPop'); if (p) p.remove(); } });
+})();
