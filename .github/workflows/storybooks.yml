@@ -39,4 +39,5 @@ jobs:
         run: |
           git add -A
           git commit -q -m "작업 결과 [skip ci]" || echo "바뀐 것 없음"
+          git pull -q --rebase -X theirs || true
           git push

@@ -26,3 +26,14 @@ if ! cmp -s data/rendered.json /tmp/site/storybooks/data/ready.json; then
   cp data/rendered.json /tmp/site/storybooks/data/ready.json
   cd /tmp/site && git -c user.name=storybooks-bot -c user.email=actions@users.noreply.github.com commit -qam "그림책: 한글판 이야기 목록 갱신" && git push -q && cd - >/dev/null
 fi
+# 다음 책 글 상자 읽기 + 번역용 800px 미리보기 (jobs/next_books.txt 에 적은 책, 이미 읽은 이야기는 건너뜀)
+if [ -s jobs/next_books.txt ]; then
+  mkdir -p review
+  for b in $(cat jobs/next_books.txt); do
+    python3 pipeline/fetch_ocr.py "$b" | tail -1
+    python3 pipeline/preview.py "$b" | tail -1
+  done
+  cd review && git init -q -b storybooks-review && git add -A && git -c user.name=storybooks-bot -c user.email=actions@users.noreply.github.com commit -qm "번역용 미리보기 [skip ci]"
+  git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}" storybooks-review
+  cd .. && rm -rf review
+fi
