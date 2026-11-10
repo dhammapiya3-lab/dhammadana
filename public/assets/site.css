@@ -1019,3 +1019,7 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .ab-bar #abLock[aria-pressed="true"]{background:var(--robe);color:var(--paper);border-color:var(--robe)}
 .ab-bar button{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
 [data-tip]{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+
+/* 빠알리어 한글 표기 (발음 부호가 붙은 한글) — PaliHangul 글꼴, 쓰인 글자만 담은 작은 파일 (tools/pali_hangul.py) */
+@font-face{font-family:'PaliHangul';src:url(/fonts/PaliHangul.woff2) format('woff2');font-display:swap}
+.ph{font-family:'PaliHangul',serif;font-feature-settings:'ccmp','liga','rlig'}

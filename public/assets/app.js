@@ -670,7 +670,7 @@ async function initReaderPage() {
   const pages = man.pages.map((p, i) => ({ n: i + 1, label: p.label || '', img: p.img ? base + p.img : '', big: p.big ? base + p.big : '', w: p.w, h: p.h, text: p.text || '' }));
   const last = store.get('pos-' + id, 1);
   R = {
-    id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, cover: root.dataset.cover || '', kakao: root.dataset.kakao || '', pages, toc: man.toc || [], say: man.say || {},  // say: 그림·표를 소리로 읽을 글 (그림 주소 → 글, 운영자 요청 2026-11-10)
+    id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, cover: root.dataset.cover || '', kakao: root.dataset.kakao || '', pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null,  // say: 그림·표를 소리로 읽을 글 (그림 주소 → 글, 운영자 요청 2026-11-10)
    
     i: Math.min(Math.max(want || (last > 1 ? last : 0) || firstContent(pages, man.toc || []), 1), pages.length) - 1,
     view: 'text', zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), bold: store.get('rbold', false), lh: store.get('rlh', 1.9), font: store.get('rfont', 'serif'), mw: store.get('rmw', 36),
@@ -741,7 +741,7 @@ function reflowHtml() {
     const keep = k => !(p.n === c.from && k < (c.k0 || 0)) && !(p.n === c.to && c.kEnd != null && k >= c.kEnd);
     const heads = new Set(R.toc.filter(t => t.page === p.n || t.page === p.n - 1).map(t => headKey(t.title)));
     if (!ps.length) return `<span id="pm-${p.n}"></span>`;
-    return `<span class="pmark${p.label ? '' : ' nolabel'}" id="pm-${p.n}">${p.label ? esc(pageName(p)) : ''}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : isChDup(s, p.n, c, k) ? ' class="ch-dup"' : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : /^\^\^ /.test(s) ? ' class="r-ctitle"' : /^:: /.test(s) ? ' class="r-center"' : /^>> /.test(s) ? ' class="r-right"' : /^● /.test(s) ? ' class="r-bul"' : /^\|\| /.test(s) ? ' class="r-bul-c"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? ' class="sub-h" role="heading" aria-level="4"' : ''}>${fnMark(boldMark(markUl(s.replace(/^## |^\^\^ |^:: |^>> |^\|\| /, ''), p.n))).replace(/\n/g, '<br>')}</p>`).join('') || ''}`;
+    return `<span class="pmark${p.label ? '' : ' nolabel'}" id="pm-${p.n}">${p.label ? esc(pageName(p)) : ''}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : isChDup(s, p.n, c, k) ? ' class="ch-dup"' : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : /^\^\^ /.test(s) ? ' class="r-ctitle"' : /^:: /.test(s) ? ' class="r-center"' : /^>> /.test(s) ? ' class="r-right"' : /^● /.test(s) ? ' class="r-bul"' : /^\|\| /.test(s) ? ' class="r-bul-c"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? ' class="sub-h" role="heading" aria-level="4"' : ''}>${fnMark(phMark(boldMark(markUl(s.replace(/^## |^\^\^ |^:: |^>> |^\|\| /, ''), p.n)))).replace(/\n/g, '<br>')}</p>`).join('') || ''}`;
   }).join('');
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}" data-ci="${ci - 1}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}" data-ci="${ci + 1}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}</h3></div>` : ''}${body}${nav}</div>`;
@@ -1342,6 +1342,14 @@ const unB = s => String(s || '').replace(/\*\*|==/g, '').replace(/^(?:\^\^|::|>>
 const plainT = s => unB(s).replace(/!\[[^\]]*\]\([^)]*\)/g, ' ').replace(/^#{1,6} /gm, '').replace(/\[\^\d+\]:?\s?/g, ' ').replace(/\[\[[^\]]*\]\]/g, ' ');
 // **굵게**, ==색 강조(인쇄본·전자책의 하늘색 글자)==
 const boldMark = h => h.replace(/\*\*(?!\s|\*\*)([\s\S]*?[^\s*])\*\*/g, '<strong>$1</strong>').replace(/==(?=\S)([\s\S]*?\S)==/g, '<span class="hl">$1</span>');
+// 빠알리어 한글 표기(발음 부호 붙은 한글): 텍스트 JSON 의 ph 사전(tools/pali_hangul.py)대로 바꿔 PaliHangul 글꼴로 — 본문 글자는 그대로, 화면에만
+let PH_RE = null, PH_OF = null;
+const phMark = h => {
+  const ph = R && R.ph; if (!ph) return h;
+  if (PH_OF !== ph) { PH_OF = ph; const ks = Object.keys(ph).sort((a, b) => b.length - a.length).map(k => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')); PH_RE = ks.length ? new RegExp('(' + ks.join('|') + ')(?![\u0300-\u036f\u1dc0-\u1dff\u302c\u302d\u02d1\u02d4\u02d5\u2033])', 'g') : null; }
+  if (!PH_RE) return h;
+  return h.replace(/(<[^>]*>)|([^<]+)/g, (m, tag, txt) => tag || txt.replace(PH_RE, w => `<span class="ph">${ph[w]}</span>`));
+};
 const headKey = t => unB(t).replace(/^## /, '').replace(/\[\^[^\]]+\]/g, '').replace(/\([^)]*\)/g, '').replace(/[\s‘’'"“”]/g, '').replace(/^[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩIVX]+\./, m => m.replace(/[IVX]+/g, x => ({I:'Ⅰ',II:'Ⅱ',III:'Ⅲ',IV:'Ⅳ',V:'Ⅴ',VI:'Ⅵ',VII:'Ⅶ',VIII:'Ⅷ',IX:'Ⅸ',X:'Ⅹ'}[x] || x)));
 const FIG_RE = /^!\[([^\]]*)\]\(([^)\s]+)\)\s*$/;
 const isTable = p => /^\|.*\|\s*$/m.test(p) && p.split('\n').filter(l => l.trim()).every(l => /^\|/.test(l.trim()));
@@ -1390,7 +1398,7 @@ function blockHtml(s, n, k) {
   const f = s.match(FIG_RE);
   if (f && f[1].startsWith('#')) { const alt = f[1].slice(1).trim(); return `<figure class="r-fig" data-pg="${n}" data-s="${k}" data-skip="1"><button class="fig-btn" data-zoom-img="${esc(f[2])}" data-cap="${esc(alt)}" aria-label="그림 크게 보기"><img src="${esc(f[2])}" alt="${esc(alt)}" loading="lazy"></button></figure>`; }  // ![#설명](주소): 설명은 화면에 안 보이고 읽기 프로그램만 읽음
   if (f) return `<figure class="r-fig" data-pg="${n}" data-s="${k}" data-skip="1"><button class="fig-btn" data-zoom-img="${esc(f[2])}" data-cap="${esc(f[1])}" aria-label="그림 크게 보기"><img src="${esc(f[2])}" alt="${esc(f[1])}" loading="lazy"></button>${f[1] ? `<figcaption>${esc(f[1])}</figcaption>` : ''}</figure>`;
-  if (/^%% /.test(s)) return `<div class="r-toc" data-pg="${n}" data-s="${k}" data-skip="1">${tocLines(s).map(r => r.sp ? '<div class="tl-sp" aria-hidden="true"></div>' : `<div class="tl l${Math.min(r.lv, 3)}"><span class="tt">${boldMark(esc(r.t))}</span>${r.p ? `<span class="dots" aria-hidden="true"> </span><span class="tp">${esc(r.p)}</span>` : ''}</div>`).join('')}</div>`;  // 차례: 인쇄본처럼 단계별 들여쓰기·점선·쪽 번호
+  if (/^%% /.test(s)) return `<div class="r-toc" data-pg="${n}" data-s="${k}" data-skip="1">${tocLines(s).map(r => r.sp ? '<div class="tl-sp" aria-hidden="true"></div>' : `<div class="tl l${Math.min(r.lv, 3)}"><span class="tt">${phMark(boldMark(esc(r.t)))}</span>${r.p ? `<span class="dots" aria-hidden="true"> </span><span class="tp">${esc(r.p)}</span>` : ''}</div>`).join('')}</div>`;  // 차례: 인쇄본처럼 단계별 들여쓰기·점선·쪽 번호
   if (isTable(s)) return `<div class="r-tbl" data-pg="${n}" data-s="${k}" data-skip="1">${tableHtml(s)}<button class="tbtn sm" data-zoom-tbl>표 크게 보기</button></div>`;
   return null;
 }

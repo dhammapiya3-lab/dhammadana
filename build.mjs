@@ -44,7 +44,7 @@ const PLAYLISTS = readJSON('playlists.json').items;
 const VARIANTS = readJSON('variants.json').items.map(v => v.words);
 const BOOKS = fs.readdirSync(C('books')).filter(f => f.endsWith('.json'))
   .map(f => JSON.parse(fs.readFileSync(C('books/' + f), 'utf8')))
-  .filter(b => !b.hidden)
+  .filter(b => !b.hidden || process.env.DD_SHOW_HIDDEN)  // DD_SHOW_HIDDEN=1: 숨긴 책도 (로컬 검사용)
   .sort((a, b) => (b.added || '').localeCompare(a.added || '') || (b.order || 0) - (a.order || 0) || b.id.localeCompare(a.id));
 // 글로 읽기 본문 (관리자 화면에서 고치는 글): content/texts/<자료번호>.json
 const TEXTS = {};
@@ -56,7 +56,7 @@ if (fs.existsSync(C('texts'))) for (const f of fs.readdirSync(C('texts')).filter
   while ((m = re.exec(body))) { if (last) last.text = body.slice(last.start, m.index).trim(); last = { label: m[1].replace(/\s*쪽$/, ''), start: re.lastIndex }; pages.push(last); }
   if (last) last.text = body.slice(last.start).trim();
   if (!pages.length) pages.push({ label: '', text: body.trim() });
-  TEXTS[t.book] = { say: t.say || null, edition: t.edition || '', pages: pages.map(p => ({ label: p.label, text: p.text })), toc: (t.toc || []).filter(x => x && x.title && x.page).map(x => ({ title: (x.sub ? '  ' : '') + x.title, page: +x.page, label: (pages[+x.page - 1] || {}).label || '', ...(x.at ? { at: String(x.at) } : {}), ...(x.toc_title ? { list: String(x.toc_title) } : {}) })) };
+  TEXTS[t.book] = { say: t.say || null, ph: t.ph || null, edition: t.edition || '', pages: pages.map(p => ({ label: p.label, text: p.text })), toc: (t.toc || []).filter(x => x && x.title && x.page).map(x => ({ title: (x.sub ? '  ' : '') + x.title, page: +x.page, label: (pages[+x.page - 1] || {}).label || '', ...(x.at ? { at: String(x.at) } : {}), ...(x.toc_title ? { list: String(x.toc_title) } : {}) })) };
 }
 const isPin = n => (n.pinned === true || n.pinned === 'true') ? 1 : 0;
 const pinTag = n => isPin(n) ? '<span class="pill pin">주요 공지</span> ' : '';
@@ -821,7 +821,7 @@ fs.mkdirSync(path.join(OUT, 'texts'), { recursive: true });
 const indexOf = id => { const f = C('indexes/' + id + '.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : null; };
 fs.mkdirSync(path.join(OUT, 'data/audio'), { recursive: true });
 for (const [id, a] of Object.entries(AUDIO)) fs.writeFileSync(path.join(OUT, 'data/audio', id + '.json'), JSON.stringify({ book: id, voice: a.voice || '', chapters: a.chapters.map(c => ({ ...c, url: fileUrl(c.file) + '?v=' + (c.size || '') }))  /* 같은 이름으로 새 파일을 올려도 옛 파일을 저장해 둔 기기·저장소가 새 파일을 받게 */ }));
-for (const [id, t] of Object.entries(TEXTS)) { const ix = indexOf(id); fs.writeFileSync(path.join(OUT, 'texts', id + '.json'), JSON.stringify({ book: id, edition: t.edition, pages: t.pages, toc: t.toc, ...(t.say ? { say: t.say } : {}), ...(ix ? { index: { colnames: ix.colnames, parts: ix.parts } } : {}) })); }
+for (const [id, t] of Object.entries(TEXTS)) { const ix = indexOf(id); fs.writeFileSync(path.join(OUT, 'texts', id + '.json'), JSON.stringify({ book: id, edition: t.edition, pages: t.pages, toc: t.toc, ...(t.say ? { say: t.say } : {}), ...(t.ph ? { ph: t.ph } : {}), ...(ix ? { index: { colnames: ix.colnames, parts: ix.parts } } : {}) })); }
 // 관리자 화면이 예전 설정(config.yml)을 기억하지 않도록 바뀔 때마다 주소 끝에 표시를 붙입니다.
 { const ai = path.join(OUT, 'admin', 'index.html'); if (fs.existsSync(ai)) fs.writeFileSync(ai, fs.readFileSync(ai, 'utf8').replace('/admin/config.yml"', `/admin/config.yml?v=${ver('admin/config.yml')}"`)); }
 fs.writeFileSync(path.join(OUT, '_redirects'), `/read/:id/:page /read/:id/ 200\n`);
