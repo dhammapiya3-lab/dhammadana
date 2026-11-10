@@ -7,7 +7,8 @@ const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const rd = f => JSON.parse(fs.readFileSync(path.join(ROOT, 'data', f), 'utf8'));
 const CAT = rd('catalog.json');      // 원 사이트 구조 (영어 원문)
 const KO = rd('ko.json');            // 한국어 번역
-const READY = rd('ready.json');      // 한글 그림이 준비된 이야기 { "책/이야기": 그림 수 }
+const READY = rd('ready.json');
+const STAMP = (() => { try { return rd('stamp.json'); } catch (e) { return {}; } })();  // 이야기마다 그림 판 번호 (?v=)      // 한글 그림이 준비된 이야기 { "책/이야기": 그림 수 }
 const S = KO.site, U = KO.ui;
 const OUT = path.join(ROOT, 'dist');
 const V = Date.now().toString(36);
@@ -116,15 +117,15 @@ for (const slug of Object.keys(CAT.books).filter(b => PUB.has(b))) {
   <p class="orig"><a href="${S.orig_url}${slug}/index.htm">${U.en_link} ↗</a></p></div>` }));
 
   list.forEach((s, i) => {
-    const key = `${slug}/${sid(s.file)}`, n = READY[key];
+    const key = `${slug}/${sid(s.file)}`, n = READY[key]; const vq = STAMP[key] ? `?v=${STAMP[key]}` : '';
     const k = d.stories?.[s.file] || {};
     const prev = list[i - 1], next = list[i + 1];
     const imgs = n ? Array.from({ length: n }, (_, j) => String(j + 1).padStart(2, '0')) : [];
     const viewer = n ? `<div class="sv" id="sv" data-key="${esc(key)}"${next && READY[`${slug}/${sid(next.file)}`] ? ` data-next="/${slug}/${sid(next.file)}/" data-next-title="${esc(storyTitle(slug, next))}"` : ''}${prev && READY[`${slug}/${sid(prev.file)}`] ? ` data-prev="/${slug}/${sid(prev.file)}/" data-prev-title="${esc(storyTitle(slug, prev))}"` : ''} tabindex="0" aria-label="그림책 보기 (← → 키로 넘기기)">
-  <div class="sv-track">${imgs.map((x, j) => `<figure class="sv-page"><img src="${S.img_base}/${key}/big/${x}.jpg" data-big="${S.img_base}/${key}/big/${x}.jpg" data-s="${S.img_base}/${key}/s/${x}.jpg" alt="${j + 1}쪽" ${j > 1 ? 'loading="lazy"' : ''}></figure>`).join('')}</div>
+  <div class="sv-track">${imgs.map((x, j) => `<figure class="sv-page"><img src="${S.img_base}/${key}/big/${x}.jpg${vq}" data-big="${S.img_base}/${key}/big/${x}.jpg${vq}" data-s="${S.img_base}/${key}/s/${x}.jpg${vq}" alt="${j + 1}쪽" ${j > 1 ? 'loading="lazy"' : ''}></figure>`).join('')}</div>
   <button class="sv-btn prev" aria-label="앞 그림">‹</button><button class="sv-btn next" aria-label="다음 그림">›</button>
   <div class="sv-bar"><span class="sv-count">1 / ${n}</span><button class="sv-auto" aria-pressed="false">▶ 자동<span class="lg"> 넘김</span></button><button class="sv-save" aria-pressed="false" title="작은 그림으로 보아 휴대폰 데이터를 아낍니다"><span class="lg">데이터 </span>절약</button><button class="sv-full">⛶ 전체<span class="lg"> 화면</span></button></div></div>
-  <div class="sv-thumbs">${imgs.map((x, j) => `<button data-i="${j}"><img src="${S.img_base}/${key}/s/${x}.jpg" alt="${j + 1}쪽" loading="lazy"></button>`).join('')}</div>`
+  <div class="sv-thumbs">${imgs.map((x, j) => `<button data-i="${j}"><img src="${S.img_base}/${key}/s/${x}.jpg${vq}" alt="${j + 1}쪽" loading="lazy"></button>`).join('')}</div>`
       : `<div class="notyet"><p>이 이야기의 그림은 아직 우리말로 옮기는 중입니다.</p><p><a class="btn" href="${S.orig_url}${slug}/${s.file}">${U.en_link} ↗</a></p></div>`;
     put(`${key}/index.html`, layout({ title: `${storyTitle(slug, s)} — ${b.title}`, page: 'story', desc: k.intro || s.intro, body: `<div class="wrap story">
   <nav class="crumb"><a href="/">${U.home}</a> › <a href="/${slug}/">${esc(b.title)}</a></nav>
