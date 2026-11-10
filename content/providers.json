@@ -104,6 +104,17 @@
       "partner": true,
       "note": "네이버 카페 · cafe.naver.com/withthebuddha",
       "image": "/uploads/partner-ariya.png"
+    },
+    {
+      "id": "panditarama",
+      "name": "빤디따라마 근본불교 수행센터",
+      "kind": "승원·사원",
+      "urls": [
+        "https://cafe.naver.com/panditarama"
+      ],
+      "partner": true,
+      "note": "네이버 카페 · cafe.naver.com/panditarama",
+      "image": "/uploads/partner-panditarama.jpg"
     }
   ]
 }
