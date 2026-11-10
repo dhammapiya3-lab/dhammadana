@@ -89,6 +89,19 @@
     "shape": "box",
     "en": "he called bowl into being through Supernormal Powers and passed through the air.",
     "ko": "신통력으로 발우를 지어내 허공을 건너왔습니다."
+   },
+   {
+    "rect": [
+     405,
+     36,
+     672,
+     62
+    ],
+    "ko": "벽지불 한 분이 탁발을 나서려 했습니다.",
+    "shape": "box",
+    "manual": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },

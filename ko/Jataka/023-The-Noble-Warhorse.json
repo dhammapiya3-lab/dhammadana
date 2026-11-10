@@ -32,7 +32,7 @@
     ],
     "shape": "bubble",
     "en": "Ground scented with four perfumes.",
-    "ko": "네 가지 향을 뿌린 바닥"
+    "ko": "향 뿌린 바닥"
    },
    {
     "rect": [
@@ -61,7 +61,7 @@
      624,
      330
     ],
-    "ko": "늘 타오르는 향기로운 기름 등불",
+    "ko": "늘 타는 향유 등불",
     "align": "center",
     "shape": "box",
     "manual": true

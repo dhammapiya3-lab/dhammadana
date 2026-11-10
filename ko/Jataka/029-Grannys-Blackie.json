@@ -166,6 +166,19 @@
     "shape": "box",
     "en": "With immense power, he dragged the first wagon high an any with single pull.",
     "ko": "엄청난 힘으로 첫 수레를 단번에 높은 둑 위로 끌어 올렸습니다."
+   },
+   {
+    "rect": [
+     465,
+     360,
+     736,
+     394
+    ],
+    "ko": "오백 대를 모두 그렇게 끌어 올렸습니다.",
+    "shape": "box",
+    "manual": true,
+    "align": "center",
+    "em": 15
    }
   ]
  },
@@ -180,6 +193,56 @@
     "shape": "box",
     "en": "Thinking ig he could cheat beast, the merchant tied ony five hundred coins around Kalaka’s neck.",
     "ko": "짐승쯤은 속일 수 있다고 생각한 상인은 깔라까의 목에 겨우 오백 닢만 매어 주었습니다."
+   },
+   {
+    "rect": [
+     264,
+     174,
+     344,
+     210
+    ],
+    "ko": "500닢",
+    "shape": "box",
+    "manual": true,
+    "align": "center",
+    "em": 15,
+    "cover": [
+     236,
+     224,
+     200
+    ]
+   },
+   {
+    "rect": [
+     640,
+     210,
+     750,
+     292
+    ],
+    "ko": "약속한 값:\n1000닢",
+    "shape": "box",
+    "manual": true,
+    "align": "center",
+    "em": 14,
+    "grow": 2,
+    "cover": [
+     236,
+     224,
+     200
+    ]
+   },
+   {
+    "rect": [
+     442,
+     360,
+     738,
+     394
+    ],
+    "ko": "보살은 속은 것을 알았습니다.",
+    "shape": "box",
+    "manual": true,
+    "align": "center",
+    "em": 15
    }
   ]
  },

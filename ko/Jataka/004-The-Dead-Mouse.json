@@ -111,6 +111,19 @@
     "shape": "bubble",
     "en": "will clear this entirely, if may ke the wood.",
     "ko": "제가 모두 치워 드리겠습니다. 그 나무를 가져가도 된다면요."
+   },
+   {
+    "rect": [
+     521,
+     150,
+     594,
+     184
+    ],
+    "ko": "좋소!",
+    "shape": "box",
+    "manual": true,
+    "align": "center",
+    "em": 16
    }
   ]
  },
@@ -348,7 +361,8 @@
       776,
       431
      ]
-    ]
+    ],
+    "align": "center"
    }
   ]
  },

@@ -73,7 +73,7 @@
     ],
     "shape": "bubble",
     "en": "Agreed",
-    "ko": "그러려무나."
+    "ko": "좋다."
    },
    {
     "seed": [
@@ -156,7 +156,7 @@
     ],
     "shape": "box",
     "en": "The assembly of approached him.",
-    "ko": "새들이 공작에게 다가갔습니다."
+    "ko": "새들이 공작에게 갔습니다."
    }
   ]
  },
@@ -208,6 +208,20 @@
     "shape": "bubble",
     "en": "“This fellow has neither modesty in his heart nor decency in his outward behaviour. will not give my daughter to one so shameless.”",
     "ko": "“이 자는 마음에 부끄러움도 없고 몸가짐에 예의도 없구나. 이렇게 염치없는 자에게 내 딸을 줄 수 없다.”"
+   },
+   {
+    "rect": [
+     58,
+     64,
+     390,
+     98
+    ],
+    "ko": "부끄러움에 휩싸인 황금 물오리 왕이 말했습니다.",
+    "shape": "box",
+    "manual": true,
+    "align": "center",
+    "em": 15,
+    "fill": true
    }
   ]
  },

@@ -3,22 +3,29 @@
   "img": "images/026-The-State-Elephant-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     81,
-     66
-    ],
     "shape": "box",
     "en": "In ancient Benares, King Brahmadatta relied on his wise minister, the Bodhisatta. The kingdom’s pride was Mahilamukha, the state elephant—a creature of perfect virtue who never harmed soul.",
-    "ko": "옛 바라나시의 브라흐마닷따 왕은 지혜로운 대신인 보살에게 의지했습니다. 나라의 자랑은 왕실 코끼리 마힐라무카였습니다. 더없이 순하여 누구도 해친 적이 없었습니다."
+    "ko": "옛 바라나시의 브라흐마닷따 왕은 지혜로운 대신인 보살에게 의지했습니다. 나라의 자랑은 왕실 코끼리 마힐라무카였습니다. 더없이 순하여 누구도 해친 적이 없었습니다.",
+    "rect": [
+     50,
+     50,
+     292,
+     132
+    ],
+    "align": "left"
    },
    {
-    "seed": [
-     398,
-     15
-    ],
     "shape": "box",
     "en": "The State El an",
-    "ko": "왕실 코끼리"
+    "ko": "왕실 코끼리",
+    "em": 22,
+    "rect": [
+     236,
+     6,
+     560,
+     42
+    ],
+    "align": "center"
    }
   ]
  },

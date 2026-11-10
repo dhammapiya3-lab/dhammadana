@@ -139,6 +139,19 @@
     "shape": "bubble",
     "en": "For all 500 horses, decree the price is exactly one measure of rice! Take them to the stable!",
     "ko": "말 500마리 전부, 값은 쌀 한 되로 정하노라! 마구간으로 끌고 가라!"
+   },
+   {
+    "rect": [
+     20,
+     40,
+     228,
+     82
+    ],
+    "ko": "값은 그렇게 정해졌습니다.",
+    "shape": "box",
+    "manual": true,
+    "align": "center",
+    "em": 15
    }
   ]
  },
@@ -190,6 +203,19 @@
     "shape": "bubble",
     "en": "We accept the horses are worth measure of rice. Could you tell the King what that rice is actually worth?",
     "ko": "말들이 쌀 한 되 값이라는 건 받아들이겠습니다. 그 쌀이 실제로 얼마인지 왕께 말씀드려 주시겠습니까?"
+   },
+   {
+    "rect": [
+     650,
+     228,
+     736,
+     268
+    ],
+    "ko": "그럼요!",
+    "shape": "box",
+    "manual": true,
+    "align": "center",
+    "em": 16
    }
   ]
  },
@@ -282,7 +308,7 @@
     ],
     "shape": "box",
     "en": "Kim-agghati tandulandlikayam? Assana’ mildya vadehi, raja? Baranasim santarabahiram, Ayam-agghati tandulanalika ti!",
-    "ko": "낑 악가띠 딴둘라날리까, 앗사나 물라야 와데히 라자?\n바라나싱 산따라바히랑, 아얌 악가띠 딴둘라날리까!"
+    "ko": "Kim-agghati taṇḍulanāḷikā, assāna mūlāya vadehi rāja?\nBārāṇasiṃ santarabāhiraṃ, ayam-agghati taṇḍulanāḷikā!"
    },
    {
     "seed": [

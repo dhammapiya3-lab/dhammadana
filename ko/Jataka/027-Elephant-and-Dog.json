@@ -3,13 +3,16 @@
   "img": "images/027-Elephant-and-Dog-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     130,
-     62
-    ],
     "shape": "box",
     "en": "In the days when King Brahmadate Brahmadatta ruled led Benares, stray dog haunted the royal stables. Drawn by hunger, he ate the sweet rice that fell from the state elephant’s mouth.",
-    "ko": "브라흐마닷따 왕이 바라나시를 다스리던 때, 떠돌이 개 한 마리가 왕실 마구간을 맴돌았습니다. 배가 고팠던 개는 왕실 코끼리 입에서 떨어지는 달콤한 밥을 먹었습니다."
+    "ko": "브라흐마닷따 왕 때, 떠돌이 개 한 마리가 왕실 마구간을 맴돌았습니다. 배고픈 개는 코끼리 입에서 떨어지는 밥을 먹었습니다.",
+    "rect": [
+     112,
+     52,
+     320,
+     118
+    ],
+    "align": "left"
    }
   ]
  },
@@ -37,7 +40,7 @@
     ],
     "shape": "box",
     "en": "Tragedy struck when passing villager, charmed by the dog, bought him from the mahout. The dog was dragged away to an unknown home.",
-    "ko": "그런데 슬픈 일이 생겼습니다. 지나가던 마을 사람이 개를 마음에 들어 해 코끼리 몰이꾼에게서 샀습니다. 개는 낯선 집으로 끌려갔습니다."
+    "ko": "그런데 지나가던 마을 사람이 개를 사서 낯선 집으로 데려갔습니다."
    }
   ]
  },
@@ -102,7 +105,7 @@
     ],
     "shape": "bubble",
     "en": "Has he become friends with anyone?",
-    "ko": "이 코끼리가 누구와 친하게 지냈는가?"
+    "ko": "이 코끼리가 누구와\n친하게 지냈느냐?"
    },
    {
     "seed": [

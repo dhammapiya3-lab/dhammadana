@@ -55,7 +55,19 @@
     ],
     "shape": "bubble",
     "en": "Your father buried his money with Nanda. Get it back.",
-    "ko": "네 아버지가 난다와 함께 돈을 묻어 두셨단다. 되찾아 오너라."
+    "ko": "네 아버지가 난다와\n돈을 묻으셨다.\n찾아오너라.",
+    "parts": [
+     {
+      "rect": [
+       612,
+       90,
+       720,
+       138
+      ],
+      "ko": "네 아버지가 난다와\n돈을 묻으셨다.\n찾아오너라."
+     }
+    ],
+    "em": 12
    }
   ]
  },
@@ -69,7 +81,18 @@
     ],
     "shape": "bubble",
     "en": "Uncle, where is the treasure?",
-    "ko": "아저씨, 보물이 어디 있나요?"
+    "ko": "아저씨, 보물은\n어디 있어요?",
+    "parts": [
+     {
+      "rect": [
+       452,
+       104,
+       548,
+       138
+      ],
+      "ko": "아저씨, 보물은\n어디 있어요?"
+     }
+    ]
    },
    {
     "seed": [
@@ -78,7 +101,32 @@
     ],
     "shape": "bubble",
     "en": "In the forest, my lord.",
-    "ko": "숲속에 있습니다, 도련님."
+    "ko": "숲속에요,\n도련님.",
+    "parts": [
+     {
+      "rect": [
+       588,
+       170,
+       660,
+       202
+      ],
+      "ko": "숲속에요,\n도련님."
+     }
+    ],
+    "em": 12
+   },
+   {
+    "rect": [
+     62,
+     60,
+     350,
+     98
+    ],
+    "ko": "도련님은 삽과 바구니를 들고 종을 따라갔습니다.",
+    "shape": "box",
+    "manual": true,
+    "align": "left",
+    "em": 14
    }
   ]
  },
@@ -182,6 +230,19 @@
     "shape": "bubble",
     "en": "The spot where Nanda stands ds to abuse you is exactly where your gold lies.",
     "ko": "난다가 서서 너를 욕하는 바로 그 자리에 네 금이 묻혀 있다."
+   },
+   {
+    "rect": [
+     230,
+     8,
+     576,
+     42
+    ],
+    "ko": "교만의 해부",
+    "shape": "box",
+    "manual": true,
+    "align": "center",
+    "em": 24
    }
   ]
  },
@@ -206,7 +267,7 @@
     ],
     "align": "center",
     "em": 26,
-    "ko": "만네 소완나요 라시,\n소완나말라 짜 난다꼬,\n얏타 다소 아마자또\n티또 툴라니 갓자띠 띠!",
+    "ko": "Maññe sovaṇṇayo rāsi,\nsovaṇṇamālā ca Nandako,\nYattha dāso āmajāto\nṭhito thullāni gajjati ti!",
     "shape": "box",
     "manual": true
    }

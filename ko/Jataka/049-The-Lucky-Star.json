@@ -171,7 +171,8 @@
     "fill": true,
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "em": 12
    },
    {
     "rect": [
@@ -184,7 +185,8 @@
     "fill": true,
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "em": 12
    }
   ]
  },

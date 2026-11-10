@@ -55,7 +55,7 @@
     ],
     "shape": "bubble",
     "en": "Make it wager.",
-    "ko": "그럼 내기합시다."
+    "ko": "내기합시다!"
    },
    {
     "seed": [
@@ -113,10 +113,10 @@
      492,
      370
     ],
-    "ko": "향 뿌린 밥",
+    "ko": "향밥",
     "align": "center",
     "shape": "box",
-    "em": 11,
+    "em": 12,
     "manual": true
    }
   ]
@@ -223,7 +223,27 @@
     ],
     "shape": "bubble",
     "en": "Go and bet him two thousand this time. Only remember not to call me rascal again.",
-    "ko": "이번에는 이천 냥을 거십시오. 다만 다시는 저를 못된 놈이라 부르지 마십시오."
+    "ko": "이번엔 이천 냥을\n거십시오.\n다시는 못된\n놈이라 부르지\n마세요.",
+    "parts": [
+     {
+      "rect": [
+       450,
+       78,
+       534,
+       124
+      ],
+      "ko": "이번엔 이천 냥을\n거십시오."
+     },
+     {
+      "rect": [
+       556,
+       106,
+       654,
+       154
+      ],
+      "ko": "다시는 못된 놈이라\n부르지 마세요."
+     }
+    ]
    }
   ]
  },

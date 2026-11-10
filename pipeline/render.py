@@ -115,7 +115,11 @@ def render(src_path, boxes):
         if len(xx):  # 상자 둘레만 잘라서 메움 (그림 전체를 메우면 느림)
             m_ = 24
             a0, b0, a1, b1 = max(0, xx.min() - m_), max(0, yy.min() - m_), min(W, xx.max() + m_ + 1), min(H, yy.max() + m_ + 1)
-            if b.get("fill"):  # 단색 이름표: 바탕색으로 칠함 (메우기가 번지는 작은 흰 딱지)
+            if b.get("cover"):  # 네모 전체를 밝은 바탕색 카드로 덮음 (기울어진 딱지·지우기 어려운 글)
+                px = img[inner > 0].reshape(-1, 3)
+                col = np.percentile(px, 92, axis=0) if b["cover"] is True else np.array(b["cover"][::-1])
+                out[inner > 0] = col
+            elif b.get("fill"):  # 단색 이름표: 바탕색으로 칠함 (메우기가 번지는 작은 흰 딱지)
                 col = np.median(img[(inner > 0) & (text_px == 0)], axis=0)
                 out[(cv2.dilate(mk, np.ones((3, 3), np.uint8)) > 0) & (inner > 0)] = col
             else:

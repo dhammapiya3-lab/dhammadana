@@ -10,6 +10,19 @@
     "shape": "box",
     "en": "In the past, wealthy northern brahmin realized the heavy burden of sensual desire. Seeking true peace, he abandoned his worldly life, retreating to the Himalayas to become an ascetic.",
     "ko": "옛날 북쪽 지방의 부유한 바라문이 감각적 욕망이 무거운 짐임을 깨달았습니다. 참된 평화를 찾아 그는 세속의 삶을 버리고 히말라야로 들어가 수행자가 되었습니다."
+   },
+   {
+    "rect": [
+     232,
+     8,
+     572,
+     42
+    ],
+    "ko": "출가의 기쁨",
+    "shape": "box",
+    "manual": true,
+    "align": "center",
+    "em": 24
    }
   ]
  },

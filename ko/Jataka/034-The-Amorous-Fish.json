@@ -23,7 +23,7 @@
     ],
     "shape": "box",
     "en": "Under King Brahmadatta of ancient Benares, the Bodhisatta served as the royal family priest.",
-    "ko": "옛 바라나시의 브라흐마닷따 왕 때, 보살은 왕실의 사제였습니다."
+    "ko": "보살은 바라나시 왕실의 사제였습니다."
    },
    {
     "seed": [
@@ -32,7 +32,7 @@
     ],
     "shape": "box",
     "en": "He possessed rare and secret gift: the ability to understand the language of all living animals.",
-    "ko": "그에게는 드물고 비밀스러운 능력이 있었습니다. 살아 있는 모든 동물의 말을 알아듣는 것이었습니다."
+    "ko": "그는 모든 동물의 말을 알아듣는 드문 능력이 있었습니다."
    }
   ]
  },
@@ -46,7 +46,7 @@
     ],
     "shape": "box",
     "en": "Deep in the river, river, great fish swam amorously with his wife Blinded by passion and enamored by her presence, he was entirely oblivious to the dangerous world above",
-    "ko": "깊은 강물 속에서 큰 물고기 한 마리가 아내와 정답게 헤엄치고 있었습니다. 애욕에 눈멀고 아내에게 홀딱 빠진 그는 물 위의 위험한 세상을 전혀 몰랐습니다."
+    "ko": "깊은 강에서 큰 물고기가 아내와 정답게 헤엄쳤습니다. 애욕에 눈먼 그는 물 위의 위험을 전혀 몰랐습니다."
    }
   ]
  },
@@ -72,13 +72,16 @@
     "ko": "덫을 본 아내는 재빨리 돌아서 빠져나갔습니다."
    },
    {
-    "seed": [
-     428,
-     376
-    ],
     "shape": "box",
     "en": "But her spouse, blinded by desire, sailed direct! into the fatal meshes",
-    "ko": "그러나 애욕에 눈먼 남편은 곧장 죽음의 그물코로 헤엄쳐 들어갔습니다."
+    "ko": "애욕에 눈먼 남편은 곧장 그물로 들어갔습니다.",
+    "rect": [
+     405,
+     368,
+     746,
+     396
+    ],
+    "em": 13
    }
   ]
  },
@@ -86,13 +89,17 @@
   "img": "images/034-The-Amorous-Fish-05-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     458,
-     72
-    ],
     "shape": "box",
     "en": "from the river, the fish was flung alive onto the burning ning sa",
-    "ko": "강에서 끌려 나온 물고기는 산 채로 뜨거운 모래 위에 내던져졌습니다."
+    "ko": "물고기는 뜨거운 모래 위에 내던져졌습니다.",
+    "rect": [
+     420,
+     60,
+     746,
+     94
+    ],
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [

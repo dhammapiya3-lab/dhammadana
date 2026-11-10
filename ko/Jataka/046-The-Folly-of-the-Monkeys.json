@@ -56,6 +56,19 @@
     "shape": "bubble",
     "en": "You enjoy these flowers and fruits. Today is holiday up in the city. Could you water the young trees while am away?",
     "ko": "너희는 이 꽃과 열매를 실컷 즐겨라. 오늘 성 안은 축제란다. 내가 없는 동안 어린 나무에 물을 좀 주겠니?"
+   },
+   {
+    "rect": [
+     428,
+     180,
+     498,
+     214
+    ],
+    "ko": "네!",
+    "shape": "box",
+    "manual": true,
+    "align": "center",
+    "em": 17
    }
   ]
  },
@@ -188,13 +201,19 @@
     "ko": "뿌리가 깊은 나무에는 물을 넉넉히, 뿌리가 작은 나무에는 조금만 주어라."
    },
    {
-    "seed": [
-     737,
-     120
-    ],
     "shape": "bubble",
     "en": "Ye To be sure! Ny",
-    "ko": "알겠습니다!"
+    "ko": "알겠습니다!",
+    "rect": [
+     650,
+     128,
+     738,
+     166
+    ],
+    "ellipse": true,
+    "em": 14,
+    "align": "center",
+    "grow": 3
    }
   ]
  },
@@ -296,8 +315,8 @@
     "shape": "box",
     "em": 21,
     "manual": true,
-    "thr": 18,
-    "grow": 4
+    "thr": 14,
+    "grow": 8
    }
   ]
  },

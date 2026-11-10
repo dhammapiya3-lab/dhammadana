@@ -134,7 +134,27 @@
     ],
     "shape": "bubble",
     "en": "My dear Cullalohita envy him not He is being fed only to furnish relish for the wedding guests",
-    "ko": "사랑하는 쭐랄로히따야, 부러워하지 마라. 저 돼지는 잔치 손님들의 반찬이 되려고 먹는 것이란다."
+    "ko": "사랑하는 쭐랄로히따야, 부러워하지 마라. 저 돼지는 잔치 손님들의 반찬이 되려고 먹는 것이란다.",
+    "parts": [
+     {
+      "rect": [
+       86,
+       60,
+       234,
+       110
+      ],
+      "ko": "사랑하는 쭐랄로히따야,\n부러워하지 마라."
+     },
+     {
+      "rect": [
+       210,
+       106,
+       374,
+       184
+      ],
+      "ko": "저 돼지는 잔치 손님들의\n반찬이 되려고\n먹는 것이란다."
+     }
+    ]
    },
    {
     "seed": [
@@ -159,7 +179,7 @@
     ],
     "dark": true,
     "align": "center",
-    "ko": "마 무니깟사 삐하이…",
+    "ko": "Mā Muṇikassa pihayi…",
     "em": 19,
     "shape": "box",
     "manual": true
