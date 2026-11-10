@@ -122,3 +122,9 @@ html.sv-lock,html.sv-lock body{overflow:hidden}
 .sv-end .e2 b{display:block;font-size:20px}
 .sv-end .e3{font-size:13px;opacity:.6;margin:12px 0 0}
 .sv.loading{opacity:.6;pointer-events:none}
+/* 손가락으로 확대 */
+.sv-page img{transition:transform .05s linear;transform-origin:center center;will-change:transform}
+.sv.sv-zoom .sv-track{overflow:hidden;touch-action:none}
+.sv.sv-zoom .sv-page{overflow:visible;z-index:2}
+.sv.sv-max .sv-track,.sv:fullscreen .sv-track{touch-action:pan-x}
+.sv.sv-rot .sv-track{touch-action:none}
