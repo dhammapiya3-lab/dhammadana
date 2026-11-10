@@ -251,7 +251,7 @@ function bookLd(b, e, t) {
 }
 
 function layout({ title, nav = '', page = '', body, desc = '', image = '', ld = null }) {
-  const t = title ? `${title} · ${S.site_name}` : S.site_name;
+  const t = title ? `${title} · ${S.site_name}` : `${S.site_name} · 테라와다불교 법보시 서적 무료 도서관`;  // 첫 화면 제목에 '테라와다불교' (검색용, 운영자 요청 2026-11-10)
   const P = S.publisher;
   return `<!DOCTYPE html>
 <html lang="ko">
@@ -261,11 +261,11 @@ function layout({ title, nav = '', page = '', body, desc = '', image = '', ld = 
 <title>${esc(t)}</title>
 ${ld ? `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n` : ''}<meta name="naver-site-verification" content="227f6f00a39d09eabb4c1c916b1a7dcf371a12df">
 <meta name="google-site-verification" content="BMBhirIv12i354WOEbnZHgLYmliYQ_wdhRAl8oX8wdc">
-<meta name="description" content="${esc(desc || '부처님과 테라와다 스승들의 가르침을 우리말로 옮긴 법보시 서적을 무료로 찾고, 내려받고, 읽는 곳')}">
+<meta name="description" content="${esc(desc || '테라와다불교(상좌부불교)·근본불교 — 부처님과 테라와다불교 스승들의 가르침을 우리말로 옮긴 법보시 서적을 무료로 찾고, 내려받고, 온라인으로 읽고 듣는 곳')}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="${esc(S.site_name)}">
 <meta property="og:title" content="${esc(t)}">
-<meta property="og:description" content="${esc(desc || '부처님과 테라와다 스승들의 가르침을 우리말로 옮긴 법보시 서적을 무료로 찾고, 내려받고, 읽는 곳')}">
+<meta property="og:description" content="${esc(desc || '테라와다불교(상좌부불교)·근본불교 — 부처님과 테라와다불교 스승들의 가르침을 우리말로 옮긴 법보시 서적을 무료로 찾고, 내려받고, 온라인으로 읽고 듣는 곳')}">
 <meta property="og:image" content="${esc(S.site_url.replace(/\/$/, '') + (image || '/images/og.jpg?v=2'))}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/images/icon.svg" type="image/svg+xml">
@@ -420,7 +420,7 @@ function updatesList() {
   for (const b of LIB()) if (!b.hide_update) rows.push({ d: b.added || '', b, c: '등록' });
   return rows.sort((a, b) => b.d.localeCompare(a.d)).slice(0, 8);
 }
-put('index.html', layout({ ld: { '@context': 'https://schema.org', '@type': 'WebSite', name: S.site_name, url: SITE_URL + '/', inLanguage: 'ko', potentialAction: { '@type': 'SearchAction', target: SITE_URL + '/search/?q={search_term_string}', 'query-input': 'required name=search_term_string' } },
+put('index.html', layout({ ld: { '@context': 'https://schema.org', '@type': 'WebSite', name: S.site_name, alternateName: ['테라와다불교 법보시 도서관', 'Dhammadāna Library'], description: '테라와다불교·근본불교 법보시 서적 무료 도서관', url: SITE_URL + '/', inLanguage: 'ko', potentialAction: { '@type': 'SearchAction', target: SITE_URL + '/search/?q={search_term_string}', 'query-input': 'required name=search_term_string' } },
   page: 'home', body: `<section class="verse wrap">${wheel('wheel')}
   <div class="pali-line">${esc(S.verse_pali)}</div><div class="ko-line">${esc(S.verse_ko)}</div><div class="cite">${esc(S.verse_cite)}</div>
   <form class="hero-search" action="/search/" role="search"><label for="hq" class="sr">자료 검색</label>
