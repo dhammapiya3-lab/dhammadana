@@ -5,7 +5,10 @@ Jataka 005-The-Measure-of-Rice 14 장
 Jataka 006-The-Water-Rakkhasa 15 장
 Jataka 009-The-Kings-Grey-Hair 14 장
 Jataka 010-Bliss-of-Renunciation 14 장
+Jataka 018-The-Sacrificial-Goat 14 장
+Jataka 022-The-Teaching-of-the-Dog 14 장
 Jataka 023-The-Noble-Warhorse 14 장
+검수 Jataka/026-The-State-Elephant 10번 그림 상자2 [자리] 한글이 원래 글 자리(1178,1205-1275,1254)에서 벗어남 (836,1239)
 Jataka 026-The-State-Elephant 13 장
 Jataka 027-Elephant-and-Dog 13 장
 검수 Jataka/028-Nandivisala 03번 그림 상자2 [작음] 글자 크기 33 (원래 113)
@@ -24,8 +27,8 @@ Jataka 044-The-Son-and-the-Mosquito 13 장
 Jataka 046-The-Folly-of-the-Monkeys 13 장
 Jataka 048-The-Rain-of-Ruin 15 장
 Jataka 049-The-Lucky-Star 14 장
-자동 검수: 문제 의심 4 곳
-R2 에 올림: 620 개 / 한글판 이야기 32 편
+자동 검수: 문제 의심 5 곳
+R2 에 올림: 706 개 / 한글판 이야기 32 편
 공개 주소 확인: 200 1439130바이트
 50-Mahasudassana
 41-42-Sariputta-and-Others
