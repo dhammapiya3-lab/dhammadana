@@ -15,6 +15,22 @@ for f in sorted(glob.glob("ko/*/*.json")):
         print(book, story)
 PY
 )
+# 자동 검수 보고서 + 검수용 800px 한글 그림을 storybooks-qa 가지에 (Claude 가 눈으로 확인)
+python3 - <<'PY'
+import json, os, collections
+rows = [json.loads(l) for l in open("out/img/qa.jsonl", encoding="utf-8")] if os.path.exists("out/img/qa.jsonl") else []
+os.makedirs("reports", exist_ok=True)
+with open("reports/qa.md", "w", encoding="utf-8") as f:
+    f.write(f"# 자동 검수 결과\n\n이번에 만든 그림 중 문제 의심 {len(rows)}곳\n\n")
+    for r in rows:
+        f.write(f"- {r['key']} {r['pic']:02d}번 그림, 상자 {r['box']} [{r['kind']}] {r['msg']}\n")
+print("자동 검수: 문제 의심", len(rows), "곳")
+PY
+rm -f out/img/qa.jsonl
+rm -rf /tmp/qa && git clone -q --depth 1 -b storybooks-qa "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}" /tmp/qa 2>/dev/null || (mkdir -p /tmp/qa && cd /tmp/qa && git init -q -b storybooks-qa)
+for d in out/img/*/*; do k=${d#out/img/}; rm -rf "/tmp/qa/$k"; mkdir -p "/tmp/qa/$k"; cp "$d"/s/*.jpg "/tmp/qa/$k/"; done
+cp reports/qa.md /tmp/qa/qa.md
+(cd /tmp/qa && git add -A && git -c user.name=storybooks-bot -c user.email=actions@users.noreply.github.com commit -qm "검수용 한글 그림 [skip ci]" && git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}" storybooks-qa) || true
 python3 pipeline/upload_r2.py
 # 공개 주소로 잘 보이는지 확인
 first=$(ls -d out/img/*/* 2>/dev/null | head -1 | sed 's#out/img/##')
