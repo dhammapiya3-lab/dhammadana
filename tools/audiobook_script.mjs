@@ -131,7 +131,15 @@ top.forEach((c, k) => {
       for (const [bad, good] of SPELL) pre = pre.split(bad).join(good);
       pre = pre.split('\n').filter(l => !(/속표지|판권지/.test(c.title) && !/[가-힣āīūṃṅñṭḍṇḷ]/.test(l))).map(stripGloss).filter(x => x).join('\n');  // 속표지·판권지의 영어 줄은 한글과 같은 내용이라 뺌
       pre = pre.replace(/[＊※]\s*/g, '').replace(/^\*\s+/gm, '').replace(/[‘’“”]/g, '').replace(/(^|\s)\S+\.(?:html?|php|aspx?)\b/g, '$1');  // 따옴표는 소리 내지 않음(조사 앞에 빈칸이 생기지 않게), 줄에 남은 주소 조각 뺌
-      if (/판권지/.test(c.title)) pre = pre.split('\n').filter(l => !/주소|전화|팩스|지부|홈페이지|이메일|등록번호|ISBN|값 /.test(l)).join('\n');  // 판권지는 책 이름·판·사람·펴낸 곳만
+      if (/판권지/.test(c.title)) pre = pre.split('\n').filter(l => !/주소|전화|팩스|지부|홈페이지|이메일|등록번호|ISBN|값 |^등록[\s/:]|97[89][-─–]?\d{2}/.test(l)).join('\n');  // 등록 번호·ISBN(979-11-…) 줄도 뺌
+      // 쪽 번호 목록(부록 '…경(1~17) … 52')은 끝의 수를 '쪽'으로 읽음: '오십이 쪽' (운영자 요청, 2026-11-10)
+      //  괄호 속 게송 번호가 앞에 있으면 '일에서 십칠 번 게송, 오십이 쪽' (운영자 요청, 2026-11-10)
+      pre = pre.replace(/[ \t]*\((\d+(?:[ \t]*[~∼～-][ \t]*\d+)?)\)[ \t]*…+[ \t]*(\d+(?:[ \t]*,[ \t]*\d+)*)[ \t]*$/gm, ' $1 번 게송, $2 쪽.');
+      pre = pre.replace(/[ \t]*…+[ \t]*(\d+(?:[ \t]*,[ \t]*\d+)*)[ \t]*$/gm, ' $1 쪽.');
+      // 줄 첫머리의 게송 번호 '(1149) 확고부동하고…'는 번호 뒤에 마침표가 있는 것처럼 잠시 쉬고 읽음: '1149. 확고부동하고' (운영자 요청, 2026-11-10)
+      pre = pre.replace(/^\((\d+)\)[ \t]*/gm, '$1. ');
+      // 꾸밈 기호(⊙ ☞ • ■ §)는 소리 내지 않음 — 음성 엔진이 어차피 건너뛰지만 원고에서도 빼 둠
+      pre = pre.replace(/[⊙☞•■§]\s*/g, '');  // 판권지는 책 이름·판·사람·펴낸 곳만
       if (!pre.trim()) return;
       const said = lib.sayable(pre, OPT);
       (pre.match(LAT) || []).forEach(w => { const s = lib.PALI(w.replace(/[’'-]/g, '')); if (s && lib.langOf(w) !== 'E') changes.set(w, s); });
@@ -148,7 +156,7 @@ top.forEach((c, k) => {
   if (SKIP.test(c.title.replace(/\s/g, '')) && !flags.includes('--all')) { skipped.push(c.title); return; }
   if (!paras.length && !title) return;
   n++;
-  const name = String(n).padStart(2, '0') + '_' + c.title.replace(/[\u3400-\u9FFF]+/g, '').replace(/[\\/:*?"<>|]/g, '').slice(0, 40).trim() + '.txt';
+  const name = String(n).padStart(2, '0') + '_' + c.title.replace(/[\u3400-\u9FFF]+/g, '').replace(/\(\s*\)/g, '').replace(/[\\/:*?"<>|]/g, '').slice(0, 40).trim() + '.txt';
   fs.writeFileSync(path.join(outDir, name), [title, ...paras].map(sayNum).join('\n\n') + '\n');
   // 소리 문단 → 읽기 화면 자리 [쪽 순번, 문단 순번] (첫 줄 = 장 제목 → 장 처음, 문단 -1) — 오디오북을 들으며 글 따라가기에 씀
   fs.writeFileSync(path.join(outDir, name.replace(/\.txt$/, '.map.json')), JSON.stringify({ title: c.title, page: from, to, map: [[from, -1], ...map] }));
