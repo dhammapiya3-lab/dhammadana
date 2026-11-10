@@ -142,6 +142,8 @@ def render(src_path, boxes):
         ys2, xs2 = np.where(full > 0)
         QA.append(dict(tb=tuple(int(v) for v in tb), region=(int(xs2.min()), int(ys2.min()), int(xs2.max()), int(ys2.max())),
                        area=int((full > 0).sum()), rect=bool(b.get("rect")), ko=b["ko"], em=em, seed=b.get("seed"), li=len(layout)))
+        if b.get("cover"):  # 덮은 카드: 글 자리는 네모 전체
+            ys3, xs3 = np.where(inner > 0); tb = (int(xs3.min()), int(ys3.min()), int(xs3.max()), int(ys3.max()))
         layout.append((inner_rect(full, tb), b["ko"], b.get("align", "left" if b.get("shape") == "box" else "center"), em, dark))
     scale = 2 if W < 1600 else 1
     pil = Image.fromarray(cv2.cvtColor(out, cv2.COLOR_BGR2RGB))

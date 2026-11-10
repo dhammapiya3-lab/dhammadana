@@ -399,6 +399,26 @@
     "align": "center",
     "shape": "box",
     "manual": true
+   },
+   {
+    "rect": [
+     304,
+     236,
+     428,
+     260
+    ],
+    "ko": "무명(어리석음)",
+    "shape": "box",
+    "manual": true,
+    "label": true,
+    "align": "center",
+    "cover": [
+     236,
+     226,
+     204
+    ],
+    "em": 12,
+    "dark": false
    }
   ]
  },

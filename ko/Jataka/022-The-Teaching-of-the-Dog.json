@@ -128,6 +128,86 @@
     "shape": "bubble",
     "en": "Kings in trying cases should be as unbiased as the beam of balance. You are following the four Evil Courses: partiality, dislike, ignorance, and fear.",
     "ko": "어려운 일을 판결하는 왕은 저울대처럼 치우침이 없어야 합니다. 지금 왕께서는 네 가지 그릇된 길, 곧 편애·미움·어리석음·두려움을 따르고 계십니다."
+   },
+   {
+    "rect": [
+     622,
+     128,
+     694,
+     152
+    ],
+    "ko": "치우침",
+    "shape": "box",
+    "manual": true,
+    "label": true,
+    "align": "center",
+    "cover": [
+     236,
+     226,
+     204
+    ],
+    "em": 12,
+    "dark": false
+   },
+   {
+    "rect": [
+     622,
+     186,
+     694,
+     210
+    ],
+    "ko": "미움",
+    "shape": "box",
+    "manual": true,
+    "label": true,
+    "align": "center",
+    "cover": [
+     236,
+     226,
+     204
+    ],
+    "em": 12,
+    "dark": false
+   },
+   {
+    "rect": [
+     626,
+     230,
+     704,
+     254
+    ],
+    "ko": "어리석음",
+    "shape": "box",
+    "manual": true,
+    "label": true,
+    "align": "center",
+    "cover": [
+     236,
+     226,
+     204
+    ],
+    "em": 12,
+    "dark": false
+   },
+   {
+    "rect": [
+     622,
+     278,
+     694,
+     302
+    ],
+    "ko": "두려움",
+    "shape": "box",
+    "manual": true,
+    "label": true,
+    "align": "center",
+    "cover": [
+     236,
+     226,
+     204
+    ],
+    "em": 12,
+    "dark": false
    }
   ]
  },
@@ -193,7 +273,28 @@
  },
  {
   "img": "images/022-The-Teaching-of-the-Dog-12-Original.jpg",
-  "boxes": []
+  "boxes": [
+   {
+    "rect": [
+     226,
+     384,
+     574,
+     430
+    ],
+    "ko": "법답게 살면 왕은 천상에 이르리라.\n가족·무사·마을 사람·수행자·짐승과 새에게 바르게 행하라.",
+    "shape": "box",
+    "manual": true,
+    "label": true,
+    "align": "center",
+    "cover": [
+     236,
+     226,
+     204
+    ],
+    "em": 12,
+    "dark": false
+   }
+  ]
  },
  {
   "img": "images/022-The-Teaching-of-the-Dog-13-Original.jpg",

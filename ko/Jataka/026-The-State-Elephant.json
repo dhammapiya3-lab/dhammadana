@@ -63,6 +63,26 @@
     "shape": "box",
     "en": "Hearing their vicious counsel night after night, the innocent oS 5 elephant assumed he was being instructed. The environment rewrote his nature. ure. He resolved to become creature of pure violence.",
     "ko": "밤마다 그 나쁜 말을 들은 순진한 코끼리는 자기에게 가르치는 말인 줄 알았습니다. 둘레의 말이 그의 성품을 바꾸었고, 그는 사나운 짐승이 되기로 마음먹었습니다."
+   },
+   {
+    "rect": [
+     330,
+     42,
+     690,
+     68
+    ],
+    "ko": "잔인함 · 죽여라 · 자비는 없다 · 훔쳐라 · 폭력 · 네 것을 빼앗아라",
+    "shape": "box",
+    "manual": true,
+    "label": true,
+    "align": "center",
+    "cover": [
+     236,
+     226,
+     204
+    ],
+    "em": 12,
+    "dark": false
    }
   ]
  },
@@ -198,6 +218,26 @@
     "shape": "box",
     "en": "Just as before, the elephant internalized his environment. Believing this to be his new instruction, he shed his cruelty and embraced peace.",
     "ko": "이번에도 코끼리는 들은 말을 그대로 받아들였습니다. 그것이 새 가르침이라 믿고 잔인함을 버리고 평화를 품었습니다."
+   },
+   {
+    "rect": [
+     118,
+     362,
+     388,
+     388
+    ],
+    "ko": "평화 · 자비 · 사랑 · 연민 · 온화 · 친절",
+    "shape": "box",
+    "manual": true,
+    "label": true,
+    "align": "center",
+    "cover": [
+     236,
+     226,
+     204
+    ],
+    "em": 12,
+    "dark": false
    }
   ]
  },

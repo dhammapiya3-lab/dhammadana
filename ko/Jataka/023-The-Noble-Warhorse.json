@@ -91,6 +91,26 @@
     "align": "center",
     "shape": "box",
     "manual": true
+   },
+   {
+    "rect": [
+     364,
+     220,
+     434,
+     244
+    ],
+    "ko": "바라나시",
+    "shape": "box",
+    "manual": true,
+    "label": true,
+    "align": "center",
+    "cover": [
+     236,
+     226,
+     204
+    ],
+    "em": 12,
+    "dark": false
    }
   ]
  },

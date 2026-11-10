@@ -278,6 +278,26 @@
     "shape": "box",
     "dark": true,
     "manual": true
+   },
+   {
+    "rect": [
+     516,
+     104,
+     650,
+     136
+    ],
+    "ko": "우르릉 쾅!",
+    "shape": "box",
+    "manual": true,
+    "label": true,
+    "align": "center",
+    "cover": [
+     236,
+     226,
+     204
+    ],
+    "em": 12,
+    "dark": false
    }
   ]
  },
