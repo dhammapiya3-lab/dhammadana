@@ -9,6 +9,7 @@
   - 같은 부호가 두 번 겹친 것(PDF 겹쳐 찍기)은 하나로
   - 부호 순서를 바꿔 보거나, 첫소리에 붙을 수 없는 아랫점(빳〭·앗〭)은 끝소리(U+FE00)로 — 글꼴이 한 글자로 합치는 것을 고름
   - 그래도 합쳐지지 않으면 〬 〭 는 인쇄본처럼 오른쪽 위·아래 작은 고리(글꼴에 있음)로 그대로 둠 → 목록을 알림
+  - 텍스트 JSON 의 `ph_fix` {책 본문 낱말: 바른 표기}가 있으면 그 표기로 보임 (운영자 요청: 350쪽 사띠빳〭˕타〭᷇나᷇ = satipaṭṭhānā)
 그리고 쓰인 글자만 담은 작은 글꼴 public/fonts/PaliHangul.woff2 를 만든다.
 """
 import itertools, json, re, subprocess, sys, tempfile, uharfbuzz as hb
@@ -65,7 +66,8 @@ for bid in ids:
     p = f'content/texts/{bid}.json'
     t = json.load(open(p))
     ws = sorted({w for w in WRE.findall(t['body']) if re.search('[' + M + ']', w)})
-    t['ph'] = {w: SYL.sub(lambda m: syl(m.group(1), m.group(2)), w) for w in ws}
+    fix = t.get('ph_fix', {})  # 운영자가 정한 바른 표기 {책 본문 낱말: 책과 같은 부호로 쓴 바른 표기} — 본문은 그대로, 화면에만
+    t['ph'] = {w: SYL.sub(lambda m: syl(m.group(1), m.group(2)), fix.get(w, w)) for w in ws}
     allw |= set(t['ph'].values())
     open(p, 'w').write(json.dumps(t, ensure_ascii=False, indent=2) + '\n')
     print(f'{bid}: 낱말 {len(ws)}개')
