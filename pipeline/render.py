@@ -10,6 +10,21 @@ from boxes import region_masks
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FONT = os.path.join(HERE, "fonts", "GowunDodum-Regular.ttf")
+LATIN = os.path.join(HERE, "fonts", "Inter-Italic.otf")  # 한글 없는 로마자 줄(빠알리 원문 ā ṃ ñ …)은 원작처럼 기울임 글꼴로
+import re as _re
+
+
+def is_latin(t):
+    return bool(_re.search(r"[A-Za-zĀ-ỿ]", t)) and not _re.search(r"[가-힣]", t)
+
+
+class Fonts:
+    def __init__(self, size):
+        self.ko = ImageFont.truetype(FONT, size)
+        self.la = ImageFont.truetype(LATIN, max(9, round(size * 0.92)))
+
+    def pick(self, t):
+        return self.la if is_latin(t) else self.ko
 INK = (40, 30, 25)
 
 
@@ -32,9 +47,10 @@ def inner_rect(full, tb):
     return x0, y0, x1, y1
 
 
-def wrap(draw, text, font, maxw):
+def wrap(draw, text, fonts, maxw):
     out = []
     for para in text.split("\n"):
+        font = fonts.pick(para)
         cur = ""
         for word in para.split(" "):
             t = (cur + " " + word).strip()
@@ -48,12 +64,12 @@ def wrap(draw, text, font, maxw):
 
 def fit(draw, text, w, h, maxsize):
     for size in range(maxsize, 9, -1):
-        f = ImageFont.truetype(FONT, size)
+        f = Fonts(size)
         lines = wrap(draw, text, f, w)
         lh = size * 1.25
-        if all(draw.textlength(l, font=f) <= w for l in lines) and lh * len(lines) <= h:
+        if all(draw.textlength(l, font=f.pick(l)) <= w for l in lines) and lh * len(lines) <= h:
             return f, lines, lh
-    f = ImageFont.truetype(FONT, 10)
+    f = Fonts(10)
     return f, wrap(draw, text, f, w), 13
 
 
@@ -132,9 +148,10 @@ def render(src_path, boxes):
         f, lines, lh = fit(d, ko, X1 - X0, Y1 - Y0, cap)
         y = Y0 + ((Y1 - Y0) - lh * len(lines)) / 2
         for l in lines:
-            lw = d.textlength(l, font=f)
+            fl = f.pick(l)
+            lw = d.textlength(l, font=fl)
             x = X0 if align == "left" else X0 + ((X1 - X0) - lw) / 2
-            d.text((x, y), l, font=f, fill=(245, 240, 230) if dark else INK)
+            d.text((x, y), l, font=fl, fill=(245, 240, 230) if dark else INK)
             y += lh
     return pil
 
