@@ -105,7 +105,13 @@ const CT={KR:'한국',US:'미국',JP:'일본',MM:'미얀마',TH:'태국',LK:'스
 function table(rows){ return rows.length?`<table>${rows.join('')}</table>`:'<p class="note">아직 기록이 없습니다.</p>'; }
 async function load(){
   drawRange(); $('#out').innerHTML='<p class="note" style="margin-top:16px">불러오는 중… (처음에는 조금 걸릴 수 있습니다)</p>';
-  let j={}; try{ const r=await fetch('/api/stats?days='+DAYS,{headers:{authorization:'Bearer '+TOKEN}}); j=await r.json(); }catch(e){ j={error:'연결 오류'}; }
+  let j={}, d0=DAYS;
+  for(let t=0;t<40;t++){  // 쌓인 방문 기록이 많으면 서버가 조금씩 정리하므로 끝날 때까지 다시 부름
+    try{ const r=await fetch('/api/stats?days='+DAYS,{headers:{authorization:'Bearer '+TOKEN}}); j=await r.json(); }catch(e){ j={error:'연결 오류 — 잠시 뒤 다시 눌러 주세요.'}; }
+    if(d0!==DAYS) return;
+    if(j.error||!j.more) break;
+    $('#out').innerHTML=`<p class="note" style="margin-top:16px">쌓인 방문 기록을 정리하는 중… (${t+1}) 잠시만 기다려 주세요.</p>`;
+  }
   if(j.error){ $('#out').innerHTML=`<div class="msg err">${esc(j.error)}</div>`; return; }
   if(!j.ready){ $('#out').innerHTML='<div class="msg err">통계를 보관할 창고(PAPER)가 연결되지 않았습니다.</div>'; return; }
   const mx=Math.max(1,...j.days.map(d=>d.views)), md=s=>s.slice(5).replace('-','/');
