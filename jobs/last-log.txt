@@ -1,6 +1,19 @@
-자동 검수: 문제 의심 0 곳
-R2 에 올림: 46 개 / 한글판 이야기 32 편
-공개 주소 확인: 404 27150바이트
+검수 Jataka/001-The-Waterless-Desert 13번 그림 상자2 [자리] 한글 글(2151,1214)이 상자 점(1762,1051)에서 멀리 그려짐
+Jataka 001-The-Waterless-Desert 15 장
+Jataka 005-The-Measure-of-Rice 14 장
+검수 Jataka/027-Elephant-and-Dog 04번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 5px)
+검수 Jataka/027-Elephant-and-Dog 06번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 5px)
+검수 Jataka/027-Elephant-and-Dog 07번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+Jataka 027-Elephant-and-Dog 13 장
+검수 Jataka/044-The-Son-and-the-Mosquito 01번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+검수 Jataka/044-The-Son-and-the-Mosquito 02번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 1px)
+검수 Jataka/044-The-Son-and-the-Mosquito 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 4px)
+검수 Jataka/044-The-Son-and-the-Mosquito 04번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 2px)
+Jataka 044-The-Son-and-the-Mosquito 13 장
+Jataka 048-The-Rain-of-Ruin 15 장
+자동 검수: 문제 의심 8 곳
+R2 에 올림: 186 개 / 한글판 이야기 32 편
+공개 주소 확인: 200 1156766바이트
 41-Mogharaja.htm: 그림 53 상자 28 상자밖글 803
 41-Mogharaja
 13-Singalakamata.htm: 그림 13 상자 20 상자밖글 4
