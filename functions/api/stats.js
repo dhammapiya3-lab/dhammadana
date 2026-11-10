@@ -53,11 +53,14 @@ export async function onRequestGet({ request, env }) {
   const n = Math.min(Math.max(parseInt(new URL(request.url).searchParams.get('days')) || 30, 1), 366);
   const today = kst(), B = { n: 400, left: false }, days = [], all = new Set(), pages = {}, titles = {}, refs = {}, dev = {}, ctry = {};
   const add = (a, b) => { for (const k in b) a[k] = (a[k] || 0) + b[k]; };
-  for (let i = n - 1; i >= 0; i--) {
-    const d = addDay(today, -i), s = await getDay(env, d, today, B);
+  const ds = []; for (let i = n - 1; i >= 0; i--) ds.push(addDay(today, -i));
+  const res = [];
+  for (let i = 0; i < ds.length; i += 31) res.push(...await Promise.all(ds.slice(i, i + 31).map(d => getDay(env, d, today, B))));  // 여러 날을 한꺼번에 (1년도 빨리)
+  ds.forEach((d, i) => {
+    const s = res[i];
     days.push({ date: d, views: s.views, visitors: s.vids.length });
     s.vids.forEach(v => all.add(v)); add(pages, s.pages); add(refs, s.refs); add(dev, s.dev); add(ctry, s.ctry); Object.assign(titles, s.titles);
-  }
+  });
   const top = (o, k = 30) => Object.entries(o).sort((a, b) => b[1] - a[1]).slice(0, k);
   return json({ ready: true, more: B.left, today, days, visitors: all.size, views: days.reduce((a, b) => a + b.views, 0),
     pages: top(pages).map(([p, c]) => [p, c, titles[p] || '']), refs: top(refs, 20), dev, ctry: top(ctry, 10) });
