@@ -1029,3 +1029,5 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .ph{font-family:'PaliHangul',serif;font-feature-settings:'ccmp','liga','rlig'}
 /* 이 글꼴엔 굵은 글씨가 없어 소제목·굵은 글 속에서는 획에 테두리를 둘러 굵게 (브라우저가 흉내 내는 굵기보다 고르게) */
 .sub-h .ph,strong .ph,b .ph,h1 .ph,h2 .ph,h3 .ph,h4 .ph{font-synthesis:none;-webkit-text-stroke:.032em currentColor;paint-order:stroke fill}
+
+.get-box .ab-credit{margin:-2px 0 4px;text-align:center}

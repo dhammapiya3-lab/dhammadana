@@ -189,6 +189,18 @@ collections:
             multiple: true
             required: false
           - { name: note, label: 메모 (사이트에 안 나옴), widget: text, required: false }
+      - name: audiobook
+        label: 오디오북 정보
+        widget: object
+        collapsed: true
+        required: false
+        hint: "오디오북(소리 파일)이 있는 책만 적습니다. 적은 것만 책 소개의 '자료 기록'과 '오디오북으로 듣기' 단추 아래에 나옵니다."
+        fields:
+          - { name: narrator, label: 낭독자, required: false, hint: "예: 담마삐야 — 기계 음성이면 비워 두세요" }
+          - { name: producer, label: 제작기관, required: false, hint: "예: 한국마하시선원" }
+          - { name: made, label: 파일 만든 날, required: false, hint: "예: 2024년 5월 1일 — 잘 모르면 비워 두세요" }
+          - { name: source, label: 원본 출처 주소, required: false, hint: "녹음을 가져온 곳의 주소 (예: 팟빵·유튜브 주소)" }
+          - { name: source_note, label: 원본 출처 설명, required: false, hint: "주소가 없거나 덧붙일 말 (예: 낭독자에게서 직접 받음)" }
       - { name: license, label: 라이선스, widget: select, options: ["CC BY-NC-ND", "CC BY-NC-SA", "CC BY-NC", "CC BY", "저작권자 허락", "자유 이용(퍼블릭 도메인)"], default: "CC BY-NC-ND" }
       - { name: added, label: 등록일, widget: datetime, type: date, format: "YYYY-MM-DD" }
       - { name: order, label: 순서, widget: number, value_type: int, required: false, hint: "같은 날 등록한 책끼리의 순서 (클수록 앞)" }

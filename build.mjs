@@ -141,6 +141,9 @@ function bookSections(b, e, t) {
 const pubDate = x => { let p = (x.published || '').trim(); const l = (x.label || '').trim(); if (l && p.startsWith(l)) p = p.slice(l.length).trim(); return p.replace(/^발행\s*/, '').trim(); };
 const edHasFile = x => ['pdf', 'pdf_print', 'pdf_cover', 'epub'].some(k => x[k] && x[k].mode && x[k].mode !== 'none' && x[k].url) || !!x.reader;
 const uniqK = f => [...new Map(f.map(x => [x.k, x])).values()];
+// 오디오북 정보 (관리자 화면 '오디오북 정보': 낭독자·제작기관·파일 만든 날·원본 출처) (운영자 요청, 2026-11-11)
+const abInfo = b => { const a = b.audiobook || {}; const t = x => String(x || '').trim(); return { narrator: t(a.narrator), producer: t(a.producer), made: t(a.made), source: t(a.source), note: t(a.source_note) }; };
+const abInfoHtml = b => { const a = abInfo(b); const parts = [a.narrator && `낭독 ${esc(a.narrator)}`, a.producer && `제작 ${esc(a.producer)}`, a.made && `파일 만든 날 ${esc(a.made)}`].filter(Boolean); const src = [a.source && `<a href="${esc(a.source)}" target="_blank" rel="noopener">원본 출처 ↗</a>`, a.note && esc(a.note)].filter(Boolean); return parts.concat(src).join(' · '); };
 // 내려받을 때 파일 이름: 책제목_날짜.pdf (날짜 = 그 파일의 '이 파일 만든 날', 없으면 발행일)
 function ymd(t) {
   const m = String(t || '').match(/(\d{4})\s*[.\-/년]\s*(\d{1,2})(?:\s*[.\-/월]\s*(\d{1,2}))?/);
@@ -564,7 +567,7 @@ for (const b of BOOKS) {
     <div class="people">${peopleLinks(b, b.byline, 'by')}${b.translator ? ' | ' + peopleLinks(b, b.translator, 'tr') : ''}</div>
     ${pubsOf(b).length ? `<div class="people publ">${pubsOf(b).map(x => `<a href="/library/?pub=${encodeURIComponent(x.key)}">${esc(x.name)}</a>${pubsOf(b).length > 1 ? (x.kinds.includes('종이책') ? ' 출간' : ' 전자책') : ' 출간'}`).join(' · ')}</div>` : ''}
     ${pl ? `<div style="margin:2px 0 8px"><a class="small" href="/dhammatalk/?pl=${pl.id}">▶ ${esc(t.name)}의 법문 바로 듣기</a></div>` : ''}
-    </div><aside class="d-side"><div class="get-box"><div class="gb-title">이 책 읽어보기</div><div class="actions">${e.reader ? `<a class="btn" href="/read/${b.id}/">온라인으로 읽기</a>` : ''}${e.reader && AUDIO[b.id] && AUDIO[b.id].human ? `<a class="btn" href="/read/${b.id}/?audio=1" title="화면을 끄거나 다른 앱을 써도 계속 들립니다">🎧 오디오북으로 듣기</a>` : ''}
+    </div><aside class="d-side"><div class="get-box"><div class="gb-title">이 책 읽어보기</div><div class="actions">${e.reader ? `<a class="btn" href="/read/${b.id}/">온라인으로 읽기</a>` : ''}${e.reader && AUDIO[b.id] && AUDIO[b.id].human ? `<a class="btn" href="/read/${b.id}/?audio=1" title="화면을 끄거나 다른 앱을 써도 계속 들립니다">🎧 오디오북으로 듣기</a>${abInfo(b).narrator || abInfo(b).producer ? `<p class="ab-credit small muted">${[abInfo(b).narrator && '낭독 ' + esc(abInfo(b).narrator), abInfo(b).producer && '제작 ' + esc(abInfo(b).producer)].filter(Boolean).join(' · ')}</p>` : ''}` : ''}
       ${f.filter(x => x.k !== '온라인 읽기').map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">${x.name} 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>${x.name} 내려받기</a>`).join('')}
       ${(b.stores || []).filter(x => x && /^https?:\/\//.test(String(x.url || '').trim())).map(x => `<a class="btn ghost" href="${esc(String(x.url).trim())}" target="_blank" rel="noopener">${esc((x.name || '').trim() ? x.name.trim() + ' 바로가기' : '인터넷 서점 바로가기')} ↗</a>`).join('')}
       ${!f.length ? `<div class="soon-box">파일을 준비하고 있습니다.<br><span class="small">소식에서 올라오는 대로 알려 드립니다.</span></div>` : ''}</div>
@@ -581,6 +584,7 @@ for (const b of BOOKS) {
       ${b.original_source ? `<dt>원서 정보</dt><dd>${esc(b.original_source)}</dd>` : ''}
       <dt>자료 제공</dt><dd>${prov ? esc(prov.name) + (prov.urls || []).map(u => ` <a href="${esc(u)}" target="_blank" rel="noopener">↗</a>`).join('') : '—'}</dd>
       <dt>원본 출처</dt><dd>${(e.sources || []).length ? e.sources.map(s => `${SRC_FILE[s.file] ? `<span class="muted small">${SRC_FILE[s.file]}:</span> ` : ''}<a href="${esc(s.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>${s.checked ? ` <span class="muted small">(${esc(s.checked)} 확인)</span>` : ''}${s.archive ? ` · <a href="${esc(s.archive)}" target="_blank" rel="noopener">보관본</a>` : ''}`).join('<br>') : '—'}</dd>
+      ${AUDIO[b.id] && abInfoHtml(b) ? `<dt>오디오북</dt><dd>${abInfoHtml(b)}</dd>` : ''}
       <dt>수집 경로</dt><dd>${esc(e.collection || '—')}${e.collected ? ` <span class="muted small">(${esc(e.collected)})</span>` : ''}</dd>
       <dt>게시 허락</dt><dd>${permLabel || e.permission_note || e.permission_image ? `${permLabel}${perms.filter(p => p.image && p.image_public).map(p => ` · <button class="link-btn" data-permit="${esc(p.image)}" data-title="${esc(b.title)}">허락서 보기</button>`).join('')}${e.permission_image ? `${permLabel ? ' · ' : ''}<button class="link-btn" data-permit="${esc(e.permission_image)}" data-title="${esc(b.title)}">허락서 보기</button>` : ''}${e.permission_note ? `<blockquote class="perm-note">${esc(e.permission_note).replace(/\n/g, '<br>')}</blockquote>` : ''}` : '—'}</dd>
       <dt>라이선스</dt><dd>${licHtml(b.license)}</dd>
