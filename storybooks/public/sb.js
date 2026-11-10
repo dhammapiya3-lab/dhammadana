@@ -49,9 +49,16 @@
     if (['ArrowLeft', 'j', 'PageUp'].includes(e.key)) { go(cur - 1); e.preventDefault(); }
     if (e.key === 'Home') go(0); if (e.key === 'End') go(pages.length - 1);
   });
+  let t0 = null;
+  track.addEventListener('touchstart', e => { if (sv.classList.contains('sv-rot')) t0 = e.touches[0]; }, { passive: true });
+  track.addEventListener('touchend', e => {
+    if (!t0 || !sv.classList.contains('sv-rot')) return;
+    const t = e.changedTouches[0], dy = t.clientY - t0.clientY, dx = t.clientX - t0.clientX; t0 = null;
+    if (Math.abs(dy) > 40 && Math.abs(dy) > Math.abs(dx)) go(cur + (dy < 0 ? 1 : -1));
+  }, { passive: true });
   // 화면 좌우를 눌러 넘기기 (손가락 화면)
   track.addEventListener('click', e => {
-    const r = track.getBoundingClientRect(), x = (e.clientX - r.left) / r.width;
+    const r = track.getBoundingClientRect(), x = sv.classList.contains('sv-rot') ? (e.clientY - r.top) / r.height : (e.clientX - r.left) / r.width;
     if (x < 0.25) go(cur - 1); else if (x > 0.75) go(cur + 1);
   });
   autoBtn.onclick = () => {
@@ -65,16 +72,20 @@
   const isMax = () => document.fullscreenElement === sv || sv.classList.contains('sv-max');
   const enter = async () => {
     if (document.fullscreenEnabled) {
-      try { await sv.requestFullscreen(); if (phone && screen.orientation?.lock) await screen.orientation.lock('landscape').catch(() => {}); sv.focus(); return; } catch (e) {}
+      try { await sv.requestFullscreen(); if (phone && screen.orientation?.lock) await screen.orientation.lock('landscape').catch(() => {}); } catch (e) {}
     }
-    sv.classList.add('sv-max'); document.documentElement.classList.add('sv-lock'); sv.focus(); setTimeout(() => go(cur, false), 50);
+    if (document.fullscreenElement !== sv) { sv.classList.add('sv-max'); document.documentElement.classList.add('sv-lock'); }
+    sv.focus();
+    // 휴대폰 자동 회전이 꺼져 있거나 가로 고정이 안 되는 브라우저(아이폰 등): 그림을 90도 돌려 가로로 보여 줌
+    if (phone) setTimeout(() => { if (innerHeight > innerWidth && isMax()) sv.classList.add('sv-rot'); go(cur, false); }, 450);
+    setTimeout(() => go(cur, false), 50);
   };
   const leave = () => {
     if (document.fullscreenElement) document.exitFullscreen();
-    sv.classList.remove('sv-max'); document.documentElement.classList.remove('sv-lock'); setTimeout(() => go(cur, false), 50);
+    sv.classList.remove('sv-max', 'sv-rot'); document.documentElement.classList.remove('sv-lock'); setTimeout(() => go(cur, false), 50);
   };
   fullBtn.onclick = () => isMax() ? leave() : enter();
-  document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement && screen.orientation?.unlock) try { screen.orientation.unlock(); } catch (e) {} setTimeout(() => go(cur, false), 50); });
+  document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement) sv.classList.remove('sv-rot'); if (!document.fullscreenElement && screen.orientation?.unlock) try { screen.orientation.unlock(); } catch (e) {} setTimeout(() => go(cur, false), 50); });
   sv.addEventListener('keydown', e => { if (e.key === 'Escape' && sv.classList.contains('sv-max')) leave(); });
   if (phone) {
     // 세로로 들고 볼 때: 위에 '가로로 크게 보기' 안내 / 휴대폰을 가로로 돌리면 저절로 화면을 꽉 채움
@@ -84,7 +95,8 @@
     tip.onclick = enter;
     sv.before(tip);
     const land = matchMedia('(orientation: landscape)');
-    const onRot = () => { if (land.matches && !isMax()) { sv.classList.add('sv-max'); document.documentElement.classList.add('sv-lock'); } else if (!land.matches && sv.classList.contains('sv-max') && !document.fullscreenElement) leave(); setTimeout(() => go(cur, false), 80); };
+    const onRot = () => { if (land.matches) sv.classList.remove('sv-rot'); else if (isMax() && !sv.classList.contains('sv-rot')) sv.classList.add('sv-rot');
+      if (land.matches && !isMax()) { sv.classList.add('sv-max'); document.documentElement.classList.add('sv-lock'); }  setTimeout(() => go(cur, false), 80); };
     land.addEventListener('change', onRot); onRot();
   }
   window.addEventListener('resize', () => go(cur, false));
