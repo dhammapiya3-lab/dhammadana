@@ -572,7 +572,7 @@ for (const b of BOOKS) {
     ${b.series ? `<div class="small muted">${esc(b.series)}</div>` : ''}
     <h1>${esc(b.title)}</h1>${b.subtitle ? `<div class="orig" style="font-style:normal">${esc(b.subtitle)}</div>` : ''}${b.original_title || b.original_language ? `<div class="orig">${esc(b.original_title || '')}${b.original_language ? `<span class="lang-tag">${esc(b.original_language)} 원서</span>` : ''}</div>` : ''}
     <div class="people">${peopleLinks(b, b.byline, 'by')}${b.translator ? ' | ' + peopleLinks(b, b.translator, 'tr') : ''}</div>
-    ${pubsOf(b).length ? `<div class="people publ">${pubsOf(b).map(x => `<a href="${pubHref(x.key)}">${esc(x.name)}</a>${pubsOf(b).length > 1 ? (x.kinds.includes('종이책') ? ' 출간' : ' 전자책') : ' 출간'}`).join(' · ')}</div>` : ''}
+    ${pubsOf(b).length ? `<div class="people publ">${pubsOf(b).map(x => `<a href="${pubHref(x.key)}">${esc(x.name)}</a>${pubsOf(b).length > 1 ? (x.kinds.includes('종이책') ? ' 출간' : ' 전자책' + ((curEd(b) || {}).ebook_note ? `(${esc(curEd(b).ebook_note)})` : '')) : ' 출간'}`).join(' · ')}</div>` : ''}
     ${pl ? `<div style="margin:2px 0 8px"><a class="small" href="/dhammatalk/?pl=${pl.id}">▶ ${esc(t.name)}의 법문 바로 듣기</a></div>` : ''}
     </div><aside class="d-side"><div class="get-box"><div class="gb-title">이 책 읽어보기</div><div class="actions">${e.reader ? `<a class="btn" href="/read/${b.id}/">온라인으로 읽기</a>` : ''}${e.reader && AUDIO[b.id] && AUDIO[b.id].human ? `<a class="btn" href="/read/${b.id}/?audio=1" title="화면을 끄거나 다른 앱을 써도 계속 들립니다">🎧 오디오북으로 듣기</a>` : ''}
       ${f.filter(x => x.k !== '온라인 읽기').map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">${x.name} 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>${x.name} 내려받기</a>`).join('')}
