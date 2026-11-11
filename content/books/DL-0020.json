@@ -101,10 +101,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "file",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0020/DL-0020_개정판18쇄.pdf"
       },
       "pdf_print": {
         "mode": "none",
