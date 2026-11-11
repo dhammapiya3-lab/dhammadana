@@ -1999,4 +1999,15 @@ document.addEventListener('click', e => {
   pop.querySelector('.fnpop-x').onclick = () => pop.remove();
 }, true);
 document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && (e.target.classList.contains('fn-ref') || e.target.classList.contains('fn-no'))) { e.preventDefault(); e.target.click(); } if (e.key === 'Escape') { const p = document.getElementById('fnPop'); if (p) p.remove(); } });
+// 도서관 왼쪽 찾아보기 상자: 화면에 실제로 보이는 높이만큼만 — 페이지 맨 위에서도(머리글 아래에서 시작) 맨 아래 '형식'까지 상자 안에서 넘겨 볼 수 있게 (운영자 요청, 2026-11-11)
+(() => {
+  const d = document.querySelector('.lib>details'); if (!d) return;
+  const fit = () => {
+    if (innerWidth <= 520) { d.style.maxHeight = ''; return; }
+    const z = parseFloat(getComputedStyle(document.body).zoom) || 1;
+    const top = Math.max(d.getBoundingClientRect().top, 16 * z);
+    d.style.maxHeight = Math.max(200, (innerHeight - top - 16 * z) / z) + 'px';
+  };
+  fit(); addEventListener('scroll', fit, { passive: true }); addEventListener('resize', fit);
+})();
 })();
