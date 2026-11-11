@@ -2,7 +2,7 @@
   python3 tools/pdf2text_dl0021.py 책.pdf   (인쇄본 PDF → content/texts/DL-0021.json)
   python3 tools/dl0021_revise.py            (그 위에 개정판 원고 tools/dl0021_rev.json 을 덮어씀)
 - 게송: 같은 게송 번호의 줄을 원고의 줄로 바꿈(줄 나눔도 원고대로). 쪽을 넘어간 게송은 쪽이 갈리는 자리를 원고 글에서 같은 곳으로 맞춤.
-- 이야기 제목: 번호는 그대로, 제목·각주 번호는 원고대로. 235~238 은 한 이야기로, 277~279 는 세 이야기로 (원고 짜임).
+- 이야기 제목: 번호는 그대로, 제목·각주 번호는 원고대로. 짜임은 인쇄본 그대로(235-236·237-238, 277-279 안의 소제목 — 운영자 요청 2026-11-12).
 - 장 제목: 장 표지의 큰 제목을 원고대로.
 - 목차(6~19쪽)·장 표지의 이야기 목록·읽기 목차도 바뀐 제목으로.
 """
@@ -21,19 +21,16 @@ for i in range(1, len(pages), 2):
     P.append([pages[i], [p for p in pages[i + 1].split('\n\n') if p.strip()]])
 pno = lambda mark: int(re.search(r'\d+', mark).group())
 
-# ---- 1. 구조: 235~238 한 이야기, 277~279 세 이야기 ----
+# ---- 1. 짜임은 인쇄본 그대로 (운영자 요청, 2026-11-12): 235-236·237-238 두 이야기, 277-279 한 이야기 안에 소제목 무상·고(苦)·무아 ----
+KEEP = {'235', '237', '277'}
+SUBT = {'무상': '277', '고(苦)': '278', '무아': '279'}
 for pg in P:
-    ps = pg[1]
-    for j, p in enumerate(ps):
-        if p.startswith('## 235-236 '): ps[j] = '## 235-238 ' + p[len('## 235-236 '):]
-        if p.startswith('## 237-238 '): ps[j] = None; log.append('237-238 제목 줄을 뺌(235-238 한 이야기)')
-        if p.strip() == '## 277-279 무상 고 무아': ps[j] = None; log.append('277-279 묶음 제목을 뺌(277·278·279 세 이야기)')
-    subs = {'## 무상[': '## 277 무상[', '## 고(苦)[': '## 278 고(苦)[', '## 무아 [': '## 279 무아 ['}
-    for j, p in enumerate(ps):
-        if p is None: continue
-        for a, b in subs.items():
-            if p.startswith(a) and pno(pg[0]) == 325: ps[j] = b + p[len(a):]
-    pg[1] = [p for p in ps if p is not None]
+    if pno(pg[0]) != 325: continue
+    for j, p in enumerate(pg[1]):
+        m = re.match(r'## (무상|고\(苦\)|무아) ?(\[\^\d+\])$', p)
+        if m:
+            new = '## ' + REV['head'][SUBT[m.group(1)]]
+            if new != p: pg[1][j] = new; log.append(f'325쪽 소제목 {p[3:]!r} → {new[3:]!r}')
 
 # ---- 2. 이야기 제목 ----
 nh = 0
@@ -42,8 +39,9 @@ for pg in P:
     for j, p in enumerate(pg[1]):
         m = re.match(r'## (\d+)((?:-\d+)?) (.*)$', p, re.S)
         if not m: continue
-        v = m.group(1); new = REV['head'][v]
-        if v == '237': continue
+        v = m.group(1)
+        if v in KEEP: continue
+        new = REV['head'][v]
         if m.group(3) != new: pg[1][j] = f'## {v}{m.group(2)} {new}'; nh += 1
 
 # ---- 3. 게송: 게송 번호별로 (쪽, 문단, 줄) 모으기 ----
@@ -65,7 +63,8 @@ for i, pg in enumerate(P):
 nv = 0; changed = []
 for key, ss in segs.items():
     a, b = (key.split('-') + [key])[:2]
-    rev = [y.strip() for v in range(int(a), int(b) + 1) for x in REV['verse'][str(v)] for y in x.split('\n') if y.strip()]  # 원고 한 칸에 두 줄이 든 곳(310·362·399)은 줄로 나눔
+    rev = [y.strip() for v in range(int(a), int(b) + 1) for x in REV['verse'][str(v)] for y in x.split('\n') if y.strip()]
+    if key == '237': rev = [x.replace('[^305]', '') for x in rev]  # 각주 305 는 인쇄본처럼 237-238 제목에  # 원고 한 칸에 두 줄이 든 곳(310·362·399)은 줄로 나눔
     old = [plain(l) for s in ss for l in s[3]]
     if old == [plain(x) for x in rev] and all(l.startswith('**') and l.endswith('**') for s in ss for l in s[3]) and [l for s in ss for l in s[3]] == ['**' + x + '**' for x in rev]:
         continue
@@ -106,11 +105,7 @@ def fixline(ln):
     m = re.match(r'^(-* ?)(\d+)((?:-\d+)?) (.*?)( \| \d+)?$', ln)
     if not m: return [ln]
     v, rng, tail = m.group(2), m.group(3), m.group(5) or ''
-    if v == '237' and rng == '-238': return []
-    if v not in H: return [ln]
-    if v == '235': rng = '-238'
-    if v == '277' and rng == '-279':
-        return [f'{m.group(1)}{x} {H[x]}{tail}' for x in ('277', '278', '279')]
+    if v not in H or v in KEEP: return [ln]
     return [f'{m.group(1)}{v}{rng} {H[v]}{tail}']
 for pg in P:
     for j, p in enumerate(pg[1]):
@@ -118,6 +113,42 @@ for pg in P:
             out = []
             for ln in p[3:].split('\n'): out += fixline(ln)
             pg[1][j] = '%% ' + '\n'.join(out)
+
+
+# ---- 5-2. 각주: 원고의 글자·띄어쓰기(맞춤법)를 넣되, 문단 나눔은 지금 그대로 (운영자 요청, 2026-11-12) ----
+def keep_breaks(cur, new):
+    cf = cur.replace('\n', ' '); nf = re.sub(r'\s*\n\s*', ' ', new).strip()
+    if '\n' not in cur: return nf
+    sm = difflib.SequenceMatcher(None, cf, nf, autojunk=False); ops = sm.get_opcodes()
+    def mp(x):
+        for tag, a1, a2, b1, b2 in ops:
+            if a1 <= x < a2 or (x == a2 and tag != 'equal'):
+                return b1 + (x - a1 if tag == 'equal' else round((x - a1) * (b2 - b1) / max(1, a2 - a1)))
+        return len(nf)
+    pos = []
+    for i, ch in enumerate(cur):
+        if ch != '\n': continue
+        j = mp(i)
+        k = min(range(max(0, j - 4), min(len(nf), j + 5)), key=lambda q: (nf[q] != ' ', abs(q - j)), default=j)  # 가까운 빈칸 자리
+        pos.append(k if k < len(nf) and nf[k] == ' ' else j)
+    out = list(nf)
+    for k in sorted(set(pos), reverse=True):
+        if k < len(out) and out[k] == ' ': out[k] = '\n'
+        else: out.insert(k, '\n')
+    return '\n'.join(x.strip() for x in ''.join(out).split('\n'))
+nf = 0
+for pg in P:
+    for j, p in enumerate(pg[1]):
+        m = re.match(r'\[\^(\d+)\]: (.*)$', p, re.S)
+        if not m or m.group(1) not in REV['fn']: continue
+        n, cur = m.group(1), m.group(2)
+        sub = ''
+        ms = re.search(r'\n(\d+-1)\) (.*)$', cur, re.S)   # 225-1)·304-1) 은 인쇄본처럼 앞 각주 끝에
+        if ms: sub = ms.group(1); cur = cur[:ms.start()]
+        new = keep_breaks(cur, REV['fn'][n])
+        if sub: new += f'\n{sub}) ' + REV['fn'][sub].strip()
+        if new != m.group(2): pg[1][j] = f'[^{n}]: {new}'; nf += 1
+log.append(f'각주 {nf}개 고침')
 
 body = ''.join(f'{mk}\n' + '\n\n'.join(ps) + '\n\n' for mk, ps in P).rstrip() + '\n'
 
@@ -132,4 +163,17 @@ for i, (mk, ps) in enumerate(P):
 allt = sorted(toc + subs, key=lambda t: (t['page'], t['sub']))
 doc['body'], doc['toc'] = body, allt
 json.dump(doc, open(T, 'w'), ensure_ascii=False, indent=2); open(T, 'a').write('\n')
+# ---- 7. 책 소개 페이지의 목차(content/books/DL-0021.json contents) ----
+B = 'content/books/DL-0021.json'; bk = json.load(open(B)); nc = 0; outl = []
+for ln in bk.get('contents', '').split('\n'):
+    m = re.match(r'^(\d+)((?:-\d+)?) (.*?) (\d{3})$', ln)
+    if m and m.group(1) in H and m.group(1) not in KEEP and m.group(3) != H[m.group(1)]:
+        ln = f'{m.group(1)}{m.group(2)} {H[m.group(1)]} {m.group(4)}'; nc += 1
+    m = re.match(r'^(제(\d+)장 )(.*?)(\(.*\))$', ln)
+    if m and REV['chap'].get(m.group(2)) and re.sub(r'\(.*?\)', '', m.group(3)) != re.sub(r'\(.*?\)', '', REV['chap'][m.group(2)]):
+        ln = m.group(1) + re.sub(r'\(.*?\)', '', REV['chap'][m.group(2)]) + m.group(4); nc += 1
+    outl.append(ln)
+if nc:
+    bk['contents'] = '\n'.join(outl); json.dump(bk, open(B, 'w'), ensure_ascii=False, indent=2); open(B, 'a').write('\n')
+log.append(f'책 소개 목차 {nc}줄 고침')
 print('이야기 제목', nh, '· 게송', nv, changed[:50], '· 읽기 목차 소제목', len(subs)); [print(' -', x) for x in log]
