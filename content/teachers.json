@@ -386,6 +386,19 @@
       "tradition": "scholar",
       "bio": "",
       "photo": ""
+    },
+    {
+      "id": "bodhi",
+      "name": "빅쿠 보디 스님",
+      "roman": "Bhikkhu Bodhi",
+      "aliases": [
+        "빅쿠 보디",
+        "보디 스님",
+        "비구 보디"
+      ],
+      "tradition": "srilanka-etc",
+      "bio": "",
+      "photo": ""
     }
   ]
 }

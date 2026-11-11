@@ -85,6 +85,12 @@
       ]
     },
     {
+      "id": "srilanka-etc",
+      "region": "스리랑카",
+      "name": "교학·기타",
+      "representatives": []
+    },
+    {
       "id": "scholar",
       "region": "기타",
       "name": "전통 무관(교학·학술)",
