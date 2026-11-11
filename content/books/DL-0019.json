@@ -8,7 +8,7 @@
   "teacher": "",
   "provider": "calmvoice",
   "press": false,
-  "provider_chip": true,
+  "provider_chip": false,
   "paper": "",
   "paper_url": "",
   "stores": [
