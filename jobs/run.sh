@@ -1,4 +1,5 @@
 set -e
+# 도구 설치가 실패해도 그림 만들기는 계속한다 (2026-11-11)
 # 한글 그림 만들기 → R2 올리기 (ko/ 에 번역이 있는 이야기 중 jobs/render.txt 에 적은 것)
 rm -rf out
 while read book story; do
