@@ -87,8 +87,8 @@ def is_sub(a):  # 첨부의 '⑴ 바른 견해', '1) 공통 반드시 - 일곱 �
     return f is not None and ('HYgsrB' in f['font'] or 'YDVYGO' in f['font']) and f['size'] >= 11
 
 
-def glyfix(t):  # '찟'·'뿟' 이 PDF 에 글자 정보 없이 도형으로만 그려진 곳 7곳 (목록 6곳 + 63쪽 제목, 인쇄본 그림으로 확인)
-    return re.sub(r'(\d) 틸라 장로', r'\1 뿟틸라 장로', t.replace(' 따 장자', ' 찟따 장자').replace(' 따핫타', ' 찟따핫타'))
+def glyfix(t):  # '찟'·'뽓' 이 PDF 에 글자 정보 없이 도형으로만 그려진 곳 7곳 (목록 6곳 + 63쪽 제목, 인쇄본 그림으로 확인)
+    return re.sub(r'(\d) 틸라 장로', r'\1 뽓틸라 장로', t.replace(' 따 장자', ' 찟따 장자').replace(' 따핫타', ' 찟따핫타'))
 
 
 pages = []   # [n, 본문 문단들, 각주들]
