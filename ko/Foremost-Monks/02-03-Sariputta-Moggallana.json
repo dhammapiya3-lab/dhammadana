@@ -1,0 +1,1014 @@
+[
+ {
+  "img": "images/02-03-Sariputta-Moggallana-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     238,
+     343
+    ],
+    "shape": "box",
+    "en": "Ven. Sariputta and Ven. Mogg allana are the two chief disciples of the Buddha. Their journey began together one immeasurable period and 100,000 aeons ago. This is the story of their past aspirations.",
+    "ko": "사리뿟따 존자와 목갈라나 존자는 부처님의 두 상수제자입니다. 두 사람의 여정은 1아승기 10만 겁 전에 함께 시작되었습니다. 이것은 그들이 지난날 세운 서원의 이야기입니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     222,
+     336
+    ],
+    "shape": "box",
+    "en": "In the distant past, the future Sariputta was Sarada, wealthy Brahmin youth. The future Moggallana was Sirivaddhana, householder. Intimate childhood friends, their paths soon diverged: Sirivaddhana embraced worldly life, while Sarada questioned its ultimate value.",
+    "ko": "먼 옛날, 미래의 사리뿟따는 부유한 바라문 청년 사라다였고, 미래의 목갈라나는 장자 시리왓다나였습니다. 어릴 적부터 가까운 친구였지만 길은 곧 갈라졌습니다. 시리왓다나는 세속의 삶을 택했고, 사라다는 그 삶이 참으로 가치 있는지 물었습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     236,
+     335
+    ],
+    "shape": "box",
+    "en": "Realizing wealth cannot conquer desi, caida sought liberation from samsara. He surrendered his immense fortune to the destitute and retreated to the mountains. There, he became matted-hair ascetic, gathering 74,000 ese and mastering jhana meditation.",
+    "ko": "재물로 죽음을 이길 수 없음을 안 사라다는 윤회(saṃsāra)에서 벗어날 길을 찾았습니다. 큰 재산을 가난한 이들에게 나누어 주고 산으로 들어가 결발 고행자가 되었고, 제자 74,000명을 거느리며 선정(jhāna)을 익혔습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-04-Original.jpg",
+  "boxes": [
+   {
+    "ko": "아노마닷시 부처님께서 연민의 증득(karuṇā-samāpatti)으로 세상을 살피셨습니다. 사라다의 큰 바탕을 보시고, 사자왕처럼 하늘에서 내려와 홀로 산속 암자에 이르러 위대한 법의 인연을 일으키셨습니다.",
+    "seed": [
+     400,
+     434
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     139,
+     357
+    ],
+    "shape": "box",
+    "en": "zing the Buddha's Buddha’s physical splendou Sarada explained his un matched greatness to his pupils: “Do not compare mustard seed with the great Mount Meru.” Realizing his supreme nature, the 74,000 pupils immediately prostrated before the Buddha.",
+    "ko": "부처님의 거룩한 모습을 알아본 사라다가 제자들에게 그분의 위대함을 일러 주었습니다: “겨자씨를 수미산에 견주지 마라.” 그분의 높으심을 깨달은 74,000 제자는 곧바로 부처님께 엎드렸습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-06-Original.jpg",
+  "boxes": [
+   {
+    "ko": "사라다와 제자들은 숲의 과일과 거른 물을 올렸습니다. 부처님께서 소박한 공양을 받으시자 천신들이 발우를 하늘 음식으로 가득 채웠습니다. 곧 아라한 10만 명이 와서 함께했습니다.",
+    "seed": [
+     401,
+     366
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-07-Original.jpg",
+  "boxes": [
+   {
+    "ko": "제자들은 신통으로 승가를 위해 큰 꽃자리를 만들었습니다. 부처님의 연꽃 자리는 1요자나, 상수제자들의 자리는 3가부따, 가장 어린 비구도 반 요자나 높이의 꽃자리를 받았습니다.",
+    "seed": [
+     49,
+     357
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-08-Original.jpg",
+  "boxes": [
+   {
+    "ko": "아노마닷시 부처님\n이레 동안 부처님께서 멸진정(nirodha-samāpatti)에 드셨습니다. 사라다는 꼼짝 않고 서서 부처님 위로 큰 꽃 일산을 받쳐 들었습니다. 아무것도 먹지 않고 오직 희열(pīti)의 음식으로 지냈습니다.",
+    "rect": [
+     46,
+     350,
+     756,
+     442
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     182,
+     348
+    ],
+    "shape": "box",
+    "en": "Emerging fr om ce the Buddha taught the Dhamm Instantly, all 74,000 pupils attained Arahat fruition. The Buddha pronounced, “Come, monks,” and they mira received prange robes ung shaved heads,",
+    "ko": "멸진정에서 나오신 부처님께서 법을 설하시자, 제자 74,000명이 모두 곧바로 아라한과를 얻었습니다. 부처님께서 “오라, 비구들이여” 하시자 그들에게 신통으로 가사가 입혀지고 머리가 깎였습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-10-Original.jpg",
+  "boxes": [
+   {
+    "ko": "사라다는 왜 깨닫지 못했을까요? 마음이 온통 다른 데 가 있었기 때문입니다. 오른쪽 상수제자 니사바 존자를 보며 강한 서원이 일어났습니다: “나도 미래 부처님의 가르침에서 꼭 저 자리를 얻으리라.”",
+    "rect": [
+     46,
+     342,
+     756,
+     434
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-11-Original.jpg",
+  "boxes": [
+   {
+    "ko": "사라다가 간절한 바람을 아뢰자, 아노마닷시 부처님께서 미래를 내다보고 예언하셨습니다: “1아승기 10만 겁 뒤에 그대는 고따마 부처님의 오른쪽 상수제자가 되리라.”",
+    "rect": [
+     46,
+     332,
+     756,
+     424
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     250,
+     360
+    ],
+    "shape": "box",
+    "en": "Overjoyed, Sarada arada sent bis his is newly ewl yor ordained dai ined pupils to his old friend, Sirivaddhana, with vital message: have aspired for the right-hand. discipleship. You must now aspire for the left.”",
+    "ko": "기쁨에 찬 사라다는 갓 출가한 제자들을 옛 친구 시리왓다나에게 보내 중요한 말을 전했습니다: “나는 오른쪽 상수제자가 되기를 서원했네. 자네는 왼쪽을 서원하게.”",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     182,
+     373
+    ],
+    "shape": "box",
+    "en": "Sirivaddhana immediately leveled 14 acres of land, spread white sand, and built magnificent shed roofed with blue lotuses. For seven days, he offered immense alms to Buddha Anomadassi and his entire Sangha",
+    "ko": "시리왓다나는 곧바로 땅 14에이커를 고르고 흰 모래를 깔아, 푸른 연꽃으로 지붕을 덮은 훌륭한 집을 지었습니다. 이레 동안 아노마닷시 부처님과 온 승가에 큰 공양을 올렸습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-14-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     187,
+     373
+    ],
+    "shape": "box",
+    "en": "On the final day, Sirivaddhana declared clared his aspiration. Buddha Anomadassi prophesied his success: “You will become Buddha Gotama’s second chief disciple on the left hand side, Moggallana",
+    "ko": "마지막 날 시리왓다나는 서원을 아뢰었습니다. 아노마닷시 부처님께서 그 성취를 예언하셨습니다: “그대는 고따마 부처님의 왼쪽 상수제자 목갈라나가 되리라.”",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-15-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     183,
+     373
+    ],
+    "shape": "box",
+    "en": "Their destinies sealed, both friends daniel Hak remaining years to meritorious deeds. Sarada developed the sublime practices and was reborn in the Brahma realm, while Sirivaddhana ascended to the Heavenly Sense Realms.",
+    "ko": "운명이 정해진 두 친구는 남은 생을 공덕 짓는 데 바쳤습니다. 사라다는 거룩한 마음가짐(brahmavihāra)을 닦아 범천의 세계에 태어났고, 시리왓다나는 욕계 천상에 태어났습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-16-Original.jpg",
+  "boxes": [
+   {
+    "ko": "사리뿟따와 목갈라나의 구도 여정\n제2부: 마지막 생",
+    "em": 22,
+    "seed": [
+     401,
+     426
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     356,
+     562,
+     432
+    ],
+    "align": "center",
+    "ko": "일곱 대에 걸친 친구인 두 큰 집안에서, 고따마 부처님이 나시기 조금 전 아들이 태어났습니다: 우빠띳사와 꼴리따.",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     110,
+     48,
+     300,
+     80
+    ],
+    "ko": "우빠띳사 마을",
+    "fill": true,
+    "em": 24,
+    "shape": "box",
+    "align": "center",
+    "manual": true
+   },
+   {
+    "rect": [
+     515,
+     48,
+     675,
+     80
+    ],
+    "ko": "꼴리따 마을",
+    "fill": true,
+    "em": 24,
+    "shape": "box",
+    "align": "center",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     362,
+     562,
+     438
+    ],
+    "ko": "두 젊은이는 모든 기예에 통달하고 호화롭게 살았습니다. 우빠띳사는 황금 가마 500대와 함께 다녔고, 꼴리따는 말이 끄는 수레 500대의 호위를 받았습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-19-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     244,
+     55
+    ],
+    "shape": "box",
+    "en": "At an annual Rajagaha festival, era their amusement faded Realizing all present would vanish within century, ihey recognized the emptiness of worldly pleasure.",
+    "ko": "해마다 열리는 라자가하 축제에서 두 사람의 즐거움이 사그라졌습니다. 여기 모인 모든 이가 백 년 안에 사라질 것을 알고 세속 즐거움이 덧없음을 깨달았습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-20-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     326,
+     365
+    ],
+    "shape": "box",
+    "en": "\"Enjoyment is empty. Seeking liberation from Samsara, the friends agreed to abandon their wealth vealth and adopt the ascetic life together.",
+    "ko": "“즐거움은 헛되다.” 윤회(saṃsāra)에서 벗어나기를 바란 두 친구는 재산을 버리고 함께 출가 수행자가 되기로 했습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-21-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     278,
+     55
+    ],
+    "shape": "box",
+    "en": "Joining the ascetic Saiijaya with 500 attendants, they mastered his doctrines in days—only to realize his brahma eae never lead to true liberation.",
+    "ko": "따르는 이 500명과 함께 유행자 산자야의 제자가 된 두 사람은 며칠 만에 그 가르침을 다 익혔지만, 그의 범행(brahmacariya)으로는 참된 해탈에 이를 수 없음을 알았습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-22-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     314,
+     364
+    ],
+    "shape": "box",
+    "en": "ae across Jambudipa, they found no sage who understood the deathless. They made pact: whoever discovers the truth first must tell the other.",
+    "ko": "잠부디빠를 두루 다녔지만 죽음 없는 경지를 아는 스승은 없었습니다. 두 사람은 약속했습니다: 누구든 먼저 진리를 찾으면 반드시 다른 이에게 알려 주자.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     356,
+     564,
+     438
+    ],
+    "ko": "라자가하에서 우빠띳사는 아라한 앗사지 존자를 만났습니다. 모든 법의 원인에 관한 게송을 듣자마자 우빠띳사는 수다원(sotāpanna)이 되었습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     234,
+     52,
+     568,
+     128
+    ],
+    "ko": "약속을 지켜 우빠띳사는 꼴리따에게 그 게송을 들려주었고, 꼴리따도 수다원이 되었습니다. 두 사람은 따르는 이들을 이끌고 부처님께 갔습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     584,
+     112,
+     652,
+     166
+    ],
+    "ko": "15일째\n(마가 보름)",
+    "ellipse": true,
+    "fill": true,
+    "em": 15,
+    "shape": "box",
+    "align": "center",
+    "manual": true
+   },
+   {
+    "ko": "부처님께 출가한 마하목갈라나는 7일째에 아라한이 되었고, 사리뿟따는 15일째, 마가 달 보름에 아라한이 되었습니다.",
+    "rect": [
+     236,
+     358,
+     564,
+     430
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     166,
+     124,
+     224,
+     158
+    ],
+    "ko": "7일째",
+    "ellipse": true,
+    "fill": true,
+    "em": 20,
+    "shape": "box",
+    "align": "center",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     282,
+     210,
+     518,
+     292
+    ],
+    "ko": "제따와나에서 부처님께서는 두 사람을 상수제자로 선언하셨습니다: 큰 지혜에서 으뜸인 사리뿟따, 신통에서 으뜸인 마하목갈라나.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-27-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     282,
+     76,
+     518,
+     166
+    ],
+    "ko": "바라밀의 정점에 이른 두 존자는 44년 동안 수행하며 모든 중생의 이익을 위해 많은 가르침을 남겼습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-28-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     158,
+     323
+    ],
+    "shape": "box",
+    "en": "The Last Days and Parinibbana of Ven. Sariputta Tale of Gratitude, Wisdom, and Impermanence (Part 3/4 of Sariputta’s and Moggallana’s stories)",
+    "ko": "사리뿟따 존자의 마지막 날들과 반열반\n은혜와 지혜와 무상의 이야기\n(사리뿟따·목갈라나 이야기 제3부)",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-29-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     496,
+     302
+    ],
+    "shape": "box",
+    "en": "The Final Resolution: Realizing only seven days of life remained, Ven Sariputta made crucial decision. To repay his mother Ripasart’s debt and dissolve her false views, he would attain Parinibbana in his birth chamber.",
+    "ko": "마지막 결심:\n수명이 이레밖에 남지 않았음을 안 사리뿟따 존자는 중요한 결심을 했습니다. 어머니 루빠사리의 은혜를 갚고 그릇된 견해를 풀어 드리려고, 자신이 태어난 방에서 반열반에 들기로 했습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-30-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     644,
+     60
+    ],
+    "shape": "box",
+    "en": "Seeking Permission: Accompanied by 500 monks, Ven Sariputta approached the exalted Buddha 'The time has come for me to attain Parinibbana,\" he supplicated, asking permission to return to Nalaka village for his final days",
+    "ko": "허락을 구함:\n비구 500명과 함께 사리뿟따 존자가 세존께 나아가 아뢰었습니다. “반열반에 들 때가 되었습니다.” 그리고 마지막 날들을 보내러 날라까 마을로 돌아가도록 허락을 청했습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-31-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     80,
+     89
+    ],
+    "shape": "box",
+    "en": "The Lion’s Sport Granted permission, Ven Sariputta displayed unmatched mastery Floating in the sky, he created visions of suns moons, and mountains—performing magnificent miracles while delivering final profound discourse to the people of Savatthi",
+    "ko": "사자의 유희:\n허락을 받은 사리뿟따 존자는 견줄 데 없는 힘을 보였습니다. 허공에 떠서 해와 달과 산의 모습을 나투는 큰 신통을 보이며, 사왓티 사람들에게 마지막 깊은 법문을 설했습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-32-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     331,
+     271
+    ],
+    "shape": "box",
+    "en": "The Final Homage Ven. Sariputta walked backward until the Buddha vanished from sight lotus rain fell; the earth quaked Leading his followers away, he taught the weeping crowds core truth \"Conditioned things end by passing away.",
+    "ko": "마지막 예배:\n사리뿟따 존자는 부처님이 보이지 않을 때까지 뒷걸음으로 물러났습니다. 연꽃 비가 내리고 땅이 흔들렸습니다. 제자들을 이끌고 떠나며 우는 이들에게 일렀습니다: “형성된 것은 사라짐으로 끝납니다.”",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-33-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     59,
+     90
+    ],
+    "shape": "box",
+    "en": "The Return to Nalaka: Ven. Sariputta sent his nephew to inform Rupasari. Believing her aging son finally wished to return to lay life, she joyfully cleaned his birth chamber and prepared lodgings for the 500 monks",
+    "ko": "날라까로 돌아감:\n사리뿟따 존자는 조카를 보내 루빠사리에게 알렸습니다. 늙은 아들이 마침내 환속하려는 줄 안 어머니는 기뻐하며 그가 태어난 방을 치우고 비구 500명이 묵을 곳을 마련했습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-34-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     330,
+     331
+    ],
+    "shape": "box",
+    "en": "Celestial Visitors: Struck by severe illness, Ven. Sariputta lay in his chamber. In radiant light, celestial beings descended to pay final respects: The Four Great Kings, then Sakka, and finally Maha Brahma.",
+    "ko": "하늘의 손님들:\n심한 병이 든 사리뿟따 존자가 방에 누워 있었습니다. 밝은 빛 속에 천신들이 마지막 예를 올리러 내려왔습니다: 사대천왕, 이어 삭까, 마지막으로 마하브라흐마.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-35-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     470,
+     112
+    ],
+    "shape": "box",
+    "en": "Rupasari's Wonder Awestruck by the celestial light Rupasari questioned Ven. Cunda Learning that even her supreme god, Maha Brahma, revered her son, on, her worldview shifted Tf my son’s magnificence is such how great is his Master?”",
+    "ko": "루빠사리의 놀라움:\n하늘빛에 놀란 루빠사리가 쭌다 존자에게 물었습니다. 자기가 가장 높이 받드는 신 마하브라흐마조차 아들을 공경한다는 것을 알고 생각이 바뀌었습니다.\n“내 아들이 이렇게 거룩하다면 그 스승은 얼마나 거룩하실까?”",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-36-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     569,
+     70
+    ],
+    "shape": "box",
+    "en": "The Supreme Gift: Perceiving ber joyful mind, Ven. Sariputta expounded the Buddha's virtues. Ripasari attained Stream-entry (Sotapatti-phala). Nis ultimate filial duty complete, he asked the monastic assembly for their final forgiveness.",
+    "ko": "가장 큰 선물:\n어머니의 기쁜 마음을 본 사리뿟따 존자는 부처님의 덕을 설했습니다. 루빠사리는 수다원과(sotāpatti-phala)를 얻었습니다. 어머니에 대한 마지막 도리를 다한 그는 비구 대중에게 마지막 용서를 구했습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-37-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     127,
+     355
+    ],
+    "shape": "box",
+    "en": "Parinibbana: Entering the nine absorptions progressively and regressively, Ven. Sariputta attained Parinibbana. The great earth roared. His mother wept bitterly at his feet, regretting she had not fully known his virtues while he lived",
+    "ko": "반열반:\n아홉 단계의 선정에 차례로, 또 거꾸로 들고 나기를 거듭한 뒤 사리뿟따 존자는 반열반에 들었습니다. 대지가 울렸습니다. 어머니는 발치에서 슬피 울며, 살아 계실 때 그 덕을 다 알지 못한 것을 뉘우쳤습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-38-Original.jpg",
+  "boxes": [
+   {
+    "ko": "황금 누각:\n99완척 높이의 향나무 장작더미를 쌓았습니다. 루빠사리는 존자를 기려 황금 누각 500채를 세웠고, 삭까는 윗사깜마에게 500채를 더 짓게 했습니다. 천신과 사람이 함께 다비를 공경했습니다.",
+    "seed": [
+     35,
+     65
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-39-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     303,
+     57
+    ],
+    "shape": "box",
+    "en": "Conveying the Relics: Ven. Cunda carefully collected his brother’s pure white relics, alms bowl and robes. Traveling to Savatthi, he entrusted them to Ven. Ananda, who carried the sorrowful news to the exalted Buddha",
+    "ko": "사리를 모셔 감:\n쭌다 존자는 형님의 깨끗한 흰 사리와 발우와 가사를 정성껏 거두어 사왓티로 가서 아난다 존자에게 맡겼고, 아난다 존자가 슬픈 소식을 세존께 전했습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-40-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     310,
+     346
+    ],
+    "shape": "box",
+    "en": "The Buddha’s Tribute: Holding the pure relics, the Buddha praised his Chief Disciple “Behold the relics of Sariputta! He possessed vast, penetrative wisdom He held forbearance mighty as the great earth, humble as beggar’s son",
+    "ko": "부처님의 찬탄:\n깨끗한 사리를 손에 드시고 부처님께서 상수제자를 찬탄하셨습니다: “사리뿟따의 사리를 보라! 그는 넓고 꿰뚫는 지혜를 지녔고, 대지처럼 큰 인내를 지녔으며, 천민의 아들처럼 겸손했다.”",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-41-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     485,
+     67
+    ],
+    "shape": "box",
+    "en": "The Nature of Impermanence: Seeing Ven. Ananda weeping, the Buddha asked “Did Sariputta take your wisdom with him? How can conditioned things not pass away? It is as if great tree’s largest branch has fallen",
+    "ko": "무상의 이치:\n울고 있는 아난다 존자를 보시고 부처님께서 물으셨습니다: “사리뿟따가 너의 지혜를 가져갔느냐? 형성된 것이 어찌 사라지지 않겠느냐? 큰 나무의 가장 큰 가지가 떨어진 것과 같다.”",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-42-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     535,
+     67
+    ],
+    "shape": "box",
+    "en": "The Island of Self: “Live depending on yourself, not on others. Rely on the Dhamma as your island.” With this final instruction, the Buddha had Ven. Sariputta’s relics enshrined in golden cetiya.",
+    "ko": "자신을 섬으로:\n“남이 아니라 자신을 의지하여 살라. 법을 섬으로 삼아 의지하라.” 이 마지막 가르침과 함께 부처님께서는 사리뿟따 존자의 사리를 황금 탑에 모시게 하셨습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-43-Original.jpg",
+  "boxes": [
+   {
+    "ko": "마하목갈라나 존자의 업의 순환",
+    "em": 22,
+    "seed": [
+     209,
+     399
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-44-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     253,
+     345
+    ],
+    "shape": "box",
+    "en": "The Buddha resided at Veluvana in Rajagaha. Venerable Maha Moggallana sought the quiet stone slab of Kalasila on Mount Isigili.",
+    "ko": "부처님께서는 라자가하의 웰루와나에 머무셨습니다. 마하목갈라나 존자는 이시길리 산의 고요한 깔라실라 바위를 찾았습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-45-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     64,
+     360,
+     118
+    ],
+    "ko": "마하목갈라나\n존자",
+    "fill": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     444,
+     66,
+     550,
+     140
+    ],
+    "ko": "웃사다 지옥과\n천상 세계를\n보여 줌",
+    "fill": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     540,
+     200,
+     676,
+     266
+    ],
+    "ko": "법에 대한\n사람들의 믿음이\n커짐",
+    "fill": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     510,
+     340,
+     680,
+     408
+    ],
+    "ko": "외도들은 재물과\n지지를 잃음",
+    "fill": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-46-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     183,
+     337
+    ],
+    "shape": "box",
+    "en": "Jealous heretics conspired. They paid 1,000 coins to the chief own robber, Samanaguttaka, fc to assassinate We) the noble elder.",
+    "ko": "시기한 외도들이 음모를 꾸몄습니다. 그들은 도적 두목 사마나굿따까에게 천 냥을 주고 장로를 죽이게 했습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-47-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     306,
+     300
+    ],
+    "shape": "bubble",
+    "en": "For six days, the robbers surrounded Kalasila. Each time, Maha Moggallana simply vanished into the air, evading capture through supernormal powers.",
+    "ko": "엿새 동안 도적들이 깔라실라를 에워쌌습니다. 그때마다 마하목갈라나 존자는 신통으로 허공으로 사라져 붙잡히지 않았습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-48-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     272,
+     61
+    ],
+    "shape": "bubble",
+    "en": "Aparapariya-akusala-kamma: Past karma catching up.",
+    "ko": "뒤따르는 생에 익는 악업\n(aparāpariya-akusala-kamma):\n지난 업이 따라잡음.",
+    "align": "center"
+   },
+   {
+    "rect": [
+     40,
+     392,
+     412,
+     430
+    ],
+    "ko": "재 속에 숨은 숯불처럼.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     424,
+     394,
+     770,
+     428
+    ],
+    "ko": "마침내 짐승을 무는 사냥개처럼.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-49-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     131,
+     378
+    ],
+    "shape": "box",
+    "en": "Lifetimes ago, blinded by slander, he abandoned his blind parents to robbers. Though he felt remorse and saved them, the karmic seed was sown.",
+    "ko": "여러 생 전, 헐뜯는 말에 눈이 먼 그는 눈먼 부모를 도적에게 버렸습니다. 뉘우치고 부모를 구했지만, 업의 씨앗은 이미 뿌려졌습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-50-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     212,
+     67
+    ],
+    "shape": "box",
+    "en": "the seventh day, karmic weight grounded him. The robbers pounded his bones to dust—palalapithika—and threw him into bush.",
+    "ko": "이레째 되는 날 업의 무게가 그를 붙잡았습니다. 도적들은 뼈를 겨처럼 부수고(palālapiṭṭhika) 덤불 속에 던졌습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-51-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     278,
+     359
+    ],
+    "shape": "box",
+    "en": "Through sheer willpower, he fastened his shattered body with psychic bandage. He flew one last time to pay homage to the Exalted Buddha",
+    "ko": "그는 굳센 의지로 부서진 몸을 신통의 끈으로 묶고, 마지막으로 세존께 예배하러 날아갔습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-52-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     324,
+     90
+    ],
+    "shape": "bubble",
+    "en": "‘Thave have given up the control of my life process, dyu-sankhara’ The Buddha asked for final Dhamma talk from his beloved disciple",
+    "ko": "“저는 목숨을 이어 가는 힘(아유상카라)을 내려놓았습니다.” 부처님께서는 사랑하는 제자에게 마지막 법문을 청하셨습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-53-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     630,
+     114
+    ],
+    "shape": "bubble",
+    "en": "Rising to the height of seven palm trees, he displayed magnificent miracles, taught the Dhamma, returned to Kalasila, and attained Parinibbana.",
+    "ko": "야자나무 일곱 그루 높이로 올라 큰 신통을 보이고 법을 설한 뒤, 깔라실라로 돌아가 반열반에 들었습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-54-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     364,
+     600,
+     436
+    ],
+    "em": 15,
+    "align": "center",
+    "ko": "전단향 장작더미에 하늘 꽃비가 내리고\n온 세계가 이레 동안 함께 슬퍼했습니다.",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-55-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     213,
+     61
+    ],
+    "shape": "box",
+    "en": "King Ajatasattu’s detectives heard the robbers fighting in liquor shop. They confessed, exposing the naked heretics who funded the murder",
+    "ko": "아자따삿뚜 왕의 밀정들이 술집에서 도적들이 다투는 소리를 들었습니다. 도적들은 자백했고, 살인에 돈을 댄 나체 외도들이 드러났습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-56-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     157,
+     392
+    ],
+    "shape": "box",
+    "en": "The king buried the 500 heretics and murderers navel-deep. They were burned in straw, and the ashes ploughed into the earth with iron.",
+    "ko": "왕은 외도와 살인자 500명을 배꼽까지 땅에 묻고 짚불로 태운 뒤, 쇠 쟁기로 땅을 갈아엎었습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/02-03-Sariputta-Moggallana-57-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     415,
+     72
+    ],
+    "shape": "box",
+    "en": "Maha Moggallana’s relics ics were enshrined at Veluvana in Rajagaha.",
+    "ko": "마하목갈라나 존자의 사리는 라자가하의 웰루와나에 모셔졌습니다.",
+    "align": "center"
+   }
+  ]
+ }
+]
