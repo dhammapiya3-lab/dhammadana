@@ -11,17 +11,38 @@
 <script>
 // 관리자 기기는 사이트 통계에서 빼기 (처음 한 번만 — /admin/stats/ 에서 바꿀 수 있음)
 try { if (!localStorage.getItem('dd-notrack')) localStorage.setItem('dd-notrack', 'true'); } catch (e) {}
-// 다른 관리 화면으로 가는 작은 단추
+// 다른 관리 화면으로 가는 단추
+// 컴퓨터: 오른쪽 아래(통계·종이책 신청·파일 올리기), 왼쪽 아래(학습 자료실·아카이빙 자료실)
+// 휴대폰(너비 700px 이하): 단추가 겹치지 않게 왼쪽 아래 '☰ 관리 메뉴' 하나로 모으고, 누르면 목록이 위로 펼쳐짐 (운영자 요청, 2026-11-12)
 document.addEventListener('DOMContentLoaded', () => {
-  const n = document.createElement('div');
-  n.style.cssText = 'position:fixed;right:12px;bottom:12px;z-index:9999;display:flex;gap:6px;font:13px sans-serif';
-  n.innerHTML = [['/admin/stats/', '📊 통계'], ['/admin/paper/', '📦 종이책 신청'], ['/admin/upload/', '⬆ 파일 올리기']].map(([h, t]) => `<a href="${h}" style="background:#fff;border:1px solid #ccc;border-radius:999px;padding:5px 10px;color:#5b3a1e;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,.15)">${t}</a>`).join('');
-  document.body.appendChild(n);
-  // 왼쪽 아래: 학습 자료실 · 아카이빙 자료실 (운영자 요청, 2026-11-10)
-  const l = document.createElement('div');
-  l.style.cssText = 'position:fixed;left:12px;bottom:12px;z-index:9999;display:flex;gap:6px;font:13px sans-serif';
-  l.innerHTML = [['/study/', '📚 학습 자료실'], ['/archive/', '🗄 아카이빙 자료실']].map(([h, t]) => `<a href="${h}" style="background:#fff;border:1px solid #ccc;border-radius:999px;padding:5px 10px;color:#5b3a1e;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,.15)">${t}</a>`).join('');
-  document.body.appendChild(l);
+  const R = [['/admin/stats/', '📊 통계'], ['/admin/paper/', '📦 종이책 신청'], ['/admin/upload/', '⬆ 파일 올리기']];
+  const L = [['/study/', '📚 학습 자료실'], ['/archive/', '🗄 아카이빙 자료실']];
+  const st = document.createElement('style');
+  st.textContent = `
+.dd-nav{position:fixed;bottom:12px;z-index:9999;display:flex;gap:6px;font:13px sans-serif}
+.dd-nav a{background:#fff;border:1px solid #ccc;border-radius:999px;padding:5px 10px;color:#5b3a1e;text-decoration:none;box-shadow:0 1px 4px rgba(0,0,0,.15);white-space:nowrap}
+.dd-r{right:12px}.dd-l{left:12px}
+.dd-m{display:none}
+@media (max-width:700px){
+ .dd-r,.dd-l{display:none}
+ .dd-m{display:block;position:fixed;left:12px;bottom:calc(14px + env(safe-area-inset-bottom));z-index:9999;font:15px sans-serif}
+ .dd-m>button{border:1px solid #c9b8a6;background:#fff;color:#5b3a1e;border-radius:999px;padding:9px 16px;font:inherit;font-weight:700;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+ .dd-m>div{display:none;position:absolute;left:0;bottom:calc(100% + 8px);background:#fff;border:1px solid #ddd;border-radius:14px;box-shadow:0 4px 16px rgba(0,0,0,.2);padding:6px;min-width:210px}
+ .dd-m.open>div{display:block}
+ .dd-m a{display:block;padding:12px 14px;color:#5b3a1e;text-decoration:none;border-radius:10px}
+ .dd-m a+a{border-top:1px solid #f0ebe4}
+ .dd-m a:active{background:#f6efe6}
+}`;
+  document.head.appendChild(st);
+  const pill = a => a.map(([h, t]) => `<a href="${h}">${t}</a>`).join('');
+  const r = document.createElement('div'); r.className = 'dd-nav dd-r'; r.innerHTML = pill(R);
+  const l = document.createElement('div'); l.className = 'dd-nav dd-l'; l.innerHTML = pill(L);
+  const m = document.createElement('div'); m.className = 'dd-m';
+  m.innerHTML = `<div>${pill([...L, ...R])}</div><button type="button" aria-expanded="false">☰ 관리 메뉴</button>`;
+  const b = m.querySelector('button');
+  b.addEventListener('click', e => { e.stopPropagation(); const o = m.classList.toggle('open'); b.setAttribute('aria-expanded', o); });
+  document.addEventListener('click', e => { if (!m.contains(e.target)) { m.classList.remove('open'); b.setAttribute('aria-expanded', false); } });
+  document.body.append(r, l, m);
 });
 </script>
 <script src="https://unpkg.com/@sveltia/cms@0.259.0/dist/sveltia-cms.js"></script>
