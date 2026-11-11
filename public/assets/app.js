@@ -782,6 +782,7 @@ window.addEventListener('resize', () => placePanels());
 function renderReader() {
   let el = $('#reader');
   if (!el) { el = document.createElement('div'); el.id = 'reader'; el.className = 'reader'; el.setAttribute('role', 'dialog'); el.setAttribute('aria-label', '읽기 화면'); document.body.appendChild(el); document.body.style.overflow = 'hidden'; el.classList.add('chrome-off'); }
+  el.dataset.book = R.id || '';  // 책마다 다른 모양(site.css #reader[data-book=…])
   const p = R.pages[R.i], n = p.n, N = R.pages.length, marked = bms().some(m => m.id === R.id && m.p === n);
   const hasText = R.pages.some(x => x.text), hasImg = R.pages.some(x => x.img);
   const ch = tocFor(n);

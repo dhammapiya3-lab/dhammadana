@@ -1035,3 +1035,6 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .pub-logo{flex:none;width:220px;padding:22px 20px;border:1px solid var(--line);border-radius:14px;background:#fff;display:grid;place-items:center}
 .pub-logo img{display:block;width:100%;height:auto}
 @media (max-width:700px){.pub-logo{width:180px;padding:16px}}
+
+/* 『법구경 : 하루를 살더라도』: 배경 이야기가 각주라 각주 글자를 크게 (운영자 요청, 2026-11-12) */
+#reader[data-book="DL-0021"] .reflow p.fn{font-size:.95em;line-height:1.75}

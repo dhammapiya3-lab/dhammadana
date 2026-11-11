@@ -96,11 +96,7 @@ images = []
 
 
 def crop(n, bbox, name):
-    pix = src[n - 1].get_pixmap(dpi=200, clip=fitz.Rect(*bbox))
-    path = f'public/uploads/{bk}-{name}.jpg'
-    pix.save(path, jpg_quality=85)
-    images.append('/uploads/' + path.split('/uploads/')[1])
-    return '/uploads/' + path.split('/uploads/')[1]
+    return None  # 사진·로고는 넣지 않음 (운영자 요청, 2026-11-12)
 
 
 def join(prev, t):
@@ -292,6 +288,7 @@ P[487][1] = [P[487][1][0], T487]
 
 # ---- 하나로 ----
 def clean(x):
+    if x.startswith('!['): return ''  # 사진·로고 줄은 뺌
     x = x.replace('****', '')
     return x.strip()
 
