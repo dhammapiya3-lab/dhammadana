@@ -1432,7 +1432,12 @@ function chDups(c) {
     for (; k < ps.length; k++) {
       const s = ps[k]; if (FIG_RE.test(s)) continue;
       const dk = dupKey(s); if (!dk || isFootnote(s) || s.length > 160 || !want.startsWith(acc + dk)) break;
-      acc += dk; out.push(k); if (acc === want) { out.forEach(x => found.add(n + ':' + x)); break; }
+      acc += dk; out.push(k); if (acc === want) {
+        // 장 표지의 '(Yamakavagga)'·'(千)'처럼 제목에 들어 있는 괄호 글만 있는 줄도 같은 제목으로 (DL-0021)
+        const tt = c.title.replace(/\s/g, '');
+        for (let j = k + 1; j < ps.length; j++) { const m = ps[j].replace(/^(::|\^\^)\s*/, '').trim().match(/^\(([^)]*)\)$/); if (!m || !tt.includes(m[1].replace(/\s/g, ''))) break; out.push(j); }
+        out.forEach(x => found.add(n + ':' + x)); break;
+      }
     }
     if (ps.some((s, i) => !found.has(n + ':' + i) && !FIG_RE.test(s) && s.trim())) break;  // 첫 쪽에 다른 글이 있으면 다음 쪽은 보지 않음
   }
