@@ -21,7 +21,11 @@ jobs:
           restore-keys: storybooks-orig-
       - name: 도구 설치
         run: |
-          sudo apt-get update -q && sudo apt-get install -y -q tesseract-ocr fonts-noto-cjk > /dev/null
+          for i in 1 2 3 4 5; do
+            sudo apt-get update -q -o Acquire::Retries=3 && sudo apt-get install -y -q -o Acquire::Retries=3 --fix-missing tesseract-ocr fonts-noto-cjk > /dev/null && break
+            echo "도구 받기 실패 ($i번째) — 1분 뒤 다시"; sleep 60
+          done
+          which tesseract
           pip install -q opencv-python-headless pillow numpy fonttools boto3
       - name: 작업 실행
         env:
