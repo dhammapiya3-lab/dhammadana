@@ -553,7 +553,9 @@ for (const b of BOOKS) {
   const statusCell = x => x.current ? '<span class="pill">최신판</span>' : !edHasFile(x) ? '—' : x.public ? '이전 판 공개' : '보관';
   const edTable = (title, rows, cols) => { const use = cols.filter(c => c.always || rows.some(c.get)); return `<h4 class="ed-h">${title}</h4><div class="tbl-wrap"><table class="tbl"><thead><tr>${use.map(c => `<th>${c.h}</th>`).join('')}</tr></thead><tbody>${rows.map(x => `<tr>${use.map(c => `<td>${c.html ? c.get(x) || '—' : esc(c.get(x) || '—')}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`; };
   const ebookEds = pubEds.filter(x => x.isbn_ebook || x.publisher_ebook || x.published_ebook);
-  const edTables = (hasEbook ? edTable('종이책', pubEds, [
+  // 종이책 표: 전자책만 낸 판(종이책 발행일·쪽수·ISBN 없이 출판사 줄용 종이책 출판사만 있는 판)은 빼기 (운영자 요청, 2026-11-12)
+  const printEds = pubEds.filter(x => x.isbn || x.page_count || pubDate(x) || !(x.isbn_ebook || x.publisher_ebook || x.published_ebook));
+  const edTables = (hasEbook ? edTable('종이책', printEds, [
       { h: '판', get: x => x.label, always: 1 }, { h: '발행일', get: x => pubDate(x), always: 1 }, { h: '쪽수', get: x => x.page_count ? x.page_count + '쪽' : '' , always: 1 },
       { h: '출판사', get: x => x.publisher_print }, { h: 'ISBN', get: x => x.isbn }])
     + edTable('전자책', ebookEds, [
