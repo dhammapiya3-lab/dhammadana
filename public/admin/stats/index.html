@@ -114,15 +114,19 @@ async function load(){
   }
   if(j.error){ $('#out').innerHTML=`<div class="msg err">${esc(j.error)}</div>`; return; }
   if(!j.ready){ $('#out').innerHTML='<div class="msg err">통계를 보관할 창고(PAPER)가 연결되지 않았습니다.</div>'; return; }
-  const mx=Math.max(1,...j.days.map(d=>d.views)), md=s=>s.slice(5).replace('-','/');
+  const R=d=>d.read||0, mx=Math.max(1,...j.days.map(d=>Math.max(R(d),d.visitors))), md=s=>s.slice(5).replace('-','/');
+  const bks=(j.books||[]);
   const devT=Object.values(j.dev).reduce((a,b)=>a+b,0)||1;
   $('#out').innerHTML=`
-  <div class="kpi"><div><b>${num(j.visitors)}</b><span>방문자 (기기 수)</span></div><div><b>${num(j.views)}</b><span>본 쪽 수</span></div>
-    <div><b>${num(j.days[j.days.length-1].visitors)}</b><span>오늘 방문자</span></div><div><b>${num(j.days[j.days.length-1].views)}</b><span>오늘 본 쪽 수</span></div></div>
-  ${j.days.length>1?`<div class="card"><h2>날짜별</h2><div class="lg"><span><i style="background:var(--robe)"></i>방문자</span><span><i style="background:var(--robe-soft)"></i>본 쪽 수</span></div>
-    <div class="chart">${j.days.map(d=>`<div class="c" title="${d.date} · 방문자 ${d.visitors} · 본 쪽 ${d.views}"><div class="v" style="height:${d.views/mx*100}%"></div><div class="u" style="height:${d.visitors/mx*100}%"></div></div>`).join('')}</div>
+  <div class="kpi"><div><b>${num(j.visitors)}</b><span>방문자 (기기 수)</span></div><div><b>${num(j.read||0)}</b><span>읽은 쪽 수 (책)</span></div>
+    <div><b>${num(j.days[j.days.length-1].visitors)}</b><span>오늘 방문자</span></div><div><b>${num(R(j.days[j.days.length-1]))}</b><span>오늘 읽은 쪽 수</span></div></div>
+  ${j.days.length>1?`<div class="card"><h2>날짜별</h2><div class="lg"><span><i style="background:var(--robe)"></i>방문자</span><span><i style="background:var(--robe-soft)"></i>읽은 쪽 수</span></div>
+    <div class="chart">${j.days.map(d=>`<div class="c" title="${d.date} · 방문자 ${d.visitors} · 읽은 쪽 ${R(d)}"><div class="v" style="height:${R(d)/mx*100}%"></div><div class="u" style="height:${d.visitors/mx*100}%"></div></div>`).join('')}</div>
     <div class="axis"><span>${md(j.days[0].date)}</span><span>${md(j.days[j.days.length-1].date)}</span></div></div>`:''}
-  <div class="card"><h2>많이 본 쪽</h2>${table(j.pages.map(([p,c,t])=>`<tr><td>${esc(t||p)}<br><small><a href="${esc(p)}" target="_blank" rel="noopener">${esc(p)}</a></small></td><td class="n">${num(c)}</td></tr>`))}</div>
+  <div class="card"><h2>많이 읽은 책 순위</h2>
+    <p class="note">읽은 쪽: 읽기 화면에서 한 쪽을 15초 넘게 펼쳐 둔 것만 셉니다(빠르게 넘긴 쪽은 빼고, 한 번 연 동안 같은 쪽은 한 번만, 2026년 11월 12일부터 셈). 읽은 사람: 그 책을 읽은 기기 수. 연 횟수: 읽기 화면을 연 횟수.</p>
+    ${bks.length?`<table><tr><td class="n" style="text-align:left;width:34px"><small>순위</small></td><td><small>책</small></td><td class="n"><small>읽은 쪽</small></td><td class="n"><small>읽은 사람</small></td><td class="n"><small>연 횟수</small></td></tr>${bks.map((b,i)=>`<tr><td class="n" style="text-align:left;width:34px"><b>${i+1}</b></td><td>${esc(b.title)}<br><small><a href="/book/${esc(b.id)}/" target="_blank" rel="noopener">${esc(b.id)}</a></small></td><td class="n"><b>${num(b.read)}</b></td><td class="n">${num(b.readers)}</td><td class="n">${num(b.opens)}</td></tr>`).join('')}</table>`:'<p class="note">아직 기록이 없습니다.</p>'}</div>
+  <div class="card"><h2>많이 연 화면</h2><p class="note">사이트의 화면(주소)마다 연 횟수 — 기간 전체 ${num(j.views)}번</p>${table(j.pages.map(([p,c,t])=>`<tr><td>${esc(t||p)}<br><small><a href="${esc(p)}" target="_blank" rel="noopener">${esc(p)}</a></small></td><td class="n">${num(c)}</td></tr>`))}</div>
   <div class="two">
     <div class="card"><h2>들어온 곳</h2><p class="note">다른 사이트의 링크를 눌러 들어온 경우만 (주소창에 직접 입력·즐겨찾기는 빠짐)</p>${table(j.refs.map(([r,c])=>`<tr><td>${esc(r)}</td><td class="n">${num(c)}</td></tr>`))}</div>
     <div class="card"><h2>기기 · 나라</h2>${table([...Object.entries(j.dev).map(([k,c])=>`<tr><td>${DEV[k]||esc(k)}</td><td class="n">${Math.round(c/devT*100)}%</td></tr>`),...j.ctry.map(([k,c])=>`<tr><td>${CT[k]||ctName(k)}</td><td class="n">${num(c)}</td></tr>`)])}</div>

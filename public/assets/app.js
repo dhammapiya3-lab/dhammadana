@@ -2016,4 +2016,37 @@ document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === 
   };
   fit(); addEventListener('scroll', fit, { passive: true }); addEventListener('resize', fit);
 })();
+
+/* ---------- 사이트 통계: 실제로 읽은 쪽 수 (운영자 요청, 2026-11-12) ----------
+   읽기 화면에서 한 쪽이 화면 가운데에 15초 넘게 머물면 '읽은 쪽' 하나로 셈 (같은 쪽은 한 번만).
+   화면이 꺼져 있거나 5분 넘게 아무 손길이 없으면 세지 않음. 모아 두었다가 다른 화면으로 갈 때·1분마다 보냄.
+   보내는 것: 책 번호·제목·읽은 쪽 수·기기 무작위 번호뿐 (관리자 기기는 보내지 않음) */
+(() => {
+  if (!navigator.sendBeacon || location.protocol !== 'https:') return;
+  const READ_SEC = 15, IDLE = 300e3;
+  let touched = Date.now(); const secs = {}, done = new Set(), pend = {};
+  ['scroll', 'wheel', 'touchstart', 'keydown', 'mousemove', 'click'].forEach(t => addEventListener(t, () => { touched = Date.now(); }, { passive: true, capture: true }));
+  const curPage = () => {
+    if (R.view !== 'text') return R.i + 1;
+    const b = $('#rBody'); if (!b) return 0; const r = b.getBoundingClientRect();
+    const y = r.top + r.height * 0.4; let pg = 0;  // 화면 위쪽 40% 자리에 있는 글의 쪽
+    for (const e of b.querySelectorAll('[data-pg]')) { const t = e.getBoundingClientRect(); if (!t.height) continue; if (t.top > y) break; pg = +e.dataset.pg; }
+    return pg;
+  };
+  const flush = () => {
+    if (store.get('notrack', false)) { for (const k in pend) delete pend[k]; return; }
+    let v = store.get('vid', ''); if (!/^[0-9a-z]{8,24}$/.test(v)) { v = Math.random().toString(36).slice(2, 12) + Date.now().toString(36).slice(-4); store.set('vid', v); }
+    for (const id in pend) { const o = pend[id]; if (o.n) navigator.sendBeacon('/api/hit', JSON.stringify({ k: 'read', b: id, t: o.t, n: o.n, p: location.pathname, v })); delete pend[id]; }
+  };
+  setInterval(() => {
+    if (!R || document.visibilityState !== 'visible' || Date.now() - touched > IDLE || $('#reader') == null) return;
+    const n = curPage(); if (!n) return; const k = R.id + ':' + n;
+    if (done.has(k)) return;
+    secs[k] = (secs[k] || 0) + 2;
+    if (secs[k] >= READ_SEC) { done.add(k); const o = pend[R.id] || (pend[R.id] = { n: 0, t: R.title || '' }); o.n++; }
+  }, 2000);
+  setInterval(flush, 60e3);
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') flush(); });
+  addEventListener('pagehide', flush);
+})();
 })();

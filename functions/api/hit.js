@@ -13,6 +13,15 @@ export async function onRequestPost({ request, env }) {
   if (!ua || BOT.test(ua)) return ok;
   let b = {};
   try { b = JSON.parse(await request.text()); } catch (e) { return ok; }
+  // 읽은 쪽 수 (읽기 화면에서 15초 넘게 머문 쪽): { k:'read', b: 책 번호, t: 책 제목, n: 쪽 수 }
+  if (b.k === 'read') {
+    const id = /^[A-Z]{1,4}-\d{1,6}$/.test(b.b || '') ? b.b : '', n = Math.min(Math.max(parseInt(b.n) || 0, 0), 500);
+    if (!id || !n) return ok;
+    const v = /^[0-9a-z]{8,24}$/.test(b.v || '') ? b.v : '';
+    const now = day(), rnd = [...crypto.getRandomValues(new Uint8Array(4))].map(x => x.toString(16).padStart(2, '0')).join('');
+    await env.PAPER.put(`stats/raw/${now.slice(0, 10)}/${now.slice(11, 19).replace(/:/g, '')}-${rnd}.json`, JSON.stringify({ k: 'read', b: id, t: cut(b.t, 120), n, v, d: /Mobi|Android|iPhone|iPad/i.test(ua) ? 'm' : 'pc' }));
+    return ok;
+  }
   const p = cut(b.p, 200);
   if (!p.startsWith('/') || /^\/(admin|api)\b/.test(p)) return ok;
   let r = '';
