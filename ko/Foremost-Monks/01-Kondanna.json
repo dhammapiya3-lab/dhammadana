@@ -1,0 +1,708 @@
+[
+ {
+  "img": "images/01-Kondanna-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     179,
+     99
+    ],
+    "shape": "box",
+    "en": "“The Karmic are Arc of Ven. ver Konda 100,000-Aeon Journey of Aspiration and Generosi Yaa 2",
+    "ko": "안냐 꼰단냐 존자, 업의 여정\n십만 겁에 걸친 서원과 보시의 길",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     362,
+     228,
+     420
+    ],
+    "ko": "십만 겁 전:\n빠두뭇따라 부처님 아래\n처음 세운 서원",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     324,
+     362,
+     478,
+     420
+    ],
+    "ko": "91겁 전:\n위빳시 부처님 아래\n최고의 공덕을 닦음",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     576,
+     362,
+     736,
+     420
+    ],
+    "ko": "현겁:\n고따마 부처님 아래\n마침내 깨달음",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     205,
+     17,
+     598,
+     54
+    ],
+    "ko": "헤아릴 수 없는 세월에 걸친 여정입니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     384,
+     72
+    ],
+    "shape": "box",
+    "en": "‘In Hamsavati, wealthy layman witnesses Buddha Padumuttara declare monastic foremost in realizing the Four Truths. profound aspiration takes root: to become the fi rst to awaken under future Buddha.",
+    "ko": "함사와띠의 한 부유한 재가자가, 빠두뭇따라 부처님께서 한 비구를 ‘사성제를 깨달은 이 가운데 으뜸’이라 선언하시는 것을 봅니다. 서원이 뿌리내립니다: 미래의 부처님 아래에서 가장 먼저 깨닫는 이가 되리라.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     401,
+     63
+    ],
+    "shape": "box",
+    "en": "lofty designation requires extraordinary merit. For seven successive days, the layman offers grand feast and fine Vanga robes to 100,000 monastics, laying the required karmic foundation nforhisvow. for his vow.",
+    "ko": "그 높은 자리에는 남다른 공덕이 필요합니다. 재가자는 이레 동안 비구 십만 명에게 큰 공양과 고운 왕가산 가사를 올리며 서원의 바탕을 쌓습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     514,
+     289,
+     746,
+     395
+    ],
+    "ko": "빠두뭇따라 부처님의 걸림 없는 지혜가 십만 겁 너머를 내다봅니다. 예언이 내려집니다: 고따마 부처님 때 이 재가자는 법을 처음 깨닫는 꼰단냐 존자가 되리라.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     26,
+     48,
+     372,
+     114
+    ],
+    "ko": "91겁 전, 미래의 꼰단냐는 마하깔라로 태어납니다. 위빳시 부처님께서 출현하십니다. 반두마 왕은 승가에 올리는 공양을 혼자 차지하고, 백성들이 공덕 짓는 것을 막습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     52,
+     566,
+     143
+    ],
+    "ko": "공덕은 독차지할 수 없습니다. 백성들은 부처님을 모실 권리를 달라며 들고일어나려 하고, 왕과 장군이 이끄는 백성 사이에 줄다리기가 벌어집니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     42,
+     303,
+     350,
+     368
+    ],
+    "ko": "7년에서 줄이고 줄여 왕은 큰 공양을 이레로 마칩니다. 왕은 눈물을 흘리며 독차지를 내려놓고, 백성들도 보시할 차례를 얻습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     224,
+     57,
+     578,
+     135
+    ],
+    "ko": "마하깔라는 갓 익은 여린 곡식으로 우유죽을 쑤어 올리자고 합니다. 쭐라깔라는 수확을 잃을까 거절합니다. 둘은 땅 28에이커를 나누고, 넉넉한 마음과 인색한 마음도 갈라섭니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     49,
+     220,
+     170
+    ],
+    "ko": "마하깔라는 첫 수확 보시(agga-dāna)를 쉼 없이 이어 갑니다. 여린 곡식부터 곳간에 들일 때까지 아홉 단계마다 맨 처음 거둔 것을 올립니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     565,
+     130,
+     750,
+     300
+    ],
+    "ko": "지극한 보시는 줄지 않고 크게 불어납니다. 마하깔라가 승가를 위해 여린 이삭을 거둘 때마다 이삭은 신기하게 다시 차올랐고, 수확은 늘 전보다 많아졌습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     350,
+     372
+    ],
+    "ko": "꼰단냐는 부유한 바라문 집안의 영재로 베다에 통달했습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "seed": [
+     452,
+     372
+    ],
+    "ko": "가까이에서 숫도다나 왕은 갓 태어난 보살을 바라문 108명에게 보이고, 지혜로운 여덟 바라문에게 예언을 구했습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     212,
+     766,
+     260
+    ],
+    "ko": "일곱 바라문: 두 갈래 길 — 전륜성왕 또는 부처님.\n꼰단냐: 오직 한 길. 상호를 알아보고 반드시 부처님이 되리라 단언했습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-15-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     530,
+     210
+    ],
+    "ko": "스물아홉 살에 보살은 왕궁의 즐거움이 덧없음을 알았습니다. 깐타까를 타고 아노마 강에 이르러 큰 출가를 시작했습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-16-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     226,
+     344
+    ],
+    "ko": "나이 든 바라문들은 세상을 떠났습니다. 꼰단냐가 그 아들들을 모으자 네 사람이 주황색 가사를 입었습니다. 이렇게 다섯 비구가 보살의 깨달음을 기다렸습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-17-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     224,
+     426
+    ],
+    "ko": "우루웰라에서 6년 동안 보살은 낟알 하나로 버티는 극심한 고행을 했습니다. 다섯 비구는 곧 깨달으시리라 믿으며 정성껏 시중들었습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-18-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     68,
+     276
+    ],
+    "ko": "[중도]\n고행으로는 안 됨을 알고\n보살은 보통 음식을 드십니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "seed": [
+     376,
+     342
+    ],
+    "ko": "[떠남]\n실망하고 낙담한 다섯 비구는\n이시빠따나로 떠납니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     612,
+     135,
+     730,
+     168
+    ],
+    "ko": "이시빠따나",
+    "align": "center",
+    "fill": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-19-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     272,
+     146
+    ],
+    "ko": "수자따의 우유죽으로 기운을 얻은 보살은 마하보디 나무 아래 앉아, 해 지기 전 마라를 물리치고 그날 안에 부처가 되리라 다짐했습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     420,
+     86,
+     656,
+     148
+    ],
+    "ko": "초야: 전생을 아는 지혜.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "seed": [
+     436,
+     201
+    ],
+    "ko": "중야:\n하늘눈(천안).",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "seed": [
+     414,
+     314
+    ],
+    "ko": "후야: 연기를 꿰뚫어 보아\n오직 하나뿐인 일체지를 얻으셨습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-21-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     472,
+     191
+    ],
+    "ko": "범천이 법을 설해 주시기를 청하자 부처님께서는 들을 이를 살피셨습니다. 지난날의 정성을 떠올려 다섯 비구에게 먼저 법을 들려주기로 하셨습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-22-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     141,
+     62
+    ],
+    "ko": "약속: 우리는 결코 그를 맞이하지 않으리라.\n현실: 그분의 거룩한 모습에 굳은 다짐이 무너졌습니다.\n그들은 곧바로 발을 씻어 드리고 자리를 마련했습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-23-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     211,
+     301
+    ],
+    "ko": "부처님께서 첫 설법을 하셨습니다.\n꼰단냐가 가장 먼저 사성제를 꿰뚫었습니다.\n부처님께서 선언하셨습니다: “꼰단냐가 깨달았구나!”\n그는 안냐 꼰단냐가 되었습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-25-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     188,
+     340
+    ],
+    "ko": "수많은 새 성자로 온 땅을 밝히신 뒤 부처님께서 선언하셨습니다:\n“오래된 나의 비구 제자 가운데 안냐 꼰단냐가 으뜸이다.”",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     216,
+     60,
+     588,
+     110
+    ],
+    "ko": "랏딴뉴(Rattaññū): 가장 오래된 이",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     128,
+     343,
+     676,
+     416
+    ],
+    "ko": "세월: 가장 오래된 비구.\n통찰: 사성제를 가장 먼저 깨달음.\n앎: 오랜 세월을 꿰뚫어 아는 첫 아라한.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-27-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     110,
+     375
+    ],
+    "shape": "box",
+    "en": "In the Buddha’s assembly, Chief Disciples Sariputta and Moggallana flanked the central Dhamma throne. Behind them sat Venerable Afififidsi the very first to comprehend the Four Noble Truths, his seniority casting profound, inescapable presence over the gathering.",
+    "ko": "부처님 대중 가운데 상수제자 사리뿟따와 목갈라나가 법좌 양옆에 앉았습니다. 그 뒤에는 사성제를 맨 처음 깨달은 안냐 꼰단냐 존자가 앉아, 오랜 법랍으로 대중에게 깊은 위엄을 드리웠습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-28-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     360,
+     698,
+     422
+    ],
+    "ko": "두 상수제자는 그의 큰 위엄 앞에서 활활 타는 불덩이를 대하듯 어려워했습니다. 천신과 사람들은 공경하러 몰려와 그의 과의 증득을 방해했습니다. 대중의 부담을 덜고자 그는 홀로 머물기를 바랐습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-29-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     360,
+     698,
+     422
+    ],
+    "ko": "조카 뿐나에게 뒷일을 맡긴 꼰단냐는 세존께 나아갔습니다. “세존이시여, 마을 가까이 사는 것은 저에게 맞지 않습니다. 찻단따 숲에서 살도록 허락해 주십시오.” 부처님께서는 말없이 허락하셨습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-30-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     308,
+     360,
+     392
+    ],
+    "ko": "만다끼니 호수의 늙은 코끼리 8천 마리가 복밭이 오셨다고 기뻐했습니다. 장로가 빈 발우로 돌아가시는 일이 없도록 빈틈없이 순번을 짜서 시중들었습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-31-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     512,
+     333
+    ],
+    "shape": "bubble",
+    "en": "Lake Mandakini was fifty-league paradise. Crystal waters were ringed by perfectly concentric half-league bands: vibrant lotuses, fragrant red paddy, towering sugarcane, and endless groves of bananas, jackfruit, and mangoes.",
+    "ko": "만다끼니 호수는 50요자나의 낙원이었습니다. 맑은 물을 반 요자나 너비의 띠들이 둥글게 둘러쌌습니다: 연꽃, 향기로운 붉은 벼, 우뚝한 사탕수수, 끝없는 바나나·잭프루트·망고 숲.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-32-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     318,
+     140,
+     486,
+     295
+    ],
+    "ko": "코끼리들은 날마다 빈틈없이 일했습니다. 당번 코끼리는 불을 지펴 냇돌을 달궈 목욕물을 데우고, 나뭇가지 칫솔을 만들고, 오두막을 쓸었습니다.",
+    "align": "center",
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-33-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     507,
+     88
+    ],
+    "shape": "bubble",
+    "en": "Sustenance came from nature and the divine. Elephants offered sun-baked lotus-honey, drum- thick lotus milk, Ik, and stone-crushed sugarcane cakes. From the Keldsa hill, Deva Nagadatta provided pure milk food infused with sweet lotus pollen.",
+    "ko": "먹을 것은 자연과 천신이 마련했습니다. 코끼리들은 연꽃 꿀, 굵은 연줄기의 즙, 사탕수수 떡을 올렸고, 껠라사 산의 나가닷따 천신은 연꽃가루를 넣은 우유 음식을 올렸습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-34-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     212,
+     333
+    ],
+    "shape": "bubble",
+    "en": "After twelve years, Kondajifia realized his life process was ending Grateful to his elephant caretakers, he resolved to pass away in their forest, but first projected himself back to Rajagaha for final farewell",
+    "ko": "12년이 지나 꼰단냐는 수명이 다해 감을 알았습니다. 돌봐 준 코끼리들에게 고마워하며 그 숲에서 열반에 들기로 하고, 먼저 마지막 작별을 하러 라자가하로 몸을 옮겼습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-35-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     88,
+     79
+    ],
+    "shape": "bubble",
+    "en": "At Veluvana monastery, Kondafifia bowed, tightly gripping and kissing the Buddha’s feet. “Exalted Buddha! am Kondafinia; Gracious One! am Kondafiia.” The assembly watched this profound unprecedented display in reverent silence",
+    "ko": "웰루와나 승원에서 꼰단냐는 부처님 발에 엎드려 발을 꼭 잡고 입 맞추었습니다. “세존이시여, 저는 꼰단냐입니다. 선서시여, 저는 꼰단냐입니다.” 대중은 이 모습을 숙연히 지켜보았습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-36-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     86,
+     318
+    ],
+    "shape": "box",
+    "en": "Venerable Vangisa spontaneously sang his praises, immortalizing Kondaijifia's virtues: the Awakened follower (Buddhanubuddha), master of the threefold knowledge (Tevijja), and reader of minds (Ceto-pariyaya-kovida), parivaye who fully inherited the supermundane ermundane legacy.",
+    "ko": "왕기사 존자가 즉석에서 그를 찬탄하는 게송을 읊었습니다: 부처님을 따라 깨달은 이(Buddhānubuddha), 세 가지 지혜를 갖춘 이(Tevijja), 남의 마음을 잘 아는 이(Ceto-pariyāya-kovida) — 출세간의 유산을 온전히 이은 이.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-37-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     340,
+     618,
+     416
+    ],
+    "ko": "“나의 첫 예배는 녹야원에서였고 이것이 마지막입니다.”\n문간에 선 꼰단냐가 우는 대중을 타일렀습니다:\n“슬퍼하지 마십시오. 형성된 것 가운데\n무너지지 않는 것은 없습니다.”",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-38-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     140,
+     319
+    ],
+    "shape": "box",
+    "en": "Returning Chaddanta, he entered Parinibbana IS before 2 dawn. Unseasonal flowers burst 2 open across the Himavanta. At sunrise, the duty-elephant ty-elephant discovered his breathless body and unleashed mournful ful trumpet that echoed across the world.",
+    "ko": "찻단따로 돌아온 그는 동트기 전 반열반에 들었습니다. 철 아닌 꽃들이 히마완따 곳곳에 피어났습니다. 해 뜰 무렵 당번 코끼리가 숨이 멎은 그를 보고 온 세상에 울리는 슬픈 울음을 터뜨렸습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-39-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     118,
+     100
+    ],
+    "shape": "bubble",
+    "en": "Deva Vissakamma forged nine-league pinnacled coffin. cosmic relay ascended the heavens: Elephants bore him first, passing the coffin to Sky Devas, Cloud Devas, Tavatimsa Devas, and finally the Brahmas, before returning him to earth.",
+    "ko": "윗사깜마 천신이 9요자나의 뾰족지붕 관을 만들었습니다. 관은 하늘로 이어 올라갔습니다: 코끼리들이 먼저 메고 허공의 천신, 구름의 천신, 따와띵사 천신, 마지막으로 범천들에게 건넨 뒤 다시 땅으로 내려왔습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/01-Kondanna-40-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     312,
+     52,
+     758,
+     138
+    ],
+    "ko": "9요자나 전단향 장작더미에서 다비한 뒤, 사리가 재스민 꽃봉오리처럼 깨끗이 나왔습니다. 부처님께서 사리를 받아 손을 땅으로 뻗으시자, 커다란 은빛 물거품 모양의 탑이 땅에서 솟아 아라한의 자취를 영원히 모셨습니다.",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
