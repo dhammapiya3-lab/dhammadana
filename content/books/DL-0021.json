@@ -143,6 +143,6 @@
   "license": "CC BY-NC-SA",
   "added": "2026-11-11",
   "order": null,
-  "hidden": false,
+  "hidden": true,
   "hide_update": false
 }
