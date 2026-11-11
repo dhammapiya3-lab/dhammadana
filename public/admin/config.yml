@@ -354,6 +354,7 @@ collections:
             fields:
               - { name: id, label: 영문 아이디, hint: "주소에 쓰입니다. 영문 소문자·- 만. 한 번 정하면 바꾸지 마세요.", pattern: ['^[a-z0-9-]+$', '영문 소문자·숫자·- 만'] }
               - { name: name, label: 대표 이름, hint: "사이트에 나오는 이름 (예: 우 조띠까 사야도)" }
+              - { name: rank, label: 사이트 순서, widget: number, required: false, hint: "작은 수가 먼저 나옵니다(도서관 찾아보기·스승 목록). 비워 두면 맨 뒤. 관리자 화면 목록은 가나다순입니다." }
               - { name: roman, label: 로마자, required: false }
               - { name: aliases, label: 다른 표기들, widget: list, required: false, hint: "책마다 다르게 적힌 이름. 검색에 쓰입니다." }
               - name: tradition

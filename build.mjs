@@ -32,7 +32,8 @@ function readMd(file) {
 }
 const S = readJSON('settings.json');
 const TRADS = readJSON('traditions.json').items;
-const TEACHERS = readJSON('teachers.json').items;
+// 파일은 관리자 화면에서 찾기 쉽게 가나다순, 사이트의 스승 순서는 rank(사이트 순서) — 없으면 맨 뒤 (운영자 요청, 2026-11-11)
+const TEACHERS = readJSON('teachers.json').items.map((t, i) => [t, i]).sort((a, b) => ((a[0].rank ?? 1e9) - (b[0].rank ?? 1e9)) || a[1] - b[1]).map(x => x[0]);
 const TOPICS_RAW = readJSON('topics.json');
 const TOPICS = { main: TOPICS_RAW.main.map(x => x.label), groups: [] };
 for (const it of TOPICS_RAW.items) { let g = TOPICS.groups.find(x => x.name === it.group); if (!g) TOPICS.groups.push(g = { name: it.group, labels: [] }); g.labels.push(it.label); }
