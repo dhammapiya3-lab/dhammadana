@@ -108,14 +108,15 @@
   "img": "images/02-03-Sariputta-Moggallana-08-Original.jpg",
   "boxes": [
    {
-    "ko": "아노마닷시 부처님\n이레 동안 부처님께서 멸진정(nirodha-samāpatti)에 드셨습니다. 사라다는 꼼짝 않고 서서 부처님 위로 큰 꽃 일산을 받쳐 들었습니다. 아무것도 먹지 않고 오직 희열(pīti)의 음식으로 지냈습니다.",
     "rect": [
-     46,
-     350,
-     756,
+     58,
+     352,
+     744,
      442
     ],
+    "em": 19,
     "align": "center",
+    "ko": "아노마닷시 부처님께서 이레 동안 멸진정에 드셨습니다.\n사라다는 꼼짝 않고 서서 큰 꽃 일산을 받쳐 들고,\n아무것도 먹지 않고 희열(pīti)로 지냈습니다.",
     "shape": "box",
     "manual": true
    }
@@ -628,7 +629,7 @@
     ],
     "shape": "box",
     "en": "Parinibbana: Entering the nine absorptions progressively and regressively, Ven. Sariputta attained Parinibbana. The great earth roared. His mother wept bitterly at his feet, regretting she had not fully known his virtues while he lived",
-    "ko": "반열반:\n아홉 단계의 선정에 차례로, 또 거꾸로 들고 나기를 거듭한 뒤 사리뿟따 존자는 반열반에 들었습니다. 대지가 울렸습니다. 어머니는 발치에서 슬피 울며, 살아 계실 때 그 덕을 다 알지 못한 것을 뉘우쳤습니다.",
+    "ko": "반열반: 아홉 단계의 선정에 차례로, 또 거꾸로 들고 나기를 거듭한 뒤\n사리뿟따 존자는 반열반에 들었습니다. 대지가 울렸습니다.\n어머니는 발치에서 울며 아들의 덕을 몰랐던 것을 뉘우쳤습니다.",
     "align": "center"
    }
   ]
@@ -673,7 +674,7 @@
     ],
     "shape": "box",
     "en": "The Buddha’s Tribute: Holding the pure relics, the Buddha praised his Chief Disciple “Behold the relics of Sariputta! He possessed vast, penetrative wisdom He held forbearance mighty as the great earth, humble as beggar’s son",
-    "ko": "부처님의 찬탄:\n깨끗한 사리를 손에 드시고 부처님께서 상수제자를 찬탄하셨습니다: “사리뿟따의 사리를 보라! 그는 넓고 꿰뚫는 지혜를 지녔고, 대지처럼 큰 인내를 지녔으며, 천민의 아들처럼 겸손했다.”",
+    "ko": "부처님의 찬탄: “사리뿟따의 사리를 보라!\n그는 넓고 꿰뚫는 지혜와 대지 같은 인내를 지녔고,\n천민의 아들처럼 겸손했다.”",
     "align": "center"
    }
   ]
@@ -892,14 +893,17 @@
   "img": "images/02-03-Sariputta-Moggallana-50-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     212,
-     67
+    "rect": [
+     60,
+     66,
+     348,
+     128
     ],
+    "em": 18,
+    "align": "center",
+    "ko": "이레째, 업의 무게가 그를 붙잡았습니다.\n도적들은 뼈를 겨처럼 부수고\n덤불 속에 던졌습니다.",
     "shape": "box",
-    "en": "the seventh day, karmic weight grounded him. The robbers pounded his bones to dust—palalapithika—and threw him into bush.",
-    "ko": "이레째 되는 날 업의 무게가 그를 붙잡았습니다. 도적들은 뼈를 겨처럼 부수고(palālapiṭṭhika) 덤불 속에 던졌습니다.",
-    "align": "center"
+    "manual": true
    }
   ]
  },
