@@ -6,7 +6,7 @@
   "byline": "난다말라비왐사 큰스님 지음",
   "translator": "식카와띠 위뿔라냐니 옮김",
   "teacher": "nandamala",
-  "provider": "amumaldeul",
+  "provider": "dhammadipa",
   "press": true,
   "paper": "soldout",
   "paper_url": "",
@@ -86,5 +86,6 @@
   "added": "2026-11-06",
   "order": 2,
   "hidden": false,
-  "hide_update": false
+  "hide_update": false,
+  "provider_chip": true
 }

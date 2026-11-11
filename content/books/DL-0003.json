@@ -6,7 +6,7 @@
   "byline": "우 쉐아웅 지음",
   "translator": "식카와띠 위뿔라냐니 옮김",
   "teacher": "shweaung",
-  "provider": "amumaldeul",
+  "provider": "dhammadipa",
   "press": true,
   "paper": "soldout",
   "paper_url": "",
@@ -108,5 +108,6 @@
   "added": "2026-11-06",
   "order": 3,
   "hidden": false,
-  "hide_update": false
+  "hide_update": false,
+  "provider_chip": true
 }
