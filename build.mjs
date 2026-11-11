@@ -401,13 +401,15 @@ function peopleLinks(b, text, fld) {
   return h;
 }
 
+// 사람이 녹음한 오디오북이 있는 책: 책 카드 형식 줄과 도서관 찾아보기 '형식'에 '오디오북' (운영자 요청, 2026-11-11)
+const fmtsCard = b => { const u = uniqK(formats(b)); const e = curEd(b); return e && e.reader && AUDIO[b.id] && AUDIO[b.id].human ? [...u, { k: '오디오북' }] : u; };
 function coverCard(b) {
-  const f = formats(b);
+  const f = formats(b), fc = fmtsCard(b);
   const tr = b.teacher ? tradOfTeacher(b.teacher) : null;
-  return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${tr ? tr.id : ''}" data-teacher="${b.teacher || ''}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(uniqK(f).map(x => x.k).join('|'))}" data-lang="${esc(b.original_language || '')}" data-btype="${esc(b.book_type || '')}" data-pub="${esc(pubsAll(b).map(x => x.key).join('|'))}" data-person="${esc(peopleOf(b).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}">
+  return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${tr ? tr.id : ''}" data-teacher="${b.teacher || ''}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(fc.map(x => x.k).join('|'))}" data-lang="${esc(b.original_language || '')}" data-btype="${esc(b.book_type || '')}" data-pub="${esc(pubsAll(b).map(x => x.key).join('|'))}" data-person="${esc(peopleOf(b).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}">
   <div class="cover">${!f.length ? '<span class="soon">준비 중</span>' : ''}${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지" loading="lazy">` : `<div class="cover-ph">${esc(b.title)}</div>`}</div>
   <div class="t">${esc(b.title)}</div><div class="a">${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>${pubLine(b) ? `<div class="a publ">${esc(pubLine(b))}</div>` : ''}
-  ${f.length ? `<div class="fmt">${uniqK(f).map(x => `<span>${x.k}${x.ext ? ' ↗' : ''}</span>`).join('')}</div>` : ''}</a>`;
+  ${f.length ? `<div class="fmt">${fc.map(x => `<span>${x.k}${x.ext ? ' ↗' : ''}</span>`).join('')}</div>` : ''}</a>`;
 }
 const countTopic = t => LIB().filter(b => (b.topics || []).includes(t)).length;
 const countMain = t => LIB().filter(b => (b.main || []).includes(t)).length;
@@ -527,7 +529,7 @@ function libraryBody() {
     <h3>출판사</h3>${PUBS().map(x => chk('pub', x.key, esc(x.name), LIB().filter(b => pubsAll(b).some(p => p.key === x.key)).length)).join('')}
     <h3>책 형식</h3>${BTYPES.map(k => chk('btype', k, esc(k), LIB().filter(b => b.book_type === k).length)).join('')}
     ${LANGS.length ? `<h3>원서의 언어</h3>${LANGS.map(l => chk('lang', l, esc(l), LIB().filter(b => b.original_language === l).length)).join('')}` : ''}
-    <h3>형식</h3>${['PDF', 'EPUB', '온라인 읽기'].map(f => chk('fmt', f, f, LIB().filter(b => formats(b).some(x => x.k === f)).length)).join('')}
+    <h3>형식</h3>${['PDF', 'EPUB', '온라인 읽기', '오디오북'].map(f => [f, LIB().filter(b => fmtsCard(b).some(x => x.k === f)).length]).filter(([f, n]) => n).map(([f, n]) => chk('fmt', f, f, n)).join('')}
   </div></details>
   <section><div class="toolbar"><div><h1 class="h-page">법보시 도서관</h1><div class="muted small">자료 <span id="libCount">${LIB().length}</span>권</div></div>
     <label class="small">정렬 <select id="sort"><option value="new">최근 등록순</option><option value="title">제목 가나다순</option></select></label></div>
