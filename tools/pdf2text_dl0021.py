@@ -9,7 +9,7 @@ PDF 쪽 = 인쇄 쪽 (PDF 4쪽에 '004'). 1~2쪽(반표제·빈 쪽)·510쪽(빈
 import sys, re, json, fitz
 
 pdf = sys.argv[1]
-bk, ED = 'DL-0021', '개정판 (법보시 어플용)'
+bk, ED = 'DL-0021', '개정판 (법보시 어플)'
 src = fitz.open(pdf)
 FIRST, LAST = 3, 511
 INVIS = re.compile('[\x07\xad\u200b\U000f0000-\U000fffff]')

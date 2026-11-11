@@ -90,8 +90,8 @@
       "note": ""
     },
     {
-      "label": "개정판 (법보시 어플용)",
-      "label_display": "개정판 (법보시 어플용)",
+      "label": "개정판 (법보시 어플)",
+      "label_display": "개정판 (법보시 어플)",
       "current": true,
       "public": true,
       "page_count": null,
