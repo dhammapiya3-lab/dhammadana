@@ -629,7 +629,7 @@ for (const t of TEACHERS) {
   for (const b of LIB()) for (const x of pubsAll(b)) { const p = provOfPub(x.key); if (!p || p.id === 'amumaldeul') continue; if (!PUBS.has(p.id)) PUBS.set(p.id, { p, books: [] }); const o = PUBS.get(p.id); if (!o.books.includes(b)) o.books.push(b); }
   for (const { p, books } of PUBS.values()) put(`publisher/${p.id}/index.html`, layout({
     title: p.name, nav: 'library', page: 'teacher', desc: `${p.name}에서 펴낸 책 ${books.length}권 — 붓다담마 법보시 도서관`, body: `<div class="wrap"><div class="teacher-head">${p.logo ? `<div class="pub-logo"><img src="${esc(p.logo)}" alt="${esc(p.name)} 로고"></div>` : `<div class="portrait" aria-hidden="true">${p.image ? `<img src="${esc(p.image)}" alt="">` : esc(p.name.replace(/^\(.*?\)/, '')[0])}</div>`}
-    <div><div class="small muted"><a href="/library/">법보시 도서관</a> · ${p.partner ? '협력 단체' : esc(p.kind || '출판사')}</div>
+    <div><div class="small muted"><a href="/library/">법보시 도서관</a> · 협력 단체</div>
     <h1 class="h-page">${esc(p.name)}</h1>
     ${p.bio ? `<div class="desc small">${marked.parse(p.bio)}</div>` : '<p class="small muted">소개 글은 준비 중입니다.</p>'}
     ${(p.urls || []).length ? `<p style="margin:8px 0 0">${p.urls.map((u, i) => `<a class="btn sm ghost" href="${esc(u)}" target="_blank" rel="noopener">${/youtube\.com|youtu\.be/.test(u) ? '▶ 유튜브 채널' : esc((!i && p.note) || u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))} ↗</a>`).join(' ')}</p>` : ''}</div></div>
