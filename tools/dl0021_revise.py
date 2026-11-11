@@ -169,6 +169,15 @@ if os.path.exists(CF) and CK in body:
     col = open(CF, encoding='utf-8').read()
     nb = body[:body.index(CK) + len(CK)] + col
     if nb != body: body = nb; log.append('판권지: 개정판 판권지로')
+# ---- 하위 각주(225-1·304-1)는 다른 각주처럼: 게송 끝 '225-1)' → [^225-1], 내용은 따로 [^225-1]: 문단 (운영자 요청, 2026-11-12) ----
+for sub in ('225-1', '304-1'):
+    nb = body.replace(sub + ')**', '[^' + sub + ']**')
+    nb = nb.replace('\n' + sub + ') ', '\n\n[^' + sub + ']: ')
+    if nb != body: body = nb; log.append(f'하위 각주 {sub}: 다른 각주와 같은 모양으로')
+# ---- 인쇄본 목차의 쪽 번호 잘못: 379-380 이야기는 411쪽에서 시작 (운영자 요청, 2026-11-12) ----
+TOCFIX = [('379-380 누더기 옷을 경책으로 삼은 낭갈라꿀라 | 412', '379-380 누더기 옷을 경책으로 삼은 낭갈라꿀라 | 411')]
+for a, b in TOCFIX:
+    if a in body: body = body.replace(a, b); log.append(f'목차 쪽 번호: {b}')
 doc['body'], doc['toc'] = body, allt
 json.dump(doc, open(T, 'w'), ensure_ascii=False, indent=2); open(T, 'a').write('\n')
 # ---- 7. 책 소개 페이지의 목차(content/books/DL-0021.json contents) ----
@@ -180,6 +189,7 @@ for ln in bk.get('contents', '').split('\n'):
     m = re.match(r'^(제(\d+)장 )(.*?)(\(.*\))$', ln)
     if m and REV['chap'].get(m.group(2)) and re.sub(r'\(.*?\)', '', m.group(3)) != re.sub(r'\(.*?\)', '', REV['chap'][m.group(2)]):
         ln = m.group(1) + re.sub(r'\(.*?\)', '', REV['chap'][m.group(2)]) + m.group(4); nc += 1
+    if ln == '379-380 누더기 옷을 경책으로 삼은 낭갈라꿀라 412': ln = ln[:-3] + '411'; nc += 1
     outl.append(ln)
 if nc:
     bk['contents'] = '\n'.join(outl); json.dump(bk, open(B, 'w'), ensure_ascii=False, indent=2); open(B, 'a').write('\n')
