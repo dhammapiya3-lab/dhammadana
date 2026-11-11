@@ -101,10 +101,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "file",
-        "url": "",
         "site": "",
-        "created": "2025년 1월 15일"
+        "created": "2025년 1월 15일",
+        "mode": "file",
+        "url": "pdf/DL-0019/DL-0019_2판7쇄.pdf"
       },
       "pdf_print": {
         "mode": "none",
