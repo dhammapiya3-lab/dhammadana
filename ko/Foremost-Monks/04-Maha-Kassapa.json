@@ -1,0 +1,768 @@
+[
+ {
+  "img": "images/04-Maha-Kassapa-01-Original.jpg",
+  "boxes": [
+   {
+    "ko": "난다 왕 이야기\n마하깟사빠 존자의 전생에 담긴 업과 보시와 출가",
+    "em": 22,
+    "rect": [
+     196,
+     346,
+     604,
+     419
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     191,
+     366
+    ],
+    "shape": "box",
+    "en": "Unwilling to wear coarse garments, young Nanda seeks finer clothing His mother offers an auspicious blessing: wish you kingship of Baranast Guided by past merit, Nanda departs for the royal garden",
+    "ko": "거친 옷을 입기 싫어한 젊은 난다가 고운 옷을 찾습니다. 어머니는 “바라나시의 왕이 되기를 바란다”고 축복합니다. 지난 공덕에 이끌려 난다는 왕실 정원으로 향합니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-03-Original.jpg",
+  "boxes": [
+   {
+    "ko": "바라나시 왕이 뒤를 이을 아들 없이 세상을 떠났습니다. 왕실 사제의 인도로 왕의 수레가 동쪽 문을 나서 왕이 될 사람을 찾아 나섭니다. 네 갈래 군대와 풍악이 뒤따릅니다.",
+    "seed": [
+     39,
+     361
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-04-Original.jpg",
+  "boxes": [
+   {
+    "ko": "수레가 잠든 난다의 둘레를 돕니다. 발바닥을 살핀 사제는 그가 잠부디빠를 다스릴 만하다고 선언합니다. 잠에서 깬 난다는 빈 왕좌를 받아들이고 선왕의 딸과 함께 즉위합니다.",
+    "seed": [
+     39,
+     363
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     359,
+     358
+    ],
+    "shape": "box",
+    "en": "King da the Wish-Fulfilling “Fulfilling Trees Rejecting worldly garments, King Nanda tosses water to the four directions Instantly, thirty-two wish-fulfilling trees erupt from the earth. Adorned in divine robes, he ascends the palace to enjoy the fruits of his past Kamma.",
+    "ko": "난다 왕과 소원을 이루어 주는 나무\n왕이 사방으로 물을 뿌리자 소원 나무 32그루가 솟았습니다.\n왕은 하늘 옷을 입고 지난 업의 열매를 누립니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     200,
+     362
+    ],
+    "shape": "box",
+    "en": "Years pass in royal luxury. Queen Padumavati observes with pity. She warns the King: ‘Your luxurious life stems from past faith, but you plant no seeds for future happiness. Rare indeed is new act of merit.",
+    "ko": "호화로운 세월이 흘렀습니다. 빠두마와띠 왕비가 안타까워하며 아룁니다. “전하의 영화는 지난날의 믿음에서 왔지만, 앞날의 행복을 위한 씨앗은 심지 않으십니다. 새로 짓는 공덕은 참으로 드뭅니다.”",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     252,
+     357
+    ],
+    "shape": "box",
+    "en": "King Nanda Seeks to Give vea Dana Seeking to practice Dana, the King prepares grand offerings. For three days, the Queen invites Arahats from the Eastern, Southern, and Western gates. No one he appears. On the fourth day, she turns to the North.",
+    "ko": "보시를 하려는 난다 왕\n사흘 동안 동·남·서쪽 문에서 아라한을 청했지만\n아무도 오지 않아, 나흘째 북쪽을 향합니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     272,
+     307
+    ],
+    "shape": "box",
+    "en": "From the northern gate appear five hundred Paccekabuddhas, led by Maha Paduma. Accepting the royal invitation, the noble ones wash their faces at Lake Anotatta and materialize before the King and Queen.",
+    "ko": "북쪽 문에서 마하빠두마를 우두머리로 벽지불 500분이 나타납니다. 왕의 초청을 받아들인 거룩한 분들은 아노땃따 호수에서 얼굴을 씻고 왕과 왕비 앞에 나타났습니다.",
+    "align": "center"
+   },
+   {
+    "rect": [
+     50,
+     70,
+     420,
+     136
+    ],
+    "ko": "벽지불 500분",
+    "cover": true,
+    "em": 30,
+    "shape": "box",
+    "align": "center",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     205,
+     369
+    ],
+    "shape": "box",
+    "en": "The royals offer alms and petition the Paccekabuddhas to remain. They construct five hundred lodgings and meditation paths in the royal garden, dutifully supplying the four requisites to support their silent reflection.",
+    "ko": "왕과 왕비는 공양을 올리고 머물러 주시기를 청합니다. 왕실 정원에 거처 500채와 경행로를 짓고, 고요히 머무시도록 네 가지 필수품을 정성껏 올립니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-10-Original.jpg",
+  "boxes": [
+   {
+    "ko": "변방에 반란이 일어납니다. 난다 왕은 반란을 진압하러 떠나며 빠두마와띠 왕비에게 정원을 맡깁니다. 왕비는 네 가지 필수품을 빠짐없이 올려 벽지불들이 편히 머물게 합니다.",
+    "seed": [
+     400,
+     374
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     368,
+     594,
+     444
+    ],
+    "em": 15,
+    "align": "center",
+    "ko": "반열반\n왕이 돌아올 무렵, 마하빠두마는 선정에 들어 나무 등받이에\n기대선 채 반열반에 들고, 나머지 분들도 조용히 뒤따릅니다.",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     166,
+     284
+    ],
+    "shape": "box",
+    "en": "PREPARING FOR THE HE NOBLE NO ONES Preparing seats and perfumes, the Queen awaits them. She sends servant, who finds Maha Paduma leaning against the wood. Touching his cold, stiff feet, the servant realizes the noble ones have passed.",
+    "ko": "거룩한 분들을 기다리며\n자리와 향을 마련하고 기다리던 왕비가 시종을 보냅니다. 시종은 나무에 기댄 마하빠두마를 보고, 차갑게 굳은 발을 만져 보고서 그분들이 돌아가셨음을 압니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     374,
+     588,
+     438
+    ],
+    "em": 17,
+    "align": "center",
+    "ko": "왕비는 슬피 웁니다. 백성들이 모여 다비를 치르고,\n왕비는 사리를 거두어 훌륭한 탑을 세웁니다.",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     386,
+     584,
+     444
+    ],
+    "em": 15,
+    "align": "center",
+    "ko": "돌아온 왕이 반열반 소식을 듣고 깨닫습니다.\n“이렇게 지혜로운 분들도 죽음을 피하지 못했구나!\n우리가 어찌 죽음에서 벗어나겠는가?”",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-15-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     230,
+     368
+    ],
+    "shape": "box",
+    "en": "Reno Renouncing uncin the crown rT to his son, the Kine King embraces asceticism. The Queen follows suit. Exchanging material wealth for spiritual liberation, they develop jhana and ascend to the Brahma realms. tis,",
+    "ko": "왕은 왕관을 아들에게 물려주고 출가 수행의 길을 택합니다. 왕비도 뒤를 따릅니다. 재물을 버리고 해탈을 구한 두 사람은 선정을 닦아 범천의 세계에 태어납니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     64,
+     604,
+     128
+    ],
+    "ko": "마지막 생의 출가 수행:\n마하깟사빠와 밧다 까삘라니 이야기",
+    "cover": true,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-17-Original.jpg",
+  "boxes": [
+   {
+    "ko": "부유한 마가다 바라문 집안에서 태어난 뛰어난 두 젊은이가 남몰래 출가를 바랐습니다. 삡팔리는 마하띳타에, 밧다 까삘라니는 사갈라에 살았습니다. 혼인하라는 재촉에 삡팔리는 부모님을 모신 뒤 출가하겠다고 다짐했습니다.",
+    "seed": [
+     61,
+     367
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-18-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     468,
+     65
+    ],
+    "shape": "box",
+    "en": "To deter his mother’s marriage demands, Pippali commissioned magnificent golden statue adorned in red garments. He presented it to her, vowing to remain house- holder only if woman matching its exact beauty was found.",
+    "ko": "혼인하라는 어머니의 재촉을 피하려고 삡팔리는 붉은 옷을 입힌 훌륭한 황금 여인상을 만들게 했습니다. 그리고 이와 똑같이 아름다운 여인을 찾아야만 재가자로 남겠다고 했습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-19-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     34,
+     310
+    ],
+    "shape": "box",
+    "en": "At Sagala bathing ford, Bhadda’s attendant mistook the golden statue for her mistress and struck it. Realizing the truth, she declared Bhadda’ beauty was thousand times greater, effortlessly illuminating dark room, thus securing the match.",
+    "ko": "사갈라의 목욕터에서 밧다의 시녀가 황금상을 제 아씨로 잘못 알고 때렸습니다. 사실을 알고 나서 시녀는 밧다의 아름다움이 천 배나 더해 어두운 방도 환히 밝힌다고 말했고, 혼사가 정해졌습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-20-Original.jpg",
+  "boxes": [
+   {
+    "ko": "두 사람 모두 혼인을 바라지 않았습니다. 삡팔리와 밧다는 몰래 편지를 보내 서로 다른 짝을 찾으라고 했습니다. 그러나 심부름꾼들이 도중에 편지를 찢어 버리고 기쁘게 받아들인다는 가짜 편지를 대신 전했습니다.",
+    "seed": [
+     155,
+     330
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-21-Original.jpg",
+  "boxes": [
+   {
+    "ko": "청정의 약속\n억지로 혼인했지만 두 사람은 끝까지 청정하게 지냈습니다. 침상 가운데를 가른 싱싱한 꽃다발 두 개는 끝내 시들지 않았습니다. 집착 없는 맑은 마음의 표시였습니다.",
+    "seed": [
+     210,
+     355
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-22-Original.jpg",
+  "boxes": [
+   {
+    "ko": "부모님이 돌아가시자 물려받은 재산은 어마어마했습니다. 금 8억 7천만, 마을 열넷, 코끼리 부대 열넷, 물막이 둑 예순. 삡팔리 몸에서 씻겨 나온 금가루만도 날마다 마가다 잔 열두 개를 채웠습니다.",
+    "em": 15,
+    "seed": [
+     15,
+     43
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     18,
+     230,
+     292,
+     266
+    ],
+    "ko": "산더미 같은 금화",
+    "cover": true,
+    "em": 14,
+    "shape": "box",
+    "align": "center",
+    "manual": true
+   },
+   {
+    "rect": [
+     510,
+     230,
+     782,
+     266
+    ],
+    "ko": "물막이 둑",
+    "cover": true,
+    "em": 14,
+    "shape": "box",
+    "align": "center",
+    "manual": true
+   },
+   {
+    "rect": [
+     20,
+     428,
+     290,
+     448
+    ],
+    "ko": "코끼리 부대",
+    "cover": true,
+    "em": 13,
+    "shape": "box",
+    "align": "center",
+    "manual": true
+   },
+   {
+    "rect": [
+     300,
+     428,
+     500,
+     448
+    ],
+    "ko": "마가다 잔과 금가루",
+    "cover": true,
+    "em": 13,
+    "shape": "box",
+    "align": "center",
+    "manual": true
+   },
+   {
+    "rect": [
+     512,
+     428,
+     780,
+     448
+    ],
+    "ko": "마을과 농토",
+    "cover": true,
+    "em": 13,
+    "shape": "box",
+    "align": "center",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-23-Original.jpg",
+  "boxes": [
+   {
+    "ko": "두 사람은 8억 7천만의 재산이 남의 괴로움으로 이루어졌음을 깨달았습니다. 삡팔리는 밭에서 지렁이를 쪼아 먹는 까마귀를, 밧다는 참깨밭에서 벌레를 쪼아 먹는 새를 보았습니다. 큰 재물이 짓는 업의 무게를 더는 견딜 수 없었습니다.",
+    "em": 14,
+    "seed": [
+     580,
+     195
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-24-Original.jpg",
+  "boxes": [
+   {
+    "ko": "집에 돌아온 삡팔리는 모든 재산을 밧다에게 맡기고 출가하겠다고 했습니다. 밧다는 기뻐하며, 자기도 꼭 그렇게 하려고 그가 돌아오기만 기다렸다고 대답했습니다.",
+    "seed": [
+     49,
+     55
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-25-Original.jpg",
+  "boxes": [
+   {
+    "ko": "위대한 출가\n큰 재산을 뒤로하고 두 사람은 머리를 깎고 출가자의 옷을 입고 집 없는 삶으로 나아갔습니다. 그들은 세상의 아라한들을 기리며 출가했습니다.",
+    "seed": [
+     400,
+     356
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-26-Original.jpg",
+  "boxes": [
+   {
+    "ko": "문을 나서는 두 사람을 알아본 하인들이 울며 매달렸습니다. 두 사람은 돌아가지 않고 하인들을 모두 자유롭게 놓아주며, 머리를 감고 종살이를 그만두고 자유롭게 살라고 일렀습니다.",
+    "rect": [
+     296,
+     46,
+     774,
+     144
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-27-Original.jpg",
+  "boxes": [
+   {
+    "ko": "대지를 흔든 이별\n세속의 애정이 남았다는 말이 나지 않도록 두 사람은 영원히 길을 갈랐습니다. 이 지극한 출가에 대지가 울리고 흔들렸습니다.",
+    "rect": [
+     220,
+     358,
+     582,
+     432
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-28-Original.jpg",
+  "boxes": [
+   {
+    "ko": "두 분이 각자의 길을 걷자 대지가 공경하여 흔들렸습니다. 하늘에는 천둥소리가 가득했고, 메루 산과 짝까왈라 산들은 그 덕의 무게를 견디지 못해 솟아올랐습니다.",
+    "seed": [
+     61,
+     365
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-29-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     283,
+     362
+    ],
+    "shape": "box",
+    "en": "Meeting oN the Buddha: as The Ordination Inat ion of Maha Kassapa",
+    "ko": "부처님을 만남:\n마하깟사빠의 구족계",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-30-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     266,
+     350
+    ],
+    "shape": "box",
+    "en": "The Buddha sensed the great earth quaking. Reflecting, he knew: ‘It is the power of Pippali and Bhaddakapilani renouncing their incomparable wealth. must do favour to them.’",
+    "ko": "부처님께서 대지가 크게 흔들리는 것을 아셨습니다. 살펴보시고 아셨습니다. “삡팔리와 밧다 까삘라니가 견줄 데 없는 재산을 버리고 출가한 힘이구나. 내가 이들을 도와야겠다.”",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-31-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     455,
+     324
+    ],
+    "shape": "box",
+    "en": "Walking three miles iles alone, the Buddha waited. To inspire faith, he did not conceal his splendour. Emanating ingara radiance lance like ke thousand suns, he bathed the forest grove in light, turning the Bahuputtaka banyan tree entirely ire ly golden.",
+    "ko": "부처님께서 홀로 3마일을 걸어가 기다리셨습니다. 믿음을 일으키도록 광명을 감추지 않으시고, 천 개의 해 같은 빛을 내뿜어 숲을 비추시니 바후뿟따까 니그로다 나무가 온통 금빛이 되었습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-32-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     110,
+     66
+    ],
+    "shape": "box",
+    "en": "Approaching the radiant teacher, Ven. Maha Kassapa bowed deeply and declared three times: “Satthd me Bhagava, savakoham asmi.” (Exalted Buddha, you are my teacher! Iam am your disciple!)",
+    "ko": "빛나는 스승께 다가간 마하깟사빠 존자는 깊이 엎드려 세 번 아뢰었습니다.\nSatthā me Bhagavā, sāvakohamasmi.\n(세존께서는 저의 스승이시고, 저는 제자입니다!)",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-34-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     154,
+     359
+    ],
+    "shape": "box",
+    "en": "Be seated, dear son Kassapa, shall give you an inheritance. The Buddha delivered three profound pieces of advice Receiving them respectfully became Maha Kassapa’s unique monastic ordination (ovdda-patiggahana-upasampada).",
+    "ko": "“앉아라, 깟사빠여. 너에게 유산을 주겠다.”\n부처님께서 깊은 가르침 세 가지를 주셨고, 이를 공손히 받아 지닌 것이 마하깟사빠만의 구족계가 되었습니다.\novāda-paṭiggahaṇa-upasampadā",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-35-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     57,
+     379
+    ],
+    "shape": "box",
+    "en": "1. Conscience Concern: Abandons Brahmin caste pride.",
+    "ko": "1. 부끄러움과 두려움:\n바라문 가문의 자만을 버림",
+    "align": "center"
+   },
+   {
+    "seed": [
+     329,
+     375
+    ],
+    "shape": "box",
+    "en": "2. Respectful Listening: Abandons arrogance of high intelligence.",
+    "ko": "2. 공손히 들음:\n뛰어난 지혜의 오만을 버림",
+    "align": "center"
+   },
+   {
+    "seed": [
+     591,
+     380
+    ],
+    "shape": "box",
+    "en": "3. Mindfulness of Body: Abandons vanity over physical beauty.",
+    "ko": "3. 몸에 대한 마음챙김:\n잘생긴 몸의 허영을 버림",
+    "align": "center"
+   },
+   {
+    "ko": "세 가지 가르침",
+    "em": 20,
+    "seed": [
+     295,
+     23
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-36-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     187,
+     219
+    ],
+    "shape": "box",
+    "en": "Bearing the 32 marks of great being, the Buddha journeyed forward Ven. Maha Kassapa, graceful with seven marks, followed closely behind him like small golden boat trailing grand one",
+    "ko": "대인의 32상을 갖추신 부처님께서 앞서 걸으셨습니다. 일곱 가지 상을 갖춘 마하깟사빠 존자는 큰 금빛 배를 따르는 작은 금빛 배처럼 바짝 뒤따랐습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-37-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     543,
+     108
+    ],
+    "shape": "box",
+    "en": "Stepping ing off the path to rest, the Buddha hinted he wished to sit For or the master’s welfare, Ven. Maha Kassapa folded his is exceptionally 10na Il soft upper robe fourfold offering it as royal seat",
+    "ko": "길에서 벗어나 쉬시며 부처님께서 앉고 싶다는 뜻을 비치셨습니다.\n스승을 위해 마하깟사빠 존자는 아주 부드러운 자기 윗가사를 네 겹으로 접어 자리로 올렸습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-38-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     458,
+     74
+    ],
+    "shape": "box",
+    "en": "Why exchange robes? The Buddha knew his chief disciples would attain Parinibbana before him. He foresaw Kassapa living 120 years and holding the First Council (Sangayana), ensuring the Dhamma would endure for 5,000 years",
+    "ko": "왜 가사를 바꾸셨을까요? 부처님께서는 두 상수제자가 먼저 반열반에 들 것을 아셨습니다. 깟사빠가 120년을 살며 제1차 결집을 열어 법이 5,000년 동안 이어지게 할 것을 내다보셨습니다.",
+    "align": "center"
+   },
+   {
+    "seed": [
+     667,
+     380
+    ],
+    "shape": "box",
+    "en": "5,000 Years Car",
+    "ko": "5,000년",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-39-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     366,
+     650,
+     438
+    ],
+    "em": 16,
+    "align": "center",
+    "ko": "부처님께서 처음 주우실 때 대지가 흔들렸던 낡은 분소의를 내주셨습니다.\n두 분이 가사를 바꾸자 대지가 다시 크게 흔들렸습니다.",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-40-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     154,
+     383
+    ],
+    "shape": "box",
+    "en": "Receiving the robe brought no arrogance. Kassapa vowed to practice the austere practices (dhutanga). Through profound effort, he became an Arahat with fourfold analytical knowledge (patisambhida-ndna) in just eight days.",
+    "ko": "가사를 받고도 교만하지 않았습니다. 깟사빠는 두타행을 닦기로 서원했고, 힘써 정진하여 단 여드레 만에 네 가지 무애해를 갖춘 아라한이 되었습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-41-Original.jpg",
+  "boxes": [
+   {
+    "ko": "부처님께서는 그의 지극한 온화함을 늘 칭찬하셨습니다.\n\n“비구들이여, 깟사빠는 달처럼 몸과 말과 생각을 다스려 신도들에게 다가간다. 몸과 말과 마음의 거칢이 조금도 없다.”",
+    "em": 20,
+    "seed": [
+     445,
+     95
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Maha-Kassapa-42-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     195,
+     366
+    ],
+    "shape": "box",
+    "en": "The Buddha declared him foremost (efad-agga): “Monks, among my disciples who practice and teach the excellent ascetic practices (dhutanga) which shake off defilements, 3 Maha Kassapa is the foremost.”",
+    "ko": "부처님께서 그를 으뜸(etadagga)으로 선언하셨습니다. “비구들이여, 번뇌를 털어 내는 두타행을 닦고 가르치는 나의 제자 가운데 마하깟사빠가 으뜸이다.”",
+    "align": "center"
+   }
+  ]
+ }
+]
