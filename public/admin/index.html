@@ -45,6 +45,22 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.append(r, l, m);
 });
 </script>
+<script>
+// 책 본문처럼 아주 긴 글 칸이 버벅이지 않게 (운영자 요청, 2026-11-12)
+// ① 맞춤법 검사(빨간 밑줄)를 끔 — 긴 한글 글에서 글자를 칠 때마다 브라우저가 전체를 다시 검사해 느려짐
+// ② 칸 높이를 화면의 70%로 묶고 칸 안에서 넘겨 보게 함 — 글자를 칠 때마다 수만 줄 높이의 화면 전체를 다시 그리지 않게
+(() => {
+  const BIG = 20000;
+  const fix = t => {
+    if (t.value.length < BIG) { if (t.dataset.ddBig) { t.style.maxHeight = ''; t.style.overflowY = ''; delete t.dataset.ddBig; } return; }
+    if (t.dataset.ddBig) return;
+    t.dataset.ddBig = '1';
+    t.spellcheck = false; t.setAttribute('spellcheck', 'false'); t.setAttribute('autocorrect', 'off'); t.setAttribute('autocapitalize', 'off'); t.setAttribute('autocomplete', 'off');
+    t.style.maxHeight = '70vh'; t.style.overflowY = 'auto';
+  };
+  setInterval(() => document.querySelectorAll('textarea').forEach(fix), 800);
+})();
+</script>
 <script src="https://unpkg.com/@sveltia/cms@0.259.0/dist/sveltia-cms.js"></script>
 <script>
 // 책 본문 굵은 글씨: 본문 칸에서 글을 고르면 'B 굵게' 단추가 뜹니다 (Ctrl+B / ⌘+B 도 됨). 고른 글을 **글** 로 감싸고, 이미 굵으면 풀어 줍니다.

@@ -235,6 +235,8 @@ collections:
         label_singular: 목차 항목
         widget: list
         summary: "{{fields.page}}쪽 · {{fields.title}}"
+        collapsed: true
+        minimize_collapsed: true
         hint: "읽기 화면의 목차와 장 나누기에 쓰입니다. 쪽은 아래 본문의 '=== ○쪽 ===' 순서(몇 번째 쪽인지)입니다."
         fields:
           - { name: title, label: 제목 }
