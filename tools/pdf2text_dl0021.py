@@ -87,7 +87,7 @@ def is_sub(a):  # 첨부의 '⑴ 바른 견해', '1) 공통 반드시 - 일곱 �
     return f is not None and ('HYgsrB' in f['font'] or 'YDVYGO' in f['font']) and f['size'] >= 11
 
 
-def glyfix(t):  # 나눔스퀘어 목록 글씨의 '찟'·'뿟' 은 PDF 에 글자 정보 없이 도형으로만 그려져 있음 (6곳, 인쇄본 그림으로 확인)
+def glyfix(t):  # '찟'·'뿟' 이 PDF 에 글자 정보 없이 도형으로만 그려진 곳 7곳 (목록 6곳 + 63쪽 제목, 인쇄본 그림으로 확인)
     return re.sub(r'(\d) 틸라 장로', r'\1 뿟틸라 장로', t.replace(' 따 장자', ' 찟따 장자').replace(' 따핫타', ' 찟따핫타'))
 
 
@@ -112,7 +112,7 @@ def body_and_foot(n, fn_size):
     cx0 = 0
     cur, kind = None, None  # kind: 'p' 문단, 'v' 게송, 'h' 제목, 'li' 목록
     fcur = None
-    lastfoot = False
+    lastfoot = 21 < n < ATT  # 이야기 쪽 맨 위의 작은 글씨 줄은 앞 쪽에서 이어진 각주
     fprev = None
 
     def flush():
@@ -231,6 +231,7 @@ for pg in pages:
     pg[2] = keep
 
 P = {pg[0]: pg for pg in pages}
+P[63][1] = [glyfix(x) if x.startswith('## 38-39') else x for x in P[63][1]]
 CHN = []
 for n in range(6, 20):
     for a in rows(n):
