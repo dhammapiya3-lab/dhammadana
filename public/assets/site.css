@@ -1031,3 +1031,7 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .sub-h .ph,strong .ph,b .ph,h1 .ph,h2 .ph,h3 .ph,h4 .ph{font-synthesis:none;-webkit-text-stroke:.032em currentColor;paint-order:stroke fill}
 
 .get-box .ab-credit{margin:-2px 0 4px;text-align:center}
+/* 출판사·단체 페이지의 가로로 긴 로고 (운영자 요청, 2026-11-11) */
+.pub-logo{flex:none;width:220px;padding:22px 20px;border:1px solid var(--line);border-radius:14px;background:#fff;display:grid;place-items:center}
+.pub-logo img{display:block;width:100%;height:auto}
+@media (max-width:700px){.pub-logo{width:180px;padding:16px}}

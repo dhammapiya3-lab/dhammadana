@@ -424,6 +424,7 @@ collections:
               - { name: partner, label: 협력 단체로 보이기, widget: boolean, default: false }
               - { name: note, label: 짧은 설명, required: false }
               - { name: image, label: 대표 이미지 주소 (선택), required: false, hint: "추천·협력 사이트 카드에 보일 그림 주소. 비워 두면 네이버 카페는 카페 대표 이미지를 자동으로 가져옵니다." }
+              - { name: logo, label: 로고 그림 (출판사·단체 페이지), widget: image, required: false, hint: "가로로 긴 로고는 여기에 — 페이지 이름 왼쪽에 흰 상자로 보입니다. 비워 두면 대표 이미지(둥글게)나 이름 첫 글자." }
               - { name: bio, label: 소개 글 (출판사·단체 페이지), widget: markdown, required: false, hint: "책 소개의 'OO 출간'을 누르면 나오는 페이지에 보입니다. 비워 두면 '소개 글은 준비 중입니다'." }
               - { name: aliases, label: 같은 곳의 다른 이름, widget: list, required: false, hint: "책 정보의 출판사 칸에 다르게 적힌 이름 (예: 我無말들)" }
       - name: permissions
