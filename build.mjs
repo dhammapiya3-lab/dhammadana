@@ -632,7 +632,7 @@ for (const t of TEACHERS) {
     <div><div class="small muted"><a href="/library/">법보시 도서관</a> · ${p.partner ? '협력 단체' : esc(p.kind || '출판사')}</div>
     <h1 class="h-page">${esc(p.name)}</h1>
     ${p.bio ? `<div class="desc small">${marked.parse(p.bio)}</div>` : '<p class="small muted">소개 글은 준비 중입니다.</p>'}
-    ${(p.urls || []).length ? `<p style="margin:8px 0 0">${p.urls.map(u => `<a class="btn sm ghost" href="${esc(u)}" target="_blank" rel="noopener">${esc(p.note || u.replace(/^https?:\/\//, '').replace(/\/$/, ''))} ↗</a>`).join(' ')}</p>` : ''}</div></div>
+    ${(p.urls || []).length ? `<p style="margin:8px 0 0">${p.urls.map((u, i) => `<a class="btn sm ghost" href="${esc(u)}" target="_blank" rel="noopener">${/youtube\.com|youtu\.be/.test(u) ? '▶ 유튜브 채널' : esc((!i && p.note) || u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))} ↗</a>`).join(' ')}</p>` : ''}</div></div>
     <div class="section-head" style="margin-top:20px"><h2>${esc(p.name)}에서 펴낸 책 ${books.length}권</h2></div>
     <div class="grid">${books.map(coverCard).join('')}</div>
     <div class="section-head" style="margin-top:36px"><h2>다른 출판사·단체</h2></div>
