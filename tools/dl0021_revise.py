@@ -1,3 +1,4 @@
+import os
 """『법구경 : 하루를 살더라도』(DL-0021) — 개정판 원고의 장 제목·이야기 제목·게송을 글로 읽기 본문에 넣는다.
   python3 tools/pdf2text_dl0021.py 책.pdf   (인쇄본 PDF → content/texts/DL-0021.json)
   python3 tools/dl0021_revise.py            (그 위에 개정판 원고 tools/dl0021_rev.json 을 덮어씀)
@@ -161,6 +162,13 @@ for i, (mk, ps) in enumerate(P):
     for p in ps:
         if re.match(r'## \d', p): subs.append({'title': re.sub(r'\[\^[^\]]+\]', '', p[3:]).strip(), 'page': i + 1, 'sub': True})
 allt = sorted(toc + subs, key=lambda t: (t['page'], t['sub']))
+# ---- 판권지: 운영자가 관리자 화면에서 고친 개정판 판권지(tools/dl0021_colophon.txt)로 ----
+CK = '=== 511쪽 ===\n**법구경_ 하루를 살더라도**\n\n'
+CF = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'dl0021_colophon.txt')
+if os.path.exists(CF) and CK in body:
+    col = open(CF, encoding='utf-8').read()
+    nb = body[:body.index(CK) + len(CK)] + col
+    if nb != body: body = nb; log.append('판권지: 개정판 판권지로')
 doc['body'], doc['toc'] = body, allt
 json.dump(doc, open(T, 'w'), ensure_ascii=False, indent=2); open(T, 'a').write('\n')
 # ---- 7. 책 소개 페이지의 목차(content/books/DL-0021.json contents) ----
