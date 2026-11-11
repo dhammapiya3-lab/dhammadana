@@ -47,18 +47,44 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 <script>
 // 책 본문처럼 아주 긴 글 칸이 버벅이지 않게 (운영자 요청, 2026-11-12)
-// ① 맞춤법 검사(빨간 밑줄)를 끔 — 긴 한글 글에서 글자를 칠 때마다 브라우저가 전체를 다시 검사해 느려짐
-// ② 칸 높이를 화면의 70%로 묶고 칸 안에서 넘겨 보게 함 — 글자를 칠 때마다 수만 줄 높이의 화면 전체를 다시 그리지 않게
+// 관리 화면(Sveltia)은 글자 하나 칠 때마다 책 본문 전체를 다시 계산해서 느려짐 →
+// 긴 칸(2만 자 넘음)은 그 자리에 가벼운 '빠른 입력 칸'을 겹쳐 두고, 거기서 치는 글은
+// 손을 1초 멈추거나 · 칸 밖을 누르거나 · 저장 단추를 누르기 직전에 한꺼번에 관리 화면으로 넘김.
+// 맞춤법 검사(빨간 밑줄)도 끔.
 (() => {
-  const BIG = 20000;
-  const fix = t => {
-    if (t.value.length < BIG) { if (t.dataset.ddBig) { t.style.maxHeight = ''; t.style.overflowY = ''; delete t.dataset.ddBig; } return; }
-    if (t.dataset.ddBig) return;
-    t.dataset.ddBig = '1';
-    t.spellcheck = false; t.setAttribute('spellcheck', 'false'); t.setAttribute('autocorrect', 'off'); t.setAttribute('autocapitalize', 'off'); t.setAttribute('autocomplete', 'off');
-    t.style.maxHeight = '70vh'; t.style.overflowY = 'auto';
+  const BIG = 20000, WAIT = 1000, pairs = new Map();  // 원래 칸 → { fast, last, timer, dirty }
+  const push = (orig, o) => {  // 빠른 칸의 글을 관리 화면으로
+    clearTimeout(o.timer); o.timer = 0;
+    if (!o.dirty) return; o.dirty = false;
+    if (orig.value === o.fast.value) return;
+    const set = Object.getOwnPropertyDescriptor(HTMLTextAreaElement.prototype, 'value').set;
+    set.call(orig, o.fast.value); o.last = o.fast.value;
+    orig.dispatchEvent(new Event('input', { bubbles: true })); orig.dispatchEvent(new Event('change', { bubbles: true }));
   };
-  setInterval(() => document.querySelectorAll('textarea').forEach(fix), 800);
+  const flushAll = () => pairs.forEach((o, orig) => push(orig, o));
+  const make = orig => {
+    const fast = document.createElement('textarea');
+    fast.className = 'dd-fast'; fast.value = orig.value; fast.spellcheck = false;
+    ['spellcheck', 'autocorrect', 'autocapitalize', 'autocomplete'].forEach(k => fast.setAttribute(k, k === 'spellcheck' ? 'false' : 'off'));
+    fast.style.cssText = 'display:block;width:100%;height:70vh;box-sizing:border-box;font:15px/1.7 ui-monospace,monospace,sans-serif;padding:10px 12px;border:1px solid #c9b8a6;border-radius:8px;resize:vertical;white-space:pre-wrap;background:#fff;color:#222';
+    const o = { fast, last: orig.value, timer: 0, dirty: false };
+    fast.addEventListener('input', () => { o.dirty = true; clearTimeout(o.timer); o.timer = setTimeout(() => push(orig, o), WAIT); });
+    fast.addEventListener('blur', () => push(orig, o));
+    orig.style.display = 'none';
+    orig.insertAdjacentElement('afterend', fast);
+    pairs.set(orig, o);
+  };
+  setInterval(() => {
+    document.querySelectorAll('textarea:not(.dd-fast)').forEach(t => { if (!pairs.has(t) && t.value.length >= BIG) make(t); });
+    pairs.forEach((o, orig) => {
+      if (!orig.isConnected) { o.fast.remove(); pairs.delete(orig); return; }
+      if (!o.dirty && orig.value !== o.last) { o.fast.value = orig.value; o.last = orig.value; }  // 다른 책을 열었거나 되돌린 경우
+    });
+  }, 700);
+  // 저장·다른 화면 단추를 누르기 직전, Ctrl+S 직전에 먼저 넘김
+  document.addEventListener('pointerdown', e => { if (!e.target.closest || !e.target.closest('.dd-fast')) flushAll(); }, true);
+  document.addEventListener('keydown', e => { if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') flushAll(); }, true);
+  addEventListener('beforeunload', flushAll);
 })();
 </script>
 <script src="https://unpkg.com/@sveltia/cms@0.259.0/dist/sveltia-cms.js"></script>
