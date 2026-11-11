@@ -101,7 +101,7 @@
       "published_ebook": "2026년 11월 11일",
       "publisher_ebook": "我無말들",
       "isbn_ebook": "",
-      "changes": "",
+      "changes": "게송 번역 및 각주 일부 수정",
       "hide_update": false,
       "pdf": {
         "mode": "none",
@@ -143,6 +143,6 @@
   "license": "CC BY-NC-SA",
   "added": "2026-11-11",
   "order": null,
-  "hidden": true,
+  "hidden": false,
   "hide_update": false
 }
