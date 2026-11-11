@@ -115,6 +115,30 @@
       "partner": true,
       "note": "네이버 카페 · cafe.naver.com/panditarama",
       "image": "/uploads/partner-panditarama.jpg"
+    },
+    {
+      "id": "shweoomin-mm",
+      "name": "쉐우민 수행센터",
+      "kind": "출판사",
+      "urls": [],
+      "partner": false,
+      "note": ""
+    },
+    {
+      "id": "saramnamu",
+      "name": "사람과나무",
+      "kind": "출판사",
+      "urls": [],
+      "partner": false,
+      "note": ""
+    },
+    {
+      "id": "bulbangil",
+      "name": "불방일",
+      "kind": "출판사",
+      "urls": [],
+      "partner": false,
+      "note": ""
     }
   ]
 }
