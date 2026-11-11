@@ -526,7 +526,7 @@ function libraryBody() {
     <label class="small muted" style="margin-top:6px"><input type="checkbox" id="showEmpty">준비 중인 전통도 보기</label>
     <h3>주제</h3>${topics}
     <details class="fgroup person-group"><summary class="group-name">지은이·옮긴이</summary>${[...PEOPLE.by.values()].map(o => ({ ...o, n: LIB().filter(b => peopleOf(b).includes(o.key)).length })).filter(o => o.n).sort((a, c) => c.n - a.n || a.name.localeCompare(c.name, 'ko')).map(o => chk('person', o.key, esc(o.name), o.n)).join('')}</details>
-    <h3>출판사</h3>${PUBS().map(x => chk('pub', x.key, esc(x.name), LIB().filter(b => pubsAll(b).some(p => p.key === x.key)).length)).join('')}
+    <h3>협력 단체</h3>${PUBS().map(x => chk('pub', x.key, esc(x.name), LIB().filter(b => pubsAll(b).some(p => p.key === x.key)).length)).join('')}
     <h3>책 형식</h3>${BTYPES.map(k => chk('btype', k, esc(k), LIB().filter(b => b.book_type === k).length)).join('')}
     ${LANGS.length ? `<h3>원서의 언어</h3>${LANGS.map(l => chk('lang', l, esc(l), LIB().filter(b => b.original_language === l).length)).join('')}` : ''}
     <h3>형식</h3>${['PDF', 'EPUB', '온라인 읽기', '오디오북'].map(f => [f, LIB().filter(b => fmtsCard(b).some(x => x.k === f)).length]).filter(([f, n]) => n).map(([f, n]) => chk('fmt', f, f, n)).join('')}
