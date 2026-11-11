@@ -153,6 +153,14 @@
       "urls": [],
       "partner": false,
       "note": ""
+    },
+    {
+      "id": "bulgyosidae",
+      "name": "불교시대사",
+      "kind": "출판사",
+      "urls": [],
+      "partner": false,
+      "note": ""
     }
   ]
 }
