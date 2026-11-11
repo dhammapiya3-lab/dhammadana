@@ -506,7 +506,8 @@ put('press/support/index.html', layout({ title: '후원계좌', nav: 'press', pa
 
 // 도서관
 const PUBS = () => { const m = new Map(); for (const b of LIB()) for (const p of pubsAll(b)) { const o = m.get(p.key) || { key: p.key, names: {}, n: 0 }; o.names[p.name] = (o.names[p.name] || 0) + 1; o.n++; m.set(p.key, o); }
-  return [...m.values()].map(o => ({ key: o.key, name: Object.entries(o.names).sort((a, b) => b[1] - a[1])[0][0], n: o.n })).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, 'ko')); };
+  return [...m.values()].filter(o => { const p = provOfPub(o.key); return !(p && p.coop === false); })  // 협력 단체가 아닌 출판사(불교시대사 등)는 찾아보기에 안 넣음 (운영자 요청, 2026-11-12)
+    .map(o => ({ key: o.key, name: Object.entries(o.names).sort((a, b) => b[1] - a[1])[0][0], n: o.n })).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, 'ko')); };
 const BTYPES = ['경전', '예불집', '법문집', '해설서', '잠언집', '수행기', '사전'];
 const LANGS = ['빠알리어', '영어', '미얀마어', '태국어', '싱할라어', '한국어', '기타'].filter(l => LIB().some(b => b.original_language === l));
 function libraryBody() {
@@ -632,7 +633,7 @@ for (const t of TEACHERS) {
   for (const b of LIB()) for (const x of pubsAll(b)) { const p = provOfPub(x.key); if (!p || p.id === 'amumaldeul') continue; if (!PUBS.has(p.id)) PUBS.set(p.id, { p, books: [] }); const o = PUBS.get(p.id); if (!o.books.includes(b)) o.books.push(b); }
   for (const { p, books } of PUBS.values()) put(`publisher/${p.id}/index.html`, layout({
     title: p.name, nav: 'library', page: 'teacher', desc: `${p.name}에서 펴낸 책 ${books.length}권 — 붓다담마 법보시 도서관`, body: `<div class="wrap"><div class="teacher-head">${p.logo ? `<div class="pub-logo"><img src="${esc(p.logo)}" alt="${esc(p.name)} 로고"></div>` : `<div class="portrait" aria-hidden="true">${p.image ? `<img src="${esc(p.image)}" alt="">` : esc(p.name.replace(/^\(.*?\)/, '')[0])}</div>`}
-    <div><div class="small muted"><a href="/library/">법보시 도서관</a> · 협력 단체</div>
+    <div><div class="small muted"><a href="/library/">법보시 도서관</a> · ${p.coop === false ? '출판사' : '협력 단체'}</div>
     <h1 class="h-page">${esc(p.name)}</h1>
     ${p.bio ? `<div class="desc small">${marked.parse(p.bio)}</div>` : '<p class="small muted">소개 글은 준비 중입니다.</p>'}
     ${(p.urls || []).length ? `<p style="margin:8px 0 0">${p.urls.map((u, i) => `<a class="btn sm ghost" href="${esc(u)}" target="_blank" rel="noopener">${/youtube\.com|youtu\.be/.test(u) ? '▶ 유튜브 채널' : esc((!i && p.note) || u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))} ↗</a>`).join(' ')}</p>` : ''}</div></div>

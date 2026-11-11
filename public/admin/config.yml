@@ -423,6 +423,7 @@ collections:
               - { name: kind, label: 종류, widget: select, options: [출판사, 단체, 승원·사원, 개인, 기타] }
               - { name: urls, label: 사이트 주소들, widget: list, required: false }
               - { name: partner, label: 협력 단체로 보이기, widget: boolean, default: false }
+              - { name: coop, label: "도서관 찾아보기 '협력 단체'에 넣기", widget: boolean, default: true, required: false, hint: "끄면 찾아보기 목록에 안 나오고, 이곳 페이지에 '협력 단체' 대신 '출판사'로 보입니다 (예: 불교시대사)." }
               - { name: note, label: 짧은 설명, required: false }
               - { name: image, label: 대표 이미지 주소 (선택), required: false, hint: "추천·협력 사이트 카드에 보일 그림 주소. 비워 두면 네이버 카페는 카페 대표 이미지를 자동으로 가져옵니다." }
               - { name: logo, label: 로고 그림 (출판사·단체 페이지), widget: image, required: false, hint: "가로로 긴 로고는 여기에 — 페이지 이름 왼쪽에 흰 상자로 보입니다. 비워 두면 대표 이미지(둥글게)나 이름 첫 글자." }
