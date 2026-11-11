@@ -6,7 +6,7 @@
   "byline": "찬매 사야도 우 자나까비왐사 법문",
   "translator": "정원 김재성 옮김",
   "teacher": "chanmyay",
-  "provider": "amumaldeul",
+  "provider": "metta-insight",
   "press": true,
   "paper": "request",
   "paper_url": "",
@@ -97,5 +97,6 @@
   "added": "2026-11-08",
   "order": null,
   "hidden": false,
-  "hide_update": false
+  "hide_update": false,
+  "provider_chip": true
 }
