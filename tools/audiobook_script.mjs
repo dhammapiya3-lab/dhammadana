@@ -96,7 +96,10 @@ const sino = n => { n = String(+n); if (n === '0') return '영'; const D = '영�
 const NATIVE = n => { n = +n; if (n < 1 || n > 99) return null; const T = ['', '열', '스물', '서른', '마흔', '쉰', '예순', '일흔', '여든', '아흔'], O = ['', '한', '두', '세', '네', '다섯', '여섯', '일곱', '여덟', '아홉'];
   const t = Math.floor(n / 10), o = n % 10; return (o === 0 && t === 2 ? '스무' : T[t]) + O[o]; };
 // 모든 아라비아 숫자를 한글 소리로 (음성 엔진이 숫자를 한 자씩 읽는 일이 많음: 2024 → 이영이사, 30일 → 삼영일). 0으로 시작하는 번호는 한 자씩
-const sayNum = s => s.replace(/(\d)\s?:\s?(?=\d)/g, '$1, ').replace(/\d+(?=(\s?)(개(?!월)|명|마리|살|번째|번|가지)?)/g, (d, sp, unit) => {
+// 동그라미 번호(① ➀ ❶ …)는 음성 엔진이 소리 없이 건너뛰므로 숫자로 바꿔 읽음 — 줄 첫머리는 '일. …', 글 가운데는 ', 일, …' (운영자 요청, 2026-11-13 — DL-0016)
+const CIRC = c => { const u = c.codePointAt(0); return u >= 0x2460 && u <= 0x2473 ? u - 0x245F : u >= 0x2780 && u <= 0x2789 ? u - 0x277F : u >= 0x2776 && u <= 0x277F ? u - 0x2775 : u >= 0x278A && u <= 0x2793 ? u - 0x2789 : 0; };
+const circNum = s => s.replace(/(^|\n)\s*([\u2460-\u2473\u2776-\u2793])\s*/g, (m, a, c) => a + CIRC(c) + '. ').replace(/([.,?!:;]?)[,\s]*([\u2460-\u2473\u2776-\u2793])\s*(?=(.{0,2}))/g, (m, p, c, nx) => (p ? p + ' ' : ', ') + CIRC(c) + (!nx || /^[~,.)\]]|^번|^[의과와이가은는을를도](?![가-힣])/.test(nx) ? '' : ', ')).replace(/,(\s*,)+/g, ',').replace(/^, /, '');   // 글 가운데: 앞뒤로 짧게 쉼 ('…그것은, 일, 태어남, 이, 늙음 …'), 바로 뒤에 '번·의' 등이 붙으면 쉬지 않음
+const sayNum = s => circNum(s).replace(/(\d)\s?:\s?(?=\d)/g, '$1, ').replace(/\d+(?=(\s?)(개(?!월)|명|마리|살|번째|번|가지)?)/g, (d, sp, unit) => {
   if (d.length > 1 && d[0] === '0') return d.split('').map(c => '영일이삼사오육칠팔구'[+c]).join(' ');
   if (unit && unit !== '번' && NATIVE(d)) return NATIVE(d);
   return sino(d); });
