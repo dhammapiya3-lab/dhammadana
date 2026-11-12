@@ -1,0 +1,391 @@
+[
+ {
+  "img": "images/07-Lakundaka-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     30,
+     628,
+     88
+    ],
+    "ko": "라꾼따까 밧디야 존자의 업의 두루마리\n여러 겁에 걸친 원인과 결과, 그리고 궁극의 깨달음",
+    "cover": true,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     8,
+     630,
+     38
+    ],
+    "ko": "업의 짜임: 씨앗과 열매",
+    "cover": true,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     54,
+     138,
+     306,
+     163
+    ],
+    "ko": "행위: 달콤한 망고를 올림",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     458,
+     138,
+     752,
+     163
+    ],
+    "ko": "결과: 고운 목소리로 으뜸",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     54,
+     274,
+     306,
+     298
+    ],
+    "ko": "행위: 탑의 크기를 줄임",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     458,
+     274,
+     752,
+     298
+    ],
+    "ko": "결과: 난쟁이처럼 작은 몸",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     54,
+     420,
+     300,
+     444
+    ],
+    "ko": "행위: 위빳사나 수행",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     456,
+     420,
+     746,
+     444
+    ],
+    "ko": "결과: 궁극의 깨달음(아라한)",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     284,
+     190,
+     516,
+     312
+    ],
+    "ko": "10만 겁 전: 서원\n함사와띠의 부유한 재가자가\n빠두뭇따라 부처님께 이레 동안\n공양을 올렸습니다. 그의 바람은 하나,\n미래 부처님의 가르침에서 목소리가 고운\n비구 가운데 으뜸이 되는 것이었습니다.\n부처님께서 그 성취를 확인해 주셨습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     518,
+     160,
+     740,
+     308
+    ],
+    "ko": "찟따빳따 뻐꾸기로 살던 생\n위빳시 부처님 때 미래의 밧디야는\n뻐꾸기였습니다. 부처님을 뵙고\n기뻐서 날아가던 길을 바꾸어\n잘 익은 망고 하나를\n발우에 떨어뜨렸습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     546,
+     256,
+     738,
+     394
+    ],
+    "ko": "고운 목소리의 씨앗\n보시에 크게 기뻐한 뻐꾸기는\n이레 동안 먹지도 않고\n부처님의 덕을 떠올렸습니다.\n이 맑고 한결같은 기쁨이\n뒷날 여러 생의 고운 목소리를\n얻게 한 업의 원인이 되었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     494,
+     312,
+     740,
+     422
+    ],
+    "ko": "줄어든 탑\n깟사빠 부처님 반열반 뒤 신도들이\n사리탑의 크기를 두고 의논했습니다.\n우두머리 목수가 나서서, 나중에 쉽게\n보수할 수 있도록 7요자나로 계획한 탑을\n1요자나로 크게 줄였습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     362,
+     614,
+     446
+    ],
+    "ko": "업의 법칙\n업의 법칙은 한 치도 어긋나지 않습니다. 위없는 부처님의 탑 크기를\n일부러 줄였기에, 목수는 그 뒤 모든 생에서\n난쟁이처럼 아주 작은 몸으로 태어났습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     146,
+     54,
+     306,
+     84
+    ],
+    "ko": "원인",
+    "cover": true,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     492,
+     54,
+     664,
+     84
+    ],
+    "ko": "결과",
+    "cover": true,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     366,
+     614,
+     446
+    ],
+    "ko": "사왓티에서 맞은 마지막 생\n밧디야로 태어난 그는 몸집은 작았지만 믿음은 컸습니다.\n고따마 부처님 아래 출가하여, 굳세고 더럽혀지지 않은\n마음을 기르는 수행 지도를 직접 받았습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     362,
+     614,
+     446
+    ],
+    "ko": "말라 버린 갈애의 강\n사리뿟따 존자의 이끎으로 밧디야는 아라한이 되었습니다.\n중생을 윤회에 묶는 더러운 갈애의 강이\n아라한도의 햇빛에 영원히 말라 버렸습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     360,
+     614,
+     446
+    ],
+    "ko": "겉모습의 착각\n범부 비구들은 밧디야의 작은 몸을 놀렸지만 그의 마음은 흔들리지 않았습니다.\n놀리는 이들이 나쁜 업을 짓지 않도록 자비로운 밧디야는\n말없이 그들 뒤를 따라 걸었습니다. 성냄의 족쇄에서 완전히 벗어나 있었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     175,
+     148
+    ],
+    "shape": "box",
+    "en": "Wheel: Flawless Morality",
+    "ko": "바퀴:\n흠 없는 계",
+    "align": "center"
+   },
+   {
+    "seed": [
+     111,
+     251
+    ],
+    "shape": "box",
+    "en": "Spokes: Incomparable Mindfulness",
+    "ko": "바퀴살:\n비할 데 없는 마음챙김",
+    "align": "center"
+   },
+   {
+    "seed": [
+     113,
+     329
+    ],
+    "shape": "box",
+    "en": "Wheel: Flawless Morality",
+    "ko": "바퀴:\n흠 없는 계",
+    "align": "center"
+   },
+   {
+    "rect": [
+     140,
+     38,
+     662,
+     98
+    ],
+    "ko": "흠 없는 수레의 짜임\n고따마 부처님께서는 수레의 짜임에 빗대어 밧디야의 안의 완전함을 드러내셨습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     360,
+     614,
+     446
+    ],
+    "ko": "선정의 달인\n겉은 작아도 속은 거인이었습니다. 부처님께서는 밧디야가\n색계·무색계 선정과 과의 증득을 모두 익혀\n큰 신통을 지녔다고 밝히셨습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Lakundaka-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     364,
+     614,
+     444
+    ],
+    "ko": "으뜸의 영예를 이루다\n“비구들이여, 라꾼따까 밧디야는 목소리가 고운 나의 제자 가운데 으뜸이다.”\n10만 겁 전 부유한 재가자로서 심은 서원이 마침내 아름답게 이루어졌습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
