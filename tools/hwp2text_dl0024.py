@@ -9,7 +9,7 @@ import sys, os, re, json, subprocess, io, struct, collections
 import xml.etree.ElementTree as ET
 
 src = sys.argv[1]
-BK, ED = 'DL-0024', ''   # 책 정보의 지금 판은 '초판'(2008) — 한글 파일은 5판(2026)이라 판 이름을 비워 둠
+BK, ED = 'DL-0024', '5판'
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WORK = '/tmp/dl0024'
 os.makedirs(WORK, exist_ok=True)
