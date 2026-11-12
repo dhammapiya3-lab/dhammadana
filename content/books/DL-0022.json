@@ -61,10 +61,10 @@
         "created": ""
       },
       "pdf_print": {
-        "mode": "file",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0022/DL-0022_초판_인쇄용.pdf"
       },
       "pdf_cover": {
         "mode": "file",
