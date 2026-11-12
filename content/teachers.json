@@ -462,6 +462,36 @@
       "bio": "",
       "photo": "",
       "rank": 395
+    },
+    {
+      "id": "jootla",
+      "name": "수잔 엘바움 주틀라",
+      "roman": "Susan Elbaum Jootla",
+      "aliases": [],
+      "tradition": "scholar",
+      "bio": "",
+      "photo": "",
+      "rank": 396
+    },
+    {
+      "id": "lilydesilva",
+      "name": "릴리 드 실바",
+      "roman": "Lily de Silva",
+      "aliases": [],
+      "tradition": "scholar",
+      "bio": "",
+      "photo": "",
+      "rank": 397
+    },
+    {
+      "id": "walshe",
+      "name": "엠 오 시 월슈",
+      "roman": "M. O’ C. Walsh",
+      "aliases": [],
+      "tradition": "scholar",
+      "bio": "",
+      "photo": "",
+      "rank": 398
     }
   ]
 }
