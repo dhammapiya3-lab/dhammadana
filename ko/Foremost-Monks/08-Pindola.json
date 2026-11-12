@@ -1,0 +1,233 @@
+[
+ {
+  "img": "images/08-Pindola-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     358,
+     146,
+     726,
+     304
+    ],
+    "ko": "사자후:\n삔돌라 바라드와자 존자의\n업 이야기",
+    "cover": true,
+    "align": "center",
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Pindola-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     310,
+     62,
+     690,
+     200
+    ],
+    "ko": "여러 겁 전, 한 사자가 깊은 선정에 들어 허공에 머무신\n빠두뭇따라 부처님을 보았습니다. 이 기적에 감동한\n사자는 이레 동안 정성껏 꽃자리를 만들어 올려,\n궁극의 깨달음으로 이어질 업의 씨앗을 심었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Pindola-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     320,
+     766,
+     416
+    ],
+    "ko": "상인의 아들로 다시 태어난 그는 대담하게 진리를 말한다고 칭찬받는 비구를 보았습니다.\n그는 이레 동안 공양을 올리며 바로 그 영예를 얻겠다고 서원했습니다. 부처님께서는\n그의 성취를 예언하셨고, 그는 10만 겁 동안 괴로운 세상에 떨어지지 않았습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Pindola-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     146,
+     54,
+     660,
+     174
+    ],
+    "ko": "라자가하에 태어난 바라드와자는 베다를 익혔지만 먹을 것에\n대한 욕심에 빠졌습니다. 공양을 베푸는 곳마다 죽과 밥을\n찾아다녀서 ‘삔돌라’, 곧 먹을 것을 쫓는 이라는 별명을 얻었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Pindola-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     366,
+     52,
+     766,
+     412
+    ],
+    "ko": "비구가 된 뒤에도 그의 욕심은\n아주 큰 발우로 남아 있었습니다.\n\n평상 밑에 둔 그 큰 발우는 거친 돌바닥에\n거듭 쓸리고 닳아 보통 크기의 그릇이\n되었습니다. 세속의 집착이 몸으로\n갈려 나간 것입니다.",
+    "cover": true,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Pindola-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     466,
+     282,
+     788,
+     440
+    ],
+    "ko": "아라한이 된 삔돌라는 한 상인이 높이\n매달아 둔 전단향 나무 발우를\n신통으로 가져왔습니다. 부처님께서는\n그를 엄하게 꾸짖으셨습니다. 하찮은 물건을\n얻으려고 인간을 넘어선 법을 보이는 것은\n금지된 일입니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Pindola-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     62,
+     377
+    ],
+    "shape": "box",
+    "en": "Reproached: Performing magical feats for material reward",
+    "ko": "꾸짖으심: 물건을 얻으려고\n신통을 부리는 것",
+    "align": "center"
+   },
+   {
+    "seed": [
+     444,
+     377
+    ],
+    "shape": "box",
+    "en": "Praised: The ‘True Miracle’ of boldly declaring one’s Awakening and the fi end of suffering.",
+    "ko": "칭찬하심: 자신의 깨달음과 괴로움의 끝을\n대담하게 밝히는 ‘참된 기적’",
+    "align": "center"
+   },
+   {
+    "rect": [
+     34,
+     34,
+     766,
+     82
+    ],
+    "ko": "부처님께서는 신통을 보이는 일에 분명한 선을 그으셨습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Pindola-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     255,
+     26
+    ],
+    "shape": "box",
+    "en": "How did the gluttonous seeker attain perfection? Through Three Faculties:",
+    "ko": "먹을 것을 쫓던 이가 어떻게 완성에 이르렀을까요?\n세 가지 기능으로써입니다.",
+    "align": "center"
+   },
+   {
+    "seed": [
+     74,
+     318
+    ],
+    "shape": "box",
+    "en": "1. Mindfulness (satindriya) Gatindriva))",
+    "ko": "1. 마음챙김(satindriya)",
+    "align": "center"
+   },
+   {
+    "seed": [
+     287,
+     319
+    ],
+    "shape": "box",
+    "en": "2. Concentration (samadhindriya)",
+    "ko": "2. 삼매(samādhindriya)",
+    "align": "center"
+   },
+   {
+    "seed": [
+     558,
+     320
+    ],
+    "shape": "box",
+    "en": "Ete 3. Wisdom (pafinindriya)",
+    "ko": "3. 지혜(paññindriya)",
+    "align": "center"
+   },
+   {
+    "rect": [
+     226,
+     386,
+     576,
+     444
+    ],
+    "ko": "이 힘들을 닦아 그는 태어남과 늙음과 죽음의\n윤회를 영원히 끊었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Pindola-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     368,
+     778,
+     440
+    ],
+    "ko": "“도와 과에 의심이 있는 이는 나에게 물으십시오!”\n부처님께서는 삔돌라 바라드와자 존자를 두려움 없이 사자후를 토하는 제자 가운데 으뜸이라고 선언하셨습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
