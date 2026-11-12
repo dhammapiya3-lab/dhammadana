@@ -202,6 +202,9 @@ def flush_fn(page_paras):
 
 story_no = None
 i = 0
+# 1쪽(반표제: 제목 그림·옛길)은 3쪽 속표지와 겹치므로 뺌 (운영자 요청, 2026-11-12)
+HALF = blocks[0]['pg']
+blocks = [b for b in blocks if b['pg'] != HALF]
 cur_raw = blocks[0]['pg']
 new_page()
 prev_pg = blocks[0]['pg']
@@ -249,7 +252,7 @@ for bi, b in enumerate(blocks):
     sty, t = b['sty'], b['t']
     tt = t.strip()
     # 장(챕터) 시작
-    if b['pg'] == 1 and not chapters: chapter('속표지')
+    if not chapters: chapter('속표지')
     if b['pg'] == 4 and not any(c[0] == '여는 글' for c in chapters):
         close_grp();
         if out_pages[-1]: end_page(); new_page()
