@@ -51,10 +51,10 @@
         "created": "2026년 11월 3일"
       },
       "pdf_print": {
-        "mode": "file",
-        "url": "pdf/DL-0005/DL-0005_개정3판_인쇄용.pdf",
         "site": "",
-        "created": "2026년 11월 4일"
+        "created": "2026년 11월 4일",
+        "mode": "file",
+        "url": "pdf/DL-0005/DL-0005_개정3판_인쇄용.pdf"
       },
       "pdf_cover": {
         "mode": "file",
