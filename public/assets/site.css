@@ -1039,3 +1039,7 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 
 /* 『법구경 : 하루를 살더라도』: 배경 이야기가 각주라 각주 글자를 크게 (운영자 요청, 2026-11-12) */
 #reader[data-book="DL-0021"] .reflow p.fn{font-size:.95em;line-height:1.75}
+
+/* 표 그림 내려받기 단추 (운영자 요청, 2026-11-12) */
+.r-tdl{text-align:right;margin:.4em 0 1.2em}
+.r-tdl .tbtn{font-size:.85em;text-decoration:none}

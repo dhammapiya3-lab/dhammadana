@@ -1,6 +1,7 @@
 """『법구경 이야기 1』(DL-0023) 해제의 표 두 개 — 과거 스물네 분의 붓다, 붓다의 안거 장소 — 를 내려받을 그림(PNG)으로 만듦.
   python3 tools/dl0023_tables.py 책.hwp [출력 폴더]
 글자·칸 합치기(rowspan·colspan)는 한글 파일의 표 그대로. 결과: <출력 폴더>/법구경이야기1_과거24붓다.png, 법구경이야기1_붓다의안거장소.png
+사이트 읽기 화면 표 아래 '그림으로 내려받기' 단추용으로 public/uploads/DL-0023-table-24buddhas.png·DL-0023-table-vassa.png 에도 복사해 둠.
 """
 import sys, os, subprocess, html
 import xml.etree.ElementTree as ET
@@ -13,7 +14,7 @@ if not os.path.exists(xmlp):
     with open(xmlp, 'wb') as f: subprocess.run(['hwp5proc', 'xml', src], stdout=f, check=True)
 root = ET.parse(xmlp).getroot()
 
-FIXES = [('짝꾸빨라', '짝쿠빨라'), ('디팡까라', '디빵까라')]   # hwp2text_dl0023.py 의 FIXES 와 같게 (운영자가 고친 표기)
+FIXES = [('짝꾸빨라', '짝쿠빨라'), ('디팡까라', '디빵까라'), ('Aṭṭakathā', 'Aṭṭhakathā')]   # hwp2text_dl0023.py 의 FIXES 와 같게 (운영자가 고친 표기)
 
 def ctext(c):
     ps = []
@@ -61,4 +62,5 @@ with sync_playwright() as pw:
         path = os.path.join(out, fname + '.png')
         pg.locator('.w').screenshot(path=path)
         print(path)
+        import shutil; shutil.copy(path, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'public/uploads', 'DL-0023-table-' + ('24buddhas' if first == '연대' else 'vassa') + '.png'))
     br.close()

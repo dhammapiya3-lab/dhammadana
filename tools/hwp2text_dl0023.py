@@ -43,6 +43,8 @@ def bindata(n):
 IMG = {}   # bindata-id → (주소, 설명)
 def save_jpg(n, name):
     from PIL import Image
+    if name == 'title' and os.path.exists(os.path.join(REPO, 'public/uploads', f'{BK}-title.jpg')):
+        return f'/uploads/{BK}-title.jpg'   # 제목 그림은 셋째 줄 'Aṭṭakathā'를 'Aṭṭhakathā'로 고쳐 그린 것을 그대로 씀 (운영자 요청, 2026-11-12)
     fn, raw = bindata(n)
     im = Image.open(io.BytesIO(raw)).convert('RGB')
     out = f'/uploads/{BK}-{name}.jpg'; im.save(os.path.join(REPO, 'public', out.lstrip('/')), quality=88)
@@ -63,7 +65,7 @@ def save_ole(n, name):  # OLE 안의 메타파일 도표 → PNG (LibreOffice �
     out = f'/uploads/{BK}-{name}.png'; im.save(os.path.join(REPO, 'public', out.lstrip('/')))
     return out
 
-PICS = {1: ('title', '#법구경 이야기 1 — 법구경 주석서 Dhammapada Aṭṭakathā'), 5: ('title', '#법구경 이야기 1 — 법구경 주석서 Dhammapada Aṭṭakathā'),
+PICS = {1: ('title', '#법구경 이야기 1 — 법구경 주석서 Dhammapada Aṭṭhakathā'), 5: ('title', '#법구경 이야기 1 — 법구경 주석서 Dhammapada Aṭṭhakathā'),
         3: ('yetgil', '#옛길'), 7: ('yetgil', '#옛길'), 11: ('wheel', '#법륜')}
 SKIP_BIN = {2, 4, 6, 10, 12, 13, 14}   # 같은 자리의 EPS(인쇄용) 그림 — 같은 그림의 JPG 를 씀
 OLES = {8: ('sakya', '#사끼야 족 가계도'), 9: ('koliya', '#꼴리야 족 가계도')}
@@ -326,13 +328,14 @@ for lab, ps in zip(LABELS, out_pages):
     body += f'=== {lab}쪽 ===\n' + '\n\n'.join(x for x in ps if x.strip()) + '\n\n'
 body = body.rstrip() + '\n'
 # 운영자가 고친 표기 (한글 파일 글자 대신) — 본문·목차 모두
-FIXES = [('짝꾸빨라', '짝쿠빨라'), ('디팡까라', '디빵까라')]   # 운영자 요청, 2026-11-12
+FIXES = [('짝꾸빨라', '짝쿠빨라'), ('디팡까라', '디빵까라'), ('Aṭṭakathā', 'Aṭṭhakathā')]   # 운영자 요청, 2026-11-12
 for x, y in FIXES:
     body = body.replace(x, y)
     chapters = [(t.replace(x, y), n) for t, n in chapters]; subs = [(t.replace(x, y), n) for t, n in subs]
 toc = [{'title': t, 'page': n, 'sub': False} for t, n in chapters] + [{'title': t, 'page': n, 'sub': True} for t, n in subs]
 toc.sort(key=lambda x: (x['page'], x['sub']))
 images = sorted(set(saved.values()))
-json.dump({'book': BK, 'edition': ED, 'toc': toc, 'images': images, 'body': body}, open(os.path.join(REPO, 'content/texts', BK + '.json'), 'w'), ensure_ascii=False, indent=2)
+TABLE_DL = {'연대': '/uploads/DL-0023-table-24buddhas.png', '안거 연도': '/uploads/DL-0023-table-vassa.png'}   # 표 아래 '그림으로 내려받기' (tools/dl0023_tables.py 로 만든 그림, 운영자 요청 2026-11-12)
+json.dump({'book': BK, 'edition': ED, 'toc': toc, 'images': images, 'table_dl': TABLE_DL, 'body': body}, open(os.path.join(REPO, 'content/texts', BK + '.json'), 'w'), ensure_ascii=False, indent=2)
 open(os.path.join(REPO, 'content/texts', BK + '.json'), 'a').write('\n')
 print(f'쪽 {len(out_pages)} · 장 {len(chapters)} · 소제목 {len(subs)} · 각주 {len(FN)} · 그림 {images}')
