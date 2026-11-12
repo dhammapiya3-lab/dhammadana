@@ -355,7 +355,8 @@ const pubLine = b => { const ps = pubsOf(b); if (!ps.length) return '';
 // 스승 페이지 책 목록 제목: 경전만 있으면 'OO 스님이 엮은 책', 번역서만 있으면 'OO의 가르침을 옮긴 책', 우리말로 쓴 책이 있으면 'OO의 가르침을 담은 책'
 const josaIGa = w => { const c = String(w).trim().slice(-1).charCodeAt(0); return c >= 0xAC00 && c <= 0xD7A3 && (c - 0xAC00) % 28 ? '이' : '가'; };
 function teacherBooksHead(t, list) {
-  if (list.length && list.every(x => x.book_type === '경전')) return `${t.name}${josaIGa(t.name)} 엮은 책 ${list.length}권`;
+  const nm = t.lay && !/(님|스님|사야도|박사|교수)$/.test(t.name) ? t.name + ' 님' : t.name;  // '엮은 책'에서 재가자는 '님'을 붙임 (운영자 요청, 2026-11-12: 오원탁 님이 엮은 책)
+  if (list.length && list.every(x => x.book_type === '경전' || (x.teacher === t.id && /(엮음|편저|편역|편집)\s*$/.test(String(x.byline || ''))))) return `${nm}${josaIGa(nm)} 엮은 책 ${list.length}권`;
   const trans = list.length > 0 && list.every(x => String(x.translator || '').trim() || (x.original_language && x.original_language !== '한국어'));
   return `${t.name}의 가르침을 ${trans ? '옮긴' : '담은'} 책 ${list.length}권`;
 }
