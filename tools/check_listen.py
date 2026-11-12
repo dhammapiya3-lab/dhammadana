@@ -1,6 +1,7 @@
 """'듣기' 장 제목 검사 — 모든 책의 모든 장에서
   ① 장 처음(목차에서 장을 눌러 간 곳)에서 '듣기'를 누르면 맨 처음 소리가 장 제목인지
   ② 장 중간 쪽(장 시작 쪽 +2)에서 누르면 장 제목을 다시 읽지 않는지
+  ③ 장 제목(위의 큰 제목)을 골라 '▶ 여기부터 듣기'를 누르면 장 제목부터 읽는지 (2026-11-12)
 를 확인합니다. (장 첫 쪽이 비어 있거나 제목뿐인 경우도 ①에 들어감)
 
 쓰는 법:  npm run build  →  (cd dist && python3 -m http.server 4399 &)  →  python3 tools/check_listen.py [DL-0016 …]
@@ -57,8 +58,10 @@ with sync_playwright() as p:
                 else:
                     pg.evaluate("n=>{const r=document.querySelector('#rRange'); r.value=n; r.dispatchEvent(new Event('change'))}", page)
                 pg.wait_for_timeout(150)
+                pg.evaluate("(()=>{const b=document.querySelector('#rSpeak'); if(/멈춤/.test(b.textContent)) b.click()})()")  # 앞 검사의 듣기가 남아 있으면 먼저 멈춤
+                pg.wait_for_timeout(100)
                 pg.evaluate("window.__said=[]; document.querySelector('#rSpeak').click()")
-                try: pg.wait_for_function("window.__said.length>0", timeout=5000)
+                try: pg.wait_for_function("window.__said.length>0", timeout=15000)   # 다시 연 뒤에는 소리 사전을 받는 동안 기다림
                 except Exception: pass
                 first = pg.evaluate("window.__said[0] || ''")
                 body = pg.evaluate("!!document.querySelector('.speaking')")  # 본문 문단을 읽는 중이면 표시가 있음, 장 제목만 읽을 때는 없음
@@ -67,6 +70,21 @@ with sync_playwright() as p:
                 if titled != want:
                     bad.append(f"{bid} · {c['t']} · {kind}({page}) → 첫 소리: {first[:40]!r}")
                 else: nOk += 1
+            # ③ 장 제목을 골라 '여기부터 듣기'
+            pg.evaluate("ci=>document.querySelector(`#p-toc [data-ci=\"${ci}\"]`).click()", c['ci']); pg.wait_for_timeout(150)
+            pg.evaluate("""()=>{window.__said=[]; const h=document.querySelector('#rBody .ch-head h3'); const b=document.querySelector('#selPlay'); if(!h||!b) return;
+              const r=document.createRange(); r.selectNodeContents(h); const s=getSelection(); s.removeAllRanges(); s.addRange(r); b.click()}""")
+            try: pg.wait_for_function("window.__said.length>0", timeout=8000)
+            except Exception:   # 글 없는 쪽(색인 표 등)을 오래 건너뛰는 장 — 다음 검사에 섞이지 않게 페이지를 다시 엶
+                if f0 - c['go'] > 3 or not any(hastext[c['go'] - 1:nxt - 1]):
+                    pg.goto(f'{BASE}/read/{bid}/'); pg.wait_for_selector('#rSpeak', state='attached', timeout=15000); nOk += 1; continue
+            first = pg.evaluate("window.__said[0] || ''")
+            pg.evaluate("window.__said.length && document.querySelector('#rSpeak') && document.querySelector('#rSpeak').click()")  # 읽기 시작했으면 멈춤
+            if pg.evaluate("!!document.querySelector('#selPlay')"):
+                if same(first, c['t']): nOk += 1
+                else: bad.append(f"{bid} · {c['t']} · 장 제목 골라 듣기 → 첫 소리: {first[:40]!r}")
+            if not any(hastext[c['go'] - 1:min(nxt - 1, c['go'] + 2)]):   # 글 없는 쪽을 건너뛰는 듣기가 다음 검사에 섞이지 않게
+                pg.goto(f'{BASE}/read/{bid}/'); pg.wait_for_selector('#rSpeak', state='attached', timeout=15000)
         print(f'{bid}: 장 {len(chs)}개, 검사 {nOk}개 통과')
         pg.close()
     b.close()

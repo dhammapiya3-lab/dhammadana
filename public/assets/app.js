@@ -1051,6 +1051,8 @@ function bindReader() {
     const sel = window.getSelection(); const pop = $('#selPop'); pop.classList.remove('show');
     if (!sel || !sel.rangeCount) return;
     const rg = sel.getRangeAt(0); const node = rg.startContainer.nodeType === 1 ? rg.startContainer : rg.startContainer.parentElement;
+    // 장 제목(.ch-head)을 고르면 그 장 처음부터 — 장 제목부터 읽음 (운영자 요청, 2026-11-12: 장 제목을 골라 '여기부터 듣기'를 누르면 아무 소리가 없던 것)
+    if (node && node.closest('.ch-head')) { sel.removeAllRanges(); const c = chapters()[chapterOf(R.i + 1)]; stopSpeak(false); if (c) R.i = c.from - 1; speak(); return; }
     const para = node && node.closest('[data-pg]'); if (!para) return;
     const pre = document.createRange(); pre.setStart(para, 0); pre.setEnd(rg.startContainer, rg.startOffset);
     const pg = +para.dataset.pg, k = +para.dataset.s; sel.removeAllRanges();
@@ -1064,6 +1066,7 @@ function bindReader() {
     const sel = window.getSelection(); $('#selPop').classList.remove('show');
     if (!sel || !sel.rangeCount) return;
     const rg = sel.getRangeAt(0); const node = rg.startContainer.nodeType === 1 ? rg.startContainer : rg.startContainer.parentElement;
+    if (node && node.closest('.ch-head')) { sel.removeAllRanges(); const c = chapters()[chapterOf(R.i + 1)]; if (c) abStartAt(c.from, 0, 0); return; }   // 장 제목을 고르면 그 장 처음부터 (2026-11-12)
     const para = node && node.closest('[data-pg]'); if (!para) return;
     const pre = document.createRange(); pre.setStart(para, 0); pre.setEnd(rg.startContainer, rg.startOffset);
     const frac = para.textContent.length ? pre.toString().length / para.textContent.length : 0;
