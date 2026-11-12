@@ -325,6 +325,11 @@ saved['map-india'], saved['map-majjhimadesa'] = MAPS
 for lab, ps in zip(LABELS, out_pages):
     body += f'=== {lab}쪽 ===\n' + '\n\n'.join(x for x in ps if x.strip()) + '\n\n'
 body = body.rstrip() + '\n'
+# 운영자가 고친 표기 (한글 파일 글자 대신) — 본문·목차 모두
+FIXES = [('짝꾸빨라', '짝쿠빨라')]   # 운영자 요청, 2026-11-12
+for x, y in FIXES:
+    body = body.replace(x, y)
+    chapters = [(t.replace(x, y), n) for t, n in chapters]; subs = [(t.replace(x, y), n) for t, n in subs]
 toc = [{'title': t, 'page': n, 'sub': False} for t, n in chapters] + [{'title': t, 'page': n, 'sub': True} for t, n in subs]
 toc.sort(key=lambda x: (x['page'], x['sub']))
 images = sorted(set(saved.values()))
