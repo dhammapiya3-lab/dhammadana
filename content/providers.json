@@ -163,6 +163,14 @@
       "urls": [],
       "partner": false,
       "note": ""
+    },
+    {
+      "id": "yetgil",
+      "name": "옛길",
+      "kind": "출판사",
+      "urls": [],
+      "partner": false,
+      "note": ""
     }
   ]
 }
