@@ -356,7 +356,7 @@ const pubLine = b => { const ps = pubsOf(b); if (!ps.length) return '';
 const josaIGa = w => { const c = String(w).trim().slice(-1).charCodeAt(0); return c >= 0xAC00 && c <= 0xD7A3 && (c - 0xAC00) % 28 ? '이' : '가'; };
 function teacherBooksHead(t, list) {
   if (list.length && list.every(x => x.book_type === '경전')) return `${t.name}${josaIGa(t.name)} 엮은 책 ${list.length}권`;
-  const trans = list.every(x => String(x.translator || '').trim() || (x.original_language && x.original_language !== '한국어'));
+  const trans = list.length > 0 && list.every(x => String(x.translator || '').trim() || (x.original_language && x.original_language !== '한국어'));
   return `${t.name}의 가르침을 ${trans ? '옮긴' : '담은'} 책 ${list.length}권`;
 }
 
