@@ -33,7 +33,7 @@ function readMd(file) {
 const S = readJSON('settings.json');
 const TRADS = readJSON('traditions.json').items;
 // 파일은 관리자 화면에서 찾기 쉽게 가나다순, 사이트의 스승 순서는 rank(사이트 순서) — 없으면 맨 뒤 (운영자 요청, 2026-11-11)
-const TEACHERS = readJSON('teachers.json').items.map((t, i) => [t, i]).sort((a, b) => ((a[0].rank ?? 1e9) - (b[0].rank ?? 1e9)) || a[1] - b[1]).map(x => x[0]);
+const TEACHERS = readJSON('teachers.json').items.map((t, i) => [t, i]).sort((a, b) => (!!a[0].lay - !!b[0].lay) || ((a[0].rank ?? 1e9) - (b[0].rank ?? 1e9)) || a[1] - b[1]).map(x => x[0]);  // 재가자는 같은 분류 안에서 스님들 다음 (운영자 요청, 2026-11-12)
 const TOPICS_RAW = readJSON('topics.json');
 const TOPICS = { main: TOPICS_RAW.main.map(x => x.label), groups: [] };
 for (const it of TOPICS_RAW.items) { let g = TOPICS.groups.find(x => x.name === it.group); if (!g) TOPICS.groups.push(g = { name: it.group, labels: [] }); g.labels.push(it.label); }
@@ -71,6 +71,7 @@ const PAGES = Object.fromEntries(fs.readdirSync(C('pages')).filter(f => f.endsWi
 const teacherById = id => TEACHERS.find(t => t.id === id);
 const tradById = id => TRADS.find(t => t.id === id);
 const tradOfTeacher = id => tradById(teacherById(id)?.tradition);
+const tIds = b => [...new Set([b.teacher, ...(b.co_teachers || [])].filter(Boolean))];  // 스승 + 공동 저자 (운영자 요청, 2026-11-12)
 const providerById = id => PROVIDERS.find(p => p.id === id);
 const permById = id => PERMS.find(p => p.id === id);
 const curEd = b => (b.editions || []).find(e => e.current) || (b.editions || [])[0] || {};
@@ -406,15 +407,15 @@ const fmtsCard = b => { const u = uniqK(formats(b)); const e = curEd(b); return 
 function coverCard(b) {
   const f = formats(b), fc = fmtsCard(b);
   const tr = b.teacher ? tradOfTeacher(b.teacher) : null;
-  return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${tr ? tr.id : ''}" data-teacher="${b.teacher || ''}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(fc.map(x => x.k).join('|'))}" data-lang="${esc(b.original_language || '')}" data-btype="${esc(b.book_type || '')}" data-pub="${esc(pubsAll(b).map(x => x.key).join('|'))}" data-person="${esc(peopleOf(b).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}">
+  return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${esc([...new Set(tIds(b).map(id => tradOfTeacher(id)?.id).filter(Boolean))].join('|'))}" data-teacher="${esc(tIds(b).join('|'))}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(fc.map(x => x.k).join('|'))}" data-lang="${esc(b.original_language || '')}" data-btype="${esc(b.book_type || '')}" data-pub="${esc(pubsAll(b).map(x => x.key).join('|'))}" data-person="${esc(peopleOf(b).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}">
   <div class="cover">${!f.length ? '<span class="soon">준비 중</span>' : ''}${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지" loading="lazy">` : `<div class="cover-ph">${esc(b.title)}</div>`}</div>
   <div class="t">${esc(b.title)}</div><div class="a">${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>${pubLine(b) ? `<div class="a publ">${esc(pubLine(b))}</div>` : ''}
   ${f.length ? `<div class="fmt">${fc.map(x => `<span>${x.k}${x.ext ? ' ↗' : ''}</span>`).join('')}</div>` : ''}</a>`;
 }
 const countTopic = t => LIB().filter(b => (b.topics || []).includes(t)).length;
 const countMain = t => LIB().filter(b => (b.main || []).includes(t)).length;
-const countTeacher = id => LIB().filter(b => b.teacher === id).length;
-const countTrad = id => LIB().filter(b => b.teacher && tradOfTeacher(b.teacher)?.id === id).length;
+const countTeacher = id => LIB().filter(b => tIds(b).includes(id)).length;
+const countTrad = id => LIB().filter(b => tIds(b).some(x => tradOfTeacher(x)?.id === id)).length;
 
 /* ---------- 페이지 ---------- */
 const pages = {};
@@ -613,7 +614,7 @@ for (const b of BOOKS) {
 
 // 스승
 for (const t of TEACHERS) {
-  const tr = tradById(t.tradition), list = LIB().filter(b => b.teacher === t.id), trans = LIB().filter(b => b.translator && b.translator.includes(t.name.replace(/ (스님|사야도)$/, '')) && b.teacher !== t.id);
+  const tr = tradById(t.tradition), list = LIB().filter(b => tIds(b).includes(t.id)), trans = LIB().filter(b => b.translator && b.translator.includes(t.name.replace(/ (스님|사야도)$/, '')) && !tIds(b).includes(t.id));
   const pl = PLAYLISTS.find(p => p.teacher === t.id);
   put(`teacher/${t.id}/index.html`, layout({
     title: t.name, nav: 'library', page: 'teacher', body: `<div class="wrap"><div class="teacher-head"><div class="portrait" aria-hidden="true">${t.photo ? `<img src="${esc(t.photo)}" alt="">` : esc(t.name[0])}</div>

@@ -393,7 +393,7 @@ function initLibrary() {
       const has = (k, list) => !list || list.some(v => (b.dataset[k] || '').split('|').includes(v));
       let ok = has('main', sel.main) && has('topics', sel.topic) && has('fmts', sel.fmt) && has('lang', sel.lang) && has('btype', sel.btype) && has('pub', sel.pub) && has('person', sel.person);
       // 전통과 스승은 '또는'으로 묶음
-      if (ok && (sel.trad || sel.teacher)) ok = (sel.trad || []).includes(b.dataset.trad) || (sel.teacher || []).includes(b.dataset.teacher);
+      if (ok && (sel.trad || sel.teacher)) ok = (sel.trad || []).some(x => (b.dataset.trad || '').split('|').includes(x)) || (sel.teacher || []).some(x => (b.dataset.teacher || '').split('|').includes(x));
       b.hidden = !ok; if (ok) shown++;
     }
     $('#libCount').textContent = shown; $('#libEmpty').hidden = shown > 0;

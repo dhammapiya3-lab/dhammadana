@@ -6,6 +6,12 @@
   "byline": "비구 보디 엮음",
   "translator": "혜인 스님 옮김",
   "teacher": "bodhi",
+  "co_teachers": [
+    "gorkom",
+    "jootla",
+    "lilydesilva",
+    "walshe"
+  ],
   "provider": "calmvoice",
   "press": false,
   "provider_chip": false,
