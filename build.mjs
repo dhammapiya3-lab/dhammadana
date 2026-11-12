@@ -609,7 +609,7 @@ for (const b of BOOKS) {
   </div></div></div>`
   }));
   if (e.reader) put(`read/${b.id}/index.html`, layout({
-    title: `${b.title} 읽기`, nav: 'library', page: 'reader', body: `<div id="readerRoot" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}" data-title="${esc(b.title)}" data-byline="${esc(b.byline)}" data-teacher="${esc(t?.name || '')}" data-cover="${esc(b.cover ? (S.site_url || '').replace(/\/$/, '') + b.cover : '')}" data-kakao="${esc(S.kakao_js_key || '')}"${AUDIO[b.id] ? ` data-audio="/data/audio/${b.id}.json"` : ''}>
+    title: `${b.title} 읽기`, nav: 'library', page: 'reader', body: `<div id="readerRoot" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}" data-title="${esc(b.title)}" data-byline="${esc(b.byline)}" data-teacher="${esc(t?.name || '')}" data-cover="${esc(b.cover ? (S.site_url || '').replace(/\/$/, '') + b.cover : '')}" data-kakao="${esc(S.kakao_js_key || '')}"${b.no_copy ? ' data-nocopy="1"' : ''}${AUDIO[b.id] ? ` data-audio="/data/audio/${b.id}.json"` : ''}>
     <div class="wrap prose"><p class="muted">읽기 화면을 불러오는 중입니다…</p><p><a href="/book/${b.id}/">← 책 정보로 돌아가기</a></p></div></div>`
   }));
 }

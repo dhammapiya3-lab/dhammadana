@@ -217,6 +217,7 @@ collections:
       - { name: added, label: 등록일, widget: datetime, type: date, format: "YYYY-MM-DD" }
       - { name: order, label: 순서, widget: number, value_type: int, required: false, hint: "같은 날 등록한 책끼리의 순서 (클수록 앞)" }
       - { name: hidden, label: 숨기기, widget: boolean, default: false, hint: "켜면 사이트에 나오지 않습니다" }
+      - { name: no_copy, label: 읽기 화면 복사 막기, widget: boolean, default: false, required: false, hint: "켜면 이 책의 읽기 화면에서 글을 복사할 수 없습니다(글 고르기·밑줄·듣기는 그대로). 출판사·저자와 복사를 막기로 약속한 책만 켜세요." }
       - { name: hide_update, label: 첫 화면 '최근 업데이트'에서 등록 소식 빼기, widget: boolean, default: false, required: false, hint: "켜면 첫 화면 '최근 업데이트'에 이 책의 '등록' 항목이 나오지 않습니다. 책은 도서관에 그대로 있습니다." }
 
   # ───────── 책 본문 (글로 읽기) ─────────
