@@ -1,0 +1,383 @@
+[
+ {
+  "img": "images/06-Bhaddiya-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     60,
+     594,
+     116
+    ],
+    "ko": "밧디야 존자의 업의 여정:\n왕위를 버린 출가와 최상의 행복",
+    "cover": true,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     214,
+     116,
+     594,
+     158
+    ],
+    "ko": "왕좌를 버리고 높은 가문 출신 가운데\n으뜸이 된 왕의 이야기",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     374,
+     778,
+     444
+    ],
+    "ko": "10만 겁 전, 빠두뭇따라 부처님께서 한 비구를 높은 가문 출신 가운데 으뜸이라 선언하셨습니다.\n이를 본 부유한 재가자는 미래에 바로 그 영예를 이루겠다고 서원했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     495,
+     74
+    ],
+    "shape": "bubble",
+    "en": "To seal his aspiration, he hosted magnificent seven-day almsgiving for the Sangha. He sought no worldly luxury or status—only the supreme spiritual title of foremost in noble birth",
+    "ko": "서원을 굳히려고 그는 승가에 이레 동안 큰 보시를 올렸습니다. 세속의 영화나 지위가 아니라, 높은 가문 출신 가운데 으뜸이라는 최상의 영예만을 바랐습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     346,
+     710,
+     440
+    ],
+    "ko": "부처님께서 미래를 살피시고 분명하게 예언하셨습니다.\n“10만 겁 뒤 고따마 부처님의 가르침에서\n이 재가자의 서원이 그대로 이루어지리라.”",
+    "cover": true,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     138,
+     504,
+     342
+    ],
+    "ellipse": true,
+    "align": "center",
+    "em": 16,
+    "ko": "앞날을 확신한 그는\n여러 생 동안 그에 맞는\n공덕을 쌓았습니다.\n승가에 스승의 자리와\n아름답게 짠 덮개, 부채,\n밝은 등불을 보시했습니다.",
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     30,
+     232,
+     440
+    ],
+    "ko": "뒷날 바라나시에 태어난 그는 벽지불들이 강가 강 가에서 불편하게 공양하시는 것을 보았습니다. 그래서 큰 돌판 여덟 개를 놓아 드리고, 평생 날마다 음식을 올렸습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     84,
+     654,
+     150
+    ],
+    "ko": "마지막 생에 그는 까삘라왓투의 밧디야 왕자로 태어났습니다.\n어머니는 사꺄족 공주 가운데 맏이인 깔리고다였습니다.\n그는 왕족 가운데서도 가장 높은 자리에 있었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     32,
+     46,
+     327,
+     414
+    ],
+    "ko": "숫도다나 왕이 아흔 살이 넘자 다스림은 젊은 세대에게 넘어갔습니다. 가장 웃어른 귀족인 밧디야가 사꺄족의 왕으로 뽑혔습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     368,
+     778,
+     434
+    ],
+    "ko": "왕위를 버린 밧디야는 다섯 명의 사꺄족 왕자, 이발사 우빨리와 함께 출가했습니다.\n그는 큰 왕권을 완전한 해탈의 길과 바꾸었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     351,
+     90
+    ],
+    "shape": "box",
+    "en": "During his very first Rains Retreat at the Anupiya Mango Grove, Ven. Bhaddiya realized the ultimate truth, becoming fully awakened Arahat.",
+    "ko": "첫 안거 때 아누삐야 망고 숲에서 밧디야 존자는 궁극의 진리를 깨달아 완전히 깨달은 아라한이 되었습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     14,
+     198,
+     786,
+     268
+    ],
+    "ko": "해탈의 깊은 행복을 맛본 그는 “아, 행복하다!” 하고 거듭 외쳤습니다.\n범부 비구들은 그가 잃어버린 왕의 영화를 그리워한다고 오해했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     82,
+     99
+    ],
+    "shape": "box",
+    "en": "The monks reported this behavior to the Buddha. The Buddha clarified that Bhaddiya’s profound joy came not from worldly attachment, but from absolute spiritual freedom.",
+    "ko": "비구들이 이 일을 부처님께 아뢰었습니다. 부처님께서는 밧디야의 깊은 기쁨이 세속의 집착이 아니라 완전한 마음의 해탈에서 온 것이라고 밝히셨습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     269,
+     47
+    ],
+    "shape": "box",
+    "en": "Fulfiling Fulfilling vow made 100,000 aeons cone prior, the Buddha. declared Ven. Bhaddiya the absolute foremost among all monastic disciples belonging to anf family.",
+    "ko": "10만 겁 전의 서원대로 부처님께서는 밧디야 존자를 높은 가문 출신 제자 가운데 으뜸이라고 선언하셨습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     108,
+     62,
+     292,
+     102
+    ],
+    "ko": "씨앗",
+    "cover": true,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     516,
+     62,
+     696,
+     102
+    ],
+    "ko": "열매",
+    "cover": true,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     146,
+     134,
+     258,
+     188
+    ],
+    "ko": "큰 보시",
+    "cover": true,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     146,
+     230,
+     258,
+     286
+    ],
+    "ko": "돌판 보시",
+    "cover": true,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     152,
+     336,
+     250,
+     390
+    ],
+    "ko": "왕위를\n버림",
+    "cover": true,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     540,
+     134,
+     682,
+     192
+    ],
+    "ko": "으뜸이라는\n영예",
+    "cover": true,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     540,
+     228,
+     680,
+     288
+    ],
+    "ko": "사꺄 왕가에\n태어남",
+    "cover": true,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     540,
+     334,
+     682,
+     394
+    ],
+    "ko": "최상의\n행복",
+    "cover": true,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Bhaddiya-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     330,
+     110,
+     742,
+     352
+    ],
+    "ko": "밧디야 존자는 세속의 귀함이 법에 견주면 보잘것없음을 보여 줍니다. 그는 비구의 가사에서만 참된 위엄을 찾은 왕이었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
