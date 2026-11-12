@@ -1,0 +1,437 @@
+[
+ {
+  "img": "images/09-Punna-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     314,
+     672,
+     396
+    ],
+    "ko": "위대한 연대기: 만따니뿟따 뿐나 존자\n법을 설하는 이 가운데 으뜸. 홀로 숲에 살던 고행자가 10만 겁을 지나\n부처님 가르침에서 가장 뛰어난 진리의 설법자가 되기까지",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Punna-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     40,
+     402,
+     138
+    ],
+    "ko": "베다 너머를 찾아서\n10만 겁 전, 바라문 청년 고따마는 베다를 통달했습니다.\n그러나 베다로는 윤회에서 벗어날 수 없음을 알고 버렸습니다.\n그는 머리를 땋은 고행자가 되어 제자 1만 8천 명을 이끌고\n숲에 들어가 깊은 선정을 닦았습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Punna-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     108,
+     62,
+     532,
+     234
+    ],
+    "ko": "위없는 분이 오시다\n빠두뭇따라 부처님께서 고행자들의 바탕을 보셨습니다.\n소박한 비구의 모습으로 오셨지만 거룩한 몸이\n참모습을 드러냈습니다. 해탈한 분임을 알아본\n고따마는 곧바로 가장 높은 자리를 올렸습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Punna-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     26,
+     46,
+     278,
+     222
+    ],
+    "ko": "꽃자리\n고따마와 제자 1만 8천 명은\n좋은 숲 열매와 뿌리를 올렸습니다.\n\n부처님과 비구 10만 명을 공경하려고\n고행자들은 신통으로 땅과 물에서\n나는 향기로운 꽃으로 훌륭한\n자리를 단번에 만들었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Punna-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     78,
+     122,
+     374,
+     324
+    ],
+    "ko": "큰 서원\n부처님의 으뜸 제자가 법문을 마치자\n제자 1만 8천 명이 모두 아라한이\n되었으나 고따마만은 그러지 않았습니다.\n감동한 고따마는 부처님 앞에 엎드려\n미래 부처님 아래서 법을 설하는 이\n가운데 으뜸이 되기를 서원했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Punna-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     340,
+     58,
+     772,
+     200
+    ],
+    "ko": "예언\n빠두뭇따라 부처님께서 미래를 살피시고 예언하셨습니다.\n“10만 겁 뒤 고따마 부처님께서 오시리라. 그대는\n법을 잘 설하는 이 가운데 으뜸이 되리라.”\n고따마는 남은 생애를 부처님을 섬기며 보냈습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Punna-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     130,
+     64,
+     666,
+     142
+    ],
+    "ko": "마지막 생\n도나왓투의 바라문 마을에 뿐나로 다시 태어났습니다.\n우리 부처님 때 외삼촌 꼰단냐 존자에게서 출가했습니다.\n수행자의 삶을 받아들여 깨달음으로 가는 마지막 여정을 시작했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Punna-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     122,
+     332,
+     388
+    ],
+    "ko": "홀로 걷는 길\n다른 이들은 서둘러 부처님을\n뵈러 갔지만 뿐나는\n까삘라왓투에 남았습니다.\n\n“깨달음을 얻은 뒤에야\n가겠습니다.”\n\n홀로 쉼 없이 정진하여 그는\n모든 번뇌를 부수고\n아라한이 되었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Punna-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     498,
+     100,
+     562,
+     120
+    ],
+    "ko": "1. 적은 바람",
+    "cover": true,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     562,
+     118,
+     634,
+     138
+    ],
+    "ko": "2. 만족",
+    "cover": true,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     622,
+     168,
+     680,
+     188
+    ],
+    "ko": "3. 떨쳐 버림",
+    "cover": true,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     614,
+     208,
+     700,
+     252
+    ],
+    "ko": "4. 어울리지\n않음",
+    "cover": true,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     600,
+     256,
+     690,
+     298
+    ],
+    "ko": "5. 정진",
+    "cover": true,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     352,
+     552,
+     372
+    ],
+    "ko": "6. 계",
+    "cover": true,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     376,
+     284,
+     454,
+     306
+    ],
+    "ko": "7. 삼매",
+    "cover": true,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     354,
+     224,
+     410,
+     244
+    ],
+    "ko": "8. 지혜",
+    "cover": true,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     376,
+     168,
+     444,
+     190
+    ],
+    "ko": "9. 해탈",
+    "cover": true,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     426,
+     112,
+     494,
+     148
+    ],
+    "ko": "10. 해탈\n지견",
+    "cover": true,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     68,
+     138,
+     298,
+     252
+    ],
+    "ko": "열 가지\n이야깃거리\n(Kathā-vatthu)",
+    "cover": true,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     78,
+     256,
+     292,
+     314
+    ],
+    "ko": "뿐나는 열 가지 주제를\n익혀 가르쳤습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Punna-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     78,
+     374,
+     236
+    ],
+    "ko": "5백 명을 기르다\n스승의 깊은 가르침인 열 가지\n이야깃거리를 듣고 5백 명의 좋은 가문\n아들들이 뿐나 존자에게 출가했습니다.\n\n흠 없는 이끎 덕분에 5백 비구는 모두\n수행자의 할 일을 다해 곧 아라한이\n되었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Punna-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     95,
+     59
+    ],
+    "shape": "bubble",
+    "en": "The Disciples’ Journey Out of deep humility, Punna avoided traveling with large entourage. He sent his 500 awakened disciples ahead to Rajagaha to visit the Fortunate One. The monks arrived and respectfully venerated the feet of the Buddha.",
+    "ko": "제자들의 여정\n뿐나는 겸손하여 많은 무리와 함께 다니지 않았습니다. 아라한이 된 제자 5백 명을 라자가하로 먼저 보내 세존을 뵙게 했습니다. 비구들은 그곳에 이르러 공손히 부처님 발에 예를 올렸습니다.",
+    "align": "center"
+   }
+  ]
+ },
+ {
+  "img": "images/09-Punna-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     100,
+     304,
+     366
+    ],
+    "ko": "한결같은 칭찬\n부처님께서 물으셨습니다.\n“그대들 가운데 누가 적은 바람과\n관련된 법을 말하는가?”\n\n5백 비구가 한목소리로 답했습니다.\n“만따니뿟따 뿐나 존자입니다.”\n\n이 큰 칭찬을 들은 큰 제자\n사리뿟따 존자는 그를 몹시\n만나고 싶어 했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Punna-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     298,
+     82,
+     656,
+     214
+    ],
+    "ko": "세존을 뵙다\n뿐나 존자는 드러내지 않고 홀로 걸어\n사왓티로 가서 부처님을 직접 뵈었습니다.\n부처님께서 열 가지 이야깃거리에 대해\n특별한 법문을 해 주시자, 뿐나는\n안다와나 숲으로 물러갔습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Punna-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     266,
+     276,
+     534,
+     396
+    ],
+    "ko": "역마차의 비유\n사리뿟따 존자가 뿐나를 따라 숲으로\n갔습니다. 두 분은 일곱 단계의 청정에\n대해 깊은 문답을 나누었습니다. 서로의\n지혜가 꼭 맞아, 상대가 법에 통달한 것을\n깊이 함께 기뻐했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Punna-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     472,
+     60,
+     754,
+     184
+    ],
+    "ko": "으뜸 설법자\n큰 대중 앞에서 부처님께서 공식으로 선언하셨습니다.\n\n“비구들이여, 법을 설하는 나의 비구 제자 가운데\n만따니뿟따 뿐나가 으뜸이다.”\n\n10만 겁 전에 심은 큰 서원이 마침내 온전히\n이루어졌습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
