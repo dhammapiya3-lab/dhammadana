@@ -504,6 +504,26 @@
       "photo": "",
       "rank": 398,
       "lay": true
+    },
+    {
+      "id": "munyeom",
+      "name": "무념 스님",
+      "roman": "",
+      "aliases": [],
+      "tradition": "scholar",
+      "bio": "",
+      "photo": "",
+      "rank": 362
+    },
+    {
+      "id": "eungjin",
+      "name": "응진 스님",
+      "roman": "",
+      "aliases": [],
+      "tradition": "scholar",
+      "bio": "",
+      "photo": "",
+      "rank": 363
     }
   ]
 }
