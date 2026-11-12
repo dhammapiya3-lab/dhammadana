@@ -819,12 +819,12 @@ function renderReader() {
     <div class="panel" id="p-ul"><h5>이 책의 밑줄</h5><ul>${uls().filter(h => h.id === R.id).sort((a, b) => a.p - b.p).map(h => `<li style="display:block"><button class="link" data-go="${h.p}">${esc(h.pl || h.p)}쪽</button><div class="quote" style="font-size:13.5px">${esc(h.text)}</div>${h.note ? `<div class="small muted">${esc(h.note)}</div>` : ''}</li>`).join('') || '<li class="muted">글을 끌어서 고르면 밑줄을 그을 수 있습니다.</li>'}</ul>
       <div class="row"><a class="tbtn" href="/mynotes/">내 서재에서 모두 보기</a></div></div>
     <div class="panel" id="p-share"><h5>고른 글 공유하기</h5><div class="quote" id="shText" style="font-size:13.5px;white-space:pre-wrap"></div>
-      <div class="share-btns">${navigator.share ? '<button class="sh-main" data-sh="app">📱 카카오톡·문자 등 앱으로 보내기</button>' : ''}<button data-sh="kakao">카카오톡</button><button data-sh="band">네이버 밴드</button><button data-sh="x">X(트위터)</button><button data-sh="fb">페이스북</button><button data-sh="mail">이메일</button><button data-sh="copy">복사</button></div>
+      <div class="share-btns">${navigator.share ? '<button class="sh-main" data-sh="app">📱 카카오톡·문자 등 앱으로 보내기</button>' : ''}<button data-sh="kakao">카카오톡</button><button data-sh="band">네이버 밴드</button><button data-sh="x">X(트위터)</button><button data-sh="fb">페이스북</button><button data-sh="mail">이메일</button></div>
       <p class="note">고른 글 아래에 책 제목·저자·쪽과 이 쪽으로 오는 주소가 함께 붙습니다.</p></div>
     <div class="panel" id="p-uledit"><h5>밑줄</h5><div class="quote" id="ulText" style="font-size:13.5px"></div>
       <div class="row"><input id="ulNote" placeholder="메모 한 줄" aria-label="밑줄 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"></div>
-      <div class="row"><button class="tbtn" id="ulSave">메모 저장</button><button class="tbtn" id="ulCopy">출처와 함께 복사</button><button class="tbtn" id="ulDel">밑줄 지우기</button></div></div>
-    <div class="sel-pop" id="selPop" role="toolbar" aria-label="고른 글"><button id="selUl">밑줄 긋기</button><button id="selNote">밑줄+메모</button><button id="selCopy">복사</button><button id="selShare">공유</button>${R.pages.some(x => x.text) ? '<button id="selPlay">▶ 여기부터 듣기</button>' : ''}${R.ab ? '<button id="selAb">🎧 여기부터 오디오북</button>' : ''}</div>
+      <div class="row"><button class="tbtn" id="ulSave">메모 저장</button><button class="tbtn" id="ulDel">밑줄 지우기</button></div></div>
+    <div class="sel-pop" id="selPop" role="toolbar" aria-label="고른 글"><button id="selUl">밑줄 긋기</button><button id="selNote">밑줄+메모</button><button id="selShare">공유</button>${R.pages.some(x => x.text) ? '<button id="selPlay">▶ 여기부터 듣기</button>' : ''}${R.ab ? '<button id="selAb">🎧 여기부터 오디오북</button>' : ''}</div>
     <div class="panel" id="p-bm"><h5>내 책갈피</h5><ul>${bms().map((m, k) => `<li><span><a class="link" href="/read/${m.id}/${m.p}">『${esc(m.t)}』 ${esc(m.pl || m.p)}쪽</a>${m.note ? `<br><span class="muted small">${esc(m.note)}</span>` : ''}</span><button class="link" data-bmdel="${k}" aria-label="책갈피 지우기">지우기</button></li>`).join('') || '<li class="muted">아직 책갈피가 없습니다.</li>'}</ul>
       <div class="row" style="margin-top:12px"><input id="bmNote" placeholder="이 쪽에 한 줄 메모" aria-label="책갈피 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"><button class="tbtn" id="bmSave">저장</button></div>
       <p class="note">회원가입 없이 이 기기의 브라우저에만 저장됩니다. 다른 기기로 옮길 때는 내 서재의 ‘옮기기’를 쓰세요.</p></div>`;
@@ -1068,7 +1068,7 @@ function bindReader() {
     const frac = para.textContent.length ? pre.toString().length / para.textContent.length : 0;
     sel.removeAllRanges(); abStartAt(+para.dataset.pg, +para.dataset.s, frac);
   };
-  $('#selCopy').onclick = () => { const d = $('#selPop')._sel; if (d) copy(`“${d.text}” — ${R.by}, 『${R.title}』 ${plabel(d.p) || d.p}쪽 (${SITE})`, '고른 글을 출처와 함께 복사했습니다'); $('#selPop').classList.remove('show'); };
+  if ($('#selCopy')) $('#selCopy').onclick = () => { const d = $('#selPop')._sel; if (d) copy(`“${d.text}” — ${R.by}, 『${R.title}』 ${plabel(d.p) || d.p}쪽 (${SITE})`, '고른 글을 출처와 함께 복사했습니다'); $('#selPop').classList.remove('show'); };
   $('#selShare').onclick = () => { const d = $('#selPop')._sel; $('#selPop').classList.remove('show'); if (d) openShare(d, plabel(d.p)); };
   $$('u.ul', el).forEach(u => u.onclick = e => { e.stopPropagation(); openUl(+u.dataset.hid); });
 }
@@ -1140,7 +1140,7 @@ function openUl(k) {
   $('#p-uledit').classList.add('open'); $('#ulText').textContent = h.text; $('#ulNote').value = h.note || ''; $('#ulNote').focus();
   $('#ulSave').onclick = () => { const l = uls(); const x = l.find(x => x.k === k); x.note = $('#ulNote').value.trim(); store.set('ul', l); renderReader(); toast('메모를 저장했습니다'); };
   $('#ulDel').onclick = () => { store.set('ul', uls().filter(x => x.k !== k)); renderReader(); toast('밑줄을 지웠습니다'); };
-  $('#ulCopy').onclick = () => copy(`“${h.text}” — ${h.by}, 『${h.t}』 ${h.pl || h.p}쪽 (${SITE})`, '출처와 함께 복사했습니다');
+  if ($('#ulCopy')) $('#ulCopy').onclick = () => copy(`“${h.text}” — ${h.by}, 『${h.t}』 ${h.pl || h.p}쪽 (${SITE})`, '출처와 함께 복사했습니다');
 }
 // 빨리어 로마자 → 한글 소리 (니까야 번역 용어집 v1.1 음역 규칙)
 const PALI = (() => {
@@ -1755,7 +1755,7 @@ function renderNotes() {
   const groups = {}; U.forEach(h => (groups[h.id] = groups[h.id] || []).push(h));
   const ulHtml = Object.keys(groups).length ? Object.entries(groups).map(([id, l]) => `<div class="book-group"><h3>『${esc(l[0].t)}』</h3><div class="small muted">${esc(l[0].by)} · 밑줄 ${l.length}개</div>
     ${l.sort((a, c) => a.p - c.p).map(h => `<div class="note-item"><div class="meta"><a href="/read/${id}/${h.p}">${esc(h.pl || h.p)}쪽에서 보기 →</a><span>${esc(h.d || '')}</span></div><div class="quote">${esc(h.text)}</div>${h.note ? `<div class="memo">메모: ${esc(h.note)}</div>` : ''}
-    <div class="acts"><button data-ncopy="${h.k}">출처와 함께 복사</button><button data-ndel="${h.k}">지우기</button></div></div>`).join('')}</div>`).join('')
+    <div class="acts"><button data-ndel="${h.k}">지우기</button></div></div>`).join('')}</div>`).join('')
     : `<p class="muted">아직 밑줄이 없습니다. 읽기 화면에서 글을 끌어서 고르면 ‘밑줄 긋기’ 단추가 나옵니다.</p>`;
   const bmHtml = B.length ? B.map((m, k) => `<div class="note-item"><div class="meta"><a href="/read/${m.id}/${m.p}">『${esc(m.t)}』 ${esc(m.pl || m.p)}쪽 →</a><span>${esc(m.d || '')}</span></div>${m.note ? `<div class="memo">${esc(m.note)}</div>` : ''}<div class="acts"><button data-bdel="${k}">지우기</button></div></div>`).join('') : '<p class="muted">아직 책갈피가 없습니다.</p>';
  const H = store.get('hist', []);
@@ -1765,7 +1765,7 @@ function renderNotes() {
       <div class="small muted">마지막으로 읽은 날 ${esc(x.d)}${x.first && x.first !== x.d ? ` · 처음 읽은 날 ${esc(x.first)}` : ''}</div>
       <div class="acts"><a class="btn sm" href="/read/${x.id}/${x.p}">이어 읽기</a><button data-hdel="${k}">기록 지우기</button></div></div></div>`).join('')}</div>` : '<p class="muted">아직 읽은 책이 없습니다. 책 페이지에서 ‘온라인으로 읽기’를 누르면 여기에 모입니다.</p>';
   root.innerHTML = `<div class="tabs" role="tablist"><button role="tab" data-ntb="read" class="${notesTab === 'read' ? 'on' : ''}">읽은 책 ${H.length}</button><button role="tab" data-ntb="ul" class="${notesTab === 'ul' ? 'on' : ''}">밑줄 ${U.length}</button><button role="tab" data-ntb="bm" class="${notesTab === 'bm' ? 'on' : ''}">책갈피 ${B.length}</button><button role="tab" data-ntb="io" class="${notesTab === 'io' ? 'on' : ''}">옮기기</button></div>
-   <div style="max-width:760px">${notesTab === 'read' ? histHtml : notesTab === 'ul' ? (U.length ? `<div style="margin:12px 0"><button class="btn sm ghost" id="copyAll">밑줄 모두 복사 (출처 포함)</button></div>` : '') + ulHtml : notesTab === 'bm' ? bmHtml :
+   <div style="max-width:760px">${notesTab === 'read' ? histHtml : notesTab === 'ul' ? ulHtml : notesTab === 'bm' ? bmHtml :
     `<p>다른 기기로 옮길 때: 아래 ‘내보내기’로 복사한 글을 다른 기기의 이 칸에 붙여넣고 ‘가져오기’를 누르세요. 가져오면 이미 있는 것과 합쳐집니다.</p>
     <div style="display:flex;gap:8px;margin:10px 0"><button class="btn sm ghost" id="ioExport">내보내기 (복사)</button><button class="btn sm" id="ioImport">가져오기</button></div>
     <label for="ioText" class="small muted">붙여넣을 곳</label><textarea class="io" id="ioText"></textarea>`}</div>`;
@@ -2048,5 +2048,13 @@ document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === 
   setInterval(flush, 60e3);
   document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') flush(); });
   addEventListener('pagehide', flush);
+})();
+// 책 읽기 화면에서는 복사를 막음 — 글 고르기·밑줄·찾기는 그대로 (운영자 요청, 2026-11-12)
+(() => {
+  const inBook = () => { const sel = getSelection(); if (!sel || sel.isCollapsed || !sel.rangeCount) return false;
+    const n = sel.getRangeAt(0).commonAncestorContainer, el = n.nodeType === 1 ? n : n.parentElement;
+    return !!(el && el.closest('#reader') && !el.closest('input, textarea, [contenteditable="true"]')); };
+  const stop = e => { if (e.target && e.target.closest && e.target.closest('input, textarea')) return; if (!inBook()) return; e.preventDefault(); try { e.clipboardData && e.clipboardData.setData('text/plain', ''); } catch (x) {} toast('이 책은 복사할 수 없습니다'); };
+  document.addEventListener('copy', stop, true); document.addEventListener('cut', stop, true);
 })();
 })();
