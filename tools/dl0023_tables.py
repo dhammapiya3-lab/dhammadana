@@ -13,12 +13,16 @@ if not os.path.exists(xmlp):
     with open(xmlp, 'wb') as f: subprocess.run(['hwp5proc', 'xml', src], stdout=f, check=True)
 root = ET.parse(xmlp).getroot()
 
+FIXES = [('짝꾸빨라', '짝쿠빨라'), ('디팡까라', '디빵까라')]   # hwp2text_dl0023.py 의 FIXES 와 같게 (운영자가 고친 표기)
+
 def ctext(c):
     ps = []
     for p in c.findall('Paragraph'):
         t = ''.join((x.text or '') for x in p.iter('Text') if not any(True for _ in []))
         ps.append(t.strip())
-    return '<br>'.join(html.escape(p) for p in ps if p)
+    out = '<br>'.join(html.escape(p) for p in ps if p)
+    for x, y in FIXES: out = out.replace(x, y)
+    return out
 
 TABLES = {'연대': ('과거 스물네 분의 붓다', '법구경이야기1_과거24붓다'), '안거 연도': ('붓다의 안거 장소', '법구경이야기1_붓다의안거장소')}
 CSS = '''body{margin:0;background:#fff;font-family:"Inter","Noto Sans CJK KR","Noto Sans KR",sans-serif;color:#222}  /* 빠알리 글자(ṅ ṁ ṭ)는 Inter 로 — 한글 글꼴의 것은 점이 어긋남 */
