@@ -27,7 +27,7 @@ def ctext(c):
 TABLES = {'연대': ('과거 스물네 분의 붓다', '법구경이야기1_과거24붓다'), '안거 연도': ('붓다의 안거 장소', '법구경이야기1_붓다의안거장소')}
 CSS = '''body{margin:0;background:#fff;font-family:"Inter","Noto Sans CJK KR","Noto Sans KR",sans-serif;color:#222}  /* 빠알리 글자(ṅ ṁ ṭ)는 Inter 로 — 한글 글꼴의 것은 점이 어긋남 */
 .w{padding:36px 40px 30px;display:inline-block}
-h1{font-size:26px;margin:0 0 4px;font-weight:700}
+h1{font-size:26px;margin:0 0 16px;font-weight:700}
 .src{font-size:14px;color:#777;margin:0 0 18px}
 table{border-collapse:collapse;font-size:17px;line-height:1.45}
 th,td{border:1px solid #9c9282;padding:8px 14px;vertical-align:middle}
@@ -55,7 +55,7 @@ with sync_playwright() as pw:
                 rs, cs = int(cell.get('rowspan')), int(cell.get('colspan'))
                 tds.append(f'<{tag}{cls}' + (f' rowspan="{rs}"' if rs > 1 else '') + (f' colspan="{cs}"' if cs > 1 else '') + f'>{txt}</{tag}>')
             H.append('<tr>' + ''.join(tds) + '</tr>')
-        doc = f'<html><head><meta charset="utf-8"><style>{CSS}</style></head><body><div class="w"><h1>{title}</h1><p class="src">『법구경 이야기 1』 무념·응진 옮김 · 붓다담마 법보시 도서관 dhammadana.kr</p><table>{"".join(H)}</table></div></body></html>'
+        doc = f'<html><head><meta charset="utf-8"><style>{CSS}</style></head><body><div class="w"><h1>{title}</h1><table>{"".join(H)}</table></div></body></html>'
         pg = br.new_page(device_scale_factor=2, viewport={'width': 1200, 'height': 800})
         pg.set_content(doc); pg.wait_for_timeout(300)
         path = os.path.join(out, fname + '.png')
