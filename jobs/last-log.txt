@@ -1,14 +1,8 @@
-검수 Foremost-Monks/04-Maha-Kassapa 24번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 검수 Foremost-Monks/04-Maha-Kassapa 36번 그림 상자1 [자리] 한글 글(1989,772)이 상자 점(1795,357)에서 멀리 그려짐
 검수 Foremost-Monks/04-Maha-Kassapa 41번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Foremost-Monks 04-Maha-Kassapa 41 장
-검수 Foremost-Monks/05-Anuruddha 02번 그림 상자1 [자리] 한글 글(1121,1128)이 상자 점(1510,770)에서 멀리 그려짐
-검수 Foremost-Monks/05-Anuruddha 21번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Foremost-Monks/05-Anuruddha 24번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Foremost-Monks/05-Anuruddha 50번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 1px)
-Foremost-Monks 05-Anuruddha 53 장
-자동 검수: 문제 의심 7 곳
-R2 에 올림: 234 개 / 한글판 이야기 36 편
+자동 검수: 문제 의심 2 곳
+R2 에 올림: 128 개 / 한글판 이야기 36 편
 공개 주소 확인: 200 1306946바이트
 41-Mogharaja
 13-Singalakamata
