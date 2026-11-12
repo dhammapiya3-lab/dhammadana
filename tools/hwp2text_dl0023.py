@@ -145,7 +145,7 @@ for p in PL:
     if p.get('new-page') == '1' and lasty is not None: page += 1; lasty = None
     for s in p.findall('LineSeg'):
         y = int(s.get('y'))
-        if lasty is not None and y < lasty: page += 1
+        if lasty is not None and y <= lasty: page += 1   # 같은 y 도 새 쪽 (각주가 쪽을 거의 다 차지해 본문이 한 줄뿐인 쪽)
         if first is None: first = page
         lasty = y
     pg.append(first if first is not None else page)
@@ -160,18 +160,49 @@ for i, p in enumerate(PL):
     blocks.append({'pg': pg[i], 'sty': sty, 'al': al, 'ml': ml, 'ps': p.get('parashape-id'), 't': t, 'i': i})
 
 LAST = max(b['pg'] for b in blocks)
+
+# ---- 쪽 번호 (한글 파일 꼬리말의 쪽 번호) ----
+# 한글 파일에 저장된 줄 자리로 센 쪽(pg)은 실제 쪽과 몇 쪽씩 어긋난다(빈 쪽·각주만 있는 쪽 등은 줄 자리로 알 수 없음).
+# 그래서 책의 차례(6~8쪽, 한글 파일에 인쇄된 쪽 번호)를 기준점으로 삼아: 차례 항목이 시작하는 쪽 = 차례의 쪽 번호,
+# 그 사이 쪽은 하나씩 늘려 셈. 앞쪽(속표지~차례)은 인쇄본 쪽 차례(1 반표제, 2 빈 쪽, 3 속표지, 4 여는 글, 5 예경문, 6~8 차례).
+KEY = lambda s: re.sub(r'[^가-힣A-Za-z0-9]', '', re.sub(r'\[\^\d+\]|\*\*', '', s))
+anchors = {}
+for b in blocks:
+    m = re.match(r'^(?:\d+\. )?(.*?)(?: \| [\d, ~]+)?\t\s*(\d+)$', b['t'].strip())
+    if b['pg'] <= 8 and m:
+        k = KEY(m.group(1))
+        hit = next((c['pg'] for c in blocks if c['pg'] > 8 and KEY(c['t']) == k), None)
+        if hit: anchors.setdefault(hit, int(m.group(2)))
+FRONT = {}
+for b in blocks:
+    if b['pg'] > 8: break
+    FRONT.setdefault(b['pg'], None)
+fp = sorted(FRONT)   # 반표제·속표지·여는 글·예경문·차례 3쪽
+for k, lab in zip(fp, [1, 3, 4, 5, 6, 7, 8]): FRONT[k] = lab
+AK = sorted(anchors)
+def LBL(raw):
+    if raw in FRONT and FRONT[raw]: return FRONT[raw]
+    a = max([k for k in AK if k <= raw] or [AK[0]])
+    lab = anchors[a] + (raw - a)
+    if 203 < raw <= 250 and raw > 217: lab += 1   # 8번째 이야기: 217쪽 각주가 넘쳐 각주만 있는 쪽이 하나 더 있음 (다음 이야기 시작 256쪽과 맞음)
+    nxt = [k for k in AK if k > raw]
+    if nxt and lab >= anchors[nxt[0]]: lab = anchors[nxt[0]] - 1
+    return lab
+LABELS = []
 out_pages = []   # [[문단…]]
 chapters, subs = [], []
 cur_pg = None
 def new_page(force=False):
     global cur_pg
     out_pages.append([])
+    LABELS.append(LBL(cur_raw))
 def add(s): out_pages[-1].append(s)
 def flush_fn(page_paras):
     pass
 
 story_no = None
 i = 0
+cur_raw = blocks[0]['pg']
 new_page()
 prev_pg = blocks[0]['pg']
 pending_fn = []
@@ -188,6 +219,7 @@ def end_page():
 DONE = set()
 def chapter(title, sub=False):
     title = re.sub(r'\[\^\d+\]', '', title).replace('**', '').strip()
+    title = re.sub(r'\s+', ' ', title)
     (subs if sub else chapters).append((title, len(out_pages)))
 
 grp = None   # 묶음(게송·가운데 줄)
@@ -213,7 +245,7 @@ def expand(t):
 
 for bi, b in enumerate(blocks):
     if b['pg'] != prev_pg:
-        close_grp(); end_page(); new_page(); prev_pg = b['pg']
+        close_grp(); end_page(); cur_raw = b['pg']; new_page(); prev_pg = b['pg']
     sty, t = b['sty'], b['t']
     tt = t.strip()
     # 장(챕터) 시작
@@ -258,7 +290,7 @@ for bi, b in enumerate(blocks):
             if re.match(r'^[가-힣 ]+번째 이야기$', xs):
                 if out_pages[-1]: end_page(); new_page()
                 nxt = next((c['t'].strip() for c in blocks[bi + 1:bi + 2] if c['sty'] == '개요 2'), '')
-                chapter(f'{xs} {nxt}')
+                chapter(f'{xs} : {nxt}' if nxt else xs)   # '두 번째 이야기 : 제목' (운영자 요청, 2026-11-12)
             add(('## ' if b['pg'] > 3 else ':: ') + xs); continue
         if sty in ('개요 3', '개요 5-2', '개요 5'):
             close_grp(); chapter(xs, sub=(sty != '개요 5')) if sty != '개요 5' else None; add(('## ' if b['pg'] > 3 else ':: ') + xs); continue
@@ -281,9 +313,14 @@ close_grp(); end_page()
 miss = sorted(set(FN) - DONE)
 assert not miss, ('쪽 끝에 넣지 못한 각주', miss[:10])
 
-body = ''
-for ps in out_pages:
-    body += '=== ===\n' + '\n\n'.join(x for x in ps if x.strip()) + '\n\n'
+# 인쇄본 맨 앞(반표제 앞)의 지도 두 장 — 한글 파일에는 없어 tools/dl0023_maps.py 로 인쇄본 지도를 다시 그린 그림 (운영자 요청, 2026-11-12)
+MAPS = ['/uploads/DL-0023-map-india.png', '/uploads/DL-0023-map-majjhimadesa.png']
+body = '=== 지도 ===\n![#부처님 당시 인도 B.C 500년경 — 16대국 지도](' + MAPS[0] + ')\n\n![#불교중심지역 majjhimadesa 지도](' + MAPS[1] + ')\n\n'
+chapters = [('지도', 1)] + [(t, n + 1) for t, n in chapters]
+subs = [(t, n + 1) for t, n in subs]
+saved['map-india'], saved['map-majjhimadesa'] = MAPS
+for lab, ps in zip(LABELS, out_pages):
+    body += f'=== {lab}쪽 ===\n' + '\n\n'.join(x for x in ps if x.strip()) + '\n\n'
 body = body.rstrip() + '\n'
 toc = [{'title': t, 'page': n, 'sub': False} for t, n in chapters] + [{'title': t, 'page': n, 'sub': True} for t, n in subs]
 toc.sort(key=lambda x: (x['page'], x['sub']))
