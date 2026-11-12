@@ -1024,7 +1024,9 @@ function bindReader() {
     const s = window.getSelection(), pop = $('#selPop'); if (!pop) return;
     if (!s || s.isCollapsed || !s.toString().trim()) { if (!pop._hold) pop.classList.remove('show'); return; }
     const node = s.anchorNode && (s.anchorNode.nodeType === 1 ? s.anchorNode : s.anchorNode.parentElement); const para = node && node.closest('[data-pg]');
-    if (!para || !body.contains(para)) { pop.classList.remove('show'); return; }
+    const head = !para && node && node.closest('.ch-head');   // 장 제목을 골라도 창을 띄움 — 듣기만 (운영자 요청, 2026-11-12)
+    if (!(para && body.contains(para)) && !(head && body.contains(head))) { pop.classList.remove('show'); return; }
+    pop.classList.toggle('on-head', !!head);
     const z = bodyZoom(), r = s.getRangeAt(0).getBoundingClientRect(), pw = (pop.offsetWidth || 240) * z, ph = 46 * z;
     pop.style.left = Math.max(8, Math.min(window.innerWidth - pw - 8, r.left + r.width / 2 - pw / 2)) / z + 'px';
     // 휴대폰은 위쪽에 기기 자체의 복사 메뉴가 뜨므로 아래쪽에 둠
@@ -1032,7 +1034,7 @@ function bindReader() {
     if (top < 8) top = r.bottom + 14;
     if (top > window.innerHeight - ph - 70) top = Math.max(8, r.top - ph - 50);
     pop.style.top = top / z + 'px';
-    pop.classList.add('show'); pop._sel = { text: s.toString().replace(/\s+/g, ' ').trim(), p: +para.dataset.pg };
+    pop.classList.add('show'); pop._sel = { text: s.toString().replace(/\s+/g, ' ').trim(), p: para ? +para.dataset.pg : (chapters()[chapterOf(R.i + 1)] || {}).from || R.i + 1 };
   };
   let selT; window._ddOnSel = () => { clearTimeout(selT); selT = setTimeout(onSel, touch ? 350 : 30); };
   if (!window._ddSelBound) { document.addEventListener('selectionchange', () => window._ddOnSel && window._ddOnSel()); window._ddSelBound = true; }

@@ -1043,3 +1043,6 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 /* 표 그림 내려받기 단추 (운영자 요청, 2026-11-12) */
 .r-tdl{text-align:right;margin:.4em 0 1.2em}
 .r-tdl .tbtn{font-size:.85em;text-decoration:none}
+
+/* 장 제목을 골랐을 때 글 고르기 창: 밑줄·메모·복사·공유는 숨기고 듣기만 (운영자 요청, 2026-11-12) */
+.sel-pop.on-head #selUl,.sel-pop.on-head #selNote,.sel-pop.on-head #selCopy,.sel-pop.on-head #selShare{display:none}
