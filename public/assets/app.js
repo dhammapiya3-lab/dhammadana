@@ -765,7 +765,8 @@ function subTargets(c) {
     const want = nk(t.title).slice(0, 10);
     for (const pg of [t.page, t.page + 1]) {
       const ps = [...$$(`#rBody p[data-pg="${pg}"]`)].filter(vis);
-      const e = ps.find(e => e.classList.contains('sub-h') && nk(e.textContent).startsWith(want)) || ps.find(e => e.textContent.length < 160 && nk(e.textContent).startsWith(want));
+      const tx = e => { const c = e.cloneNode(true); c.querySelectorAll('.fn-ref').forEach(x => x.remove()); return c.textContent; };  // 소제목 가운데 각주 번호는 빼고 비교 ('쌍신변[^231]의 신통…', DL-0024)
+      const e = ps.find(e => e.classList.contains('sub-h') && nk(tx(e)).startsWith(want)) || ps.find(e => e.textContent.length < 160 && nk(tx(e)).startsWith(want));
       if (e) return e;
     }
     const e = $(`#rBody p[data-pg="${t.page}"][data-s="${paraIdx(t)}"]`);
