@@ -12,6 +12,8 @@ FONT = "Noto Sans CJK KR, Noto Sans KR, sans-serif"
 def tw(s, fs=FS):
     return sum(fs * (1.0 if ord(c) > 0x2000 else 0.56) for c in s)
 
+UNDER = {'싯닷타+야소다라': '싯닷타'}
+
 def draw(name, title, nodes, W):
     """nodes: (id, 부모 id, 단계, x, 이름, 둘째 줄)"""
     pos, out = {}, []
@@ -45,7 +47,10 @@ def draw(name, title, nodes, W):
         boxes.append(f'<rect x="{x0-w/2:.1f}" y="{y}" width="{w:.1f}" height="{h}" rx="9" fill="{fill}" stroke="#a89a7c" stroke-width="1.6"/>')
         fw = ' font-weight="700"' if root else ''
         boxes.append(f'<text x="{x0}" y="{y+27}" font-size="{FS+ (2 if root else 0)}"{fw}>{lab}</text>')
-        if sub: boxes.append(f'<text x="{x0}" y="{y+52}" font-size="{FS-3}" fill="#6b5f48">{sub}</text>')
+        sx = x0
+        if sub and lab in UNDER:   # 둘째 줄을 이름의 앞부분 바로 아래에 (예: '(붓다)'는 '싯닷타' 아래 — 운영자 요청 2026-11-12)
+            sx = x0 - tw(lab) / 2 + tw(UNDER[lab]) / 2
+        if sub: boxes.append(f'<text x="{sx:.1f}" y="{y+52}" font-size="{FS-3}" fill="#6b5f48">{sub}</text>')
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
 <rect width="{W}" height="{H}" fill="#ffffff"/>
 <g stroke="#5c5444" stroke-width="2.2" fill="none" stroke-linecap="square">
