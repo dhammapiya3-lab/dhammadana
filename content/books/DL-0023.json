@@ -6,7 +6,10 @@
   "byline": "무념·응진 스님 역",
   "translator": "",
   "teacher": "",
-  "co_teachers": [],
+  "co_teachers": [
+    "munyeom",
+    "eungjin"
+  ],
   "provider": "amumaldeul",
   "press": false,
   "provider_chip": false,
@@ -151,5 +154,6 @@
   "added": "2026-11-12",
   "order": null,
   "hidden": false,
+  "no_copy": false,
   "hide_update": false
 }
