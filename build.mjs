@@ -363,7 +363,7 @@ function teacherBooksHead(t, list) {
 // 지은이·옮긴이: 책 정보의 지은이(byline)·옮긴이(translator) 글에서 이름을 골라, 같은 사람의 책을 모아 볼 수 있게 함
 // - 스승과 같은 이름(스승 목록의 이름·다른 이름)은 그 스승으로, 책의 스승이 있으면 지은이 줄은 그 스승으로 묶음
 // - '정원 김재성'과 '김재성'처럼 앞에 법명 등이 붙은 이름은 뒤의 이름과 같은 사람으로 묶음
-const PROLE = /\s*(지음|옮김|엮음|편역|편저|통역|번역|공역|역주|감수|설법|법문|강설|씀|저|역|편)$/;
+const PROLE = /\s*(지음|옮김|엮음|편역|편저|편집|통역|번역|공역|역주|감수|설법|법문|강설|씀|저|역|편)$/;
 const pnorm = n => String(n || '').replace(/\s+/g, '');
 const T_KEYS = new Map(); for (const t of TEACHERS) for (const n of [t.name, ...(t.aliases || [])]) if (n) T_KEYS.set(pnorm(n), t.id);
 function peopleRaw(b) {
