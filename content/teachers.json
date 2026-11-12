@@ -449,7 +449,10 @@
       "id": "khemacara",
       "name": "케마짜라 스님",
       "roman": "",
-      "aliases": [],
+      "aliases": [
+        "빅쿠 케마짜라",
+        "케마짜라"
+      ],
       "tradition": "forest",
       "bio": "",
       "photo": "",
