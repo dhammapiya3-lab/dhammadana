@@ -707,6 +707,7 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 .reflow p.orn+p{text-align:center}
 .r-fig .fig-btn img{max-height:62vh;width:auto;max-width:100%;margin:0 auto;display:block}
 .r-fig .fig-btn img[src*="chanmyay"]{max-height:40vh}
+.r-fig .fig-btn img[src*="DL-0023-map-"]{max-height:88vh}  /* 『법구경 이야기 1』 앞 지도: 한 쪽에 하나씩, 화면에 맞게 크게 (운영자 요청, 2026-11-12) */
 .press section .prose > .h-page{margin-bottom:22px}
 .r-fig .fig-btn img[src*="dhammacakka"]{max-height:64px}
 /* 색인 표 (빠알리어-한국어-영어 색인 등): 컴퓨터는 표, 휴대폰은 낱말 카드 */
