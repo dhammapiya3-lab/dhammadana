@@ -1284,7 +1284,7 @@ function ttsPanel() {
   const sel = (k, list) => `<select data-tts="${k}">${list.map(([v, l]) => `<option value="${v}" ${String(o[k]) === String(v) ? 'selected' : ''}>${l}</option>`).join('')}</select>`;
   return `<h5>듣기 설정</h5>
     <div class="tts-row"><label for="ttsVoice">목소리</label><select id="ttsVoice" data-tts="voice">${voiceOptions(o.voice)}</select></div>
-    <div class="tts-row"><label>빠르기 <b id="ttsRateV">${(+o.rate).toFixed(1)}배</b></label><input type="range" min="0.6" max="1.8" step="0.1" value="${o.rate}" data-tts="rate"></div>
+    <div class="tts-row"><label>빠르기 <b id="ttsRateV">${(+o.rate).toFixed(1)}배</b></label><input type="range" min="0.6" max="2" step="0.1" value="${o.rate}" data-tts="rate"></div>
     <div class="tts-row"><label>영어 빠르기 <b id="ttsEnRateV">${Math.round((+o.enRate || 0.85) * 100)}%</b><small class="muted"> (한국어 빠르기에 비해)</small></label><input type="range" min="0.6" max="1.2" step="0.05" value="${o.enRate || 0.85}" data-tts="enRate"></div>
     <div class="tts-row"><label>목소리 높낮이 <b id="ttsPitchV">${(+o.pitch).toFixed(1)}</b></label><input type="range" min="0.6" max="1.4" step="0.1" value="${o.pitch}" data-tts="pitch"></div>
     <div class="tts-sub">읽을 것</div>
