@@ -214,6 +214,12 @@
           "lang": "빠알리 삼장 & 번역"
         },
         {
+          "name": "담마리더",
+          "url": "https://dhammareader.com/",
+          "note": "빠알리·한문·티베트 세 대장경의 원문과 한국어 번역을 회원 가입 없이 무료로 보는 곳",
+          "lang": "여러 나라 말 번역 (AI 번역)"
+        },
+        {
           "name": "OpenTipitaka",
           "url": "https://www.opentipitaka.org/ko",
           "note": "빠알리 삼장 원문과 여러 나라 말 번역을 문단마다 나란히 보고, 찾기·사전·음성 듣기를 쓰는 곳 (AI 번역)",
