@@ -214,6 +214,12 @@
           "lang": "빠알리 삼장 & 번역"
         },
         {
+          "name": "myDhamma",
+          "url": "https://mydhamma.web.app/open/",
+          "note": "빠알리 삼장 원문과 번역, 보호경(빠릿따) 독송, 사마디 수행 자료, 포살일 달력을 함께 보는 곳",
+          "lang": "빠알리 삼장 & 번역"
+        },
+        {
           "name": "담마리더",
           "url": "https://dhammareader.com/",
           "note": "빠알리·한문·티베트 세 대장경의 원문과 한국어 번역을 회원 가입 없이 무료로 보는 곳 (AI 번역)",
