@@ -16,7 +16,7 @@ const app = fs.readFileSync(path.join(root, 'public/assets/app.js'), 'utf8');
 const a = app.indexOf('// 빨리어 로마자 → 한글 소리'), b = app.indexOf('const fnMark');
 const unBLine = app.match(/^const unB = .*$/m)[0];
 const tocLine = app.match(/^const tocLines = .*$/m)[0];
-const block = app.slice(a, b) + '\n' + unBLine + '\n' + tocLine + '\nreturn { PALI, sayable, LEX, langOf, PALI_MARK };';
+const block = app.slice(a, b) + '\n' + unBLine + '\n' + tocLine + '\nreturn { PALI, sayable, LEX, langOf, PALI_MARK, citeSay };';
 const store = { get: (k, d) => d, set() {} };
 const lib = new Function('store', 'window', block)(store, {});
 const words = f => new Set(fs.readFileSync(path.join(root, 'public/data', f), 'utf8').split('\n').filter(x => x && x[0] !== '#'));
@@ -99,14 +99,7 @@ const NATIVE = n => { n = +n; if (n < 1 || n > 99) return null; const T = ['', '
 // 동그라미 번호(① ➀ ❶ …)는 음성 엔진이 소리 없이 건너뛰므로 숫자로 바꿔 읽음 — 줄 첫머리는 '일. …', 글 가운데는 ', 일, …' (운영자 요청, 2026-11-13 — DL-0016)
 const CIRC = c => { const u = c.codePointAt(0); return u >= 0x2460 && u <= 0x2473 ? u - 0x245F : u >= 0x2780 && u <= 0x2789 ? u - 0x277F : u >= 0x2776 && u <= 0x277F ? u - 0x2775 : u >= 0x278A && u <= 0x2793 ? u - 0x2789 : 0; };
 const circNum = s => s.replace(/(^|\n)\s*([\u2460-\u2473\u2776-\u2793])\s*/g, (m, a, c) => a + CIRC(c) + '. ').replace(/([.,?!:;]?)[,\s]*([\u2460-\u2473\u2776-\u2793])\s*(?=(.{0,2}))/g, (m, p, c, nx) => (p ? p + ' ' : ', ') + CIRC(c) + (!nx || /^[~,.)\]]|^번|^[의과와이가은는을를도](?![가-힣])/.test(nx) ? '' : ', ')).replace(/,(\s*,)+/g, ',').replace(/^, /, '');   // 글 가운데: 앞뒤로 짧게 쉼 ('…그것은, 일, 태어남, 이, 늙음 …'), 바로 뒤에 '번·의' 등이 붙으면 쉬지 않음
-const CITE_AB = 'DN|MN|SN|AN|KN|Dhp|Sn|Ud|It|Vin|Vism|Vibh|Dhs|Kv|Pts|Ps|Thag|Thig|Ja|Mil|Nidd|Ap|Bv|Cp|Pv|Vv|Khp|Netti|Peṭ|DA|MA|SA|AA|DhpA|SnA|UdA|ItA|VinA';
-const LETTER = { A: '에이', B: '비', C: '씨', D: '디', E: '이', F: '에프', G: '지', H: '에이치', I: '아이', J: '제이', K: '케이', L: '엘', M: '엠', N: '엔', O: '오', P: '피', Q: '큐', R: '알', S: '에스', T: '티', U: '유', V: '브이', W: '더블유', X: '엑스', Y: '와이', Z: '지', Ṭ: '티' };
-const ROMAN = { I: '원', II: '투', III: '쓰리', IV: '포', V: '파이브', VI: '식스', VII: '세븐', VIII: '에잇', IX: '나인', X: '텐' };
-const CITE_NUM = '(?:(?:I{1,3}|IV|V|VI{1,3}|IX|X)\\s+)?\\d+(?:\\s*[-~–]\\s*\\d+)?';
-const CITE_RE = new RegExp(`\\b(${CITE_AB})\\.?[ \\u00a0]+(${CITE_NUM}(?:\\s*[,;]\\s*${CITE_NUM})*)(?![\\w.]*[A-Za-z])`, 'g');
-const UROMAN = { 'Ⅰ': '원', 'Ⅱ': '투', 'Ⅲ': '쓰리', 'Ⅳ': '포', 'Ⅴ': '파이브', 'Ⅵ': '식스' };   // 'Ⅰ 129' 처럼 한 글자로 된 로마 숫자
-const cite = s => s.replace(/[ⅠⅡⅢⅣⅤⅥ](?=\s*\d)/g, r => UROMAN[r]).replace(CITE_RE, (m, ab, rest) => ab.toUpperCase().split('').map(c => LETTER[c] || '').join('') + ' ' +
-  rest.replace(/\b(I{1,3}|IV|V|VI{1,3}|IX|X)(?=\s+\d)/g, r => ROMAN[r]).replace(/\s*;\s*/g, ', '));
+const cite = s => lib.citeSay(s);   // 경전 출처 읽기는 app.js citeSay 를 함께 씀 (사이트 '듣기'와 같게)
 const sayNum = s => circNum(s).replace(/(\d)\s?:\s?(?=\d)/g, '$1, ').replace(/\d+(?=(\s?)(개(?!월)|명|마리|살|번째|번|가지)?)/g, (d, sp, unit) => {
   if (d.length > 1 && d[0] === '0') return d.split('').map(c => '영일이삼사오육칠팔구'[+c]).join(' ');
   if (unit && unit !== '번' && NATIVE(d)) return NATIVE(d);

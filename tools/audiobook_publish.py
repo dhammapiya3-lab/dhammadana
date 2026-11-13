@@ -33,7 +33,7 @@ for mp in sorted(glob.glob(os.path.join(SRC, '[0-9][0-9]_*.mp3'))):
         if (p, s) != last: sync.append([round(a['start'], 2), p, s]); last = (p, s)
     chs.append({'n': int(nn), 'title': m['title'], 'page': m['page'], 'to': m['to'], 'file': f'audio/{ID}/{nn}.mp3',
                 'dur': round(dur, 1), 'size': os.path.getsize(mp), 'sync': sync})
-out = {'book': ID, **({'uploaded': old['uploaded']} if old.get('uploaded') else {}), 'voice': '기계 음성(MeloTTS)으로 만든 오디오북', 'chapters': chs}
+out = {'book': ID, **({'uploaded': old['uploaded']} if old.get('uploaded') else {}), **({'up': old['up']} if old.get('up') else {}), 'voice': '기계 음성(MeloTTS)으로 만든 오디오북', 'chapters': chs}
 os.makedirs(os.path.dirname(dst), exist_ok=True)
 json.dump(out, open(dst, 'w'), ensure_ascii=False, separators=(',', ':'))
 open(dst, 'a').write('\n')

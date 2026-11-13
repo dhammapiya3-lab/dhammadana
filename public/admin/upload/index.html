@@ -270,6 +270,7 @@ $('#ago').onclick=async()=>{
     let ok=false; for(let t=0;t<4&&!ok;t++){ if(t) await new Promise(r=>setTimeout(r,1500*t));
       const r=await gh(`/contents/content/audiobooks/${id}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); const j=await r.json(); const d=JSON.parse(dec(j.content));
       d.uploaded=new Date().toISOString().slice(0,10);
+      d.up=d.up||{}; const st=Date.now().toString(36); for(const x of list) d.up[String(+x.n)]=st;   // 장마다 올린 때 — 소리 주소가 바뀌어 옛 파일을 저장해 둔 곳(파일 서버·기기)이 새 파일을 받음
       const put=await gh(`/contents/content/audiobooks/${id}.json`,{method:'PUT',headers:{'content-type':'application/json'},body:JSON.stringify({message:`오디오북 소리 파일 올림: ${id}`,content:enc(JSON.stringify(d)+'\n'),sha:j.sha,branch:'main'})});
       ok=put.ok; }
     ashow('ok',`다 됐습니다! ${list.length}개 장을 올렸습니다. 3~5분 뒤 <a href="/read/${id}/" target="_blank" rel="noopener">읽기 화면 ↗</a>에 '🎧 오디오북' 단추가 나타납니다.`+(ok?'':'<br>(사이트에 알리는 것은 실패했습니다. Claude에게 알려 주세요.)'));
