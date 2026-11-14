@@ -690,7 +690,7 @@ async function initReaderPage() {
 }
 const pageName = p => p.label ? `${p.label}쪽` : `${p.n}번째 쪽`;
 document.addEventListener('fullscreenchange', () => { const b = $('#rFull'); if (b) { const on = !!document.fullscreenElement; b.textContent = on ? '⛶ 전체 화면 끄기' : '⛶ 전체 화면'; b.setAttribute('aria-pressed', on); } });
-function closeReader() { try { if (document.fullscreenElement) document.exitFullscreen(); } catch (e) {} stopSpeak(); abStop(); R = null; const el = $('#reader'); if (el) el.remove(); document.body.style.overflow = ''; }
+function closeReader() { try { if (R && R.spreadLock) screen.orientation.unlock(); } catch (e) {} try { if (document.fullscreenElement) document.exitFullscreen(); } catch (e) {} stopSpeak(); abStop(); R = null; const el = $('#reader'); if (el) el.remove(); document.body.style.overflow = ''; }
 function exitReader() { if (AB.locked) { abLockedMsg(); return; } if (R && R.ttsLocked) { toast('듣기가 잠겨 있습니다. 🔒 잠김 단추를 눌러 풀어 주세요'); return; } const id = R && R.id; closeReader(); location.href = '/book/' + id + '/'; }
 // 빈 줄 = 문단 나눔, 문단 안의 한 줄 바꿈 = 줄 바꿈(게송·회향문처럼 인쇄된 대로)
 const paras = t => String(t || '').split(/\n\s*\n/).map(s => s.trim().split('\n').map(l => l.trim()).join('\n')).filter(Boolean);
@@ -802,7 +802,7 @@ function renderReader() {
       ${R.toc.length ? '<button class="tbtn" data-panel="toc">목차</button>' : ''}${hasText ? '<button class="tbtn" data-panel="find" aria-label="본문 검색">🔍 찾기</button>' : ''}
       <button class="tbtn" data-panel="font" aria-label="글씨 크기">가<span style="font-size:16px">가</span></button>
       ${hasText && R.speaking ? `<button class="tbtn ${R.ttsLocked ? 'on' : ''}" id="rLock" aria-pressed="${!!R.ttsLocked}" title="잠그면 실수로 멈추지 않습니다">${R.ttsLocked ? '🔒 잠김' : '🔓 잠금'}</button>` : ''}${R.ab ? `<button class="tbtn ${AB.on && !abA().paused ? 'on' : ''}" id="rAb" data-tip="${AB_TIP}" aria-label="오디오북 듣기 (${AB_TIP})">${AB.on && !abA().paused ? '❚❚ 오디오북' : '🎧 오디오북'}</button>` : ''}${hasText ? `<button class="tbtn ${R.speaking ? 'on' : ''}" id="rSpeak" ${R.ttsLocked ? 'disabled' : ''}>${R.speaking ? '■ 멈춤' : '▶ 듣기'}</button><button class="tbtn" data-panel="tts" aria-label="듣기 설정">듣기 설정</button>` : ''}
-      <button class="tbtn" data-panel="mode">화면</button>${R.spreadOk && spreadWide() && R.view !== 'page' ? `<button class="tbtn${R.spread ? ' on' : ''}" id="rSpread" aria-pressed="${!!R.spread}" title="왼쪽·오른쪽 쪽을 책처럼 나란히">${R.spread ? '📄 한쪽씩 보기' : '📖 양쪽으로 보기'}</button>` : ''}${document.fullscreenEnabled ? `<button class="tbtn" id="rFull" aria-pressed="${!!document.fullscreenElement}" title="F11 처럼 화면 가득 보기 (Esc 로 나가기)">${document.fullscreenElement ? '⛶ 전체 화면 끄기' : '⛶ 전체 화면'}</button>` : ''}
+      <button class="tbtn" data-panel="mode">화면</button>${R.spreadOk && R.view !== 'page' ? `<button class="tbtn${R.spread ? ' on' : ''}" id="rSpread" aria-pressed="${!!R.spread}" title="왼쪽·오른쪽 쪽을 책처럼 나란히">${R.spread ? '📄 한쪽씩 보기' : '📖 양쪽으로 보기'}</button>` : ''}${document.fullscreenEnabled ? `<button class="tbtn" id="rFull" aria-pressed="${!!document.fullscreenElement}" title="F11 처럼 화면 가득 보기 (Esc 로 나가기)">${document.fullscreenElement ? '⛶ 전체 화면 끄기' : '⛶ 전체 화면'}</button>` : ''}
       <button class="tbtn ${marked ? 'on' : ''}" id="rMark" aria-pressed="${marked}">${marked ? '★ 책갈피' : '☆ 책갈피'}</button>
       <button class="tbtn" data-panel="bm">책갈피 목록</button>
       ${hasText ? '<button class="tbtn" data-panel="ul">밑줄 모음</button>' : ''}
@@ -989,7 +989,10 @@ function bindReader() {
   $$('[data-lh]', el).forEach(b => b.onclick = () => { R.lh = +b.dataset.lh; store.set('rlh', R.lh); renderReader(); reopen('p-font'); });
   $$('[data-font]', el).forEach(b => b.onclick = () => { R.font = b.dataset.font; store.set('rfont', R.font); renderReader(); reopen('p-font'); });
   $$('[data-mw]', el).forEach(b => b.onclick = () => { R.mw = +b.dataset.mw; store.set('rmw', R.mw); renderReader(); reopen('p-font'); });
-  const spB = $('#rSpread', el); if (spB) spB.onclick = () => { R.spread = !R.spread; store.set('rspread-' + R.id, R.spread); const pn = R.i + 1; renderReader(); const m = $('#pm-' + pn); if (m) m.scrollIntoView(); toast(R.spread ? (R.spreadPali ? '양쪽으로 봅니다 (왼쪽 빠알리 · 오른쪽 번역)' : '양쪽으로 봅니다 (짝수 쪽 왼쪽 · 홀수 쪽 오른쪽)') : '한쪽씩 봅니다'); };
+  const spB = $('#rSpread', el); if (spB) spB.onclick = async () => { R.spread = !R.spread; store.set('rspread-' + R.id, R.spread);
+    // 휴대폰 세로 화면에서 켜면 저절로 가로로 (전체 화면 + 화면 방향 고정 — 안드로이드 크롬 등에서만 됨, 아이폰은 직접 돌려야 함) (운영자 요청, 2026-11-14)
+    if (R.spread && !spreadWide() && screen.orientation && screen.orientation.lock) { try { if (!document.fullscreenElement) { await document.documentElement.requestFullscreen(); R.spreadFs = true; } await screen.orientation.lock('landscape'); R.spreadLock = true; } catch (e) {} }
+    if (!R.spread && R.spreadLock) { try { screen.orientation.unlock(); } catch (e) {} R.spreadLock = false; if (R.spreadFs && document.fullscreenElement) { try { await document.exitFullscreen(); } catch (e) {} } R.spreadFs = false; } const pn = R.i + 1; renderReader(); const m = $('#pm-' + pn); if (m) m.scrollIntoView(); setTimeout(() => R && toast(R.spread && !spreadWide() ? '휴대폰을 가로로 돌려 주세요 — 가로 화면에서 양쪽으로 보입니다' : R.spread ? (R.spreadPali ? '양쪽으로 봅니다 (왼쪽 빠알리 · 오른쪽 번역)' : '양쪽으로 봅니다 (짝수 쪽 왼쪽 · 홀수 쪽 오른쪽)') : '한쪽씩 봅니다'), 700); };
   $$('[data-spread]', el).forEach(b => b.onclick = () => { R.spread = b.dataset.spread === '1'; store.set('rspread-' + R.id, R.spread); renderReader(); reopen('p-font'); });
   $$('[data-rmode]', el).forEach(b => b.onclick = () => { applyMode(b.dataset.rmode); renderReader(); reopen('p-mode'); });
   const cur = () => R.pages[R.i];
