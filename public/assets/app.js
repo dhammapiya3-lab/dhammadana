@@ -672,7 +672,7 @@ async function initReaderPage() {
   const pages = man.pages.map((p, i) => ({ n: i + 1, label: p.label || '', img: p.img ? base + p.img : '', big: p.big ? base + p.big : '', w: p.w, h: p.h, text: p.text || '' }));
   const last = store.get('pos-' + id, 1);
   R = {
-    id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, cover: root.dataset.cover || '', kakao: root.dataset.kakao || '', noCopy: root.dataset.nocopy === '1', pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, spreadOk: (man.pages || []).some(p => p.text), spreadPali: !!man.spread,  // tdl: 표 그림 내려받기 (표 첫 칸 글 → 그림 주소, 운영자 요청 2026-11-12)
+    id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, cover: root.dataset.cover || '', kakao: root.dataset.kakao || '', noCopy: root.dataset.nocopy === '1', pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, spreadOk: (man.pages || []).some(p => p.text), spreadPali: !!man.spread, ly: man.ly || null,  // tdl: 표 그림 내려받기 (표 첫 칸 글 → 그림 주소, 운영자 요청 2026-11-12)
      // say: 그림·표를 소리로 읽을 글 (그림 주소 → 글, 운영자 요청 2026-11-10)
    
     i: Math.min(Math.max(want || (last > 1 ? last : 0) || firstContent(pages, man.toc || []), 1), pages.length) - 1,
@@ -758,6 +758,65 @@ function sprBar() {
 window.addEventListener('resize', () => setTimeout(sprBar, 50));
 window.addEventListener('resize', () => { if (!R || !R.spreadOk || !$('#reader')) return; const now = spreadOn(); if (spreadWas === null) { spreadWas = now; return; } if (now === spreadWas) return; spreadWas = now;
   const pn = R.i + 1; renderReader(); const m = $('#pm-' + pn); if (m) m.scrollIntoView(); });
+// 양쪽으로 보기에서 왼쪽 빠알리 줄과 오른쪽 번역 줄을 인쇄본처럼 같은 높이에 (운영자 요청, 2026-11-14 — 『테라와다 불교의범』)
+// 텍스트 JSON 의 ly {쪽 순번: [[문단마다 줄의 인쇄본 높이 pt…]…]} 를 보고, 인쇄본에서 같은 높이에 있는 줄이 화면에서도 같은 높이에 오도록
+// 늦게 오는 쪽 문단 위에 빈칸(padding-top)을 더함. 글자는 그대로.
+function lineTops(p) {
+  const tops = []; let k = 0, want = true;
+  const w = document.createTreeWalker(p, NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT);
+  for (let n = w.nextNode(); n; n = w.nextNode()) {
+    if (n.nodeType === 1) { if (n.tagName === 'BR') { k++; want = true; } continue; }
+    if (!want || !n.nodeValue.trim()) continue;
+    const r = document.createRange(), i = n.nodeValue.search(/\S/); r.setStart(n, i); r.setEnd(n, i + 1);
+    const b = r.getClientRects()[0]; if (b) tops[k] = b.top; want = false;
+  }
+  return tops;
+}
+function sprAlign() {
+  if (!R || !R.ly || !spreadOn()) return;
+  const body = $('#rBody'); if (!body) return;
+  $$('.spr-pg p[data-s]', body).forEach(p => { p.style.paddingTop = ''; });
+  $$('.spr-pg.spr-l', body).forEach(L => {
+    const Rt = L.nextElementSibling; if (!Rt || !Rt.classList.contains('spr-r')) return;
+    const side = col => {
+      const top = col.getBoundingClientRect().top;
+      return [...col.querySelectorAll('p[data-s]')].filter(p => p.offsetParent).map(p => {
+        const ys = ((R.ly[p.dataset.pg] || [])[+p.dataset.s]) || [];
+        const tops = lineTops(p).map(t => t == null ? null : t - top);
+        const k0 = ys.findIndex((y, k) => y != null && tops[k] != null);
+        return { p, ys, tops, k0, d: 0 };
+      }).filter(x => x.k0 > -1);
+    };
+    const S = [side(L), side(Rt)];
+    const eff = (s, i, k) => { let d = 0; for (let j = 0; j <= i; j++) d += S[s][j].d; return S[s][i].tops[k] + d; };
+    const anchors = [];
+    S.forEach((a, s) => a.forEach((x, i) => anchors.push({ s, i, y: x.ys[x.k0] })));
+    anchors.sort((a, b) => a.y - b.y);
+    for (const A of anchors) {
+      const o = 1 - A.s, x = S[A.s][A.i];
+      // 다른 쪽에서 인쇄본 높이가 바로 위·아래인 줄을 찾아 그 사이 자리를 비례로 셈
+      let lo = null, hi = null;
+      S[o].forEach((q, j) => q.ys.forEach((y, k) => { if (y == null || q.tops[k] == null) return; if (y <= A.y + 2) { if (!lo || y >= lo.y) lo = { j, k, y }; } else if (!hi || y < hi.y) hi = { j, k, y }; }));
+      if (!lo) continue;
+      const tl = eff(o, lo.j, lo.k);
+      let t = tl;
+      // 인쇄본에서 9pt 안에 다른 쪽 줄이 있으면 그 줄과 같은 높이로 (한 줄씩 맞춤), 없으면 위·아래 줄 사이를 비례로
+      const near = [lo, hi].filter(h => h && Math.abs(h.y - A.y) <= 9).sort((p, q) => Math.abs(p.y - A.y) - Math.abs(q.y - A.y))[0];
+      if (near) t = eff(o, near.j, near.k);
+      else if (hi && hi.y > lo.y && A.y > lo.y + 2) t = tl + (A.y - lo.y) / (hi.y - lo.y) * (eff(o, hi.j, hi.k) - tl);
+      const a = eff(A.s, A.i, x.k0);
+      if (a < t - 1) x.d += t - a;
+      else if (a > t + 1) {   // 다른 쪽이 늦음: 그쪽 다음 문단이 바로 이 높이에서 시작하면 그 문단을 내림
+        const h = near && S[o][near.j].k0 === near.k ? near : null;
+        if (h) { const th = eff(o, h.j, h.k); if (th < a - 1) S[o][h.j].d += a - th; }
+      }
+    }
+    S.forEach(a => a.forEach(x => { if (x.d > 0.5) x.p.style.paddingTop = x.d.toFixed(1) + 'px'; }));
+  });
+}
+let sprAlignT = null;
+window.addEventListener('resize', () => { clearTimeout(sprAlignT); sprAlignT = setTimeout(() => { if (R && R.ly && spreadOn()) sprAlign(); }, 150); });
+if (document.fonts) document.fonts.addEventListener('loadingdone', () => { if (R && R.ly && spreadOn()) sprAlign(); });
 function reflowHtml() {
   const cs = chapters(), ci = Math.max(0, chapterOf(R.i + 1)), c = cs[ci];
   const subs = R.toc.filter(t => /^\s/.test(t.title) && t.page >= c.from && t.page <= c.to);
@@ -855,6 +914,7 @@ function renderReader() {
       <p class="note">회원가입 없이 이 기기의 브라우저에만 저장됩니다. 다른 기기로 옮길 때는 내 서재의 ‘옮기기’를 쓰세요.</p></div>`;
   bindReader();
   sprBar(); spreadWas = spreadOn();  // 화면을 돌리면 처음 한 번부터 바로 다시 그리게
+  sprAlign(); if (R && R.ly && spreadOn()) $$('#rBody .spr img').forEach(im => { if (!im.complete) im.addEventListener('load', () => { clearTimeout(sprAlignT); sprAlignT = setTimeout(sprAlign, 100); }, { once: true }); });
   if (R.view === 'text') { const c = chapters()[Math.max(0, chapterOf(n))]; const pm = $('#pm-' + n); if (pm && n !== c.from) pm.scrollIntoView({ block: 'start' }); else $('#rBody').scrollTop = 0; }
   // 다음 쪽 그림 미리 받기
   const nx = R.pages[R.i + 1]; if (nx && nx.img && R.view === 'page') { const im = new Image(); im.src = nx.img; }
