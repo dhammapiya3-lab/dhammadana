@@ -44,7 +44,9 @@ python3 -c "import json;d=json.load(open('data/rendered_stamp.json'));json.dump(
 # 내려받기 파일 (이야기 PDF·ZIP, 책 PDF·ZIP) — 그림이 바뀐 이야기와 그 책만 다시 만듦 → dl.json
 cp /tmp/site/storybooks/data/dl.json /tmp/dl_before.json 2>/dev/null || echo '{}' > /tmp/dl_before.json
 python3 pipeline/bundles.py /tmp/site || echo '내려받기 파일 만들기 실패 — 다음 작업 때 다시'
-if ! cmp -s data/rendered.json /tmp/site/storybooks/data/ready.json || ! cmp -s /tmp/stamp.json /tmp/site/storybooks/data/stamp.json || ! cmp -s /tmp/dl_before.json /tmp/site/storybooks/data/dl.json; then
+cp /tmp/site/storybooks/data/texts.json /tmp/texts_before.json 2>/dev/null || echo '{}' > /tmp/texts_before.json
+python3 pipeline/texts.py /tmp/site || echo '글로 보기 글 모으기 실패'
+if ! cmp -s /tmp/texts_before.json /tmp/site/storybooks/data/texts.json || ! cmp -s data/rendered.json /tmp/site/storybooks/data/ready.json || ! cmp -s /tmp/stamp.json /tmp/site/storybooks/data/stamp.json || ! cmp -s /tmp/dl_before.json /tmp/site/storybooks/data/dl.json; then
   cp data/rendered.json /tmp/site/storybooks/data/ready.json
   cp /tmp/stamp.json /tmp/site/storybooks/data/stamp.json
   cd /tmp/site && git add storybooks/data && git -c user.name=storybooks-bot -c user.email=actions@users.noreply.github.com commit -qm "그림책: 한글판 이야기 목록·그림 판·내려받기 파일 갱신" && git push -q && cd - >/dev/null
