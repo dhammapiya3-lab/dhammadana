@@ -397,11 +397,15 @@ const PEOPLE = (() => {
 const peopleOf = b => [...new Set(PEOPLE.raw.filter(x => x.b === b).map(x => x.key))];
 // 책 소개의 지은이 줄: 이름마다 그 사람의 책 모아 보기 링크 (글자는 그대로)
 // 스승 목록에 있는 분은 스승 소개 페이지로 (운영자 요청, 2026-11-12)
+// 지은이 이름이 자료 제공처·협력 단체 이름과 같으면 그 단체 페이지로 ('(사)'·'사단법인'·띄어쓰기 무시 — 운영자 요청, 2026-11-14: 한국테라와다불교 → (사)한국테라와다불교)
+const orgKey = n => String(n || '').replace(/\(사\)|사단법인|\s/g, '');
+const provOfPerson = name => PROVIDERS.find(p => [p.name, ...(p.aliases || [])].some(n => orgKey(n) === orgKey(name)));
 function peopleLinks(b, text, fld) {
   let h = esc(text || '');
   const xs = PEOPLE.raw.filter(x => x.b === b && x.fld === fld).sort((a, c) => c.name.length - a.name.length);
   for (const x of xs) { const e = esc(x.name); const i = h.indexOf(e); if (i < 0) continue;
-    const a = `<a class="plink" href="${x.key.startsWith('t-') && teacherById(x.key.slice(2)) ? `/teacher/${x.key.slice(2)}/` : `/library/?person=${encodeURIComponent(x.key)}`}">${e}</a>`; h = h.slice(0, i) + a + h.slice(i + e.length); }
+    const pv = provOfPerson(x.name);
+    const a = `<a class="plink" href="${x.key.startsWith('t-') && teacherById(x.key.slice(2)) ? `/teacher/${x.key.slice(2)}/` : pv ? (pv.id === 'amumaldeul' ? '/press/' : `/publisher/${pv.id}/`) : `/library/?person=${encodeURIComponent(x.key)}`}">${e}</a>`; h = h.slice(0, i) + a + h.slice(i + e.length); }
   return h;
 }
 
