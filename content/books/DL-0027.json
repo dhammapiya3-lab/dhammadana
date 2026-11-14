@@ -117,10 +117,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "none",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0027/DL-0027_2판.pdf"
       },
       "pdf_print": {
         "mode": "none",
