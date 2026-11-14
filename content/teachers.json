@@ -44,6 +44,9 @@
       "name": "길 프론스달",
       "roman": "Gil Fronsdal",
       "aliases": [],
+      "country": [
+        "서양"
+      ],
       "tradition": "mahasi",
       "bio": "",
       "photo": "",
@@ -85,6 +88,9 @@
         "Nyanatiloka",
         "냐나틸로카"
       ],
+      "country": [
+        "서양"
+      ],
       "tradition": "srilanka-etc",
       "bio": "",
       "photo": "",
@@ -108,6 +114,9 @@
       "name": "니나 반 고르콤",
       "roman": "Nina van Gorkom",
       "aliases": [],
+      "country": [
+        "서양"
+      ],
       "tradition": "scholar",
       "bio": "",
       "photo": "",
@@ -202,6 +211,9 @@
         "빅쿠 보디",
         "보디 스님",
         "비구 보디"
+      ],
+      "country": [
+        "서양"
       ],
       "tradition": "srilanka-etc",
       "bio": "1944년 미국 뉴욕 출생으로 클레어몬트 대학원에서 철학으로 박사학위를 받았으며, 1972년 스리랑카로 건너가 불교교단에 들었다. 유명한 학승 발랑고다 아난다 마이뜨레야 스님 밑에서 빠알리어와 불법을 공부한 후, 같은 해에 사미계를 받고 이듬해에 비구계를 받았다. 그는 주요 경전 네 권과 그 주석서들의 번역을 포함한 상좌부 불교에 관한 많은 글을 썼다. 1984년부터 2002년까지 불자출판협회(BPS)의 편집을 책임졌으며, 1988년부터는 회장직을 맡고 있다. 〈고요한소리〉에서 번역, 출간된 저작으로는 법륜·열 《보시 DĀNA-The Practice of Giving》, 법륜·열여덟 《팔정도 The Noble Eightfold Path》가 있다.",
@@ -307,6 +319,9 @@
       "name": "아잔 브람",
       "roman": "Ajahn Brahm",
       "aliases": [],
+      "country": [
+        "서양"
+      ],
       "tradition": "forest",
       "bio": "",
       "photo": "",
@@ -332,6 +347,9 @@
       "name": "아잔 수메도",
       "roman": "Ajahn Sumedho",
       "aliases": [],
+      "country": [
+        "서양"
+      ],
       "tradition": "forest",
       "bio": "",
       "photo": "",
@@ -542,6 +560,9 @@
       "name": "수잔 엘바움 주틀라",
       "roman": "Susan Elbaum Jootla",
       "aliases": [],
+      "country": [
+        "서양"
+      ],
       "tradition": "scholar",
       "bio": "",
       "photo": "",
@@ -553,7 +574,7 @@
       "name": "릴리 드 실바",
       "roman": "Lily de Silva",
       "aliases": [],
-      "tradition": "scholar",
+      "tradition": "srilanka-etc",
       "bio": "",
       "photo": "",
       "rank": 371,
@@ -564,6 +585,9 @@
       "name": "엠 오 시 월슈",
       "roman": "M. O’ C. Walsh",
       "aliases": [],
+      "country": [
+        "서양"
+      ],
       "tradition": "scholar",
       "bio": "",
       "photo": "",
