@@ -431,7 +431,7 @@
     ],
     "shape": "bubble",
     "en": "Sire, they eat our livelihood!",
-    "ko": "임금님, 저 사슴들이 저희 먹을 것을 다 먹어 치웁니다!",
+    "ko": "임금님, 저 사슴들이\n저희 먹을 것을 다\n먹어 치웁니다!",
     "rect": [
      418,
      52,
