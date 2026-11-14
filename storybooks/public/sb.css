@@ -161,3 +161,5 @@ html.sv-lock,html.sv-lock body{overflow:hidden}
 .dl-row .btn small{color:var(--ink-soft);font-size:12px;margin-left:4px}
 .story-dl{margin:12px 0 4px}.story-dl .muted{font-size:14px;margin-right:2px}
 .sv-bar .sv-dl{color:#eee;text-decoration:none!important}
+/* 마우스 확대 */
+@media (pointer:fine){.sv-page img{cursor:zoom-in}.sv.sv-zoom .sv-page img{cursor:grab}.sv.sv-zoom .sv-page img:active{cursor:grabbing}}
