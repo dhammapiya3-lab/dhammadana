@@ -180,3 +180,8 @@ body.sb-text .sv, body.sb-text .sv-thumbs{display:none}
 .sv-zhint.on{opacity:1}
 @media (pointer:coarse){.sv-zhint{display:none}}
 .sv-btn,.sv-bar{z-index:6}
+.st-say-w{display:flex;gap:6px}.st-bar .st-say[aria-pressed=true]{background:var(--robe);border-color:var(--robe);color:#fff}
+.st-msg{margin:8px 0 0;padding:8px 12px;border-radius:8px;background:#fff8ec;border:1px solid #e3d3b8;font-size:15px;color:#5a4632}
+.st-here{margin-left:10px;border:1px solid var(--line);background:var(--card);color:var(--ink-soft);border-radius:6px;padding:2px 8px;font:inherit;font-size:12px;cursor:pointer}
+.st-page.st-now figcaption{background:#fff4dc;box-shadow:0 0 0 8px #fff4dc;border-radius:4px}
+@media (max-width:520px){.st-bar .lg{display:none}.st-bar{flex-wrap:wrap}.st-bar button{padding:6px 9px;font-size:14px}}

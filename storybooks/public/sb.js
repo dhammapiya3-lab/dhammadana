@@ -332,6 +332,7 @@
   let tbox = null, tobs = null;
   const tsize = () => { const v = +ls('sb-tsize'); return SIZES.includes(v) ? v : 21; };
   const textOff = () => {
+    sayStop(); tmsg('');
     document.body.classList.remove('sb-text'); ls('sb-textmode', null);
     if (tobs) tobs.disconnect(); if (tbox) tbox.remove(); tbox = null;
     const i = cur; requestAnimationFrame(() => { go(i, false); sv.scrollIntoView({ block: 'start' }); });
@@ -348,21 +349,141 @@
     });
     return out;
   };
+
+  // ── 글과 함께 보기의 '듣기': 쪽마다 글을 소리 내어 읽고 다음 쪽으로 넘어감 (운영자 요청, 2026-11-15)
+  //    로마자 빠알리어는 도서관 '듣기'와 같은 음역 규칙으로 한글 소리로 읽음 (한글 뒤 괄호 속 원어는 건너뜀)
+const PALI = (() => {
+    const CHO = { 'ㄱ': 0, 'ㄲ': 1, 'ㄴ': 2, 'ㄷ': 3, 'ㄸ': 4, 'ㄹ': 5, 'ㅁ': 6, 'ㅂ': 7, 'ㅃ': 8, 'ㅅ': 9, 'ㅇ': 11, 'ㅈ': 12, 'ㅉ': 13, 'ㅊ': 14, 'ㅋ': 15, 'ㅌ': 16, 'ㅍ': 17, 'ㅎ': 18 };
+    const JONG = { '': 0, 'ㄱ': 1, 'ㄴ': 4, 'ㄹ': 8, 'ㅁ': 16, 'ㅂ': 17, 'ㅅ': 19, 'ㅇ': 21 };
+    const V = { a: [0, 2, 9], ā: [0, 2, 9], i: [20, 20, 16], ī: [20, 20, 16], u: [13, 17, 13], ū: [13, 17, 13], e: [5, 7, 15], o: [8, 12, 8] }; // [보통, y붙음, w붙음]
+    const ONSET = { k: 'ㄲ', kh: 'ㅋ', g: 'ㄱ', gh: 'ㄱ', c: 'ㅉ', ch: 'ㅊ', j: 'ㅈ', jh: 'ㅈ', 'ṭ': 'ㄸ', 'ṭh': 'ㅌ', 'ḍ': 'ㄷ', 'ḍh': 'ㄷ', t: 'ㄸ', th: 'ㅌ', d: 'ㄷ', dh: 'ㄷ', p: 'ㅃ', ph: 'ㅍ', b: 'ㅂ', bh: 'ㅂ', n: 'ㄴ', 'ṇ': 'ㄴ', 'ñ': 'ㄴ', m: 'ㅁ', y: 'ㅇ', r: 'ㄹ', l: 'ㄹ', 'ḷ': 'ㄹ', s: 'ㅅ', h: 'ㅎ', v: 'ㅇ', 'ṅ': 'ㅇ', 'ṃ': 'ㅇ' };
+    const CODA = { k: 'ㄱ', kh: 'ㄱ', g: 'ㄱ', gh: 'ㄱ', c: 'ㅅ', ch: 'ㅅ', j: 'ㅅ', jh: 'ㅅ', 'ṭ': 'ㅅ', 'ṭh': 'ㅅ', 'ḍ': 'ㅅ', 'ḍh': 'ㅅ', t: 'ㅅ', th: 'ㅅ', d: 'ㅅ', dh: 'ㅅ', s: 'ㅅ', p: 'ㅂ', ph: 'ㅂ', b: 'ㅂ', bh: 'ㅂ', n: 'ㄴ', 'ṇ': 'ㄴ', 'ñ': 'ㄴ', m: 'ㅁ', 'ṅ': 'ㅇ', 'ṃ': 'ㅇ', l: 'ㄹ', 'ḷ': 'ㄹ' };
+    const NASAL = new Set(['n', 'ṇ', 'ñ', 'm', 'ṅ', 'ṃ']);
+    const base = c => c.replace('h', '') || c;
+    const syl = (cho, jung, jong = '') => String.fromCharCode(0xAC00 + (CHO[cho] * 21 + jung) * 28 + JONG[jong]);
+    function units(w) {
+      const out = []; let i = 0;
+      while (i < w.length) {
+        const two = w.slice(i, i + 2), one = w[i];
+        if (V[one]) { out.push({ v: one }); i++; continue; }
+        if (two.length === 2 && two[1] === 'h' && ONSET[two]) { out.push({ c: two }); i += 2; continue; }
+        if (ONSET[one]) { out.push({ c: one }); i++; continue; }
+        return null; // 빨리어가 아닌 글자
+      }
+      return out;
+    }
+    function conv(word) {
+      const w = word.toLowerCase().normalize('NFC').replace(/ṁ/g, 'ṃ').replace(/vaṃs/g, 'vams'); // 스승 이름 -vaṃsa 는 '왐사' (사이트 결정)
+      const u = units(w); if (!u || !u.some(x => x.v)) return null;
+      const S = []; // {cho, jung, jong}
+      const plain = c => S.push({ cho: ONSET[c] === undefined ? 'ㅇ' : ONSET[c], jung: 18, jong: '' }); // 모음 없는 자음: '으'
+      let i = 0;
+      while (i < u.length) {
+        // 자음 묶음 모으기
+        const cl = []; while (i < u.length && u[i].c) cl.push(u[i++].c);
+        const vow = i < u.length ? u[i++].v : null;
+        let k = 0;
+        // 앞 음절 받침
+        if (S.length && cl.length) {
+          const prev = S[S.length - 1], c0 = cl[0];
+          if (cl.length === 1 && (c0 === 'l' || c0 === 'ḷ') && vow) prev.jong = prev.jong || 'ㄹ';           // 모음 사이 l: ㄹ 덧붙임
+          else if (c0 === 'ṃ' || c0 === 'ṅ') { prev.jong = 'ㅇ'; k = 1; }
+          else if (cl.length >= 2 && (base(c0) === base(cl[1]) || NASAL.has(c0) || c0 === 'l' || c0 === 'ḷ') && CODA[c0] && !(cl[1] === 'y' && !NASAL.has(c0) && base(c0) !== base(cl[1]))) {
+            if (base(c0) === 'y' || base(c0) === 'v') k = 1; else { prev.jong = CODA[c0]; k = 1; }
+          } else if (!vow && CODA[c0] && cl.length === 1) { prev.jong = CODA[c0]; k = 1; }
+        }
+        // 남은 자음: 마지막 하나는 첫소리, 그 앞은 '으' (단, 자음+y 는 합침)
+        const rest = cl.slice(k);
+        if (!vow) { rest.forEach(plain); break; }
+        let onset = 'ㅇ', glide = 0;
+        if (rest.length) {
+          let last = rest[rest.length - 1], before = rest.slice(0, -1);
+          if (last === 'y' && before.length) { last = before.pop(); glide = 1; }
+          else if (last === 'y') glide = 1;
+          else if (last === 'v') { glide = 2; if (before.length) { last = before.pop(); } else last = 'v'; }
+          else if (last === 'ñ' && 'aāeo'.includes(vow)) glide = 1;
+          before.forEach(plain);
+          onset = ONSET[last];
+        }
+        let jung = V[vow][glide];
+        if (glide === 2 && onset !== 'ㅇ') { // 자음+v: 자음에 '으'를 붙이고 와/위…
+          S.push({ cho: onset, jung: 18, jong: '' }); onset = 'ㅇ';
+        }
+        S.push({ cho: onset, jung, jong: '' });
+      }
+      return S.map(x => syl(x.cho, x.jung, x.jong)).join('');
+    }
+    return conv;
+  })();
+  const PMARK = /[āīūṭḍṇṅñṃṁḷĀĪŪṬḌṆṄÑṂṀḶ]/;
+  const sayWord = w => { const parts = w.split('-').map(x => PALI(x.replace(/[^A-Za-zĀ-ỿ]/g, ''))); return parts.every(Boolean) ? parts.join(' ') : ''; };
+  const sayable = t => String(t)
+    .replace(/([가-힣])\s*\(([^()가-힣]*[A-Za-zĀ-ỿ][^()가-힣]*)\)/g, '$1')        // 한글(원어) → 한글만
+    .replace(/[A-Za-zĀ-ỿ][A-Za-zĀ-ỿ'’-]*/g, w => (PMARK.test(w) || /^[a-z]/.test(w) || /^[A-Z][a-zā-ṁ]+$/.test(w)) ? sayWord(w.replace(/[’']/g, '')) : '')  // 로마자 빠알리 → 한글 소리, 읽을 수 없는 말은 건너뜀
+    .replace(/[→➔•·~*]/g, ' ').replace(/[“”‘’"']/g, '').replace(/\(\s*\)/g, '').replace(/\s+/g, ' ').trim();
+  const SPEEDS = [0.8, 1, 1.2, 1.4];
+  const T = { on: false, i: 0, q: [], lock: null };
+  const koVoice = () => { const vs = speechSynthesis.getVoices().filter(v => /^ko/i.test(v.lang)); return vs.find(v => /google|natural|neural|online/i.test(v.name)) || vs[0] || null; };
+  const tspeed = () => { const v = +ls('sb-tspeed'); return SPEEDS.includes(v) ? v : 1; };
+  const tmsg = m => { const e = tbox?.querySelector('.st-msg'); if (e) { e.textContent = m || ''; e.hidden = !m; } };
+  const tbtn = () => { const b = tbox?.querySelector('.st-say'); if (b) { b.textContent = T.on ? '❚❚ 멈춤' : '🔊 듣기'; b.setAttribute('aria-pressed', T.on ? 'true' : 'false'); } };
+  const tmark = i => tbox?.querySelectorAll('.st-page').forEach(f => f.classList.toggle('st-now', T.on && +f.dataset.i === i));
+  const sayStop = () => {
+    T.on = false; T.q = []; try { speechSynthesis.cancel(); } catch (e) {}
+    try { T.lock?.release(); } catch (e) {} T.lock = null; tbtn(); tmark(-1);
+  };
+  const sayPage = i => {
+    if (!T.on || !tbox) return;
+    if (i >= pages.length) { sayStop(); tmsg(sv.dataset.next ? '이 이야기를 다 들었습니다. 아래의 ‘다음 이야기’를 누르면 이어서 볼 수 있습니다.' : '이 이야기를 다 들었습니다.'); return; }
+    T.i = i; tmark(i); show(i);
+    const f = tbox.querySelector(`.st-page[data-i="${i}"]`); f?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    // 긴 글은 문장마다 나눠 읽음 (긴 글 하나로 읽으면 크롬이 중간에 멈추는 일이 있음)
+    T.q = (T.data[i] || []).flatMap(t => String(t).split(/\n\s*\n/)).map(sayable).filter(Boolean).flatMap(t => t.match(/[^.!?。]+[.!?。]*\s*/g) || [t]).map(x => x.trim()).filter(Boolean);
+    sayNext();
+  };
+  const sayNext = () => {
+    if (!T.on) return;
+    if (!T.q.length) { setTimeout(() => T.on && sayPage(T.i + 1), 700); return; }
+    const u = new SpeechSynthesisUtterance(T.q.shift());
+    u.lang = 'ko-KR'; u.rate = tspeed(); const v = koVoice(); if (v) u.voice = v;
+    u.onend = () => sayNext();
+    u.onerror = e => { if (e.error !== 'interrupted' && e.error !== 'canceled') sayNext(); };
+    speechSynthesis.speak(u);
+  };
+  const sayStart = i => {
+    if (!('speechSynthesis' in window)) { tmsg('이 브라우저에서는 듣기를 쓸 수 없습니다. 카카오톡 등 앱 안에서 여셨다면 크롬·삼성 인터넷·사파리로 열어 주세요.'); return; }
+    sayStop(); tmsg(''); T.on = true; tbtn();
+    try { navigator.wakeLock?.request('screen').then(l => { T.lock = l; }).catch(() => {}); } catch (e) {}
+    sayPage(Math.max(0, Math.min(pages.length - 1, i)));
+    setTimeout(() => { if (T.on && !speechSynthesis.speaking && !speechSynthesis.pending && !koVoice()) tmsg('이 기기에 한국어 음성이 없어 소리가 나지 않을 수 있습니다. 기기 설정의 ‘텍스트 음성 변환(TTS)’에서 한국어 음성을 받아 주세요.'); }, 2500);
+  };
+  addEventListener('pagehide', sayStop);
   const textOn = async () => {
     let data;
     try { data = await (await fetch('/t/' + sv.dataset.key + '.json')).json(); } catch (e) { return; }
     if (timer) autoBtn.onclick();
     if (document.fullscreenElement) document.exitFullscreen?.().catch(() => {});
     sv.classList.remove('sv-max', 'sv-rot');
+    sayStop();
     tbox?.remove();
     tbox = document.createElement('section'); tbox.className = 'sv-text'; tbox.style.setProperty('--tsz', tsize() + 'px');
     const imgs = pages.map(p => p.querySelector('img'));
-    tbox.innerHTML = `<div class="st-bar"><button type="button" class="st-pic">🖼 그림으로 보기</button><span class="st-sz"><button type="button" class="st-m" aria-label="글자 작게">가−</button><button type="button" class="st-p" aria-label="글자 크게">가+</button></span></div>` +
-      pages.map((p, i) => `<figure class="st-page" data-i="${i}"><img src="${h(imgs[i]?.dataset.s || imgs[i]?.src)}" data-big="${h(imgs[i]?.dataset.big || '')}" alt="${i + 1}쪽" loading="lazy"><figcaption><span class="st-n">${i + 1} / ${pages.length}</span>${(data[i] || []).map(t => `<p>${tjoin(t)}</p>`).join('')}</figcaption></figure>`).join('') +
+    tbox.innerHTML = `<div class="st-bar"><button type="button" class="st-pic">🖼 그림으로<span class="lg"> 보기</span></button><span class="st-say-w"><button type="button" class="st-say" aria-pressed="false" title="글을 소리 내어 읽어 줍니다">🔊 듣기</button><button type="button" class="st-spd" title="읽는 빠르기 (누를 때마다 바뀜)">${tspeed()}배속</button></span><span class="st-sz"><button type="button" class="st-m" aria-label="글자 작게">가−</button><button type="button" class="st-p" aria-label="글자 크게">가+</button></span></div><p class="st-msg" hidden></p>` +
+      pages.map((p, i) => `<figure class="st-page" data-i="${i}"><img src="${h(imgs[i]?.dataset.s || imgs[i]?.src)}" data-big="${h(imgs[i]?.dataset.big || '')}" alt="${i + 1}쪽" loading="lazy"><figcaption><span class="st-n">${i + 1} / ${pages.length}<button type="button" class="st-here" data-i="${i}" title="이 쪽부터 듣기">🔊 여기부터 듣기</button></span>${(data[i] || []).map(t => `<p>${tjoin(t)}</p>`).join('')}</figcaption></figure>`).join('') +
       (sv.dataset.next ? `<p class="st-next"><a class="btn" href="${h(sv.dataset.next)}">다음 이야기 ▶ ${h(sv.dataset.nextTitle || '')}</a></p>` : '');
     sv.after(tbox);
     document.body.classList.add('sb-text'); ls('sb-textmode', '1');
     tbox.querySelector('.st-pic').onclick = textOff;
+    T.data = data;
+    tbox.querySelector('.st-say').onclick = () => {
+      if (T.on) return sayStop();
+      // 화면에 글이 보이는 첫 쪽부터 (맨 위로 올려 둔 경우 1쪽부터)
+      const top = (tbox.querySelector('.st-bar')?.getBoundingClientRect().bottom || 0) + 40;
+      const f = [...tbox.querySelectorAll('.st-page')].find(x => x.querySelector('figcaption').getBoundingClientRect().bottom > top);
+      sayStart(f ? +f.dataset.i : 0);
+    };
+    tbox.querySelector('.st-spd').onclick = e => { const k = (SPEEDS.indexOf(tspeed()) + 1) % SPEEDS.length; ls('sb-tspeed', String(SPEEDS[k])); e.target.textContent = SPEEDS[k] + '배속'; if (T.on) sayStart(T.i); };
+    tbox.querySelectorAll('.st-here').forEach(b => b.onclick = () => sayStart(+b.dataset.i));
     const setSz = d => { const i = Math.max(0, Math.min(SIZES.length - 1, SIZES.indexOf(tsize()) + d)); ls('sb-tsize', String(SIZES[i])); tbox.style.setProperty('--tsz', SIZES[i] + 'px'); };
     tbox.querySelector('.st-m').onclick = () => setSz(-1); tbox.querySelector('.st-p').onclick = () => setSz(1);
     tbox.querySelectorAll('.st-page img').forEach(im => im.onclick = () => { if (im.dataset.big && im.src !== im.dataset.big) im.src = im.dataset.big; im.classList.toggle('big'); });
