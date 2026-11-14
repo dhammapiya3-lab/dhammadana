@@ -23,7 +23,16 @@
     ],
     "shape": "bubble",
     "en": "All Jambudipa cannot show bull with my strength. will repay his nurture.",
-    "ko": "잠부디빠 어디에도 나만큼 힘센 황소는 없다. 길러 주신 은혜를 갚아야지."
+    "ko": "잠부디빠 어디에도 나만큼 힘센 황소는 없다. 길러 주신 은혜를 갚아야지.",
+    "rect": [
+     153,
+     76,
+     268,
+     140
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    },
    {
     "seed": [

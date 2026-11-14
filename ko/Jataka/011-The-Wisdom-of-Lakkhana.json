@@ -18,7 +18,17 @@
     ],
     "shape": "box",
     "en": "In ancient Rajagaha, the Buddha revealed past life as wise stag leading herd of thousand deer.",
-    "ko": "옛 라자가하에서 부처님께서 사슴 천 마리를 이끌던 지혜로운 수사슴이었던 전생을 들려주셨습니다."
+    "ko": "옛 라자가하에서 부처님께서 사슴 천 마리를 이끌던 지혜로운 수사슴이었던 전생을 들려주셨습니다.",
+    "rect": [
+     470,
+     352,
+     750,
+     398
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -32,7 +42,17 @@
     ],
     "shape": "box",
     "en": "Age ice the Bodhisatta to divide his thousand deer. He entrusted five hundred to the alert Lakkhana, and five hundred to the dull Kala.",
-    "ko": "나이가 들자 보살은 사슴 천 마리를 나누었습니다. 오백 마리는 영리한 락카나에게, 오백 마리는 둔한 깔라에게 맡겼습니다."
+    "ko": "나이가 들자 보살은 사슴 천 마리를 나누었습니다. 오백 마리는 영리한 락카나에게, 오백 마리는 둔한 깔라에게 맡겼습니다.",
+    "rect": [
+     270,
+     232,
+     540,
+     300
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -46,7 +66,17 @@
     ],
     "shape": "box",
     "en": "When crops stand thick in Magadha, the fields become deadly. Peasants protect their harvest with pitfalls, fixed stakes, and hidden snares.",
-    "ko": "마가다에 곡식이 무르익으면 들판은 죽음의 땅이 됩니다. 농부들은 함정과 말뚝과 숨긴 올가미로 곡식을 지킵니다."
+    "ko": "마가다에 곡식이 무르익으면 들판은 죽음의 땅이 됩니다. 농부들은 함정과 말뚝과 숨긴 올가미로 곡식을 지킵니다.",
+    "rect": [
+     78,
+     48,
+     420,
+     100
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -74,7 +104,17 @@
     ],
     "shape": "box",
     "en": "The journey is perilous. Hunters know the migration routes, ying in wait in hiding-places along the paths destroy the passing herds.",
-    "ko": "가는 길은 위험합니다. 사냥꾼들은 사슴이 옮겨 다니는 길을 알고, 길가 숨을 곳에 숨어 기다리다가 지나가는 무리를 덮칩니다."
+    "ko": "가는 길은 위험합니다. 사냥꾼들은 사슴이 옮겨 다니는 길을 알고, 길가 숨을 곳에 숨어 기다리다가 지나가는 무리를 덮칩니다.",
+    "rect": [
+     82,
+     50,
+     416,
+     106
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -106,51 +146,63 @@
    },
    {
     "rect": [
-     51,
-     53,
-     163,
-     71
+     48,
+     50,
+     166,
+     74
     ],
     "ko": "깔라의 방법",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "whole": true,
+    "cover": true,
+    "em": 14
    },
    {
     "rect": [
-     411,
-     53,
-     523,
-     71
+     408,
+     50,
+     526,
+     74
     ],
     "ko": "깔라의 결과",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "whole": true,
+    "cover": true,
+    "em": 14
    },
    {
     "rect": [
-     51,
-     232,
-     193,
-     249
+     48,
+     229,
+     196,
+     252
     ],
     "ko": "락카나의 방법",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "whole": true,
+    "cover": true,
+    "em": 14
    },
    {
     "rect": [
-     411,
-     232,
-     550,
-     248
+     408,
+     229,
+     553,
+     252
     ],
     "ko": "락카나의 결과",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "whole": true,
+    "cover": true,
+    "em": 14
    }
   ]
  },
@@ -178,7 +230,17 @@
     ],
     "shape": "box",
     "en": "Repeating his folly 0 on the homeward way, the stag Kala lost the last of his survivors. The stag Lakkhana sately ly brought back his entire herd of five hundred.",
-    "ko": "돌아오는 길에도 같은 어리석음을 되풀이한 깔라는 남은 사슴마저 모두 잃었습니다. 락카나는 오백 마리 무리를 모두 무사히 데리고 돌아왔습니다."
+    "ko": "돌아오는 길에도 같은 어리석음을 되풀이한 깔라는 남은 사슴마저 모두 잃었습니다. 락카나는 오백 마리 무리를 모두 무사히 데리고 돌아왔습니다.",
+    "rect": [
+     220,
+     376,
+     580,
+     436
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },

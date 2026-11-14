@@ -408,15 +408,15 @@
   "boxes": [
    {
     "rect": [
-     584,
-     112,
-     652,
-     166
+     574,
+     106,
+     662,
+     172
     ],
     "ko": "15일째\n(마가 보름)",
     "ellipse": true,
     "fill": true,
-    "em": 15,
+    "em": 14,
     "shape": "box",
     "align": "center",
     "manual": true
@@ -435,10 +435,10 @@
    },
    {
     "rect": [
-     166,
-     124,
-     224,
-     158
+     150,
+     116,
+     240,
+     166
     ],
     "ko": "7일째",
     "ellipse": true,
@@ -842,7 +842,14 @@
     "shape": "bubble",
     "en": "Aparapariya-akusala-kamma: Past karma catching up.",
     "ko": "뒤따르는 생에 익는 악업\n(aparāpariya-akusala-kamma):\n지난 업이 따라잡음.",
-    "align": "center"
+    "align": "center",
+    "rect": [
+     309,
+     54,
+     490,
+     118
+    ],
+    "em": 14
    },
    {
     "rect": [

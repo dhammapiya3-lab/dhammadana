@@ -131,7 +131,15 @@
     "shape": "bubble",
     "en": "cannot,” he trembled. “The planets will not align for another year.”",
     "ko": "“할 수 없소.” 바라문이 떨며 말했습니다. “별들이 다시 모이려면 한 해를 기다려야 하오.”",
-    "em": 14
+    "em": 14,
+    "rect": [
+     546,
+     282,
+     663,
+     364
+    ],
+    "align": "center",
+    "whole": true
    }
   ]
  },

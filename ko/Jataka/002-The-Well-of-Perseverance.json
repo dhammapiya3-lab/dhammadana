@@ -9,7 +9,16 @@
     ],
     "shape": "box",
     "en": "In the past, when Brahmadatta was king of Benares, the Supreme Buddha recoun ted tale of his past life as merchant nt in Kasi.",
-    "ko": "부처님께서 전생 이야기를 들려주셨습니다. 브라흐마닷따 왕이 바라나시를 다스리던 때, 까시국의 상인이었던 이야기입니다."
+    "ko": "부처님께서 전생 이야기를 들려주셨습니다. 브라흐마닷따 왕이 바라나시를 다스리던 때, 까시국의 상인이었던 이야기입니다.",
+    "rect": [
+     62,
+     58,
+     474,
+     112
+    ],
+    "cover": true,
+    "align": "center",
+    "em": 16
    }
   ]
  },
@@ -23,7 +32,16 @@
     ],
     "shape": "box",
     "en": "The Bodhisatta, wise trader in Kasi, prepared five hundred carts to cross brutal, sixty-league sixty-league sandy wilderness.",
-    "ko": "보살은 까시국의 지혜로운 상인이었습니다. 그는 수레 500대를 준비해 60요자나에 이르는 험한 모래 사막을 건너려 했습니다."
+    "ko": "보살은 까시국의 지혜로운 상인이었습니다. 그는 수레 500대를 준비해 60요자나에 이르는 험한 모래 사막을 건너려 했습니다.",
+    "rect": [
+     56,
+     56,
+     390,
+     112
+    ],
+    "cover": true,
+    "align": "center",
+    "em": 16
    }
   ]
  },
@@ -105,7 +123,16 @@
     ],
     "shape": "box",
     "en": "Traversing this ocean of sand required desert-pilot. He steered the caravan safely throu the dark by the disposition of the stars.",
-    "ko": "이 모래 바다를 건너려면 사막 길잡이가 있어야 했습니다. 길잡이는 별자리를 보며 어둠 속에서 대상을 무사히 이끌었습니다."
+    "ko": "이 모래 바다를 건너려면 사막 길잡이가 있어야 했습니다. 길잡이는 별자리를 보며 어둠 속에서 대상을 무사히 이끌었습니다.",
+    "rect": [
+     56,
+     56,
+     520,
+     112
+    ],
+    "cover": true,
+    "align": "center",
+    "em": 16
    }
   ]
  },
@@ -165,7 +192,22 @@
     ],
     "shape": "bubble",
     "en": "All our wood cand water is gone, and we are lost.",
-    "ko": "땔감도 물도 다 떨어졌고, 우리는 길을 잃었습니다."
+    "ko": "땔감도 물도 다 떨어졌고, 우리는 길을 잃었습니다.",
+    "rect": [
+     204,
+     112,
+     386,
+     212
+    ],
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 15
    }
   ]
  },

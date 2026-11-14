@@ -284,7 +284,15 @@
     ],
     "shape": "box",
     "en": "Seated on the bank, the Bodhisatta spoke to the creature:",
-    "ko": "보살은 강둑에 앉아 물고기에게 말했습니다."
+    "ko": "보살은 강둑에 앉아 물고기에게 말했습니다.",
+    "rect": [
+     98,
+     330,
+     321,
+     357
+    ],
+    "em": 14,
+    "align": "center"
    },
    {
     "seed": [

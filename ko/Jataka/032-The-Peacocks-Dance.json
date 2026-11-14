@@ -82,7 +82,16 @@
     ],
     "shape": "bubble",
     "en": "Father, allow me to choose husband after my own heart.",
-    "ko": "아버지, 제 마음에 드는 남편을 고르게 해 주세요."
+    "ko": "아버지, 제 마음에 드는 남편을 고르게 해 주세요.",
+    "rect": [
+     167,
+     151,
+     288,
+     205
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    }
   ]
  },
@@ -96,7 +105,15 @@
     ],
     "shape": "box",
     "en": "To fulfill his promise, the King ing summoned all winged creatures in the Himalayas. They flocked together on great plateau of bare rock, awaiting the Princess.",
-    "ko": "약속을 지키려고 왕은 히말라야의 모든 날짐승을 불러 모았습니다. 새들은 넓은 바위 고원에 모여 공주를 기다렸습니다."
+    "ko": "약속을 지키려고 왕은 히말라야의 모든 날짐승을 불러 모았습니다. 새들은 넓은 바위 고원에 모여 공주를 기다렸습니다.",
+    "rect": [
+     153,
+     391,
+     646,
+     428
+    ],
+    "em": 14,
+    "align": "center"
    }
   ]
  },

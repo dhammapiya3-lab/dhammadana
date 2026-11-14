@@ -9,7 +9,17 @@
     ],
     "shape": "box",
     "en": "In the past, wealthy northern brahmin realized the heavy burden of sensual desire. Seeking true peace, he abandoned his worldly life, retreating to the Himalayas to become an ascetic.",
-    "ko": "옛날 북쪽 지방의 부유한 바라문이 감각적 욕망이 무거운 짐임을 깨달았습니다. 참된 평화를 찾아 그는 세속의 삶을 버리고 히말라야로 들어가 수행자가 되었습니다."
+    "ko": "옛날 북쪽 지방의 부유한 바라문이 감각적 욕망이 무거운 짐임을 깨달았습니다. 참된 평화를 찾아 그는 세속의 삶을 버리고 히말라야로 들어가 수행자가 되었습니다.",
+    "rect": [
+     72,
+     50,
+     372,
+     122
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "rect": [
@@ -50,7 +60,17 @@
     ],
     "shape": "box",
     "en": "When the monsoon rains set in, the Bodhisatta led his disciples on an alms pilgrimage. They traveled from the harsh Himalayas down to the great city of Benares.",
-    "ko": "우기가 시작되자 보살은 제자들을 이끌고 탁발 길에 나섰습니다. 일행은 험한 히말라야를 내려와 큰 도시 바라나시에 이르렀습니다."
+    "ko": "우기가 시작되자 보살은 제자들을 이끌고 탁발 길에 나섰습니다. 일행은 험한 히말라야를 내려와 큰 도시 바라나시에 이르렀습니다.",
+    "rect": [
+     380,
+     76,
+     724,
+     150
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },

@@ -158,7 +158,17 @@
     ],
     "shape": "box",
     "en": "He saw the King of Death. He felt cooped within blazing hut.",
-    "ko": "그는 죽음의 왕을 보았습니다. 불타는 오두막에 갇힌 듯했습니다."
+    "ko": "그는 죽음의 왕을 보았습니다. 불타는 오두막에 갇힌 듯했습니다.",
+    "rect": [
+     556,
+     364,
+     772,
+     420
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -299,7 +309,17 @@
     ],
     "shape": "box",
     "en": "He renounced sovereignty that self-same day.",
-    "ko": "그날로 그는 왕위를 내려놓았습니다."
+    "ko": "그날로 그는 왕위를 내려놓았습니다.",
+    "rect": [
+     270,
+     336,
+     530,
+     368
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -308,7 +328,17 @@
     ],
     "shape": "box",
     "en": "Dwell ing in the Mango-grove, he fostered the Four Divine Abidings for 84,000 years.",
-    "ko": "망고 숲에 머물며 84,000년 동안 사무량심을 닦았습니다."
+    "ko": "망고 숲에 머물며 84,000년 동안 사무량심을 닦았습니다.",
+    "rect": [
+     170,
+     370,
+     628,
+     398
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },

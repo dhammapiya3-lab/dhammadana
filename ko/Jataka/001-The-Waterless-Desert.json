@@ -120,7 +120,22 @@
     ],
     "shape": "bubble",
     "en": "it rain ahead? You are dripping with water!",
-    "ko": "앞에 비가 왔소? 온몸이 흠뻑 젖었구려!"
+    "ko": "앞에 비가 왔소? 온몸이 흠뻑 젖었구려!",
+    "rect": [
+     252,
+     88,
+     414,
+     184
+    ],
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 15
    }
   ]
  },

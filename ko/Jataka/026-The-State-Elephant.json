@@ -119,7 +119,16 @@
     ],
     "shape": "bubble",
     "en": "Mahilamukha is killing everyone in sight! Go, wise minister. Find out what has perverted rverted our greatest beast.",
-    "ko": "마힐라무카가 보이는 사람마다 죽이고 있다! 지혜로운 대신이여, 가서 무엇이 우리 코끼리를 저렇게 만들었는지 알아 오라."
+    "ko": "마힐라무카가 보이는 사람마다 죽이고 있다! 지혜로운 대신이여, 가서 무엇이 우리 코끼리를 저렇게 만들었는지 알아 오라.",
+    "rect": [
+     450,
+     55,
+     623,
+     121
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    }
   ]
  },

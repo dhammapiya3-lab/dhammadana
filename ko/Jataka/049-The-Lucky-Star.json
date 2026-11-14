@@ -149,7 +149,16 @@
     ],
     "shape": "bubble",
     "en": "We asked our ascetic, the stars were unfavourable!",
-    "ko": "우리 고행자님께 여쭈었더니 별자리가 나쁘다고 했단 말이오!"
+    "ko": "우리 고행자님께 여쭈었더니 별자리가 나쁘다고 했단 말이오!",
+    "rect": [
+     288,
+     79,
+     431,
+     133
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    },
    {
     "seed": [

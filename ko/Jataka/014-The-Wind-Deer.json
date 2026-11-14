@@ -148,7 +148,17 @@
     ],
     "shape": "box",
     "en": "They cross the palace threshold. threshold. Instantly, the heavy doors slam shut! Seeing men, the deer’s trance breaks. Terrified for its life, the wild creature dashes frantically around the enclosed stone hall.",
-    "ko": "둘은 궁의 문턱을 넘었습니다. 그 순간 무거운 문이 쾅 닫혔습니다! 사람들을 보자 사슴은 퍼뜩 정신이 들었습니다. 목숨이 두려워진 야생 사슴은 닫힌 돌 전각 안을 미친 듯이 뛰어다녔습니다."
+    "ko": "둘은 궁의 문턱을 넘었습니다. 그 순간 무거운 문이 쾅 닫혔습니다! 사람들을 보자 사슴은 퍼뜩 정신이 들었습니다. 목숨이 두려워진 야생 사슴은 닫힌 돌 전각 안을 미친 듯이 뛰어다녔습니다.",
+    "rect": [
+     66,
+     70,
+     394,
+     152
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -162,7 +172,16 @@
     ],
     "shape": "bubble",
     "en": "“This creature avoids human scent for week. Yet, ensnared by taste, this wild thing walked right into our halls. Truly, there is nothing viler in the world than this craving",
-    "ko": "“이 사슴은 이레 동안이나 사람 냄새를 피해 다녔다. 그런데 맛에 붙들리자 제 발로 우리 궁에 걸어 들어왔구나. 참으로 세상에 이 갈망보다 더 나쁜 것은 없다.”"
+    "ko": "“이 사슴은 이레 동안이나 사람 냄새를 피해 다녔다. 그런데 맛에 붙들리자 제 발로 우리 궁에 걸어 들어왔구나. 참으로 세상에 이 갈망보다 더 나쁜 것은 없다.”",
+    "rect": [
+     187,
+     123,
+     470,
+     202
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    },
    {
     "seed": [

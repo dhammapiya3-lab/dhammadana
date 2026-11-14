@@ -9,7 +9,16 @@
     ],
     "shape": "box",
     "en": "Five aeons ago, in the kingdom of Seri, rivalry was born",
-    "ko": "다섯 겁 전, 세리 왕국에서 한 경쟁이 시작되었습니다."
+    "ko": "다섯 겁 전, 세리 왕국에서 한 경쟁이 시작되었습니다.",
+    "rect": [
+     42,
+     62,
+     330,
+     106
+    ],
+    "cover": true,
+    "align": "center",
+    "em": 16
    },
    {
     "seed": [
@@ -18,7 +27,16 @@
     ],
     "shape": "box",
     "en": "The Supreme Buddha recounts past life to illustrate the heavy cost of missing the True Dhamma.",
-    "ko": "부처님께서 참된 법을 놓치면 얼마나 큰 대가를 치르는지 보여 주시려고 전생 이야기를 들려주십니다."
+    "ko": "부처님께서 참된 법을 놓치면 얼마나 큰 대가를 치르는지 보여 주시려고 전생 이야기를 들려주십니다.",
+    "rect": [
+     99,
+     128,
+     330,
+     186
+    ],
+    "cover": true,
+    "align": "center",
+    "em": 16
    },
    {
     "seed": [
@@ -27,7 +45,16 @@
     ],
     "shape": "box",
     "en": "This is the tale of two hawkers, one golden bowl, and Sate",
-    "ko": "두 행상인과 황금 그릇 하나, 그리고 깊은 원한에 관한 이야기입니다."
+    "ko": "두 행상인과 황금 그릇 하나, 그리고 깊은 원한에 관한 이야기입니다.",
+    "rect": [
+     568,
+     368,
+     762,
+     416
+    ],
+    "cover": true,
+    "align": "center",
+    "em": 16
    }
   ]
  },
@@ -78,7 +105,16 @@
     ],
     "shape": "bubble",
     "en": "“Waterpots to sell!” ried the greedy hawker.",
-    "ko": "“물항아리 사세요!” 탐욕스러운 행상인이 외쳤습니다."
+    "ko": "“물항아리 사세요!” 탐욕스러운 행상인이 외쳤습니다.",
+    "rect": [
+     47,
+     63,
+     187,
+     114
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    },
    {
     "seed": [
@@ -156,7 +192,16 @@
     ],
     "shape": "bubble",
     "en": "By agreement, hawkers ulin tions cross into visited Streets. The Bodhisatta isatta arrived, ating",
-    "ko": "약속에 따라 행상인들은 서로 상대가 다녀간 거리에 들어갈 수 있었습니다. 보살이 와서 부드럽게 외쳤습니다."
+    "ko": "약속에 따라 행상인들은 서로 상대가 다녀간 거리에 들어갈 수 있었습니다. 보살이 와서 부드럽게 외쳤습니다.",
+    "rect": [
+     46,
+     62,
+     332,
+     112
+    ],
+    "whole": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [

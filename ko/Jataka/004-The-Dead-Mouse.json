@@ -423,7 +423,16 @@
     "ko": "죽은 쥐",
     "shape": "box",
     "align": "center",
-    "manual": true
+    "manual": true,
+    "rect": [
+     40,
+     315,
+     126,
+     345
+    ],
+    "whole": true,
+    "cover": true,
+    "em": 14
    },
    {
     "seed": [
@@ -433,7 +442,16 @@
     "ko": "한 푼",
     "shape": "box",
     "align": "center",
-    "manual": true
+    "manual": true,
+    "rect": [
+     147,
+     315,
+     228,
+     345
+    ],
+    "whole": true,
+    "cover": true,
+    "em": 14
    },
    {
     "seed": [
@@ -443,7 +461,16 @@
     "ko": "8닢",
     "shape": "box",
     "align": "center",
-    "manual": true
+    "manual": true,
+    "rect": [
+     253,
+     315,
+     342,
+     345
+    ],
+    "whole": true,
+    "cover": true,
+    "em": 14
    },
    {
     "seed": [
@@ -453,7 +480,16 @@
     "ko": "24닢",
     "shape": "box",
     "align": "center",
-    "manual": true
+    "manual": true,
+    "rect": [
+     367,
+     315,
+     457,
+     345
+    ],
+    "whole": true,
+    "cover": true,
+    "em": 14
    },
    {
     "seed": [
@@ -463,7 +499,16 @@
     "ko": "천 냥",
     "shape": "box",
     "align": "center",
-    "manual": true
+    "manual": true,
+    "rect": [
+     491,
+     315,
+     589,
+     345
+    ],
+    "whole": true,
+    "cover": true,
+    "em": 14
    },
    {
     "seed": [
@@ -473,7 +518,16 @@
     "ko": "20만 냥",
     "shape": "box",
     "align": "center",
-    "manual": true
+    "manual": true,
+    "rect": [
+     641,
+     315,
+     747,
+     345
+    ],
+    "whole": true,
+    "cover": true,
+    "em": 14
    }
   ]
  },

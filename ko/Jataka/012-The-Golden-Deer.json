@@ -18,7 +18,23 @@
     ],
     "shape": "bubble",
     "en": "In the past, when Brahmadatta was reigning in Benares, the Bodhisatta was born golden deer...",
-    "ko": "옛날 브라흐마닷따 왕이 바라나시를 다스리던 때, 보살은 황금 사슴으로 태어났다…"
+    "ko": "옛날 브라흐마닷따 왕이 바라나시를 다스리던 때, 보살은 황금 사슴으로 태어났다…",
+    "rect": [
+     172,
+     172,
+     376,
+     300
+    ],
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -41,7 +57,17 @@
     ],
     "shape": "box",
     "en": "Sakha",
-    "ko": "사카"
+    "ko": "사카",
+    "rect": [
+     530,
+     352,
+     614,
+     378
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -51,7 +77,16 @@
     "ko": "니그로다",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     185,
+     352,
+     269,
+     378
+    ],
+    "whole": true,
+    "cover": true,
+    "em": 14
    }
   ]
  },
@@ -97,7 +132,16 @@
     ],
     "shape": "bubble",
     "en": "Shut the my Henceforth, the King feeds on them bei",
-    "ko": "문을 닫아라! 이제부터 왕께서는 여기서 사냥하시리라."
+    "ko": "문을 닫아라! 이제부터 왕께서는 여기서 사냥하시리라.",
+    "rect": [
+     387,
+     139,
+     501,
+     192
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    }
   ]
  },
@@ -120,7 +164,16 @@
     ],
     "shape": "bubble",
     "en": "Let the deer go to the block by turns. One day from my herd, the next from yours.",
-    "ko": "사슴을 차례로 도마에 보내자. 하루는 내 무리에서, 다음 날은 네 무리에서."
+    "ko": "사슴을 차례로 도마에 보내자. 하루는 내 무리에서, 다음 날은 네 무리에서.",
+    "rect": [
+     374,
+     130,
+     496,
+     201
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    }
   ]
  },
@@ -134,7 +187,23 @@
     ],
     "shape": "bubble",
     "en": "Bear your own fortune Begone!",
-    "ko": "네 운명은 네가 감당하라. 물러가라!"
+    "ko": "네 운명은 네가 감당하라. 물러가라!",
+    "rect": [
+     244,
+     106,
+     358,
+     184
+    ],
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -161,7 +230,16 @@
     ],
     "shape": "bubble",
     "en": "Lord, pass over turn until my little one is born.",
-    "ko": "왕이시여, 새끼를 낳을 때까지만 제 차례를 미뤄 주십시오."
+    "ko": "왕이시여, 새끼를 낳을 때까지만 제 차례를 미뤄 주십시오.",
+    "rect": [
+     333,
+     223,
+     469,
+     272
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    }
   ]
  },
@@ -227,19 +305,38 @@
     ],
     "shape": "bubble",
     "en": "ner have seen such loving-kindness. spare you both!",
-    "ko": "이런 자애는 처음 본다. 너희 둘을 모두 살려 주마!"
+    "ko": "이런 자애는 처음 본다. 너희 둘을 모두 살려 주마!",
+    "rect": [
+     290,
+     90,
+     438,
+     188
+    ],
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 14
    },
    {
     "shape": "box",
     "en": "so, the amnesty sty expanded outward to every living creature.",
     "ko": "이렇게 놓아줌은 살아 있는 모든 것에게로 넓어졌습니다.",
     "rect": [
-     262,
-     402,
-     538,
-     432
+     226,
+     400,
+     574,
+     436
     ],
-    "align": "center"
+    "align": "center",
+    "whole": true,
+    "cover": true,
+    "em": 14
    },
    {
     "seed": [
@@ -249,7 +346,22 @@
     "ko": "다른 이들은요?",
     "align": "center",
     "shape": "bubble",
-    "manual": true
+    "manual": true,
+    "rect": [
+     420,
+     166,
+     510,
+     222
+    ],
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "em": 14
    }
   ]
  },
@@ -263,7 +375,16 @@
     ],
     "shape": "bubble",
     "en": "Walk in righteousness, great king. Act with justice towards parents, children townsmen, and countryfolk.",
-    "ko": "대왕이여, 법답게 사십시오. 부모와 자식, 성 안 사람과 시골 사람을 공정하게 대하십시오."
+    "ko": "대왕이여, 법답게 사십시오. 부모와 자식, 성 안 사람과 시골 사람을 공정하게 대하십시오.",
+    "rect": [
+     404,
+     56,
+     540,
+     131
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    },
    {
     "seed": [
@@ -272,7 +393,17 @@
     ],
     "shape": "box",
     "en": "established the king in the Dhamma.",
-    "ko": "부처님 같은 자비로 그는 왕을 법에 굳게 세웠습니다."
+    "ko": "부처님 같은 자비로 그는 왕을 법에 굳게 세웠습니다.",
+    "rect": [
+     560,
+     362,
+     756,
+     406
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -300,7 +431,23 @@
     ],
     "shape": "bubble",
     "en": "Sire, they eat our livelihood!",
-    "ko": "임금님, 저 사슴들이 저희 먹을 것을 다 먹어 치웁니다!"
+    "ko": "임금님, 저 사슴들이 저희 먹을 것을 다 먹어 치웁니다!",
+    "rect": [
+     418,
+     52,
+     580,
+     140
+    ],
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -309,7 +456,16 @@
     ],
     "shape": "bubble",
     "en": "will forego my kingdom rather than my promise Not man may harm them",
-    "ko": "약속을 저버리느니 차라리 나라를 내놓겠다. 누구도 저들을 해쳐서는 안 된다."
+    "ko": "약속을 저버리느니 차라리 나라를 내놓겠다. 누구도 저들을 해쳐서는 안 된다.",
+    "rect": [
+     272,
+     279,
+     419,
+     362
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    },
    {
     "seed": [
@@ -317,9 +473,18 @@
      61
     ],
     "ko": "목숨을 보장받은 사슴들이 마을 사람들의 곡식을 먹기 시작했습니다.",
-    "align": "left",
+    "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     56,
+     58,
+     300,
+     104
+    ],
+    "whole": true,
+    "cover": true,
+    "em": 14
    }
   ]
  },
@@ -333,7 +498,16 @@
     ],
     "shape": "bubble",
     "en": "Let no farmer fence his field, but merely indicate it with tied leaves",
-    "ko": "농부는 밭에 울타리를 치지 말고, 잎을 매달아 표시만 하라."
+    "ko": "농부는 밭에 울타리를 치지 말고, 잎을 매달아 표시만 하라.",
+    "rect": [
+     163,
+     65,
+     284,
+     131
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    },
    {
     "seed": [

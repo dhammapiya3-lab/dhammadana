@@ -156,43 +156,43 @@
   "boxes": [
    {
     "rect": [
-     498,
-     100,
-     562,
-     120
+     494,
+     98,
+     566,
+     122
     ],
     "ko": "1. 적은 바람",
     "cover": true,
     "align": "center",
-    "em": 10,
+    "em": 12,
     "shape": "box",
     "manual": true
    },
    {
     "rect": [
-     562,
-     118,
-     634,
-     138
+     560,
+     116,
+     636,
+     140
     ],
     "ko": "2. 만족",
     "cover": true,
     "align": "center",
-    "em": 11,
+    "em": 12,
     "shape": "box",
     "manual": true
    },
    {
     "rect": [
-     622,
-     168,
-     680,
-     188
+     616,
+     164,
+     690,
+     190
     ],
     "ko": "3. 떨쳐 버림",
     "cover": true,
     "align": "center",
-    "em": 10,
+    "em": 12,
     "shape": "box",
     "manual": true
    },
@@ -206,7 +206,7 @@
     "ko": "4. 어울리지\n않음",
     "cover": true,
     "align": "center",
-    "em": 11,
+    "em": 13,
     "shape": "box",
     "manual": true
    },
@@ -220,21 +220,21 @@
     "ko": "5. 정진",
     "cover": true,
     "align": "center",
-    "em": 11,
+    "em": 13,
     "shape": "box",
     "manual": true
    },
    {
     "rect": [
-     500,
-     352,
-     552,
-     372
+     496,
+     350,
+     556,
+     374
     ],
     "ko": "6. 계",
     "cover": true,
     "align": "center",
-    "em": 11,
+    "em": 12,
     "shape": "box",
     "manual": true
    },
@@ -248,21 +248,21 @@
     "ko": "7. 삼매",
     "cover": true,
     "align": "center",
-    "em": 11,
+    "em": 12,
     "shape": "box",
     "manual": true
    },
    {
     "rect": [
-     354,
-     224,
-     410,
-     244
+     350,
+     222,
+     414,
+     246
     ],
     "ko": "8. 지혜",
     "cover": true,
     "align": "center",
-    "em": 11,
+    "em": 12,
     "shape": "box",
     "manual": true
    },
@@ -276,21 +276,21 @@
     "ko": "9. 해탈",
     "cover": true,
     "align": "center",
-    "em": 11,
+    "em": 12,
     "shape": "box",
     "manual": true
    },
    {
     "rect": [
-     426,
-     112,
-     494,
-     148
+     422,
+     108,
+     498,
+     150
     ],
     "ko": "10. 해탈\n지견",
     "cover": true,
     "align": "center",
-    "em": 10,
+    "em": 12,
     "shape": "box",
     "manual": true
    },
@@ -420,10 +420,10 @@
   "boxes": [
    {
     "rect": [
-     472,
-     60,
-     754,
-     184
+     466,
+     54,
+     760,
+     192
     ],
     "ko": "으뜸 설법자\n큰 대중 앞에서 부처님께서 공식으로 선언하셨습니다.\n\n“비구들이여, 법을 설하는 나의 비구 제자 가운데\n만따니뿟따 뿐나가 으뜸이다.”\n\n10만 겁 전에 심은 큰 서원이 마침내 온전히\n이루어졌습니다.",
     "cover": true,

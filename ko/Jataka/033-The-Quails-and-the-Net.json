@@ -139,7 +139,16 @@
     ],
     "shape": "bubble",
     "en": "No, my dear. Those quails have come to work together now. The moment my net is over them, off they fly.",
-    "ko": "아니오, 여보. 메추라기들이 이제 힘을 합친다오. 그물을 던지자마자 들고 날아가 버린다니까."
+    "ko": "아니오, 여보. 메추라기들이 이제 힘을 합친다오. 그물을 던지자마자 들고 날아가 버린다니까.",
+    "rect": [
+     558,
+     62,
+     716,
+     147
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    }
   ]
  },
@@ -271,7 +280,16 @@
     ],
     "shape": "bubble",
     "en": "When you were lifting, both your wings moulted. Now’s your time; lift away!",
-    "ko": "너는 그물 들다가 양 날개 깃털이 다 빠졌다며? 이제 네 차례다, 들어 봐!"
+    "ko": "너는 그물 들다가 양 날개 깃털이 다 빠졌다며? 이제 네 차례다, 들어 봐!",
+    "rect": [
+     499,
+     89,
+     669,
+     163
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    }
   ]
  },

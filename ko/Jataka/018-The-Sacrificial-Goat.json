@@ -24,7 +24,16 @@
     ],
     "shape": "bubble",
     "en": "My sons, bathe this goat in the river, garland it, and bring it back.",
-    "ko": "얘들아, 이 염소를 강에서 씻기고 꽃목걸이를 걸어서 데려오너라."
+    "ko": "얘들아, 이 염소를 강에서 씻기고 꽃목걸이를 걸어서 데려오너라.",
+    "rect": [
+     382,
+     63,
+     525,
+     129
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    },
    {
     "seed": [
@@ -47,9 +56,18 @@
      56
     ],
     "ko": "제자들은 염소를 정성껏 보살폈습니다. 그것이 염소의 마지막 순간을 준비하는 일인 줄은 몰랐습니다.",
-    "align": "left",
+    "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     46,
+     48,
+     330,
+     114
+    ],
+    "whole": true,
+    "cover": true,
+    "em": 14
    }
   ]
  },
@@ -62,9 +80,18 @@
      72
     ],
     "ko": "그때 염소가 갑자기 전생을 떠올렸습니다. 오늘로 괴로움의 굴레가 끝난다는 것을 알고는 항아리 깨지는 소리처럼 크게 웃었습니다.",
-    "align": "left",
+    "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     46,
+     48,
+     348,
+     114
+    ],
+    "whole": true,
+    "cover": true,
+    "em": 14
    }
   ]
  },
@@ -238,7 +265,16 @@
     ],
     "shape": "bubble",
     "en": "ie Let no one touch this creature!",
-    "ko": "아무도 이 염소를 건드리지 마라!"
+    "ko": "아무도 이 염소를 건드리지 마라!",
+    "rect": [
+     541,
+     90,
+     637,
+     125
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    }
   ]
  },
@@ -277,7 +313,8 @@
     "align": "left",
     "shape": "box",
     "dark": true,
-    "manual": true
+    "manual": true,
+    "em": 14
    },
    {
     "rect": [

@@ -51,7 +51,16 @@
     ],
     "shape": "bubble",
     "en": "‘Retire to the forest,” the King wept, ‘return only at my death.”",
-    "ko": "“숲으로 가 있거라.” 왕이 울며 말했습니다. “내가 죽거든 그때 돌아오너라.”"
+    "ko": "“숲으로 가 있거라.” 왕이 울며 말했습니다. “내가 죽거든 그때 돌아오너라.”",
+    "rect": [
+     84,
+     78,
+     300,
+     128
+    ],
+    "whole": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -219,7 +228,16 @@
     ],
     "shape": "bubble",
     "en": "“Bathe and drink, mate!” he coaxed.",
-    "ko": "“목욕도 하고 물도 마시게, 친구!” 그가 꾀었습니다."
+    "ko": "“목욕도 하고 물도 마시게, 친구!” 그가 꾀었습니다.",
+    "rect": [
+     247,
+     149,
+     356,
+     199
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    },
    {
     "seed": [
@@ -237,7 +255,16 @@
     ],
     "shape": "box",
     "en": "Recognizing Tica Recognizing the demon, the Bodhisatta declared:",
-    "ko": "악귀를 알아본 보살이 말했습니다."
+    "ko": "악귀를 알아본 보살이 말했습니다.",
+    "rect": [
+     338,
+     324,
+     498,
+     358
+    ],
+    "whole": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -251,7 +278,16 @@
     ],
     "shape": "bubble",
     "en": "am travel-stained,” the Bodhisatta noted.",
-    "ko": "“나는 먼 길을 오느라 몸이 더럽소.” 보살이 말했습니다."
+    "ko": "“나는 먼 길을 오느라 몸이 더럽소.” 보살이 말했습니다.",
+    "rect": [
+     325,
+     94,
+     474,
+     129
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    },
    {
     "seed": [

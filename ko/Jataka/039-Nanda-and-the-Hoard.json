@@ -229,7 +229,16 @@
     ],
     "shape": "bubble",
     "en": "The spot where Nanda stands ds to abuse you is exactly where your gold lies.",
-    "ko": "난다가 서서 너를 욕하는 바로 그 자리에 네 금이 묻혀 있다."
+    "ko": "난다가 서서 너를 욕하는 바로 그 자리에 네 금이 묻혀 있다.",
+    "rect": [
+     280,
+     102,
+     402,
+     169
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    },
    {
     "rect": [

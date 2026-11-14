@@ -55,7 +55,16 @@
     ],
     "shape": "bubble",
     "en": "This honest valuer er will exhaust my riches! must find someone cheaper to protect my gold.",
-    "ko": "이 정직한 관리 때문에 내 재산이 바닥나겠구나! 내 금을 지켜 줄 값싼 사람을 찾아야겠다."
+    "ko": "이 정직한 관리 때문에 내 재산이 바닥나겠구나! 내 금을 지켜 줄 값싼 사람을 찾아야겠다.",
+    "rect": [
+     489,
+     277,
+     616,
+     349
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    }
   ]
  },

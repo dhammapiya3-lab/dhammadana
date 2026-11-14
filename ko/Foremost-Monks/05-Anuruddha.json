@@ -209,7 +209,16 @@
     "shape": "box",
     "en": "Annabhiara lived in poverty, laboring for Sumana, wealthy merchant who gave lavishly at his gates to travelers and beggars.",
     "ko": "가난하게 살던 안나바라는 부유한 상인 수마나 밑에서 일했습니다. 수마나는 대문 앞에서 나그네와 거지에게 아낌없이 베풀었습니다.",
-    "align": "center"
+    "align": "center",
+    "rect": [
+     266,
+     372,
+     534,
+     430
+    ],
+    "whole": true,
+    "cover": true,
+    "em": 14
    }
   ]
  },
@@ -579,7 +588,15 @@
     "shape": "bubble",
     "en": "The Karmic Key When building Annabhara’s house they found jars of gold. But they could only be retrieved in Annabhara’s name.",
     "ko": "업의 열쇠\n안나바라의 집을 지으려고 땅을 파자 금 항아리가 나왔습니다. 그러나 안나바라의 이름으로만 꺼낼 수 있었습니다.",
-    "align": "center"
+    "align": "center",
+    "rect": [
+     297,
+     210,
+     503,
+     294
+    ],
+    "em": 14,
+    "whole": true
    }
   ]
  },
@@ -891,56 +908,56 @@
    {
     "rect": [
      182,
-     164,
+     161,
      396,
-     183
+     186
     ],
     "ko": "1. 필수품: 받은 것보다 적게",
     "cover": true,
     "align": "center",
-    "em": 11,
+    "em": 13,
     "shape": "box",
     "manual": true
    },
    {
     "rect": [
      408,
-     164,
+     161,
      622,
-     183
+     186
     ],
     "ko": "2. 증득: 깨달음을 감춤",
     "cover": true,
     "align": "center",
-    "em": 11,
+    "em": 13,
     "shape": "box",
     "manual": true
    },
    {
     "rect": [
      182,
-     302,
+     299,
      396,
-     321
+     324
     ],
     "ko": "3. 배움: 깊은 지식을 감춤",
     "cover": true,
     "align": "center",
-    "em": 11,
+    "em": 13,
     "shape": "box",
     "manual": true
    },
    {
     "rect": [
      408,
-     302,
+     299,
      622,
-     321
+     324
     ],
     "ko": "4. 두타행: 수행을 숨김",
     "cover": true,
     "align": "center",
-    "em": 11,
+    "em": 13,
     "shape": "box",
     "manual": true
    },

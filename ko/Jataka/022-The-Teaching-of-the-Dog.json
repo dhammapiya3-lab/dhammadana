@@ -99,7 +99,16 @@
     ],
     "shape": "bubble",
     "en": "If you do not know the real culprits, it is not right to order the slaughter of the dogs.",
-    "ko": "진짜 범인을 알지 못한다면 개들을 죽이라고 명하신 것은 옳지 않습니다."
+    "ko": "진짜 범인을 알지 못한다면 개들을 죽이라고 명하신 것은 옳지 않습니다.",
+    "rect": [
+     486,
+     192,
+     633,
+     261
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    }
   ]
  },
@@ -113,7 +122,16 @@
     ],
     "shape": "box",
     "en": "Those hounds reared red by the royal family, well-bred and strong—these are not slaughtered. Only the weak are killed. This is not just",
-    "ko": "왕실에서 기르는 혈통 좋고 힘센 개들은 죽이지 않고, 약한 개들만 죽입니다. 이것은 정의가 아닙니다."
+    "ko": "왕실에서 기르는 혈통 좋고 힘센 개들은 죽이지 않고, 약한 개들만 죽입니다. 이것은 정의가 아닙니다.",
+    "rect": [
+     264,
+     55,
+     537,
+     90
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    }
   ]
  },
@@ -127,7 +145,16 @@
     ],
     "shape": "bubble",
     "en": "Kings in trying cases should be as unbiased as the beam of balance. You are following the four Evil Courses: partiality, dislike, ignorance, and fear.",
-    "ko": "어려운 일을 판결하는 왕은 저울대처럼 치우침이 없어야 합니다. 지금 왕께서는 네 가지 그릇된 길, 곧 편애·미움·어리석음·두려움을 따르고 계십니다."
+    "ko": "어려운 일을 판결하는 왕은 저울대처럼 치우침이 없어야 합니다. 지금 왕께서는 네 가지 그릇된 길, 곧 편애·미움·어리석음·두려움을 따르고 계십니다.",
+    "rect": [
+     146,
+     287,
+     332,
+     375
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    },
    {
     "rect": [
@@ -221,7 +248,16 @@
     ],
     "shape": "bubble",
     "en": "Do you know who gnawed the leather?",
-    "ko": "가죽을 누가 물어뜯었는지 아십니까?"
+    "ko": "가죽을 누가 물어뜯었는지 아십니까?",
+    "rect": [
+     260,
+     60,
+     389,
+     111
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    },
    {
     "seed": [
@@ -230,7 +266,16 @@
     ],
     "shape": "bubble",
     "en": "Fes The dogs HE in your Ss own palace Bring ‘OD. them here S38 with eal buttermilk oe and kusa grass. Oo 7) will prove it",
-    "ko": "바로 왕궁의 개들입니다. 버터밀크와 꾸사 풀을 가지고 그 개들을 데려오십시오. 제가 증명하겠습니다."
+    "ko": "바로 왕궁의 개들입니다. 버터밀크와 꾸사 풀을 가지고 그 개들을 데려오십시오. 제가 증명하겠습니다.",
+    "rect": [
+     532,
+     313,
+     706,
+     391
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    }
   ]
  },
@@ -258,7 +303,16 @@
     ],
     "shape": "bubble",
     "en": "It is like judgment of Perfect Buddha himself!",
-    "ko": "완전한 부처님의 판결과도 같구나!"
+    "ko": "완전한 부처님의 판결과도 같구나!",
+    "rect": [
+     340,
+     59,
+     431,
+     93
+    ],
+    "em": 14,
+    "align": "center",
+    "whole": true
    },
    {
     "seed": [
@@ -267,7 +321,15 @@
     ],
     "shape": "box",
     "en": "Overjoyed, the king offered 2s the royal white umbrella 2 to the ordinary street dog od",
-    "ko": "크게 기뻐한 왕은 왕의 흰 일산을 평범한 떠돌이 개에게 바쳤습니다."
+    "ko": "크게 기뻐한 왕은 왕의 흰 일산을 평범한 떠돌이 개에게 바쳤습니다.",
+    "rect": [
+     444,
+     367,
+     722,
+     403
+    ],
+    "em": 14,
+    "align": "center"
    }
   ]
  },

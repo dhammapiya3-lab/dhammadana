@@ -170,6 +170,15 @@ def render(src_path, boxes):
                        area=int((full > 0).sum()), rect=bool(b.get("rect")), ko=b["ko"], em=em, seed=b.get("seed"), li=len(layout), mask=(full > 0) if not b.get("cover") and not b.get("rect") else None))
         if b.get("cover"):  # 덮은 카드: 글 자리는 네모 전체
             ys3, xs3 = np.where(inner > 0); tb = (int(xs3.min()), int(ys3.min()), int(xs3.max()), int(ys3.max()))
+            if b.get("ellipse"):  # 타원 말풍선: 글은 타원 안쪽 네모에만 (가장자리에 닿지 않게)
+                cx_, cy_, hw_, hh_ = (tb[0] + tb[2]) / 2, (tb[1] + tb[3]) / 2, (tb[2] - tb[0]) / 2 * 0.80, (tb[3] - tb[1]) / 2 * 0.74
+                tb = (int(cx_ - hw_), int(cy_ - hh_), int(cx_ + hw_), int(cy_ + hh_))
+        if b.get("rect") and b.get("whole"):  # 글을 정한 네모 전체에 (글자를 키우려고 넓힌 자리, 2026-11-15)
+            kk = W / 800; tb = tuple(round(v * kk) for v in b["rect"])
+            if b.get("ellipse"):
+                cx_, cy_, hw_, hh_ = (tb[0] + tb[2]) / 2, (tb[1] + tb[3]) / 2, (tb[2] - tb[0]) / 2 * 0.80, (tb[3] - tb[1]) / 2 * 0.74
+                tb = (int(cx_ - hw_), int(cy_ - hh_), int(cx_ + hw_), int(cy_ + hh_))
+            layout.append((tb, b["ko"], b.get("align", "center"), em, dark)); continue
         layout.append((inner_rect(full, tb), b["ko"], b.get("align", "left" if b.get("shape") == "box" else "center"), em, dark))
     scale = 2 if W < 1600 else 1
     pil = Image.fromarray(cv2.cvtColor(out, cv2.COLOR_BGR2RGB))
@@ -198,6 +207,8 @@ def render(src_path, boxes):
             drawn[-1].setdefault("lines", []).append((x / scale, (y + lh * .15) / scale, (x + lw) / scale, (y + lh * .85) / scale))
             y += lh
     render.drawn = drawn  # 글자 크기 확인용
+    render.drawn = drawn  # 글자 크기 확인용
+    render.QA = QA
     render.qa = check(img, out, QA, drawn, W, H)
     return pil
 
