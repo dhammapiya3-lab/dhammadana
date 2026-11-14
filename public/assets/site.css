@@ -1057,3 +1057,11 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .reflow.spread .spr-r{grid-column:2}
 .reflow.spread .spr-pg{min-width:0;padding-bottom:1.2em}
 @media (max-width:999px){.reflow.spread .spr{column-gap:1.4em}.reflow.spread{max-width:none}}
+
+/* 휴대폰 세로 화면 '가로로 돌려 양쪽으로 보기' 안내 띠 (운영자 요청, 2026-11-14) */
+.spr-bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom));z-index:61;width:calc(100% - 20px);max-width:520px;padding:12px 14px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.18);font-size:.95rem}
+#reader:not(.chrome-off) .spr-bar{bottom:calc(70px + env(safe-area-inset-bottom))}
+.spr-msg{margin:0 0 10px;line-height:1.55}
+.spr-btns{display:flex;gap:8px}
+.spr-btns button{border:1px solid var(--line);border-radius:10px;padding:9px 12px;background:var(--bg);color:inherit;font:inherit;cursor:pointer}
+.spr-btns .spr-go{flex:1;background:var(--accent,#8a5a2b);color:#fff;border-color:transparent;font-weight:600}

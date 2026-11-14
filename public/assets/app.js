@@ -676,7 +676,7 @@ async function initReaderPage() {
      // say: 그림·표를 소리로 읽을 글 (그림 주소 → 글, 운영자 요청 2026-11-10)
    
     i: Math.min(Math.max(want || (last > 1 ? last : 0) || firstContent(pages, man.toc || []), 1), pages.length) - 1,
-    view: 'text', zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), bold: store.get('rbold', false), lh: store.get('rlh', 1.9), font: store.get('rfont', 'serif'), mw: store.get('rmw', 36), spread: store.get('rspread-' + id, !!man.spread),  // 책마다 따로 — 『테라와다 불교의범』처럼 spread 가 있는 책은 처음부터 양쪽으로, 다른 책은 한쪽씩 (운영자 요청, 2026-11-14)
+    view: 'text', zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), bold: store.get('rbold', false), lh: store.get('rlh', 1.9), font: store.get('rfont', 'serif'), mw: store.get('rmw', 36), spread: store.get('rspread2-' + id, !!man.spread),  // 책마다 따로 — 『테라와다 불교의범』처럼 spread 가 있는 책은 처음부터 양쪽으로, 다른 책은 한쪽씩 (운영자 요청, 2026-11-14)
    
     hl: hlp ? hlp.split('|').filter(Boolean) : [], speaking: false,
     ix: man.index || null, ixPart: store.get('ixp-' + id, 0), ixQ: hlp ? hlp.split('|')[0] : ''
@@ -742,6 +742,20 @@ function firstContent(pages, toc) { const t = toc.filter(x => !/^\s/.test(x.titl
 const spreadWide = () => window.innerWidth >= 1000 || (window.innerWidth >= 560 && window.innerWidth > window.innerHeight);
 const spreadOn = () => !!(R && R.spreadOk && R.spread && spreadWide());
 let spreadWas = null;
+// 휴대폰 세로 화면: 전체 화면 + 가로 고정 (안드로이드 크롬 등에서만 됨 — 아이폰은 직접 돌려야 함) (운영자 요청, 2026-11-14)
+async function spreadRotate() { if (!R) return; let ok = false; if (screen.orientation && screen.orientation.lock) { try { if (!document.fullscreenElement) { await document.documentElement.requestFullscreen(); R.spreadFs = true; } await screen.orientation.lock('landscape'); R.spreadLock = true; ok = true; } catch (e) {} } if (!ok) setTimeout(() => R && !spreadWide() && toast('휴대폰을 가로로 돌려 주세요 — 가로 화면에서 양쪽으로 보입니다'), 300); }
+// 양쪽으로 보기가 켜진 책을 휴대폰 세로로 열면 아래쪽에 '가로로 돌려 양쪽으로 보기' 띠 (운영자 요청, 2026-11-14 — 『테라와다 불교의범』)
+function sprBar() {
+  let b = $('#sprBar'); const want = R && R.spreadOk && R.spread && !spreadWide() && !R.sprBarOff && $('#reader') && R.view !== 'page' && matchMedia('(pointer:coarse)').matches;
+  if (!want) { if (b) b.remove(); return; }
+  if (b) return;
+  b = document.createElement('div'); b.id = 'sprBar'; b.className = 'spr-bar'; b.setAttribute('role', 'region'); b.setAttribute('aria-label', '양쪽으로 보기 안내');
+  b.innerHTML = `<p class="spr-msg">${R.spreadPali ? '이 책은 휴대폰을 <b>가로로</b> 눕혀 보시면 좋습니다 — 왼쪽 빠알리 · 오른쪽 번역이 책처럼 나란히 보입니다.' : '휴대폰을 <b>가로로</b> 눕히면 책처럼 두 쪽이 나란히 보입니다.'}</p><div class="spr-btns"><button type="button" class="spr-go">📖 가로로 돌려 양쪽으로 보기</button><button type="button" class="spr-x">닫기</button></div>`;
+  $('#reader').appendChild(b);
+  b.querySelector('.spr-go').onclick = () => { spreadRotate(); };
+  b.querySelector('.spr-x').onclick = () => { R.sprBarOff = true; b.remove(); };
+}
+window.addEventListener('resize', () => setTimeout(sprBar, 50));
 window.addEventListener('resize', () => { if (!R || !R.spreadOk || !$('#reader')) return; const now = spreadOn(); if (spreadWas === null) { spreadWas = now; return; } if (now === spreadWas) return; spreadWas = now;
   const pn = R.i + 1; renderReader(); const m = $('#pm-' + pn); if (m) m.scrollIntoView(); });
 function reflowHtml() {
@@ -802,7 +816,7 @@ function renderReader() {
       ${R.toc.length ? '<button class="tbtn" data-panel="toc">목차</button>' : ''}${hasText ? '<button class="tbtn" data-panel="find" aria-label="본문 검색">🔍 찾기</button>' : ''}
       <button class="tbtn" data-panel="font" aria-label="글씨 크기">가<span style="font-size:16px">가</span></button>
       ${hasText && R.speaking ? `<button class="tbtn ${R.ttsLocked ? 'on' : ''}" id="rLock" aria-pressed="${!!R.ttsLocked}" title="잠그면 실수로 멈추지 않습니다">${R.ttsLocked ? '🔒 잠김' : '🔓 잠금'}</button>` : ''}${R.ab ? `<button class="tbtn ${AB.on && !abA().paused ? 'on' : ''}" id="rAb" data-tip="${AB_TIP}" aria-label="오디오북 듣기 (${AB_TIP})">${AB.on && !abA().paused ? '❚❚ 오디오북' : '🎧 오디오북'}</button>` : ''}${hasText ? `<button class="tbtn ${R.speaking ? 'on' : ''}" id="rSpeak" ${R.ttsLocked ? 'disabled' : ''}>${R.speaking ? '■ 멈춤' : '▶ 듣기'}</button><button class="tbtn" data-panel="tts" aria-label="듣기 설정">듣기 설정</button>` : ''}
-      <button class="tbtn" data-panel="mode">화면</button>${R.spreadOk && R.view !== 'page' ? `<button class="tbtn${R.spread ? ' on' : ''}" id="rSpread" aria-pressed="${!!R.spread}" title="왼쪽·오른쪽 쪽을 책처럼 나란히">${R.spread ? '📄 한쪽씩 보기' : '📖 양쪽으로 보기'}</button>` : ''}${document.fullscreenEnabled ? `<button class="tbtn" id="rFull" aria-pressed="${!!document.fullscreenElement}" title="F11 처럼 화면 가득 보기 (Esc 로 나가기)">${document.fullscreenElement ? '⛶ 전체 화면 끄기' : '⛶ 전체 화면'}</button>` : ''}
+      <button class="tbtn" data-panel="mode">화면</button>${R.spreadOk && R.view !== 'page' ? `<button class="tbtn${spreadOn() ? ' on' : ''}" id="rSpread" aria-pressed="${spreadOn()}" title="왼쪽·오른쪽 쪽을 책처럼 나란히">${spreadOn() ? '📄 한쪽씩 보기' : '📖 양쪽으로 보기'}</button>` : ''}${document.fullscreenEnabled ? `<button class="tbtn" id="rFull" aria-pressed="${!!document.fullscreenElement}" title="F11 처럼 화면 가득 보기 (Esc 로 나가기)">${document.fullscreenElement ? '⛶ 전체 화면 끄기' : '⛶ 전체 화면'}</button>` : ''}
       <button class="tbtn ${marked ? 'on' : ''}" id="rMark" aria-pressed="${marked}">${marked ? '★ 책갈피' : '☆ 책갈피'}</button>
       <button class="tbtn" data-panel="bm">책갈피 목록</button>
       ${hasText ? '<button class="tbtn" data-panel="ul">밑줄 모음</button>' : ''}
@@ -840,6 +854,7 @@ function renderReader() {
       <div class="row" style="margin-top:12px"><input id="bmNote" placeholder="이 쪽에 한 줄 메모" aria-label="책갈피 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"><button class="tbtn" id="bmSave">저장</button></div>
       <p class="note">회원가입 없이 이 기기의 브라우저에만 저장됩니다. 다른 기기로 옮길 때는 내 서재의 ‘옮기기’를 쓰세요.</p></div>`;
   bindReader();
+  sprBar(); spreadWas = spreadOn();  // 화면을 돌리면 처음 한 번부터 바로 다시 그리게
   if (R.view === 'text') { const c = chapters()[Math.max(0, chapterOf(n))]; const pm = $('#pm-' + n); if (pm && n !== c.from) pm.scrollIntoView({ block: 'start' }); else $('#rBody').scrollTop = 0; }
   // 다음 쪽 그림 미리 받기
   const nx = R.pages[R.i + 1]; if (nx && nx.img && R.view === 'page') { const im = new Image(); im.src = nx.img; }
@@ -941,18 +956,21 @@ function bindReader() {
   if (!el._tapBound) {
     el._tapBound = true;
     const tapOk = t => t.closest('#rBody') && !t.closest('a,button,input,select,textarea,label,sup,u,img,summary,[role=button],[data-go],[data-find],[data-zoom-img],[data-zoom-tbl],.ix-bar');
+    // 손가락으로 누른 직후(0.8초)는 휴대폰 방식으로 — 화면이 넓거나 기기가 마우스가 있다고 알려도 (운영자 요청, 2026-11-14: 가로 양쪽 보기에서 눌러도 메뉴가 안 뜨던 것)
+    let lastTouch = 0; const touchNow = () => Date.now() - lastTouch < 800;
+    el.addEventListener('touchstart', () => { lastTouch = Date.now(); }, { passive: true, capture: true });
     el.addEventListener('click', e => {
-      if (!immersive() || !tapOk(e.target)) return;
+      if (!(immersive() || touchNow()) || !tapOk(e.target)) return;
       if (String(window.getSelection() || '').trim() || ($('#selPop') && $('#selPop').classList.contains('show'))) return;
       if (el.classList.toggle('chrome-off')) $$('.panel', el).forEach(x => x.classList.remove('open'));
     });
     let ty = null;
     el.addEventListener('touchstart', e => { ty = e.target.closest('#rBody') ? e.touches[0].clientY : null; }, { passive: true });
-    el.addEventListener('touchmove', e => { if (ty == null || !immersive()) return; if (Math.abs(e.touches[0].clientY - ty) > 12 && !$('.panel.open', el)) { el.classList.add('chrome-off'); ty = null; } }, { passive: true });
+    el.addEventListener('touchmove', e => { if (ty == null || !(immersive() || touchNow())) return; if (Math.abs(e.touches[0].clientY - ty) > 12 && !$('.panel.open', el)) { el.classList.add('chrome-off'); ty = null; } }, { passive: true });
     // 컴퓨터(마우스): 화면 맨 위·맨 아래로 마우스를 가져가면 메뉴·바가 보이고, 글 쪽으로 오면 다시 숨음 (운영자 요청, 2026-11-10)
     const hoverPC = () => matchMedia('(hover:hover) and (pointer:fine)').matches && !immersive();
     el.addEventListener('mousemove', e => {
-      if (!hoverPC()) return;
+      if (!hoverPC() || touchNow()) return;  // 손가락으로 누를 때 브라우저가 따라 보내는 가짜 마우스 움직임은 무시
       // 맨 위·맨 아래 가장자리(좁게)에서만 나타남, 글 속 단추(장 끝의 ← 앞 장 / 다음 장 → 등) 위에서는 나타나지 않음 — 단추를 가리지 않게 (운영자 요청, 2026-11-10)
       const onBodyBtn = e.target.closest && e.target.closest('#rBody button, #rBody a, #rBody input');
       const nearTop = e.clientY < 40, nearBot = e.clientY > innerHeight - 28 && !onBodyBtn;
@@ -960,7 +978,7 @@ function bindReader() {
       if (nearTop || nearBot || onChrome) el.classList.remove('chrome-off');
       else if (!$('.panel.open', el)) el.classList.add('chrome-off');
     });
-    el.addEventListener('mouseleave', () => { if (hoverPC() && !$('.panel.open', el)) el.classList.add('chrome-off'); });
+    el.addEventListener('mouseleave', () => { if (hoverPC() && !touchNow() && !$('.panel.open', el)) el.classList.add('chrome-off'); });
     el.addEventListener('focusin', e => { if (e.target.closest('.r-top,.r-bottom')) el.classList.remove('chrome-off'); });  // 키보드(Tab)로 단추에 가면 보임
     if (hoverPC() && !store.get('hover-hint')) { store.set('hover-hint', 1); setTimeout(() => toast('마우스를 화면 맨 위나 맨 아래로 가져가면 메뉴가 나옵니다'), 1200); }
     if (immersive() && !store.get('tap-hint')) { store.set('tap-hint', 1); setTimeout(() => toast('글을 넘기면 메뉴가 숨고, 화면을 한 번 누르면 다시 나옵니다'), 1200); }
@@ -990,11 +1008,12 @@ function bindReader() {
   $$('[data-lh]', el).forEach(b => b.onclick = () => { R.lh = +b.dataset.lh; store.set('rlh', R.lh); renderReader(); reopen('p-font'); });
   $$('[data-font]', el).forEach(b => b.onclick = () => { R.font = b.dataset.font; store.set('rfont', R.font); renderReader(); reopen('p-font'); });
   $$('[data-mw]', el).forEach(b => b.onclick = () => { R.mw = +b.dataset.mw; store.set('rmw', R.mw); renderReader(); reopen('p-font'); });
-  const spB = $('#rSpread', el); if (spB) spB.onclick = async () => { R.spread = !R.spread; store.set('rspread-' + R.id, R.spread);
+  const spB = $('#rSpread', el); if (spB) spB.onclick = async () => { if (R.spread && !spreadWide()) { spreadRotate(); return; }  // 세로 화면에서 이미 켜져 있으면 가로로만 돌림
+    R.spread = !R.spread; store.set('rspread2-' + R.id, R.spread);
     // 휴대폰 세로 화면에서 켜면 저절로 가로로 (전체 화면 + 화면 방향 고정 — 안드로이드 크롬 등에서만 됨, 아이폰은 직접 돌려야 함) (운영자 요청, 2026-11-14)
     if (R.spread && !spreadWide() && screen.orientation && screen.orientation.lock) { try { if (!document.fullscreenElement) { await document.documentElement.requestFullscreen(); R.spreadFs = true; } await screen.orientation.lock('landscape'); R.spreadLock = true; } catch (e) {} }
     if (!R.spread && R.spreadLock) { try { screen.orientation.unlock(); } catch (e) {} R.spreadLock = false; if (R.spreadFs && document.fullscreenElement) { try { await document.exitFullscreen(); } catch (e) {} } R.spreadFs = false; } const pn = R.i + 1; renderReader(); const m = $('#pm-' + pn); if (m) m.scrollIntoView(); if (immersive() && $('#reader')) $('#reader').classList.add('chrome-off'); setTimeout(() => R && toast(R.spread && !spreadWide() ? '휴대폰을 가로로 돌려 주세요 — 가로 화면에서 양쪽으로 보입니다' : R.spread ? (R.spreadPali ? '양쪽으로 봅니다 (왼쪽 빠알리 · 오른쪽 번역)' : '양쪽으로 봅니다 (짝수 쪽 왼쪽 · 홀수 쪽 오른쪽)') : '한쪽씩 봅니다'), 700); };
-  $$('[data-spread]', el).forEach(b => b.onclick = () => { R.spread = b.dataset.spread === '1'; store.set('rspread-' + R.id, R.spread); renderReader(); reopen('p-font'); });
+  $$('[data-spread]', el).forEach(b => b.onclick = () => { R.spread = b.dataset.spread === '1'; store.set('rspread2-' + R.id, R.spread); renderReader(); reopen('p-font'); });
   $$('[data-rmode]', el).forEach(b => b.onclick = () => { applyMode(b.dataset.rmode); renderReader(); reopen('p-mode'); });
   const cur = () => R.pages[R.i];
   $('#rMark').onclick = () => { const l = bms(), n = cur().n, k = l.findIndex(m => m.id === R.id && m.p === n); if (k > -1) { l.splice(k, 1); toast('책갈피를 지웠습니다'); } else { l.push({ id: R.id, t: R.title, p: n, pl: cur().label, note: '', d: today() }); toast(`${pageName(cur())}에 책갈피를 달았습니다`); } store.set('bm', l); renderReader(); };
