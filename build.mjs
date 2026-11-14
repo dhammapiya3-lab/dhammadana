@@ -400,6 +400,8 @@ const PEOPLE = (() => {
 const peopleOf = b => [...new Set(PEOPLE.raw.filter(x => x.b === b).map(x => x.key))];
 let _ord; const LIB_ORD = () => _ord || (_ord = new Map(libOrder().map((b, i) => [b.id, i])));
 // 도서관 목록: 같은 저자의 책은 모아서 나란히 — 저자 묶음은 그 저자의 가장 최근 책 순서로, 묶음 안은 등록 순서대로 (운영자 요청, 2026-11-15)
+// 저자 가나다순에 쓸 저자 이름: 첫 스승 이름, 없으면 첫 지은이 이름, 없으면 책에 적힌 지은이 (운영자 요청, 2026-11-15)
+const authorName = b => tIds(b)[0] ? (teacherById(tIds(b)[0])?.name || '') : (peopleOf(b)[0] ? (PEOPLE.by.get(peopleOf(b)[0])?.name || peopleOf(b)[0]) : (b.byline || ''));
 const authorKey = b => tIds(b)[0] ? 't:' + tIds(b)[0] : (peopleOf(b)[0] ? 'p:' + peopleOf(b)[0] : 'b:' + b.id);
 function libOrder() {
   const L = LIB(), first = new Map();
@@ -427,7 +429,7 @@ function langsOf(b) { const v = b.original_language; return (Array.isArray(v) ? 
 function coverCard(b) {
   const f = formats(b), fc = fmtsCard(b);
   const tr = b.teacher ? tradOfTeacher(b.teacher) : null;
-  return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${esc([...new Set(tIds(b).map(id => tradOfTeacher(id)?.id).filter(Boolean))].join('|'))}" data-teacher="${esc(tIds(b).join('|'))}" data-region="${esc(countriesOf(b).join('|'))}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(fc.map(x => x.k).join('|'))}" data-lang="${esc(langsOf(b).join('|'))}" data-btype="${esc(b.book_type || '')}" data-pub="${esc(pubsAll(b).map(x => x.key).join('|'))}" data-person="${esc(peopleOf(b).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}" data-ord="${LIB_ORD().get(b.id) ?? ''}">
+  return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${esc([...new Set(tIds(b).map(id => tradOfTeacher(id)?.id).filter(Boolean))].join('|'))}" data-teacher="${esc(tIds(b).join('|'))}" data-region="${esc(countriesOf(b).join('|'))}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(fc.map(x => x.k).join('|'))}" data-lang="${esc(langsOf(b).join('|'))}" data-btype="${esc(b.book_type || '')}" data-pub="${esc(pubsAll(b).map(x => x.key).join('|'))}" data-person="${esc(peopleOf(b).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}" data-ord="${LIB_ORD().get(b.id) ?? ''}" data-author="${esc(authorName(b))}">
   <div class="cover">${!f.length ? '<span class="soon">준비 중</span>' : ''}${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지" loading="lazy">` : `<div class="cover-ph">${esc(b.title)}</div>`}</div>
   <div class="t">${esc(b.title)}</div><div class="a">${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>${pubLine(b) ? `<div class="a publ">${esc(pubLine(b))}</div>` : ''}
   ${f.length ? `<div class="fmt">${fc.map(x => `<span>${x.k}${x.ext ? ' ↗' : ''}</span>`).join('')}</div>` : ''}</a>`;
@@ -556,7 +558,7 @@ function libraryBody() {
     <h3>형식</h3>${['PDF', 'EPUB', 'HWP', '온라인 읽기', '오디오북'].map(f => [f, LIB().filter(b => fmtsCard(b).some(x => x.k === f)).length]).filter(([f, n]) => n).map(([f, n]) => chk('fmt', f, f, n)).join('')}
   </div></details>
   <section><div class="toolbar"><div><h1 class="h-page">법보시 도서관</h1><div class="muted small">자료 <span id="libCount">${LIB().length}</span>권</div></div>
-    <label class="small">정렬 <select id="sort"><option value="new">최근 등록순</option><option value="title">제목 가나다순</option></select></label></div>
+    <label class="small">정렬 <select id="sort"><option value="new">최근 등록순</option><option value="title">제목 가나다순</option><option value="author">저자 가나다순</option></select></label></div>
     <div class="active-filters" id="activeFilters"></div>
     <div class="grid" id="libGrid">${libOrder().map(coverCard).join('')}</div>
     <p class="muted" id="libEmpty" hidden>조건에 맞는 자료가 아직 없습니다. 찾아보기를 줄여 보세요.</p>

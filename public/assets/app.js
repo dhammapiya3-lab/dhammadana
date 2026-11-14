@@ -200,7 +200,7 @@ async function initMembers() {
   root.addEventListener('keydown', e => { const r = e.target.closest && e.target.closest('[data-read]'); if (r && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); location.hash = '#' + encodeURIComponent(r.dataset.read) + '/read'; } });
   $$('[data-sf]', root).forEach(c => c.onchange = run);
   if ($('#stQ')) $('#stQ').oninput = run;
-  if ($('#stSort')) $('#stSort').onchange = () => { const g = $('#stGrid'), v = $('#stSort').value; $$('.book', g).sort((a, b) => v === 'title' ? a.dataset.title.localeCompare(b.dataset.title, 'ko') : (b.dataset.added || '').localeCompare(a.dataset.added || '')).forEach(x => g.appendChild(x)); };
+  if ($('#stSort')) $('#stSort').onchange = () => { const g = $('#stGrid'), v = $('#stSort').value; $$('.book', g).sort((a, b) => v === 'title' ? a.dataset.title.localeCompare(b.dataset.title, 'ko') : v === 'author' ? ((a.dataset.author || '').localeCompare(b.dataset.author || '', 'ko') || (+a.dataset.ord || 0) - (+b.dataset.ord || 0)) : (b.dataset.added || '').localeCompare(a.dataset.added || '')).forEach(x => g.appendChild(x)); };
   if ($('#stSort')) $('#stSort').onchange();
   if (window.innerWidth < 520 && $('.filter-toggle', root)) $('.filter-toggle', root).open = false;
   const detail = () => {
@@ -408,7 +408,7 @@ function initLibrary() {
   };
   const sortBy = () => {
     const g = $('#libGrid'), v = $('#sort').value;
-    $$('.book', g).sort((a, b) => v === 'title' ? a.dataset.title.localeCompare(b.dataset.title, 'ko') : ((+a.dataset.ord || 0) - (+b.dataset.ord || 0)) || (b.dataset.added || '').localeCompare(a.dataset.added || '')).forEach(x => g.appendChild(x));  // 최근 등록순: 같은 저자끼리 모아서(data-ord)
+    $$('.book', g).sort((a, b) => v === 'title' ? a.dataset.title.localeCompare(b.dataset.title, 'ko') : v === 'author' ? ((a.dataset.author || '').localeCompare(b.dataset.author || '', 'ko') || (+a.dataset.ord || 0) - (+b.dataset.ord || 0)) : ((+a.dataset.ord || 0) - (+b.dataset.ord || 0)) || (b.dataset.added || '').localeCompare(a.dataset.added || '')).forEach(x => g.appendChild(x));  // 최근 등록순: 같은 저자끼리 모아서(data-ord)
   };
   $$('.filters input[data-f]').forEach(c => c.onchange = () => { run(); sync(); });
   showEmpty.onchange = () => { store.set('showEmpty', showEmpty.checked); run(); };
