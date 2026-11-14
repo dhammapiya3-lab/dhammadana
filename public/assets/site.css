@@ -1080,3 +1080,5 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 @font-face{font-family:'JuaPronFb';src:url(/fonts/Jua-pron-fb.woff2) format('woff2');font-display:swap}
 .pron{font-family:'JuaPron','JuaPronFb',var(--sans);font-size:1.26em;letter-spacing:.01em}
 .pli{font-style:italic}  /* °°…°° 빠알리 로마자 줄 — 인쇄본처럼 기울임 */
+
+.dash-rule{display:inline-block;border-top:1px solid currentColor;vertical-align:.6em;margin-right:3px;opacity:.7}  /* 각주가 붙은 점선을 가운데 줄로 (DL-0027) */
