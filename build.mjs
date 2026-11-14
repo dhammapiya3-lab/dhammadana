@@ -72,8 +72,8 @@ const teacherById = id => TEACHERS.find(t => t.id === id);
 const tradById = id => TRADS.find(t => t.id === id);
 const tradOfTeacher = id => tradById(teacherById(id)?.tradition);
 // 국가·지역 (도서관 찾아보기의 따로 된 칸, 스승 목록의 country 로 — 운영자 요청, 2026-11-15)
-const COUNTRIES = ['한국', '서양', '미얀마', '태국', '스리랑카'];
-const countriesOf = b => [...new Set(tIds(b).flatMap(id => [].concat(teacherById(id)?.country || [])))];
+const COUNTRIES = ['한국', '서양', '미얀마', '태국', '스리랑카', '인도'];
+const countriesOf = b => [...new Set([...[].concat(b.country || []), ...tIds(b).flatMap(id => [].concat(teacherById(id)?.country || []))])];  // 책에 따로 정한 것(country) + 스승의 것
 const tIds = b => [...new Set([b.teacher, ...(b.co_teachers || [])].filter(Boolean))];  // 스승 + 공동 저자 (운영자 요청, 2026-11-12)
 const providerById = id => PROVIDERS.find(p => p.id === id);
 const permById = id => PERMS.find(p => p.id === id);

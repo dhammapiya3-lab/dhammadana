@@ -63,6 +63,7 @@ collections:
         display_fields: ["items.*.name"]
         multiple: true
         required: false
+      - { name: country, label: 국가·지역 (책), widget: select, multiple: true, required: false, options: ["한국", "서양", "미얀마", "태국", "스리랑카", "인도"], hint: "스승 목록에 없는 단체·저자의 책 등, 책을 도서관 찾아보기 '국가 · 지역'에 따로 넣을 때 고릅니다. 스승의 국가·지역은 저절로 들어갑니다." }
       - name: provider
         label: 자료 제공처
         widget: relation
@@ -381,7 +382,7 @@ collections:
               - { name: lay, label: 재가자, widget: boolean, required: false, default: false, hint: "켜면 같은 분류 안에서 스님들 다음에 나옵니다." }
               - { name: roman, label: 로마자, required: false }
               - { name: aliases, label: 다른 표기들, widget: list, required: false, hint: "책마다 다르게 적힌 이름. 검색에 쓰입니다." }
-              - { name: country, label: 국가·지역, widget: select, multiple: true, required: false, options: ["한국", "서양", "미얀마", "태국", "스리랑카"], hint: "도서관 찾아보기의 '국가 · 지역'에서 이 스승의 책이 잡힙니다." }
+              - { name: country, label: 국가·지역, widget: select, multiple: true, required: false, options: ["한국", "서양", "미얀마", "태국", "스리랑카", "인도"], hint: "도서관 찾아보기의 '국가 · 지역'에서 이 스승의 책이 잡힙니다." }
               - name: tradition
                 label: 수행전통
                 widget: relation
