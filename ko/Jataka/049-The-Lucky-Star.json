@@ -172,30 +172,34 @@
    {
     "rect": [
      352,
-     134,
-     490,
-     162
+     136,
+     496,
+     170
     ],
     "ko": "도시 사람들이 사정했습니다.",
     "fill": true,
     "align": "center",
     "shape": "box",
     "manual": true,
-    "em": 12
+    "em": 14,
+    "whole": true,
+    "cover": true
    },
    {
     "rect": [
-     580,
-     350,
-     728,
-     384
+     576,
+     344,
+     732,
+     388
     ],
     "ko": "시골 사람들이 대답했습니다.",
     "fill": true,
     "align": "center",
     "shape": "box",
     "manual": true,
-    "em": 12
+    "em": 14,
+    "whole": true,
+    "cover": true
    }
   ]
  },

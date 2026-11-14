@@ -13,16 +13,18 @@
    },
    {
     "rect": [
-     140,
-     116,
-     660,
-     132
+     180,
+     110,
+     620,
+     138
     ],
     "ko": "탐욕과 그 결과, 윤회의 고리를 살펴본 이야기",
     "align": "center",
     "shape": "box",
-    "em": 12,
-    "manual": true
+    "em": 14,
+    "manual": true,
+    "whole": true,
+    "cover": true
    }
   ]
  },
@@ -59,7 +61,17 @@
     ],
     "shape": "box",
     "en": "Embers: Hidden completely.",
-    "ko": "숯불: 완전히 숨겨짐"
+    "ko": "숯불: 완전히 숨겨짐",
+    "rect": [
+     538,
+     156,
+     720,
+     186
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -67,9 +79,18 @@
      347
     ],
     "ko": "물: 버터기름이 뜸",
-    "align": "left",
+    "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     96,
+     340,
+     228,
+     372
+    ],
+    "whole": true,
+    "cover": true,
+    "em": 14
    },
    {
     "seed": [
@@ -166,17 +187,19 @@
    },
    {
     "rect": [
-     412,
-     91,
-     562,
-     110
+     406,
+     86,
+     566,
+     114
     ],
     "ko": "• 불이 일곱 번 집을 태움",
-    "align": "left",
+    "align": "center",
     "shape": "box",
-    "em": 13,
+    "em": 14,
     "manual": true,
-    "fill": true
+    "fill": true,
+    "whole": true,
+    "cover": true
    },
    {
     "seed": [
@@ -320,7 +343,17 @@
     ],
     "shape": "box",
     "en": "Unwilling to learn, he applied flawed logic. Seizing king’s goat, he hoped to be hurled back to the ocean palaces. Instead, royal goatherds bound him as thief.",
-    "ko": "배울 줄 모르는 그는 엉뚱한 셈을 했습니다. 왕의 염소를 붙잡으면 다시 바다 궁전으로 던져지리라 여긴 것입니다. 그러나 왕실 염소지기들이 그를 도둑으로 묶었습니다."
+    "ko": "배울 줄 모르는 그는 엉뚱한 셈을 했습니다. 왕의 염소를 붙잡으면 다시 바다 궁전으로 던져지리라 여긴 것입니다. 그러나 왕실 염소지기들이 그를 도둑으로 묶었습니다.",
+    "rect": [
+     230,
+     362,
+     572,
+     436
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -353,42 +386,48 @@
    },
    {
     "rect": [
-     60,
-     365,
-     265,
-     385
+     56,
+     360,
+     268,
+     390
     ],
     "ko": "1. 아라한이 있는 것을 시기함",
     "align": "center",
     "shape": "box",
-    "em": 12,
-    "manual": true
+    "em": 14,
+    "manual": true,
+    "whole": true,
+    "cover": true
    },
    {
     "rect": [
-     290,
-     365,
-     500,
-     385
+     286,
+     360,
+     503,
+     390
     ],
     "ko": "2. 보살의 가르침에서 달아남",
     "align": "center",
     "shape": "box",
-    "em": 12,
-    "manual": true
+    "em": 14,
+    "manual": true,
+    "whole": true,
+    "cover": true
    },
    {
     "rect": [
-     522,
-     365,
-     742,
-     385
+     518,
+     360,
+     745,
+     390
     ],
     "ko": "3. 천녀들의 경고를 무시함",
     "align": "center",
     "shape": "box",
-    "em": 12,
-    "manual": true
+    "em": 14,
+    "manual": true,
+    "whole": true,
+    "cover": true
    },
    {
     "seed": [

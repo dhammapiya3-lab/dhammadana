@@ -29,7 +29,17 @@
     ],
     "shape": "box",
     "en": "Traveling to Cet, the Bodhisatta and his master were captured by five hundred robbers known as alte Dispatchers.”",
-    "ko": "쩨따 나라로 가던 보살과 스승은 ‘보내는 자들’이라 불리는 도적 오백 명에게 붙잡혔습니다."
+    "ko": "쩨따 나라로 가던 보살과 스승은 ‘보내는 자들’이라 불리는 도적 오백 명에게 붙잡혔습니다.",
+    "rect": [
+     116,
+     66,
+     370,
+     124
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -38,7 +48,17 @@
     ],
     "shape": "box",
     "en": "Their rule: Keep the master, dispatch the pupil for ransom. The Bodhisatta was sent to fetch the gold.",
-    "ko": "그들의 규칙은 이렇습니다. 스승은 붙잡아 두고 제자는 몸값을 가지러 보낸다. 그래서 보살이 금을 가지러 떠났습니다."
+    "ko": "그들의 규칙은 이렇습니다. 스승은 붙잡아 두고 제자는 몸값을 가지러 보낸다. 그래서 보살이 금을 가지러 떠났습니다.",
+    "rect": [
+     410,
+     326,
+     682,
+     388
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -66,7 +86,17 @@
     ],
     "shape": "box",
     "en": "Bound and impatient, the brahmin watched the eastern horizon. Seeing the great conjunction, he bargained for his release.",
-    "ko": "묶인 채 조바심이 난 바라문은 동쪽 하늘을 지켜보았습니다. 큰 별자리가 모인 것을 보자, 풀려나는 조건으로 흥정을 했습니다."
+    "ko": "묶인 채 조바심이 난 바라문은 동쪽 하늘을 지켜보았습니다. 큰 별자리가 모인 것을 보자, 풀려나는 조건으로 흥정을 했습니다.",
+    "rect": [
+     118,
+     66,
+     350,
+     124
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -75,7 +105,17 @@
     ],
     "shape": "box",
     "en": "Bathed 4 and perfumed 3 by the 2 robbers, 3 he lifted 3 his eyes to the heavens and chanted the forbidden charm.",
-    "ko": "도적들이 목욕시키고 향을 발라 주자, 바라문은 하늘을 우러러 금지된 주문을 외웠습니다."
+    "ko": "도적들이 목욕시키고 향을 발라 주자, 바라문은 하늘을 우러러 금지된 주문을 외웠습니다.",
+    "rect": [
+     406,
+     338,
+     680,
+     384
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -89,7 +129,17 @@
     ],
     "shape": "box",
     "en": "Forthwith, the Seven Things of Price poured from the skies.",
-    "ko": "그러자 곧 일곱 가지 보배가 하늘에서 쏟아졌습니다."
+    "ko": "그러자 곧 일곱 가지 보배가 하늘에서 쏟아졌습니다.",
+    "rect": [
+     118,
+     66,
+     316,
+     112
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -112,7 +162,17 @@
     ],
     "shape": "box",
     "en": "As luck would have it, second band of five hundred robbers ambushed them.",
-    "ko": "공교롭게도 또 다른 도적 오백 명이 그들을 덮쳤습니다."
+    "ko": "공교롭게도 또 다른 도적 오백 명이\n그들을 덮쳤습니다.",
+    "rect": [
+     112,
+     66,
+     352,
+     124
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 16
    },
    {
     "seed": [
@@ -121,7 +181,17 @@
     ],
     "shape": "box",
     "en": "Learning the brahmin had conjured the riches, they demanded shower of their own.",
-    "ko": "바라문이 재물을 불러냈다는 것을 알자, 그들은 자기들에게도 보배 비를 내리라고 다그쳤습니다."
+    "ko": "바라문이 재물을 불러냈다는 것을 알자,\n그들은 자기들에게도 보배 비를\n내리라고 다그쳤습니다.",
+    "rect": [
+     440,
+     66,
+     690,
+     124
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 16
    },
    {
     "seed": [
@@ -130,16 +200,21 @@
     ],
     "shape": "bubble",
     "en": "cannot,” he trembled. “The planets will not align for another year.”",
-    "ko": "“할 수 없소.” 바라문이 떨며 말했습니다. “별들이 다시 모이려면 한 해를 기다려야 하오.”",
-    "em": 14,
+    "ko": "바라문이 떨며\n말했습니다.\n“할 수 없소. 별들이\n다시 모이려면 한 해를\n기다려야 하오.”",
+    "em": 13,
     "rect": [
-     546,
-     282,
-     663,
-     364
+     520,
+     280,
+     690,
+     392
     ],
     "align": "center",
-    "whole": true
+    "ellipse": true,
+    "cover": [
+     255,
+     255,
+     255
+    ]
    }
   ]
  },
@@ -170,7 +245,17 @@
     ],
     "shape": "box",
     "en": "With sharp sword, they cut him in twain, flinging his body into the road. The warning was ignored.",
-    "ko": "도적들은 날카로운 칼로 바라문을 두 동강 내어 길에 내던졌습니다. 경고를 듣지 않은 탓이었습니다."
+    "ko": "도적들은 날카로운 칼로 바라문을 두 동강 내어 길에 내던졌습니다. 경고를 듣지 않은 탓이었습니다.",
+    "rect": [
+     248,
+     336,
+     556,
+     384
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -198,7 +283,17 @@
     ],
     "shape": "box",
     "en": "The two survivors hid the treasure. One stayed to guard it; the other went for food",
-    "ko": "살아남은 둘은 보물을 숨겼습니다. 하나는 남아서 지키고, 하나는 먹을 것을 구하러 갔습니다."
+    "ko": "살아남은 둘은 보물을 숨겼습니다. 하나는 남아서 지키고, 하나는 먹을 것을 구하러 갔습니다.",
+    "rect": [
+     168,
+     54,
+     632,
+     86
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "shape": "box",

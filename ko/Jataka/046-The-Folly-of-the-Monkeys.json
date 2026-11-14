@@ -91,7 +91,23 @@
     ],
     "shape": "bubble",
     "en": "mind you do!",
-    "ko": "꼭 해야 한다!"
+    "ko": "꼭 해야 한다!",
+    "rect": [
+     580,
+     80,
+     678,
+     148
+    ],
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 14
    }
   ]
  },

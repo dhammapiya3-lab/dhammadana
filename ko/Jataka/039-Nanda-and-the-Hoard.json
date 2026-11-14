@@ -23,7 +23,17 @@
     ],
     "shape": "box",
     "en": "Seeking to protect the inheritance, he led his household slave, Nanda, deep into the forest to bury the gold.",
-    "ko": "유산을 지키려고 그는 집안의 종 난다를 데리고 깊은 숲에 들어가 금을 묻었습니다."
+    "ko": "유산을 지키려고 그는 집안의 종 난다를 데리고 깊은 숲에 들어가 금을 묻었습니다.",
+    "rect": [
+     110,
+     22,
+     420,
+     64
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -105,15 +115,15 @@
     "parts": [
      {
       "rect": [
-       588,
-       170,
-       660,
-       202
+       586,
+       158,
+       662,
+       198
       ],
       "ko": "숲속에요,\n도련님."
      }
     ],
-    "em": 12
+    "em": 13
    },
    {
     "rect": [
@@ -149,7 +159,23 @@
     ],
     "shape": "bubble",
     "en": "This way, my lord.",
-    "ko": "이쪽입니다, 도련님."
+    "ko": "이쪽입니다, 도련님.",
+    "rect": [
+     296,
+     132,
+     388,
+     208
+    ],
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -181,9 +207,18 @@
      368
     ],
     "ko": "아들은 그 자리에서만 거만해지는 것이 수수께끼라고 생각했습니다.",
-    "align": "left",
+    "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     52,
+     362,
+     392,
+     398
+    ],
+    "whole": true,
+    "cover": true,
+    "em": 14
    }
   ]
  },
@@ -220,7 +255,17 @@
     ],
     "shape": "box",
     "en": "The Bodhisatta instantly deduced the truth: proximity to hidden wealth unconsciously inflates the ego.",
-    "ko": "보살은 곧바로 진실을 알아냈습니다. 숨은 재물 가까이 있으면 저도 모르게 교만해지는 것입니다."
+    "ko": "보살은 곧바로 진실을 알아냈습니다.\n숨은 재물 가까이 있으면 저도 모르게 교만해지는 것입니다.",
+    "rect": [
+     104,
+     40,
+     458,
+     84
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 16
    },
    {
     "seed": [
@@ -229,16 +274,23 @@
     ],
     "shape": "bubble",
     "en": "The spot where Nanda stands ds to abuse you is exactly where your gold lies.",
-    "ko": "난다가 서서 너를 욕하는 바로 그 자리에 네 금이 묻혀 있다.",
+    "ko": "난다가 서서 너를 욕하는\n바로 그 자리에\n네 금이 묻혀 있다.",
     "rect": [
-     280,
-     102,
-     402,
-     169
+     278,
+     94,
+     474,
+     190
     ],
-    "em": 14,
+    "em": 15,
     "align": "center",
-    "whole": true
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ]
    },
    {
     "rect": [
@@ -332,7 +384,17 @@
     ],
     "shape": "box",
     "en": "The heir made Nanda carry the wealth home. Steadfast in the Bodhisatta’s wisdom, he spent his life in generosity—a master of his wealth, rather than mastered by it.",
-    "ko": "아들은 난다에게 재물을 지고 집으로 가게 했습니다. 보살의 지혜를 굳게 지킨 그는 평생 너그럽게 베풀며 살았습니다. 재물에 휘둘리지 않고 재물을 다스리는 주인이 되었습니다."
+    "ko": "아들은 난다에게 재물을 지고 집으로 가게 했습니다. 보살의 지혜를 굳게 지킨 그는 평생 너그럽게 베풀며 살았습니다. 재물에 휘둘리지 않고 재물을 다스리는 주인이 되었습니다.",
+    "rect": [
+     50,
+     50,
+     404,
+     106
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  }

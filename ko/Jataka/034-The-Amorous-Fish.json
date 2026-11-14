@@ -172,7 +172,17 @@
     ],
     "shape": "box",
     "en": "Death was imminent. Yet, the fish did ai fie fear Eng the embers bers or the agonizing spit",
-    "ko": "죽음이 코앞이었습니다. 그런데 물고기는 숯불도 무시무시한 꼬챙이도 두려워하지 않았습니다."
+    "ko": "죽음이 코앞이었습니다. 그런데 물고기는 숯불도 무시무시한 꼬챙이도 두려워하지 않았습니다.",
+    "rect": [
+     46,
+     318,
+     536,
+     364
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -181,7 +191,17 @@
     ],
     "shape": "box",
     "en": "only ago distressing th ht that his wife would believe he had abandoned her for another.",
-    "ko": "오직 아내가 ‘그가 나를 버리고 다른 이에게 갔다’고 여길까 봐 괴로워했습니다."
+    "ko": "오직 아내가 ‘그가 나를 버리고 다른 이에게 갔다’고 여길까 봐 괴로워했습니다.",
+    "rect": [
+     110,
+     366,
+     740,
+     408
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -237,7 +257,16 @@
     "shape": "bubble",
     "en": "State of Passion/Delusion",
     "ko": "+ 애욕과 미혹에 빠진 마음",
-    "em": 15
+    "em": 14,
+    "rect": [
+     548,
+     152,
+     702,
+     206
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -247,7 +276,16 @@
     "shape": "bubble",
     "en": "Rebirth in Hell",
     "ko": "지옥에 다시 태어남",
-    "em": 15
+    "em": 14,
+    "rect": [
+     444,
+     262,
+     612,
+     304
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -320,7 +358,17 @@
     ],
     "shape": "box",
     "en": "“He’s yours, sir,” the fishermen agreed, happily surrendering their catch to the revered royal priest",
-    "ko": "“가져가십시오, 나리.” 어부들은 존경하는 왕실 사제에게 기꺼이 물고기를 내주었습니다."
+    "ko": "“가져가십시오, 나리.” 어부들은 존경하는 왕실 사제에게 기꺼이 물고기를 내주었습니다.",
+    "rect": [
+     500,
+     304,
+     712,
+     368
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -351,7 +399,17 @@
     ],
     "shape": "box",
     "en": "“Friend fish, if had 3 not seen you today, Bod you would have met your death. Cease for the future to be the slave of passion.”",
-    "ko": "“벗 물고기여, 오늘 내가 너를 보지 못했다면 너는 죽었을 것이다. 앞으로는 애욕의 노예가 되지 마라.”"
+    "ko": "“벗 물고기여, 오늘 내가 너를 보지 못했다면 너는 죽었을 것이다. 앞으로는 애욕의 노예가 되지 마라.”",
+    "rect": [
+     438,
+     306,
+     714,
+     366
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -365,7 +423,17 @@
     ],
     "shape": "box",
     "en": "With this final exhortation, he threw the fish back into the sanctuary of the water, and peacefully departed for the city.",
-    "ko": "이렇게 마지막으로 타이른 뒤, 보살은 물고기를 안전한 물속으로 돌려보내고 조용히 성으로 돌아갔습니다."
+    "ko": "이렇게 마지막으로 타이른 뒤, 보살은 물고기를 안전한 물속으로 돌려보내고 조용히 성으로 돌아갔습니다.",
+    "rect": [
+     86,
+     246,
+     372,
+     310
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [

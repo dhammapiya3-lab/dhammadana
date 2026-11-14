@@ -28,7 +28,17 @@
     ],
     "shape": "box",
     "en": "THE LUXURIES OF YOUTH",
-    "ko": "젊은 날의 호사"
+    "ko": "젊은 날의 호사",
+    "rect": [
+     32,
+     34,
+     192,
+     62
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -37,7 +47,17 @@
     ],
     "shape": "box",
     "en": "THE SIX GRAND ALMS HALLS",
-    "ko": "여섯 곳의 큰 보시당"
+    "ko": "여섯 곳의 큰 보시당",
+    "rect": [
+     276,
+     34,
+     462,
+     62
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -54,9 +74,18 @@
      37
     ],
     "ko": "포살 지키기",
-    "align": "left",
+    "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     528,
+     34,
+     692,
+     62
+    ],
+    "whole": true,
+    "cover": true,
+    "em": 14
    }
   ]
  },
@@ -70,7 +99,17 @@
     ],
     "shape": "box",
     "en": "Rising from seven-day trance,",
-    "ko": "이레 동안의 선정에서 일어나,"
+    "ko": "이레 동안의 선정에서 일어나,",
+    "rect": [
+     30,
+     34,
+     236,
+     64
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -115,7 +154,17 @@
     ],
     "shape": "box",
     "en": "The Bodhisatta the hovering sage arrive his gates.",
-    "ko": "보살은 허공에 떠 있는 성자가 문 앞에 이른 것을 보았습니다."
+    "ko": "보살은 허공에 떠 있는 성자가 문 앞에 이른 것을 보았습니다.",
+    "rect": [
+     44,
+     42,
+     256,
+     92
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -178,21 +227,37 @@
     ],
     "shape": "box",
     "en": "With thought, Mara carved an eighty-cubit abyss into the mansion floor—a roaring pit of blazing Acacia-charcoal, aflame like the great hell of Avici. Mara took his stand in mid-air.",
-    "ko": "마라는 생각 하나로 저택 바닥에 깊이 80완척의 구덩이를 팠습니다. 큰 아비지옥처럼 아카시아 숯불이 활활 타오르는 구덩이였습니다. 마라는 허공에 버티고 섰습니다."
+    "ko": "마라는 생각 하나로 저택 바닥에 깊이 80완척의 구덩이를 팠습니다. 큰 아비지옥처럼 아카시아 숯불이 활활 타오르는 구덩이였습니다. 마라는 허공에 버티고 섰습니다.",
+    "rect": [
+     44,
+     42,
+     580,
+     98
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "rect": [
-     596,
-     338,
-     700,
-     358
+     592,
+     334,
+     704,
+     362
     ],
     "ko": "깊이 80완척",
-    "align": "left",
+    "align": "center",
     "dark": true,
-    "em": 13,
+    "em": 14,
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "whole": true,
+    "cover": [
+     20,
+     14,
+     12
+    ]
    }
   ]
  },

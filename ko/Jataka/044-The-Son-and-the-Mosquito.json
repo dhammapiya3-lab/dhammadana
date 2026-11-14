@@ -79,7 +79,23 @@
     ],
     "shape": "bubble",
     "en": "Hold still then, father. One blow will settle it",
-    "ko": "그럼 가만히 계세요, 아버지. 한 방이면 끝납니다."
+    "ko": "그럼 가만히 계세요, 아버지. 한 방이면 끝납니다.",
+    "rect": [
+     234,
+     54,
+     416,
+     136
+    ],
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 14
    }
   ]
  },
