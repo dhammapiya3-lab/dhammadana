@@ -672,11 +672,12 @@ async function initReaderPage() {
   const pages = man.pages.map((p, i) => ({ n: i + 1, label: p.label || '', img: p.img ? base + p.img : '', big: p.big ? base + p.big : '', w: p.w, h: p.h, text: p.text || '' }));
   const last = store.get('pos-' + id, 1);
   R = {
-    id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, cover: root.dataset.cover || '', kakao: root.dataset.kakao || '', noCopy: root.dataset.nocopy === '1', pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, spreadOk: !!man.spread,  // tdl: 표 그림 내려받기 (표 첫 칸 글 → 그림 주소, 운영자 요청 2026-11-12)
+    id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, cover: root.dataset.cover || '', kakao: root.dataset.kakao || '', noCopy: root.dataset.nocopy === '1', pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, spreadOk: (man.pages || []).some(p => p.text), spreadPali: !!man.spread,  // tdl: 표 그림 내려받기 (표 첫 칸 글 → 그림 주소, 운영자 요청 2026-11-12)
      // say: 그림·표를 소리로 읽을 글 (그림 주소 → 글, 운영자 요청 2026-11-10)
    
     i: Math.min(Math.max(want || (last > 1 ? last : 0) || firstContent(pages, man.toc || []), 1), pages.length) - 1,
-    view: 'text', zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), bold: store.get('rbold', false), lh: store.get('rlh', 1.9), font: store.get('rfont', 'serif'), mw: store.get('rmw', 36), spread: store.get('rspread', false),
+    view: 'text', zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), bold: store.get('rbold', false), lh: store.get('rlh', 1.9), font: store.get('rfont', 'serif'), mw: store.get('rmw', 36), spread: store.get('rspread-' + id, !!man.spread),  // 책마다 따로 — 『테라와다 불교의범』처럼 spread 가 있는 책은 처음부터 양쪽으로, 다른 책은 한쪽씩 (운영자 요청, 2026-11-14)
+   
     hl: hlp ? hlp.split('|').filter(Boolean) : [], speaking: false,
     ix: man.index || null, ixPart: store.get('ixp-' + id, 0), ixQ: hlp ? hlp.split('|')[0] : ''
   };
@@ -736,7 +737,7 @@ function chapterOf(n) {
   const k = cs.findIndex(c => n >= c.from && n <= c.to); return k < 0 ? 0 : k;
 }
 function firstContent(pages, toc) { const t = toc.filter(x => !/^\s/.test(x.title)).map(x => x.page).sort((a, b) => a - b)[0]; const f = pages.findIndex(p => p.text && p.text.trim()) + 1; return Math.min(t || Infinity, f || Infinity) === Infinity ? 1 : Math.min(t || Infinity, f || Infinity); }
-// 양쪽으로 읽기 (운영자 요청, 2026-11-14): 텍스트 JSON 에 spread 가 있는 책(왼쪽 쪽 빠알리 · 오른쪽 쪽 번역 등)만, 넓은 화면에서 짝수 쪽은 왼쪽·홀수 쪽은 오른쪽에 나란히
+// 양쪽으로 읽기 (운영자 요청, 2026-11-14): 글로 읽기가 있는 모든 책 — 넓은 화면에서 짝수 쪽은 왼쪽·홀수 쪽은 오른쪽에 나란히 (텍스트 JSON 의 spread 는 '왼쪽 빠알리·오른쪽 번역' 안내만)
 // 휴대폰·태블릿은 가로로 눕혔을 때도 (운영자 요청, 2026-11-14)
 const spreadWide = () => window.innerWidth >= 1000 || (window.innerWidth >= 560 && window.innerWidth > window.innerHeight);
 const spreadOn = () => !!(R && R.spreadOk && R.spread && spreadWide());
@@ -988,8 +989,8 @@ function bindReader() {
   $$('[data-lh]', el).forEach(b => b.onclick = () => { R.lh = +b.dataset.lh; store.set('rlh', R.lh); renderReader(); reopen('p-font'); });
   $$('[data-font]', el).forEach(b => b.onclick = () => { R.font = b.dataset.font; store.set('rfont', R.font); renderReader(); reopen('p-font'); });
   $$('[data-mw]', el).forEach(b => b.onclick = () => { R.mw = +b.dataset.mw; store.set('rmw', R.mw); renderReader(); reopen('p-font'); });
-  const spB = $('#rSpread', el); if (spB) spB.onclick = () => { R.spread = !R.spread; store.set('rspread', R.spread); const pn = R.i + 1; renderReader(); const m = $('#pm-' + pn); if (m) m.scrollIntoView(); toast(R.spread ? '양쪽으로 봅니다 (왼쪽 빠알리 · 오른쪽 번역)' : '한쪽씩 봅니다'); };
-  $$('[data-spread]', el).forEach(b => b.onclick = () => { R.spread = b.dataset.spread === '1'; store.set('rspread', R.spread); renderReader(); reopen('p-font'); });
+  const spB = $('#rSpread', el); if (spB) spB.onclick = () => { R.spread = !R.spread; store.set('rspread-' + R.id, R.spread); const pn = R.i + 1; renderReader(); const m = $('#pm-' + pn); if (m) m.scrollIntoView(); toast(R.spread ? (R.spreadPali ? '양쪽으로 봅니다 (왼쪽 빠알리 · 오른쪽 번역)' : '양쪽으로 봅니다 (짝수 쪽 왼쪽 · 홀수 쪽 오른쪽)') : '한쪽씩 봅니다'); };
+  $$('[data-spread]', el).forEach(b => b.onclick = () => { R.spread = b.dataset.spread === '1'; store.set('rspread-' + R.id, R.spread); renderReader(); reopen('p-font'); });
   $$('[data-rmode]', el).forEach(b => b.onclick = () => { applyMode(b.dataset.rmode); renderReader(); reopen('p-mode'); });
   const cur = () => R.pages[R.i];
   $('#rMark').onclick = () => { const l = bms(), n = cur().n, k = l.findIndex(m => m.id === R.id && m.p === n); if (k > -1) { l.splice(k, 1); toast('책갈피를 지웠습니다'); } else { l.push({ id: R.id, t: R.title, p: n, pl: cur().label, note: '', d: today() }); toast(`${pageName(cur())}에 책갈피를 달았습니다`); } store.set('bm', l); renderReader(); };
