@@ -1,0 +1,407 @@
+[
+ {
+  "img": "images/19-Vakkali-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     164,
+     298,
+     640,
+     396
+    ],
+    "ko": "왁깔리 존자 이야기\n눈에 보이는 몸에서 영적 통찰로\n불교 연대기 속 믿음의 여정",
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Vakkali-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     76,
+     424,
+     116
+    ],
+    "ko": "옛 서원",
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     228,
+     222,
+     420,
+     248
+    ],
+    "ko": " ",
+    "align": "center",
+    "grow": 4,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     228,
+     126,
+     506,
+     236
+    ],
+    "ko": "여러 생 전, 빠두뭇따라 부처님께서\n한 제자를 칭찬하시는 것을 보고\n젊은 귀족이 서원을 세웠습니다.\n이레 동안 큰 공양을 올린 뒤\n그는 말했습니다.",
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     228,
+     236,
+     426,
+     396
+    ],
+    "ko": "“앞으로 오실 부처님께서\n저를, 부처님을 깊이\n믿고 따르는 비구 가운데\n으뜸이라고 선언해\n주시기를.”",
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Vakkali-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     78,
+     444,
+     120
+    ],
+    "ko": "모습에 사로잡힘",
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     462,
+     128,
+     512,
+     160
+    ],
+    "ko": " ",
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     226,
+     124,
+     474,
+     396
+    ],
+    "ko": "사왓티의 바라문으로\n다시 태어난 왁깔리는\n탁발하시는 고따마 부처님을\n만났습니다. 부처님 몸의\n장엄함에 완전히 넋을 잃은\n그는 집안 살림을 버리고\n출가했으니, 오직 부처님\n곁에 머물고 싶어서였습니다.",
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Vakkali-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     282,
+     80,
+     522,
+     118
+    ],
+    "ko": "잘못 든 길",
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     230,
+     126,
+     516,
+     226
+    ],
+    "ko": "승가에 들어온 왁깔리 존자는\n배움도 수행도 돌보지\n않았습니다. 공양 때를 빼고는",
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     230,
+     226,
+     440,
+     388
+    ],
+    "ko": "깨어 있는 내내 부처님의\n거룩한 모습을 바라보기만\n했습니다. 그의 믿음은\n깊었지만, 온전히 몸의\n세계에 갇혀 있었습니다.",
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Vakkali-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     268,
+     78,
+     532,
+     118
+    ],
+    "ko": "부처님의 일깨움",
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     230,
+     122,
+     486,
+     394
+    ],
+    "ko": "깨달음의 때가 왔음을 아시고\n부처님께서 엄한 진실을\n말씀하셨습니다.\n“썩어 갈 이 몸을 보아서\n무엇 하겠느냐?”\n\n“왁깔리여, 법을 보는 자는\n나를 본다. 법을 바라보는 자가\n참으로 나를 바라보는 것이다.”",
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Vakkali-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     62,
+     564,
+     104
+    ],
+    "ko": "믿음의 두 길",
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     178,
+     214,
+     396,
+     366
+    ],
+    "ko": "몸에 대한 믿음\n• 초점: 몸\n• 행위: 바라보며\n   가까이 머묾\n• 결과: 번뇌와 집착,\n   윤회(saṁsāra)에 머묾",
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     406,
+     214,
+     624,
+     366
+    ],
+    "ko": "법에 대한 믿음\n• 초점: 궁극의 진리\n• 행위: 배움과 수행\n• 결과: 고요와 깨달음,\n   열반을 얻음",
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Vakkali-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     86,
+     322,
+     170
+    ],
+    "ko": "쫓겨남과\n절망",
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     64,
+     178,
+     374,
+     366
+    ],
+    "ko": "집착을 놓지 못하는 왁깔리에게는\n마음을 뒤흔드는 충격이 필요했습니다.\n부처님께서 명하셨습니다.\n“내 앞에서 떠나라!”\n\n깃자꾸따 산의 가파른 벼랑으로\n쫓겨나 쓸쓸해진 왁깔리는,\n떨어져 사느니 차라리 죽는 것이\n낫다고 생각했습니다.",
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Vakkali-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     510,
+     206,
+     574,
+     244
+    ],
+    "ko": "슬픔의\n화살",
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     254,
+     280,
+     550,
+     322
+    ],
+    "ko": "거룩한 광명",
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     62,
+     322,
+     746,
+     398
+    ],
+    "ko": "왁깔리의 절망을 보시고 부처님께서 찬란한 광명을 놓으셨습니다.\n이 거룩한 빛은 몸의 거리를 넘어 왁깔리의 타는 가슴에 곧바로 닿았습니다.\n빛은 곧 마음을 달래 주어, 깊이 박힌 슬픔의 화살을 뽑아 주고\n기쁜 믿음으로 그를 가득 채웠습니다.",
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Vakkali-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     310,
+     538,
+     346
+    ],
+    "ko": "세 가지 약속",
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     128,
+     344,
+     672,
+     420
+    ],
+    "ko": "“오라, 왁깔리여, 두려워하지 마라.” 부처님의 게송은 완전한 해탈을 약속했습니다.\n1. 수렁에서 코끼리를 끌어내듯 윤회(saṁsāra)의 수렁에서 건져 줌\n2. 라후에게서 벗어나는 해처럼 번뇌에서 풀어 줌\n3. 붙잡혔다 풀려나는 달처럼 놓아 줌",
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Vakkali-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     476,
+     138,
+     690,
+     168
+    ],
+    "ko": "통찰의 도약",
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     432,
+     178,
+     744,
+     326
+    ],
+    "ko": "기쁨에 넘친 왁깔리는 부처님을 향해\n빈 허공으로 걸음을 내디뎠습니다.\n발을 허공에 둔 채 게송을 깊이\n되새겼습니다. 그는 감정의 집착을\n넘어서고, 조건 지어진 현상을 깊이\n꿰뚫어 보아 그 자리에서 아라한이\n되었습니다.",
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Vakkali-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     484,
+     90,
+     718,
+     124
+    ],
+    "ko": "믿음으로 으뜸",
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     470,
+     128,
+     742,
+     324
+    ],
+    "ko": "부처님께서 왁깔리를 믿음으로\n으뜸이라고 선언하셨습니다.\n\n왜일까요? 왁깔리의 믿음은 너무도\n강해서 일부러 꺾어 바른 쪽으로\n돌려야 했습니다.\n\n그는 참된 믿음이란 스승의 모습을\n숭배하는 것이 아니라 스승의 지혜를\n깨닫는 것임을 보여 주었습니다.",
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
