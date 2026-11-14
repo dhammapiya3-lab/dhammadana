@@ -138,3 +138,9 @@ html.sv-lock,html.sv-lock body{overflow:hidden}
 .sh-act button{background:none;border:1px solid var(--line);border-radius:6px;padding:6px 10px;color:var(--ink-soft);cursor:pointer;font:inherit;font-size:13.5px}
 .resume{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:18px 0;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--paper-2)}
 @media (max-width:560px){.sh-cover{flex-basis:90px}.sh-cover img{width:90px}}
+.login{max-width:440px}.login h1{margin:28px 0 12px}
+.login form label{display:block;margin:12px 0;font-size:14.5px}
+.login form input{display:block;width:100%;margin-top:4px;padding:9px 10px;border:1px solid var(--line);border-radius:8px;font:inherit;background:#fff}
+.login .err{color:#a33}.login .small{font-size:13.5px;line-height:1.8;margin-top:18px}
+.login button.btn{background:none;cursor:pointer;font:inherit;color:inherit}
+.note{background:var(--paper-2);border-radius:8px;padding:10px 14px;font-size:14.5px}

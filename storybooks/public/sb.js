@@ -17,11 +17,69 @@
 
   // 내 서재 화면 · 책 화면의 '이어 읽기'
   const shelfAll = () => { try { return JSON.parse(localStorage.getItem('sb-shelf') || '{}'); } catch (e) { return {}; } };
+  // 회원: 법보시 도서관(dhammadana.kr)과 같은 회원. 책마다 'sb-b-<책>' 으로 맞춤 (나중에 읽은 쪽이 이김)
+  const API = 'https://dhammadana.kr/api/account';
+  const ls = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { return null; } };
+  const acct = { get token() { return ls('sb-acct') || ''; }, get id() { return ls('sb-acct-id') || ''; } };
+  const api = async (op, o = {}) => {
+    const r = await fetch(API, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ op, token: acct.token, ...o }), keepalive: op === 'sync' });
+    let j = {}; try { j = await r.json(); } catch (e) {}
+    if (j.relogin) { ls('sb-acct', null); ls('sb-acct-id', null); acctBtn(); }
+    if (!r.ok || j.error) throw new Error(j.error || '연결이 잘 되지 않습니다. 잠시 뒤에 다시 해 주세요.');
+    return j;
+  };
+  const acctBtn = () => { const b = document.getElementById('acctBtn'); if (b) b.textContent = acct.id ? '👤 ' + acct.id : '로그인'; };
+  acctBtn();
+  let syncing = false, syncTimer = null;
+  window.sbSync = async () => {
+    if (!acct.token || syncing) return false; syncing = true;
+    try {
+      const all = shelfAll(), data = {};
+      for (const [slug, r] of Object.entries(all)) data['sb-b-' + slug] = { v: r.del ? null : r, t: r.t || 1 };
+      const j = await api('sync', { data, only: 'sb' });
+      let changed = false; const cur = shelfAll();
+      for (const [k, x] of Object.entries(j.data || {})) {
+        if (!k.startsWith('sb-b-')) continue;
+        const slug = k.slice(5), mine = cur[slug];
+        if (mine && (mine.t || 0) >= x.t) continue;
+        if (x.v) { cur[slug] = { ...x.v, t: x.t }; const key = String(x.v.url || '').replace(/^\/|\/$/g, ''); if (key) ls('sb-pos-' + key, String((x.v.page || 1) - 1)); }
+        else cur[slug] = { del: true, t: x.t };
+        changed = true;
+      }
+      if (changed) { ls('sb-shelf', JSON.stringify(cur)); document.dispatchEvent(new Event('sb-shelf')); }
+      return true;
+    } catch (e) { return false; } finally { syncing = false; }
+  };
+  window.sbSyncSoon = () => { if (!acct.token) return; clearTimeout(syncTimer); syncTimer = setTimeout(window.sbSync, 3000); };
+  document.addEventListener('visibilitychange', () => { if (!acct.token) return; if (document.visibilityState === 'visible') window.sbSync(); else if (syncTimer) { clearTimeout(syncTimer); syncTimer = null; window.sbSync(); } });
+  if (acct.token) window.sbSync();
+
+  // 로그인 화면
+  const lf = document.getElementById('loginForm');
+  if (lf) {
+    const out = document.getElementById('loginOut'), msg = document.getElementById('loginMsg');
+    const view = () => { lf.hidden = !!acct.token; out.hidden = !acct.token; document.getElementById('meId').textContent = acct.id; };
+    view();
+    lf.onsubmit = async e => {
+      e.preventDefault(); msg.hidden = true; const btn = lf.querySelector('button'); btn.disabled = true;
+      try {
+        const j = await api('login', { id: lf.elements.id.value.trim(), pw: lf.elements.pw.value });
+        ls('sb-acct', j.token); ls('sb-acct-id', j.id); acctBtn(); lf.reset();
+        await window.sbSync(); view();
+      } catch (err) { msg.textContent = err.message; msg.hidden = false; }
+      btn.disabled = false;
+    };
+    document.getElementById('logout').onclick = async () => {
+      await window.sbSync(); try { await api('logout'); } catch (e) {}
+      ls('sb-acct', null); ls('sb-acct-id', null); acctBtn(); view();
+    };
+  }
   const h = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const shelfEl = document.getElementById('shelf');
   if (shelfEl) {
     const draw = () => {
-      const all = shelfAll(), list = Object.entries(all).sort((a, b) => b[1].t - a[1].t);
+      const all = shelfAll(), list = Object.entries(all).filter(([, r]) => !r.del).sort((a, b) => b[1].t - a[1].t);
+      const lg = document.getElementById('shelfLogin'); if (lg) lg.hidden = !!acct.token;
       document.getElementById('shelfEmpty').hidden = list.length > 0;
       shelfEl.innerHTML = list.map(([slug, r]) => `<div class="sh-item">
         <a class="sh-cover" href="/${h(slug)}/"><img src="${h(r.cover)}" alt="" loading="lazy" onerror="this.remove()"></a>
@@ -30,17 +88,18 @@
         <p class="muted">${new Date(r.t).toLocaleDateString('ko-KR')}에 읽음</p>
         <p class="sh-act"><a class="btn" href="${h(r.url)}">▶ 이어 읽기</a> <button type="button" data-del="${h(slug)}">목록에서 빼기</button></p></div></div>`).join('');
       shelfEl.querySelectorAll('[data-del]').forEach(b => b.onclick = () => {
-        const a = shelfAll(); delete a[b.dataset.del];
-        try { localStorage.setItem('sb-shelf', JSON.stringify(a)); } catch (e) {}
+        const a = shelfAll(); a[b.dataset.del] = { del: true, t: Date.now() };
+        ls('sb-shelf', JSON.stringify(a)); window.sbSyncSoon();
         draw();
       });
     };
-    draw();
+    draw(); document.addEventListener('sb-shelf', draw);
   }
   const resume = document.getElementById('resume');
   if (resume) {
-    const r = shelfAll()[resume.dataset.slug];
-    if (r) { resume.hidden = false; resume.className = 'resume'; resume.innerHTML = `<span>읽던 곳: <b>${h(r.story)}</b> · ${r.page} / ${r.n}쪽</span><a class="btn" href="${h(r.url)}">▶ 이어 읽기</a>`; }
+    const show = () => { const r = shelfAll()[resume.dataset.slug];
+    if (r && !r.del) { resume.hidden = false; resume.className = 'resume'; resume.innerHTML = `<span>읽던 곳: <b>${h(r.story)}</b> · ${r.page} / ${r.n}쪽</span><a class="btn" href="${h(r.url)}">▶ 이어 읽기</a>`; } };
+    show(); document.addEventListener('sb-shelf', show);
   }
 
   // 그림책 뷰어
@@ -117,6 +176,7 @@
       all[d.book] = { book: d.bookTitle, cover: d.cover, story: d.title, url: '/' + d.key + '/', page: i + 1, n: pages.length, t: Date.now() };
       localStorage.setItem('sb-shelf', JSON.stringify(all));
     } catch (e) {}
+    window.sbSyncSoon && window.sbSyncSoon();
   };
   track.addEventListener('scroll', () => {
     const i = Math.round(track.scrollLeft / track.clientWidth);

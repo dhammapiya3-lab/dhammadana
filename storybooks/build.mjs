@@ -65,7 +65,7 @@ ${image ? `<meta property="og:image" content="${esc(image)}">` : ''}
 <body data-page="${page}">
 <header class="site"><div class="wrap head-row">
   <a class="brand" href="/">${wheel('brand-mark')}<span><span class="brand-name">${esc(S.title)}</span><span class="brand-sub">${esc(S.sub)}</span></span></a>
-  <nav class="head-nav"><a href="/">${U.home}</a><a href="/about/">소개</a><a href="/shelf/">내 서재</a><a class="lib" href="${esc(S.library_url)}">법보시 도서관 ↗</a></nav>
+  <nav class="head-nav"><a href="/">${U.home}</a><a href="/about/">소개</a><a href="/shelf/">내 서재</a><a id="acctBtn" href="/login/">로그인</a><a class="lib" href="${esc(S.library_url)}">법보시 도서관 ↗</a></nav>
 </div></header>
 <main>${body}</main>
 <footer class="site"><div class="wrap">
@@ -150,9 +150,23 @@ put('about/index.html', layout({ title: '소개', page: 'about', body: `<div cla
 
 // 내 서재: 읽던 그림책만 (기기에 저장된 기록으로 sb.js 가 그림)
 put('shelf/index.html', layout({ title: '내 서재', page: 'shelf', noindex: true, body: `<div class="wrap shelf">
-<h1>내 서재</h1><p class="muted">읽던 그림책을 읽던 곳에서 이어 읽을 수 있습니다. 기록은 이 기기의 브라우저에만 저장됩니다.</p>
+<h1>내 서재</h1><p class="muted">읽던 그림책을 읽던 곳에서 이어 읽을 수 있습니다.</p>
+<p id="shelfLogin" class="note" hidden>지금은 기록이 이 기기에만 저장됩니다. <a href="/login/">로그인</a>하면 휴대폰·컴퓨터 어느 기기에서나 읽던 곳을 이어 읽을 수 있습니다.</p>
 <div id="shelf"></div>
 <p id="shelfEmpty" class="muted" hidden>아직 펼쳐 본 그림책이 없습니다. <a href="/">그림책 목록</a>에서 책을 골라 보세요.</p></div>` }));
+
+// 로그인: 법보시 도서관(dhammadana.kr)과 같은 회원 (가입·찾기는 도서관에서)
+put('login/index.html', layout({ title: '로그인', page: 'login', noindex: true, body: `<div class="wrap login">
+<h1>로그인</h1>
+<div id="loginOut" hidden><p><b id="meId"></b> 님, 로그인되어 있습니다.</p><p class="muted">읽던 곳이 이 회원으로 저장되어, 어느 기기에서나 내 서재에서 이어 읽을 수 있습니다.</p>
+<p class="sh-act"><a class="btn" href="/shelf/">내 서재로</a> <button type="button" id="logout">로그아웃</button></p></div>
+<form id="loginForm" hidden><p class="muted">붓다담마 법보시 도서관(dhammadana.kr)의 회원 아이디로 로그인합니다.</p>
+<label>아이디<input name="id" autocomplete="username" required></label>
+<label>비밀번호<input name="pw" type="password" autocomplete="current-password" required></label>
+<p id="loginMsg" class="err" hidden></p>
+<button class="btn" type="submit">로그인</button>
+<p class="muted small">회원이 아니신가요? <a href="https://dhammadana.kr/account/">법보시 도서관에서 회원가입 ↗</a><br>아이디·비밀번호를 잊으셨으면 <a href="https://dhammadana.kr/account/">법보시 도서관에서 찾기 ↗</a></p></form>
+</div>` }));
 
 put('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${S.url}/sitemap.xml\n`);
 const urls = ['/', '/about/', ...[...PUB].flatMap(s => [`/${s}/`, ...Object.values(CAT.books[s].stories).map(x => `/${s}/${sid(x.file)}/`)])];
