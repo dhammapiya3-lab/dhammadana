@@ -386,6 +386,7 @@ button.chip{cursor:pointer;font-family:inherit;font-size:14px}
   .brand-sub{font-size:10.5px}
 }
 .lang-tag{display:inline-block;font-style:normal;font-family:var(--sans);font-size:12px;color:var(--leaf);background:var(--leaf-soft);border-radius:999px;padding:1px 9px;margin-left:8px;vertical-align:2px}
+.lang-tag.solo{margin-left:0}  /* 원서 제목 없이 혼자 있으면 주제어와 같은 줄에 맞춤 (운영자 요청, 2026-11-15) */
 /* ---- 모바일 다듬기 ---- */
 .hero-search .btn{flex:none;white-space:nowrap}
 @media (max-width:600px){
@@ -847,6 +848,7 @@ a.paper-request:hover{filter:brightness(1.08)}
 
 /* 글로 읽기: 색 강조(==글==, 원본의 하늘색), 속표지 큰 제목(^^ 글) */
 .hl{color:#00aeef}
+.faint{color:#9a9a9a}  /* {{…}} 인쇄본의 희미한 글자 */
 :root.mode-mono .hl,:root.mode-contrast .hl{color:inherit;text-decoration:underline}
 .reflow p.r-ctitle{white-space:normal;overflow:visible;word-break:keep-all;font-size:1.7em;font-weight:700;text-align:center;text-indent:0;line-height:1.45;margin:2.2em 0 1.6em}
 /* DL-0010: 연꽃 구분 장식(작게), 사야도 서명(오른쪽) */
