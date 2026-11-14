@@ -1,0 +1,680 @@
+[
+ {
+  "img": "images/16-Sona-Kolivisa-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     266,
+     302,
+     530,
+     380
+    ],
+    "ko": "소나 꼴리위사 존자의 생애\n힘써 정진하는 길",
+    "cover": true,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     40,
+     660,
+     100
+    ],
+    "ko": "빠두뭇따라 부처님 시대",
+    "cover": true,
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     62,
+     346,
+     262,
+     408
+    ],
+    "ko": "젊은 상인 시리왓다가\n부처님의 법문을 듣습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     294,
+     344,
+     510,
+     410
+    ],
+    "ko": "열심히 정진하는 이(āraddha-viriya)\n가운데 으뜸으로 선언되는\n비구를 봅니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     538,
+     346,
+     738,
+     408
+    ],
+    "ko": "씨앗이 심어지다:\n“나도 저 비구처럼\n되리라!”",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     36,
+     420,
+     86
+    ],
+    "ko": "공덕의 바탕",
+    "cover": true,
+    "align": "center",
+    "em": 36,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     62,
+     350,
+     378,
+     404
+    ],
+    "ko": "서원을 굳히려고 시리왓다는\n이레 동안 큰 보시(mahā-dāna)를 올립니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     420,
+     350,
+     738,
+     404
+    ],
+    "ko": "부처님께서 그의 바람이 이루어짐을 내다보시고\n앞날의 성취를 예언하십니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     40,
+     330,
+     88
+    ],
+    "ko": "바라나시에 태어나다",
+    "cover": true,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     56,
+     100,
+     266,
+     204
+    ],
+    "ko": "큰 공덕으로 시리왓다는\n10만 겁 동안 천상과\n인간 세상에만\n태어났습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     560,
+     276,
+     748,
+     384
+    ],
+    "ko": "이 현겁(Bhadda-kappa)에\n깟사빠 부처님께서\n반열반하신 뒤,\n그는 바라나시의\n덕 있는 집안에 태어났습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     418,
+     62,
+     740,
+     106
+    ],
+    "ko": "안거 준비",
+    "cover": true,
+    "align": "center",
+    "em": 36,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     476,
+     116,
+     740,
+     180
+    ],
+    "ko": "강가 강 가에서 시리왓다는\n안거(vassa) 처소를 지으려고\n나뭇가지를 모으시는 벽지불을 만납니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     590,
+     252,
+     728,
+     366
+    ],
+    "ko": "그는 기다려 주시라고\n청합니다. “내일 저희가\n처소를 지어\n올리겠습니다.”",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     46,
+     382,
+     90
+    ],
+    "ko": "의지처를 짓다",
+    "cover": true,
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     466,
+     64,
+     560,
+     98
+    ],
+    "ko": "낮 머무는 곳",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     96,
+     136,
+     182,
+     160
+    ],
+    "ko": "경행대",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     612,
+     126,
+     716,
+     150
+    ],
+    "ko": "밤 머무는 곳",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     56,
+     376,
+     744,
+     420
+    ],
+    "ko": "벽지불께서 받아들이시고 다음 날 탁발하러 오셨습니다. 시리왓다와 친구들은 쉬지 않고 일하여\n석 달 안거를 위한 아름다운 처소를 지었습니다. 경행대와 낮·밤에 머무는 곳을 갖추었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     44,
+     600,
+     88
+    ],
+    "ko": "남다른 공경의 행위",
+    "cover": true,
+    "align": "center",
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     170,
+     100,
+     628,
+     162
+    ],
+    "ko": "벽지불의 발이 진흙에 닿지 않도록 시리왓다는 땅에 젖은 쇠똥을\n발랐습니다. 그리고 공손히 10만 냥 값의 빛나는 붉은 외투를\n벗어 그 위에 깔아 드렸습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     246,
+     44,
+     554,
+     82
+    ],
+    "ko": "모습에 대한 서원",
+    "cover": true,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     84,
+     92,
+     262,
+     152
+    ],
+    "ko": "외투가 벽지불의 몸빛과\n어울리는 것을 보고\n그는 서원합니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     556,
+     104,
+     716,
+     308
+    ],
+    "ko": "“내 손과 발이\n히비스커스 꽃처럼\n곱게 붉기를!\n\n내 몸의 감촉이\n백 번 손질한\n솜처럼\n부드럽기를!”",
+    "cover": true,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     40,
+     604,
+     80
+    ],
+    "ko": "간다마다나로 떠나시다",
+    "cover": true,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     128,
+     326,
+     294,
+     398
+    ],
+    "ko": "석 달 동안 정성껏\n모신 시리왓다는\n자자(Pavāraṇā) 때\n세 벌 가사를 올립니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     504,
+     326,
+     670,
+     398
+    ],
+    "ko": "모든 것을 갖추신\n벽지불께서\n간다마다나 산\n봉우리로 떠나십니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     82,
+     316,
+     370
+    ],
+    "ko": "최고의 고행을 찾아서\n\n칭송하는 무리를 피해\n소나 존자는 외딴\n시따와나 묘지로 갔습니다.\n지극히 여린 몸이 수행에\n걸림이 된다고 여겨\n앉거나 눕지 않고\n쉼 없이 걷는 고된\n수행을 택했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     58,
+     700,
+     190
+    ],
+    "ko": "고된 정진\n여린 발바닥의 굳은살이 터졌습니다. 걸을 수 없게 되자\n팔꿈치와 무릎에서 피가 나도록 기어 다녔습니다.\n계단식 경행대는 도살장처럼 시뻘겋게 물들었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     324,
+     728,
+     408
+    ],
+    "ko": "빠다빠라마라는 의심\n“나는 아무리 애써도 나아가지 못하는 이(pada-parama)인가 보다.\n비구로 살아 무엇 하겠는가? 재가로 돌아가 재산으로 좋은 일을 하리라.”",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     82,
+     368,
+     258
+    ],
+    "ko": "피로 물든 경행대\n소나의 마음을 아신 부처님께서\n그의 처소에 오셨습니다.\n“비구들이여, 도살장처럼 붉은\n이 경행대는 누구의 것인가?”\n아시면서도 가르침을 열려고\n물으신 것입니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     326,
+     594,
+     412
+    ],
+    "ko": "위나의 비유(vīṇopama)\n보통의 수행 지도로는 안 될 것을 아신 부처님께서\n소나가 재가 시절 위나(비파)를 잘 타던 것을\n떠올리시고, 그것으로 깊은 법을 일러 주셨습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     486,
+     64,
+     764,
+     186
+    ],
+    "ko": "줄이 너무 팽팽하면 끊어집니다.\n지나친 정진(viriya)은\n들뜸(uddhacca)을 낳습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     476,
+     262,
+     764,
+     394
+    ],
+    "ko": "줄이 너무 느슨하면 소리가 나지 않습니다.\n모자란 정진은\n게으름(kosajja)을 낳습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     216,
+     326,
+     584,
+     412
+    ],
+    "ko": "알맞은 소리\n줄을 알맞게 고르면\n위나가 고운 소리를 내겠는가?\n고른 정진이 오래가는 울림을 냅니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     254,
+     48,
+     546,
+     134
+    ],
+    "ko": "고르게 닦기\n부처님께서는 소나에게 정진과 삼매를\n고르게 맞추라고 이르셨습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     68,
+     320,
+     186,
+     382
+    ],
+    "ko": "믿음\n(saddhā)",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     204,
+     320,
+     320,
+     382
+    ],
+    "ko": "정진\n(viriya)",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     340,
+     320,
+     458,
+     382
+    ],
+    "ko": "마음챙김\n(sati)",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     476,
+     320,
+     594,
+     382
+    ],
+    "ko": "삼매\n(samādhi)",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     612,
+     320,
+     732,
+     382
+    ],
+    "ko": "지혜\n(paññā)",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Sona-Kolivisa-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     322,
+     630,
+     414
+    ],
+    "ko": "정점에 이르다\n균형을 이룬 소나는 지나친 애씀으로 이루지 못한 것을 이루었습니다.\n“열심히 정진하는(āraddha-viriya) 나의 제자 가운데\n소나 꼴리위사가 으뜸이다(etad-agga).”",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
