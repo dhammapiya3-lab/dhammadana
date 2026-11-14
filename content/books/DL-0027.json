@@ -15,7 +15,7 @@
   "stores": [],
   "book_type": "예불집",
   "original_title": "",
-  "original_language": "영어",
+  "original_language": "빠알리어",
   "original_source": "",
   "series": "",
   "main": [
@@ -117,10 +117,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "pdf/DL-0027/DL-0027_2판.pdf"
+        "url": "pdf/DL-0027/DL-0027_2판.pdf",
+        "site": "",
+        "created": ""
       },
       "pdf_print": {
         "mode": "none",
@@ -141,10 +141,10 @@
         "created": ""
       },
       "hwp": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "hwp/DL-0027/DL-0027_2판.hwp"
+        "url": "hwp/DL-0027/DL-0027_2판.hwp",
+        "site": "",
+        "created": ""
       },
       "reader": true,
       "sources": [
