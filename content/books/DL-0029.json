@@ -1,0 +1,167 @@
+{
+  "id": "DL-0029",
+  "title": "부처님, 그분",
+  "subtitle": "생애와 가르침",
+  "cover": "/uploads/20261115_043713.png",
+  "byline": "삐야닷시 스님",
+  "translator": "",
+  "teacher": "",
+  "co_teachers": [],
+  "provider": "calmvoice",
+  "press": false,
+  "provider_chip": false,
+  "paper": "",
+  "paper_url": "",
+  "stores": [
+    {
+      "name": "",
+      "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=63203"
+    }
+  ],
+  "book_type": "해설서",
+  "original_title": "THE BUDDHA - HIS LIFE AND TEACHING",
+  "original_language": [
+    "영어"
+  ],
+  "original_source": "(The Wheel Publication No. 5 A/B) Buddhist Publication Society, Kandy, Sri Lanka, 1958, 1990, 2008",
+  "series": "",
+  "main": [
+    "부처님의 생애"
+  ],
+  "topics": [
+    "삼보 공덕"
+  ],
+  "description": "빠알리 원전에 바탕을 두고 부처님 그분의 생애를 사실적으로 그려내고 그 근본 가르침을 요약하였다.",
+  "author_intro": "삐야닷시 스님 Piyadassi Thera(1914\\~1998) \n\n스리랑카 태생으로 출가 전에 날란다 대학과 스리랑카 대학에서 수학했다. 20세에 득도, 스리랑카의 저명한 고승인 와지라냐나 나야까Vajiranyana Nayaka 스님 밑에서 불법을 닦았다. 스리랑카 지도급 스님으로서 힘 있는 설법과 라디오 전파를 통한 포교사로 널리 알려져 있다. 동서양을 두루 여행하면서 불법의 메시지를 전하는 한편, 여러 국제 종교회의와 문화적인 모임에 남방불교 대표자로 참여하였다. 또한 스리랑카 불자출판협회BPS 간행 시리즈의 싱할리어 본本 출판물의 편집자를 역임하였다. \n\n저작 중에서 〈고요한소리〉에서 출간된 책으로는 법륜·일곱 《마음, 과연 무엇인가 The Psychological Aspect of Buddhism》 ; 법륜·열여섯 《칠각지 The Seven Factors of Enlightenment》 ; 법륜·스물둘 《연기 Dependent Origintion》가 있다.",
+  "translator_intro": "",
+  "translator_intro_title": "",
+  "contents": "서론 07\n\nⅠ 위대한 출가 11\n\n탄생 11\n네 가지 충격적인 체험 15\n위대한 출가 19\n고행 23\n마침내 깨치시다 26\n오해 35\n\nⅡ 법의 바퀴를 굴리시다 43\n\n연기緣起 43\n처음으로 법의 바퀴를 굴리시다[初轉法輪] 47\n중도中道 55\n싱사빠 숲에서 59\n명의 중의 명의 62\n법의 전파 64\n\nⅢ 부처님의 교화사업 68\n\n부처님의 교화사업 68\n부처님의 깨달음과 아라한의 깨달음 82\n정법의 특징 84\n참된 청정 95\n카스트 문제 98\n\nⅣ 제자들 104\n\n수제자들 104\n비구니 승단 109\n까삘라왓투에서 111\n불전에 나오는 여인들 116\n환자를 보살피시다 121\n평온과 침착 125\n데와닷따 127\n\nⅤ 마지막 나날들 131\n\n마지막 나날들 131\n마지막 귀의자 136\n마지막 정경 139\n저자 소개 145\n\n부록 부처님 당시 지도·부처님 가계도",
+  "editions": [
+    {
+      "label": "초판",
+      "label_display": "",
+      "current": false,
+      "public": false,
+      "page_count": null,
+      "published": "1988년 4월 10일",
+      "publisher_print": "고요한소리",
+      "isbn": "978-8985186-08-7",
+      "published_ebook": "",
+      "publisher_ebook": "",
+      "ebook_note": "",
+      "isbn_ebook": "",
+      "changes": "",
+      "hide_update": false,
+      "pdf": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_print": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_cover": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "epub": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "hwp": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "reader": false,
+      "sources": [],
+      "collection": "",
+      "collected": "",
+      "permission_status": "",
+      "notice": "",
+      "permission_note": "",
+      "permission_image": "",
+      "permissions": [],
+      "note": ""
+    },
+    {
+      "label": "개정판 12쇄",
+      "label_display": "",
+      "current": true,
+      "public": true,
+      "page_count": 160,
+      "published": "2026년 6월 10일",
+      "publisher_print": "고요한소리",
+      "isbn": "978-89-85186-08-7",
+      "published_ebook": "2022년 4월 21일",
+      "publisher_ebook": "고요한소리",
+      "ebook_note": "",
+      "isbn_ebook": "979-1191224-06-1",
+      "changes": "",
+      "hide_update": false,
+      "pdf": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_print": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_cover": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "epub": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "hwp": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "reader": true,
+      "sources": [
+        {
+          "file": "pdf",
+          "url": "http://www.calmvoice.org/book/view.asp?idx=1&cate=1",
+          "checked": "2026년 11월 15일",
+          "archive": ""
+        }
+      ],
+      "collection": "고요한소리 홈페이지",
+      "collected": "",
+      "permission_status": "confirmed",
+      "notice": "법보시 게시를 허락해주신 고요한소리에 감사드립니다.",
+      "permission_note": "",
+      "permission_image": "",
+      "permissions": [],
+      "note": ""
+    }
+  ],
+  "audiobook": null,
+  "license": "CC BY-NC-ND",
+  "added": "2026-11-15",
+  "order": null,
+  "hidden": false,
+  "no_copy": false,
+  "hide_update": false
+}
