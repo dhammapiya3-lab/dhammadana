@@ -1065,3 +1065,5 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .spr-btns{display:flex;gap:8px}
 .spr-btns button{border:1px solid var(--line);border-radius:10px;padding:9px 12px;background:var(--bg);color:inherit;font:inherit;cursor:pointer}
 .spr-btns .spr-go{flex:1;background:var(--accent,#8a5a2b);color:#fff;border-color:transparent;font-weight:600}
+/* 휴대폰·태블릿 가로 화면: 글이 화면 끝에 붙어 둥근 모서리·카메라 구멍에 가리지 않게 양옆 여백을 넉넉히 (운영자 요청, 2026-11-14) */
+@media (pointer:coarse) and (orientation:landscape){.reader .r-body{padding-left:max(40px,calc(env(safe-area-inset-left) + 24px));padding-right:max(40px,calc(env(safe-area-inset-right) + 24px))}}
