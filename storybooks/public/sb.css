@@ -32,7 +32,7 @@ header.site{border-bottom:1px solid var(--line)}
 .hero p{max-width:720px;color:var(--ink-soft);margin:0 0 18px}
 .filter{display:flex;gap:8px;max-width:520px}
 .filter input{flex:1;height:42px;border:1px solid var(--line);border-radius:999px;padding:0 18px;background:var(--card);color:var(--ink);font:inherit}
-.filter button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:0 16px;cursor:pointer;font:inherit}
+.filter button{white-space:nowrap;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:0 16px;cursor:pointer;font:inherit}
 
 .cat h2{font-size:21px;margin:34px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:22px}
@@ -144,3 +144,9 @@ html.sv-lock,html.sv-lock body{overflow:hidden}
 .login .err{color:#a33}.login .small{font-size:13.5px;line-height:1.8;margin-top:18px}
 .login button.btn{background:none;cursor:pointer;font:inherit;color:inherit}
 .note{background:var(--paper-2);border-radius:8px;padding:10px 14px;font-size:14.5px}
+/* 찾기: 이야기 결과 */
+#sres{margin:22px 0 8px}
+.sres{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-direction:column;gap:2px}
+.sres li{padding:9px 12px;border-radius:8px}.sres li:hover{background:var(--paper-2)}
+.sres li a{color:var(--ink)}.sres li p{margin:3px 0 0;font-size:14px;color:var(--ink-soft)}
+.sres mark{background:#f3d9a4;color:inherit;padding:0 1px;border-radius:2px}

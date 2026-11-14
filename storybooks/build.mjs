@@ -78,7 +78,7 @@ ${image ? `<meta property="og:image" content="${esc(image)}">` : ''}
 </html>`;
 }
 
-const card = b => `<a class="bcard" href="/${b.slug}/" data-q="${esc([b.title, b.sub, b.en, b.style, ...b.tags].join(' ').toLowerCase())}">
+const card = b => `<a class="bcard" href="/${b.slug}/" data-q="${esc([b.title, b.sub, b.en, b.style, ...b.tags, KO.search_alias?.[b.slug] || '', KO.book_detail[b.slug]?.sections ? Object.values(KO.book_detail[b.slug].sections).join(' ') : ''].join(' '))}">
   <div class="bcover"><img src="${esc(b.cover)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('nocover')"><span class="ph">${esc(b.title)}</span></div>
   <div class="bmeta"><h3>${esc(b.title)}</h3>${b.sub ? `<p class="sub">${esc(b.sub)}</p>` : ''}
   <p class="cnt">${esc(b.style)} · ${b.unit} ${b.nStory}편 · ${U.posters} ${b.nImg.toLocaleString()}장</p>
@@ -89,6 +89,7 @@ put('index.html', layout({ page: 'home', body: `<section class="hero"><div class
   <h1>법을 담은 그림책</h1><p>${esc(S.intro)}</p>
   <div class="filter"><input id="q" type="search" placeholder="${U.filter}" aria-label="${U.filter}"><button id="qReset" type="button">${U.reset}</button></div>
 </div></section>
+<div class="wrap"><section id="sres" hidden><h2 class="tier-h">이야기 <span id="sresN"></span></h2><ol class="sres"></ol></section></div>
 <div class="wrap">${(() => { const listed = new Set(KO.tiers.flatMap(t => t.sections.flatMap(x => x[1]))); const fresh = Object.keys(CAT.books).filter(b => !listed.has(b) && PUB.has(b));
   return fresh.length ? `<div class="tier"><h2 class="tier-h">새로 들어온 그림책</h2><p class="muted tier-note">원 사이트에 새로 올라온 책입니다. 곧 알맞은 자리로 옮깁니다.</p><section class="cat"><div class="grid">${fresh.map(b => card(bookInfo(b))).join('')}</div></section></div>` : ''; })()}
 ${KO.tiers.map(t => ({ ...t, sections: t.sections.map(([n, bs]) => [n, bs.filter(b => CAT.books[b] && PUB.has(b))]).filter(x => x[1].length) })).filter(t => t.sections.length).map((t, ti) => `<div class="tier t${ti}"><h2 class="tier-h">${esc(t.name)}</h2><p class="muted tier-note">${esc(t.note)}</p>
@@ -96,6 +97,10 @@ ${t.sections.map(([name, books]) => `<section class="cat">${name ? `<h3>${esc(na
   <div class="grid">${books.map(b => card(bookInfo(b))).join('')}</div></section>`).join('')}</div>`).join('')}
 ${ONLY ? `<p class="muted soon">다른 그림책들도 우리말로 옮기는 대로 하나씩 더합니다.</p>` : ''}
 <p id="noRes" class="muted" hidden>${U.no_result}</p></div>` }));
+
+// 찾기용 이야기 목록 (공개한 책의 이야기: 제목·줄거리) — 첫 화면 찾기 칸이 받아 씀
+put('search.json', JSON.stringify([...PUB].flatMap(slug => { const B = CAT.books[slug], d = KO.book_detail[slug] || {}, bt = KO.books[slug]?.title || B.title;
+  return Object.values(B.stories).map(s => { const k = d.stories?.[s.file] || {}; return { b: bt + ' ' + (KO.search_alias?.[slug] || ''), bt, t: storyTitle(slug, s), u: `/${slug}/${sid(s.file)}/`, x: k.intro || '', e: s.title, r: READY[`${slug}/${sid(s.file)}`] ? 1 : 0 }; }); })));
 
 // 책 화면 · 이야기 화면
 for (const slug of Object.keys(CAT.books).filter(b => PUB.has(b))) {

@@ -1,17 +1,42 @@
 // 붓다담마 그림책 — 목록 찾기 · 그림책 뷰어
 (() => {
-  // 첫 화면: 제목·주제로 찾기
+  // 첫 화면: 책·이야기 제목, 인물, 주제로 찾기 (운영자 요청, 2026-11-14)
+  // 띄어쓰기·빠알리 발음 기호(ā=a)·대소문자는 무시, 낱말 여럿이면 모두 들어간 것만. 책 카드와 함께 이야기도 찾아 보여 줌
   const q = document.getElementById('q');
   if (q) {
-    const cards = [...document.querySelectorAll('.bcard')];
-    const run = () => {
-      const v = q.value.trim().toLowerCase();
-      let any = false;
-      cards.forEach(c => { const on = !v || c.dataset.q.includes(v); c.hidden = !on; any ||= on; });
-      document.querySelectorAll('.cat, .tier').forEach(s => { s.hidden = ![...s.querySelectorAll('.bcard')].some(c => !c.hidden); });
-      document.getElementById('noRes').hidden = any;
+    const norm = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[\s·.,:;!?'"“”‘’()\[\]『』「」<>~—–-]+/g, '');
+    const words = v => String(v).trim().split(/\s+/).map(norm).filter(Boolean);
+    const cards = [...document.querySelectorAll('.bcard')].map(c => ({ c, n: norm(c.dataset.q) }));
+    const sres = document.getElementById('sres'), sol = sres.querySelector('ol');
+    const h = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    let IDX = null;
+    const load = () => IDX || (IDX = fetch('/search.json').then(r => r.json()).then(a => a.map(o => ({ ...o, nt: norm(o.t + ' ' + o.e), nb: norm(o.b), nx: norm(o.x) }))).catch(() => []));
+    const snip = (x, ws) => { // 줄거리에서 찾은 낱말 둘레
+      const raw = String(x || ''); if (!raw) return '';
+      const lw = String(q.value).trim().split(/\s+/).filter(Boolean);
+      let i = -1; for (const w of lw) { i = raw.toLowerCase().indexOf(w.toLowerCase()); if (i >= 0) break; }
+      if (i < 0) return h(raw.slice(0, 70)) + (raw.length > 70 ? '…' : '');
+      const a = Math.max(0, i - 30), part = raw.slice(a, i + 60);
+      return (a ? '…' : '') + h(part).replace(new RegExp(lw.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'gi'), m => `<mark>${m}</mark>`) + (i + 60 < raw.length ? '…' : '');
     };
-    q.addEventListener('input', run);
+    let seq = 0;
+    const run = async () => {
+      const ws = words(q.value), my = ++seq;
+      const hit = n => ws.every(w => n.includes(w));
+      let any = false;
+      cards.forEach(({ c, n }) => { const on = !ws.length || hit(n); c.hidden = !on; any ||= on; });
+      document.querySelectorAll('.cat, .tier').forEach(s => { s.hidden = ![...s.querySelectorAll('.bcard')].some(c => !c.hidden); });
+      if (!ws.length) { sres.hidden = true; document.getElementById('noRes').hidden = true; return; }
+      const idx = await load(); if (my !== seq) return;
+      // 제목에서 찾은 것 먼저, 그다음 줄거리·책 이름
+      const scored = idx.map(o => { const all = o.nt + o.nb + o.nx; if (!hit(all)) return null; return { o, s: (hit(o.nt) ? 0 : hit(o.nt + o.nb) ? 1 : 2) + (o.r ? 0 : 0.5) }; }).filter(Boolean).sort((a, b) => a.s - b.s);
+      sres.hidden = !scored.length;
+      document.getElementById('sresN').textContent = scored.length + '편';
+      sol.innerHTML = scored.slice(0, 60).map(({ o }) => `<li><a href="${h(o.u)}"><b>${h(o.t)}</b> <span class="muted">— ${h(o.bt || o.b)}</span></a>${o.x ? `<p>${snip(o.x)}</p>` : ''}</li>`).join('') + (scored.length > 60 ? `<li class="muted">… 그 밖에 ${scored.length - 60}편. 낱말을 더 넣어 좁혀 보세요.</li>` : '');
+      document.getElementById('noRes').hidden = any || scored.length > 0;
+    };
+    let tm; q.addEventListener('input', () => { clearTimeout(tm); tm = setTimeout(run, 150); });
+    q.addEventListener('focus', load, { once: true });
     document.getElementById('qReset').onclick = () => { q.value = ''; run(); q.focus(); };
   }
 
