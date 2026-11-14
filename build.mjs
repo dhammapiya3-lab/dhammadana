@@ -578,7 +578,7 @@ for (const b of BOOKS) {
   put(`book/${b.id}/index.html`, layout({
     title: b.title, nav: 'library', page: 'book', image: b.cover || '', ld: bookLd(b, e, t), desc: `${b.title} — ${b.byline}${b.translator ? ', ' + b.translator : ''}`, body: `<div class="wrap detail">
   <div><div class="cover-box">${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지">` : `<div class="cover-ph big">${esc(b.title)}</div>`}</div></div>
-  <div class="d-body"><div class="d-head"><div class="crumb"><a href="/library/">법보시 도서관</a>${tr ? ` › <a href="/library/?trad=${tr.id}">${esc(tr.name)}</a> › <a href="/teacher/${t.id}/">${esc(t.name)}</a>` : ''}</div>
+  <div class="d-body"><div class="d-head"><div class="crumb"><a href="/library/">법보시 도서관</a>${b.book_type === '예불집' ? ` › <a href="/library/?btype=${encodeURIComponent('예불집')}">예불집</a>` : b.book_type === '경전' && (b.main || [])[0] ? ` › <a href="/library/?main=${encodeURIComponent(b.main[0])}">${esc(b.main[0])}</a>` : tr ? ` › <a href="/library/?trad=${tr.id}">${esc(tr.name)}</a> › <a href="/teacher/${t.id}/">${esc(t.name)}</a>` : ''}</div>
     ${b.series ? `<div class="small muted">${esc(b.series)}</div>` : ''}
     <h1>${esc(b.title)}</h1>${b.subtitle ? `<div class="orig" style="font-style:normal">${esc(b.subtitle)}</div>` : ''}${b.original_title || b.original_language ? `<div class="orig">${esc(b.original_title || '')}${b.original_language ? `<span class="lang-tag">${esc(b.original_language)} 원서</span>` : ''}</div>` : ''}
     <div class="people">${peopleLinks(b, b.byline, 'by')}${b.translator ? ' | ' + peopleLinks(b, b.translator, 'tr') : ''}</div>
