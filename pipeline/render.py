@@ -54,27 +54,27 @@ INK = (40, 30, 25)
 
 
 def inscribed(mask, aspect, W):
-    """말풍선 모양(mask) 안에 들어가는 가장 큰 네모 (가로:세로 = aspect, 가운데는 말풍선의 가장 안쪽). 글이 한쪽으로 치우치거나 가장자리에 닿지 않게."""
-    m = max(3, W // 220)
+    """말풍선 모양(mask) 안에 들어가는 가장 큰 네모 (가로:세로 = aspect). 들어갈 수 있는 자리 가운데 말풍선 한가운데에 가장 가까운 곳."""
+    m = max(2, W // 300)
     E = cv2.erode(mask.astype(np.uint8), np.ones((m, m), np.uint8))
     if not E.any():
         return None
-    dt = cv2.distanceTransform(E, cv2.DIST_L2, 5)
-    cy, cx = np.unravel_index(np.argmax(dt), dt.shape)
-    ii = cv2.integral(E)
-    def ok(hw, hh):
-        x0, y0, x1, y1 = int(cx - hw), int(cy - hh), int(cx + hw), int(cy + hh)
-        if x0 < 0 or y0 < 0 or x1 >= E.shape[1] or y1 >= E.shape[0]:
-            return False
-        tot = ii[y1 + 1, x1 + 1] - ii[y0, x1 + 1] - ii[y1 + 1, x0] + ii[y0, x0]
-        return tot >= (x1 - x0 + 1) * (y1 - y0 + 1)
-    lo, hi = 1.0, float(max(E.shape))
-    for _ in range(30):
+    ys, xs = np.where(E > 0); gx, gy = (xs.min() + xs.max()) / 2, (ys.min() + ys.max()) / 2
+    def fit_at(hh):
+        hw = hh * aspect
+        k = cv2.getStructuringElement(cv2.MORPH_RECT, (max(1, int(2 * hw) + 1), max(1, int(2 * hh) + 1)))
+        R = cv2.erode(E, k, borderValue=0)
+        return R if R.any() else None
+    lo, hi = 1.0, float(max(E.shape)) / 2
+    for _ in range(18):
         mid = (lo + hi) / 2
-        if ok(mid * aspect, mid): lo = mid
+        if fit_at(mid) is not None: lo = mid
         else: hi = mid
+    R = fit_at(lo)
+    if R is None:
+        return None
+    ry, rx = np.where(R > 0); n = np.argmin((rx - gx) ** 2 + (ry - gy) ** 2); cx, cy = rx[n], ry[n]
     hw = lo * aspect
-    while ok(hw + 2, lo): hw += 2
     return (int(cx - hw), int(cy - lo), int(cx + hw), int(cy + lo))
 
 
@@ -186,6 +186,24 @@ def render(src_path, boxes):
                 out[(cv2.dilate(mk, np.ones((3, 3), np.uint8)) > 0) & (inner > 0)] = col
             else:
                 out[b0:b1, a0:a1] = cv2.inpaint(out[b0:b1, a0:a1], mk[b0:b1, a0:a1], max(3, W // 300), cv2.INPAINT_TELEA)
+                # 말풍선·상자 테두리 지키기 (2026-11-15): 테두리 선과 바깥은 원래 그림 그대로 되돌림
+                sd_ = b.get("seed")
+                if sd_ and not isinstance(sd_[0], (list, tuple)):
+                    try:
+                        fs_, _ = region_masks(img, sd_)
+                        if 0 < (fs_ > 0).sum() < 0.25 * H * W:
+                            keep = cv2.erode(fs_, np.ones((max(3, W // 400),) * 2, np.uint8)) == 0
+                            kb = np.zeros((H, W), bool); kb[b0:b1, a0:a1] = True
+                            # 바깥의 작은 어두운 조각(영어 글자)은 되살리지 않음 — 길게 이어진 테두리 선만
+                            gg = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+                            dk = ((gg < np.median(gg[fs_ > 0]) - 60) & keep & kb).astype(np.uint8)
+                            n_, lb_, st_, _ = cv2.connectedComponentsWithStats(dk, 8)
+                            ys_, xs_ = np.where(fs_ > 0); rs_ = max(xs_.max() - xs_.min(), ys_.max() - ys_.min())
+                            small = np.isin(lb_, [q for q in range(1, n_) if max(st_[q, 2], st_[q, 3]) < 0.25 * rs_])
+                            m_ok = keep & kb & ~small
+                            out[m_ok] = img[m_ok]
+                    except Exception:
+                        pass
         full = inner
         # 원래 글자 크기 재기: 글자 조각들의 높이 중앙값 (대문자 높이 ≈ 글자 크기의 0.7)
         n_, lab, st, _ = cv2.connectedComponentsWithStats(text_px)
@@ -211,14 +229,25 @@ def render(src_path, boxes):
                 tb = (int(cx_ - hw_), int(cy_ - hh_), int(cx_ + hw_), int(cy_ + hh_))
         if b.get("rect") and b.get("whole"):  # 글을 정한 네모 전체에 (글자를 키우려고 넓힌 자리, 2026-11-15)
             kk = W / 800; tb = tuple(round(v * kk) for v in b["rect"])
-            um = b.pop("_umask", None)
-            if b.get("ellipse"):  # 말풍선 모양 안의 가장 큰 네모에 (가운데 맞춤)
+            um = b.pop("_umask", None); seedin = False
+            sd_ = b.get("seed")
+            if um is None and not b.get("cover") and sd_ and not isinstance(sd_[0], (list, tuple)):
+                try:  # 덮지 않은 말풍선·상자: 글은 원래 말풍선 안쪽에만 (테두리·바깥으로 나가지 않게)
+                    fs_, in_ = region_masks(img, sd_)
+                    if 0 < (fs_ > 0).sum() < 0.25 * H * W:
+                        um = np.zeros((H, W), np.uint8)  # 구멍(지운 글자 자리·무늬)은 메운 바깥 모양
+                        cs_, _ = cv2.findContours((fs_ > 0).astype(np.uint8), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+                        if cs_: cv2.drawContours(um, [cv2.convexHull(np.vstack(cs_))], -1, 1, -1)  # 말풍선은 대개 볼록: 무늬로 갈린 곳도 메움
+                        seedin = True
+                except Exception:
+                    pass
+            if b.get("ellipse") or seedin:  # 말풍선 모양 안의 가장 큰 네모에 (가운데 맞춤)
                 if um is None:
                     um = np.zeros((H, W), np.uint8); cv2.ellipse(um, ((tb[0] + tb[2]) // 2, (tb[1] + tb[3]) // 2), ((tb[2] - tb[0]) // 2, (tb[3] - tb[1]) // 2), 0, 0, 360, 1, -1)
                 sc_ = 2 if W < 1600 else 1; d_ = ImageDraw.Draw(Image.new("RGB", (8, 8)))
                 cap_ = int(W * sc_ / 24); cap_ = min(cap_, max(10, int((b.get("em") or 14) * W / 800 * sc_ * 1.05)))
                 best = None
-                for asp in (0.9, 1.2, 1.5, 1.9, 2.4, 3.0):  # 여러 모양 중 글자가 가장 크게 들어가는 네모
+                for asp in (0.9, 1.2, 1.5, 1.9, 2.4, 3.0, 4.0):  # 여러 모양 중 글자가 가장 크게 들어가는 네모
                     r_ = inscribed(um > 0, asp, W)
                     if not r_: continue
                     f_, l_, h_ = fit(d_, b["ko"], (r_[2] - r_[0]) * sc_, (r_[3] - r_[1]) * sc_, cap_)
@@ -229,7 +258,8 @@ def render(src_path, boxes):
                 cx_, cy_, hw_, hh_ = (tb[0] + tb[2]) / 2, (tb[1] + tb[3]) / 2, (tb[2] - tb[0]) / 2 * 0.80, (tb[3] - tb[1]) / 2 * 0.74
                 r0 = (int(cx_ - hw_), int(cy_ - hh_), int(cx_ + hw_), int(cy_ + hh_))
                 f0, l0, _ = fit(d_, b["ko"], (r0[2] - r0[0]) * sc_, (r0[3] - r0[1]) * sc_, cap_)
-                if best and best[0][0] >= f0.size - 1.5 * sc_: tb = best[1]
+                if seedin: tb = best[1] if best else tb
+                elif best and best[0][0] >= f0.size - 1.5 * sc_: tb = best[1]
                 else: tb = r0
             layout.append((tb, b["ko"], b.get("align", "center"), em, dark)); continue
         layout.append((inner_rect(full, tb), b["ko"], b.get("align", "left" if b.get("shape") == "box" else "center"), em, dark))

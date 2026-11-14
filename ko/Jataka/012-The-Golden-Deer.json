@@ -134,14 +134,21 @@
     "en": "Shut the my Henceforth, the King feeds on them bei",
     "ko": "문을 닫아라! 이제부터 왕께서는 여기서 사냥하시리라.",
     "rect": [
-     387,
-     139,
-     501,
-     192
+     363,
+     121,
+     525,
+     217
     ],
     "em": 14,
     "align": "center",
-    "whole": true
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ]
    }
   ]
  },
@@ -166,14 +173,21 @@
     "en": "Let the deer go to the block by turns. One day from my herd, the next from yours.",
     "ko": "사슴을 차례로 도마에 보내자. 하루는 내 무리에서, 다음 날은 네 무리에서.",
     "rect": [
-     374,
-     130,
-     496,
-     201
+     360,
+     118,
+     498,
+     222
     ],
     "em": 14,
     "align": "center",
-    "whole": true
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ]
    }
   ]
  },
@@ -232,14 +246,21 @@
     "en": "Lord, pass over turn until my little one is born.",
     "ko": "왕이시여, 새끼를 낳을 때까지만 제 차례를 미뤄 주십시오.",
     "rect": [
-     333,
-     223,
-     469,
-     272
+     302,
+     207,
+     499,
+     288
     ],
     "em": 14,
     "align": "center",
-    "whole": true
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ]
    }
   ]
  },
@@ -377,14 +398,21 @@
     "en": "Walk in righteousness, great king. Act with justice towards parents, children townsmen, and countryfolk.",
     "ko": "대왕이여, 법답게 사십시오. 부모와 자식, 성 안 사람과 시골 사람을 공정하게 대하십시오.",
     "rect": [
-     404,
-     56,
-     540,
-     131
+     377,
+     35,
+     567,
+     152
     ],
     "em": 14,
     "align": "center",
-    "whole": true
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ]
    },
    {
     "seed": [

@@ -192,14 +192,21 @@
     "en": "Kings in trying cases should be as unbiased as the beam of balance. You are following the four Evil Courses: partiality, dislike, ignorance, and fear.",
     "ko": "어려운 일을 판결하는 왕은 저울대처럼 치우침이 없어야 합니다. 지금 왕께서는 네 가지 그릇된 길, 곧 편애·미움·어리석음·두려움을 따르고 계십니다.",
     "rect": [
-     146,
-     287,
-     332,
-     375
+     110,
+     262,
+     378,
+     400
     ],
     "em": 14,
     "align": "center",
-    "whole": true
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ]
    },
    {
     "rect": [
