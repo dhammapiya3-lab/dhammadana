@@ -1078,4 +1078,4 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 /* 빠알리어 한글 소리 줄 @@…@@ — 원본(엠디솔체)처럼 굵고 둥근 '주아' 글꼴, 쓰인 글자만 담은 작은 파일. 주아에 없는 17글자는 고딕 A1 굵게로 (운영자 요청, 2026-11-15, DL-0027) */
 @font-face{font-family:'JuaPron';src:url(/fonts/Jua-pron.woff2) format('woff2');font-display:swap}
 @font-face{font-family:'JuaPronFb';src:url(/fonts/Jua-pron-fb.woff2) format('woff2');font-display:swap}
-.pron{font-family:'JuaPron','JuaPronFb',var(--sans);font-size:1.06em;letter-spacing:.01em}
+.pron{font-family:'JuaPron','JuaPronFb',var(--sans);font-size:1.18em;letter-spacing:.01em}
