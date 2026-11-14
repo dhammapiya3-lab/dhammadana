@@ -71,6 +71,12 @@
         "site": "",
         "created": ""
       },
+      "hwp": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
       "reader": false,
       "sources": [],
       "collection": "",
@@ -104,7 +110,7 @@
         "created": ""
       },
       "pdf_print": {
-        "mode": "none",
+        "mode": "file",
         "url": "",
         "site": "",
         "created": ""
@@ -121,10 +127,22 @@
         "site": "",
         "created": ""
       },
+      "hwp": {
+        "mode": "file",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
       "reader": true,
       "sources": [
         {
           "file": "pdf",
+          "url": "https://theravada.co.kr/106/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjc6ImtleXdvcmQiO3M6MjU6Iu2FjOudvOyZgOuLpCDrtojqtZDsnZjrspQiO30%3D&bmode=view&idx=67885352&t=board",
+          "checked": "2026년 11월 14일",
+          "archive": ""
+        },
+        {
+          "file": "hwp",
           "url": "https://theravada.co.kr/106/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjc6ImtleXdvcmQiO3M6MjU6Iu2FjOudvOyZgOuLpCDrtojqtZDsnZjrspQiO30%3D&bmode=view&idx=67885352&t=board",
           "checked": "2026년 11월 14일",
           "archive": ""
