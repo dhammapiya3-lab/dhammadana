@@ -80,7 +80,7 @@ for P in PAGES:
     for k, p in enumerate(P['paras']):
         if p.startswith('## 제'):
             chapters.append((p[3:].strip(), P['n'], k))
-toc = [dict(title='차례 (내용)', page=1, sub=False)]
+toc = [dict(title='목차', page=1, sub=False)]  # 장 제목은 '목차' (운영자 요청, 2026-11-15)
 for t, n, k in chapters[1:]:
     toc.append(dict(title=re.sub(r'[\s\xa0]+', ' ', t), page=n, sub=False, **({'at': t[:20]} if k > 0 else {})))
 last = PAGES[-1]
