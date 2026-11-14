@@ -520,9 +520,10 @@ put('press/support/index.html', layout({ title: '후원계좌', nav: 'press', pa
   <ul style="list-style:disc;padding-left:1.2em;margin:1.8em 0 0"><li>법보시 출판 전용 계좌입니다.</li><li>개인 계좌이기 때문에 기부금영수증 발행은 어렵습니다.</li><li>새로 인쇄할 때마다 인쇄 지출 내역과 후원 내역을 함께 올립니다.</li><li>원하는 분은 카카오뱅크 모임 계좌에 초대해드립니다. 입출금 내역을 실시간으로 확인하실 수 있습니다.</li><li>후원 문의: 담마삐야 <a href="tel:01032395401">010-3239-5401</a></li></ul></div>`) }));
 
 // 도서관
+// 출판사 이름은 제공처의 filter_name(찾아보기에 따로 보일 이름)이 있으면 그것으로 (운영자 요청, 2026-11-15)
 const PUBS = () => { const m = new Map(); for (const b of LIB()) for (const p of pubsAll(b)) { const o = m.get(p.key) || { key: p.key, names: {}, n: 0 }; o.names[p.name] = (o.names[p.name] || 0) + 1; o.n++; m.set(p.key, o); }
   return [...m.values()].filter(o => { const p = provOfPub(o.key); return !(p && p.coop === false); })  // 협력 단체가 아닌 출판사(불교시대사 등)는 찾아보기에 안 넣음 (운영자 요청, 2026-11-12)
-    .map(o => ({ key: o.key, name: Object.entries(o.names).sort((a, b) => b[1] - a[1])[0][0], n: o.n })).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, 'ko')); };
+    .map(o => ({ key: o.key, name: provOfPub(o.key)?.filter_name || Object.entries(o.names).sort((a, b) => b[1] - a[1])[0][0], n: o.n })).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, 'ko')); };
 const BTYPES = ['경전', '예불집', '법문집', '해설서', '잠언집', '수행기', '사전'];
 const LANGS = ['빠알리어', '영어', '미얀마어', '태국어', '싱할라어', '한국어', '기타'].filter(l => LIB().some(b => langsOf(b).includes(l)));
 function libraryBody() {
