@@ -1,0 +1,106 @@
+{
+  "id": "DL-0028",
+  "title": "붓다",
+  "subtitle": "",
+  "cover": "/uploads/13b9fa5a4ad7e.jpg",
+  "byline": "아짠 빤냐와로 마하테로 편역",
+  "translator": "",
+  "teacher": "panyavaro",
+  "co_teachers": [],
+  "provider": "theravada-kr",
+  "press": false,
+  "provider_chip": false,
+  "paper": "",
+  "paper_url": "",
+  "stores": [],
+  "book_type": "해설서",
+  "original_title": "",
+  "original_language": [
+    "영어"
+  ],
+  "original_source": "",
+  "series": "",
+  "main": [
+    "부처님의 생애"
+  ],
+  "topics": [
+    "삼보 공덕"
+  ],
+  "description": "스리랑카의 저서(미상)를 기반으로 편역하여 부처님의 생애를 쉬운 언어로 정리한 책입니다.",
+  "author_intro": "한국테라와다불교 초대 이사장 아짠 빤냐와로 마하테로는 1983년 해인사로 출가해 뿐냐산또(도성) 큰스님을 은사로 사미계(수계 법명: 진용)를 수지했다. 1987년부터 부처님 원음을 찾아 스리랑카와 태국에서 수행하다가 1988년 4월 10일 태국 왓람쁭 사원 아짠 통 큰스님을 은사로 테라와다 비구계를 받았다.\n\n현재 울주 붓다의길따라 선원장이자 (사)한국테라와다불교 상가 의장으로서 테라와다불교 전법과 수행지도에 전념하고 있다.",
+  "translator_intro": "",
+  "translator_intro_title": "",
+  "contents": "제 1과 신비로운 꿈\n제 2과위대한 탄생\n제 3과 현자들의 예언\n제 4과 잠부나무 아래에서의 명상\n제 5과 싯달타 태자의 어린시절\n제 6과 싯달타 태자의 결혼\n제 7과 늙은 거지\n제 8과 병든 사람\n제 9과 죽은 사람\n제 10과 수행자 \n제 11과 위대한 출가\n제 12과 빔비사라 왕과의 만남\n제 13과 최초의 스승 알라라와 웃다까\n제 14과 6년간의 고행\n제 15과 수자따의 우유죽 공양\n제 16과 최상의 진리를 깨달으신 분 ‘붓다’\n제 17과 붓다께서 깨달으신 진리\n제 18과 성도 후 7주간의 명상\n제 19과 붓다의 첫 설법(초전법륜)\n제 20과 초전법륜의 내용\n제 21과 야사와 그의 친구들\n제 22과 깟싸빠 형제들의 귀의\n제 23과 귀향\n제 24과 야소다라의 눈물\n제 25과 난다 태자의 출가\n제 26과 라훌라 왕자의 출가\n제 27과 두 수제자의 귀의\n제 28과 붓다의 하루 일과\n제 29과 불쌍한 소빠까\n제 30과 빠따짜라의 불행\n제 31과 끼사 고따미의 슬픔\n제 32과 살인마 앙굴리말라\n제 33과 왁깔리의 깨달음\n제 34과 청소부 수니따의 출가 \n제 35과 병든 띳사 비구\n제 36과 빔비사라왕의 귀의\n제 37과 위사카 부인의 지혜\n제 38과 데와닷따의 배신\n제 39과 케마의 깨달음\n제 40과 아나따삔디까 장자의 공덕\n제 41과 마음의 쟁기질\n제 42과 마간디야의 복수\n제 43과 식인귀 알라와까\n제 44과 수자따에 대한 교훈\n제 45과 붓다의 시자 아난다 존자\n제 46과 아잣따삿뚜 왕의 불효\n제 47과 빠세나디 꼬살라왕의 귀의\n제 48과 시갈라에 대한 충고\n제 49과 암바빨리의 귀의\n제 50과 명의 지와까의 정성\n제 51과 꼬삼비에서의 불상사\n제 52과 이교도 우빨리 장자의 귀의\n제 53과 소나의 깨달음\n제 54과 비구니 승가의 탄생\n제 55과 사성제도(카스트 제도)에 대한 가르침\n제 56과 진리의 거울\n제 57과 초능력에 대한 가르침\n제 58과 붓다의 병환과 열반의 예고\n제 59과 붓다의 마지막 날들\n제 60과 붓다의 마지막 공양\n제 61과 붓다의 마지막 제자 수밧다\n제 62과 붓다의 대열반\n제 63과 붓다의 다비장\n제 64과 제 1차 결집",
+  "editions": [
+    {
+      "label": "초판",
+      "label_display": "",
+      "current": true,
+      "public": true,
+      "page_count": 113,
+      "published": "2006년",
+      "publisher_print": "붓다의 길따라 선원",
+      "isbn": "",
+      "published_ebook": "",
+      "publisher_ebook": "",
+      "ebook_note": "",
+      "isbn_ebook": "",
+      "changes": "",
+      "hide_update": false,
+      "pdf": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_print": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_cover": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "epub": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "hwp": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "reader": false,
+      "sources": [
+        {
+          "file": "pdf",
+          "url": "https://theravada.co.kr/106/?q=YTozOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjc6ImtleXdvcmQiO3M6Njoi67aT64ukIjtzOjQ6InBhZ2UiO2k6Mjt9&bmode=view&idx=77156244&t=board",
+          "checked": "2026년 11월 15일",
+          "archive": ""
+        }
+      ],
+      "collection": "(사)한국테라와다불교 홈페이지",
+      "collected": "",
+      "permission_status": "public",
+      "notice": "* (사)한국테라와다불교 홈페이지에 공개 배포된 법보시 자료이며, 상가 의장이신 아짠 빤냐와로 스님께도 허락을 따로 구했습니다. 법보시해주신 (사)한국테라와다불교 상가에 감사드립니다.\n\n* 사용 조건(라이선스)에 대해서는 아짠 빤냐와로 스님께 자문을 구해 표기하였습니다. 내용을 그릇되게 왜곡하지 않는 한에서 수정해서 사용해도 된다고 하셨습니다.",
+      "permission_note": "",
+      "permission_image": "",
+      "permissions": [],
+      "note": ""
+    }
+  ],
+  "audiobook": null,
+  "license": "CC BY-NC-ND",
+  "added": "2026-11-15",
+  "order": null,
+  "hidden": false,
+  "no_copy": false,
+  "hide_update": false
+}
