@@ -1,0 +1,558 @@
+[
+ {
+  "img": "images/14-Khadiravaniya-Revata-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     204,
+     266,
+     330,
+     332
+    ],
+    "ko": "아카시아 숲의\n레와따",
+    "cover": true,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     468,
+     266,
+     600,
+     332
+    ],
+    "ko": "존자",
+    "cover": true,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     54,
+     344,
+     186
+    ],
+    "ko": "10만 겁 전 함사와띠에서\n덕 있는 뱃사공 레와따가\n빠두뭇따라 부처님과 비구 10만 명을\n꽃으로 꾸민 훌륭한 배에 모시고\n강가 강을 건너 드렸습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     292,
+     166,
+     508,
+     300
+    ],
+    "ko": "한 비구가 숲에 머무는 이\n(araññaka) 가운데 으뜸으로\n선언되는 것을 본 레와따는\n큰 보시(mahā-dāna)를 올리고\n바로 그 이름을 서원했습니다.\n부처님께서는 고따마 부처님의\n가르침에서 이루리라 예언하셨습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     58,
+     286,
+     158
+    ],
+    "ko": "마가다의 바라문 루빠사리의\n아들로 다시 태어났습니다.\n우빠띳사(사리뿟따 존자)를 비롯한\n형과 누나들이 모두 출가하고,\n어린 레와따만 집에 남았습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     64,
+     54,
+     400,
+     118
+    ],
+    "ko": "막내아들마저 잃을까 두려워한 부모는\n재산과 가문이 맞는 신부와 혼인을 정하여\n일찍 집안일에 묶어 두려고 했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     164,
+     484,
+     350
+    ],
+    "ko": "혼례 날, 부모는 신부에게\n레와따의 120세 된 할머니께\n절하게 하고 축복했습니다.\n\n“아가, 여기 할머니보다\n더 오래 살거라!”",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     252,
+     300,
+     556,
+     402
+    ],
+    "ko": "피할 수 없는 현실\n젊음: 곱고 부드럽고 마음을 빼앗는 아름다움\n늙음: 흰머리, 빠진 이, 주름, 굽은 허리\n늙어 가는 몸의 아름다움에\n홀려서 무엇 하겠는가?",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     376,
+     176,
+     732,
+     276
+    ],
+    "ko": "레와따는 친구들과 술래잡기를 하는 척했습니다.\n돌아오는 때를 차츰 늦추다가, 세 번째 차례에\n온 힘을 다해 달려 분소의를 입는 비구들이\n사는 숲으로 갔습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     292,
+     556,
+     404
+    ],
+    "ko": "화려한 옷차림을 본 비구들은\n출가를 거절했습니다. 레와따는 외쳤습니다.\n“나는 빼앗기고 있습니다!”\n천신과 인간과 열반의 세 가지 행복을\n빼앗기고 있다는 뜻이었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     94,
+     312,
+     710,
+     404
+    ],
+    "ko": "레와따는 맏형이 우빠띳사, 곧 지금의 사리뿟따 존자임을 밝혔습니다.\n친족을 출가시켜 달라던 사리뿟따의 부탁에 따라, 비구들은 레와따에게\n피부를 다섯째로 하는 명상 주제(taca-pañcaka)를 주고 출가시켰습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     342,
+     756,
+     404
+    ],
+    "ko": "스무 살에 구족계를 받은 그는 거칠고 돌투성이인 아카시아 숲에 들어가, 아라한과를\n이루기 전에는 부처님도 형도 뵙지 않겠다고 서원했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     598,
+     52,
+     756,
+     388
+    ],
+    "ko": "해탈을 위한\n분투\n\n• 머문 곳:\n울퉁불퉁하고\n돌 많은 아카시아 숲\n• 음식:\n부유하게 자란 그에게\n힘든 거친 음식\n• 노력:\n쉼 없는 위빳사나 수행\n\n안거가 끝난 뒤,\n꺾이지 않는 끈기로\n아라한이 되었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     580,
+     302,
+     766,
+     412
+    ],
+    "ko": "레와따가 목표를 이룬 것을 아신\n부처님께서 마침내 사리뿟따 존자의\n방문을 허락하셨습니다. 수많은\n비구가 금빛 부처님과 숲의\n수행자를 뵈려고 뒤따랐습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     146,
+     352,
+     668,
+     436
+    ],
+    "ko": "부처님께서는 곧 사람들이 몰려와 레와따 존자의\n고요를 흐트러뜨리리라는 것을 아셨습니다. 숲에 머무는 이의\n평화를 지켜 주시려고 부처님께서는 레와따의\n외딴 아카시아 숲으로 떠나셨습니다.",
+    "cover": [
+     38,
+     40,
+     78
+    ],
+    "dark": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     406,
+     162,
+     622,
+     290
+    ],
+    "ko": "레와따 존자는 멀리서 부처님께서\n그의 돌판 자리로 오시는 것을\n보았습니다. 깊은 공경으로\n큰 스승을 맞이하며, 거친 가시\n아카시아 나무들 사이에서\n부처님을 모실 채비를 했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     74,
+     624,
+     152
+    ],
+    "ko": "“아들아, 사나운 코끼리와 사자가 울부짖을 때 무엇을 하느냐?”\n부처님께서 물으시자 레와따가 답했습니다. “세존이시여,\n그 소리는 숲에서 저를 거듭 기쁘게 합니다(arañña-rati).”",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     168,
+     392,
+     300
+    ],
+    "ko": "부처님께서는 게송 5백 개를\n가르치신 뒤 신통으로\n떠나셨습니다. 그리고 비웃던\n비구들이 지팡이와 일산과\n신발과 기름병을 숲에\n두고 오게 하셨습니다.",
+    "cover": [
+     38,
+     40,
+     78
+    ],
+    "dark": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     466,
+     94,
+     702,
+     190
+    ],
+    "ko": "물건을 찾으러 돌아간 들뜬 비구들은\n신통 없는 본래의 길을 마주했습니다.\n지친 그들은 거친 덤불과 가시와\n자갈, 몹시 울퉁불퉁한 땅을\n무릎으로 기어서 지나갔습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     348,
+     760,
+     412
+    ],
+    "ko": "아카시아 그루터기에 걸린 소지품을 본 지친 비구들은 진실을 깨달았습니다.\n“참으로 놀랍구나!” 그들은 비로소 레와따 존자의 큰 신통을 알아보았습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     54,
+     362,
+     174
+    ],
+    "ko": "사왓티에서 재가 신도 위사카가\n먼저 돌아온 비구들에게 숲에 대해 물었습니다.\n\n“즐겁고 기쁜 곳입니다.” 그들이 답했습니다.\n“난다나와 찟딸라따 천상의 동산과 똑같습니다!”",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     52,
+     362,
+     176
+    ],
+    "ko": "위사카는 늦게 돌아온 들뜬 비구들에게도\n물었습니다. 그들은 몹시 불평했습니다.\n\n“메마른 고지에 있는 큰 아카시아 숲인데,\n땅이 몹시 울퉁불퉁하고 돌투성이입니다.\n레와따는 비참하게 삽니다!”",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     232,
+     14,
+     566,
+     52
+    ],
+    "ko": "아카시아 숲을 보는 두 가지 눈",
+    "cover": true,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     108,
+     126,
+     306,
+     194
+    ],
+    "ko": "먼저 온 비구들:\n즐겁고 기쁘며\n천상의 동산 같은 곳.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     498,
+     124,
+     694,
+     196
+    ],
+    "ko": "들뜬 비구들:\n메마르고 울퉁불퉁하며\n자갈과 가시와 괴로움이 가득한 곳.",
+    "cover": [
+     38,
+     40,
+     78
+    ],
+    "dark": true,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     170,
+     390,
+     628,
+     420
+    ],
+    "ko": "왜 그들의 경험은 이토록 달랐을까요?",
+    "cover": true,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     52,
+     522,
+     158
+    ],
+    "ko": "엇갈린 이야기를 확인하려고 위사카는 부처님을 찾아뵈었습니다.\n\n향유와 꽃을 올리며 그녀가 여쭈었습니다. “세존이시여,\n어찌하여 어떤 이들은 그의 거처를 칭찬하고\n어떤 이들은 헐뜯습니까?”",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     26,
+     332,
+     774,
+     432
+    ],
+    "ko": "부처님께서는 세속의 편안함이 참된 평화를 정하지 않는다고 설명하셨습니다.\n“위사카여, 성자들의 마음이 즐거워하는 곳은,\n세속으로 보아 즐겁든 즐겁지 않든, 즐거운 곳이다.”",
+    "cover": [
+     38,
+     40,
+     78
+    ],
+    "dark": true,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Khadiravaniya-Revata-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     276,
+     150,
+     524,
+     310
+    ],
+    "ko": "Gāme vā yadi vāraññe,\nninne vā yadi vā thale;\n\n마을이든 숲이든,\n골짜기든 언덕이든,\n아라한이 머무는 곳,\n그곳은 참으로 즐거운 곳.\n\n(법구경 98)",
+    "cover": [
+     38,
+     40,
+     78
+    ],
+    "dark": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
