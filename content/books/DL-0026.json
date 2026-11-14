@@ -104,10 +104,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "file",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0026/DL-0026_개정판.pdf"
       },
       "pdf_print": {
         "mode": "file",
