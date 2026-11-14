@@ -163,3 +163,16 @@ html.sv-lock,html.sv-lock body{overflow:hidden}
 .sv-bar .sv-dl{color:#eee;text-decoration:none!important}
 /* 마우스 확대 */
 @media (pointer:fine){.sv-page img{cursor:zoom-in}.sv.sv-zoom .sv-page img{cursor:grab}.sv.sv-zoom .sv-page img:active{cursor:grabbing}}
+/* 글로 보기 */
+body.sb-text .sv, body.sb-text .sv-thumbs{display:none}
+.sv-text{--tsz:21px;margin:8px 0 24px}
+.st-bar{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 0;background:var(--paper);border-bottom:1px solid var(--line)}
+.st-bar button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:7px 12px;font:inherit;font-size:15px;cursor:pointer}
+.st-sz{display:flex;gap:6px}.st-sz .st-p{font-size:18px}
+.st-page{margin:22px 0 34px}
+.st-page img{display:block;width:100%;max-width:760px;margin:0 auto;border-radius:6px;cursor:zoom-in}
+.st-page img.big{max-width:none;cursor:zoom-out}
+.st-page figcaption{word-break:keep-all;overflow-wrap:anywhere;max-width:760px;margin:14px auto 0;font-size:var(--tsz);line-height:1.75;color:var(--ink)}
+.st-page figcaption p{margin:0 0 .7em}
+.st-n{display:block;font-size:13px;color:var(--ink-soft);margin-bottom:6px}
+.st-next{text-align:center;margin:30px 0}

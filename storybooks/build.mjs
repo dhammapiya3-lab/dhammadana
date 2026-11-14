@@ -9,6 +9,7 @@ const CAT = rd('catalog.json');      // 원 사이트 구조 (영어 원문)
 const KO = rd('ko.json');            // 한국어 번역
 const READY = rd('ready.json');
 const DL = (() => { try { return rd('dl.json'); } catch (e) { return {}; } })();  // 내려받기 파일 크기 (그림책 작업이 만듦)
+const TEXTS = (() => { try { return rd('texts.json'); } catch (e) { return {}; } })();  // '글로 보기' 쪽별 글 (그림책 작업이 만듦)
 const STAMP = (() => { try { return rd('stamp.json'); } catch (e) { return {}; } })();  // 이야기마다 그림 판 번호 (?v=)      // 한글 그림이 준비된 이야기 { "책/이야기": 그림 수 }
 const S = KO.site, U = KO.ui;
 const OUT = path.join(ROOT, 'dist');
@@ -137,7 +138,7 @@ for (const slug of Object.keys(CAT.books).filter(b => PUB.has(b))) {
     const viewer = n ? `<div class="sv" id="sv" data-key="${esc(key)}" data-book="${esc(slug)}" data-book-title="${esc(b.title)}" data-cover="${esc(b.cover)}" data-title="${esc(storyTitle(slug, s))}"${next && READY[`${slug}/${sid(next.file)}`] ? ` data-next="/${slug}/${sid(next.file)}/" data-next-title="${esc(storyTitle(slug, next))}"` : ''}${prev && READY[`${slug}/${sid(prev.file)}`] ? ` data-prev="/${slug}/${sid(prev.file)}/" data-prev-title="${esc(storyTitle(slug, prev))}"` : ''} tabindex="0" aria-label="그림책 보기 (← → 키로 넘기기)">
   <div class="sv-track">${imgs.map((x, j) => `<figure class="sv-page"><img src="${S.img_base}/${key}/big/${x}.jpg${vq}" data-big="${S.img_base}/${key}/big/${x}.jpg${vq}" data-s="${S.img_base}/${key}/s/${x}.jpg${vq}" alt="${j + 1}쪽" ${j > 1 ? 'loading="lazy"' : ''}></figure>`).join('')}</div>
   <button class="sv-btn prev" aria-label="앞 그림">‹</button><button class="sv-btn next" aria-label="다음 그림">›</button>
-  <div class="sv-bar"><span class="sv-count">1 / ${n}</span><button class="sv-auto" aria-pressed="false">▶ 자동<span class="lg"> 넘김</span></button><button class="sv-save" aria-pressed="false" title="작은 그림으로 보아 휴대폰 데이터를 아낍니다"><span class="lg">데이터 </span>절약</button><button class="sv-full">⛶ 전체<span class="lg"> 화면</span></button><a class="sv-dl" href="#" title="지금 보는 그림을 원본 크기로 내려받습니다" data-name="${esc(fname(`${b.title} - ${storyTitle(slug, s)}`))}">⬇<span class="lg"> 이 그림</span></a></div></div>
+  <div class="sv-bar"><span class="sv-count">1 / ${n}</span><button class="sv-auto" aria-pressed="false">▶ 자동<span class="lg"> 넘김</span></button><button class="sv-save" aria-pressed="false" title="작은 그림으로 보아 휴대폰 데이터를 아낍니다"><span class="lg">데이터 </span>절약</button><button class="sv-full">⛶ 전체<span class="lg"> 화면</span></button>${TEXTS[key] ? '<button class="sv-txt" title="그림 아래에 글을 큰 글씨로 보여 줍니다">가<span class="lg"> 글로 보기</span></button>' : ''}<a class="sv-dl" href="#" title="지금 보는 그림을 원본 크기로 내려받습니다" data-name="${esc(fname(`${b.title} - ${storyTitle(slug, s)}`))}">⬇<span class="lg"> 이 그림</span></a></div></div>
   <div class="sv-thumbs">${imgs.map((x, j) => `<button data-i="${j}"><img src="${S.img_base}/${key}/s/${x}.jpg${vq}" alt="${j + 1}쪽" loading="lazy"></button>`).join('')}</div>`
       : `<div class="notyet"><p>이 이야기의 그림은 아직 우리말로 옮기는 중입니다.</p><p><a class="btn" href="${S.orig_url}${slug}/${s.file}">${U.en_link} ↗</a></p></div>`;
     put(`${key}/index.html`, layout({ title: `${storyTitle(slug, s)} — ${b.title}`, page: 'story', desc: k.intro || s.intro, body: `<div class="wrap story">
@@ -181,6 +182,7 @@ put('login/index.html', layout({ title: '로그인', page: 'login', noindex: tru
 <p class="muted small">회원이 아니신가요? <a href="https://dhammadana.kr/account/">법보시 도서관에서 회원가입 ↗</a><br>아이디·비밀번호를 잊으셨으면 <a href="https://dhammadana.kr/account/">법보시 도서관에서 찾기 ↗</a></p></form>
 </div>` }));
 
+for (const [k, v] of Object.entries(TEXTS)) put(`t/${k}.json`, JSON.stringify(v));  // 글로 보기
 put('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${S.url}/sitemap.xml\n`);
 const urls = ['/', '/about/', ...[...PUB].flatMap(s => [`/${s}/`, ...Object.values(CAT.books[s].stories).map(x => `/${s}/${sid(x.file)}/`)])];
 put('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(u => `<url><loc>${S.url}${u}</loc></url>`).join('')}</urlset>\n`);

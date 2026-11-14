@@ -315,6 +315,57 @@
     autoBtn.setAttribute('aria-pressed', 'true'); autoBtn.textContent = '❚❚ 멈춤';
     timer = setInterval(() => { if (cur >= pages.length && endCard) loadNext(); else if (cur >= last()) autoBtn.onclick(); else go(cur + 1); }, 6000);
   };
+  // ── 글로 보기: 그림 아래에 그 그림의 글을 큰 글씨로, 세로로 넘겨 읽기 (운영자 요청, 2026-11-15)
+  //    글자 크기 5단계(가− 가+)와 보기 방식은 이 기기에 기억함
+  const SIZES = [16, 18, 21, 24, 28];
+  const txtBtn = sv.querySelector('.sv-txt');
+  let tbox = null, tobs = null;
+  const tsize = () => { const v = +ls('sb-tsize'); return SIZES.includes(v) ? v : 21; };
+  const textOff = () => {
+    document.body.classList.remove('sb-text'); ls('sb-textmode', null);
+    if (tobs) tobs.disconnect(); if (tbox) tbox.remove(); tbox = null;
+    const i = cur; requestAnimationFrame(() => { go(i, false); sv.scrollIntoView({ block: 'start' }); });
+  };
+  // 그림 속 줄 바꿈은 상자 너비에 맞춘 것이라, 글로 볼 때는 이어 붙임 (제목·목록·게송 줄은 그대로)
+  const tjoin = t => {
+    const L = String(t).split('\n'); let out = '';
+    L.forEach((l, i) => {
+      if (!i) { out = h(l); return; }
+      const prev = L[i - 1].trim(), cur = l.trim();
+      const keep = !prev || !cur || /[:：]$/.test(prev) || /^([0-9]+[.)]|[•·①-⑩\-–]|\()/.test(cur) || /^“/.test(cur) && /[.!?”]$/.test(prev)
+        || (i === 1 && prev.length <= 22 && !/[.!?,”]$/.test(prev)) || /^[A-Za-zĀ-ỿ ,;'’.!?-]+$/.test(prev);
+      out += (keep ? '<br>' : ' ') + h(l);
+    });
+    return out;
+  };
+  const textOn = async () => {
+    let data;
+    try { data = await (await fetch('/t/' + sv.dataset.key + '.json')).json(); } catch (e) { return; }
+    if (timer) autoBtn.onclick();
+    if (document.fullscreenElement) document.exitFullscreen?.().catch(() => {});
+    sv.classList.remove('sv-max', 'sv-rot');
+    tbox?.remove();
+    tbox = document.createElement('section'); tbox.className = 'sv-text'; tbox.style.setProperty('--tsz', tsize() + 'px');
+    const imgs = pages.map(p => p.querySelector('img'));
+    tbox.innerHTML = `<div class="st-bar"><button type="button" class="st-pic">🖼 그림으로 보기</button><span class="st-sz"><button type="button" class="st-m" aria-label="글자 작게">가−</button><button type="button" class="st-p" aria-label="글자 크게">가+</button></span></div>` +
+      pages.map((p, i) => `<figure class="st-page" data-i="${i}"><img src="${h(imgs[i]?.dataset.s || imgs[i]?.src)}" data-big="${h(imgs[i]?.dataset.big || '')}" alt="${i + 1}쪽" loading="lazy"><figcaption><span class="st-n">${i + 1} / ${pages.length}</span>${(data[i] || []).map(t => `<p>${tjoin(t)}</p>`).join('')}</figcaption></figure>`).join('') +
+      (sv.dataset.next ? `<p class="st-next"><a class="btn" href="${h(sv.dataset.next)}">다음 이야기 ▶ ${h(sv.dataset.nextTitle || '')}</a></p>` : '');
+    sv.after(tbox);
+    document.body.classList.add('sb-text'); ls('sb-textmode', '1');
+    tbox.querySelector('.st-pic').onclick = textOff;
+    const setSz = d => { const i = Math.max(0, Math.min(SIZES.length - 1, SIZES.indexOf(tsize()) + d)); ls('sb-tsize', String(SIZES[i])); tbox.style.setProperty('--tsz', SIZES[i] + 'px'); };
+    tbox.querySelector('.st-m').onclick = () => setSz(-1); tbox.querySelector('.st-p').onclick = () => setSz(1);
+    tbox.querySelectorAll('.st-page img').forEach(im => im.onclick = () => { if (im.dataset.big && im.src !== im.dataset.big) im.src = im.dataset.big; im.classList.toggle('big'); });
+    // 읽는 자리 기억 (내 서재·이어 읽기)
+    tobs = new IntersectionObserver(es => { for (const e of es) if (e.isIntersecting) show(+e.target.dataset.i); }, { rootMargin: '-40% 0px -55% 0px' });
+    tbox.querySelectorAll('.st-page').forEach(f => tobs.observe(f));
+    const start = Math.max(0, Math.min(Math.max(cur, +(ls(KEY) || 0)), pages.length - 1));
+    (start ? tbox.querySelector(`.st-page[data-i="${start}"]`) : tbox).scrollIntoView({ block: 'start' });
+  };
+  if (txtBtn) {
+    txtBtn.onclick = e => { e.stopPropagation(); textOn(); };
+    if (ls('sb-textmode') === '1') requestAnimationFrame(textOn);
+  }
   // 전체 화면: 휴대폰은 가로로 돌려 크게 (안드로이드는 화면을 가로로 고정, 아이폰은 화면을 꽉 채우고 돌려 달라고 안내)
   const fullBtn = sv.querySelector('.sv-full');
   // 휴대폰: 삼성 인터넷은 hover 를 다르게 알려 주는 일이 있어 기기 이름·손가락 화면으로도 봄
