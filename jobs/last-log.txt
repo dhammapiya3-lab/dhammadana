@@ -38,25 +38,21 @@ Jataka 011-The-Wisdom-of-Lakkhana 10 장
 Jataka 012-The-Golden-Deer 14 장
 검수 Jataka/014-The-Wind-Deer 02번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 4px)
 Jataka 014-The-Wind-Deer 9 장
-검수 Jataka/018-The-Sacrificial-Goat 05번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 1px)
 검수 Jataka/018-The-Sacrificial-Goat 05번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Jataka/018-The-Sacrificial-Goat 06번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 검수 Jataka/018-The-Sacrificial-Goat 06번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Jataka 018-The-Sacrificial-Goat 14 장
 Jataka 022-The-Teaching-of-the-Dog 14 장
-검수 Jataka/026-The-State-Elephant 02번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+검수 Jataka/023-The-Noble-Warhorse 02번 그림 상자5 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+검수 Jataka/023-The-Noble-Warhorse 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+Jataka 023-The-Noble-Warhorse 14 장
 검수 Jataka/026-The-State-Elephant 10번 그림 상자2 [자리] 한글이 원래 글 자리(1178,1205-1275,1254)에서 벗어남 (836,1239)
 Jataka 026-The-State-Elephant 13 장
 검수 Jataka/027-Elephant-and-Dog 04번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 5px)
 검수 Jataka/027-Elephant-and-Dog 06번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 5px)
 검수 Jataka/027-Elephant-and-Dog 07번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Jataka 027-Elephant-and-Dog 13 장
-검수 Jataka/028-Nandivisala 03번 그림 상자2 [작음] 글자 크기 33 (원래 113)
-검수 Jataka/028-Nandivisala 08번 그림 상자1 [작음] 글자 크기 34 (원래 90)
-검수 Jataka/028-Nandivisala 08번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 1px)
-검수 Jataka/028-Nandivisala 08번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Jataka/028-Nandivisala 08번 그림 상자3 [작음] 글자 크기 35 (원래 138)
 Jataka 028-Nandivisala 12 장
+Jataka 030-Deadly-Food 11 장
 검수 Jataka/032-The-Peacocks-Dance 08번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Jataka 032-The-Peacocks-Dance 12 장
 검수 Jataka/033-The-Quails-and-the-Net 01번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
@@ -67,22 +63,30 @@ Jataka 033-The-Quails-and-the-Net 14 장
 검수 Jataka/034-The-Amorous-Fish 10번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 3px)
 Jataka 034-The-Amorous-Fish 13 장
 Jataka 039-Nanda-and-the-Hoard 12 장
-검수 Jataka/046-The-Folly-of-the-Monkeys 04번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 5px)
+검수 Jataka/040-The-Fiery-Pit 04번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+Jataka 040-The-Fiery-Pit 12 장
+Jataka 041-The-Unfortunate-Monk 15 장
+검수 Jataka/044-The-Son-and-the-Mosquito 01번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+검수 Jataka/044-The-Son-and-the-Mosquito 02번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 1px)
+검수 Jataka/044-The-Son-and-the-Mosquito 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 4px)
+검수 Jataka/044-The-Son-and-the-Mosquito 04번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 2px)
+Jataka 044-The-Son-and-the-Mosquito 13 장
 검수 Jataka/046-The-Folly-of-the-Monkeys 06번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 검수 Jataka/046-The-Folly-of-the-Monkeys 09번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 3px)
 Jataka 046-The-Folly-of-the-Monkeys 13 장
 Jataka 048-The-Rain-of-Ruin 15 장
 Jataka 049-The-Lucky-Star 14 장
-자동 검수: 문제 의심 48 곳
-R2 에 올림: 964 개 / 한글판 이야기 47 편
+Jataka 050-The-Kings-Stratagem 15 장
+자동 검수: 문제 의심 46 곳
+R2 에 올림: 1124 개 / 한글판 이야기 47 편
 공개 주소 확인: 200 1723650바이트
 이야기 Foremost-Monks/02-03-Sariputta-Moggallana {'pdf': 85281822, 'zip': 84984817, 'n': 57}
 이야기 Foremost-Monks/05-Anuruddha {'pdf': 71835898, 'zip': 71554127, 'n': 53}
 이야기 Foremost-Monks/09-Punna {'pdf': 21037526, 'zip': 20766590, 'n': 15}
 이야기 Foremost-Monks/17-Sona-Kutikanna {'pdf': 37228915, 'zip': 36955958, 'n': 26}
 책 Foremost-Monks {'pdf': 514032330, 'pdfs': 53669070, 'zip': 513654018, 'stories': 15, 'n': 363}
-이야기 Jataka/001-The-Waterless-Desert {'pdf': 14359659, 'zip': 14094297, 'n': 15}
-이야기 Jataka/002-The-Well-of-Perseverance {'pdf': 17802500, 'zip': 17534379, 'n': 15}
+이야기 Jataka/001-The-Waterless-Desert {'pdf': 14360282, 'zip': 14094920, 'n': 15}
+이야기 Jataka/002-The-Well-of-Perseverance {'pdf': 17802706, 'zip': 17534585, 'n': 15}
 이야기 Jataka/003-The-Golden-Bowl {'pdf': 15793801, 'zip': 15528813, 'n': 14}
 이야기 Jataka/004-The-Dead-Mouse {'pdf': 17535492, 'zip': 17272056, 'n': 15}
 이야기 Jataka/005-The-Measure-of-Rice {'pdf': 17266813, 'zip': 17003428, 'n': 14}
@@ -90,22 +94,28 @@ R2 에 올림: 964 개 / 한글판 이야기 47 편
 이야기 Jataka/009-The-Kings-Grey-Hair {'pdf': 15468356, 'zip': 15201491, 'n': 14}
 이야기 Jataka/010-Bliss-of-Renunciation {'pdf': 17025857, 'zip': 16759470, 'n': 14}
 이야기 Jataka/011-The-Wisdom-of-Lakkhana {'pdf': 12222691, 'zip': 11958722, 'n': 10}
-이야기 Jataka/012-The-Golden-Deer {'pdf': 18858532, 'zip': 18594315, 'n': 14}
+이야기 Jataka/012-The-Golden-Deer {'pdf': 18855116, 'zip': 18590899, 'n': 14}
 이야기 Jataka/014-The-Wind-Deer {'pdf': 9629635, 'zip': 9368217, 'n': 9}
-이야기 Jataka/018-The-Sacrificial-Goat {'pdf': 16452085, 'zip': 16181701, 'n': 14}
-이야기 Jataka/022-The-Teaching-of-the-Dog {'pdf': 17817676, 'zip': 17552476, 'n': 14}
-이야기 Jataka/026-The-State-Elephant {'pdf': 16595772, 'zip': 16329602, 'n': 13}
-이야기 Jataka/027-Elephant-and-Dog {'pdf': 16900445, 'zip': 16635614, 'n': 13}
-이야기 Jataka/028-Nandivisala {'pdf': 14871759, 'zip': 14603582, 'n': 12}
-이야기 Jataka/032-The-Peacocks-Dance {'pdf': 16813571, 'zip': 16549145, 'n': 12}
-이야기 Jataka/033-The-Quails-and-the-Net {'pdf': 15954306, 'zip': 15686151, 'n': 14}
-이야기 Jataka/034-The-Amorous-Fish {'pdf': 15341649, 'zip': 15072586, 'n': 13}
-이야기 Jataka/046-The-Folly-of-the-Monkeys {'pdf': 15966570, 'zip': 15694415, 'n': 13}
-이야기 Jataka/039-Nanda-and-the-Hoard {'pdf': 13837063, 'zip': 13567645, 'n': 12}
-이야기 Jataka/048-The-Rain-of-Ruin {'pdf': 16743185, 'zip': 16478705, 'n': 15}
-이야기 Jataka/049-The-Lucky-Star {'pdf': 16495675, 'zip': 16230801, 'n': 14}
-책 Jataka {'pdf': 496804430, 'pdfs': 50479319, 'zip': 496394668, 'stories': 32, 'n': 422}
-내려받기 파일: 29 묶음 새로 만듦
+이야기 Jataka/018-The-Sacrificial-Goat {'pdf': 16417741, 'zip': 16147358, 'n': 14}
+이야기 Jataka/022-The-Teaching-of-the-Dog {'pdf': 17771345, 'zip': 17506144, 'n': 14}
+이야기 Jataka/023-The-Noble-Warhorse {'pdf': 17025907, 'zip': 16760613, 'n': 14}
+이야기 Jataka/026-The-State-Elephant {'pdf': 16571032, 'zip': 16304863, 'n': 13}
+이야기 Jataka/027-Elephant-and-Dog {'pdf': 16874067, 'zip': 16609236, 'n': 13}
+이야기 Jataka/028-Nandivisala {'pdf': 14868789, 'zip': 14600612, 'n': 12}
+이야기 Jataka/030-Deadly-Food {'pdf': 13385711, 'zip': 13116897, 'n': 11}
+이야기 Jataka/032-The-Peacocks-Dance {'pdf': 16807086, 'zip': 16542660, 'n': 12}
+이야기 Jataka/033-The-Quails-and-the-Net {'pdf': 15935511, 'zip': 15667356, 'n': 14}
+이야기 Jataka/034-The-Amorous-Fish {'pdf': 15141213, 'zip': 14872151, 'n': 13}
+이야기 Jataka/046-The-Folly-of-the-Monkeys {'pdf': 15965862, 'zip': 15693707, 'n': 13}
+이야기 Jataka/039-Nanda-and-the-Hoard {'pdf': 13816613, 'zip': 13547195, 'n': 12}
+이야기 Jataka/040-The-Fiery-Pit {'pdf': 12647164, 'zip': 12383421, 'n': 12}
+이야기 Jataka/041-The-Unfortunate-Monk {'pdf': 17955675, 'zip': 17689783, 'n': 15}
+이야기 Jataka/044-The-Son-and-the-Mosquito {'pdf': 15066061, 'zip': 14796645, 'n': 13}
+이야기 Jataka/048-The-Rain-of-Ruin {'pdf': 16677066, 'zip': 16412586, 'n': 15}
+이야기 Jataka/049-The-Lucky-Star {'pdf': 16483361, 'zip': 16218487, 'n': 14}
+이야기 Jataka/050-The-Kings-Stratagem {'pdf': 19101668, 'zip': 18836011, 'n': 15}
+책 Jataka {'pdf': 496222585, 'pdfs': 50492784, 'zip': 495812824, 'stories': 32, 'n': 422}
+내려받기 파일: 35 묶음 새로 만듦
 글로 보기: 47 이야기
 41-Mogharaja
 13-Singalakamata
