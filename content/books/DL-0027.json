@@ -141,10 +141,10 @@
         "created": ""
       },
       "hwp": {
-        "mode": "none",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "hwp/DL-0027/DL-0027_2판.hwp"
       },
       "reader": true,
       "sources": [
