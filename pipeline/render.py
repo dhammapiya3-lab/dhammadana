@@ -141,10 +141,20 @@ def render(src_path, boxes):
             if b.get("cover"):  # 네모 전체를 밝은 바탕색 카드로 덮음 (기울어진 딱지·지우기 어려운 글)
                 px = img[inner > 0].reshape(-1, 3)
                 col = np.percentile(px, 92, axis=0) if b["cover"] is True else np.array(b["cover"][::-1])
-                out[inner > 0] = col
-                if b.get("outline") and b.get("ellipse") and b.get("rect"):  # 넓힌 말풍선에 테두리를 다시 그림 (원래 말풍선과 같은 검은 선)
-                    kk_ = W / 800; r_ = [int(v * kk_) for v in b["rect"]]
-                    cv2.ellipse(out, ((r_[0] + r_[2]) // 2, (r_[1] + r_[3]) // 2), ((r_[2] - r_[0]) // 2, (r_[3] - r_[1]) // 2), 0, 0, 360, (30, 30, 30), max(2, int(2 * kk_)), cv2.LINE_AA)
+                if b.get("outline") and b.get("ellipse") and b.get("rect"):  # 넓힌 말풍선: 원래 말풍선(꼬리 포함)과 합친 모양으로 칠하고 둘레에 테두리 (옛 말풍선이 삐져나와 두 겹으로 보이지 않게)
+                    kk_ = W / 800; U = (inner > 0).astype(np.uint8)
+                    if b.get("seed"):
+                        try:
+                            of, _ = region_masks(img, b["seed"])
+                            if (of > 0).sum() < 0.25 * H * W:
+                                U = ((U > 0) | (cv2.dilate((of > 0).astype(np.uint8), np.ones((max(5, W // 150),) * 2, np.uint8)) > 0)).astype(np.uint8)
+                        except Exception:
+                            pass
+                    out[U > 0] = col
+                    cs, _ = cv2.findContours(U, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+                    cv2.drawContours(out, cs, -1, (30, 30, 30), max(2, int(2 * kk_)), cv2.LINE_AA)
+                else:
+                    out[inner > 0] = col
             elif b.get("fill"):  # 단색 이름표: 바탕색으로 칠함 (메우기가 번지는 작은 흰 딱지)
                 col = np.median(img[(inner > 0) & (text_px == 0)], axis=0)
                 out[(cv2.dilate(mk, np.ones((3, 3), np.uint8)) > 0) & (inner > 0)] = col
