@@ -1,0 +1,299 @@
+[
+ {
+  "img": "images/15-Kankha-Revata-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     316,
+     586,
+     426
+    ],
+    "ko": "위대한 연대기: 깡카 레와따 존자\n선정에서 으뜸, 크게 의심하던 이",
+    "cover": true,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kankha-Revata-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     58,
+     756,
+     212
+    ],
+    "ko": "10만 겁 전 빠두뭇따라 부처님 때,\n덕 있는 한 재가자가 “선정에서 으뜸”으로\n선언되는 비구를 보았습니다. 깊은 서원이\n일어났습니다. “나도 이 경지를 이루리라.”",
+    "cover": [
+     38,
+     48,
+     78
+    ],
+    "dark": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kankha-Revata-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     146,
+     352,
+     670,
+     432
+    ],
+    "ko": "서원을 굳히려고 재가자는 이레 동안 큰 보시를 올렸습니다.\n세간의 행복이 아니라, 미래 부처님의 가르침에서\n선정의 최고 경지만을 바랐습니다.",
+    "cover": [
+     38,
+     48,
+     78
+    ],
+    "dark": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kankha-Revata-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     442,
+     328,
+     770,
+     420
+    ],
+    "ko": "빠두뭇따라 부처님께서 온 세상을 살피시고\n예언하셨습니다. “10만 겁 뒤 고따마 부처님 아래서\n그대의 바람이 이루어지리라. 그대는 선정에\n드는 비구 가운데 으뜸이 되리라.”",
+    "cover": [
+     38,
+     48,
+     78
+    ],
+    "dark": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kankha-Revata-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     594,
+     40,
+     770,
+     424
+    ],
+    "ko": "여러 겁의\n공덕으로 그는\n사왓티의 부유한\n젊은이 레와따로\n태어났습니다.\n\n고따마 부처님의\n법문을 듣고\n깊은 믿음이\n일어나, 세속을\n버리고 비구가\n되었습니다.",
+    "cover": [
+     150,
+     80,
+     20
+    ],
+    "dark": true,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kankha-Revata-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     594,
+     40,
+     770,
+     424
+    ],
+    "ko": "명상 주제를 받은\n레와따는 세간의\n선정(jhāna)을\n통달했습니다.\n\n이 깊은 삼매를\n바탕으로 위빳사나를\n닦아 완전한 해탈,\n곧 아라한과를\n얻었습니다.",
+    "cover": [
+     150,
+     80,
+     20
+    ],
+    "dark": true,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kankha-Revata-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     32,
+     776,
+     82
+    ],
+    "ko": "레와따는 부처님께서 드시는 모든 선정에 들었습니다. 대중 앞에서 고따마 부처님께서\n선언하셨습니다. “늘 선정에 드는 나의 제자 가운데 깡카 레와따가 으뜸이다.”",
+    "cover": [
+     70,
+     30,
+     20
+    ],
+    "dark": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kankha-Revata-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     32,
+     776,
+     82
+    ],
+    "ko": "선정에 통달했으면서도 레와따는 계율에 대해 지나치게 의심했습니다. 허락된 물건까지\n엄격하게 따져서 ‘깡카’(의심하는 이)라는 이름을 얻었습니다.",
+    "cover": [
+     70,
+     30,
+     20
+    ],
+    "dark": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kankha-Revata-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     26,
+     376,
+     774,
+     436
+    ],
+    "ko": "라자가하로 가던 레와따는 반죽과 겨를 섞어 굳힌 당밀을 보았습니다.\n이 날재료가 오후 불식 계율을 어긴다고 여겨, 그와 제자들은 엄격하게 먹지 않았습니다.",
+    "cover": [
+     38,
+     48,
+     78
+    ],
+    "dark": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kankha-Revata-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     16,
+     12,
+     394,
+     234
+    ],
+    "ko": "뒤에 그는 쓰레기 더미에서\n녹두가 싹트는 것을 보았습니다.\n익힌 콩도 싹틀 수 있다고 여겨\n먹어서는 안 될 음식이라며\n아예 받지 않았습니다.",
+    "cover": [
+     38,
+     48,
+     78
+    ],
+    "dark": true,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kankha-Revata-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     374,
+     780,
+     436
+    ],
+    "ko": "비구들이 이 의심을 아뢰자 부처님께서는 꾸짖지 않으시고 분명하게 답하셨습니다.\n새 규칙을 정하시어 굳힌 당밀과 콩을 모두 공식으로 허락하셨습니다.",
+    "cover": [
+     38,
+     48,
+     78
+    ],
+    "dark": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kankha-Revata-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     280,
+     150,
+     528,
+     412
+    ],
+    "ko": "레와따의 두 가지 면모\n\n마음: 완전한 삼매.\n선정에서 으뜸.\n행동: 지나치게 꼼꼼함.\n계율에 몹시 조심스러움.\n결과: 깊은 평화와\n엄격한 바깥 규율이\n어우러진 깨달은 마음.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kankha-Revata-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     232,
+     46,
+     570,
+     160
+    ],
+    "ko": "깡카 레와따 존자는 깨달은 마음에도\n저마다의 독특한 버릇이 있을 수 있음을\n가르쳐 줍니다. 믿음과 의심이 얽힌\n그의 놀라운 여정은 테라와다 전통에\n영원히 전해지고 있습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
