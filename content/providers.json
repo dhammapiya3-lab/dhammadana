@@ -123,6 +123,16 @@
       "image": "/uploads/partner-panditarama.jpg"
     },
     {
+      "id": "dhammayut-kor",
+      "name": "붓다의 고귀한 제자들",
+      "kind": "단체",
+      "urls": [
+        "https://dhammayut-kor.org/books-list/"
+      ],
+      "partner": true,
+      "note": "태국 숲속 전통 스승들의 번역 서적과 수행 자료 · dhammayut-kor.org"
+    },
+    {
       "id": "shweoomin-mm",
       "name": "쉐우민 수행센터",
       "kind": "출판사",

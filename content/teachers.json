@@ -459,6 +459,19 @@
       "rank": 305
     },
     {
+      "id": "katadhammo",
+      "name": "까따담모 스님",
+      "roman": "",
+      "aliases": [
+        "까따담모"
+      ],
+      "tradition": "forest",
+      "bio": "",
+      "photo": "",
+      "rank": 310,
+      "lay": false
+    },
+    {
       "id": "ohwontak",
       "name": "오원탁",
       "roman": "",
