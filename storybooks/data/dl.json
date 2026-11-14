@@ -1,10 +1,10 @@
 {
 "Foremost-Monks": {
-"n": 319,
-"pdf": 452572639,
-"pdfs": 47310324,
-"stories": 13,
-"zip": 452210725
+"n": 337,
+"pdf": 477097863,
+"pdfs": 49861906,
+"stories": 14,
+"zip": 476729090
 },
 "Foremost-Monks/01-Kondanna": {
 "n": 38,
@@ -70,6 +70,11 @@
 "n": 13,
 "pdf": 19139719,
 "zip": 18872783
+},
+"Foremost-Monks/16-Sona-Kolivisa": {
+"n": 18,
+"pdf": 24788170,
+"zip": 24518124
 },
 "Jataka": {
 "n": 422,
