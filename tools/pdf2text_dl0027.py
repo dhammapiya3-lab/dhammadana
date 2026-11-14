@@ -266,6 +266,13 @@ def toc_lines(P):
     return rows
 
 
+# 쪽 번호가 인쇄되지 않은 쪽: 앞뒤 번호 사이에 빠진 번호가 있으면 앞쪽부터 차례로 채움 (운영자 요청, 2026-11-15 — [Note] 쪽 66·84, 빈 쪽 38)
+_nums = [n for n in range(1, N + 1) if PAGES[n - 1]['lab'].isdigit()]
+for a, b in zip(_nums, _nums[1:]):
+    miss = list(range(int(PAGES[a - 1]['lab']) + 1, int(PAGES[b - 1]['lab'])))
+    for n, num in zip(range(a + 1, b), miss):
+        PAGES[n - 1]['lab'] = str(num); log['쪽 번호 채움'] += 1; print('쪽 번호 채움: PDF', n, '→', num)
+
 # ---------- 짓기
 BODY = []
 chapters = []
@@ -314,7 +321,8 @@ for P in PAGES:
         num = re.sub(r'\D', '', ''.join(t for t, s in T if s > 35))
         title = [t for t, s in T if 25 < s < 35]
         sub = [t for t, s in T if s < 13 and t not in ('빨리어',)]
-        paras = [':: 빨리어 예불과 의례집', f'^^ 제{num}장', *[f'^^ {t}' for t in title], *[f':: {t}' for t in sub]]
+        # 장 표지의 글(책 이름·'제N장'·장 이름)은 다음 쪽 장 제목과 겹치므로 넣지 않음 — 장 제목은 읽기 화면 맨 위에 한 번만 (운영자 요청, 2026-11-15)
+        paras = []
         cover_of[n] = (num, ' '.join(title), ' '.join(sub))
     elif n == N:
         paras = [(':: ' + x if k < 2 else x) for k, x in enumerate(build_paras(P, each=True))]
@@ -329,7 +337,9 @@ json.dump(BODY, open('/tmp/b27/body_raw.json', 'w'), ensure_ascii=False, indent=
 chapters = [('표지', 1), ('빨리어(Pālī) 예불(Chanting)의 공덕', 3), ('서문', 5), ('빨리어 한글표기 및 운율', 6), ('목차', 7)]
 for n, (num, title, sub) in sorted(cover_of.items()):
     nxt = next((p[3:] for m in range(n, min(n + 4, N)) for p in BODY[m][1] if p.startswith('## ') and re.match(r'^제\s*\d+\s*장', p[3:])), '')
-    chapters.append((re.sub(r'^제\s*(\d+)\s*장', r'제\1장', nxt) if nxt else f'제{num}장 {title}' + (f'({sub})' if sub else ''), n))
+    # 장 표지 쪽은 비워 두므로 장은 글이 시작하는 쪽(장 제목 줄이 있는 쪽)부터 — 빈 표지·빈 쪽은 앞 장 끝에 붙음
+    first = next(m for m in range(n, N) if any(x.strip() for x in BODY[m][1])) + 1
+    chapters.append((re.sub(r'^제\s*(\d+)\s*장', r'제\1장', nxt) if nxt else f'제{num}장 {title}' + (f'({sub})' if sub else ''), first))
 chapters.append(('판권지', N))
 CH = set(n for _, n in chapters)
 subs = []

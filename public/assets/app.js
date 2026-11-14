@@ -1012,7 +1012,15 @@ function bindReader() {
     R.findTerms = terms;
     // 쪽 번호로 찾기: '74', '74쪽', 'p.74', '74페이지' → 그 쪽으로 가는 줄을 맨 위에 (운영자 요청, 2026-11-10)
     const pm = q.replace(/\s+/g, '').match(/^(?:p\.?|pp\.?)?(\d{1,4})(?:쪽|페이지|면|p)?$/i);
-    const pgHits = pm ? R.pages.filter(x => String(x.label || '').replace(/쪽$/, '') === pm[1]) : [];
+    let pgHits = pm ? R.pages.filter(x => String(x.label || '').replace(/쪽$/, '') === pm[1]) : [];
+    // 그 쪽 번호의 쪽이 따로 없으면(앞 쪽 문단이 그 쪽까지 이어져 있음) 그 번호를 품은 앞 쪽으로 (운영자 요청, 2026-11-15)
+    let pgVia = '';
+    if (pm && !pgHits.length) {
+      const num = x => { const m = String(x.label || '').match(/^(\d+)쪽?$/); return m ? +m[1] : null; }, N = +pm[1];
+      const nums = R.pages.filter(x => num(x) != null);
+      const i = nums.findIndex((x, k) => num(x) < N && nums[k + 1] && num(nums[k + 1]) > N);
+      if (i >= 0) { pgHits = [nums[i]]; pgVia = `${N}쪽 (${pageName(nums[i])}에 이어짐)`; }
+    }
     // 각주 번호로 찾기: '각주 13', '13번 각주', '[13]', '주13' 또는 숫자만 — 본문 자리와 각주 글을 맨 위에 (운영자 요청, 2026-11-11)
     const fm = q.replace(/\s+/g, '').match(/^(?:각주|주|\[\^?|\^)?(\d{1,4})(?:\]|번|번각주|각주)?$/);
     const fnHits = [];
@@ -1021,8 +1029,8 @@ function bindReader() {
       else if (t.includes('[^' + fm[1] + ']') && !/^\[\^/.test(t)) { const i = t.indexOf('[^' + fm[1] + ']'), a = plainT(t.slice(Math.max(0, i - 60), i)).trim(); fnHits.push({ n: pgx.n, k, def: false, s: (i > 60 ? '…' : '') + a.slice(-45) }); }
     });
     const fnHtml = fnHits.map(x => `<li><button class="link" data-find="${x.n}" data-k="${x.k}"><span class="muted small">${esc(pageName(R.pages[x.n - 1]))}${ch(x.n) ? ' · ' + esc(ch(x.n)) : ''}</span><br><b>${x.def ? '📝 각주 ' + fm[1] + ' 내용' : '📝 각주 ' + fm[1] + ' 본문 자리'}</b> ${phMark(esc(x.s))}${x.def ? '' : '<sup>' + fm[1] + '</sup>'}</button></li>`).join('');
-    const pgHtml = pgHits.map(x => `<li><button class="link" data-find="${x.n}" data-k="-1"><b>📄 ${esc(pageName(x))}으로 가기</b>${ch(x.n) ? `<br><span class="muted small">${esc(ch(x.n))}</span>` : ''}</button></li>`).join('');
-    R.findRes = `<p class="note">${pgHits.length ? `${esc(pageName(pgHits[0]))}이 있습니다. ` : ''}${fnHits.length ? `각주 ${fm[1]}번이 있습니다. ` : ''}${hits.length ? `${hits.length}곳을 찾았습니다.` : pgHits.length || fnHits.length ? '' : '찾는 말이 없습니다.'}${group ? ` (${group.map(esc).join(', ')} 함께 찾음)` : ''}</p>
+    const pgHtml = pgHits.map(x => `<li><button class="link" data-find="${x.n}" data-k="-1"><b>📄 ${esc(pgVia || pageName(x))}으로 가기</b>${ch(x.n) ? `<br><span class="muted small">${esc(ch(x.n))}</span>` : ''}</button></li>`).join('');
+    R.findRes = `<p class="note">${pgHits.length ? `${esc(pgVia || pageName(pgHits[0]))}이 있습니다. ` : ''}${fnHits.length ? `각주 ${fm[1]}번이 있습니다. ` : ''}${hits.length ? `${hits.length}곳을 찾았습니다.` : pgHits.length || fnHits.length ? '' : '찾는 말이 없습니다.'}${group ? ` (${group.map(esc).join(', ')} 함께 찾음)` : ''}</p>
       <ul class="find-list">${pgHtml}${fnHtml}${hits.slice(0, 200).map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}"><span class="muted small">${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span><br>${phMark(hl(h.s, terms))}</button></li>`).join('')}</ul>${hits.length > 200 ? '<p class="note">앞의 200곳만 보입니다. 더 자세한 말로 찾아보세요.</p>' : ''}`;
     $('#findRes').innerHTML = R.findRes; bindFind();
   };
