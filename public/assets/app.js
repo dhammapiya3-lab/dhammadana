@@ -811,6 +811,31 @@ function sprAlign() {
         if (h) { const th = eff(o, h.j, h.k); if (th < a - 1) S[o][h.j].d += a - th; }
       }
     }
+    // 인쇄본에서 같은 간격으로 놓인 줄 묶음(예: '부처님을…/담마를…/상가를…')은 화면에서도 같은 간격으로 (운영자 요청, 2026-11-14)
+    S.forEach((a, s) => {
+      const gaps = [];
+      const isH = x => x.p.classList.contains('sub-h') || x.p.getAttribute('role') === 'heading';   // 소제목 앞뒤 간격은 그대로 (양쪽 소제목 높이가 어긋나지 않게)
+      for (let k = 0; k + 1 < a.length; k++) if (!isH(a[k]) && !isH(a[k + 1])) gaps.push({ k, pg: a[k + 1].ys[a[k + 1].k0] - a[k].ys[a[k].k0], sg: eff(s, k + 1, a[k + 1].k0) - eff(s, k, a[k].k0) });
+      // 같은 인쇄 간격끼리 묶음(2개 이상)을 찾고, 그 묶음들의 화면 간격을 인쇄본 간격에 비례하게 맞춤 (묶음 안은 같게, 묶음 사이는 더 넓게)
+      const used = new Set(), cl = [];
+      gaps.forEach(g => {
+        if (used.has(g.k) || g.pg <= 0) return;
+        const C = gaps.filter(h => !used.has(h.k) && h.pg > 0 && Math.abs(h.pg - g.pg) <= 1.5);
+        C.forEach(h => used.add(h.k));
+        if (C.length < 2) return;
+        const M = Math.max(...C.map(h => h.sg)), m = Math.min(...C.map(h => h.sg));
+        if (m > 0 && M <= m * 2.5) cl.push(C);
+      });
+      if (!cl.length) return;
+      cl.sort((x, y) => x[0].pg - y[0].pg);
+      let prev = null;
+      cl.forEach(C => {
+        let T = Math.max(...C.map(h => h.sg));
+        if (prev) T = Math.max(T, prev.T * C[0].pg / prev.pg);   // 인쇄본에서 더 넓은 간격은 화면에서도 더 넓게
+        C.forEach(h => { if (T - h.sg > 0.5) a[h.k + 1].d += T - h.sg; });
+        prev = { T, pg: C[0].pg };
+      });
+    });
     S.forEach(a => a.forEach(x => { if (x.d > 0.5) x.p.style.paddingTop = x.d.toFixed(1) + 'px'; }));
   });
 }
