@@ -48,10 +48,9 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "file",
-        "url": "pdf/DL-0028/DL-0028_초판.pdf",
-        "site": "",
-        "created": "2025년 9월 27일"
+        "mode": "none",
+        "url": "",
+        "site": ""
       },
       "pdf_print": {
         "mode": "none",
@@ -72,10 +71,9 @@
         "created": ""
       },
       "hwp": {
-        "mode": "file",
-        "url": "hwp/DL-0028/DL-0028_초판.hwp",
-        "site": "",
-        "created": "2025년 9월 27일"
+        "mode": "none",
+        "url": "",
+        "site": ""
       },
       "reader": false,
       "sources": [
