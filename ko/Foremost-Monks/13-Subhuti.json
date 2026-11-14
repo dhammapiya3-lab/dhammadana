@@ -1,0 +1,319 @@
+[
+ {
+  "img": "images/13-Subhuti-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     152,
+     340,
+     652,
+     414
+    ],
+    "ko": "수부띠 존자: 두 가지 덕에서 으뜸\n다툼 없음과 자애의 연대기",
+    "cover": true,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     320,
+     616,
+     436
+    ],
+    "ko": "10만 겁 전, 고행자 난다가 제자 4만 4천 명을 이끌었습니다.\n빠두뭇따라 부처님께서 찾아오시자 4만 4천 명이 모두\n아라한이 되었습니다. 그러나 난다는 법을 설하는 한 비구에게\n마음을 빼앗겨 깨닫지 못했습니다. 대신 평생의 길을 찾았습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     294,
+     776,
+     428
+    ],
+    "ko": "그 비구의 청정함을 본 난다는 큰 서원을\n세웠습니다. 미래 부처님 아래서 두 가지 덕에서\n으뜸인 제자가 되겠다는 것이었습니다.\n빠두뭇따라 부처님께서 성취를 예언하셨고,\n난다는 뒷날 범천의 세계에 태어났습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     46,
+     498,
+     180
+    ],
+    "ko": "오랜 겁 뒤 그는 사왓티에서 수부띠로 다시 태어났습니다.\n그의 숙부 아나타삔디까는 금화를 깔아 제따와나 숲을 사서\n우리 부처님께 바쳤습니다. 이 봉헌 자리에서 법을 들은\n수부띠는 믿음이 피어나 출가했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     446,
+     28,
+     780,
+     150
+    ],
+    "ko": "비구 수부띠는 계율과 두타행을 익혔습니다.\n자애 선정(mettā-jhāna)에 깊이 머물며\n깊은 통찰(위빳사나)을 길렀습니다.\n이 부드러운 길로 궁극의 해탈에 이르러\n아라한이 되었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     42,
+     344,
+     760,
+     428
+    ],
+    "ko": "부처님께서는 수부띠 존자를 두 가지 영예에서 모든 제자 가운데 으뜸이라고 선언하셨습니다.\n1. 번뇌를 떠나 다툼 없이 머묾(Araṇa-vihārī)\n2. 가장 좋은 공양을 받을 만함(Dakkhiṇeyya)",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     64,
+     344,
+     738,
+     428
+    ],
+    "ko": "영예 1: 다툼 없이 머무는 이(Araṇa-vihārī). 수부띠는 탐욕과 성냄에서 완전히 벗어나\n최상의 행복 속에 살았습니다. 세상의 모든 다툼을 피하고,\n안으로 해탈한 깨끗하고 흔들림 없는 평화에 머물렀습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     14,
+     560,
+     54
+    ],
+    "ko": "가르치는 방식",
+    "cover": true,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     40,
+     342,
+     372,
+     424
+    ],
+    "ko": "다른 이들: 사람에 초점을 맞춤.\n사람을 칭찬하거나 나무랍니다.\n아첨이나 모욕이 될 위험이 있습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     430,
+     342,
+     762,
+     424
+    ],
+    "ko": "수부띠: 법에 초점을 맞춤.\n궁극의 객관적 진리만 말합니다.\n깨끗하고 객관적이며 다툼이 전혀 없습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     38,
+     346,
+     764,
+     430
+    ],
+    "ko": "다툼 없음의 여섯 요소: 1. 중도를 걸음. 2. 객관적인 법을 가르침. 3. 안의 행복을 기름.\n4. 진실하고 이로운 말을 함. 5. 서두르지 않고 부드럽게 말함.\n6. 지방 말을 두고 다투지 않음.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     162,
+     14,
+     654,
+     64
+    ],
+    "ko": "영예 2: 공양받을 만한 이(Dakkhiṇeyya)",
+    "cover": true,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     78,
+     64,
+     740,
+     130
+    ],
+    "ko": "공양을 받을 때 수부띠는 베푸는 이들의 공덕이 더 커지기를 바랐습니다.\n그는 날마다 하는 단순한 일을 깊은 은혜의 행위로 바꾸었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     328,
+     766,
+     418
+    ],
+    "ko": "공양을 받기 전, 수부띠는 잠시 멈추어 자애 선정(mettā-jhāna)에 들었습니다.\n빛나는 자애가 베푸는 이들의 마음을 부드럽게 하여,\n보시를 깨끗하게 하고 그 업의 과보를 크게 키웠습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     282,
+     14,
+     518,
+     58
+    ],
+    "ko": "공양을 깨끗하게 함",
+    "cover": true,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     438,
+     80,
+     746,
+     196
+    ],
+    "ko": "사리뿟따 존자:\n받는 이(자기 자신)를 깨끗하게 함.\n공양을 받기 전에\n멸진정에 들었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     438,
+     280,
+     746,
+     414
+    ],
+    "ko": "수부띠 존자:\n베푸는 행위(시주)를 깨끗하게 함.\n자애를 펼쳐 시주의 마음에\n부드러운 공경을 일으켰습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Subhuti-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     198,
+     304,
+     610,
+     420
+    ],
+    "ko": "수부띠 존자의 삶은 최상의 깨달음이\n개인의 해탈에 그치지 않음을 보여 줍니다.\n흔들림 없는 자애와 객관적인 진리로\n비구는 온 세상을 위한 평화와 공덕의\n완전한 그릇이 됩니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
