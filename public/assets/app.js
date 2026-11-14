@@ -1487,11 +1487,11 @@ const fnMark = h => h.replace(/^\[\^([^\]]+)\]:\s*/, '<span class="fn-no" data-f
 // 소제목 알아보기: 빈칸·괄호 속 풀이를 빼고 목차 제목과 같으면 소제목
 const isHead = t => /^## /.test(t);
 // **굵은 글씨**: 관리자 화면 본문에서 ** 로 감싼 곳 (화면에서는 굵게, 듣기·찾기·밑줄에서는 ** 를 뺌)
-const unB = s => String(s || '').replace(/\*\*|==|\{\{|\}\}|@@/g, '').replace(/^(?:\^\^|::|>>|\|\||\+\+) /gm, '');
+const unB = s => String(s || '').replace(/\*\*|==|\{\{|\}\}|@@|°°/g, '').replace(/^(?:\^\^|::|>>|\|\||\+\+) /gm, '');
 // 검색 결과에 보일 글: 그림 주소·## ·각주 표시 같은 내부 부호를 뺌
 const plainT = s => unB(s).replace(/!\[[^\]]*\]\([^)]*\)/g, ' ').replace(/^#{1,6} /gm, '').replace(/\[\^\d+\]:?\s?/g, ' ').replace(/\[\[[^\]]*\]\]/g, ' ');
 // **굵게**, ==색 강조(인쇄본·전자책의 하늘색 글자)==
-const boldMark = h => h.replace(/ㆍ/g, '·').replace(/\*\*(?!\s|\*\*)([\s\S]*?[^\s*])\*\*/g, '<strong>$1</strong>').replace(/==(?=\S)([\s\S]*?\S)==/g, '<span class="hl">$1</span>').replace(/\{\{([\s\S]*?)\}\}/g, '<span class="faint" title="생략할 수 있는 부분">$1</span>').replace(/@@([\s\S]*?)@@/g, '<span class="pron">$1</span>');  // @@…@@ 빠알리 한글 소리 줄 (DL-0027: 원본처럼 굵은 둥근 글꼴)  // {{…}} 희미한 글자 (DL-0027: 인도자가 없거나 간략히 할 때 생략하는 부분)
+const boldMark = h => h.replace(/ㆍ/g, '·').replace(/\*\*(?!\s|\*\*)([\s\S]*?[^\s*])\*\*/g, '<strong>$1</strong>').replace(/==(?=\S)([\s\S]*?\S)==/g, '<span class="hl">$1</span>').replace(/\{\{([\s\S]*?)\}\}/g, '<span class="faint" title="생략할 수 있는 부분">$1</span>').replace(/@@([\s\S]*?)@@/g, '<span class="pron">$1</span>').replace(/°°([\s\S]*?)°°/g, '<span class="pli">$1</span>');  // @@…@@ 빠알리 한글 소리 줄 (DL-0027: 원본처럼 굵은 둥근 글꼴)  // {{…}} 희미한 글자 (DL-0027: 인도자가 없거나 간략히 할 때 생략하는 부분)
 // 빠알리어 한글 표기(발음 부호 붙은 한글): 텍스트 JSON 의 ph 사전(tools/pali_hangul.py)대로 바꿔 PaliHangul 글꼴로 — 본문 글자는 그대로, 화면에만
 let PH_RE = null, PH_OF = null;
 const phMark = h => {

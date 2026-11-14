@@ -163,6 +163,12 @@ def PR(t):
     return f'@@{t}@@' if t else t
 
 
+def IT(t):
+    # 빠알리 로마자 줄: °°…°° → 화면에서 기울임(인쇄본 일러두기 '빨리어 표기는 이탤릭체로 통일') (운영자 요청, 2026-11-15)
+    t = t.strip()
+    return f'°°{t}°°' if t else t
+
+
 def ko_join(a, b):
     return a + b if not a.endswith(' ') else a + b.lstrip()
 
@@ -216,7 +222,7 @@ def build_paras(P, prose=False, each=False):
             cur['lines'][-1] = ko_join(cur['lines'][-1], t0.rstrip() if not t0.endswith(' ') else t0)
             cur['_raw_end'] = t0
         else:
-            cur['lines'].append(PR(t0) if k == 'pron' else t0)
+            cur['lines'].append(PR(t0) if k == 'pron' else IT(t0) if k == 'lat' else t0)
         cur['src'].append(l)
         prev = l
     out = []
@@ -227,8 +233,9 @@ def build_paras(P, prose=False, each=False):
         src_lines = p['src']
         cols = [split_cols(l, mid) for l in src_lines]
         if len(src_lines) >= 2 and all(cols) and not any(l.get('_wrap') for l in src_lines):
-            left = [(PR if l['_k'] == 'pron' else str.strip)(seg_text(c[0])) for c, l in zip(cols, src_lines)]
-            right = [(PR if l['_k'] == 'pron' else str.strip)(seg_text(c[1])) for c, l in zip(cols, src_lines)]
+            F = lambda l: PR if l['_k'] == 'pron' else IT if l['_k'] == 'lat' else str.strip
+            left = [F(l)(seg_text(c[0])) for c, l in zip(cols, src_lines)]
+            right = [F(l)(seg_text(c[1])) for c, l in zip(cols, src_lines)]
             out.append('\n'.join(left + right)); log['2단'] += 1; continue
         ls = [x.strip() for x in p['lines'] if x.strip()]
         out.append('\n'.join(ls))
