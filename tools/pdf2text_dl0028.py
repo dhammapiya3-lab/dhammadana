@@ -75,13 +75,26 @@ for l in lines_of(src[0]):   # 차례 줄은 인쇄된 줄 그대로(이어 붙�
 print('1쪽 차례 아닌 줄', body1)
 PAGES[0]['paras'] = [':: ' + body1[0], '^^ ' + body1[1], '## ' + body1[2].strip('* ').strip()] + ['\n'.join(toc_lines)] + body1[3:]
 
+# 곧은 따옴표 " ' → 한글 따옴표 “ ” ‘ ’ (운영자 요청, 2026-11-15 — 한글 파일 교정본과 같은 규칙)
+# 앞이 줄 첫머리·빈칸·여는 괄호면 여는 따옴표, 아니면 닫는 따옴표. 빈칸 뒤라도 뒤가 빈칸·줄 끝이면 닫는 따옴표.
+def curly(s):
+    o = []
+    for i, ch in enumerate(s):
+        if ch in '"\'':
+            p = s[i-1] if i else '\n'; n = s[i+1] if i + 1 < len(s) else '\n'
+            op = p in ' \n\t\xa0([{<「『“‘' and n not in ' \n\t\xa0'
+            ch = ('“' if op else '”') if ch == '"' else ('‘' if op else '’')
+            log['따옴표 ' + ch] += 1
+        o.append(ch)
+    return ''.join(o)
+
 # 운영자가 정한 맞춤법·띄어쓰기 교정 (2026-11-15, tools/dl0028_fixes.json — 한글 파일 교정본과 같은 목록)
 FIXES = json.load(open(os.path.join(REPO, 'tools/dl0028_fixes.json')))
 for P in PAGES:
     for k, p in enumerate(P['paras']):
         for old, new in FIXES:
             if old in p: log['교정 ' + old] += p.count(old); p = p.replace(old, new)
-        P['paras'][k] = p
+        P['paras'][k] = curly(p)
 chapters = [('차례', 1)]
 for P in PAGES:
     for k, p in enumerate(P['paras']):
