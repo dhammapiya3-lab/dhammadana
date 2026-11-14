@@ -76,12 +76,26 @@ async function findBudget(env) {  // 아이디 찾기 메일: 사이트 전체 �
   c.n++; await putJ(env, k, c); return true;
 }
 
-const DATA_KEY = /^(bm|ul|hist|plast|pl|pos-[\w.-]{1,40}|ppos-[^\s]{1,300}|sub-[\w.-]{1,60})$/;
+const DATA_KEY = /^(bm|ul|hist|plast|pl|pos-[\w.-]{1,40}|ppos-[^\s]{1,300}|sub-[\w.-]{1,60}|sb-b-[\w.-]{1,60})$/;  // sb-b-<책>: 그림책 사이트 내 서재
 
-export async function onRequestPost({ request, env }) {
+// 그림책 사이트(storybooks.dhammadana.kr)에서도 같은 회원으로 로그인·내 서재 이어 읽기 (운영자 요청, 2026-11-14)
+// 그 사이트에서는 로그인·확인·로그아웃·기록 맞추기만 됨 (가입·비밀번호 찾기는 이 사이트에서)
+const SB_ORIGIN = 'https://storybooks.dhammadana.kr', SB_OPS = new Set(['login', 'me', 'logout', 'sync']);
+const cors = (r, origin) => { if (origin !== SB_ORIGIN) return r; const h = new Headers(r.headers); h.set('access-control-allow-origin', SB_ORIGIN); h.set('vary', 'Origin'); return new Response(r.body, { status: r.status, headers: h }); };
+export const onRequestOptions = ({ request }) => request.headers.get('origin') === SB_ORIGIN
+  ? new Response(null, { status: 204, headers: { 'access-control-allow-origin': SB_ORIGIN, 'access-control-allow-methods': 'POST', 'access-control-allow-headers': 'content-type', 'access-control-max-age': '86400', vary: 'Origin' } })
+  : new Response(null, { status: 403 });
+
+export async function onRequestPost(ctx) {
+  const origin = ctx.request.headers.get('origin') || '';
+  return cors(await handle(ctx, origin), origin);
+}
+
+async function handle({ request, env }, origin) {
   if (!env.PAPER) return json({ error: '회원 저장소가 아직 연결되지 않았습니다.' }, 503);
   let b = {}; try { b = await request.json(); } catch (e) { return json({ error: '잘못된 요청입니다.' }, 400); }
   const op = String(b.op || '');
+  if (origin === SB_ORIGIN && !SB_OPS.has(op)) return json({ error: '이 일은 법보시 도서관(dhammadana.kr)에서 해 주세요.' }, 403);
 
   if (op === 'signup') {
     const id = normId(b.id), email = String(b.email || '').trim();
@@ -169,6 +183,7 @@ export async function onRequestPost({ request, env }) {
       if (!cur[k] || x.t > cur[k].t) { cur[k] = { v: x.v, t: Math.min(x.t, Date.now() + 60e3) }; changed = true; }
     }
     if (changed) { const s = JSON.stringify(cur); if (s.length > 4e6) return json({ error: '저장할 기록이 너무 많습니다.' }, 413); await putJ(env, dk, cur); }
+    if (b.only === 'sb') return json({ ok: true, data: Object.fromEntries(Object.entries(cur).filter(([k]) => k.startsWith('sb-'))) });
     return json({ ok: true, data: cur });
   }
   // 아래는 비밀번호를 한 번 더 확인
