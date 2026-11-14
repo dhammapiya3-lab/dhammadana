@@ -849,7 +849,8 @@ function renderReader() {
   history.replaceState(history.state, '', `/read/${R.id}/${n}` + location.search);
 }
 function go(n, ci) { if (!R) return; if (R.ttsLocked) { toast('듣기가 잠겨 있습니다. 🔒 잠김 단추를 눌러 풀어 주세요'); return; } if (AB.on) AB.detached = true; /* 직접 다른 곳으로 가면 오디오북 따라가기를 멈춤 (📍 로 다시) */ R.chForce = ci == null || isNaN(ci) ? null : ci; R.i = Math.max(0, Math.min(R.pages.length - 1, n - 1)); stopSpeak(); renderReader(); if (R.view === 'page') $('#rBody').scrollTop = 0; }
-const immersive = () => matchMedia('(max-width:700px)').matches;
+// 휴대폰·태블릿(손가락 화면)은 가로로 눕혀 넓어져도(양쪽으로 보기 등) 같은 방식으로 메뉴를 숨김 (운영자 요청, 2026-11-14)
+const immersive = () => matchMedia('(max-width:700px)').matches || matchMedia('(hover:none) and (pointer:coarse)').matches;
 function bindReader() {
   const el = $('#reader');
   const reopen = id => $('#' + id).classList.add('open');
@@ -992,7 +993,7 @@ function bindReader() {
   const spB = $('#rSpread', el); if (spB) spB.onclick = async () => { R.spread = !R.spread; store.set('rspread-' + R.id, R.spread);
     // 휴대폰 세로 화면에서 켜면 저절로 가로로 (전체 화면 + 화면 방향 고정 — 안드로이드 크롬 등에서만 됨, 아이폰은 직접 돌려야 함) (운영자 요청, 2026-11-14)
     if (R.spread && !spreadWide() && screen.orientation && screen.orientation.lock) { try { if (!document.fullscreenElement) { await document.documentElement.requestFullscreen(); R.spreadFs = true; } await screen.orientation.lock('landscape'); R.spreadLock = true; } catch (e) {} }
-    if (!R.spread && R.spreadLock) { try { screen.orientation.unlock(); } catch (e) {} R.spreadLock = false; if (R.spreadFs && document.fullscreenElement) { try { await document.exitFullscreen(); } catch (e) {} } R.spreadFs = false; } const pn = R.i + 1; renderReader(); const m = $('#pm-' + pn); if (m) m.scrollIntoView(); setTimeout(() => R && toast(R.spread && !spreadWide() ? '휴대폰을 가로로 돌려 주세요 — 가로 화면에서 양쪽으로 보입니다' : R.spread ? (R.spreadPali ? '양쪽으로 봅니다 (왼쪽 빠알리 · 오른쪽 번역)' : '양쪽으로 봅니다 (짝수 쪽 왼쪽 · 홀수 쪽 오른쪽)') : '한쪽씩 봅니다'), 700); };
+    if (!R.spread && R.spreadLock) { try { screen.orientation.unlock(); } catch (e) {} R.spreadLock = false; if (R.spreadFs && document.fullscreenElement) { try { await document.exitFullscreen(); } catch (e) {} } R.spreadFs = false; } const pn = R.i + 1; renderReader(); const m = $('#pm-' + pn); if (m) m.scrollIntoView(); if (immersive() && $('#reader')) $('#reader').classList.add('chrome-off'); setTimeout(() => R && toast(R.spread && !spreadWide() ? '휴대폰을 가로로 돌려 주세요 — 가로 화면에서 양쪽으로 보입니다' : R.spread ? (R.spreadPali ? '양쪽으로 봅니다 (왼쪽 빠알리 · 오른쪽 번역)' : '양쪽으로 봅니다 (짝수 쪽 왼쪽 · 홀수 쪽 오른쪽)') : '한쪽씩 봅니다'), 700); };
   $$('[data-spread]', el).forEach(b => b.onclick = () => { R.spread = b.dataset.spread === '1'; store.set('rspread-' + R.id, R.spread); renderReader(); reopen('p-font'); });
   $$('[data-rmode]', el).forEach(b => b.onclick = () => { applyMode(b.dataset.rmode); renderReader(); reopen('p-mode'); });
   const cur = () => R.pages[R.i];
