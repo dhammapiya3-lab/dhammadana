@@ -398,6 +398,14 @@ const PEOPLE = (() => {
   return { raw, by };
 })();
 const peopleOf = b => [...new Set(PEOPLE.raw.filter(x => x.b === b).map(x => x.key))];
+let _ord; const LIB_ORD = () => _ord || (_ord = new Map(libOrder().map((b, i) => [b.id, i])));
+// 도서관 목록: 같은 저자의 책은 모아서 나란히 — 저자 묶음은 그 저자의 가장 최근 책 순서로, 묶음 안은 등록 순서대로 (운영자 요청, 2026-11-15)
+const authorKey = b => tIds(b)[0] ? 't:' + tIds(b)[0] : (peopleOf(b)[0] ? 'p:' + peopleOf(b)[0] : 'b:' + b.id);
+function libOrder() {
+  const L = LIB(), first = new Map();
+  L.forEach((b, i) => { const k = authorKey(b); if (!first.has(k)) first.set(k, i); });
+  return L.map((b, i) => ({ b, i, g: first.get(authorKey(b)) })).sort((x, y) => x.g - y.g || x.i - y.i).map(x => x.b);
+}
 // 책 소개의 지은이 줄: 이름마다 그 사람의 책 모아 보기 링크 (글자는 그대로)
 // 스승 목록에 있는 분은 스승 소개 페이지로 (운영자 요청, 2026-11-12)
 // 지은이 이름이 자료 제공처·협력 단체 이름과 같으면 그 단체 페이지로 ('(사)'·'사단법인'·띄어쓰기 무시 — 운영자 요청, 2026-11-14: 한국테라와다불교 → (사)한국테라와다불교)
@@ -419,7 +427,7 @@ function langsOf(b) { const v = b.original_language; return (Array.isArray(v) ? 
 function coverCard(b) {
   const f = formats(b), fc = fmtsCard(b);
   const tr = b.teacher ? tradOfTeacher(b.teacher) : null;
-  return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${esc([...new Set(tIds(b).map(id => tradOfTeacher(id)?.id).filter(Boolean))].join('|'))}" data-teacher="${esc(tIds(b).join('|'))}" data-region="${esc(countriesOf(b).join('|'))}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(fc.map(x => x.k).join('|'))}" data-lang="${esc(langsOf(b).join('|'))}" data-btype="${esc(b.book_type || '')}" data-pub="${esc(pubsAll(b).map(x => x.key).join('|'))}" data-person="${esc(peopleOf(b).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}">
+  return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${esc([...new Set(tIds(b).map(id => tradOfTeacher(id)?.id).filter(Boolean))].join('|'))}" data-teacher="${esc(tIds(b).join('|'))}" data-region="${esc(countriesOf(b).join('|'))}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(fc.map(x => x.k).join('|'))}" data-lang="${esc(langsOf(b).join('|'))}" data-btype="${esc(b.book_type || '')}" data-pub="${esc(pubsAll(b).map(x => x.key).join('|'))}" data-person="${esc(peopleOf(b).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}" data-ord="${LIB_ORD().get(b.id) ?? ''}">
   <div class="cover">${!f.length ? '<span class="soon">준비 중</span>' : ''}${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지" loading="lazy">` : `<div class="cover-ph">${esc(b.title)}</div>`}</div>
   <div class="t">${esc(b.title)}</div><div class="a">${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>${pubLine(b) ? `<div class="a publ">${esc(pubLine(b))}</div>` : ''}
   ${f.length ? `<div class="fmt">${fc.map(x => `<span>${x.k}${x.ext ? ' ↗' : ''}</span>`).join('')}</div>` : ''}</a>`;
@@ -550,7 +558,7 @@ function libraryBody() {
   <section><div class="toolbar"><div><h1 class="h-page">법보시 도서관</h1><div class="muted small">자료 <span id="libCount">${LIB().length}</span>권</div></div>
     <label class="small">정렬 <select id="sort"><option value="new">최근 등록순</option><option value="title">제목 가나다순</option></select></label></div>
     <div class="active-filters" id="activeFilters"></div>
-    <div class="grid" id="libGrid">${LIB().map(coverCard).join('')}</div>
+    <div class="grid" id="libGrid">${libOrder().map(coverCard).join('')}</div>
     <p class="muted" id="libEmpty" hidden>조건에 맞는 자료가 아직 없습니다. 찾아보기를 줄여 보세요.</p>
   </section></div>`;
 }

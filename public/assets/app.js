@@ -408,7 +408,7 @@ function initLibrary() {
   };
   const sortBy = () => {
     const g = $('#libGrid'), v = $('#sort').value;
-    $$('.book', g).sort((a, b) => v === 'title' ? a.dataset.title.localeCompare(b.dataset.title, 'ko') : (b.dataset.added || '').localeCompare(a.dataset.added || '')).forEach(x => g.appendChild(x));
+    $$('.book', g).sort((a, b) => v === 'title' ? a.dataset.title.localeCompare(b.dataset.title, 'ko') : ((+a.dataset.ord || 0) - (+b.dataset.ord || 0)) || (b.dataset.added || '').localeCompare(a.dataset.added || '')).forEach(x => g.appendChild(x));  // 최근 등록순: 같은 저자끼리 모아서(data-ord)
   };
   $$('.filters input[data-f]').forEach(c => c.onchange = () => { run(); sync(); });
   showEmpty.onchange = () => { store.set('showEmpty', showEmpty.checked); run(); };
