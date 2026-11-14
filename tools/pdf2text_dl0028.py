@@ -75,6 +75,13 @@ for l in lines_of(src[0]):   # 차례 줄은 인쇄된 줄 그대로(이어 붙�
 print('1쪽 차례 아닌 줄', body1)
 PAGES[0]['paras'] = [':: ' + body1[0], '^^ ' + body1[1], '## ' + body1[2].strip('* ').strip()] + ['\n'.join(toc_lines)] + body1[3:]
 
+# 운영자가 정한 맞춤법·띄어쓰기 교정 (2026-11-15, tools/dl0028_fixes.json — 한글 파일 교정본과 같은 목록)
+FIXES = json.load(open(os.path.join(REPO, 'tools/dl0028_fixes.json')))
+for P in PAGES:
+    for k, p in enumerate(P['paras']):
+        for old, new in FIXES:
+            if old in p: log['교정 ' + old] += p.count(old); p = p.replace(old, new)
+        P['paras'][k] = p
 chapters = [('차례', 1)]
 for P in PAGES:
     for k, p in enumerate(P['paras']):
