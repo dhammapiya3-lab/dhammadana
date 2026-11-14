@@ -164,6 +164,9 @@
       if (!nv) { location.href = url; return; }
       track.innerHTML = nv.querySelector('.sv-track').innerHTML;
       for (const k of ['key', 'next', 'nextTitle', 'prev', 'prevTitle', 'book', 'bookTitle', 'cover', 'title']) { if (nv.dataset[k]) sv.dataset[k] = nv.dataset[k]; else delete sv.dataset[k]; }
+      { const a = document.querySelector('.story-dl'), b = doc.querySelector('.story-dl');  // 이 이야기 내려받기 줄
+        if (a) a.remove(); if (b) document.querySelector('.sv-thumbs')?.after(document.importNode(b, true));
+        const nd = doc.querySelector('.sv-dl'), od = sv.querySelector('.sv-dl'); if (nd && od) od.dataset.name = nd.dataset.name; }
       for (const sel of ['.story h1', '.sv-thumbs', '.story .prose', '.story .pn', '.story .orig']) {
         const a = document.querySelector(sel), b = doc.querySelector(sel);
         if (a && b) a.replaceWith(document.importNode(b, true));
@@ -204,6 +207,12 @@
     } catch (e) {}
     window.sbSyncSoon && window.sbSyncSoon();
   };
+  // 지금 보는 그림 한 장 내려받기 (원본 크기, 한글 파일 이름)
+  const dlBtn = sv.querySelector('.sv-dl');
+  if (dlBtn) dlBtn.addEventListener('click', e => {
+    const i = Math.min(cur, pages.length - 1), nn = String(i + 1).padStart(2, '0');
+    dlBtn.href = `/dl/${sv.dataset.key}/${nn}.jpg?n=${encodeURIComponent((sv.dataset.dlName || dlBtn.dataset.name) + '_' + nn + '.jpg')}`;
+  });
   track.addEventListener('scroll', () => {
     const i = Math.round(track.scrollLeft / track.clientWidth);
     if (i !== cur) show(i);

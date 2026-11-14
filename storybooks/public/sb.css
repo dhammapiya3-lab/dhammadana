@@ -81,7 +81,7 @@ header.site{border-bottom:1px solid var(--line)}
 .sv-btn:hover{opacity:1;background:rgba(0,0,0,.55)}
 .sv-btn.prev{left:8px} .sv-btn.next{right:8px}
 .sv-bar{display:flex;gap:10px;align-items:center;justify-content:center;padding:8px;background:#1f1b18;color:#ddd;font-size:14px}
-.sv-bar button{white-space:nowrap;background:none;border:1px solid #55504a;color:#eee;border-radius:999px;padding:3px 14px;cursor:pointer;font:inherit;font-size:13.5px}
+.sv-bar button,.sv-bar .sv-dl{white-space:nowrap;background:none;border:1px solid #55504a;color:#eee;border-radius:999px;padding:3px 14px;cursor:pointer;font:inherit;font-size:13.5px}
 .sv-bar button[aria-pressed="true"]{background:var(--robe);border-color:var(--robe)}
 .sv:fullscreen{border-radius:0;display:flex;flex-direction:column;justify-content:center}
 .sv:fullscreen .sv-page{aspect-ratio:auto;height:calc(100vh - 46px)}
@@ -154,3 +154,10 @@ html.sv-lock,html.sv-lock body{overflow:hidden}
 .qex .qg{color:var(--ink-soft);margin:0 2px 0 8px}.qex .qg:first-child{margin-left:0}
 .qex button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:3px 11px;cursor:pointer;font:inherit}
 .qex button:hover{border-color:var(--robe)}
+/* 내려받기 */
+.dl{margin:22px 0;padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:var(--paper-2)}
+.dl h2{font-size:17px;margin:0 0 4px}.dl p{margin:4px 0}
+.dl-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.dl-row .btn small{color:var(--ink-soft);font-size:12px;margin-left:4px}
+.story-dl{margin:12px 0 4px}.story-dl .muted{font-size:14px;margin-right:2px}
+.sv-bar .sv-dl{color:#eee;text-decoration:none!important}

@@ -8,6 +8,7 @@ const rd = f => JSON.parse(fs.readFileSync(path.join(ROOT, 'data', f), 'utf8'));
 const CAT = rd('catalog.json');      // 원 사이트 구조 (영어 원문)
 const KO = rd('ko.json');            // 한국어 번역
 const READY = rd('ready.json');
+const DL = (() => { try { return rd('dl.json'); } catch (e) { return {}; } })();  // 내려받기 파일 크기 (그림책 작업이 만듦)
 const STAMP = (() => { try { return rd('stamp.json'); } catch (e) { return {}; } })();  // 이야기마다 그림 판 번호 (?v=)      // 한글 그림이 준비된 이야기 { "책/이야기": 그림 수 }
 const S = KO.site, U = KO.ui;
 const OUT = path.join(ROOT, 'dist');
@@ -21,6 +22,9 @@ copyDir(path.join(ROOT, 'public'), OUT);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const paras = s => String(s || '').split(/\n\s*\n/).map(p => `<p>${esc(p).replace(/\n/g, '<br>')}</p>`).join('');
 const sid = f => f.replace(/\.html?$/, '');
+const mb = n => n >= 1e6 ? (n / 1e6).toFixed(n >= 1e8 ? 0 : 1) + 'MB' : Math.max(1, Math.round(n / 1e3)) + 'KB';
+const fname = s => String(s).replace(/[\\/:*?"<>|]/g, '·');
+const dlUrl = (p, name) => `/dl/${p}?n=${encodeURIComponent(fname(name))}`;
 const wheel = cls => `<svg class="${cls}" viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="20" cy="20" r="15"/><circle cx="20" cy="20" r="3.2"/><path d="M20 5v30M5 20h30M9.4 9.4l21.2 21.2M30.6 9.4L9.4 30.6"/></g></svg>`;
 
 // 책 정보 모으기 (번역이 없으면 영어 원문을 쓰고 표시)
@@ -120,6 +124,8 @@ for (const slug of Object.keys(CAT.books).filter(b => PUB.has(b))) {
   ${KO.about_work?.[slug]?.length ? `<aside class="work"><h2>문헌 정보</h2><dl>${KO.about_work[slug].map(([a, v]) => `<dt>${esc(a)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></aside>` : ''}
   <div class="prose">${b.intro ? paras(b.intro) : `<p class="muted">책 소개를 우리말로 옮기는 중입니다. 아래는 영어 원문입니다.</p><p lang="en">${esc(b.introEn)}</p>`}</div>
   <div id="resume" data-slug="${esc(slug)}" hidden></div>
+  ${DL[slug] ? `<aside class="dl"><h2>책 전체 내려받기</h2><p class="muted">한글판 이야기 ${DL[slug].stories}편, 그림 ${DL[slug].n}장. 맨 끝에 출처(CC BY-SA 4.0) 쪽이 있습니다.</p>
+  <p class="dl-row"><a class="btn" href="${dlUrl(`${slug}/_book.pdf`, `${b.title} (인쇄용).pdf`)}">PDF 인쇄용 <small>${mb(DL[slug].pdf)}</small></a><a class="btn" href="${dlUrl(`${slug}/_book_s.pdf`, `${b.title} (보기용).pdf`)}">PDF 보기용 <small>${mb(DL[slug].pdfs)} · 작은 그림</small></a><a class="btn" href="${dlUrl(`${slug}/_book.zip`, `${b.title} (그림 파일).zip`)}">그림 파일 ZIP <small>${mb(DL[slug].zip)}</small></a></p></aside>` : ''}
   <h2>차례</h2><ol class="toc">${toc}</ol>
   <p class="orig"><a href="${S.orig_url}${slug}/index.htm">${U.en_link} ↗</a></p></div>` }));
 
@@ -131,13 +137,14 @@ for (const slug of Object.keys(CAT.books).filter(b => PUB.has(b))) {
     const viewer = n ? `<div class="sv" id="sv" data-key="${esc(key)}" data-book="${esc(slug)}" data-book-title="${esc(b.title)}" data-cover="${esc(b.cover)}" data-title="${esc(storyTitle(slug, s))}"${next && READY[`${slug}/${sid(next.file)}`] ? ` data-next="/${slug}/${sid(next.file)}/" data-next-title="${esc(storyTitle(slug, next))}"` : ''}${prev && READY[`${slug}/${sid(prev.file)}`] ? ` data-prev="/${slug}/${sid(prev.file)}/" data-prev-title="${esc(storyTitle(slug, prev))}"` : ''} tabindex="0" aria-label="그림책 보기 (← → 키로 넘기기)">
   <div class="sv-track">${imgs.map((x, j) => `<figure class="sv-page"><img src="${S.img_base}/${key}/big/${x}.jpg${vq}" data-big="${S.img_base}/${key}/big/${x}.jpg${vq}" data-s="${S.img_base}/${key}/s/${x}.jpg${vq}" alt="${j + 1}쪽" ${j > 1 ? 'loading="lazy"' : ''}></figure>`).join('')}</div>
   <button class="sv-btn prev" aria-label="앞 그림">‹</button><button class="sv-btn next" aria-label="다음 그림">›</button>
-  <div class="sv-bar"><span class="sv-count">1 / ${n}</span><button class="sv-auto" aria-pressed="false">▶ 자동<span class="lg"> 넘김</span></button><button class="sv-save" aria-pressed="false" title="작은 그림으로 보아 휴대폰 데이터를 아낍니다"><span class="lg">데이터 </span>절약</button><button class="sv-full">⛶ 전체<span class="lg"> 화면</span></button></div></div>
+  <div class="sv-bar"><span class="sv-count">1 / ${n}</span><button class="sv-auto" aria-pressed="false">▶ 자동<span class="lg"> 넘김</span></button><button class="sv-save" aria-pressed="false" title="작은 그림으로 보아 휴대폰 데이터를 아낍니다"><span class="lg">데이터 </span>절약</button><button class="sv-full">⛶ 전체<span class="lg"> 화면</span></button><a class="sv-dl" href="#" title="지금 보는 그림을 원본 크기로 내려받습니다" data-name="${esc(fname(`${b.title} - ${storyTitle(slug, s)}`))}">⬇<span class="lg"> 이 그림</span></a></div></div>
   <div class="sv-thumbs">${imgs.map((x, j) => `<button data-i="${j}"><img src="${S.img_base}/${key}/s/${x}.jpg${vq}" alt="${j + 1}쪽" loading="lazy"></button>`).join('')}</div>`
       : `<div class="notyet"><p>이 이야기의 그림은 아직 우리말로 옮기는 중입니다.</p><p><a class="btn" href="${S.orig_url}${slug}/${s.file}">${U.en_link} ↗</a></p></div>`;
     put(`${key}/index.html`, layout({ title: `${storyTitle(slug, s)} — ${b.title}`, page: 'story', desc: k.intro || s.intro, body: `<div class="wrap story">
   <nav class="crumb"><a href="/">${U.home}</a> › <a href="/${slug}/">${esc(b.title)}</a></nav>
   <h1>${esc(storyTitle(slug, s))}</h1>
   ${viewer}
+  ${n && DL[key] ? `<p class="dl-row story-dl"><span class="muted">이 이야기 내려받기</span><a class="btn" href="${dlUrl(`${key}.pdf`, `${b.title} - ${storyTitle(slug, s)}.pdf`)}">PDF <small>${mb(DL[key].pdf)}</small></a><a class="btn" href="${dlUrl(`${key}.zip`, `${b.title} - ${storyTitle(slug, s)} (그림 파일).zip`)}">그림 파일 ZIP <small>${mb(DL[key].zip)}</small></a></p>` : ''}
   <div class="prose">${k.intro ? paras(k.intro) : (s.intro ? `<p lang="en" class="muted">${esc(s.intro)}</p>` : '')}</div>
   <nav class="pn">${prev ? `<a href="/${slug}/${sid(prev.file)}/">← ${esc(storyTitle(slug, prev))}</a>` : '<span></span>'}${next ? `<a href="/${slug}/${sid(next.file)}/">${esc(storyTitle(slug, next))} →</a>` : '<span></span>'}</nav>
   <p class="orig"><a href="${S.orig_url}${slug}/${s.file}">${U.en_link} ↗</a></p></div>` }));
