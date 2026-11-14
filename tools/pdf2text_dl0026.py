@@ -305,6 +305,6 @@ for _m in re.finditer('[\uf900-\ufaff]', _ht):
     if _plain in body: body = body.replace(_plain, _l + _c + _r, 1); log['compat'] += 1
     else: log['compat-miss'] += 1; print('호환 한자 못 찾음', repr(_l + _c + _r))
 out = os.path.join(REPO, 'content/texts', f'{BK}.json')
-json.dump({'book': BK, 'edition': ED, 'toc': toc, 'images': sorted(set(images)), 'body': body}, open(out, 'w'), ensure_ascii=False, indent=1)
+json.dump({'book': BK, 'edition': ED, 'spread': True, 'toc': toc, 'images': sorted(set(images)), 'body': body}, open(out, 'w'), ensure_ascii=False, indent=1)
 print(log); json.dump(NOKEY, open('/tmp/b26/nokey.json', 'w'), ensure_ascii=False)
 print(f'쪽 {len(pages)} · 장 {len(chapters)} · 소제목 {len(subs)} · 그림 {len(set(images))} → {out}')

@@ -1049,3 +1049,11 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 /* 『법구경 이야기 1』 앞 지도: 지도마다 한 화면, 글 폭보다 넓게(화면 폭까지)·화면 높이에 맞게 크게 (운영자 요청, 2026-11-14) */
 .r-fig:has(img[src*="DL-0023-map-"]){width:min(96vw,1500px);position:relative;left:50%;transform:translateX(-50%);margin:.4em 0 1em}
 .r-fig .fig-btn img[src*="DL-0023-map-"]{max-height:calc(100vh - 150px);max-height:calc(100dvh - 150px);max-width:100%}
+/* 양쪽으로 읽기 (운영자 요청, 2026-11-14): 짝수 쪽 왼쪽 · 홀수 쪽 오른쪽 — 『테라와다 불교의범』처럼 빠알리와 번역이 마주 보는 책 */
+.reflow.spread{max-width:calc(var(--mw,36em) * 2 + 3em)}
+.reflow.spread .spr{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:3em;align-items:start;position:relative}
+.reflow.spread .spr::before{content:"";position:absolute;top:0;bottom:0;left:50%;border-left:1px solid var(--line)}
+.reflow.spread .spr-l{grid-column:1}
+.reflow.spread .spr-r{grid-column:2}
+.reflow.spread .spr-pg{min-width:0;padding-bottom:1.2em}
+@media (max-width:999px){.reflow.spread .spr{column-gap:1.4em}.reflow.spread{max-width:none}}
