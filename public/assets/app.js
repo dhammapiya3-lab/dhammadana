@@ -801,7 +801,7 @@ function renderReader() {
       ${R.toc.length ? '<button class="tbtn" data-panel="toc">목차</button>' : ''}${hasText ? '<button class="tbtn" data-panel="find" aria-label="본문 검색">🔍 찾기</button>' : ''}
       <button class="tbtn" data-panel="font" aria-label="글씨 크기">가<span style="font-size:16px">가</span></button>
       ${hasText && R.speaking ? `<button class="tbtn ${R.ttsLocked ? 'on' : ''}" id="rLock" aria-pressed="${!!R.ttsLocked}" title="잠그면 실수로 멈추지 않습니다">${R.ttsLocked ? '🔒 잠김' : '🔓 잠금'}</button>` : ''}${R.ab ? `<button class="tbtn ${AB.on && !abA().paused ? 'on' : ''}" id="rAb" data-tip="${AB_TIP}" aria-label="오디오북 듣기 (${AB_TIP})">${AB.on && !abA().paused ? '❚❚ 오디오북' : '🎧 오디오북'}</button>` : ''}${hasText ? `<button class="tbtn ${R.speaking ? 'on' : ''}" id="rSpeak" ${R.ttsLocked ? 'disabled' : ''}>${R.speaking ? '■ 멈춤' : '▶ 듣기'}</button><button class="tbtn" data-panel="tts" aria-label="듣기 설정">듣기 설정</button>` : ''}
-      <button class="tbtn" data-panel="mode">화면</button>${document.fullscreenEnabled ? `<button class="tbtn" id="rFull" aria-pressed="${!!document.fullscreenElement}" title="F11 처럼 화면 가득 보기 (Esc 로 나가기)">${document.fullscreenElement ? '⛶ 전체 화면 끄기' : '⛶ 전체 화면'}</button>` : ''}
+      <button class="tbtn" data-panel="mode">화면</button>${R.spreadOk && spreadWide() && R.view !== 'page' ? `<button class="tbtn${R.spread ? ' on' : ''}" id="rSpread" aria-pressed="${!!R.spread}" title="왼쪽·오른쪽 쪽을 책처럼 나란히">${R.spread ? '📄 한쪽씩 보기' : '📖 양쪽으로 보기'}</button>` : ''}${document.fullscreenEnabled ? `<button class="tbtn" id="rFull" aria-pressed="${!!document.fullscreenElement}" title="F11 처럼 화면 가득 보기 (Esc 로 나가기)">${document.fullscreenElement ? '⛶ 전체 화면 끄기' : '⛶ 전체 화면'}</button>` : ''}
       <button class="tbtn ${marked ? 'on' : ''}" id="rMark" aria-pressed="${marked}">${marked ? '★ 책갈피' : '☆ 책갈피'}</button>
       <button class="tbtn" data-panel="bm">책갈피 목록</button>
       ${hasText ? '<button class="tbtn" data-panel="ul">밑줄 모음</button>' : ''}
@@ -988,6 +988,7 @@ function bindReader() {
   $$('[data-lh]', el).forEach(b => b.onclick = () => { R.lh = +b.dataset.lh; store.set('rlh', R.lh); renderReader(); reopen('p-font'); });
   $$('[data-font]', el).forEach(b => b.onclick = () => { R.font = b.dataset.font; store.set('rfont', R.font); renderReader(); reopen('p-font'); });
   $$('[data-mw]', el).forEach(b => b.onclick = () => { R.mw = +b.dataset.mw; store.set('rmw', R.mw); renderReader(); reopen('p-font'); });
+  const spB = $('#rSpread', el); if (spB) spB.onclick = () => { R.spread = !R.spread; store.set('rspread', R.spread); const pn = R.i + 1; renderReader(); const m = $('#pm-' + pn); if (m) m.scrollIntoView(); toast(R.spread ? '양쪽으로 봅니다 (왼쪽 빠알리 · 오른쪽 번역)' : '한쪽씩 봅니다'); };
   $$('[data-spread]', el).forEach(b => b.onclick = () => { R.spread = b.dataset.spread === '1'; store.set('rspread', R.spread); renderReader(); reopen('p-font'); });
   $$('[data-rmode]', el).forEach(b => b.onclick = () => { applyMode(b.dataset.rmode); renderReader(); reopen('p-mode'); });
   const cur = () => R.pages[R.i];
