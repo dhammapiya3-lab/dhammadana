@@ -142,6 +142,9 @@ def render(src_path, boxes):
                 px = img[inner > 0].reshape(-1, 3)
                 col = np.percentile(px, 92, axis=0) if b["cover"] is True else np.array(b["cover"][::-1])
                 out[inner > 0] = col
+                if b.get("outline") and b.get("ellipse") and b.get("rect"):  # 넓힌 말풍선에 테두리를 다시 그림 (원래 말풍선과 같은 검은 선)
+                    kk_ = W / 800; r_ = [int(v * kk_) for v in b["rect"]]
+                    cv2.ellipse(out, ((r_[0] + r_[2]) // 2, (r_[1] + r_[3]) // 2), ((r_[2] - r_[0]) // 2, (r_[3] - r_[1]) // 2), 0, 0, 360, (30, 30, 30), max(2, int(2 * kk_)), cv2.LINE_AA)
             elif b.get("fill"):  # 단색 이름표: 바탕색으로 칠함 (메우기가 번지는 작은 흰 딱지)
                 col = np.median(img[(inner > 0) & (text_px == 0)], axis=0)
                 out[(cv2.dilate(mk, np.ones((3, 3), np.uint8)) > 0) & (inner > 0)] = col
@@ -194,6 +197,7 @@ def render(src_path, boxes):
                 xx += d.textlength(a, font=g)
             drawn[-1].setdefault("lines", []).append((x / scale, (y + lh * .15) / scale, (x + lw) / scale, (y + lh * .85) / scale))
             y += lh
+    render.drawn = drawn  # 글자 크기 확인용
     render.qa = check(img, out, QA, drawn, W, H)
     return pil
 
