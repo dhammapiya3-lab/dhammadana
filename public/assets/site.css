@@ -167,6 +167,7 @@ details.filter-toggle summary{cursor:pointer;font-weight:500;margin-bottom:8px}
 @media (max-width:800px){.detail{grid-template-columns:1fr;gap:24px}.detail .cover-box{max-width:240px}}
 .cover-box{border:1px solid var(--line);background:var(--paper-2)}
 .cover-box img{width:100%;display:block}
+.cover-box.wide img{height:100%;object-fit:cover;object-position:right center}  /* 펼친 표지는 오른쪽 앞표지만 (운영자 요청, 2026-11-15) */
 .crumb{font-size:13px;color:var(--ink-soft);margin-bottom:10px}
 .detail h1{font-size:30px}
 .detail .orig{font-family:var(--serif);font-style:italic;color:var(--ink-soft);margin-top:4px}

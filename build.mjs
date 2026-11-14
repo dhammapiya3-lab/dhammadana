@@ -78,6 +78,31 @@ const tIds = b => [...new Set([b.teacher, ...(b.co_teachers || [])].filter(Boole
 const providerById = id => PROVIDERS.find(p => p.id === id);
 const permById = id => PERMS.find(p => p.id === id);
 const curEd = b => (b.editions || []).find(e => e.current) || (b.editions || [])[0] || {};
+// 그림 크기(JPEG·PNG·WebP 머리만 읽음) — 가로로 긴 펼친 표지는 책 소개에서도 오른쪽 앞표지만 (운영자 요청, 2026-11-15)
+function imgSize(webPath) {
+  try {
+    const f = path.join('public', decodeURI(String(webPath || '')).replace(/^\//, ''));
+    const b = fs.readFileSync(f);
+    if (b[0] === 0x89 && b[1] === 0x50) return { w: b.readUInt32BE(16), h: b.readUInt32BE(20) };
+    if (b.toString('ascii', 0, 4) === 'RIFF' && b.toString('ascii', 8, 12) === 'WEBP') {
+      const t = b.toString('ascii', 12, 16);
+      if (t === 'VP8X') return { w: 1 + b.readUIntLE(24, 3), h: 1 + b.readUIntLE(27, 3) };
+      if (t === 'VP8 ') return { w: b.readUInt16LE(26) & 0x3fff, h: b.readUInt16LE(28) & 0x3fff };
+      if (t === 'VP8L') { const n = b.readUInt32LE(21); return { w: (n & 0x3fff) + 1, h: ((n >> 14) & 0x3fff) + 1 }; }
+    }
+    if (b[0] === 0xff && b[1] === 0xd8) {
+      let i = 2;
+      while (i < b.length) {
+        if (b[i] !== 0xff) { i++; continue; }
+        const m = b[i + 1], len = b.readUInt16BE(i + 2);
+        if (m >= 0xc0 && m <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(m)) return { w: b.readUInt16BE(i + 7), h: b.readUInt16BE(i + 5) };
+        i += 2 + len;
+      }
+    }
+  } catch (e) {}
+  return null;
+}
+const wideCover = c => { const z = imgSize(c); return z && z.w > z.h * 1.15 ? z : null; };
 const fileUrl = u => !u ? '' : /^https?:\/\//.test(u) ? u : S.files_base.replace(/\/$/, '') + '/' + u.replace(/^\//, '');
 function formats(b) {
   const e = curEd(b), f = [];
@@ -594,7 +619,7 @@ for (const b of BOOKS) {
   const extF = f.filter(x => x.ext);
   put(`book/${b.id}/index.html`, layout({
     title: b.title, nav: 'library', page: 'book', image: b.cover || '', ld: bookLd(b, e, t), desc: `${b.title} — ${b.byline}${b.translator ? ', ' + b.translator : ''}`, body: `<div class="wrap detail">
-  <div><div class="cover-box">${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지">` : `<div class="cover-ph big">${esc(b.title)}</div>`}</div></div>
+  <div><div class="cover-box${wideCover(b.cover) ? ' wide' : ''}"${wideCover(b.cover) ? ` style="aspect-ratio:${Math.round(wideCover(b.cover).w / 2)}/${wideCover(b.cover).h}"` : ''}>${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지">` : `<div class="cover-ph big">${esc(b.title)}</div>`}</div></div>
   <div class="d-body"><div class="d-head"><div class="crumb"><a href="/library/">법보시 도서관</a>${['예불집', '사전'].includes(b.book_type) ? ` › <a href="/library/?btype=${encodeURIComponent(b.book_type)}">${esc(b.book_type === '예불집' ? '예불 독송집' : b.book_type)}</a>` : b.book_type === '경전' && (b.main || [])[0] ? ` › <a href="/library/?main=${encodeURIComponent(b.main[0])}">${esc(b.main[0])}</a>` : tr ? ` › <a href="/library/?trad=${tr.id}">${esc(tr.name)}</a> › <a href="/teacher/${t.id}/">${esc(t.name)}</a>` : ''}</div>
     ${b.series ? `<div class="small muted">${esc(b.series)}</div>` : ''}
     <h1>${esc(b.title)}</h1>${b.subtitle ? `<div class="orig" style="font-style:normal">${esc(b.subtitle)}</div>` : ''}${b.original_title || langsOf(b).length ? `<div class="orig">${esc(b.original_title || '')}${langsOf(b).length ? `<span class="lang-tag${b.original_title ? '' : ' solo'}">${esc(langsOf(b).join('·'))} 원서</span>` : ''}</div>` : ''}
