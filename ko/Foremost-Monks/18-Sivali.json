@@ -1,0 +1,392 @@
+[
+ {
+  "img": "images/18-Sivali-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     310,
+     562,
+     420
+    ],
+    "ko": "시왈리 존자:\n공양을 받는 데 으뜸\n\n대연대기\n업과 공덕과 깨달음의 여정",
+    "cover": true,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Sivali-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     54,
+     84,
+     262,
+     134
+    ],
+    "ko": "3. 결실: 아라한과와\n견줄 데 없는 풍요",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     486,
+     218,
+     714,
+     250
+    ],
+    "ko": "2. 시련: 업의 빚을 견딤",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     42,
+     294,
+     316,
+     374
+    ],
+    "ko": "시왈리 존자의 길\n1. 서원: 지난 생에 심은 씨앗\n모든 행위는 윤회(saṁsāra) 속에 메아리칩니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Sivali-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     464,
+     90,
+     746,
+     386
+    ],
+    "ko": "빠두뭇따라 부처님 때, 한 귀족이\n이레 동안 큰 보시를 올렸습니다.\n\n그는 간절히 서원했습니다.\n앞으로 오실 부처님의 가르침에서\n물질적 이득을 받는 데\n으뜸가는 비구가 되기를.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Sivali-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     278,
+     294,
+     760,
+     416
+    ],
+    "ko": "여러 생이 지나, 한 마을 사람은 천 냥을 준다 해도\n소박한 꿀과 응유를 팔지 않았습니다.\n\n그는 이 음식을 위빳시 부처님께 직접 올리며\n명성과 많은 따르는 무리를 바랐습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Sivali-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     58,
+     460,
+     268
+    ],
+    "ko": "숩빠와사 공주에게서 다시 태어나니,\n그가 잉태되자 끝없는 풍요가 일었습니다.\n\n밤낮으로 선물 바구니가 들어왔습니다.\n손댄 씨앗에서는 수천 개의 싹이 돋고,\n국자로 퍼낸 음식은 줄지 않았습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Sivali-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     330,
+     332,
+     420
+    ],
+    "ko": "지난 업의 무게\n지난 행위: 한 도시를 에워싸\n칠 년 칠 일 동안 성문을 막았습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     474,
+     332,
+     742,
+     422
+    ],
+    "ko": "지금의 과보\n칠 년 동안 어머니 태 속에 갇혀 있었고,\n이레 동안 극심한 산고가 이어졌습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Sivali-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     340,
+     744,
+     430
+    ],
+    "ko": "극심한 고통에도 공주는 묵묵히 견뎠습니다.\n부처님과 법과 승가의 청정한 덕, 그리고 열반의\n지극히 평화로운 행복을 깊이 생각하며 견뎠습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Sivali-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     42,
+     314,
+     768,
+     442
+    ],
+    "ko": "부처님께서 축원하셨습니다. ‘숩빠와사 공주가 건강하기를.\n건강한 아들을 낳기를!’\n그 즉시 칠 년의 시련이 끝났습니다.\n소년 시왈리가 고통 없이 태어나 큰 기쁨을 안겨 주었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Sivali-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     432,
+     66,
+     748,
+     210
+    ],
+    "ko": "부모는 이를 기려 승가에\n큰 보시를 올렸습니다.\n\n태 속에서 칠 년을 지내 다 자라서 태어난\n일곱 살 시왈리는 기쁘게\n스님들께 물을 걸러 드렸습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Sivali-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     264,
+     310,
+     774,
+     426
+    ],
+    "ko": "사리뿟따 존자가 시왈리에게, 태 속에서 그토록 오래\n괴로웠으니 출가하겠느냐고 물었습니다.\n\n기뻐하는 어머니의 축복을 받으며 시왈리는\n출가 수행자의 삶을 살러 승원으로 떠났습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Sivali-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     288,
+     122,
+     516,
+     342
+    ],
+    "ko": "순간의 해탈\n\n머리를 깎으며\n몸의 괴로움을 관했습니다.\n첫 번째: 수다원\n두 번째: 사다함\n세 번째: 아나함\n다 깎자: 그와 함께\n아라한과를 이루었습니다.",
+    "cover": true,
+    "align": "center",
+    "ellipse": true,
+    "whole": true,
+    "em": 14,
+    "outline": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Sivali-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     400,
+     140,
+     510,
+     168
+    ],
+    "ko": "빤다와 언덕",
+    "cover": [
+     244,
+     236,
+     214
+    ],
+    "dark": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     236,
+     576,
+     264
+    ],
+    "ko": "아찌라와띠",
+    "cover": [
+     244,
+     236,
+     214
+    ],
+    "dark": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     652,
+     160,
+     790,
+     190
+    ],
+    "ko": "간다마다나 산",
+    "cover": [
+     244,
+     236,
+     214
+    ],
+    "dark": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     36,
+     278,
+     266,
+     416
+    ],
+    "ko": "시왈리 존자는 비구 오백 명을\n이끌고 험한 숲을 지나\n히마완따로 향했습니다.\n\n외딴 여덟 곳에서 천신들이\n나타나 이레 동안\n큰 보시를 올렸습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Sivali-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     502,
+     52,
+     764,
+     186
+    ],
+    "ko": "간다마다나 산에서 나가닷따 천신이\n우유와 버터밥을 끝없이 올렸습니다.\n\n천신은 이 풍요가 깟사빠 부처님 때\n지은 공덕의 과보라고 말했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Sivali-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     314,
+     760,
+     420
+    ],
+    "ko": "험한 여정에 끝없이 이어진 천상의 공양을 보시고 부처님께서\n선언하셨습니다. “비구들이여, 필수품을 넉넉히 받는\n나의 비구 제자 가운데 시왈리가 으뜸이다.”",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Sivali-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     268,
+     238,
+     538,
+     446
+    ],
+    "ko": "공덕의 무늬\n\n시왈리 존자의 여정은\n업의 깊은 짜임을 보여 줍니다.\n여러 생의 보시로 길러진\n하나의 청정한 서원은\n업의 빚을 견디고\n온전한 해탈과 견줄 데 없는\n풍요로 피어납니다.",
+    "cover": true,
+    "align": "center",
+    "ellipse": true,
+    "whole": true,
+    "em": 13,
+    "outline": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
