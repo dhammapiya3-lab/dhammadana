@@ -25,7 +25,22 @@
     ],
     "shape": "box",
     "en": "After sunset, the state chariot was left in the courtyard. In the nights it rained",
-    "ko": "해가 진 뒤 왕의 수레를 뜰에 두었는데, 밤새 비가 내렸습니다."
+    "ko": "해가 진 뒤 왕의 수레를 뜰에 두었는데, 밤새 비가 내렸습니다.",
+    "rect": [
+     60,
+     46,
+     346,
+     90
+    ],
+    "whole": true,
+    "cover": [
+     245,
+     238,
+     222
+    ],
+    "align": "center",
+    "em": 14,
+    "dark": false
    },
    {
     "seed": [
@@ -34,7 +49,17 @@
     ],
     "shape": "box",
     "en": "The pampered royal dogs crept down and gnawed the wet leather harnesses.",
-    "ko": "궁에서 귀하게 기르던 개들이 몰래 내려와 젖은 가죽 끈을 물어뜯었습니다."
+    "ko": "궁에서 귀하게 기르던 개들이 몰래 내려와 젖은 가죽 끈을 물어뜯었습니다.",
+    "rect": [
+     516,
+     362,
+     742,
+     412
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -57,7 +82,17 @@
     ],
     "shape": "box",
     "en": "And so began great slaughter in the streets of Benares.",
-    "ko": "이렇게 바라나시 거리에서 개들을 마구 죽이는 일이 시작되었습니다."
+    "ko": "이렇게 바라나시 거리에서 개들을 마구 죽이는 일이 시작되었습니다.",
+    "rect": [
+     402,
+     366,
+     740,
+     404
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -85,7 +120,17 @@
     ],
     "shape": "box",
     "en": "Calling to mind the Ten Perfections, the Bodhisatta walked alone into the city. An aura of loving-kindness disarmed isarmed the guards. Not man grew angry.",
-    "ko": "열 가지 바라밀을 떠올리며 보살은 홀로 성 안으로 걸어 들어갔습니다. 자애의 기운에 경비병들이 무기를 거두었고, 아무도 화내지 않았습니다."
+    "ko": "열 가지 바라밀을 떠올리며 보살은 홀로 성 안으로 걸어 들어갔습니다. 자애의 기운에 경비병들이 무기를 거두었고, 아무도 화내지 않았습니다.",
+    "rect": [
+     254,
+     44,
+     546,
+     116
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },

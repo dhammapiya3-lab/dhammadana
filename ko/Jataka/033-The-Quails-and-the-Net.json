@@ -88,11 +88,14 @@
     "shape": "box",
     "manual": true,
     "rect": [
-     540,
-     320,
-     738,
-     355
-    ]
+     532,
+     314,
+     744,
+     362
+    ],
+    "whole": true,
+    "cover": true,
+    "em": 14
    },
    {
     "seed": [
@@ -243,7 +246,17 @@
     ],
     "shape": "box",
     "en": "Thereupon he and his following went elsewhere.",
-    "ko": "그래서 보살은 자기를 따르는 무리를 데리고 다른 곳으로 떠났습니다."
+    "ko": "그래서 보살은 자기를 따르는 무리를 데리고 다른 곳으로 떠났습니다.",
+    "rect": [
+     414,
+     356,
+     760,
+     410
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },

@@ -41,7 +41,17 @@
     ],
     "shape": "box",
     "en": "Fishes ishes chose the monster. fish Ana nda.",
-    "ko": "물고기는 큰 물고기 아난다를 뽑았습니다."
+    "ko": "물고기는 큰 물고기 아난다를 뽑았습니다.",
+    "rect": [
+     326,
+     344,
+     476,
+     392
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [

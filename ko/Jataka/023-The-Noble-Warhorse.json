@@ -210,7 +210,17 @@
     ],
     "shape": "box",
     "en": "Horse* Horse* The seventh camp holds. The knight is slain. Benares falls.",
-    "ko": "*새 말* = 일곱째 진은 버티고, 기사는 죽고, 바라나시는 무너진다."
+    "ko": "*새 말* = 일곱째 진은 버티고, 기사는 죽고, 바라나시는 무너진다.",
+    "rect": [
+     316,
+     62,
+     600,
+     112
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -219,7 +229,17 @@
     ],
     "shape": "box",
     "en": "Rise* Rise The seventh king falls. The Kingdom",
-    "ko": "*내가 일어나면* = 일곱째 왕이 쓰러지고, 나라를 지킨다."
+    "ko": "*내가 일어나면* = 일곱째 왕이 쓰러지고, 나라를 지킨다.",
+    "rect": [
+     304,
+     230,
+     480,
+     282
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [

@@ -95,9 +95,18 @@
      53
     ],
     "ko": "무니까는 아무 일도 하지 않았습니다.",
-    "align": "left",
+    "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     76,
+     44,
+     246,
+     84
+    ],
+    "whole": true,
+    "cover": true,
+    "em": 14
    }
   ]
  },

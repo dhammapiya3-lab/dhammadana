@@ -32,7 +32,17 @@
     ],
     "shape": "box",
     "en": "He possessed rare and secret gift: the ability to understand the language of all living animals.",
-    "ko": "그는 모든 동물의 말을 알아듣는 드문 능력이 있었습니다."
+    "ko": "그는 모든 동물의 말을 알아듣는 드문 능력이 있었습니다.",
+    "rect": [
+     568,
+     64,
+     738,
+     124
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -46,7 +56,17 @@
     ],
     "shape": "box",
     "en": "Deep in the river, river, great fish swam amorously with his wife Blinded by passion and enamored by her presence, he was entirely oblivious to the dangerous world above",
-    "ko": "깊은 강에서 큰 물고기가 아내와 정답게 헤엄쳤습니다. 애욕에 눈먼 그는 물 위의 위험을 전혀 몰랐습니다."
+    "ko": "깊은 강에서 큰 물고기가 아내와 정답게 헤엄쳤습니다. 애욕에 눈먼 그는 물 위의 위험을 전혀 몰랐습니다.",
+    "rect": [
+     136,
+     352,
+     666,
+     396
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },
@@ -60,7 +80,17 @@
     ],
     "shape": "box",
     "en": "Fishermen cast their net into the currents",
-    "ko": "어부들이 물살에 그물을 던졌습니다."
+    "ko": "어부들이 물살에 그물을 던졌습니다.",
+    "rect": [
+     270,
+     188,
+     520,
+     224
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -69,7 +99,17 @@
     ],
     "shape": "box",
     "en": "Sce ing the trap, the wife swiftly made circuit and escaped.",
-    "ko": "덫을 본 아내는 재빨리 돌아서 빠져나갔습니다."
+    "ko": "덫을 본 아내는 재빨리 돌아서 빠져나갔습니다.",
+    "rect": [
+     56,
+     360,
+     396,
+     396
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "shape": "box",
@@ -108,7 +148,17 @@
     ],
     "shape": "box",
     "en": "The fishermen men began lighting glow emb rs and ittling inga sharp rp spit to roast him for their meal.",
-    "ko": "어부들은 그를 구워 먹으려고 숯불을 피우고 날카로운 꼬챙이를 깎기 시작했습니다."
+    "ko": "어부들은 그를 구워 먹으려고 숯불을 피우고 날카로운 꼬챙이를 깎기 시작했습니다.",
+    "rect": [
+     468,
+     348,
+     746,
+     396
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    }
   ]
  },

@@ -64,7 +64,16 @@
     ],
     "shape": "bubble",
     "en": "Make it wager.",
-    "ko": "내기합시다!"
+    "ko": "내기\n합시다!",
+    "rect": [
+     196,
+     258,
+     258,
+     308
+    ],
+    "whole": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -91,42 +100,48 @@
    },
    {
     "rect": [
-     240,
-     318,
-     305,
-     338
+     236,
+     314,
+     308,
+     341
     ],
     "ko": "끌채",
     "align": "center",
     "shape": "box",
-    "em": 11,
-    "manual": true
+    "em": 14,
+    "manual": true,
+    "whole": true,
+    "cover": true
    },
    {
     "rect": [
-     364,
-     318,
-     420,
-     338
+     360,
+     314,
+     423,
+     341
     ],
     "ko": "굴대",
     "align": "center",
     "shape": "box",
-    "em": 11,
-    "manual": true
+    "em": 14,
+    "manual": true,
+    "whole": true,
+    "cover": true
    },
    {
     "rect": [
-     408,
-     350,
-     492,
-     370
+     404,
+     346,
+     495,
+     373
     ],
     "ko": "향밥",
     "align": "center",
     "shape": "box",
-    "em": 12,
-    "manual": true
+    "em": 14,
+    "manual": true,
+    "whole": true,
+    "cover": true
    }
   ]
  },
@@ -200,7 +215,23 @@
     ],
     "shape": "bubble",
     "en": "Have ever broken pot, squeezed against anyone, or made messes?",
-    "ko": "제가 항아리를 깨거나, 누구를 들이받거나, 어지럽힌 적이 있습니까?"
+    "ko": "제가 항아리를 깨거나, 누구를 들이받거나, 어지럽힌 적이 있습니까?",
+    "rect": [
+     262,
+     46,
+     418,
+     120
+    ],
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -209,7 +240,23 @@
     ],
     "shape": "bubble",
     "en": "Never, my child.",
-    "ko": "한 번도 없었지, 얘야."
+    "ko": "한 번도 없었지, 얘야.",
+    "rect": [
+     140,
+     258,
+     254,
+     312
+    ],
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -218,7 +265,23 @@
     ],
     "shape": "bubble",
     "en": "Then wh call me rascal? It’s you who are to blame.",
-    "ko": "그런데 왜 저를 못된 놈이라 부르셨나요? 잘못은 주인님께 있습니다."
+    "ko": "그런데 왜 저를 못된 놈이라 부르셨나요? 잘못은 주인님께 있습니다.",
+    "rect": [
+     506,
+     254,
+     670,
+     348
+    ],
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 13
    }
   ]
  },

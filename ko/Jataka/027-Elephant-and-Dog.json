@@ -25,13 +25,16 @@
     "en": "grew inseparable. The elephant Qo refused to eat without his companion. The dog disported himself, swinging joyfully back and forth on the mighty elephant's trunk.",
     "ko": "둘은 떨어질 수 없는 사이가 되었습니다. 코끼리는 개가 없으면 먹지 않았고, 개는 큰 코끼리의 코에 매달려 신나게 그네를 탔습니다.",
     "rect": [
-     460,
-     320,
-     692,
-     382
+     456,
+     316,
+     696,
+     386
     ],
     "fill": true,
-    "align": "left"
+    "align": "center",
+    "whole": true,
+    "cover": true,
+    "em": 14
    }
   ]
  },
@@ -73,7 +76,23 @@
     ],
     "shape": "bubble",
     "en": "My state elephant a2 wastes oo away. Go, Minister. oO Find out what plagues him.",
-    "ko": "내 코끼리가 야위어 가는구나. 대신이여, 가서 무엇이 그를 괴롭히는지 알아 오라."
+    "ko": "내 코끼리가 야위어 가는구나. 대신이여, 가서 무엇이 그를 괴롭히는지 알아 오라.",
+    "rect": [
+     300,
+     50,
+     502,
+     150
+    ],
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -120,7 +139,23 @@
     ],
     "shape": "bubble",
     "en": "Yes, Yes, my lord. dog. But man took it away know not where.",
-    "ko": "예, 나리. 개 한 마리와요. 그런데 어떤 사람이 데려갔는데 어디로 갔는지 모릅니다."
+    "ko": "예, 나리. 개 한 마리와요. 그런데 어떤 사람이 데려갔는데 어디로 갔는지 모릅니다.",
+    "rect": [
+     334,
+     52,
+     494,
+     160
+    ],
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 14
    }
   ]
  },

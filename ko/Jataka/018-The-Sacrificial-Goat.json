@@ -105,7 +105,17 @@
     ],
     "shape": "box",
     "en": "But joy quickly turned to profound SOrrow.",
-    "ko": "그러나 기쁨은 곧 깊은 슬픔으로 바뀌었습니다."
+    "ko": "그러나 기쁨은 곧 깊은 슬픔으로 바뀌었습니다.",
+    "rect": [
+     66,
+     64,
+     290,
+     124
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -147,7 +157,23 @@
     ],
     "shape": "bubble",
     "en": "Ask our master.",
-    "ko": "스승님께 여쭈어 보자."
+    "ko": "스승님께 여쭈어 보자.",
+    "rect": [
+     166,
+     82,
+     272,
+     160
+    ],
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
@@ -200,7 +226,17 @@
     ],
     "shape": "box",
     "en": "suffered 499 beh eadings. Today is my 500th and final birth. laughed for freedom.",
-    "ko": "나는 오백 번에서 한 번 모자라게 목이 잘렸소. 오늘이 오백 번째, 마지막 생이오. 해방되어 웃었소."
+    "ko": "나는 오백 번에서 한 번 모자라게 목이 잘렸소. 오늘이 오백 번째, 마지막 생이오. 해방되어 웃었소.",
+    "rect": [
+     62,
+     334,
+     392,
+     388
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center",
+    "em": 14
    },
    {
     "seed": [
