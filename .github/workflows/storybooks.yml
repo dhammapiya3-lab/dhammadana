@@ -24,7 +24,7 @@ jobs:
           timeout 300 sudo apt-get update -q -o Acquire::Retries=2 || echo '목록 받기 실패'
           timeout 400 sudo apt-get install -y -q -o Acquire::Retries=2 --fix-missing tesseract-ocr > /dev/null || echo '도구 받기 실패 — 계속'
           which tesseract || echo '글자 읽기 도구 없음 — 그림 만들기는 계속 (남은 영어 자동 검사만 빠짐)'
-          pip install -q opencv-python-headless pillow numpy fonttools boto3
+          pip install -q opencv-python-headless pillow numpy fonttools boto3 img2pdf
       - name: 작업 실행
         env:
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}

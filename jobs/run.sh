@@ -41,10 +41,13 @@ rm -rf out
 git clone -q --depth 1 -b storybooks "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}" /tmp/site
 # stamp.json: 이야기마다 그림 판 번호 — 그림을 다시 만들면 주소(?v=)가 바뀌어 예전 그림이 기기·CDN 에 남지 않음
 python3 -c "import json;d=json.load(open('data/rendered_stamp.json'));json.dump({k:v[:8] for k,v in d.items()},open('/tmp/stamp.json','w'),indent=0)"
-if ! cmp -s data/rendered.json /tmp/site/storybooks/data/ready.json || ! cmp -s /tmp/stamp.json /tmp/site/storybooks/data/stamp.json; then
+# 내려받기 파일 (이야기 PDF·ZIP, 책 PDF·ZIP) — 그림이 바뀐 이야기와 그 책만 다시 만듦 → dl.json
+cp /tmp/site/storybooks/data/dl.json /tmp/dl_before.json 2>/dev/null || echo '{}' > /tmp/dl_before.json
+python3 pipeline/bundles.py /tmp/site || echo '내려받기 파일 만들기 실패 — 다음 작업 때 다시'
+if ! cmp -s data/rendered.json /tmp/site/storybooks/data/ready.json || ! cmp -s /tmp/stamp.json /tmp/site/storybooks/data/stamp.json || ! cmp -s /tmp/dl_before.json /tmp/site/storybooks/data/dl.json; then
   cp data/rendered.json /tmp/site/storybooks/data/ready.json
   cp /tmp/stamp.json /tmp/site/storybooks/data/stamp.json
-  cd /tmp/site && git add storybooks/data && git -c user.name=storybooks-bot -c user.email=actions@users.noreply.github.com commit -qm "그림책: 한글판 이야기 목록·그림 판 갱신" && git push -q && cd - >/dev/null
+  cd /tmp/site && git add storybooks/data && git -c user.name=storybooks-bot -c user.email=actions@users.noreply.github.com commit -qm "그림책: 한글판 이야기 목록·그림 판·내려받기 파일 갱신" && git push -q && cd - >/dev/null
 fi
 # 다음 책 글 상자 읽기 + 번역용 800px 미리보기 (jobs/next_books.txt 에 적은 책, 이미 읽은 이야기는 건너뜀)
 if [ -s jobs/next_books.txt ]; then
