@@ -277,19 +277,29 @@
   }, { passive: true });
   // 마우스(컴퓨터): 그림을 두 번 클릭하면 누른 곳을 2배로 확대 / 원래대로, 확대한 채 끌어 옮기기, 휠로 더 키우거나 줄이기 (운영자 요청, 2026-11-15)
   const mouse = () => !matchMedia('(pointer:coarse)').matches;
-  track.addEventListener('dblclick', e => {
-    if (!mouse()) return;
+  // 한 번 클릭으로 확대·원래대로 (운영자 요청, 2026-11-15). 그림 위에 마우스를 올리면 안내가 뜸
+  const zhint = document.createElement('div'); zhint.className = 'sv-zhint'; sv.append(zhint);
+  const hintText = () => { zhint.textContent = Z.s > 1 ? '클릭하면 원래 크기로 돌아갑니다 · 끌어서 옮기기' : '클릭하면 확대됩니다'; };
+  track.addEventListener('mousemove', e => {
+    if (!mouse() || cur >= pages.length || !e.target.closest('.sv-page img')) { zhint.classList.remove('on'); return; }
+    hintText(); const r = sv.getBoundingClientRect();
+    zhint.style.left = (e.clientX - r.left + 14) + 'px'; zhint.style.top = (e.clientY - r.top + 18) + 'px'; zhint.classList.add('on');
+  });
+  track.addEventListener('mouseleave', () => zhint.classList.remove('on'));
+  track.addEventListener('click', e => {
+    if (!mouse() || !e.target.closest('.sv-page img')) return;
+    if (Z.dragged) { Z.dragged = false; e.stopImmediatePropagation(); return; }  // 끌어 옮긴 뒤의 클릭은 무시
+    e.stopImmediatePropagation();
     const img = pages[cur]?.querySelector('img'); if (!img) return;
-    e.preventDefault(); window.getSelection()?.removeAllRanges();
-    if (Z.s > 1) { zReset(); return; }
+    if (Z.s > 1) { zReset(); hintText(); return; }
     zReset(); Z.img = img; Z.s = 2;
     const r = img.getBoundingClientRect(), px = e.clientX - (r.left + r.width / 2), py = e.clientY - (r.top + r.height / 2);
-    Z.x = px * (1 - Z.s); Z.y = py * (1 - Z.s); zClamp(); zApply(); Z.dbl = Date.now();
-  });
+    Z.x = px * (1 - Z.s); Z.y = py * (1 - Z.s); zClamp(); zApply(); hintText();
+  }, true);
   let drag = null;
   track.addEventListener('mousedown', e => { if (Z.s > 1 && e.button === 0) { drag = { x: e.clientX, y: e.clientY, ox: Z.x, oy: Z.y, m: false }; e.preventDefault(); } });
   addEventListener('mousemove', e => { if (!drag) return; const dx = e.clientX - drag.x, dy = e.clientY - drag.y; if (Math.abs(dx) + Math.abs(dy) > 3) drag.m = true; Z.x = drag.ox + dx; Z.y = drag.oy + dy; zClamp(); zApply(); });
-  addEventListener('mouseup', () => { if (drag?.m) Z.dbl = Date.now(); drag = null; });
+  addEventListener('mouseup', () => { if (drag?.m) { Z.dragged = true; setTimeout(() => { Z.dragged = false; }, 0); } drag = null; });
   track.addEventListener('wheel', e => {
     if (e.ctrlKey || e.metaKey || Z.s <= 1 || !Z.img) return;  // Ctrl+휠(브라우저 확대)은 그대로 둠. 확대했을 때만 휠로 크기 조절 (평소 휠은 화면 넘기기 그대로)
     e.preventDefault();

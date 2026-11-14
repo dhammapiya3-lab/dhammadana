@@ -176,3 +176,7 @@ body.sb-text .sv, body.sb-text .sv-thumbs{display:none}
 .st-page figcaption p{margin:0 0 .7em}
 .st-n{display:block;font-size:13px;color:var(--ink-soft);margin-bottom:6px}
 .st-next{text-align:center;margin:30px 0}
+.sv-zhint{position:absolute;z-index:20;pointer-events:none;background:rgba(20,16,12,.82);color:#fff;font-size:13px;padding:4px 9px;border-radius:6px;white-space:nowrap;opacity:0;transition:opacity .15s}
+.sv-zhint.on{opacity:1}
+@media (pointer:coarse){.sv-zhint{display:none}}
+.sv-btn,.sv-bar{z-index:6}
