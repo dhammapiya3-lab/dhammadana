@@ -4,19 +4,22 @@
       "id": "korea-mahasi",
       "region": "한국",
       "name": "마하시 전통",
-      "representatives": []
+      "representatives": [],
+      "also": "mahasi"
     },
     {
       "id": "korea-shweoomin",
       "region": "한국",
       "name": "쉐우민 전통",
-      "representatives": []
+      "representatives": [],
+      "also": "shweoomin"
     },
     {
       "id": "korea-forest",
       "region": "한국",
       "name": "태국 숲속 전통",
-      "representatives": []
+      "representatives": [],
+      "also": "forest"
     },
     {
       "id": "korea-etc",

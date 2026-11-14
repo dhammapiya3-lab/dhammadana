@@ -71,6 +71,9 @@ const PAGES = Object.fromEntries(fs.readdirSync(C('pages')).filter(f => f.endsWi
 const teacherById = id => TEACHERS.find(t => t.id === id);
 const tradById = id => TRADS.find(t => t.id === id);
 const tradOfTeacher = id => tradById(teacherById(id)?.tradition);
+// 스승이 들어가는 모든 분류: 자기 분류 + 그 분류의 '함께 넣을 분류'(also) — 예: 한국 마하시 전통 → 미얀마 마하시 전통에도 (운영자 요청, 2026-11-15)
+const tradIdsOf = tr => tr ? [tr.id, ...[].concat(tr.also || []).filter(a => tradById(a))] : [];
+const tradsOfTeacher = id => tradIdsOf(tradOfTeacher(id));
 const tIds = b => [...new Set([b.teacher, ...(b.co_teachers || [])].filter(Boolean))];  // 스승 + 공동 저자 (운영자 요청, 2026-11-12)
 const providerById = id => PROVIDERS.find(p => p.id === id);
 const permById = id => PERMS.find(p => p.id === id);
@@ -416,7 +419,7 @@ function langsOf(b) { const v = b.original_language; return (Array.isArray(v) ? 
 function coverCard(b) {
   const f = formats(b), fc = fmtsCard(b);
   const tr = b.teacher ? tradOfTeacher(b.teacher) : null;
-  return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${esc([...new Set(tIds(b).map(id => tradOfTeacher(id)?.id).filter(Boolean))].join('|'))}" data-teacher="${esc(tIds(b).join('|'))}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(fc.map(x => x.k).join('|'))}" data-lang="${esc(langsOf(b).join('|'))}" data-btype="${esc(b.book_type || '')}" data-pub="${esc(pubsAll(b).map(x => x.key).join('|'))}" data-person="${esc(peopleOf(b).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}">
+  return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${esc([...new Set(tIds(b).flatMap(id => tradsOfTeacher(id)))].join('|'))}" data-teacher="${esc(tIds(b).join('|'))}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(fc.map(x => x.k).join('|'))}" data-lang="${esc(langsOf(b).join('|'))}" data-btype="${esc(b.book_type || '')}" data-pub="${esc(pubsAll(b).map(x => x.key).join('|'))}" data-person="${esc(peopleOf(b).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}">
   <div class="cover">${!f.length ? '<span class="soon">준비 중</span>' : ''}${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지" loading="lazy">` : `<div class="cover-ph">${esc(b.title)}</div>`}</div>
   <div class="t">${esc(b.title)}</div><div class="a">${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>${pubLine(b) ? `<div class="a publ">${esc(pubLine(b))}</div>` : ''}
   ${f.length ? `<div class="fmt">${fc.map(x => `<span>${x.k}${x.ext ? ' ↗' : ''}</span>`).join('')}</div>` : ''}</a>`;
@@ -424,7 +427,7 @@ function coverCard(b) {
 const countTopic = t => LIB().filter(b => (b.topics || []).includes(t)).length;
 const countMain = t => LIB().filter(b => (b.main || []).includes(t)).length;
 const countTeacher = id => LIB().filter(b => tIds(b).includes(id)).length;
-const countTrad = id => LIB().filter(b => tIds(b).some(x => tradOfTeacher(x)?.id === id)).length;
+const countTrad = id => LIB().filter(b => tIds(b).some(x => tradsOfTeacher(x).includes(id))).length;
 
 /* ---------- 페이지 ---------- */
 const pages = {};
@@ -526,7 +529,7 @@ function libraryBody() {
   for (const t of TRADS) {
     const n = countTrad(t.id);
     if (t.region !== g) { g = t.region; trad += `<div class="group-name trad-region" data-region="${esc(g)}">${esc(g)}</div>`; }
-    const ts = TEACHERS.filter(x => x.tradition === t.id || (t.representatives || []).includes(x.id)).map(x => x.id);  // 스승 목록(teachers.json) 순서
+    const ts = TEACHERS.filter(x => tradsOfTeacher(x.id).includes(t.id) || (t.representatives || []).includes(x.id)).map(x => x.id);  // 스승 목록(teachers.json) 순서
     trad += `<div class="trad-block${n === 0 ? ' empty' : ''}" data-trad-block="${t.id}">${chk('trad', t.id, esc(t.name), n)}
       <div class="sub" hidden>${ts.map(id => chk('teacher', id, esc(teacherById(id).name), countTeacher(id), (t.representatives || []).includes(id) ? '<span class="rep">대표</span>' : '')).join('')}</div></div>`;
   }
@@ -635,7 +638,7 @@ for (const t of TEACHERS) {
     ${list.length ? `<div class="grid">${list.map(coverCard).join('')}</div>` : '<p class="muted">아직 등록된 책이 없습니다.</p>'}
     ${trans.length ? `<div class="section-head" style="margin-top:30px"><h2>옮긴 책</h2></div><div class="grid">${trans.map(coverCard).join('')}</div>` : ''}
     <div class="section-head" style="margin-top:36px"><h2>같은 전통의 스승</h2></div>
-    <div class="chips">${TEACHERS.filter(x => x.tradition === t.tradition && x.id !== t.id).map(x => `<a class="chip" href="/teacher/${x.id}/">${esc(x.name)}<span class="n">${countTeacher(x.id)}</span></a>`).join('')}</div></div>`
+    <div class="chips">${TEACHERS.filter(x => x.id !== t.id && tradsOfTeacher(x.id).some(a => tradsOfTeacher(t.id).includes(a))).map(x => `<a class="chip" href="/teacher/${x.id}/">${esc(x.name)}<span class="n">${countTeacher(x.id)}</span></a>`).join('')}</div></div>`
   }));
 }
 
