@@ -381,14 +381,15 @@ collections:
               - { name: lay, label: 재가자, widget: boolean, required: false, default: false, hint: "켜면 같은 분류 안에서 스님들 다음에 나옵니다." }
               - { name: roman, label: 로마자, required: false }
               - { name: aliases, label: 다른 표기들, widget: list, required: false, hint: "책마다 다르게 적힌 이름. 검색에 쓰입니다." }
+              - { name: country, label: 국가·지역, widget: select, multiple: true, required: false, options: ["한국", "서양"], hint: "도서관 찾아보기의 '국가 · 지역'에서 이 스승의 책이 잡힙니다." }
               - name: tradition
                 label: 수행전통
                 widget: relation
                 collection: lists
                 file: traditions
                 value_field: "items.*.id"
-                search_fields: ["items.*.name", "items.*.region"]
-                display_fields: ["items.*.region", "items.*.name"]
+                search_fields: ["items.*.name"]
+                display_fields: ["items.*.name"]
               - { name: bio, label: 소개, widget: markdown, required: false }
               - { name: photo, label: 사진, widget: image, required: false }
       - name: traditions
@@ -404,16 +405,6 @@ collections:
               - { name: id, label: 영문 아이디, pattern: ['^[a-z0-9-]+$', '영문 소문자·숫자·- 만'] }
               - { name: region, label: 지역 묶음, hint: "미얀마, 태국, 한국, 학자·서구 등" }
               - { name: name, label: 이름 }
-              - name: also
-                label: 함께 넣을 분류
-                hint: "이 분류의 스승을 다른 분류에도 함께 넣을 때 고릅니다. 예: 한국 · 마하시 전통 → 미얀마 · 마하시 전통"
-                widget: relation
-                collection: lists
-                file: traditions
-                value_field: "items.*.id"
-                search_fields: ["items.*.name", "items.*.region"]
-                display_fields: ["items.*.region", "items.*.name"]
-                required: false
               - name: representatives
                 label: 대표 스승
                 widget: relation

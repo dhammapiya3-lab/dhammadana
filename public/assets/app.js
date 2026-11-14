@@ -374,7 +374,7 @@ function lightbox(src, title) {
 /* ---------- 도서관 찾아보기 ---------- */
 function initLibrary() {
   const q = new URLSearchParams(location.search);
-  const want = { trad: q.getAll('trad'), teacher: q.getAll('teacher'), topic: q.getAll('topic'), main: q.getAll('main'), fmt: q.getAll('fmt'), lang: q.getAll('lang'), btype: q.getAll('btype'), pub: q.getAll('pub'), person: q.getAll('person') };
+  const want = { trad: q.getAll('trad'), teacher: q.getAll('teacher'), topic: q.getAll('topic'), main: q.getAll('main'), fmt: q.getAll('fmt'), lang: q.getAll('lang'), btype: q.getAll('btype'), pub: q.getAll('pub'), person: q.getAll('person'), region: q.getAll('region') };
   $$('.filters input[data-f]').forEach(c => { if ((want[c.dataset.f] || []).includes(c.value)) c.checked = true; });
   const showEmpty = $('#showEmpty');
   showEmpty.checked = store.get('showEmpty', false);
@@ -391,7 +391,7 @@ function initLibrary() {
     let shown = 0;
     for (const b of books) {
       const has = (k, list) => !list || list.some(v => (b.dataset[k] || '').split('|').includes(v));
-      let ok = has('main', sel.main) && has('topics', sel.topic) && has('fmts', sel.fmt) && has('lang', sel.lang) && has('btype', sel.btype) && has('pub', sel.pub) && has('person', sel.person);
+      let ok = has('main', sel.main) && has('topics', sel.topic) && has('fmts', sel.fmt) && has('lang', sel.lang) && has('btype', sel.btype) && has('pub', sel.pub) && has('person', sel.person) && has('region', sel.region);
       // 전통과 스승은 '또는'으로 묶음
       if (ok && (sel.trad || sel.teacher)) ok = (sel.trad || []).some(x => (b.dataset.trad || '').split('|').includes(x)) || (sel.teacher || []).some(x => (b.dataset.teacher || '').split('|').includes(x));
       b.hidden = !ok; if (ok) shown++;
