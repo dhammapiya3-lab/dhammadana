@@ -128,3 +128,13 @@ html.sv-lock,html.sv-lock body{overflow:hidden}
 .sv.sv-zoom .sv-page{overflow:visible;z-index:2}
 .sv.sv-max .sv-track,.sv:fullscreen .sv-track{touch-action:pan-x}
 .sv.sv-rot .sv-track{touch-action:none}
+/* 내 서재 · 이어 읽기 */
+.shelf h1{margin:28px 0 6px}
+#shelf{display:flex;flex-direction:column;gap:14px;margin:20px 0 40px}
+.sh-item{display:flex;gap:16px;align-items:flex-start;padding:14px;border:1px solid var(--line);border-radius:10px;background:#fff8}
+.sh-cover{flex:0 0 120px}.sh-cover img{width:120px;aspect-ratio:16/9;object-fit:cover;border-radius:6px;display:block}
+.sh-meta h2{font-size:18px;margin:0 0 6px}.sh-meta p{margin:4px 0}
+.sh-act{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:8px!important}
+.sh-act button{background:none;border:1px solid var(--line);border-radius:6px;padding:6px 10px;color:var(--ink-soft);cursor:pointer;font:inherit;font-size:13.5px}
+.resume{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:18px 0;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--paper-2)}
+@media (max-width:560px){.sh-cover{flex-basis:90px}.sh-cover img{width:90px}}

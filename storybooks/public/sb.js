@@ -15,6 +15,34 @@
     document.getElementById('qReset').onclick = () => { q.value = ''; run(); q.focus(); };
   }
 
+  // 내 서재 화면 · 책 화면의 '이어 읽기'
+  const shelfAll = () => { try { return JSON.parse(localStorage.getItem('sb-shelf') || '{}'); } catch (e) { return {}; } };
+  const h = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const shelfEl = document.getElementById('shelf');
+  if (shelfEl) {
+    const draw = () => {
+      const all = shelfAll(), list = Object.entries(all).sort((a, b) => b[1].t - a[1].t);
+      document.getElementById('shelfEmpty').hidden = list.length > 0;
+      shelfEl.innerHTML = list.map(([slug, r]) => `<div class="sh-item">
+        <a class="sh-cover" href="/${h(slug)}/"><img src="${h(r.cover)}" alt="" loading="lazy" onerror="this.remove()"></a>
+        <div class="sh-meta"><h2><a href="/${h(slug)}/">${h(r.book)}</a></h2>
+        <p>읽던 이야기: <b>${h(r.story)}</b> · ${r.page} / ${r.n}쪽</p>
+        <p class="muted">${new Date(r.t).toLocaleDateString('ko-KR')}에 읽음</p>
+        <p class="sh-act"><a class="btn" href="${h(r.url)}">▶ 이어 읽기</a> <button type="button" data-del="${h(slug)}">목록에서 빼기</button></p></div></div>`).join('');
+      shelfEl.querySelectorAll('[data-del]').forEach(b => b.onclick = () => {
+        const a = shelfAll(); delete a[b.dataset.del];
+        try { localStorage.setItem('sb-shelf', JSON.stringify(a)); } catch (e) {}
+        draw();
+      });
+    };
+    draw();
+  }
+  const resume = document.getElementById('resume');
+  if (resume) {
+    const r = shelfAll()[resume.dataset.slug];
+    if (r) { resume.hidden = false; resume.className = 'resume'; resume.innerHTML = `<span>읽던 곳: <b>${h(r.story)}</b> · ${r.page} / ${r.n}쪽</span><a class="btn" href="${h(r.url)}">▶ 이어 읽기</a>`; }
+  }
+
   // 그림책 뷰어
   const sv = document.getElementById('sv');
   if (!sv) return;
@@ -50,7 +78,7 @@
       const nv = doc.getElementById('sv');
       if (!nv) { location.href = url; return; }
       track.innerHTML = nv.querySelector('.sv-track').innerHTML;
-      for (const k of ['key', 'next', 'nextTitle', 'prev', 'prevTitle']) { if (nv.dataset[k]) sv.dataset[k] = nv.dataset[k]; else delete sv.dataset[k]; }
+      for (const k of ['key', 'next', 'nextTitle', 'prev', 'prevTitle', 'book', 'bookTitle', 'cover', 'title']) { if (nv.dataset[k]) sv.dataset[k] = nv.dataset[k]; else delete sv.dataset[k]; }
       for (const sel of ['.story h1', '.sv-thumbs', '.story .prose', '.story .pn', '.story .orig']) {
         const a = document.querySelector(sel), b = doc.querySelector(sel);
         if (a && b) a.replaceWith(document.importNode(b, true));
@@ -79,6 +107,16 @@
     thumbs.forEach((t, j) => t.classList.toggle('on', j === i));
     thumbs[i]?.scrollIntoView({ block: 'nearest', inline: 'nearest' });
     try { localStorage.setItem(KEY, i); } catch (e) {}
+    if (i < pages.length) shelfSave(i);
+  };
+  // 내 서재: 책마다 마지막으로 읽던 이야기와 쪽 (운영자 요청, 2026-11-14)
+  const shelfSave = i => {
+    const d = sv.dataset; if (!d.book) return;
+    try {
+      const all = JSON.parse(localStorage.getItem('sb-shelf') || '{}');
+      all[d.book] = { book: d.bookTitle, cover: d.cover, story: d.title, url: '/' + d.key + '/', page: i + 1, n: pages.length, t: Date.now() };
+      localStorage.setItem('sb-shelf', JSON.stringify(all));
+    } catch (e) {}
   };
   track.addEventListener('scroll', () => {
     const i = Math.round(track.scrollLeft / track.clientWidth);

@@ -42,7 +42,7 @@ const ONLY = S.only_ready !== false;
 const PUB = new Set(Object.keys(CAT.books).filter(slug => !ONLY || Object.values(CAT.books[slug].stories).some(s => READY[`${slug}/${sid(s.file)}`])));
 const storyTitle = (slug, s) => KO.book_detail[slug]?.stories?.[s.file]?.title || s.title;
 
-function layout({ title, body, desc = '', page = '', image = '' }) {
+function layout({ title, body, desc = '', page = '', image = '', noindex = false }) {
   const t = title ? `${title} · ${S.title}` : `${S.title} — 법을 담은 그림책`;
   return `<!DOCTYPE html>
 <html lang="ko">
@@ -50,7 +50,7 @@ function layout({ title, body, desc = '', page = '', image = '' }) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(t)}</title>
-<meta name="description" content="${esc(desc || S.intro)}">
+${noindex ? '<meta name="robots" content="noindex">\n' : ''}<meta name="description" content="${esc(desc || S.intro)}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="${esc(S.title)}">
 <meta property="og:title" content="${esc(t)}">
@@ -65,7 +65,7 @@ ${image ? `<meta property="og:image" content="${esc(image)}">` : ''}
 <body data-page="${page}">
 <header class="site"><div class="wrap head-row">
   <a class="brand" href="/">${wheel('brand-mark')}<span><span class="brand-name">${esc(S.title)}</span><span class="brand-sub">${esc(S.sub)}</span></span></a>
-  <nav class="head-nav"><a href="/">${U.home}</a><a href="/about/">소개</a><a class="lib" href="${esc(S.library_url)}">법보시 도서관 ↗</a></nav>
+  <nav class="head-nav"><a href="/">${U.home}</a><a href="/about/">소개</a><a href="/shelf/">내 서재</a><a class="lib" href="${esc(S.library_url)}">법보시 도서관 ↗</a></nav>
 </div></header>
 <main>${body}</main>
 <footer class="site"><div class="wrap">
@@ -113,6 +113,7 @@ for (const slug of Object.keys(CAT.books).filter(b => PUB.has(b))) {
   <p class="tags">${b.tags.map(t => `<span>${esc(t)}</span>`).join('')}</p></div></div>
   ${KO.about_work?.[slug]?.length ? `<aside class="work"><h2>문헌 정보</h2><dl>${KO.about_work[slug].map(([a, v]) => `<dt>${esc(a)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></aside>` : ''}
   <div class="prose">${b.intro ? paras(b.intro) : `<p class="muted">책 소개를 우리말로 옮기는 중입니다. 아래는 영어 원문입니다.</p><p lang="en">${esc(b.introEn)}</p>`}</div>
+  <div id="resume" data-slug="${esc(slug)}" hidden></div>
   <h2>차례</h2><ol class="toc">${toc}</ol>
   <p class="orig"><a href="${S.orig_url}${slug}/index.htm">${U.en_link} ↗</a></p></div>` }));
 
@@ -121,7 +122,7 @@ for (const slug of Object.keys(CAT.books).filter(b => PUB.has(b))) {
     const k = d.stories?.[s.file] || {};
     const prev = list[i - 1], next = list[i + 1];
     const imgs = n ? Array.from({ length: n }, (_, j) => String(j + 1).padStart(2, '0')) : [];
-    const viewer = n ? `<div class="sv" id="sv" data-key="${esc(key)}"${next && READY[`${slug}/${sid(next.file)}`] ? ` data-next="/${slug}/${sid(next.file)}/" data-next-title="${esc(storyTitle(slug, next))}"` : ''}${prev && READY[`${slug}/${sid(prev.file)}`] ? ` data-prev="/${slug}/${sid(prev.file)}/" data-prev-title="${esc(storyTitle(slug, prev))}"` : ''} tabindex="0" aria-label="그림책 보기 (← → 키로 넘기기)">
+    const viewer = n ? `<div class="sv" id="sv" data-key="${esc(key)}" data-book="${esc(slug)}" data-book-title="${esc(b.title)}" data-cover="${esc(b.cover)}" data-title="${esc(storyTitle(slug, s))}"${next && READY[`${slug}/${sid(next.file)}`] ? ` data-next="/${slug}/${sid(next.file)}/" data-next-title="${esc(storyTitle(slug, next))}"` : ''}${prev && READY[`${slug}/${sid(prev.file)}`] ? ` data-prev="/${slug}/${sid(prev.file)}/" data-prev-title="${esc(storyTitle(slug, prev))}"` : ''} tabindex="0" aria-label="그림책 보기 (← → 키로 넘기기)">
   <div class="sv-track">${imgs.map((x, j) => `<figure class="sv-page"><img src="${S.img_base}/${key}/big/${x}.jpg${vq}" data-big="${S.img_base}/${key}/big/${x}.jpg${vq}" data-s="${S.img_base}/${key}/s/${x}.jpg${vq}" alt="${j + 1}쪽" ${j > 1 ? 'loading="lazy"' : ''}></figure>`).join('')}</div>
   <button class="sv-btn prev" aria-label="앞 그림">‹</button><button class="sv-btn next" aria-label="다음 그림">›</button>
   <div class="sv-bar"><span class="sv-count">1 / ${n}</span><button class="sv-auto" aria-pressed="false">▶ 자동<span class="lg"> 넘김</span></button><button class="sv-save" aria-pressed="false" title="작은 그림으로 보아 휴대폰 데이터를 아낍니다"><span class="lg">데이터 </span>절약</button><button class="sv-full">⛶ 전체<span class="lg"> 화면</span></button></div></div>
@@ -143,8 +144,15 @@ put('about/index.html', layout({ title: '소개', page: 'about', body: `<div cla
 <p>${esc(S.intro)}</p>
 <h2>원작</h2><p>이 그림책들은 아난다조띠 스님(Bhante Ānandajoti)이 기획하고 이끈 『Dharma Storybooks』(<a href="${S.orig_url}">dharma-storybooks.net</a>)를 우리말로 옮긴 것입니다. 원작의 그림은 스님의 지도로 Gemini Notebook이 만들었습니다. 스님은 1987년부터 아시아에서 지내며 1996년 테라와다 전통에서 비구계를 받았습니다.</p>
 <h2>한국어판</h2><p>그림 속 말풍선과 설명 상자의 영어를 지우고 우리말을 넣었습니다. 그림 자체는 원작 그대로입니다. 책 소개와 줄거리도 우리말로 옮겼습니다. 원작의 다른 그림책들도 우리말로 옮기는 대로 하나씩 더합니다. 번역은 <a href="${S.library_url}">붓다담마 법보시 도서관</a>(我無말들)이 맡았습니다.</p>
+<h2>번역 방법</h2><p>이 한국어판은 Anthropic의 AI인 Claude(클로드)를 사용해 번역했습니다. 그림 속 영어 글자를 찾아 지우고 우리말을 넣는 작업도 Claude가 도왔습니다. 빠알리어 고유명사와 불교 용어는 정해 둔 음역 규칙과 번역 원칙에 맞추었고, 번역한 그림은 한 장씩 눈으로 검수했습니다. 잘못된 곳을 알려 주시면 고치겠습니다.</p>
 <h2>라이선스</h2><p>${esc(S.license)}</p>
 </article></div>` }));
+
+// 내 서재: 읽던 그림책만 (기기에 저장된 기록으로 sb.js 가 그림)
+put('shelf/index.html', layout({ title: '내 서재', page: 'shelf', noindex: true, body: `<div class="wrap shelf">
+<h1>내 서재</h1><p class="muted">읽던 그림책을 읽던 곳에서 이어 읽을 수 있습니다. 기록은 이 기기의 브라우저에만 저장됩니다.</p>
+<div id="shelf"></div>
+<p id="shelfEmpty" class="muted" hidden>아직 펼쳐 본 그림책이 없습니다. <a href="/">그림책 목록</a>에서 책을 골라 보세요.</p></div>` }));
 
 put('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${S.url}/sitemap.xml\n`);
 const urls = ['/', '/about/', ...[...PUB].flatMap(s => [`/${s}/`, ...Object.values(CAT.books[s].stories).map(x => `/${s}/${sid(x.file)}/`)])];
