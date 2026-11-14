@@ -1,6 +1,57 @@
-Foremost-Monks 13-Subhuti 13 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 72 개 / 한글판 이야기 45 편
-공개 주소 확인: 200 1766350바이트
+On branch storybooks-qa
+Your branch is up to date with 'origin/storybooks-qa'.
+
+nothing to commit, working tree clean
+R2 에 올림: 46 개 / 한글판 이야기 45 편
+공개 주소 확인: 404 27150바이트
+이야기 Foremost-Monks/01-Kondanna {'pdf': 61722204, 'zip': 61444857, 'n': 38}
+이야기 Foremost-Monks/02-03-Sariputta-Moggallana {'pdf': 85276807, 'zip': 84979803, 'n': 57}
+이야기 Foremost-Monks/04-Maha-Kassapa {'pdf': 57279609, 'zip': 57000630, 'n': 41}
+이야기 Foremost-Monks/05-Anuruddha {'pdf': 71844216, 'zip': 71562445, 'n': 53}
+이야기 Foremost-Monks/06-Bhaddiya {'pdf': 20444735, 'zip': 20170782, 'n': 15}
+이야기 Foremost-Monks/07-Lakundaka {'pdf': 16516430, 'zip': 16247088, 'n': 13}
+이야기 Foremost-Monks/08-Pindola {'pdf': 10468187, 'zip': 10198248, 'n': 9}
+이야기 Foremost-Monks/09-Punna {'pdf': 21060953, 'zip': 20790018, 'n': 15}
+이야기 Foremost-Monks/10-Kaccana {'pdf': 23116647, 'zip': 22848859, 'n': 15}
+이야기 Foremost-Monks/11-12-Panthakas {'pdf': 14059878, 'zip': 13779446, 'n': 12}
+이야기 Foremost-Monks/13-Subhuti {'pdf': 18800503, 'zip': 18537579, 'n': 13}
+이야기 Foremost-Monks/14-Khadiravaniya-Revata {'pdf': 36043675, 'zip': 35767140, 'n': 25}
+이야기 Foremost-Monks/15-Kankha-Revata {'pdf': 19139719, 'zip': 18872783, 'n': 13}
+책 Foremost-Monks {'pdf': 452572639, 'pdfs': 47310324, 'zip': 452210725, 'stories': 13, 'n': 319}
+이야기 Jataka/001-The-Waterless-Desert {'pdf': 14363476, 'zip': 14098114, 'n': 15}
+이야기 Jataka/002-The-Well-of-Perseverance {'pdf': 17854646, 'zip': 17586525, 'n': 15}
+이야기 Jataka/003-The-Golden-Bowl {'pdf': 15828783, 'zip': 15563796, 'n': 14}
+이야기 Jataka/004-The-Dead-Mouse {'pdf': 17552172, 'zip': 17288736, 'n': 15}
+이야기 Jataka/005-The-Measure-of-Rice {'pdf': 17261831, 'zip': 16998446, 'n': 14}
+이야기 Jataka/006-The-Water-Rakkhasa {'pdf': 19131659, 'zip': 18865237, 'n': 15}
+이야기 Jataka/009-The-Kings-Grey-Hair {'pdf': 15486641, 'zip': 15219776, 'n': 14}
+이야기 Jataka/010-Bliss-of-Renunciation {'pdf': 17050036, 'zip': 16783649, 'n': 14}
+이야기 Jataka/011-The-Wisdom-of-Lakkhana {'pdf': 12268814, 'zip': 12004844, 'n': 10}
+이야기 Jataka/012-The-Golden-Deer {'pdf': 18920166, 'zip': 18655950, 'n': 14}
+이야기 Jataka/014-The-Wind-Deer {'pdf': 9630468, 'zip': 9369050, 'n': 9}
+이야기 Jataka/018-The-Sacrificial-Goat {'pdf': 16480055, 'zip': 16209670, 'n': 14}
+이야기 Jataka/022-The-Teaching-of-the-Dog {'pdf': 17796510, 'zip': 17531310, 'n': 14}
+이야기 Jataka/023-The-Noble-Warhorse {'pdf': 17052475, 'zip': 16787181, 'n': 14}
+이야기 Jataka/026-The-State-Elephant {'pdf': 16599917, 'zip': 16333748, 'n': 13}
+이야기 Jataka/027-Elephant-and-Dog {'pdf': 16886302, 'zip': 16621470, 'n': 13}
+이야기 Jataka/028-Nandivisala {'pdf': 14867023, 'zip': 14598846, 'n': 12}
+이야기 Jataka/029-Grannys-Blackie {'pdf': 13838909, 'zip': 13571144, 'n': 12}
+이야기 Jataka/030-Deadly-Food {'pdf': 13390251, 'zip': 13121437, 'n': 11}
+이야기 Jataka/032-The-Peacocks-Dance {'pdf': 16805604, 'zip': 16541178, 'n': 12}
+이야기 Jataka/033-The-Quails-and-the-Net {'pdf': 15949138, 'zip': 15680983, 'n': 14}
+이야기 Jataka/034-The-Amorous-Fish {'pdf': 15341974, 'zip': 15072911, 'n': 13}
+이야기 Jataka/037-The-Senior-Partridge {'pdf': 15747510, 'zip': 15483665, 'n': 12}
+이야기 Jataka/046-The-Folly-of-the-Monkeys {'pdf': 15967099, 'zip': 15694944, 'n': 13}
+이야기 Jataka/039-Nanda-and-the-Hoard {'pdf': 13837251, 'zip': 13567833, 'n': 12}
+이야기 Jataka/040-The-Fiery-Pit {'pdf': 12684824, 'zip': 12421081, 'n': 12}
+이야기 Jataka/041-The-Unfortunate-Monk {'pdf': 17992298, 'zip': 17726406, 'n': 15}
+이야기 Jataka/043-The-Monk-and-the-Viper {'pdf': 11142178, 'zip': 10878886, 'n': 10}
+이야기 Jataka/044-The-Son-and-the-Mosquito {'pdf': 15070631, 'zip': 14801214, 'n': 13}
+이야기 Jataka/048-The-Rain-of-Ruin {'pdf': 16743423, 'zip': 16478943, 'n': 15}
+이야기 Jataka/049-The-Lucky-Star {'pdf': 16491069, 'zip': 16226195, 'n': 14}
+이야기 Jataka/050-The-Kings-Stratagem {'pdf': 19105528, 'zip': 18839872, 'n': 15}
+책 Jataka {'pdf': 497025147, 'pdfs': 50446668, 'zip': 496615385, 'stories': 32, 'n': 422}
+내려받기 파일: 47 묶음 새로 만듦
 41-Mogharaja
 13-Singalakamata
