@@ -171,6 +171,14 @@ collections:
               - { name: url, label: 주소, required: false }
               - { name: site, label: 연결할 사이트 이름, required: false }
               - { name: created, label: 이 파일 만든 날, required: false, hint: "예: 2024년 5월 1일 — 잘 모르면 비워 두세요" }
+          - name: hwp
+            label: HWP (한글 파일)
+            widget: object
+            fields:
+              - { name: mode, label: 방식, widget: select, options: [{ label: "없음", value: none }, { label: "우리 저장소(R2)", value: file }, { label: "다른 사이트로 연결", value: link }], default: none }
+              - { name: url, label: 주소, required: false }
+              - { name: site, label: 연결할 사이트 이름, required: false }
+              - { name: created, label: 이 파일 만든 날, required: false, hint: "예: 2024년 5월 1일 — 잘 모르면 비워 두세요" }
           - { name: reader, label: 온라인 읽기, widget: boolean, default: false, hint: "PDF를 읽기 자료로 바꿔 R2에 올린 뒤에 켜세요" }
           - name: sources
             label: 원본 출처
@@ -180,7 +188,7 @@ collections:
             hint: "파일마다 원본을 가져온 곳이 다르면 하나씩 더해서 '어느 파일'을 골라 주세요."
             summary: "{{fields.file}} {{fields.url}}"
             fields:
-              - { name: file, label: 어느 파일, widget: select, required: false, options: [{ label: "모든 파일", value: all }, { label: "PDF (화면용)", value: pdf }, { label: "PDF (인쇄용 / 인쇄용 본문)", value: pdf_print }, { label: "PDF (인쇄용 표지)", value: pdf_cover }, { label: "EPUB", value: epub }], hint: "비워 두면 모든 파일" }
+              - { name: file, label: 어느 파일, widget: select, required: false, options: [{ label: "모든 파일", value: all }, { label: "PDF (화면용)", value: pdf }, { label: "PDF (인쇄용 / 인쇄용 본문)", value: pdf_print }, { label: "PDF (인쇄용 표지)", value: pdf_cover }, { label: "EPUB", value: epub }, { label: "HWP (한글 파일)", value: hwp }], hint: "비워 두면 모든 파일" }
               - { name: url, label: 주소 }
               - { name: checked, label: 확인한 날, required: false }
               - { name: archive, label: 보관본 주소, required: false, hint: "web.archive.org 에 저장한 주소" }

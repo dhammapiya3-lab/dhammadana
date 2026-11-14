@@ -16,7 +16,7 @@ export async function onRequestGet({ request, env }) {
   const id = new URL(request.url).searchParams.get('book') || '';
   if (!ID_RE.test(id)) return json({ error: '책 번호 오류' }, 400);
   const groups = {};
-  for (const top of ['reader', 'pdf', 'epub']) {
+  for (const top of ['reader', 'pdf', 'epub', 'hwp']) {
     for (const o of await listAll(env, `${top}/${id}/`)) {
       const rest = o.key.slice(top.length + id.length + 2);
       const g = top === 'reader' ? `reader/${id}/${rest.split('/')[0]}/` : o.key;
@@ -32,7 +32,7 @@ export async function onRequestPost({ request, env }) {
   const body = await request.json().catch(() => ({}));
   // 파일 이름 바꾸기: {rename: {from: 'epub/DL-0001/옛이름.epub', to: 'epub/DL-0001/새이름.epub'}} (같은 책·같은 종류 폴더 안에서만)
   if (body.rename) {
-    const { from, to } = body.rename; const KEY = /^(pdf|epub)\/(DL-\d{4})\/[^/]+$/;
+    const { from, to } = body.rename; const KEY = /^(pdf|epub|hwp)\/(DL-\d{4})\/[^/]+$/;
     const a = KEY.exec(from || ''), b = KEY.exec(to || '');
     if (!a || !b || a[1] !== b[1] || a[2] !== b[2]) return json({ error: '같은 책의 같은 종류 파일 안에서만 이름을 바꿀 수 있습니다.' }, 400);
     if (from === to) return json({ ok: true, renamed: 0 });
@@ -45,7 +45,7 @@ export async function onRequestPost({ request, env }) {
   const list = Array.isArray(body.delete) ? body.delete : [];
   let n = 0;
   for (const p of list) {
-    if (!/^(reader|pdf|epub)\/DL-\d{4}\/./.test(p)) return json({ error: '지울 수 없는 위치: ' + p }, 400);
+    if (!/^(reader|pdf|epub|hwp)\/DL-\d{4}\/./.test(p)) return json({ error: '지울 수 없는 위치: ' + p }, 400);
     const keys = p.endsWith('/') ? (await listAll(env, p)).map(o => o.key) : [p];
     for (let i = 0; i < keys.length; i += 1000) { await env.FILES.delete(keys.slice(i, i + 1000)); }
     n += keys.length;

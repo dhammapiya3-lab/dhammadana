@@ -91,6 +91,7 @@ function formats(b) {
   add('pdf_print', 'PDF', ok(e.pdf_cover) ? 'PDF (인쇄용 본문)' : 'PDF (인쇄용)');
   add('pdf_cover', 'PDF', 'PDF (인쇄용 표지)');
   add('epub', 'EPUB', 'EPUB');
+  add('hwp', 'HWP', 'HWP (한글 파일)');
   if (e.reader) f.push({ k: '온라인 읽기', name: '온라인 읽기' });
   return f;
 }
@@ -141,7 +142,7 @@ function bookSections(b, e, t) {
 }
 // 발행일 칸: 앞의 '초판 발행' 같은 판 이름은 빼고 날짜만
 const pubDate = x => { let p = (x.published || '').trim(); const l = (x.label || '').trim(); if (l && p.startsWith(l)) p = p.slice(l.length).trim(); return p.replace(/^발행\s*/, '').trim(); };
-const edHasFile = x => ['pdf', 'pdf_print', 'pdf_cover', 'epub'].some(k => x[k] && x[k].mode && x[k].mode !== 'none' && x[k].url) || !!x.reader;
+const edHasFile = x => ['pdf', 'pdf_print', 'pdf_cover', 'epub', 'hwp'].some(k => x[k] && x[k].mode && x[k].mode !== 'none' && x[k].url) || !!x.reader;
 const uniqK = f => [...new Map(f.map(x => [x.k, x])).values()];
 // 오디오북 정보 (관리자 화면 '오디오북 정보': 낭독자·제작기관·제작년도·원본 출처) (운영자 요청, 2026-11-11)
 const abInfo = b => { const a = b.audiobook || {}; const t = x => String(x || '').trim(); return { narrator: t(a.narrator), producer: t(a.producer), made: t(a.made), source: t(a.source), note: t(a.source_note) }; };
@@ -171,12 +172,12 @@ const LIC_URL = {
   '자유 이용(퍼블릭 도메인)': 'https://creativecommons.org/publicdomain/mark/1.0/deed.ko'
 };
 const licHtml = l => LIC_URL[String(l || '').trim()] ? `<a href="${LIC_URL[String(l).trim()]}" target="_blank" rel="noopener license">${esc(l)} ↗</a>` : esc(l || '—');
-const SRC_FILE = { pdf: 'PDF(화면용)', pdf_print: 'PDF(인쇄용)', pdf_cover: 'PDF(인쇄용 표지)', epub: 'EPUB' };
+const SRC_FILE = { pdf: 'PDF(화면용)', pdf_print: 'PDF(인쇄용)', pdf_cover: 'PDF(인쇄용 표지)', epub: 'EPUB', hwp: 'HWP(한글 파일)' };
 const safeName = s => String(s).replace(/[\\/:*?"<>|\u0000-\u001f]+/g, ' ').replace(/\s+/g, ' ').trim();
 const DOWNLOADS = {};
 function dlName(b, e, kind) {
   const print = kind === 'pdf_print' || kind === 'pdf_cover';
-  const ext = kind === 'epub' ? 'epub' : 'pdf';
+  const ext = kind === 'epub' ? 'epub' : kind === 'hwp' ? ((/\.(hwpx?)$/i.exec((e.hwp || {}).url || '') || [, 'hwp'])[1].toLowerCase()) : 'pdf';
   const tag = { pdf_print: e.pdf_cover && e.pdf_cover.url ? '_인쇄용_본문' : '_인쇄용', pdf_cover: '_인쇄용_표지' }[kind] || '';
   // '파일 만든 날'을 넣은 파일만 이름 끝에 날짜를 붙이고, 비워 둔 파일은 날짜 없이 (운영자 요청, 2026-11-09)
   const d = ymd((e[kind] || {}).created) || ymd(print ? e.file_created_print : e.file_created);
@@ -201,7 +202,7 @@ async function exists(url) {
   const jobs = [];
   for (const b of BOOKS) for (const e of (b.editions || [])) {
     if (!e.current) continue;
-    for (const k of ['pdf', 'pdf_print', 'pdf_cover', 'epub']) {
+    for (const k of ['pdf', 'pdf_print', 'pdf_cover', 'epub', 'hwp']) {
       const x = e[k];
       if (x && x.mode === 'file' && x.url && !/^https?:/.test(x.url)) jobs.push(exists(fileUrl(x.url)).then(ok => { if (!ok) { console.warn(`[파일 없음] ${b.id} ${k}: ${x.url} → 단추 숨김`); x.mode = 'none'; } }));
     }
@@ -427,7 +428,7 @@ const put = (p, html) => { pages[p] = html; };
 function updatesList() {
   const rows = [];
   for (const b of LIB()) for (const e of b.editions || []) {
-    const fcd = e => ['pdf', 'epub', 'pdf_print', 'pdf_cover'].map(k => (e[k] || {}).created).find(Boolean) || e.file_created || e.file_created_print;
+    const fcd = e => ['pdf', 'epub', 'hwp', 'pdf_print', 'pdf_cover'].map(k => (e[k] || {}).created).find(Boolean) || e.file_created || e.file_created_print;
     if (e.changes && !e.hide_update && (fcd(e) || e.published)) rows.push({ d: fcd(e) || e.published, b, c: `${e.label} · ${e.changes}` });
   }
   for (const b of LIB()) if (!b.hide_update) rows.push({ d: b.added || '', b, c: '등록' });
@@ -533,7 +534,7 @@ function libraryBody() {
     <h3>협력 단체</h3>${PUBS().map(x => chk('pub', x.key, esc(x.name), LIB().filter(b => pubsAll(b).some(p => p.key === x.key)).length)).join('')}
     <h3>책 형식</h3>${BTYPES.map(k => chk('btype', k, esc(k), LIB().filter(b => b.book_type === k).length)).join('')}
     ${LANGS.length ? `<h3>원서의 언어</h3>${LANGS.map(l => chk('lang', l, esc(l), LIB().filter(b => b.original_language === l).length)).join('')}` : ''}
-    <h3>형식</h3>${['PDF', 'EPUB', '온라인 읽기', '오디오북'].map(f => [f, LIB().filter(b => fmtsCard(b).some(x => x.k === f)).length]).filter(([f, n]) => n).map(([f, n]) => chk('fmt', f, f, n)).join('')}
+    <h3>형식</h3>${['PDF', 'EPUB', 'HWP', '온라인 읽기', '오디오북'].map(f => [f, LIB().filter(b => fmtsCard(b).some(x => x.k === f)).length]).filter(([f, n]) => n).map(([f, n]) => chk('fmt', f, f, n)).join('')}
   </div></details>
   <section><div class="toolbar"><div><h1 class="h-page">법보시 도서관</h1><div class="muted small">자료 <span id="libCount">${LIB().length}</span>권</div></div>
     <label class="small">정렬 <select id="sort"><option value="new">최근 등록순</option><option value="title">제목 가나다순</option></select></label></div>

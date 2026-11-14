@@ -53,12 +53,12 @@
     </div>
     <div class="card">
       <h2>2. 파일 종류</h2>
-      <div class="seg2"><label><input type="radio" name="kind" value="pdf" checked>PDF<br><small>화면(온라인)용</small></label><label><input type="radio" name="kind" value="pdf_print">PDF<br><small>인쇄용 (본문)</small></label><label><input type="radio" name="kind" value="pdf_cover">PDF<br><small>인쇄용 표지</small></label><label><input type="radio" name="kind" value="epub">EPUB</label></div>
+      <div class="seg2"><label><input type="radio" name="kind" value="pdf" checked>PDF<br><small>화면(온라인)용</small></label><label><input type="radio" name="kind" value="pdf_print">PDF<br><small>인쇄용 (본문)</small></label><label><input type="radio" name="kind" value="pdf_cover">PDF<br><small>인쇄용 표지</small></label><label><input type="radio" name="kind" value="epub">EPUB</label><label><input type="radio" name="kind" value="hwp">HWP<br><small>한글 파일</small></label></div>
     </div>
     <div class="card">
       <h2>3. 파일 올리기</h2>
       <div class="drop" id="drop" tabindex="0" role="button"><b>여기를 눌러 파일을 고르거나</b><br>파일을 끌어다 놓으세요<br><span class="note">큰 파일은 저절로 나눠서 올립니다</span></div>
-      <input type="file" id="file" accept=".pdf,.epub" hidden>
+      <input type="file" id="file" accept=".pdf,.epub,.hwp,.hwpx" hidden>
       <div id="picked" class="note" style="margin-top:10px"></div>
       <button class="btn" id="go" style="margin-top:12px;width:100%" disabled>올리기</button>
       <progress id="prog" max="100" value="0" hidden style="margin-top:12px"></progress>
@@ -145,17 +145,18 @@ async function pickBook(){
   const r=await gh(`/contents/content/books/${bf(id)}.json?ref=main`); if(!r.ok){ show('err','책 정보를 불러오지 못했습니다.'); return; }
   const j=await r.json(); BOOKSHA=j.sha; BOOK=JSON.parse(dec(j.content));
   const eds=BOOK.editions||[];
-  $('#ed').innerHTML=eds.map((e,i)=>`<option value="${i}" ${e.current?'selected':''}>${esc(e.label||('판 '+(i+1)))}${e.current?' (최신판)':''}${e.pdf&&e.pdf.url?' · 화면용 PDF 있음':''}${e.pdf_print&&e.pdf_print.url?' · 인쇄용 PDF 있음':''}${e.pdf_cover&&e.pdf_cover.url?' · 인쇄용 표지 있음':''}${e.epub&&e.epub.url?' · EPUB 있음':''}</option>`).join('');
+  $('#ed').innerHTML=eds.map((e,i)=>`<option value="${i}" ${e.current?'selected':''}>${esc(e.label||('판 '+(i+1)))}${e.current?' (최신판)':''}${e.pdf&&e.pdf.url?' · 화면용 PDF 있음':''}${e.pdf_print&&e.pdf_print.url?' · 인쇄용 PDF 있음':''}${e.pdf_cover&&e.pdf_cover.url?' · 인쇄용 표지 있음':''}${e.epub&&e.epub.url?' · EPUB 있음':''}${e.hwp&&e.hwp.url?' · HWP 있음':''}</option>`).join('');
   $('#ed').disabled=!eds.length; if(!eds.length) show('err','이 책에 판 정보가 없습니다. 관리자 화면에서 판을 먼저 더해 주세요.'); else $('#out').innerHTML='';
   upd();
 }
 const kind=()=>document.querySelector('input[name=kind]:checked').value;
 function setFile(f){
   if(!f) return; const ext=(f.name.split('.').pop()||'').toLowerCase();
-  if(!['pdf','epub'].includes(ext)){ show('err','PDF나 EPUB 파일만 올릴 수 있습니다.'); return; }
+  if(!['pdf','epub','hwp','hwpx'].includes(ext)){ show('err','PDF·EPUB·HWP(한글) 파일만 올릴 수 있습니다.'); return; }
   if(f.size>2*1024*1024*1024){ show('err','파일이 2GB보다 큽니다.'); return; }
   if(ext==='epub') document.querySelector('input[name=kind][value=epub]').checked=true;
-  else if(kind()==='epub') document.querySelector('input[name=kind][value=pdf]').checked=true;
+  else if(ext==='hwp'||ext==='hwpx') document.querySelector('input[name=kind][value=hwp]').checked=true;
+  else if(kind()==='epub'||kind()==='hwp') document.querySelector('input[name=kind][value=pdf]').checked=true;
   FILE=f; $('#picked').textContent=`고른 파일: ${f.name} (${(f.size/1048576).toFixed(1)}MB)`; $('#out').innerHTML=''; upd();
 }
 function upd(){ $('#go').disabled=!(BOOK&&FILE&&!$('#ed').disabled); }
@@ -168,11 +169,11 @@ drop.addEventListener('drop',e=>setFile(e.dataTransfer.files[0]));
 function show(cls,html){ $('#out').innerHTML=`<div class="msg ${cls}">${html}</div>`; }
 
 $('#go').onclick=async()=>{
-  const k=kind(), ei=+$('#ed').value, ed=BOOK.editions[ei], ext=k==='epub'?'epub':'pdf';
-  const KN={pdf:'화면용 PDF',pdf_print:'인쇄용 PDF (본문)',pdf_cover:'인쇄용 표지 PDF',epub:'EPUB'}[k];
+  const k=kind(), ei=+$('#ed').value, ed=BOOK.editions[ei], ext=k==='epub'?'epub':k==='hwp'?(/\.hwpx$/i.test(FILE.name)?'hwpx':'hwp'):'pdf';
+  const KN={pdf:'화면용 PDF',pdf_print:'인쇄용 PDF (본문)',pdf_cover:'인쇄용 표지 PDF',epub:'EPUB',hwp:'HWP (한글 파일)'}[k];
   if(!FILE.name.toLowerCase().endsWith('.'+ext)){ show('err',`고른 종류(${KN})와 파일이 다릅니다.`); return; }
   const label=(ed.label||('판'+(ei+1))).replace(/[\/\\\s]+/g,'');
-  const key=`${ext}/${BOOK.id}/${BOOK.id}_${label}${{pdf_print:'_인쇄용',pdf_cover:'_인쇄용표지'}[k]||''}.${ext}`;
+  const key=`${k==='hwp'?'hwp':ext}/${BOOK.id}/${BOOK.id}_${label}${{pdf_print:'_인쇄용',pdf_cover:'_인쇄용표지'}[k]||''}.${ext}`;
   $('#go').disabled=true; $('#prog').hidden=false; $('#prog').value=0; show('', '올리는 중…');
   try{
     // 한 번 보내기 (h: 덧붙일 머리글, body: 보낼 것, base·span: 진행 막대 몫)
@@ -360,7 +361,7 @@ $('#cbook').onchange=loadClean;
 async function renameFile(from){
   const dir=from.slice(0,from.lastIndexOf('/')+1), old=from.slice(dir.length);
   let nn=prompt('새 파일 이름을 적어 주세요 (확장자 포함)', old); if(!nn) return; nn=nn.trim().normalize('NFC');
-  if(/[\/\\]/.test(nn)||!/\.(pdf|epub)$/i.test(nn)){ alert('파일 이름만 적어 주세요. 예: DL-0001_초판.epub'); return; }
+  if(/[\/\\]/.test(nn)||!/\.(pdf|epub|hwpx?)$/i.test(nn)){ alert('파일 이름만 적어 주세요. 예: DL-0001_초판.epub'); return; }
   const to=dir+nn; if(to===from) return;
   $('#cout').innerHTML='<p class="note">이름 바꾸는 중…</p>';
   const r=await fetch('/api/files',{method:'POST',headers:{authorization:'Bearer '+TOKEN,'content-type':'application/json'},body:JSON.stringify({rename:{from,to}})}); const j=await r.json().catch(()=>({}));
@@ -372,7 +373,7 @@ async function renameFile(from){
       if(t) await new Promise(r=>setTimeout(r,1500*t));
       const g=await gh(`/contents/content/books/${bf(id)}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); if(!g.ok) break;
       const gj=await g.json(); const b=JSON.parse(dec(gj.content)); fixed=0;
-      for(const e of (b.editions||[])) for(const k of ['pdf','pdf_print','pdf_cover','epub']) if(e[k]&&e[k].url===from){ e[k].url=to; fixed++; }
+      for(const e of (b.editions||[])) for(const k of ['pdf','pdf_print','pdf_cover','epub','hwp']) if(e[k]&&e[k].url===from){ e[k].url=to; fixed++; }
       if(!fixed) break;
       const put=await gh(`/contents/content/books/${bf(id)}.json`,{method:'PUT',headers:{'content-type':'application/json'},body:JSON.stringify({message:`파일 이름 바꿈: ${from} → ${to}`,content:enc(JSON.stringify(b,null,2)+'\n'),sha:gj.sha,branch:'main'})});
       if(put.ok) break;
@@ -397,7 +398,7 @@ $('#cdel').onclick=async()=>{
       const g=await gh(`/contents/content/books/${bf(id)}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); if(!g.ok) break;
       const gj=await g.json(); const b=JSON.parse(dec(gj.content)); unlinked=0;
       for(const e of (b.editions||[])){
-        for(const k of ['pdf','pdf_print','pdf_cover','epub']){ const x=e[k]; if(x&&x.url&&ps.includes(x.url.replace(/^\//,''))){ e[k]={mode:'none',url:'',site:''}; unlinked++; } }
+        for(const k of ['pdf','pdf_print','pdf_cover','epub','hwp']){ const x=e[k]; if(x&&x.url&&ps.includes(x.url.replace(/^\//,''))){ e[k]={mode:'none',url:'',site:''}; unlinked++; } }
         if(e.reader&&ps.some(p=>p===`reader/${id}/${e.label}/`)){ e.reader=false; unlinked++; }
       }
       if(!unlinked) break;
