@@ -358,7 +358,7 @@ const josaIGa = w => { const c = String(w).trim().slice(-1).charCodeAt(0); retur
 function teacherBooksHead(t, list) {
   const nm = t.lay && !/(님|스님|사야도|박사|교수)$/.test(t.name) ? t.name + ' 님' : t.name;  // '엮은 책'에서 재가자는 '님'을 붙임 (운영자 요청, 2026-11-12: 오원탁 님이 엮은 책)
   if (list.length && list.every(x => x.book_type === '경전' || (x.teacher === t.id && /(엮음|편저|편역|편집)\s*$/.test(String(x.byline || ''))))) return `${nm}${josaIGa(nm)} 엮은 책 ${list.length}권`;
-  const trans = list.length > 0 && list.every(x => String(x.translator || '').trim() || (x.original_language && x.original_language !== '한국어'));
+  const trans = list.length > 0 && list.every(x => String(x.translator || '').trim() || langsOf(x).some(l => l !== '한국어'));
   return `${t.name}의 가르침을 ${trans ? '옮긴' : '담은'} 책 ${list.length}권`;
 }
 
@@ -411,10 +411,12 @@ function peopleLinks(b, text, fld) {
 
 // 사람이 녹음한 오디오북이 있는 책: 책 카드 형식 줄과 도서관 찾아보기 '형식'에 '오디오북' (운영자 요청, 2026-11-11)
 const fmtsCard = b => { const u = uniqK(formats(b)); const e = curEd(b); return e && e.reader && AUDIO[b.id] && AUDIO[b.id].human ? [...u, { k: '오디오북' }] : u; };
+// 원서의 언어는 여러 개 고를 수 있음 (운영자 요청, 2026-11-15) — 예전 글자 하나도 그대로 읽음
+function langsOf(b) { const v = b.original_language; return (Array.isArray(v) ? v : v ? [v] : []).map(x => String(x).trim()).filter(Boolean); }
 function coverCard(b) {
   const f = formats(b), fc = fmtsCard(b);
   const tr = b.teacher ? tradOfTeacher(b.teacher) : null;
-  return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${esc([...new Set(tIds(b).map(id => tradOfTeacher(id)?.id).filter(Boolean))].join('|'))}" data-teacher="${esc(tIds(b).join('|'))}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(fc.map(x => x.k).join('|'))}" data-lang="${esc(b.original_language || '')}" data-btype="${esc(b.book_type || '')}" data-pub="${esc(pubsAll(b).map(x => x.key).join('|'))}" data-person="${esc(peopleOf(b).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}">
+  return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${esc([...new Set(tIds(b).map(id => tradOfTeacher(id)?.id).filter(Boolean))].join('|'))}" data-teacher="${esc(tIds(b).join('|'))}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(fc.map(x => x.k).join('|'))}" data-lang="${esc(langsOf(b).join('|'))}" data-btype="${esc(b.book_type || '')}" data-pub="${esc(pubsAll(b).map(x => x.key).join('|'))}" data-person="${esc(peopleOf(b).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}">
   <div class="cover">${!f.length ? '<span class="soon">준비 중</span>' : ''}${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지" loading="lazy">` : `<div class="cover-ph">${esc(b.title)}</div>`}</div>
   <div class="t">${esc(b.title)}</div><div class="a">${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>${pubLine(b) ? `<div class="a publ">${esc(pubLine(b))}</div>` : ''}
   ${f.length ? `<div class="fmt">${fc.map(x => `<span>${x.k}${x.ext ? ' ↗' : ''}</span>`).join('')}</div>` : ''}</a>`;
@@ -517,7 +519,7 @@ const PUBS = () => { const m = new Map(); for (const b of LIB()) for (const p of
   return [...m.values()].filter(o => { const p = provOfPub(o.key); return !(p && p.coop === false); })  // 협력 단체가 아닌 출판사(불교시대사 등)는 찾아보기에 안 넣음 (운영자 요청, 2026-11-12)
     .map(o => ({ key: o.key, name: Object.entries(o.names).sort((a, b) => b[1] - a[1])[0][0], n: o.n })).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, 'ko')); };
 const BTYPES = ['경전', '예불집', '법문집', '해설서', '잠언집', '수행기', '사전'];
-const LANGS = ['빠알리어', '영어', '미얀마어', '태국어', '싱할라어', '한국어', '기타'].filter(l => LIB().some(b => b.original_language === l));
+const LANGS = ['빠알리어', '영어', '미얀마어', '태국어', '싱할라어', '한국어', '기타'].filter(l => LIB().some(b => langsOf(b).includes(l)));
 function libraryBody() {
   const chk = (set, val, label, n, extra = '') => `<label class="${n === 0 ? 'zero' : ''}"><input type="checkbox" data-f="${set}" value="${esc(val)}">${label}${extra}<span class="n">${n}</span></label>`;
   let g = '', trad = '';
@@ -537,7 +539,7 @@ function libraryBody() {
     <details class="fgroup person-group"><summary class="group-name">지은이·옮긴이</summary>${[...PEOPLE.by.values()].map(o => ({ ...o, n: LIB().filter(b => peopleOf(b).includes(o.key)).length })).filter(o => o.n).sort((a, c) => c.n - a.n || a.name.localeCompare(c.name, 'ko')).map(o => chk('person', o.key, esc(o.name), o.n)).join('')}</details>
     <h3>협력 단체</h3>${PUBS().map(x => chk('pub', x.key, esc(x.name), LIB().filter(b => pubsAll(b).some(p => p.key === x.key)).length)).join('')}
     <h3>책 형식</h3>${BTYPES.map(k => chk('btype', k, esc(k), LIB().filter(b => b.book_type === k).length)).join('')}
-    ${LANGS.length ? `<h3>원서의 언어</h3>${LANGS.map(l => chk('lang', l, esc(l), LIB().filter(b => b.original_language === l).length)).join('')}` : ''}
+    ${LANGS.length ? `<h3>원서의 언어</h3>${LANGS.map(l => chk('lang', l, esc(l), LIB().filter(b => langsOf(b).includes(l)).length)).join('')}` : ''}
     <h3>형식</h3>${['PDF', 'EPUB', 'HWP', '온라인 읽기', '오디오북'].map(f => [f, LIB().filter(b => fmtsCard(b).some(x => x.k === f)).length]).filter(([f, n]) => n).map(([f, n]) => chk('fmt', f, f, n)).join('')}
   </div></details>
   <section><div class="toolbar"><div><h1 class="h-page">법보시 도서관</h1><div class="muted small">자료 <span id="libCount">${LIB().length}</span>권</div></div>
@@ -580,7 +582,7 @@ for (const b of BOOKS) {
   <div><div class="cover-box">${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지">` : `<div class="cover-ph big">${esc(b.title)}</div>`}</div></div>
   <div class="d-body"><div class="d-head"><div class="crumb"><a href="/library/">법보시 도서관</a>${['예불집', '사전'].includes(b.book_type) ? ` › <a href="/library/?btype=${encodeURIComponent(b.book_type)}">${esc(b.book_type === '예불집' ? '예불 독송집' : b.book_type)}</a>` : b.book_type === '경전' && (b.main || [])[0] ? ` › <a href="/library/?main=${encodeURIComponent(b.main[0])}">${esc(b.main[0])}</a>` : tr ? ` › <a href="/library/?trad=${tr.id}">${esc(tr.name)}</a> › <a href="/teacher/${t.id}/">${esc(t.name)}</a>` : ''}</div>
     ${b.series ? `<div class="small muted">${esc(b.series)}</div>` : ''}
-    <h1>${esc(b.title)}</h1>${b.subtitle ? `<div class="orig" style="font-style:normal">${esc(b.subtitle)}</div>` : ''}${b.original_title || b.original_language ? `<div class="orig">${esc(b.original_title || '')}${b.original_language ? `<span class="lang-tag">${esc(b.original_language)} 원서</span>` : ''}</div>` : ''}
+    <h1>${esc(b.title)}</h1>${b.subtitle ? `<div class="orig" style="font-style:normal">${esc(b.subtitle)}</div>` : ''}${b.original_title || langsOf(b).length ? `<div class="orig">${esc(b.original_title || '')}${langsOf(b).length ? `<span class="lang-tag">${esc(langsOf(b).join('·'))} 원서</span>` : ''}</div>` : ''}
     <div class="people">${peopleLinks(b, b.byline, 'by')}${b.translator ? ' | ' + peopleLinks(b, b.translator, 'tr') : ''}</div>
     ${pubsOf(b).length ? `<div class="people publ">${pubsOf(b).map(x => `<a href="${pubHref(x.key)}">${esc(x.name)}</a>${pubsOf(b).length > 1 ? (x.kinds.includes('종이책') ? ' 출간' : ' 전자책' + ((curEd(b) || {}).ebook_note ? `(${esc(curEd(b).ebook_note)})` : '')) : ' 출간'}`).join(' · ')}</div>` : ''}
     ${pl ? `<div style="margin:2px 0 8px"><a class="small" href="/dhammatalk/?pl=${pl.id}">▶ ${esc(t.name)}의 법문 바로 듣기</a></div>` : ''}
@@ -597,7 +599,7 @@ for (const b of BOOKS) {
       <dt>저자·스승</dt><dd>${t ? `<a href="/teacher/${t.id}/">${esc(t.name)}</a>${t.roman ? ` <span class="muted small">(${esc(t.roman)})</span>` : ''}` : esc(b.byline)}</dd>
       ${b.translator ? `<dt>번역·편자</dt><dd>${esc(b.translator)}</dd>` : ''}
       ${b.book_type ? `<dt>책 형식</dt><dd>${esc(b.book_type)}</dd>` : ''}
-      ${b.original_language ? `<dt>원서의 언어</dt><dd>${esc(b.original_language)}</dd>` : ''}
+      ${langsOf(b).length ? `<dt>원서의 언어</dt><dd>${esc(langsOf(b).join(', '))}</dd>` : ''}
       ${b.original_source ? `<dt>원서 정보</dt><dd>${esc(b.original_source)}</dd>` : ''}
       <dt>자료 제공</dt><dd>${prov ? esc(prov.name) + (prov.urls || []).map(u => ` <a href="${esc(u)}" target="_blank" rel="noopener">↗</a>`).join('') : '—'}</dd>
       <dt>원본 출처</dt><dd>${(e.sources || []).length ? e.sources.map(s => `${SRC_FILE[s.file] ? `<span class="muted small">${SRC_FILE[s.file]}:</span> ` : ''}<a href="${esc(s.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>${s.checked ? ` <span class="muted small">(${esc(s.checked)} 확인)</span>` : ''}${s.archive ? ` · <a href="${esc(s.archive)}" target="_blank" rel="noopener">보관본</a>` : ''}`).join('<br>') : '—'}</dd>
@@ -847,7 +849,7 @@ const site = {
   variants: VARIANTS,
   books: LIB().map(b => {
     const t = teacherById(b.teacher), tr = b.teacher ? tradOfTeacher(b.teacher) : null;
-    return { id: b.id, title: b.title, subtitle: b.subtitle || '', orig: b.original_title || '', lang: b.original_language || '', cover: b.cover || '', byline: b.byline, tr: b.translator || '', teacher: t ? t.name : '', teacherRoman: t ? t.roman : '', teacherAliases: t ? t.aliases : [], tradition: tr ? tr.name : '', topics: b.topics || [], main: b.main || [], isbn: (b.editions || []).flatMap(x => [x.isbn, x.isbn_ebook]).filter(Boolean), manifest: readerManifest(b), desc: (b.description || '').slice(0, 300) };
+    return { id: b.id, title: b.title, subtitle: b.subtitle || '', orig: b.original_title || '', lang: langsOf(b).join(', '), cover: b.cover || '', byline: b.byline, tr: b.translator || '', teacher: t ? t.name : '', teacherRoman: t ? t.roman : '', teacherAliases: t ? t.aliases : [], tradition: tr ? tr.name : '', topics: b.topics || [], main: b.main || [], isbn: (b.editions || []).flatMap(x => [x.isbn, x.isbn_ebook]).filter(Boolean), manifest: readerManifest(b), desc: (b.description || '').slice(0, 300) };
   }),
   aliases: [...TEACHERS.map(t => [t.name, ...(t.aliases || []), t.roman].filter(Boolean)), ...TRADS.map(t => [t.name])]
 };
