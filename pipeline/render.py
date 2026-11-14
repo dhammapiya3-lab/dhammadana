@@ -18,14 +18,38 @@ def is_latin(t):
     return bool(_re.search(r"[A-Za-zĀ-ỿ]", t)) and not _re.search(r"[가-힣]", t)
 
 
+# 한글 글꼴에 없는 빠알리 글자(ṁ ṃ ṭ ḍ ṇ ḷ …)는 바른 로마자 글꼴로 섞어 그림 (네모로 깨지지 않게)
+UPRIGHT = os.path.join(HERE, "fonts", "Inter-Regular.otf")
+try:
+    from fontTools.ttLib import TTFont as _TT
+    KO_CMAP = set(_TT(FONT).getBestCmap())
+except Exception:
+    KO_CMAP = None
+
+
 class Fonts:
     def __init__(self, size):
         self.size = size
         self.ko = ImageFont.truetype(FONT, size)
         self.la = ImageFont.truetype(LATIN, max(9, round(size * 0.92)))
+        self.up = ImageFont.truetype(UPRIGHT, max(9, round(size * 0.9))) if os.path.exists(UPRIGHT) else self.ko
 
     def pick(self, t):
         return self.la if is_latin(t) else self.ko
+
+    def runs(self, t):
+        f = self.pick(t)
+        if f is self.la or KO_CMAP is None:
+            return [(t, f)]
+        out = []
+        for ch in t:
+            g = self.ko if (ord(ch) in KO_CMAP or ch.isspace()) else self.up
+            if out and out[-1][1] is g: out[-1][0] += ch
+            else: out.append([ch, g])
+        return [tuple(r) for r in out]
+
+    def width(self, draw, t):
+        return sum(draw.textlength(a, font=g) for a, g in self.runs(t))
 INK = (40, 30, 25)
 
 
@@ -51,11 +75,10 @@ def inner_rect(full, tb):
 def wrap(draw, text, fonts, maxw):
     out = []
     for para in text.split("\n"):
-        font = fonts.pick(para)
         cur = ""
         for word in para.split(" "):
             t = (cur + " " + word).strip()
-            if draw.textlength(t, font=font) <= maxw or not cur:
+            if fonts.width(draw, t) <= maxw or not cur:
                 cur = t
             else:
                 out.append(cur); cur = word
@@ -68,7 +91,7 @@ def fit(draw, text, w, h, maxsize):
         f = Fonts(size)
         lines = wrap(draw, text, f, w)
         lh = size * 1.25
-        if all(draw.textlength(l, font=f.pick(l)) <= w for l in lines) and lh * len(lines) <= h:
+        if all(f.width(draw, l) <= w for l in lines) and lh * len(lines) <= h:
             return f, lines, lh
     f = Fonts(10)
     return f, wrap(draw, text, f, w), 13
@@ -160,12 +183,15 @@ def render(src_path, boxes):
         f, lines, lh = fit(d, ko, X1 - X0, Y1 - Y0, cap)
         y = Y0 + ((Y1 - Y0) - lh * len(lines)) / 2
         drawn.append(dict(size=f.size / scale, box=[(x0 + pad), y0 + pad, x1 - pad, y1 - pad], ty=(y / scale, (y + lh * len(lines)) / scale),
-                          tw=max((d.textlength(l, font=f.pick(l)) for l in lines), default=0) / scale, overflow=lh * len(lines) > (Y1 - Y0) + 1))
+                          tw=max((f.width(d, l) for l in lines), default=0) / scale, overflow=lh * len(lines) > (Y1 - Y0) + 1))
         for l in lines:
-            fl = f.pick(l)
-            lw = d.textlength(l, font=fl)
+            lw = f.width(d, l)
             x = X0 if align == "left" else X0 + ((X1 - X0) - lw) / 2
-            d.text((x, y), l, font=fl, fill=(245, 240, 230) if dark else INK)
+            xx = x
+            for a, g in f.runs(l):
+                dy = (f.ko.getmetrics()[0] - g.getmetrics()[0]) if g is not f.ko else 0
+                d.text((xx, y + dy), a, font=g, fill=(245, 240, 230) if dark else INK)
+                xx += d.textlength(a, font=g)
             drawn[-1].setdefault("lines", []).append((x / scale, (y + lh * .15) / scale, (x + lw) / scale, (y + lh * .85) / scale))
             y += lh
     render.qa = check(img, out, QA, drawn, W, H)

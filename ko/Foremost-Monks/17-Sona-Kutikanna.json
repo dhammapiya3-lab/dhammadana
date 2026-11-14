@@ -1,0 +1,664 @@
+[
+ {
+  "img": "images/17-Sona-Kutikanna-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     252,
+     140,
+     548,
+     312
+    ],
+    "ko": "소나 꾸띠깐나 존자의\n업의 여정\n\n옛 서원에서 고따마 부처님의\n가르침 속 아라한과까지",
+    "cover": true,
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     436,
+     54,
+     758,
+     206
+    ],
+    "ko": "옛 서원이 여러 생을 잇습니다.\n\n빠두뭇따라 부처님 때, 덕 있는 한 재가자가\n이레 동안 큰 보시(mahā-dāna)를 올렸습니다.\n고운 목소리로 법을 설하는(kalyāṇa-vākkaraṇa)\n비구 가운데 으뜸이 되기를 바랐습니다.\n부처님께서는 이 바람이 고따마 부처님 아래서\n이루어지리라 예언하셨습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     122,
+     366,
+     312
+    ],
+    "ko": "기원전 528년 7월:\n보이지 않는 법이 듣는 이를 바꿉니다.\n\n야차 장군 사따기리와 헤마와따가\n부처님께서 새로 굴리신 법의 바퀴를\n하늘에서 이야기할 때, 깔리는 아래\n집에서 그 이야기를 들었습니다.\n\n그녀는 곧바로 수다원이 되었으니,\n여성 가운데 첫 성스러운 수다원이었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     338,
+     586,
+     432
+    ],
+    "ko": "귀한 아들이 운명의 표지를 지니고 태어납니다.\n깨달음을 얻은 바로 그날 밤, 깔리는 아들을 낳았습니다.\n천만 냥 값의 훌륭한 귀걸이를 하고 있어서\n소나 꾸띠깐나(천만 귀걸이 소나)라 불렸습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     436,
+     68,
+     738,
+     220
+    ],
+    "ko": "영적인 절박함의 첫 씨앗\n\n마하깟짜나 존자는 꾸라라가라에서\n탁발하셨습니다. 어린 소나는 늘 곁에서 모셨습니다.\n\n장로의 법문을 계속 들으며\n소년의 마음에 깊은 절박함(saṁvega)이\n뿌리내리기 시작했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     216,
+     46,
+     586,
+     160
+    ],
+    "ko": "미지로 향한 홀로 가는 길\n웃제니로 가던 길에 소나는 시끄러운 대상과 떨어져 잤습니다.\n이튿날 아침 홀로 깨어난 그는 숲길을 서둘러 걸었고,\n자기도 모르게 업의 법칙과 마주하는 무서운 곳으로 갔습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     46,
+     606,
+     92
+    ],
+    "ko": "지난 업이 비추는 피할 수 없는 거울",
+    "cover": true,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     80,
+     340,
+     336,
+     400
+    ],
+    "ko": "속이는 상인: 속임수로 재산을 모으고, 탁발하는\n비구들에게 “제 살이나 먹으라”고 했습니다.\n과보: 제 살을 뜯어 먹습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     468,
+     340,
+     724,
+     400
+    ],
+    "ko": "향 장수들: 아라한께 공양 올린 어머니에게\n검은 피를 토하라고 저주했습니다.\n과보: 입에서 검은 피가 흘러나옵니다.",
+    "cover": true,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     358,
+     704,
+     426
+    ],
+    "ko": "끝없는 윤회에 대한 두려움이 뿌리내립니다. 크게 놀란 소나는 꾸라라가라로 돌아왔습니다.\n마하깟짜나 존자는 윤회(saṁsāra)의 깊은 위험과 다시 태어나지 않는 해탈을 일러 주셨습니다.\n소나는 곧바로 머리를 깎고 출가하기를 청했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     186,
+     220,
+     222
+    ],
+    "ko": "첫 번째 청: 거절",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     308,
+     188,
+     440,
+     224
+    ],
+    "ko": "두 번째 청: 거절",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     548,
+     200,
+     694,
+     236
+    ],
+    "ko": "사미로 받아들임",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     434,
+     276,
+     758,
+     414
+    ],
+    "ko": "인내와 지혜의 익어 감\n\n마하깟짜나 존자는 소나의 기능이 아직 여물지\n않음을 보시고 두 번 거절하시며, 먼저 홀로\n자고 홀로 먹는 수행을 하라고 이르셨습니다.\n세 번째 청에 지혜가 익었지만, 그는\n사미(sāmaṇera)로만 출가할 수 있었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     340,
+     142,
+     460,
+     292
+    ],
+    "ko": "목표:\n구족계에\n필요한\n비구 10명",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     108,
+     330,
+     692,
+     424
+    ],
+    "ko": "구족계를 위한 3년의 시련\n외딴 아완띠에는 비구가 적었습니다. 율은 정족수 열 명을 요구했습니다.\n마하깟짜나 존자가 몇 명을 모으면 나머지가 오기 전에 떠나곤 했습니다.\n소나의 구족계를 마치는 데 고된 3년이 걸렸습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     494,
+     266,
+     754,
+     398
+    ],
+    "ko": "빠른 아라한과의 성취\n\n마침내 구족계를 받은 소나 꾸띠깐나\n존자는 부지런히 위빳사나를 닦았습니다.\n\n바로 그 안거 동안 아라한이 되었고,\n은사의 지도로 숫따니빠따를 익혔습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     42,
+     604,
+     154
+    ],
+    "ko": "거룩한 세존께 드리는 말씀\n자자가 끝난 뒤 소나는 부처님을 뵙고 싶어 했습니다.\n마하깟짜나 존자가 축복하며 말씀하셨습니다.\n“부처님께서 그대를 향실로 불러 법을 청하실 것이다.\n내 이름으로 예를 올리라!”",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     506,
+     104,
+     698,
+     356
+    ],
+    "ko": "소나 꾸띠깐나 존자는\n길을 떠나도록 허락을\n청했습니다. 어머니 깔리는\n정교하게 짠 깔개를\n주었습니다.\n\n“부처님의 향실에\n깔아 드리렴.”\n그녀가 부탁했습니다.\n\n어머니의 정성 어린\n선물을 지니고 그는\n사왓티로 떠났습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     322,
+     574,
+     422
+    ],
+    "ko": "제따와나에서 부처님께서 소나를 따뜻하게\n맞이하셨습니다. 제자의 깨끗한 뜻을 아시고\n아난다 존자에게 특별한 처소를 마련하라 하셨습니다.\n소나는 바로 향실 안에 머물도록 초대받았습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     194,
+     644,
+     276
+    ],
+    "ko": "밤새 부처님과 소나는 바깥에서 선정(jhāna)에 드셨습니다. 뒤에 두 분은\n안으로 드셨고, 새벽이 가까워지자 부처님께서는 마음챙김 속에\n사자처럼 누우신 자세(sīha-seyyā)로 쉬셨습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     500,
+     146,
+     710,
+     322
+    ],
+    "ko": "“소나여, 나에게 무엇을\n읊어 보아라.” 부처님께서\n청하셨습니다. 소나는\n앗타까왁가의 열여섯 경을\n읊었습니다. 고운 목소리가\n한 자도 틀림없이 깊은 법을\n전했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     274,
+     450,
+     398
+    ],
+    "ko": "부처님께서는 흠 없는 독송을 칭찬하시고\n왜 늦게 출가했는지 물으셨습니다.\n소나는 감각적 즐거움의 위험을 보았지만\n얽히고 끝없는 집안일 때문에\n출가가 늦어졌다고 말씀드렸습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     82,
+     246,
+     368
+    ],
+    "ko": "부처님께서 통찰\n(위빳사나)의 엄숙한\n게송을 읊으셨습니다.\n\n“세상의 무상과\n괴로움을 보고\n모든 집착(upadhi)이\n다한 열반을\n꿰뚫은 성자는\n악한 행위를\n기뻐하지 않는다.”",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     414,
+     280,
+     764,
+     408
+    ],
+    "ko": "마하깟짜나 존자의 말씀을 전할 때가\n왔습니다. 공손히 절하며 소나는\n남쪽 아완띠 지방을 위한 다섯 가지\n청을 올렸습니다. 아완띠는 엄격한 율을\n현실에 맞게 고쳐야 하는 험한 변방이었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     36,
+     590,
+     74
+    ],
+    "ko": "아완띠의 다섯 가지 예외",
+    "cover": true,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     536,
+     92,
+     712,
+     146
+    ],
+    "ko": "1. 구족계: 비구 다섯\n명으로 (열 명 아님)",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     536,
+     158,
+     712,
+     212
+    ],
+    "ko": "2. 신발: 거친 땅에서는\n여러 겹 신발",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     536,
+     224,
+     712,
+     278
+    ],
+    "ko": "3. 위생: 날마다 목욕\n허락",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     536,
+     288,
+     712,
+     342
+    ],
+    "ko": "4. 깔개: 풀 위에\n짐승 가죽 허락",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     536,
+     350,
+     712,
+     406
+    ],
+    "ko": "5. 가사: 계 경계(sīmā)\n밖에서도 받을 수 있음",
+    "cover": true,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     456,
+     56,
+     748,
+     178
+    ],
+    "ko": "부처님께서 먼 변방을 위한\n다섯 가지 허락을\n모두 승인하셨습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     456,
+     204,
+     748,
+     394
+    ],
+    "ko": "이 깊은 결정은 법이\n윤리의 청정함을 결코\n해치지 않으면서도\n지리의 어려움에 맞게\n융통성 있고 자비로움을\n보여 주었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     456,
+     54,
+     744,
+     190
+    ],
+    "ko": "떠나기 전, 소나는 어머니의 정성 어린\n바람을 이루었습니다. 깔리의 깔개를\n부처님께 올리고, 향실 바닥에\n정성껏 펴 드렸습니다.\n그리고 아완띠로 돌아갔습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     144,
+     276,
+     656,
+     384
+    ],
+    "ko": "어머니 집 앞에서 탁발하며 소나는 일을 잘 마쳤음을 알렸습니다.\n\n“세존을 뵙고 어머니의 깔개를 펴 드렸습니다.” 그가 깔리에게 말하자,\n아들이 무사히 복되게 돌아온 것에 어머니는 크게 기뻐했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     272,
+     650,
+     392
+    ],
+    "ko": "깔리가 놀라운 사실을 밝혔습니다. “수호 신이 네가 받은\n축복을 알려 주었단다! 일만 세계의 천신들이 기뻐했다는구나.\n아들아, 부처님 앞에서 읊은 그대로 나에게도 읊어 다오.”",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     68,
+     340,
+     192
+    ],
+    "ko": "집 문 앞에 세운 큰 정자 아래서\n소나 꾸띠깐나 존자는 성대한\n법회를 열었습니다. 흠 없는\n앗타까왁가 독송을 나누어\n향실의 울림을 고향에 전했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Sona-Kutikanna-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     178,
+     538,
+     302
+    ],
+    "ko": "뒤에 성스러운 대중 가운데서\n부처님께서 가장 높은 영예를 주셨습니다.\n“비구들이여, 고운 목소리로 법을 설하는\n(kalyāṇa-vākkaraṇa) 나의 제자 가운데\n소나 꾸띠깐나가 으뜸이다.”",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
