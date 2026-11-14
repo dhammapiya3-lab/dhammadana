@@ -3,8 +3,13 @@
   "edition": "5판",
   "toc": [
     {
-      "title": "지도",
+      "title": "지도 1 : 부처님 당시 인도 B.C 500년경",
       "page": 1,
+      "sub": false
+    },
+    {
+      "title": "지도 2 : 불교중심지역 majjhimadesa",
+      "page": 2,
       "sub": false
     },
     {

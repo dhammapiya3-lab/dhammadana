@@ -1046,3 +1046,6 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 
 /* 장 제목을 골랐을 때 글 고르기 창: 밑줄·메모·복사·공유는 숨기고 듣기만 (운영자 요청, 2026-11-12) */
 .sel-pop.on-head #selUl,.sel-pop.on-head #selNote,.sel-pop.on-head #selCopy,.sel-pop.on-head #selShare{display:none}
+/* 『법구경 이야기 1』 앞 지도: 지도마다 한 화면, 글 폭보다 넓게(화면 폭까지)·화면 높이에 맞게 크게 (운영자 요청, 2026-11-14) */
+.r-fig:has(img[src*="DL-0023-map-"]){width:min(96vw,1500px);position:relative;left:50%;transform:translateX(-50%);margin:.4em 0 1em}
+.r-fig .fig-btn img[src*="DL-0023-map-"]{max-height:calc(100vh - 150px);max-height:calc(100dvh - 150px);max-width:100%}

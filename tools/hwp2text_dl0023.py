@@ -321,7 +321,7 @@ assert not miss, ('쪽 끝에 넣지 못한 각주', miss[:10])
 # 인쇄본 맨 앞(반표제 앞)의 지도 두 장 — 한글 파일에는 없어 tools/dl0023_maps.py 로 인쇄본 지도를 다시 그린 그림 (운영자 요청, 2026-11-12)
 MAPS = ['/uploads/DL-0023-map-india.png', '/uploads/DL-0023-map-majjhimadesa.png']
 body = '=== ===\n![#부처님 당시 인도 B.C 500년경 — 16대국 지도](' + MAPS[0] + ')\n\n=== ===\n![#불교중심지역 majjhimadesa 지도](' + MAPS[1] + ')\n\n'
-chapters = [('지도', 1)] + [(t, n + 2) for t, n in chapters]   # 지도 두 쪽 뒤로 밀림
+chapters = [('지도 1 : 부처님 당시 인도 B.C 500년경', 1), ('지도 2 : 불교중심지역 majjhimadesa', 2)] + [(t, n + 2) for t, n in chapters]   # 지도 두 쪽 뒤로 밀림, 지도마다 따로 한 화면 (운영자 요청, 2026-11-14)
 subs = [(t, n + 2) for t, n in subs]
 saved['map-india'], saved['map-majjhimadesa'] = MAPS
 for lab, ps in zip(LABELS, out_pages):
