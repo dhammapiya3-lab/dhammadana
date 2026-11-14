@@ -387,8 +387,8 @@ collections:
                 collection: lists
                 file: traditions
                 value_field: "items.*.id"
-                search_fields: ["items.*.name"]
-                display_fields: ["items.*.name"]
+                search_fields: ["items.*.name", "items.*.region"]
+                display_fields: ["items.*.region", "items.*.name"]
               - { name: bio, label: 소개, widget: markdown, required: false }
               - { name: photo, label: 사진, widget: image, required: false }
       - name: traditions

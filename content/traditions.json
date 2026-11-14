@@ -1,6 +1,30 @@
 {
   "items": [
     {
+      "id": "korea-mahasi",
+      "region": "한국",
+      "name": "마하시 전통",
+      "representatives": []
+    },
+    {
+      "id": "korea-shweoomin",
+      "region": "한국",
+      "name": "쉐우민 전통",
+      "representatives": []
+    },
+    {
+      "id": "korea-forest",
+      "region": "한국",
+      "name": "태국 숲속 전통",
+      "representatives": []
+    },
+    {
+      "id": "korea-etc",
+      "region": "한국",
+      "name": "교학·기타",
+      "representatives": []
+    },
+    {
       "id": "mahasi",
       "region": "미얀마",
       "name": "마하시 전통",
