@@ -461,13 +461,15 @@
     {
       "id": "katadhammo",
       "name": "까따담모 스님",
-      "roman": "",
+      "roman": "Kata Dhammo",
       "aliases": [
-        "까따담모"
+        "까따담모",
+        "成法",
+        "Kata Dhammo"
       ],
       "tradition": "forest",
-      "bio": "",
-      "photo": "",
+      "bio": "까따담모 스님 (Kata Dhammo, 成法)\n\n2010년 한국에서 출가\n2011년 미얀마 마하시 전통 수행처에서 출가 및 수행\n2012년 태국 담마윳 전통 롱뿌 우타이 문하에서 수행\n2013년 태국 우돈타니 왓빠탭니밋에서 롱뿌 까따뿐뇨를 계사로 빅쿠계 수계\n2017년~현재 군법당 승법사 주재\n\n승법사와 '붓다의 고귀한 제자들' 네이버 카페를 통해 대중들에게 수행으로 체득한 붓다의 가르침과 태국 숲속 전통 스승들의 가르침을 전하고 계십니다.",
+      "photo": "/uploads/teacher-katadhammo.jpg",
       "rank": 310,
       "lay": false
     },
