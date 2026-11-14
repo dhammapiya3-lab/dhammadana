@@ -1075,3 +1075,7 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 @media (pointer:coarse) and (orientation:landscape){.reader .r-body{padding-left:max(40px,calc(env(safe-area-inset-left) + 24px));padding-right:max(40px,calc(env(safe-area-inset-right) + 24px))}}
 /* 컴퓨터 화면에서도 읽기 글 양옆 여백을 넉넉히 (운영자 요청, 2026-11-14 — 휴대폰 세로 화면은 그대로) */
 @media (min-width:701px){.reader .r-body{padding-left:max(40px,calc(env(safe-area-inset-left) + 24px));padding-right:max(40px,calc(env(safe-area-inset-right) + 24px))}}
+/* 빠알리어 한글 소리 줄 @@…@@ — 원본(엠디솔체)처럼 굵고 둥근 '주아' 글꼴, 쓰인 글자만 담은 작은 파일. 주아에 없는 17글자는 고딕 A1 굵게로 (운영자 요청, 2026-11-15, DL-0027) */
+@font-face{font-family:'JuaPron';src:url(/fonts/Jua-pron.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'JuaPronFb';src:url(/fonts/Jua-pron-fb.woff2) format('woff2');font-display:swap}
+.pron{font-family:'JuaPron','JuaPronFb',var(--sans);font-size:1.06em;letter-spacing:.01em}

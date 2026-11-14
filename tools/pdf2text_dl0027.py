@@ -12,7 +12,7 @@
 - 각주: 위첨자 'N)' → [^N], 쪽 아래 'N) …' → [^N]: …
 - 쪽 위 머리글(장 이름)·쪽 번호·모서리 꾸밈 그림은 뺌. 6쪽(ii) 표기법 표와 운율 보기는 그림으로.
 """
-import sys, re, json, os, collections
+import sys, re, json, os, collections, unicodedata
 import fitz
 
 pdf = sys.argv[1]
@@ -27,7 +27,9 @@ images = []
 
 
 def fix(t):
-    t = t.replace('빣', '-')
+    t = t.replace('빣', '-').replace('\ue719', '-').replace('\ue71e', '-')   # 인쇄본 줄표가 글꼴 안 다른 글자로 들어 있음
+    t = re.sub(r'([āīūĀĪŪ])\u0304', r'\1', t)                                # 80쪽: 장음 표시가 두 번 들어간 글자(ā + ̄)
+    t = re.sub(r'([aiuAIU])\u0304+', lambda m: unicodedata.normalize('NFC', m.group(1) + '\u0304'), t)   # 호환 한자(不 六 律)는 그대로 두려고 NFC 전체는 쓰지 않음
     return re.sub(r'(?<=[A-Za-zÀ-ɏḀ-ỿ])빨(?=[A-Za-zÀ-ɏḀ-ỿ])', '-', t)   # 몇 쪽은 줄표가 '빨' 글자로 들어 있음
 
 
@@ -149,8 +151,16 @@ for n in range(1, N + 1):
             fny = s['y0'] if fny is None else min(fny, s['y0'])
     body = [s for s in keep if fny is None or s['y0'] < fny - 1]
     fnS = [s for s in keep if fny is not None and s['y0'] >= fny - 1 and not set(s['t'].strip()) <= set('-')]
-    body = [s for s in body if not re.fullmatch(r'-{4,}', s['t'].strip())]   # 점선 구분 줄(꾸밈)은 뺌
-    PAGES.append(dict(n=n, lab=lab, lines=lines_of(n, body), fn=lines_of(n, fnS)))
+    BL = lines_of(n, body)
+    # 점선 구분 줄(꾸밈)은 뺌 — 각주 번호가 붙은 점선('------------20)': 여기부터 생략할 수 있음)은 그대로 둠
+    BL = [l for l in BL if not (re.fullmatch(r'-{4,}', ''.join(x['t'] for x in l['spans']).strip()))]
+    PAGES.append(dict(n=n, lab=lab, lines=BL, fn=lines_of(n, fnS)))
+
+
+def PR(t):
+    # 한글 소리 줄: @@…@@ → 화면에서 원본처럼 굵은 둥근 글꼴(주아) (운영자 요청, 2026-11-15)
+    t = t.strip()
+    return f'@@{t}@@' if t else t
 
 
 def ko_join(a, b):
@@ -206,7 +216,7 @@ def build_paras(P, prose=False, each=False):
             cur['lines'][-1] = ko_join(cur['lines'][-1], t0.rstrip() if not t0.endswith(' ') else t0)
             cur['_raw_end'] = t0
         else:
-            cur['lines'].append(t0)
+            cur['lines'].append(PR(t0) if k == 'pron' else t0)
         cur['src'].append(l)
         prev = l
     out = []
@@ -217,7 +227,8 @@ def build_paras(P, prose=False, each=False):
         src_lines = p['src']
         cols = [split_cols(l, mid) for l in src_lines]
         if len(src_lines) >= 2 and all(cols) and not any(l.get('_wrap') for l in src_lines):
-            left = [seg_text(c[0]).strip() for c in cols]; right = [seg_text(c[1]).strip() for c in cols]
+            left = [(PR if l['_k'] == 'pron' else str.strip)(seg_text(c[0])) for c, l in zip(cols, src_lines)]
+            right = [(PR if l['_k'] == 'pron' else str.strip)(seg_text(c[1])) for c, l in zip(cols, src_lines)]
             out.append('\n'.join(left + right)); log['2단'] += 1; continue
         ls = [x.strip() for x in p['lines'] if x.strip()]
         out.append('\n'.join(ls))
