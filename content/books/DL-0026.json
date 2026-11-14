@@ -2,7 +2,7 @@
   "id": "DL-0026",
   "title": "테라와다 불교의범",
   "subtitle": "THERAVĀDA BUDDHASĀSANA PŪJĀVIDHI",
-  "cover": "/uploads/테라와다_불교의범_표지_그림자보정.jpg",
+  "cover": "/uploads/테라와다_불교의범_표지_보정2.jpg",
   "byline": "한국테라와다불교",
   "translator": "",
   "teacher": "",
@@ -15,7 +15,9 @@
   "stores": [],
   "book_type": "예불집",
   "original_title": "",
-  "original_language": "빠알리어",
+  "original_language": [
+    "빠알리어"
+  ],
   "original_source": "",
   "series": "",
   "main": [
