@@ -1,0 +1,286 @@
+[
+ {
+  "img": "images/11-12-Panthakas-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     350,
+     596,
+     448
+    ],
+    "ko": "빤타까 형제\n초기 불교의 업과 대비와 깨달음의 연대기",
+    "cover": true,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-Panthakas-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     64,
+     442,
+     194
+    ],
+    "ko": "부유한 상인의 집을 나간 딸에게서\n두 형제가 큰길 위에서 태어났습니다.\n마하빤타까와 쭐라빤타까, 곧 ‘길의 형제’라고\n이름 지어진 그들은 뒷날 라자가하로 돌아와\n영적인 운명을 찾았습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-Panthakas-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     284,
+     378,
+     324
+    ],
+    "ko": "10만 겁 전에 세운 서원",
+    "cover": true,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     36,
+     328,
+     378,
+     422
+    ],
+    "ko": "마하빤타까(형):\n무색계 선정(arūpāvacara-jhāna)을\n통달하기를 서원했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     422,
+     282,
+     768,
+     422
+    ],
+    "ko": "쭐라빤타까(아우):\n색계 선정(rūpāvacara-jhāna)과\n마음으로 만든 몸을 짓는 일을\n통달하기를 서원했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-Panthakas-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     290,
+     478,
+     416
+    ],
+    "ko": "마하빤타까는 무색계 선정을 빠르게 통달하고\n위빳사나를 닦아 아라한이 되었습니다. 그리고\n이 최상의 행복을 나누려고 아우를 출가시켰습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-Panthakas-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     500,
+     108,
+     766,
+     384
+    ],
+    "ko": "업의 걸림돌\n\n오래전 생에 배움이 더딘 비구를\n놀린 업 때문에 쭐라의 마음은\n막혀 있었습니다. 넉 달 동안\n괴로워하며 애썼지만 네 줄짜리\n게송 하나를 외우지 못했습니다.\n해낼 수 없다고 여긴 형은\n그를 내보냈습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-Panthakas-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     356,
+     302,
+     764,
+     440
+    ],
+    "ko": "승원 밖에서 울던 쭐라는 부처님을 만났습니다.\n어린 비구의 지난 생을 아신 부처님께서는\n깨끗하고 거친 천 한 조각과 그에게 꼭 맞는\n명상 주제를 주셨습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-Panthakas-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     326,
+     776,
+     426
+    ],
+    "ko": "명상\n부처님의 가르침은 간단했습니다. 천을 문지르며 “라조하라낭”(때가 묻는다)이라고\n되뇌라는 것이었습니다. 쭐라의 땀으로 새하얀 천이 차츰 더러워졌습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-Panthakas-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     326,
+     776,
+     426
+    ],
+    "ko": "마음이 바뀌다\n더러워진 천이 그의 마음의 막힘을 깨뜨렸습니다. 그는 알았습니다. 먼지가 천을 더럽히듯\n번뇌가 본래 빛나는 마음을 더럽힌다는 것을. 통찰이 일어나 그는 그 자리에서 아라한이 되었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-Panthakas-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     160,
+     566,
+     306
+    ],
+    "ko": "공양 자리에서 부처님께서는 쭐라가\n올 때까지 드시지 않았습니다.\n새로 얻은 신통을 펼친 쭐라는\n저마다 다른 일을 하는 똑같은\n비구 1,000명으로 몸을 나누었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-Panthakas-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     62,
+     394,
+     222
+    ],
+    "ko": "세간과 출세간\n둔하던 이가 어떻게 천 개의 몸을\n나투었을까요? 부처님께서는 ‘쭐라까세티\n자따까’로 설명하셨습니다. 한 지혜로운\n젊은이가 죽은 쥐 한 마리로 시작하여\n큰 상업 왕국을 이루었다는 이야기입니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-Panthakas-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     62,
+     396,
+     122
+    ],
+    "ko": "불어나는 이치",
+    "cover": true,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     40,
+     196,
+     106,
+     264
+    ],
+    "ko": "라조\n하라낭",
+    "cover": true,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     42,
+     316,
+     438,
+     406
+    ],
+    "ko": "상인이 아주 작은 밑천을 큰 재산으로 불렸듯이,\n쭐라는 짧은 구절 하나를 깊은 선정과\n마음으로 만든 천 개의 몸으로 불렸습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-Panthakas-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     104,
+     598,
+     186
+    ],
+    "ko": "으뜸 제자(Etad-agga)\n마하빤타까: 인식을 바꾸어 무색계 선정에 드는 데 으뜸\n쭐라빤타까: 색계 선정과 마음으로 만든 몸을 짓는 데 으뜸",
+    "cover": true,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
