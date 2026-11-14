@@ -128,10 +128,10 @@
         "created": ""
       },
       "hwp": {
-        "mode": "file",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "hwp/DL-0026/DL-0026_개정판.hwp"
       },
       "reader": true,
       "sources": [
