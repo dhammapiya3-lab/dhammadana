@@ -88,6 +88,7 @@ const card = b => `<a class="bcard" href="/${b.slug}/" data-q="${esc([b.title, b
 put('index.html', layout({ page: 'home', body: `<section class="hero"><div class="wrap">
   <h1>법을 담은 그림책</h1><p>${esc(S.intro)}</p>
   <div class="filter"><input id="q" type="search" placeholder="${U.filter}" aria-label="${U.filter}"><button id="qReset" type="button">${U.reset}</button></div>
+  ${(KO.search_examples || []).length ? `<p class="qex">${KO.search_examples.map(([g, ws]) => `<span class="qg">${esc(g)}</span>${ws.map(w => `<button type="button" data-q="${esc(w)}">${esc(w)}</button>`).join('')}`).join('')}</p>` : ''}
 </div></section>
 <div class="wrap"><section id="sres" hidden><h2 class="tier-h">이야기 <span id="sresN"></span></h2><ol class="sres"></ol></section></div>
 <div class="wrap">${(() => { const listed = new Set(KO.tiers.flatMap(t => t.sections.flatMap(x => x[1]))); const fresh = Object.keys(CAT.books).filter(b => !listed.has(b) && PUB.has(b));

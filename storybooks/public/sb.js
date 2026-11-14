@@ -37,6 +37,7 @@
     };
     let tm; q.addEventListener('input', () => { clearTimeout(tm); tm = setTimeout(run, 150); });
     q.addEventListener('focus', load, { once: true });
+    document.querySelectorAll('.qex button').forEach(x => x.onclick = () => { q.value = x.dataset.q; run(); document.getElementById('sres').scrollIntoView({ behavior: 'smooth', block: 'start' }); });
     document.getElementById('qReset').onclick = () => { q.value = ''; run(); q.focus(); };
   }
 
