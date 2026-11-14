@@ -1067,3 +1067,5 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .spr-btns .spr-go{flex:1;background:var(--accent,#8a5a2b);color:#fff;border-color:transparent;font-weight:600}
 /* 휴대폰·태블릿 가로 화면: 글이 화면 끝에 붙어 둥근 모서리·카메라 구멍에 가리지 않게 양옆 여백을 넉넉히 (운영자 요청, 2026-11-14) */
 @media (pointer:coarse) and (orientation:landscape){.reader .r-body{padding-left:max(40px,calc(env(safe-area-inset-left) + 24px));padding-right:max(40px,calc(env(safe-area-inset-right) + 24px))}}
+/* 컴퓨터 화면에서도 읽기 글 양옆 여백을 넉넉히 (운영자 요청, 2026-11-14 — 휴대폰 세로 화면은 그대로) */
+@media (min-width:701px){.reader .r-body{padding-left:max(40px,calc(env(safe-area-inset-left) + 24px));padding-right:max(40px,calc(env(safe-area-inset-right) + 24px))}}
