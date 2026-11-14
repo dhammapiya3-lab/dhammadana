@@ -1,62 +1,7 @@
-Foremost-Monks 02-03-Sariputta-Moggallana 57 장
-검수 Foremost-Monks/04-Maha-Kassapa 36번 그림 상자1 [자리] 한글 글(1989,772)이 상자 점(1795,357)에서 멀리 그려짐
-검수 Foremost-Monks/04-Maha-Kassapa 41번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-Foremost-Monks 04-Maha-Kassapa 41 장
-검수 Foremost-Monks/05-Anuruddha 02번 그림 상자1 [자리] 한글 글(1121,1128)이 상자 점(1510,770)에서 멀리 그려짐
-검수 Foremost-Monks/05-Anuruddha 21번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Foremost-Monks/05-Anuruddha 24번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Foremost-Monks/05-Anuruddha 50번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 1px)
-Foremost-Monks 05-Anuruddha 53 장
-Foremost-Monks 13-Subhuti 13 장
-Foremost-Monks 16-Sona-Kolivisa 18 장
-Foremost-Monks 17-Sona-Kutikanna 26 장
-Jataka 005-The-Measure-of-Rice 14 장
-Jataka 009-The-Kings-Grey-Hair 14 장
-검수 Jataka/010-Bliss-of-Renunciation 08번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-Jataka 010-Bliss-of-Renunciation 14 장
-검수 Jataka/014-The-Wind-Deer 02번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 4px)
-검수 Jataka/014-The-Wind-Deer 08번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 5px)
-Jataka 014-The-Wind-Deer 9 장
-검수 Jataka/023-The-Noble-Warhorse 02번 그림 상자5 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Jataka/023-The-Noble-Warhorse 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-Jataka 023-The-Noble-Warhorse 14 장
-검수 Jataka/026-The-State-Elephant 02번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Jataka/026-The-State-Elephant 10번 그림 상자2 [자리] 한글이 원래 글 자리(1178,1205-1275,1254)에서 벗어남 (836,1239)
-Jataka 026-The-State-Elephant 13 장
-검수 Jataka/027-Elephant-and-Dog 04번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 5px)
-검수 Jataka/027-Elephant-and-Dog 06번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 5px)
-검수 Jataka/027-Elephant-and-Dog 07번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-Jataka 027-Elephant-and-Dog 13 장
-Jataka 029-Grannys-Blackie 12 장
-Jataka 030-Deadly-Food 11 장
-검수 Jataka/032-The-Peacocks-Dance 04번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 1px)
-검수 Jataka/032-The-Peacocks-Dance 08번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-Jataka 032-The-Peacocks-Dance 12 장
-검수 Jataka/034-The-Amorous-Fish 10번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 3px)
-Jataka 034-The-Amorous-Fish 13 장
-Jataka 037-The-Senior-Partridge 12 장
-Jataka 039-Nanda-and-the-Hoard 12 장
-검수 Jataka/040-The-Fiery-Pit 04번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-Jataka 040-The-Fiery-Pit 12 장
-Jataka 043-The-Monk-and-the-Viper 10 장
-검수 Jataka/044-The-Son-and-the-Mosquito 01번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Jataka/044-The-Son-and-the-Mosquito 02번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 1px)
-검수 Jataka/044-The-Son-and-the-Mosquito 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 4px)
-검수 Jataka/044-The-Son-and-the-Mosquito 04번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 2px)
-Jataka 044-The-Son-and-the-Mosquito 13 장
-검수 Jataka/046-The-Folly-of-the-Monkeys 04번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 5px)
-검수 Jataka/046-The-Folly-of-the-Monkeys 06번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Jataka/046-The-Folly-of-the-Monkeys 09번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 3px)
-Jataka 046-The-Folly-of-the-Monkeys 13 장
-Jataka 048-The-Rain-of-Ruin 15 장
-Jataka 049-The-Lucky-Star 14 장
-Jataka 050-The-Kings-Stratagem 15 장
-자동 검수: 문제 의심 27 곳
-R2 에 올림: 972 개 / 한글판 이야기 47 편
-공개 주소 확인: 200 1723650바이트
-이야기 Foremost-Monks/16-Sona-Kolivisa {'pdf': 24785681, 'zip': 24515635, 'n': 18}
-이야기 Foremost-Monks/17-Sona-Kutikanna {'pdf': 37242793, 'zip': 36969836, 'n': 26}
-책 Foremost-Monks {'pdf': 514073492, 'pdfs': 53665749, 'zip': 513695180, 'stories': 15, 'n': 363}
-내려받기 파일: 3 묶음 새로 만듦
+자동 검수: 문제 의심 0 곳
+R2 에 올림: 46 개 / 한글판 이야기 47 편
+공개 주소 확인: 404 27150바이트
+내려받기 파일: 0 묶음 새로 만듦
+글로 보기: 47 이야기
 41-Mogharaja
 13-Singalakamata
