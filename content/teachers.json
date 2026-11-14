@@ -1,6 +1,19 @@
 {
   "items": [
     {
+      "id": "piyadassi",
+      "name": "삐야닷시 스님",
+      "roman": "Piyadassi Thera",
+      "aliases": [
+        "삐야닷시 테라",
+        "삐야다시 스님"
+      ],
+      "tradition": "srilanka-etc",
+      "bio": "",
+      "photo": "",
+      "rank": 5
+    },
+    {
       "id": "goenka",
       "name": "S. N. 고엔카",
       "roman": "S. N. Goenka",
