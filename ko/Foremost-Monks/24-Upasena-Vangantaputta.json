@@ -1,0 +1,385 @@
+[
+ {
+  "img": "images/24-Upasena-Vangantaputta-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     40,
+     646,
+     146
+    ],
+    "ko": "무아의 길:\n우빠세나 왕간따뿟따 존자 이야기",
+    "cover": true,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Upasena-Vangantaputta-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     344,
+     600,
+     446
+    ],
+    "ko": "오랜 옛날 항사와띠의 한 귀족 청년은, 빠두뭇따라\n부처님께서 한 비구를 많은 무리가 따르는 데 으뜸이라고\n선언하시는 것을 보았습니다. 깊이 감동한 그는\n앞날에 바로 그 영예를 얻기를 크게 서원했습니다.",
+    "cover": [
+     191,
+     62,
+     23
+    ],
+    "align": "center",
+    "em": 17,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Upasena-Vangantaputta-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     344,
+     600,
+     446
+    ],
+    "ko": "마가다에서 우빠세나로 다시 태어난 그는 세 베다를\n통달했습니다. 그러나 깊은 법을 듣고는 바라문의\n재물을 버리고, 머리를 깎고 주황색 가사를 입고\n고따마 부처님의 헌신적인 제자가 되었습니다.",
+    "cover": [
+     180,
+     60,
+     22
+    ],
+    "align": "center",
+    "em": 17,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Upasena-Vangantaputta-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     344,
+     600,
+     446
+    ],
+    "ko": "승가를 키우고 싶었던 우빠세나는 자신이 겨우\n두 안거를 마치고서 한 사람을 출가시켰습니다.\n그는 한 안거를 지낸 제자를 자랑스레 부처님께 보이며\n승단을 빨리 늘렸다고 칭찬받기를 기대했습니다.",
+    "cover": [
+     171,
+     60,
+     23
+    ],
+    "align": "center",
+    "em": 17,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Upasena-Vangantaputta-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     344,
+     600,
+     446
+    ],
+    "ko": "부처님께서는 따르는 이를 서둘러 찾은 우빠세나를\n꾸짖으셨습니다. 승가를 지키려고 엄한 율을 정하셨으니,\n적어도 열 안거를 지낸 비구만\n은사가 될 수 있다는 것이었습니다.",
+    "cover": [
+     164,
+     60,
+     22
+    ],
+    "align": "center",
+    "em": 17,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Upasena-Vangantaputta-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     344,
+     600,
+     446
+    ],
+    "ko": "참된 존경을 얻기로 마음먹은 우빠세나는 숲으로\n들어갔습니다. 몹시 부지런히 수행하며 깊은 통찰을\n길렀습니다. 며칠 만에 그는 세상의 모든 집착을\n깨뜨리고 온전히 깨달아 아라한이 되었습니다.",
+    "cover": [
+     154,
+     58,
+     18
+    ],
+    "align": "center",
+    "em": 17,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Upasena-Vangantaputta-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     344,
+     600,
+     446
+    ],
+    "ko": "우빠세나의 명성이 높아졌습니다. 젊은이 오백 명이\n출가하러 왔지만, 그는 엄격한 숲속 두타행(dhutaṅga)을\n받아들이는 이만 받았습니다. 그리고 그들이 구족계를\n받을 준비가 될 때까지 훌륭하게 이끌었습니다.",
+    "cover": [
+     143,
+     54,
+     15
+    ],
+    "align": "center",
+    "em": 17,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Upasena-Vangantaputta-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     344,
+     600,
+     446
+    ],
+    "ko": "제따와나 승원에서 부처님께서 우빠세나의 제자를\n시험하셨습니다. “거친 분소의를 입는 것이 좋으냐?”\n제자는 좋지 않다고 털어놓았지만, 오직 은사 우빠세나를\n깊이 공경하기에 입는다고 말씀드렸습니다.",
+    "cover": [
+     139,
+     56,
+     15
+    ],
+    "align": "center",
+    "em": 17,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Upasena-Vangantaputta-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     344,
+     600,
+     446
+    ],
+    "ko": "이 깊은 충심에 감동하신 부처님께서는 우빠세나를\n따르는 무리의 높은 존경을 얻는 모든 제자 가운데\n으뜸(etad-agga)이라 선언하셨습니다.\n아득한 겁 전의 서원이 마침내 이루어졌습니다.",
+    "cover": [
+     123,
+     47,
+     11
+    ],
+    "align": "center",
+    "em": 17,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Upasena-Vangantaputta-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     344,
+     600,
+     446
+    ],
+    "ko": "세월이 흘러, 우빠세나는 라자가하의 삽빠손디까\n동굴에서 사리뿟따 존자와 함께 머물렀습니다.\n산들바람이 부는 가운데 우빠세나는 고요히 앉아\n대가사를 깁고 있었고, 위의 위험을 전혀 몰랐습니다.",
+    "cover": [
+     114,
+     47,
+     11
+    ],
+    "align": "center",
+    "em": 17,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Upasena-Vangantaputta-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     424,
+     258,
+     716,
+     374
+    ],
+    "ko": "맹독을 지닌 뱀 두 마리가 동굴 천장에서\n짝짓기를 하고 있었습니다. 한 마리가\n우빠세나의 어깨 위로 곧장 떨어졌습니다.\n독이 퍼지자 그의 몸은 곧바로\n등잔 심지처럼 타올랐습니다.",
+    "cover": [
+     111,
+     44,
+     11
+    ],
+    "align": "center",
+    "em": 16,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Upasena-Vangantaputta-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     344,
+     600,
+     446
+    ],
+    "ko": "몸이 무너졌음을 안 우빠세나는 마음의 힘으로\n잠시 몸이 흩어지는 것을 늦추었습니다. 그리고\n차분히 말했습니다. “벗들이여, 이 몸이 왕겨처럼\n흩어지기 전에 평상에 눕혀 밖으로 옮겨 주시오.”",
+    "cover": [
+     108,
+     48,
+     11
+    ],
+    "align": "center",
+    "em": 17,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Upasena-Vangantaputta-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     88,
+     336,
+     712,
+     432
+    ],
+    "ko": "사리뿟따 존자는 놀랐습니다. 우빠세나의 얼굴빛에도 몸의 모습에도\n아무런 변화가 없었습니다. 보통 사람이라면 괴로운 죽음 앞에서\n보일 두려움도, 고통도, 쇠약함도 전혀 없었습니다.",
+    "cover": [
+     34,
+     27,
+     57
+    ],
+    "align": "center",
+    "em": 17,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Upasena-Vangantaputta-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     592,
+     96,
+     766,
+     170
+    ],
+    "ko": "보통 사람의 마음:\n‘나는 몸이다’",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     198,
+     178,
+     604,
+     290
+    ],
+    "ko": "우빠세나가 설명했습니다. ‘나는 이 몸이다, 이 몸은\n내 것이다’라고 붙잡는 마음만 죽을 때 괴로워합니다.\n그는 모든 갈애와 자만을 뿌리 뽑았기에, 고통을\n겪을 ‘자아’가 남아 있지 않았습니다.",
+    "cover": [
+     71,
+     47,
+     13
+    ],
+    "align": "center",
+    "em": 16,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     588,
+     324,
+     766,
+     398
+    ],
+    "ko": "아라한의 마음:\n‘나는 몸이 아니다’",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Upasena-Vangantaputta-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     128,
+     338,
+     712,
+     430
+    ],
+    "ko": "동굴 밖으로 옮겨지자 우빠세나의 몸은 곧바로 왕겨 덩이처럼\n흩어졌습니다. 모든 집착에서 벗어난 그는 완전한 평화 속에서\n세상을 떠났으니, 다시 태어남이 다한 것을 실현했습니다.",
+    "cover": [
+     32,
+     24,
+     48
+    ],
+    "align": "center",
+    "em": 17,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
