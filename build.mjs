@@ -108,6 +108,8 @@ function imgSize(webPath) {
   return null;
 }
 const wideCover = c => { const z = imgSize(c); return z && z.w > z.h * 1.15 ? z : null; };
+// 펼친 표지가 아닌데 가로가 넓은(세로보다 0.9배 넘게) 표지는 책 카드에서 가운데가 보이게 (운영자 요청, 2026-11-16 — 『불자수첩』)
+const ctrCover = c => { const z = imgSize(c); return z && z.w > z.h * 0.9 && z.w <= z.h * 1.15 ? ' style="object-position:center"' : ''; };
 const fileUrl = u => !u ? '' : /^https?:\/\//.test(u) ? u : S.files_base.replace(/\/$/, '') + '/' + u.replace(/^\//, '');
 function formats(b) {
   const e = curEd(b), f = [];
@@ -467,7 +469,7 @@ function coverCard(b) {
   const f = formats(b), fc = fmtsCard(b);
   const tr = b.teacher ? tradOfTeacher(b.teacher) : null;
   return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${esc([...new Set(tIds(b).map(id => tradOfTeacher(id)?.id).filter(Boolean))].join('|'))}" data-teacher="${esc(tIds(b).join('|'))}" data-region="${esc(countriesOf(b).join('|'))}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(fc.map(x => x.k).join('|'))}" data-lang="${esc(langsOf(b).join('|'))}" data-btype="${esc(b.book_type || '')}" data-pub="${esc(pubsAll(b).map(x => x.key).join('|'))}" data-person="${esc(peopleOf(b).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}" data-ord="${LIB_ORD().get(b.id) ?? ''}" data-author="${esc(authorName(b))}">
-  <div class="cover">${!f.length ? '<span class="soon">준비 중</span>' : ''}${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지" loading="lazy">` : `<div class="cover-ph">${esc(b.title)}</div>`}</div>
+  <div class="cover">${!f.length ? '<span class="soon">준비 중</span>' : ''}${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지" loading="lazy"${ctrCover(b.cover)}>` : `<div class="cover-ph">${esc(b.title)}</div>`}</div>
   <div class="t">${esc(b.title)}</div><div class="a">${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>${pubLine(b) ? `<div class="a publ">${esc(pubLine(b))}</div>` : ''}
   ${f.length ? `<div class="fmt">${fc.map(x => `<span>${x.k}${x.ext ? ' ↗' : ''}</span>`).join('')}</div>` : ''}</a>`;
 }
@@ -499,7 +501,7 @@ put('index.html', layout({ ld: { '@context': 'https://schema.org', '@type': 'Web
 </section>
 <section class="section wrap two">
   <div><div class="section-head"><h2>최근 업데이트</h2><a class="more" href="/library/">도서관 →</a></div>
-    <div class="upd">${updatesList().slice(0, 6).map(u => `<a class="upd-item" href="/book/${u.b.id}/"><span class="upd-cover">${u.b.cover ? `<img src="${esc(u.b.cover)}" alt="" loading="lazy">` : ''}</span><span class="upd-t">${esc(u.b.title)}</span><span class="upd-m">${esc(u.d)} · ${esc(u.c)}</span></a>`).join('')}</div></div>
+    <div class="upd">${updatesList().slice(0, 6).map(u => `<a class="upd-item" href="/book/${u.b.id}/"><span class="upd-cover">${u.b.cover ? `<img src="${esc(u.b.cover)}" alt="" loading="lazy"${ctrCover(u.b.cover)}>` : ''}</span><span class="upd-t">${esc(u.b.title)}</span><span class="upd-m">${esc(u.d)} · ${esc(u.c)}</span></a>`).join('')}</div></div>
   <div><div class="section-head"><h2>주제로 둘러보기</h2><a class="more" href="/library/">모든 주제 →</a></div>
     <div class="chips">${TOPICS.groups.flatMap(g => g.labels).filter(t => countTopic(t) > 0).sort((a, b) => countTopic(b) - countTopic(a)).slice(0, 14).map(t => `<a class="chip" href="/library/?topic=${slugT(t)}">${esc(t)}<span class="n">${countTopic(t)}</span></a>`).join('')}</div></div>
 </section>
