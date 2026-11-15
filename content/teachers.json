@@ -570,6 +570,22 @@
       "rank": 230
     },
     {
+      "id": "sangharakkhita",
+      "name": "상가락키따 스님",
+      "roman": "Bhikkhu Saṅgharakkhita",
+      "aliases": [
+        "빅쿠 상가락키따",
+        "상가락키따"
+      ],
+      "country": [
+        "한국"
+      ],
+      "tradition": "myanmar-etc",
+      "bio": "",
+      "photo": "",
+      "rank": 235
+    },
+    {
       "id": "chanmyay",
       "name": "찬매 사야도",
       "roman": "Chanmyay Sayadaw",
