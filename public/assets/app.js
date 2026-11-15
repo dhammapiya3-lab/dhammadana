@@ -744,7 +744,24 @@ const spreadWide = () => window.innerWidth >= 1000 || (window.innerWidth >= 560 
 const spreadOn = () => !!(R && R.spreadOk && R.spread && spreadWide() && !(R.parMode && R.parMode !== 'off'));  // 원서 대조 중에는 양쪽 보기 대신 원서를 나란히
 let spreadWas = null;
 // 휴대폰 세로 화면: 전체 화면 + 가로 고정 (안드로이드 크롬 등에서만 됨 — 아이폰은 직접 돌려야 함) (운영자 요청, 2026-11-14)
-async function spreadRotate() { if (!R) return; let ok = false; if (screen.orientation && screen.orientation.lock) { try { if (!document.fullscreenElement) { await document.documentElement.requestFullscreen(); R.spreadFs = true; } await screen.orientation.lock('landscape'); R.spreadLock = true; ok = true; } catch (e) {} } if (!ok) setTimeout(() => R && !spreadWide() && toast('휴대폰을 가로로 돌려 주세요 — 가로 화면에서 양쪽으로 보입니다'), 300); }
+async function spreadRotate() {
+  if (!R) return; let ok = false, why = '';
+  const so = screen.orientation;
+  if (so && so.lock) {
+    // 설치한 앱(홈 화면)·이미 전체 화면이면 전체 화면 없이도 돌릴 수 있음 → 먼저 그대로 한 번
+    try { if (document.fullscreenElement || matchMedia('(display-mode: standalone)').matches) { await so.lock('landscape'); ok = true; } } catch (e) { why = e.name; }
+    if (!ok) {
+      try {
+        if (!document.fullscreenElement) { const d = document.documentElement; await (d.requestFullscreen ? d.requestFullscreen({ navigationUI: 'hide' }) : d.webkitRequestFullscreen()); R.spreadFs = true; }
+      } catch (e) { why = e.name; }
+      // 전체 화면이 실제로 켜지기 전에 돌리면 거절하는 브라우저(삼성 인터넷 등)가 있어 잠깐씩 기다리며 몇 번 더 (운영자 요청, 2026-11-16)
+      for (let i = 0; i < 6 && !ok; i++) { try { await so.lock('landscape'); ok = true; } catch (e) { why = e.name; await new Promise(r => setTimeout(r, 250)); } }
+    }
+    if (ok) R.spreadLock = true;
+    else if (R.spreadFs && document.fullscreenElement) { try { await document.exitFullscreen(); } catch (e) {} R.spreadFs = false; }
+  }
+  if (!ok) setTimeout(() => R && !spreadWide() && toast('이 브라우저는 화면을 저절로 돌릴 수 없습니다 — 휴대폰을 가로로 돌려 주세요 (화면 자동 회전을 켜 두세요)' + (why ? ` · ${why}` : '')), 300);
+}
 // 양쪽으로 보기가 켜진 책을 휴대폰 세로로 열면 아래쪽에 '가로로 돌려 양쪽으로 보기' 띠 (운영자 요청, 2026-11-14 — 『테라와다 불교의범』)
 function sprBar() {
   let b = $('#sprBar'); const want = R && R.spreadOk && R.spread && !spreadWide() && !R.sprBarOff && $('#reader') && R.view !== 'page' && matchMedia('(pointer:coarse)').matches;
