@@ -3,7 +3,7 @@
   "title": "빠릿따 독송예경문",
   "subtitle": "",
   "cover": "/uploads/KakaoTalk_20261116_061624893.jpg",
-  "byline": "세나니승원",
+  "byline": "초기불교 세나니승원 (파욱 국제승원 한국분원)",
   "translator": "",
   "teacher": "",
   "co_teachers": [],
@@ -69,10 +69,10 @@
         "created": ""
       },
       "pdf_print": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "pdf/DL-0032/DL-0032_개정판_인쇄용.pdf"
+        "url": "pdf/DL-0032/DL-0032_개정판_인쇄용.pdf",
+        "site": "",
+        "created": ""
       },
       "pdf_cover": {
         "mode": "none",
