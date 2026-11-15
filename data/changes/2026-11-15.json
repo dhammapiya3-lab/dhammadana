@@ -1,0 +1,18 @@
+{
+ "date": "2026-11-15",
+ "new_books": [
+  {
+   "book": "Jungle",
+   "title": "Twenty Five Years of Life in the Jungle",
+   "stories": 35
+  }
+ ],
+ "removed_books": [],
+ "new_stories": [],
+ "removed_stories": [],
+ "changed_text": [],
+ "changed_images": [],
+ "added_images": [],
+ "removed_images": [],
+ "needs_review": []
+}
