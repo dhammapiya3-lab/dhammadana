@@ -27,6 +27,7 @@ images = []
 
 
 def fix(t):
+    t = t.replace('Pālī', 'Pāli')   # 운영자 교정 (2026-11-15): Pālī → Pāli
     t = t.replace('빣', '-').replace('\ue719', '-').replace('\ue71e', '-')   # 인쇄본 줄표가 글꼴 안 다른 글자로 들어 있음
     t = re.sub(r'([āīūĀĪŪ])\u0304', r'\1', t)                                # 80쪽: 장음 표시가 두 번 들어간 글자(ā + ̄)
     t = re.sub(r'([aiuAIU])\u0304+', lambda m: unicodedata.normalize('NFC', m.group(1) + '\u0304'), t)   # 호환 한자(不 六 律)는 그대로 두려고 NFC 전체는 쓰지 않음
@@ -281,8 +282,8 @@ for P in PAGES:
     n = P['n']; name = P['lab']
     paras = []
     if n == 1:
-        paras = ['^^ 빨리어 Pālī', '^^ 예불과 의례집', ':: 태국 담마윳 전통에 따름', ':: 붓다의 고귀한 제자들']
-        # 표지의 글: '빨리어Pālī' '예불과 의례집' '태국 담마윳 전통에 따름' '붓다의 고귀한 제자들'
+        paras = ['^^ 빨리어 Pāli', '^^ 예불과 의례집', ':: 태국 담마윳 전통에 따름', ':: 붓다의 고귀한 제자들']
+        # 표지의 글: '빨리어Pālī'(→ Pāli 로 교정) '예불과 의례집' '태국 담마윳 전통에 따름' '붓다의 고귀한 제자들'
     elif n == 3:
         ps = build_paras(P)
         paras = ['## ' + re.sub(r'^## ', '', ps[0])] + ps[1:]
@@ -334,7 +335,7 @@ for P in PAGES:
 json.dump(BODY, open('/tmp/b27/body_raw.json', 'w'), ensure_ascii=False, indent=0)
 
 # ---------- 목차(읽기 화면 장·소제목)
-chapters = [('표지', 1), ('빨리어(Pālī) 예불(Chanting)의 공덕', 3), ('서문', 5), ('빨리어 한글표기 및 운율', 6), ('목차', 7)]
+chapters = [('표지', 1), ('빨리어(Pāli) 예불(Chanting)의 공덕', 3), ('서문', 5), ('빨리어 한글표기 및 운율', 6), ('목차', 7)]
 for n, (num, title, sub) in sorted(cover_of.items()):
     nxt = next((p[3:] for m in range(n, min(n + 4, N)) for p in BODY[m][1] if p.startswith('## ') and re.match(r'^제\s*\d+\s*장', p[3:])), '')
     # 장 표지 쪽은 비워 두므로 장은 글이 시작하는 쪽(장 제목 줄이 있는 쪽)부터 — 빈 표지·빈 쪽은 앞 장 끝에 붙음
