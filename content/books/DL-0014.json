@@ -18,7 +18,9 @@
   ],
   "book_type": "법문집",
   "original_title": "Awareness alone is not enough",
-  "original_language": ["영어"],
+  "original_language": [
+    "영어"
+  ],
   "original_source": "",
   "series": "",
   "main": [],
@@ -110,8 +112,9 @@
       "lang": "en",
       "title": "Awareness Alone Is Not Enough — Questions & Answers with Ashin Tejaniya",
       "by": "Ashin Tejaniya",
-      "edition": "PDF 판, 212쪽 — 판권 면이 없어 출판사·판·펴낸 해는 적혀 있지 않음",
-      "note": "'영어 원서 N쪽'은 이 PDF 에 인쇄된 쪽 번호"
+      "edition": "Second, revised edition May 2010 (개정 2판) · Auspicious Affinity (Petaling Jaya, Selangor, Malaysia) 법보시판 · This printing: 2,000 copies, July 2010 · Copyright © Ashin Tejaniya 2008",
+      "url": "https://ashintejaniya.org/books-awareness-is-not-enough",
+      "note": "'영어 원서 N쪽'은 이 판에 인쇄된 쪽 번호"
     }
   ]
 }

@@ -79,7 +79,7 @@ for i, p in enumerate(KO_DP):
         if plain(p['t'][a:b]).strip(): KS.append((i, a, b, plain(p['t'][a:b]).strip()))
 ES = []
 for i, p in enumerate(ORIG):
-    if p['k'] in ('toc', 'gl'): continue      # 원서 차례 쪽·용어 풀이는 차례 짝짓기에서 뺌 (한국어 차례도 %% 라 뺌)
+    if p['k'] in ('toc', 'gl', 'pq'): continue      # 원서 차례 쪽·용어 풀이·인용 상자(본문을 크게 다시 실은 것)는 차례 짝짓기에서 뺌 (한국어 차례도 %% 라 뺌)
     for a, b in sents(p['t'], 'en'):
         if plain(p['t'][a:b]).strip(): ES.append((i, a, b, plain(p['t'][a:b]).strip()))
 print('한국어 문단', len(KO), '문장', len(KS), '/ 원서 문단', len(ORIG), '문장', len(ES))

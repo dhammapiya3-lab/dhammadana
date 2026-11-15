@@ -102,7 +102,7 @@ collections:
           - { name: title, label: 원서 제목, required: false }
           - { name: by, label: 지은이, required: false }
           - { name: edition, label: 판본, required: false, hint: "출판사 · 판 · 펴낸 해 · 파일 종류 등 (예: Shwe Oo Min Dhamma Sukha Forest Center, 2판, 2010, PDF)" }
-          - { name: url, label: 원서 받는 곳 주소, required: false, hint: "https:// 로 시작 (선택)" }
+          - { name: url, label: 원본 출처, required: false, hint: "원서를 받을 수 있는 곳 주소 — https:// 로 시작 (선택)" }
           - { name: note, label: 메모, required: false, hint: "쪽 번호 기준 등 (선택)" }
       - { name: series, label: 총서·시리즈, required: false }
       - name: main
