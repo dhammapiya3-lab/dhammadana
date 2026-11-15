@@ -271,7 +271,7 @@
     ],
     "dark": false,
     "align": "center",
-    "em": 13,
+    "em": 15,
     "shape": "box",
     "manual": true
    },
@@ -290,7 +290,7 @@
     ],
     "dark": false,
     "align": "center",
-    "em": 13,
+    "em": 15,
     "shape": "box",
     "manual": true
    },
@@ -309,7 +309,7 @@
     ],
     "dark": false,
     "align": "center",
-    "em": 13,
+    "em": 15,
     "shape": "box",
     "manual": true
    },
@@ -377,12 +377,12 @@
      538,
      446
     ],
-    "ko": "공덕의 무늬\n\n시왈리 존자의 여정은\n업의 깊은 짜임을 보여 줍니다.\n여러 생의 보시로 길러진\n하나의 청정한 서원은\n업의 빚을 견디고\n온전한 해탈과 견줄 데 없는\n풍요로 피어납니다.",
+    "ko": "공덕의 무늬\n\n시왈리 존자의 여정은 업의 깊은 짜임을 보여 줍니다.\n여러 생의 보시로 길러진 하나의 청정한 서원은 업의 빚을 견디고 온전한 해탈과 견줄 데 없는 풍요로 피어납니다.",
     "cover": true,
     "align": "center",
     "ellipse": true,
     "whole": true,
-    "em": 13,
+    "em": 15,
     "outline": true,
     "shape": "box",
     "manual": true

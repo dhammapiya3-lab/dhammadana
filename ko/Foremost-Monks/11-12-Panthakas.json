@@ -244,7 +244,7 @@
     "ko": "라조\n하라낭",
     "cover": true,
     "align": "center",
-    "em": 12,
+    "em": 15,
     "shape": "box",
     "manual": true
    },
@@ -277,7 +277,7 @@
     "ko": "으뜸 제자(Etad-agga)\n마하빤타까: 인식을 바꾸어 무색계 선정에 드는 데 으뜸\n쭐라빤타까: 색계 선정과 마음으로 만든 몸을 짓는 데 으뜸",
     "cover": true,
     "align": "center",
-    "em": 13,
+    "em": 15,
     "shape": "box",
     "manual": true
    }

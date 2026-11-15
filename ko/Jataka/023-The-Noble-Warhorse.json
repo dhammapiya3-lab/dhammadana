@@ -109,7 +109,7 @@
      226,
      204
     ],
-    "em": 12,
+    "em": 15,
     "dark": false
    }
   ]
@@ -299,7 +299,7 @@
     "align": "center",
     "shape": "bubble",
     "manual": true,
-    "em": 13
+    "em": 15
    },
    {
     "rect": [

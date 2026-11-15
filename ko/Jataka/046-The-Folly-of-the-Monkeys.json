@@ -156,7 +156,7 @@
     "ko": "목표:\n물 아끼기",
     "align": "center",
     "shape": "box",
-    "em": 13,
+    "em": 15,
     "manual": true,
     "dark": true
    },
@@ -170,7 +170,7 @@
     "ko": "필요한 것:\n뿌리 크기 알기",
     "align": "center",
     "shape": "box",
-    "em": 13,
+    "em": 15,
     "manual": true,
     "dark": true
    },
@@ -184,7 +184,7 @@
     "ko": "행동:\n나무 뽑기",
     "align": "center",
     "shape": "box",
-    "em": 13,
+    "em": 15,
     "manual": true,
     "dark": true
    },
@@ -198,7 +198,7 @@
     "ko": "결과:\n죽은 나무",
     "align": "center",
     "shape": "box",
-    "em": 13,
+    "em": 15,
     "manual": true,
     "dark": true
    }

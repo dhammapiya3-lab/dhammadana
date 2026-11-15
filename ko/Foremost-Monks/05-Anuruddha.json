@@ -651,7 +651,7 @@
     "ko": "청\n정\n한\n의\n도",
     "cover": true,
     "align": "center",
-    "em": 13,
+    "em": 15,
     "shape": "box",
     "manual": true
    },
@@ -915,7 +915,7 @@
     "ko": "1. 필수품: 받은 것보다 적게",
     "cover": true,
     "align": "center",
-    "em": 13,
+    "em": 15,
     "shape": "box",
     "manual": true
    },
@@ -929,7 +929,7 @@
     "ko": "2. 증득: 깨달음을 감춤",
     "cover": true,
     "align": "center",
-    "em": 13,
+    "em": 15,
     "shape": "box",
     "manual": true
    },
@@ -943,7 +943,7 @@
     "ko": "3. 배움: 깊은 지식을 감춤",
     "cover": true,
     "align": "center",
-    "em": 13,
+    "em": 15,
     "shape": "box",
     "manual": true
    },
@@ -957,7 +957,7 @@
     "ko": "4. 두타행: 수행을 숨김",
     "cover": true,
     "align": "center",
-    "em": 13,
+    "em": 15,
     "shape": "box",
     "manual": true
    },
