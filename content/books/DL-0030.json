@@ -110,10 +110,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "none",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0030/DL-0030_초판3쇄.pdf"
       },
       "pdf_print": {
         "mode": "none",
