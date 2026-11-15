@@ -145,6 +145,7 @@ collections:
           - { name: page_count, label: 쪽수, widget: number, value_type: int, required: false, hint: "책의 전체 쪽수 (숫자만)" }
           - { name: published, label: 종이책 발행일, required: false, hint: "예: 2024년 5월 1일" }
           - { name: publisher_print, label: 종이책 출판사, required: false, hint: "종이책을 펴낸 출판사 (없거나 모르면 비워 두세요)" }
+          - { name: publisher_print_show, label: "위쪽에 보일 출판사 이름 (선택)", required: false, hint: "책 소개 위쪽 'OO 출간' 줄과 책 카드에만 이 이름으로 보입니다. 자료 기록에는 위 출판사 이름 그대로. 비우면 위 이름 그대로" }
           - { name: isbn, label: 종이책 ISBN, required: false, hint: "예: 979-11-12345-67-8 (없으면 비워 두세요)" }
           - { name: published_ebook, label: 전자책 발행일, required: false, hint: "전자책을 종이책과 다른 날 펴냈으면 적어 주세요. 예: 2024년 8월 1일" }
           - { name: publisher_ebook, label: 전자책 출판사, required: false, hint: "전자책(EPUB·PDF)을 펴낸 곳이 종이책과 다르면 적어 주세요" }

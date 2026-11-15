@@ -371,7 +371,9 @@ function pubsOf(b) {
   for (const [n, kind] of [[e.publisher_print, '종이책'], [e.publisher_ebook, '전자책']]) {
     const name = String(n || '').trim(); if (!name) continue;
     const o = out.find(x => pubKey(x.name) === pubKey(name));
-    if (o) o.kinds.push(kind); else out.push({ name, key: pubKey(name), kinds: [kind] });
+    // 위쪽 'OO 출간' 줄·책 카드에만 짧게 보일 이름 (판의 publisher_print_show, 운영자 요청 2026-11-16 — 자료 기록에는 원래 이름 그대로)
+    const show = kind === '종이책' ? String(e.publisher_print_show || '').trim() : '';
+    if (o) { o.kinds.push(kind); if (show) o.show = show; } else out.push({ name, key: pubKey(name), kinds: [kind], ...(show ? { show } : {}) });
   }
   return out;
 }
@@ -385,8 +387,8 @@ function pubsAll(b) {
 const provOfPub = key => PROVIDERS.find(p => [p.name, ...(p.aliases || [])].some(n => pubKey(n) === key || pubKey(n).replace(/출판사$/, '') === key));
 const pubHref = key => { const p = provOfPub(key); return p ? (p.id === 'amumaldeul' ? '/press/' : `/publisher/${p.id}/`) : `/library/?pub=${encodeURIComponent(key)}`; };
 const pubLine = b => { const ps = pubsOf(b); if (!ps.length) return '';
-  if (ps.length === 1) return `${ps[0].name} 출간`;
-  return ps.map(x => x.kinds.includes('종이책') ? `${x.name} 출간` : `전자책 ${x.name}`).join(' · '); };
+  if (ps.length === 1) return `${ps[0].show || ps[0].name} 출간`;
+  return ps.map(x => x.kinds.includes('종이책') ? `${x.show || x.name} 출간` : `전자책 ${x.show || x.name}`).join(' · '); };
 
 // 스승 페이지 책 목록 제목: 경전·예불집만 있으면(예불집은 운영자 요청 2026-11-15: 알로까담미까 스님이 엮은 책) 'OO 스님이 엮은 책', 번역서만 있으면 'OO의 가르침을 옮긴 책', 우리말로 쓴 책이 있으면 'OO의 가르침을 담은 책'
 const josaIGa = w => { const c = String(w).trim().slice(-1).charCodeAt(0); return c >= 0xAC00 && c <= 0xD7A3 && (c - 0xAC00) % 28 ? '이' : '가'; };
@@ -633,7 +635,7 @@ for (const b of BOOKS) {
     ${b.series ? `<div class="small muted">${esc(b.series)}</div>` : ''}
     <h1>${esc(b.title)}</h1>${b.subtitle ? `<div class="orig" style="font-style:normal">${esc(b.subtitle)}</div>` : ''}${b.original_title || langsOf(b).length ? `<div class="orig">${esc(b.original_title || '')}${langsOf(b).length ? `<span class="lang-tag${b.original_title ? '' : ' solo'}">${esc(langsOf(b).join('·'))} 원서</span>` : ''}</div>` : ''}
     <div class="people">${peopleLinks(b, b.byline, 'by')}${b.translator ? ' | ' + peopleLinks(b, b.translator, 'tr') : ''}</div>
-    ${pubsOf(b).length ? `<div class="people publ">${pubsOf(b).map(x => `<a href="${pubHref(x.key)}">${esc(x.name)}</a>${pubsOf(b).length > 1 ? (x.kinds.includes('종이책') ? ' 출간' : ' 전자책' + ((curEd(b) || {}).ebook_note ? `(${esc(curEd(b).ebook_note)})` : '')) : ' 출간'}`).join(' · ')}</div>` : ''}
+    ${pubsOf(b).length ? `<div class="people publ">${pubsOf(b).map(x => `<a href="${pubHref(x.key)}">${esc(x.show || x.name)}</a>${pubsOf(b).length > 1 ? (x.kinds.includes('종이책') ? ' 출간' : ' 전자책' + ((curEd(b) || {}).ebook_note ? `(${esc(curEd(b).ebook_note)})` : '')) : ' 출간'}`).join(' · ')}</div>` : ''}
     ${pl ? `<div style="margin:2px 0 8px"><a class="small" href="/dhammatalk/?pl=${pl.id}">▶ ${esc(t.name)}의 법문 바로 듣기</a></div>` : ''}
     </div><aside class="d-side"><div class="get-box"><div class="gb-title">이 책 읽어보기</div><div class="actions">${e.reader ? `<a class="btn" href="/read/${b.id}/">온라인으로 읽기</a>` : ''}${e.reader && AUDIO[b.id] && AUDIO[b.id].human ? `<a class="btn" href="/read/${b.id}/?audio=1" title="화면을 끄거나 다른 앱을 써도 계속 들립니다">🎧 오디오북으로 듣기</a>` : ''}
       ${f.filter(x => x.k !== '온라인 읽기').map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">${x.name} 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>${x.name} 내려받기</a>`).join('')}
