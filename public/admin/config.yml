@@ -90,6 +90,20 @@ collections:
       - { name: original_title, label: 원서 제목, required: false }
       - { name: original_language, label: 원서의 언어, widget: select, multiple: true, required: false, options: [빠알리어, 영어, 미얀마어, 태국어, 싱할라어, 한국어, 기타], hint: "이 책을 옮길 때 바탕으로 삼은 원서의 언어" }
       - { name: original_source, label: 원서 정보, required: false, hint: "원서 출판사·연도 등" }
+      - name: parallel_editions
+        label: 원서 대조에 쓴 원서 판본
+        label_singular: 원서 판본
+        widget: list
+        required: false
+        summary: "{{fields.lang}} {{fields.title}} — {{fields.edition}}"
+        hint: "읽기 화면 '⇄ 원서 대조'에 나란히 보이는 원서가 어느 판본인지 적습니다 (원서 대조 자료가 있는 책만 보임). 책 소개 '자료 기록'에도 나옵니다."
+        fields:
+          - { name: lang, label: 원서 언어, widget: select, options: [{label: 영어, value: en}, {label: 미얀마어, value: my}, {label: 빠알리어, value: pi}, {label: 태국어, value: th}, {label: 싱할라어, value: si}], default: en }
+          - { name: title, label: 원서 제목, required: false }
+          - { name: by, label: 지은이, required: false }
+          - { name: edition, label: 판본, required: false, hint: "출판사 · 판 · 펴낸 해 · 파일 종류 등 (예: Shwe Oo Min Dhamma Sukha Forest Center, 2판, 2010, PDF)" }
+          - { name: url, label: 원서 받는 곳 주소, required: false, hint: "https:// 로 시작 (선택)" }
+          - { name: note, label: 메모, required: false, hint: "쪽 번호 기준 등 (선택)" }
       - { name: series, label: 총서·시리즈, required: false }
       - name: main
         label: 주요 자료

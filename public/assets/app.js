@@ -679,7 +679,7 @@ async function initReaderPage() {
     view: 'text', zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), bold: store.get('rbold', false), lh: store.get('rlh', 1.9), font: store.get('rfont', 'serif'), mw: store.get('rmw', 36), spread: store.get('rspread2-' + id, !!man.spread),  // 책마다 따로 — 『테라와다 불교의범』처럼 spread 가 있는 책은 처음부터 양쪽으로, 다른 책은 한쪽씩 (운영자 요청, 2026-11-14)
    
     hl: hlp ? hlp.split('|').filter(Boolean) : [], speaking: false,
-    par: root.dataset.par ? root.dataset.par.split(',') : [], parMode: root.dataset.par ? store.get('par-' + id, 'off') : 'off', parD: null,  // 원서 대조 (운영자 요청, 2026-11-15)
+    par: root.dataset.par ? root.dataset.par.split(',') : [], parMode: root.dataset.par ? store.get('par-' + id, 'off') : 'off', parD: null, parEd: (() => { try { return JSON.parse(root.dataset.parEd || '[]'); } catch (e) { return []; } })(),  // 원서 대조 (운영자 요청, 2026-11-15)
     ix: man.index || null, ixPart: store.get('ixp-' + id, 0), ixQ: hlp ? hlp.split('|')[0] : ''
   };
   if (!pages.some(p => p.text)) R.view = 'page';
@@ -932,7 +932,7 @@ function renderReader() {
        <div class="row">쪽 보기 <span class="seg"><button data-spread="0" class="${R.spread ? '' : 'on'}">한쪽씩</button><button data-spread="1" class="${R.spread ? 'on' : ''}">양쪽으로</button></span></div>` : ''}`}</div>
     <div class="panel" id="p-tts">${ttsPanel()}</div>
     ${R.par.length ? `<div class="panel" id="p-par"><h5>⇄ 원서 대조</h5><div class="seg">${[['off', '끄기'], ['para', '문단 나란히'], ['sent', '문장마다']].map(([k, v]) => `<button data-parm="${k}" class="${R.parMode === k ? 'on' : ''}">${v}</button>`).join('')}</div>
-      <p class="note">${R.parD ? `원서: <i>${esc(R.parD.title || '')}</i>${R.parD.by ? ' · ' + esc(R.parD.by) : ''}<br>` : ''}문단 나란히: 한국어 문단 옆(휴대폰은 아래)에 원서 문단. 문장마다: 한국어 문장과 원서 문장을 번갈아. 짝은 자동으로 맞춘 것이라 조금 어긋난 곳이 있을 수 있습니다.</p></div>` : ''}
+      <p class="note">${(() => { const e = R.parEd.find(x => (x.lang || 'en') === R.par[0]) || {}; const t = e.title || (R.parD && R.parD.title), by = e.by || (R.parD && R.parD.by); return t || e.edition ? `원서: ${t ? `<i>${esc(t)}</i>` : ''}${by ? ' · ' + esc(by) : ''}${e.edition ? `<br>판본: ${esc(e.edition)}` : ''}${e.url ? ` <a href="${esc(e.url)}" target="_blank" rel="noopener">↗</a>` : ''}${e.note ? `<br><span class="muted small">${esc(e.note)}</span>` : ''}<br>` : ''; })()}문단 나란히: 한국어 문단 옆(휴대폰은 아래)에 원서 문단. 문장마다: 한국어 문장과 원서 문장을 번갈아. 짝은 자동으로 맞춘 것이라 조금 어긋난 곳이 있을 수 있습니다.</p></div>` : ''}
     <div class="panel" id="p-mode"><h5>화면 모드</h5><div class="seg">${[['day', '기본'], ['mono', '흑백'], ['night', '밤'], ['contrast', '고대비']].map(([k, v]) => `<button data-rmode="${k}" class="${store.get('mode', 'auto') === k ? 'on' : ''}">${v}</button>`).join('')}</div><p class="note">고른 모드는 사이트 전체에 적용되고 다음에 와도 유지됩니다.</p></div>
     <div class="panel" id="p-ul"><h5>이 책의 밑줄</h5><ul>${uls().filter(h => h.id === R.id).sort((a, b) => a.p - b.p).map(h => `<li style="display:block"><button class="link" data-go="${h.p}">${esc(h.pl || h.p)}쪽</button><div class="quote" style="font-size:13.5px">${esc(h.text)}</div>${h.note ? `<div class="small muted">${esc(h.note)}</div>` : ''}</li>`).join('') || '<li class="muted">글을 끌어서 고르면 밑줄을 그을 수 있습니다.</li>'}</ul>
       <div class="row"><a class="tbtn" href="/mynotes/">내 서재에서 모두 보기</a></div></div>

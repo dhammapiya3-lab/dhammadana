@@ -104,5 +104,14 @@
   "added": "2026-11-08",
   "order": null,
   "hidden": false,
-  "hide_update": false
+  "hide_update": false,
+  "parallel_editions": [
+    {
+      "lang": "en",
+      "title": "Awareness Alone Is Not Enough — Questions & Answers with Ashin Tejaniya",
+      "by": "Ashin Tejaniya",
+      "edition": "PDF 판, 212쪽 — 판권 면이 없어 출판사·판·펴낸 해는 적혀 있지 않음",
+      "note": "'영어 원서 N쪽'은 이 PDF 에 인쇄된 쪽 번호"
+    }
+  ]
 }

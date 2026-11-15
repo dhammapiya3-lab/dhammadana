@@ -453,6 +453,8 @@ function peopleLinks(b, text, fld) {
 // 사람이 녹음한 오디오북이 있는 책: 책 카드 형식 줄과 도서관 찾아보기 '형식'에 '오디오북' (운영자 요청, 2026-11-11)
 const fmtsCard = b => { const u = uniqK(formats(b)); const e = curEd(b); return e && e.reader && AUDIO[b.id] && AUDIO[b.id].human ? [...u, { k: '오디오북' }] : u; };
 // 원서의 언어는 여러 개 고를 수 있음 (운영자 요청, 2026-11-15) — 예전 글자 하나도 그대로 읽음
+// 원서 대조에 쓴 원서 판본 (운영자 요청, 2026-11-15): 책 JSON parallel_editions [{lang,title,by,edition,url,note}] — 짝 자료(content/parallel)가 있는 말만
+function parEds(b) { return (b.parallel_editions || []).filter(x => x && (PARALLEL[b.id] || []).includes(x.lang || 'en')); }
 function langsOf(b) { const v = b.original_language; return (Array.isArray(v) ? v : v ? [v] : []).map(x => String(x).trim()).filter(Boolean); }
 function coverCard(b) {
   const f = formats(b), fc = fmtsCard(b);
@@ -644,6 +646,7 @@ for (const b of BOOKS) {
       ${b.book_type ? `<dt>책 형식</dt><dd>${esc(b.book_type)}</dd>` : ''}
       ${langsOf(b).length ? `<dt>원서의 언어</dt><dd>${esc(langsOf(b).join(', '))}</dd>` : ''}
       ${b.original_source ? `<dt>원서 정보</dt><dd>${esc(b.original_source)}</dd>` : ''}
+      ${parEds(b).length ? `<dt>원서 대조 판본</dt><dd>${parEds(b).map(x => `${x.title ? `<i>${esc(x.title)}</i>` : ''}${x.by ? ' · ' + esc(x.by) : ''}${x.edition ? ` <span class="muted small">(${esc(x.edition)})</span>` : ''}${x.url ? ` <a href="${esc(x.url)}" target="_blank" rel="noopener">↗</a>` : ''}`).join('<br>')}</dd>` : ''}
       <dt>자료 제공</dt><dd>${prov ? esc(prov.name) + (prov.urls || []).map(u => ` <a href="${esc(u)}" target="_blank" rel="noopener">↗</a>`).join('') : '—'}</dd>
       <dt>원본 출처</dt><dd>${(e.sources || []).length ? e.sources.map(s => `${SRC_FILE[s.file] ? `<span class="muted small">${SRC_FILE[s.file]}:</span> ` : ''}<a href="${esc(s.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>${s.checked ? ` <span class="muted small">(${esc(s.checked)} 확인)</span>` : ''}${s.archive ? ` · <a href="${esc(s.archive)}" target="_blank" rel="noopener">보관본</a>` : ''}`).join('<br>') : '—'}</dd>
       ${AUDIO[b.id] && abInfoHtml(b) ? `<dt>오디오북</dt><dd>${abInfoHtml(b)}</dd>` : ''}
@@ -659,7 +662,7 @@ for (const b of BOOKS) {
   </div></div></div>`
   }));
   if (e.reader) put(`read/${b.id}/index.html`, layout({
-    title: `${b.title} 읽기`, nav: 'library', page: 'reader', body: `<div id="readerRoot" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}" data-title="${esc(b.title)}" data-byline="${esc(b.byline)}" data-teacher="${esc(t?.name || '')}" data-cover="${esc(b.cover ? (S.site_url || '').replace(/\/$/, '') + b.cover : '')}" data-kakao="${esc(S.kakao_js_key || '')}"${b.no_copy ? ' data-nocopy="1"' : ''}${AUDIO[b.id] ? ` data-audio="/data/audio/${b.id}.json"` : ''}${PARALLEL[b.id] ? ` data-par="${PARALLEL[b.id].join(',')}"` : ''}>
+    title: `${b.title} 읽기`, nav: 'library', page: 'reader', body: `<div id="readerRoot" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}" data-title="${esc(b.title)}" data-byline="${esc(b.byline)}" data-teacher="${esc(t?.name || '')}" data-cover="${esc(b.cover ? (S.site_url || '').replace(/\/$/, '') + b.cover : '')}" data-kakao="${esc(S.kakao_js_key || '')}"${b.no_copy ? ' data-nocopy="1"' : ''}${AUDIO[b.id] ? ` data-audio="/data/audio/${b.id}.json"` : ''}${PARALLEL[b.id] ? ` data-par="${PARALLEL[b.id].join(',')}"` : ''}${parEds(b).length ? ` data-par-ed="${esc(JSON.stringify(parEds(b)))}"` : ''}>
     <div class="wrap prose"><p class="muted">읽기 화면을 불러오는 중입니다…</p><p><a href="/book/${b.id}/">← 책 정보로 돌아가기</a></p></div></div>`
   }));
 }
