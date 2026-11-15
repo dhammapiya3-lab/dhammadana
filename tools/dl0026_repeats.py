@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """『테라와다 불교의범』(DL-0026): 같은 줄 묶음이 되풀이되는 문단(예: '그 분, 존귀하신 분…' 두 줄을 세 번)을
 묶음마다 따로 문단으로 나눠, 되풀이 사이 간격이 고르게 보이게 한다 (운영자 요청, 2026-11-14).
+또 게송·독송 번호(① ② …)로 시작하는 줄이 문단 가운데에 있으면 그 앞에서 나눠, 번호 묶음 사이를 늘 한 줄 띄움
+(330쪽 ⑫~⑮ 처럼 붙어 있던 곳 — 운영자 요청, 2026-11-15). 6쪽 표기법 설명의 ①~④ 는 그대로.
 글자는 그대로 — 묶음 사이에 빈 줄만 넣음. 쓰는 법: python3 tools/dl0026_repeats.py [--write]
 그 다음 늘 python3 tools/dl0026_lineys.py 인쇄본.pdf 를 다시 돌린다(문단 번호가 바뀌므로)."""
 import json, re, sys
@@ -22,15 +24,21 @@ def cuts_of(L):
         k = j
     return sorted(c for c in cuts if 0 < c < len(L))
 
+CIRC = re.compile(r'^[\u2460-\u2473]')
+
 def main(write):
-    d = json.load(open(TXT)); body = d['body']; out = []; n = 0; report = []
+    d = json.load(open(TXT)); body = d['body']; out = []; n = 0; report = []; pg = ''
     for seg in re.split(r'(^=== *.*? *===$)', body, flags=re.M):
-        if seg.startswith('===') : out.append(seg); continue
+        if seg.startswith('===') : out.append(seg); pg = seg; continue
         blocks = re.split(r'(\n\s*\n)', seg)
         for i, b in enumerate(blocks):
             if i % 2: continue
             L = b.split('\n'); core = [l.strip() for l in L]
             c = cuts_of(core)
+            if pg != '=== 6쪽 ===':
+                # 번호 묶음과 번호 묶음 사이만, 앞 묶음이 두 줄 이상일 때 (한 줄짜리 목록 ①②③ 과 '[대 중]' 같은 안내 줄 다음은 그대로)
+                st = [k for k, l in enumerate(core) if CIRC.match(l)]
+                c = sorted(set(c) | {b for a, b in zip(st, st[1:]) if b - a >= 2})
             if c and not core[0].startswith('%%'):
                 n += len(c); report.append((core, c))
                 parts = []; prev = 0

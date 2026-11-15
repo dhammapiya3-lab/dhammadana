@@ -775,7 +775,7 @@ function lineTops(p) {
 function sprAlign() {
   if (!R || !R.ly || !spreadOn()) return;
   const body = $('#rBody'); if (!body) return;
-  $$('.spr-pg p[data-s]', body).forEach(p => { p.style.paddingTop = ''; });
+  $$('.spr-pg p[data-s]', body).forEach(p => { p.style.paddingTop = ''; p.style.marginTop = ''; });
   $$('.spr-pg.spr-l', body).forEach(L => {
     const Rt = L.nextElementSibling; if (!Rt || !Rt.classList.contains('spr-r')) return;
     const side = col => {
@@ -802,20 +802,26 @@ function sprAlign() {
       let t = tl;
       // 인쇄본에서 9pt 안에 다른 쪽 줄이 있으면 그 줄과 같은 높이로 (한 줄씩 맞춤), 없으면 위·아래 줄 사이를 비례로
       const near = [lo, hi].filter(h => h && Math.abs(h.y - A.y) <= 9).sort((p, q) => Math.abs(p.y - A.y) - Math.abs(q.y - A.y))[0];
-      if (near) t = eff(o, near.j, near.k);
+      if (near) { t = eff(o, near.j, near.k); x.m = true; }   // 맞은편 줄과 짝지어진 문단 (아래 같은 간격 맞추기에서 건드리지 않음 — 2026-11-15)
       else if (hi && hi.y > lo.y && A.y > lo.y + 2) t = tl + (A.y - lo.y) / (hi.y - lo.y) * (eff(o, hi.j, hi.k) - tl);
       const a = eff(A.s, A.i, x.k0);
       if (a < t - 1) x.d += t - a;
       else if (a > t + 1) {   // 다른 쪽이 늦음: 그쪽 다음 문단이 바로 이 높이에서 시작하면 그 문단을 내림
         const h = near && S[o][near.j].k0 === near.k ? near : null;
         if (h) { const th = eff(o, h.j, h.k); if (th < a - 1) S[o][h.j].d += a - th; }
+        else if (near && A.i > 0) {   // 맞은편 줄이 문단 가운데 줄이라 내릴 수 없으면 이 문단을 앞 문단과의 빈 간격 안에서 끌어올림 (2026-11-15)
+          const pv = S[A.s][A.i - 1], col = (A.s ? Rt : L).getBoundingClientRect().top;
+          let dv = 0; for (let j = 0; j < A.i; j++) dv += S[A.s][j].d;
+          const room = (eff(A.s, A.i, x.k0) - x.d) - (pv.p.getBoundingClientRect().bottom - col + dv) - 2;
+          const pull = Math.min(a - t, Math.max(0, room)); if (pull > 0.5) x.d -= pull;
+        }
       }
     }
     // 인쇄본에서 같은 간격으로 놓인 줄 묶음(예: '부처님을…/담마를…/상가를…')은 화면에서도 같은 간격으로 (운영자 요청, 2026-11-14)
     S.forEach((a, s) => {
       const gaps = [];
       const isH = x => x.p.classList.contains('sub-h') || x.p.getAttribute('role') === 'heading';   // 소제목 앞뒤 간격은 그대로 (양쪽 소제목 높이가 어긋나지 않게)
-      for (let k = 0; k + 1 < a.length; k++) if (!isH(a[k]) && !isH(a[k + 1])) gaps.push({ k, pg: a[k + 1].ys[a[k + 1].k0] - a[k].ys[a[k].k0], sg: eff(s, k + 1, a[k + 1].k0) - eff(s, k, a[k].k0) });
+      for (let k = 0; k + 1 < a.length; k++) if (!isH(a[k]) && !isH(a[k + 1]) && !a[k + 1].m) gaps.push({ k, pg: a[k + 1].ys[a[k + 1].k0] - a[k].ys[a[k].k0], sg: eff(s, k + 1, a[k + 1].k0) - eff(s, k, a[k].k0) });
       // 같은 인쇄 간격끼리 묶음(2개 이상)을 찾고, 그 묶음들의 화면 간격을 인쇄본 간격에 비례하게 맞춤 (묶음 안은 같게, 묶음 사이는 더 넓게)
       const used = new Set(), cl = [];
       gaps.forEach(g => {
@@ -836,7 +842,7 @@ function sprAlign() {
         prev = { T, pg: C[0].pg };
       });
     });
-    S.forEach(a => a.forEach(x => { if (x.d > 0.5) x.p.style.paddingTop = x.d.toFixed(1) + 'px'; }));
+    S.forEach(a => a.forEach(x => { if (x.d > 0.5) x.p.style.paddingTop = x.d.toFixed(1) + 'px'; else if (x.d < -0.5) x.p.style.marginTop = x.d.toFixed(1) + 'px'; }));
   });
 }
 let sprAlignT = null;
