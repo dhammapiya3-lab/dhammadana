@@ -124,12 +124,15 @@
       "id": "senani",
       "name": "세나니 승원",
       "kind": "승원·사원",
-      "urls": [],
+      "urls": [
+        "https://cafe.daum.net/senani"
+      ],
       "partner": true,
       "aliases": [
         "세나니승원"
       ],
-      "bio": ""
+      "bio": "",
+      "note": "다음 카페 · cafe.daum.net/senani"
     },
     {
       "id": "panditarama",
