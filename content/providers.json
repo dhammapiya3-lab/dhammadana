@@ -108,8 +108,9 @@
       ],
       "partner": true,
       "note": "네이버 카페 · cafe.naver.com/withthebuddha",
-      "image": "/uploads/partner-ariya.png",
-      "bio": "아리야승원은 부처님의 가르침인 팔정도를 실천하는 테라와다 비구들과 불자들의 수행도량입니다."
+      "image": "/uploads/partner-ariya-v2.png",
+      "aliases": ["아리야승원(Ariya Vihāra)", "아리야 승원", "Ariya Vihāra", "메따승원"],
+      "bio": "아리야승원은 부처님의 가르침인 팔정도를 실천하는 테라와다 비구들과 불자들의 수행도량입니다.  \n불자들의 상가에 대한 순수한 공덕과 신심으로 여법한 상가가 뿌리내리기를 기원합니다.  \n청정한 테라와다 상가가 뿌리내려 부처님의 가르침이 오래 머무르기를 기원합니다."
     },
     {
       "id": "panditarama",
