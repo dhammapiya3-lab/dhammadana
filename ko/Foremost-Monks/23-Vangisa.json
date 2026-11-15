@@ -1,0 +1,324 @@
+[
+ {
+  "img": "images/23-Vangisa-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     238,
+     166,
+     580,
+     354
+    ],
+    "ko": "해골의 달인, 재치로 으뜸\n왕기사 존자의 변화\n\n죽은 이를 팔아 재물을 모으던 이가\n궁극의 해탈인 열반을 찾기까지.\n대연대기를 바탕으로 한 그림 연대기",
+    "cover": true,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Vangisa-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     36,
+     706,
+     160
+    ],
+    "ko": "빠두뭇따라 부처님\n오랜 겁 전 항사와띠에서, 한 부자가 빠두뭇따라 부처님께서\n한 비구의 날카로운 재치를 칭찬하시는 것을 보았습니다. 그는\n큰 공양을 올리고 서원했습니다. ‘저도 앞으로 재치로 으뜸이 되기를.’",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Vangisa-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     476,
+     70,
+     742,
+     388
+    ],
+    "ko": "고따마 부처님 시대에\n사왓티에 다시 태어나다\n\n고따마 부처님 시대에 사왓티에\n다시 태어난 바라문 청년 왕기사는\n세 베다를 통달했습니다. 그는\n비밀 주문인 해골 주문\n(chava-sīsa)을 얻었습니다.\n죽은 이의 해골을 가볍게 두드리면\n그가 어디에 다시 태어났는지\n신통하게 알아냈습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Vangisa-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     26,
+     706,
+     152
+    ],
+    "ko": "바라문들은 그의 재주로 돈을 벌었습니다. 덮개 수레에 태워\n돌아다니며 외쳤습니다. “왕기사를 보는 이는 재물을 얻는다.”\n그는 해골을 두드려 죽은 이가 다시 태어난 세계를 알려 주었고,\n사랑하는 이의 앞날을 몹시 알고 싶어 하는 슬픈 사람들에게서\n큰 재물을 거두었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Vangisa-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     372,
+     104,
+     574,
+     360
+    ],
+    "ko": "제따와나에 이르러\n\n제따와나 가까이 머물 때,\n왕기사는 지혜롭다고 이름난\n사문 고따마를 시험하러\n갔습니다. 고따마의 속임수를\n조심하라는 무리의 말을\n물리치고, 오만한 청년은 홀로\n부처님께 다가가 큰소리쳤습니다.\n“나는 죽은 이 누구든 어디에\n다시 태어났는지 알 수 있소.”",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Vangisa-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     42,
+     704,
+     86
+    ],
+    "ko": "부처님께서는 왕기사의 힘을 시험하려고 해골 넷을 가져오셨습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     254,
+     88,
+     704,
+     204
+    ],
+    "ko": "저마다 다른 세계에 다시 태어난 이들의 해골이었습니다.\n1. 지옥(Niraya)\n2. 인간 세계\n3. 천신 세계\n4. 아라한(해탈한 이)",
+    "cover": true,
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Vangisa-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     46,
+     712,
+     88
+    ],
+    "ko": "앞의 세 해골을 두드리며 왕기사는 다시 태어난 곳을 정확히 짚었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     254,
+     88,
+     574,
+     206
+    ],
+    "ko": "“지옥이오.” 그가 말했습니다.\n“인간이오.” 그가 짚었습니다.\n“천신이오.” 그가 확인했습니다.\n\n부처님께서 고개를 끄덕이셨습니다.\n“좋다, 좋다, 왕기사여. 바르게 보는구나.”",
+    "cover": true,
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Vangisa-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     130,
+     38,
+     652,
+     86
+    ],
+    "ko": "왕기사가 넷째 해골을 두드렸지만 아무 소리도 없었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     266,
+     84,
+     574,
+     204
+    ],
+    "ko": "이름난 주문을 거듭 외우며 진땀을\n흘렸지만, 간 곳을 도무지 찾을 수\n없었습니다.\n\n어찌할 바를 몰라, 위대하다던 왕기사도\n끝내 주문이 듣지 않음을 인정했습니다.",
+    "cover": true,
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Vangisa-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     38,
+     390,
+     160
+    ],
+    "ko": "해골 주문\n윤회(saṁsāra) 속 죽은 이를 좇습니다.\n세속의 재물과 집착에서 나옵니다.\n돌고 도는 다시 태어남만 봅니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     404,
+     38,
+     708,
+     162
+    ],
+    "ko": "부처님의 주문\n번뇌를 없애 다시 태어남을 끝냅니다.\n선의로 거저 줍니다.\n천신도 사람도 찾을 수 없는 곳으로 갑니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Vangisa-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     318,
+     38,
+     616,
+     248
+    ],
+    "ko": "“제 해골 주문과 부처님의\n주문을 바꿉시다.”\n왕기사가 청했습니다.\n\n부처님께서 대답하셨습니다.\n“부처들은 바꾸지 않는다.\n거저 준다. 다만 우리와 같은\n모습을 한 이에게만\n가르친다.”",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Vangisa-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     258,
+     62,
+     694,
+     238
+    ],
+    "ko": "궁극의 주문이 몹시 탐난 왕기사는\n시험 기간을 받아들였습니다.\n\n아라한 니그로다깝빠 존자 아래서, 오만하던\n바라문은 재물을 버리고 머리를 깎고 승가에\n들어가 부처님의 주문을 배우려 했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Vangisa-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     366,
+     44,
+     748,
+     236
+    ],
+    "ko": "부처님께서는 왕기사에게\n몸의 서른두 가지 부분을\n관하라고 이르셨습니다.\n\n이 몸의 현상이 일어나고 사라짐을\n관하자 날카로운 지성이 실상을\n꿰뚫었습니다. 왕기사 존자는\n윤회를 끊고 아라한이 되었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Vangisa-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     294,
+     628,
+     434
+    ],
+    "ko": "옛 동료들이 새 주문을 얻으러 왔습니다.\n“배웠는가?” 그들이 다그쳤습니다.\n“그렇소.” 왕기사 존자가 차분히 대답했습니다.\n“하지만 이제 그대들과 할 일이 없소.”\n그들은 욕을 퍼붓고 떠났습니다.\n남을 이용하던 고리가 영영 끊어졌습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Vangisa-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     266,
+     694,
+     436
+    ],
+    "ko": "왕기사 존자는 빼어난 지성을 이익을 위해 쓰지 않고,\n부처님을 찬탄하는 즉흥 게송 수천 편을 지었습니다.\n그의 깊은 시재를 알아보신 부처님께서는 옛 서원을\n이루어 주시며, 왕기사 존자를 재치를 갖춘\n비구 제자 가운데 으뜸이라고 선언하셨습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
