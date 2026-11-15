@@ -221,16 +221,22 @@
     "en": "Ye To be sure! Ny",
     "ko": "알겠습니다!",
     "rect": [
-     654,
-     131,
-     733,
-     162
+     644,
+     120,
+     746,
+     172
     ],
     "ellipse": true,
     "em": 14,
     "align": "center",
     "grow": 3,
-    "whole": true
+    "whole": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ]
    }
   ]
  },

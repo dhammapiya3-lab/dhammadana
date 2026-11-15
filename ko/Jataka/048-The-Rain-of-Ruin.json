@@ -286,10 +286,10 @@
     "en": "The two survivors hid the treasure. One stayed to guard it; the other went for food",
     "ko": "살아남은 둘은 보물을 숨겼습니다. 하나는 남아서 지키고, 하나는 먹을 것을 구하러 갔습니다.",
     "rect": [
-     168,
-     54,
-     632,
-     86
+     160,
+     48,
+     640,
+     94
     ],
     "whole": true,
     "cover": true,

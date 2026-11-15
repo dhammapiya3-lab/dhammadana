@@ -287,14 +287,21 @@
     "en": "am travel-stained,” the Bodhisatta noted.",
     "ko": "“나는 먼 길을 오느라 몸이 더럽소.” 보살이 말했습니다.",
     "rect": [
-     325,
-     94,
-     474,
-     129
+     296,
+     64,
+     502,
+     136
     ],
     "em": 14,
     "align": "center",
-    "whole": true
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ]
    },
    {
     "seed": [

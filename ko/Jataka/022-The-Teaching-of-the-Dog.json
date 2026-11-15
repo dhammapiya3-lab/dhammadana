@@ -169,14 +169,18 @@
     "en": "Those hounds reared red by the royal family, well-bred and strong—these are not slaughtered. Only the weak are killed. This is not just",
     "ko": "왕실에서 기르는 혈통 좋고 힘센 개들은 죽이지 않고, 약한 개들만 죽입니다. 이것은 정의가 아닙니다.",
     "rect": [
-     264,
-     55,
-     537,
-     90
+     262,
+     46,
+     540,
+     100
     ],
     "em": 14,
     "align": "center",
-    "whole": true
+    "cover": [
+     227,
+     215,
+     195
+    ]
    }
   ]
  },
@@ -320,14 +324,21 @@
     "en": "Fes The dogs HE in your Ss own palace Bring ‘OD. them here S38 with eal buttermilk oe and kusa grass. Oo 7) will prove it",
     "ko": "바로 왕궁의 개들입니다. 버터밀크와 꾸사 풀을 가지고 그 개들을 데려오십시오. 제가 증명하겠습니다.",
     "rect": [
-     532,
-     313,
-     706,
-     391
+     520,
+     298,
+     718,
+     402
     ],
     "em": 14,
     "align": "center",
-    "whole": true
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ]
    }
   ]
  },
