@@ -149,6 +149,21 @@
       "note": "다음 카페 · cafe.daum.net/hy3171"
     },
     {
+      "id": "sasanarakkhita",
+      "name": "사사나락키따 담마공동체",
+      "kind": "단체",
+      "urls": [
+        "https://cafe.naver.com/dhammaforest"
+      ],
+      "partner": true,
+      "aliases": [
+        "사사나락키따(SāsanaRakkhita) 담마공동체",
+        "사사나락키따담마공동체",
+        "SāsanaRakkhita"
+      ],
+      "note": "네이버 카페 · cafe.naver.com/dhammaforest"
+    },
+    {
       "id": "panditarama",
       "name": "빤디따라마 근본불교 수행센터",
       "kind": "승원·사원",

@@ -408,8 +408,9 @@ const T_KEYS = new Map(); for (const t of TEACHERS) for (const n of [t.name, ...
 function peopleRaw(b) {
   const out = [];
   for (const [fld, text] of [['by', b.byline], ['tr', b.translator]]) {
-    for (const part of String(text || '').split(/[,，|]|\s{2,}/)) {
-      const name = part.trim().replace(PROLE, '').trim(); if (!name) continue;
+    for (const part of String(text || '').split(/[,，|;；]|\s{2,}/)) {
+      // 이름 뒤 괄호 속 역할('빅쿠 상가락키따 (게송 한글번역)')은 이름에서 뺌 — ';' 로 나뉜 여러 사람도 따로 링크 (운영자 요청, 2026-11-16)
+      const name = part.trim().replace(/\s*\([^()]*\)$/, '').replace(PROLE, '').trim(); if (!name) continue;
       out.push({ fld, name });
     }
   }
@@ -695,6 +696,8 @@ for (const t of TEACHERS) {
 {
   const PUBS = new Map();
   for (const b of LIB()) for (const x of pubsAll(b)) { const p = provOfPub(x.key); if (!p || p.id === 'amumaldeul') continue; if (!PUBS.has(p.id)) PUBS.set(p.id, { p, books: [] }); const o = PUBS.get(p.id); if (!o.books.includes(b)) o.books.push(b); }
+  // 지은이 줄의 이름이 협력 단체면('향천선원 엮음') 그 단체 페이지도 만들어 지은이 링크가 갈 곳이 있게 (운영자 요청, 2026-11-16)
+  for (const b of LIB()) for (const x of peopleRaw(b)) { const p = provOfPerson(x.name); if (!p || p.id === 'amumaldeul') continue; if (!PUBS.has(p.id)) PUBS.set(p.id, { p, books: [] }); const o = PUBS.get(p.id); if (!o.books.includes(b)) o.books.push(b); }
   for (const { p, books } of PUBS.values()) put(`publisher/${p.id}/index.html`, layout({
     title: p.name, nav: 'library', page: 'teacher', desc: `${p.name}에서 펴낸 책 ${books.length}권 — 붓다담마 법보시 도서관`, body: `<div class="wrap"><div class="teacher-head">${p.logo ? `<div class="pub-logo${p.logo_small ? ' sm' : ''}"><img src="${esc(p.logo)}" alt="${esc(p.name)} 로고"></div>` : `<div class="portrait" aria-hidden="true">${p.image ? `<img src="${esc(p.image)}" alt="">` : esc(p.name.replace(/^\(.*?\)/, '')[0])}</div>`}
     <div><div class="small muted"><a href="/library/">법보시 도서관</a> · ${p.coop === false ? '출판사' : '협력 단체'}</div>
