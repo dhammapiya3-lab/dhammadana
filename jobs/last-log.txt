@@ -12,6 +12,9 @@ Foremost-Monks 17-Sona-Kutikanna 26 장
 Foremost-Monks 18-Sivali 15 장
 검수 Foremost-Monks/20-21-Rahula-Ratthapala 26번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Foremost-Monks 20-21-Rahula-Ratthapala 34 장
+검수 Jataka/006-The-Water-Rakkhasa 02번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 3px)
+Jataka 006-The-Water-Rakkhasa 15 장
+Jataka 012-The-Golden-Deer 14 장
 검수 Jataka/018-The-Sacrificial-Goat 05번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 검수 Jataka/018-The-Sacrificial-Goat 06번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Jataka 018-The-Sacrificial-Goat 14 장
@@ -21,6 +24,7 @@ Jataka 022-The-Teaching-of-the-Dog 14 장
 Jataka 023-The-Noble-Warhorse 14 장
 검수 Jataka/026-The-State-Elephant 10번 그림 상자2 [자리] 한글이 원래 글 자리(1178,1205-1275,1254)에서 벗어남 (836,1239)
 Jataka 026-The-State-Elephant 13 장
+Jataka 028-Nandivisala 12 장
 검수 Jataka/034-The-Amorous-Fish 10번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 3px)
 Jataka 034-The-Amorous-Fish 13 장
 Jataka 041-The-Unfortunate-Monk 15 장
@@ -32,8 +36,9 @@ Jataka 044-The-Son-and-the-Mosquito 13 장
 검수 Jataka/046-The-Folly-of-the-Monkeys 06번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 검수 Jataka/046-The-Folly-of-the-Monkeys 09번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 3px)
 Jataka 046-The-Folly-of-the-Monkeys 13 장
-자동 검수: 문제 의심 16 곳
-R2 에 올림: 712 개 / 한글판 이야기 50 편
+Jataka 048-The-Rain-of-Ruin 15 장
+자동 검수: 문제 의심 17 곳
+R2 에 올림: 824 개 / 한글판 이야기 50 편
 공개 주소 확인: 200 1649507바이트
 이야기 Foremost-Monks/05-Anuruddha {'pdf': 71850717, 'zip': 71568947, 'n': 53}
 이야기 Foremost-Monks/07-Lakundaka {'pdf': 16523829, 'zip': 16254487, 'n': 13}
@@ -46,16 +51,20 @@ R2 에 올림: 712 개 / 한글판 이야기 50 편
 이야기 Foremost-Monks/18-Sivali {'pdf': 22552650, 'zip': 22287244, 'n': 15}
 이야기 Foremost-Monks/20-21-Rahula-Ratthapala {'pdf': 48899229, 'zip': 48612738, 'n': 34}
 책 Foremost-Monks {'pdf': 597374932, 'pdfs': 62498003, 'zip': 596975175, 'stories': 18, 'n': 423}
+이야기 Jataka/006-The-Water-Rakkhasa {'pdf': 19125055, 'zip': 18858633, 'n': 15}
+이야기 Jataka/012-The-Golden-Deer {'pdf': 18821017, 'zip': 18556800, 'n': 14}
 이야기 Jataka/018-The-Sacrificial-Goat {'pdf': 16420641, 'zip': 16150258, 'n': 14}
-이야기 Jataka/022-The-Teaching-of-the-Dog {'pdf': 17761137, 'zip': 17495937, 'n': 14}
+이야기 Jataka/022-The-Teaching-of-the-Dog {'pdf': 17750388, 'zip': 17485188, 'n': 14}
 이야기 Jataka/023-The-Noble-Warhorse {'pdf': 17034712, 'zip': 16769417, 'n': 14}
 이야기 Jataka/026-The-State-Elephant {'pdf': 16553604, 'zip': 16287435, 'n': 13}
+이야기 Jataka/028-Nandivisala {'pdf': 14872536, 'zip': 14604361, 'n': 12}
 이야기 Jataka/034-The-Amorous-Fish {'pdf': 15143340, 'zip': 14874278, 'n': 13}
-이야기 Jataka/046-The-Folly-of-the-Monkeys {'pdf': 15973895, 'zip': 15701740, 'n': 13}
+이야기 Jataka/046-The-Folly-of-the-Monkeys {'pdf': 15974526, 'zip': 15702371, 'n': 13}
 이야기 Jataka/041-The-Unfortunate-Monk {'pdf': 17957211, 'zip': 17691319, 'n': 15}
 이야기 Jataka/044-The-Son-and-the-Mosquito {'pdf': 15070772, 'zip': 14801355, 'n': 13}
-책 Jataka {'pdf': 496204776, 'pdfs': 50495826, 'zip': 495795016, 'stories': 32, 'n': 422}
-내려받기 파일: 20 묶음 새로 만듦
+이야기 Jataka/048-The-Rain-of-Ruin {'pdf': 16669093, 'zip': 16404613, 'n': 15}
+책 Jataka {'pdf': 496168663, 'pdfs': 50497431, 'zip': 495758903, 'stories': 32, 'n': 422}
+내려받기 파일: 24 묶음 새로 만듦
 글로 보기: 50 이야기
 41-Mogharaja
 13-Singalakamata
