@@ -687,9 +687,9 @@ for (const t of TEACHERS) {
     ${t.bio ? `<div class="desc small">${marked.parse(t.bio)}</div>` : ''}
     ${(t.urls || []).filter(Boolean).length ? `<p style="margin:8px 0 0">${t.urls.filter(Boolean).map(u => `<a class="btn sm ghost pub-site" href="${esc(u)}" target="_blank" rel="noopener">${/youtube\.com|youtu\.be/.test(u) ? '▶ 유튜브 채널' : /cafe\.naver\.com/.test(u) ? '네이버 카페 · ' + esc(u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')) : /cafe\.daum\.net/.test(u) ? '다음 카페 · ' + esc(u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')) : esc(u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))} ↗</a>`).join(' ')}</p>` : ''}
     ${pl ? `<p style="margin:8px 0 0"><a class="btn sm ghost" href="/dhammatalk/?pl=${pl.id}">▶ ${esc(t.name)}의 법문 듣기</a></p>` : ''}</div></div>
-    <div class="section-head" style="margin-top:20px"><h2>${esc(teacherBooksHead(t, list))}</h2></div>
-    ${list.length ? `<div class="grid">${list.map(coverCard).join('')}</div>` : '<p class="muted">아직 등록된 책이 없습니다.</p>'}
-    ${trans.length ? `<div class="section-head" style="margin-top:30px"><h2>옮긴 책</h2></div><div class="grid">${trans.map(coverCard).join('')}</div>` : ''}
+    ${list.length || !trans.length ? `<div class="section-head" style="margin-top:20px"><h2>${esc(teacherBooksHead(t, list))}</h2></div>
+    ${list.length ? `<div class="grid">${list.map(coverCard).join('')}</div>` : '<p class="muted">아직 등록된 책이 없습니다.</p>'}` : ''}
+    ${trans.length ? `<div class="section-head" style="margin-top:${list.length ? 30 : 20}px"><h2>옮긴 책 ${trans.length}권</h2></div><div class="grid">${trans.map(coverCard).join('')}</div>` : ''}
     <div class="section-head" style="margin-top:36px"><h2>같은 전통의 스승</h2></div>
     <div class="chips">${TEACHERS.filter(x => x.tradition === t.tradition && x.id !== t.id).map(x => `<a class="chip" href="/teacher/${x.id}/">${esc(x.name)}<span class="n">${countTeacher(x.id)}</span></a>`).join('')}</div></div>`
   }));
