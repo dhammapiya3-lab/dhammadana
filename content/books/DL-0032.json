@@ -69,10 +69,10 @@
         "created": ""
       },
       "pdf_print": {
-        "mode": "none",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0032/DL-0032_개정판_인쇄용.pdf"
       },
       "pdf_cover": {
         "mode": "none",
