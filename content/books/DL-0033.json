@@ -1,0 +1,111 @@
+{
+  "id": "DL-0033",
+  "title": "불자수첩",
+  "subtitle": "수행자의 삶",
+  "cover": "/uploads/20261116_075327.png",
+  "byline": "향천선원 엮음 ; 빅쿠 상가락키따 (게송 한글번역)",
+  "translator": "",
+  "teacher": "",
+  "co_teachers": [],
+  "country": [
+    "한국"
+  ],
+  "provider": "hyangcheon",
+  "press": false,
+  "provider_chip": false,
+  "paper": "",
+  "paper_url": "",
+  "stores": [],
+  "book_type": "",
+  "original_title": "",
+  "original_language": [],
+  "original_source": "",
+  "parallel_editions": [],
+  "series": "",
+  "main": [],
+  "topics": [
+    "삼보 공덕",
+    "자애·사무량심",
+    "5계·10선업도",
+    "포살·8계",
+    "재가자의 삶"
+  ],
+  "description": "불자(수행자)로서 언제나 어디서나 항상 지니며 삼보를 숙고할 수 있는 나만의 소중한 '예경집'으로 출판하였습니다.",
+  "author_intro": "**Saṅgharakkhita Bhikkhu 약력 (상가락키따 빅쿠)**\n\n• 1976년 서울 출생.\n\n• 2006년 미얀마의 빤디따라마(Paṇḍitārāma) 숲속 수행처(SheMainGon)에서 아쉰 빤디따비왕사(Ashin Paṇḍitābhivaṃsa) 큰스님을 계사 스승으로 모시고 빅쿠 구족계를 수여받은 후 수행 정진함.\n\n• 파아욱또야(PaAuk Tawya) 몰라먀인, 삔우륀, 헤호 수행처 등지에서 파아욱 사야도지, 사야도 우 레와따(Sayadaw U Revata) 등의 스승들을 모시고 수행 정진함.\n\n• 미얀마, 스리랑카, 태국, 말레이시아, 인도네시아 등지의 다수의 숲속수행처에서 수행 정진함.\n\n• 마하간다용(MahāGandhayon) 등 다수의 강원에서 남방승가의 전통에 기반하여 빨리(Pāḷi) 경전을 학습하고 연구함.\n\n• 한국 다수의 선원과 교육기관, 불교단체 등에서 설법하고 명상을 지도함. (지견명상원, 호두마을, 서울불교대학원대학교, 향천선원, 춘천월정사문화원 등)\n\n• 미얀마 다수의 사원들에서 법사(法師)로서 명상을 지도하고 법문을 설함.\n\n• 파아욱또야(PaAuk Tawya) 사원에서 율사(律師)로서 출가의식을 비롯한 승가업무(Saṅgha-Kamma)들을 주도하고 율장을 강의하며 의지처 스승(Nissayācariya)으로서 다국적의 비구들과 사미들을 교육하고 훈계함.\n\n• 삼장법사강원(Tipitaka Kamboja Pariyatti Monastery)에서 3년간 학장(學長)으로서 다수의 사미승들을 교육하고 양성함.\n\n• 2025년 현재 말레이시아, 인도네시아, 한국 등지에서 전법활동을 이어가고 있음. (Bodhi-Heart-Sanctuary[Malaysia], Vihara-Dhammadāyāda[Indonesia], 향천선원[한국] 등)\n\n• 2026년 4월에 공식 출범할 승가교육기관이자 불교전법기관인 '사사나락키따(SāsanaRakkhita) 담마공동체'의 학장이자 지도법사로서 법과 율의 가르침을 훼손없이 지켜나갈 사부대중(출가와 재가)을 양성하고 있음.\n\n​",
+  "translator_intro": "",
+  "translator_intro_title": "",
+  "contents": "",
+  "editions": [
+    {
+      "label": "초판",
+      "label_display": "",
+      "current": true,
+      "public": true,
+      "page_count": 176,
+      "published": "2026년 5월 5일",
+      "publisher_print": "도서출판 하얀연꽃",
+      "publisher_print_show": "",
+      "isbn": "",
+      "published_ebook": "",
+      "publisher_ebook": "",
+      "ebook_note": "",
+      "isbn_ebook": "",
+      "changes": "",
+      "hide_update": false,
+      "pdf": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_print": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_cover": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "epub": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "hwp": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "reader": false,
+      "sources": [
+        {
+          "file": "pdf",
+          "url": "https://cafe.naver.com/dhammaforest/345",
+          "checked": "2026년 11월 16일",
+          "archive": ""
+        }
+      ],
+      "collection": "사사나락키따 담마공동체 카페",
+      "collected": "",
+      "permission_status": "public",
+      "notice": "",
+      "permission_note": "",
+      "permission_image": "",
+      "permissions": [],
+      "note": ""
+    }
+  ],
+  "audiobook": null,
+  "license": "CC BY-NC-ND",
+  "added": "2026-11-16",
+  "order": null,
+  "hidden": false,
+  "no_copy": false,
+  "hide_update": false
+}
