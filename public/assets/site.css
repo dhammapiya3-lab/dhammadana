@@ -1086,3 +1086,21 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .spk{color:#C9A46A} }
 
 .dash-rule{display:inline-block;border-top:1px solid currentColor;vertical-align:.6em;margin-right:3px;opacity:.7}  /* 각주가 붙은 점선을 가운데 줄로 (DL-0027) */
+
+/* ---------- 원서 대조 (운영자 요청, 2026-11-15) ---------- */
+.reflow.par2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:2.4em;align-items:start}
+.reflow.par2 > *{grid-column:1 / -1}
+.reflow.par2 > .par-k{grid-column:1}
+.reflow.par2 > .par-or{grid-column:2;border-left:1px solid var(--line);padding-left:1.2em;margin-left:-1.2em}
+.par-or{font-family:Georgia,'Times New Roman',var(--serif);color:var(--ink-soft);font-size:.92em;line-height:1.7;position:relative}
+.par-or p{margin:0 0 .7em}
+.par-or .par-h{font-weight:700;letter-spacing:.02em}
+.par-or .par-gl{white-space:normal}
+.reflow.par1 .par-or{background:var(--card,#fff);border:1px solid var(--line);border-radius:10px;padding:.7em .9em .4em;margin:-.4em 0 1.2em}
+.par-pg{display:block;font-family:var(--sans);font-size:11px;color:var(--ink-soft);opacity:.7;margin:-.3em 0 .4em}
+.reflow.par2 .par-pg{position:absolute;right:0;top:-1.4em;margin:0}
+.par-hide{display:none !important}
+.par-sent{margin:0 0 1.2em}
+.par-sent .ps{margin:0 0 .9em}
+.par-sent .ps-o{font-family:Georgia,'Times New Roman',var(--serif);color:var(--ink-soft);font-size:.9em;line-height:1.65;margin-top:.15em;padding-left:.8em;border-left:2px solid var(--line)}
+.par-sent .ps-hd{margin-top:-.6em}

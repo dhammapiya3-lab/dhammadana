@@ -388,7 +388,7 @@ function initLibrary() {
     });
     $$('.trad-region').forEach(g => { let n = g.nextElementSibling, any = false; while (n && n.matches('[data-trad-block]')) { if (!n.hidden) any = true; n = n.nextElementSibling; } g.hidden = !any; });
     const books = $$('#libGrid .book');
-    let shown = 0;
+    let shown = 0, lastPg = null;
     for (const b of books) {
       const has = (k, list) => !list || list.some(v => (b.dataset[k] || '').split('|').includes(v));
       let ok = has('main', sel.main) && has('topics', sel.topic) && has('fmts', sel.fmt) && has('lang', sel.lang) && has('btype', sel.btype) && has('pub', sel.pub) && has('person', sel.person) && has('region', sel.region);
@@ -679,6 +679,7 @@ async function initReaderPage() {
     view: 'text', zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), bold: store.get('rbold', false), lh: store.get('rlh', 1.9), font: store.get('rfont', 'serif'), mw: store.get('rmw', 36), spread: store.get('rspread2-' + id, !!man.spread),  // 책마다 따로 — 『테라와다 불교의범』처럼 spread 가 있는 책은 처음부터 양쪽으로, 다른 책은 한쪽씩 (운영자 요청, 2026-11-14)
    
     hl: hlp ? hlp.split('|').filter(Boolean) : [], speaking: false,
+    par: root.dataset.par ? root.dataset.par.split(',') : [], parMode: root.dataset.par ? store.get('par-' + id, 'off') : 'off', parD: null,  // 원서 대조 (운영자 요청, 2026-11-15)
     ix: man.index || null, ixPart: store.get('ixp-' + id, 0), ixQ: hlp ? hlp.split('|')[0] : ''
   };
   if (!pages.some(p => p.text)) R.view = 'page';
@@ -740,7 +741,7 @@ function firstContent(pages, toc) { const t = toc.filter(x => !/^\s/.test(x.titl
 // 양쪽으로 읽기 (운영자 요청, 2026-11-14): 글로 읽기가 있는 모든 책 — 넓은 화면에서 짝수 쪽은 왼쪽·홀수 쪽은 오른쪽에 나란히 (텍스트 JSON 의 spread 는 '왼쪽 빠알리·오른쪽 번역' 안내만)
 // 휴대폰·태블릿은 가로로 눕혔을 때도 (운영자 요청, 2026-11-14)
 const spreadWide = () => window.innerWidth >= 1000 || (window.innerWidth >= 560 && window.innerWidth > window.innerHeight);
-const spreadOn = () => !!(R && R.spreadOk && R.spread && spreadWide());
+const spreadOn = () => !!(R && R.spreadOk && R.spread && spreadWide() && !(R.parMode && R.parMode !== 'off'));  // 원서 대조 중에는 양쪽 보기 대신 원서를 나란히
 let spreadWas = null;
 // 휴대폰 세로 화면: 전체 화면 + 가로 고정 (안드로이드 크롬 등에서만 됨 — 아이폰은 직접 돌려야 함) (운영자 요청, 2026-11-14)
 async function spreadRotate() { if (!R) return; let ok = false; if (screen.orientation && screen.orientation.lock) { try { if (!document.fullscreenElement) { await document.documentElement.requestFullscreen(); R.spreadFs = true; } await screen.orientation.lock('landscape'); R.spreadLock = true; ok = true; } catch (e) {} } if (!ok) setTimeout(() => R && !spreadWide() && toast('휴대폰을 가로로 돌려 주세요 — 가로 화면에서 양쪽으로 보입니다'), 300); }
@@ -906,7 +907,7 @@ function renderReader() {
       ${R.toc.length ? '<button class="tbtn" data-panel="toc">목차</button>' : ''}${hasText ? '<button class="tbtn" data-panel="find" aria-label="본문 검색">🔍 찾기</button>' : ''}
       <button class="tbtn" data-panel="font" aria-label="글씨 크기">가<span style="font-size:16px">가</span></button>
       ${hasText && R.speaking ? `<button class="tbtn ${R.ttsLocked ? 'on' : ''}" id="rLock" aria-pressed="${!!R.ttsLocked}" title="잠그면 실수로 멈추지 않습니다">${R.ttsLocked ? '🔒 잠김' : '🔓 잠금'}</button>` : ''}${R.ab ? `<button class="tbtn ${AB.on && !abA().paused ? 'on' : ''}" id="rAb" data-tip="${AB_TIP}" aria-label="오디오북 듣기 (${AB_TIP})">${AB.on && !abA().paused ? '❚❚ 오디오북' : '🎧 오디오북'}</button>` : ''}${hasText ? `<button class="tbtn ${R.speaking ? 'on' : ''}" id="rSpeak" ${R.ttsLocked ? 'disabled' : ''}>${R.speaking ? '■ 멈춤' : '▶ 듣기'}</button><button class="tbtn" data-panel="tts" aria-label="듣기 설정">듣기 설정</button>` : ''}
-      <button class="tbtn" data-panel="mode">화면</button>${R.spreadOk && R.view !== 'page' ? `<button class="tbtn${spreadOn() ? ' on' : ''}" id="rSpread" aria-pressed="${spreadOn()}" title="왼쪽·오른쪽 쪽을 책처럼 나란히">${spreadOn() ? '📄 한쪽씩 보기' : '📖 양쪽으로 보기'}</button>` : ''}${document.fullscreenEnabled ? `<button class="tbtn" id="rFull" aria-pressed="${!!document.fullscreenElement}" title="F11 처럼 화면 가득 보기 (Esc 로 나가기)">${document.fullscreenElement ? '⛶ 전체 화면 끄기' : '⛶ 전체 화면'}</button>` : ''}
+      <button class="tbtn" data-panel="mode">화면</button>${R.par.length && R.view !== 'page' ? `<button class="tbtn${R.parMode !== 'off' ? ' on' : ''}" data-panel="par" title="번역서와 원서를 나란히 보기">⇄ 원서 대조</button>` : ''}${R.spreadOk && R.view !== 'page' ? `<button class="tbtn${spreadOn() ? ' on' : ''}" id="rSpread" aria-pressed="${spreadOn()}" title="왼쪽·오른쪽 쪽을 책처럼 나란히">${spreadOn() ? '📄 한쪽씩 보기' : '📖 양쪽으로 보기'}</button>` : ''}${document.fullscreenEnabled ? `<button class="tbtn" id="rFull" aria-pressed="${!!document.fullscreenElement}" title="F11 처럼 화면 가득 보기 (Esc 로 나가기)">${document.fullscreenElement ? '⛶ 전체 화면 끄기' : '⛶ 전체 화면'}</button>` : ''}
       <button class="tbtn ${marked ? 'on' : ''}" id="rMark" aria-pressed="${marked}">${marked ? '★ 책갈피' : '☆ 책갈피'}</button>
       <button class="tbtn" data-panel="bm">책갈피 목록</button>
       ${hasText ? '<button class="tbtn" data-panel="ul">밑줄 모음</button>' : ''}
@@ -930,6 +931,8 @@ function renderReader() {
        <div class="row">글 너비 <span class="seg">${[[28, '좁게'], [36, '보통'], [46, '넓게'], [70, '화면 가득']].map(([v, l]) => `<button data-mw="${v}" class="${R.mw === v ? 'on' : ''}">${l}</button>`).join('')}</span></div>${R.spreadOk && spreadWide() ? `
        <div class="row">쪽 보기 <span class="seg"><button data-spread="0" class="${R.spread ? '' : 'on'}">한쪽씩</button><button data-spread="1" class="${R.spread ? 'on' : ''}">양쪽으로</button></span></div>` : ''}`}</div>
     <div class="panel" id="p-tts">${ttsPanel()}</div>
+    ${R.par.length ? `<div class="panel" id="p-par"><h5>⇄ 원서 대조</h5><div class="seg">${[['off', '끄기'], ['para', '문단 나란히'], ['sent', '문장마다']].map(([k, v]) => `<button data-parm="${k}" class="${R.parMode === k ? 'on' : ''}">${v}</button>`).join('')}</div>
+      <p class="note">${R.parD ? `원서: <i>${esc(R.parD.title || '')}</i>${R.parD.by ? ' · ' + esc(R.parD.by) : ''}<br>` : ''}문단 나란히: 한국어 문단 옆(휴대폰은 아래)에 원서 문단. 문장마다: 한국어 문장과 원서 문장을 번갈아. 짝은 자동으로 맞춘 것이라 조금 어긋난 곳이 있을 수 있습니다.</p></div>` : ''}
     <div class="panel" id="p-mode"><h5>화면 모드</h5><div class="seg">${[['day', '기본'], ['mono', '흑백'], ['night', '밤'], ['contrast', '고대비']].map(([k, v]) => `<button data-rmode="${k}" class="${store.get('mode', 'auto') === k ? 'on' : ''}">${v}</button>`).join('')}</div><p class="note">고른 모드는 사이트 전체에 적용되고 다음에 와도 유지됩니다.</p></div>
     <div class="panel" id="p-ul"><h5>이 책의 밑줄</h5><ul>${uls().filter(h => h.id === R.id).sort((a, b) => a.p - b.p).map(h => `<li style="display:block"><button class="link" data-go="${h.p}">${esc(h.pl || h.p)}쪽</button><div class="quote" style="font-size:13.5px">${esc(h.text)}</div>${h.note ? `<div class="small muted">${esc(h.note)}</div>` : ''}</li>`).join('') || '<li class="muted">글을 끌어서 고르면 밑줄을 그을 수 있습니다.</li>'}</ul>
       <div class="row"><a class="tbtn" href="/mynotes/">내 서재에서 모두 보기</a></div></div>
@@ -945,6 +948,7 @@ function renderReader() {
       <p class="note">회원가입 없이 이 기기의 브라우저에만 저장됩니다. 다른 기기로 옮길 때는 내 서재의 ‘옮기기’를 쓰세요.</p></div>`;
   bindReader();
   sprBar(); spreadWas = spreadOn();  // 화면을 돌리면 처음 한 번부터 바로 다시 그리게
+  parApply();
   sprAlign(); if (R && R.ly && spreadOn()) $$('#rBody .spr img').forEach(im => { if (!im.complete) im.addEventListener('load', () => { clearTimeout(sprAlignT); sprAlignT = setTimeout(sprAlign, 100); }, { once: true }); });
   if (R.view === 'text') { const c = chapters()[Math.max(0, chapterOf(n))]; const pm = $('#pm-' + n); if (pm && n !== c.from) pm.scrollIntoView({ block: 'start' }); else $('#rBody').scrollTop = 0; }
   // 다음 쪽 그림 미리 받기
@@ -1107,6 +1111,11 @@ function bindReader() {
   $$('[data-lh]', el).forEach(b => b.onclick = () => { R.lh = +b.dataset.lh; store.set('rlh', R.lh); renderReader(); reopen('p-font'); });
   $$('[data-font]', el).forEach(b => b.onclick = () => { R.font = b.dataset.font; store.set('rfont', R.font); renderReader(); reopen('p-font'); });
   $$('[data-mw]', el).forEach(b => b.onclick = () => { R.mw = +b.dataset.mw; store.set('rmw', R.mw); renderReader(); reopen('p-font'); });
+  $$('[data-parm]', el).forEach(b => b.onclick = async () => {
+    const m = b.dataset.parm;
+    if (m !== 'off' && !R.parD) { try { toast('원서를 불러오는 중입니다…'); R.parD = await (await fetch('/parallel/' + R.id + '.' + R.par[0] + '.json')).json(); } catch (e) { toast('원서를 불러오지 못했습니다'); return; } }
+    R.parMode = m; store.set('par-' + R.id, m); renderReader();
+  });
   const spB = $('#rSpread', el); if (spB) spB.onclick = async () => { if (R.spread && !spreadWide()) { spreadRotate(); return; }  // 세로 화면에서 이미 켜져 있으면 가로로만 돌림
     R.spread = !R.spread; store.set('rspread2-' + R.id, R.spread);
     // 휴대폰 세로 화면에서 켜면 저절로 가로로 (전체 화면 + 화면 방향 고정 — 안드로이드 크롬 등에서만 됨, 아이폰은 직접 돌려야 함) (운영자 요청, 2026-11-14)
@@ -2212,4 +2221,49 @@ document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === 
   const stop = e => { if (e.target && e.target.closest && e.target.closest('input, textarea')) return; if (!inBook()) return; e.preventDefault(); try { e.clipboardData && e.clipboardData.setData('text/plain', ''); } catch (x) {} toast('이 책은 복사할 수 없습니다'); };
   document.addEventListener('copy', stop, true); document.addEventListener('cut', stop, true);
 })();
+
+// ---------- 원서 대조 (운영자 요청, 2026-11-15) ----------
+// 짝 자료 /parallel/<ID>.<말>.json : groups[].ko = 한국어 문단 열쇠 '쪽 순번:문단 순번', or = 원서 문단 번호, s = 문장 짝(문단 열쇠·번호, 시작·끝 글자)
+async function parEnsure() { if (R && R.par.length && R.parMode !== 'off' && !R.parD) { try { R.parD = await (await fetch('/parallel/' + R.id + '.' + R.par[0] + '.json')).json(); renderReader(); } catch (e) { R.parMode = 'off'; } } }
+function parApply() {
+  const body = $('#rBody'), rf = body && $('.reflow', body);
+  if (!rf || !R || !R.par.length || R.parMode === 'off' || R.view === 'page') return;
+  if (!R.parD) { parEnsure(); return; }
+  const D = R.parD, O = D.orig, wide = innerWidth >= 900, ptx = {};
+  const kText = key => { if (!(key in ptx)) { const [n, k] = key.split(':').map(Number); ptx[key] = (paras((R.pages[n - 1] || {}).text)[k]) || ''; } return ptx[key]; };
+  const oHtml = (t, h) => boldMark(esc(t)).replace(/\n/g, '<br>');
+  const kHtml = t => fnMark(phMark(boldMark(esc(t.replace(/^## |^\^\^ |^:: |^>> |^\|\| |^\+\+ /gm, ''))))).replace(/\n/g, '<br>');
+  const lang = { en: '영어', my: '미얀마어', pi: '빠알리어', th: '태국어' }[D.lang] || D.lang;
+  rf.classList.add('par-on', R.parMode === 'para' && wide ? 'par2' : 'par1');
+  if (R.parMode === 'para' && wide) rf.style.maxWidth = `calc(${R.mw}em * 2 + 3em)`;
+  let shown = 0, lastPg = null;
+  D.groups.forEach((g, gi) => {
+    const els = g.ko.map(k => { const [n, s] = k.split(':'); return $(`#rBody [data-pg="${n}"][data-s="${s}"]`); }).filter(Boolean);
+    if (!els.length || !g.or.length) return;
+    shown++;
+    const last = els[els.length - 1];
+    if (R.parMode === 'para') {
+      const box = document.createElement('div'); box.className = 'par-or'; box.lang = D.lang; box.dataset.g = gi;
+      box.innerHTML = g.or.map(i => { const o = O[i]; return `<p class="${o.k === 'h' ? 'par-h' : o.k === 'gl' ? 'par-gl' : ''}">${oHtml(o.t)}</p>`; }).join('') + (O[g.or[0]].pg !== lastPg ? `<span class="par-pg" aria-hidden="true">${esc(lang)} 원서 ${esc(O[g.or[0]].pg ? O[g.or[0]].pg + '쪽' : '')}</span>` : '');
+      lastPg = O[g.or[g.or.length - 1]].pg;
+      const vis = els.filter(e => e.getClientRects().length);   // 장 제목과 같아 숨긴 글(ch-dup)은 빼고
+      if (wide && vis.length) {   // 넓은 화면: 같은 줄 오른쪽 칸 (한국어 문단 수만큼 줄을 차지)
+        vis.forEach(e => e.classList.add('par-k')); box.style.gridRow = `span ${vis.length}`;
+        const mt = parseFloat(getComputedStyle(vis[0]).marginTop) || 0; if (mt) box.style.marginTop = mt + 'px';   // 소제목처럼 위 여백이 있는 문단과 첫 줄 높이를 맞춤
+        vis[0].after(box);
+      } else (vis[vis.length - 1] || last).after(box);
+    } else {   // 문장마다: 한국어 문장 · 원서 문장을 번갈아 (한국어 문단은 숨기고, 소제목은 그대로)
+      const heads = els.filter(e => e.classList.contains('sub-h') || e.classList.contains('ch-dup'));
+      const box = document.createElement('div'); box.className = 'par-sent'; box.dataset.g = gi;
+      box.innerHTML = g.s.map(p => {
+        const ko = p.ko.map(([k, a, b]) => kText(k).slice(a, b)).join(' '), or = p.or.map(([i, a, b]) => O[i].t.slice(a, b)).join(' ');
+        const onlyHead = p.ko.length && p.ko.every(([k]) => heads.some(e => `${e.dataset.pg}:${e.dataset.s}` === k));
+        return onlyHead ? (or ? `<div class="ps ps-hd"><div class="ps-o" lang="${D.lang}">${oHtml(or)}</div></div>` : '') : `<div class="ps">${ko ? `<div class="ps-k">${kHtml(ko)}</div>` : ''}${or ? `<div class="ps-o" lang="${D.lang}">${oHtml(or)}</div>` : ''}</div>`;
+      }).join('');
+      els.forEach(e => { if (!heads.includes(e)) e.classList.add('par-hide'); });
+      last.after(box);
+    }
+  });
+  if (!shown) return;
+}
 })();

@@ -59,6 +59,9 @@ if (fs.existsSync(C('texts'))) for (const f of fs.readdirSync(C('texts')).filter
   if (!pages.length) pages.push({ label: '', text: body.trim() });
   TEXTS[t.book] = { spread: !!t.spread, ly: t.ly || null, say: t.say || null, ph: t.ph || null, table_dl: t.table_dl || null, edition: t.edition || '', pages: pages.map(p => ({ label: p.label, text: p.text })), toc: (t.toc || []).filter(x => x && x.title && x.page).map(x => ({ title: (x.sub ? '  ' : '') + x.title, page: +x.page, label: (pages[+x.page - 1] || {}).label || '', ...(x.at ? { at: String(x.at) } : {}), ...(x.toc_title ? { list: String(x.toc_title) } : {}) })) };
 }
+// 원서 대조 짝 자료 (운영자 요청, 2026-11-15): content/parallel/<ID>.<말>.json — 읽기 화면 '⇄ 원서 대조'
+const PARALLEL = {};
+if (fs.existsSync(C('parallel'))) for (const f of fs.readdirSync(C('parallel'))) { const m = f.match(/^(DL-\d{4})\.([a-z]{2,3})\.json$/); if (m) (PARALLEL[m[1]] = PARALLEL[m[1]] || []).push(m[2]); }
 const isPin = n => (n.pinned === true || n.pinned === 'true') ? 1 : 0;
 const pinTag = n => isPin(n) ? '<span class="pill pin">주요 공지</span> ' : '';
 const updTag = n => n.updated && n.updated !== n.date ? ` · 고침 ${esc(n.updated)}` : '';
@@ -656,7 +659,7 @@ for (const b of BOOKS) {
   </div></div></div>`
   }));
   if (e.reader) put(`read/${b.id}/index.html`, layout({
-    title: `${b.title} 읽기`, nav: 'library', page: 'reader', body: `<div id="readerRoot" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}" data-title="${esc(b.title)}" data-byline="${esc(b.byline)}" data-teacher="${esc(t?.name || '')}" data-cover="${esc(b.cover ? (S.site_url || '').replace(/\/$/, '') + b.cover : '')}" data-kakao="${esc(S.kakao_js_key || '')}"${b.no_copy ? ' data-nocopy="1"' : ''}${AUDIO[b.id] ? ` data-audio="/data/audio/${b.id}.json"` : ''}>
+    title: `${b.title} 읽기`, nav: 'library', page: 'reader', body: `<div id="readerRoot" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}" data-title="${esc(b.title)}" data-byline="${esc(b.byline)}" data-teacher="${esc(t?.name || '')}" data-cover="${esc(b.cover ? (S.site_url || '').replace(/\/$/, '') + b.cover : '')}" data-kakao="${esc(S.kakao_js_key || '')}"${b.no_copy ? ' data-nocopy="1"' : ''}${AUDIO[b.id] ? ` data-audio="/data/audio/${b.id}.json"` : ''}${PARALLEL[b.id] ? ` data-par="${PARALLEL[b.id].join(',')}"` : ''}>
     <div class="wrap prose"><p class="muted">읽기 화면을 불러오는 중입니다…</p><p><a href="/book/${b.id}/">← 책 정보로 돌아가기</a></p></div></div>`
   }));
 }
@@ -898,6 +901,7 @@ fs.writeFileSync(path.join(OUT, 'data/site.json'), JSON.stringify(site));
 fs.writeFileSync(path.join(OUT, 'data/study-config.json'), studyCfgJson);  // 관리자 화면(학습 자료실 관리)에서 씀
 fs.writeFileSync(path.join(OUT, 'data/downloads.json'), JSON.stringify(DOWNLOADS));
 fs.mkdirSync(path.join(OUT, 'texts'), { recursive: true });
+if (fs.existsSync(C('parallel'))) { fs.mkdirSync(path.join(OUT, 'parallel'), { recursive: true }); for (const f of fs.readdirSync(C('parallel')).filter(f => /\.json$/.test(f))) fs.copyFileSync(C('parallel/' + f), path.join(OUT, 'parallel', f)); }
 // 색인처럼 표로 된 자료: content/indexes/<자료번호>.json (본문의 [[색인]] 자리에 찾기·순서 바꾸기가 되는 표로 보임)
 const indexOf = id => { const f = C('indexes/' + id + '.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : null; };
 fs.mkdirSync(path.join(OUT, 'data/audio'), { recursive: true });
