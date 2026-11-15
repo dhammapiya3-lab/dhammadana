@@ -27,11 +27,16 @@ TENS = {6: 1, 11: 2, 18: 3}
 UNITS = {12: 0, 13: 1, 14: 2, 15: 3, 16: 4, 17: 5, 7: 6, 8: 7, 9: 8, 10: 9}
 
 
+STROKE = set()
+
+
 def chars_of(page):
     """[(ch, x0, x1, y_base, size, font, color)] — 겹침 뺌, 특수 글자 바꿈"""
-    out = []; pend = None
+    out = []; pend = None; STROKE.clear()
     for sp in page.get_texttrace():
-        if sp['type'] == 1: continue      # 굵게 보이게 덧그린 테두리 = 같은 글자
+        if sp['type'] == 1:               # 굵게 보이게 덧그린 테두리 = 같은 글자 (굵은 글자 자리만 기억)
+            for (u, g, org, bb) in sp['chars']: STROKE.add((round(bb[0]), round(org[1])))
+            continue
         f = sp['font']; sz = sp['size']; col = sp['color']
         col = '%02x%02x%02x' % tuple(int(round(c * 255)) for c in (col if len(col) == 3 else (0, 0, 0)))
         for (u, g, org, bb) in sp['chars']:
@@ -50,7 +55,7 @@ def chars_of(page):
     return out
 
 
-def lines_of(page):
+def lines_of(page, bold=False):
     cs = chars_of(page)
     # 같은 글자·같은 자리(1pt 안)는 한 번만
     seen = collections.defaultdict(list); C = []
@@ -72,10 +77,19 @@ def lines_of(page):
             if b[1] - a[2] > 40: segs.append([b])
             else: segs[-1].append(b)
         for sg in segs:
-            t = ''; prev = None
+            t = ''; prev = None; inb = False
             for c in sg:
                 if prev is not None and c[0] != ' ' and not t.endswith(' ') and c[1] - prev[2] > 0.08 * min(prev[4], c[4]): t += ' '
+                if bold and c[0].strip():
+                    b = (round(c[1]), round(c[3])) in STROKE
+                    if b != inb:
+                        if inb and t.endswith(' '): t = t[:-1] + '** '
+                        else: t += '**'
+                        inb = b
                 t += c[0]; prev = c
+            if inb: t += '**'
+            t = t.replace('****', '')
+            trail = t.endswith(' ')
             t = re.sub(r' {2,}', ' ', t).strip()
             if not t: continue
             fonts = collections.Counter()
@@ -86,7 +100,7 @@ def lines_of(page):
             big = [k for k, v in fonts.items() if k[0].startswith(('ÈÞ', 'HYcys')) and k[1] >= 12.5 and v >= 3]
             if (hf >= 0.4 * sum(fonts.values()) or big) and not f.startswith(('ÈÞ', 'HYcys')):     # 제목 글꼴이 섞인 줄(로마자는 다른 글꼴)
                 f, sz, col = max(((k, v) for k, v in fonts.items() if k[0].startswith(('ÈÞ', 'HYcys'))), key=lambda kv: kv[1])[0]
-            L.append({'t': t, 'x0': sg[0][1], 'x1': sg[-1][2], 'y': r['y'], 'font': f, 'size': sz, 'color': col,
+            L.append({'t': t, 'trail': trail, 'x0': sg[0][1], 'x1': max(c[2] for c in sg if c[0].strip()), 'y': r['y'], 'font': f, 'size': sz, 'color': col,
                       'fonts': fonts, 'maxsz': max(c[4] for c in sg if c[0].strip())})
     # 장식: 같은 글이 겹쳐 찍힌 줄(그림자) — 같은 글, 가까운 자리
     out = []
@@ -147,6 +161,7 @@ def is_center(l):
 def body_paras(L, ys=None):
     out = []; cur = None; prev = None; last_y = 0
     if ys is None: ys = []
+    meta = {}                     # 문단 번호 → [(줄, 종류)] — 산문 문단의 줄 이어 붙이기에 씀
     for l in L:
         while len(ys) < len(out): ys.append(last_y)
         last_y = l['y']
@@ -168,8 +183,8 @@ def body_paras(L, ys=None):
                 cur = None
             prev = (l, 'head'); continue
         if k in ('src', 'note') or (prev is not None and prev[1] == 'note' and k != 'src' and l['x0'] > prev[0]['x0'] + 5 and l['y'] - prev[0]['y'] < 1.9 * l['size']):
-            if k == 'note' or cur is None: out.append(t); cur = len(out) - 1
-            else: out[cur] += '\n' + t
+            if k == 'note' or cur is None: out.append(t); cur = len(out) - 1; meta[cur] = [(l, k)]
+            else: out[cur] += '\n' + t; meta.setdefault(cur, []).append((l, 'note'))
             prev = (l, 'note' if k == 'note' or prev[1] == 'note' else k); continue
         new = cur is None or prev is None
         if not new:
@@ -182,28 +197,42 @@ def body_paras(L, ys=None):
             elif k == 'tr' and pk == 'tr' and gap > 1.9 * l['size']: new = True
             elif NUMSTART.match(t) and k != 'tr' and pk not in ('pron',) and not (k == 'roman' and pk == 'pron'): new = True
         if new:
-            out.append((':: ' if is_center(l) and k not in ('pron', 'roman', 'tr') else '') + t); cur = len(out) - 1
-        else: out[cur] += '\n' + t
+            out.append((':: ' if is_center(l) and k not in ('pron', 'roman', 'tr') else '') + t); cur = len(out) - 1; meta[cur] = [(l, k)]
+        else: out[cur] += '\n' + t; meta.setdefault(cur, []).append((l, k))
         prev = (l, k)
     while len(ys) < len(out): ys.append(last_y)
+    # 산문 문단(소리·로마자 줄이 없는 글)은 인쇄본에서 줄 끝까지 찬 줄을 이어 붙임 — 줄 끝에 빈칸이 찍혀 있으면 빈칸,
+    # 없으면(낱말 가운데에서 줄이 바뀐 곳: '뜻|이며', '합|송') 바로 붙임 (운영자 요청, 2026-11-15)
+    right = max((l['x1'] for l in L if l['y'] > 55 and l['size'] >= 10), default=360)
+    for n, ls in meta.items():
+        if len(ls) < 2 or any(k in ('pron', 'roman') for _, k in ls) or out[n].startswith(('## ', '^^ ', ':: ')): continue
+        if out[n].count('\n') != len(ls) - 1: continue
+        parts = out[n].split('\n'); res = parts[0]
+        for (pl, _), part in zip(ls, parts[1:]):
+            if pl['x1'] >= right - 22: res += (' ' if pl['trail'] or re.search(r'[.?!,:;]$', pl['t']) or (pl['t'].endswith(')') and not re.match(r'[을를이가은는의에과와도로]', part))
+                                                 or (re.search(r'[A-Za-zāīūṃṅñṭḍṇḷ]$', pl['t']) and re.match(r'[가-힣]', part)) else '') + part
+            else: res += '\n' + part
+        out[n] = res
     return out
 
 
 SHOWN = {}     # 차례 화면에는 인쇄된 쪽 번호 그대로 보일 것
+TMETA = []     # 차례 줄마다 인쇄본의 자리(들여쓰기 x·위 줄과의 간격·제목 글꼴)
 
 
 def toc_lines(d):
     """차례 쪽(PDF 5~25) → [(단계, 제목, 쪽 번호|None)] — 단계: 0 큰 묶음(예경 Ⅰ 등), 1 묶음, 2 쪽 번호가 있는 항목, 3 □ 항목"""
-    R = []
+    R = []; TMETA.clear()
     for pn in TOC_PAGES:
-        L = lines_of(d[pn - 1])
-        rows = []
+        L = lines_of(d[pn - 1], bold=True)
+        rows = []; py = None
         for l in L:
-            tt = re.sub(r'포살\s*․\s*축\s*원', '', l['t']).strip()
+            bt = re.sub(r'(\*\*)?포살\s*(\*\*)?․\s*(\*\*)?축\s*(\*\*)?원(\*\*)?', '', l['t']).strip()
+            tt = bt.replace('**', '').strip()
             if rows and abs(rows[-1]['y'] - l['y']) < 8 and re.fullmatch(r'\d*', tt) and not re.search(r'\d$', rows[-1]['t']):
                 if tt: rows[-1]['t'] += ' ' + tt
                 continue
-            l = dict(l); l['t'] = tt
+            l = dict(l); l['t'] = tt; l['bt'] = bt
             rows.append(l)
         for l in rows:
             t = l['t']
@@ -219,8 +248,13 @@ def toc_lines(d):
             elif box and page is None: lev = 3
             elif page is None: lev = 1
             else: lev = 2
+            gap = l['y'] - py if py is not None else 0; py = l['y']
             if lev == 0 and R and R[-1][0] == 0 and l['size'] < 14 and R[-1][2] is None: R[-1] = (0, R[-1][1] + ' ' + title, None); continue   # 예 경 + Ⅰ
             R.append((lev, title, page))
+            disp = re.sub(r'\s*(\*\*)?\s*(-{3,}\s*)?\d{1,3}\s*(\*\*)?\s*$', '', l['bt']) if page else l['bt']    # 굵게 표시(**)는 그대로, 쪽 번호만 뗌
+            disp = re.sub(r'□\s*', '', disp); disp = re.sub(r'\*\*\s*\*\*', ' ', disp).strip()
+            if disp.count('**') % 2: disp += '**'
+            TMETA.append({'x': l['x0'], 'gap': gap, 'size': l['size'], 'head': l['font'].startswith(('ÈÞ', 'HYcys')), 'disp': disp})
     # 쪽 번호가 앞뒤 순서와 어긋나는 □ 항목(차례의 잘못 찍힌 쪽 번호, 예: '□6 출가자의 오염원 668')은 쪽 없는 소제목으로
     for n, (lev, title, page) in enumerate(R):
         if lev == 2 and re.match(r'\d+ ', title):
@@ -278,12 +312,17 @@ def build(pdf):
 
 
 def toc_block(T):
+    """인쇄본 차례처럼: 들여쓰기는 인쇄된 자리(x)로, 굵게는 제목 글꼴(휴먼옛체·HY견명조)일 때만,
+    큰 묶음 앞과 인쇄본에서 줄 사이가 벌어진 곳(30pt 넘게)에는 빈 간격 ~ (운영자 요청, 2026-11-15)"""
     out = []
-    for lev, title, page in T:
-        if lev == 0: out.append(('~\n' if out else '') + f'**{title}**')
-        elif lev == 1: out.append(f'**{title}**' + (f' | {page}' if page else ''))
-        elif lev == 2: out.append(f'- {title}' + (f' | {page}' if page else ''))
-        else: out.append(f'-- {title}' + (f' | {SHOWN[title]}' if title in SHOWN else ''))
+    for (lev, title, page), mt in zip(T, TMETA):
+        pg = page or SHOWN.get(title)
+        dash = '' if mt['x'] <= 64 or lev == 0 else '- ' if mt['x'] <= 80 else '-- '
+        t = mt['disp'] if lev != 0 else title
+        if (mt['head'] or lev == 0) and '**' not in t: t = f'**{t}**'
+        line = dash + t + (f' | {pg}' if pg else '')
+        if out and out[-1] != '~' and (lev in (0, 1) or (lev == 3 and mt['head']) or mt['gap'] > 30): out.append('~')
+        out.append(line)
     return '%% ' + '\n'.join(out)
 
 
@@ -386,6 +425,12 @@ if __name__ == '__main__':
     for t in toc:
         if not t['sub'] and not pages[t['page'] - 1][1]: pages[t['page'] - 1][1].append('^^ ' + t['title'])
     body = '\n\n'.join(f'=== {lab} ===\n' + '\n\n'.join(ps) for lab, ps in pages)
+    # 줄 첫머리 번호와 글이 붙은 곳('10.따뽀 …', '14.아침경')은 번호 뒤에 빈칸 (운영자 요청, 2026-11-15 — 교정)
+    NUMSP = re.compile(r'(?m)^((?:## |\^\^ |:: |%% |-{1,3} |\*\*)?)(\d{1,3})\.(?=[^\s\d.])')
+    body = NUMSP.sub(r'\1\2. ', body)
+    for t in toc:
+        t['title'] = NUMSP.sub(r'\1\2. ', t['title'])
+        if t.get('at'): t['at'] = NUMSP.sub(r'\1\2. ', t['at'])
     imgs = sorted({'/uploads/' + v[0] for v in PICS.values() if '/uploads/' + v[0] in body})
     out = {'book': 'DL-0031', 'edition': '증보판 (초판)', 'toc': toc, 'images': imgs, 'body': body}
     p = os.path.join(REPO, 'content/texts/DL-0031.json')
