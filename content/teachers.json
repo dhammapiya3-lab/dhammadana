@@ -196,6 +196,26 @@
       "rank": 350
     },
     {
+      "id": "vipulanani",
+      "name": "식카와띠 위뿔라냐니",
+      "roman": "",
+      "aliases": [
+        "위뿔라냐니",
+        "위뿔라냐니 세얄레이"
+      ],
+      "country": [
+        "한국"
+      ],
+      "tradition": "mahasi",
+      "nun": true,
+      "bio": "2002년 한국과 미얀마에서 6개월간 위빳사나 수행을 하고, 2004년 6월 빤디따라마에서 식카와띠(sikkhāvatī. = 3학을 갖춘 사람. 세얄레이)로 출가. 17년간 빤디따라마 강원에서 공부했음. 현재 대구 담마디빠(법의 등대) 선원에서 바른 견해를 나누고 있음.",
+      "urls": [
+        "https://cafe.naver.com/dhammadipakorea"
+      ],
+      "photo": "",
+      "rank": 352
+    },
+    {
       "id": "dogyeong",
       "name": "도경 스님",
       "roman": "",
@@ -587,6 +607,26 @@
       ],
       "photo": "/uploads/teacher-sangharakkhita.jpg",
       "rank": 235
+    },
+    {
+      "id": "vimutti",
+      "name": "위무띠 법주 스님",
+      "roman": "",
+      "aliases": [
+        "위무띠 스님",
+        "위무띠",
+        "법주 스님"
+      ],
+      "country": [
+        "한국"
+      ],
+      "tradition": "myanmar-etc",
+      "bio": "한국테라와다불교 사띠빳타나 수행센터 연방죽 선원장. 미얀마인들이 존경하는 큰스님 우 조티카 사야도의 법문을 담은 《여름에 내린 눈》, 《행복이 온다》를 번역하였다.",
+      "urls": [
+        "http://cafe.daum.net/lotuspond"
+      ],
+      "photo": "",
+      "rank": 236
     },
     {
       "id": "chanmyay",
