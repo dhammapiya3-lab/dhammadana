@@ -145,7 +145,7 @@ def label(n):
 
 # ---------- 앞쪽 ----------
 P = newpage()
-wheel = render(4, fitz.Rect(195.5, 80.2, 224, 108.7), f'{BK}-wheel.png', 600, alpha=True); images.append(wheel)   # 법륜(197.5~222, 82~106.7pt) 전체
+wheel = render(4, fitz.Rect(195.5, 80.2, 224, 108.7), f'{BK}-wheel-v2.png', 600, alpha=True); images.append(wheel)   # 법륜(197.5~222, 82~106.7pt) 전체
 chapters.append(('속표지', 0, 0))
 P['paras'] = [':: ' + text_of(r[3]).strip() for r in vlines(2)]
 P = newpage()
