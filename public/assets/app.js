@@ -862,7 +862,7 @@ function reflowHtml() {
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}" data-ci="${ci - 1}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}" data-ci="${ci + 1}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   // 장 제목과 같아 숨긴 본문 제목에 각주 번호가 붙어 있으면(예: '보시의 실천⁷') 위의 큰 장 제목에 그 번호를 붙여 보임 (2026-11-11)
   const dupFn = [...body.matchAll(/<p [^>]*class="ch-dup"[^>]*>(.*?)<\/p>/g)].flatMap(m => m[1].match(/<sup class="fn-ref"[^>]*>[^<]*<\/sup>/g) || []).join('');
-  return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}${spreadOn() ? ' spread' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${esc(c.title)}${dupFn}</h3></div>` : ''}${spreadOn() ? `<div class="spr">${body}</div>` : body}${nav}</div>`;
+  return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}${spreadOn() ? ' spread' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${boxNum(esc(c.title))}${dupFn}</h3></div>` : ''}${spreadOn() ? `<div class="spr">${body}</div>` : body}${nav}</div>`;
 }
 // 이 장 안의 소제목 자리(화면의 문단) 목록
 // 굵은 글씨 한 줄만으로 된 짧은 문단(예: '[1. 사성제]', '수행이란 무엇인가?')도 소제목으로 봄 — 문장(. ! 로 끝남)·따옴표·괄호로 시작하는 강조 글은 빼고
@@ -920,7 +920,7 @@ function renderReader() {
     <div class="panel" id="p-find"><h5>이 책에서 찾기</h5>
       <form id="findForm" class="row" style="gap:6px"><input id="findQ" placeholder="찾을 말" aria-label="찾을 말" value="${esc(R.findQ || '')}" style="flex:1;height:36px;border:1px solid var(--line);border-radius:8px;padding:0 10px;background:var(--paper)"><button class="tbtn" type="submit">찾기</button></form>
       <div id="findRes">${R.findRes || '<p class="note">낱말을 넣으면 이 책의 모든 쪽에서 찾습니다. 위빳사나·vipassanā처럼 다른 표기도 함께 찾습니다.</p>'}</div></div>
-    <div class="panel" id="p-toc"><h5>목차</h5><ul>${R.toc.map(t => `<li class="${/^\s/.test(t.title) ? 'sub' : ''}"><button class="link" data-go="${t.page}"${!/^\s/.test(t.title) ? ` data-ci="${chapters().findIndex(c => c.title === t.title.trim() && c.from === t.page)}"` : ''}>${esc(t.title.trim())}</button><span class="muted">${esc(t.label || '')}</span></li>`).join('')}</ul></div>
+    <div class="panel" id="p-toc"><h5>목차</h5><ul>${R.toc.map(t => `<li class="${/^\s/.test(t.title) ? 'sub' : ''}"><button class="link" data-go="${t.page}"${!/^\s/.test(t.title) ? ` data-ci="${chapters().findIndex(c => c.title === t.title.trim() && c.from === t.page)}"` : ''}>${boxNum(esc(t.title.trim()))}</button><span class="muted">${esc(t.label || '')}</span></li>`).join('')}</ul></div>
     <div class="panel" id="p-font"><h5>글씨</h5>
       ${R.view === 'page' && hasImg ? `<div class="row">쪽 확대 <span><button class="tbtn" data-zoom="-1">−</button> ${Math.round(R.zoom * 100)}% <button class="tbtn" data-zoom="1">+</button></span></div>${hasText ? '<p class="note">쪽 보기에서는 원본 쪽을 확대합니다. 글자만 크게 보거나 밑줄을 그으려면 ‘글로 보기’로 바꾸세요.</p>' : ''}` :
       `<div class="row">글자 크기 <span class="fs-step"><button class="tbtn" data-fsd="-1" aria-label="글자 작게">가−</button><b aria-live="polite">${Math.round(R.fs * 100)}%</b><button class="tbtn" data-fsd="1" aria-label="글자 크게">가+</button></span></div>
@@ -1457,6 +1457,7 @@ const citeSay = s => s.replace(/[ⅠⅡⅢⅣⅤⅥ](?=\s*\d)/g, r => UROMAN[r])
 function sayable(s, o = ttsOpt(), mark = false) {
   const en = w => mark ? EN_A + w + EN_B : w;
   let t = citeSay(unB(s).replace(/^## /, ''));
+  t = t.replace(/□\s*(?=\d)/g, '');   // 네모 번호 제목의 □ 는 읽지 않음
   // 숫자 사이의 줄표는 '빼기(마이너스)'로 읽지 않음 (운영자 요청, 2026-11-10)
   //  - 범위(앞 수 < 뒤 수: 8-10, 1-2, 3-7, 1885-1910, 238-242쪽)는 물결(~)처럼 '에서': 8에서 10
   //  - 그 밖(주소 178-19·51-41, 제1-1권, 전화·날짜처럼 줄표가 여러 번)은 '다시': 178 다시 19
@@ -1514,7 +1515,9 @@ const unB = s => String(s || '').replace(/\*\*|==|\{\{|\}\}|@@|°°|§§/g, '').
 // 검색 결과에 보일 글: 그림 주소·## ·각주 표시 같은 내부 부호를 뺌
 const plainT = s => unB(s).replace(/!\[[^\]]*\]\([^)]*\)/g, ' ').replace(/^#{1,6} /gm, '').replace(/\[\^\d+\]:?\s?/g, ' ').replace(/\[\[[^\]]*\]\]/g, ' ');
 // **굵게**, ==색 강조(인쇄본·전자책의 하늘색 글자)==
-const boldMark = h => h.replace(/ㆍ/g, '·').replace(/\*\*(?!\s|\*\*)([\s\S]*?[^\s*])\*\*/g, '<strong>$1</strong>').replace(/==(?=\S)([\s\S]*?\S)==/g, '<span class="hl">$1</span>').replace(/\{\{([\s\S]*?)\}\}/g, '<span class="faint" title="생략할 수 있는 부분">$1</span>').replace(/@@([\s\S]*?)@@/g, '<span class="pron">$1</span>').replace(/°°([\s\S]*?)°°/g, '<span class="pli">$1</span>').replace(/§§([\s\S]*?)§§/g, '<span class="spk">$1</span>').replace(/-{8,}(?=\*|\[\^)/g, m => `<span class="dash-rule" style="width:${Math.min(16, m.length * .5)}em" aria-hidden="true"></span>`);  // 각주 번호가 붙은 점선('------------[^19]') → 가운데 가로줄 (운영자 요청, 2026-11-15)  // @@…@@ 빠알리 한글 소리 줄 (DL-0027: 원본처럼 굵은 둥근 글꼴)  // {{…}} 희미한 글자 (DL-0027: 인도자가 없거나 간략히 할 때 생략하는 부분)
+// □ 안 번호 제목('□5 대념처경') → 네모 테두리 번호 (운영자 요청, 2026-11-16 — DL-0031)
+const boxNum = h => h.replace(/□\s*(\d{1,3})\s*/g, '<span class="boxnum">$1</span>');
+const boldMark = h => boxNum(h).replace(/ㆍ/g, '·').replace(/\*\*(?!\s|\*\*)([\s\S]*?[^\s*])\*\*/g, '<strong>$1</strong>').replace(/==(?=\S)([\s\S]*?\S)==/g, '<span class="hl">$1</span>').replace(/\{\{([\s\S]*?)\}\}/g, '<span class="faint" title="생략할 수 있는 부분">$1</span>').replace(/@@([\s\S]*?)@@/g, '<span class="pron">$1</span>').replace(/°°([\s\S]*?)°°/g, '<span class="pli">$1</span>').replace(/§§([\s\S]*?)§§/g, '<span class="spk">$1</span>').replace(/-{8,}(?=\*|\[\^)/g, m => `<span class="dash-rule" style="width:${Math.min(16, m.length * .5)}em" aria-hidden="true"></span>`);  // 각주 번호가 붙은 점선('------------[^19]') → 가운데 가로줄 (운영자 요청, 2026-11-15)  // @@…@@ 빠알리 한글 소리 줄 (DL-0027: 원본처럼 굵은 둥근 글꼴)  // {{…}} 희미한 글자 (DL-0027: 인도자가 없거나 간략히 할 때 생략하는 부분)
 // 빠알리어 한글 표기(발음 부호 붙은 한글): 텍스트 JSON 의 ph 사전(tools/pali_hangul.py)대로 바꿔 PaliHangul 글꼴로 — 본문 글자는 그대로, 화면에만
 let PH_RE = null, PH_OF = null;
 const phMark = h => {

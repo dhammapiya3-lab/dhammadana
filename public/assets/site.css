@@ -1105,3 +1105,6 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .par-sent .ps{margin:0 0 .9em}
 .par-sent .ps-o{font-family:Georgia,'Times New Roman',var(--serif);color:var(--ink-soft);font-size:.9em;line-height:1.65;margin-top:.15em;padding-left:.8em;border-left:2px solid var(--line)}
 .par-sent .ps-hd{margin-top:-.6em}
+
+/* □ 안 번호 제목 → 네모 테두리 번호 (운영자 요청, 2026-11-16 — DL-0031) */
+.boxnum{display:inline-block;border:.09em solid currentColor;min-width:1.2em;padding:0 .18em;line-height:1.15;text-align:center;font-size:.82em;vertical-align:.06em;margin-right:.35em;border-radius:1px;font-weight:inherit}

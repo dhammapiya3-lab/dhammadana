@@ -28,11 +28,14 @@ UNITS = {12: 0, 13: 1, 14: 2, 15: 3, 16: 4, 17: 5, 7: 6, 8: 7, 9: 8, 10: 9}
 
 
 STROKE = set()
+LP = {}           # 줄(id) → 문단 번호 (body_paras 가 적음)
+BOXT = set()      # 인쇄본에서 □ 안에 번호가 찍힌 제목 (□ 를 되살려 화면에서 네모 테두리 번호로 — 운영자 요청, 2026-11-16)
+GUNG = set()      # 궁서체(굵게 보이는 글꼴) 글자 자리
 
 
 def chars_of(page):
     """[(ch, x0, x1, y_base, size, font, color)] — 겹침 뺌, 특수 글자 바꿈"""
-    out = []; pend = None; STROKE.clear()
+    out = []; pend = None; STROKE.clear(); GUNG.clear()
     for sp in page.get_texttrace():
         if sp['type'] == 1:               # 굵게 보이게 덧그린 테두리 = 같은 글자 (굵은 글자 자리만 기억)
             for (u, g, org, bb) in sp['chars']: STROKE.add((round(bb[0]), round(org[1])))
@@ -41,6 +44,7 @@ def chars_of(page):
         col = '%02x%02x%02x' % tuple(int(round(c * 255)) for c in (col if len(col) == 3 else (0, 0, 0)))
         for (u, g, org, bb) in sp['chars']:
             c = chr(u)
+            if 'Gungsuh' in f: GUNG.add((round(bb[0]), round(org[1])))
             if 'Wingdings' in f:
                 c = '❖' if g == 3 else (circ(g - 3) if 4 <= g <= 13 else c)
             elif u == 0xF000:
@@ -81,7 +85,7 @@ def lines_of(page, bold=False):
             for c in sg:
                 if prev is not None and c[0] != ' ' and not t.endswith(' ') and c[1] - prev[2] > 0.08 * min(prev[4], c[4]): t += ' '
                 if bold and c[0].strip():
-                    b = (round(c[1]), round(c[3])) in STROKE
+                    b = (round(c[1]), round(c[3])) in STROKE or (bold == 'all' and (round(c[1]), round(c[3])) in GUNG)
                     if b != inb:
                         if inb and t.endswith(' '): t = t[:-1] + '** '
                         else: t += '**'
@@ -169,7 +173,7 @@ def body_paras(L, ys=None):
         if re.fullmatch(r'-\s*\d+\s*-', l['t']) and l['y'] > 580: continue    # 쪽 번호
         k = kind(l); t = l['t']
         box = re.match(r'□\s*(\d+)\s*(.*)', t)
-        if box: t = box.group(1) + ' ' + box.group(2); k = 'head'
+        if box: t = box.group(1) + ' ' + box.group(2); k = 'head'; BOXT.add(t)
         if k == 'head':
             small = l['font'].startswith('HYcys') and l['size'] < 13 or re.fullmatch(r'포살\s*․\s*축\s*원|<.*>|\(.*\)', t)
             if ' ☸' in t and not small:
@@ -185,7 +189,7 @@ def body_paras(L, ys=None):
         if k in ('src', 'note') or (prev is not None and prev[1] == 'note' and k != 'src' and l['x0'] > prev[0]['x0'] + 5 and l['y'] - prev[0]['y'] < 1.9 * l['size']):
             if k == 'note' or cur is None: out.append(t); cur = len(out) - 1; meta[cur] = [(l, k)]
             else: out[cur] += '\n' + t; meta.setdefault(cur, []).append((l, 'note'))
-            prev = (l, 'note' if k == 'note' or prev[1] == 'note' else k); continue
+            prev = (l, 'note' if k == 'note' or prev[1] == 'note' else k); LP[id(l)] = cur; continue
         new = cur is None or prev is None
         if not new:
             pl, pk = prev; gap = l['y'] - pl['y']
@@ -199,7 +203,7 @@ def body_paras(L, ys=None):
         if new:
             out.append((':: ' if is_center(l) and k not in ('pron', 'roman', 'tr') else '') + t); cur = len(out) - 1; meta[cur] = [(l, k)]
         else: out[cur] += '\n' + t; meta.setdefault(cur, []).append((l, k))
-        prev = (l, k)
+        prev = (l, k); LP[id(l)] = cur
     while len(ys) < len(out): ys.append(last_y)
     # 산문 문단(소리·로마자 줄이 없는 글)은 인쇄본에서 줄 끝까지 찬 줄을 이어 붙임 — 줄 끝에 빈칸이 찍혀 있으면 빈칸,
     # 없으면(낱말 가운데에서 줄이 바뀐 곳: '뜻|이며', '합|송') 바로 붙임 (운영자 요청, 2026-11-15)
@@ -243,7 +247,7 @@ def toc_lines(d):
                 title, page = m.group(1).strip(), int(m.group(2))
             else: title = t
             box = re.match(r'□\s*(\d+)\s*(.*)', title)
-            if box: title = box.group(1) + ' ' + box.group(2)
+            if box: title = box.group(1) + ' ' + box.group(2); BOXT.add(title)
             if l['font'].startswith('HYcys') and l['size'] >= 12: lev = 0
             elif box and page is None: lev = 3
             elif page is None: lev = 1
@@ -252,7 +256,7 @@ def toc_lines(d):
             if lev == 0 and R and R[-1][0] == 0 and l['size'] < 14 and R[-1][2] is None: R[-1] = (0, R[-1][1] + ' ' + title, None); continue   # 예 경 + Ⅰ
             R.append((lev, title, page))
             disp = re.sub(r'\s*(\*\*)?\s*(-{3,}\s*)?\d{1,3}\s*(\*\*)?\s*$', '', l['bt']) if page else l['bt']    # 굵게 표시(**)는 그대로, 쪽 번호만 뗌
-            disp = re.sub(r'□\s*', '', disp); disp = re.sub(r'\*\*\s*\*\*', ' ', disp).strip()
+            disp = re.sub(r'□\s*', '□', disp); disp = re.sub(r'\*\*\s*\*\*', ' ', disp).strip()
             if disp.count('**') % 2: disp += '**'
             TMETA.append({'x': l['x0'], 'gap': gap, 'size': l['size'], 'head': l['font'].startswith(('ÈÞ', 'HYcys')), 'disp': disp})
     # 쪽 번호가 앞뒤 순서와 어긋나는 □ 항목(차례의 잘못 찍힌 쪽 번호, 예: '□6 출가자의 오염원 668')은 쪽 없는 소제목으로
@@ -303,8 +307,8 @@ def build(pdf):
         if i in TOC_PAGES:
             if i == TOC_PAGES[0]: pages.append((lab, ['## 차 례', toc_block(T)]))   # 차례 21쪽은 한 화면으로
             continue
-        ys = []; ps = body_paras(L, ys)
-        mark_bold(ps, lines_of(d[i - 1], bold=True), i)
+        ys = []; LP.clear(); ps = body_paras(L, ys)
+        mark_bold(ps, L, lines_of(d[i - 1], bold=True), lines_of(d[i - 1], bold='all'), i)
         for y0, h in sorted(WH.get(i, [])):
             k = next((n for n, y in enumerate(ys) if y > y0), len(ps))
             ps.insert(k, f'![{PICS[h][1]}](/uploads/{PICS[h][0]})'); ys.insert(k, y0)
@@ -315,17 +319,26 @@ def build(pdf):
 BOLDMISS = []
 
 
-def mark_bold(ps, Lb, pn):
-    """인쇄본에서 굵게(덧그려 굵게) 찍힌 글자를 본문에 **…** 로 (운영자 요청, 2026-11-15) — 글자는 그대로, ** 만 더함.
+def mark_bold(ps, L, Lb, Lg, pn):
+    """인쇄본에서 굵게 찍힌 글자를 본문에 **…** 로 (운영자 요청, 2026-11-15·16) — 글자는 그대로, ** 만 더함.
+    ① 테두리를 덧그려 굵게 찍은 글자(texttrace type 1)
+    ② 굴림 산문 사이에 섞인 궁서체 글(‘테라와다 불교’ 쪽의 경전 인용 등 — 궁서체는 굵게 보임). 번역 줄(소리·로마자 줄과 한 묶음)은 늘 궁서체라 ②를 넣지 않음.
     제목(## 줄)·쪽 번호·머리글은 건드리지 않음. 문장부호만 굵은 곳('**.**')은 뺌."""
-    cur = 0
-    for lb in Lb:
-        t = lb['t']
-        if '**' not in t: continue
+    if not (len(L) == len(Lb) == len(Lg)): BOLDMISS.append((pn, '줄 수 다름')); return
+    where = [LP.get(id(l)) for l in L]
+    prose = set()
+    for l, k in zip(L, where):
+        if k is None: continue
+        black = sum(v for (f, _, col), v in l['fonts'].items() if f.startswith('Gulim') and col == '000000')
+        if black >= 3 and HAN.search(l['t']): prose.add(k)
+    prose -= {k for l, k in zip(L, where) if kind(l) in ('pron', 'roman')}    # 소리·로마자 줄이 있는 묶음(번역 줄은 늘 궁서체)은 빼기
+    for l, lb, lg, k in zip(L, Lb, Lg, where):
+        t = (lg if k in prose else lb)['t']
+        if '**' not in t or k is None: continue
         plain = t.replace('**', '')
-        if lb['y'] < 55 and lb['size'] <= 9.5 or re.fullmatch(r'-\s*\d+\s*-', plain): continue
-        if kind(dict(lb, t=plain)) == 'head' or plain.startswith('□'): continue
-        # 굵은 덩어리 다듬기: 안쪽 끝 빈칸은 밖으로, 문장부호만 있는 덩어리는 풀기
+        if plain.strip() != l['t'].strip(): continue
+        if l['y'] < 55 and l['size'] <= 9.5 or re.fullmatch(r'-\s*\d+\s*-', plain): continue
+        if kind(l) == 'head' or plain.startswith('□'): continue
         segs = re.split(r'(\*\*.*?\*\*)', t); out = ''
         for sg in segs:
             if sg.startswith('**') and sg.endswith('**') and len(sg) >= 4:
@@ -336,13 +349,10 @@ def mark_bold(ps, Lb, pn):
             else: out += sg
         out = out.strip()
         if out.replace('**', '') != plain.strip() or '**' not in out: continue
-        for k in list(range(cur, len(ps))) + list(range(0, cur)):
-            if ps[k].startswith(('## ', '^^ ', '%% ', '![')): continue
-            j = ps[k].find(plain.strip())
-            if j < 0: continue
-            # 이미 굵게 한 줄 안이면(같은 줄이 두 번) 다음 자리
-            ps[k] = ps[k][:j] + out + ps[k][j + len(plain.strip()):]; cur = k; break
-        else: BOLDMISS.append((pn, plain))
+        j = ps[k].find(plain.strip())
+        if j < 0: BOLDMISS.append((pn, plain)); continue
+        ps[k] = ps[k][:j] + out + ps[k][j + len(plain.strip()):]
+        ps[k] = ps[k].replace('****', '').replace('** **', ' ')
 
 
 def toc_block(T):
@@ -458,6 +468,13 @@ if __name__ == '__main__':
     # 장 표지 쪽: 표지에 크게 인쇄된 장 이름만 넣음(작은 차례·겹쳐 찍은 그림자 글은 뺌) — 듣기가 장 이름부터 읽게
     for t in toc:
         if not t['sub'] and not pages[t['page'] - 1][1]: pages[t['page'] - 1][1].append('^^ ' + t['title'])
+    # □ 번호 제목: □ 를 되살림 → 화면에서 네모 테두리 번호(app.js boxNum), 듣기는 □ 를 읽지 않음 (운영자 요청, 2026-11-16)
+    for lab, ps in pages:
+        for k, p in enumerate(ps):
+            if p.startswith('## ') and any(p[3:].startswith(b) for b in BOXT) and re.match(r'## \d+ ', p): ps[k] = '## □' + p[3:]
+    for t in toc:
+        if t['title'] in BOXT: t['title'] = '□' + t['title']
+        if t.get('at') and re.match(r'\d+ ', t['at']) and any(b.startswith(t['at']) or t['at'].startswith(b) for b in BOXT): t['at'] = '□' + t['at']
     body = '\n\n'.join(f'=== {lab} ===\n' + '\n\n'.join(ps) for lab, ps in pages)
     # 줄 첫머리 번호와 글이 붙은 곳('10.따뽀 …', '14.아침경')은 번호 뒤에 빈칸 (운영자 요청, 2026-11-15 — 교정)
     NUMSP = re.compile(r'(?m)^((?:## |\^\^ |:: |%% |-{1,3} |\*\*)?)(\d{1,3})\.(?=[^\s\d.])')
