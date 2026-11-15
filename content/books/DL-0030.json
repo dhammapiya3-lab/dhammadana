@@ -27,8 +27,11 @@
     "영어"
   ],
   "original_source": "《붓다의 일생 The Life of the Buddha》은 BPS에서 1972년에 처음 출간되었고, 본 역서는 BPS의 Pariyatti Edition 2001년 판을 저본으로 했다.",
+  "parallel_editions": [],
   "series": "",
-  "main": [],
+  "main": [
+    "부처님의 생애"
+  ],
   "topics": [
     "삼보 공덕"
   ],
@@ -110,10 +113,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "pdf/DL-0030/DL-0030_초판3쇄.pdf"
+        "url": "pdf/DL-0030/DL-0030_초판3쇄.pdf",
+        "site": "",
+        "created": ""
       },
       "pdf_print": {
         "mode": "none",
