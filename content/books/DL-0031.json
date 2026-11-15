@@ -65,8 +65,8 @@
       "published": "2017년 2월 1일",
       "publisher_print": "메따승원",
       "isbn": "",
-      "published_ebook": "",
-      "publisher_ebook": "",
+      "published_ebook": "2020년 4월 6일",
+      "publisher_ebook": "유페이퍼",
       "ebook_note": "",
       "isbn_ebook": "979-1165225-30-8",
       "changes": "",
@@ -128,10 +128,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "pdf/DL-0031/DL-0031_증보판(초판).pdf"
+        "url": "pdf/DL-0031/DL-0031_증보판(초판).pdf",
+        "site": "",
+        "created": ""
       },
       "pdf_print": {
         "mode": "none",
