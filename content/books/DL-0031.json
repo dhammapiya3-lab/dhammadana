@@ -128,10 +128,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "none",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0031/DL-0031_증보판(초판).pdf"
       },
       "pdf_print": {
         "mode": "none",
