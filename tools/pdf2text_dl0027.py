@@ -307,7 +307,7 @@ for P in PAGES:
         for a, b in JUST5: paras = [x.replace(a, b) for x in paras]
     elif n == 6:
         # 표기법 표·운율 보기·반복 기호 보기는 인쇄본 그대로 그림으로, 나머지 설명은 글로
-        cuts = [((112, 264), 'table', '빨리어 한글표기 표'), ((526, 566), 'rhythm', '담마윳의 전통적인 운율 보기'), ((655, 676), 'repeat', '∰ ∰ 기호 보기')]
+        cuts = [((112, 264), 'table', '빨리어 한글표기 표'), ((529, 576), 'rhythm', '담마윳의 전통적인 운율 보기'), ((655, 676), 'repeat', '∰ ∰ 기호 보기')]
         paras = []; rest = P['lines']
         for (a, b), nm, cap in cuts:
             before = [l for l in rest if l['c'] < a]; rest = [l for l in rest if l['c'] > b]
