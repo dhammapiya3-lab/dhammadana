@@ -1,0 +1,538 @@
+[
+ {
+  "img": "images/25-Dabba-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     164,
+     70,
+     640,
+     140
+    ],
+    "ko": "소임의 달인\n답바 존자의 업의 여정과 신통",
+    "cover": true,
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Dabba-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     516,
+     62,
+     742,
+     382
+    ],
+    "ko": "옛 서원\n\n십만 겁 전, 훌륭한\n재가자가 빠두뭇따라\n부처님께서 승원 처소를\n잘 마련하는 비구를\n칭찬하시는 것을 보았습니다.\n그는 앞날에 바로 그\n으뜸의 칭호를 얻겠다고\n깊이 서원했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Dabba-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     396,
+     128,
+     740,
+     330
+    ],
+    "ko": "돌아올 수 없는 산\n\n깟사빠 부처님 시대에 수행자\n일곱이 산꼭대기에 올라 사다리를\n밀어 버리고, 목숨을 걸고\n깨달음을 구했습니다. 둘은\n이루었고, 다섯은 윤회 속에\n남았습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Dabba-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     216,
+     70,
+     586,
+     108
+    ],
+    "ko": "다섯 수행자의 앞날",
+    "cover": true,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     304,
+     132,
+     492,
+     164
+    ],
+    "ko": "딱까실라",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     132,
+     700,
+     164
+    ],
+    "ko": "뿍꾸사띠 왕",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     304,
+     184,
+     492,
+     216
+    ],
+    "ko": "빱바떼이야",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     184,
+     700,
+     216
+    ],
+    "ko": "사비야",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     304,
+     236,
+     492,
+     268
+    ],
+    "ko": "바히야",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     236,
+     700,
+     268
+    ],
+    "ko": "바히야 존자",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     304,
+     286,
+     492,
+     318
+    ],
+    "ko": "라자가하",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     286,
+     700,
+     318
+    ],
+    "ko": "꾸마라 깟사빠",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     304,
+     338,
+     492,
+     370
+    ],
+    "ko": "아누삐야",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     338,
+     700,
+     370
+    ],
+    "ko": "답바 존자",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Dabba-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     400,
+     72,
+     744,
+     182
+    ],
+    "ko": "기적 같은 마지막 태어남\n어머니는 아기를 낳기 전에 세상을 떠났습니다.\n화장 장작에 불을 붙이자 그 열에 태가 터졌습니다.\n지난 공덕에 힘입어 아기는\n답바(dabba) 풀 더미 위로 무사히 날아갔습니다.",
+    "cover": true,
+    "align": "right",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Dabba-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     246,
+     54,
+     548,
+     196
+    ],
+    "ko": "승가에 들다\n일곱 살 때 망고 숲에서 고따마 부처님께\n마음을 빼앗긴 어린 답바는 출가를 청했습니다.\n부처님께서는 곧바로 한 장로 비구에게\n아이를 받아들이게 하셨습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Dabba-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     116,
+     50,
+     296,
+     108
+    ],
+    "ko": "4. 다 깎았을 때:\n아라한",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     514,
+     50,
+     690,
+     108
+    ],
+    "ko": "1. 첫 번째 둘레:\n수다원",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     102,
+     282,
+     278,
+     342
+    ],
+    "ko": "3. 세 번째 둘레:\n아나함",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     532,
+     282,
+     700,
+     342
+    ],
+    "ko": "2. 두 번째 둘레:\n사다함",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     190,
+     370,
+     630,
+     418
+    ],
+    "ko": "깨달음의 단계\n출가와 궁극의 깨달음이 한꺼번에 이루어졌습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Dabba-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     330,
+     48,
+     440,
+     86
+    ],
+    "ko": "처소 배정",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     62,
+     110,
+     302,
+     312
+    ],
+    "ko": "신통한 소임자\n\n답바는 어렸지만 승가를\n돌보겠다고 스스로\n나섰습니다. 부처님께서는\n그에게 두 가지 소임을\n맡기셨습니다.",
+    "cover": true,
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     516,
+     180,
+     742,
+     216
+    ],
+    "ko": "머물 곳 배정",
+    "cover": true,
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     516,
+     236,
+     742,
+     296
+    ],
+    "ko": "비구들을 마을의\n공양 신도에게 안내",
+    "cover": true,
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Dabba-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     344,
+     610,
+     436
+    ],
+    "ko": "길을 밝히는 빛\n찾아온 비구들은 아무 때나 외딴 처소를 청했습니다. 답바는 마음으로\n만든 자기 분신을 나타내고, 손가락을 빛나는 등불로 삼아\n어둠 속에서 그들을 안내했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Dabba-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     404,
+     58,
+     740,
+     158
+    ],
+    "ko": "으뜸의 칭호\n열여덟 승원을 빈틈없이 돌본 것을 기려,\n부처님께서는 답바 존자를 처소를 마련하는 데\n으뜸(etad-agga)인 제자라고 선언하셨습니다.\n옛 서원이 이루어졌습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Dabba-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     366,
+     146,
+     584,
+     312
+    ],
+    "ko": "업의 얼룩\n\n답바 존자는 시기하는 비구들에게\n계를 어겼다는 거짓 모함을 받았습니다.\n덕이 모자라서가 아니라,\n91겁 전 아라한을 헐뜯은 업의\n피할 수 없는 메아리였습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Dabba-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     46,
+     690,
+     112
+    ],
+    "ko": "떠날 때\n수명을 살펴본 답바 존자는 때가 다했음을 알았습니다. 그는 부처님께\n마지막 작별을 드리러 갔고, 깨닫지 못한 비구들은 눈물을 흘렸습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Dabba-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     250,
+     394,
+     372
+    ],
+    "ko": "마지막 신통\n모함으로 남은 의심을 씻으라는 부처님의\n분부를 받아, 답바 존자는 몸을 여럿으로\n나투었다 사라지는 놀라운 신통을 보여\n온전히 청정함을 드러냈습니다.",
+    "cover": true,
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Dabba-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     92,
+     302,
+     712,
+     384
+    ],
+    "ko": "불의 요소로 든 반열반\n마음으로 만든 땅 위에 떠서, 불 까시나(tejo-kasiṇa)로 선정에 들었습니다.\n온전한 해탈을 바라자, 그의 몸은 세상을 태우는 불꽃으로 타올랐고\n재 한 점 남지 않았습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Dabba-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     556,
+     284,
+     606,
+     312
+    ],
+    "ko": " ",
+    "fill": true,
+    "shape": "box",
+    "align": "center",
+    "manual": true
+   },
+   {
+    "rect": [
+     270,
+     78,
+     562,
+     340
+    ],
+    "ko": "온전한 한 바퀴\n\n십만 겁 전의 서원에서,\n산 위의 맹렬한 고행과\n일곱 살 아라한으로서\n지칠 줄 모르는 봉사를 거쳐,\n답바 존자의 업의 여정은\n완전한 해탈로 끝났습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
