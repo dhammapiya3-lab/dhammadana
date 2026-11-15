@@ -1501,11 +1501,11 @@ const fnMark = h => h.replace(/^\[\^([^\]]+)\]:\s*/, '<span class="fn-no" data-f
 // 소제목 알아보기: 빈칸·괄호 속 풀이를 빼고 목차 제목과 같으면 소제목
 const isHead = t => /^## /.test(t);
 // **굵은 글씨**: 관리자 화면 본문에서 ** 로 감싼 곳 (화면에서는 굵게, 듣기·찾기·밑줄에서는 ** 를 뺌)
-const unB = s => String(s || '').replace(/\*\*|==|\{\{|\}\}|@@|°°/g, '').replace(/^(?:\^\^|::|>>|\|\||\+\+) /gm, '');
+const unB = s => String(s || '').replace(/\*\*|==|\{\{|\}\}|@@|°°|§§/g, '').replace(/^(?:\^\^|::|>>|\|\||\+\+) /gm, '');
 // 검색 결과에 보일 글: 그림 주소·## ·각주 표시 같은 내부 부호를 뺌
 const plainT = s => unB(s).replace(/!\[[^\]]*\]\([^)]*\)/g, ' ').replace(/^#{1,6} /gm, '').replace(/\[\^\d+\]:?\s?/g, ' ').replace(/\[\[[^\]]*\]\]/g, ' ');
 // **굵게**, ==색 강조(인쇄본·전자책의 하늘색 글자)==
-const boldMark = h => h.replace(/ㆍ/g, '·').replace(/\*\*(?!\s|\*\*)([\s\S]*?[^\s*])\*\*/g, '<strong>$1</strong>').replace(/==(?=\S)([\s\S]*?\S)==/g, '<span class="hl">$1</span>').replace(/\{\{([\s\S]*?)\}\}/g, '<span class="faint" title="생략할 수 있는 부분">$1</span>').replace(/@@([\s\S]*?)@@/g, '<span class="pron">$1</span>').replace(/°°([\s\S]*?)°°/g, '<span class="pli">$1</span>').replace(/-{8,}(?=\*|\[\^)/g, m => `<span class="dash-rule" style="width:${Math.min(16, m.length * .5)}em" aria-hidden="true"></span>`);  // 각주 번호가 붙은 점선('------------[^19]') → 가운데 가로줄 (운영자 요청, 2026-11-15)  // @@…@@ 빠알리 한글 소리 줄 (DL-0027: 원본처럼 굵은 둥근 글꼴)  // {{…}} 희미한 글자 (DL-0027: 인도자가 없거나 간략히 할 때 생략하는 부분)
+const boldMark = h => h.replace(/ㆍ/g, '·').replace(/\*\*(?!\s|\*\*)([\s\S]*?[^\s*])\*\*/g, '<strong>$1</strong>').replace(/==(?=\S)([\s\S]*?\S)==/g, '<span class="hl">$1</span>').replace(/\{\{([\s\S]*?)\}\}/g, '<span class="faint" title="생략할 수 있는 부분">$1</span>').replace(/@@([\s\S]*?)@@/g, '<span class="pron">$1</span>').replace(/°°([\s\S]*?)°°/g, '<span class="pli">$1</span>').replace(/§§([\s\S]*?)§§/g, '<span class="spk">$1</span>').replace(/-{8,}(?=\*|\[\^)/g, m => `<span class="dash-rule" style="width:${Math.min(16, m.length * .5)}em" aria-hidden="true"></span>`);  // 각주 번호가 붙은 점선('------------[^19]') → 가운데 가로줄 (운영자 요청, 2026-11-15)  // @@…@@ 빠알리 한글 소리 줄 (DL-0027: 원본처럼 굵은 둥근 글꼴)  // {{…}} 희미한 글자 (DL-0027: 인도자가 없거나 간략히 할 때 생략하는 부분)
 // 빠알리어 한글 표기(발음 부호 붙은 한글): 텍스트 JSON 의 ph 사전(tools/pali_hangul.py)대로 바꿔 PaliHangul 글꼴로 — 본문 글자는 그대로, 화면에만
 let PH_RE = null, PH_OF = null;
 const phMark = h => {
@@ -1518,10 +1518,14 @@ const headKey = t => unB(t).replace(/^## /, '').replace(/\[\^[^\]]+\]/g, '').rep
 const FIG_RE = /^!\[([^\]]*)\]\(([^)\s]+)\)\s*$/;
 const isTable = p => /^\|.*\|\s*$/m.test(p) && p.split('\n').filter(l => l.trim()).every(l => /^\|/.test(l.trim()));
 function tableHtml(p) {
-  const rows = p.split('\n').map(l => l.trim()).filter(l => l && !/^\|[\s:|-]+\|?$/.test(l)).map(l => l.replace(/^\||\|$/g, '').split('|').map(c => c.trim()));
+  // 머리 줄: 보통은 첫 줄. 구분 줄(|---|)이 있으면 그 위 줄들이 머리, 구분 줄로 시작하면 머리 없음(쪽을 넘어 이어지는 표 — DL-0030, 2026-11-15)
+  const lines = p.split('\n').map(l => l.trim()).filter(Boolean), isSep = l => /^\|[\s:|-]+\|?$/.test(l);
+  const si = lines.findIndex(isSep), nh = si < 0 ? 1 : si;
+  const rows = lines.filter(l => !isSep(l)).map(l => l.replace(/^\||\|$/g, '').split('|').map(c => c.trim()));
   if (!rows.length) return '';
+  const cell = c => boldMark(esc(c));
   const dl = R.tdl && R.tdl[rows[0][0]];   // 이 표를 그림으로 내려받는 단추 (텍스트 JSON 의 table_dl, 운영자 요청 2026-11-12)
-  return `<table class="r-table"><thead><tr>${rows[0].map(c => `<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${rows.slice(1).map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table>`
+  return `<table class="r-table">${nh ? `<thead>${rows.slice(0, nh).map(r => `<tr>${r.map(c => `<th>${cell(c)}</th>`).join('')}</tr>`).join('')}</thead>` : ''}<tbody>${rows.slice(nh).map(r => `<tr>${r.map(c => `<td>${cell(c)}</td>`).join('')}</tr>`).join('')}</tbody></table>`
     + (dl ? `<p class="r-tdl"><a class="tbtn" href="${esc(dl)}" download="${esc(dl.split('/').pop())}">⬇ 그림으로 내려받기</a></p>` : '');
 }
 // 색인 표: 네 가지 순서(인쇄본 제1~4부)를 버튼으로 바꿔 보고, 낱말로 찾기
