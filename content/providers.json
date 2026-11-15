@@ -136,6 +136,19 @@
       "image": "/uploads/partner-senani.jpg"
     },
     {
+      "id": "hyangcheon",
+      "name": "향천선원",
+      "kind": "승원·사원",
+      "urls": [
+        "https://cafe.daum.net/hy3171"
+      ],
+      "partner": true,
+      "aliases": [
+        "향천 선원"
+      ],
+      "note": "다음 카페 · cafe.daum.net/hy3171"
+    },
+    {
       "id": "panditarama",
       "name": "빤디따라마 근본불교 수행센터",
       "kind": "승원·사원",
