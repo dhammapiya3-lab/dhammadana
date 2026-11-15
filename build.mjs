@@ -145,6 +145,8 @@ function edHistory(b) {
 // 목차: 한 줄에 하나. 단계는 번호 모양으로 알아봄 — Ⅰ.·제1장·제1부(큰 단계) > 1.·<부록>(중간) > 1)·(1)(작은 단계).
 // 번호가 없는 줄은 큰 단계가 나온 뒤면 중간 단계로. 앞에 공백 2칸 또는 '-' 를 붙이면 바로 위보다 한 단계 아래.
 // 줄 끝 쪽수(' 15', '... 15', '| 15')는 오른쪽에
+// □ 안 번호('□5 대념처경') → 네모 테두리 번호 (운영자 요청, 2026-11-16 — app.js boxNum 과 같음)
+const boxNum = h => h.replace(/□\s*(\d{1,3})\s*/g, '<span class="boxnum">$1</span>');
 function contentsHtml(t) {
   const BIG = /^(제\s*\d+\s*[장부편권]|[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]+\.|[IVX]+\.\s)/, MID = /^(\d+\.\s|<부록>|\[부록\]|부록\s)/, SMALL = /^(\d+\)\s|\(\d+\)\s|[①-⑳])/;
   let seenBig = false, last = 0;
@@ -157,7 +159,7 @@ function contentsHtml(t) {
     return { lv, x, pg };
   });
   const min = Math.min(...rows.map(r => r.lv));
-  return `<ol class="toc static">${rows.map(r => `<li class="lv${r.lv - min}"><span>${esc(r.x)}</span>${r.pg ? `<span>${esc(r.pg)}</span>` : ''}</li>`).join('')}</ol>`;
+  return `<ol class="toc static">${rows.map(r => `<li class="lv${r.lv - min}"><span>${boxNum(esc(r.x))}</span>${r.pg ? `<span>${esc(r.pg)}</span>` : ''}</li>`).join('')}</ol>`;
 }
 
 // 책 페이지 아래쪽: 책 소개 · 저자 소개 · 옮긴이 소개 · 목차
