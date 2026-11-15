@@ -685,6 +685,7 @@ for (const t of TEACHERS) {
     <div>${tr ? `<div class="small muted"><a href="/library/?trad=${tr.id}">${esc(tr.region)} · ${esc(tr.name)}</a>${(tr.representatives || []).includes(t.id) ? ' · 대표 스승' : ''}</div>` : ''}
     <h1 class="h-page">${esc(t.name)}</h1>${t.roman ? `<div class="pali muted">${esc(t.roman)}</div>` : ''}
     ${t.bio ? `<div class="desc small">${marked.parse(t.bio)}</div>` : ''}
+    ${(t.urls || []).filter(Boolean).length ? `<p style="margin:8px 0 0">${t.urls.filter(Boolean).map(u => `<a class="btn sm ghost pub-site" href="${esc(u)}" target="_blank" rel="noopener">${/youtube\.com|youtu\.be/.test(u) ? '▶ 유튜브 채널' : /cafe\.naver\.com/.test(u) ? '네이버 카페 · ' + esc(u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')) : /cafe\.daum\.net/.test(u) ? '다음 카페 · ' + esc(u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')) : esc(u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))} ↗</a>`).join(' ')}</p>` : ''}
     ${pl ? `<p style="margin:8px 0 0"><a class="btn sm ghost" href="/dhammatalk/?pl=${pl.id}">▶ ${esc(t.name)}의 법문 듣기</a></p>` : ''}</div></div>
     <div class="section-head" style="margin-top:20px"><h2>${esc(teacherBooksHead(t, list))}</h2></div>
     ${list.length ? `<div class="grid">${list.map(coverCard).join('')}</div>` : '<p class="muted">아직 등록된 책이 없습니다.</p>'}
