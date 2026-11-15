@@ -177,7 +177,11 @@ def build():
                 numstart = re.match(r'(\d+\)|\d+\.|\(\d+\)|[①-⑳]|[ⅠⅡⅢⅣ]\.|▣|\d+-\d+\.)\s', t0)
                 cont = prev is not None and pk == 'prose' and gap <= 24 and not numstart and lead < 3 and prev['x1'] >= RIGHT - 30
                 if cont: ps[-1] = joinp(ps[-1], prev, t0)
+                # ①② 를 글 속에 이어 쓴 풀이(미주 등): 앞 줄이 끝까지 찼으면 줄이 넘어간 것 — 이어 붙임
+                elif numstart and re.match(r'[①-⑳]', t0) and prev is not None and pk == 'prose' and gap <= 19 and lead < 3 and prev['x1'] >= RIGHT - 30: ps[-1] = joinp(ps[-1], prev, t0)
                 elif prev is not None and pk == 'prose' and gap <= 24 and not numstart and lead < 3: ps[-1] += '\n' + t0
+                # 번호 항목이 앞 줄과 간격 없이 이어 인쇄된 곳(마음 부수·일러두기 목록)은 줄만 바꿈 — 인쇄본 줄 간격 그대로 (운영자 요청, 2026-11-16)
+                elif numstart and prev is not None and pk == 'prose' and gap <= 19 and lead < 3 and ps and not re.fullmatch(r'\*\*[^*]+\*\*', ps[-1].split('\n')[-1]): ps[-1] += '\n' + t0
                 else: ps.append(t0)
             prev = l; pk = 'prose' if not chant else k
         pages.append((lab, ps))
