@@ -13,6 +13,9 @@
   "provider": "hyangcheon",
   "press": false,
   "provider_chip": false,
+  "partner_chips": [
+    "sasanarakkhita"
+  ],
   "paper": "",
   "paper_url": "",
   "stores": [],
