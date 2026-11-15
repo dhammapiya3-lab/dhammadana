@@ -114,8 +114,8 @@ def kind(r, n):
     return 'B'
 
 
-def render(n, rect, name, dpi=300):
-    pix = src[n - 1].get_pixmap(dpi=dpi, clip=rect)
+def render(n, rect, name, dpi=300, alpha=False):
+    pix = src[n - 1].get_pixmap(dpi=dpi, clip=rect, alpha=alpha)
     path = os.path.join(UP, name); pix.save(path); return '/uploads/' + name
 
 
@@ -145,7 +145,7 @@ def label(n):
 
 # ---------- 앞쪽 ----------
 P = newpage()
-wheel = render(4, fitz.Rect(195, 60, 225, 95), f'{BK}-wheel.png', 400); images.append(wheel)
+wheel = render(4, fitz.Rect(195.5, 80.2, 224, 108.7), f'{BK}-wheel.png', 600, alpha=True); images.append(wheel)   # 법륜(197.5~222, 82~106.7pt) 전체
 chapters.append(('속표지', 0, 0))
 P['paras'] = [':: ' + text_of(r[3]).strip() for r in vlines(2)]
 P = newpage()

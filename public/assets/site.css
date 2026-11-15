@@ -712,6 +712,7 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 .r-fig .fig-btn img[src*="DL-0023-map-"]{max-height:88vh}  /* 『법구경 이야기 1』 앞 지도: 한 쪽에 하나씩, 화면에 맞게 크게 (운영자 요청, 2026-11-12) */
 .press section .prose > .h-page{margin-bottom:22px}
 .r-fig .fig-btn img[src*="dhammacakka"]{max-height:64px}
+.r-fig .fig-btn img[src*="DL-0030-wheel"]{max-height:60px;border:0;background:none;border-radius:0}  /* 『붓다의 일생』 속표지 법륜: 인쇄본처럼 작게 (운영자 요청, 2026-11-15) */
 /* 색인 표 (빠알리어-한국어-영어 색인 등): 컴퓨터는 표, 휴대폰은 낱말 카드 */
 .reflow .ix{max-width:none;margin:0 0 1.5em}
 .ix-bar{position:sticky;top:0;z-index:2;background:var(--paper);padding:8px 0 10px;border-bottom:1px solid var(--line)}
