@@ -51,6 +51,7 @@ with sync_playwright() as p:
                 if same == 1 and r['kind'] in ('sub-h', 'bold') and not pg.evaluate("(()=>{const r=document.querySelector('#rRange');return +r.value>=+r.max-3})()"): bad.append(f"{bid} · {r['ch'].split('·')[-1].strip()} · {r.get('pg')} · 같은 소제목에 두 번 멈춤: {r['text']}")
                 if same > 3:
                     if pg.evaluate("(()=>{const r=document.querySelector('#rRange');return +r.value>=+r.max-3})()"): break  # 책 끝
+                    if pg.evaluate("(()=>[...document.querySelectorAll('.toast,#toast')].some(t=>/책의 끝/.test(t.textContent)))()"): break  # 마지막 장(소제목 없는 긴 미주 등)에서 '책의 끝입니다' 알림 — 책 끝 (2026-11-16, DL-0032)
                     bad.append(f"{bid} · {r['ch']} · 같은 곳에서 더 나가지 않음"); break
                 continue
             if r['kind'] in ('sub-h', 'bold') and r['text'] in (prevSeen or []) and r['text'] != (prev or (0, 0, 0))[1]:
