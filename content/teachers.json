@@ -72,7 +72,7 @@
     {
       "id": "alokadhammika",
       "name": "알로까담미까 스님",
-      "roman": "Ālokadhammika",
+      "roman": "Bhikkhu Ālokadhammika",
       "aliases": [
         "빅쿠 알로까담미까",
         "메따승원 빅쿠 알로까담미까",
@@ -83,7 +83,7 @@
       ],
       "tradition": "paauk",
       "bio": "파욱국제승원의 밧단따 위말라(bhaddanta vimala) 사야도를 은사로 구족계(빅쿠계)를 수지. 파욱 사야도, 위말라 사야도, 우 꼬위다(kovida) 반떼, 우 레와따 반떼를 스승으로 사마타·위빠사나 수행 및 계율을 공부했다.",
-      "photo": "/uploads/teacher-alokadhammika.jpg",
+      "photo": "/uploads/teacher-alokadhammika-v2.jpg",
       "rank": 356
     },
     {
@@ -202,6 +202,7 @@
       "tradition": "paauk",
       "bio": "",
       "photo": "",
+      "nun": true,
       "rank": 170
     },
     {

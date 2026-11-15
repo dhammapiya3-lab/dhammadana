@@ -33,7 +33,9 @@ function readMd(file) {
 const S = readJSON('settings.json');
 const TRADS = readJSON('traditions.json').items;
 // 파일은 관리자 화면에서 찾기 쉽게 가나다순, 사이트의 스승 순서는 rank(사이트 순서) — 없으면 맨 뒤 (운영자 요청, 2026-11-11)
-const TEACHERS = readJSON('teachers.json').items.map((t, i) => [t, i]).sort((a, b) => (!!a[0].lay - !!b[0].lay) || ((a[0].rank ?? 1e9) - (b[0].rank ?? 1e9)) || a[1] - b[1]).map(x => x[0]);  // 재가자는 같은 분류 안에서 스님들 다음 (운영자 요청, 2026-11-12)
+// 순서: 스님 → 세얄레이(비구니) → 재가자, 같은 무리 안은 순서 번호(rank) (운영자 요청, 2026-11-12·15)
+const tGroup = t => t.lay ? 2 : (t.nun || /세얄레이|비구니|빅쿠니/.test(t.name)) ? 1 : 0;
+const TEACHERS = readJSON('teachers.json').items.map((t, i) => [t, i]).sort((a, b) => (tGroup(a[0]) - tGroup(b[0])) || ((a[0].rank ?? 1e9) - (b[0].rank ?? 1e9)) || a[1] - b[1]).map(x => x[0]);  // 재가자는 같은 분류 안에서 스님들 다음 (운영자 요청, 2026-11-12)
 const TOPICS_RAW = readJSON('topics.json');
 const TOPICS = { main: TOPICS_RAW.main.map(x => x.label), groups: [] };
 for (const it of TOPICS_RAW.items) { let g = TOPICS.groups.find(x => x.name === it.group); if (!g) TOPICS.groups.push(g = { name: it.group, labels: [] }); g.labels.push(it.label); }
