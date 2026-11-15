@@ -146,7 +146,9 @@
       "aliases": [
         "향천 선원"
       ],
-      "note": "다음 카페 · cafe.daum.net/hy3171"
+      "note": "다음 카페 · cafe.daum.net/hy3171",
+      "image": "/uploads/partner-hyangcheon.jpg",
+      "bio": "향천선원은 재가자들이 운영하는 유일한 초기불교 수행공동체입니다.  \n초기불교 스님들을 초청하여 교법과 수행지도를 받고 있습니다."
     },
     {
       "id": "sasanarakkhita",
@@ -161,7 +163,8 @@
         "사사나락키따담마공동체",
         "SāsanaRakkhita"
       ],
-      "note": "네이버 카페 · cafe.naver.com/dhammaforest"
+      "note": "네이버 카페 · cafe.naver.com/dhammaforest",
+      "image": "/uploads/partner-sasanarakkhita.png"
     },
     {
       "id": "panditarama",
