@@ -19,7 +19,9 @@
   ],
   "book_type": "법문집",
   "original_title": "Don't Look Down on Defilements",
-  "original_language": ["영어"],
+  "original_language": [
+    "영어"
+  ],
   "original_source": "",
   "series": "",
   "main": [],
@@ -112,5 +114,15 @@
   "added": "2026-11-08",
   "order": null,
   "hidden": false,
-  "hide_update": false
+  "hide_update": false,
+  "parallel_editions": [
+    {
+      "lang": "en",
+      "title": "Don’t Look Down On The Defilements — They Will Laugh At You",
+      "by": "Ashin Tejaniya",
+      "edition": "Revised edition, Sept 2011 (개정판, 3,000 copies) · Auspicious Affinity (Petaling Jaya, Selangor, Malaysia) 법보시판 · First Printing 2006 · Copyright © Ashin Tejaniya 2006 · Printed by Tankoh Print, Selangor",
+      "url": "",
+      "note": "'영어 원서 N쪽'은 이 판에 인쇄된 쪽 번호 (PDF 파일 이름 Defilements_V1.1)"
+    }
+  ]
 }

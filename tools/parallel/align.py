@@ -18,6 +18,7 @@ import numpy as np
 
 ap = argparse.ArgumentParser()
 ap.add_argument('book'); ap.add_argument('lang'); ap.add_argument('orig')
+ap.add_argument('--gl-start', default=None, help='용어 풀이가 시작하는 한국어 문단(정규식, 예: "^\\*\\*깜마\\[")');
 ap.add_argument('--title', default=''); ap.add_argument('--by', default=''); ap.add_argument('--source', default='')
 A = ap.parse_args()
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -52,6 +53,7 @@ for n, (lab, _, txt) in enumerate(pages, 1):
 
 # 빠알리 용어 풀이(가나다순으로 다시 늘어놓아 원서와 순서가 다름) — 차례 짝짓기에서 빼고 낱말(로마자)로 따로 짝지음
 GL0 = next((i + 2 for i, p in enumerate(KO) if re.match(r'## IV\.', p['t'])), len(KO))
+if A.gl_start: GL0 = next((i for i, p in enumerate(KO) if re.search(A.gl_start, p['t'])), len(KO))
 KO_GL = KO[GL0:]; KO_DP = KO[:GL0]
 SPL = re.compile(r'(?<=[.?!。…])(?:[”’"\')\]]*)\s+|\n')
 
@@ -178,7 +180,7 @@ for i, p in enumerate(ORIG):
     if p['k'] == 'gl': EG.setdefault(rk(re.sub(r'\(also see[^)]*\)', '', p['term'])), i)
 gl_ok = gl_no = 0; cur = None
 for p in KO_GL:
-    m = re.match(r'[^\n(]*?\(([^)]*[a-zāīūṃṅñṭḍṇḷ][^)]*)\)\s*:', plain(p['t']))
+    m = re.match(r'[^\n(]*?\(([^)]*[a-zāīūṃṅñṭḍṇḷ][^)]*)\)\s*:', plain(p['t'])) or re.match(r'[^\n\[]*?\[([^\]]*[a-zāīūṃṅñṭḍṇḷ][^\]]*)\]\s*\n', plain(p['t']))   # '낱말(roman) : 풀이' 또는 '낱말[roman]⏎풀이'(DL-0013)
     if m:
         j = None
         for c in m.group(1).split(','):          # 'pāramī, pāramita' 처럼 여러 표기
