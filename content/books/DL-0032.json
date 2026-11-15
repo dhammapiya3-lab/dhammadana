@@ -5,12 +5,14 @@
   "cover": "/uploads/KakaoTalk_20261116_061624893.jpg",
   "byline": "파욱 국제 승원 엮음",
   "translator": "빅쿠 담마다야다 편역",
-  "teacher": "",
+  "teacher": "dhammadayada",
   "co_teachers": [],
-  "country": [],
+  "country": [
+    "한국"
+  ],
   "provider": "senani",
   "press": false,
-  "provider_chip": false,
+  "provider_chip": true,
   "paper": "",
   "paper_url": "",
   "stores": [],
