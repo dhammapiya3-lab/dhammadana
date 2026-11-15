@@ -729,7 +729,7 @@ function chapters() {
 function paraIdx(t) {
   if (!t || !t.at) return 0;
   const ps = paras((R.pages[t.page - 1] || {}).text), key = String(t.at).replace(/\s/g, '');
-  const k = ps.findIndex(s => s.replace(/^## /, '').replace(/\s/g, '').startsWith(key));
+  const k = ps.findIndex(s => s.replace(/^## /, '').replace(/\*\*/g, '').replace(/\s/g, '').startsWith(key.replace(/\*\*/g, '')));
   return k < 0 ? 0 : k;
 }
 function chapterOf(n) {

@@ -304,11 +304,45 @@ def build(pdf):
             if i == TOC_PAGES[0]: pages.append((lab, ['## 차 례', toc_block(T)]))   # 차례 21쪽은 한 화면으로
             continue
         ys = []; ps = body_paras(L, ys)
+        mark_bold(ps, lines_of(d[i - 1], bold=True), i)
         for y0, h in sorted(WH.get(i, [])):
             k = next((n for n, y in enumerate(ys) if y > y0), len(ps))
             ps.insert(k, f'![{PICS[h][1]}](/uploads/{PICS[h][0]})'); ys.insert(k, y0)
         pages.append((lab, ps))
     return d, pages, T
+
+
+BOLDMISS = []
+
+
+def mark_bold(ps, Lb, pn):
+    """인쇄본에서 굵게(덧그려 굵게) 찍힌 글자를 본문에 **…** 로 (운영자 요청, 2026-11-15) — 글자는 그대로, ** 만 더함.
+    제목(## 줄)·쪽 번호·머리글은 건드리지 않음. 문장부호만 굵은 곳('**.**')은 뺌."""
+    cur = 0
+    for lb in Lb:
+        t = lb['t']
+        if '**' not in t: continue
+        plain = t.replace('**', '')
+        if lb['y'] < 55 and lb['size'] <= 9.5 or re.fullmatch(r'-\s*\d+\s*-', plain): continue
+        if kind(dict(lb, t=plain)) == 'head' or plain.startswith('□'): continue
+        # 굵은 덩어리 다듬기: 안쪽 끝 빈칸은 밖으로, 문장부호만 있는 덩어리는 풀기
+        segs = re.split(r'(\*\*.*?\*\*)', t); out = ''
+        for sg in segs:
+            if sg.startswith('**') and sg.endswith('**') and len(sg) >= 4:
+                inner = sg[2:-2]; core = inner.strip()
+                if not core or re.fullmatch(r'[\s.,·:;!?()\-]+', core): out += inner; continue
+                lead = inner[:len(inner) - len(inner.lstrip())]; tail = inner[len(inner.rstrip()):]
+                out += lead + '**' + core + '**' + tail
+            else: out += sg
+        out = out.strip()
+        if out.replace('**', '') != plain.strip() or '**' not in out: continue
+        for k in list(range(cur, len(ps))) + list(range(0, cur)):
+            if ps[k].startswith(('## ', '^^ ', '%% ', '![')): continue
+            j = ps[k].find(plain.strip())
+            if j < 0: continue
+            # 이미 굵게 한 줄 안이면(같은 줄이 두 번) 다음 자리
+            ps[k] = ps[k][:j] + out + ps[k][j + len(plain.strip()):]; cur = k; break
+        else: BOLDMISS.append((pn, plain))
 
 
 def toc_block(T):
@@ -407,7 +441,7 @@ def make_toc(pages, T):
         k = find_head(pages[i - 1][1], title)
         if k is None: k = find_any(pages[i - 1][1], title)
         ps = pages[i - 1][1]
-        while k and '\n' not in ps[k - 1] and len(re.sub(r'^## ', '', ps[k - 1])) <= 30 and not ps[k - 1].startswith(('%%', '![')) \
+        while k and '\n' not in ps[k - 1] and len(re.sub(r'^## ', '', ps[k - 1])) <= 30 and not ps[k - 1].startswith(('%%', '![', '(')) \
                 and (not ps[k - 1].startswith('## ') or re.search(r'니까야|빠타|빠따|법구경', ps[k - 1])
                      or (len(re.sub(r'[^가-힣]', '', ps[k - 1])) <= 5 and not re.search(r'\d', ps[k - 1]))): k -= 1   # 제목 위의 꼬리표(월요일·경전 출처·포살 ․ 축원)도 함께
         if k: e['at'] = re.sub(r'^(## |\^\^ )', '', pages[i - 1][1][k])[:24]
@@ -435,4 +469,5 @@ if __name__ == '__main__':
     out = {'book': 'DL-0031', 'edition': '증보판 (초판)', 'toc': toc, 'images': imgs, 'body': body}
     p = os.path.join(REPO, 'content/texts/DL-0031.json')
     json.dump(out, open(p, 'w'), ensure_ascii=False, indent=1)
+    if BOLDMISS: print('  ! 굵게 자리 못 찾음', len(BOLDMISS), BOLDMISS[:8])
     print('쪽', len(pages), '목차', len(toc), '장', sum(not t['sub'] for t in toc), '글자', len(body))
