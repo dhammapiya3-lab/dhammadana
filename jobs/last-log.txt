@@ -1,10 +1,12 @@
 Foremost-Monks 24-Upasena-Vangantaputta 15 장
+Foremost-Monks 25-Dabba 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 76 개 / 한글판 이야기 52 편
+R2 에 올림: 106 개 / 한글판 이야기 53 편
 공개 주소 확인: 200 1622611바이트
 이야기 Foremost-Monks/24-Upasena-Vangantaputta {'pdf': 22185439, 'zip': 21910902, 'n': 15}
-책 Foremost-Monks {'pdf': 637658279, 'pdfs': 66897877, 'zip': 637247878, 'stories': 20, 'n': 452}
-내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 52 이야기
+이야기 Foremost-Monks/25-Dabba {'pdf': 18765077, 'zip': 18495008, 'n': 15}
+책 Foremost-Monks {'pdf': 656158850, 'pdfs': 68842164, 'zip': 655742947, 'stories': 21, 'n': 467}
+내려받기 파일: 3 묶음 새로 만듦
+글로 보기: 53 이야기
 41-Mogharaja
 13-Singalakamata
