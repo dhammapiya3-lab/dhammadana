@@ -421,10 +421,13 @@ const PALI = (() => {
     .replace(/([가-힣])\s*\(([^()가-힣]*[A-Za-zĀ-ỿ][^()가-힣]*)\)/g, '$1')        // 한글(원어) → 한글만
     .replace(/[A-Za-zĀ-ỿ][A-Za-zĀ-ỿ'’-]*/g, w => (PMARK.test(w) || /^[a-z]/.test(w) || /^[A-Z][a-zā-ṁ]+$/.test(w)) ? sayWord(w.replace(/[’']/g, '')) : '')  // 로마자 빠알리 → 한글 소리, 읽을 수 없는 말은 건너뜀
     .replace(/[→➔•·~*]/g, ' ').replace(/[“”‘’"']/g, '').replace(/\(\s*\)/g, '').replace(/\s+/g, ' ').trim();
-  const SPEEDS = [0.8, 1, 1.2, 1.4];
+  // 듣기 설정 (목소리·빠르기·높낮이·소리 크기·쪽 사이 쉬기·따라가기) — 이 기기에 기억 (운영자 요청, 2026-11-15)
+  const TDEF = { voice: '', rate: 1, pitch: 1, vol: 1, gap: 0.7, follow: true };
+  const topt = () => { let o = {}; try { o = JSON.parse(ls('sb-tts') || '{}') || {}; } catch (e) {} const sp = +ls('sb-tspeed'); if (o.rate == null && sp) o.rate = sp; return { ...TDEF, ...o }; };
+  const tset = o => ls('sb-tts', JSON.stringify(o));
   const T = { on: false, i: 0, q: [], lock: null };
-  const koVoice = () => { const vs = speechSynthesis.getVoices().filter(v => /^ko/i.test(v.lang)); return vs.find(v => /google|natural|neural|online/i.test(v.name)) || vs[0] || null; };
-  const tspeed = () => { const v = +ls('sb-tspeed'); return SPEEDS.includes(v) ? v : 1; };
+  const koVoices = () => ('speechSynthesis' in window ? speechSynthesis.getVoices() : []).filter(v => /^ko/i.test(v.lang));
+  const koVoice = () => { const vs = koVoices(), want = topt().voice; return vs.find(v => v.voiceURI === want) || vs.find(v => /google|natural|neural|online/i.test(v.name)) || vs[0] || null; };
   const tmsg = m => { const e = tbox?.querySelector('.st-msg'); if (e) { e.textContent = m || ''; e.hidden = !m; } };
   const tbtn = () => { const b = tbox?.querySelector('.st-say'); if (b) { b.textContent = T.on ? '❚❚ 멈춤' : '🔊 듣기'; b.setAttribute('aria-pressed', T.on ? 'true' : 'false'); } };
   const tmark = i => tbox?.querySelectorAll('.st-page').forEach(f => f.classList.toggle('st-now', T.on && +f.dataset.i === i));
@@ -436,16 +439,16 @@ const PALI = (() => {
     if (!T.on || !tbox) return;
     if (i >= pages.length) { sayStop(); tmsg(sv.dataset.next ? '이 이야기를 다 들었습니다. 아래의 ‘다음 이야기’를 누르면 이어서 볼 수 있습니다.' : '이 이야기를 다 들었습니다.'); return; }
     T.i = i; tmark(i); show(i);
-    const f = tbox.querySelector(`.st-page[data-i="${i}"]`); f?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    const f = tbox.querySelector(`.st-page[data-i="${i}"]`); if (topt().follow) f?.scrollIntoView({ block: 'start', behavior: 'smooth' });
     // 긴 글은 문장마다 나눠 읽음 (긴 글 하나로 읽으면 크롬이 중간에 멈추는 일이 있음)
     T.q = (T.data[i] || []).flatMap(t => String(t).split(/\n\s*\n/)).map(sayable).filter(Boolean).flatMap(t => t.match(/[^.!?。]+[.!?。]*\s*/g) || [t]).map(x => x.trim()).filter(Boolean);
     sayNext();
   };
   const sayNext = () => {
     if (!T.on) return;
-    if (!T.q.length) { setTimeout(() => T.on && sayPage(T.i + 1), 700); return; }
+    if (!T.q.length) { setTimeout(() => T.on && sayPage(T.i + 1), topt().gap * 1000); return; }
     const u = new SpeechSynthesisUtterance(T.q.shift());
-    u.lang = 'ko-KR'; u.rate = tspeed(); const v = koVoice(); if (v) u.voice = v;
+    const o = topt(); u.lang = 'ko-KR'; u.rate = o.rate; u.pitch = o.pitch; u.volume = o.vol; const v = koVoice(); if (v) u.voice = v;
     u.onend = () => sayNext();
     u.onerror = e => { if (e.error !== 'interrupted' && e.error !== 'canceled') sayNext(); };
     speechSynthesis.speak(u);
@@ -468,7 +471,7 @@ const PALI = (() => {
     tbox?.remove();
     tbox = document.createElement('section'); tbox.className = 'sv-text'; tbox.style.setProperty('--tsz', tsize() + 'px');
     const imgs = pages.map(p => p.querySelector('img'));
-    tbox.innerHTML = `<div class="st-bar"><button type="button" class="st-pic">🖼 그림으로<span class="lg"> 보기</span></button><span class="st-say-w"><button type="button" class="st-say" aria-pressed="false" title="글을 소리 내어 읽어 줍니다">🔊 듣기</button><button type="button" class="st-spd" title="읽는 빠르기 (누를 때마다 바뀜)">${tspeed()}배속</button></span><span class="st-sz"><button type="button" class="st-m" aria-label="글자 작게">가−</button><button type="button" class="st-p" aria-label="글자 크게">가+</button></span></div><p class="st-msg" hidden></p>` +
+    tbox.innerHTML = `<div class="st-bar"><button type="button" class="st-pic">🖼 그림으로<span class="lg"> 보기</span></button><span class="st-say-w"><button type="button" class="st-say" aria-pressed="false" title="글을 소리 내어 읽어 줍니다">🔊 듣기</button><button type="button" class="st-set" aria-expanded="false" title="목소리·빠르기·높낮이 등">⚙<span class="lg"> 듣기</span> 설정</button></span><span class="st-sz"><button type="button" class="st-m" aria-label="글자 작게">가−</button><button type="button" class="st-p" aria-label="글자 크게">가+</button></span><div class="st-panel" hidden></div></div><p class="st-msg" hidden></p>` +
       pages.map((p, i) => `<figure class="st-page" data-i="${i}"><img src="${h(imgs[i]?.dataset.s || imgs[i]?.src)}" data-big="${h(imgs[i]?.dataset.big || '')}" alt="${i + 1}쪽" loading="lazy"><figcaption><span class="st-n">${i + 1} / ${pages.length}<button type="button" class="st-here" data-i="${i}" title="이 쪽부터 듣기">🔊 여기부터 듣기</button></span>${(data[i] || []).map(t => `<p>${tjoin(t)}</p>`).join('')}</figcaption></figure>`).join('') +
       (sv.dataset.next ? `<p class="st-next"><a class="btn" href="${h(sv.dataset.next)}">다음 이야기 ▶ ${h(sv.dataset.nextTitle || '')}</a></p>` : '');
     sv.after(tbox);
@@ -482,7 +485,32 @@ const PALI = (() => {
       const f = [...tbox.querySelectorAll('.st-page')].find(x => x.querySelector('figcaption').getBoundingClientRect().bottom > top);
       sayStart(f ? +f.dataset.i : 0);
     };
-    tbox.querySelector('.st-spd').onclick = e => { const k = (SPEEDS.indexOf(tspeed()) + 1) % SPEEDS.length; ls('sb-tspeed', String(SPEEDS[k])); e.target.textContent = SPEEDS[k] + '배속'; if (T.on) sayStart(T.i); };
+    const panel = tbox.querySelector('.st-panel'), setBtn = tbox.querySelector('.st-set');
+    setBtn.onclick = () => { const open = panel.hidden; panel.hidden = !open; setBtn.setAttribute('aria-expanded', open); if (open) drawPanel(); };
+    const drawPanel = () => {
+      const o = topt(), vs = koVoices();
+      const rng = (k, label, min, max, step, fmt) => `<label class="sp-row"><span>${label}</span><input type="range" data-k="${k}" min="${min}" max="${max}" step="${step}" value="${o[k]}"><b data-v="${k}">${fmt(o[k])}</b></label>`;
+      const F = { rate: v => (+v).toFixed(1) + '배', pitch: v => +v === 1 ? '보통' : (+v < 1 ? '낮게 ' : '높게 ') + (+v).toFixed(1), vol: v => Math.round(v * 100) + '%', gap: v => (+v).toFixed(1) + '초' };
+      panel.innerHTML = `<label class="sp-row"><span>목소리</span><select data-k="voice">${vs.length ? `<option value="">자동으로 고르기</option>` + vs.map(v => `<option value="${h(v.voiceURI)}"${v.voiceURI === o.voice ? ' selected' : ''}>${h(v.name.replace(/^(Microsoft|Google)\s*/, '$1 '))}${v.localService ? '' : ' (인터넷)'}</option>`).join('') : '<option value="">이 기기에 한국어 음성이 없습니다</option>'}</select></label>` +
+        rng('rate', '빠르기', 0.5, 2, 0.1, F.rate) + rng('pitch', '높낮이', 0.5, 1.5, 0.1, F.pitch) + rng('vol', '소리 크기', 0.1, 1, 0.1, F.vol) + rng('gap', '쪽 사이 쉬기', 0, 3, 0.5, F.gap) +
+        `<label class="sp-row sp-chk"><input type="checkbox" data-k="follow"${o.follow ? ' checked' : ''}><span>읽는 쪽으로 화면 따라가기</span></label>` +
+        `<div class="sp-btns"><button type="button" class="sp-try">▶ 미리 듣기</button><button type="button" class="sp-reset">처음 설정으로</button><button type="button" class="sp-close">닫기</button></div>` +
+        `<p class="sp-note">목소리는 이 기기(휴대폰·컴퓨터)에 들어 있는 한국어 음성 가운데서 고릅니다. 기기마다 고를 수 있는 목소리가 다릅니다. 설정은 이 기기에 기억됩니다.</p>`;
+      panel.querySelectorAll('[data-k]').forEach(el => el.oninput = el.onchange = () => {
+        const o = topt(), k = el.dataset.k; o[k] = el.type === 'checkbox' ? el.checked : el.tagName === 'SELECT' ? el.value : +el.value; tset(o);
+        const b = panel.querySelector(`[data-v="${k}"]`); if (b) b.textContent = F[k](o[k]);
+      });
+      panel.querySelector('.sp-try').onclick = () => {
+        if (!('speechSynthesis' in window)) return tmsg('이 브라우저에서는 듣기를 쓸 수 없습니다.');
+        const was = T.on; if (was) sayStop();
+        speechSynthesis.cancel(); const o = topt(), u = new SpeechSynthesisUtterance('안녕하세요. 붓다담마 그림책을 읽어 드리겠습니다.');
+        u.lang = 'ko-KR'; u.rate = o.rate; u.pitch = o.pitch; u.volume = o.vol; const v = koVoice(); if (v) u.voice = v; speechSynthesis.speak(u);
+      };
+      panel.querySelector('.sp-reset').onclick = () => { tset({ ...TDEF }); drawPanel(); };
+      panel.querySelector('.sp-close').onclick = () => setBtn.onclick();
+    };
+    document.addEventListener('click', e => { if (!panel.hidden && !e.target.closest('.st-panel, .st-set')) setBtn.onclick(); });  // 바깥을 누르면 닫힘
+    if ('speechSynthesis' in window) speechSynthesis.addEventListener?.('voiceschanged', () => { if (!panel.hidden) drawPanel(); });
     tbox.querySelectorAll('.st-here').forEach(b => b.onclick = () => sayStart(+b.dataset.i));
     const setSz = d => { const i = Math.max(0, Math.min(SIZES.length - 1, SIZES.indexOf(tsize()) + d)); ls('sb-tsize', String(SIZES[i])); tbox.style.setProperty('--tsz', SIZES[i] + 'px'); };
     tbox.querySelector('.st-m').onclick = () => setSz(-1); tbox.querySelector('.st-p').onclick = () => setSz(1);
