@@ -1,0 +1,1144 @@
+[
+ {
+  "img": "images/04-Patacara-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     268,
+     340,
+     532,
+     430
+    ],
+    "ko": "빠따짜라 장로니 이야기\n1부: 윤회 속으로\n사랑과 헤아릴 수 없는 상실,\n세속 집착의 덧없음을 담은 옛이야기",
+    "cover": [
+     243,
+     220,
+     177
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     382,
+     58,
+     744,
+     180
+    ],
+    "ko": "함사와띠에서 그녀는 빠두뭇따라 부처님께서 한 비구니를 계율에 으뜸이라고 칭찬하시는 것을 들었습니다.\n특별한 보시를 올리고 그녀는 바로 그 영예를 서원했습니다. 부처님께서는 그 서원이 이루어지리라고 예언하셨습니다.",
+    "cover": [
+     235,
+     200,
+     145
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     366,
+     760,
+     412
+    ],
+    "ko": "천신 세계와 인간 세상을 오가며 태어나던 그녀는 바라나시 끼끼 왕의 딸 빅쿠니로 태어났습니다. 깟사빠 부처님 때 여섯 자매와 함께 이만 년 동안 청정한 재가의 삶을 살며 큰 승원을 보시했습니다.",
+    "cover": [
+     218,
+     182,
+     142
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     50,
+     330,
+     166
+    ],
+    "ko": "고따마 부처님 시대에 그녀는 사왓티의 부유한 집안에 태어났습니다. 자라서 집안의 가난한 하인과 깊은 사랑에 빠져, 부모가 정한 부잣집 아들과의 혼약을 마다했습니다.",
+    "cover": [
+     217,
+     185,
+     144
+    ],
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     364,
+     760,
+     422
+    ],
+    "ko": "그녀는 함께 달아나든지 관계를 끝내든지 하라고 다그쳤습니다. 하인은 그 뜻을 따라 얼마 안 되는 모은 돈을 챙겼습니다. 두 사람은 밤에 몰래 달아나 멀고 외딴 마을로 숨어들었습니다.",
+    "cover": [
+     221,
+     188,
+     145
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     156,
+     328,
+     304
+    ],
+    "ko": "외딴 마을이 두렵던 임신한 그녀는 홀로 사왓티로 길을 나섰습니다.\n\n겁 많은 남편이 뒤쫓아 왔을 때 그녀는 길에서 아이를 낳았습니다. 아이가 무사히 태어나자 두 사람은 돌아갔습니다.",
+    "cover": [
+     199,
+     157,
+     106
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     474,
+     42,
+     758,
+     180
+    ],
+    "ko": "다시 아이를 가지자 같은 일이 되풀이되었습니다. 그녀는 친정으로 떠났고 남편은 뒤따랐습니다.\n\n길에서 폭우를 만났습니다. 그녀가 폭풍 속에서 아이를 낳는 사이, 남편은 다급하게 엉성한 움막을 지었습니다.",
+    "cover": [
+     193,
+     152,
+     106
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     342,
+     46,
+     756,
+     144
+    ],
+    "ko": "비를 막을 풀을 찾던 남편은 흙더미에서 풀을 함부로 뽑다가 쉬고 있던 코브라를 건드렸습니다.\n\n뱀에게 물린 그는 그 자리에서 숨졌습니다.",
+    "cover": [
+     190,
+     149,
+     103
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     60,
+     292,
+     214
+    ],
+    "ko": "폭풍 속에서 밤새 기다린 그녀는 새벽에 남편의 주검을 찾았습니다. “남편이 나 때문에 죽었구나!” 그녀는 울부짖었습니다. 갓난아기를 안고 큰아이 손을 잡고 사왓티로 걸었습니다.",
+    "cover": [
+     110,
+     96,
+     71
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     40,
+     652,
+     128
+    ],
+    "ko": "불어난 거센 물줄기가 길을 막았습니다.\n\n둘을 함께 안고 건널 수 없어 큰아이를 강둑에 두었습니다. 건너편에 가서 갓난아기를 잘 감싸 눕혀 두고 다시 물을 건너왔습니다.",
+    "cover": [
+     94,
+     82,
+     68
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     48,
+     370,
+     222
+    ],
+    "ko": "강 한가운데에서 매가 갓난아기를 덮쳤습니다. 다급히 손을 휘저어 매를 쫓자, 큰아이는 엄마가 부르는 줄 알고 거센 물살에 들어섰다가 휩쓸려 갔습니다.",
+    "cover": [
+     92,
+     84,
+     70
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "ellipse": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     368,
+     40,
+     668,
+     158
+    ],
+    "ko": "어느 강가에도 닿기 전에 두 아이를 모두 잃었습니다.\n‘두 아들이 다 죽었구나!’\n‘남편마저 길에서 죽었는데!’\n그녀는 울며 사왓티로 걸었습니다.",
+    "cover": [
+     97,
+     84,
+     70
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     168,
+     334,
+     632,
+     426
+    ],
+    "ko": "고향 집에 와 보니 집은 거센 폭풍에 무너져 있었습니다.\n마을 사람들이 연기 한 줄기를 가리켰습니다. 부모와 오빠가 깔려 죽어 한 장작더미에서 화장되었다는 것이었습니다.",
+    "cover": [
+     197,
+     178,
+     150
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     82,
+     132,
+     312,
+     318
+    ],
+    "ko": "‘뭐라고요?’ 그녀는 속삭이고는 정신을 잃었습니다. 깨어났을 때 그녀의 마음은 무너져 있었습니다.\n\n말할 수 없는 슬픔에 체면도 잊은 채 옷을 벗어 던지고, 알몸으로 화장터를 향해 헤맸습니다.",
+    "cover": [
+     194,
+     174,
+     145
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     182,
+     344,
+     618,
+     430
+    ],
+    "ko": "넋 나간 알몸의 여인을 보고 놀란 사람들은 그녀를 조롱했습니다. “저리 가, 미친 여자야!” 흙과 돌을 던지며 소리쳤습니다. 그녀는 빠따짜리, 곧 수치를 모르는 여자라고 불렸습니다. 견딜 수 없는 슬픔에 완전히 무너진 것입니다.",
+    "cover": [
+     62,
+     41,
+     16
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     50,
+     376,
+     150
+    ],
+    "ko": "그녀의 근기가 무르익은 것을 보시고, 부처님께서는 넋 나간 여인을 쫓아내려는 사람들을 말리셨습니다.",
+    "cover": [
+     245,
+     234,
+     209
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     470,
+     132,
+     578,
+     204
+    ],
+    "ko": "빠따짜라여,\n마음을 챙겨라.",
+    "cover": [
+     250,
+     246,
+     232
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     52,
+     750,
+     92
+    ],
+    "ko": "그 말씀을 듣자 빠따짜라는 곧바로 제정신을 찾았습니다.",
+    "cover": [
+     249,
+     239,
+     219
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     66,
+     338,
+     360,
+     400
+    ],
+    "ko": "알몸인 것을 알고 웅크려 숨자, 지켜보던 이가 옷을 던져 주었습니다.",
+    "cover": [
+     250,
+     242,
+     223
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     338,
+     750,
+     400
+    ],
+    "ko": "옷을 입고 정신을 차린 그녀는 부처님께 다가갔습니다.",
+    "cover": [
+     251,
+     243,
+     224
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     52,
+     750,
+     92
+    ],
+    "ko": "그녀는 절을 올리고 견딜 수 없는 비극을 털어놓았습니다.",
+    "cover": [
+     250,
+     239,
+     216
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     70,
+     214,
+     360,
+     252
+    ],
+    "ko": "남편이 죽었습니다.",
+    "cover": [
+     250,
+     244,
+     226
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     442,
+     214,
+     748,
+     252
+    ],
+    "ko": "매가 아기를 채 갔습니다.",
+    "cover": [
+     250,
+     244,
+     226
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     62,
+     356,
+     360,
+     396
+    ],
+    "ko": "큰아들은 물에 빠져 죽었습니다.",
+    "cover": [
+     251,
+     241,
+     220
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     442,
+     356,
+     748,
+     396
+    ],
+    "ko": "가족은 집에서 죽었습니다.",
+    "cover": [
+     250,
+     240,
+     216
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     50,
+     624,
+     82
+    ],
+    "ko": "부처님께서 윤회가 얼마나 긴지 설하셨습니다.",
+    "cover": [
+     239,
+     233,
+     217
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     126,
+     372,
+     674,
+     414
+    ],
+    "ko": "시작을 알 수 없는 윤회 동안 사랑하는 이를 잃고 흘린 눈물은 네 큰 바다의 물보다 많다.",
+    "cover": [
+     240,
+     234,
+     217
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     82,
+     336,
+     127
+    ],
+    "ko": "부처님께서 가르치셨습니다.\n아들도 부모도 죽음을 막아 주지 못한다.",
+    "cover": [
+     245,
+     238,
+     221
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     491,
+     291,
+     715,
+     369
+    ],
+    "ko": "지켜 줄 이 없음을 알고, 지혜로운 이는 계로 단속하며 열반으로 가는 성스러운 길을 서둘러 닦습니다.",
+    "cover": [
+     246,
+     238,
+     220
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     74,
+     222,
+     192
+    ],
+    "ko": "깊은 가르침을 듣자 그녀의 슬픔이 가라앉았습니다.",
+    "cover": [
+     250,
+     240,
+     213
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     578,
+     204,
+     730,
+     370
+    ],
+    "ko": "빠따짜라는 한량없는\n번뇌를 태워 없애고\n예류도(sotāpatti-\nmagga)에\n굳게 섰습니다.",
+    "cover": [
+     249,
+     240,
+     216
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     519,
+     72,
+     733,
+     148
+    ],
+    "ko": "예류자가 된 그녀는 출가를 청했습니다.",
+    "cover": [
+     249,
+     240,
+     212
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     578,
+     186,
+     730,
+     356
+    ],
+    "ko": "부처님께서는 그녀를 비구니 처소로 보내셨고, 그곳에서 그녀는 정식으로 비구니 승가에 들었습니다.",
+    "cover": [
+     250,
+     241,
+     212
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     519,
+     67,
+     733,
+     144
+    ],
+    "ko": "발을 씻으며 보니, 첫 번째로 부은 물은 조금 흐르다 멈추었습니다.",
+    "cover": [
+     250,
+     240,
+     214
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     578,
+     204,
+     730,
+     342
+    ],
+    "ko": "그녀는 깨달았습니다. 이 물줄기처럼 중생은 젊어서 죽기도 한다.",
+    "cover": [
+     251,
+     241,
+     214
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     310,
+     300,
+     460,
+     340
+    ],
+    "ko": "젊음",
+    "cover": [
+     250,
+     243,
+     214
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     519,
+     72,
+     733,
+     150
+    ],
+    "ko": "두 번째 물은 조금 더 흘러가서 멈추었습니다.",
+    "cover": [
+     251,
+     239,
+     209
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     578,
+     210,
+     730,
+     346
+    ],
+    "ko": "그녀는 알았습니다. 조금 더 뻗은 이 물줄기처럼 중생은 중년에 죽기도 한다.",
+    "cover": [
+     251,
+     240,
+     211
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     360,
+     302,
+     560,
+     344
+    ],
+    "ko": "중년",
+    "cover": [
+     250,
+     241,
+     215
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     318,
+     64,
+     740,
+     102
+    ],
+    "ko": "세 번째 물은 가장 멀리 흐르다 사라졌습니다.",
+    "cover": [
+     249,
+     242,
+     225
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     318,
+     122,
+     740,
+     182
+    ],
+    "ko": "그녀는 숙고했습니다. 모든 물줄기가 끝나듯, 모든 생명도 결국 수명을 다하게 된다.",
+    "cover": [
+     249,
+     244,
+     227
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     640,
+     282,
+     760,
+     322
+    ],
+    "ko": "노년",
+    "cover": [
+     250,
+     243,
+     225
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     22,
+     634,
+     66
+    ],
+    "ko": "사라지는 물을 보며 깊은 통찰이 일었습니다.",
+    "cover": [
+     245,
+     238,
+     218
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     212,
+     222,
+     338,
+     262
+    ],
+    "ko": "무상\n(anicca)",
+    "cover": [
+     250,
+     244,
+     227
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     478,
+     220,
+     596,
+     262
+    ],
+    "ko": "괴로움\n(dukkha)",
+    "cover": [
+     251,
+     245,
+     228
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     348,
+     312,
+     442,
+     350
+    ],
+    "ko": "무아\n(anattā)",
+    "cover": [
+     251,
+     245,
+     229
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     92,
+     368,
+     708,
+     430
+    ],
+    "ko": "그녀는 모든 형성된 것의 세 가지 특성, 곧 무상(anicca), 괴로움(dukkha), 무아(anattā)를 분명히 보았습니다.",
+    "cover": [
+     247,
+     241,
+     223
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-27-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     52,
+     336,
+     102
+    ],
+    "ko": "처소에서 깊이 숙고하며 그녀는 등불을 켜 두었습니다.",
+    "cover": [
+     248,
+     241,
+     223
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     490,
+     328,
+     750,
+     398
+    ],
+    "ko": "불을 끄려고 그녀는 뾰족한 바늘로 심지를 기름 속으로 끌어내렸습니다.",
+    "cover": [
+     247,
+     240,
+     220
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-28-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     234,
+     62,
+     564,
+     94
+    ],
+    "ko": "부처님께서 광명을 보내시며 말씀하셨습니다.",
+    "cover": [
+     248,
+     241,
+     221
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     218,
+     296,
+     580,
+     390
+    ],
+    "ko": "“일어나고 사라짐을 보지 못하고 백 년을 사는 것보다, 일어나고 사라짐을 보며 하루를 사는 것이 더 낫다.”",
+    "cover": [
+     246,
+     237,
+     210
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-29-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     54,
+     652,
+     96
+    ],
+    "ko": "등불이 꺼지듯, 그녀의 번뇌도 사라졌습니다.",
+    "cover": [
+     247,
+     238,
+     215
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     212,
+     354,
+     600,
+     411
+    ],
+    "ko": "설법이 끝나자 빠따짜라는 네 가지 무애해를 온전히 갖춘 아라한이 되었습니다.",
+    "cover": [
+     244,
+     235,
+     212
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Patacara-30-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     268,
+     56,
+     530,
+     114
+    ],
+    "ko": "계율에 통달한 그녀는 지혜롭게 판단했습니다.",
+    "cover": [
+     242,
+     233,
+     216
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     42,
+     366,
+     758,
+     444
+    ],
+    "ko": "부처님께서는 그녀를 율(vinaya)을 아는 데 모든 비구니 제자 가운데 으뜸(etadagga)이라고 선언하셨습니다.",
+    "cover": [
+     247,
+     240,
+     223
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
