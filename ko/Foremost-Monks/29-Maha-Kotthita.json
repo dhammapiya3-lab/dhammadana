@@ -1,0 +1,314 @@
+[
+ {
+  "img": "images/29-Maha-Kotthita-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     492,
+     34,
+     744,
+     150
+    ],
+    "ko": "대연대기: 마하 꼿티따 장로\n분석하는 지혜에서 으뜸\n서원과 여러 생의 공덕,\n궁극의 깨달음에 이르는 여정",
+    "cover": [
+     235,
+     205,
+     156
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     104,
+     306,
+     354
+    ],
+    "ko": "목표:\n네 가지 분석하는 지혜\n(paṭisambhidā-ñāṇa)\n꼿티따 장로는\n이 깊은 지혜에 통달했습니다.\n1. 뜻에 대한 분석\n2. 법에 대한 분석\n3. 언어에 대한 분석\n4. 지혜에 대한 분석\n이것은 그가 이를 이룬\n이야기입니다.",
+    "cover": [
+     245,
+     228,
+     194
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     98,
+     46,
+     704,
+     124
+    ],
+    "ko": "항사와띠에서의 서원\n아득한 옛날 빠두뭇따라 부처님 때, 미래의 꼿티따는 큰 부잣집에 태어났습니다.\n부처님의 설법을 듣다가, 분석하는 지혜에서 으뜸이라 칭찬받는 비구를 보았습니다.",
+    "cover": [
+     242,
+     221,
+     179
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     344,
+     46,
+     732,
+     146
+    ],
+    "ko": "큰 공양\n깊이 감동한 젊은이는 바로 그 칭호를 간절히 바랐습니다.\n부처님과 승가에 성대한 공양을 올리고,\n앞날의 서원을 여러 사람 앞에서 밝혔습니다.",
+    "cover": [
+     239,
+     217,
+     173
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     82,
+     340,
+     718,
+     424
+    ],
+    "ko": "예언\n승원으로 떠나시기 전, 빠두뭇따라 부처님께서 젊은이를 보시고\n힘 있게 예언하셨습니다. 그의 거룩한 서원은 아득한 미래에\n빈틈없이 이루어지리라는 것이었습니다.",
+    "cover": [
+     237,
+     209,
+     161
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     286,
+     176,
+     514,
+     282
+    ],
+    "ko": "여러 생의 공덕\n서원한 뒤 그는 선한 행위로 삶을 채웠습니다.\n천신 세계와 좋은 인간 세상을 오가며\n영적인 바탕을 무르익혔습니다.",
+    "cover": [
+     231,
+     207,
+     163
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     420,
+     72,
+     712,
+     206
+    ],
+    "ko": "사왓티에 다시 태어나다\n고따마 부처님 시대에 그는 사왓티의\n이름난 바라문 집안에 꼿티따로\n다시 태어났습니다. 자라서는\n세 베다를 뛰어나게 익혔습니다.",
+    "cover": [
+     231,
+     206,
+     157
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     284,
+     296,
+     402
+    ],
+    "ko": "바른 법을 듣다\n부처님의 법문을 들은 꼿티따는\n깊은 믿음이 북받쳤습니다.\n이름난 바라문의 삶과 세속 학문을\n뒤로하고 정식으로 승가에 들었습니다.",
+    "cover": [
+     233,
+     196,
+     143
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     228,
+     326,
+     574,
+     428
+    ],
+    "ko": "깨달음\n깊은 통찰을 닦던 꼿티따 장로는\n무명을 꿰뚫고 아라한이 되었습니다. 그 즉시 아득한\n옛날 바랐던 네 가지 분석하는 지혜\n(paṭisambhidā-ñāṇa)를 갖추었습니다.",
+    "cover": [
+     229,
+     198,
+     148
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     246,
+     50,
+     556,
+     158
+    ],
+    "ko": "깊은 대화\n뛰어난 스승인 꼿티따 장로는 법에 관해\n깊고 어려운 질문을 자주 던졌습니다.\n그 날카로운 물음이 이름난 ‘교리문답의 긴 경’\n(Mahā-vedalla-sutta, MN 43)의 바탕이 되었습니다.",
+    "cover": [
+     225,
+     194,
+     146
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     232,
+     330,
+     572,
+     424
+    ],
+    "ko": "으뜸의 칭호\n견줄 데 없는 통달을 알아보신 부처님께서\n선언하셨습니다. “비구들이여, 네 가지 분석하는\n지혜를 얻은 나의 비구 제자 가운데 마하\n꼿티따가 으뜸(etad-agga)이다.”",
+    "cover": [
+     227,
+     196,
+     150
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Maha-Kotthita-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     208,
+     46,
+     594,
+     96
+    ],
+    "ko": "한 바퀴를 다 돌다",
+    "cover": [
+     225,
+     195,
+     142
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     204,
+     114,
+     370,
+     196
+    ],
+    "ko": "씨앗:\n시대: 빠두뭇따라 부처님\n신분: 부유한 귀족\n행위: 큰 서원",
+    "cover": [
+     226,
+     196,
+     144
+    ],
+    "align": "left",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     432,
+     114,
+     600,
+     196
+    ],
+    "ko": "열매:\n시대: 고따마 부처님\n신분: 아라한 비구\n결과: 분석하는 지혜의 으뜸",
+    "cover": [
+     228,
+     197,
+     146
+    ],
+    "align": "left",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
