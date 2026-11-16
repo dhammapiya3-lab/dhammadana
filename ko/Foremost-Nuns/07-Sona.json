@@ -1,0 +1,689 @@
+[
+ {
+  "img": "images/07-Sona-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     450,
+     56,
+     750,
+     92
+    ],
+    "ko": "소나 장로니의 여정",
+    "cover": [
+     218,
+     194,
+     157
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     450,
+     92,
+     750,
+     156
+    ],
+    "ko": "세속의 짐에서\n정진의 으뜸까지",
+    "cover": [
+     219,
+     194,
+     157
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Sona-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     116,
+     358,
+     684,
+     384
+    ],
+    "ko": "함사와띠의 옛 서원",
+    "cover": [
+     243,
+     229,
+     194
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     116,
+     384,
+     684,
+     440
+    ],
+    "ko": "빠두뭇따라 부처님 시대에 한 부유한 여인이 진지한 정진으로 으뜸인 비구니를 보았습니다. 감동한 그녀는 특별한 공양을 올리고 바로 그 칭호를 얻기를 서원했습니다.",
+    "cover": [
+     243,
+     229,
+     195
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Sona-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     142,
+     338,
+     658,
+     368
+    ],
+    "ko": "바후뿟띠까: 자식 많은 어머니",
+    "cover": [
+     231,
+     208,
+     177
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     142,
+     368,
+     658,
+     440
+    ],
+    "ko": "사왓티에서 그녀는 열 자녀를 두었습니다. 남편이 출가하자 그녀는 자녀들을 모두 혼인시키고, 자기 몫은 하나도 남기지 않은 채 모든 재산을 물려주었습니다.",
+    "cover": [
+     231,
+     209,
+     178
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Sona-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     142,
+     338,
+     658,
+     368
+    ],
+    "ko": "집착의 배신",
+    "cover": [
+     228,
+     205,
+     173
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     142,
+     368,
+     658,
+     440
+    ],
+    "ko": "세속의 의지처는 곧 무너졌습니다. 은혜를 모르는 열 자녀 가운데 누구도 그녀를 사흘 넘게 머물게 하지 않았습니다. 부유하던 어머니는 아무도 원치 않는 의지할 데 없는 짐이 되었습니다.",
+    "cover": [
+     228,
+     205,
+     174
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Sona-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     142,
+     338,
+     660,
+     372
+    ],
+    "ko": "승가에 의지하다",
+    "cover": [
+     227,
+     201,
+     166
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     142,
+     372,
+     660,
+     438
+    ],
+    "ko": "세상에서 자신의 처지가 얼마나 비참하고 의지할 데 없는지 깨달은 그녀는 재가의 삶을 버리고 비구니가 되었습니다.",
+    "cover": [
+     226,
+     201,
+     167
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Sona-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     302,
+     664,
+     336
+    ],
+    "ko": "조롱의 짐",
+    "cover": [
+     212,
+     156,
+     65
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     140,
+     336,
+     664,
+     412
+    ],
+    "ko": "평화는 쉽게 오지 않았습니다. 선배 비구니들은 그녀를 꾸짖고 벌로 궂은일을 시켰습니다. 그녀가 비질하는 것을 본 자식들은 비웃었습니다. “이 늙은이는 아직도 출가자의 규율을 못 배웠구나!”",
+    "cover": [
+     211,
+     157,
+     70
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Sona-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     462,
+     176,
+     616,
+     202
+    ],
+    "ko": "경각심",
+    "cover": [
+     253,
+     251,
+     237
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     280,
+     242,
+     366,
+     268
+    ],
+    "ko": "조롱",
+    "cover": [
+     253,
+     251,
+     236
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     184,
+     346,
+     290,
+     394
+    ],
+    "ko": "늙음을\n깨달음",
+    "cover": [
+     253,
+     251,
+     237
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     408,
+     258,
+     764,
+     290
+    ],
+    "ko": "경각심(saṃvega)의 계기",
+    "cover": [
+     204,
+     144,
+     50
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     408,
+     290,
+     764,
+     410
+    ],
+    "ko": "조롱은 깊은 경각심(saṃvega)을 일으켰습니다. 남은 시간이 많지 않음을 안 그녀는 쉼 없는 수행으로 불행한 곳에 태어나지 않도록 자신을 지키기로 결심했습니다.",
+    "cover": [
+     205,
+     146,
+     53
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Sona-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     308,
+     566,
+     340
+    ],
+    "ko": "방법: 몸의 서른두 부분",
+    "cover": [
+     203,
+     153,
+     75
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     240,
+     340,
+     566,
+     404
+    ],
+    "ko": "앉거나 걷거나 서거나 눕거나, 그녀는 몸의 서른두 부분을 속으로 외우며 관찰하지 않고 보내는 시간이 없었습니다.",
+    "cover": [
+     204,
+     154,
+     75
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Sona-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     178,
+     334,
+     622,
+     362
+    ],
+    "ko": "마지막 의지처",
+    "cover": [
+     28,
+     45,
+     88
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     178,
+     362,
+     622,
+     428
+    ],
+    "ko": "나이가 많음을 알기에 그녀는 틈만 나면 밤새도록 수행했습니다. 어둠 속에서 몸이 기울지 않도록 나무 기둥을 꼭 붙잡았습니다.",
+    "cover": [
+     42,
+     53,
+     91
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Sona-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     178,
+     332,
+     622,
+     360
+    ],
+    "ko": "아랏다위리야: 정진의 으뜸",
+    "cover": [
+     29,
+     43,
+     75
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     178,
+     360,
+     622,
+     424
+    ],
+    "ko": "어둠 속에서 경행할 때 그녀는 나무를 짚으며 걸었습니다. 이 철저한 헌신으로 승가는 그녀를 아랏다위리야 소나(굳게 정진하는 이)라는 새 이름으로 불렀습니다.",
+    "cover": [
+     42,
+     50,
+     76
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Sona-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     308,
+     262,
+     760,
+     298
+    ],
+    "ko": "깨달음의 광명",
+    "cover": [
+     28,
+     63,
+     101
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     308,
+     298,
+     760,
+     410
+    ],
+    "ko": "부처님께서 광명을 보내시며 말씀하셨습니다. “가장 높은 법을 보지 못하고 백 년을 사는 것보다, 가장 높은 법을 보며 하루를 사는 것이 더 낫다.” 이 말씀을 듣고 그녀는 아라한이 되었습니다.",
+    "cover": [
+     28,
+     63,
+     100
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Sona-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     178,
+     322,
+     622,
+     352
+    ],
+    "ko": "불 없는 화덕",
+    "cover": [
+     37,
+     61,
+     89
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     178,
+     352,
+     622,
+     430
+    ],
+    "ko": "물을 끓이라는 말을 듣고 소나 장로니는 솥을 걸었지만 불을 지피지 않았습니다. 후배 비구니들이 가 보니 물이 신기하게도 뜨거웠습니다. 그녀의 깊은 성취를 보여 주는 일이었습니다.",
+    "cover": [
+     47,
+     67,
+     92
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Sona-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     58,
+     548,
+     92
+    ],
+    "ko": "조롱이 공경으로",
+    "cover": [
+     201,
+     185,
+     157
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     62,
+     92,
+     548,
+     158
+    ],
+    "ko": "그녀가 아라한임을 알자 승가는 몸을 낮추었습니다. 후배 비구니들은 땅에 엎드려 절하고, 선배 비구니들은 쪼그려 앉아 공경하며 지난날의 무례를 용서해 달라고 빌었습니다.",
+    "cover": [
+     201,
+     186,
+     162
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Sona-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     188,
+     34,
+     586,
+     70
+    ],
+    "ko": "옛 서원이 이루어지다",
+    "cover": [
+     214,
+     191,
+     141
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     188,
+     70,
+     586,
+     142
+    ],
+    "ko": "부처님께서 대중에게 선언하셨습니다. “비구들이여, 부지런하고 굳게 정진하는 나의 비구니 제자들 가운데 소나가 으뜸(etadagga)이다.”",
+    "cover": [
+     215,
+     192,
+     143
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Sona-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     10,
+     610,
+     46
+    ],
+    "ko": "소나 장로니의 두 이름",
+    "cover": [
+     238,
+     217,
+     176
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     36,
+     346,
+     394,
+     432
+    ],
+    "ko": "바후뿟띠까(자식 많은 어머니)\n세속의 재물과 은혜 모르는 자식에\n의지했고, 슬픔으로 끝났습니다.",
+    "cover": [
+     190,
+     149,
+     81
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     418,
+     346,
+     770,
+     432
+    ],
+    "ko": "아랏다위리야(굳은 정진)\n가장 높은 법과 마음챙김 정진에\n의지했고, 깨달음으로 끝났습니다.",
+    "cover": [
+     241,
+     139,
+     52
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
