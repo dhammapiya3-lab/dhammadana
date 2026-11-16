@@ -1,0 +1,649 @@
+[
+ {
+  "img": "images/09-Bhadda-Kundalakesa-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     278,
+     30,
+     524,
+     132
+    ],
+    "ko": "밧다 꾼달라께사\n장로니의 생애",
+    "cover": [
+     241,
+     228,
+     176
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     54,
+     430,
+     162
+    ],
+    "ko": "함사와띠에서 빠두뭇따라 부처님 앞에서, 그녀는 수바 비구니가 가장 빠른 통찰로 칭찬받는 것을 보았습니다. 큰 공양을 올리며 바로 그 영예를 서원했고, 부처님께서는 그 서원이 이루어지리라고 예언하셨습니다.",
+    "cover": [
+     244,
+     225,
+     176
+    ],
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     320,
+     742,
+     402
+    ],
+    "ko": "깟사빠 부처님 시대에 바라나시에서 빅카다이까 공주로 태어났습니다. 그녀와 자매들은 이만 년 동안 청정하게 살며 승가를 위해 큰 승원을 받들고 한량없는 공덕을 쌓았습니다.",
+    "cover": [
+     243,
+     222,
+     171
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     320,
+     734,
+     396
+    ],
+    "ko": "라자가하에서 밧다로 태어났습니다. 같은 날 왕의 고문관 집에 삿뚜까가 태어났습니다. 별자리가 폭력을 가리켰고, 도성 곳곳에서 무기들이 신비롭게 번쩍였습니다. 도둑이 될 삿뚜까의 어두운 운명이 정해졌습니다.",
+    "cover": [
+     240,
+     219,
+     169
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     462,
+     52,
+     748,
+     190
+    ],
+    "ko": "삿뚜까는 두 살 때부터 도둑질을 했습니다. 아버지는 검은 천과 밧줄 사다리를 주며 그를 내쫓았고, 그는 라자가하에서 가장 무서운 밤도둑이 되어 부잣집 벽마다 큰 구멍을 냈습니다.",
+    "cover": [
+     237,
+     216,
+     167
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     66,
+     340,
+     178
+    ],
+    "ko": "숨어 지키던 경비병들에게 붙잡히자, 왕은 삿뚜까에게 사형을 내렸습니다. 묶인 채 네거리마다 채찍 천 대를 맞으며, 도둑은 처형을 위해 남문으로 끌려갔습니다.",
+    "cover": [
+     245,
+     227,
+     156
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     426,
+     238,
+     752,
+     380
+    ],
+    "ko": "창문으로 내다보던 밧다는 피 흘리는 도둑을 보았습니다. 지난 생에 맺은 정에 이끌려 깊은 사랑에 빠진 그녀는, 그 사람 없이 사느니 죽겠다고 부모에게 말했습니다.",
+    "cover": [
+     249,
+     236,
+     191
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     56,
+     590,
+     144
+    ],
+    "ko": "애가 탄 아버지는 도성 관리에게 금화 천 닢을 주었습니다. 해 질 녘 다른 죄수가 몰래 대신 처형되었습니다. 삿뚜까는 향수로 목욕하고 곱게 꾸며져 몰래 밧다에게 보내졌습니다.",
+    "cover": [
+     240,
+     219,
+     159
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     322,
+     728,
+     404
+    ],
+    "ko": "밧다의 화려한 장신구를 탐낸 삿뚜까는 사악한 꾀를 냈습니다. 자기가 산 것은 짜라빠빠따 산의 수호신 덕분이라고 거짓말하며, 둘이 함께 산에 올라 제물을 바쳐야 한다고 우겼습니다.",
+    "cover": [
+     247,
+     227,
+     182
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     56,
+     380,
+     178
+    ],
+    "ko": "순진한 밧다는 성대한 제물을 준비했습니다. 산 아래에서 삿뚜까는 꾀를 부려 시종들을 돌려보냈습니다. 제물을 머리에 인 밧다는 남편의 살의를 모른 채 그와 단둘이 가파른 길을 올랐습니다.",
+    "cover": [
+     239,
+     219,
+     167
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     318,
+     646,
+     400
+    ],
+    "ko": "산꼭대기에 이르자 삿뚜까의 말투가 사납게 바뀌었습니다. “장신구를 벗어서 싸라. 너를 털려고 데려왔지, 제사 지내려고 온 게 아니다.” 밧다는 큰 위험에 처했음을 문득 깨달았습니다.",
+    "cover": [
+     243,
+     222,
+     177
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     32,
+     728,
+     138
+    ],
+    "ko": "깨달은 것을 숨기고 밧다는 꾀를 썼습니다. 마지막으로 한 번 안아 보게 해 달라고 했습니다. “사랑을 보여 드리게 앞에서, 옆에서, 뒤에서 안아 보게 해 주세요.” 그녀는 애원했습니다.",
+    "cover": [
+     241,
+     227,
+     182
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     48,
+     414,
+     190
+    ],
+    "ko": "그녀는 앞에서 안은 뒤 그의 등 뒤로 돌아갔습니다. 다시 안는 척하며 그를 벼랑 아래로 힘껏 밀었습니다. 그는 깊은 골짜기로 거꾸로 떨어져 몸이 찢겨 죽었습니다.",
+    "cover": [
+     239,
+     225,
+     180
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     330,
+     730,
+     424
+    ],
+    "ko": "그녀의 용기를 본 산의 수호신은 그 날카로운 지혜를 칭찬했습니다. “지혜로운 이가 언제나 남자인 것은 아니다. 분별 있고 재치 있어 빨리 길을 찾는 여인도 얼마든지 지혜로울 수 있다.”",
+    "cover": [
+     237,
+     224,
+     178
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     152,
+     64,
+     648,
+     132
+    ],
+    "ko": "세속의 삶에 환멸을 느낀 밧다는 산을 떠났습니다. 여기저기 떠돌다 여자 유행자들을 만나, 가장 높이 치는 방식으로 입문을 청하고 궁극의 해탈로 가는 길에 들어섰습니다.",
+    "cover": [
+     243,
+     228,
+     175
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     316,
+     390,
+     378
+    ],
+    "ko": "유행자 스승들은 야자 껍질로 밧다의 머리카락을 뽑았습니다. 고통스럽지만 ‘가장 높은’ 입문 의식이었습니다.",
+    "cover": [
+     229,
+     165,
+     111
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     426,
+     316,
+     716,
+     378
+    ],
+    "ko": "머리카락이 꼬불꼬불 고리 모양으로 다시 자라자, 그녀는 꾼달라께사(귀고리 같은 곱슬머리를 지닌 이)라는 새 이름을 얻었습니다.",
+    "cover": [
+     227,
+     163,
+     108
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     56,
+     340,
+     206
+    ],
+    "ko": "스승들의 지식을 다 배운 꾼달라께사는 당할 자 없는 논객으로 떠돌았습니다.\n\n마을마다 모래 더미를 쌓고 잠부 나뭇가지를 꽂았습니다. 감히 도전할 사람은 그것을 짓밟으라는 표시였습니다.",
+    "cover": [
+     232,
+     194,
+     133
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     400,
+     60,
+     746,
+     178
+    ],
+    "ko": "사왓티에 이른 꾼달라께사는 도전의 표시를 세웠습니다.\n\n법의 장군인 사리뿟따 장로는 승원과 병자를 돌보는 소임을 마치다가 그 표시를 보았습니다.",
+    "cover": [
+     231,
+     193,
+     132
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     46,
+     282,
+     82
+    ],
+    "ko": "원인",
+    "cover": [
+     229,
+     190,
+     126
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     540,
+     46,
+     650,
+     82
+    ],
+    "ko": "결과",
+    "cover": [
+     229,
+     191,
+     126
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     216,
+     312,
+     594,
+     398
+    ],
+    "ko": "나뭇가지의 뜻을 안 사리뿟따 장로는 동네 아이들에게 그것을 짓밟게 했습니다. 도전의 표시가 망가진 것을 본 꾼달라께사는 많은 사람을 불러 모아, 이 만만찮은 상대를 공개적으로 이기려 했습니다.",
+    "cover": [
+     224,
+     185,
+     137
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     168,
+     344,
+     640,
+     430
+    ],
+    "ko": "나무 아래 앉아 큰 논쟁이 시작되었습니다. 꾼달라께사는 넓은 교리 지식을 쏟아 내며 사리뿟따 장로를 몰아붙였습니다. 장로는 침착하게 그녀의 모든 질문에 막힘없이 답했습니다.",
+    "cover": [
+     223,
+     183,
+     128
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     246,
+     140,
+     552,
+     296
+    ],
+    "ko": "판이 뒤집혔습니다.\n\n사리뿟따 장로가 한 가지를 물었습니다. “완전히 알아야 할 하나는 무엇인가?”\n(ekaṃ nāma kiṃ)\n\n뛰어난 꾼달라께사도 놀라 답하지 못했습니다.",
+    "cover": [
+     236,
+     208,
+     159
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     372,
+     36,
+     420,
+     160
+    ],
+    "ko": " ",
+    "cover": [
+     211,
+     169,
+     112
+    ],
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     38,
+     36,
+     372,
+     214
+    ],
+    "ko": "그의 깊은 지혜를 알아본 그녀는 그에게 귀의하기를 청했습니다.\n사리뿟따 장로는 겸손하게 자신이 아닌 제따와나 승원을 가리켰습니다. “가서 부처님께 귀의하시오.”",
+    "cover": [
+     211,
+     169,
+     115
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     64,
+     62,
+     366,
+     228
+    ],
+    "ko": "꾼달라께사가 부처님께 나아가자, 그녀의 마음이 깨달음에 무르익었음을 아신 부처님께서 게송 하나를 읊으셨습니다.\n“쓸모없는 말로 된 게송을 백 개 읊는 것보다, 듣고서 고요해지는 법의 구절 하나가 더 낫다.”",
+    "cover": [
+     220,
+     187,
+     148
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     316,
+     734,
+     400
+    ],
+    "ko": "이 말씀을 듣고 꾼달라께사는 곧바로 네 가지 무애해를 갖춘 아라한이 되었습니다. 그녀는 출가를 청하여 기쁘게 승가에 들어 구족계를 받은 비구니가 되었습니다.",
+    "cover": [
+     245,
+     226,
+     190
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Bhadda-Kundalakesa-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     30,
+     642,
+     106
+    ],
+    "ko": "대중에 둘러싸여 부처님께서는 밧다 꾼달라께사를, 빨리 도의 지혜를 얻는(khippābhiññā) 비구니 제자들 가운데 으뜸(etadagga)이라고 선언하셨습니다.",
+    "cover": [
+     232,
+     194,
+     138
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
