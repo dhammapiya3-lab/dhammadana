@@ -982,6 +982,7 @@ function renderReader() {
   // 다음 쪽 그림 미리 받기
   const nx = R.pages[R.i + 1]; if (nx && nx.img && R.view === 'page') { const im = new Image(); im.src = nx.img; }
   if (AB.on) { el.classList.add('ab-on'); abMark(!AB.detached && Date.now() - AB.userAt > 8000); }
+  latLater();  // 화면 낭독기: DPD 낱말 목록을 뒤에서 받아 로마자 빠알리어를 한 번 더 가름 (2026-11-17)
   store.set('pos-' + R.id, n);
   saveHistory(n);
   history.replaceState(history.state, '', `/read/${R.id}/${n}` + location.search);
@@ -1581,6 +1582,19 @@ function latMark(h) {
       return /[가-힣]/.test(say) ? hide(comp, say) : comp;
     });
   }));
+}
+// 화면 낭독기용 로마자 빠알리어 가르기는 DPD 낱말 목록(/data/pali-words.txt — Digital Pāḷi Dictionary 표제어·낱말 꼴, 경전 법보시 앱과 같은 사전)을 씀.
+// 목록은 '듣기'를 누를 때만 받았으므로, 읽기 화면을 열면 본문에 로마자가 있을 때 뒤에서 받아 이미 그린 글에도 다시 적용 (운영자 요청, 2026-11-17 — 'moha' 처럼 기호 없는 낱말)
+function latLater() {
+  if (LEX.pali) return;
+  const body = $('#rBody'); if (!body || !/[A-Za-z]{2}/.test(body.textContent)) return;
+  const run = () => loadLex().then(() => {
+    const b = $('#rBody'); if (!b || (R && R.speaking) || AB.on) return;  // 듣는 중에는 글을 건드리지 않음(다음에 그릴 때 적용)
+    const w = document.createTreeWalker(b, NodeFilter.SHOW_TEXT, { acceptNode: n => /[A-Za-z]{2}/.test(n.nodeValue) && !n.parentElement.closest('[aria-hidden="true"],.ph-say,script,style,input,textarea') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT });
+    const ns = []; while (w.nextNode()) ns.push(w.currentNode);
+    ns.forEach(n => { const h = latMark(esc(n.nodeValue)); if (h === esc(n.nodeValue)) return; const t = document.createElement('template'); t.innerHTML = h; n.replaceWith(t.content); });
+  });
+  ('requestIdleCallback' in window) ? requestIdleCallback(run, { timeout: 4000 }) : setTimeout(run, 1500);
 }
 const PH_MARKS = /[\u0300-\u036f\u1dc0-\u1dff\u20d0-\u20ff\ufe00-\ufe0f\ufe20-\ufe2f\u302c\u302d\u02b9-\u02ff\u2033\ue000-\uf8ff\u22a4\u22a5]/g;
 const phSay = w => w.replace(PH_MARKS, '').normalize('NFC').trim() || '발음 부호';
