@@ -2050,7 +2050,7 @@ document.addEventListener('visibilitychange', () => { if (!ACC.token) return; if
 function initAccount() {
   const root = $('#acctRoot'); if (!root) return;
   const q = new URLSearchParams(location.search), rt = q.get('reset');
-  const msg = (t, err) => `<div class="acct-msg${err ? ' err' : ''}">${esc(t)}</div>`;
+  const msg = (t, err) => `<div class="acct-msg${err ? ' err' : ''}" role="${err ? 'alert' : 'status'}">${esc(t)}</div>`;  // 화면 낭독기가 안내 글을 바로 읽음 (2026-11-17)
   const codeBox = c => `<div class="acct-code"><b>${esc(c)}</b><button class="tbtn sm" data-copy="${esc(c)}">복사</button></div>
     <div class="acct-warn">⚠ 이 <b>복구 코드</b>는 비밀번호를 잊었을 때 쓰는 열쇠입니다. <b>만들어지는 지금 한 번만 표시</b>되고, 이 화면을 벗어나면 다시 볼 수 없습니다. 운영자도 볼 수 없어 알려 드릴 수 없으니, <b>사진을 찍거나 적어서 잘 보관</b>하세요.</div>`;
   const bindCopy = () => $$('[data-copy]', root).forEach(b => b.onclick = () => copy(b.dataset.copy, '복사했습니다'));

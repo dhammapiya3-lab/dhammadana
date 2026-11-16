@@ -720,7 +720,7 @@ for (const t of TEACHERS) {
 
 // 검색
 put('search/index.html', layout({
-  title: '검색', page: 'search', body: `<div class="wrap"><form class="search-top" id="sForm" role="search" action="/search/">
+  title: '검색', page: 'search', body: `<div class="wrap"><h1 class="sr">검색</h1><form class="search-top" id="sForm" role="search" action="/search/">
   <label for="sq" class="sr">검색어</label><input id="sq" name="q" placeholder="제목, 스승, 옮긴이, 주제어, 본문" autocomplete="off">
   <label for="scope" class="sr">검색 범위</label><select id="scope" name="scope"><option value="all">전체</option><option value="title">제목</option><option value="author">스승·저자</option><option value="tr">옮긴이·편자</option><option value="topic">주제어</option><option value="body">본문</option></select>
   <button class="btn" type="submit">찾기</button></form>
