@@ -49,7 +49,7 @@ python3 pipeline/texts.py /tmp/site || echo '글로 보기 글 모으기 실패'
 if ! cmp -s /tmp/texts_before.json /tmp/site/storybooks/data/texts.json || ! cmp -s data/rendered.json /tmp/site/storybooks/data/ready.json || ! cmp -s /tmp/stamp.json /tmp/site/storybooks/data/stamp.json || ! cmp -s /tmp/dl_before.json /tmp/site/storybooks/data/dl.json; then
   cp data/rendered.json /tmp/site/storybooks/data/ready.json
   cp /tmp/stamp.json /tmp/site/storybooks/data/stamp.json
-  cd /tmp/site && git add storybooks/data && git -c user.name=storybooks-bot -c user.email=actions@users.noreply.github.com commit -qm "그림책: 한글판 이야기 목록·그림 판·내려받기 파일 갱신" && git push -q && cd - >/dev/null
+  cd /tmp/site && git add storybooks/data && git -c user.name=storybooks-bot -c user.email=actions@users.noreply.github.com commit -qm "그림책: 한글판 이야기 목록·그림 판·내려받기 파일 갱신" && (git push -q || (git pull -q --rebase && git push -q) || (sleep 20 && git pull -q --rebase && git push -q)) && cd - >/dev/null
 fi
 # 다음 책 글 상자 읽기 + 번역용 800px 미리보기 (jobs/next_books.txt 에 적은 책, 이미 읽은 이야기는 건너뜀)
 if [ -s jobs/next_books.txt ]; then
