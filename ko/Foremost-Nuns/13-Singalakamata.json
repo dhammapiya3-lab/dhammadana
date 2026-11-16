@@ -1,0 +1,336 @@
+[
+ {
+  "img": "images/13-Singalakamata-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     94,
+     163
+    ],
+    "shape": "bubble",
+    "ko": "싱갈라까마따 장로니:\n믿음의 으뜸\n\n흔들림 없는 확신으로 걸어온\n십만 겁의 여정",
+    "em": 22
+   },
+   {
+    "rect": [
+     94,
+     194,
+     118,
+     216
+    ],
+    "ko": " ",
+    "cover": [
+     252,
+     255,
+     254
+    ],
+    "em": 10,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Singalakamata-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     359,
+     318
+    ],
+    "shape": "bubble",
+    "ko": "빠두뭇따라 부처님 시대, 한 관리의 딸이 흠 없는 계를 지켰습니다. 깨달으신 분을 뵙기만을 간절히 바라며 삼보에 삶을 바쳤습니다.",
+    "em": 14,
+    "rect": [
+     342,
+     281,
+     585,
+     430
+    ],
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Singalakamata-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     221,
+     360
+    ],
+    "shape": "bubble",
+    "ko": "부처님께서 한 비구니를 믿음(saddhā)의 으뜸으로 지명하시는 것을 보고, 큰 씨앗이 심어졌습니다.",
+    "em": 14
+   },
+   {
+    "seed": [
+     501,
+     360
+    ],
+    "shape": "bubble",
+    "ko": "그녀는 앞날에 바로 그 가장 높은 영예를 얻겠다고 흔들림 없이 서원했습니다.",
+    "em": 14
+   }
+  ]
+ },
+ {
+  "img": "images/13-Singalakamata-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     295,
+     65
+    ],
+    "shape": "bubble",
+    "ko": "참된 재산",
+    "em": 30
+   },
+   {
+    "seed": [
+     284,
+     347
+    ],
+    "shape": "bubble",
+    "ko": "빠두뭇따라 부처님께서 선언하셨습니다. 불·법·승에 깊은 믿음을 지니고 흠 없는 계와 바른 견해를 갖춘 이는 결코 가난하지 않다. 이 확신이 가장 크고 오래가는 재산이다.",
+    "em": 14,
+    "rect": [
+     240,
+     318,
+     556,
+     422
+    ],
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Singalakamata-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     304,
+     206
+    ],
+    "shape": "bubble",
+    "ko": "부처님께서는 그 서원이 먼 앞날에 꽃피리라고 예언하셨습니다. 이 약속에 힘입어 그녀는 십만 겁 동안 복된 생을 거치며 법을 바르게 닦았습니다.",
+    "em": 15
+   }
+  ]
+ },
+ {
+  "img": "images/13-Singalakamata-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     485,
+     96
+    ],
+    "shape": "bubble",
+    "ko": "고따마 부처님 시대의 마지막 생에 그녀는 라자가하의 큰 부잣집에 태어났습니다. 다른 부유한 가문에 시집가 아들을 낳아 싱갈라까마따(싱갈라까의 어머니)라고 불렸습니다.",
+    "em": 15
+   }
+  ]
+ },
+ {
+  "img": "images/13-Singalakamata-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     75,
+     88
+    ],
+    "shape": "bubble",
+    "ko": "싱갈라까는 그릇된\n견해를 지녔습니다.",
+    "em": 14
+   },
+   {
+    "seed": [
+     623,
+     77
+    ],
+    "shape": "bubble",
+    "ko": "눈먼 관습에 묶여\n날마다 여덟 방위에\n절하는 의식을 했습니다.",
+    "em": 14
+   },
+   {
+    "seed": [
+     57,
+     337
+    ],
+    "shape": "bubble",
+    "ko": "해탈로 가는 참된 길을\n알지 못했습니다.",
+    "em": 14
+   },
+   {
+    "seed": [
+     614,
+     337
+    ],
+    "shape": "bubble",
+    "ko": "부처님의 가르침을\n만나기 전까지는.",
+    "em": 14
+   }
+  ]
+ },
+ {
+  "img": "images/13-Singalakamata-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     98,
+     368
+    ],
+    "shape": "box",
+    "ko": "탁발하시던 고따마 부처님께서 싱갈라까의 의식을 보시고 깊은 ‘싱갈라 경’(Siṅgāla-sutta)을 설하셨습니다. 이 법문을 듣고 20억의 청중이 사성제를 깨달았습니다.",
+    "em": 15
+   }
+  ]
+ },
+ {
+  "img": "images/13-Singalakamata-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     80,
+     116
+    ],
+    "shape": "bubble",
+    "ko": "가르침에 눈뜬 싱갈라까마따는 예류의 지혜를 얻었습니다. 세속의 재물을 버리고 승가에 들어, 해탈을 향한 마지막 오름을 시작했습니다.",
+    "em": 16
+   }
+  ]
+ },
+ {
+  "img": "images/13-Singalakamata-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     411,
+     295
+    ],
+    "shape": "bubble",
+    "ko": "오랜 서원에 힘입어 그녀의 믿음의 기능은 견줄 데가 없었습니다. 승원에 갈 때마다 부처님의 거룩한 모습에서 눈을 떼지 못했습니다.",
+    "em": 15,
+    "rect": [
+     355,
+     290,
+     736,
+     384
+    ],
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Singalakamata-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     522,
+     130
+    ],
+    "shape": "bubble",
+    "em": 15,
+    "ko": "깨달음의 짜임\n\n그녀의 깊은 신심을 아신 부처님께서는 그녀에게 맞는 법문을 설하셨습니다. 믿음(saddhā)을 디딤돌로 삼아 깊은 위빳사나 수행으로 나아간 그녀는, 믿음이 앞선 아라한과를 이루었습니다."
+   },
+   {
+    "seed": [
+     301,
+     250
+    ],
+    "shape": "bubble",
+    "em": 14,
+    "ko": "맞춤 법문"
+   },
+   {
+    "rect": [
+     338,
+     118,
+     422,
+     154
+    ],
+    "ko": "통찰\n(vipassanā)",
+    "cover": [
+     254,
+     253,
+     253
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     158,
+     362,
+     296,
+     398
+    ],
+    "ko": "흔들림 없는 신심\n(saddhā)",
+    "cover": [
+     254,
+     254,
+     254
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Singalakamata-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     309,
+     56
+    ],
+    "shape": "bubble",
+    "ko": "Etadaggaṃ, bhikkhave, mama sāvikānaṃ bhikkhunīnaṃ\nsaddhādhimuttānaṃ yadidaṃ Siṅgālakamātā.\n“비구들이여, 믿음이 굳은 나의 비구니 제자들 가운데\n싱갈라까마따가 으뜸(etadagga)이다.”",
+    "em": 14,
+    "rect": [
+     261,
+     50,
+     709,
+     151
+    ],
+    "whole": true
+   },
+   {
+    "rect": [
+     604,
+     122,
+     676,
+     148
+    ],
+    "ko": " ",
+    "cover": [
+     255,
+     255,
+     253
+    ],
+    "em": 10,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Singalakamata-13-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     188,
+     340
+    ],
+    "shape": "box",
+    "ko": "십만 겁의 여정이 끝났습니다. 싱갈라까마따 장로니의 삶은 바른 견해와 헌신적인 수행이 함께할 때, 맑은 믿음이 궁극의 해탈로 가는 멈출 수 없는 수레가 됨을 보여 줍니다.",
+    "em": 17
+   }
+  ]
+ }
+]
