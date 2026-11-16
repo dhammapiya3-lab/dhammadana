@@ -1,0 +1,564 @@
+[
+ {
+  "img": "images/31-Uruvela-Kassapa-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     320,
+     562,
+     404
+    ],
+    "ko": "우루웰라 깟사빠 장로\n따르는 무리가 많은 데 으뜸",
+    "cover": [
+     249,
+     247,
+     237
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     126,
+     50,
+     672,
+     130
+    ],
+    "ko": "아득한 옛날 항사와띠에서, 한 귀족 청년은 빠두뭇따라\n부처님께서 한 제자를 따르는 무리가 많은 데 으뜸이라 하시는 것을\n보았습니다. 이레 동안 큰 공양을 올린 뒤, 그는 바로 그 칭호를 서원했습니다.",
+    "cover": [
+     245,
+     237,
+     209
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     326,
+     100,
+     528,
+     334
+    ],
+    "ko": "빠두뭇따라 부처님께서\n젊은이의 서원을\n살펴보셨습니다.\n\n예언하시기를,\n“그대는 고따마 부처님께서\n그분의 가르침 안에서\n따르는 무리가 많은 비구의\n으뜸이라 부르실 것이다.”",
+    "cover": [
+     239,
+     231,
+     211
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     324,
+     734,
+     426
+    ],
+    "ko": "92겁 전, 미래의 우루웰라 깟사빠는 풋사 부처님의\n배다른 맏형인 왕자로 태어났습니다.\n세 형제는 안거 동안 정성을 다해 승가를 모셨습니다.",
+    "cover": [
+     244,
+     240,
+     228
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     144,
+     40,
+     656,
+     82
+    ],
+    "ko": "마지막 생에서 형제들은 베다에 통달했습니다.",
+    "cover": [
+     246,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     20,
+     100,
+     276,
+     128
+    ],
+    "ko": "‘우루웰라’",
+    "cover": [
+     245,
+     242,
+     229
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     280,
+     100,
+     520,
+     128
+    ],
+    "ko": "‘나디’",
+    "cover": [
+     247,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     526,
+     100,
+     774,
+     128
+    ],
+    "ko": "‘가야’",
+    "cover": [
+     247,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     64,
+     372,
+     738,
+     406
+    ],
+    "ko": "• 우루웰라: 숲 | 제자 500명   • 나디: 강 | 제자 300명   • 가야: 바위 | 제자 200명",
+    "cover": [
+     247,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     172,
+     56,
+     630,
+     118
+    ],
+    "ko": "세 베다를 통달했지만, 그 가르침에는\n저세상에 대한 앎이 없음을 깨달았습니다.",
+    "cover": [
+     242,
+     227,
+     193
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     232,
+     380,
+     566,
+     432
+    ],
+    "ko": "궁극의 진리를 찾아 세속을 버리고\n불을 섬기는 고행자가 되었습니다.",
+    "cover": [
+     243,
+     228,
+     197
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     70,
+     392,
+     164
+    ],
+    "ko": "60명의 아라한을 보내 법을 펴게 하신 뒤,\n고따마 부처님께서는 깟사빠 형제들이\n영적으로 무르익었음을 보셨습니다.\n그리고 홀로 우루웰라 숲으로 가셨습니다.",
+    "cover": [
+     247,
+     245,
+     233
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     50,
+     618,
+     120
+    ],
+    "ko": "맏형의 자만을 꺾으시려고\n부처님께서는 3,500가지 신통을 보이셨습니다.",
+    "cover": [
+     239,
+     224,
+     191
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     226,
+     374,
+     572,
+     436
+    ],
+    "ko": "가장 놀라운 것은, 불의 방에서 사나운\n나가를 고요히 길들이신 일이었습니다.",
+    "cover": [
+     239,
+     225,
+     194
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     42,
+     42,
+     282,
+     128
+    ],
+    "ko": "우루웰라가 굴복했습니다.\n맏형이 따르는 것을 보고,\n아우들과 따르던 이들이\n모두 함께했습니다.",
+    "cover": [
+     243,
+     233,
+     214
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     404,
+     62,
+     560,
+     214
+    ],
+    "ko": "고행자 천 명이\n“오라, 비구여.”\n한마디로\n구족계를\n받았습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 15,
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     56,
+     752,
+     92
+    ],
+    "ko": "가야시사 바위에서 부처님께서 ‘불타오름 경’(Āditta-pariyāya)을 설하셨습니다.",
+    "cover": [
+     229,
+     206,
+     176
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     48,
+     356,
+     752,
+     414
+    ],
+    "ko": "몸 밖의 불을 섬기던 그들은 이제 깨달았습니다. 감각의 세계와\n색계와 무색계가 모두 불타고 있음을. 천 명 모두가 아라한이 되었습니다.",
+    "cover": [
+     227,
+     206,
+     177
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     364,
+     764,
+     422
+    ],
+    "ko": "라자가하에서 빔비사라 왕과 바라문 12만 명이 머뭇거렸습니다. 부처님과 이름난\n우루웰라 깟사빠 가운데 누가 스승인지 몰라, 그들의 마음은 의심으로 흐렸습니다.",
+    "cover": [
+     249,
+     246,
+     235
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     66,
+     288,
+     164
+    ],
+    "ko": "“세존께서는 나의\n스승이시고, 나는\n그분의 제자입니다.”",
+    "cover": [
+     243,
+     230,
+     205
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     494,
+     230,
+     752,
+     368
+    ],
+    "ko": "사람들의 의심을 깨려고\n깟사빠는 야자나무 한 그루에서\n일곱 그루 높이까지 떠올랐다가,\n그때마다 내려와 부처님 발아래\n절했습니다.",
+    "cover": [
+     244,
+     230,
+     206
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     238,
+     40,
+     562,
+     108
+    ],
+    "ko": "의심이 깨어졌습니다.\n부처님께서 법을 설하셨습니다.",
+    "cover": [
+     241,
+     228,
+     202
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     28,
+     366,
+     772,
+     424
+    ],
+    "ko": "빔비사라 왕과 바라문 11만 명이 수다원과를 얻었습니다.\n나머지 1만 명은 삼보에 귀의했습니다.",
+    "cover": [
+     241,
+     230,
+     204
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     38,
+     48,
+     256,
+     130
+    ],
+    "ko": "제따와나에서 부처님께서\n그를 따르는 무리가 많은 데\n으뜸이라 선언하셨습니다.",
+    "cover": [
+     246,
+     241,
+     228
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     480,
+     308,
+     752,
+     406
+    ],
+    "ko": "늘 그를 따르는 아라한 천 명이\n저마다 은사가 되면, 승가는\n2천, 3천으로 크게 불어납니다.",
+    "cover": [
+     248,
+     244,
+     232
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Uruvela-Kassapa-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     52,
+     760,
+     98
+    ],
+    "ko": "항사와띠의 옛 서원에서 고따마 부처님 아래 으뜸가는 지도자가 되기까지.",
+    "cover": [
+     243,
+     236,
+     219
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     40,
+     374,
+     760,
+     414
+    ],
+    "ko": "밖의 불을 섬기던 데서 안의 궁극의 밝음에 이른 장엄한 여정.",
+    "cover": [
+     245,
+     238,
+     222
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
