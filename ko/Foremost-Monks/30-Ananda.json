@@ -1,0 +1,1126 @@
+[
+ {
+  "img": "images/30-Ananda-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     60,
+     332,
+     214
+    ],
+    "ko": "아난다 장로의\n여러 생\n\n10만 겁에 걸친 공덕과\n준비, 그리고 헌신",
+    "cover": [
+     252,
+     247,
+     235
+    ],
+    "align": "left",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     14,
+     62,
+     264,
+     398
+    ],
+    "ko": "10만 겁 전\n항사와띠에\n빠두뭇따라 부처님께서\n출현하셨습니다.\n\n부처님의 부왕인\n아난다 왕이\n부처님을 모셨습니다.\n\n부처님의 이복동생\n수마나 왕자는\n먼 지방을 다스렸습니다.",
+    "cover": [
+     249,
+     243,
+     226
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     44,
+     744,
+     76
+    ],
+    "ko": "반란을 가라앉힌 수마나 왕자는 왕의 상을 받게 되었습니다. 그가 고른 것은:",
+    "cover": [
+     249,
+     243,
+     226
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     90,
+     82,
+     340,
+     130
+    ],
+    "ko": "세속의 재물\n(죽으면 두고 감)",
+    "cover": [
+     236,
+     213,
+     173
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     414,
+     82,
+     756,
+     130
+    ],
+    "ko": "공덕의 재물\n(영원함)",
+    "cover": [
+     248,
+     242,
+     222
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     46,
+     326,
+     386,
+     402
+    ],
+    "ko": "세속의 재물\n(죽으면 두고 감)\n코끼리, 보석, 마을",
+    "cover": [
+     249,
+     241,
+     223
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     414,
+     326,
+     756,
+     402
+    ],
+    "ko": "공덕의 재물\n(영원함)\n안거(vassa) 한 철 동안 부처님을 모시는 일",
+    "cover": [
+     248,
+     241,
+     221
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     304,
+     394,
+     500,
+     432
+    ],
+    "ko": "그는 공덕을 골랐습니다.",
+    "cover": [
+     242,
+     223,
+     190
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     476,
+     46,
+     778,
+     196
+    ],
+    "ko": "왕은 부처님의 마음은\n알 수 없다고 일렀습니다.\n\n승원의 비구들은 함부로 뵙기를\n청할 수 없다고 설명했습니다.\n오직 부처님의 시자인\n수마나 장로만 그럴 수 있었습니다.",
+    "cover": [
+     246,
+     233,
+     203
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     20,
+     624,
+     160
+    ],
+    "ko": "수마나 장로가 물 까시나 선정\n(āpo-kasiṇa-jhāna)에 들었습니다.\n\n단단한 땅을 마음으로 만든 물로 바꾸어,\n물속으로 들어가듯 부처님의 향실에\n막힘없이 들어가 왕자가 왔음을 아뢰었습니다.",
+    "cover": [
+     243,
+     231,
+     201
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     48,
+     744,
+     104
+    ],
+    "ko": "왕자가 여쭈었습니다. “어떻게 하면 가까운 제자가 될 수 있습니까?”\n부처님께서 수행의 세 기둥을 일러 주셨습니다.",
+    "cover": [
+     249,
+     242,
+     224
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     26,
+     400,
+     244,
+     436
+    ],
+    "ko": "1. 너그럽게 베풂",
+    "cover": [
+     236,
+     212,
+     186
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     290,
+     400,
+     510,
+     436
+    ],
+    "ko": "2. 계를 지킴",
+    "cover": [
+     236,
+     211,
+     184
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     554,
+     400,
+     774,
+     436
+    ],
+    "ko": "3. 계율을 지킴",
+    "cover": [
+     236,
+     211,
+     184
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     482,
+     170,
+     716,
+     300
+    ],
+    "ko": "부처님께서 안거 초청을\n받아들이셨습니다.\n\n수마나 왕자는 120요자나 길 전체에\n1요자나마다 훌륭한 쉼터를 지어\n부처님과 비구 10만 명을 맞았습니다.",
+    "cover": [
+     245,
+     230,
+     199
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     46,
+     712,
+     108
+    ],
+    "ko": "왕자는 10만 냥을 주고 소바나 동산을 샀습니다.\n그리고 10만 냥을 더 들여 이것들을 지었습니다.",
+    "cover": [
+     243,
+     227,
+     195
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     80,
+     128,
+     286,
+     156
+    ],
+    "ko": "비구 10만 명의 처소",
+    "cover": [
+     236,
+     214,
+     193
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     476,
+     104,
+     630,
+     160
+    ],
+    "ko": "향실",
+    "cover": [
+     249,
+     240,
+     222
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     314,
+     280,
+     466,
+     322
+    ],
+    "ko": "뒷간, 그리고\n낮과 밤의 쉼터",
+    "cover": [
+     234,
+     209,
+     184
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     334,
+     756,
+     420
+    ],
+    "ko": "석 달 동안 수마나 왕자는 따르는 이들에게 승가를 모시게 했습니다.\n부처님들은 물질의 공양보다 법을 귀히 여기심을 알기에, 그는 승원에 머물며\n천 두 겹만 걸치고 열 가지 계를 지켰습니다.",
+    "cover": [
+     247,
+     235,
+     214
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     126,
+     68,
+     500,
+     158
+    ],
+    "ko": "안거가 끝나자 수마나 왕자는 비구 10만 명에게\n세 벌 가사를 올렸습니다.\n\n그리고 서원했습니다. 세속의 영광이 아니라,\n앞으로 오실 부처님의 시자가 되기를.",
+    "cover": [
+     241,
+     223,
+     191
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     434,
+     252,
+     746,
+     390
+    ],
+    "ko": "빠두뭇따라 부처님께서\n앞날을 살펴보시고, 왕자의\n서원이 이루어지리라 예언하셨습니다.\n\n수마나 왕자는 마치 바로 이튿날\n고따마 부처님을 모실 것처럼\n확신했습니다.",
+    "cover": [
+     246,
+     231,
+     205
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     256,
+     134,
+     544,
+     230
+    ],
+    "ko": "천신 세계에 태어난 뒤에도 공덕은 이어졌습니다.\n깟사빠 부처님 때 그는 자기 웃옷을\n한 비구에게 보시하여\n발우를 받치는 깔개로 쓰게 했습니다.",
+    "cover": [
+     242,
+     227,
+     202
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     44,
+     160,
+     100
+    ],
+    "ko": "간다마다나 산",
+    "cover": [
+     247,
+     231,
+     203
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     676,
+     58,
+     770,
+     86
+    ],
+    "ko": "바라나시",
+    "cover": [
+     248,
+     233,
+     208
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     44,
+     262,
+     340,
+     410
+    ],
+    "ko": "바라나시의 왕으로 다시 태어난 그는\n간다마다나 산에서 날아오는\n벽지불 여덟 분을 보았습니다.\n\n그는 여덟 채의 왕실 처소를 짓고\n발우 받침을 루비로 만들어\n1만 년 동안 모셨습니다.",
+    "cover": [
+     241,
+     224,
+     199
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     88,
+     50,
+     718,
+     152
+    ],
+    "ko": "큰 서원에는 헤아릴 수 없는 인내가 필요합니다.\n변방의 왕자에서 바라나시의 왕에 이르기까지 10만 겁 동안\n아난다 장로는 보시와 계와 계율을 닦아 마지막 소임을 준비했습니다.",
+    "cover": [
+     242,
+     229,
+     202
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     20,
+     396,
+     180,
+     440
+    ],
+    "ko": "빠두뭇따라 부처님\n(서원)",
+    "cover": [
+     247,
+     238,
+     220
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     224,
+     396,
+     370,
+     440
+    ],
+    "ko": "깟사빠 부처님\n(웃옷)",
+    "cover": [
+     249,
+     243,
+     226
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     430,
+     396,
+     590,
+     440
+    ],
+    "ko": "벽지불\n(루비 받침)",
+    "cover": [
+     250,
+     243,
+     228
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     636,
+     396,
+     768,
+     440
+    ],
+    "ko": "미래",
+    "cover": [
+     248,
+     238,
+     219
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     172,
+     388,
+     204,
+     418
+    ],
+    "ko": " ",
+    "cover": [
+     250,
+     244,
+     226
+    ],
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     484,
+     112,
+     746,
+     312
+    ],
+    "ko": "공덕의 바탕은\n여러 겁에 걸쳐 놓였습니다.\n\n큰 예언이 이루어질\n때가 다가옵니다.",
+    "cover": [
+     254,
+     255,
+     249
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     202,
+     262,
+     598,
+     372
+    ],
+    "ko": "10만 겁의 공덕을 쌓은 뒤 그는 도솔천에서\n세상을 떠나, 까삘라왓투에서 아미또다나 왕자의\n아들로 다시 태어났습니다. 그의 탄생이 가문에 준\n기쁨 때문에 ‘기쁨’이라는 뜻의 아난다라 이름 지었습니다.",
+    "cover": [
+     249,
+     235,
+     205
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     226,
+     272,
+     390
+    ],
+    "ko": "고따마 부처님께서\n처음 까삘라왓투에 오셨을 때\n아난다는 세속을 떠났습니다.\n밧디야가 이끄는 사꺄족\n왕자들과 함께, 푸르른\n아누삐야 숲에서\n비구가 되었습니다.",
+    "cover": [
+     243,
+     215,
+     151
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     234,
+     296,
+     568,
+     408
+    ],
+    "ko": "만따니뿟따 뿐나 장로가 가르쳤습니다.\n얼굴이 거울에 비치는 데 원인이 있듯,\n‘나’라는 자만은 다섯 무더기를 의지해 일어난다고.\n이 무상함을 깨달은 아난다 장로는\n수다원과(Sotāpatti-phala)를 얻었습니다.",
+    "cover": [
+     242,
+     223,
+     193
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     42,
+     602,
+     134
+    ],
+    "ko": "20년 동안 부처님께는 정해진 시자가 없었습니다.\n탈이 나기도 했습니다. 나가사말라 장로 같은 임시\n시자들은 부처님의 충고를 듣지 않고 다른 길로 갔다가\n도둑을 만나고 다치고 마음의 장애를 겪었습니다.",
+    "cover": [
+     237,
+     220,
+     180
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     450,
+     100,
+     746,
+     354
+    ],
+    "ko": "나이 드신 부처님께서\n정해진 시자를 청하셨습니다.\n사리뿟따 장로 같은\n큰 제자들이 기꺼이\n나섰습니다. 부처님께서는\n그들의 으뜸 소임은 여래처럼\n가르침을 펴는 것이라며\n거절하셨습니다.",
+    "cover": [
+     248,
+     235,
+     205
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     450,
+     44,
+     756,
+     188
+    ],
+    "ko": "아난다 장로는 말없이 앉아\n있었습니다. 나서라는 권유에\n그는 부드럽게 대답했습니다.\n“세존을 모시는 자리는\n청한다고 얻는 것이 아닙니다.\n원하시면 나를 고르실 것입니다.”",
+    "cover": [
+     242,
+     227,
+     189
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     108,
+     332,
+     350
+    ],
+    "ko": "편애한다는 비난을 막으려고\n아난다 장로는 네 가지를\n삼가 주시기를 청했습니다.\n부처님께서 그에게 주시지\n않을 것:\n1. 좋은 가사\n2. 좋은 음식\n3. 부처님 처소에서 머묾\n4. 재가 신도 집의 초대",
+    "cover": [
+     242,
+     227,
+     190
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     106,
+     332,
+     346
+    ],
+    "ko": "남을 잘 돕고자 그는\n네 가지를 청했습니다.\n1. 부처님 대신 재가자의\n   초대를 받아들임\n2. 먼 데서 온 이들이\n   곧바로 뵐 수 있게 함\n3. 어려운 가르침을 풀이받음\n4. 자기가 없을 때 하신\n   법문을 다시 들음",
+    "cover": [
+     240,
+     225,
+     186
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     112,
+     328,
+     364
+    ],
+    "ko": "이 여덟 가지를 허락받아\n아난다 장로는 늘 곁에서\n모시는 시자가 되었습니다.\n지칠 줄 모르고 모셨으니,\n물을 준비하고 등을 밀어\n드리고, 밤마다 등불을 들고\n처소를 아홉 번 돌며\n자애롭게 지켰습니다.",
+    "cover": [
+     239,
+     224,
+     181
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     306,
+     704,
+     432
+    ],
+    "ko": "부처님께서 아난다 장로를 다섯 가지에서\n비구 가운데 으뜸(etad-agga)이라 선언하셨습니다.\n• 많이 배움 • 법문을 기억하는 마음챙김 • 가르침을 이해함\n• 가르침을 지니는 정진 • 곁에서 모심",
+    "cover": [
+     236,
+     221,
+     180
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     412,
+     112,
+     742,
+     350
+    ],
+    "ko": "기원전 483년 제1차 결집에서\n40년이 지나 아난다 장로는\n120세가 되었습니다.\n\n수명의 기능을 살펴본 노장로는\n때가 다했음을 알았습니다.\n꼭 이레가 남았음을 보고\n제자들에게 알렸습니다.",
+    "cover": [
+     232,
+     216,
+     190
+    ],
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-27-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     150,
+     540,
+     318
+    ],
+    "ko": "사꺄족과 꼴리야족에게\n소식이 퍼졌습니다.\n\n물 나누기로 다툼이 잦던\n경계, 로히니 강을 사이에 둔\n두 쪽이 저마다 아난다 장로의\n은혜를 가장 많이 입었다며,\n자기 쪽에서 입적하시라고\n청했습니다.",
+    "cover": [
+     251,
+     241,
+     223
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-28-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     314,
+     167
+    ],
+    "shape": "bubble",
+    "en": "Ven. Ananda foresaw the danger If pass away on one side, they will fight for my relics. would become the cause of strife If there is to be peace, must be the cause of peace",
+    "ko": "아난다 장로는 위험을 내다보았습니다.\n“내가 한쪽에서 입적하면\n저들은 내 사리를 두고 싸울 것이다.\n나는 다툼의 원인이 된다.\n평화가 있으려면 내가\n평화의 원인이 되어야 한다.”",
+    "align": "center",
+    "rect": [
+     268,
+     148,
+     532,
+     292
+    ],
+    "ellipse": true,
+    "whole": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "em": 16
+   },
+   {
+    "seed": [
+     566,
+     377
+    ],
+    "shape": "box",
+    "en": "He formulated flawless plan.",
+    "ko": "그는 빈틈없는 계획을 세웠습니다.",
+    "align": "center",
+    "em": 16
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-29-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     24,
+     776,
+     76
+    ],
+    "ko": "그는 재가 신도들에게, 그의 은혜를 입지 않은 이가 아무도 없을 만큼 모두의 믿음이 같다고 말했습니다.\n그리고 물을 건너지 말고 저마다 로히니 강의 자기 쪽에만 모이라고 일렀습니다.",
+    "cover": [
+     244,
+     230,
+     201
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-30-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     166,
+     644,
+     356
+    ],
+    "ko": "이레째 되는 날, 아난다 장로는 허공으로 올라갔습니다.\n꼭 야자나무 일곱 그루 높이에 머물며\n로히니 강 한가운데 위에 가부좌하고 앉아,\n아래 모인 많은 사람에게\n하나 되게 하는 마지막 법문을 설했습니다.",
+    "cover": [
+     244,
+     252,
+     245
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-31-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     28,
+     262,
+     320
+    ],
+    "ko": "그는 몸이 둘로 나뉘기를\n결의하고, 불의 요소\n(tejo-dhātu)에 대한\n선정(jhāna)에 들었습니다.\n\n선정에서 나오자 몸이\n불타올랐습니다. 마지막\n죽음의 마음이 일어나\n완전한 열반(Nibbāna)을\n실현하고, 존재의 모든\n자취를 끝냈습니다.",
+    "cover": [
+     253,
+     242,
+     208
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-32-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     32,
+     612,
+     126
+    ],
+    "ko": "결의한 그대로, 타오르는 몸이 가운데로\n똑같이 둘로 나뉘었습니다. 신통의 힘으로\n귀한 사리의 한쪽은 강의 사꺄족 쪽에,\n다른 한쪽은 꼴리야족 쪽에 떨어졌습니다.",
+    "cover": [
+     249,
+     236,
+     204
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-33-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     56,
+     750,
+     136
+    ],
+    "ko": "양쪽 사람들은 땅이 무너지는 듯 소리 높여 울부짖었습니다.\n마지막 숨까지 온전히 평화를 지킨 사랑하는 장로를 그리며\n이 애끓는 슬픔은 꼬박 넉 달 동안 이어졌습니다.",
+    "cover": [
+     190,
+     200,
+     194
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Ananda-34-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     300,
+     640,
+     416
+    ],
+    "ko": "사람들은 슬퍼했습니다. ‘부처님의 발우와 가사를\n든 시자를 볼 때마다 위안을 얻었는데, 이제 그분도\n가셨구나.’ 아난다 장로가 떠나면서, 그들에게\n부처님 시대의 마지막 자취가 다하였습니다.",
+    "cover": [
+     244,
+     221,
+     180
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
