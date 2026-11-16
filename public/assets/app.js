@@ -585,7 +585,7 @@ function initPlayer() {
   let last = 0;
   a.ontimeupdate = () => {
     $('#pCur').textContent = fmtT(a.currentTime); $('#pDur').textContent = fmtT(a.duration);
-    if (a.duration) $('#pSeek').value = a.currentTime / a.duration * 100;
+    if (a.duration && document.activeElement !== $('#pSeek')) $('#pSeek').value = a.currentTime / a.duration * 100;  // 커서가 막대에 있으면 움직이지 않음 — 화면 낭독기가 위치를 계속 읽어 소리가 겹치지 않게 (2026-11-17)
     if (PL.pl && Date.now() - last > 3000) { last = Date.now(); store.set('ppos-' + PL.list[PL.i].audio, a.currentTime); }
   };
   a.onplay = () => { $('#pPlay').textContent = '❚❚'; $('#pPlay').setAttribute('aria-label', '일시정지'); };
@@ -692,7 +692,7 @@ async function initReaderPage() {
 }
 const pageName = p => p.label ? `${p.label}쪽` : `${p.n}번째 쪽`;
 document.addEventListener('fullscreenchange', () => { const b = $('#rFull'); if (b) { const on = !!document.fullscreenElement; b.textContent = on ? '⛶ 전체 화면 끄기' : '⛶ 전체 화면'; b.setAttribute('aria-pressed', on); } });
-function closeReader() { try { if (R && R.spreadLock) screen.orientation.unlock(); } catch (e) {} try { if (document.fullscreenElement) document.exitFullscreen(); } catch (e) {} stopSpeak(); abStop(); R = null; const el = $('#reader'); if (el) el.remove(); document.body.style.overflow = ''; }
+function closeReader() { try { if (R && R.spreadLock) screen.orientation.unlock(); } catch (e) {} try { if (document.fullscreenElement) document.exitFullscreen(); } catch (e) {} stopSpeak(); abStop(); R = null; const el = $('#reader'); if (el) el.remove(); bgInert(false); document.body.style.overflow = ''; }
 function exitReader() { if (AB.locked) { abLockedMsg(); return; } if (R && R.ttsLocked) { toast('듣기가 잠겨 있습니다. 🔒 잠김 단추를 눌러 풀어 주세요'); return; } const id = R && R.id; closeReader(); location.href = '/book/' + id + '/'; }
 // 빈 줄 = 문단 나눔, 문단 안의 한 줄 바꿈 = 줄 바꿈(게송·회향문처럼 인쇄된 대로)
 const paras = t => String(t || '').split(/\n\s*\n/).map(s => s.trim().split('\n').map(l => l.trim()).join('\n')).filter(Boolean);
@@ -912,14 +912,23 @@ function placePanels(el) {
   el.style.setProperty('--ptop', Math.round(t.offsetTop + t.offsetHeight + 6) + 'px');  // 숨김(밀어 올림) 상태와 관계없이 원래 자리 기준
 }
 window.addEventListener('resize', () => placePanels());
+// 화면 낭독기: 읽기 화면이 열려 있는 동안 뒤에 가려진 사이트(머리·본문·바닥)는 건너뛰게 (운영자 요청, 2026-11-17 — 화면은 그대로)
+function bgInert(on) { $$('body > .skip, body > header.site, body > main, body > footer.site').forEach(x => { x.inert = on; if (on) x.setAttribute('aria-hidden', 'true'); else x.removeAttribute('aria-hidden'); }); }
+// 읽기 화면을 다시 그리기 전에 커서가 있던 단추를 기억 (id 또는 data-* 값)
+function focusKey(el) {
+  const a = document.activeElement; if (!a || a === el || !el.contains(a)) return null;
+  if (a.id) return '#' + CSS.escape(a.id);
+  const d = [...a.attributes].find(x => /^data-(?!tip)/.test(x.name)); return d ? `${a.tagName.toLowerCase()}[${d.name}="${CSS.escape(d.value)}"]` : null;
+}
 function renderReader() {
   let el = $('#reader');
-  if (!el) { el = document.createElement('div'); el.id = 'reader'; el.className = 'reader'; el.setAttribute('role', 'dialog'); el.setAttribute('aria-label', '읽기 화면'); document.body.appendChild(el); document.body.style.overflow = 'hidden'; el.classList.add('chrome-off'); }
+  if (!el) { el = document.createElement('div'); el.id = 'reader'; el.className = 'reader'; el.setAttribute('role', 'dialog'); el.setAttribute('aria-label', '읽기 화면'); el.setAttribute('aria-modal', 'true'); document.body.appendChild(el); bgInert(true); document.body.style.overflow = 'hidden'; el.classList.add('chrome-off'); }
   el.dataset.book = R.id || '';  // 책마다 다른 모양(site.css #reader[data-book=…])
   const p = R.pages[R.i], n = p.n, N = R.pages.length, marked = bms().some(m => m.id === R.id && m.p === n);
   const hasText = R.pages.some(x => x.text), hasImg = R.pages.some(x => x.img);
   const ch = tocFor(n);
-  el.innerHTML = `<div class="r-top"><button class="tbtn" id="rClose" aria-label="읽기 닫기">← 닫기</button>
+  const fkey = focusKey(el);  // 다시 그려도 키보드·화면 낭독기 커서가 같은 단추에 남게 (운영자 요청, 2026-11-17)
+  el.innerHTML = `<button class="r-skip" id="rMenu">메뉴 열기 (듣기·목차·설정·닫기)</button><div class="r-top"><button class="tbtn" id="rClose" aria-label="읽기 닫기">← 닫기</button>
     <div class="r-title">${esc(R.title)}<small>${esc(R.by)}${ch ? ' · ' + esc(ch.title) : ''}</small></div>
     <div class="r-tools">
       ${R.toc.length ? '<button class="tbtn" data-panel="toc">목차</button>' : ''}${hasText ? '<button class="tbtn" data-panel="find" aria-label="본문 검색">🔍 찾기</button>' : ''}
@@ -965,6 +974,7 @@ function renderReader() {
       <div class="row" style="margin-top:12px"><input id="bmNote" placeholder="이 쪽에 한 줄 메모" aria-label="책갈피 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"><button class="tbtn" id="bmSave">저장</button></div>
       <p class="note">회원가입 없이 이 기기의 브라우저에만 저장됩니다. 다른 기기로 옮길 때는 내 서재의 ‘옮기기’를 쓰세요.</p></div>`;
   bindReader();
+  if (fkey) { const f = $(fkey, el); if (f && f.offsetParent !== null) f.focus({ preventScroll: true }); }
   sprBar(); spreadWas = spreadOn();  // 화면을 돌리면 처음 한 번부터 바로 다시 그리게
   parApply();
   sprAlign(); if (R && R.ly && spreadOn()) $$('#rBody .spr img').forEach(im => { if (!im.complete) im.addEventListener('load', () => { clearTimeout(sprAlignT); sprAlignT = setTimeout(sprAlign, 100); }, { once: true }); });
@@ -983,6 +993,7 @@ function bindReader() {
   const el = $('#reader');
   const reopen = id => $('#' + id).classList.add('open');
   $('#rClose').onclick = exitReader;
+  $('#rMenu').onclick = () => { el.classList.remove('chrome-off'); setTimeout(() => { const b = $('#rClose'); if (b) b.focus(); }, 30); };  // 화면 낭독기·키보드용 숨은 단추 (운영자 요청, 2026-11-17)
   // 글로 보기에서는 한 화면이 한 장(章)이므로 ‹ › 는 장 단위로 넘깁니다 (쪽 단위면 같은 화면이 되풀이됨)
   const stepCh = d => { const cs = chapters(), ci = chapterOf(R.i + 1), t = cs[ci + d]; if (!t) { toast(d > 0 ? '책의 끝입니다' : '책의 처음입니다'); return; } if (t) { go(t.from, ci + d); $('#rBody').scrollTop = 0; window.scrollTo(0, 0); } };
   // 장 안에 소제목(목차의 들여쓴 항목)이 있으면 › 는 다음 소제목으로, ‹ 는 앞 소제목으로 내려가고/올라가고, 장 끝·처음에서만 장을 넘김 (운영자 요청, 2026-11-09)
@@ -1802,7 +1813,7 @@ function abTick() {
   const c = R.ab.chapters[AB.ci]; if (!c) return;
   if (c.dur && a.currentTime >= c.dur - 0.2 && !a.paused) { abNext(); return; }
   $('#abCur') && ($('#abCur').textContent = fmtT(a.currentTime));
-  const sk = $('#abSeek'); if (sk && !sk._drag && a.duration) sk.value = a.currentTime / a.duration * 1000;
+  const sk = $('#abSeek'); if (sk && !sk._drag && a.duration && document.activeElement !== sk) sk.value = a.currentTime / a.duration * 1000;  // 커서가 막대에 있으면 움직이지 않음 — 화면 낭독기와 소리 겹침 방지 (2026-11-17)
   if (Date.now() - AB.saved > 5000) abSave();
   const k = abIdx(c.sync, a.currentTime), moved = k !== AB.k; AB.k = k;
   const [, p] = c.sync[k];
