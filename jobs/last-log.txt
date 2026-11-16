@@ -30,8 +30,24 @@ Foremost-Monks 26-Pilinda-Vaccha 12 장
 Foremost-Monks 27-Bahiya-Daruciriya 26 장
 Foremost-Nuns 01-Maha-Pajapati-Gotami 30 장
 Foremost-Nuns 02-Khema 37 장
-자동 검수: 문제 의심 8 곳
-R2 에 올림: 1166 개 / 한글판 이야기 57 편
+검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자3 [자리] 한글이 원래 글 자리(504,1041-620,1130)에서 벗어남 (809,1087)
+검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자4 [자리] 한글이 원래 글 자리(1997,1043-2042,1136)에서 벗어남 (1834,1087)
+Foremost-Nuns 03-Uppalavanna 37 장
+Foremost-Nuns 04-Patacara 30 장
+Foremost-Nuns 05-Dhammadinna 22 장
+검수 Foremost-Nuns/06-Nanda 07번 그림 상자4 [자리] 한글이 원래 글 자리(1490,583-1559,660)에서 벗어남 (1166,621)
+Foremost-Nuns 06-Nanda 12 장
+Foremost-Nuns 07-Sona 15 장
+Foremost-Nuns 08-Sakula 15 장
+Foremost-Nuns 09-Bhadda-Kundalakesa 25 장
+Foremost-Nuns 10-Bhadda-Kapilani 11 장
+Foremost-Nuns 11-Bhadda-Kaccana 13 장
+Foremost-Nuns 12-Kisa-Gotami 23 장
+검수 Foremost-Nuns/13-Singalakamata 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 6px)
+검수 Foremost-Nuns/13-Singalakamata 03번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 2px)
+Foremost-Nuns 13-Singalakamata 13 장
+자동 검수: 문제 의심 13 곳
+R2 에 올림: 1598 개 / 한글판 이야기 68 편
 공개 주소 확인: 200 1673434바이트
 이야기 Foremost-Monks/01-Kondanna {'pdf': 61707850, 'zip': 61430942, 'n': 38}
 이야기 Foremost-Monks/02-03-Sariputta-Moggallana {'pdf': 85281648, 'zip': 84985024, 'n': 57}
@@ -58,14 +74,19 @@ R2 에 올림: 1166 개 / 한글판 이야기 57 편
 책 Foremost-Monks {'pdf': 708307521, 'pdfs': 74460986, 'zip': 707877926, 'stories': 23, 'n': 505}
 이야기 Foremost-Nuns/01-Maha-Pajapati-Gotami {'pdf': 42615009, 'zip': 42334961, 'n': 30}
 이야기 Foremost-Nuns/02-Khema {'pdf': 52994403, 'zip': 52719509, 'n': 37}
-책 Foremost-Nuns {'pdf': 95331746, 'pdfs': 10204938, 'zip': 95057592, 'stories': 2, 'n': 67}
-내려받기 파일: 26 묶음 새로 만듦
-글로 보기: 57 이야기
-To https://github.com/dhammapiya3-lab/dhammadana
- ! [rejected]        storybooks -> storybooks (fetch first)
-error: failed to push some refs to 'https://github.com/dhammapiya3-lab/dhammadana'
-hint: Updates were rejected because the remote contains work that you do not
-hint: have locally. This is usually caused by another repository pushing to
-hint: the same ref. If you want to integrate the remote changes, use
-hint: 'git pull' before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+이야기 Foremost-Nuns/03-Uppalavanna {'pdf': 49061183, 'zip': 48781001, 'n': 37}
+이야기 Foremost-Nuns/04-Patacara {'pdf': 36870910, 'zip': 36596379, 'n': 30}
+이야기 Foremost-Nuns/05-Dhammadinna {'pdf': 29279296, 'zip': 29008966, 'n': 22}
+이야기 Foremost-Nuns/06-Nanda {'pdf': 14593957, 'zip': 14329805, 'n': 12}
+이야기 Foremost-Nuns/07-Sona {'pdf': 18516129, 'zip': 18251380, 'n': 15}
+이야기 Foremost-Nuns/08-Sakula {'pdf': 24089633, 'zip': 23822219, 'n': 15}
+이야기 Foremost-Nuns/09-Bhadda-Kundalakesa {'pdf': 33182668, 'zip': 32904918, 'n': 25}
+이야기 Foremost-Nuns/10-Bhadda-Kapilani {'pdf': 14122444, 'zip': 13853421, 'n': 11}
+이야기 Foremost-Nuns/11-Bhadda-Kaccana {'pdf': 20155144, 'zip': 19886919, 'n': 13}
+이야기 Foremost-Nuns/12-Kisa-Gotami {'pdf': 34654474, 'zip': 34382847, 'n': 23}
+이야기 Foremost-Nuns/13-Singalakamata {'pdf': 18858875, 'zip': 18588292, 'n': 13}
+책 Foremost-Nuns {'pdf': 385819325, 'pdfs': 40815084, 'zip': 385466640, 'stories': 13, 'n': 283}
+내려받기 파일: 37 묶음 새로 만듦
+글로 보기: 68 이야기
+41-Mogharaja
+13-Singalakamata
