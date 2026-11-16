@@ -697,6 +697,11 @@ footer.site .logo-img{width:96px;height:auto;mix-blend-mode:multiply;opacity:.85
 #fnPop .fnpop-h{display:flex;justify-content:space-between;align-items:center;font-weight:700;color:var(--robe);margin-bottom:6px;font-size:13px}
 #fnPop .fnpop-x{border:0;background:none;font-size:16px;cursor:pointer;color:var(--ink-soft);padding:2px 6px}
 #fnPop p{margin:0 0 8px;padding:0;font-size:15px;color:var(--ink)}
+#fnPop .fnpop-or{margin:4px 0 8px;padding:8px 0 0;border-top:1px dashed var(--line);color:var(--ink-soft)}
+#fnPop .fnpop-or.only{border-top:0;padding-top:0}
+#fnPop .fnpop-or p{color:var(--ink-soft)}
+#fnPop .fnpop-oh{font-size:12px;font-weight:700;color:var(--ink-soft);margin-bottom:4px}
+.par-fn[data-ofn]{cursor:pointer;color:var(--robe)}
 .reflow p.fn .fn-no{cursor:pointer}
 .reflow p.fn .fn-no:hover,.reflow p.fn .fn-no:focus-visible{background:var(--robe-soft);outline:none}
 .reflow sup.fn-ref.fn-here{background:var(--robe);color:var(--paper);transition:background .3s}

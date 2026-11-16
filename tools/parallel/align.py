@@ -22,6 +22,7 @@ ap.add_argument('--gl-start', default=None, help='용어 풀이가 시작하는 
 ap.add_argument('--gl-end', default=None, help='용어 풀이가 끝난 뒤 첫 한국어 문단(정규식) — 그 뒤(역자 후기·판권지 등)는 짝짓지 않음')
 ap.add_argument('--gl-nl', action='store_true', help="용어 풀이가 '낱말(roman)⏎풀이' 모양(DL-0011) — 쪽에서 잘린 낱말 조각('**웨**' + '**다나(vedanā)**')도 이어 읽음")
 ap.add_argument('--pin', action='append', default=[], help='짝을 손으로 정함: "한국어 열쇠+…=원서 번호+…" (예 "1:0=0+1" 속표지 ↔ 원서 제목·지은이). 원서 쪽을 비우면("2:0+2:1=") 그 한국어 문단은 짝 없음');
+ap.add_argument('--fnpin', action='append', default=[], help='각주 짝을 손으로: "한국어 각주 번호=원서 각주 번호" (예 "40=33")');
 ap.add_argument('--title', default=''); ap.add_argument('--by', default=''); ap.add_argument('--source', default='')
 A = ap.parse_args()
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -232,11 +233,42 @@ for p in KO_GL:
         for x in frag + [p]: cur['ko'].append(x['key']); cur['s'][0]['ko'].append([x['key'], 0, len(x['t'])])
         frag = []
 print('용어 풀이 짝', gl_ok, '못 찾음', gl_no)
+# ---------- 각주 짝 (운영자 요청, 2026-11-17): 한국어 각주([^n]:, [역주] 는 뺌) ↔ 원서 각주('fn' 문단) — 뜻 벡터 + 순서 지키는 짝짓기 ----------
+FN = {}; fn_rep = []
+KF = [(m.group(1), m.group(2).strip()) for m in re.finditer(r'^\[\^([^\]]+)\]:\s*(.*(?:\n(?!\[\^|===).*)*)', body, flags=re.M)]
+YK = {n for n, t in KF if t.lstrip('*').startswith('[역주]')}   # 역자 각주: 원서 각주를 풀어 쓴 것도 있어 뜻이 아주 가까울 때만 짝
+EF = [(i, re.sub(r'^\[\^[^\]]+\]:\s*', '', p['t'])) for i, p in enumerate(ORIG) if p['k'] == 'fn']
+if KF and EF:
+    kfe, efe = enc([plain(t)[:400] for _, t in KF]), enc([t[:400] for _, t in EF])
+    FS = kfe @ efe.T
+    n1, m1 = len(KF), len(EF); G = np.zeros((n1 + 1, m1 + 1)); BK = {}
+    for i in range(n1 + 1):
+        for j in range(m1 + 1):
+            if i == 0 and j == 0: continue
+            c = []
+            if i and j: c.append((G[i - 1, j - 1] + FS[i - 1, j - 1] - (0.6 if KF[i - 1][0] in YK else 0.2), 'd'))
+            if i: c.append((G[i - 1, j], 'u'))
+            if j: c.append((G[i, j - 1], 'l'))
+            G[i, j], BK[(i, j)] = max(c)
+    i, j = n1, m1
+    while i or j:
+        b = BK[(i, j)]
+        if b == 'd':
+            FN[KF[i - 1][0]] = EF[j - 1][0]; fn_rep.append((KF[i - 1], EF[j - 1], float(FS[i - 1, j - 1]))); i -= 1; j -= 1
+        elif b == 'u': i -= 1
+        else: j -= 1
+    fn_rep.reverse()
+    for x in A.fnpin:   # 손으로 정한 각주 짝
+        kn, en = x.split('=')
+        ei = next(i for i, t in EF if ORIG[i]['t'].startswith(f'[^{en}]:'))
+        FN = {k: v for k, v in FN.items() if v != ei}; FN[kn] = ei
+        fn_rep = [r for r in fn_rep if r[1][0] != ei and r[0][0] != kn] + [((kn, dict(KF)[kn]), (ei, ORIG[ei]['t']), 1.0)]
+    print('각주 짝', len(FN), '/ 한국어 각주', len(KF), '(역주', len(YK), ') / 원서 각주', len(EF))
 scores = [s['sc'] for g in out for s in g['s'] if 'sc' in s]
 res = {'book': A.book, 'lang': A.lang, 'title': A.title, 'by': A.by, 'source': A.source,
        'made': datetime.date.today().isoformat(), 'method': 'LaBSE 문장 뜻 비교 + 순서 지키는 짝짓기(1:1·1:2·2:1·2:2·1:3·3:1·건너뛰기)',
        'note': '짝 자료: groups[].ko = 한국어 문단 열쇠 "쪽 순번:문단 순번"(content/texts 본문 기준), or = 원서 문단 번호, s = 문장 짝 [문단 열쇠·번호, 시작 글자, 끝 글자], sc = 뜻 비슷함(0~1)',
-       'orig': [{'pg': p['pg'], 'k': p['k'], 't': p['t']} for p in ORIG], 'groups': out}
+       'orig': [{'pg': p['pg'], 'k': p['k'], 't': p['t']} for p in ORIG], 'groups': out, **({'fn': FN} if FN else {})}
 os.makedirs(os.path.join(REPO, 'content/parallel'), exist_ok=True)
 json.dump(res, open(os.path.join(REPO, 'content/parallel', f'{A.book}.{A.lang}.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
 low = [(g, s) for g in out for s in g['s'] if not g.get('gl') and (s.get('sc', 1) < 0.5 or 'sc' not in s)]   # 용어 풀이 짝은 점수가 없으니 확인 목록에서 뺌
@@ -249,4 +281,13 @@ with open(rep, 'w') as f:
         kt = ' / '.join(KOI[k]['t'][a:b] for k, a, b in s['ko'])
         et = ' / '.join(ORIG[p]['t'][a:b] for p, a, b in s['or'])
         f.write(f"[{s.get('sc', '건너뜀')}] {g['ko'][:1]} 원서 {g['or'][:1]}\n  한: {kt[:200]}\n  원: {et[:200]}\n")
+if fn_rep or (KF and EF):
+    with open(rep, 'a') as f:
+        f.write('\n===== 각주 짝 =====\n')
+        got = {k[0] for k, _, _ in fn_rep}; gote = {e[0] for _, e, _ in fn_rep}
+        for (kn, kt), (ei, et), sc in fn_rep: f.write(f"[{sc:.2f}] 한 {kn} ↔ 원 {ORIG[ei]['t'][:6]}  {plain(kt)[:60]} || {et[:60]}\n")
+        for kn, kt in KF:
+            if kn not in got and kn not in YK: f.write(f"[짝 없음] 한국어 각주 {kn}: {plain(kt)[:80]}\n")
+        for ei, et in EF:
+            if ei not in gote: f.write(f"[짝 없음] 원서 각주 {ORIG[ei]['t'][:80]}\n")
 print('확인 목록 →', rep)

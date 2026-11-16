@@ -15,4 +15,5 @@ python3 tools/parallel/align.py DL-0006 en tools/out/parallel/DL-0006.en.paras.j
   --pin "10:0=@Acknowledgement" \
   --pin "$P:0+$P:1+$P:2+$P:3+$P:4=" \
   --pin "$C:0+$C:4+$C:5+$C:6+$C:7+$C:8+$C:9=" \
+  --fnpin "40=33" \
   --pin "$C:1=@First edition+@Published by+@© Abhidhamma" --pin "$C:2+$C:3=@For free distribution"

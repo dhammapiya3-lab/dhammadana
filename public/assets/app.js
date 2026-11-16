@@ -2231,6 +2231,7 @@ document.addEventListener('click', e => {
     for (const pgx of (R && R.pages) || []) for (const q of paras(pgx.text)) if (q.startsWith('[^' + n + ']:') && (!best || Math.abs(pgx.n - hp) < Math.abs(best.n - hp))) best = { n: pgx.n, q };
     pop.innerHTML = `<div class="fnpop-h">각주 ${n}<button class="fnpop-x" aria-label="닫기">✕</button></div>` + (best ? `<p>${phMark(boldMark(esc(best.q.replace(/^\[\^[^\]]+\]:\s*/, ''))))}</p>` : '<p class="muted">이 각주는 다른 쪽에 있습니다.</p>');
   }
+  parFnAdd(pop, n, null);
   document.body.appendChild(pop);
   const z = bodyZoom(), r = sup.getBoundingClientRect(), W = Math.min(420 * z, innerWidth - 24);
   pop.style.width = W / z + 'px'; pop.style.left = Math.max(12, Math.min(innerWidth - W - 12, r.left - W / 2)) / z + 'px';
@@ -2301,7 +2302,7 @@ function parApply() {
   if (!R.parD) { parEnsure(); return; }
   const D = R.parD, O = D.orig, wide = innerWidth >= 900, ptx = {};
   const kText = key => { if (!(key in ptx)) { const [n, k] = key.split(':').map(Number); ptx[key] = (paras((R.pages[n - 1] || {}).text)[k]) || ''; } return ptx[key]; };
-  const oHtml = (t, h) => boldMark(esc(t)).replace(/\[\^([^\]\s]+)\]/g, '<sup class="par-fn">$1</sup>').replace(/\n/g, '<br>');  // 원서 각주 번호 [^n] → 작은 위첨자
+  const oHtml = (t, h) => boldMark(esc(t)).replace(/\[\^([^\]\s]+)\]/g, (m, n) => `<sup class="par-fn" role="button" tabindex="0" data-ofn="${n}" aria-label="${esc(lang)} 원서 각주 ${n}">${n}</sup>`).replace(/\n/g, '<br>');  // 원서 각주 번호 [^n] → 작은 위첨자, 누르면 원서 각주  // 원서 각주 번호 [^n] → 작은 위첨자
   const kHtml = t => fnMark(phMark(boldMark(esc(t.replace(/^## |^\^\^ |^:: |^>> |^\|\| |^\+\+ /gm, ''))))).replace(/\n/g, '<br>');
   const lang = { en: '영어', my: '미얀마어', pi: '빠알리어', th: '태국어' }[D.lang] || D.lang;
   rf.classList.add('par-on', R.parMode === 'para' && wide ? 'par2' : 'par1');
@@ -2336,6 +2337,41 @@ function parApply() {
   });
   if (!shown) return;
 }
+
+/* ---------- 원서 대조 중 각주: 한국어 각주 창에 원서 각주도, 원서 위첨자 번호를 누르면 원서 각주 (운영자 요청, 2026-11-17) ---------- */
+function parFnAdd(pop, koN, origN) {
+  if (!R || !R.parD || !R.parMode || R.parMode === 'off') return;
+  const D = R.parD, O = D.orig || [];
+  const i = origN != null ? O.findIndex(o => o.k === 'fn' && o.t.startsWith('[^' + origN + ']:')) : (D.fn && D.fn[koN] != null ? D.fn[koN] : -1);
+  if (i < 0 || !O[i]) return;
+  const lang = { en: '영어', my: '미얀마어', pi: '빠알리어', th: '태국어' }[D.lang] || D.lang;
+  const m = O[i].t.match(/^\[\^([^\]]+)\]:\s*/), on = m ? m[1] : '';
+  const box = document.createElement('div'); box.className = 'fnpop-or'; box.lang = D.lang;
+  box.innerHTML = `<div class="fnpop-oh">${esc(lang)} 원서 각주 ${esc(on)}${O[i].pg ? ` · 원서 ${esc(O[i].pg)}쪽` : ''}</div><p>${boldMark(esc(O[i].t.replace(/^\[\^[^\]]+\]:\s*/, '')))}</p>`;
+  pop.appendChild(box);
+}
+document.addEventListener('click', e => {
+  const sup = e.target.closest && e.target.closest('.par-fn[data-ofn]');
+  if (!sup) return;
+  e.preventDefault(); e.stopPropagation();
+  const old = document.getElementById('fnPop'); if (old) old.remove();
+  const n = sup.dataset.ofn, lang = { en: '영어', my: '미얀마어', pi: '빠알리어', th: '태국어' }[(R && R.parD || {}).lang] || '';
+  const pop = document.createElement('div'); pop.id = 'fnPop'; pop.setAttribute('role', 'dialog'); pop.setAttribute('aria-label', lang + ' 원서 각주 ' + n);
+  pop.innerHTML = `<div class="fnpop-h">${esc(lang)} 원서 각주 ${esc(n)}<button class="fnpop-x" aria-label="닫기">✕</button></div>`;
+  parFnAdd(pop, null, n);
+  const box = pop.querySelector('.fnpop-or'); if (box) box.querySelector('.fnpop-oh').remove(), box.classList.add('only'); else pop.insertAdjacentHTML('beforeend', '<p class="muted">원서 각주를 찾지 못했습니다.</p>');
+  // 짝지은 한국어 각주
+  const D = R && R.parD; const oi = D ? (D.orig || []).findIndex(o => o.k === 'fn' && o.t.startsWith('[^' + n + ']:')) : -1;
+  const kn = D && D.fn ? Object.keys(D.fn).find(k => D.fn[k] === oi) : null;
+  if (kn) { const b = document.createElement('button'); b.className = 'link-btn small'; b.textContent = `한국어 각주 ${kn} 보기`; b.onclick = () => { const r = document.querySelector(`.reflow .fn-ref[data-fn="${CSS.escape(kn)}"]`); pop.remove(); if (r) r.click(); else toast('한국어 각주가 다른 장에 있습니다'); }; pop.appendChild(b); }
+  document.body.appendChild(pop);
+  const z = bodyZoom(), r = sup.getBoundingClientRect(), W = Math.min(420 * z, innerWidth - 24);
+  pop.style.width = W / z + 'px'; pop.style.left = Math.max(12, Math.min(innerWidth - W - 12, r.left - W / 2)) / z + 'px';
+  const below = r.bottom + 8, h = pop.offsetHeight * z;
+  pop.style.top = (below + h < innerHeight - 8 ? below : Math.max(8, r.top - h - 8)) / z + 'px';
+  pop.querySelector('.fnpop-x').onclick = () => pop.remove();
+}, true);
+document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('par-fn')) { e.preventDefault(); e.target.click(); } });
 
 /* ---------- 화면 낭독기: 고른 단추 알리기 (운영자 요청, 2026-11-17 — 화면은 그대로) ---------- */
 (function a11yPressed() {
