@@ -1,0 +1,971 @@
+[
+ {
+  "img": "images/12-Kisa-Gotami-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     342,
+     598,
+     384
+    ],
+    "ko": "끼사 고따미의 생애",
+    "cover": [
+     248,
+     233,
+     202
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     206,
+     384,
+     598,
+     432
+    ],
+    "ko": "1부: 공덕을 쌓다",
+    "cover": [
+     247,
+     233,
+     201
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     476,
+     30,
+     778,
+     58
+    ],
+    "ko": "함사와띠의 옛 서원",
+    "cover": [
+     233,
+     214,
+     181
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     476,
+     58,
+     778,
+     180
+    ],
+    "ko": "빠두뭇따라 부처님 앞에서 그녀는 거친 가사를 입는 데 으뜸으로 칭찬받는 비구니를 보았습니다. 특별한 공양을 올리며 이 길을 서원하자, 부처님께서는 고따마 부처님 아래에서 이루어지리라고 예언하셨습니다.",
+    "cover": [
+     234,
+     214,
+     180
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     318,
+     356,
+     344
+    ],
+    "ko": "십만 겁 동안의 청정",
+    "cover": [
+     231,
+     209,
+     173
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     30,
+     344,
+     356,
+     402
+    ],
+    "ko": "십만 겁 동안 그녀는 복된 세계에만 태어났습니다. 깟사빠 부처님 때에는 바라나시의 담마 공주로 태어나 이만 년 평생 십계를 청정하게 지켰습니다.",
+    "cover": [
+     235,
+     212,
+     178
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     32,
+     44,
+     314,
+     74
+    ],
+    "ko": "가난 속으로",
+    "cover": [
+     232,
+     211,
+     178
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     32,
+     74,
+     314,
+     152
+    ],
+    "ko": "삼십삼천에서 사왓티의 한 집안에 태어났으나 가세가 기울어 몹시 가난해졌습니다. 이름은 고따미였는데, 몹시 여윈 몸 때문에 끼사 고따미(마른 고따미)라는 별명을 얻었습니다.",
+    "cover": [
+     231,
+     210,
+     178
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     188,
+     46,
+     612,
+     94
+    ],
+    "ko": "공덕이 다한 모습",
+    "cover": [
+     227,
+     203,
+     164
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     30,
+     316,
+     384,
+     364
+    ],
+    "ko": "‘공덕이 다하면 모든 것을 잃는다.’\n(Nidhikaṇḍa-sutta)",
+    "cover": [
+     230,
+     208,
+     172
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     30,
+     364,
+     384,
+     428
+    ],
+    "ko": "사왓티의 한 부유한 상인의 재산이 까닭 모르게 검은 숯으로 변했습니다. 굶주리고 낙담한 그는 절망해 자리에 누웠습니다.",
+    "cover": [
+     230,
+     207,
+     173
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     294,
+     302,
+     330
+    ],
+    "ko": "업의 실제 시험",
+    "cover": [
+     243,
+     232,
+     204
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     34,
+     330,
+     302,
+     398
+    ],
+    "ko": "“시장에 돗자리를 펴고 숯을 파세요. 지난 공덕이 큰 사람만 그 참모습을 볼 것입니다.”",
+    "cover": [
+     245,
+     234,
+     205
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     184,
+     24,
+     616,
+     70
+    ],
+    "ko": "서로 다르게 보는 시장",
+    "cover": [
+     238,
+     217,
+     183
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     114,
+     366,
+     772,
+     418
+    ],
+    "ko": "그가 시장에 앉자 사람들이 “왜 숯을 파시오?” 하고 비웃었습니다. 그는 “가진 것을 팔 뿐이오.”라고만 답했습니다. 지난 공덕이 크지 않은 이들 눈에는 그저 잿더미였습니다.",
+    "cover": [
+     235,
+     216,
+     184
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     42,
+     52,
+     346,
+     98
+    ],
+    "ko": "쌓인 공덕이 보는 것",
+    "cover": [
+     239,
+     222,
+     190
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     186,
+     368,
+     768,
+     446
+    ],
+    "ko": "끼사 고따미가 시장에 왔습니다. 지난 공덕이 깊은 그녀는 어리둥절했습니다. “아버님, 왜 금과 은을 파세요?” 시험이 마침내 그 주인을 찾았습니다.",
+    "cover": [
+     234,
+     217,
+     185
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     488,
+     50,
+     760,
+     86
+    ],
+    "ko": "손길 하나로 바뀐 실재",
+    "cover": [
+     240,
+     229,
+     200
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     488,
+     86,
+     760,
+     190
+    ],
+    "ko": "“금과 은이 어디 있느냐?” 상인이 묻고 물건 한 줌을 그녀 손에 올렸습니다. 그녀가 닿자 숯은 곧바로 빛나는 재물로 돌아왔습니다.",
+    "cover": [
+     241,
+     230,
+     201
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     54,
+     296,
+     96
+    ],
+    "ko": "복이 하나로 맺어지다",
+    "cover": [
+     239,
+     220,
+     187
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     216,
+     374,
+     588,
+     446
+    ],
+    "ko": "그녀의 집안을 알게 된 상인은 끼사 고따미를 데려와 아들과 혼인시켰습니다. 그녀의 깊은 지난 공덕으로 4억의 재산이 모두 되살아났습니다.",
+    "cover": [
+     237,
+     215,
+     184
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     298,
+     574,
+     336
+    ],
+    "ko": "슬픔과 미혹",
+    "cover": [
+     224,
+     163,
+     53
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     226,
+     336,
+     574,
+     440
+    ],
+    "ko": "아들이 막 뛰어놀 나이가 되었을 때 아이가 죽었습니다. 그런 상실을 겪어 본 적 없던 그녀는 아이를 화장터에 두려 하지 않았습니다. 주검을 안고 이 집 저 집 다니며 아이를 살릴 약을 애타게 구했습니다.",
+    "cover": [
+     226,
+     163,
+     46
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     288,
+     392,
+     322
+    ],
+    "ko": "자비로운 도움",
+    "cover": [
+     243,
+     195,
+     95
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     36,
+     322,
+     392,
+     404
+    ],
+    "ko": "마을 사람 대부분은 그녀의 엉뚱한 부탁을 손가락질하며 비웃었습니다. 그러나 자비로운 한 현자는 슬픔에서 온 미혹을 알아보고, 부처님께 맞는 약이 있다며 제따와나 승원으로 가게 했습니다.",
+    "cover": [
+     243,
+     196,
+     100
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     288,
+     392,
+     322
+    ],
+    "ko": "겨자씨 처방",
+    "cover": [
+     239,
+     193,
+     95
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     36,
+     322,
+     392,
+     404
+    ],
+    "ko": "아이를 안고 그녀는 부처님께 약을 청했습니다. 그녀의 지난 공덕을 보신 부처님께서 이르셨습니다. “아무도 죽은 적 없는 집에서 겨자 기름을 조금 얻어 오너라.” 희망에 찬 그녀는 길을 나섰습니다.",
+    "cover": [
+     241,
+     193,
+     101
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     168,
+     292,
+     634,
+     336
+    ],
+    "ko": "이룰 수 없는 조건",
+    "cover": [
+     221,
+     175,
+     74
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     168,
+     336,
+     634,
+     446
+    ],
+    "ko": "첫 집에서는 기꺼이 겨자 기름을 내주었습니다. 그러나 이 집에서 누가 죽은 적이 있느냐고 묻자, 집주인이 답했습니다. “무슨 그런 말을! 이 집에서 죽은 사람이 몇인지 누가 다 기억하겠소?”",
+    "cover": [
+     220,
+     175,
+     78
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     32,
+     384,
+     72
+    ],
+    "ko": "모두가 겪는 진실",
+    "cover": [
+     215,
+     169,
+     76
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     30,
+     72,
+     384,
+     166
+    ],
+    "ko": "그녀는 기름을 받지 않고 다른 집으로 갔지만, 어디서나 대답은 같았습니다. 마침내 진실이 밝아 왔습니다. 도시에 죽음이 닿지 않은 집은 없다는 깊은 진실을 부처님께서 아셨음을 깨달았습니다.",
+    "cover": [
+     215,
+     169,
+     81
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     412,
+     286,
+     776,
+     324
+    ],
+    "ko": "미혹이 깨지다",
+    "cover": [
+     215,
+     169,
+     80
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     412,
+     324,
+     776,
+     412
+    ],
+    "ko": "경각심이 일었습니다. 그녀는 아이를 화장터로 데려가 마침내 떠나보내며 속삭였습니다. “아가야, 죽음이 너에게만 온 줄 알았구나. 하지만 죽음은 모두에게 온단다.”",
+    "cover": [
+     214,
+     170,
+     89
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     314,
+     710,
+     350
+    ],
+    "ko": "굳건한 의지처를 찾다",
+    "cover": [
+     250,
+     196,
+     7
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     104,
+     350,
+     710,
+     412
+    ],
+    "ko": "그녀는 빈손으로 부처님께 돌아왔습니다. 기름을 물으시자 답했습니다. “세존이시여, 겨자 기름은 필요 없습니다. 제가 설 수 있는 굳건한 자리만 주십시오!” 마침내 피할 수 없는 무상(aniccatā)의 법칙을 깨달은 것입니다.",
+    "cover": [
+     249,
+     196,
+     13
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     414,
+     50,
+     762,
+     84
+    ],
+    "ko": "홍수에 휩쓸리다",
+    "cover": [
+     246,
+     194,
+     18
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     414,
+     84,
+     762,
+     206
+    ],
+    "ko": "부처님께서 가르치셨습니다. “자식과 재물에 취한 사람은 죽음이 앗아 간다. 잠든 마을을 큰 홍수가 쓸어 가듯.” 이 말씀을 듣고 그녀는 형성된 모든 것의 일어남과 사라짐을 보며 예류과를 얻었습니다.",
+    "cover": [
+     238,
+     191,
+     46
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     330,
+     598,
+     364
+    ],
+    "ko": "승가에 들다",
+    "cover": [
+     248,
+     194,
+     48
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     206,
+     364,
+     598,
+     438
+    ],
+    "ko": "도를 구하여 그녀는 비구니가 되기를 청했습니다. 부처님을 세 번 돌아 예를 올린 뒤 비구니 승가에 들었습니다. 이제 끼사 고따미 장로니가 된 그녀는 깊은 통찰을 얻으려 부지런히 수행했습니다.",
+    "cover": [
+     247,
+     195,
+     61
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     60,
+     356,
+     100
+    ],
+    "ko": "흔들리는 불꽃",
+    "cover": [
+     150,
+     26,
+     44
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     56,
+     100,
+     356,
+     232
+    ],
+    "ko": "포살당의 등불을 돌보던 그녀는 한 불꽃이 끊임없이 일어나고 사라지는 것을 골똘히 지켜보았습니다. 깊은 인식이 일었습니다. 모든 생명은 이 불꽃처럼 끝없이 태어나서는 죽을 뿐이다.",
+    "cover": [
+     150,
+     26,
+     44
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     254,
+     294,
+     286
+    ],
+    "ko": "일어남과 사라짐",
+    "cover": [
+     118,
+     28,
+     30
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     44,
+     286,
+     294,
+     398
+    ],
+    "ko": "불꽃은 궁극의 진리를 보여 주었습니다. 죽음 없는 열반을 이룬 이만이 이 끝없는 일어남과 사라짐에서 벗어납니다.\n처소에서 그녀의 생각을 아신 부처님께서 마지막 깨달음으로 이끌 준비를 하셨습니다.",
+    "cover": [
+     118,
+     28,
+     30
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     424,
+     264,
+     768,
+     304
+    ],
+    "ko": "부처님의 광명",
+    "cover": [
+     118,
+     28,
+     30
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     424,
+     304,
+     768,
+     402
+    ],
+    "ko": "부처님께서 광명을 보내시며 그녀의 통찰을 인정하셨습니다. “네 생각이 옳다. 죽음 없는 열반을 보지 못하고 백 년을 사는 것보다, 도의 지혜로 그것을 보며 하루를 사는 것이 더 낫다.”",
+    "cover": [
+     118,
+     28,
+     30
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kisa-Gotami-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     254,
+     296,
+     290
+    ],
+    "ko": "궁극의 해탈",
+    "cover": [
+     118,
+     28,
+     30
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     44,
+     290,
+     296,
+     408
+    ],
+    "ko": "이 깊은 법문이 끝나자 끼사 고따미 장로니는 모든 번뇌를 남김없이 꺼 버렸습니다. 깨달음을 이루어 아라한이 되었습니다. 슬퍼하던 어머니가 완전히 해탈한 성자가 되었습니다.",
+    "cover": [
+     118,
+     28,
+     30
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "dark": true
+   }
+  ]
+ }
+]
