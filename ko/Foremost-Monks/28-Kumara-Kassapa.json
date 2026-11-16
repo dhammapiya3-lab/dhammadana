@@ -1,0 +1,415 @@
+[
+ {
+  "img": "images/28-Kumara-Kassapa-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     292,
+     556,
+     392
+    ],
+    "ko": "꾸마라 깟사빠 장로 이야기\n비유를 가장 잘 든 비구\n지난 생의 여정, 흔들림 없는 고행,\n부처님의 깊은 열다섯 가지 수수께끼",
+    "cover": true,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     246,
+     326,
+     392
+    ],
+    "ko": "오랜 옛날 비구 일곱이 가파른 산에\n올라, 오롯이 정진하려고 사다리를\n차 버렸습니다. 둘은 깨달음을\n이루었습니다. 미래의 꾸마라\n깟사빠를 비롯한 나머지는 다시\n태어나 끈질긴 구도를 이어 갔습니다.",
+    "cover": [
+     186,
+     162,
+     134
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     194,
+     320,
+     606,
+     402
+    ],
+    "ko": "출가하기 전에 잉태했던 깟사빠의 어머니는 부처님의\n청정한 판단으로 보호받았습니다. 금상처럼 태어난\n아이는 빠세나디 왕이 길렀습니다.\n일곱 살에 깟사빠 왕자는 사미가 되었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     222,
+     362,
+     578,
+     440
+    ],
+    "ko": "숲에서 명상하던 그에게 빛나는 범천이 나타났습니다.\n그는 산에서 함께했던 옛 벗이었습니다. 범천은 불타는\n개미 언덕에 관한 알쏭달쏭한 열다섯 가지 수수께끼를\n내고, 깟사빠에게 부처님께 답을 여쭈라고 일렀습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     354,
+     598,
+     438
+    ],
+    "ko": "“개미 언덕이 밤에는 연기를 내고 낮에는 불꽃을 낸다.”\n부처님께서 설명하셨습니다. 개미 언덕은 사람의 몸입니다.\n연기는 한밤에 이리저리 하는 생각이고,\n불꽃은 낮에 몸과 말로 하는 행위입니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     336,
+     164,
+     460,
+     190
+    ],
+    "ko": "바라문 스승",
+    "cover": [
+     224,
+     199,
+     160
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     344,
+     380,
+     452,
+     404
+    ],
+    "ko": "지혜로운 제자",
+    "cover": [
+     224,
+     198,
+     159
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     172,
+     276,
+     272,
+     302
+    ],
+    "ko": "지혜",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     520,
+     276,
+     628,
+     302
+    ],
+    "ko": "끈질긴 정진",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     330,
+     780,
+     436
+    ],
+    "ko": "바라문 스승은 부처님입니다. 지혜로운\n제자는 명상하는 비구입니다. 칼은\n출세간의 지혜, 부지런히 파는 것은\n끈질긴 정진입니다. 이것을 갖추고\n제자는 마음의 비밀을 파헤칩니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     76,
+     282,
+     232
+    ],
+    "ko": "파기 시작합니다. 제자는\n먼저 빗장을 찾으니, 길을\n막는 무명입니다. 다음에\n부풀어 오른 두꺼비가\n나타나니, 분노입니다.\n부푼 두꺼비처럼 분노는\n우리를 눈멀고 꼼짝 못 하고\n적에게 약하게 만듭니다.",
+    "cover": true,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     412,
+     310,
+     758,
+     408
+    ],
+    "ko": "더 아래에는 갈림길이 있으니, 나아감을 막는\n의심의 위험입니다. 다음의 물 거르개는\n다섯 가지 장애입니다. 비누 거품 낀 모래로\n물이 빠져나가듯, 공덕과 삼매를 헛되이\n새어 나가게 합니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     256,
+     46,
+     560,
+     152
+    ],
+    "ko": "거북이 나옵니다. 네 다리와 머리 다섯은\n집착의 다섯 무더기입니다. 다음에 칼과\n도마가 나오니, 우리의 주의를 잘게 썰어\n세속에 묶어 두는 다섯 가지 감각적 즐거움입니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     332,
+     614,
+     418
+    ],
+    "ko": "제자는 고깃덩이를 찾아냅니다. 감각적 욕망의 갈애입니다.\n누구나 아끼지만 모든 괴로움의 근원인 이 깊은 집착이\n쉼 없이 중생을 윤회에 묶어 둡니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     46,
+     336,
+     154
+    ],
+    "ko": "마침내 맨 밑에 나가가 있으니, 청정한\n아라한입니다. 부처님께서 이르셨습니다.\n“나가는 그대로 두어라. 건드리지 마라.\n예배하라.” 아라한은 완전히 해탈하여\n다시는 번뇌로 돌아가지 않습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     40,
+     660,
+     80
+    ],
+    "ko": "개미 언덕 수수께끼 한눈에 보기",
+    "cover": true,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     434,
+     100,
+     640,
+     138
+    ],
+    "ko": "지혜",
+    "cover": true,
+    "align": "left",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     434,
+     142,
+     640,
+     180
+    ],
+    "ko": "무명",
+    "cover": true,
+    "align": "left",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     434,
+     184,
+     640,
+     222
+    ],
+    "ko": "분노",
+    "cover": true,
+    "align": "left",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     434,
+     226,
+     640,
+     264
+    ],
+    "ko": "장애",
+    "cover": true,
+    "align": "left",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     434,
+     268,
+     640,
+     306
+    ],
+    "ko": "무더기",
+    "cover": true,
+    "align": "left",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     434,
+     310,
+     640,
+     348
+    ],
+    "ko": "갈애",
+    "cover": true,
+    "align": "left",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     434,
+     352,
+     640,
+     390
+    ],
+    "ko": "아라한",
+    "cover": true,
+    "align": "left",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Kumara-Kassapa-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     346,
+     600,
+     428
+    ],
+    "ko": "부처님의 풀이를 얻은 꾸마라 깟사빠는 숲으로 돌아가\n곧 아라한이 되었습니다. 깊은 비유에 통달한 그를\n부처님께서는 비유를 잘 드는 비구 가운데\n으뜸이라 선언하셨습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
