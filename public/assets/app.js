@@ -2158,6 +2158,15 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
 })();
 if ('speechSynthesis' in window) speechSynthesis.addEventListener && speechSynthesis.addEventListener('voiceschanged', () => { const v = $('#ttsVoice'); if (v) v.innerHTML = voiceOptions(ttsOpt().voice); });
 initHeader();
+// 화면 낭독기가 페이지를 열면 위쪽 메뉴를 건너뛰고 본문 제목부터 읽게 (운영자 요청, 2026-11-17 — 모바일 카페처럼, 보이는 화면은 그대로)
+//  - 보이지 않는 읽기 위치(커서)만 본문의 큰 제목(h1)에 둠. 메뉴는 없어지지 않고 위로 넘기면 들림.
+(function focusMain() {
+  const pg = document.body.dataset.page;
+  if (location.hash || ['reader', 'search', 'members'].includes(pg)) return;  // 주소에 #자리가 있거나, 스스로 커서를 두는 화면은 그대로
+  const h = $('main h1'); if (!h) return;
+  const go = () => { if (document.activeElement && document.activeElement !== document.body) return; h.setAttribute('tabindex', '-1'); h.classList.add('auto-focus'); try { h.focus({ preventScroll: true }); } catch (e) {} };
+  if (document.readyState === 'complete') go(); else window.addEventListener('load', go, { once: true });
+})();
 initPlayer();
 initPage();
 if (ACC.token) syncNow();

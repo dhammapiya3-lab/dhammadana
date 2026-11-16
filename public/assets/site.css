@@ -1117,3 +1117,6 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 
 /* 본문 소제목 가운데 맞춤 — 텍스트 JSON center_heads (『불자수첩』, 운영자 요청 2026-11-16) */
 .reflow.chead .sub-h{text-align:center}
+
+/* 화면 낭독기용으로 커서만 둔 본문 제목은 테두리를 보이지 않음 (2026-11-17) */
+h1.auto-focus:focus{outline:none}
