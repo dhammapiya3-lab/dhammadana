@@ -1,10 +1,10 @@
 {
 "Foremost-Monks": {
-"n": 564,
-"pdf": 787661254,
-"pdfs": 82887102,
-"stories": 26,
-"zip": 787209253
+"n": 591,
+"pdf": 819779733,
+"pdfs": 86419012,
+"stories": 28,
+"zip": 819317755
 },
 "Foremost-Monks/01-Kondanna": {
 "n": 38,
@@ -135,6 +135,16 @@
 "n": 34,
 "pdf": 44220456,
 "zip": 43947882
+},
+"Foremost-Monks/31-Uruvela-Kassapa": {
+"n": 15,
+"pdf": 17980120,
+"zip": 17708723
+},
+"Foremost-Monks/32-Kaludayi": {
+"n": 12,
+"pdf": 14665113,
+"zip": 14399911
 },
 "Foremost-Nuns": {
 "n": 283,
