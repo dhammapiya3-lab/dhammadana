@@ -2330,7 +2330,7 @@ function parApply() {
     const last = els[els.length - 1];
     if (R.parMode === 'para') {
       const box = document.createElement('div'); box.className = 'par-or'; box.lang = D.lang; box.dataset.g = gi;
-      box.innerHTML = g.or.map(i => { const o = O[i]; return `<p class="${o.k === 'h' ? 'par-h' : o.k === 'gl' ? 'par-gl' : ''}">${oHtml(o.t)}</p>`; }).join('') + (O[g.or[0]].pg !== lastPg ? `<span class="par-pg" aria-hidden="true">${esc(lang)} 원서 ${esc(O[g.or[0]].pg ? O[g.or[0]].pg + '쪽' : '')}</span>` : '');
+      box.innerHTML = g.or.map(i => { const o = O[i]; return `<p class="${o.k === 'h' ? 'par-h' : o.k === 'gl' ? 'par-gl' : ''}">${oHtml(o.t)}</p>`; }).join('') + (O[g.or[0]].pg !== lastPg && !g.note ? `<span class="par-pg" aria-hidden="true">${esc(lang)} 원서 ${esc(O[g.or[0]].pg ? O[g.or[0]].pg + '쪽' : '')}</span>` : '') + (g.note ? `<p class="par-note" lang="ko">※ ${esc(g.note)}</p>` : '');   // 원서와 순서가 다른 짝 메모 (운영자 요청, 2026-11-17 — DL-0005)
       lastPg = O[g.or[g.or.length - 1]].pg;
       const vis = els.filter(e => e.getClientRects().length);   // 장 제목과 같아 숨긴 글(ch-dup)은 빼고
       if (wide && vis.length) {   // 넓은 화면: 같은 줄 오른쪽 칸 (한국어 문단 수만큼 줄을 차지)
@@ -2345,7 +2345,7 @@ function parApply() {
         const ko = p.ko.map(([k, a, b]) => kText(k).slice(a, b)).join(' '), or = p.or.map(([i, a, b]) => O[i].t.slice(a, b)).join(' ');
         const onlyHead = p.ko.length && p.ko.every(([k]) => heads.some(e => `${e.dataset.pg}:${e.dataset.s}` === k));
         return onlyHead ? (or ? `<div class="ps ps-hd"><div class="ps-o" lang="${D.lang}">${oHtml(or)}</div></div>` : '') : `<div class="ps">${ko ? `<div class="ps-k">${kHtml(ko)}</div>` : ''}${or ? `<div class="ps-o" lang="${D.lang}">${oHtml(or)}</div>` : ''}</div>`;
-      }).join('');
+      }).join('') + (g.note ? `<p class="par-note">※ ${esc(g.note)}</p>` : '');
       els.forEach(e => { if (!heads.includes(e)) e.classList.add('par-hide'); });
       last.after(box);
     }

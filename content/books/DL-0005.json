@@ -25,7 +25,16 @@
     "미얀마어"
   ],
   "original_source": "",
-  "parallel_editions": [],
+  "parallel_editions": [
+    {
+      "lang": "my",
+      "title": "သိစရာ၊ တွေးစရာ",
+      "by": "ဆရာတော်ဦးဇောတိက (မဟာမြိုင်တောရ)",
+      "edition": "ရေတံခွန်စာပေ (레따공 출판) 14번 책, 초판(ပထမအကြိမ်) 2001년, 5,000부 · 스캔 PDF (sagarwarmyae.net 이 올린 것, 2010)",
+      "url": "",
+      "note": "원서 PDF 는 글자층이 없는 스캔본이라 쪽 그림을 보며 옮겨 적었음"
+    }
+  ],
   "series": "",
   "main": [],
   "topics": [

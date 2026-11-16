@@ -1143,3 +1143,9 @@ h1.auto-focus:focus{outline:none}
 .sr-book mark{color:var(--ink)}
 @media (prefers-color-scheme: light){ :root:not(.mode-night):not(.mode-contrast) :is(.press-nav a.on,.pill.robe){color:#7E4520} }
 :root.mode-day :is(.press-nav a.on,.pill.robe){color:#7E4520}
+
+/* 원서 대조: 원서와 순서가 다른 짝 메모 · 미얀마어 원서 글꼴 (운영자 요청, 2026-11-17 — DL-0005) */
+.par-note{font-family:var(--sans);font-size:12.5px;color:#8a4b14;margin:.2em 0 .6em;line-height:1.5}
+:root[data-theme="dark"] .par-note, :root.mode-night .par-note{color:#e0a46a}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .par-note{color:#e0a46a} }
+.par-or:lang(my),.ps-o:lang(my){font-family:'Noto Sans Myanmar','Myanmar Text','Padauk','Myanmar Sangam MN',var(--sans);line-height:2.05}
