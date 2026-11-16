@@ -21,7 +21,9 @@ for blk in re.split(r'\n\s*\n', open(os.path.join(REPO, 'tools/parallel/dl0005_m
     s = '\n'.join(ls).strip(); k = 'p'
     if s.startswith('## '): k, s = 'h', s[3:]
     if s.startswith('>> '): s = s[3:]
-    OR.append({'pg': '' if pg == 'နောက်ကျော' else pg, 'k': k, 't': s, 'back': pg == 'နောက်ကျော'})
+    n = int(pg) if pg.isdigit() else None
+    pdf = str(n // 2 + 4) if n is not None else ('2~3' if pg == '' else '50')   # 한 PDF 쪽에 책 두 쪽: 책 n쪽 = PDF n//2+4쪽, 머리말 PDF 2~3쪽, 뒤표지 PDF 50쪽
+    OR.append({'pg': '' if pg == 'နောက်ကျော' else pg, 'pdf': pdf, 'k': k, 't': s, 'back': pg == 'နောက်ကျော'})
 
 # ---------- 한국어 (app.js paras 와 같은 규칙) ----------
 body = T['body']; pages = []
@@ -98,17 +100,28 @@ for gi, (ki, oi, pin) in enumerate(groups):
          's': [{'ko': [[KO[i]['key'], 0, len(KO[i]['t'])] for i in ki], 'or': [[j, 0, len(OR[j]['t'])] for j in oi], 'sc': sc}]}
     if pin: g['pin'] = 1
     if gi not in lis:
-        g['note'] = f"원서와 순서가 다릅니다 — 원서 {OR[oi[0]]['pg']}쪽에 있는 글입니다." if OR[oi[0]]['pg'] else '원서와 순서가 다릅니다.'
+        g['note'] = f"원서와 순서가 다릅니다 — 원서 {OR[oi[0]]['pg']}쪽(PDF {OR[oi[0]]['pdf']}쪽)에 있는 글입니다." if OR[oi[0]]['pg'] else '원서와 순서가 다릅니다.'
     out.append(g)
 
 res = {'book': 'DL-0005', 'lang': 'my', 'title': 'သိစရာ၊ တွေးစရာ', 'by': 'ဆရာတော်ဦးဇောတိက', 'source': '',
        'made': datetime.date.today().isoformat(),
        'method': 'LaBSE 뜻 비교 + 전체 최적 짝(잠언집이라 순서를 강제하지 않음), 앞뒤 부분은 손으로. 미얀마어 원서는 스캔본이라 쪽 그림을 보며 옮겨 적음',
        'note': '짝 자료: groups[].ko = 한국어 문단 열쇠 "쪽 순번:문단 순번"(content/texts 본문 기준), or = 원서 문단 번호, s = 문장 짝, sc = 뜻 비슷함(0~1), note = 원서와 순서가 다른 짝',
-       'orig': [{'pg': o['pg'], 'k': o['k'], 't': o['t']} for o in OR], 'groups': out}
+       'orig': [{'pg': o['pg'], 'pdf': o['pdf'], 'k': o['k'], 't': o['t']} for o in OR], 'groups': out}
 json.dump(res, open(os.path.join(REPO, 'content/parallel/DL-0005.my.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
 pairedK = {i for g in groups for i in g[0]}; pairedO = {j for g in groups for j in g[1]}
 print('짝 묶음', len(out), '평균 뜻 비슷함', round(float(np.mean([g['s'][0]['sc'] for g in out])), 3))
 print('순서가 다른 짝:'); [print('  ', g['ko'], plain(KO[KI[g['ko'][0]]]['t'])[:30].replace('\n', ' '), '→', g['note']) for g in out if g.get('note')]
 print('짝 없는 한국어 잠언:'); [print('  ', k['pg'], plain(k['t'])[:40].replace('\n', ' ')) for i, k in enumerate(KO) if i not in pairedK and i not in skipK]
 print('짝 없는 원서:'); [print('  ', o['pg'] or ('뒤표지' if o['back'] else '앞'), o['t'][:30].replace('\n', ' ')) for j, o in enumerate(OR) if j not in pairedO]
+
+# ---------- 미얀마어 원서 글 파일 (운영자 요청, 2026-11-17): 쪽마다 '=== 책 N쪽 (PDF M쪽) ===' ----------
+lines = ['သိစရာ၊ တွေးစရာ — ဆရာတော်ဦးဇောတိက', '(『생각할 거리를 드립니다』 미얀마어 원서. ရေတံခွန်စာပေ 초판 2001, 스캔 PDF 를 보며 옮겨 적음. 쪽 표시: 책에 인쇄된 쪽 (PDF 파일 쪽))', '']
+last = None
+for o in OR:
+    lab = ('뒤표지 (PDF 50쪽)' if o['back'] else f"머리말 (PDF {o['pdf']}쪽)" if not o['pg'] else f"{o['pg']}쪽 (PDF {o['pdf']}쪽)")
+    if lab != last: lines += [f'=== {lab} ===', '']; last = lab
+    lines += [o['t'], '']
+os.makedirs(os.path.join(REPO, 'tools/out/parallel'), exist_ok=True)
+open(os.path.join(REPO, 'tools/out/parallel/DL-0005_미얀마어_원서.txt'), 'w').write('\n'.join(lines))
+print('글 파일 → tools/out/parallel/DL-0005_미얀마어_원서.txt')
