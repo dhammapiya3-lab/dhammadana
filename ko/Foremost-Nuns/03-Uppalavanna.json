@@ -1,0 +1,1357 @@
+[
+ {
+  "img": "images/03-Uppalavanna-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     20,
+     610,
+     66
+    ],
+    "ko": "서원의 시작",
+    "cover": [
+     250,
+     247,
+     232
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     230,
+     66,
+     570,
+     94
+    ],
+    "ko": "웁빨라완나 장로니의 전생",
+    "cover": [
+     249,
+     247,
+     234
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     180,
+     96,
+     620,
+     140
+    ],
+    "ko": "옛 도시 함사와띠에서 올린 깊은 보시 하나가\n여러 겁에 걸친 여정을 열었습니다.",
+    "cover": [
+     250,
+     247,
+     233
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     26,
+     550,
+     76
+    ],
+    "ko": "서원의 짜임",
+    "cover": [
+     252,
+     246,
+     230
+    ],
+    "align": "center",
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     110,
+     72,
+     690,
+     114
+    ],
+    "ko": "빠두뭇따라 부처님께서 한 비구니를 신통 제일로 지명하시는 것을 보고, 훗날의 웁빨라완나는 삶의 목표를 찾았습니다.",
+    "cover": [
+     252,
+     246,
+     230
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     92,
+     114,
+     205,
+     140
+    ],
+    "ko": "계기",
+    "cover": [
+     250,
+     244,
+     227
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     350,
+     114,
+     452,
+     140
+    ],
+    "ko": "실천",
+    "cover": [
+     252,
+     246,
+     231
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     600,
+     114,
+     705,
+     140
+    ],
+    "ko": "닻",
+    "cover": [
+     252,
+     247,
+     232
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     90,
+     326,
+     215,
+     348
+    ],
+    "ko": "신통을 보다",
+    "cover": [
+     251,
+     244,
+     228
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     300,
+     326,
+     498,
+     348
+    ],
+    "ko": "이레 동안의 특별한 공양",
+    "cover": [
+     252,
+     247,
+     233
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     540,
+     324,
+     760,
+     364
+    ],
+    "ko": "연꽃 일곱 다발을 올려\n같은 운명을 서원함",
+    "cover": [
+     251,
+     245,
+     228
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     160,
+     366,
+     640,
+     410
+    ],
+    "ko": "그녀는 이레 동안 특별한 공양을 올리고, 마지막 날 부처님 발아래 연꽃 일곱 다발을 바치며 바로 그 운명을 서원했습니다.",
+    "cover": [
+     251,
+     245,
+     229
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     132,
+     380,
+     178
+    ],
+    "ko": "윤회(saṃsāra)의 흐름",
+    "cover": [
+     250,
+     243,
+     227
+    ],
+    "align": "left",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     66,
+     178,
+     386,
+     310
+    ],
+    "ko": "부처님과 승가에 평생 헌신한 공덕으로, 그녀는 오랜 세월 동안 삼십삼천의 빛나는 천상과 복된 인간 세상을 거듭 오가며 태어났습니다.",
+    "cover": [
+     250,
+     244,
+     228
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     46,
+     600,
+     88
+    ],
+    "ko": "91겁 전",
+    "cover": [
+     252,
+     246,
+     228
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     60,
+     88,
+     744,
+     118
+    ],
+    "ko": "위빳시 부처님 때, 그녀는 바라나시의 부유한 집안에 태어났습니다.",
+    "cover": [
+     252,
+     246,
+     229
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     54,
+     186,
+     346,
+     344
+    ],
+    "ko": "부처님께 음식과 연꽃을 특별히 공양 올린 뒤, 앞으로 태어나는 모든 생에서 남다른 매력을 지니기를 마음속으로 빌었습니다.",
+    "cover": [
+     253,
+     247,
+     229
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     22,
+     650,
+     66
+    ],
+    "ko": "이번 겁의 깟사빠 부처님 때",
+    "cover": [
+     249,
+     241,
+     223
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     42,
+     76,
+     762,
+     146
+    ],
+    "ko": "사마나굿따 공주로 태어난 그녀는 언니 케마와 함께 이만 년 동안 혼인하지 않고 살며, 큰 승원을 지어 보시했습니다. 그 뒤 인간으로 태어났을 때에는 한 아라한께 순금빛 천을 올려, 다시 천상에 태어날 공덕을 지었습니다.",
+    "cover": [
+     249,
+     241,
+     224
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     420,
+     100,
+     750,
+     140
+    ],
+    "ko": "매력의 결실",
+    "cover": [
+     249,
+     242,
+     224
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     404,
+     140,
+     762,
+     362
+    ],
+    "ko": "업은 빈틈없이 익습니다. 천상의 삶을 마친 그녀는 시위국 아릿타뿌라에서 바라문 띠리띠왓차의 딸 움마단띠로 태어났습니다.\n\n보는 이를 얼어붙게 하는 그 빼어난 아름다움은 위빳시 부처님 때 마음속으로 빈 소원이 그대로 이루어진 것이었습니다.",
+    "cover": [
+     249,
+     242,
+     225
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     44,
+     550,
+     90
+    ],
+    "ko": "소박한 새벽",
+    "cover": [
+     249,
+     242,
+     224
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     84,
+     92,
+     718,
+     166
+    ],
+    "ko": "다음 생에 그녀는 작은 마을 농부의 딸로 태어났습니다. 어느 이른 아침, 연못에서 갓 핀 연꽃 한 송이를 꺾고, 쌀을 볶아 튀밥을 만들어 연잎에 담았습니다.",
+    "cover": [
+     249,
+     243,
+     227
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     76,
+     124,
+     428,
+     172
+    ],
+    "ko": "복된 만남",
+    "cover": [
+     249,
+     242,
+     225
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     72,
+     176,
+     432,
+     344
+    ],
+    "ko": "멸진정에서 나온 벽지불 한 분이 하늘에서 내려오셨습니다.\n\n드문 기회를 놓치지 않고, 그녀는 갓 볶은 튀밥을 발우에 담아 올리고 그 위를 활짝 핀 연꽃으로 정성껏 덮었습니다.",
+    "cover": [
+     249,
+     242,
+     225
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     44,
+     600,
+     94
+    ],
+    "ko": "망설임, 그리고 돌려드림",
+    "cover": [
+     250,
+     244,
+     226
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     152,
+     104,
+     402,
+     162
+    ],
+    "ko": "뒤따라가던 그녀는 스님께 연꽃이 쓸모없으리라 여겨 꽃을 도로 가져왔습니다.",
+    "cover": [
+     212,
+     186,
+     130
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     400,
+     346,
+     664,
+     400
+    ],
+    "ko": "그러다 멈칫했습니다. 원하지 않으셨다면 거절하셨을 것이다. 발우에 두게 하셨으니 받으신 것이다. 그녀는 정성껏 꽃을 돌려드렸습니다.",
+    "cover": [
+     251,
+     244,
+     229
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     56,
+     580,
+     98
+    ],
+    "ko": "마지막 서원",
+    "cover": [
+     250,
+     245,
+     231
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     110,
+     108,
+     690,
+     136
+    ],
+    "ko": "망설였던 일을 털어놓고, 그녀는 마지막으로 분명하게 서원했습니다.",
+    "cover": [
+     250,
+     246,
+     233
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     56,
+     270,
+     232,
+     354
+    ],
+    "ko": "튀밥을 두고:\n“이 공양물의 낱알만큼 아들 500명을 얻기를.”",
+    "cover": [
+     250,
+     244,
+     230
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     590,
+     270,
+     756,
+     354
+    ],
+    "ko": "연꽃을 두고:\n“앞으로 태어나는 생마다 내딛는 걸음걸음 연꽃이 솟아 받쳐 주기를.”",
+    "cover": [
+     250,
+     245,
+     230
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     44,
+     560,
+     90
+    ],
+    "ko": "서로 이어진 업",
+    "cover": [
+     247,
+     242,
+     226
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     140,
+     90,
+     660,
+     168
+    ],
+    "ko": "수행의 여정은 혼자 가는 일이 드뭅니다. 그녀의 깊은 보시를 지켜본 농부 500명이 나서서 벽지불께 꿀을 올렸습니다.\n그 순간 감동한 그들은 바로 그녀가 바란 아들 500명으로 태어나기를 함께 서원했습니다.",
+    "cover": [
+     247,
+     243,
+     227
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     46,
+     550,
+     100
+    ],
+    "ko": "영원한 공경",
+    "cover": [
+     248,
+     242,
+     228
+    ],
+    "align": "center",
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     84,
+     104,
+     716,
+     178
+    ],
+    "ko": "벽지불께서는 하늘로 올라 간다마다나 산으로 돌아가셨습니다. 그리고 그녀의 연꽃을 난다물라 동굴 입구 계단에 두어, 모든 벽지불께서 밟는 발판이 되게 하셨습니다. 청정한 서원을 기리는 영원한 기념이 되었습니다.",
+    "cover": [
+     248,
+     242,
+     228
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     88,
+     282,
+     330
+    ],
+    "ko": "천상에서 내려온 훗날의 웁빨라완나는 산속 연꽃 안에 태어났습니다.\n\n숲의 은자가 아기를 찾았고, 아기의 공덕으로 은자의 엄지에서 젖이 나왔습니다.\n\n황금빛 피부의 아이가 걸음을 뗄 때마다 연꽃이 피어났습니다. 은자는 아이를 빠두마와띠라 불렀습니다.",
+    "cover": [
+     245,
+     234,
+     213
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     350,
+     770,
+     408
+    ],
+    "ko": "지나가던 사냥꾼이 그녀의 사람 같지 않은 아름다움을 바라나시 왕에게 알렸습니다. 마음을 빼앗긴 왕은 황금과 정비의 자리를 내놓았습니다. 빠두마와띠는 울며 고요한 숲속 집을 떠나 왕궁으로 갔습니다.",
+    "cover": [
+     245,
+     234,
+     210
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     480,
+     130,
+     738,
+     320
+    ],
+    "ko": "왕이 빠두마와띠만 아끼자 왕비 500명의 질투가 불붙었습니다. 왕이 전쟁에 나간 사이 빠두마와띠는 마하빠두마를 낳았습니다. 놀랍게도 그녀의 핏방울에서 아들 499명이 더 생겨났습니다.",
+    "cover": [
+     245,
+     234,
+     215
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     25,
+     766,
+     83
+    ],
+    "ko": "매수된 시녀들은 아기들을 피 묻은 나무토막으로 바꾸어 놓고, 그녀가 귀신이라고 왕을 속였습니다. 재판도 없이 쫓겨난 빠두마와띠는 왕비의 아름다움도, 걸음마다 피던 연꽃도 잃고 가난한 시골 여인의 집에 몸을 맡겼습니다.",
+    "cover": [
+     244,
+     231,
+     208
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     514,
+     112,
+     752,
+     318
+    ],
+    "ko": "음모를 꾸민 왕비들은 아기 500명을 함에 넣어 봉하고 강가 강에 던졌습니다. 큰 공덕의 보호를 받아 아기들은 제 엄지에서 나오는 젖을 먹으며, 강물을 따라 함께 무사히 떠내려갔습니다.",
+    "cover": [
+     241,
+     227,
+     200
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     30,
+     364,
+     146
+    ],
+    "ko": "어부들이 놀라운 고기잡이 물건을 왕에게 바쳤습니다. 함 안에는 삭까 천왕이 진실을 새겨 두었습니다. 이들은 왕의 아들들이며, 질투하는 왕비들이 훔쳐 간 것이라고. 마침내 사악한 속임수가 드러났습니다.",
+    "cover": [
+     240,
+     226,
+     198
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     348,
+     660,
+     430
+    ],
+    "ko": "왕이 내건 상으로 그녀를 찾자, 빠두마와띠는 일산을 받치고 금빛 별무늬 융단을 깐 길을 청했습니다. 왕궁으로 돌아가는 그녀의 발아래 융단을 뚫고 연꽃이 솟아, 온 도성에 결백을 보였습니다.",
+    "cover": [
+     244,
+     230,
+     198
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     356,
+     640,
+     426
+    ],
+    "ko": "왕은 배신한 왕비 500명을 빠두마와띠에게 노비로 주었습니다. 그녀는 앙갚음 대신 모두를 공개적으로 풀어 주고, 마하빠두마는 손수 기르며, 풀려난 여인들에게 나머지 왕자들을 맡겨 젖을 먹이게 했습니다.",
+    "cover": [
+     242,
+     227,
+     195
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     22,
+     650,
+     98
+    ],
+    "ko": "열여섯 살이 된 왕자들은 왕궁의 연못에서 놀았습니다. 생생한 연꽃이 어김없이 시들어 꽃잎을 떨구는 것을 보고, 공덕 가득한 젊은 마음에 깊은 깨달음이 일었습니다.",
+    "cover": [
+     240,
+     224,
+     191
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     168,
+     92,
+     378,
+     152
+    ],
+    "ko": "1. 업(kamma)",
+    "cover": [
+     152,
+     59,
+     59
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     96,
+     590,
+     126
+    ],
+    "ko": "2. 마음",
+    "cover": [
+     213,
+     165,
+     71
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     150,
+     312,
+     340,
+     346
+    ],
+    "ko": "3. 온도",
+    "cover": [
+     91,
+     121,
+     80
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     490,
+     312,
+     620,
+     346
+    ],
+    "ko": "4. 음식",
+    "cover": [
+     75,
+     74,
+     113
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     170,
+     354,
+     630,
+     428
+    ],
+    "ko": "왕자들은 깊이 숙고했습니다. ‘온도와 음식에만 의지하는 꽃도 늙고 시드는데, 우리 몸이 어찌 피하랴?’ 조건 지어진 존재는 업·마음·온도·음식이라는 덧없는 네 조건에 의지함을 보았습니다.",
+    "cover": [
+     238,
+     222,
+     190
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     20,
+     660,
+     108
+    ],
+    "ko": "무상을 꿰뚫어 안 왕자들은 홀로 깨닫는 지혜(pacceka-bodhi-ñāṇa)를 얻었습니다. 머리를 쓸어내리자 왕자의 옷차림이 사라졌고, 벽지불이 된 그들은 하늘로 날아올랐습니다. 이 마지막 이별에 빠두마와띠는 가슴이 무너졌습니다.",
+    "cover": [
+     236,
+     219,
+     187
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     356,
+     650,
+     424
+    ],
+    "ko": "라자가하에서 품팔이 일꾼으로 태어난 그녀는 머리 위로 날아가는 벽지불 여덟 분을 보았습니다. 순박한 남편은 그저 ‘스님 새’일 뿐이라고 했지만, 그녀는 달려가 그날 먹을 변변찮은 밥을 올렸습니다.",
+    "cover": [
+     234,
+     217,
+     185
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     22,
+     610,
+     102
+    ],
+    "ko": "초대받은 여덟 분은 나머지 492분을 옛 어머니의 집으로 불렀습니다. 신통으로 초라한 오두막이 넓어지고, 여덟 자리가 오백 자리로 늘어났습니다. 그녀가 올린 음식은 놀랍게도 아들 모두를 먹이기에 넉넉했습니다.",
+    "cover": [
+     234,
+     215,
+     182
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     28,
+     764,
+     124
+    ],
+    "ko": "갈색 연꽃 여덟 송이를 올리며 그녀는 엄숙히 서원했습니다.\n“이 공덕으로, 이 연꽃의 금빛 갈색 꽃술처럼 빛나는 살빛을 지니고 태어나기를.”",
+    "cover": [
+     246,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-27-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     132,
+     314,
+     668,
+     388
+    ],
+    "ko": "고따마 부처님 시대에 사왓티의 부유한 집안에 태어난 그녀는 갈색 연꽃 안쪽 꽃술을 닮은 남다른 살빛을 지녔습니다. 그래서 이름을 웁빨라완나(청련 빛깔)라고 했습니다.",
+    "cover": [
+     250,
+     236,
+     210
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-28-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     356,
+     764,
+     406
+    ],
+    "ko": "그녀의 아름다움이 널리 알려지자 잠부디빠 곳곳의 이름난 가문과 부자와 왕자들이 청혼해 왔고, 아버지는 몹시 난처해졌습니다.",
+    "cover": [
+     247,
+     232,
+     200
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-29-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     436,
+     152,
+     730,
+     270
+    ],
+    "ko": "아무도 실망시키지 않으려고 아버지는 평화로운 해결책을 내놓았습니다.\n“얘야, 비구니가 되겠느냐?”",
+    "cover": [
+     245,
+     230,
+     197
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-30-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     358,
+     764,
+     406
+    ],
+    "ko": "마지막 생의 몸을 지닌 그녀에게 그 말은 머리 위로 귀한 향유를 붓는 듯했습니다. 그녀는 기쁘게 답했습니다. “예, 아버지, 비구니가 되겠습니다.”",
+    "cover": [
+     244,
+     230,
+     199
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-31-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     46,
+     362,
+     144
+    ],
+    "ko": "딸의 선택을 존중한 아버지는 성대한 행렬로 그녀를 비구니 처소에 보냈습니다. 세속의 지위를 내려놓고 웁빨라완나는 비구니로 출가했습니다.",
+    "cover": [
+     243,
+     228,
+     197
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-32-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     422,
+     160,
+     718,
+     286
+    ],
+    "ko": "그녀는 곧 계단(sīmā) 바깥을 청소하고 등불을 밝히는 소임을 맡았습니다. 이 소박한 일이 깨달음의 바탕이 되었습니다.",
+    "cover": [
+     245,
+     235,
+     205
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-33-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     316,
+     624,
+     394
+    ],
+    "ko": "그녀는 등불 불꽃의 열, 곧 불의 요소에 마음을 모아 그것을 명상 주제로 삼았습니다. 한곳에 모은 이 집중으로 곧 깊은 선정(jhāna)에 들었습니다.",
+    "cover": [
+     244,
+     231,
+     200
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-34-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     152,
+     314,
+     648,
+     398
+    ],
+    "ko": "그 집중을 바탕으로 위빳사나 수행을 하며 정신과 물질의 세 가지 특성을 관찰했습니다. 조건 지어진 실재를 꿰뚫어, 그녀는 곧 아라한이 되었습니다.",
+    "cover": [
+     242,
+     227,
+     196
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-35-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     174,
+     316,
+     626,
+     396
+    ],
+    "ko": "선정에 통달하자 큰 신통이 열렸습니다. 오랜 옛 서원이 이루어지고, 셀 수 없는 생에 걸친 바라밀이 완성되었습니다.",
+    "cover": [
+     240,
+     225,
+     194
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-36-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     152,
+     314,
+     648,
+     398
+    ],
+    "ko": "부처님께서 깨달음을 이루신 지 일곱째 해에, 웁빨라완나 장로니가 공손히 여쭈었습니다. “세존이시여, 제가 신통을 보이도록 허락해 주십시오.”",
+    "cover": [
+     238,
+     222,
+     189
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Uppalavanna-37-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     299,
+     650,
+     381
+    ],
+    "ko": "부처님께서 대중에게 선언하셨습니다. “비구들이여, 신통을 갖춘 나의 비구니 제자들 가운데 웁빨라완나가 으뜸(etadagga)이다.”",
+    "cover": [
+     250,
+     232,
+     200
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
