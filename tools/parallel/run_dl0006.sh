@@ -4,7 +4,7 @@
 set -e
 python3 tools/parallel/en_dl0006.py "$1"
 P=82; C=83
-python3 tools/parallel/align.py DL-0006 en tools/out/parallel/DL-0006.en.paras.json \
+python3 tools/parallel/align.py DL-0006 en tools/out/parallel/DL-0006.en.paras.json --toc \
   --title "KAMMA AT DEATH AND REBIRTH" --by "Sayadaw Dr. Nandamālābhivaṃsa" \
   --pin "1:0=@KAMMA AT DEATH+@Sayadaw Dr. Nandamālābhivaṃsa" \
   --pin "2:0+2:1+2:2=" \

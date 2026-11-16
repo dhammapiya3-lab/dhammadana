@@ -23,6 +23,7 @@ ap.add_argument('--gl-end', default=None, help='용어 풀이가 끝난 뒤 첫 
 ap.add_argument('--gl-nl', action='store_true', help="용어 풀이가 '낱말(roman)⏎풀이' 모양(DL-0011) — 쪽에서 잘린 낱말 조각('**웨**' + '**다나(vedanā)**')도 이어 읽음")
 ap.add_argument('--pin', action='append', default=[], help='짝을 손으로 정함: "한국어 열쇠+…=원서 번호+…" (예 "1:0=0+1" 속표지 ↔ 원서 제목·지은이). 원서 쪽을 비우면("2:0+2:1=") 그 한국어 문단은 짝 없음');
 ap.add_argument('--fnpin', action='append', default=[], help='각주 짝을 손으로: "한국어 각주 번호=원서 각주 번호" (예 "40=33")');
+ap.add_argument('--toc', action='store_true', help='차례도 줄마다 짝지음 — 한국어 차례(%% 문단)의 제목 줄 ↔ 원서 차례(k toc) 항목, 쪽 번호는 빼고 제목끼리 (운영자 요청, 2026-11-17)')
 ap.add_argument('--title', default=''); ap.add_argument('--by', default=''); ap.add_argument('--source', default='')
 A = ap.parse_args()
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -198,6 +199,11 @@ for pin in A.pin:
                     's': [{'ko': [[k, 0, len(KOT[k])] for k in kk], 'or': [[o, 0, len(ORIG[o]['t'])] for o in oo]}]})
 kord = {x['key']: i for i, x in enumerate(KO_DP)}
 out.sort(key=lambda g: (kord.get(g['ko'][0], 1e9) if g['ko'] else 1e9))
+# 차례(--toc): 쪽 번호를 뺀 제목 줄끼리 순서를 지키며 짝지음 → 묶음 하나(toc: 1) — tools/parallel/toc.py
+if A.toc:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from toc import toc_group, put_toc
+    put_toc(out, toc_group(T['body'], ORIG, out, enc, book=A.book))
 # 용어 풀이: 한국어 '낱말(roman) : 풀이' ↔ 원서 낱말
 import unicodedata
 def rk(x): return re.sub(r'[^a-z]', '', unicodedata.normalize('NFD', x).encode('ascii', 'ignore').decode().lower())
@@ -264,14 +270,14 @@ if KF and EF:
         FN = {k: v for k, v in FN.items() if v != ei}; FN[kn] = ei
         fn_rep = [r for r in fn_rep if r[1][0] != ei and r[0][0] != kn] + [((kn, dict(KF)[kn]), (ei, ORIG[ei]['t']), 1.0)]
     print('각주 짝', len(FN), '/ 한국어 각주', len(KF), '(역주', len(YK), ') / 원서 각주', len(EF))
-scores = [s['sc'] for g in out for s in g['s'] if 'sc' in s]
+scores = [s['sc'] for g in out if not g.get('toc') for s in g['s'] if 'sc' in s]
 res = {'book': A.book, 'lang': A.lang, 'title': A.title, 'by': A.by, 'source': A.source,
        'made': datetime.date.today().isoformat(), 'method': 'LaBSE 문장 뜻 비교 + 순서 지키는 짝짓기(1:1·1:2·2:1·2:2·1:3·3:1·건너뛰기)',
        'note': '짝 자료: groups[].ko = 한국어 문단 열쇠 "쪽 순번:문단 순번"(content/texts 본문 기준), or = 원서 문단 번호, s = 문장 짝 [문단 열쇠·번호, 시작 글자, 끝 글자], sc = 뜻 비슷함(0~1)',
        'orig': [{'pg': p['pg'], 'k': p['k'], 't': p['t']} for p in ORIG], 'groups': out, **({'fn': FN} if FN else {})}
 os.makedirs(os.path.join(REPO, 'content/parallel'), exist_ok=True)
 json.dump(res, open(os.path.join(REPO, 'content/parallel', f'{A.book}.{A.lang}.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
-low = [(g, s) for g in out for s in g['s'] if not g.get('gl') and (s.get('sc', 1) < 0.5 or 'sc' not in s)]   # 용어 풀이 짝은 점수가 없으니 확인 목록에서 뺌
+low = [(g, s) for g in out for s in g['s'] if not g.get('gl') and not g.get('toc') and (s.get('sc', 1) < 0.5 or 'sc' not in s)]   # 용어 풀이 짝은 점수가 없으니 확인 목록에서 뺌
 print('문장 짝', sum(len(g['s']) for g in out), '문단 묶음', len(out), '평균 점수', round(float(np.mean(scores)), 3),
       '0.5 아래·건너뜀', len(low))
 KOI = {x['key']: x for x in KO}

@@ -2309,6 +2309,7 @@ function parApply() {
   if (R.parMode === 'para' && wide) rf.style.maxWidth = `calc(${R.mw}em * 2 + 3em)`;
   let shown = 0, lastPg = null;
   D.groups.forEach((g, gi) => {
+    if (g.toc) { if (parToc(g, O, kText, oHtml, wide)) shown++; return; }
     const els = g.ko.map(k => { const [n, s] = k.split(':'); return $(`#rBody [data-pg="${n}"][data-s="${s}"]`); }).filter(Boolean);
     if (!els.length || !g.or.length) return;
     shown++;
@@ -2372,6 +2373,35 @@ document.addEventListener('click', e => {
   pop.querySelector('.fnpop-x').onclick = () => pop.remove();
 }, true);
 document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('par-fn')) { e.preventDefault(); e.target.click(); } });
+
+// 차례 줄마다 원서 차례 제목(쪽 번호는 뺌) — 넓은 화면 '문단 나란히'는 오른쪽 칸, 그 밖은 줄 아래 (운영자 요청, 2026-11-17)
+function parToc(g, O, kText, oHtml, wide) {
+  const rowOf = (key, a) => {   // 차례 문단 안 글자 자리 → 그 줄의 .tl (tocLines 와 같은 줄 세기: 빈 줄은 빼고 '~' 는 간격 줄)
+    const [n, k] = key.split(':'), el = $(`#rBody .r-toc[data-pg="${n}"][data-s="${k}"]`); if (!el) return null;
+    const before = kText(key).slice(0, a).split('\n'); before.pop();
+    return [...el.children].filter(c => !c.classList.contains('tl-or'))[before.filter(l => l.trim()).length] || null;   // 앞서 끼운 원서 줄은 빼고 셈
+  };
+  const two = R.parMode === 'para' && wide; let any = false;
+  // 원서 줄을 끼워 넣으면 '.l0 + .l0' 같은 이웃 규칙이 바뀌므로, 먼저 지금 줄 간격을 그대로 굳혀 둠
+  g.ko.forEach(key => { const [n, k] = key.split(':'), el = $(`#rBody .r-toc[data-pg="${n}"][data-s="${k}"]`); if (el) [...el.children].forEach(c => { c.style.marginTop = getComputedStyle(c).marginTop; }); });
+  const lv = el => (el.className.match(/\bl\d\b/) || ['l0'])[0];
+  const mk = (row, o) => { const d = document.createElement('div'); d.className = 'tl-or ' + lv(row) + (row.querySelector('strong,b') ? ' tl-b' : '');   // 한국어 줄이 굵으면 원서 줄도 굵게
+    d.lang = 'en'; d.innerHTML = o.map(([i, a, b]) => oHtml(O[i].t.slice(a, b))).join(' / '); return d; };
+  const add = (row, d) => { let at = row; while (at.nextElementSibling && at.nextElementSibling.classList.contains('tl-or')) at = at.nextElementSibling; at.after(d); };
+  g.s.forEach(s => {
+    const anchor = s.ko.length ? s.ko[0] : s.after; if (!anchor) return;
+    const row = rowOf(anchor[0], anchor[1]); if (!row || !row.classList.contains('tl')) return;
+    row.closest('.r-toc').classList.add('par-tc', two ? 'tc2' : 'tc1');
+    const d = mk(row, s.or); if (!s.ko.length) d.classList.add('tl-only'); else if (two) d.style.marginTop = row.style.marginTop; add(row, d); any = true;
+  });
+  if (two) $$('#rBody .r-toc.tc2').forEach(t => {   // 두 칸: 한국어 줄마다 원서 칸 하나 (짝 없는 줄은 빈 칸, 원서만 있는 줄은 한국어 칸을 비움)
+    [...t.children].forEach(c => {
+      if (c.classList.contains('tl') && !(c.nextElementSibling && c.nextElementSibling.classList.contains('tl-or') && !c.nextElementSibling.classList.contains('tl-only'))) { const e = document.createElement('div'); e.className = 'tl-or tl-none ' + lv(c); e.style.marginTop = c.style.marginTop; c.after(e); }
+      if (c.classList.contains('tl-only')) { const e = document.createElement('div'); e.className = 'tl tl-blank ' + lv(c); e.setAttribute('aria-hidden', 'true'); c.before(e); }
+    });
+  });
+  return any;
+}
 
 /* ---------- 화면 낭독기: 고른 단추 알리기 (운영자 요청, 2026-11-17 — 화면은 그대로) ---------- */
 (function a11yPressed() {

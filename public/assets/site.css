@@ -1114,6 +1114,17 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .par-sent .ps-o{font-family:Georgia,'Times New Roman',var(--serif);color:var(--ink-soft);font-size:.9em;line-height:1.65;margin-top:.15em;padding-left:.8em;border-left:2px solid var(--line)}
 .par-sent .ps-hd{margin-top:-.6em}
 
+/* 원서 대조 — 차례 줄마다 원서 차례 제목(쪽 번호 없이) (운영자 요청, 2026-11-17) */
+.r-toc .tl-or{font-family:Georgia,'Times New Roman',var(--serif);color:var(--ink-soft);font-size:.86em;line-height:1.45}
+.r-toc.tc1 .tl-or{margin:-.05em 0 .35em;padding-left:.7em;border-left:2px solid var(--line)}
+.r-toc.tc1 .tl-or.l1{margin-left:1.5em}.r-toc.tc1 .tl-or.l2{margin-left:3em}.r-toc.tc1 .tl-or.l3{margin-left:4.5em}
+.r-toc .tl-or.tl-only{font-style:italic}
+.r-toc.tc2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:2.4em;align-items:baseline}
+.r-toc.tc2 .tl-sp{grid-column:1 / -1}
+.r-toc.tc2 .tl-or{border-left:1px solid var(--line);padding-left:1.2em;margin-left:-1.2em;margin-bottom:.18em}
+.r-toc .tl-or.tl-b{font-weight:700}
+.r-toc.tc2 .tl-or.l1{padding-left:2.7em}.r-toc.tc2 .tl-or.l2{padding-left:4.2em}.r-toc.tc2 .tl-or.l3{padding-left:5.7em}
+
 /* □ 안 번호 제목 → 네모 테두리 번호 (운영자 요청, 2026-11-16 — DL-0031) */
 .boxnum{display:inline-block;border:.09em solid currentColor;min-width:1.2em;padding:0 .18em;line-height:1.15;text-align:center;font-size:.82em;vertical-align:.06em;margin-right:.35em;border-radius:1px;font-weight:inherit}
 
