@@ -197,17 +197,12 @@ for pin in A.pin:
         KOT = {f'{n}:{i}': q for n, (lab, _, txt) in enumerate(pages, 1) for i, q in enumerate(paras(txt))}   # 그림 문단(속표지 그림 등)도 손으로 짝지을 수 있게
         out.append({'ko': kk, 'or': oo, 'ka': plain(KOT[kk[0]])[:24], 'pin': 1,
                     's': [{'ko': [[k, 0, len(KOT[k])] for k in kk], 'or': [[o, 0, len(ORIG[o]['t'])] for o in oo]}]})
-<<<<<<< Updated upstream
-kord = {x['key']: i for i, x in enumerate(KO_DP)}
-out.sort(key=lambda g: (kord.get(g['ko'][0], 1e9) if g['ko'] else 1e9))
+out.sort(key=lambda g: tuple(map(int, g['ko'][0].split(':'))) if g['ko'] else (1e9, 0))
 # 차례(--toc): 쪽 번호를 뺀 제목 줄끼리 순서를 지키며 짝지음 → 묶음 하나(toc: 1) — tools/parallel/toc.py
 if A.toc:
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from toc import toc_group, put_toc
     put_toc(out, toc_group(T['body'], ORIG, out, enc, book=A.book))
-=======
-out.sort(key=lambda g: tuple(map(int, g['ko'][0].split(':'))) if g['ko'] else (1e9, 0))
->>>>>>> Stashed changes
 # 용어 풀이: 한국어 '낱말(roman) : 풀이' ↔ 원서 낱말
 import unicodedata
 def rk(x): return re.sub(r'[^a-z]', '', unicodedata.normalize('NFD', x).encode('ascii', 'ignore').decode().lower())
@@ -281,11 +276,7 @@ res = {'book': A.book, 'lang': A.lang, 'title': A.title, 'by': A.by, 'source': A
        'orig': [{'pg': p['pg'], 'k': p['k'], 't': p['t']} for p in ORIG], 'groups': out, **({'fn': FN} if FN else {})}
 os.makedirs(os.path.join(REPO, 'content/parallel'), exist_ok=True)
 json.dump(res, open(os.path.join(REPO, 'content/parallel', f'{A.book}.{A.lang}.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
-<<<<<<< Updated upstream
-low = [(g, s) for g in out for s in g['s'] if not g.get('gl') and not g.get('toc') and (s.get('sc', 1) < 0.5 or 'sc' not in s)]   # 용어 풀이 짝은 점수가 없으니 확인 목록에서 뺌
-=======
-low = [(g, s) for g in out for s in g['s'] if not g.get('gl') and not g.get('pin') and (s.get('sc', 1) < 0.5 or 'sc' not in s)]   # 용어 풀이 짝은 점수가 없으니 확인 목록에서 뺌
->>>>>>> Stashed changes
+low = [(g, s) for g in out for s in g['s'] if not g.get('gl') and not g.get('toc') and not g.get('pin') and (s.get('sc', 1) < 0.5 or 'sc' not in s)]   # 용어 풀이·차례·손으로 정한 짝은 확인 목록에서 뺌
 print('문장 짝', sum(len(g['s']) for g in out), '문단 묶음', len(out), '평균 점수', round(float(np.mean(scores)), 3),
       '0.5 아래·건너뜀', len(low))
 KOI = {x['key']: x for x in KO}

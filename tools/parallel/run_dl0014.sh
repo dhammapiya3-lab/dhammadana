@@ -3,7 +3,7 @@
 #   sh tools/parallel/run_dl0014.sh Awareness.Alone.Is.Not.Enough.English.pdf   (개정 2판 2010)
 set -e
 python3 tools/parallel/en_dl0014_2010.py "$1"
-python3 tools/parallel/align.py DL-0014 en tools/out/parallel/DL-0014.en.paras.json \
+python3 tools/parallel/align.py DL-0014 en tools/out/parallel/DL-0014.en.paras.json --toc \
   --title "Awareness Alone Is Not Enough — Questions & Answers with Ashin Tejaniya" --by "Ashin Tejaniya" \
   --source "Second, revised edition May 2010 · Auspicious Affinity (Malaysia) · https://ashintejaniya.org/books-awareness-is-not-enough" \
   --gl-end '^옮긴이 \|' \

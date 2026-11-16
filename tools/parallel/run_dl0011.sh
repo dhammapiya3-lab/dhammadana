@@ -11,7 +11,7 @@ for p in o:
     if p['k'] == 'gl': p['term'], _, p['def'] = p['t'].partition('\n')
 json.dump(o, open('$P', 'w'), ensure_ascii=False, indent=0)"
 fi
-python3 tools/parallel/align.py DL-0011 en "$P" \
+python3 tools/parallel/align.py DL-0011 en "$P" --toc \
   --title "Dhamma Everywhere: Welcoming Each Moment With Awareness+Wisdom" --by "Ashin Tejaniya" \
   --source "Dhamma-Everywhere-V1.0.Ilustrated.pdf (Auspicious Affinity edition, May 2012)" \
   --gl-start '^\*\*고짜라' --gl-end '^## 한국 독자들에게' --gl-nl \
