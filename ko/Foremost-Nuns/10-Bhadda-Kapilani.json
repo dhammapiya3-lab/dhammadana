@@ -1,0 +1,492 @@
+[
+ {
+  "img": "images/10-Bhadda-Kapilani-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     205,
+     326,
+     598,
+     376
+    ],
+    "ko": "밧다 까삘라니 장로니",
+    "cover": false,
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     150,
+     374,
+     652,
+     404
+    ],
+    "ko": "전생을 기억하는 데 으뜸인 이",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     392,
+     80,
+     752,
+     126
+    ],
+    "ko": "옛 서원",
+    "cover": false,
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     452,
+     132,
+     752,
+     250
+    ],
+    "ko": "십만 겁 전 함사와띠에서 한 부유한 여인이 전생을 기억하는 데 으뜸으로 선언된 비구니를 보았습니다.",
+    "cover": false,
+    "align": "right",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     548,
+     252,
+     752,
+     366
+    ],
+    "ko": "빠두뭇따라 부처님께 깊은 공양을 올리며, 그녀는 자기 운명의 씨앗을 심었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     80,
+     752,
+     126
+    ],
+    "ko": "윤회의 굴레",
+    "cover": false,
+    "align": "center",
+    "em": 32,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     480,
+     136,
+     752,
+     346
+    ],
+    "ko": "십만 겁 동안 그녀는 인간 세상과 천신 세계를 오가며 태어났습니다.\n\n수많은 생에 걸쳐 서원을 품고 다니다가 바라나시에 태어났습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     392,
+     80,
+     752,
+     128
+    ],
+    "ko": "바라나시의 다툼",
+    "cover": false,
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     404,
+     134,
+     752,
+     182
+    ],
+    "ko": "시누이와 심한 다툼이 벌어졌습니다.\n분노에 눈이 먼 그녀는",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     562,
+     182,
+     752,
+     262
+    ],
+    "ko": "벽지불의 발우를 낚아채 공양 받은 음식을 쏟아 버리고,",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     592,
+     262,
+     752,
+     340
+    ],
+    "ko": "앙갚음으로 진흙을\n가득 채웠습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     410,
+     80,
+     752,
+     126
+    ],
+    "ko": "달콤한 참회",
+    "cover": false,
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     480,
+     136,
+     752,
+     210
+    ],
+    "ko": "정신이 번쩍 든 그녀는 발우를 깨끗이 씻고 이렇게 채워 올렸습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     540,
+     232,
+     752,
+     304
+    ],
+    "ko": "• 향기로운 가루\n• 네 가지 단 음식\n(catumadhu)",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     560,
+     308,
+     752,
+     362
+    ],
+    "ko": "• 연꽃 꽃가루 같은\n새하얀 버터기름",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     438,
+     80,
+     752,
+     128
+    ],
+    "ko": "빛나는 소원",
+    "cover": false,
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     452,
+     134,
+     752,
+     336
+    ],
+    "ko": "깨끗해진 발우를 돌려드리며 그녀는 분명한 소원을 빌었습니다.\n\n“이 음식이 빛나듯 내 살빛도 빛나기를.”\n\n몸의 모습을 이루는 씨앗이 뿌려졌습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     410,
+     82,
+     752,
+     126
+    ],
+    "ko": "위대한 출가",
+    "cover": false,
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     434,
+     132,
+     752,
+     262
+    ],
+    "ko": "마지막 생에 그녀는 삡팔리와 혼인했습니다. 함께 강한 경각심을 품은 부부는 세속의 재산을 버리고 떠도는 수행자가 되었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     50,
+     594,
+     122
+    ],
+    "ko": "갈라진 길",
+    "cover": false,
+    "align": "center",
+    "em": 32,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     278,
+     122,
+     514,
+     298
+    ],
+    "ko": "갈림길에서 두 사람의 길이 나뉘었습니다.\n\n마하깟사빠는 오른쪽으로 가서 마침내 부처님을 뵈었습니다.\n\n밧다 까삘라니는 왼쪽으로 홀로 광야로 걸어갔습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     82,
+     590,
+     128
+    ],
+    "ko": "다섯 해의 유행",
+    "cover": false,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     240,
+     150,
+     256,
+     174
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     254,
+     130,
+     606,
+     198
+    ],
+    "ko": "여인들은 아직 승가에 들 수 없었습니다.\n그녀는 홀로 기다림을 견뎠습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     270,
+     198,
+     575,
+     250
+    ],
+    "ko": "Pañca vassāni nivasiṃ paribbājavate ahaṃ\n다섯 해 동안 나는 유행자의 서계 속에 살았네",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     104,
+     752,
+     206
+    ],
+    "ko": "궁극의 성취",
+    "cover": false,
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     446,
+     210,
+     752,
+     410
+    ],
+    "ko": "마침내 승가에 들어 깨달음을 이루자 그녀의 마음이 열렸습니다.\n\n그녀는 전생의 기억에 놀랍도록 통달했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Bhadda-Kapilani-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     72,
+     398,
+     128
+    ],
+    "ko": "으뜸의 칭호",
+    "cover": false,
+    "align": "center",
+    "em": 32,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     64,
+     128,
+     398,
+     236
+    ],
+    "ko": "“비구들이여, 전생을 기억하는 나의 비구니 제자들 가운데 밧다 까삘라니가 으뜸(etadagga)이다.”",
+    "cover": false,
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ }
+]
