@@ -1,0 +1,314 @@
+[
+ {
+  "img": "images/32-Kaludayi-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     348,
+     598,
+     420
+    ],
+    "ko": "돌아오지 않는 사신\n깔루다이 장로와 60요자나 하늘 다리",
+    "cover": [
+     248,
+     242,
+     230
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     328,
+     764,
+     426
+    ],
+    "ko": "믿음을 일으키는 이의 서원\n아득한 옛날 항사와띠에서 한 신심 깊은 재가자가 빠두뭇따라 부처님께서\n한 제자를 칭찬하시는 것을 보았습니다. 그는 앞날의 부처님 아래에서\n믿음을 일으키는 데 으뜸이 되겠다고 서원했습니다.",
+    "cover": [
+     248,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     32,
+     764,
+     128
+    ],
+    "ko": "운명이 얽히다\n싯닷타 왕자가 태어난 바로 그날, 궁중에 피부가 검은(kāḷa)\n아이가 태어났습니다(udaya). 사람들은 그를 깔루다이라 불렀습니다.",
+    "cover": [
+     246,
+     243,
+     228
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     316,
+     760,
+     436
+    ],
+    "ko": "까삘라왓투의 화려한 성안에서 자라며\n두 소년, 깔루다이와 싯닷타 왕자는 떨어질 수 없는 놀이 동무가 되었습니다.\n이 깊은 어린 시절의 우정이 훗날 역사를 바꿀 충성을 낳았습니다.",
+    "cover": [
+     249,
+     248,
+     243
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     56,
+     760,
+     166
+    ],
+    "ko": "기원전 528년, 숫도다나 왕은 깨달은 아들을 몹시 보고 싶어 했습니다.\n왕은 60요자나 떨어진 라자가하의 웰루와나 승원으로\n사신단을 아홉 번 잇달아 보냈습니다. 아무도 돌아오지 않았습니다.",
+    "cover": [
+     246,
+     244,
+     232
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     42,
+     760,
+     126
+    ],
+    "ko": "세속의 일을 잊다\n9천 명이 왕의 부름을 전하러 왔습니다. 그러나 그들은 법을 듣고\n깨달음을 얻어 승가에 들었고, 세속의 심부름에는 마음이 없었습니다.",
+    "cover": [
+     246,
+     244,
+     235
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     40,
+     760,
+     84
+    ],
+    "ko": "깔루다이가 숫도다나 왕을 돕다",
+    "cover": [
+     249,
+     249,
+     244
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     50,
+     358,
+     750,
+     410
+    ],
+    "ko": "깔루다이는 한 가지 조건으로 부처님을 모셔 오겠다고 했습니다.\n자기도 출가하게 해 달라는 것이었습니다. 다급한 왕은 허락했습니다.",
+    "cover": [
+     249,
+     250,
+     245
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     40,
+     760,
+     92
+    ],
+    "ko": "라자가하에 이른 깔루다이는 깨달음을 얻고 출가했습니다. 그래도 약속을 잊지 않았습니다.\n겨울은 부처님이 길을 떠나시기에 너무 혹독함을 알고, 아라한은 앙상한 나무 아래 앉아 기다렸습니다.",
+    "cover": [
+     249,
+     249,
+     245
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     436,
+     152,
+     688,
+     290
+    ],
+    "ko": "3월 보름달이\n봄을 데려왔습니다.\n\n꽃 핀 나무와 걷기 좋은 길을 찬탄하는\n게송 60편으로, 깔루다이 장로는\n부처님께 까삘라왓투로 돌아가실\n때가 되었다고 아뢰었습니다.",
+    "cover": [
+     248,
+     246,
+     234
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     40,
+     760,
+     120
+    ],
+    "ko": "60요자나 하늘 다리\n부처님께서는 하루 1요자나씩 느긋하게 걸으셨습니다. 깔루다이는 아침마다\n신통으로 까삘라왓투까지 날아가 왕이 손수 마련한 음식을 가져왔습니다.",
+    "cover": [
+     247,
+     248,
+     236
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     330,
+     382,
+     470,
+     412
+    ],
+    "ko": "하루 1요자나",
+    "cover": [
+     248,
+     249,
+     239
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     344,
+     704,
+     408
+    ],
+    "ko": "날마다 깔루다이는 왕의 음식을 가져왔습니다.\n허공에 머물며 부처님의 거룩한 덕을 자세히 들려주어\n왕실 사람들의 마음을 차츰 녹였습니다.",
+    "cover": [
+     247,
+     245,
+     237
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Kaludayi-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     314,
+     744,
+     432
+    ],
+    "ko": "“친척들에게 믿음을 일으키는 나의 제자 가운데\n깔루다이가 으뜸이다.”\n타고난 업과 흔들림 없는 충성이 꼭 맞아 이루어진 옛 서원.",
+    "cover": [
+     249,
+     245,
+     235
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
