@@ -19,6 +19,8 @@ import numpy as np
 ap = argparse.ArgumentParser()
 ap.add_argument('book'); ap.add_argument('lang'); ap.add_argument('orig')
 ap.add_argument('--gl-start', default=None, help='용어 풀이가 시작하는 한국어 문단(정규식, 예: "^\\*\\*깜마\\[")');
+ap.add_argument('--gl-end', default=None, help='용어 풀이가 끝난 뒤 첫 한국어 문단(정규식) — 그 뒤(역자 후기·판권지 등)는 짝짓지 않음')
+ap.add_argument('--gl-nl', action='store_true', help="용어 풀이가 '낱말(roman)⏎풀이' 모양(DL-0011) — 쪽에서 잘린 낱말 조각('**웨**' + '**다나(vedanā)**')도 이어 읽음")
 ap.add_argument('--title', default=''); ap.add_argument('--by', default=''); ap.add_argument('--source', default='')
 A = ap.parse_args()
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -54,7 +56,9 @@ for n, (lab, _, txt) in enumerate(pages, 1):
 # 빠알리 용어 풀이(가나다순으로 다시 늘어놓아 원서와 순서가 다름) — 차례 짝짓기에서 빼고 낱말(로마자)로 따로 짝지음
 GL0 = next((i + 2 for i, p in enumerate(KO) if re.match(r'## IV\.', p['t'])), len(KO))
 if A.gl_start: GL0 = next((i for i, p in enumerate(KO) if re.search(A.gl_start, p['t'])), len(KO))
-KO_GL = KO[GL0:]; KO_DP = KO[:GL0]
+GLE = len(KO)
+if A.gl_end: GLE = next((i for i, p in enumerate(KO) if i > GL0 and re.search(A.gl_end, p['t'])), len(KO))
+KO_GL = KO[GL0:GLE]; KO_DP = KO[:GL0]
 SPL = re.compile(r'(?<=[.?!。…])(?:[”’"\')\]]*)\s+|\n')
 
 
@@ -178,9 +182,14 @@ def rk(x): return re.sub(r'[^a-z]', '', unicodedata.normalize('NFD', x).encode('
 EG = {}
 for i, p in enumerate(ORIG):
     if p['k'] == 'gl': EG.setdefault(rk(re.sub(r'\(also see[^)]*\)', '', p['term'])), i)
-gl_ok = gl_no = 0; cur = None
+gl_ok = gl_no = 0; cur = None; frag = []
 for p in KO_GL:
-    m = re.match(r'[^\n(]*?\(([^)]*[a-zāīūṃṅñṭḍṇḷ][^)]*)\)\s*:', plain(p['t'])) or re.match(r'[^\n\[]*?\[([^\]]*[a-zāīūṃṅñṭḍṇḷ][^\]]*)\]\s*\n', plain(p['t']))   # '낱말(roman) : 풀이' 또는 '낱말[roman]⏎풀이'(DL-0013)
+    if A.gl_nl and re.fullmatch(r'\*\*[^\n*]+\*\*', p['t']) and '(' not in p['t'].replace('(**', ''):   # 쪽 끝에서 잘린 낱말 조각 → 다음 문단과 함께
+        frag.append(p); continue
+    if A.gl_nl and re.fullmatch(r'\*\*[^\n*]+\(\*\*', p['t']): frag.append(p); continue      # '**실라(**' + '**sīla)**'
+    pt = ''.join(plain(f['t']) for f in frag) + plain(p['t'])
+    m3 = (re.match(r'[^\n(]*?\(([^)]*[a-zāīūṃṅñṭḍṇḷ][^)]*)\)\s*\n', pt) or re.match(r'[^\n(]+\n[a-z]\) ([a-zāīūṃṅñṭḍṇḷ]+)\n', pt)) if A.gl_nl else None
+    m = m3 or re.match(r'[^\n(]*?\(([^)]*[a-zāīūṃṅñṭḍṇḷ][^)]*)\)\s*:', plain(p['t'])) or re.match(r'[^\n\[]*?\[([^\]]*[a-zāīūṃṅñṭḍṇḷ][^\]]*)\]\s*\n', plain(p['t']))   # '낱말(roman) : 풀이' 또는 '낱말[roman]⏎풀이'(DL-0013)
     if m:
         j = None
         for c in m.group(1).split(','):          # 'pāramī, pāramita' 처럼 여러 표기
@@ -193,12 +202,14 @@ for p in KO_GL:
             if j is None:
                 best = max(EG, key=lambda k: difflib.SequenceMatcher(None, k, k0).ratio())
                 if difflib.SequenceMatcher(None, best, k0).ratio() >= 0.8: j = EG[best]
-        if j is None: gl_no += 1; cur = None; continue
+        if j is None: gl_no += 1; print('  용어 못 찾음:', m.group(1)); cur = None; frag = []; continue
         gl_ok += 1
-        cur = {'ko': [p['key']], 'or': [j], 'ka': plain(p['t'])[:24], 'gl': 1, 's': [{'ko': [[p['key'], 0, len(p['t'])]], 'or': [[j, 0, len(ORIG[j]['t'])]]}]}
+        ps = frag + [p]; frag = []
+        cur = {'ko': [x['key'] for x in ps], 'or': [j], 'ka': pt[:24], 'gl': 1, 's': [{'ko': [[x['key'], 0, len(x['t'])] for x in ps], 'or': [[j, 0, len(ORIG[j]['t'])]]}]}
         out.append(cur)
     elif cur is not None:      # 풀이가 다음 문단(①②③, 다음 쪽)으로 이어짐
-        cur['ko'].append(p['key']); cur['s'][0]['ko'].append([p['key'], 0, len(p['t'])])
+        for x in frag + [p]: cur['ko'].append(x['key']); cur['s'][0]['ko'].append([x['key'], 0, len(x['t'])])
+        frag = []
 print('용어 풀이 짝', gl_ok, '못 찾음', gl_no)
 scores = [s['sc'] for g in out for s in g['s'] if 'sc' in s]
 res = {'book': A.book, 'lang': A.lang, 'title': A.title, 'by': A.by, 'source': A.source,
@@ -207,7 +218,7 @@ res = {'book': A.book, 'lang': A.lang, 'title': A.title, 'by': A.by, 'source': A
        'orig': [{'pg': p['pg'], 'k': p['k'], 't': p['t']} for p in ORIG], 'groups': out}
 os.makedirs(os.path.join(REPO, 'content/parallel'), exist_ok=True)
 json.dump(res, open(os.path.join(REPO, 'content/parallel', f'{A.book}.{A.lang}.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
-low = [(g, s) for g in out for s in g['s'] if s.get('sc', 1) < 0.5 or 'sc' not in s]
+low = [(g, s) for g in out for s in g['s'] if not g.get('gl') and (s.get('sc', 1) < 0.5 or 'sc' not in s)]   # 용어 풀이 짝은 점수가 없으니 확인 목록에서 뺌
 print('문장 짝', sum(len(g['s']) for g in out), '문단 묶음', len(out), '평균 점수', round(float(np.mean(scores)), 3),
       '0.5 아래·건너뜀', len(low))
 KOI = {x['key']: x for x in KO}
