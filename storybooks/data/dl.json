@@ -1,55 +1,55 @@
 {
 "Foremost-Monks": {
-"n": 467,
-"pdf": 656158850,
-"pdfs": 68842164,
-"stories": 21,
-"zip": 655742947
+"n": 505,
+"pdf": 708307521,
+"pdfs": 74460986,
+"stories": 23,
+"zip": 707877926
 },
 "Foremost-Monks/01-Kondanna": {
 "n": 38,
-"pdf": 61707979,
-"zip": 61430632
+"pdf": 61707850,
+"zip": 61430942
 },
 "Foremost-Monks/02-03-Sariputta-Moggallana": {
 "n": 57,
-"pdf": 85281822,
-"zip": 84984817
+"pdf": 85281648,
+"zip": 84985024
 },
 "Foremost-Monks/04-Maha-Kassapa": {
 "n": 41,
-"pdf": 57279609,
-"zip": 57000630
+"pdf": 57277192,
+"zip": 56998280
 },
 "Foremost-Monks/05-Anuruddha": {
 "n": 53,
-"pdf": 71850717,
-"zip": 71568947
+"pdf": 71852158,
+"zip": 71570350
 },
 "Foremost-Monks/06-Bhaddiya": {
 "n": 15,
-"pdf": 20444735,
-"zip": 20170782
+"pdf": 20445235,
+"zip": 20171401
 },
 "Foremost-Monks/07-Lakundaka": {
 "n": 13,
-"pdf": 16523829,
-"zip": 16254487
+"pdf": 16524984,
+"zip": 16254975
 },
 "Foremost-Monks/08-Pindola": {
 "n": 9,
-"pdf": 10468187,
-"zip": 10198248
+"pdf": 10469029,
+"zip": 10199055
 },
 "Foremost-Monks/09-Punna": {
 "n": 15,
-"pdf": 21070074,
-"zip": 20799138
+"pdf": 21069898,
+"zip": 20798876
 },
 "Foremost-Monks/10-Kaccana": {
 "n": 15,
-"pdf": 23116647,
-"zip": 22848859
+"pdf": 23116374,
+"zip": 22848600
 },
 "Foremost-Monks/11-12-Panthakas": {
 "n": 12,
@@ -58,58 +58,140 @@
 },
 "Foremost-Monks/13-Subhuti": {
 "n": 13,
-"pdf": 18811466,
-"zip": 18548542
+"pdf": 18812972,
+"zip": 18549441
 },
 "Foremost-Monks/14-Khadiravaniya-Revata": {
 "n": 25,
-"pdf": 36071704,
-"zip": 35795169
+"pdf": 36072697,
+"zip": 35796109
 },
 "Foremost-Monks/15-Kankha-Revata": {
 "n": 13,
-"pdf": 19139719,
-"zip": 18872783
+"pdf": 19141029,
+"zip": 18874086
 },
 "Foremost-Monks/16-Sona-Kolivisa": {
 "n": 18,
-"pdf": 24810845,
-"zip": 24540800
+"pdf": 24811551,
+"zip": 24541388
 },
 "Foremost-Monks/17-Sona-Kutikanna": {
 "n": 26,
-"pdf": 37386551,
-"zip": 37113595
+"pdf": 37386452,
+"zip": 37114607
 },
 "Foremost-Monks/18-Sivali": {
 "n": 15,
-"pdf": 22552650,
-"zip": 22287244
+"pdf": 22553485,
+"zip": 22288468
 },
 "Foremost-Monks/19-Vakkali": {
 "n": 11,
-"pdf": 12411653,
-"zip": 12148355
+"pdf": 12412673,
+"zip": 12148559
 },
 "Foremost-Monks/20-21-Rahula-Ratthapala": {
 "n": 34,
-"pdf": 48899229,
-"zip": 48612738
+"pdf": 48898434,
+"zip": 48613043
 },
 "Foremost-Monks/23-Vangisa": {
 "n": 14,
-"pdf": 18627051,
-"zip": 18361748
+"pdf": 18627311,
+"zip": 18362336
 },
 "Foremost-Monks/24-Upasena-Vangantaputta": {
 "n": 15,
-"pdf": 22185439,
-"zip": 21910902
+"pdf": 22186907,
+"zip": 21912578
 },
 "Foremost-Monks/25-Dabba": {
 "n": 15,
-"pdf": 18765077,
-"zip": 18495008
+"pdf": 18766670,
+"zip": 18496814
+},
+"Foremost-Monks/26-Pilinda-Vaccha": {
+"n": 12,
+"pdf": 18722234,
+"zip": 18454683
+},
+"Foremost-Monks/27-Bahiya-Daruciriya": {
+"n": 26,
+"pdf": 33941852,
+"zip": 33666021
+},
+"Foremost-Nuns": {
+"n": 283,
+"pdf": 385819325,
+"pdfs": 40815084,
+"stories": 13,
+"zip": 385466640
+},
+"Foremost-Nuns/01-Maha-Pajapati-Gotami": {
+"n": 30,
+"pdf": 42615009,
+"zip": 42334961
+},
+"Foremost-Nuns/02-Khema": {
+"n": 37,
+"pdf": 52994403,
+"zip": 52719509
+},
+"Foremost-Nuns/03-Uppalavanna": {
+"n": 37,
+"pdf": 49061183,
+"zip": 48781001
+},
+"Foremost-Nuns/04-Patacara": {
+"n": 30,
+"pdf": 36870910,
+"zip": 36596379
+},
+"Foremost-Nuns/05-Dhammadinna": {
+"n": 22,
+"pdf": 29279296,
+"zip": 29008966
+},
+"Foremost-Nuns/06-Nanda": {
+"n": 12,
+"pdf": 14593957,
+"zip": 14329805
+},
+"Foremost-Nuns/07-Sona": {
+"n": 15,
+"pdf": 18516129,
+"zip": 18251380
+},
+"Foremost-Nuns/08-Sakula": {
+"n": 15,
+"pdf": 24089633,
+"zip": 23822219
+},
+"Foremost-Nuns/09-Bhadda-Kundalakesa": {
+"n": 25,
+"pdf": 33182668,
+"zip": 32904918
+},
+"Foremost-Nuns/10-Bhadda-Kapilani": {
+"n": 11,
+"pdf": 14122444,
+"zip": 13853421
+},
+"Foremost-Nuns/11-Bhadda-Kaccana": {
+"n": 13,
+"pdf": 20155144,
+"zip": 19886919
+},
+"Foremost-Nuns/12-Kisa-Gotami": {
+"n": 23,
+"pdf": 34654474,
+"zip": 34382847
+},
+"Foremost-Nuns/13-Singalakamata": {
+"n": 13,
+"pdf": 18858875,
+"zip": 18588292
 },
 "Jataka": {
 "n": 422,
