@@ -1,12 +1,16 @@
-Foremost-Monks 24-Upasena-Vangantaputta 15 장
-Foremost-Monks 25-Dabba 15 장
+Foremost-Monks 26-Pilinda-Vaccha 12 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 106 개 / 한글판 이야기 53 편
-공개 주소 확인: 200 1622611바이트
-이야기 Foremost-Monks/24-Upasena-Vangantaputta {'pdf': 22185439, 'zip': 21910902, 'n': 15}
-이야기 Foremost-Monks/25-Dabba {'pdf': 18765077, 'zip': 18495008, 'n': 15}
-책 Foremost-Monks {'pdf': 656158850, 'pdfs': 68842164, 'zip': 655742947, 'stories': 21, 'n': 467}
-내려받기 파일: 3 묶음 새로 만듦
-글로 보기: 53 이야기
-41-Mogharaja
-13-Singalakamata
+R2 에 올림: 70 개 / 한글판 이야기 54 편
+공개 주소 확인: 200 1559146바이트
+이야기 Foremost-Monks/26-Pilinda-Vaccha {'pdf': 18722608, 'zip': 18454549, 'n': 12}
+책 Foremost-Monks {'pdf': 674617689, 'pdfs': 70852701, 'zip': 674197308, 'stories': 22, 'n': 479}
+내려받기 파일: 2 묶음 새로 만듦
+글로 보기: 54 이야기
+To https://github.com/dhammapiya3-lab/dhammadana
+ ! [rejected]        storybooks -> storybooks (fetch first)
+error: failed to push some refs to 'https://github.com/dhammapiya3-lab/dhammadana'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
