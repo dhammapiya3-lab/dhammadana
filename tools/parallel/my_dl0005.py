@@ -103,6 +103,78 @@ for gi, (ki, oi, pin) in enumerate(groups):
         g['note'] = f"원서와 순서가 다릅니다 — 원서 {OR[oi[0]]['pg']}쪽(PDF {OR[oi[0]]['pdf']}쪽)에 있는 글입니다." if OR[oi[0]]['pg'] else '원서와 순서가 다릅니다.'
     out.append(g)
 
+# ---------- 문장마다 짝 (운영자 요청, 2026-11-17): 묶음 안에서 문장을 나눠 순서대로 짝짓고, 번역이 없는 미얀마어 문장은 미얀마어만 ----------
+KSPL = re.compile(r'(?<=[.?!…])[”’"\')\]]*(?=\s|$)')
+MSPL = re.compile(r'(?<=[။?!])[”’"\')\]]*(?=\s|$)')
+def spans(t, rx):
+    out = []; a = 0
+    for m in rx.finditer(t):
+        b = m.end(); seg = t[a:b]
+        if seg.strip(): out.append((a + len(seg) - len(seg.lstrip()), a + len(seg.rstrip())))
+        a = b
+    if t[a:].strip(): out.append((a + len(t[a:]) - len(t[a:].lstrip()), a + len(t[a:].rstrip())))
+    return out
+EC = {}
+def emb(x):
+    if x not in EC: EC[x] = enc([x])[0]
+    return EC[x]
+SKIP = 0.30
+MERGE = 0.12   # 여러 문장을 한데 묶을 때 덜어 내는 값 — 번역 안 된 미얀마어 문장이 옆 문장에 붙지 않고 따로 보이게
+def sent_pairs(ki, oi):
+    K = [(KO[i]['key'], a, b, plain(KO[i]['t'][a:b]).replace('\n', ' ')) for i in ki for a, b in spans(KO[i]['t'], KSPL)]
+    O = [(j, a, b, OR[j]['t'][a:b].replace('\n', ' ')) for j in oi for a, b in spans(OR[j]['t'], MSPL)]
+    if not K or not O: return None
+    if len(K) == 1 and len(O) == 1: return None
+    n, m = len(K), len(O); NEG = -1e9
+    best = [[NEG] * (m + 1) for _ in range(n + 1)]; back = [[None] * (m + 1) for _ in range(n + 1)]; best[0][0] = 0
+    moves = [(1, 1), (1, 2), (2, 1), (2, 2), (1, 3), (3, 1), (1, 0), (0, 1)]
+    for i in range(n + 1):
+        for j in range(m + 1):
+            if best[i][j] == NEG: continue
+            for di, dj in moves:
+                I, J = i + di, j + dj
+                if I > n or J > m: continue
+                if di and dj:
+                    sc = float(emb(' '.join(x[3] for x in K[i:I])) @ emb(' '.join(x[3] for x in O[j:J])))
+                    g = (sc - SKIP) * (di + dj) - MERGE * (di + dj - 2)
+                else: sc = None; g = 0
+                if best[i][j] + g > best[I][J]: best[I][J] = best[i][j] + g; back[I][J] = (i, j, sc)
+    path = []; i, j = n, m
+    while (i, j) != (0, 0):
+        pi, pj, sc = back[i][j]; path.append((pi, i, pj, j, sc)); i, j = pi, pj
+    path.reverse(); res = []
+    for i0, i1, j0, j1, sc in path:
+        e = {'ko': [[k, a, b] for k, a, b, _ in K[i0:i1]], 'or': [[j, a, b] for j, a, b, _ in O[j0:j1]]}
+        if sc is not None: e['sc'] = round(sc, 3)
+        res.append(e)
+    return res
+# 손으로 바로잡은 문장 짝: (한국어 문장 첫머리, 앞에서부터 남길 미얀마어 문장 수) — 나머지는 다음의 짝 없는 한국어 문장에, 없으면 미얀마어만
+SFIX = [('평화롭고 안정된 마음이', 1),          # 48쪽 'အားကြီးရင် ဓားပြီးတယ်' = '단단한 마음은 칼로도 벨 수 없습니다'
+        ('당신 곁에 이런 사람이', 1)]           # 85쪽 끝 두 문장(돈으로도 무엇으로도 값을 매길 수 없다)은 번역에 없음
+def sfix(r):
+    for pre, keep in SFIX:
+        for i, e in enumerate(r):
+            if e['ko'] and plain(KO[KI[e['ko'][0][0]]]['t'][e['ko'][0][1]:e['ko'][0][2]]).startswith(pre) and len(e['or']) > keep:
+                rest = e['or'][keep:]; e['or'] = e['or'][:keep]
+                ka, kb = e['ko'][0][0], e['or'][0][0]
+                e['sc'] = round(float(emb(' '.join(plain(KO[KI[k]]['t'][a:b]) for k, a, b in e['ko'])) @ emb(' '.join(OR[j]['t'][a:b] for j, a, b in e['or']))), 3)
+                nx = r[i + 1] if i + 1 < len(r) else None
+                if nx is not None and nx['ko'] and not nx['or']:
+                    nx['or'] = rest; nx['sc'] = round(float(emb(' '.join(plain(KO[KI[k]]['t'][a:b]) for k, a, b in nx['ko'])) @ emb(' '.join(OR[j]['t'][a:b] for j, a, b in rest))), 3)
+                else:
+                    r[i + 1:i + 1] = [{'ko': [], 'or': [x]} for x in rest]
+    return r
+nsent = nmy = nko = 0
+for g in out:
+    ki = [KI[k] for k in g['ko']]; r = sent_pairs(ki, g['or'])
+    if r and g.get('note') and sum(1 for h in out if h['or'] == g['or']) > 1:
+        r = [max((e for e in r if e['ko'] and e['or']), key=lambda e: e.get('sc', 0))]
+    if r: r = sfix(r)
+    if r:
+        g['s'] = r; nsent += sum(1 for e in r if e['ko'] and e['or']); nmy += sum(1 for e in r if not e['ko']); nko += sum(1 for e in r if not e['or'])
+    else: nsent += 1
+print('문장 짝', nsent, '/ 번역 없는 미얀마어 문장', nmy, '/ 원서에 없는 한국어 문장', nko)
+
 res = {'book': 'DL-0005', 'lang': 'my', 'title': 'သိစရာ၊ တွေးစရာ', 'by': 'ဆရာတော်ဦးဇောတိက', 'source': '',
        'made': datetime.date.today().isoformat(),
        'method': 'LaBSE 뜻 비교 + 전체 최적 짝(잠언집이라 순서를 강제하지 않음), 앞뒤 부분은 손으로. 미얀마어 원서는 스캔본이라 쪽 그림을 보며 옮겨 적음',
