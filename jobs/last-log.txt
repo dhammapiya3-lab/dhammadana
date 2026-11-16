@@ -1,35 +1,5 @@
-검수 Foremost-Monks/01-Kondanna 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 3px)
-검수 Foremost-Monks/01-Kondanna 33번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-Foremost-Monks 01-Kondanna 38 장
-Foremost-Monks 02-03-Sariputta-Moggallana 57 장
-검수 Foremost-Monks/04-Maha-Kassapa 36번 그림 상자1 [자리] 한글 글(1989,772)이 상자 점(1795,357)에서 멀리 그려짐
-검수 Foremost-Monks/04-Maha-Kassapa 41번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-Foremost-Monks 04-Maha-Kassapa 41 장
-검수 Foremost-Monks/05-Anuruddha 02번 그림 상자1 [자리] 한글 글(1121,1128)이 상자 점(1510,770)에서 멀리 그려짐
-검수 Foremost-Monks/05-Anuruddha 21번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Foremost-Monks/05-Anuruddha 50번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 1px)
-Foremost-Monks 05-Anuruddha 53 장
-Foremost-Monks 06-Bhaddiya 15 장
-Foremost-Monks 07-Lakundaka 13 장
-Foremost-Monks 08-Pindola 9 장
-Foremost-Monks 09-Punna 15 장
-Foremost-Monks 10-Kaccana 15 장
-Foremost-Monks 13-Subhuti 13 장
-Foremost-Monks 14-Khadiravaniya-Revata 25 장
-Foremost-Monks 15-Kankha-Revata 13 장
-Foremost-Monks 16-Sona-Kolivisa 18 장
-Foremost-Monks 17-Sona-Kutikanna 26 장
-Foremost-Monks 18-Sivali 15 장
-Foremost-Monks 19-Vakkali 11 장
-검수 Foremost-Monks/20-21-Rahula-Ratthapala 26번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-Foremost-Monks 20-21-Rahula-Ratthapala 34 장
-Foremost-Monks 23-Vangisa 14 장
-Foremost-Monks 24-Upasena-Vangantaputta 15 장
-Foremost-Monks 25-Dabba 15 장
-Foremost-Monks 26-Pilinda-Vaccha 12 장
-Foremost-Monks 27-Bahiya-Daruciriya 26 장
-Foremost-Nuns 01-Maha-Pajapati-Gotami 30 장
-Foremost-Nuns 02-Khema 37 장
+Foremost-Monks 28-Kumara-Kassapa 13 장
+Foremost-Monks 29-Maha-Kotthita 12 장
 검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자3 [자리] 한글이 원래 글 자리(504,1041-620,1130)에서 벗어남 (809,1087)
 검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자4 [자리] 한글이 원래 글 자리(1997,1043-2042,1136)에서 벗어남 (1834,1087)
 Foremost-Nuns 03-Uppalavanna 37 장
@@ -46,34 +16,12 @@ Foremost-Nuns 12-Kisa-Gotami 23 장
 검수 Foremost-Nuns/13-Singalakamata 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 6px)
 검수 Foremost-Nuns/13-Singalakamata 03번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 2px)
 Foremost-Nuns 13-Singalakamata 13 장
-자동 검수: 문제 의심 13 곳
-R2 에 올림: 1598 개 / 한글판 이야기 68 편
-공개 주소 확인: 200 1673434바이트
-이야기 Foremost-Monks/01-Kondanna {'pdf': 61707850, 'zip': 61430942, 'n': 38}
-이야기 Foremost-Monks/02-03-Sariputta-Moggallana {'pdf': 85281648, 'zip': 84985024, 'n': 57}
-이야기 Foremost-Monks/04-Maha-Kassapa {'pdf': 57277192, 'zip': 56998280, 'n': 41}
-이야기 Foremost-Monks/05-Anuruddha {'pdf': 71852158, 'zip': 71570350, 'n': 53}
-이야기 Foremost-Monks/06-Bhaddiya {'pdf': 20445235, 'zip': 20171401, 'n': 15}
-이야기 Foremost-Monks/07-Lakundaka {'pdf': 16524984, 'zip': 16254975, 'n': 13}
-이야기 Foremost-Monks/08-Pindola {'pdf': 10469029, 'zip': 10199055, 'n': 9}
-이야기 Foremost-Monks/09-Punna {'pdf': 21069898, 'zip': 20798876, 'n': 15}
-이야기 Foremost-Monks/10-Kaccana {'pdf': 23116374, 'zip': 22848600, 'n': 15}
-이야기 Foremost-Monks/13-Subhuti {'pdf': 18812972, 'zip': 18549441, 'n': 13}
-이야기 Foremost-Monks/14-Khadiravaniya-Revata {'pdf': 36072697, 'zip': 35796109, 'n': 25}
-이야기 Foremost-Monks/15-Kankha-Revata {'pdf': 19141029, 'zip': 18874086, 'n': 13}
-이야기 Foremost-Monks/16-Sona-Kolivisa {'pdf': 24811551, 'zip': 24541388, 'n': 18}
-이야기 Foremost-Monks/17-Sona-Kutikanna {'pdf': 37386452, 'zip': 37114607, 'n': 26}
-이야기 Foremost-Monks/18-Sivali {'pdf': 22553485, 'zip': 22288468, 'n': 15}
-이야기 Foremost-Monks/19-Vakkali {'pdf': 12412673, 'zip': 12148559, 'n': 11}
-이야기 Foremost-Monks/20-21-Rahula-Ratthapala {'pdf': 48898434, 'zip': 48613043, 'n': 34}
-이야기 Foremost-Monks/23-Vangisa {'pdf': 18627311, 'zip': 18362336, 'n': 14}
-이야기 Foremost-Monks/24-Upasena-Vangantaputta {'pdf': 22186907, 'zip': 21912578, 'n': 15}
-이야기 Foremost-Monks/25-Dabba {'pdf': 18766670, 'zip': 18496814, 'n': 15}
-이야기 Foremost-Monks/26-Pilinda-Vaccha {'pdf': 18722234, 'zip': 18454683, 'n': 12}
-이야기 Foremost-Monks/27-Bahiya-Daruciriya {'pdf': 33941852, 'zip': 33666021, 'n': 26}
-책 Foremost-Monks {'pdf': 708307521, 'pdfs': 74460986, 'zip': 707877926, 'stories': 23, 'n': 505}
-이야기 Foremost-Nuns/01-Maha-Pajapati-Gotami {'pdf': 42615009, 'zip': 42334961, 'n': 30}
-이야기 Foremost-Nuns/02-Khema {'pdf': 52994403, 'zip': 52719509, 'n': 37}
+자동 검수: 문제 의심 5 곳
+R2 에 올림: 528 개 / 한글판 이야기 70 편
+공개 주소 확인: 200 1668012바이트
+이야기 Foremost-Monks/28-Kumara-Kassapa {'pdf': 17236374, 'zip': 16967628, 'n': 13}
+이야기 Foremost-Monks/29-Maha-Kotthita {'pdf': 18683140, 'zip': 18415533, 'n': 12}
+책 Foremost-Monks {'pdf': 743699674, 'pdfs': 78165536, 'zip': 743260840, 'stories': 25, 'n': 530}
 이야기 Foremost-Nuns/03-Uppalavanna {'pdf': 49061183, 'zip': 48781001, 'n': 37}
 이야기 Foremost-Nuns/04-Patacara {'pdf': 36870910, 'zip': 36596379, 'n': 30}
 이야기 Foremost-Nuns/05-Dhammadinna {'pdf': 29279296, 'zip': 29008966, 'n': 22}
@@ -86,7 +34,7 @@ R2 에 올림: 1598 개 / 한글판 이야기 68 편
 이야기 Foremost-Nuns/12-Kisa-Gotami {'pdf': 34654474, 'zip': 34382847, 'n': 23}
 이야기 Foremost-Nuns/13-Singalakamata {'pdf': 18858875, 'zip': 18588292, 'n': 13}
 책 Foremost-Nuns {'pdf': 385819325, 'pdfs': 40815084, 'zip': 385466640, 'stories': 13, 'n': 283}
-내려받기 파일: 37 묶음 새로 만듦
-글로 보기: 68 이야기
+내려받기 파일: 15 묶음 새로 만듦
+글로 보기: 70 이야기
 41-Mogharaja
 13-Singalakamata
