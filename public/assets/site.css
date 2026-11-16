@@ -1136,3 +1136,10 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 
 /* 화면 낭독기용으로 커서만 둔 본문 제목은 테두리를 보이지 않음 (2026-11-17) */
 h1.auto-focus:focus{outline:none}
+/* ---------- 옅은 글자 진하게 (저시력 읽기 — 운영자 요청, 2026-11-17) ---------- */
+.trad.empty{opacity:.96}
+.trad.empty:hover{opacity:1}
+.filters label.zero{opacity:.93}
+.sr-book mark{color:var(--ink)}
+@media (prefers-color-scheme: light){ :root:not(.mode-night):not(.mode-contrast) :is(.press-nav a.on,.pill.robe){color:#7E4520} }
+:root.mode-day :is(.press-nav a.on,.pill.robe){color:#7E4520}
