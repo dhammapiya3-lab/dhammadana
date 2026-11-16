@@ -1550,13 +1550,38 @@ const boxNum = h => h.replace(/□\s*(\d{1,3})\s*/g, '<span class="boxnum">$1</s
 const boldMark = h => boxNum(h).replace(/ㆍ/g, '·').replace(/\*\*(?!\s|\*\*)([\s\S]*?[^\s*])\*\*/g, '<strong>$1</strong>').replace(/==(?=\S)([\s\S]*?\S)==/g, '<span class="hl">$1</span>').replace(/\{\{([\s\S]*?)\}\}/g, '<span class="faint" title="생략할 수 있는 부분">$1</span>').replace(/@@([\s\S]*?)@@/g, '<span class="pron">$1</span>').replace(/°°([\s\S]*?)°°/g, '<span class="pli">$1</span>').replace(/§§([\s\S]*?)§§/g, '<span class="spk">$1</span>').replace(/-{8,}(?=\*|\[\^)/g, m => `<span class="dash-rule" style="width:${Math.min(16, m.length * .5)}em" aria-hidden="true"></span>`);  // 각주 번호가 붙은 점선('------------[^19]') → 가운데 가로줄 (운영자 요청, 2026-11-15)  // @@…@@ 빠알리 한글 소리 줄 (DL-0027: 원본처럼 굵은 둥근 글꼴)  // {{…}} 희미한 글자 (DL-0027: 인도자가 없거나 간략히 할 때 생략하는 부분)
 // 빠알리어 한글 표기(발음 부호 붙은 한글): 텍스트 JSON 의 ph 사전(tools/pali_hangul.py)대로 바꿔 PaliHangul 글꼴로 — 본문 글자는 그대로, 화면에만
 let PH_RE = null, PH_OF = null;
-const phMark = h => {
+const phMark = h => latMark(phMark0(h));
+const phMark0 = h => {
   const ph = R && R.ph; if (!ph) return h;
   if (PH_OF !== ph) { PH_OF = ph; const ks = Object.keys(ph).sort((a, b) => b.length - a.length).map(k => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')); PH_RE = ks.length ? new RegExp('(' + ks.join('|') + ')(?![\u0300-\u036f\u1dc0-\u1dff\u302c\u302d\u02d1\u02d4\u02d5\u2033])', 'g') : null; }
   if (!PH_RE) return h;
   // 화면 낭독기: 글꼴 표기(부호 글자)는 읽지 않게 숨기고, 부호를 뺀 한글 소리를 보이지 않는 글(CSS ::before — 복사·밑줄 글자 자리에는 안 들어감)로 알려 줌 (운영자 요청, 2026-11-17)
   return h.replace(/(<[^>]*>)|([^<]+)/g, (m, tag, txt) => tag || txt.replace(PH_RE, w => { const say = phSay(w); return `<span class="ph" aria-hidden="true">${ph[w]}</span><span class="ph-say" data-say="${esc(say)}"></span>`; }));
 };
+// 화면 낭독기: 로마자 빠알리어(vipassanā, Mahāsi Sayādaw)는 사이트 '듣기'와 같은 음역 규칙의 한글 소리로 알려 줌 (운영자 요청, 2026-11-17)
+//  - 화면에는 로마자 그대로(aria-hidden), 뒤의 빈 .ph-say 가 한글 소리('위빳사나')를 낭독기에만 들려줌 — 복사·밑줄 글자 자리는 그대로
+//  - 빠알리어·영어 가르기는 sayable 과 같음(langOf·PALI_MARK·다수결), 영어는 건드리지 않음
+let LAT_RUN = null, LAT_COMP = null;
+function latMark(h) {
+  if (!/[A-Za-z]/.test(h)) return h;
+  if (!LAT_RUN) { LAT_RUN = new RegExp(`[${LATIN}]+(?:[\\s,;:.!?'’‘\\-]+[${LATIN}]+)*`, 'g'); LAT_COMP = new RegExp(`[${LATIN}]+(?:-[${LATIN}]+)*`, 'g'); }
+  const hide = (comp, say) => `<span aria-hidden="true">${comp}</span><span class="ph-say" data-say="${esc(say)}"></span>`;
+  return h.replace(/(<[^>]*>)|(&[#a-z0-9]+;)|([^<&]+)/gi, (m, tag, ent, txt) => tag || ent || txt.replace(LAT_RUN, run => {
+    const comps = run.match(LAT_COMP) || [];
+    const lab = comps.map(c => { const ls = c.split('-').map(langOf); return ls.includes('P') ? 'P' : ls.includes('E') ? 'E' : ls.includes('B') ? 'B' : '?'; });
+    const pc = lab.filter(x => x === 'P').length, ec = lab.filter(x => x === 'E').length;
+    const runPali = PALI_MARK.test(run) || pc > ec;
+    let k = 0;
+    return run.replace(LAT_COMP, comp => {
+      const l = lab[k++], lc = comp.toLowerCase();
+      if (BUR[lc] && (runPali || pc > 0)) return hide(comp, BUR[lc]);
+      const pali = l === 'P' || ((l === 'B' || l === '?') && runPali && (l === 'B' || pc > 0));
+      if (!pali) return comp;
+      const say = comp.split('-').map(w => PALI(w) || '').join(' ').trim();
+      return /[가-힣]/.test(say) ? hide(comp, say) : comp;
+    });
+  }));
+}
 const PH_MARKS = /[\u0300-\u036f\u1dc0-\u1dff\u20d0-\u20ff\ufe00-\ufe0f\ufe20-\ufe2f\u302c\u302d\u02b9-\u02ff\u2033\ue000-\uf8ff\u22a4\u22a5]/g;
 const phSay = w => w.replace(PH_MARKS, '').normalize('NFC').trim() || '발음 부호';
 const headKey = t => unB(t).replace(/^## /, '').replace(/\[\^[^\]]+\]/g, '').replace(/\([^)]*\)/g, '').replace(/[\s‘’'"“”]/g, '').replace(/^[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩIVX]+\./, m => m.replace(/[IVX]+/g, x => ({I:'Ⅰ',II:'Ⅱ',III:'Ⅲ',IV:'Ⅳ',V:'Ⅴ',VI:'Ⅵ',VII:'Ⅶ',VIII:'Ⅷ',IX:'Ⅸ',X:'Ⅹ'}[x] || x)));
