@@ -1,0 +1,917 @@
+[
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     52,
+     700,
+     102
+    ],
+    "ko": "마하빠자빠띠 고따미의 서원",
+    "cover": [
+     249,
+     242,
+     226
+    ],
+    "align": "center",
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     130,
+     104,
+     670,
+     134
+    ],
+    "ko": "서원과 이끎과 공덕의 길",
+    "cover": [
+     251,
+     245,
+     230
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     55,
+     398,
+     202
+    ],
+    "ko": "함사와띠에서 훗날의 고따미는 빠두뭇따라 부처님께서 한 비구니를 ‘가장 먼저 깨달은 출가자 가운데 으뜸’이라고 선언하시는 것을 들었습니다.",
+    "cover": [
+     250,
+     238,
+     218
+    ],
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     50,
+     198,
+     335,
+     358
+    ],
+    "ko": "감동한 그녀는 더없이 큰 보시를 올리고 바로 그 칭호를 서원했습니다. 부처님께서는 그 서원이 이루어지리라고 예언하셨습니다.",
+    "cover": [
+     250,
+     239,
+     220
+    ],
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     62,
+     680,
+     124
+    ],
+    "ko": "랏딴뉴 뿍갈라(rattaññū-puggala)는 가장 먼저 깨달은 이를 뜻합니다. 승가에서 이 칭호에는 세 가지 뜻이 있습니다.",
+    "cover": [
+     250,
+     237,
+     214
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     210,
+     144,
+     376,
+     198
+    ],
+    "ko": "1. 가장 법랍이\n높은 출가자",
+    "cover": [
+     251,
+     237,
+     218
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     570,
+     174,
+     742,
+     252
+    ],
+    "ko": "2. 사성제를\n가장 먼저\n이해한 이",
+    "cover": [
+     250,
+     237,
+     214
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     462,
+     303,
+     690,
+     360
+    ],
+    "ko": "3. 아라한과를\n가장 먼저 얻은 이",
+    "cover": [
+     251,
+     238,
+     216
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     86,
+     302,
+     400
+    ],
+    "ko": "평생 보시를 행한 뒤 그녀는 천신 세계에 태어났습니다.\n\n두 부처님 사이의 시대에 다시 인간 세상 바라나시에 태어났는데, 이번에는 노비 계층으로 물 긷는 여인들의 우두머리가 되었습니다.",
+    "cover": [
+     249,
+     236,
+     213
+    ],
+    "align": "left",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     300,
+     150,
+     350,
+     177
+    ],
+    "ko": " ",
+    "cover": [
+     249,
+     237,
+     217
+    ],
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     30,
+     728,
+     110
+    ],
+    "ko": "우기 안거(vassa) 처소를 구하러 난다물라 동굴에서 온 벽지불 다섯 분을 바라나시의 부유한 이들은 모두 외면했습니다. 성문에서 그분들을 만난 물 긷는 여인들의 우두머리는 다시없는 공덕을 지을 기회임을 알아보았습니다.",
+    "cover": [
+     248,
+     235,
+     205
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     229,
+     331
+    ],
+    "shape": "bubble",
+    "ko": "노비도 처소를 보시할 수 있다는 말을 듣고, 그녀는 공동 우물가에 물 긷는 여인 500명을 불러 모았습니다. “언제까지 남의 노비로 살 건가요? 노비의 굴레에서 벗어나고 싶지 않나요?”",
+    "em": 16
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     222,
+     48,
+     578,
+     92
+    ],
+    "ko": "마을 사람들이 힘을 모으다",
+    "cover": [
+     250,
+     235,
+     206
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     66,
+     338,
+     298,
+     388
+    ],
+    "ko": "1. 여인들이 남편들을\n설득했습니다.",
+    "cover": [
+     250,
+     235,
+     206
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     322,
+     338,
+     540,
+     388
+    ],
+    "ko": "2. 남자 500명이 숲에\n가서 나무를 베었습니다.",
+    "cover": [
+     251,
+     236,
+     209
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     516,
+     338,
+     764,
+     404
+    ],
+    "ko": "3. 경행로가 딸린 소박한\n처소 다섯 채를 지어\n안거 수행처를 마련했습니다.",
+    "cover": [
+     249,
+     233,
+     205
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     468,
+     34,
+     766,
+     180
+    ],
+    "ko": "석 달 안거 동안 마을 사람들은 돌아가며 날마다 공양을 올렸습니다. 가난한 여인이 제 차례에 먹을 것이 없으면 우두머리가 넉넉히 마련해 주어, 모두가 공덕을 함께 나누게 했습니다.",
+    "cover": [
+     246,
+     231,
+     203
+    ],
+    "align": "right",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     342,
+     750,
+     422
+    ],
+    "ko": "안거가 끝나자 여인 500명은 거친 천을 짜서 좋은 가사 다섯 벌과 바꾸어 올렸습니다. 가사를 받은 벽지불들은 하늘을 날아 간다마다나 산으로 떠났습니다.",
+    "cover": [
+     246,
+     229,
+     198
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     138,
+     80,
+     410,
+     290
+    ],
+    "ko": "공덕에 마음을 바친 여인들은 천신으로 태어났습니다. 천상에서 수명을 다한 뒤 우두머리는 다시 인간 세상에 왔는데, 이번에는 바라나시 근처 마을에서 베 짜는 이들의 우두머리가 되었습니다.",
+    "cover": [
+     252,
+     246,
+     232
+    ],
+    "align": "left",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     92,
+     178,
+     140,
+     284
+    ],
+    "ko": " ",
+    "cover": [
+     251,
+     244,
+     227
+    ],
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     184,
+     568,
+     268
+    ],
+    "ko": "벽지불 500분이 왕궁 문 앞에 섰지만 아무도 돌보지 않았습니다. 빈손으로 돌아가던 그분들이 베 짜는 마을을 지나자, 신심 가득한 우두머리가 기쁘게 음식을 올렸고, 그분들은 간다마다나 산으로 떠났습니다.",
+    "cover": [
+     246,
+     231,
+     201
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     158,
+     392,
+     312
+    ],
+    "ko": "가장 먼저 깨달은 이가 되는 길은 재물로 닦이지 않았습니다. 여러 생에 걸친 끊임없는 보시와, 함께 이끈 지도력과, 소외된 이들을 일으켜 세운 일로 다져졌습니다. 인간 세상과 천신 세계를 오가며 그 뜻을 이어 간 것입니다.",
+    "cover": [
+     252,
+     245,
+     231
+    ],
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     568,
+     165,
+     680,
+     189
+    ],
+    "ko": "흔들림 없는 서원",
+    "cover": [
+     245,
+     221,
+     163
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     482,
+     263,
+     606,
+     288
+    ],
+    "ko": "함께 이끈 지도력",
+    "cover": [
+     239,
+     209,
+     158
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     404,
+     362,
+     512,
+     396
+    ],
+    "ko": "끊임없는 보시",
+    "cover": [
+     226,
+     198,
+     154
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     112,
+     312,
+     296
+    ],
+    "ko": "데와다하의 자매\n\n사꺄족 왕가에 태어난 마하마야 공주와 고따미 공주에게는 남다른 상호가 있었습니다. 베다에 밝은 점성가들이 두 공주의 모습을 보고 놀라운 예언을 했습니다. 두 자매가 낳을 아들은 모두 전륜성왕이 될 운명이라는 것이었습니다.",
+    "cover": [
+     237,
+     221,
+     190
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     38,
+     344,
+     764,
+     436
+    ],
+    "ko": "어머니의 지극한 헌신\n싯닷타 왕자가 태어나고 마하마야 왕비가 세상을 떠났습니다. 이제 정비가 된 고따미는 며칠 뒤 난다 왕자를 낳았습니다.\n고따미는 깊은 결단을 내렸습니다. 자기 아들은 유모에게 맡기고, 보살에게 손수 젖을 먹여 길렀습니다.",
+    "cover": [
+     240,
+     224,
+     194
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     178,
+     398,
+     383
+    ],
+    "ko": "왕가의 인연을 끊다\n\n부처님께서 깨달음을 이루신 뒤, 왕실 가족도 하나둘 수행의 길에 들어섰습니다. 부처님의 다섯 번째 안거 때 숫도다나 왕은 왕실의 흰 일산 아래에서 아라한과를 얻고 그날 세상을 떠났습니다. 이제 고따미를 세상에 묶어 두던 끈은 모두 풀렸습니다.",
+    "cover": [
+     241,
+     229,
+     207
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     336,
+     86,
+     550,
+     376
+    ],
+    "ko": "첫 번째 청원\n\n해탈을 구하여 고따미 왕비와 사꺄족 공주 500명이 세속을 떠나기로 결심했습니다. 공주들은 새로 출가한 왕자들의 아내였습니다.\n\n고따미가 대표로 나서서 여인들도 승가에 들 수 있게 해 달라고 부처님께 청했습니다. 그러나 첫 청은 단호히 거절되었습니다.",
+    "cover": [
+     239,
+     222,
+     191
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     40,
+     696,
+     132
+    ],
+    "ko": "꺾이지 않는 결심\n사꺄족 여인 500명은 굴하지 않고 머리를 깎고 물들인 옷을 입었습니다. 그리고 까삘라왓투에서 웨살리의 꾸따가라 승원까지 맨발로 걸어가, 지쳤지만 굳은 뜻으로 도착했습니다. 이 깊은 헌신이 전에 없던 수행의 큰 변화로 가는 길을 열었습니다.",
+    "cover": [
+     237,
+     219,
+     183
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     128,
+     58,
+     328,
+     338
+    ],
+    "ko": "평등을 위해 나선 이\n\n공주들의 흔들림 없는 결심을 본 아난다 장로가 그들을 위해 나섰습니다. 아난다 장로는 부처님께 여인들도 승가에 받아 주시기를 간곡히 청했습니다.\n이 소중한 간청으로 부처님께서는 마침내 여인들이 비구니로 출가하는 것을 허락하셨습니다.",
+    "cover": [
+     243,
+     231,
+     204
+    ],
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     86,
+     560,
+     186
+    ],
+    "ko": "두 가지 구족계\n마하빠자빠띠 고따미는 여덟 가지 무거운 법(garudhamma)을 받아들여 특별하게 구족계를 받았습니다. 사꺄족 공주 500명은 승가의 갈마로 정식 구족계를 받았고, 이로써 비구니 승가의 굳건한 바탕이 놓였습니다.",
+    "cover": [
+     239,
+     217,
+     186
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     298,
+     122,
+     506,
+     394
+    ],
+    "cover": [
+     242,
+     229,
+     202
+    ],
+    "shape": "box",
+    "manual": true,
+    "align": "left",
+    "em": 15,
+    "ko": "두 갈래의 깨달음\n\n함께 출가했지만 서로 다른 가르침을 듣고 깨달았습니다.\n• 고따미 장로니는 ‘간략하게 경’(AN 8.53)을 듣고 아라한과를 얻었습니다.\n• 비구니 500명은 ‘난다까 교계경’(MN 146)에서 난다까 장로의 가르침을 듣고 깨달음을 얻었습니다."
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     242,
+     558,
+     413
+    ],
+    "ko": "으뜸(etadagga)인 제자\n\n제따와나 승원에서 부처님께서는 고따미의 남다른 여정을 공식으로 인정하셨습니다. “비구들이여, 출가한 지 오래된(rattaññūnaṃ) 나의 비구니 제자들 가운데 마하빠자빠띠 고따미가 으뜸이다.” 양어머니가 한 계보의 어머니가 되었습니다.",
+    "cover": [
+     243,
+     227,
+     196
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     194,
+     307,
+     606,
+     401
+    ],
+    "ko": "웨살리에서 120세가 된 고따미 장로니는 아라한과의 증득에 들었습니다. 그 선정에서 나와 지난 공덕을 돌아보고는 수명이 다했음을 알았습니다.",
+    "cover": [
+     239,
+     231,
+     210
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     226,
+     376,
+     404
+    ],
+    "ko": "고따미 장로니는 생각했습니다.\n“나는 내 아들인 부처님의 반열반도, 손자 라훌라의 반열반도, 아난다의 반열반도 보지 않으리라. 그들보다 먼저 가리라.”",
+    "cover": [
+     242,
+     235,
+     223
+    ],
+    "align": "left",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     192,
+     130,
+     608,
+     322
+    ],
+    "ko": "놀랍게도 사꺄족 출신 비구니 500명도 똑같은 사실을 알았습니다. 마음이 하나가 된 그들도 사랑하는 스승과 함께 세상을 떠나기로 결심했습니다.",
+    "cover": [
+     243,
+     234,
+     205
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     323,
+     730,
+     412
+    ],
+    "ko": "그 엄숙한 순간, 땅이 크게 흔들렸습니다. 때아닌 비가 천둥과 함께 쏟아졌습니다. 비구니 처소의 수호신들은 이별이 다가왔음을 알고 깊이 슬퍼하며 울부짖었습니다.",
+    "cover": [
+     242,
+     230,
+     203
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     312,
+     92,
+     495,
+     358
+    ],
+    "ko": "비구니들이 고따미 장로니에게 가서 수호신들이 울부짖는다고 알렸습니다. 고따미가 세상을 떠날 뜻을 밝히자, 비구니 500명도 함께 떠나겠다는 똑같은 결심을 밝혔습니다.",
+    "cover": [
+     242,
+     235,
+     209
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-27-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     147,
+     53,
+     653,
+     147
+    ],
+    "ko": "그들은 수호신들에게 지난날 허물이 있었다면 용서해 달라고 정중히 청했습니다. 머물던 비구니 처소를 마지막으로 고요히 돌아본 뒤, 고따미 장로니는 길을 떠났습니다.",
+    "cover": [
+     247,
+     239,
+     221
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-28-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     315,
+     638,
+     404
+    ],
+    "ko": "고따미 장로니가 말했습니다. “나는 형성되지 않은 열반으로 갑니다. 그곳에는 늙음도 죽음도 없고, 싫은 것과 만남도, 좋아하는 것과 헤어짐도 없습니다.”",
+    "cover": [
+     244,
+     236,
+     212
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-29-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     46,
+     302,
+     246
+    ],
+    "ko": "이 말을 듣자, 아직 집착을 이기지 못한 천신과 사람들은 몹시 슬피 울었습니다. 비구니들이 큰길을 지나갈 때 신도들은 그 앞에 무릎을 꿇고 깊이 괴로워했습니다.",
+    "cover": [
+     233,
+     224,
+     219
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Maha-Pajapati-Gotami-30-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     272,
+     46,
+     758,
+     168
+    ],
+    "ko": "부처님의 양어머니는 슬픔에 흔들리지 않고 완전한 연민과 지혜로 말했습니다. 고따미 장로니는 부드러운 진리의 말로 그들의 마음을 가라앉히고 슬픔을 달래 주었습니다.",
+    "cover": [
+     250,
+     245,
+     234
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
