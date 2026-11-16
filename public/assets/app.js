@@ -43,7 +43,7 @@ const norm = s => String(s || '').replace(/[\u302c\u302d\u1dc0-\u1dff\u2033\u02b
 function applyMode(m) {
   const r = document.documentElement; r.classList.remove('mode-day', 'mode-mono', 'mode-night', 'mode-contrast');
   if (m !== 'auto') r.classList.add('mode-' + m);
-  store.set('mode', m); $$('#modePop button').forEach(b => b.classList.toggle('on', b.dataset.mode === m));
+  store.set('mode', m); $$('#modePop button').forEach(b => { b.classList.toggle('on', b.dataset.mode === m); b.setAttribute('role', 'menuitemradio'); b.setAttribute('aria-checked', b.dataset.mode === m); });
 }
 function initHeader() {
   const btn = $('#modeBtn'), pop = $('#modePop');
@@ -569,7 +569,7 @@ function initPlayer() {
   const lockedMsg = () => toast('잠겨 있습니다. 🔒 잠금 단추를 눌러 풀어 주세요');
   const setLock = on => {
     PL.locked = on; $('#player').classList.toggle('locked', on);
-    $('#pLock').textContent = on ? '🔒 잠김' : '🔓 잠금'; $('#pLock').setAttribute('aria-pressed', on);
+    $('#pLock').textContent = on ? '🔒 잠김' : '🔓 잠금'; $('#pLock').setAttribute('aria-pressed', on); $('#pLock').setAttribute('aria-label', on ? '잠김, 눌러서 풀기' : '재생기 잠그기');
     ['#pPrev', '#pPlay', '#pNext', '#pSeek', '#pRate'].forEach(x => { $(x).disabled = on; });
     wake(on && !a.paused, 'player');
   };
@@ -924,7 +924,7 @@ function renderReader() {
     <div class="r-tools">
       ${R.toc.length ? '<button class="tbtn" data-panel="toc">목차</button>' : ''}${hasText ? '<button class="tbtn" data-panel="find" aria-label="본문 검색">🔍 찾기</button>' : ''}
       <button class="tbtn" data-panel="font" aria-label="글씨 크기">가<span style="font-size:16px">가</span></button>
-      ${hasText && R.speaking ? `<button class="tbtn ${R.ttsLocked ? 'on' : ''}" id="rLock" aria-pressed="${!!R.ttsLocked}" title="잠그면 실수로 멈추지 않습니다">${R.ttsLocked ? '🔒 잠김' : '🔓 잠금'}</button>` : ''}${R.ab ? `<button class="tbtn ${AB.on && !abA().paused ? 'on' : ''}" id="rAb" data-tip="${AB_TIP}" aria-label="오디오북 듣기 (${AB_TIP})">${AB.on && !abA().paused ? '❚❚ 오디오북' : '🎧 오디오북'}</button>` : ''}${hasText ? `<button class="tbtn ${R.speaking ? 'on' : ''}" id="rSpeak" ${R.ttsLocked ? 'disabled' : ''}>${R.speaking ? '■ 멈춤' : '▶ 듣기'}</button><button class="tbtn" data-panel="tts" aria-label="듣기 설정">듣기 설정</button>` : ''}
+      ${hasText && R.speaking ? `<button class="tbtn ${R.ttsLocked ? 'on' : ''}" id="rLock" aria-pressed="${!!R.ttsLocked}" aria-label="${R.ttsLocked ? '듣기 잠김, 눌러서 풀기' : '듣기 잠그기'}" title="잠그면 실수로 멈추지 않습니다">${R.ttsLocked ? '🔒 잠김' : '🔓 잠금'}</button>` : ''}${R.ab ? `<button class="tbtn ${AB.on && !abA().paused ? 'on' : ''}" id="rAb" data-tip="${AB_TIP}" aria-label="오디오북 듣기 (${AB_TIP})">${AB.on && !abA().paused ? '❚❚ 오디오북' : '🎧 오디오북'}</button>` : ''}${hasText ? `<button class="tbtn ${R.speaking ? 'on' : ''}" id="rSpeak" ${R.ttsLocked ? 'disabled' : ''}>${R.speaking ? '■ 멈춤' : '▶ 듣기'}</button><button class="tbtn" data-panel="tts" aria-label="듣기 설정">듣기 설정</button>` : ''}
       <button class="tbtn" data-panel="mode">화면</button>${R.par.length && R.view !== 'page' ? `<button class="tbtn${R.parMode !== 'off' ? ' on' : ''}" data-panel="par" title="번역서와 원서를 나란히 보기">⇄ 원서 대조</button>` : ''}${R.spreadOk && R.view !== 'page' ? `<button class="tbtn${spreadOn() ? ' on' : ''}" id="rSpread" aria-pressed="${spreadOn()}" title="왼쪽·오른쪽 쪽을 책처럼 나란히">${spreadOn() ? '📄 한쪽씩 보기' : '📖 양쪽으로 보기'}</button>` : ''}${document.fullscreenEnabled ? `<button class="tbtn" id="rFull" aria-pressed="${!!document.fullscreenElement}" title="F11 처럼 화면 가득 보기 (Esc 로 나가기)">${document.fullscreenElement ? '⛶ 전체 화면 끄기' : '⛶ 전체 화면'}</button>` : ''}
       <button class="tbtn ${marked ? 'on' : ''}" id="rMark" aria-pressed="${marked}">${marked ? '★ 책갈피' : '☆ 책갈피'}</button>
       <button class="tbtn" data-panel="bm">책갈피 목록</button>
@@ -940,7 +940,7 @@ function renderReader() {
       <div id="findRes">${R.findRes || '<p class="note">낱말을 넣으면 이 책의 모든 쪽에서 찾습니다. 위빳사나·vipassanā처럼 다른 표기도 함께 찾습니다.</p>'}</div></div>
     <div class="panel" id="p-toc"><h5>목차</h5><ul>${R.toc.map(t => `<li class="${/^\s/.test(t.title) ? 'sub' : ''}"><button class="link" data-go="${t.page}"${!/^\s/.test(t.title) ? ` data-ci="${chapters().findIndex(c => c.title === t.title.trim() && c.from === t.page)}"` : ''}>${boxNum(esc(t.title.trim()))}</button><span class="muted">${esc(t.label || '')}</span></li>`).join('')}</ul></div>
     <div class="panel" id="p-font"><h5>글씨</h5>
-      ${R.view === 'page' && hasImg ? `<div class="row">쪽 확대 <span><button class="tbtn" data-zoom="-1">−</button> ${Math.round(R.zoom * 100)}% <button class="tbtn" data-zoom="1">+</button></span></div>${hasText ? '<p class="note">쪽 보기에서는 원본 쪽을 확대합니다. 글자만 크게 보거나 밑줄을 그으려면 ‘글로 보기’로 바꾸세요.</p>' : ''}` :
+      ${R.view === 'page' && hasImg ? `<div class="row">쪽 확대 <span><button class="tbtn" data-zoom="-1" aria-label="쪽 축소">−</button> ${Math.round(R.zoom * 100)}% <button class="tbtn" data-zoom="1" aria-label="쪽 확대">+</button></span></div>${hasText ? '<p class="note">쪽 보기에서는 원본 쪽을 확대합니다. 글자만 크게 보거나 밑줄을 그으려면 ‘글로 보기’로 바꾸세요.</p>' : ''}` :
       `<div class="row">글자 크기 <span class="fs-step"><button class="tbtn" data-fsd="-1" aria-label="글자 작게">가−</button><b aria-live="polite">${Math.round(R.fs * 100)}%</b><button class="tbtn" data-fsd="1" aria-label="글자 크게">가+</button></span></div>
        <div class="row row-col">빨리 고르기 <span class="seg seg-grid">${[1, 1.5, 2, 3, 4].map(v => `<button data-fs="${v}" class="${R.fs === v ? 'on' : ''}" aria-label="글자 ${v * 100}%">${v * 100}%</button>`).join('')}</span></div>
        <div class="row">글자 굵기 <span class="seg"><button data-bold="0" class="${R.bold ? '' : 'on'}">보통</button><button data-bold="1" class="${R.bold ? 'on' : ''}">굵게</button></span></div>
@@ -2287,4 +2287,13 @@ function parApply() {
   });
   if (!shown) return;
 }
+
+/* ---------- 화면 낭독기: 고른 단추 알리기 (운영자 요청, 2026-11-17 — 화면은 그대로) ---------- */
+(function a11yPressed() {
+  const SEL = '.seg button, [data-spread], [data-bold], [data-font], [data-lh], [data-mw], [data-parm], [data-rmode]';
+  const sync = root => { if (!root || !root.querySelectorAll) return; (root.matches && root.matches(SEL) ? [root] : []).concat([...root.querySelectorAll(SEL)]).forEach(b => { if (b.tagName !== 'BUTTON' || b.getAttribute('role')) return; const v = String(b.classList.contains('on')); if (b.getAttribute('aria-pressed') !== v) b.setAttribute('aria-pressed', v); }); };
+  sync(document.body);
+  new MutationObserver(ms => { for (const m of ms) { if (m.type === 'attributes') { if (m.target.matches && m.target.matches(SEL)) sync(m.target); } else m.addedNodes.forEach(n => n.nodeType === 1 && sync(n)); } })
+    .observe(document.body, { subtree: true, childList: true, attributes: true, attributeFilter: ['class'] });
+})();
 })();
