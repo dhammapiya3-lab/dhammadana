@@ -263,6 +263,14 @@
       "urls": [],
       "partner": false,
       "note": ""
+    },
+    {
+      "id": "seongjeonsa",
+      "name": "성전사",
+      "kind": "단체",
+      "urls": [],
+      "partner": true,
+      "note": ""
     }
   ]
 }

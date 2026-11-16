@@ -90,6 +90,7 @@ collections:
       - { name: book_type, label: 책 형식, widget: select, required: false, options: [경전, 예불집, 법문집, 해설서, 잠언집, 수행기, 사전], hint: "도서관 '찾아보기'의 책 형식으로 나뉩니다" }
       - { name: original_title, label: 원서 제목, required: false }
       - { name: original_language, label: 원서의 언어, widget: select, multiple: true, required: false, options: [빠알리어, 영어, 미얀마어, 태국어, 싱할라어, 한국어, 기타], hint: "이 책을 옮길 때 바탕으로 삼은 원서의 언어" }
+      - { name: content_languages, label: 본문 언어 (앱 연동), widget: select, multiple: true, required: false, options: [{ label: "한국어", value: ko }, { label: "빠알리어", value: pi }, { label: "영어", value: en }, { label: "미얀마어", value: my }, { label: "태국어", value: th }, { label: "산스끄리뜨어", value: sa }], hint: "이 책 본문에 실린 언어. 비워 두면 본문 글을 보고 저절로 정합니다(한국어, 빠알리어가 많으면 빠알리어도)." }
       - { name: original_source, label: 원서 정보, required: false, hint: "원서 출판사·연도 등" }
       - name: parallel_editions
         label: 원서 대조에 쓴 원서 판본

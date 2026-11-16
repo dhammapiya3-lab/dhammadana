@@ -90,5 +90,10 @@
   "license": "CC BY-NC-ND",
   "added": "2026-11-06",
   "order": 4,
-  "hidden": false
+  "hidden": false,
+  "content_languages": [
+    "pi",
+    "ko",
+    "en"
+  ]
 }

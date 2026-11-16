@@ -228,10 +228,12 @@ const readerManifest = b => { const e = curEd(b); if (hasText(b)) return `/texts
 
 // 창고(R2)에서 지워진 파일은 단추를 숨김: 사이트를 만들 때 파일이 실제로 있는지 확인
 // (인터넷이 안 되는 곳에서 만들 때는 확인을 건너뛰고 그대로 둠)
+const HEADS = {};  // 앱 연동 목록(api/v1)에 파일 크기·ETag 를 넣으려고 기억해 둠
 async function exists(url) {
   try {
     const ac = new AbortController(); const to = setTimeout(() => ac.abort(), 10000);
     const r = await fetch(url, { method: 'HEAD', signal: ac.signal }); clearTimeout(to);
+    if (r.ok) HEADS[url] = { size: +r.headers.get('content-length') || null, etag: (r.headers.get('etag') || '').replace(/^W\//, '').replace(/"/g, '') || null, modified: r.headers.get('last-modified') ? new Date(r.headers.get('last-modified')).toISOString() : null };
     return r.status === 404 ? false : true;
   } catch (e) { return true; }
 }
@@ -931,6 +933,8 @@ const indexOf = id => { const f = C('indexes/' + id + '.json'); return fs.exists
 fs.mkdirSync(path.join(OUT, 'data/audio'), { recursive: true });
 for (const [id, a] of Object.entries(AUDIO)) fs.writeFileSync(path.join(OUT, 'data/audio', id + '.json'), JSON.stringify({ book: id, voice: a.voice || '', chapters: a.chapters.map(c => ({ ...c, url: fileUrl(c.file) + '?v=' + (c.size || '') + (a.up && a.up[c.n] ? '-' + a.up[c.n] : '') }))  /* 같은 이름으로 새 파일을 올려도 옛 파일을 저장해 둔 기기·저장소가 새 파일을 받게 */ }));
 for (const [id, t] of Object.entries(TEXTS)) { const ix = indexOf(id); fs.writeFileSync(path.join(OUT, 'texts', id + '.json'), JSON.stringify({ book: id, edition: t.edition, pages: t.pages, toc: t.toc, ...(t.say ? { say: t.say } : {}), ...(t.ph ? { ph: t.ph } : {}), ...(t.table_dl ? { table_dl: t.table_dl } : {}), ...(t.spread ? { spread: true } : {}), ...(t.center_heads ? { center_heads: true } : {}), ...(t.ly ? { ly: t.ly } : {}), ...(ix ? { index: { colnames: ix.colnames, parts: ix.parts } } : {}) })); }
+// 앱 연동 목록 (운영자 요청, 2026-11-17): /api/v1/catalog.json — 규격은 public/api/v1/README.md
+await import('./tools/app_catalog.mjs').then(m => m.writeCatalog({ OUT, C, S, BOOKS, TEXTS, PARALLEL, AUDIO, HEADS, LICENSES: LIC_URL, fileUrl, curEd, hasText, formats, teacherById, PAGES, dlName, langsOf }));
 // 관리자 화면이 예전 설정(config.yml)을 기억하지 않도록 바뀔 때마다 주소 끝에 표시를 붙입니다.
 { const ai = path.join(OUT, 'admin', 'index.html'); if (fs.existsSync(ai)) fs.writeFileSync(ai, fs.readFileSync(ai, 'utf8').replace('/admin/config.yml"', `/admin/config.yml?v=${ver('admin/config.yml')}"`)); }
 fs.writeFileSync(path.join(OUT, '_redirects'), `/read/:id/:page /read/:id/ 200\n`);
