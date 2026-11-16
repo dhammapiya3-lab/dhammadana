@@ -1,0 +1,383 @@
+[
+ {
+  "img": "images/08-Sakula-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     268,
+     340,
+     532,
+     368
+    ],
+    "ko": "사꿀라 장로니",
+    "cover": [
+     235,
+     210,
+     161
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     268,
+     368,
+     532,
+     392
+    ],
+    "ko": "천안의 으뜸",
+    "cover": [
+     234,
+     211,
+     165
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     268,
+     392,
+     532,
+     438
+    ],
+    "ko": "서원과 공덕과 깨달음으로 이어진\n여러 생의 여정",
+    "cover": [
+     234,
+     211,
+     163
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Sakula-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     300,
+     148,
+     548,
+     360
+    ],
+    "ko": "사꿀라 장로니는 이름난 아라한 비구니입니다.\n\n이 이야기는 그녀의 여러 생에 걸친 내력을 가장 자세히 전하는 ‘장로니게 주석서’를 따릅니다.",
+    "cover": [
+     233,
+     206,
+     159
+    ],
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Sakula-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     270,
+     20,
+     530,
+     146
+    ],
+    "ko": "아득한 옛날 빠두뭇따라 부처님 시대에, 훗날의 사꿀라는 부처님의 배다른 누이인 난다 공주로 태어났습니다.",
+    "cover": [
+     231,
+     205,
+     158
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Sakula-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     268,
+     334,
+     396
+    ],
+    "ko": "법문을 듣던 난다 공주는 부처님께서 한 비구니를 천안으로 으뜸이라고 선언하시는 것을 보았습니다. 천안은 중생이 죽고 다시 태어나는 것을 보는 신통입니다.",
+    "cover": [
+     230,
+     205,
+     158
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Sakula-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     270,
+     330,
+     396
+    ],
+    "ko": "깊은 염원으로 가득한 난다 공주는 빠두뭇따라 부처님께 특별한 공양을 올렸습니다. 그리고 바로 그 으뜸의 신통을 얻기를 엄숙히 서원했습니다.",
+    "cover": [
+     227,
+     200,
+     152
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Sakula-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     14,
+     750,
+     106
+    ],
+    "ko": "빠두뭇따라 부처님께서는 앞날을 내다보시고 예언하셨습니다. 난다 공주의 큰 서원은 고따마 부처님 시대에 완전히 이루어지리라.",
+    "cover": [
+     231,
+     215,
+     174
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Sakula-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     270,
+     330,
+     396
+    ],
+    "ko": "천상에서 지낸 뒤 그녀는 깟사빠 부처님 시대에 바라문 집안에 태어났습니다. 그녀는 홀로 떠도는 유행자의 삶을 택했습니다.",
+    "cover": [
+     223,
+     196,
+     147
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Sakula-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     48,
+     330,
+     154
+    ],
+    "ko": "탁발로 얻은 적은 기름으로 그녀는 깊은 공양을 올렸습니다. 깟사빠 부처님의 사리를 모신 탑에 밤새도록 등불을 환히 밝혔습니다.",
+    "cover": [
+     219,
+     196,
+     147
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Sakula-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     324,
+     448,
+     400
+    ],
+    "ko": "이 등불 공양은 놀라운 결과를 낳았습니다. 그녀는 삼십삼천에 천신으로 태어나 매우 뛰어난 눈의 능력을 갖추었습니다.",
+    "cover": [
+     216,
+     192,
+     146
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Sakula-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     42,
+     44,
+     330,
+     154
+    ],
+    "ko": "고따마 부처님 시대에 그녀는 사왓티에서 사꿀라로 태어났습니다. 제따와나 승원을 보시하는 자리에서 부처님의 법문을 듣고 재가 신도가 되었습니다.",
+    "cover": [
+     214,
+     192,
+     146
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Sakula-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     322,
+     640,
+     436
+    ],
+    "ko": "한 아라한의 깊은 법문을 듣자 강한 경각심(saṃvega)이 일었습니다. 이 깊은 깨달음으로 그녀는 세속을 버리고 비구니로 출가했습니다.",
+    "cover": [
+     242,
+     225,
+     189
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Sakula-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     510,
+     218,
+     760,
+     414
+    ],
+    "ko": "그녀는 청정한 성스러운 수행에 부지런히 힘썼습니다. 흔들림 없는 정진으로 사꿀라 장로니는 곧 세속의 모든 속박을 끊고 궁극의 목표인 아라한과를 이루었습니다.",
+    "cover": [
+     235,
+     217,
+     176
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Sakula-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     322,
+     636,
+     436
+    ],
+    "ko": "지난 서원과 등불 공양에 힘입어 사꿀라 장로니는 천안(dibba-cakkhu)의 신통에 몸을 바쳐 완전히 통달했습니다.",
+    "cover": [
+     238,
+     221,
+     180
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Sakula-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     20,
+     600,
+     122
+    ],
+    "ko": "부처님께서 공식으로 선언하셨습니다.\n“비구들이여, 천안의 신통에 능숙한 나의 비구니 제자들 가운데 사꿀라가 으뜸(etadagga)이다.”",
+    "cover": [
+     239,
+     216,
+     169
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Sakula-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     324,
+     636,
+     436
+    ],
+    "ko": "성취의 짜임\n1. 씨앗: 난다 공주의 서원 (빠두뭇따라 부처님)\n2. 조건: 등불 공양 (깟사빠 부처님)\n3. 결실: 부지런한 청정 수행 (고따마 부처님)\n결과: 아라한과와 천안의 으뜸",
+    "cover": [
+     236,
+     216,
+     174
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
