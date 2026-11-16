@@ -2252,7 +2252,7 @@ function parApply() {
   if (!R.parD) { parEnsure(); return; }
   const D = R.parD, O = D.orig, wide = innerWidth >= 900, ptx = {};
   const kText = key => { if (!(key in ptx)) { const [n, k] = key.split(':').map(Number); ptx[key] = (paras((R.pages[n - 1] || {}).text)[k]) || ''; } return ptx[key]; };
-  const oHtml = (t, h) => boldMark(esc(t)).replace(/\n/g, '<br>');
+  const oHtml = (t, h) => boldMark(esc(t)).replace(/\[\^([^\]\s]+)\]/g, '<sup class="par-fn">$1</sup>').replace(/\n/g, '<br>');  // 원서 각주 번호 [^n] → 작은 위첨자
   const kHtml = t => fnMark(phMark(boldMark(esc(t.replace(/^## |^\^\^ |^:: |^>> |^\|\| |^\+\+ /gm, ''))))).replace(/\n/g, '<br>');
   const lang = { en: '영어', my: '미얀마어', pi: '빠알리어', th: '태국어' }[D.lang] || D.lang;
   rf.classList.add('par-on', R.parMode === 'para' && wide ? 'par2' : 'par1');
