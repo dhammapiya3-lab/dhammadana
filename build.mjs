@@ -890,6 +890,13 @@ put('404.html', layout({ title: '페이지를 찾을 수 없습니다', page: 'n
 /* ---------- 쓰기 ---------- */
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.cpSync(path.join(ROOT, 'public'), OUT, { recursive: true });
+// 대표 주소(canonical): 같은 화면이 여러 주소(?pub=… 같은 찾아보기 주소, 끝의 / 유무, pages.dev 주소 등)로 열려도
+// 구글이 '사용자가 선택한 표준이 없는 중복 페이지'로 보지 않게, 쪽마다 https://dhammadana.kr/<경로>/ 를 대표로 알려 줌 (운영자 요청, 2026-11-16 — Search Console 알림)
+for (const p of Object.keys(pages)) {
+  if (!/(^|\/)index\.html$/.test(p) || /name="robots" content="[^"]*noindex/.test(pages[p]) || /rel="canonical"/.test(pages[p])) continue;
+  const u = encodeURI('https://dhammadana.kr/' + p.replace(/index\.html$/, ''));
+  pages[p] = pages[p].replace('</head>', `<link rel="canonical" href="${u}">\n</head>`);
+}
 for (const [p, html] of Object.entries(pages)) {
   const f = path.join(OUT, p); fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, html);
 }
