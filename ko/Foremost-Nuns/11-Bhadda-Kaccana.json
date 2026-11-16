@@ -1,0 +1,626 @@
+[
+ {
+  "img": "images/11-Bhadda-Kaccana-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     326,
+     700,
+     376
+    ],
+    "ko": "큰 신통의 으뜸",
+    "cover": [
+     244,
+     233,
+     206
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     100,
+     376,
+     700,
+     422
+    ],
+    "ko": "기억과 영적 통찰에 견줄 이 없던 밧다 깟짜나 장로니의\n놀라운 우주적 여정",
+    "cover": [
+     243,
+     233,
+     206
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     280,
+     282,
+     520,
+     316
+    ],
+    "ko": "떼려야 뗄 수 없는 운명",
+    "cover": [
+     247,
+     235,
+     206
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     280,
+     316,
+     520,
+     446
+    ],
+    "ko": "큰물은 물결을 따릅니다.\n궁극의 해탈에 이르기 전 그녀는 야소다라였습니다. 여러 생에 걸쳐 미래 부처님과 길이 묶여, 세간을 거치는 그분의 여정을 함께하다가 마침내 그것을 넘어섰습니다.",
+    "cover": [
+     246,
+     235,
+     205
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     296,
+     418,
+     332
+    ],
+    "ko": "함사와띠의 옛 서원",
+    "cover": [
+     245,
+     231,
+     202
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     44,
+     332,
+     418,
+     412
+    ],
+    "ko": "빠두뭇따라 부처님 시대에 그녀는 큰 신통으로 으뜸이라 선언된 비구니를 보았습니다. 감동한 그녀는 바로 그 높은 경지를 이루기를 깊이 서원했고, 부처님께 확인을 받았습니다.",
+    "cover": [
+     245,
+     231,
+     202
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     492,
+     36,
+     760,
+     80
+    ],
+    "ko": "십만 겁을 건너다",
+    "cover": [
+     246,
+     233,
+     206
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     492,
+     80,
+     760,
+     200
+    ],
+    "ko": "서원을 세운 뒤 십만 겁 동안 그녀는 오직 천신 세계와 인간 세상만을 오가며 태어났습니다. 낮은 세계에는 한 번도 태어나지 않고, 궁극의 깨달음에 필요한 덕을 꾸준히 완성해 갔습니다.",
+    "cover": [
+     245,
+     233,
+     206
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     298,
+     420,
+     334
+    ],
+    "ko": "왕족으로 태어난 마지막 생",
+    "cover": [
+     243,
+     229,
+     199
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     44,
+     334,
+     420,
+     412
+    ],
+    "ko": "고따마 부처님 시대에 그녀는 사꺄족 숩빠붓다 왕자의 딸 밧다 깟짜나로 태어났습니다. 싯닷타 왕자와 혼인하여 정비가 되었고 라훌라 왕자의 어머니가 되었습니다.",
+    "cover": [
+     243,
+     229,
+     199
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     336,
+     714,
+     370
+    ],
+    "ko": "출가의 길",
+    "cover": [
+     245,
+     230,
+     199
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     86,
+     370,
+     714,
+     440
+    ],
+    "ko": "세속의 삶은 곧 무너졌습니다. 싯닷타 왕자는 라훌라가 태어난 날 밤 세상을 버리고 떠났습니다. 완전한 깨달음을 이루고 다섯 해 뒤, 부처님께서는 고향에 돌아와 친족들을 법으로 일깨우셨습니다.",
+    "cover": [
+     245,
+     230,
+     198
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     444,
+     50,
+     754,
+     84
+    ],
+    "ko": "승가에 들다",
+    "cover": [
+     243,
+     227,
+     196
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     444,
+     84,
+     754,
+     204
+    ],
+    "ko": "왕이 세상을 떠나자 왕실의 여인들은 왕궁을 떠났습니다. 밧다 깟짜나와 난다 공주는 마하빠자빠띠 고따미를 은사로 하여 비구니가 되었습니다. 그녀는 황금 장신구를 출가자의 가사와 바꾸었습니다.",
+    "cover": [
+     242,
+     227,
+     196
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     338,
+     714,
+     372
+    ],
+    "ko": "참된 통찰을 이루다",
+    "cover": [
+     244,
+     228,
+     194
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     86,
+     372,
+     714,
+     440
+    ],
+    "ko": "출가는 시작일 뿐이었습니다. 큰 정진으로 밧다 깟짜나 장로니는 통찰을 얻으려 힘썼고, 흔들림 없는 노력으로 모든 번뇌를 없애고 아라한의 궁극의 해탈을 이루었습니다.",
+    "cover": [
+     242,
+     227,
+     194
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     336,
+     718,
+     366
+    ],
+    "ko": "숙고(āvajjana)의 힘",
+    "cover": [
+     241,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     84,
+     366,
+     718,
+     420
+    ],
+    "ko": "그녀는 큰 신통에 통달했습니다. 한자리에 앉아 마음을 한 번 기울이기만 하면 전생을 한 치의 흐림 없이 곧바로 떠올렸습니다. 이 놀라운 마음의 힘에 승가가 모두 놀랐습니다.",
+    "cover": [
+     240,
+     225,
+     194
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     64,
+     82,
+     314,
+     152
+    ],
+    "ko": "그녀가 본 세계의 크기",
+    "cover": [
+     244,
+     235,
+     205
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     64,
+     152,
+     314,
+     440
+    ],
+    "ko": "대부분의 큰 스승은 십만 겁에 걸친 생을 기억할 수 있었습니다.\n\n밧다 깟짜나 장로니의 눈은 한없이 더 멀리 꿰뚫었습니다. 그녀는 한 아승기겁과 십만 겁에 걸친 생을 한꺼번에 볼 수 있었습니다.",
+    "cover": [
+     244,
+     234,
+     204
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     360,
+     172,
+     456,
+     268
+    ],
+    "ko": "십만 겁",
+    "cover": [
+     251,
+     245,
+     231
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "ellipse": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     280,
+     124,
+     520,
+     164
+    ],
+    "ko": "뛰어난 네 분",
+    "cover": [
+     243,
+     231,
+     197
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     280,
+     164,
+     520,
+     318
+    ],
+    "ko": "부처님의 제자 가운데 이처럼 높은 기억의 신통을 지닌 이는 네 분뿐이었습니다. 다른 이들은 십만 겁을 기억했지만, 이 네 분만이 한 아승기겁의 장막까지 꿰뚫었습니다. 그녀는 거인들 사이에 나란히 섰습니다.",
+    "cover": [
+     244,
+     231,
+     199
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     144,
+     196,
+     276,
+     222
+    ],
+    "ko": "사리뿟따 장로",
+    "cover": [
+     239,
+     224,
+     189
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     512,
+     196,
+     660,
+     222
+    ],
+    "ko": "마하목갈라나 장로",
+    "cover": [
+     243,
+     230,
+     199
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     160,
+     380,
+     274,
+     406
+    ],
+    "ko": "바꿀라 장로",
+    "cover": [
+     240,
+     224,
+     191
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     508,
+     380,
+     672,
+     406
+    ],
+    "ko": "밧다 깟짜나 장로니",
+    "cover": [
+     241,
+     226,
+     194
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     338,
+     722,
+     370
+    ],
+    "ko": "가장 높은 선언",
+    "cover": [
+     245,
+     236,
+     207
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     86,
+     370,
+     722,
+     440
+    ],
+    "ko": "“비구들이여, 큰 신통을 갖춘 나의 비구니 제자들 가운데 밧다 깟짜나가 으뜸(etadagga)이다.”\n제따와나에서 부처님께서는 이 말씀으로 승가 안에 그녀의 자리를 굳게 세우셨습니다.",
+    "cover": [
+     245,
+     236,
+     207
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Bhadda-Kaccana-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     76,
+     350,
+     724,
+     382
+    ],
+    "ko": "황금빛 결실",
+    "cover": [
+     244,
+     233,
+     203
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     76,
+     382,
+     724,
+     448
+    ],
+    "ko": "빛나는 금빛 살결 때문에 그녀는 밧다 깐짜나라고도 불렸습니다. 아득한 옛날 빠두뭇따라 부처님 앞에서 세운 서원이 완전히 무르익었습니다. 황금빛 왕비는 기억의 신통에서 으뜸인 이가 되었습니다.",
+    "cover": [
+     246,
+     233,
+     204
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
