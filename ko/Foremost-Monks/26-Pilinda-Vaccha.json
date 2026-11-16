@@ -1,0 +1,314 @@
+[
+ {
+  "img": "images/26-Pilinda-Vaccha-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     288,
+     592,
+     392
+    ],
+    "ko": "삘린다 왓차의 업의 무늬\n신통과 습관, 그리고 깨달음의 길",
+    "cover": [
+     21,
+     70,
+     110
+    ],
+    "align": "center",
+    "em": 24,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     312,
+     304,
+     736,
+     388
+    ],
+    "ko": "옛 항사와띠에서 한 부자는 빠두뭇따라 부처님께서 천신들의\n사랑을 받는 비구를 칭찬하시는 것을 보고 놀랐습니다.\n그는 바로 그 영예를 얻겠다고 서원했습니다.\n부처님께서는 그의 앞날을 보시고 이루어지리라 예언하셨습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     340,
+     620,
+     416
+    ],
+    "ko": "여러 생 뒤, 전륜성왕이 된 그는 백성을 오계에 머물게 했습니다.\n덕스러운 다스림으로 수많은 백성을 천신 세계로 이끌었고,\n천신들과 영원한 감사의 업연을 맺었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     396,
+     310,
+     762,
+     418
+    ],
+    "ko": "사왓티에서 바라문 삘린다 왓차로\n다시 태어난 그는 세속의 삶을 멀리했습니다.\n쭐라 간다라 주문을 익혀 하늘을 날고 남의 마음을\n읽는 큰 신통을 부렸습니다. 그는 라자가하에서\n가장 이름나고 부유한 성자가 되었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     340,
+     620,
+     416
+    ],
+    "ko": "고따마 부처님께서 라자가하에 오시자 삘린다의 신통이 사라졌습니다.\n자신의 세속 주문이 더 높은 스승께 가려진 낮은 재주임을 알고,\n그는 겸손히 부처님께 나아가 더 높은 진리를 배우고자 했습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     428,
+     308,
+     762,
+     420
+    ],
+    "ko": "출가가 먼저라는 말씀에 삘린다는 비구가\n되었습니다. 부처님께서 그에게 꼭 맞는 수행\n주제를 주셨습니다. 지난 생에서 갖춘 넉넉한\n조건 덕분에 삘린다는 깊은 통찰을 얻어,\n세속의 주문을 궁극의 깨달음과 맞바꾸었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     322,
+     250,
+     454,
+     314
+    ],
+    "ko": "천한 자여",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     590,
+     80,
+     792,
+     360
+    ],
+    "ko": "깨달은 뒤에도 삘린다는\n누구에게나 ‘천한 자’라고\n불렀습니다.\n\n부처님께서 설명하셨습니다.\n오백 생 동안 거만한\n바라문으로 살아 몸에 밴\n습관이라고.\n\n아라한은 악의 없이 말하니,\n그 말이 거칠게 들려도\n조금도 해롭지 않습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     246,
+     83
+    ],
+    "shape": "bubble",
+    "en": "What is in your bowl outcaste?",
+    "ko": "발우에 든 게\n뭐요,\n천한 자여?",
+    "align": "center",
+    "em": 17
+   },
+   {
+    "rect": [
+     596,
+     62,
+     752,
+     160
+    ],
+    "ko": "쥐똥이오,\n스님.",
+    "cover": [
+     136,
+     12,
+     11
+    ],
+    "align": "center",
+    "em": 20,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     78,
+     346,
+     724,
+     440
+    ],
+    "ko": "탁발 중에 삘린다가 후추 장수에게 인사를 건넸습니다. 기분이 상한\n장수는 심술궂게 물건을 속였습니다. 지난 생의 해롭지 않은 습관대로\n삘린다는 그저 대답했습니다. 그렇게 되리라, 천한 자여.",
+    "cover": true,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     456,
+     70,
+     734,
+     330
+    ],
+    "ko": "아라한에게 화를 내며\n거짓말한 장수에게\n곧바로 업의 과보가\n닥쳤습니다.\n\n그가 손에 쥐어 보니,\n수레 가득한 귀한 후추가\n정말로 하찮은 쥐똥으로\n변해 있었습니다.\n그는 절망에 빠졌습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     606,
+     100
+    ],
+    "shape": "bubble",
+    "en": "So be it rascal",
+    "ko": "그렇게 되리라,\n못난 자여.",
+    "align": "center",
+    "em": 18
+   },
+   {
+    "rect": [
+     84,
+     356,
+     722,
+     434
+    ],
+    "ko": "지나가던 이의 권유로 장수는 돌아와 후추를 싣고 있다고 사실대로 말했습니다.\n삘린다는 악의 없이 대답했습니다. 그러자 거친 업의 과보가 곧바로\n되돌려져, 수레의 짐은 다시 귀한 후추가 되었습니다.",
+    "cover": true,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     178,
+     344,
+     628,
+     432
+    ],
+    "ko": "전륜성왕으로서 수많은 이를 하늘로 이끌었기에, 천신들이 날마다\n그에게 예배했습니다. 옛 예언대로 부처님께서는 삘린다 왓차 존자를\n천신들이 사랑하고 공경하는 비구 제자 가운데 으뜸이라 선언하셨습니다.",
+    "cover": [
+     239,
+     190,
+     68
+    ],
+    "align": "center",
+    "em": 15,
+    "dark": false,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/26-Pilinda-Vaccha-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     445,
+     302
+    ],
+    "shape": "bubble",
+    "en": "Outcaste",
+    "ko": "천한 자",
+    "align": "center",
+    "em": 16
+   },
+   {
+    "rect": [
+     556,
+     62,
+     740,
+     396
+    ],
+    "ko": "업의 무늬\n\n탑묘 공양이\n깨달음을 짰습니다.\n\n왕의 다스림이 천신들의\n공경을 짰습니다.\n\n오백 생의 바라문이\n해롭지 않은 습관을 짰습니다.\n\n지금의 모든 것은\n지난 의도의 실들로\n빈틈없이 짜인 것입니다.",
+    "cover": true,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
