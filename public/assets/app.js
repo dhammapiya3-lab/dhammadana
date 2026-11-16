@@ -1542,8 +1542,11 @@ const phMark = h => {
   const ph = R && R.ph; if (!ph) return h;
   if (PH_OF !== ph) { PH_OF = ph; const ks = Object.keys(ph).sort((a, b) => b.length - a.length).map(k => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')); PH_RE = ks.length ? new RegExp('(' + ks.join('|') + ')(?![\u0300-\u036f\u1dc0-\u1dff\u302c\u302d\u02d1\u02d4\u02d5\u2033])', 'g') : null; }
   if (!PH_RE) return h;
-  return h.replace(/(<[^>]*>)|([^<]+)/g, (m, tag, txt) => tag || txt.replace(PH_RE, w => `<span class="ph">${ph[w]}</span>`));
+  // 화면 낭독기: 글꼴 표기(부호 글자)는 읽지 않게 숨기고, 부호를 뺀 한글 소리를 보이지 않는 글(CSS ::before — 복사·밑줄 글자 자리에는 안 들어감)로 알려 줌 (운영자 요청, 2026-11-17)
+  return h.replace(/(<[^>]*>)|([^<]+)/g, (m, tag, txt) => tag || txt.replace(PH_RE, w => { const say = phSay(w); return `<span class="ph" aria-hidden="true">${ph[w]}</span><span class="ph-say" data-say="${esc(say)}"></span>`; }));
 };
+const PH_MARKS = /[\u0300-\u036f\u1dc0-\u1dff\u20d0-\u20ff\ufe00-\ufe0f\ufe20-\ufe2f\u302c\u302d\u02b9-\u02ff\u2033\ue000-\uf8ff\u22a4\u22a5]/g;
+const phSay = w => w.replace(PH_MARKS, '').normalize('NFC').trim() || '발음 부호';
 const headKey = t => unB(t).replace(/^## /, '').replace(/\[\^[^\]]+\]/g, '').replace(/\([^)]*\)/g, '').replace(/[\s‘’'"“”]/g, '').replace(/^[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩIVX]+\./, m => m.replace(/[IVX]+/g, x => ({I:'Ⅰ',II:'Ⅱ',III:'Ⅲ',IV:'Ⅳ',V:'Ⅴ',VI:'Ⅵ',VII:'Ⅶ',VIII:'Ⅷ',IX:'Ⅸ',X:'Ⅹ'}[x] || x)));
 const FIG_RE = /^!\[([^\]]*)\]\(([^)\s]+)\)\s*$/;
 const isTable = p => /^\|.*\|\s*$/m.test(p) && p.split('\n').filter(l => l.trim()).every(l => /^\|/.test(l.trim()));
