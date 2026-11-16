@@ -13,6 +13,7 @@
   "provider": "ariya",
   "press": false,
   "provider_chip": false,
+  "partner_chips": [],
   "paper": "",
   "paper_url": "",
   "stores": [
@@ -116,7 +117,7 @@
     },
     {
       "label": "증보판 (초판)",
-      "label_display": "",
+      "label_display": "증보판",
       "current": true,
       "public": true,
       "page_count": 894,
