@@ -10,7 +10,7 @@
 - 본문 속 각주 번호(Tahoma 7pt 숫자) → '[^n]' 표시, 쪽 아래 각주(6pt 번호 + 9pt 글) → 'fn' 문단 '[^n]: 글' (짝짓기에서 뺌).
 - 앞쪽 Acknowledgement 묶음은 한국어판 순서에 맞춰 Biography 묶음 뒤로 옮김(글자·쪽 이름은 그대로).
 - 차례(4쪽) → 'toc' 줄마다. 1쪽(빈 쪽)·3쪽(판권 면)·70쪽(뒤표지)은 넣지 않음. 2쪽 속표지는 'h'.
-- 글자는 PDF 그대로(Symbol 글꼴의 글머리표 U+F0B7 만 '•' 로, 그리스 문자 'ᾱ'(U+1FB1)로 찍힌 장음, ‟ 따옴표도 그대로) — 줄 끝 '-' 는 붙여 씀, 겹친 빈칸은 하나로.
+- 글자는 PDF 그대로(Symbol 글꼴의 글머리표 U+F0B7 만 '•' 로, 그리스 문자 'ᾱ'(U+1FB1)로 찍힌 장음도 그대로) — 아포스트로피가 '‟'(U+201F)로 잘못 찍힌 132곳(don‟t·Buddha‟s·Please wait.‟)은 운영자 요청(2026-11-17)으로 ’ 로 교정 — 줄 끝 '-' 는 붙여 씀, 겹친 빈칸은 하나로.
 """
 import sys, re, json, os, collections
 import pymupdf
@@ -55,7 +55,7 @@ for i in range(d.page_count):
                 if s['text'].strip() and round(s['size']) == 7 and re.fullmatch(r'\d+', s['text'].strip()):
                     t += '[^' + s['text'].strip() + ']'
                 else: t += s['text']
-            t = re.sub(r'[ \t]+', ' ', t).replace('\uf0b7', '•').strip()
+            t = re.sub(r'[ \t]+', ' ', t).replace('\uf0b7', '•').replace('‟', '’').strip()
             bold = all('Bold' in s['font'] for s in ne)
             lines.append({'bb': l['bbox'], 't': t, 'bold': bold, 'size': round(max(s['size'] for s in ne), 1), 'font': f0})
     if not pg: pg = str(pn - 1)
@@ -102,7 +102,7 @@ for i in range(d.page_count):
     for bb, sp in fns:
         ne = [s for s in sp if s['text'].strip()]
         num = ne[0]['text'].strip() if round(ne[0]['size']) == 6 and re.fullmatch(r'\d+', ne[0]['text'].strip()) else None
-        body = re.sub(r'[ \t]+', ' ', ''.join(s['text'] for s in sp if s is not ne[0] or num is None)).strip()
+        body = re.sub(r'[ \t]+', ' ', ''.join(s['text'] for s in sp if s is not ne[0] or num is None)).replace('‟', '’').strip()
         if num:
             fncur = {'pg': pg, 'k': 'fn', 't': f'[^{num}]: {body}'}; paras.append(fncur)
         elif fncur is not None:
