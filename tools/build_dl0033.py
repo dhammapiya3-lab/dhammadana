@@ -33,6 +33,6 @@ for t, p, s in TOC:
         k = next((i for i, q in enumerate(paras) if q.startswith('## ') and q[3:].strip() == t), None)
         if k: e['at'] = k
     toc.append(e)
-out = {'book': 'DL-0033', 'edition': '초판', 'toc': toc, 'images': [], 'body': body}
+out = {'book': 'DL-0033', 'edition': '초판', 'center_heads': True, 'toc': toc, 'images': [], 'body': body}
 json.dump(out, open(os.path.join(os.path.dirname(__file__), '..', 'content', 'texts', 'DL-0033.json'), 'w'), ensure_ascii=False, indent=1)
 print('쪽', len(pages), '목차', len(toc), '글자', len(body))

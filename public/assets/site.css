@@ -1111,3 +1111,6 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 
 /* 출판사·단체 페이지의 사이트 단추: 글이 길어 두 줄이 될 때 테두리와 닿지 않게 (운영자 요청, 2026-11-16) */
 .btn.pub-site{display:inline-block;height:auto;min-height:0;padding:10px 18px;line-height:1.55;white-space:normal;text-align:left;border-radius:12px;margin:4px 0}
+
+/* 본문 소제목 가운데 맞춤 — 텍스트 JSON center_heads (『불자수첩』, 운영자 요청 2026-11-16) */
+.reflow.chead .sub-h{text-align:center}

@@ -1,6 +1,7 @@
 {
  "book": "DL-0033",
  "edition": "초판",
+ "center_heads": true,
  "toc": [
   {
    "title": "속표지",
