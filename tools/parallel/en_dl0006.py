@@ -9,7 +9,7 @@
 - 장 제목(Tahoma Bold 14)·소제목(Tahoma Bold 11·12, 한 줄) → 'h'. 장 제목 아래 밑줄('____')은 뺌. '* * * * *' → 'sep'.
 - 본문 속 각주 번호(Tahoma 7pt 숫자) → '[^n]' 표시, 쪽 아래 각주(6pt 번호 + 9pt 글) → 'fn' 문단 '[^n]: 글' (짝짓기에서 뺌).
 - 앞쪽 Acknowledgement 묶음은 한국어판 순서에 맞춰 Biography 묶음 뒤로 옮김(글자·쪽 이름은 그대로).
-- 차례(4쪽) → 'toc' 줄마다. 1쪽(빈 쪽)·3쪽(판권 면)·70쪽(뒤표지)은 넣지 않음. 2쪽 속표지는 'h'.
+- 차례(4쪽) → 'toc' 줄마다. 1쪽(빈 쪽)·70쪽(뒤표지)은 넣지 않음, 3쪽 판권 면은 넣음(한국어판 판권지의 영어 판권 글과 짝). 2쪽 속표지는 'h'.
 - 글자는 PDF 그대로(Symbol 글꼴의 글머리표 U+F0B7 만 '•' 로, 그리스 문자 'ᾱ'(U+1FB1)로 찍힌 장음도 그대로) — 아포스트로피가 '‟'(U+201F)로 잘못 찍힌 132곳(don‟t·Buddha‟s·Please wait.‟)은 운영자 요청(2026-11-17)으로 ’ 로 교정 — 줄 끝 '-' 는 붙여 씀, 겹친 빈칸은 하나로.
 """
 import sys, re, json, os, collections
@@ -18,7 +18,7 @@ import pymupdf
 pdf = sys.argv[1]
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 d = pymupdf.open(pdf)
-SKIP = {1, 3, 70}
+SKIP = {1, 70}
 TOC_PAGE = 4
 FULL = 318
 

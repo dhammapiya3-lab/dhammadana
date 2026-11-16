@@ -21,6 +21,7 @@ ap.add_argument('book'); ap.add_argument('lang'); ap.add_argument('orig')
 ap.add_argument('--gl-start', default=None, help='용어 풀이가 시작하는 한국어 문단(정규식, 예: "^\\*\\*깜마\\[")');
 ap.add_argument('--gl-end', default=None, help='용어 풀이가 끝난 뒤 첫 한국어 문단(정규식) — 그 뒤(역자 후기·판권지 등)는 짝짓지 않음')
 ap.add_argument('--gl-nl', action='store_true', help="용어 풀이가 '낱말(roman)⏎풀이' 모양(DL-0011) — 쪽에서 잘린 낱말 조각('**웨**' + '**다나(vedanā)**')도 이어 읽음")
+ap.add_argument('--pin', action='append', default=[], help='짝을 손으로 정함: "한국어 열쇠+…=원서 번호+…" (예 "1:0=0+1" 속표지 ↔ 원서 제목·지은이). 원서 쪽을 비우면("2:0+2:1=") 그 한국어 문단은 짝 없음');
 ap.add_argument('--title', default=''); ap.add_argument('--by', default=''); ap.add_argument('--source', default='')
 A = ap.parse_args()
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -85,7 +86,7 @@ for i, p in enumerate(KO_DP):
         if plain(p['t'][a:b]).strip(): KS.append((i, a, b, plain(p['t'][a:b]).strip()))
 ES = []
 for i, p in enumerate(ORIG):
-    if p['k'] in ('toc', 'gl', 'pq', 'fn'): continue      # 원서 차례 쪽·용어 풀이·인용 상자(본문을 크게 다시 실은 것)는 차례 짝짓기에서 뺌 (한국어 차례도 %% 라 뺌)
+    if p['k'] in ('toc', 'gl', 'pq', 'fn', 'sep'): continue      # 원서 차례 쪽·용어 풀이·인용 상자(본문을 크게 다시 실은 것)는 차례 짝짓기에서 뺌 (한국어 차례도 %% 라 뺌)
     for a, b in sents(p['t'], 'en'):
         if plain(p['t'][a:b]).strip(): ES.append((i, a, b, plain(p['t'][a:b]).strip()))
 print('한국어 문단', len(KO), '문장', len(KS), '/ 원서 문단', len(ORIG), '문장', len(ES))
@@ -176,6 +177,26 @@ for kp, ep, bs in groups:
                      'or': [[ES[k][0], ES[k][1], ES[k][2]] for k in range(j0, j1)], **({'sc': sc} if sc is not None else {})})
     out.append({'ko': [KO_DP[k]['key'] for k in sorted(kp)], 'or': sorted(ep),
                 'ka': plain(KO_DP[min(kp)]['t'])[:24] if kp else '', 's': sent})
+# 손으로 정한 짝(--pin): 그 문단들을 다른 묶음에서 빼고 따로 한 묶음으로
+for pin in A.pin:
+    kk, oo = pin.split('=')
+    kk = [x for x in kk.split('+') if x]
+    def oidx(x):   # 원서 문단: 번호 또는 '@글 첫머리'
+        if x.startswith('@'): return next(i for i, p in enumerate(ORIG) if p['t'].startswith(x[1:]))
+        return int(x)
+    oo = [oidx(x) for x in oo.split('+') if x]
+    for g in out:
+        g['ko'] = [k for k in g['ko'] if k not in kk]; g['or'] = [o for o in g['or'] if o not in oo]
+        for st in g['s']:
+            st['ko'] = [x for x in st['ko'] if x[0] not in kk]; st['or'] = [x for x in st['or'] if x[0] not in oo]
+        g['s'] = [st for st in g['s'] if st['ko'] or st['or']]
+    out[:] = [g for g in out if g['ko']]   # 한국어 문단이 빠진 묶음의 원서 문단은 짝 없음
+    if kk and oo:
+        KOT = {x['key']: x['t'] for x in KO_DP}
+        out.append({'ko': kk, 'or': oo, 'ka': plain(KOT[kk[0]])[:24], 'pin': 1,
+                    's': [{'ko': [[k, 0, len(KOT[k])] for k in kk], 'or': [[o, 0, len(ORIG[o]['t'])] for o in oo]}]})
+kord = {x['key']: i for i, x in enumerate(KO_DP)}
+out.sort(key=lambda g: (kord.get(g['ko'][0], 1e9) if g['ko'] else 1e9))
 # 용어 풀이: 한국어 '낱말(roman) : 풀이' ↔ 원서 낱말
 import unicodedata
 def rk(x): return re.sub(r'[^a-z]', '', unicodedata.normalize('NFD', x).encode('ascii', 'ignore').decode().lower())
