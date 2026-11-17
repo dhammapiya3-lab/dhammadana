@@ -27,6 +27,7 @@
   "original_language": [
     "영어"
   ],
+  "content_languages": [],
   "original_source": "미얀파 파아옥 명상센터 선원장인 우 아찐나 스님의 The Workings of kamma 영문 개정판(싱가폴, PMAC, 2009년 11월 15일)을 번역한 것 입니다.",
   "parallel_editions": [],
   "series": "",
@@ -228,17 +229,17 @@
       "publisher_print": "",
       "publisher_print_show": "",
       "isbn": "",
-      "published_ebook": "2026년 11월 16일",
+      "published_ebook": "2026년 11월 17일",
       "publisher_ebook": "978-89-67821-06-7",
       "ebook_note": "",
       "isbn_ebook": "",
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "pdf/DL-0034/DL-0034_전자책개정판.pdf"
+        "url": "pdf/DL-0034/DL-0034_전자책개정판.pdf",
+        "site": "",
+        "created": "2026년 11월 17일"
       },
       "pdf_print": {
         "mode": "none",
