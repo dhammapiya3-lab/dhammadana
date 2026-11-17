@@ -1,10 +1,17 @@
 Foremost-Monks 22-Kundadhana 15 장
-자동 검수: 문제 의심 0 곳
-R2 에 올림: 76 개 / 한글판 이야기 74 편
+검수 Foremost-Monks/33-Bakula 07번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+검수 Foremost-Monks/33-Bakula 08번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+검수 Foremost-Monks/33-Bakula 10번 그림 상자1 [자리] 한글 글(1323,491)이 상자 점(1071,158)에서 멀리 그려짐
+검수 Foremost-Monks/33-Bakula 10번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+검수 Foremost-Monks/33-Bakula 16번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+Foremost-Monks 33-Bakula 28 장
+자동 검수: 문제 의심 5 곳
+R2 에 올림: 132 개 / 한글판 이야기 75 편
 공개 주소 확인: 200 1713627바이트
 이야기 Foremost-Monks/22-Kundadhana {'pdf': 22486186, 'zip': 22220412, 'n': 15}
-책 Foremost-Monks {'pdf': 842005718, 'pdfs': 88815888, 'zip': 841538025, 'stories': 29, 'n': 606}
-내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 74 이야기
+이야기 Foremost-Monks/33-Bakula {'pdf': 38388726, 'zip': 38117912, 'n': 28}
+책 Foremost-Monks {'pdf': 880134748, 'pdfs': 92847023, 'zip': 879656228, 'stories': 30, 'n': 634}
+내려받기 파일: 3 묶음 새로 만듦
+글로 보기: 75 이야기
 41-Mogharaja
 13-Singalakamata
