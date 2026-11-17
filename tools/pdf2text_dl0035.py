@@ -86,10 +86,15 @@ def build(n, lab):
             paras.append('## ' + hs[0]['t'].strip()); kinds.append('h1')
             for h in hs[1:]: paras.append(':: ' + h['t'].strip()); kinds.append('sub')
             i += 1; continue
+        if k == 'body' and 11.8 <= l['size'] <= 12.2 and l['x0'] > L0 + 20:
+            paras.append(':: ' + l['t'].strip()); kinds.append('sub'); i += 1; continue   # 장 제목 아래 부제 '-임산부의 …-'
         if k == 'body' and l['x0'] > 200 and l['x1'] > R0 - 14 and len(l['t'].strip()) < 12 and i == len(body) - 1:
             paras.append('>> ' + l['t'].strip()); kinds.append('sign'); i += 1; continue   # 끝 서명 '묘원 올림'
         if k == 'h2' or (k == 'pron' and not (i + 1 < len(body) and kind(body[i + 1]) in ('pali', 'pron'))):
-            paras.append('## ' + l['t'].strip()); kinds.append('h2'); i += 1; continue
+            t = l['t']
+            while k == 'h2' and i + 1 < len(body) and kind(body[i + 1]) == 'h2' and body[i + 1]['y'] - body[i]['y'] < 26:
+                i += 1; t += body[i]['t']   # 두 줄로 인쇄된 소제목 ('…를 알아' + '차림')
+            paras.append('## ' + t.strip()); kinds.append('h2'); i += 1; continue
         if k in ('pron', 'pali'):
             pr = []; pa = []; prev = None
             while i < len(body) and kind(body[i]) in ('pron', 'pali'):
@@ -117,7 +122,8 @@ def build(n, lab):
         while i < len(body) and kind(body[i]) == 'body':
             x = body[i]; pv = ls[-1]
             if x['y'] - pv['y'] > 26: break
-            if x['x0'] > L0 + 10 and pv['x1'] > R0 - 14 and abs(x['x0'] - pv['x0']) > 3: break   # 새 문단 들여쓰기
+            hang = re.match(r'\d+\. ', ls[0]['t']) and ls[0]['x0'] > L0 + 10 and 8 < x['x0'] - ls[0]['x0'] < 18   # 번호 항목의 둘째 줄 (번호 뒤에 맞춰 들여 씀)
+            if x['x0'] > L0 + 10 and pv['x1'] > R0 - 14 and abs(x['x0'] - pv['x0']) > 3 and not hang: break   # 새 문단 들여쓰기
             if x['x0'] > L0 + 10 and pv['x1'] <= R0 - 14 and abs(x['x0'] - pv['x0']) > 3 and pv['x0'] < L0 + 5: break
             ls.append(x); i += 1
         s = ''
@@ -192,7 +198,7 @@ for n in range(8, 364):
         first = lines_of(n); first = [l for l in first if kind(l) == 'body']
         lastl = [l for l in lines_of(prevp['n']) if kind(l) == 'body']
         if first and lastl and first[0]['x0'] < L0 + 5 and lastl[-1]['x1'] > R0 - 14:
-            prevp['paras'][-1] += pg['paras'][0]; pg['paras'].pop(0); pg['kinds'].pop(0); log['쪽을 넘어 이어 붙인 문단'] += 1
+            prevp['paras'][-1] = prevp['paras'][-1] + (' ' if lastl[-1]['t'].endswith(' ') else '') + pg['paras'][0]; pg['paras'].pop(0); pg['kinds'].pop(0); log['쪽을 넘어 이어 붙인 문단'] += 1
     PAGES.append(pg)
     for j, k in enumerate(pg['kinds']):
         if k == 'h1' or (k == 'h2' and pg['paras'][j] == '## 편역자 후기'):
