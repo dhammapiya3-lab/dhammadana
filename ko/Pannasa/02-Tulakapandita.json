@@ -1,0 +1,544 @@
+[
+ {
+  "img": "images/02-Tulakapandita-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     272,
+     328,
+     534,
+     352
+    ],
+    "ko": "뚤라까빤디따의 전생 이야기",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     272,
+     354,
+     534,
+     408
+    ],
+    "ko": "보시 바라밀(dāna pāramī)의 궁극을 보여 주는\n란나의 빤냐사 자따까",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     52,
+     382,
+     154
+    ],
+    "ko": "꼬나가마나 부처님 시대에 덕 높은 비구 서른세 분이 찐나 도성을 지나갔습니다. 그분들의 고요한 모습에, 재물과 영향력을 잃을까 두려워한 왕의 타락한 종교 고문이 위협을 느꼈습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     288,
+     540,
+     404
+    ],
+    "ko": "질투에 사로잡힌 바라문이 거짓말을 했습니다. “저들은 도성을 털러 온 도둑입니다!” 속아 넘어간 찐나 왕은 죄 없는 출가자들을 묶고 때려 화장터로 끌고 가 꼬챙이에 꿰라고 명했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     58,
+     680,
+     126
+    ],
+    "ko": "처형장에서 큰 장로 나가디빠까가 우는 비구들을 달랬습니다. 그들의 고통은 윤회 속에서 그들을 따라온 지난 업의 피할 수 없는 그림자일 뿐이라고 일깨웠습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     100,
+     272,
+     316
+    ],
+    "ko": "이 깊은 불의를 들은 지혜로운 재가자 뚤라까빤디따는 출가자들을 구하려고 왕과 대담한 거래를 했습니다. 그분들의 몸무게만큼 금을 달아 목숨을 사겠다는 것이었습니다.",
+    "cover": false,
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     340,
+     324,
+     736,
+     410
+    ],
+    "ko": "뚤라까빤디따는 가죽 저울 위에 집안의 막대한 재산을 모두 쏟아부었습니다. 넉넉하던 금이 다 떨어지기 전까지 꼭 서른 분 비구의 자유를 샀습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     530,
+     112,
+     724,
+     330
+    ],
+    "ko": "사형수 셋이 남았습니다. 깨달음을 향한 뜻이 흔들림 없던 뚤라까빤디따는 사랑하는 아내와 아이를 종으로 넘기고 겨우 금을 얻어 비구 두 분을 더 풀어 주었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     64,
+     352,
+     152
+    ],
+    "ko": "겁에 질린 사미 한 분만 기둥에 묶인 채 남았습니다. 금은 다 떨어지고 가족도 떠난 뚤라까빤디따에게는 더 맞바꿀 것이 없었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     368,
+     630,
+     430
+    ],
+    "ko": "“내 목숨을 그대 대신 내놓겠소.” 뚤라까빤디따는 집행인들에게 자기 몸을 내주고 사미 대신 기둥에 묶여, 보시 바라밀의 궁극을 이루려 했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     64,
+     352,
+     154
+    ],
+    "ko": "처형 직전, 뚤라까빤디따의 아버지가 엄청난 재물을 싣고 배로 왔습니다. 다급한 아버지는 학살을 멈추려고 아들의 몸무게만큼 금을 왕에게 바치겠다고 했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     178,
+     538,
+     270
+    ],
+    "ko": "목숨을 건진 사미는 구족계를 받았습니다. 정진한 서른세 분 출가자는 모두 곧 아라한이 되었습니다. 그분들이 하늘로 올라 놀라운 신통을 보이자 왕은 두려워 떨었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     458,
+     62,
+     738,
+     152
+    ],
+    "ko": "뚤라까빤디따는 겁먹은 왕을 진정시키며 비구들의 참된 덕을 밝혔습니다. 왕은 큰 승원을 지었고, 거짓말한 바라문은 아위찌 지옥의 불길에 삼켜졌습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     500,
+     60,
+     742,
+     182
+    ],
+    "ko": "보시의 짜임\n보시 바라밀은 세 단계의 내려놓음으로 높아집니다. 깨달음은 물질의 재물, 세상의 집착, 마침내 자기 존재까지 내려놓기를 요구합니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     372,
+     190,
+     438,
+     238
+    ],
+    "ko": "자기\n(목숨)",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     348,
+     262,
+     462,
+     310
+    ],
+    "ko": "안의 인연\n(가족)",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     300,
+     344,
+     510,
+     390
+    ],
+    "ko": "밖의 소유\n(금)",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     90,
+     396,
+     136
+    ],
+    "ko": "과거의 생\n(꼬나가마나 부처님 시대)",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     404,
+     90,
+     596,
+     136
+    ],
+    "ko": "현재의 생\n(고따마 부처님 시대)",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     236,
+     141,
+     368,
+     175
+    ],
+    "ko": "뚤라까빤디따",
+    "cover": [
+     238,
+     228,
+     204
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": false
+   },
+   {
+    "rect": [
+     432,
+     141,
+     562,
+     175
+    ],
+    "ko": "부처님",
+    "cover": [
+     238,
+     228,
+     204
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": false
+   },
+   {
+    "rect": [
+     236,
+     182,
+     368,
+     216
+    ],
+    "ko": "찐나 왕",
+    "cover": [
+     238,
+     228,
+     204
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": false
+   },
+   {
+    "rect": [
+     432,
+     182,
+     562,
+     216
+    ],
+    "ko": "아난다",
+    "cover": [
+     238,
+     228,
+     204
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": false
+   },
+   {
+    "rect": [
+     236,
+     223,
+     368,
+     257
+    ],
+    "ko": "아내 삼바라",
+    "cover": [
+     238,
+     228,
+     204
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": false
+   },
+   {
+    "rect": [
+     432,
+     223,
+     562,
+     257
+    ],
+    "ko": "야소다라",
+    "cover": [
+     238,
+     228,
+     204
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": false
+   },
+   {
+    "rect": [
+     236,
+     264,
+     368,
+     298
+    ],
+    "ko": "사악한 바라문",
+    "cover": [
+     238,
+     228,
+     204
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": false
+   },
+   {
+    "rect": [
+     432,
+     264,
+     562,
+     298
+    ],
+    "ko": "데와닷따",
+    "cover": [
+     238,
+     228,
+     204
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": false
+   },
+   {
+    "rect": [
+     236,
+     318,
+     566,
+     410
+    ],
+    "ko": "늘 그러하듯 부처님께서는 과거의 인물들을 지금의 인물들과 잇는 업의 실을 밝히며 전생 이야기를 마치셨습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tulakapandita-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     244,
+     148,
+     556,
+     286
+    ],
+    "ko": "궁극의 희생으로 생명은 사라지지 않고 바뀝니다. 어떤 대가를 치르더라도 법을 지킨 뚤라까빤디따는 일체지로 가는 길을 굳게 다졌고, 셀 수 없는 중생을 윤회 너머로 이끌었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ }
+]
