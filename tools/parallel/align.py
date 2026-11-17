@@ -22,7 +22,7 @@ ap.add_argument('--gl-start', default=None, help='용어 풀이가 시작하는 
 ap.add_argument('--gl-end', default=None, help='용어 풀이가 끝난 뒤 첫 한국어 문단(정규식) — 그 뒤(역자 후기·판권지 등)는 짝짓지 않음')
 ap.add_argument('--gl-nl', action='store_true', help="용어 풀이가 '낱말(roman)⏎풀이' 모양(DL-0011) — 쪽에서 잘린 낱말 조각('**웨**' + '**다나(vedanā)**')도 이어 읽음")
 ap.add_argument('--pin', action='append', default=[], help='짝을 손으로 정함: "한국어 열쇠+…=원서 번호+…" (예 "1:0=0+1" 속표지 ↔ 원서 제목·지은이). 원서 쪽을 비우면("2:0+2:1=") 그 한국어 문단은 짝 없음');
-ap.add_argument('--fnpin', action='append', default=[], help='각주 짝을 손으로: "한국어 각주 번호=원서 각주 번호" (예 "40=33")');
+ap.add_argument('--fnpin', action='append', default=[], help='각주 짝을 손으로: "한국어 각주 번호=원서 각주 번호" (예 "40=33"), 짝 없음은 "14=" 또는 "=3"');
 ap.add_argument('--ko-skip', action='append', default=[], help="원서에 없는 한국어 부분을 짝짓기에서 뺌: '시작 정규식|끝 정규식' (끝 문단은 남김, 끝을 비우면 책 끝까지) — 예 DL-0012 부록 2~역자 후기")
 ap.add_argument('--toc', action='store_true', help='차례도 줄마다 짝지음 — 한국어 차례(%% 문단)의 제목 줄 ↔ 원서 차례(k toc) 항목, 쪽 번호는 빼고 제목끼리 (운영자 요청, 2026-11-17)')
 ap.add_argument('--title', default=''); ap.add_argument('--by', default=''); ap.add_argument('--source', default='')
@@ -70,6 +70,9 @@ for sk in A.ko_skip:   # 원서에 없는 부분(--ko-skip)
     i1 = next((i for i, p in enumerate(KO_DP) if i > i0 and s1 and re.search(s1, p['t'])), len(KO_DP))
     print('짝짓기에서 뺀 한국어 문단', i1 - i0, ':', KO_DP[i0]['key'], '…', KO_DP[i1 - 1]['key'])
     KO_DP = KO_DP[:i0] + KO_DP[i1:]
+# 손으로 '짝 없음'으로 정한 문단(--pin "열쇠+…=")은 짝짓기 전에 뺌 — 뒤에서 빼면 그 문단이 둘레 문장을 밀어냄 (2026-11-17 DL-0012 검수)
+_nopin = {k for x in A.pin if x.endswith('=') for k in x[:-1].split('+') if k}
+if _nopin: KO_DP = [p for p in KO_DP if p['key'] not in _nopin]
 SPL = re.compile(r'(?<=[.?!。…])(?:[”’"\')\]]*)\s+|\n')
 
 
@@ -273,7 +276,9 @@ if KF and EF:
     fn_rep.reverse()
     for x in A.fnpin:   # 손으로 정한 각주 짝
         kn, en = x.split('=')
+        if not en: FN.pop(kn, None); fn_rep = [r for r in fn_rep if r[0][0] != kn]; continue   # "14=" 한국어 각주 14 는 짝 없음
         ei = next(i for i, t in EF if ORIG[i]['t'].startswith(f'[^{en}]:'))
+        if not kn: FN = {k: v for k, v in FN.items() if v != ei}; fn_rep = [r for r in fn_rep if r[1][0] != ei]; continue   # "=3" 원서 각주 3 은 짝 없음
         FN = {k: v for k, v in FN.items() if v != ei}; FN[kn] = ei
         fn_rep = [r for r in fn_rep if r[1][0] != ei and r[0][0] != kn] + [((kn, dict(KF)[kn]), (ei, ORIG[ei]['t']), 1.0)]
     print('각주 짝', len(FN), '/ 한국어 각주', len(KF), '(역주', len(YK), ') / 원서 각주', len(EF))

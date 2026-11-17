@@ -40,6 +40,7 @@ def compose(chars):
         ch = c['c']; x0, y0, x1, y1 = c['bbox']
         if ch == ' ' and drop_y is not None and abs(y0 - drop_y) < 0.3: drop_y = None; continue   # 아래 점과 함께 찍힌 빈칸 조각
         if ch == ' ' and out and i + 1 < len(cs) and cs[i + 1]['bbox'][0] - out[-1][3] < 0.8: continue   # 앞뒤 글자 사이가 붙어 있는 빈칸 조각
+        if ch == ' ' and any(n['c'].isalpha() and n['bbox'][0] < x0 + 0.5 for n in cs[i + 1:i + 3]): continue   # 뒤 글자가 빈칸 자리에 겹쳐 찍힘('sa ˙nkapp')
         if ch in ('¯', '˙') or isdot(c):
             mark = MAC if ch == '¯' else ODOT if ch == '˙' else UDOT
             if mark == UDOT: drop_y = y0
@@ -58,7 +59,8 @@ def compose(chars):
     return out
 
 
-paras = []; cur = None; last_full = False; hyph = []
+QX, QRM = 92, 324.2   # 인용 묶음 왼쪽 자리·오른쪽 끝
+paras = []; cur = None; last_full = False; hyph = []; lastbody = None
 # 1단계: 쪽마다 줄을 모음
 pages = []
 for i in range(d.page_count):
@@ -106,8 +108,8 @@ def join(a, b, pg):
     if m and b[:1].isalpha():
         left = m.group(1); right = re.match(r"[^\W\d_]+", b).group(0)
         whole, hy = (left + right).lower(), (left + '-' + right).lower()
-        if left.lower() in ('non', 'self', 'pre'): keep = True; why = '앞가지(non·self·pre) — 하이픈 남김'
-        elif WORDS.get(whole): keep = False; why = '이은 낱말이 원서에 있음'
+        if WORDS.get(whole): keep = False; why = '이은 낱말이 원서에 있음'
+        elif left.lower() in ('non', 'self', 'pre'): keep = True; why = '앞가지(non·self·pre) — 하이픈 남김'
         elif WORDS.get(hy): keep = True; why = '하이픈 낱말이 원서에 있음'
         elif re.search(r'[^\x00-\x7f]', left + right): keep = True; why = '부호 있는 빠알리 낱말 — 하이픈 남김'
         else: keep = False; why = '영어 낱말 나눔'
@@ -133,7 +135,7 @@ for pn, pg, body in pages:
         # 각주(쪽 아래 작은 글씨)
         if y0 > 500 and sz <= 9.5 and re.match(r'\d', t):
             m = re.match(r'(\d+)\s*(.*)', t); fnn = m.group(1)
-            cur = {'pg': pg, 'k': 'fn', 't': f'[^{m.group(1)}]: {m.group(2)}'}; paras.append(cur); last_full = False; continue
+            cur = {'pg': pg, 'k': 'fn', 't': f'[^{m.group(1)}]: {m.group(2)}'}; paras.append(cur); continue
         # 본문 속 위첨자 각주 번호 → [^n]
         cs = compose(r['chars'])
         if any(c[1] < 9 and c[0].isdigit() for c in cs) and sz > 9:
@@ -156,16 +158,21 @@ for pn, pg, body in pages:
             prev = r['bb']; first = False; last_full = False; continue
         bullet = c0['font'].startswith('CMSY') and c0['c'] == '•'
         if first:
-            newp = cur is None or cur['k'] != 'p' or cur.get('namo') or bullet or not last_full or x0 > IND - 2
+            if cur is not None and cur['k'] == 'fn' and lastbody is not None: cur = lastbody   # 앞 쪽 각주 너머로 문단이 이어짐
+            newp = cur is None or cur['k'] != 'p' or cur.get('namo') or bullet or not last_full or (IND - 2 < x0 < QX) \
+                or (x0 > QX) != cur.get('q', False) and not (x0 > QX and cur.get('hang'))
         else:
             gap = y0 - prev[1]
-            newp = cur is None or cur['k'] != 'p' or cur.get('namo') or bullet or gap > 18 or prev[2] < RM - 15 \
+            # 인용 묶음(첫 줄부터 왼쪽 95·오른쪽 324 — 본문보다 좁게 조판)은 그 오른쪽 끝을 기준으로, 번호·글머리표 항목의 둘째 줄(95)은 매달린 들여쓰기라 이어 붙임 (2026-11-17 검수)
+            cq = cur is not None and cur.get('q', False)
+            newp = cur is None or cur['k'] != 'p' or cur.get('namo') or bullet or cq != (x0 > QX) and not (x0 > QX and cur.get('hang')) \
+                or gap > (15.5 if cq else 18) or prev[2] < (QRM if cq else RM) - 15 \
                 or (x0 > IND - 2 and not cur.get('bul') and x0 < IND + 5)
-        if newp: cur = {'pg': pg, 'k': 'p', 't': t}; paras.append(cur); cur['bul'] = bullet
+        if newp: cur = {'pg': pg, 'k': 'p', 't': t}; paras.append(cur); cur['bul'] = bullet; cur['q'] = x0 > QX; cur['hang'] = 78 < x0 < QX and (bullet or bool(re.match(r'\d+\.\s', t)))
         else: cur['t'] = join(cur['t'], t, pg)
         prev = r['bb']; first = False
-        last_full = x1 >= RM - 15
-for p in paras: p.pop('namo', None); p.pop('bul', None)
+        last_full = x1 >= (QRM if cur.get('q') else RM) - 15; lastbody = cur
+for p in paras: p.pop('namo', None); p.pop('bul', None); p.pop('q', None); p.pop('hang', None)
 json.dump(paras, open(os.path.join(OUT, 'DL-0012.en.paras.json'), 'w'), ensure_ascii=False, indent=0)
 with open(os.path.join(OUT, 'DL-0012.en.hyph.tsv'), 'w') as f:
     f.write('원서 쪽\t줄 끝 모양\t뽑은 글\t까닭\n'); [f.write('\t'.join(x) + '\n') for x in hyph]
