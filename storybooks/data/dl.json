@@ -416,11 +416,11 @@
 "zip": 18838833
 },
 "Pannasa": {
-"n": 57,
-"pdf": 74230506,
-"pdfs": 7109034,
-"stories": 4,
-"zip": 73961776
+"n": 180,
+"pdf": 233202028,
+"pdfs": 22394881,
+"stories": 11,
+"zip": 232887327
 },
 "Pannasa/01-King-Aditta": {
 "n": 15,
@@ -441,5 +441,40 @@
 "n": 12,
 "pdf": 16465970,
 "zip": 16203512
+},
+"Pannasa/05-Sumbhamitta": {
+"n": 15,
+"pdf": 20159114,
+"zip": 19894741
+},
+"Pannasa/06-Samuddaghosa": {
+"n": 15,
+"pdf": 20706967,
+"zip": 20440576
+},
+"Pannasa/07-Cagadana": {
+"n": 13,
+"pdf": 17247299,
+"zip": 16979239
+},
+"Pannasa/08-Dhammikapandita": {
+"n": 12,
+"pdf": 14956192,
+"zip": 14689845
+},
+"Pannasa/09-Siridhara": {
+"n": 13,
+"pdf": 15518079,
+"zip": 15254408
+},
+"Pannasa/10-Sankhapatta": {
+"n": 29,
+"pdf": 36847929,
+"zip": 36577662
+},
+"Pannasa/11-Sudhana": {
+"n": 26,
+"pdf": 35356319,
+"zip": 35089223
 }
 }
