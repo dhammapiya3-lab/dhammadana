@@ -1,10 +1,16 @@
 Pannasa 01-King-Aditta 15 장
+Pannasa 02-Tulakapandita 15 장
+Pannasa 03-Sammajiva 15 장
+Pannasa 04-Arindama 12 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 76 개 / 한글판 이야기 80 편
+R2 에 올림: 160 개 / 한글판 이야기 83 편
 공개 주소 확인: 200 1478371바이트
 이야기 Pannasa/01-King-Aditta {'pdf': 19971683, 'zip': 19709196, 'n': 15}
-책 Pannasa {'pdf': 19963379, 'pdfs': 1980229, 'zip': 19709685, 'stories': 1, 'n': 15}
-내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 80 이야기
+이야기 Pannasa/02-Tulakapandita {'pdf': 19695165, 'zip': 19422618, 'n': 15}
+이야기 Pannasa/03-Sammajiva {'pdf': 18895694, 'zip': 18625944, 'n': 15}
+이야기 Pannasa/04-Arindama {'pdf': 16465970, 'zip': 16203512, 'n': 12}
+책 Pannasa {'pdf': 74230506, 'pdfs': 7109034, 'zip': 73961776, 'stories': 4, 'n': 57}
+내려받기 파일: 5 묶음 새로 만듦
+글로 보기: 83 이야기
 41-Mogharaja
 50-Mahasudassana
