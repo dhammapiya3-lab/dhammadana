@@ -1,0 +1,384 @@
+[
+ {
+  "img": "images/07-Cagadana-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     238,
+     584,
+     302
+    ],
+    "ko": "빤냐사 자따까:\n짜가다나 전생 이야기",
+    "cover": [
+     61,
+     59,
+     74
+    ],
+    "align": "center",
+    "em": 25,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     220,
+     302,
+     584,
+     380
+    ],
+    "ko": "더없는 보시와 우주의 기적, 그리고 과거와 현재를 잇는 업의 실을 담은 이야기.\n16세기 란나 벽화의 전통으로 그렸습니다.",
+    "cover": [
+     63,
+     62,
+     75
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Cagadana-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     474,
+     272,
+     752,
+     398
+    ],
+    "ko": "아지따 도성에서 왕은 깐짜나 왕비에게 십만 냥짜리 잇꽃 물들인 옷을 선물했습니다. 왕의 궁녀 천 명도 귀한 붉은 옷을 받았습니다. 이렇게 차려입은 왕궁은 세간의 큰 부귀를 보여 주었습니다.",
+    "cover": [
+     165,
+     89,
+     59
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Cagadana-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     466,
+     300,
+     756,
+     396
+    ],
+    "ko": "마하목갈라나 장로를 본 왕비는 장로를 공양에 청했습니다. 법에 감동한 여인들은 값진 잇꽃 옷을 올렸습니다. 장로가 하늘로 떠나자 고운 옷들이 신기하게도 장로를 따라갔습니다.",
+    "cover": [
+     82,
+     73,
+     89
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Cagadana-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     474,
+     248,
+     756,
+     400
+    ],
+    "ko": "부처님께서 아지따 왕에게 보시의 우주적 열매를 가르치셨습니다. 청정한 공양은 아름다움과 왕권과 천상의 행복을 가져옵니다. 감동한 왕은 옷 이천 벌을 더 올렸고, 옷들은 하늘을 날아 제따와나로 갔습니다.",
+    "cover": [
+     134,
+     65,
+     43
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Cagadana-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     426,
+     270,
+     756,
+     398
+    ],
+    "ko": "옷들이 별 사이의 보름달처럼 빛나자 비구들은 부처님의 위신력에 놀랐습니다. 세존께서 밝히셨습니다. “옛날 보살이었을 때, 나는 많은 옷을 가져다준 보시를 했다.”",
+    "cover": [
+     73,
+     70,
+     89
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Cagadana-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     466,
+     70,
+     740,
+     176
+    ],
+    "ko": "옛날 깜발라 도성에서 보살은 가난하게 태어났습니다. 부모를 봉양하려고 쉬지 않고 일하여 ‘너그럽게 베푸는 이’ 짜가다나라고 불렸습니다. 어느 날 그는 일하러 깊은 숲에 들어갔습니다.",
+    "cover": [
+     149,
+     95,
+     65
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Cagadana-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     466,
+     66,
+     738,
+     172
+    ],
+    "ko": "도둑에게 털린 벽지불을 만난 짜가다나는 공덕을 짓고자 했습니다. 나뭇잎을 모아 제 몸을 가리고, 하나뿐인 겉옷 두 벌을 빨아 청정한 마음으로 올렸습니다.",
+    "cover": [
+     75,
+     72,
+     88
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Cagadana-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     494,
+     42,
+     762,
+     140
+    ],
+    "ko": "짜가다나의 청정한 보시의 힘으로 나무의 신이 가지를 흔들어 천상의 옷과 보석을 쏟아 내렸습니다. 벽지불께서는 그 거룩한 공양에서 신기하게 나타난 보석 의자에 앉으셨습니다.",
+    "cover": [
+     198,
+     135,
+     100
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Cagadana-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     44,
+     326,
+     136
+    ],
+    "ko": "신들의 왕 삭까가 내려왔습니다. 천상의 옷 한 벌을 하늘로 던지자 순식간에 수백만 벌이 되었습니다. 삭까가 말했습니다. “보시는 아름다운 복이니, 청정한 마음으로 베풀면 행복의 꼭대기를 얻는다.”",
+    "cover": [
+     84,
+     76,
+     86
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Cagadana-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     40,
+     774,
+     120
+    ],
+    "ko": "깜발라 왕과 백성들이 큰 재물을 가져와 보살을 공경했습니다. 짜가다나는 보시당을 짓고 평생 날마다 보시했습니다. 세상을 떠난 뒤 그는 천상 세계에 태어났습니다.",
+    "cover": [
+     90,
+     89,
+     105
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Cagadana-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     126,
+     538,
+     164
+    ],
+    "ko": "공덕의 참된 잣대",
+    "cover": [
+     58,
+     53,
+     65
+    ],
+    "align": "center",
+    "em": 23,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     262,
+     168,
+     538,
+     326
+    ],
+    "ko": "아지따 왕: 왕실의 넉넉한 재물에서 값진 옷 수천 벌을 올렸습니다.\n\n짜가다나: 하나뿐인 겉옷 두 벌을 올리고 나뭇잎으로 몸을 가렸습니다.\n\n이 전생 이야기는 공덕을 재는 잣대가 보시물의 값이 아니라 마음의 청정함임을 보여 줍니다.",
+    "cover": [
+     55,
+     47,
+     58
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Cagadana-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     158,
+     500,
+     186
+    ],
+    "ko": "윤회의 실",
+    "cover": [
+     196,
+     136,
+     97
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     296,
+     188,
+     500,
+     292
+    ],
+    "ko": "삭까 → 아누룻다\n나무의 신 → 아난다\n깜발라 왕 → 마하목갈라나\n깜발라 왕비 → 고따미\n부모 → 마하마야와 숫도다나\n짜가다나 → 위없는 부처님",
+    "cover": [
+     198,
+     141,
+     104
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Cagadana-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     456,
+     66,
+     718,
+     182
+    ],
+    "ko": "“그때 짜가다나라는 사람이 바로 지금의 나, 스스로 깨달은 이다.”\n\n공경하는 마음으로 가장 높은 행복을 바라며 이 전생 이야기를 이렇게 기억하십시오.",
+    "cover": [
+     82,
+     78,
+     89
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ }
+]
