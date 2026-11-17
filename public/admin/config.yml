@@ -409,6 +409,17 @@ collections:
                 value_field: "items.*.id"
                 search_fields: ["items.*.name"]
                 display_fields: ["items.*.name"]
+              - name: traditions_also
+                label: 함께 분류할 수행전통
+                required: false
+                hint: "두 전통에 모두 속하는 스승이면 여기에 다른 전통을 더 고릅니다 (예: 묘원 법사 = 마하시·쉐우민)."
+                widget: relation
+                collection: lists
+                file: traditions
+                multiple: true
+                value_field: "items.*.id"
+                search_fields: ["items.*.name"]
+                display_fields: ["items.*.name"]
               - { name: bio, label: 소개, widget: markdown, required: false }
               - { name: urls, label: 사이트·카페 주소, widget: list, required: false, hint: "스승 소개 페이지에 바로 가기 단추로 보입니다." }
               - { name: photo, label: 사진, widget: image, required: false }

@@ -269,10 +269,25 @@
       "name": "성전사",
       "kind": "승원·사원",
       "urls": [
-        "https://www.jungmyeong.com"
+        "http://www.jungmyeong.com/"
       ],
       "partner": true,
       "note": "김천 · jungmyeong.com"
+    },
+    {
+      "id": "vipassanacenter",
+      "name": "상좌불교 한국명상원",
+      "kind": "단체",
+      "urls": [
+        "https://cafe.daum.net/vipassanacenter"
+      ],
+      "partner": true,
+      "aliases": [
+        "사단법인 상좌불교 한국명상원",
+        "(사)상좌불교 한국명상원",
+        "한국명상원"
+      ],
+      "note": "다음 카페 · cafe.daum.net/vipassanacenter"
     }
   ]
 }
