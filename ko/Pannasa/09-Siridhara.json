@@ -1,0 +1,548 @@
+[
+ {
+  "img": "images/09-Siridhara-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     46,
+     720,
+     104
+    ],
+    "ko": "보시의 빛",
+    "cover": false,
+    "align": "center",
+    "em": 44,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     120,
+     104,
+     680,
+     176
+    ],
+    "ko": "시리다라의 아홉 번째 전생 이야기\n빤냐사 자따까에서",
+    "cover": false,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     20,
+     574,
+     60
+    ],
+    "ko": "공덕의 살림법",
+    "cover": false,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     494,
+     76,
+     756,
+     206
+    ],
+    "ko": "지어진 모든 것이 무상함을 깨달은 사왓티의 가난한 부부는 보잘것없는 수입을 다시 나누었습니다. 번 것의 3분의 2를 보시에 바치자 그들은 큰 부를 얻었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     72,
+     318,
+     184,
+     346
+    ],
+    "ko": "살림",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     226,
+     318,
+     340,
+     346
+    ],
+    "ko": "보시",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     398,
+     318,
+     512,
+     346
+    ],
+    "ko": "저축",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     588,
+     318,
+     706,
+     346
+    ],
+    "ko": "보시",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     14,
+     574,
+     56
+    ],
+    "ko": "바라나시의 장자",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     496,
+     292,
+     756,
+     408
+    ],
+    "ko": "그들의 신심이 맺은 열매를 설명하시려고 부처님께서 전생을 들려주셨습니다. 바라나시에 오계를 굳게 지키는 큰 장자 시리다라가 살았습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     14,
+     600,
+     56
+    ],
+    "ko": "벽지불이 오시다",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     60,
+     274,
+     330,
+     380
+    ],
+    "ko": "이레 동안의 멸진정에서 나온 벽지불께서 하늘을 날아오셨습니다. 마침 훌륭한 음식이 차려지고 있을 때 그분은 시리다라의 문 앞에 서셨습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     14,
+     574,
+     56
+    ],
+    "ko": "청정한 공양",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     88,
+     106,
+     220,
+     150
+    ],
+    "ko": "받는 이\n(깨달은 분)",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     340,
+     160,
+     470,
+     204
+    ],
+    "ko": "보시물\n(청정한 공양)",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     654,
+     196,
+     772,
+     240
+    ],
+    "ko": "마음\n(믿음)",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     66,
+     290,
+     334,
+     384
+    ],
+    "ko": "시리다라는 영광스러운 보시의 씨앗을 심었습니다. 완전한 업의 씨앗에는 깨달은 받는 이와 청정한 보시물과 믿는 마음이 있어야 합니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     314,
+     64,
+     520,
+     304
+    ],
+    "ko": "“제 보시의 빛으로\n모든 신과 사람이\n수명을 누리기를.\n이 보시의 열매로\n제가 반드시 일체지를\n갖춘 부처가 되기를.”",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     40,
+     322,
+     150
+    ],
+    "ko": "흔들림 없는 결심을 따라 장자의 낡은 나무집이 사라졌습니다. 그 자리에 순금 저택이 신비롭게 나타나, 정신의 재물이 어떻게 눈에 보이는 모습으로 드러나는지 보여 주었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     368,
+     760,
+     450
+    ],
+    "ko": "천상의 음식 한 그릇이 맛이 백 가지인 황금 그릇 백 개로 불어났습니다. 백성 천 명을 먹이고도 그 훌륭한 음식은 줄어들지 않았습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     502,
+     342,
+     764,
+     418
+    ],
+    "ko": "완전한 공덕의 울림이 여러 세계로 퍼져 나갔습니다. 백성은 찬탄하고, 나가 왕은 보석을 산더미처럼 가져오고, 삭까는 금빛 은빛 깃발로 하늘을 채웠습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     32,
+     740,
+     106
+    ],
+    "ko": "이 더없는 공덕을 들은 브라흐마닷따 왕은 온 재물을 바쳐, 코끼리와 수레와 시종 수백을 내놓으며 오직 대인(보살)의 법에 경의를 표했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     30,
+     710,
+     86
+    ],
+    "ko": "시리다라는 보시당을 세워 날마다 십만 냥으로 보시를 베풀었습니다. 부지런히 보시한 삶을 마치고 그는 장엄한 도솔천에 태어났습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     68,
+     32,
+     244,
+     62
+    ],
+    "ko": "과거",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     556,
+     32,
+     734,
+     62
+    ],
+    "ko": "현재",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     284,
+     68,
+     514,
+     112
+    ],
+    "ko": "다시 태어남의 짜임:",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     284,
+     114,
+     514,
+     144
+    ],
+    "ko": "브라흐마닷따 → 사리뿟따",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     284,
+     184,
+     514,
+     220
+    ],
+    "ko": "나가 왕 → 찬나",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     284,
+     272,
+     514,
+     304
+    ],
+    "ko": "아내 → 야소다라",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     284,
+     352,
+     514,
+     404
+    ],
+    "ko": "시리다라 →\n스스로 깨달은 부처님",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Siridhara-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     392,
+     760,
+     448
+    ],
+    "ko": "이야기를 마치시며 부처님께서는 사성제를 가르치셨습니다. 이 법의 가르침을 들은 가난한 남편과 아내는 곧바로 예류과를 얻었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ }
+]
