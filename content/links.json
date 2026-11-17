@@ -291,6 +291,12 @@
           "url": "https://abhidhana.buddha-dhamma.net/",
           "note": "빠알리 삼장 전체를 다루는 빠알리어-미얀마어 사전(25권 29책, 표제어 약 22만) 온라인판 · 미얀마 학승들이 1950년대부터 2023년까지 편찬, 표제어마다 인쇄된 쪽 그림과 로마자 빠알리어, 스페인어·영어 초벌 번역(아직 교정 전 글자 인식본) · Instituto de Estudios Buddhistas Hispano(IEBH)",
           "lang": "사전"
+        },
+        {
+          "name": "빠알리 용어집 근거자료 검색",
+          "url": "https://claude.ai/artifact/W2ahQ8R1NJsYRGYqPXU2UN",
+          "note": "빠알리 용어 3,215어의 개념정의와 그 근거 자료(6차 결집본 주석서·복주석서, 미얀마어 닛사야 248권, 삼장 사전)를 한곳에서 찾고 AI에게 물어보는 곳 · 한글·로마자·미얀마어로 찾기, 원문 검색",
+          "lang": "사전"
         }
       ]
     }
