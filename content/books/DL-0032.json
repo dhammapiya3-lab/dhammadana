@@ -89,10 +89,10 @@
         "created": ""
       },
       "hwp": {
-        "mode": "none",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "hwp/DL-0032/DL-0032_개정판.hwp"
       },
       "reader": true,
       "sources": [
