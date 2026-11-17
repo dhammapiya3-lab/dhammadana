@@ -55,12 +55,12 @@
       <h2>2. 파일 종류</h2>
       <div class="seg2"><label><input type="radio" name="kind" value="pdf" checked>PDF<br><small>화면(온라인)용</small></label><label><input type="radio" name="kind" value="pdf_print">PDF<br><small>인쇄용 (본문)</small></label><label><input type="radio" name="kind" value="pdf_cover">PDF<br><small>인쇄용 표지</small></label><label><input type="radio" name="kind" value="epub">EPUB</label><label><input type="radio" name="kind" value="hwp">HWP<br><small>한글 파일</small></label><label><input type="radio" name="kind" value="orig">원서<br><small>원본 언어 파일</small></label></div>
       <div class="row" id="olangRow" hidden style="margin-top:10px"><label for="olang">원서 언어</label><select id="olang"><option>빠알리어</option><option>영어</option><option>미얀마어</option><option>태국어</option><option>싱할라어</option><option>기타</option></select></div>
-      <p class="note" id="olangNote" hidden>책 소개에 '원서(미얀마어) 내려받기'처럼 단추가 생깁니다. 판과 상관없이 책에 하나씩(언어마다) 붙고, 같은 언어로 다시 올리면 바뀝니다. PDF·EPUB·HWP·DOCX·ZIP·TXT.</p>
+      <p class="note" id="olangNote" hidden>책 소개에 '원서(미얀마어) 내려받기'처럼 단추가 생깁니다. 판과 상관없이 책에 하나씩(언어마다) 붙고, 같은 언어로 다시 올리면 바뀝니다. PDF·EPUB·HWP·DOCX·ZIP·TXT. <b>원서 파일이 여러 개면</b> 한꺼번에 고르거나 끌어다 놓으세요 — 저절로 zip 파일 하나로 묶어서 올립니다(이미 묶은 zip 을 올려도 됩니다).</p>
     </div>
     <div class="card">
       <h2>3. 파일 올리기</h2>
       <div class="drop" id="drop" tabindex="0" role="button"><b>여기를 눌러 파일을 고르거나</b><br>파일을 끌어다 놓으세요<br><span class="note">큰 파일은 저절로 나눠서 올립니다</span></div>
-      <input type="file" id="file" accept=".pdf,.epub,.hwp,.hwpx,.docx,.doc,.zip,.txt" hidden>
+      <input type="file" id="file" accept=".pdf,.epub,.hwp,.hwpx,.docx,.doc,.zip,.txt" multiple hidden>
       <div id="picked" class="note" style="margin-top:10px"></div>
       <button class="btn" id="go" style="margin-top:12px;width:100%" disabled>올리기</button>
       <progress id="prog" max="100" value="0" hidden style="margin-top:12px"></progress>
@@ -170,10 +170,28 @@ function setFile(f){
 function upd(){ $('#go').disabled=!(BOOK&&FILE&&!$('#ed').disabled); }
 const drop=$('#drop');
 drop.onclick=()=>$('#file').click(); drop.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();$('#file').click();}};
-$('#file').onchange=e=>setFile(e.target.files[0]);
+$('#file').onchange=e=>setFiles(e.target.files);
 ['dragenter','dragover'].forEach(t=>drop.addEventListener(t,e=>{e.preventDefault();drop.classList.add('over');}));
 ['dragleave','drop'].forEach(t=>drop.addEventListener(t,e=>{e.preventDefault();drop.classList.remove('over');}));
-drop.addEventListener('drop',e=>setFile(e.dataTransfer.files[0]));
+drop.addEventListener('drop',e=>setFiles(e.dataTransfer.files));
+// 원서 파일이 여러 개면 브라우저에서 zip 하나로 묶음 (운영자 요청, 2026-11-18) — 다른 종류는 첫 파일만
+async function setFiles(list){
+  const fs=[...(list||[])]; if(!fs.length) return;
+  if(fs.length===1) return setFile(fs[0]);
+  if(kind()!=='orig'){ show('err','파일은 하나씩 올려 주세요. (원서 파일 여러 개를 묶어 올리려면 \'원서\'를 먼저 고르세요)'); return; }
+  if(!BOOK){ show('err','먼저 책을 골라 주세요.'); return; }
+  const tot=fs.reduce((a,f)=>a+f.size,0);
+  if(tot>1024*1024*1024){ show('err','여러 파일을 합친 크기가 1GB보다 큽니다. 나눠서 묶어 올려 주세요.'); return; }
+  show('',`파일 ${fs.length}개를 zip 하나로 묶는 중…`);
+  try{
+    const ff=await loadFflate(), data={}, seen={};
+    for(const f of fs){ let n=f.name; if(seen[n]){ const i=n.lastIndexOf('.'); n=(i>0?n.slice(0,i):n)+'_'+(++seen[f.name])+(i>0?n.slice(i):''); } else seen[n]=1; data[n]=[new Uint8Array(await f.arrayBuffer()),{level:/\.(txt|doc|hwp)$/i.test(n)?6:0}]; }
+    const z=ff.zipSync(data), OL=$('#olang').value;
+    const zf=new File([z],`${BOOK.id}_원서_${OL}.zip`,{type:'application/zip'});
+    setFile(zf);
+    $('#picked').textContent=`고른 파일 ${fs.length}개를 묶음: ${zf.name} (${(zf.size/1048576).toFixed(1)}MB) — ${fs.map(f=>f.name).join(', ')}`;
+  }catch(e){ show('err','zip 으로 묶지 못했습니다: '+e.message); }
+}
 function show(cls,html){ $('#out').innerHTML=`<div class="msg ${cls}">${html}</div>`; }
 
 $('#go').onclick=async()=>{
