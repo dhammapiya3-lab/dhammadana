@@ -1,0 +1,592 @@
+[
+ {
+  "img": "images/01-King-Aditta-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     296,
+     580,
+     398
+    ],
+    "ko": "아딧따 왕의 전생 이야기\n빤냐사 자따까에 담긴\n더없는 보시 이야기",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     216,
+     48,
+     584,
+     88
+    ],
+    "ko": "자따까의 짜임",
+    "cover": [
+     236,
+     226,
+     206
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     196,
+     90,
+     604,
+     120
+    ],
+    "ko": "1. 현재: 부처님께서 이야기하시는 배경",
+    "cover": [
+     236,
+     226,
+     206
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     196,
+     202,
+     620,
+     240
+    ],
+    "ko": "2. 과거: 보살이 겪은 시험",
+    "cover": [
+     236,
+     226,
+     206
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     196,
+     298,
+     620,
+     334
+    ],
+    "ko": "3. 온 세상의 응답: 우주가 화답함",
+    "cover": [
+     236,
+     226,
+     206
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     196,
+     376,
+     620,
+     414
+    ],
+    "ko": "4. 밝힘: 과거와 현재의 인물을 잇기",
+    "cover": [
+     236,
+     226,
+     206
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     44,
+     594,
+     80
+    ],
+    "ko": "현재: 제따와나 승원",
+    "cover": false,
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     66,
+     80,
+     460,
+     182
+    ],
+    "ko": "부처님께서 지난 생을 돌아보셨습니다. 세간의 선물로는 만족하실 수 없었습니다. 오직 자기 자신을 내주는 더없는 희생만이 일체지의 바탕이 될 수 있음을 아셨습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     56,
+     256,
+     88
+    ],
+    "ko": "과거: 조띠 도성",
+    "cover": false,
+    "align": "left",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     62,
+     88,
+     256,
+     162
+    ],
+    "ko": "아딧따 왕은 보시당 여섯 곳을 세우고 큰 구름처럼 재물을 비 내리듯 베풀었습니다. 날마다 백성에게 육십만 냥을 나누어 주었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     70,
+     384,
+     136
+    ],
+    "ko": "보시의 저울:\n더없는 보시를 결심하다",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     56,
+     138,
+     300,
+     194
+    ],
+    "ko": "밖의 재물:\n쌀, 금, 나라",
+    "cover": false,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     56,
+     196,
+     300,
+     254
+    ],
+    "ko": "안의 재물:\n눈, 살, 피, 목숨",
+    "cover": false,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     56,
+     258,
+     330,
+     394
+    ],
+    "ko": "왕은 깨달음을 위해 자기 자신을 내주기로 결심했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     38,
+     634,
+     134
+    ],
+    "ko": "첫 번째 땅의 흔들림\n큰 땅이 떨며 울부짖고 바다가 소용돌이쳤습니다. 수메루 산이 조띠 도성을 향해 몸을 굽혀, 왕의 불타는 결심을 인정했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     262,
+     400,
+     306
+    ],
+    "ko": "삭까가 내려오다",
+    "cover": false,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     84,
+     306,
+     400,
+     420
+    ],
+    "ko": "천신 세계에서 삭까의 돌 자리가 뜨거워졌습니다. 부처가 될 싹을 알아본 삭까는 왕의 바라밀을 완성시키려고 힘없는 늙은 바라문으로 변장해 내려왔습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     34,
+     750,
+     102
+    ],
+    "ko": "첫 번째 시험\n바라문이 음식을 청했습니다. 아딧따 왕이 기쁘게 금 그릇에 밥을 담아 주자, 바라문은 그것을 거칠게 내던졌습니다. 왕에게는 조금의 악의도 없었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     40,
+     586,
+     120
+    ],
+    "ko": "두 번째 시험\n젊은 바라문으로 변장한 삭까가 상카 왕비를 달라고 했습니다. 보시를 기뻐하는 왕은 움츠러들지 않고 사랑하는 아내를 내주었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     310,
+     56,
+     640,
+     100
+    ],
+    "ko": "더없는 선물",
+    "cover": false,
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     354,
+     110,
+     384,
+     137
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     416,
+     194,
+     452,
+     248
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     380,
+     108,
+     636,
+     192
+    ],
+    "ko": "아딧따 왕은 바라문의 손 위로\n바치는 뜻의 향수를 부었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     448,
+     194,
+     636,
+     278
+    ],
+    "ko": "“내 아내를 준 이 보시가\n일체지의 바탕이\n되기를.”",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     330,
+     760,
+     438
+    ],
+    "ko": "왕비의 결심\n머리채를 잡혀 끌려가면서도 상카 왕비는 화내지 않았습니다. 왕비는 사자후를 토했습니다.\n“당신은 나의 주인이십니다. 누구든 바라는 것이 있으면 주어야 합니다.”",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     38,
+     334,
+     142
+    ],
+    "ko": "두 번째 땅의 흔들림\n땅이 사탕수수 짜는 틀처럼 울부짖었습니다. 인다와 범천과 야마가 더없는 희생에 갈채를 보냈습니다. 온 세상이 보시의 완성을 인정했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     198,
+     40,
+     496,
+     196
+    ],
+    "ko": "드러남\n삭까가 빛나는 천신의 모습을 드러내고 왕비를 돌려주었습니다. “우유와 소라가 같은 빛깔이듯, 두 분은 같은 청정한 뜻을 지녔습니다.”",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     260,
+     150,
+     556,
+     330
+    ],
+    "ko": "왕의 열 가지 의무\n떠나기 전에 삭까는 아딧따 왕에게 바르게 다스리라고 일렀습니다. 부모와 아내와 백성, 출가자와 짐승과 새들을 바르게 대하여 천상에 태어나라고.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Aditta-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     48,
+     300,
+     80
+    ],
+    "ko": "과거의 생",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     496,
+     48,
+     660,
+     80
+    ],
+    "ko": "현재의 생",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     258,
+     136,
+     552,
+     192
+    ],
+    "ko": "밝힘\n삭까는 지금의 아누룻다입니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     258,
+     210,
+     552,
+     270
+    ],
+    "ko": "상카 왕비는 야소다라입니다.\n부모는 숫도다나 왕과 마하마야 왕비입니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     258,
+     290,
+     552,
+     336
+    ],
+    "ko": "아딧따 왕은 완전히 깨달으신\n부처님이십니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ }
+]
