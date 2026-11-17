@@ -1149,3 +1149,28 @@ h1.auto-focus:focus{outline:none}
 :root[data-theme="dark"] .par-note, :root.mode-night .par-note{color:#e0a46a}
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .par-note{color:#e0a46a} }
 .par-or:lang(my),.ps-o:lang(my){font-family:'Noto Sans Myanmar','Myanmar Text','Padauk','Myanmar Sangam MN',var(--sans);line-height:2.05}
+
+/* 책 카드·최근 업데이트·수행전통 목록은 ul/li (화면 낭독기 목록, 2026-11-17) — 모양은 그대로 */
+ul.grid,ul.upd,ul.trad-grid{list-style:none;margin:0;padding:0}
+.book-li,ul.upd>li,ul.trad-grid>li{min-width:0;display:flex;flex-direction:column}
+.book-li>.book,ul.upd>li>.upd-item,ul.trad-grid>li>.trad{flex:1}
+.book-li[hidden]{display:none}
+/* 설정 창: 창 제목에 커서가 와도 테두리 없음, 단축키 안내 (2026-11-17) */
+.panel h5:focus{outline:none}
+.panel ul.keys{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:6px;font-size:14px}
+.panel ul.keys kbd{display:inline-block;min-width:96px;font-family:var(--sans);font-size:12.5px;padding:1px 6px;border:1px solid var(--line);border-radius:5px;background:var(--paper)}
+
+/* 읽기 글꼴 더하기 (저시력, 2026-11-17) — KoPubWorld 는 한국출판인회의 무료 글꼴 원본 그대로(public/fonts/kopub/LICENSE.md), 쓸 때만 받음 */
+@font-face{font-family:'KoPubWorld Batang';font-weight:400;font-display:swap;src:url(/fonts/kopub/KoPubWorld-Batang-Medium.woff2) format('woff2')}
+@font-face{font-family:'KoPubWorld Batang';font-weight:700;font-display:swap;src:url(/fonts/kopub/KoPubWorld-Batang-Bold.woff2) format('woff2')}
+@font-face{font-family:'KoPubWorld Dotum';font-weight:400;font-display:swap;src:url(/fonts/kopub/KoPubWorld-Dotum-Medium.woff2) format('woff2')}
+@font-face{font-family:'KoPubWorld Dotum';font-weight:700;font-display:swap;src:url(/fonts/kopub/KoPubWorld-Dotum-Bold.woff2) format('woff2')}
+@font-face{font-family:'dd-kpb-label';src:url(/fonts/kopub/label-Batang.woff2) format('woff2')}
+@font-face{font-family:'dd-kpd-label';src:url(/fonts/kopub/label-Dotum.woff2) format('woff2')}
+.reflow.f-nanum-myeongjo{font-family:'Nanum Myeongjo',var(--serif)}
+.reflow.f-nanum-gothic{font-family:'Nanum Gothic',var(--sans)}
+.reflow.f-kopub-batang{font-family:'KoPubWorld Batang',var(--serif)}
+.reflow.f-kopub-dotum{font-family:'KoPubWorld Dotum',var(--sans)}
+.seg.seg-font{grid-template-columns:repeat(3,1fr)}
+.seg.seg-font button:nth-child(4){border-left:0}
+.seg.seg-font button:nth-child(n+4){border-top:1px solid var(--line)}

@@ -467,13 +467,16 @@ const fmtsCard = b => { const u = uniqK(formats(b)); const e = curEd(b); return 
 // 원서 대조에 쓴 원서 판본 (운영자 요청, 2026-11-15): 책 JSON parallel_editions [{lang,title,by,edition,url,note}] — 짝 자료(content/parallel)가 있는 말만
 function parEds(b) { return (b.parallel_editions || []).filter(x => x && (PARALLEL[b.id] || []).includes(x.lang || 'en')); }
 function langsOf(b) { const v = b.original_language; return (Array.isArray(v) ? v : v ? [v] : []).map(x => String(x).trim()).filter(Boolean); }
+// 책 카드 목록은 화면 낭독기가 '목록, 항목 N개'로 등록 순서대로 하나씩 읽게 ul/li 로 (운영자 요청, 2026-11-17 — 칸으로 나란히 놓인 카드를 건너뛰던 문제)
+const cardList = (books, cls = '', attrs = '') => `<ul class="grid${cls ? ' ' + cls : ''}" role="list"${attrs}>${books.map(b => `<li class="book-li">${coverCard(b)}</li>`).join('')}</ul>`;
 function coverCard(b) {
   const f = formats(b), fc = fmtsCard(b);
   const tr = b.teacher ? tradOfTeacher(b.teacher) : null;
-  return `<a class="book" href="/book/${b.id}/" data-book="${b.id}" data-trad="${esc([...new Set(tIds(b).map(id => tradOfTeacher(id)?.id).filter(Boolean))].join('|'))}" data-teacher="${esc(tIds(b).join('|'))}" data-region="${esc(countriesOf(b).join('|'))}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(fc.map(x => x.k).join('|'))}" data-lang="${esc(langsOf(b).join('|'))}" data-btype="${esc(b.book_type || '')}" data-pub="${esc(pubsAll(b).map(x => x.key).join('|'))}" data-person="${esc(peopleOf(b).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}" data-ord="${LIB_ORD().get(b.id) ?? ''}" data-author="${esc(authorName(b))}">
+  const al = [!f.length ? '준비 중' : '', b.title, (b.byline || '') + (b.translator ? ' | ' + b.translator : ''), pubLine(b), fc.map(x => x.k + (x.ext ? ' ↗' : '')).join(' ')].filter(Boolean).join(' ');  // 보이는 글과 같은 순서·글자(음성 조작에도 맞게)  // 화면 낭독기가 카드 하나를 한 번에 읽게 (2026-11-17)
+  return `<a class="book" href="/book/${b.id}/" aria-label="${esc(al)}" data-book="${b.id}" data-trad="${esc([...new Set(tIds(b).map(id => tradOfTeacher(id)?.id).filter(Boolean))].join('|'))}" data-teacher="${esc(tIds(b).join('|'))}" data-region="${esc(countriesOf(b).join('|'))}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(fc.map(x => x.k).join('|'))}" data-lang="${esc(langsOf(b).join('|'))}" data-btype="${esc(b.book_type || '')}" data-pub="${esc(pubsAll(b).map(x => x.key).join('|'))}" data-person="${esc(peopleOf(b).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}" data-ord="${LIB_ORD().get(b.id) ?? ''}" data-author="${esc(authorName(b))}">
   <div class="cover">${!f.length ? '<span class="soon">준비 중</span>' : ''}${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지" loading="lazy"${ctrCover(b.cover)}>` : `<div class="cover-ph">${esc(b.title)}</div>`}</div>
-  <div class="t">${esc(b.title)}</div><div class="a">${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>${pubLine(b) ? `<div class="a publ">${esc(pubLine(b))}</div>` : ''}
-  ${f.length ? `<div class="fmt">${fc.map(x => `<span>${x.k}${x.ext ? ' ↗' : ''}</span>`).join('')}</div>` : ''}</a>`;
+  <div class="t">${esc(b.title)}</div> <div class="a">${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>${pubLine(b) ? ` <div class="a publ">${esc(pubLine(b))}</div>` : ''}
+  ${f.length ? ` <div class="fmt">${fc.map(x => `<span>${x.k}${x.ext ? ' ↗' : ''}</span>`).join(' ')}</div>` : ''}</a>`;
 }
 const countTopic = t => LIB().filter(b => (b.topics || []).includes(t)).length;
 const countMain = t => LIB().filter(b => (b.main || []).includes(t)).length;
@@ -503,15 +506,15 @@ put('index.html', layout({ ld: { '@context': 'https://schema.org', '@type': 'Web
 </section>
 <section class="section wrap two">
   <div><div class="section-head"><h2>최근 업데이트</h2><a class="more" href="/library/">도서관 →</a></div>
-    <div class="upd">${updatesList().slice(0, 6).map(u => `<a class="upd-item" href="/book/${u.b.id}/"><span class="upd-cover">${u.b.cover ? `<img src="${esc(u.b.cover)}" alt="" loading="lazy"${ctrCover(u.b.cover)}>` : ''}</span><span class="upd-t">${esc(u.b.title)}</span><span class="upd-m">${esc(u.d)} · ${esc(u.c)}</span></a>`).join('')}</div></div>
+    <ul class="upd" role="list">${updatesList().slice(0, 6).map(u => `<li><a class="upd-item" href="/book/${u.b.id}/" aria-label="${esc(u.b.title + ' ' + u.d + ' · ' + u.c)}"><span class="upd-cover">${u.b.cover ? `<img src="${esc(u.b.cover)}" alt="" loading="lazy"${ctrCover(u.b.cover)}>` : ''}</span> <span class="upd-t">${esc(u.b.title)}</span> <span class="upd-m">${esc(u.d)} · ${esc(u.c)}</span></a></li>`).join('')}</ul></div>
   <div><div class="section-head"><h2>주제로 둘러보기</h2><a class="more" href="/library/">모든 주제 →</a></div>
     <div class="chips">${TOPICS.groups.flatMap(g => g.labels).filter(t => countTopic(t) > 0).sort((a, b) => countTopic(b) - countTopic(a)).slice(0, 14).map(t => `<a class="chip" href="/library/?topic=${slugT(t)}">${esc(t)}<span class="n">${countTopic(t)}</span></a>`).join('')}</div></div>
 </section>
 <section class="section wrap"><div class="section-head"><h2>수행전통으로 둘러보기</h2><a class="more" href="/library/">도서관에서 찾아보기 →</a></div>
-  <div class="trad-grid">${TRADS.filter(t => t.representatives?.length).sort((a, b) => countTrad(b.id) - countTrad(a.id)).map(t => `<a class="trad${countTrad(t.id) ? '' : ' empty'}" href="/library/?trad=${t.id}"><div class="k">${esc(t.region)}</div><div class="nm">${esc(t.name)}</div><div class="ts">${t.representatives.map(id => esc(teacherById(id)?.name || '')).join(' · ')}</div><div class="ts" style="margin-top:6px">${countTrad(t.id) ? `자료 ${countTrad(t.id)}권` : '준비 중'}</div></a>`).join('')}</div></section>
+  <ul class="trad-grid" role="list">${TRADS.filter(t => t.representatives?.length).sort((a, b) => countTrad(b.id) - countTrad(a.id)).map(t => `<li><a class="trad${countTrad(t.id) ? '' : ' empty'}" href="/library/?trad=${t.id}" aria-label="${esc([t.region, t.name, t.representatives.map(id => teacherById(id)?.name || '').join(' · '), countTrad(t.id) ? '자료 ' + countTrad(t.id) + '권' : '준비 중'].join(' '))}"><div class="k">${esc(t.region)}</div> <div class="nm">${esc(t.name)}</div> <div class="ts">${t.representatives.map(id => esc(teacherById(id)?.name || '')).join(' · ')}</div> <div class="ts" style="margin-top:6px">${countTrad(t.id) ? `자료 ${countTrad(t.id)}권` : '준비 중'}</div></a></li>`).join('')}</ul></section>
 <section class="section wrap two">
   <div><div class="section-head"><h2>我無말들 출판사</h2><a class="more" href="/press/">출판사 코너 →</a></div>
-    <div class="grid three">${BOOKS.filter(b => b.press).slice(0, 3).map(coverCard).join('')}</div></div>
+    ${cardList(BOOKS.filter(b => b.press).slice(0, 3), 'three')}</div>
   <div><div class="section-head"><h2>소식</h2><a class="more" href="/news/">전체 소식 →</a></div>
     <ul class="news-list">${NEWS.slice(0, 5).map(n => `<li><div class="dd"><span class="pill ${n.category === 'press' ? 'robe' : ''}">${n.category === 'press' ? '我無말들' : '도서관'}</span> ${esc(n.date || '')}${updTag(n)}</div><a class="tt" href="/news/${n.slug}/">${esc(n.title)}</a></li>`).join('') || '<li class="muted">아직 소식이 없습니다.</li>'}</ul></div>
 </section>`
@@ -540,7 +543,7 @@ function paperBadge(b) {
   }
   return `<span class="paper paper-${k}">${k === 'request' ? '📖 ' : ''}${PAPER[k]}</span>`;
 }
-put('press/index.html', layout({ title: '我無말들 출판사', nav: 'press', page: 'press', body: pressShell('all', `<div class="grid press-grid">${BOOKS.filter(b => b.press).map(b => `<div class="pbook">${coverCard(b)}${paperBadge(b)}</div>`).join('')}</div>`) }));
+put('press/index.html', layout({ title: '我無말들 출판사', nav: 'press', page: 'press', body: pressShell('all', `<ul class="grid press-grid" role="list">${BOOKS.filter(b => b.press).map(b => `<li class="pbook">${coverCard(b)}${paperBadge(b)}</li>`).join('')}</ul>`) }));
 // 종이책 보시 신청 게시판 (비밀글): 동작은 /assets/paper.js, 저장은 functions/api/paper.js
 const PAPER_BOOKS = BOOKS.filter(b => b.press && b.paper === 'request' && !/^https?:\/\//.test(String(b.paper_url || '').trim())).map(b => ({ id: b.id, title: b.title }));
 put('paper-books.json', JSON.stringify(PAPER_BOOKS));
@@ -601,7 +604,7 @@ function libraryBody() {
   <section><div class="toolbar"><div><h1 class="h-page">법보시 도서관</h1><div class="muted small">자료 <span id="libCount">${LIB().length}</span>권</div></div>
     <label class="small">정렬 <select id="sort"><option value="new">최근 등록순</option><option value="title">제목 가나다순</option><option value="author">저자 가나다순</option></select></label></div>
     <div class="active-filters" id="activeFilters"></div>
-    <div class="grid" id="libGrid">${libOrder().map(coverCard).join('')}</div>
+    ${cardList(libOrder(), '', ' id="libGrid"')}
     <p class="muted" id="libEmpty" hidden>조건에 맞는 자료가 아직 없습니다. 찾아보기를 줄여 보세요.</p>
   </section></div>`;
 }
@@ -669,7 +672,7 @@ for (const b of BOOKS) {
       ${edTables}
       <p class="small muted" style="margin-top:10px">새 판이 올라오면 이전 판은 보관되고, 최신판만 내려받기와 온라인 읽기에 나옵니다.</p>
     </div></details>
-    ${same.length ? `<h2 class="h-sub">${esc(t.name)}의 다른 책</h2><div class="grid">${same.map(coverCard).join('')}</div>` : ''}
+    ${same.length ? `<h2 class="h-sub">${esc(t.name)}의 다른 책</h2>${cardList(same)}` : ''}
   </div></div></div>`
   }));
   if (e.reader) put(`read/${b.id}/index.html`, layout({
@@ -690,8 +693,8 @@ for (const t of TEACHERS) {
     ${(t.urls || []).filter(Boolean).length ? `<p style="margin:8px 0 0">${t.urls.filter(Boolean).map(u => `<a class="btn sm ghost pub-site" href="${esc(u)}" target="_blank" rel="noopener">${/youtube\.com|youtu\.be/.test(u) ? '▶ 유튜브 채널' : /cafe\.naver\.com/.test(u) ? '네이버 카페 · ' + esc(u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')) : /cafe\.daum\.net/.test(u) ? '다음 카페 · ' + esc(u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')) : esc(u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))} ↗</a>`).join(' ')}</p>` : ''}
     ${pl ? `<p style="margin:8px 0 0"><a class="btn sm ghost" href="/dhammatalk/?pl=${pl.id}">▶ ${esc(t.name)}의 법문 듣기</a></p>` : ''}</div></div>
     ${list.length || !trans.length ? `<div class="section-head" style="margin-top:20px"><h2>${esc(teacherBooksHead(t, list))}</h2></div>
-    ${list.length ? `<div class="grid">${list.map(coverCard).join('')}</div>` : '<p class="muted">아직 등록된 책이 없습니다.</p>'}` : ''}
-    ${trans.length ? `<div class="section-head" style="margin-top:${list.length ? 30 : 20}px"><h2>옮긴 책 ${trans.length}권</h2></div><div class="grid">${trans.map(coverCard).join('')}</div>` : ''}
+    ${list.length ? `${cardList(list)}` : '<p class="muted">아직 등록된 책이 없습니다.</p>'}` : ''}
+    ${trans.length ? `<div class="section-head" style="margin-top:${list.length ? 30 : 20}px"><h2>옮긴 책 ${trans.length}권</h2></div>${cardList(trans)}` : ''}
     <div class="section-head" style="margin-top:36px"><h2>같은 전통의 스승</h2></div>
     <div class="chips">${TEACHERS.filter(x => x.tradition === t.tradition && x.id !== t.id).map(x => `<a class="chip" href="/teacher/${x.id}/">${esc(x.name)}<span class="n">${countTeacher(x.id)}</span></a>`).join('')}</div></div>`
   }));
@@ -712,7 +715,7 @@ for (const t of TEACHERS) {
     ${p.bio ? `<div class="desc small">${marked.parse(p.bio)}</div>` : '<p class="small muted">소개 글은 준비 중입니다.</p>'}
     ${(p.urls || []).length ? `<p style="margin:8px 0 0">${p.urls.map((u, i) => `<a class="btn sm ghost pub-site" href="${esc(u)}" target="_blank" rel="noopener">${/youtube\.com|youtu\.be/.test(u) ? '▶ 유튜브 채널' : esc((!i && p.note) || u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))} ↗</a>`).join(' ')}</p>` : ''}</div></div>
     <div class="section-head" style="margin-top:20px"><h2>${esc(p.name)}${rel ? ' 관련 책' : '에서 펴낸 책'} ${books.length}권</h2></div>
-    <div class="grid">${books.map(coverCard).join('')}</div>
+    ${cardList(books)}
     <div class="section-head" style="margin-top:36px"><h2>다른 출판사·단체</h2></div>
     <div class="chips"><a class="chip" href="/press/">我無말들<span class="n">${LIB().filter(b => pubsAll(b).some(x => provOfPub(x.key)?.id === 'amumaldeul')).length}</span></a>${[...PUBS.values()].filter(o => o.p.id !== p.id).map(o => `<a class="chip" href="/publisher/${o.p.id}/">${esc(o.p.name)}<span class="n">${o.books.length}</span></a>`).join('')}</div></div>`
   }));
@@ -857,7 +860,7 @@ function newsList(cat) {
   return `<div class="wrap"><div class="prose" style="padding-bottom:0"><h1>소식</h1></div>
   <div class="tabs">${[['/news/', '전체', ''], ['/news/press/', '我無말들 소식', 'press'], ['/news/library/', '도서관 소식', 'library']].map(([h, lb, k]) => `<a href="${h}" class="${(cat || '') === k ? 'on' : ''}">${lb}</a>`).join('')}</div>
   <ul class="news-list" style="max-width:760px">${l.map(n => `<li><div class="dd"><span class="pill ${n.category === 'press' ? 'robe' : ''}">${n.category === 'press' ? '我無말들' : '도서관'}</span> ${esc(n.date || '')}${updTag(n)}</div><a class="tt" href="/news/${n.slug}/">${esc(n.title)}</a></li>`).join('') || '<li class="muted">아직 소식이 없습니다.</li>'}</ul>
-  ${l.length < 6 ? `<div class="more-box"><div class="section-head"><h2>최근 올라온 책</h2><a class="more" href="/library/">도서관 →</a></div><div class="grid">${LIB().slice(0, 5).map(coverCard).join('')}</div></div>` : ''}</div>`;
+  ${l.length < 6 ? `<div class="more-box"><div class="section-head"><h2>최근 올라온 책</h2><a class="more" href="/library/">도서관 →</a></div>${cardList(LIB().slice(0, 5))}</div>` : ''}</div>`;
 }
 put('news/index.html', layout({ title: '소식', nav: 'news', page: 'news', body: newsList('') }));
 put('news/press/index.html', layout({ title: '我無말들 소식', nav: 'news', page: 'news', body: newsList('press') }));

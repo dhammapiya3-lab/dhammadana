@@ -394,7 +394,7 @@ function initLibrary() {
       let ok = has('main', sel.main) && has('topics', sel.topic) && has('fmts', sel.fmt) && has('lang', sel.lang) && has('btype', sel.btype) && has('pub', sel.pub) && has('person', sel.person) && has('region', sel.region);
       // 전통과 스승은 '또는'으로 묶음
       if (ok && (sel.trad || sel.teacher)) ok = (sel.trad || []).some(x => (b.dataset.trad || '').split('|').includes(x)) || (sel.teacher || []).some(x => (b.dataset.teacher || '').split('|').includes(x));
-      b.hidden = !ok; if (ok) shown++;
+      (b.closest('li') || b).hidden = !ok; if (ok) shown++;  // 목록 항목(li)째 숨김 (2026-11-17)
     }
     $('#libCount').textContent = shown; $('#libEmpty').hidden = shown > 0;
     const af = $('#activeFilters');
@@ -408,7 +408,7 @@ function initLibrary() {
   };
   const sortBy = () => {
     const g = $('#libGrid'), v = $('#sort').value;
-    $$('.book', g).sort((a, b) => v === 'title' ? a.dataset.title.localeCompare(b.dataset.title, 'ko') : v === 'author' ? ((a.dataset.author || '').localeCompare(b.dataset.author || '', 'ko') || (+a.dataset.ord || 0) - (+b.dataset.ord || 0)) : ((+a.dataset.ord || 0) - (+b.dataset.ord || 0)) || (b.dataset.added || '').localeCompare(a.dataset.added || '')).forEach(x => g.appendChild(x));  // 최근 등록순: 같은 저자끼리 모아서(data-ord)
+    $$('.book', g).sort((a, b) => v === 'title' ? a.dataset.title.localeCompare(b.dataset.title, 'ko') : v === 'author' ? ((a.dataset.author || '').localeCompare(b.dataset.author || '', 'ko') || (+a.dataset.ord || 0) - (+b.dataset.ord || 0)) : ((+a.dataset.ord || 0) - (+b.dataset.ord || 0)) || (b.dataset.added || '').localeCompare(a.dataset.added || '')).forEach(x => g.appendChild(x.closest('li') || x));  // 최근 등록순: 같은 저자끼리 모아서(data-ord)
   };
   $$('.filters input[data-f]').forEach(c => c.onchange = () => { run(); sync(); });
   showEmpty.onchange = () => { store.set('showEmpty', showEmpty.checked); run(); };
@@ -676,7 +676,7 @@ async function initReaderPage() {
      // say: 그림·표를 소리로 읽을 글 (그림 주소 → 글, 운영자 요청 2026-11-10)
    
     i: Math.min(Math.max(want || (last > 1 ? last : 0) || firstContent(pages, man.toc || []), 1), pages.length) - 1,
-    view: 'text', zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), bold: store.get('rbold', false), lh: store.get('rlh', 1.9), font: store.get('rfont', 'serif'), mw: store.get('rmw', 36), spread: store.get('rspread2-' + id, !!man.spread), centerHeads: !!man.center_heads,  // 텍스트 JSON center_heads: 본문 소제목(## )을 가운데로 — 『불자수첩』 (운영자 요청, 2026-11-16)
+    view: 'text', zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), bold: store.get('rbold', false), lh: store.get('rlh', 1.9), font: RFONTS.some(f => f[0] === store.get('rfont', 'serif')) ? store.get('rfont', 'serif') : 'serif', mw: store.get('rmw', 36), spread: store.get('rspread2-' + id, !!man.spread), centerHeads: !!man.center_heads,  // 텍스트 JSON center_heads: 본문 소제목(## )을 가운데로 — 『불자수첩』 (운영자 요청, 2026-11-16)
      // 책마다 따로 — 『테라와다 불교의범』처럼 spread 가 있는 책은 처음부터 양쪽으로, 다른 책은 한쪽씩 (운영자 요청, 2026-11-14)
    
     hl: hlp ? hlp.split('|').filter(Boolean) : [], speaking: false,
@@ -703,7 +703,7 @@ function markUl(s, n) {
   return out + esc(s.slice(p));
 }
 function pageHtml(p) {
-  if (!p.img) return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${paras(p.text).map((s, k) => `<p data-pg="${p.n}" data-s="${k}">${markUl(s, p.n)}</p>`).join('') || '<p class="muted">빈 쪽입니다.</p>'}</div>`;
+  if (!p.img) return `<div class="reflow ${fontCls()}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${paras(p.text).map((s, k) => `<p data-pg="${p.n}" data-s="${k}">${markUl(s, p.n)}</p>`).join('') || '<p class="muted">빈 쪽입니다.</p>'}</div>`;
   const src = R.zoom > 1.2 && p.big ? p.big : p.img;
   return `<div class="page-sheet img-sheet" style="width:min(${Math.round(560 * R.zoom)}px,100%);${p.w && p.h ? `aspect-ratio:${p.w}/${p.h}` : ''}"><img src="${esc(src)}" alt="${esc(R.title)} ${esc(pageName(p))}" draggable="false"></div>`;
 }
@@ -880,7 +880,7 @@ function reflowHtml() {
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}" data-ci="${ci - 1}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}" data-ci="${ci + 1}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   // 장 제목과 같아 숨긴 본문 제목에 각주 번호가 붙어 있으면(예: '보시의 실천⁷') 위의 큰 장 제목에 그 번호를 붙여 보임 (2026-11-11)
   const dupFn = [...body.matchAll(/<p [^>]*class="ch-dup"[^>]*>(.*?)<\/p>/g)].flatMap(m => m[1].match(/<sup class="fn-ref"[^>]*>[^<]*<\/sup>/g) || []).join('');
-  return `<div class="reflow ${R.font === 'sans' ? 'sans' : ''}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}${spreadOn() ? ' spread' : ''}${R.centerHeads ? ' chead' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${boxNum(esc(c.title))}${dupFn}</h3></div>` : ''}${spreadOn() ? `<div class="spr">${body}</div>` : body}${nav}</div>`;
+  return `<div class="reflow ${fontCls()}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}${spreadOn() ? ' spread' : ''}${R.centerHeads ? ' chead' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${boxNum(esc(c.title))}${dupFn}</h3></div>` : ''}${spreadOn() ? `<div class="spr">${body}</div>` : body}${nav}</div>`;
 }
 // 이 장 안의 소제목 자리(화면의 문단) 목록
 // 굵은 글씨 한 줄만으로 된 짧은 문단(예: '[1. 사성제]', '수행이란 무엇인가?')도 소제목으로 봄 — 문장(. ! 로 끝남)·따옴표·괄호로 시작하는 강조 글은 빼고
@@ -928,7 +928,7 @@ function renderReader() {
   const hasText = R.pages.some(x => x.text), hasImg = R.pages.some(x => x.img);
   const ch = tocFor(n);
   const fkey = focusKey(el);  // 다시 그려도 키보드·화면 낭독기 커서가 같은 단추에 남게 (운영자 요청, 2026-11-17)
-  el.innerHTML = `<button class="r-skip" id="rMenu">메뉴 열기 (듣기·목차·설정·닫기)</button><div class="r-top"><button class="tbtn" id="rClose" aria-label="읽기 닫기">← 닫기</button>
+  el.innerHTML = `<button class="r-skip" id="rMenu" aria-keyshortcuts="Alt+Shift+M">메뉴 열기 (듣기·목차·설정·닫기)</button><button class="r-skip" id="rKeys" aria-keyshortcuts="Alt+Shift+H">단축키 안내</button><div class="r-top"><button class="tbtn" id="rClose" aria-label="『${esc(R.title)}』 읽기 끝내기, 책 소개로 돌아가기">← 닫기</button>
     <div class="r-title">${esc(R.title)}<small>${esc(R.by)}${ch ? ' · ' + esc(ch.title) : ''}</small></div>
     <div class="r-tools">
       ${R.toc.length ? '<button class="tbtn" data-panel="toc">목차</button>' : ''}${hasText ? '<button class="tbtn" data-panel="find" aria-label="본문 검색">🔍 찾기</button>' : ''}
@@ -954,7 +954,7 @@ function renderReader() {
        <div class="row row-col">빨리 고르기 <span class="seg seg-grid">${[1, 1.5, 2, 3, 4].map(v => `<button data-fs="${v}" class="${R.fs === v ? 'on' : ''}" aria-label="글자 ${v * 100}%">${v * 100}%</button>`).join('')}</span></div>
        <div class="row">글자 굵기 <span class="seg"><button data-bold="0" class="${R.bold ? '' : 'on'}">보통</button><button data-bold="1" class="${R.bold ? 'on' : ''}">굵게</button></span></div>
        <div class="row">줄 간격 <span class="seg">${[[1.6, '좁게'], [1.9, '보통'], [2.2, '넓게']].map(([v, l]) => `<button data-lh="${v}" class="${R.lh === v ? 'on' : ''}">${l}</button>`).join('')}</span></div>
-       <div class="row">글꼴 <span class="seg"><button data-font="serif" class="${R.font === 'serif' ? 'on' : ''}">명조</button><button data-font="sans" class="${R.font === 'sans' ? 'on' : ''}">고딕</button></span></div>
+       <div class="row row-col">글꼴 <span class="seg seg-grid seg-font">${RFONTS.map(([k, l, ff]) => `<button data-font="${k}" class="${R.font === k ? 'on' : ''}" style="font-family:${ff}">${l}</button>`).join('')}</span></div>
        <div class="row">글 너비 <span class="seg">${[[28, '좁게'], [36, '보통'], [46, '넓게'], [70, '화면 가득']].map(([v, l]) => `<button data-mw="${v}" class="${R.mw === v ? 'on' : ''}">${l}</button>`).join('')}</span></div>${R.spreadOk && spreadWide() ? `
        <div class="row">쪽 보기 <span class="seg"><button data-spread="0" class="${R.spread ? '' : 'on'}">한쪽씩</button><button data-spread="1" class="${R.spread ? 'on' : ''}">양쪽으로</button></span></div>` : ''}`}</div>
     <div class="panel" id="p-tts">${ttsPanel()}</div>
@@ -972,7 +972,8 @@ function renderReader() {
     <div class="sel-pop" id="selPop" role="toolbar" aria-label="고른 글"><button id="selUl">밑줄 긋기</button><button id="selNote">밑줄+메모</button>${R.noCopy ? '' : '<button id="selCopy">복사</button>'}<button id="selShare">공유</button>${R.pages.some(x => x.text) ? '<button id="selPlay">▶ 여기부터 듣기</button>' : ''}${R.ab ? '<button id="selAb">🎧 여기부터 오디오북</button>' : ''}</div>
     <div class="panel" id="p-bm"><h5>내 책갈피</h5><ul>${bms().map((m, k) => `<li><span><a class="link" href="/read/${m.id}/${m.p}">『${esc(m.t)}』 ${esc(m.pl || m.p)}쪽</a>${m.note ? `<br><span class="muted small">${esc(m.note)}</span>` : ''}</span><button class="link" data-bmdel="${k}" aria-label="책갈피 지우기">지우기</button></li>`).join('') || '<li class="muted">아직 책갈피가 없습니다.</li>'}</ul>
       <div class="row" style="margin-top:12px"><input id="bmNote" placeholder="이 쪽에 한 줄 메모" aria-label="책갈피 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"><button class="tbtn" id="bmSave">저장</button></div>
-      <p class="note">회원가입 없이 이 기기의 브라우저에만 저장됩니다. 다른 기기로 옮길 때는 내 서재의 ‘옮기기’를 쓰세요.</p></div>`;
+      <p class="note">회원가입 없이 이 기기의 브라우저에만 저장됩니다. 다른 기기로 옮길 때는 내 서재의 ‘옮기기’를 쓰세요.</p></div>
+    <div class="panel" id="p-keys"><h5>단축키 안내</h5><p class="note">Alt 키와 Shift 키를 함께 누른 채로 아래 글자 키를 누릅니다. (맥은 Option + Shift)</p><ul class="keys">${KEYS.map(([k, d]) => `<li><kbd>Alt+Shift+${k}</kbd> ${d}</li>`).join('')}<li><kbd>Esc</kbd> 열린 창 닫기 (창이 없으면 읽기 끝내기)</li><li><kbd>→</kbd> <kbd>←</kbd> 다음·앞으로 넘기기</li></ul></div>`;
   bindReader();
   if (fkey) { const f = $(fkey, el); if (f && f.offsetParent !== null) f.focus({ preventScroll: true }); }
   sprBar(); spreadWas = spreadOn();  // 화면을 돌리면 처음 한 번부터 바로 다시 그리게
@@ -1131,7 +1132,10 @@ function bindReader() {
   // 설정·목록 창: 위 단추 줄 바로 아래에 열리게 하고(단추를 가리지 않게), 창마다 ✕ 닫기 단추
   placePanels(el);
   $$('.panel', el).forEach(p => { if (p.querySelector(':scope > .p-close')) return; const x = document.createElement('button'); x.className = 'p-close'; x.type = 'button'; x.setAttribute('aria-label', '닫기'); x.textContent = '✕'; x.onclick = () => p.classList.remove('open'); p.prepend(x); });
-  $$('[data-panel]', el).forEach(b => b.onclick = () => { const p = $('#p-' + b.dataset.panel); const o = p.classList.contains('open'); $$('.panel', el).forEach(x => x.classList.remove('open')); if (!o) p.classList.add('open'); });
+  $$('[data-panel]', el).forEach(b => b.onclick = () => openPanel(b.dataset.panel, true));  // 열면 그 창으로 커서를 옮김 (화면 낭독기, 2026-11-17)
+  $('#rKeys').onclick = () => openPanel('keys');
+  loadReadFont(R.font); loadFontLabels();
+  panelA11y(el);
   $$('[data-go]', el).forEach(b => b.onclick = () => go(+b.dataset.go, b.dataset.ci != null ? +b.dataset.ci : null));
   $$('[data-zoom]', el).forEach(b => b.onclick = () => { R.zoom = Math.max(.75, Math.min(2.5, +(R.zoom + (+b.dataset.zoom) * .25).toFixed(2))); store.set('rzoom', R.zoom); renderReader(); reopen('p-font'); });
   $$('[data-fs]', el).forEach(b => b.onclick = () => { R.fs = +b.dataset.fs; store.set('rfs', R.fs); renderReader(); reopen('p-font'); });
@@ -1139,7 +1143,7 @@ function bindReader() {
   $$('[data-fsd]', el).forEach(b => b.onclick = () => { const up = +b.dataset.fsd > 0; const v = up ? FS.find(x => x > R.fs + 0.001) : [...FS].reverse().find(x => x < R.fs - 0.001); if (v) { R.fs = v; store.set('rfs', R.fs); renderReader(); reopen('p-font'); } });
   $$('[data-bold]', el).forEach(b => b.onclick = () => { R.bold = b.dataset.bold === '1'; store.set('rbold', R.bold); renderReader(); reopen('p-font'); });
   $$('[data-lh]', el).forEach(b => b.onclick = () => { R.lh = +b.dataset.lh; store.set('rlh', R.lh); renderReader(); reopen('p-font'); });
-  $$('[data-font]', el).forEach(b => b.onclick = () => { R.font = b.dataset.font; store.set('rfont', R.font); renderReader(); reopen('p-font'); });
+  $$('[data-font]', el).forEach(b => b.onclick = () => { R.font = b.dataset.font; loadReadFont(R.font); store.set('rfont', R.font); renderReader(); reopen('p-font'); });
   $$('[data-mw]', el).forEach(b => b.onclick = () => { R.mw = +b.dataset.mw; store.set('rmw', R.mw); renderReader(); reopen('p-font'); });
   $$('[data-parm]', el).forEach(b => b.onclick = async () => {
     const m = b.dataset.parm;
@@ -1973,11 +1977,12 @@ function bodyZoom() { return parseFloat(getComputedStyle(document.body).zoom) ||
 })();
 function stopSpeak(rerender) { try { speechSynthesis.cancel(); } catch (e) {} wake(false, 'tts'); if (R) { R.ttsTitled = null; R.ttsLocked = false; const was = R.speaking; R.speaking = false; if (rerender && was) renderReader(); } }
 document.addEventListener('keydown', e => {
+  if (R && e.altKey && e.shiftKey && !e.ctrlKey && !e.metaKey && readerKey(e)) { e.preventDefault(); return; }
   if (!R || e.target.matches('input,select,textarea')) return;
   if (R.ttsLocked && e.key !== 'Tab') { if ([' ', 'ArrowRight', 'ArrowLeft', 'Escape'].includes(e.key)) { e.preventDefault(); toast('듣기가 잠겨 있습니다'); } return; }
   if (e.key === 'ArrowRight') go(R.i + 2); else if (e.key === 'ArrowLeft') go(R.i);
-  else if (e.key === ' ' && $('#rSpeak')) { e.preventDefault(); R.speaking ? stopSpeak(true) : speak(); }
-  else if (e.key === 'Escape') { if (document.fullscreenElement) return; if ($$('#reader .panel.open').length) $$('#reader .panel').forEach(x => x.classList.remove('open')); else exitReader(); }
+  else if (e.key === ' ' && $('#rSpeak') && !e.target.closest('button,a,summary,[role]')) { e.preventDefault(); R.speaking ? stopSpeak(true) : speak(); }
+  else if (e.key === 'Escape') { if (document.fullscreenElement) return; if ($$('#reader .panel.open').length) closePanels(); else exitReader(); }
 });
 
 /* ---------- 내 서재 ---------- */
@@ -2425,4 +2430,68 @@ function parToc(g, O, kText, oHtml, wide) {
   new MutationObserver(ms => { for (const m of ms) { if (m.type === 'attributes') { if (m.target.matches && m.target.matches(SEL)) sync(m.target); } else m.addedNodes.forEach(n => n.nodeType === 1 && sync(n)); } })
     .observe(document.body, { subtree: true, childList: true, attributes: true, attributeFilter: ['class'] });
 })();
+
+/* ---------- 읽기 화면 설정 창·단축키 (화면 낭독기, 운영자 요청 2026-11-17) ---------- */
+// 창을 열면 커서를 창 제목(찾기는 찾을 말 칸)으로 옮기고, 닫으면 연 단추로 돌려보냄
+function openPanel(name, toggle) {
+  const el = $('#reader'), p = $('#p-' + name); if (!el || !p) return false;
+  const o = p.classList.contains('open');
+  $$('.panel', el).forEach(x => x.classList.remove('open'));
+  if (o && toggle) return true;
+  el.classList.remove('chrome-off'); p.classList.add('open');
+  setTimeout(() => { const t = name === 'find' ? $('#findQ') : $('h5', p); if (!t) return; if (t.tagName === 'H5') t.tabIndex = -1; try { t.focus({ preventScroll: true }); } catch (e) {} }, 40);
+  return true;
+}
+function closePanels(back = true) {
+  const el = $('#reader'); if (!el) return; const p = $('.panel.open', el);
+  $$('.panel', el).forEach(x => x.classList.remove('open'));
+  if (!back || !p) return;
+  const b = $(`[data-panel="${p.id.slice(2)}"]`, el) || $('#rClose');
+  if (b) { el.classList.remove('chrome-off'); setTimeout(() => b.focus(), 20); }
+}
+function panelA11y(el) {
+  $$('.panel', el).forEach(p => {
+    const h = $('h5', p); if (h) { h.id = p.id + '-h'; h.tabIndex = -1; p.setAttribute('role', 'region'); p.setAttribute('aria-labelledby', h.id); }
+    const x = $(':scope > .p-close', p); if (x) { x.setAttribute('aria-label', (h ? h.textContent.trim() + ' ' : '') + '창 닫기'); x.onclick = () => { if (p.classList.contains('open')) closePanels(); }; }  // ✕ 를 누르면 연 단추로 커서를 돌려보냄
+  });
+  const ex = () => $$('[data-panel]', el).forEach(b => { b.setAttribute('aria-controls', 'p-' + b.dataset.panel); b.setAttribute('aria-expanded', String(!!$('#p-' + b.dataset.panel + '.open'))); });
+  ex(); if (el._pmo) el._pmo.disconnect();
+  el._pmo = new MutationObserver(ex); $$('.panel', el).forEach(p => el._pmo.observe(p, { attributes: true, attributeFilter: ['class'] }));
+  const KS = { toc: 'N', font: 'F', mode: 'V', tts: 'S', bm: 'L' };
+  $$('[data-panel]', el).forEach(b => { const k = KS[b.dataset.panel]; if (k) b.setAttribute('aria-keyshortcuts', 'Alt+Shift+' + k); });
+  const sp = $('#rSpeak'); if (sp) sp.setAttribute('aria-keyshortcuts', 'Alt+Shift+P');
+  const mk = $('#rMark'); if (mk) mk.setAttribute('aria-keyshortcuts', 'Alt+Shift+B');
+}
+// 단축키: 브라우저·화면 낭독기 키와 겹치지 않게 Alt+Shift+글자 (WCAG 2.1.4 — 한 글자 키는 쓰지 않음)
+const KEYS = [['M', '메뉴 열기 (닫기 단추로 커서)'], ['P', '듣기 시작·멈춤'], ['S', '듣기 설정'], ['V', '화면 (기본·흑백·밤·고대비)'], ['F', '글씨 (크기·굵기·줄 간격·글꼴)'], ['N', '목차'], ['B', '이 쪽에 책갈피 넣기·빼기'], ['L', '책갈피 목록'], ['K', '지금 읽는 곳 알리기'], ['H', '단축키 안내']];
+function readerKey(e) {
+  const k = (e.code || '').replace(/^Key/, ''); const el = $('#reader'); if (!el) return false;
+  const say = m => { toast(m); };
+  switch (k) {
+    case 'M': el.classList.remove('chrome-off'); $$('.panel', el).forEach(x => x.classList.remove('open')); setTimeout(() => { const b = $('#rClose'); if (b) b.focus(); }, 30); return true;
+    case 'P': { const b = $('#rSpeak'); if (!b) { say('이 화면에서는 듣기를 쓸 수 없습니다'); return true; } if (R.ttsLocked) { say('듣기가 잠겨 있습니다'); return true; } R.speaking ? stopSpeak(true) : speak(); return true; }
+    case 'S': if (!openPanel('tts')) say('이 책은 듣기 설정이 없습니다'); return true;
+    case 'V': openPanel('mode'); return true;
+    case 'F': openPanel('font'); return true;
+    case 'N': if (!openPanel('toc')) say('이 책에는 목차가 없습니다'); return true;
+    case 'L': openPanel('bm'); return true;
+    case 'H': openPanel('keys'); return true;
+    case 'B': { const b = $('#rMark'); if (b) b.click(); setTimeout(() => { const m = $('#rMark'); if (m && document.activeElement === document.body) m.focus(); }, 60); return true; }
+    case 'K': {
+      const p = R.pages[R.i] || {}; let ch = null; try { const cs = chapters(); ch = cs[chapterOf(R.i + 1)]; } catch (x) {}
+      say(`『${R.title}』${ch && ch.title ? ', ' + ch.title : ''}, ${pageName(p)}, 전체 ${R.pages.length}쪽 가운데 ${R.i + 1}번째${R.speaking ? ', 듣는 중' : ''}`); return true;
+    }
+  }
+  return false;
+}
+
+/* ---------- 읽기 글꼴 (저시력, 운영자 요청 2026-11-17): 명조·고딕 + 나눔명조·나눔고딕(구글 글꼴) + KoPub 바탕·돋움(public/fonts/kopub, 한국출판인회의 무료 글꼴 — 원본 그대로, LICENSE.md) ---------- */
+// 단추 이름은 그 글꼴로 보임 — 이름 글자만 담은 작은 글꼴(나눔은 구글 text=, KoPub 은 label-*.woff2). 본문 글꼴은 고를 때만 받음
+const RFONTS = [['serif', '명조', 'var(--serif)'], ['sans', '고딕', 'var(--sans)'], ['nanum-myeongjo', '나눔명조', "'Nanum Myeongjo',var(--serif)"], ['nanum-gothic', '나눔고딕', "'Nanum Gothic',var(--sans)"], ['kopub-batang', 'KoPub 바탕', "'dd-kpb-label','KoPubWorld Batang',var(--serif)"], ['kopub-dotum', 'KoPub 돋움', "'dd-kpd-label','KoPubWorld Dotum',var(--sans)"]];
+function fontCls() { return R.font === 'sans' ? 'sans' : R.font && R.font !== 'serif' ? 'f-' + R.font : ''; }
+function addCss(id, href) { if (document.getElementById(id)) return; const l = document.createElement('link'); l.id = id; l.rel = 'stylesheet'; l.href = href; document.head.appendChild(l); }
+function loadReadFont(f) {
+  if (/^nanum/.test(f || '')) addCss('rf-nanum', 'https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@400;700&display=swap');
+}
+function loadFontLabels() { addCss('rf-nanum-label', 'https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&display=swap&text=' + encodeURIComponent('나눔명조고딕')); }
 })();
