@@ -1,0 +1,609 @@
+[
+ {
+  "img": "images/11-Sudhana-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     288,
+     228,
+     516,
+     300
+    ],
+    "ko": "수다나 왕자의\n전생 이야기",
+    "cover": false,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     288,
+     304,
+     516,
+     360
+    ],
+    "ko": "란나의 빤냐사\n자따까 이야기",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     356,
+     760,
+     414
+    ],
+    "ko": "제따와나에서 한 비구가 아름다운 여인을 보고 수행에 싫증을 냈습니다. 부처님께서는 애욕의 생각이 마음을 압도한다고 경고하시며, 지혜로운 이들조차 여인 때문에 나라를 버린 전생을 들려주셨습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     386,
+     54,
+     722,
+     176
+    ],
+    "ko": "삼십삼천에서 내려온 보살은 웃따라빤짤라에서 수다나 왕자로 태어났습니다. 그가 태어날 때 땅이 흔들리고 보물 항아리 네 개가 신기하게 나타났습니다. 빛나고 총명한 그는 곧 왕실의 모든 기예를 익혔습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     318,
+     760,
+     434
+    ],
+    "ko": "나가 왕 잠부찟따는 웃따라빤짤라에 비를 넉넉히 내려 주었습니다. 반대로 이웃 마하빤짤라는 심한 가뭄을 겪었습니다. 이 번영을 시기한 마하빤짤라 왕은 나가 왕의 힘을 꺾어 백성을 되찾아 오려 했습니다.",
+    "cover": [
+     222,
+     209,
+     187
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     344,
+     760,
+     434
+    ],
+    "ko": "무서운 알람빠야나 주문을 아는 탐욕스러운 바라문이 잠부찟따를 노렸습니다. 그가 주문을 외우자 호수가 끓어올랐습니다. 열에 시달리던 뱀의 왕은 도와줄 이를 찾지 못하면 붙잡히리라는 것을 알았습니다.",
+    "cover": [
+     221,
+     207,
+     185
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     116,
+     68,
+     380,
+     220
+    ],
+    "ko": "사람의 모습을 한 잠부찟따가 숲 사냥꾼 뿐다리까에게 간청했습니다.\n\n나가의 말대로 사냥꾼은 타락한 바라문을 활로 쏘아 뱀의 왕을 구했습니다. 고마워한 잠부찟따는 큰 재물과 영원한 우정을 약속했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     374,
+     760,
+     430
+    ],
+    "ko": "히마완따 숲 깊은 곳에서 뿐다리까는 숨은 연못을 발견했습니다. 두마라자의 딸인 아름다운 낀나리 일곱이 하늘에서 내려와 목욕하는 것을 넋을 잃고 보다가, 그 하나를 사로잡기로 마음먹었습니다.",
+    "cover": [
+     226,
+     213,
+     193
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     172,
+     312,
+     350
+    ],
+    "ko": "고행자 깟사빠는 신비한 뱀 올가미만이 낀나리를 잡을 수 있다고 일러 주었습니다.\n\n우정을 믿고 뿐다리까가 거룩한 무기를 청하자, 목숨의 빚을 갚으려고 나가 왕은 마지못해 자기를 지켜 주던 보물을 내주었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     372,
+     760,
+     430
+    ],
+    "ko": "뿐다리까가 신비한 올가미를 던져 맏이인 낀나리 공주 마노하라를 사로잡았습니다. 겁에 질린 여섯 자매는 잃어버린 언니를 부르며 울면서 하늘로 달아났습니다. 꼼짝없이 잡힌 마노하라는 사냥꾼에게 몸을 맡겼습니다.",
+    "cover": [
+     224,
+     210,
+     190
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     366,
+     760,
+     424
+    ],
+    "ko": "도성으로 돌아오던 사냥꾼은 수다나 왕자와 마주쳤습니다. 마노하라를 본 보살은 전생의 업의 인연에 압도되었습니다. 그는 사냥꾼에게 큰 상을 내리고 마노하라를 정비로 삼았습니다.",
+    "cover": [
+     222,
+     192,
+     149
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     344,
+     760,
+     426
+    ],
+    "ko": "한편 마노하라의 어머니가 딸을 찾아 내려왔습니다. 흩어진 꽃과 딸의 보석 허리띠만 발견한 왕비는 모든 존재에 깃든 무상과 이별에 무너져 정신을 잃었습니다.",
+    "cover": [
+     209,
+     192,
+     164
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     326,
+     754,
+     420
+    ],
+    "ko": "웃따라빤짤라에서 새로 온 궁중 고문 꾸살라는 수다나 왕자를 몹시 시기했습니다. 자리를 잃을까 두려워한 바라문은 왕자가 왕위를 빼앗으려 한다고 아딧짜왕사 왕에게 거짓으로 고자질했습니다.",
+    "cover": [
+     229,
+     214,
+     188
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     366,
+     770,
+     414
+    ],
+    "ko": "적들이 국경 마을을 치자, 고문은 왕을 설득해 수다나를 보내게 했습니다. 비탄에 잠긴 마노하라를 달랜 왕자는 수호신들의 보이지 않는 보호를 받으며 싸움터로 나갔습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     378,
+     310,
+     764,
+     398
+    ],
+    "ko": "새벽녘 아딧짜왕사 왕은 끔찍한 꿈을 꾸었습니다. 자기 창자가 빠져나와 잠부디빠를 세 바퀴 감는 꿈이었습니다. 겁에 질린 왕은 궁중 고문을 불러 징조를 풀이하게 했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     352,
+     760,
+     420
+    ],
+    "ko": "수다나를 없앨 기회를 잡은 타락한 바라문은 꿈을 거짓으로 풀이했습니다. 세 가지 재앙이 닥칠 징조라며, 나라를 구하려면 살아 있는 중생을 대규모로 제물로 바쳐야 한다고 했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     172,
+     318,
+     280
+    ],
+    "ko": "사악한 궁중 고문에게 넘어간 아딧짜왕사 왕은 마노하라 공주를 제물로 바치라고 명합니다. 왕은 이 끔찍한 짓이 자기 안전과 나라의 번영을 지켜 주리라고 잘못 믿습니다.",
+    "cover": [
+     229,
+     207,
+     166
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     284,
+     348,
+     526,
+     414
+    ],
+    "ko": "비극적인 운명을 거부한 낀나리 공주 마노하라는 마지막 춤을 춥니다. 숨겨 둔 날개를 펼쳐 하늘로 달아나, 껠라사 산의 아버지에게 먼 길을 떠납니다.",
+    "cover": [
+     227,
+     198,
+     157
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     92,
+     214,
+     404
+    ],
+    "ko": "고행자 깟사빠의 암자에 들른 마노하라는 다이아몬드 반지와 붉은 담요와 신비한 환약을 맡깁니다. 험한 길을 경고하며, 남편이 뒤따라오면 일러 줄 자세한 가르침을 남깁니다.",
+    "cover": [
+     221,
+     197,
+     155
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     478,
+     296,
+     750,
+     400
+    ],
+    "ko": "싸움에서 돌아온 수다나 왕자는 아내가 사라진 것을 알고 무너집니다. 어머니가 울며 말렸지만 보살은 무장을 하고 빽빽한 히마완따 숲으로 길을 떠납니다.",
+    "cover": [
+     227,
+     198,
+     154
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     228,
+     380,
+     574,
+     442
+    ],
+    "ko": "일곱 해 일곱 달 이레 동안 수다나는 뚫을 수 없는 덤불을 지납니다. 깟사빠의 주문과 환약으로 거대한 약카와 구렁이 다리와 서로 부딪는 산을 이겨 냅니다.",
+    "cover": [
+     209,
+     178,
+     133
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     272,
+     354,
+     556,
+     440
+    ],
+    "ko": "낀나라 나라에 이른 수다나는 마노하라를 씻길 물을 긷는 처녀들을 만납니다. 그는 몰래 다이아몬드 반지를 황금 항아리에 떨어뜨려, 사랑하는 이에게 자기가 왔음을 알립니다.",
+    "cover": [
+     227,
+     199,
+     149
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     254,
+     354,
+     546,
+     428
+    ],
+    "ko": "그의 됨됨이를 보려고 두마라자 왕이 왕자의 힘을 시험합니다. 수다나의 화살은 야자나무 일곱 그루와 쇠 널빤지와 돌기둥을 가볍게 꿰뚫고 신기하게도 그의 손으로 돌아옵니다.",
+    "cover": [
+     210,
+     172,
+     115
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     356,
+     552,
+     432
+    ],
+    "ko": "두 번째 시험에서 수다나는 진실 바라밀을 부릅니다. 공덕의 빛으로, 본디 무거운 거대한 검푸른 돌을 지푸라기처럼 들어 올립니다.",
+    "cover": [
+     208,
+     174,
+     129
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     228,
+     356,
+     572,
+     444
+    ],
+    "ko": "마지막 시험은 똑같이 생긴 처녀 일곱 가운데 마노하라를 알아보는 것입니다. 진실을 향한 보살의 굳센 결심을 알아본 신들의 왕 삭까가 황금 파리로 나타나 그를 참된 아내에게 이끕니다.",
+    "cover": [
+     225,
+     201,
+     163
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     350,
+     764,
+     436
+    ],
+    "ko": "승리한 수다나와 마노하라는 웃따라빤짤라로 돌아갑니다. 두 사람은 바르게 다스리고 부모를 봉양하며 수명이 다할 때까지 큰 공덕을 지어 도솔천에 태어납니다.",
+    "cover": [
+     227,
+     201,
+     155
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sudhana-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     182,
+     380,
+     618,
+     440
+    ],
+    "ko": "이야기를 마치며 부처님께서 진실을 밝히십니다. 사악한 고문은 데와닷따, 마노하라는 야소다라, 수다나 왕자는 부처님 자신이었습니다. 이렇게 법의 가르침이 완성됩니다.",
+    "cover": [
+     217,
+     180,
+     126
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ }
+]
