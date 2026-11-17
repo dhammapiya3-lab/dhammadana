@@ -1,12 +1,10 @@
-Foremost-Monks 34-Sobhita 14 장
-Foremost-Monks 35-Upali 15 장
+Foremost-Monks 36-Nandaka 13 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 104 개 / 한글판 이야기 77 편
-공개 주소 확인: 200 1645708바이트
-이야기 Foremost-Monks/34-Sobhita {'pdf': 23158195, 'zip': 22894457, 'n': 14}
-이야기 Foremost-Monks/35-Upali {'pdf': 20447371, 'zip': 20182072, 'n': 15}
-책 Foremost-Monks {'pdf': 923221994, 'pdfs': 97359843, 'zip': 922732259, 'stories': 32, 'n': 663}
-내려받기 파일: 3 묶음 새로 만듦
-글로 보기: 77 이야기
+R2 에 올림: 72 개 / 한글판 이야기 78 편
+공개 주소 확인: 200 1763299바이트
+이야기 Foremost-Monks/36-Nandaka {'pdf': 20488910, 'zip': 20224611, 'n': 13}
+책 Foremost-Monks {'pdf': 943451322, 'pdfs': 99313751, 'zip': 942956561, 'stories': 33, 'n': 676}
+내려받기 파일: 2 묶음 새로 만듦
+글로 보기: 78 이야기
 41-Mogharaja
 13-Singalakamata
