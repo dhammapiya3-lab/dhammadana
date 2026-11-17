@@ -1,0 +1,471 @@
+[
+ {
+  "img": "images/06-Samuddaghosa-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     306,
+     272,
+     494,
+     358
+    ],
+    "ko": "사뭇다고사 자따까\n업이 이끈 긴 여정 이야기\n\n빤냐사 자따까, 제6권",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Samuddaghosa-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     24,
+     540,
+     134
+    ],
+    "ko": "제따와나에서 부처님께서는 비구들에게, 이번 생에만 야소다라를 얻으신 것이 아니라고 밝히셨습니다. 아득한 옛날에도 큰 왕실의 영화를 버리고 먼 나라까지 그녀를 찾아가셨다고.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Samuddaghosa-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     284,
+     306,
+     522,
+     394
+    ],
+    "ko": "브라흐마뿌라에서 태어난 보살은 ‘바다의 소리’라는 뜻의 사뭇다고사라는 이름을 받았습니다. 그가 태어난 날, 바다가 그의 힘 있는 업을 알아보고 거세게 출렁였습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Samuddaghosa-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     34,
+     430,
+     130
+    ],
+    "ko": "람마뿌라에서 반두마띠 공주는 왕자가 빼어나게 아름답다는 소문을 들었습니다. 황금 가마를 타고 데와꿀라 사당에 나아간 공주는, 이름만 들어도 가슴이 떨리는 그 사람을 얻겠다고 서원했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Samuddaghosa-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     274,
+     58,
+     478,
+     202
+    ],
+    "ko": "보이지 않는 힘에 이끌려 사뭇다고사는 백 요자나를 건너갔습니다. 그의 매혹적인 류트 소리가 시리시하나굿따 왕의 마음을 사로잡아 반두마띠와 혼인하게 되었습니다. 금 그릇에서 부은 물로 왕실의 혼인이 맺어졌습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Samuddaghosa-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     92,
+     266,
+     340,
+     366
+    ],
+    "ko": "하늘을 나는 두 마법사가 한 여인을 두고 싸웠습니다. 진 라나비무카가 왕자의 정원에 떨어졌는데, 피가 붉은 물감처럼 흘렀습니다. 보살은 약초로 그를 낫게 하고, 그 보답으로 힘 있는 마법의 칼을 받았습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Samuddaghosa-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     4,
+     728,
+     42
+    ],
+    "ko": "칼을 쥔 부부는 하늘로 날아올랐습니다. 새 사람들의 황금 도성에서 쉬고, 아노땃따 호수의 보석 나루에서 몸을 씻은 뒤, 거룩한 히마완따로 날아갔습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Samuddaghosa-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     352,
+     690,
+     436
+    ],
+    "ko": "찻단따 호수에 내려오자 보살의 기억이 펼쳐졌습니다.\n“나는 여기서 옛날 나가 왕이었고, 나의 왕비여, 그대는 수밧다였소.”\n두 사람은 빛나는 녹주석 널빤지 위에서 고요히 쉬었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Samuddaghosa-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     348,
+     566,
+     424
+    ],
+    "ko": "지나가던 마법사가 지키는 이 없던 칼을 훔쳐 갔습니다.\n날 수 없게 된 두 사람은 성난 바다에 떨어져, 썩은 목화나무 둥치에 매달려 어둡고 거친 물을 건너야 했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Samuddaghosa-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     190,
+     510,
+     270
+    ],
+    "ko": "통나무가 부서져 둘은 헤어졌습니다.\n왜 이런 비극이? 전생에 장난꾸러기\n부부가 겁먹은 사미의 배를 장난삼아\n뒤집었는데, 이 무심한 잔인함이\n오랜 바다의 고통을 낳았습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Samuddaghosa-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     140,
+     316,
+     252
+    ],
+    "ko": "이레 동안 바다의 여신 마니메칼라가 소임을 게을리했습니다. 신들의 왕 삭까에게 크게 꾸지람을 듣자, 겁먹은 마법사 도둑은 빛나는 칼을 애쓰는 보살에게 돌려주었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Samuddaghosa-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     272,
+     274,
+     748,
+     360
+    ],
+    "ko": "문다랏타의 바닷가에 닿은 비탄의 왕비는 칠 층짜리 큰 집을 짓게 했습니다. 그 벽에는 두 사람의 사랑과 비행과 난파를 있는 그대로 새겼습니다. 잃어버린 남편을 잡으려고 친 기억의 큰 그물이었습니다.",
+    "cover": [
+     228,
+     168,
+     140
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Samuddaghosa-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     44,
+     332,
+     134
+    ],
+    "ko": "떠돌이 바라문으로 변장한 사뭇다고사가 그 집에 들어왔습니다. 자기들의 비극을 새긴 그림을 보고 그는 소리 내어 울었습니다. 그를 알아본 왕비는 발아래 엎드렸습니다. 업의 빚이 마침내 다 갚아졌습니다.",
+    "cover": [
+     214,
+     180,
+     140
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Samuddaghosa-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     28,
+     650,
+     146
+    ],
+    "ko": "왕의 모습을 되찾은 사뭇다고사는 돌아와 두 나라를 지극히 바르게 다스렸습니다. 그는 큰 보시당 여섯 곳을 세워, 남은 평생 동안 큰 공덕과 보시를 이어 갔습니다.",
+    "cover": [
+     236,
+     228,
+     214
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Samuddaghosa-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     116,
+     152,
+     138
+    ],
+    "ko": "시리시하나굿따 왕",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     132,
+     164,
+     210,
+     186
+    ],
+    "ko": "마법사 도둑",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     40,
+     212,
+     146,
+     234
+    ],
+    "ko": "까나까와띠 왕비",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     126,
+     268,
+     212,
+     302
+    ],
+    "ko": "바다의 여신\n마니메칼라",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     36,
+     306,
+     150,
+     330
+    ],
+    "ko": "반두마띠 공주",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     48,
+     380,
+     136,
+     402
+    ],
+    "ko": "사뭇다고사",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     606,
+     125,
+     756,
+     148
+    ],
+    "ko": "사리뿟따와 데와닷따",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     584,
+     214,
+     774,
+     236
+    ],
+    "ko": "마하빠자빠띠와 웁빨라완나",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     530,
+     280,
+     598,
+     302
+    ],
+    "ko": "부처님",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     668,
+     308,
+     736,
+     330
+    ],
+    "ko": "야소다라",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     290,
+     334,
+     512,
+     448
+    ],
+    "ko": "스승께서 다시 태어남을 밝히셨습니다:\n시리시하나굿따 → 사리뿟따\n마법사 도둑 → 데와닷따\n까나까와띠 → 마하빠자빠띠 고따미\n마니메칼라 → 웁빨라완나\n반두마띠 → 야소다라\n사뭇다고사 → 부처님",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ }
+]
