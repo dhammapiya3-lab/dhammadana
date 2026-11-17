@@ -1,0 +1,359 @@
+[
+ {
+  "img": "images/36-Nandaka-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     286,
+     174,
+     518,
+     278
+    ],
+    "ko": "난다까 장로\n가르침을 펴는 데 으뜸\n지난 서원, 왕실의 인연,\n그리고 궁극의 해탈 이야기",
+    "cover": [
+     222,
+     158,
+     73
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Nandaka-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     526,
+     256,
+     740,
+     384
+    ],
+    "ko": "옛 항사와띠의 한 귀족이\n빠두뭇따라 부처님께서\n한 비구를 칭찬하시는\n것을 보고, 언젠가\n비구니를 가르치는 데\n으뜸이 되기를 서원했습니다.",
+    "cover": [
+     227,
+     188,
+     127
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Nandaka-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     336,
+     50,
+     464,
+     372
+    ],
+    "ko": "사왓티에\n다시 태어난\n난다까는\n법을\n들었습니다.\n세속의 재물을\n버린 그는\n아라한이\n되어, 전생을\n기억하는\n깊은 힘을\n일깨웠습니다.",
+    "cover": [
+     43,
+     38,
+     50
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Nandaka-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     54,
+     256,
+     132
+    ],
+    "ko": "사꺄족과 꼴리야족,\n두 부족이\n전쟁 직전에 섰습니다.",
+    "cover": [
+     194,
+     136,
+     50
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     552,
+     56,
+     740,
+     128
+    ],
+    "ko": "모자라는 로히니 강의\n물을 끌어갈 권리를\n두고 다투었습니다.",
+    "cover": [
+     194,
+     136,
+     53
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Nandaka-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     252,
+     326,
+     548,
+     428
+    ],
+    "ko": "부처님께서 나서시어 무사들을\n달래셨습니다. 평화를 굳히려고\n왕자 500명이 세속을 떠났습니다.\n숲으로 이끌려 가, 마침내\n아라한이 되었습니다.",
+    "cover": [
+     216,
+     177,
+     120
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Nandaka-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     286,
+     40,
+     514,
+     140
+    ],
+    "ko": "남편들이 떠나자 사꺄족 아내 500명은\n궁전에서도 기쁨을 찾지 못했습니다.\n그들은 마하빠자빠띠 고따미에게 모여\n승가에 들게 해 달라고 간청했습니다.",
+    "cover": [
+     92,
+     52,
+     19
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Nandaka-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     328,
+     550,
+     428
+    ],
+    "ko": "마하빠자빠띠를 따라 그들은\n첫 비구니가 되었습니다. 검소한 삶을\n받아들이고, 장로 비구들의 가르침을\n간절히 기다렸습니다.",
+    "cover": [
+     218,
+     160,
+     81
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Nandaka-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     252,
+     328,
+     548,
+     428
+    ],
+    "ko": "난다까는 이 비구니 500명이 전생에\n자기의 왕비들이었음을 알았습니다.\n오해와 추문을 염려한 그는\n다른 비구를 보내 가르치게 했습니다.",
+    "cover": [
+     214,
+     158,
+     84
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Nandaka-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     366,
+     44,
+     764,
+     160
+    ],
+    "ko": "비구니들은 난다까의 가르침을 간절히 바랐습니다.\n업의 인연을 아신 부처님께서 명하셨습니다.\n“난다까여, 비구니들을 몸소 가르쳐라.\n남을 보내지 마라.”",
+    "cover": [
+     60,
+     72,
+     46
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Nandaka-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     252,
+     326,
+     548,
+     428
+    ],
+    "ko": "열나흗날 난다까는 여섯 가지\n안의 감각 장소를 설했습니다. 그 말을\n들은 옛 왕비 500명이 모두\n수다원과를 얻었습니다.",
+    "cover": [
+     212,
+     158,
+     90
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Nandaka-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     326,
+     550,
+     428
+    ],
+    "ko": "부처님께서 난다까에게 이튿날 같은\n법문을 다시 하라 이르셨습니다.\n다시 들은 비구니 500명은\n완전히 깨달은 아라한이 되었습니다.",
+    "cover": [
+     208,
+     154,
+     84
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Nandaka-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     252,
+     300,
+     292
+    ],
+    "ko": "수다원",
+    "cover": [
+     231,
+     177,
+     115
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     252,
+     700,
+     292
+    ],
+    "ko": "아라한",
+    "cover": [
+     233,
+     175,
+     110
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     200,
+     316,
+     600,
+     442
+    ],
+    "ko": "부처님께서 난다까를 칭찬하셨습니다.\n“그의 첫 법문은 열나흗날 달과 같았고,\n두 번째 법문은 보름날의\n둥근 달과 같았다.”",
+    "cover": [
+     17,
+     39,
+     48
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Nandaka-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     320,
+     596,
+     436
+    ],
+    "ko": "옛 서원이 이루어졌습니다. 부처님께서\n난다까 장로를 비구니를 가르치는\n모든 비구 제자 가운데 으뜸이라고\n공식으로 선언하셨습니다.",
+    "cover": [
+     214,
+     159,
+     84
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
