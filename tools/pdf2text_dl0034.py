@@ -229,8 +229,8 @@ pg['paras'][0] = pg['paras'][0].replace('\n', ' ')   # 저작권 글: 가운데 
 # '속표지설명' 앞(저작권 글)과 뒤를 나눔
 ix = next(i for i, p in enumerate(pg['paras']) if plain(p).startswith('속표지설명'))
 rest = pg['paras'][ix].split('\n', 1)
-pg['paras'][ix:ix + 1] = ['## 속표지설명'] + ([rest[1]] if len(rest) > 1 else []); pg['kinds'][ix:ix + 1] = ['h'] + (['p'] if len(rest) > 1 else [])
-chapters.append(('저작권', len(PAGES) - 1, 0)); chapters.append(('속표지설명', len(PAGES) - 1, ix))
+pg['paras'][ix:ix + 1] = ['## 속표지 설명'] + ([rest[1]] if len(rest) > 1 else []); pg['kinds'][ix:ix + 1] = ['h'] + (['p'] if len(rest) > 1 else [])
+chapters.append(('저작권', len(PAGES) - 1, 0)); chapters.append(('속표지 설명', len(PAGES) - 1, ix))
 build(4, ''); chapters.append(('법보시', len(PAGES) - 1, 0))
 for n in range(5, 10):
     pg = build(n, '')

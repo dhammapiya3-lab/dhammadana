@@ -152,10 +152,13 @@ PAGES = []; chapters = []
 # 속표지 — 쪽 그대로 그림 (책 이름·장 이름·출판사 글자가 그림 안에 있음)
 P3 = doc[2]
 from PIL import Image
-pix = P3.get_pixmap(dpi=150, clip=P3.rect)
-Image.open(io.BytesIO(pix.tobytes('png'))).convert('RGB').save(os.path.join(UP, f'{BK}-title.jpg'), quality=85, optimize=True)
-images.append(f'/uploads/{BK}-title.jpg')
-PAGES.append(dict(lab='', paras=[f'![#대념처경 속표지](/uploads/{BK}-title.jpg)'], kinds=['img'], n=3)); chapters.append(('속표지', 0))
+pix = P3.get_pixmap(dpi=220, clip=P3.rect)
+from PIL import ImageChops
+_im = Image.open(io.BytesIO(pix.tobytes('png'))).convert('RGB')
+_bb = ImageChops.difference(_im, Image.new('RGB', _im.size, (255, 255, 255))).convert('L').point(lambda v: 255 if v > 12 else 0).getbbox()
+_im.crop(_bb).save(os.path.join(UP, f'{BK}-titlepage.jpg'), quality=85, optimize=True)   # 둘레 흰 여백은 잘라 냄 (회색 속표지만 크게)
+images.append(f'/uploads/{BK}-titlepage.jpg')
+PAGES.append(dict(lab='', paras=[f'![#대념처경 속표지](/uploads/{BK}-titlepage.jpg)'], kinds=['img'], n=3)); chapters.append(('속표지', 0))
 
 # 목차 PDF 4~7
 rows = []; prevy = None
