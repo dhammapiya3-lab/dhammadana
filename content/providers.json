@@ -291,15 +291,15 @@
     },
     {
       "id": "happyforest",
-      "name": "행복한숲 출판사",
+      "name": "행복한 숲",
       "kind": "출판사",
       "urls": [
         "https://cafe.daum.net/vipassanacenter"
       ],
       "partner": true,
       "aliases": [
-        "행복한 숲",
         "행복한숲",
+        "행복한숲 출판사",
         "도서출판 행복한 숲",
         "행복한 숲 출판사"
       ],
