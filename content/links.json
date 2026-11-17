@@ -203,6 +203,12 @@
           "lang": "빠알리 삼장 & 번역"
         },
         {
+          "name": "myDhamma",
+          "url": "https://mydhamma.web.app/open/",
+          "note": "빠알리 삼장 원문과 번역, 보호경(빠릿따) 독송, 사마디 수행 자료, 포살일 달력을 함께 보는 곳",
+          "lang": "빠알리 삼장 & 번역"
+        },
+        {
           "name": "GRETIL",
           "url": "https://gretil.sub.uni-goettingen.de/gretil.html#Suttapit",
           "note": "독일 괴팅겐 대학 도서관의 인도 고전어 전자 원문 모음 · 빠알리 삼장(율장·경장·논장)과 주석서·복주서·연대기·문법서 등 원문 파일, 빠알리 전체 한 번에 내려받기",
@@ -212,12 +218,6 @@
           "name": "6차 결집본 빠알리, 주석서, 복주석서 (Gemini Notebook)",
           "url": "https://notebook.google.com/notebook/820104f6-6471-46e7-a31a-790c2e22f371",
           "note": "6차 결집본 빠알리 삼장·주석서·복주석서 파일(소스 144개)을 모아 둔 공개 Gemini 노트북 · 묻고 답하며 원문을 찾아볼 수 있음 (Google 계정으로 로그인, AI 답변은 원문과 대조해 확인)",
-          "lang": "빠알리 삼장 & 번역"
-        },
-        {
-          "name": "myDhamma",
-          "url": "https://mydhamma.web.app/open/",
-          "note": "빠알리 삼장 원문과 번역, 보호경(빠릿따) 독송, 사마디 수행 자료, 포살일 달력을 함께 보는 곳",
           "lang": "빠알리 삼장 & 번역"
         },
         {
