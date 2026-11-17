@@ -216,11 +216,12 @@ chapters = []   # (title, page index, para index)
 pg = {'lab': '', 'paras': [], 'fns': [], 'n': 2, 'kinds': [], 'y': []}
 P2 = doc[1]
 info = [i for i in P2.get_image_info()]
-pg['paras'].append('^^ ' + ' '.join(re.sub(r'\s+', ' ', P2.get_text()).split()))
-log['속표지 제목'] += 1
-# 사자상만 잘라 그림으로 (쪽 아래쪽 가운데)
-lion = render(2, fitz.Rect(135, 420, 245, 600), f'{BK}-lion.png', 300)
-pg['paras'].append(f'![#아소카 왕의 사자상]({lion})'); pg['kinds'] += ['p', 'img']
+# 속표지 쪽은 원본 그대로 한 장의 그림으로 (제목 상자 + 사자상 — 운영자 요청, 2026-11-17)
+pix = P2.get_pixmap(dpi=150, clip=P2.rect)
+from PIL import Image
+Image.open(io.BytesIO(pix.tobytes('png'))).convert('L').save(os.path.join(UP, f'{BK}-title.jpg'), quality=85, optimize=True)
+images.append(f'/uploads/{BK}-title.jpg'); log['그림(표)'] += 1
+pg['paras'].append(f'![#The Workings of Kammas](/uploads/{BK}-title.jpg)'); pg['kinds'] += ['img']
 PAGES.append(pg); chapters.append(('속표지', 0, 0))
 
 pg = build(3, '')
