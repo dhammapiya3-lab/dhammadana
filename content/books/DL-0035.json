@@ -94,10 +94,10 @@
         "created": ""
       },
       "hwp": {
-        "mode": "none",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "hwp/DL-0035/DL-0035_초판.hwp"
       },
       "reader": false,
       "sources": [
