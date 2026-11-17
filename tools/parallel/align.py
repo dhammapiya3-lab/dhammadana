@@ -23,6 +23,7 @@ ap.add_argument('--gl-end', default=None, help='용어 풀이가 끝난 뒤 첫 
 ap.add_argument('--gl-nl', action='store_true', help="용어 풀이가 '낱말(roman)⏎풀이' 모양(DL-0011) — 쪽에서 잘린 낱말 조각('**웨**' + '**다나(vedanā)**')도 이어 읽음")
 ap.add_argument('--pin', action='append', default=[], help='짝을 손으로 정함: "한국어 열쇠+…=원서 번호+…" (예 "1:0=0+1" 속표지 ↔ 원서 제목·지은이). 원서 쪽을 비우면("2:0+2:1=") 그 한국어 문단은 짝 없음');
 ap.add_argument('--fnpin', action='append', default=[], help='각주 짝을 손으로: "한국어 각주 번호=원서 각주 번호" (예 "40=33")');
+ap.add_argument('--ko-skip', action='append', default=[], help="원서에 없는 한국어 부분을 짝짓기에서 뺌: '시작 정규식|끝 정규식' (끝 문단은 남김, 끝을 비우면 책 끝까지) — 예 DL-0012 부록 2~역자 후기")
 ap.add_argument('--toc', action='store_true', help='차례도 줄마다 짝지음 — 한국어 차례(%% 문단)의 제목 줄 ↔ 원서 차례(k toc) 항목, 쪽 번호는 빼고 제목끼리 (운영자 요청, 2026-11-17)')
 ap.add_argument('--title', default=''); ap.add_argument('--by', default=''); ap.add_argument('--source', default='')
 A = ap.parse_args()
@@ -62,6 +63,13 @@ if A.gl_start: GL0 = next((i for i, p in enumerate(KO) if re.search(A.gl_start, 
 GLE = len(KO)
 if A.gl_end: GLE = next((i for i, p in enumerate(KO) if i > GL0 and re.search(A.gl_end, p['t'])), len(KO))
 KO_GL = KO[GL0:GLE]; KO_DP = KO[:GL0]
+for sk in A.ko_skip:   # 원서에 없는 부분(--ko-skip)
+    s0, _, s1 = sk.partition('|')
+    i0 = next((i for i, p in enumerate(KO_DP) if re.search(s0, p['t'])), None)
+    if i0 is None: sys.exit('--ko-skip 시작을 찾지 못함: ' + s0)
+    i1 = next((i for i, p in enumerate(KO_DP) if i > i0 and s1 and re.search(s1, p['t'])), len(KO_DP))
+    print('짝짓기에서 뺀 한국어 문단', i1 - i0, ':', KO_DP[i0]['key'], '…', KO_DP[i1 - 1]['key'])
+    KO_DP = KO_DP[:i0] + KO_DP[i1:]
 SPL = re.compile(r'(?<=[.?!。…])(?:[”’"\')\]]*)\s+|\n')
 
 

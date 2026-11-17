@@ -1,4 +1,19 @@
 {
   "_설명": "원서 대조 차례에서 손으로 정한 짝 — 책마다 [한국어 차례 제목, 원서 차례 제목(쪽 번호 빼고)]. toc.py 가 읽음 (2026-11-17)",
-  "DL-0013": [["1. 사띠빳타나 수행", "Mindfulness Meditation (Satipaṭṭhāna)"]]
+  "DL-0013": [
+    [
+      "1. 사띠빳타나 수행",
+      "Mindfulness Meditation (Satipaṭṭhāna)"
+    ]
+  ],
+  "DL-0012": [
+    [
+      "제6장 : 마음의 기능을 예리하게 하는",
+      "Nine Ways to Sharpen the Mental Faculties"
+    ],
+    [
+      "부록 1",
+      "Appendix—Meditation Guidelines"
+    ]
+  ]
 }

@@ -17,8 +17,10 @@
     }
   ],
   "book_type": "법문집",
-  "original_title": "",
-  "original_language": [],
+  "original_title": "Vipassanā Meditation — Lectures on Insight Meditation",
+  "original_language": [
+    "영어"
+  ],
   "original_source": "Vipassanā Meditation",
   "series": "",
   "main": [],
@@ -98,5 +100,15 @@
   "order": null,
   "hidden": false,
   "hide_update": false,
-  "provider_chip": true
+  "provider_chip": true,
+  "parallel_editions": [
+    {
+      "lang": "en",
+      "title": "Vipassanā Meditation — Lectures on Insight Meditation",
+      "by": "Venerable Chanmyay Sayadaw",
+      "edition": "Chanmyay Yeiktha Meditation Centre (Yangon, Myanmar) 법보시판 · © 2017 Chanmyay Yeiktha Sodality · CC BY-NC-SA 4.0 · Printed by Swel Taw Color Offset Printing (Yangon) · PDF",
+      "url": "",
+      "note": "'영어 원서 N쪽'은 이 판에 인쇄된 쪽 번호. 이 판의 Preface(1985)·Acknowledgement(1992)는 한국어판 서문·일러두기와 같음"
+    }
+  ]
 }
