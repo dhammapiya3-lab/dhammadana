@@ -1,10 +1,10 @@
 {
 "Foremost-Monks": {
-"n": 663,
-"pdf": 923221994,
-"pdfs": 97359843,
-"stories": 32,
-"zip": 922732259
+"n": 676,
+"pdf": 943451322,
+"pdfs": 99313751,
+"stories": 33,
+"zip": 942956561
 },
 "Foremost-Monks/01-Kondanna": {
 "n": 38,
@@ -165,6 +165,11 @@
 "n": 15,
 "pdf": 20447371,
 "zip": 20182072
+},
+"Foremost-Monks/36-Nandaka": {
+"n": 13,
+"pdf": 20488910,
+"zip": 20224611
 },
 "Foremost-Nuns": {
 "n": 283,
