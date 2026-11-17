@@ -1,0 +1,375 @@
+[
+ {
+  "img": "images/35-Upali-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     260,
+     321
+    ],
+    "shape": "box",
+    "en": "The Master of Discipline The Karmic Journey ano Wisdom of Venerable Upali",
+    "ko": "율의 달인\n우빨리 장로의\n업의 여정과 지혜",
+    "align": "center",
+    "em": 24
+   }
+  ]
+ },
+ {
+  "img": "images/35-Upali-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     557,
+     119
+    ],
+    "shape": "bubble",
+    "en": "In Hamsavati, worthy man witnessed Buddha Padumuttara honor monastic for upholding the Vinaya. Offering great gifts, he made timeless vow to achieve this same title.",
+    "ko": "항사와띠의\n한 훌륭한 사람이\n빠두뭇따라 부처님께서\n율(Vinaya)을 지키는\n비구를 칭찬하시는 것을\n보았습니다. 큰 공양을\n올리며 바로 그 칭호를\n서원했습니다.",
+    "align": "center",
+    "em": 16
+   }
+  ]
+ },
+ {
+  "img": "images/35-Upali-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     233,
+     327
+    ],
+    "shape": "box",
+    "en": "Reborn as Upali in the barber caste, he humbly served six noble Sakyan princes. life of quiet duty laid the foundation for his profound mastery.",
+    "ko": "이발사 계급의 우빨리로 다시 태어난 그는\n사꺄족 왕자 여섯을 겸손히 모셨습니다.\n묵묵히 소임을 다한 삶이 뒷날\n깊은 통달의 바탕이 되었습니다.",
+    "align": "center",
+    "em": 16
+   }
+  ]
+ },
+ {
+  "img": "images/35-Upali-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     91,
+     107
+    ],
+    "shape": "bubble",
+    "en": "At the Anupiya Mango grove, the princes and their barber renounced worldly life. Embracing the Buddha’s path, Upali donned the bright orange robes of monastic.",
+    "ko": "아누삐야\n망고 숲에서\n왕자들과\n그들의 이발사가\n세속을\n떠났습니다.\n부처님의 길을\n받아들인\n우빨리는\n밝은 주황색\n가사를\n입었습니다.",
+    "align": "center",
+    "em": 18
+   }
+  ]
+ },
+ {
+  "img": "images/35-Upali-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     271,
+     36
+    ],
+    "shape": "bubble",
+    "en": "Upali requested forest isolation. The Buddha offered choice: the forest brings only insight, but staying near the Buddha yields both profound insight and supreme scholastic learning.",
+    "ko": "우빨리는 숲에 홀로 머물기를 청했습니다.\n부처님께서 선택을 주셨습니다. 숲에서는\n통찰만 얻지만, 부처님 곁에 머물면\n깊은 통찰과 으뜸가는 교학을 함께 얻는다고.",
+    "align": "center",
+    "em": 16
+   }
+  ]
+ },
+ {
+  "img": "images/35-Upali-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     111,
+     361
+    ],
+    "shape": "box",
+    "en": "Choosing the path of learning, Upali achieved Arahatship. The Buddha personally imparted the extensive Vinaya, forging master of monastic law.",
+    "ko": "배움의 길을 고른 우빨리는 아라한이 되었습니다. 부처님께서\n몸소 방대한 율을 전하시어, 승가 법도의 달인을 길러 내셨습니다.",
+    "align": "center",
+    "em": 17
+   }
+  ]
+ },
+ {
+  "img": "images/35-Upali-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     513,
+     121
+    ],
+    "shape": "bubble",
+    "en": "monastic from the seaport Bharukaccha dreamt of his former wife Consumed by guilt, he believed his vows were broken and sought to leave the Sangha",
+    "ko": "바닷가 항구\n바루깟차의 한 비구가\n옛 아내의 꿈을 꾸었습니다.\n죄책감에 시달린 그는\n계를 어겼다고 여겨\n승가를 떠나려 했습니다.",
+    "align": "center",
+    "em": 20
+   }
+  ]
+ },
+ {
+  "img": "images/35-Upali-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     90,
+     312,
+     222
+    ],
+    "ko": "우빨리가 그를 막으며 말했습니다.\n꿈에는 깨어 있는 의도가 없다.\n의도가 없으니 어긴 계도 없다.\n몸의 현실과 밤의 환영은\n전혀 다르다.",
+    "cover": [
+     205,
+     164,
+     70
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/35-Upali-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     356,
+     756,
+     420
+    ],
+    "ko": "웨살리에서 죽어 가던 재가자가 아주까 장로에게, 재산을 삼보를\n공경하는 상속자에게만 주라고 맡겼습니다. 아주까는 바르게 조카를 골랐습니다.",
+    "cover": [
+     217,
+     177,
+     128
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     130,
+     320,
+     226,
+     350
+    ],
+    "ko": "조카",
+    "cover": [
+     220,
+     175,
+     77
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     320,
+     320,
+     480,
+     350
+    ],
+    "ko": "아주까 장로",
+    "cover": [
+     218,
+     175,
+     79
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     556,
+     320,
+     720,
+     350
+    ],
+    "ko": "친아들",
+    "cover": [
+     218,
+     174,
+     79
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/35-Upali-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     242,
+     56
+    ],
+    "shape": "box",
+    "en": "The biological son protested to Ven. Ananda. Without examining the underlying instructions, Ananda hastily declared Ven. Ajjuka fallen from monastic life for misdirecting the inheritance.",
+    "ko": "친아들이 아난다 장로에게 항의했습니다.\n아난다는 유언의 속뜻을 살피지 않고, 상속을\n잘못 이끌었다며 아주까 장로가 비구의\n자리를 잃었다고 서둘러 판정했습니다.",
+    "align": "center",
+    "em": 15
+   }
+  ]
+ },
+ {
+  "img": "images/35-Upali-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     432,
+     280,
+     728,
+     392
+    ],
+    "ko": "우빨리가 나서서 아난다에게 물었습니다.\n“비구가 죽어 가는 사람의 유언을\n그대로 따랐다면 무슨 허물이 있습니까?”\n아난다가 인정했습니다.\n허물은커녕 가벼운 잘못조차 없다고.",
+    "cover": [
+     221,
+     167,
+     44
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/35-Upali-12-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     254,
+     142
+    ],
+    "shape": "box",
+    "en": "Bharukaccha Act: Sexual dream.",
+    "ko": "바루깟차의 일:\n음욕의 꿈",
+    "align": "center",
+    "em": 18
+   },
+   {
+    "seed": [
+     496,
+     142
+    ],
+    "shape": "box",
+    "en": "Verdict: Blameless (No waking volition).",
+    "ko": "판정: 허물없음\n(깨어 있는 의도 없음)",
+    "align": "center",
+    "em": 16
+   },
+   {
+    "seed": [
+     208,
+     281
+    ],
+    "shape": "box",
+    "en": "Vesali Nee Act: Disputed wealth.",
+    "ko": "웨살리의 일:\n다투는 재산",
+    "align": "center",
+    "em": 18
+   },
+   {
+    "seed": [
+     117,
+     381
+    ],
+    "shape": "box",
+    "en": "True discipline demands evaluating intent, not just superficial appearances",
+    "ko": "참된 계율은 겉모습이 아니라 의도를 살피는 것입니다.",
+    "align": "center",
+    "em": 17
+   },
+   {
+    "rect": [
+     478,
+     276,
+     668,
+     334
+    ],
+    "ko": "판정: 허물없음\n(유언을 따름)",
+    "cover": [
+     245,
+     232,
+     200
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/35-Upali-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     474,
+     212,
+     736,
+     394
+    ],
+    "ko": "이 판정들을 들으신\n부처님께서 우빨리의\n빈틈없는 판단을 칭찬하시며,\n그의 율의 지혜를\n끝없는 하늘에 남은\n보이지 않는 발자국을\n좇는 일에 견주셨습니다.",
+    "cover": [
+     107,
+     153,
+     176
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/35-Upali-14-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     293,
+     345
+    ],
+    "shape": "box",
+    "en": "Before re este Sai he Buddha uddha officially declared Upali foremost (etad-agga) among monastics who strictly uphold the Vinaya. The ancient vow of Harhsava was fulfilled.",
+    "ko": "부처님께서 승가 앞에서 우빨리를 율을 엄격히 지키는\n비구 가운데 으뜸(etad-agga)이라 공식으로 선언하셨습니다.\n항사와띠의 옛 서원이 이루어졌습니다.",
+    "align": "center",
+    "em": 17
+   }
+  ]
+ },
+ {
+  "img": "images/35-Upali-15-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     234,
+     341
+    ],
+    "shape": "box",
+    "en": "Venerable Upali remains the eternal guardian of discipline. His journey teaches that true monastic law is guided by profound, compassionate insight, never rigid blindness.",
+    "ko": "우빨리 장로는 영원한 계율의 수호자입니다.\n참된 승가의 법도는 굳은 맹목이 아니라\n깊고 자비로운 통찰이 이끕니다.",
+    "align": "center",
+    "em": 17
+   }
+  ]
+ }
+]
