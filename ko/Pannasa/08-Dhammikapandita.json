@@ -1,0 +1,659 @@
+[
+ {
+  "img": "images/08-Dhammikapandita-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     282,
+     246,
+     522,
+     298
+    ],
+    "ko": "담미까빤디따\n왕 이야기",
+    "cover": [
+     157,
+     84,
+     47
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     282,
+     298,
+     522,
+     352
+    ],
+    "ko": "빤냐사 자따까 제8권\n공덕과 재물, 그리고 천상에 오름",
+    "cover": [
+     154,
+     81,
+     45
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     344,
+     604,
+     432
+    ],
+    "ko": "메가와띠에서 한 부유한 장자가 정자를 짓고 이레 동안 승가에 여덟 가지 필수품을 올렸습니다. 스승께서는 그를 칭찬하시며, 옛 현자들도 이와 같은 보시를 했다고 말씀하셨습니다.",
+    "cover": [
+     233,
+     209,
+     174
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     354,
+     600,
+     436
+    ],
+    "ko": "부처님께서 지난 일을 들려주셨습니다. 담미까빤디따 왕은 바라나시를 바르게 다스렸습니다. 왕은 정비 수담마와 함께 큰 정자를 세우고, 이레 동안 백성에게 큰 보시를 베풀었습니다.",
+    "cover": [
+     230,
+     206,
+     168
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     360,
+     604,
+     438
+    ],
+    "ko": "왕의 큰 보시에 큰 땅이 흔들렸습니다. 바다가 솟구치고, 시네루 산이 젖은 죽순처럼 휘었으며, 때아닌 번개가 쳤습니다. 천상에서는 삭까의 자리가 뜨거워졌습니다.",
+    "cover": [
+     233,
+     215,
+     186
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     348,
+     734,
+     430
+    ],
+    "ko": "미래의 부처님을 알아본 삭까는 일곱 가지 보배로 꾸민 수레 궁전을 만들었습니다. 삭까는 천상 세계에서 내려와 담미까빤디따 왕 앞에 서서 왕을 천상으로 초대했습니다.",
+    "cover": [
+     229,
+     202,
+     159
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     348,
+     734,
+     430
+    ],
+    "ko": "보살은 하늘 수레에 올랐습니다. 천상 세계에 이른 그는 보석으로 꾸민 수많은 황금 궁전을 보고 놀라, 신들이 어떤 공덕으로 이런 영화를 얻었는지 삭까에게 물었습니다.",
+    "cover": [
+     225,
+     197,
+     154
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     264,
+     32,
+     536,
+     62
+    ],
+    "ko": "공덕의 건축",
+    "cover": [
+     220,
+     190,
+     147
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     170,
+     70,
+     640,
+     92
+    ],
+    "ko": "삭까는 세간의 보시가 어떻게 천상의 건물로 나타나는지 설명했습니다.",
+    "cover": [
+     233,
+     217,
+     192
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     60,
+     208,
+     138,
+     254
+    ],
+    "ko": "세간의\n보시",
+    "cover": [
+     229,
+     212,
+     185
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     660,
+     208,
+     742,
+     254
+    ],
+    "ko": "천상의\n과보",
+    "cover": [
+     230,
+     213,
+     186
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     474,
+     216,
+     626,
+     240
+    ],
+    "ko": "빛나는 궁전",
+    "cover": [
+     235,
+     218,
+     192
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     474,
+     362,
+     626,
+     386
+    ],
+    "ko": "보석 궁전",
+    "cover": [
+     234,
+     218,
+     192
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     128,
+     390,
+     362,
+     414
+    ],
+    "ko": "다리와 정자 → 빛나는 궁전",
+    "cover": [
+     220,
+     189,
+     148
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     428,
+     390,
+     666,
+     414
+    ],
+    "ko": "그릇과 등불 → 보석 궁전",
+    "cover": [
+     220,
+     190,
+     147
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     334,
+     734,
+     426
+    ],
+    "ko": "삭까는 보살에게 선물로 준 궁전에 영원히 머물라고 권했습니다. 그러나 보살은 이 수레와 재물이 남이 건네준, 빌린 것일 뿐임을 알았습니다. 그는 스스로 짓지 않은 과보를 정중히 사양했습니다.",
+    "cover": [
+     162,
+     88,
+     51
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     244,
+     4,
+     556,
+     40
+    ],
+    "ko": "두 가지 재물",
+    "cover": [
+     138,
+     66,
+     36
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     60,
+     58,
+     360,
+     86
+    ],
+    "ko": "빌린 재물",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     440,
+     58,
+     740,
+     86
+    ],
+    "ko": "특별한 재물",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     60,
+     404,
+     740,
+     446
+    ],
+    "ko": "참된 공덕은 남이 줄 수 없습니다. 보살은 특별한 재물, 곧 자기 행위로 지은 공덕을 택했습니다. 그는 인간 세상으로 돌아가 보시와 계와 수행(bhāvanā)을 닦기로 했습니다.",
+    "cover": [
+     139,
+     87,
+     50
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     370,
+     760,
+     430
+    ],
+    "ko": "바라나시로 돌아온 대인(보살)은 천상 세계의 영화, 곧 궁전과 소원을 들어주는 나무와 천상의 음악을 들려주었습니다. 감화된 백성들은 남은 평생을 공덕 짓는 데 바쳐 스스로 천상에 태어났습니다.",
+    "cover": [
+     221,
+     200,
+     170
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     48,
+     650,
+     88
+    ],
+    "ko": "사성제의 수레바퀴",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     170,
+     86,
+     630,
+     114
+    ],
+    "ko": "부처님께서는 궁극의 법을 가르치며 마치셨습니다:",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     100,
+     144,
+     268,
+     190
+    ],
+    "ko": "1. 괴로움\n(세 가지 존재의 괴로움)",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     540,
+     144,
+     690,
+     190
+    ],
+    "ko": "2. 일어남\n(갈애)",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     120,
+     258,
+     258,
+     304
+    ],
+    "ko": "3. 소멸\n(열반)",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     540,
+     258,
+     690,
+     304
+    ],
+    "ko": "4. 길\n(성스러운 팔정도)",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Dhammikapandita-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     70,
+     196,
+     96
+    ],
+    "ko": "과거",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     594,
+     70,
+     680,
+     96
+    ],
+    "ko": "현재",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     226,
+     46,
+     574,
+     124
+    ],
+    "ko": "자따까 다시 태어남의 지도\n과거의 인물들이 밝혀졌습니다:",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     272,
+     128,
+     528,
+     154
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     272,
+     156,
+     528,
+     180
+    ],
+    "ko": "삭까는 지금의 아누룻다",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     272,
+     240,
+     528,
+     264
+    ],
+    "ko": "수담마는 지금의 야소다라",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     258,
+     326,
+     542,
+     376
+    ],
+    "ko": "담미까빤디따 왕은 여래,\n스스로 완전히 깨달으신 분",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ }
+]
