@@ -113,6 +113,15 @@ const wideCover = c => { const z = imgSize(c); return z && z.w > z.h * 1.15 ? z 
 // 펼친 표지가 아닌데 가로가 넓은(세로보다 0.9배 넘게) 표지는 책 카드에서 가운데가 보이게 (운영자 요청, 2026-11-16 — 『불자수첩』)
 const ctrCover = c => { const z = imgSize(c); return z && z.w > z.h * 0.9 && z.w <= z.h * 1.15 ? ' style="object-position:center"' : ''; };
 const fileUrl = u => !u ? '' : /^https?:\/\//.test(u) ? u : S.files_base.replace(/\/$/, '') + '/' + u.replace(/^\//, '');
+// 원서 파일 (운영자 요청, 2026-11-18): 책 JSON originals [{lang, mode: file|link, url, site}] → 책 소개 '원서(미얀마어) 내려받기'
+const OLC = { 빠알리어: 'pi', 영어: 'en', 미얀마어: 'my', 태국어: 'th', 싱할라어: 'si', 기타: 'etc' };
+const origsOf = b => (b.originals || []).filter(o => o && o.lang && o.mode !== 'none' && String(o.url || '').trim()).map(o => {
+  const u = String(o.url).trim();
+  if (o.mode === 'link' || /^https?:\/\//.test(u)) return { lang: o.lang, url: fileUrl(u), ext: o.mode === 'link', site: o.site || '' };
+  const kind = 'orig_' + (OLC[o.lang] || 'etc'), x = (/\.(\w+)$/.exec(u) || [, 'pdf'])[1].toLowerCase();
+  (DOWNLOADS[b.id] = DOWNLOADS[b.id] || {})[kind] = { key: u.replace(/^\//, ''), name: safeName(`${b.title}_원서_${o.lang}`) + '.' + x };
+  return { lang: o.lang, url: `/download/${b.id}/${kind}`, ext: false, site: '' };
+});
 function formats(b) {
   const e = curEd(b), f = [];
   const ok = x => x && x.mode && x.mode !== 'none' && x.url;
@@ -637,7 +646,7 @@ for (const b of BOOKS) {
       { h: '판', get: x => x.label, always: 1 }, { h: '발행일', get: x => pubDate(x), always: 1 }, { h: '쪽수', get: x => x.page_count ? x.page_count + '쪽' : '', always: 1 },
       { h: '출판사', get: x => x.publisher_print }, { h: 'ISBN', get: x => x.isbn }, { h: '공개', get: statusCell, always: 1, html: 1 }]).replace('<h4 class="ed-h">판</h4>', ''));
   const pl = PLAYLISTS.find(p => p.teacher && p.teacher === b.teacher);
-  const extF = f.filter(x => x.ext);
+  const extF = [...f.filter(x => x.ext), ...origsOf(b).filter(x => x.ext && x.site)];
   put(`book/${b.id}/index.html`, layout({
     title: b.title, nav: 'library', page: 'book', image: b.cover || '', ld: bookLd(b, e, t), desc: `${b.title} — ${b.byline}${b.translator ? ', ' + b.translator : ''}`, body: `<div class="wrap detail">
   <div><div class="cover-box${wideCover(b.cover) ? ' wide' : ''}"${wideCover(b.cover) ? ` style="aspect-ratio:${Math.round(wideCover(b.cover).w / 2)}/${wideCover(b.cover).h}"` : ''}>${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지">` : `<div class="cover-ph big">${esc(b.title)}</div>`}</div></div>
@@ -649,6 +658,7 @@ for (const b of BOOKS) {
     ${pl ? `<div style="margin:2px 0 8px"><a class="small" href="/dhammatalk/?pl=${pl.id}">▶ ${esc(t.name)}의 법문 바로 듣기</a></div>` : ''}
     </div><aside class="d-side"><div class="get-box"><div class="gb-title">이 책 읽어보기</div><div class="actions">${e.reader ? `<a class="btn" href="/read/${b.id}/">온라인으로 읽기</a>` : ''}${e.reader && AUDIO[b.id] ? (AUDIO[b.id].human ? `<a class="btn" href="/read/${b.id}/?audio=1" title="화면을 끄거나 다른 앱을 써도 계속 들립니다">🎧 오디오북으로 듣기</a>` : `<a class="btn" href="/read/${b.id}/?audio=1" title="기계 음성(TTS)으로 만든 오디오북입니다. 화면을 끄거나 다른 앱을 써도 계속 들립니다" aria-label="TTS 오디오북으로 듣기 (기계 음성)">🎧 TTS 오디오북으로 듣기</a>`) : ''}
       ${f.filter(x => x.k !== '온라인 읽기').map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">${x.name} 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>${x.name} 내려받기</a>`).join('')}
+      ${origsOf(b).map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">원서(${esc(x.lang)}) 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>원서(${esc(x.lang)}) 내려받기</a>`).join('')}
       ${(b.stores || []).filter(x => x && /^https?:\/\//.test(String(x.url || '').trim())).map(x => `<a class="btn ghost" href="${esc(String(x.url).trim())}" target="_blank" rel="noopener">${esc((x.name || '').trim() ? x.name.trim() + ' 바로가기' : '인터넷 서점 바로가기')} ↗</a>`).join('')}
       ${!f.length ? `<div class="soon-box">파일을 준비하고 있습니다.<br><span class="small">소식에서 올라오는 대로 알려 드립니다.</span></div>` : ''}</div>
     ${extF.length ? `<div class="small muted" style="margin-bottom:4px">↗ 표시된 파일은 ${esc(extF[0].site)}로 넘어가서 내려받습니다.</div>` : ''}

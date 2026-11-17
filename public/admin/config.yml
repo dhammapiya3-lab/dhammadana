@@ -106,6 +106,18 @@ collections:
           - { name: edition, label: 판본, required: false, hint: "출판사 · 판 · 펴낸 해 · 파일 종류 등 (예: Shwe Oo Min Dhamma Sukha Forest Center, 2판, 2010, PDF)" }
           - { name: url, label: 원본 출처, required: false, hint: "원서를 받을 수 있는 곳 주소 — https:// 로 시작 (선택)" }
           - { name: note, label: 메모, required: false, hint: "쪽 번호 기준 등 (선택)" }
+      - name: originals
+        label: 원서 파일
+        label_singular: 원서 파일
+        widget: list
+        required: false
+        summary: "원서({{fields.lang}}) {{fields.url}}"
+        hint: "책 소개 '이 책 읽어보기'에 '원서(미얀마어) 내려받기'처럼 단추로 보입니다. 파일은 책 파일 올리기 화면(/admin/upload/)에서 '원서'를 골라 올리면 여기에 저절로 들어갑니다."
+        fields:
+          - { name: lang, label: 원서 언어, widget: select, options: [빠알리어, 영어, 미얀마어, 태국어, 싱할라어, 기타] }
+          - { name: mode, label: 방식, widget: select, options: [{ label: "도서관 파일", value: file }, { label: "다른 사이트 링크", value: link }, { label: "숨김", value: none }], default: file }
+          - { name: url, label: 파일 위치 또는 주소, required: false, hint: "올리기 화면에서 올리면 저절로 채워집니다 (예: orig/DL-0005/DL-0005_원서_미얀마어.pdf). 다른 사이트면 https:// 주소" }
+          - { name: site, label: 사이트 이름, required: false, hint: "다른 사이트 링크일 때만 (예: sagarwarmyae.net)" }
       - { name: series, label: 총서·시리즈, required: false }
       - name: main
         label: 주요 자료
