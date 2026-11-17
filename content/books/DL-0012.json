@@ -110,5 +110,12 @@
       "url": "",
       "note": "'영어 원서 N쪽'은 이 판에 인쇄된 쪽 번호. 이 판의 Preface(1985)·Acknowledgement(1992)는 한국어판 서문·일러두기와 같음"
     }
+  ],
+  "originals": [
+    {
+      "lang": "영어",
+      "mode": "file",
+      "url": "orig/DL-0012/DL-0012_원서_영어.pdf"
+    }
   ]
 }
