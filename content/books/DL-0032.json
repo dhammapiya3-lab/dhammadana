@@ -13,6 +13,7 @@
   "provider": "senani",
   "press": false,
   "provider_chip": false,
+  "partner_chips": [],
   "paper": "",
   "paper_url": "",
   "stores": [],
@@ -21,6 +22,7 @@
   "original_language": [
     "영어"
   ],
+  "content_languages": [],
   "original_source": "Pa-Auk Tawya Meditation Centre, Daily Chants (3rd edition) Published by： Pa-Auk Forest Monastery (Main) Pa-Auk Tawya Meditation Centre (Pyin Oo Lwin) Pa-Auk Meditation Centre (Singapore) July 2023 (500 copies)",
   "parallel_editions": [
     {
@@ -74,7 +76,7 @@
         "mode": "file",
         "url": "pdf/DL-0032/DL-0032_개정판_인쇄용.pdf",
         "site": "",
-        "created": ""
+        "created": "2026년 6월 16일"
       },
       "pdf_cover": {
         "mode": "none",
@@ -89,10 +91,10 @@
         "created": ""
       },
       "hwp": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "hwp/DL-0032/DL-0032_개정판.hwp"
+        "url": "hwp/DL-0032/DL-0032_개정판.hwp",
+        "site": "",
+        "created": "2026년 6월 16일"
       },
       "reader": true,
       "sources": [
