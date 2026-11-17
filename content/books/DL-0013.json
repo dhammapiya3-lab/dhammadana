@@ -124,5 +124,12 @@
       "url": "",
       "note": "'영어 원서 N쪽'은 이 판에 인쇄된 쪽 번호 (PDF 파일 이름 Defilements_V1.1)"
     }
+  ],
+  "originals": [
+    {
+      "lang": "영어",
+      "mode": "file",
+      "url": "orig/DL-0013/DL-0013_원서_영어.pdf"
+    }
   ]
 }
