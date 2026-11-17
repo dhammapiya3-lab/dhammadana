@@ -416,15 +416,30 @@
 "zip": 18838833
 },
 "Pannasa": {
-"n": 15,
-"pdf": 19963379,
-"pdfs": 1980229,
-"stories": 1,
-"zip": 19709685
+"n": 57,
+"pdf": 74230506,
+"pdfs": 7109034,
+"stories": 4,
+"zip": 73961776
 },
 "Pannasa/01-King-Aditta": {
 "n": 15,
 "pdf": 19971683,
 "zip": 19709196
+},
+"Pannasa/02-Tulakapandita": {
+"n": 15,
+"pdf": 19695165,
+"zip": 19422618
+},
+"Pannasa/03-Sammajiva": {
+"n": 15,
+"pdf": 18895694,
+"zip": 18625944
+},
+"Pannasa/04-Arindama": {
+"n": 12,
+"pdf": 16465970,
+"zip": 16203512
 }
 }
