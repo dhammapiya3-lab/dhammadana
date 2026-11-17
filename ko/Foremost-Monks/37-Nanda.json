@@ -1,0 +1,306 @@
+[
+ {
+  "img": "images/37-Nanda-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     276,
+     279
+    ],
+    "shape": "box",
+    "en": "Purgative of Desire The Psychological Architecture of Ven. Nanda’s Awakening",
+    "ko": "욕망을 씻어 내는 약\n난다 장로의 깨달음을 이끈\n마음의 설계",
+    "align": "center",
+    "em": 24
+   }
+  ]
+ },
+ {
+  "img": "images/37-Nanda-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     530,
+     272,
+     760,
+     446
+    ],
+    "ko": "10만 겁 전,\n빠두뭇따라 부처님 앞에서\n한 젊은이가 오직 하나를\n서원했습니다. 감각 기능을\n지키는 데 으뜸이 되기를.\n부처님께서는 그 서원이\n앞날에 이루어지리라\n예언하셨습니다.",
+    "cover": [
+     44,
+     45,
+     80
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Nanda-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     4,
+     552,
+     138
+    ],
+    "ko": "이복형인 부처님보다 한 해 늦게 출가한\n난다 왕자는 힘겨워했습니다.\n자나빠다깔랴니 공주의 작별의 말이\n그를 떠나지 않았습니다. 불탄 깃털처럼\n오그라든 마음은 가르침에서 위안을\n찾지 못했고, 그는 승원에서 달아나려 했습니다.",
+    "cover": [
+     42,
+     42,
+     72
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Nanda-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     510,
+     50,
+     760,
+     432
+    ],
+    "ko": "부처님께서는\n의사의 방법으로\n난다의 절망을\n다루셨습니다.\n\n해로운 집착을 고치려면\n센 설사약이 필요했습니다.\n\n부처님께서는 더 강한\n천상의 욕망으로 세속의\n그리움을 씻어 내어,\n난다의 마음을 궁극의\n치료에 대비시키셨습니다.",
+    "cover": [
+     36,
+     67,
+     87
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Nanda-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     326,
+     752,
+     430
+    ],
+    "ko": "따와띵사 천상에 이끌려 간 난다의 아름다움의 기준이 무너졌습니다.\n그는 털어놓았습니다. 비둘기 발처럼 붉은 발을 가진 이 천녀들 곁에서는,\n사랑하는 공주가 길에서 본 불에 그을린 상처 입은 원숭이 같다고.",
+    "cover": [
+     123,
+     38,
+     28
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Nanda-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     300,
+     118,
+     506,
+     332
+    ],
+    "ko": "마음이 돌아서는 순간을\n잡아, 부처님께서\n보증하셨습니다. 난다가\n출가 수행에 열심히 힘쓰면\n천녀 500명이 그의 상이\n되리라고.\n\n난다는 받아들이고, 천상의\n상을 바라보며 굳게 마음먹고\n제따와나로 돌아왔습니다.",
+    "cover": [
+     48,
+     46,
+     78
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Nanda-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     118,
+     234,
+     346
+    ],
+    "ko": "곧 대중이 난다의\n천상 거래를\n알게 되었습니다.\n동료 비구들은\n대놓고 그를\n‘품팔이꾼’,\n‘천한 장사꾼’이라\n놀렸습니다.\n\n쓰라린 부끄러움이\n그의 얕은 안일함을\n깨뜨렸습니다.",
+    "cover": [
+     49,
+     46,
+     72
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Nanda-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     316,
+     728,
+     410
+    ],
+    "ko": "부처님의 설사약은 꼭 들어맞았습니다. 천상의 욕망이 난다의 몸을 붙잡아 두었고,\n사람들의 놀림에 받은 부끄러움이 안의 계율을 일깨웠습니다. ‘미끼’가 그를 오래\n수행하게 했고, 마침내 그 수행이 모든 욕망을 없앴습니다.",
+    "cover": [
+     45,
+     43,
+     63
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Nanda-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     556,
+     66,
+     766,
+     362
+    ],
+    "ko": "뉘우친 난다는\n감각의 문 둘레에\n뚫을 수 없는 성을\n쌓았습니다.\n\n그는 눈길 하나하나를\n분명한 앎의 네 방패로\n살폈습니다. 목적, 알맞음,\n영역, 미혹 없음을\n가려 보았습니다.\n어떤 봄도 탐욕이나\n성냄을 일으키지\n못했습니다.",
+    "cover": [
+     121,
+     40,
+     37
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Nanda-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     428,
+     112,
+     750,
+     346
+    ],
+    "ko": "난다의 깨달음\n\n감각 기능을 더없이 엄하게 지키자\n난다의 수행은 빠르게 무르익었습니다.\n한밤중에 그는 깨달음을 얻었습니다.\n범천이 제따와나 승원에 내려와,\n난다가 아라한이 되었음을\n세존께 알렸습니다.",
+    "cover": [
+     121,
+     35,
+     18
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Nanda-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     144,
+     294,
+     666,
+     410
+    ],
+    "ko": "이튿날 아침, 난다는 천녀에 관한 보증에서\n부처님을 정식으로 풀어 드렸습니다. 부처님께서는\n난다가 모든 번뇌를 없앤 바로 그 순간,\n그 약속은 저절로 풀렸다고 하셨습니다.\n깨달음은 세속의 빚을 지지 않습니다.",
+    "cover": [
+     125,
+     41,
+     25
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Nanda-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     48,
+     664,
+     130
+    ],
+    "ko": "부처님께서 기쁜 게송으로 난다의 변화를 기리셨습니다.\n“아라한은 진흙탕을 건넜다. 감각적 욕망의 가시를 완전히 부수었다.\n어리석음의 끝에 이른 그 비구는 괴로움과 즐거움에 흔들리지 않는다.”",
+    "cover": [
+     120,
+     41,
+     24
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Nanda-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     178,
+     322,
+     624,
+     424
+    ],
+    "ko": "큰 모임에서 부처님께서 난다 장로를\n감각 기능을 지키는 모든 제자 가운데 으뜸이라\n공식으로 선언하셨습니다. 세속의 아름다움에\n하마터면 길을 잃을 뻔한 10만 겁의 여정이\n마침내 끝났습니다.",
+    "cover": [
+     114,
+     39,
+     22
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
