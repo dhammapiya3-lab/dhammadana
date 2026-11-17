@@ -235,10 +235,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "none",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0034/DL-0034_전자책개정판.pdf"
       },
       "pdf_print": {
         "mode": "none",
