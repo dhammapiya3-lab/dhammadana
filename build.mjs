@@ -922,7 +922,7 @@ function simpleLayout({ title, path = [], up = '', normal = '/', body, status = 
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#1f3b8a">
 <link rel="stylesheet" href="/assets/site.css?v=${V.css}">
-<script>try{localStorage.setItem('dd-ui',JSON.stringify('simple'));var m=localStorage.getItem('dd-mode');m=m?JSON.parse(m):'auto';if(m!=='auto')document.documentElement.classList.add('mode-'+m);var f=JSON.parse(localStorage.getItem('dd-sitefs')||'0');if(f>0)document.documentElement.classList.add('sfs-'+f)}catch(e){}</script>
+<script>try{if(new URLSearchParams(location.search).get('ui')==='simple')localStorage.setItem('dd-ui',JSON.stringify('simple'));var m=localStorage.getItem('dd-mode');m=m?JSON.parse(m):'auto';if(m!=='auto')document.documentElement.classList.add('mode-'+m);var f=JSON.parse(localStorage.getItem('dd-sitefs')||'0');if(f>0)document.documentElement.classList.add('sfs-'+f)}catch(e){}</script>
 </head>
 <body data-page="${page}" class="simple-ui">
 <div class="s-bar" role="banner">
