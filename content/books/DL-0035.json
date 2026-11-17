@@ -70,10 +70,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "pdf/DL-0035/DL-0035_초판.pdf"
+        "url": "pdf/DL-0035/DL-0035_초판.pdf",
+        "site": "https://cafe.daum.net/Happy-forest/6QbL/19",
+        "created": "2014년 6월 17일"
       },
       "pdf_print": {
         "mode": "none",
@@ -94,10 +94,10 @@
         "created": ""
       },
       "hwp": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "hwp/DL-0035/DL-0035_초판.hwp"
+        "url": "hwp/DL-0035/DL-0035_초판.hwp",
+        "site": "https://cafe.daum.net/Happy-forest/6QbL/19",
+        "created": "2014년 6월 17일"
       },
       "reader": true,
       "sources": [
