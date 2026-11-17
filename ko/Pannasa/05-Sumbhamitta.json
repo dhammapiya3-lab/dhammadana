@@ -1,0 +1,634 @@
+[
+ {
+  "img": "images/05-Sumbhamitta-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     344,
+     564,
+     376
+    ],
+    "ko": "숨바밋따 전생 이야기",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     226,
+     374,
+     574,
+     436
+    ],
+    "ko": "란나 전통 벽화 필사본에 실린 빤냐사 자따까.\n데와닷따가 품은 미움의 오랜 뿌리를 밝히시려고 부처님께서 들려주신, 나라를 떠난 왕의 업의 여정입니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     456,
+     40,
+     776,
+     84
+    ],
+    "ko": "나라를 떠나게 된 까닭",
+    "cover": false,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     456,
+     86,
+     776,
+     130
+    ],
+    "ko": "옛 짬빠에서 아숨바밋따 왕자가 왕위를 빼앗으려 음모를 꾸밉니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     38,
+     340,
+     420,
+     416
+    ],
+    "ko": "숨바밋따 왕은 내전으로 백성의 피를 흘리게 하는 대신 깊은 내려놓음의 길을 택하여, 한밤중에 나라를 버리고 떠납니다.",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     52,
+     344,
+     106
+    ],
+    "ko": "께시니의 서원",
+    "cover": false,
+    "align": "left",
+    "em": 32,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     56,
+     128,
+     344,
+     380
+    ],
+    "ko": "숨바밋따는 아내에게 남아서 재산을 덕 있는 이들에게 나누어 주라고 권합니다.\n\n보석도 안전도 마다한 께시니 왕비는 왕을 버리지 않겠다고 합니다.\n\n왕실 가족은 함께 거친 숲의 두려움을 받아들입니다.",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     560,
+     40,
+     764,
+     76
+    ],
+    "ko": "큰 강",
+    "cover": false,
+    "align": "right",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     540,
+     72,
+     768,
+     152
+    ],
+    "ko": "깊고 거센 강이 길을 막습니다. 셋을 한꺼번에 업고 건널 수 없어, 왕은 어린 두 아들을 먼 모래톱으로 건네주고 왕비를 남겨 둡니다. 가족이 몸으로 갈라집니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     560,
+     40,
+     764,
+     76
+    ],
+    "ko": "첫 번째 헤어짐",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     500,
+     76,
+     768,
+     172
+    ],
+    "ko": "왕이 거센 물살을 헤치며 돌아가는 사이, 어부들이 지켜 주는 이 없는 왕자들을 봅니다. 버려진 아이들이라 여긴 어부들은 아이들을 데리고 새벽 속으로 노를 저어 갑니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     540,
+     40,
+     764,
+     76
+    ],
+    "ko": "두 번째 헤어짐",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     500,
+     76,
+     768,
+     158
+    ],
+    "ko": "같은 때, 장사하는 뱃사공이 홀로 남은 왕비를 발견합니다. 왕비의 길한 상호에 넋을 잃은 그는 왕비를 데려갑니다. 왕은 가족도 왕관도 잃은 채 빈 강가로 돌아옵니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     340,
+     600,
+     372
+    ],
+    "ko": "업의 뿌리",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     46,
+     372,
+     754,
+     416
+    ],
+    "ko": "어째서 이토록 큰 괴로움을 겪을까요? 여러 생 전, 왕자들은 어미 새와 아비 새가 보는 앞에서 새끼 새의 깃털 세 개를 뽑았습니다. 사소해 보이던 이 잔인함이 무르익어 오백 생 동안 괴로운 헤어짐이 되었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     532,
+     40,
+     764,
+     74
+    ],
+    "ko": "절망의 숲",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     540,
+     76,
+     768,
+     166
+    ],
+    "ko": "가족도 나라도 희망도 잃은 대인(보살)은 숲에서 쓰러집니다. 피할 수 없는 지난 행위의 쓴 열매를 맛보며 그는 홀로 먼 딱까실라를 향해 헤맵니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     548,
+     86,
+     760,
+     120
+    ],
+    "ko": "나라의 수레",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     548,
+     124,
+     760,
+     352
+    ],
+    "ko": "딱까실라에서 왕이 후사 없이 세상을 떠납니다. 더없는 공덕을 지닌 다스릴 이를 찾으려고 거룩한 나라의 수레를 내보냅니다. 수레는 잠든 숨바밋따 곁에 멈추어 그의 왕의 운명을 알아봅니다.",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     548,
+     76,
+     760,
+     132
+    ],
+    "ko": "바른 왕권이\n되살아나다",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     548,
+     134,
+     760,
+     384
+    ],
+    "ko": "공덕으로 왕위에 오른 숨바밋따 왕은 법으로 다스립니다. 얼마 뒤 그 지방 어부들이 금빛 피부의 두 소년을 왕의 시종으로 바칩니다. 왕은 자기 아이들임을 알아보지만 말하지 않습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     628,
+     56,
+     762,
+     108
+    ],
+    "ko": "덕의 방패",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     628,
+     122,
+     762,
+     400
+    ],
+    "ko": "뱃사공이 장사하러 딱까실라에 옵니다.\n\n께시니 왕비의 흔들림 없는 계의 뜨거운 힘 때문에 범하지 못하고, 그는 왕비를 가둬 둡니다.\n\n왕은 새로 맡은 두 소년에게 배를 지키게 합니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     60,
+     312,
+     96
+    ],
+    "ko": "한밤의 발견",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     64,
+     96,
+     300,
+     176
+    ],
+    "ko": "달빛 아래 두 소년은 깨어 있으려고 자기들의 슬픈 지난 이야기를 나눕니다. 어둠 속에서 자기 이야기를 들은 갇힌 왕비가 휘장을 걷고 오래 잃었던 두 아들을 알아봅니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     60,
+     290,
+     96
+    ],
+    "ko": "헤어짐이 아물다",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     64,
+     96,
+     326,
+     178
+    ],
+    "ko": "왕 앞에 불려 오자 마침내 진실이 밝혀집니다. 숨바밋따는 왕좌에서 뛰어내려 가족을 끌어안습니다. 깃털 세 개의 업의 빚이 다하여 가족이 다시 온전해집니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     60,
+     300,
+     96
+    ],
+    "ko": "행위의 열매",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     64,
+     96,
+     296,
+     180
+    ],
+    "ko": "업(kamma)의 저울은 꼭 맞습니다. 왕위를 빼앗은 사악한 아숨바밋따는 지옥(niraya)의 고통에 떨어집니다. 깊은 의로움으로 다스린 숨바밋따 왕은 가족과 함께 천상 세계로 갑니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     294,
+     100,
+     310,
+     132
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Sumbhamitta-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     66,
+     600,
+     110
+    ],
+    "ko": "다시 태어남의 표",
+    "cover": false,
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     236,
+     140,
+     564,
+     176
+    ],
+    "ko": "숨바밋따 왕 → 부처님",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     236,
+     180,
+     564,
+     216
+    ],
+    "ko": "께시니 왕비 → 야소다라",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     236,
+     220,
+     564,
+     256
+    ],
+    "ko": "제야세나 왕자 → 라훌라",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     236,
+     260,
+     564,
+     296
+    ],
+    "ko": "제야닷따 왕자 → 아난다",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     236,
+     296,
+     564,
+     332
+    ],
+    "ko": "바라문 고문 → 사리뿟따",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     236,
+     334,
+     564,
+     370
+    ],
+    "ko": "사악한 아숨바밋따 → 데와닷따",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ }
+]
