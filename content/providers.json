@@ -288,6 +288,22 @@
         "한국명상원"
       ],
       "note": "다음 카페 · cafe.daum.net/vipassanacenter"
+    },
+    {
+      "id": "happyforest",
+      "name": "행복한숲 출판사",
+      "kind": "출판사",
+      "urls": [
+        "https://cafe.daum.net/vipassanacenter"
+      ],
+      "partner": true,
+      "aliases": [
+        "행복한 숲",
+        "행복한숲",
+        "도서출판 행복한 숲",
+        "행복한 숲 출판사"
+      ],
+      "note": "도서 안내 · cafe.daum.net/vipassanacenter"
     }
   ]
 }
