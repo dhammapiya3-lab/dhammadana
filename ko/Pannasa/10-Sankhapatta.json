@@ -1,0 +1,1033 @@
+[
+ {
+  "img": "images/10-Sankhapatta-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     200,
+     566,
+     290
+    ],
+    "ko": "상카빳따 왕의\n전생 이야기",
+    "cover": [
+     87,
+     63,
+     35
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     236,
+     290,
+     566,
+     356
+    ],
+    "ko": "란나의 빤냐사 자따까 이야기\n업의 바다",
+    "cover": [
+     81,
+     60,
+     33
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     484,
+     106,
+     728,
+     346
+    ],
+    "ko": "제따와나에서 비구들이 야소다라 공주를 얻으신 스승의 솜씨를 찬탄했습니다.\n\n부처님께서 답하셨습니다. “이번만이 아니다. 옛날에도 나는 큰 왕권을 버리고 그녀를 위해 다른 나라로 갔다.”\n\n그리고 지난 일을 들려주셨습니다.",
+    "cover": [
+     97,
+     73,
+     36
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     78,
+     76,
+     188,
+     118
+    ],
+    "ko": "뽀따뿌라의\n야사 왕",
+    "cover": [
+     120,
+     92,
+     48
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     214,
+     82,
+     312,
+     124
+    ],
+    "ko": "야사낏띠\n왕비",
+    "cover": [
+     121,
+     95,
+     47
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     586,
+     74,
+     712,
+     116
+    ],
+    "ko": "로마디빠의\n앙꾸라 왕",
+    "cover": [
+     122,
+     96,
+     52
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     128,
+     332,
+     670,
+     402
+    ],
+    "ko": "두 강대국이 핏줄로 이어졌습니다. 로마디빠의 앙꾸라 왕은 덕 높은 누이 야사낏띠를 뽀따뿌라의 야사 왕에게 시집보냈습니다. 그들을 통해 보살이 천상 세계에서 윤회로 내려왔습니다.",
+    "cover": [
+     114,
+     88,
+     45
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     480,
+     154,
+     714,
+     338
+    ],
+    "ko": "왕자의 이름은 상카빳따였습니다. 그의 손바닥은 자개를 박은 문짝 같았습니다.\n\n공덕을 갖춘 그는 날마다 보시당 여섯 곳에서 큰 재물을 나누어, 깨달음을 위한 바라밀을 채웠습니다.",
+    "cover": [
+     106,
+     74,
+     50
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     462,
+     64,
+     734,
+     158
+    ],
+    "ko": "로마디빠에서 라따나와띠 공주는 눈부시게 아름답게 자랐습니다. 앙꾸라 왕은 공주의 모습을 새긴 황금 판을 뽀따뿌라로 보내, 상카빳따 왕자에게 큰 바다를 건너와 공주와 나라를 얻으라고 했습니다.",
+    "cover": [
+     61,
+     50,
+     38
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     424,
+     42,
+     744,
+     184
+    ],
+    "ko": "“큰 바다는 무섭고 사납단다.” 야사낏띠 왕비가 애원했습니다. “내가 이토록 괴로운데도 가겠느냐?”\n\n어머니의 눈물에도 왕자는 부모님께 절을 올리고 큰 배에 올라 바다로 나아갔습니다.",
+    "cover": [
+     72,
+     55,
+     39
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     424,
+     52,
+     742,
+     182
+    ],
+    "ko": "이레 뒤, 거센 바람에 배의 널빤지가 부서졌습니다. 사람들이 울부짖는 동안 대인(보살)은 침착했습니다.\n\n그는 버터기름을 먹고 옷을 두툼하게 입어, 험한 물을 견딜 튼튼한 몸을 준비했습니다.",
+    "cover": [
+     71,
+     55,
+     37
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     424,
+     50,
+     732,
+     184
+    ],
+    "ko": "다른 이들이 죽게 둘 수 없었던 보살은 떠다니는 널빤지를 붙잡아 내주었습니다.\n“지혜로운 이는 남을 괴로움에서 건져 준다. 재물도 팔다리도 목숨도, 세상이 건너도록 돕는 데 쓴다.”",
+    "cover": [
+     62,
+     48,
+     32
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     170,
+     574,
+     270
+    ],
+    "ko": "어째서 이토록 큰 괴로움을?\n\n전생에 바라나시에서 그는 장난으로 사미의 배를 가라앉혔습니다. 그 잘못으로 오백 생 동안 괴로움을 겪었습니다. 업은 행한 이의 영원한 그림자입니다.",
+    "cover": [
+     70,
+     55,
+     37
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     254,
+     170,
+     546,
+     280
+    ],
+    "ko": "새벽에 야사낏띠 왕비는 끔찍한 꿈을 꾸었습니다. 검은 사람이 왕비의 눈을 뽑는 꿈이었습니다. 곧이어 수척한 대신 제야닷따가 뽀따뿌라에 왔습니다. 왕자를 잃었다는 말에 왕실은 비통함에 무너졌습니다.",
+    "cover": [
+     55,
+     41,
+     28
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     60,
+     468,
+     142
+    ],
+    "ko": "징조를 구하려고 야사 왕은 바라문 뿐나를 보내 바다의 신들을 공경하게 했습니다. 수호신이 나타나, 왕자는 살아 있으며 곧 꽃 궁전에 실려 돌아오리라고 약속했습니다.",
+    "cover": [
+     72,
+     55,
+     44
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     50,
+     612,
+     134
+    ],
+    "ko": "난파 소식이 로마디빠에 닿았습니다. 과부가 되었다고 여긴 라따나와띠 공주는 그를 따라 저세상으로 가려고 올가미를 준비했습니다. 유모가 공주를 말리며 대신 공덕을 지으라고 권했습니다.",
+    "cover": [
+     71,
+     54,
+     37
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     52,
+     628,
+     128
+    ],
+    "ko": "자기 힘으로 이레 동안 헤엄친 끝에 보살은 로마디빠에 닿았습니다. 은빛 같은 모래사장에 앉아 그는 부모님께 드린 깊은 슬픔을 애달파했습니다.",
+    "cover": [
+     66,
+     51,
+     37
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     56,
+     552,
+     130
+    ],
+    "ko": "포살일 보름밤, 빚에 몰린 한 사람이 목숨을 끊으려 했습니다. 연민이 가득한 보살이 그를 말렸습니다. 마지막 보물인 보석 박힌 인장 반지를 손가락에서 빼어 빚을 갚으라고 주었습니다.",
+    "cover": [
+     182,
+     163,
+     135
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     322,
+     586,
+     404
+    ],
+    "ko": "탐욕스러운 바라문이 보살의 두 눈을 달라고 했습니다. 대인(보살)은 화내지 않고 시력과 마지막 보석 인장 반지를 내주며 오직 보시 바라밀만 생각했습니다. “나는 결코 떨지 않는다… 내게는 보시가 더 소중하다.”",
+    "cover": [
+     227,
+     210,
+     186
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     158,
+     48,
+     640,
+     134
+    ],
+    "ko": "마지막 보물까지 내준 보살은 깊은 서원을 세웠습니다.\n“이 보시의 빛으로 마음의 바람을 다 이루며 태어나기를. 이것은 오직 깨달음을 위해서였다.”",
+    "cover": [
+     69,
+     52,
+     36
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     300,
+     296,
+     740,
+     420
+    ],
+    "ko": "업은 빠르게 작용합니다.\n도둑 오백 명이 숲에서 배신한 바라문을 덮쳐 왕실 인장 반지를 빼앗았습니다. 그는 묶이고 맞아 끌려가고, 값진 반지들은 마나다자 왕에게 보내졌습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     320,
+     660,
+     422
+    ],
+    "ko": "어둠 속을 헤매던 보살을 너그러운 숲 사람 둘, 시하와 꾼자라가 발견했습니다. 그의 타고난 고귀함을 알아본 그들은 눈먼 고행자를 거처로 데려가, 약초로 상처를 정성껏 씻어 주었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     314,
+     624,
+     428
+    ],
+    "ko": "숲 사람들의 아내들이 술에 취해 눈먼 나그네를 조롱하자, 그는 그 잔인함을 자애로 맞았습니다. 고요한 법문이 그들의 어리석음을 꿰뚫어, 허물을 용서하고 그들을 오계에 굳게 세웠습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     330,
+     626,
+     428
+    ],
+    "ko": "로마디빠 정원에서 위안을 찾던 라따나와띠 공주는 상서로운 돌 평상 위에서 쉬는 눈먼 고행자를 보았습니다. 심한 장애에 왕족 신분은 가려졌지만, 빛나고 고요한 모습이 곧바로 공주의 마음을 사로잡았습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     314,
+     612,
+     424
+    ],
+    "ko": "그의 깊은 법문에 크게 감동한 공주는 금 천 냥을 올렸습니다. 대인(보살)은 망설임 없이 재물을 사양하고, 대신 자기 목숨을 구한 충실한 숲 사람들에게 주라고 했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     174,
+     326,
+     626,
+     422
+    ],
+    "ko": "그가 손짓할 때, 눈썰미 좋은 노비 여인 팔라위까가 그의 손바닥에서 또렷한 자개 무늬를 보았습니다. 황금 초상판과 견주어 보니 틀림없는 진실이 드러났습니다. 이 눈멀고 초라한 고행자가 바로 떠돌던 상카빳따 왕자였습니다.",
+    "cover": [
+     220,
+     199,
+     167
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     356,
+     632,
+     418
+    ],
+    "ko": "발견 소식이 궁에 닿았습니다. 앙꾸라 왕과 야사낏띠 왕비가 숲으로 달려왔습니다. 망가진 왕자의 눈을 본 왕실 일행은 깊은 슬픔에 무너져, 지난 업이 맺은 잔인한 열매에 슬피 울었습니다.",
+    "cover": [
+     220,
+     193,
+     149
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     360,
+     632,
+     424
+    ],
+    "ko": "라따나와띠 공주가 진실의 서원을 했습니다. 흔들림 없는 헌신을 선언하자 그 말에서 우주 법칙의 금빛 물결이 일었습니다. 신기하게도 왕자의 왼쪽 눈이 곧바로 되살아나고, 무거운 땅이 기뻐하며 흔들렸습니다.",
+    "cover": [
+     213,
+     186,
+     146
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     358,
+     632,
+     420
+    ],
+    "ko": "대인(보살)이 스스로 진실을 말했습니다. “바라문이 내 눈을 망가뜨렸어도 내 마음에는 조금의 화도 일지 않았다. 내게는 보시가 소중하다.” 곧 오른쪽 눈이 나타났습니다. 산들이 머리를 숙이고 번개가 번쩍이고 하늘 꽃이 비 내렸습니다.",
+    "cover": [
+     212,
+     185,
+     144
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     360,
+     632,
+     424
+    ],
+    "ko": "마나다자 왕의 사신들이 훔친 인장 반지와 배신한 바라문 두따위딱까를 데려왔습니다. 밧줄에 꽁꽁 묶여 목숨을 잃을까 떠는 배신자가 다시 만난 왕실 앞 바닥에 내던져졌습니다.",
+    "cover": [
+     207,
+     179,
+     141
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-27-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     356,
+     776,
+     438
+    ],
+    "ko": "배신의 무게에 짓눌린 바라문의 두 눈은 업에 의해 저절로 멀었습니다. 그러나 끝없는 연민이 넘치는 보살은 자기를 괴롭힌 이를 끌어안았습니다. 용서하는 진실의 힘으로 배신자의 시력이 신기하게 되살아났습니다.",
+    "cover": [
+     238,
+     223,
+     194
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-28-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     376,
+     586,
+     440
+    ],
+    "ko": "바라밀을 완성한 상카빳따 왕자는 로마디빠의 의로운 왕으로 즉위했습니다. 황금 그릇과 거룩한 소라에 담은 향수로 목욕하고, 흰 일산 아래 보석 쌓인 왕좌에 올랐습니다.",
+    "cover": [
+     226,
+     199,
+     151
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sankhapatta-29-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     118,
+     56,
+     384,
+     92
+    ],
+    "ko": "상카빳따 이야기",
+    "cover": [
+     176,
+     126,
+     80
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     424,
+     56,
+     692,
+     92
+    ],
+    "ko": "깨달은 분의 시대",
+    "cover": [
+     178,
+     127,
+     81
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     168,
+     106,
+     302,
+     144
+    ],
+    "ko": "두따위딱까\n(바라문)",
+    "cover": [
+     145,
+     100,
+     61
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     500,
+     108,
+     630,
+     136
+    ],
+    "ko": "데와닷따",
+    "cover": [
+     166,
+     112,
+     66
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     168,
+     162,
+     302,
+     188
+    ],
+    "ko": "시하와 꾼자라",
+    "cover": [
+     141,
+     91,
+     54
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     496,
+     160,
+     636,
+     188
+    ],
+    "ko": "사리뿟따와 목갈라나",
+    "cover": [
+     142,
+     94,
+     57
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     168,
+     212,
+     302,
+     240
+    ],
+    "ko": "야사낏띠 왕비",
+    "cover": [
+     127,
+     80,
+     47
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     500,
+     212,
+     630,
+     240
+    ],
+    "ko": "마하마야",
+    "cover": [
+     135,
+     84,
+     48
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     168,
+     266,
+     302,
+     292
+    ],
+    "ko": "앙꾸라 왕",
+    "cover": [
+     119,
+     72,
+     42
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     500,
+     266,
+     630,
+     292
+    ],
+    "ko": "아난다",
+    "cover": [
+     128,
+     76,
+     43
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     168,
+     312,
+     302,
+     340
+    ],
+    "ko": "라따나와띠 공주",
+    "cover": [
+     96,
+     55,
+     32
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     500,
+     312,
+     630,
+     340
+    ],
+    "ko": "야소다라",
+    "cover": [
+     105,
+     62,
+     34
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     168,
+     366,
+     302,
+     394
+    ],
+    "ko": "상카빳따 왕",
+    "cover": [
+     94,
+     59,
+     37
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     500,
+     366,
+     630,
+     394
+    ],
+    "ko": "여래",
+    "cover": [
+     99,
+     58,
+     36
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ }
+]
