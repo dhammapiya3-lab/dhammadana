@@ -1240,3 +1240,7 @@ body.simple-ui{margin:0;background:#fff;color:#111;font-family:var(--sans);font-
 :root.mode-night .s-row .s-c1,:root.mode-contrast .s-row .s-c1{color:#ffe36b}
 :root.mode-night .s-row.sel,:root.mode-contrast .s-row.sel{background:#3a2a00}
 :root.mode-night .s-head,:root.mode-contrast .s-head,:root.mode-night .simple-ui .s-stat,:root.mode-contrast .simple-ui .s-stat{background:#222;color:#fff}
+/* 소식·안내 글 속 그림은 글 폭에 맞춰 줄여 보임 (2026-11-18 — 단순 화면 안내 그림이 오른쪽에서 잘리던 것) */
+.prose img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:6px}
+/* 글 속 링크는 색만이 아니라 밑줄로도 구분 (저시력·색맹, 2026-11-18) */
+.prose p a,.prose li a,.news-meta a{text-decoration:underline;text-underline-offset:2px}

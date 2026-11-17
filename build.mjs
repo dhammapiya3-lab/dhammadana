@@ -876,12 +876,12 @@ function newsList(cat) {
   <ul class="news-list" style="max-width:760px">${l.map(n => `<li><div class="dd"><span class="pill ${n.category === 'press' ? 'robe' : ''}">${n.category === 'press' ? '我無말들' : '도서관'}</span> ${esc(n.date || '')}${updTag(n)}</div><a class="tt" href="/news/${n.slug}/">${esc(n.title)}</a></li>`).join('') || '<li class="muted">아직 소식이 없습니다.</li>'}</ul>
   ${l.length < 6 ? `<div class="more-box"><div class="section-head"><h2>최근 올라온 책</h2><a class="more" href="/library/">도서관 →</a></div>${cardList(LIB().slice(0, 5))}</div>` : ''}</div>`;
 }
-put('news/index.html', layout({ title: '소식', nav: 'news', page: 'news', body: newsList('') }));
+put('news/index.html', layout({ simple: '/simple/news/', title: '소식', nav: 'news', page: 'news', body: newsList('') }));
 put('news/press/index.html', layout({ title: '我無말들 소식', nav: 'news', page: 'news', body: newsList('press') }));
 put('news/library/index.html', layout({ title: '도서관 소식', nav: 'news', page: 'news', body: newsList('library') }));
 for (const n of NEWS) {
   const b = n.book ? BOOKS.find(x => x.id === n.book) : null;
-  put(`news/${n.slug}/index.html`, layout({
+  put(`news/${n.slug}/index.html`, layout({ simple: `/simple/news/${n.slug}/`,
     title: n.title, nav: 'news', page: 'news', body: `<div class="wrap"><article class="prose"><div class="small muted news-meta"><a href="/news/">소식</a> · ${n.category === 'press' ? '我無말들' : '도서관'} · ${esc(n.date || '')}${updTag(n)}</div><h1>${esc(n.title)}</h1>${n.html}
     ${n.source ? `<p><a href="${esc(n.source)}" target="_blank" rel="noopener">원문 보기 ↗</a></p>` : ''}
     ${b ? `<div class="grid" style="max-width:220px;margin-top:20px">${coverCard(b)}</div>` : ''}</article></div>`
@@ -973,6 +973,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     F('출판사·단체별로 보기', '/simple/pubs/', `${pList.length}곳`),
     F('주제별로 보기', '/simple/topics/', `${topList.length}가지`),
     ...(audio.length ? [F('오디오북이 있는 책', '/simple/audio/', `${audio.length}권`)] : []),
+    F('소식', '/simple/news/', `글 ${NEWS.length}개`),
     F('내 서재 (이어 읽기·책갈피)', '/simple/mine/', '이 기기에 저장된 기록'),
     F('책 제목으로 찾기', '/simple/find/', '제목·지은이로 찾기', '🔍', 'find', '찾기'),
     F('일반 화면으로', '/?ui=normal', '지금 사이트 화면', '↩', 'normal', '이동'),
@@ -1012,6 +1013,12 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     if (hasText(b)) put(`simple/book/${b.id}/read/index.html`, simpleLayout({ title: `${b.title} – 장 목록`, path: [...P.slice(0, 1), [b.title, `/simple/book/${b.id}/`], ['온라인으로 읽기', '']], up: `/simple/book/${b.id}/`, normal: `/read/${b.id}/`, page: 'simple-read',
       body: `<div id="sRead" data-book="${b.id}" data-title="${esc(b.title)}" data-by="${esc(sBy(b))}" data-manifest="${esc(readerManifest(b))}"><p>장 목록을 불러오는 중입니다…</p></div>` }));
   }
+  // 소식 (운영자 요청, 2026-11-18): 글 목록 → 글 화면(그림 설명은 화면 낭독기가 읽음)
+  const nCat = n => n.category === 'press' ? '我無말들' : '도서관';
+  put('simple/news/index.html', simpleLayout({ title: '소식', path: [['소식', '']], up: '/simple/', normal: '/news/', status: `글 ${NEWS.length}`,
+    body: sList(`소식, 글 ${NEWS.length}개`, ['제목', '구분', '날짜'], NEWS.map(n => ({ href: `/simple/news/${n.slug}/`, ic: '📰', kind: 'news', cols: [n.title, nCat(n), n.date || ''] })), 'minmax(0,3fr) 110px 130px') }));
+  for (const n of NEWS) put(`simple/news/${n.slug}/index.html`, simpleLayout({ title: n.title, path: [['소식', '/simple/news/'], [n.title, '']], up: '/simple/news/', normal: `/news/${n.slug}/`, page: 'simple-text',
+    body: `<p class="s-sub">${esc(nCat(n))} · ${esc(n.date || '')}</p><div class="s-prose prose">${n.html}</div><p><a class="s-link" href="/simple/news/">◀ 소식 목록으로 돌아가기</a></p>` }));
   put('simple/mine/index.html', simpleLayout({ title: '내 서재', path: [['내 서재', '']], up: '/simple/', normal: '/mynotes/', page: 'simple-mine', body: '<div id="sMine"><p>이 기기에 저장된 기록을 불러오는 중입니다…</p></div>' }));
   const findData = JSON.stringify(sByAdded(lib).map(b => [b.id, b.title, sBy(b), b.added || '', sFmt(b), [b.subtitle, b.original_title, ...(b.topics || [])].filter(Boolean).join(' ')])).replace(/</g, '\\u003c');
   put('simple/find/index.html', simpleLayout({ title: '책 제목으로 찾기', path: [['책 제목으로 찾기', '']], up: '/simple/', normal: '/search/', page: 'simple-find',
