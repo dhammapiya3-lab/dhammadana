@@ -219,7 +219,7 @@ info = [i for i in P2.get_image_info()]
 pg['paras'].append('^^ ' + ' '.join(re.sub(r'\s+', ' ', P2.get_text()).split()))
 log['속표지 제목'] += 1
 # 사자상만 잘라 그림으로 (쪽 아래쪽 가운데)
-lion = render(2, fitz.Rect(120, 360, 280, 500), f'{BK}-lion.png', 300)
+lion = render(2, fitz.Rect(135, 420, 245, 600), f'{BK}-lion.png', 300)
 pg['paras'].append(f'![#아소카 왕의 사자상]({lion})'); pg['kinds'] += ['p', 'img']
 PAGES.append(pg); chapters.append(('속표지', 0, 0))
 
