@@ -44,10 +44,14 @@ def plain(t):
     return re.sub(r'\[\^[^\]]+\]|\*\*|°°|^## |[\s.,·?!()（）:：\-~‘’“”"\'\[\]□▷■?？]', '', t)
 
 
+TURN = {'DL-0034-357-1.png'}
+
+
 def render(n, rect, name, dpi=220):
     from PIL import Image
     pix = doc[n - 1].get_pixmap(dpi=dpi, clip=rect)
     im = Image.open(io.BytesIO(pix.tobytes('png'))).convert('L')
+    if name in TURN: im = im.rotate(-90, expand=True); name = name.replace('.png', 'r.png')   # 옆으로 누운 표를 바로 세워 가로로 (운영자 요청 2026-11-17: 표 5d)
     path = os.path.join(UP, name); im.save(path, optimize=True)
     images.append('/uploads/' + name); log['그림(표)'] += 1
     return '/uploads/' + name
