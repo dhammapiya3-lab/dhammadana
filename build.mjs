@@ -307,7 +307,7 @@ function bookLd(b, e, t) {
   return o;
 }
 
-function layout({ title, nav = '', page = '', body, desc = '', image = '', ld = null }) {
+function layout({ title, nav = '', page = '', body, desc = '', image = '', ld = null, simple = '' }) {  // simple: 이 화면에 맞는 단순 화면 주소 — 단순 모드를 고른 기기는 그리로 (운영자 요청, 2026-11-18)
   const t = title ? `${title} · ${S.site_name}` : `${S.site_name} · 테라와다불교 도서관`;  // 첫 화면 제목에 '테라와다불교' (검색용, 운영자 요청 2026-11-10)
   const P = S.publisher;
   return `<!DOCTYPE html>
@@ -335,14 +335,16 @@ ${ld ? `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css?v=${V.css}">
+<script>try{var u=new URLSearchParams(location.search).get('ui');if(u==='normal'||u==='simple')localStorage.setItem('dd-ui',JSON.stringify(u));else if(${simple ? `JSON.parse(localStorage.getItem('dd-ui')||'""')==='simple'` : 'false'})location.replace(${JSON.stringify(simple)})}catch(e){}</script>
 <script>try{var m=localStorage.getItem('dd-mode');m=m?JSON.parse(m):'auto';if(m!=='auto')document.documentElement.classList.add('mode-'+m);var f=JSON.parse(localStorage.getItem('dd-sitefs')||'0');if(f>0)document.documentElement.classList.add('sfs-'+f)}catch(e){}</script>
 </head>
-<body data-page="${page}">
+<body data-page="${page}" data-simple="${esc(simple || '/simple/')}">
 <a class="skip" href="#app">본문으로 건너뛰기</a>
-<header class="site"><div class="wrap">
+<header class="site"><a class="skip" href="${esc(simple || '/simple/')}?ui=simple" data-ui="simple" id="uiSimple">시각장애인용 단순 모드로 보기</a><div class="wrap">
   <div class="head-row">
     <a class="brand" href="/" aria-label="${esc(S.site_name)} 첫 화면">${wheel('brand-mark')}<span><span class="brand-name">${esc(S.site_name)}</span><span class="brand-sub">${esc(S.site_sub)}</span></span></a>
     <div class="head-tools">
+      <span class="ui-tog" role="group" aria-label="화면 방식"><a href="${esc(simple || '/simple/')}?ui=simple" data-ui="simple" aria-label="단순 모드 (시각장애인용)">단순</a><span class="on" aria-current="true">일반</span></span>
       <a class="icon-btn" href="/mynotes/">내 서재</a>
       <a class="icon-btn" href="/account/" id="acctBtn">로그인</a>
       <a class="icon-btn" href="/search/"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>검색</a>
@@ -508,7 +510,7 @@ function updatesList() {
   for (const b of LIB()) if (!b.hide_update) rows.push({ d: b.added || '', b, c: '등록' });
   return rows.sort((a, b) => b.d.localeCompare(a.d)).slice(0, 8);
 }
-put('index.html', layout({ ld: { '@context': 'https://schema.org', '@type': 'WebSite', name: S.site_name, alternateName: ['테라와다불교 법보시 도서관', 'Dhammadāna Library'], description: '테라와다불교·근본불교 법보시 서적 무료 도서관', url: SITE_URL + '/', inLanguage: 'ko', potentialAction: { '@type': 'SearchAction', target: SITE_URL + '/search/?q={search_term_string}', 'query-input': 'required name=search_term_string' } },
+put('index.html', layout({ simple: '/simple/', ld: { '@context': 'https://schema.org', '@type': 'WebSite', name: S.site_name, alternateName: ['테라와다불교 법보시 도서관', 'Dhammadāna Library'], description: '테라와다불교·근본불교 법보시 서적 무료 도서관', url: SITE_URL + '/', inLanguage: 'ko', potentialAction: { '@type': 'SearchAction', target: SITE_URL + '/search/?q={search_term_string}', 'query-input': 'required name=search_term_string' } },
   page: 'home', body: `<h1 class="sr">${esc(S.site_name)}</h1><section class="verse wrap">${wheel('wheel')}
   <div class="pali-line">${esc(S.verse_pali)}</div><div class="ko-line">${esc(S.verse_ko)}</div><div class="cite">${esc(S.verse_cite)}</div>
   <form class="hero-search" action="/search/" role="search"><label for="hq" class="sr">자료 검색</label>
@@ -619,7 +621,7 @@ function libraryBody() {
     <p class="muted" id="libEmpty" hidden>조건에 맞는 자료가 아직 없습니다. 찾아보기를 줄여 보세요.</p>
   </section></div>`;
 }
-put('library/index.html', layout({ title: '법보시 도서관', nav: 'library', page: 'library', body: libraryBody() }));
+put('library/index.html', layout({ title: '법보시 도서관', nav: 'library', page: 'library', simple: '/simple/recent/', body: libraryBody() }));
 
 // 책 상세
 for (const b of BOOKS) {
@@ -648,7 +650,7 @@ for (const b of BOOKS) {
   const pl = PLAYLISTS.find(p => p.teacher && p.teacher === b.teacher);
   const extF = [...f.filter(x => x.ext), ...origsOf(b).filter(x => x.ext && x.site)];
   put(`book/${b.id}/index.html`, layout({
-    title: b.title, nav: 'library', page: 'book', image: b.cover || '', ld: bookLd(b, e, t), desc: `${b.title} — ${b.byline}${b.translator ? ', ' + b.translator : ''}`, body: `<div class="wrap detail">
+    simple: `/simple/book/${b.id}/`, title: b.title, nav: 'library', page: 'book', image: b.cover || '', ld: bookLd(b, e, t), desc: `${b.title} — ${b.byline}${b.translator ? ', ' + b.translator : ''}`, body: `<div class="wrap detail">
   <div><div class="cover-box${wideCover(b.cover) ? ' wide' : ''}"${wideCover(b.cover) ? ` style="aspect-ratio:${Math.round(wideCover(b.cover).w / 2)}/${wideCover(b.cover).h}"` : ''}>${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지">` : `<div class="cover-ph big">${esc(b.title)}</div>`}</div></div>
   <div class="d-body"><div class="d-head"><div class="crumb"><a href="/library/">법보시 도서관</a>${['예불집', '사전'].includes(b.book_type) ? ` › <a href="/library/?btype=${encodeURIComponent(b.book_type)}">${esc(b.book_type === '예불집' ? '예불 독송집' : b.book_type)}</a>` : b.book_type === '경전' && (b.main || [])[0] ? ` › <a href="/library/?main=${encodeURIComponent(b.main[0])}">${esc(b.main[0])}</a>` : tr ? ` › <a href="/library/?trad=${tr.id}">${esc(tr.name)}</a> › <a href="/teacher/${t.id}/">${esc(t.name)}</a>` : ''}</div>
     ${b.series ? `<div class="small muted">${esc(b.series)}</div>` : ''}
@@ -698,7 +700,7 @@ for (const t of TEACHERS) {
   const tr = tradById(t.tradition), trAll = tradIdsOf(t).map(tradById).filter(Boolean), list = LIB().filter(b => tIds(b).includes(t.id)), trans = LIB().filter(b => b.translator && b.translator.includes(t.name.replace(/ (스님|사야도)$/, '')) && !tIds(b).includes(t.id));
   const pl = PLAYLISTS.find(p => p.teacher === t.id);
   put(`teacher/${t.id}/index.html`, layout({
-    title: t.name, nav: 'library', page: 'teacher', body: `<div class="wrap"><div class="teacher-head"><div class="portrait" aria-hidden="true">${t.photo ? `<img src="${esc(t.photo)}" alt="">` : esc(t.name[0])}</div>
+    simple: countTeacher(t.id) ? `/simple/teacher/${t.id}/` : '/simple/teachers/', title: t.name, nav: 'library', page: 'teacher', body: `<div class="wrap"><div class="teacher-head"><div class="portrait" aria-hidden="true">${t.photo ? `<img src="${esc(t.photo)}" alt="">` : esc(t.name[0])}</div>
     <div>${trAll.length ? `<div class="small muted">${trAll.map(tr => `<a href="/library/?trad=${tr.id}">${esc(tr.region)} · ${esc(tr.name)}</a>${(tr.representatives || []).includes(t.id) ? ' · 대표 스승' : ''}`).join(' · ')}</div>` : ''}
     <h1 class="h-page">${esc(t.name)}</h1>${t.roman ? `<div class="pali muted">${esc(t.roman)}</div>` : ''}
     ${t.bio ? `<div class="desc small">${marked.parse(t.bio)}</div>` : ''}
@@ -904,6 +906,118 @@ put('offline.html', layout({ title: '인터넷 연결 없음', page: 'offline', 
 // 404
 put('404.html', layout({ title: '페이지를 찾을 수 없습니다', page: 'notfound', body: `<div class="wrap prose"><h1>페이지를 찾을 수 없습니다</h1><p>주소가 바뀌었거나 없는 페이지입니다. <a href="/library/">도서관</a>이나 <a href="/search/">검색</a>에서 찾아보세요.</p></div>` }));
 
+/* ---------- 단순 화면 (시각장애인용, 운영자 요청 2026-11-18) ----------
+   센스월드 '내 콘텐츠'처럼 폴더·책을 한 줄씩 고르는 목록. 지금 화면과 같은 자료로 빌드할 때 저절로 만듦(따로 관리할 것 없음).
+   목록은 처음엔 보통 링크 목록(ul)이고, app.js initSimple 이 ↑↓ 로 고르는 목록(listbox)으로 바꿈. 검색엔진에는 올리지 않음(noindex). */
+function simpleLayout({ title, path = [], up = '', normal = '/', body, status = '', page = 'simple' }) {
+  const crumbs = [['홈', '/simple/'], ...path];
+  return `<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>${esc(title)} · 단순 화면 · ${esc(S.site_name)}</title>
+<link rel="icon" href="/images/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#1f3b8a">
+<link rel="stylesheet" href="/assets/site.css?v=${V.css}">
+<script>try{localStorage.setItem('dd-ui',JSON.stringify('simple'));var m=localStorage.getItem('dd-mode');m=m?JSON.parse(m):'auto';if(m!=='auto')document.documentElement.classList.add('mode-'+m);var f=JSON.parse(localStorage.getItem('dd-sitefs')||'0');if(f>0)document.documentElement.classList.add('sfs-'+f)}catch(e){}</script>
+</head>
+<body data-page="${page}" class="simple-ui">
+<div class="s-bar" role="banner">
+  <span class="ui-tog s-tog" role="group" aria-label="화면 방식"><span class="on" aria-current="true">단순</span><a href="${esc(normal)}${normal.includes('?') ? '&' : '?'}ui=normal" data-ui="normal" aria-label="일반 모드로 보기">일반</a></span>
+  <button type="button" class="s-btn" id="sBack" aria-label="뒤로 (이전 화면)">◀ 뒤로</button>
+  ${up ? `<a class="s-btn" href="${esc(up)}" id="sUp" aria-label="위로 (한 단계 위 목록)">▲ 위로</a>` : ''}
+  <nav class="s-path" aria-label="지금 위치">${crumbs.map(([n, h], i) => i === crumbs.length - 1 && i ? `<span aria-current="page">${esc(n)}</span>` : `<a href="${esc(h)}">${esc(n)}</a>`).join('<span aria-hidden="true"> › </span>')}</nav>
+</div>
+<main id="app" class="s-main">
+<h1 class="s-h1" tabindex="-1">${esc(title)}</h1>
+${body}
+</main>
+${status ? `<footer class="s-stat"><span>/${esc(crumbs.slice(1).map(c => c[0]).join('/') || '홈')}</span><span>${esc(status)}</span></footer>` : ''}
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/assets/app.js?v=${V.js}"></script>
+</body>
+</html>`;
+}
+// 목록 한 줄: cols = 보이는 칸 글(첫 칸이 이름). 칸 사이에 화면에는 안 보이는 쉼표를 넣어 낭독기가 끊어 읽게
+const sCols = cols => cols.map((c, i) => `${i && c ? '<span class="sr">, </span>' : ''}<span class="s-c s-c${i + 1}">${esc(c || '')}</span>`).join('');
+const S_COLS = { 2: 'minmax(0,2fr) minmax(0,3fr)', 3: 'minmax(0,3fr) 110px minmax(0,2fr)' };
+const sList = (label, head, rows, cols = S_COLS[head.length]) => `<div class="s-tbl"${cols ? ` style="--cols:${cols}"` : ''}><div class="s-head" aria-hidden="true">${head.map((h, i) => `<span class="s-c s-c${i + 1}">${esc(h)}</span>`).join('')}</div>
+<ul class="s-list" data-label="${esc(label)}">${rows.map(r => `<li class="s-row${r.kind ? ' k-' + r.kind : ''}"><a href="${esc(r.href)}"${r.dl ? ' download' : ''}${r.ext ? ' target="_blank" rel="noopener"' : ''}><span class="s-ic" aria-hidden="true">${r.ic || '📁'}</span>${sCols(r.cols)}</a></li>`).join('')}</ul></div>`;
+const sBy = b => [b.byline, b.translator].filter(Boolean).join(' | ');
+const sFmt = b => { const k = fmtsCard(b).map(x => x.k); return [...k.filter(x => x === '온라인 읽기'), ...k.filter(x => x !== '온라인 읽기')].join(' · ') || '준비 중'; };
+const sBookRows = books => books.map(b => ({ href: `/simple/book/${b.id}/`, ic: '📕', kind: 'book', cols: [b.title, sBy(b), b.added ? b.added + ' 등록' : '', sFmt(b)] }));
+const S_HEAD_BOOK = ['이름', '지은이 · 옮긴이', '등록일', '형식'];
+const sByAdded = list => [...list].sort((a, b) => String(b.added || '').localeCompare(String(a.added || '')));
+function sBooksPage(file, { title, path, up, normal, books }) {
+  put(file, simpleLayout({ title, path, up, normal, status: `책 ${books.length}`, body: books.length ? sList(`${title}, 책 ${books.length}권`, S_HEAD_BOOK, sBookRows(sByAdded(books))) : '<p>아직 책이 없습니다.</p>' }));
+}
+function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
+  put(file, simpleLayout({ title, path, up, normal, status: `${what} ${rows.length}`, body: sList(`${title}, ${rows.length}개`, ['이름', '유형', '내용'], rows) }));
+}
+{
+  const lib = LIB();
+  // 스승·전통·출판사·주제 묶음
+  const tList = TEACHERS.filter(t => countTeacher(t.id));
+  const trList = TRADS.filter(t => countTrad(t.id));
+  const pList = PUBS();
+  const topList = [...new Set(lib.flatMap(b => b.topics || []))].map(l => ({ l, n: lib.filter(b => (b.topics || []).includes(l)).length })).sort((a, b) => b.n - a.n || a.l.localeCompare(b.l, 'ko'));
+  const audio = lib.filter(b => AUDIO[b.id] && curEd(b).reader);
+  const F = (title, href, cnt, ic = '📁', kind = 'folder', type = '폴더') => ({ href, ic, kind, cols: [title, type, cnt] });
+  sFolderPage('simple/index.html', { title: '단순 화면 첫 화면', normal: '/', rows: [
+    F('최근 올라온 책', '/simple/recent/', `${lib.length}권`),
+    F('스승별로 보기', '/simple/teachers/', `${tList.length}분`),
+    F('수행전통별로 보기', '/simple/trads/', `${trList.length}곳`),
+    F('출판사·단체별로 보기', '/simple/pubs/', `${pList.length}곳`),
+    F('주제별로 보기', '/simple/topics/', `${topList.length}가지`),
+    ...(audio.length ? [F('오디오북이 있는 책', '/simple/audio/', `${audio.length}권`)] : []),
+    F('내 서재 (이어 읽기·책갈피)', '/simple/mine/', '이 기기에 저장된 기록'),
+    F('책 제목으로 찾기', '/simple/find/', '제목·지은이로 찾기', '🔍', 'find', '찾기'),
+    F('일반 화면으로', '/?ui=normal', '지금 사이트 화면', '↩', 'normal', '이동'),
+  ] });
+  sBooksPage('simple/recent/index.html', { title: '최근 올라온 책', path: [['최근 올라온 책', '/simple/recent/']], up: '/simple/', normal: '/library/', books: lib });
+  sFolderPage('simple/teachers/index.html', { title: '스승별로 보기', path: [['스승별로 보기', '/simple/teachers/']], up: '/simple/', normal: '/library/', what: '스승',
+    rows: tList.map(t => F(t.name, `/simple/teacher/${t.id}/`, `책 ${countTeacher(t.id)}권`, t.lay ? '👤' : '🙏')) });
+  for (const t of tList) sBooksPage(`simple/teacher/${t.id}/index.html`, { title: t.name, path: [['스승별로 보기', '/simple/teachers/'], [t.name, '']], up: '/simple/teachers/', normal: `/teacher/${t.id}/`, books: lib.filter(b => tIds(b).includes(t.id)) });
+  sFolderPage('simple/trads/index.html', { title: '수행전통별로 보기', path: [['수행전통별로 보기', '/simple/trads/']], up: '/simple/', normal: '/library/', what: '전통',
+    rows: trList.map(t => F(`${t.region} ${t.name}`, `/simple/trad/${t.id}/`, `책 ${countTrad(t.id)}권`)) });
+  for (const t of trList) sBooksPage(`simple/trad/${t.id}/index.html`, { title: `${t.region} ${t.name}`, path: [['수행전통별로 보기', '/simple/trads/'], [t.name, '']], up: '/simple/trads/', normal: `/library/?trad=${t.id}`, books: lib.filter(b => tIds(b).some(x => tradIdsOf(teacherById(x)).includes(t.id))) });
+  sFolderPage('simple/pubs/index.html', { title: '출판사·단체별로 보기', path: [['출판사·단체별로 보기', '/simple/pubs/']], up: '/simple/', normal: '/library/', what: '출판사·단체',
+    rows: pList.map((p, i) => F(p.name, `/simple/pub/${i + 1}/`, `책 ${p.n}권`, '🏛')) });
+  pList.forEach((p, i) => sBooksPage(`simple/pub/${i + 1}/index.html`, { title: p.name, path: [['출판사·단체별로 보기', '/simple/pubs/'], [p.name, '']], up: '/simple/pubs/', normal: pubHref(p.key), books: lib.filter(b => pubsAll(b).some(x => x.key === p.key)) }));
+  sFolderPage('simple/topics/index.html', { title: '주제별로 보기', path: [['주제별로 보기', '/simple/topics/']], up: '/simple/', normal: '/library/', what: '주제',
+    rows: topList.map((x, i) => F(x.l, `/simple/topic/${i + 1}/`, `책 ${x.n}권`, '🏷')) });
+  topList.forEach((x, i) => sBooksPage(`simple/topic/${i + 1}/index.html`, { title: x.l, path: [['주제별로 보기', '/simple/topics/'], [x.l, '']], up: '/simple/topics/', normal: `/library/?topic=${encodeURIComponent(x.l)}`, books: lib.filter(b => (b.topics || []).includes(x.l)) }));
+  if (audio.length) sBooksPage('simple/audio/index.html', { title: '오디오북이 있는 책', path: [['오디오북이 있는 책', '/simple/audio/']], up: '/simple/', normal: '/library/', books: audio });
+  // 책 하나 = 폴더
+  for (const b of lib) {
+    const e = curEd(b), f = formats(b).filter(x => x.url), P = [['최근 올라온 책', '/simple/recent/'], [b.title, '']];
+    const rows = [];
+    if (hasText(b)) rows.push({ href: `/simple/book/${b.id}/read/`, ic: '📖', kind: 'read', cols: ['온라인으로 읽기', '장 목록에서 장을 골라 글로 읽기'] });
+    if (e.reader) rows.push({ href: `/read/${b.id}/`, ic: '🔊', kind: 'listen', cols: ['듣기 (일반 읽기 화면)', '읽기 화면의 ‘▶ 듣기’로 기기 목소리가 읽어 줌'] });
+    if (e.reader && AUDIO[b.id]) rows.push({ href: `/read/${b.id}/?audio=1`, ic: '🎧', kind: 'audio', cols: [AUDIO[b.id].human ? '오디오북 (사람이 읽은 녹음)' : '오디오북 (기계 음성)', '읽기 화면에서 바로 재생'] });
+    for (const x of f) rows.push({ href: x.url, ic: x.k === 'PDF' ? '📄' : x.k === 'EPUB' ? '📘' : '📝', kind: 'file', dl: !x.ext, ext: x.ext, cols: [`${x.name} ${x.ext ? '(다른 사이트에서)' : '내려받기'}`, x.ext ? x.site : '파일'] });
+    rows.push({ href: `/simple/book/${b.id}/about/`, ic: 'ℹ️', kind: 'about', cols: ['책 소개', '지은이·옮긴이·펴낸 곳·소개 글·차례'] });
+    rows.push({ href: `/book/${b.id}/?ui=normal`, ic: '↩', kind: 'normal', cols: ['일반 화면에서 이 책 보기', '표지 그림이 있는 책 소개 화면'] });
+    put(`simple/book/${b.id}/index.html`, simpleLayout({ title: b.title, path: P, up: '/simple/recent/', normal: `/book/${b.id}/`, status: sBy(b),
+      body: `<p class="s-sub">${esc([sBy(b), pubLine(b), edText(e)].filter(Boolean).join(' · '))}</p>${sList(`${b.title}, ${rows.length}개`, ['이름', '내용'], rows)}` }));
+    const cl = (Array.isArray(b.contents) ? b.contents.map(c => typeof c === 'string' ? c : c.title || '') : String(b.contents || '').split('\n')).map(x => x.trim()).filter(Boolean);
+    const toc = cl.length ? `<h2>차례</h2><ul class="s-toc">${cl.map(c => `<li>${boxNum(esc(c))}</li>`).join('')}</ul>` : '';
+    put(`simple/book/${b.id}/about/index.html`, simpleLayout({ title: `${b.title} – 책 소개`, path: [...P.slice(0, 1), [b.title, `/simple/book/${b.id}/`], ['책 소개', '']], up: `/simple/book/${b.id}/`, normal: `/book/${b.id}/`, page: 'simple-text',
+      body: `<div class="s-prose"><dl class="s-dl">${[['제목', b.title + (b.subtitle ? ' – ' + b.subtitle : '')], ['지은이', b.byline], ['옮긴이', b.translator], ['펴낸 곳', pubLine(b)], ['판', edText(e)], ['원서', b.original_title]].filter(x => x[1]).map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>
+      ${b.description ? `<h2>책 소개</h2>${marked.parse(String(b.description))}` : '<p>책 소개는 준비 중입니다.</p>'}${b.author_intro ? `<h2>지은이 소개</h2>${marked.parse(String(b.author_intro))}` : ''}${b.translator_intro ? `<h2>${esc(b.translator_intro_title || '옮긴이 소개')}</h2>${marked.parse(String(b.translator_intro))}` : ''}${toc}
+      <p><a class="s-link" href="/simple/book/${b.id}/">◀ ${esc(b.title)} 목록으로 돌아가기</a></p></div>` }));
+    if (hasText(b)) put(`simple/book/${b.id}/read/index.html`, simpleLayout({ title: `${b.title} – 장 목록`, path: [...P.slice(0, 1), [b.title, `/simple/book/${b.id}/`], ['온라인으로 읽기', '']], up: `/simple/book/${b.id}/`, normal: `/read/${b.id}/`, page: 'simple-read',
+      body: `<div id="sRead" data-book="${b.id}" data-title="${esc(b.title)}" data-by="${esc(sBy(b))}" data-manifest="${esc(readerManifest(b))}"><p>장 목록을 불러오는 중입니다…</p></div>` }));
+  }
+  put('simple/mine/index.html', simpleLayout({ title: '내 서재', path: [['내 서재', '']], up: '/simple/', normal: '/mynotes/', page: 'simple-mine', body: '<div id="sMine"><p>이 기기에 저장된 기록을 불러오는 중입니다…</p></div>' }));
+  const findData = JSON.stringify(sByAdded(lib).map(b => [b.id, b.title, sBy(b), b.added || '', sFmt(b), [b.subtitle, b.original_title, ...(b.topics || [])].filter(Boolean).join(' ')])).replace(/</g, '\\u003c');
+  put('simple/find/index.html', simpleLayout({ title: '책 제목으로 찾기', path: [['책 제목으로 찾기', '']], up: '/simple/', normal: '/search/', page: 'simple-find',
+    body: `<div class="s-find"><label for="sQ">찾을 말 (책 제목·지은이·옮긴이)</label><input id="sQ" type="search" autocomplete="off"><p id="sFindMsg" class="s-sub" role="status" aria-live="polite"></p></div><div id="sFindList"></div><script type="application/json" id="sFindData">${findData}</script>` }));
+}
+
 /* ---------- 쓰기 ---------- */
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.cpSync(path.join(ROOT, 'public'), OUT, { recursive: true });
@@ -920,7 +1034,7 @@ for (const [p, html] of Object.entries(pages)) {
 // 검색엔진용: sitemap.xml·robots.txt (관리자·회원·학습 자료실·내 서재·검색 결과 화면은 빼고, noindex 페이지도 뺌)
 {
   const SITE = 'https://dhammadana.kr';
-  const skip = /^(admin|account|mynotes|study|search|read|offline|404)(\/|\.|$)/;
+  const skip = /^(admin|account|mynotes|study|search|read|offline|404|simple)(\/|\.|$)/;
   const urls = Object.entries(pages).filter(([p, html]) => /(^|\/)index\.html$/.test(p) && !skip.test(p) && !/name="robots" content="[^"]*noindex/.test(html))
     .map(([p]) => SITE + '/' + p.replace(/index\.html$/, '')).sort();
   const xe = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');

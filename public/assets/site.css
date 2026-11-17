@@ -1177,3 +1177,66 @@ ul.grid,ul.upd,ul.trad-grid{list-style:none;margin:0;padding:0}
 .seg.seg-font{grid-template-columns:repeat(3,1fr)}
 .seg.seg-font button:nth-child(4){border-left:0}
 .seg.seg-font button:nth-child(n+4){border-top:1px solid var(--line)}
+
+/* ---------- 단순 화면 (시각장애인용, 운영자 요청 2026-11-18) — 센스월드 '내 콘텐츠'처럼 한 줄씩 고르는 목록 ---------- */
+.ui-tog{display:inline-flex;border:1.5px solid var(--accent,#9a5b13);border-radius:20px;overflow:hidden;font-size:14px;line-height:1;vertical-align:middle}
+.ui-tog>*{padding:7px 11px;color:inherit;text-decoration:none}
+.ui-tog .on{background:var(--accent,#9a5b13);color:#fff;font-weight:600}
+.ui-tog a:hover{background:rgba(0,0,0,.06)}
+.skip.quiet:focus{left:-9999px}
+body.simple-ui{margin:0;background:#fff;color:#111;font-family:var(--sans);font-size:20px;line-height:1.6}
+.simple-ui .s-bar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:#1f3b8a;color:#fff;padding:10px 16px}
+.simple-ui .s-bar .s-tog{order:9;margin-left:auto;border-color:#fff;font-size:16px}
+.simple-ui .s-bar .s-tog .on{background:#fff;color:#1f3b8a}
+.simple-ui .s-bar .s-tog a{color:#fff}
+.simple-ui .s-btn{display:inline-block;border:2px solid #fff;border-radius:7px;padding:4px 12px;background:transparent;color:#fff;font:inherit;font-size:18px;font-weight:700;text-decoration:none;cursor:pointer}
+.simple-ui .s-path{font-size:18px}
+.simple-ui .s-path a{color:#fff}
+.simple-ui :focus-visible{outline:3px solid #ffbf3f;outline-offset:2px}
+.simple-ui .s-main{max-width:1100px;margin:0 auto;padding:14px 16px 90px}
+.simple-ui .s-h1{font-size:26px;margin:6px 0 10px;line-height:1.35}
+.simple-ui .s-h1:focus{outline:none}
+.simple-ui .s-sub{color:#333;font-size:17px;margin:0 0 10px}
+.s-tbl{--cols:minmax(0,2.2fr) minmax(0,2fr) 150px minmax(0,1.4fr)}
+.s-head{display:grid;grid-template-columns:40px var(--cols);gap:12px;background:#e9e6df;border:2px solid #555;border-bottom:none;padding:8px 12px;font-size:16px;font-weight:700}
+.s-head::before{content:''}
+.s-list{list-style:none;margin:0;padding:0;border:2px solid #555}
+.s-row{border-bottom:1px solid #ccc;cursor:pointer}
+.s-row:last-child{border-bottom:none}
+.s-row>a,.s-row>.s-a{display:grid;grid-template-columns:40px var(--cols);gap:12px;align-items:baseline;padding:11px 12px;color:#111;text-decoration:none}
+.s-row .s-c1{font-weight:700;color:#0b2a7a}
+.s-row .s-c4{font-size:16px}
+.s-row.sel{background:#ffe9a8;box-shadow:inset 0 0 0 3px #b35c00}
+.s-row:focus{outline:none}
+.s-row:hover{background:#f6f1e3}
+.s-row.sel:hover{background:#ffe9a8}
+.simple-ui .s-stat{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-between;gap:12px;background:#e9e6df;border-top:2px solid #555;padding:8px 16px;font-size:16px}
+.simple-ui .s-chnav{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 18px}
+.simple-ui .s-chnav .s-btn{color:#1f3b8a;border-color:#1f3b8a;font-size:17px}
+.simple-ui .s-text .reflow{max-width:none;font-size:calc(21px * var(--fs,1))}
+.simple-ui .s-text .pmark{display:block;color:#555;font-size:15px;margin:18px 0 4px}
+.simple-ui .s-prose{max-width:46em}
+.simple-ui .s-prose h2{font-size:22px;margin:24px 0 8px}
+.simple-ui .s-dl{display:grid;grid-template-columns:7em 1fr;gap:6px 14px;margin:0 0 10px}
+.simple-ui .s-dl dt{font-weight:700}.simple-ui .s-dl dd{margin:0}
+.simple-ui .s-link{font-weight:700;color:#0b2a7a}
+.simple-ui .s-find label{display:block;font-weight:700;margin-bottom:6px}
+.simple-ui .s-find input{width:100%;max-width:640px;font:inherit;font-size:22px;padding:10px 12px;border:2px solid #333;border-radius:8px;box-sizing:border-box}
+@media (max-width:700px){
+  body.simple-ui{font-size:19px}
+  .simple-ui .s-path{flex-basis:100%;order:10;font-size:16px}
+  .s-head{display:none}
+  .s-row>a,.s-row>.s-a{display:block;padding:12px 12px}
+  .s-row .s-ic{margin-right:6px}
+  .s-row .s-c{display:inline}
+  .s-row .s-c:not(.s-c1){font-size:16px;color:#333}
+  .s-row .s-c1{display:inline}
+  .s-row .s-c1::after{content:'\A';white-space:pre}
+  .s-row .sr+.s-c:not(.s-c2)::before{content:' · '}
+}
+/* 밤·고대비 모드에서도 */
+:root.mode-night .simple-ui,:root.mode-contrast .simple-ui{background:#000;color:#fff}
+:root.mode-night .s-row>*,:root.mode-contrast .s-row>*{color:#fff}
+:root.mode-night .s-row .s-c1,:root.mode-contrast .s-row .s-c1{color:#ffe36b}
+:root.mode-night .s-row.sel,:root.mode-contrast .s-row.sel{background:#3a2a00}
+:root.mode-night .s-head,:root.mode-contrast .s-head,:root.mode-night .simple-ui .s-stat,:root.mode-contrast .simple-ui .s-stat{background:#222;color:#fff}

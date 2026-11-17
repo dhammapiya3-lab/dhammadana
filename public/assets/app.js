@@ -2202,18 +2202,32 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
   if (ios && /Safari/i.test(navigator.userAgent) && !/CriOS|FxiOS|EdgiOS/i.test(navigator.userAgent)) setTimeout(show, 1500);
 })();
 if ('speechSynthesis' in window) speechSynthesis.addEventListener && speechSynthesis.addEventListener('voiceschanged', () => { const v = $('#ttsVoice'); if (v) v.innerHTML = voiceOptions(ttsOpt().voice); });
-initHeader();
+const SIMPLE_UI = document.body.classList.contains('simple-ui');  // 단순 화면에는 머리·재생기가 없음
+if (!SIMPLE_UI) initHeader();
 // 화면 낭독기가 페이지를 열면 위쪽 메뉴를 건너뛰고 본문 제목부터 읽게 (운영자 요청, 2026-11-17 — 모바일 카페처럼, 보이는 화면은 그대로)
 //  - 보이지 않는 읽기 위치(커서)만 본문의 큰 제목(h1)에 둠. 메뉴는 없어지지 않고 위로 넘기면 들림.
 (function focusMain() {
   const pg = document.body.dataset.page;
-  if (location.hash || ['reader', 'search', 'members'].includes(pg)) return;  // 주소에 #자리가 있거나, 스스로 커서를 두는 화면은 그대로
+  if (location.hash || ['reader', 'search', 'members'].includes(pg) || document.body.classList.contains('simple-ui')) return;  // 단순 화면은 initSimple 이 커서를 둠  // 주소에 #자리가 있거나, 스스로 커서를 두는 화면은 그대로
   const h = $('main h1'); if (!h) return;
-  const go = () => { if (document.activeElement && document.activeElement !== document.body) return; h.setAttribute('tabindex', '-1'); h.classList.add('auto-focus'); try { h.focus({ preventScroll: true }); } catch (e) {} };
+  // 처음 온 기기: 본문 제목 바로 앞에 '시각장애인용 단순 모드로 보기'를 두고 커서를 거기에 — 낭독기가 맨 먼저 읽고, ↓·Tab 이면 본문 제목으로 (운영자 요청, 2026-11-18). 화면에는 보이지 않음
+  const ask = !store.get('ui', '') && !store.get('ui-asked', false) && document.body.dataset.simple;
+  const go = () => {
+    if (document.activeElement && document.activeElement !== document.body) return;
+    if (ask) {
+      store.set('ui-asked', true);
+      const a = document.createElement('a'); a.className = 'skip quiet'; a.href = document.body.dataset.simple + '?ui=simple'; a.dataset.ui = 'simple';
+      a.textContent = '시각장애인용 단순 모드로 보기. Enter 를 누르면 바뀝니다.';
+      a.addEventListener('blur', () => a.classList.remove('quiet'), { once: true });
+      h.parentNode.insertBefore(a, h); try { a.focus({ preventScroll: true }); return; } catch (e) {}
+    }
+    // 본문 제목 바로 다음에도 숨은 '단순 모드로 보기' — 제목부터 읽다가 첫 Tab 이 늘 이 링크 (운영자 요청, 2026-11-18)
+    if (document.body.dataset.simple && !$('.ui-after')) { const a = document.createElement('a'); a.className = 'skip ui-after'; a.href = document.body.dataset.simple + '?ui=simple'; a.dataset.ui = 'simple'; a.textContent = '시각장애인용 단순 모드로 보기'; h.after(a); }
+    h.setAttribute('tabindex', '-1'); h.classList.add('auto-focus'); try { h.focus({ preventScroll: true }); } catch (e) {}
+  };
   if (document.readyState === 'complete') go(); else window.addEventListener('load', go, { once: true });
 })();
-initPlayer();
-initPage();
+if (!SIMPLE_UI) { initPlayer(); initPage(); }
 if (ACC.token) syncNow();
 // 방문 통계: 기기마다 무작위 번호만 (개인정보 없음). 관리자 기기(통계에서 빼기)는 보내지 않음
 try {
@@ -2494,4 +2508,125 @@ function loadReadFont(f) {
   if (/^nanum/.test(f || '')) addCss('rf-nanum', 'https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@400;700&display=swap');
 }
 function loadFontLabels() { addCss('rf-nanum-label', 'https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&display=swap&text=' + encodeURIComponent('나눔명조고딕')); }
+
+/* ---------- 단순 화면 (시각장애인용, 운영자 요청 2026-11-18) ----------
+   센스월드 '내 콘텐츠'처럼: 목록에 들어오면 첫 줄(또는 지난번에 고른 줄)이 바로 골라져 있고, ↑↓ 로 움직이면 바로 골라짐.
+   Enter 열기 · Backspace 위 목록으로 · Home/End · PageUp/Down(10줄) · 글자 키(ㄱ~ㅎ 포함)로 그 글자로 시작하는 줄로. */
+const CHO = 'ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ';
+const choOf = ch => { const c = ch.charCodeAt(0) - 0xAC00; return c >= 0 && c < 11172 ? CHO[Math.floor(c / 588)] : ch.toLowerCase(); };
+function sListbox(ul) {
+  const items = $$(':scope > li', ul); if (!items.length) return null;
+  ul.setAttribute('role', 'listbox'); if (ul.dataset.label) ul.setAttribute('aria-label', ul.dataset.label);
+  const key = 'dd-ssel:' + location.pathname + location.search;
+  let sel = 0; try { sel = Math.min(+sessionStorage.getItem(key) || 0, items.length - 1); } catch (e) {}
+  // 줄 안의 링크는 글자 덩어리로 바꾸고(목록 줄 안에 또 누를 것이 있으면 낭독기가 헷갈림) 주소는 줄에 기억
+  items.forEach((li, i) => { li.setAttribute('role', 'option'); li.id = li.id || 'so-' + i; const a = $('a', li); if (!a) return;
+    li.dataset.href = a.getAttribute('href'); if (a.hasAttribute('download')) li.dataset.dl = '1'; if (a.target === '_blank') li.dataset.ext = '1';
+    const sp = document.createElement('span'); sp.className = 's-a'; while (a.firstChild) sp.appendChild(a.firstChild); a.replaceWith(sp); });
+  const pick = (i, focus = true) => {
+    i = Math.max(0, Math.min(items.length - 1, i)); sel = i;
+    items.forEach((li, k) => { const on = k === i; li.setAttribute('aria-selected', on ? 'true' : 'false'); li.tabIndex = on ? 0 : -1; li.classList.toggle('sel', on); });
+    try { sessionStorage.setItem(key, i); } catch (e) {}
+    if (focus) { try { items[i].focus({ preventScroll: true }); } catch (e) {} }
+    const r = items[i].getBoundingClientRect(); if (r.top < 70 || r.bottom > innerHeight - 50) items[i].scrollIntoView({ block: 'center' });
+  };
+  const open = i => { pick(i, false); const li = items[i], h = li.dataset.href; if (!h) return;
+    if (li.dataset.ext) { window.open(h, '_blank', 'noopener'); return; }
+    if (li.dataset.dl) { const a = document.createElement('a'); a.href = h; a.download = ''; document.body.appendChild(a); a.click(); a.remove(); toast('파일을 내려받습니다'); return; }
+    location.href = h; };
+  pick(sel, false);
+  ul.addEventListener('keydown', e => {
+    if (e.altKey || e.ctrlKey || e.metaKey) return;
+    const k = e.key;
+    if (k === 'ArrowDown') pick(sel + 1); else if (k === 'ArrowUp') pick(sel - 1);
+    else if (k === 'Home') pick(0); else if (k === 'End') pick(items.length - 1);
+    else if (k === 'PageDown') pick(sel + 10); else if (k === 'PageUp') pick(sel - 10);
+    else if (k === 'Enter' || k === ' ') open(sel);
+    else if (k === 'Backspace') { const u = $('#sUp'); if (!u) return; u.click(); }
+    else if (k.length === 1 && /\S/.test(k)) {
+      const want = choOf(k), name = li => ($('.s-c1', li) || li).textContent.trim();
+      for (let s = 1; s <= items.length; s++) { const j = (sel + s) % items.length, t = name(items[j]); if (t && (t[0].toLowerCase() === k.toLowerCase() || choOf(t[0]) === want)) { pick(j); break; } }
+    } else return;
+    e.preventDefault();
+  });
+  items.forEach((li, i) => li.addEventListener('click', () => open(i)));
+  return { pick, focus: () => pick(sel) };
+}
+const sRow = (href, cols, ic = '📁', kind = '') => `<li class="s-row${kind ? ' k-' + kind : ''}"><a href="${esc(href)}"><span class="s-ic" aria-hidden="true">${ic}</span>${cols.map((c, i) => `${i && c ? '<span class="sr">, </span>' : ''}<span class="s-c s-c${i + 1}">${esc(c || '')}</span>`).join('')}</a></li>`;
+const sHead = h => `<div class="s-head" aria-hidden="true">${h.map((x, i) => `<span class="s-c s-c${i + 1}">${esc(x)}</span>`).join('')}</div>`;
+const sStat = t => { const s = $('.s-stat span:last-child'); if (s) s.textContent = t; };
+function sFocusFirst() {
+  // 목록이 있으면 골라진 줄로, 없으면 제목으로 — 화면 낭독기가 바로 읽음
+  const ul = $('.s-list'); const lb = ul && (ul._lb || (ul._lb = sListbox(ul)));
+  const go = () => { if (lb) lb.focus(); else { const h = $('.s-h1'); if (h) h.focus({ preventScroll: true }); } };
+  if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true });
+}
+async function initSimpleRead() {
+  const root = $('#sRead'); if (!root) return;
+  const id = root.dataset.book, title = root.dataset.title;
+  let man; try { man = await manifest(root.dataset.manifest); } catch (e) { root.innerHTML = '<p>읽기 자료를 불러오지 못했습니다. 잠시 뒤 다시 열어 주세요.</p>'; return; }
+  const pages = man.pages.map((p, i) => ({ n: i + 1, label: p.label || '', img: '', big: '', text: p.text || '' }));
+  R = { id, title, by: root.dataset.by, pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, spreadOk: false, spread: false, ly: null, i: 0, view: 'text', zoom: 1, fs: 1, bold: false, lh: 1.9, font: 'serif', mw: 40, centerHeads: !!man.center_heads, hl: [], speaking: false, par: [], parMode: 'off', parD: null, parEd: [], ix: man.index || null, ixPart: 0, ixQ: '', simple: true };
+  const cs = chapters(), q = new URLSearchParams(location.search), c = +q.get('c') || 0, pp = +q.get('p') || 0;
+  const nm = (ch, i) => ch.title || `${i + 1}번째 부분`;
+  const rng = ch => { const a = R.pages[ch.from - 1], b = R.pages[ch.to - 1]; return a && a.label ? `${a.label}쪽${b && b.label && b.label !== a.label ? '~' + b.label + '쪽' : ''}` : ''; };
+  if (!c && !pp) {
+    const last = store.get('pos-' + id, 0), lc = last > 1 ? chapterOf(last) : -1;
+    const rows = (lc >= 0 ? [sRow(`?p=${last}`, [`이어 읽기: ${nm(cs[lc], lc)}`, pageName(R.pages[last - 1] || { n: last }), '지난번에 읽던 곳'], '🔖', 'resume')] : [])
+      .concat(cs.map((ch, i) => sRow(`?c=${i + 1}`, [nm(ch, i), rng(ch), `${i + 1} / ${cs.length}`], '📄', 'ch')));
+    root.innerHTML = `<div class="s-tbl" style="--cols:minmax(0,3fr) minmax(0,1.3fr) 110px">` + sHead(['장 이름', '쪽', '순서']) + `<ul class="s-list" data-label="${esc(title)} 장 목록, ${cs.length}개">${rows.join('')}</ul></div>`;
+    sStat(`장 ${cs.length}`); sFocusFirst(); R = null; return;
+  }
+  let ci = c ? Math.min(c, cs.length) - 1 : chapterOf(Math.min(pp, R.pages.length));
+  R.i = (pp && !c ? Math.min(pp, R.pages.length) : cs[ci].from) - 1;
+  const ch = cs[ci];
+  let html = reflowHtml().replace(/<div class="ch-head">[\s\S]*?<\/div>/, '').replace(/<nav class="ch-nav"[\s\S]*?<\/nav>/, '');
+  const nav = (where) => `<nav class="s-chnav" aria-label="장 이동 (${where})"><a href="./" class="s-btn">▤ 장 목록</a>${ci > 0 ? `<a class="s-btn" href="?c=${ci}">◀ 앞 장: ${esc(nm(cs[ci - 1], ci - 1))}</a>` : ''}${ci < cs.length - 1 ? `<a class="s-btn" href="?c=${ci + 2}">다음 장: ${esc(nm(cs[ci + 1], ci + 1))} ▶</a>` : '<span class="s-sub">책의 끝입니다.</span>'}</nav>`;
+  root.innerHTML = nav('위') + `<div class="s-text">${html}</div>` + nav('아래');
+  const h1 = $('.s-h1'); h1.textContent = nm(ch, ci); document.title = `${nm(ch, ci)} · ${title} · 단순 화면`;
+  const cur = $('.s-path [aria-current]'); if (cur) cur.textContent = nm(ch, ci);
+  sStat(`${ci + 1} / ${cs.length} 장`);
+  store.set('pos-' + id, R.i + 1);  // 일반 읽기 화면에서도 이어 읽게
+  { const n = R.i + 1, old = store.get('hist', []), h = old.filter(x => x.id !== id);  // 내 서재 '이어 읽기'
+    h.unshift({ id, t: title, by: R.by, p: n, pl: (R.pages[n - 1] || {}).label || '', ch: ch.title || '', pct: Math.round(n / R.pages.length * 100), first: (old.find(x => x.id === id) || {}).first || today(), d: today(), ts: Date.now() }); store.set('hist', h.slice(0, 100)); }
+  R = null;
+  const go = () => { const t = pp && !c && $('#pm-' + pp); if (t) t.scrollIntoView(); h1.focus({ preventScroll: !!t }); };
+  if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true });
+}
+function initSimpleMine() {
+  const root = $('#sMine'); if (!root) return;
+  const H = store.get('hist', []), B = bms();
+  const rows = H.map(h => sRow(`/simple/book/${h.id}/read/?p=${h.p}`, [h.t, `이어 읽기${h.ch ? ': ' + h.ch : ''}${h.pl ? ', ' + h.pl + '쪽' : ''}`, `${h.pct || 0}% · ${h.d || ''}`], '📖', 'resume'))
+    .concat(B.map(m => sRow(`/simple/book/${m.id}/read/?p=${m.p}`, [m.t, `책갈피: ${m.pl ? m.pl + '쪽' : m.p + '번째 쪽'}${m.note ? ' – ' + m.note : ''}`, m.d || ''], '🔖', 'bm')));
+  root.innerHTML = rows.length ? `<div class="s-tbl" style="--cols:minmax(0,2fr) minmax(0,2.4fr) minmax(0,1fr)">` + sHead(['책', '어디', '언제']) + `<ul class="s-list" data-label="내 서재, 읽던 책 ${H.length}권, 책갈피 ${B.length}개">${rows.join('')}</ul></div>` : '<p>아직 이 기기에서 읽은 책이 없습니다. 책을 읽으면 여기에 이어 읽을 곳이 남습니다.</p>';
+  sStat(`읽던 책 ${H.length} · 책갈피 ${B.length}`); sFocusFirst();
+}
+function initSimpleFind() {
+  const q = $('#sQ'); if (!q) return;
+  let data = []; try { data = JSON.parse($('#sFindData').textContent); } catch (e) {}
+  const out = $('#sFindList'), msg = $('#sFindMsg'), nz = s => norm(String(s || '')).toLowerCase().replace(/\s/g, '');
+  let t = 0;
+  const run = () => {
+    const w = nz(q.value); if (!w) { out.innerHTML = ''; msg.textContent = `책 ${data.length}권에서 찾습니다. 찾을 말을 넣으면 아래에 결과가 나오고, ↓ 키로 결과 목록에 들어갑니다.`; sStat(''); return; }
+    const hit = data.filter(d => nz(d[1] + d[2] + d[5]).includes(w));
+    out.innerHTML = hit.length ? '<div class="s-tbl">' + sHead(['이름', '지은이 · 옮긴이', '등록일', '형식']) + `<ul class="s-list" data-label="찾은 책 ${hit.length}권">${hit.map(d => sRow(`/simple/book/${d[0]}/`, [d[1], d[2], d[3] ? d[3] + ' 등록' : '', d[4]], '📕', 'book')).join('')}</ul></div>` : '';
+    const ul = $('.s-list', out); if (ul) ul._lb = sListbox(ul);
+    msg.textContent = hit.length ? `${hit.length}권을 찾았습니다. ↓ 키로 목록에 들어갑니다.` : '찾은 책이 없습니다.'; sStat(hit.length ? `찾은 책 ${hit.length}` : '');
+  };
+  q.addEventListener('input', () => { clearTimeout(t); t = setTimeout(run, 250); });
+  q.addEventListener('keydown', e => { if ((e.key === 'ArrowDown' || e.key === 'Enter') && $('.s-list', out)) { e.preventDefault(); $('.s-list', out)._lb.pick(0); } });
+  run(); const go = () => q.focus(); if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true });
+}
+(function initSimple() {
+  // 어느 화면에서든 '단순 | 일반'을 고르면 기기가 기억
+  document.addEventListener('click', e => { const a = e.target.closest('[data-ui]'); if (a) store.set('ui', a.dataset.ui); });
+  if (!document.body.classList.contains('simple-ui')) return;
+  const back = $('#sBack'); if (back) back.onclick = () => { if (history.length > 1 && document.referrer.startsWith(location.origin)) history.back(); else location.href = ($('#sUp') || {}).href || '/simple/'; };
+  const pg = document.body.dataset.page;
+  if (pg === 'simple-read') initSimpleRead(); else if (pg === 'simple-mine') initSimpleMine(); else if (pg === 'simple-find') initSimpleFind();
+  else if (pg === 'simple-text') { const go = () => $('.s-h1').focus({ preventScroll: true }); if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true }); }
+  else sFocusFirst();
+  // 목록 밖에서도 Backspace 로 위 목록으로 (입력 칸 밖에서만)
+  document.addEventListener('keydown', e => { if (e.key === 'Backspace' && !e.altKey && !e.ctrlKey && !e.target.matches('input,textarea,select,.s-list,.s-list *')) { const u = $('#sUp'); if (u) { e.preventDefault(); u.click(); } } });
+})();
 })();
