@@ -121,5 +121,12 @@
   "order": 5,
   "hidden": false,
   "no_copy": false,
-  "hide_update": false
+  "hide_update": false,
+  "originals": [
+    {
+      "lang": "미얀마어",
+      "mode": "file",
+      "url": "orig/DL-0005/DL-0005_원서_미얀마어.pdf"
+    }
+  ]
 }
