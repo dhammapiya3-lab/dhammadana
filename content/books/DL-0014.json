@@ -116,5 +116,12 @@
       "url": "https://ashintejaniya.org/books-awareness-is-not-enough",
       "note": "'영어 원서 N쪽'은 이 판에 인쇄된 쪽 번호"
     }
+  ],
+  "originals": [
+    {
+      "lang": "영어",
+      "mode": "file",
+      "url": "orig/DL-0014/DL-0014_원서_영어.pdf"
+    }
   ]
 }
