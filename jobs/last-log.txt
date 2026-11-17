@@ -1,12 +1,10 @@
-Foremost-Monks 36-Nandaka 13 장
-Foremost-Monks 37-Nanda 13 장
+Pannasa 01-King-Aditta 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 98 개 / 한글판 이야기 79 편
-공개 주소 확인: 200 1763299바이트
-이야기 Foremost-Monks/36-Nandaka {'pdf': 20488910, 'zip': 20224611, 'n': 13}
-이야기 Foremost-Monks/37-Nanda {'pdf': 21048276, 'zip': 20786020, 'n': 13}
-책 Foremost-Monks {'pdf': 964242065, 'pdfs': 101425508, 'zip': 963742197, 'stories': 34, 'n': 689}
-내려받기 파일: 3 묶음 새로 만듦
-글로 보기: 79 이야기
+R2 에 올림: 76 개 / 한글판 이야기 80 편
+공개 주소 확인: 200 1478371바이트
+이야기 Pannasa/01-King-Aditta {'pdf': 19971683, 'zip': 19709196, 'n': 15}
+책 Pannasa {'pdf': 19963379, 'pdfs': 1980229, 'zip': 19709685, 'stories': 1, 'n': 15}
+내려받기 파일: 2 묶음 새로 만듦
+글로 보기: 80 이야기
 41-Mogharaja
 50-Mahasudassana
