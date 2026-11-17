@@ -1,14 +1,10 @@
-Foremost-Monks 30-Ananda 34 장
-Foremost-Monks 31-Uruvela-Kassapa 15 장
-Foremost-Monks 32-Kaludayi 12 장
+Foremost-Monks 22-Kundadhana 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 168 개 / 한글판 이야기 73 편
-공개 주소 확인: 200 1349975바이트
-이야기 Foremost-Monks/30-Ananda {'pdf': 44220456, 'zip': 43947882, 'n': 34}
-이야기 Foremost-Monks/31-Uruvela-Kassapa {'pdf': 17980120, 'zip': 17708723, 'n': 15}
-이야기 Foremost-Monks/32-Kaludayi {'pdf': 14665113, 'zip': 14399911, 'n': 12}
-책 Foremost-Monks {'pdf': 819779733, 'pdfs': 86419012, 'zip': 819317755, 'stories': 28, 'n': 591}
-내려받기 파일: 4 묶음 새로 만듦
-글로 보기: 73 이야기
+R2 에 올림: 76 개 / 한글판 이야기 74 편
+공개 주소 확인: 200 1713627바이트
+이야기 Foremost-Monks/22-Kundadhana {'pdf': 22486186, 'zip': 22220412, 'n': 15}
+책 Foremost-Monks {'pdf': 842005718, 'pdfs': 88815888, 'zip': 841538025, 'stories': 29, 'n': 606}
+내려받기 파일: 2 묶음 새로 만듦
+글로 보기: 74 이야기
 41-Mogharaja
 13-Singalakamata
