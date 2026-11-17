@@ -1,0 +1,752 @@
+[
+ {
+  "img": "images/04-Arindama-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     322,
+     570,
+     358
+    ],
+    "ko": "아린다마 자따까",
+    "cover": false,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     150,
+     356,
+     650,
+     410
+    ],
+    "ko": "철저한 내려놓음을 담은 빤냐사 자따까 이야기\n보시 바라밀(dānapāramī)과 진실의 서원(saccakiriyā)의 원리를\n되살린 북부 타이 전통 벽화로 살펴봅니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Arindama-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     468,
+     50,
+     752,
+     98
+    ],
+    "ko": "이야기의 시작",
+    "cover": false,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     472,
+     100,
+     750,
+     374
+    ],
+    "ko": "제따와나에서 비구들이 스승의 뛰어난 보시 바라밀을 찬탄했습니다.\n장엄한 부처님 자리에 앉으신 부처님께서는 지난날 물질의 보시만으로는 만족하지 못하셨던 일을 밝히시며, 수찌의 아린다마 왕 전생 이야기를 시작하셨습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Arindama-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     30,
+     630,
+     90
+    ],
+    "ko": "궁극의 서원:\n날마다 보시당 여섯 곳에서 금 육십만 냥을 나누어 주어도 아린다마 왕의 기쁨은 더 깊은 희생을 바랐습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     300,
+     86,
+     500,
+     120
+    ],
+    "ko": "밖의 재물:\n나라와 재물을 아낌없이 나눔.",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     408,
+     328,
+     584,
+     396
+    ],
+    "ko": "안의 서원:\n“누가 내 머리나 심장이나\n살을 달라 하면… 주리라.”\n일체지를 위한 서원.",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Arindama-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     500,
+     30,
+     780,
+     110
+    ],
+    "ko": "삭까가 나서다:\n시험이 높아지다",
+    "cover": false,
+    "align": "center",
+    "em": 25,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     496,
+     112,
+     784,
+     206
+    ],
+    "ko": "왕의 서원을 느낀 삭까의 자리가 뜨거워졌습니다. 바라문으로 나타난 삭까는 보시 바라밀(dānapāramī)의 끝을 시험했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     510,
+     194,
+     772,
+     216
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     500,
+     208,
+     780,
+     380
+    ],
+    "ko": "1. 금 천 냥\n(곧바로 내줌)\n2. 수찌 왕국\n(망설임 없이 내줌)\n3. 왕의 수레\n(떠날 때 내줌)",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Arindama-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     288,
+     36,
+     512,
+     100
+    ],
+    "ko": "수찌를 내주다\n나라를 내주는 뜻으로 물을 붓자, 큰 땅이 증인이 되어 흔들렸습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     288,
+     290,
+     512,
+     402
+    ],
+    "ko": "백성과 군사들이 겁에 질려 울부짖자 아린다마가 일렀습니다.\n“조건 지어진 모든 것은 무상하다.\n계를 지켜라.”",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Arindama-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     352,
+     764,
+     430
+    ],
+    "ko": "가난 속으로 떠난 길\n동쪽 성문으로 떠나는데, 삭까가 다시 나타나 마지막 남은 왕의 수레를 달라고 했습니다. 탈것마저 내준 왕족 부부는 걸어서 길을 갔고, 신분을 잃어도 마음은 가벼웠습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Arindama-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     232,
+     4,
+     568,
+     64
+    ],
+    "ko": "궁극의 희생: 인다빳타\n늙은 바라문에게 금 천 냥을 갚으려고 보살은 마지막 맞바꿈을 했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     160,
+     232,
+     230,
+     270
+    ],
+    "ko": "노비로 팔림:\n금 500냥",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     662,
+     202,
+     738,
+     240
+    ],
+    "ko": "노비로 팔림:\n금 500냥",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     282,
+     354,
+     400,
+     420
+    ],
+    "ko": "왕비의 값\n부잣집에\n금 500냥에 팔림.",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     404,
+     354,
+     520,
+     420
+    ],
+    "ko": "왕의 값\n성문지기로 자신을\n500냥에 팔아 빚을 갚음.",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Arindama-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     424,
+     300,
+     764,
+     340
+    ],
+    "ko": "왕비의 비극",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     424,
+     340,
+     764,
+     432
+    ],
+    "ko": "노비로 일하던 왕비는 한밤의 폭풍 속에 아이를 낳았습니다.\n아이는 곧 죽었습니다. 주인에게 욕을 듣고 쫓겨난 왕비는 죽은 아이를 안고 쏟아지는 빗속을 헤맸습니다. 겹친 슬픔에 앞이 보이지 않았습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Arindama-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     94,
+     84,
+     384,
+     122
+    ],
+    "ko": "알아보지 못한 재회",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     84,
+     130,
+     392,
+     304
+    ],
+    "ko": "어둠 속에서 울던 왕비가 성문에 와서 묘지로 가게 해 달라고 문지기에게 빌었습니다. 왕비는 남편을 알아보지 못했습니다.\n\n아린다마는 자신을 밝히고 왕비를 위로했습니다. “헤어짐과 이별, 이것이 중생의 일반적인 길이오.”",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Arindama-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     332,
+     102,
+     394,
+     126
+    ],
+    "ko": "해치지 않음",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     400,
+     84,
+     458,
+     108
+    ],
+    "ko": "훔치지 않음",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     366,
+     151,
+     448,
+     174
+    ],
+    "ko": "삿된 음행 없음",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     396,
+     212,
+     462,
+     236
+    ],
+    "ko": "술 마시지 않음",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     332,
+     254,
+     420,
+     278
+    ],
+    "ko": "청정한 보시",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     140,
+     350,
+     660,
+     436
+    ],
+    "ko": "진실의 서원(saccakiriyā)의 원리\n죽음을 되돌리려고 왕은 흠 없는 계의 청정함을 진실의 서원에 담았습니다.\n[ 흠 없는 계 ] + [ 말로 한 진실 ] = [ 우주가 되돌림 ]\n“이 진실의 말로 내 아들이 살아나기를.”",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Arindama-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     80,
+     386,
+     128
+    ],
+    "ko": "우주가 되돌리고 예언하다",
+    "cover": false,
+    "align": "left",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     62,
+     130,
+     386,
+     344
+    ],
+    "ko": "왕의 굳센 서원에 이끌린 삭까가 죽지 않는 물을 뿌렸습니다.\n\n아이는 되살아나 오른쪽으로 몸을 돌렸습니다.\n\n나라를 되돌려 주며 삭까가 예언했습니다. “이 서원으로 당신은 미래의 밧다 겁에 부처가 되리라.”",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Arindama-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     92,
+     610,
+     136
+    ],
+    "ko": "업의 계보표",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     226,
+     134,
+     576,
+     176
+    ],
+    "ko": "자따까를 마치며 부처님께서는 과거의 인물들을 지금의 인물들과 이으셨습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     222,
+     184,
+     398,
+     210
+    ],
+    "ko": "과거 (수찌)",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     402,
+     184,
+     580,
+     210
+    ],
+    "ko": "현재",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     222,
+     211,
+     398,
+     237
+    ],
+    "ko": "삭까",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     402,
+     211,
+     580,
+     237
+    ],
+    "ko": "아누룻다",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     222,
+     239,
+     398,
+     265
+    ],
+    "ko": "수완나갑바 왕비",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     402,
+     239,
+     580,
+     265
+    ],
+    "ko": "야소다라",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     222,
+     267,
+     398,
+     293
+    ],
+    "ko": "아들",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     402,
+     267,
+     580,
+     293
+    ],
+    "ko": "라훌라",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     222,
+     295,
+     398,
+     321
+    ],
+    "ko": "백성",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     402,
+     295,
+     580,
+     321
+    ],
+    "ko": "부처님의 대중",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     222,
+     323,
+     398,
+     349
+    ],
+    "ko": "아린다마 왕",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     402,
+     323,
+     580,
+     349
+    ],
+    "ko": "깨달으신 분",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ }
+]
