@@ -264,7 +264,7 @@
         "site": "",
         "created": ""
       },
-      "reader": false,
+      "reader": true,
       "sources": [],
       "collection": "",
       "collected": "",

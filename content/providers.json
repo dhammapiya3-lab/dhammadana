@@ -296,14 +296,15 @@
       "urls": [
         "https://cafe.daum.net/vipassanacenter"
       ],
-      "partner": true,
+      "partner": false,
       "aliases": [
         "행복한숲",
         "행복한숲 출판사",
         "도서출판 행복한 숲",
         "행복한 숲 출판사"
       ],
-      "note": "도서 안내 · cafe.daum.net/vipassanacenter"
+      "note": "도서 안내 · cafe.daum.net/vipassanacenter",
+      "coop": false
     }
   ]
 }

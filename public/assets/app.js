@@ -888,7 +888,7 @@ const boldHead = e => { const t = e.textContent.trim(), b = e.firstElementChild;
 function subTargets(c) {
   if (!c) return [];
   // 소제목 글과 같은 문단(목차 쪽과 다음 쪽에서)을 찾아 그 자리로. 각주 문단에는 멈추지 않음 (운영자 요청, 2026-11-09)
-  const nk = x => headKey(x).replace(/[.,:·\-–—!?■_“”"]/g, '');
+  const nk = x => headKey(x).replace(/[.,:·\-–—!?■□▷◆◇_“”"]/g, '');  // 소제목 앞 □·▷ 표시는 빼고 비교 (DL-0034, 2026-11-17)
   const vis = e => e && e.getClientRects().length && !e.classList.contains('fn');
   // 장 끝의 굵은 한 줄(뒤에 본문 글이 없음 — 머리말 끝 서명 '…합장' 등)은 소제목이 아님: 거기 멈추면 장 끝 각주·사진에 멈춘 것처럼 보임 (운영자 요청, 2026-11-11)
   const hasAfter = e => { for (let x = e.nextElementSibling; x; x = x.nextElementSibling) if (x.matches('p[data-pg]:not(.fn):not(.ch-dup)') && !boldHead(x) && x.textContent.trim()) return true; return false; };
