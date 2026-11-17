@@ -224,6 +224,7 @@ pg['paras'].append(f'![#아소카 왕의 사자상]({lion})'); pg['kinds'] += ['
 PAGES.append(pg); chapters.append(('속표지', 0, 0))
 
 pg = build(3, '')
+pg['paras'][0] = pg['paras'][0].replace('\n', ' ')   # 저작권 글: 가운데 맞춘 첫 줄도 한 문단으로 (운영자 요청, 2026-11-17)
 # '속표지설명' 앞(저작권 글)과 뒤를 나눔
 ix = next(i for i, p in enumerate(pg['paras']) if plain(p).startswith('속표지설명'))
 rest = pg['paras'][ix].split('\n', 1)
