@@ -1,0 +1,374 @@
+[
+ {
+  "img": "images/29-The-Last-Meal-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     268,
+     172,
+     536,
+     222
+    ],
+    "ko": "마지막 공양",
+    "cover": [
+     44,
+     44,
+     42
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     268,
+     222,
+     536,
+     300
+    ],
+    "ko": "대반열반경 —\n부처님의 마지막 날들, 쭌다의 공양,\n꾸시나라로 가는 여정",
+    "cover": [
+     44,
+     44,
+     42
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-The-Last-Meal-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     364,
+     760,
+     446
+    ],
+    "ko": "보가나가라에 머무신 뒤 세존께서는 큰 비구 승가와 함께\n빠와에 이르셨습니다. 그리고 대장장이 쭌다의\n망고 숲에서 편히 쉬셨습니다.",
+    "cover": [
+     230,
+     227,
+     214
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-The-Last-Meal-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     10,
+     140,
+     350,
+     348
+    ],
+    "ko": "오셨다는 소식을 들은 쭌다가\n다가와 절했습니다.\n부처님께서는 법을 설하시어\n그를 가르치고 북돋우고\n기쁘게 하셨습니다. 쭌다는\n이튿날 공양을 올릴 영광을\n청했고, 부처님께서는\n침묵으로 허락하셨습니다.",
+    "cover": [
+     185,
+     145,
+     106
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-The-Last-Meal-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     14,
+     770,
+     74
+    ],
+    "ko": "새벽에 쭌다는 훌륭한 음식과 수까라맛다와(sūkaramaddava)를 마련했습니다.\n주석서들은 이 음식을 네 가지로 풀이합니다.",
+    "cover": [
+     189,
+     149,
+     113
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     250,
+     124,
+     390,
+     202
+    ],
+    "ko": "1. 큰 돼지의\n신선한 고기",
+    "cover": [
+     198,
+     156,
+     114
+    ],
+    "align": "right",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     416,
+     124,
+     542,
+     200
+    ],
+    "ko": "2. 소젖으로\n지은 부드러운 밥",
+    "cover": [
+     195,
+     154,
+     113
+    ],
+    "align": "left",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     272,
+     296,
+     392,
+     388
+    ],
+    "ko": "3. 돼지가\n밟은\n죽순",
+    "cover": [
+     190,
+     150,
+     108
+    ],
+    "align": "right",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     418,
+     296,
+     560,
+     326
+    ],
+    "ko": "4. 버섯",
+    "cover": [
+     188,
+     148,
+     110
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-The-Last-Meal-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     626,
+     40,
+     800,
+     452
+    ],
+    "ko": "부처님께서 오시어\n자리에 앉으시고\n분명히 말씀하셨습니다.\n\n“쭌다여, 그대가\n마련한 수까라맛다와는\n나에게 올리고,\n비구 승가에는\n마련한 다른 음식을\n올려라.”",
+    "cover": [
+     235,
+     231,
+     220
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-The-Last-Meal-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     282,
+     270,
+     760,
+     388
+    ],
+    "ko": "“남은 수까라맛다와는 구덩이에 묻어라.”\n부처님께서 이르셨습니다. “신들과 사람이 사는\n이 세상에서 여래 말고는 그것을 온전히\n소화할 수 있는 이를 보지 못한다.”",
+    "cover": [
+     190,
+     157,
+     121
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-The-Last-Meal-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     84,
+     302,
+     366
+    ],
+    "ko": "공양을 드신 뒤\n심한 병이 일어났습니다.\n피가 섞인 설사와\n죽음에 이를 듯한\n심한 고통이었습니다.\n\n세존께서는 마음챙김과\n분명한 앎으로\n흔들림 없이\n고통을 견디셨습니다.",
+    "cover": [
+     190,
+     156,
+     120
+    ],
+    "align": "left",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-The-Last-Meal-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     86,
+     250,
+     162
+    ],
+    "ko": "마지막 공양이\n부처님을 돌아가시게\n했을까요?",
+    "cover": [
+     183,
+     152,
+     118
+    ],
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     96,
+     334,
+     712,
+     448
+    ],
+    "ko": "주석서는 분명히 아니라고 합니다.\nbhuttassa udapādi, na pana bhuttapaccayā.\n\n병은 공양을 드신 뒤에 일어났지만, 공양 때문은 아니었습니다.",
+    "cover": [
+     184,
+     152,
+     115
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-The-Last-Meal-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     366,
+     36,
+     776,
+     190
+    ],
+    "ko": "병을 견디시며 굳건한 분께서\n아난다 장로에게 말씀하셨습니다.\n“오라, 아난다여, 꾸시나라로 가자.”\n굳은 결의로 세존께서는\n마지막 길을 떠나셨습니다.",
+    "cover": [
+     188,
+     159,
+     125
+    ],
+    "align": "left",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-The-Last-Meal-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     148,
+     336,
+     182
+    ],
+    "ko": " ",
+    "cover": [
+     220,
+     180,
+     139
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     468,
+     148,
+     640,
+     182
+    ],
+    "ko": " ",
+    "cover": [
+     219,
+     177,
+     134
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     170,
+     64,
+     650,
+     148
+    ],
+    "ko": "“대장장이 쭌다의 음식을 드시고\n굳건한 분께서 아주 심한 병을 겪으셨네.”\n제1차 결집의 송출자들이 읊은 이 게송은\n꾸시나라 가는 길에 마음챙김으로 견디신 모습을 전합니다.",
+    "cover": [
+     221,
+     179,
+     134
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
