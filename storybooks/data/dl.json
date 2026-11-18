@@ -508,11 +508,11 @@
 "zip": 18838833
 },
 "Pannasa": {
-"n": 456,
-"pdf": 588334587,
-"pdfs": 56567756,
-"stories": 29,
-"zip": 587915617
+"n": 471,
+"pdf": 608904624,
+"pdfs": 58500849,
+"stories": 30,
+"zip": 608479674
 },
 "Pannasa/01-King-Aditta": {
 "n": 15,
@@ -659,12 +659,17 @@
 "pdf": 20855121,
 "zip": 20588625
 },
+"Pannasa/30-White-Mouse": {
+"n": 15,
+"pdf": 20826558,
+"zip": 20564456
+},
 "The-Great-Emancipation": {
-"n": 116,
-"pdf": 119684653,
-"pdfs": 12034393,
-"stories": 10,
-"zip": 119396948
+"n": 234,
+"pdf": 247067584,
+"pdfs": 25096628,
+"stories": 20,
+"zip": 246736370
 },
 "The-Great-Emancipation/15-The-Courtesan-Ambapali": {
 "n": 12,
@@ -678,42 +683,92 @@
 },
 "The-Great-Emancipation/17-Anandas-Failure": {
 "n": 11,
-"pdf": 12012863,
-"zip": 11750418
+"pdf": 12010814,
+"zip": 11750417
 },
 "The-Great-Emancipation/18-The-Relinquishment-of-the-Life-Process": {
 "n": 11,
-"pdf": 12634109,
-"zip": 12357721
+"pdf": 12628250,
+"zip": 12357720
 },
 "The-Great-Emancipation/29-The-Last-Meal": {
 "n": 10,
-"pdf": 9927534,
-"zip": 9666627
+"pdf": 9927231,
+"zip": 9666629
 },
 "The-Great-Emancipation/30-Bringing-Drinking-Water": {
 "n": 12,
-"pdf": 12667469,
-"zip": 12397876
+"pdf": 12662333,
+"zip": 12397875
 },
 "The-Great-Emancipation/31-The-Story-Concerning-Pukkusa-Mallaputta": {
 "n": 13,
-"pdf": 13547873,
-"zip": 13267257
+"pdf": 13531878,
+"zip": 13267243
 },
 "The-Great-Emancipation/32-Cundas-Great-Gain": {
 "n": 10,
-"pdf": 11112672,
-"zip": 10847131
+"pdf": 11108296,
+"zip": 10847130
 },
 "The-Great-Emancipation/33-Worshipping-the-Realised-One": {
 "n": 11,
-"pdf": 10986667,
-"zip": 10712529
+"pdf": 10978324,
+"zip": 10712526
 },
 "The-Great-Emancipation/34-The-Visit-of-the-Divinities": {
 "n": 14,
-"pdf": 13611291,
-"zip": 13342444
+"pdf": 13605096,
+"zip": 13342432
+},
+"The-Great-Emancipation/35-The-Four-Places-that-Produce-Enthusiasm": {
+"n": 14,
+"pdf": 16183281,
+"zip": 15915319
+},
+"The-Great-Emancipation/36-Anandas-Marvellous-Qualities": {
+"n": 12,
+"pdf": 12403321,
+"zip": 12138380
+},
+"The-Great-Emancipation/37-Kusinaras-History": {
+"n": 11,
+"pdf": 11760378,
+"zip": 11498701
+},
+"The-Great-Emancipation/38-The-Mallas-Worship-the-Fortunate-One": {
+"n": 9,
+"pdf": 11207041,
+"zip": 10938108
+},
+"The-Great-Emancipation/39-Subhadda-the-Last-Direct-Disciple": {
+"n": 14,
+"pdf": 14843727,
+"zip": 14576391
+},
+"The-Great-Emancipation/40-The-Last-Instructions-of-the-Realised-One": {
+"n": 8,
+"pdf": 7651858,
+"zip": 7387990
+},
+"The-Great-Emancipation/41-The-Final-Emancipation": {
+"n": 13,
+"pdf": 13497949,
+"zip": 13234080
+},
+"The-Great-Emancipation/42-The-Preparation-of-the-Body": {
+"n": 15,
+"pdf": 16686247,
+"zip": 16416433
+},
+"The-Great-Emancipation/43-The-Story-Concerning-Mahakassapa": {
+"n": 12,
+"pdf": 13078682,
+"zip": 12814012
+},
+"The-Great-Emancipation/44-The-Distribution-of-the-Relics": {
+"n": 10,
+"pdf": 12681047,
+"zip": 12422307
 }
 }
