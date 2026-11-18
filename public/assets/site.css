@@ -1266,3 +1266,8 @@ body.simple-ui{margin:0;background:#fff;color:#111;font-family:var(--sans);font-
 #p-keys li:focus-visible,#p-keys .note:focus-visible,.s-keys li:focus-visible,.s-keys p:focus-visible{outline:3px solid #b35c00;outline-offset:2px;border-radius:3px}
 /* 듣는 동안 커서가 문단을 따라갈 때 테두리는 없게 (노란 표시가 이미 있음) */
 .reflow [data-pg]:focus,.s-text [data-pg]:focus{outline:none}
+/* 단순 화면: 쪽 표시·문단이 위쪽 파란 줄 뒤로 숨지 않게 (운영자 요청, 2026-11-18) */
+body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
+.s-text [id^="pm-"],.s-text [data-pg],.s-h1,.s-keys,.s-tts{scroll-margin-top:calc(var(--sbar,64px) + 8px)}
+/* 읽기 화면: 위 메뉴가 떠 있을 때도 쪽 표시가 가리지 않게 */
+#rBody .reflow .pmark{scroll-margin-top:56px}

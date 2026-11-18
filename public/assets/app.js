@@ -2781,17 +2781,30 @@ function simpleHelp() {
     if (e.shiftKey ? i <= 0 : i === f.length - 1) { e.preventDefault(); f[e.shiftKey ? f.length - 1 : 0].focus(); }
   });
 }
-function sPage(d) {
-  const ms = $$('.s-text [id^="pm-"]'); if (!ms.length) return;
-  let cur = 0; ms.forEach((m, i) => { if (m.getBoundingClientRect().top <= 90) cur = i; });
-  const j = cur + d;
-  if (j < 0 || j >= ms.length) { sChap(d); return; }  // 장의 처음·끝이면 앞·다음 장으로
-  const m = ms[j]; m.scrollIntoView({ block: 'start' });
+// 위쪽 파란 줄(◀ 뒤로·▲ 위로·지금 위치) 높이 — 쪽 표시가 그 뒤로 숨지 않게 그만큼 내려 둠 (운영자 요청, 2026-11-18)
+const sBarH = () => { const b = $('.s-bar'); const h = b ? Math.ceil(b.getBoundingClientRect().bottom) : 0; document.documentElement.style.setProperty('--sbar', h + 'px'); return h; };
+function sGoMark(m) {
+  SR.pm = m.id; sBarH(); m.scrollIntoView({ block: 'start' });  // CSS scroll-margin-top 이 파란 줄 높이만큼 띄움
   if (m.textContent.trim()) kbFocus(m); else { toast(`${+m.id.slice(3)}번째 쪽`); kbFocus(m.nextElementSibling || m); }
 }
-function sChap(d) {
+function sPage(d) {
+  const ms = $$('.s-text [id^="pm-"]'); if (!ms.length) { sChap(d); return; }
+  const top = sBarH() + 24;
+  let cur = -1; ms.forEach((m, i) => { if (m.getBoundingClientRect().top <= top) cur = i; });
+  { const k = ms.findIndex(m => m.id === SR.pm); if (k >= 0) { const r = ms[k].getBoundingClientRect(); if (r.top >= 0 && r.top < innerHeight) cur = k; } }  // 방금 옮겨 간 쪽(장 끝 짧은 쪽처럼 맨 위로 못 올라간 쪽도)
+  const j = cur + d;
+  if (j >= ms.length) { sChap(1); return; }       // 장의 마지막 쪽 → 다음 장 처음
+  if (j < 0) { sChap(-1, true); return; }         // 장의 첫 쪽 → 앞 장의 마지막 쪽
+  sGoMark(ms[j]);
+}
+function sChap(d, toEnd) {
   const go = SR.ci + d; if (go < 0 || go >= SR.cs.length) { toast(d > 0 ? '책의 끝입니다' : '책의 처음입니다'); return; }
-  const was = SR.speaking; srStop(true); srChapter(go, 0, true, () => { scrollTo(0, 0); $('.s-h1').focus({ preventScroll: true }); if (was) srSpeak(true); });
+  const was = SR.speaking; srStop(true); SR.pm = null;
+  srChapter(go, 0, true, () => {
+    const ms = $$('.s-text [id^="pm-"]');
+    if (toEnd && ms.length > 1) { sGoMark(ms[ms.length - 1]); return; }
+    scrollTo(0, 0); $('.s-h1').focus({ preventScroll: true }); if (was) srSpeak(true);
+  });
 }
 function simpleKey(e) {
   const k = (e.code || '').replace(/^Key/, ''), reading = !!(SR.r && $('#sSpeak'));
