@@ -219,6 +219,17 @@ const LIC_URL = {
   'CC0': 'https://creativecommons.org/publicdomain/zero/1.0/deed.ko',
   '자유 이용(퍼블릭 도메인)': 'https://creativecommons.org/publicdomain/mark/1.0/deed.ko'
 };
+// 라이선스 쉬운 설명 (단순 화면 '라이선스' 항목, 운영자 요청 2026-11-18)
+const LIC_INFO = {
+  'CC BY-NC-ND': ['저작자표시-비영리-변경금지', ['출처(지은이·옮긴이·펴낸 곳)를 밝히면 누구나 자유롭게 복사하고 나눌 수 있습니다.', '판매 등 영리 목적으로는 쓸 수 없습니다.', '내용을 고치거나 덧붙여 배포할 수 없습니다.']],
+  'CC BY-NC-SA': ['저작자표시-비영리-동일조건변경허락', ['출처(지은이·옮긴이·펴낸 곳)를 밝히면 누구나 자유롭게 복사하고 나눌 수 있습니다.', '판매 등 영리 목적으로는 쓸 수 없습니다.', '내용을 고치거나 덧붙여 새로 만들 수 있지만, 그렇게 만든 것도 같은 조건(CC BY-NC-SA)으로 나누어야 합니다.']],
+  'CC BY-NC': ['저작자표시-비영리', ['출처를 밝히면 누구나 자유롭게 복사하고 나눌 수 있고, 고쳐 쓸 수도 있습니다.', '판매 등 영리 목적으로는 쓸 수 없습니다.']],
+  'CC BY-ND': ['저작자표시-변경금지', ['출처를 밝히면 누구나 자유롭게 복사하고 나눌 수 있습니다.', '내용을 고치거나 덧붙여 배포할 수 없습니다.']],
+  'CC BY-SA': ['저작자표시-동일조건변경허락', ['출처를 밝히면 누구나 자유롭게 복사하고 나누고 고쳐 쓸 수 있습니다.', '고쳐서 나눌 때는 같은 조건(CC BY-SA)으로 나누어야 합니다.']],
+  'CC BY': ['저작자표시', ['출처를 밝히면 누구나 자유롭게 복사하고 나누고 고쳐 쓸 수 있습니다.']],
+  'CC0': ['퍼블릭 도메인 기증', ['조건 없이 누구나 자유롭게 쓸 수 있습니다.']],
+  '자유 이용(퍼블릭 도메인)': ['퍼블릭 도메인', ['조건 없이 누구나 자유롭게 쓸 수 있습니다.']]
+};
 const licHtml = l => LIC_URL[String(l || '').trim()] ? `<a href="${LIC_URL[String(l).trim()]}" target="_blank" rel="noopener license">${esc(l)} ↗</a>` : esc(l || '—');
 const SRC_FILE = { pdf: 'PDF(화면용)', pdf_print: 'PDF(인쇄용)', pdf_cover: 'PDF(인쇄용 표지)', epub: 'EPUB', hwp: 'HWP(한글 파일)' };
 const safeName = s => String(s).replace(/[\\/:*?"<>|\u0000-\u001f]+/g, ' ').replace(/\s+/g, ' ').trim();
@@ -1031,6 +1042,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     if (e.reader && AUDIO[b.id]) rows.push({ href: `/read/${b.id}/?audio=1`, ic: '🎧', kind: 'audio', cols: [AUDIO[b.id].human ? '오디오북 (사람이 읽은 녹음)' : '오디오북 (기계 음성)', '읽기 화면에서 바로 재생'] });
     for (const x of f) rows.push({ href: x.url, ic: x.k === 'PDF' ? '📄' : x.k === 'EPUB' ? '📘' : '📝', kind: 'file', dl: !x.ext, ext: x.ext, cols: [`${x.name} ${x.ext ? '(다른 사이트에서)' : '내려받기'}`, x.ext ? x.site : '파일'] });
     rows.push({ href: `/simple/book/${b.id}/about/`, ic: 'ℹ️', kind: 'about', cols: ['책 소개', '지은이·옮긴이·펴낸 곳·소개 글·차례'] });
+    rows.push({ href: `/simple/book/${b.id}/license/`, ic: '⚖️', kind: 'license', cols: ['라이선스', b.license ? `이용 조건: ${b.license}` : '이용 조건'] });
     rows.push({ href: `/book/${b.id}/?ui=normal`, ic: '↩', kind: 'normal', cols: ['일반 화면에서 이 책 보기', '표지 그림이 있는 책 소개 화면'] });
     put(`simple/book/${b.id}/index.html`, simpleLayout({ title: b.title, path: P, up: '/simple/recent/', normal: `/book/${b.id}/`, status: sBy(b),
       body: `<p class="s-sub">${esc([sBy(b), pubLine(b), edText(e)].filter(Boolean).join(' · '))}</p>${sList(`${b.title}, ${rows.length}개`, ['이름', '내용'], rows)}` }));
@@ -1040,6 +1052,15 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
       body: `<div class="s-prose"><dl class="s-dl">${[['제목', b.title + (b.subtitle ? ' – ' + b.subtitle : '')], ['지은이', b.byline], ['옮긴이', b.translator], ['펴낸 곳', pubLine(b)], ['판', edText(e)], ['원서', b.original_title]].filter(x => x[1]).map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>
       ${b.description ? `<h2>책 소개</h2>${marked.parse(String(b.description))}` : '<p>책 소개는 준비 중입니다.</p>'}${b.author_intro ? `<h2>지은이 소개</h2>${marked.parse(String(b.author_intro))}` : ''}${b.translator_intro ? `<h2>${esc(b.translator_intro_title || '옮긴이 소개')}</h2>${marked.parse(String(b.translator_intro))}` : ''}${toc}
       <p><a class="s-link" href="/simple/book/${b.id}/">◀ ${esc(b.title)} 목록으로 돌아가기</a></p></div>` }));
+    { // 라이선스 (운영자 요청, 2026-11-18)
+      const L = String(b.license || '').trim(), LI = LIC_INFO[L], perms = (e.permissions || []).map(permById).filter(Boolean);
+      const pl = e.permission_status === 'pending' ? '허락을 기다리는 중' : e.permission_status === 'public' ? '공개 배포된 자료' : e.permission_status === 'confirmed' || perms.length ? '허락 확인됨' : '';
+      put(`simple/book/${b.id}/license/index.html`, simpleLayout({ title: `${b.title} – 라이선스`, path: [...P.slice(0, 1), [b.title, `/simple/book/${b.id}/`], ['라이선스', '']], up: `/simple/book/${b.id}/`, normal: `/book/${b.id}/`, page: 'simple-text',
+        body: `<div class="s-prose"><p>이 책은 법보시 도서입니다. 다음의 이용 조건(라이선스)을 준수하는 한에서 복사, 배포가 가능합니다.</p>
+      ${L ? `<h2>${esc(L)}${LI ? ` (${esc(LI[0])})` : ''}</h2>${LI ? `<ul>${LI[1].map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}${LIC_URL[L] ? `<p><a class="s-link" href="${LIC_URL[L]}" target="_blank" rel="noopener license">크리에이티브 커먼즈 ${esc(LI ? LI[0] : L)} 라이선스 자세히 보기 (새 창)</a></p>` : ''}` : '<p>이용 조건은 준비 중입니다.</p>'}
+      ${pl || e.permission_note ? `<h2>게시 허락</h2>${pl ? `<p>${esc(pl)}</p>` : ''}${e.permission_note ? `<p>${esc(e.permission_note).replace(/\n/g, '<br>')}</p>` : ''}` : ''}
+      <p><a class="s-link" href="/simple/book/${b.id}/">◀ ${esc(b.title)} 목록으로 돌아가기</a></p></div>` }));
+    }
     if (hasText(b)) put(`simple/book/${b.id}/read/index.html`, simpleLayout({ title: `${b.title} – 장 목록`, path: [...P.slice(0, 1), [b.title, `/simple/book/${b.id}/`], ['온라인으로 읽기', '']], up: `/simple/book/${b.id}/`, normal: `/read/${b.id}/`, page: 'simple-read',
       body: `<div id="sRead" data-book="${b.id}" data-title="${esc(b.title)}" data-by="${esc(sBy(b))}" data-manifest="${esc(readerManifest(b))}"><p>장 목록을 불러오는 중입니다…</p></div>` }));
   }
