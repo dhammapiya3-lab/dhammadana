@@ -13,7 +13,9 @@
   "stores": [],
   "book_type": "법문집",
   "original_title": "ချမ်းသာကိုရှာဖွေခြင်း",
-  "original_language": [],
+  "original_language": [
+    "미얀마어"
+  ],
   "original_source": "",
   "series": "",
   "main": [],
@@ -109,5 +111,15 @@
   "order": 3,
   "hidden": false,
   "hide_update": false,
-  "provider_chip": true
+  "provider_chip": true,
+  "parallel_editions": [
+    {
+      "lang": "my",
+      "title": "ချမ်းသာကို ရှာဖွေခြင်း",
+      "by": "ဦးရွှေအောင်",
+      "edition": "ရာပြည့်စာအုပ်တိုက် (양곤) 4쇄(စတုတ္ထအကြိမ်) 2004년 11월, 1,000부 · 스캔 PDF 109쪽(한 쪽에 책 두 쪽)",
+      "url": "",
+      "note": "원서 PDF 는 글자층이 없는 스캔본이라 쪽 그림을 보며 옮겨 적었음. 스캔에서 잘린 가장자리 글자는 1995년 초판(နှလုံးလှစာပေ)으로 채움"
+    }
+  ]
 }

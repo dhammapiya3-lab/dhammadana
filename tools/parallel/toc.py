@@ -71,7 +71,7 @@ def toc_group(body, orig, groups, enc, log=print, book=None):
     for kp, ep in pins:   # 손으로 정한 짝(toc_pins.json)
         for i, x in enumerate(KT):
             for j, y in enumerate(ET):
-                if _plain(x[3]).strip() == kp and y[3].strip() == ep: TS[i, j] = 1.0; log('  손으로 정한 짝:', kp, '↔', ep)
+                if _plain(x[3]).strip() == kp and y[3].strip() == ep: TS[i, :] = -1.0; TS[:, j] = -1.0; TS[i, j] = 1.0; log('  손으로 정한 짝:', kp, '↔', ep)
     TS[TS < 0.2] = -1.0      # 뜻이 거의 안 닮은 줄은 짝짓지 않음 (원서 'About the publisher' ↔ '다섯 행선지' 같은 것)
     # 순서를 지키는 1:1 짝짓기 (건너뛰기 −0.15)
     SKIP = -0.15; N, M = len(KT), len(ET); V = {(0, 0): 0.0}; B = {}
