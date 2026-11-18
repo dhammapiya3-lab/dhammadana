@@ -1,4 +1,31 @@
 {
+"After-Awakening": {
+"n": 52,
+"pdf": 55837021,
+"pdfs": 5616709,
+"stories": 4,
+"zip": 55562138
+},
+"After-Awakening/01-03-After-Awakening": {
+"n": 14,
+"pdf": 16561250,
+"zip": 16292225
+},
+"After-Awakening/04-Tapussa-Bhallika": {
+"n": 11,
+"pdf": 11621917,
+"zip": 11348935
+},
+"After-Awakening/05-Brahmas-Request": {
+"n": 12,
+"pdf": 12318864,
+"zip": 12047101
+},
+"After-Awakening/06-08-First-Teachings": {
+"n": 15,
+"pdf": 16147047,
+"zip": 15874299
+},
 "Foremost-Monks": {
 "n": 802,
 "pdf": 1121534741,
@@ -436,11 +463,11 @@
 "zip": 18838833
 },
 "Pannasa": {
-"n": 206,
-"pdf": 265461492,
-"pdfs": 25451285,
-"stories": 13,
-"zip": 265136862
+"n": 277,
+"pdf": 356864592,
+"pdfs": 34164914,
+"stories": 18,
+"zip": 356513343
 },
 "Pannasa/01-King-Aditta": {
 "n": 15,
@@ -506,5 +533,30 @@
 "n": 13,
 "pdf": 16772541,
 "zip": 16509593
+},
+"Pannasa/14-Surupa": {
+"n": 15,
+"pdf": 18575399,
+"zip": 18313170
+},
+"Pannasa/15-Kambala": {
+"n": 15,
+"pdf": 19736578,
+"zip": 19474180
+},
+"Pannasa/16-Cowherds-Hut": {
+"n": 13,
+"pdf": 16514805,
+"zip": 16250555
+},
+"Pannasa/17-Siricudamani": {
+"n": 13,
+"pdf": 18163945,
+"zip": 17899332
+},
+"Pannasa/18-The-Eight-Requisites": {
+"n": 15,
+"pdf": 19706581,
+"zip": 19440200
 }
 }
