@@ -1,0 +1,737 @@
+[
+ {
+  "img": "images/43-Writing-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     62,
+     614,
+     132
+    ],
+    "ko": "악카랄리키따 자따까\n글로 쓴 말씀의 우주적 공덕",
+    "cover": [
+     222,
+     182,
+     110
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     252,
+     150,
+     552,
+     192
+    ],
+    "ko": "란나 빤냐사 자따까를 그림으로 따라가며,\n삼장을 보존하는 일의 끝없는 업의 열매를 밝힙니다.",
+    "cover": [
+     212,
+     187,
+     145
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/43-Writing-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     474,
+     192,
+     762,
+     402
+    ],
+    "ko": "보존의 열매를 묻는 사리뿟따\n\n사리뿟따 존자가 기쁜 마음으로 부처님께 다가가 여쭈었습니다. “삼장의 말씀을 정성껏 쓰거나 쓰게 하는 이에게는 어떤 행복이 따릅니까?”",
+    "cover": [
+     146,
+     62,
+     36
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/43-Writing-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     372,
+     54,
+     674,
+     174
+    ],
+    "ko": "지혜로운 대신의 서원\n옛 고따마 부처님 시대에 보살은 지혜로운 대신으로 태어났습니다. 가르침을 5천 년 동안 지키려고 학자들을 이끌어 삼장을 기록하게 했습니다.",
+    "cover": [
+     222,
+     182,
+     110
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/43-Writing-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     356,
+     250,
+     560,
+     384
+    ],
+    "ko": "지극한 공양\n기뻐하며 보살이 경전을 바쳤습니다. 옛 고따마 부처님께서 이 지극한 믿음의 행위를 칭찬하시고, 글로 법을 지키는 이에게 끝없는 공덕이 있으리라 예언하셨습니다.",
+    "cover": [
+     202,
+     186,
+     157
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/43-Writing-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     464,
+     242,
+     722,
+     356
+    ],
+    "ko": "미래의 깨달음을 보시다\n옛 고따마 부처님께서 대신의 운명을 내다보셨습니다. 보살이 디빵까라 부처님께 수기를 받고, 마침내 고따마 부처님이 되리라고 예언하셨습니다.",
+    "cover": [
+     222,
+     182,
+     110
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/43-Writing-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     54,
+     276,
+     192
+    ],
+    "ko": "곧바로 천상에 태어나다\n그 큰 공덕의 첫 열매로 보살은 따와띵사 천상에 태어났습니다. 아름다운 보석으로 꾸민 커다란 황금 궁전에서 큰 행복을 누렸습니다.",
+    "cover": [
+     213,
+     191,
+     155
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/43-Writing-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     530,
+     70,
+     742,
+     196
+    ],
+    "ko": "신기한 귀환\n천상의 삶을 마친 그는 아난다 왕비의 태에 들었습니다. 태어나자 황금 상처럼 빛났고, 삭까가 도성에 일곱 보배의 비를 내렸습니다.",
+    "cover": [
+     222,
+     182,
+     110
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/43-Writing-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     38,
+     44,
+     326,
+     82
+    ],
+    "ko": "온 우주가 경배하다",
+    "cover": [
+     222,
+     182,
+     110
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     196,
+     130,
+     336,
+     162
+    ],
+    "ko": "• 천신: 천녀와 누각",
+    "cover": [
+     216,
+     189,
+     148
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     496,
+     74,
+     610,
+     106
+    ],
+    "ko": "• 짐승: 훌륭한 코끼리",
+    "cover": [
+     217,
+     190,
+     146
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     92,
+     292,
+     214,
+     326
+    ],
+    "ko": "• 사자: 좋은 음식",
+    "cover": [
+     215,
+     187,
+     143
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     584,
+     292,
+     728,
+     318
+    ],
+    "ko": "• 짐승: 훌륭한 말",
+    "cover": [
+     216,
+     188,
+     144
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     486,
+     362,
+     630,
+     396
+    ],
+    "ko": "• 나가: 향수와 보석",
+    "cover": [
+     215,
+     188,
+     144
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/43-Writing-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     330,
+     74,
+     712,
+     156
+    ],
+    "ko": "전륜성왕이 되다\n비할 데 없는 힘을 갖춘 보살은 위대한 전륜성왕으로 다스렸습니다. 천상의 아내와 용맹한 아들 천 명을 두고, 아들들을 큰 대륙에 보내 다스리게 했습니다.",
+    "cover": [
+     212,
+     186,
+     147
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/43-Writing-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     224,
+     46,
+     578,
+     82
+    ],
+    "ko": "글로 쓴 말씀이 맺는 세상의 열매",
+    "cover": [
+     222,
+     182,
+     110
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     176,
+     214,
+     304,
+     238
+    ],
+    "ko": "• 태어남: 고귀한 가문",
+    "cover": [
+     207,
+     183,
+     142
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     458,
+     214,
+     656,
+     238
+    ],
+    "ko": "• 모습: 큰 아름다움, 고운 말",
+    "cover": [
+     206,
+     183,
+     142
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     152,
+     382,
+     336,
+     406
+    ],
+    "ko": "• 재물: 끝없는 재산과 금",
+    "cover": [
+     206,
+     180,
+     137
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     432,
+     382,
+     696,
+     406
+    ],
+    "ko": "• 건강: 병과 때 이른 죽음이 없음",
+    "cover": [
+     206,
+     179,
+     137
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/43-Writing-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     216,
+     46,
+     586,
+     84
+    ],
+    "ko": "경전을 지킨 이의 영적 보호",
+    "cover": [
+     222,
+     182,
+     110
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     474,
+     140,
+     640,
+     176
+    ],
+    "ko": "• 운명: 천신이나 사람 가운데\n   으뜸으로 태어남",
+    "cover": [
+     204,
+     177,
+     138
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     92,
+     382,
+     368,
+     406
+    ],
+    "ko": "• 마음: 가장 높은 지혜와 신통",
+    "cover": [
+     201,
+     173,
+     133
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     432,
+     382,
+     700,
+     406
+    ],
+    "ko": "• 보호: 지옥·축생에 나지 않음",
+    "cover": [
+     201,
+     173,
+     135
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/43-Writing-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     480,
+     160,
+     734,
+     282
+    ],
+    "ko": "바른 다스림\n끝없는 영광을 지닌 보살은 늘 백성에게 일렀습니다. “보시하고, 계를 지키고, 부모를 공경하라. 공덕은 모든 존재에게 훌륭한 길을 열어 준다.”",
+    "cover": [
+     92,
+     60,
+     40
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/43-Writing-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     476,
+     148,
+     744,
+     304
+    ],
+    "ko": "윤회를 넘어 오르다\n가르침을 보존한 공덕은 세상을 넘어 열매 맺습니다. 쓰는 이는 마침내 가장 높은 서원을 이룹니다. 제자나 벽지불이 되거나, 일체지와 훌륭한 열반을 얻습니다.",
+    "cover": [
+     222,
+     182,
+     110
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/43-Writing-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     40,
+     546,
+     74
+    ],
+    "ko": "다시 태어남의 실을 밝히다",
+    "cover": [
+     222,
+     182,
+     110
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     152,
+     82,
+     280,
+     124
+    ],
+    "ko": "그때\n(지난 생)",
+    "cover": [
+     222,
+     182,
+     110
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     522,
+     82,
+     642,
+     124
+    ],
+    "ko": "지금\n(지금 생)",
+    "cover": [
+     222,
+     182,
+     110
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     276,
+     170,
+     520,
+     200
+    ],
+    "ko": "• 인다 왕은 지금의 숫도다나 왕입니다.",
+    "cover": [
+     212,
+     185,
+     156
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     276,
+     294,
+     520,
+     324
+    ],
+    "ko": "• 아난다 왕비는 지금의 마하마야 왕비입니다.",
+    "cover": [
+     215,
+     192,
+     166
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     268,
+     380,
+     532,
+     410
+    ],
+    "ko": "• 전륜성왕은 바로 부처님 자신입니다.",
+    "cover": [
+     222,
+     182,
+     110
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/43-Writing-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     40,
+     600,
+     130
+    ],
+    "ko": "끝없는 수확\n“사리뿟따 존자여, 삼장을 글로 써서 얻는 좋은 열매는 끝없고 헤아릴 수 없이 많다. 오래 살라. 그리고 이 자따까를 공경하는 마음으로 간직하라.”",
+    "cover": [
+     222,
+     182,
+     110
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
