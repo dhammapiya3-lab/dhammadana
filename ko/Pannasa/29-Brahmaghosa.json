@@ -1,0 +1,365 @@
+[
+ {
+  "img": "images/29-Brahmaghosa-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     42,
+     42,
+     370,
+     72
+    ],
+    "ko": "참된 의지처, 브라흐마고사 왕",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     42,
+     72,
+     370,
+     150
+    ],
+    "ko": "“비구들이여, 여래가 신과 인간의 의지처인 것은 지금만이 아니다. 지난 생에도 나는 그들의 의지처였다.”\n이렇게 스승께서 먼 옛날 쌓으신 공덕을 들려주셨습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-Brahmaghosa-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     346,
+     552,
+     432
+    ],
+    "ko": "번성한 꾸숨바뿌라에서 브라흐마고사 왕과 난다 왕비가 바르게 다스렸습니다. 왕은 네 가지 섭수법(saṅgaha vatthu), 곧 보시·사랑스러운 말·평등함·이로운 행으로 백성을 보살폈습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-Brahmaghosa-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     530,
+     44,
+     760,
+     146
+    ],
+    "ko": "빠두뭇따라 부처님께서 세상에 나시어 비구 오천 명과 함께 오셨습니다. 왕은 부처님께 예를 올리고 승가에 넉넉히 공양하며, 바른 법을 끊임없이 설해 주시기를 청했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-Brahmaghosa-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     38,
+     42,
+     272,
+     210
+    ],
+    "ko": "빠두뭇따라 부처님께서 사성제를 설하셨습니다.\n1. 괴로움: 세 가지 존재\n2. 일어남: 채울 수 없는 갈애\n3. 소멸: 열반을 얻음\n4. 길: 팔정도\n팔백억의 중생이 법을 깨달았습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-Brahmaghosa-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     264,
+     272,
+     404
+    ],
+    "ko": "왕의 큰 공덕과 보시, 계를 엄격히 지킴으로 삭까의 천상 거처가 따뜻해졌습니다. 이 흔들림 없는 덕을 시험하려고 천신들의 왕은 땅으로 내려가기로 했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-Brahmaghosa-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     44,
+     760,
+     142
+    ],
+    "ko": "삭까는 개 주인으로 변장하고, 마딸리 천신을 무서운 사냥개로 바꾸어 데려왔습니다. 그 짖는 소리에 땅이 흔들려, 떨던 백성들이 숲과 산으로 달아났습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-Brahmaghosa-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     320,
+     324,
+     760,
+     408
+    ],
+    "ko": "왕은 음식 다섯 섬을 내주고, 이어 도성의 모든 양식을 내주었습니다. 사냥개는 모두 한 입에 삼키고도 여전히 굶주렸습니다. 채울 수 없는 세속의 갈애(taṇhā)가 그대로 드러난 모습이었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-Brahmaghosa-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     232,
+     312,
+     572,
+     412
+    ],
+    "ko": "왕의 마음을 시험하려고 삭까는 거짓 가르침을 폈습니다. 탐욕과 폭력, 탑을 부수는 일, 부처님·법·승가를 믿지 않는 일이 세속의 성공과 궁극의 행복을 가져온다는 것이었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-Brahmaghosa-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     112,
+     286,
+     330
+    ],
+    "ko": "보살은 굳게 서서 곧바로 거짓 말을 물리쳤습니다. 바른 성품을 드러내며 삼보에 대한 흔들림 없는 믿음을 밝히고, 공덕이 깨달음으로 가는 참된 길이라고 말했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-Brahmaghosa-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     270,
+     46,
+     536,
+     96
+    ],
+    "ko": "꾸숨바뿌라의 업의 법칙",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     118,
+     230,
+     182
+    ],
+    "ko": "파멸: 탐욕, 수행자를 해침, 탑을 부숨, 가족을 돌보지 않음은 불행으로 이끕니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     540,
+     326,
+     762,
+     404
+    ],
+    "ko": "천상: 삼보를 받들고, 보리수를 심고, 계를 지키고, 친척을 공경하면 반드시 천상에 태어납니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-Brahmaghosa-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     244,
+     322,
+     562,
+     408
+    ],
+    "ko": "시험을 마친 삭까는 변장을 벗었습니다. 천신 천 명과 천상 궁전들과 함께 신성한 빛을 내뿜으며 꾸숨바뿌라를 밝히고, 모인 사람들에게 부지런히 공덕을 지으라고 일렀습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-Brahmaghosa-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     132,
+     504,
+     318
+    ],
+    "ko": "왕이 참된 복밭임을 안 삭까는 깊은 예언을 했습니다. 쌓아 온 덕과 흔들림 없는 믿음으로 브라흐마고사 왕은 미래에 반드시 부처가 되리라는 것이었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-Brahmaghosa-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     46,
+     308,
+     200
+    ],
+    "ko": "브라흐마고사 왕과 난다 왕비는 계속 공정하게 나라를 다스렸습니다. 백성에게 부지런히 보시하라고 가르치며 평생 승가를 받들었고, 뒷날 천상에 태어날 길을 닦았습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-Brahmaghosa-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     292,
+     42,
+     508,
+     158
+    ],
+    "ko": "업으로 이어진 인연:\n브라흐마고사 왕 → 부처님\n난다 왕비 → 웁빨라완나\n삭까 → 아누룻다\n마딸리 → 아난다\n백성들 → 제자들",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-Brahmaghosa-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     348,
+     622,
+     420
+    ],
+    "ko": "무더기(khandha)가 다하여 빠두뭇따라 부처님께서는 모든 집착의 바탕에서 벗어나 열반에 드셨습니다. 이렇게 이야기를 마치며, 여래가 쌓으신 지극한 공덕이 그분을 신과 인간의 참된 의지처로 만든다는 것을 보여 주셨습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
