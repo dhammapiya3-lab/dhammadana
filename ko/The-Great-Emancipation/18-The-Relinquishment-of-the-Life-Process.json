@@ -1,0 +1,256 @@
+[
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     334,
+     664,
+     404
+    ],
+    "ko": "수명의 형성을 내려놓으시다\n‘대반열반경’의 이야기",
+    "cover": [
+     215,
+     173,
+     136
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     130,
+     502,
+     350
+    ],
+    "ko": "악한 마라가\n세존께 다가왔습니다.\n한쪽에 서서\n부처님께 곧바로\n반열반에 드시라고\n재촉하며, 마침내\n때가 왔다고\n말했습니다.",
+    "cover": [
+     222,
+     189,
+     152
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     292,
+     170,
+     504,
+     384
+    ],
+    "ko": "부처님께서는 예전에\n마라의 청을 물리치셨습니다.\n제자들이 참된 제자가\n될 때까지 머무르겠다고\n맹세하셨습니다. 법을\n갖추고 자신 있고\n잘 단련된, 법을\n지니는 이들이\n될 때까지.",
+    "cover": [
+     220,
+     188,
+     150
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     124,
+     366,
+     676,
+     446
+    ],
+    "ko": "참된 제자는 놀라운 가르침을 설해야 합니다.\n부처님께서는 이것이 신통이나 예언을 보이는 것이 아니라\n가장 높은 기적인 가르침의 기적을 뜻한다고 밝히셨습니다.",
+    "cover": [
+     220,
+     189,
+     156
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     270,
+     130,
+     534,
+     386
+    ],
+    "ko": "마라가 선언했습니다.\n이제 바탕이 다 갖추어졌다고.\n비구, 비구니, 우바새,\n우바이, 이 네 기둥이\n모두 청정한 삶을\n잘 배우고 익혔다고.",
+    "cover": [
+     220,
+     188,
+     151
+    ],
+    "align": "center",
+    "em": 16,
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     60,
+     594,
+     150
+    ],
+    "ko": "이 참된 제자들은 이제 법을 선언하고,\n드러내고, 열어 보이고, 분석할 수 있었습니다.\n다른 이들의 그릇된 교설을 이치에 맞게\n바로잡을 수 있었습니다.",
+    "cover": [
+     219,
+     187,
+     150
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     334,
+     694,
+     404
+    ],
+    "ko": "청정한 삶은 크게 이루어지고 번성하여 널리 퍼졌습니다.\n많은 이가 지니고 신들과 사람들 사이에 잘 설해졌습니다.",
+    "cover": [
+     215,
+     181,
+     141
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     138,
+     340,
+     666,
+     418
+    ],
+    "ko": "뜻을 이루었음을 아신 세존께서 답하셨습니다.\n“악한 이여, 걱정하지 마라. 지금부터 석 달이 지나면\n여래는 반열반에 들 것이다.”",
+    "cover": [
+     214,
+     182,
+     142
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     510,
+     318,
+     720,
+     406
+    ],
+    "ko": "그때 짜빨라 탑묘에서\n세존께서는 마음챙김과\n분명한 앎으로\n수명의 형성을 내려놓으셨습니다.",
+    "cover": [
+     210,
+     177,
+     137
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     232,
+     282,
+     574,
+     370
+    ],
+    "ko": "수명의 형성을 내려놓으시자\n큰 지진이 일어났고,\n신들의 천둥 북이 무섭고\n소름 끼치게 울렸습니다.",
+    "cover": [
+     209,
+     176,
+     134
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     172,
+     342,
+     628,
+     404
+    ],
+    "ko": "그 순간의 뜻을 아신 성자께서 읊으셨습니다.\n“안으로 기뻐하고 삼매에 들어\n갑옷을 부수듯 자신의 존재를 이어 가는 것을 부수었다.”",
+    "cover": [
+     207,
+     175,
+     133
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
