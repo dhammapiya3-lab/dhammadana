@@ -1,0 +1,533 @@
+[
+ {
+  "img": "images/15-Kambala-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     326,
+     236,
+     476,
+     366
+    ],
+    "ko": "빤냐사 자따까:\n깜발라 왕의\n전생 이야기\n\n까티나 공양의\n가장 높은 열매",
+    "cover": [
+     231,
+     202,
+     153
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kambala-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     212,
+     306,
+     590,
+     396
+    ],
+    "ko": "세존께서 제따와나에 머무실 때, 사께따의 왕이 꼰단냐 큰 장로와 비구들을 왕실 정원으로 청해 우기 안거를 지내시게 했습니다.",
+    "cover": [
+     236,
+     227,
+     209
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kambala-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     436,
+     216,
+     704,
+     340
+    ],
+    "ko": "막대한 재산을 돌아본 왕은 언젠가 빈손으로 저세상에 가리라는 것을 깨달았습니다. 오래가는 공덕을 지으려고 그는 곧바로 장로께 까티나 옷감을 올리기로 했습니다.",
+    "cover": [
+     222,
+     205,
+     175
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kambala-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     510,
+     310,
+     756,
+     406
+    ],
+    "ko": "왕은 백성에게 명하여 옷감을 자르고 꿰매고 물들이게 했습니다. 그리고 까티나 가사감을 꼰단냐 장로께 올려 장군들과 백성의 마음을 큰 기쁨으로 채웠습니다.",
+    "cover": [
+     229,
+     215,
+     189
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kambala-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     470,
+     322,
+     742,
+     410
+    ],
+    "ko": "비구들이 왕의 큰 공양을 찬탄하자 부처님께서 오셔서 말씀하셨습니다. “이번만이 아니다. 옛날 윤회 속에서 나도 사라낭까라 세존께 까티나 옷감을 올렸다.”",
+    "cover": [
+     237,
+     225,
+     203
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kambala-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     500,
+     306,
+     756,
+     414
+    ],
+    "ko": "옛날 깜발라 왕이 바르게 다스렸습니다. 장자의 집안에 태어난 보살은 계가 깊었습니다. 사라낭까라 세존의 가르침을 듣고 그의 마음은 맑은 믿음으로 가득 찼습니다.",
+    "cover": [
+     227,
+     211,
+     183
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kambala-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     518,
+     312,
+     758,
+     404
+    ],
+    "ko": "보살은 하인에게 옷감을 사 오게 했습니다. 까티나 옷감과 살림살이를 사라낭까라 세존께 올리며 큰 서원을 세웠습니다. “이 까티나 옷감의 보시가 일체지로 열매 맺기를.”",
+    "cover": [
+     226,
+     205,
+     166
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kambala-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     66,
+     292,
+     178
+    ],
+    "ko": "뒷날 깜발라 왕이 사라낭까라 세존께 나아가 깊은 질문을 했습니다. “스님, 어떤 공덕이 모든 중생에게 행복으로 익습니까? 어떤 보시가 가장 큰 열매를 맺습니까?”",
+    "cover": [
+     232,
+     207,
+     166
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kambala-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     530,
+     316,
+     752,
+     410
+    ],
+    "ko": "사라낭까라 세존께서 답하셨습니다. “으뜸가는 보시는 까티나 옷감이다. 보시한 이는 큰 명성과 재물과 천신 같은 행복을 얻고, 마침내 열반의 가장 높은 행복에 이른다.”",
+    "cover": [
+     223,
+     199,
+     160
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kambala-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     38,
+     600,
+     90
+    ],
+    "ko": "준비의 열매:",
+    "cover": [
+     238,
+     233,
+     223
+    ],
+    "align": "center",
+    "em": 32,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     60,
+     352,
+     270,
+     414
+    ],
+    "ko": "옷감 사기:\n큰 재물과 명성",
+    "cover": [
+     238,
+     233,
+     222
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     298,
+     352,
+     508,
+     414
+    ],
+    "ko": "실 고르기:\n행복과 침착함",
+    "cover": [
+     240,
+     236,
+     225
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     530,
+     352,
+     752,
+     422
+    ],
+    "ko": "옷 마름질:\n영리하고 바른 목표와 실천에 능함",
+    "cover": [
+     239,
+     235,
+     225
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kambala-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     40,
+     560,
+     76
+    ],
+    "ko": "만드는 일의 열매:",
+    "cover": [
+     214,
+     180,
+     133
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     66,
+     366,
+     284,
+     410
+    ],
+    "ko": "꿰매기: 천신들의\n전륜성왕으로 태어남",
+    "cover": [
+     220,
+     191,
+     150
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     308,
+     366,
+     520,
+     410
+    ],
+    "ko": "물들이기: 모두가\n좋아하는 금빛 몸",
+    "cover": [
+     221,
+     191,
+     150
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     548,
+     366,
+     756,
+     410
+    ],
+    "ko": "향 쐬기: 큰 명성과\n재산, 끝없는 수명",
+    "cover": [
+     218,
+     188,
+     148
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kambala-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     76,
+     328,
+     724,
+     414
+    ],
+    "ko": "까티나 옷감 한 번의 보시가 세상의 끝없는 보물보다 낫습니다. 승원 팔만 사천 곳도, 코끼리 수백 마리도, 산더미 같은 금도 이 가장 높은 공양의 16분의 1에 미치지 못합니다.",
+    "cover": [
+     130,
+     88,
+     48
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kambala-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     66,
+     402,
+     176
+    ],
+    "ko": "기쁨에 찬 깜발라 왕은 해마다 까티나 가사감을 올리며 평생을 바쳤습니다. 세상을 떠난 뒤 그 큰 공덕으로 빛나는 도솔천 궁전에 태어났습니다.",
+    "cover": [
+     238,
+     224,
+     199
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kambala-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     158,
+     220,
+     290
+    ],
+    "ko": "부처님께서 전생 이야기를 마치셨습니다:",
+    "cover": [
+     244,
+     240,
+     232
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     380,
+     88,
+     580,
+     148
+    ],
+    "ko": "깜발라 왕은 지금의\n사리뿟따이다.",
+    "cover": [
+     232,
+     227,
+     219
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     380,
+     224,
+     576,
+     272
+    ],
+    "ko": "옷감을 산 사람은\n아난다이다.",
+    "cover": [
+     233,
+     229,
+     219
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     380,
+     344,
+     584,
+     404
+    ],
+    "ko": "장자의 아들은 지금의 나,\n스스로 깨달은 여래이다.",
+    "cover": [
+     235,
+     231,
+     219
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Kambala-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     92,
+     150,
+     320,
+     278
+    ],
+    "ko": "네 가지 진리, 곧 괴로움과 그 일어남(갈애)과 그 소멸(열반)과 팔정도를 설하시자, 많은 비구가 그 자리에서 예류과부터 아라한과까지 얻었습니다.",
+    "cover": [
+     231,
+     218,
+     200
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ }
+]
