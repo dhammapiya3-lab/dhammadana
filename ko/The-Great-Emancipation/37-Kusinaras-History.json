@@ -1,0 +1,256 @@
+[
+ {
+  "img": "images/37-Kusinaras-History-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     212,
+     378,
+     592,
+     448
+    ],
+    "ko": "꾸시나라의 참된 역사\n대반열반의 환상",
+    "cover": [
+     218,
+     187,
+     151
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Kusinaras-History-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     264,
+     146,
+     538,
+     302
+    ],
+    "ko": "아난다 장로가 세존께\n간청했습니다.\n“존자시여, 세존께서 이 작고\n황량한 변두리 마을에서\n반열반에 드시지 않기를 바랍니다.”",
+    "cover": [
+     224,
+     200,
+     173
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Kusinaras-History-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     136,
+     330,
+     666,
+     418
+    ],
+    "ko": "아난다는 대신 큰 도시 여섯을 말씀드렸습니다.\n짬빠, 라자가하, 사왓티, 사께따, 꼬삼비, 바라나시.\n여래께는 큰 도성이 더 어울린다고 여겼습니다.",
+    "cover": [
+     218,
+     192,
+     163
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Kusinaras-History-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     304,
+     138,
+     502,
+     350
+    ],
+    "ko": "그 큰 나라들에는\n여래께 귀의한\n부유한 왕족과\n바라문과 장자가\n많아, 여래의 몸을\n공경하며 모실\n수 있었습니다.",
+    "cover": [
+     215,
+     189,
+     156
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Kusinaras-History-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     276,
+     156,
+     530,
+     426
+    ],
+    "ko": "부처님께서\n그를 꾸짖으셨습니다.\n\n‘아난다여,\n그렇게 말하지 마라.\n“작은 마을, 황량한 마을,\n변두리 마을”이라고\n말하지 마라.’",
+    "cover": [
+     218,
+     194,
+     164
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Kusinaras-History-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     240,
+     290,
+     400
+    ],
+    "ko": "옛날에\n마하수닷사나 왕이\n있었습니다. 법다운\n전륜성왕으로 사방을\n정복하고 나라를\n굳건히 안정시켰습니다.",
+    "cover": [
+     217,
+     188,
+     156
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Kusinaras-History-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     304,
+     44,
+     500,
+     236
+    ],
+    "ko": "그의 장엄한\n나라에는 일곱 가지\n보배가 있었습니다.\n금, 은, 진주,\n보석, 유리,\n금강석, 산호.",
+    "cover": [
+     214,
+     189,
+     160
+    ],
+    "align": "center",
+    "em": 17,
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Kusinaras-History-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     136,
+     566,
+     318
+    ],
+    "ko": "바로 이곳 꾸시나라는 그때\n꾸사와띠라 불렸습니다.\n마하수닷사나 왕의 도성으로,\n번영하고 풍요롭고\n사람이 많고 먹을 것이\n넉넉했습니다.",
+    "cover": [
+     218,
+     193,
+     163
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Kusinaras-History-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     232,
+     134,
+     572,
+     318
+    ],
+    "ko": "도성 꾸사와띠는\n규모가 엄청났습니다.\n동서로 열두 요자나,\n남북으로 일곱 요자나에\n이르렀습니다.",
+    "cover": [
+     218,
+     195,
+     164
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Kusinaras-History-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     212,
+     766,
+     276
+    ],
+    "ko": "그 번영은 신들의 전설적인 도성 알라까만다에 견줄 만했습니다.\n꾸사와띠도 그처럼 풍요롭고 사람이 많고 생기가 넘쳤습니다.",
+    "cover": [
+     217,
+     194,
+     164
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Kusinaras-History-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     350,
+     772,
+     446
+    ],
+    "ko": "꾸사와띠에는 밤낮으로 열 가지 소리가 끊이지 않았습니다.\n코끼리, 말, 수레, 큰북, 작은북, 비나, 노래, 바라, 종,\n그리고 기쁜 열 번째 소리 ‘먹어라, 마셔라, 씹어라!’",
+    "cover": [
+     208,
+     180,
+     146
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
