@@ -1,0 +1,777 @@
+[
+ {
+  "img": "images/48-Siddhisara-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     30,
+     590,
+     72
+    ],
+    "ko": "공덕 있는 싯디사라 이야기",
+    "cover": [
+     229,
+     199,
+     153
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     92,
+     300,
+     200
+    ],
+    "ko": "“세존께서는 공덕을 잘 지으셨다.”\n제따와나 대중에게 부처님께서 지난 생을 들려주시며, 업의 공덕이 갈라지는 깊은 길을 보여 주셨습니다.",
+    "cover": [
+     234,
+     204,
+     162
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     48,
+     580,
+     140
+    ],
+    "ko": "바라나시에서 금빛 피부의 두 아들이 뚜시따 천상에서 태어났습니다. 위말라 왕비의 아들 싯디사라와 대신의 아들 뿐냐사라였습니다. 큰 공덕을 지닌 둘은 두려움 없이 자랐습니다.",
+    "cover": [
+     222,
+     193,
+     149
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     290,
+     400,
+     390
+    ],
+    "ko": "둘의 거친 장난에 궁정이 노했습니다. 엄한 왕은 두 소년을 내쫓았습니다. 울면서 싯디사라와 뿐냐사라는 화려한 도성을 떠나 험한 열대 숲 깊이 헤매 들어갔습니다.",
+    "cover": [
+     207,
+     170,
+     113
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     280,
+     48,
+     520,
+     100
+    ],
+    "ko": "니그로다 나무의 신이 그들의 공덕에 보답해\n신기한 황금 사슴을 주었습니다.",
+    "cover": [
+     212,
+     177,
+     118
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     50,
+     112,
+     272,
+     196
+    ],
+    "ko": "왼쪽 눈: 웃으면 일곱 가지 보석이 나옵니다.\n(뿐냐사라가 먹음)",
+    "cover": [
+     227,
+     209,
+     175
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     516,
+     112,
+     762,
+     196
+    ],
+    "ko": "오른쪽 눈: 전륜성왕(짝까왓띠)이 될 운명을 줍니다.\n(싯디사라가 먹음)",
+    "cover": [
+     225,
+     205,
+     170
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     172,
+     540,
+     266
+    ],
+    "ko": "신의 인도를 따라 두 벗은 네모난 연못이 있는 갈림길에 이르렀습니다. 연꽃 줄기로 경계를 긋고 포옹한 뒤 헤어졌습니다. 싯디사라는 도성으로, 뿐냐사라는 낯선 곳으로 갔습니다.",
+    "cover": [
+     206,
+     174,
+     119
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     34,
+     440,
+     140
+    ],
+    "ko": "미틸라에서 신기한 수레(풋사라타)가 알맞은 후계자를 찾다가 잠든 싯디사라를 발견했습니다. 상서로운 표상을 알아본 대신들은 곧바로 그를 전륜성왕으로 관정했습니다.",
+    "cover": [
+     226,
+     191,
+     139
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     366,
+     610,
+     444
+    ],
+    "ko": "뿐냐사라가 꾸수마에 왔습니다. 그가 웃자 입에서 일곱 가지 보석이 쏟아져 공주가 감탄했습니다. 둘은 혼인했지만, 탐욕스러운 공주의 아버지는 그의 끝없는 재물을 몰래 탐냈습니다.",
+    "cover": [
+     216,
+     178,
+     110
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     490,
+     36,
+     774,
+     150
+    ],
+    "ko": "악한 왕이 동산에서 뿐냐사라에게 독을 탄 술을 주었습니다. 뿐냐사라가 괴로워하며 쓰러지자, 무서운 약카들이 그를 삼키려고 그늘에서 다가왔습니다.",
+    "cover": [
+     207,
+     174,
+     116
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     280,
+     210,
+     520,
+     266
+    ],
+    "ko": "신이 약카들을 쫓아내자, 그들은 하늘의 보물 셋을 떨어뜨렸습니다.",
+    "cover": [
+     220,
+     186,
+     117
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     136,
+     390,
+     276,
+     440
+    ],
+    "ko": "하늘 항아리:\n죽어 가는 이를 살림",
+    "cover": [
+     216,
+     179,
+     111
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     330,
+     390,
+     474,
+     440
+    ],
+    "ko": "멜대:\n반은 금, 반은 은",
+    "cover": [
+     216,
+     181,
+     114
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     520,
+     390,
+     668,
+     440
+    ],
+    "ko": "황금 신:\n하늘을 나는 힘",
+    "cover": [
+     216,
+     182,
+     116
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     40,
+     580,
+     132
+    ],
+    "ko": "속이는 아내에게 이끌려 히마완따 산에 간 뿐냐사라는 녹주석 전각 안에서 잠들었습니다. 배신한 공주는 신기한 항아리와 멜대와 신을 훔쳐 그를 버리고 날아가 버렸습니다.",
+    "cover": [
+     208,
+     170,
+     110
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     46,
+     344,
+     88
+    ],
+    "ko": "가엾이 여긴 신이 나무에\n신기한 열매를 맺게 했습니다.",
+    "cover": [
+     230,
+     200,
+     128
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     148,
+     106,
+     302,
+     146
+    ],
+    "ko": "꼭대기: 빛나는 아름다움과\n힘을 되찾음",
+    "cover": [
+     233,
+     207,
+     139
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     568,
+     112,
+     652,
+     138
+    ],
+    "ko": "북: 두루미",
+    "cover": [
+     225,
+     190,
+     117
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     88,
+     262,
+     192,
+     288
+    ],
+    "ko": "서: 원숭이",
+    "cover": [
+     229,
+     193,
+     122
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     652,
+     262,
+     732,
+     288
+    ],
+    "ko": "동: 호랑이",
+    "cover": [
+     229,
+     191,
+     120
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     454,
+     366,
+     546,
+     392
+    ],
+    "ko": "남: 곰",
+    "cover": [
+     226,
+     187,
+     114
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     226,
+     574,
+     324
+    ],
+    "ko": "북쪽 열매를 먹은 뿐냐사라는 두루미가 되어 아내를 찾아냈습니다. 사람 모습을 되찾은 뒤에는 서쪽 열매를 악한 처가 식구들에게 먹여 원숭이로 만들었습니다.",
+    "cover": [
+     234,
+     215,
+     183
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     304,
+     290,
+     410
+    ],
+    "ko": "시련을 마친 뿐냐사라는 황금 신을 신고 하늘을 날아, 마침내 어릴 적 벗 싯디사라 왕과 다시 만났습니다.",
+    "cover": [
+     220,
+     185,
+     115
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     330,
+     580,
+     420
+    ],
+    "ko": "싯디사라는 사슴의 오른쪽 눈을 너그러이 나누어 주었습니다. 백성들이 뿐냐사라를 관정했고, 두 벗은 나란히 크게 힘 있고 바른 전륜성왕으로 다스렸습니다.",
+    "cover": [
+     216,
+     181,
+     119
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/48-Siddhisara-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     270,
+     44,
+     530,
+     70
+    ],
+    "ko": "부처님께서 전생 이야기를 맺으셨습니다.",
+    "cover": [
+     233,
+     206,
+     140
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     208,
+     110,
+     296,
+     134
+    ],
+    "ko": "천신들:",
+    "cover": [
+     239,
+     222,
+     187
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     186,
+     184,
+     296,
+     210
+    ],
+    "ko": "왕의 부모:",
+    "cover": [
+     236,
+     220,
+     186
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     210,
+     260,
+     296,
+     286
+    ],
+    "ko": "뿐냐사라:",
+    "cover": [
+     236,
+     220,
+     186
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     210,
+     328,
+     296,
+     354
+    ],
+    "ko": "싯디사라:",
+    "cover": [
+     233,
+     214,
+     179
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     426,
+     148,
+     704,
+     172
+    ],
+    "ko": "찬나, 사리뿟따, 목갈라나, 마하깟사빠",
+    "cover": [
+     236,
+     219,
+     185
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     552,
+     180,
+     680,
+     218
+    ],
+    "ko": "숫도다나와\n마하마야",
+    "cover": [
+     237,
+     219,
+     182
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     494,
+     258,
+     576,
+     282
+    ],
+    "ko": "아난다",
+    "cover": [
+     234,
+     215,
+     178
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     494,
+     328,
+     586,
+     354
+    ],
+    "ko": "부처님",
+    "cover": [
+     236,
+     218,
+     180
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     280,
+     382,
+     520,
+     410
+    ],
+    "ko": "“선한 행위는 모두 좋은 열매를 맺는다.”",
+    "cover": [
+     229,
+     201,
+     136
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
