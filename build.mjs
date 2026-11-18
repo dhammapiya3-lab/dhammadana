@@ -253,8 +253,11 @@ const TXT_DECO = /^(구분 ?장식|구분선|장식|꾸밈|무늬|법륜|사자�
 const txtSafe = s => String(s || '').replace(/[\\/:*?"<>|\u0000-\u001f]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 80).replace(/[.\s]+$/, '') || '책';
 const txtName = b => `${txtSafe(b.title)}.txt`;
 const txtOk = b => hasText(b) && !b.no_copy;
+// 짝을 이룬 꾸밈 표시만 뺌 — 읽기 화면 boldMark 와 같은 규칙(문단 단위), 인쇄된 '***선원'·'불기 **년'·'§§16~18' 같은 글자는 그대로 (2026-11-18 검수)
+const txtPairs = s => String(s).replace(/\*\*(?!\s|\*\*)([\s\S]*?[^\s*])\*\*/g, '$1').replace(/==(?=\S)([\s\S]*?\S)==/g, '$1').replace(/\{\{([\s\S]*?)\}\}/g, '$1').replace(/@@([\s\S]*?)@@/g, '$1').replace(/°°([\s\S]*?)°°/g, '$1').replace(/§§([\s\S]*?)§§/g, '$1');
 function txtInline(s) {
-  return String(s).replace(/\*\*|°°|@@|==|§§|\{\{|\}\}/g, '').replace(/\[\^([^\]]+)\]/g, '[각주 $1]').replace(/ㆍ/g, '·');
+  const t = txtPairs(String(s));
+  return t.replace(/\[\^([^\]]+)\]/g, '[각주 $1]').replace(/ㆍ/g, '·');
 }
 // 그림 자리: '[그림: 그림]'·'[그림: 사진]'처럼 겹치지 않게 (2026-11-18 다시 검수)
 const txtFig = a => /^(그림|사진)$/.test(a) ? `[${a}]` : a === '표' ? '[표 그림]' : /(그림|사진|표|지도|가계도|서명|마크)$/.test(a) ? `[${a}]` : `[그림: ${a}]`;
@@ -277,7 +280,7 @@ function bookTxt(b) {
     if (pg.label) out.push(`[${pg.label}쪽]`);
     let firstHead = head ? norm(head.title) : null, seen = 0;
     for (let q of paras) {
-      q = q.trim(); if (!q) continue;
+      q = q.trim(); if (!q) continue; q = txtPairs(q);
       const mid = mids.find(c => norm(q).startsWith(norm(c.at)));
       if (mid) { out.push('', '', '■ ' + mid.title.trim(), ''); firstHead = norm(mid.title); seen = 0; }
       seen++;

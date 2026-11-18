@@ -1646,7 +1646,7 @@ function tableHtml(p) {
   const si = lines.findIndex(isSep), nh = si < 0 ? 1 : si;
   const rows = lines.filter(l => !isSep(l)).map(l => l.replace(/^\||\|$/g, '').split('|').map(c => c.trim()));
   if (!rows.length) return '';
-  const cell = c => boldMark(esc(c));
+  const cell = c => fnMark(phMark(boldMark(esc(c))));  // 표 칸의 각주 번호도 누를 수 있게 (2026-11-18 검수: '[^550]' 이 글자로 보이던 것)
   const dl = R.tdl && R.tdl[rows[0][0]];   // 이 표를 그림으로 내려받는 단추 (텍스트 JSON 의 table_dl, 운영자 요청 2026-11-12)
   return `<table class="r-table">${nh ? `<thead>${rows.slice(0, nh).map(r => `<tr>${r.map(c => `<th>${cell(c)}</th>`).join('')}</tr>`).join('')}</thead>` : ''}<tbody>${rows.slice(nh).map(r => `<tr>${r.map(c => `<td>${cell(c)}</td>`).join('')}</tr>`).join('')}</tbody></table>`
     + (dl ? `<p class="r-tdl"><a class="tbtn" href="${esc(dl)}" download="${esc(dl.split('/').pop())}">⬇ 그림으로 내려받기</a></p>` : '');
@@ -2337,8 +2337,9 @@ document.addEventListener('click', e => {
     const go = document.createElement('button'); go.className = 'link-btn small'; go.textContent = '각주 자리로 가기 ↓'; go.onclick = () => { pop.remove(); tgt.closest('p').scrollIntoView({ block: 'center' }); tgt.closest('p').classList.add('found'); setTimeout(() => tgt.closest('p').classList.remove('found'), 1600); }; pop.appendChild(go); }
   else {  // 각주 글이 지금 장에 없으면(다음 장 첫 쪽 등) 책 전체에서 가장 가까운 쪽의 각주 글을 찾아 보여 줌 (2026-11-11)
     const hp = here ? +here.dataset.pg : 1; let best = null;
-    for (const pgx of (R && R.pages) || []) for (const q of paras(pgx.text)) if (q.startsWith('[^' + n + ']:') && (!best || Math.abs(pgx.n - hp) < Math.abs(best.n - hp))) best = { n: pgx.n, q };
-    pop.innerHTML = `<div class="fnpop-h">각주 ${n}<button class="fnpop-x" aria-label="닫기">✕</button></div>` + (best ? `<p>${phMark(boldMark(esc(best.q.replace(/^\[\^[^\]]+\]:\s*/, ''))))}</p>` : '<p class="muted">이 각주는 다른 쪽에 있습니다.</p>');
+    const RB = (R && R.pages) ? R : (document.getElementById('sRead') && typeof SR !== 'undefined' && SR.r) || null;  // 단순 화면은 SR.r (2026-11-18 검수: 미주를 못 찾던 것)
+    for (const pgx of (RB && RB.pages) || []) for (const q of paras(pgx.text)) if (q.startsWith('[^' + n + ']:') && (!best || Math.abs(pgx.n - hp) < Math.abs(best.n - hp))) best = { n: pgx.n, q };
+    pop.innerHTML = `<div class="fnpop-h">각주 ${n}<button class="fnpop-x" aria-label="닫기">✕</button></div>` + (best ? `<p>${(RB === R ? (f => f()) : withR)(() => phMark(boldMark(esc(best.q.replace(/^\[\^[^\]]+\]:\s*/, '')))))}</p>` : '<p class="muted">이 각주는 다른 쪽에 있습니다.</p>');
   }
   parFnAdd(pop, n, null);
   document.body.appendChild(pop);
@@ -2965,7 +2966,9 @@ function srList(root) {
 function srChapter(ci, page, push, then) {
   const root = $('#sRead'), cs = SR.cs; ci = Math.max(0, Math.min(ci, cs.length - 1)); SR.ci = ci;
   const ch = cs[ci], R0 = SR.r; R0.i = (page || ch.from) - 1; SR.anchor = page || null;
-  const html = withR(() => reflowHtml()).replace(/<div class="ch-head">[\s\S]*?<\/div>/, '').replace(/<nav class="ch-nav"[\s\S]*?<\/nav>/, '');
+  const full = withR(() => reflowHtml()), hd = (full.match(/<div class="ch-head">[\s\S]*?<\/div>/) || [''])[0];
+  const headFn = (hd.match(/<sup class="fn-ref"[^>]*>[^<]*<\/sup>/g) || []).join('');  // 장 제목에 붙은 각주 번호 — 숨긴 같은 제목 줄에서 옮겨 온 것 (2026-11-18: 단순 화면에서 빠져 그 각주를 열 수 없었음)
+  const html = full.replace(/<div class="ch-head">[\s\S]*?<\/div>/, '').replace(/<nav class="ch-nav"[\s\S]*?<\/nav>/, '');
   const nav = where => `<nav class="s-chnav" aria-label="장 이동 (${where})"><a href="./" class="s-btn">▤ 장 목록</a>${ci > 0 ? `<a class="s-btn" href="?c=${ci}" data-c="${ci - 1}">◀ 앞 장: ${esc(srName(cs[ci - 1], ci - 1))}</a>` : ''}${ci < cs.length - 1 ? `<a class="s-btn" href="?c=${ci + 2}" data-c="${ci + 1}">다음 장: ${esc(srName(cs[ci + 1], ci + 1))} ▶</a>` : '<span class="s-sub">책의 끝입니다.</span>'}${where === '위' ? `<button type="button" class="s-btn" id="sSpeak" aria-keyshortcuts="Alt+Shift+P">${SR.speaking ? '■ 듣기 멈춤' : '▶ 듣기'}</button><button type="button" class="s-btn" id="sTtsBtn" aria-keyshortcuts="Alt+Shift+S" aria-expanded="false" aria-controls="sTts">듣기 설정</button><button type="button" class="s-btn s-sent" id="sPrevS" aria-label="앞 문장 듣기"${SR.speaking ? '' : ' hidden'}>◀ 앞 문장</button><button type="button" class="s-btn s-sent" id="sNextS" aria-label="다음 문장 듣기"${SR.speaking ? '' : ' hidden'}>다음 문장 ▶</button><button type="button" class="s-btn" id="sBmBtn" aria-keyshortcuts="Alt+Shift+B" aria-label="지금 쪽에 책갈피 넣기·빼기">🔖 책갈피</button><button type="button" class="s-btn" id="sWhereBtn" aria-keyshortcuts="Alt+Shift+K" aria-label="지금 위치 알리기">📍 지금 위치</button><button type="button" class="s-btn" id="sGoPg" aria-expanded="false" aria-controls="sPgForm">📄 쪽으로 가기</button>` : ''}</nav>`;
   root.innerHTML = nav('위') + `<form id="sPgForm" class="s-pgform" hidden><label for="sPgIn">몇 쪽으로 갈까요? (책에 인쇄된 쪽 번호)</label> <input id="sPgIn" type="text" inputmode="numeric" autocomplete="off" size="6"> <button type="submit" class="s-btn">가기</button> <button type="button" class="s-btn" id="sPgX">닫기</button></form><section id="sTts" class="s-tts" hidden aria-labelledby="sTtsH"></section><div class="s-text">${html}</div>` + nav('아래');
   $$('.s-text [aria-level]', root).forEach(h => h.setAttribute('aria-level', Math.max(2, +h.getAttribute('aria-level') - 2)));  // 단순 화면은 장 제목이 h1 이라 소제목 단계를 맞춤
@@ -2982,7 +2985,7 @@ function srChapter(ci, page, push, then) {
   $('#sPgForm').onsubmit = e => { e.preventDefault(); sGoPage($('#sPgIn').value); };
   $('#sPgForm').onkeydown = e => { if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); sPgForm(false); } };
   sAbBtn();
-  const h1 = $('.s-h1'); h1.textContent = srName(ch, ci); document.title = `${srName(ch, ci)} · ${SR.title} · 단순 화면`;
+  const h1 = $('.s-h1'); h1.textContent = srName(ch, ci); if (headFn) h1.insertAdjacentHTML('beforeend', headFn); document.title = `${srName(ch, ci)} · ${SR.title} · 단순 화면`;
   const cur = $('.s-path [aria-current]'); if (cur) cur.textContent = srName(ch, ci);
   sStat(`${ci + 1} / ${cs.length} 장`);
   if (push) { try { history.pushState({}, '', `?c=${ci + 1}`); } catch (e) {} lastDoc = location.pathname + location.search; }
@@ -3220,7 +3223,7 @@ function sGoPage(v) {
   if (idx < 0) { sayKey(`${q}쪽을 이 책에서 찾지 못했습니다`); return; }
   const n = idx + 1, ci = withR(() => chapterOf(n)), was = SR.speaking;
   if (was) srStop(true);
-  const go = () => { const t = $('#pm-' + n); if (t) { SR.pm = t.id; sBarH(); t.scrollIntoView({ block: 'start' });  /* 파란 줄 높이를 먼저 재야 쪽이 그 뒤로 숨지 않음 (2026-11-18 다시 검수) */ t.setAttribute('tabindex', '-1'); t.focus({ preventScroll: true }); } SR.anchor = n; sayKey(`${q}쪽${via}`, was ? () => srSpeak() : null); };  // 듣는 중이면 쪽 이름을 다 읽은 뒤 이어 읽음(바로 읽으면 알림이 끊김)
+  const go = () => { const t = $('#pm-' + n); if (t) { SR.pm = t.id; sBarH(); t.scrollIntoView({ block: 'start' });  /* 파란 줄 높이를 먼저 재야 쪽이 그 뒤로 숨지 않음 (2026-11-18 다시 검수) */ t.setAttribute('tabindex', '-1'); t.focus({ preventScroll: true }); } if (!t || document.activeElement !== t) { const f = $$(`.s-text [data-pg="${n}"]`).find(x => x.getClientRects().length) || $('.s-h1'); if (f) { if (!f.hasAttribute('tabindex')) f.setAttribute('tabindex', '-1'); f.focus({ preventScroll: !!t }); } }  /* 숨은 쪽 표시(장 첫 쪽)면 그 쪽 첫 문단·장 제목에 커서 (2026-11-18 전체 검수) */ SR.anchor = n; sayKey(`${q}쪽${via}`, was ? () => srSpeak() : null); };  // 듣는 중이면 쪽 이름을 다 읽은 뒤 이어 읽음(바로 읽으면 알림이 끊김)
   $('#sPgForm').hidden = true; const gb = $('#sGoPg'); if (gb) gb.setAttribute('aria-expanded', 'false');
   if (ci !== SR.ci) { srChapter(ci, n, true, go); } else go();
 }
