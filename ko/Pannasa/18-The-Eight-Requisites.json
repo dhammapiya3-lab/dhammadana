@@ -1,0 +1,806 @@
+[
+ {
+  "img": "images/18-The-Eight-Requisites-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     254,
+     296,
+     556,
+     346
+    ],
+    "ko": "열여덟 번째 전생 이야기\n여덟 가지 필수품",
+    "cover": [
+     223,
+     195,
+     145
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     244,
+     346,
+     566,
+     372
+    ],
+    "ko": "란나 빤냐사 자따까로 보는 업의 열매",
+    "cover": [
+     221,
+     193,
+     141
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Eight-Requisites-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     256,
+     334,
+     544,
+     430
+    ],
+    "ko": "난다꾸마라 왕자와 따르는 이 구십 꼬띠가 법을 듣고 아라한이 되었습니다. 부처님께서 오른팔을 펴시며 “오라, 비구들이여.” 하시자, 그들의 재가 옷이 사라지고 신통으로 생긴 발우와 가사가 나타났습니다.",
+    "cover": [
+     223,
+     185,
+     133
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Eight-Requisites-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     390,
+     340,
+     740,
+     408
+    ],
+    "ko": "어떤 공덕이 이 기적을 낳았느냐는 물음에 부처님께서 지난 일을 들려주셨습니다. 수망갈라 부처님 시대에 보살은 부유한 바라문 수루찌라였는데, 공덕을 구하여 부처님과 비구들을 공양에 초대했습니다.",
+    "cover": [
+     225,
+     195,
+     147
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Eight-Requisites-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     36,
+     556,
+     124
+    ],
+    "ko": "수루찌라는 상상할 수 없는 대중, 곧 비구 십만 꼬띠를 초대했습니다. 죽과 여덟 가지 필수품을 마련할 재물은 있었지만, 넘을 수 없는 문제가 있었습니다. 그 많은 대중을 어디에 앉힐 것인가?",
+    "cover": [
+     219,
+     188,
+     142
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Eight-Requisites-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     386,
+     80,
+     728,
+     184
+    ],
+    "ko": "수루찌라의 맑은 뜻이 삭까의 천상 거처를 뜨겁게 했습니다. 미래의 부처를 알아본 삭까는 땅으로 내려와, 소박한 목수로 변장해 필요한 정자를 지어 주겠다고 나섰습니다.",
+    "cover": [
+     223,
+     201,
+     160
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Eight-Requisites-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     366,
+     572,
+     428
+    ],
+    "ko": "삭까의 위력으로 땅이 갈라졌습니다. 일곱 가지 보배와 금기둥으로 꾸민 거대한 정자가 순식간에 솟았습니다. 천장에는 천신의 노래 같은 소리를 내는 황금 방울 그물이 드리워졌습니다.",
+    "cover": [
+     225,
+     205,
+     167
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Eight-Requisites-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     386,
+     82,
+     728,
+     184
+    ],
+    "ko": "이레 동안 수루찌라는 승가를 공양했습니다. 사람만으로는 그 많은 대중을 섬길 수 없어, 천신들이 비구마다 곁에 서서 도왔습니다. 마지막 날 발우마다 다섯 가지 약재를 채웠습니다.",
+    "cover": [
+     220,
+     197,
+     156
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Eight-Requisites-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     106,
+     230,
+     138
+    ],
+    "ko": "1-3. 세 벌 가사",
+    "cover": [
+     218,
+     175,
+     109
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     580,
+     106,
+     672,
+     138
+    ],
+    "ko": "4. 발우",
+    "cover": [
+     227,
+     188,
+     115
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     90,
+     210,
+     212,
+     242
+    ],
+    "ko": "8. 물거르개",
+    "cover": [
+     226,
+     185,
+     115
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     606,
+     210,
+     682,
+     242
+    ],
+    "ko": "5. 면도칼",
+    "cover": [
+     234,
+     196,
+     119
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     96,
+     310,
+     222,
+     346
+    ],
+    "ko": "7. 허리띠",
+    "cover": [
+     222,
+     179,
+     105
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     582,
+     310,
+     670,
+     346
+    ],
+    "ko": "6. 바늘",
+    "cover": [
+     221,
+     179,
+     104
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     318,
+     166,
+     480,
+     282
+    ],
+    "ko": "여덟 가지 필수품\n\n출가 생활에 꼭 필요한 것만 올립니다.",
+    "cover": [
+     230,
+     193,
+     115
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "ellipse": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Eight-Requisites-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     258,
+     52,
+     544,
+     100
+    ],
+    "ko": "수망갈라 부처님께서 이 보시들의 업의 열매를 밝히셨습니다:",
+    "cover": [
+     216,
+     192,
+     148
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     64,
+     368,
+     382,
+     412
+    ],
+    "ko": "세 벌 가사: 보시한 이는 어느 생에서나 늘 아름답고, 좋은 무명옷을 얻는다.",
+    "cover": [
+     224,
+     191,
+     133
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     420,
+     368,
+     740,
+     412
+    ],
+    "ko": "발우: 보시한 이는 늘 넉넉하고, 아름다운 금그릇을 얻는다.",
+    "cover": [
+     225,
+     191,
+     131
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Eight-Requisites-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     178,
+     306,
+     230
+    ],
+    "ko": "면도칼: 이름난 지혜와\n자신감과 덕",
+    "cover": [
+     222,
+     188,
+     125
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     518,
+     178,
+     696,
+     230
+    ],
+    "ko": "바늘: 날카로운 지성,\n이론과 기술에 능함",
+    "cover": [
+     224,
+     189,
+     121
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     110,
+     366,
+     306,
+     418
+    ],
+    "ko": "허리띠: 천신과 사람\n사이의 긴 수명",
+    "cover": [
+     223,
+     192,
+     127
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     518,
+     366,
+     696,
+     418
+    ],
+    "ko": "물거르개: 늘 몸이\n깨끗하고 건강함",
+    "cover": [
+     224,
+     194,
+     131
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Eight-Requisites-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     560,
+     56,
+     750,
+     338
+    ],
+    "ko": "공덕의 열매는 모든 맑은 공양에 미칩니다:\n\n음식과 마실 것: 튼튼함\n재물: 번영\n탈것: 행복\n등불: 눈\n음료: 기쁨\n\n지혜로운 이는 자기 행복을 바라며 늘 보시를 닦는다.",
+    "cover": [
+     220,
+     197,
+     155
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     60,
+     132,
+     134,
+     170
+    ],
+    "ko": "음식과\n마실 것",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     236,
+     140,
+     312,
+     158
+    ],
+    "ko": "튼튼함",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     156,
+     228,
+     216,
+     248
+    ],
+    "ko": "재물",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     338,
+     230,
+     398,
+     250
+    ],
+    "ko": "번영",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     240,
+     320,
+     300,
+     340
+    ],
+    "ko": "탈것",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     426,
+     322,
+     486,
+     342
+    ],
+    "ko": "행복",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     336,
+     404,
+     386,
+     424
+    ],
+    "ko": "등불",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     526,
+     404,
+     566,
+     424
+    ],
+    "ko": "눈",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Eight-Requisites-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     130,
+     340,
+     670,
+     424
+    ],
+    "ko": "보시의 이익을 설명하신 수망갈라 세존께서 보살의 궁극의 뜻에 예언으로 답하셨습니다.\n“이 보시의 빛으로 그대는 미래에 반드시 고따마라는 부처가 되리라.”",
+    "cover": [
+     222,
+     192,
+     123
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Eight-Requisites-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     352,
+     734,
+     422
+    ],
+    "ko": "예언을 들은 수루찌라는 막대한 재산을 침 뱉듯 버렸습니다. 출가하여 삼장에 통달하고 다섯 가지 신통을 닦았습니다. 선정을 놓치지 않고 이어 가 범천의 세계에 태어났습니다.",
+    "cover": [
+     217,
+     183,
+     131
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Eight-Requisites-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     42,
+     730,
+     82
+    ],
+    "ko": "스승께서 과거의 인물들을 밝히시며 법을 정리하셨습니다:",
+    "cover": [
+     221,
+     191,
+     140
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     542,
+     118,
+     754,
+     152
+    ],
+    "ko": "삭까 → 아누룻다",
+    "cover": [
+     222,
+     194,
+     145
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     382,
+     200,
+     754,
+     234
+    ],
+    "ko": "수루찌라의 부모 → 고따마의 부모",
+    "cover": [
+     222,
+     193,
+     141
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     306,
+     280,
+     754,
+     314
+    ],
+    "ko": "도성 사람들과 따르는 이들 → 지금의 제자들",
+    "cover": [
+     223,
+     193,
+     145
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     256,
+     360,
+     754,
+     396
+    ],
+    "ko": "바라문 수루찌라 → 스스로 깨달으신 부처님",
+    "cover": [
+     221,
+     192,
+     142
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-The-Eight-Requisites-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     160,
+     326,
+     282
+    ],
+    "ko": "물질의 공양은\n마음을 닦는\n수레일 뿐입니다.",
+    "cover": [
+     226,
+     198,
+     155
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     488,
+     160,
+     740,
+     300
+    ],
+    "ko": "보살은 일체지를 얻으려고 여덟 가지 필수품을 올려, 세간의 너그러움을 궁극의 성취, 곧 윤회를 건너 마지막 열반에 이르는 일에 묶었습니다.",
+    "cover": [
+     226,
+     198,
+     156
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ }
+]
