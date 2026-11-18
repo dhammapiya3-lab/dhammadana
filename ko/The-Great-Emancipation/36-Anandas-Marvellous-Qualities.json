@@ -1,0 +1,404 @@
+[
+ {
+  "img": "images/36-Anandas-Marvellous-Qualities-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     336,
+     632,
+     414
+    ],
+    "ko": "아난다의 놀라운 덕\n법의 대중을 이끄는 전륜성왕",
+    "cover": [
+     167,
+     169,
+     150
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Anandas-Marvellous-Qualities-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     76,
+     120,
+     390,
+     330
+    ],
+    "ko": "아난다는 문설주에 기대어\n울며 서 있었습니다.\n\n부처님께서 곧 반열반에\n드실 텐데, 아난다는 아직\n유학이었습니다.\n\n“나를 가엾이 여기시는\n분이 떠나시는구나.”\n하고 울었습니다.",
+    "cover": [
+     222,
+     194,
+     159
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Anandas-Marvellous-Qualities-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     412,
+     330,
+     750,
+     446
+    ],
+    "ko": "아난다가 보이지 않자 부처님께서\n한 비구를 보내셨습니다.\n“벗 아난다여, 스승께서 부르십니다.”\n\n아난다는 눈물을 닦고 세존께 다가가\n한쪽에 앉았습니다.",
+    "cover": [
+     187,
+     156,
+     119
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Anandas-Marvellous-Qualities-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     282,
+     82,
+     560,
+     330
+    ],
+    "ko": "“그만하라, 아난다여.\n슬퍼하지 마라.\n\n내가 미리 말하지 않았던가?\n사랑하는 모든 것과는 달라지고\n헤어지기 마련이다. 형성된 몸이\n어찌 무너지지 않겠는가?\n여래의 몸이 사라지지 않는\n일은 있을 수 없다.”",
+    "cover": [
+     220,
+     195,
+     160
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Anandas-Marvellous-Qualities-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     136,
+     112,
+     412,
+     368
+    ],
+    "ko": "아난다는 오랜 세월\n이렇게 시중들었습니다.\n\n• 믿음직한 몸의 행위\n• 한없이 다정한 말\n• 이로운 마음의 행위\n\n“아난다여, 그대는 공덕을\n지었다. 힘써 정진하여\n어서 번뇌를 없애라!”",
+    "cover": [
+     213,
+     187,
+     152
+    ],
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Anandas-Marvellous-Qualities-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     130,
+     48,
+     672,
+     122
+    ],
+    "ko": "부처님께서 비구들에게 말씀하셨습니다.\n“과거의 모든 정등각자께도 아난다 같은 훌륭한 시자가 있었다.\n미래의 모든 정등각자께도 아난다 같은 훌륭한 시자가 있을 것이다.”",
+    "cover": [
+     229,
+     187,
+     130
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Anandas-Marvellous-Qualities-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     132,
+     48,
+     672,
+     132
+    ],
+    "ko": "아난다는 큰 지혜를 지녔습니다.\n비구, 비구니, 재가자, 왕, 대신, 다른 교단의\n스승들을 언제 맞이할지 정확히 알아\n대중을 훌륭하게 이끌었습니다.",
+    "cover": [
+     232,
+     194,
+     142
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Anandas-Marvellous-Qualities-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     52,
+     604,
+     116
+    ],
+    "ko": "부처님께서 네 무리의 대중에 관해\n아난다의 네 가지 놀라운 점을 말씀하셨습니다.",
+    "cover": [
+     221,
+     182,
+     130
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     184,
+     246,
+     384,
+     270
+    ],
+    "ko": "1. 비구",
+    "cover": [
+     196,
+     163,
+     124
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     480,
+     246,
+     640,
+     270
+    ],
+    "ko": "2. 비구니",
+    "cover": [
+     230,
+     185,
+     117
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     184,
+     396,
+     384,
+     422
+    ],
+    "ko": "3. 우바새",
+    "cover": [
+     182,
+     153,
+     118
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     480,
+     396,
+     640,
+     422
+    ],
+    "ko": "4. 우바이",
+    "cover": [
+     219,
+     176,
+     116
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Anandas-Marvellous-Qualities-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     52,
+     604,
+     160
+    ],
+    "ko": "어느 무리가 다가오든:\n그를 보면 → 마음이 기뻐집니다.\n그의 인사를 들으면 → 마음이 기뻐집니다.\n그가 말없이 있으면 → 아쉬워합니다.",
+    "cover": [
+     227,
+     191,
+     138
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     200,
+     424,
+     610,
+     456
+    ],
+    "ko": "그가 있는 것만으로 기쁨이 퍼집니다.",
+    "cover": [
+     192,
+     157,
+     111
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Anandas-Marvellous-Qualities-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     64,
+     286,
+     416
+    ],
+    "ko": "부처님께서 놀라운\n견줌을 드셨습니다.\n\n전륜성왕에게도 놀라운\n덕이 네 가지 있습니다.\n\n왕족, 바라문, 장자,\n사문이 전륜성왕을\n보고 들으면 기뻐하고,\n왕이 말없이 있으면\n아쉬워합니다.",
+    "cover": [
+     230,
+     202,
+     165
+    ],
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Anandas-Marvellous-Qualities-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     18,
+     764,
+     74
+    ],
+    "ko": "세속의 왕과 법의 왕",
+    "cover": [
+     239,
+     214,
+     173
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     26,
+     394,
+     384,
+     446
+    ],
+    "ko": "전륜성왕이 기쁘게 하는 이:\n왕족, 바라문, 장자, 사문.",
+    "cover": [
+     205,
+     176,
+     139
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     420,
+     394,
+     786,
+     446
+    ],
+    "ko": "아난다가 기쁘게 하는 이:\n비구, 비구니, 우바새, 우바이.",
+    "cover": [
+     204,
+     175,
+     138
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Anandas-Marvellous-Qualities-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     346,
+     704,
+     452
+    ],
+    "ko": "아난다는 유학이었지만 그의 한없이 다정한 행위는\n대중의 마음속에서 그를 왕과 같게 만들었습니다.\n\n자비로운 존재가 지닌 기쁘게 하는 힘의 증거입니다.",
+    "cover": [
+     201,
+     171,
+     134
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
