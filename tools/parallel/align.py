@@ -73,7 +73,7 @@ for sk in A.ko_skip:   # 원서에 없는 부분(--ko-skip)
 # 손으로 '짝 없음'으로 정한 문단(--pin "열쇠+…=")은 짝짓기 전에 뺌 — 뒤에서 빼면 그 문단이 둘레 문장을 밀어냄 (2026-11-17 DL-0012 검수)
 _nopin = {k for x in A.pin if x.endswith('=') for k in x[:-1].split('+') if k}
 if _nopin: KO_DP = [p for p in KO_DP if p['key'] not in _nopin]
-SPL = re.compile(r'(?<=[.?!。…])(?:[”’"\')\]]*)\s+|\n')
+SPL = re.compile(r'(?<=[.?!。…။])(?:[”’"\')\]]*)\s+|\n')
 
 
 def sents(t, lang):
@@ -286,7 +286,7 @@ scores = [s['sc'] for g in out if not g.get('toc') for s in g['s'] if 'sc' in s]
 res = {'book': A.book, 'lang': A.lang, 'title': A.title, 'by': A.by, 'source': A.source,
        'made': datetime.date.today().isoformat(), 'method': 'LaBSE 문장 뜻 비교 + 순서 지키는 짝짓기(1:1·1:2·2:1·2:2·1:3·3:1·건너뛰기)',
        'note': '짝 자료: groups[].ko = 한국어 문단 열쇠 "쪽 순번:문단 순번"(content/texts 본문 기준), or = 원서 문단 번호, s = 문장 짝 [문단 열쇠·번호, 시작 글자, 끝 글자], sc = 뜻 비슷함(0~1)',
-       'orig': [{'pg': p['pg'], 'k': p['k'], 't': p['t']} for p in ORIG], 'groups': out, **({'fn': FN} if FN else {})}
+       'orig': [{'pg': p['pg'], 'k': p['k'], 't': p['t'], **({'pdf': p['pdf']} if p.get('pdf') else {})} for p in ORIG], 'groups': out, **({'fn': FN} if FN else {})}
 os.makedirs(os.path.join(REPO, 'content/parallel'), exist_ok=True)
 json.dump(res, open(os.path.join(REPO, 'content/parallel', f'{A.book}.{A.lang}.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
 low = [(g, s) for g in out for s in g['s'] if not g.get('gl') and not g.get('toc') and not g.get('pin') and (s.get('sc', 1) < 0.5 or 'sc' not in s)]   # 용어 풀이·차례·손으로 정한 짝은 확인 목록에서 뺌

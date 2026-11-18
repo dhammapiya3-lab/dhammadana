@@ -43,12 +43,12 @@ def toc_group(body, orig, groups, enc, log=print, book=None):
     ET = []
     for i, p in enumerate(orig):
         if p['k'] != 'toc': continue
-        m = re.match(r'^(.*?)(?:,?\s*[0-9ivxlc]+)?\s*$', p['t'])
+        m = re.match(r'^(.*?)(?:,?\s*[0-9ivxlc၀-၉]+)?\s*$', p['t'])   # ၀-၉: 미얀마 숫자 쪽 번호 (DL-0010)
         ET.append((i, 0, m.end(1), m.group(1)))
     if not KT or not ET: log('차례: 한국어 차례', len(KT), '원서 차례', len(ET), '— 짝지을 것 없음'); return None
     ET = [x for x in ET if not re.fullmatch(r'(Table of )?Contents', x[3].strip(), flags=re.I)]   # 원서 차례 쪽 자기 제목
     # 뜻 비교는 앞 번호('1.' '4)' 'I.' '●' '6 ')를 떼고
-    core = lambda t: re.sub(r'^\s*(?:[●•]\s*)?(?:[0-9]+[.)]?|[IVXⅠ-Ⅻ]+\.)\s+', '', t).strip() or t
+    core = lambda t: re.sub(r'^\s*(?:[●•]\s*)?(?:[0-9]+[.)]?|[၀-၉]+။|[IVXⅠ-Ⅻ]+\.)\s+', '', t).strip() or t
     TK, TE = enc([core(x[3]) for x in KT]), enc([core(x[3]) for x in ET]); TS = TK @ TE.T
     # 본문 소제목 짝으로 이어진 줄
     nz = lambda t: re.sub(r'[\W_]+', '', _plain(t).lower())
