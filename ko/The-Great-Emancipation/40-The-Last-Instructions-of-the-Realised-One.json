@@ -1,0 +1,240 @@
+[
+ {
+  "img": "images/40-The-Last-Instructions-of-the-Realised-One-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     204,
+     360,
+     604,
+     438
+    ],
+    "ko": "위대한 반열반\n여래의 마지막 가르침",
+    "cover": [
+     203,
+     161,
+     116
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/40-The-Last-Instructions-of-the-Realised-One-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     548,
+     106,
+     800,
+     374
+    ],
+    "ko": "새로운 권위\n\n“스승의 말씀은 끝났다”\n하고 여기지 마라.\n\n부처님께서는 몸을 지닌\n스승 대신 법과 율이\n그 자리를 맡는다고\n선언하셨습니다. 그분이\n떠나신 뒤 법과 율이\n가장 높은 길잡이가 됩니다.",
+    "cover": [
+     205,
+     172,
+     134
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/40-The-Last-Instructions-of-the-Realised-One-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     12,
+     286,
+     790,
+     330
+    ],
+    "ko": "부르는 말이 바뀌다",
+    "cover": [
+     200,
+     168,
+     135
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     12,
+     330,
+     400,
+     396
+    ],
+    "ko": "장로가 젊은 비구에게:\n이름이나 성, 또는 ‘벗이여’로 부릅니다.",
+    "cover": [
+     200,
+     168,
+     134
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     404,
+     330,
+     790,
+     396
+    ],
+    "ko": "젊은 비구가 장로에게:\n‘존자시여’ 또는 ‘대덕이시여’로 부릅니다.",
+    "cover": [
+     200,
+     168,
+     134
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     12,
+     398,
+     790,
+     446
+    ],
+    "ko": "모두가 ‘벗이여’로 부르던 것을 그만두고 위아래를 지키게 했습니다.",
+    "cover": [
+     200,
+     167,
+     134
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/40-The-Last-Instructions-of-the-Realised-One-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     6,
+     22,
+     402,
+     204
+    ],
+    "ko": "여유와 제1차 결집\n\n부처님께서는 사소한 학습 계목은\n없애도 된다고 허락하셨습니다.\n그러나 아난다는 무엇이 사소한 계목인지\n여쭙지 않았습니다. 무엇인지 합의할 수\n없었기에 제1차 결집은 계목을\n하나도 빠짐없이 지키기로 했습니다.",
+    "cover": [
+     202,
+     170,
+     138
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/40-The-Last-Instructions-of-the-Realised-One-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     10,
+     298,
+     790,
+     444
+    ],
+    "ko": "범단(브라흐마단다)의 벌\n\n제멋대로 구는 비구 찬나에게 부처님께서는\n아무도 말을 걸지 않는 완전한 따돌림을 정하셨습니다.\n깊은 외로움에 겸손해진 찬나는 홀로 정진하여 마침내\n아라한이 되었고, 벌은 저절로 풀렸습니다.",
+    "cover": [
+     191,
+     152,
+     115
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/40-The-Last-Instructions-of-the-Realised-One-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     40,
+     650,
+     154
+    ],
+    "ko": "세 번 물으시고, 온전한 침묵\n\n부처님께서는 법이나 길에 의심이 있는 비구가\n있는지 세 번 물으셨습니다. 조용히 털어놓으라 하셔도\n비구 오백 명은 모두 고요히 침묵했습니다.",
+    "cover": [
+     203,
+     165,
+     127
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/40-The-Last-Instructions-of-the-Realised-One-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     414,
+     100,
+     796,
+     340
+    ],
+    "ko": "마지막 비구의 앞날\n\n아난다는 대중의 믿음을\n굳게 확신한다고 말씀드렸습니다.\n\n부처님께서 확인해 주셨습니다.\n가장 뒤처진 비구인 아난다\n자신도 수다원이니, 앞날이\n정해져 마침내 완전한 깨달음에\n이른다고 하셨습니다.",
+    "cover": [
+     206,
+     168,
+     131
+    ],
+    "align": "left",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/40-The-Last-Instructions-of-the-Realised-One-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     20,
+     690,
+     158
+    ],
+    "ko": "자, 이제 비구들이여, 그대들에게 말한다.\n형성된 것은 모두 무너지기 마련이다.\n방일하지 말고 정진하라!\n— 여래의 마지막 말씀",
+    "cover": [
+     216,
+     177,
+     134
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
