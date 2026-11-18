@@ -100,6 +100,7 @@ let lastDoc = location.pathname + location.search;
 window.addEventListener('popstate', () => {
   if (document.body.classList.contains('simple-ui')) { const hs = history.state || {};
     if (hs.sb) { if (STALK.playing()) { const pr = hs.prev || '/simple/'; sGo(pr, false).then(() => { const up = ($('#sUp') || {}).href || ''; try { if (up && new URL(up).pathname !== new URL(pr, location.href).pathname) { history.replaceState({ sb: 1, prev: up }, '', pr); history.pushState({ sp: 1 }, '', pr); } else history.replaceState({}, '', pr); } catch (e) {} lastDoc = location.pathname + location.search; }); /* 듣는 동안 뒤로 가기를 거듭하면 한 단계씩 위 목록으로 */ } else history.back(); return; }  // 처음 화면의 뒤로 가기
+    if ($('#sRead') && location.pathname === lastDoc.split('?')[0]) { lastDoc = location.pathname + location.search; return; }  /* 같은 책 읽기 화면 안의 장 이동은 아래 initSimpleRead 쪽에서 */
     if (STALK.playing() && location.pathname + location.search !== lastDoc) { sGo(location.href, false); return; } } if (AB.locked || AB.skipPop) { AB.skipPop = false; return; } /* 오디오북 잠금 중 — 아래 오디오북 쪽에서 막음 */ const now = location.pathname + location.search; if (now === lastDoc) return; lastDoc = now;
   if (PL.pl && !$('#pAudio').paused) softGo(location.href, false); else location.reload(); });
 
@@ -2908,12 +2909,14 @@ async function initSimpleRead() {
   let pp = +q.get('p') || 0; if (listen && !c && !pp) { const h = store.get('hist', []).find(x => x.id === SR.id); pp = h && h.p || 1; }
   // 오디오북(?audio=1): 이어 듣던 장(없으면 첫 장)을 열고 커서를 '🎧 오디오북' 단추에 — Enter 한 번이면 재생 (운영자 요청, 2026-11-18)
   if (audio && !c && !pp) { const ap = store.get('abpos-' + SR.id, null); pp = 1; if (ap) { try { const j = await sAbData(SR.id, root.dataset.audio); const ch = j.chapters[ap.ci]; if (ch) pp = ch.page; } catch (e) {} } }
-  if (!c && !pp) { srList(root); return; }
+  if (!c && !pp) { SR.ci0 = null; srList(root); return; }
   const ci = c ? Math.min(c, SR.cs.length) - 1 : withR(() => chapterOf(Math.min(pp, pages.length)));
   srChapter(ci, pp && !c ? Math.min(pp, pages.length) : 0, false);
   if (audio) { const fa = () => { const b = $('#sAb'); if (b) { b.focus(); toast('🎧 오디오북 단추입니다. Enter 를 누르면 맨 위 재생기에서 재생합니다'); } }; if (document.readyState === 'complete') setTimeout(fa, 300); else addEventListener('load', () => setTimeout(fa, 300), { once: true }); }
   if (listen) { const fb = () => { const b = $('#sSpeak'); if (b) { b.focus(); toast('▶ 듣기 단추입니다. Enter 를 누르면 읽기 시작합니다'); } }; if (document.readyState === 'complete') setTimeout(fb, 300); else addEventListener('load', () => setTimeout(fb, 300), { once: true }); }
-  window.addEventListener('popstate', () => { const u = new URLSearchParams(location.search), cc = +u.get('c') || 0; srStop(); if (cc) srChapter(cc - 1, 0, false); else location.reload(); });
+  SR.ci0 = c || pp ? ci : null; SR.p0 = pp && !c ? Math.min(pp, pages.length) : 0;
+  // 장 사이 뒤로·앞으로 가기는 페이지를 새로 열지 않고 그 자리에서 다시 그림 — 오디오북·법문이 듣는 중이어도 끊기지 않게 (운영자 요청, 2026-11-18)
+  if (!SR.popHook) { SR.popHook = 1; window.addEventListener('popstate', () => { if (!$('#sRead') || (history.state || {}).sb) return; const u = new URLSearchParams(location.search), cc = +u.get('c') || 0; if (SR.speaking) srStop(true); if (cc) srChapter(cc - 1, 0, false); else if (SR.ci0 != null) srChapter(SR.ci0, SR.p0, false); else srList($('#sRead')); }); }
 }
 function srList(root) {
   const cs = SR.cs, id = SR.id, pages = SR.r.pages;
@@ -2938,7 +2941,7 @@ function srChapter(ci, page, push, then) {
   const h1 = $('.s-h1'); h1.textContent = srName(ch, ci); document.title = `${srName(ch, ci)} · ${SR.title} · 단순 화면`;
   const cur = $('.s-path [aria-current]'); if (cur) cur.textContent = srName(ch, ci);
   sStat(`${ci + 1} / ${cs.length} 장`);
-  if (push) { try { history.pushState({}, '', `?c=${ci + 1}`); } catch (e) {} }
+  if (push) { try { history.pushState({}, '', `?c=${ci + 1}`); } catch (e) {} lastDoc = location.pathname + location.search; }
   srSavePos(R0.i + 1, ch);
   if (then) { then(); return; }
   const go = () => { const t = page && $('#pm-' + page); if (t) t.scrollIntoView(); else scrollTo(0, 0); h1.focus({ preventScroll: true }); };
