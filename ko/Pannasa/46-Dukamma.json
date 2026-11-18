@@ -1,0 +1,635 @@
+[
+ {
+  "img": "images/46-Dukamma-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     258,
+     246,
+     542,
+     354
+    ],
+    "ko": "두깜마라자 자따까\n원인과 결과와 지혜를 다룬\n빤냐사 자따까 이야기",
+    "cover": [
+     240,
+     224,
+     198
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     28,
+     620,
+     74
+    ],
+    "ko": "죽어 가는 아버지의 가르침",
+    "cover": [
+     232,
+     221,
+     204
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     50,
+     384,
+     266,
+     422
+    ],
+    "ko": "1. 세 번 과부가 된 여인과\n혼인하지 말라.",
+    "cover": [
+     231,
+     221,
+     204
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     292,
+     384,
+     508,
+     422
+    ],
+    "ko": "2. 세 번 출가를 버린 사람과\n벗하지 말라.",
+    "cover": [
+     231,
+     219,
+     202
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     540,
+     384,
+     760,
+     422
+    ],
+    "ko": "3. 앞을 내다보지 않고 경솔한\n왕 밑에서 살지 말라.",
+    "cover": [
+     231,
+     221,
+     204
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     44,
+     620,
+     82
+    ],
+    "ko": "일부러 시험하다",
+    "cover": [
+     226,
+     219,
+     205
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     80,
+     84,
+     720,
+     124
+    ],
+    "ko": "두깜마는 아버지의 훈계를 떠올렸습니다. “아버지께서 무슨 까닭으로 그러셨을까? 따져 보자.” 그는 가르침을 시험하려고 그 과부와 혼인하고 변덕스러운 사람과 벗했습니다.",
+    "cover": [
+     226,
+     218,
+     206
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     44,
+     640,
+     90
+    ],
+    "ko": "황금 백조의 꾀",
+    "cover": [
+     231,
+     222,
+     207
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     120,
+     362,
+     680,
+     410
+    ],
+    "ko": "시험의 끝을 보려고 두깜마는 죄를 꾸몄습니다. 왕의 백조를 안전하게 숨기고 흔한 새를 요리한 뒤, 새 아내에게 반역을 저질렀다고 거짓으로 털어놓았습니다.",
+    "cover": [
+     231,
+     222,
+     208
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     276,
+     326,
+     524,
+     420
+    ],
+    "ko": "두 배신\n앞의 두 경고가 맞았습니다. 1천 닢에 혹한 아내는 기꺼이 그를 넘겨주었고, 처형장 가는 길에 세 번 출가를 버린 벗은 그의 옷까지 내놓으라 했습니다.",
+    "cover": [
+     235,
+     220,
+     193
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     48,
+     620,
+     80
+    ],
+    "ko": "경솔한 명령",
+    "cover": [
+     230,
+     213,
+     187
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     120,
+     84,
+     680,
+     124
+    ],
+    "ko": "브라흐마닷따 왕은 크게 성내며 조사도 없이, 바로 그날 저녁 화장터에서 두깜마의 목을 베라고 명했습니다.",
+    "cover": [
+     232,
+     216,
+     191
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     36,
+     600,
+     80
+    ],
+    "ko": "서두름의 갈래",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     288,
+     120,
+     330,
+     146
+    ],
+    "ko": "동",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     478,
+     122,
+     520,
+     150
+    ],
+    "ko": "북",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     264,
+     210,
+     286,
+     246
+    ],
+    "ko": "동",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     514,
+     208,
+     540,
+     244
+    ],
+    "ko": "동",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     288,
+     296,
+     330,
+     324
+    ],
+    "ko": "서",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     474,
+     300,
+     518,
+     330
+    ],
+    "ko": "남",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     376,
+     342,
+     430,
+     362
+    ],
+    "ko": "남",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     110,
+     368,
+     690,
+     414
+    ],
+    "ko": "네 문지기가 한밤의 처형을 막았습니다. 네 가지 옛 비극으로, 깊이 생각하지 않은 행동에서 큰 불행이 생긴다는 것을 보여 주었습니다.",
+    "cover": [
+     240,
+     236,
+     228
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     38,
+     560,
+     78
+    ],
+    "ko": "누명을 벗다",
+    "cover": [
+     206,
+     209,
+     164
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     80,
+     366,
+     720,
+     416
+    ],
+    "ko": "새벽에 두깜마가 진실을 밝혔습니다. “아버지께서 저를 훈계하셔서 시험해 본 것입니다. 이제 무엇이 옳고 그른지 알겠습니다.” 백조는 살아 있었습니다.",
+    "cover": [
+     184,
+     206,
+     174
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     510,
+     44,
+     770,
+     84
+    ],
+    "ko": "거절",
+    "cover": [
+     235,
+     218,
+     193
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     624,
+     172,
+     704,
+     196
+    ],
+    "ko": "딱까실라",
+    "cover": [
+     234,
+     217,
+     189
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     508,
+     88,
+     760,
+     156
+    ],
+    "ko": "감탄한 왕이 나라의 절반을 주겠다고 했지만 두깜마는 거절했습니다. 악하고 생각 없는 왕의 위험을 본 그는 아버지의 마지막 경고를 지켜 딱까실라로 떠났습니다.",
+    "cover": [
+     235,
+     218,
+     193
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     50,
+     346,
+     162
+    ],
+    "ko": "신기한 수레\n이레째 되는 날, 후사 없는 딱까실라 나라가 풋사라타를 풀어놓았습니다. 신기한 수레는 두깜마를 돌며, 바르게 다스릴 그의 큰 공덕을 알아보았습니다.",
+    "cover": [
+     231,
+     211,
+     180
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     504,
+     56,
+     758,
+     196
+    ],
+    "ko": "바른 다스림\n바라나시 왕과 달리 두깜마 왕은 깊은 앞날의 헤아림과 자비로 다스렸습니다. 보시당 여섯 곳을 크게 세워 어려운 이들을 돌보았습니다.",
+    "cover": [
+     239,
+     227,
+     210
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     410,
+     50,
+     752,
+     206
+    ],
+    "ko": "업의 만남\n생계를 꾸릴 수 없게 된 악한 아내와 거짓 벗은 딱까실라로 흘러들었습니다. 가난에 빠진 그들은 자기들이 배신한 그 사람의 보시당에서 밥을 빌게 되었습니다.",
+    "cover": [
+     238,
+     223,
+     200
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/46-Dukamma-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     250,
+     552,
+     392
+    ],
+    "ko": "자따까 인연 지도\n“오직 좋은 사람과 사귀어야 한다.”\n부처님께서 말씀을 맺으셨습니다.\n악한 벗은 데와닷따, 악한 아내는 찐짜,\n그리고 두깜마 왕은 여래였습니다.",
+    "cover": [
+     96,
+     50,
+     30
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ }
+]
