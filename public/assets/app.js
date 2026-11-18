@@ -973,7 +973,7 @@ function renderReader() {
     <div class="panel" id="p-bm"><h5>내 책갈피</h5><ul>${bms().map((m, k) => `<li><span><a class="link" href="/read/${m.id}/${m.p}">『${esc(m.t)}』 ${esc(m.pl || m.p)}쪽</a>${m.note ? `<br><span class="muted small">${esc(m.note)}</span>` : ''}</span><button class="link" data-bmdel="${k}" aria-label="책갈피 지우기">지우기</button></li>`).join('') || '<li class="muted">아직 책갈피가 없습니다.</li>'}</ul>
       <div class="row" style="margin-top:12px"><input id="bmNote" placeholder="이 쪽에 한 줄 메모" aria-label="책갈피 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"><button class="tbtn" id="bmSave">저장</button></div>
       <p class="note">회원가입 없이 이 기기의 브라우저에만 저장됩니다. 다른 기기로 옮길 때는 내 서재의 ‘옮기기’를 쓰세요.</p></div>
-    <div class="panel" id="p-keys"><h5>단축키 안내</h5><p class="note">Alt 키와 Shift 키를 함께 누른 채로 아래 글자 키를 누릅니다. (맥은 Option + Shift). 창을 여는 단축키는 한 번 더 누르면 창이 닫히고, 연 단추로 돌아갑니다.</p><ul class="keys">${KEYS.map(([k, d]) => `<li><kbd>Alt+Shift+${k}</kbd> ${d}</li>`).join('')}<li><kbd>Esc</kbd> 열린 창 닫기 (창이 없으면 읽기 끝내기)</li><li><kbd>→</kbd> <kbd>←</kbd> (오른쪽·왼쪽 화살표 키) 다음 쪽·앞 쪽으로 넘기기 — 눈으로 보며 읽는 분을 위한 키입니다. 화면 낭독기를 쓰실 때는 낭독기의 화살표 키 읽기가 먼저 동작합니다.</li></ul></div>`;
+    <div class="panel" id="p-keys"><h5>단축키 안내</h5><p class="note" tabindex="0">Alt 키와 Shift 키를 함께 누른 채로 아래 글자 키를 누릅니다. (맥은 Option + Shift). 창을 여는 단축키는 한 번 더 누르면 창이 닫히고, 연 단추로 돌아갑니다.</p><ul class="keys">${KEYS.map(([k, d]) => `<li tabindex="0"><kbd>Alt+Shift+${k}</kbd> ${d}</li>`).join('')}<li tabindex="0"><kbd>Esc</kbd> 열린 창 닫기 (창이 없으면 읽기 끝내기)</li><li tabindex="0"><kbd>→</kbd> <kbd>←</kbd> (오른쪽·왼쪽 화살표 키) 다음 쪽·앞 쪽으로 넘기기 — 눈으로 보며 읽는 분을 위한 키입니다. 화면 낭독기를 쓰실 때는 낭독기의 화살표 키 읽기가 먼저 동작합니다.</li></ul></div>`;
   bindReader();
   el._fkey = null;
   if (fkey) { const f = $(fkey, el); if (f && f.offsetParent !== null) f.focus({ preventScroll: true }); else el._fkey = fkey; }  // 닫힌 창 안의 단추면 창을 다시 연 뒤(reopen)에 커서를 되돌림
@@ -2731,8 +2731,14 @@ function initSimpleFind() {
 const S_KEYS = [['P', '듣기 시작·멈춤 (책의 장 글 화면에서)'], ['S', '듣기 설정 열기·닫기 (장 글 화면에서)'], ['V', '화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['N', '장 목록으로 (책을 읽을 때)'], ['B', '지금 읽는 쪽에 책갈피 넣기·빼기'], ['L', '내 서재 (이어 읽기·책갈피)'], ['M', '첫 화면 (폴더 목록)'], ['K', '지금 위치 알리기'], ['H', '단축키 안내 열기·닫기']];
 function simpleHelp() {
   const old = $('#sKeys'); if (old) { old.remove(); const b = $('.s-list [aria-selected="true"]') || $('.s-h1'); if (b) b.focus(); return; }
-  $('.s-h1').insertAdjacentHTML('afterend', `<section id="sKeys" class="s-keys" aria-labelledby="sKeysH"><h2 id="sKeysH" tabindex="-1">단축키 안내</h2><p>Alt 키와 Shift 키를 함께 누른 채로 글자 키를 누릅니다 (맥은 Option + Shift).</p><ul>${S_KEYS.map(([k, d]) => `<li><kbd>Alt+Shift+${k}</kbd> ${d}</li>`).join('')}<li><kbd>↑</kbd> <kbd>↓</kbd> 목록에서 줄 고르기, <kbd>Enter</kbd> 열기, <kbd>Backspace</kbd> 위 목록으로</li></ul><button type="button" class="s-btn" id="sKeysX">단축키 안내 닫기</button></section>`);
+  $('.s-h1').insertAdjacentHTML('afterend', `<section id="sKeys" class="s-keys" aria-labelledby="sKeysH"><h2 id="sKeysH" tabindex="-1">단축키 안내</h2><p tabindex="0">Alt 키와 Shift 키를 함께 누른 채로 글자 키를 누릅니다 (맥은 Option + Shift). Tab 키로 한 줄씩 들으실 수 있습니다.</p><ul>${S_KEYS.map(([k, d]) => `<li tabindex="0"><kbd>Alt+Shift+${k}</kbd> ${d}</li>`).join('')}<li tabindex="0"><kbd>↑</kbd> <kbd>↓</kbd> 목록에서 줄 고르기, <kbd>Enter</kbd> 열기, <kbd>Backspace</kbd> 위 목록으로</li></ul><button type="button" class="s-btn" id="sKeysX">단축키 안내 닫기</button></section>`);
   $('#sKeysX').onclick = simpleHelp; $('#sKeysH').focus();
+  $('#sKeys').addEventListener('keydown', e => {
+    if (e.key === 'Escape') { e.preventDefault(); simpleHelp(); return; }
+    if (e.key !== 'Tab' || e.altKey || e.ctrlKey || e.metaKey) return;  // 안내 안에서 Tab 은 줄마다, 끝에서 처음으로 돎
+    const f = $$('#sKeys [tabindex="0"], #sKeys button'), i = f.indexOf(document.activeElement);
+    if (e.shiftKey ? i <= 0 : i === f.length - 1) { e.preventDefault(); f[e.shiftKey ? f.length - 1 : 0].focus(); }
+  });
 }
 function simpleKey(e) {
   const k = (e.code || '').replace(/^Key/, ''), reading = !!(SR.r && $('#sSpeak'));
