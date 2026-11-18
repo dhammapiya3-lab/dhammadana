@@ -1,0 +1,397 @@
+[
+ {
+  "img": "images/21-Candakumara-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     92,
+     178,
+     708,
+     290
+    ],
+    "ko": "짠다꾸마라 이야기\n란나 빤냐사 자따까가 전하는\n끝없는 공덕과 업의 대칭",
+    "cover": [
+     62,
+     38,
+     22
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "dark": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Candakumara-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     52,
+     742,
+     150
+    ],
+    "ko": "부처님께서는 중생을 괴로움에서 풀어 주는 일이 새삼스러운 것이 아니라고 말씀하셨습니다. 오래전 지혜가 덜 익었을 때에도 깨달음의 바라밀을 채우려고 바로 이 일을 하셨기 때문입니다.",
+    "cover": [
+     231,
+     209,
+     177
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Candakumara-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     340,
+     742,
+     406
+    ],
+    "ko": "바라나시의 상인 다나까와 난다 사이에서 태어난 아기는 피부가 금빛 같았습니다. 달에 관한 예지몽을 따라 이름을 짠다꾸마라라 지었습니다.",
+    "cover": [
+     228,
+     204,
+     170
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Candakumara-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     42,
+     520,
+     114
+    ],
+    "ko": "열여섯 살 짠다꾸마라는 재물을 구하러 상인 오백 명과 함께 수완나부미로 떠났습니다. 바다가 위험하다며 눈물로 말리는 부모님께 공손히 예를 올리고 굳게 길을 나섰습니다.",
+    "cover": [
+     232,
+     220,
+     203
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Candakumara-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     42,
+     580,
+     114
+    ],
+    "ko": "그는 많은 재산을 털어 붙잡힌 땅과 물의 생명들을 사서 놓아주었습니다. 어리석은 상인들은 그의 자비를 비웃었습니다. 그 속에서 자라는 깊은 공덕을 보지 못한 것입니다.",
+    "cover": [
+     231,
+     218,
+     201
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Candakumara-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     466,
+     294,
+     744,
+     396
+    ],
+    "ko": "산꼭대기에서 그는 명상하는 장로를 씻겨 드리고 약과 등불을 올렸습니다. 짠다꾸마라는 두 손을 들어 서원했습니다. “이 공덕으로 저는 부처가 되겠습니다.”",
+    "cover": [
+     226,
+     195,
+     146
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Candakumara-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     38,
+     430,
+     114
+    ],
+    "ko": "큰 배가 두 동강 났습니다. 지난날 잘못의 업이 메아리친 것입니다. 짠다꾸마라는 버터기름을 먹고 옷에 기름을 바른 뒤 돛대에서 뛰어내렸고, 여덟 가지 포살 계를 온전히 지키며 난파에서 살아남았습니다.",
+    "cover": [
+     230,
+     215,
+     191
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Candakumara-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     472,
+     50,
+     742,
+     134
+    ],
+    "ko": "이레 동안 떠다니던 그를 바다의 수호신 마니메칼라가 보았습니다. 그의 청정한 계행을 기뻐한 천녀는 그를 안고 하늘을 날아 수완나부미의 너럭바위에 무사히 내려 주었습니다.",
+    "cover": [
+     225,
+     209,
+     183
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Candakumara-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     376,
+     766,
+     424
+    ],
+    "ko": "수완나부미의 왕이 죽자, 빈 왕실 수레가 큰 공덕을 지닌 후계자를 찾아 나섰습니다. 수레는 모든 악기를 지나쳐 신하들을 곧장 잠든 보살 짠다꾸마라에게로 이끌었습니다.",
+    "cover": [
+     228,
+     200,
+     157
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Candakumara-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     38,
+     300,
+     160
+    ],
+    "ko": "상서로운 몸의 특징을 알아본 신하들은 그를 짠다 왕으로 모셨습니다. 그는 첫째 왕비 십발리와 함께 열 가지 왕의 법으로 다스려 나라에 큰 행복과 평온을 가져왔습니다.",
+    "cover": [
+     120,
+     75,
+     41
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Candakumara-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     222,
+     30,
+     576,
+     128
+    ],
+    "ko": "늘그막에 짠다 왕은 ‘일곱 가지 큰 보시’를 베풀었습니다. 코끼리·말·수레·하인을 칠백씩 내주며, 바라는 모든 이에게 끝없는 재물을 나누었습니다.",
+    "cover": [
+     233,
+     216,
+     187
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Candakumara-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     318,
+     752,
+     428
+    ],
+    "ko": "그 보시의 큰 힘에 땅이 울부짖으며 흔들렸습니다. 천신들의 왕 삭까가 황금 궁전에서 내려와 그를 찬탄하며, 그가 앞으로 스스로 깨달은 부처님이 되리라고 확언했습니다.",
+    "cover": [
+     228,
+     208,
+     176
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Candakumara-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     338,
+     176,
+     384,
+     246
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     104,
+     146,
+     348,
+     278
+    ],
+    "ko": "평생 보시와 계를 굳게 지킨 짠다 왕은 마침내 몸이 무너지자 뚜시따 천상에 영광스럽게 태어났습니다.",
+    "cover": [
+     233,
+     214,
+     183
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Candakumara-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     28,
+     560,
+     104
+    ],
+    "ko": "다시 태어남의 실타래:\n짠다 왕 → 부처님",
+    "cover": [
+     236,
+     220,
+     198
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     290,
+     140,
+     512,
+     178
+    ],
+    "ko": "장로 → 사리뿟따",
+    "cover": [
+     235,
+     219,
+     199
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     244,
+     214,
+     566,
+     254
+    ],
+    "ko": "마니메칼라 → 웁빨라완나",
+    "cover": [
+     237,
+     221,
+     201
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     288,
+     288,
+     540,
+     326
+    ],
+    "ko": "십발리 → 야소다라",
+    "cover": [
+     237,
+     222,
+     202
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
