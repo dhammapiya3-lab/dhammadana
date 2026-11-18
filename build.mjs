@@ -1126,6 +1126,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     for (const x of brlOf(b)) rows.push({ href: x.url, ic: '⠿', kind: 'file', dl: !x.ext, ext: x.ext, cols: [x.label + (x.ext ? ' (다른 사이트에서)' : ''), x.info.map(([k, v]) => `${k}: ${v}`).join(', ').replace(/\n/g, ' ')] });
     if (txtOk(b)) rows.push({ href: `/txt/${b.id}/${encodeURIComponent(txtName(b))}`, ic: '📃', kind: 'file', dl: true, cols: ['글 파일(TXT) 내려받기', '본문 글만 담은 파일 — 점자정보단말기·데이지 플레이어·메모장에서 읽기'] });
     for (const x of f) rows.push({ href: x.url, ic: x.k === 'PDF' ? '📄' : x.k === 'EPUB' ? '📘' : '📝', kind: 'file', dl: !x.ext, ext: x.ext, cols: [`${x.name} ${x.ext ? '(다른 사이트에서)' : '내려받기'}`, x.ext ? x.site : '파일'] });
+    for (const x of origsOf(b)) rows.push({ href: x.url, ic: '🌐', kind: 'file', dl: !x.ext, ext: x.ext, cols: [`원서(${x.lang}) ${x.ext ? '(다른 사이트에서)' : '내려받기'}`, x.ext ? (x.site || '다른 사이트') : '번역의 바탕이 된 원서 파일'] });  // 원서 파일 — 일반 화면처럼 PDF·EPUB·HWP 다음 (2026-11-19 검수: 단순 화면에 빠져 있던 것)
     rows.push({ href: `/simple/book/${b.id}/about/`, ic: 'ℹ️', kind: 'about', cols: ['책 소개', '지은이·옮긴이·펴낸 곳·소개 글·차례'] });
     rows.push({ href: `/simple/book/${b.id}/license/`, ic: '⚖️', kind: 'license', cols: ['라이선스', b.license ? `이용 조건: ${b.license}` : '이용 조건'] });
     rows.push({ href: `/book/${b.id}/?ui=normal`, ic: '↩', kind: 'normal', cols: ['일반 화면에서 이 책 보기', '표지 그림이 있는 책 소개 화면'] });
