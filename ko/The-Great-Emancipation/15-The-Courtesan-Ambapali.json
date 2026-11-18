@@ -1,0 +1,315 @@
+[
+ {
+  "img": "images/15-The-Courtesan-Ambapali-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     232,
+     108,
+     588,
+     348
+    ],
+    "ko": "세존께서 큰 비구 승가와\n함께 웨살리에 이르시어\n푸르게 우거진\n암바빨리의 숲에\n머무셨습니다.",
+    "cover": [
+     229,
+     195,
+     152
+    ],
+    "align": "center",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     378,
+     766,
+     446
+    ],
+    "ko": "수행자는 몸과 느낌과 마음과 법을 관찰하며 머뭅니다.\n열심히, 분명히 알아차리며, 마음챙김을 갖추어 세상에 대한 탐욕과 근심을 없앱니다.",
+    "cover": [
+     206,
+     168,
+     135
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     300,
+     150,
+     512,
+     326
+    ],
+    "ko": "마음챙김은\n끊임없는 수행입니다.\n나아가고 물러날 때,\n둘러볼 때, 가사를 입을 때,\n먹을 때, 앉을 때, 늘 끊어짐\n없이 온전히 알아차립니다.",
+    "cover": [
+     222,
+     185,
+     145
+    ],
+    "align": "center",
+    "em": 16,
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     340,
+     128,
+     482,
+     342
+    ],
+    "ko": "부처님께서\n자신의 망고 숲에\n머무신다는 소식을\n들은 부유한 기녀\n암바빨리는 화려한\n수레를 두고\n걸어서 공손히\n세존께 다가갔습니다.",
+    "cover": [
+     227,
+     197,
+     161
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     258,
+     156,
+     540,
+     300
+    ],
+    "ko": "가르침에 관한 법문을 듣고\n격려받은 암바빨리는\n공양을 올릴 영광을 청했습니다.\n세존께서는 침묵으로\n허락하셨습니다.",
+    "cover": [
+     226,
+     198,
+     163
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     86,
+     554,
+     210
+    ],
+    "ko": "릿차위의 왕족 젊은이들이 굴대와 굴대를\n맞부딪치며 암바빨리의 길을 막았습니다.\n그들은 부처님께 공양을 올릴 영광을\n십만 냥에 팔라고 요구했습니다.",
+    "cover": [
+     228,
+     202,
+     165
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     244,
+     100,
+     452,
+     362
+    ],
+    "ko": "암바빨리는\n웨살리와 그 땅의\n세금을 다 준다 해도\n공양을 넘기지\n않겠다며\n거절했습니다.\n진 왕자들은\n분해서 손가락을\n튕겼습니다.",
+    "cover": [
+     222,
+     187,
+     143
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     292,
+     84,
+     510,
+     344
+    ],
+    "ko": "부처님께서는\n비구들에게 화려한\n릿차위들을 보라고\n하시며, 그들을 장엄한\n삼십삼천의 신들에\n견주셨습니다.\n그들의 화려하지만\n덧없는 모습이 깊은\n무상을 보여 주는\n살아 있는 거울이\n되었습니다.",
+    "cover": [
+     226,
+     215,
+     199
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     276,
+     108,
+     526,
+     352
+    ],
+    "ko": "릿차위들이 걸어서\n다가와 공양을 올리겠다고\n청했습니다.\n부처님께서는 기녀\n암바빨리에게 침묵으로\n하신 약속을 지키시어\n거절하셨습니다.",
+    "cover": [
+     225,
+     188,
+     144
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     342,
+     74,
+     458,
+     406
+    ],
+    "ko": "이튿날\n아침\n암바빨리는\n자신의\n정원에서\n훌륭한 음식을\n마련하여\n부처님을\n으뜸으로 한\n비구 승가를\n손수 대접하여\n흡족하게\n했습니다.",
+    "cover": [
+     239,
+     190,
+     150
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     390,
+     346,
+     700,
+     436
+    ],
+    "ko": "낮은 자리에 앉은 암바빨리가 자신의\n정원을 승가에 보시했습니다. 부처님께서\n받으시니, 세속의 즐거움을 누리던 곳이\n오래가는 수행처가 되었습니다.",
+    "cover": [
+     210,
+     175,
+     140
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     198,
+     512,
+     256
+    ],
+    "ko": "잘 닦은 지혜는 감각적 욕망·\n존재·무명의 번뇌에서\n마음을 완전히 해탈시킵니다.",
+    "cover": [
+     223,
+     176,
+     124
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     270,
+     264,
+     530,
+     320
+    ],
+    "ko": "잘 닦은 삼매는\n큰 지혜를 가져옵니다.",
+    "cover": [
+     209,
+     161,
+     111
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     210,
+     348,
+     594,
+     432
+    ],
+    "ko": "잘 닦은 계는\n큰 삼매를 가져옵니다.",
+    "cover": [
+     193,
+     142,
+     97
+    ],
+    "align": "center",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

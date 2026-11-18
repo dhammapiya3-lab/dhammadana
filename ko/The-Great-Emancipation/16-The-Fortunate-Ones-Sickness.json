@@ -1,0 +1,332 @@
+[
+ {
+  "img": "images/16-The-Fortunate-Ones-Sickness-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     136,
+     30,
+     668,
+     112
+    ],
+    "ko": "세존의 병환\n마지막 안거의 가르침",
+    "cover": [
+     212,
+     182,
+     147
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-The-Fortunate-Ones-Sickness-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     356,
+     22,
+     792,
+     136
+    ],
+    "ko": "부처님께서 큰 비구 승가와 함께\n벨루와 마을에 이르셨습니다.\n비구들에게는 가까운 웨살리에서 벗끼리 안거를\n지내라 하시고, 당신은 벨루와에 머무셨습니다.",
+    "cover": [
+     223,
+     198,
+     169
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-The-Fortunate-Ones-Sickness-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     98,
+     282,
+     416,
+     414
+    ],
+    "ko": "안거 중에 죽음에 이를 듯한\n심한 병이 일어났습니다.\n부처님께서는 마음챙김과 분명한 앎으로\n심한 몸의 고통을 견디시며\n마음은 흔들리지 않으셨습니다.",
+    "cover": [
+     219,
+     195,
+     166
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-The-Fortunate-Ones-Sickness-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     338,
+     624,
+     446
+    ],
+    "ko": "부처님께서 생각하셨습니다. “시자들에게 알리지 않고\n승가에 말하지 않은 채 반열반에 드는 것은 알맞지 않다.”\n힘써 병을 물리치시고 수명의 형성을 굳게 정하여\n더 머무르기로 하셨습니다.",
+    "cover": [
+     217,
+     192,
+     162
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-The-Fortunate-Ones-Sickness-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     46,
+     458,
+     216
+    ],
+    "ko": "부처님께서 회복하셨습니다.\n아난다 장로가 다가와\n걱정으로 몸이 쇠약해졌다고\n털어놓았습니다. 부처님께서\n승가에 마지막 가르침을 남기지 않고는\n떠나지 않으시리라는 것만이\n위안이었다고 했습니다.",
+    "cover": [
+     215,
+     191,
+     161
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-The-Fortunate-Ones-Sickness-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     326,
+     632,
+     446
+    ],
+    "ko": "부처님께서 답하셨습니다.\n“승가가 무엇을 바라는가?\n나는 감추는 것 없이 법을 가르쳤다.\n여래에게는 스승의 움켜쥔 주먹\n같은 비밀이 없다.”",
+    "cover": [
+     212,
+     189,
+     156
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-The-Fortunate-Ones-Sickness-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     168,
+     30,
+     662,
+     148
+    ],
+    "ko": "부처님\n“나는 ‘내가 비구들을 이끈다’거나 ‘내가 그들의 스승이다’라고\n생각하지 않는다. 그런데 왜 그들에 관해 따로 지시를 남기겠는가?”\n부처님께서는 한 사람에게 기대는 중심 권위가\n필요하지 않다고 하셨습니다.",
+    "cover": [
+     213,
+     190,
+     158
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-The-Fortunate-Ones-Sickness-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     304,
+     48,
+     688,
+     150
+    ],
+    "ko": "“이제 나는 여든으로 늙었다.\n대나무로 묶어야만 굴러가는 낡은 수레처럼,\n여래의 몸도 묶어 받쳐야만 굴러간다.”",
+    "cover": [
+     210,
+     189,
+     156
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-The-Fortunate-Ones-Sickness-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     136,
+     358,
+     680,
+     446
+    ],
+    "ko": "‘모든 표상에 마음을 두지 않고 느낌이 그칠 때\n여래는 표상 없는 마음의 삼매에 머문다.\n그때에야 그 몸이 참으로 편안하다.’",
+    "cover": [
+     222,
+     190,
+     152
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-The-Fortunate-Ones-Sickness-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     60,
+     344,
+     192
+    ],
+    "ko": "‘그러므로 아난다여,\n자신을 섬으로 삼고 자신을\n의지처로 삼아 머물러라.\n다른 것을 의지처로 삼지 마라.\n법을 섬으로 삼고,\n법을 의지처로 삼아라.’",
+    "cover": [
+     213,
+     187,
+     153
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-The-Fortunate-Ones-Sickness-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     4,
+     22,
+     306,
+     146
+    ],
+    "ko": "어떻게 섬이 되는가?\n열심히 마음챙김을 갖추어\n세상에 대한 탐욕과 근심을\n없애고 관찰하라.",
+    "cover": [
+     222,
+     198,
+     167
+    ],
+    "align": "left",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     20,
+     798,
+     134
+    ],
+    "ko": "이처럼 비구는\n자신을 섬으로 삼고\n자신을 의지처로 삼으며\n다른 의지처가 없이,",
+    "cover": [
+     226,
+     202,
+     173
+    ],
+    "align": "right",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     4,
+     322,
+     286,
+     446
+    ],
+    "ko": "1. 몸에서 몸을\n2. 느낌에서 느낌을\n3. 마음에서 마음을\n4. 법에서 법을",
+    "cover": [
+     219,
+     194,
+     164
+    ],
+    "align": "left",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     320,
+     798,
+     436
+    ],
+    "ko": "법을 섬으로 삼고\n법을 의지처로 삼으며\n다른 의지처가 없이 머뭅니다.",
+    "cover": [
+     218,
+     193,
+     161
+    ],
+    "align": "right",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-The-Fortunate-Ones-Sickness-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     20,
+     394,
+     180
+    ],
+    "ko": "섬이 되어라\n‘자신과 법을 섬으로 삼아 머무는 이는,\n지금이든 내가 떠난 뒤든,\n배우려는 뜻이 있다면\n어둠에서 가장 높은 경지에 이를 것이다.’",
+    "cover": [
+     223,
+     197,
+     166
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
