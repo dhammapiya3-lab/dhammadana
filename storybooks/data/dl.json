@@ -1,10 +1,10 @@
 {
 "After-Awakening": {
-"n": 52,
-"pdf": 55837021,
-"pdfs": 5616709,
-"stories": 4,
-"zip": 55562138
+"n": 164,
+"pdf": 177079820,
+"pdfs": 18099849,
+"stories": 13,
+"zip": 176765136
 },
 "After-Awakening/01-03-After-Awakening": {
 "n": 14,
@@ -25,6 +25,51 @@
 "n": 15,
 "pdf": 16147047,
 "zip": 15874299
+},
+"After-Awakening/10-11-Further-Attainments": {
+"n": 12,
+"pdf": 12395456,
+"zip": 12123320
+},
+"After-Awakening/12-Yasas-Going-Forth": {
+"n": 11,
+"pdf": 12985576,
+"zip": 12716880
+},
+"After-Awakening/13-14-Yasas-Parents": {
+"n": 15,
+"pdf": 15770431,
+"zip": 15499225
+},
+"After-Awakening/15-16-Yasas-Friends": {
+"n": 11,
+"pdf": 11360636,
+"zip": 11089588
+},
+"After-Awakening/20-Good-Group-of-Friends": {
+"n": 10,
+"pdf": 12605538,
+"zip": 12330846
+},
+"After-Awakening/21-35-Miracles": {
+"n": 13,
+"pdf": 13926297,
+"zip": 13651167
+},
+"After-Awakening/36-38-Kassapa-Brothers": {
+"n": 15,
+"pdf": 17739799,
+"zip": 17458200
+},
+"After-Awakening/39-40-King-Bimbisara": {
+"n": 12,
+"pdf": 14627440,
+"zip": 14348256
+},
+"After-Awakening/41-42-Sariputta-and-Others": {
+"n": 13,
+"pdf": 12272198,
+"zip": 11986001
 },
 "Foremost-Monks": {
 "n": 802,
@@ -463,11 +508,11 @@
 "zip": 18838833
 },
 "Pannasa": {
-"n": 277,
-"pdf": 356864592,
-"pdfs": 34164914,
-"stories": 18,
-"zip": 356513343
+"n": 426,
+"pdf": 549477491,
+"pdfs": 52743826,
+"stories": 27,
+"zip": 549069763
 },
 "Pannasa/01-King-Aditta": {
 "n": 15,
@@ -558,5 +603,50 @@
 "n": 15,
 "pdf": 19706581,
 "zip": 19440200
+},
+"Pannasa/19-Sirivipulakitti": {
+"n": 15,
+"pdf": 20093738,
+"zip": 19824963
+},
+"Pannasa/20-Sattadhanu": {
+"n": 27,
+"pdf": 32880933,
+"zip": 32610726
+},
+"Pannasa/21-Candakumara": {
+"n": 14,
+"pdf": 18907757,
+"zip": 18645505
+},
+"Pannasa/22-Sadhita": {
+"n": 11,
+"pdf": 15603862,
+"zip": 15342761
+},
+"Pannasa/23-Ratanapajjota": {
+"n": 14,
+"pdf": 17047568,
+"zip": 16778652
+},
+"Pannasa/24-Two-Headed-Swan": {
+"n": 13,
+"pdf": 18863086,
+"zip": 18597285
+},
+"Pannasa/25-Viriyapandita": {
+"n": 15,
+"pdf": 18660858,
+"zip": 18395224
+},
+"Pannasa/26-Vipularaja": {
+"n": 13,
+"pdf": 18757049,
+"zip": 18493429
+},
+"Pannasa/27-Mahapaduma": {
+"n": 27,
+"pdf": 34139049,
+"zip": 33868266
 }
 }
