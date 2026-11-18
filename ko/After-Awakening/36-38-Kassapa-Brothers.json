@@ -1,0 +1,601 @@
+[
+ {
+  "img": "images/36-38-Kassapa-Brothers-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     428,
+     160,
+     668,
+     300
+    ],
+    "ko": "우루웰라의 기적과\n불의 설법",
+    "cover": [
+     214,
+     170,
+     124
+    ],
+    "align": "center",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-38-Kassapa-Brothers-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     90,
+     540,
+     296
+    ],
+    "ko": "깟사빠여,\n그대는 결코\n아라한이 아니다.\n아라한의 길에\n들지도 않았다.",
+    "cover": [
+     203,
+     161,
+     122
+    ],
+    "align": "center",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     272,
+     304,
+     532,
+     350
+    ],
+    "ko": "세존께서 수행자의 깨달았다는\n미혹을 깨뜨리셨습니다.",
+    "cover": [
+     197,
+     155,
+     118
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-38-Kassapa-Brothers-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     256,
+     60,
+     544,
+     194
+    ],
+    "ko": "출가를 청하며 우루웰라깟사빠와\n결발 수행자 500명의 제자들은\n제사 지내던 불의 도구를\n모두 강물에 던져 버렸습니다.",
+    "cover": [
+     199,
+     161,
+     122
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-38-Kassapa-Brothers-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     296,
+     584,
+     368
+    ],
+    "ko": "땋은 머리와 불의 도구가 떠내려오는 것을 본\n나디깟사빠와 가야깟사빠는 형을 걱정하며\n무슨 일인지 알아보러 왔습니다.",
+    "cover": [
+     190,
+     154,
+     117
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-38-Kassapa-Brothers-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     62,
+     198,
+     414
+    ],
+    "ko": "형제들은 다시\n만나 대사문의\n길을 택했습니다.\n천 명의 불\n숭배자들이\n의식을 버리고\n법을 따랐습니다.",
+    "cover": [
+     189,
+     152,
+     112
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-38-Kassapa-Brothers-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     282,
+     74,
+     726,
+     136
+    ],
+    "ko": "세존께서 말씀하셨습니다. “오라, 비구들이여.\n법은 잘 설해졌다. 괴로움을 완전히 끝내기 위해\n청정한 삶을 살아라.”",
+    "cover": [
+     208,
+     165,
+     124
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-38-Kassapa-Brothers-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     300,
+     160,
+     500,
+     322
+    ],
+    "ko": "세존께서는 결의로\n물질의 불을 다스리시어,\n패지 않은 장작이\n쪼개지고 불이 저절로\n붙는 기적을 3,500가지나\n보이셨습니다.",
+    "cover": [
+     207,
+     164,
+     120
+    ],
+    "align": "center",
+    "em": 14,
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-38-Kassapa-Brothers-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     58,
+     574,
+     144
+    ],
+    "ko": "세존께서 새 비구 천 명을\n이끄셨습니다. 모두 불을 섬기던\n결발 수행자였습니다.\n그들은 가야시사 산꼭대기에 올랐습니다.",
+    "cover": [
+     205,
+     164,
+     122
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-38-Kassapa-Brothers-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     350,
+     64,
+     454,
+     382
+    ],
+    "ko": "“비구들이여,\n모든 것이\n불타고\n있다.”\n\n부처님께서는\n그들이 버린\n바깥의 불에서\n사람의 처지를\n태우는 보이지\n않는 불길로\n이야기를\n돌리셨습니다.",
+    "cover": [
+     198,
+     155,
+     112
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-38-Kassapa-Brothers-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     40,
+     632,
+     106
+    ],
+    "ko": "안팎의 감각이 불타고 있습니다.\n눈, 귀, 코와 그 대상, 의식, 느낌이\n쉬지 않고 불탑니다.",
+    "cover": [
+     203,
+     163,
+     122
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     114,
+     354,
+     226,
+     402
+    ],
+    "ko": "형색",
+    "cover": [
+     193,
+     145,
+     97
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     346,
+     354,
+     458,
+     402
+    ],
+    "ko": "소리",
+    "cover": [
+     191,
+     147,
+     101
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     578,
+     354,
+     690,
+     402
+    ],
+    "ko": "냄새",
+    "cover": [
+     192,
+     149,
+     101
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-38-Kassapa-Brothers-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     40,
+     634,
+     104
+    ],
+    "ko": "불은 안으로 이어집니다. 혀와 몸과 마음,\n그리고 모든 생각과 접촉과 느낌이\n남김없이 불에 타고 있습니다.",
+    "cover": [
+     199,
+     159,
+     119
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     128,
+     114,
+     210,
+     142
+    ],
+    "ko": "혀",
+    "cover": [
+     196,
+     155,
+     115
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     356,
+     114,
+     446,
+     142
+    ],
+    "ko": "몸",
+    "cover": [
+     200,
+     159,
+     115
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     592,
+     114,
+     676,
+     142
+    ],
+    "ko": "마음",
+    "cover": [
+     203,
+     166,
+     124
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     114,
+     356,
+     226,
+     412
+    ],
+    "ko": "맛",
+    "cover": [
+     186,
+     141,
+     95
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     346,
+     356,
+     458,
+     412
+    ],
+    "ko": "감촉",
+    "cover": [
+     186,
+     144,
+     98
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     578,
+     356,
+     690,
+     412
+    ],
+    "ko": "생각",
+    "cover": [
+     186,
+     144,
+     99
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-38-Kassapa-Brothers-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     358,
+     118,
+     442,
+     148
+    ],
+    "ko": "탐욕",
+    "cover": [
+     186,
+     142,
+     99
+    ],
+    "align": "center",
+    "em": 18,
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     272,
+     314,
+     346,
+     352
+    ],
+    "ko": "성냄",
+    "cover": [
+     196,
+     153,
+     112
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     458,
+     312,
+     544,
+     350
+    ],
+    "ko": "어리석음",
+    "cover": [
+     201,
+     158,
+     117
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     194,
+     370,
+     604,
+     428
+    ],
+    "ko": "무엇으로 불타는가? 감각은 탐욕과 성냄과\n어리석음의 불로 쉬지 않고 불탄다.",
+    "cover": [
+     194,
+     152,
+     110
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-38-Kassapa-Brothers-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     148,
+     380,
+     356
+    ],
+    "ko": "이 안의 불이\n끝없는 괴로움을\n일으킵니다.\n태어남, 늙음, 죽음,\n근심, 탄식, 고통,\n슬픔, 절망으로\n불탑니다.",
+    "cover": [
+     195,
+     152,
+     108
+    ],
+    "align": "center",
+    "em": 14,
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-38-Kassapa-Brothers-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     364,
+     300,
+     490,
+     446
+    ],
+    "ko": " ",
+    "cover": [
+     188,
+     149,
+     109
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     488,
+     222,
+     794,
+     446
+    ],
+    "ko": "이렇게 보는 제자는\n감각을 싫어하게 됩니다.\n싫어하여 탐욕이 빛바래고,\n탐욕이 빛바래어\n마음이 마침내 해탈합니다.",
+    "cover": [
+     194,
+     151,
+     104
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-38-Kassapa-Brothers-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     62,
+     652,
+     140
+    ],
+    "ko": "비구들의 마음은 집착 없이\n모든 번뇌에서 해탈했습니다.\n“태어남은 다했다… 할 일을 다 해 마쳤다.”",
+    "cover": [
+     195,
+     171,
+     144
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
