@@ -1,10 +1,12 @@
-Pannasa 50-Mahasudassana 15 장
+Pannasa 39-Sonananda 28 장
+Pannasa 49-Precepts 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 76 개 / 한글판 이야기 166 편
-공개 주소 확인: 200 1299595바이트
-이야기 Pannasa/50-Mahasudassana {'pdf': 19045329, 'zip': 18778875, 'n': 15}
-책 Pannasa {'pdf': 1034246848, 'pdfs': 99412339, 'zip': 1033696055, 'stories': 50, 'n': 803}
-내려받기 파일: 2 묶음 새로 만듦
+R2 에 올림: 132 개 / 한글판 이야기 166 편
+공개 주소 확인: 200 1288919바이트
+이야기 Pannasa/39-Sonananda {'pdf': 34948264, 'zip': 34677902, 'n': 28}
+이야기 Pannasa/49-Precepts {'pdf': 20078522, 'zip': 19811290, 'n': 15}
+책 Pannasa {'pdf': 1034254674, 'pdfs': 99414076, 'zip': 1033703882, 'stories': 50, 'n': 803}
+내려받기 파일: 3 묶음 새로 만듦
 글로 보기: 166 이야기
 50-Mahasudassana
 44-The-Distribution-of-the-Relics
