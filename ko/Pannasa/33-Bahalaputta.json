@@ -1,0 +1,713 @@
+[
+ {
+  "img": "images/33-Bahalaputta-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     346,
+     588,
+     388
+    ],
+    "ko": "바할라뿟따 자따까",
+    "cover": false,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     214,
+     388,
+     588,
+     416
+    ],
+    "ko": "란나 벽화로 보는 인욕 바라밀",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Bahalaputta-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     346,
+     776,
+     436
+    ],
+    "ko": "제따와나 승원의 설법당에 모인 비구들이 부처님의 인욕 바라밀(khantipāramī)에 감탄했습니다. 부처님께서는 세상의 괴로움을 짊어지시면서도 모든 중생의 이익을 위해 이 덕을 채우셨습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Bahalaputta-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     332,
+     594,
+     432
+    ],
+    "ko": "그 말을 들으신 스승께서 오시어 마련된 자리에 앉으셨습니다. “비구들이여, 지난 생에 나는 짐승으로 태어났을 때에도 어머니가 살 수 있도록 내 목숨을 내주며 죽음의 괴로움을 참고 견뎠다.”",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Bahalaputta-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     76,
+     596,
+     134
+    ],
+    "ko": "옛 꼬살라 나라에 바할라라는 암소가 살았습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     222,
+     320,
+     598,
+     404
+    ],
+    "ko": "암소에게는 사랑하는 송아지 바할라뿟따가 있었으니, 그가 바로 보살이었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Bahalaputta-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     212,
+     66,
+     594,
+     144
+    ],
+    "ko": "송아지를 무리에 맡기고 바할라는 숲 깊이 들어가 무성한 풀을 뜯었습니다. 그때 큰 호랑이가 덮쳐 그녀를 산 채로 잡아먹으려 했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Bahalaputta-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     304,
+     598,
+     400
+    ],
+    "ko": "바할라가 간절히 빌었습니다. “아들에게 마지막으로 젖을 먹이게 해 주세요. 곧 돌아오겠습니다.” 호랑이는 그 말을 시험하며 허락했습니다. “네 말이 참으로 진실하다면 아들에게 보내 주겠다.”",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Bahalaputta-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     352,
+     614,
+     430
+    ],
+    "ko": "무리로 돌아간 바할라는 바할라뿟따에게 젖을 먹이고 죽음의 약속을 털어놓았습니다. 진실한 말은 복을 가져오고 신과 사람이 칭찬하는 것이니 호랑이에게 꼭 돌아가야 한다고 했습니다.",
+    "cover": [
+     52,
+     38,
+     30
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Bahalaputta-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     374,
+     576,
+     442
+    ],
+    "ko": "버림받기를 거부한 바할라뿟따의 깊은 은혜 갚는 마음이 깨어났습니다. 그는 어머니께 남으시라고 빌며, 대신 자기 살을 호랑이에게 내주겠다고 했습니다.",
+    "cover": [
+     52,
+     38,
+     30
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Bahalaputta-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     336,
+     262,
+     406
+    ],
+    "ko": "어머니와 아들은 함께\n숲으로 돌아갔습니다.",
+    "cover": [
+     52,
+     38,
+     30
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     282,
+     330,
+     768,
+     414
+    ],
+    "ko": "바할라뿟따가 큰 짐승에게 다가갔습니다. “내 몸의 살과 피를 먹고 어머니를 놓아주십시오. 인욕 바라밀을 채우려고 모든 괴로움을 참겠습니다.”",
+    "cover": [
+     52,
+     38,
+     30
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Bahalaputta-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     362,
+     594,
+     422
+    ],
+    "ko": "젊은 송아지의 아름다운 마음과 고운 말에 감동한 호랑이의 덕성이 깨어났습니다. 지옥 업보의 무게가 두려워 호랑이는 어미와 아들을 모두 자비롭게 살려 주었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Bahalaputta-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     312,
+     8,
+     490,
+     38
+    ],
+    "ko": "세 가지 덕",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     490,
+     82,
+     638,
+     126
+    ],
+    "ko": "“진실”",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     84,
+     286,
+     228,
+     332
+    ],
+    "ko": "“인욕”",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     574,
+     286,
+     722,
+     332
+    ],
+    "ko": "“감사”",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     240,
+     348,
+     560,
+     438
+    ],
+    "ko": "세 존재가 함께 기뻐하는 힘으로 큰 업의 힘이 생겼습니다. 암소의 진실, 송아지의 인욕(khantipāramī), 호랑이의 은혜 아는 감사입니다.",
+    "cover": [
+     52,
+     38,
+     30
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Bahalaputta-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     302,
+     6,
+     498,
+     40
+    ],
+    "ko": "천신들의 왕",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     256,
+     214,
+     546,
+     276
+    ],
+    "ko": "이렇게 모인 덕의 힘으로 삭까의\n천상 거처가 뜨거워졌습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     240,
+     390,
+     560,
+     444
+    ],
+    "ko": "갓 떠오른 해처럼 빛나는 천신들의 왕이 하늘에서 내려와 덕 있는 이들에게 법을 설했습니다.",
+    "cover": [
+     52,
+     38,
+     30
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Bahalaputta-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     288,
+     32,
+     518,
+     68
+    ],
+    "ko": "천상에 다시 태어남",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     238,
+     334,
+     562,
+     412
+    ],
+    "ko": "짐승의 몸을 벗은 셋은 곧바로 천신으로 태어나, 보석과 천상의 음악으로 꾸민 황금 궁전에 살았습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Bahalaputta-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     152,
+     44,
+     648,
+     96
+    ],
+    "ko": "다시 태어남의 인연 (사모다나)",
+    "cover": [
+     212,
+     180,
+     97
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     66,
+     112,
+     248,
+     146
+    ],
+    "ko": "지난 생",
+    "cover": [
+     215,
+     181,
+     92
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     306,
+     112,
+     494,
+     146
+    ],
+    "ko": "핵심 덕목",
+    "cover": [
+     215,
+     182,
+     95
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     552,
+     112,
+     738,
+     146
+    ],
+    "ko": "지금",
+    "cover": [
+     214,
+     181,
+     96
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     66,
+     178,
+     248,
+     220
+    ],
+    "ko": "호랑이",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     306,
+     178,
+     494,
+     220
+    ],
+    "ko": "감사",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     552,
+     178,
+     738,
+     220
+    ],
+    "ko": "숫도다나 왕",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     66,
+     258,
+     248,
+     300
+    ],
+    "ko": "바할라",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     306,
+     258,
+     494,
+     300
+    ],
+    "ko": "진실",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     552,
+     258,
+     738,
+     300
+    ],
+    "ko": "마하마야 왕비",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     66,
+     338,
+     248,
+     380
+    ],
+    "ko": "바할라뿟따",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     306,
+     338,
+     494,
+     380
+    ],
+    "ko": "인욕",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     552,
+     338,
+     738,
+     380
+    ],
+    "ko": "부처님",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Bahalaputta-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     204,
+     318,
+     600,
+     440
+    ],
+    "ko": "궁극의 해탈에는 여러 생의 희생이 필요하고, 완전한 인욕(khantipāramī)은 위없는 깨달음의 흔들림 없는 바탕입니다.\n여기서 바할라뿟따 자따까를 마칩니다.",
+    "cover": [
+     52,
+     38,
+     30
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ }
+]
