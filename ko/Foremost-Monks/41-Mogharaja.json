@@ -1,0 +1,1218 @@
+[
+ {
+  "img": "images/41-Mogharaja-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     228,
+     134,
+     574,
+     316
+    ],
+    "ko": "모가라자 장로의\n여러 생\n\n업과 왕위에 관한\n옛 연대기",
+    "cover": [
+     233,
+     207,
+     153
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     324,
+     630,
+     426
+    ],
+    "ko": "옛 항사와띠에서 미래의 모가라자는 빠두뭇따라 부처님께서\n거친 넝마 가사를 입는 비구를 칭찬하시는 것을 보았습니다.\n그는 큰 공양을 올리고, 앞날에 바로 그 으뜸이 되기를\n굳게 서원했습니다.",
+    "cover": [
+     76,
+     77,
+     109
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     436,
+     36,
+     722,
+     174
+    ],
+    "ko": "여러 겁 뒤, 깟사빠 부처님 시대\n이전에 바라나시의 으뜸 목수가\n장인 16,017명의 조합을 이끌었습니다.\n늙어서 고된 일을 할까 두려워한\n그는 사람들을 높이 올려 줄\n대담한 계획을 세웠습니다.",
+    "cover": [
+     228,
+     183,
+     112
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     318,
+     350,
+     404
+    ],
+    "ko": "가벼운 숲 나무로 목수는 가루다 새\n모양의 멋진 나는 기계를 만들었습니다.\n조합은 몰래 여러 대를 지어 가족을 싣고\n하늘로 날아올라 비천한 처지를 벗어났습니다.",
+    "cover": [
+     79,
+     78,
+     114
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     118,
+     56,
+     390,
+     216
+    ],
+    "ko": "그들은 바라나시에서 히말라야로\n날아가 새 나라를 세웠습니다.\n목수는 ‘나무 수레를 탄 이’,\n깟타와하나 왕이 되었습니다.\n미래의 모가라자는 그의 의로운\n대신 열여섯 가운데 하나가 되었습니다.",
+    "cover": [
+     226,
+     184,
+     115
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     162,
+     56,
+     638,
+     150
+    ],
+    "ko": "오가는 상인들을 통해 깟타와하나 왕은 바라나시 왕과\n보이지 않는 동맹을 맺었습니다. 서로 얼굴을 본 적은 없지만,\n두 왕은 서로 세금을 면해 주고 놀라운 것을\n찾으면 나누기로 약속했습니다.",
+    "cover": [
+     76,
+     74,
+     107
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     316,
+     760,
+     408
+    ],
+    "ko": "깟타와하나는 해처럼 눈부신 천을 얻어 바라나시에 선물했습니다.\n천을 상아 상자 여덟 개에 넣고 평범한 랙 덩어리 속에 교묘히 감추었습니다.\n바라나시 왕이 랙을 깨뜨리자 숨이 멎을 듯한 보물이 드러났습니다.",
+    "cover": [
+     240,
+     208,
+     144
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     38,
+     42,
+     760,
+     132
+    ],
+    "ko": "이 귀한 물질의 선물에 걸맞으려면 영적인 재물이어야 함을\n바라나시 왕은 깨달았습니다. 그는 깟사빠 부처님과 법과 승가가\n세상에 나타났다는 소식을 보냈습니다.",
+    "cover": [
+     230,
+     180,
+     88
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     105,
+     148,
+     328,
+     182
+    ],
+    "ko": "으뜸가는 재물",
+    "cover": [
+     238,
+     224,
+     197
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     462,
+     330,
+     708,
+     382
+    ],
+    "ko": "삼보:\n부처님, 법, 승가",
+    "cover": [
+     238,
+     223,
+     194
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     536,
+     58,
+     764,
+     286
+    ],
+    "ko": "8. 향기로운 사향나무\n2. 에메랄드\n3. 묘안석\n4. 붉은 루비\n5. 금\n6. 은\n7. 상아",
+    "cover": [
+     248,
+     243,
+     230
+    ],
+    "align": "left",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     302,
+     760,
+     404
+    ],
+    "ko": "법은 금판에 새겨져 귀한 상자\n여덟 겹 속에 모셔졌습니다. 사향나무\n상자부터 일곱 보석의 속상자까지,\n진리를 모신 으뜸가는 사리함이었습니다.",
+    "cover": [
+     51,
+     45,
+     84
+    ],
+    "align": "right",
+    "dark": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     52,
+     320,
+     258
+    ],
+    "ko": "사향을 바르고 금 레이스를\n두른 장엄한 코끼리가 법을\n국경까지 실어 갔습니다.\n길가의 왕들은 흰 일산 아래\n거룩한 답례 선물에\n기쁘게 예배했습니다.",
+    "cover": [
+     237,
+     203,
+     134
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     338,
+     610,
+     404
+    ],
+    "ko": "상자를 연 깟타와하나는 금판을 읽었습니다. 삼보의\n소식에 감격한 그는 곧바로 부처님을 찾아가기로\n하고, 조카와 대신 열여섯을 먼저 보냈습니다.",
+    "cover": [
+     52,
+     46,
+     78
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     456,
+     52,
+     752,
+     174
+    ],
+    "ko": "미래의 모가라자를 비롯한 대신\n열여섯은 따르는 이 16,000명과\n바라나시로 달려갔습니다. 살아 계신\n깟사빠 부처님을 뵈려는 다급함에\n단 한 번만 쉬었습니다.",
+    "cover": [
+     237,
+     202,
+     135
+    ],
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     306,
+     124,
+     494,
+     344
+    ],
+    "ko": "그들은 너무 늦게\n도착했습니다. 깟사빠\n부처님께서 막 입멸하신\n뒤였습니다. 슬픔에 잠겨\n비구들 앞에서 우는\n그들을 비구들이\n부처님의 마지막 가르침,\n곧 귀의하고 계를 지키고\n보시하라는 말씀으로\n위로했습니다.",
+    "cover": [
+     55,
+     50,
+     84
+    ],
+    "align": "center",
+    "dark": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     52,
+     354,
+     176
+    ],
+    "ko": "깊이 감동한 대신 열여섯과 따르는\n이 16,000명은 세속의 삶을 버리고\n모두 함께 출가했습니다. 출가의 길을\n받아들여 남은 날들을 부처님의\n계율에 바쳤습니다.",
+    "cover": [
+     234,
+     200,
+     133
+    ],
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     50,
+     384,
+     244
+    ],
+    "ko": "인간 세상에 다시 태어나다\n\n고따마 부처님께서 오시기 전에\n인간 세상에 다시 태어난 옛 으뜸\n목수는 마하 꼬살라 왕의 제관\n바와리가 되었습니다. 따르던\n16,000명은 사왓티에 다시\n태어났습니다.",
+    "cover": [
+     238,
+     215,
+     175
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     110,
+     538,
+     246
+    ],
+    "ko": "바와리는 세 베다에 통달했습니다.\n\n따르는 16,000명 가운데 으뜸 제자\n열여섯이 나왔으니, 지혜로운 모가라자와\n늙은 삥기야도 그 가운데 있었습니다.\n이렇게 하나 된 바라문 16,017명이\n궁극의 진리를 찾았습니다.",
+    "cover": [
+     237,
+     217,
+     182
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     154,
+     302,
+     646,
+     404
+    ],
+    "ko": "빠세나디 왕 때, 바와리는 베다의 학문으로는 저세상에서\n구원받을 수 없음을 깨달았습니다. 세속을 떠나기로 했지만\n왕의 간청에 따라 왕실 정원에서 은둔자로 지냈습니다.",
+    "cover": [
+     235,
+     214,
+     177
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     354,
+     36,
+     694,
+     186
+    ],
+    "ko": "왕실 정원은 은둔자들에게 너무 시끄러웠습니다.\n외딴 고요를 바란 바와리는 떠나기를 청했습니다.\n세 번 간청하자 빠세나디 왕이 허락하고,\n대신과 재물을 보내 먼 곳에\n은둔처를 세우게 했습니다.",
+    "cover": [
+     232,
+     211,
+     171
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     256,
+     304,
+     544,
+     412
+    ],
+    "ko": "남쪽으로 가던 그들은 고다와리 강이\n갈라지는 곳에서 깨끗한 섬을 찾았습니다.\n왕의 대신들이 앗사까 왕과 알라까 왕에게서\n5요자나의 숲을 사들여 은둔자 16,017명을\n위한 큰 은둔처를 지었습니다.",
+    "cover": [
+     235,
+     211,
+     172
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     464,
+     44,
+     754,
+     224
+    ],
+    "ko": "바와리의 덕에 이끌린 가족들이\n이 땅에 자리 잡았습니다.\n\n마을은 번창하여 날마다\n은둔자들에게 음식을 올렸습니다.\n마을은 해마다 10만 냥이라는\n큰 수입을 냈습니다.",
+    "cover": [
+     237,
+     215,
+     180
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     304,
+     386,
+     408
+    ],
+    "ko": "그 지방의 왕들은 마을의 수입을 바와리에게\n돌렸습니다. 재물을 마다한 스승은 해마다 큰\n보시를 열어 10만 냥을 가난한 이들에게\n나누었고, 그 이름이 잠부디빠에 널리 퍼졌습니다.",
+    "cover": [
+     230,
+     207,
+     167
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     54,
+     396,
+     216
+    ],
+    "ko": "큰 보시를 마친 뒤 지쳐 있던 바와리에게\n가짜 바라문이 들이닥쳤습니다. 잔소리하는\n아내에게 떠밀린 그는 500냥을 요구했습니다.\n모든 것을 나누어 준 바와리에게는\n줄 것이 전혀 남아 있지 않았습니다.",
+    "cover": [
+     238,
+     212,
+     175
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     136,
+     46,
+     666,
+     132
+    ],
+    "ko": "화가 난 가짜 바라문은 바와리의 문 앞에서 어두운 의식을 치렀습니다.\n그는 무서운 저주를 외웠습니다. “나를 거절하면,\n이레째 되는 날 네 머리가 일곱 조각으로 쪼개져라!”",
+    "cover": [
+     235,
+     209,
+     173
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     470,
+     280,
+     742,
+     390
+    ],
+    "ko": "저주에 몹시 시달린 바와리는\n잠을 이루지 못했습니다. 그의 괴로움을\n본 은둔처의 수호 여신, 곧 전생의\n어머니가 나타나 그를 위로했습니다.",
+    "cover": [
+     243,
+     232,
+     210
+    ],
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     360,
+     294,
+     768,
+     418
+    ],
+    "ko": "“저 사기꾼은 돈만 바랄 뿐이다.” 여신이 밝혔습니다.\n“그는 ‘머리’도, 머리를 쪼개는 참된 원인도\n전혀 모른다.” 안심한 바와리는 그 궁극의 앎을\n누가 지니고 있는지 물었습니다.",
+    "cover": [
+     242,
+     222,
+     190
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     432,
+     262,
+     766,
+     416
+    ],
+    "ko": "여신이 선언했습니다.\n“모든 것을 아시는 부처님만이 이 지혜를\n지니셨다. 지금 사왓티의 제따와나\n승원에 계신다.”\n\n‘부처님’이라는 말을 듣자\n바와리의 걱정은 말끔히 사라졌습니다.",
+    "cover": [
+     243,
+     223,
+     189
+    ],
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-27-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     266,
+     614,
+     418
+    ],
+    "ko": "곧 죽으리라 여긴 늙은 바와리는\n제자 열여섯을 불러 모았습니다.\n깊은 ‘머리를 쪼갬’에 관한 질문을 가르치고,\n북쪽으로 가서 부처님을 찾아\n그 깨달음을 확인하라고 일렀습니다.",
+    "cover": [
+     238,
+     217,
+     184
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-28-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     26,
+     296,
+     370
+    ],
+    "ko": "지혜로운 제자들이\n깨달음을 얻어\n돌아오지 않을 수도\n있음을 안 바와리는\n조카에게 특별히\n당부했습니다.\n“삥기야야, 너는\n반드시 돌아오너라.\n출세간의 이익을\n내게 들려다오.”",
+    "cover": [
+     240,
+     215,
+     174
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-29-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     224,
+     40,
+     582,
+     156
+    ],
+    "ko": "바와리의 제자들은 알라까의 마힛사띠에서\n마가다까지 먼 순례를 떠났습니다. 부처님께\n물으러 간다는 소식이 퍼지자 행렬은\n6요자나나 길게 불어나, 궁극의 진리를\n찾는 수천 명이 따라왔습니다.",
+    "cover": [
+     230,
+     195,
+     139
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-30-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     88,
+     94,
+     284,
+     356
+    ],
+    "ko": "그들의 기능이\n무르익었음을 아신\n부처님께서는 불교 이전의\n빠사나까 사당에서\n가르치는 큰 이익을\n내다보셨습니다.\n\n사왓티를 일찍 떠나시어,\n불어나는 무리가 깨달음이\n정해진 곳으로\n모여들게 하셨습니다.",
+    "cover": [
+     238,
+     209,
+     163
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-31-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     514,
+     94,
+     712,
+     356
+    ],
+    "ko": "사왓티에 이른 구도자들은\n놀라운 발자국을\n보았습니다. 탐욕의\n움푹함도, 성냄의 뒤로\n기욺도, 어리석음의\n무거운 뒤꿈치도 없는\n것을 보고, 그들은 곧\n완전히 깨달은 분의\n자취임을 알아보았습니다.",
+    "cover": [
+     236,
+     205,
+     158
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-32-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     484,
+     34,
+     768,
+     146
+    ],
+    "ko": "순례자들은 마침내 빠사나까\n사당에 이르렀습니다. 지쳤지만\n기뻐서, 시원한 그늘을 찾은 지친\n나그네처럼 달려가 큰 모임 가운데서\n법을 설하시는 부처님을 뵈었습니다.",
+    "cover": [
+     231,
+     186,
+     118
+    ],
+    "align": "left",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-33-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     320,
+     610,
+     430
+    ],
+    "ko": "아지따가 바와리의 질문을 마음속으로 떠올렸습니다.\n우리 스승은 몇 살입니까? 어떤 상을 지녔습니까?\n부처님께서는 소리 내어 대답하시며 바와리의 나이\n120세와 대인의 세 가지 상을 자세히 말씀하시니,\n말없이 있던 무리가 놀랐습니다.",
+    "cover": [
+     233,
+     195,
+     131
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-34-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     57,
+     301
+    ],
+    "shape": "box",
+    "en": "Bow Upon hearing the profound Dhamma, Ajita and his thousand pupils instantly attained Arahatship. Summoned by the Buddha, they miraculously appeared as elder monastics in orange robes, fully equipped ed and liberated.",
+    "ko": "깊은 법을 들은 아지따와 그의 제자 천 명은\n그 자리에서 아라한이 되었습니다. 부처님께서\n부르시자, 그들은 신통으로 주황색 가사를 입고\n모든 것을 갖춘 해탈한 장로 비구가 되었습니다.",
+    "align": "center",
+    "em": 15
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-35-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     272,
+     136,
+     526,
+     300
+    ],
+    "ko": "자만하여 스스로 가장\n지혜롭다고 여긴 모가라자가\n다음으로 물으려고 일어섰습니다.\n그의 자만과 덜 익은 기능을\n아신 부처님께서는 기다리라고\n하시며, 꼭 필요한 겸손의\n꾸짖음을 주셨습니다.",
+    "cover": [
+     231,
+     194,
+     134
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-36-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     44,
+     354,
+     174
+    ],
+    "ko": "모가라자는 말없이 앉아 다른 제자 열넷이\n차례로 묻는 것을 지켜보았습니다. 가장\n막내 제자가 될까 두려워지자 무거운\n자만이 녹아내렸습니다. 마침내 그의\n마음이 무르익어 부처님께서 말하게 하셨습니다.",
+    "cover": [
+     228,
+     193,
+     139
+    ],
+    "align": "left",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-37-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     500,
+     44,
+     762,
+     172
+    ],
+    "ko": "“두 번 여쭈었는데 두 번\n대답을 듣지 못했습니다.”\n모가라자가 말을 꺼냈습니다.\n“이제 여쭙니다. 세상을 어떻게\n보아야 죽음의 왕 마라가 더는\n그를 보지 못합니까?”",
+    "cover": [
+     226,
+     191,
+     134
+    ],
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-38-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     152,
+     324,
+     646,
+     416
+    ],
+    "ko": "부처님께서 대답하셨습니다. “Suññato lokaṁ avekkhassu, Mogharāja sadā sato.”\n“모가라자여, 늘 마음챙기며 세상을 비었다고 보라.\n자아가 있다는 그릇된 견해를 버리면 죽음을 넘어서리라.”",
+    "cover": [
+     225,
+     188,
+     130
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-39-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     328,
+     630,
+     446
+    ],
+    "ko": "유신견(sakkāya-diṭṭhi), 곧 자아가 있다는 미혹을 버리고\n조건 지어진 모든 현상을 실체 없이 비었다고 보아,\n모가라자는 마라를 이겼습니다. 그와 제자 천 명은\n그 자리에서 아라한과를 실현했습니다.",
+    "cover": [
+     239,
+     204,
+     145
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-40-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     34,
+     622,
+     134
+    ],
+    "ko": "법으로 바뀐 모가라자와 그의 제자들은\n출가의 삶으로 부름을 받았습니다.\n한순간에 머리를 깎고 밝은 주황색 가사를 입은 모습으로\n고요한 대중 가운데 함께했습니다.",
+    "cover": [
+     235,
+     197,
+     137
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-41-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     468,
+     138,
+     738,
+     320
+    ],
+    "ko": "깨달은 아라한이 되어서도\n모가라자 장로는 엄한 검소함을\n지켰습니다. 버려진 넝마를\n꿰매어 물을 서툴게 들인\n거친 가사를 늘 입어,\n세속의 편안함에 대한 집착이\n전혀 없음을 보였습니다.",
+    "cover": [
+     236,
+     199,
+     138
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-42-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     448,
+     44,
+     756,
+     190
+    ],
+    "ko": "남다른 계율을 알아보신 부처님께서\n큰 모임 앞에서 모가라자 장로를\n칭찬하셨습니다. 그는 거친 가사를\n입는 데(lūkha-cīvara-dhara) 으뜸인\n제자라고 공식으로 선언되어,\n옛 자만이 지극한 겸손으로 바뀌었습니다.",
+    "cover": [
+     235,
+     190,
+     122
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-43-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     160,
+     354
+    ],
+    "shape": "box",
+    "en": "Fifteen of Bavari’s pupils, up to Ven. Mogharaja, questioned the Buddha. All fifteen, alongside their thousands of pupils, swiftly became Arahats, fully liberated from the hes cycle of rebirth.",
+    "ko": "모가라자 장로까지 바와리의 제자 열다섯이 부처님께 물었습니다.\n열다섯 모두 그 수천 명의 제자와 함께 곧 아라한이 되어\n다시 태어남의 굴레에서 완전히 벗어났습니다.",
+    "align": "center",
+    "em": 16
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-44-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     364,
+     31
+    ],
+    "shape": "box",
+    "en": "The sixteenth pupil, Pingiya—Bavari’s nephew—was 120 years old. Worn out and frail, he pleaded with the Buddha: “Show me the supermundane Dhamma that abandons rebirth and ageing before die in ignorance.”",
+    "ko": "열여섯째 제자 삥기야는 바와리의 조카로 120세였습니다.\n지치고 쇠약한 그는 부처님께 간청했습니다. “어리석은 채\n죽기 전에, 다시 태어남과 늙음을 버리는\n출세간의 법을 보여 주십시오.”",
+    "align": "center",
+    "em": 15
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-45-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     51,
+     277
+    ],
+    "shape": "box",
+    "en": "The Buddha instructed Pingiya to abandon craving. Due to his advanced age and wandering mind—worrying that his uncle Bavari missed this teaching—Pingiya attained only the third level of Awakening: Non-returner (Anagami).",
+    "ko": "부처님께서 삥기야에게 갈애를 버리라고\n가르치셨습니다. 나이가 많고 마음이\n흩어져, 외삼촌 바와리가 이 가르침을\n듣지 못한다고 걱정한 삥기야는\n세 번째 깨달음인 아나함(Anāgāmī)만\n얻었습니다.",
+    "align": "center",
+    "em": 15
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-46-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     363,
+     32
+    ],
+    "shape": "box",
+    "en": "While the Buddha returned to Savatthi, Ven. Pingiya traveled to the banks of the Godhavari River. He returned to his uncle’s dwelling to share the profound teaching of the Parayana (The Way to the Beyond)",
+    "ko": "부처님께서 사왓티로 돌아가실 때 삥기야 장로는\n고다와리 강가로 갔습니다. 외삼촌의 거처로 돌아가\n깊은 가르침인 빠라야나(저 언덕으로 가는 길)를\n나누려는 것이었습니다.",
+    "align": "center",
+    "em": 16
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-47-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     328,
+     770,
+     438
+    ],
+    "ko": "가사를 입은 조카를 본 바와리는 부처님께서 세상에 나셨음을 알았습니다.\n그와 제자 500명은 특별한 자리를 마련했고, 삥기야 장로는 앉아서\n깨달은 분을 찬탄하는 법문을 설했습니다.",
+    "cover": [
+     245,
+     232,
+     206
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-48-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     199,
+     80
+    ],
+    "shape": "box",
+    "en": "“Like bird that leaves lowly bushes of scanty fruit and resorts to fruitful grove, so also have left lesser minds Like golden swan, have reached great lake of immense wisdom",
+    "ko": "“작은 열매가 드문 덤불을 떠나 열매 많은 숲으로\n가는 새처럼, 나도 좁은 마음들을 떠났습니다.\n금빛 백조처럼 나는 한없는\n지혜의 큰 호수에 이르렀습니다.”",
+    "align": "center",
+    "em": 17
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-49-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     252,
+     63
+    ],
+    "shape": "box",
+    "en": "Bavari asked: “If the Buddha’s wisdom is infinite and leads to the end of craving, why do you ever stay away from him?” Ven. Pingiya replied: do not stay away from him even for moment.”",
+    "ko": "바와리가 물었습니다. “부처님의 지혜가 끝이 없고\n갈애를 끝내게 한다면, 그대는 왜 그분 곁을\n떠나 있는가?”\n\n삥기야 장로가 대답했습니다. “저는 한순간도\n그분을 떠나 있지 않습니다.”",
+    "align": "center",
+    "em": 16
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-50-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     229,
+     321
+    ],
+    "shape": "box",
+    "en": "“With mindfulness, see the Buddha in my mind as clearly as with my eyes. Wherever the Awakened One goes, bow in my mind in that direction. My mind is always connected with his presence.”",
+    "ko": "“마음챙김으로 저는 마음속에서 부처님을\n눈으로 보듯 또렷이 봅니다. 깨달은 분이 어디로\n가시든 마음으로 그쪽을 향해 절합니다.\n제 마음은 늘 그분과 이어져 있습니다.”",
+    "align": "center",
+    "em": 17
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-51-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     174,
+     312,
+     622,
+     438
+    ],
+    "ko": "그들의 기능이 무르익었음을 아신 부처님께서\n사왓티에서 금빛 광명을 보내셨습니다. 그 빛을 보고\n삥기야가 외쳤습니다. “보십시오! 부처님께서 오셨습니다!”\n바와리는 일어나 깊이 공경하며 합장했습니다.",
+    "cover": [
+     241,
+     227,
+     201
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-52-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     331,
+     287
+    ],
+    "shape": "box",
+    "en": "The Buddha intensified the radiance, revealing his form He urged Pingiya: “Place your confidence in the Three Treasures and cross over from the domain of Death.” Upon hearing this, Ven. Pingiya became an Arahat",
+    "ko": "부처님께서 광명을 더 밝히시어 모습을 드러내셨습니다.\n그리고 삥기야에게 이르셨습니다. “삼보에 믿음을 두고\n죽음의 영역을 건너라.” 이를 들은 삥기야 장로는\n아라한이 되었습니다.",
+    "align": "center",
+    "em": 16
+   }
+  ]
+ },
+ {
+  "img": "images/41-Mogharaja-53-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     328,
+     748,
+     438
+    ],
+    "ko": "삥기야 장로의 해탈이 완성되었습니다. 외삼촌 바와리는 아나함과를\n얻었고, 그의 제자 500명은 깨달음의 흐름에 들었습니다(수다원).\n삥기야는 기뻐했습니다. “부처님께서 윤회의 지붕을 걷어 내셨다!”",
+    "cover": [
+     246,
+     235,
+     206
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
