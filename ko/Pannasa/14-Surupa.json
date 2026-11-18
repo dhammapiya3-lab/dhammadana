@@ -1,0 +1,951 @@
+[
+ {
+  "img": "images/14-Surupa-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     50,
+     720,
+     144
+    ],
+    "ko": "수루빠 자따까로 보는\n궁극의 희생",
+    "cover": false,
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     110,
+     340,
+     690,
+     400
+    ],
+    "ko": "북부 타이 빤냐사 자따까 이야기로 살펴보는\n완전한 보시(dāna)",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Surupa-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     48,
+     520,
+     124
+    ],
+    "ko": "부처님께서 견줄 데 없는 보시로 빛나는\n전생을 밝히시다",
+    "cover": false,
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     56,
+     126,
+     404,
+     230
+    ],
+    "ko": "제따와나의 강당에서 스승께서는 법을 듣기 위해 아내와 아이와 몸까지 내주신 일을 들려주십니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Surupa-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     48,
+     700,
+     88
+    ],
+    "ko": "수루빠 왕이 의로운 도성 인다빳타를 다스리다",
+    "cover": [
+     156,
+     125,
+     92
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     90,
+     86,
+     710,
+     130
+    ],
+    "ko": "열 가지 의무를 갖춘 덕 높은 왕으로서, 보살은 정비 순다리 왕비, 아들 순다라 왕자와 함께 왕실의 행복을 누립니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Surupa-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     30,
+     740,
+     70
+    ],
+    "ko": "왕이 몸의 덧없고 무상한 본성을 깨닫다",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     50,
+     68,
+     750,
+     100
+    ],
+    "ko": "자기 몸을 돌아보며 수루빠는 죽음이 다가오면 수명이 순식간에 스러짐을 깨닫습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     84,
+     214,
+     220,
+     242
+    ],
+    "ko": "아지랑이",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     590,
+     214,
+     760,
+     242
+    ],
+    "ko": "강물의 거품",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     60,
+     390,
+     248,
+     418
+    ],
+    "ko": "속 빈 파초",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     618,
+     390,
+     760,
+     418
+    ],
+    "ko": "이슬방울",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Surupa-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     56,
+     740,
+     96
+    ],
+    "ko": "칠 년을 찾아도 거룩한 법을 설할 이가 없다",
+    "cover": false,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     150,
+     120,
+     690,
+     166
+    ],
+    "ko": "금 십만 냥과 빛나는 보석함을 내걸어도 인다빳타의 북소리는 잦아들고, 법을 설할 이는 찾을 수 없습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     40,
+     258,
+     122,
+     284
+    ],
+    "ko": "이레",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     524,
+     312,
+     610,
+     340
+    ],
+    "ko": "칠 년",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     362,
+     352,
+     456,
+     380
+    ],
+    "ko": "일곱 달",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Surupa-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     48,
+     430,
+     134
+    ],
+    "ko": "대인(보살)이 깊은 지혜를 위해 모든 것을 바치기로 서원하다",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     30,
+     134,
+     338,
+     182
+    ],
+    "ko": "슬픔에 잠긴 수루빠는 법을 듣기 위해 세간의 것과 자기의 것을 모두 내주겠다고 점점 더 큰 보시의 서원을 세웁니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     338,
+     134,
+     404,
+     158
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     560,
+     268,
+     680,
+     304
+    ],
+    "ko": "안의 재물:\n살과 목숨",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     384,
+     330,
+     510,
+     364
+    ],
+    "ko": "가까운 재물:\n아내와 아이",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     200,
+     396,
+     326,
+     430
+    ],
+    "ko": "밖의 재물:\n나라와 금",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Surupa-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     276,
+     400,
+     330
+    ],
+    "ko": "서원의 불꽃에\n시네루 산이 흔들리다",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     110,
+     332,
+     400,
+     398
+    ],
+    "ko": "이 부처의 싹의 결심을 느낀 신들의 왕 삭까는 제 모습을 버리고 무서운 약카로 나타나 왕을 시험합니다.",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Surupa-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     182,
+     50,
+     620,
+     126
+    ],
+    "ko": "순다리 왕비가 기꺼이\n가까운 재물의 첫 시험을 채우다",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     206,
+     126,
+     616,
+     186
+    ],
+    "ko": "법을 가르쳐 주는 값으로 살을 요구한 약카가 왕비를 받습니다. 삭까는 신통으로 왕비를 숨기고, 수루빠를 시험하려고 왕비의 뼈를 씹는 척합니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Surupa-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     44,
+     740,
+     76
+    ],
+    "ko": "순다라 왕자가 아버지의 뜻을 이루려고 목숨을 내놓다",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     100,
+     78,
+     700,
+     116
+    ],
+    "ko": "왕비가 사라져도 굽히지 않은 왕은 친아들을 내줍니다. 약카는 왕자를 잡아먹는 척하고, 백성들은 겁에 질립니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Surupa-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     44,
+     760,
+     82
+    ],
+    "ko": "수루빠가 궁극의 값으로 제 몸을 바치다",
+    "cover": false,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     100,
+     84,
+     700,
+     138
+    ],
+    "ko": "거룩한 법을 제 목숨보다 귀히 여긴 왕은 약카를 보석 의자에 모시고 먹힐 준비를 합니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Surupa-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     46,
+     620,
+     96
+    ],
+    "ko": "깟사빠 부처님의 거룩한 법이\n괴로움의 뿌리를 끊다",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     170,
+     96,
+     630,
+     126
+    ],
+    "ko": "약카가 가장 높은 가르침을 밝힙니다.\n궁극의 해탈은 세간 괴로움의 뿌리를 뽑아야 이룹니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     180,
+     148,
+     246,
+     168
+    ],
+    "ko": "애정",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     186,
+     214,
+     240,
+     236
+    ],
+    "ko": "갈애",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     168,
+     284,
+     254,
+     304
+    ],
+    "ko": "집착",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     190,
+     336,
+     260,
+     374
+    ],
+    "ko": "감각적\n욕망",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     362,
+     306,
+     434,
+     334
+    ],
+    "ko": "슬픔과\n두려움",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Surupa-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     44,
+     740,
+     78
+    ],
+    "ko": "땅이 울부짖고 삭까가 빛나는 천신(devatā)의 모습을 드러내다",
+    "cover": false,
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     100,
+     80,
+     700,
+     126
+    ],
+    "ko": "수루빠가 자기 몸을 보시하자 땅이 흔들립니다. 삭까는 왕실 가족을 되돌려 주고, 왕이 반드시 부처가 되리라고 찬탄합니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Surupa-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     36,
+     470,
+     106
+    ],
+    "ko": "완전한 보시는 천상 세계에\n다시 태어나게 한다",
+    "cover": false,
+    "align": "center",
+    "em": 25,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     40,
+     104,
+     466,
+     186
+    ],
+    "ko": "공덕을 부지런히 지으라는 가르침을 받은 수루빠 왕과 백성들은 바르게 살다가, 목숨이 다한 뒤 빛나는 천상 궁전에 태어납니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Surupa-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     46,
+     740,
+     76
+    ],
+    "ko": "인다빳타의 인물들이 지금의 제따와나 대중으로 나타나다",
+    "cover": false,
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     60,
+     78,
+     740,
+     100
+    ],
+    "ko": "전생 이야기를 마치며 스스로 깨달으신 분께서 지난 생의 덕 높은 인물들을 지금의 제자와 가족에게 잇습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     168,
+     118,
+     388,
+     138
+    ],
+    "ko": "과거 (인다빳타)",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     418,
+     118,
+     640,
+     138
+    ],
+    "ko": "현재 (제따와나 대중)",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     266,
+     156,
+     360,
+     180
+    ],
+    "ko": "어머니 왕비",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     440,
+     156,
+     540,
+     180
+    ],
+    "ko": "마하마야",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     266,
+     210,
+     360,
+     234
+    ],
+    "ko": "순다리 왕비",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     440,
+     210,
+     540,
+     234
+    ],
+    "ko": "야소다라",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     266,
+     262,
+     362,
+     286
+    ],
+    "ko": "순다라 왕자",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     440,
+     262,
+     540,
+     286
+    ],
+    "ko": "라훌라",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     282,
+     316,
+     350,
+     340
+    ],
+    "ko": "삭까",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     440,
+     316,
+     540,
+     340
+    ],
+    "ko": "아누룻다",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     270,
+     364,
+     350,
+     388
+    ],
+    "ko": "수루빠",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     440,
+     364,
+     540,
+     388
+    ],
+    "ko": "부처님",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Surupa-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     40,
+     720,
+     80
+    ],
+    "ko": "보시 바라밀은 자기에게서도 벗어나기를 요구한다",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     60,
+     358,
+     740,
+     408
+    ],
+    "ko": "수루빠의 궁극의 희생은, 존재라는 아지랑이에서 벗어나려면 가장 높은 법의 진리를 위해 아끼는 모든 것을 내놓아야 함을 보여 줍니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ }
+]
