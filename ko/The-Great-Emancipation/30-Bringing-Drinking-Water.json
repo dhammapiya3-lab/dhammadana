@@ -1,0 +1,278 @@
+[
+ {
+  "img": "images/30-Bringing-Drinking-Water-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     298,
+     700,
+     394
+    ],
+    "ko": "맑은 물의 기적\n대반열반경의 이야기",
+    "cover": [
+     208,
+     153,
+     104
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Bringing-Drinking-Water-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     140,
+     566,
+     346
+    ],
+    "ko": "세존께서 꾸시나라로 가는\n먼 길에 지치셨습니다.\n\n길에서 벗어나 아난다 장로에게\n말씀하셨습니다.\n\n“나를 위해 대가사를 네 겹으로\n접어 깔아라. 아난다여, 나는\n피곤하구나. 앉고 싶다.”",
+    "cover": [
+     205,
+     166,
+     127
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Bringing-Drinking-Water-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     136,
+     594,
+     358
+    ],
+    "ko": "길가 나무의 푸른 잎 아래\n마련된 자리에\n세존께서 앉으셨습니다.\n\n“오라, 아난다여, 마실 물을\n가져오너라. 아난다여,\n나는 목이 마르다. 마시고 싶다.”",
+    "cover": [
+     202,
+     167,
+     127
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Bringing-Drinking-Water-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     238,
+     136,
+     568,
+     346
+    ],
+    "ko": "가까운 개울의 사정을 아는\n아난다는 망설였습니다.\n\n“존자시여, 방금 수레 오백 대가\n지나갔습니다. 조금 흐르는 물이\n바퀴에 휘저어져\n흐리고 탁합니다.”",
+    "cover": [
+     201,
+     167,
+     128
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Bringing-Drinking-Water-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     326,
+     280,
+     744,
+     404
+    ],
+    "ko": "아난다가 다른 방법을 말씀드렸습니다.\n\n까꿋타 강이 멀지 않습니다. 그 물은 맑고\n시원하고 깨끗합니다. 세존께서는 거기서\n물을 드시고 몸을 식히실 수 있습니다.",
+    "cover": [
+     197,
+     160,
+     122
+    ],
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Bringing-Drinking-Water-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     336,
+     160,
+     700,
+     302
+    ],
+    "ko": "세존께서는 가만히 계시다가\n두 번째로 말씀하셨습니다.\n\n“오라, 아난다여, 마실 물을 가져오너라.\n아난다여, 나는 목이 마르다. 마시고 싶다.”",
+    "cover": [
+     198,
+     166,
+     132
+    ],
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Bringing-Drinking-Water-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     96,
+     580,
+     310
+    ],
+    "ko": "아난다가 두 번째로\n흙탕물이라고 말씀드렸습니다.\n\n그러나 부처님께서는\n세 번째로 이르셨습니다.\n\n“오라, 아난다여,\n마실 물을 가져오너라.”",
+    "cover": [
+     216,
+     170,
+     128
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Bringing-Drinking-Water-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     258,
+     82,
+     740,
+     272
+    ],
+    "ko": "의무를 다하려고 아난다 장로가 따랐습니다.\n\n“알겠습니다, 존자시여.”\n\n아난다는 발우를 들고, 수레바퀴에\n온통 휘저어진 작은 강으로 걸어갔습니다.",
+    "cover": [
+     212,
+     158,
+     115
+    ],
+    "align": "left",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Bringing-Drinking-Water-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     258,
+     140,
+     544,
+     310
+    ],
+    "ko": "그때 기적이 일어났습니다.\n\n아난다 장로가 다가가자,\n휘저어져 흐리던 작은 강이\n갑자기 맑고 투명하게,\n조금도 흐리지 않게 흘렀습니다.",
+    "cover": [
+     209,
+     166,
+     131
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Bringing-Drinking-Water-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     258,
+     84,
+     668,
+     256
+    ],
+    "ko": "아난다는 경이로움에 차서 말했습니다.\n\n“참으로 놀랍습니다! 여래의 큰 신통과\n위력으로, 휘저어진 흙탕물이\n맑고 깨끗하게 흐릅니다.”",
+    "cover": [
+     206,
+     160,
+     121
+    ],
+    "align": "left",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Bringing-Drinking-Water-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     256,
+     140,
+     556,
+     302
+    ],
+    "ko": "발우를 채워 세존께\n돌아왔습니다.\n\n“존자시여, 놀랍습니다.\n세존이시여, 물을 드십시오!\n선서이시여, 드십시오!”",
+    "cover": [
+     168,
+     145,
+     120
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Bringing-Drinking-Water-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     412,
+     716,
+     446
+    ],
+    "ko": "그리고 지친 길에서 쉬시며 세존께서는 맑은 물을 드셨습니다.",
+    "cover": [
+     169,
+     145,
+     119
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
