@@ -1,0 +1,79 @@
+{
+ "_설명": "PDF 줄 끝 하이픈 뒤에 남은 빈칸 바로잡기 (2026-11-18 다시 검수). [찾을 글, 바꿀 글] — 책 안 표기(줄표를 넣어 쓰는 겹낱말)대로 줄표는 두고 빈칸만 뺌, ñāṇa- dassana 는 책에 ñāṇadassana 로 5번 붙여 써서 붙임. python3 tools/join_hyphens.py [--write] 한글 소리 표기도 책 안에서 붙여 쓴 꼴이 있으면 같음(윈냐-나 22번 등). 독송집(소리 줄을 빠알리 낱말마다 띄움)은 판단할 수 없어 건드리지 않음.",
+ "DL-0006": [
+  [
+   "Bhava- sutta",
+   "Bhava-sutta"
+  ],
+  [
+   "nāma- rūpa",
+   "nāma-rūpa"
+  ],
+  [
+   "Passadhi- sambojjhaṅga",
+   "Passadhi-sambojjhaṅga"
+  ],
+  [
+   "윈냐- 나",
+   "윈냐-나"
+  ],
+  [
+   "상카- 라-",
+   "상카-라-"
+  ]
+ ],
+ "DL-0012": [
+  [
+   "ñāṇadassana- visuddhi",
+   "ñāṇadassana-visuddhi"
+  ],
+  [
+   "ñāṇa- dassana",
+   "ñāṇadassana"
+  ]
+ ],
+ "DL-0015": [
+  [
+   "ñāṇa- kathā",
+   "ñāṇa-kathā"
+  ],
+  [
+   "dhammavicaya- sambojjhaṅga",
+   "dhammavicaya-sambojjhaṅga"
+  ],
+  [
+   "samādhi- sambojjhaṅga",
+   "samādhi-sambojjhaṅga"
+  ],
+  [
+   "ekodi- bhāva",
+   "ekodi-bhāva"
+  ]
+ ],
+ "DL-0020": [
+  [
+   "non- scattered",
+   "non-scattered"
+  ]
+ ],
+ "DL-0022": [
+  [
+   "sunnata- phalasamapatti",
+   "sunnata-phalasamapatti"
+  ]
+ ],
+ "DL-0003": [
+  [
+   "사마디- 지혜의",
+   "사마디-지혜의"
+  ],
+  [
+   "위빳사나- 지혜의",
+   "위빳사나-지혜의"
+  ],
+  [
+   "형색- 눈-",
+   "형색-눈-"
+  ]
+ ]
+}

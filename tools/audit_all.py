@@ -23,7 +23,7 @@ def audit(bk):
     P = [(parts[i].strip('= ').strip(), parts[i + 1]) for i in range(1, len(parts), 2)]
     # ① 각주
     defs = collections.Counter(m.group(1) for m in re.finditer(r'(?m)^\[\^([^\]\s]+)\]:', b))
-    refs = set(m.group(1) for m in re.finditer(r'\[\^([^\]\s]+)\](?!:)', b))
+    refs = set(m.group(1) for m in re.finditer(r'(?m)(?<!^)(?<!^[ \t])\[\^([^\]\s]+)\]', b))   # 줄 첫머리가 아니면 ':' 가 붙어도 본문 번호 (app.js fnMark 와 같음)
     for k, n in defs.items():
         if n > 1: out['① 같은 번호 풀이가 여럿'].append(f'[^{k}] × {n}')
     for k in sorted(refs - set(defs), key=lambda x: (len(x), x)): out['① 번호만 있고 풀이 없음'].append(f'[^{k}]')
@@ -40,12 +40,12 @@ def audit(bk):
     # ③ 쪽 이름
     prev = None
     for name, _ in P:
-        m = re.fullmatch(r'(\d+)쪽', name)
+        m = re.fullmatch(r'(\d+)(?:~(\d+))?쪽', name)   # '18~19쪽' 펼친 쪽도 셈
         if not m: continue
-        n = int(m.group(1))
+        n = int(m.group(1)); e = int(m.group(2) or n)
         if prev is not None and n not in (prev, prev + 1):
             out['③ 쪽 번호가 1씩 늘지 않음'].append(f'{prev}쪽 → {n}쪽')
-        prev = n
+        prev = e
     # ④ 목차
     for e in T.get('toc', []):
         pg = e.get('page')
