@@ -1,10 +1,10 @@
-Pannasa 45-Ungratefulness 14 장
+Pannasa 46-Dukamma 13 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 74 개 / 한글판 이야기 161 편
-공개 주소 확인: 200 1502543바이트
-이야기 Pannasa/45-Ungratefulness {'pdf': 18093703, 'zip': 17826878, 'n': 14}
-책 Pannasa {'pdf': 944095114, 'pdfs': 90742476, 'zip': 943570594, 'stories': 45, 'n': 733}
+R2 에 올림: 72 개 / 한글판 이야기 162 편
+공개 주소 확인: 200 1376064바이트
+이야기 Pannasa/46-Dukamma {'pdf': 15967842, 'zip': 15704236, 'n': 13}
+책 Pannasa {'pdf': 959804069, 'pdfs': 92206228, 'zip': 959274525, 'stories': 46, 'n': 746}
 내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 161 이야기
+글로 보기: 162 이야기
 50-Mahasudassana
 44-The-Distribution-of-the-Relics
