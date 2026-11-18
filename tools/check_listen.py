@@ -40,7 +40,7 @@ with sync_playwright() as p:
         pg.goto(f'{BASE}/read/{bid}/')
         try: pg.wait_for_selector('#rSpeak', state='attached', timeout=15000)
         except Exception: print(f'{bid}: 읽기 화면 없음(건너뜀)'); pg.close(); continue
-        chs = pg.evaluate("[...document.querySelectorAll('#p-toc [data-ci]')].map(b=>({t:b.textContent, go:+b.dataset.go, ci:+b.dataset.ci})).filter(x=>x.ci>=0)")
+        chs = pg.evaluate("[...document.querySelectorAll('#p-toc [data-ci]')].map(b=>({t:(c=>{c.querySelectorAll('.fig-k').forEach(x=>x.remove());return c.textContent.trim()})(b.cloneNode(true)), go:+b.dataset.go, ci:+b.dataset.ci})).filter(x=>x.ci>=0)")
         body = json.load(open(os.path.join(root, bid + '.json')))['body']
         ptxt = re.split(r'^=== .*? ===$', body, flags=re.M)[1:]
         # 그림·빈 줄만 있는 쪽은 소리로는 빈 쪽 → 장의 '처음'은 글이 처음 나오는 쪽

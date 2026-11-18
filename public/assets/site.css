@@ -1359,3 +1359,11 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 /* 읽기 화면 위 메뉴 창(목차 등)을 빨리 열리게 — 창 안 목록은 보이는 줄만 먼저 그림 (운영자 요청, 2026-11-19 '메뉴 단추 반응이 느림': 『업과 윤회의 법칙』 목차 422줄을 열 때마다 모두 배치하던 것) */
 .reader .panel li{content-visibility:auto;contain-intrinsic-size:auto 36px}
 .reader .panel{contain:layout paint style}
+/* 목차 창의 그림·표 줄 — 목차와 구분되게 (운영자 요청, 2026-11-19) */
+.panel li.fig{padding-left:2.2em;font-size:12.8px;background:linear-gradient(90deg,rgba(176,106,48,.07),transparent 70%)}
+.panel li.fig button.link{color:var(--ink);flex:1;align-self:stretch}
+.panel .fig-k{display:inline-block;font-size:11.5px;font-weight:700;color:#7E4520;border:1px solid rgba(126,69,32,.35);border-radius:4px;padding:0 4px;margin-right:2px;white-space:nowrap}
+.panel ul.figs-only>li:not(.fig):not(.has-fig){display:none}
+.panel .fig-only{display:flex;align-items:center;gap:6px;font-size:13px;margin:0 0 8px;cursor:pointer}
+:root.mode-night .panel .fig-k,:root.mode-contrast .panel .fig-k{color:#ffd77a;border-color:rgba(255,215,122,.5)}
+:root.mode-night .panel li.fig,:root.mode-contrast .panel li.fig{background:rgba(255,215,122,.06)}

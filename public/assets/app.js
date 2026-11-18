@@ -915,6 +915,65 @@ function subTargets(c) {
 }
 const chHasSubs = n => { const c = chapters()[Math.max(0, chapterOf(n))]; return !!c && (R.toc.some(t => /^\s/.test(t.title) && t.page >= c.from && t.page <= c.to) || R.pages.slice(c.from - 1, c.to).some(p => /^## |^\*\*[^*\n]{2,40}\*\*$/m.test(p.text || ''))); };
 function tocFor(n) { let cur = null; for (const t of R.toc) if (t.page <= n) cur = t; return cur; }
+// 목차 창에 '책을 이해하는 데 필요한 내용이 담긴' 그림·표를 따로 표시 (운영자 요청, 2026-11-19 — 지도·가계도·도표·표기표·본문 표; 장식·속표지·제목 그림·로고·서명·QR·스승 사진·분위기 삽화는 뺌, 책 소개 페이지 목차에는 넣지 않음)
+const FIG_KEEP = /지도|가계도|계보|도표|구성표|표기|운율|기호 보기|연기 표|팔정도|(^|\s)표($|\s|\d)/, FIG_DROP = /표지|상징|서명|초대코드|허가서|사진/;
+function figList() {
+  if (R._figs) return R._figs;
+  const out = [], clean = x => String(x || '').replace(/\[\^[^\]]+\]/g, '').replace(/\*\*|°°|@@|==|§§/g, '').replace(/^#+\s*/, '').replace(/^\*\s*/, '').replace(/[:：]\s*$/, '').trim();
+  const cut = x => { x = clean(x); const a = x.split(' — ')[0]; x = a.length >= 4 ? a : x; return x.length > 46 ? x.slice(0, 44) + '…' : x; };
+  // 책에 인쇄된 '표 차례'(%% 문단의 '표 2b : … | 83')로 쪽 번호 → 표 이름, 없으면 바로 앞 짧은 글·그 쪽의 소제목
+  const TOT = {}; for (const pg of R.pages) for (const q of paras(pg.text)) if (/^%% /.test(q)) for (const l of q.slice(3).split('\n')) { const m = l.replace(/^-+\s*/, '').match(/^(표\s*\S.*?)\s*\|\s*(\d+)\s*$/); if (m && !TOT[m[2]]) TOT[m[2]] = clean(m[1]); }
+  const tabOf = lab => TOT[String(lab || '').replace(/\D/g, '')] || '';
+  const near = (ps, k, i) => {
+    const ok = q => { const c = clean(q); return c && !/^\[\^/.test(q) && !/^[!|=]/.test(q) && (/[:：]\s*(\[\^[^\]]+\]\s*)?$/.test(q.trim()) && c.length <= 60 || c.length <= 50 && !/[.。다]$/.test(c)) ? cut(c) : ''; };
+    let pv = k ? ps[k - 1] : null;
+    if (k === 0) { const pp = paras((R.pages[i - 1] || {}).text).filter(q => !/^\[\^/.test(q)); pv = pp[pp.length - 1] || ''; }  // 쪽 첫머리 표는 앞 쪽 끝의 안내 글('사대요소의 12가지 특징:')
+    const a = pv != null && ok(pv); if (a) return a;
+    for (let ii = i, kk = k; ii >= 0 && ii > i - 4; ii--, kk = Infinity) { const q = paras((R.pages[ii] || {}).text); for (let j = Math.min(kk, q.length) - 1; j >= 0; j--) if (/^## /.test(q[j])) return cut(q[j]); }  // 그 쪽·앞 쪽의 가장 가까운 소제목
+    return '';
+  };
+  R.pages.forEach((p, i) => {
+    const ps = paras(p.text);
+    ps.forEach((q, k) => {
+      const m = q.match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/);
+      if (m) {
+        const alt = m[1].replace(/^#/, '').trim();
+        if (FIG_DECO.test(alt) || FIG_DROP.test(alt)) return;
+        const said = R.say && R.say[m[2]];
+        if (alt === '표') {  // 『업과 윤회의 법칙』처럼 이름이 '표'뿐 — 바로 앞 '표 N : …' 글을 이름으로, 앞 쪽 표가 쪽을 넘어 이어진 것은 뺌
+          const cap = k ? clean(ps[k - 1]) : '';
+          if (/^표\s*\d/.test(cap)) { out.push({ pg: i + 1, k, kind: '표', label: cut(cap) }); return; }
+          const prev = paras((R.pages[i - 1] || {}).text);
+          if (k === 0 && /^!\[#?표\]/.test(prev[prev.length - 1] || '')) return;
+          out.push({ pg: i + 1, k, kind: '표', label: tabOf(p.label) || near(ps, k, i) || '표' }); return;
+        }
+        if (!said && !FIG_KEEP.test(alt)) return;
+        out.push({ pg: i + 1, k, kind: /지도/.test(alt) ? '지도' : /가계도|계보/.test(alt) ? '가계도' : /표/.test(alt) ? '표' : '그림', label: cut(alt) || '그림' });
+        return;
+      }
+      if (q[0] !== '|' || q.startsWith('||') || /^\|\s*:?-{3}/.test(q)) return;  // '|| ' 는 쪽을 넘어 이어지는 항목 표시라 표가 아님  // 본문 표 (구분 줄로 시작하면 앞 쪽 표가 이어진 것)
+      const pv = k ? ps[k - 1] : '', head = q.split('\n')[0].split('|').map(clean).filter(Boolean).slice(0, 3).join(' · ');
+      let label = head;
+      const fm = pv.match(/^\[\^([^\]]+)\]:\s*(.*)/s);
+      if (fm) label = `각주 ${fm[1]} — ` + cut(fm[2].split(/[.。:](\s|$)/)[0]);
+      else if (pv && !/^\|/.test(pv) && clean(pv).length <= 50 && !/[.。다]$/.test(clean(pv))) label = cut(pv);
+      else if (head.split(' · ').every(c => c.length <= 3)) label = near(ps, k, i) || head;  // 'Ⅰ · Ⅱ · Ⅲ' 처럼 머리 줄로는 뜻을 알 수 없으면 가까운 소제목
+      out.push({ pg: i + 1, k, kind: '표', label: label || '표' });
+    });
+  });
+  return (R._figs = out);
+}
+const figBadge = (kind, label) => { const ic = kind === '표' ? '▦' : kind === '지도' ? '🗺' : kind === '가계도' ? '🌳' : '🖼'; return `<span class="fig-k"><span aria-hidden="true">${ic}</span>${String(label).startsWith(kind) ? '' : String(label).includes(kind) ? `<span class="sr">${kind}: </span>` : ` ${kind}`}</span>`; };
+function tocWithFigs() {
+  const figs = figList(), pos = R.toc.map(t => [t.page, paraIdx(t)]), after = R.toc.map(() => []), top = [], mark = new Map();
+  const nk = x => String(x || '').replace(/[\s.:·,()\-—]/g, '').toLowerCase();
+  for (const f of figs) {
+    let j = -1; pos.forEach(([pg, k], i) => { if (pg < f.pg || (pg === f.pg && k <= f.k)) j = i; });
+    if (j >= 0 && R.toc[j].page === f.pg && nk(R.toc[j].title).includes(nk(f.label).slice(0, 8))) { if (!mark.has(j)) mark.set(j, f.kind); continue; }  // 장 이름이 곧 그 그림(예: '지도 1 : …')이면 따로 줄을 두지 않고 장에 표시만
+    (j >= 0 ? after[j] : top).push(f);
+  }
+  return { figs, top, after, mark };
+}
 function placePanels(el) {
   el = el || $('#reader'); if (!el) return; const t = $('.r-top', el); if (!t) return;
   el.style.setProperty('--ptop', Math.round(t.offsetTop + t.offsetHeight + 6) + 'px');  // 숨김(밀어 올림) 상태와 관계없이 원래 자리 기준
@@ -955,7 +1014,8 @@ function renderReader() {
     <div class="panel" id="p-find"><h5>이 책에서 찾기</h5>
       <form id="findForm" class="row" style="gap:6px"><input id="findQ" placeholder="찾을 말" aria-label="찾을 말" value="${esc(R.findQ || '')}" style="flex:1;height:36px;border:1px solid var(--line);border-radius:8px;padding:0 10px;background:var(--paper)"><button class="tbtn" type="submit">찾기</button></form>
       <div id="findRes">${R.findRes || '<p class="note">낱말을 넣으면 이 책의 모든 쪽에서 찾습니다. 위빳사나·vipassanā처럼 다른 표기도 함께 찾습니다.</p>'}</div></div>
-    <div class="panel" id="p-toc"><h5>목차</h5><ul>${R.toc.map(t => `<li class="${/^\s/.test(t.title) ? 'sub' : ''}"><button class="link" data-go="${t.page}"${!/^\s/.test(t.title) ? ` data-ci="${chapters().findIndex(c => c.title === t.title.trim() && c.from === t.page)}"` : ''}>${boxNum(esc(t.title.trim()))}</button><span class="muted">${esc(t.label || '')}</span></li>`).join('')}</ul></div>
+    <div class="panel" id="p-toc"><h5>목차</h5>${(() => { const W = tocWithFigs(), fli = f => { const pg = R.pages[f.pg - 1] || {}; return `<li class="fig"><button class="link" data-fgo="${f.pg}" data-fk="${f.k}">${figBadge(f.kind, f.label)} ${esc(f.label)}</button><span class="muted">${esc(pg.label || '')}</span></li>`; };
+      return (W.figs.length ? `<label class="fig-only"><input type="checkbox" id="figOnly"> 그림·표만 보기 <span class="muted">(${W.figs.length})</span></label>` : '') + `<ul>${W.top.map(fli).join('')}${R.toc.map((t, j) => `<li class="${/^\s/.test(t.title) ? 'sub' : ''}${W.mark.has(j) ? ' has-fig' : ''}"><button class="link" data-go="${t.page}"${!/^\s/.test(t.title) ? ` data-ci="${chapters().findIndex(c => c.title === t.title.trim() && c.from === t.page)}"` : ''}>${W.mark.has(j) ? figBadge(W.mark.get(j), t.title) + ' ' : ''}${boxNum(esc(t.title.trim()))}</button><span class="muted">${esc(t.label || '')}</span></li>` + W.after[j].map(fli).join('')).join('')}</ul>`; })()}</div>
     <div class="panel" id="p-font"><h5>글씨</h5>
       ${R.view === 'page' && hasImg ? `<div class="row">쪽 확대 <span><button class="tbtn" data-zoom="-1" aria-label="쪽 축소">−</button> ${Math.round(R.zoom * 100)}% <button class="tbtn" data-zoom="1" aria-label="쪽 확대">+</button></span></div>${hasText ? '<p class="note">쪽 보기에서는 원본 쪽을 확대합니다. 글자만 크게 보거나 밑줄을 그으려면 ‘글로 보기’로 바꾸세요.</p>' : ''}` :
       `<div class="row">글자 크기 <span class="fs-step"><button class="tbtn" data-fsd="-1" aria-label="글자 작게">가−</button><b aria-live="polite">${Math.round(R.fs * 100)}%</b><button class="tbtn" data-fsd="1" aria-label="글자 크게">가+</button></span></div>
@@ -1147,6 +1207,9 @@ function bindReader() {
   loadReadFont(R.font); loadFontLabels();
   panelA11y(el);
   $$('[data-go]', el).forEach(b => b.onclick = () => go(+b.dataset.go, b.dataset.ci != null ? +b.dataset.ci : null));
+  // 목차 창의 그림·표 줄: 그 쪽으로 가서 그림·표에 커서 (2026-11-19)
+  $$('[data-fgo]', el).forEach(b => b.onclick = () => { const pg = +b.dataset.fgo, k = +b.dataset.fk; go(pg); const land = () => { const t = $(`#rBody [data-pg="${pg}"][data-s="${k}"]`); if (!t) return; t.scrollIntoView({ block: 'start' }); const nav = $('.r-top'); if (nav && !$('#reader').classList.contains('chrome-off')) $('#rBody').scrollTop -= nav.offsetHeight + 8; t.classList.add('found'); setTimeout(() => t.classList.remove('found'), 1600); const f = $('button, a', t) || t; if (!f.matches('button,a')) f.tabIndex = -1; try { f.focus({ preventScroll: true }); } catch (e) {} }; setTimeout(land, 80); setTimeout(() => { if (!$('#rBody') || !$('#rBody').contains(document.activeElement)) land(); }, 450); });  // 쪽을 그린 뒤 한 번 더(장 바꾸기·자리 맞추기로 다시 그려 커서가 사라지면)
+  { const fo = $('#figOnly', el), ul = $('#p-toc ul', el); if (fo && ul) { fo.checked = !!R.figOnly; ul.classList.toggle('figs-only', fo.checked); fo.onchange = () => { R.figOnly = fo.checked; ul.classList.toggle('figs-only', fo.checked); }; } }
   $$('[data-zoom]', el).forEach(b => b.onclick = () => { R.zoom = Math.max(.75, Math.min(2.5, +(R.zoom + (+b.dataset.zoom) * .25).toFixed(2))); store.set('rzoom', R.zoom); renderReader(); reopen('p-font'); });
   $$('[data-fs]', el).forEach(b => b.onclick = () => { R.fs = +b.dataset.fs; store.set('rfs', R.fs); renderReader(); reopen('p-font'); });
   const FS = [0.85, 1, 1.15, 1.3, 1.5, 1.75, 2, 2.25, 2.5, 3, 3.5, 4];
