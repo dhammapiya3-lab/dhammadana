@@ -1,0 +1,618 @@
+[
+ {
+  "img": "images/13-14-Yasas-Parents-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     186,
+     588,
+     278
+    ],
+    "ko": "최초의 재가 제자들\n이시빠따나에서 야사의 가족이 귀의하다",
+    "cover": [
+     224,
+     212,
+     195
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     474,
+     104,
+     756,
+     266
+    ],
+    "ko": "야사가 사라진 것을 안 장자는\n사람들을 풀어 찾게 하고\n이시빠따나로 말을 달렸습니다.\n아들이 벗어 둔 금빛 신발을\n알아보고 그 자취를 따라\n숲으로 들어갔습니다.",
+    "cover": [
+     208,
+     160,
+     108
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     474,
+     104,
+     756,
+     266
+    ],
+    "ko": "장자가 다가오는 것을 보신\n세존께서는 신통으로 야사를\n보이지 않게 하셨습니다. 그리고\n아버지에게 앉으라 권하시며\n곧 아들을 보게 되리라고\n하셨습니다.",
+    "cover": [
+     210,
+     164,
+     111
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     302,
+     46,
+     692,
+     158
+    ],
+    "ko": "세존께서는 아버지의 마음을\n준비시키려고 차례로\n가르침을 설하셨습니다.",
+    "cover": [
+     237,
+     204,
+     154
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     488,
+     186,
+     652,
+     216
+    ],
+    "ko": "출리",
+    "cover": [
+     230,
+     184,
+     132
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     400,
+     238,
+     600,
+     268
+    ],
+    "ko": "욕망의 위험",
+    "cover": [
+     213,
+     164,
+     115
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     378,
+     288,
+     478,
+     318
+    ],
+    "ko": "천상",
+    "cover": [
+     187,
+     135,
+     92
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     304,
+     340,
+     392,
+     370
+    ],
+    "ko": "계",
+    "cover": [
+     139,
+     91,
+     57
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     226,
+     392,
+     322,
+     434
+    ],
+    "ko": "보시",
+    "cover": [
+     139,
+     91,
+     57
+    ],
+    "align": "center",
+    "em": 19,
+    "thr": 8,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     304,
+     314,
+     678,
+     434
+    ],
+    "ko": "장자의 마음이 준비되고 부드럽고 열리고\n고양되고 자신 있게 된 것을 아시고\n깨달은 분께서 법을 설하셨습니다.\n\n괴로움, 일어남, 소멸, 길.",
+    "cover": [
+     181,
+     138,
+     95
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     178,
+     332,
+     624,
+     450
+    ],
+    "ko": "깨끗한 천이 물감을 잘 받아들이듯\n티끌 없는 법의 눈이 생겼습니다.\n“일어나는 성질을 지닌 것은 무엇이든 모두\n사라지는 성질을 지녔다.”",
+    "cover": [
+     167,
+     129,
+     95
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     320,
+     188,
+     546,
+     410
+    ],
+    "ko": "모든 의심을 넘어선\n아버지는 평생 부처님과\n법과 승가에 귀의한다고\n선언했습니다.\n\n그는 세상에서 처음으로\n삼귀의를 한\n재가 제자가 되었습니다.",
+    "cover": [
+     212,
+     175,
+     133
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     320,
+     74,
+     542,
+     324
+    ],
+    "ko": "아버지에게 주시는\n가르침을 들으며\n야사는 돌이켜 보았습니다.\n\n그의 마음은 집착 없이\n모든 번뇌에서 완전히\n해탈했습니다. 이제 다시는\n재가의 삶으로 돌아갈 수\n없었습니다.",
+    "cover": [
+     209,
+     178,
+     136
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     292,
+     262,
+     534,
+     392
+    ],
+    "ko": "세존께서 신통을 거두시자\n야사를 본 아버지는 어머니의\n슬픔을 덜어 달라고 청했습니다.\n부처님께서는 야사가 되돌릴 수\n없이 해탈했음을 일러 주셨습니다.",
+    "cover": [
+     233,
+     221,
+     200
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     12,
+     132,
+     300,
+     314
+    ],
+    "ko": "장자는 기뻐하며 세존과\n야사를 공양에 청했습니다.\n그가 떠난 뒤 야사는\n구족계를 청했습니다.\n“오라, 비구여.” 부처님께서\n말씀하셨습니다. 야사는 세상의\n일곱 번째 아라한이 되었습니다.",
+    "cover": [
+     187,
+     146,
+     104
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     12,
+     132,
+     300,
+     314
+    ],
+    "ko": "아침에 세존께서는\n이제 시자로 모시는\n야사 장로와 함께\n장자의 집에 이르러\n마련된 자리에 앉으셨습니다.",
+    "cover": [
+     189,
+     147,
+     105
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     174,
+     30,
+     768,
+     120
+    ],
+    "ko": "야사의 어머니와 옛 아내가 다가와 세존께 절했습니다.\n세존께서는 차례로 가르침을 설하시어\n그들의 마음을 부드럽고 자신 있게 준비시키셨습니다.",
+    "cover": [
+     191,
+     150,
+     109
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     486,
+     136,
+     756,
+     312
+    ],
+    "ko": "깨달은 분께서 그들에게\n네 가지 성스러운 진리를\n가르치셨습니다. 깨끗한 천이\n물감을 받아들이듯, 티끌 없는\n법의 눈이 그들에게\n함께 생겼습니다.",
+    "cover": [
+     184,
+     150,
+     114
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     6,
+     752,
+     106
+    ],
+    "ko": "그들은 부처님과 법과 승가에 귀의하여\n삼귀의로 첫 여성 재가 제자가 되었습니다.\n그리고 훌륭한 공양을 올렸습니다.",
+    "cover": [
+     210,
+     202,
+     190
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Yasas-Parents-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     178,
+     34,
+     622,
+     82
+    ],
+    "ko": "재가 제자의 바탕",
+    "cover": [
+     207,
+     177,
+     143
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     90,
+     84,
+     354,
+     118
+    ],
+    "ko": "남자: 야사의 아버지",
+    "cover": [
+     213,
+     182,
+     147
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     448,
+     84,
+     714,
+     118
+    ],
+    "ko": "여자: 어머니와 옛 아내",
+    "cover": [
+     211,
+     179,
+     145
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     180,
+     226,
+     356,
+     260
+    ],
+    "ko": "우바새(upāsaka)",
+    "cover": [
+     197,
+     161,
+     122
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     448,
+     226,
+     624,
+     260
+    ],
+    "ko": "우바이(upāsikā)",
+    "cover": [
+     197,
+     163,
+     125
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     180,
+     264,
+     356,
+     316
+    ],
+    "ko": "가르침: 차례로 설한\n가르침과 성스러운 진리",
+    "cover": [
+     189,
+     155,
+     120
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     448,
+     264,
+     624,
+     316
+    ],
+    "ko": "가르침: 차례로 설한\n가르침과 성스러운 진리",
+    "cover": [
+     192,
+     159,
+     123
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     180,
+     324,
+     356,
+     366
+    ],
+    "ko": "깨달음:\n법의 눈",
+    "cover": [
+     178,
+     142,
+     108
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     448,
+     324,
+     624,
+     366
+    ],
+    "ko": "깨달음:\n법의 눈",
+    "cover": [
+     180,
+     144,
+     109
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     180,
+     372,
+     356,
+     420
+    ],
+    "ko": "이정표:\n세상 최초의 우바새",
+    "cover": [
+     164,
+     124,
+     89
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     448,
+     372,
+     624,
+     420
+    ],
+    "ko": "이정표:\n세상 최초의 우바이",
+    "cover": [
+     166,
+     127,
+     92
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

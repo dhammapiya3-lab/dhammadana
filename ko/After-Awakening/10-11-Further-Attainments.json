@@ -1,0 +1,458 @@
+[
+ {
+  "img": "images/10-11-Further-Attainments-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     288,
+     306,
+     516,
+     410
+    ],
+    "ko": "첫 가르침\n구족계와\n무아의 특징",
+    "cover": [
+     238,
+     233,
+     224
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     392,
+     314,
+     776,
+     422
+    ],
+    "ko": "안냐 꼰단냐는 법을 꿰뚫고 의심을 건너서\n구족계를 청했습니다. 세존께서 말씀하셨습니다.\n“오라, 비구여. 법은 잘 설해졌다.”\n이렇게 꼰단냐는 교단의 첫 비구가 되었습니다.",
+    "cover": [
+     247,
+     244,
+     239
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     186,
+     338,
+     288
+    ],
+    "ko": "곧이어 왑빠, 밧디야, 마하나마, 앗사지도\n법을 보았습니다. 그들은 깨달았습니다.\n“일어나는 성질을 지닌 것은 무엇이든 모두\n사라지는 성질을 지녔다.”\n그들도 세존께 구족계를 받았습니다.",
+    "cover": [
+     219,
+     192,
+     154
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     370,
+     656,
+     440
+    ],
+    "ko": "다섯 비구가 모이자 세존께서 두 번째 큰 법문인\n‘무아의 특징 경’을 설하셨습니다. 먼저 우리 존재를 이루는\n요소들을 마음대로 다스릴 수 있다는 생각을 허무셨습니다.",
+    "cover": [
+     226,
+     196,
+     164
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     162,
+     80,
+     246,
+     122
+    ],
+    "ko": "자아라면",
+    "cover": [
+     219,
+     188,
+     152
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     348,
+     96,
+     450,
+     156
+    ],
+    "ko": "뜻대로:\n내 몸아,\n이렇게 되어라.",
+    "cover": [
+     218,
+     189,
+     152
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     162,
+     356,
+     246,
+     384
+    ],
+    "ko": "실제",
+    "cover": [
+     210,
+     179,
+     143
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     350,
+     334,
+     450,
+     394
+    ],
+    "ko": "괴로움:\n뜻대로\n할 수 없음.",
+    "cover": [
+     217,
+     189,
+     153
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     448,
+     148,
+     732,
+     322
+    ],
+    "ko": "우리 몸이 정말 ‘자아’라면\n“내 몸아, 이렇게 되어라.”\n하고 명령할 수 있을 것입니다.\n\n자아가 아니기에 우리는 몸을\n궁극적으로 다스릴 수 없고,\n몸은 결국 괴로움으로 이어집니다.",
+    "cover": [
+     218,
+     189,
+     152
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     284,
+     228,
+     524,
+     414
+    ],
+    "ko": "부처님께서는 이 ‘다스릴 수\n없음’의 논리를 사람의 경험을\n이루는 다섯 무더기에\n적용하셨습니다.\n1. 물질\n2. 느낌\n3. 인식\n4. 형성\n5. 의식",
+    "cover": [
+     215,
+     183,
+     142
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     358,
+     392,
+     386
+    ],
+    "ko": "“물질은 영원한가, 무상한가?”",
+    "cover": [
+     203,
+     172,
+     137
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     466,
+     358,
+     712,
+     386
+    ],
+    "ko": "“무상합니다, 세존이시여.”",
+    "cover": [
+     209,
+     178,
+     143
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     148,
+     396,
+     656,
+     424
+    ],
+    "ko": "“무상한 것은 괴로운가, 즐거운가?”",
+    "cover": [
+     204,
+     174,
+     138
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     286,
+     424,
+     516,
+     450
+    ],
+    "ko": "“괴롭습니다, 세존이시여.”",
+    "cover": [
+     205,
+     175,
+     137
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     140,
+     602,
+     332
+    ],
+    "ko": "“무상하고 괴롭고 변하는 것을\n‘이것은 내 것이다, 이것이 나다,\n이것이 나의 자아다.’라고\n여기는 것이 옳은가?”\n\n“그렇지 않습니다, 세존이시여.”",
+    "cover": [
+     248,
+     229,
+     180
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     374,
+     754,
+     452
+    ],
+    "ko": "이 진리는 모든 현상에서 있는 그대로 바른 지혜로 보아야 합니다.\n과거든 미래든 현재든, 안이든 밖이든, 거칠든 미세하든,\n저열하든 수승하든, 멀든 가깝든.",
+    "cover": [
+     202,
+     172,
+     135
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     40,
+     314,
+     100
+    ],
+    "ko": "이와 같이 보는 배운 성스러운\n제자는 이렇게 나아갑니다.",
+    "cover": [
+     203,
+     178,
+     148
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     506,
+     38,
+     712,
+     92
+    ],
+    "ko": "3. 탐욕이 빛바래어\n마음이 해탈합니다.",
+    "cover": [
+     223,
+     197,
+     158
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     302,
+     134,
+     502,
+     184
+    ],
+    "ko": "2. 싫어하여\n탐욕이 빛바랩니다.",
+    "cover": [
+     212,
+     184,
+     148
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     106,
+     238,
+     294,
+     292
+    ],
+    "ko": "1. 다섯 무더기를\n싫어하게 됩니다.",
+    "cover": [
+     203,
+     173,
+     136
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     422,
+     76,
+     746,
+     390
+    ],
+    "ko": "해탈하면\n완전한 앎이 있습니다.\n\n“태어남은 다했다.\n청정한 삶은 완성되었다.\n할 일을 다 해 마쳤다.\n다시는 이런 상태가 없다.”",
+    "cover": [
+     222,
+     199,
+     170
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-11-Further-Attainments-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     94,
+     360,
+     712,
+     448
+    ],
+    "ko": "이 법문을 들으며 다섯 비구의 마음은 집착 없이\n번뇌에서 완전히 해탈했습니다. 그때 세상에는\n꼭 여섯 분의 아라한이 계셨습니다.",
+    "cover": [
+     225,
+     189,
+     146
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

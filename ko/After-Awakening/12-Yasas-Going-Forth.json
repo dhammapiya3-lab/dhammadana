@@ -1,0 +1,381 @@
+[
+ {
+  "img": "images/12-Yasas-Going-Forth-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     194,
+     220,
+     412,
+     352
+    ],
+    "ko": "야사의 출가\n\n교단의 성장",
+    "cover": [
+     223,
+     187,
+     146
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     498,
+     44,
+     776,
+     166
+    ],
+    "ko": "젊은 야사\n젊은 야사는 큰 재산을 가졌고 계절마다\n머무는 궁전이 셋이었습니다. 다섯 가닥의\n감각적 쾌락을 누리며 여인들의 악단에\n둘러싸여 깊은 탐닉에 빠져 살았습니다.",
+    "cover": [
+     209,
+     177,
+     141
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     498,
+     44,
+     776,
+     166
+    ],
+    "ko": "젊은 야사\n밤에 깬 야사는 흐트러진 채 침을 흘리며\n잠꼬대하는 시녀들을 보았습니다. 화려한\n궁전이 갑자기 묘지처럼 보였습니다. 큰 위험을\n본 그의 마음에 세상에 대한 싫증이 일었습니다.",
+    "cover": [
+     207,
+     175,
+     139
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     498,
+     44,
+     776,
+     166
+    ],
+    "ko": "젊은 야사\n“아, 괴롭구나! 아, 비참하구나!”\n야사가 외치며 궁전을 빠져나가자 천신들이\n무거운 성문을 소리 없이 열어, 세상의 어떤\n장애도 출가의 길을 막지 못하게 했습니다.",
+    "cover": [
+     208,
+     177,
+     141
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     498,
+     44,
+     776,
+     166
+    ],
+    "ko": "새벽에 야사는 사슴 동산에 이르렀습니다.\n바깥에서 경행하시던 부처님께서\n멀리서 다가오는 젊은이를 보시고\n자리를 마련하셨습니다.",
+    "cover": [
+     204,
+     174,
+     137
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     94,
+     446,
+     190
+    ],
+    "ko": "야사가 절망을 외치자 부처님께서 답하셨습니다.\n“여기에는 괴로움이 없다.\n여기에는 비참함이 없다. 오라, 야사여.\n앉아라. 그대에게 법을 가르치리라.”\n기쁘고 고무된 야사는 그분 곁에 앉았습니다.",
+    "cover": [
+     214,
+     187,
+     150
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     112,
+     84,
+     534,
+     122
+    ],
+    "ko": "부처님께서 야사를 차례로 가르치셨습니다.",
+    "cover": [
+     212,
+     189,
+     152
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     122,
+     128,
+     370,
+     256
+    ],
+    "ko": "1. 보시\n2. 계\n3. 천상\n4. 감각적 욕망의 위험\n5. 출리의 이익",
+    "cover": [
+     208,
+     178,
+     138
+    ],
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     38,
+     552,
+     84
+    ],
+    "ko": "야사의 변화",
+    "cover": [
+     197,
+     172,
+     138
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     126,
+     372,
+     374,
+     436
+    ],
+    "ko": "전: 지치고 싫증 나고\n감각적 쾌락에 갇힌 마음",
+    "cover": [
+     179,
+     150,
+     111
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     428,
+     372,
+     676,
+     436
+    ],
+    "ko": "후: 준비되고 부드럽고 열린,\n고양되고 자신 있는 마음",
+    "cover": [
+     190,
+     163,
+     126
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     78,
+     752,
+     292
+    ],
+    "ko": "깨끗하고 얼룩 없는 천이\n물감을 잘 받아들이듯,\n\n철저히 준비된 야사의 마음은\n이제 가장 높은 진리를\n받아들일 준비가 되었습니다.",
+    "cover": [
+     206,
+     180,
+     142
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     194,
+     32,
+     606,
+     92
+    ],
+    "ko": "깨달은 분께서 부처님들이 발견하신\n궁극의 법을 드러내셨습니다.",
+    "cover": [
+     195,
+     171,
+     135
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     202,
+     188,
+     314,
+     218
+    ],
+    "ko": "1. 괴로움",
+    "cover": [
+     200,
+     172,
+     139
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     488,
+     188,
+     612,
+     218
+    ],
+    "ko": "2. 일어남",
+    "cover": [
+     216,
+     196,
+     163
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     202,
+     274,
+     318,
+     304
+    ],
+    "ko": "3. 소멸",
+    "cover": [
+     195,
+     167,
+     135
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     494,
+     274,
+     604,
+     304
+    ],
+    "ko": "4. 길",
+    "cover": [
+     207,
+     181,
+     146
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Yasas-Going-Forth-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     178,
+     38,
+     622,
+     162
+    ],
+    "ko": "바로 그 자리에서 야사에게 티끌 없고\n때 없는 법의 눈이 생겼습니다.\n“일어나는 성질을 지닌 것은 무엇이든 모두\n사라지는 성질을 지녔다.”",
+    "cover": [
+     223,
+     182,
+     138
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
