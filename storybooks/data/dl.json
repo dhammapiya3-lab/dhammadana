@@ -1,10 +1,10 @@
 {
 "Foremost-Monks": {
-"n": 724,
-"pdf": 1010327930,
-"pdfs": 106257482,
-"stories": 35,
-"zip": 1009815020
+"n": 802,
+"pdf": 1121534741,
+"pdfs": 118138904,
+"stories": 38,
+"zip": 1120991892
 },
 "Foremost-Monks/01-Kondanna": {
 "n": 38,
@@ -180,6 +180,21 @@
 "n": 35,
 "pdf": 46348463,
 "zip": 46071769
+},
+"Foremost-Monks/39-Sagata": {
+"n": 11,
+"pdf": 16744836,
+"zip": 16481125
+},
+"Foremost-Monks/40-Radha": {
+"n": 14,
+"pdf": 17461864,
+"zip": 17199041
+},
+"Foremost-Monks/41-Mogharaja": {
+"n": 53,
+"pdf": 77776733,
+"zip": 77495839
 },
 "Foremost-Nuns": {
 "n": 283,
