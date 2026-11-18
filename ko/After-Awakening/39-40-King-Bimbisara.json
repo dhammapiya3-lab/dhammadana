@@ -1,0 +1,296 @@
+[
+ {
+  "img": "images/39-40-King-Bimbisara-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     354,
+     632,
+     430
+    ],
+    "ko": "라자가하에서의 큰 장\n부처님께서 오시고 첫 승원이 세워지다",
+    "cover": [
+     219,
+     173,
+     125
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/39-40-King-Bimbisara-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     346,
+     778,
+     428
+    ],
+    "ko": "세존께서 비구 천 명과 함께 야자나무 숲의 숩빠띳타 사당에\n이르셨습니다. 비구들은 모두 예전에 결발 수행자였습니다.",
+    "cover": [
+     212,
+     169,
+     123
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/39-40-King-Bimbisara-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     346,
+     778,
+     428
+    ],
+    "ko": "흠 없는 명성을 들은 세니야 빔비사라 왕이 마가다의 장자와\n바라문 십이만 명에 둘러싸여 야자나무 숲으로 찾아왔습니다.",
+    "cover": [
+     208,
+     167,
+     123
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/39-40-King-Bimbisara-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     346,
+     778,
+     428
+    ],
+    "ko": "십이만 명 사이에 말 없는 물음이 번졌습니다. 대사문이\n우루웰라깟사빠 아래 있는가, 우루웰라깟사빠가 대사문 아래 있는가?",
+    "cover": [
+     202,
+     160,
+     117
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/39-40-King-Bimbisara-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     18,
+     342,
+     390,
+     428
+    ],
+    "ko": "제사의 불: 형색과 소리와\n맛과 감각적 집착.",
+    "cover": [
+     190,
+     148,
+     106
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     436,
+     342,
+     782,
+     428
+    ],
+    "ko": "평화의 경지: 아무것도 없고,\n집착 없고, 변하지 않음.",
+    "cover": [
+     206,
+     169,
+     125
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/39-40-King-Bimbisara-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     486,
+     92,
+     706,
+     326
+    ],
+    "ko": "자리에서 일어난\n우루웰라깟사빠가\n세존의 발에 머리를\n대고 엎드렸습니다.\n\n“세존께서는\n저의 스승이시고,\n저는 그분의\n제자입니다.”",
+    "cover": [
+     214,
+     180,
+     135
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/39-40-King-Bimbisara-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     346,
+     778,
+     428
+    ],
+    "ko": "부처님께서는 완전히 준비된 마음들에게 차례로 가르침을 설하시어,\n보시와 계에서 감각적 욕망의 위험을 지나 곧바로 사성제로 이끄셨습니다.",
+    "cover": [
+     197,
+     160,
+     118
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/39-40-King-Bimbisara-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     192,
+     636,
+     302
+    ],
+    "ko": "깨끗한 천이 물감을 받아들이듯,\n십일만 명에게 티끌 없는 법의 눈이 생겼습니다.\n“일어나는 성질을 지닌 것은 무엇이든 모두\n사라지는 성질을 지녔다.”",
+    "cover": [
+     223,
+     188,
+     147
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/39-40-King-Bimbisara-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     78,
+     334,
+     724,
+     428
+    ],
+    "ko": "왕은 기뻐했습니다. 어릴 적 다섯 가지 소원이 모두 이루어졌습니다.\n왕위에 오르는 것, 부처님을 맞는 것, 그분을 모시는 것,\n법을 듣는 것, 그리고 법을 깨닫는 것입니다.",
+    "cover": [
+     200,
+     162,
+     123
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/39-40-King-Bimbisara-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     78,
+     334,
+     724,
+     428
+    ],
+    "ko": "라자가하로 가는 길이 막혔습니다. 신들의 왕 삭까가\n아름다운 젊은 바라문으로 모습을 바꾸어 내려와\n부처님을 찬탄하는 노래를 부르며 길을 열었습니다.",
+    "cover": [
+     196,
+     160,
+     122
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/39-40-King-Bimbisara-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     476,
+     134,
+     758,
+     340
+    ],
+    "ko": "왕은 승가가 머물기에\n알맞은 곳을 찾았습니다.\n\n- 너무 멀지도 가깝지도 않고\n- 오가기 쉬우며\n- 낮에는 조용하고 밤에는 고요하며\n- 홀로 지내기에 알맞은 곳",
+    "cover": [
+     208,
+     178,
+     140
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/39-40-King-Bimbisara-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     76,
+     330,
+     726,
+     424
+    ],
+    "ko": "왕은 금 물병의 물을 부으며 대나무 숲(웰루와나)을\n보시했습니다. 땅이 흔들렸습니다.\n부처님 가르침의 뿌리가 내린 것입니다.",
+    "cover": [
+     194,
+     158,
+     120
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
