@@ -1,0 +1,545 @@
+[
+ {
+  "img": "images/28-Mahasurasena-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     276,
+     198,
+     524,
+     228
+    ],
+    "ko": "마하수라세나 왕",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     276,
+     228,
+     524,
+     262
+    ],
+    "ko": "보시 바라밀\n란나 벽화 전통으로 보다",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     44,
+     288,
+     152
+    ],
+    "ko": "제따와나에서 비구들이 한 비구의 지극한 보시를 칭찬했습니다. 이를 들으신 부처님께서 참된 보시는 재물을 넘어선다고 밝히셨습니다. ‘옛날에도 현자들은 자기 머리까지 내주었다.’",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     244,
+     44,
+     556,
+     84
+    ],
+    "ko": "보시를 들여다보다",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     66,
+     346,
+     330,
+     414
+    ],
+    "ko": "바히라 다나(밖의 보시):\n재물·옷·음식을 주는 것. 큰 공덕이 되지만 가장 높은 바람을 채우지는 못합니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     474,
+     346,
+     742,
+     414
+    ],
+    "ko": "앗잣띠까 다나(안의 보시):\n자기 살·피·머리를 주는 것. 완전한 깨달음에 꼭 필요한 지극한 희생입니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     348,
+     744,
+     420
+    ],
+    "ko": "옛 바라나시의 마하수라세나 왕은 밖의 보시를 완전히 닦았습니다. 보시당에서 날마다 육십만 닢을 나누며 모든 물질적 요청을 들어주었습니다. 그러나 이 큰 보시로도 왕의 마음은 차지 않았습니다.",
+    "cover": [
+     219,
+     192,
+     150
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     352,
+     622,
+     416
+    ],
+    "ko": "자기 보시를 돌아보던 왕은 깨달았습니다. “나는 바깥의 것만 주는구나. 오늘 걸인들이 내 눈이나 머리, 살이나 피를 청한다면 얼마나 좋을까. 일체지를 얻으려고 기꺼이 내주리라.”",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     160,
+     300,
+     284
+    ],
+    "ko": "맑은 서원 하나가 우주를 흔듭니다. 안의 보시를 하겠다는 장엄한 서원이 하늘의 연쇄 반응을 일으켜, 대지가 흔들리고 삭까의 천상 옥좌가 뜨거워졌습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     88,
+     54,
+     368,
+     126
+    ],
+    "ko": "왕이 부처의 싹임을 안 삭까가 서원을 이루어 주려고 내려왔습니다. 머리 없는 젊은이로 변장해 왕궁 뜰에 들어서서 빌었습니다. “이제 당신이 제 의지처입니다. 당신의 머리를 주십시오.”",
+    "cover": [
+     223,
+     195,
+     140
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     304,
+     528,
+     394
+    ],
+    "ko": "보살의 마음은 두려움 대신 기쁨으로 가득했습니다. 펼친 손바닥에 돈주머니를 얹어 주듯 쉽게, 망설임 없이 승낙했습니다. “내 마음은 보시를 기뻐하니, 깨달음을 위해 머리를 주겠습니다.”",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     446,
+     58,
+     716,
+     136
+    ],
+    "ko": "나라가 흔들리지 않도록 왕은 아들 와라자의 손에 금 주전자의 물을 부어 나라를 물려주었습니다. 그리고 윗줄라따 왕비를 불러 자신의 지극한 보시를 도와 달라고 했습니다.",
+    "cover": [
+     214,
+     185,
+     139
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     28,
+     290,
+     124
+    ],
+    "ko": "궁정은 슬픔에 잠겼습니다. 왕을 따라 동산에 온 후궁들은 비통하게 울었습니다. 왕의 머리를 베라는 명을 받은 수찌세나 대신은 합장하고 거듭거듭 거절했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     340,
+     542,
+     428
+    ],
+    "ko": "칼을 든 보살은 하늘을 우러러 모든 중생의 이익을 위해 오직 완전한 깨달음만을 바랐습니다. 그리고 두려움 없이 자기 머리를 베어 젊은이의 손에 올려놓았습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     270,
+     180,
+     540,
+     288
+    ],
+    "ko": "바로 그때 큰 바다까지 뻗은 대지가 크게 흔들렸습니다. 천신의 무리가 “훌륭하다, 훌륭하다!” 외치며 사방에 하늘 꽃을 뿌려, 불가능한 희생을 증명했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     514,
+     52,
+     752,
+     136
+    ],
+    "ko": "세상은 슬픔에 휩싸였습니다. 수찌세나 대신은 깊은 공경으로 왕의 피를 자기 머리에 발랐고, 궁녀들은 시원한 물을 뿌려 기절한 왕비와 왕자를 깨웠습니다.",
+    "cover": [
+     227,
+     203,
+     162
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     302,
+     362,
+     390
+    ],
+    "ko": "삭까가 변장을 벗고 하늘에서 빛을 냈습니다. 그 위신력으로 내준 머리를 곧바로 다시 붙이고 감로수를 뿌려, 보살을 되살렸습니다.",
+    "cover": [
+     226,
+     203,
+     162
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Mahasurasena-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     146,
+     58,
+     208,
+     86
+    ],
+    "ko": "삭까",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     92,
+     116,
+     208,
+     144
+    ],
+    "ko": "수찌세나 대신",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     100,
+     172,
+     208,
+     200
+    ],
+    "ko": "와라자 왕자",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     92,
+     230,
+     208,
+     258
+    ],
+    "ko": "윗줄라따 왕비",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     66,
+     286,
+     208,
+     314
+    ],
+    "ko": "마하수라세나 왕",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     590,
+     58,
+     672,
+     86
+    ],
+    "ko": "아누룻다",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     590,
+     116,
+     656,
+     144
+    ],
+    "ko": "아난다",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     590,
+     172,
+     656,
+     200
+    ],
+    "ko": "라훌라",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     590,
+     230,
+     672,
+     258
+    ],
+    "ko": "야소다라",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     590,
+     286,
+     656,
+     314
+    ],
+    "ko": "부처님",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     656,
+     288,
+     706,
+     314
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ }
+]
