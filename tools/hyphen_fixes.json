@@ -1,5 +1,5 @@
 {
- "_설명": "PDF 줄 끝 하이픈 뒤에 남은 빈칸 바로잡기 (2026-11-18 다시 검수). [찾을 글, 바꿀 글] — 책 안 표기(줄표를 넣어 쓰는 겹낱말)대로 줄표는 두고 빈칸만 뺌, ñāṇa- dassana 는 책에 ñāṇadassana 로 5번 붙여 써서 붙임. python3 tools/join_hyphens.py [--write] 한글 소리 표기도 책 안에서 붙여 쓴 꼴이 있으면 같음(윈냐-나 22번 등). 독송집(소리 줄을 빠알리 낱말마다 띄움)은 판단할 수 없어 건드리지 않음.",
+ "_설명": "PDF 줄 끝 하이픈 뒤에 남은 빈칸 바로잡기 (2026-11-18 다시 검수). [찾을 글, 바꿀 글] — 책 안 표기(줄표를 넣어 쓰는 겹낱말)대로 줄표는 두고 빈칸만 뺌, ñāṇa- dassana 는 책에 ñāṇadassana 로 5번 붙여 써서 붙임. python3 tools/join_hyphens.py [--write] 한글 소리 표기도 책 안에서 붙여 쓴 꼴이 있으면 같음(윈냐-나 22번 등). 독송집(소리 줄을 빠알리 낱말마다 띄움)은 판단할 수 없어 건드리지 않음. 한글 파일 책(DL-0023·0024)의 로마자 줄 끝 하이픈은 운영자 결정(2026-11-18 'asaṅ- kheyya → asaṅkheyya 이런 식으로')으로 줄표와 빈칸을 모두 빼고 붙임.",
  "DL-0006": [
   [
    "Bhava- sutta",
@@ -74,6 +74,50 @@
   [
    "형색- 눈-",
    "형색-눈-"
+  ]
+ ],
+ "DL-0023": [
+  [
+   "asaṅ- kheyya",
+   "asaṅkheyya"
+  ],
+  [
+   "appa- māda",
+   "appamāda"
+  ],
+  [
+   "puthuj- jana",
+   "puthujjana"
+  ],
+  [
+   "dham- mapāla",
+   "dhammapāla"
+  ],
+  [
+   "vici- kicchā",
+   "vicikicchā"
+  ],
+  [
+   "Rā- hulamatā",
+   "Rāhulamatā"
+  ],
+  [
+   "Anu- ruddha",
+   "Anuruddha"
+  ],
+  [
+   "Sāmā- vati",
+   "Sāmāvati"
+  ],
+  [
+   "Vediya- giri",
+   "Vediyagiri"
+  ]
+ ],
+ "DL-0024": [
+  [
+   "Ātānā- ṭya",
+   "Ātānāṭya"
   ]
  ]
 }
