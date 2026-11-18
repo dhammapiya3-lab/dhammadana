@@ -1,0 +1,600 @@
+[
+ {
+  "img": "images/23-Ratanapajjota-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     168,
+     318,
+     632,
+     362
+    ],
+    "ko": "라따나빳조따 전생 이야기",
+    "cover": false,
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     168,
+     362,
+     632,
+     400
+    ],
+    "ko": "빤냐사 자따까가 전하는 지극한 희생 이야기",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     360,
+     760,
+     442
+    ],
+    "ko": "제따와나에서 비구들이 탁발한 음식을 어머니께 드린 야윈 비구를 나무랐습니다. 그러나 부처님께서는 오히려 그를 칭찬하셨습니다. “부모를 봉양하는 것은 참으로 현자들의 전통이다.”",
+    "cover": [
+     223,
+     207,
+     183
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     446,
+     56,
+     752,
+     230
+    ],
+    "ko": "전생에 시리라따나갑바 왕비는 눈이 붉은 귀신이 자기 심장을 뜯어 서쪽으로 달아나는 꿈을 꾸었습니다.\n\n바라문들은 이 끔찍한 징조를 풀이했습니다. 머지않아 왕비와 마하라타 왕에게 큰 이별이 닥친다는 것이었습니다.",
+    "cover": [
+     220,
+     205,
+     180
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     38,
+     330,
+     102
+    ],
+    "ko": "그들의 배는 왜\n큰 홍수에 갈라졌을까요?",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     394,
+     36,
+     766,
+     128
+    ],
+    "ko": "옛날의 업 때문입니다. 바라나시에서 그들은 겁에 질린 사미의 배를 흔든 적이 있습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     108,
+     350,
+     692,
+     416
+    ],
+    "ko": "작은 나쁜 행위도 넓게 열매 맺어\n왕족의 삶에도 괴로움을 가져올 수 있습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     446,
+     254,
+     764,
+     418
+    ],
+    "ko": "짠다 산 기슭에 밀려온 왕비의 딱한 처지에 삭까의 천상 옥좌가 뜨거워졌습니다.\n\n삭까는 위수깜마에게 다섯 빛깔 연꽃으로 지붕을 덮은 나뭇잎 오두막을 짓게 했습니다. 왕비는 거기서 보살을 낳고, 산에서 빛나는 보석을 따라 이름을 라따나빳조따라 지었습니다.",
+    "cover": [
+     241,
+     226,
+     203
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     104,
+     536,
+     348
+    ],
+    "ko": "뿌리를 캐던 왕비가 무서운 약카 발하하까에게 붙잡혔습니다.\n\n어머니의 울음소리를 들은 다섯 살 라따나빳조따는 반얀나무 아래에서 둘을 찾아냈고, 곧바로 어머니 대신 자기 목숨을 내놓기로 마음먹었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     70,
+     294,
+     398
+    ],
+    "ko": "약카는 “큰 심장”을 내놓으라고 했습니다. 라따나빳조따는 참된 크기를 설명했습니다. “열반을 위해 공덕을 짓는 이는 작은 몸에 큰 심장을 지닙니다.\n\n바깥의 재물을 주는 것도 훌륭하지만, 자기 살과 심장을 바치는 것이 가장 높은 바라밀입니다.”",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     446,
+     154,
+     582,
+     194
+    ],
+    "ko": "궁극\n빠라맛타 바라밀",
+    "cover": [
+     234,
+     212,
+     182
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     450,
+     256,
+     572,
+     298
+    ],
+    "ko": "안\n몸의 일부",
+    "cover": [
+     234,
+     212,
+     181
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     442,
+     378,
+     588,
+     402
+    ],
+    "ko": "밖 / 몸에 붙지 않은 것",
+    "cover": [
+     235,
+     211,
+     183
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     454,
+     226,
+     772,
+     392
+    ],
+    "ko": "진실이 만들어 낸 칼로 라따나빳조따는 자기 심장을 꺼냈습니다.\n\n“이 보시로 저는 사람의 행복도 인드라의 왕위도 바라지 않습니다. 미래에 모든 것을 깨달은 부처가 되기를 바랍니다.”",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     66,
+     274,
+     322
+    ],
+    "ko": "약카가 심장을 삼키자 대지가 떨렸습니다. 이토록 깊은 희생, 그의 깨달음을 보증하는 희생을 알아보며 자연도 함께 울부짖었습니다.\n\n소년은 어머니 발치에 쓰러져 숨을 거두었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     350,
+     752,
+     432
+    ],
+    "ko": "삭까가 금강 갈고리로 나서서 약카에게 천상의 약을 바르게 했습니다. 왕비는 자신의 흠 없는 정절을 선언했습니다. 이 세 겹 진실의 서원의 위력으로 라따나빳조따는 다시 숨을 쉬며 일어났습니다.",
+    "cover": [
+     92,
+     72,
+     49
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     36,
+     422,
+     144
+    ],
+    "ko": "황금 가마를 타고 그들은 메가와띠로 돌아갔습니다. 마하라타 왕은 아들에게 관정했습니다. 라따나빳조따는 감각적 즐거움을 멀리하고, 나라를 모두에게 베푸는 보시와 바른 법의 나라로 바꾸었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     244,
+     318,
+     580,
+     434
+    ],
+    "ko": "참된 자유는 왕좌 너머에 있었습니다.\n라따나빳조따는 왕의 옷을 벗고 나무껍질 옷을 입었습니다. 히마완따에 들어가 선정을 닦아 다섯 신통과 여덟 선정을 얻었고, 범천의 세계에 태어났습니다.",
+    "cover": [
+     227,
+     208,
+     178
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     6,
+     734,
+     92
+    ],
+    "ko": "스승께서는 여러 생에 걸쳐 굴러가는 바퀴를 밝히며 이야기를 마치셨습니다. 옛 인물들이 지금 이 모임에 다시 살아 있습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     94,
+     109,
+     300,
+     141
+    ],
+    "ko": "먼 옛날",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     484,
+     109,
+     700,
+     141
+    ],
+    "ko": "지금의 모임",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     94,
+     155,
+     300,
+     187
+    ],
+    "ko": "삭까",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     484,
+     155,
+     700,
+     187
+    ],
+    "ko": "아누룻다",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     94,
+     203,
+     300,
+     235
+    ],
+    "ko": "약카 발하하까",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     484,
+     203,
+     700,
+     235
+    ],
+    "ko": "앙굴리말라",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     94,
+     251,
+     300,
+     283
+    ],
+    "ko": "시리라따나갑바 왕비",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     484,
+     251,
+     700,
+     283
+    ],
+    "ko": "마하마야",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     94,
+     299,
+     300,
+     331
+    ],
+    "ko": "마하라타 왕",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     484,
+     299,
+     700,
+     331
+    ],
+    "ko": "숫도다나",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     94,
+     348,
+     300,
+     380
+    ],
+    "ko": "라따나빳조따",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     484,
+     348,
+     700,
+     380
+    ],
+    "ko": "여래",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Ratanapajjota-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     322,
+     744,
+     432
+    ],
+    "ko": "‘이 자따까를 이렇게 큰 존경으로 마음에 간직하라.’\n부처님의 가장 높은 바라밀도 가장 소박한 의무에서 시작됩니다.\n부모를 봉양하는 것은 현자들의 영원한 전통입니다.",
+    "cover": false,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
