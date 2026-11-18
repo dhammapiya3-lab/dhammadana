@@ -1103,7 +1103,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     const rows = [];
     if (hasText(b)) rows.push({ href: `/simple/book/${b.id}/read/`, ic: '📖', kind: 'read', cols: ['온라인으로 읽기', '장 목록에서 장을 골라 글로 읽기'] });
     if (hasText(b)) rows.push({ href: `/simple/book/${b.id}/read/?listen=1`, ic: '🔊', kind: 'listen', cols: ['듣기 (TTS)', 'TTS로 듣던 곳(없으면 읽던 곳, 처음이면 첫 장)을 열고 ‘▶ 듣기’ 단추로 — Enter 를 누르면 기기 목소리가 읽어 줌'] });
-    if (hasText(b) && AUDIO[b.id]) rows.push({ href: `/simple/book/${b.id}/read/?audio=1`, ic: '🎧', kind: 'audio', cols: [AUDIO[b.id].human ? '오디오북 (사람이 읽은 녹음)' : '오디오북 (기계 음성)', '듣던 장(처음이면 첫 장)을 열고 ‘🎧 오디오북’ 단추로 — 맨 위 재생기에서 재생, 듣는 문단을 따라감'] });
+    if (hasText(b) && AUDIO[b.id]) rows.push({ href: `/simple/book/${b.id}/read/?audio=1`, ic: '🎧', kind: 'audio', cols: [AUDIO[b.id].human ? '오디오북 (사람이 읽은 녹음)' : '오디오북 (기계 음성 녹음)', '듣던 장(처음이면 첫 장)을 열고 ‘🎧 오디오북’ 단추로 — 맨 위 재생기에서 재생, 듣는 문단을 따라감'] });
     if (txtOk(b)) rows.push({ href: `/txt/${b.id}/${encodeURIComponent(txtName(b))}`, ic: '📃', kind: 'file', dl: true, cols: ['글 파일(TXT) 내려받기', '본문 글만 담은 파일 — 점자정보단말기·데이지 플레이어·메모장에서 읽기'] });
     for (const x of f) rows.push({ href: x.url, ic: x.k === 'PDF' ? '📄' : x.k === 'EPUB' ? '📘' : '📝', kind: 'file', dl: !x.ext, ext: x.ext, cols: [`${x.name} ${x.ext ? '(다른 사이트에서)' : '내려받기'}`, x.ext ? x.site : '파일'] });
     rows.push({ href: `/simple/book/${b.id}/about/`, ic: 'ℹ️', kind: 'about', cols: ['책 소개', '지은이·옮긴이·펴낸 곳·소개 글·차례'] });
