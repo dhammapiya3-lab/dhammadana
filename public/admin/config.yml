@@ -118,6 +118,7 @@ collections:
           - { name: mode, label: 방식, widget: select, options: [{ label: "도서관 파일", value: file }, { label: "다른 사이트 링크", value: link }, { label: "숨김", value: none }], default: file }
           - { name: url, label: 파일 위치 또는 주소, required: false, hint: "올리기 화면에서 올리면 저절로 채워집니다 (예: orig/DL-0005/DL-0005_원서_미얀마어.pdf). 다른 사이트면 https:// 주소" }
           - { name: site, label: 사이트 이름, required: false, hint: "다른 사이트 링크일 때만 (예: sagarwarmyae.net)" }
+          - { name: source, label: 원서 원본 출처 주소, required: false, hint: "원서 파일을 가져온 곳 (https://…) — 책 소개 '자료 기록'의 원서 정보 옆에 '원서 원본 출처 ↗'로 보입니다" }
       - name: braille
         label: 점자 파일
         label_singular: 점자 파일
