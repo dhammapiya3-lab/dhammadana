@@ -1,10 +1,10 @@
-Pannasa 36-Velama 14 장
+Pannasa 37-Vattanguli 30 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 74 개 / 한글판 이야기 152 편
-공개 주소 확인: 200 1438285바이트
-이야기 Pannasa/36-Velama {'pdf': 18749832, 'zip': 18484615, 'n': 14}
-책 Pannasa {'pdf': 718417537, 'pdfs': 69013827, 'zip': 717959198, 'stories': 36, 'n': 558}
+R2 에 올림: 106 개 / 한글판 이야기 153 편
+공개 주소 확인: 200 1251073바이트
+이야기 Pannasa/37-Vattanguli {'pdf': 38989889, 'zip': 38718299, 'n': 30}
+책 Pannasa {'pdf': 757147809, 'pdfs': 72730706, 'zip': 756677872, 'stories': 37, 'n': 588}
 내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 152 이야기
+글로 보기: 153 이야기
 50-Mahasudassana
 44-The-Distribution-of-the-Relics
