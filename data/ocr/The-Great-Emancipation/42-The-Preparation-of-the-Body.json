@@ -1,0 +1,542 @@
+[
+ {
+  "img": "images/42-The-Preparation-of-the-Body-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     334,
+     61
+    ],
+    "bbox": [
+     777,
+     136,
+     1871,
+     575
+    ],
+    "shape": "box",
+    "en": "The preparation of the Buddha’s body The Great Emancipation",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ANURUDDHA",
+   "SENDS",
+   "ANANDA",
+   "THE",
+   "MALLAS",
+   "Following",
+   "the",
+   "Fortunate",
+   "One’s",
+   "passing,",
+   "Venerable",
+   "Anuruddha",
+   "instructs",
+   "Ananda",
+   "enter",
+   "Kusinara",
+   "and",
+   "inform",
+   "the",
+   "Mallas",
+   "that",
+   "the",
+   "time",
+   "has",
+   "come",
+   "for",
+   "their",
+   "final",
+   "duties."
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "secular",
+   "world",
+   "receives",
+   "the",
+   "news",
+   "Ananda",
+   "approaches",
+   "the",
+   "Mallas",
+   "assembled",
+   "their",
+   "Council",
+   "Hall,",
+   "transferring",
+   "the",
+   "immense",
+   "logistical",
+   "burden",
+   "the",
+   "funeral",
+   "rites",
+   "the",
+   "city’s",
+   "nobility."
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     83,
+     57
+    ],
+    "bbox": [
+     3,
+     3,
+     1799,
+     744
+    ],
+    "shape": "bubble",
+    "en": "THE MALLAS SUCCUMB TO INTENSE GRIEF ms Too io} quickly the Visionary in the world as} has disappeared! The nobles weep, throwing their arms upward, rolling on the ground, and falling as though cut down.",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Six",
+   "days",
+   "earth",
+   "veneration",
+   "delay",
+   "the",
+   "pyre",
+   "Gathering",
+   "musicians,",
+   "perfumes,",
+   "and",
+   "five-hundred",
+   "pairs",
+   "clothes,",
+   "the",
+   "Mallas",
+   "honor",
+   "the",
+   "body",
+   "the",
+   "Sal",
+   "Wood",
+   "with",
+   "continuous",
+   "dance,",
+   "cloth",
+   "canopies,",
+   "and",
+   "circular",
+   "pavilions."
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Eight",
+   "leaders",
+   "fail",
+   "lift",
+   "the",
+   "the",
+   "seventh",
+   "day,",
+   "intending",
+   "move",
+   "the",
+   "body",
+   "south",
+   "for",
+   "cremation,",
+   "eight",
+   "strong",
+   "Mallas",
+   "don",
+   "clean",
+   "clothes—but",
+   "face",
+   "mysterious,",
+   "immovable",
+   "physical",
+   "resistance."
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     130,
+     52
+    ],
+    "bbox": [
+     380,
+     109,
+     2285,
+     380
+    ],
+    "shape": "box",
+    "en": "Conflicting intentions alter the procession path Venerable Anuruddha reveals the Divinities demand grander route through the city’s heart, overriding the Mallas’ quiet southern exit.",
+    "conf": 84
+   }
+  ],
+  "loose": [
+   "The",
+   "Divinities’",
+   "Intent",
+   "South",
+   "Gate",
+   "North",
+   "Gate",
+   "Bonded",
+   "Coronet",
+   "East",
+   "Gate",
+   "Bonded",
+   "Coronet",
+   "Shrine",
+   "Mallas’",
+   "The"
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     148,
+     41
+    ],
+    "bbox": [
+     3,
+     36,
+     1898,
+     701
+    ],
+    "shape": "bubble",
+    "en": "cover the city of Kusinara ON) Yielding to the divine will, the Mallas watch as celestial Coral Tree flowers rain from the sky, burying the entire 1) city knee-deep in vibrant color. aia ee",
+    "conf": 37
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Gods",
+   "and",
+   "men",
+   "march",
+   "side-by-side",
+   "Uniting",
+   "their",
+   "efforts,",
+   "divinities",
+   "and",
+   "Mallas",
+   "carry",
+   "the",
+   "Fortunate",
+   "body",
+   "through",
+   "the",
+   "Northern",
+   "Gate,",
+   "across",
+   "setting",
+   "Shrine.",
+   "the",
+   "center,",
+   "down",
+   "Eastern"
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Mallas",
+   "ask",
+   "Ananda",
+   "for",
+   "funeral",
+   "protocols",
+   "With",
+   "the",
+   "body",
+   "resting",
+   "safely",
+   "the",
+   "Bonded",
+   "Coronet,",
+   "the",
+   "Mallas",
+   "humbly",
+   "approach",
+   "Ananda",
+   "ask",
+   "how",
+   "they",
+   "must",
+   "treat",
+   "the",
+   "Realised",
+   "One’s",
+   "remains."
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "receives",
+   "the",
+   "rites",
+   "supreme",
+   "sovereign",
+   "Ananda",
+   "instructs",
+   "them",
+   "treat",
+   "the",
+   "body",
+   "exactly",
+   "they",
+   "would",
+   "Universal",
+   "Monarch,",
+   "reflecting",
+   "the",
+   "Buddha’s",
+   "absolute",
+   "spiritual",
+   "sovereignty."
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     182,
+     35
+    ],
+    "bbox": [
+     493,
+     66,
+     2152,
+     380
+    ],
+    "shape": "box",
+    "en": "Five hundred alternating layers wrap the remains The meticulous wrapping ritual alternates clean cloth with carded cotton, repeating for five hundred pairs to ensure profound purification. oat",
+    "conf": 35
+   },
+   {
+    "seed": [
+     360,
+     291
+    ],
+    "bbox": [
+     962,
+     704,
+     1680,
+     1041
+    ],
+    "shape": "bubble",
+    "en": "Clean Cloth",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "Carded",
+   "Cotton",
+   "Carded",
+   "Cotton",
+   "Clot",
+   "Carded",
+   "Cotton",
+   "Carded",
+   "Cotton",
+   "x500",
+   "Pairs",
+   "Pairs",
+   "Pairs"
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     59,
+     129
+    ],
+    "bbox": [
+     155,
+     360,
+     1008,
+     1187
+    ],
+    "shape": "box",
+    "en": "Dual iron vessels contain the sacred body Following the supreme protocol, the heavily wrapped body is submerged in an oil-filled iron tub, tightly enclosed within second iron vessel.",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "Outer",
+   "Iron",
+   "Tub",
+   "Inner",
+   "Tub",
+   "Wrapped",
+   "Body",
+   "Oil-Filled"
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     205,
+     358
+    ],
+    "bbox": [
+     393,
+     1144,
+     2252,
+     1481
+    ],
+    "shape": "box",
+    "en": "The iron tubs rest upon scented funeral pyre The Mallas meticulously construct massive, scented funeral pyre at the shrine, hoisting the enclosed iron vessels atop the wood.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "crossroad",
+   "shrine",
+   "promises",
+   "enduring",
+   "happiness",
+   "The",
+   "final",
+   "directive",
+   "ensures",
+   "that",
+   "whoever",
+   "offers",
+   "flowers,",
+   "incense,",
+   "establishes",
+   "confidence",
+   "their",
+   "mind",
+   "the",
+   "crossroad",
+   "shrine",
+   "will",
+   "find",
+   "benefit",
+   "long-lasting",
+   "promises"
+  ]
+ }
+]

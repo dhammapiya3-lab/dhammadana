@@ -1,0 +1,358 @@
+[
+ {
+  "img": "images/15-The-Courtesan-Ambapali-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Fortunate",
+   "One",
+   "arrived",
+   "with",
+   "great",
+   "community",
+   "monks",
+   "taking",
+   "residence",
+   "the",
+   "ush",
+   "greenery",
+   "Wood"
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "dwells",
+   "contemplating",
+   "the",
+   "body,",
+   "the",
+   "mind,",
+   "and",
+   "remaining",
+   "ardent,",
+   "fully",
+   "aware,",
+   "and",
+   "mindful,",
+   "they",
+   "remove",
+   "avarice",
+   "and",
+   "sorrow",
+   "regarding",
+   "the",
+   "world.",
+   "practitioner",
+   "things."
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Mindfulness",
+   "continuous",
+   "practice.",
+   "going",
+   "forward",
+   "back",
+   "looking",
+   "around,",
+   "bearing",
+   "robes,",
+   "eating,",
+   "sitting,",
+   "one",
+   "practices",
+   "with",
+   "full,",
+   "unbroken",
+   "awareness.",
+   "WES"
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     424,
+     133
+    ],
+    "bbox": [
+     1141,
+     341,
+     1537,
+     1194
+    ],
+    "shape": "box",
+    "en": "Hearing the Buddha was residing in her Mango Wood the wealthy courtesan Ambapaii left her august vehicles behind approaching the Fortunate One humbly on foot",
+    "conf": 68
+   }
+  ],
+  "loose": [
+   "INS"
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     317,
+     162
+    ],
+    "bbox": [
+     836,
+     420,
+     1871,
+     1167
+    ],
+    "shape": "bubble",
+    "en": "After being instructed and cheered by talk on the Teaching, Ambapali requested the honor of offering meal The Fortunate One consented by maintaining silence",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     296,
+     98
+    ],
+    "bbox": [
+     810,
+     238,
+     1802,
+     777
+    ],
+    "shape": "bubble",
+    "en": "PAINE ot. The royal Licchavi youths intercepted Ambapali, rolling axle by axle. They demanded to purchase her privilege of hosting the Buddha's meal for hundred thousand pieces. CSD",
+    "conf": 39
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "refused,",
+   "declaring",
+   "she",
+   "would",
+   "not",
+   "trade",
+   "the",
+   "meal",
+   "even",
+   "offered",
+   "all",
+   "and",
+   "its",
+   "revenues",
+   "The",
+   "defeated",
+   "princes",
+   "snapped",
+   "their",
+   "fingers",
+   "frustration",
+   "Ambapali",
+   "Vesali"
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     367,
+     129
+    ],
+    "bbox": [
+     992,
+     324,
+     1653,
+     1114
+    ],
+    "shape": "box",
+    "en": "THE BUDDHA instructed the monks to observe the splendid Licchavis, comparing them to the majestic Tavatimsa Divinities. Their magnificent, temporary forms served as living reflection on profound impermanence.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Licchavis",
+   "approached",
+   "foot",
+   "and",
+   "requested",
+   "host",
+   "the",
+   "meal",
+   "The",
+   "Buddha",
+   "declined",
+   "honoring",
+   "his",
+   "prior",
+   "silent",
+   "commitment"
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "next",
+   "morning,",
+   "Ambapali",
+   "prepared",
+   "excellent",
+   "foodstuffs",
+   "her",
+   "own",
+   "pleasure",
+   "park",
+   "personally",
+   "serving",
+   "and",
+   "satisfying",
+   "the",
+   "community",
+   "monks",
+   "with",
+   "the",
+   "Buddha",
+   "its",
+   "head."
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "LENE",
+   "Taking",
+   "low",
+   "seat,",
+   "Ambapali",
+   "donated",
+   "her",
+   "pleasure",
+   "park",
+   "the",
+   "Community.",
+   "The",
+   "accepted,",
+   "transforming",
+   "site",
+   "worldly",
+   "indulgence",
+   "into",
+   "lasting",
+   "sanctuary.",
+   "WF;"
+  ]
+ },
+ {
+  "img": "images/15-The-Courtesan-Ambapali-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "liberates",
+   "the",
+   "mind",
+   "from",
+   "the",
+   "pollutants",
+   "Well-developed",
+   "wisdom",
+   "gnorance.",
+   "continued",
+   "existence,",
+   "and",
+   "Well-developed",
+   "concentration",
+   "brings",
+   "great",
+   "wisdom.",
+   "Well-developed",
+   "completely",
+   "wisdom",
+   "brings",
+   "great"
+  ]
+ }
+]

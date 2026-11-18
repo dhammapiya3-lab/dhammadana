@@ -1,0 +1,412 @@
+[
+ {
+  "img": "images/33-Worshipping-the-Realised-One-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     385,
+     127
+    ],
+    "bbox": [
+     797,
+     380,
+     1855,
+     678
+    ],
+    "shape": "box",
+    "en": "Worshipping the Realised One The Buddha’‘s final lesson on the nature of true homage at the Twin Sal Trees.",
+    "conf": 45
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Journey",
+   "Upavattana",
+   "The",
+   "Fortunate",
+   "One",
+   "led",
+   "venerable",
+   "Ananda",
+   "and",
+   "great",
+   "Community",
+   "monks",
+   "across",
+   "the",
+   "Golden",
+   "river.",
+   "They",
+   "arrived",
+   "Kusinara,",
+   "entering",
+   "the",
+   "peaceful",
+   "Mallas’",
+   "Sal",
+   "Wood",
+   "Upavattana"
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Rest",
+   "Between",
+   "the",
+   "Trees",
+   "Weary",
+   "from",
+   "the",
+   "journey,",
+   "the",
+   "Fortunate",
+   "One",
+   "instructed",
+   "Ananda",
+   "“Prepare",
+   "couch",
+   "with",
+   "the",
+   "head",
+   "facing",
+   "north",
+   "between",
+   "the",
+   "Twin",
+   "Sal",
+   "Trees",
+   "for",
+   "me.",
+   "will",
+   "lie",
+   "down"
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Lion’s",
+   "Head",
+   "facing",
+   "North",
+   "Resting",
+   "mindfully,",
+   "with",
+   "full",
+   "awareness",
+   "Lying",
+   "One",
+   "foot",
+   "the",
+   "right",
+   "side",
+   "placed",
+   "top",
+   "the",
+   "other",
+   "Posture"
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "First",
+   "Miracle",
+   "Earthly",
+   "Blooms",
+   "Though",
+   "completely",
+   "outside",
+   "flowering",
+   "time,",
+   "the",
+   "Twin",
+   "Sal",
+   "Trees",
+   "burst",
+   "into",
+   "full",
+   "blossom",
+   "The",
+   "flowers",
+   "sprinkled",
+   "showered,",
+   "and",
+   "poured",
+   "down",
+   "upon",
+   "the",
+   "Realised",
+   "One’s",
+   "body",
+   "worship"
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "VAY",
+   "Divine",
+   "Offerings",
+   "The",
+   "homage",
+   "escalated",
+   "beyond",
+   "the",
+   "earthly",
+   "Divine",
+   "Coral",
+   "Tree",
+   "flowers",
+   "fell",
+   "from",
+   "the",
+   "sky,",
+   "joining",
+   "continuous",
+   "shower",
+   "divine",
+   "sandalwood",
+   "powder,",
+   "pouring",
+   "over",
+   "the",
+   "Fortunate",
+   "One.",
+   "Miracle:",
+   "der,"
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     267,
+     36
+    ],
+    "bbox": [
+     711,
+     3,
+     1937,
+     463
+    ],
+    "shape": "bubble",
+    "en": "The Third Miracle: Celestial Sound iu The sky filled with invisible devotion. Divine Ne music echoed through the grove, accompanied by divine songs playing from the heavens, all united in worship of the Realised One.",
+    "conf": 49
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Highest",
+   "Honor",
+   "Despite",
+   "the",
+   "miraculous",
+   "showering",
+   "flowers,",
+   "powder,",
+   "and",
+   "celestial",
+   "songs,",
+   "the",
+   "Buddha",
+   "turned",
+   "Ananda:",
+   "“It",
+   "not",
+   "this",
+   "way",
+   "that",
+   "the",
+   "Realised",
+   "One",
+   "honoured,",
+   "revered,",
+   "respected,"
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     199,
+     51
+    ],
+    "bbox": [
+     648,
+     93,
+     2004,
+     255
+    ],
+    "shape": "box",
+    "en": "The Two Paths of Homage",
+    "conf": 82
+   },
+   {
+    "seed": [
+     172,
+     339
+    ],
+    "bbox": [
+     450,
+     1065,
+     1091,
+     1322
+    ],
+    "shape": "box",
+    "en": "Sal blossoms and Coral flowe Sandalwood powder Divine music and songs Le External, sensory Cael:",
+    "conf": 36
+   }
+  ],
+  "loose": [
+   "ighes",
+   "Worship",
+   "Living",
+   "the",
+   "Teaching",
+   "Correct",
+   "practice",
+   "Conforming",
+   "the",
+   "Dhamma",
+   "Internal,",
+   "active",
+   "iv."
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Architecture",
+   "the",
+   "Fourfold",
+   "Assembly",
+   "actice",
+   "True",
+   "worship",
+   "upheld",
+   "equally",
+   "those",
+   "who",
+   "pr.",
+   "Layman",
+   "correctly:",
+   "The",
+   "The",
+   "Monk",
+   "The",
+   "man"
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Practice",
+   "the",
+   "Homage",
+   "“Therefore,",
+   "Ananda,",
+   "thinking:",
+   "‘Let",
+   "live",
+   "practising",
+   "the",
+   "Teaching",
+   "accordance",
+   "with",
+   "the",
+   "Teaching,",
+   "correct",
+   "our",
+   "practice,",
+   "living",
+   "conformity",
+   "with",
+   "the",
+   "Teaching,",
+   "“This",
+   "how",
+   "you",
+   "are",
+   "train"
+  ]
+ }
+]

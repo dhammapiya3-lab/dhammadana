@@ -1,0 +1,323 @@
+[
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "THE",
+   "RELINQUISHMENT",
+   "THE",
+   "LIFE",
+   "PROCESS",
+   "narrative",
+   "from",
+   "the",
+   "Sutta",
+   "Mahaparinibbana"
+  ]
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "THE",
+   "WICKED",
+   "MARA",
+   "APPROACHED",
+   "THE",
+   "FORTUNATE",
+   "ONE",
+   "STANDING",
+   "ONE",
+   "SIDE",
+   "URGED",
+   "THE",
+   "BUDDHA",
+   "ATTAIN",
+   "FINAL",
+   "EMANCIPATION",
+   "IMMEDIATELY,",
+   "DECLARING",
+   "THAT",
+   "THE",
+   "TIME",
+   "HAD",
+   "FINALLY",
+   "COME"
+  ]
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "THE",
+   "BUDDHA",
+   "HAD",
+   "PREVIOUSLY",
+   "REFUSED",
+   "MARA’S",
+   "REQUEST.",
+   "VOWED",
+   "REMAIN",
+   "UNTIL",
+   "HIS",
+   "FOLLOWERS",
+   "WERE",
+   "TRUE",
+   "ACCOMPLISHED",
+   "CONFIDENT,",
+   "AND",
+   "PERFECTLY",
+   "DISCIPLINED",
+   "BEARERS",
+   "THE",
+   "TEACHING",
+   "CHIN"
+  ]
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     163,
+     367
+    ],
+    "bbox": [
+     337,
+     1207,
+     2311,
+     1481
+    ],
+    "shape": "box",
+    "en": "True disciples must teach the miraculous Teaching. The Buddha clarified that this means the ultimate miracle of instruction, rather than simply displaying mystical powers or prophecy.",
+    "conf": 85
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     353,
+     156
+    ],
+    "bbox": [
+     922,
+     367,
+     1729,
+     1200
+    ],
+    "shape": "bubble",
+    "en": "MARA DECLARED THE FOUNDATION WAS NOW COMPLETE. ALL FOUR PILLARS OF THE ASSEMBLY—MONKS, NUNS, LAYMEN, AND LAYWOMEN—HAD SUCCESSFULLY LEARNED AND MASTERED THE SPIRITUAL LIFE.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     227,
+     94
+    ],
+    "bbox": [
+     678,
+     225,
+     1971,
+     512
+    ],
+    "shape": "box",
+    "en": "These true disciples could now declare, reveal, open up, and analyze the Teaching. They were fully capable of delivering reasoned rebuke to the false doctrines of others.",
+    "conf": 77
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "had",
+   "ecome",
+   "entirely",
+   "prosperous,",
+   "spre",
+   "and",
+   "well-explained",
+   "both",
+   "successful,",
+   "and",
+   "among",
+   "life",
+   "well",
+   "ome",
+   "many",
+   "Was",
+   "explained"
+  ]
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Recognizing",
+   "his",
+   "purpose",
+   "was",
+   "fulfilled,",
+   "the",
+   "Fortunate",
+   "One",
+   "replied",
+   "“You",
+   "should",
+   "have",
+   "little",
+   "concern,",
+   "Wicked",
+   "One.",
+   "After",
+   "three",
+   "months",
+   "have",
+   "have",
+   "from",
+   "now,",
+   "the",
+   "Realised",
+   "One",
+   "will",
+   "attain",
+   "Final",
+   "Emancipation",
+   "passed"
+  ]
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "DEX",
+   "fil!",
+   "the",
+   "Capala",
+   "shrine,",
+   "the",
+   "Fortunate",
+   "One",
+   "mindfully",
+   "and",
+   "with",
+   "full",
+   "awareness",
+   "the"
+  ]
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ger",
+   "With",
+   "the",
+   "relinquishment",
+   "the",
+   "life-process,",
+   "there",
+   "was",
+   "great",
+   "earthquake,",
+   "accompanied",
+   "the",
+   "fearful,",
+   "horrifying",
+   "crash",
+   "Divinities’",
+   "thunder",
+   "nities’"
+  ]
+ },
+ {
+  "img": "images/18-The-Relinquishment-of-the-Life-Process-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "KX)",
+   "Understandin",
+   "the",
+   "the",
+   "moment,",
+   "the",
+   "Sage",
+   "uttered:",
+   "“Content",
+   "himself,",
+   "and",
+   "concentrated,",
+   "broke",
+   "continuity",
+   "self",
+   "like",
+   "coat",
+   "Wok"
+  ]
+ }
+]

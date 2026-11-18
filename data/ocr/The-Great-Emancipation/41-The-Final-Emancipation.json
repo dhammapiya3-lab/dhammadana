@@ -1,0 +1,451 @@
+[
+ {
+  "img": "images/41-The-Final-Emancipation-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     314,
+     63
+    ],
+    "bbox": [
+     622,
+     60,
+     2030,
+     469
+    ],
+    "shape": "bubble",
+    "en": "The Final Emancipation The Discourse on the Great Passing",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     392,
+     65
+    ],
+    "bbox": [
+     1240,
+     159,
+     2582,
+     704
+    ],
+    "shape": "box",
+    "en": "\"Through nine stages of deep meditation, the Fortunate One ascended. From the four form absorptions to the four formless spheres, he reached the ultimate quiet: the cessation of perception and feeling.\"",
+    "conf": 81
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "Fortunate",
+   "One",
+   "attained",
+   "Final",
+   "Emancipation?”",
+   "asked",
+   "Ananda.",
+   "“He",
+   "has",
+   "not,”",
+   "replied",
+   "“He",
+   "has",
+   "attained",
+   "the",
+   "cessation",
+   "perception",
+   "and",
+   "feeling.",
+   "Vital",
+   "heat",
+   "remained;",
+   "his",
+   "mind",
+   "was",
+   "entirely",
+   "still.”",
+   "“Has"
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Emerging",
+   "from",
+   "cessation,",
+   "the",
+   "Fortunate",
+   "One",
+   "descended",
+   "back",
+   "the",
+   "first",
+   "absorption.",
+   "Ascending",
+   "once",
+   "more",
+   "the",
+   "fourth",
+   "absorption,",
+   "immediately",
+   "attained",
+   "Final",
+   "Emancipation.",
+   "The",
+   "journey",
+   "was",
+   "complete.”"
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "Final",
+   "Emancipation",
+   "came",
+   "massive,",
+   "terrifying",
+   "earthquake.",
+   "The",
+   "heavens",
+   "roared",
+   "with",
+   "the",
+   "awful,",
+   "horrifying",
+   "crash",
+   "the",
+   "Divinities’",
+   "thunder",
+   "drum.",
+   "The",
+   "cosmos",
+   "itself",
+   "marked",
+   "the",
+   "passing.”"
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Brahma",
+   "Sahampati",
+   "spoke",
+   "“All",
+   "beings",
+   "the",
+   "world",
+   "will",
+   "surely",
+   "lay",
+   "aside",
+   "the",
+   "body.",
+   "the",
+   "same",
+   "way",
+   "the",
+   "Teacher",
+   "unmatched",
+   "the",
+   "world,",
+   "the",
+   "Realised",
+   "One,",
+   "has",
+   "attained",
+   "Final",
+   "Emancipation"
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sakka,",
+   "Lord",
+   "Divinities,",
+   "spoke",
+   "“Impermanent,",
+   "indeed,",
+   "are",
+   "all",
+   "processes.",
+   "Arisen,",
+   "they",
+   "have",
+   "the",
+   "nature",
+   "decay.",
+   "After",
+   "arising",
+   "they",
+   "come",
+   "cessation.",
+   "The",
+   "stilling",
+   "them",
+   "blissful.”"
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Venerable",
+   "Anuruddha",
+   "spoke:",
+   "“Freed",
+   "from",
+   "lust,",
+   "the",
+   "Sage",
+   "who",
+   "has",
+   "died",
+   "has",
+   "entered",
+   "peace.",
+   "With",
+   "unshaken",
+   "heart,",
+   "endured.",
+   "Like",
+   "flame",
+   "when",
+   "goes",
+   "out,",
+   "his",
+   "mind",
+   "was",
+   "liberated.”"
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Venerable",
+   "Ananda",
+   "spoke",
+   "“With",
+   "that",
+   "there",
+   "was",
+   "fear",
+   "with",
+   "that",
+   "there",
+   "was",
+   "horror",
+   "when",
+   "the",
+   "Sambuddha",
+   "endowed",
+   "with",
+   "all",
+   "noble",
+   "qualities,",
+   "attained",
+   "Emancipation"
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Unenlightened",
+   "The",
+   "Enlightened",
+   "Bound",
+   "passion.",
+   "Weeping,",
+   "falling,",
+   "rolling",
+   "grief",
+   "Free",
+   "from",
+   "passion.",
+   "Mindful,",
+   "fully",
+   "aware,",
+   "enduring",
+   "“Too",
+   "quickly",
+   "the",
+   "Visionary",
+   "has",
+   "disappeared!”",
+   "“Impermanent",
+   "are",
+   "all",
+   "processes",
+   "Ges"
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "grief",
+   "extended",
+   "beyond",
+   "the",
+   "human",
+   "realm.",
+   "Divinities",
+   "the",
+   "sky",
+   "and",
+   "the",
+   "Earth,",
+   "with",
+   "disheveled",
+   "hair,",
+   "wept",
+   "and",
+   "threw",
+   "their",
+   "arms,",
+   "mourning",
+   "the",
+   "Visionary’s",
+   "departure."
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Enough,",
+   "friends,",
+   "not",
+   "grieve,",
+   "Anuruddha",
+   "urged.",
+   "“Were",
+   "you",
+   "not",
+   "warned",
+   "the",
+   "Fortunate",
+   "One?",
+   "There",
+   "alteration",
+   "and",
+   "separation",
+   "all",
+   "that",
+   "dear.",
+   "cannot",
+   "otherwise.”"
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Final",
+   "Emancipation",
+   "the",
+   "ultimate",
+   "testament",
+   "the",
+   "wisdom.",
+   "For",
+   "that",
+   "which",
+   "born",
+   "and",
+   "process",
+   "The",
+   "highest",
+   "peace",
+   "found",
+   "release",
+   "QZ."
+  ]
+ }
+]

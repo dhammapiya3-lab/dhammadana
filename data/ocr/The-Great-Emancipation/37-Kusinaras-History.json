@@ -1,0 +1,318 @@
+[
+ {
+  "img": "images/37-Kusinaras-History-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     223,
+     394
+    ],
+    "bbox": [
+     711,
+     1270,
+     1921,
+     1481
+    ],
+    "shape": "box",
+    "en": "The True History of Kusinara Vision of the Great Emancipation",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Kusinaras-History-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     275,
+     165
+    ],
+    "bbox": [
+     899,
+     493,
+     1759,
+     959
+    ],
+    "shape": "box",
+    "en": "VENERABLE ANANDA PLEADED WITH THE FORTUNATE ONE: “REVEREND SIR, MAY THE FORTUNATE ONE NOT ATTAIN FINAL EMANCIPATION IN THIS SMALL, BARREN, BRANCH TOWN",
+    "conf": 88
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Kusinaras-History-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     223,
+     340
+    ],
+    "bbox": [
+     456,
+     1094,
+     2199,
+     1399
+    ],
+    "shape": "box",
+    "en": "Ananda proposed six major cities instead: Campa, Rajagaha, Savatthi, Saketa, Kosambi, and Baranasi. Surely, major capital was more fitting for the Realised One.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Kusinaras-History-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "those",
+   "great",
+   "countries,",
+   "many",
+   "wealthy",
+   "Nobles,",
+   "brahmins,",
+   "and",
+   "householders",
+   "waited",
+   "They",
+   "were",
+   "devoted",
+   "the",
+   "Realised",
+   "One",
+   "and",
+   "ready",
+   "worshipfully",
+   "dispose",
+   "his",
+   "body."
+  ]
+ },
+ {
+  "img": "images/37-Kusinaras-History-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "rebuked",
+   "him:",
+   "‘Do",
+   "not",
+   "say",
+   "that,",
+   "Ananda.",
+   "not",
+   "say:",
+   "“This",
+   "small",
+   "town,",
+   "this",
+   "barren",
+   "town,",
+   "this",
+   "branch",
+   "town.”"
+  ]
+ },
+ {
+  "img": "images/37-Kusinaras-History-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Formerly,",
+   "there",
+   "was",
+   "King",
+   "ahasudassana.",
+   "was",
+   "Righteous",
+   "Monarch",
+   "victorious",
+   "over",
+   "the",
+   "four",
+   "arters,",
+   "who",
+   "had",
+   "established",
+   "perfectly",
+   "stable",
+   "country."
+  ]
+ },
+ {
+  "img": "images/37-Kusinaras-History-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     338,
+     75
+    ],
+    "bbox": [
+     982,
+     172,
+     1656,
+     800
+    ],
+    "shape": "bubble",
+    "en": "His magnificent kingdom was endowed with the seven jewels gold, silver, pearls, precious jewels, lapis lazuli, diamonds and coral",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Kusinaras-History-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     257,
+     167
+    ],
+    "bbox": [
+     777,
+     456,
+     1881,
+     1068
+    ],
+    "shape": "box",
+    "en": "This very place, Kusinara, was then named Kusavati. It was King Mahasudassana’s royal capital—prosperous, successful, populous, and full of food.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Kusinaras-History-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     287,
+     167
+    ],
+    "bbox": [
+     777,
+     456,
+     1881,
+     1068
+    ],
+    "shape": "box",
+    "en": "The sheer scale of capital city Kusavati was staggering stretching twelve leagues from East to West, and seven leagues from North to South.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/37-Kusinaras-History-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Its",
+   "prosperity",
+   "rivaled",
+   "Alakamanda,",
+   "the",
+   "legendary",
+   "city",
+   "the",
+   "Divinities.",
+   "Kusavati",
+   "was",
+   "equally",
+   "successful,",
+   "populous,",
+   "and",
+   "teeming",
+   "with",
+   "life"
+  ]
+ },
+ {
+  "img": "images/37-Kusinaras-History-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Kusavati",
+   "was",
+   "never",
+   "separated",
+   "from",
+   "ten",
+   "sounds",
+   "day",
+   "night:",
+   "elephants,",
+   "horses,",
+   "chariots,",
+   "drums,",
+   "tabours,",
+   "lutes,",
+   "songs,",
+   "cymbals,",
+   "hand",
+   "and",
+   "tenth",
+   "sound:",
+   "“Eat,",
+   "drink,",
+   "chew!’",
+   "bells,",
+   "joyful"
+  ]
+ }
+]
