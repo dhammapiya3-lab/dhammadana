@@ -1,0 +1,378 @@
+[
+ {
+  "img": "images/34-The-Visit-of-the-Divinities-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     26,
+     652,
+     92
+    ],
+    "ko": "신들의 방문\n무상을 보는 우주의 눈",
+    "cover": [
+     200,
+     165,
+     125
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/34-The-Visit-of-the-Divinities-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     18,
+     764,
+     118
+    ],
+    "ko": "말라들의 살라 숲에서 부처님의 마지막 쉼\n생애 마지막에 세존께서는 말라들의 살라 숲에 누워 쉬셨습니다.\n우빠와나 장로가 앞에 서서 조용히 부채질을 해 드렸습니다.",
+    "cover": [
+     232,
+     196,
+     142
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/34-The-Visit-of-the-Divinities-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     16,
+     764,
+     120
+    ],
+    "ko": "말라들의 살라 숲에서 부처님의 마지막 쉼\n예고 없이 부처님께서 오래 시중든 시자에게 단호히 이르셨습니다.\n“비구여, 비켜라. 내 앞에 서 있지 마라.”",
+    "cover": [
+     230,
+     193,
+     138
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/34-The-Visit-of-the-Divinities-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     340,
+     762,
+     446
+    ],
+    "ko": "아난다는 어리둥절하여 지켜보았습니다.\n우빠와나는 늘 곁에 있던 이였습니다. 왜 마지막 순간에 물리치셨을까?\n그 뜻을 알고 싶어 아난다는 스승께 의문을 여쭈었습니다.",
+    "cover": [
+     211,
+     158,
+     100
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/34-The-Visit-of-the-Divinities-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     370,
+     770,
+     446
+    ],
+    "ko": "부처님께서 보이지 않는 것을 드러내셨습니다.\n열 개 세계의 신들이 모였습니다. 열두 요자나 안에 털끝만 한 빈자리도 없었습니다.\n그들은 반열반을 보려고 먼 길을 왔습니다.",
+    "cover": [
+     221,
+     174,
+     131
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/34-The-Visit-of-the-Divinities-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     208,
+     120,
+     394,
+     360
+    ],
+    "ko": "열두 요자나 안에\n털끝만 한 자리도\n힘 있는 신들로\n채워지지 않은\n곳이 없습니다.",
+    "cover": [
+     208,
+     171,
+     121
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/34-The-Visit-of-the-Divinities-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     26,
+     286,
+     304,
+     428
+    ],
+    "ko": "신들이 불평했습니다.\n“이 힘 있는 비구가\n앞에 서서 마지막 순간에\n여래를 가립니다.”",
+    "cover": [
+     204,
+     161,
+     113
+    ],
+    "align": "left",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/34-The-Visit-of-the-Divinities-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     46,
+     744,
+     110
+    ],
+    "ko": "“완전히 깨달은 분은 아주 드물게 세상에 나타나신다.\n오늘 밤 마지막 경에 반열반에 드신다.”",
+    "cover": [
+     223,
+     197,
+     158
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/34-The-Visit-of-the-Divinities-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     198,
+     700,
+     268
+    ],
+    "ko": "사람의 눈에 보이지 않는 두 세계의 존재들이 지켜보았습니다.\n하늘의 신들과 땅의 신들입니다.",
+    "cover": [
+     213,
+     182,
+     145
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/34-The-Visit-of-the-Divinities-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     6,
+     40,
+     214,
+     364
+    ],
+    "ko": "세상을 땅이라고\n여기는 신들은\n탐욕을 끊지 못해\n울었습니다.\n머리를 풀어 헤치고\n팔을 들어 올리며,\n발이 잘린 듯\n쓰러져\n뒹굴었습니다.",
+    "cover": [
+     212,
+     174,
+     127
+    ],
+    "align": "left",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     10,
+     382,
+     244,
+     450
+    ],
+    "ko": "신들의 비탄",
+    "cover": [
+     211,
+     173,
+     126
+    ],
+    "align": "left",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/34-The-Visit-of-the-Divinities-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     616,
+     76,
+     800,
+     320
+    ],
+    "ko": "그러나 탐욕을\n끊은 신들은\n마음챙김과\n분명한 앎으로\n견디었습니다.",
+    "cover": [
+     209,
+     171,
+     124
+    ],
+    "align": "left",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     606,
+     374,
+     800,
+     446
+    ],
+    "ko": "신들의\n마음챙김",
+    "cover": [
+     209,
+     171,
+     124
+    ],
+    "align": "left",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/34-The-Visit-of-the-Divinities-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     546,
+     210,
+     800,
+     356
+    ],
+    "ko": "탐욕을 끊은 이들은\n마음챙김으로 견디며,\n분명한 앎으로 진리를\n받아들였습니다.\n“형성된 것은 모두 무상하다.\n어찌 그렇지 않겠는가?”",
+    "cover": [
+     214,
+     168,
+     122
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/34-The-Visit-of-the-Divinities-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     146,
+     368,
+     250
+    ],
+    "ko": "탐욕 있는 이의 울음:\n\n‘너무 빨리\n눈 있는 분께서 사라지시는구나!’",
+    "cover": [
+     194,
+     158,
+     118
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     460,
+     146,
+     782,
+     250
+    ],
+    "ko": "탐욕 없는 이의 성찰:\n\n‘형성된 것은 모두 무상하다.\n어찌 그렇지 않겠는가?’",
+    "cover": [
+     214,
+     178,
+     133
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/34-The-Visit-of-the-Divinities-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     390,
+     770,
+     446
+    ],
+    "ko": "땅의 사람 비구든 하늘의 신이든, 법칙은 똑같습니다.\n깨달음은 무상을 받아들이는 데 있습니다.",
+    "cover": [
+     200,
+     156,
+     115
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
