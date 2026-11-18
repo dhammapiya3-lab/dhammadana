@@ -316,7 +316,7 @@ function bookTxt(b) {
         lines.push(txtInline(l));
       }
       out.push(lines.join('\n').trim(), '');
-      for (const [fn, note] of Object.entries(t.fn_site || {})) if (raw0.includes(`[^${fn}]`) && !raw0.includes(`[^${fn}]:`)) out.push(`[각주 ${fn} — 사이트 안내] ${note} (책에 실린 글이 아니라 법보시 도서관에서 덧붙인 설명입니다.)`, '');  // 인쇄본에 풀이가 없는 각주 (2026-11-19)
+      for (const [fn, note] of Object.entries(t.fn_site || {})) if (raw0.includes(`[^${fn}]`) && !raw0.includes(`[^${fn}]:`)) out.push(`[각주 ${fn} — 사이트 안내] ${note}`, '');  // 인쇄본에 풀이가 없는 각주 (2026-11-19)
     }
   });
   return '﻿' + out.join('\n').replace(/\n{4,}/g, '\n\n\n').replace(/\n/g, '\r\n');

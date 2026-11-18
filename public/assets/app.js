@@ -2365,7 +2365,7 @@ try {
 // 인쇄본에 풀이가 없는 각주 — 텍스트 JSON fn_site {번호: 설명} 의 사이트 안내 글을, 책 글과 헷갈리지 않게 '사이트 안내' 표시를 붙여 보임 (운영자 요청, 2026-11-19)
 function fnSiteHtml(RB, n) {
   const t = RB && RB.fnSite && RB.fnSite[n]; if (!t) return '';
-  return `<div class="fn-site" role="note"><p><span class="fn-site-tag">ⓘ 사이트 안내 —</span> ${esc(t)}</p><p class="fn-site-foot">책에 실린 글이 아니라 법보시 도서관에서 덧붙인 설명입니다.</p></div>`;
+  return `<div class="fn-site" role="note"><p><span class="fn-site-tag">ⓘ 사이트 안내 —</span> ${esc(t)}</p></div>`;
 }
 /* ---------- 각주 번호를 누르면 각주 내용 보여주기 ---------- */
 document.addEventListener('click', e => {

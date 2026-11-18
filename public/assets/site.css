@@ -1355,3 +1355,6 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 :root.mode-night .fn-site-tag,:root.mode-contrast .fn-site-tag,:root.mode-night .fn-site .fn-site-foot,:root.mode-contrast .fn-site .fn-site-foot{color:#ffd77a}
 /* 점자 파일 정보 (운영자 요청, 2026-11-19) */
 .get-box .brl-info{margin:2px 0 8px;line-height:1.55}.get-box .brl-info>div+div{margin-top:4px}
+/* 읽기 화면 위 메뉴 창(목차 등)을 빨리 열리게 — 창 안 목록은 보이는 줄만 먼저 그림 (운영자 요청, 2026-11-19 '메뉴 단추 반응이 느림': 『업과 윤회의 법칙』 목차 422줄을 열 때마다 모두 배치하던 것) */
+.reader .panel li{content-visibility:auto;contain-intrinsic-size:auto 36px}
+.reader .panel{contain:layout paint style}
