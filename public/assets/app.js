@@ -973,7 +973,7 @@ function renderReader() {
     <div class="panel" id="p-bm"><h5>내 책갈피</h5><ul>${bms().map((m, k) => `<li><span><a class="link" href="/read/${m.id}/${m.p}">『${esc(m.t)}』 ${esc(m.pl || m.p)}쪽</a>${m.note ? `<br><span class="muted small">${esc(m.note)}</span>` : ''}</span><button class="link" data-bmdel="${k}" aria-label="책갈피 지우기">지우기</button></li>`).join('') || '<li class="muted">아직 책갈피가 없습니다.</li>'}</ul>
       <div class="row" style="margin-top:12px"><input id="bmNote" placeholder="이 쪽에 한 줄 메모" aria-label="책갈피 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"><button class="tbtn" id="bmSave">저장</button></div>
       <p class="note">회원가입 없이 이 기기의 브라우저에만 저장됩니다. 다른 기기로 옮길 때는 내 서재의 ‘옮기기’를 쓰세요.</p></div>
-    <div class="panel" id="p-keys"><h5>단축키 안내</h5><p class="note" tabindex="0">Alt 키와 Shift 키를 함께 누른 채로 아래 글자 키를 누릅니다. (맥은 Option + Shift). 창을 여는 단축키는 한 번 더 누르면 창이 닫히고, 연 단추로 돌아갑니다.</p><ul class="keys">${KEYS.map(([k, d]) => `<li tabindex="0"><kbd>Alt+Shift+${k}</kbd> ${d}</li>`).join('')}<li tabindex="0"><kbd>Esc</kbd> 열린 창 닫기 (창이 없으면 읽기 끝내기)</li><li tabindex="0"><kbd>→</kbd> <kbd>←</kbd> (오른쪽·왼쪽 화살표 키) 다음 쪽·앞 쪽으로 넘기기 — 눈으로 보며 읽는 분을 위한 키입니다. 화면 낭독기를 쓰실 때는 낭독기의 화살표 키 읽기가 먼저 동작합니다.</li></ul></div>`;
+    <div class="panel" id="p-keys"><h5>단축키 안내</h5><p class="note" tabindex="0">Alt 키와 Shift 키를 함께 누른 채로 아래 글자 키를 누릅니다. (맥은 Option + Shift). 창을 여는 단축키는 한 번 더 누르면 창이 닫히고, 연 단추로 돌아갑니다.</p><ul class="keys">${KEYS.map(([k, d]) => `<li tabindex="0"><kbd>Alt+Shift+${k}</kbd> ${d}</li>`).join('')}<li tabindex="0"><kbd>Esc</kbd> 열린 창 닫기 (창이 없으면 읽기 끝내기)</li><li tabindex="0"><kbd>→</kbd> <kbd>←</kbd> (오른쪽·왼쪽 화살표 키) 다음 쪽·앞 쪽으로 넘기기 — 눈으로 보며 읽는 분을 위한 키입니다. 화면 낭독기를 쓰실 때는 Alt+Shift+→ ← 를 쓰세요.</li></ul></div>`;
   bindReader();
   el._fkey = null;
   if (fkey) { const f = $(fkey, el); if (f && f.offsetParent !== null) f.focus({ preventScroll: true }); else el._fkey = fkey; }  // 닫힌 창 안의 단추면 창을 다시 연 뒤(reopen)에 커서를 되돌림
@@ -1040,6 +1040,7 @@ function bindReader() {
       stepCh(-1);
     }
   };
+  el._stepSub = stepSub;  // Alt+Shift+↓↑ 단축키가 씀
   $('#rPrev').onclick = () => R.view === 'text' ? stepSub(-1) : go(R.i); $('#rNext').onclick = () => R.view === 'text' ? stepSub(1) : go(R.i + 2); $('#rRange').onchange = e => go(+e.target.value);
   const ff = $('#findForm'); if (ff) ff.onsubmit = async ev => {
     ev.preventDefault(); const q = $('#findQ').value.trim(); R.findQ = q; if (!q) return;
@@ -2491,7 +2492,21 @@ function panelA11y(el) {
   const mk = $('#rMark'); if (mk) mk.setAttribute('aria-keyshortcuts', 'Alt+Shift+B');
 }
 // 단축키: 브라우저·화면 낭독기 키와 겹치지 않게 Alt+Shift+글자 (WCAG 2.1.4 — 한 글자 키는 쓰지 않음)
-const KEYS = [['M', '메뉴 열기 (닫기 단추로 커서)'], ['P', '듣기 시작·멈춤'], ['S', '듣기 설정'], ['V', '화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['F', '글씨 (크기·굵기·줄 간격·글꼴)'], ['N', '목차'], ['B', '이 쪽에 책갈피 넣기·빼기'], ['L', '책갈피 목록'], ['K', '지금 읽는 곳 알리기'], ['H', '단축키 안내']];
+const KEYS = [['→', '다음 쪽'], ['←', '앞 쪽'], ['↓', '다음 목차 (소제목·장)'], ['↑', '앞 목차 (소제목·장)'], ['M', '메뉴 열기 (닫기 단추로 커서)'], ['P', '듣기 시작·멈춤'], ['S', '듣기 설정'], ['V', '화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['F', '글씨 (크기·굵기·줄 간격·글꼴)'], ['N', '목차'], ['B', '이 쪽에 책갈피 넣기·빼기'], ['L', '책갈피 목록'], ['K', '지금 읽는 곳 알리기'], ['H', '단축키 안내']];
+// 쪽·목차 넘기기 단축키 (운영자 요청, 2026-11-18 — 시각장애인 이용자: 다음·앞 쪽, 다음·앞 목차)
+// 옮긴 뒤 커서를 그 쪽 표시(또는 제목)에 두어 화면 낭독기가 거기서부터 읽게 함
+function kbFocus(t) { if (!t) return; if (!t.hasAttribute('tabindex')) t.tabIndex = -1; try { t.focus({ preventScroll: true }); } catch (e) {} }
+function kbPage(d) {
+  const n = R.i + 1 + d; if (n < 1 || n > R.pages.length) { toast(d > 0 ? '책의 끝입니다' : '책의 처음입니다'); return; }
+  go(n);
+  setTimeout(() => { const m = $('#pm-' + n); if (!m) return; if (m.textContent.trim()) kbFocus(m); else { toast(`${n}번째 쪽`); kbFocus(m.nextElementSibling || m); } }, 120);
+}
+function kbToc(d) {
+  const el = $('#reader'); if (!el) return;
+  if (R.view !== 'text' || !el._stepSub) { kbPage(d); return; }
+  const ci = chapterOf(R.i + 1); R.pinEl = null; el._stepSub(d);
+  setTimeout(() => { const e = R.pinEl && document.contains(R.pinEl) ? R.pinEl : null; kbFocus(e || (chapterOf(R.i + 1) !== ci ? $('.ch-head h3') : null)); }, 160);
+}
 const MODES = [['day', '기본'], ['mono', '흑백'], ['night', '밤'], ['contrast', '고대비']];
 function cycleMode() {
   const c = store.get('mode', 'auto'); const i = MODES.findIndex(m => m[0] === c), n = MODES[(i + 1) % MODES.length];
@@ -2499,6 +2514,7 @@ function cycleMode() {
 }
 function readerKey(e) {
   const k = (e.code || '').replace(/^Key/, ''); const el = $('#reader'); if (!el) return false;
+  if (/^Arrow/.test(k)) { if (R.ttsLocked) { say('듣기가 잠겨 있습니다'); return true; } ({ ArrowRight: () => kbPage(1), ArrowLeft: () => kbPage(-1), ArrowDown: () => kbToc(1), ArrowUp: () => kbToc(-1) })[k](); return true; }
   const say = m => { toast(m); };
   switch (k) {
     case 'M': el.classList.remove('chrome-off'); $$('.panel', el).forEach(x => x.classList.remove('open')); setTimeout(() => { const b = $('#rClose'); if (b) b.focus(); }, 30); return true;
@@ -2728,7 +2744,7 @@ function initSimpleFind() {
   q.addEventListener('keydown', e => { if ((e.key === 'ArrowDown' || e.key === 'Enter') && $('.s-list', out)) { e.preventDefault(); $('.s-list', out)._lb.pick(0); } });
   run(); const go = () => q.focus(); if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true });
 }
-const S_KEYS = [['P', '듣기 시작·멈춤 (책의 장 글 화면에서)'], ['S', '듣기 설정 열기·닫기 (장 글 화면에서)'], ['V', '화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['N', '장 목록으로 (책을 읽을 때)'], ['B', '지금 읽는 쪽에 책갈피 넣기·빼기'], ['L', '내 서재 (이어 읽기·책갈피)'], ['M', '첫 화면 (폴더 목록)'], ['K', '지금 위치 알리기'], ['H', '단축키 안내 열기·닫기']];
+const S_KEYS = [['→', '다음 쪽 (장 글 화면에서)'], ['←', '앞 쪽'], ['↓', '다음 장 (목차의 다음 항목)'], ['↑', '앞 장'], ['P', '듣기 시작·멈춤 (책의 장 글 화면에서)'], ['S', '듣기 설정 열기·닫기 (장 글 화면에서)'], ['V', '화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['N', '장 목록으로 (책을 읽을 때)'], ['B', '지금 읽는 쪽에 책갈피 넣기·빼기'], ['L', '내 서재 (이어 읽기·책갈피)'], ['M', '첫 화면 (폴더 목록)'], ['K', '지금 위치 알리기'], ['H', '단축키 안내 열기·닫기']];
 function simpleHelp() {
   const old = $('#sKeys'); if (old) { old.remove(); const b = $('.s-list [aria-selected="true"]') || $('.s-h1'); if (b) b.focus(); return; }
   $('.s-h1').insertAdjacentHTML('afterend', `<section id="sKeys" class="s-keys" aria-labelledby="sKeysH"><h2 id="sKeysH" tabindex="-1">단축키 안내</h2><p tabindex="0">Alt 키와 Shift 키를 함께 누른 채로 글자 키를 누릅니다 (맥은 Option + Shift). Tab 키로 한 줄씩 들으실 수 있습니다.</p><ul>${S_KEYS.map(([k, d]) => `<li tabindex="0"><kbd>Alt+Shift+${k}</kbd> ${d}</li>`).join('')}<li tabindex="0"><kbd>↑</kbd> <kbd>↓</kbd> 목록에서 줄 고르기, <kbd>Enter</kbd> 열기, <kbd>Backspace</kbd> 위 목록으로</li></ul><button type="button" class="s-btn" id="sKeysX">단축키 안내 닫기</button></section>`);
@@ -2740,8 +2756,21 @@ function simpleHelp() {
     if (e.shiftKey ? i <= 0 : i === f.length - 1) { e.preventDefault(); f[e.shiftKey ? f.length - 1 : 0].focus(); }
   });
 }
+function sPage(d) {
+  const ms = $$('.s-text [id^="pm-"]'); if (!ms.length) return;
+  let cur = 0; ms.forEach((m, i) => { if (m.getBoundingClientRect().top <= 90) cur = i; });
+  const j = cur + d;
+  if (j < 0 || j >= ms.length) { sChap(d); return; }  // 장의 처음·끝이면 앞·다음 장으로
+  const m = ms[j]; m.scrollIntoView({ block: 'start' });
+  if (m.textContent.trim()) kbFocus(m); else { toast(`${+m.id.slice(3)}번째 쪽`); kbFocus(m.nextElementSibling || m); }
+}
+function sChap(d) {
+  const go = SR.ci + d; if (go < 0 || go >= SR.cs.length) { toast(d > 0 ? '책의 끝입니다' : '책의 처음입니다'); return; }
+  const was = SR.speaking; srStop(true); srChapter(go, 0, true, () => { scrollTo(0, 0); $('.s-h1').focus({ preventScroll: true }); if (was) srSpeak(true); });
+}
 function simpleKey(e) {
   const k = (e.code || '').replace(/^Key/, ''), reading = !!(SR.r && $('#sSpeak'));
+  if (/^Arrow/.test(k)) { if (!reading) { toast('쪽·장 넘기기는 책의 장 글 화면에서 쓸 수 있습니다'); return true; } ({ ArrowRight: () => sPage(1), ArrowLeft: () => sPage(-1), ArrowDown: () => sChap(1), ArrowUp: () => sChap(-1) })[k](); return true; }
   switch (k) {
     case 'V': cycleMode(); return true;
     case 'H': simpleHelp(); return true;
