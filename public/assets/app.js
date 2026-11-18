@@ -2090,7 +2090,7 @@ function renderNotes() {
     else LS.push({ ts: v.ts, d: v.d, del: 'ab:' + m[2], ic: '🎧', kind: '오디오북', t: `『${v.b}』`, w: `${v.ch || ''}${v.ch ? ' · ' : ''}${fmtT(v.t)}부터`, href: `/read/${m[2]}/?audio=1`, go: '이어 듣기' }); } } catch (e) {}
   store.get('stalk-hist', []).forEach(h => { const pl = /\/simple\/talks\/([^/]+)\//.exec(h.p || ''); LS.push({ ts: h.ts, d: h.d, del: 'ep:' + h.a, ic: '🎙', kind: '법문', t: `「${h.t}」`, w: `${h.pl ? h.pl + ' · ' : ''}${fmtT(h.pos)}${h.dur ? ' / ' + fmtT(h.dur) : ''}`, href: pl ? `/dhammatalk/?pl=${pl[1]}` : '/dhammatalk/', go: '재생목록 열기', play: h.a }); });
   LS.sort((a, c) => (c.ts || Date.parse(c.d || '') || 0) - (a.ts || Date.parse(a.d || '') || 0));
-  const lsHtml = LS.length ? LS.map(x => `<div class="note-item"><div class="meta"><span>${x.ic} ${esc(x.kind)}</span><span>${esc(x.d || '')}</span></div><div><b>${esc(x.t)}</b>${x.w ? ` <span class="small muted">${esc(x.w)}</span>` : ''}</div><div class="acts"><label class="pick"><input type="checkbox" data-pk="${esc(x.del)}"${nPicked.has(x.del) ? ' checked' : ''}> 고르기<span class="sr">: ${esc(x.t + ' ' + x.kind)}</span></label>${x.play ? `<button class="btn sm" data-lplay="${esc(x.play)}">이어 듣기</button> ` : ''}<a class="btn sm${x.play ? ' ghost' : ''}" href="${esc(x.href)}">${x.go}</a><button data-ldel="${esc(x.del)}" aria-label="${esc(x.t + ' ' + x.kind + ' 기록 지우기')}">기록 지우기</button></div></div>`).join('') : '<p class="muted">아직 듣던 책·법문이 없습니다. ‘▶ 듣기’나 오디오북·법문을 들으면 여기에 이어 들을 곳이 남습니다.</p>';
+  const lsHtml = LS.length ? LS.map(x => `<div class="note-item"><div class="meta"><span>${x.ic} ${esc(x.kind)}</span><span>${esc(x.d || '')}</span></div><div><b>${esc(x.t)}</b>${x.w ? ` <span class="small muted">${esc(x.w)}</span>` : ''}</div><div class="acts"><label class="pick"><input type="checkbox" data-pk="${esc(x.del)}"${nPicked.has(x.del) ? ' checked' : ''}> 고르기<span class="sr">: ${esc(x.t + ' ' + x.kind)}</span></label>${x.play ? `<a class="btn sm" href="${esc(x.href)}" role="button" data-lplay="${esc(x.play)}">이어 듣기</a> ` : ''}<a class="btn sm${x.play ? ' ghost' : ''}" href="${esc(x.href)}">${x.go}</a><button data-ldel="${esc(x.del)}" aria-label="${esc(x.t + ' ' + x.kind + ' 기록 지우기')}">기록 지우기</button></div></div>`).join('') : '<p class="muted">아직 듣던 책·법문이 없습니다. ‘▶ 듣기’나 오디오북·법문을 들으면 여기에 이어 들을 곳이 남습니다.</p>';
   const histHtml = H.length ? `<div class="hist">${H.map((x, k) => `<div class="hist-item"><a class="hist-cover" href="/book/${x.id}/" data-hc="${x.id}" aria-hidden="true" tabindex="-1"></a><div class="hist-body"><a class="hist-t" href="/book/${x.id}/">『${esc(x.t)}』</a><div class="small muted">${esc(x.by)}</div>
       <div class="hist-bar" aria-label="읽은 만큼 ${x.pct}%"><span style="width:${x.pct}%"></span></div>
       <div class="small">${esc(x.ch ? x.ch + ' · ' : '')}${esc(x.pl || x.p)}쪽 · ${x.pct}%</div>
@@ -2118,7 +2118,8 @@ function renderNotes() {
   };
   pkSync();
   // 법문 이어 듣기 — 이 화면 아래 재생기에서 듣던 자리부터, 원래 재생목록의 다음 법문으로 이어짐 (운영자 요청, 2026-11-19)
-  $$('[data-lplay]', root).forEach(b => b.onclick = () => {
+  $$('[data-lplay]', root).forEach(b => b.onclick = ev => {
+    ev.preventDefault();  // 오디오북 '이어 듣기'와 같은 단추 모양(a.btn) — 누르면 재생목록으로 가지 않고 이 화면 재생기에서 바로
     const a = b.dataset.lplay, h = store.get('stalk-hist', []).find(x => x.a === a); if (!h || !$('#pAudio')) return;
     if ((h.pos || 0) > store.get('ppos-' + a, 0)) store.set('ppos-' + a, h.pos);
     const e = { audio: a, title: h.t, plname: h.pl || '', sp: h.p || '' }, key = 'resume:' + a;
