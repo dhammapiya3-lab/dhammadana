@@ -1,0 +1,268 @@
+[
+ {
+  "img": "images/32-Cundas-Great-Gain-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     354,
+     654,
+     428
+    ],
+    "ko": "쭌다의 큰 이익\n공덕과 반열반에 관한 마지막 가르침",
+    "cover": [
+     226,
+     185,
+     133
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Cundas-Great-Gain-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     70,
+     272,
+     182
+    ],
+    "ko": "세존께서\n큰 비구 승가와 함께 까꿋타 강에\n이르셨습니다. 길에 지치신 세존께서는\n맑고 시원한 물에 들어가\n몸을 씻고 물을 드셨습니다.",
+    "cover": [
+     228,
+     188,
+     137
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Cundas-Great-Gain-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     358,
+     594,
+     432
+    ],
+    "ko": "맑은 물에서 나오신 큰 성자께서는\n비구들을 이끌고 망고 숲 그늘로 가셨습니다.\n세상에 견줄 이 없는 스승께서는 몹시 지치셨습니다.",
+    "cover": [
+     222,
+     182,
+     130
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Cundas-Great-Gain-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     90,
+     288,
+     346
+    ],
+    "ko": "세존께서 쭌다까\n장로에게 말씀하셨습니다.\n\n‘오라, 쭌다까여,\n나를 위해 대가사를\n네 겹으로 접어 깔아라.\n나는 피곤하다. 눕고 싶다.’\n\n쭌다까는 얼른\n누우실 자리를 마련했습니다.",
+    "cover": [
+     221,
+     177,
+     130
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Cundas-Great-Gain-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     152,
+     28,
+     664,
+     106
+    ],
+    "ko": "세존께서는 오른쪽으로 누워 한 발을 다른 발에 포개는\n사자의 자세를 취하셨습니다. 몸은 몹시 지치셨지만\n마음챙김과 분명한 앎으로 일어날 생각을 두고 쉬셨습니다.",
+    "cover": [
+     219,
+     178,
+     131
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Cundas-Great-Gain-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     370,
+     660,
+     446
+    ],
+    "ko": "세존께서 앞날의 짐을 내다보시고 아난다에게 말씀하셨습니다.\n“누군가 대장장이 쭌다를 뉘우치게 할 수 있다.\n여래가 그의 공양을 들고 반열반에 들었으니 그 보시는 이익이 적다고.”",
+    "cover": [
+     213,
+     172,
+     127
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Cundas-Great-Gain-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     234,
+     282,
+     750,
+     400
+    ],
+    "ko": "‘아난다여, 쭌다에게 뉘우침이 일면 없애 주어라.\n그것이 가장 큰 이익이라고 일러 주어라.\n나는 세존께 직접 들었다고. 두 가지 공양은\n똑같이 훌륭한 결과를 가져온다고.’",
+    "cover": [
+     231,
+     197,
+     150
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Cundas-Great-Gain-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     54,
+     302,
+     354,
+     368
+    ],
+    "ko": "위없는 완전한 깨달음을\n이루시기 전의 공양.",
+    "cover": [
+     233,
+     201,
+     155
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     462,
+     302,
+     744,
+     368
+    ],
+    "ko": "반열반에 드시기\n전의 공양.",
+    "cover": [
+     234,
+     201,
+     153
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     50,
+     388,
+     750,
+     436
+    ],
+    "ko": "두 공양 모두 다른 어떤 공양보다 훨씬 큰 과보와 결과를 가져옵니다.",
+    "cover": [
+     234,
+     201,
+     154
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Cundas-Great-Gain-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     80,
+     330,
+     396
+    ],
+    "ko": "대장장이 쭌다는\n여섯 가지 훌륭한 과보로\n이어지는 행위를\n쌓았습니다.\n\n1. 장수\n2. 아름다움\n3. 행복\n4. 명성\n5. 천상\n6. 주권",
+    "cover": [
+     228,
+     197,
+     150
+    ],
+    "align": "left",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/32-Cundas-Great-Gain-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     322,
+     698,
+     442
+    ],
+    "ko": "세존께서 감흥어를 읊으셨습니다.\n‘베푸는 이에게 공덕이 늘어나고, 자제하는 이에게 원한이 쌓이지 않는다.\n능숙한 이는 악을 버린다.\n탐욕과 성냄과 어리석음이 다하여 그는 해탈한다.’",
+    "cover": [
+     227,
+     202,
+     167
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
