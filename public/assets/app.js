@@ -2556,7 +2556,7 @@ function sListbox(ul) {
   return { pick, focus: () => pick(sel) };
 }
 const sRow = (href, cols, ic = '📁', kind = '') => `<li class="s-row${kind ? ' k-' + kind : ''}"><a href="${esc(href)}"><span class="s-ic" aria-hidden="true">${ic}</span>${cols.map((c, i) => `${i && c ? '<span class="sr">, </span>' : ''}<span class="s-c s-c${i + 1}">${sDate(c || '')}</span>`).join('')}</a></li>`;
-const sDate = c => /\d{4}-\d{1,2}-\d{1,2}/.test(c) ? `<span aria-hidden="true">${esc(c)}</span><span class="sr">${esc(c.replace(/(\d{4})-(\d{1,2})-(\d{1,2})/g, (m, y, mo, d) => `${y}년 ${+mo}월 ${+d}일`))}</span>` : esc(c);  // 날짜는 '2026년 11월 15일' 로 들려줌
+const sDate = c => /\d{4}-\d{1,2}-\d{1,2}/.test(c) ? `<span aria-hidden="true" class="d-long">${esc(c)}</span><span aria-hidden="true" class="d-short">${esc(c.replace(/^.*?(\d{2})(\d{2})-(\d{1,2})-(\d{1,2}).*$/, (m, a, y, mo, d) => `${y}/${mo.padStart(2, '0')}/${d.padStart(2, '0')}`))}</span><span class="sr">${esc(c.replace(/(\d{4})-(\d{1,2})-(\d{1,2})/g, (m, y, mo, d) => `${y}년 ${+mo}월 ${+d}일`))}</span>` : esc(c);  // 날짜는 '2026년 11월 15일' 로 들려줌
 const sHead = h => `<div class="s-head" aria-hidden="true">${h.map((x, i) => `<span class="s-c s-c${i + 1}">${esc(x)}</span>`).join('')}</div>`;
 const sStat = t => { const s = $('.s-stat span:last-child'); if (s) s.textContent = t; };
 function sFocusFirst() {

@@ -536,7 +536,7 @@ put('index.html', layout({ simple: '/simple/', ld: { '@context': 'https://schema
 
 // 소개
 const about = PAGES.about;
-put('about/index.html', layout({ title: '소개', nav: 'about', page: 'about', body: `<div class="wrap"><article class="prose"><h1>${esc(about.meta.title)}</h1>${about.meta.homage ? `<p class="homage">${esc(about.meta.homage)}</p>` : ''}${about.html}</article></div>` }));
+put('about/index.html', layout({ simple: '/simple/about/', title: '소개', nav: 'about', page: 'about', body: `<div class="wrap"><article class="prose"><h1>${esc(about.meta.title)}</h1>${about.meta.homage ? `<p class="homage">${esc(about.meta.homage)}</p>` : ''}${about.html}</article></div>` }));
 
 // 출판사
 function pressShell(tab, inner) {
@@ -944,7 +944,9 @@ ${status ? `<footer class="s-stat"><span>/${esc(crumbs.slice(1).map(c => c[0]).j
 }
 // 목록 한 줄: cols = 보이는 칸 글(첫 칸이 이름). 칸 사이에 화면에는 안 보이는 쉼표를 넣어 낭독기가 끊어 읽게
 // 날짜는 낭독기가 '2026 11 15' 로 읽지 않게 '2026년 11월 15일' 로 들려줌 (운영자 요청, 2026-11-18 — 화면 글은 그대로)
-const sDateHtml = c => /\d{4}-\d{1,2}-\d{1,2}/.test(c) ? `<span aria-hidden="true">${esc(c)}</span><span class="sr">${esc(sayDate(c))}</span>` : esc(c);
+// 휴대폰에서는 '26/11/17' 처럼 짧게 (운영자 요청, 2026-11-18)
+const shortDate = c => { const m = String(c).match(/(\d{4})-(\d{1,2})-(\d{1,2})/); return m ? `${m[1].slice(2)}/${m[2].padStart(2, '0')}/${m[3].padStart(2, '0')}` : c; };
+const sDateHtml = c => /\d{4}-\d{1,2}-\d{1,2}/.test(c) ? `<span aria-hidden="true" class="d-long">${esc(c)}</span><span aria-hidden="true" class="d-short">${esc(shortDate(c))}</span><span class="sr">${esc(sayDate(c))}</span>` : esc(c);
 const sCols = cols => cols.map((c, i) => `${i && c ? '<span class="sr">, </span>' : ''}<span class="s-c s-c${i + 1}">${sDateHtml(c || '')}</span>`).join('');
 const S_COLS = { 2: 'minmax(0,2fr) minmax(0,3fr)', 3: 'minmax(0,3fr) 110px minmax(0,2fr)' };
 const sList = (label, head, rows, cols = S_COLS[head.length]) => `<div class="s-tbl"${cols ? ` style="--cols:${cols}"` : ''}><div class="s-head" aria-hidden="true">${head.map((h, i) => `<span class="s-c s-c${i + 1}">${esc(h)}</span>`).join('')}</div>
@@ -970,6 +972,9 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
   const audio = lib.filter(b => AUDIO[b.id] && curEd(b).reader);
   const F = (title, href, cnt, ic = '📁', kind = 'folder', type = '폴더') => ({ href, ic, kind, cols: [title, type, cnt] });
   sFolderPage('simple/index.html', { title: '단순 화면 첫 화면', normal: '/', rows: [
+    // 가장 자주 쓰는 '내 서재'·'찾기'를 맨 위에 (운영자 요청, 2026-11-18)
+    F('내 서재 (이어 읽기·책갈피)', '/simple/mine/', '이 기기에 저장된 기록'),
+    F('책 제목으로 찾기', '/simple/find/', '제목·지은이로 찾기', '🔍', 'find', '찾기'),
     F('최근 올라온 책', '/simple/recent/', `${lib.length}권`),
     F('스승별로 보기', '/simple/teachers/', `${tList.length}분`),
     F('수행전통별로 보기', '/simple/trads/', `${trList.length}곳`),
@@ -977,8 +982,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     F('주제별로 보기', '/simple/topics/', `${topList.length}가지`),
     ...(audio.length ? [F('오디오북이 있는 책', '/simple/audio/', `${audio.length}권`)] : []),
     F('소식', '/simple/news/', `글 ${NEWS.length}개`),
-    F('내 서재 (이어 읽기·책갈피)', '/simple/mine/', '이 기기에 저장된 기록'),
-    F('책 제목으로 찾기', '/simple/find/', '제목·지은이로 찾기', '🔍', 'find', '찾기'),
+    F('법보시 도서관 소개', '/simple/about/', '도서관 소개·저작권 일러두기', 'ℹ️', 'about', '안내'),
     F('일반 화면으로', '/?ui=normal', '지금 사이트 화면', '↩', 'normal', '이동'),
   ] });
   sBooksPage('simple/recent/index.html', { title: '최근 올라온 책', path: [['최근 올라온 책', '/simple/recent/']], up: '/simple/', normal: '/library/', books: lib });
@@ -1022,6 +1026,9 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     body: sList(`소식, 글 ${NEWS.length}개`, ['제목', '구분', '날짜'], NEWS.map(n => ({ href: `/simple/news/${n.slug}/`, ic: '📰', kind: 'news', cols: [n.title, nCat(n), n.date || ''] })), 'minmax(0,3fr) 110px 130px') }));
   for (const n of NEWS) put(`simple/news/${n.slug}/index.html`, simpleLayout({ title: n.title, path: [['소식', '/simple/news/'], [n.title, '']], up: '/simple/news/', normal: `/news/${n.slug}/`, page: 'simple-text',
     body: `<p class="s-sub">${esc(nCat(n))} · ${esc(n.date || '')}</p><div class="s-prose prose">${n.html}</div><p><a class="s-link" href="/simple/news/">◀ 소식 목록으로 돌아가기</a></p>` }));
+  // 도서관 소개 (운영자 요청, 2026-11-18)
+  { const ab = PAGES.about; put('simple/about/index.html', simpleLayout({ title: ab.meta.title || '도서관 소개', path: [['도서관 소개', '']], up: '/simple/', normal: '/about/', page: 'simple-text',
+    body: `<div class="s-prose prose">${ab.meta.homage ? `<p class="homage">${esc(ab.meta.homage)}</p>` : ''}${ab.html}</div><p><a class="s-link" href="/simple/">◀ 첫 화면으로 돌아가기</a></p>` })); }
   put('simple/mine/index.html', simpleLayout({ title: '내 서재', path: [['내 서재', '']], up: '/simple/', normal: '/mynotes/', page: 'simple-mine', body: '<div id="sMine"><p>이 기기에 저장된 기록을 불러오는 중입니다…</p></div>' }));
   const findData = JSON.stringify(sByAdded(lib).map(b => [b.id, b.title, sBy(b), b.added || '', sFmt(b), [b.subtitle, b.original_title, ...(b.topics || [])].filter(Boolean).join(' ')])).replace(/</g, '\\u003c');
   put('simple/find/index.html', simpleLayout({ title: '책 제목으로 찾기', path: [['책 제목으로 찾기', '']], up: '/simple/', normal: '/search/', page: 'simple-find',

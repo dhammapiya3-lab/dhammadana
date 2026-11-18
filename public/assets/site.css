@@ -1232,7 +1232,7 @@ body.simple-ui{margin:0;background:#fff;color:#111;font-family:var(--sans);font-
   .s-row .s-c:not(.s-c1){font-size:16px;color:#333}
   .s-row .s-c1{display:inline}
   .s-row .s-c1::after{content:'\A';white-space:pre}
-  .s-row .sr+.s-c:not(.s-c2)::before{content:' · '}
+  .s-row .sr+.s-c:not(.s-c2)::before{content:' · ';content:' · ' / ''}
 }
 /* 밤·고대비 모드에서도 */
 :root.mode-night .simple-ui,:root.mode-contrast .simple-ui{background:#000;color:#fff}
@@ -1244,3 +1244,10 @@ body.simple-ui{margin:0;background:#fff;color:#111;font-family:var(--sans);font-
 .prose img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:6px}
 /* 글 속 링크는 색만이 아니라 밑줄로도 구분 (저시력·색맹, 2026-11-18) */
 .prose p a,.prose li a,.news-meta a{text-decoration:underline;text-underline-offset:2px}
+
+/* 단순 화면 날짜·휴대폰 칸 (운영자 요청, 2026-11-18): 컴퓨터는 '2026-11-17 등록', 휴대폰은 이름·지은이·'26/11/17' 만 보이고 형식은 낭독기만 읽음 */
+.s-row .d-short{display:none}
+@media (max-width:700px){
+  .s-row .d-long{display:none}.s-row .d-short{display:inline}
+  .s-row.k-book .s-c4{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+}
