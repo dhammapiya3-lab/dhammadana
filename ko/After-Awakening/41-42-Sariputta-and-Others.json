@@ -1,0 +1,428 @@
+[
+ {
+  "img": "images/41-42-Sariputta-and-Others-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     304,
+     646,
+     398
+    ],
+    "ko": "불사의 물결\n라자가하에 법이 전해지다",
+    "cover": [
+     196,
+     165,
+     128
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     384,
+     742,
+     444
+    ],
+    "ko": "사리뿟따와 목갈라나는 회의론자 산자야 밑에서 청정한 삶을 살았습니다.\n만족하지 못한 둘은 약속했습니다. 누구든 먼저 불사를 얻는 이가 다른 이에게 알리자.",
+    "cover": [
+     195,
+     162,
+     128
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     18,
+     552,
+     58
+    ],
+    "ko": "마음챙김을 갖춘 모습:",
+    "cover": [
+     215,
+     191,
+     163
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     30,
+     192,
+     210,
+     254
+    ],
+    "ko": "나아가고 물러날 때\n보기 좋고",
+    "cover": [
+     155,
+     125,
+     99
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     590,
+     80,
+     770,
+     142
+    ],
+    "ko": "앞을 보고 둘러볼 때\n보기 좋고",
+    "cover": [
+     230,
+     207,
+     180
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     590,
+     192,
+     770,
+     254
+    ],
+    "ko": "굽히고 펼 때\n보기 좋으며",
+    "cover": [
+     208,
+     181,
+     155
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     314,
+     382,
+     488,
+     444
+    ],
+    "ko": "눈을 아래로\n두었습니다",
+    "cover": [
+     160,
+     130,
+     104
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     10,
+     358,
+     790,
+     448
+    ],
+    "ko": "사리뿟따는 앗사지의 맑은 감관과 밝은 얼굴빛을 보았습니다.\n“누구를 따라 출가하셨습니까? 스승은 누구십니까? 어떤 법을 좋아하십니까?”\n앗사지는 출가한 지 얼마 안 되었다며 그 뜻만 간략히 설명하겠다고 했습니다.",
+    "cover": [
+     190,
+     158,
+     124
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     290,
+     126,
+     512,
+     338
+    ],
+    "ko": "원인에서 생겨나는\n모든 법,\n여래께서는 그 원인을\n말씀하셨네.\n그리고 그것들의 소멸,\n이것이 대사문의\n가르침이라네.",
+    "cover": [
+     210,
+     181,
+     144
+    ],
+    "align": "center",
+    "em": 17,
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     128,
+     366,
+     674,
+     438
+    ],
+    "ko": "이 짧은 가르침을 듣자 사리뿟따에게\n티끌 없고 때 없는 법의 눈이 생겼습니다.\n“일어나는 성질을 지닌 것은 무엇이든 모두 사라지는 성질을 지녔다.”",
+    "cover": [
+     189,
+     161,
+     133
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     184,
+     272,
+     620,
+     430
+    ],
+    "ko": "목갈라나가 멀리서 사리뿟따를 보았습니다.\n“벗이여, 그대의 감관이 참으로 맑고\n얼굴빛이 깨끗하고 밝구려.\n불사를 얻었소?”\n“그렇다오, 벗이여. 나는 불사를 얻었소.”",
+    "cover": [
+     176,
+     144,
+     117
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     10,
+     282,
+     40
+    ],
+    "ko": "옛 길",
+    "cover": [
+     199,
+     164,
+     128
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     518,
+     10,
+     688,
+     40
+    ],
+    "ko": "새 길",
+    "cover": [
+     228,
+     194,
+     155
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     70,
+     364,
+     322,
+     432
+    ],
+    "ko": "산자야: 극단적인 회의론.\n집착과 혼란과\n몸의 병으로 이끎.",
+    "cover": [
+     191,
+     157,
+     120
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     478,
+     364,
+     738,
+     432
+    ],
+    "ko": "부처님: 대사문.\n원인과 소멸을 가르침.\n맑음과 슬픔 없는 경지로 이끎.",
+    "cover": [
+     208,
+     169,
+     130
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     144,
+     18,
+     662,
+     110
+    ],
+    "ko": "“두 분께서 대사문 아래서 청정한 삶을 사신다면\n우리도 모두 대사문 아래서 청정한 삶을 살겠습니다.”\n유행자 250명이 함께 떠났습니다.",
+    "cover": [
+     222,
+     186,
+     149
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     370,
+     10,
+     500,
+     422
+    ],
+    "ko": "부처님께서\n멀리서\n그들을 보시고\n선언하셨습니다.\n\n“저기 오는\n두 벗,\n꼴리따와\n우빠띳사는\n나의 상수\n제자가 될\n것이다.\n훌륭한\n한 쌍이다.”",
+    "cover": [
+     212,
+     179,
+     139
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     288,
+     138,
+     502,
+     394
+    ],
+    "ko": "갑작스러운 대규모\n출가에 라자가하가\n떠들썩해졌습니다.\n사람들이 투덜거렸습니다.\n\n“사문 고따마의 방식은\n가문을 깨뜨린다.\n집집마다 자식을 잃고\n깨지고 잃는다.\n이제 또 누구를\n데려가려는가?”",
+    "cover": [
+     174,
+     167,
+     152
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     474,
+     34,
+     756,
+     152
+    ],
+    "ko": "“비구들이여, 이 소란은\n오래가지 않는다. 이레만 갈 것이다.\n이 게송으로 그들을 꾸짖어라.\n‘여래들은 바른 법으로 이끈다.\n어찌 지혜로운 이를 시기하는가?’”",
+    "cover": [
+     227,
+     207,
+     182
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-42-Sariputta-and-Others-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     18,
+     364,
+     782,
+     446
+    ],
+    "ko": "진리는 소란보다 오래갑니다. 일어나는 모든 것처럼 사람들의 소란도 그쳤습니다.\n이레 만에 소란은 사라지고, 마가다 사람들은 사꺄의 아들이\n오직 바른 법으로 이끈다는 것을 알았습니다.",
+    "cover": [
+     177,
+     144,
+     111
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
