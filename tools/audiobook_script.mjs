@@ -27,6 +27,16 @@ const t = JSON.parse(fs.readFileSync(path.join(root, 'content/texts', ID + '.jso
 // 오디오북에서만 바꿔 읽을 곳(책 본문은 그대로): 텍스트 JSON 의 audio_fix [[찾을 글, 바꿀 글], …] — 영어 이름을 한글 소리로, 읽을 수 없는 일본어 제목 빼기 등 (운영자와 상의해 정함)
 const origParts = t.body.split(/^=== (.+?) ===$/m);  // 고치기(audio_fix) 전 글 — 읽기 화면 문단 번호를 알아내는 데 씀
 for (const [a, b] of (t.audio_fix || [])) t.body = t.body.split(a).join(b);
+// 오디오북에서만 통째로 뺄 곳: 텍스트 JSON 의 audio_cut [[시작 글, 끝 글], …] — 시작 글부터 끝 글 앞까지 빼되 쪽 표시(=== N쪽 ===)는 남김
+//   예: DL-0018 '빠알리어의 발음과 표기'의 부호 설명(소리로는 뜻이 통하지 않음 — 운영자 결정, 2026-11-18)
+for (const [a, b] of (t.audio_cut || [])) {
+  const i = t.body.indexOf(a), j = i < 0 ? -1 : t.body.indexOf(b, i + a.length);
+  if (i < 0 || j < 0) { console.error('audio_cut 를 찾지 못함: ' + a.slice(0, 30)); process.exit(1); }
+  t.body = t.body.slice(0, i) + (t.body.slice(i, j).match(/^=== .+? ===$/gm) || []).map(x => x + '\n').join('') + t.body.slice(j);
+}
+// 빠알리어 한글 표기의 발음 부호(〬 〭 ᷇ ̫ ͌ ″ ᷾ ᷃ ˑ ˔ ˕, 혼자 쓰인 부호 글자)는 소리가 없으므로 원고에서 뺌 — 글꼴 사전(ph)이 있는 책만 (DL-0018, 2026-11-18)
+//   빼야 '붓당〬Buddhaṁ' 처럼 한글 뒤에 붙은 로마자 풀이도 다른 책과 같이 빠짐
+if (t.ph) t.body = t.body.replace(/[\u302c\u302d\u1dc7\u032b\u034c\u2033\u1dfe\u1dc3\u02d1\u02d4\u02d5\ue900-\ue907]|\u{f0801}/gu, '');
 const parts = t.body.split(/^=== (.+?) ===$/m); // [앞, 이름1, 글1, 이름2, 글2 …]
 const pages = []; for (let i = 1; i < parts.length; i += 2) pages.push({ label: parts[i], text: parts[i + 1] || '' });
 const top = (t.toc || []).filter(x => !x.sub && !/^\s/.test(x.title)).sort((x, y) => x.page - y.page);
@@ -132,7 +142,12 @@ top.forEach((c, k) => {
       // 한글 뒤에 붙은 한자는 풀이(성문聲聞)라 빼고, 따로 쓰인 한자(《中部》 〈四十大經〉 彌山學人)는 한글 소리로 읽음 (운영자 요청, 2026-11-10)
       // 한글 낱말 바로 뒤 괄호 첫머리의 한자도 풀이 — '색(色, 색깔과 형태)' → '색(색깔과 형태)', '(六境, 여섯 가지 감각대상)'
       pre = pre.replace(/([가-힣)]\s?[(（])\s*[\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF][\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF\s]*(?:[,，·]\s*|(?=[)）]))/g, '$1').replace(/[(（]\s*[)）]/g, '');
-      pre = pre.replace(HAN_RUN, w => { const k = w.replace(/\s+/g, ''); HAN.add(k); return HSAY[k] != null ? HSAY[k] : w; });
+      // '세 가지ti 三 귀의처'·'법무애해dhamma paṭisambhidā 法無碍解는' 처럼 한글 + 로마자 풀이 + 빈칸 + 한자도 모두 풀이 — 한자를 빈칸째 뺌 (DL-0018, 2026-11-18)
+      pre = pre.replace(/([가-힣][A-Za-zÀ-ÖØ-öø-žḀ-ỿ]+(?:[ -][A-Za-zÀ-ÖØ-öø-žḀ-ỿ]+)*) [\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]+/g, '$1');
+      pre = pre.replace(HAN_RUN, (w, ...a) => { const k = w.replace(/\s+/g, ''), at = a.find(x => typeof x === 'number');
+        // 바로 앞 한글 낱말과 소리가 같은 한자는 풀이라 뺌: '(살 殺)'·'무채 無債'·'물거르개수낭 水囊' (DL-0018, 2026-11-18)
+        if (HSAY[k] && new RegExp((HSAY[k].length < 2 ? '(?:^|[^가-힣])' : '') + HSAY[k] + '[\\s(]*$').test(pre.slice(Math.max(0, at - HSAY[k].length - 4), at))) return '';  // 한 글자는 낱말 전체가 같을 때만 ('무상하고 苦이며' 의 苦는 읽음)
+        HAN.add(k); return HSAY[k] != null ? HSAY[k] : w; });
       // 책에 잘못 인쇄된 빨리어 철자는 읽을 때만 바른 철자로 (책 본문은 그대로) — 운영자 확인, 2026-11-09
       for (const [bad, good] of SPELL) pre = pre.split(bad).join(good);
       pre = pre.split('\n').filter(l => !(/속표지|판권지/.test(c.title) && !/[가-힣āīūṃṅñṭḍṇḷ]/.test(l))).map(stripGloss).filter(x => x).join('\n');  // 속표지·판권지의 영어 줄은 한글과 같은 내용이라 뺌
@@ -144,8 +159,8 @@ top.forEach((c, k) => {
       pre = pre.replace(/[ \t]*…+[ \t]*(\d+(?:[ \t]*,[ \t]*\d+)*)[ \t]*$/gm, ' $1 쪽.');
       // 줄 첫머리의 게송 번호 '(1149) 확고부동하고…'는 번호 뒤에 마침표가 있는 것처럼 잠시 쉬고 읽음: '1149. 확고부동하고' (운영자 요청, 2026-11-10)
       pre = pre.replace(/^\((\d+)\)[ \t]*/gm, '$1. ');
-      // 꾸밈 기호(⊙ ☞ • ■ § ❦)는 소리 내지 않음 (❦ 는 잠언 사이 구분 — DL-0005, 2026-11-18) — 음성 엔진이 어차피 건너뛰지만 원고에서도 빼 둠
-      pre = pre.replace(/[⊙☞•■§❦]\s*/g, '');  // 판권지는 책 이름·판·사람·펴낸 곳만
+      // 꾸밈 기호(⊙ ☞ • ■ § ❦ ●)는 소리 내지 않음 (❦ 는 잠언 사이 구분 — DL-0005, 2026-11-18) — 음성 엔진이 어차피 건너뛰지만 원고에서도 빼 둠
+      pre = pre.replace(/[⊙☞•■§❦●]\s*/g, '');  // 판권지는 책 이름·판·사람·펴낸 곳만
       if (!pre.trim()) return;
       const said = lib.sayable(pre, OPT);
       (pre.match(LAT) || []).forEach(w => { const s = lib.PALI(w.replace(/[’'-]/g, '')); if (s && lib.langOf(w) !== 'E') changes.set(w, s); });

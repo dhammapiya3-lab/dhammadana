@@ -576,5 +576,437 @@
     "˔": "",
     "˕": "",
     "᷇": ""
-  }
+  },
+  "audio_fix": [
+    [
+      "\n:: Namo tassa bhagavato arahato sammāsambuddhassa.\nNamo tassa bhagavato arahato sammāsambuddhassa.\nNamo tassa bhagavato arahato sammāsambuddhassa.\n",
+      "\n"
+    ],
+    [
+      "\nBuddhaṁ saraṇaṁ gacchāmi.\n",
+      "\n"
+    ],
+    [
+      "\nDhammaṁ saraṇaṁ gacchāmi.\n",
+      "\n"
+    ],
+    [
+      "\nSaṅghaṁ saraṇaṁ gacchāmi.\n",
+      "\n"
+    ],
+    [
+      "\nDutiyampi buddhaṁ saraṇaṁ gacchāmi.\n",
+      "\n"
+    ],
+    [
+      "\nDutiyampi dhammaṁ saraṇaṁ gacchāmi.\n",
+      "\n"
+    ],
+    [
+      "\nDutiyampi saṅghaṁ saraṇaṁ gacchāmi.\n",
+      "\n"
+    ],
+    [
+      "\nTatiyampi buddhaṁ saraṇaṁ gacchāmi.\n",
+      "\n"
+    ],
+    [
+      "\nTatiyampi dhammaṁ saraṇaṁ gacchāmi.\n",
+      "\n"
+    ],
+    [
+      "\nTatiyampi saṅghaṁ saraṇaṁ gacchāmi.\n",
+      "\n"
+    ],
+    [
+      "\nItipi so bhagavā arahaṁ sammāsambuddho vijjācaraṇasampanno sugato lokavidū anuttaro purisadammasārathi satthā devamanussānaṁ buddho bhagavā.\n",
+      "\n"
+    ],
+    [
+      "\nSvākkhāto bhagavatā dhammo sandiṭṭhiko akāliko ehipassiko opaneyyiko paccattaṁ veditabbo viññūhi.\n",
+      "\n"
+    ],
+    [
+      "\nSuppaṭipanno bhagavato sāvakasaṅgho, ujuppaṭipanno bhagavato sāvakasaṅgho, ñāyappaṭipanno bhagavato sāvakasaṅgho, sāmīcippaṭipanno bhagavato sāvakasaṅgho, yadidaṁ cattāri purisayugāni aṭṭha purisapuggalā esa bhagavato sāvakasaṅgho, āhuneyyo pāhuneyyo dakkhiṇeyyo añjalikaraṇīyo anuttaraṃ puññakkhettaṃ lokassa.\n",
+      "\n"
+    ],
+    [
+      "\nPāṇātipātā veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nAdinnādānā veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nKāmesu micchācārā veramaṇī sikkhāpadaṁsamādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nMusāvādā veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nSurāmerayamajjapamādaṭṭhānā veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nAhaṁ bhante saṁsāra vaṭṭadukkhato mocanatthāya nibbānassa\n",
+      "\n"
+    ],
+    [
+      "\nsacchikaraṇatthāya ca tisaraṇena saha pañcasīlaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nKāmesu micchācārā veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nPisuṇāvācāya veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nPharusavācāya veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nSamphappalāpā veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nMicchājīvā veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nPāṇātipātā veramami.\n",
+      "\n"
+    ],
+    [
+      "\nAdinnādānā veramami.\n",
+      "\n"
+    ],
+    [
+      "\nKāmesu micchācārā veramami.\n",
+      "\n"
+    ],
+    [
+      "\nMusāvādā veramami.\n",
+      "\n"
+    ],
+    [
+      "\nPisuṇāvācāya veramami.\n",
+      "\n"
+    ],
+    [
+      "\nPharusavācāya veramami.\n",
+      "\n"
+    ],
+    [
+      "\nSamphappalāpā veramami.\n",
+      "\n"
+    ],
+    [
+      "\nMicchājīvā veramami.\n",
+      "\n"
+    ],
+    [
+      "\nAbrahmacariyā veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nSurāmerayamajjapamādaṭṭhānā veramaṇī sikkhāpadaṁ\n",
+      "\n"
+    ],
+    [
+      "\n++ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nVikālabhojanā veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nNaccagītavāditavisukadassana mālāgandhavilepanadhāraṇa-\n",
+      "\n"
+    ],
+    [
+      "\nmaṇḍanavibhūsanaṭṭhānā veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nUccāsayanamahāsayanā veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nNaccagītavāditavisukadassana veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nMālāgandhavilepanadhāraṇamaṇḍanavibhūsanaṭṭhānā\n",
+      "\n"
+    ],
+    [
+      "\nveramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nJātarūparajatapaṭiggahaṇā veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nAbhijjhā veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nByāpādā veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nMicchādiṭṭhiyā veramaṇī sikkhāpadaṁ samādiyāmi.\n",
+      "\n"
+    ],
+    [
+      "\nAbhijjhaṁ pahāya vigatābhijjhena cetasā viharāmi.\n",
+      "\n"
+    ],
+    [
+      "\nByāpādaṁ pahāya vigatabyāpādena cetasā viharāmi.\n",
+      "\n"
+    ],
+    [
+      "\nMicchādiṭṭhiṁ pahāya vigatamicchādiṭṭhikena cetasā viharāmi.\n",
+      "\n"
+    ],
+    [
+      "\nSabbadānaṁ dhammadānaṁ jināti.\n",
+      "\n"
+    ],
+    [
+      "\nIdaṁ no puññaṁ nibbānassa paccayo hotu.\n",
+      "\n"
+    ],
+    [
+      "\nImaṁ no puññabhāgaṁ sabbasattānaṁ bhājema.\n",
+      "\n"
+    ],
+    [
+      "\nSādhu, Sādhu, Sādhu.\n",
+      "\n"
+    ],
+    [
+      "\n붓당〬Buddhaṁ거룩한 부처님을 사라낭〭saraṇaṁ진정한 의지처라고 갓차미gacchāmi믿고 새겨 가까이하며 귀의합니다.\n",
+      "\n붓당〬, 거룩한 부처님을 사라낭〭, 진정한 의지처라고 갓차미, 믿고 새겨 가까이하며 귀의합니다.\n"
+    ],
+    [
+      "\n담〬망Dhammaṁ거룩한 가르침을 사라낭〭saraṇaṁ진정한 의지처라고 갓차미gacchāmi믿고 새겨 가까이하며 귀의합니다.\n",
+      "\n담〬망, 거룩한 가르침을 사라낭〭, 진정한 의지처라고 갓차미, 믿고 새겨 가까이하며 귀의합니다.\n"
+    ],
+    [
+      "\n상ˑ강〬Saṅghaṁ거룩한 승가를 사라낭〭saraṇaṁ진정한 의지처라고 갓차᷇미gacchāmi믿고 새겨 가까이하며 귀의합니다.\n",
+      "\n상ˑ강〬, 거룩한 승가를 사라낭〭, 진정한 의지처라고 갓차᷇미, 믿고 새겨 가까이하며 귀의합니다.\n"
+    ],
+    [
+      "\n두띠얌삐Dutiyampi두 번째도 붓당〬buddhaṁ거룩한 부처님을 사라낭saraṇaṁ진정한 의지처라고 갓차᷇미gacchāmi믿고 새겨 가까이하며 귀의합\n",
+      "\n두띠얌삐, 두 번째도 붓당〬, 거룩한 부처님을 사라낭, 진정한 의지처라고 갓차᷇미, 믿고 새겨 가까이하며 귀의합\n"
+    ],
+    [
+      "\n두띠얌삐Dutiyampi두 번째도 담〬망dhammaṁ거룩한 가르침을 사라낭saraṇaṁ진정한 의지처라고 갓차᷇미gacchāmi믿고 새겨 가까이하며 귀의합니다.\n",
+      "\n두띠얌삐, 두 번째도 담〬망, 거룩한 가르침을 사라낭, 진정한 의지처라고 갓차᷇미, 믿고 새겨 가까이하며 귀의합니다.\n"
+    ],
+    [
+      "\n두띠얌삐Dutiyampi두 번째도 상ˑ강〬saṅghaṁ거룩한 승가를 사라낭saraṇaṁ진정한 의지처라고 갓차᷇미gacchāmi믿고 새겨 가까이하며 귀의합니다.\n",
+      "\n두띠얌삐, 두 번째도 상ˑ강〬, 거룩한 승가를 사라낭, 진정한 의지처라고 갓차᷇미, 믿고 새겨 가까이하며 귀의합니다.\n"
+    ],
+    [
+      "\n따띠얌삐Tatiyampi세 번째도 붓당〬buddhaṁ거룩한 부처님을 사라낭saraṇaṁ진정한 의지처라고 갓차᷇미gacchāmi믿고 새겨 가까이하며 귀의합니다.\n",
+      "\n따띠얌삐, 세 번째도 붓당〬, 거룩한 부처님을 사라낭, 진정한 의지처라고 갓차᷇미, 믿고 새겨 가까이하며 귀의합니다.\n"
+    ],
+    [
+      "\n따띠얌삐Tatiyampi세 번째도 담〬망dhammaṁ거룩한 가르침을 사라낭saraṇaṁ진정한 의지처라고 갓차᷇미gacchāmi믿고 새겨 가까이하며 귀의합니다.\n",
+      "\n따띠얌삐, 세 번째도 담〬망, 거룩한 가르침을 사라낭, 진정한 의지처라고 갓차᷇미, 믿고 새겨 가까이하며 귀의합니다.\n"
+    ],
+    [
+      "\n따띠얌삐Tatiyampi세 번째도 상ˑ강〬saṅghaṁ거룩한 승가를 사라낭〭saraṇaṁ진정한 의지처라고 갓차᷇미gacchāmi믿고 새겨 가까이하며 귀의합니다.\n",
+      "\n따띠얌삐, 세 번째도 상ˑ강〬, 거룩한 승가를 사라낭〭, 진정한 의지처라고 갓차᷇미, 믿고 새겨 가까이하며 귀의합니다.\n"
+    ],
+    [
+      "\n소 바〬가와᷇So bhagavā그 거룩하신 세존께서는 이띠삐itipi또한 이와 같이 ① 아라항arahaṁ나쁜 습관과 함께 모든 번뇌로부터 떠나셔서 사람과 천신, 범천들의 특별한 공양을 받을 만한 응공應供이시며, ② 삼마᷇삼붓도〬sammāsambuddho알아야 할 모든 법을 스스로 바르게 깨달은 정등각자正等覺者이시며, ③ 윗자᷇짜라나〭삼빤노vijjācaraṇasampanno지혜와 실천을 모두 구족한 명행족明行足이시며, ④ 수가또sugato바르고 훌륭한 말씀만을 설하는 선서善逝이시며; 피안의 열반으로 잘 가신 선서善逝이시며, ⑤ 로͌까위두᷇lokavidū모든 세상을 잘 아는 세간해世間解이시며, ⑥ 아눗따로 뿌리사담마사᷇라티anuttaro purisadammasārathi\n",
+      "\n소 바〬가와᷇, 그 거룩하신 세존께서는 이띠삐, 또한 이와 같이 ① 아라항, 나쁜 습관과 함께 모든 번뇌로부터 떠나셔서 사람과 천신, 범천들의 특별한 공양을 받을 만한 응공應供이시며, ② 삼마᷇삼붓도〬, 알아야 할 모든 법을 스스로 바르게 깨달은 정등각자正等覺者이시며, ③ 윗자᷇짜라나〭삼빤노, 지혜와 실천을 모두 구족한 명행족明行足이시며, ④ 수가또, 바르고 훌륭한 말씀만을 설하는 선서善逝이시며; 피안의 열반으로 잘 가신 선서善逝이시며, ⑤ 로͌까위두᷇, 모든 세상을 잘 아는 세간해世間解이시며, ⑥ 아눗따로 뿌리사담마사᷇라티anuttaro purisadammasārathi\n"
+    ],
+    [
+      "\n제도할 만한 이들을 제도하는 데 가장 으뜸인 무상사 조어장부無上師 調御丈夫이시며, ⑦ 삿타᷇ 데와마눗사᷇낭satthā devamanussānaṁ천신과 인간의 진정한 스승인 천인사天人師이시며, ⑧ 붓도〬buddho사성제의 바른 법을 깨달은 부처님佛이시며, ⑨ 바〬가와᷇bhagavā여러 가지 공덕을 모두 구족한 세존世尊이십니다.”\n",
+      "\n제도할 만한 이들을 제도하는 데 가장 으뜸인 무상사 조어장부無上師 調御丈夫이시며, ⑦ 삿타᷇ 데와마눗사᷇낭, 천신과 인간의 진정한 스승인 천인사天人師이시며, ⑧ 붓도〬, 사성제의 바른 법을 깨달은 부처님佛이시며, ⑨ 바〬가와᷇, 여러 가지 공덕을 모두 구족한 세존世尊이십니다.”\n"
+    ],
+    [
+      "\n소 바〬가와᷇So bhagavā그 거룩하신 세존께서는\n",
+      "\n소 바〬가와᷇, 그 거룩하신 세존께서는\n"
+    ],
+    [
+      "\n이띠삐 아라항itipi arahaṁ나쁜 습관과 함께 모든 번뇌로부터 멀리 떠나 사람과 천신, 범천들의 특별한 공양을 받을 만한 아라한이십니다.\n",
+      "\n이띠삐 아라항, 나쁜 습관과 함께 모든 번뇌로부터 멀리 떠나 사람과 천신, 범천들의 특별한 공양을 받을 만한 아라한이십니다.\n"
+    ],
+    [
+      "\n바〬가와따᷇ 담〬모Bhagavatā dhammo그 부처님께서 설하신 가르침은 ① 스왁᷇카᷇또svākkhāto잘 설해진 가르침이며, ② 산딧〭티꼬sandiṭṭhiko스스로 보아 알 수 있는 가르침이며, ③ 아깔᷇리꼬\n",
+      "\n바〬가와따᷇ 담〬모, 그 부처님께서 설하신 가르침은 ① 스왁᷇카᷇또, 잘 설해진 가르침이며, ② 산딧〭티꼬, 스스로 보아 알 수 있는 가르침이며, ③ 아깔᷇리꼬\n"
+    ],
+    [
+      "\nakāliko즉시 결과를 주는 가르침이며, ④ 에히빳시꼬ehipassiko와서 보라고 권유할 만한 가르침이며, ⑤ 오빠네이᷾″꼬opaneyyiko자기 안에 머물도록 인도할 만한 가르침이며, ⑥ 빳짯땅 웨디땁보 윈̫뉴̫᷇히paccattaṁ veditabbo viññūhi현자들이라면 각자 알 수 있는 가르침입니다.\n",
+      "\n즉시 결과를 주는 가르침이며, ④ 에히빳시꼬, 와서 보라고 권유할 만한 가르침이며, ⑤ 오빠네이᷾″꼬, 자기 안에 머물도록 인도할 만한 가르침이며, ⑥ 빳짯땅 웨디땁보 윈̫뉴̫᷇히, 현자들이라면 각자 알 수 있는 가르침입니다.\n"
+    ],
+    [
+      "\n바〬가와또 사᷇와까상ˑ고〬Bhagavato sāvakasaṅgho부처님의 제자들인 승가는 ① 숩빠띠〭빤노suppaṭipanno번뇌를 제거하도록 잘 수행하는 승가이며,[^48] ② 우줍빠띠〭빤노ujuppaṭipanno거짓이나 왜곡 없이 바르고 곧게 수행하는 승가이며, ③ 냐̫᷇얍빠띠〭빤노ñāyappaṭipanno열반만을 향해 참되게 수행하는 승가이며, ④ 사미᷇찝빠띠〭빤노sāmīcippaṭipanno 존경받기에 합당하게 수행하는 승가입니다. 야디당 짯따᷇리 뿌리사유가᷇니 앗〭타〭뿌리사뿍갈라᷇yadidaṁ cattāri purisayugāni aṭṭha purisapuggalā네 쌍의 여덟 분\n",
+      "\n바〬가와또 사᷇와까상ˑ고〬, 부처님의 제자들인 승가는 ① 숩빠띠〭빤노, 번뇌를 제거하도록 잘 수행하는 승가이며,[^48] ② 우줍빠띠〭빤노, 거짓이나 왜곡 없이 바르고 곧게 수행하는 승가이며, ③ 냐̫᷇얍빠띠〭빤노, 열반만을 향해 참되게 수행하는 승가이며, ④ 사미᷇찝빠띠〭빤노, 존경받기에 합당하게 수행하는 승가입니다. 야디당 짯따᷇리 뿌리사유가᷇니 앗〭타〭뿌리사뿍갈라᷇, 네 쌍의 여덟 분\n"
+    ],
+    [
+      "\n이 계신 에사 바〬가와또 사᷇와까상ˑ고〬esa bhagavato sāvakasaṅgho그 부처님의 제자들인 승가는 ⑤ 아᷇후네요″āhuneyyo멀리서 가져온 공양물을 보시받기에 합당한 승가이며,[^49] ⑥ 빠᷇후네요″pāhuneyyo손님들을 위한 공양물을 보시받기에 합당한 승가이며, ⑦ 닥키네요″dakkhiṇeyyo내생을 위해 베푸는 공양물을 보시받기에 합당한 승가이며, ⑧ 안̫잘리까라니〭᷇요″añjalikaraṇīyo합장하여 올리는 예경을 받기에 합당한 승가이며, ⑨ 아눗따랑 뿐̫냑̫켓땅 로͌깟사anuttaraṃ puññakkhettaṃ lokassa세상의 위없는 복밭인 승가입니다.\n",
+      "\n이 계신 에사 바〬가와또 사᷇와까상ˑ고〬, 그 부처님의 제자들인 승가는 ⑤ 아᷇후네요″, 멀리서 가져온 공양물을 보시받기에 합당한 승가이며,[^49] ⑥ 빠᷇후네요″, 손님들을 위한 공양물을 보시받기에 합당한 승가이며, ⑦ 닥키네요″, 내생을 위해 베푸는 공양물을 보시받기에 합당한 승가이며, ⑧ 안̫잘리까라니〭᷇요″, 합장하여 올리는 예경을 받기에 합당한 승가이며, ⑨ 아눗따랑 뿐̫냑̫켓땅 로͌깟사, 세상의 위없는 복밭인 승가입니다.\n"
+    ],
+    [
+      "\n소 바〬가와᷇᷇So bhagavā그 거룩하신 세존께서는\n",
+      "\n소 바〬가와᷇᷇, 그 거룩하신 세존께서는\n"
+    ],
+    [
+      "\n이띠삐 삼마᷇삼붓도〬itipi sammāsambuddho사성제와 알아야 할\n",
+      "\n이띠삐 삼마᷇삼붓도〬, 사성제와 알아야 할\n"
+    ],
+    [
+      "\n이띠삐 윗자᷇짜라나〭삼빤노itipi vijjācaraṇasampanno지혜와 실천을 모두 구족한 명행족이십니다.\n",
+      "\n이띠삐 윗자᷇짜라나〭삼빤노, 지혜와 실천을 모두 구족한 명행족이십니다.\n"
+    ],
+    [
+      "\n이띠삐 수가또itipi sugato바르고 훌륭한 말씀만을 설하는 분,\n",
+      "\n이띠삐 수가또, 바르고 훌륭한 말씀만을 설하는 분,\n"
+    ],
+    [
+      "\n이띠삐 로͌까위두᷇᷇itipi lokavidū모든 세상을 잘 아는 세간해이십\n",
+      "\n이띠삐 로͌까위두᷇᷇, 모든 세상을 잘 아는 세간해이십\n"
+    ],
+    [
+      "\n이띠삐 아눗따로 뿌리사담마사᷇라티itipi anuttaro purisadammasārathi제도할 만한 이들을 제도하는 데 가장 으뜸인 무상사 조어장부이십니다.\n",
+      "\n이띠삐 아눗따로 뿌리사담마사᷇라티, 제도할 만한 이들을 제도하는 데 가장 으뜸인 무상사 조어장부이십니다.\n"
+    ],
+    [
+      "\n이띠삐 삿타᷇ 데와마눗사᷇낭itipi satthā devamanussānaṁ천신과 인간의 진정한 스승인 천인사이십니다.\n",
+      "\n이띠삐 삿타᷇ 데와마눗사᷇낭, 천신과 인간의 진정한 스승인 천인사이십니다.\n"
+    ],
+    [
+      "\n이띠삐 붓도〬itipi buddho사성제의 바른 법을 스스로 깨닫고 다\n",
+      "\n이띠삐 붓도〬, 사성제의 바른 법을 스스로 깨닫고 다\n"
+    ],
+    [
+      "\n이띠삐 바〬가와᷇itipi bhagavā여러 가지 공덕을 모두 구족한 세존\n",
+      "\n이띠삐 바〬가와᷇, 여러 가지 공덕을 모두 구족한 세존\n"
+    ],
+    [
+      "## 계의 의미\n\n## 계의 의미\n",
+      "## 계의 의미\n"
+    ],
+    [
+      "02)333-1736",
+      "공이, 삼삼삼, 일칠삼육"
+    ],
+    [
+      "691-82-00082",
+      "육구일, 팔이, 공공공팔이"
+    ],
+    [
+      "031)474-2841",
+      "공삼일, 사칠사, 이팔사일"
+    ],
+    [
+      "홈페이지 | http://koreamahasi.org",
+      "홈 페이지 | 코리아마하시 닷 오알지"
+    ],
+    [
+      "nibbaana@hanmail.net",
+      "닙바나 골뱅이 한메일 닷 넷"
+    ],
+    [
+      "값 27,000원",
+      "값, 이만칠천 원"
+    ],
+    [
+      "농협 355-0041-5473-53",
+      "농협, 삼오오, 공공사일, 오사칠삼, 오삼,"
+    ],
+    [
+      " Idaṁ me dānaṁ āsavakkhayāvahaṁ hotu, idaṁ me dānaṁ nibbānassa paccayo hotu’",
+      "’"
+    ],
+    [
+      "한다punāti, visodheti고",
+      "한다고"
+    ],
+    [
+      "(살 殺)",
+      ""
+    ],
+    [
+      "(도 盜)",
+      ""
+    ],
+    [
+      "(주 主)",
+      ""
+    ],
+    [
+      "(모 母)",
+      ""
+    ],
+    [
+      "(매 妹)",
+      ""
+    ],
+    [
+      "(우 友)",
+      ""
+    ],
+    [
+      "(비 婢)",
+      ""
+    ],
+    [
+      "10¹⁴⁰",
+      "십의 백사십 제곱"
+    ],
+    [
+      "pattiyā→patta",
+      ""
+    ],
+    [
+      "선업수련sikkhā + 머무는 곳pada = ",
+      "선업수련, 더하기, 머무는 곳, 즉, "
+    ],
+    [
+      "인upa=",
+      "인upa"
+    ],
+    [
+      "무sippali=",
+      "무sippali"
+    ],
+    [
+      "한su=",
+      "한su"
+    ],
+    [
+      "게su=",
+      "게su"
+    ],
+    [
+      "에gata=",
+      "에gata"
+    ],
+    [
+      "1완척",
+      "한 완척"
+    ]
+  ],
+  "audio_cut": [
+    [
+      "## 일반적인 표기\n",
+      "=== 442쪽 ==="
+    ]
+  ]
 }
