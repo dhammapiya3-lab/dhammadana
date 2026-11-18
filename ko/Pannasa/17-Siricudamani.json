@@ -1,0 +1,561 @@
+[
+ {
+  "img": "images/17-Siricudamani-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     238,
+     304,
+     562,
+     352
+    ],
+    "ko": "시리쭈다마니 자따까",
+    "cover": [
+     214,
+     178,
+     121
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     238,
+     352,
+     562,
+     374
+    ],
+    "ko": "란나 벽화로 보는 보시 바라밀",
+    "cover": [
+     217,
+     182,
+     125
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     238,
+     376,
+     562,
+     416
+    ],
+    "ko": "궁극의 몸 보시가 울린 우주의 메아리를\n그림으로 옮겼습니다.",
+    "cover": [
+     215,
+     179,
+     124
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Siricudamani-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     60,
+     404,
+     192
+    ],
+    "ko": "제따와나에서 비구들이 부처님의 더없는 너그러움을 찬탄했습니다. 부처님께서 답하셨습니다. “여래가 보시하는 것은 이번만이 아니다. 옛날에도 내 목숨을 돌보지 않고 몸의 반쪽을 바라문에게 주었다.”",
+    "cover": [
+     212,
+     180,
+     118
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Siricudamani-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     452,
+     62,
+     718,
+     168
+    ],
+    "ko": "시리쭈다마니 왕은 바라나시를 공평하게 다스렸습니다. 날마다 큰 보시당 여섯 곳에서 재물 육십만을 나누어, 제철에 쏟아지는 먹구름처럼 보시의 큰 비를 내렸습니다.",
+    "cover": [
+     212,
+     180,
+     125
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Siricudamani-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     266,
+     14,
+     540,
+     64
+    ],
+    "ko": "보시의 짜임",
+    "cover": [
+     226,
+     189,
+     112
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     146,
+     314,
+     366,
+     360
+    ],
+    "ko": "밖의 보시(bāhiraka)\n재물, 곡식, 옷",
+    "cover": [
+     224,
+     196,
+     150
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     506,
+     314,
+     696,
+     360
+    ],
+    "ko": "안의 보시(ajjhattika)\n눈, 심장, 살",
+    "cover": [
+     225,
+     197,
+     150
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     82,
+     372,
+     718,
+     430
+    ],
+    "ko": "왕은 세간의 보시로는 만족할 수 없음을 깨달았습니다. 일체지를 얻고 세상을 윤회에서 건지려고, 출세간의 몸 보시를 바랐습니다.",
+    "cover": [
+     214,
+     178,
+     123
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Siricudamani-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     470,
+     136,
+     724,
+     316
+    ],
+    "ko": "이 깊은 결심에 온 우주가 흔들렸습니다. 땅은 기뻐하는 코끼리처럼 울부짖고, 바다가 솟구치고, 시네루 산이 물기 머금은 죽순처럼 휘었습니다. 지극한 공덕의 열기가 삭까의 천상 거처에 닿았습니다.",
+    "cover": [
+     218,
+     187,
+     139
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Siricudamani-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     316,
+     74,
+     498,
+     172
+    ],
+    "ko": "삭까가 내려왔습니다. 몸의 왼쪽 반만 있는 떨리는 바라문으로 변장한 모습이었습니다.",
+    "cover": [
+     226,
+     192,
+     112
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     294,
+     290,
+     514,
+     386
+    ],
+    "ko": "그가 애원했습니다. “대왕이시여, 저는 의지할 이가 없습니다. 왕의 몸 오른쪽 반을 주시어 제 몸에 붙게 해 주십시오.”",
+    "cover": [
+     224,
+     185,
+     102
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Siricudamani-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     78,
+     382,
+     722,
+     432
+    ],
+    "ko": "기쁨에 넘친 보살은 아들 짠다꾸마라의 손에 향수를 부어 왕위를 물려주었습니다.\n“나는 오직 깨달음을 위해 목숨을 버린다.”",
+    "cover": [
+     209,
+     172,
+     117
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Siricudamani-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     48,
+     386,
+     142
+    ],
+    "ko": "흔들림 없는 진실의 열기로 끔찍한 약카 둘이 땅을 뚫고 솟았습니다.\n불꽃처럼 붉은 그들은 궁극의 희생을 이루려고 잘 갈린 톱니 톱을 휘둘렀습니다.",
+    "cover": [
+     208,
+     174,
+     118
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Siricudamani-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     266,
+     44,
+     536,
+     94
+    ],
+    "ko": "희생의 해부",
+    "cover": [
+     211,
+     178,
+     119
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     210,
+     178,
+     270,
+     210
+    ],
+    "ko": "기쁨",
+    "cover": [
+     212,
+     178,
+     111
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     530,
+     178,
+     610,
+     210
+    ],
+    "ko": "행복",
+    "cover": [
+     206,
+     168,
+     108
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     150,
+     354,
+     650,
+     404
+    ],
+    "ko": "톱이 목에 이르자 끔찍한 고통이 몸을 휩쓸었습니다. 그러나 굳센 마음은 기쁨으로 가득 차, 오직 미래의 일체지를 꿰뚫는 데에 머물렀습니다.",
+    "cover": [
+     210,
+     175,
+     122
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Siricudamani-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     306,
+     306,
+     396
+    ],
+    "ko": "약카들이 배와 심장을 갈랐습니다. 흔들림 없는 시리쭈다마니 왕은 잘린 오른쪽 반을 바라문에게 주고, 바치는 물을 뿌려 가장 높은 보시를 맺었습니다.",
+    "cover": [
+     215,
+     185,
+     142
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Siricudamani-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     56,
+     528,
+     186
+    ],
+    "ko": "땅이 울리고 때아닌 번개가 쳤습니다. 인다, 브라흐마, 빠자빠띠, 소마, 야마, 웻사완나 같은 큰 천신들이 천상 궁전에서 왕의 기적 같은 어려운 일에 갈채를 보냈습니다.",
+    "cover": [
+     207,
+     171,
+     103
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Siricudamani-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     510,
+     320,
+     750,
+     400
+    ],
+    "ko": "삭까가 변장을 벗었습니다. 천신의 모습이 갓 떠오른 해처럼 빛났습니다. 잘린 두 반쪽을 붙이고 보살에게 죽지 않는 물을 뿌려 온전히 되살렸습니다.",
+    "cover": [
+     209,
+     177,
+     121
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Siricudamani-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     270,
+     18,
+     534,
+     56
+    ],
+    "ko": "자따까 다시 태어남의 지도",
+    "cover": [
+     228,
+     196,
+     118
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     282,
+     184,
+     520,
+     204
+    ],
+    "ko": "시리쭈다마니 왕 → 깨달으신 부처님",
+    "cover": [
+     224,
+     182,
+     110
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     128,
+     288,
+     296,
+     310
+    ],
+    "ko": "삭까 → 아누룻다",
+    "cover": [
+     223,
+     185,
+     106
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     526,
+     288,
+     682,
+     310
+    ],
+    "ko": "빠두마와띠 → 야소다라",
+    "cover": [
+     226,
+     189,
+     112
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     316,
+     386,
+     500,
+     406
+    ],
+    "ko": "짠다꾸마라 → 라훌라",
+    "cover": [
+     221,
+     181,
+     103
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ }
+]
