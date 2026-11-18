@@ -1,0 +1,322 @@
+[
+ {
+  "img": "images/47-Quarrelsomeness-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     330,
+     594,
+     406
+    ],
+    "ko": "위와다 자따까: 다툼 이야기\n위선과 정의, 그리고 어울리는 이에 따른 결과를\n그린 란나 빤냐사 자따까 벽화",
+    "cover": [
+     221,
+     203,
+     174
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/47-Quarrelsomeness-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     94,
+     98,
+     410,
+     190
+    ],
+    "ko": "제따와나 승원에서 비구들이 심하게 다투었습니다. 하늘의 귀로 그 다툼을 들으신 부처님께서 향실에서 나오시어, 이런 다툼은 옛날에도 중생을 괴롭혔다고 하시며 옛이야기를 들려주셨습니다.",
+    "cover": [
+     225,
+     206,
+     181
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/47-Quarrelsomeness-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     330,
+     640,
+     432
+    ],
+    "ko": "히마완따 숲 깊이 가지가 천 개인 훌륭한 잠부 나무가 있었고, 동서남북 가지마다 네 새 무리가 살았습니다. 이웃 망고 나무에는 지혜로운 사리까 새로 태어난 보살이 큰 무리를 이끌고 살았습니다.",
+    "cover": [
+     216,
+     196,
+     167
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/47-Quarrelsomeness-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     330,
+     640,
+     440
+    ],
+    "ko": "떠돌던 까마귀가 잠부 나무 꼭대기에 앉았습니다. 새들이 떠나라 하자 그는 거절하며, 그저 그들 사이에서 계(sīla)를 엄격히 지키며 조용히 지내고 싶다고 했습니다. 그 맹세를 믿고 어미 새들은 먹이를 찾아 떠났습니다.",
+    "cover": [
+     214,
+     192,
+     162
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/47-Quarrelsomeness-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     340,
+     640,
+     440
+    ],
+    "ko": "까마귀의 경건함은 끔찍한 연기였습니다.\n겉모습: 덩굴로 부리를 묶고 침묵 명상을 하겠다고 맹세했습니다.\n실제: 홀로 남자 덩굴을 버리고 힘없는 새끼들을 사정없이 삼켰습니다.",
+    "cover": [
+     212,
+     190,
+     162
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/47-Quarrelsomeness-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     330,
+     640,
+     440
+    ],
+    "ko": "새끼가 없어진 것을 안 슬픈 새들은 의심을 품었습니다. 지혜로운 앵무새 우두머리가 덫을 놓았습니다. 새끼들을 둥지 안쪽 깊이 숨기고, 어른 새들은 우거진 잎 속에 숨어 까마귀를 지켜보았습니다.",
+    "cover": [
+     217,
+     197,
+     168
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/47-Quarrelsomeness-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     340,
+     640,
+     440
+    ],
+    "ko": "아무도 없다고 믿은 까마귀가 앵무새 둥지에 숨어들었습니다. 그 순간 어미 새들이 목과 다리를 움켜쥐었고, 온 무리가 달려들어 피가 흐르도록 쪼고 찢었습니다. 까마귀는 고통과 두려움에 ‘까까’ 하고 울부짖었습니다.",
+    "cover": [
+     220,
+     199,
+     168
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/47-Quarrelsomeness-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     324,
+     640,
+     432
+    ],
+    "ko": "무리가 악한 까마귀를 보살 앞으로 끌고 왔습니다. 추궁당한 까마귀는 자백하고 먹은 새끼들을 토해 냈습니다. 보살은 이 잔인한 배신에 천 대를 때리는 왕의 벌을 내렸고, 까마귀는 만신창이가 되었습니다.",
+    "cover": [
+     225,
+     209,
+     184
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/47-Quarrelsomeness-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     330,
+     150,
+     750,
+     290
+    ],
+    "ko": "보살은 까마귀를 살려 주되 숲 지붕에서 영원히 쫓아냈습니다. 이제부터 배신하는 까마귀 무리는 화장터의 썩은 냄새 나는 시체만 먹을 수 있으며, 바른 이들의 사회에서 멀리 떨어져 살라고 선언했습니다.",
+    "cover": [
+     166,
+     112,
+     72
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/47-Quarrelsomeness-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     234,
+     150,
+     568,
+     300
+    ],
+    "ko": "보살이 사귐의 법칙을 가르쳤습니다.\n전염: 썩은 생선을 꾸사 풀로 싸면 풀잎도 썩은 냄새가 납니다. 어리석은 이와 사귐이 이와 같습니다.\n향기: 따가라 꽃을 잎에 싸면 잎도 향기로워집니다. 지혜로운 이와 사귐이 이와 같습니다.",
+    "cover": [
+     219,
+     205,
+     184
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/47-Quarrelsomeness-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     316,
+     690,
+     402
+    ],
+    "ko": "“하늘은 땅에서 멀고, 악한 이는 선한 이에게서 멉니다.” 보살이 훈계했습니다.\n“벗을 배신하는 이는 부러진 가지처럼 떨어지고, 벗을 존중하는 이는\n뿌리 깊은 니그로다 나무처럼 거센 바람에도 흔들림 없이 굳건합니다.”",
+    "cover": [
+     166,
+     112,
+     72
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/47-Quarrelsomeness-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     260,
+     54,
+     548,
+     104
+    ],
+    "ko": "자따까를 마치며 부처님께서\n업의 인연을 밝히셨습니다.",
+    "cover": [
+     216,
+     200,
+     175
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     110,
+     326,
+     690,
+     404
+    ],
+    "ko": "짠꼬라: 목갈라나 | 뻐꾸기: 사리뿟따 | 장가라: 수망갈라\n앵무새: 아난다 | 까마귀: 데와닷따 | 사리까: 부처님\n“이 이야기를 깊이 공경하는 마음으로 간직하라.”",
+    "cover": [
+     166,
+     112,
+     72
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ }
+]
