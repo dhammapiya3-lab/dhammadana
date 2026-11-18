@@ -1,10 +1,10 @@
-Pannasa 44-Vaddhana 13 장
+Pannasa 45-Ungratefulness 14 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 72 개 / 한글판 이야기 160 편
-공개 주소 확인: 200 1472299바이트
-이야기 Pannasa/44-Vaddhana {'pdf': 17793775, 'zip': 17531132, 'n': 13}
-책 Pannasa {'pdf': 926263100, 'pdfs': 89007275, 'zip': 925743711, 'stories': 44, 'n': 719}
+R2 에 올림: 74 개 / 한글판 이야기 161 편
+공개 주소 확인: 200 1502543바이트
+이야기 Pannasa/45-Ungratefulness {'pdf': 18093703, 'zip': 17826878, 'n': 14}
+책 Pannasa {'pdf': 944095114, 'pdfs': 90742476, 'zip': 943570594, 'stories': 45, 'n': 733}
 내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 160 이야기
+글로 보기: 161 이야기
 50-Mahasudassana
 44-The-Distribution-of-the-Relics
