@@ -2843,10 +2843,13 @@ async function initSimpleRead() {
   const pages = man.pages.map((p, i) => ({ n: i + 1, label: p.label || '', img: '', big: '', text: p.text || '' }));
   SR.r = { id, title, by: root.dataset.by, pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, spreadOk: false, spread: false, ly: null, i: 0, view: 'text', zoom: 1, fs: 1, bold: false, lh: 1.9, font: 'serif', mw: 40, centerHeads: !!man.center_heads, hl: [], speaking: false, par: [], parMode: 'off', parD: null, parEd: [], ix: man.index || null, ixPart: 0, ixQ: '', simple: true };
   SR.id = id; SR.title = title; SR.cs = withR(() => chapters());
-  const q = new URLSearchParams(location.search), c = +q.get('c') || 0, pp = +q.get('p') || 0;
+  const q = new URLSearchParams(location.search), c = +q.get('c') || 0, listen = q.has('listen');
+  // 책 폴더의 '듣기' 줄(?listen=1): 이 기기에서 읽던 곳(없으면 첫 장)을 열고 커서를 '▶ 듣기' 단추에 — Enter 한 번이면 읽기 시작 (운영자 요청, 2026-11-18)
+  let pp = +q.get('p') || 0; if (listen && !c && !pp) { const h = store.get('hist', []).find(x => x.id === SR.id); pp = h && h.p || 1; }
   if (!c && !pp) { srList(root); return; }
   const ci = c ? Math.min(c, SR.cs.length) - 1 : withR(() => chapterOf(Math.min(pp, pages.length)));
   srChapter(ci, pp && !c ? Math.min(pp, pages.length) : 0, false);
+  if (listen) { const fb = () => { const b = $('#sSpeak'); if (b) { b.focus(); toast('▶ 듣기 단추입니다. Enter 를 누르면 읽기 시작합니다'); } }; if (document.readyState === 'complete') setTimeout(fb, 300); else addEventListener('load', () => setTimeout(fb, 300), { once: true }); }
   window.addEventListener('popstate', () => { const u = new URLSearchParams(location.search), cc = +u.get('c') || 0; srStop(); if (cc) srChapter(cc - 1, 0, false); else location.reload(); });
 }
 function srList(root) {

@@ -1042,7 +1042,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     const e = curEd(b), f = formats(b).filter(x => x.url), P = [['최근 올라온 책', '/simple/recent/'], [b.title, '']];
     const rows = [];
     if (hasText(b)) rows.push({ href: `/simple/book/${b.id}/read/`, ic: '📖', kind: 'read', cols: ['온라인으로 읽기', '장 목록에서 장을 골라 글로 읽기'] });
-    if (e.reader) rows.push({ href: `/read/${b.id}/`, ic: '🔊', kind: 'listen', cols: ['듣기 (일반 읽기 화면)', '읽기 화면의 ‘▶ 듣기’로 기기 목소리가 읽어 줌'] });
+    if (hasText(b)) rows.push({ href: `/simple/book/${b.id}/read/?listen=1`, ic: '🔊', kind: 'listen', cols: ['듣기', '읽던 곳(처음이면 첫 장)을 열고 ‘▶ 듣기’ 단추로 — Enter 를 누르면 기기 목소리가 읽어 줌'] });
     if (e.reader && AUDIO[b.id]) rows.push({ href: `/read/${b.id}/?audio=1`, ic: '🎧', kind: 'audio', cols: [AUDIO[b.id].human ? '오디오북 (사람이 읽은 녹음)' : '오디오북 (기계 음성)', '읽기 화면에서 바로 재생'] });
     for (const x of f) rows.push({ href: x.url, ic: x.k === 'PDF' ? '📄' : x.k === 'EPUB' ? '📘' : '📝', kind: 'file', dl: !x.ext, ext: x.ext, cols: [`${x.name} ${x.ext ? '(다른 사이트에서)' : '내려받기'}`, x.ext ? x.site : '파일'] });
     rows.push({ href: `/simple/book/${b.id}/about/`, ic: 'ℹ️', kind: 'about', cols: ['책 소개', '지은이·옮긴이·펴낸 곳·소개 글·차례'] });
