@@ -1,0 +1,355 @@
+[
+ {
+  "img": "images/31-The-Story-Concerning-Pukkusa-Mallaputta-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     64,
+     700,
+     132
+    ],
+    "ko": "말라의 아들 뿍꾸사 이야기\n반열반으로 가는 여정",
+    "cover": [
+     223,
+     190,
+     145
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-The-Story-Concerning-Pukkusa-Mallaputta-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     244,
+     124,
+     560,
+     322
+    ],
+    "ko": "말라의 아들 뿍꾸사가\n큰길가에 고요히 앉아 계신\n세존을 만났습니다.\n\n경외심에 찬 뿍꾸사는\n출가한 이들의 깊고 흔들림 없는\n평화에 감탄했습니다.",
+    "cover": [
+     213,
+     180,
+     143
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-The-Story-Concerning-Pukkusa-Mallaputta-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     436,
+     42,
+     786,
+     186
+    ],
+    "ko": "뿍꾸사는 옛 스승의 선정 이야기를\n들려주었습니다. 스승은 깨어 있으면서도\n수레 오백 대가 지나가는 요란한 소리와\n숨 막히는 먼지를 전혀\n알아차리지 못했다고 합니다.",
+    "cover": [
+     208,
+     178,
+     142
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-The-Story-Concerning-Pukkusa-Mallaputta-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     38,
+     562,
+     246
+    ],
+    "ko": "세존께서 물으셨습니다.\n어느 것이 더 어려운가?\n지나가는 수레 소리에도 깨어 있으면서\n흔들리지 않는 것인가,\n사납게 몰아치는 폭풍 속에서\n흔들리지 않는 것인가?",
+    "cover": [
+     206,
+     174,
+     135
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-The-Story-Concerning-Pukkusa-Mallaputta-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     20,
+     664,
+     74
+    ],
+    "ko": "선정의 경지를 견주다",
+    "cover": [
+     201,
+     169,
+     130
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     26,
+     382,
+     390,
+     414
+    ],
+    "ko": "흙먼지. 깨어 있었으나 알아차리지 못함.",
+    "cover": [
+     199,
+     167,
+     129
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     414,
+     384,
+     790,
+     412
+    ],
+    "ko": "파괴의 폭풍. 깨어 있었으나 알아차리지 못함.",
+    "cover": [
+     196,
+     166,
+     132
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     14,
+     416,
+     790,
+     448
+    ],
+    "ko": "두 스승 모두 깨어 있었지만, 가장 높은 선정의 경지는 부처님의 것입니다.",
+    "cover": [
+     200,
+     168,
+     128
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-The-Story-Concerning-Pukkusa-Mallaputta-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     10,
+     22,
+     300,
+     216
+    ],
+    "ko": "아뚜마에서 큰비가 쏟아지고\n번개가 치고 천둥이 울렸습니다.\n농부 둘과 소 넷이 벼락에\n맞아 죽었습니다. 그러나\n가까이에서 선정에 드신\n세존께서는 아무것도 보지도\n듣지도 못하셨습니다.",
+    "cover": [
+     198,
+     167,
+     129
+    ],
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-The-Story-Concerning-Pukkusa-Mallaputta-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     14,
+     30,
+     346,
+     184
+    ],
+    "ko": "“저는 지난날의 믿음을\n세찬 강물에 씻어 보냅니다.”\n\n이 가장 높은 경지를 믿게 된 뿍꾸사는\n평생 부처님과 법과 승가에\n귀의했습니다.",
+    "cover": [
+     223,
+     193,
+     156
+    ],
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-The-Story-Concerning-Pukkusa-Mallaputta-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     434,
+     120,
+     754,
+     320
+    ],
+    "ko": "새로 귀의한 분께 존경을 표하려고\n뿍꾸사는 정교하게 지어\n윤이 나는 금빛 가사 한 벌을\n바쳤습니다.\n\n부처님께서 받으시고, 하나는\n당신께, 다른 하나는 아난다에게\n입히라고 하셨습니다.",
+    "cover": [
+     218,
+     189,
+     152
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-The-Story-Concerning-Pukkusa-Mallaputta-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     446,
+     118,
+     750,
+     324
+    ],
+    "ko": "아난다가 가사를 입혀 드리자\n찬란하던 천이 금세\n빛을 잃었습니다.\n\n부처님 살갗의 압도하는 광채 앞에서\n금은 아주 흐려 보였습니다.",
+    "cover": [
+     217,
+     186,
+     148
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-The-Story-Concerning-Pukkusa-Mallaputta-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     290,
+     90,
+     512,
+     370
+    ],
+    "ko": "물질의 청정과\n영적인 청정\n\n세상에서 가장 좋은\n금도 참된 영적 광채\n앞에서는 빛을 잃습니다.\n가장 높은 완성은\n안에서 빛나며, 지나가는\n수레의 먼지에도 세상의\n폭풍에도 더럽혀지지\n않습니다.",
+    "cover": [
+     197,
+     155,
+     115
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-The-Story-Concerning-Pukkusa-Mallaputta-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     392,
+     740,
+     442
+    ],
+    "ko": "여래의 살갗이 아주 깨끗하고 빛나는 때는 두 번뿐입니다.\n완전한 깨달음을 이루시는 밤, 그리고 반열반에 드시는 밤입니다.",
+    "cover": [
+     125,
+     85,
+     56
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-The-Story-Concerning-Pukkusa-Mallaputta-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     40,
+     470,
+     166
+    ],
+    "ko": "아난다여, 오늘 밤 마지막 경에\n꾸시나라의 한 쌍의 살라 나무\n사이에서 여래는 반열반에\n들 것이다.",
+    "cover": [
+     217,
+     184,
+     138
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-The-Story-Concerning-Pukkusa-Mallaputta-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     162,
+     38,
+     656,
+     148
+    ],
+    "ko": "바친 가사를 입으시고 금빛 살갗을 빛내시며\n스승과 시자는 까꿋타 강으로 떠났습니다.\n반열반을 향한 마지막 걸음이었습니다.",
+    "cover": [
+     215,
+     181,
+     136
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
