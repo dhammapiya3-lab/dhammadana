@@ -3043,7 +3043,7 @@ function initSimpleMine() {
   else {
     const last = [H[0] && R_(H[0]), AL[0] && A_(AL[0]), TL[0] && T_(TL[0])].filter(Boolean).sort((x, y) => y.w - x.w)[0];
     items = [];
-    if (last) items.push({ ...last, html: last.html.replace('<span class="s-ic" aria-hidden="true">', '<span class="s-ic" aria-hidden="true">⏯</span><span class="sr">최근에 하던 것: </span><span class="s-ic" aria-hidden="true">') });
+    if (last) items.push({ ...last, html: last.html.replace(/<span class="s-ic" aria-hidden="true">[^<]*<\/span>/, '<span class="s-ic" aria-hidden="true">⏯</span>').replace(/(<span class="s-c s-c1[^"]*"[^>]*>)/, '$1<span class="sr">최근에 하던 것: </span>') });
     const F = (h, t, n, ic) => ({ html: sRow(h, [t, '폴더', n], ic, 'folder') });
     if (H.length) items.push(F('/simple/mine/read/', '이어 읽기', `읽던 책 ${H.length}권`, '📖'));
     if (AL.length || TL.length) items.push(F('/simple/mine/listen/', '이어 듣기', [AL.length && `오디오북 ${AL.length}개`, TL.length && `법문 ${TL.length}개`].filter(Boolean).join(', '), '🎧'));
