@@ -1,0 +1,770 @@
+[
+ {
+  "img": "images/16-Cowherds-Hut-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     286,
+     630,
+     370
+    ],
+    "ko": "소치기의 오두막 전생 이야기\n공덕과 건축을 담은 빤냐사 자따까 이야기",
+    "cover": [
+     223,
+     204,
+     171
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Cowherds-Hut-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     258,
+     16,
+     542,
+     54
+    ],
+    "ko": "자따까 이야기의 짜임",
+    "cover": [
+     227,
+     203,
+     162
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     326,
+     188,
+     478,
+     224
+    ],
+    "ko": "1. 현재의 이야기",
+    "cover": [
+     225,
+     200,
+     158
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     96,
+     304,
+     222,
+     350
+    ],
+    "ko": "3. 맺음\n(samodhāna)",
+    "cover": [
+     228,
+     203,
+     164
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     584,
+     304,
+     712,
+     350
+    ],
+    "ko": "2. 과거의 이야기\n(atītavatthu)",
+    "cover": [
+     229,
+     207,
+     168
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Cowherds-Hut-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     362,
+     696,
+     382
+    ],
+    "ko": "현재: 놀라운 작은 행위",
+    "cover": [
+     221,
+     195,
+     154
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     100,
+     382,
+     696,
+     422
+    ],
+    "ko": "제따와나 근처를 지나시던 부처님께서 꾸사 풀로 지은 소박한 소치기 오두막을 보십니다. 그리고 사리뿟따와 아난다에게 이 작은 공덕에서 생겨난 놀라운 업의 열매를 말씀하십니다.",
+    "cover": [
+     219,
+     195,
+     157
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Cowherds-Hut-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     544,
+     60,
+     740,
+     156
+    ],
+    "ko": "천상의 과보:\n삼십삼천에 천자 고빨라로 태어나 황금 궁전과 천녀 천 명을 얻음",
+    "cover": [
+     213,
+     182,
+     145
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     68,
+     180,
+     264,
+     236
+    ],
+    "ko": "업의 건축",
+    "cover": [
+     213,
+     183,
+     143
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     68,
+     236,
+     264,
+     296
+    ],
+    "ko": "세간의 행위:\n풀 오두막을 지음",
+    "cover": [
+     214,
+     183,
+     145
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Cowherds-Hut-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     58,
+     590,
+     84
+    ],
+    "ko": "과거: 잠부디빠의 담마라자 왕",
+    "cover": [
+     214,
+     188,
+     148
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     210,
+     84,
+     590,
+     140
+    ],
+    "ko": "흰 일산 아래에서 숙고하던 담마라자 왕은 왕실의 영화가 지난 공덕의 열매임을 깨닫습니다. 더 높은 지혜를 구하며 큰 보시를 시작합니다.",
+    "cover": [
+     219,
+     196,
+     165
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Cowherds-Hut-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     216,
+     60,
+     584,
+     88
+    ],
+    "ko": "공덕의 성곽 도성",
+    "cover": [
+     222,
+     201,
+     161
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     216,
+     88,
+     584,
+     140
+    ],
+    "ko": "왕은 도성의 네 문에 빛나는 오두막 넷을 짓습니다. 날마다 금 사십만 냥을 나누어 주자, 그 큰 너그러움에 땅이 흔들립니다.",
+    "cover": [
+     222,
+     201,
+     167
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Cowherds-Hut-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     64,
+     66,
+     354,
+     108
+    ],
+    "ko": "천상이 응답하다",
+    "cover": [
+     231,
+     215,
+     182
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     64,
+     108,
+     354,
+     208
+    ],
+    "ko": "왕의 큰 공덕으로 삭까의 천상 거처가 뜨거워집니다. 삭까는 꽃 궁전을 타고 내려와 담마라자에게 천상 세계를 보러 오라고 청합니다.",
+    "cover": [
+     230,
+     214,
+     182
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Cowherds-Hut-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     314,
+     594,
+     340
+    ],
+    "ko": "천상의 열매를 엿보다",
+    "cover": [
+     221,
+     200,
+     160
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     206,
+     340,
+     594,
+     404
+    ],
+    "ko": "하룻밤 동안 왕과 왕비는 천신 같은 행복을 누립니다. 이 행복을 본 왕의 결심은 굳어집니다. 사람의 몸은 공덕을 더 쌓는 수레일 뿐이라는 것입니다.",
+    "cover": [
+     222,
+     202,
+     168
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Cowherds-Hut-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     316,
+     598,
+     342
+    ],
+    "ko": "잠부디빠로 돌아오다",
+    "cover": [
+     220,
+     198,
+     158
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     206,
+     342,
+     598,
+     400
+    ],
+    "ko": "부지런하라는 삭까의 당부를 받고 담마라자가 돌아옵니다. 왕은 백성에게 맑은 마음으로 공덕을 지으라고 일러, 모두 함께 천상 세계에 태어나게 합니다.",
+    "cover": [
+     220,
+     198,
+     164
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Cowherds-Hut-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     486,
+     298,
+     762,
+     326
+    ],
+    "ko": "부처님의 가르침",
+    "cover": [
+     215,
+     189,
+     145
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     486,
+     326,
+     762,
+     410
+    ],
+    "ko": "과거 이야기를 마치며 스승께서는 장로들에게 한적한 숲에 승원(vihāra)을 짓는 일이 가져오는 가장 높은 업의 이익을 하나하나 설명하십니다.",
+    "cover": [
+     220,
+     198,
+     156
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Cowherds-Hut-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     54,
+     604,
+     88
+    ],
+    "ko": "공덕의 표: 행위와 열매",
+    "cover": [
+     225,
+     201,
+     164
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     196,
+     108,
+     388,
+     186
+    ],
+    "ko": "행위: 승원을 보고\n기뻐하며 감사함",
+    "cover": [
+     239,
+     225,
+     192
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     412,
+     108,
+     606,
+     186
+    ],
+    "ko": "열매:\n한 겁의 행복",
+    "cover": [
+     237,
+     222,
+     187
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     196,
+     204,
+     388,
+     284
+    ],
+    "ko": "행위: 승원을 사는\n이에게 재물을 줌",
+    "cover": [
+     241,
+     228,
+     197
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     412,
+     204,
+     606,
+     284
+    ],
+    "ko": "열매:\n여덟 겁의 행복",
+    "cover": [
+     238,
+     222,
+     189
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     196,
+     298,
+     388,
+     378
+    ],
+    "ko": "행위: 자기 재물로\n거처를 지음",
+    "cover": [
+     242,
+     229,
+     197
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     412,
+     298,
+     606,
+     378
+    ],
+    "ko": "열매: 한 겁 동안의\n넉넉한 행복",
+    "cover": [
+     241,
+     228,
+     195
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Cowherds-Hut-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     304,
+     614,
+     336
+    ],
+    "ko": "모든 보시 가운데 으뜸",
+    "cover": [
+     205,
+     187,
+     159
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     186,
+     336,
+     614,
+     418
+    ],
+    "ko": "거처를 위해 온전히 맑은 마음으로 승원(vihāra)을 짓는 것은 가장 높은 공양이라 하며, 여러 겁에 걸쳐 끊임없는 행복을 가져옵니다.",
+    "cover": [
+     202,
+     184,
+     156
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Cowherds-Hut-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     128,
+     380,
+     176
+    ],
+    "ko": "담마라자 왕\n(과거의 아버지)",
+    "cover": [
+     214,
+     190,
+     143
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     408,
+     132,
+     618,
+     172
+    ],
+    "ko": "담마라자 왕자\n(과거의 아들 - 보살)",
+    "cover": [
+     220,
+     198,
+     152
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     196,
+     260,
+     380,
+     304
+    ],
+    "ko": "숫도다나 왕\n(지금의 아버지)",
+    "cover": [
+     221,
+     197,
+     146
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     440,
+     264,
+     560,
+     304
+    ],
+    "ko": "부처님\n(현재)",
+    "cover": [
+     216,
+     192,
+     142
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     210,
+     312,
+     590,
+     348
+    ],
+    "ko": "맺음(samodhāna): 인물을 밝힘",
+    "cover": [
+     225,
+     206,
+     169
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     210,
+     348,
+     590,
+     428
+    ],
+    "ko": "스승께서 두 시대를 이으십니다. 보살의 아버지는 지금의 숫도다나 왕이고, 지혜로운 담마라자 왕은 부처님 자신이십니다.",
+    "cover": [
+     215,
+     194,
+     160
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ }
+]
