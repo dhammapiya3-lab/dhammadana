@@ -1,0 +1,1023 @@
+[
+ {
+  "img": "images/27-Mahapaduma-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     318,
+     696,
+     354
+    ],
+    "ko": "마하빠두마 전생 이야기",
+    "cover": false,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     104,
+     354,
+     696,
+     410
+    ],
+    "ko": "란나 빤냐사 자따까를 그림으로 따라가는 여행. 아낭가세나 왕의 옛이야기, 수메칼라 왕비의 굳센 헌신, 그리고 보살의 신기한 탄생을 담았습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     228,
+     38,
+     584,
+     64
+    ],
+    "ko": "가장 높은 보시",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     228,
+     64,
+     584,
+     146
+    ],
+    "ko": "제따와나에서 부처님께서 탁발한 음식을 어머니께 드린 비구를 칭찬하셨습니다. 다른 이들은 못마땅해했지만 스승께서 말씀하셨습니다. “부모를 봉양하는 것이 현자의 표시다.” 그리고 지난 이야기를 들려주셨습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     400,
+     38,
+     758,
+     64
+    ],
+    "ko": "보살이 내려오다",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     400,
+     64,
+     758,
+     156
+    ],
+    "ko": "번성한 도성 악가와띠를 아낭가세나 왕과 덕 있는 첫째 왕비 수메칼라가 다스렸습니다. 보살이 뚜시따 천상에서 내려와 왕비의 태에 들자, 왕비는 눈부시게 아름다워져 먼 곳에서도 사람들이 찾아왔습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     510,
+     290,
+     766,
+     320
+    ],
+    "ko": "버린 나라",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     510,
+     320,
+     766,
+     438
+    ],
+    "ko": "왕비가 아름답다는 소문에 이웃 왕이 쳐들어왔습니다. 사람을 죽이기 싫은 아낭가세나 왕은 싸우지 않았습니다. 성난 대신들은 따로 싸우다 져서 달아났고, 평화를 택한 왕은 홀로 떠났습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     312,
+     594,
+     340
+    ],
+    "ko": "끊을 수 없는 인연",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     214,
+     340,
+     594,
+     420
+    ],
+    "ko": "왕은 비단옷과 나무껍질 옷, 전단향과 숲속 진흙을 견주며 수메칼라에게 남으라고 빌었습니다. 왕비는 거절했습니다. 남편 없는 여인은 물 없는 강과 같다며, 헤어지느니 숲을 택했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     36,
+     306,
+     64
+    ],
+    "ko": "진실의 서원",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     34,
+     64,
+     306,
+     182
+    ],
+    "ko": "히마완따 산으로 가던 중 거센 폭풍에 갠지스강에서 뗏목이 부서졌습니다. 물에 빠진 왕을 보자 왕비는 흔들림 없는 헌신으로 힘찬 진실의 서원을 세웠습니다. 그러자 성난 강이 단단한 땅이 되었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     272,
+     304,
+     526,
+     328
+    ],
+    "ko": "고행자의 삶",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     272,
+     328,
+     526,
+     406
+    ],
+    "ko": "그들의 큰 공덕을 본 삭까 천신이 암자를 짓게 했습니다. 왕과 왕비는 세상을 버리고 나무껍질 옷을 입고 들뿌리를 캐며, 왕관의 무거운 짐에서 멀리 숲속 고행자로 평화롭게 살았습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     522,
+     42,
+     762,
+     70
+    ],
+    "ko": "홀로 남은 나라",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     522,
+     70,
+     762,
+     180
+    ],
+    "ko": "몇 달 뒤 갑작스러운 병으로 왕이 세상을 떠났습니다. 슬픔에 잠긴 임신한 왕비는 홀로 나무를 모아 남편을 화장했습니다. 나라도 남편도 재물도 잃고, 들열매로 버티며 넓은 숲에서 아기를 기다렸습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     54,
+     52,
+     298,
+     80
+    ],
+    "ko": "마하빠두마꾸마라",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     54,
+     80,
+     298,
+     206
+    ],
+    "ko": "열 달 뒤 왕비가 아기를 낳았습니다. 수레바퀴만 한 훌륭한 연꽃이 땅에서 솟아 아기의 발을 받쳤습니다. 숲에서 자란 보살은 잘생긴 젊은이가 되어, 모든 것을 바친 어머니를 돌보려 했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     470,
+     56,
+     754,
+     84
+    ],
+    "ko": "마지막 폭풍",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     470,
+     84,
+     754,
+     210
+    ],
+    "ko": "아들이 숲의 위험을 겪지 않도록 왕비는 홀로 먹을 것을 구하러 나갔습니다. 갑자기 사나운 폭풍이 몰아쳐 오도 가도 못하게 되었습니다. 나무 밑동에 몸을 피했다가 독사에게 물렸고, 독이 금세 퍼졌습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     48,
+     372,
+     76
+    ],
+    "ko": "자기를 잊은 작별",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     76,
+     372,
+     154
+    ],
+    "ko": "죽어 가는 왕비는 자신을 두려워하지 않았습니다. 오직 아들 걱정뿐이었습니다. “우리 아이가 배고픈 채 홀로 헤매겠구나.” 숲의 신들에게 아들을 이끌어 달라 빌며, 끝없는 사랑 속에 숨을 거두었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     264,
+     156,
+     536,
+     184
+    ],
+    "ko": "헌신의 열매",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     264,
+     184,
+     536,
+     300
+    ],
+    "ko": "부처님께서 어머니의 희생은 여러 생에 메아리친다고 밝히며 이야기를 마치셨습니다. 어머니를 공경하고 봉양하는 것은 현자의 길을 걷는 일입니다. 갠지스강처럼 굳건하고 어둠 속 연꽃처럼 아름다운 덕입니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     176,
+     470,
+     300
+    ],
+    "ko": "사라진 어머니를 찾던 빠두마꾸마라는 독사에 물려 나무 아래 쓰러져 숨진 어머니를 발견합니다. 크나큰 슬픔에 그는 어머니 발치에 쓰러져, 어두운 숲에서 홀로 울부짖습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     64,
+     278,
+     156
+    ],
+    "ko": "밤이 반이 지나도록 그는 미친 사람처럼 숲을 헤맵니다.",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     424,
+     240,
+     748,
+     372
+    ],
+    "ko": "하늘을 향해 소리 높여 그는 신들에게 어머니를 살려 달라고 빕니다. 약으로 쓰라고 자기 머리와 눈, 혀와 살과 피를 바치겠다고 합니다.",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     228,
+     258,
+     508,
+     372
+    ],
+    "ko": "그의 크나큰 덕의 열기에 삭까의 천상 거처가 따뜻해집니다. 늙은 바라문으로 변장해 내려온 천신들의 왕은, 기꺼이 바친 사람의 심장만이 주술을 풀 약이 된다고 말합니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     372,
+     764,
+     448
+    ],
+    "ko": "대인(보살)이 하늘을 우러러 진실의 서원을 세웁니다. “오늘 어머니의 목숨을 위해 내 심장을 꺼내리라. 이 보시로 나는 부처가 되리라. 신들이여, 칼을 주소서.”",
+    "cover": [
+     231,
+     211,
+     179
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     466,
+     178,
+     716,
+     266
+    ],
+    "ko": "곧바로 하늘의 무리가 응답합니다. 보석으로 꾸민 천상의 줄에 매단 훌륭한 신의 칼이 하늘에서 대인의 손에 곧장 내려옵니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     402,
+     682,
+     446
+    ],
+    "ko": "칼을 쥔 그는 세상의 왕과 하늘의 통치자가 누리는 영화를 모두 버립니다. 오직 일체지라는 가장 높은 선물을 구해, 모든 중생을 나고 죽음의 윤회에서 풀어 주려 합니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     350,
+     704,
+     412
+    ],
+    "ko": "결의 바라밀을 채우려고 보살은 자기 가슴을 찌릅니다. 제 목숨을 돌보지 않고 심장을 꺼내, 변장한 천신들의 왕의 손에 고요히 올려놓습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     392,
+     770,
+     444
+    ],
+    "ko": "삭까는 심장을 감추고 왕비에게 천상의 감로를 뿌립니다. 독에서 곧 풀려난 왕비는 깊고 평화로운 잠에서 깨어나듯 완전히 회복해 일어납니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     566,
+     60,
+     624,
+     200
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false,
+    "thr": 90,
+    "grow": 1
+   },
+   {
+    "rect": [
+     140,
+     38,
+     566,
+     216
+    ],
+    "ko": "“어머니, 오늘 제 목숨을 어머니께 드립니다.”\n\n지극한 바라밀을 채운 보살은 어머니 발치에 엎드려 용서를 빌고, 숲 바닥에 쓰러져 숨을 거둡니다.",
+    "cover": false,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     356,
+     760,
+     440
+    ],
+    "ko": "아들이 죽은 것을 본 왕비는 무너집니다. 깊이 슬퍼하며 아들의 몸 둘레를 돌고, 해가 땅에 떨어졌다며, 무리를 잃은 외로운 암사슴처럼 홀로 남았다고 울부짖습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     398,
+     160,
+     754,
+     316
+    ],
+    "ko": "삭까의 가르침에 따라 왕비는 눈물을 닦고 진실의 서원을 세웁니다.\n\n“내 아들은 나를 살리려고 심장을 꺼냈습니다. 이 지극한 결의로 내 아들이 다시 살아나기를.”",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     428,
+     118,
+     454,
+     138
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     432,
+     152,
+     454,
+     172
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     452,
+     118,
+     750,
+     346
+    ],
+    "ko": "삭까가 천상의 약을 뿌립니다. 대인은 곧 깨어나 완전히 낫습니다. 채운 바라밀의 영광으로 온몸이 바뀌어, 순금처럼 눈부신 빛을 냅니다.",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     38,
+     608,
+     106
+    ],
+    "ko": "우주가 그의 지극한 덕에 응답합니다. 대지는 거대한 사탕수수 틀처럼 울리고, 바다는 출렁이고, 번개가 번쩍이며, 산의 왕 수미산이 황금 왕자에게 공경하며 몸을 굽힙니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     370,
+     760,
+     442
+    ],
+    "ko": "삭까는 해처럼 빛나는 참모습을 드러내 왕자에게 절하고 천상으로 돌아갑니다. 마하빠두마꾸마라는 남은 생을 평화로운 숲속 암자에서 어머니를 공손히 모시며 보냅니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Mahapaduma-27-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     36,
+     700,
+     116
+    ],
+    "ko": "설법을 마치며 스승께서 업의 메아리를 밝히십니다. 먼 옛날의 인물들이 지금 다시 태어났고, 황금 왕자는 바로 완전히 깨달으신 여래입니다.",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     176,
+     120,
+     296,
+     146
+    ],
+    "ko": "지난 생",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     548,
+     120,
+     674,
+     146
+    ],
+    "ko": "지금",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     140,
+     148,
+     320,
+     176
+    ],
+    "ko": "나라를 탐낸 왕",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     560,
+     140,
+     670,
+     186
+    ],
+    "ko": "데와닷따\n(비구)",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     150,
+     202,
+     312,
+     230
+    ],
+    "ko": "아낭가세나 왕",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     560,
+     194,
+     670,
+     240
+    ],
+    "ko": "숫도다나\n(왕)",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     190,
+     246,
+     270,
+     292
+    ],
+    "ko": "삭까\n(천신)",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     560,
+     248,
+     670,
+     294
+    ],
+    "ko": "아누룻다\n(비구)",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     140,
+     310,
+     312,
+     340
+    ],
+    "ko": "수메칼라 왕비",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     560,
+     302,
+     670,
+     348
+    ],
+    "ko": "마하마야\n(왕비)",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     140,
+     362,
+     330,
+     410
+    ],
+    "ko": "마하빠두마꾸마라\n(황금 왕자)",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     556,
+     356,
+     730,
+     404
+    ],
+    "ko": "여래\n(연꽃 자리의 부처님)",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
