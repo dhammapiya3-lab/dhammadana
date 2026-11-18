@@ -1,10 +1,10 @@
-Pannasa 41-Brahmakumara 13 장
+Pannasa 42-Sucika 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 72 개 / 한글판 이야기 157 편
-공개 주소 확인: 200 1368790바이트
-이야기 Pannasa/41-Brahmakumara {'pdf': 17164477, 'zip': 16897034, 'n': 13}
-책 Pannasa {'pdf': 871968077, 'pdfs': 83817900, 'zip': 871465013, 'stories': 41, 'n': 676}
+R2 에 올림: 76 개 / 한글판 이야기 158 편
+공개 주소 확인: 200 1447686바이트
+이야기 Pannasa/42-Sucika {'pdf': 18650427, 'zip': 18384642, 'n': 15}
+책 Pannasa {'pdf': 890358289, 'pdfs': 85586168, 'zip': 889849517, 'stories': 42, 'n': 691}
 내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 157 이야기
+글로 보기: 158 이야기
 50-Mahasudassana
 44-The-Distribution-of-the-Relics
