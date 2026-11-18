@@ -536,7 +536,7 @@ document.addEventListener('visibilitychange', () => { if (document.visibilitySta
 /* ---------- 법문 재생기 ---------- */
 const PL = { pl: null, i: 0, list: [] };
 const fmtT = s => { if (!isFinite(s)) return '0:00'; s = Math.floor(s); const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = String(s % 60).padStart(2, '0'); return h ? `${h}:${String(m).padStart(2, '0')}:${x}` : `${m}:${x}`; };
-function epList(plId) { return $$(`[data-epl="${CSS.escape(plId)}"]`).map(e => ({ audio: e.dataset.audio, title: e.dataset.title, plname: e.dataset.plname })); }
+function epList(plId) { return $$(`[data-epl="${CSS.escape(plId)}"]`).map(e => ({ audio: e.dataset.audio, title: e.dataset.title, plname: e.dataset.plname, sp: e.dataset.sp || '' })); }
 function playEp(plId, i, list) {
   list = list || epList(plId); if (!list[i]) return;
   PL.pl = plId; PL.i = i; PL.list = list;
@@ -589,7 +589,8 @@ function initPlayer() {
   a.ontimeupdate = () => {
     $('#pCur').textContent = fmtT(a.currentTime); $('#pDur').textContent = fmtT(a.duration);
     if (a.duration && document.activeElement !== $('#pSeek')) $('#pSeek').value = a.currentTime / a.duration * 100;  // 커서가 막대에 있으면 움직이지 않음 — 화면 낭독기가 위치를 계속 읽어 소리가 겹치지 않게 (2026-11-17)
-    if (PL.pl && Date.now() - last > 3000) { last = Date.now(); store.set('ppos-' + PL.list[PL.i].audio, a.currentTime); }
+    if (PL.pl && Date.now() - last > 3000) { last = Date.now(); const e = PL.list[PL.i]; store.set('ppos-' + e.audio, a.currentTime);
+      if (a.currentTime > 3) sHistSave({ a: e.audio, t: e.title, pl: e.plname }, e.sp || '/simple/talks/', a.currentTime, a.duration); }  // 일반 화면에서 듣던 법문도 단순 화면 '이어 듣기'·내 서재에 (운영자 요청, 2026-11-18)
   };
   a.onplay = () => { $('#pPlay').textContent = '❚❚'; $('#pPlay').setAttribute('aria-label', '일시정지'); };
   a.onpause = () => {
@@ -599,7 +600,7 @@ function initPlayer() {
     else wake(false, 'player');
   };
   a.addEventListener('play', () => { if (PL.locked) wake(true, 'player'); });
-  a.onended = () => { if (PL.pl) store.set('ppos-' + PL.list[PL.i].audio, 0); if ($('#pAuto').checked && PL.pl && PL.i < PL.list.length - 1) playEp(PL.pl, PL.i + 1, PL.list); };
+  a.onended = () => { if (PL.pl) { store.set('ppos-' + PL.list[PL.i].audio, 0); sHistDel(PL.list[PL.i].audio); } if ($('#pAuto').checked && PL.pl && PL.i < PL.list.length - 1) playEp(PL.pl, PL.i + 1, PL.list); };
   a.onerror = () => { if (a.src) toast('이 법문을 불러오지 못했습니다. 다음 법문을 골라 주세요'); };
 }
 function initTalks() {
