@@ -1,28 +1,10 @@
-Pannasa 02-Tulakapandita 15 장
-Pannasa 03-Sammajiva 15 장
-Pannasa 04-Arindama 12 장
-Pannasa 05-Sumbhamitta 15 장
-Pannasa 06-Samuddaghosa 15 장
-Pannasa 07-Cagadana 13 장
-Pannasa 08-Dhammikapandita 12 장
-Pannasa 09-Siridhara 13 장
-Pannasa 10-Sankhapatta 29 장
-Pannasa 11-Sudhana 26 장
+Foremost-Monks 38-Maha-Kappina 35 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 376 개 / 한글판 이야기 90 편
-공개 주소 확인: 200 1461427바이트
-이야기 Pannasa/02-Tulakapandita {'pdf': 19695165, 'zip': 19422618, 'n': 15}
-이야기 Pannasa/03-Sammajiva {'pdf': 18895694, 'zip': 18625944, 'n': 15}
-이야기 Pannasa/04-Arindama {'pdf': 16465970, 'zip': 16203512, 'n': 12}
-이야기 Pannasa/05-Sumbhamitta {'pdf': 20159114, 'zip': 19894741, 'n': 15}
-이야기 Pannasa/06-Samuddaghosa {'pdf': 20706967, 'zip': 20440576, 'n': 15}
-이야기 Pannasa/07-Cagadana {'pdf': 17247299, 'zip': 16979239, 'n': 13}
-이야기 Pannasa/08-Dhammikapandita {'pdf': 14956192, 'zip': 14689845, 'n': 12}
-이야기 Pannasa/09-Siridhara {'pdf': 15518079, 'zip': 15254408, 'n': 13}
-이야기 Pannasa/10-Sankhapatta {'pdf': 36847929, 'zip': 36577662, 'n': 29}
-이야기 Pannasa/11-Sudhana {'pdf': 35356319, 'zip': 35089223, 'n': 26}
-책 Pannasa {'pdf': 233202028, 'pdfs': 22394881, 'zip': 232887327, 'stories': 11, 'n': 180}
-내려받기 파일: 11 묶음 새로 만듦
-글로 보기: 90 이야기
+R2 에 올림: 116 개 / 한글판 이야기 91 편
+공개 주소 확인: 200 1218625바이트
+이야기 Foremost-Monks/38-Maha-Kappina {'pdf': 46348463, 'zip': 46071769, 'n': 35}
+책 Foremost-Monks {'pdf': 1010327930, 'pdfs': 106257482, 'zip': 1009815020, 'stories': 35, 'n': 724}
+내려받기 파일: 2 묶음 새로 만듦
+글로 보기: 91 이야기
 41-Mogharaja
 50-Mahasudassana
