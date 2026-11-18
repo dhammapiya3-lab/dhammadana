@@ -1,0 +1,412 @@
+[
+ {
+  "img": "images/45-Ungratefulness-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     222,
+     342,
+     578,
+     432
+    ],
+    "ko": "아까딴뉴 자따까\n은혜를 모르는 사람 이야기\n란나 전통의 빤냐사 자따까",
+    "cover": [
+     166,
+     86,
+     62
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/45-Ungratefulness-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     204,
+     262,
+     606,
+     402
+    ],
+    "ko": "제따와나에서 비구들이 데와닷따의 배은망덕을 안타까워했습니다. 여래의 교단에서 신통을 얻었지만 적의 때문에 파멸했기 때문입니다. 부처님께서 오셔서 밝히셨습니다. “그는 지난 생에도 은혜를 몰랐다.”",
+    "cover": [
+     166,
+     86,
+     62
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/45-Ungratefulness-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     204,
+     266,
+     604,
+     386
+    ],
+    "ko": "옛 도시 웨타디빠까에서 왕이 죽었습니다. 대신들이 장례를 미루는 동안, 보살은 지혜로운 나무의 신으로서 벌어지는 일을 지켜보았습니다.",
+    "cover": [
+     166,
+     86,
+     62
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/45-Ungratefulness-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     266,
+     602,
+     388
+    ],
+    "ko": "그 나무에는 커다란 까마귀도 살았습니다. 물소만큼 커서 곡식을 찾아 먹기가 거의 불가능했습니다. 더 쉽게 먹고살려고 그는 다른 나라의 먼 강으로 날아갔습니다.",
+    "cover": [
+     166,
+     86,
+     62
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/45-Ungratefulness-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     314,
+     316,
+     760,
+     412
+    ],
+    "ko": "까마귀가 가난한 어부와 약속했습니다. “너를 왕으로 만들어 주겠다. 그 대신 날마다 물소 고기에 맛있는 밥을 섞어 나를 먹여라.” 어부는 기꺼이 승낙했습니다.",
+    "cover": [
+     216,
+     168,
+     128
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/45-Ungratefulness-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     326,
+     538,
+     416
+    ],
+    "ko": "까마귀는 어부를 태우고 하늘로 올라 왕실의 비밀을 알려 주었습니다. “나무 궤짝에 넣어 너를 내려놓겠다. 죽은 왕이 자비로 새 몸을 얻어 돌아왔다고 말하라.”",
+    "cover": [
+     166,
+     86,
+     62
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/45-Ungratefulness-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     232,
+     46,
+     568,
+     132
+    ],
+    "ko": "한밤중에 내려놓자 속임수는 감쪽같이 통했습니다. 기적에 놀라고 궁정의 속사정을 아는 것을 믿은 대신들은 가난한 어부를 왕으로 관정했습니다.",
+    "cover": [
+     188,
+     92,
+     62
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/45-Ungratefulness-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     328,
+     538,
+     414
+    ],
+    "ko": "한 달 동안 까마귀는 잘 먹었습니다. 그러나 곧 왕은 사치에 취해 교만해졌습니다. 까마귀에게 개와 닭이 먹다 남긴 찌꺼기를 주다가, 끝내 아예 쫓아 버렸습니다.",
+    "cover": [
+     166,
+     86,
+     62
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/45-Ungratefulness-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     212,
+     60,
+     588,
+     148
+    ],
+    "ko": "까마귀가 실수를 깨달았습니다.\n“이 눈먼 어리석은 자는 은혜를 모른다. 내 선행을 기억하지 못한다. 이 악한 자의 왕실 재물을 무너뜨리리라.”",
+    "cover": [
+     216,
+     168,
+     128
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/45-Ungratefulness-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     326,
+     538,
+     414
+    ],
+    "ko": "끝없는 왕의 욕심을 이용해, 까마귀는 재물이 십만 배나 많은 이웃 나라가 있다고 거짓말했습니다. “내 등에 타라, 함께 가자.”",
+    "cover": [
+     166,
+     86,
+     62
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/45-Ungratefulness-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     446,
+     228,
+     742,
+     360
+    ],
+    "ko": "까마귀는 그 악한 자를 처음 찾아낸 바로 그 자리에 떨어뜨렸습니다.\n“나 덕분에 큰 복을 얻었으면서도 너는 내 선행을 돌아보지 않았다.”\n그는 다시 고기잡이로 돌아갔습니다.",
+    "cover": [
+     166,
+     86,
+     62
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/45-Ungratefulness-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     82,
+     76,
+     308,
+     122
+    ],
+    "ko": "파멸의 길",
+    "cover": [
+     120,
+     52,
+     34
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     480,
+     76,
+     720,
+     122
+    ],
+    "ko": "번영의 길",
+    "cover": [
+     40,
+     104,
+     96
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     90,
+     134,
+     340,
+     378
+    ],
+    "ko": "• 나쁜 행실\n• 지혜 없음\n• 악한 마음\n• 은혜 모름\n• 진실하지 않음\n• 연민 없음\n• 우정 없음\n• 굳은 마음\n• 경솔함\n• 방일함",
+    "cover": [
+     120,
+     52,
+     34
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     494,
+     134,
+     740,
+     378
+    ],
+    "ko": "• 좋은 행실\n• 큰 지혜\n• 은혜를 앎\n• 남을 생각함\n• 진실함\n• 바른 말\n• 착한 마음\n• 연민\n• 부드러운 마음\n• 우정",
+    "cover": [
+     40,
+     104,
+     96
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/45-Ungratefulness-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     330,
+     576,
+     412
+    ],
+    "ko": "다시 태어남의 바퀴가 모두 드러냅니다.\n은혜 모르는 어부는 지금의 데와닷따,\n커다란 까마귀는 지금의 아자따삿뚜 왕,\n지혜로운 나무의 신은 바로 여래입니다.",
+    "cover": [
+     166,
+     86,
+     62
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/45-Ungratefulness-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     252,
+     150,
+     550,
+     302
+    ],
+    "ko": "‘은혜를 모르고 늘 악한 마음을 품는 사람은… 바로 이 생에서 파멸에 이른다.\n그러나 행실이 좋은 지혜로운 이는… 세 가지 행복을 얻는다.’",
+    "cover": [
+     166,
+     86,
+     62
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ }
+]
