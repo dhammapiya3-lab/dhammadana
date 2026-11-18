@@ -986,7 +986,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
   const F = (title, href, cnt, ic = '📁', kind = 'folder', type = '폴더') => ({ href, ic, kind, cols: [title, type, cnt] });
   sFolderPage('simple/index.html', { title: '단순 화면 첫 화면', normal: '/', rows: [
     // 가장 자주 쓰는 '내 서재'·'찾기'를 맨 위에 (운영자 요청, 2026-11-18)
-    F('내 서재 (이어 읽기·책갈피)', '/simple/mine/', '이 기기에 저장된 기록'),
+    F('내 서재 (이어 읽기·이어 듣기·책갈피)', '/simple/mine/', '이 기기에 저장된 기록'),
     F('책 제목으로 찾기', '/simple/find/', '제목·지은이로 찾기', '🔍', 'find', '찾기'),
     F('최근 올라온 책', '/simple/recent/', `${lib.length}권`),
     ...(mList.length ? [F('주요 자료', '/simple/main/', `${mList.length}가지`)] : []),
@@ -1043,7 +1043,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     const rows = [];
     if (hasText(b)) rows.push({ href: `/simple/book/${b.id}/read/`, ic: '📖', kind: 'read', cols: ['온라인으로 읽기', '장 목록에서 장을 골라 글로 읽기'] });
     if (hasText(b)) rows.push({ href: `/simple/book/${b.id}/read/?listen=1`, ic: '🔊', kind: 'listen', cols: ['듣기', '읽던 곳(처음이면 첫 장)을 열고 ‘▶ 듣기’ 단추로 — Enter 를 누르면 기기 목소리가 읽어 줌'] });
-    if (e.reader && AUDIO[b.id]) rows.push({ href: `/read/${b.id}/?audio=1`, ic: '🎧', kind: 'audio', cols: [AUDIO[b.id].human ? '오디오북 (사람이 읽은 녹음)' : '오디오북 (기계 음성)', '읽기 화면에서 바로 재생'] });
+    if (hasText(b) && AUDIO[b.id]) rows.push({ href: `/simple/book/${b.id}/read/?audio=1`, ic: '🎧', kind: 'audio', cols: [AUDIO[b.id].human ? '오디오북 (사람이 읽은 녹음)' : '오디오북 (기계 음성)', '듣던 장(처음이면 첫 장)을 열고 ‘🎧 오디오북’ 단추로 — 맨 위 재생기에서 재생, 듣는 문단을 따라감'] });
     for (const x of f) rows.push({ href: x.url, ic: x.k === 'PDF' ? '📄' : x.k === 'EPUB' ? '📘' : '📝', kind: 'file', dl: !x.ext, ext: x.ext, cols: [`${x.name} ${x.ext ? '(다른 사이트에서)' : '내려받기'}`, x.ext ? x.site : '파일'] });
     rows.push({ href: `/simple/book/${b.id}/about/`, ic: 'ℹ️', kind: 'about', cols: ['책 소개', '지은이·옮긴이·펴낸 곳·소개 글·차례'] });
     rows.push({ href: `/simple/book/${b.id}/license/`, ic: '⚖️', kind: 'license', cols: ['라이선스', b.license ? `이용 조건: ${b.license}` : '이용 조건'] });
@@ -1066,7 +1066,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
       <p><a class="s-link" href="/simple/book/${b.id}/">◀ ${esc(b.title)} 목록으로 돌아가기</a></p></div>` }));
     }
     if (hasText(b)) put(`simple/book/${b.id}/read/index.html`, simpleLayout({ title: `${b.title} – 장 목록`, path: [...P.slice(0, 1), [b.title, `/simple/book/${b.id}/`], ['온라인으로 읽기', '']], up: `/simple/book/${b.id}/`, normal: `/read/${b.id}/`, page: 'simple-read',
-      body: `<div id="sRead" data-book="${b.id}" data-title="${esc(b.title)}" data-by="${esc(sBy(b))}" data-manifest="${esc(readerManifest(b))}"><p>장 목록을 불러오는 중입니다…</p></div>` }));
+      body: `<div id="sRead" data-book="${b.id}" data-title="${esc(b.title)}" data-by="${esc(sBy(b))}" data-manifest="${esc(readerManifest(b))}"${AUDIO[b.id] ? ` data-audio="/data/audio/${b.id}.json"` : ''}><p>장 목록을 불러오는 중입니다…</p></div>` }));
   }
   // 소식 (운영자 요청, 2026-11-18): 글 목록 → 글 화면(그림 설명은 화면 낭독기가 읽음)
   const nCat = n => n.category === 'press' ? '我無말들' : '도서관';
@@ -1078,6 +1078,8 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
   { const ab = PAGES.about; put('simple/about/index.html', simpleLayout({ title: ab.meta.title || '도서관 소개', path: [['도서관 소개', '']], up: '/simple/', normal: '/about/', page: 'simple-text',
     body: `<div class="s-prose prose">${ab.meta.homage ? `<p class="homage">${esc(ab.meta.homage)}</p>` : ''}${ab.html}</div><p><a class="s-link" href="/simple/">◀ 첫 화면으로 돌아가기</a></p>` })); }
   put('simple/mine/index.html', simpleLayout({ title: '내 서재', path: [['내 서재', '']], up: '/simple/', normal: '/mynotes/', page: 'simple-mine', body: '<div id="sMine"><p>이 기기에 저장된 기록을 불러오는 중입니다…</p></div>' }));
+  // 내 서재 폴더 셋 (운영자 요청, 2026-11-18): 이어 읽기·이어 듣기·책갈피 — 목록은 app.js 가 기기 기록으로 그림
+  for (const [f, t] of [['read', '이어 읽기'], ['listen', '이어 듣기'], ['bm', '책갈피']]) put(`simple/mine/${f}/index.html`, simpleLayout({ title: t, path: [['내 서재', '/simple/mine/'], [t, '']], up: '/simple/mine/', normal: '/mynotes/', page: 'simple-mine', body: `<div id="sMine" data-f="${f}"><p>이 기기에 저장된 기록을 불러오는 중입니다…</p></div>` }));
   const findData = JSON.stringify(sByAdded(lib).map(b => [b.id, b.title, sBy(b), b.added || '', sFmt(b), [b.subtitle, b.original_title, ...(b.topics || [])].filter(Boolean).join(' ')])).replace(/</g, '\\u003c');
   put('simple/find/index.html', simpleLayout({ title: '책 제목으로 찾기', path: [['책 제목으로 찾기', '']], up: '/simple/', normal: '/search/', page: 'simple-find',
     body: `<div class="s-find"><label for="sQ">찾을 말 (책 제목·지은이·옮긴이)</label><input id="sQ" type="search" autocomplete="off"><p id="sFindMsg" class="s-sub" role="status" aria-live="polite"></p></div><div id="sFindList"></div><script type="application/json" id="sFindData">${findData}</script>` }));
