@@ -3089,7 +3089,7 @@ function initSimpleMine() {
   let items, label, stat;
   if (f === 'read') { items = H.map(R_); label = `이어 읽기, 읽던 책 ${H.length}권`; stat = `읽던 책 ${H.length}`; }
   else if (f === 'tts') { items = TS.map(S_); label = `TTS 이어 듣기, 기기 목소리로 듣던 책 ${TS.length}권`; stat = `TTS로 듣던 책 ${TS.length}`; }
-  else if (f === 'listen') { items = AL.map(A_).concat(TL.map(T_)).sort((x, y) => y.w - x.w); label = `음성 파일 이어 듣기, 오디오북 ${AL.length}개, 법문 ${TL.length}개`; stat = `오디오북 ${AL.length} · 법문 ${TL.length}`; }
+  else if (f === 'listen') { items = AL.map(A_).concat(TL.map(T_)).sort((x, y) => y.w - x.w); label = `음성 녹음 이어 듣기, 오디오북 ${AL.length}개, 법문 ${TL.length}개`; stat = `오디오북 ${AL.length} · 법문 ${TL.length}`; }
   else if (f === 'bm') { items = B.map(M_); label = `책갈피 ${B.length}개`; stat = `책갈피 ${B.length}`; }
   else {
     const last = [H[0] && R_(H[0]), TS[0] && S_(TS[0]), AL[0] && A_(AL[0]), TL[0] && T_(TL[0])].filter(Boolean).sort((x, y) => y.w - x.w)[0];
@@ -3098,9 +3098,9 @@ function initSimpleMine() {
     const F = (h, t, n, ic) => ({ html: sRow(h, [t, '폴더', n], ic, 'folder') });
     if (H.length) items.push(F('/simple/mine/read/', '이어 읽기', `읽던 책 ${H.length}권`, '📖'));
     if (TS.length) items.push(F('/simple/mine/tts/', 'TTS 이어 듣기', `기기 목소리로 듣던 책 ${TS.length}권`, '🔊'));
-    if (AL.length || TL.length) items.push(F('/simple/mine/listen/', '음성 파일 이어 듣기', [AL.length && `오디오북 ${AL.length}개`, TL.length && `법문 ${TL.length}개`].filter(Boolean).join(', '), '🎧'));
+    if (AL.length || TL.length) items.push(F('/simple/mine/listen/', '음성 녹음 이어 듣기', [AL.length && `오디오북 ${AL.length}개`, TL.length && `법문 ${TL.length}개`].filter(Boolean).join(', '), '🎧'));
     if (B.length) items.push(F('/simple/mine/bm/', '책갈피', `${B.length}개`, '🔖'));
-    label = '내 서재'; stat = `읽던 책 ${H.length} · TTS ${TS.length} · 음성 파일 ${AL.length + TL.length} · 책갈피 ${B.length}`;
+    label = '내 서재'; stat = `읽던 책 ${H.length} · TTS ${TS.length} · 음성 녹음 ${AL.length + TL.length} · 책갈피 ${B.length}`;
   }
   root.innerHTML = items.length ? `<div class="s-tbl" style="--cols:minmax(0,2fr) minmax(0,2.4fr) minmax(0,1fr)">` + sHead(['이름', '어디', '언제']) + `<ul class="s-list" data-label="${esc(label)}">${items.map(x => x.html).join('')}</ul></div>` : '<p>아직 이 기기에서 읽거나 들은 책·법문이 없습니다. 책을 읽거나 법문·오디오북을 들으면 여기에 이어 읽을 곳·이어 들을 곳이 남습니다.</p>';
   const eps = items.filter(x => x.ep);

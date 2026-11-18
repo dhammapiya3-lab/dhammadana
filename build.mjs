@@ -1046,7 +1046,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
   const F = (title, href, cnt, ic = '📁', kind = 'folder', type = '폴더') => ({ href, ic, kind, cols: [title, type, cnt] });
   sFolderPage('simple/index.html', { title: '단순 화면 첫 화면', normal: '/', rows: [
     // 가장 자주 쓰는 '내 서재'·'찾기'를 맨 위에 (운영자 요청, 2026-11-18)
-    F('내 서재 (이어 읽기·TTS 이어 듣기·음성 파일 이어 듣기·책갈피)', '/simple/mine/', '이 기기에 저장된 기록'),
+    F('내 서재 (이어 읽기·TTS 이어 듣기·음성 녹음 이어 듣기·책갈피)', '/simple/mine/', '이 기기에 저장된 기록'),
     F('책 제목으로 찾기', '/simple/find/', '제목·지은이로 찾기', '🔍', 'find', '찾기'),
     F('최근 올라온 책', '/simple/recent/', `${lib.length}권`),
     ...(mList.length ? [F('주요 자료', '/simple/main/', `${mList.length}가지`)] : []),
@@ -1140,7 +1140,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     body: `<div class="s-prose prose">${ab.meta.homage ? `<p class="homage">${esc(ab.meta.homage)}</p>` : ''}${ab.html}</div><p><a class="s-link" href="/simple/">◀ 첫 화면으로 돌아가기</a></p>` })); }
   put('simple/mine/index.html', simpleLayout({ title: '내 서재', path: [['내 서재', '']], up: '/simple/', normal: '/mynotes/', page: 'simple-mine', body: '<div id="sMine"><p>이 기기에 저장된 기록을 불러오는 중입니다…</p></div>' }));
   // 내 서재 폴더 셋 (운영자 요청, 2026-11-18): 이어 읽기·이어 듣기·책갈피 — 목록은 app.js 가 기기 기록으로 그림
-  for (const [f, t] of [['read', '이어 읽기'], ['tts', 'TTS 이어 듣기'], ['listen', '음성 파일 이어 듣기'], ['bm', '책갈피']]) put(`simple/mine/${f}/index.html`, simpleLayout({ title: t, path: [['내 서재', '/simple/mine/'], [t, '']], up: '/simple/mine/', normal: '/mynotes/', page: 'simple-mine', body: `<div id="sMine" data-f="${f}"><p>이 기기에 저장된 기록을 불러오는 중입니다…</p></div>` }));
+  for (const [f, t] of [['read', '이어 읽기'], ['tts', 'TTS 이어 듣기'], ['listen', '음성 녹음 이어 듣기'], ['bm', '책갈피']]) put(`simple/mine/${f}/index.html`, simpleLayout({ title: t, path: [['내 서재', '/simple/mine/'], [t, '']], up: '/simple/mine/', normal: '/mynotes/', page: 'simple-mine', body: `<div id="sMine" data-f="${f}"><p>이 기기에 저장된 기록을 불러오는 중입니다…</p></div>` }));
   const findData = JSON.stringify(sByAdded(lib).map(b => [b.id, b.title, sBy(b), b.added || '', sFmt(b), [b.subtitle, b.original_title, ...(b.topics || [])].filter(Boolean).join(' ')])).replace(/</g, '\\u003c');
   put('simple/find/index.html', simpleLayout({ title: '책 제목으로 찾기', path: [['책 제목으로 찾기', '']], up: '/simple/', normal: '/search/', page: 'simple-find',
     body: `<div class="s-find"><label for="sQ">찾을 말 (책 제목·지은이·옮긴이)</label><input id="sQ" type="search" autocomplete="off"><p id="sFindMsg" class="s-sub" role="status" aria-live="polite"></p></div><div id="sFindList"></div><script type="application/json" id="sFindData">${findData}</script>` }));
