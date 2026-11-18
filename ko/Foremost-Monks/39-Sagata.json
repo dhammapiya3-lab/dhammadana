@@ -1,0 +1,262 @@
+[
+ {
+  "img": "images/39-Sagata-01-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     307,
+     158
+    ],
+    "shape": "box",
+    "en": "Fire, ire Folly, and Awakening visual chronicle of mundane power, the danger of intoxication, and the path to ultimate liberation.",
+    "ko": "불과 어리석음,\n그리고 깨달음\n\n세간의 신통과\n술 취함의 위험,\n궁극의 해탈에\n이르는 길",
+    "align": "center",
+    "em": 20,
+    "rect": [
+     292,
+     130,
+     498,
+     318
+    ],
+    "whole": true,
+    "cover": [
+     246,
+     238,
+     222
+    ]
+   }
+  ]
+ },
+ {
+  "img": "images/39-Sagata-02-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     245,
+     324
+    ],
+    "shape": "box",
+    "en": "Lifetimes of Preparation Fulfill an Ancient Aspiration Witnessing monk honored for heat element mastery by Buddha Padumuttara, young man aspired to that glory. Reborn later as Sagata, he mastered mundane absorption and supernormal powers.",
+    "ko": "여러 생의 준비가 옛 서원을 이루다\n빠두뭇따라 부처님께서 불 요소에 통달한 비구를 기리시는 것을 보고\n한 젊은이가 그 영광을 서원했습니다. 뒷날 사가따로 다시 태어난 그는\n세간의 선정과 신통에 통달했습니다.",
+    "align": "center",
+    "em": 15
+   }
+  ]
+ },
+ {
+  "img": "images/39-Sagata-03-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     532,
+     116
+    ],
+    "shape": "box",
+    "en": "Vengeful Serpent Plagues the Ferry Crossing murdered ferryman was reborn as vicious serpent at the mango tree crossing. Holding deep grudge, it unleashed dark powers to cause droughts and unseasonal floods, terrorizing the local villagers.",
+    "ko": "복수심에 찬 뱀이\n나루터를 괴롭히다\n\n살해된 뱃사공이\n망고나무 나루의 사나운\n뱀으로 다시 태어났습니다.\n깊은 원한을 품은 뱀은\n어두운 힘으로 가뭄과\n때아닌 홍수를 일으켜\n마을 사람들을 두렵게\n했습니다.",
+    "align": "center",
+    "em": 16,
+    "rect": [
+     478,
+     80,
+     744,
+     378
+    ],
+    "whole": true,
+    "cover": [
+     246,
+     238,
+     222
+    ]
+   }
+  ]
+ },
+ {
+  "img": "images/39-Sagata-04-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     119,
+     310
+    ],
+    "shape": "box",
+    "en": "Sagata Overpowers the Serpent with Superior Heat Sagata entered the serpent’s den in deep meditation. The angry Naga unleashed hot fumes and raging flames. Using his mastery of the heat element, Sagata produced fire of vastly greater intensity, overpowering the beast.",
+    "ko": "사가따가 더 센 불로 뱀을 누르다\n사가따는 깊은 선정에 든 채 뱀의 굴로 들어갔습니다. 성난 나가가 뜨거운\n연기와 거센 불길을 내뿜었습니다. 불 요소에 통달한 사가따는\n훨씬 더 센 불을 일으켜 그 짐승을 눌렀습니다.",
+    "align": "center",
+    "em": 16
+   }
+  ]
+ },
+ {
+  "img": "images/39-Sagata-05-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     521,
+     75
+    ],
+    "shape": "box",
+    "en": "The Tamed Beast Brings Rains and Bountiful Harvests Realizing he was outmatched the Naga surrendered. Sagata directed the serpent to take refuge in the Buddha. The beast became friendly, proper rains returned, and bumper crops were harvested. Sagata’s fame spread instantly.",
+    "ko": "길든 짐승이 비와\n풍년을 가져오다\n\n당할 수 없음을 안 나가는\n항복했습니다. 사가따는\n뱀에게 부처님께 귀의하게\n했습니다. 뱀은 순해지고,\n알맞은 비가 다시 내려\n큰 풍년이 들었습니다.\n사가따의 명성이\n곧바로 퍼졌습니다.",
+    "align": "center",
+    "em": 16,
+    "rect": [
+     486,
+     56,
+     742,
+     378
+    ],
+    "whole": true,
+    "cover": [
+     246,
+     238,
+     222
+    ]
+   }
+  ]
+ },
+ {
+  "img": "images/39-Sagata-06-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     97,
+     75
+    ],
+    "shape": "box",
+    "en": "Worldly Monks Advise Dangerous Offering Grateful Kosambi citizens asked how to honor Sagata. Comfort-seeking monks—the Group-of-Six—intervened. They instructed the simple folk to brew rare, delightful alcoholic drink, clear and red like pigeon's foot.",
+    "ko": "세속적인 비구들이\n위험한 공양을 권하다\n\n고마워하는 꼬삼비 사람들이\n사가따를 어떻게 공경할지\n물었습니다. 편안함을 좇는\n여섯 무리 비구들이 나서서,\n순박한 사람들에게\n비둘기 발처럼 맑고 붉은\n귀한 술을 빚게 했습니다.",
+    "align": "center",
+    "em": 15,
+    "rect": [
+     66,
+     56,
+     308,
+     376
+    ],
+    "whole": true,
+    "cover": [
+     246,
+     238,
+     222
+    ]
+   }
+  ]
+ },
+ {
+  "img": "images/39-Sagata-07-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     147,
+     51
+    ],
+    "shape": "box",
+    "en": "Sagata Innocently Accepts the Intoxicating Brew With no monastic rule yet existing against alcohol, Sagata saw no wrong. Wanting to oblige his devoted supporters, he accepted and drank little of the red liquor at every single house.",
+    "ko": "사가따가 아무것도 모르고 술을 받다\n아직 술을 금하는 계율이 없었기에 사가따는 허물을 보지 못했습니다.\n정성 어린 신도들의 뜻을 따르려고, 집집마다 붉은 술을 조금씩 받아 마셨습니다.",
+    "align": "center",
+    "em": 15
+   }
+  ]
+ },
+ {
+  "img": "images/39-Sagata-08-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     77,
+     240
+    ],
+    "shape": "box",
+    "en": "The Master Collapses in Disrespectful Stupor Leaving the city, the great ascetic collapsed, completely overcome by intoxication. Carried back to the monastery, the senseless Sagata turned in his stupor, pointing his feet directly at the Buddha—losing all reverence.",
+    "ko": "큰 스승이 공경을 잃고 쓰러지다\n\n도시를 나서던 위대한 수행자는\n술에 완전히 취해 쓰러졌습니다.\n승원으로 업혀 온 사가따는\n정신을 잃은 채 부처님 쪽으로\n발을 뻗으며 모든 공경을 잃었습니다.",
+    "align": "center",
+    "em": 14,
+    "rect": [
+     52,
+     230,
+     322,
+     396
+    ],
+    "whole": true,
+    "cover": [
+     246,
+     238,
+     222
+    ]
+   }
+  ]
+ },
+ {
+  "img": "images/39-Sagata-09-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     153,
+     52
+    ],
+    "shape": "box",
+    "en": "Intoxication Instantly Destroys Mundane Power The Buddha asked: “Could Sagata, in his present state, vanquish the serpent now?” The monks replied, “No, venerable sir.” Mundane powers are fragile. Intoxication destroys mindfulness, reverence, and spiritual strength in an instant.",
+    "ko": "술 취함은 세간의 힘을 한순간에 무너뜨린다\n부처님께서 물으셨습니다. “지금 이 상태의 사가따가 그 뱀을 누를 수 있겠느냐?”\n비구들이 대답했습니다. “아닙니다, 세존이시여.” 세간의 신통은 무너지기 쉽습니다.\n술 취함은 마음챙김과 공경과 영적인 힘을 한순간에 무너뜨립니다.",
+    "align": "center",
+    "em": 15
+   }
+  ]
+ },
+ {
+  "img": "images/39-Sagata-10-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     174,
+     316
+    ],
+    "shape": "box",
+    "en": "The Buddha Establishes the Rule Against Alcohol Declaring co the act improper Qa. and unbecoming, wv vu oO the Buddha Cc co established co uw new wv training rule: Any monastic who consumes alcoholic drink incurs confesable offense. Intoxication destroys faith and ruins spiritual discipline",
+    "ko": "부처님께서 술을 금하는 계율을 세우시다\n그 행동이 그릇되고 어울리지 않는다 하시며 새 학습 계율을\n세우셨습니다. 술을 마시는 비구는 참회해야 하는 죄를 짓는다.\n술 취함은 믿음을 무너뜨리고 영적 계율을 망칩니다.",
+    "align": "center",
+    "em": 15,
+    "rect": [
+     164,
+     304,
+     636,
+     408
+    ],
+    "whole": true,
+    "cover": [
+     246,
+     238,
+     222
+    ]
+   }
+  ]
+ },
+ {
+  "img": "images/39-Sagata-11-Original.jpg",
+  "boxes": [
+   {
+    "seed": [
+     486,
+     268
+    ],
+    "shape": "box",
+    "en": "Sagata Attains True Liberation and Foremost Honor Recovering his senses, Sagata was filled with spiritual urgency. He developed deep insight and attained Arahatship. The Buddha later declared him foremost among disciples adept at the heat element absorption, fulfilling his ancient aspiration.",
+    "ko": "사가따가 참된 해탈과 으뜸의 영예를 얻다\n\n정신이 든 사가따는 영적인 다급함으로\n깊은 통찰을 닦아 아라한이 되었습니다.\n부처님께서는 그를 불 요소의 선정에 능한\n제자 가운데 으뜸이라 선언하셨으니,\n옛 서원이 이루어졌습니다.",
+    "align": "center",
+    "em": 14,
+    "rect": [
+     474,
+     256,
+     756,
+     402
+    ],
+    "whole": true,
+    "cover": [
+     246,
+     238,
+     222
+    ]
+   }
+  ]
+ }
+]
