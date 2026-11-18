@@ -162,7 +162,10 @@
     {
       "lang": "영어",
       "mode": "file",
-      "url": "orig/DL-0025/DL-0025_원서_영어.pdf"
+      "url": "orig/DL-0025/DL-0025_원서_영어.pdf",
+      "sources": [
+        "https://ancient-buddhist-texts.net/English-Texts/Dhamma-Verses-Comm/"
+      ]
     }
   ]
 }
