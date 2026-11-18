@@ -1340,3 +1340,10 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 #notesRoot .acts .pick{display:inline-flex;align-items:center;gap:4px;margin-right:8px;cursor:pointer}
 #notesRoot .acts .pick input{width:20px;height:20px}
 #rBody .resume-at{outline:3px solid #f0b400;outline-offset:4px;border-radius:4px}
+/* 재생기 닫기 (운영자 요청, 2026-11-19) — 재생 단추들과 떨어진 오른쪽 끝, 모양도 다르게 */
+.simple-ui .s-player .s-close{margin-left:auto;font-size:16px!important;border-style:dashed!important;min-width:0!important}
+.simple-ui .s-player .s-close[hidden]{display:none}
+.simple-ui .s-reopen{position:sticky;top:var(--sbar,64px);z-index:19;display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 14px;background:#fff6d6;color:#111;border-bottom:2px solid #b38600;font-size:16px}
+.simple-ui .s-reopen .s-btn{color:#1f3b8a;border-color:#1f3b8a;background:#fff;font-size:16px;padding:4px 12px}
+:root.mode-night .simple-ui .s-reopen,:root.mode-contrast .simple-ui .s-reopen{background:#000;color:#fff;border-color:#ffe36b}
+:root.mode-night .simple-ui .s-reopen .s-btn,:root.mode-contrast .simple-ui .s-reopen .s-btn{color:#ffe36b;border-color:#ffe36b;background:#000}
