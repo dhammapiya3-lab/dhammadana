@@ -1,0 +1,833 @@
+[
+ {
+  "img": "images/25-Viriyapandita-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     192,
+     196,
+     610,
+     230
+    ],
+    "ko": "보시 바라밀",
+    "cover": false,
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     192,
+     230,
+     610,
+     262
+    ],
+    "ko": "위리야빤디따 전생 이야기의 놀라운 이야기",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     76,
+     304,
+     334
+    ],
+    "ko": "제따와나에서 비구들은 해탈의 행복을 베푸시는 스승께 감탄했습니다.\n\n부처님께서 대답하셨습니다. “지금은 너희에게 놀랍겠지만, 예전에 범부였을 때 나는 보시하려고 가족을 팔고 내 살을 베었다.”",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     324,
+     646,
+     418
+    ],
+    "ko": "빤짤라 왕이 값비싼 붉은 담요를 보냈습니다. 마하라타 왕은 벗의 그릇된 견해를 바로잡아 주려고 답했습니다. “이 세상에 붓다라는 보배에 견줄 보배는 없습니다.” 그리고 열여덟 뼘 크기의 황금 불상을 만들게 했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     500,
+     64,
+     756,
+     244
+    ],
+    "ko": "불상이 빤짤라를 향해 배로 떠났습니다.\n\n바다는 황금처럼 빛났고 보석이 물 위로 솟았습니다. 나가 왕들이 배를 둘러싸고 고운 노래에 맞춰 춤추었고, 천신들은 하늘에서 천상의 꽃을 뿌렸습니다.\n\n그 장엄함은 헤아릴 수 없었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     82,
+     184,
+     124
+    ],
+    "ko": "1. 파랑 → 안짜나\n꽃 같은 땅",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     618,
+     82,
+     744,
+     124
+    ],
+    "ko": "2. 노랑 → 황금\n공 같은 땅",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     626,
+     180,
+     750,
+     222
+    ],
+    "ko": "3. 하양 → 은쟁반\n같은 땅",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     616,
+     280,
+     742,
+     322
+    ],
+    "ko": "4. 빨강 → 붉은\n천 같은 땅",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     58,
+     276,
+     186,
+     322
+    ],
+    "ko": "5. 진홍 → 아노자\n꽃 같은 땅",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     42,
+     180,
+     172,
+     222
+    ],
+    "ko": "6. 빛나는 하양 →\n달처럼 밝은 땅",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     164,
+     346,
+     640,
+     414
+    ],
+    "ko": "빤짤라 왕은 귀의했습니다. 그러자 곧 불상이 하늘로 떠올라 여섯 빛깔 광명을 내뿜었고, 그 빛은 끝없는 우주에 두루 퍼져 열여섯 범천의 세계에까지 닿았습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     64,
+     292,
+     384
+    ],
+    "ko": "놀란 빤짤라 왕은 그 두 배 크기의 전단향 불상을 만들게 하고 선포했습니다. “금이 있는 사람은 누구든 왕과 함께 불상에 금을 입히라.”\n\n큰 믿음을 지닌 가난한 사람 위리야빤디따는 왕의 공덕에 함께하기로 마음먹었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     52,
+     624,
+     96
+    ],
+    "ko": "견주어 보기: 보시의 크기",
+    "cover": false,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     306,
+     112,
+     466,
+     140
+    ],
+    "ko": "재물",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     500,
+     112,
+     680,
+     140
+    ],
+    "ko": "지극한 희생",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     128,
+     172,
+     272,
+     200
+    ],
+    "ko": "빤짤라 왕",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     298,
+     158,
+     482,
+     210
+    ],
+    "ko": "값비싼 붉은 담요,\n전단향",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     128,
+     224,
+     272,
+     256
+    ],
+    "ko": "마하라타 왕",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     298,
+     214,
+     482,
+     266
+    ],
+    "ko": "황금 판,\n주홍빛 안료",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     128,
+     290,
+     272,
+     322
+    ],
+    "ko": "위리야빤디따",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     160,
+     346,
+     646,
+     414
+    ],
+    "ko": "왕들은 귀한 물건을 주고받지만, 참된 바라밀은 그 이상을 요구합니다. 금을 얻어 불상에 입히려고 위리야빤디따는 돈으로 살 수 없는 것을 내놓아야 했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     500,
+     44,
+     762,
+     154
+    ],
+    "ko": "“두 사람 모두 나의 훌륭한 벗이오. 내 바라밀을 채우도록 도와주시오.”\n\n위리야빤디따는 사랑하는 아내 수자따와 아들 레와따꾸마라를 종으로 팔았습니다. 그 돈으로 금판 한 장을 만들었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     340,
+     668,
+     418
+    ],
+    "ko": "경비병들이 가난한 사람을 들이지 않았습니다. 빤짤라 왕이 비웃었습니다. “불상이 직접 말한다면 들여보내 주겠다.” 위리야빤디따가 엎드려 절하자 불상이 흔들리며 고운 소리를 냈습니다. “훌륭하다, 위리야빤디따여. 바라는 대로 하라.”",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     112,
+     264,
+     314
+    ],
+    "ko": "금판은 손가락 하나만 덮었습니다. 금을 더 만들려면 자기 살을 바쳐야 함을 안 보살은 지극한 결심을 했습니다.\n\n너비 이십만 요자나의 대지가 흔들리고 수미산이 공경하며 몸을 굽혔습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     36,
+     626,
+     128
+    ],
+    "ko": "삭까의 천상 거처가 뜨거워졌습니다. 삭까는 금세공인으로 변장하고 내려왔습니다. “깨달음을 위해 하늘에서 칼이 어서 떨어지기를.” 대인(보살)은 망설임 없이 자기 살을 베었고, 삭까는 그것을 손바닥만 한 금판으로 만들었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     40,
+     370,
+     178
+    ],
+    "ko": "불상에 금을 입히던 위리야빤디따가 쓰러졌습니다. 삭까가 천상의 약과 감로수를 뿌렸습니다. 다시 살아난 대인의 몸은 천상의 금빛이 되었습니다. 삭까가 예언했습니다. “이 공덕으로 그대는 반드시 부처가 될 것입니다.”",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     168,
+     38,
+     372,
+     98
+    ],
+    "ko": "우주\n(땅이 흔들리고 삭까가 나섬)",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     186,
+     92,
+     350,
+     134
+    ],
+    "ko": "위리야빤디따\n(지극한 희생으로)",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     200,
+     128,
+     320,
+     166
+    ],
+    "ko": "빤짤라 왕\n(포고를 내림)",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     236,
+     160,
+     324,
+     202
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     126,
+     180,
+     238,
+     226
+    ],
+    "ko": "장인\n(아름다움을 빚음)",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     474,
+     140,
+     752,
+     186
+    ],
+    "ko": "공덕(puñña)의 사슬",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     474,
+     186,
+     752,
+     296
+    ],
+    "ko": "지극한 헌신의 행위 하나는 홀로 있지 않습니다. 불상을 만든 일이 업의 물결을 일으켜 장인을 높이고, 왕을 귀의하게 하고, 보살의 바라밀을 굳게 했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     128,
+     10,
+     672,
+     150
+    ],
+    "ko": "제따와나에서 이야기를 마치시며 스승께서 지난 생의 인물들을 밝히셨습니다. “위리야빤디따는 세상의 주인인 나다. 다른 이들은 지금의 사부대중이다. 이 자따까를 깊이 공경하여 간직하라.”",
+    "cover": [
+     209,
+     190,
+     163
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     82,
+     168,
+     230,
+     200
+    ],
+    "ko": "위리야빤디따",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     300,
+     166,
+     490,
+     202
+    ],
+    "ko": "깨달으신 분",
+    "cover": false,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     100,
+     212,
+     218,
+     282
+    ],
+    "ko": "수자따\n(아내)",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     256,
+     230,
+     360,
+     264
+    ],
+    "ko": "야소다라",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     100,
+     298,
+     208,
+     358
+    ],
+    "ko": "레와따\n(아들)",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     278,
+     312,
+     368,
+     348
+    ],
+    "ko": "라훌라",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     446,
+     210,
+     534,
+     250
+    ],
+    "ko": "삭까\n(금세공인)",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     598,
+     208,
+     714,
+     266
+    ],
+    "ko": "아누룻다\n(천안을 지닌\n제자)",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     426,
+     298,
+     566,
+     348
+    ],
+    "ko": "숫도다나와\n마하마야",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     594,
+     308,
+     690,
+     336
+    ],
+    "ko": "부모",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Viriyapandita-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     46,
+     700,
+     82
+    ],
+    "ko": "법의 열매",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     118,
+     82,
+     694,
+     154
+    ],
+    "ko": "나무·돌·흙·금 무엇으로든 능력껏 불상을 만들거나 금을 입히는 이는 열반에 이를 때까지 오래 살고, 두려움 없으며, 큰 영광을 누립니다.",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
