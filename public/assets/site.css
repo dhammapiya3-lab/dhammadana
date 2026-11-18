@@ -1317,3 +1317,14 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 /* 글 너비: 휴대폰 세로 화면은 '좁게'(28글자 너비)보다도 좁아 눌러도 바뀌지 않으므로 숨김 (운영자 요청, 2026-11-18) */
 @media (max-width:640px){#reader .mw-row{display:none}}
 .acct-h{font-size:1.17em;margin:.8em 0 .4em}
+/* 내 서재 기록 지우기 (운영자 요청, 2026-11-19) */
+.simple-ui .s-del-row{margin:14px 0 0}
+.simple-ui .s-del-row .s-btn,.simple-ui .s-delask .s-btn{color:#1f3b8a;border-color:#1f3b8a;background:#fff;font-size:17px;padding:6px 12px}
+.simple-ui .s-delask #sDelYes{color:#fff;background:#b3261e;border-color:#b3261e}
+.simple-ui .s-del-hint{font-size:.9em}
+.simple-ui .s-delmode[aria-pressed="true"]{color:#fff;background:#b3261e;border-color:#b3261e}
+.simple-ui .s-list.delmode>li[data-del]{box-shadow:inset 6px 0 0 #b3261e}
+.simple-ui .s-delask{margin:14px 0;padding:12px 14px;border:3px solid #b3261e;border-radius:8px;background:#fff6f5;color:#111}
+.simple-ui .s-delask p{margin:0 0 10px;font-weight:700}
+:root.mode-night .simple-ui .s-delask,:root.mode-contrast .simple-ui .s-delask{background:#000;color:#fff;border-color:#ffe36b}
+:root.mode-night .simple-ui .s-del-row .s-btn,:root.mode-contrast .simple-ui .s-del-row .s-btn,:root.mode-night .simple-ui .s-delask .s-btn,:root.mode-contrast .simple-ui .s-delask .s-btn{color:#ffe36b;border-color:#ffe36b;background:#000}

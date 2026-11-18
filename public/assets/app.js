@@ -2077,17 +2077,26 @@ function renderNotes() {
     : `<p class="muted">아직 밑줄이 없습니다. 읽기 화면에서 글을 끌어서 고르면 ‘밑줄 긋기’ 단추가 나옵니다.</p>`;
   const bmHtml = B.length ? B.map((m, k) => `<div class="note-item"><div class="meta"><a href="/read/${m.id}/${m.p}">『${esc(m.t)}』 ${esc(m.pl || m.p)}쪽 →</a><span>${esc(m.d || '')}</span></div>${m.note ? `<div class="memo">${esc(m.note)}</div>` : ''}<div class="acts"><button data-bdel="${k}">지우기</button></div></div>`).join('') : '<p class="muted">아직 책갈피가 없습니다.</p>';
  const H = store.get('hist', []);
+  // 이어 듣기 (운영자 요청, 2026-11-19): TTS(기기 목소리)·오디오북·법문 듣던 곳 — 하나씩 지울 수 있음
+  const LS = [], fmtT = t => { t = Math.floor(t || 0); const h = Math.floor(t / 3600), m = Math.floor(t / 60) % 60; return (h ? h + ':' + String(m).padStart(2, '0') : m) + ':' + String(t % 60).padStart(2, '0'); };  // SH·sFmtT 는 이 함수보다 뒤에 있어 처음 그릴 때 쓸 수 없음
+  try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i), m = /^dd-(ttspos|abpos)-(.+)$/.exec(k || ''); if (!m) continue; const v = JSON.parse(localStorage.getItem(k) || 'null'); if (!v || !v.b) continue;
+    if (m[1] === 'ttspos') { if (v.p) LS.push({ ts: v.ts, d: v.d, del: 'tts:' + m[2], ic: '🔊', kind: 'TTS(기기 목소리)로 듣던 곳', t: `『${v.b}』`, w: `${v.ch || ''}${v.pl ? (v.ch ? ' · ' : '') + v.pl + '쪽' : ''}`, href: `/read/${m[2]}/${v.p}`, go: '이어 읽기' }); }
+    else LS.push({ ts: v.ts, d: v.d, del: 'ab:' + m[2], ic: '🎧', kind: '오디오북', t: `『${v.b}』`, w: `${v.ch || ''}${v.ch ? ' · ' : ''}${fmtT(v.t)}부터`, href: `/read/${m[2]}/?audio=1`, go: '이어 듣기' }); } } catch (e) {}
+  store.get('stalk-hist', []).forEach(h => { const pl = /\/simple\/talks\/([^/]+)\//.exec(h.p || ''); LS.push({ ts: h.ts, d: h.d, del: 'ep:' + h.a, ic: '🎙', kind: '법문', t: `「${h.t}」`, w: `${h.pl ? h.pl + ' · ' : ''}${fmtT(h.pos)}${h.dur ? ' / ' + fmtT(h.dur) : ''}`, href: pl ? `/dhammatalk/?pl=${pl[1]}` : '/dhammatalk/', go: '재생목록 열기' }); });
+  LS.sort((a, c) => (c.ts || Date.parse(c.d || '') || 0) - (a.ts || Date.parse(a.d || '') || 0));
+  const lsHtml = LS.length ? LS.map(x => `<div class="note-item"><div class="meta"><span>${x.ic} ${esc(x.kind)}</span><span>${esc(x.d || '')}</span></div><div><b>${esc(x.t)}</b>${x.w ? ` <span class="small muted">${esc(x.w)}</span>` : ''}</div><div class="acts"><a class="btn sm" href="${esc(x.href)}">${x.go}</a><button data-ldel="${esc(x.del)}" aria-label="${esc(x.t + ' ' + x.kind + ' 기록 지우기')}">기록 지우기</button></div></div>`).join('') : '<p class="muted">아직 듣던 책·법문이 없습니다. ‘▶ 듣기’나 오디오북·법문을 들으면 여기에 이어 들을 곳이 남습니다.</p>';
   const histHtml = H.length ? `<div class="hist">${H.map((x, k) => `<div class="hist-item"><a class="hist-cover" href="/book/${x.id}/" data-hc="${x.id}" aria-hidden="true" tabindex="-1"></a><div class="hist-body"><a class="hist-t" href="/book/${x.id}/">『${esc(x.t)}』</a><div class="small muted">${esc(x.by)}</div>
       <div class="hist-bar" aria-label="읽은 만큼 ${x.pct}%"><span style="width:${x.pct}%"></span></div>
       <div class="small">${esc(x.ch ? x.ch + ' · ' : '')}${esc(x.pl || x.p)}쪽 · ${x.pct}%</div>
       <div class="small muted">마지막으로 읽은 날 ${esc(x.d)}${x.first && x.first !== x.d ? ` · 처음 읽은 날 ${esc(x.first)}` : ''}</div>
       <div class="acts"><a class="btn sm" href="/read/${x.id}/${x.p}">이어 읽기</a><button data-hdel="${k}">기록 지우기</button></div></div></div>`).join('')}</div>` : '<p class="muted">아직 읽은 책이 없습니다. 책 페이지에서 ‘온라인으로 읽기’를 누르면 여기에 모입니다.</p>';
-  root.innerHTML = `<div class="tabs" role="tablist"><button role="tab" data-ntb="read" class="${notesTab === 'read' ? 'on' : ''}">읽은 책 ${H.length}</button><button role="tab" data-ntb="ul" class="${notesTab === 'ul' ? 'on' : ''}">밑줄 ${U.length}</button><button role="tab" data-ntb="bm" class="${notesTab === 'bm' ? 'on' : ''}">책갈피 ${B.length}</button><button role="tab" data-ntb="io" class="${notesTab === 'io' ? 'on' : ''}">옮기기</button></div>
-   <div style="max-width:760px">${notesTab === 'read' ? histHtml : notesTab === 'ul' ? (U.some(h => !h.nc) ? `<div style="margin:12px 0"><button class="btn sm ghost" id="copyAll">밑줄 모두 복사 (출처 포함)</button></div>` : '') + ulHtml : notesTab === 'bm' ? bmHtml :
+  root.innerHTML = `<div class="tabs" role="tablist"><button role="tab" data-ntb="read" class="${notesTab === 'read' ? 'on' : ''}">읽은 책 ${H.length}</button><button role="tab" data-ntb="listen" class="${notesTab === 'listen' ? 'on' : ''}">이어 듣기 ${LS.length}</button><button role="tab" data-ntb="ul" class="${notesTab === 'ul' ? 'on' : ''}">밑줄 ${U.length}</button><button role="tab" data-ntb="bm" class="${notesTab === 'bm' ? 'on' : ''}">책갈피 ${B.length}</button><button role="tab" data-ntb="io" class="${notesTab === 'io' ? 'on' : ''}">옮기기</button></div>
+   <div style="max-width:760px">${notesTab === 'read' ? histHtml : notesTab === 'listen' ? lsHtml : notesTab === 'ul' ? (U.some(h => !h.nc) ? `<div style="margin:12px 0"><button class="btn sm ghost" id="copyAll">밑줄 모두 복사 (출처 포함)</button></div>` : '') + ulHtml : notesTab === 'bm' ? bmHtml :
     `<p>다른 기기로 옮길 때: 아래 ‘내보내기’로 복사한 글을 다른 기기의 이 칸에 붙여넣고 ‘가져오기’를 누르세요. 가져오면 이미 있는 것과 합쳐집니다.</p>
     <div style="display:flex;gap:8px;margin:10px 0"><button class="btn sm ghost" id="ioExport">내보내기 (복사)</button><button class="btn sm" id="ioImport">가져오기</button></div>
     <label for="ioText" class="small muted">붙여넣을 곳</label><textarea class="io" id="ioText"></textarea>`}</div>`;
   $$('[data-ntb]', root).forEach(b => b.onclick = () => { notesTab = b.dataset.ntb; renderNotes(); });
+  $$('[data-ldel]', root).forEach(b => b.onclick = () => { sDelDo(b.dataset.ldel); renderNotes(); toast('듣던 기록을 지웠습니다'); const t = $('[data-ntb="listen"]', root); if (t) t.focus(); });
   $$('[data-hdel]', root).forEach(b => b.onclick = () => { const h = store.get('hist', []); h.splice(+b.dataset.hdel, 1); store.set('hist', h); renderNotes(); });
   if ($('[data-hc]', root)) data().then(D => $$('[data-hc]', root).forEach(a => { const bk = D.books.find(x => x.id === a.dataset.hc); if (bk && bk.cover) a.innerHTML = `<img src="${esc(bk.cover)}" alt="">`; })).catch(() => {});
   $$('[data-ndel]', root).forEach(b => b.onclick = () => { store.set('ul', uls().filter(x => x.k !== +b.dataset.ndel)); renderNotes(); toast('밑줄을 지웠습니다'); });
@@ -2897,7 +2906,7 @@ function sListbox(ul) {
     if (focus) { try { items[i].focus({ preventScroll: true }); } catch (e) {} }
     const r = items[i].getBoundingClientRect(); if (r.top < 70 || r.bottom > innerHeight - 50) items[i].scrollIntoView({ block: 'center' });
   };
-  const open = i => { pick(i, false); const li = items[i], h = li.dataset.href; if (!h) return;
+  const open = i => { pick(i, false); const li = items[i], h = li.dataset.href; if (ul._delMode && li.dataset.del && ul._del) { ul._del(li); return; } if (!h) return;
     if (li.classList.contains('k-ep') && li.dataset.src) { sPlayerMake(); sResumePlay(li); return; }  // 이어 듣기 줄: 듣던 자리부터, 원래 목록에서 이어 감
     if (li.classList.contains('k-ep')) { sPlayerMake(); const l = STALK.pageList || sTalkPageList(); STALK.play(l, $$(':scope > li.k-ep', ul).indexOf(li)); return; }  // 법문 줄: 재생기로 재생
     if (li.dataset.ext) { window.open(h, '_blank', 'noopener'); return; }
@@ -2912,6 +2921,7 @@ function sListbox(ul) {
     else if (k === 'PageDown') pick(sel + 10); else if (k === 'PageUp') pick(sel - 10);
     else if (k === 'Enter' || k === ' ') open(sel);
     else if (k === 'Backspace') { const u = $('#sUp'); if (!u) return; u.click(); }
+    else if (k === 'Delete') { if (!items[sel].dataset.del || !ul._del) { toast('이 줄은 지울 수 없습니다'); } else ul._del(items[sel]); }
     else if (k.length === 1 && /\S/.test(k)) {
       const want = choOf(k), name = li => ($('.s-c1', li) || li).textContent.trim();
       for (let s = 1; s <= items.length; s++) { const j = (sel + s) % items.length, t = name(items[j]); if (t && (t[0].toLowerCase() === k.toLowerCase() || choOf(t[0]) === want)) { pick(j); break; } }
@@ -3090,17 +3100,18 @@ function sAcctRow() {
 function initSimpleMine() {
   const root = $('#sMine'); if (!root) return;
   // 내 서재는 폴더 셋 (운영자 요청, 2026-11-18): 맨 위 '최근에 하던 것' 한 줄 + 📖 이어 읽기 · 🎧 이어 듣기(오디오북·법문) · 🔖 책갈피 — 폴더 안은 최근 것이 위
+  if (sDelF !== (root.dataset.f || '')) { sDelF = root.dataset.f || ''; sDelOn = false; }  // 다른 폴더로 가면 지우기 고르기는 끔
   const f = root.dataset.f || '', when = x => x.ts || Date.parse(x.d || '') || 0, byRecent = (a, b) => when(b) - when(a);
   const H = store.get('hist', []).slice().sort(byRecent), B = bms().slice().sort(byRecent), TL = store.get(SH, []).slice().sort(byRecent);
   const AL = []; try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (!/^dd-abpos-/.test(k)) continue; const v = JSON.parse(localStorage.getItem(k) || 'null'); if (v && v.b) AL.push({ id: k.slice(9), ...v }); } } catch (e) {}
   AL.sort(byRecent);
   const TS = []; try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (!/^dd-ttspos-/.test(k)) continue; const v = JSON.parse(localStorage.getItem(k) || 'null'); if (v && v.b && v.p) TS.push({ id: k.slice(10), ...v }); } } catch (e) {}
   TS.sort(byRecent);
-  const R_ = h => ({ w: when(h), html: sRow(`/simple/book/${h.id}/read/?p=${h.p}`, [h.t, `이어 읽기${h.ch ? ': ' + h.ch : ''}${h.pl ? ', ' + h.pl + '쪽' : ''}`, `${h.pct || 0}% · ${h.d || ''}`], '📖', 'resume') });
-  const A_ = a => ({ w: when(a), html: sRow(`/simple/book/${a.id}/read/?audio=1`, [a.b, `오디오북 이어 듣기${a.ch ? ': ' + a.ch : ''}, ${sFmtT(a.t)}부터`, a.d || ''], '🎧', 'abres') });
-  const S_ = a => ({ w: when(a), html: sRow(`/simple/book/${a.id}/read/?listen=1&p=${a.p}&s=${a.s || 0}`, [a.b, `TTS 이어 듣기${a.ch ? ': ' + a.ch : ''}${a.pl ? ', ' + a.pl + '쪽' : ''}`, a.d || ''], '🔊', 'ttsres') });
-  const T_ = h => ({ w: when(h), ep: h, html: sRow(h.a, [h.t, `법문 이어 듣기: ${sFmtT(h.pos)}${h.dur ? ' / ' + sFmtT(h.dur) : ''}${h.pl ? ' · ' + h.pl : ''}`, h.d || ''], '🎙', 'ep') });
-  const M_ = m => ({ w: when(m), html: sRow(`/simple/book/${m.id}/read/?p=${m.p}`, [m.t, `책갈피: ${m.pl ? m.pl + '쪽' : m.p + '번째 쪽'}${m.note ? ' – ' + m.note : ''}`, m.d || ''], '🔖', 'bm') });
+  const R_ = h => ({ w: when(h), del: 'hist:' + h.id, nm: `『${h.t}』 이어 읽기`, html: sRow(`/simple/book/${h.id}/read/?p=${h.p}`, [h.t, `이어 읽기${h.ch ? ': ' + h.ch : ''}${h.pl ? ', ' + h.pl + '쪽' : ''}`, `${h.pct || 0}% · ${h.d || ''}`], '📖', 'resume') });
+  const A_ = a => ({ w: when(a), del: 'ab:' + a.id, nm: `『${a.b}』 오디오북 이어 듣기`, html: sRow(`/simple/book/${a.id}/read/?audio=1`, [a.b, `오디오북 이어 듣기${a.ch ? ': ' + a.ch : ''}, ${sFmtT(a.t)}부터`, a.d || ''], '🎧', 'abres') });
+  const S_ = a => ({ w: when(a), del: 'tts:' + a.id, nm: `『${a.b}』 TTS 이어 듣기`, html: sRow(`/simple/book/${a.id}/read/?listen=1&p=${a.p}&s=${a.s || 0}`, [a.b, `TTS 이어 듣기${a.ch ? ': ' + a.ch : ''}${a.pl ? ', ' + a.pl + '쪽' : ''}`, a.d || ''], '🔊', 'ttsres') });
+  const T_ = h => ({ w: when(h), ep: h, del: 'ep:' + h.a, nm: `법문 「${h.t}」 이어 듣기`, html: sRow(h.a, [h.t, `법문 이어 듣기: ${sFmtT(h.pos)}${h.dur ? ' / ' + sFmtT(h.dur) : ''}${h.pl ? ' · ' + h.pl : ''}`, h.d || ''], '🎙', 'ep') });
+  const M_ = m => ({ w: when(m), del: `bm:${m.id}|${m.p}`, nm: `『${m.t}』 ${m.pl ? m.pl + '쪽' : m.p + '번째 쪽'} 책갈피`, html: sRow(`/simple/book/${m.id}/read/?p=${m.p}`, [m.t, `책갈피: ${m.pl ? m.pl + '쪽' : m.p + '번째 쪽'}${m.note ? ' – ' + m.note : ''}`, m.d || ''], '🔖', 'bm') });
   let items, label, stat;
   if (f === 'read') { items = H.map(R_); label = `이어 읽기, 읽던 책 ${H.length}권`; stat = `읽던 책 ${H.length}`; }
   else if (f === 'tts') { items = TS.map(S_); label = `TTS 이어 듣기, 기기 목소리로 듣던 책 ${TS.length}권`; stat = `TTS로 듣던 책 ${TS.length}`; }
@@ -3121,7 +3132,39 @@ function initSimpleMine() {
   root.innerHTML = acc + (items.length ? `<div class="s-tbl" style="--cols:minmax(0,2fr) minmax(0,2.4fr) minmax(0,1fr)">` + sHead(['이름', '어디', '언제']) + `<ul class="s-list" data-label="${esc(label)}">${items.map(x => x.html).join('')}</ul></div>` : '<p>아직 이 기기에서 읽거나 들은 책·법문이 없습니다. 책을 읽거나 법문·오디오북을 들으면 여기에 이어 읽을 곳·이어 들을 곳이 남습니다.</p>');
   const eps = items.filter(x => x.ep);
   $$('.s-list > li.k-ep', root).forEach((li, i) => { const h = eps[i].ep; li.dataset.t = h.t; li.dataset.pl = h.pl; li.dataset.src = h.p || '/simple/talks/'; li.dataset.pos = h.pos || 0; });
-  sStat(stat); sFocusFirst();
+  // 기록 지우기 (운영자 요청, 2026-11-19): 줄에서 Delete 키, 휴대폰은 '🗑 지울 기록 고르기'를 켜고 줄을 누름 → 한 번 더 묻고 지움
+  const lis = $$('.s-list > li', root); items.forEach((x, i) => { if (x.del && lis[i]) { lis[i].dataset.del = x.del; lis[i].dataset.nm = x.nm; } });
+  const ul = $('.s-list', root);
+  if (ul && items.some(x => x.del)) {
+    ul._del = sDelAsk; ul._delMode = sDelOn; ul.classList.toggle('delmode', sDelOn);
+    root.insertAdjacentHTML('beforeend', `<p class="s-del-row"><button type="button" class="s-btn s-delmode" id="sDelMode" aria-pressed="${sDelOn}">${sDelOn ? '✓ 지우기 끝내기' : '🗑 지울 기록 고르기'}</button> <span class="s-del-hint" id="sDelHint">${sDelOn ? '지울 줄을 누르면 지울지 한 번 더 묻습니다.' : '컴퓨터에서는 목록의 줄에서 Delete 키로도 지울 수 있습니다.'}</span></p>`);
+    $('#sDelMode').onclick = () => { sDelOn = !sDelOn; initSimpleMine(); const b = $('#sDelMode'); if (b) b.focus(); sayKey(sDelOn ? '지우기 고르기 켬. 지울 줄을 누르세요' : '지우기 고르기 끝'); };
+  }
+  sStat(stat); if (!sDelKeep) sFocusFirst();
+}
+let sDelOn = false, sDelKeep = false, sDelF = null;
+function sDelDo(d) {
+  const i = d.indexOf(':'), t = d.slice(0, i), v = d.slice(i + 1);
+  if (t === 'hist') store.set('hist', store.get('hist', []).filter(x => x.id !== v));
+  else if (t === 'tts') store.set('ttspos-' + v, null);   // null 로 두어야 로그인한 다른 기기에서도 지워짐(동기화)
+  else if (t === 'ab') store.set('abpos-' + v, null);
+  else if (t === 'ep') sHistDel(v);
+  else if (t === 'bm') { const [id, pg] = v.split('|'); store.set('bm', bms().filter(m => !(m.id === id && String(m.p) === pg))); }
+}
+function sDelAsk(li) {
+  const old = $('#sDelAsk'); if (old) old.remove();
+  const nm = li.dataset.nm || '이', tbl = li.closest('.s-tbl') || li.closest('.s-list');
+  tbl.insertAdjacentHTML('afterend', `<div id="sDelAsk" class="s-delask" role="alertdialog" aria-labelledby="sDelQ"><p id="sDelQ">${esc(nm)} 기록을 지울까요?${ACC.token ? ' 로그인한 다른 기기에서도 지워집니다.' : ''}</p><button type="button" class="s-btn" id="sDelYes">🗑 지우기</button> <button type="button" class="s-btn" id="sDelNo">그만두기</button></div>`);
+  const box = $('#sDelAsk'), back = () => { box.remove(); try { li.focus(); } catch (e) {} };
+  $('#sDelNo').onclick = () => { back(); sayKey('그만두었습니다'); };
+  $('#sDelYes').onclick = () => {
+    sDelDo(li.dataset.del); box.remove();
+    const f = ($('#sMine') || {}).dataset || {}; sDelKeep = true; initSimpleMine(); sDelKeep = false;
+    if (f.f && !$('#sMine .s-list > li[data-del]')) { sayKey(`${nm} 기록을 지웠습니다. 이 폴더가 비어 내 서재로 갑니다`, () => sGo('/simple/mine/')); return; }
+    sFocusFirst(); sayKey(`${nm} 기록을 지웠습니다`);
+  };
+  box.addEventListener('keydown', e => { if (e.key === 'Escape') { e.preventDefault(); back(); sayKey('그만두었습니다'); } });
+  $('#sDelYes').focus(); box.scrollIntoView({ block: 'nearest' });
 }
 function initSimpleFind() {
   const q = $('#sQ'); if (!q) return;
@@ -3142,7 +3185,7 @@ function initSimpleFind() {
 const S_KEYS = [['→', '다음 쪽 (장 글 화면에서)'], ['←', '앞 쪽'], ['↓', '다음 장 (목차의 다음 항목)'], ['↑', '앞 장'], ['P', '토글: 듣기 시작·멈춤 (책의 장 글 화면에서, 듣는 동안 커서가 읽는 문단을 따라감 · 법문이 나오고 있으면 먼저 법문을 멈춤 · 그 밖의 화면에서는 법문 재생·멈춤)'], ['A', '토글: 맨 위 재생기(법문·오디오북)로 가기·원래 자리로 돌아오기 — 오디오북이 있는 책의 장 글 화면에서는 오디오북 단추로'], ['.', '다음 법문·다음 장 (점)'], [',', '앞 법문·앞 장 (쉼표)'], [']', '15초 앞으로'], ['[', '15초 뒤로'], ['C', '지금 읽는 문단을 클립보드에 복사'], ['', '듣는 중에 → ← (Alt·Shift 없이): 다음 문장·앞 문장'], ['S', '토글: 듣기 설정 열기·닫기 (장 글 화면에서)'], ['V', '토글: 화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['N', '장 목록으로 (책을 읽을 때)'], ['B', '토글: 지금 읽는 쪽에 책갈피 넣기·빼기'], ['L', '내 서재 (이어 읽기·책갈피)'], ['M', '첫 화면 (폴더 목록)'], ['K', '지금 위치 알리기'], ['H', '토글: 단축키 안내 열기·닫기']];
 function simpleHelp() {
   const old = $('#sKeys'); if (old) { old.remove(); const b = $('.s-list [aria-selected="true"]') || $('.s-h1'); if (b) b.focus(); return; }
-  $('.s-h1').insertAdjacentHTML('afterend', `<section id="sKeys" class="s-keys" aria-labelledby="sKeysH"><h2 id="sKeysH" tabindex="-1">단축키 안내</h2><p tabindex="0">Alt 키와 Shift 키를 함께 누른 채로 글자 키를 누릅니다 (맥은 Option + Shift). Tab 키로 한 줄씩 들으실 수 있습니다.</p><ul>${S_KEYS.map(([k, d]) => `<li tabindex="0">${k ? `<kbd>Alt+Shift+${k}</kbd> ` : ''}${d}</li>`).join('')}<li tabindex="0"><kbd>↑</kbd> <kbd>↓</kbd> 목록에서 줄 고르기, <kbd>Enter</kbd> 열기, <kbd>Backspace</kbd> 위 목록으로</li></ul><button type="button" class="s-btn" id="sKeysX">단축키 안내 닫기</button></section>`);
+  $('.s-h1').insertAdjacentHTML('afterend', `<section id="sKeys" class="s-keys" aria-labelledby="sKeysH"><h2 id="sKeysH" tabindex="-1">단축키 안내</h2><p tabindex="0">Alt 키와 Shift 키를 함께 누른 채로 글자 키를 누릅니다 (맥은 Option + Shift). Tab 키로 한 줄씩 들으실 수 있습니다.</p><ul>${S_KEYS.map(([k, d]) => `<li tabindex="0">${k ? `<kbd>Alt+Shift+${k}</kbd> ` : ''}${d}</li>`).join('')}<li tabindex="0"><kbd>↑</kbd> <kbd>↓</kbd> 목록에서 줄 고르기, <kbd>Enter</kbd> 열기, <kbd>Backspace</kbd> 위 목록으로</li><li tabindex="0"><kbd>Delete</kbd> 내 서재 목록에서 고른 기록 지우기 (지울지 한 번 더 묻습니다)</li></ul><button type="button" class="s-btn" id="sKeysX">단축키 안내 닫기</button></section>`);
   $('#sKeysX').onclick = simpleHelp; $('#sKeysH').focus();
   $('#sKeys').addEventListener('keydown', e => {
     if (e.key === 'Escape') { e.preventDefault(); simpleHelp(); return; }
