@@ -1,0 +1,703 @@
+[
+ {
+  "img": "images/30-White-Mouse-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     316,
+     540,
+     352
+    ],
+    "ko": "세따무시까 자따까",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     262,
+     352,
+     540,
+     380
+    ],
+    "ko": "흰 쥐와 지극한 희생",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-White-Mouse-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     498,
+     128,
+     730,
+     214
+    ],
+    "ko": "비구들이 당신의 부처님 되심을 찬탄하는 것을 들으신 스승께서 그 길을 밝히셨습니다. “지난 생에도 나는 내 몸을 내주면서 계를 지켰다.”",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-White-Mouse-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     136,
+     380,
+     294
+    ],
+    "ko": "바라나시에서 보살은 흰 소라처럼 맑은 흰 쥐 수담마세따로 태어났습니다. 오계를 엄격히 지키며 수담마빨리까라는 사람과 함께 살았습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-White-Mouse-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     298,
+     44,
+     518,
+     68
+    ],
+    "ko": "덕이 가져온 살림",
+    "cover": [
+     223,
+     203,
+     138
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     298,
+     68,
+     518,
+     132
+    ],
+    "ko": "보살이 흔들림 없이 지키는 계의 위력으로, 그를 돌보는 이의 집에 큰 재물과 사치품과 하인들이 신기하게 쏟아졌습니다.",
+    "cover": [
+     225,
+     199,
+     139
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-White-Mouse-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     294,
+     52,
+     516,
+     136
+    ],
+    "ko": "이 신기한 복을 탐낸 성난 바라문이 종을 보내 흰 쥐를 훔쳐 오게 했고, 수담마빨리까의 집은 곧 혼란에 빠졌습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-White-Mouse-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     56,
+     512,
+     78
+    ],
+    "ko": "업의 뒤바뀜",
+    "cover": [
+     219,
+     195,
+     131
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     296,
+     78,
+     512,
+     136
+    ],
+    "ko": "보살이 떠나자 그의 복은 곧 사라졌습니다. 그는 누더기를 입고 깨진 그릇 조각으로 밥을 빌어먹게 되었습니다.",
+    "cover": [
+     218,
+     192,
+     136
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-White-Mouse-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     428,
+     66,
+     720,
+     188
+    ],
+    "ko": "히마완따 산으로 달아난 보살은 돌보던 이를 떠올렸습니다. 돌아와 수담마빨리까의 비참한 처지에 눈물을 줄줄 흘리고, 그를 다시 일으킬 계획을 세웠습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-White-Mouse-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     260,
+     54,
+     556,
+     120
+    ],
+    "ko": "수담마빨리까는 쥐를 브라흐마닷따 왕에게 바쳤습니다. 기뻐한 왕은 그에게 큰 재물과 종, 소, 번성한 마을 하나를 상으로 주었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-White-Mouse-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     452,
+     54,
+     714,
+     154
+    ],
+    "ko": "보살이 법을 설했습니다. “왕이여, 부모와 백성과 짐승까지도 바르게 대하십시오. 이렇게 법에 따라 살면 반드시 천상에 갈 것입니다.”",
+    "cover": [
+     221,
+     194,
+     141
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-White-Mouse-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     452,
+     72,
+     718,
+     192
+    ],
+    "ko": "히마완따로 돌아간 쥐는 여덟 가지·열 가지 포살 계를 엄격히 지켰습니다. 그 계행의 위력에 삭까의 천상 옥좌가 이글이글 뜨거워졌습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-White-Mouse-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     66,
+     742,
+     140
+    ],
+    "ko": "삭까가 흰 고기를 달라는 굶주린 바라문으로 변장해 내려왔습니다. 보살의 마음은 일체지를 위해 제 살을 바칠 생각에 더없는 기쁨으로 가득했습니다.",
+    "cover": [
+     218,
+     187,
+     120
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-White-Mouse-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     466,
+     68,
+     744,
+     152
+    ],
+    "ko": "그가 타는 숯불 위로 몸을 던지자, 보석으로 된 커다란 연꽃이 솟아 그를 지켰습니다. 대지가 흔들리며 그 지극한 보시를 크게 찬탄했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-White-Mouse-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     64,
+     326,
+     92
+    ],
+    "ko": "바라밀의 오름",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     92,
+     326,
+     168
+    ],
+    "ko": "계(sīla)를 엄격히 지키면 세상의 재물과 천상에 태어남을 얻지만, 자기 목숨을 바치는 지극한 희생(다나 빠라맛타)만이 완전히 깨달은 분을 만듭니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     504,
+     222,
+     772,
+     280
+    ],
+    "ko": "살을 바치는 희생\n→ 일체지·부처님",
+    "cover": [
+     36,
+     44,
+     78
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     206,
+     376,
+     600,
+     418
+    ],
+    "ko": "계를 지킴 → 세상과 천상의 기쁨",
+    "cover": [
+     92,
+     46,
+     30
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-White-Mouse-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     556,
+     70,
+     750,
+     148
+    ],
+    "ko": "참된 부처의 싹임을 안 삭까가 보살을 따와띵사 천상으로 모셔 갔습니다. 돌 자리에 앉은 흰 쥐는 모인 천신들에게 영원한 법을 설했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-White-Mouse-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     46,
+     538,
+     72
+    ],
+    "ko": "사모다나 (인연 맺기)",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     262,
+     72,
+     538,
+     124
+    ],
+    "ko": "스승께서 바라나시의 먼 옛날과 지금 모인 제자들을 잇는 업의 실을 밝히며 설법을 마치셨습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     70,
+     138,
+     198,
+     166
+    ],
+    "ko": "브라흐마닷따 왕",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     110,
+     192,
+     198,
+     220
+    ],
+    "ko": "상인",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     248,
+     198,
+     276
+    ],
+    "ko": "수담마빨리까",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     130,
+     304,
+     198,
+     332
+    ],
+    "ko": "삭까",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     110,
+     360,
+     198,
+     388
+    ],
+    "ko": "쥐",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     196,
+     250,
+     240,
+     276
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     196,
+     360,
+     234,
+     386
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     608,
+     138,
+     700,
+     166
+    ],
+    "ko": "사리뿟따",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     608,
+     192,
+     700,
+     220
+    ],
+    "ko": "목갈라나",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     608,
+     248,
+     680,
+     276
+    ],
+    "ko": "아난다",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     608,
+     304,
+     700,
+     332
+    ],
+    "ko": "아누룻다",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     576,
+     248,
+     608,
+     276
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     566,
+     346,
+     600,
+     392
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     600,
+     346,
+     752,
+     406
+    ],
+    "ko": "여래\n(역사 속 부처님)",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false,
+    "thr": 20,
+    "grow": 3
+   },
+   {
+    "rect": [
+     316,
+     380,
+     486,
+     418
+    ],
+    "ko": "다시 태어남의 바퀴\n견주어 보는 표",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
