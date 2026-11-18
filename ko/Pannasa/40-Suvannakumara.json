@@ -1,0 +1,1209 @@
+[
+ {
+  "img": "images/40-Suvannakumara-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     272,
+     248,
+     528,
+     318
+    ],
+    "ko": "수완나 왕자\n전생 이야기",
+    "cover": [
+     220,
+     191,
+     141
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     272,
+     318,
+     528,
+     350
+    ],
+    "ko": "란나의 빤냐사 자따까",
+    "cover": [
+     217,
+     187,
+     137
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     466,
+     50,
+     776,
+     170
+    ],
+    "ko": "비구들이 여래의 높은 위엄에 감탄했습니다. 부처님께서는 그 힘이 새로운 것이 아니라 보살이었던 지난 생의 행위에 뿌리를 두고 있다고 밝히셨습니다.",
+    "cover": [
+     216,
+     184,
+     136
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     244,
+     370,
+     556,
+     430
+    ],
+    "ko": "바라나시에서 보살이 뚜시따 천상에서 내려와 짠다데위 왕비와 수라바따 왕 사이에 태어났습니다. 황금 상처럼 빛나 수완나꾸마라라 이름 지었습니다.",
+    "cover": [
+     224,
+     194,
+     143
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     56,
+     324,
+     132
+    ],
+    "ko": "열여섯 살에 왕자는 큰 바닷가 왕실 축제에 갔습니다. 공덕의 힘을 보이려고 그는 대담하게 진실의 서원을 세웠습니다.",
+    "cover": [
+     217,
+     187,
+     136
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     346,
+     600,
+     412
+    ],
+    "ko": "“공덕의 위엄이 참되다면, 바다여 땅처럼 되어라.”\n물이 8만 4천 요자나나 갈라지고,\n여신이 천상의 흰 코끼리를 바쳤습니다.",
+    "cover": [
+     215,
+     180,
+     131
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     458,
+     38,
+     764,
+     108
+    ],
+    "ko": "나가 왕들의 보석 빛을 받으며 왕자가 돌아왔습니다. 부모는 그의 공덕이 네 대륙의 주인인 전륜성왕과 같다고 했습니다.",
+    "cover": [
+     215,
+     184,
+     135
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     246,
+     346,
+     554,
+     372
+    ],
+    "ko": "위엄의 뿌리",
+    "cover": [
+     217,
+     188,
+     133
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     246,
+     372,
+     554,
+     410
+    ],
+    "ko": "위빳시 부처님 시대에 보살이 올린 깨끗한 음식 공양과 회향의 물이 지금의 영광을 빚었습니다.",
+    "cover": [
+     216,
+     187,
+     135
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     350,
+     570,
+     406
+    ],
+    "ko": "왕자의 흰 코끼리 소식을 들은 시할라의 바또수라 왕은 크게 성냈습니다. 그는 그 신성한 짐승을 내놓지 않으면 바라나시를 잿더미로 만들겠다고 위협했습니다.",
+    "cover": [
+     211,
+     181,
+     133
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     146,
+     40,
+     276,
+     64
+    ],
+    "ko": "공덕에 뿌리내림",
+    "cover": [
+     207,
+     175,
+     128
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     528,
+     40,
+     678,
+     64
+    ],
+    "ko": "교만에 뿌리내림",
+    "cover": [
+     205,
+     173,
+     127
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     48,
+     140,
+     136,
+     166
+    ],
+    "ko": "보호",
+    "cover": [
+     207,
+     175,
+     125
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     270,
+     140,
+     360,
+     166
+    ],
+    "ko": "우주의 법",
+    "cover": [
+     208,
+     175,
+     127
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     452,
+     140,
+     546,
+     166
+    ],
+    "ko": "공격",
+    "cover": [
+     203,
+     170,
+     121
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     676,
+     140,
+     766,
+     166
+    ],
+    "ko": "군사력",
+    "cover": [
+     202,
+     169,
+     123
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     254,
+     350,
+     546,
+     400
+    ],
+    "ko": "참된 공덕 대 헛된 교만\n시할라는 수레와 분노에 기대지만, 보살은 흔들림 없는 진실의 힘으로 나라를 지킵니다.",
+    "cover": [
+     212,
+     178,
+     135
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     526,
+     46,
+     758,
+     124
+    ],
+    "ko": "수라바따 왕이 관정의 다섯 가지 보물을 내렸습니다. 힘을 얻은 수완나꾸마라 왕자는 사나운 바또수라 왕을 발아래 엎드리게 하겠다고 맹세했습니다.",
+    "cover": [
+     220,
+     192,
+     145
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     350,
+     568,
+     422
+    ],
+    "ko": "싸움에 앞서 왕자는 큰 보시를 회향했습니다. 그 공덕의 힘으로 아위찌 지옥에서 괴로워하던 중생이 곧바로 따와띵사 천상에 태어났습니다.",
+    "cover": [
+     220,
+     189,
+     140
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     212,
+     350,
+     588,
+     416
+    ],
+    "ko": "삭까 천신이 신기한 활 인다다누와, 적의 교만을 꺾을 다섯 화살을 주었습니다. 머리를 깎는 화살, 탈것을 만드는 화살, 하늘 궁전을 짓는 화살, 불을 일으키는 화살, 죽음을 부르는 화살입니다.",
+    "cover": [
+     215,
+     184,
+     140
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     42,
+     242,
+     128
+    ],
+    "ko": "우주의 무기와 지극한 공덕으로 힘을 얻은 보살이 큰 배에 올랐습니다. 바다 신들의 무리가 그를 시할라로 빠르게 실어 갔습니다.",
+    "cover": [
+     221,
+     195,
+     150
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     238,
+     6,
+     562,
+     56
+    ],
+    "ko": "시할라에 보낸 마지막 통첩",
+    "cover": [
+     225,
+     201,
+     167
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     180,
+     378,
+     620,
+     436
+    ],
+    "ko": "보살의 사신이 냉혹한 선택을 전했습니다. 항복하든지 멸망하든지. 시할라의 왕 바또수라는 갑작스러운 위협에 뱀처럼 사나운 분노에 휩싸였습니다.",
+    "cover": [
+     232,
+     215,
+     185
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     282,
+     156,
+     518,
+     290
+    ],
+    "ko": "자비의 네 화살\n피 흘림 없이 큰 힘을 보였습니다.\n• 굴욕: 군사들의 머리를 깎음\n• 마련: 탈것을 나타냄\n• 경외: 하늘 궁전을 띄움\n• 두려움: 하늘에 불을 붙임",
+    "cover": [
+     235,
+     217,
+     186
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     34,
+     538,
+     76
+    ],
+    "ko": "교만이 꺾이다",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     306,
+     204,
+     494,
+     274
+    ],
+    "ko": "떨며 오만을 잃은 바또수라는 목숨을 빌며 온 나라와 재물을 바쳤습니다. 보살은 세상의 공물을 물리치고 훨씬 높은 뜻을 밝혔습니다.",
+    "cover": [
+     233,
+     214,
+     182
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     62,
+     640,
+     124
+    ],
+    "ko": "법에 의한 정복",
+    "cover": [
+     96,
+     70,
+     44
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     236,
+     344,
+     554,
+     406
+    ],
+    "ko": "수완나꾸마라는 참된 목적을 밝혔습니다. 공덕으로 마음을 얻는 것이었습니다. 남이 악을 짓지 않게 막는 것이 가장 높은 우정이며, 어떤 여의주보다 낫다고 가르쳤습니다.",
+    "cover": [
+     238,
+     226,
+     204
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     188,
+     58,
+     612,
+     90
+    ],
+    "ko": "시할라의 네 가지 군대",
+    "cover": [
+     236,
+     214,
+     179
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     66,
+     290,
+     230,
+     310
+    ],
+    "ko": "갑옷 입힌 전투 코끼리",
+    "cover": [
+     236,
+     213,
+     176
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     254,
+     290,
+     384,
+     310
+    ],
+    "ko": "신두 말",
+    "cover": [
+     237,
+     214,
+     176
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     412,
+     290,
+     582,
+     310
+    ],
+    "ko": "전투 수레",
+    "cover": [
+     238,
+     215,
+     176
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     604,
+     290,
+     738,
+     310
+    ],
+    "ko": "보병",
+    "cover": [
+     237,
+     214,
+     174
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     156,
+     338,
+     644,
+     402
+    ],
+    "ko": "기쁘게 귀의한 바또수라는 큰 군대를 모아 평화롭게 호위했습니다. 금빛 코끼리 1만 마리, 빠른 말, 연꽃으로 꾸민 수레, 활기찬 보병의 큰 군대가 법을 위해 쓰였습니다.",
+    "cover": [
+     238,
+     215,
+     179
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     270,
+     38,
+     530,
+     74
+    ],
+    "ko": "하늘의 항해",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     278,
+     82,
+     522,
+     154
+    ],
+    "ko": "자연과 하늘이 보살의 순탄한 항해를 도왔습니다. 이레 동안 나가들이 배를 이끌어 바다를 건넜고, 천신들은 천상의 음식으로 큰 대중을 먹였습니다.",
+    "cover": [
+     239,
+     228,
+     208
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     36,
+     420,
+     76
+    ],
+    "ko": "바라나시에서 모두 항복하다",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     50,
+     80,
+     412,
+     166
+    ],
+    "ko": "수완나꾸마라의 위엄 있는 힘이 소문났습니다. 잠부디빠의 모든 왕이 바라나시에 모여 기쁘게 나라를 바쳤습니다. 참된 천하 통치는 오직 도덕의 힘으로 이루어집니다.",
+    "cover": [
+     232,
+     206,
+     165
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     60,
+     240,
+     140
+    ],
+    "ko": "위엄의 뿌리",
+    "cover": [
+     232,
+     214,
+     186
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     160,
+     230,
+     340
+    ],
+    "ko": "비할 데 없는 성공의 비결을 묻자, 보살은 업의 이치를 설명했습니다.\n\n안의 윤리적 청정과 진실한 말이 바깥의 아름다움과 권력과 모두의 존경을 빚어냅니다.",
+    "cover": [
+     233,
+     216,
+     186
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     492,
+     74,
+     556,
+     98
+    ],
+    "ko": "권력",
+    "cover": [
+     232,
+     209,
+     167
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     352,
+     118,
+     418,
+     142
+    ],
+    "ko": "아름다움",
+    "cover": [
+     231,
+     208,
+     168
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     626,
+     114,
+     700,
+     138
+    ],
+    "ko": "위엄",
+    "cover": [
+     232,
+     208,
+     169
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     480,
+     228,
+     576,
+     270
+    ],
+    "ko": "바른\n숙고",
+    "cover": [
+     232,
+     197,
+     130
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     400,
+     330,
+     492,
+     390
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     556,
+     320,
+     690,
+     400
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     396,
+     350,
+     496,
+     378
+    ],
+    "ko": "진실함",
+    "cover": [
+     198,
+     154,
+     91
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     560,
+     350,
+     690,
+     378
+    ],
+    "ko": "원한을 멀리함",
+    "cover": [
+     192,
+     144,
+     80
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     24,
+     262,
+     150
+    ],
+    "ko": "법이 다스리는 나라\n수완나꾸마라는 넉넉한 보시와 엄한 계로 이상 사회를 세웠습니다. 보시당 여섯 곳에서 날마다 60만 닢을 나누고, 모든 백성이 오계를 지키게 했습니다.",
+    "cover": [
+     225,
+     206,
+     173
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/40-Suvannakumara-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     306,
+     6,
+     494,
+     48
+    ],
+    "ko": "인연 맺기 (사모다나)",
+    "cover": [
+     231,
+     205,
+     165
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     58,
+     360,
+     86
+    ],
+    "ko": "지난 생: 수완나꾸마라의 시대",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     462,
+     58,
+     740,
+     86
+    ],
+    "ko": "지금: 부처님의 시대",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     316,
+     158,
+     484,
+     182
+    ],
+    "ko": "수완나꾸마라 ↔ 부처님",
+    "cover": [
+     229,
+     201,
+     157
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     336,
+     244,
+     464,
+     268
+    ],
+    "ko": "삭까 ↔ 아누룻다",
+    "cover": [
+     229,
+     199,
+     156
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     280,
+     326,
+     520,
+     350
+    ],
+    "ko": "왕의 부모 ↔ 숫도다나와 마하마야",
+    "cover": [
+     228,
+     196,
+     155
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     170,
+     386,
+     630,
+     442
+    ],
+    "ko": "부처님께서 지난 생의 인물들을 지금 모인 대중과 이으시며 마치셨습니다. 고귀한 수완나꾸마라 왕은 바로 깨달음의 옛길을 온전히 걸으신 부처님 자신이었습니다.",
+    "cover": [
+     227,
+     200,
+     158
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
