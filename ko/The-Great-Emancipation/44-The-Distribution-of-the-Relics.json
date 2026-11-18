@@ -1,0 +1,340 @@
+[
+ {
+  "img": "images/44-The-Distribution-of-the-Relics-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     388,
+     598,
+     448
+    ],
+    "ko": "사리의 분배\n고대 잠부디빠의 위기와 해결",
+    "cover": [
+     203,
+     166,
+     126
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/44-The-Distribution-of-the-Relics-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     64,
+     36,
+     276,
+     136
+    ],
+    "ko": "세존께서 꾸시나라에서\n반열반에 드셨습니다.\n이웃 나라들은 거룩한 사리가\n모두 말라들의 땅 안에\n있음을 알았습니다.",
+    "cover": [
+     216,
+     182,
+     144
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/44-The-Distribution-of-the-Relics-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     266,
+     334,
+     538,
+     444
+    ],
+    "ko": "일곱 세력이 꾸시나라로\n군대를 일으켰습니다. 저마다\n고귀함과 혈연과 신분을 내세워\n사리의 몫을 요구하며 탑을\n세울 권리를 주장했습니다.",
+    "cover": [
+     210,
+     173,
+     132
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/44-The-Distribution-of-the-Relics-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     46,
+     710,
+     98
+    ],
+    "ko": "전쟁이 코앞이었습니다. 꾸시나라의 말라들은 모든 요구를 굳게 거절했습니다.\n“세존께서는 우리 마을에서 반열반에 드셨습니다. 사리를 나누지 않겠습니다.”",
+    "cover": [
+     212,
+     168,
+     125
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/44-The-Distribution-of-the-Relics-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     346,
+     602,
+     448
+    ],
+    "ko": "바라문 도나가 군대 사이에 나섰습니다.\n그는 부처님의 가르침을 일깨웠습니다.\n“우리 부처님께서는 인내를 말씀하셨습니다.\n그분의 사리를 나누는 일로 싸우는 것은 좋지 않습니다.”",
+    "cover": [
+     207,
+     169,
+     126
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/44-The-Distribution-of-the-Relics-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     64,
+     200,
+     290,
+     372
+    ],
+    "ko": "‘되로 재는 이’라는\n이름에 걸맞게, 도나는\n사리를 똑같이\n여덟 몫으로\n나누었습니다.\n하나 된 세력들은\n다툼 대신 화합을\n택했습니다.",
+    "cover": [
+     204,
+     167,
+     124
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/44-The-Distribution-of-the-Relics-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     570,
+     64,
+     752,
+     400
+    ],
+    "ko": "평화를 지키려고\n성물에\n차례를 정했습니다.\n\n첫째: 여덟 세력이\n사리를 받았습니다.\n\n둘째: 도나는\n사리를 잰 그릇을\n받았습니다.\n\n셋째: 늦게 온\n모리야들은 남은\n재를 받았습니다.",
+    "cover": [
+     201,
+     164,
+     122
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/44-The-Distribution-of-the-Relics-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     188,
+     44,
+     624,
+     140
+    ],
+    "ko": "잠부디빠에 처음으로 탑 열 기가 세워졌습니다.\n사리: 여덟 세력(아자따삿뚜, 릿차위, 사꺄, 불리,\n꼴리야, 웨타디빠까, 빠와와 꾸시나라의 말라)\n그릇: 도나 · 재: 모리야",
+    "cover": [
+     208,
+     175,
+     131
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     116,
+     210,
+     246,
+     242
+    ],
+    "ko": "아자따삿뚜",
+    "cover": [
+     198,
+     158,
+     113
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     312,
+     210,
+     428,
+     242
+    ],
+    "ko": "꼴리야",
+    "cover": [
+     217,
+     179,
+     125
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     116,
+     302,
+     246,
+     334
+    ],
+    "ko": "릿차위",
+    "cover": [
+     190,
+     149,
+     106
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     302,
+     302,
+     438,
+     334
+    ],
+    "ko": "웨타디빠까",
+    "cover": [
+     201,
+     162,
+     117
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     104,
+     394,
+     250,
+     426
+    ],
+    "ko": "빠와의 말라",
+    "cover": [
+     174,
+     131,
+     96
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     312,
+     394,
+     428,
+     426
+    ],
+    "ko": "꾸시나라",
+    "cover": [
+     185,
+     143,
+     98
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/44-The-Distribution-of-the-Relics-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     294,
+     264,
+     420
+    ],
+    "ko": "몸의 분배는 온 세계로의\n흩어짐을 비춥니다.\n일곱 몫은 잠부디빠에 남고,\n신들과 나가들은 치아와\n머리카락과 사리를\n다른 세계로 모셔 갔습니다.",
+    "cover": [
+     198,
+     163,
+     121
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/44-The-Distribution-of-the-Relics-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     208,
+     386,
+     598,
+     452
+    ],
+    "ko": "화합과 나눔으로 위기가 끝났습니다. 사리를 나누어\n부처님의 자취가 땅과 하늘 세계에 고루 퍼졌습니다.",
+    "cover": [
+     203,
+     165,
+     122
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
