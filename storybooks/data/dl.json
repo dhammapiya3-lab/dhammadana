@@ -508,11 +508,11 @@
 "zip": 18838833
 },
 "Pannasa": {
-"n": 501,
-"pdf": 647795283,
-"pdfs": 62220035,
-"stories": 32,
-"zip": 647358615
+"n": 516,
+"pdf": 667080511,
+"pdfs": 64104637,
+"stories": 33,
+"zip": 666638313
 },
 "Pannasa/01-King-Aditta": {
 "n": 15,
@@ -673,6 +673,11 @@
 "n": 15,
 "pdf": 18946559,
 "zip": 18683172
+},
+"Pannasa/33-Bahalaputta": {
+"n": 15,
+"pdf": 19549220,
+"zip": 19279662
 },
 "The-Great-Emancipation": {
 "n": 234,
