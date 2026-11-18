@@ -1445,8 +1445,8 @@ function splitSents(t) {
   return out.filter(x => x.replace(/[\u0001\u0002\s]/g, ''));
 }
 // 문장마다 이어 읽기 — ctl.jump(±1) 로 앞·다음 문장, 문단 밖으로 나가면 onOut(±1)
-function speakSents(text, o, pv, si, onend, onerror, onOut, el) {
-  const ss = splitSents(text); if (!ss.length) { onend(); return; }
+function speakSents(text, o, pv, si, onend, onerror, onOut, el, whole) {
+  const ss = whole ? [text] : splitSents(text);  // 장 제목은 나누지 않음 if (!ss.length) { onend(); return; }
   let i = si === 'last' ? ss.length - 1 : Math.max(0, Math.min(ss.length - 1, si || 0));
   const run = () => {
     const g = ++TT.gen;
@@ -1747,7 +1747,7 @@ function speak(fromK = 0, firstText = null) {
       if (c && c.title && R.ttsTitled !== ci + ':' + R.id && (atStart || isChDup(sentences[k], p.n, c, k))) {
         R.ttsTitled = ci + ':' + R.id; R.ttsPos = { i: R.i, k };
         const tt = sayable(c.title.trim().replace(/^([IVXⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]+)\.\s*/, (m, r) => { const v = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10, 'Ⅰ': 1, 'Ⅱ': 2, 'Ⅲ': 3, 'Ⅳ': 4, 'Ⅴ': 5, 'Ⅵ': 6, 'Ⅶ': 7, 'Ⅷ': 8, 'Ⅸ': 9, 'Ⅹ': 10 }[r]; return v ? v + '. ' : m; }), o, true);  // 로마 숫자는 소리로 '3.'
-        if (tt) { speakSents(tt, o, pv, 0, () => { if (!R || !R.speaking) return; setTimeout(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); }, d => { if (!R || !R.speaking) return; if (d > 0) next(); else { R.ttsTitled = null; back(true); } }); return; }
+        if (tt) { speakSents(tt, o, pv, 0, () => { if (!R || !R.speaking) return; setTimeout(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); }, d => { if (!R || !R.speaking) return; if (d > 0) next(); else { R.ttsTitled = null; back(true); } }, null, true); return; }
       }
       if (c && isChDup(sentences[k], p.n, c, k)) { k++; next(); return; }
     }
@@ -2731,7 +2731,7 @@ function srSpeak(fromTop, startAt) {
   if (!LEX.pali) { toast('읽기를 준비하는 중입니다…'); loadLex().then(() => srSpeak(fromTop)); return; }
   const o = ttsOpt(), pv = pickVoice(o), R0 = SR.r, ch = SR.cs[SR.ci];
   const items = [];
-  if (ch.title) items.push({ el: $('.s-h1'), text: sayable(ch.title, o, true) });
+  if (ch.title) items.push({ el: $('.s-h1'), text: sayable(ch.title, o, true), whole: true });
   $$('.s-text [data-pg][data-s]').forEach(el => {
     const pg = R0.pages[+el.dataset.pg - 1]; if (!pg) return; const raw0 = paras(pg.text)[+el.dataset.s]; if (raw0 == null) return;
     if (el.offsetParent === null && !el.closest('.fn-list')) return;  // 장 제목과 같아 숨긴 글
@@ -2762,7 +2762,7 @@ function srSpeak(fromTop, startAt) {
       d => { if (!SR.speaking) return; if (d > 0) { next(); return; }
         if (k >= 2) { k -= 2; SR.si = 'last'; next(); return; }  // 앞 문단의 마지막 문장
         if (SR.ci > 0) { const ci = SR.ci - 1; srChapter(ci, 0, true, () => { SR.si = 'last'; srSpeak(true, 'last'); }); return; }
-        k = Math.max(0, k - 1); SR.si = 0; next(); }, it.el);
+        k = Math.max(0, k - 1); SR.si = 0; next(); }, it.el, it.whole);
   };
   next();
 }
