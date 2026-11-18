@@ -691,6 +691,9 @@ async function initReaderPage() {
   if (!pages.some(p => p.text)) R.view = 'page';
   renderReader();
   if (root.dataset.audio) abLoad(root.dataset.audio);  // 오디오북이 있는 책만 🎧 단추
+  // 내 서재 'TTS 이어 듣기' 줄: ?listen=1&s=문단 → 그 문단을 보여 주고 '▶ 듣기'에 커서, 누르면 그 문단부터 (운영자 요청, 2026-11-19)
+  { const q = new URLSearchParams(location.search); if (q.has('listen')) { R.resumeAt = { i: R.i, k: +q.get('s') || 0 }; history.replaceState(history.state, '', location.pathname);
+    setTimeout(() => { const el = $(`#rBody p[data-pg="${R.i + 1}"][data-s="${R.resumeAt ? R.resumeAt.k : 0}"]`); if (el) { el.scrollIntoView({ block: 'center' }); el.classList.add('resume-at'); } const rd = $('#reader'); if (rd) rd.classList.remove('chrome-off'); const b = $('#rSpeak'); if (b) b.focus(); toast('▶ 듣기를 누르면 듣던 문단부터 이어서 읽습니다'); }, 400); } }
   saveBookOffline(id, man);
   if ('serviceWorker' in navigator && navigator.serviceWorker.controller && !store.get('off-' + id)) { store.set('off-' + id, 1); setTimeout(() => toast('이 책을 이 기기에 저장했습니다. 이제 인터넷 없이도 읽을 수 있습니다'), 1500); }
   if (!want && last > 1) toast(`지난번에 읽던 ${pageName(R.pages[R.i])}을 열었습니다`);
@@ -1746,6 +1749,7 @@ function speak(fromK = 0, firstText = null) {
   if (AB.locked) { abLockedMsg(); return; }
   if (AB.on && !abA().paused) abA().pause();  // 오디오북과 기계 음성 듣기는 함께 쓰지 않음
   if (!LEX.pali) { toast('읽기를 준비하는 중입니다…'); loadLex().then(() => speak(fromK, firstText)); return; }
+  if (R.resumeAt) { if (fromK === 0 && firstText == null && R.resumeAt.i === R.i) fromK = R.resumeAt.k; R.resumeAt = null; $$('#rBody .resume-at').forEach(x => x.classList.remove('resume-at')); }
   const o = ttsOpt();
   const p = R.pages[R.i]; const sentences = paras(p.text);
   if (!sentences.length) { if (R.i < R.pages.length - 1) { R.i++; renderReader(); setTimeout(() => speak(), 200); } return; }
@@ -2082,7 +2086,7 @@ function renderNotes() {
   // 이어 듣기 (운영자 요청, 2026-11-19): TTS(기기 목소리)·오디오북·법문 듣던 곳 — 하나씩 지울 수 있음
   const LS = [], fmtT = t => { t = Math.floor(t || 0); const h = Math.floor(t / 3600), m = Math.floor(t / 60) % 60; return (h ? h + ':' + String(m).padStart(2, '0') : m) + ':' + String(t % 60).padStart(2, '0'); };  // SH·sFmtT 는 이 함수보다 뒤에 있어 처음 그릴 때 쓸 수 없음
   try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i), m = /^dd-(ttspos|abpos)-(.+)$/.exec(k || ''); if (!m) continue; const v = JSON.parse(localStorage.getItem(k) || 'null'); if (!v || !v.b) continue;
-    if (m[1] === 'ttspos') { if (v.p) LS.push({ ts: v.ts, d: v.d, del: 'tts:' + m[2], ic: '🔊', kind: 'TTS(기기 목소리)로 듣던 곳', t: `『${v.b}』`, w: `${v.ch || ''}${v.pl ? (v.ch ? ' · ' : '') + v.pl + '쪽' : ''}`, href: `/read/${m[2]}/${v.p}`, go: '이어 읽기' }); }
+    if (m[1] === 'ttspos') { if (v.p) LS.push({ ts: v.ts, d: v.d, del: 'tts:' + m[2], ic: '🔊', kind: 'TTS(기기 목소리)로 듣던 곳', t: `『${v.b}』`, w: `${v.ch || ''}${v.pl ? (v.ch ? ' · ' : '') + v.pl + '쪽' : ''}`, href: `/read/${m[2]}/${v.p}?listen=1&s=${v.s || 0}`, go: '이어 듣기' }); }
     else LS.push({ ts: v.ts, d: v.d, del: 'ab:' + m[2], ic: '🎧', kind: '오디오북', t: `『${v.b}』`, w: `${v.ch || ''}${v.ch ? ' · ' : ''}${fmtT(v.t)}부터`, href: `/read/${m[2]}/?audio=1`, go: '이어 듣기' }); } } catch (e) {}
   store.get('stalk-hist', []).forEach(h => { const pl = /\/simple\/talks\/([^/]+)\//.exec(h.p || ''); LS.push({ ts: h.ts, d: h.d, del: 'ep:' + h.a, ic: '🎙', kind: '법문', t: `「${h.t}」`, w: `${h.pl ? h.pl + ' · ' : ''}${fmtT(h.pos)}${h.dur ? ' / ' + fmtT(h.dur) : ''}`, href: pl ? `/dhammatalk/?pl=${pl[1]}` : '/dhammatalk/', go: '재생목록 열기', play: h.a }); });
   LS.sort((a, c) => (c.ts || Date.parse(c.d || '') || 0) - (a.ts || Date.parse(a.d || '') || 0));

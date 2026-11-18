@@ -1339,3 +1339,4 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 #notesRoot .pk-ask[hidden]{display:none}
 #notesRoot .acts .pick{display:inline-flex;align-items:center;gap:4px;margin-right:8px;cursor:pointer}
 #notesRoot .acts .pick input{width:20px;height:20px}
+#rBody .resume-at{outline:3px solid #f0b400;outline-offset:4px;border-radius:4px}
