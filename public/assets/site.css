@@ -1251,3 +1251,13 @@ body.simple-ui{margin:0;background:#fff;color:#111;font-family:var(--sans);font-
   .s-row .d-long{display:none}.s-row .d-short{display:inline}
   .s-row.k-book .s-c4{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 }
+/* 단순 화면: 단축키 안내·듣기 설정 (운영자 요청, 2026-11-18) */
+.s-keys,.s-tts{margin:12px 0 18px;padding:14px 18px;border:2px solid #1f3b8a;border-radius:8px;background:var(--paper,#fff)}
+.s-keys h2,.s-tts h2{font-size:1.15rem;margin:0 0 8px}
+.s-keys h2:focus,.s-tts h2:focus{outline:none}
+.s-keys ul{margin:8px 0 12px;padding-left:1.2em;line-height:1.9}
+.s-keys kbd{font:inherit;font-weight:700;border:1px solid #888;border-radius:4px;padding:0 5px;background:#f3f3f3;color:#111}
+.s-tts .row,.s-tts label{display:block;margin:6px 0}
+.s-tts input[type=range]{width:min(320px,90%)}
+.s-text .speaking{background:#ffe9a8;box-shadow:inset 3px 0 0 #b35c00}
+.s-row.k-up .s-c1{font-weight:700}

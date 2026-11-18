@@ -973,7 +973,7 @@ function renderReader() {
     <div class="panel" id="p-bm"><h5>내 책갈피</h5><ul>${bms().map((m, k) => `<li><span><a class="link" href="/read/${m.id}/${m.p}">『${esc(m.t)}』 ${esc(m.pl || m.p)}쪽</a>${m.note ? `<br><span class="muted small">${esc(m.note)}</span>` : ''}</span><button class="link" data-bmdel="${k}" aria-label="책갈피 지우기">지우기</button></li>`).join('') || '<li class="muted">아직 책갈피가 없습니다.</li>'}</ul>
       <div class="row" style="margin-top:12px"><input id="bmNote" placeholder="이 쪽에 한 줄 메모" aria-label="책갈피 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"><button class="tbtn" id="bmSave">저장</button></div>
       <p class="note">회원가입 없이 이 기기의 브라우저에만 저장됩니다. 다른 기기로 옮길 때는 내 서재의 ‘옮기기’를 쓰세요.</p></div>
-    <div class="panel" id="p-keys"><h5>단축키 안내</h5><p class="note">Alt 키와 Shift 키를 함께 누른 채로 아래 글자 키를 누릅니다. (맥은 Option + Shift). 창을 여는 단축키는 한 번 더 누르면 창이 닫히고, 연 단추로 돌아갑니다.</p><ul class="keys">${KEYS.map(([k, d]) => `<li><kbd>Alt+Shift+${k}</kbd> ${d}</li>`).join('')}<li><kbd>Esc</kbd> 열린 창 닫기 (창이 없으면 읽기 끝내기)</li><li><kbd>→</kbd> <kbd>←</kbd> 다음·앞으로 넘기기</li></ul></div>`;
+    <div class="panel" id="p-keys"><h5>단축키 안내</h5><p class="note">Alt 키와 Shift 키를 함께 누른 채로 아래 글자 키를 누릅니다. (맥은 Option + Shift). 창을 여는 단축키는 한 번 더 누르면 창이 닫히고, 연 단추로 돌아갑니다.</p><ul class="keys">${KEYS.map(([k, d]) => `<li><kbd>Alt+Shift+${k}</kbd> ${d}</li>`).join('')}<li><kbd>Esc</kbd> 열린 창 닫기 (창이 없으면 읽기 끝내기)</li><li><kbd>→</kbd> <kbd>←</kbd> (오른쪽·왼쪽 화살표 키) 다음 쪽·앞 쪽으로 넘기기 — 눈으로 보며 읽는 분을 위한 키입니다. 화면 낭독기를 쓰실 때는 낭독기의 화살표 키 읽기가 먼저 동작합니다.</li></ul></div>`;
   bindReader();
   el._fkey = null;
   if (fkey) { const f = $(fkey, el); if (f && f.offsetParent !== null) f.focus({ preventScroll: true }); else el._fkey = fkey; }  // 닫힌 창 안의 단추면 창을 다시 연 뒤(reopen)에 커서를 되돌림
@@ -1978,6 +1978,16 @@ function bodyZoom() { return parseFloat(getComputedStyle(document.body).zoom) ||
 })();
 function stopSpeak(rerender) { try { speechSynthesis.cancel(); } catch (e) {} wake(false, 'tts'); if (R) { R.ttsTitled = null; R.ttsLocked = false; const was = R.speaking; R.speaking = false; if (rerender && was) renderReader(); } }
 document.addEventListener('keydown', e => {
+  // 열린 창 안에서 Tab 은 창 안에서만 돎 — 단축키 안내처럼 누를 것이 없는 창에서 Tab 을 누르면 커서가 엉뚱한 곳으로 가던 것 (운영자 요청, 2026-11-18)
+  if (R && e.key === 'Tab' && !e.altKey && !e.ctrlKey && !e.metaKey) {
+    const p = $('#reader .panel.open');
+    if (p && p.contains(document.activeElement)) {
+      const f = $$('button,a[href],input,select,textarea,summary,[tabindex="0"]', p).filter(x => !x.disabled && x.offsetParent !== null);
+      if (f.length) { const i = f.indexOf(document.activeElement); if (e.shiftKey ? i <= 0 : i === -1 || i === f.length - 1) { e.preventDefault(); f[e.shiftKey ? f.length - 1 : 0].focus(); } }
+      else { e.preventDefault(); }
+      return;
+    }
+  }
   if (R && e.altKey && e.shiftKey && !e.ctrlKey && !e.metaKey && readerKey(e)) { e.preventDefault(); return; }
   if (!R || e.target.matches('input,select,textarea')) return;
   if (R.ttsLocked && e.key !== 'Tab') { if ([' ', 'ArrowRight', 'ArrowLeft', 'Escape'].includes(e.key)) { e.preventDefault(); toast('듣기가 잠겨 있습니다'); } return; }
@@ -2479,7 +2489,12 @@ function panelA11y(el) {
   const mk = $('#rMark'); if (mk) mk.setAttribute('aria-keyshortcuts', 'Alt+Shift+B');
 }
 // 단축키: 브라우저·화면 낭독기 키와 겹치지 않게 Alt+Shift+글자 (WCAG 2.1.4 — 한 글자 키는 쓰지 않음)
-const KEYS = [['M', '메뉴 열기 (닫기 단추로 커서)'], ['P', '듣기 시작·멈춤'], ['S', '듣기 설정'], ['V', '화면 (기본·흑백·밤·고대비)'], ['F', '글씨 (크기·굵기·줄 간격·글꼴)'], ['N', '목차'], ['B', '이 쪽에 책갈피 넣기·빼기'], ['L', '책갈피 목록'], ['K', '지금 읽는 곳 알리기'], ['H', '단축키 안내']];
+const KEYS = [['M', '메뉴 열기 (닫기 단추로 커서)'], ['P', '듣기 시작·멈춤'], ['S', '듣기 설정'], ['V', '화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['F', '글씨 (크기·굵기·줄 간격·글꼴)'], ['N', '목차'], ['B', '이 쪽에 책갈피 넣기·빼기'], ['L', '책갈피 목록'], ['K', '지금 읽는 곳 알리기'], ['H', '단축키 안내']];
+const MODES = [['day', '기본'], ['mono', '흑백'], ['night', '밤'], ['contrast', '고대비']];
+function cycleMode() {
+  const c = store.get('mode', 'auto'); const i = MODES.findIndex(m => m[0] === c), n = MODES[(i + 1) % MODES.length];
+  applyMode(n[0]); toast(`화면: ${n[1]}`); return n;
+}
 function readerKey(e) {
   const k = (e.code || '').replace(/^Key/, ''); const el = $('#reader'); if (!el) return false;
   const say = m => { toast(m); };
@@ -2488,7 +2503,7 @@ function readerKey(e) {
     case 'P': { const b = $('#rSpeak'); if (!b) { say('이 화면에서는 듣기를 쓸 수 없습니다'); return true; } if (R.ttsLocked) { say('듣기가 잠겨 있습니다'); return true; } R.speaking ? stopSpeak(true) : speak(); return true; }
     // 창 단축키는 켜고 끄기: 한 번 더 누르면 창을 닫고 연 단추로 커서가 돌아감 (운영자 요청, 2026-11-18 — Esc 도 그대로)
     case 'S': if (!togglePanel('tts')) say('이 책은 듣기 설정이 없습니다'); return true;
-    case 'V': togglePanel('mode'); return true;
+    case 'V': { const o = !!$('#p-mode.open'); cycleMode(); renderReader(); if (o) openPanel('mode'); return true; }  // 누를 때마다 다음 화면 모드 (운영자 요청, 2026-11-18)
     case 'F': togglePanel('font'); return true;
     case 'N': if (!togglePanel('toc')) say('이 책에는 목차가 없습니다'); return true;
     case 'L': togglePanel('bm'); return true;
@@ -2518,16 +2533,26 @@ function loadFontLabels() { addCss('rf-nanum-label', 'https://fonts.googleapis.c
 const CHO = 'ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ';
 const choOf = ch => { const c = ch.charCodeAt(0) - 0xAC00; return c >= 0 && c < 11172 ? CHO[Math.floor(c / 588)] : ch.toLowerCase(); };
 function sListbox(ul) {
+  // 첫 화면 말고는 목록 맨 위에 '▲ 위로' 줄 (운영자 요청, 2026-11-18 — 책이 한 권뿐인 목록에서 ↑↓ 를 눌러도
+  // 움직일 곳이 없어 낭독기가 아무것도 읽지 않던 것: 위로 줄이 있으면 늘 움직일 곳이 있음)
+  const upA = $('#sUp');
+  if (upA && !ul.closest('.s-find') && !$(':scope > li.k-up', ul)) {
+    const pa = $$('.s-path a'), pn = pa.length ? pa[pa.length - 1].textContent.trim() : '';
+    ul.insertAdjacentHTML('afterbegin', sRow(upA.getAttribute('href'), ['▲ 위로', pn ? `한 단계 위: ${pn}` : '한 단계 위 목록'], '', 'up'));
+  }
   const items = $$(':scope > li', ul); if (!items.length) return null;
+  const hasUp = items[0].classList.contains('k-up');
   ul.setAttribute('role', 'listbox'); if (ul.dataset.label) ul.setAttribute('aria-label', ul.dataset.label);
   const key = 'dd-ssel:' + location.pathname + location.search;
-  let sel = 0; try { sel = Math.min(+sessionStorage.getItem(key) || 0, items.length - 1); } catch (e) {}
+  let sel = hasUp && items.length > 1 ? 1 : 0; try { const v = sessionStorage.getItem(key); if (v != null) sel = Math.min(+v || 0, items.length - 1); } catch (e) {}
   // 줄 안의 링크는 글자 덩어리로 바꾸고(목록 줄 안에 또 누를 것이 있으면 낭독기가 헷갈림) 주소는 줄에 기억
   items.forEach((li, i) => { li.setAttribute('role', 'option'); li.id = li.id || 'so-' + i; const a = $('a', li); if (!a) return;
     li.dataset.href = a.getAttribute('href'); if (a.hasAttribute('download')) li.dataset.dl = '1'; if (a.target === '_blank') li.dataset.ext = '1';
     const sp = document.createElement('span'); sp.className = 's-a'; while (a.firstChild) sp.appendChild(a.firstChild); a.replaceWith(sp); });
   const pick = (i, focus = true) => {
-    i = Math.max(0, Math.min(items.length - 1, i)); sel = i;
+    const want = i; i = Math.max(0, Math.min(items.length - 1, i));
+    if (focus && i === sel && want !== i) toast(want < 0 ? '목록의 처음입니다' : '목록의 끝입니다');  // 더 갈 곳이 없을 때도 소리로 알림
+    sel = i;
     items.forEach((li, k) => { const on = k === i; li.setAttribute('aria-selected', on ? 'true' : 'false'); li.tabIndex = on ? 0 : -1; li.classList.toggle('sel', on); });
     try { sessionStorage.setItem(key, i); } catch (e) {}
     if (focus) { try { items[i].focus({ preventScroll: true }); } catch (e) {} }
@@ -2565,37 +2590,117 @@ function sFocusFirst() {
   const go = () => { if (lb) lb.focus(); else { const h = $('.s-h1'); if (h) h.focus({ preventScroll: true }); } };
   if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true });
 }
+// 단순 화면 글 읽기: 장을 바꿔도 페이지를 새로 열지 않고 그 자리에서 다시 그림(듣기가 다음 장으로 이어지게)
+// 듣기(Alt+Shift+P, '▶ 듣기' 단추)는 일반 읽기 화면과 같은 목소리·설정으로 문단마다 읽음 (운영자 요청, 2026-11-18)
+const SR = { r: null, cs: null, ci: 0, id: '', title: '', speaking: false, list: [], k: 0 };
+const withR = fn => { const old = R; R = SR.r; try { return fn(); } finally { R = old; } };
+const srName = (ch, i) => ch.title || `${i + 1}번째 부분`;
 async function initSimpleRead() {
   const root = $('#sRead'); if (!root) return;
   const id = root.dataset.book, title = root.dataset.title;
   let man; try { man = await manifest(root.dataset.manifest); } catch (e) { root.innerHTML = '<p>읽기 자료를 불러오지 못했습니다. 잠시 뒤 다시 열어 주세요.</p>'; return; }
   const pages = man.pages.map((p, i) => ({ n: i + 1, label: p.label || '', img: '', big: '', text: p.text || '' }));
-  R = { id, title, by: root.dataset.by, pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, spreadOk: false, spread: false, ly: null, i: 0, view: 'text', zoom: 1, fs: 1, bold: false, lh: 1.9, font: 'serif', mw: 40, centerHeads: !!man.center_heads, hl: [], speaking: false, par: [], parMode: 'off', parD: null, parEd: [], ix: man.index || null, ixPart: 0, ixQ: '', simple: true };
-  const cs = chapters(), q = new URLSearchParams(location.search), c = +q.get('c') || 0, pp = +q.get('p') || 0;
-  const nm = (ch, i) => ch.title || `${i + 1}번째 부분`;
-  const rng = ch => { const a = R.pages[ch.from - 1], b = R.pages[ch.to - 1]; return a && a.label ? `${a.label}쪽${b && b.label && b.label !== a.label ? '~' + b.label + '쪽' : ''}` : ''; };
-  if (!c && !pp) {
-    const last = store.get('pos-' + id, 0), lc = last > 1 ? chapterOf(last) : -1;
-    const rows = (lc >= 0 ? [sRow(`?p=${last}`, [`이어 읽기: ${nm(cs[lc], lc)}`, pageName(R.pages[last - 1] || { n: last }), '지난번에 읽던 곳'], '🔖', 'resume')] : [])
-      .concat(cs.map((ch, i) => sRow(`?c=${i + 1}`, [nm(ch, i), rng(ch), `${i + 1} / ${cs.length}`], '📄', 'ch')));
-    root.innerHTML = `<div class="s-tbl" style="--cols:minmax(0,3fr) minmax(0,1.3fr) 110px">` + sHead(['장 이름', '쪽', '순서']) + `<ul class="s-list" data-label="${esc(title)} 장 목록, ${cs.length}개">${rows.join('')}</ul></div>`;
-    sStat(`장 ${cs.length}`); sFocusFirst(); R = null; return;
-  }
-  let ci = c ? Math.min(c, cs.length) - 1 : chapterOf(Math.min(pp, R.pages.length));
-  R.i = (pp && !c ? Math.min(pp, R.pages.length) : cs[ci].from) - 1;
-  const ch = cs[ci];
-  let html = reflowHtml().replace(/<div class="ch-head">[\s\S]*?<\/div>/, '').replace(/<nav class="ch-nav"[\s\S]*?<\/nav>/, '');
-  const nav = (where) => `<nav class="s-chnav" aria-label="장 이동 (${where})"><a href="./" class="s-btn">▤ 장 목록</a>${ci > 0 ? `<a class="s-btn" href="?c=${ci}">◀ 앞 장: ${esc(nm(cs[ci - 1], ci - 1))}</a>` : ''}${ci < cs.length - 1 ? `<a class="s-btn" href="?c=${ci + 2}">다음 장: ${esc(nm(cs[ci + 1], ci + 1))} ▶</a>` : '<span class="s-sub">책의 끝입니다.</span>'}</nav>`;
-  root.innerHTML = nav('위') + `<div class="s-text">${html}</div>` + nav('아래');
-  const h1 = $('.s-h1'); h1.textContent = nm(ch, ci); document.title = `${nm(ch, ci)} · ${title} · 단순 화면`;
-  const cur = $('.s-path [aria-current]'); if (cur) cur.textContent = nm(ch, ci);
+  SR.r = { id, title, by: root.dataset.by, pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, spreadOk: false, spread: false, ly: null, i: 0, view: 'text', zoom: 1, fs: 1, bold: false, lh: 1.9, font: 'serif', mw: 40, centerHeads: !!man.center_heads, hl: [], speaking: false, par: [], parMode: 'off', parD: null, parEd: [], ix: man.index || null, ixPart: 0, ixQ: '', simple: true };
+  SR.id = id; SR.title = title; SR.cs = withR(() => chapters());
+  const q = new URLSearchParams(location.search), c = +q.get('c') || 0, pp = +q.get('p') || 0;
+  if (!c && !pp) { srList(root); return; }
+  const ci = c ? Math.min(c, SR.cs.length) - 1 : withR(() => chapterOf(Math.min(pp, pages.length)));
+  srChapter(ci, pp && !c ? Math.min(pp, pages.length) : 0, false);
+  window.addEventListener('popstate', () => { const u = new URLSearchParams(location.search), cc = +u.get('c') || 0; srStop(); if (cc) srChapter(cc - 1, 0, false); else location.reload(); });
+}
+function srList(root) {
+  const cs = SR.cs, id = SR.id, pages = SR.r.pages;
+  const rng = ch => { const a = pages[ch.from - 1], b = pages[ch.to - 1]; return a && a.label ? `${a.label}쪽${b && b.label && b.label !== a.label ? '~' + b.label + '쪽' : ''}` : ''; };
+  const last = store.get('pos-' + id, 0), lc = last > 1 ? withR(() => chapterOf(last)) : -1;
+  const rows = [].concat(lc >= 0 ? [sRow(`?p=${last}`, [`이어 읽기: ${srName(cs[lc], lc)}`, pageName(pages[last - 1] || { n: last }), '지난번에 읽던 곳'], '🔖', 'resume')] : [])
+    .concat(cs.map((ch, i) => sRow(`?c=${i + 1}`, [srName(ch, i), rng(ch), `${i + 1} / ${cs.length}`], '📄', 'ch')));
+  root.innerHTML = `<div class="s-tbl" style="--cols:minmax(0,3fr) minmax(0,1.3fr) 110px">` + sHead(['장 이름', '쪽', '순서']) + `<ul class="s-list" data-label="${esc(SR.title)} 장 목록, ${cs.length}개">${rows.join('')}</ul></div>`;
+  sStat(`장 ${cs.length}`); sFocusFirst();
+}
+function srChapter(ci, page, push, then) {
+  const root = $('#sRead'), cs = SR.cs; ci = Math.max(0, Math.min(ci, cs.length - 1)); SR.ci = ci;
+  const ch = cs[ci], R0 = SR.r; R0.i = (page || ch.from) - 1;
+  const html = withR(() => reflowHtml()).replace(/<div class="ch-head">[\s\S]*?<\/div>/, '').replace(/<nav class="ch-nav"[\s\S]*?<\/nav>/, '');
+  const nav = where => `<nav class="s-chnav" aria-label="장 이동 (${where})"><a href="./" class="s-btn">▤ 장 목록</a>${ci > 0 ? `<a class="s-btn" href="?c=${ci}" data-c="${ci - 1}">◀ 앞 장: ${esc(srName(cs[ci - 1], ci - 1))}</a>` : ''}${ci < cs.length - 1 ? `<a class="s-btn" href="?c=${ci + 2}" data-c="${ci + 1}">다음 장: ${esc(srName(cs[ci + 1], ci + 1))} ▶</a>` : '<span class="s-sub">책의 끝입니다.</span>'}${where === '위' ? `<button type="button" class="s-btn" id="sSpeak" aria-keyshortcuts="Alt+Shift+P">${SR.speaking ? '■ 듣기 멈춤' : '▶ 듣기'}</button><button type="button" class="s-btn" id="sTtsBtn" aria-keyshortcuts="Alt+Shift+S" aria-expanded="false" aria-controls="sTts">듣기 설정</button>` : ''}</nav>`;
+  root.innerHTML = nav('위') + `<section id="sTts" class="s-tts" hidden aria-labelledby="sTtsH"></section><div class="s-text">${html}</div>` + nav('아래');
+  $$('.s-chnav a[data-c]', root).forEach(a => a.onclick = e => { e.preventDefault(); const go = +a.dataset.c, was = SR.speaking; srStop(); srChapter(go, 0, true); if (was) srSpeak(); });
+  $('#sSpeak').onclick = () => SR.speaking ? srStop() : srSpeak();
+  $('#sTtsBtn').onclick = () => srTtsPanel();
+  const h1 = $('.s-h1'); h1.textContent = srName(ch, ci); document.title = `${srName(ch, ci)} · ${SR.title} · 단순 화면`;
+  const cur = $('.s-path [aria-current]'); if (cur) cur.textContent = srName(ch, ci);
   sStat(`${ci + 1} / ${cs.length} 장`);
-  store.set('pos-' + id, R.i + 1);  // 일반 읽기 화면에서도 이어 읽게
-  { const n = R.i + 1, old = store.get('hist', []), h = old.filter(x => x.id !== id);  // 내 서재 '이어 읽기'
-    h.unshift({ id, t: title, by: R.by, p: n, pl: (R.pages[n - 1] || {}).label || '', ch: ch.title || '', pct: Math.round(n / R.pages.length * 100), first: (old.find(x => x.id === id) || {}).first || today(), d: today(), ts: Date.now() }); store.set('hist', h.slice(0, 100)); }
-  R = null;
-  const go = () => { const t = pp && !c && $('#pm-' + pp); if (t) t.scrollIntoView(); h1.focus({ preventScroll: !!t }); };
+  if (push) { try { history.pushState({}, '', `?c=${ci + 1}`); } catch (e) {} }
+  srSavePos(R0.i + 1, ch);
+  if (then) { then(); return; }
+  const go = () => { const t = page && $('#pm-' + page); if (t) t.scrollIntoView(); else scrollTo(0, 0); h1.focus({ preventScroll: true }); };
   if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true });
+}
+function srSavePos(n, ch) {
+  const id = SR.id; store.set('pos-' + id, n);  // 일반 읽기 화면에서도 이어 읽게
+  const old = store.get('hist', []), h = old.filter(x => x.id !== id);  // 내 서재 '이어 읽기'
+  h.unshift({ id, t: SR.title, by: SR.r.by, p: n, pl: (SR.r.pages[n - 1] || {}).label || '', ch: (ch && ch.title) || '', pct: Math.round(n / SR.r.pages.length * 100), first: (old.find(x => x.id === id) || {}).first || today(), d: today(), ts: Date.now() });
+  store.set('hist', h.slice(0, 100));
+}
+function srStop(quiet) {
+  SR.speaking = false; try { speechSynthesis.cancel(); } catch (e) {} wake(false, 'tts');
+  $$('.s-text .speaking').forEach(x => x.classList.remove('speaking'));
+  const b = $('#sSpeak'); if (b) b.textContent = '▶ 듣기';
+  if (!quiet) toast('듣기를 멈췄습니다');
+}
+// 화면에 보이는 문단(또는 장 처음)부터 읽음 — 장이 끝나면 다음 장을 그 자리에 그리고 이어 읽음
+function srSpeak(fromTop) {
+  if (!('speechSynthesis' in window)) { noVoice(); return; }
+  if (!LEX.pali) { toast('읽기를 준비하는 중입니다…'); loadLex().then(() => srSpeak(fromTop)); return; }
+  const o = ttsOpt(), pv = pickVoice(o), R0 = SR.r, ch = SR.cs[SR.ci];
+  const items = [];
+  if (ch.title) items.push({ el: $('.s-h1'), text: sayable(ch.title, o, true) });
+  $$('.s-text [data-pg][data-s]').forEach(el => {
+    const pg = R0.pages[+el.dataset.pg - 1]; if (!pg) return; const raw0 = paras(pg.text)[+el.dataset.s]; if (raw0 == null) return;
+    if (el.offsetParent === null && !el.closest('.fn-list')) return;  // 장 제목과 같아 숨긴 글
+    let raw = raw0; const fg = raw.match(FIG_RE);
+    if (fg) { if (R0.say && R0.say[fg[2]]) raw = R0.say[fg[2]]; else return; }
+    if (!o.fn && isFootnote(raw0)) return;
+    if (isTable(raw0)) { if (!o.table) return; tableLines(raw0).forEach(l => items.push({ el, text: sayable(l, o, true) })); return; }
+    items.push({ el, text: sayable(raw.replace(/^\[\^([^\]]+)\]:\s*/, (m, n) => `각주 ${n}. `), o, true) });
+  });
+  let k = 0;
+  if (!fromTop) { const top = items.findIndex((it, i) => i && it.el && it.el.getBoundingClientRect().bottom > 80); if (top > 0 && scrollY > 40) k = top; }
+  try { speechSynthesis.cancel(); } catch (e) {}
+  SR.speaking = true; wake(true, 'tts'); const b = $('#sSpeak'); if (b) b.textContent = '■ 듣기 멈춤';
+  const t0 = SR.t0 || (SR.t0 = Date.now());
+  const next = () => {
+    if (!SR.speaking) return;
+    $$('.speaking').forEach(x => x.classList.remove('speaking'));
+    if (o.sleep && Date.now() - t0 > o.sleep * 60000) { srStop(true); toast('정한 시간이 되어 듣기를 멈췄습니다'); return; }
+    if (k >= items.length) {
+      if (SR.ci >= SR.cs.length - 1) { srStop(true); toast('책의 끝입니다'); return; }
+      if (o.chapterStop) { srStop(true); toast('이 장을 다 읽었습니다'); return; }
+      srChapter(SR.ci + 1, 0, true, () => { scrollTo(0, 0); srSpeak(true); }); return;
+    }
+    const it = items[k++]; if (!it.text) { next(); return; }
+    if (it.el) { it.el.classList.add('speaking'); if (o.follow) it.el.scrollIntoView({ block: 'nearest' }); const n = +it.el.dataset.pg; if (n) srSavePos(n, ch); }
+    speakSegs(it.text, o, pv, () => { if (SR.speaking) setTimeout(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') srStop(true); });
+  };
+  next();
+}
+// 단순 화면의 듣기 설정 (일반 읽기 화면과 같은 설정을 씀)
+function srTtsPanel(force) {
+  const s = $('#sTts'), b = $('#sTtsBtn'); if (!s) return false;
+  const open = force != null ? force : s.hidden;
+  if (!open) { s.hidden = true; if (b) { b.setAttribute('aria-expanded', 'false'); b.focus(); } return true; }
+  s.innerHTML = ttsPanel().replace('<h5>', '<h2 id="sTtsH" tabindex="-1">').replace('</h5>', '</h2>');
+  s.hidden = false; if (b) b.setAttribute('aria-expanded', 'true');
+  $$('[data-tts]', s).forEach(inp => inp.addEventListener(inp.type === 'range' ? 'input' : 'change', () => {
+    const o = store.get('tts', {}), k = inp.dataset.tts;
+    o[k] = inp.type === 'checkbox' ? inp.checked : (inp.type === 'range' || k === 'pause' || k === 'sleep') ? +inp.value : inp.value; store.set('tts', o);
+    if (k === 'rate') { const v = (+inp.value).toFixed(1) + '배'; $('#ttsRateV').textContent = v; inp.setAttribute('aria-valuetext', v); }
+    if (k === 'pitch') { $('#ttsPitchV').textContent = (+inp.value).toFixed(1); inp.setAttribute('aria-valuetext', (+inp.value).toFixed(1)); }
+    if (k === 'enRate') { const v = Math.round(+inp.value * 100) + '%'; $('#ttsEnRateV').textContent = v; inp.setAttribute('aria-valuetext', v); }
+  }));
+  const tr = $('#ttsTry', s); if (tr) tr.onclick = () => { if (!('speechSynthesis' in window)) return noVoice(); const o = ttsOpt(); try { speechSynthesis.cancel(); } catch (e) {} speakSegs(sayable('이 빠르기와 목소리로 읽습니다.', o, true), o, pickVoice(o), () => {}, () => {}); };
+  const rs = $('#ttsReset', s); if (rs) rs.onclick = () => { store.set('tts', {}); srTtsPanel(true); toast('처음 설정으로 돌렸습니다'); };
+  const ap = $('#ttsApply', s); if (ap) ap.onclick = () => { srTtsPanel(false); if (SR.speaking) { srStop(true); srSpeak(); } };
+  setTimeout(() => $('#sTtsH').focus(), 30); return true;
 }
 function initSimpleMine() {
   const root = $('#sMine'); if (!root) return;
@@ -2621,6 +2726,40 @@ function initSimpleFind() {
   q.addEventListener('keydown', e => { if ((e.key === 'ArrowDown' || e.key === 'Enter') && $('.s-list', out)) { e.preventDefault(); $('.s-list', out)._lb.pick(0); } });
   run(); const go = () => q.focus(); if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true });
 }
+const S_KEYS = [['P', '듣기 시작·멈춤 (책의 장 글 화면에서)'], ['S', '듣기 설정 열기·닫기 (장 글 화면에서)'], ['V', '화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['N', '장 목록으로 (책을 읽을 때)'], ['B', '지금 읽는 쪽에 책갈피 넣기·빼기'], ['L', '내 서재 (이어 읽기·책갈피)'], ['M', '첫 화면 (폴더 목록)'], ['K', '지금 위치 알리기'], ['H', '단축키 안내 열기·닫기']];
+function simpleHelp() {
+  const old = $('#sKeys'); if (old) { old.remove(); const b = $('.s-list [aria-selected="true"]') || $('.s-h1'); if (b) b.focus(); return; }
+  $('.s-h1').insertAdjacentHTML('afterend', `<section id="sKeys" class="s-keys" aria-labelledby="sKeysH"><h2 id="sKeysH" tabindex="-1">단축키 안내</h2><p>Alt 키와 Shift 키를 함께 누른 채로 글자 키를 누릅니다 (맥은 Option + Shift).</p><ul>${S_KEYS.map(([k, d]) => `<li><kbd>Alt+Shift+${k}</kbd> ${d}</li>`).join('')}<li><kbd>↑</kbd> <kbd>↓</kbd> 목록에서 줄 고르기, <kbd>Enter</kbd> 열기, <kbd>Backspace</kbd> 위 목록으로</li></ul><button type="button" class="s-btn" id="sKeysX">단축키 안내 닫기</button></section>`);
+  $('#sKeysX').onclick = simpleHelp; $('#sKeysH').focus();
+}
+function simpleKey(e) {
+  const k = (e.code || '').replace(/^Key/, ''), reading = !!(SR.r && $('#sSpeak'));
+  switch (k) {
+    case 'V': cycleMode(); return true;
+    case 'H': simpleHelp(); return true;
+    case 'P': if (!reading) { toast('듣기는 책의 장 글 화면에서 쓸 수 있습니다. 책 → 온라인으로 읽기 → 장을 고르세요'); return true; } SR.speaking ? srStop() : srSpeak(); return true;
+    case 'S': if (!reading) { toast('듣기 설정은 책의 장 글 화면에서 쓸 수 있습니다'); return true; } srTtsPanel(); return true;
+    case 'N': if (!SR.r) { toast('책을 읽을 때 쓰는 키입니다'); return true; } location.href = './'; return true;
+    case 'L': location.href = '/simple/mine/'; return true;
+    case 'M': location.href = '/simple/'; return true;
+    case 'B': {
+      if (!reading) { toast('책갈피는 책의 장 글 화면에서 넣을 수 있습니다'); return true; }
+      const el = $$('.s-text [data-pg]').find(x => x.getBoundingClientRect().bottom > 80) || $('.s-text [data-pg]'); if (!el) return true;
+      const n = +el.dataset.pg, pg = SR.r.pages[n - 1] || { n }, l = store.get('bm', []), i = l.findIndex(m => m.id === SR.id && m.p === n);
+      if (i > -1) { l.splice(i, 1); toast(`${pageName(pg)}의 책갈피를 지웠습니다`); } else { l.push({ id: SR.id, t: SR.title, p: n, pl: pg.label || '', note: '', d: today() }); toast(`${pageName(pg)}에 책갈피를 달았습니다`); }
+      store.set('bm', l); return true;
+    }
+    case 'K': {
+      const path = $$('.s-path a, .s-path [aria-current]').map(x => x.textContent.trim()).join(', ');
+      const o = $('.s-list [aria-selected="true"] .s-c1');
+      let m = `지금 위치: ${path}`;
+      if (reading) { const el = $$('.s-text [data-pg]').find(x => x.getBoundingClientRect().bottom > 80); if (el) m += `, ${pageName(SR.r.pages[+el.dataset.pg - 1] || {})}`; if (SR.speaking) m += ', 듣는 중'; }
+      else if (o) m += `, 고른 줄: ${o.textContent.trim()}`;
+      toast(m); return true;
+    }
+  }
+  return false;
+}
 (function initSimple() {
   // 어느 화면에서든 '단순 | 일반'을 고르면 기기가 기억
   document.addEventListener('click', e => { const a = e.target.closest('[data-ui]'); if (a) store.set('ui', a.dataset.ui); });
@@ -2630,6 +2769,8 @@ function initSimpleFind() {
   if (pg === 'simple-read') initSimpleRead(); else if (pg === 'simple-mine') initSimpleMine(); else if (pg === 'simple-find') initSimpleFind();
   else if (pg === 'simple-text') { const go = () => $('.s-h1').focus({ preventScroll: true }); if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true }); }
   else sFocusFirst();
+  // 단순 화면에서도 Alt+Shift 단축키 (운영자 요청, 2026-11-18)
+  document.addEventListener('keydown', e => { if (e.altKey && e.shiftKey && !e.ctrlKey && !e.metaKey && simpleKey(e)) e.preventDefault(); });
   // 목록 밖에서도 Backspace 로 위 목록으로 (입력 칸 밖에서만)
   document.addEventListener('keydown', e => { if (e.key === 'Backspace' && !e.altKey && !e.ctrlKey && !e.target.matches('input,textarea,select,.s-list,.s-list *')) { const u = $('#sUp'); if (u) { e.preventDefault(); u.click(); } } });
 })();
