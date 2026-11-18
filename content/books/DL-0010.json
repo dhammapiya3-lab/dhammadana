@@ -19,7 +19,9 @@
   ],
   "book_type": "법문집",
   "original_title": "သဘောထားမှန်မှအားထုတ်ပါ",
-  "original_language": ["미얀마어"],
+  "original_language": [
+    "미얀마어"
+  ],
   "original_source": "",
   "series": "",
   "main": [],
@@ -112,5 +114,12 @@
   "added": "2026-11-08",
   "order": null,
   "hidden": false,
-  "hide_update": false
+  "hide_update": false,
+  "originals": [
+    {
+      "lang": "미얀마어",
+      "mode": "file",
+      "url": "orig/DL-0010/DL-0010_원서_미얀마어.pdf"
+    }
+  ]
 }
