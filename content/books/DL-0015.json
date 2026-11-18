@@ -163,7 +163,10 @@
     {
       "lang": "영어",
       "mode": "file",
-      "url": "orig/DL-0015/DL-0015_원서_영어.pdf"
+      "url": "orig/DL-0015/DL-0015_원서_영어.pdf",
+      "sources": [
+        "https://www.urbandharma.org/pdf/wordofbuddha.pdf"
+      ]
     }
   ]
 }
