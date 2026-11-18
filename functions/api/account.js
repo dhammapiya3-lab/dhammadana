@@ -76,7 +76,7 @@ async function findBudget(env) {  // 아이디 찾기 메일: 사이트 전체 �
   c.n++; await putJ(env, k, c); return true;
 }
 
-const DATA_KEY = /^(bm|ul|hist|plast|pl|pos-[\w.-]{1,40}|ppos-[^\s]{1,300}|sub-[\w.-]{1,60}|sb-b-[\w.-]{1,60})$/;  // sb-b-<책>: 그림책 사이트 내 서재
+const DATA_KEY = /^(bm|ul|hist|plast|pl|pos-[\w.-]{1,40}|ppos-[^\s]{1,300}|sub-[\w.-]{1,60}|sb-b-[\w.-]{1,60}|ttspos-[\w.-]{1,40}|abpos-[\w.-]{1,40}|stalk-hist)$/;  // ttspos-·abpos-·stalk-hist: TTS·오디오북·법문 이어 듣기 (2026-11-18)  // sb-b-<책>: 그림책 사이트 내 서재
 
 // 그림책 사이트(storybooks.dhammadana.kr)에서도 같은 회원으로 로그인·내 서재 이어 읽기 (운영자 요청, 2026-11-14)
 // 그 사이트에서는 로그인·확인·로그아웃·기록 맞추기만 됨 (가입·비밀번호 찾기는 이 사이트에서)

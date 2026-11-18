@@ -960,7 +960,7 @@ function renderReader() {
        <div class="row">글자 굵기 <span class="seg"><button data-bold="0" class="${R.bold ? '' : 'on'}">보통</button><button data-bold="1" class="${R.bold ? 'on' : ''}">굵게</button></span></div>
        <div class="row">줄 간격 <span class="seg">${[[1.6, '좁게'], [1.9, '보통'], [2.2, '넓게']].map(([v, l]) => `<button data-lh="${v}" class="${R.lh === v ? 'on' : ''}">${l}</button>`).join('')}</span></div>
        <div class="row row-col">글꼴 <span class="seg seg-grid seg-font">${RFONTS.map(([k, l, ff]) => `<button data-font="${k}" class="${R.font === k ? 'on' : ''}" style="font-family:${ff}">${l}</button>`).join('')}</span></div>
-       <div class="row">글 너비 <span class="seg">${[[28, '좁게'], [36, '보통'], [46, '넓게'], [70, '화면 가득']].map(([v, l]) => `<button data-mw="${v}" class="${R.mw === v ? 'on' : ''}">${l}</button>`).join('')}</span></div>${R.spreadOk && spreadWide() ? `
+       <div class="row mw-row">글 너비 <span class="seg">${[[28, '좁게'], [36, '보통'], [46, '넓게'], [70, '화면 가득']].map(([v, l]) => `<button data-mw="${v}" class="${R.mw === v ? 'on' : ''}">${l}</button>`).join('')}</span></div>${R.spreadOk && spreadWide() ? `
        <div class="row">쪽 보기 <span class="seg"><button data-spread="0" class="${R.spread ? '' : 'on'}">한쪽씩</button><button data-spread="1" class="${R.spread ? 'on' : ''}">양쪽으로</button></span></div>` : ''}`}</div>
     <div class="panel" id="p-tts">${ttsPanel()}</div>
     ${R.par.length ? `<div class="panel" id="p-par"><h5>⇄ 원서 대조</h5><div class="seg">${[['off', '끄기'], ['para', '문단 나란히'], ['sent', '문장마다']].map(([k, v]) => `<button data-parm="${k}" class="${R.parMode === k ? 'on' : ''}">${v}</button>`).join('')}</div>
@@ -2109,14 +2109,18 @@ function renderNotes() {
 
 /* ---------- 회원 (독서 기록 이어 보기) ---------- */
 // 이어 보는 것: 책갈피(bm)·밑줄(ul)·내 서재 기록(hist)·읽던 쪽(pos-)·법문 재생 위치(ppos-·plast·pl·sub-)
-const SYNC_RE = /^(bm|ul|hist|plast|pl|pos-.+|ppos-.+|sub-.+)$/;
+const SYNC_RE = /^(bm|ul|hist|plast|pl|pos-.+|ppos-.+|sub-.+|ttspos-.+|abpos-.+|stalk-hist)$/;  // ttspos-·abpos-·stalk-hist: TTS·오디오북·법문 이어 듣기도 (운영자 요청, 2026-11-18)
 const ACC = { get token() { try { return localStorage.getItem('dd-acct') || ''; } catch (e) { return ''; } }, get id() { try { return localStorage.getItem('dd-acct-id') || ''; } catch (e) { return ''; } } };
 const syncT = () => { try { return JSON.parse(localStorage.getItem('dd-synct') || '{}'); } catch (e) { return {}; } };
 let syncTimer = null;
 function syncMark(k) {
   if (!SYNC_RE.test(k)) return;
   try { const m = syncT(); m[k] = Date.now(); localStorage.setItem('dd-synct', JSON.stringify(m)); } catch (e) {}
-  if (ACC.token) { clearTimeout(syncTimer); syncTimer = setTimeout(() => syncNow(), 2500); }
+  if (!ACC.token) return;
+  // 듣는 자리(문단·초마다 바뀜)는 30초에 한 번만 보냄 — 떠날 때·화면을 끌 때는 바로 보냄(visibilitychange)
+  const due = Date.now() + (/^(ttspos-|abpos-|stalk-hist)/.test(k) ? 30000 : 2500);
+  if (syncTimer && syncNow._due && syncNow._due <= due) return;
+  clearTimeout(syncTimer); syncNow._due = due; syncTimer = setTimeout(() => { syncTimer = null; syncNow._due = 0; syncNow(); }, due - Date.now());
 }
 async function acctApi(op, o = {}) {
   const r = await fetch('/api/account', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ op, token: ACC.token, ...o }), keepalive: op === 'sync' });
@@ -2169,6 +2173,8 @@ document.addEventListener('visibilitychange', () => { if (!ACC.token) return; if
 function initAccount() {
   const root = $('#acctRoot'); if (!root) return;
   const q = new URLSearchParams(location.search), rt = q.get('reset');
+  const base = root.dataset.base || '/account/', simple = !!root.dataset.base;  // 단순 화면(/simple/account/)도 같은 화면을 씀 (운영자 요청, 2026-11-18)
+  const goFocus = () => { if (!simple) return; setTimeout(() => { const h = $('h2, .acct-msg', root); if (h) { h.setAttribute('tabindex', '-1'); try { h.focus(); } catch (e) {} } }, 60); };  // 로그인·가입·로그아웃 뒤 바뀐 화면의 제목부터 낭독기가 읽게
   const msg = (t, err) => `<div class="acct-msg${err ? ' err' : ''}" role="${err ? 'alert' : 'status'}">${esc(t)}</div>`;  // 화면 낭독기가 안내 글을 바로 읽음 (2026-11-17)
   const codeBox = c => `<div class="acct-code"><b>${esc(c)}</b><button class="tbtn sm" data-copy="${esc(c)}">복사</button></div>
     <div class="acct-warn">⚠ 이 <b>복구 코드</b>는 비밀번호를 잊었을 때 쓰는 열쇠입니다. <b>만들어지는 지금 한 번만 표시</b>되고, 이 화면을 벗어나면 다시 볼 수 없습니다. 운영자도 볼 수 없어 알려 드릴 수 없으니, <b>사진을 찍거나 적어서 잘 보관</b>하세요.</div>`;
@@ -2180,7 +2186,7 @@ function initAccount() {
 
   if (rt) {  // 이메일 링크로 왔을 때
     root.innerHTML = `<h2>새 비밀번호 정하기</h2>${form('fReset', F('pw', '새 비밀번호 (8자 이상)', 'password', PWH) + F('pw2', '새 비밀번호 한 번 더', 'password', PWH), '비밀번호 바꾸기')}`;
-    on('fReset', async (o, out) => { if (o.pw !== o.pw2) throw new Error('두 비밀번호가 같지 않습니다.'); const j = await acctApi('reset_pw', { rt, pw: o.pw }); acctSet(j.id, j.token); history.replaceState(null, '', '/account/'); syncNow(); initAccount(); toast('새 비밀번호로 바꾸고 로그인했습니다'); });
+    on('fReset', async (o, out) => { if (o.pw !== o.pw2) throw new Error('두 비밀번호가 같지 않습니다.'); const j = await acctApi('reset_pw', { rt, pw: o.pw }); acctSet(j.id, j.token); history.replaceState(null, '', base); syncNow(); initAccount(); goFocus(); toast('새 비밀번호로 바꾸고 로그인했습니다'); });
     return;
   }
   if (ACC.token) {  // 로그인한 상태
@@ -2194,7 +2200,7 @@ function initAccount() {
         <details class="acct-more"><summary>복구 코드 새로 받기</summary><p class="small">복구 코드를 잃어버렸으면 새로 받으세요. 예전 코드는 못 쓰게 됩니다. 새 코드도 <b>만들어지는 순간 한 번만 표시</b>되니 잘 보관하세요.</p>${form('fCode', F('pw', '지금 비밀번호', 'password', 'autocomplete="current-password" required'), '새 복구 코드 받기')}</details>
         <details class="acct-more"><summary>회원 탈퇴</summary><p class="small">아이디와 저장소의 기록이 모두 지워집니다(이 기기에 있는 기록은 남습니다). 되돌릴 수 없습니다.</p>${form('fDel', F('pw', '지금 비밀번호', 'password', 'autocomplete="current-password" required'), '탈퇴하기')}</details>`;
       $('#aSync').onclick = async () => { await syncNow(); $('#aSyncOut').innerHTML = msg('맞췄습니다. 다른 기기의 기록도 이 기기에 들어왔습니다.'); };
-      $('#aOut').onclick = async () => { try { await acctApi('logout'); } catch (e) {} acctClear(); initAccount(); toast('로그아웃했습니다. 이 기기의 기록은 그대로 남습니다'); };
+      $('#aOut').onclick = async () => { try { await acctApi('logout'); } catch (e) {} acctClear(); initAccount(); goFocus(); toast('로그아웃했습니다. 이 기기의 기록은 그대로 남습니다'); };
       on('fPw', async (o, out) => { await acctApi('change_pw', o); out.innerHTML = msg('비밀번호를 바꿨습니다.'); });
       on('fMail', async (o, out) => { const j = await acctApi('set_email', o); out.innerHTML = msg(j.hasEmail ? '이메일을 저장했습니다.' : '이메일을 지웠습니다.'); });
       on('fCode', async (o, out) => { const j = await acctApi('new_code', o); out.innerHTML = codeBox(j.recovery); bindCopy(); });
@@ -2204,27 +2210,27 @@ function initAccount() {
   }
   root.innerHTML = `<div class="tabs acct-tabs"><a href="#login" data-t="login" class="on">로그인</a><a href="#signup" data-t="signup">회원 가입</a><a href="#find" data-t="find">아이디·비밀번호 찾기</a></div><div id="acctPane"></div>`;
   const pane = t => {
-    $$('[data-t]', root).forEach(a => a.classList.toggle('on', a.dataset.t === t));
+    $$('[data-t]', root).forEach(a => { a.classList.toggle('on', a.dataset.t === t); if (a.dataset.t === t) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
     const P = $('#acctPane', root);
     if (t === 'login') P.innerHTML = form('fIn', F('id', '아이디', 'text', 'autocomplete="username" required') + F('pw', '비밀번호', 'password', 'autocomplete="current-password" required'), '로그인');
     if (t === 'signup') P.innerHTML = `<p class="small">아이디와 비밀번호만 있으면 됩니다. 이메일은 넣고 싶은 분만 넣으세요(아이디·비밀번호를 메일로 찾을 때만 씀). 가입하면 비밀번호를 잊었을 때 쓰는 <b>복구 코드</b>를 드립니다. 복구 코드는 <b>만들어지는 순간 한 번만 표시</b>되니 꼭 잘 보관하세요.</p>` +
       form('fUp', F('id', '아이디 (한글·영문·숫자 2~20자)', 'text', IDH) + F('pw', '비밀번호 (8자 이상)', 'password', PWH) + F('pw2', '비밀번호 한 번 더', 'password', PWH) + F('email', '이메일 (선택)', 'email', 'autocomplete="email"'), '가입하기');
-    if (t === 'find') P.innerHTML = `<h3>아이디를 잊었을 때</h3><p class="small">가입할 때(또는 나중에) 넣어 둔 이메일을 적으면, 그 이메일로 가입한 아이디를 메일로 알려 드립니다. 이메일을 넣지 않은 분은 아이디를 찾을 수 없습니다.</p>` +
+    if (t === 'find') P.innerHTML = `<h2 class="acct-h">아이디를 잊었을 때</h2><p class="small">가입할 때(또는 나중에) 넣어 둔 이메일을 적으면, 그 이메일로 가입한 아이디를 메일로 알려 드립니다. 이메일을 넣지 않은 분은 아이디를 찾을 수 없습니다.</p>` +
       form('fFid', F('email', '이메일', 'email', 'autocomplete="email" required'), '아이디 메일로 받기') +
-      `<h3 style="margin-top:28px">비밀번호를 잊었을 때</h3><h3>① 복구 코드로 찾기</h3><p class="small">가입할 때 받은 복구 코드(예: K7QM-2XPA-9TZD)를 넣고 새 비밀번호를 정하세요.</p>` +
+      `<h2 class="acct-h" style="margin-top:28px">비밀번호를 잊었을 때</h2><h3>① 복구 코드로 찾기</h3><p class="small">가입할 때 받은 복구 코드(예: K7QM-2XPA-9TZD)를 넣고 새 비밀번호를 정하세요.</p>` +
       form('fRc', F('id', '아이디', 'text', 'autocomplete="username" required') + F('code', '복구 코드', 'text', 'required autocomplete="off"') + F('pw', '새 비밀번호 (8자 이상)', 'password', PWH), '새 비밀번호로 바꾸기') +
       `<h3>② 이메일로 찾기</h3><p class="small">가입할 때(또는 나중에) 이메일을 넣어 둔 분만 쓸 수 있습니다. 새 비밀번호를 정하는 링크를 메일로 보내 드립니다.</p>` +
       form('fMr', F('id', '아이디', 'text', 'autocomplete="username" required'), '메일 보내기') +
       `<p class="small muted">둘 다 안 되면 계정을 되찾을 수 없습니다(운영자도 비밀번호·복구 코드를 볼 수 없습니다). 새로 가입해 주세요.</p>`;
-    on('fIn', async o => { const j = await acctApi('login', o); acctSet(j.id, j.token); await syncNow(); toast(j.id + ' 님, 로그인했습니다'); initAccount(); });
+    on('fIn', async o => { const j = await acctApi('login', o); acctSet(j.id, j.token); await syncNow(); toast(j.id + ' 님, 로그인했습니다'); initAccount(); goFocus(); });
     on('fUp', async (o, out) => { if (o.pw !== o.pw2) throw new Error('두 비밀번호가 같지 않습니다.'); const j = await acctApi('signup', { id: o.id, pw: o.pw, email: o.email }); acctSet(j.id, j.token); syncNow();
-      root.innerHTML = `<div class="acct-card"><h2>가입했습니다 🙏</h2>${codeBox(j.recovery)}<div class="row"><a class="btn" href="/account/">다 적었습니다</a></div></div>`; bindCopy(); });
+      root.innerHTML = `<div class="acct-card"><h2>가입했습니다 🙏</h2>${codeBox(j.recovery)}<div class="row"><a class="btn" href="${base}">다 적었습니다</a></div></div>`; bindCopy(); goFocus(); });
     on('fRc', async (o, out) => { const j = await acctApi('recover', o); acctSet(j.id, j.token); syncNow();
-      root.innerHTML = `<div class="acct-card"><h2>비밀번호를 바꿨습니다</h2><p>예전 복구 코드는 이제 못 씁니다. 새 복구 코드를 적어 두세요.</p>${codeBox(j.recovery)}<div class="row"><a class="btn" href="/account/">다 적었습니다</a></div></div>`; bindCopy(); });
+      root.innerHTML = `<div class="acct-card"><h2>비밀번호를 바꿨습니다</h2><p>예전 복구 코드는 이제 못 씁니다. 새 복구 코드를 적어 두세요.</p>${codeBox(j.recovery)}<div class="row"><a class="btn" href="${base}">다 적었습니다</a></div></div>`; bindCopy(); goFocus(); });
     on('fMr', async (o, out) => { const j = await acctApi('mail_reset', o); out.innerHTML = msg(j.msg); });
     on('fFid', async (o, out) => { const j = await acctApi('find_id', o); out.innerHTML = msg(j.msg); });
   };
-  $$('[data-t]', root).forEach(a => a.onclick = ev => { ev.preventDefault(); pane(a.dataset.t); });
+  $$('[data-t]', root).forEach(a => a.onclick = ev => { ev.preventDefault(); pane(a.dataset.t); if (simple) { const f = $('#acctPane input, #acctPane h3', root); if (f) { if (!f.matches('input')) f.setAttribute('tabindex', '-1'); f.focus(); } } });  // 단순 화면: 고른 칸의 첫 입력 칸으로
   pane((location.hash || '#login').slice(1).replace(/[^a-z]/g, '') || 'login');
 }
 
@@ -3075,6 +3081,11 @@ function srTtsPanel(force) {
   const ap = $('#ttsApply', s); if (ap) ap.onclick = () => { srTtsPanel(false); if (SR.speaking) { srStop(true); srSpeak(); } };
   setTimeout(() => $('#sTtsH').focus(), 30); return true;
 }
+// 단순 화면 첫 화면의 '로그인 · 회원가입' 줄: 로그인했으면 '내 계정: 아이디' 로 (운영자 요청, 2026-11-18)
+function sAcctRow() {
+  if (!ACC.token) return; const li = $$('.s-list > li').find(x => (x.dataset.href || '').startsWith('/simple/account/')); if (!li) return;
+  const c1 = $('.s-c1', li), c3 = $('.s-c3', li); if (c1 && !li.dataset.acc) { li.dataset.acc = 1; c1.textContent = `내 계정: ${ACC.id} (로그인됨)`; if (c3) c3.textContent = '로그아웃·비밀번호 바꾸기'; }
+}
 function initSimpleMine() {
   const root = $('#sMine'); if (!root) return;
   // 내 서재는 폴더 셋 (운영자 요청, 2026-11-18): 맨 위 '최근에 하던 것' 한 줄 + 📖 이어 읽기 · 🎧 이어 듣기(오디오북·법문) · 🔖 책갈피 — 폴더 안은 최근 것이 위
@@ -3105,7 +3116,8 @@ function initSimpleMine() {
     if (B.length) items.push(F('/simple/mine/bm/', '책갈피', `${B.length}개`, '🔖'));
     label = '내 서재'; stat = `읽던 책 ${H.length} · TTS ${TS.length} · 음성 녹음 ${AL.length + TL.length} · 책갈피 ${B.length}`;
   }
-  root.innerHTML = items.length ? `<div class="s-tbl" style="--cols:minmax(0,2fr) minmax(0,2.4fr) minmax(0,1fr)">` + sHead(['이름', '어디', '언제']) + `<ul class="s-list" data-label="${esc(label)}">${items.map(x => x.html).join('')}</ul></div>` : '<p>아직 이 기기에서 읽거나 들은 책·법문이 없습니다. 책을 읽거나 법문·오디오북을 들으면 여기에 이어 읽을 곳·이어 들을 곳이 남습니다.</p>';
+  const acc = f ? '' : (ACC.token ? `<p class="s-acct-note">👤 ${esc(ACC.id)} 님으로 로그인되어 있습니다 — 다른 기기에서도 같은 아이디로 로그인하면 이 기록이 이어집니다. <a href="/simple/account/">내 계정</a></p>` : `<p class="s-acct-note">로그인하면 다른 기기에서도 이어 읽기·이어 듣기·책갈피가 이어집니다. <a href="/simple/account/">로그인 · 회원가입</a></p>`);  // 운영자 요청, 2026-11-18
+  root.innerHTML = acc + (items.length ? `<div class="s-tbl" style="--cols:minmax(0,2fr) minmax(0,2.4fr) minmax(0,1fr)">` + sHead(['이름', '어디', '언제']) + `<ul class="s-list" data-label="${esc(label)}">${items.map(x => x.html).join('')}</ul></div>` : '<p>아직 이 기기에서 읽거나 들은 책·법문이 없습니다. 책을 읽거나 법문·오디오북을 들으면 여기에 이어 읽을 곳·이어 들을 곳이 남습니다.</p>');
   const eps = items.filter(x => x.ep);
   $$('.s-list > li.k-ep', root).forEach((li, i) => { const h = eps[i].ep; li.dataset.t = h.t; li.dataset.pl = h.pl; li.dataset.src = h.p || '/simple/talks/'; li.dataset.pos = h.pos || 0; });
   sStat(stat); sFocusFirst();
@@ -3234,9 +3246,10 @@ function sPageInit() {
   STALK.pageList = null;
   sResumeCount();
   if (pg === 'simple-talk') initSimpleTalk(); else sPlayerPlace();
-  if (pg === 'simple-read') initSimpleRead(); else if (pg === 'simple-mine') initSimpleMine(); else if (pg === 'simple-find') initSimpleFind();
-  else if (pg === 'simple-text') { const go = () => $('.s-h1').focus({ preventScroll: true }); if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true }); }
+  if (pg === 'simple-read') initSimpleRead(); else if (pg === 'simple-mine') initSimpleMine(); else if (pg === 'simple-find') initSimpleFind(); else if (pg === 'simple-acct') initAccount();
+  else if (pg === 'simple-text' || pg === 'simple-acct') { const go = () => $('.s-h1').focus({ preventScroll: true }); if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true }); }
   else sFocusFirst();
+  sAcctRow();
 }
 (function initSimple() {
   // 어느 화면에서든 '단순 | 일반'을 고르면 기기가 기억

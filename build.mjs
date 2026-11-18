@@ -1051,6 +1051,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     // 가장 자주 쓰는 '내 서재'·'찾기'를 맨 위에 (운영자 요청, 2026-11-18)
     F('내 서재 (이어 읽기·TTS 이어 듣기·음성 녹음 이어 듣기·책갈피)', '/simple/mine/', '이 기기에 저장된 기록'),
     F('책 제목으로 찾기', '/simple/find/', '제목·지은이로 찾기', '🔍', 'find', '찾기'),
+    F('로그인 · 회원가입', '/simple/account/', '다른 기기에서도 이어 읽기·듣기', '👤', 'acct', '회원'),  // 로그인했으면 app.js sAcctRow 가 '내 계정: 아이디'로 (운영자 요청, 2026-11-18)
     F('최근 올라온 책', '/simple/recent/', `${lib.length}권`),
     ...(mList.length ? [F('주요 자료', '/simple/main/', `${mList.length}가지`)] : []),
     F('스승별로 보기', '/simple/teachers/', `${tList.length}분`),
@@ -1141,6 +1142,8 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
   // 도서관 소개 (운영자 요청, 2026-11-18)
   { const ab = PAGES.about; put('simple/about/index.html', simpleLayout({ title: ab.meta.title || '도서관 소개', path: [['도서관 소개', '']], up: '/simple/', normal: '/about/', page: 'simple-text',
     body: `<div class="s-prose prose">${ab.meta.homage ? `<p class="homage">${esc(ab.meta.homage)}</p>` : ''}${ab.html}</div><p><a class="s-link" href="/simple/">◀ 첫 화면으로 돌아가기</a></p>` })); }
+  // 로그인·회원 가입 (운영자 요청, 2026-11-18): 일반 화면 /account/ 와 같은 서버·같은 화면(app.js initAccount)을 단순 화면 틀에
+  put('simple/account/index.html', simpleLayout({ title: '로그인 · 회원가입', path: [['로그인 · 회원가입', '']], up: '/simple/', normal: '/account/', page: 'simple-acct', body: '<p>아이디로 로그인하면 이 기기의 이어 읽기·TTS 이어 듣기·음성 녹음 이어 듣기·책갈피가 저장되고, 다른 기기에서 같은 아이디로 로그인하면 이어집니다. 가입에는 아이디와 비밀번호만 있으면 됩니다.</p><div id="acctRoot" class="s-acct" data-base="/simple/account/"></div>' }));
   put('simple/mine/index.html', simpleLayout({ title: '내 서재', path: [['내 서재', '']], up: '/simple/', normal: '/mynotes/', page: 'simple-mine', body: '<div id="sMine"><p>이 기기에 저장된 기록을 불러오는 중입니다…</p></div>' }));
   // 내 서재 폴더 셋 (운영자 요청, 2026-11-18): 이어 읽기·이어 듣기·책갈피 — 목록은 app.js 가 기기 기록으로 그림
   for (const [f, t] of [['read', '이어 읽기'], ['tts', 'TTS 이어 듣기'], ['listen', '음성 녹음 이어 듣기'], ['bm', '책갈피']]) put(`simple/mine/${f}/index.html`, simpleLayout({ title: t, path: [['내 서재', '/simple/mine/'], [t, '']], up: '/simple/mine/', normal: '/mynotes/', page: 'simple-mine', body: `<div id="sMine" data-f="${f}"><p>이 기기에 저장된 기록을 불러오는 중입니다…</p></div>` }));

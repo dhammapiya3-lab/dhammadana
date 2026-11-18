@@ -1305,3 +1305,15 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 .simple-ui .s-pgform input{font-size:18px;padding:6px 8px;border:2px solid #1f3b8a;border-radius:6px;width:7em}
 .simple-ui .s-pgform .s-btn{color:#1f3b8a;border-color:#1f3b8a;font-size:17px}
 :root.mode-night .simple-ui .s-pgform .s-btn,:root.mode-contrast .simple-ui .s-pgform .s-btn{color:#ffe36b;border-color:#ffe36b;background:#000}
+/* 단순 화면 로그인·내 서재 로그인 안내 (운영자 요청, 2026-11-18) */
+.simple-ui .s-acct-note{font-size:17px;margin:0 0 14px;padding:10px 12px;border:2px solid #1f3b8a;border-radius:8px}
+.simple-ui .s-acct-note a{font-weight:700}
+.simple-ui .s-acct{font-size:18px;max-width:640px}
+.simple-ui .s-acct .acct-form label{display:block;margin:10px 0}
+.simple-ui .s-acct .acct-form input{display:block;width:100%;font-size:18px;padding:8px;margin-top:4px;border:2px solid #555;border-radius:6px;box-sizing:border-box}
+.simple-ui .s-acct .acct-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 16px}
+.simple-ui .s-acct .acct-tabs a{padding:8px 12px;border:2px solid #1f3b8a;border-radius:6px;text-decoration:none;font-size:17px}
+.simple-ui .s-acct .acct-tabs a.on{background:#1f3b8a;color:#fff}
+/* 글 너비: 휴대폰 세로 화면은 '좁게'(28글자 너비)보다도 좁아 눌러도 바뀌지 않으므로 숨김 (운영자 요청, 2026-11-18) */
+@media (max-width:640px){#reader .mw-row{display:none}}
+.acct-h{font-size:1.17em;margin:.8em 0 .4em}
