@@ -1,0 +1,319 @@
+[
+ {
+  "img": "images/41-The-Final-Emancipation-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     36,
+     612,
+     144
+    ],
+    "ko": "완전한 반열반\n대반열반경",
+    "cover": [
+     222,
+     189,
+     147
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     374,
+     48,
+     766,
+     212
+    ],
+    "ko": "“세존께서는 아홉 단계의 깊은 선정으로\n오르셨습니다. 네 가지 색계 선정에서\n네 가지 무색계 경지를 지나,\n가장 높은 고요인 상수멸(인식과 느낌의 소멸)에\n이르셨습니다.”",
+    "cover": [
+     218,
+     187,
+     149
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     372,
+     48,
+     766,
+     216
+    ],
+    "ko": "“세존께서 반열반에 드셨습니까?”\n아난다가 물었습니다.\n“아닙니다.” 아누룻다가 답했습니다.\n“상수멸에 드셨습니다. 몸의 온기가\n남아 있고 마음은 온전히 고요합니다.”",
+    "cover": [
+     214,
+     183,
+     144
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     48,
+     772,
+     150
+    ],
+    "ko": "“상수멸에서 나오신 세존께서는 초선으로 내려오셨습니다.\n다시 제4선으로 오르시어 곧바로 반열반에 드셨습니다.\n여정이 끝났습니다.”",
+    "cover": [
+     211,
+     182,
+     144
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     244,
+     222,
+     558,
+     388
+    ],
+    "ko": "“반열반과 함께 무섭고 거대한\n지진이 일어났습니다. 신들의\n천둥 북이 무섭고 소름 끼치게\n울려 하늘이 진동했습니다.\n온 세계가 그분의 떠나심을\n새겼습니다.”",
+    "cover": [
+     219,
+     186,
+     143
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     270,
+     206,
+     538,
+     394
+    ],
+    "ko": "사함빠띠 범천이 말했습니다.\n“세상의 모든 존재는\n반드시 몸을 내려놓으리.\n이처럼 세상에 견줄 이 없는\n스승, 여래께서도\n반열반에 드셨네.”",
+    "cover": [
+     222,
+     192,
+     150
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     76,
+     394,
+     388
+    ],
+    "ko": "신들의 왕 삭까가 말했습니다.\n“형성된 것들은 참으로 무상하여\n일어났다가 사라지는 성질을\n지녔네. 일어났다가는\n소멸하나니, 그것들의\n가라앉음이 행복이라네.”",
+    "cover": [
+     210,
+     180,
+     141
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     454,
+     56,
+     776,
+     378
+    ],
+    "ko": "아누룻다 장로가 말했습니다.\n\n“탐욕을 떠난 성자께서\n돌아가시어 평화에 드셨네.\n흔들림 없는 마음으로\n고통을 견디셨네.\n\n꺼진 불꽃처럼\n그분의 마음은 해탈하였네.”",
+    "cover": [
+     203,
+     171,
+     132
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     52,
+     386,
+     416
+    ],
+    "ko": "아난다 장로가 말했습니다.\n\n“그때 두려움이 있었고\n그때 소름 끼침이 있었네.\n모든 거룩한 덕을\n갖추신 정등각자께서\n반열반에 드셨을 때.”",
+    "cover": [
+     210,
+     165,
+     113
+    ],
+    "align": "center",
+    "em": 23,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     348,
+     392,
+     446
+    ],
+    "ko": "깨닫지 못한 이들\n탐욕에 묶여 울고 쓰러지고 슬픔에 뒹굴었습니다.\n“너무 빨리 눈 있는 분께서 사라지셨구나!”",
+    "cover": [
+     209,
+     169,
+     122
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     414,
+     348,
+     786,
+     446
+    ],
+    "ko": "깨달은 이들\n탐욕을 떠나 마음챙김과 분명한 앎으로 견디었습니다.\n“형성된 것은 모두 무상하다.”",
+    "cover": [
+     204,
+     164,
+     119
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     92,
+     324,
+     712,
+     440
+    ],
+    "ko": "슬픔은 사람의 세계를 넘어 퍼졌습니다.\n하늘과 땅의 신들이 머리를 풀어 헤친 채\n울며 팔을 들어 올리고 눈 있는 분의 떠나심을 슬퍼했습니다.",
+    "cover": [
+     219,
+     183,
+     136
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     44,
+     334,
+     276
+    ],
+    "ko": "“벗들이여, 그만 슬퍼하십시오.”\n아누룻다가 타일렀습니다.\n“세존께서 미리 말씀하지\n않으셨습니까? 사랑하는\n모든 것과는 달라지고\n헤어지기 마련입니다.\n그렇지 않을 수는 없습니다.”",
+    "cover": [
+     220,
+     186,
+     139
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/41-The-Final-Emancipation-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     46,
+     764,
+     160
+    ],
+    "ko": "반열반은 스승의 지혜를 보여 주는 가장 높은 증거입니다.\n태어나 형성된 것은 모두 무너지기 마련이니까요.\n가장 높은 평화는 놓아 버림에 있습니다.",
+    "cover": [
+     216,
+     184,
+     139
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
