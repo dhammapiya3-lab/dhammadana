@@ -1017,11 +1017,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
       const nm = p.name + (x.id === 'all' ? '' : ' · ' + x.name);
       const rows = x.list.map((e, j) => ({ href: e.audio, ic: '▶', kind: 'ep', data: { t: e.title, pl: nm, n: j + 1 }, cols: [e.title, e.date || '', e.duration || ''] }));
       put(`simple/talks/${p.id}/${i + 1}/index.html`, simpleLayout({ title: nm, path: [...P1, [x.name, '']], up: `/simple/talks/${p.id}/`, normal: `/dhammatalk/?pl=${p.id}`, page: 'simple-talk', status: `법문 ${x.list.length}`,
-        body: `<section class="s-player" aria-label="법문 재생기"><p id="sNow" class="s-now" role="status" aria-live="polite">목록에서 법문을 골라 Enter 를 누르면 여기서 재생됩니다. 다 들으면 다음 법문으로 이어집니다.</p>
-<audio id="sAudio" preload="none"></audio>
-<div class="s-pbtns"><button type="button" class="s-btn" id="sPrev" aria-label="앞 법문">⏮ 앞 법문</button><button type="button" class="s-btn" id="sBack15" aria-label="15초 뒤로">⏪ 15초</button><button type="button" class="s-btn" id="sPlay" aria-label="재생">▶ 재생</button><button type="button" class="s-btn" id="sFwd15" aria-label="15초 앞으로">15초 ⏩</button><button type="button" class="s-btn" id="sNext" aria-label="다음 법문">다음 법문 ⏭</button>
-<label class="s-rate">빠르기 <select id="sRate">${[0.8, 1, 1.2, 1.5, 1.8, 2, 2.2, 2.5].map(r => `<option value="${r}"${r === 1 ? ' selected' : ''}>${r}배</option>`).join('')}</select></label>
-<span id="sTime" class="s-time" aria-hidden="true"></span></div></section>
+        body: `<div id="sPlayerSlot"></div>
 ` + (rows.length ? sList(`${nm}, 법문 ${rows.length}개`, ['제목', '올린 날', '길이'], rows) : '<p>법문 목록을 불러오지 못했습니다. 잠시 뒤 다시 확인해 주세요.</p>') }));
     });
   }

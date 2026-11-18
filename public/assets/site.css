@@ -1279,3 +1279,7 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 .simple-ui .s-rate select{font-size:15px;padding:4px}
 .simple-ui .s-time{font-variant-numeric:tabular-nums;font-size:15px;margin-left:4px}
 .simple-ui .s-row.playing .s-c1{font-weight:700;text-decoration:underline}
+/* 다른 화면에서는 재생기를 아래쪽에 붙임(상태 줄 위) — 듣는 중 옮겨 가도 계속 재생 (2026-11-18) */
+.simple-ui .s-player.dock{position:fixed;left:0;right:0;bottom:40px;z-index:25;margin:0;border-radius:0;border-width:2px 0 0;box-shadow:0 -2px 8px rgba(0,0,0,.15);padding:8px 12px}
+.simple-ui.s-docked .s-main{padding-bottom:170px}
+.simple-ui .s-player.dock .s-now{font-size:1em;margin-bottom:6px}
