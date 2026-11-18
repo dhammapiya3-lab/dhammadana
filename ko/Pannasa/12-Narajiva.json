@@ -1,0 +1,866 @@
+[
+ {
+  "img": "images/12-Narajiva-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     290,
+     356,
+     538,
+     390
+    ],
+    "ko": "나라지와의 전생 이야기",
+    "cover": [
+     236,
+     216,
+     185
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     290,
+     390,
+     538,
+     424
+    ],
+    "ko": "까티나 공덕과 업의 결과를 담은\n빤냐사 자따까",
+    "cover": [
+     234,
+     213,
+     182
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Narajiva-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     56,
+     290,
+     116
+    ],
+    "ko": "꼬살라의 빠세나디 왕은 승가에 까티나 옷감을 올려 예류과를 얻었지만, 일체지는 얻지 못했습니다.",
+    "cover": [
+     230,
+     218,
+     201
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     522,
+     344,
+     752,
+     412
+    ],
+    "ko": "부처님께서는 위없는 깨달음에는 지난날의 큰 서원이 있어야 한다고 설명하시며 전생을 들려주셨습니다.",
+    "cover": [
+     232,
+     219,
+     202
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Narajiva-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     52,
+     278,
+     124
+    ],
+    "ko": "아득한 옛날 함사와띠에서 보살은 나라지와라는 가난한 품팔이꾼으로, 어머니를 봉양하며 살았습니다.",
+    "cover": [
+     228,
+     215,
+     198
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     522,
+     340,
+     752,
+     406
+    ],
+    "ko": "그는 신심 깊은 장자의 밭을 지켰는데, 근처 마을에 가까운 벗 넷과 함께 살았습니다.",
+    "cover": [
+     230,
+     215,
+     196
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Narajiva-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     74,
+     366,
+     326,
+     432
+    ],
+    "ko": "장자가 벗들에게 까티나 옷감을 함께 올리자고 청했지만, 그 공덕을 알아본 이는 이발사뿐이었습니다.",
+    "cover": [
+     235,
+     219,
+     191
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     472,
+     366,
+     740,
+     432
+    ],
+    "ko": "수레장이와 사냥꾼과 새잡이는 거절했습니다. 그들은 보시보다 세간의 살림을 앞세웠습니다.",
+    "cover": [
+     235,
+     219,
+     192
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Narajiva-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     366,
+     352,
+     418
+    ],
+    "ko": "장자와 나라지와가 거룩한 까티나 옷감을 빠두뭇따라 부처님께 올렸습니다.",
+    "cover": [
+     233,
+     216,
+     186
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     466,
+     362,
+     740,
+     422
+    ],
+    "ko": "부처님께서 그 큰 열매를 설하셨습니다. 한없는 행복과 고귀한 태어남, 괴로운 곳에서 영원히 벗어남입니다.",
+    "cover": [
+     233,
+     215,
+     186
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Narajiva-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     92,
+     228,
+     166
+    ],
+    "ko": "나라지와는 빠두뭇따라 부처님 발아래 엎드려 미래에 부처가 되기를 서원했습니다.",
+    "cover": [
+     239,
+     218,
+     180
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     570,
+     84,
+     750,
+     156
+    ],
+    "ko": "그때 곁에 있던 세 사람이 망토와 두건과 인장 반지를 올리며, 그의 미래의 아내와 아들과 아버지가 되기를 간절히 원했습니다.",
+    "cover": [
+     238,
+     216,
+     179
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Narajiva-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     348,
+     206,
+     456,
+     246
+    ],
+    "ko": "행위는 피할 수 없는\n열매를 맺는다.",
+    "cover": [
+     232,
+     209,
+     168
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     248,
+     268,
+     348,
+     312
+    ],
+    "ko": "장자는 땅의 신이,\n이발사는 상인이\n되었습니다.",
+    "cover": [
+     230,
+     207,
+     167
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     452,
+     270,
+     556,
+     308
+    ],
+    "ko": "거절한 세 벗은\n호랑이·약카·\n딱따구리가 됨",
+    "cover": [
+     231,
+     207,
+     167
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     112,
+     176,
+     166,
+     206
+    ],
+    "ko": "장자",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     116,
+     316,
+     150,
+     334
+    ],
+    "ko": "이발사",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     578,
+     144,
+     628,
+     162
+    ],
+    "ko": "수레장이",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     632,
+     246,
+     672,
+     268
+    ],
+    "ko": "약카",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     632,
+     340,
+     676,
+     364
+    ],
+    "ko": "새잡이",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Narajiva-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     108,
+     20,
+     474,
+     52
+    ],
+    "ko": "상인이 수완나부미를 향해 길을 떠났습니다.",
+    "cover": [
+     240,
+     224,
+     190
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     160,
+     378,
+     652,
+     430
+    ],
+    "ko": "구불구불한 숲길에서 그는 호랑이와 약카와 딱따구리를 만났습니다. 지난날의 우정에 묶인 짐승들은 그를 잡아먹지 않고 지켜 주었습니다.",
+    "cover": [
+     239,
+     223,
+     190
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Narajiva-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     54,
+     60,
+     300,
+     144
+    ],
+    "ko": "간다마다나 산에 이르자 땅의 신이 상인을 맞아들였습니다.",
+    "cover": [
+     227,
+     215,
+     199
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     380,
+     340,
+     760,
+     410
+    ],
+    "ko": "옛 벗을 알아본 신은 지난날 도와준 일에 깊이 감사하며 상인에게 큰 재물을 내렸습니다.",
+    "cover": [
+     228,
+     216,
+     200
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Narajiva-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     276,
+     20,
+     532,
+     70
+    ],
+    "ko": "바라나시로 돌아온 상인은 은행가의 딸과 혼인했습니다.",
+    "cover": [
+     188,
+     180,
+     170
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     248,
+     366,
+     552,
+     434
+    ],
+    "ko": "갑작스러운 부를 시기한 못된 젊은이들이 그를 넓은 숲으로 꾀어 재물을 빼앗고 죽게 버려두었습니다.",
+    "cover": [
+     191,
+     178,
+     163
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Narajiva-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     282,
+     226,
+     330
+    ],
+    "ko": "땅의 신이 상인을 구하고 소원을 들어주는 신비한 나무를 보여 주었습니다.",
+    "cover": [
+     218,
+     202,
+     177
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     268,
+     284,
+     362,
+     314
+    ],
+    "ko": "‘아름다움’",
+    "cover": [
+     115,
+     93,
+     50
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     652,
+     284,
+     750,
+     314
+    ],
+    "ko": "‘원숭이’",
+    "cover": [
+     104,
+     47,
+     37
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     336,
+     366,
+     624,
+     418
+    ],
+    "ko": "그는 ‘아름다움’ 가지와 ‘원숭이’ 가지를 꺾었습니다. 신비한 열매가 업의 정의를 이룹니다.",
+    "cover": [
+     216,
+     200,
+     174
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Narajiva-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     88,
+     336,
+     290,
+     406
+    ],
+    "ko": "‘아름다움’ 가지를 맛본 못생긴 상인은 곧바로 빛나는 미남이 되었습니다.",
+    "cover": [
+     215,
+     198,
+     171
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     496,
+     338,
+     704,
+     406
+    ],
+    "ko": "‘원숭이’ 가지를 훔친 탐욕스러운 도둑들은 영영 숲속 원숭이가 되었습니다.",
+    "cover": [
+     214,
+     197,
+     172
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Narajiva-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     146,
+     26,
+     262,
+     50
+    ],
+    "ko": "상인",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     656,
+     10,
+     790,
+     34
+    ],
+    "ko": "대신 찬나",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     40,
+     102,
+     146,
+     126
+    ],
+    "ko": "땅의 신",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     656,
+     46,
+     770,
+     70
+    ],
+    "ko": "나가 장로",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     216,
+     138,
+     340,
+     162
+    ],
+    "ko": "젊은이",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     656,
+     156,
+     750,
+     180
+    ],
+    "ko": "라훌라",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     56,
+     212,
+     144,
+     236
+    ],
+    "ko": "딸",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     656,
+     268,
+     780,
+     292
+    ],
+    "ko": "숫도다나",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     40,
+     266,
+     146,
+     290
+    ],
+    "ko": "은행가",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     56,
+     370,
+     136,
+     394
+    ],
+    "ko": "나라지와",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     574,
+     336,
+     672,
+     362
+    ],
+    "ko": "여래",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     744,
+     210,
+     784,
+     310
+    ],
+    "ko": "야소\n다라",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     160,
+     372,
+     642,
+     432
+    ],
+    "ko": "부처님께서 업의 실을 모으며 이야기를 마치셨습니다. 상인은 찬나, 신은 나가 장로, 곁에 있던 이들은 야소다라와 라훌라와 숫도다나입니다. 품팔이꾼 나라지와는 여래이십니다.",
+    "cover": [
+     225,
+     203,
+     175
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ }
+]
