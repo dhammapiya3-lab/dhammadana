@@ -1264,3 +1264,5 @@ body.simple-ui{margin:0;background:#fff;color:#111;font-family:var(--sans);font-
 .s-row.k-up .s-c1{font-weight:700}
 /* 단축키 안내 줄도 Tab 으로 한 줄씩 (운영자 요청, 2026-11-18) */
 #p-keys li:focus-visible,#p-keys .note:focus-visible,.s-keys li:focus-visible,.s-keys p:focus-visible{outline:3px solid #b35c00;outline-offset:2px;border-radius:3px}
+/* 듣는 동안 커서가 문단을 따라갈 때 테두리는 없게 (노란 표시가 이미 있음) */
+.reflow [data-pg]:focus,.s-text [data-pg]:focus{outline:none}

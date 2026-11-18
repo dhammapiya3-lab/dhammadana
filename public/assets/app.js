@@ -1745,7 +1745,7 @@ function speak(fromK = 0, firstText = null) {
     { const fg = sentences[k].match(FIG_RE); if (fg && R.say && R.say[fg[2]]) raw = R.say[fg[2]]; }  // 그림 내용을 소리로 읽을 글이 있으면 그것을 읽음
     if ((!o.fn && isFootnote(sentences[k])) || (FIG_RE.test(sentences[k]) && !(R.say && R.say[(sentences[k].match(FIG_RE) || [])[2]])) || (isTbl && !o.table)) { k++; next(); return; }
     if (isTbl && !tq) { tq = tableLines(sentences[k]); if (!tq.length) { tq = null; k++; next(); return; } }
-    const el = $(`[data-pg="${p.n}"][data-s="${k}"]`); if (el) { el.classList.add('speaking'); if (o.follow && !tq) el.scrollIntoView({ block: 'nearest' }); }
+    const el = $(`[data-pg="${p.n}"][data-s="${k}"]`); if (el) { el.classList.add('speaking'); if (o.follow && !tq) el.scrollIntoView({ block: 'nearest' }); ttsFocus(el); }
     const text = tq ? sayable(tq.shift(), o, true) : sayable(raw.replace(/^\[\^([^\]]+)\]:\s*/, (m, n) => `각주 ${n}. `), o, true);
     const adv = () => { if (tq && tq.length) return; tq = null; k++; };
     if (!text) { adv(); next(); return; }
@@ -1992,6 +1992,7 @@ document.addEventListener('keydown', e => {
   if (R && e.altKey && e.shiftKey && !e.ctrlKey && !e.metaKey && readerKey(e)) { e.preventDefault(); return; }
   if (!R || e.target.matches('input,select,textarea')) return;
   if (R.ttsLocked && e.key !== 'Tab') { if ([' ', 'ArrowRight', 'ArrowLeft', 'Escape'].includes(e.key)) { e.preventDefault(); toast('듣기가 잠겨 있습니다'); } return; }
+  if ((e.key === 'ArrowRight' || e.key === 'ArrowLeft') && (e.shiftKey || e.ctrlKey || e.altKey || e.metaKey)) return;  // Shift+→ 는 글 고르기
   if (e.key === 'ArrowRight') go(R.i + 2); else if (e.key === 'ArrowLeft') go(R.i);
   else if (e.key === ' ' && $('#rSpeak') && !e.target.closest('button,a,summary,[role]')) { e.preventDefault(); R.speaking ? stopSpeak(true) : speak(); }
   else if (e.key === 'Escape') { if (document.fullscreenElement) return; if ($$('#reader .panel.open').length) closePanels(); else exitReader(); }
@@ -2492,7 +2493,29 @@ function panelA11y(el) {
   const mk = $('#rMark'); if (mk) mk.setAttribute('aria-keyshortcuts', 'Alt+Shift+B');
 }
 // 단축키: 브라우저·화면 낭독기 키와 겹치지 않게 Alt+Shift+글자 (WCAG 2.1.4 — 한 글자 키는 쓰지 않음)
-const KEYS = [['→', '다음 쪽'], ['←', '앞 쪽'], ['↓', '다음 목차 (소제목·장)'], ['↑', '앞 목차 (소제목·장)'], ['M', '메뉴 열기 (닫기 단추로 커서)'], ['P', '듣기 시작·멈춤'], ['S', '듣기 설정'], ['V', '화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['F', '글씨 (크기·굵기·줄 간격·글꼴)'], ['N', '목차'], ['B', '이 쪽에 책갈피 넣기·빼기'], ['L', '책갈피 목록'], ['K', '지금 읽는 곳 알리기'], ['H', '단축키 안내']];
+const KEYS = [['→', '다음 쪽'], ['←', '앞 쪽'], ['↓', '다음 목차 (소제목·장)'], ['↑', '앞 목차 (소제목·장)'], ['M', '메뉴 열기 (닫기 단추로 커서)'], ['P', '토글: 듣기 시작·멈춤 (듣는 동안 커서가 읽는 문단을 따라감)'], ['C', '지금 읽는 문단을 클립보드에 복사'], ['S', '토글: 듣기 설정 창 열기·닫기'], ['V', '토글: 화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['F', '토글: 글씨 창 열기·닫기 (크기·굵기·줄 간격·글꼴)'], ['N', '토글: 목차 창 열기·닫기'], ['B', '토글: 이 쪽에 책갈피 넣기·빼기'], ['L', '토글: 책갈피 목록 열기·닫기'], ['K', '지금 읽는 곳 알리기'], ['H', '토글: 단축키 안내 열기·닫기']];
+// 듣는 동안 커서(포커스)가 읽는 문단을 따라감 (운영자 요청, 2026-11-18 — 시각장애인 이용자: 듣던 문장을 바로 Shift+→ 로 골라 복사할 수 있게).
+// 커서가 본문·듣기 단추·앞서 읽던 문단에 있을 때만 옮김 — 설정 창 등 다른 곳에서 일하는 중이면 건드리지 않음
+function ttsFocus(el) {
+  if (!el) return; const a = document.activeElement;
+  const ok = !a || a === document.body || a === document.documentElement || (a.closest && a.closest('.reflow, .s-text, #rBody, .s-h1, .s-chnav')) || a.id === 'rSpeak' || a.id === 'sSpeak';
+  if (!ok) return;
+  if (!el.hasAttribute('tabindex')) el.tabIndex = -1;
+  try { el.focus({ preventScroll: true }); } catch (e) {}
+  try { const r = document.createRange(); r.setStart(el, 0); r.collapse(true); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); } catch (e) {}  // 글 맨 앞에 글자 커서 — Shift+→ 로 바로 고름
+}
+// Alt+Shift+C: 지금 읽는(없으면 커서가 있는·화면 맨 위) 문단을 클립보드로
+function copyNow(root) {
+  if (R && R.noCopy && !SR.r) { toast('이 책은 복사할 수 없습니다'); return; }
+  const box = $(root); if (!box) return;
+  const a = document.activeElement;
+  const el = $('.speaking', box) || (a && a.closest && box.contains(a) && a.closest('[data-pg]')) || $$('[data-pg][data-s]', box).find(x => x.getBoundingClientRect().bottom > 80);
+  if (!el) { toast('복사할 글이 없습니다'); return; }
+  const c = el.cloneNode(true); $$('.ph-say, .sr, .par-pg, .dots, .orn', c).forEach(x => x.remove());  // 낭독기용 소리 글·꾸밈은 빼고 화면 글자 그대로
+  const t = c.textContent.replace(/\s+\n/g, '\n').trim(); if (!t) { toast('복사할 글이 없습니다'); return; }
+  const done = () => toast('지금 문단을 복사했습니다'), fail = () => { try { const ta = document.createElement('textarea'); ta.value = t; ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); done(); } catch (e) { toast('복사하지 못했습니다'); } };
+  try { navigator.clipboard.writeText(t).then(done, fail); } catch (e) { fail(); }
+}
 // 쪽·목차 넘기기 단축키 (운영자 요청, 2026-11-18 — 시각장애인 이용자: 다음·앞 쪽, 다음·앞 목차)
 // 옮긴 뒤 커서를 그 쪽 표시(또는 제목)에 두어 화면 낭독기가 거기서부터 읽게 함
 function kbFocus(t) { if (!t) return; if (!t.hasAttribute('tabindex')) t.tabIndex = -1; try { t.focus({ preventScroll: true }); } catch (e) {} }
@@ -2526,6 +2549,7 @@ function readerKey(e) {
     case 'N': if (!togglePanel('toc')) say('이 책에는 목차가 없습니다'); return true;
     case 'L': togglePanel('bm'); return true;
     case 'H': togglePanel('keys'); return true;
+    case 'C': copyNow('#rBody'); return true;
     case 'B': { const b = $('#rMark'); if (b) b.click(); setTimeout(() => { const m = $('#rMark'); if (m && document.activeElement === document.body) m.focus(); }, 60); return true; }
     case 'K': {
       const p = R.pages[R.i] || {}; let ch = null; try { const cs = chapters(); ch = cs[chapterOf(R.i + 1)]; } catch (x) {}
@@ -2641,6 +2665,7 @@ function srChapter(ci, page, push, then) {
   const html = withR(() => reflowHtml()).replace(/<div class="ch-head">[\s\S]*?<\/div>/, '').replace(/<nav class="ch-nav"[\s\S]*?<\/nav>/, '');
   const nav = where => `<nav class="s-chnav" aria-label="장 이동 (${where})"><a href="./" class="s-btn">▤ 장 목록</a>${ci > 0 ? `<a class="s-btn" href="?c=${ci}" data-c="${ci - 1}">◀ 앞 장: ${esc(srName(cs[ci - 1], ci - 1))}</a>` : ''}${ci < cs.length - 1 ? `<a class="s-btn" href="?c=${ci + 2}" data-c="${ci + 1}">다음 장: ${esc(srName(cs[ci + 1], ci + 1))} ▶</a>` : '<span class="s-sub">책의 끝입니다.</span>'}${where === '위' ? `<button type="button" class="s-btn" id="sSpeak" aria-keyshortcuts="Alt+Shift+P">${SR.speaking ? '■ 듣기 멈춤' : '▶ 듣기'}</button><button type="button" class="s-btn" id="sTtsBtn" aria-keyshortcuts="Alt+Shift+S" aria-expanded="false" aria-controls="sTts">듣기 설정</button>` : ''}</nav>`;
   root.innerHTML = nav('위') + `<section id="sTts" class="s-tts" hidden aria-labelledby="sTtsH"></section><div class="s-text">${html}</div>` + nav('아래');
+  $$('.s-text [aria-level]', root).forEach(h => h.setAttribute('aria-level', Math.max(2, +h.getAttribute('aria-level') - 2)));  // 단순 화면은 장 제목이 h1 이라 소제목 단계를 맞춤
   $$('.s-chnav a[data-c]', root).forEach(a => a.onclick = e => { e.preventDefault(); const go = +a.dataset.c, was = SR.speaking; srStop(); srChapter(go, 0, true); if (was) srSpeak(); });
   $('#sSpeak').onclick = () => SR.speaking ? srStop() : srSpeak();
   $('#sTtsBtn').onclick = () => srTtsPanel();
@@ -2696,7 +2721,7 @@ function srSpeak(fromTop) {
       srChapter(SR.ci + 1, 0, true, () => { scrollTo(0, 0); srSpeak(true); }); return;
     }
     const it = items[k++]; if (!it.text) { next(); return; }
-    if (it.el) { it.el.classList.add('speaking'); if (o.follow) it.el.scrollIntoView({ block: 'nearest' }); const n = +it.el.dataset.pg; if (n) srSavePos(n, ch); }
+    if (it.el) { it.el.classList.add('speaking'); if (o.follow) it.el.scrollIntoView({ block: 'nearest' }); ttsFocus(it.el); const n = +it.el.dataset.pg; if (n) srSavePos(n, ch); }
     speakSegs(it.text, o, pv, () => { if (SR.speaking) setTimeout(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') srStop(true); });
   };
   next();
@@ -2744,7 +2769,7 @@ function initSimpleFind() {
   q.addEventListener('keydown', e => { if ((e.key === 'ArrowDown' || e.key === 'Enter') && $('.s-list', out)) { e.preventDefault(); $('.s-list', out)._lb.pick(0); } });
   run(); const go = () => q.focus(); if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true });
 }
-const S_KEYS = [['→', '다음 쪽 (장 글 화면에서)'], ['←', '앞 쪽'], ['↓', '다음 장 (목차의 다음 항목)'], ['↑', '앞 장'], ['P', '듣기 시작·멈춤 (책의 장 글 화면에서)'], ['S', '듣기 설정 열기·닫기 (장 글 화면에서)'], ['V', '화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['N', '장 목록으로 (책을 읽을 때)'], ['B', '지금 읽는 쪽에 책갈피 넣기·빼기'], ['L', '내 서재 (이어 읽기·책갈피)'], ['M', '첫 화면 (폴더 목록)'], ['K', '지금 위치 알리기'], ['H', '단축키 안내 열기·닫기']];
+const S_KEYS = [['→', '다음 쪽 (장 글 화면에서)'], ['←', '앞 쪽'], ['↓', '다음 장 (목차의 다음 항목)'], ['↑', '앞 장'], ['P', '토글: 듣기 시작·멈춤 (책의 장 글 화면에서, 듣는 동안 커서가 읽는 문단을 따라감)'], ['C', '지금 읽는 문단을 클립보드에 복사'], ['S', '토글: 듣기 설정 열기·닫기 (장 글 화면에서)'], ['V', '토글: 화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['N', '장 목록으로 (책을 읽을 때)'], ['B', '토글: 지금 읽는 쪽에 책갈피 넣기·빼기'], ['L', '내 서재 (이어 읽기·책갈피)'], ['M', '첫 화면 (폴더 목록)'], ['K', '지금 위치 알리기'], ['H', '토글: 단축키 안내 열기·닫기']];
 function simpleHelp() {
   const old = $('#sKeys'); if (old) { old.remove(); const b = $('.s-list [aria-selected="true"]') || $('.s-h1'); if (b) b.focus(); return; }
   $('.s-h1').insertAdjacentHTML('afterend', `<section id="sKeys" class="s-keys" aria-labelledby="sKeysH"><h2 id="sKeysH" tabindex="-1">단축키 안내</h2><p tabindex="0">Alt 키와 Shift 키를 함께 누른 채로 글자 키를 누릅니다 (맥은 Option + Shift). Tab 키로 한 줄씩 들으실 수 있습니다.</p><ul>${S_KEYS.map(([k, d]) => `<li tabindex="0"><kbd>Alt+Shift+${k}</kbd> ${d}</li>`).join('')}<li tabindex="0"><kbd>↑</kbd> <kbd>↓</kbd> 목록에서 줄 고르기, <kbd>Enter</kbd> 열기, <kbd>Backspace</kbd> 위 목록으로</li></ul><button type="button" class="s-btn" id="sKeysX">단축키 안내 닫기</button></section>`);
@@ -2774,6 +2799,7 @@ function simpleKey(e) {
   switch (k) {
     case 'V': cycleMode(); return true;
     case 'H': simpleHelp(); return true;
+    case 'C': if (!SR.r) { toast('책의 장 글 화면에서 쓸 수 있습니다'); return true; } copyNow('.s-text'); return true;
     case 'P': if (!reading) { toast('듣기는 책의 장 글 화면에서 쓸 수 있습니다. 책 → 온라인으로 읽기 → 장을 고르세요'); return true; } SR.speaking ? srStop() : srSpeak(); return true;
     case 'S': if (!reading) { toast('듣기 설정은 책의 장 글 화면에서 쓸 수 있습니다'); return true; } srTtsPanel(); return true;
     case 'N': if (!SR.r) { toast('책을 읽을 때 쓰는 키입니다'); return true; } location.href = './'; return true;
