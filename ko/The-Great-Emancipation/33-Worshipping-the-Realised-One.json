@@ -1,0 +1,475 @@
+[
+ {
+  "img": "images/33-Worshipping-the-Realised-One-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     244,
+     118,
+     560,
+     202
+    ],
+    "ko": "여래께 올리는 공양\n한 쌍의 살라 나무 아래에서 주신\n참된 공경에 관한 마지막 가르침",
+    "cover": [
+     220,
+     190,
+     154
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     302,
+     312,
+     434
+    ],
+    "ko": "우빠왓따나로 가는 길\n세존께서 아난다 장로와\n큰 비구 승가를 이끌고\n히란냐와띠 강을 건너셨습니다.\n꾸시나라에 이르러 우빠왓따나의\n고요한 말라들의 살라 숲에 드셨습니다.",
+    "cover": [
+     206,
+     165,
+     120
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     132,
+     576,
+     240
+    ],
+    "ko": "나무 사이의 쉼\n길에 지치신 세존께서 아난다에게 이르셨습니다.\n“나를 위해 한 쌍의 살라 나무 사이에\n머리를 북쪽으로 두는 자리를 마련하여라.\n나는 눕고 싶다.”",
+    "cover": [
+     221,
+     192,
+     154
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     22,
+     606,
+     76
+    ],
+    "ko": "사자의 자세",
+    "cover": [
+     208,
+     165,
+     120
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     36,
+     74,
+     134,
+     166
+    ],
+    "ko": "머리를\n북쪽으로",
+    "cover": [
+     209,
+     162,
+     113
+    ],
+    "align": "center",
+    "em": 17,
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     654,
+     104,
+     768,
+     218
+    ],
+    "ko": "마음챙김과\n분명한 앎으로\n쉬심",
+    "cover": [
+     210,
+     163,
+     113
+    ],
+    "align": "center",
+    "em": 15,
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     34,
+     306,
+     138,
+     392
+    ],
+    "ko": "오른쪽으로\n누우심",
+    "cover": [
+     207,
+     160,
+     111
+    ],
+    "align": "center",
+    "em": 16,
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     458,
+     320,
+     566,
+     410
+    ],
+    "ko": "한 발을\n다른 발\n위에 포갬",
+    "cover": [
+     211,
+     165,
+     114
+    ],
+    "align": "center",
+    "em": 15,
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     596,
+     140,
+     776,
+     418
+    ],
+    "ko": "첫 번째 기적:\n땅의 꽃\n꽃필 때가\n전혀 아닌데도\n한 쌍의 살라\n나무가 활짝\n피었습니다.\n꽃이 흩날리고\n쏟아져 여래의\n몸 위로 내려\n공경을 올렸습니다.",
+    "cover": [
+     203,
+     170,
+     129
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     6,
+     190,
+     172,
+     370
+    ],
+    "ko": "두 번째 기적:\n하늘의 공양\n\n공경은 땅을 넘어\n높아졌습니다.\n하늘의 산호나무 꽃이\n쏟아지고 하늘의\n전단 가루가 함께\n세존 위로\n내렸습니다.",
+    "cover": [
+     206,
+     174,
+     133
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     234,
+     30,
+     560,
+     124
+    ],
+    "ko": "세 번째 기적: 하늘의 소리\n보이지 않는 공경이 하늘을 채웠습니다.\n하늘의 음악이 숲에 울리고 하늘의 노래가\n함께 울려, 모두 여래께 공경을 올렸습니다.",
+    "cover": [
+     224,
+     198,
+     163
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     198,
+     326,
+     606,
+     440
+    ],
+    "ko": "가장 높은 공경이라는 착각\n꽃과 가루와 하늘의 노래가 기적처럼 쏟아졌지만\n부처님께서는 아난다에게 말씀하셨습니다.\n“여래는 이렇게 존중되거나 존경되거나\n공경되거나 예배되거나 숭배되는 것이 아니다.”",
+    "cover": [
+     201,
+     171,
+     133
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     188,
+     30,
+     606,
+     80
+    ],
+    "ko": "공경의 두 길",
+    "cover": [
+     213,
+     182,
+     145
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     108,
+     104,
+     380,
+     138
+    ],
+    "ko": "물질의 공양",
+    "cover": [
+     90,
+     78,
+     66
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     438,
+     104,
+     708,
+     138
+    ],
+    "ko": "가장 높은 공경",
+    "cover": [
+     168,
+     123,
+     81
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     132,
+     312,
+     340,
+     406
+    ],
+    "ko": "• 살라 꽃과 산호나무 꽃\n• 전단 가루\n• 하늘의 음악과 노래\n• 감각에 닿는 바깥 공양",
+    "cover": [
+     195,
+     170,
+     143
+    ],
+    "align": "left",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     470,
+     312,
+     682,
+     406
+    ],
+    "ko": "• 법에 따라 삶\n• 바르게 실천함\n• 법에 맞게 삶\n• 안으로 실제로 바뀜",
+    "cover": [
+     228,
+     194,
+     148
+    ],
+    "align": "left",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     22,
+     606,
+     72
+    ],
+    "ko": "사부대중의 짜임\n바르게 실천하는 모든 이가 함께 참된 공경을 받듭니다.",
+    "cover": [
+     221,
+     191,
+     151
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     72,
+     418,
+     180,
+     446
+    ],
+    "ko": "비구",
+    "cover": [
+     194,
+     157,
+     119
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     254,
+     418,
+     352,
+     446
+    ],
+    "ko": "비구니",
+    "cover": [
+     198,
+     164,
+     127
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     438,
+     418,
+     546,
+     446
+    ],
+    "ko": "우바새",
+    "cover": [
+     189,
+     152,
+     116
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     616,
+     418,
+     724,
+     446
+    ],
+    "ko": "우바이",
+    "cover": [
+     182,
+     142,
+     106
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Worshipping-the-Realised-One-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     204,
+     100,
+     614,
+     256
+    ],
+    "ko": "실천이 곧 공경이다\n“그러므로 아난다여, ‘법에 따라 법을 실천하며,\n바르게 실천하고, 법에 맞게 살자.’\n이렇게 생각하며\n\n이와 같이 그대들은 공부지어야 한다.”",
+    "cover": [
+     221,
+     191,
+     154
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
