@@ -1,10 +1,10 @@
-Pannasa 31-Ariyachatta 15 장
+Pannasa 32-Subhadda 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 76 개 / 한글판 이야기 147 편
-공개 주소 확인: 200 1433412바이트
-이야기 Pannasa/31-Ariyachatta {'pdf': 20459696, 'zip': 20196335, 'n': 15}
-책 Pannasa {'pdf': 629106532, 'pdfs': 60467157, 'zip': 628675755, 'stories': 31, 'n': 486}
+R2 에 올림: 76 개 / 한글판 이야기 148 편
+공개 주소 확인: 200 1283980바이트
+이야기 Pannasa/32-Subhadda {'pdf': 18946559, 'zip': 18683172, 'n': 15}
+책 Pannasa {'pdf': 647795283, 'pdfs': 62220035, 'zip': 647358615, 'stories': 32, 'n': 501}
 내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 147 이야기
+글로 보기: 148 이야기
 50-Mahasudassana
 44-The-Distribution-of-the-Relics
