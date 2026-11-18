@@ -1,0 +1,255 @@
+[
+ {
+  "img": "images/15-16-Yasas-Friends-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     206,
+     512,
+     270
+    ],
+    "ko": "교단의 성장:\n야사의 벗들이 출가하다",
+    "cover": [
+     231,
+     191,
+     144
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Yasas-Friends-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     54,
+     374,
+     746,
+     442
+    ],
+    "ko": "귀한 가문의 젊은이 야사가 머리를 깎고 가사를 입었습니다.\n그의 갑작스러운 출리는 바라나시의 전통 있는 큰 가문들에 파문을 일으켰습니다.",
+    "cover": [
+     216,
+     170,
+     125
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Yasas-Friends-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     404,
+     310,
+     782,
+     440
+    ],
+    "ko": "상인의 아들인 네 벗, 위말라, 수바후,\n뿐나지, 가왐빠띠가 소식을 들었습니다.\n그들은 깨달았습니다. “이것은 하찮은 법과\n율이 아니다.” 그들은 야사를 찾아갔습니다.",
+    "cover": [
+     206,
+     161,
+     117
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Yasas-Friends-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     34,
+     382,
+     186
+    ],
+    "ko": "곧 전통 있는 가문의 아들 쉰 명이\n더 야사의 길을 전해 들었습니다.\n그의 선택에 감화된 그들도\n집을 떠나기로 했습니다.",
+    "cover": [
+     227,
+     190,
+     144
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Yasas-Friends-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     362,
+     738,
+     436
+    ],
+    "ko": "야사가 벗들을 세존께 모시고 갔습니다.\n그들은 절하고 한쪽에 앉았으며, 야사는 부처님께\n그들을 가르쳐 주시기를 청했습니다.",
+    "cover": [
+     216,
+     164,
+     126
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Yasas-Friends-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     496,
+     50,
+     766,
+     410
+    ],
+    "ko": "부처님께서는 그들의 마음을\n준비시키려고 차례로\n가르침을 설하셨습니다.\n\n• 보시\n• 계\n• 천상\n• 감각적 욕망의 위험\n• 출리의 이익",
+    "cover": [
+     217,
+     176,
+     130
+    ],
+    "align": "left",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Yasas-Friends-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     364,
+     738,
+     436
+    ],
+    "ko": "깨끗하고 얼룩 없는 천이 선명한 물감을 쉽게 받아들이듯…\n벗들의 마음은 준비되고 부드럽고 열리고\n고양되고 자신 있게 되었습니다.",
+    "cover": [
+     207,
+     163,
+     118
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Yasas-Friends-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     48,
+     310,
+     412
+    ],
+    "ko": "그들이 준비된 것을\n아신 부처님께서\n깨달은 분들이 발견하신\n가르침을 드러내셨습니다.\n\n1. 괴로움\n2. 일어남\n3. 소멸\n4. 길",
+    "cover": [
+     216,
+     179,
+     132
+    ],
+    "align": "left",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Yasas-Friends-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     362,
+     738,
+     436
+    ],
+    "ko": "티끌 없고 때 없는 법의 눈이 생겼습니다.\n“일어나는 성질을 지닌 것은 무엇이든 모두\n사라지는 성질을 지녔다.”",
+    "cover": [
+     202,
+     159,
+     114
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Yasas-Friends-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     94,
+     352,
+     704,
+     442
+    ],
+    "ko": "의심이 부서진 그들은 구족계를 청했습니다. 부처님께서 답하셨습니다.\n“오라, 비구들이여. 법은 잘 설해졌다. 괴로움을\n완전히 끝내기 위해 청정한 삶을 살아라.”",
+    "cover": [
+     184,
+     143,
+     110
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Yasas-Friends-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     46,
+     580,
+     152
+    ],
+    "ko": "마지막 법문을 듣고 쉰네 명 모두의\n마음이 번뇌에서 해탈했습니다.\n세상의 아라한은 곧\n예순한 분으로 늘었습니다.",
+    "cover": [
+     237,
+     206,
+     162
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

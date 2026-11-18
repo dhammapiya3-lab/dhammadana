@@ -1,0 +1,340 @@
+[
+ {
+  "img": "images/20-Good-Group-of-Friends-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     234,
+     190,
+     568,
+     330
+    ],
+    "ko": "훌륭한 벗들의 무리 이야기:\n교단의 성장\n\n세속의 들뜸에서 궁극의 깨달음으로,\n우루웰라 숲에서의 여정",
+    "cover": [
+     216,
+     186,
+     152
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Good-Group-of-Friends-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     234,
+     318,
+     568,
+     438
+    ],
+    "ko": "깝빠시야 숲\n\n서른 명의 훌륭한 벗들이 아내와 함께 숲에 놀러\n왔습니다. 아내가 없는 한 벗은 여인을 데려왔습니다.\n무리가 세속의 즐거움에 빠져 노는 사이,\n여인은 그의 물건을 챙겨 사라졌습니다.",
+    "cover": [
+     214,
+     184,
+     141
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Good-Group-of-Friends-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     224,
+     320,
+     578,
+     438
+    ],
+    "ko": "뒤쫓음\n\n벗을 도우려고 사람들은 사라진 여인과\n훔쳐 간 재물을 찾아 숲을 샅샅이 뒤졌습니다.\n그러다 나무 아래 깊은 고요 속에 앉아 계신\n세존을 만났습니다.",
+    "cover": [
+     209,
+     177,
+     134
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Good-Group-of-Friends-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     222,
+     310,
+     580,
+     450
+    ],
+    "ko": "갈림길의 선택\n사람들이 부처님께 여인을 보셨는지 여쭈었습니다.\n부처님께서는 깊은 물음을 던지셨습니다.\n“젊은이들이여, 그대들에게 무엇이 더 나은가?\n여인을 찾는 것인가, 그대 자신을 찾는 것인가?”\n그들은 자신을 찾기로 했습니다.",
+    "cover": [
+     208,
+     176,
+     135
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Good-Group-of-Friends-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     224,
+     36,
+     580,
+     104
+    ],
+    "ko": "차례로 설한 가르침의 길\n부처님께서는 그들의 마음을 차례로 준비시키셨습니다.",
+    "cover": [
+     212,
+     184,
+     143
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     106,
+     402,
+     208,
+     448
+    ],
+    "ko": "1. 보시의\n기쁨",
+    "cover": [
+     186,
+     154,
+     112
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     222,
+     358,
+     340,
+     404
+    ],
+    "ko": "2. 계의\n보호",
+    "cover": [
+     202,
+     172,
+     128
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     340,
+     304,
+     456,
+     352
+    ],
+    "ko": "3. 천상의\n과보",
+    "cover": [
+     202,
+     173,
+     128
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     458,
+     252,
+     584,
+     300
+    ],
+    "ko": "4. 감각적\n욕망의 위험",
+    "cover": [
+     198,
+     167,
+     127
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     584,
+     142,
+     724,
+     190
+    ],
+    "ko": "5. 출리의\n자유",
+    "cover": [
+     199,
+     166,
+     126
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Good-Group-of-Friends-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     284,
+     108,
+     526,
+     342
+    ],
+    "ko": "준비된 마음\n\n깨끗하고 얼룩 없는 천이\n물감을 잘 받아들이듯, 진리를\n받아들이려면 마음이\n깨끗해야 합니다.\n\n부처님께서는 그들의 마음이\n준비되고 부드럽고 열리고\n고양되고 자신 있음을 보셨습니다.\n그들은 가장 높은 가르침을\n받을 준비가 되었습니다.",
+    "cover": [
+     212,
+     184,
+     149
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Good-Group-of-Friends-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     644,
+     142,
+     728,
+     190
+    ],
+    "ko": "출리의\n자유",
+    "cover": [
+     161,
+     127,
+     95
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     290,
+     262,
+     514,
+     434
+    ],
+    "ko": "네 가지 성스러운 진리\n이어서 깨달은 분들이 발견하신\n가장 높은 법을 드러내셨습니다.\n\n• 괴로움 (사람의 처지)\n• 일어남 (원인)\n• 소멸 (치유)\n• 길 (자유로 가는 길)",
+    "cover": [
+     209,
+     179,
+     142
+    ],
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Good-Group-of-Friends-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     298,
+     108,
+     500,
+     356
+    ],
+    "ko": "법의 눈\n\n바로 그 자리에서 그들에게\n티끌 없고 때 없는\n법의 눈이 생겼습니다.\n그들은 깊이 깨달았습니다.\n\n“일어나는 성질을 지닌\n것은 무엇이든 모두\n사라지는 성질을 지녔다.”",
+    "cover": [
+     208,
+     181,
+     144
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Good-Group-of-Friends-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     282,
+     268,
+     522,
+     428
+    ],
+    "ko": "의심을 넘어서\n\n법을 꿰뚫자 의심이 사라졌습니다.\n이제 스승의 가르침에서 완전히\n스스로 서게 된 그들이 절했습니다.\n\n“세존이시여, 저희가 출가하여\n구족계를 받게 해 주십시오.”",
+    "cover": [
+     205,
+     177,
+     140
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Good-Group-of-Friends-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     274,
+     262,
+     524,
+     446
+    ],
+    "ko": "‘오라, 비구여’의 구족계\n\n“오라, 비구들이여.”\n세존께서 말씀하셨습니다.\n“법은 잘 설해졌다. 괴로움을\n완전히 끝내기 위해\n청정한 삶을 살아라.”\n\n자신을 찾는 일이 끝났습니다.",
+    "cover": [
+     202,
+     176,
+     138
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
