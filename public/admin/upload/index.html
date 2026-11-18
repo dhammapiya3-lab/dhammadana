@@ -451,7 +451,7 @@ $('#cdel').onclick=async()=>{
       if(t) await new Promise(r=>setTimeout(r,1500*t));
       const g=await gh(`/contents/content/books/${bf(id)}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); if(!g.ok) break;
       const gj=await g.json(); const b=JSON.parse(dec(gj.content)); unlinked=0;
-      { const n0=(b.originals||[]).length; b.originals=(b.originals||[]).filter(o=>!(o&&o.url&&ps.includes(o.url.replace(/^\//,'')))); unlinked+=n0-b.originals.length; }
+      { const hit=o=>o&&o.url&&ps.includes(o.url.replace(/^\//,'')); unlinked+=(b.originals||[]).filter(hit).length; b.originals=(b.originals||[]).map(o=>hit(o)?((o.sources||[]).length||o.source?{...o,mode:'none',url:''}:null):o).filter(Boolean); }   // 원서 원본 출처 주소가 있으면 줄은 남김 (2026-11-19)
       if(b.braille){ const n0=b.braille.length; b.braille=b.braille.filter(o=>!(o&&o.url&&ps.includes(o.url.replace(/^\//,'')))); unlinked+=n0-b.braille.length; }
       for(const e of (b.editions||[])){
         for(const k of ['pdf','pdf_print','pdf_cover','epub','hwp']){ const x=e[k]; if(x&&x.url&&ps.includes(x.url.replace(/^\//,''))){ e[k]={mode:'none',url:'',site:''}; unlinked++; } }

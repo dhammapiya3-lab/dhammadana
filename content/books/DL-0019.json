@@ -162,7 +162,9 @@
       "lang": "영어",
       "mode": "file",
       "url": "orig/DL-0019/DL-0019_원서_영어.pdf",
-      "source": "https://buddhistuniversity.net/content/booklets/dana_bodhi-et-al"
+      "sources": [
+        "https://buddhistuniversity.net/content/booklets/dana_bodhi-et-al"
+      ]
     }
   ]
 }

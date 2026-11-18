@@ -114,6 +114,9 @@ const wideCover = c => { const z = imgSize(c); return z && z.w > z.h * 1.15 ? z 
 const ctrCover = c => { const z = imgSize(c); return z && z.w > z.h * 0.9 && z.w <= z.h * 1.15 ? ' style="object-position:center"' : ''; };
 const fileUrl = u => !u ? '' : /^https?:\/\//.test(u) ? u : S.files_base.replace(/\/$/, '') + '/' + u.replace(/^\//, '');
 // 원서 파일 (운영자 요청, 2026-11-18): 책 JSON originals [{lang, mode: file|link, url, site, source(원서 원본 출처 주소 — 2026-11-19)}] → 책 소개 '원서(미얀마어) 내려받기'
+// 원서 원본 출처 주소 (운영자 요청, 2026-11-19 — 여러 개): originals[].sources [주소…] (예전 source 하나도 읽음), 원서 언어가 둘 넘을 때만 언어를 붙임
+const origSrcs = b => { const os = (b.originals || []).filter(o => o && o.lang); const many = new Set(os.map(o => o.lang)).size > 1;
+  return os.flatMap(o => [...(Array.isArray(o.sources) ? o.sources : []), ...(o.source ? [o.source] : [])].map(u => String(u && u.url || u || '').trim()).filter(u => /^https?:\/\//.test(u)).map(u => ({ url: u, lang: many ? o.lang : '', host: (/^https?:\/\/(?:www\.)?([^/?#]+)/.exec(u) || [, ''])[1] }))); };
 const OLC = { 빠알리어: 'pi', 영어: 'en', 미얀마어: 'my', 태국어: 'th', 싱할라어: 'si', 기타: 'etc' };
 const origsOf = b => (b.originals || []).filter(o => o && o.lang && o.mode !== 'none' && String(o.url || '').trim()).map(o => {
   const u = String(o.url).trim();
@@ -763,7 +766,7 @@ for (const b of BOOKS) {
       ${b.translator ? `<dt>번역·편자</dt><dd>${esc(b.translator)}</dd>` : ''}
       ${b.book_type ? `<dt>책 형식</dt><dd>${esc(b.book_type)}</dd>` : ''}
       ${langsOf(b).length ? `<dt>원서의 언어</dt><dd>${esc(langsOf(b).join(', '))}</dd>` : ''}
-      ${b.original_source || (b.originals || []).some(o => o && o.source) ? `<dt>원서 정보</dt><dd>${esc(b.original_source || '')}${(b.originals || []).filter(o => o && o.mode !== 'none' && /^https?:\/\//.test(String(o.source || ''))).map(o => `${b.original_source ? ' · ' : ''}<a href="${esc(o.source)}" target="_blank" rel="noopener">원서${(b.originals || []).filter(x => x && x.source).length > 1 ? `(${esc(o.lang)})` : ''} 원본 출처 ↗</a>`).join(' ')}</dd>` : ''}
+      ${b.original_source || origSrcs(b).length ? `<dt>원서 정보</dt><dd>${esc(b.original_source || '')}${origSrcs(b).map((x, k) => `${b.original_source || k ? ' · ' : ''}<a href="${esc(x.url)}" target="_blank" rel="noopener">원서${x.lang ? `(${esc(x.lang)})` : ''} 원본 출처 ↗</a> <span class="muted small">${esc(x.host)}</span>`).join('')}</dd>` : ''}
       ${parEds(b).length ? `<dt>원서 대조 판본</dt><dd>${parEds(b).map(x => `${x.title ? `<i>${esc(x.title)}</i>` : ''}${x.by ? ' · ' + esc(x.by) : ''}${x.edition ? ` <span class="muted small">(${esc(x.edition)})</span>` : ''}${x.url ? ` · <a href="${esc(x.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>` : ''}`).join('<br>')}</dd>` : ''}
       <dt>자료 제공</dt><dd>${prov ? esc(prov.name) + (prov.urls || []).map(u => ` <a href="${esc(u)}" target="_blank" rel="noopener">↗</a>`).join('') : '—'}</dd>
       <dt>원본 출처</dt><dd>${(e.sources || []).length ? e.sources.map(s => `${SRC_FILE[s.file] ? `<span class="muted small">${SRC_FILE[s.file]}:</span> ` : ''}<a href="${esc(s.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>${s.checked ? ` <span class="muted small">(${esc(s.checked)} 확인)</span>` : ''}${s.archive ? ` · <a href="${esc(s.archive)}" target="_blank" rel="noopener">보관본</a>` : ''}`).join('<br>') : '—'}</dd>

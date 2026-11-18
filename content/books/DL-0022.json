@@ -116,7 +116,9 @@
       "lang": "영어",
       "mode": "file",
       "url": "orig/DL-0022/DL-0022_원서_영어.pdf",
-      "source": "https://www.dhammatalks.net/Books16/Bhikkhu_Bodhi-Majjhima_Nikaya.pdf"
+      "sources": [
+        "https://www.dhammatalks.net/Books16/Bhikkhu_Bodhi-Majjhima_Nikaya.pdf"
+      ]
     }
   ]
 }

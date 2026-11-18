@@ -156,7 +156,9 @@
       "lang": "영어",
       "mode": "file",
       "url": "orig/DL-0020/DL-0020_원서_영어.pdf",
-      "source": "https://buddhistuniversity.net/content/booklets/noble-eightfold-path_bodhi"
+      "sources": [
+        "https://buddhistuniversity.net/content/booklets/noble-eightfold-path_bodhi"
+      ]
     }
   ]
 }
