@@ -1,0 +1,722 @@
+[
+ {
+  "img": "images/38-Sirasakumara-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     76,
+     350,
+     218
+    ],
+    "ko": "웰루와나에서 비구들이 여래에 대한 데와닷따의 적의를 이야기했습니다. 스승께서 말씀하셨습니다. “지금만이 아니라 지난 생에도 데와닷따는 적의 때문에 큰 불행을 당했다.” 이렇게 빠타마라자 왕의 이야기가 시작되었습니다.",
+    "cover": [
+     224,
+     200,
+     159
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     296,
+     578,
+     392
+    ],
+    "ko": "아기를 배기 전, 수라시데위 왕비는 더러운 천이 강가를 걸어가는 것을 보았습니다. 그날 밤 꿈에 보살이 나타나 말했습니다. “나는 당신의 아들이 되어 빨리사나가라 나라의 모든 백성을 다스리겠습니다.”",
+    "cover": [
+     222,
+     198,
+     157
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     484,
+     44,
+     752,
+     160
+    ],
+    "ko": "신기하게도 왕비의 입에서 개어 놓은 천 속으로 태어난 아기는 몹시 무거웠습니다. 강물에 씻기자 더러움이 모두 사라지고, 천은 물방울 맺힌 연잎처럼 아주 맑고 깨끗해졌습니다.",
+    "cover": [
+     225,
+     208,
+     177
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     150,
+     256,
+     312
+    ],
+    "ko": "아버지의 사랑을 시험하려고 아홉 달 된 시라사꾸마라는 커다란 보석 궤짝에 숨었습니다. 애가 탄 왕은 빨리사나가라를 일곱 번 돌았습니다. 마침내 찾아내니, 왕자는 귀한 옷들 사이에 황금 연꽃처럼 빛나며 앉아 있었습니다.",
+    "cover": [
+     224,
+     208,
+     177
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     330,
+     744,
+     436
+    ],
+    "ko": "욕심 많은 바라문 고문 맛자하라까가 몰래 창고의 재물을 강가 강에 던졌습니다. 그리고 왕의 어리석음을 이용해, 왕자가 이상하게 태어난 탓에 강물이 넘쳐 온 나라를 쓸어 가리라고 주장했습니다.",
+    "cover": [
+     223,
+     204,
+     169
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     420,
+     34,
+     776,
+     130
+    ],
+    "ko": "왕은 아기를 강가 강에 띄워 버리라고 명했습니다. 왕비가 애원했습니다. “우리 아들은 당신의 손가락과 같습니다. 손가락을 잘라야 한다면 잘라 보십시오.” 왕은 그녀의 절망을 외면했습니다.",
+    "cover": [
+     225,
+     204,
+     170
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     42,
+     32,
+     394,
+     132
+    ],
+    "ko": "네 살 데와까마 왕자가 명령을 거역했습니다. 아기 동생을 가슴에 안고 칼을 뽑아, 바라문들에게 금 9백만 닢과 코끼리 6백 마리를 줄 테니 동생을 살려 달라 했지만 그들은 거절했습니다.",
+    "cover": [
+     222,
+     199,
+     165
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     432,
+     312,
+     748,
+     404
+    ],
+    "ko": "막내아들을 버릴 수 없었던 수라시데위 왕비는 다른 자녀들에게 화내지 말고 바르게 다스리라고 일렀습니다. 그리고 천 그네에 시라사꾸마라를 목에 매달고 귀양 배에 올라, 헤어지느니 같은 운명을 택했습니다.",
+    "cover": [
+     217,
+     196,
+     164
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     176,
+     552,
+     262
+    ],
+    "ko": "보살의 위엄 때문에 삭까가 강가 강 위에 천상의 음식을 내렸습니다. 동시에 하늘 비가 쓰러져 있던 슬픔에 잠긴 백성 3만 6천 명을 깨워 이 기적을 보게 했습니다.",
+    "cover": [
+     207,
+     186,
+     155
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     50,
+     304,
+     150
+    ],
+    "ko": "덕이 사라지자 빨리사나가라는 무너졌습니다. 코끼리들은 울며 물을 마시지 않았고, 왕실 망고 숲은 말라 먼지가 되었습니다. 보살의 힘으로 비 한 방울 내리지 않아, 악한 바라문들의 우물도 다 말라 버렸습니다.",
+    "cover": [
+     209,
+     187,
+     157
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     54,
+     318,
+     746,
+     404
+    ],
+    "ko": "늙은 장군이 와서 궁극의 진실을 전했습니다.\n“어리석은 이가 어리석은 이와 어울리면 점점 더 나빠집니다.\n오직 선한 이와 사귀십시오. 그러면 결코 악해지지 않을 것입니다.”",
+    "cover": [
+     213,
+     191,
+     160
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     554,
+     132,
+     746,
+     292
+    ],
+    "ko": "왕자를 황금 그릇에 모시고 향수로 씻겼습니다. 백성들이 외치자 삭까가 천상의 물과 일곱 보배의 비를 내려, 그가 참된 부처의 싹임을 증명했습니다.",
+    "cover": [
+     245,
+     231,
+     198
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     458,
+     314,
+     756,
+     404
+    ],
+    "ko": "천상의 물은 저마다 마음의 청정함을 드러냈습니다. 공덕 있는 이에게 닿으면 한 방울이 7요자나까지 향기를 풍겼고, 악한 이에게는 평범한 강물처럼 아무 향기가 없었습니다.",
+    "cover": [
+     243,
+     226,
+     188
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     552,
+     132,
+     748,
+     312
+    ],
+    "ko": "천상의 향기를 탐낸 빠타마 왕의 악한 바라문들이 보살의 상서로운 말을 훔쳤습니다. 왕실의 말은 그들의 악함을 거부하며 땅에 내동댕이치고 피가 흐르도록 짓밟았습니다.",
+    "cover": [
+     242,
+     225,
+     186
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     362,
+     592,
+     444
+    ],
+    "ko": "데와까마 왕자가 왕실의 말을 되찾아 황금 나루에 왔습니다. 곧이어 빠타마 왕과 백성 24만 명이 큰 행렬을 지어, 향과 튀밥을 뿌리며 보살께 예배하러 왔습니다.",
+    "cover": [
+     231,
+     208,
+     166
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     256,
+     40,
+     542,
+     124
+    ],
+    "ko": "악한 바라문들이 왕자에게 관정하려 하자 곧바로 응보가 닥쳤습니다. 그들의 물병이 700 조각으로 터져 살 속 깊이 박혔고, 낫지 않는 아픈 종기가 되었습니다.",
+    "cover": [
+     232,
+     213,
+     179
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     218,
+     344,
+     580,
+     426
+    ],
+    "ko": "평생의 침묵을 깨고 보살이 입을 열었습니다. 쌓은 공덕의 힘으로 전생을 기억해 내어, 강가 강에서 겪은 괴로움 뒤에 숨은 업의 진실을 밝혔습니다.",
+    "cover": [
+     229,
+     209,
+     169
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     216,
+     342,
+     584,
+     422
+    ],
+    "ko": "“지난 생에 나는 꽃을 좋아하는 왕자였습니다. 새 한 마리가 내 꽃다발을 망치자 화가 나 독을 먹였습니다. 이 악행 하나 때문에 죄 없는 보살이 강물 위를 무력하게 떠다녔습니다.”",
+    "cover": [
+     229,
+     209,
+     169
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     336,
+     594,
+     434
+    ],
+    "ko": "물병이 한 방울씩 차듯, 어리석은 이는 스스로 괴로움을 채웁니다. 보살은 대중에게 행위를 맑게 하라고 일렀습니다. 악한 벗과 함께 뿌린 씨앗은 불탈 뿐이라고.",
+    "cover": [
+     227,
+     205,
+     163
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     218,
+     334,
+     584,
+     414
+    ],
+    "ko": "그는 아버지께 벗으로 꾸민 배신자 여섯을 경계하라고 일렀습니다. 먹여 준 뱀처럼 그들은 주인을 뭅니다. 지혜로운 왕은 그들을 멀리해야 합니다.",
+    "cover": [
+     224,
+     202,
+     161
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     336,
+     588,
+     430
+    ],
+    "ko": "참된 재물은 보시에 있습니다. 보살은 왕에게 화내지 말고 다스리며, 걸인을 돕고, 늙은 짐승을 먹이고, 오직 지혜로운 이들을 곁에 두어 천상에 태어날 길을 닦으라고 가르쳤습니다.",
+    "cover": [
+     222,
+     200,
+     158
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     338,
+     574,
+     412
+    ],
+    "ko": "법을 설하고 나니 사람으로서 할 일을 마쳤습니다. 그는 신통의 위력으로 모습을 감추고 따와띵사 천상의 12요자나 황금 궁전으로 올라갔습니다.",
+    "cover": [
+     220,
+     197,
+     157
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     330,
+     574,
+     418
+    ],
+    "ko": "수라시데위의 깊은 슬픔을 들은 보살은 빛나는 보석 누각을 타고 내려왔습니다. 그리고 사람들의 눈을 열어, 천상의 거처를 보는 기쁘고 신기한 광경을 주었습니다.",
+    "cover": [
+     218,
+     194,
+     154
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/38-Sirasakumara-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     46,
+     538,
+     110
+    ],
+    "ko": "스승께서 자따까를 마치시며\n지난 생의 인물과 지금의 윤회를\n잇는 업의 실을 밝히셨습니다.",
+    "cover": [
+     216,
+     191,
+     152
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     218,
+     250,
+     242
+    ],
+    "ko": "빠타마 왕 → 숫도다나",
+    "cover": [
+     214,
+     188,
+     149
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     300,
+     247,
+     500,
+     271
+    ],
+    "ko": "수라시데위 → 마하마야",
+    "cover": [
+     218,
+     193,
+     154
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     550,
+     218,
+     740,
+     242
+    ],
+    "ko": "맛자하라까 → 데와닷따",
+    "cover": [
+     215,
+     189,
+     150
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     378,
+     245,
+     402
+    ],
+    "ko": "데와까마 왕자 → 아난다",
+    "cover": [
+     210,
+     184,
+     147
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     300,
+     378,
+     500,
+     402
+    ],
+    "ko": "장군 → 사리뿟따",
+    "cover": [
+     215,
+     189,
+     151
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     550,
+     378,
+     750,
+     402
+    ],
+    "ko": "삭까 → 아누룻다",
+    "cover": [
+     214,
+     190,
+     151
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
