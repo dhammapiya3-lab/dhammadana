@@ -118,6 +118,25 @@ collections:
           - { name: mode, label: 방식, widget: select, options: [{ label: "도서관 파일", value: file }, { label: "다른 사이트 링크", value: link }, { label: "숨김", value: none }], default: file }
           - { name: url, label: 파일 위치 또는 주소, required: false, hint: "올리기 화면에서 올리면 저절로 채워집니다 (예: orig/DL-0005/DL-0005_원서_미얀마어.pdf). 다른 사이트면 https:// 주소" }
           - { name: site, label: 사이트 이름, required: false, hint: "다른 사이트 링크일 때만 (예: sagarwarmyae.net)" }
+      - name: braille
+        label: 점자 파일
+        label_singular: 점자 파일
+        widget: list
+        required: false
+        summary: "점자({{fields.format}}) {{fields.org}} {{fields.year}}"
+        hint: "책 소개(일반·단순 화면)에 '점자 파일 내려받기' 단추와 아래 정보가 보입니다. 파일은 책 파일 올리기 화면(/admin/upload/)에서 '점자'를 골라 올리면 여기에 저절로 들어갑니다. 형식(BRF·BRL 등)마다 하나씩."
+        fields:
+          - { name: format, label: 파일 형식, required: false, hint: "BRF·BRL·BBF·DXB·HWP·TXT·ZIP 등 (올리면 저절로)" }
+          - { name: mode, label: 방식, widget: select, options: [{ label: "도서관 파일", value: file }, { label: "다른 사이트 링크", value: link }, { label: "숨김", value: none }], default: file }
+          - { name: url, label: 파일 위치 또는 주소, required: false, hint: "올리기 화면에서 올리면 저절로 채워집니다 (예: braille/DL-0015/DL-0015_점자.brf). 다른 사이트면 https:// 주소" }
+          - { name: site, label: 사이트 이름, required: false, hint: "다른 사이트 링크일 때만" }
+          - { name: org, label: 제작 기관, required: false, hint: "점역한 곳 (예: OO점자도서관)" }
+          - { name: sponsor, label: 제작 후원 기관, required: false }
+          - { name: year, label: 제작 연도, required: false, hint: "예: 2026" }
+          - { name: collection, label: 수집 경로, required: false, hint: "예: 점자도서관에 의뢰해 제작 / OO에서 기증" }
+          - { name: made, label: 파일 만든 날짜, required: false, hint: "예: 2026-11-19" }
+          - { name: updated, label: 파일 수정한 날짜, required: false, hint: "고친 파일을 다시 올리면 올리기 화면이 파일의 수정 날짜를 넣습니다" }
+          - { name: note, label: 알림, widget: text, required: false, hint: "점역 방식 등 덧붙일 말 (예: 약자 사용, 그림은 점역자 주로 설명)" }
       - { name: series, label: 총서·시리즈, required: false }
       - name: main
         label: 주요 자료

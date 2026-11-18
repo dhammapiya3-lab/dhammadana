@@ -122,6 +122,17 @@ const origsOf = b => (b.originals || []).filter(o => o && o.lang && o.mode !== '
   (DOWNLOADS[b.id] = DOWNLOADS[b.id] || {})[kind] = { key: u.replace(/^\//, ''), name: safeName(`${b.title}_원서_${o.lang}`) + '.' + x };
   return { lang: o.lang, url: `/download/${b.id}/${kind}`, ext: false, site: '' };
 });
+// 점자 파일 (운영자 요청, 2026-11-19): 책 JSON braille [{format, mode: file|link, url, site, org, sponsor, year, collection, made, updated, note}] → 일반·단순 화면 '점자 파일 내려받기'
+const brlOf = b => { const L = (b.braille || []).filter(o => o && o.mode !== 'none' && String(o.url || '').trim()); return L.map(o => {
+  const u = String(o.url).trim(), x = (/\.(\w+)$/.exec(u) || [, 'brf'])[1].toLowerCase(), F = String(o.format || x).toUpperCase();
+  const label = L.length > 1 ? `점자 파일(${F}) 내려받기` : '점자 파일 내려받기';
+  const info = [['파일 형식', F], ['제작 기관', o.org], ['제작 후원 기관', o.sponsor], ['제작 연도', o.year], ['수집 경로', o.collection], ['파일 만든 날짜', o.made], ['파일 수정한 날짜', o.updated], ['알림', o.note]].map(([k, v]) => [k, String(v || '').trim()]).filter(([, v]) => v);
+  if (o.mode === 'link' || /^https?:\/\//.test(u)) return { F, label, info, url: fileUrl(u), ext: o.mode === 'link', site: o.site || '' };
+  const kind = 'braille_' + (x.replace(/[^a-z]/g, '').slice(0, 5) || 'brf');
+  (DOWNLOADS[b.id] = DOWNLOADS[b.id] || {})[kind] = { key: u.replace(/^\//, ''), name: safeName(`${b.title}_점자`) + (L.length > 1 && x !== F.toLowerCase() ? '_' + F : '') + '.' + x };
+  return { F, label, info, url: `/download/${b.id}/${kind}`, ext: false, site: '' };
+}); };
+const brlInfoHtml = x => x.info.filter(([k]) => k !== '알림').map(([k, v]) => `${k} ${esc(v)}`).join(' · ') + (x.info.find(([k]) => k === '알림') ? `<br>${esc(x.info.find(([k]) => k === '알림')[1]).replace(/\n/g, '<br>')}` : '');
 function formats(b) {
   const e = curEd(b), f = [];
   const ok = x => x && x.mode && x.mode !== 'none' && x.url;
@@ -725,7 +736,7 @@ for (const b of BOOKS) {
       { h: '판', get: x => x.label, always: 1 }, { h: '발행일', get: x => pubDate(x), always: 1 }, { h: '쪽수', get: x => x.page_count ? x.page_count + '쪽' : '', always: 1 },
       { h: '출판사', get: x => x.publisher_print }, { h: 'ISBN', get: x => x.isbn }, { h: '공개', get: statusCell, always: 1, html: 1 }]).replace('<h4 class="ed-h">판</h4>', ''));
   const pl = PLAYLISTS.find(p => p.teacher && p.teacher === b.teacher);
-  const extF = [...f.filter(x => x.ext), ...origsOf(b).filter(x => x.ext && x.site)];
+  const extF = [...f.filter(x => x.ext), ...origsOf(b).filter(x => x.ext && x.site), ...brlOf(b).filter(x => x.ext && x.site)];
   put(`book/${b.id}/index.html`, layout({
     simple: `/simple/book/${b.id}/`, title: b.title, nav: 'library', page: 'book', image: b.cover || '', ld: bookLd(b, e, t), desc: `${b.title} — ${b.byline}${b.translator ? ', ' + b.translator : ''}`, body: `<div class="wrap detail">
   <div><div class="cover-box${wideCover(b.cover) ? ' wide' : ''}"${wideCover(b.cover) ? ` style="aspect-ratio:${Math.round(wideCover(b.cover).w / 2)}/${wideCover(b.cover).h}"` : ''}>${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지">` : `<div class="cover-ph big">${esc(b.title)}</div>`}</div></div>
@@ -738,8 +749,10 @@ for (const b of BOOKS) {
     </div><aside class="d-side"><div class="get-box"><div class="gb-title">이 책 읽어보기</div><div class="actions">${e.reader ? `<a class="btn" href="/read/${b.id}/">온라인으로 읽기</a>` : ''}${e.reader && AUDIO[b.id] ? (AUDIO[b.id].human ? `<a class="btn" href="/read/${b.id}/?audio=1" title="화면을 끄거나 다른 앱을 써도 계속 들립니다">🎧 오디오북으로 듣기</a>` : `<a class="btn" href="/read/${b.id}/?audio=1" title="기계 음성(TTS)으로 만든 오디오북입니다. 화면을 끄거나 다른 앱을 써도 계속 들립니다" aria-label="TTS 오디오북으로 듣기 (기계 음성)">🎧 TTS 오디오북으로 듣기</a>`) : ''}
       ${f.filter(x => x.k !== '온라인 읽기').map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">${x.name} 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>${x.name} 내려받기</a>`).join('')}
       ${origsOf(b).map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">원서(${esc(x.lang)}) 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>원서(${esc(x.lang)}) 내려받기</a>`).join('')}
+      ${brlOf(b).map(x => `<a class="btn ghost" href="${esc(x.url)}"${x.ext ? ' target="_blank" rel="noopener"' : ' download'}>${esc(x.label)}${x.ext ? ' ↗' : ''}</a>`).join('')}
       ${(b.stores || []).filter(x => x && /^https?:\/\//.test(String(x.url || '').trim())).map(x => `<a class="btn ghost" href="${esc(String(x.url).trim())}" target="_blank" rel="noopener">${esc((x.name || '').trim() ? x.name.trim() + ' 바로가기' : '인터넷 서점 바로가기')} ↗</a>`).join('')}
-      ${!f.length ? `<div class="soon-box">파일을 준비하고 있습니다.<br><span class="small">소식에서 올라오는 대로 알려 드립니다.</span></div>` : ''}</div>
+      ${!f.length && !brlOf(b).length ? `<div class="soon-box">파일을 준비하고 있습니다.<br><span class="small">소식에서 올라오는 대로 알려 드립니다.</span></div>` : ''}</div>
+    ${brlOf(b).length ? `<div class="small muted brl-info">${brlOf(b).map(x => `<div><b>점자 파일${brlOf(b).length > 1 ? ` (${esc(x.F)})` : ''}</b> — ${brlInfoHtml(x)}</div>`).join('')}</div>` : ''}
     ${extF.length ? `<div class="small muted" style="margin-bottom:4px">↗ 표시된 파일은 ${esc(extF[0].site)}로 넘어가서 내려받습니다.</div>` : ''}
     <dl class="gb-kv"><dt>판</dt><dd>${esc((e.label_display || '').trim() || (e.label || '').trim() || '—')}</dd>${e.page_count ? `<dt>쪽수</dt><dd>${esc(e.page_count)}쪽</dd>` : ''}${edHistory(b).length ? `<dt>펴낸 이력</dt><dd>${edHistory(b).map(esc).join('<br>')}</dd>` : ''}<dt>라이선스</dt><dd>${licHtml(b.license)}</dd><dt>자료번호</dt><dd>${b.id}</dd></dl></div></aside><div class="d-rest">
     <div class="labels">${b.book_type ? `<a class="t" href="/library/?btype=${encodeURIComponent(b.book_type)}">${esc(b.book_type)}</a>` : ''}${(b.main || []).map(m => `<a class="t" href="/library/?main=${slugT(m)}">${esc(m)}</a>`).join('')}${(b.topics || []).map(x => `<a class="t" href="/library/?topic=${slugT(x)}">${esc(x)}</a>`).join('')}${tr ? `<a href="/library/?trad=${tr.id}">${esc(tr.name)}</a>` : ''}${b.press && !(b.provider_chip && prov) ? `<a href="/press/">我無말들 출간</a>` : ''}${b.provider_chip && prov ? `<a href="${pubHref(pubKey(prov.name))}">${esc(prov.name)} 출간</a>` : ''}${(b.partner_chips || []).map(providerById).filter(Boolean).map(p => `<a href="/publisher/${p.id}/">${esc(p.name)}</a>`).join('')}</div>
@@ -754,6 +767,7 @@ for (const b of BOOKS) {
       ${parEds(b).length ? `<dt>원서 대조 판본</dt><dd>${parEds(b).map(x => `${x.title ? `<i>${esc(x.title)}</i>` : ''}${x.by ? ' · ' + esc(x.by) : ''}${x.edition ? ` <span class="muted small">(${esc(x.edition)})</span>` : ''}${x.url ? ` · <a href="${esc(x.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>` : ''}`).join('<br>')}</dd>` : ''}
       <dt>자료 제공</dt><dd>${prov ? esc(prov.name) + (prov.urls || []).map(u => ` <a href="${esc(u)}" target="_blank" rel="noopener">↗</a>`).join('') : '—'}</dd>
       <dt>원본 출처</dt><dd>${(e.sources || []).length ? e.sources.map(s => `${SRC_FILE[s.file] ? `<span class="muted small">${SRC_FILE[s.file]}:</span> ` : ''}<a href="${esc(s.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>${s.checked ? ` <span class="muted small">(${esc(s.checked)} 확인)</span>` : ''}${s.archive ? ` · <a href="${esc(s.archive)}" target="_blank" rel="noopener">보관본</a>` : ''}`).join('<br>') : '—'}</dd>
+      ${brlOf(b).length ? `<dt>점자 파일</dt><dd>${brlOf(b).map(brlInfoHtml).join('<br>')}</dd>` : ''}
       ${AUDIO[b.id] && abInfoHtml(b) ? `<dt>오디오북</dt><dd>${abInfoHtml(b)}</dd>` : ''}
       <dt>수집 경로</dt><dd>${esc(e.collection || '—')}${e.collected ? ` <span class="muted small">(${esc(e.collected)})</span>` : ''}</dd>
       <dt>게시 허락</dt><dd>${permLabel || e.permission_note || e.permission_image ? `${permLabel}${perms.filter(p => p.image && p.image_public).map(p => ` · <button class="link-btn" data-permit="${esc(p.image)}" data-title="${esc(b.title)}">허락서 보기</button>`).join('')}${e.permission_image ? `${permLabel ? ' · ' : ''}<button class="link-btn" data-permit="${esc(e.permission_image)}" data-title="${esc(b.title)}">허락서 보기</button>` : ''}${e.permission_note ? `<blockquote class="perm-note">${esc(e.permission_note).replace(/\n/g, '<br>')}</blockquote>` : ''}` : '—'}</dd>
@@ -1109,6 +1123,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     if (hasText(b)) rows.push({ href: `/simple/book/${b.id}/read/`, ic: '📖', kind: 'read', cols: ['온라인으로 읽기', '장 목록에서 장을 골라 글로 읽기'] });
     if (hasText(b)) rows.push({ href: `/simple/book/${b.id}/read/?listen=1`, ic: '🔊', kind: 'listen', cols: ['듣기 (TTS)', 'TTS로 듣던 곳(없으면 읽던 곳, 처음이면 첫 장)을 열고 ‘▶ 듣기’ 단추로 — Enter 를 누르면 기기 목소리가 읽어 줌'] });
     if (hasText(b) && AUDIO[b.id]) rows.push({ href: `/simple/book/${b.id}/read/?audio=1`, ic: '🎧', kind: 'audio', cols: [AUDIO[b.id].human ? '오디오북 (사람이 읽은 녹음)' : '오디오북 (기계 음성 녹음)', '듣던 장(처음이면 첫 장)을 열고 ‘🎧 오디오북’ 단추로 — 맨 위 재생기에서 재생, 듣는 문단을 따라감'] });
+    for (const x of brlOf(b)) rows.push({ href: x.url, ic: '⠿', kind: 'file', dl: !x.ext, ext: x.ext, cols: [x.label + (x.ext ? ' (다른 사이트에서)' : ''), x.info.map(([k, v]) => `${k}: ${v}`).join(', ').replace(/\n/g, ' ')] });
     if (txtOk(b)) rows.push({ href: `/txt/${b.id}/${encodeURIComponent(txtName(b))}`, ic: '📃', kind: 'file', dl: true, cols: ['글 파일(TXT) 내려받기', '본문 글만 담은 파일 — 점자정보단말기·데이지 플레이어·메모장에서 읽기'] });
     for (const x of f) rows.push({ href: x.url, ic: x.k === 'PDF' ? '📄' : x.k === 'EPUB' ? '📘' : '📝', kind: 'file', dl: !x.ext, ext: x.ext, cols: [`${x.name} ${x.ext ? '(다른 사이트에서)' : '내려받기'}`, x.ext ? x.site : '파일'] });
     rows.push({ href: `/simple/book/${b.id}/about/`, ic: 'ℹ️', kind: 'about', cols: ['책 소개', '지은이·옮긴이·펴낸 곳·소개 글·차례'] });
@@ -1120,6 +1135,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     const toc = cl.length ? `<h2>차례</h2><ul class="s-toc">${cl.map(c => `<li>${boxNum(esc(c))}</li>`).join('')}</ul>` : '';
     put(`simple/book/${b.id}/about/index.html`, simpleLayout({ title: `${b.title} – 책 소개`, path: [...P.slice(0, 1), [b.title, `/simple/book/${b.id}/`], ['책 소개', '']], up: `/simple/book/${b.id}/`, normal: `/book/${b.id}/`, page: 'simple-text',
       body: `<div class="s-prose"><dl class="s-dl">${[['제목', b.title + (b.subtitle ? ' – ' + b.subtitle : '')], ['지은이', b.byline], ['옮긴이', b.translator], ['펴낸 곳', pubLine(b)], ['판', edText(e)], ['원서', b.original_title]].filter(x => x[1]).map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>
+      ${brlOf(b).map(x => `<h2>점자 파일${brlOf(b).length > 1 ? ` (${esc(x.F)})` : ''}</h2><dl class="s-dl">${x.info.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v).replace(/\n/g, '<br>')}</dd>`).join('')}</dl><p><a class="s-link" href="${esc(x.url)}"${x.ext ? ' target="_blank" rel="noopener"' : ' download'}>${esc(x.label)}${x.ext ? ' (다른 사이트, 새 창)' : ''}</a></p>`).join('')}
       ${b.description ? `<h2>책 소개</h2>${marked.parse(String(b.description))}` : '<p>책 소개는 준비 중입니다.</p>'}${b.author_intro ? `<h2>지은이 소개</h2>${marked.parse(String(b.author_intro))}` : ''}${b.translator_intro ? `<h2>${esc(b.translator_intro_title || '옮긴이 소개')}</h2>${marked.parse(String(b.translator_intro))}` : ''}${toc}
       <p><a class="s-link" href="/simple/book/${b.id}/">◀ ${esc(b.title)} 목록으로 돌아가기</a></p></div>` }));
     { // 라이선스 (운영자 요청, 2026-11-18)

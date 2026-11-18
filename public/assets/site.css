@@ -1353,3 +1353,5 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 .fn-site p{margin:.2em 0}.fn-site .fn-site-foot{font-size:.82em;color:#5c4a2a}
 :root.mode-night .fn-site,:root.mode-contrast .fn-site{background:#1d1a12;color:#f1e6c8;border-color:#e0b85a}
 :root.mode-night .fn-site-tag,:root.mode-contrast .fn-site-tag,:root.mode-night .fn-site .fn-site-foot,:root.mode-contrast .fn-site .fn-site-foot{color:#ffd77a}
+/* 점자 파일 정보 (운영자 요청, 2026-11-19) */
+.get-box .brl-info{margin:2px 0 8px;line-height:1.55}.get-box .brl-info>div+div{margin-top:4px}

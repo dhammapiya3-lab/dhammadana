@@ -53,14 +53,24 @@
     </div>
     <div class="card">
       <h2>2. 파일 종류</h2>
-      <div class="seg2"><label><input type="radio" name="kind" value="pdf" checked>PDF<br><small>화면(온라인)용</small></label><label><input type="radio" name="kind" value="pdf_print">PDF<br><small>인쇄용 (본문)</small></label><label><input type="radio" name="kind" value="pdf_cover">PDF<br><small>인쇄용 표지</small></label><label><input type="radio" name="kind" value="epub">EPUB</label><label><input type="radio" name="kind" value="hwp">HWP<br><small>한글 파일</small></label><label><input type="radio" name="kind" value="orig">원서<br><small>원본 언어 파일</small></label></div>
+      <div class="seg2"><label><input type="radio" name="kind" value="pdf" checked>PDF<br><small>화면(온라인)용</small></label><label><input type="radio" name="kind" value="pdf_print">PDF<br><small>인쇄용 (본문)</small></label><label><input type="radio" name="kind" value="pdf_cover">PDF<br><small>인쇄용 표지</small></label><label><input type="radio" name="kind" value="epub">EPUB</label><label><input type="radio" name="kind" value="hwp">HWP<br><small>한글 파일</small></label><label><input type="radio" name="kind" value="orig">원서<br><small>원본 언어 파일</small></label><label><input type="radio" name="kind" value="braille">점자<br><small>점자 파일</small></label></div>
       <div class="row" id="olangRow" hidden style="margin-top:10px"><label for="olang">원서 언어</label><select id="olang"><option>빠알리어</option><option>영어</option><option>미얀마어</option><option>태국어</option><option>싱할라어</option><option>기타</option></select></div>
+      <div id="brlBox" hidden style="margin-top:10px">
+        <p class="note">책 소개(일반·단순 화면)에 '점자 파일 내려받기' 단추가 생기고, 아래 정보가 함께 보입니다. 판과 상관없이 책에 붙고, 같은 형식(BRF 등)으로 다시 올리면 바뀝니다. BRF·BRL·BBF·DXB·HWP·TXT·PDF·DOCX·ZIP. 여러 파일(권마다 따로 된 점자 파일 등)은 한꺼번에 고르면 zip 하나로 묶어 올립니다. 정보는 비워 두어도 되고, 나중에 관리자 화면 책의 '점자 파일'에서 고칠 수 있습니다.</p>
+        <div class="row"><label for="bOrg">제작 기관</label><input id="bOrg" placeholder="예: OO점자도서관"></div>
+        <div class="row"><label for="bSp">제작 후원 기관</label><input id="bSp"></div>
+        <div class="row"><label for="bYear">제작 연도</label><input id="bYear" placeholder="예: 2026"></div>
+        <div class="row"><label for="bCol">수집 경로</label><input id="bCol" placeholder="예: 점자도서관에 의뢰해 제작"></div>
+        <div class="row"><label for="bMade">파일 만든 날짜</label><input id="bMade" type="date"></div>
+        <div class="row"><label for="bUpd">파일 수정한 날짜</label><input id="bUpd" type="date"></div>
+        <p class="note">파일을 고르면 '파일 수정한 날짜'에 그 파일의 수정 날짜가 저절로 들어갑니다(처음 올리는 파일이면 '만든 날짜'에도). 다르면 고쳐 주세요.</p>
+      </div>
       <p class="note" id="olangNote" hidden>책 소개에 '원서(미얀마어) 내려받기'처럼 단추가 생깁니다. 판과 상관없이 책에 하나씩(언어마다) 붙고, 같은 언어로 다시 올리면 바뀝니다. PDF·EPUB·HWP·DOCX·ZIP·TXT. <b>원서 파일이 여러 개면</b> 한꺼번에 고르거나 끌어다 놓으세요 — 저절로 zip 파일 하나로 묶어서 올립니다(이미 묶은 zip 을 올려도 됩니다).</p>
     </div>
     <div class="card">
       <h2>3. 파일 올리기</h2>
       <div class="drop" id="drop" tabindex="0" role="button"><b>여기를 눌러 파일을 고르거나</b><br>파일을 끌어다 놓으세요<br><span class="note">큰 파일은 저절로 나눠서 올립니다</span></div>
-      <input type="file" id="file" accept=".pdf,.epub,.hwp,.hwpx,.docx,.doc,.zip,.txt" multiple hidden>
+      <input type="file" id="file" accept=".pdf,.epub,.hwp,.hwpx,.docx,.doc,.zip,.txt,.brf,.brl,.bbf,.dxb" multiple hidden>
       <div id="picked" class="note" style="margin-top:10px"></div>
       <button class="btn" id="go" style="margin-top:12px;width:100%" disabled>올리기</button>
       <progress id="prog" max="100" value="0" hidden style="margin-top:12px"></progress>
@@ -146,6 +156,7 @@ async function pickBook(){
   if(!id) return;
   const r=await gh(`/contents/content/books/${bf(id)}.json?ref=main`); if(!r.ok){ show('err','책 정보를 불러오지 못했습니다.'); return; }
   const j=await r.json(); BOOKSHA=j.sha; BOOK=JSON.parse(dec(j.content));
+  ['bOrg','bSp','bYear','bCol','bMade','bUpd'].forEach(id=>{ delete $('#'+id).dataset.touched; }); brlFill();
   { const ol=[].concat(BOOK.original_language||[]).filter(x=>x&&x!=='한국어'); if(ol.length&&[...$('#olang').options].some(o=>o.value===ol[0])) $('#olang').value=ol[0]; }
   const eds=BOOK.editions||[];
   $('#ed').innerHTML=eds.map((e,i)=>`<option value="${i}" ${e.current?'selected':''}>${esc(e.label||('판 '+(i+1)))}${e.current?' (최신판)':''}${e.pdf&&e.pdf.url?' · 화면용 PDF 있음':''}${e.pdf_print&&e.pdf_print.url?' · 인쇄용 PDF 있음':''}${e.pdf_cover&&e.pdf_cover.url?' · 인쇄용 표지 있음':''}${e.epub&&e.epub.url?' · EPUB 있음':''}${e.hwp&&e.hwp.url?' · HWP 있음':''}</option>`).join('');
@@ -154,18 +165,30 @@ async function pickBook(){
 }
 const kind=()=>document.querySelector('input[name=kind]:checked').value;
 // 원서 파일 (운영자 요청, 2026-11-18): 책 JSON originals [{lang, mode:'file', url}] → 책 소개 '원서(미얀마어) 내려받기'
-function kindUpd(){ const o=kind()==='orig'; $('#olangRow').hidden=!o; $('#olangNote').hidden=!o; }
+function kindUpd(){ const o=kind()==='orig'; $('#olangRow').hidden=!o; $('#olangNote').hidden=!o; $('#brlBox').hidden=kind()!=='braille'; brlFill(); }
+// 점자 파일 (운영자 요청, 2026-11-19): 책 JSON braille [{format, mode, url, org, sponsor, year, collection, made, updated, note}] — 형식마다 하나
+const BRL_EXT=['brf','brl','bbf','dxb','pdf','hwp','hwpx','docx','doc','zip','txt'];
+const dstr=t=>{ const d=new Date(t); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; };
+function brlFill(){
+  if(kind()!=='braille'||!BOOK) return;
+  const ext=FILE?(FILE.name.split('.').pop()||'').toUpperCase():'';
+  const L=(BOOK.braille||[]).filter(Boolean), old=L.find(x=>String(x.format||'').toUpperCase()===ext)||L[0]||{};
+  for(const [id,k] of [['bOrg','org'],['bSp','sponsor'],['bYear','year'],['bCol','collection'],['bMade','made'],['bUpd','updated']]) if(!$('#'+id).dataset.touched) $('#'+id).value=old[k]||'';
+  if(FILE&&FILE.lastModified){ if(!$('#bUpd').dataset.touched) $('#bUpd').value=dstr(FILE.lastModified); if(!$('#bMade').value) $('#bMade').value=dstr(FILE.lastModified); }
+}
+['bOrg','bSp','bYear','bCol','bMade','bUpd'].forEach(id=>$('#'+id).addEventListener('input',()=>{$('#'+id).dataset.touched='1';}));
 document.querySelectorAll('input[name=kind]').forEach(r=>r.addEventListener('change',kindUpd));
 function setFile(f){
   if(!f) return; const ext=(f.name.split('.').pop()||'').toLowerCase();
-  const isO=kind()==='orig';
-  if(!(isO?['pdf','epub','hwp','hwpx','docx','doc','zip','txt']:['pdf','epub','hwp','hwpx']).includes(ext)){ show('err',isO?'원서는 PDF·EPUB·HWP·DOCX·ZIP·TXT 파일만 올릴 수 있습니다.':'PDF·EPUB·HWP(한글) 파일만 올릴 수 있습니다. (원서 파일이면 \'원서\'를 먼저 고르세요)'); return; }
+  const isO=kind()==='orig', isB=kind()==='braille';
+  if(isB&&!BRL_EXT.includes(ext)){ show('err','점자는 BRF·BRL·BBF·DXB·HWP·TXT·PDF·DOCX·ZIP 파일만 올릴 수 있습니다.'); return; }
+  if(!isB&&!(isO?['pdf','epub','hwp','hwpx','docx','doc','zip','txt']:['pdf','epub','hwp','hwpx']).includes(ext)){ show('err',isO?'원서는 PDF·EPUB·HWP·DOCX·ZIP·TXT 파일만 올릴 수 있습니다.':'PDF·EPUB·HWP(한글) 파일만 올릴 수 있습니다. (원서 파일이면 \'원서\'를 먼저 고르세요)'); return; }
   if(f.size>2*1024*1024*1024){ show('err','파일이 2GB보다 큽니다.'); return; }
-  if(isO){}
+  if(isO||isB){}
   else if(ext==='epub') document.querySelector('input[name=kind][value=epub]').checked=true;
   else if(ext==='hwp'||ext==='hwpx') document.querySelector('input[name=kind][value=hwp]').checked=true;
   else if(kind()==='epub'||kind()==='hwp') document.querySelector('input[name=kind][value=pdf]').checked=true;
-  FILE=f; $('#picked').textContent=`고른 파일: ${f.name} (${(f.size/1048576).toFixed(1)}MB)`; $('#out').innerHTML=''; upd();
+  FILE=f; $('#picked').textContent=`고른 파일: ${f.name} (${(f.size/1048576).toFixed(1)}MB)`; $('#out').innerHTML=''; brlFill(); upd();
 }
 function upd(){ $('#go').disabled=!(BOOK&&FILE&&!$('#ed').disabled); }
 const drop=$('#drop');
@@ -178,7 +201,7 @@ drop.addEventListener('drop',e=>setFiles(e.dataTransfer.files));
 async function setFiles(list){
   const fs=[...(list||[])]; if(!fs.length) return;
   if(fs.length===1) return setFile(fs[0]);
-  if(kind()!=='orig'){ show('err','파일은 하나씩 올려 주세요. (원서 파일 여러 개를 묶어 올리려면 \'원서\'를 먼저 고르세요)'); return; }
+  if(kind()!=='orig'&&kind()!=='braille'){ show('err','파일은 하나씩 올려 주세요. (원서·점자 파일 여러 개를 묶어 올리려면 \'원서\'나 \'점자\'를 먼저 고르세요)'); return; }
   if(!BOOK){ show('err','먼저 책을 골라 주세요.'); return; }
   const tot=fs.reduce((a,f)=>a+f.size,0);
   if(tot>1024*1024*1024){ show('err','여러 파일을 합친 크기가 1GB보다 큽니다. 나눠서 묶어 올려 주세요.'); return; }
@@ -187,7 +210,7 @@ async function setFiles(list){
     const ff=await loadFflate(), data={}, seen={};
     for(const f of fs){ let n=f.name; if(seen[n]){ const i=n.lastIndexOf('.'); n=(i>0?n.slice(0,i):n)+'_'+(++seen[f.name])+(i>0?n.slice(i):''); } else seen[n]=1; data[n]=[new Uint8Array(await f.arrayBuffer()),{level:/\.(txt|doc|hwp)$/i.test(n)?6:0}]; }
     const z=ff.zipSync(data), OL=$('#olang').value;
-    const zf=new File([z],`${BOOK.id}_원서_${OL}.zip`,{type:'application/zip'});
+    const zf=new File([z],kind()==='braille'?`${BOOK.id}_점자.zip`:`${BOOK.id}_원서_${OL}.zip`,{type:'application/zip',lastModified:Math.max(...fs.map(f=>f.lastModified||0))||Date.now()});
     setFile(zf);
     $('#picked').textContent=`고른 파일 ${fs.length}개를 묶음: ${zf.name} (${(zf.size/1048576).toFixed(1)}MB) — ${fs.map(f=>f.name).join(', ')}`;
   }catch(e){ show('err','zip 으로 묶지 못했습니다: '+e.message); }
@@ -195,11 +218,11 @@ async function setFiles(list){
 function show(cls,html){ $('#out').innerHTML=`<div class="msg ${cls}">${html}</div>`; }
 
 $('#go').onclick=async()=>{
-  const k=kind(), ei=+$('#ed').value, ed=BOOK.editions[ei], OL=$('#olang').value, ext=k==='orig'?(FILE.name.split('.').pop()||'').toLowerCase():k==='epub'?'epub':k==='hwp'?(/\.hwpx$/i.test(FILE.name)?'hwpx':'hwp'):'pdf';
-  const KN=k==='orig'?`원서(${OL})`:{pdf:'화면용 PDF',pdf_print:'인쇄용 PDF (본문)',pdf_cover:'인쇄용 표지 PDF',epub:'EPUB',hwp:'HWP (한글 파일)'}[k];
+  const k=kind(), ei=+$('#ed').value, ed=BOOK.editions[ei], OL=$('#olang').value, ext=(k==='orig'||k==='braille')?(FILE.name.split('.').pop()||'').toLowerCase():k==='epub'?'epub':k==='hwp'?(/\.hwpx$/i.test(FILE.name)?'hwpx':'hwp'):'pdf';
+  const KN=k==='braille'?`점자 파일(${ext.toUpperCase()})`:k==='orig'?`원서(${OL})`:{pdf:'화면용 PDF',pdf_print:'인쇄용 PDF (본문)',pdf_cover:'인쇄용 표지 PDF',epub:'EPUB',hwp:'HWP (한글 파일)'}[k];
   if(!FILE.name.toLowerCase().endsWith('.'+ext)){ show('err',`고른 종류(${KN})와 파일이 다릅니다.`); return; }
   const label=(ed.label||('판'+(ei+1))).replace(/[\/\\\s]+/g,'');
-  const key=k==='orig'?`orig/${BOOK.id}/${BOOK.id}_원서_${OL}.${ext}`:`${k==='hwp'?'hwp':ext}/${BOOK.id}/${BOOK.id}_${label}${{pdf_print:'_인쇄용',pdf_cover:'_인쇄용표지'}[k]||''}.${ext}`;
+  const key=k==='braille'?`braille/${BOOK.id}/${BOOK.id}_점자.${ext}`:k==='orig'?`orig/${BOOK.id}/${BOOK.id}_원서_${OL}.${ext}`:`${k==='hwp'?'hwp':ext}/${BOOK.id}/${BOOK.id}_${label}${{pdf_print:'_인쇄용',pdf_cover:'_인쇄용표지'}[k]||''}.${ext}`;
   $('#go').disabled=true; $('#prog').hidden=false; $('#prog').value=0; show('', '올리는 중…');
   try{
     // 한 번 보내기 (h: 덧붙일 머리글, body: 보낼 것, base·span: 진행 막대 몫)
@@ -234,7 +257,10 @@ $('#go').onclick=async()=>{
       if(tryN) await new Promise(r=>setTimeout(r,1500*tryN));
       const r=await gh(`/contents/content/books/${bf(BOOK.id)}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); const j=await r.json();
       b=JSON.parse(dec(j.content)); e2=b.editions[ei];
-      if(k==='orig'){ const old=(b.originals||[]).find(x=>x&&x.lang===OL)||{}; b.originals=[...(b.originals||[]).filter(x=>x&&x.lang!==OL),{...old,lang:OL,mode:'file',url:key}]; e2={label:''}; }
+      if(k==='braille'){ const F=ext.toUpperCase(), old=(b.braille||[]).find(x=>x&&String(x.format||'').toUpperCase()===F)||{};
+        const v=id=>$('#'+id).value.trim();
+        b.braille=[...(b.braille||[]).filter(x=>x&&String(x.format||'').toUpperCase()!==F),{note:'',...old,format:F,mode:'file',url:key,site:'',org:v('bOrg'),sponsor:v('bSp'),year:v('bYear'),collection:v('bCol'),made:v('bMade'),updated:v('bUpd')}]; e2={label:''}; }
+      else if(k==='orig'){ const old=(b.originals||[]).find(x=>x&&x.lang===OL)||{}; b.originals=[...(b.originals||[]).filter(x=>x&&x.lang!==OL),{...old,lang:OL,mode:'file',url:key}]; e2={label:''}; }
       else { e2[k]={site:'',created:'',...(e2[k]||{}),mode:'file',url:key};
       delete e2.file_created; delete e2.file_created_print; }
       const put=await gh(`/contents/content/books/${bf(BOOK.id)}.json`,{method:'PUT',headers:{'content-type':'application/json'},
@@ -401,7 +427,7 @@ async function renameFile(from){
       const g=await gh(`/contents/content/books/${bf(id)}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); if(!g.ok) break;
       const gj=await g.json(); const b=JSON.parse(dec(gj.content)); fixed=0;
       for(const e of (b.editions||[])) for(const k of ['pdf','pdf_print','pdf_cover','epub','hwp']) if(e[k]&&e[k].url===from){ e[k].url=to; fixed++; }
-      for(const o of (b.originals||[])) if(o&&o.url===from){ o.url=to; fixed++; }
+      for(const o of [...(b.originals||[]),...(b.braille||[])]) if(o&&o.url===from){ o.url=to; fixed++; }
       if(!fixed) break;
       const put=await gh(`/contents/content/books/${bf(id)}.json`,{method:'PUT',headers:{'content-type':'application/json'},body:JSON.stringify({message:`파일 이름 바꿈: ${from} → ${to}`,content:enc(JSON.stringify(b,null,2)+'\n'),sha:gj.sha,branch:'main'})});
       if(put.ok) break;
@@ -426,6 +452,7 @@ $('#cdel').onclick=async()=>{
       const g=await gh(`/contents/content/books/${bf(id)}.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); if(!g.ok) break;
       const gj=await g.json(); const b=JSON.parse(dec(gj.content)); unlinked=0;
       { const n0=(b.originals||[]).length; b.originals=(b.originals||[]).filter(o=>!(o&&o.url&&ps.includes(o.url.replace(/^\//,'')))); unlinked+=n0-b.originals.length; }
+      if(b.braille){ const n0=b.braille.length; b.braille=b.braille.filter(o=>!(o&&o.url&&ps.includes(o.url.replace(/^\//,'')))); unlinked+=n0-b.braille.length; }
       for(const e of (b.editions||[])){
         for(const k of ['pdf','pdf_print','pdf_cover','epub','hwp']){ const x=e[k]; if(x&&x.url&&ps.includes(x.url.replace(/^\//,''))){ e[k]={mode:'none',url:'',site:''}; unlinked++; } }
         if(e.reader&&ps.some(p=>p===`reader/${id}/${e.label}/`)){ e.reader=false; unlinked++; }
