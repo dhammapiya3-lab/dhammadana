@@ -1003,7 +1003,7 @@ function simpleLayout({ title, path = [], up = '', normal = '/', body, status = 
 <body data-page="${page}" class="simple-ui">
 <div class="s-bar" role="banner">
   <span class="ui-tog s-tog" role="group" aria-label="화면 방식"><span class="on" aria-current="true">단순</span><a href="${esc(normal)}${normal.includes('?') ? '&' : '?'}ui=normal" data-ui="normal" aria-label="일반 모드로 보기">일반</a></span>
-  <button type="button" class="s-btn" id="sBack" aria-label="뒤로 (이전 화면)">◀ 뒤로</button>
+  ${up ? `<button type="button" class="s-btn" id="sBack" aria-label="뒤로 (이전 화면)">◀ 뒤로</button>` : ''}${/* 첫 화면(위 목록이 없는 화면)에는 '◀ 뒤로'를 두지 않음 — 운영자 요청 2026-11-18; 브라우저 뒤로 가기는 그대로 */''}
   ${up ? `<a class="s-btn" href="${esc(up)}" id="sUp" aria-label="위로 (한 단계 위 목록)">▲ 위로</a>` : ''}
   <nav class="s-path" aria-label="지금 위치">${crumbs.map(([n, h], i) => i === crumbs.length - 1 && i ? `<span aria-current="page">${esc(n)}</span>` : `<a href="${esc(h)}">${esc(n)}</a>`).join('<span aria-hidden="true"> › </span>')}</nav>
 </div>
