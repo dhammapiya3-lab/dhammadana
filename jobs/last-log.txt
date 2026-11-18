@@ -1,10 +1,10 @@
-Pannasa 39-Sonananda 28 장
+Pannasa 40-Suvannakumara 23 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 102 개 / 한글판 이야기 155 편
-공개 주소 확인: 200 1288919바이트
-이야기 Pannasa/39-Sonananda {'pdf': 34941464, 'zip': 34671102, 'n': 28}
-책 Pannasa {'pdf': 823363663, 'pdfs': 79146734, 'zip': 822873792, 'stories': 39, 'n': 640}
+R2 에 올림: 92 개 / 한글판 이야기 156 편
+공개 주소 확인: 200 1470649바이트
+이야기 Pannasa/40-Suvannakumara {'pdf': 31965541, 'zip': 31693692, 'n': 23}
+책 Pannasa {'pdf': 855066334, 'pdfs': 82191614, 'zip': 854567984, 'stories': 40, 'n': 663}
 내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 155 이야기
+글로 보기: 156 이야기
 50-Mahasudassana
 44-The-Distribution-of-the-Relics
