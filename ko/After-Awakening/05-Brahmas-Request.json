@@ -1,0 +1,332 @@
+[
+ {
+  "img": "images/05-Brahmas-Request-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     338,
+     606,
+     426
+    ],
+    "ko": "첫 가르침:\n사함빠띠 범천의 권청",
+    "cover": [
+     187,
+     160,
+     132
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Brahmas-Request-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     360,
+     718,
+     414
+    ],
+    "ko": "깨달음을 이루신 뒤 세존께서는 염소치기의 니그로다 나무 아래 홀로 앉아 계셨습니다.\n그분의 마음에 깨달으신 진리에 대한 깊은 생각이 일었습니다.",
+    "cover": [
+     191,
+     161,
+     125
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Brahmas-Request-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     26,
+     554,
+     82
+    ],
+    "ko": "두 세계의 갈림",
+    "cover": [
+     215,
+     188,
+     157
+    ],
+    "align": "center",
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     28,
+     368,
+     358,
+     432
+    ],
+    "ko": "법:\n깊고 고요하고 미묘하며 논리를 넘어섬",
+    "cover": [
+     204,
+     174,
+     144
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     448,
+     368,
+     792,
+     438
+    ],
+    "ko": "이 세대:\n욕망을 즐기고 탐닉에 빠져\n어둠에 가려져 있음",
+    "cover": [
+     199,
+     169,
+     137
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Brahmas-Request-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     354,
+     734,
+     448
+    ],
+    "ko": "“흐름을 거스르는 것이라, 깊고 보기 어렵다.”\n가르쳐 봐야 피로할 뿐이라 여기신 부처님의 마음은\n가만히 있는 쪽으로 기울었습니다. 침묵하기로 하셨습니다.",
+    "cover": [
+     212,
+     172,
+     128
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Brahmas-Request-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     204,
+     702,
+     286
+    ],
+    "ko": "부처님의 생각을 안 사함빠띠 범천은 깜짝 놀랐습니다.\n“세상이 정말로 무너지고 말겠구나.”\n세존께서 가만히 계시는 쪽으로 기우신 것을 보고 그는 깨달았습니다.",
+    "cover": [
+     210,
+     181,
+     149
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Brahmas-Request-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     116,
+     352,
+     690,
+     452
+    ],
+    "ko": "범천의 세계에서 사라진 범천이\n부처님 앞에 나타났습니다.\n무릎을 꿇고 간청했습니다. “세존께서는 법을 설하소서!\n눈에 먼지가 적은 중생들이 법을 듣지 못해 시들어 가고 있습니다.”",
+    "cover": [
+     184,
+     159,
+     132
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Brahmas-Request-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     354,
+     78,
+     654,
+     222
+    ],
+    "ko": "“산꼭대기에 선 이가\n아래 사람들을 내려다보듯…\n법으로 지은 궁전에 오르소서,\n슬픔 없는 분이시여!\n태어남과 늙음에 짓눌린\n사람들을 내려다보소서.”",
+    "cover": [
+     215,
+     190,
+     160
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     264,
+     204,
+     348,
+     248
+    ],
+    "ko": "법으로\n지은 궁전",
+    "cover": [
+     205,
+     177,
+     144
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Brahmas-Request-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     116,
+     352,
+     690,
+     452
+    ],
+    "ko": "사함빠띠 범천은 세 번이나\n간절히 청했습니다.\n승리의 영웅께서 일어나 대상의 우두머리처럼 세상을 다니시며\n알아들을 수 있는 이들을 구해 주시라고 간청했습니다.",
+    "cover": [
+     181,
+     156,
+     128
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Brahmas-Request-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     400,
+     48,
+     642,
+     282
+    ],
+    "ko": "청을 아신 세존께서는\n한없는 자비로\n세상을 바라보셨습니다.\n‘부처의 눈’으로\n온 세상을 살피시며\n모든 중생의 참모습과\n가능성을 보셨습니다.",
+    "cover": [
+     188,
+     169,
+     150
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Brahmas-Request-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     614,
+     40,
+     792,
+     440
+    ],
+    "ko": "연못의 연꽃처럼\n사람들을 보셨습니다.\n\n• 어떤 연꽃은\n물속 깊이 잠겨 있고\n\n• 어떤 연꽃은\n물 위와 나란히 있으며\n\n• 어떤 연꽃은\n물 위로 완전히 솟아\n물에 젖지 않습니다.",
+    "cover": [
+     180,
+     153,
+     126
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Brahmas-Request-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     122,
+     354,
+     688,
+     448
+    ],
+    "ko": "깨달을 준비가 된 이들을 보시고 부처님께서 선언하셨습니다.\n“불사의 문이 그대들에게 열렸다.\n귀 있는 이들은 믿음을 일으켜라.”",
+    "cover": [
+     211,
+     172,
+     131
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Brahmas-Request-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     74,
+     356,
+     732,
+     444
+    ],
+    "ko": "범천의 권청으로 법이 세상에 흘러들었습니다.\n마침내 비구와 비구니의 계보가 생겨나,\n수많은 세대를 욕망의 어둠에서 이끌어 냈습니다.",
+    "cover": [
+     201,
+     161,
+     122
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

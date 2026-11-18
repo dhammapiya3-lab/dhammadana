@@ -1,0 +1,420 @@
+[
+ {
+  "img": "images/06-08-First-Teachings-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     258,
+     372,
+     546,
+     442
+    ],
+    "ko": "법의 바퀴를 굴리시다\n사슴 동산에서의 첫 가르침",
+    "cover": [
+     180,
+     146,
+     108
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-08-First-Teachings-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     172,
+     150,
+     440,
+     332
+    ],
+    "ko": "누가 이 법을 빨리\n알아들을까? 옛 스승들은\n이미 세상을 떠났다.\n내가 애써 정진할 때\n시중들던 다섯 비구에게\n가르치리라.",
+    "cover": [
+     213,
+     179,
+     133
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-08-First-Teachings-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     310,
+     280,
+     492,
+     412
+    ],
+    "ko": "깨달은 분께서 천안으로\n이시빠따나 사슴 동산에\n머무는 다섯 비구를\n보셨습니다. 그리고\n바라나시까지 먼 길을\n걸어가셨습니다.",
+    "cover": [
+     197,
+     162,
+     115
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-08-First-Teachings-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     54,
+     298,
+     746,
+     398
+    ],
+    "ko": "그분이 오시는 것을 보고 다섯 비구는 약속했습니다.\n“사문 고따마는 정진을 버리고 사치로 돌아갔다.\n그에게 인사하지도, 발우를 받아 들지도 말자.”",
+    "cover": [
+     218,
+     176,
+     125
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-08-First-Teachings-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     452,
+     284,
+     684,
+     386
+    ],
+    "ko": "그분의 위엄에 압도된 그들은\n약속을 깨고 시중을 들었습니다.\n그분께서 선언하셨습니다.\n“여래는 완전히 깨달은 이다.\n귀를 기울여라. 내가 가르치리라.”",
+    "cover": [
+     193,
+     143,
+     94
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-08-First-Teachings-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     348,
+     652,
+     438
+    ],
+    "ko": "두 극단을 가까이하지 말라. 저열한 감각적 쾌락의 탐닉과\n괴로운 고행이다.\n여래는 중도를 깨달았으니, 그것은 깊은 평화로 이끈다.",
+    "cover": [
+     204,
+     166,
+     120
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-08-First-Teachings-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     340,
+     604,
+     428
+    ],
+    "ko": "첫 번째 성스러운 진리: 괴로움.\n태어남, 늙음, 병, 죽음이 괴로움이다.\n간단히 말해 집착의 연료가 되는\n다섯 무더기가 괴로움이다.",
+    "cover": [
+     198,
+     158,
+     114
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-08-First-Teachings-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     120,
+     558,
+     330
+    ],
+    "ko": "두 번째 성스러운 진리:\n괴로움의 일어남.\n\n그것은 다시 태어남으로 이끄는\n갈애이니, 감각적 쾌락에 대한 갈애,\n존재에 대한 갈애, 비존재에 대한\n갈애이다.",
+    "cover": [
+     227,
+     188,
+     122
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-08-First-Teachings-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     336,
+     620,
+     412
+    ],
+    "ko": "세 번째 성스러운 진리: 괴로움의 소멸.\n그것은 그 갈애가 남김없이 사라지고, 버려지고,\n놓아지고, 벗어나고, 집착이 없는 것이다.",
+    "cover": [
+     198,
+     156,
+     107
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-08-First-Teachings-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     300,
+     98,
+     502,
+     138
+    ],
+    "ko": "해탈",
+    "cover": [
+     239,
+     205,
+     149
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     194,
+     206,
+     224,
+     284
+    ],
+    "ko": "계",
+    "cover": [
+     201,
+     160,
+     104
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     386,
+     176,
+     414,
+     324
+    ],
+    "ko": "삼\n매",
+    "cover": [
+     229,
+     192,
+     136
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     578,
+     206,
+     606,
+     284
+    ],
+    "ko": "지\n혜",
+    "cover": [
+     203,
+     161,
+     109
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     62,
+     370,
+     742,
+     444
+    ],
+    "ko": "네 번째 성스러운 진리: 팔정도.\n중도의 실천은 세 기둥이 받치고 있습니다.\n바로 계, 삼매, 지혜입니다.",
+    "cover": [
+     169,
+     127,
+     80
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-08-First-Teachings-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     68,
+     364,
+     742,
+     442
+    ],
+    "ko": "참된 깨달음은 열두 겹의 짜임을 꿰뚫어야 했습니다.\n네 가지 진리를 각각 분명히 알고, 실천하고,\n남김없이 완성해야 했습니다.",
+    "cover": [
+     167,
+     129,
+     85
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-08-First-Teachings-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     436,
+     78,
+     668,
+     360
+    ],
+    "ko": "법문이 끝나자\n꼰단냐에게 티끌 없고\n때 없는 법의 눈이\n생겼습니다.\n“일어나는 성질을 지닌\n것은 무엇이든 모두\n사라지는 성질을\n지녔다.”",
+    "cover": [
+     213,
+     179,
+     130
+    ],
+    "align": "center",
+    "em": 16,
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-08-First-Teachings-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     366,
+     744,
+     444
+    ],
+    "ko": "땅의 신들이 법의 바퀴가 굴러가기 시작했다고 외쳤습니다.\n기쁨의 외침은 곧바로 하늘 세계를 거쳐 위로 울려 퍼져\n가장 높은 범천의 세계에까지 이르렀습니다.",
+    "cover": [
+     161,
+     126,
+     84
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-08-First-Teachings-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     132,
+     366,
+     670,
+     444
+    ],
+    "ko": "일만 세계가 움직이고 흔들리고 진동했습니다.\n한량없이 큰 빛이 세상에 나타나\n신들의 위력마저 넘어섰습니다.",
+    "cover": [
+     162,
+     129,
+     88
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-08-First-Teachings-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     116,
+     360,
+     688,
+     442
+    ],
+    "ko": "깨달은 분께서 말씀하셨습니다. “꼰단냐는 참으로 알았다.”\n그리하여 그는 안냐 꼰단냐가 되었습니다.\n위없는 법의 바퀴는 결코 되돌릴 수 없었습니다.",
+    "cover": [
+     210,
+     170,
+     119
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

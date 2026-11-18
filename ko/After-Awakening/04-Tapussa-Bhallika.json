@@ -1,0 +1,325 @@
+[
+ {
+  "img": "images/04-Tapussa-Bhallika-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     306,
+     150,
+     680,
+     360
+    ],
+    "ko": "첫 가르침:\n라자야따나 나무 이야기\n\n첫 공양과\n세상 최초의 재가 제자들의 기록",
+    "cover": [
+     206,
+     173,
+     136
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Tapussa-Bhallika-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     304,
+     152,
+     690,
+     352
+    ],
+    "ko": "이레가 지났습니다.\n\n세존께서는 라자야따나 나무\n(Buchanania latifolia) 아래로 옮기셨습니다.\n\n그곳에서 이레 동안 한 번 결가부좌한 채\n해탈의 깊은 행복을 누리셨습니다.",
+    "cover": [
+     209,
+     168,
+     127
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Tapussa-Bhallika-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     350,
+     186,
+     702,
+     372
+    ],
+    "ko": "상인 형제 따뿟사와 발리까가\n욱깔라에서 남쪽 큰길을 따라 오고 있었습니다.\n\n수레 500대의 큰 대상을 이끈 그들은\n막 깨달음을 이루신 부처님이 머무시는\n곳에 이르렀습니다.",
+    "cover": [
+     212,
+     172,
+     132
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Tapussa-Bhallika-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     340,
+     48,
+     724,
+     222
+    ],
+    "ko": "전생에 상인들의 어머니였던\n한 천신이 나타났습니다.\n\n“세존께서 라자야따나 나무 아래 계신다.\n가서 우유죽과 꿀과자를 올려라.\n그것이 너희에게 길이 이익이 되리라.”",
+    "cover": [
+     210,
+     174,
+     136
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Tapussa-Bhallika-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     342,
+     104,
+     594,
+     360
+    ],
+    "ko": "형제는 세존께 다가갔습니다.\n\n절을 올리고\n귀한 양식을 바쳤습니다.\n\n“존귀하신 분이시여,\n저희의 우유죽과 꿀과자를\n받아 주십시오. 저희에게\n길이 행복이 되도록.”",
+    "cover": [
+     208,
+     173,
+     131
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Tapussa-Bhallika-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     272,
+     40,
+     764,
+     330
+    ],
+    "ko": "세존의 마음에 망설임이 일었습니다.\n\n“여래들은 음식을 손으로 바로 받지 않는다.\n이 우유죽과 꿀과자를\n무엇으로 받을까?”",
+    "cover": [
+     205,
+     171,
+     132
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Tapussa-Bhallika-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     516,
+     126,
+     536,
+     154
+    ],
+    "ko": " ",
+    "cover": [
+     210,
+     165,
+     121
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     516,
+     290,
+     536,
+     320
+    ],
+    "ko": " ",
+    "cover": [
+     209,
+     166,
+     125
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     282,
+     92,
+     522,
+     362
+    ],
+    "ko": "부처님의 마음을 아신\n사대천왕이 네 방향에서\n왔습니다.\n\n그들은 푸른 돌로 깎은\n발우 넷을 바치며\n말했습니다.\n\n“여기에 우유죽과\n꿀과자를 받으십시오.”",
+    "cover": [
+     210,
+     173,
+     131
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Tapussa-Bhallika-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     114,
+     262,
+     686,
+     422
+    ],
+    "ko": "세존께서 공양을 받으셨습니다.\n굳은 결의로 돌 발우 넷을\n하나의 완전한 새 발우로 합치셨습니다.\n이 발우에 우유죽과 꿀과자를 받으시고\n깨달음 뒤 첫 공양을 드셨습니다.",
+    "cover": [
+     207,
+     167,
+     124
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Tapussa-Bhallika-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     246,
+     46,
+     560,
+     180
+    ],
+    "ko": "믿음이 가득한 상인들이 말했습니다.\n“저희는 세존께 귀의하고\n법에 귀의합니다.”\n그들은 세상에서 처음으로\n이 서원을 한 재가 제자가 되었습니다.",
+    "cover": [
+     213,
+     189,
+     161
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Tapussa-Bhallika-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     202,
+     82,
+     242,
+     286
+    ],
+    "ko": "부\n처\n님",
+    "cover": [
+     205,
+     156,
+     107
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     386,
+     82,
+     424,
+     286
+    ],
+    "ko": "법",
+    "cover": [
+     218,
+     174,
+     125
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     82,
+     302,
+     724,
+     432
+    ],
+    "ko": "왜 두 귀의뿐일까요?\n승가(비구 공동체)가 아직 없었기 때문입니다.\n따뿟사와 발리까는 두 가지 귀의라는 특별한 형식을 따라\n재가 불자 공동체의 바탕이 되었습니다.",
+    "cover": [
+     204,
+     161,
+     115
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Tapussa-Bhallika-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     360,
+     700,
+     444
+    ],
+    "ko": "흡족하고 기뻐한 형제는 떠날 채비를 했습니다.\n세존께서 불사의 법으로 거룩해진 머리카락 사리를 주셨습니다.\n사리를 받아 든 그들은 첫 가르침의 빛을 세상에 가져갔습니다.",
+    "cover": [
+     205,
+     175,
+     145
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

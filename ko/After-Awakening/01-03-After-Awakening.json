@@ -1,0 +1,450 @@
+[
+ {
+  "img": "images/01-03-After-Awakening-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     328,
+     576,
+     398
+    ],
+    "ko": "첫 가르침\n세 나무를 도는 여정",
+    "cover": [
+     210,
+     163,
+     113
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-03-After-Awakening-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     64,
+     314,
+     284,
+     340
+    ],
+    "ko": "깨달음의 나무(보리수)",
+    "cover": [
+     222,
+     173,
+     124
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     306,
+     314,
+     506,
+     340
+    ],
+    "ko": "염소치기의 니그로다 나무",
+    "cover": [
+     227,
+     178,
+     128
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     574,
+     314,
+     716,
+     340
+    ],
+    "ko": "무짤린다 나무",
+    "cover": [
+     229,
+     180,
+     129
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     96,
+     342,
+     704,
+     422
+    ],
+    "ko": "우루웰라 근처에서 완전한 깨달음을 이루신 세존께서는 여러 주 동안\n세 그루의 나무 아래에서 차례로 해탈의 기쁨을 누리셨습니다.\n이 여정은 그분의 깨달음을 보여 줍니다.\n1. 마음 안의 인과 · 2. 사회적 고귀함의 새 정의 · 3. 자연과의 궁극적 조화",
+    "cover": [
+     224,
+     168,
+     113
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-03-After-Awakening-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     342,
+     704,
+     422
+    ],
+    "ko": "밤의 첫째 경.\n네란자라 강가 깨달음의 나무 뿌리에 앉으신 세존께서는\n연기에 온전히 마음을 기울이셨습니다.\n사물의 참 성품이 드러나면, 열심히 선정에 든 마음은 모든 의심을 떨쳐 버립니다.",
+    "cover": [
+     214,
+     163,
+     114
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-03-After-Awakening-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     508,
+     230,
+     736,
+     404
+    ],
+    "ko": "무명을 조건으로\n의도적 형성이 일어납니다.\n이 사슬은 의식, 정신·물질,\n감각 기관, 갈애를 거쳐\n태어남, 늙음, 절망으로\n이어집니다.\n이렇게 이 모든\n괴로움의 무더기가 일어납니다.",
+    "cover": [
+     218,
+     167,
+     115
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-03-After-Awakening-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     508,
+     230,
+     736,
+     404
+    ],
+    "ko": "밤의 가운데 경.\n무명이 남김없이 사라지면\n뒤따르는 모든 조건이\n소멸합니다.\n열심히 선정에 든 바라문이\n원인의 소멸을 깊이 알 때,\n모든 괴로움의 무더기가\n사라집니다.",
+    "cover": [
+     212,
+     162,
+     112
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-03-After-Awakening-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     508,
+     230,
+     736,
+     404
+    ],
+    "ko": "밤의 마지막 경.\n조건의 일어남과 소멸을\n모두 꿰뚫어 아신 깨달은 분이\n마라의 군대를 물리치며\n서 계십니다.\n하늘을 비추는 해처럼,\n완전한 앎의 새벽에\n빛나십니다.",
+    "cover": [
+     211,
+     161,
+     112
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-03-After-Awakening-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     264,
+     250,
+     514,
+     414
+    ],
+    "ko": "이레가 지나 세존께서는\n염소치기의 니그로다 나무로\n옮기셨습니다.\n그곳에 신분을 내세우며\n투덜거리는 바라문이 찾아와\n영적 고귀함의 바탕을 물었습니다.\n“어떤 이가 바라문입니까?\n무엇이 사람을 고귀하게 합니까?”",
+    "cover": [
+     211,
+     164,
+     116
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-03-After-Awakening-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     270,
+     264,
+     534,
+     422
+    ],
+    "ko": "서로 다른 두 마음의 부딪침.\n자만과 세속의 일에 들끓는\n투덜이 바라문이 흔들림 없는\n해탈의 고요와 마주합니다.\n참된 고귀함은 신분으로 물려받지\n않습니다. 허물을 남김없이\n없앨 때 길러집니다.",
+    "cover": [
+     208,
+     163,
+     116
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-03-After-Awakening-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     264,
+     554,
+     414
+    ],
+    "ko": "“악을 물리치고 투덜거리지 않으며\n허물이 없고 스스로를 다스리며\n완전한 앎을 갖추고\n청정한 삶을 완성한 바라문,\n그는 법답게 바라문이라 말할 수 있으니\n그에게는 세상 어디에도\n교만이 없다.”",
+    "cover": [
+     207,
+     163,
+     118
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-03-After-Awakening-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     328,
+     614,
+     426
+    ],
+    "ko": "무짤린다 나무로 옮기셨을 때, 때아닌 큰 구름이 일어\n이레 동안 차가운 바람과 비가 몰아쳤습니다.\n\n나가 왕 무짤린다가 호수를 떠나 와서\n비바람으로부터 세존을 지켜 드렸습니다.",
+    "cover": [
+     202,
+     159,
+     112
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-03-After-Awakening-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     328,
+     614,
+     426
+    ],
+    "ko": "보호의 만다라\n나가는 부처님의 몸을 일곱 번 감고\n큰 머리 덮개를 펼쳐 그분을 지켜 드렸습니다.\n“세존께서 춥지도 덥지도 않으시고\n등에와 바람과 뱀에 시달리지 않으시기를.”",
+    "cover": [
+     203,
+     158,
+     114
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-03-After-Awakening-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     328,
+     614,
+     426
+    ],
+    "ko": "하늘이 맑게 갠 것을 안 무짤린다는\n똬리를 풀었습니다. 뱀의 모습을 거두고\n젊은 바라문의 모습을 나타내어\n세존 앞에 합장하고 공손히 섰습니다.",
+    "cover": [
+     200,
+     155,
+     114
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-03-After-Awakening-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     328,
+     614,
+     426
+    ],
+    "ko": "“만족한 이, 악의 없는 이에게 행복이 있다.\n탐욕을 떠나 감각적 욕망을 넘어선 경지가 행복이다.”\n“그러나 ‘나는 있다’는 자만을 없애는 것,\n이것이야말로 가장 높은 행복이다.”",
+    "cover": [
+     198,
+     153,
+     110
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-03-After-Awakening-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     290,
+     6,
+     510,
+     38
+    ],
+    "ko": "띠 부조의 짜임",
+    "cover": [
+     196,
+     156,
+     120
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     132,
+     302,
+     234,
+     328
+    ],
+    "ko": "마음 안",
+    "cover": [
+     196,
+     155,
+     111
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     348,
+     302,
+     454,
+     328
+    ],
+    "ko": "사회적 만남",
+    "cover": [
+     198,
+     154,
+     114
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     572,
+     302,
+     680,
+     328
+    ],
+    "ko": "자연과의 조화",
+    "cover": [
+     206,
+     160,
+     119
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     186,
+     328,
+     614,
+     426
+    ],
+    "ko": "해탈의 구조\n세 나무, 세 만남, 세 진리.\n마음 안의 인과에서 사회적 청정으로,\n그리고 자연스러운 무아로.\n세 나무를 도는 여정이 끝났습니다.",
+    "cover": [
+     196,
+     156,
+     111
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
