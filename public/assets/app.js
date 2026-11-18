@@ -2269,6 +2269,8 @@ document.addEventListener('click', e => {
   const tgt = (here && cands.find(x => x.closest('[data-pg]').dataset.pg === here.dataset.pg)) || cands[0];
   const pop = document.createElement('div'); pop.id = 'fnPop'; pop.setAttribute('role', 'dialog'); pop.setAttribute('aria-label', '각주 ' + n);
   if (tgt) { const c = tgt.closest('p').cloneNode(true); c.removeAttribute('data-pg'); c.removeAttribute('data-s'); pop.innerHTML = `<div class="fnpop-h">각주 ${n}<button class="fnpop-x" aria-label="닫기">✕</button></div>`; c.querySelector('.fn-no') && c.querySelector('.fn-no').remove(); pop.appendChild(c);
+    // 각주 바로 뒤에 붙은 표·그림·출처 줄(같은 쪽, 다음 각주 전까지)도 각주 창에 함께 — 각주는 끊어 보이지 않게 (운영자 요청, 2026-11-18: DL-0030 각주 112 표, DL-0023 각주 197·198, DL-0024 각주 176)
+    const fp = tgt.closest('p'); for (let s = fp.nextElementSibling; s && s.dataset && s.dataset.pg === fp.dataset.pg && !s.classList.contains('fn') && s.matches('figure, .r-tbl, p'); s = s.nextElementSibling) { const x = s.cloneNode(true); x.removeAttribute('data-pg'); x.removeAttribute('data-s'); pop.appendChild(x); }
     const go = document.createElement('button'); go.className = 'link-btn small'; go.textContent = '각주 자리로 가기 ↓'; go.onclick = () => { pop.remove(); tgt.closest('p').scrollIntoView({ block: 'center' }); tgt.closest('p').classList.add('found'); setTimeout(() => tgt.closest('p').classList.remove('found'), 1600); }; pop.appendChild(go); }
   else {  // 각주 글이 지금 장에 없으면(다음 장 첫 쪽 등) 책 전체에서 가장 가까운 쪽의 각주 글을 찾아 보여 줌 (2026-11-11)
     const hp = here ? +here.dataset.pg : 1; let best = null;

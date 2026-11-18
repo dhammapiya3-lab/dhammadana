@@ -36,6 +36,11 @@ def check(bk, show):
             if a.count('\n') >= 2 and len(a.split('\n')[0]) < 25: continue   # 줄마다 끊어 쓴 묶음(독송문 등)
             if re.search(r'[가-힣A-Za-zāīūṃṅñṭḍṇḷ,]$', la) and re.match(r'[가-힣a-zāīūṃṅñṭḍṇḷ]', fb):
                 B.append(f'{name.strip("= ")}: …{la[-18:]} / {fb[:18]}…')
+        # ① 같은 쪽에서 갈라진 각주: 풀이 바로 뒤 보통 문단(앞 풀이가 문장 중간에서 끝남 — DL-0006 58쪽 각주 44 '…식(識) / 은] 무상에서'), 글이 없는 빈 각주
+        for k, x in enumerate(paras):
+            if re.fullmatch(r'\[\^[^\]]+\]:\s*', x): A.append(f'{name.strip("= ")} 빈 각주 {x.strip()} — 각주 글이 없음(본문·다른 쪽에 있는지 인쇄본과 대조)')
+            if k and paras[k - 1].startswith('[^') and not x.startswith(('[^', '#', '![', '|')) and not END.search(plain(paras[k - 1].split('\n')[-1])):
+                A.append(f'{name.strip("= ")} 갈라진 각주: …{plain(paras[k - 1])[-14:]} / {plain(x)[:18]}… — 각주 끝에 이어 붙일 글인지')
         # ① 넘친 미주: 앞 쪽이 미주 풀이([^n]:)만 있는 쪽인데 이 쪽 첫머리에 보통 문단이 있으면 앞 미주에서 넘어온 글
         if any(re.match(r'#+\s*(미주|후주|주석|Notes?|Endnotes)\s*$', x) for x in paras): insec = True
         real = [x for x in paras if not x.startswith(('#', '!['))]
