@@ -19,7 +19,7 @@ export async function onRequestPost({ request, env }) {
     if (!id || !n) return ok;
     const v = /^[0-9a-z]{8,24}$/.test(b.v || '') ? b.v : '';
     const now = day(), rnd = [...crypto.getRandomValues(new Uint8Array(4))].map(x => x.toString(16).padStart(2, '0')).join('');
-    await env.PAPER.put(`stats/raw/${now.slice(0, 10)}/${now.slice(11, 19).replace(/:/g, '')}-${rnd}.json`, JSON.stringify({ k: 'read', b: id, t: cut(b.t, 120), n, v, d: /Mobi|Android|iPhone|iPad/i.test(ua) ? 'm' : 'pc' }));
+    await env.PAPER.put(`stats/raw/${now.slice(0, 10)}/${now.slice(11, 19).replace(/:/g, '')}-${rnd}.json`, JSON.stringify({ k: 'read', b: id, t: cut(b.t, 120), n, v, s: b.s ? 1 : 0, d: /Mobi|Android|iPhone|iPad/i.test(ua) ? 'm' : 'pc' }));
     return ok;
   }
   const p = cut(b.p, 200);

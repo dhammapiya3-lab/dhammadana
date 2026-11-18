@@ -120,11 +120,14 @@ async function load(){
   $('#out').innerHTML=`
   <div class="kpi"><div><b>${num(j.visitors)}</b><span>방문자 (기기 수)</span></div><div><b>${num(j.read||0)}</b><span>읽은 쪽 수 (책)</span></div>
     <div><b>${num(j.days[j.days.length-1].visitors)}</b><span>오늘 방문자</span></div><div><b>${num(R(j.days[j.days.length-1]))}</b><span>오늘 읽은 쪽 수</span></div></div>
+  <div class="card"><h2>단순 모드 (시각장애인용)</h2><div class="kpi" style="margin:0"><div><b>${num(j.svisitors||0)}</b><span>단순 모드를 쓴 기기</span></div><div><b>${num(j.sread||0)}</b><span>단순 모드에서 읽은 쪽 수</span></div>
+    <div><b>${num(j.days[j.days.length-1].svisitors||0)}</b><span>오늘 단순 모드 기기</span></div><div><b>${num(j.days[j.days.length-1].sread||0)}</b><span>오늘 단순 모드 읽은 쪽</span></div></div>
+    <p class="note">단순 모드 화면(/simple/)을 연 기기 수와, 단순 모드 '온라인으로 읽기'에서 한 쪽을 15초 넘게 펼쳐 둔 쪽 수입니다(2026년 11월 18일부터 셈). 이 쪽 수는 위 '읽은 쪽 수'와 아래 책 순위에도 함께 들어 있습니다. 화면 낭독기를 쓰는지는 브라우저가 알려 주지 않아 따로 셀 수 없습니다.</p></div>
   ${j.days.length>1?`<div class="card"><h2>날짜별</h2><div class="lg"><span><i style="background:var(--robe)"></i>방문자</span><span><i style="background:var(--robe-soft)"></i>읽은 쪽 수</span></div>
     <div class="chart">${j.days.map(d=>`<div class="c" title="${d.date} · 방문자 ${d.visitors} · 읽은 쪽 ${R(d)}"><div class="v" style="height:${R(d)/mx*100}%"></div><div class="u" style="height:${d.visitors/mx*100}%"></div></div>`).join('')}</div>
     <div class="axis"><span>${md(j.days[0].date)}</span><span>${md(j.days[j.days.length-1].date)}</span></div></div>`:''}
   <div class="card"><h2>많이 읽은 책 순위</h2>
-    <p class="note">읽은 쪽: 읽기 화면에서 한 쪽을 15초 넘게 펼쳐 둔 것만 셉니다(빠르게 넘긴 쪽은 빼고, 한 번 연 동안 같은 쪽은 한 번만, 2026년 11월 12일부터 셈). 읽은 사람: 그 책을 읽은 기기 수. 연 횟수: 읽기 화면을 연 횟수.</p>
+    <p class="note">읽은 쪽: 읽기 화면에서 한 쪽을 15초 넘게 펼쳐 둔 것만 셉니다(빠르게 넘긴 쪽은 빼고, 한 번 연 동안 같은 쪽은 한 번만, 2026년 11월 12일부터 셈). 읽은 사람: 그 책을 읽은 기기 수. 연 횟수: 읽기 화면(단순 모드 장 글 화면 포함)을 연 횟수.</p>
     ${bks.length?`<table><tr><td class="n" style="text-align:left;width:34px"><small>순위</small></td><td><small>책</small></td><td class="n"><small>읽은 쪽</small></td><td class="n"><small>읽은 사람</small></td><td class="n"><small>연 횟수</small></td></tr>${bks.map((b,i)=>`<tr><td class="n" style="text-align:left;width:34px"><b>${i+1}</b></td><td>${esc(b.title)}<br><small><a href="/book/${esc(b.id)}/" target="_blank" rel="noopener">${esc(b.id)}</a></small></td><td class="n"><b>${num(b.read)}</b></td><td class="n">${num(b.readers)}</td><td class="n">${num(b.opens)}</td></tr>`).join('')}</table>`:'<p class="note">아직 기록이 없습니다.</p>'}</div>
   <div class="card"><h2>많이 연 화면</h2><p class="note">사이트의 화면(주소)마다 연 횟수 — 기간 전체 ${num(j.views)}번</p>${table(j.pages.map(([p,c,t])=>`<tr><td>${esc(t||p)}<br><small><a href="${esc(p)}" target="_blank" rel="noopener">${esc(p)}</a></small></td><td class="n">${num(c)}</td></tr>`))}</div>
   <div class="two">

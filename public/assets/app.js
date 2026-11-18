@@ -2344,7 +2344,10 @@ document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === 
   const READ_SEC = 15, IDLE = 300e3;
   let touched = Date.now(); const secs = {}, done = new Set(), pend = {};
   ['scroll', 'wheel', 'touchstart', 'keydown', 'mousemove', 'click'].forEach(t => addEventListener(t, () => { touched = Date.now(); }, { passive: true, capture: true }));
+  // 단순 모드(시각장애인용) '온라인으로 읽기' 장 글 화면도 셈 — 화면(창) 위쪽 40% 자리의 쪽, 기록에 s:1 (운영자 요청, 2026-11-18)
+  const simple = () => SIMPLE_UI && SR.r && SR.id && $('#sRead [data-pg]');
   const curPage = () => {
+    if (simple()) { const y = innerHeight * 0.4; let pg = 0; for (const e of document.querySelectorAll('#sRead [data-pg]')) { const t = e.getBoundingClientRect(); if (!t.height || t.bottom < 0) continue; if (t.top > y) { if (!pg && t.top < innerHeight) pg = +e.dataset.pg; break; } pg = +e.dataset.pg; } return pg; }  // 글이 화면 아래쪽에서 시작하면(장 첫머리) 처음 보이는 쪽
     if (R.view !== 'text') return R.i + 1;
     const b = $('#rBody'); if (!b) return 0; const r = b.getBoundingClientRect();
     const y = r.top + r.height * 0.4; let pg = 0;  // 화면 위쪽 40% 자리에 있는 글의 쪽
@@ -2354,14 +2357,16 @@ document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === 
   const flush = () => {
     if (store.get('notrack', false)) { for (const k in pend) delete pend[k]; return; }
     let v = store.get('vid', ''); if (!/^[0-9a-z]{8,24}$/.test(v)) { v = Math.random().toString(36).slice(2, 12) + Date.now().toString(36).slice(-4); store.set('vid', v); }
-    for (const id in pend) { const o = pend[id]; if (o.n) navigator.sendBeacon('/api/hit', JSON.stringify({ k: 'read', b: id, t: o.t, n: o.n, p: location.pathname, v })); delete pend[id]; }
+    for (const id in pend) { const o = pend[id]; if (o.n) navigator.sendBeacon('/api/hit', JSON.stringify({ k: 'read', b: o.id, t: o.t, n: o.n, p: location.pathname, v, s: o.s })); delete pend[id]; }
   };
   setInterval(() => {
-    if (!R || document.visibilityState !== 'visible' || Date.now() - touched > IDLE || $('#reader') == null) return;
-    const n = curPage(); if (!n) return; const k = R.id + ':' + n;
+    if (document.visibilityState !== 'visible' || Date.now() - touched > IDLE) return;
+    const sm = simple(); if (!sm && (!R || $('#reader') == null)) return;
+    const id = sm ? SR.id : R.id, title = sm ? SR.title : R.title;
+    const n = curPage(); if (!n) return; const k = id + ':' + n;
     if (done.has(k)) return;
     secs[k] = (secs[k] || 0) + 2;
-    if (secs[k] >= READ_SEC) { done.add(k); const o = pend[R.id] || (pend[R.id] = { n: 0, t: R.title || '' }); o.n++; }
+    if (secs[k] >= READ_SEC) { done.add(k); const pk = id + (sm ? ':s' : ''); const o = pend[pk] || (pend[pk] = { id, n: 0, t: title || '', s: sm ? 1 : 0 }); o.n++; }
   }, 2000);
   setInterval(flush, 60e3);
   document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') flush(); });
