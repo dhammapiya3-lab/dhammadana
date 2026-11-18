@@ -2,6 +2,8 @@
 
 운영자: 담마삐야(我無말들 출판사). 컴퓨터 작업에 익숙하지 않으니 **쉬운 한국어로, 단계별로** 설명할 것.
 
+**요청을 받으면 먼저 다른 대화의 변경을 확인** (운영자 요청, 2026-11-18 — 지침): 여러 대화가 같은 저장소를 함께 고친다. 새 요청을 받을 때마다 일을 시작하기 전에 `git pull --rebase --autostash` 로 최신본을 받고, 이 대화에서 마지막으로 확인한 뒤(새 대화면 지난 하루쯤) 다른 대화가 올린 커밋을 `git log` 로 살펴, 있으면 운영자에게 한두 줄로 알리고 시작한다(없으면 말하지 않음). 그림책 일은 `storybooks`·`storybooks-src` 가지와 함께 `main` 가지의 CLAUDE.md 도 본다(`git fetch origin main storybooks storybooks-src`). **특히 지침(CLAUDE.md)이 바뀌었는지는 꼭 확인한다** (운영자 요청, 2026-11-18): `git diff <마지막으로 확인한 커밋> HEAD -- CLAUDE.md`(main 은 `origin/main`)로 더하거나 고친 지침을 모두 읽고, 바뀐 지침은 바로 그 요청부터 따른다 — 대화 처음에 읽은 지침만 믿지 않는다. 지침이 바뀌었으면 무엇이 바뀌었는지 운영자에게 꼭 알린다. 지금 하려는 일과 겹치는 변경(같은 책·같은 파일)이면 먼저 그 내용을 읽고 맞춘다.
+
 ## 구조
 - 정적 사이트. `npm run build` → `node build.mjs` 가 `content/` 를 읽어 `dist/` 를 만든다. 프레임워크 없음.
 - 호스팅: Cloudflare Pages (빌드 명령 `npm run build`, 출력 `dist`). main 에 push 하면 자동 배포.
