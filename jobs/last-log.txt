@@ -1,7 +1,12 @@
+Pannasa 12-Narajiva 13 장
+Pannasa 13-Suvannakumara 13 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 46 개 / 한글판 이야기 94 편
-공개 주소 확인: 404 27150바이트
-내려받기 파일: 0 묶음 새로 만듦
-글로 보기: 94 이야기
+R2 에 올림: 98 개 / 한글판 이야기 96 편
+공개 주소 확인: 200 1342248바이트
+이야기 Pannasa/12-Narajiva {'pdf': 16001052, 'zip': 15740602, 'n': 13}
+이야기 Pannasa/13-Suvannakumara {'pdf': 16772541, 'zip': 16509593, 'n': 13}
+책 Pannasa {'pdf': 265461492, 'pdfs': 25451285, 'zip': 265136862, 'stories': 13, 'n': 206}
+내려받기 파일: 3 묶음 새로 만듦
+글로 보기: 96 이야기
 50-Mahasudassana
 41-42-Sariputta-and-Others
