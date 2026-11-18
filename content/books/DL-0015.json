@@ -158,5 +158,12 @@
       "url": "https://www.urbandharma.org/pdf/wordofbuddha.pdf",
       "note": "한국어판은 16판(1981)을 옮긴 것이라 몇 곳 글이 다를 수 있음. 전자판은 원래 각주를 쪽 여백의 출처 표시로 바꿈(전자판 서문)."
     }
+  ],
+  "originals": [
+    {
+      "lang": "영어",
+      "mode": "file",
+      "url": "orig/DL-0015/DL-0015_원서_영어.pdf"
+    }
   ]
 }
