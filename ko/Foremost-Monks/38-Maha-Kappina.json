@@ -1,0 +1,989 @@
+[
+ {
+  "img": "images/38-Maha-Kappina-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     204,
+     326,
+     598,
+     408
+    ],
+    "ko": "마하 깝삐나:\n공덕의 여정",
+    "cover": [
+     245,
+     222,
+     179
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     284,
+     64,
+     732,
+     160
+    ],
+    "ko": "항사와띠에서 미래의 마하 깝삐나는 빠두뭇따라 부처님께서\n남을 일깨우는 데 으뜸인 비구를 기리시는 것을 보았습니다.\n감동한 그는 남다른 공양을 올리고 바로 그 영예를 바라는\n서원(paṇidhāna)을 세웠고, 부처님께서 이루어지리라 예언하셨습니다.",
+    "cover": [
+     244,
+     227,
+     193
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     364,
+     62,
+     734,
+     156
+    ],
+    "ko": "바라나시의 으뜸 베 짜는 이로 다시 태어난 그의 삶은\n벽지불 천 분과 만났습니다. 우기를 맞아 히말라야의\n거처를 떠난 고요한 성자들이 처소를 지어 줄\n사람을 찾아 도시로 다가왔습니다.",
+    "cover": [
+     243,
+     223,
+     189
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     342,
+     732,
+     392
+    ],
+    "ko": "바라나시 왕은 해마다 여는 밭갈이 축제에 정신이 팔려 벽지불들을 미루었습니다.\n그러나 지혜로운 베 짜는 이의 아내가 도시에서 그들을 만나, 드문 복밭임을 알아보고 곧바로 절했습니다.",
+    "cover": [
+     243,
+     222,
+     189
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     520,
+     64,
+     712,
+     166
+    ],
+    "ko": "스님들, 우리 마을에는\n천 집이 있습니다.\n집마다 공양을 올리겠습니다.",
+    "cover": [
+     247,
+     238,
+     220
+    ],
+    "align": "center",
+    "em": 15,
+    "ellipse": true,
+    "whole": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     60,
+     396,
+     740,
+     438
+    ],
+    "ko": "앞장선 그녀는 벽지불 천 분을 모두 대담하게 초청하고, 마을 사람들을 모아\n이튿날 아침 맛있는 음식과 쌀죽을 준비하게 했습니다.",
+    "cover": [
+     241,
+     218,
+     184
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     300,
+     150,
+     510,
+     300
+    ],
+    "ko": "그녀는 우안거를 위해\n마을을 일으켰습니다.\n집집마다 도끼와 자귀를 들고\n힘을 모아 나무를 베어 와\n초가 처소 천 채를 짓고,\n석 달 동안 정성껏\n성자들을 모셨습니다.",
+    "cover": [
+     238,
+     217,
+     181
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     272,
+     240,
+     544,
+     382
+    ],
+    "ko": "안거가 끝날 무렵\n베 짜는 이의 아내가 마지막 공양을 청했습니다.\n집마다 자기가 모신 벽지불께\n천 냥짜리 가사를 올렸습니다.\n성자들은 기쁨의 법문을 해 주고\n떠났습니다.",
+    "cover": [
+     237,
+     215,
+     180
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     508,
+     94,
+     732,
+     346
+    ],
+    "ko": "이 함께 지은 공덕으로\n베 짜는 마을 사람들은\n모두 따와띵사 천상에\n함께 다시 태어났습니다.\n\n천상의 수명이 다하자\n그들은 바라나시로 돌아와\n부유한 장자의 집안에\n함께 다시 태어났습니다.",
+    "cover": [
+     241,
+     225,
+     192
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     130,
+     358,
+     672,
+     432
+    ],
+    "ko": "이제 으뜸 장자가 된 그는 아내와 함께 깟사빠 부처님을 뵈러 갔습니다.\n갑작스러운 소나기에, 비를 피하게 해 줄 출가한 친척이 없어 둘은\n뜰에 선 채 흠뻑 젖었습니다. 그들은 이 부끄러움이 영적 뿌리가 없는 탓임을 알았습니다.",
+    "cover": [
+     239,
+     214,
+     171
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     42,
+     592,
+     78
+    ],
+    "ko": "함께 힘을 모아 승원을 지읍시다",
+    "cover": [
+     241,
+     213,
+     161
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     318,
+     156,
+     438,
+     188
+    ],
+    "ko": "아내: 각 250",
+    "cover": [
+     239,
+     211,
+     163
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     298,
+     232,
+     462,
+     264
+    ],
+    "ko": "장자: 각 500",
+    "cover": [
+     240,
+     212,
+     163
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     292,
+     306,
+     468,
+     338
+    ],
+    "ko": "으뜸 장자: 1,000",
+    "cover": [
+     241,
+     212,
+     167
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     640,
+     194,
+     758,
+     228
+    ],
+    "ko": "+ 50% 더",
+    "cover": [
+     240,
+     211,
+     161
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     196,
+     352,
+     608,
+     408
+    ],
+    "ko": "그들은 재산을 모아 깟사빠 부처님께 뾰족 지붕의 큰 승원을\n지어 올렸습니다. 처음 모은 돈이 모자라자, 모든 시주가\n정확히 절반씩을 더 내어 완성했습니다.",
+    "cover": [
+     243,
+     213,
+     165
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     358,
+     670,
+     430
+    ],
+    "ko": "이레 동안의 큰 잔치로 큰 승원을 깟사빠 부처님께 올렸습니다.\n하나 된 마을 사람들은 그 자리의 아라한 2만 명에게\n가사를 한 벌씩 올려 큰일을 마무리했습니다.",
+    "cover": [
+     239,
+     211,
+     165
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     490,
+     94,
+     712,
+     346
+    ],
+    "ko": "으뜸 장자의 아내는\n금빛 가사와 금빛\n아소까 꽃을 부처님\n발아래 올리고\n서원했습니다.\n“이 꽃처럼 금빛 살결을\n갖고, 그 이름 아노자로\n불리기를.” 깟사빠\n부처님께서 허락하셨습니다.",
+    "cover": [
+     240,
+     218,
+     178
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     48,
+     740,
+     140
+    ],
+    "ko": "꾹꾸따와띠에 다시 태어난 마하 깝삐나 왕과 금빛 살결의 아노자 왕비는\n충성스러운 대신 천 명과 함께 나라를 다스렸습니다.\n지난 공덕으로 하나 된 이 궁정은 모든 영광을 고루 나누었습니다.",
+    "cover": [
+     247,
+     241,
+     225
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     234,
+     34,
+     566,
+     122
+    ],
+    "ko": "왕은 영적인 깨달음을 찾았습니다.\n날마다 왕의 기수 넷이 성문에서 사방으로\n3요자나씩 달려 나가, 부처님과 법과\n승가의 놀라운 소식을 찾았습니다.",
+    "cover": [
+     248,
+     243,
+     230
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     234,
+     34,
+     566,
+     130
+    ],
+    "ko": "훌륭한 말 수빳따를 탄 왕은\n지친 상인 500명을 만났습니다.\n그들은 120요자나 떨어진 사왓티에서\n전례 없는 소식을 가져왔습니다.",
+    "cover": [
+     248,
+     242,
+     228
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     318,
+     262,
+     390
+    ],
+    "ko": "부처님 출현:\n기뻐서 정신을 잃음.\n은 10만 냥을 내림.",
+    "cover": [
+     244,
+     222,
+     188
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     300,
+     318,
+     500,
+     390
+    ],
+    "ko": "법의 출현:\n기뻐서 정신을 잃음.\n은 10만 냥을 내림.",
+    "cover": [
+     247,
+     228,
+     196
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     540,
+     318,
+     742,
+     390
+    ],
+    "ko": "승가의 출현:\n기뻐서 정신을 잃음.\n은 10만 냥을 내림.",
+    "cover": [
+     243,
+     222,
+     188
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     220,
+     398,
+     586,
+     440
+    ],
+    "ko": "헌신의 합계: 은 30만 냥",
+    "cover": [
+     242,
+     220,
+     185
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     234,
+     34,
+     556,
+     126
+    ],
+    "ko": "세속의 삶이 덧없어졌습니다.\n왕은 금판에 글을 새겨 나라를\n아노자 왕비에게 넘기고, 대신들과\n함께 출가하러 말을 달려 나갔습니다.",
+    "cover": [
+     245,
+     230,
+     204
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     494,
+     138,
+     736,
+     306
+    ],
+    "ko": "세상을 살피신 부처님께서\n왕이 곧 오리라는 것과\n아라한이 될 바탕을\n보셨습니다. 여섯 빛깔\n광명을 놓으시며 짠다바가\n강가의 보리수 아래서\n기다리셨습니다.",
+    "cover": [
+     248,
+     241,
+     224
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     538,
+     38,
+     760,
+     256
+    ],
+    "ko": "장애: 아빠랏차 강\n(폭 2마일)\n\n진실의 맹세(sacca-kiriyā):\n부처님은 윤회(saṃsāra)의\n홍수를 건너셨다.\n\n결과: 말 천 마리가 건넜고,\n물은 발굽에 닿지도 않았다.",
+    "cover": [
+     240,
+     234,
+     222
+    ],
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     538,
+     38,
+     760,
+     256
+    ],
+    "ko": "장애: 닐라와히니 강\n(폭 반 요자나)\n\n진실의 맹세(sacca-kiriyā):\n성스러운 길은 열반(Nibbāna)의\n궁극의 행복으로 이끈다.\n\n결과: 물이 비켜났고,\n발굽은 전혀 젖지 않았다.",
+    "cover": [
+     241,
+     233,
+     221
+    ],
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     538,
+     38,
+     762,
+     256
+    ],
+    "ko": "장애: 짠다바가 강\n(폭 1요자나)\n\n진실의 맹세(sacca-kiriyā):\n승가는 견줄 데 없는\n복밭이다.\n\n결과: 부처님 발아래까지\n무사히, 발굽 끝도 젖지 않음.",
+    "cover": [
+     241,
+     233,
+     220
+    ],
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     436,
+     90,
+     510,
+     134
+    ],
+    "ko": "발굽 끝\n젖지 않음",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     336,
+     640,
+     422
+    ],
+    "ko": "흔들림 없는 믿음은 몸의 한계를 녹입니다.\n진실의 힘(sacca-kiriyā)으로 윤회의 위험한 홍수를 이겨 내,\n건널 수 없던 강을 해탈로 가는 다리로 바꾸었습니다.",
+    "cover": [
+     241,
+     217,
+     179
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     54,
+     54,
+     510,
+     150
+    ],
+    "ko": "마하 깝삐나 왕은 보리수 아래 고따마 부처님에게서\n뻗어 나오는 여섯 빛깔 광명을 보았습니다. 시원한\n웅황 물속을 걷듯 이끌려, 왕과 대신 천 명은\n다가가 깊이 공경하며 절했습니다.",
+    "cover": [
+     249,
+     238,
+     215
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     78,
+     382,
+     728,
+     438
+    ],
+    "ko": "보시, 계, 천상, 그리고 도에 관한 차례 법문으로\n마하 깝삐나 왕과 대신 천 명은 수다원과(Sotāpatti-phala)를 얻었습니다.",
+    "cover": [
+     247,
+     231,
+     202
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     18,
+     382,
+     782,
+     432
+    ],
+    "ko": "벽지불께 가사를 올린 지난 공덕을 아신 부처님께서 “오라, 비구들이여” 하시자,\n왕과 대신들은 곧바로 발우와 가사를 갖춘 법랍 60년의 비구가 되었습니다.",
+    "cover": [
+     246,
+     229,
+     198
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     294,
+     24,
+     512,
+     138
+    ],
+    "ko": "사왓티에서 온 상인들이\n아노자 왕비에게 부처님과\n법과 승가의 소식을 전했습니다.\n기쁨에 넘친 왕비는 세 번\n정신을 잃고, 120만 냥을\n상으로 내렸습니다.",
+    "cover": [
+     248,
+     232,
+     204
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-27-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     34,
+     752,
+     88
+    ],
+    "ko": "왕이 왕관을 버렸다는 것을 안 왕비는, 세속 왕권의 영광은 침을 삼키는 것과 같다고 했습니다.\n대신들의 아내 천 명과 함께 궁전을 떠나, 수레를 타고 출가의 삶을 찾아 나섰습니다.",
+    "cover": [
+     247,
+     236,
+     214
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-28-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     54,
+     58,
+     362,
+     196
+    ],
+    "ko": "건널 수 없는 세 강에 이르자\n아노자 왕비는 진실의 맹세를\n했습니다. 삼보에 대한 깊은\n헌신으로 물이 단단한 바위가\n되어, 수레바퀴가 전혀\n젖지 않았습니다.",
+    "cover": [
+     252,
+     243,
+     225
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-29-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     314,
+     328,
+     766,
+     418
+    ],
+    "ko": "보리수에 이른 여인들은 남편들을 볼 수 없었습니다.\n세속의 애착이 여인들의 법 듣는 귀를 막지 않도록,\n부처님께서 신통으로 남자들을 감추셨습니다.",
+    "cover": [
+     248,
+     238,
+     217
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-30-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     314,
+     328,
+     766,
+     418
+    ],
+    "ko": "법문을 들은 여인들은 수다원과(Sotāpatti-phala)를\n얻었고, 남편들이 드러났습니다. 부처님의 뜻에 따라\n웁빨라완나 장로니가 나타나 아노자 왕비와\n동행들을 승가에 받아들였습니다.",
+    "cover": [
+     246,
+     235,
+     214
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-31-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     28,
+     292,
+     182
+    ],
+    "ko": "마하 깝삐나 장로는 성스러운\n길을 다 걸어 아라한이 되었습니다.\n홀로 해탈을 누리며 기쁘게\n외쳤습니다. “행복하구나!\n행복하구나!” 다른 비구들은\n이를 옛 왕실의 즐거움을\n그리워하는 말로 오해했습니다.",
+    "cover": [
+     248,
+     235,
+     212
+    ],
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-32-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     362,
+     764,
+     420
+    ],
+    "ko": "부처님께서 오해를 바로잡으시며, 마하 깝삐나는 도의 기쁨을 찬탄한 것이라고 하셨습니다.\n“법을 마시는 이는 고요한 마음으로 행복하게 산다. 지혜로운 이는 늘 기뻐한다.”",
+    "cover": [
+     251,
+     242,
+     223
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-33-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     56,
+     654,
+     168
+    ],
+    "ko": "아라한과에 늘 머물던 마하 깝삐나 장로는\n옛 대신 천 명에게 가르침을 주지 않았습니다.\n부처님께서 나서서 이르셨습니다.\n“이제부터 가까운 제자들에게 법을 설하라.”",
+    "cover": [
+     250,
+     242,
+     224
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-34-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     56,
+     654,
+     168
+    ],
+    "ko": "부처님의 말씀에 따라 마하 깝삐나 장로는\n따르는 이들에게 깊은 법문을 설했습니다.\n바로 그 순간 비구 천 명 모두가 남은 족쇄를\n끊고 완전한 아라한이 되었습니다.",
+    "cover": [
+     250,
+     242,
+     224
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/38-Maha-Kappina-35-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     350,
+     606,
+     414
+    ],
+    "ko": "큰 모임에서 부처님께서 그를 높여 선언하셨습니다.\n“비구들이여, 비구들을 가르치는 나의 비구 제자 가운데\n마하 깝삐나가 으뜸(etad-agga)이다.”",
+    "cover": [
+     250,
+     239,
+     212
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
