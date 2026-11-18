@@ -1447,14 +1447,24 @@ function splitSents(t) {
   raw.forEach(x => { if (out.length && (out[out.length - 1].replace(/[\u0001\u0002\s]/g, '').length < 6)) out[out.length - 1] += ' ' + x; else out.push(x); });  // '1.' 같은 짧은 조각은 다음 문장과 함께
   return out.filter(x => x.replace(/[\u0001\u0002\s]/g, ''));
 }
+// 문단 사이 쉼: 쉼 동안 → ← 를 누르면 기다리던 일(TT.ntf)을 곧바로 하거나 미룸
+function ttsLater(fn, ms) { clearTimeout(TT.nt); TT.ntf = fn; TT.nt = setTimeout(() => { TT.nt = 0; TT.ntf = null; fn(); }, ms); }
 // 문장마다 이어 읽기 — ctl.jump(±1) 로 앞·다음 문장, 문단 밖으로 나가면 onOut(±1)
 function speakSents(text, o, pv, si, onend, onerror, onOut, el, whole) {
   const ss = whole ? [text] : splitSents(text);  // 장 제목은 나누지 않음 if (!ss.length) { onend(); return; }
   let i = si === 'last' ? ss.length - 1 : Math.max(0, Math.min(ss.length - 1, si || 0));
+  // 문단을 다 읽고 다음 문단으로 넘어가기 전 쉼 동안에도 → ← 가 듣게 (운영자 요청, 2026-11-18 '방향키가 동작하지 않는 부분'):
+  // → 는 쉼을 건너뛰어 바로 다음 문단, ← 는 이 문단의 마지막 문장을 다시 읽고 이어 감
+  let after = null;
+  const endJump = () => { TT.jump = d => { const f = after || TT.ntf; clearTimeout(TT.nt); TT.nt = 0; TT.ntf = null;
+    if (d > 0) { after = null; TT.gen++; if (f) f(); return; }
+    try { speechSynthesis.cancel(); } catch (e) {} after = f; i = ss.length - 1; if (el) ttsFocus(el); run(); }; };
   const run = () => {
     const g = ++TT.gen;
-    TT.jump = d => { const j = i + d; try { speechSynthesis.cancel(); } catch (e) {} TT.gen++; if (j < 0 || j >= ss.length) { onOut(d); return; } i = j; if (el) ttsFocus(el); run(); };
-    speakSegs(ss[i], o, pv, () => { if (g !== TT.gen) return; if (++i >= ss.length) { TT.jump = null; onend(); } else run(); }, e => { if (g !== TT.gen) return; onerror(e); });
+    TT.jump = d => { const j = i + d; try { speechSynthesis.cancel(); } catch (e) {} TT.gen++;
+      if (j >= ss.length && after) { const f = after; after = null; f(); return; }  // 다시 읽던 마지막 문장에서 → 면 원래 이어 가던 곳으로
+      if (j < 0 || j >= ss.length) { after = null; onOut(d); return; } i = j; if (el) ttsFocus(el); run(); };
+    speakSegs(ss[i], o, pv, () => { if (g !== TT.gen) return; if (++i >= ss.length) { endJump(); if (after) { const f = after; after = null; f(); } else onend(); } else run(); }, e => { if (g !== TT.gen) return; onerror(e); });
   };
   run();
 }
@@ -1750,7 +1760,7 @@ function speak(fromK = 0, firstText = null) {
       if (c && c.title && R.ttsTitled !== ci + ':' + R.id && (atStart || isChDup(sentences[k], p.n, c, k))) {
         R.ttsTitled = ci + ':' + R.id; R.ttsPos = { i: R.i, k };
         const tt = sayable(c.title.trim().replace(/^([IVXⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]+)\.\s*/, (m, r) => { const v = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10, 'Ⅰ': 1, 'Ⅱ': 2, 'Ⅲ': 3, 'Ⅳ': 4, 'Ⅴ': 5, 'Ⅵ': 6, 'Ⅶ': 7, 'Ⅷ': 8, 'Ⅸ': 9, 'Ⅹ': 10 }[r]; return v ? v + '. ' : m; }), o, true);  // 로마 숫자는 소리로 '3.'
-        if (tt) { speakSents(tt, o, pv, 0, () => { if (!R || !R.speaking) return; setTimeout(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); }, d => { if (!R || !R.speaking) return; if (d > 0) next(); else { R.ttsTitled = null; back(true); } }, null, true); return; }
+        if (tt) { speakSents(tt, o, pv, 0, () => { if (!R || !R.speaking) return; ttsLater(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); }, d => { if (!R || !R.speaking) return; if (d > 0) next(); else { R.ttsTitled = null; back(true); } }, null, true); return; }
       }
       if (c && isChDup(sentences[k], p.n, c, k)) { k++; next(); return; }
     }
@@ -1773,7 +1783,7 @@ function speak(fromK = 0, firstText = null) {
     const adv = () => { if (tq && tq.length) return; tq = null; k++; };
     if (!text) { adv(); next(); return; }
     const si = R.ttsSi; R.ttsSi = 0;
-    speakSents(text, o, pv, si, () => { if (!R || !R.speaking) return; adv(); setTimeout(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); },
+    speakSents(text, o, pv, si, () => { if (!R || !R.speaking) return; adv(); ttsLater(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); },
       d => { if (!R || !R.speaking) return; tq = null;
         if (d > 0) { k++; next(); return; }
         back(); }, el);
@@ -1926,7 +1936,7 @@ function abMark(follow, keep) {
   }
   if (keep ? (r.bottom < top0 || r.top > top0 + view - 20) : (r.top < top0 || r.bottom > top0 + view)) body.scrollTo({ top: body.scrollTop + r.top - top0 - Math.max(0, view * 0.15), behavior: 'smooth' });
 }
-function abSave() { if (!AB.on || !R || !AB.a) return; AB.saved = Date.now(); store.set('abpos-' + R.id, { ci: AB.ci, t: Math.round(AB.a.currentTime) }); }
+function abSave() { if (!AB.on || !R || !AB.a) return; AB.saved = Date.now(); const c = R.ab && R.ab.chapters[AB.ci]; store.set('abpos-' + R.id, { ci: AB.ci, t: Math.round(AB.a.currentTime), b: R.title, ch: c ? c.title : '', d: new Date().toISOString().slice(0, 10) }); }  // b·ch·d 는 단순 화면 내 서재 '이어 듣기' 줄에 씀
 function abStop() { if (!AB.a) return; if (AB.locked) abSetLock(false); abSave(); AB.a.pause(); AB.on = false; AB.k = -1; $$('.ab-now').forEach(x => x.classList.remove('ab-now')); const b = $('#abBar'); if (b) b.remove(); const el = $('#reader'); if (el) el.classList.remove('ab-on'); }
 function abBar() {
   let b = $('#abBar');
@@ -2692,9 +2702,9 @@ function sTalkMark() {
   if (STALK.el) { const g = $('#sGoList', STALK.el); g.hidden = same || !STALK.list.length; g.href = STALK.page || '/simple/talks/'; }
 }
 // 재생기 자리: 법문 목록 화면이면 위쪽 자리, 다른 화면이면 듣는 법문이 있을 때만 아래쪽에 붙임
-function sPlayerPlace() {
+function sPlayerPlace(force) {
   const slot = $('#sPlayerSlot');
-  if (!slot && !(STALK.el && STALK.list.length)) { document.body.classList.remove('s-docked'); return; }
+  if (!slot && !force && !(STALK.el && STALK.list.length)) { document.body.classList.remove('s-docked'); return; }
   const el = sPlayerMake();
   if (slot) { slot.appendChild(el); el.classList.remove('dock'); document.body.classList.remove('s-docked'); }
   else { document.body.appendChild(el); el.classList.add('dock'); document.body.classList.add('s-docked'); }
@@ -2734,7 +2744,8 @@ function initSimpleTalk() {
 // 재생을 시작할 때 같은 주소의 기록을 하나 더 쌓아 두고(sp), 뒤로 가기로 아래 기록(sb)에 오면 앞 화면을 sGo 로 그림 (운영자 요청, 2026-11-18)
 function sResumePlay(li) {
   const e = { a: li.dataset.href, t: li.dataset.t, pl: li.dataset.pl }, src = li.dataset.src, pos = +li.dataset.pos || 0;
-  STALK.play([e], 0, pos > 5 ? pos : 0, src);  // 먼저 바로 재생(누른 즉시 소리가 나게)
+  sPlayerPlace(true);  // 내 서재처럼 재생기 자리가 없는 화면이면 아래쪽에 붙임(재생 전에 — 재생 중 옮기면 이어 듣기 자리를 놓침)
+  STALK.play([e], 0, pos > 5 ? pos : 0, src);  // 바로 재생(누른 즉시 소리가 나게)
   fetch(src).then(r => r.ok ? r.text() : '').then(t => {  // 원래 재생목록을 받아 다음 법문으로 이어지게
     if (!t || STALK.list[0] !== e) return;
     const d = new DOMParser().parseFromString(t, 'text/html');
@@ -2925,7 +2936,7 @@ function srSpeak(fromTop, startAt) {
     const it = items[k++]; if (!it.text) { next(); return; }
     if (it.el) { it.el.classList.add('speaking'); if (o.follow) it.el.scrollIntoView({ block: 'nearest' }); ttsFocus(it.el); const n = +it.el.dataset.pg; if (n) srSavePos(n, ch); }
     const si = SR.si; SR.si = 0;
-    speakSents(it.text, o, pv, si, () => { if (SR.speaking) setTimeout(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') srStop(true); },
+    speakSents(it.text, o, pv, si, () => { if (SR.speaking) ttsLater(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') srStop(true); },
       d => { if (!SR.speaking) return; if (d > 0) { next(); return; }
         if (k >= 2) { k -= 2; SR.si = 'last'; next(); return; }  // 앞 문단의 마지막 문장
         if (SR.ci > 0) { const ci = SR.ci - 1; srChapter(ci, 0, true, () => { SR.si = 'last'; srSpeak(true, 'last'); }); return; }
@@ -2955,10 +2966,17 @@ function srTtsPanel(force) {
 function initSimpleMine() {
   const root = $('#sMine'); if (!root) return;
   const H = store.get('hist', []), B = bms();
+  // 이어 듣기도 함께 (운영자 요청, 2026-11-18): 오디오북(일반 읽기 화면에서 듣던 자리부터)·법문(이 화면 아래 재생기에서 듣던 자리부터)
+  const AL = []; try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (!/^dd-abpos-/.test(k)) continue; const v = JSON.parse(localStorage.getItem(k) || 'null'); if (v && v.b) AL.push({ id: k.slice(9), ...v }); } } catch (e) {}
+  AL.sort((x, y) => String(y.d || '').localeCompare(String(x.d || '')));
+  const TL = store.get(SH, []);
   const rows = H.map(h => sRow(`/simple/book/${h.id}/read/?p=${h.p}`, [h.t, `이어 읽기${h.ch ? ': ' + h.ch : ''}${h.pl ? ', ' + h.pl + '쪽' : ''}`, `${h.pct || 0}% · ${h.d || ''}`], '📖', 'resume'))
+    .concat(AL.map(a => sRow(`/read/${a.id}/?audio=1`, [a.b, `오디오북 이어 듣기${a.ch ? ': ' + a.ch : ''}, ${sFmtT(a.t)}부터 (일반 읽기 화면)`, a.d || ''], '🎧', 'abres')))
+    .concat(TL.map(h => sRow(h.a, [h.t, `법문 이어 듣기: ${sFmtT(h.pos)}${h.dur ? ' / ' + sFmtT(h.dur) : ''}${h.pl ? ' · ' + h.pl : ''}`, h.d || ''], '🎙', 'ep')))
     .concat(B.map(m => sRow(`/simple/book/${m.id}/read/?p=${m.p}`, [m.t, `책갈피: ${m.pl ? m.pl + '쪽' : m.p + '번째 쪽'}${m.note ? ' – ' + m.note : ''}`, m.d || ''], '🔖', 'bm')));
-  root.innerHTML = rows.length ? `<div class="s-tbl" style="--cols:minmax(0,2fr) minmax(0,2.4fr) minmax(0,1fr)">` + sHead(['책', '어디', '언제']) + `<ul class="s-list" data-label="내 서재, 읽던 책 ${H.length}권, 책갈피 ${B.length}개">${rows.join('')}</ul></div>` : '<p>아직 이 기기에서 읽은 책이 없습니다. 책을 읽으면 여기에 이어 읽을 곳이 남습니다.</p>';
-  sStat(`읽던 책 ${H.length} · 책갈피 ${B.length}`); sFocusFirst();
+  root.innerHTML = rows.length ? `<div class="s-tbl" style="--cols:minmax(0,2fr) minmax(0,2.4fr) minmax(0,1fr)">` + sHead(['책 · 법문', '어디', '언제']) + `<ul class="s-list" data-label="내 서재, 읽던 책 ${H.length}권, 이어 듣기 ${AL.length + TL.length}개, 책갈피 ${B.length}개">${rows.join('')}</ul></div>` : '<p>아직 이 기기에서 읽거나 들은 책·법문이 없습니다. 책을 읽거나 법문·오디오북을 들으면 여기에 이어 읽을 곳·이어 들을 곳이 남습니다.</p>';
+  $$('.s-list > li.k-ep', root).forEach((li, i) => { const h = TL[i]; li.dataset.t = h.t; li.dataset.pl = h.pl; li.dataset.src = h.p || '/simple/talks/'; li.dataset.pos = h.pos || 0; });
+  sStat(`읽던 책 ${H.length} · 이어 듣기 ${AL.length + TL.length} · 책갈피 ${B.length}`); sFocusFirst();
 }
 function initSimpleFind() {
   const q = $('#sQ'); if (!q) return;
