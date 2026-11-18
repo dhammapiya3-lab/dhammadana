@@ -1,12 +1,31 @@
+After-Awakening 01-03-After-Awakening 14 장
+After-Awakening 04-Tapussa-Bhallika 11 장
+After-Awakening 05-Brahmas-Request 12 장
+After-Awakening 06-08-First-Teachings 15 장
 Pannasa 12-Narajiva 13 장
 Pannasa 13-Suvannakumara 13 장
+Pannasa 14-Surupa 15 장
+Pannasa 15-Kambala 15 장
+Pannasa 16-Cowherds-Hut 13 장
+Pannasa 17-Siricudamani 13 장
+Pannasa 18-The-Eight-Requisites 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 98 개 / 한글판 이야기 96 편
-공개 주소 확인: 200 1342248바이트
+R2 에 올림: 344 개 / 한글판 이야기 105 편
+공개 주소 확인: 200 1372309바이트
+이야기 After-Awakening/01-03-After-Awakening {'pdf': 16561250, 'zip': 16292225, 'n': 14}
+이야기 After-Awakening/04-Tapussa-Bhallika {'pdf': 11621917, 'zip': 11348935, 'n': 11}
+이야기 After-Awakening/05-Brahmas-Request {'pdf': 12318864, 'zip': 12047101, 'n': 12}
+이야기 After-Awakening/06-08-First-Teachings {'pdf': 16147047, 'zip': 15874299, 'n': 15}
+책 After-Awakening {'pdf': 55837021, 'pdfs': 5616709, 'zip': 55562138, 'stories': 4, 'n': 52}
 이야기 Pannasa/12-Narajiva {'pdf': 16001052, 'zip': 15740602, 'n': 13}
 이야기 Pannasa/13-Suvannakumara {'pdf': 16772541, 'zip': 16509593, 'n': 13}
-책 Pannasa {'pdf': 265461492, 'pdfs': 25451285, 'zip': 265136862, 'stories': 13, 'n': 206}
-내려받기 파일: 3 묶음 새로 만듦
-글로 보기: 96 이야기
+이야기 Pannasa/14-Surupa {'pdf': 18575399, 'zip': 18313170, 'n': 15}
+이야기 Pannasa/15-Kambala {'pdf': 19736578, 'zip': 19474180, 'n': 15}
+이야기 Pannasa/16-Cowherds-Hut {'pdf': 16514805, 'zip': 16250555, 'n': 13}
+이야기 Pannasa/17-Siricudamani {'pdf': 18163945, 'zip': 17899332, 'n': 13}
+이야기 Pannasa/18-The-Eight-Requisites {'pdf': 19706581, 'zip': 19440200, 'n': 15}
+책 Pannasa {'pdf': 356864592, 'pdfs': 34164914, 'zip': 356513343, 'stories': 18, 'n': 277}
+내려받기 파일: 13 묶음 새로 만듦
+글로 보기: 105 이야기
 50-Mahasudassana
 41-42-Sariputta-and-Others
