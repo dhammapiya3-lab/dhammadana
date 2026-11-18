@@ -1,10 +1,10 @@
-Pannasa 42-Sucika 15 장
+Pannasa 43-Writing 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 76 개 / 한글판 이야기 158 편
-공개 주소 확인: 200 1447686바이트
-이야기 Pannasa/42-Sucika {'pdf': 18650427, 'zip': 18384642, 'n': 15}
-책 Pannasa {'pdf': 890358289, 'pdfs': 85586168, 'zip': 889849517, 'stories': 42, 'n': 691}
+R2 에 올림: 76 개 / 한글판 이야기 159 편
+공개 주소 확인: 200 1446459바이트
+이야기 Pannasa/43-Writing {'pdf': 18630658, 'zip': 18363389, 'n': 15}
+책 Pannasa {'pdf': 908727249, 'pdfs': 87325191, 'zip': 908212884, 'stories': 43, 'n': 706}
 내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 158 이야기
+글로 보기: 159 이야기
 50-Mahasudassana
 44-The-Distribution-of-the-Relics
