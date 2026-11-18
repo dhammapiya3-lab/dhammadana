@@ -1283,3 +1283,9 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 .simple-ui .s-player.dock{position:fixed;left:0;right:0;bottom:40px;z-index:25;margin:0;border-radius:0;border-width:2px 0 0;box-shadow:0 -2px 8px rgba(0,0,0,.15);padding:8px 12px}
 .simple-ui.s-docked .s-main{padding-bottom:170px}
 .simple-ui .s-player.dock .s-now{font-size:1em;margin-bottom:6px}
+/* 단순 화면 재생기·장 이동 단추: 위쪽 파란 줄용 흰 글씨(.s-btn)가 밝은 바탕에서 흐려 보이던 것 — 진한 파란 글씨·흰 바탕으로 (운영자 요청, 2026-11-18) */
+.simple-ui .s-player .s-btn{color:#1f3b8a;border-color:#1f3b8a;background:#fff;font-size:17px;padding:6px 12px}
+.simple-ui .s-player .s-btn:hover,.simple-ui .s-player .s-btn:focus-visible{background:#1f3b8a;color:#fff}
+:root.mode-night .simple-ui .s-player,:root.mode-contrast .simple-ui .s-player{background:#111;border-color:#888}
+:root.mode-night .simple-ui .s-player .s-btn,:root.mode-contrast .simple-ui .s-player .s-btn,:root.mode-night .simple-ui .s-chnav .s-btn,:root.mode-contrast .simple-ui .s-chnav .s-btn{color:#ffe36b;border-color:#ffe36b;background:#000}
+:root.mode-night .simple-ui .s-player .s-btn:focus-visible,:root.mode-contrast .simple-ui .s-player .s-btn:focus-visible{background:#ffe36b;color:#000}
