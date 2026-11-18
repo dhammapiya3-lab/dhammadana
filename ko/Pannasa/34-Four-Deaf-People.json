@@ -1,0 +1,763 @@
+[
+ {
+  "img": "images/34-Four-Deaf-People-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     140,
+     626,
+     228
+    ],
+    "ko": "바디라 자따까 (34):\n귀머거리 네 사람의 전생 이야기",
+    "cover": [
+     215,
+     184,
+     155
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     176,
+     236,
+     626,
+     296
+    ],
+    "ko": "업과 잘못된 소통, 그리고 산만함이 낳는 결과를\n살펴보는 빤냐사 자따까 이야기",
+    "cover": [
+     215,
+     184,
+     155
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Four-Deaf-People-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     42,
+     366,
+     126
+    ],
+    "ko": "사왓티 근처에서 탁발하던 비구들이 이상한 가족을 만났습니다. 네 식구는 귀가 전혀 들리지 않고 아들 하나만 들을 수 있었습니다.",
+    "cover": [
+     223,
+     204,
+     177
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     46,
+     268,
+     370,
+     376
+    ],
+    "ko": "설법당으로 돌아온 비구들이 이 이상한 업의 결과를 두고 서로 물었습니다.",
+    "cover": [
+     224,
+     207,
+     181
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Four-Deaf-People-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     48,
+     272,
+     150
+    ],
+    "ko": "부처님께서 하늘의 귀로 그들의 수군거림을 들으시고 대중에게 말씀하셨습니다.",
+    "cover": [
+     221,
+     201,
+     175
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     288,
+     48,
+     518,
+     150
+    ],
+    "ko": "“비구들이여, 이 넷이 귀머거리로 태어난 것은 지금만이 아니다. 지난 생에도 나쁜 행위 때문에 귀머거리였다.”",
+    "cover": [
+     220,
+     201,
+     174
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     534,
+     48,
+     762,
+     150
+    ],
+    "ko": "그리고 그들의 지난 생을 밝혀 주셨습니다.",
+    "cover": [
+     223,
+     205,
+     178
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Four-Deaf-People-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     304,
+     46,
+     766,
+     140
+    ],
+    "ko": "옛날 보살은 바라나시를 다스리는 브라흐마닷따 왕이었습니다. 가까운 마을에 바로 그 귀머거리 넷이 살았습니다. 해 뜰 무렵 귀머거리 아버지는 심사빠 나무 쟁기와 아끼는 황소 두 마리로 길가 밭을 갈았습니다.",
+    "cover": [
+     220,
+     202,
+     175
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Four-Deaf-People-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     52,
+     238,
+     100
+    ],
+    "ko": "나그네 일곱이 바라나시로\n가는 길을 물었습니다.",
+    "cover": [
+     220,
+     203,
+     181
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     500,
+     42,
+     738,
+     128
+    ],
+    "ko": "입 모양만 본 귀머거리 아버지는 묻지도 않은 말에 답하며, 황소에게 녹두와 참깨를 먹인다고 자랑했습니다.",
+    "cover": [
+     219,
+     202,
+     181
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     302,
+     356,
+     504,
+     408
+    ],
+    "ko": "어리둥절한 나그네들은 곧 그가\n듣지 못한다는 것을 알았습니다.",
+    "cover": [
+     219,
+     202,
+     178
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Four-Deaf-People-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     298,
+     40,
+     540,
+     130
+    ],
+    "ko": "한낮에 농부의 귀머거리 아내가\n밥을 가져왔습니다.",
+    "cover": [
+     224,
+     202,
+     172
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     280,
+     174,
+     540,
+     244
+    ],
+    "ko": "까마귀 떼가 모여들자 농부는\n쫓으려고 사납게 채찍을 휘둘렀습니다.",
+    "cover": [
+     228,
+     206,
+     175
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     266,
+     290,
+     552,
+     396
+    ],
+    "ko": "이 모습을 잘못 본 아내는 남편이 자기에게 화가 나서 다른 여자를 원한다고 여기고 울며 달아났습니다.",
+    "cover": [
+     219,
+     201,
+     175
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Four-Deaf-People-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     50,
+     770,
+     80
+    ],
+    "ko": "귀머거리 집안에 오해가 줄줄이 이어집니다:",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     288,
+     82,
+     502,
+     152
+    ],
+    "ko": "어머니: 움직이는 입을 봄\n→ 밥 탓을 하는 줄 앎",
+    "cover": [
+     214,
+     197,
+     171
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     274,
+     200,
+     518,
+     254
+    ],
+    "ko": "딸: 우는 어머니를 봄\n→ 해를 당할 줄 앎",
+    "cover": [
+     212,
+     195,
+     171
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     288,
+     310,
+     518,
+     382
+    ],
+    "ko": "며느리: 우는 모습을 봄\n→ 쫓겨날 줄 앎",
+    "cover": [
+     215,
+     198,
+     173
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Four-Deaf-People-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     288,
+     42,
+     508,
+     134
+    ],
+    "ko": "들을 수 있는 아들이 돌아오니\n집안이 온통 난리였습니다.",
+    "cover": [
+     217,
+     195,
+     165
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     296,
+     148,
+     506,
+     268
+    ],
+    "ko": "식구들의 잘못된 생각을 풀어 줄 수 없음을 깨닫고, 그는 나그네 일곱과 함께 길을 나섰습니다.",
+    "cover": [
+     217,
+     198,
+     168
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     292,
+     290,
+     510,
+     386
+    ],
+    "ko": "그들은 함께 바라나시로 가서, 지혜로운 브라흐마닷따 왕께 귀가 먹은 업의 뿌리를 여쭈었습니다.",
+    "cover": [
+     214,
+     196,
+     169
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Four-Deaf-People-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     448,
+     82,
+     748,
+     212
+    ],
+    "ko": "왕궁에서 아들이 브라흐마닷따 왕께 청했습니다. “대왕이시여, 무슨 행위의 과보로 제 식구들이 귀머거리가 되었습니까?”",
+    "cover": [
+     222,
+     205,
+     183
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     448,
+     258,
+     748,
+     368
+    ],
+    "ko": "보살은 전생을 아는 지혜로 깊은 업의 과거를 들여다보았습니다.",
+    "cover": [
+     221,
+     205,
+     182
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Four-Deaf-People-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     448,
+     82,
+     748,
+     206
+    ],
+    "ko": "그 뿌리는 훨씬 이전, 깟사빠 부처님 시대에 있었습니다.",
+    "cover": [
+     221,
+     204,
+     178
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     448,
+     256,
+     748,
+     386
+    ],
+    "ko": "네 식구는 정사의 거룩한 설법에 갔지만, 설해지는 법에서 마음이 완전히 떠나 있었습니다.",
+    "cover": [
+     218,
+     202,
+     178
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Four-Deaf-People-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     448,
+     86,
+     748,
+     206
+    ],
+    "ko": "그들은 법을 듣는 대신 수다를 떨고, 아이와 놀고, 웃고, 무례하게 팔다리를 뻗었습니다.",
+    "cover": [
+     220,
+     203,
+     176
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     448,
+     256,
+     748,
+     382
+    ],
+    "ko": "법을 듣지 않고 삼보를 생각하지 않은 탓에, 그들은 오백 생을 지옥에서, 오백 생을 귀머거리로 보냈습니다.",
+    "cover": [
+     218,
+     201,
+     175
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Four-Deaf-People-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     96,
+     342,
+     160
+    ],
+    "ko": "보살이 공덕의 이치를\n설명했습니다.",
+    "cover": [
+     219,
+     201,
+     174
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     48,
+     256,
+     342,
+     370
+    ],
+    "ko": "공손히 들음: 맑은 마음과 지혜, 힘 있는 위엄, 좋은 곳에 태어남을 낳습니다.",
+    "cover": [
+     217,
+     200,
+     172
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     448,
+     50,
+     748,
+     190
+    ],
+    "ko": "무례하고 산만함: 영적으로 어리석어지고, 불쾌함을 겪으며, 다음 생에 듣지도 말하지도 못하게 태어납니다.",
+    "cover": [
+     219,
+     200,
+     174
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Four-Deaf-People-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     26,
+     620,
+     100
+    ],
+    "ko": "설법을 마치며 부처님께서\n지난 생의 인물들을 밝히셨습니다.",
+    "cover": [
+     241,
+     226,
+     191
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     116,
+     214,
+     336,
+     260
+    ],
+    "ko": "들을 수 있던 아들은 아난다.",
+    "cover": [
+     241,
+     227,
+     191
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     436,
+     204,
+     696,
+     262
+    ],
+    "ko": "귀머거리 넷은 지금 모인\n귀머거리 식구들입니다.",
+    "cover": [
+     241,
+     227,
+     190
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     116,
+     356,
+     336,
+     412
+    ],
+    "ko": "브라흐마나리 왕비는\n야소다라.",
+    "cover": [
+     241,
+     226,
+     191
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     436,
+     356,
+     696,
+     412
+    ],
+    "ko": "브라흐마닷따 왕은\n바로 여래 자신입니다.",
+    "cover": [
+     241,
+     227,
+     189
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
