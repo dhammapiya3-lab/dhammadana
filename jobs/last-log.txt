@@ -1,47 +1,10 @@
-Pannasa 30-White-Mouse 15 장
-The-Great-Emancipation 17-Anandas-Failure 11 장
-The-Great-Emancipation 18-The-Relinquishment-of-the-Life-Process 11 장
-The-Great-Emancipation 29-The-Last-Meal 10 장
-The-Great-Emancipation 30-Bringing-Drinking-Water 12 장
-The-Great-Emancipation 31-The-Story-Concerning-Pukkusa-Mallaputta 13 장
-The-Great-Emancipation 32-Cundas-Great-Gain 10 장
-The-Great-Emancipation 33-Worshipping-the-Realised-One 11 장
-The-Great-Emancipation 34-The-Visit-of-the-Divinities 14 장
-The-Great-Emancipation 35-The-Four-Places-that-Produce-Enthusiasm 14 장
-The-Great-Emancipation 36-Anandas-Marvellous-Qualities 12 장
-The-Great-Emancipation 37-Kusinaras-History 11 장
-The-Great-Emancipation 38-The-Mallas-Worship-the-Fortunate-One 9 장
-The-Great-Emancipation 39-Subhadda-the-Last-Direct-Disciple 14 장
-The-Great-Emancipation 40-The-Last-Instructions-of-the-Realised-One 8 장
-The-Great-Emancipation 41-The-Final-Emancipation 13 장
-The-Great-Emancipation 42-The-Preparation-of-the-Body 15 장
-The-Great-Emancipation 43-The-Story-Concerning-Mahakassapa 12 장
-The-Great-Emancipation 44-The-Distribution-of-the-Relics 10 장
+Pannasa 31-Ariyachatta 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 496 개 / 한글판 이야기 146 편
-공개 주소 확인: 200 1366339바이트
-이야기 Pannasa/30-White-Mouse {'pdf': 20826558, 'zip': 20564456, 'n': 15}
-책 Pannasa {'pdf': 608904624, 'pdfs': 58500849, 'zip': 608479674, 'stories': 30, 'n': 471}
-이야기 The-Great-Emancipation/17-Anandas-Failure {'pdf': 12010814, 'zip': 11750417, 'n': 11}
-이야기 The-Great-Emancipation/18-The-Relinquishment-of-the-Life-Process {'pdf': 12628250, 'zip': 12357720, 'n': 11}
-이야기 The-Great-Emancipation/29-The-Last-Meal {'pdf': 9927231, 'zip': 9666629, 'n': 10}
-이야기 The-Great-Emancipation/30-Bringing-Drinking-Water {'pdf': 12662333, 'zip': 12397875, 'n': 12}
-이야기 The-Great-Emancipation/31-The-Story-Concerning-Pukkusa-Mallaputta {'pdf': 13531878, 'zip': 13267243, 'n': 13}
-이야기 The-Great-Emancipation/32-Cundas-Great-Gain {'pdf': 11108296, 'zip': 10847130, 'n': 10}
-이야기 The-Great-Emancipation/33-Worshipping-the-Realised-One {'pdf': 10978324, 'zip': 10712526, 'n': 11}
-이야기 The-Great-Emancipation/34-The-Visit-of-the-Divinities {'pdf': 13605096, 'zip': 13342432, 'n': 14}
-이야기 The-Great-Emancipation/35-The-Four-Places-that-Produce-Enthusiasm {'pdf': 16183281, 'zip': 15915319, 'n': 14}
-이야기 The-Great-Emancipation/36-Anandas-Marvellous-Qualities {'pdf': 12403321, 'zip': 12138380, 'n': 12}
-이야기 The-Great-Emancipation/37-Kusinaras-History {'pdf': 11760378, 'zip': 11498701, 'n': 11}
-이야기 The-Great-Emancipation/38-The-Mallas-Worship-the-Fortunate-One {'pdf': 11207041, 'zip': 10938108, 'n': 9}
-이야기 The-Great-Emancipation/39-Subhadda-the-Last-Direct-Disciple {'pdf': 14843727, 'zip': 14576391, 'n': 14}
-이야기 The-Great-Emancipation/40-The-Last-Instructions-of-the-Realised-One {'pdf': 7651858, 'zip': 7387990, 'n': 8}
-이야기 The-Great-Emancipation/41-The-Final-Emancipation {'pdf': 13497949, 'zip': 13234080, 'n': 13}
-이야기 The-Great-Emancipation/42-The-Preparation-of-the-Body {'pdf': 16686247, 'zip': 16416433, 'n': 15}
-이야기 The-Great-Emancipation/43-The-Story-Concerning-Mahakassapa {'pdf': 13078682, 'zip': 12814012, 'n': 12}
-이야기 The-Great-Emancipation/44-The-Distribution-of-the-Relics {'pdf': 12681047, 'zip': 12422307, 'n': 10}
-책 The-Great-Emancipation {'pdf': 247067584, 'pdfs': 25096628, 'zip': 246736370, 'stories': 20, 'n': 234}
-내려받기 파일: 21 묶음 새로 만듦
-글로 보기: 146 이야기
+R2 에 올림: 76 개 / 한글판 이야기 147 편
+공개 주소 확인: 200 1433412바이트
+이야기 Pannasa/31-Ariyachatta {'pdf': 20459696, 'zip': 20196335, 'n': 15}
+책 Pannasa {'pdf': 629106532, 'pdfs': 60467157, 'zip': 628675755, 'stories': 31, 'n': 486}
+내려받기 파일: 2 묶음 새로 만듦
+글로 보기: 147 이야기
 50-Mahasudassana
 44-The-Distribution-of-the-Relics
