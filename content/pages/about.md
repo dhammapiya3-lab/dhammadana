@@ -52,4 +52,4 @@ homage: Namo tassa bhagavato arahato sammāsambuddhassa
 ## 자료 제공·문의
 
 법보시 자료를 나누어 주실 번역자와 단체의 연락을 기다립니다.  
-dhammapiya3@gmail.com
+010-3239-5401, dhammapiya3@gmail.com
