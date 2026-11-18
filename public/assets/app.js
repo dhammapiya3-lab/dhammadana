@@ -97,7 +97,10 @@ document.addEventListener('click', e => {
 });
 // 같은 페이지 안에서 # 만 바뀐 경우(학습 자료실 자료 소개·읽기 화면 등)는 다시 불러오지 않음
 let lastDoc = location.pathname + location.search;
-window.addEventListener('popstate', () => { if (document.body.classList.contains('simple-ui') && STALK.playing() && location.pathname + location.search !== lastDoc) { sGo(location.href, false); return; } if (AB.locked || AB.skipPop) { AB.skipPop = false; return; } /* 오디오북 잠금 중 — 아래 오디오북 쪽에서 막음 */ const now = location.pathname + location.search; if (now === lastDoc) return; lastDoc = now;
+window.addEventListener('popstate', () => {
+  if (document.body.classList.contains('simple-ui')) { const hs = history.state || {};
+    if (hs.sb) { if (STALK.playing()) { const pr = hs.prev || '/simple/'; sGo(pr, false).then(() => { const up = ($('#sUp') || {}).href || ''; try { if (up && new URL(up).pathname !== new URL(pr, location.href).pathname) { history.replaceState({ sb: 1, prev: up }, '', pr); history.pushState({ sp: 1 }, '', pr); } else history.replaceState({}, '', pr); } catch (e) {} lastDoc = location.pathname + location.search; }); /* 듣는 동안 뒤로 가기를 거듭하면 한 단계씩 위 목록으로 */ } else history.back(); return; }  // 처음 화면의 뒤로 가기
+    if (STALK.playing() && location.pathname + location.search !== lastDoc) { sGo(location.href, false); return; } } if (AB.locked || AB.skipPop) { AB.skipPop = false; return; } /* 오디오북 잠금 중 — 아래 오디오북 쪽에서 막음 */ const now = location.pathname + location.search; if (now === lastDoc) return; lastDoc = now;
   if (PL.pl && !$('#pAudio').paused) softGo(location.href, false); else location.reload(); });
 
 /* ---------- 페이지별 시작 ---------- */
@@ -2655,6 +2658,7 @@ function sPlayerMake() {
   const SK = 'stalk'; let lastSave = 0;
   const rate = store.get('stalk-rate', 1); q('#sRate').value = String(rate); au.playbackRate = rate;
   const setBtn = () => { const on = !au.paused; bP.textContent = on ? '⏸ 멈춤' : '▶ 재생'; bP.setAttribute('aria-label', on ? '멈춤' : '재생'); };
+  au.addEventListener('play', sHistGuard);  // ◀ 뒤로·휴대폰 뒤로 가기에도 끊기지 않게
   const cur = () => STALK.list[STALK.idx];
   const play = (list, i, from = 0, page = location.pathname) => {
     const e = list[i]; if (!e) return;
@@ -2676,8 +2680,8 @@ function sPlayerMake() {
   q('#sBack15').onclick = () => { au.currentTime = Math.max(0, au.currentTime - 15); }; q('#sFwd15').onclick = () => { au.currentTime = Math.min(au.duration || 1e9, au.currentTime + 15); };
   q('#sRate').onchange = e => { au.playbackRate = +e.target.value || 1; store.set('stalk-rate', au.playbackRate); };
   au.addEventListener('play', setBtn); au.addEventListener('pause', setBtn);
-  au.addEventListener('timeupdate', () => { q('#sTime').textContent = `${sFmtT(au.currentTime)} / ${sFmtT(au.duration)}`; if (cur() && Date.now() - lastSave > 5000) { lastSave = Date.now(); store.set(SK, { a: cur().a, t: au.currentTime, p: STALK.page }); } });
-  au.addEventListener('ended', () => { store.set(SK, null); if (STALK.idx + 1 < STALK.list.length) play(STALK.list, STALK.idx + 1, 0, STALK.page); else { now.textContent = '목록의 마지막 법문까지 들었습니다'; setBtn(); } });
+  au.addEventListener('timeupdate', () => { q('#sTime').textContent = `${sFmtT(au.currentTime)} / ${sFmtT(au.duration)}`; if (cur() && Date.now() - lastSave > 5000) { lastSave = Date.now(); store.set(SK, { a: cur().a, t: au.currentTime, p: STALK.page }); if (au.currentTime > 3) sHistSave(cur(), STALK.page, au.currentTime, au.duration); } });
+  au.addEventListener('ended', () => { store.set(SK, null); if (cur()) sHistDel(cur().a); if (STALK.idx + 1 < STALK.list.length) play(STALK.list, STALK.idx + 1, 0, STALK.page); else { now.textContent = '목록의 마지막 법문까지 들었습니다'; setBtn(); } });
   if ('mediaSession' in navigator) { const h = (k, f) => { try { navigator.mediaSession.setActionHandler(k, f); } catch (x) {} }; h('play', () => au.play()); h('pause', () => au.pause()); h('previoustrack', () => step(-1)); h('nexttrack', () => step(1)); h('seekbackward', () => q('#sBack15').click()); h('seekforward', () => q('#sFwd15').click()); }
   return el;
 }
@@ -2696,7 +2700,28 @@ function sPlayerPlace() {
   else { document.body.appendChild(el); el.classList.add('dock'); document.body.classList.add('s-docked'); }
   sTalkMark();
 }
+// 이어 듣기 기록: 듣던 법문을 최근 순으로 20개까지(이 기기에만), 끝까지 들은 법문은 빠짐 (운영자 요청, 2026-11-18)
+const SH = 'stalk-hist';
+function sHistSave(e, page, pos, dur) {
+  const h = store.get(SH, []).filter(x => x.a !== e.a);
+  h.unshift({ a: e.a, t: e.t, pl: e.pl || '', p: page, pos: Math.floor(pos), dur: isFinite(dur) ? Math.floor(dur) : 0, d: new Date().toISOString().slice(0, 10) });
+  store.set(SH, h.slice(0, 20));
+}
+function sHistDel(a) { store.set(SH, store.get(SH, []).filter(x => x.a !== a)); }
+// 법문 바로 듣기 목록의 '이어 듣기' 줄(기록이 없으면 뺌)과 첫 화면 '법문 바로 듣기' 줄에 듣던 법문 수
+function sResumeCount() {
+  const n = store.get(SH, []).length;
+  const r = $('.s-list a[href="/simple/talks/resume/"]'); if (r) { const li = r.closest('li'); if (!n) li.remove(); else { const c = $('.s-c3', li); if (c) c.textContent = `듣던 법문 ${n}개 · 최근 순`; } }
+  const t = $('.s-list a[href="/simple/talks/"]'); if (t && n && !t.dataset.rc) { t.dataset.rc = 1; const c = $('.s-c3', t); if (c) c.textContent += ` · 이어 듣기 ${n}개`; }
+}
 function initSimpleTalk() {
+  const rs = $('#sResume');
+  if (rs) {
+    const H = store.get(SH, []);
+    rs.innerHTML = H.length ? '<div class="s-tbl" style="--cols:minmax(0,2.4fr) minmax(0,1.4fr) minmax(0,2fr)">' + sHead(['법문', '이어 듣기', '어디 · 언제']) + `<ul class="s-list" data-label="이어 듣기, 듣던 법문 ${H.length}개">${H.map(h => sRow(h.a, [h.t, `이어 듣기: ${sFmtT(h.pos)}${h.dur ? ' / ' + sFmtT(h.dur) : ''}`, `${h.pl}${h.pl ? ' · ' : ''}${h.d || ''}`], '▶', 'ep')).join('')}</ul></div>` : '<p>아직 이 기기에서 들은 법문이 없습니다. 법문 목록에서 법문을 골라 들으면 여기에 최근 순으로 모입니다.</p>';
+    $$('.s-list > li.k-ep', rs).forEach((li, i) => { const h = H[i]; li.dataset.t = h.t; li.dataset.pl = h.pl; li.dataset.src = h.p || ''; li.dataset.pos = h.pos || 0; });
+    sStat(`듣던 법문 ${H.length}`);
+  }
   sPlayerPlace();
   const list = sTalkPageList();
   // 같은 화면을 다시 열었으면 지금 듣는 목록과 같은 목록으로 이어 감
@@ -2705,6 +2730,27 @@ function initSimpleTalk() {
   if (i0 > -1) $('#sNow').textContent = `지난번에 ‘${list[i0].t}’을 ${sFmtT(sv.t)}까지 들었습니다. 그 줄을 고르고 Enter 를 누르면 이어 듣습니다.`;
 }
 // 단순 화면 안에서 옮겨 가기: 법문을 듣는 중이면 페이지를 새로 열지 않고 본문만 바꿈(재생기가 끊기지 않게), 아니면 보통 이동
+// 처음 연 화면(새로 불러온 페이지)에서 재생을 시작하면, 그 화면의 뒤로 가기는 브라우저가 페이지를 새로 열어 소리가 멈춤 —
+// 재생을 시작할 때 같은 주소의 기록을 하나 더 쌓아 두고(sp), 뒤로 가기로 아래 기록(sb)에 오면 앞 화면을 sGo 로 그림 (운영자 요청, 2026-11-18)
+function sResumePlay(li) {
+  const e = { a: li.dataset.href, t: li.dataset.t, pl: li.dataset.pl }, src = li.dataset.src, pos = +li.dataset.pos || 0;
+  STALK.play([e], 0, pos > 5 ? pos : 0, src);  // 먼저 바로 재생(누른 즉시 소리가 나게)
+  fetch(src).then(r => r.ok ? r.text() : '').then(t => {  // 원래 재생목록을 받아 다음 법문으로 이어지게
+    if (!t || STALK.list[0] !== e) return;
+    const d = new DOMParser().parseFromString(t, 'text/html');
+    const list = [...d.querySelectorAll('.s-list > li.k-ep')].map(x => { const a = x.querySelector('a'); return { a: a ? new URL(a.getAttribute('href'), location.href).href : '', t: x.dataset.t || '', pl: x.dataset.pl || '' }; });
+    const i = list.findIndex(x => x.a === new URL(e.a, location.href).href); if (i < 0) return;
+    list[i] = e; STALK.list = list; STALK.idx = i;
+    const nw = $('#sNow'); if (nw) nw.textContent = nw.textContent.replace('(1/1)', `(${i + 1}/${list.length})`);
+  }).catch(() => {});
+}
+let sGuarded = false;
+function sHistGuard() {
+  if (sGuarded || !document.body.classList.contains('simple-ui')) return; sGuarded = true;
+  let prev = ''; try { const r = new URL(document.referrer); if (r.origin === location.origin && r.pathname.startsWith('/simple/') && r.pathname + r.search !== location.pathname + location.search) prev = r.href; } catch (e) {}
+  if (!prev) prev = ($('#sUp') || {}).href || '/simple/';
+  try { history.replaceState({ sb: 1, prev }, ''); history.pushState({ sp: 1 }, ''); } catch (e) {}
+}
 async function sGo(url, push = true) {
   const u = new URL(url, location.href);
   if (!STALK.playing() || u.origin !== location.origin || !u.pathname.startsWith('/simple/')) { if (push) location.href = u.href; else location.reload(); return; }
@@ -2752,6 +2798,7 @@ function sListbox(ul) {
     const r = items[i].getBoundingClientRect(); if (r.top < 70 || r.bottom > innerHeight - 50) items[i].scrollIntoView({ block: 'center' });
   };
   const open = i => { pick(i, false); const li = items[i], h = li.dataset.href; if (!h) return;
+    if (li.classList.contains('k-ep') && li.dataset.src) { sPlayerMake(); sResumePlay(li); return; }  // 이어 듣기 줄: 듣던 자리부터, 원래 목록에서 이어 감
     if (li.classList.contains('k-ep')) { sPlayerMake(); const l = STALK.pageList || sTalkPageList(); STALK.play(l, $$(':scope > li.k-ep', ul).indexOf(li)); return; }  // 법문 줄: 재생기로 재생
     if (li.dataset.ext) { window.open(h, '_blank', 'noopener'); return; }
     if (li.dataset.dl) { const a = document.createElement('a'); a.href = h; a.download = ''; document.body.appendChild(a); a.click(); a.remove(); toast('파일을 내려받습니다'); return; }
@@ -3000,6 +3047,7 @@ function sPageInit() {
   const back = $('#sBack'); if (back) back.onclick = () => { if (history.length > 1 && (document.referrer.startsWith(location.origin) || STALK.playing())) history.back(); else sGo(($('#sUp') || {}).href || '/simple/'); };
   const pg = document.body.dataset.page;
   STALK.pageList = null;
+  sResumeCount();
   if (pg === 'simple-talk') initSimpleTalk(); else sPlayerPlace();
   if (pg === 'simple-read') initSimpleRead(); else if (pg === 'simple-mine') initSimpleMine(); else if (pg === 'simple-find') initSimpleFind();
   else if (pg === 'simple-text') { const go = () => $('.s-h1').focus({ preventScroll: true }); if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true }); }
