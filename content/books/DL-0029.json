@@ -168,7 +168,10 @@
     {
       "lang": "영어",
       "mode": "file",
-      "url": "orig/DL-0029/DL-0029_원서_영어.pdf"
+      "url": "orig/DL-0029/DL-0029_원서_영어.pdf",
+      "sources": [
+        "https://en.khemarama.net/the-buddha-his-life-and-teachings-ven-piyadassi/"
+      ]
     }
   ]
 }
