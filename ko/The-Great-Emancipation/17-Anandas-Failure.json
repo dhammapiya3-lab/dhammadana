@@ -1,0 +1,474 @@
+[
+ {
+  "img": "images/17-Anandas-Failure-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     310,
+     580,
+     428
+    ],
+    "ko": "아난다의 실수\n짜빨라 탑묘에서\n놓쳐 버린 기회",
+    "cover": [
+     216,
+     156,
+     119
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Anandas-Failure-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     298,
+     64,
+     356,
+     90
+    ],
+    "ko": "북쪽",
+    "cover": [
+     215,
+     186,
+     149
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     446,
+     64,
+     504,
+     90
+    ],
+    "ko": "북쪽",
+    "cover": [
+     224,
+     193,
+     153
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     196,
+     212,
+     246,
+     240
+    ],
+    "ko": "서쪽",
+    "cover": [
+     205,
+     173,
+     135
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     556,
+     212,
+     606,
+     240
+    ],
+    "ko": "동쪽",
+    "cover": [
+     226,
+     193,
+     152
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     336,
+     500,
+     364
+    ],
+    "ko": "남쪽",
+    "cover": [
+     218,
+     183,
+     138
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     258,
+     176,
+     544,
+     294
+    ],
+    "ko": "“아난다여, 웨살리는 즐겁구나.”\n주변의 탑묘들이 잠시 머무는 처소가 되었습니다.\n동쪽: 우데나 탑묘\n남쪽: 고따마까 탑묘\n서쪽: 삿땀바 탑묘\n북쪽: 바후뿟따 탑묘",
+    "cover": [
+     219,
+     169,
+     129
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Anandas-Failure-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     356,
+     654,
+     436
+    ],
+    "ko": "아침 탁발을 마치고 세존과 아난다가\n짜빨라 탑묘로 가셨습니다. 부처님께서 마련된 자리에\n앉으시자, 아난다는 절하고 한쪽에 앉았습니다.",
+    "cover": [
+     218,
+     164,
+     131
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Anandas-Failure-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     212,
+     50,
+     592,
+     186
+    ],
+    "ko": "네 가지 성취 수단\n열의, 정진, 마음, 검증의 삼매를\n온전히 닦은 이는 자기 존재를\n놀랍도록 다스릴 수 있습니다.",
+    "cover": [
+     218,
+     162,
+     125
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     42,
+     222,
+     146,
+     266
+    ],
+    "ko": "열의",
+    "cover": [
+     211,
+     166,
+     119
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     254,
+     222,
+     346,
+     266
+    ],
+    "ko": "정진",
+    "cover": [
+     215,
+     175,
+     130
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     458,
+     222,
+     550,
+     266
+    ],
+    "ko": "마음",
+    "cover": [
+     216,
+     172,
+     124
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     652,
+     222,
+     772,
+     266
+    ],
+    "ko": "검증",
+    "cover": [
+     220,
+     178,
+     132
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Anandas-Failure-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     392,
+     152,
+     754,
+     314
+    ],
+    "ko": "“아난다여, 원한다면 여래는\n수명이 다할 때까지, 또는 수명의\n남은 기간 동안 머물 수 있다.”\n죽음을 궁극으로 다스림을\n보여 주는 깊은 선언입니다.",
+    "cover": [
+     212,
+     157,
+     120
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Anandas-Failure-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     212,
+     24,
+     594,
+     150
+    ],
+    "ko": "넌지시 비친 큰 암시\n부처님께서는 그 능력을 분명히 보이셨습니다.\n기대한 대답은 머물러 주시라는 간청이었습니다.\n그러나 마라가 그 생각의 고리를 끊었습니다.",
+    "cover": [
+     212,
+     160,
+     123
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     70,
+     226,
+     164,
+     294
+    ],
+    "ko": "네 성취\n수단",
+    "cover": [
+     206,
+     163,
+     117
+    ],
+    "align": "center",
+    "em": 15,
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     288,
+     226,
+     380,
+     294
+    ],
+    "ko": "수명을\n다스림",
+    "cover": [
+     215,
+     176,
+     129
+    ],
+    "align": "center",
+    "em": 15,
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     652,
+     222,
+     744,
+     298
+    ],
+    "ko": "머무시길\n청함",
+    "cover": [
+     210,
+     170,
+     124
+    ],
+    "align": "center",
+    "em": 15,
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Anandas-Failure-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     212,
+     330,
+     592,
+     440
+    ],
+    "ko": "부처님께서는 분명히 넌지시 비추셨습니다.\n그러나 아난다는 마라에게 마음이\n사로잡힌 사람처럼 그 큰 암시를\n알아차리지 못하고 침묵했습니다.",
+    "cover": [
+     203,
+     154,
+     119
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Anandas-Failure-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     212,
+     330,
+     592,
+     440
+    ],
+    "ko": "세존께서 두 번째로 수명을\n다스릴 수 있음을 거듭 말씀하셨습니다.\n그래도 아난다는 모두의 이익과 행복을 위해\n머물러 주시라고 간청하지 않았습니다.",
+    "cover": [
+     199,
+     151,
+     115
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Anandas-Failure-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     128,
+     22,
+     672,
+     112
+    ],
+    "ko": "부처님께서 세 번째이자 마지막으로 암시를 주셨습니다.\n아난다의 약한 마음과 마라의 무거운 사로잡음 때문에\n안타까운 침묵이 이어졌고, 기회는 사라졌습니다.",
+    "cover": [
+     198,
+     152,
+     116
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Anandas-Failure-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     338,
+     724,
+     438
+    ],
+    "ko": "“아난다여, 이제 그대가 할 일을 할 때가 되었다.”\n아난다는 자리에서 일어나 세존을 오른쪽으로 돌고\n가까운 나무 아래에 앉았습니다.",
+    "cover": [
+     204,
+     157,
+     118
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Anandas-Failure-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     188,
+     322,
+     612,
+     432
+    ],
+    "ko": "간청을 하지 않았기에\n부처님의 수명은 정해졌습니다.\n아난다의 침묵은 대반열반으로 가는\n안타까운 갈림길이 되었습니다.",
+    "cover": [
+     205,
+     154,
+     118
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
