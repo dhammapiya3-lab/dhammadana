@@ -1,0 +1,577 @@
+[
+ {
+  "img": "images/50-Mahasudassana-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     322,
+     600,
+     402
+    ],
+    "ko": "마하수닷사나 자따까\n공덕의 건축",
+    "cover": [
+     230,
+     214,
+     187
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/50-Mahasudassana-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     350,
+     752,
+     420
+    ],
+    "ko": "사께따에서 아지따 왕이 꼰단냐 장로에게 여의수(kapparukkha)를 바쳤습니다. 이 깊은 왕의 보시를 계기로 부처님께서는 지난 생의 행위에서 더 큰 공덕이 생긴다는 것을 밝히셨습니다.",
+    "cover": [
+     235,
+     223,
+     203
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/50-Mahasudassana-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     30,
+     760,
+     110
+    ],
+    "ko": "깟사빠 부처님 시대에 부유한 상인이던 보살이 숲에서 홀로 지내는 장로를 위해 소박한 나뭇잎 오두막을 지었습니다. 그는 이 공덕을 마침내 일체지를 얻는 데 회향했습니다.",
+    "cover": [
+     236,
+     225,
+     202
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/50-Mahasudassana-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     350,
+     760,
+     428
+    ],
+    "ko": "땅의 나뭇잎 오두막은 따와띵사 천상의 황금 궁전으로 피어났습니다. 너비가 60요자나이며, 사파이어 천장과 산호 기둥과 빛나는 수정 문으로 화려하게 꾸며졌습니다.",
+    "cover": [
+     233,
+     220,
+     196
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/50-Mahasudassana-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     340,
+     760,
+     414
+    ],
+    "ko": "천상에서 내려온 보살은 꾸사와띠에서 수닷사나 왕으로 태어났습니다. 쌓아 온 큰 공덕이 땅에서 받을 수 있는 가장 높은 보상, 곧 전륜성왕(짝까왓띠)의 주권으로 나타났습니다.",
+    "cover": [
+     236,
+     221,
+     196
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/50-Mahasudassana-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     356,
+     760,
+     424
+    ],
+    "ko": "다스림의 만다라. 일곱 가지 우주의 보배가 전륜성왕에게 힘을 줍니다. 그것은 부모에게 물려받거나 신이 준 것이 아니라, 오직 그 자신의 지난 공덕에서 생겨난 것입니다.",
+    "cover": [
+     231,
+     216,
+     189
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/50-Mahasudassana-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     450,
+     90,
+     762,
+     380
+    ],
+    "ko": "하늘을 나는 보배들\n\n바퀴 보배는 하늘을 정복하며 도성을 돕니다.\n\n온통 흰 코끼리 보배와 은빛 말 보배는 새벽이 오기 전에 땅의 바다를 거뜬히 건넙니다.",
+    "cover": [
+     235,
+     220,
+     193
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/50-Mahasudassana-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     340,
+     410,
+     406
+    ],
+    "ko": "나라를 지키는 보배. 팔각의 마니 보배는 원소를 다스려 밤을 밝히고 물줄기를 부립니다.",
+    "cover": [
+     230,
+     214,
+     187
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     420,
+     340,
+     764,
+     406
+    ],
+    "ko": "여인 보배는 연꽃 향기를 풍기며, 가장 높은 지혜와 지극한 헌신과 우아함을 갖추었습니다.",
+    "cover": [
+     230,
+     214,
+     187
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/50-Mahasudassana-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     368,
+     760,
+     412
+    ],
+    "ko": "나라를 받치는 보배. 재정관 보배는 하늘 눈으로 땅에 묻힌 주인 없는 재물을 봅니다. 장군 보배는 코끼리 열 마리의 힘을 지니고, 지혜로운 판결로 온 나라의 평화를 지킵니다.",
+    "cover": [
+     233,
+     220,
+     196
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/50-Mahasudassana-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     366,
+     760,
+     410
+    ],
+    "ko": "업의 장부: 건축. 업의 법칙은 우주의 곱셈처럼 작용합니다. 나뭇잎 오두막 하나를 보시하면 도시 8만 4천, 훌륭한 궁전 1천, 박공지붕 집 1천을 얻습니다.",
+    "cover": [
+     228,
+     213,
+     185
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/50-Mahasudassana-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     366,
+     760,
+     412
+    ],
+    "ko": "업의 장부: 필수품. 세상의 보시 하나가 영원히 메아리칩니다. 나무 침상 하나를 보시하면 천상의 침상 8만 4천을 얻고, 소박한 깔개 하나는 보석 박힌 큰 양탄자 8만 4천이 됩니다.",
+    "cover": [
+     225,
+     209,
+     180
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/50-Mahasudassana-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     354,
+     760,
+     402
+    ],
+    "ko": "업의 장부: 환경. 연못 하나를 보시하면 천상의 연못 8만 4천이 나타납니다. 평범한 나무를 심으면 순금·은·산호·빛나는 녹주석으로 된 신기한 야자 숲이 생깁니다.",
+    "cover": [
+     238,
+     227,
+     206
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/50-Mahasudassana-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     352,
+     760,
+     402
+    ],
+    "ko": "황금 도성. 보석 성벽 일곱 겹에 둘러싸인 꾸사와띠에는 바람에 흔들리는 보석 박힌 야자 잎의 고운 소리가 울려 퍼집니다. 그 소리는 천상의 다섯 가지 악기 소리와 꼭 같습니다.",
+    "cover": [
+     231,
+     216,
+     189
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/50-Mahasudassana-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     350,
+     760,
+     402
+    ],
+    "ko": "마지막 출가. 헤아릴 수 없이 길고 번영한 통치 뒤에 수닷사나 왕은 세상의 재물을 버렸습니다. 청정한 출가자로 살며 선정과 신통을 얻고 범천의 세계에 태어났습니다.",
+    "cover": [
+     229,
+     213,
+     186
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/50-Mahasudassana-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     26,
+     590,
+     74
+    ],
+    "ko": "자따까 다시 태어남의 그물",
+    "cover": [
+     238,
+     229,
+     211
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     56,
+     194,
+     184,
+     218
+    ],
+    "ko": "장군",
+    "cover": [
+     242,
+     233,
+     216
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     196,
+     194,
+     312,
+     218
+    ],
+    "ko": "재정관",
+    "cover": [
+     243,
+     235,
+     220
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     516,
+     194,
+     610,
+     218
+    ],
+    "ko": "사리뿟따",
+    "cover": [
+     241,
+     231,
+     215
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     644,
+     194,
+     744,
+     218
+    ],
+    "ko": "아난다",
+    "cover": [
+     238,
+     228,
+     211
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     64,
+     338,
+     172,
+     362
+    ],
+    "ko": "여인",
+    "cover": [
+     241,
+     230,
+     213
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     192,
+     338,
+     316,
+     362
+    ],
+    "ko": "수닷사나 왕",
+    "cover": [
+     244,
+     235,
+     219
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     516,
+     338,
+     610,
+     362
+    ],
+    "ko": "야소다라",
+    "cover": [
+     242,
+     233,
+     217
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     640,
+     338,
+     744,
+     362
+    ],
+    "ko": "부처님",
+    "cover": [
+     241,
+     232,
+     215
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     100,
+     364,
+     700,
+     424
+    ],
+    "ko": "업의 실이 풀립니다. 장군 보배는 사리뿟따가 되고, 재정관 보배는 아난다로,\n여인 보배는 야소다라로 태어났습니다. 마하수닷사나 왕은 완전히 깨달은 여래입니다.",
+    "cover": [
+     239,
+     230,
+     213
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
