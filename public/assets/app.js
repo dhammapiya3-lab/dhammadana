@@ -973,7 +973,7 @@ function renderReader() {
     <div class="panel" id="p-bm"><h5>내 책갈피</h5><ul>${bms().map((m, k) => `<li><span><a class="link" href="/read/${m.id}/${m.p}">『${esc(m.t)}』 ${esc(m.pl || m.p)}쪽</a>${m.note ? `<br><span class="muted small">${esc(m.note)}</span>` : ''}</span><button class="link" data-bmdel="${k}" aria-label="책갈피 지우기">지우기</button></li>`).join('') || '<li class="muted">아직 책갈피가 없습니다.</li>'}</ul>
       <div class="row" style="margin-top:12px"><input id="bmNote" placeholder="이 쪽에 한 줄 메모" aria-label="책갈피 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"><button class="tbtn" id="bmSave">저장</button></div>
       <p class="note">회원가입 없이 이 기기의 브라우저에만 저장됩니다. 다른 기기로 옮길 때는 내 서재의 ‘옮기기’를 쓰세요.</p></div>
-    <div class="panel" id="p-keys"><h5>단축키 안내</h5><p class="note" tabindex="0">Alt 키와 Shift 키를 함께 누른 채로 아래 글자 키를 누릅니다. (맥은 Option + Shift). 창을 여는 단축키는 한 번 더 누르면 창이 닫히고, 연 단추로 돌아갑니다.</p><ul class="keys">${KEYS.map(([k, d]) => `<li tabindex="0"><kbd>Alt+Shift+${k}</kbd> ${d}</li>`).join('')}<li tabindex="0"><kbd>Esc</kbd> 열린 창 닫기 (창이 없으면 읽기 끝내기)</li><li tabindex="0"><kbd>→</kbd> <kbd>←</kbd> (오른쪽·왼쪽 화살표 키) 다음 쪽·앞 쪽으로 넘기기 — 눈으로 보며 읽는 분을 위한 키입니다. 화면 낭독기를 쓰실 때는 Alt+Shift+→ ← 를 쓰세요.</li></ul></div>`;
+    <div class="panel" id="p-keys"><h5>단축키 안내</h5><p class="note" tabindex="0">Alt 키와 Shift 키를 함께 누른 채로 아래 글자 키를 누릅니다. (맥은 Option + Shift). 창을 여는 단축키는 한 번 더 누르면 창이 닫히고, 연 단추로 돌아갑니다.</p><ul class="keys">${KEYS.map(([k, d]) => `<li tabindex="0">${k ? `<kbd>Alt+Shift+${k}</kbd> ` : ''}${d}</li>`).join('')}<li tabindex="0"><kbd>Esc</kbd> 열린 창 닫기 (창이 없으면 읽기 끝내기)</li><li tabindex="0"><kbd>→</kbd> <kbd>←</kbd> (오른쪽·왼쪽 화살표 키) 다음 쪽·앞 쪽으로 넘기기 — 눈으로 보며 읽는 분을 위한 키입니다. 화면 낭독기를 쓰실 때는 Alt+Shift+→ ← 를 쓰세요. 듣는 중에는 → ← 가 다음·앞 문장으로 갑니다.</li></ul></div>`;
   bindReader();
   el._fkey = null;
   if (fkey) { const f = $(fkey, el); if (f && f.offsetParent !== null) f.focus({ preventScroll: true }); else el._fkey = fkey; }  // 닫힌 창 안의 단추면 창을 다시 연 뒤(reopen)에 커서를 되돌림
@@ -1437,6 +1437,24 @@ function enVoice() {
   return vs.sort((a, b) => score(b) - score(a))[0] || null;
 }
 // 한 문단을 한국어·영어 구간으로 나눠 차례로 읽음 (영어는 영어 목소리)
+// 듣는 중 ← → 로 앞·다음 문장 (운영자 요청, 2026-11-18 — 시각장애인 이용자): 문단을 문장으로 나눠 한 문장씩 읽고, 건너뛰면 그 문장부터 다시
+const TT = { gen: 0, jump: null };
+function splitSents(t) {
+  const raw = String(t).split(/(?<=[.?!。…][”’"')\]」』]*)\s+(?=\S)/u), out = [];
+  raw.forEach(x => { if (out.length && (out[out.length - 1].replace(/[\u0001\u0002\s]/g, '').length < 6)) out[out.length - 1] += ' ' + x; else out.push(x); });  // '1.' 같은 짧은 조각은 다음 문장과 함께
+  return out.filter(x => x.replace(/[\u0001\u0002\s]/g, ''));
+}
+// 문장마다 이어 읽기 — ctl.jump(±1) 로 앞·다음 문장, 문단 밖으로 나가면 onOut(±1)
+function speakSents(text, o, pv, si, onend, onerror, onOut, el) {
+  const ss = splitSents(text); if (!ss.length) { onend(); return; }
+  let i = si === 'last' ? ss.length - 1 : Math.max(0, Math.min(ss.length - 1, si || 0));
+  const run = () => {
+    const g = ++TT.gen;
+    TT.jump = d => { const j = i + d; try { speechSynthesis.cancel(); } catch (e) {} TT.gen++; if (j < 0 || j >= ss.length) { onOut(d); return; } i = j; if (el) ttsFocus(el); run(); };
+    speakSegs(ss[i], o, pv, () => { if (g !== TT.gen) return; if (++i >= ss.length) { TT.jump = null; onend(); } else run(); }, e => { if (g !== TT.gen) return; onerror(e); });
+  };
+  run();
+}
 function speakSegs(text, o, pv, onend, onerror) {
   const ev = o.enVoice !== false ? enVoice() : null;
   let segs = [];
@@ -1696,6 +1714,8 @@ function tableLines(s) {
   return s.split('\n').map(l => l.trim()).filter(l => l && !/^\|[\s:|-]+\|?$/.test(l)).map(l => l.replace(/^\||\|$/g, '').split('|').map(c => c.trim()).filter(Boolean).join(', ')).filter(Boolean);
 }
 // fromK: 그 쪽의 몇 번째 문단부터, firstText: 첫 문단은 이 글부터(고른 곳부터 읽기)
+// 듣기가 읽는 문단인지 (← 로 앞 문단을 찾을 때)
+function readable(s, o) { if (!s || !s.trim()) return false; if (isFootnote(s)) return !!o.fn; const fg = s.match(FIG_RE); if (fg) return !!(R && R.say && R.say[fg[2]]); if (isTable(s) || s.trim() === '[[색인]]') return !!o.table; return !!sayable(s, o, true); }
 function speak(fromK = 0, firstText = null) {
   if (!('speechSynthesis' in window)) { noVoice(); return; }
   if (AB.locked) { abLockedMsg(); return; }
@@ -1727,7 +1747,7 @@ function speak(fromK = 0, firstText = null) {
       if (c && c.title && R.ttsTitled !== ci + ':' + R.id && (atStart || isChDup(sentences[k], p.n, c, k))) {
         R.ttsTitled = ci + ':' + R.id; R.ttsPos = { i: R.i, k };
         const tt = sayable(c.title.trim().replace(/^([IVXⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]+)\.\s*/, (m, r) => { const v = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10, 'Ⅰ': 1, 'Ⅱ': 2, 'Ⅲ': 3, 'Ⅳ': 4, 'Ⅴ': 5, 'Ⅵ': 6, 'Ⅶ': 7, 'Ⅷ': 8, 'Ⅸ': 9, 'Ⅹ': 10 }[r]; return v ? v + '. ' : m; }), o, true);  // 로마 숫자는 소리로 '3.'
-        if (tt) { speakSegs(tt, o, pv, () => { if (!R || !R.speaking) return; setTimeout(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); }); return; }
+        if (tt) { speakSents(tt, o, pv, 0, () => { if (!R || !R.speaking) return; setTimeout(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); }, d => { if (!R || !R.speaking) return; if (d > 0) next(); else { R.ttsTitled = null; back(true); } }); return; }
       }
       if (c && isChDup(sentences[k], p.n, c, k)) { k++; next(); return; }
     }
@@ -1749,7 +1769,21 @@ function speak(fromK = 0, firstText = null) {
     const text = tq ? sayable(tq.shift(), o, true) : sayable(raw.replace(/^\[\^([^\]]+)\]:\s*/, (m, n) => `각주 ${n}. `), o, true);
     const adv = () => { if (tq && tq.length) return; tq = null; k++; };
     if (!text) { adv(); next(); return; }
-    speakSegs(text, o, pv, () => { if (!R || !R.speaking) return; adv(); setTimeout(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); });
+    const si = R.ttsSi; R.ttsSi = 0;
+    speakSents(text, o, pv, si, () => { if (!R || !R.speaking) return; adv(); setTimeout(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') stopSpeak(true); },
+      d => { if (!R || !R.speaking) return; tq = null;
+        if (d > 0) { k++; next(); return; }
+        back(); }, el);
+  };
+  // ← 로 앞 문단의 마지막 문장 (이 쪽 첫 문단이면 앞 쪽의 마지막 문단)
+  const back = fromTitle => {
+        const c = chapters()[chapterOf(R.i + 1)];
+        if (!fromTitle) for (let j = k - 1; j >= 0; j--) if (readable(sentences[j], o) && !(c && isChDup(sentences[j], p.n, c, j))) { k = j; R.ttsSi = 'last'; R.ttsSkip = null; next(); return; }
+        // 장의 첫 문단이면 장 제목부터 다시
+        if (!fromTitle && c && c.title && p.n === c.from && R.ttsTitled) { R.ttsTitled = null; R.ttsSi = 0; k = sentences.findIndex(x => x.trim()); next(); return; }
+        // 이 쪽 첫 문단이면 앞 쪽의 마지막 문단으로
+        for (let i = R.i - 1; i >= 0; i--) { const ps = paras(R.pages[i].text); for (let j = ps.length - 1; j >= 0; j--) if (readable(ps[j], o)) { R.i = i; R.ttsSi = 'last'; R.ttsSkip = null; renderReader(); speak(j); return; } }
+        R.ttsSi = 0; next();
   };
   next();
 }
@@ -1977,7 +2011,7 @@ function bodyZoom() { return parseFloat(getComputedStyle(document.body).zoom) ||
   document.addEventListener('click', e => { if (held && e.target.closest && e.target.closest('[data-tip]') === held) { e.preventDefault(); e.stopImmediatePropagation(); } held = null; }, true);
   document.addEventListener('contextmenu', e => { if (e.target.closest && e.target.closest('[data-tip]')) e.preventDefault(); });
 })();
-function stopSpeak(rerender) { try { speechSynthesis.cancel(); } catch (e) {} wake(false, 'tts'); if (R) { R.ttsTitled = null; R.ttsLocked = false; const was = R.speaking; R.speaking = false; if (rerender && was) renderReader(); } }
+function stopSpeak(rerender) { TT.gen++; TT.jump = null; if (R) R.ttsSi = 0; try { speechSynthesis.cancel(); } catch (e) {} wake(false, 'tts'); if (R) { R.ttsTitled = null; R.ttsLocked = false; const was = R.speaking; R.speaking = false; if (rerender && was) renderReader(); } }
 document.addEventListener('keydown', e => {
   // 열린 창 안에서 Tab 은 창 안에서만 돎 — 단축키 안내처럼 누를 것이 없는 창에서 Tab 을 누르면 커서가 엉뚱한 곳으로 가던 것 (운영자 요청, 2026-11-18)
   if (R && e.key === 'Tab' && !e.altKey && !e.ctrlKey && !e.metaKey) {
@@ -1993,6 +2027,7 @@ document.addEventListener('keydown', e => {
   if (!R || e.target.matches('input,select,textarea')) return;
   if (R.ttsLocked && e.key !== 'Tab') { if ([' ', 'ArrowRight', 'ArrowLeft', 'Escape'].includes(e.key)) { e.preventDefault(); toast('듣기가 잠겨 있습니다'); } return; }
   if ((e.key === 'ArrowRight' || e.key === 'ArrowLeft') && (e.shiftKey || e.ctrlKey || e.altKey || e.metaKey)) return;  // Shift+→ 는 글 고르기
+  if ((e.key === 'ArrowRight' || e.key === 'ArrowLeft') && R.speaking) { e.preventDefault(); if (TT.jump) TT.jump(e.key === 'ArrowRight' ? 1 : -1); return; }  // 듣는 중에는 앞·다음 문장
   if (e.key === 'ArrowRight') go(R.i + 2); else if (e.key === 'ArrowLeft') go(R.i);
   else if (e.key === ' ' && $('#rSpeak') && !e.target.closest('button,a,summary,[role]')) { e.preventDefault(); R.speaking ? stopSpeak(true) : speak(); }
   else if (e.key === 'Escape') { if (document.fullscreenElement) return; if ($$('#reader .panel.open').length) closePanels(); else exitReader(); }
@@ -2493,7 +2528,7 @@ function panelA11y(el) {
   const mk = $('#rMark'); if (mk) mk.setAttribute('aria-keyshortcuts', 'Alt+Shift+B');
 }
 // 단축키: 브라우저·화면 낭독기 키와 겹치지 않게 Alt+Shift+글자 (WCAG 2.1.4 — 한 글자 키는 쓰지 않음)
-const KEYS = [['→', '다음 쪽'], ['←', '앞 쪽'], ['↓', '다음 목차 (소제목·장)'], ['↑', '앞 목차 (소제목·장)'], ['M', '메뉴 열기 (닫기 단추로 커서)'], ['P', '토글: 듣기 시작·멈춤 (듣는 동안 커서가 읽는 문단을 따라감)'], ['C', '지금 읽는 문단을 클립보드에 복사'], ['S', '토글: 듣기 설정 창 열기·닫기'], ['V', '토글: 화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['F', '토글: 글씨 창 열기·닫기 (크기·굵기·줄 간격·글꼴)'], ['N', '토글: 목차 창 열기·닫기'], ['B', '토글: 이 쪽에 책갈피 넣기·빼기'], ['L', '토글: 책갈피 목록 열기·닫기'], ['K', '지금 읽는 곳 알리기'], ['H', '토글: 단축키 안내 열기·닫기']];
+const KEYS = [['→', '다음 쪽'], ['←', '앞 쪽'], ['↓', '다음 목차 (소제목·장)'], ['↑', '앞 목차 (소제목·장)'], ['M', '메뉴 열기 (닫기 단추로 커서)'], ['P', '토글: 듣기 시작·멈춤 (듣는 동안 커서가 읽는 문단을 따라감)'], ['C', '지금 읽는 문단을 클립보드에 복사'], ['', '듣는 중에 → ← (Alt·Shift 없이): 다음 문장·앞 문장'], ['S', '토글: 듣기 설정 창 열기·닫기'], ['V', '토글: 화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['F', '토글: 글씨 창 열기·닫기 (크기·굵기·줄 간격·글꼴)'], ['N', '토글: 목차 창 열기·닫기'], ['B', '토글: 이 쪽에 책갈피 넣기·빼기'], ['L', '토글: 책갈피 목록 열기·닫기'], ['K', '지금 읽는 곳 알리기'], ['H', '토글: 단축키 안내 열기·닫기']];
 // 듣는 동안 커서(포커스)가 읽는 문단을 따라감 (운영자 요청, 2026-11-18 — 시각장애인 이용자: 듣던 문장을 바로 Shift+→ 로 골라 복사할 수 있게).
 // 커서가 본문·듣기 단추·앞서 읽던 문단에 있을 때만 옮김 — 설정 창 등 다른 곳에서 일하는 중이면 건드리지 않음
 function ttsFocus(el) {
@@ -2685,13 +2720,13 @@ function srSavePos(n, ch) {
   store.set('hist', h.slice(0, 100));
 }
 function srStop(quiet) {
-  SR.speaking = false; try { speechSynthesis.cancel(); } catch (e) {} wake(false, 'tts');
+  TT.gen++; TT.jump = null; SR.si = 0; SR.speaking = false; try { speechSynthesis.cancel(); } catch (e) {} wake(false, 'tts');
   $$('.s-text .speaking').forEach(x => x.classList.remove('speaking'));
   const b = $('#sSpeak'); if (b) b.textContent = '▶ 듣기';
   if (!quiet) toast('듣기를 멈췄습니다');
 }
 // 화면에 보이는 문단(또는 장 처음)부터 읽음 — 장이 끝나면 다음 장을 그 자리에 그리고 이어 읽음
-function srSpeak(fromTop) {
+function srSpeak(fromTop, startAt) {
   if (!('speechSynthesis' in window)) { noVoice(); return; }
   if (!LEX.pali) { toast('읽기를 준비하는 중입니다…'); loadLex().then(() => srSpeak(fromTop)); return; }
   const o = ttsOpt(), pv = pickVoice(o), R0 = SR.r, ch = SR.cs[SR.ci];
@@ -2706,8 +2741,8 @@ function srSpeak(fromTop) {
     if (isTable(raw0)) { if (!o.table) return; tableLines(raw0).forEach(l => items.push({ el, text: sayable(l, o, true) })); return; }
     items.push({ el, text: sayable(raw.replace(/^\[\^([^\]]+)\]:\s*/, (m, n) => `각주 ${n}. `), o, true) });
   });
-  let k = 0;
-  if (!fromTop) { const top = items.findIndex((it, i) => i && it.el && it.el.getBoundingClientRect().bottom > 80); if (top > 0 && scrollY > 40) k = top; }
+  let k = startAt === 'last' ? Math.max(0, items.length - 1) : 0;
+  if (!fromTop && startAt == null) { const top = items.findIndex((it, i) => i && it.el && it.el.getBoundingClientRect().bottom > 80); if (top > 0 && scrollY > 40) k = top; }
   try { speechSynthesis.cancel(); } catch (e) {}
   SR.speaking = true; wake(true, 'tts'); const b = $('#sSpeak'); if (b) b.textContent = '■ 듣기 멈춤';
   const t0 = SR.t0 || (SR.t0 = Date.now());
@@ -2722,7 +2757,12 @@ function srSpeak(fromTop) {
     }
     const it = items[k++]; if (!it.text) { next(); return; }
     if (it.el) { it.el.classList.add('speaking'); if (o.follow) it.el.scrollIntoView({ block: 'nearest' }); ttsFocus(it.el); const n = +it.el.dataset.pg; if (n) srSavePos(n, ch); }
-    speakSegs(it.text, o, pv, () => { if (SR.speaking) setTimeout(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') srStop(true); });
+    const si = SR.si; SR.si = 0;
+    speakSents(it.text, o, pv, si, () => { if (SR.speaking) setTimeout(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') srStop(true); },
+      d => { if (!SR.speaking) return; if (d > 0) { next(); return; }
+        if (k >= 2) { k -= 2; SR.si = 'last'; next(); return; }  // 앞 문단의 마지막 문장
+        if (SR.ci > 0) { const ci = SR.ci - 1; srChapter(ci, 0, true, () => { SR.si = 'last'; srSpeak(true, 'last'); }); return; }
+        k = Math.max(0, k - 1); SR.si = 0; next(); }, it.el);
   };
   next();
 }
@@ -2769,10 +2809,10 @@ function initSimpleFind() {
   q.addEventListener('keydown', e => { if ((e.key === 'ArrowDown' || e.key === 'Enter') && $('.s-list', out)) { e.preventDefault(); $('.s-list', out)._lb.pick(0); } });
   run(); const go = () => q.focus(); if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true });
 }
-const S_KEYS = [['→', '다음 쪽 (장 글 화면에서)'], ['←', '앞 쪽'], ['↓', '다음 장 (목차의 다음 항목)'], ['↑', '앞 장'], ['P', '토글: 듣기 시작·멈춤 (책의 장 글 화면에서, 듣는 동안 커서가 읽는 문단을 따라감)'], ['C', '지금 읽는 문단을 클립보드에 복사'], ['S', '토글: 듣기 설정 열기·닫기 (장 글 화면에서)'], ['V', '토글: 화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['N', '장 목록으로 (책을 읽을 때)'], ['B', '토글: 지금 읽는 쪽에 책갈피 넣기·빼기'], ['L', '내 서재 (이어 읽기·책갈피)'], ['M', '첫 화면 (폴더 목록)'], ['K', '지금 위치 알리기'], ['H', '토글: 단축키 안내 열기·닫기']];
+const S_KEYS = [['→', '다음 쪽 (장 글 화면에서)'], ['←', '앞 쪽'], ['↓', '다음 장 (목차의 다음 항목)'], ['↑', '앞 장'], ['P', '토글: 듣기 시작·멈춤 (책의 장 글 화면에서, 듣는 동안 커서가 읽는 문단을 따라감)'], ['C', '지금 읽는 문단을 클립보드에 복사'], ['', '듣는 중에 → ← (Alt·Shift 없이): 다음 문장·앞 문장'], ['S', '토글: 듣기 설정 열기·닫기 (장 글 화면에서)'], ['V', '토글: 화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['N', '장 목록으로 (책을 읽을 때)'], ['B', '토글: 지금 읽는 쪽에 책갈피 넣기·빼기'], ['L', '내 서재 (이어 읽기·책갈피)'], ['M', '첫 화면 (폴더 목록)'], ['K', '지금 위치 알리기'], ['H', '토글: 단축키 안내 열기·닫기']];
 function simpleHelp() {
   const old = $('#sKeys'); if (old) { old.remove(); const b = $('.s-list [aria-selected="true"]') || $('.s-h1'); if (b) b.focus(); return; }
-  $('.s-h1').insertAdjacentHTML('afterend', `<section id="sKeys" class="s-keys" aria-labelledby="sKeysH"><h2 id="sKeysH" tabindex="-1">단축키 안내</h2><p tabindex="0">Alt 키와 Shift 키를 함께 누른 채로 글자 키를 누릅니다 (맥은 Option + Shift). Tab 키로 한 줄씩 들으실 수 있습니다.</p><ul>${S_KEYS.map(([k, d]) => `<li tabindex="0"><kbd>Alt+Shift+${k}</kbd> ${d}</li>`).join('')}<li tabindex="0"><kbd>↑</kbd> <kbd>↓</kbd> 목록에서 줄 고르기, <kbd>Enter</kbd> 열기, <kbd>Backspace</kbd> 위 목록으로</li></ul><button type="button" class="s-btn" id="sKeysX">단축키 안내 닫기</button></section>`);
+  $('.s-h1').insertAdjacentHTML('afterend', `<section id="sKeys" class="s-keys" aria-labelledby="sKeysH"><h2 id="sKeysH" tabindex="-1">단축키 안내</h2><p tabindex="0">Alt 키와 Shift 키를 함께 누른 채로 글자 키를 누릅니다 (맥은 Option + Shift). Tab 키로 한 줄씩 들으실 수 있습니다.</p><ul>${S_KEYS.map(([k, d]) => `<li tabindex="0">${k ? `<kbd>Alt+Shift+${k}</kbd> ` : ''}${d}</li>`).join('')}<li tabindex="0"><kbd>↑</kbd> <kbd>↓</kbd> 목록에서 줄 고르기, <kbd>Enter</kbd> 열기, <kbd>Backspace</kbd> 위 목록으로</li></ul><button type="button" class="s-btn" id="sKeysX">단축키 안내 닫기</button></section>`);
   $('#sKeysX').onclick = simpleHelp; $('#sKeysH').focus();
   $('#sKeys').addEventListener('keydown', e => {
     if (e.key === 'Escape') { e.preventDefault(); simpleHelp(); return; }
@@ -2847,6 +2887,8 @@ function simpleKey(e) {
   else sFocusFirst();
   // 단순 화면에서도 Alt+Shift 단축키 (운영자 요청, 2026-11-18)
   document.addEventListener('keydown', e => { if (e.altKey && e.shiftKey && !e.ctrlKey && !e.metaKey && simpleKey(e)) e.preventDefault(); });
+  // 듣는 중 ← → 는 앞·다음 문장 (운영자 요청, 2026-11-18)
+  document.addEventListener('keydown', e => { if ((e.key === 'ArrowRight' || e.key === 'ArrowLeft') && !e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey && SR.speaking && TT.jump && !e.target.matches('input,textarea,select,[role=option]')) { e.preventDefault(); TT.jump(e.key === 'ArrowRight' ? 1 : -1); } });
   // 목록 밖에서도 Backspace 로 위 목록으로 (입력 칸 밖에서만)
   document.addEventListener('keydown', e => { if (e.key === 'Backspace' && !e.altKey && !e.ctrlKey && !e.target.matches('input,textarea,select,.s-list,.s-list *')) { const u = $('#sUp'); if (u) { e.preventDefault(); u.click(); } } });
 })();
