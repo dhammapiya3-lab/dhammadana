@@ -2638,6 +2638,42 @@ function loadFontLabels() { addCss('rf-nanum-label', 'https://fonts.googleapis.c
    Enter 열기 · Backspace 위 목록으로 · Home/End · PageUp/Down(10줄) · 글자 키(ㄱ~ㅎ 포함)로 그 글자로 시작하는 줄로. */
 const CHO = 'ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ';
 const choOf = ch => { const c = ch.charCodeAt(0) - 0xAC00; return c >= 0 && c < 11172 ? CHO[Math.floor(c / 588)] : ch.toLowerCase(); };
+// 단순 화면 '법문 바로 듣기': 법문 줄에서 Enter → 이 화면의 재생기(#sAudio)로 재생, 다 들으면 다음 법문 (운영자 요청, 2026-11-18)
+const STALK = { play: null, toggle: null, now: null };
+function initSimpleTalk() {
+  const au = $('#sAudio'), now = $('#sNow'), bP = $('#sPlay'), eps = () => $$('.s-list > li.k-ep');
+  if (!au) return;
+  const SK = 'stalk', fmt = t => { t = Math.floor(t || 0); const h = Math.floor(t / 3600), m = Math.floor(t / 60) % 60, s2 = t % 60; return (h ? h + ':' + String(m).padStart(2, '0') : m) + ':' + String(s2).padStart(2, '0'); };
+  let cur = null, lastSave = 0;
+  const rate = store.get('stalk-rate', 1); $('#sRate').value = String(rate); au.playbackRate = rate;
+  const mark = () => eps().forEach(li => { li.classList.toggle('playing', li === cur); if (li === cur) li.setAttribute('aria-current', 'true'); else li.removeAttribute('aria-current'); });
+  const setBtn = () => { const on = !au.paused; bP.textContent = on ? '⏸ 멈춤' : '▶ 재생'; bP.setAttribute('aria-label', on ? '멈춤' : '재생'); };
+  const title = li => li.dataset.t || ($('.s-c1', li) || li).textContent.trim();
+  const play = (li, from = 0) => {
+    if (!li) return;
+    if (li === cur && au.src) { au.play().catch(() => {}); return; }
+    cur = li; au.src = li.dataset.href; au.playbackRate = +$('#sRate').value || 1;
+    const sv = store.get(SK, null); if (!from && sv && sv.a === li.dataset.href && sv.t > 5) from = sv.t;  // 듣다 멈춘 법문이면 그 자리부터
+    if (from) au.addEventListener('loadedmetadata', () => { try { au.currentTime = from; } catch (e) {} }, { once: true });
+    au.play().catch(() => toast('재생하지 못했습니다. 잠시 뒤 다시 눌러 주세요'));
+    const n = eps().indexOf(li) + 1, tot = eps().length;
+    now.textContent = `재생: ${title(li)} (${n}/${tot})${from ? `, ${fmt(from)}부터 이어 듣기` : ''}`;
+    mark();
+    if ('mediaSession' in navigator) { try { navigator.mediaSession.metadata = new MediaMetadata({ title: title(li), artist: li.dataset.pl || '', album: '법문 바로 듣기 · 붓다담마 법보시 도서관' }); } catch (e) {} }
+  };
+  const step = d => { const l = eps(), i = cur ? l.indexOf(cur) : -1, j = i + d; if (j < 0 || j >= l.length) { sayKey(d > 0 ? '마지막 법문입니다' : '첫 법문입니다'); return; } play(l[j]); };
+  const toggle = () => { if (!cur) { const l = eps(), sel = $('.s-list > li.k-ep[aria-selected="true"]') || l[0]; play(sel); return; } if (au.paused) au.play().catch(() => {}); else au.pause(); };
+  STALK.play = play; STALK.toggle = toggle; STALK.now = () => cur ? `${au.paused ? '멈춤' : '재생 중'}: ${title(cur)}, ${fmt(au.currentTime)} / ${fmt(au.duration)}` : '재생 중인 법문 없음';
+  bP.onclick = toggle; $('#sPrev').onclick = () => step(-1); $('#sNext').onclick = () => step(1);
+  $('#sBack15').onclick = () => { au.currentTime = Math.max(0, au.currentTime - 15); }; $('#sFwd15').onclick = () => { au.currentTime = Math.min(au.duration || 1e9, au.currentTime + 15); };
+  $('#sRate').onchange = e => { au.playbackRate = +e.target.value || 1; store.set('stalk-rate', au.playbackRate); };
+  au.addEventListener('play', setBtn); au.addEventListener('pause', setBtn);
+  au.addEventListener('timeupdate', () => { $('#sTime').textContent = `${fmt(au.currentTime)} / ${fmt(au.duration)}`; if (cur && Date.now() - lastSave > 5000) { lastSave = Date.now(); store.set(SK, { a: cur.dataset.href, t: au.currentTime, p: location.pathname }); } });
+  au.addEventListener('ended', () => { store.set(SK, null); const l = eps(), i = l.indexOf(cur); if (i > -1 && i + 1 < l.length) play(l[i + 1]); else { now.textContent = '목록의 마지막 법문까지 들었습니다'; setBtn(); } });
+  if ('mediaSession' in navigator) { try { navigator.mediaSession.setActionHandler('previoustrack', () => step(-1)); navigator.mediaSession.setActionHandler('nexttrack', () => step(1)); navigator.mediaSession.setActionHandler('seekbackward', () => $('#sBack15').click()); navigator.mediaSession.setActionHandler('seekforward', () => $('#sFwd15').click()); } catch (e) {} }
+  const sv = store.get(SK, null), li0 = sv && sv.p === location.pathname && eps().find(li => li.dataset.href === sv.a);
+  if (li0) now.textContent = `지난번에 ‘${title(li0)}’을 ${fmt(sv.t)}까지 들었습니다. 그 줄을 고르고 Enter 를 누르면 이어 듣습니다.`;
+}
 function sListbox(ul) {
   // 첫 화면 말고는 목록 맨 위에 '▲ 위로' 줄 (운영자 요청, 2026-11-18 — 책이 한 권뿐인 목록에서 ↑↓ 를 눌러도
   // 움직일 곳이 없어 낭독기가 아무것도 읽지 않던 것: 위로 줄이 있으면 늘 움직일 곳이 있음)
@@ -2665,6 +2701,7 @@ function sListbox(ul) {
     const r = items[i].getBoundingClientRect(); if (r.top < 70 || r.bottom > innerHeight - 50) items[i].scrollIntoView({ block: 'center' });
   };
   const open = i => { pick(i, false); const li = items[i], h = li.dataset.href; if (!h) return;
+    if (li.classList.contains('k-ep') && STALK.play) { STALK.play(li); return; }  // 법문 줄: 이 화면의 재생기로 재생
     if (li.dataset.ext) { window.open(h, '_blank', 'noopener'); return; }
     if (li.dataset.dl) { const a = document.createElement('a'); a.href = h; a.download = ''; document.body.appendChild(a); a.click(); a.remove(); toast('파일을 내려받습니다'); return; }
     location.href = h; };
@@ -2838,7 +2875,7 @@ function initSimpleFind() {
   q.addEventListener('keydown', e => { if ((e.key === 'ArrowDown' || e.key === 'Enter') && $('.s-list', out)) { e.preventDefault(); $('.s-list', out)._lb.pick(0); } });
   run(); const go = () => q.focus(); if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true });
 }
-const S_KEYS = [['→', '다음 쪽 (장 글 화면에서)'], ['←', '앞 쪽'], ['↓', '다음 장 (목차의 다음 항목)'], ['↑', '앞 장'], ['P', '토글: 듣기 시작·멈춤 (책의 장 글 화면에서, 듣는 동안 커서가 읽는 문단을 따라감)'], ['C', '지금 읽는 문단을 클립보드에 복사'], ['', '듣는 중에 → ← (Alt·Shift 없이): 다음 문장·앞 문장'], ['S', '토글: 듣기 설정 열기·닫기 (장 글 화면에서)'], ['V', '토글: 화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['N', '장 목록으로 (책을 읽을 때)'], ['B', '토글: 지금 읽는 쪽에 책갈피 넣기·빼기'], ['L', '내 서재 (이어 읽기·책갈피)'], ['M', '첫 화면 (폴더 목록)'], ['K', '지금 위치 알리기'], ['H', '토글: 단축키 안내 열기·닫기']];
+const S_KEYS = [['→', '다음 쪽 (장 글 화면에서)'], ['←', '앞 쪽'], ['↓', '다음 장 (목차의 다음 항목)'], ['↑', '앞 장'], ['P', '토글: 듣기 시작·멈춤 (책의 장 글 화면에서, 듣는 동안 커서가 읽는 문단을 따라감 · 법문 목록 화면에서는 법문 재생·멈춤)'], ['C', '지금 읽는 문단을 클립보드에 복사'], ['', '듣는 중에 → ← (Alt·Shift 없이): 다음 문장·앞 문장'], ['S', '토글: 듣기 설정 열기·닫기 (장 글 화면에서)'], ['V', '토글: 화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['N', '장 목록으로 (책을 읽을 때)'], ['B', '토글: 지금 읽는 쪽에 책갈피 넣기·빼기'], ['L', '내 서재 (이어 읽기·책갈피)'], ['M', '첫 화면 (폴더 목록)'], ['K', '지금 위치 알리기'], ['H', '토글: 단축키 안내 열기·닫기']];
 function simpleHelp() {
   const old = $('#sKeys'); if (old) { old.remove(); const b = $('.s-list [aria-selected="true"]') || $('.s-h1'); if (b) b.focus(); return; }
   $('.s-h1').insertAdjacentHTML('afterend', `<section id="sKeys" class="s-keys" aria-labelledby="sKeysH"><h2 id="sKeysH" tabindex="-1">단축키 안내</h2><p tabindex="0">Alt 키와 Shift 키를 함께 누른 채로 글자 키를 누릅니다 (맥은 Option + Shift). Tab 키로 한 줄씩 들으실 수 있습니다.</p><ul>${S_KEYS.map(([k, d]) => `<li tabindex="0">${k ? `<kbd>Alt+Shift+${k}</kbd> ` : ''}${d}</li>`).join('')}<li tabindex="0"><kbd>↑</kbd> <kbd>↓</kbd> 목록에서 줄 고르기, <kbd>Enter</kbd> 열기, <kbd>Backspace</kbd> 위 목록으로</li></ul><button type="button" class="s-btn" id="sKeysX">단축키 안내 닫기</button></section>`);
@@ -2883,7 +2920,7 @@ function simpleKey(e) {
     case 'A': sayKey('오디오북은 책 폴더의 오디오북 줄을 고르면 일반 읽기 화면에서 들을 수 있습니다'); return true;
     case 'H': simpleHelp(); sayKey($('#sKeys') ? '단축키 안내' : '단축키 안내 닫힘'); return true;
     case 'C': if (!SR.r) { sayKey('책의 장 글 화면에서 쓸 수 있습니다'); return true; } copyNow('.s-text'); return true;
-    case 'P': if (!reading) { sayKey('듣기는 책의 장 글 화면에서 쓸 수 있습니다. 책 → 온라인으로 읽기 → 장을 고르세요'); return true; } if (SR.speaking) { srStop(true); sayKey('듣기 멈춤'); } else srSpeak(); return true;
+    case 'P': if (STALK.toggle) { STALK.toggle(); return true; } if (!reading) { sayKey('듣기는 책의 장 글 화면에서 쓸 수 있습니다. 책 → 온라인으로 읽기 → 장을 고르세요'); return true; } if (SR.speaking) { srStop(true); sayKey('듣기 멈춤'); } else srSpeak(); return true;
     case 'S': if (!reading) { sayKey('듣기 설정은 책의 장 글 화면에서 쓸 수 있습니다'); return true; } srTtsPanel(); sayKey($('#sTts') && !$('#sTts').hidden ? '듣기 설정' : '듣기 설정 닫힘'); return true;
     case 'N': if (!SR.r) { sayKey('책을 읽을 때 쓰는 키입니다'); return true; } sayKey('장 목록', () => { location.href = './'; }); return true;
     case 'L': sayKey('내 서재', () => { location.href = '/simple/mine/'; }); return true;
@@ -2899,6 +2936,7 @@ function simpleKey(e) {
       const path = $$('.s-path a, .s-path [aria-current]').map(x => x.textContent.trim()).join(', ');
       const o = $('.s-list [aria-selected="true"] .s-c1');
       let m = `지금 위치: ${path}`;
+      if (STALK.now) m += ', ' + STALK.now();
       if (reading) { const el = $$('.s-text [data-pg]').find(x => x.getBoundingClientRect().bottom > 80); if (el) m += `, ${pageName(SR.r.pages[+el.dataset.pg - 1] || {})}`; if (SR.speaking) m += ', 듣는 중'; }
       else if (o) m += `, 고른 줄: ${o.textContent.trim()}`;
       sayKey(m); return true;
@@ -2912,7 +2950,7 @@ function simpleKey(e) {
   if (!document.body.classList.contains('simple-ui')) return;
   const back = $('#sBack'); if (back) back.onclick = () => { if (history.length > 1 && document.referrer.startsWith(location.origin)) history.back(); else location.href = ($('#sUp') || {}).href || '/simple/'; };
   const pg = document.body.dataset.page;
-  if (pg === 'simple-read') initSimpleRead(); else if (pg === 'simple-mine') initSimpleMine(); else if (pg === 'simple-find') initSimpleFind();
+  if (pg === 'simple-talk') initSimpleTalk(); if (pg === 'simple-read') initSimpleRead(); else if (pg === 'simple-mine') initSimpleMine(); else if (pg === 'simple-find') initSimpleFind();
   else if (pg === 'simple-text') { const go = () => $('.s-h1').focus({ preventScroll: true }); if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true }); }
   else sFocusFirst();
   // 단순 화면에서도 Alt+Shift 단축키 (운영자 요청, 2026-11-18)

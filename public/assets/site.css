@@ -1271,3 +1271,11 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 .s-text [id^="pm-"],.s-text [data-pg],.s-h1,.s-keys,.s-tts{scroll-margin-top:calc(var(--sbar,64px) + 8px)}
 /* 읽기 화면: 위 메뉴가 떠 있을 때도 쪽 표시가 가리지 않게 */
 #rBody .reflow .pmark{scroll-margin-top:56px}
+/* 단순 화면 '법문 바로 듣기' 재생기 (운영자 요청, 2026-11-18) */
+.simple-ui .s-player{border:2px solid var(--line);border-radius:8px;padding:10px 12px;margin:0 0 14px;background:var(--paper,#fff)}
+.simple-ui .s-now{margin:0 0 8px;font-size:1.05em}
+.simple-ui .s-pbtns{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.simple-ui .s-rate{display:inline-flex;gap:4px;align-items:center;font-size:15px}
+.simple-ui .s-rate select{font-size:15px;padding:4px}
+.simple-ui .s-time{font-variant-numeric:tabular-nums;font-size:15px;margin-left:4px}
+.simple-ui .s-row.playing .s-c1{font-weight:700;text-decoration:underline}

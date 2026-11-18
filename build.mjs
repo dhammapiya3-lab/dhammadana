@@ -950,7 +950,7 @@ const sDateHtml = c => /\d{4}-\d{1,2}-\d{1,2}/.test(c) ? `<span aria-hidden="tru
 const sCols = cols => cols.map((c, i) => `${i && c ? '<span class="sr">, </span>' : ''}<span class="s-c s-c${i + 1}">${sDateHtml(c || '')}</span>`).join('');
 const S_COLS = { 2: 'minmax(0,2fr) minmax(0,3fr)', 3: 'minmax(0,3fr) 110px minmax(0,2fr)' };
 const sList = (label, head, rows, cols = S_COLS[head.length]) => `<div class="s-tbl"${cols ? ` style="--cols:${cols}"` : ''}><div class="s-head" aria-hidden="true">${head.map((h, i) => `<span class="s-c s-c${i + 1}">${esc(h)}</span>`).join('')}</div>
-<ul class="s-list" data-label="${esc(label)}">${rows.map(r => `<li class="s-row${r.kind ? ' k-' + r.kind : ''}"><a href="${esc(r.href)}"${r.dl ? ' download' : ''}${r.ext ? ' target="_blank" rel="noopener"' : ''}><span class="s-ic" aria-hidden="true">${r.ic || '📁'}</span>${sCols(r.cols)}</a></li>`).join('')}</ul></div>`;
+<ul class="s-list" data-label="${esc(label)}">${rows.map(r => `<li class="s-row${r.kind ? ' k-' + r.kind : ''}"${r.data ? Object.entries(r.data).map(([k, v]) => ` data-${k}="${esc(v)}"`).join('') : ''}><a href="${esc(r.href)}"${r.dl ? ' download' : ''}${r.ext ? ' target="_blank" rel="noopener"' : ''}><span class="s-ic" aria-hidden="true">${r.ic || '📁'}</span>${sCols(r.cols)}</a></li>`).join('')}</ul></div>`;
 const sBy = b => [b.byline, b.translator].filter(Boolean).join(' | ');
 const sFmt = b => { const k = fmtsCard(b).map(x => x.k); return [...k.filter(x => x === '온라인 읽기'), ...k.filter(x => x !== '온라인 읽기')].join(' · ') || '준비 중'; };
 const sBookRows = books => books.map(b => ({ href: `/simple/book/${b.id}/`, ic: '📕', kind: 'book', cols: [b.title, sBy(b), b.added ? b.added + ' 등록' : '', sFmt(b)] }));
@@ -970,22 +970,30 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
   const pList = PUBS();
   const topList = [...new Set(lib.flatMap(b => b.topics || []))].map(l => ({ l, n: lib.filter(b => (b.topics || []).includes(l)).length })).sort((a, b) => b.n - a.n || a.l.localeCompare(b.l, 'ko'));
   const audio = lib.filter(b => AUDIO[b.id] && curEd(b).reader);
+  const mList = TOPICS.main.filter(m => countMain(m));  // 주요 자료(니까야 경전·부처님의 생애 …) — 도서관 찾아보기와 같은 묶음 (운영자 요청, 2026-11-18)
   const F = (title, href, cnt, ic = '📁', kind = 'folder', type = '폴더') => ({ href, ic, kind, cols: [title, type, cnt] });
   sFolderPage('simple/index.html', { title: '단순 화면 첫 화면', normal: '/', rows: [
     // 가장 자주 쓰는 '내 서재'·'찾기'를 맨 위에 (운영자 요청, 2026-11-18)
     F('내 서재 (이어 읽기·책갈피)', '/simple/mine/', '이 기기에 저장된 기록'),
     F('책 제목으로 찾기', '/simple/find/', '제목·지은이로 찾기', '🔍', 'find', '찾기'),
     F('최근 올라온 책', '/simple/recent/', `${lib.length}권`),
+    ...(mList.length ? [F('주요 자료', '/simple/main/', `${mList.length}가지`)] : []),
     F('스승별로 보기', '/simple/teachers/', `${tList.length}분`),
     F('수행전통별로 보기', '/simple/trads/', `${trList.length}곳`),
     F('출판사·단체별로 보기', '/simple/pubs/', `${pList.length}곳`),
     F('주제별로 보기', '/simple/topics/', `${topList.length}가지`),
     ...(audio.length ? [F('오디오북이 있는 책', '/simple/audio/', `${audio.length}권`)] : []),
+    F('법문 바로 듣기', '/simple/talks/', `선원 ${PLAYLISTS.length}곳`, '🎙'),
     F('소식', '/simple/news/', `글 ${NEWS.length}개`),
     F('법보시 도서관 소개', '/simple/about/', '도서관 소개·저작권 일러두기', 'ℹ️', 'about', '안내'),
     F('일반 화면으로', '/?ui=normal', '지금 사이트 화면', '↩', 'normal', '이동'),
   ] });
   sBooksPage('simple/recent/index.html', { title: '최근 올라온 책', path: [['최근 올라온 책', '/simple/recent/']], up: '/simple/', normal: '/library/', books: lib });
+  if (mList.length) {
+    sFolderPage('simple/main/index.html', { title: '주요 자료', path: [['주요 자료', '/simple/main/']], up: '/simple/', normal: '/library/', what: '묶음',
+      rows: mList.map((m, i) => F(m, `/simple/main/${i + 1}/`, `책 ${countMain(m)}권`, '📚')) });
+    mList.forEach((m, i) => sBooksPage(`simple/main/${i + 1}/index.html`, { title: m, path: [['주요 자료', '/simple/main/'], [m, '']], up: '/simple/main/', normal: `/library/?main=${slugT(m)}`, books: lib.filter(b => (b.main || []).includes(m)) }));
+  }
   sFolderPage('simple/teachers/index.html', { title: '스승별로 보기', path: [['스승별로 보기', '/simple/teachers/']], up: '/simple/', normal: '/library/', what: '스승',
     rows: tList.map(t => F(t.name, `/simple/teacher/${t.id}/`, `책 ${countTeacher(t.id)}권`, t.lay ? '👤' : '🙏')) });
   for (const t of tList) sBooksPage(`simple/teacher/${t.id}/index.html`, { title: t.name, path: [['스승별로 보기', '/simple/teachers/'], [t.name, '']], up: '/simple/teachers/', normal: `/teacher/${t.id}/`, books: lib.filter(b => tIds(b).includes(t.id)) });
@@ -998,6 +1006,25 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
   sFolderPage('simple/topics/index.html', { title: '주제별로 보기', path: [['주제별로 보기', '/simple/topics/']], up: '/simple/', normal: '/library/', what: '주제',
     rows: topList.map((x, i) => F(x.l, `/simple/topic/${i + 1}/`, `책 ${x.n}권`, '🏷')) });
   topList.forEach((x, i) => sBooksPage(`simple/topic/${i + 1}/index.html`, { title: x.l, path: [['주제별로 보기', '/simple/topics/'], [x.l, '']], up: '/simple/topics/', normal: `/library/?topic=${encodeURIComponent(x.l)}`, books: lib.filter(b => (b.topics || []).includes(x.l)) }));
+  // 법문 바로 듣기: 선원 → 재생목록 → 법문 줄(Enter 로 그 자리에서 재생) (운영자 요청, 2026-11-18)
+  sFolderPage('simple/talks/index.html', { title: '법문 바로 듣기', path: [['법문 바로 듣기', '/simple/talks/']], up: '/simple/', normal: '/dhammatalk/', what: '선원',
+    rows: PLAYLISTS.map(p => F(p.name, `/simple/talks/${p.id}/`, p.list.length ? `법문 ${p.list.length}개${p.subs.length > 1 ? ` · 재생목록 ${p.subs.length - 1}개` : ''}` : '목록을 불러오지 못함', '🎙')) });
+  for (const p of PLAYLISTS) {
+    const P1 = [['법문 바로 듣기', '/simple/talks/'], [p.name, `/simple/talks/${p.id}/`]];
+    sFolderPage(`simple/talks/${p.id}/index.html`, { title: p.name, path: P1, up: '/simple/talks/', normal: `/dhammatalk/?pl=${p.id}`, what: '재생목록',
+      rows: p.subs.map((x, i) => F(x.name, `/simple/talks/${p.id}/${i + 1}/`, `${x.list.length}개${x.id === 'all' ? ' · 최근 올린 순' : ' · 1강부터'}`, '🎧')) });
+    p.subs.forEach((x, i) => {
+      const nm = p.name + (x.id === 'all' ? '' : ' · ' + x.name);
+      const rows = x.list.map((e, j) => ({ href: e.audio, ic: '▶', kind: 'ep', data: { t: e.title, pl: nm, n: j + 1 }, cols: [e.title, e.date || '', e.duration || ''] }));
+      put(`simple/talks/${p.id}/${i + 1}/index.html`, simpleLayout({ title: nm, path: [...P1, [x.name, '']], up: `/simple/talks/${p.id}/`, normal: `/dhammatalk/?pl=${p.id}`, page: 'simple-talk', status: `법문 ${x.list.length}`,
+        body: `<section class="s-player" aria-label="법문 재생기"><p id="sNow" class="s-now" role="status" aria-live="polite">목록에서 법문을 골라 Enter 를 누르면 여기서 재생됩니다. 다 들으면 다음 법문으로 이어집니다.</p>
+<audio id="sAudio" preload="none"></audio>
+<div class="s-pbtns"><button type="button" class="s-btn" id="sPrev" aria-label="앞 법문">⏮ 앞 법문</button><button type="button" class="s-btn" id="sBack15" aria-label="15초 뒤로">⏪ 15초</button><button type="button" class="s-btn" id="sPlay" aria-label="재생">▶ 재생</button><button type="button" class="s-btn" id="sFwd15" aria-label="15초 앞으로">15초 ⏩</button><button type="button" class="s-btn" id="sNext" aria-label="다음 법문">다음 법문 ⏭</button>
+<label class="s-rate">빠르기 <select id="sRate">${[0.8, 1, 1.2, 1.5, 1.8, 2, 2.2, 2.5].map(r => `<option value="${r}"${r === 1 ? ' selected' : ''}>${r}배</option>`).join('')}</select></label>
+<span id="sTime" class="s-time" aria-hidden="true"></span></div></section>
+` + (rows.length ? sList(`${nm}, 법문 ${rows.length}개`, ['제목', '올린 날', '길이'], rows) : '<p>법문 목록을 불러오지 못했습니다. 잠시 뒤 다시 확인해 주세요.</p>') }));
+    });
+  }
   if (audio.length) sBooksPage('simple/audio/index.html', { title: '오디오북이 있는 책', path: [['오디오북이 있는 책', '/simple/audio/']], up: '/simple/', normal: '/library/', books: audio });
   // 책 하나 = 폴더
   for (const b of lib) {
