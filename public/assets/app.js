@@ -3083,6 +3083,7 @@ function srTtsPanel(force) {
 }
 // 단순 화면 첫 화면의 '로그인 · 회원가입' 줄: 로그인했으면 '내 계정: 아이디' 로 (운영자 요청, 2026-11-18)
 function sAcctRow() {
+  const tb = $('#sAcctTop'); if (tb && ACC.token) { tb.textContent = '👤 ' + ACC.id; tb.setAttribute('aria-label', `${ACC.id} 내 계정 (로그인됨)`); }  // 첫 화면 위쪽 단추 — 로그인했으면 아이디 (운영자 요청, 2026-11-19)
   if (!ACC.token) return; const li = $$('.s-list > li').find(x => (x.dataset.href || '').startsWith('/simple/account/')); if (!li) return;
   const c1 = $('.s-c1', li), c3 = $('.s-c3', li); if (c1 && !li.dataset.acc) { li.dataset.acc = 1; c1.textContent = `내 계정: ${ACC.id} (로그인됨)`; if (c3) c3.textContent = '로그아웃·비밀번호 바꾸기'; }
 }

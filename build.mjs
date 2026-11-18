@@ -1003,7 +1003,7 @@ function simpleLayout({ title, path = [], up = '', normal = '/', body, status = 
 <body data-page="${page}" class="simple-ui">
 <div class="s-bar" role="banner">
   <span class="ui-tog s-tog" role="group" aria-label="화면 방식"><span class="on" aria-current="true">단순</span><a href="${esc(normal)}${normal.includes('?') ? '&' : '?'}ui=normal" data-ui="normal" aria-label="일반 모드로 보기">일반</a></span>
-  ${up ? `<button type="button" class="s-btn" id="sBack" aria-label="뒤로 (이전 화면)">◀ 뒤로</button>` : ''}${/* 첫 화면(위 목록이 없는 화면)에는 '◀ 뒤로'를 두지 않음 — 운영자 요청 2026-11-18; 브라우저 뒤로 가기는 그대로 */''}
+  ${up ? `<button type="button" class="s-btn" id="sBack" aria-label="뒤로 (이전 화면)">◀ 뒤로</button>` : `<a class="s-btn" href="/simple/account/" id="sAcctTop" aria-label="로그인 · 회원가입">👤 로그인</a>`}${/* 첫 화면(위 목록이 없는 화면)에는 '◀ 뒤로'를 두지 않음 — 운영자 요청 2026-11-18; 브라우저 뒤로 가기는 그대로 */''}
   ${up ? `<a class="s-btn" href="${esc(up)}" id="sUp" aria-label="위로 (한 단계 위 목록)">▲ 위로</a>` : ''}
   <nav class="s-path" aria-label="지금 위치">${crumbs.map(([n, h], i) => i === crumbs.length - 1 && i ? `<span aria-current="page">${esc(n)}</span>` : `<a href="${esc(h)}">${esc(n)}</a>`).join('<span aria-hidden="true"> › </span>')}</nav>
 </div>
@@ -1051,7 +1051,6 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     // 가장 자주 쓰는 '내 서재'·'찾기'를 맨 위에 (운영자 요청, 2026-11-18)
     F('내 서재 (이어 읽기·TTS 이어 듣기·음성 녹음 이어 듣기·책갈피)', '/simple/mine/', '이 기기에 저장된 기록'),
     F('책 제목으로 찾기', '/simple/find/', '제목·지은이로 찾기', '🔍', 'find', '찾기'),
-    F('로그인 · 회원가입', '/simple/account/', '다른 기기에서도 이어 읽기·듣기', '👤', 'acct', '회원'),  // 로그인했으면 app.js sAcctRow 가 '내 계정: 아이디'로 (운영자 요청, 2026-11-18)
     F('최근 올라온 책', '/simple/recent/', `${lib.length}권`),
     ...(mList.length ? [F('주요 자료', '/simple/main/', `${mList.length}가지`)] : []),
     F('스승별로 보기', '/simple/teachers/', `${tList.length}분`),
@@ -1061,6 +1060,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     ...(audio.length ? [F('오디오북이 있는 책', '/simple/audio/', `${audio.length}권`)] : []),
     F('법문 바로 듣기', '/simple/talks/', `선원 ${PLAYLISTS.length}곳`, '🎙'),
     F('소식', '/simple/news/', `글 ${NEWS.length}개`),
+    F('로그인 · 회원가입', '/simple/account/', '다른 기기에서도 이어 읽기·듣기', '👤', 'acct', '회원'),  // 로그인했으면 app.js sAcctRow 가 '내 계정: 아이디'로 (운영자 요청, 2026-11-18 — 2026-11-19 맨 아래 소개 위로 내림, 위쪽 파란 줄에도 단추)
     F('법보시 도서관 소개', '/simple/about/', '도서관 소개·저작권 일러두기', 'ℹ️', 'about', '안내'),
     F('일반 화면으로', '/?ui=normal', '지금 사이트 화면', '↩', 'normal', '이동'),
   ] });
