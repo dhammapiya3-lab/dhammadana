@@ -1109,6 +1109,7 @@ p.r-center + .r-fig:has(img[src*="DL-0011-bridge."]){margin-bottom:2.6em}
 .par-or p{margin:0 0 .7em}
 .par-or .par-h{font-weight:700;letter-spacing:.02em}
 .par-or .par-gl{white-space:normal}
+.par-or .par-cite{font-style:italic;font-size:.82em;margin-bottom:.2em}  /* 원서 여백의 경전 출처 (DL-0015 'M. 26') */
 .reflow.par1 .par-or{background:var(--card,#fff);border:1px solid var(--line);border-radius:10px;padding:.7em .9em .4em;margin:-.4em 0 1.2em}
 .par-pg{display:block;font-family:var(--sans);font-size:11px;color:var(--ink-soft);opacity:.7;margin:-.3em 0 .4em}
 .reflow.par2 .par-pg{position:absolute;right:0;top:-1.4em;margin:0}

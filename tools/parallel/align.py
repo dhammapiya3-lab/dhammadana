@@ -29,6 +29,8 @@ ap.add_argument('--my-comma', action='store_true', help="미얀마어 원서의 
 ap.add_argument('--band', type=int, default=40, help='2단계 짝짓기 띠 너비(문장 수)')
 ap.add_argument('--seg', action='append', default=[], help='짝짓기를 넘지 않을 경계: "한국어 열쇠=원서 번호 또는 @글 첫머리" — 여러 권을 묶은 책에서 권마다 따로 짝지음 (DL-0001)')
 ap.add_argument('--ko-skip', action='append', default=[], help="원서에 없는 한국어 부분을 짝짓기에서 뺌: '시작 정규식|끝 정규식' (끝 문단은 남김, 끝을 비우면 책 끝까지) — 예 DL-0012 부록 2~역자 후기")
+ap.add_argument('--ko-none', action='append', default=[], help="이 정규식에 맞는 한국어 문단은 짝짓지 않음 — 예 DL-0015 '^>> 《' (한국어판이 인용 끝에 단 경전 출처 줄)")
+ap.add_argument('--kind-base', action='append', default=[], help="원서 문단 종류마다 짝짓기 점수에서 더 뺄 값: '종류=값' — 예 DL-0015 'note=0.15' (편자의 풀이 글은 한국어판이 일부만 옮겨 덜 끌어당기게)")
 ap.add_argument('--toc', action='store_true', help='차례도 줄마다 짝지음 — 한국어 차례(%% 문단)의 제목 줄 ↔ 원서 차례(k toc) 항목, 쪽 번호는 빼고 제목끼리 (운영자 요청, 2026-11-17)')
 ap.add_argument('--title', default=''); ap.add_argument('--by', default=''); ap.add_argument('--source', default='')
 A = ap.parse_args()
@@ -78,6 +80,7 @@ for sk in A.ko_skip:   # 원서에 없는 부분(--ko-skip)
 # 손으로 '짝 없음'으로 정한 문단(--pin "열쇠+…=")은 짝짓기 전에 뺌 — 뒤에서 빼면 그 문단이 둘레 문장을 밀어냄 (2026-11-17 DL-0012 검수)
 _nopin = {k for x in A.pin if x.endswith('=') for k in x[:-1].split('+') if k}
 if _nopin: KO_DP = [p for p in KO_DP if p['key'] not in _nopin]
+if A.ko_none: KO_DP = [p for p in KO_DP if not any(re.search(r, p['t']) for r in A.ko_none)]
 SPL = re.compile(r'(?<=[.?!。…။])(?:[”’"\')\]]*)\s+|\n')
 if A.my_comma: SPL = re.compile(r'(?<=[.?!。…။])(?:[”’"\')\]]*)\s+|\n|(?<=၊)\s+')
 MYEND = re.compile(r'(တယ်|ဘူး|ပဲ|ပေါ့|လဲ|တုန်း|နော်|လေ|တာ|မယ်|သလား|ကော|ရော|ရဲ့|တဲ့|ပါ|သည်)၊$')
@@ -95,6 +98,9 @@ def sents(t, lang):
             # 'e.g. ' 'i.e. ' 'Mr. ' 'U. ' 같은 약어 뒤나 다음 글자가 소문자면 나누지 않음
             nx = t[m.end():m.end() + 1]
             if re.search(r'\b(e\.g|i\.e|etc|Mr|Mrs|Dr|cf|vs|No)\.$', t[a:m.start() + 1].strip()) or (nx and nx.islower()): continue
+            # 경전·책 약어('B. Dict.' 'Vis. M.' 'S. XXII.' 'Dhp.' 'Comm.') 뒤, 생략 점('. . .')에서는 나누지 않음 (DL-0015)
+            if re.search(r'(?:^|[\s(])(?:[A-Z]|B|Vis|Dict|Comm|Dhp|Snp|Ud|Fund|Vol|ff|lit|Cf|[IVX]+)\.$', t[a:m.start() + 1].strip()) and not re.search(r'[a-z]{3}\.$', t[a:m.start() + 1].strip()[-5:]) or nx == '.': continue
+        if lang == 'en' and seg and not re.search(r'\w', seg) and out: out[-1] = (out[-1][0], a + len(t[a:b].rstrip())); a = m.end(); continue   # 점만 있는 조각은 앞 문장에
         if seg: out.append((a + len(t[a:b]) - len(t[a:b].lstrip()), a + len(t[a:b].rstrip())))
         a = m.end()
     if t[a:].strip(): out.append((a + len(t[a:]) - len(t[a:].lstrip()), len(t.rstrip())))
@@ -106,16 +112,26 @@ for i, p in enumerate(KO_DP):
     for a, b in sents(p['t'], 'ko'):
         if plain(p['t'][a:b]).strip(): KS.append((i, a, b, plain(p['t'][a:b]).strip()))
 ORDER = list(range(len(ORIG))); MOVED = {}
-def _oi(x): return next(i for i, p in enumerate(ORIG) if p['t'].startswith(x[1:])) if x.startswith('@') else int(x)
+def _oi(x):
+    """원서 문단: 번호, '@글 첫머리', 같은 첫머리가 여럿이면 '@글 첫머리~N'(N 번째, 1부터 — DL-0015 'CONJOINED WITH OTHER FACTORS')"""
+    if not x.startswith('@'): return int(x)
+    m = re.match(r'@(.*)~(\d+)$', x)
+    t, n = (m.group(1), int(m.group(2))) if m else (x[1:], 1)
+    L = [i for i, p in enumerate(ORIG) if p['t'].startswith(t)]
+    L = [i for i in L if ORIG[i]['k'] != 'toc'] or L   # 원서 차례 줄보다 본문 제목을 먼저
+    return L[n - 1]
 for mv in A.move:
     ab, c = mv.split('>'); a, b = map(int, ab.split('-')); c = _oi(c)
     blk = [i for i in ORDER if a <= i <= b]; rest = [i for i in ORDER if not a <= i <= b]
     k = rest.index(c); ORDER = rest[:k] + blk + rest[k:]
     for i in blk: MOVED[i] = (a, b)
 ES = []
+# 원서 쪽만 '짝 없음'(--pin "=원서 번호 또는 @글 첫머리+…")도 짝짓기 전에 뺌 — 한국어판에 없는 원서 풀이 글이 둘레 문장을 끌어당기지 않게 (DL-0015)
+_onopin = {_oi(k) for x in A.pin if x.startswith('=') for k in x[1:].split('+') if k}
 for i in ORDER:
     p = ORIG[i]
-    if p['k'] in ('toc', 'gl', 'pq', 'fn', 'sep'): continue      # 원서 차례 쪽·용어 풀이·인용 상자(본문을 크게 다시 실은 것)는 차례 짝짓기에서 뺌 (한국어 차례도 %% 라 뺌)
+    if i in _onopin: continue
+    if p['k'] in ('toc', 'gl', 'pq', 'fn', 'sep', 'cite'): continue      # 원서 차례 쪽·용어 풀이·인용 상자(본문을 크게 다시 실은 것)·여백 출처(cite)는 문장 짝짓기에서 뺌 (한국어 차례도 %% 라 뺌)
     for a, b in sents(p['t'], 'en'):
         if plain(p['t'][a:b]).strip(): ES.append((i, a, b, plain(p['t'][a:b]).strip()))
 # --seg: 경계 앞뒤 문장은 서로 짝짓지 않음 (뜻 비슷함을 -1 로)
@@ -123,7 +139,7 @@ def _kt(k): return tuple(map(int, k.split(':')))
 _SEG = []
 for sg in A.seg:
     kk, oo = sg.split('=')
-    oi = next(i for i, p in enumerate(ORIG) if p['t'].startswith(oo[1:])) if oo.startswith('@') else int(oo)
+    oi = _oi(oo)
     _SEG.append((_kt(kk), oi))
 KSg = [sum(1 for k, _ in _SEG if _kt(KO_DP[x[0]]['key']) >= k) for x in KS]
 _POS = {i: n for n, i in enumerate(ORDER)}   # --move 뒤의 원서 순서
@@ -144,7 +160,9 @@ else:
 N, M = len(KS), len(ES)
 S = KE @ EE.T
 if _SEG: S[np.array(KSg)[:, None] != np.array(ESg)[None, :]] = -1.0
-S1 = S - A.base   # 1단계(대강의 길)용
+KB = {k: float(v) for k, v in (x.split('=') for x in A.kind_base)}
+PEN = np.array([KB.get(ORIG[x[0]]['k'], 0.0) for x in ES]) if ES else np.zeros(0)
+S1 = S - A.base - PEN[None, :]   # 1단계(대강의 길)용
 
 # ---------- 1단계: 대강의 길(1:1·건너뛰기)로 띠 찾기 ----------
 SK = 0.05
@@ -190,7 +208,7 @@ for i in range(0, N + 1):
             pi, pj = i - a, j - b
             if pi < 0 or pj < 0 or (pi, pj) not in V: continue
             if a and b:
-                sc = (sim(pi, i, pj, j) - A.base) * (a + b) / 2 - MERGE * (max(a, b) - 1 + (a > 1 and b > 1))
+                sc = (sim(pi, i, pj, j) - A.base - (PEN[pj:j].max() if j > pj and KB else 0.0)) * (a + b) / 2 - MERGE * (max(a, b) - 1 + (a > 1 and b > 1))
             else:
                 sc = SKIP
             v = V[(pi, pj)] + sc
@@ -224,8 +242,7 @@ for pin in A.pin:
     kk, oo = pin.split('=')
     kk = [x for x in kk.split('+') if x]
     def oidx(x):   # 원서 문단: 번호 또는 '@글 첫머리'
-        if x.startswith('@'): return next(i for i, p in enumerate(ORIG) if p['t'].startswith(x[1:]))
-        return int(x)
+        return _oi(x)
     oo = [oidx(x) for x in oo.split('+') if x]
     for g in out:
         g['ko'] = [k for k in g['ko'] if k not in kk]; g['or'] = [o for o in g['or'] if o not in oo]
@@ -246,6 +263,13 @@ for g in out:
         h['or'] = sorted(set(h['or']) | set(g['or'])); h['s'] += g['s']
     else: _m.append(g)
 out[:] = _m
+# 여백 출처(cite, DL-0015 'M. 26'): 바로 다음 원서 문단이 든 묶음 앞에 붙임 (문단 나란히 보기에서 출처가 보이게)
+_og = {o: g for g in out if not g.get('toc') for o in g['or']}
+for i, p in enumerate(ORIG):
+    if p['k'] != 'cite': continue
+    j = i + 1
+    while j < len(ORIG) and ORIG[j]['k'] == 'cite': j += 1
+    if j < len(ORIG) and j in _og and i not in _og[j]['or']: _og[j]['or'] = sorted(set(_og[j]['or']) | {i})
 for g in out:   # --move 로 옮긴 원서 문단과 짝지은 묶음: 순서가 다르다는 메모
     if g['or'] and not g.get('pin') and all(o in MOVED for o in g['or']):
         o = ORIG[g['or'][0]]

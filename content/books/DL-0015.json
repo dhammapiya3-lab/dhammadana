@@ -148,5 +148,15 @@
   "added": "2026-11-09",
   "order": null,
   "hidden": false,
-  "hide_update": false
+  "hide_update": false,
+  "parallel_editions": [
+    {
+      "lang": "en",
+      "title": "The Word of the Buddha — An Outline of the teaching of the Buddha in the words of the Pali canon",
+      "by": "Compiled, translated, and explained by Nyanatiloka",
+      "edition": "Buddhist Publication Society, Kandy, Ceylon · 14판(1967년 12월 서문)을 스캔·글자 인식해 다시 짠 전자판 PDF (110쪽)",
+      "url": "https://www.urbandharma.org/pdf/wordofbuddha.pdf",
+      "note": "한국어판은 16판(1981)을 옮긴 것이라 몇 곳 글이 다를 수 있음. 전자판은 원래 각주를 쪽 여백의 출처 표시로 바꿈(전자판 서문)."
+    }
+  ]
 }

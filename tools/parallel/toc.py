@@ -43,7 +43,7 @@ def toc_group(body, orig, groups, enc, log=print, book=None):
     ET = []
     for i, p in enumerate(orig):
         if p['k'] != 'toc': continue
-        m = re.match(r'^(.*?)(?:,?\s*[0-9ivxlc၀-၉]+)?\s*$', p['t'])   # ၀-၉: 미얀마 숫자 쪽 번호 (DL-0010)
+        m = re.match(r'^(.*?)(?:,?\s*[0-9ivxlc၀-၉]+|,\s*[IVXLC]+)?\s*$', p['t'])   # 대문자 로마 숫자 쪽(', VII')은 쉼표 뒤만 (DL-0015)   # ၀-၉: 미얀마 숫자 쪽 번호 (DL-0010)
         ET.append((i, 0, m.end(1), m.group(1)))
     if not KT or not ET: log('차례: 한국어 차례', len(KT), '원서 차례', len(ET), '— 짝지을 것 없음'); return None
     ET = [x for x in ET if not re.fullmatch(r'(Table of )?Contents', x[3].strip(), flags=re.I)]   # 원서 차례 쪽 자기 제목
@@ -68,7 +68,11 @@ def toc_group(body, orig, groups, enc, log=print, book=None):
         for j, y in enumerate(ET):
             if nz(y[3]) in hl.get(nz(x[3]), ()): TS[i, j] = max(TS[i, j], 0.95); link += 1
     pins = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'toc_pins.json'))).get(book, []) if book else []
-    for kp, ep in pins:   # 손으로 정한 짝(toc_pins.json)
+    for kp, ep in pins:   # 손으로 정한 짝(toc_pins.json) — 원서 쪽이 빈 글("")이면 그 한국어 줄은 짝 없음
+        if not ep:
+            for i, x in enumerate(KT):
+                if _plain(x[3]).strip() == kp: TS[i, :] = -1.0; log('  짝 없음으로 정함:', kp)
+            continue
         for i, x in enumerate(KT):
             for j, y in enumerate(ET):
                 if _plain(x[3]).strip() == kp and y[3].strip() == ep: TS[i, :] = -1.0; TS[:, j] = -1.0; TS[i, j] = 1.0; log('  손으로 정한 짝:', kp, '↔', ep)

@@ -1,41 +1,171 @@
 {
-  "_설명": "원서 대조 차례에서 손으로 정한 짝 — 책마다 [한국어 차례 제목, 원서 차례 제목(쪽 번호 빼고)]. toc.py 가 읽음 (2026-11-17)",
-  "DL-0013": [
-    [
-      "1. 사띠빳타나 수행",
-      "Mindfulness Meditation (Satipaṭṭhāna)"
-    ]
-  ],
-  "DL-0012": [
-    [
-      "제6장 : 마음의 기능을 예리하게 하는",
-      "Nine Ways to Sharpen the Mental Faculties"
-    ],
-    [
-      "부록 1",
-      "Appendix—Meditation Guidelines"
-    ]
-  ],
-  "DL-0003": [
-    [
-      "60. 웨단따 종단의 유아견",
-      "[ဃ] ဝေဒန္တဂိုဏ်း၏ အတ္တဝါဒ"
-    ],
-    [
-      "61. 붓다의 무아견",
-      "[င] ဗုဒ္ဓ၏ အနတ္တဝါဒ"
-    ],
-    [
-      "62. 상캬닷사나의 유아견",
-      "[စ] သင်္ချဒဿန၏ အတ္တဝါဒ"
-    ],
-    [
-      "63. 요가와다",
-      "ယောဂဝါဒ"
-    ],
-    [
-      "64. 요가 수행법",
-      "ယောဂကျင့်စဉ်"
-    ]
+ "_설명": "원서 대조 차례에서 손으로 정한 짝 — 책마다 [한국어 차례 제목, 원서 차례 제목(쪽 번호 빼고)]. toc.py 가 읽음 (2026-11-17)",
+ "DL-0013": [
+  [
+   "1. 사띠빳타나 수행",
+   "Mindfulness Meditation (Satipaṭṭhāna)"
   ]
+ ],
+ "DL-0012": [
+  [
+   "제6장 : 마음의 기능을 예리하게 하는",
+   "Nine Ways to Sharpen the Mental Faculties"
+  ],
+  [
+   "부록 1",
+   "Appendix—Meditation Guidelines"
+  ]
+ ],
+ "DL-0003": [
+  [
+   "60. 웨단따 종단의 유아견",
+   "[ဃ] ဝေဒန္တဂိုဏ်း၏ အတ္တဝါဒ"
+  ],
+  [
+   "61. 붓다의 무아견",
+   "[င] ဗုဒ္ဓ၏ အနတ္တဝါဒ"
+  ],
+  [
+   "62. 상캬닷사나의 유아견",
+   "[စ] သင်္ချဒဿန၏ အတ္တဝါဒ"
+  ],
+  [
+   "63. 요가와다",
+   "ယောဂဝါဒ"
+  ],
+  [
+   "64. 요가 수행법",
+   "ယောဂကျင့်စဉ်"
+  ]
+ ],
+ "DL-0015": [
+  [
+   "책머리에(11판 서문) 。 7",
+   "PREFACE TO THE ELEVENTH EDITION"
+  ],
+  [
+   "14판 서문 。 10",
+   "PREFACE TO THE 14TH EDITION"
+  ],
+  [
+   "1장. 서문",
+   "INTRODUCTION"
+  ],
+  [
+   "1. 삼보三寶 - 불·법·승佛法僧",
+   "The Buddha"
+  ],
+  [
+   "2. 세 의지처[三歸依]",
+   "The Threefold Refuge"
+  ],
+  [
+   "3. 오계五戒",
+   "The Five Precepts"
+  ],
+  [
+   "2장. 네 가지 고귀한 진리 - 사성제四聖諦",
+   "THE FOUR NOBLE TRUTHS"
+  ],
+  [
+   "1. ‘괴로움’의 고귀한 진리[苦聖諦]",
+   "I. THE NOBLE TRUTH OF SUFFERING"
+  ],
+  [
+   "2. ‘괴로움의 발생’의 고귀한 진리[苦集聖諦]",
+   "II. THE NOBLE TRUTH OF THE ORIGIN OF SUFFERING"
+  ],
+  [
+   "3. ‘괴로움의 소멸’의 고귀한 진리[苦滅聖諦]",
+   "III. THE NOBLE TRUTH OF THE EXTINCTION OF SUFFERING"
+  ],
+  [
+   "4. ‘괴로움의 소멸에 이르는 길’의 고귀한 진리[苦滅道聖諦]",
+   "IV. THE NOBLE TRUTH OF THE PATH THAT LEADS TO THE EXTINCTION OF SUFFERING"
+  ],
+  [
+   "바른 견해[正見] 。 77",
+   "RIGHT UNDERSTANDING"
+  ],
+  [
+   "바른 사유[正思惟] 。 109",
+   "RIGHT THOUGHT"
+  ],
+  [
+   "바른 언어[正語] 。 111",
+   "RIGHT SPEECH"
+  ],
+  [
+   "바른 행위[正業] 。 114",
+   "RIGHT ACTION"
+  ],
+  [
+   "바른 생계[正命] 。 117",
+   "RIGHT LIVELIHOOD"
+  ],
+  [
+   "바른 노력[正精進] 。 118",
+   "RIGHT EFFORT"
+  ],
+  [
+   "바른 마음챙김[正念] 。 123",
+   "RIGHT MINDFULNESS"
+  ],
+  [
+   "바른 마음집중[正定] 。 184",
+   "RIGHT CONCENTRATION"
+  ],
+  [
+   "3장. 수행의 단계에서 팔정도의 점진적인 향상",
+   "GRADUAL DEVELOPMENT OF THE EIGHTFOLD PATH IN THE PROGRESS OF THE DISCIPLE"
+  ],
+  [
+   "1. 신심과 바른 사유 - 두 번째 덕목",
+   "Confidence and Right Thought"
+  ],
+  [
+   "2. 계戒 - 세 번째, 네 번째, 다섯 번째 덕목",
+   "Morality"
+  ],
+  [
+   "3. 감각기관의 제어[正精進] - 여섯 번째 덕목",
+   "Control of the Senses"
+  ],
+  [
+   "4. 바른 마음챙김[正念]과 분명한 앎[正知] - 일곱 번째 덕목",
+   "Mindfulness and Clear Comprehension"
+  ],
+  [
+   "5. 바른 마음집중[正定] - 여덟 번째 덕목",
+   "The Absorptions"
+  ],
+  [
+   "6. 바른 견해[正見: 위빠사나] - 첫 번째 덕목",
+   "Insight"
+  ],
+  [
+   "7. 열반涅槃",
+   "Nibbâna"
+  ],
+  [
+   "8. 아라한",
+   "The Silent Thinker"
+  ],
+  [
+   "9. 청정한 삶[梵行]의 진정한 목적",
+   "The True Goal"
+  ],
+  [
+   "추천의 글 。 12",
+   ""
+  ],
+  [
+   "초판 역자후기 。 215",
+   ""
+  ],
+  [
+   "편저자 및 역자 소개 。 220",
+   ""
+  ]
+ ]
 }
