@@ -17,7 +17,7 @@
 
   python3 tools/parallel/my_dl0001.py
   → tools/out/parallel/DL-0001.my.paras.json (align.py 입력)
-  → tools/out/parallel/DL-0001_미얀마어_원서.txt (운영자에게 보내는 글 파일, 사이트에는 올리지 않음)
+  → tools/out/parallel/<원서 제목>__AI 필사.txt 권마다 다섯 파일 (운영자에게 보내는 글 파일, 사이트에는 올리지 않음)
 """
 import os, re, json, glob
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -57,15 +57,12 @@ for vol, title, num in VOLS:
             orig.append({'pg': label, 'pdf': str(pdf), 'k': k, 't': t}); txt_out.append(t)
 
 json.dump(orig, open(os.path.join(OUT, 'DL-0001.my.paras.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
-open(os.path.join(OUT, 'DL-0001_미얀마어_원서.txt'), 'w', encoding='utf-8').write(
-    'ဒေါက်တာ အရှင်နန္ဒမာလာဘိဝံသ — 『난다말라비왐사 큰스님 가르침』의 미얀마어 원서 다섯 권\n'
-    'dhammadownload.com 스캔본(PDF) 쪽 그림을 보며 옮겨 적은 글. 쪽 표시: 책 쪽 (PDF 쪽)\n\n'
-    + '\n\n'.join(txt_out) + '\n')
-# 권마다 따로 (운영자 요청 2026-11-18): DL-0001_미얀마어_원서_N_제목.txt
+# 권마다 따로, 이름은 '원서 제목__AI 필사.txt' (운영자 요청 2026-11-18)
+FN = ['အကာကိုပစ်၍ အနှစ်ကိုရှာ', 'မဟာဒါန', 'မေတ္တာသုတ် အနှစ်ချုပ်', 'ဉာတပရိညာ', 'ရှာဖွေခြင်းနှင့် ရရှိခြင်း']
 KO = ['Ⅰ', 'Ⅱ', 'Ⅲ', 'Ⅳ', 'Ⅴ']
 for n, (vol, title, num) in enumerate(VOLS):
     part = txt_out[vol_start[n]:(vol_start[n + 1] if n + 1 < len(VOLS) else len(txt_out))]
-    open(os.path.join(OUT, f'DL-0001_미얀마어_원서_{n + 1}_{title}.txt'), 'w', encoding='utf-8').write(
+    open(os.path.join(OUT, f'{FN[n]}__AI 필사.txt'), 'w', encoding='utf-8').write(
         f'ဒေါက်တာ အရှင်နန္ဒမာလာဘိဝံသ {num} 『{title}』 — 『난다말라비왐사 큰스님 가르침』 {KO[n]}장의 미얀마어 원서\n'
         'dhammadownload.com 스캔본(PDF) 쪽 그림을 보며 옮겨 적은 글. 쪽 표시: 책 쪽 (PDF 쪽)\n\n'
         + '\n\n'.join(part) + '\n')

@@ -10,7 +10,7 @@
 
   python3 tools/parallel/my_dl0010.py
   → tools/out/parallel/DL-0010.my.paras.json (align.py 입력)
-  → tools/out/parallel/DL-0010_미얀마어_원서.txt (운영자에게 보내는 글 파일, 사이트에는 올리지 않음)
+  → tools/out/parallel/သဘောထားမှန်မှ အားထုတ်ပါ__AI 필사.txt (운영자에게 보내는 글 파일, 사이트에는 올리지 않음)
 """
 import os, re, json, glob
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -47,7 +47,7 @@ for f in sorted(glob.glob(os.path.join(SRC, '[0-9][0-9][0-9].txt'))):
         orig.append({'pg': pg, 'pdf': str(pdf), 'k': k, 't': t}); txt_out.append(t)
 
 json.dump(orig, open(os.path.join(OUT, 'DL-0010.my.paras.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
-open(os.path.join(OUT, 'DL-0010_미얀마어_원서.txt'), 'w', encoding='utf-8').write(
+open(os.path.join(OUT, 'သဘောထားမှန်မှ အားထုတ်ပါ__AI 필사.txt'), 'w', encoding='utf-8').write(
     'သဘောထားမှန်မှ အားထုတ်ပါ — အရှင်တေဇနိယ (ရွှေဥမင်)\n'
     '미얀마어 원서 (ယုံကြည်ချက်စာပေ, 2판 2009) — 스캔본 쪽 그림을 보며 옮겨 적은 글. 쪽 표시: 책 쪽 (PDF 쪽)\n\n'
     + '\n\n'.join(txt_out) + '\n')

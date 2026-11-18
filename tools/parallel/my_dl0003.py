@@ -11,7 +11,7 @@
 
   python3 tools/parallel/my_dl0003.py
   → tools/out/parallel/DL-0003.my.paras.json (align.py 입력)
-  → tools/out/parallel/DL-0003_미얀마어_원서.txt (운영자에게 보내는 글 파일, 사이트에는 올리지 않음)
+  → tools/out/parallel/ချမ်းသာကို ရှာဖွေခြင်း__AI 필사.txt (운영자에게 보내는 글 파일, 사이트에는 올리지 않음)
 """
 import os, re, json, glob
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -57,7 +57,7 @@ for f in files:
         orig.append({'pg': pg, 'pdf': str(pdf), 'k': k, 't': t}); txt_out.append(t)
 
 json.dump(orig, open(os.path.join(OUT, 'DL-0003.my.paras.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
-open(os.path.join(OUT, 'DL-0003_미얀마어_원서.txt'), 'w', encoding='utf-8').write(
+open(os.path.join(OUT, 'ချမ်းသာကို ရှာဖွေခြင်း__AI 필사.txt'), 'w', encoding='utf-8').write(
     'ချမ်းသာကို ရှာဖွေခြင်း — ဦးရွှေအောင်\n'
     '미얀마어 원서 (ရာပြည့်စာအုပ်တိုက် 4쇄, 2004년 11월) — 스캔본 쪽 그림을 보며 옮겨 적은 글. '
     '스캔이 가장자리를 자른 곳은 1995년 초판(နှလုံးလှစာပေ)으로 채움. 쪽 표시: 책 쪽 (PDF 쪽)\n\n'

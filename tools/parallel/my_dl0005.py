@@ -195,5 +195,5 @@ for o in OR:
     if lab != last: lines += [f'=== {lab} ===', '']; last = lab
     lines += [o['t'], '']
 os.makedirs(os.path.join(REPO, 'tools/out/parallel'), exist_ok=True)
-open(os.path.join(REPO, 'tools/out/parallel/DL-0005_미얀마어_원서.txt'), 'w').write('\n'.join(lines))
-print('글 파일 → tools/out/parallel/DL-0005_미얀마어_원서.txt')
+open(os.path.join(REPO, 'tools/out/parallel/သိစရာ၊ တွေးစရာ__AI 필사.txt'), 'w').write('\n'.join(lines))
+print('글 파일 → tools/out/parallel/သိစရာ၊ တွေးစရာ__AI 필사.txt')
