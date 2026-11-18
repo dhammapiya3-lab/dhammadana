@@ -124,5 +124,12 @@
   "added": "2026-11-08",
   "order": null,
   "hidden": false,
-  "hide_update": false
+  "hide_update": false,
+  "originals": [
+    {
+      "lang": "영어",
+      "mode": "file",
+      "url": "orig/DL-0011/DL-0011_원서_영어.pdf"
+    }
+  ]
 }
