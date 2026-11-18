@@ -1,0 +1,1075 @@
+[
+ {
+  "img": "images/37-Vattanguli-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     330,
+     580,
+     388
+    ],
+    "ko": "“살아 있는 불상”",
+    "cover": [
+     228,
+     204,
+     164
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     220,
+     388,
+     580,
+     428
+    ],
+    "ko": "왓땅굴리 왕 자따까",
+    "cover": [
+     227,
+     202,
+     163
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     150,
+     370,
+     300
+    ],
+    "ko": "꼬살라의 빠세나디 왕이 향과 꽃다발을 들고 제따와나에 왔습니다. 처소가 비어 있자 왕과 백성들은 크게 동요했습니다. 깨달은 분이 계시지 않으니 세상은 텅 빈 듯, 의지처도 보호자도 없는 것 같았습니다.",
+    "cover": [
+     222,
+     195,
+     157
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     548,
+     318,
+     790,
+     440
+    ],
+    "ko": "빠세나디 왕은 공경할 완전한 불상을 만들게 해 달라고 청했습니다. 스승께서 허락하시며, 작은 헌신에서도 큰 위엄이 나온다고 말씀하셨습니다. 옛날 한 지혜로운 이가 깨진 흙 손가락을 고쳐 큰 힘을 얻은 것처럼.",
+    "cover": [
+     217,
+     180,
+     107
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     50,
+     372,
+     148
+    ],
+    "ko": "옛날 반두마나와라는 상인이 앙가와띠의 아름다운 정사에 들어갔습니다. 바닥에서 불상의 깨진 손가락을 발견한 그는 드문 기회임을 알고 공덕을 쌓기로 했습니다.",
+    "cover": [
+     222,
+     200,
+     166
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     270,
+     46,
+     530,
+     84
+    ],
+    "ko": "공덕의 물결",
+    "cover": [
+     214,
+     191,
+     158
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     248,
+     350,
+     552,
+     440
+    ],
+    "ko": "그는 손수 흙을 빻아 당밀과 기름에 개어 손가락을 원래대로 고쳤습니다. 그리고 한 여인에게 돈 한 닢을 주어 고친 불상 앞에 등불 공양을 올리게 했습니다.",
+    "cover": [
+     219,
+     197,
+     162
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     466,
+     50,
+     750,
+     200
+    ],
+    "ko": "불상 앞에 앉은 보살은 깊은 서원을 세웠습니다. 완전히 깨달은 분이 되기를, 힘세고 아름답고 오래 살기를, 그리고 도둑과 무서운 적에게 결코 해를 입지 않기를.",
+    "cover": [
+     226,
+     205,
+     169
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     250,
+     344,
+     400
+    ],
+    "ko": "오랜 천상의 삶을 마친 그는 바라나시의 왓땅굴리 왕자로 태어났습니다. 놀라운 위엄을 지녀, 어려서 놀 때에도 손가락 하나만 들면 다른 이들을 잠잠하게 했습니다.",
+    "cover": [
+     226,
+     206,
+     175
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     258,
+     50,
+     546,
+     200
+    ],
+    "ko": "부처가 되기 위한 보시의 재물을 구하려고 왓땅굴리 왕은 잠부디빠의 왕 백 명에게 공물을 요구했습니다. 자존심이 상한 왕들은 18 악코히니의 군사를 모아 전쟁에 나섰습니다.",
+    "cover": [
+     224,
+     204,
+     170
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     508,
+     300,
+     784,
+     440
+    ],
+    "ko": "왓땅굴리는 대신들에게 싸우지 말라 하고 홀로 군대에 맞섰습니다. 손가락 하나를 들자, 그 업의 위엄에 왕들과 코끼리와 말이 빙글 돌아 엎어지며 모두 잠잠해졌습니다.",
+    "cover": [
+     226,
+     202,
+     167
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     30,
+     344,
+     205
+    ],
+    "ko": "자비심이 가득한 그는 패한 왕들의 안전을 지켜 주었습니다. 성대한 음식을 대접하고 오계를 주어, 그 공덕의 힘으로 사나운 적들을 헌신하는 벗으로 바꾸었습니다.",
+    "cover": [
+     224,
+     200,
+     167
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     380,
+     610,
+     440
+    ],
+    "ko": "자기가 무적인 까닭을 헤아리자 천상 거처가 따뜻해졌습니다. 천신들의 왕 삭까가 찬란한 빛 속에 내려와, 그런 큰 힘을 낳은 지난 공덕을 물었습니다.",
+    "cover": [
+     222,
+     198,
+     160
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     544,
+     20,
+     782,
+     150
+    ],
+    "ko": "삭까의 힘을 입어 보살은 전생을 기억해 냈습니다. 그는 자신이 앙가와띠의 상인이었으며, 불상의 깨진 흙 손가락을 당밀과 기름으로 고쳤다고 밝혔습니다.",
+    "cover": [
+     221,
+     204,
+     172
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     260,
+     48,
+     540,
+     86
+    ],
+    "ko": "공덕의 표: 1부",
+    "cover": [
+     230,
+     201,
+     123
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     175,
+     116,
+     345,
+     148
+    ],
+    "ko": "세상의 지위",
+    "cover": [
+     178,
+     100,
+     56
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     440,
+     116,
+     640,
+     148
+    ],
+    "ko": "몸의 모습",
+    "cover": [
+     176,
+     104,
+     60
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     140,
+     166,
+     360,
+     314
+    ],
+    "ko": "• 끄샤뜨리야나 바라문\n   가문에만 태어남\n• 큰 재물\n• 하인들의 시중",
+    "cover": [
+     234,
+     217,
+     188
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     436,
+     166,
+     660,
+     320
+    ],
+    "ko": "• 균형 잡힌 몸\n• 금빛 피부\n• 아름답고 건강함\n• 오래 삶",
+    "cover": [
+     234,
+     216,
+     187
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     0,
+     334,
+     346,
+     440
+    ],
+    "ko": "보살이 공덕의 이치를 설명했습니다. 불상을 만들거나 고치는 행위 하나가 세상의 높은 지위와 빛나는 아름다움, 원한 없는 삶을 보장합니다.",
+    "cover": [
+     230,
+     199,
+     123
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     260,
+     48,
+     540,
+     86
+    ],
+    "ko": "공덕의 표: 2부",
+    "cover": [
+     228,
+     198,
+     121
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     175,
+     164,
+     345,
+     198
+    ],
+    "ko": "천상에 태어남",
+    "cover": [
+     172,
+     100,
+     57
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     440,
+     164,
+     640,
+     198
+    ],
+    "ko": "궁극의 성취",
+    "cover": [
+     170,
+     106,
+     60
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     140,
+     210,
+     360,
+     330
+    ],
+    "ko": "• 지옥에 나지 않음\n• 천신으로 태어남\n• 천신 무리에 둘러싸임",
+    "cover": [
+     236,
+     218,
+     189
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     436,
+     210,
+     660,
+     330
+    ],
+    "ko": "• 일체지\n• 나고 죽음의 바다를 건넘\n• 열반을 이룸",
+    "cover": [
+     235,
+     217,
+     186
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     0,
+     332,
+     346,
+     440
+    ],
+    "ko": "이 공덕은 세상을 넘어 지옥에 나지 않게 하고 천상의 기쁨을 줍니다. 마침내 윤회를 건너는 힘이 되어 완전한 해탈인 열반에 이르게 합니다.",
+    "cover": [
+     227,
+     194,
+     123
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     508,
+     305,
+     790,
+     432
+    ],
+    "ko": "불상을 공경한 놀라운 결과를 들은 삭까가 왕들에게 용서를 빌라고 타일렀습니다. 왕 백 명은 기쁘게 나라로 돌아가, 해마다 재물과 보석을 왓땅굴리에게 바쳤습니다.",
+    "cover": [
+     226,
+     205,
+     173
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     165,
+     626,
+     290
+    ],
+    "ko": "공덕의 이치:\n왓땅굴리라자 자따까는 깊은 업의 법칙을 보여 줍니다. 무적의 왕권과 천상의 태어남과 궁극의 해탈이라는 거대한 힘이, 작은 헌신의 행위 하나에 모은 마음에서 곧바로 나옵니다.",
+    "cover": [
+     227,
+     209,
+     179
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     494,
+     110,
+     726,
+     330
+    ],
+    "ko": "꼬살라의 빠세나디 왕\n\n왕은 부처님의 가르침을 뒷날까지 지키고자 했습니다. 부처님께서 불상을 만들도록 허락하시니, 온 세상이 번영하게 되었습니다.",
+    "cover": [
+     231,
+     212,
+     180
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     330,
+     92,
+     466,
+     142
+    ],
+    "ko": "삿다(믿음)",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     186,
+     330,
+     616,
+     405
+    ],
+    "ko": "공덕은 재물이 아니라 믿음(saddhā)에서 생깁니다. 소박한 흙이든 귀한 보석이든, 능력껏 불상을 만들면 상상할 수 없는 열매를 맺습니다.",
+    "cover": [
+     223,
+     203,
+     172
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     170,
+     552,
+     278
+    ],
+    "ko": "이 공덕은 셈으로 헤아릴 수 없습니다. 네 대륙의 콩을 세는 것보다, 뗏목으로 모든 물을 되는 것보다, 하늘을 금은으로 가득 채우는 것보다 큽니다.",
+    "cover": [
+     217,
+     201,
+     173
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     350,
+     580,
+     410
+    ],
+    "ko": "왕이 훌륭한 전단향 나무를 베어 왔습니다. 장인들이 장엄한 불상을 새기고, 향기로운 기름을 바르고, 붉은 빛깔의 천상 천을 입혔습니다.",
+    "cover": [
+     228,
+     207,
+     175
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-21-Original.jpg",
+  "boxes": []
+ },
+ {
+  "img": "images/37-Vattanguli-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     288,
+     272,
+     666,
+     392
+    ],
+    "ko": "부처님께서 팔을 뻗으시다\n붉은 번개와 에라와나 코끼리의 코 같은 오른팔을 뻗어 불상을 멈추게 하시고 명하셨습니다. “나의 가르침(sāsana) 안에 머물라.” 그리고 5천 년 동안 가르침을 불상에 맡기셨습니다.",
+    "cover": [
+     227,
+     207,
+     175
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     520,
+     320,
+     774,
+     416
+    ],
+    "ko": "생명 없는 불상이 스승께 예를 올리는 것을 보고 대중이 기뻐했습니다. 큰 공양 뒤에 빠세나디가 여쭈었습니다. “불상을 만드는 이는 앞으로 어떻게 됩니까? 그 열매를 듣고 싶습니다.”",
+    "cover": [
+     217,
+     191,
+     151
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     146,
+     32,
+     654,
+     150
+    ],
+    "ko": "업의 표: 피함\n믿음으로 불상을 만드는 이는 괴로운 세상에 나지 않습니다. 몹시 뜨거운 산지와 지옥과 차가운 로깐따라 지옥, 아귀의 세계, 심한 몸의 병에서 온전히 보호받습니다.",
+    "cover": [
+     230,
+     210,
+     179
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     52,
+     552,
+     150
+    ],
+    "ko": "업의 표: 세상의 보상\n윤회하는 동안 그들은 큰 기쁨을 누립니다. 높은 가문에 태어나 빛나는 아름다움을 지니고, 천상의 난다나 동산에서 천신들과 하늘 음악 속에 노닙니다.",
+    "cover": [
+     229,
+     215,
+     182
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     270,
+     315,
+     532,
+     398
+    ],
+    "ko": "업의 표: 궁극의 성취\n마지막 보상은 가장 깊은 서원과 꼭 맞습니다. 불상을 만든 이는 제자(sāvaka)나 벽지불이 되거나, 위없는 부처의 깨달음과 마지막 열반에 이를 업의 힘을 얻습니다.",
+    "cover": [
+     229,
+     207,
+     168
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-27-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     64,
+     128,
+     326,
+     298
+    ],
+    "ko": "새로 만드는 것만이\n큰 공덕의 길은 아닙니다.\n\n낡고 바랜 불상의 깨진 손가락 하나라도 믿음으로 고치면, 말로 다할 수 없이 큰 업의 열매를 맺습니다.",
+    "cover": [
+     230,
+     213,
+     180
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-28-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     232,
+     283,
+     572,
+     392
+    ],
+    "ko": "더없는 기쁨에 넘친 빠세나디 왕은 깊은 서원을 세웠습니다. 지난 생을 기억하고, 가르침을 지키고, 어머니와 백성을 두려움에서 벗어나게 하고, 마침내 부처의 바라밀을 채우기를.",
+    "cover": [
+     235,
+     216,
+     184
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-29-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     36,
+     550,
+     72
+    ],
+    "ko": "지난 생과 지금 잇기",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     74,
+     150,
+     196,
+     170
+    ],
+    "ko": "왓땅굴리 왕",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     72,
+     274,
+     202,
+     294
+    ],
+    "ko": "왕의 사신",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     100,
+     396,
+     170,
+     416
+    ],
+    "ko": "삭까",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     620,
+     150,
+     710,
+     170
+    ],
+    "ko": "부처님",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     620,
+     274,
+     710,
+     294
+    ],
+    "ko": "아난다",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     610,
+     396,
+     720,
+     416
+    ],
+    "ko": "아누룻다",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     30,
+     214,
+     82,
+     238
+    ],
+    "ko": "지난 생",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     706,
+     214,
+     774,
+     238
+    ],
+    "ko": "지금",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     286,
+     150,
+     514,
+     302
+    ],
+    "ko": "인연 맺기 (사모다나)\n부처님께서 지난 생의 진실을 밝히며 마치셨습니다. 왓땅굴리 왕의 사신은 지금의 아난다, 삭까는 아누룻다, 위대한 왓땅굴리 왕 자신은 완전히 깨달은 분입니다.",
+    "cover": [
+     221,
+     205,
+     177
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Vattanguli-30-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     300,
+     550,
+     384
+    ],
+    "ko": "살아 있는 불상의 조성은 옛 신이한 이야기를 가르침(sāsana)의 보존과 이어 줍니다. 믿음으로 기억하는 모든 이에게 궁극의 해탈을 약속하는 영원한 다짐입니다.",
+    "cover": [
+     223,
+     209,
+     183
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
