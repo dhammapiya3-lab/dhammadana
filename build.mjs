@@ -298,7 +298,7 @@ function bookTxt(b) {
           l = l.replace(/^%%\s?/, ''); const d = (l.match(/^-+/) || [''])[0].length; l = l.replace(/^-+\s*/, '');
           l = l.replace(/\s+\|\s+([^|]+)$/, ', $1쪽'); lines.push('  '.repeat(d) + txtInline(l)); continue;
         }
-        l = l.replace(/^\[\^([^\]]+)\]:\s*/, '[각주 $1] ').replace(/^(##|\^\^|::|>>|\+\+|\|\|)\s*/, '');
+        l = l.replace(/^\[\^([^\]]+)\]:\s*/, '[각주 $1] ').replace(/^(##|\^\^|::|>>|\+\+|\|\|)\s*/, '').replace(/^\|\s+(?=[^|]*$)/, '');  // '>> | 숫자는 게송 번호임'처럼 구분 막대로 시작하는 한 줄 (2026-11-18 다시 검수)
         lines.push(txtInline(l));
       }
       out.push(lines.join('\n').trim(), '');
@@ -1046,7 +1046,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
   const F = (title, href, cnt, ic = '📁', kind = 'folder', type = '폴더') => ({ href, ic, kind, cols: [title, type, cnt] });
   sFolderPage('simple/index.html', { title: '단순 화면 첫 화면', normal: '/', rows: [
     // 가장 자주 쓰는 '내 서재'·'찾기'를 맨 위에 (운영자 요청, 2026-11-18)
-    F('내 서재 (이어 읽기·이어 듣기·책갈피)', '/simple/mine/', '이 기기에 저장된 기록'),
+    F('내 서재 (이어 읽기·TTS 이어 듣기·음성 파일 이어 듣기·책갈피)', '/simple/mine/', '이 기기에 저장된 기록'),
     F('책 제목으로 찾기', '/simple/find/', '제목·지은이로 찾기', '🔍', 'find', '찾기'),
     F('최근 올라온 책', '/simple/recent/', `${lib.length}권`),
     ...(mList.length ? [F('주요 자료', '/simple/main/', `${mList.length}가지`)] : []),
@@ -1102,7 +1102,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     const e = curEd(b), f = formats(b).filter(x => x.url), P = [['최근 올라온 책', '/simple/recent/'], [b.title, '']];
     const rows = [];
     if (hasText(b)) rows.push({ href: `/simple/book/${b.id}/read/`, ic: '📖', kind: 'read', cols: ['온라인으로 읽기', '장 목록에서 장을 골라 글로 읽기'] });
-    if (hasText(b)) rows.push({ href: `/simple/book/${b.id}/read/?listen=1`, ic: '🔊', kind: 'listen', cols: ['듣기', '읽던 곳(처음이면 첫 장)을 열고 ‘▶ 듣기’ 단추로 — Enter 를 누르면 기기 목소리가 읽어 줌'] });
+    if (hasText(b)) rows.push({ href: `/simple/book/${b.id}/read/?listen=1`, ic: '🔊', kind: 'listen', cols: ['듣기 (TTS)', 'TTS로 듣던 곳(없으면 읽던 곳, 처음이면 첫 장)을 열고 ‘▶ 듣기’ 단추로 — Enter 를 누르면 기기 목소리가 읽어 줌'] });
     if (hasText(b) && AUDIO[b.id]) rows.push({ href: `/simple/book/${b.id}/read/?audio=1`, ic: '🎧', kind: 'audio', cols: [AUDIO[b.id].human ? '오디오북 (사람이 읽은 녹음)' : '오디오북 (기계 음성)', '듣던 장(처음이면 첫 장)을 열고 ‘🎧 오디오북’ 단추로 — 맨 위 재생기에서 재생, 듣는 문단을 따라감'] });
     if (txtOk(b)) rows.push({ href: `/txt/${b.id}/${encodeURIComponent(txtName(b))}`, ic: '📃', kind: 'file', dl: true, cols: ['글 파일(TXT) 내려받기', '본문 글만 담은 파일 — 점자정보단말기·데이지 플레이어·메모장에서 읽기'] });
     for (const x of f) rows.push({ href: x.url, ic: x.k === 'PDF' ? '📄' : x.k === 'EPUB' ? '📘' : '📝', kind: 'file', dl: !x.ext, ext: x.ext, cols: [`${x.name} ${x.ext ? '(다른 사이트에서)' : '내려받기'}`, x.ext ? x.site : '파일'] });
@@ -1140,7 +1140,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     body: `<div class="s-prose prose">${ab.meta.homage ? `<p class="homage">${esc(ab.meta.homage)}</p>` : ''}${ab.html}</div><p><a class="s-link" href="/simple/">◀ 첫 화면으로 돌아가기</a></p>` })); }
   put('simple/mine/index.html', simpleLayout({ title: '내 서재', path: [['내 서재', '']], up: '/simple/', normal: '/mynotes/', page: 'simple-mine', body: '<div id="sMine"><p>이 기기에 저장된 기록을 불러오는 중입니다…</p></div>' }));
   // 내 서재 폴더 셋 (운영자 요청, 2026-11-18): 이어 읽기·이어 듣기·책갈피 — 목록은 app.js 가 기기 기록으로 그림
-  for (const [f, t] of [['read', '이어 읽기'], ['listen', '이어 듣기'], ['bm', '책갈피']]) put(`simple/mine/${f}/index.html`, simpleLayout({ title: t, path: [['내 서재', '/simple/mine/'], [t, '']], up: '/simple/mine/', normal: '/mynotes/', page: 'simple-mine', body: `<div id="sMine" data-f="${f}"><p>이 기기에 저장된 기록을 불러오는 중입니다…</p></div>` }));
+  for (const [f, t] of [['read', '이어 읽기'], ['tts', 'TTS 이어 듣기'], ['listen', '음성 파일 이어 듣기'], ['bm', '책갈피']]) put(`simple/mine/${f}/index.html`, simpleLayout({ title: t, path: [['내 서재', '/simple/mine/'], [t, '']], up: '/simple/mine/', normal: '/mynotes/', page: 'simple-mine', body: `<div id="sMine" data-f="${f}"><p>이 기기에 저장된 기록을 불러오는 중입니다…</p></div>` }));
   const findData = JSON.stringify(sByAdded(lib).map(b => [b.id, b.title, sBy(b), b.added || '', sFmt(b), [b.subtitle, b.original_title, ...(b.topics || [])].filter(Boolean).join(' ')])).replace(/</g, '\\u003c');
   put('simple/find/index.html', simpleLayout({ title: '책 제목으로 찾기', path: [['책 제목으로 찾기', '']], up: '/simple/', normal: '/search/', page: 'simple-find',
     body: `<div class="s-find"><label for="sQ">찾을 말 (책 제목·지은이·옮긴이)</label><input id="sQ" type="search" autocomplete="off"><p id="sFindMsg" class="s-sub" role="status" aria-live="polite"></p></div><div id="sFindList"></div><script type="application/json" id="sFindData">${findData}</script>` }));

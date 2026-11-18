@@ -1791,6 +1791,7 @@ function speak(fromK = 0, firstText = null) {
     if ((!o.fn && isFootnote(sentences[k])) || (FIG_RE.test(sentences[k]) && !(R.say && R.say[(sentences[k].match(FIG_RE) || [])[2]])) || (isTbl && !o.table)) { k++; next(); return; }
     if (isTbl && !tq) { tq = tableLines(sentences[k]); if (!tq.length) { tq = null; k++; next(); return; } }
     const el = $(`[data-pg="${p.n}"][data-s="${k}"]`); if (el) { el.classList.add('speaking'); if (o.follow && !tq) el.scrollIntoView({ block: 'nearest' }); ttsFocus(el); }
+    try { const c0 = chapters()[chapterOf(p.n)]; ttsPosSave(R.id, R.title, p.n, k, p.label, c0 && c0.title); } catch (e) {}
     const text = tq ? sayable(tq.shift(), o, true) : sayable(raw.replace(/^\[\^([^\]]+)\]:\s*/, (m, n) => `각주 ${n}. `), o, true);
     const adv = () => { if (tq && tq.length) return; tq = null; k++; };
     if (!text) { adv(); next(); return; }
@@ -2580,6 +2581,8 @@ function panelA11y(el) {
 const KEYS = [['→', '다음 쪽'], ['←', '앞 쪽'], ['↓', '다음 목차 (소제목·장)'], ['↑', '앞 목차 (소제목·장)'], ['M', '메뉴 열기 (닫기 단추로 커서)'], ['P', '토글: 듣기 시작·멈춤 (듣는 동안 커서가 읽는 문단을 따라감)'], ['C', '지금 읽는 문단을 클립보드에 복사'], ['', '듣는 중에 → ← (Alt·Shift 없이): 다음 문장·앞 문장'], ['S', '토글: 듣기 설정 창 열기·닫기'], ['V', '토글: 화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['F', '토글: 글씨 창 열기·닫기 (크기·굵기·줄 간격·글꼴)'], ['N', '토글: 목차 창 열기·닫기'], ['B', '토글: 이 쪽에 책갈피 넣기·빼기'], ['L', '토글: 책갈피 목록 열기·닫기'], ['K', '지금 읽는 곳 알리기'], ['A', '토글: 오디오북 재생기로 가기 (오디오북이 있는 책 — 재생을 시작하고 커서를 재생 단추로, 다시 누르면 본문으로)'], ['H', '토글: 단축키 안내 열기·닫기']];
 // 듣는 동안 커서(포커스)가 읽는 문단을 따라감 (운영자 요청, 2026-11-18 — 시각장애인 이용자: 듣던 문장을 바로 Shift+→ 로 골라 복사할 수 있게).
 // 커서가 본문·듣기 단추·앞서 읽던 문단에 있을 때만 옮김 — 설정 창 등 다른 곳에서 일하는 중이면 건드리지 않음
+// TTS(기기 목소리 '▶ 듣기')로 듣던 자리 — 책마다 하나, 읽던 자리(pos-·hist)·오디오북 자리(abpos-)와 따로 기억 (운영자 요청, 2026-11-18: 한 책이라도 TTS 로 듣던 곳과 오디오북으로 듣던 곳을 각각 이어 듣게)
+function ttsPosSave(id, b, n, s, pl, ch) { if (!id || !n) return; store.set('ttspos-' + id, { p: n, s: +s || 0, pl: pl || '', ch: ch || '', b: b || '', d: today(), ts: Date.now() }); }
 function ttsFocus(el) {
   if (!el) return; const a = document.activeElement;
   const ok = !a || a === document.body || a === document.documentElement || (a.closest && a.closest('.reflow, .s-text, #rBody, .s-h1, .s-chnav')) || a.id === 'rSpeak' || a.id === 'sSpeak';
@@ -2936,14 +2939,16 @@ async function initSimpleRead() {
   if (!SR.scrollHook) { SR.scrollHook = 1; let tt = 0; addEventListener('scroll', () => { if (SR.speaking || scrollY <= 40 || !$('#sRead .s-text')) return; clearTimeout(tt); tt = setTimeout(() => { const head = (STALK.el && STALK.el.isConnected ? STALK.el.getBoundingClientRect().bottom : sBarH()) + 4; const el = $$('.s-text [data-pg][data-s]').find(x => x.getBoundingClientRect().bottom > head); if (el) SR.anchor = +el.dataset.pg; }, 250); }, { passive: true }); }  // 마지막으로 보던 쪽
   const q = new URLSearchParams(location.search), c = +q.get('c') || 0, listen = q.has('listen'), audio = q.has('audio') && root.dataset.audio;
   // 책 폴더의 '듣기' 줄(?listen=1): 이 기기에서 읽던 곳(없으면 첫 장)을 열고 커서를 '▶ 듣기' 단추에 — Enter 한 번이면 읽기 시작 (운영자 요청, 2026-11-18)
-  let pp = +q.get('p') || 0; if (listen && !c && !pp) { const h = store.get('hist', []).find(x => x.id === SR.id); pp = h && h.p || 1; }
+  let pp = +q.get('p') || 0, ps = q.has('s') ? +q.get('s') : null;
+  if (listen && !c && !pp) { const tp = store.get('ttspos-' + SR.id, null); if (tp && tp.p) { pp = tp.p; ps = tp.s; } else { const h = store.get('hist', []).find(x => x.id === SR.id); pp = h && h.p || 1; } }  // TTS 로 듣던 곳이 있으면 거기부터 (없으면 읽던 곳)
   // 오디오북(?audio=1): 이어 듣던 장(없으면 첫 장)을 열고 커서를 '🎧 오디오북' 단추에 — Enter 한 번이면 재생 (운영자 요청, 2026-11-18)
   if (audio && !c && !pp) { const ap = store.get('abpos-' + SR.id, null); pp = 1; if (ap) { try { const j = await sAbData(SR.id, root.dataset.audio); const ch = j.chapters[ap.ci]; if (ch) pp = ch.page; } catch (e) {} } }
   if (!c && !pp) { SR.ci0 = null; srList(root); return; }
   const ci = c ? Math.min(c, SR.cs.length) - 1 : withR(() => chapterOf(Math.min(pp, pages.length)));
   srChapter(ci, pp && !c ? Math.min(pp, pages.length) : 0, false);
+  if (pp && !c && ps != null) SR.anchorS = { p: Math.min(pp, pages.length), s: ps };  // ▶ 듣기가 그 문단부터
   if (audio) { const fa = () => { const b = $('#sAb'); if (b) { b.focus(); toast('🎧 오디오북 단추입니다. Enter 를 누르면 맨 위 재생기에서 재생합니다'); } }; if (document.readyState === 'complete') setTimeout(fa, 300); else addEventListener('load', () => setTimeout(fa, 300), { once: true }); }
-  if (listen) { const fb = () => { const b = $('#sSpeak'); if (b) { b.focus(); toast('▶ 듣기 단추입니다. Enter 를 누르면 읽기 시작합니다'); } }; if (document.readyState === 'complete') setTimeout(fb, 300); else addEventListener('load', () => setTimeout(fb, 300), { once: true }); }
+  if (listen) { const fb = () => { const b = $('#sSpeak'); if (b) { b.focus(); toast(`▶ 듣기 단추입니다. Enter 를 누르면 ${SR.anchorS ? '듣던 곳부터 ' : ''}읽기 시작합니다`); } }; if (document.readyState === 'complete') setTimeout(fb, 300); else addEventListener('load', () => setTimeout(fb, 300), { once: true }); }
   SR.ci0 = c || pp ? ci : null; SR.p0 = pp && !c ? Math.min(pp, pages.length) : 0;
   // 장 사이 뒤로·앞으로 가기는 페이지를 새로 열지 않고 그 자리에서 다시 그림 — 오디오북·법문이 듣는 중이어도 끊기지 않게 (운영자 요청, 2026-11-18)
   if (!SR.popHook) { SR.popHook = 1; window.addEventListener('popstate', () => { if (!$('#sRead') || (history.state || {}).sb) return; const u = new URLSearchParams(location.search), cc = +u.get('c') || 0; if (SR.speaking) srStop(true); if (cc) srChapter(cc - 1, 0, false); else if (SR.ci0 != null) srChapter(SR.ci0, SR.p0, false); else srList($('#sRead')); }); }
@@ -3015,7 +3020,10 @@ function srSpeak(fromTop, startAt) {
     items.push({ el, text: sayable(raw.replace(/^\[\^([^\]]+)\]:\s*/, (m, n) => `각주 ${n}. `), o, true) });
   });
   let k = startAt === 'last' ? Math.max(0, items.length - 1) : 0;
-  if (!fromTop && startAt == null) {
+  const aS = SR.anchorS; SR.anchorS = null; let aK = -1;
+  if (aS && aS.p === SR.anchor && !fromTop && startAt == null) aK = items.findIndex(it => it.el && +it.el.dataset.pg === aS.p && +it.el.dataset.s === aS.s);
+  if (aK > 0) k = aK;  // TTS 로 듣던 문단 (내 서재 'TTS 이어 듣기'·책 폴더 '듣기')
+  else if (!fromTop && startAt == null) {
     const head = (STALK.el && STALK.el.isConnected ? STALK.el.getBoundingClientRect().bottom : sBarH()) + 4;
     const top = items.findIndex((it, i) => i && it.el && it.el.getBoundingClientRect().bottom > head); if (top > 0 && scrollY > 40) k = top;
     // 맨 위 '▶ 듣기' 단추로 가느라 화면이 장 처음으로 올라갔어도, 읽던 쪽(내 서재 이어 읽기·책갈피로 연 쪽, 마지막으로 보던 쪽)부터 (운영자 요청, 2026-11-18 — 내 서재에서 연 책에서 → 가 듣지 않는 것처럼 보이던 것: 장 처음부터 읽고 있었음)
@@ -3035,7 +3043,7 @@ function srSpeak(fromTop, startAt) {
       srChapter(SR.ci + 1, 0, true, () => { scrollTo(0, 0); srSpeak(true); }); return;
     }
     const it = items[k++]; if (!it.text) { next(); return; }
-    if (it.el) { it.el.classList.add('speaking'); if (o.follow) it.el.scrollIntoView({ block: 'nearest' }); ttsFocus(it.el); const n = +it.el.dataset.pg; if (n) srSavePos(n, ch); }
+    if (it.el) { it.el.classList.add('speaking'); if (o.follow) it.el.scrollIntoView({ block: 'nearest' }); ttsFocus(it.el); const n = +it.el.dataset.pg; if (n) { srSavePos(n, ch); ttsPosSave(SR.id, SR.title, n, it.el.dataset.s, (R0.pages[n - 1] || {}).label, ch && ch.title); } }
     const si = SR.si; SR.si = 0;
     speakSents(it.text, o, pv, si, () => { if (SR.speaking) ttsLater(next, Math.max(0, +o.pause * 1000)); }, e => { if (e.error !== 'interrupted' && e.error !== 'canceled') srStop(true); },
       d => { if (!SR.speaking) return; if (d > 0) { next(); return; }
@@ -3071,23 +3079,28 @@ function initSimpleMine() {
   const H = store.get('hist', []).slice().sort(byRecent), B = bms().slice().sort(byRecent), TL = store.get(SH, []).slice().sort(byRecent);
   const AL = []; try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (!/^dd-abpos-/.test(k)) continue; const v = JSON.parse(localStorage.getItem(k) || 'null'); if (v && v.b) AL.push({ id: k.slice(9), ...v }); } } catch (e) {}
   AL.sort(byRecent);
+  const TS = []; try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (!/^dd-ttspos-/.test(k)) continue; const v = JSON.parse(localStorage.getItem(k) || 'null'); if (v && v.b && v.p) TS.push({ id: k.slice(10), ...v }); } } catch (e) {}
+  TS.sort(byRecent);
   const R_ = h => ({ w: when(h), html: sRow(`/simple/book/${h.id}/read/?p=${h.p}`, [h.t, `이어 읽기${h.ch ? ': ' + h.ch : ''}${h.pl ? ', ' + h.pl + '쪽' : ''}`, `${h.pct || 0}% · ${h.d || ''}`], '📖', 'resume') });
   const A_ = a => ({ w: when(a), html: sRow(`/simple/book/${a.id}/read/?audio=1`, [a.b, `오디오북 이어 듣기${a.ch ? ': ' + a.ch : ''}, ${sFmtT(a.t)}부터`, a.d || ''], '🎧', 'abres') });
+  const S_ = a => ({ w: when(a), html: sRow(`/simple/book/${a.id}/read/?listen=1&p=${a.p}&s=${a.s || 0}`, [a.b, `TTS 이어 듣기${a.ch ? ': ' + a.ch : ''}${a.pl ? ', ' + a.pl + '쪽' : ''}`, a.d || ''], '🔊', 'ttsres') });
   const T_ = h => ({ w: when(h), ep: h, html: sRow(h.a, [h.t, `법문 이어 듣기: ${sFmtT(h.pos)}${h.dur ? ' / ' + sFmtT(h.dur) : ''}${h.pl ? ' · ' + h.pl : ''}`, h.d || ''], '🎙', 'ep') });
   const M_ = m => ({ w: when(m), html: sRow(`/simple/book/${m.id}/read/?p=${m.p}`, [m.t, `책갈피: ${m.pl ? m.pl + '쪽' : m.p + '번째 쪽'}${m.note ? ' – ' + m.note : ''}`, m.d || ''], '🔖', 'bm') });
   let items, label, stat;
   if (f === 'read') { items = H.map(R_); label = `이어 읽기, 읽던 책 ${H.length}권`; stat = `읽던 책 ${H.length}`; }
-  else if (f === 'listen') { items = AL.map(A_).concat(TL.map(T_)).sort((x, y) => y.w - x.w); label = `이어 듣기, 오디오북 ${AL.length}개, 법문 ${TL.length}개`; stat = `오디오북 ${AL.length} · 법문 ${TL.length}`; }
+  else if (f === 'tts') { items = TS.map(S_); label = `TTS 이어 듣기, 기기 목소리로 듣던 책 ${TS.length}권`; stat = `TTS로 듣던 책 ${TS.length}`; }
+  else if (f === 'listen') { items = AL.map(A_).concat(TL.map(T_)).sort((x, y) => y.w - x.w); label = `음성 파일 이어 듣기, 오디오북 ${AL.length}개, 법문 ${TL.length}개`; stat = `오디오북 ${AL.length} · 법문 ${TL.length}`; }
   else if (f === 'bm') { items = B.map(M_); label = `책갈피 ${B.length}개`; stat = `책갈피 ${B.length}`; }
   else {
-    const last = [H[0] && R_(H[0]), AL[0] && A_(AL[0]), TL[0] && T_(TL[0])].filter(Boolean).sort((x, y) => y.w - x.w)[0];
+    const last = [H[0] && R_(H[0]), TS[0] && S_(TS[0]), AL[0] && A_(AL[0]), TL[0] && T_(TL[0])].filter(Boolean).sort((x, y) => y.w - x.w)[0];
     items = [];
     if (last) items.push({ ...last, html: last.html.replace(/<span class="s-ic" aria-hidden="true">[^<]*<\/span>/, '<span class="s-ic" aria-hidden="true">⏯</span>').replace(/(<span class="s-c s-c1[^"]*"[^>]*>)/, '$1<span class="sr">최근에 하던 것: </span>') });
     const F = (h, t, n, ic) => ({ html: sRow(h, [t, '폴더', n], ic, 'folder') });
     if (H.length) items.push(F('/simple/mine/read/', '이어 읽기', `읽던 책 ${H.length}권`, '📖'));
-    if (AL.length || TL.length) items.push(F('/simple/mine/listen/', '이어 듣기', [AL.length && `오디오북 ${AL.length}개`, TL.length && `법문 ${TL.length}개`].filter(Boolean).join(', '), '🎧'));
+    if (TS.length) items.push(F('/simple/mine/tts/', 'TTS 이어 듣기', `기기 목소리로 듣던 책 ${TS.length}권`, '🔊'));
+    if (AL.length || TL.length) items.push(F('/simple/mine/listen/', '음성 파일 이어 듣기', [AL.length && `오디오북 ${AL.length}개`, TL.length && `법문 ${TL.length}개`].filter(Boolean).join(', '), '🎧'));
     if (B.length) items.push(F('/simple/mine/bm/', '책갈피', `${B.length}개`, '🔖'));
-    label = '내 서재'; stat = `읽던 책 ${H.length} · 이어 듣기 ${AL.length + TL.length} · 책갈피 ${B.length}`;
+    label = '내 서재'; stat = `읽던 책 ${H.length} · TTS ${TS.length} · 음성 파일 ${AL.length + TL.length} · 책갈피 ${B.length}`;
   }
   root.innerHTML = items.length ? `<div class="s-tbl" style="--cols:minmax(0,2fr) minmax(0,2.4fr) minmax(0,1fr)">` + sHead(['이름', '어디', '언제']) + `<ul class="s-list" data-label="${esc(label)}">${items.map(x => x.html).join('')}</ul></div>` : '<p>아직 이 기기에서 읽거나 들은 책·법문이 없습니다. 책을 읽거나 법문·오디오북을 들으면 여기에 이어 읽을 곳·이어 들을 곳이 남습니다.</p>';
   const eps = items.filter(x => x.ep);
