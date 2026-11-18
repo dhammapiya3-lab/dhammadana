@@ -1,0 +1,563 @@
+[
+ {
+  "img": "images/19-Sirivipulakitti-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     292,
+     250,
+     508,
+     312
+    ],
+    "ko": "시리위뿔라낏띠\n왕 이야기",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     292,
+     328,
+     508,
+     372
+    ],
+    "ko": "효도를 담은\n빤냐사 자따까 이야기",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     54,
+     354,
+     746,
+     400
+    ],
+    "ko": "부처님께서 늙은 부모에게 탁발 음식을 드린 비구를 칭찬하십니다. “이 비구는 참으로 길 위에 굳게 서 있다.” 가장 높은 효도를 보여 주시려고 스승께서 전생을 들려주십니다.",
+    "cover": [
+     217,
+     186,
+     145
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     112,
+     256,
+     316
+    ],
+    "ko": "옛 짬빠에서 의롭지만 자식이 없는 야사낏띠 왕과 시리마띠 왕비가 후사를 바랍니다. 왕비의 포살 서계의 빛으로 천신의 왕 삭까가 보살에게 내려가 주기를 청합니다.",
+    "cover": [
+     222,
+     193,
+     153
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     358,
+     600,
+     440
+    ],
+    "ko": "탐욕스러운 이웃 왕이 짬빠를 칩니다. 해치기를 거부한 야사낏띠는 나라보다 계를 앞세웁니다. 왕은 아이를 밴 시리마띠 왕비와 함께 위뿔라 산의 숲으로 떠나 고행의 삶을 받아들입니다.",
+    "cover": [
+     225,
+     197,
+     152
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     46,
+     296,
+     198
+    ],
+    "ko": "야사낏띠는 길 잃은 숲 사람을 구해 이레 동안 너그럽게 먹였습니다. 탐욕에 사로잡힌 은혜 모르는 그 사람은 금화 십만 닢에 생명의 은인이 있는 곳을 이웃 왕에게 일러바칩니다.",
+    "cover": [
+     231,
+     218,
+     195
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     164,
+     362,
+     636,
+     414
+    ],
+    "ko": "병사들이 야사낏띠 왕을 붙잡아 잔인하게 다섯 군데를 묶습니다. 깊은 숲에서 홀로 시리마띠 왕비는 금빛 아들을 낳아 시리위뿔라낏띠라고 이름 짓습니다.",
+    "cover": [
+     225,
+     203,
+     163
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     510,
+     290,
+     756,
+     412
+    ],
+    "ko": "아버지가 갇혔다는 것을 안 보살은 아버지를 찾아 떠납니다. 왕족임을 보일 증거로 어머니의 다이아몬드 인장 반지와 짠 모직 천만 가져갑니다.",
+    "cover": [
+     216,
+     192,
+     161
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     44,
+     464,
+     162
+    ],
+    "ko": "감옥에서 비참한 아버지를 찾은 보살은 코끼리 일곱 마리의 힘이 있었지만 폭력을 거부합니다. 대신 아버지를 풀어 주는 값으로 자기 목숨을 이웃 왕에게 내놓습니다.",
+    "cover": [
+     214,
+     191,
+     155
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     336,
+     162,
+     464,
+     290
+    ],
+    "ko": "공덕은 해칠 수 없어\n칼은 부서지고\n코끼리는 달아나고\n연꽃이 불을 막고\n나가 왕이 구합니다.",
+    "cover": [
+     238,
+     215,
+     181
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "ellipse": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     42,
+     412,
+     122
+    ],
+    "ko": "보살이 기적처럼 살아나자 걷잡을 수 없는 분노에 사로잡힌 사악한 왕의 업이 그 자리에서 익습니다. 큰 땅이 갈라져 그를 아위찌 지옥의 끔찍한 불길 속으로 삼킵니다.",
+    "cover": [
+     220,
+     199,
+     169
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     322,
+     320,
+     410
+    ],
+    "ko": "나가들에게 왕으로 관정을 받은 시리위뿔라낏띠는 어머니를 모시러 숲으로 달려갑니다. 너무 늦었습니다. 시리마띠 왕비는 나뭇잎 초막에서 굶주림과 큰 슬픔으로 세상을 떠났습니다.",
+    "cover": [
+     219,
+     199,
+     168
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     28,
+     690,
+     106
+    ],
+    "ko": "슬픔에 겨운 보살은 어머니의 화장 장작더미에 누워 곁에서 죽겠다고 합니다. 불이 붙지만, 지극한 효도 덕분에 그의 몸은 거센 불길에 조금도 닿지 않습니다.",
+    "cover": [
+     229,
+     213,
+     196
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     520,
+     330,
+     760,
+     412
+    ],
+    "ko": "대인(보살)은 어머니의 유해를 모실 장엄한 황금 탑을 세웁니다. 끊임없이 예경하도록 마을을 만들어, 그곳에서 공덕을 짓는 모든 이가 천상 세계에 태어나게 합니다.",
+    "cover": [
+     225,
+     201,
+     164
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     38,
+     280,
+     64
+    ],
+    "ko": "과거",
+    "cover": [
+     224,
+     216,
+     205
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     524,
+     38,
+     640,
+     64
+    ],
+    "ko": "현재",
+    "cover": [
+     224,
+     215,
+     203
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     54,
+     100,
+     176,
+     130
+    ],
+    "ko": "사악한 왕",
+    "cover": [
+     222,
+     213,
+     202
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     626,
+     100,
+     726,
+     130
+    ],
+    "ko": "데와닷따",
+    "cover": [
+     224,
+     216,
+     204
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     64,
+     170,
+     176,
+     200
+    ],
+    "ko": "야사낏띠",
+    "cover": [
+     221,
+     213,
+     200
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     626,
+     170,
+     726,
+     200
+    ],
+    "ko": "숫도다나",
+    "cover": [
+     222,
+     214,
+     202
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     64,
+     246,
+     176,
+     276
+    ],
+    "ko": "시리마띠",
+    "cover": [
+     221,
+     212,
+     200
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     626,
+     246,
+     726,
+     276
+    ],
+    "ko": "마하마야",
+    "cover": [
+     224,
+     216,
+     204
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     50,
+     326,
+     176,
+     356
+    ],
+    "ko": "시리위뿔라낏띠",
+    "cover": [
+     222,
+     214,
+     203
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     626,
+     326,
+     726,
+     356
+    ],
+    "ko": "여래",
+    "cover": [
+     225,
+     217,
+     206
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     60,
+     380,
+     740,
+     450
+    ],
+    "ko": "현재로 돌아와 부처님께서 다시 태어남을 밝히십니다. 이웃 왕은 데와닷따, 야사낏띠 왕은 숫도다나, 시리마띠 왕비는 마하마야였습니다. 그리고 스스로 완전히 깨달으신 여래가 시리위뿔라낏띠 왕이었습니다.",
+    "cover": [
+     224,
+     216,
+     205
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-Sirivipulakitti-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     352,
+     68,
+     778,
+     160
+    ],
+    "ko": "덕의 궁극의 완성\n부처님께서는 참된 깨달음에는 몇 생이 걸리든 어떤 시련이 오든 지극한 효도와 완전한 비폭력이 필요함을 보여 주십니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ }
+]
