@@ -1686,11 +1686,21 @@ function bindIx() {
   if (q) q.oninput = () => { clearTimeout(t); t = setTimeout(() => { R.ixQ = q.value; $('#ixBody', box).innerHTML = ixBody(); const nt = $('.ix-note', box); if (nt) nt.hidden = !!R.ixQ.trim(); }, 150); };
   $$('[data-ixp]', box).forEach(b => b.onclick = () => { R.ixPart = +b.dataset.ixp; store.set('ixp-' + R.id, R.ixPart); box.innerHTML = ixHtml(); bindIx(); const nq = $('#ixQ', box); });
 }
+/* 본문 그림의 화면 낭독기 이름 — 전에는 모든 그림이 '그림 크게 보기'로만 들렸음 (운영자 요청, 2026-11-18) */
+const FIG_DECO = /^(구분 ?장식|구분선|장식|꾸밈|무늬|법륜|사자상 그림|보리수 잎 그림)$/;
+function figLabel(alt) {
+  const a = String(alt || '').trim();
+  if (!a || /^(그림|사진)$/.test(a)) return `${a || '그림'} (설명 없음). 누르면 크게 보기`;
+  if (/^표$/.test(a)) return '표 그림 (글로 된 내용 없음). 누르면 크게 보기';
+  return `${/(그림|사진|표|지도|가계도|서명|마크)$/.test(a) ? a : '그림: ' + a}. 누르면 크게 보기`;
+}
 function blockHtml(s, n, k) {
   if (s.trim() === '[[색인]]') return R && R.ix ? `<div class="ix" id="ix" data-pg="${n}" data-s="${k}" data-skip="1">${ixHtml()}</div>` : '';
   const f = s.match(FIG_RE);
-  if (f && f[1].startsWith('#')) { const alt = f[1].slice(1).trim(); return `<figure class="r-fig" data-pg="${n}" data-s="${k}" data-skip="1"><button class="fig-btn" data-zoom-img="${esc(f[2])}" data-cap="${esc(alt)}" aria-label="그림 크게 보기"><img src="${esc(f[2])}" alt="${esc(alt)}" loading="lazy"></button></figure>`; }  // ![#설명](주소): 설명은 화면에 안 보이고 읽기 프로그램만 읽음
-  if (f) return `<figure class="r-fig" data-pg="${n}" data-s="${k}" data-skip="1"><button class="fig-btn" data-zoom-img="${esc(f[2])}" data-cap="${esc(f[1])}" aria-label="그림 크게 보기"><img src="${esc(f[2])}" alt="${esc(f[1])}" loading="lazy"></button>${f[1] ? `<figcaption>${esc(f[1])}</figcaption>` : ''}</figure>`;
+  if (f && f[1].startsWith('#')) { const alt = f[1].slice(1).trim();
+    if (FIG_DECO.test(alt)) return `<figure class="r-fig deco" data-pg="${n}" data-s="${k}" data-skip="1" aria-hidden="true"><button class="fig-btn" tabindex="-1" data-zoom-img="${esc(f[2])}" data-cap="${esc(alt)}"><img src="${esc(f[2])}" alt="" loading="lazy"></button></figure>`;  // 구분선·장식은 화면 낭독기·Tab 에서 숨김 (운영자 요청, 2026-11-18)
+    return `<figure class="r-fig" data-pg="${n}" data-s="${k}" data-skip="1"><button class="fig-btn" data-zoom-img="${esc(f[2])}" data-cap="${esc(alt)}" aria-label="${esc(figLabel(alt))}"><img src="${esc(f[2])}" alt="" loading="lazy"></button></figure>`; }  // ![#설명](주소): 설명은 화면에 안 보이고 읽기 프로그램만 읽음
+  if (f) return `<figure class="r-fig" data-pg="${n}" data-s="${k}" data-skip="1"><button class="fig-btn" data-zoom-img="${esc(f[2])}" data-cap="${esc(f[1])}" aria-label="${esc(figLabel(f[1]))}"><img src="${esc(f[2])}" alt="" loading="lazy"></button>${f[1] ? `<figcaption aria-hidden="true">${esc(f[1])}</figcaption>` : ''}</figure>`;
   if (/^%% /.test(s)) return `<div class="r-toc" data-pg="${n}" data-s="${k}" data-skip="1">${tocLines(s).map(r => r.sp ? '<div class="tl-sp" aria-hidden="true"></div>' : `<div class="tl l${Math.min(r.lv, 3)}"><span class="tt">${phMark(boldMark(esc(r.t)))}</span>${r.p ? `<span class="dots" aria-hidden="true"> </span><span class="tp">${esc(r.p)}</span>` : ''}</div>`).join('')}</div>`;  // 차례: 인쇄본처럼 단계별 들여쓰기·점선·쪽 번호
   if (isTable(s)) return `<div class="r-tbl" data-pg="${n}" data-s="${k}" data-skip="1">${tableHtml(s)}<button class="tbtn sm" data-zoom-tbl>표 크게 보기</button></div>`;
   return null;
@@ -2335,9 +2345,28 @@ document.addEventListener('click', e => {
   pop.style.width = W / z + 'px'; pop.style.left = Math.max(12, Math.min(innerWidth - W - 12, r.left - W / 2)) / z + 'px';
   const below = r.bottom + 8, h = pop.offsetHeight * z;
   pop.style.top = (below + h < innerHeight - 8 ? below : Math.max(8, r.top - h - 8)) / z + 'px';
-  pop.querySelector('.fnpop-x').onclick = () => pop.remove();
+  fnPopOpen(pop, sup);
 }, true);
-document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && (e.target.classList.contains('fn-ref') || e.target.classList.contains('fn-no'))) { e.preventDefault(); e.target.click(); } if (e.key === 'Escape') { const p = document.getElementById('fnPop'); if (p) p.remove(); } });
+// 각주 창을 열면 화면 낭독기 커서를 각주 내용으로 옮기고, ✕·Esc 로 닫으면 누른 각주 번호로 돌아옴 (운영자 요청, 2026-11-18 — 전에는 커서가 번호에 그대로 있어 낭독기가 각주 내용을 읽지 않았음)
+function fnPopOpen(pop, opener) {
+  pop._ret = opener; pop.setAttribute('aria-modal', 'false');
+  pop.querySelector('.fnpop-x').onclick = () => fnPopClose(pop);
+  const f = pop.querySelector('p:not(.muted)') || pop.querySelector('p') || pop;
+  f.setAttribute('tabindex', '-1'); try { f.focus({ preventScroll: true }); } catch (e) {}
+}
+function fnPopClose(pop) {
+  if (!pop) return; const r = pop._ret, had = pop.contains(document.activeElement);
+  pop.remove(); if (had && r && r.isConnected) try { r.focus({ preventScroll: true }); } catch (e) {}
+}
+document.addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && (e.target.classList.contains('fn-ref') || e.target.classList.contains('fn-no'))) { e.preventDefault(); e.target.click(); }
+  const p = document.getElementById('fnPop'); if (!p) return;
+  if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); fnPopClose(p); return; }
+  if (e.key === 'Tab' && p.contains(document.activeElement)) {  // 창 안에서만 돎(내용 → ✕ → 단추들)
+    const f = [...p.querySelectorAll('[tabindex="-1"], button, a[href]')].filter(x => x.offsetParent || x === document.activeElement);
+    if (f.length) { const i = f.indexOf(document.activeElement); e.preventDefault(); f[(i + (e.shiftKey ? -1 : 1) + f.length) % f.length].focus(); }
+  }
+}, true);
 // 도서관 왼쪽 찾아보기 상자: 화면에 실제로 보이는 높이만큼만 — 페이지 맨 위에서도(머리글 아래에서 시작) 맨 아래 '형식'까지 상자 안에서 넘겨 볼 수 있게 (운영자 요청, 2026-11-11)
 (() => {
   const d = document.querySelector('.lib>details'); if (!d) return;
@@ -2473,7 +2502,7 @@ document.addEventListener('click', e => {
   pop.style.width = W / z + 'px'; pop.style.left = Math.max(12, Math.min(innerWidth - W - 12, r.left - W / 2)) / z + 'px';
   const below = r.bottom + 8, h = pop.offsetHeight * z;
   pop.style.top = (below + h < innerHeight - 8 ? below : Math.max(8, r.top - h - 8)) / z + 'px';
-  pop.querySelector('.fnpop-x').onclick = () => pop.remove();
+  fnPopOpen(pop, sup);
 }, true);
 document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('par-fn')) { e.preventDefault(); e.target.click(); } });
 
@@ -2931,12 +2960,21 @@ function srChapter(ci, page, push, then) {
   const root = $('#sRead'), cs = SR.cs; ci = Math.max(0, Math.min(ci, cs.length - 1)); SR.ci = ci;
   const ch = cs[ci], R0 = SR.r; R0.i = (page || ch.from) - 1; SR.anchor = page || null;
   const html = withR(() => reflowHtml()).replace(/<div class="ch-head">[\s\S]*?<\/div>/, '').replace(/<nav class="ch-nav"[\s\S]*?<\/nav>/, '');
-  const nav = where => `<nav class="s-chnav" aria-label="장 이동 (${where})"><a href="./" class="s-btn">▤ 장 목록</a>${ci > 0 ? `<a class="s-btn" href="?c=${ci}" data-c="${ci - 1}">◀ 앞 장: ${esc(srName(cs[ci - 1], ci - 1))}</a>` : ''}${ci < cs.length - 1 ? `<a class="s-btn" href="?c=${ci + 2}" data-c="${ci + 1}">다음 장: ${esc(srName(cs[ci + 1], ci + 1))} ▶</a>` : '<span class="s-sub">책의 끝입니다.</span>'}${where === '위' ? `<button type="button" class="s-btn" id="sSpeak" aria-keyshortcuts="Alt+Shift+P">${SR.speaking ? '■ 듣기 멈춤' : '▶ 듣기'}</button><button type="button" class="s-btn" id="sTtsBtn" aria-keyshortcuts="Alt+Shift+S" aria-expanded="false" aria-controls="sTts">듣기 설정</button>` : ''}</nav>`;
-  root.innerHTML = nav('위') + `<section id="sTts" class="s-tts" hidden aria-labelledby="sTtsH"></section><div class="s-text">${html}</div>` + nav('아래');
+  const nav = where => `<nav class="s-chnav" aria-label="장 이동 (${where})"><a href="./" class="s-btn">▤ 장 목록</a>${ci > 0 ? `<a class="s-btn" href="?c=${ci}" data-c="${ci - 1}">◀ 앞 장: ${esc(srName(cs[ci - 1], ci - 1))}</a>` : ''}${ci < cs.length - 1 ? `<a class="s-btn" href="?c=${ci + 2}" data-c="${ci + 1}">다음 장: ${esc(srName(cs[ci + 1], ci + 1))} ▶</a>` : '<span class="s-sub">책의 끝입니다.</span>'}${where === '위' ? `<button type="button" class="s-btn" id="sSpeak" aria-keyshortcuts="Alt+Shift+P">${SR.speaking ? '■ 듣기 멈춤' : '▶ 듣기'}</button><button type="button" class="s-btn" id="sTtsBtn" aria-keyshortcuts="Alt+Shift+S" aria-expanded="false" aria-controls="sTts">듣기 설정</button><button type="button" class="s-btn s-sent" id="sPrevS" aria-label="앞 문장 듣기"${SR.speaking ? '' : ' hidden'}>◀ 앞 문장</button><button type="button" class="s-btn s-sent" id="sNextS" aria-label="다음 문장 듣기"${SR.speaking ? '' : ' hidden'}>다음 문장 ▶</button><button type="button" class="s-btn" id="sBmBtn" aria-keyshortcuts="Alt+Shift+B" aria-label="지금 쪽에 책갈피 넣기·빼기">🔖 책갈피</button><button type="button" class="s-btn" id="sWhereBtn" aria-keyshortcuts="Alt+Shift+K" aria-label="지금 위치 알리기">📍 지금 위치</button><button type="button" class="s-btn" id="sGoPg" aria-expanded="false" aria-controls="sPgForm">📄 쪽으로 가기</button>` : ''}</nav>`;
+  root.innerHTML = nav('위') + `<form id="sPgForm" class="s-pgform" hidden><label for="sPgIn">몇 쪽으로 갈까요? (책에 인쇄된 쪽 번호)</label> <input id="sPgIn" type="text" inputmode="numeric" autocomplete="off" size="6"> <button type="submit" class="s-btn">가기</button> <button type="button" class="s-btn" id="sPgX">닫기</button></form><section id="sTts" class="s-tts" hidden aria-labelledby="sTtsH"></section><div class="s-text">${html}</div>` + nav('아래');
   $$('.s-text [aria-level]', root).forEach(h => h.setAttribute('aria-level', Math.max(2, +h.getAttribute('aria-level') - 2)));  // 단순 화면은 장 제목이 h1 이라 소제목 단계를 맞춤
   $$('.s-chnav a[data-c]', root).forEach(a => a.onclick = e => { e.preventDefault(); const go = +a.dataset.c, was = SR.speaking; srStop(); srChapter(go, 0, true); if (was) srSpeak(); });
   $('#sSpeak').onclick = () => SR.speaking ? srStop() : srSpeak();
   $('#sTtsBtn').onclick = () => srTtsPanel();
+  // 휴대폰(키보드 없음)에서도 단축키 기능을 쓸 수 있게 단추로 (운영자 요청, 2026-11-18)
+  $('#sPrevS').onclick = () => { if (SR.speaking && TT.jump) TT.jump(-1); };
+  $('#sNextS').onclick = () => { if (SR.speaking && TT.jump) TT.jump(1); };
+  $('#sBmBtn').onclick = () => sBookmark();
+  $('#sWhereBtn').onclick = () => sWhere();
+  $('#sGoPg').onclick = () => sPgForm(true);
+  $('#sPgX').onclick = () => sPgForm(false);
+  $('#sPgForm').onsubmit = e => { e.preventDefault(); sGoPage($('#sPgIn').value); };
+  $('#sPgForm').onkeydown = e => { if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); sPgForm(false); } };
   sAbBtn();
   const h1 = $('.s-h1'); h1.textContent = srName(ch, ci); document.title = `${srName(ch, ci)} · ${SR.title} · 단순 화면`;
   const cur = $('.s-path [aria-current]'); if (cur) cur.textContent = srName(ch, ci);
@@ -2956,7 +2994,7 @@ function srSavePos(n, ch) {
 function srStop(quiet) {
   TT.gen++; TT.jump = null; SR.si = 0; SR.speaking = false; try { speechSynthesis.cancel(); } catch (e) {} wake(false, 'tts');
   $$('.s-text .speaking').forEach(x => x.classList.remove('speaking'));
-  const b = $('#sSpeak'); if (b) b.textContent = '▶ 듣기';
+  const b = $('#sSpeak'); if (b) b.textContent = '▶ 듣기'; $$('.s-sent').forEach(x => x.hidden = true);
   if (!quiet) toast('듣기를 멈췄습니다');
 }
 // 화면에 보이는 문단(또는 장 처음)부터 읽음 — 장이 끝나면 다음 장을 그 자리에 그리고 이어 읽음
@@ -2984,7 +3022,7 @@ function srSpeak(fromTop, startAt) {
   }
   try { speechSynthesis.cancel(); } catch (e) {}
   if (STALK.playing()) STALK.au.pause();  // 법문이 나오고 있으면 멈추고 책을 읽음
-  SR.speaking = true; wake(true, 'tts'); const b = $('#sSpeak'); if (b) b.textContent = '■ 듣기 멈춤';
+  SR.speaking = true; wake(true, 'tts'); const b = $('#sSpeak'); if (b) b.textContent = '■ 듣기 멈춤'; $$('.s-sent').forEach(x => x.hidden = false);
   const t0 = SR.t0 || (SR.t0 = Date.now());
   const next = () => {
     if (!SR.speaking) return;
@@ -3131,24 +3169,46 @@ function simpleKey(e) {
     case 'N': if (!SR.r) { sayKey('책을 읽을 때 쓰는 키입니다'); return true; } sayKey('장 목록', () => sGo('./')); return true;
     case 'L': sayKey('내 서재', () => sGo('/simple/mine/')); return true;
     case 'M': sayKey('첫 화면', () => sGo('/simple/')); return true;
-    case 'B': {
-      if (!reading) { sayKey('책갈피는 책의 장 글 화면에서 넣을 수 있습니다'); return true; }
-      const el = $$('.s-text [data-pg]').find(x => x.getBoundingClientRect().bottom > 80) || $('.s-text [data-pg]'); if (!el) return true;
-      const n = +el.dataset.pg, pg = SR.r.pages[n - 1] || { n }, l = store.get('bm', []), i = l.findIndex(m => m.id === SR.id && m.p === n);
-      if (i > -1) { l.splice(i, 1); sayKey(`${pageName(pg)}의 책갈피를 지웠습니다`); } else { l.push({ id: SR.id, t: SR.title, p: n, pl: pg.label || '', note: '', d: today() }); sayKey(`${pageName(pg)}에 책갈피를 달았습니다`); }
-      store.set('bm', l); return true;
-    }
-    case 'K': {
-      const path = $$('.s-path a, .s-path [aria-current]').map(x => x.textContent.trim()).join(', ');
-      const o = $('.s-list [aria-selected="true"] .s-c1');
-      let m = `지금 위치: ${path}`;
-      if (STALK.now && STALK.now()) m += ', 법문 ' + STALK.now();
-      if (reading) { const el = $$('.s-text [data-pg]').find(x => x.getBoundingClientRect().bottom > 80); if (el) m += `, ${pageName(SR.r.pages[+el.dataset.pg - 1] || {})}`; if (SR.speaking) m += ', 듣는 중'; }
-      else if (o) m += `, 고른 줄: ${o.textContent.trim()}`;
-      sayKey(m); return true;
-    }
+    case 'B': if (!reading) { sayKey('책갈피는 책의 장 글 화면에서 넣을 수 있습니다'); return true; } sBookmark(); return true;
+    case 'K': sWhere(); return true;
   }
   return false;
+}
+// 단순 화면 장 글: 책갈피·지금 위치·쪽으로 가기 — 단축키(B·K)와 단추가 함께 씀
+function sCurEl() { const sp = SR.speaking && $('.s-text .speaking'); return sp || $$('.s-text [data-pg]').find(x => x.getBoundingClientRect().bottom > 80) || $('.s-text [data-pg]'); }
+function sBookmark() {
+  const el = sCurEl(); if (!el || !SR.r) return;
+  const n = +el.dataset.pg, pg = SR.r.pages[n - 1] || { n }, l = store.get('bm', []), i = l.findIndex(m => m.id === SR.id && m.p === n);
+  let msg; if (i > -1) { l.splice(i, 1); msg = `${pageName(pg)}의 책갈피를 지웠습니다`; } else { l.push({ id: SR.id, t: SR.title, p: n, pl: pg.label || '', note: '', d: today() }); msg = `${pageName(pg)}에 책갈피를 달았습니다`; }
+  store.set('bm', l); sayKey(msg);
+}
+function sWhere() {
+  const reading = !!(SR.r && $('#sSpeak'));
+  const path = $$('.s-path a, .s-path [aria-current]').map(x => x.textContent.trim()).join(', ');
+  const o = $('.s-list [aria-selected="true"] .s-c1');
+  let m = `지금 위치: ${path}`;
+  if (STALK.now && STALK.now()) m += ', ' + STALK.now();
+  if (reading) { const el = sCurEl(); if (el) m += `, ${pageName(SR.r.pages[+el.dataset.pg - 1] || {})}`; if (SR.speaking) m += ', 듣는 중'; }
+  else if (o) m += `, 고른 줄: ${o.textContent.trim()}`;
+  sayKey(m);
+}
+function sPgForm(on) {
+  const f = $('#sPgForm'), b = $('#sGoPg'); if (!f) return;
+  f.hidden = !on; if (b) b.setAttribute('aria-expanded', on);
+  if (on) { const i = $('#sPgIn'); i.value = ''; i.focus(); } else if (b) b.focus();
+}
+// 책에 인쇄된 쪽 번호(쪽 이름)로 가기 — 다른 장이면 그 장을 그림. 쪽 표시가 없는 번호는 그 번호를 품은 앞 쪽으로 (운영자 요청, 2026-11-18)
+function sGoPage(v) {
+  const q = String(v || '').trim().replace(/^(p\.?|쪽)\s*/i, '').replace(/\s*(쪽|페이지|p)$/i, '').trim(); if (!q || !SR.r) return;
+  const pages = SR.r.pages, lab = p => String(p.label || '').trim();
+  let idx = pages.findIndex(p => lab(p) === q), via = '';
+  if (idx < 0 && /^\d+$/.test(q)) { const num = +q; let best = -1; pages.forEach((p, i) => { const l = lab(p); if (/^\d+$/.test(l) && +l < num) best = i; }); if (best > -1 && pages.some(p => /^\d+$/.test(lab(p)) && +lab(p) > num)) { idx = best; via = ` (${lab(pages[best])}쪽에 이어짐)`; } }
+  if (idx < 0) { sayKey(`${q}쪽을 이 책에서 찾지 못했습니다`); return; }
+  const n = idx + 1, ci = withR(() => chapterOf(n)), was = SR.speaking;
+  if (was) srStop(true);
+  const go = () => { const t = $('#pm-' + n); if (t) { t.scrollIntoView({ block: 'start' }); t.setAttribute('tabindex', '-1'); t.focus({ preventScroll: true }); } SR.anchor = n; sayKey(`${q}쪽${via}`); if (was) srSpeak(); };
+  $('#sPgForm').hidden = true;
+  if (ci !== SR.ci) { srChapter(ci, n, true, go); } else go();
 }
 // 단순 화면 한 장을 열 때마다 (처음 열 때·sGo 로 본문만 바꿀 때)
 function sPageInit() {

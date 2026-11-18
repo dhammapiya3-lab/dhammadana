@@ -1300,3 +1300,8 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 .simple-ui .s-text .ab-now{outline:3px solid #b45f06;outline-offset:2px}
 .simple-ui .s-text,.simple-ui .s-h1{scroll-margin-top:calc(var(--sbar,64px) + 90px)}
 .simple-ui .s-player.top .s-btn{display:inline-flex;align-items:center;justify-content:center}
+/* 단순 화면 '쪽으로 가기' 칸 (운영자 요청, 2026-11-18) */
+.simple-ui .s-pgform{margin:-6px 0 16px;font-size:17px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.simple-ui .s-pgform input{font-size:18px;padding:6px 8px;border:2px solid #1f3b8a;border-radius:6px;width:7em}
+.simple-ui .s-pgform .s-btn{color:#1f3b8a;border-color:#1f3b8a;font-size:17px}
+:root.mode-night .simple-ui .s-pgform .s-btn,:root.mode-contrast .simple-ui .s-pgform .s-btn{color:#ffe36b;border-color:#ffe36b;background:#000}

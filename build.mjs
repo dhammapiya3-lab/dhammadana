@@ -247,6 +247,64 @@ const hasText = b => { const e = curEd(b), t = TEXTS[b.id]; return !!(t && (!t.e
 // 법보시 도서관에 보일 책: 온라인 읽기나 내려받을 파일이 하나라도 있는 책 (없는 책은 我無말들 출판사 쪽에만)
 const LIB_OK = b => hasText(b) || formats(b).length > 0;
 const LIB = () => BOOKS.filter(LIB_OK);
+// 글 파일(TXT) — 점자정보단말기(한소네 등)·데이지 플레이어·화면 낭독기용, 본문 글에서 저절로 만듦 (운영자 요청, 2026-11-18)
+// 꾸밈 표시(** °° @@ == §§ {{ }})는 빼고 글자는 그대로, 장 제목 '■', 쪽 표시 '[N쪽]', 각주 '[각주 N]', 그림은 설명만, 구분선·장식 그림은 뺌
+const TXT_DECO = /^(구분 ?장식|구분선|장식|꾸밈|무늬|법륜|사자상 그림|보리수 잎 그림)$/;
+const txtSafe = s => String(s || '').replace(/[\\/:*?"<>|\u0000-\u001f]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 80) || '책';
+const txtName = b => `${txtSafe(b.title)}.txt`;
+const txtOk = b => hasText(b) && !b.no_copy;
+function txtInline(s) {
+  return String(s).replace(/\*\*|°°|@@|==|§§|\{\{|\}\}/g, '').replace(/\[\^([^\]]+)\]/g, '[각주 $1]').replace(/ㆍ/g, '·');
+}
+function bookTxt(b) {
+  const t = TEXTS[b.id], e = curEd(b), say = t.say || {}, ix = indexOf(b.id);
+  const chaps = t.toc.filter(x => !/^\s/.test(x.title));
+  const out = [b.title];
+  if (b.subtitle) out.push(b.subtitle);
+  for (const x of [b.byline, b.translator]) if (x) out.push(String(x));
+  const pub = [e.publisher_print || e.publisher_ebook, e.label, e.date || e.year].filter(Boolean).join(', '); if (pub) out.push(pub);
+  if (b.license) out.push('이용 조건: ' + b.license);
+  out.push(`출처: 붓다담마 법보시 도서관 ${(S.site_url || 'https://dhammadana.kr').replace(/\/$/, '')}/book/${b.id}/`, '');
+  if (chaps.length > 1) { out.push('차례'); chaps.forEach(c => out.push(`- ${c.title.trim()}${c.label ? ` (${c.label}쪽)` : ''}`)); out.push(''); }
+  const norm = x => txtInline(x).replace(/^(##|\^\^|::|>>|\+\+|\|\||%%)\s*/, '').replace(/[\s.,·:()\[\]「」『』'"‘’“”]/g, '');
+  t.pages.forEach((pg, pi) => {
+    const n = pi + 1, starts = chaps.filter(c => c.page === n);
+    let paras = pg.text ? pg.text.split(/\n\s*\n/) : [];
+    const head = starts.find(c => !c.at), mids = starts.filter(c => c.at);
+    if (head) out.push('', '', '■ ' + head.title.trim(), '');
+    if (pg.label) out.push(`[${pg.label}쪽]`);
+    let firstHead = head ? norm(head.title) : null, seen = 0;
+    for (let q of paras) {
+      q = q.trim(); if (!q) continue;
+      const mid = mids.find(c => norm(q).startsWith(norm(c.at)));
+      if (mid) { out.push('', '', '■ ' + mid.title.trim(), ''); firstHead = norm(mid.title); seen = 0; }
+      seen++;
+      if (firstHead && seen <= 3 && norm(q) === firstHead) continue;  // 장 제목과 같은 첫머리 제목은 한 번만
+      if (/^\[\[색인\]\]$/.test(q)) {
+        if (ix) for (const part of ix.parts) { out.push('', `${part.part || ''} ${part.title || ''}`.trim(), ''); for (const r of part.rows || []) out.push(r.map((c, i) => i === r.length - 1 && typeof c === 'number' ? c + '쪽' : c).filter(c => c !== '' && c != null).join(' / ')); }
+        continue;
+      }
+      const lines = [];
+      for (let l of q.split('\n')) {
+        l = l.replace(/\s+$/, '');
+        const im = l.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+        if (im) { const alt = im[1].replace(/^#/, '').trim(); if (say[im[2]]) lines.push('[그림 내용] ' + txtInline(say[im[2]]).replace(/\n+/g, ' / ')); else if (alt && !TXT_DECO.test(alt)) lines.push(`[그림: ${txtInline(alt)}]`); continue; }
+        if (/^\s*~\s*$/.test(l)) { lines.push(''); continue; }
+        if (/^\s*\|?\s*:?-{3,}/.test(l) && /\|/.test(l)) continue;  // 표 구분 줄
+        if (/^\s*\|/.test(l)) { lines.push(l.replace(/^\s*\||\|\s*$/g, '').split('|').map(c => txtInline(c.trim())).filter(Boolean).join(' / ')); continue; }
+        if (/^%%\s?/.test(l) || (lines.length && /^%%/.test(q))) {  // 차례 줄: '-' 단계는 들여쓰기, ' | 18' 은 쪽 번호
+          l = l.replace(/^%%\s?/, ''); const d = (l.match(/^-+/) || [''])[0].length; l = l.replace(/^-+\s*/, '');
+          l = l.replace(/\s+\|\s+([^|]+)$/, ', $1쪽'); lines.push('  '.repeat(d) + txtInline(l)); continue;
+        }
+        l = l.replace(/^\[\^([^\]]+)\]:\s*/, '[각주 $1] ').replace(/^(##|\^\^|::|>>|\+\+|\|\|)\s*/, '');
+        lines.push(txtInline(l));
+      }
+      out.push(lines.join('\n').trim(), '');
+    }
+  });
+  return '﻿' + out.join('\n').replace(/\n{4,}/g, '\n\n\n').replace(/\n/g, '\r\n');
+}
+
 const readerManifest = b => { const e = curEd(b); if (hasText(b)) return `/texts/${b.id}.json`; return e.reader ? fileUrl(`reader/${b.id}/${encodeURIComponent(e.label || 'ed')}/manifest.json`) : ''; };
 
 // 창고(R2)에서 지워진 파일은 단추를 숨김: 사이트를 만들 때 파일이 실제로 있는지 확인
@@ -1044,6 +1102,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     if (hasText(b)) rows.push({ href: `/simple/book/${b.id}/read/`, ic: '📖', kind: 'read', cols: ['온라인으로 읽기', '장 목록에서 장을 골라 글로 읽기'] });
     if (hasText(b)) rows.push({ href: `/simple/book/${b.id}/read/?listen=1`, ic: '🔊', kind: 'listen', cols: ['듣기', '읽던 곳(처음이면 첫 장)을 열고 ‘▶ 듣기’ 단추로 — Enter 를 누르면 기기 목소리가 읽어 줌'] });
     if (hasText(b) && AUDIO[b.id]) rows.push({ href: `/simple/book/${b.id}/read/?audio=1`, ic: '🎧', kind: 'audio', cols: [AUDIO[b.id].human ? '오디오북 (사람이 읽은 녹음)' : '오디오북 (기계 음성)', '듣던 장(처음이면 첫 장)을 열고 ‘🎧 오디오북’ 단추로 — 맨 위 재생기에서 재생, 듣는 문단을 따라감'] });
+    if (txtOk(b)) rows.push({ href: `/txt/${b.id}/${encodeURIComponent(txtName(b))}`, ic: '📃', kind: 'file', dl: true, cols: ['글 파일(TXT) 내려받기', '본문 글만 담은 파일 — 점자정보단말기·데이지 플레이어·메모장에서 읽기'] });
     for (const x of f) rows.push({ href: x.url, ic: x.k === 'PDF' ? '📄' : x.k === 'EPUB' ? '📘' : '📝', kind: 'file', dl: !x.ext, ext: x.ext, cols: [`${x.name} ${x.ext ? '(다른 사이트에서)' : '내려받기'}`, x.ext ? x.site : '파일'] });
     rows.push({ href: `/simple/book/${b.id}/about/`, ic: 'ℹ️', kind: 'about', cols: ['책 소개', '지은이·옮긴이·펴낸 곳·소개 글·차례'] });
     rows.push({ href: `/simple/book/${b.id}/license/`, ic: '⚖️', kind: 'license', cols: ['라이선스', b.license ? `이용 조건: ${b.license}` : '이용 조건'] });
@@ -1129,6 +1188,7 @@ const indexOf = id => { const f = C('indexes/' + id + '.json'); return fs.exists
 fs.mkdirSync(path.join(OUT, 'data/audio'), { recursive: true });
 for (const [id, a] of Object.entries(AUDIO)) fs.writeFileSync(path.join(OUT, 'data/audio', id + '.json'), JSON.stringify({ book: id, voice: a.voice || '', chapters: a.chapters.map(c => ({ ...c, url: fileUrl(c.file) + '?v=' + (c.size || '') + (a.up && a.up[c.n] ? '-' + a.up[c.n] : '') }))  /* 같은 이름으로 새 파일을 올려도 옛 파일을 저장해 둔 기기·저장소가 새 파일을 받게 */ }));
 for (const [id, t] of Object.entries(TEXTS)) { const ix = indexOf(id); fs.writeFileSync(path.join(OUT, 'texts', id + '.json'), JSON.stringify({ book: id, edition: t.edition, pages: t.pages, toc: t.toc, ...(t.say ? { say: t.say } : {}), ...(t.ph ? { ph: t.ph } : {}), ...(t.table_dl ? { table_dl: t.table_dl } : {}), ...(t.spread ? { spread: true } : {}), ...(t.center_heads ? { center_heads: true } : {}), ...(t.ly ? { ly: t.ly } : {}), ...(ix ? { index: { colnames: ix.colnames, parts: ix.parts } } : {}) })); }
+for (const b of LIB().filter(txtOk)) { const d = path.join(OUT, 'txt', b.id); fs.mkdirSync(d, { recursive: true }); fs.writeFileSync(path.join(d, txtName(b)), bookTxt(b)); }
 // 앱 연동 목록 (운영자 요청, 2026-11-17): /api/v1/catalog.json — 규격은 public/api/v1/README.md
 await import('./tools/app_catalog.mjs').then(m => m.writeCatalog({ OUT, C, S, BOOKS, TEXTS, PARALLEL, AUDIO, HEADS, LICENSES: LIC_URL, fileUrl, curEd, hasText, formats, teacherById, PAGES, dlName, langsOf }));
 // 관리자 화면이 예전 설정(config.yml)을 기억하지 않도록 바뀔 때마다 주소 끝에 표시를 붙입니다.
