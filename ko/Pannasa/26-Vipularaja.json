@@ -1,0 +1,651 @@
+[
+ {
+  "img": "images/26-Vipularaja-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     298,
+     352,
+     382
+    ],
+    "ko": "향실에 계신 여래께서는 비구들이 당신의 끝없는 보시에 감탄하는 소리를 들으셨습니다. 그리고 부처를 이루려고 재물보다 훨씬 많은 것을 내주던 먼 옛날부터 보시 바라밀을 닦아 오셨음을 밝히셨습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     64,
+     314,
+     146
+    ],
+    "ko": "수담마와띠의 위뿔라 왕은 보시당 여섯 곳을 세웠습니다. 날마다 육십만 닢을 나누며, 큰 비구름이 땅을 적시듯 재물·음식·옷 같은 바깥의 보시를 백성에게 베풀었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     254,
+     202,
+     344,
+     226
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     454,
+     200,
+     540,
+     226
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     246,
+     228,
+     336,
+     298
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     470,
+     228,
+     570,
+     292
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     182,
+     176,
+     240,
+     198
+    ],
+    "ko": "길 A",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     568,
+     176,
+     624,
+     198
+    ],
+    "ko": "길 B",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     92,
+     360,
+     206,
+     400
+    ],
+    "ko": "바깥의 보시",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     598,
+     360,
+     712,
+     400
+    ],
+    "ko": "안의 보시",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     254,
+     340,
+     548,
+     412
+    ],
+    "ko": "황금 창밖을 내다보던 왕은 마음이 차지 않았습니다. “나는 바깥의 보시만 하는구나. 누가 내 머리나 눈이나 살을 달라 하면 주리라. 나 자신을 종으로라도 주리라.”",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     340,
+     322,
+     418
+    ],
+    "ko": "안의 보시를 하겠다는 장엄한 결심이 세상의 평온을 깨뜨렸습니다. 대지가 흔들리고 바다가 출렁였으며, 수미산이 젖은 갈대처럼 휘었습니다. 하늘에서는 삭까의 옥좌가 뜨거워졌습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     410,
+     54,
+     740,
+     142
+    ],
+    "ko": "위뿔라 왕이 일체지를 향해 가는 참된 부처의 싹임을 안 삭까는 천상에서 내려왔습니다. 그리고 젊은 바라문으로 모습을 바꾸어 왕의 마지막 결심을 시험하러 다가갔습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     238,
+     374,
+     564,
+     436
+    ],
+    "ko": "바라문이 짠다 왕비를 청하자 위뿔라는 두려움 없이 보시의 물을 부었습니다. 왕비가 사자후로 외쳤습니다. “저는 당신의 종이니 누구에게든 주십시오.” 대지가 흔들려 증명했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     466,
+     352,
+     744,
+     424
+    ],
+    "ko": "삭까는 다른 바라문으로 변장해 위잘라 왕자를 청했습니다. 왕은 아들의 머리에 입 맞추고 깨달음을 위해 내주었습니다. 이 희생에 도성 전체가 들끓었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     242,
+     30,
+     558,
+     112
+    ],
+    "ko": "삭까는 늙고 쇠약한 바라문으로 나타나 나라를 달라고 했습니다. 위뿔라는 왕의 재산을 모두 내주며 오직 일체지를 바랐습니다. 모든 중생을 윤회의 바다 건너 열반으로 이끌기 위해서였습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     40,
+     580,
+     80
+    ],
+    "ko": "지극한 보시를 들여다보다",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     506,
+     118,
+     608,
+     148
+    ],
+    "ko": "대지가 흔들림",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     506,
+     212,
+     608,
+     254
+    ],
+    "ko": "무서운\n소란",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     510,
+     306,
+     604,
+     348
+    ],
+    "ko": "삭까가\n모습을 드러냄",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     156,
+     390,
+     648,
+     438
+    ],
+    "ko": "요청이 커질 때마다 세상 집착의 껍질이 한 겹씩 벗겨졌고, 위뿔라가 보시 바라밀을 증명할수록 우주의 진동도 커졌습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     312,
+     276,
+     434
+    ],
+    "ko": "삭까가 참되고 빛나는 모습을 드러냈습니다. 왕비와 왕자와 나라를 돌려주며, 위뿔라가 모든 적을 이겼고 미래에 반드시 부처가 되리라고 선언했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     242,
+     98,
+     364,
+     136
+    ],
+    "ko": "브라흐마야나\n(거룩한 수레)",
+    "cover": [
+     222,
+     203,
+     173
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     466,
+     168,
+     596,
+     208
+    ],
+    "ko": "아녹깜마\n(낮은 세상에 안 남)",
+    "cover": [
+     221,
+     203,
+     174
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     208,
+     378,
+     594,
+     432
+    ],
+    "ko": "일곱 가지 보배가 보시당 위에 쏟아졌습니다. 삭까는 이 완전한 보시를 거룩한 수레라고 찬탄했습니다. 이런 보시는 낮은 세상에 태어나지 않게 하고 가장 높은 열매를 맺게 합니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     32,
+     556,
+     92
+    ],
+    "ko": "업으로 이어진 다시 태어남",
+    "cover": false,
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     110,
+     128,
+     218,
+     160
+    ],
+    "ko": "위뿔라 왕",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     196,
+     200,
+     310,
+     230
+    ],
+    "ko": "짠다 왕비",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     270,
+     280,
+     376,
+     304
+    ],
+    "ko": "위잘라 왕자",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     170,
+     362,
+     236,
+     386
+    ],
+    "ko": "삭까",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     598,
+     150,
+     694,
+     172
+    ],
+    "ko": "부처님",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     508,
+     202,
+     586,
+     228
+    ],
+    "ko": "야소다라",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     506,
+     280,
+     574,
+     304
+    ],
+    "ko": "라훌라",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     592,
+     364,
+     678,
+     386
+    ],
+    "ko": "아누룻다",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     170,
+     386,
+     638,
+     446
+    ],
+    "ko": "수담마와띠에서 맺은 지극한 희생의 인연은 여러 생에 메아리쳐, 제따와나에서 여래의 마지막 깨달음으로 열매 맺었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Vipularaja-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     346,
+     716,
+     400
+    ],
+    "ko": "“공덕을 바라고 보시를 즐기던 그 위뿔라 왕이 바로 지금의 나, 세상의 주인인 여래다.” 이렇게 자따까를 마치며 완전한 보시의 순환을 믿음으로 간직했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
