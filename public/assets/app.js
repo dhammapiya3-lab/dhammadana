@@ -2109,7 +2109,8 @@ function renderNotes() {
   const pd = $('#pkDel', root); if (pd) pd.onclick = () => {
     const n = nPicked.size; if (!n) return;
     const box = $('#pkAsk', root); box.hidden = false;
-    box.innerHTML = `<span id="pkQ">고른 기록 ${n}개를 지울까요?${ACC.token ? ' 로그인한 다른 기기에서도 지워집니다.' : ''}</span> <button class="btn sm" id="pkYes">지우기</button> <button class="btn sm ghost" id="pkNo">그만두기</button>`;
+    const nms = $$('[data-pk]', root).filter(c => c.checked).map(c => ((c.closest('label') || {}).querySelector('.sr') || {}).textContent || '').map(t => t.replace(/^:\s*/, ''));
+    box.innerHTML = `<span id="pkQ">고른 기록 ${n}개를 지울까요? ${esc(nms.slice(0, 6).join(', '))}${nms.length > 6 ? ` 외 ${nms.length - 6}개` : ''}.${ACC.token ? ' 로그인한 다른 기기에서도 지워집니다.' : ''}</span> <button class="btn sm" id="pkYes">지우기</button> <button class="btn sm ghost" id="pkNo">그만두기</button>`;
     $('#pkNo', box).onclick = () => { box.hidden = true; pd.focus(); };
     $('#pkYes', box).onclick = () => { [...nPicked].forEach(sDelDo); nPicked.clear(); renderNotes(); toast(`기록 ${n}개를 지웠습니다`); const t = $(`[data-ntb="${notesTab}"]`, root); if (t) t.focus(); };
     box.onkeydown = e => { if (e.key === 'Escape') { e.preventDefault(); box.hidden = true; pd.focus(); } };
@@ -3177,7 +3178,7 @@ function initSimpleMine() {
     if (mode) {
       for (const k of [...sPicked]) if (!dels.some(li => li.dataset.del === k)) sPicked.delete(k);
       dels.forEach(li => sPickShow(li));
-      ul._pick = li => { const k = li.dataset.del, on = !sPicked.has(k); if (on) sPicked.add(k); else sPicked.delete(k); sPickShow(li); sPickBar(); sayKey(`${on ? '골라짐' : '고르기 풀림'}. 고른 기록 ${sPicked.size}개`); };
+      ul._pick = li => { const k = li.dataset.del, on = !sPicked.has(k); if (on) sPicked.add(k); else sPicked.delete(k); sPickShow(li); sPickBar(); sayKey(`${li.dataset.nm || ''} ${on ? '골라짐' : '고르기 풀림'}. 지금 고른 기록 ${sPicked.size}개`); };
     }
     if (f) {
       root.insertAdjacentHTML('beforeend', `<div class="s-del-row" id="sDelRow"></div>`);
@@ -3191,9 +3192,9 @@ const sPicked = new Set();
 function sPickShow(li) {
   const on = sPicked.has(li.dataset.del), ic = $('.s-ic', li);
   if (ic) ic.textContent = on ? '☑' : '☐';
-  li.setAttribute('aria-checked', on ? 'true' : 'false'); li.classList.toggle('picked', on);
+  li.classList.toggle('picked', on);  // 낭독기에는 줄 이름 끝의 ', 지우려고 골라짐' 글로 알림(aria-checked 는 낭독기마다 달리 읽고, 커서 표시 aria-selected '선택됨'과 헷갈려 쓰지 않음)
   let sr = $('.s-pk', li); if (!sr) { sr = document.createElement('span'); sr.className = 'sr s-pk'; (li.firstElementChild || li).appendChild(sr); }
-  sr.textContent = on ? ', 골라짐' : ', 고르지 않음';
+  sr.textContent = on ? ', 지우려고 골라짐' : ', 고르지 않음';
 }
 function sPickBar() {
   const row = $('#sDelRow'); if (!row) return;
@@ -3215,7 +3216,8 @@ function sPickBar() {
   const go = $('#sDelGo'); if (go) go.onclick = () => {
     if (!sPicked.size) { sayKey('먼저 지울 기록을 고르세요'); return; }
     const ks = [...sPicked], one = ks.length === 1 ? ($$('#sMine .s-list > li[data-del]').find(li => li.dataset.del === ks[0]) || {}).dataset : null;
-    sAsk(one ? `${one.nm} 기록을 지울까요?` : `고른 기록 ${ks.length}개를 지울까요?`, () => {
+    const nms = ks.map(k => ($$('#sMine .s-list > li[data-del]').find(li => li.dataset.del === k) || {}).dataset).filter(Boolean).map(d => d.nm);
+    sAsk(one ? `${one.nm} 기록을 지울까요?` : `고른 기록 ${ks.length}개를 지울까요? ${nms.slice(0, 6).join(', ')}${nms.length > 6 ? ` 외 ${nms.length - 6}개` : ''}.`, () => {
       ks.forEach(sDelDo); sPicked.clear(); sDelOn = false;
       sDelDone(one ? `${one.nm} 기록을 지웠습니다` : `기록 ${ks.length}개를 지웠습니다`);
     }, go);
