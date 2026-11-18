@@ -180,5 +180,12 @@
   "order": 1,
   "hidden": false,
   "no_copy": false,
-  "hide_update": false
+  "hide_update": false,
+  "originals": [
+    {
+      "lang": "미얀마어",
+      "mode": "file",
+      "url": "orig/DL-0001/DL-0001_원서_미얀마어.zip"
+    }
+  ]
 }
