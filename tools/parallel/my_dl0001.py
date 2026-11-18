@@ -29,7 +29,9 @@ VOLS = [('b1', 'အကာကိုပစ်၍ အနှစ်ကိုရှာ
 RECORD = {('b3', 5, 1)}   # 기록 문단인데 '>> ' 없이 적은 것: (권, PDF 쪽, 그 쪽 문단 순번)
 
 orig, txt_out = [], []
+vol_start = []
 for vol, title, num in VOLS:
+    vol_start.append(len(txt_out))
     txt_out.append(f'##### {num} {title} #####')
     for f in sorted(glob.glob(os.path.join(SRC, vol, '[0-9][0-9][0-9].txt'))):
         pdf = int(os.path.basename(f)[:3])
@@ -59,5 +61,13 @@ open(os.path.join(OUT, 'DL-0001_미얀마어_원서.txt'), 'w', encoding='utf-8'
     'ဒေါက်တာ အရှင်နန္ဒမာလာဘိဝံသ — 『난다말라비왐사 큰스님 가르침』의 미얀마어 원서 다섯 권\n'
     'dhammadownload.com 스캔본(PDF) 쪽 그림을 보며 옮겨 적은 글. 쪽 표시: 책 쪽 (PDF 쪽)\n\n'
     + '\n\n'.join(txt_out) + '\n')
+# 권마다 따로 (운영자 요청 2026-11-18): DL-0001_미얀마어_원서_N_제목.txt
+KO = ['Ⅰ', 'Ⅱ', 'Ⅲ', 'Ⅳ', 'Ⅴ']
+for n, (vol, title, num) in enumerate(VOLS):
+    part = txt_out[vol_start[n]:(vol_start[n + 1] if n + 1 < len(VOLS) else len(txt_out))]
+    open(os.path.join(OUT, f'DL-0001_미얀마어_원서_{n + 1}_{title}.txt'), 'w', encoding='utf-8').write(
+        f'ဒေါက်တာ အရှင်နန္ဒမာလာဘိဝံသ {num} 『{title}』 — 『난다말라비왐사 큰스님 가르침』 {KO[n]}장의 미얀마어 원서\n'
+        'dhammadownload.com 스캔본(PDF) 쪽 그림을 보며 옮겨 적은 글. 쪽 표시: 책 쪽 (PDF 쪽)\n\n'
+        + '\n\n'.join(part) + '\n')
 from collections import Counter
 print('원서 문단', len(orig), dict(Counter(p['k'] for p in orig)))
