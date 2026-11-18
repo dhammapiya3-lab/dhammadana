@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.ddFlushBody = flushAll;
   const style = document.createElement('style');
   style.textContent = `
-.dd-ed{position:relative;border:1px solid #c9b8a6;border-radius:8px;background:#fff;overflow:hidden;resize:vertical;height:70vh;min-height:240px}
+.dd-ed{position:relative;border:1px solid #c9b8a6;border-radius:8px;background:#fff;overflow:hidden;resize:vertical;height:70vh;min-height:240px;contain:layout paint style}  /* 편집기 안에서 글자를 쳐도 관리 화면 전체를 다시 배치하지 않게 */
 .dd-ed .cm-editor{height:100%;font:15px/1.7 ui-monospace,monospace,sans-serif;color:#222}
 .dd-ed .cm-editor.cm-focused{outline:2px solid #c9a27a;outline-offset:-2px}
 .dd-ed .cm-scroller{font-family:inherit;line-height:1.7}
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 .dd-ed .cm-panel.cm-search input,.dd-ed .cm-panel.cm-search button{font-size:14px}
 .dd-ed .cm-searchMatch{background:#ffe48a}
 .dd-ed .cm-searchMatch-selected{background:#ffb84d}
-.dd-mark{font:13px sans-serif;color:#8a5a00;margin:4px 2px 0;min-height:1.2em}
+.dd-mark{font:13px sans-serif;color:#8a5a00;margin:4px 2px 0;min-height:1.2em;contain:layout paint}
 textarea.dd-fast{display:block;width:100%;height:70vh;box-sizing:border-box;font:15px/1.7 ui-monospace,monospace,sans-serif;padding:10px 12px;border:1px solid #c9b8a6;border-radius:8px;resize:vertical;white-space:pre-wrap;background:#fff;color:#222}`;
   document.head.appendChild(style);
   const KO = { 'Find': '찾을 말', 'Replace': '바꿀 말', 'next': '다음', 'previous': '이전', 'all': '모두 찾기', 'match case': '대소문자 구분', 'regexp': '정규식', 'by word': '낱말 단위', 'replace': '바꾸기', 'replace all': '모두 바꾸기', 'close': '닫기', 'current match': '지금 찾은 곳', 'on line': '줄', 'replaced match on line $': '$ 줄에서 바꿈', 'replaced $ matches': '$곳 바꿈', 'Go to line': '줄로 가기', 'go': '가기' };
@@ -115,9 +115,9 @@ textarea.dd-fast{display:block;width:100%;height:70vh;box-sizing:border-box;font
       o = { el: fast, get: () => fast.value, set: v => { fast.value = v; } };
     }
     o.last = orig.value; o.dirty = false;
-    o.mark = on => { note.textContent = on ? '✎ 저장 전 고친 내용이 있습니다 — 저장 단추를 누르면 함께 저장됩니다.' : ''; };
+    o.mark = on => { if (o.marked === on) return; o.marked = on; note.textContent = on ? '✎ 저장 전 고친 내용이 있습니다 — 저장 단추를 누르면 함께 저장됩니다.' : '⚡ 빠른 편집기 (2026-11-18)'; };  // 글자마다 바꾸지 않음 — 바뀔 때만 (같은 글을 다시 넣어도 관리 화면 전체가 다시 배치됨)
     orig.style.display = 'none';
-    orig.insertAdjacentElement('afterend', o.el); o.el.insertAdjacentElement('afterend', note); o.note = note;
+    orig.insertAdjacentElement('afterend', o.el); o.el.insertAdjacentElement('afterend', note); o.note = note; o.mark(false);
     pairs.set(orig, o);
   };
   setInterval(() => {
