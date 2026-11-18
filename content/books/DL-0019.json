@@ -25,7 +25,9 @@
   ],
   "book_type": "해설서",
   "original_title": "DĀNA : The Practice of Giving",
-  "original_language": ["영어"],
+  "original_language": [
+    "영어"
+  ],
   "original_source": "(The Wheel Publication No. 367-369 1990) Second edition(revised) 1994 BUDDHIST PUBLICATION SOCIETY Kandy․Sri Lanka",
   "series": "법륜",
   "main": [
@@ -154,5 +156,12 @@
   "added": "2026-11-11",
   "order": null,
   "hidden": false,
-  "hide_update": false
+  "hide_update": false,
+  "originals": [
+    {
+      "lang": "영어",
+      "mode": "file",
+      "url": "orig/DL-0019/DL-0019_원서_영어.pdf"
+    }
+  ]
 }
