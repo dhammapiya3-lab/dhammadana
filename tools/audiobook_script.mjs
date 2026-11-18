@@ -144,8 +144,8 @@ top.forEach((c, k) => {
       pre = pre.replace(/[ \t]*…+[ \t]*(\d+(?:[ \t]*,[ \t]*\d+)*)[ \t]*$/gm, ' $1 쪽.');
       // 줄 첫머리의 게송 번호 '(1149) 확고부동하고…'는 번호 뒤에 마침표가 있는 것처럼 잠시 쉬고 읽음: '1149. 확고부동하고' (운영자 요청, 2026-11-10)
       pre = pre.replace(/^\((\d+)\)[ \t]*/gm, '$1. ');
-      // 꾸밈 기호(⊙ ☞ • ■ §)는 소리 내지 않음 — 음성 엔진이 어차피 건너뛰지만 원고에서도 빼 둠
-      pre = pre.replace(/[⊙☞•■§]\s*/g, '');  // 판권지는 책 이름·판·사람·펴낸 곳만
+      // 꾸밈 기호(⊙ ☞ • ■ § ❦)는 소리 내지 않음 (❦ 는 잠언 사이 구분 — DL-0005, 2026-11-18) — 음성 엔진이 어차피 건너뛰지만 원고에서도 빼 둠
+      pre = pre.replace(/[⊙☞•■§❦]\s*/g, '');  // 판권지는 책 이름·판·사람·펴낸 곳만
       if (!pre.trim()) return;
       const said = lib.sayable(pre, OPT);
       (pre.match(LAT) || []).forEach(w => { const s = lib.PALI(w.replace(/[’'-]/g, '')); if (s && lib.langOf(w) !== 'E') changes.set(w, s); });
