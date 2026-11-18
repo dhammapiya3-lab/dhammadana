@@ -1,0 +1,631 @@
+[
+ {
+  "img": "images/13-Suvannakumara-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     314,
+     208,
+     488,
+     236
+    ],
+    "ko": "수완나꾸마라 자따까",
+    "cover": [
+     138,
+     72,
+     46
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     314,
+     236,
+     488,
+     258
+    ],
+    "ko": "황금 왕자의 지혜",
+    "cover": [
+     144,
+     95,
+     63
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Suvannakumara-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     188,
+     362,
+     616,
+     444
+    ],
+    "ko": "제따와나에 머무시던 일체지자 부처님께서는 질문에 답하고 의심을 풀어 주시는 견줄 데 없는 능력을 비구들이 찬탄하는 것을 들으셨습니다. 그 큰 지혜가 윤회 내내 이어져 왔음을 보여 주시려고 지난 일을 들려주셨습니다.",
+    "cover": [
+     231,
+     212,
+     182
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Suvannakumara-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     184,
+     376,
+     616,
+     444
+    ],
+    "ko": "옛 바라나시에서 브라흐마닷따 왕의 후궁이 아이를 가졌습니다. 성난 사악한 정비가 처리를 요구하자, 몹시 부끄러웠지만 압박에 굴한 왕은 거짓말을 하고 몰래 집행인에게 그 여인을 성 밖에서 죽이라고 명했습니다.",
+    "cover": [
+     230,
+     209,
+     178
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Suvannakumara-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     204,
+     374,
+     598,
+     440
+    ],
+    "ko": "왕의 흰 일산에 사는 천신이 나서서 집행인의 마음을 돌렸습니다. 집행인의 집에 숨은 후궁은 금빛 아들 수완나꾸마라를 낳았습니다. 일곱 살이 된 아이는 큰 아름다움과 지혜로 빛났습니다.",
+    "cover": [
+     226,
+     209,
+     182
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Suvannakumara-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     326,
+     340,
+     406
+    ],
+    "ko": "천신이 하늘에 나타나 열 겹의 질문을 냈습니다. 왕이 답하지 못하면 하늘의 쇠 철퇴가 머리를 꼭 일곱 조각으로 쪼갤 것이었습니다. 겁에 질린 왕은 수수께끼 하나도 풀지 못했습니다.",
+    "cover": [
+     219,
+     197,
+     160
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Suvannakumara-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     530,
+     36,
+     766,
+     144
+    ],
+    "ko": "세 가지 원인을 갖춘 지혜로운 수완나꾸마라가\n나라를 구하겠다고 나섰습니다.\n천상처럼 꾸민 도성, 왕실 일산 아래\n어린 대인(보살)이 법을 설하려 합니다.",
+    "cover": [
+     220,
+     193,
+     155
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "ellipse": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Suvannakumara-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     392,
+     122,
+     548,
+     160
+    ],
+    "ko": "3. 삼귀의",
+    "cover": [
+     211,
+     176,
+     129
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     352,
+     206,
+     584,
+     246
+    ],
+    "ko": "2. 두 상수제자",
+    "cover": [
+     210,
+     175,
+     128
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     300,
+     280,
+     664,
+     336
+    ],
+    "ko": "1. 일체지를 갖추신 부처님 한 분",
+    "cover": [
+     206,
+     170,
+     120
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     44,
+     330,
+     340,
+     406
+    ],
+    "ko": "더없는 지혜로 보살은 천신의 수수께끼를 밝혀 법의 굳건한 바탕을 세웠습니다. 완벽한 답을 할 때마다 천상의 보석이 하늘에서 쏟아지고, 왕은 크게 공경했습니다.",
+    "cover": [
+     215,
+     191,
+     154
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Suvannakumara-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     310,
+     48,
+     548,
+     84
+    ],
+    "ko": "6. 욕계의 여섯 하늘",
+    "cover": [
+     211,
+     177,
+     126
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     276,
+     116,
+     584,
+     150
+    ],
+    "ko": "5. 다섯 가지 계(pañcasīla)",
+    "cover": [
+     212,
+     183,
+     137
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     266,
+     166,
+     594,
+     204
+    ],
+    "ko": "4. 네 가지 계(pātimokkha)",
+    "cover": [
+     201,
+     166,
+     121
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     44,
+     328,
+     340,
+     406
+    ],
+    "ko": "가르침은 계의 청정함과 욕계의 우주론으로 높아졌습니다. 놀란 브라흐마닷따 왕은 법이 장엄하게 펼쳐지는 것을 기리려고 노비와 소와 무희를 수백씩 아이에게 계속 내렸습니다.",
+    "cover": [
+     210,
+     187,
+     152
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Suvannakumara-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     404,
+     46,
+     542,
+     70
+    ],
+    "ko": "10. 열 가지 계",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     404,
+     98,
+     534,
+     134
+    ],
+    "ko": "9. 아홉 가지\n출세간법",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     406,
+     152,
+     520,
+     176
+    ],
+    "ko": "8. 팔정도",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     418,
+     210,
+     598,
+     228
+    ],
+    "ko": "7. 일곱 가지 깨달음의 요소",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     60,
+     192,
+     318,
+     272
+    ],
+    "ko": "깨달음의 꼭대기에 이른 보살은 열반으로 가는 길을 완벽하게 밝혔습니다. 천신은 천상의 꽃을 뿌리며, 황금 소년의 지혜가 견줄 데 없는 세상의 보호막이라고 선언했습니다.",
+    "cover": [
+     232,
+     207,
+     167
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Suvannakumara-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     348,
+     596,
+     440
+    ],
+    "ko": "천신이 진실을 밝혔습니다. “대왕이여, 이 아이가 바로 왕의 친아들 수완나꾸마라입니다.” 기쁨에 넘친 집행인은 자신의 의로운 거짓을 털어놓았습니다. 왕은 곧바로 보살에게 왕위를 주고 그 어머니를 정비로 높였습니다.",
+    "cover": [
+     223,
+     196,
+     154
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Suvannakumara-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     70,
+     350,
+     116
+    ],
+    "ko": "정신의 통달",
+    "cover": false,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     456,
+     70,
+     740,
+     116
+    ],
+    "ko": "세간의 다스림",
+    "cover": false,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     40,
+     336,
+     760,
+     420
+    ],
+    "ko": "나라를 구하려 완벽한 정신의 통달을 보인 새 왕 수완나꾸마라는, 곧이어 나라를 다스리는 데 필요한 세간의 틀, 곧 의로운 왕의 열 가지 의무를 설했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Suvannakumara-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     292,
+     146,
+     510,
+     292
+    ],
+    "ko": "법에 굳게 선 수완나꾸마라 왕은 깊은 자애를 닦았습니다. 왕은 백성에게 보시와 계로 공덕을 지으라고 권하여, 온 나라가 죽은 뒤 함께 빛나는 천상 세계에 태어나게 했습니다.",
+    "cover": [
+     233,
+     220,
+     196
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Suvannakumara-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     40,
+     604,
+     90
+    ],
+    "ko": "가르침을 마치며 부처님께서 윤회를 건너온 이들을 밝히셨습니다. 사악한 정비는 거짓말쟁이 찐짜로 태어났고, 빠르고 날카롭고 큰 지혜를 지닌 황금 아이는 여래 자신이었습니다.",
+    "cover": [
+     217,
+     201,
+     177
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     300,
+     98,
+     500,
+     122
+    ],
+    "ko": "집행인 → 아난다",
+    "cover": [
+     226,
+     210,
+     174
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     290,
+     158,
+     512,
+     184
+    ],
+    "ko": "후궁 어머니 → 마하마야",
+    "cover": [
+     228,
+     211,
+     176
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     280,
+     222,
+     522,
+     248
+    ],
+    "ko": "브라흐마닷따 왕 → 숫도다나",
+    "cover": [
+     230,
+     213,
+     173
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     276,
+     280,
+     516,
+     310
+    ],
+    "ko": "사악한 정비 → 바라문 여인 찐짜",
+    "cover": [
+     231,
+     215,
+     176
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   },
+   {
+    "rect": [
+     290,
+     340,
+     556,
+     370
+    ],
+    "ko": "수완나꾸마라 → 여래(부처님)",
+    "cover": [
+     225,
+     208,
+     176
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true
+   }
+  ]
+ }
+]
