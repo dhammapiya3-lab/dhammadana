@@ -660,11 +660,11 @@
 "zip": 20588625
 },
 "The-Great-Emancipation": {
-"n": 24,
-"pdf": 25310709,
-"pdfs": 2598803,
-"stories": 2,
-"zip": 25055812
+"n": 116,
+"pdf": 119684653,
+"pdfs": 12034393,
+"stories": 10,
+"zip": 119396948
 },
 "The-Great-Emancipation/15-The-Courtesan-Ambapali": {
 "n": 12,
@@ -675,5 +675,45 @@
 "n": 12,
 "pdf": 12067252,
 "zip": 11795699
+},
+"The-Great-Emancipation/17-Anandas-Failure": {
+"n": 11,
+"pdf": 12012863,
+"zip": 11750418
+},
+"The-Great-Emancipation/18-The-Relinquishment-of-the-Life-Process": {
+"n": 11,
+"pdf": 12634109,
+"zip": 12357721
+},
+"The-Great-Emancipation/29-The-Last-Meal": {
+"n": 10,
+"pdf": 9927534,
+"zip": 9666627
+},
+"The-Great-Emancipation/30-Bringing-Drinking-Water": {
+"n": 12,
+"pdf": 12667469,
+"zip": 12397876
+},
+"The-Great-Emancipation/31-The-Story-Concerning-Pukkusa-Mallaputta": {
+"n": 13,
+"pdf": 13547873,
+"zip": 13267257
+},
+"The-Great-Emancipation/32-Cundas-Great-Gain": {
+"n": 10,
+"pdf": 11112672,
+"zip": 10847131
+},
+"The-Great-Emancipation/33-Worshipping-the-Realised-One": {
+"n": 11,
+"pdf": 10986667,
+"zip": 10712529
+},
+"The-Great-Emancipation/34-The-Visit-of-the-Divinities": {
+"n": 14,
+"pdf": 13611291,
+"zip": 13342444
 }
 }
