@@ -19,7 +19,9 @@
   ],
   "book_type": "경전",
   "original_title": "The Word of the Buddha",
-  "original_language": ["영어"],
+  "original_language": [
+    "영어"
+  ],
   "original_source": "The Word of the Buddha An Outline of the Teaching of the Buddha in the Words of the Pāli Canon Compiled, translated and explained by NYANATILOKA 16th ed. 1981 Buddhist Publication Society Kandy‧Sri Lanka",
   "series": "",
   "main": [
@@ -99,10 +101,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "file",
-        "url": "pdf/DL-0015/DL-0015_개정4판4쇄.pdf",
         "site": "",
-        "created": "2024년 9월 10일"
+        "created": "2024년 9월 10일",
+        "mode": "file",
+        "url": "pdf/DL-0015/DL-0015_개정4판4쇄.pdf"
       },
       "pdf_print": {
         "mode": "none",
