@@ -464,5 +464,5 @@ body = re.sub(r'\n{3,}', '\n\n', body).rstrip() + '\n'
 # 줄 끝에서 나뉜 로마자 낱말: 108쪽 각주 37 'Dhammacak-' + 'kappavattana' 만 붙임 (102쪽 'saddhā-bhājanam' 은 낱말 경계라 책의 합성어 표기처럼 줄표 그대로)
 body = body.replace('Dhammacak°°-°°kappavattana', 'Dhammacakkappavattana')
 out = os.path.join(REPO, 'content/texts', f'{BK}.json')
-json.dump({'book': BK, 'edition': ED, 'toc': toc, 'images': images, 'body': body}, open(out, 'w'), ensure_ascii=False, indent=1)
+json.dump({'book': BK, 'edition': ED, 'toc': toc, 'images': [{'image': u, 'caption': ''} for u in images], 'body': body}, open(out, 'w'), ensure_ascii=False, indent=1)
 print(dict(log), '쪽', len(PAGES), '장', len(chapters), '소제목', len(subs), '각주', len(FN), '→', out)

@@ -45,45 +45,97 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.append(r, l, m);
 });
 </script>
+<script src="/admin/cm-editor.js"></script>
 <script>
-// 책 본문처럼 아주 긴 글 칸이 버벅이지 않게 (운영자 요청, 2026-11-12)
-// 관리 화면(Sveltia)은 글자 하나 칠 때마다 책 본문 전체를 다시 계산해서 느려짐 →
-// 긴 칸(2만 자 넘음)은 그 자리에 가벼운 '빠른 입력 칸'을 겹쳐 두고, 거기서 치는 글은
-// 손을 1초 멈추거나 · 칸 밖을 누르거나 · 저장 단추를 누르기 직전에 한꺼번에 관리 화면으로 넘김.
-// 맞춤법 검사(빨간 밑줄)도 끔.
+// 책 본문처럼 아주 긴 글 칸이 버벅이지 않게 (운영자 요청, 2026-11-12 · 2026-11-18 다시 고침)
+// 관리 화면(Sveltia)은 글이 바뀔 때마다 책 본문 전체(100만 자 넘음)를 다시 계산해서 느려짐.
+// 2026-11-12: 긴 칸에 가벼운 textarea 를 겹쳐 두고 손을 1초 멈출 때마다 넘겼더니
+//  ① 100만 자 textarea 자체가 글자마다 화면 전체를 다시 그려 느리고 ② 1초 멈출 때마다 관리 화면이 다시 계산해 '멈칫' 함.
+// 2026-11-18: ① 긴 칸(2만 자 넘음)은 CodeMirror 편집기(/admin/cm-editor.js — 화면에 보이는 줄만 그림)로 바꾸고
+//  ② 관리 화면으로는 저장·다른 화면 단추를 누르기 직전(편집기 밖을 누를 때)·Ctrl+S·창을 떠날 때만 한꺼번에 넘김.
+//  편집기 위에 '저장 전 고친 내용 있음' 표시. Ctrl+F 는 편집기 안 찾기·바꾸기(한글 단추). 맞춤법 검사(빨간 밑줄)는 끔.
+//  CodeMirror 를 못 불러오면 예전 가벼운 textarea 로.
 (() => {
-  const BIG = 20000, WAIT = 1000, pairs = new Map();  // 원래 칸 → { fast, last, timer, dirty }
-  const push = (orig, o) => {  // 빠른 칸의 글을 관리 화면으로
-    clearTimeout(o.timer); o.timer = 0;
-    if (!o.dirty) return; o.dirty = false;
-    if (orig.value === o.fast.value) return;
+  const BIG = 20000, pairs = new Map();  // 원래 칸 → { get, set, el, last, dirty, mark }
+  const CM = window.DDCM;
+  const setOrig = (orig, v) => {
     const set = Object.getOwnPropertyDescriptor(HTMLTextAreaElement.prototype, 'value').set;
-    set.call(orig, o.fast.value); o.last = o.fast.value;
+    set.call(orig, v);
     orig.dispatchEvent(new Event('input', { bubbles: true })); orig.dispatchEvent(new Event('change', { bubbles: true }));
   };
+  const push = (orig, o) => {  // 편집기의 글을 관리 화면으로
+    if (!o.dirty) return; o.dirty = false; o.mark(false);
+    const v = o.get(); o.last = v;
+    if (orig.value !== v) setOrig(orig, v);
+  };
   const flushAll = () => pairs.forEach((o, orig) => push(orig, o));
+  window.ddFlushBody = flushAll;
+  const style = document.createElement('style');
+  style.textContent = `
+.dd-ed{position:relative;border:1px solid #c9b8a6;border-radius:8px;background:#fff;overflow:hidden;resize:vertical;height:70vh;min-height:240px}
+.dd-ed .cm-editor{height:100%;font:15px/1.7 ui-monospace,monospace,sans-serif;color:#222}
+.dd-ed .cm-editor.cm-focused{outline:2px solid #c9a27a;outline-offset:-2px}
+.dd-ed .cm-scroller{font-family:inherit;line-height:1.7}
+.dd-ed .cm-content{padding:10px 4px}
+.dd-ed .cm-panels{font:14px sans-serif}
+.dd-ed .cm-panel.cm-search input,.dd-ed .cm-panel.cm-search button{font-size:14px}
+.dd-ed .cm-searchMatch{background:#ffe48a}
+.dd-ed .cm-searchMatch-selected{background:#ffb84d}
+.dd-mark{font:13px sans-serif;color:#8a5a00;margin:4px 2px 0;min-height:1.2em}
+textarea.dd-fast{display:block;width:100%;height:70vh;box-sizing:border-box;font:15px/1.7 ui-monospace,monospace,sans-serif;padding:10px 12px;border:1px solid #c9b8a6;border-radius:8px;resize:vertical;white-space:pre-wrap;background:#fff;color:#222}`;
+  document.head.appendChild(style);
+  const KO = { 'Find': '찾을 말', 'Replace': '바꿀 말', 'next': '다음', 'previous': '이전', 'all': '모두 찾기', 'match case': '대소문자 구분', 'regexp': '정규식', 'by word': '낱말 단위', 'replace': '바꾸기', 'replace all': '모두 바꾸기', 'close': '닫기', 'current match': '지금 찾은 곳', 'on line': '줄', 'replaced match on line $': '$ 줄에서 바꿈', 'replaced $ matches': '$곳 바꿈', 'Go to line': '줄로 가기', 'go': '가기' };
   const make = orig => {
-    const fast = document.createElement('textarea');
-    fast.className = 'dd-fast'; fast.value = orig.value; fast.spellcheck = false;
-    ['spellcheck', 'autocorrect', 'autocapitalize', 'autocomplete'].forEach(k => fast.setAttribute(k, k === 'spellcheck' ? 'false' : 'off'));
-    fast.style.cssText = 'display:block;width:100%;height:70vh;box-sizing:border-box;font:15px/1.7 ui-monospace,monospace,sans-serif;padding:10px 12px;border:1px solid #c9b8a6;border-radius:8px;resize:vertical;white-space:pre-wrap;background:#fff;color:#222';
-    const o = { fast, last: orig.value, timer: 0, dirty: false };
-    fast.addEventListener('input', () => { o.dirty = true; clearTimeout(o.timer); o.timer = setTimeout(() => push(orig, o), WAIT); });
-    fast.addEventListener('blur', () => push(orig, o));
+    const note = document.createElement('div'); note.className = 'dd-mark'; note.setAttribute('role', 'status');
+    let o;
+    if (CM) {
+      const box = document.createElement('div'); box.className = 'dd-ed';
+      const view = new CM.EditorView({
+        parent: box,
+        state: CM.EditorState.create({
+          doc: orig.value,
+          extensions: [
+            CM.history(), CM.drawSelection(), CM.highlightSpecialChars(), CM.EditorView.lineWrapping,
+            CM.search({ top: true }),
+            CM.keymap.of([...CM.searchKeymap, ...CM.historyKeymap, ...CM.defaultKeymap]),
+            CM.EditorState.phrases.of(KO),
+            CM.EditorView.contentAttributes.of({ spellcheck: 'false', autocorrect: 'off', autocapitalize: 'off', 'aria-label': '책 본문' }),
+            CM.EditorView.updateListener.of(u => { if (u.docChanged && !o.syncing) { o.dirty = true; o.mark(true); } })
+          ]
+        })
+      });
+      box._ddView = view;
+      o = { el: box, view, get: () => view.state.doc.toString(),
+        set: v => { o.syncing = true; view.dispatch({ changes: { from: 0, to: view.state.doc.length, insert: v } }); o.syncing = false; } };
+    } else {
+      const fast = document.createElement('textarea');
+      fast.className = 'dd-fast'; fast.value = orig.value; fast.spellcheck = false;
+      ['autocorrect', 'autocapitalize', 'autocomplete'].forEach(k => fast.setAttribute(k, 'off'));
+      fast.addEventListener('input', () => { o.dirty = true; o.mark(true); });
+      o = { el: fast, get: () => fast.value, set: v => { fast.value = v; } };
+    }
+    o.last = orig.value; o.dirty = false;
+    o.mark = on => { note.textContent = on ? '✎ 저장 전 고친 내용이 있습니다 — 저장 단추를 누르면 함께 저장됩니다.' : ''; };
     orig.style.display = 'none';
-    orig.insertAdjacentElement('afterend', fast);
+    orig.insertAdjacentElement('afterend', o.el); o.el.insertAdjacentElement('afterend', note); o.note = note;
     pairs.set(orig, o);
   };
   setInterval(() => {
     document.querySelectorAll('textarea:not(.dd-fast)').forEach(t => { if (!pairs.has(t) && t.value.length >= BIG) make(t); });
     pairs.forEach((o, orig) => {
-      if (!orig.isConnected) { o.fast.remove(); pairs.delete(orig); return; }
-      if (!o.dirty && orig.value !== o.last) { o.fast.value = orig.value; o.last = orig.value; }  // 다른 책을 열었거나 되돌린 경우
+      if (!orig.isConnected) { o.el.remove(); o.note.remove(); pairs.delete(orig); return; }
+      if (!o.dirty && orig.value !== o.last) { o.set(orig.value); o.last = orig.value; }  // 다른 책을 열었거나 되돌린 경우
     });
   }, 700);
-  // 저장·다른 화면 단추를 누르기 직전, Ctrl+S 직전에 먼저 넘김
-  document.addEventListener('pointerdown', e => { if (!e.target.closest || !e.target.closest('.dd-fast')) flushAll(); }, true);
-  document.addEventListener('keydown', e => { if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') flushAll(); }, true);
+  // 저장·다른 화면 단추를 누르기 직전(편집기 밖을 누를 때), Ctrl+S 직전, 창을 떠날 때 먼저 넘김
+  const inEd = t => t && t.closest && t.closest('.dd-ed, .dd-fast');
+  document.addEventListener('pointerdown', e => { if (!inEd(e.target)) flushAll(); }, true);
+  document.addEventListener('keydown', e => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') flushAll();
+    else if ((e.key === 'Tab' || e.key === 'Enter') && !inEd(e.target)) flushAll();  // 키보드로 저장 단추에 갈 때
+  }, true);
+  document.addEventListener('focusout', e => { if (inEd(e.target) && !inEd(e.relatedTarget)) flushAll(); }, true);
+  addEventListener('visibilitychange', () => { if (document.hidden) flushAll(); });
   addEventListener('beforeunload', flushAll);
 })();
 </script>
@@ -98,18 +150,32 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('DOMContentLoaded', () => document.body.appendChild(btn));
   let ta = null, mx = 0, my = 0;
   const inTexts = () => /collections\/texts\//.test(location.hash);
-  const sel = () => { const a = document.activeElement; return a && a.tagName === 'TEXTAREA' && inTexts() && a.selectionEnd > a.selectionStart ? a : null; };
+  // 글 칸(textarea)과 책 본문 편집기(CodeMirror)를 같은 모양으로 다루는 작은 손잡이
+  const adapter = () => {
+    const a = document.activeElement; if (!a || !inTexts()) return null;
+    const box = a.closest && a.closest('.dd-ed');
+    if (box && box._ddView) {
+      const v = box._ddView, r = v.state.selection.main;
+      if (r.empty) return null;
+      return { from: r.from, to: r.to, slice: (x, y) => v.state.sliceDoc(Math.max(0, x), Math.min(v.state.doc.length, y)),
+        replace: (x, y, s, sx, sy) => { v.dispatch({ changes: { from: x, to: y, insert: s }, selection: { anchor: sx, head: sy } }); v.focus(); } };
+    }
+    if (a.tagName === 'TEXTAREA' && a.selectionEnd > a.selectionStart) {
+      return { from: a.selectionStart, to: a.selectionEnd, slice: (x, y) => a.value.slice(Math.max(0, x), y),
+        replace: (x, y, s, sx, sy) => { a.focus(); a.setSelectionRange(x, y); document.execCommand('insertText', false, s); a.setSelectionRange(sx, sy); a.dispatchEvent(new Event('input', { bubbles: true })); } };
+    }
+    return null;
+  };
+  const sel = adapter;
   const show = () => { ta = sel(); if (!ta) { btn.style.display = 'none'; return; } btn.style.left = Math.min(mx + 8, innerWidth - 90) + 'px'; btn.style.top = Math.max(my - 44, 8) + 'px'; btn.style.display = 'block'; };
   const toggle = t => {
-    let a = t.selectionStart, b = t.selectionEnd, v = t.value, x = v.slice(a, b);
+    let a = t.from, b = t.to, x = t.slice(a, b);
     // 앞뒤 빈칸은 굵게 안에 넣지 않음
-    while (a < b && /\s/.test(v[a])) a++; while (b > a && /\s/.test(v[b - 1])) b--; x = v.slice(a, b); if (!x) return;
-    t.focus();
-    if (/^\*\*[\s\S]*\*\*$/.test(x) && x.length > 4) { t.setSelectionRange(a, b); document.execCommand('insertText', false, x.slice(2, -2)); t.setSelectionRange(a, b - 4); }
-    else if (v.slice(a - 2, a) === '**' && v.slice(b, b + 2) === '**') { t.setSelectionRange(a - 2, b + 2); document.execCommand('insertText', false, x); t.setSelectionRange(a - 2, b - 2); }
+    while (a < b && /\s/.test(x[a - t.from])) a++; while (b > a && /\s/.test(x[b - 1 - t.from])) b--; x = t.slice(a, b); if (!x) return;
+    if (/^\*\*[\s\S]*\*\*$/.test(x) && x.length > 4) t.replace(a, b, x.slice(2, -2), a, b - 4);
+    else if (t.slice(a - 2, a) === '**' && t.slice(b, b + 2) === '**') t.replace(a - 2, b + 2, x, a - 2, b - 2);
     else if (/\n\s*\n/.test(x)) { alert('굵게는 한 문단 안에서만 쓸 수 있습니다. 문단마다 따로 골라 주세요.'); return; }
-    else { t.setSelectionRange(a, b); document.execCommand('insertText', false, '**' + x.replace(/\*\*/g, '') + '**'); t.setSelectionRange(a + 2, a + 2 + x.replace(/\*\*/g, '').length); }
-    t.dispatchEvent(new Event('input', { bubbles: true }));
+    else { const y = x.replace(/\*\*/g, ''); t.replace(a, b, '**' + y + '**', a + 2, a + 2 + y.length); }
     btn.style.display = 'none';
   };
   document.addEventListener('mouseup', e => { if (e.target === btn) return; mx = e.clientX; my = e.clientY; setTimeout(show, 0); });

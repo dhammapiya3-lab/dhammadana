@@ -357,7 +357,7 @@ for name, ps in BODY:
     body += f'=== {name + "쪽" if name else ""} ===\n'.replace('===  ===', '=== ===') + '\n\n'.join(p for p in ps if p.strip()) + '\n\n'
 body = body.rstrip() + '\n'
 out = os.path.join(REPO, 'content/texts', f'{BK}.json')
-json.dump({'book': BK, 'edition': ED, 'toc': toc, 'images': sorted(set(images)), 'body': body}, open(out, 'w'), ensure_ascii=False, indent=1)
+json.dump({'book': BK, 'edition': ED, 'toc': toc, 'images': [{'image': u, 'caption': ''} for u in sorted(set(images))], 'body': body}, open(out, 'w'), ensure_ascii=False, indent=1)
 json.dump(JOINS, open('/tmp/b27/joins.json', 'w'), ensure_ascii=False)
 print(log)
 print(f'쪽 {len(BODY)} · 장 {len(chapters)} · 소제목 {len(subs)} · 그림 {len(set(images))} → {out}')

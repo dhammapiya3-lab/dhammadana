@@ -298,5 +298,5 @@ for P in PAGES:
     body += (f"=== {P['lab']} ===" if P['lab'] else '=== ===') + '\n\n' + '\n\n'.join(P['paras']) + '\n\n'
 body = body.rstrip() + '\n'
 out = os.path.join(REPO, 'content/texts', f'{BK}.json')
-json.dump({'book': BK, 'edition': ED, 'toc': toc, 'images': images, 'body': body}, open(out, 'w'), ensure_ascii=False, indent=1)
+json.dump({'book': BK, 'edition': ED, 'toc': toc, 'images': [{'image': u, 'caption': ''} for u in images], 'body': body}, open(out, 'w'), ensure_ascii=False, indent=1)
 print(dict(log), '쪽', len(PAGES), '장', len(chapters), '소제목', len(subs), '각주', len(FN), '→', out)

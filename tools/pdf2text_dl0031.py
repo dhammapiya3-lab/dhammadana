@@ -483,7 +483,7 @@ if __name__ == '__main__':
         t['title'] = NUMSP.sub(r'\1\2. ', t['title'])
         if t.get('at'): t['at'] = NUMSP.sub(r'\1\2. ', t['at'])
     imgs = sorted({'/uploads/' + v[0] for v in PICS.values() if '/uploads/' + v[0] in body})
-    out = {'book': 'DL-0031', 'edition': '증보판 (초판)', 'toc': toc, 'images': imgs, 'body': body}
+    out = {'book': 'DL-0031', 'edition': '증보판 (초판)', 'toc': toc, 'images': [{'image': u, 'caption': ''} for u in imgs], 'body': body}
     p = os.path.join(REPO, 'content/texts/DL-0031.json')
     json.dump(out, open(p, 'w'), ensure_ascii=False, indent=1)
     if BOLDMISS: print('  ! 굵게 자리 못 찾음', len(BOLDMISS), BOLDMISS[:8])

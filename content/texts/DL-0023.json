@@ -734,13 +734,34 @@
     }
   ],
   "images": [
-    "/uploads/DL-0023-koliya.png",
-    "/uploads/DL-0023-map-india.png",
-    "/uploads/DL-0023-map-majjhimadesa.png",
-    "/uploads/DL-0023-sakya.png",
-    "/uploads/DL-0023-title.jpg",
-    "/uploads/DL-0023-wheel.jpg",
-    "/uploads/DL-0023-yetgil.jpg"
+    {
+      "image": "/uploads/DL-0023-koliya.png",
+      "caption": ""
+    },
+    {
+      "image": "/uploads/DL-0023-map-india.png",
+      "caption": ""
+    },
+    {
+      "image": "/uploads/DL-0023-map-majjhimadesa.png",
+      "caption": ""
+    },
+    {
+      "image": "/uploads/DL-0023-sakya.png",
+      "caption": ""
+    },
+    {
+      "image": "/uploads/DL-0023-title.jpg",
+      "caption": ""
+    },
+    {
+      "image": "/uploads/DL-0023-wheel.jpg",
+      "caption": ""
+    },
+    {
+      "image": "/uploads/DL-0023-yetgil.jpg",
+      "caption": ""
+    }
   ],
   "table_dl": {
     "연대": "/uploads/DL-0023-table-24buddhas.png",

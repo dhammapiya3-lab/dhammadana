@@ -264,6 +264,6 @@ if __name__ == '__main__':
     body = '\n\n'.join(f'=== {lab} ===\n' + '\n\n'.join(ps) for lab, ps in pages)
     defs = set(re.findall(r'(?m)^\[\^([^\]]+)\]:', body)); used = set(re.findall(r'\[\^([^\]]+)\](?!:)', body))
     print('각주 번호', len(used), '미주', len(defs), '풀이 없음', sorted(used - defs, key=lambda x: (len(x), x))[:10], '번호 없음', sorted(defs - used, key=lambda x: (len(x), x))[:10])
-    out = {'book': 'DL-0032', 'edition': '개정판', 'toc': toc, 'images': ['/uploads/DL-0032-lion.png', '/uploads/DL-0032-p002-table.png', '/uploads/DL-0032-p003-table.png'], 'body': body}
+    out = {'book': 'DL-0032', 'edition': '개정판', 'toc': toc, 'images': [{'image': u, 'caption': ''} for u in ['/uploads/DL-0032-lion.png', '/uploads/DL-0032-p002-table.png', '/uploads/DL-0032-p003-table.png']], 'body': body}
     json.dump(out, open(os.path.join(REPO, 'content/texts/DL-0032.json'), 'w'), ensure_ascii=False, indent=1)
     print('쪽', len(pages), '목차', len(toc), '글자', len(body))

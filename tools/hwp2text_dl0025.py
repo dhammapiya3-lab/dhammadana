@@ -352,6 +352,6 @@ for x, y in FIXES:
 toc = [{'title': t, 'page': n, 'sub': False} for t, n in chapters] + [{'title': t, 'page': n, 'sub': True} for t, n in subs]
 toc.sort(key=lambda x: (x['page'], x['sub']))
 images = sorted(set(saved.values()))
-json.dump({'book': BK, 'edition': ED, 'toc': toc, 'images': images, 'body': body}, open(os.path.join(REPO, 'content/texts', BK + '.json'), 'w'), ensure_ascii=False, indent=2)
+json.dump({'book': BK, 'edition': ED, 'toc': toc, 'images': [{'image': u, 'caption': ''} for u in images], 'body': body}, open(os.path.join(REPO, 'content/texts', BK + '.json'), 'w'), ensure_ascii=False, indent=2)
 open(os.path.join(REPO, 'content/texts', BK + '.json'), 'a').write('\n')
 print('빈 각주', EMPTY_FN); print(f'쪽 {len(out_pages)} · 장 {len(chapters)} · 소제목 {len(subs)} · 각주 {len(FN)} · 그림 {images}')

@@ -336,6 +336,6 @@ toc = [{'title': t, 'page': n, 'sub': False} for t, n in chapters] + [{'title': 
 toc.sort(key=lambda x: (x['page'], x['sub']))
 images = sorted(set(saved.values()))
 TABLE_DL = {'연대': '/uploads/DL-0023-table-24buddhas.png', '안거 연도': '/uploads/DL-0023-table-vassa.png'}   # 표 아래 '그림으로 내려받기' (tools/dl0023_tables.py 로 만든 그림, 운영자 요청 2026-11-12)
-json.dump({'book': BK, 'edition': ED, 'toc': toc, 'images': images, 'table_dl': TABLE_DL, 'body': body}, open(os.path.join(REPO, 'content/texts', BK + '.json'), 'w'), ensure_ascii=False, indent=2)
+json.dump({'book': BK, 'edition': ED, 'toc': toc, 'images': [{'image': u, 'caption': ''} for u in images], 'table_dl': TABLE_DL, 'body': body}, open(os.path.join(REPO, 'content/texts', BK + '.json'), 'w'), ensure_ascii=False, indent=2)
 open(os.path.join(REPO, 'content/texts', BK + '.json'), 'a').write('\n')
 print(f'쪽 {len(out_pages)} · 장 {len(chapters)} · 소제목 {len(subs)} · 각주 {len(FN)} · 그림 {images}')
