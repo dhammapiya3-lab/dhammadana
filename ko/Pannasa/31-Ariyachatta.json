@@ -1,0 +1,1081 @@
+[
+ {
+  "img": "images/31-Ariyachatta-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     56,
+     540,
+     98
+    ],
+    "ko": "아리야찻따 자따까",
+    "cover": false,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     282,
+     110,
+     522,
+     142
+    ],
+    "ko": "흔들림 없는 결심 이야기",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Ariyachatta-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     292,
+     54,
+     510,
+     88
+    ],
+    "ko": "하늘의 귀",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     268,
+     98,
+     548,
+     138
+    ],
+    "ko": "제따와나에서 비구들이 부처님을 찬탄하자\n멀리서 들으신 부처님께서 다가오셨습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     234,
+     370,
+     568,
+     422
+    ],
+    "ko": "“지난 생에 온갖 괴로움을 참고 견딘 덕분에\n나는 세상의 주인이 되었다.”",
+    "cover": [
+     209,
+     164,
+     104
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Ariyachatta-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     50,
+     506,
+     84
+    ],
+    "ko": "수메다 부처님 시대",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     228,
+     350,
+     572,
+     414
+    ],
+    "ko": "옛 빠딸리뿟따에서 담마소나 왕이 흔들림 없는 믿음으로 나라를 다스렸습니다. 덕을 갖춘 왕은 수메다 부처님의 승가를 위해 정사 팔만 사천 곳을 세우고, 삼보에 온몸을 바쳤습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Ariyachatta-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     302,
+     56,
+     496,
+     88
+    ],
+    "ko": "시험의 역설",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     412,
+     306,
+     708,
+     336
+    ],
+    "ko": "“이 나라에 나만큼 믿음이 깊은 이가 있는가?”",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     430,
+     344,
+     700,
+     412
+    ],
+    "ko": "백성을 시험하려고 담마소나 왕은 이교도인 척했습니다. 삼보에 공양하는 자는 왕의 벌을 받아 죽으리라고 포고했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Ariyachatta-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     322,
+     28,
+     474,
+     56
+    ],
+    "ko": "포고가 퍼지다",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     268,
+     198,
+     534,
+     240
+    ],
+    "ko": "북소리가 사형 위협을 알리자 빠딸리뿟따 백성들은\n큰 소동 속에 믿음을 버렸습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     252,
+     390,
+     548,
+     438
+    ],
+    "ko": "오직 귀족 아리야찻따로 태어난 보살만이 흔들리지 않고, 결코 삼보를 떠나지 않겠다고 다짐했습니다.",
+    "cover": [
+     214,
+     179,
+     127
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Ariyachatta-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     26,
+     306,
+     84
+    ],
+    "ko": "두려움을 물리치다",
+    "cover": [
+     217,
+     185,
+     143
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     450,
+     234,
+     712,
+     290
+    ],
+    "ko": "겁에 질린 부모는 왕의 명을 따라\n목숨을 지키라고 애원했습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     450,
+     316,
+     712,
+     392
+    ],
+    "ko": "아리야찻따가 대답했습니다. “저는 삼보에 귀의합니다. 왕이 저를 죽이게 하십시오. 그로써 저는 깨달음을 얻을 것입니다.”",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Ariyachatta-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     304,
+     34,
+     490,
+     76
+    ],
+    "ko": "믿음의 시련",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     140,
+     64,
+     290,
+     104
+    ],
+    "ko": "세상의 위협:",
+    "cover": [
+     211,
+     179,
+     134
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     504,
+     64,
+     668,
+     104
+    ],
+    "ko": "굳은 결심:",
+    "cover": [
+     212,
+     182,
+     136
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     130,
+     184,
+     290,
+     206
+    ],
+    "ko": "• 다섯 가지 족쇄에 묶임",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     130,
+     286,
+     294,
+     308
+    ],
+    "ko": "• 백 대의 채찍을 맞음",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     130,
+     388,
+     296,
+     410
+    ],
+    "ko": "• 꼬챙이 나무에 매달아 죽임",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     502,
+     186,
+     702,
+     208
+    ],
+    "ko": "• 수메다 부처님께 온전히 헌신",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     502,
+     288,
+     710,
+     308
+    ],
+    "ko": "• 몸의 무상함을 받아들임",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     506,
+     390,
+     708,
+     410
+    ],
+    "ko": "• 법에 흔들림 없이 귀의",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Ariyachatta-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     40,
+     574,
+     80
+    ],
+    "ko": "윤회를 받아들이다",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     196,
+     80,
+     636,
+     134
+    ],
+    "ko": "사형 집행인들에게 둘러싸여도 아리야찻따는 미워하지 않았습니다.\n“이 괴로움은 부모 탓도, 집행인 탓도 아니라 내 지난 행위 탓이다.\n윤회의 괴로움은 이렇게 생겨나는 것이다.”",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Ariyachatta-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     272,
+     38,
+     526,
+     72
+    ],
+    "ko": "꼬챙이 나무 들여다보기",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     312,
+     92,
+     488,
+     120
+    ],
+    "ko": "나무에게 설하다",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     64,
+     110,
+     212,
+     136
+    ],
+    "ko": "악덕 가득 / 부정함",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     590,
+     110,
+     740,
+     136
+    ],
+    "ko": "공덕 가득 / 공양",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     314,
+     186,
+     496,
+     232
+    ],
+    "ko": "꼬챙이 나무로 다가간 아리야찻따는\n나무를 만지며 말했습니다.",
+    "cover": [
+     226,
+     204,
+     164
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     314,
+     236,
+     498,
+     350
+    ],
+    "ko": "“너는 참으로 공덕이 없구나. 더러운 곳에서 악취를 풍기며 서 있는 동안, 다른 나무들은 베어져 부처님의 정사가 되는구나.”",
+    "cover": [
+     227,
+     204,
+     164
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Ariyachatta-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     276,
+     46,
+     530,
+     78
+    ],
+    "ko": "왕의 부름",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     262,
+     90,
+     550,
+     154
+    ],
+    "ko": "집행인들이 그를 꼬챙이 나무에 끌어 올리려던 바로 그때, 담마소나 왕의 신하가 말을 타고 왔습니다.",
+    "cover": [
+     223,
+     202,
+     162
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     352,
+     156,
+     530,
+     234
+    ],
+    "ko": "“내 권한으로 명한다. 아리야찻따를 어서 데려오라. 내가 직접 이 일을 판결하겠다.”",
+    "cover": [
+     223,
+     202,
+     161
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Ariyachatta-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     276,
+     44,
+     530,
+     78
+    ],
+    "ko": "지극한 거부",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     62,
+     316,
+     222,
+     394
+    ],
+    "ko": "왕이 위협했습니다. “돌아서면 큰 재물을 주겠다. 아니면 네 목을 베리라.”",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     564,
+     268,
+     746,
+     382
+    ],
+    "ko": "아리야찻따가 대답했습니다. “제 몸을 일곱 토막 내셔도, 삼보에 귀의하는 것은 결코 버리지 않겠습니다.”",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Ariyachatta-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     276,
+     50,
+     530,
+     84
+    ],
+    "ko": "기쁨의 드러남",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     352,
+     92,
+     576,
+     140
+    ],
+    "ko": "이 지극한 헌신을 듣고\n왕의 마음은 기쁨으로 가득 찼습니다.",
+    "cover": [
+     219,
+     196,
+     156
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     414,
+     146,
+     716,
+     214
+    ],
+    "ko": "“그대가 믿음과 바른 행실을 갖춘 것처럼 나도 그러하네. 그대는 참으로 내게 소중한, 진정 어진 벗이로다.”",
+    "cover": [
+     218,
+     195,
+     155
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Ariyachatta-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     34,
+     536,
+     72
+    ],
+    "ko": "일곱 가지 재산",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     256,
+     84,
+     546,
+     126
+    ],
+    "ko": "아리야찻따가 축복을 빌며, 삶을 헛되지\n않게 하는 참된 보배를 밝혔습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     426,
+     132,
+     504,
+     154
+    ],
+    "ko": "1. 믿음",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     508,
+     192,
+     584,
+     214
+    ],
+    "ko": "2. 계행",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     548,
+     260,
+     624,
+     284
+    ],
+    "ko": "3. 부끄러움",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     508,
+     344,
+     598,
+     366
+    ],
+    "ko": "4. 두려움",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     366,
+     398,
+     446,
+     420
+    ],
+    "ko": "5. 배움",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     218,
+     344,
+     296,
+     366
+    ],
+    "ko": "6. 보시",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     218,
+     192,
+     296,
+     214
+    ],
+    "ko": "7. 지혜",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Ariyachatta-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     270,
+     40,
+     532,
+     90
+    ],
+    "ko": "부왕",
+    "cover": [
+     217,
+     196,
+     158
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     286,
+     284,
+     518,
+     360
+    ],
+    "ko": "“그대는 큰 인물이다. 내 곁에 머물라.\n그대를 부왕으로 삼으리라.”",
+    "cover": [
+     212,
+     183,
+     141
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     240,
+     366,
+     562,
+     436
+    ],
+    "ko": "담마소나 왕은 아리야찻따에게 큰 재물을 내리고 부왕으로 세웠습니다. 두 사람은 공덕을 지으며 날을 보냈습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Ariyachatta-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     40,
+     540,
+     88
+    ],
+    "ko": "인연 맺기 (사모다나)",
+    "cover": [
+     222,
+     195,
+     154
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     288,
+     88,
+     512,
+     134
+    ],
+    "ko": "부처님께서 지난 생과 지금을 이어\n가르침을 마치셨습니다.",
+    "cover": [
+     228,
+     208,
+     180
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     228,
+     150,
+     376,
+     192
+    ],
+    "ko": "• 담마소나 왕은\n지금의 사리뿟따",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     450,
+     150,
+     596,
+     192
+    ],
+    "ko": "• 담마소니 왕비는\n웁빨라완나",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     294,
+     386,
+     508,
+     426
+    ],
+    "ko": "• 부왕 아리야찻따는 바로 나,\n완전히 깨달은 이다.",
+    "cover": false,
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
