@@ -250,12 +250,14 @@ const LIB = () => BOOKS.filter(LIB_OK);
 // 글 파일(TXT) — 점자정보단말기(한소네 등)·데이지 플레이어·화면 낭독기용, 본문 글에서 저절로 만듦 (운영자 요청, 2026-11-18)
 // 꾸밈 표시(** °° @@ == §§ {{ }})는 빼고 글자는 그대로, 장 제목 '■', 쪽 표시 '[N쪽]', 각주 '[각주 N]', 그림은 설명만, 구분선·장식 그림은 뺌
 const TXT_DECO = /^(구분 ?장식|구분선|장식|꾸밈|무늬|법륜|사자상 그림|보리수 잎 그림)$/;
-const txtSafe = s => String(s || '').replace(/[\\/:*?"<>|\u0000-\u001f]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 80) || '책';
+const txtSafe = s => String(s || '').replace(/[\\/:*?"<>|\u0000-\u001f]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 80).replace(/[.\s]+$/, '') || '책';
 const txtName = b => `${txtSafe(b.title)}.txt`;
 const txtOk = b => hasText(b) && !b.no_copy;
 function txtInline(s) {
   return String(s).replace(/\*\*|°°|@@|==|§§|\{\{|\}\}/g, '').replace(/\[\^([^\]]+)\]/g, '[각주 $1]').replace(/ㆍ/g, '·');
 }
+// 그림 자리: '[그림: 그림]'·'[그림: 사진]'처럼 겹치지 않게 (2026-11-18 다시 검수)
+const txtFig = a => /^(그림|사진)$/.test(a) ? `[${a}]` : a === '표' ? '[표 그림]' : /(그림|사진|표|지도|가계도|서명|마크)$/.test(a) ? `[${a}]` : `[그림: ${a}]`;
 function bookTxt(b) {
   const t = TEXTS[b.id], e = curEd(b), say = t.say || {}, ix = indexOf(b.id);
   const chaps = t.toc.filter(x => !/^\s/.test(x.title));
@@ -288,7 +290,7 @@ function bookTxt(b) {
       for (let l of q.split('\n')) {
         l = l.replace(/\s+$/, '');
         const im = l.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
-        if (im) { const alt = im[1].replace(/^#/, '').trim(); if (say[im[2]]) lines.push('[그림 내용] ' + txtInline(say[im[2]]).replace(/\n+/g, ' / ')); else if (alt && !TXT_DECO.test(alt)) lines.push(`[그림: ${txtInline(alt)}]`); continue; }
+        if (im) { const alt = im[1].replace(/^#/, '').trim(); if (say[im[2]]) lines.push('[그림 내용] ' + txtInline(say[im[2]]).replace(/\n+/g, ' / ')); else if (alt && !TXT_DECO.test(alt)) lines.push(txtFig(txtInline(alt))); continue; }
         if (/^\s*~\s*$/.test(l)) { lines.push(''); continue; }
         if (/^\s*\|?\s*:?-{3,}/.test(l) && /\|/.test(l)) continue;  // 표 구분 줄
         if (/^\s*\|/.test(l)) { lines.push(l.replace(/^\s*\||\|\s*$/g, '').split('|').map(c => txtInline(c.trim())).filter(Boolean).join(' / ')); continue; }

@@ -936,7 +936,7 @@ function renderReader() {
   el.innerHTML = `<button class="r-skip" id="rMenu" aria-keyshortcuts="Alt+Shift+M">메뉴 열기 (듣기·목차·설정·닫기)</button><button class="r-skip" id="rKeys" aria-keyshortcuts="Alt+Shift+H">단축키 안내</button><div class="r-top"><button class="tbtn" id="rClose" aria-label="『${esc(R.title)}』 읽기 끝내기, 책 소개로 돌아가기">← 닫기</button>
     <div class="r-title">${esc(R.title)}<small>${esc(R.by)}${ch ? ' · ' + esc(ch.title) : ''}</small></div>
     <div class="r-tools">
-      ${R.toc.length ? '<button class="tbtn" data-panel="toc">목차</button>' : ''}${hasText ? '<button class="tbtn" data-panel="find" aria-label="본문 검색">🔍 찾기</button>' : ''}
+      ${R.toc.length ? '<button class="tbtn" data-panel="toc">목차</button>' : ''}${hasText ? '<button class="tbtn" data-panel="find" aria-label="찾기 (본문 검색)">🔍 찾기</button>' : ''}
       <button class="tbtn" data-panel="font" aria-label="글씨 크기">가<span style="font-size:16px">가</span></button>
       ${hasText && R.speaking ? `<button class="tbtn ${R.ttsLocked ? 'on' : ''}" id="rLock" aria-pressed="${!!R.ttsLocked}" aria-label="${R.ttsLocked ? '듣기 잠김, 눌러서 풀기' : '듣기 잠그기'}" title="잠그면 실수로 멈추지 않습니다">${R.ttsLocked ? '🔒 잠김' : '🔓 잠금'}</button>` : ''}${R.ab ? `<button class="tbtn ${AB.on && !abA().paused ? 'on' : ''}" id="rAb" data-tip="${AB_TIP}" aria-label="오디오북 듣기 (${AB_TIP})">${AB.on && !abA().paused ? '❚❚ 오디오북' : '🎧 오디오북'}</button>` : ''}${hasText ? `<button class="tbtn ${R.speaking ? 'on' : ''}" id="rSpeak" ${R.ttsLocked ? 'disabled' : ''}>${R.speaking ? '■ 멈춤' : '▶ 듣기'}</button><button class="tbtn" data-panel="tts" aria-label="듣기 설정">듣기 설정</button>` : ''}
       <button class="tbtn" data-panel="mode">화면</button>${R.par.length && R.view !== 'page' ? `<button class="tbtn${R.parMode !== 'off' ? ' on' : ''}" data-panel="par" title="번역서와 원서를 나란히 보기">⇄ 원서 대조</button>` : ''}${R.spreadOk && R.view !== 'page' ? `<button class="tbtn${spreadOn() ? ' on' : ''}" id="rSpread" aria-pressed="${spreadOn()}" title="왼쪽·오른쪽 쪽을 책처럼 나란히">${spreadOn() ? '📄 한쪽씩 보기' : '📖 양쪽으로 보기'}</button>` : ''}${document.fullscreenEnabled ? `<button class="tbtn" id="rFull" aria-pressed="${!!document.fullscreenElement}" title="F11 처럼 화면 가득 보기 (Esc 로 나가기)">${document.fullscreenElement ? '⛶ 전체 화면 끄기' : '⛶ 전체 화면'}</button>` : ''}
@@ -2583,6 +2583,7 @@ const KEYS = [['→', '다음 쪽'], ['←', '앞 쪽'], ['↓', '다음 목차 
 function ttsFocus(el) {
   if (!el) return; const a = document.activeElement;
   const ok = !a || a === document.body || a === document.documentElement || (a.closest && a.closest('.reflow, .s-text, #rBody, .s-h1, .s-chnav')) || a.id === 'rSpeak' || a.id === 'sSpeak';
+  if (a && a.matches && a.matches('.s-chnav button:not(#sSpeak), .s-chnav input')) return;  // 휴대폰 단추(앞뒤 문장·책갈피 등)를 누른 뒤에는 커서를 단추에 둠 — 다시 누를 수 있게 (2026-11-18 다시 검수)
   if (!ok) return;
   if (!el.hasAttribute('tabindex')) el.tabIndex = -1;
   try { el.focus({ preventScroll: true }); } catch (e) {}
@@ -3206,8 +3207,8 @@ function sGoPage(v) {
   if (idx < 0) { sayKey(`${q}쪽을 이 책에서 찾지 못했습니다`); return; }
   const n = idx + 1, ci = withR(() => chapterOf(n)), was = SR.speaking;
   if (was) srStop(true);
-  const go = () => { const t = $('#pm-' + n); if (t) { t.scrollIntoView({ block: 'start' }); t.setAttribute('tabindex', '-1'); t.focus({ preventScroll: true }); } SR.anchor = n; sayKey(`${q}쪽${via}`); if (was) srSpeak(); };
-  $('#sPgForm').hidden = true;
+  const go = () => { const t = $('#pm-' + n); if (t) { SR.pm = t.id; sBarH(); t.scrollIntoView({ block: 'start' });  /* 파란 줄 높이를 먼저 재야 쪽이 그 뒤로 숨지 않음 (2026-11-18 다시 검수) */ t.setAttribute('tabindex', '-1'); t.focus({ preventScroll: true }); } SR.anchor = n; sayKey(`${q}쪽${via}`, was ? () => srSpeak() : null); };  // 듣는 중이면 쪽 이름을 다 읽은 뒤 이어 읽음(바로 읽으면 알림이 끊김)
+  $('#sPgForm').hidden = true; const gb = $('#sGoPg'); if (gb) gb.setAttribute('aria-expanded', 'false');
   if (ci !== SR.ci) { srChapter(ci, n, true, go); } else go();
 }
 // 단순 화면 한 장을 열 때마다 (처음 열 때·sGo 로 본문만 바꿀 때)
