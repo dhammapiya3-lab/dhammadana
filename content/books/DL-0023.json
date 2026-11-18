@@ -31,7 +31,13 @@
   "content_languages": [],
   "original_source": "Buddhist Legends Dhammapada Commentary by Eugene Watson Burlingame, Originally copyright, 1921 Harvard University Press (Cambridge, Mass.) Now Public Domain",
   "parallel_editions": [],
-  "originals": [],
+  "originals": [
+    {
+      "lang": "영어",
+      "mode": "file",
+      "url": "orig/DL-0023/DL-0023_원서_영어.pdf"
+    }
+  ],
   "series": "",
   "main": [
     "니까야 경전"
