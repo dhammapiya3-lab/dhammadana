@@ -336,7 +336,7 @@ ${ld ? `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css?v=${V.css}">
-<script>try{var u=new URLSearchParams(location.search).get('ui');if(u==='normal'||u==='simple')localStorage.setItem('dd-ui',JSON.stringify(u));else if(${simple ? `JSON.parse(localStorage.getItem('dd-ui')||'""')==='simple'` : 'false'})location.replace(${JSON.stringify(simple)})}catch(e){}</script>
+<script>try{var u=new URLSearchParams(location.search).get('ui');if(u==='normal'||u==='simple')localStorage.setItem('dd-ui',JSON.stringify(u));else if(${simple ? `JSON.parse(localStorage.getItem('dd-ui')||'""')==='simple'&&!(function(){try{var r=new URL(document.referrer);return r.origin===location.origin&&!/^\\/(simple|read)\\//.test(r.pathname)}catch(e){return false}})()` : 'false'})location.replace(${JSON.stringify(simple)})}catch(e){}</script>
 <script>try{var m=localStorage.getItem('dd-mode');m=m?JSON.parse(m):'auto';if(m!=='auto')document.documentElement.classList.add('mode-'+m);var f=JSON.parse(localStorage.getItem('dd-sitefs')||'0');if(f>0)document.documentElement.classList.add('sfs-'+f)}catch(e){}</script>
 </head>
 <body data-page="${page}" data-simple="${esc(simple || '/simple/')}">
