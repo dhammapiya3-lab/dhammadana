@@ -23,6 +23,11 @@ ap.add_argument('--gl-end', default=None, help='용어 풀이가 끝난 뒤 첫 
 ap.add_argument('--gl-nl', action='store_true', help="용어 풀이가 '낱말(roman)⏎풀이' 모양(DL-0011) — 쪽에서 잘린 낱말 조각('**웨**' + '**다나(vedanā)**')도 이어 읽음")
 ap.add_argument('--pin', action='append', default=[], help='짝을 손으로 정함: "한국어 열쇠+…=원서 번호+…" (예 "1:0=0+1" 속표지 ↔ 원서 제목·지은이). 원서 쪽을 비우면("2:0+2:1=") 그 한국어 문단은 짝 없음');
 ap.add_argument('--fnpin', action='append', default=[], help='각주 짝을 손으로: "한국어 각주 번호=원서 각주 번호" (예 "40=33"), 짝 없음은 "14=" 또는 "=3"');
+ap.add_argument('--move', action='append', default=[], help='한국어판이 원서와 순서를 바꿔 옮긴 곳: "원서 A-B>C" — 원서 문단 A~B 를 C(번호 또는 @글 첫머리) 앞으로 옮겨 짝짓고, 그 묶음에 순서가 다르다는 메모(note)를 붙임 (DL-0001 Ⅳ장)')
+ap.add_argument('--base', type=float, default=0.0, help='짝짓기 점수에서 뺄 바탕 뜻 비슷함 — 미얀마어처럼 관계없는 문장도 뜻 비슷함이 높게 나오는 말에서, 줄여 옮긴 곳을 억지로 짝짓지 않고 건너뛰게 (DL-0001: 0.25)')
+ap.add_argument('--my-comma', action='store_true', help="미얀마어 원서의 말끝(…တယ်၊ …ဘူး၊ 등) 뒤 '၊' 에서도 문장을 나눔 — 법문을 받아 적은 책은 '။' 대신 '၊' 로 말을 이어 적어 한 문단이 한 문장이 됨 (DL-0001)")
+ap.add_argument('--band', type=int, default=40, help='2단계 짝짓기 띠 너비(문장 수)')
+ap.add_argument('--seg', action='append', default=[], help='짝짓기를 넘지 않을 경계: "한국어 열쇠=원서 번호 또는 @글 첫머리" — 여러 권을 묶은 책에서 권마다 따로 짝지음 (DL-0001)')
 ap.add_argument('--ko-skip', action='append', default=[], help="원서에 없는 한국어 부분을 짝짓기에서 뺌: '시작 정규식|끝 정규식' (끝 문단은 남김, 끝을 비우면 책 끝까지) — 예 DL-0012 부록 2~역자 후기")
 ap.add_argument('--toc', action='store_true', help='차례도 줄마다 짝지음 — 한국어 차례(%% 문단)의 제목 줄 ↔ 원서 차례(k toc) 항목, 쪽 번호는 빼고 제목끼리 (운영자 요청, 2026-11-17)')
 ap.add_argument('--title', default=''); ap.add_argument('--by', default=''); ap.add_argument('--source', default='')
@@ -74,6 +79,8 @@ for sk in A.ko_skip:   # 원서에 없는 부분(--ko-skip)
 _nopin = {k for x in A.pin if x.endswith('=') for k in x[:-1].split('+') if k}
 if _nopin: KO_DP = [p for p in KO_DP if p['key'] not in _nopin]
 SPL = re.compile(r'(?<=[.?!。…။])(?:[”’"\')\]]*)\s+|\n')
+if A.my_comma: SPL = re.compile(r'(?<=[.?!。…။])(?:[”’"\')\]]*)\s+|\n|(?<=၊)\s+')
+MYEND = re.compile(r'(တယ်|ဘူး|ပဲ|ပေါ့|လဲ|တုန်း|နော်|လေ|တာ|မယ်|သလား|ကော|ရော|ရဲ့|တဲ့|ပါ|သည်)၊$')
 
 
 def sents(t, lang):
@@ -82,6 +89,7 @@ def sents(t, lang):
     for m in SPL.finditer(t):
         b = m.start() if t[m.start()] == '\n' else m.end()
         seg = t[a:b].strip()
+        if A.my_comma and t[m.start() - 1:m.start()] == '၊' and (lang == 'ko' or not MYEND.search(t[a:m.start()])): continue
         if m.group(0) != '\n' and re.fullmatch(r'(## |%% )?[0-9IVXⅠ-Ⅻ]+\.', seg): continue   # '1. 제목'·'I. 제목' 의 번호 뒤에서는 나누지 않음
         if lang == 'en' and m.group(0) != '\n':
             # 'e.g. ' 'i.e. ' 'Mr. ' 'U. ' 같은 약어 뒤나 다음 글자가 소문자면 나누지 않음
@@ -97,11 +105,29 @@ KS = []   # (para index, a, b, text)
 for i, p in enumerate(KO_DP):
     for a, b in sents(p['t'], 'ko'):
         if plain(p['t'][a:b]).strip(): KS.append((i, a, b, plain(p['t'][a:b]).strip()))
+ORDER = list(range(len(ORIG))); MOVED = {}
+def _oi(x): return next(i for i, p in enumerate(ORIG) if p['t'].startswith(x[1:])) if x.startswith('@') else int(x)
+for mv in A.move:
+    ab, c = mv.split('>'); a, b = map(int, ab.split('-')); c = _oi(c)
+    blk = [i for i in ORDER if a <= i <= b]; rest = [i for i in ORDER if not a <= i <= b]
+    k = rest.index(c); ORDER = rest[:k] + blk + rest[k:]
+    for i in blk: MOVED[i] = (a, b)
 ES = []
-for i, p in enumerate(ORIG):
+for i in ORDER:
+    p = ORIG[i]
     if p['k'] in ('toc', 'gl', 'pq', 'fn', 'sep'): continue      # 원서 차례 쪽·용어 풀이·인용 상자(본문을 크게 다시 실은 것)는 차례 짝짓기에서 뺌 (한국어 차례도 %% 라 뺌)
     for a, b in sents(p['t'], 'en'):
         if plain(p['t'][a:b]).strip(): ES.append((i, a, b, plain(p['t'][a:b]).strip()))
+# --seg: 경계 앞뒤 문장은 서로 짝짓지 않음 (뜻 비슷함을 -1 로)
+def _kt(k): return tuple(map(int, k.split(':')))
+_SEG = []
+for sg in A.seg:
+    kk, oo = sg.split('=')
+    oi = next(i for i, p in enumerate(ORIG) if p['t'].startswith(oo[1:])) if oo.startswith('@') else int(oo)
+    _SEG.append((_kt(kk), oi))
+KSg = [sum(1 for k, _ in _SEG if _kt(KO_DP[x[0]]['key']) >= k) for x in KS]
+_POS = {i: n for n, i in enumerate(ORDER)}   # --move 뒤의 원서 순서
+ESg = [sum(1 for _, o in _SEG if _POS[x[0]] >= _POS[o]) for x in ES]
 print('한국어 문단', len(KO), '문장', len(KS), '/ 원서 문단', len(ORIG), '문장', len(ES))
 
 # ---------- 뜻 벡터 ----------
@@ -117,12 +143,14 @@ else:
     np.savez(cache, ko=KE, en=EE, key=key)
 N, M = len(KS), len(ES)
 S = KE @ EE.T
+if _SEG: S[np.array(KSg)[:, None] != np.array(ESg)[None, :]] = -1.0
+S1 = S - A.base   # 1단계(대강의 길)용
 
 # ---------- 1단계: 대강의 길(1:1·건너뛰기)로 띠 찾기 ----------
 SK = 0.05
 D = np.full((N + 1, M + 1), -1e9); D[0, :] = -SK * np.arange(M + 1); D[:, 0] = -SK * np.arange(N + 1)
 for i in range(1, N + 1):
-    row = D[i]; prev = D[i - 1]; s = S[i - 1]
+    row = D[i]; prev = D[i - 1]; s = S1[i - 1]
     diag = prev[:-1] + s; up = prev[1:] - SK
     best = np.maximum(diag, up)
     # 왼쪽(원서 건너뛰기)은 차례로
@@ -131,7 +159,7 @@ for i in range(1, N + 1):
         row[j] = v if v > l else l
 path = []; i, j = N, M
 while i > 0 and j > 0:
-    if abs(D[i, j] - (D[i - 1, j - 1] + S[i - 1, j - 1])) < 1e-9: path.append((i - 1, j - 1)); i -= 1; j -= 1
+    if abs(D[i, j] - (D[i - 1, j - 1] + S1[i - 1, j - 1])) < 1e-9: path.append((i - 1, j - 1)); i -= 1; j -= 1
     elif abs(D[i, j] - (D[i - 1, j] - SK)) < 1e-9: i -= 1
     else: j -= 1
 center = np.zeros(N, dtype=int)
@@ -139,12 +167,13 @@ pts = sorted(path)
 if pts:
     pi = np.array([p[0] for p in pts]); pj = np.array([p[1] for p in pts])
     center = np.interp(np.arange(N), pi, pj).astype(int)
-W = 40
+W = A.band
 
 # ---------- 2단계: 묶음까지 허용한 짝짓기 (띠 안에서) ----------
 BEADS = [(1, 1), (1, 2), (2, 1), (2, 2), (1, 3), (3, 1), (1, 0), (0, 1)]
 cK = np.vstack([np.zeros(KE.shape[1]), np.cumsum(KE, 0)]); cE = np.vstack([np.zeros(EE.shape[1]), np.cumsum(EE, 0)])
 def sim(i0, i1, j0, j1):
+    if _SEG and i1 > i0 and j1 > j0 and len({KSg[i0], KSg[i1 - 1], ESg[j0], ESg[j1 - 1]}) > 1: return -1.0
     a = cK[i1] - cK[i0]; b = cE[j1] - cE[j0]
     return float(a @ b / (np.linalg.norm(a) * np.linalg.norm(b) + 1e-9))
 SKIP = -0.15; MERGE = 0.10
@@ -161,7 +190,7 @@ for i in range(0, N + 1):
             pi, pj = i - a, j - b
             if pi < 0 or pj < 0 or (pi, pj) not in V: continue
             if a and b:
-                sc = sim(pi, i, pj, j) * (a + b) / 2 - MERGE * (max(a, b) - 1 + (a > 1 and b > 1))
+                sc = (sim(pi, i, pj, j) - A.base) * (a + b) / 2 - MERGE * (max(a, b) - 1 + (a > 1 and b > 1))
             else:
                 sc = SKIP
             v = V[(pi, pj)] + sc
@@ -209,6 +238,18 @@ for pin in A.pin:
         out.append({'ko': kk, 'or': oo, 'ka': plain(KOT[kk[0]])[:24], 'pin': 1,
                     's': [{'ko': [[k, 0, len(KOT[k])] for k in kk], 'or': [[o, 0, len(ORIG[o]['t'])] for o in oo]}]})
 out.sort(key=lambda g: tuple(map(int, g['ko'][0].split(':'))) if g['ko'] else (1e9, 0))
+# 같은 한국어 문단이 두 묶음에 걸치면 하나로 합침 (화면은 한국어 문단마다 묶음 하나)
+_m = []
+for g in out:
+    if _m and set(g['ko']) & set(_m[-1]['ko']) and not g.get('pin') and not _m[-1].get('pin'):
+        h = _m[-1]; h['ko'] = sorted(set(h['ko']) | set(g['ko']), key=lambda k: tuple(map(int, k.split(':'))))
+        h['or'] = sorted(set(h['or']) | set(g['or'])); h['s'] += g['s']
+    else: _m.append(g)
+out[:] = _m
+for g in out:   # --move 로 옮긴 원서 문단과 짝지은 묶음: 순서가 다르다는 메모
+    if g['or'] and not g.get('pin') and all(o in MOVED for o in g['or']):
+        o = ORIG[g['or'][0]]
+        g['note'] = f"원서와 순서가 다릅니다 — 원서 {o['pg']}쪽" + (f"(PDF {o['pdf']}쪽)" if o.get('pdf') and o['pdf'] != o['pg'] else '') + "에 있는 글입니다."
 # 차례(--toc): 쪽 번호를 뺀 제목 줄끼리 순서를 지키며 짝지음 → 묶음 하나(toc: 1) — tools/parallel/toc.py
 if A.toc:
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
