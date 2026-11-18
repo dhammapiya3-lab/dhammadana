@@ -1,0 +1,465 @@
+[
+ {
+  "img": "images/22-Sadhita-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     16,
+     614,
+     84
+    ],
+    "ko": "사디따 왕 전생 이야기:\n더없는 보시를 들여다보다",
+    "cover": false,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     196,
+     392,
+     604,
+     440
+    ],
+    "ko": "(빤냐사 자따까 스물두 번째 이야기)",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     340,
+     742,
+     430
+    ],
+    "ko": "제따와나에서 스승께서 모인 비구들에게 말씀하셨습니다. “예전에 내가 범부로 윤회를 떠돌 때에도 날마다 많은 사람에게 보시했다.”",
+    "cover": [
+     234,
+     214,
+     179
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     232,
+     32,
+     570,
+     148
+    ],
+    "ko": "“미틸라를 다스리던 사디따 왕은 왕의 행복을 돌아보다 깊은 진리를 깨달았습니다. 지금의 기쁨은 모두 지난 생에 지은 공덕의 열매라는 것을. 그 흐름은 이어져야 했습니다.”",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     394,
+     146,
+     660,
+     194
+    ],
+    "ko": "보시의 건축:",
+    "cover": false,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     396,
+     250,
+     658,
+     310
+    ],
+    "ko": "왕은 솜씨 좋은 목수들에게 큰 살라 나무를 베어 오게 하여, 미틸라 도성을 둘러싸며 받치는 큰 보시당 여섯 곳을 지었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     36,
+     554,
+     154
+    ],
+    "ko": "왕은 날마다 큰 재물을 나누며 아침저녁으로 보시당을 찾았습니다. 미틸라의 백성들은 쟁기질을 멈추었습니다. 왕의 더없이 기쁜 보시로 살림이 넉넉했기 때문입니다.",
+    "cover": false,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     368,
+     164,
+     718,
+     276
+    ],
+    "ko": "이렇게 맑고 한데 모인 공덕이 두려움만 있던 땅을 크게 흔들었습니다. 하늘 위에서는 천신들의 왕 삭까의 옥좌가 뜨겁게 달아올랐습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     42,
+     372,
+     758,
+     438
+    ],
+    "ko": "천상에서 내려온 삭까가 궁전을 환히 밝혔습니다. “이 보시를 기리며 그대에게 두 팔을 들어 경의를 표합니다.” 삭까가 선언했습니다. “그대는 미래에 스스로 깨달은 분이 될 것입니다.”",
+    "cover": [
+     230,
+     211,
+     180
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     536,
+     40,
+     758,
+     78
+    ],
+    "ko": "넘쳐 나는 은총:",
+    "cover": false,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     486,
+     76,
+     764,
+     158
+    ],
+    "ko": "자기 세계로 돌아간 삭까는 이레 동안 신기한 비를 차례로 내렸습니다. 왕의 공덕은 땅과 하늘의 재물이 상상할 수 없이 쏟아지는 폭포가 되었습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     378,
+     766,
+     430
+    ],
+    "ko": "사디따 왕은 하늘의 재물을 쌓아 두지 않고 보시당에서 모두 나누어 주었습니다. 그리고 백성들도 스스로 보시하도록 북돋아, 뒷날 뚜시따 천상에 태어날 길을 열어 주었습니다.",
+    "cover": [
+     230,
+     210,
+     180
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     380,
+     766,
+     436
+    ],
+    "ko": "이야기를 마치신 스승께서는 네 가지 진리의 법을 설하셨습니다. 이를 들은 비구들은 수다원·사다함·아나함의 과와 청정한 아라한과를 얻었습니다.",
+    "cover": [
+     227,
+     206,
+     174
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/22-Sadhita-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     258,
+     24,
+     544,
+     82
+    ],
+    "ko": "누가 누구였나:",
+    "cover": false,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     206,
+     72,
+     346,
+     102
+    ],
+    "ko": "지난 생",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     462,
+     72,
+     626,
+     102
+    ],
+    "ko": "지금",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     140,
+     120,
+     256,
+     150
+    ],
+    "ko": "사디따 왕",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     140,
+     172,
+     256,
+     202
+    ],
+    "ko": "사물라 왕비",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     140,
+     222,
+     256,
+     272
+    ],
+    "ko": "삭까\n천신들의 왕",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     140,
+     292,
+     256,
+     324
+    ],
+    "ko": "대신",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     546,
+     118,
+     668,
+     150
+    ],
+    "ko": "부처님",
+    "cover": false,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     546,
+     164,
+     690,
+     214
+    ],
+    "ko": "야소다라\n부처님의 아내",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     546,
+     236,
+     668,
+     284
+    ],
+    "ko": "아누룻다\n아라한 비구",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     546,
+     290,
+     668,
+     340
+    ],
+    "ko": "아난다\n아라한 비구",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     240,
+     328,
+     570,
+     438
+    ],
+    "ko": "사디따 → 부처님\n사물라 왕비 → 야소다라\n삭까 → 아누룻다\n대신 → 아난다\n왕의 부모 → 마하마야와 숫도다나",
+    "cover": false,
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
