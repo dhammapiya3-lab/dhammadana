@@ -973,9 +973,10 @@ function renderReader() {
     <div class="panel" id="p-bm"><h5>내 책갈피</h5><ul>${bms().map((m, k) => `<li><span><a class="link" href="/read/${m.id}/${m.p}">『${esc(m.t)}』 ${esc(m.pl || m.p)}쪽</a>${m.note ? `<br><span class="muted small">${esc(m.note)}</span>` : ''}</span><button class="link" data-bmdel="${k}" aria-label="책갈피 지우기">지우기</button></li>`).join('') || '<li class="muted">아직 책갈피가 없습니다.</li>'}</ul>
       <div class="row" style="margin-top:12px"><input id="bmNote" placeholder="이 쪽에 한 줄 메모" aria-label="책갈피 메모" style="flex:1;height:34px;border:1px solid var(--line);border-radius:8px;padding:0 8px;background:var(--paper)"><button class="tbtn" id="bmSave">저장</button></div>
       <p class="note">회원가입 없이 이 기기의 브라우저에만 저장됩니다. 다른 기기로 옮길 때는 내 서재의 ‘옮기기’를 쓰세요.</p></div>
-    <div class="panel" id="p-keys"><h5>단축키 안내</h5><p class="note">Alt 키와 Shift 키를 함께 누른 채로 아래 글자 키를 누릅니다. (맥은 Option + Shift)</p><ul class="keys">${KEYS.map(([k, d]) => `<li><kbd>Alt+Shift+${k}</kbd> ${d}</li>`).join('')}<li><kbd>Esc</kbd> 열린 창 닫기 (창이 없으면 읽기 끝내기)</li><li><kbd>→</kbd> <kbd>←</kbd> 다음·앞으로 넘기기</li></ul></div>`;
+    <div class="panel" id="p-keys"><h5>단축키 안내</h5><p class="note">Alt 키와 Shift 키를 함께 누른 채로 아래 글자 키를 누릅니다. (맥은 Option + Shift). 창을 여는 단축키는 한 번 더 누르면 창이 닫히고, 연 단추로 돌아갑니다.</p><ul class="keys">${KEYS.map(([k, d]) => `<li><kbd>Alt+Shift+${k}</kbd> ${d}</li>`).join('')}<li><kbd>Esc</kbd> 열린 창 닫기 (창이 없으면 읽기 끝내기)</li><li><kbd>→</kbd> <kbd>←</kbd> 다음·앞으로 넘기기</li></ul></div>`;
   bindReader();
-  if (fkey) { const f = $(fkey, el); if (f && f.offsetParent !== null) f.focus({ preventScroll: true }); }
+  el._fkey = null;
+  if (fkey) { const f = $(fkey, el); if (f && f.offsetParent !== null) f.focus({ preventScroll: true }); else el._fkey = fkey; }  // 닫힌 창 안의 단추면 창을 다시 연 뒤(reopen)에 커서를 되돌림
   sprBar(); spreadWas = spreadOn();  // 화면을 돌리면 처음 한 번부터 바로 다시 그리게
   parApply();
   sprAlign(); if (R && R.ly && spreadOn()) $$('#rBody .spr img').forEach(im => { if (!im.complete) im.addEventListener('load', () => { clearTimeout(sprAlignT); sprAlignT = setTimeout(sprAlign, 100); }, { once: true }); });
@@ -993,7 +994,7 @@ function go(n, ci) { if (!R) return; if (R.ttsLocked) { toast('듣기가 잠겨 
 const immersive = () => matchMedia('(max-width:700px)').matches || matchMedia('(hover:none) and (pointer:coarse)').matches;
 function bindReader() {
   const el = $('#reader');
-  const reopen = id => $('#' + id).classList.add('open');
+  const reopen = id => { $('#' + id).classList.add('open'); const k = el._fkey; el._fkey = null; if (k) { const f = $(k, el); if (f) try { f.focus({ preventScroll: true }); } catch (e) {} } };  // 설정 창의 고른 단추(예: 글자 150%)에 커서가 남게 (운영자 요청, 2026-11-18)
   $('#rClose').onclick = exitReader;
   $('#rMenu').onclick = () => { el.classList.remove('chrome-off'); setTimeout(() => { const b = $('#rClose'); if (b) b.focus(); }, 30); };  // 화면 낭독기·키보드용 숨은 단추 (운영자 요청, 2026-11-17)
   // 글로 보기에서는 한 화면이 한 장(章)이므로 ‹ › 는 장 단위로 넘깁니다 (쪽 단위면 같은 화면이 되풀이됨)
@@ -1457,11 +1458,11 @@ function pickVoice(o) {
 }
 function ttsPanel() {
   const o = ttsOpt();
-  const ck = (k, label, hint = '') => `<label class="tts-ck"><input type="checkbox" data-tts="${k}" ${o[k] ? 'checked' : ''}><span>${label}${hint ? `<small>${hint}</small>` : ''}</span></label>`;
+  const ck = (k, label, hint = '') => `<label class="tts-ck"><input type="checkbox" data-tts="${k}" ${o[k] ? 'checked' : ''}><span>${label}${hint ? `<span class="sr"> - </span><small>${hint}</small>` : ''}</span></label>`;  // 낭독기가 '빠알리어 - 빠알리어 소리대로 읽음'처럼 끊어 읽게 (2026-11-18)
   const sel = (k, list, name = '') => `<select data-tts="${k}"${name ? ` aria-label="${name}"` : ''}>${list.map(([v, l]) => `<option value="${v}" ${String(o[k]) === String(v) ? 'selected' : ''}>${l}</option>`).join('')}</select>`;
   return `<h5>듣기 설정</h5>
     <div class="tts-row"><label for="ttsVoice">목소리</label><select id="ttsVoice" data-tts="voice">${voiceOptions(o.voice)}</select></div>
-    <div class="tts-row"><label>빠르기 <b id="ttsRateV">${(+o.rate).toFixed(1)}배</b></label><input type="range" min="0.6" max="2" step="0.1" value="${o.rate}" data-tts="rate" aria-label="빠르기" aria-valuetext="${(+o.rate).toFixed(1)}배"></div>
+    <div class="tts-row"><label>빠르기 <b id="ttsRateV">${(+o.rate).toFixed(1)}배</b></label><input type="range" min="0.6" max="2.5" step="0.1" value="${o.rate}" data-tts="rate" aria-label="빠르기" aria-valuetext="${(+o.rate).toFixed(1)}배"></div>
     <div class="tts-row"><label>영어 빠르기 <b id="ttsEnRateV">${Math.round((+o.enRate || 0.85) * 100)}%</b><small class="muted"> (한국어 빠르기에 비해)</small></label><input type="range" min="0.6" max="1.2" step="0.05" value="${o.enRate || 0.85}" data-tts="enRate" aria-label="영어 빠르기 (한국어 빠르기에 비해)" aria-valuetext="${Math.round((+o.enRate || 0.85) * 100)}%"></div>
     <div class="tts-row"><label>목소리 높낮이 <b id="ttsPitchV">${(+o.pitch).toFixed(1)}</b></label><input type="range" min="0.6" max="1.4" step="0.1" value="${o.pitch}" data-tts="pitch" aria-label="목소리 높낮이" aria-valuetext="${(+o.pitch).toFixed(1)}"></div>
     <div class="tts-sub">읽을 것</div>
@@ -2456,6 +2457,7 @@ function openPanel(name, toggle) {
   setTimeout(() => { const t = name === 'find' ? $('#findQ') : $('h5', p); if (!t) return; if (t.tagName === 'H5') t.tabIndex = -1; try { t.focus({ preventScroll: true }); } catch (e) {} }, 40);
   return true;
 }
+function togglePanel(name) { const p = $('#p-' + name); if (!p) return false; if (p.classList.contains('open')) closePanels(); else openPanel(name); return true; }
 function closePanels(back = true) {
   const el = $('#reader'); if (!el) return; const p = $('.panel.open', el);
   $$('.panel', el).forEach(x => x.classList.remove('open'));
@@ -2484,12 +2486,13 @@ function readerKey(e) {
   switch (k) {
     case 'M': el.classList.remove('chrome-off'); $$('.panel', el).forEach(x => x.classList.remove('open')); setTimeout(() => { const b = $('#rClose'); if (b) b.focus(); }, 30); return true;
     case 'P': { const b = $('#rSpeak'); if (!b) { say('이 화면에서는 듣기를 쓸 수 없습니다'); return true; } if (R.ttsLocked) { say('듣기가 잠겨 있습니다'); return true; } R.speaking ? stopSpeak(true) : speak(); return true; }
-    case 'S': if (!openPanel('tts')) say('이 책은 듣기 설정이 없습니다'); return true;
-    case 'V': openPanel('mode'); return true;
-    case 'F': openPanel('font'); return true;
-    case 'N': if (!openPanel('toc')) say('이 책에는 목차가 없습니다'); return true;
-    case 'L': openPanel('bm'); return true;
-    case 'H': openPanel('keys'); return true;
+    // 창 단축키는 켜고 끄기: 한 번 더 누르면 창을 닫고 연 단추로 커서가 돌아감 (운영자 요청, 2026-11-18 — Esc 도 그대로)
+    case 'S': if (!togglePanel('tts')) say('이 책은 듣기 설정이 없습니다'); return true;
+    case 'V': togglePanel('mode'); return true;
+    case 'F': togglePanel('font'); return true;
+    case 'N': if (!togglePanel('toc')) say('이 책에는 목차가 없습니다'); return true;
+    case 'L': togglePanel('bm'); return true;
+    case 'H': togglePanel('keys'); return true;
     case 'B': { const b = $('#rMark'); if (b) b.click(); setTimeout(() => { const m = $('#rMark'); if (m && document.activeElement === document.body) m.focus(); }, 60); return true; }
     case 'K': {
       const p = R.pages[R.i] || {}; let ch = null; try { const cs = chapters(); ch = cs[chapterOf(R.i + 1)]; } catch (x) {}
@@ -2552,7 +2555,8 @@ function sListbox(ul) {
   items.forEach((li, i) => li.addEventListener('click', () => open(i)));
   return { pick, focus: () => pick(sel) };
 }
-const sRow = (href, cols, ic = '📁', kind = '') => `<li class="s-row${kind ? ' k-' + kind : ''}"><a href="${esc(href)}"><span class="s-ic" aria-hidden="true">${ic}</span>${cols.map((c, i) => `${i && c ? '<span class="sr">, </span>' : ''}<span class="s-c s-c${i + 1}">${esc(c || '')}</span>`).join('')}</a></li>`;
+const sRow = (href, cols, ic = '📁', kind = '') => `<li class="s-row${kind ? ' k-' + kind : ''}"><a href="${esc(href)}"><span class="s-ic" aria-hidden="true">${ic}</span>${cols.map((c, i) => `${i && c ? '<span class="sr">, </span>' : ''}<span class="s-c s-c${i + 1}">${sDate(c || '')}</span>`).join('')}</a></li>`;
+const sDate = c => /\d{4}-\d{1,2}-\d{1,2}/.test(c) ? `<span aria-hidden="true">${esc(c)}</span><span class="sr">${esc(c.replace(/(\d{4})-(\d{1,2})-(\d{1,2})/g, (m, y, mo, d) => `${y}년 ${+mo}월 ${+d}일`))}</span>` : esc(c);  // 날짜는 '2026년 11월 15일' 로 들려줌
 const sHead = h => `<div class="s-head" aria-hidden="true">${h.map((x, i) => `<span class="s-c s-c${i + 1}">${esc(x)}</span>`).join('')}</div>`;
 const sStat = t => { const s = $('.s-stat span:last-child'); if (s) s.textContent = t; };
 function sFocusFirst() {

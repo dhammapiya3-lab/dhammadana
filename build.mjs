@@ -278,6 +278,7 @@ if (fs.existsSync(C('audiobooks'))) {
 
 /* ---------- 도구 ---------- */
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const sayDate = d => String(d || '').replace(/(\d{4})-(\d{1,2})-(\d{1,2})/g, (m, y, mo, da) => `${y}년 ${+mo}월 ${+da}일`);
 const slugT = s => encodeURIComponent(s);
 const NAV = [['/about/', '소개', 'about'], ['/press/', '我無말들 출판사', 'press'], ['/library/', '법보시 도서관', 'library'], ['/dhammatalk/', '법문 바로 듣기', 'dhammatalk'], ['/links/', '추천·협력 사이트', 'links'], ['/news/', '소식', 'news']];
 const wheel = cls => `<svg class="${cls}" viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="20" cy="20" r="15"/><circle cx="20" cy="20" r="3.2"/><path d="M20 5v30M5 20h30M9.4 9.4l21.2 21.2M30.6 9.4L9.4 30.6"/></g></svg>`;
@@ -519,7 +520,7 @@ put('index.html', layout({ simple: '/simple/', ld: { '@context': 'https://schema
 </section>
 <section class="section wrap two">
   <div><div class="section-head"><h2>최근 업데이트</h2><a class="more" href="/library/">도서관 →</a></div>
-    <ul class="upd" role="list">${updatesList().slice(0, 6).map(u => `<li><a class="upd-item" href="/book/${u.b.id}/" aria-label="${esc(u.b.title + ' ' + u.d + ' · ' + u.c)}"><span class="upd-cover">${u.b.cover ? `<img src="${esc(u.b.cover)}" alt="" loading="lazy"${ctrCover(u.b.cover)}>` : ''}</span> <span class="upd-t">${esc(u.b.title)}</span> <span class="upd-m">${esc(u.d)} · ${esc(u.c)}</span></a></li>`).join('')}</ul></div>
+    <ul class="upd" role="list">${updatesList().slice(0, 6).map(u => `<li><a class="upd-item" href="/book/${u.b.id}/" aria-label="${esc(u.b.title + ', ' + sayDate(u.d) + ' ' + u.c)}"><span class="upd-cover">${u.b.cover ? `<img src="${esc(u.b.cover)}" alt="" loading="lazy"${ctrCover(u.b.cover)}>` : ''}</span> <span class="upd-t">${esc(u.b.title)}</span> <span class="upd-m">${esc(u.d)} · ${esc(u.c)}</span></a></li>`).join('')}</ul></div>
   <div><div class="section-head"><h2>주제로 둘러보기</h2><a class="more" href="/library/">모든 주제 →</a></div>
     <div class="chips">${TOPICS.groups.flatMap(g => g.labels).filter(t => countTopic(t) > 0).sort((a, b) => countTopic(b) - countTopic(a)).slice(0, 14).map(t => `<a class="chip" href="/library/?topic=${slugT(t)}">${esc(t)}<span class="n">${countTopic(t)}</span></a>`).join('')}</div></div>
 </section>
@@ -942,7 +943,9 @@ ${status ? `<footer class="s-stat"><span>/${esc(crumbs.slice(1).map(c => c[0]).j
 </html>`;
 }
 // 목록 한 줄: cols = 보이는 칸 글(첫 칸이 이름). 칸 사이에 화면에는 안 보이는 쉼표를 넣어 낭독기가 끊어 읽게
-const sCols = cols => cols.map((c, i) => `${i && c ? '<span class="sr">, </span>' : ''}<span class="s-c s-c${i + 1}">${esc(c || '')}</span>`).join('');
+// 날짜는 낭독기가 '2026 11 15' 로 읽지 않게 '2026년 11월 15일' 로 들려줌 (운영자 요청, 2026-11-18 — 화면 글은 그대로)
+const sDateHtml = c => /\d{4}-\d{1,2}-\d{1,2}/.test(c) ? `<span aria-hidden="true">${esc(c)}</span><span class="sr">${esc(sayDate(c))}</span>` : esc(c);
+const sCols = cols => cols.map((c, i) => `${i && c ? '<span class="sr">, </span>' : ''}<span class="s-c s-c${i + 1}">${sDateHtml(c || '')}</span>`).join('');
 const S_COLS = { 2: 'minmax(0,2fr) minmax(0,3fr)', 3: 'minmax(0,3fr) 110px minmax(0,2fr)' };
 const sList = (label, head, rows, cols = S_COLS[head.length]) => `<div class="s-tbl"${cols ? ` style="--cols:${cols}"` : ''}><div class="s-head" aria-hidden="true">${head.map((h, i) => `<span class="s-c s-c${i + 1}">${esc(h)}</span>`).join('')}</div>
 <ul class="s-list" data-label="${esc(label)}">${rows.map(r => `<li class="s-row${r.kind ? ' k-' + r.kind : ''}"><a href="${esc(r.href)}"${r.dl ? ' download' : ''}${r.ext ? ' target="_blank" rel="noopener"' : ''}><span class="s-ic" aria-hidden="true">${r.ic || '📁'}</span>${sCols(r.cols)}</a></li>`).join('')}</ul></div>`;
