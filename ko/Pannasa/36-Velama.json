@@ -1,0 +1,652 @@
+[
+ {
+  "img": "images/36-Velama-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     168,
+     552,
+     292
+    ],
+    "ko": "웰라마 자따까:\n보시 바라밀\n재물·공덕·마음을 다룬\n빤냐사 자따까 이야기",
+    "cover": [
+     210,
+     171,
+     103
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/36-Velama-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     330,
+     548,
+     410
+    ],
+    "ko": "큰 상인 아나타삔디까는 5억 4천만 냥을 들여 제따와나를 짓고 날마다 보시했습니다. 그런데 아찌라와띠 강의 큰 홍수가 감춰 둔 쇠 항아리의 재물을 쓸어 가 버려, 큰 상인은 가난해졌습니다.",
+    "cover": [
+     225,
+     187,
+     120
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/36-Velama-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     432,
+     62,
+     738,
+     178
+    ],
+    "ko": "싸라기 죽과 식초밖에 올릴 수 없게 된 아나타삔디까는 몹시 부끄러웠습니다. 부처님께서 부드럽게 말씀하셨습니다. “믿음과 공경으로 성스러운 승가에 올린 보시는 결코 거칠지 않다. 끝없는 열매를 맺는다.”",
+    "cover": [
+     212,
+     177,
+     104
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/36-Velama-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     66,
+     342,
+     190
+    ],
+    "ko": "이를 보여 주시려고 스승께서 지난 일을 들려주셨습니다. 그는 한때 맑고 지혜로운 바라문 웰라마로 태어났습니다. 딱까실라에서 그는 잠부디빠 곳곳에서 온 왕자 8만 4천 명의 스승이 되었습니다.",
+    "cover": [
+     226,
+     193,
+     112
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/36-Velama-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     52,
+     600,
+     148
+    ],
+    "ko": "세월이 흘러 8만 4천 왕자는 힘센 왕이 되어 돌아왔습니다. 그들의 많은 수행원이 시골을 짓밟고 가축을 해쳤습니다. 웰라마는 평화를 찾아 주려고 나라마다 돌로 된 경계 기둥을 세워 모든 백성에게 화합을 되찾아 주었습니다.",
+    "cover": [
+     74,
+     52,
+     40
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Velama-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     350,
+     604,
+     412
+    ],
+    "ko": "죽음을 피할 수 없음을 안 웰라마는 대대로 쌓은 창고를 열었습니다. 기쁨이 가득한 마음으로, 잠부디빠의 모든 사람에게 보시하려고 12요자나나 되는 보시당을 짓게 했습니다.",
+    "cover": [
+     74,
+     52,
+     40
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Velama-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     160,
+     552,
+     290
+    ],
+    "ko": "일곱 해 일곱 달 동안 그는 상상할 수 없는 재물을 베풀었습니다.\n보석을 채운 금항아리 8만 4천 개,\n금 사슬로 꾸민 코끼리 8만 4천 마리,\n보석 귀걸이를 한 여인 8만 4천 명.\n“보시 하나라도 빠졌다고 말하지 못하게 하라.”",
+    "cover": [
+     38,
+     40,
+     64
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Velama-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     432,
+     174,
+     724,
+     266
+    ],
+    "ko": "손수 재물을 나누며 웰라마의 가슴에서 감흥의 말이 터져 나왔습니다. “잎이나 익은 열매가 어김없이 땅에 떨어지듯, 내가 베푼 보시도 어김없이 열매를 맺으리라.”",
+    "cover": [
+     141,
+     88,
+     57
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/36-Velama-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     294,
+     148,
+     508,
+     312
+    ],
+    "ko": "그러나 깊은 역설이 있었습니다.\n\n잠부디빠 전체에 보시했지만, 웰라마는 보시를 받을 만한 사람을 단 한 명도 찾지 못했습니다. 그는 계를 하나도 지키지 않는 많은 사람에게 베풀었습니다.",
+    "cover": [
+     70,
+     46,
+     32
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Velama-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     272,
+     44,
+     530,
+     82
+    ],
+    "ko": "보시의 역설",
+    "cover": [
+     220,
+     184,
+     101
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     96,
+     354,
+     246,
+     420
+    ],
+    "ko": "아나타삔디까\n거친 죽 → 승가\n→ 끝없는 열매",
+    "cover": [
+     70,
+     46,
+     32
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     262,
+     380,
+     540,
+     408
+    ],
+    "ko": "받는 이가 청정할수록 보시의 열매가 커집니다.",
+    "cover": [
+     70,
+     46,
+     32
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     550,
+     354,
+     720,
+     420
+    ],
+    "ko": "웰라마\n끝없는 재물 → 계 없는 이들\n→ 한정된 열매",
+    "cover": [
+     70,
+     46,
+     32
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Velama-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     72,
+     310,
+     218
+    ],
+    "ko": "공덕의 탑:\n성스러운 받는 이\n\n보시의 공덕은 받는 이의 깨달음에 따라 크게 늘어납니다.",
+    "cover": [
+     230,
+     202,
+     134
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     508,
+     50,
+     760,
+     80
+    ],
+    "ko": "승가 > 부처님 한 분",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     508,
+     97,
+     760,
+     127
+    ],
+    "ko": "부처님 > 벽지불 100분",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     508,
+     143,
+     760,
+     173
+    ],
+    "ko": "벽지불 1분 > 아라한 100분",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     508,
+     190,
+     760,
+     220
+    ],
+    "ko": "아라한 1분 > 아나함 100분",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     508,
+     237,
+     760,
+     267
+    ],
+    "ko": "아나함 1분 > 사다함 100분",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     508,
+     283,
+     760,
+     313
+    ],
+    "ko": "사다함 1분 > 수다원 100분",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     508,
+     332,
+     760,
+     362
+    ],
+    "ko": "수다원 1분 > 웰라마의 모든 재물",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/36-Velama-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     478,
+     138,
+     724,
+     304
+    ],
+    "ko": "공덕의 꼭대기\n승가에 올리는 어떤 물질 공양보다 뛰어난 것은 마음을 닦는 일입니다.\n1. 귀의하기\n2. 오계 지키기\n3. 자애(mettā) 보내기\n4. 향 냄새를 맡는 짧은 순간이라도 무상(anicca)을 깨닫기",
+    "cover": [
+     226,
+     193,
+     113
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/36-Velama-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     396,
+     140,
+     690,
+     248
+    ],
+    "ko": "자따까의 인연\n스승께서 지난 생과 지금을 이으셨습니다.\n부왕은 지금의 사리뿟따,\n왕의 아들은 지금의 아난다,\n8만 4천 왕은 부처님의 대중이며,\n너그러운 바라문 웰라마가 바로 부처님입니다.",
+    "cover": [
+     70,
+     46,
+     32
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     52,
+     150,
+     152,
+     168
+    ],
+    "ko": "웰라마 바라문",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     196,
+     150,
+     296,
+     168
+    ],
+    "ko": "부처님",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     56,
+     274,
+     150,
+     292
+    ],
+    "ko": "부왕",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     196,
+     274,
+     296,
+     292
+    ],
+    "ko": "사리뿟따",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     56,
+     398,
+     156,
+     416
+    ],
+    "ko": "왕의 아들",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     196,
+     398,
+     296,
+     416
+    ],
+    "ko": "아난다",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     336,
+     396,
+     512,
+     416
+    ],
+    "ko": "8만 4천 왕과 백성",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     556,
+     396,
+     740,
+     416
+    ],
+    "ko": "부처님의 대중",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Velama-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     252,
+     290,
+     548,
+     366
+    ],
+    "ko": "“장자여, 그대는 언제나 보시의 달인이었다.”\n참된 공덕은 물질 보시의 화려함이 아니라, 받는 이의 청정함과 흔들림 없는 믿음에 있습니다.",
+    "cover": [
+     230,
+     199,
+     126
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
