@@ -1,0 +1,332 @@
+[
+ {
+  "img": "images/43-The-Story-Concerning-Mahakassapa-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     358,
+     640,
+     436
+    ],
+    "ko": "눈 있는 분의 떠나심\n마하깟사빠와 반열반 이야기",
+    "cover": [
+     214,
+     170,
+     124
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/43-The-Story-Concerning-Mahakassapa-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     342,
+     654,
+     448
+    ],
+    "ko": "빠와에서 오는 길에 쉬던 마하깟사빠 장로는\n하늘의 만다라와 꽃을 든 수행자를 보았습니다.\n“우리 스승을 아십니까?” 깟사빠가 물었습니다.\n“압니다.” 수행자가 답했습니다.\n“이레 전에 사문 고따마께서 반열반에 드셨습니다.”",
+    "cover": [
+     201,
+     155,
+     102
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/43-The-Story-Concerning-Mahakassapa-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     346,
+     744,
+     380
+    ],
+    "ko": "무상 앞에서 보인 모습",
+    "cover": [
+     210,
+     164,
+     109
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     60,
+     378,
+     296,
+     446
+    ],
+    "ko": "탐욕 있는 이들:\n베어진 듯 쓰러지며 울었습니다.",
+    "cover": [
+     173,
+     126,
+     80
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     304,
+     378,
+     496,
+     446
+    ],
+    "ko": "탐욕 없는 이들:\n마음챙김으로 견디었습니다.\n“형성된 것은 무상하다.”",
+    "cover": [
+     203,
+     159,
+     106
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     378,
+     744,
+     446
+    ],
+    "ko": "반항한 이(늙은 수밧다):\n“성가신 사문에게서 벗어났으니\n이제 하고 싶은 대로 하자.”",
+    "cover": [
+     197,
+     150,
+     103
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/43-The-Story-Concerning-Mahakassapa-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     342,
+     654,
+     448
+    ],
+    "ko": "마하깟사빠가 슬퍼하는 비구들에게 말했습니다.\n“벗들이여, 그만 슬퍼하십시오. 세존께서 미리 말씀하지 않으셨습니까?\n사랑하는 모든 것과는 달라지고 헤어지기 마련입니다.\n태어난 것이 어찌 무너지지 않겠습니까?”",
+    "cover": [
+     199,
+     158,
+     108
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/43-The-Story-Concerning-Mahakassapa-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     118,
+     334,
+     688,
+     442
+    ],
+    "ko": "부처님의 화장\n꾸시나라에서 말라의 우두머리 넷이 머리를 감고\n깨끗한 옷을 입고 세존의 장작에 불을 붙이려 했습니다.\n애썼지만 불이 붙지 않았습니다.\n그들은 아누룻다 장로에게 까닭을 물었습니다.",
+    "cover": [
+     205,
+     157,
+     111
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/43-The-Story-Concerning-Mahakassapa-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     348,
+     692,
+     448
+    ],
+    "ko": "“신들의 뜻이 따로 있습니다.” 아누룻다가 말했습니다.\n“비구 오백 명과 함께 오는 마하깟사빠 장로가 이르러\n세존의 발에 머리를 대고 예경할 때까지\n장작에 불이 붙지 않을 것입니다.”",
+    "cover": [
+     214,
+     172,
+     129
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/43-The-Story-Concerning-Mahakassapa-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     384,
+     660,
+     456
+    ],
+    "ko": "마하깟사빠가 말라들의 탑묘에 와서 가사를 바로 입고\n장작더미를 세 번 돌아 세존의 발에 머리를 대고 예경했습니다.\n비구 오백 명이 뒤따라 마지막 예를 올렸습니다.",
+    "cover": [
+     214,
+     163,
+     114
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/43-The-Story-Concerning-Mahakassapa-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     116,
+     368,
+     688,
+     448
+    ],
+    "ko": "마하깟사빠 장로와 비구 오백 명이\n세존의 발에 예경하자\n장작더미에 저절로 불이 붙었습니다.",
+    "cover": [
+     208,
+     165,
+     120
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/43-The-Story-Concerning-Mahakassapa-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     352,
+     656,
+     448
+    ],
+    "ko": "완전히 사라짐\n버터기름이 타면 재가 남지 않듯\n몸은 숯 한 점 없이 모두 탔습니다.\n오백 겹의 천 가운데\n가장 안쪽과 바깥쪽 천만 그대로 남았습니다.",
+    "cover": [
+     207,
+     164,
+     118
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/43-The-Story-Concerning-Mahakassapa-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     146,
+     352,
+     658,
+     456
+    ],
+    "ko": "화장이 끝나자 세 가지 기적으로 불이 꺼졌습니다.\n1. 하늘에서 갑자기 쏟아진 물\n2. 땅의 우물에서 솟아오른 물\n3. 말라들이 부은 갖가지 향수",
+    "cover": [
+     200,
+     160,
+     116
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/43-The-Story-Concerning-Mahakassapa-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     352,
+     656,
+     448
+    ],
+    "ko": "말라들은 회당에 창으로 울타리를 두르고\n활로 사리를 에워쌌습니다.\n그곳에서 춤과 노래와 음악과 향과 꽃다발로\n사리를 공경하고 존중하고 예배했습니다.",
+    "cover": [
+     200,
+     160,
+     116
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/43-The-Story-Concerning-Mahakassapa-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     142,
+     388,
+     662,
+     448
+    ],
+    "ko": "눈 있는 분께서는 떠나셨지만 길은 남았습니다.\n승가는 마음챙김과 분명한 앎으로 견디었습니다.\n형성된 것은 모두 무상하지만 법은 살아 있음을 알았기에.",
+    "cover": [
+     224,
+     174,
+     131
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
