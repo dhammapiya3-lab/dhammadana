@@ -59,7 +59,7 @@ if (fs.existsSync(C('texts'))) for (const f of fs.readdirSync(C('texts')).filter
   while ((m = re.exec(body))) { if (last) last.text = body.slice(last.start, m.index).trim(); last = { label: m[1].replace(/\s*쪽$/, ''), start: re.lastIndex }; pages.push(last); }
   if (last) last.text = body.slice(last.start).trim();
   if (!pages.length) pages.push({ label: '', text: body.trim() });
-  TEXTS[t.book] = { spread: !!t.spread, center_heads: !!t.center_heads, ly: t.ly || null, say: t.say || null, ph: t.ph || null, table_dl: t.table_dl || null, edition: t.edition || '', pages: pages.map(p => ({ label: p.label, text: p.text })), toc: (t.toc || []).filter(x => x && x.title && x.page).map(x => ({ title: (x.sub ? '  ' : '') + x.title, page: +x.page, label: (pages[+x.page - 1] || {}).label || '', ...(x.at ? { at: String(x.at) } : {}), ...(x.toc_title ? { list: String(x.toc_title) } : {}) })) };
+  TEXTS[t.book] = { spread: !!t.spread, center_heads: !!t.center_heads, ly: t.ly || null, say: t.say || null, ph: t.ph || null, table_dl: t.table_dl || null, fn_site: t.fn_site || null, edition: t.edition || '', pages: pages.map(p => ({ label: p.label, text: p.text })), toc: (t.toc || []).filter(x => x && x.title && x.page).map(x => ({ title: (x.sub ? '  ' : '') + x.title, page: +x.page, label: (pages[+x.page - 1] || {}).label || '', ...(x.at ? { at: String(x.at) } : {}), ...(x.toc_title ? { list: String(x.toc_title) } : {}) })) };
 }
 // 원서 대조 짝 자료 (운영자 요청, 2026-11-15): content/parallel/<ID>.<말>.json — 읽기 화면 '⇄ 원서 대조'
 const PARALLEL = {};
@@ -280,7 +280,7 @@ function bookTxt(b) {
     if (pg.label) out.push(`[${pg.label}쪽]`);
     let firstHead = head ? norm(head.title) : null, seen = 0;
     for (let q of paras) {
-      q = q.trim(); if (!q) continue; q = txtPairs(q);
+      q = q.trim(); if (!q) continue; const raw0 = q; q = txtPairs(q);
       const mid = mids.find(c => norm(q).startsWith(norm(c.at)));
       if (mid) { out.push('', '', '■ ' + mid.title.trim(), ''); firstHead = norm(mid.title); seen = 0; }
       seen++;
@@ -305,6 +305,7 @@ function bookTxt(b) {
         lines.push(txtInline(l));
       }
       out.push(lines.join('\n').trim(), '');
+      for (const [fn, note] of Object.entries(t.fn_site || {})) if (raw0.includes(`[^${fn}]`) && !raw0.includes(`[^${fn}]:`)) out.push(`[각주 ${fn} — 사이트 안내] ${note} (책에 실린 글이 아니라 법보시 도서관에서 덧붙인 설명입니다.)`, '');  // 인쇄본에 풀이가 없는 각주 (2026-11-19)
     }
   });
   return '﻿' + out.join('\n').replace(/\n{4,}/g, '\n\n\n').replace(/\n/g, '\r\n');
@@ -1195,7 +1196,7 @@ if (fs.existsSync(C('parallel'))) { fs.mkdirSync(path.join(OUT, 'parallel'), { r
 const indexOf = id => { const f = C('indexes/' + id + '.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : null; };
 fs.mkdirSync(path.join(OUT, 'data/audio'), { recursive: true });
 for (const [id, a] of Object.entries(AUDIO)) fs.writeFileSync(path.join(OUT, 'data/audio', id + '.json'), JSON.stringify({ book: id, voice: a.voice || '', chapters: a.chapters.map(c => ({ ...c, url: fileUrl(c.file) + '?v=' + (c.size || '') + (a.up && a.up[c.n] ? '-' + a.up[c.n] : '') }))  /* 같은 이름으로 새 파일을 올려도 옛 파일을 저장해 둔 기기·저장소가 새 파일을 받게 */ }));
-for (const [id, t] of Object.entries(TEXTS)) { const ix = indexOf(id); fs.writeFileSync(path.join(OUT, 'texts', id + '.json'), JSON.stringify({ book: id, edition: t.edition, pages: t.pages, toc: t.toc, ...(t.say ? { say: t.say } : {}), ...(t.ph ? { ph: t.ph } : {}), ...(t.table_dl ? { table_dl: t.table_dl } : {}), ...(t.spread ? { spread: true } : {}), ...(t.center_heads ? { center_heads: true } : {}), ...(t.ly ? { ly: t.ly } : {}), ...(ix ? { index: { colnames: ix.colnames, parts: ix.parts } } : {}) })); }
+for (const [id, t] of Object.entries(TEXTS)) { const ix = indexOf(id); fs.writeFileSync(path.join(OUT, 'texts', id + '.json'), JSON.stringify({ book: id, edition: t.edition, pages: t.pages, toc: t.toc, ...(t.say ? { say: t.say } : {}), ...(t.ph ? { ph: t.ph } : {}), ...(t.table_dl ? { table_dl: t.table_dl } : {}), ...(t.fn_site ? { fn_site: t.fn_site } : {}), ...(t.spread ? { spread: true } : {}), ...(t.center_heads ? { center_heads: true } : {}), ...(t.ly ? { ly: t.ly } : {}), ...(ix ? { index: { colnames: ix.colnames, parts: ix.parts } } : {}) })); }
 for (const b of LIB().filter(txtOk)) { const d = path.join(OUT, 'txt', b.id); fs.mkdirSync(d, { recursive: true }); fs.writeFileSync(path.join(d, txtName(b)), bookTxt(b)); }
 // 앱 연동 목록 (운영자 요청, 2026-11-17): /api/v1/catalog.json — 규격은 public/api/v1/README.md
 await import('./tools/app_catalog.mjs').then(m => m.writeCatalog({ OUT, C, S, BOOKS, TEXTS, PARALLEL, AUDIO, HEADS, LICENSES: LIC_URL, fileUrl, curEd, hasText, formats, teacherById, PAGES, dlName, langsOf }));

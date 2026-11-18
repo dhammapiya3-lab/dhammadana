@@ -1347,3 +1347,9 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 .simple-ui .s-reopen .s-btn{color:#1f3b8a;border-color:#1f3b8a;background:#fff;font-size:16px;padding:4px 12px}
 :root.mode-night .simple-ui .s-reopen,:root.mode-contrast .simple-ui .s-reopen{background:#000;color:#fff;border-color:#ffe36b}
 :root.mode-night .simple-ui .s-reopen .s-btn,:root.mode-contrast .simple-ui .s-reopen .s-btn{color:#ffe36b;border-color:#ffe36b;background:#000}
+/* 인쇄본에 없는 각주 풀이 대신 보이는 사이트 안내 — 책 글과 다르게 보이게 (운영자 요청, 2026-11-19) */
+.fn-site{border:1.5px dashed #8a6d3b;border-radius:8px;padding:8px 10px;margin:6px 0;background:#fffaf0;color:#4a3b1f}
+.fn-site-tag{display:inline-block;font-size:.82em;font-weight:700;color:#7a4f00;margin-bottom:2px}
+.fn-site p{margin:.2em 0}.fn-site .fn-site-foot{font-size:.82em;color:#5c4a2a}
+:root.mode-night .fn-site,:root.mode-contrast .fn-site{background:#1d1a12;color:#f1e6c8;border-color:#e0b85a}
+:root.mode-night .fn-site-tag,:root.mode-contrast .fn-site-tag,:root.mode-night .fn-site .fn-site-foot,:root.mode-contrast .fn-site .fn-site-foot{color:#ffd77a}

@@ -677,7 +677,7 @@ async function initReaderPage() {
   const pages = man.pages.map((p, i) => ({ n: i + 1, label: p.label || '', img: p.img ? base + p.img : '', big: p.big ? base + p.big : '', w: p.w, h: p.h, text: p.text || '' }));
   const last = store.get('pos-' + id, 1);
   R = {
-    id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, cover: root.dataset.cover || '', kakao: root.dataset.kakao || '', noCopy: root.dataset.nocopy === '1', pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, spreadOk: (man.pages || []).some(p => p.text), spreadPali: !!man.spread, ly: man.ly || null,  // tdl: 표 그림 내려받기 (표 첫 칸 글 → 그림 주소, 운영자 요청 2026-11-12)
+    id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, cover: root.dataset.cover || '', kakao: root.dataset.kakao || '', noCopy: root.dataset.nocopy === '1', pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, fnSite: man.fn_site || {}, spreadOk: (man.pages || []).some(p => p.text), spreadPali: !!man.spread, ly: man.ly || null,  // tdl: 표 그림 내려받기 (표 첫 칸 글 → 그림 주소, 운영자 요청 2026-11-12)
      // say: 그림·표를 소리로 읽을 글 (그림 주소 → 글, 운영자 요청 2026-11-10)
    
     i: Math.min(Math.max(want || (last > 1 ? last : 0) || firstContent(pages, man.toc || []), 1), pages.length) - 1,
@@ -2362,6 +2362,11 @@ try {
   }
 } catch (e) {}
 
+// 인쇄본에 풀이가 없는 각주 — 텍스트 JSON fn_site {번호: 설명} 의 사이트 안내 글을, 책 글과 헷갈리지 않게 '사이트 안내' 표시를 붙여 보임 (운영자 요청, 2026-11-19)
+function fnSiteHtml(RB, n) {
+  const t = RB && RB.fnSite && RB.fnSite[n]; if (!t) return '';
+  return `<div class="fn-site" role="note"><p><span class="fn-site-tag">ⓘ 사이트 안내 —</span> ${esc(t)}</p><p class="fn-site-foot">책에 실린 글이 아니라 법보시 도서관에서 덧붙인 설명입니다.</p></div>`;
+}
 /* ---------- 각주 번호를 누르면 각주 내용 보여주기 ---------- */
 document.addEventListener('click', e => {
   const old = document.getElementById('fnPop');
@@ -2390,7 +2395,7 @@ document.addEventListener('click', e => {
     const hp = here ? +here.dataset.pg : 1; let best = null;
     const RB = (R && R.pages) ? R : (document.getElementById('sRead') && typeof SR !== 'undefined' && SR.r) || null;  // 단순 화면은 SR.r (2026-11-18 검수: 미주를 못 찾던 것)
     for (const pgx of (RB && RB.pages) || []) for (const q of paras(pgx.text)) if (q.startsWith('[^' + n + ']:') && (!best || Math.abs(pgx.n - hp) < Math.abs(best.n - hp))) best = { n: pgx.n, q };
-    pop.innerHTML = `<div class="fnpop-h">각주 ${n}<button class="fnpop-x" aria-label="닫기">✕</button></div>` + (best ? `<p>${(RB === R ? (f => f()) : withR)(() => phMark(boldMark(esc(best.q.replace(/^\[\^[^\]]+\]:\s*/, '')))))}</p>` : '<p class="muted">이 각주는 다른 쪽에 있습니다.</p>');
+    pop.innerHTML = `<div class="fnpop-h">각주 ${n}<button class="fnpop-x" aria-label="닫기">✕</button></div>` + (best ? `<p>${(RB === R ? (f => f()) : withR)(() => phMark(boldMark(esc(best.q.replace(/^\[\^[^\]]+\]:\s*/, '')))))}</p>` : fnSiteHtml(RB, n) || '<p class="muted">이 각주의 풀이를 이 책에서 찾지 못했습니다.</p>');
   }
   parFnAdd(pop, n, null);
   document.body.appendChild(pop);
@@ -2999,7 +3004,7 @@ async function initSimpleRead() {
   const id = root.dataset.book, title = root.dataset.title;
   let man; try { man = await manifest(root.dataset.manifest); } catch (e) { root.innerHTML = '<p>읽기 자료를 불러오지 못했습니다. 잠시 뒤 다시 열어 주세요.</p>'; return; }
   const pages = man.pages.map((p, i) => ({ n: i + 1, label: p.label || '', img: '', big: '', text: p.text || '' }));
-  SR.r = { id, title, by: root.dataset.by, pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, spreadOk: false, spread: false, ly: null, i: 0, view: 'text', zoom: 1, fs: 1, bold: false, lh: 1.9, font: 'serif', mw: 40, centerHeads: !!man.center_heads, hl: [], speaking: false, par: [], parMode: 'off', parD: null, parEd: [], ix: man.index || null, ixPart: 0, ixQ: '', simple: true };
+  SR.r = { id, title, by: root.dataset.by, pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, fnSite: man.fn_site || {}, spreadOk: false, spread: false, ly: null, i: 0, view: 'text', zoom: 1, fs: 1, bold: false, lh: 1.9, font: 'serif', mw: 40, centerHeads: !!man.center_heads, hl: [], speaking: false, par: [], parMode: 'off', parD: null, parEd: [], ix: man.index || null, ixPart: 0, ixQ: '', simple: true };
   SR.id = id; SR.title = title; SR.cs = withR(() => chapters());
   if (!SR.scrollHook) { SR.scrollHook = 1; let tt = 0; addEventListener('scroll', () => { if (SR.speaking || scrollY <= 40 || !$('#sRead .s-text')) return; clearTimeout(tt); tt = setTimeout(() => { const head = (STALK.el && STALK.el.isConnected ? STALK.el.getBoundingClientRect().bottom : sBarH()) + 4; const el = $$('.s-text [data-pg][data-s]').find(x => x.getBoundingClientRect().bottom > head); if (el) SR.anchor = +el.dataset.pg; }, 250); }, { passive: true }); }  // 마지막으로 보던 쪽
   const q = new URLSearchParams(location.search), c = +q.get('c') || 0, listen = q.has('listen'), audio = q.has('audio') && root.dataset.audio;
