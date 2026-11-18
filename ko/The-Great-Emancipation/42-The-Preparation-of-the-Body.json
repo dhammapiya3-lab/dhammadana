@@ -1,0 +1,689 @@
+[
+ {
+  "img": "images/42-The-Preparation-of-the-Body-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     232,
+     36,
+     572,
+     176
+    ],
+    "ko": "부처님의 몸을\n모시는 준비\n위대한 반열반",
+    "cover": [
+     210,
+     190,
+     164
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     448,
+     78,
+     776,
+     368
+    ],
+    "ko": "아누룻다가 아난다를\n말라들에게 보내다\n\n세존께서 반열반에 드신 뒤\n아누룻다 장로는 아난다에게\n꾸시나라에 들어가 말라들에게\n마지막 일을 할 때가 되었다고\n알리라고 했습니다.",
+    "cover": [
+     191,
+     171,
+     149
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     342,
+     718,
+     432
+    ],
+    "ko": "세상이 소식을 받다\n아난다가 회당에 모인 말라들에게 다가가,\n장례를 치르는 큰 짐을 도시의 귀족들에게 맡겼습니다.",
+    "cover": [
+     185,
+     166,
+     143
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     12,
+     26,
+     284,
+     198
+    ],
+    "ko": "말라들이 깊은\n슬픔에 빠지다\n“너무 빨리 세상의 눈 있는 분께서\n사라지셨구나!” 귀족들이 울며\n팔을 들어 올리고 땅에 뒹굴고\n베어진 듯 쓰러졌습니다.",
+    "cover": [
+     192,
+     173,
+     149
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     102,
+     22,
+     700,
+     106
+    ],
+    "ko": "엿새 동안의 공양으로 화장이 늦어지다\n말라들은 악사와 향과 옷 오백 벌을 모아, 살라 숲에서\n춤과 천 차일과 둥근 천막으로 쉬지 않고 몸을 공경했습니다.",
+    "cover": [
+     216,
+     194,
+     168
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     374,
+     262,
+     786,
+     440
+    ],
+    "ko": "여덟 우두머리가 상여를\n들어 올리지 못하다\n\n이레째 날, 화장하려고 몸을 남쪽으로\n옮기려던 힘센 말라 여덟이\n깨끗한 옷을 입었지만, 알 수 없는\n힘에 막혀 꿈쩍도 하지 않았습니다.",
+    "cover": [
+     211,
+     176,
+     143
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     20,
+     700,
+     124
+    ],
+    "ko": "뜻이 엇갈려 운구 길이 바뀌다\n아누룻다 장로가 밝혔습니다. 신들은 말라들의 조용한 남문 길이 아니라\n도시 한가운데를 지나는 더 장엄한 길을 바랐습니다.",
+    "cover": [
+     207,
+     185,
+     158
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     46,
+     146,
+     394,
+     178
+    ],
+    "ko": "말라들의 뜻",
+    "cover": [
+     188,
+     180,
+     169
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     404,
+     146,
+     764,
+     178
+    ],
+    "ko": "신들의 뜻",
+    "cover": [
+     176,
+     168,
+     158
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     156,
+     198,
+     278,
+     232
+    ],
+    "ko": "남문",
+    "cover": [
+     192,
+     185,
+     175
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     174,
+     400,
+     268,
+     436
+    ],
+    "ko": "탑묘",
+    "cover": [
+     174,
+     168,
+     159
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     460,
+     178,
+     576,
+     212
+    ],
+    "ko": "북문",
+    "cover": [
+     220,
+     199,
+     171
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     636,
+     280,
+     704,
+     318
+    ],
+    "ko": "동문",
+    "cover": [
+     200,
+     181,
+     160
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     662,
+     230,
+     772,
+     288
+    ],
+    "ko": "마꾸따\n반다나",
+    "cover": [
+     184,
+     174,
+     162
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     662,
+     362,
+     772,
+     416
+    ],
+    "ko": "마꾸따\n반다나",
+    "cover": [
+     180,
+     169,
+     156
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     6,
+     18,
+     404,
+     142
+    ],
+    "ko": "하늘 꽃이 꾸시나라를 덮다\n신들의 뜻을 따르자, 하늘의 산호나무 꽃이\n쏟아져 내려 온 도시가 무릎 높이까지\n선명한 빛깔로 덮이는 것을 말라들이 보았습니다.",
+    "cover": [
+     186,
+     180,
+     168
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     366,
+     778,
+     442
+    ],
+    "ko": "신들과 사람들이 나란히 걷다\n신들과 말라들이 힘을 모아 세존의 몸을 모시고 북문으로 들어가\n도시 한가운데를 지나 동쪽의 탑묘에 내려놓았습니다.",
+    "cover": [
+     208,
+     177,
+     138
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     0,
+     18,
+     404,
+     124
+    ],
+    "ko": "말라들이 아난다에게 장례 법도를 묻다\n몸이 마꾸따반다나 탑묘에 편안히 모셔지자\n말라들은 공손히 아난다에게 다가가\n여래의 유해를 어떻게 모셔야 하는지 물었습니다.",
+    "cover": [
+     214,
+     185,
+     153
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     330,
+     744,
+     438
+    ],
+    "ko": "부처님께서 가장 높은 군주의 예를 받으시다\n아난다는 전륜성왕을 모시듯 몸을 모시라고 했습니다.\n부처님의 완전한 영적 주권을 드러내는 일이었습니다.",
+    "cover": [
+     196,
+     177,
+     153
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     18,
+     650,
+     118
+    ],
+    "ko": "오백 겹을 번갈아 감싸 유해를 모시다\n깨끗한 천과 솜을 번갈아 감싸는 정성스러운 의식을\n오백 쌍이 되도록 되풀이하여 깊이 정화했습니다.",
+    "cover": [
+     204,
+     180,
+     151
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     58,
+     146,
+     198,
+     172
+    ],
+    "ko": "솜",
+    "cover": [
+     189,
+     181,
+     169
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     596,
+     134,
+     744,
+     166
+    ],
+    "ko": "솜",
+    "cover": [
+     159,
+     149,
+     134
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     650,
+     192,
+     786,
+     224
+    ],
+    "ko": "깨끗한 천",
+    "cover": [
+     156,
+     148,
+     133
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     336,
+     292,
+     466,
+     324
+    ],
+    "ko": "깨끗한 천",
+    "cover": [
+     187,
+     174,
+     157
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     326,
+     324,
+     476,
+     356
+    ],
+    "ko": "솜",
+    "cover": [
+     190,
+     175,
+     155
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     322,
+     358,
+     480,
+     392
+    ],
+    "ko": "솜",
+    "cover": [
+     185,
+     170,
+     152
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     328,
+     398,
+     480,
+     428
+    ],
+    "ko": "×500쌍",
+    "cover": [
+     153,
+     146,
+     133
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     656,
+     380,
+     776,
+     414
+    ],
+    "ko": "×500쌍",
+    "cover": [
+     140,
+     134,
+     123
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     98,
+     312,
+     370
+    ],
+    "ko": "두 겹의 쇠 통에\n거룩한 몸을 모시다\n\n가장 높은 법도대로,\n두껍게 감싼 몸을 기름을\n채운 쇠 통에 잠기게 하고\n두 번째 쇠 통으로\n단단히 덮었습니다.",
+    "cover": [
+     217,
+     193,
+     165
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     408,
+     122,
+     532,
+     146
+    ],
+    "ko": "바깥 쇠 통",
+    "cover": [
+     225,
+     199,
+     163
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     622,
+     108,
+     712,
+     150
+    ],
+    "ko": "기름 채운\n안쪽 통",
+    "cover": [
+     214,
+     183,
+     147
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     346,
+     640,
+     370
+    ],
+    "ko": "감싼 몸",
+    "cover": [
+     205,
+     175,
+     140
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     108,
+     334,
+     696,
+     450
+    ],
+    "ko": "쇠 통을 향나무 장작더미 위에 모시다\n말라들은 탑묘에 크고 향기로운 장작더미를 정성껏 쌓고\n덮은 쇠 통을 장작 위에 올려 모셨습니다.",
+    "cover": [
+     212,
+     187,
+     156
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-The-Preparation-of-the-Body-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     12,
+     780,
+     118
+    ],
+    "ko": "“네거리의 탑묘는 오래가는 행복을 약속한다”\n마지막 당부: 네거리의 탑묘에 꽃이나 향을 올리거나\n마음에 믿음을 일으키는 이는 오래도록 이익을 얻을 것입니다.",
+    "cover": [
+     222,
+     191,
+     148
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
