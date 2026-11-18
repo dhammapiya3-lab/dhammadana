@@ -1,0 +1,327 @@
+[
+ {
+  "img": "images/41-Brahmakumara-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     222,
+     182,
+     578,
+     268
+    ],
+    "ko": "브라흐마꾸마라 왕자 전생 이야기\n공덕과 빛의 자따까",
+    "cover": [
+     226,
+     207,
+     177
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/41-Brahmakumara-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     522,
+     104,
+     750,
+     346
+    ],
+    "ko": "제따와나에서 비구들이 스승의 여섯 빛깔 광명에 감탄했습니다. 부처님께서는 이 광명이 부처의 표시일 뿐 아니라, 지난 생의 소박한 헌신이 맺은 바로 그 업의 열매라고 밝히셨습니다.",
+    "cover": [
+     222,
+     203,
+     170
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/41-Brahmakumara-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     314,
+     710,
+     406
+    ],
+    "ko": "바라나시의 가난한 집에 태어난 보살은 덤불에 덮여 잊힌 탑을 발견했습니다. 자기 생업을 버려두고 가시덤불을 애써 걷어 내고 성스러운 땅을 고른 뒤, 부처가 되기를 서원했습니다.",
+    "cover": [
+     220,
+     200,
+     168
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/41-Brahmakumara-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     40,
+     764,
+     106
+    ],
+    "ko": "그는 자기 옷을 팔아 기름을 사서 여덟 방향에 등불을 밝혔습니다. 남은 옷으로는 깃발을 만들어, 가장 높은 일체지와 궁극의 행복을 얻겠다고 서원했습니다.",
+    "cover": [
+     231,
+     203,
+     163
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/41-Brahmakumara-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     320,
+     644,
+     406
+    ],
+    "ko": "이 맑은 행위로 그는 뚜시따 천상에 뿐냐찟따로 태어났습니다. 천상의 음악과 연못과 하늘의 기쁨이 가득한 장엄한 보석 궁전에 머물렀습니다.",
+    "cover": [
+     228,
+     207,
+     172
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/41-Brahmakumara-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     94,
+     336,
+     706,
+     410
+    ],
+    "ko": "천상에서 내려온 그는 티 없이 깨끗한 브라흐마꾸마라 왕자로 태어났습니다. 지난 공덕의 힘으로, 그가 태어난 날 잠부디빠의 왕 백 명이 신기하게도 왕실 선물을 들고 찾아왔습니다.",
+    "cover": [
+     221,
+     193,
+     155
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/41-Brahmakumara-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     138,
+     324,
+     662,
+     406
+    ],
+    "ko": "열여섯 살에 이미 매우 지혜로웠던 그는 덕 있는 공주와 혼인했습니다. 왕 백 명이 그를 바라나시의 왕으로 관정했고, 그는 천신들의 왕처럼 찬란히 빛났습니다.",
+    "cover": [
+     232,
+     213,
+     179
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/41-Brahmakumara-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     578,
+     30,
+     772,
+     416
+    ],
+    "ko": "지난 행위가 꼭 맞는 업의 열매를 맺었습니다.\n\n깃발은 끝없는 재물과 영예의 일산이 되었습니다.\n\n등불은 꿰뚫는 지혜와 몸의 광채를 주었습니다.\n\n탑을 깨끗이 한 일은 두려움 없는 풍요로운 나라를 주었습니다.",
+    "cover": [
+     227,
+     210,
+     177
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/41-Brahmakumara-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     38,
+     720,
+     100
+    ],
+    "ko": "지난 보시를 크게 기뻐하며 왕은 바르게 다스렸습니다. 백성에게 악한 벗을 멀리하고, 지혜로운 이만 가까이하며, 흔들림 없는 믿음으로 넉넉히 베풀라고 가르쳤습니다.",
+    "cover": [
+     229,
+     212,
+     180
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/41-Brahmakumara-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     504,
+     38,
+     768,
+     146
+    ],
+    "ko": "보살의 이끎을 따라 백성들은 덕 있게 살며 공덕을 지었습니다. 죽은 뒤 그들은 천상에 태어났습니다. 브라흐마꾸마라도 한평생을 다 산 뒤 다시 뚜시따 천상으로 돌아갔습니다.",
+    "cover": [
+     226,
+     201,
+     157
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/41-Brahmakumara-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     426,
+     44,
+     766,
+     134
+    ],
+    "ko": "자따까를 마치며 스승께서 사성제, 곧 괴로움·일어남·소멸·팔정도를 설하셨습니다. 이를 듣고 많은 비구가 곧바로 아라한과와 다른 깨달음의 단계를 얻었습니다.",
+    "cover": [
+     220,
+     195,
+     155
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/41-Brahmakumara-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     330,
+     552,
+     412
+    ],
+    "ko": "부처님께서 지난 생을 밝히셨습니다. 부모는 지금의 마하마야와 숫도다나, 아내는 야소다라, 백성들은 지금 모인 대중이며, 브라흐마꾸마라 왕은 바로 여래 자신입니다.",
+    "cover": [
+     227,
+     204,
+     166
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/41-Brahmakumara-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     130,
+     72,
+     670,
+     150
+    ],
+    "ko": "세 가지 행복을 바라는 이들은 모두\n깊이 공경하는 마음으로 이 자따까를 간직하라.",
+    "cover": [
+     231,
+     210,
+     171
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
