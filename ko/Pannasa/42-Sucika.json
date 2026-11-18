@@ -1,0 +1,1097 @@
+[
+ {
+  "img": "images/42-Sucika-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     332,
+     230,
+     468,
+     362
+    ],
+    "ko": "수찌까 고행자\n전생 이야기\n\n지혜와 수수께끼의\n란나 자따까",
+    "cover": [
+     236,
+     219,
+     188
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/42-Sucika-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     360,
+     574,
+     432
+    ],
+    "ko": "두 시대, 두 포식자, 두 지혜로운 판정자.\n세속의 무지가 여러 생에 걸쳐 어떻게\n초월의 지혜에 지는지 부처님께서 밝히십니다.",
+    "cover": [
+     74,
+     44,
+     30
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-Sucika-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     500,
+     90,
+     704,
+     176
+    ],
+    "ko": "히마완따에서 굶주린 까마귀가 커다란 벌레(kimina)를 위협합니다. 영리한 먹잇감은 네 수수께끼에 답하라며, 못 맞히면 머리가 깨진다고 합니다.",
+    "cover": [
+     118,
+     72,
+     44
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-Sucika-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     398,
+     334,
+     760,
+     404
+    ],
+    "ko": "답을 몰라 까마귀는 덩굴로 매단 벌레를 물고 제따와나로 날아갑니다. 부처님께서 미소 지으며 진리를 밝혀 주시려 합니다.",
+    "cover": false,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/42-Sucika-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     38,
+     300,
+     88
+    ],
+    "ko": "진리의 표",
+    "cover": [
+     221,
+     190,
+     147
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     62,
+     162,
+     252,
+     262
+    ],
+    "ko": "가장 큰 것?",
+    "cover": [
+     221,
+     193,
+     157
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     304,
+     162,
+     496,
+     262
+    ],
+    "ko": "까마귀:\n신(deva)",
+    "cover": [
+     241,
+     218,
+     178
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     546,
+     162,
+     742,
+     262
+    ],
+    "ko": "부처님:\n출세간의 법\n(열반)",
+    "cover": [
+     245,
+     223,
+     180
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     62,
+     290,
+     252,
+     402
+    ],
+    "ko": "가장 빠른 것?",
+    "cover": [
+     218,
+     187,
+     149
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     304,
+     290,
+     496,
+     402
+    ],
+    "ko": "까마귀:\n말",
+    "cover": [
+     236,
+     211,
+     169
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     546,
+     290,
+     742,
+     402
+    ],
+    "ko": "부처님:\n끊임없이\n이어지는 마음",
+    "cover": [
+     230,
+     203,
+     163
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/42-Sucika-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     38,
+     300,
+     88
+    ],
+    "ko": "진리의 표",
+    "cover": [
+     221,
+     187,
+     144
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     62,
+     162,
+     252,
+     262
+    ],
+    "ko": "가장 날카로운 것?",
+    "cover": [
+     221,
+     190,
+     151
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     304,
+     162,
+     496,
+     262
+    ],
+    "ko": "까마귀:\n뿔 화살촉",
+    "cover": [
+     241,
+     217,
+     172
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     546,
+     162,
+     742,
+     262
+    ],
+    "ko": "부처님:\n물",
+    "cover": [
+     245,
+     223,
+     175
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     62,
+     290,
+     252,
+     402
+    ],
+    "ko": "가장 힘센 것?",
+    "cover": [
+     217,
+     183,
+     144
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     304,
+     290,
+     496,
+     402
+    ],
+    "ko": "까마귀:\n나라야나의 힘",
+    "cover": [
+     236,
+     209,
+     165
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     546,
+     290,
+     742,
+     402
+    ],
+    "ko": "부처님:\n완전히 깨달은 분,\n여래",
+    "cover": [
+     230,
+     201,
+     159
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/42-Sucika-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     70,
+     330,
+     196
+    ],
+    "ko": "비구들이 여래의 깊고 감미로운 답에 감탄합니다. 부처님께서 밝히십니다. “지난 생에도 나는 이 두 짐승의 여러 물음에 답했다.”",
+    "cover": [
+     230,
+     206,
+     165
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/42-Sucika-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     304,
+     160,
+     498,
+     286
+    ],
+    "ko": "옛 바라나시에서 보살 수찌까는 큰 재산을 버렸습니다. 히마완따로 물러나 깊은 선정을 얻고 말했습니다. “숲에 머문 덕으로 나는 반드시 부처가 되리라.”",
+    "cover": [
+     231,
+     206,
+     166
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/42-Sucika-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     494,
+     84,
+     736,
+     194
+    ],
+    "ko": "니그로다 나무 곁에서 굶주린 독수리가 커다란 나방을 붙잡습니다. 지금 이야기와 꼭 같이, 나방은 죽음을 늦추려 네 가지 우주의 수수께끼를 냅니다.",
+    "cover": [
+     225,
+     200,
+     159
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/42-Sucika-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     120,
+     256,
+     230
+    ],
+    "ko": "허상의 표\n대\n법의 표",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     64,
+     250,
+     258,
+     290
+    ],
+    "ko": "가장 아름다운 것?",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     304,
+     226,
+     498,
+     290
+    ],
+    "ko": "독수리:\n가을 달",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     540,
+     226,
+     746,
+     290
+    ],
+    "ko": "수찌까:\n다섯 가지\n맑은 행실",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     64,
+     300,
+     258,
+     382
+    ],
+    "ko": "가장 미묘한 것?",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     304,
+     276,
+     498,
+     382
+    ],
+    "ko": "독수리:\n솜",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     540,
+     276,
+     746,
+     382
+    ],
+    "ko": "수찌까:\n경전을 앎",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-Sucika-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     120,
+     256,
+     230
+    ],
+    "ko": "허상의 표\n대\n법의 표",
+    "cover": false,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     64,
+     250,
+     258,
+     290
+    ],
+    "ko": "가장 먼 것?",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     304,
+     226,
+     498,
+     290
+    ],
+    "ko": "독수리:\n먼 길",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     540,
+     226,
+     746,
+     290
+    ],
+    "ko": "수찌까:\n악에서 먼\n선",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     64,
+     300,
+     258,
+     380
+    ],
+    "ko": "아무것도\n아닌 것보다\n작은 것?",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     304,
+     276,
+     498,
+     380
+    ],
+    "ko": "독수리:\n죽음",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     540,
+     276,
+     746,
+     380
+    ],
+    "ko": "수찌까:\n깨달은 분의\n반열반",
+    "cover": false,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-Sucika-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     322,
+     730,
+     402
+    ],
+    "ko": "답이 수수께끼를 풀었습니다. 포식자들은 먹잇감을 살려 줍니다. 보살은 오계를 주어, 죽이는 본능을 바른 행실로 바꾸어 줍니다.",
+    "cover": false,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-Sucika-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     246,
+     34,
+     556,
+     80
+    ],
+    "ko": "부처님께서 소멸에 이르는 길을 설하시며 마치십니다.",
+    "cover": [
+     233,
+     217,
+     188
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     354,
+     138,
+     450,
+     172
+    ],
+    "ko": "괴로움은 세 세상에\n있습니다.",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     476,
+     222,
+     532,
+     262
+    ],
+    "ko": "갈애가\n원인입니다.",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     268,
+     206,
+     330,
+     270
+    ],
+    "ko": "팔정도가\n그곳으로\n이끕니다.",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     358,
+     304,
+     442,
+     356
+    ],
+    "ko": "열반이\n소멸입니다.",
+    "cover": false,
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/42-Sucika-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     300,
+     42,
+     500,
+     80
+    ],
+    "ko": "바퀴가 구릅니다",
+    "cover": [
+     224,
+     204,
+     175
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     130,
+     86,
+     210,
+     112
+    ],
+    "ko": "나방",
+    "cover": [
+     230,
+     213,
+     184
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     70,
+     142,
+     140,
+     166
+    ],
+    "ko": "독수리",
+    "cover": [
+     224,
+     203,
+     174
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     130,
+     198,
+     210,
+     222
+    ],
+    "ko": "왕",
+    "cover": [
+     230,
+     213,
+     183
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     56,
+     252,
+     136,
+     276
+    ],
+    "ko": "어머니",
+    "cover": [
+     223,
+     201,
+     172
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     308,
+     138,
+     332
+    ],
+    "ko": "아버지",
+    "cover": [
+     224,
+     201,
+     170
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     132,
+     372,
+     240,
+     396
+    ],
+    "ko": "수찌까 고행자",
+    "cover": [
+     224,
+     202,
+     169
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     580,
+     84,
+     668,
+     120
+    ],
+    "ko": "사리뿟따",
+    "cover": [
+     226,
+     207,
+     178
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     570,
+     138,
+     668,
+     178
+    ],
+    "ko": "목갈라나",
+    "cover": [
+     226,
+     207,
+     179
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     580,
+     194,
+     668,
+     234
+    ],
+    "ko": "아난다",
+    "cover": [
+     227,
+     208,
+     180
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     572,
+     248,
+     668,
+     290
+    ],
+    "ko": "마하마야",
+    "cover": [
+     227,
+     208,
+     180
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     656,
+     294,
+     748,
+     322
+    ],
+    "ko": "숫도다나",
+    "cover": [
+     234,
+     212,
+     175
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     556,
+     370,
+     662,
+     398
+    ],
+    "ko": "여래",
+    "cover": [
+     224,
+     199,
+     161
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/42-Sucika-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     364,
+     680,
+     412
+    ],
+    "ko": "지혜는 언제나 빛납니다. 이 지혜는 사람이든 짐승이든 새든 언제나 중생을 괴로움에서 풀어 줍니다. 깊은 존경으로 이 자따까를 들으십시오.",
+    "cover": [
+     231,
+     214,
+     187
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
