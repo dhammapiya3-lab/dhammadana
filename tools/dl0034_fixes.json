@@ -1769,5 +1769,33 @@
 "a": "([가-힣])야하([고는며는가])",
 "b": "\\1야 하\\2",
 "re": true
+},
+{
+"p": [
+"245쪽"
+],
+"a": "Dutiya A·Sa·Ppu·Suttaṁ",
+"b": "Dutiya Asappurisa·Suttaṁ"
+},
+{
+"p": [
+"530쪽"
+],
+"a": "Sa·purisa·Dāna·Suttaṁ",
+"b": "Sappurisa·Dāna·Suttaṁ"
+},
+{
+"p": [
+"267쪽"
+],
+"a": "Kamma·Ssak·Sammā·Diṭṭhi",
+"b": "Kamma·Ssakata·Sammā·Diṭṭhi"
+},
+{
+"p": [
+"355쪽"
+],
+"a": "Cātumā·Suttaṁ",
+"b": "Cātuma·Suttaṁ"
 }
 ]
