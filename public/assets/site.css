@@ -1328,3 +1328,14 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 .simple-ui .s-delask p{margin:0 0 10px;font-weight:700}
 :root.mode-night .simple-ui .s-delask,:root.mode-contrast .simple-ui .s-delask{background:#000;color:#fff;border-color:#ffe36b}
 :root.mode-night .simple-ui .s-del-row .s-btn,:root.mode-contrast .simple-ui .s-del-row .s-btn,:root.mode-night .simple-ui .s-delask .s-btn,:root.mode-contrast .simple-ui .s-delask .s-btn{color:#ffe36b;border-color:#ffe36b;background:#000}
+/* 여러 개 골라 지우기 (운영자 요청, 2026-11-19) */
+.simple-ui .s-list.delmode>li.picked{background:#fde8e6}
+:root.mode-night .simple-ui .s-list.delmode>li.picked,:root.mode-contrast .simple-ui .s-list.delmode>li.picked{background:#3a1512}
+.simple-ui .s-delgo{color:#fff!important;background:#b3261e!important;border-color:#b3261e!important}
+.simple-ui .s-delgo[aria-disabled="true"]{opacity:.75}
+.simple-ui .s-del-row p.s-del-hint{margin:8px 0 0}
+#notesRoot .pk-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0}
+#notesRoot .pk-ask{flex-basis:100%;padding:10px 12px;border:2px solid #b3261e;border-radius:8px}
+#notesRoot .pk-ask[hidden]{display:none}
+#notesRoot .acts .pick{display:inline-flex;align-items:center;gap:4px;margin-right:8px;cursor:pointer}
+#notesRoot .acts .pick input{width:20px;height:20px}
