@@ -19,7 +19,9 @@
   ],
   "book_type": "법문집",
   "original_title": "The Noble Eightfold Path : Way to the End of Suffering",
-  "original_language": ["영어"],
+  "original_language": [
+    "영어"
+  ],
   "original_source": "The Wheel Publication No. 308-311 1984 Second edition(revised) 1994 BUDDHIST PUBLICATION SOCIETY Kandy․Sri Lanka",
   "series": "법륜",
   "main": [
@@ -148,5 +150,12 @@
   "added": "2026-11-11",
   "order": null,
   "hidden": false,
-  "hide_update": false
+  "hide_update": false,
+  "originals": [
+    {
+      "lang": "영어",
+      "mode": "file",
+      "url": "orig/DL-0020/DL-0020_원서_영어.pdf"
+    }
+  ]
 }
