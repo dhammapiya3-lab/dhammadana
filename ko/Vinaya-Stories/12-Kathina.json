@@ -1,0 +1,417 @@
+[
+ {
+  "img": "images/12-Kathina-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     222,
+     352,
+     584,
+     440
+    ],
+    "ko": "까티나의 기원과 절차\n진흙길 여정에서 승가의 법으로",
+    "cover": [
+     199,
+     155,
+     115
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kathina-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     58,
+     526,
+     116
+    ],
+    "ko": "숲에 살며 분소의를 입는 비구 서른 명이 빠와를 떠났습니다.\n안거 전에 사왓티에서 부처님을 뵈려는 것이었습니다.",
+    "cover": [
+     212,
+     176,
+     136
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     82,
+     128,
+     154,
+     160
+    ],
+    "ko": "빠와",
+    "cover": [
+     214,
+     179,
+     138
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     636,
+     64,
+     738,
+     100
+    ],
+    "ko": "사왓티",
+    "cover": [
+     210,
+     172,
+     130
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kathina-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     544,
+     302,
+     750,
+     400
+    ],
+    "ko": "사왓티에 닿지 못한\n그들은 사께따에서 안거하며\n머물렀습니다. 겨우 여섯\n요자나 떨어진 곳이었지만\n외롭고 아쉬웠습니다.",
+    "cover": [
+     201,
+     166,
+     125
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kathina-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     306,
+     296,
+     400
+    ],
+    "ko": "석 달이 지나 안거가 끝났습니다.\n비구들은 억수 같은 비와 깊은\n진흙을 헤치고 나아가, 물에 젖은\n무거운 가사를 걸친 채\n지쳐서 도착했습니다.",
+    "cover": [
+     197,
+     165,
+     129
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kathina-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     514,
+     82,
+     734,
+     358
+    ],
+    "ko": "부처님께서 제따 숲에서\n지친 비구들을\n맞이하셨습니다.\n\n진흙길을 헤쳐 온\n고된 여정을 들으시고\n승가를 위해 실제적인\n방법을 내놓으셨습니다.",
+    "cover": [
+     137,
+     109,
+     90
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kathina-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     370,
+     68,
+     734,
+     388
+    ],
+    "ko": "“비구들이여,\n안거를 마친\n비구들이 까티나를\n펴는 것을\n허락한다.”",
+    "cover": [
+     219,
+     181,
+     145
+    ],
+    "align": "center",
+    "em": 40,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kathina-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     62,
+     742,
+     110
+    ],
+    "ko": "까티나를 펴면 다섯 가지 한시적 자유가 주어집니다.",
+    "cover": [
+     209,
+     162,
+     119
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     60,
+     326,
+     190,
+     372
+    ],
+    "ko": "1. 알리지 않고\n다님",
+    "cover": [
+     209,
+     162,
+     118
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     196,
+     326,
+     338,
+     372
+    ],
+    "ko": "2. 가사를 다 갖추지\n않고 다님",
+    "cover": [
+     212,
+     167,
+     123
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     338,
+     326,
+     466,
+     372
+    ],
+    "ko": "3. 무리 지어\n먹음",
+    "cover": [
+     214,
+     168,
+     121
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     468,
+     326,
+     604,
+     372
+    ],
+    "ko": "4. 필요한 가사를\n지님",
+    "cover": [
+     213,
+     166,
+     120
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     606,
+     326,
+     742,
+     372
+    ],
+    "ko": "5. 새로 생긴 천을\n가짐",
+    "cover": [
+     211,
+     165,
+     121
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kathina-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     62,
+     312,
+     392
+    ],
+    "ko": "정식 제안\n(냣띠):\n\n경험 많은 비구가\n그 천을 특정한 비구에게\n주자고 제안합니다.\n\n승가가 침묵하면\n제안은 받아들여져\n통과됩니다.",
+    "cover": [
+     204,
+     167,
+     131
+    ],
+    "align": "left",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kathina-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     98,
+     234,
+     340
+    ],
+    "ko": "가사의 짜임새:\n\n그 천은 하의나\n상의나 겹가사가\n되어야 합니다.\n\n그날 바로 다섯\n조각 이상으로\n잘라 둘레를 꿰매\n완성해야 합니다.",
+    "cover": [
+     203,
+     150,
+     99
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kathina-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     44,
+     740,
+     124
+    ],
+    "ko": "올바른 까티나 펴기와 그릇된 펴기",
+    "cover": [
+     207,
+     166,
+     121
+    ],
+    "align": "center",
+    "em": 31,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     62,
+     294,
+     394,
+     382
+    ],
+    "ko": "그릇됨: 넌지시 졸라서 얻은 천,\n임시로 쓰거나 쌓아 둔 천.\n천을 씻거나 표시하거나 묶기만 한 것.",
+    "cover": [
+     204,
+     162,
+     117
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     414,
+     294,
+     742,
+     382
+    ],
+    "ko": "올바름: 새 천, 넝마, 가게에서\n산 천. 한 비구에게 맡겨\n펴는 것.",
+    "cover": [
+     203,
+     160,
+     115
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Kathina-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     294,
+     742,
+     384
+    ],
+    "ko": "까티나는 엄격한 승가의 규율과 자비로운 융통성을 잇습니다.\n진흙길에서 고생한 비구 서른 명에게서 생겨난 이 실제적인 규칙은\n영적 질서를 버리지 않으면서 몸의 안녕을 지켜 줍니다.",
+    "cover": [
+     207,
+     169,
+     125
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
