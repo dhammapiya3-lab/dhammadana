@@ -3163,7 +3163,7 @@ function sListbox(ul) {
   // 첫 화면 말고는 목록 맨 위에 '▲ 위로' 줄 (운영자 요청, 2026-11-18 — 책이 한 권뿐인 목록에서 ↑↓ 를 눌러도
   // 움직일 곳이 없어 낭독기가 아무것도 읽지 않던 것: 위로 줄이 있으면 늘 움직일 곳이 있음)
   const upA = $('#sUp');
-  if (upA && !ul.closest('.s-find') && !$(':scope > li.k-up', ul)) {
+  if (upA && !ul.closest('.s-find, #sFindList') && !$(':scope > li.k-up', ul)) {
     const pa = $$('.s-path a'), pn = pa.length ? pa[pa.length - 1].textContent.trim() : '';
     ul.insertAdjacentHTML('afterbegin', sRow(upA.getAttribute('href'), ['▲ 위로', pn ? `한 단계 위: ${pn}` : '한 단계 위 목록'], '', 'up'));
   }
@@ -3212,7 +3212,7 @@ function sListbox(ul) {
   return { pick, focus: () => pick(sel) };
 }
 const sRow = (href, cols, ic = '📁', kind = '') => `<li class="s-row${kind ? ' k-' + kind : ''}"><a href="${esc(href)}"><span class="s-ic" aria-hidden="true">${ic}</span>${cols.map((c, i) => `${i && c ? '<span class="sr">, </span>' : ''}<span class="s-c s-c${i + 1}">${sDate(c || '')}</span>`).join('')}</a></li>`;
-const sDate = c => /\d{4}-\d{1,2}-\d{1,2}/.test(c) ? `<span aria-hidden="true" class="d-long">${esc(c)}</span><span aria-hidden="true" class="d-short">${esc(c.replace(/^.*?(\d{2})(\d{2})-(\d{1,2})-(\d{1,2}).*$/, (m, a, y, mo, d) => `${y}/${mo.padStart(2, '0')}/${d.padStart(2, '0')}`))}</span><span class="sr">${esc(c.replace(/(\d{4})-(\d{1,2})-(\d{1,2})/g, (m, y, mo, d) => `${y}년 ${+mo}월 ${+d}일`))}</span>` : esc(c);  // 날짜는 '2026년 11월 15일' 로 들려줌
+const sDate = c => /\d{4}-\d{1,2}-\d{1,2}/.test(c) ? `<span aria-hidden="true" class="d-long">${esc(c)}</span><span aria-hidden="true" class="d-short">${esc(c.replace(/^.*?(\d{2})(\d{2})-(\d{1,2})-(\d{1,2}).*$/, (m, a, y, mo, d) => `${y}/${mo.padStart(2, '0')}/${d.padStart(2, '0')}`))}</span><span class="sr">${esc(c.replace(/(\d{4})-(\d{1,2})-(\d{1,2})/g, (m, y, mo, d) => `${y}년 ${+mo}월 ${+d}일`))}</span>` : esc(c).replace(/ ([|·]) /g, ' <span aria-hidden="true">$1</span><span class="sr">,</span> ').replace(/(\d쪽)~(?=\d)/g, '$1<span aria-hidden="true">~</span><span class="sr">부터 </span>').replace(/^(\d+) \/ (\d+)$/, '<span aria-hidden="true">$1 / $2</span><span class="sr">$2개 가운데 $1번째</span>');  // ' | '·' · ' 는 낭독기에 쉼표로 (2026-11-19) · 날짜는 '2026년 11월 15일' 로 들려줌
 const sHead = h => `<div class="s-head" aria-hidden="true">${h.map((x, i) => `<span class="s-c s-c${i + 1}">${esc(x)}</span>`).join('')}</div>`;
 const sStat = t => { const s = $('.s-stat span:last-child'); if (s) s.textContent = t; };
 function sFocusFirst() {
@@ -3265,7 +3265,7 @@ function srChapter(ci, page, push, then) {
   const full = withR(() => reflowHtml()), hd = (full.match(/<div class="ch-head">[\s\S]*?<\/div>/) || [''])[0];
   const headFn = (hd.match(/<sup class="fn-ref"[^>]*>[^<]*<\/sup>/g) || []).join('');  // 장 제목에 붙은 각주 번호 — 숨긴 같은 제목 줄에서 옮겨 온 것 (2026-11-18: 단순 화면에서 빠져 그 각주를 열 수 없었음)
   const html = full.replace(/<div class="ch-head">[\s\S]*?<\/div>/, '').replace(/<nav class="ch-nav"[\s\S]*?<\/nav>/, '');
-  const nav = where => `<nav class="s-chnav" aria-label="장 이동 (${where})"><a href="./" class="s-btn">▤ 장 목록</a>${ci > 0 ? `<a class="s-btn" href="?c=${ci}" data-c="${ci - 1}">◀ 앞 장: ${esc(srName(cs[ci - 1], ci - 1))}</a>` : ''}${ci < cs.length - 1 ? `<a class="s-btn" href="?c=${ci + 2}" data-c="${ci + 1}">다음 장: ${esc(srName(cs[ci + 1], ci + 1))} ▶</a>` : '<span class="s-sub">책의 끝입니다.</span>'}${where === '위' ? `<button type="button" class="s-btn" id="sSpeak" aria-keyshortcuts="Alt+Shift+P">${SR.speaking ? '■ 듣기 멈춤' : '▶ 듣기'}</button><button type="button" class="s-btn" id="sTtsBtn" aria-keyshortcuts="Alt+Shift+S" aria-expanded="false" aria-controls="sTts">듣기 설정</button><button type="button" class="s-btn s-sent" id="sPrevS" aria-label="앞 문장 듣기"${SR.speaking ? '' : ' hidden'}>◀ 앞 문장</button><button type="button" class="s-btn s-sent" id="sNextS" aria-label="다음 문장 듣기"${SR.speaking ? '' : ' hidden'}>다음 문장 ▶</button><button type="button" class="s-btn" id="sBmBtn" aria-keyshortcuts="Alt+Shift+B" aria-label="지금 쪽에 책갈피 넣기·빼기">🔖 책갈피</button><button type="button" class="s-btn" id="sWhereBtn" aria-keyshortcuts="Alt+Shift+K" aria-label="지금 위치 알리기">📍 지금 위치</button><button type="button" class="s-btn" id="sGoPg" aria-expanded="false" aria-controls="sPgForm">📄 쪽으로 가기</button>` : ''}</nav>`;
+  const nav = where => `<nav class="s-chnav" aria-label="장 이동 (${where})"><a href="./" class="s-btn"><span aria-hidden="true">▤</span> 장 목록</a>${ci > 0 ? `<a class="s-btn" href="?c=${ci}" data-c="${ci - 1}"><span aria-hidden="true">◀</span> 앞 장: ${esc(srName(cs[ci - 1], ci - 1))}</a>` : ''}${ci < cs.length - 1 ? `<a class="s-btn" href="?c=${ci + 2}" data-c="${ci + 1}">다음 장: ${esc(srName(cs[ci + 1], ci + 1))} <span aria-hidden="true">▶</span></a>` : '<span class="s-sub">책의 끝입니다.</span>'}${where === '위' ? `<button type="button" class="s-btn" id="sSpeak" aria-keyshortcuts="Alt+Shift+P">${SR.speaking ? '<span aria-hidden="true">■</span> 듣기 멈춤' : '<span aria-hidden="true">▶</span> 듣기'}</button><button type="button" class="s-btn" id="sTtsBtn" aria-keyshortcuts="Alt+Shift+S" aria-expanded="false" aria-controls="sTts">듣기 설정</button><button type="button" class="s-btn s-sent" id="sPrevS" aria-label="앞 문장 듣기"${SR.speaking ? '' : ' hidden'}>◀ 앞 문장</button><button type="button" class="s-btn s-sent" id="sNextS" aria-label="다음 문장 듣기"${SR.speaking ? '' : ' hidden'}>다음 문장 ▶</button><button type="button" class="s-btn" id="sBmBtn" aria-keyshortcuts="Alt+Shift+B" aria-label="지금 쪽에 책갈피 넣기·빼기">🔖 책갈피</button><button type="button" class="s-btn" id="sWhereBtn" aria-keyshortcuts="Alt+Shift+K" aria-label="지금 위치 알리기">📍 지금 위치</button><button type="button" class="s-btn" id="sGoPg" aria-expanded="false" aria-controls="sPgForm"><span aria-hidden="true">📄</span> 쪽으로 가기</button>` : ''}</nav>`;
   root.innerHTML = nav('위') + `<form id="sPgForm" class="s-pgform" hidden><label for="sPgIn">몇 쪽으로 갈까요? (책에 인쇄된 쪽 번호)</label> <input id="sPgIn" type="text" inputmode="numeric" autocomplete="off" size="6"> <button type="submit" class="s-btn">가기</button> <button type="button" class="s-btn" id="sPgX">닫기</button></form><section id="sTts" class="s-tts" hidden aria-labelledby="sTtsH"></section><div class="s-text">${html}</div>` + nav('아래');
   $$('.s-text [aria-level]', root).forEach(h => h.setAttribute('aria-level', Math.max(2, +h.getAttribute('aria-level') - 2)));  // 단순 화면은 장 제목이 h1 이라 소제목 단계를 맞춤
   $$('.s-chnav a[data-c]', root).forEach(a => a.onclick = e => { e.preventDefault(); const go = +a.dataset.c, was = SR.speaking; srStop(); srChapter(go, 0, true); if (was) srSpeak(); });
@@ -3299,7 +3299,7 @@ function srSavePos(n, ch) {
 function srStop(quiet) {
   TT.gen++; TT.jump = null; SR.si = 0; SR.speaking = false; try { speechSynthesis.cancel(); } catch (e) {} wake(false, 'tts');
   $$('.s-text .speaking').forEach(x => x.classList.remove('speaking'));
-  const b = $('#sSpeak'); if (b) b.textContent = '▶ 듣기'; $$('.s-sent').forEach(x => x.hidden = true);
+  const b = $('#sSpeak'); if (b) b.innerHTML = '<span aria-hidden="true">▶</span> 듣기'; $$('.s-sent').forEach(x => x.hidden = true);
   if (!quiet) toast('듣기를 멈췄습니다');
 }
 // 화면에 보이는 문단(또는 장 처음)부터 읽음 — 장이 끝나면 다음 장을 그 자리에 그리고 이어 읽음
@@ -3330,7 +3330,7 @@ function srSpeak(fromTop, startAt) {
   }
   try { speechSynthesis.cancel(); } catch (e) {}
   if (STALK.playing()) STALK.au.pause();  // 법문이 나오고 있으면 멈추고 책을 읽음
-  SR.speaking = true; wake(true, 'tts'); const b = $('#sSpeak'); if (b) b.textContent = '■ 듣기 멈춤'; $$('.s-sent').forEach(x => x.hidden = false);
+  SR.speaking = true; wake(true, 'tts'); const b = $('#sSpeak'); if (b) b.innerHTML = '<span aria-hidden="true">■</span> 듣기 멈춤'; $$('.s-sent').forEach(x => x.hidden = false);
   const t0 = SR.t0 || (SR.t0 = Date.now());
   const next = () => {
     if (!SR.speaking) return;
@@ -3621,8 +3621,9 @@ function sPageInit() {
   STALK.pageList = null;
   sResumeCount();
   if (pg === 'simple-talk') initSimpleTalk(); else sPlayerPlace();
-  if (pg === 'simple-read') initSimpleRead(); else if (pg === 'simple-mine') initSimpleMine(); else if (pg === 'simple-find') initSimpleFind(); else if (pg === 'simple-acct') initAccount();
-  else if (pg === 'simple-text' || pg === 'simple-acct') { const go = () => $('.s-h1').focus({ preventScroll: true }); if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true }); }
+  if (pg === 'simple-read') initSimpleRead(); else if (pg === 'simple-mine') initSimpleMine(); else if (pg === 'simple-find') initSimpleFind();
+  else if (pg === 'simple-text' || pg === 'simple-acct') { if (pg === 'simple-acct') initAccount();  // 로그인 화면도 열면 커서를 제목에 (2026-11-19 검수: 커서가 문서 맨 위에 남아 위쪽 메뉴부터 읽던 것)
+    const go = () => $('.s-h1').focus({ preventScroll: true }); if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true }); }
   else sFocusFirst();
   sAcctRow();
 }

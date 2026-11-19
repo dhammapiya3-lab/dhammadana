@@ -1039,7 +1039,9 @@ ${status ? `<footer class="s-stat"><span>/${esc(crumbs.slice(1).map(c => c[0]).j
 // 날짜는 낭독기가 '2026 11 15' 로 읽지 않게 '2026년 11월 15일' 로 들려줌 (운영자 요청, 2026-11-18 — 화면 글은 그대로)
 // 휴대폰에서는 '26/11/17' 처럼 짧게 (운영자 요청, 2026-11-18)
 const shortDate = c => { const m = String(c).match(/(\d{4})-(\d{1,2})-(\d{1,2})/); return m ? `${m[1].slice(2)}/${m[2].padStart(2, '0')}/${m[3].padStart(2, '0')}` : c; };
-const sDateHtml = c => /\d{4}-\d{1,2}-\d{1,2}/.test(c) ? `<span aria-hidden="true" class="d-long">${esc(c)}</span><span aria-hidden="true" class="d-short">${esc(shortDate(c))}</span><span class="sr">${esc(sayDate(c))}</span>` : esc(c);
+const sDateHtml = c => /\d{4}-\d{1,2}-\d{1,2}/.test(c) ? `<span aria-hidden="true" class="d-long">${esc(c)}</span><span aria-hidden="true" class="d-short">${esc(shortDate(c))}</span><span class="sr">${esc(sayDate(c))}</span>` : sSep(esc(c));
+// 칸 글의 ' | '·' · ' 는 화면에는 그대로, 화면 낭독기에는 쉼표로 — '세로 막대'·'가운뎃점'을 읽지 않게 (2026-11-19 검수)
+const sSep = h => h.replace(/ ([|·]) /g, ' <span aria-hidden="true">$1</span><span class="sr">,</span> ').replace(/(\d쪽)~(?=\d)/g, '$1<span aria-hidden="true">~</span><span class="sr">부터 </span>');  // '1쪽~6쪽' 은 '1쪽부터 6쪽' (물결표를 읽지 않게)
 const sCols = cols => cols.map((c, i) => `${i && c ? '<span class="sr">, </span>' : ''}<span class="s-c s-c${i + 1}">${sDateHtml(c || '')}</span>`).join('');
 const S_COLS = { 2: 'minmax(0,2fr) minmax(0,3fr)', 3: 'minmax(0,3fr) 110px minmax(0,2fr)' };
 const sList = (label, head, rows, cols = S_COLS[head.length]) => `<div class="s-tbl"${cols ? ` style="--cols:${cols}"` : ''}><div class="s-head" aria-hidden="true">${head.map((h, i) => `<span class="s-c s-c${i + 1}">${esc(h)}</span>`).join('')}</div>
