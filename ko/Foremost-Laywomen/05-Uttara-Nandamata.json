@@ -1,0 +1,332 @@
+[
+ {
+  "img": "images/05-Uttara-Nandamata-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     338,
+     150,
+     756,
+     316
+    ],
+    "ko": "웃따라 난다마따:\n선정의 으뜸\n\n옛 서원에서 궁극의 깨달음까지.\n한 독실한 우바이의 이야기,\n기적 같은 공덕의 수확,\n자애 선정이 지닌 승리의 힘.",
+    "cover": [
+     220,
+     167,
+     59
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uttara-Nandamata-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     362,
+     650,
+     442
+    ],
+    "ko": "십만 겁 전 함사와띠에서 그녀는 빠두뭇따라 부처님께서\n선정 제일의 우바이를 칭찬하시는 것을 들었습니다. 큰 공양을 올리며\n뒷날 바로 그 영예를 얻겠다고 한결같이 서원했습니다.",
+    "cover": [
+     37,
+     44,
+     60
+    ],
+    "align": "center",
+    "em": 14,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uttara-Nandamata-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     144,
+     366,
+     658,
+     436
+    ],
+    "ko": "라자가하에 다시 태어난 뿐나시하와 아내 웃따라는 부유한 수마나 밑에서\n일했습니다. 큰 명절날 도시가 들떠 있을 때, 가난한 부부는\n밭을 갈기로 했습니다. 기적 같은 수확의 밭을 일구는 줄도 모른 채.",
+    "cover": [
+     127,
+     56,
+     33
+    ],
+    "align": "center",
+    "em": 14,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uttara-Nandamata-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     342,
+     704,
+     446
+    ],
+    "ko": "멸진정에서 나온 사리뿟따 장로가 덕 있는 이들을 축복하려 했습니다.\n뿐나시하는 공손히 맑은 물을 올렸습니다. 뒤에 아내는\n하나뿐인 끼니를 사리뿟따 장로께 올리며 간절히 바랐습니다.\n“이 가난에서 벗어나게 하소서.”",
+    "cover": [
+     220,
+     171,
+     73
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uttara-Nandamata-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     270,
+     140,
+     530,
+     328
+    ],
+    "ko": "곧바로 열매 맺는 업의 조건\n네 힘이 함께해 그날로 열매를 맺었습니다.\n1. 받는 이: 멸진정에서 나온 아라한\n2. 보시물: 바르게 얻은 것\n3. 의도: 앞뒤 내내 큰 기쁨\n4. 뿌리: 넉넉히 익은 지난 공덕",
+    "cover": [
+     239,
+     218,
+     182
+    ],
+    "align": "center",
+    "em": 14,
+    "ellipse": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uttara-Nandamata-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     342,
+     704,
+     446
+    ],
+    "ko": "쉬다가 깬 뿐나시하는 갈아 놓은 흙이 수세미꽃처럼\n노랗게 빛나는 순금 바다로 바뀐 것을 보았습니다.\n사리뿟따 장로께 올린 깨끗한 보시의 밭이\n그 자리에서 열매를 맺은 것입니다.",
+    "cover": [
+     24,
+     31,
+     49
+    ],
+    "align": "center",
+    "em": 18,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uttara-Nandamata-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     354,
+     54,
+     762,
+     180
+    ],
+    "ko": "빔비사라 왕의 신하들이 금을 왕실 것으로\n거두려 하자, 금은 곧바로 흙으로 돌아갔습니다.\n왕은 진실을 깨달았습니다. 그 재물은\n뿐나시하의 큰 공덕의 이름으로\n거둘 때에만 금으로 남았습니다.",
+    "cover": [
+     241,
+     226,
+     191
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uttara-Nandamata-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     342,
+     704,
+     446
+    ],
+    "ko": "빔비사라 왕이 뿐나시하를 왕실 재무관으로 삼았습니다. 그는 부처님과\n승가를 모셔 큰 잔치를 열었습니다. 세존의 법문을 들은 뿐나시하와\n아내와 딸 웃따라는 모두 수다원과를 얻었습니다.",
+    "cover": [
+     27,
+     32,
+     47
+    ],
+    "align": "center",
+    "em": 15,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uttara-Nandamata-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     350,
+     762,
+     436
+    ],
+    "ko": "거만한 수마나가 아들의 짝으로 딸 웃따라를 달라고 했습니다. 뿐나시하는 처음에\n거절했습니다. 수다원인 딸은 날마다 삼보께 공양을 올려야 한다는 것이었습니다.\n둘은 절충했습니다. 수마나가 날마다 그녀의 꽃값으로 금을 대기로.",
+    "cover": [
+     222,
+     171,
+     69
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uttara-Nandamata-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     340,
+     312,
+     760,
+     446
+    ],
+    "ko": "포살 계를 지키지 못하게 하자\n웃따라는 자기 돈 만오천 냥으로\n기녀 시리마를 들여 남편을 모시게 했습니다.\n이 묘수로 웃따라는 보름 동안\n홀로 수행하고 공양할 수 있었습니다.",
+    "cover": [
+     133,
+     55,
+     33
+    ],
+    "align": "center",
+    "em": 16,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uttara-Nandamata-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     366,
+     680,
+     436
+    ],
+    "ko": "창밖을 보던 웃따라가 남편과 잠깐 미소를 나누었습니다.\n자기가 진짜 아내라고 착각한 시리마는 질투로 불같이 성나\n끓는 기름을 국자로 떠서 웃따라에게 끼얹으려 달려갔습니다.",
+    "cover": [
+     36,
+     34,
+     64
+    ],
+    "align": "center",
+    "em": 15,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uttara-Nandamata-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     252,
+     250,
+     438
+    ],
+    "ko": "화를 조금도 품지 않은\n웃따라는 깊은 자애 선정에\n들어 시리마를 온전한\n선의로 감쌌습니다.\n\n머리에 부은 끓는 기름은\n시원하기만 했고, 연잎 위\n물처럼 살갗에서\n굴러떨어졌습니다.",
+    "cover": [
+     211,
+     159,
+     59
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uttara-Nandamata-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     232,
+     8,
+     570,
+     152
+    ],
+    "ko": "잔인함을 깨달은 시리마가 용서를 빌다\n부처님께 인도된 그녀를 부처님께서\n용서하시며 가르치셨습니다.\n“성내는 이를 자애로 이기고,\n악한 이를 선으로 이겨라.”\n이 진리를 듣고 시리마는\n곧바로 수다원과를 얻었습니다.",
+    "cover": [
+     234,
+     224,
+     188
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uttara-Nandamata-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     158,
+     350,
+     644,
+     446
+    ],
+    "ko": "흔들림 없는 믿음과, 폭력을 온전한 자애로 녹이는 힘으로\n그녀의 옛 서원이 익었습니다. 부처님께서는 웃따라 난다마따를\n선정에 머무는 우바이 가운데 으뜸이라 선언하셨습니다.",
+    "cover": [
+     102,
+     32,
+     31
+    ],
+    "align": "center",
+    "em": 14,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
