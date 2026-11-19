@@ -1,0 +1,392 @@
+[
+ {
+  "img": "images/01-Tapussa-and-Bhallika-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     358,
+     644,
+     426
+    ],
+    "ko": "첫 제자: 따뿟사와 발리까\n가장 먼저 귀의한 재가 신자들의 위대한 연대기",
+    "cover": [
+     243,
+     226,
+     189
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     26,
+     312,
+     344,
+     426
+    ],
+    "ko": "함사와띠에서 형제는 빠두뭇따라 부처님께서 으뜸 우바새를 일컬으시는 것을 들었습니다. 그들은 특별한 공양을 올리며, 언젠가 바로 그 영예를 얻기를 서원했습니다.",
+    "cover": [
+     240,
+     211,
+     146
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     92,
+     324,
+     362
+    ],
+    "ko": "셀 수 없는 겁 동안 두 사람은 큰 공덕을 쌓으며 살았습니다. 시키 부처님과 깟사빠 부처님, 그리고 수마나 벽지불을 섬기면서 가장 높은 제자가 될 업의 바탕을 굳게 다졌습니다.",
+    "cover": [
+     241,
+     215,
+     159
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     152,
+     342,
+     656,
+     438
+    ],
+    "ko": "아시딴자나에서 따뿟사와 발리까로 태어난 두 사람은 부유한 대상 상인이 되었습니다. 소달구지 5백 대의 큰 행렬을 이끌고 온 땅을 다니며 물건을 날랐습니다.",
+    "cover": [
+     237,
+     210,
+     153
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     62,
+     396,
+     388
+    ],
+    "ko": "라자야따나 나무 가까이에서 수레들이 이상하게 멈춰 섰습니다. 전생에 그들의 어머니였던 천신이 큰 기회를 보고 신통력으로 행렬을 멈춘 것입니다.",
+    "cover": [
+     247,
+     239,
+     205
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     300,
+     690,
+     444
+    ],
+    "ko": "천신이 행렬의 일꾼 몸에 들어가 알렸습니다. “두려워 마십시오. 고따마 부처님께서 가까이 계십니다. 49일 동안 아무것도 드시지 않았습니다. 깨달으신 뒤 첫 공양을 올리십시오.”",
+    "cover": [
+     232,
+     211,
+     173
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     182,
+     42,
+     616,
+     162
+    ],
+    "ko": "기뻐한 형제는 밥을 지으면 너무 오래 걸린다는 것을 알았습니다. 그래서 가장 좋은 저장 음식인 쌀떡과 꿀을 서둘러 준비해, 순금 쟁반에 담았습니다.",
+    "cover": [
+     230,
+     209,
+     170
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     600,
+     50,
+     768,
+     402
+    ],
+    "ko": "음식을 받으시도록 사대천왕이 푸른 돌 발우 네 개를 바쳤습니다. 네 천신을 모두 공경하시려고 부처님께서는 신통으로 발우 넷을 테두리가 넷인 발우 하나로 합치셨습니다.",
+    "cover": [
+     231,
+     208,
+     167
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     316,
+     698,
+     446
+    ],
+    "ko": "상인들이 귀한 음식을 새 발우에 담았습니다. 부처님께서 드시고 나자 씻으실 물을 올렸습니다. 이것이 깨달으신 분께 올린 첫 공양이었습니다.",
+    "cover": [
+     229,
+     207,
+     167
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     206,
+     600,
+     296
+    ],
+    "ko": "“존자시여, 저희는 세존과 법에 귀의합니다.”\n두 사람은 부처님과 법, 두 가지에만 귀의하는 두 마디 귀의(dvevācika saraṇagamana)로 첫 재가 신자가 되었습니다.",
+    "cover": [
+     70,
+     66,
+     50
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     262,
+     360,
+     426
+    ],
+    "ko": "떠나기 전에 두 사람은 날마다 예경할 것을 청했습니다. 부처님께서 오른손으로 머리를 쓰다듬으시고, 거룩한 머리카락 여덟 올을 금함에 담아 주셨습니다.",
+    "cover": [
+     238,
+     222,
+     191
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     16,
+     654,
+     164
+    ],
+    "ko": "아시딴자나로 돌아온 두 사람은 살아 계신 분의 사리 여덟 올을 마을 입구에 모셨습니다. 포살일(uposatha)이면 그 탑에서 신기하게도 찬란한 부처님의 빛이 뿜어져 나왔습니다.",
+    "cover": [
+     235,
+     219,
+     188
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     232,
+     364,
+     428
+    ],
+    "ko": "뒷날 제따와나 승원에서 부처님께서 그들의 오랜 서원을 이루어 주셨습니다. 따뿟사와 발리까를 가장 먼저 귀의한 우바새의 으뜸이라고 공식으로 선언하셨습니다.",
+    "cover": [
+     234,
+     219,
+     185
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     234,
+     20,
+     574,
+     94
+    ],
+    "ko": "뒷날 라자가하에서 설법을 듣고 두 사람의 길은 갈라졌습니다.",
+    "cover": [
+     227,
+     211,
+     179
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     38,
+     362,
+     356,
+     426
+    ],
+    "ko": "따뿟사: 재가자로 남아\n수다원과를 얻었습니다.",
+    "cover": [
+     231,
+     213,
+     180
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     450,
+     348,
+     772,
+     426
+    ],
+    "ko": "발리까: 승가에 들어가\n아라한과와 여섯 신통을 얻었습니다.",
+    "cover": [
+     230,
+     214,
+     181
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
