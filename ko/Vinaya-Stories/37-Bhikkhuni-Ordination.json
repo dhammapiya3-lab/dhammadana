@@ -1,0 +1,578 @@
+[
+ {
+  "img": "images/37-Bhikkhuni-Ordination-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     62,
+     346,
+     372
+    ],
+    "ko": "마하빠자빠띠 고따미\n이야기\n\n부처님께서 까삘라왓투의\n사꺄족 가운데 니그로다\n승원에 머무셨습니다.\n마하빠자빠띠 고따미가\n찾아와 여인도 출가할 수\n있게 해 주시기를\n청했습니다.",
+    "cover": [
+     209,
+     168,
+     127
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     268,
+     60,
+     534,
+     272
+    ],
+    "ko": "그녀는 세 번 간청했습니다.\n부처님께서 세 번 대답하셨습니다.\n“그만두어라, 고따미여. 여인의\n출가를 좋아하지 마라.”\n괴롭고 슬퍼 울며 그녀는 예를\n올리고 오른쪽으로 돌고 떠났습니다.",
+    "cover": [
+     213,
+     175,
+     135
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     96,
+     362,
+     194
+    ],
+    "ko": "마하빠자빠띠 고따미와 많은\n사꺄족 여인이 스스로 출가했습니다.\n머리를 자르고 황토색 옷을 입고\n세존을 따라 웨살리로\n걸어서 떠났습니다.",
+    "cover": [
+     213,
+     176,
+     137
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     92,
+     362,
+     206
+    ],
+    "ko": "마침내 그들은 큰 숲의 중각강당에\n이르렀습니다. 발은 부어오르고\n몸은 먼지투성이에 눈물 젖은 얼굴로,\n지친 여인들은 문밖에 서서\n울었습니다.",
+    "cover": [
+     208,
+     172,
+     134
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     356,
+     90,
+     664,
+     216
+    ],
+    "ko": "아난다 장로가 문밖의 그들을 보았습니다.\n눈물과 지침에 마음이 움직인 그는\n나서기로 했습니다. “고따미여,\n잠시 여기서 기다리십시오. 여인의\n출가를 세존께 청해 보겠습니다.”",
+    "cover": [
+     208,
+     168,
+     132
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     142,
+     90,
+     494,
+     198
+    ],
+    "ko": "부처님께 나아간 아난다가 여인의 구족계를\n청했습니다. 세 번 간청했지만 세존께서는\n세 번 단호히 거절하셨습니다.\n“그만두어라, 아난다여. 여인의 출가를\n좋아하지 마라.”",
+    "cover": [
+     205,
+     170,
+     133
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     290,
+     232,
+     720,
+     372
+    ],
+    "ko": "아난다는 방법을 바꾸어 여쭈었습니다.\n“여인도 출가하면 수다원과부터 아라한과까지\n깨달음의 열매를 이룰 수 있습니까?”\n부처님께서 인정하셨습니다. “아난다여,\n집을 떠나 출가한 여인도 이룰 수 있다.”",
+    "cover": [
+     226,
+     196,
+     158
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     318,
+     226,
+     724,
+     370
+    ],
+    "ko": "“여인도 이룰 수 있다면,” 아난다가 말씀드렸습니다.\n“마하빠자빠띠 고따미는 세존의 이모이자 양어머니로\n세존을 기르셨습니다. 어머니께서 돌아가셨을 때\n젖을 먹여 키우셨습니다. 그분이 출가할 수\n있다면 좋겠습니다.”",
+    "cover": [
+     225,
+     194,
+     157
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     290,
+     224,
+     720,
+     370
+    ],
+    "ko": "부처님께서 받아들이셨습니다.\n“마하빠자빠띠 고따미가 팔경법을 받아들인다면\n그것을 그녀의 구족계로 삼겠다.”\n이 법은 공경과 승가 규율과 화합의\n깨지지 않는 약속이 되었습니다.",
+    "cover": [
+     224,
+     193,
+     155
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     392,
+     224,
+     720,
+     370
+    ],
+    "ko": "조건을 들은 고따미가 기뻐했습니다.\n“젊은이가 푸른 연꽃이나 재스민\n화환을 기쁘게 머리에 쓰듯,\n아난다 장로시여, 저는 이 팔경법을\n받아들이겠습니다.”",
+    "cover": [
+     223,
+     192,
+     155
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     82,
+     220,
+     394,
+     370
+    ],
+    "ko": "부처님께서 청정범행에 닥칠\n어려움을 예언하시고 미리 대비하신\n뜻을 설명하셨습니다. “사람이 큰\n호수에 둑을 쌓아 물이 넘치지 않게\n하듯, 나도 넘어서는 안 될 이\n규칙들을 미리 정하였다.”",
+    "cover": [
+     220,
+     188,
+     152
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     344,
+     704,
+     432
+    ],
+    "ko": "“세존이시여, 이 사꺄족 여인들을 어떻게 해야 합니까?”\n세존께서 법을 설하시어 그녀를 이끄시고 비구들에게 이르셨습니다.\n“비구들이여, 비구들이 비구니에게 구족계를 주는 것을 허락한다.”",
+    "cover": [
+     216,
+     176,
+     135
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     56,
+     646,
+     156
+    ],
+    "ko": "새로 구족계를 받은 비구니들이 마하빠자빠띠 고따미에게 물었습니다.\n“마님은 구족계를 받지 않았고 우리는 받았습니다.\n세존께서 비구니는 비구에게서 구족계를\n받아야 한다고 정하셨기 때문입니다.”",
+    "cover": [
+     214,
+     175,
+     137
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     362,
+     630,
+     434
+    ],
+    "ko": "마하빠자빠띠 고따미가 아난다 장로를 찾아가 예를 올리고\n한쪽에 섰습니다. 비구니들의 의문을 전하며\n세존께 중재해 주기를 청했습니다.",
+    "cover": [
+     209,
+     167,
+     127
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     230,
+     384,
+     388
+    ],
+    "ko": "아난다 장로가 그 다툼을 말씀드렸습니다.\n세존께서 분명히 밝히셨습니다.\n\n“아난다여, 마하빠자빠띠 고따미가\n팔경법을 받아들였으니\n그것이 곧 그녀의 구족계다.”",
+    "cover": [
+     210,
+     167,
+     126
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     400,
+     136,
+     746,
+     320
+    ],
+    "ko": "고따미가 아난다에게 세존께\n청원을 드려 달라고 했습니다.\n\n“세존께서 비구와 비구니가\n법랍에 따라 서로 예를 올리고\n일어나 맞이하도록 허락하시면\n좋겠습니다.”",
+    "cover": [
+     215,
+     174,
+     133
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     232,
+     394,
+     388
+    ],
+    "ko": "“그것은 안 된다, 아난다여.” 세존께서\n대답하셨습니다. “여래가 여인에게\n예를 올리도록 허락할 수는 없다.”\n\n그렇게 하는 것은 비구에게\n악작죄라고 정하셨습니다.",
+    "cover": [
+     211,
+     170,
+     131
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     256,
+     60,
+     544,
+     248
+    ],
+    "ko": "마하빠자빠띠 고따미가 다시\n세존께 나아가 계율을 여쭈었습니다.\n\n“세존이시여, 비구와 함께하는\n비구니의 학습 계율은\n어떻게 해야 합니까?”",
+    "cover": [
+     214,
+     173,
+     134
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     316,
+     62,
+     486,
+     304
+    ],
+    "ko": "세존께서 함께하는\n규율이 똑같다고\n정하셨습니다.\n“고따미여, 비구와\n함께하는 비구니의\n학습 계율은 비구가\n익히듯 그대로\n익혀라.”",
+    "cover": [
+     211,
+     172,
+     135
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     272,
+     700,
+     382
+    ],
+    "ko": "그녀는 비구니에게만 있는 규칙을 여쭈었습니다.\n\n세존께서 이르셨습니다. “고따미여, 비구와\n함께하지 않는 비구니의 학습 계율은\n정해진 대로 익혀라.”",
+    "cover": [
+     210,
+     169,
+     131
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     312,
+     70,
+     490,
+     302
+    ],
+    "ko": "궁극의 해탈을 구하며\n마하빠자빠띠 고따미가\n청했습니다.\n\n“세존께서 법을 간략히\n설해 주시면 저는 홀로\n물러나 게으르지 않고\n열심히 굳게\n머물겠습니다.”",
+    "cover": [
+     210,
+     170,
+     133
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     444,
+     70,
+     730,
+     382
+    ],
+    "ko": "세존께서 그릇된 가르침은\n이런 것으로 이끈다고\n정하셨습니다.\n• 탐욕  • 속박\n• 쌓음  • 큰 욕심\n• 불만  • 무리 지음\n• 게으름  • 부양하기 어려움\n“이것은 법이 아니다.”",
+    "cover": [
+     51,
+     53,
+     56
+    ],
+    "align": "center",
+    "em": 17,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     484,
+     90,
+     722,
+     420
+    ],
+    "ko": "참된 가르침은 곧바로\n이런 것으로 이끕니다.\n• 탐욕을 여읨\n• 속박에서 벗어남\n• 줄어듦\n• 욕심이 적음\n• 만족\n• 홀로 머묾\n• 정진을 일으킴\n• 부양하기 쉬움\n“이것이 법이다.”",
+    "cover": [
+     230,
+     205,
+     175
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     118,
+     318,
+     684,
+     410
+    ],
+    "ko": "“고따미여, 반드시 기억하라.\n이것이 법이고, 이것이 율이며,\n이것이 스승의 가르침이다.”",
+    "cover": [
+     217,
+     173,
+     129
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/37-Bhikkhuni-Ordination-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     316,
+     738,
+     412
+    ],
+    "ko": "왕실의 재가 여인에서 구족계를 받은 홀로 닦는 수행자가 되기까지,\n마하빠자빠띠 고따미의 물음이 비구니 승가를 세우고\n규율과 깊은 욕망 여읨의 분명한 길을 열었습니다.",
+    "cover": [
+     213,
+     170,
+     129
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
