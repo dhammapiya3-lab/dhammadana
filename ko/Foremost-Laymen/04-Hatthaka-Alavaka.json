@@ -1,0 +1,252 @@
+[
+ {
+  "img": "images/04-Hatthaka-Alavaka-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     66,
+     660,
+     162
+    ],
+    "ko": "핫타까 알라와까: 자비로운 왕자\n헌신과 네 가지 섭수법의 이야기",
+    "cover": [
+     247,
+     231,
+     201
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     372,
+     752,
+     434
+    ],
+    "ko": "빠두뭇따라 부처님 시대에 한 고귀한 우바새가, 남다른 자비로 칭찬받는 제자를 보았습니다. 감동한 그는 언젠가 그 영예를 얻겠다고 엄숙히 서원했습니다.",
+    "cover": [
+     243,
+     227,
+     195
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     164,
+     66,
+     440,
+     226
+    ],
+    "ko": "십만 겁 뒤 그는 알라와까 왕자로 태어났습니다. 그런데 운명이 가혹하게 돌아, 왕은 무서운 야차 알라와까를 달래려고 갓난아기를 산 제물로 바치라고 명했습니다.",
+    "cover": [
+     239,
+     223,
+     190
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     354,
+     744,
+     432
+    ],
+    "ko": "제물로 바치기 전에 부처님께서 나서셨습니다. 깊은 평화를 내뿜으시며 잔인한 야차를 교화하셨습니다. 왕의 신하들이 왔을 때, 야차는 수다원이 되어 맑고 평화롭게 공경하며 서 있었습니다.",
+    "cover": [
+     240,
+     224,
+     190
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     164,
+     510,
+     330
+    ],
+    "ko": "핫타까라는 이름\n부끄러워진 야차가 아기를 부처님께 바쳤습니다. 부처님께서 축복하시고 신하들에게 돌려주셨습니다. 손에서 손으로 건네졌다 하여 ‘핫타까’라 이름 지었습니다.",
+    "cover": [
+     239,
+     223,
+     189
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     102,
+     352,
+     698,
+     430
+    ],
+    "ko": "부처님께서 왕자의 안녕을 위해 축복의 게송을 읊으셨습니다. 야차가 게송을 이어 마치며, 어린 왕자를 삼귀의 곧 부처님·법·승가에 정식으로 귀의하게 했습니다.",
+    "cover": [
+     236,
+     221,
+     185
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     54,
+     372,
+     190
+    ],
+    "ko": "알라위 도성이 크게 기뻐했습니다. 부처님께서 알라와까 경을 설하시어 중생 8만 4천을 해탈하게 하셨습니다. 시민들은 길들여진 야차에게 아름다운 사당을 지어 천상의 꽃과 향을 바쳤습니다.",
+    "cover": [
+     235,
+     219,
+     183
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     592,
+     50,
+     746,
+     396
+    ],
+    "ko": "핫타까 왕자는 총명하고 헌신하는 젊은이로 자랐습니다. 승가를 섬기고 삼장을 익혀 아나함(anāgāmī)이 되었습니다. 곧 그를 따르는 재가 신자 5백 명이 모였습니다.",
+    "cover": [
+     230,
+     215,
+     173
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     150,
+     510,
+     334
+    ],
+    "ko": "섭수법(saṅgaha-vatthu)\n핫타까는 네 가지로 대중을 이끌었습니다.\n1. 보시 (어려운 이에게)\n2. 사랑스러운 말 (귀를 기쁘게)\n3. 이로운 행 (도움을 줌)\n4. 평등함 (남을 같이 대함)",
+    "cover": [
+     228,
+     210,
+     166
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     164,
+     316,
+     640,
+     432
+    ],
+    "ko": "그 뛰어남을 아신 부처님께서 선언하셨습니다.\n“네 가지로 따르는 이들을 자애롭게 대하는 나의 우바새 제자들 가운데 핫타까 알라와까가 으뜸이다.”\n오랜 서원이 완전히 이루어졌습니다.",
+    "cover": [
+     244,
+     227,
+     189
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
