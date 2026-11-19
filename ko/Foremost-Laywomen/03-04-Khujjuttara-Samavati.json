@@ -1,0 +1,994 @@
+[
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     330,
+     602,
+     418
+    ],
+    "ko": "사마와띠와 쿳줏따라\n여러 생에 걸쳐 얽힌 두 운명 — 깊은 서원,\n비극적인 죽음, 그리고 마침내 이룬 승리",
+    "cover": [
+     238,
+     191,
+     129
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     274,
+     154,
+     526,
+     300
+    ],
+    "ko": "옛 함사와띠에서 두 여인이\n빠두뭇따라 부처님 앞에 서원했습니다.\n쿳줏따라는 많이 배운 이의 으뜸,\n사마와띠는 자애에 머무는 이의\n으뜸이 되기를 바랐고, 부처님께서\n둘 다 이루리라 예언하셨습니다.",
+    "cover": [
+     247,
+     182,
+     90
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     158,
+     318,
+     646,
+     392
+    ],
+    "ko": "십만 겁 동안 두 여인은 천상과 인간 세계를 오갔습니다.\n평생 쌓은 공덕에 힘입어, 마침내 고따마\n부처님 시대에 두 사람의 길이 만났습니다.",
+    "cover": [
+     245,
+     182,
+     98
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     26,
+     720,
+     114
+    ],
+    "ko": "인간 세계에 다시 태어난 두 사람의 삶은 나란히 흘렀습니다.\n꼬삼비에서는 등 굽은 쿳줏따라가 부유한 고사까 집 유모의 딸로,\n밧디야에서는 사마와띠가 부유한 장자 밧다왓띠야의 딸로 태어났습니다.",
+    "cover": [
+     243,
+     192,
+     108
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     44,
+     500,
+     132
+    ],
+    "ko": "밧디야에 무서운 기근이 들었습니다. 살길을 찾아 집을 떠난\n밧다왓띠야와 아내와 사마와띠는 꼬삼비로 고된 길을 나섰습니다.\n이름은 들었으나 만난 적 없는 벗 고사까에게\n의지하기를 바랐습니다.",
+    "cover": [
+     230,
+     208,
+     167
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     336,
+     720,
+     422
+    ],
+    "ko": "먼 길에 초췌해진 부모는 체면 때문에 그 몰골로 고사까 앞에 나서지\n않으려 했습니다. 성문 밖 공회당에 숨어 지내며\n사마와띠 혼자 음식을 얻으러 보냈습니다.",
+    "cover": [
+     237,
+     186,
+     108
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     350,
+     40,
+     660,
+     148
+    ],
+    "ko": "고사까가 베푸는 보시 터에서 사람들은\n어부들이 고기를 나누듯 음식을 두고\n아우성쳤습니다. 사마와띠는 떨어져 서서\n밀치지 않았고, 그 단정한 모습이\n보시 관리인의 눈에 띄었습니다.",
+    "cover": [
+     246,
+     209,
+     147
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     38,
+     42,
+     236,
+     136
+    ],
+    "ko": "첫날: 세 몫을 청했습니다.\n굶주린 아버지는 너무 많이\n먹고 숨졌습니다.",
+    "cover": [
+     238,
+     184,
+     107
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     38,
+     206,
+     238,
+     296
+    ],
+    "ko": "둘째 날: 두 몫.\n슬픔에 잠긴 어머니도\n병들어 숨졌습니다.",
+    "cover": [
+     235,
+     183,
+     103
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     38,
+     322,
+     424,
+     408
+    ],
+    "ko": "셋째 날: 한 몫. 혼자 온 사마와띠에게\n관리인이 물어 그 슬픈 사연을 알았습니다.",
+    "cover": [
+     235,
+     182,
+     106
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     164,
+     266,
+     638,
+     396
+    ],
+    "ko": "기근을 피해 오다 부모를 잃은 슬픈 이야기에\n관리인의 마음이 누그러졌습니다. 자식이 없던\n그는 고아가 된 사마와띠를 집에 들이고\n사랑하는 딸로 삼았습니다.",
+    "cover": [
+     246,
+     230,
+     197
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     50,
+     720,
+     122
+    ],
+    "ko": "시끄러운 아우성에 질린 사마와띠가 새 방법을 내놓았습니다. 드나드는 문이\n하나뿐인 울타리를 치자는 것이었습니다. 이 간단한 줄 서기로\n아우성치던 무리가 질서 있는 행렬로 바뀌었습니다.",
+    "cover": [
+     232,
+     167,
+     82
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     174,
+     372,
+     246,
+     398
+    ],
+    "ko": "전",
+    "cover": [
+     247,
+     237,
+     213
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     444,
+     372,
+     512,
+     398
+    ],
+    "ko": "후",
+    "cover": [
+     248,
+     237,
+     214
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     164,
+     266,
+     640,
+     396
+    ],
+    "ko": "보시 터는 연못처럼 조용하고 단정해졌습니다.\n갑자기 조용해진 것을 알아챈 고사까가 관리인에게\n물었습니다. 관리인은 새로 들인 영리한 딸의\n말대로 줄을 세웠다고 털어놓았습니다.",
+    "cover": [
+     243,
+     228,
+     194
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     448,
+     40,
+     756,
+     198
+    ],
+    "ko": "사마와띠가 세상을 떠난 벗\n밧다왓띠야의 딸임을 안 고사까는\n그녀를 귀한 딸로 삼고, 좋은 집안의\n동무 오백 명을 붙여 주었습니다.\n그녀의 업의 상승이 시작되었습니다.",
+    "cover": [
+     243,
+     193,
+     108
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     328,
+     600,
+     408
+    ],
+    "ko": "꼬삼비의 우데나 왕이 사마와띠와 혼인하려 했습니다.\n아버지 고사까는 위험한 궁궐이 두려워 거절했습니다.\n성난 왕은 고사까의 가족을 내쫓았습니다.",
+    "cover": [
+     244,
+     231,
+     198
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     458,
+     248,
+     756,
+     408
+    ],
+    "ko": "사마와띠가 지혜로운 절충안을\n냈습니다. 시녀 동무 오백 명이 함께\n가도록 해 준다면 기꺼이 왕과\n혼인하겠다는 것이었습니다.\n우데나 왕은 기꺼이 받아들였습니다.",
+    "cover": [
+     239,
+     223,
+     189
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     458,
+     248,
+     756,
+     404
+    ],
+    "ko": "사마와띠는 왕비로 즉위했습니다.\n화려한 금빛 누각 저택에\n머물며, 충실한 시녀 오백 명이\n늘 곁에서 모셨습니다.",
+    "cover": [
+     238,
+     221,
+     188
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     38,
+     322,
+     358,
+     408
+    ],
+    "ko": "그 무렵 고사까와 두 벗이 부처님을 뵈러\n갔습니다. 법문을 듣고 수다원과를 얻은\n그들은 승원을 짓고 부처님을\n꼬삼비로 청했습니다.",
+    "cover": [
+     247,
+     235,
+     206
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     48,
+     682,
+     138
+    ],
+    "ko": "꼬삼비에서 마간디야 왕비가 술꾼들을 부추겨 부처님을\n욕하게 했습니다. 부처님께서는 아랑곳하지 않으시고,\n그 적의를 들어 아난다 장로에게 스스로를\n다스리는 것이 소중함을 가르치셨습니다.",
+    "cover": [
+     245,
+     234,
+     207
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     300,
+     48,
+     746,
+     136
+    ],
+    "ko": "사마와띠 왕비의 시녀인 등 굽은 쿳줏따라가\n날마다 왕비의 꽃을 사러 갑니다.\n바쁜 꽃장수가 부처님께 공양 올리는 일을\n거들어 달라고 부탁합니다.",
+    "cover": [
+     244,
+     231,
+     204
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     164,
+     312,
+     644,
+     402
+    ],
+    "ko": "공양 시중을 마친 쿳줏따라는 부처님의\n법문을 깊이 듣습니다. 성스러운 진리를\n깨닫고 수다원과에 확고히 섭니다.",
+    "cover": [
+     243,
+     230,
+     202
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     296,
+     402,
+     402
+    ],
+    "ko": "전에 쿳줏따라는 왕비의 꽃값 절반을\n몰래 챙겼습니다. 수다원이 된 그녀는\n이제 거짓말도 도둑질도 할 수 없어\n여덟 냥어치 꽃을 모두 삽니다.",
+    "cover": [
+     241,
+     227,
+     198
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     40,
+     318,
+     190
+    ],
+    "ko": "커다란 꽃바구니를 본 사마와띠가\n꽃값을 올려 주었느냐고 묻습니다.\n쿳줏따라는 지난 도둑질을\n털어놓으며, 열반을 깨달았기에\n더는 훔칠 수 없다고 말합니다.",
+    "cover": [
+     243,
+     233,
+     205
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     184,
+     340,
+     616,
+     412
+    ],
+    "ko": "달라진 모습에 놀란 사마와띠 왕비와 시녀 오백 명이\n손을 내밀며 쿳줏따라에게 불사의 열반을\n나누어 달라고 간절히 청합니다.",
+    "cover": [
+     238,
+     224,
+     193
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     486,
+     40,
+     764,
+     168
+    ],
+    "ko": "“열반은 나눌 수 없지만\n부처님 말씀은 가르쳐 드릴 수\n있습니다.” 법을 바르게 공경하려고\n사마와띠 왕비는 쿳줏따라에게\n높은 자리를 마련합니다.",
+    "cover": [
+     241,
+     230,
+     202
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     184,
+     338,
+     616,
+     412
+    ],
+    "ko": "쿳줏따라가 법문을 그대로 전합니다. 사마와띠 왕비와\n시녀 오백 명이 수다원과를 얻습니다. 궂은일에서 벗어난\n쿳줏따라는 그들이 받드는 법의 스승이 됩니다.",
+    "cover": [
+     236,
+     218,
+     188
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     178,
+     40,
+     622,
+     142
+    ],
+    "ko": "업의 이치\n쿳줏따라는 왜 등 굽은 종으로 태어났으면서도\n타고난 깊은 지혜를 지녔을까요? 그녀의 삶은\n어김없는 업의 인과를 보여 줍니다.",
+    "cover": [
+     238,
+     224,
+     196
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     116,
+     330,
+     328
+    ],
+    "ko": "잘못된 업\n종살이: 깟사빠 부처님 시대에\n어린 비구니에게 심부름을 시킨 탓에\n오백 생을 종으로 살았습니다.\n등 굽음: 허영심에 등 굽은\n벽지불을 함부로 흉내 낸 탓입니다.",
+    "cover": [
+     236,
+     221,
+     190
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-27-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     446,
+     30,
+     770,
+     162
+    ],
+    "ko": "좋은 업\n타고난 지혜: 뜨거운 우유죽 발우를 든\n벽지불 여덟 분을 보고, 금팔찌 여덟 개를\n빼어 열을 막도록 올렸습니다.\n이 자비로운 행이 깊은 지혜를 낳았습니다.",
+    "cover": [
+     243,
+     235,
+     210
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-28-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     338,
+     764,
+     422
+    ],
+    "ko": "수다원인 사마와띠 왕비와 시녀 오백 명은 부처님을 뵈려고 벽에 구멍을 뚫었습니다.\n깊은 원한을 품은 마간디야 왕비가 그 비밀을 알아냈습니다.\n“이제 사문 고따마에게 앙갚음할 때가 왔다.” 그녀가 웃었습니다.",
+    "cover": [
+     241,
+     227,
+     199
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-29-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     88,
+     320,
+     358
+    ],
+    "ko": "마간디야는 우데나 왕에게\n사마와띠가 왕을 해치려\n꾸민다고 거짓말했습니다.\n\n왕은 구멍을 살폈습니다.\n죄 없는 사실을 듣고 화내지\n않았고, 오히려 격자창을\n만들게 했습니다.\n\n마간디야의 첫 음모가\n실패했습니다.",
+    "cover": [
+     235,
+     219,
+     188
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-30-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     264,
+     90,
+     548,
+     358
+    ],
+    "ko": "마간디야는 산 닭을 보내\n요리하게 하여 사마와띠를\n시험하자고 했습니다.\n사마와띠는 죽이기를 거부했습니다.\n교활한 마간디야는 닭을 가로채\n죽인 뒤 부처님께 올릴 음식으로\n요리하라고 보냈습니다.\n\n그래도 왕은 노하지 않았습니다.\n두 번째 음모도 실패했습니다.",
+    "cover": [
+     234,
+     218,
+     188
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-31-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     88,
+     320,
+     358
+    ],
+    "ko": "궁지에 몰린 마간디야는\n속임수를 키웠습니다.\n우데나 왕이 코끼리를\n길들이려고 아끼는 하프를\n늘 지니고 다니는 것을 알고,\n그 안에 산 코브라를\n몰래 넣어 막았습니다.\n\n“사마와띠는 왕의 목숨을\n하찮게 여깁니다.” 가장\n무서운 덫이었습니다.",
+    "cover": [
+     231,
+     215,
+     182
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-32-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     324,
+     624,
+     446
+    ],
+    "ko": "코브라가 나오자 우데나는 불타는 대숲처럼 씩씩대며\n노했습니다. 독화살을 사마와띠에게 겨누었습니다.\n죽음 앞에서 그녀는 시녀들에게 자애를 펼치라 했고,\n그녀에게서 금빛 연꽃 벽 같은 힘이 흘러나왔습니다.",
+    "cover": [
+     238,
+     223,
+     196
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-33-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     322,
+     624,
+     446
+    ],
+    "ko": "왕은 얼어붙었습니다. 땀이 흐르고 몸이 마구 떨렸습니다.\n보이지 않는 사마와띠의 자애에 짓눌려 쏘지도 내리지도\n못했습니다. 지친 왕이 도움을 청하자 그녀가 일렀습니다.\n“화살을 땅으로 겨누십시오.”",
+    "cover": [
+     238,
+     223,
+     197
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-34-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     410,
+     60,
+     740,
+     202
+    ],
+    "ko": "화살은 땅에 박혀 아무도 해치지 않았습니다.\n떨던 왕이 사마와띠 발아래 엎드려 용서를\n빌었습니다. 그녀는 소원으로 날마다\n부처님의 가르침을 듣게 해 달라고 했고,\n아난다 장로가 와서 궁에 법을 전했습니다.",
+    "cover": [
+     230,
+     207,
+     168
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-35-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     354,
+     622,
+     436
+    ],
+    "ko": "진 마간디야는 마지막 파멸을 꾀했습니다. 왕이 없을 때 숙부가\n사마와띠의 저택을 잠그고 불을 질렀습니다. 사마와띠와\n시녀 오백 명은 곳간의 겨처럼 갇혀 불길 속에 숨졌습니다.",
+    "cover": [
+     233,
+     211,
+     182
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-36-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     88,
+     296,
+     292
+    ],
+    "ko": "불을 지른 것을 안\n우데나는 슬픔을 감추고\n마간디야를 거짓으로\n칭찬했습니다. “그대가\n사마와띠를 없앴구나.\n그대 친척들을 불러\n상을 주겠다.” 기뻐한\n그녀는 친척과 벗을\n모두 불렀습니다.",
+    "cover": [
+     228,
+     205,
+     168
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-37-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     194,
+     116,
+     606,
+     296
+    ],
+    "ko": "덫이 닫혔습니다. 왕은 죄인들을\n목까지 깊은 구덩이에 묻고\n쇠 쟁기로 머리를 갈았습니다.\n마간디야 왕비는 몸이 토막 나\n기름에 졸여졌습니다.\n그 악행의 참혹한 끝이었습니다.",
+    "cover": [
+     241,
+     225,
+     198
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-38-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     154,
+     598,
+     286
+    ],
+    "ko": "성스러운 수다원들이 왜 그런 고통을 겪었을까요?\n그 끔찍한 죽음은 피할 수 없는 지난 업의 메아리였습니다.\n여러 생 전, 바로 그 처녀 오백 명이 강가 강에서\n목욕하고 떨다가 작은 초가에 함부로 불을 붙였습니다.",
+    "cover": [
+     239,
+     219,
+     186
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-39-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     348,
+     742,
+     446
+    ],
+    "ko": "그 안에는 멸진정에 든 벽지불이 앉아 계셨습니다.\n다치지 않았으나 움직이지 않는 그분을 보고, 겁에 질린 처녀들은\n왕의 노여움이 두려웠습니다. 죄를 감추려고 살아 계신 성자를\n일부러 태웠고, 이 고의의 살생이 불타는 운명을 낳았습니다.",
+    "cover": [
+     236,
+     219,
+     192
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-04-Khujjuttara-Samavati-40-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     320,
+     752,
+     442
+    ],
+    "ko": "영적인 승리는 비극적인 끝보다 빛났습니다. 부처님께서는 쿳줏따라를\n많이 배운 이의 으뜸, 사마와띠를 자애에 머무는 이의 으뜸이라 하셨습니다.\n‘Etad-aggaṁ bhikkhave mama sāvikānaṁ upāsikānaṁ\nmettā-vihārīnaṁ yad-idaṁ Sāmāvatī.’\n(비구들이여, 자애에 머무는 나의 우바이 가운데 사마와띠가 으뜸이다.)",
+    "cover": [
+     233,
+     214,
+     185
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
