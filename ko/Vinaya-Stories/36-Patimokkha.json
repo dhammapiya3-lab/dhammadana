@@ -1,0 +1,352 @@
+[
+ {
+  "img": "images/36-Patimokkha-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     58,
+     604,
+     174
+    ],
+    "ko": "사왓티의 침묵:\n부처님께서 빠띠목카를\n넘겨주신 이야기",
+    "cover": [
+     244,
+     223,
+     194
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Patimokkha-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     170,
+     340,
+     334
+    ],
+    "ko": "미가라마따 강당에서 초야가\n지났습니다. 아난다 장로가\n세존께 빠띠목카를 독송해\n주시기를 청했습니다.\n부처님께서는 고요히\n침묵하셨습니다.",
+    "cover": [
+     219,
+     182,
+     139
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Patimokkha-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     172,
+     302,
+     412
+    ],
+    "ko": "중야가 지났습니다.\n모인 이들은 오래\n기다렸습니다. 아난다가\n다시 독송을 청했습니다.\n두 번째에도\n부처님께서는 완전히\n침묵하셨습니다.",
+    "cover": [
+     213,
+     176,
+     133
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Patimokkha-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     172,
+     330,
+     334
+    ],
+    "ko": "새벽이 밝아 밤이 기쁜\n얼굴을 띠었습니다.\n아난다가 세 번째 청하자\n부처님께서 마침내\n놀라운 진실을 말씀하셨습니다.\n“아난다여, 모임이\n청정하지 않다.”",
+    "cover": [
+     214,
+     177,
+     135
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Patimokkha-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     432,
+     62,
+     746,
+     172
+    ],
+    "ko": "청정하지 않은 이를 찾으려고 마하목갈라나\n장로가 온 승가를 마음으로 감쌌습니다.\n그의 신통한 눈이 모임을 꿰뚫어\n타락의 근원을 찾았습니다.",
+    "cover": [
+     169,
+     118,
+     84
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Patimokkha-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     340,
+     746,
+     404
+    ],
+    "ko": "그가 보았습니다. 속이 썩고 행실이 의심스러우며, 사문이라 하지만\n실은 쓰레기 같은 자가 청정한 승가 가운데 숨어 앉아 있었습니다.",
+    "cover": [
+     192,
+     147,
+     111
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Patimokkha-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     70,
+     372,
+     166
+    ],
+    "ko": "세 번 나가라는 말에도 그 사기꾼은\n침묵했습니다. 마하목갈라나가 그의\n팔을 잡아 문밖으로 데리고 나가\n빗장을 단단히 걸었습니다.",
+    "cover": [
+     224,
+     171,
+     121
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Patimokkha-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     40,
+     340,
+     182
+    ],
+    "ko": " ",
+    "cover": null,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     460,
+     40,
+     750,
+     182
+    ],
+    "ko": " ",
+    "cover": null,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     140,
+     46,
+     660,
+     112
+    ],
+    "ko": "“비구들이여, 이제부터 나는 빠띠목카를 독송하지 않는다.\n너희가 스스로 독송하라. 여래는 청정하지 않은\n모임에서 포살을 할 수 없다.”",
+    "cover": [
+     208,
+     154,
+     108
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Patimokkha-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     394,
+     700,
+     446
+    ],
+    "ko": "새 법은 완전한 청정을 요구했습니다. 범계한 이가 있으면 청정한 비구가\n정식으로 선언해야 합니다. ‘그에게는 빠띠목카를 막습니다.’",
+    "cover": [
+     209,
+     153,
+     108
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Patimokkha-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     54,
+     620,
+     156
+    ],
+    "ko": "곧 이름난 여섯 비구 무리가 범계한 채 독송에 참석했습니다.\n그들은 ‘아무도 우리를 모른다’ 생각하며 조용히 앉아 있었습니다.",
+    "cover": [
+     227,
+     180,
+     134
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Patimokkha-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     394,
+     700,
+     446
+    ],
+    "ko": "그들의 속임은 실패했습니다. 신통을 지닌 장로 비구들이 숨은 범계를\n곧바로 알아차리고, 속임을 꿰뚫어 청정한 모임에 알렸습니다.",
+    "cover": [
+     205,
+     150,
+     108
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Patimokkha-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     54,
+     610,
+     170
+    ],
+    "ko": "드러날까 두려워한 여섯 비구 무리가 먼저\n공격했습니다. 아무 근거도 까닭도 없이\n청정하고 죄 없는 비구들의 빠띠목카를\n거짓으로 막았습니다.",
+    "cover": [
+     223,
+     181,
+     138
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Patimokkha-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     54,
+     480,
+     170
+    ],
+    "ko": "죄 없는 비구들이 이 부당함을 알렸습니다.\n세존께서 마지막 판정을 내리셨습니다.\n근거 없이 청정한 비구들의 빠띠목카를\n막는 것은 범계다.",
+    "cover": [
+     217,
+     175,
+     132
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/36-Patimokkha-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     326,
+     718,
+     414
+    ],
+    "ko": "청정은 승가의 토대입니다. 권위는 승가에 있고 깨어 있음으로 지켜지며,\n거룩한 규칙이 거짓 고발로 더럽혀지지 않게 합니다.",
+    "cover": [
+     231,
+     191,
+     149
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
