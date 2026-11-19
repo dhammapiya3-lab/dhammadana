@@ -1,0 +1,319 @@
+[
+ {
+  "img": "images/20-Bamboo-Park-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     306,
+     646,
+     384
+    ],
+    "ko": "동쪽 대나무 숲: 화합의 이야기\n부처님의 가르침에 바탕을 둔 이야기",
+    "cover": [
+     221,
+     184,
+     141
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     140,
+     566,
+     314
+    ],
+    "ko": "숲지기가 다가오시는 세존을 보았습니다.\n“수행자여, 들어가지 마십시오.” 그가\n말렸습니다. “좋은 가문의 아들 셋이\n자기의 이익을 위해 정진하며\n여기 머뭅니다. 그들을\n불편하게 하지 마십시오.”",
+    "cover": [
+     231,
+     209,
+     176
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     312,
+     620,
+     442
+    ],
+    "ko": "아누룻다 장로가 그 말을 들었습니다.\n“벗이여, 막지 마시오.” 그가 말했습니다.\n“우리 스승께서 오셨습니다.” 그러고는 난디야\n장로와 낌빌라 장로를 불러 나오게 했습니다.",
+    "cover": [
+     217,
+     188,
+     154
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     470,
+     46,
+     752,
+     184
+    ],
+    "ko": "세 비구가 나아가 맞이했습니다.\n한 사람은 발우와 가사를 받고,\n한 사람은 자리를 펴고, 한 사람은\n물과 발 받침을 내놓았습니다.\n세존께서 앉아 발을 씻으셨습니다.",
+    "cover": [
+     228,
+     202,
+     172
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     316,
+     76,
+     664,
+     176
+    ],
+    "ko": "안부를 물으신 뒤 세존께서 물으셨습니다.\n“아누룻다여, 너희는 화합하고 기뻐하며\n다투지 않고, 우유와 물처럼 섞여\n서로 다정한 눈으로 보며 지내느냐?”",
+    "cover": [
+     229,
+     203,
+     169
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     302,
+     304,
+     750,
+     392
+    ],
+    "ko": "참으로 그렇습니다, 세존이시여. 저희는 화합하고\n기뻐하며 다투지 않고 지냅니다. 우유와 물처럼\n섞여 서로 다정한 눈으로 봅니다.",
+    "cover": [
+     217,
+     189,
+     152
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     336,
+     690,
+     406
+    ],
+    "ko": "저는 제 마음을 내려놓고 이 존자들의 마음을 따라 행합니다.\n세존이시여, 저희 몸은 다르지만 마음은 하나라고 생각합니다.",
+    "cover": [
+     214,
+     184,
+     146
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     420,
+     204,
+     740,
+     384
+    ],
+    "ko": "세존께서 또 물으셨습니다.\n“아누룻다여, 너희는 게으르지\n않고 열심히 힘쓰며 지내느냐?”\n\n참으로 그렇습니다, 세존이시여.\n저희는 게으르지 않고 열심히\n힘쓰며 지냅니다.",
+    "cover": [
+     222,
+     196,
+     160
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     106,
+     322,
+     694,
+     392
+    ],
+    "ko": "마을 탁발에서 먼저 돌아온 이는 자리를 마련하고\n씻을 물을 내놓고 마실 물을 챙깁니다.",
+    "cover": [
+     211,
+     182,
+     144
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     60,
+     360,
+     170
+    ],
+    "ko": "마지막에 돌아온 이는 원하면 남은\n음식을 먹습니다. 아니면 풀이 적은\n곳이나 생명 없는 물에 조심스레\n버립니다.",
+    "cover": [
+     214,
+     189,
+     156
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     60,
+     198,
+     272,
+     272
+    ],
+    "ko": "그러고 나서\n식당을 씁니다.",
+    "cover": [
+     209,
+     180,
+     145
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     62,
+     738,
+     154
+    ],
+    "ko": "물단지가 비었는데 혼자 들기 무거우면 손짓으로 다른 이를 부릅니다.\n둘이 손을 모아 단지를 세우지만, 그 때문에 말을 꺼내는 일은 없습니다.",
+    "cover": [
+     217,
+     193,
+     159
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     62,
+     738,
+     154
+    ],
+    "ko": "“세존이시여, 그리고 저희는 닷새마다 밤새 함께 앉아 법을 논합니다.”\n이렇게 저희는 게으르지 않고 열심히 힘쓰며 지냅니다.",
+    "cover": [
+     135,
+     130,
+     119
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     328,
+     704,
+     390
+    ],
+    "ko": "화합하는 승가: 1. 서로를 향한 마음챙긴 자애 2. 공동체에 자기를 내맡김\n3. 고귀한 침묵 속에 일을 나눔 4. 부지런히 법을 배우려 모임",
+    "cover": [
+     200,
+     168,
+     135
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
