@@ -1,0 +1,415 @@
+[
+ {
+  "img": "images/10-Nakulapitu-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Nakulapitu",
+   "the",
+   "Householder",
+   "The",
+   "Forem",
+   "Intimacy",
+   "tale",
+   "cosmic",
+   "kinship",
+   "and",
+   "eternal",
+   "devotion",
+   "from",
+   "the",
+   "Great",
+   "Chronicles."
+  ]
+ },
+ {
+  "img": "images/10-Nakulapitu-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     252,
+     79
+    ],
+    "bbox": [
+     774,
+     255,
+     1875,
+     565
+    ],
+    "shape": "box",
+    "en": "Eons ago in Hamsavati, devout man witnessed Buddha Padumuttara honor his closest lay disciple. Making extraordinary offerings, he formed powerful aspiration: to one day hold that exact title. The Buddha predicted his success.",
+    "conf": 89
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/10-Nakulapitu-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     510,
+     109
+    ],
+    "bbox": [
+     1514,
+     255,
+     2457,
+     1223
+    ],
+    "shape": "box",
+    "en": "After 100,000 aeons wandering the Deva and human realms, he was reborn in Susumaragira. He and his devoted wife became known simply by the name of their son: Nakulapitu and Nakulamatu.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/10-Nakulapitu-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     470,
+     110
+    ],
+    "bbox": [
+     1498,
+     238,
+     2473,
+     1240
+    ],
+    "shape": "box",
+    "en": "When Buddha Gotama arrived in the Bhesakala Forest, the couple immediately perceived him as their own son. Falling at his feet, they cried: “Dear son, where have you been over this long time?”",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/10-Nakulapitu-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     153,
+     183
+    ],
+    "bbox": [
+     384,
+     605,
+     1058,
+     684
+    ],
+    "shape": "box",
+    "en": "Father (500x)",
+    "conf": 79
+   },
+   {
+    "seed": [
+     127,
+     227
+    ],
+    "bbox": [
+     387,
+     737,
+     1058,
+     820
+    ],
+    "shape": "box",
+    "en": "Junior Uncle",
+    "conf": 90
+   },
+   {
+    "seed": [
+     516,
+     183
+    ],
+    "bbox": [
+     1607,
+     605,
+     2258,
+     684
+    ],
+    "shape": "box",
+    "en": "Mother (500x)",
+    "conf": 78
+   },
+   {
+    "seed": [
+     497,
+     224
+    ],
+    "bbox": [
+     1607,
+     737,
+     2258,
+     820
+    ],
+    "shape": "box",
+    "en": "Junior Aunt (500x)",
+    "conf": 88
+   },
+   {
+    "seed": [
+     128,
+     267
+    ],
+    "bbox": [
+     387,
+     873,
+     1058,
+     952
+    ],
+    "shape": "box",
+    "en": "Senior Uncle fe (500x) 7",
+    "conf": 49
+   },
+   {
+    "seed": [
+     497,
+     265
+    ],
+    "bbox": [
+     1607,
+     873,
+     2258,
+     952
+    ],
+    "shape": "box",
+    "en": "Senior Aunt (500x)",
+    "conf": 93
+   },
+   {
+    "seed": [
+     93,
+     361
+    ],
+    "bbox": [
+     261,
+     1144,
+     2390,
+     1451
+    ],
+    "shape": "box",
+    "en": "Their parental love was no accident. Over two thousand existences, the couple had repeatedly been the Bodhisatta’s closest blood relatives. This immense karmic gravity bound their hearts eternally to the Buddha",
+    "conf": 92
+   },
+   {
+    "seed": [
+     120,
+     313
+    ],
+    "bbox": [
+     387,
+     1008,
+     1058,
+     1088
+    ],
+    "shape": "box",
+    "en": "Maternal Uncle",
+    "conf": 93
+   },
+   {
+    "seed": [
+     513,
+     305
+    ],
+    "bbox": [
+     1607,
+     1008,
+     2258,
+     1088
+    ],
+    "shape": "box",
+    "en": "Paternal ternal Aunt (500x",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/10-Nakulapitu-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     420,
+     172
+    ],
+    "bbox": [
+     1280,
+     463,
+     2457,
+     1081
+    ],
+    "shape": "bubble",
+    "en": "The Buddha allowed them to bold bis feet until their joy settled into equanimity. Understanding their deep affection, he taught them the Dhamma. Instantly, both attained the fruition of Stream-entry.",
+    "conf": 72
+   }
+  ],
+  "loose": [
+   "AAS",
+   "Cys"
+  ]
+ },
+ {
+  "img": "images/10-Nakulapitu-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     125,
+     357
+    ],
+    "bbox": [
+     238,
+     1154,
+     2410,
+     1356
+    ],
+    "shape": "box",
+    "en": "In old age, having never been disloyal in deed or thought, they asked the Buddha: “We wish to see each other in this life, and in all our future existences. How is this possible?”",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/10-Nakulapitu-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     111,
+     76
+    ],
+    "bbox": [
+     321,
+     198,
+     2357,
+     347
+    ],
+    "shape": "box",
+    "en": "In the Pathama-sama-jivi-sutta, the Buddha revealed four conditions for eternal reunion. Suen must share the exact same degree of:",
+    "conf": 33
+   }
+  ],
+  "loose": [
+   "“NO"
+  ]
+ },
+ {
+  "img": "images/10-Nakulapitu-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“For",
+   "that",
+   "couple",
+   "with",
+   "equal",
+   "morality",
+   "and",
+   "good",
+   "conduct,",
+   "living",
+   "life",
+   "according",
+   "the",
+   "Dhamma...",
+   "both",
+   "them",
+   "find",
+   "delight",
+   "this",
+   "world",
+   "and",
+   "rejoice",
+   "the",
+   "Deva",
+   "realm.”"
+  ]
+ },
+ {
+  "img": "images/10-Nakulapitu-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     296,
+     99
+    ],
+    "bbox": [
+     764,
+     294,
+     1888,
+     536
+    ],
+    "shape": "box",
+    "en": "At the Jetavana monastery, the ancient vow was finally fulfilled.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     323,
+     290
+    ],
+    "bbox": [
+     721,
+     936,
+     1931,
+     1306
+    ],
+    "shape": "box",
+    "en": "The Buddha declared: “Monastics, among my lay disciples who are close to the Buddha, Nakulapitu, the householder, is the foremost.”",
+    "conf": 86
+   }
+  ],
+  "loose": [
+   "ON,"
+  ]
+ }
+]

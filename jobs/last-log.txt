@@ -1,52 +1,12 @@
+Pannasa 26-Vipularaja 13 장
 자동 검수: 문제 의심 0 곳
-On branch storybooks-qa
-Your branch is up to date with 'origin/storybooks-qa'.
-
-nothing to commit, working tree clean
-R2 에 올림: 46 개 / 한글판 이야기 166 편
-공개 주소 확인: 404 27150바이트
-내려받기 파일: 0 묶음 새로 만듦
+R2 에 올림: 72 개 / 한글판 이야기 166 편
+공개 주소 확인: 200 1599817바이트
+이야기 Pannasa/26-Vipularaja {'pdf': 18717838, 'zip': 18454218, 'n': 13}
+책 Pannasa {'pdf': 1034215464, 'pdfs': 99411208, 'zip': 1033664671, 'stories': 50, 'n': 803}
+내려받기 파일: 2 묶음 새로 만듦
 글로 보기: 166 이야기
-Traceback (most recent call last):
-  File "/home/runner/work/dhammadana/dhammadana/pipeline/fetch_ocr.py", line 61, in <module>
-    main()
-    ~~~~^^
-  File "/home/runner/work/dhammadana/dhammadana/pipeline/fetch_ocr.py", line 53, in main
-    res = list(ex.map(lambda i: one(slug, sf, i, sf in keep), imgs))
-  File "/usr/lib/python3.14/concurrent/futures/_base.py", line 639, in result_iterator
-    yield _result_or_cancel(fs.pop())
-          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
-  File "/usr/lib/python3.14/concurrent/futures/_base.py", line 311, in _result_or_cancel
-    return fut.result(timeout)
-           ~~~~~~~~~~^^^^^^^^^
-  File "/usr/lib/python3.14/concurrent/futures/_base.py", line 443, in result
-    return self.__get_result()
-           ~~~~~~~~~~~~~~~~~^^
-  File "/usr/lib/python3.14/concurrent/futures/_base.py", line 395, in __get_result
-    raise self._exception
-  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
-    result = ctx.run(self.task)
-  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
-    return fn(*args, **kwargs)
-  File "/home/runner/work/dhammadana/dhammadana/pipeline/fetch_ocr.py", line 53, in <lambda>
-    res = list(ex.map(lambda i: one(slug, sf, i, sf in keep), imgs))
-                                ~~~^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/dhammadana/dhammadana/pipeline/fetch_ocr.py", line 35, in one
-    return {"img": img, **detect(im)}
-                          ~~~~~~^^^^
-  File "/home/runner/work/dhammadana/dhammadana/pipeline/boxes.py", line 145, in detect
-    img, kk = small_of(big)
-              ~~~~~~~~^^^^^
-  File "/home/runner/work/dhammadana/dhammadana/pipeline/boxes.py", line 89, in small_of
-    H, W = img.shape[:2]
-           ^^^^^^^^^
-AttributeError: 'NoneType' object has no attribute 'shape'
-Traceback (most recent call last):
-  File "/home/runner/work/dhammadana/dhammadana/pipeline/preview.py", line 16, in <module>
-    im = Image.open(c).convert("RGB"); im = im.resize((800, round(im.height * 800 / im.width)), Image.LANCZOS)
-         ~~~~~~~~~~^^^
-  File "/home/runner/.local/lib/python3.14/site-packages/PIL/Image.py", line 3730, in open
-    raise UnidentifiedImageError(msg)
-PIL.UnidentifiedImageError: cannot identify image file 'cache/orig/Foremost-Laymen/images/01-Tapussa-and-Bhallika-01-Original.jpg'
+10-Nakulapitu.htm: 그림 10 상자 17 상자밖글 45
+10-Nakulapitu
 10-Kali.htm: 그림 12 상자 9 상자밖글 121
 10-Kali

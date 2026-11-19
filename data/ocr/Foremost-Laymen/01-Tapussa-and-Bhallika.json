@@ -1,0 +1,458 @@
+[
+ {
+  "img": "images/01-Tapussa-and-Bhallika-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     179,
+     357
+    ],
+    "bbox": [
+     512,
+     1180,
+     2136,
+     1415
+    ],
+    "shape": "box",
+    "en": "ihe First Disciples: Tapussa Bhallika The Great Chronicles of the Earliest Lay Devotees",
+    "conf": 50
+   }
+  ],
+  "loose": [
+   "WZ,"
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "city",
+   "the",
+   "brothers",
+   "heard",
+   "Buddha",
+   "Padumuttara",
+   "name",
+   "his",
+   "foremost",
+   "lay",
+   "disciples.",
+   "Making",
+   "extraordinary",
+   "offerings,",
+   "they",
+   "aspired",
+   "one",
+   "day",
+   "achieve",
+   "this",
+   "exact",
+   "distinction."
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     68,
+     120
+    ],
+    "bbox": [
+     198,
+     314,
+     1041,
+     1276
+    ],
+    "shape": "box",
+    "en": "Across countless aeons, they lived lives of immense merit. By serving Buddha Sikhi, Buddha Kassapa, and Paccekabuddha Sumana, their karmic foundation for supreme discipleship was solidified.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Born",
+   "Tapussa",
+   "and",
+   "Bhallika",
+   "Asitaficana,",
+   "they",
+   "became",
+   "wealthy",
+   "travelling",
+   "merchants.",
+   "They",
+   "commanded",
+   "massive",
+   "caravan",
+   "500",
+   "bullock",
+   "carts,",
+   "carrying",
+   "goods",
+   "across",
+   "the",
+   "land."
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Near",
+   "Rajayatana",
+   "tree",
+   "their",
+   "carts",
+   "mysteriously",
+   "halted.",
+   "Deva—their",
+   "mother",
+   "from",
+   "past",
+   "life—",
+   "used",
+   "her",
+   "psychic",
+   "powers",
+   "stop",
+   "the",
+   "caravan",
+   "seeing",
+   "vital",
+   "opportunity"
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     217,
+     316
+    ],
+    "bbox": [
+     638,
+     1022,
+     2010,
+     1369
+    ],
+    "shape": "box",
+    "en": "The Deva possessed caravan worker, revealing “Do not fear. Buddha Gotama rests nearby. He has not eaten in 49 days. Offer him imh his is first meal since Awakening.” ng. 3",
+    "conf": 59
+   }
+  ],
+  "loose": [
+   "JIN"
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     204,
+     61
+    ],
+    "bbox": [
+     638,
+     185,
+     2010,
+     532
+    ],
+    "shape": "box",
+    "en": "Delighted, the brothers knew cooking would take too long. Instead, they quickly prepared their choicest preserved foods—rice-cakes and honey—arranging them on solid gold salver.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "ESS"
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     659,
+     75
+    ],
+    "bbox": [
+     2007,
+     195,
+     2506,
+     1356
+    ],
+    "shape": "box",
+    "en": "To receive food, the Four Great Kings offered four green granite bowls. To honor all four deities, the Buddha miraculously merged them into single, four-rimmed bowl",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     141,
+     333
+    ],
+    "bbox": [
+     384,
+     1088,
+     2268,
+     1385
+    ],
+    "shape": "box",
+    "en": "The merchants is 8S placed their precious food AS into the new bowl. After the Buddha ate, they offered 5 water 8 for washing, 3 marking the first alms offered to the Awakened One.",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "AY,",
+   "WAN",
+   "AY,",
+   "WY,"
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     231,
+     88
+    ],
+    "bbox": [
+     648,
+     198,
+     1990,
+     589
+    ],
+    "shape": "bubble",
+    "en": "Ete mayam bhante, Bhagavantam ‘Saranam gacchama Dhammafi-ca.",
+    "conf": 39
+   }
+  ],
+  "loose": [
+   "iG)",
+   "They",
+   "the",
+   "first",
+   "lay",
+   "devotees",
+   "taking",
+   "the",
+   "two-sentence",
+   "refuge",
+   "taking",
+   "only",
+   "the",
+   "Buddha",
+   "and",
+   "the",
+   "Dhamma.",
+   "became",
+   "(AS",
+   "kas"
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     45,
+     278
+    ],
+    "bbox": [
+     86,
+     873,
+     1194,
+     1402
+    ],
+    "shape": "box",
+    "en": "Before departing, they asked for an object of daily reverence. The Buddha passed his right hand over his head, gifting them eight sacred hairs in gold casket.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "Yo)",
+   "{9)",
+   "VAN"
+  ]
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     174,
+     46
+    ],
+    "bbox": [
+     493,
+     63,
+     2156,
+     532
+    ],
+    "shape": "box",
+    "en": "Returning to Asitancana, they enshrined the eight living relics at the town entrance. On Observance Days (Uposatha), the shrine miraculously emitted brilliant Buddha-radiance.",
+    "conf": 87
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     59,
+     256
+    ],
+    "bbox": [
+     86,
+     770,
+     1194,
+     1402
+    ],
+    "shape": "box",
+    "en": "Later at Jetavana monastery, the Buddha fulfilled their ancient aspiration. He officially declared Tapussa and Bhallika as the foremost among his lay disciples who took refuge earliest.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Tapussa-and-Bhallika-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     263,
+     26
+    ],
+    "bbox": [
+     747,
+     60,
+     1901,
+     307
+    ],
+    "shape": "box",
+    "en": "Hearing later discourse 1SCOUrSe at Rajagaha, op their ir paths ths diverged:",
+    "conf": 49
+   },
+   {
+    "seed": [
+     55,
+     368
+    ],
+    "bbox": [
+     112,
+     1194,
+     1190,
+     1412
+    ],
+    "shape": "box",
+    "en": "Tapussa: Remained layman, attaining In ing Stream-entry.",
+    "conf": 78
+   },
+   {
+    "seed": [
+     468,
+     346
+    ],
+    "bbox": [
+     1458,
+     1137,
+     2543,
+     1412
+    ],
+    "shape": "box",
+    "en": "Bhallika: hallika: ika Entered ed the eS Sangha, angha, ngha attaining Arahatship ip and the six supernormal powers.",
+    "conf": 65
+   }
+  ],
+  "loose": [
+   "LON",
+   "LES",
+   "AND"
+  ]
+ }
+]

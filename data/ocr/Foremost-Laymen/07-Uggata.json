@@ -1,0 +1,433 @@
+[
+ {
+  "img": "images/07-Uggata-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     172,
+     120
+    ],
+    "bbox": [
+     179,
+     347,
+     1494,
+     896
+    ],
+    "shape": "box",
+    "en": "Great Chronicles: icles Uggata ON cS the Householder 7 The oO Foremost Disciple ISC iple In discriminate Ina te Giving",
+    "conf": 46
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/07-Uggata-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Aspiration",
+   "Hathsavati",
+   "Aeons",
+   "ago,",
+   "under",
+   "Buddha",
+   "Padumuttara,",
+   "witnessed",
+   "layman",
+   "honoored",
+   "for",
+   "attending",
+   "the",
+   "Sangha",
+   "without",
+   "discrimination.",
+   "made",
+   "great",
+   "and",
+   "profound",
+   "ass",
+   "achieve",
+   "this",
+   "exact",
+   "distinction",
+   "the",
+   "future.",
+   "piration",
+   "aspiration",
+   "WE:"
+  ]
+ },
+ {
+  "img": "images/07-Uggata-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Encount",
+   "Reborn",
+   "wealthy,",
+   "Uggata",
+   "was",
+   "drinking",
+   "for",
+   "seven",
+   "days",
+   "the",
+   "Naga",
+   "Park.",
+   "Suddenly,",
+   "saw",
+   "Buddha",
+   "Gotama.",
+   "Overwhelmed,",
+   "instantly",
+   "became",
+   "sober.",
+   "approached",
+   "with",
+   "pure",
+   "and",
+   "protound",
+   "devotion.",
+   "Hatthi",
+   "ama",
+   "ing",
+   "er.",
+   "conviction",
+   "gama"
+  ]
+ },
+ {
+  "img": "images/07-Uggata-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Becoming",
+   "Non-Returner",
+   "The",
+   "Buddha",
+   "taught",
+   "step-by-step",
+   "revealing",
+   "the",
+   "Four",
+   "Noble",
+   "Truths.",
+   "mind",
+   "became",
+   "malleable",
+   "and",
+   "clear.",
+   "immediately",
+   "attained",
+   "the",
+   "fruit",
+   "Anagami",
+   "and",
+   "took",
+   "lifelong",
+   "vow",
+   "chastity",
+   "exposition,",
+   "(brahma-cariyaria).",
+   "RAY"
+  ]
+ },
+ {
+  "img": "images/07-Uggata-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     248,
+     259
+    ],
+    "bbox": [
+     714,
+     840,
+     1961,
+     1332
+    ],
+    "shape": "box",
+    "en": "The Buddha’s Declaration At Jetavana monastery, the Buddha addressed the monastics, declaring Uggata of Hatthigama as the foremost among all lay disciples who devotedly attend on the Sangha without discrimination.",
+    "conf": 88
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/07-Uggata-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     233,
+     288
+    ],
+    "bbox": [
+     714,
+     936,
+     1961,
+     1362
+    ],
+    "shape": "box",
+    "en": "The Eight Marvellous gel lous Qualities The Buddha stated Uggata possessed eight marvellous qualities. Later, monastic visited Uggata’s home for alms and asked him to explain them. Uggata humbly shared his extraordinary lived experiences.",
+    "conf": 34
+   }
+  ],
+  "loose": [
+   "LAN",
+   "wy,"
+  ]
+ },
+ {
+  "img": "images/07-Uggata-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     230,
+     260
+    ],
+    "bbox": [
+     714,
+     840,
+     1961,
+     1365
+    ],
+    "shape": "box",
+    "en": "1. Instant Faith: Achieving immediate sobriety and devotion at first sight of the Buddha. 2. Instant Realization: Attaining Anagami-phala after one discourse and taking lifelong vow of the five precepts, including absolute chastity.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "ory",
+   "ad,"
+  ]
+ },
+ {
+  "img": "images/07-Uggata-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ney",
+   "Reli",
+   "hing",
+   "Uggata",
+   "offered",
+   "his",
+   "four",
+   "young",
+   "wives",
+   "their",
+   "freedom",
+   "riches.",
+   "When",
+   "his",
+   "first",
+   "wife",
+   "chose",
+   "new",
+   "bridegroom,",
+   "poured",
+   "water",
+   "libation,",
+   "giving",
+   "her",
+   "away",
+   "with",
+   "completely",
+   "detache",
+   "YS)",
+   "unmoving,",
+   "mind."
+  ]
+ },
+ {
+  "img": "images/07-Uggata-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "AUS",
+   "Liberality",
+   "the",
+   "Uggata",
+   "considered",
+   "every",
+   "possession",
+   "his",
+   "wealthy",
+   "household",
+   "belonging",
+   "the",
+   "virtuous",
+   "monastics.",
+   "held",
+   "absolutely",
+   "othi",
+   "nothing",
+   "back",
+   "the",
+   "Sangha.",
+   "Sangha"
+  ]
+ },
+ {
+  "img": "images/07-Uggata-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Mutual",
+   "Reverence",
+   "attended",
+   "all",
+   "monastics",
+   "personally",
+   "and",
+   "respectfully.",
+   "monastic",
+   "taught",
+   "him,",
+   "listened",
+   "with",
+   "deep",
+   "reverence.",
+   "the",
+   "monastic",
+   "did",
+   "not",
+   "woul",
+   "teach,",
+   "teach",
+   "discourse",
+   "them.",
+   "Mut",
+   "Revere"
+  ]
+ },
+ {
+  "img": "images/07-Uggata-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     281,
+     310
+    ],
+    "bbox": [
+     665,
+     1005,
+     1977,
+     1415
+    ],
+    "shape": "box",
+    "en": "6. Flawless Equanimity Devas would secretly warn Uggata about which monastics were virtuous and which lacked morality. Uggata ignored them, making great offerings to both virtuous and vile monastics with the exact same reverence.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "{oy",
+   "Al}"
+  ]
+ },
+ {
+  "img": "images/07-Uggata-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     378,
+     310
+    ],
+    "bbox": [
+     665,
+     1005,
+     1977,
+     1415
+    ],
+    "shape": "box",
+    "en": "7. Indifference to Devas: Unmoved by divine visitations, trusting only the Dhamma. 8. Free from Fetters: Endowed with the Buddha’s guarantee that he possessed zero fetters eading to rebirth in the sensuous realm.",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "DY,",
+   "167",
+   "NOY"
+  ]
+ },
+ {
+  "img": "images/07-Uggata-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     272,
+     307
+    ],
+    "bbox": [
+     665,
+     1005,
+     1977,
+     1415
+    ],
+    "shape": "box",
+    "en": "The Path of Equanimity Uggata’s greatness lay in his absolute non-discrimination. By transcending judgment and worldly attachment, his boundless material generosity to the Sangha became perfect mirror for his profound, fetter-free spiritual liberation",
+    "conf": 43
+   }
+  ],
+  "loose": []
+ }
+]

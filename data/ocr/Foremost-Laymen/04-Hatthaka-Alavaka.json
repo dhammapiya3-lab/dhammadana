@@ -1,0 +1,334 @@
+[
+ {
+  "img": "images/04-Hatthaka-Alavaka-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     300,
+     82
+    ],
+    "bbox": [
+     476,
+     218,
+     2166,
+     532
+    ],
+    "shape": "box",
+    "en": "Hatthaka Alavaka: The Kind Prince Tale of Devotion and The Four Ways of Kindness",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "NAS"
+  ]
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "BON",
+   "During",
+   "the",
+   "era",
+   "Buddha",
+   "Padumuttara,",
+   "noble",
+   "layman",
+   "witnessed",
+   "disciple",
+   "being",
+   "praised",
+   "for",
+   "his",
+   "exceptional",
+   "kindness.",
+   "Inspired,",
+   "made",
+   "solemn",
+   "vow",
+   "one",
+   "day",
+   "achieve",
+   "that",
+   "distinction.",
+   "WAS",
+   "WAY",
+   "AAA"
+  ]
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     243,
+     92
+    ],
+    "bbox": [
+     565,
+     238,
+     1425,
+     721
+    ],
+    "shape": "box",
+    "en": "Pio 100,000 0,000 aeons later, he was reborn as Prince Alavaka. In grim turn of fate, the king decreed the infant must be offered as human sacrifice to appease the fearsome Yakkha Alavaka",
+    "conf": 62
+   }
+  ],
+  "loose": [
+   "ING"
+  ]
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Before",
+   "the",
+   "sacrifice,",
+   "Buddha",
+   "intervened.",
+   "Radiating",
+   "profound",
+   "converted",
+   "the",
+   "cruel",
+   "Yakkha.",
+   "When",
+   "the",
+   "king’s",
+   "men",
+   "arrived,",
+   "they",
+   "found",
+   "the",
+   "pure,",
+   "Stream-enterer.",
+   "the",
+   "peace,",
+   "demon",
+   "peaceful",
+   "WAZ",
+   "Se,"
+  ]
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     339,
+     170
+    ],
+    "bbox": [
+     975,
+     423,
+     1666,
+     1098
+    ],
+    "shape": "bubble",
+    "en": "The Naming of Hatthaka Ashamed, the Yakkha offered the child to the Buddha. The Buddha blessed him and returned him to the guards. Handed from person to person, he was named Hatthaka.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "£2;",
+   "ensure",
+   "the",
+   "prince’s",
+   "welfare,",
+   "the",
+   "Buddha",
+   "recited",
+   "blessings.",
+   "The",
+   "Yakkha",
+   "completed",
+   "the",
+   "verses,",
+   "officially",
+   "establishing",
+   "the",
+   "little",
+   "prince",
+   "the",
+   "Three",
+   "Refuges:",
+   "The",
+   "Buddha,",
+   "the",
+   "Dhamma,",
+   "and",
+   "the",
+   "Sangha.",
+   "the",
+   "Buddha",
+   "The",
+   "INGA"
+  ]
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     102,
+     76
+    ],
+    "bbox": [
+     222,
+     179,
+     1223,
+     628
+    ],
+    "shape": "box",
+    "en": "The city of Alavi rejoiced. The Buddha delivered the Alavaka-sutta, emancipating 84,000 beings. The citizens built beautiful shrine for the tamed Yakkha, offering him gine flowers and perfumes.",
+    "conf": 39
+   }
+  ],
+  "loose": [
+   "age"
+  ]
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     618,
+     71
+    ],
+    "bbox": [
+     1951,
+     169,
+     2443,
+     1319
+    ],
+    "shape": "box",
+    "en": "Prince Hatthaka grew into an intelligent, devoted youth He served the Sangha, mastered the Tipitaka, and became Non-returner (Anagami). He soon gathered dedicated retinue of 500 lay followers. he ll",
+    "conf": 45
+   }
+  ],
+  "loose": [
+   "STE",
+   "VAY"
+  ]
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     558,
+     53
+    ],
+    "bbox": [
+     1405,
+     139,
+     2397,
+     698
+    ],
+    "shape": "bubble",
+    "en": "gs WY, Pas EG GY NS WA Sy aa 99 iP ZA 77 NY Ooo LR LDA\")",
+    "conf": 35
+   },
+   {
+    "seed": [
+     359,
+     175
+    ],
+    "bbox": [
+     1065,
+     486,
+     1577,
+     998
+    ],
+    "shape": "bubble",
+    "en": "The Sangaha-vatthu Hatthaka fatthaka led using four principles: 1. 1, Generosity (to those in need). 2. Pleasant words (to delight the ear). Beneficial conduet (giving assistance). 4. Impartiality (treating others as equals).",
+    "conf": 35
+   }
+  ],
+  "loose": [
+   "(AS",
+   "(ZZ"
+  ]
+ },
+ {
+  "img": "images/04-Hatthaka-Alavaka-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     199,
+     339
+    ],
+    "bbox": [
+     433,
+     1038,
+     2205,
+     1422
+    ],
+    "shape": "box",
+    "en": "reset ng his mastery, the Buddha declared: “Among my lay disciples who treat their followers kindly in four ways, Hatthaka Alavaka is the foremost.” An ancient vow, perfectly fulfilled.",
+    "conf": 37
+   }
+  ],
+  "loose": [
+   "NOY,"
+  ]
+ }
+]

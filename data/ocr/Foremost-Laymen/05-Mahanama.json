@@ -1,0 +1,474 @@
+[
+ {
+  "img": "images/05-Mahanama-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Mahanama,",
+   "the",
+   "Sakyan",
+   "Prince:",
+   "The",
+   "Chronicle",
+   "Generosity",
+   "and",
+   "Law"
+  ]
+ },
+ {
+  "img": "images/05-Mahanama-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "ancient",
+   "city",
+   "Hamsavati,",
+   "young",
+   "man",
+   "listened",
+   "Buddha",
+   "witnessed",
+   "lay",
+   "disciple",
+   "praised",
+   "the",
+   "foremost",
+   "provider",
+   "exquisite",
+   "alms",
+   "and",
+   "medicines.",
+   "profound",
+   "aspiration",
+   "was",
+   "born.",
+   "(ES"
+  ]
+ },
+ {
+  "img": "images/05-Mahanama-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Following",
+   "extraordinary",
+   "proclaimed",
+   "his",
+   "one",
+   "day",
+   "achieve",
+   "that",
+   "same",
+   "foremost",
+   "title.",
+   "Buddha",
+   "Padumuttara",
+   "prophesied",
+   "that",
+   "this",
+   "vow",
+   "would",
+   "fulfilled",
+   "distant",
+   "future.",
+   "desire"
+  ]
+ },
+ {
+  "img": "images/05-Mahanama-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     135,
+     341
+    ],
+    "bbox": [
+     350,
+     1114,
+     2298,
+     1369
+    ],
+    "shape": "box",
+    "en": "Eons later, Buddha Gotama and the Sangha endured harsh Rains Retreat in Veranja, struggling for nourishment. They finally journeyed to Kapilavatthu, ettling at the Nirodharama monastery. onastery.",
+    "conf": 33
+   }
+  ],
+  "loose": [
+   "CT)"
+  ]
+ },
+ {
+  "img": "images/05-Mahanama-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     80,
+     303
+    ],
+    "bbox": [
+     132,
+     972,
+     1524,
+     1372
+    ],
+    "shape": "box",
+    "en": "Prin Mahanama, Alder elder brother of Ven. Anuruddha, learned of their hardship. He petitioned the Buddha to offer daily alms for four months to restore their strength. The Buddha remained silent, ent, signifying weeks",
+    "conf": 33
+   }
+  ],
+  "loose": [
+   "£e2"
+  ]
+ },
+ {
+  "img": "images/05-Mahanama-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WIS",
+   "His",
+   "offerings",
+   "were",
+   "day,",
+   "provided",
+   "five",
+   "kinds",
+   "delicious",
+   "foodstuffs",
+   "alongside",
+   "four",
+   "medicinal",
+   "sweets",
+   "(catu-madhu),",
+   "ensuring",
+   "both",
+   "vital",
+   "nourishment",
+   "and",
+   "healing",
+   "for",
+   "the",
+   "Sangha.",
+   "unparalleled.",
+   "Mahanama",
+   "(0)"
+  ]
+ },
+ {
+  "img": "images/05-Mahanama-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "cycle",
+   "enduring",
+   "generosity.",
+   "After",
+   "the",
+   "first",
+   "four",
+   "months,",
+   "Mahanama",
+   "requested",
+   "extension.",
+   "Then",
+   "another.",
+   "sustained",
+   "the",
+   "Sangha",
+   "with",
+   "premium",
+   "alms",
+   "for",
+   "full",
+   "twelve",
+   "months."
+  ]
+ },
+ {
+  "img": "images/05-Mahanama-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "SUN",
+   "Seeking",
+   "continue",
+   "after",
+   "one",
+   "year,",
+   "the",
+   "Buddha",
+   "refused",
+   "further",
+   "food",
+   "offerings.",
+   "Instead,",
+   "Mahanama",
+   "secured",
+   "the",
+   "rare",
+   "privilege",
+   "offer",
+   "medicinal",
+   "requisites",
+   "the",
+   "Sangha",
+   "for",
+   "life."
+  ]
+ },
+ {
+  "img": "images/05-Mahanama-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Boundless",
+   "met",
+   "flaw.",
+   "The",
+   "notorious",
+   "monastics",
+   "exploited",
+   "this",
+   "lifelong",
+   "privilege.",
+   "They",
+   "bullied",
+   "Prince",
+   "Mahanama,",
+   "causing",
+   "him",
+   "profound",
+   "distress",
+   "with",
+   "their",
+   "relentless",
+   "demands.",
+   "generosity",
+   "human"
+  ]
+ },
+ {
+  "img": "images/05-Mahanama-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Hearing",
+   "this",
+   "the",
+   "Buddha",
+   "intervened",
+   "his",
+   "devoted",
+   "supporter,",
+   "rescinded",
+   "Mahanama's",
+   "lifelong",
+   "privilege,",
+   "establishing",
+   "boundary",
+   "requests",
+   "generosity.",
+   "permanent",
+   "between",
+   "monastic",
+   "and",
+   "lay",
+   "hara",
+   "ned",
+   "dary"
+  ]
+ },
+ {
+  "img": "images/05-Mahanama-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "codified",
+   "for",
+   "(Catu-masappaccaya-",
+   "Vin",
+   "Pac",
+   "47).",
+   "monastic",
+   "may",
+   "accept",
+   "medicines",
+   "beyond",
+   "this",
+   "period",
+   "without",
+   "standing",
+   "invitation.",
+   "Breach",
+   "entails",
+   "confession",
+   "Invitation",
+   "Four"
+  ]
+ },
+ {
+  "img": "images/05-Mahanama-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "restriction",
+   "did",
+   "not",
+   "diminish",
+   "his",
+   "devotion.",
+   "exquisite",
+   "food",
+   "and",
+   "medicinal",
+   "sweets",
+   "every",
+   "monastic",
+   "his",
+   "door.",
+   "This",
+   "elaborate",
+   "hallmark",
+   "became",
+   "renowned",
+   "all",
+   "restriction",
+   "diminish",
+   "routinely",
+   "inish",
+   "on.",
+   "tin",
+   "ely",
+   "orate",
+   "ark",
+   "hout",
+   "lof",
+   "budipa."
+  ]
+ },
+ {
+  "img": "images/05-Mahanama-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "Buddha",
+   "honored",
+   "his",
+   "unwavering",
+   "among",
+   "lay",
+   "disciples",
+   "who",
+   "are",
+   "the",
+   "habit",
+   "making",
+   "offerings",
+   "delicious",
+   "alms",
+   "food",
+   "and",
+   "medicinal",
+   "requisites,",
+   "Mahanama",
+   "the",
+   "foremost.’",
+   "dedication:",
+   "WA,"
+  ]
+ },
+ {
+  "img": "images/05-Mahanama-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "aspiration",
+   "born",
+   "Hamsavati",
+   "was",
+   "fulfilled",
+   "Kapilavatthu.",
+   "Across",
+   "eons,",
+   "Mahanama",
+   "transformed",
+   "fleeting",
+   "moment",
+   "inspiration",
+   "into",
+   "eternal",
+   "legacy",
+   "generosity,",
+   "shaping",
+   "the",
+   "very",
+   "laws",
+   "the",
+   "Sangha."
+  ]
+ }
+]

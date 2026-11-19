@@ -1,0 +1,747 @@
+[
+ {
+  "img": "images/08-Surambattha-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     293,
+     52
+    ],
+    "bbox": [
+     559,
+     106,
+     2083,
+     582
+    ],
+    "shape": "bubble",
+    "en": "The Trial 2 of Wisdom: pal oS Surambattha’s ttha Unshakeable Conviction iction Ap illuminated inated chronicle icle of discernment, impermanence, and the defeat of Mara. ra.",
+    "conf": 31
+   }
+  ],
+  "loose": [
+   "NASH",
+   "Koy:",
+   "ANY,"
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "vow",
+   "born",
+   "the",
+   "ancient",
+   "city",
+   "Hamsavati.",
+   "Watching",
+   "Buddha",
+   "Padumuttara",
+   "honor",
+   "lay",
+   "disciple",
+   "for",
+   "absolute",
+   "conviction,",
+   "devout",
+   "householder",
+   "makes",
+   "monumental",
+   "fering.",
+   "vows",
+   "achieve",
+   "this",
+   "exact",
+   "distinction",
+   "future",
+   "life."
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "100,000",
+   "aeons",
+   "later",
+   "Savatthi,",
+   "the",
+   "aspirant",
+   "reborn",
+   "Though",
+   "destined",
+   "for",
+   "greatness,",
+   "lives",
+   "worldly",
+   "householder,",
+   "freely",
+   "supporting",
+   "ascetics",
+   "entirely",
+   "outside",
+   "the",
+   "Buddha’s",
+   "the"
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     69,
+     310
+    ],
+    "bbox": [
+     83,
+     956,
+     1594,
+     1392
+    ],
+    "shape": "box",
+    "en": "At dawn, Buddha Gotama surveys the world. Through his Divine Eye, he perceives Surambattha’s karmic readiness to achieve Sotapatti-magga (Stream-entry). ntry). The Buddha walks to his door.",
+    "conf": 35
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Surambattha-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     138,
+     56
+    ],
+    "bbox": [
+     99,
+     155,
+     1442,
+     651
+    ],
+    "shape": "bubble",
+    "en": "Recognizing noble presence, presence, Strambattha respectfully welcomes the Fortunate One. He bows at his feet, takes his alms bowl, and offers raised couch strictly reserved for the highly venerated.",
+    "conf": 89
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Surambattha-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     494,
+     308
+    ],
+    "bbox": [
+     1478,
+     942,
+     2559,
+     1389
+    ],
+    "shape": "box",
+    "en": "The Buddha delivers tailored discourse. The householder’s worldly perception shatters. He attains Sotapatti-phala—the Fruit of Stream-entry—permanently crossing the stream into the noble (ariya) domain.",
+    "conf": 85
+   }
+  ],
+  "loose": [
+   "ASS"
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     461,
+     142
+    ],
+    "bbox": [
+     1210,
+     390,
+     2443,
+     1154
+    ],
+    "shape": "box",
+    "en": "Mara the Evil One panics. “Surambattha belongs to my fold! Has he escaped my domain of sensuality?” To reclaim his follower, Mara formulates plan of divine deception.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Surambattha-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     466,
+     299
+    ],
+    "bbox": [
+     1326,
+     942,
+     2556,
+     1389
+    ],
+    "shape": "box",
+    "en": "Mara perfectly impersonates the Buddha. Bearing the 32 marks of great man, he stands at Sirambatthas door. Wondering why the Buddha returned, Sirambattha approaches with ees deep reverence. reverence.",
+    "conf": 32
+   }
+  ],
+  "loose": [
+   "ill",
+   "Lar"
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     132,
+     63
+    ],
+    "bbox": [
+     238,
+     132,
+     2423,
+     390
+    ],
+    "shape": "box",
+    "en": "The imposter speaks, claiming mistake: made slip in my previous discourse.” The theological stakes of the deception are instantly clear.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     117,
+     347
+    ],
+    "bbox": [
+     93,
+     1101,
+     1240,
+     1389
+    ],
+    "shape": "box",
+    "en": "TRUE DHAMMA: All five aggregates are impermanent, suffering, and insubstantial.",
+    "conf": 68
+   },
+   {
+    "seed": [
+     616,
+     353
+    ],
+    "bbox": [
+     1412,
+     1101,
+     2556,
+     1389
+    ],
+    "shape": "box",
+    "en": "MARA’ LIE: Certain aggregates are permanent, stable, and eternal.",
+    "conf": 48
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Surambattha-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     160,
+     68
+    ],
+    "bbox": [
+     228,
+     172,
+     1299,
+     307
+    ],
+    "shape": "box",
+    "en": "Buddha possesses perfect speech",
+    "conf": 75
+   },
+   {
+    "seed": [
+     125,
+     141
+    ],
+    "bbox": [
+     294,
+     423,
+     1223,
+     562
+    ],
+    "shape": "box",
+    "en": "Buddha never misspeaks",
+    "conf": 92
+   },
+   {
+    "seed": [
+     102,
+     217
+    ],
+    "bbox": [
+     169,
+     668,
+     1359,
+     807
+    ],
+    "shape": "box",
+    "en": "This speaker contradicts impermanence.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     220,
+     291
+    ],
+    "bbox": [
+     370,
+     919,
+     1144,
+     1051
+    ],
+    "shape": "box",
+    "en": "This is Mara.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     49,
+     363
+    ],
+    "bbox": [
+     96,
+     1101,
+     1448,
+     1389
+    ],
+    "shape": "box",
+    "en": "Surambattha analyzes the claim. Stream- enterer’s mind cannot be tricked by illusions; it relies on the unshakeable logic of the Dhamma.f",
+    "conf": 39
+   }
+  ],
+  "loose": [
+   "fe)"
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     169,
+     61
+    ],
+    "bbox": [
+     483,
+     162,
+     2179,
+     476
+    ],
+    "shape": "box",
+    "en": "“You are Mara, are you not?’ Sirambattha snaps his fingers in fierce rebuke. “Wicked Mara, even 1,000 of your kind cannot shake my conviction. All conditioned things are impermanent. Get out!”",
+    "conf": 76
+   }
+  ],
+  "loose": [
+   "NIN"
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     479,
+     323
+    ],
+    "bbox": [
+     1299,
+     1025,
+     2519,
+     1382
+    ],
+    "shape": "box",
+    "en": "Defeated by an ariya, Mara’s disguise shatters and he vanishes. That evening, Surambattha travels to the monastery to report this ultimate test of faith to the true Fortunate One",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Surambattha-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     230,
+     57
+    ],
+    "bbox": [
+     608,
+     165,
+     2043,
+     509
+    ],
+    "shape": "box",
+    "en": "At Jetavana, Buddha Cane formally elevates Surambattha before the assembly: ‘Monastics, among my lay disciples who have unshakeable conviction in my teaching, Sirambattha is the foremost. 97?",
+    "conf": 34
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Surambattha-14-Original.jpg",
+  "size": [
+   2151,
+   3043
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "DHAMMA",
+   "ENTARY",
+   "DHAMMAPADA",
+   "ATTHAKATHA,",
+   "REVISED",
+   "TRANSLATION",
+   "ANANDAJOTI",
+   "BHIKKHU",
+   "NTARY"
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-15-Original.jpg",
+  "size": [
+   2151,
+   3036
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "349",
+   "The",
+   "Chapter",
+   "about",
+   "the",
+   "Arahats,",
+   "Arahantavagga",
+   "7.7",
+   "The",
+   "Story",
+   "about",
+   "Tissa’s",
+   "Novice",
+   "Kosambivasitissasamaneravatthu",
+   "Dhp",
+   "CST4:",
+   "Burlingame:",
+   "The",
+   "Loss",
+   "Eye",
+   "Elder",
+   "Tissa",
+   "ordained",
+   "novice,",
+   "who",
+   "the",
+   "ordination",
+   "hall",
+   "became",
+   "Arahat;",
+   "later",
+   "they",
+   "travelled,",
+   "and",
+   "through",
+   "the",
+   "carelessness",
+   "the",
+   "bhikkhu",
+   "the",
+   "novice’s",
+   "eye",
+   "was",
+   "put",
+   "out;",
+   "the",
+   "novice,",
+   "however,",
+   "didn’t",
+   "get",
+   "angry",
+   "but",
+   "went",
+   "about",
+   "his",
+   "duties",
+   "normal;",
+   "the",
+   "Buddha",
+   "explained",
+   "with",
+   "verse.",
+   "Keywords:",
+   "Novices,",
+   "Injuries,",
+   "Forgiveness",
+   "“His",
+   "mind",
+   "calm,",
+   "his",
+   "speech",
+   "calm,”",
+   "this",
+   "Dhamma",
+   "teaching",
+   "was",
+   "given",
+   "the",
+   "Teacher",
+   "while",
+   "was",
+   "residence",
+   "Jetavana",
+   "with",
+   "reference",
+   "novice",
+   "the",
+   "Elder",
+   "Tissa.",
+   "{2.182}",
+   "seems",
+   "that",
+   "certain",
+   "youth",
+   "station,",
+   "residing",
+   "went",
+   "forth",
+   "the",
+   "dispensation",
+   "the",
+   "Teacher.",
+   "After",
+   "taking",
+   "his",
+   "higher",
+   "ordination,",
+   "was",
+   "known",
+   "Elder",
+   "Tissa.",
+   "After",
+   "had",
+   "kept",
+   "residence",
+   "during",
+   "the",
+   "season",
+   "the",
+   "rains",
+   "Kosambi,",
+   "his",
+   "supporter",
+   "brought",
+   "set",
+   "three",
+   "robes",
+   "and",
+   "offerings",
+   "ghee",
+   "and",
+   "jaggery",
+   "and",
+   "laid",
+   "them",
+   "his",
+   "feet.",
+   "The",
+   "elder",
+   "said",
+   "him:",
+   "“What",
+   "are",
+   "these,",
+   "lay",
+   "disciple?”",
+   "“Venerable",
+   "Sir,",
+   "have",
+   "you",
+   "not",
+   "kept",
+   "residence",
+   "with",
+   "during",
+   "the",
+   "season",
+   "the",
+   "rains?",
+   "Those",
+   "who",
+   "keep",
+   "residence",
+   "our",
+   "monastery",
+   "always",
+   "receive",
+   "these",
+   "offerings;",
+   "pray",
+   "accept",
+   "them,",
+   "venerable",
+   "Sir.”",
+   "“Never",
+   "mind,",
+   "lay",
+   "disciple,",
+   "have",
+   "need",
+   "them.”",
+   "“Why",
+   "that,",
+   "venerable",
+   "Sir?”",
+   "have",
+   "novice",
+   "perform",
+   "the",
+   "usual",
+   "offices",
+   "for",
+   "me,",
+   "friend.”",
+   "“Venerable",
+   "Sir,",
+   "true",
+   "that",
+   "you",
+   "have",
+   "novice",
+   "minister",
+   "your",
+   "needs,",
+   "son",
+   "will",
+   "become",
+   "your",
+   "novice.”",
+   "The",
+   "elder",
+   "graciously",
+   "accepted",
+   "the",
+   "offer.",
+   "The",
+   "lay",
+   "disciple",
+   "brought",
+   "his",
+   "own",
+   "son,",
+   "but",
+   "seven",
+   "years",
+   "old,",
+   "the",
+   "elder,",
+   "and",
+   "committed",
+   "him",
+   "into",
+   "the",
+   "elder’s",
+   "hands,",
+   "saying:",
+   "“Pray",
+   "give",
+   "him",
+   "the",
+   "going",
+   "forth,",
+   "venerable",
+   "Sir.”",
+   "The",
+   "elder",
+   "moistened",
+   "the",
+   "boy’s",
+   "hair,",
+   "taught",
+   "him",
+   "the",
+   "meditation"
+  ]
+ }
+]

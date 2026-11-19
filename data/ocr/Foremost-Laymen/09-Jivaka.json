@@ -1,0 +1,371 @@
+[
+ {
+  "img": "images/09-Jivaka-01-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ala",
+   "AV,",
+   "Jivaka",
+   "the",
+   "Physician:",
+   "Karmic",
+   "Journey",
+   "Healing",
+   "REN",
+   "NOY"
+  ]
+ },
+ {
+  "img": "images/09-Jivaka-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     70,
+     267
+    ],
+    "bbox": [
+     222,
+     863,
+     1018,
+     1246
+    ],
+    "shape": "box",
+    "en": "In ancient Harnsavati, before Buddha Padumuttara, worthy disciple makes profound vow. Witnessing another honored for personal devotion, he makes an offering and sets an aspiration to achieve that exact foremost title in future age.",
+    "conf": 75
+   }
+  ],
+  "loose": [
+   "(6)",
+   "fil",
+   "VAG"
+  ]
+ },
+ {
+  "img": "images/09-Jivaka-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     130,
+     140
+    ],
+    "bbox": [
+     274,
+     433,
+     1015,
+     846
+    ],
+    "shape": "box",
+    "en": "After 100,000 aeons traversing Deva and human realms, the karmic seed <3 ripens. 4 During Buddha Gotama’s time, he is conceived ived in Rajagaha ajagaha by Prince Abhaya and the courtesan Sdlavati.",
+    "conf": 43
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Jivaka-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Courtesan",
+   "custom",
+   "dictated",
+   "raising",
+   "only",
+   "daughters.",
+   "Salavati’s",
+   "newborn",
+   "male",
+   "child",
+   "placed",
+   "old",
+   "bamboo",
+   "tray",
+   "and",
+   "discreetly",
+   "discarded",
+   "onto",
+   "rubbish",
+   "heap",
+   "trusted",
+   "servant.",
+   "ati’s",
+   "tly",
+   "ated",
+   "ict",
+   "alav.",
+   "Fil"
+  ]
+ },
+ {
+  "img": "images/09-Jivaka-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     96,
+     77
+    ],
+    "bbox": [
+     208,
+     228,
+     1075,
+     569
+    ],
+    "shape": "box",
+    "en": "En route to see King Bimbisara, Prince Abhaya spots crows circling the rubbish heap. His attendants investigate commotion and discover the abandoned infant boy, still drawing breath.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "LF,"
+  ]
+ },
+ {
+  "img": "images/09-Jivaka-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     150,
+     375
+    ],
+    "bbox": [
+     274,
+     1230,
+     2374,
+     1405
+    ],
+    "shape": "box",
+    "en": "The attendants report, \"He is alive\" (jivati), granting the boy the name Jivaka. Because he is adopted and nurtured by the prince, he earns the surname Komarabhacca.",
+    "conf": 69
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Jivaka-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WAN",
+   "sixteen,",
+   "the",
+   "prince’s",
+   "adopted",
+   "son",
+   "travels",
+   "Takkasila.",
+   "Applying",
+   "himself",
+   "ancient",
+   "medical",
+   "sciences,",
+   "young",
+   "Jivaka",
+   "gains",
+   "complete",
+   "mastery",
+   "the",
+   "healing",
+   "arts,",
+   "eventually",
+   "returning",
+   "the",
+   "royal",
+   "physician.",
+   "yal"
+  ]
+ },
+ {
+  "img": "images/09-Jivaka-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     74,
+     310
+    ],
+    "bbox": [
+     195,
+     1015,
+     784,
+     1260
+    ],
+    "shape": "box",
+    "en": "Jivaka’s Ledger of Healing Patient: King Candapajjota Illness: Grave",
+    "conf": 91
+   },
+   {
+    "seed": [
+     320,
+     313
+    ],
+    "bbox": [
+     1041,
+     1015,
+     1610,
+     1137
+    ],
+    "shape": "box",
+    "en": "Treatment: Complete cure.",
+    "conf": 90
+   },
+   {
+    "seed": [
+     575,
+     308
+    ],
+    "bbox": [
+     1868,
+     1015,
+     2447,
+     1286
+    ],
+    "shape": "box",
+    "en": "Reward: 500 carts of rice, 16,000 silver pieces, pair of fine Kasi cloths, and 1,000 supplementary garments",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "HIS"
+  ]
+ },
+ {
+  "img": "images/09-Jivaka-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "sudden",
+   "Ledger",
+   "Treatment:",
+   "mild",
+   "laxative.",
+   "Patient:",
+   "Buddha",
+   "Gotama",
+   "inspiration",
+   "provide",
+   "the",
+   "Fortunate",
+   "One",
+   "with",
+   "all",
+   "Gijjhakita",
+   "Hill.",
+   "Constipation.",
+   "four",
+   "requisites.",
+   "ISS",
+   "Jivaka’s",
+   "Reward:"
+  ]
+ },
+ {
+  "img": "images/09-Jivaka-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "SV)",
+   "Fulfilling",
+   "his",
+   "inspiration,",
+   "the",
+   "Buddha",
+   "stay",
+   "his",
+   "Mango",
+   "Grove,",
+   "dedicating",
+   "monastery.",
+   "offers",
+   "the",
+   "priceless",
+   "Kasi",
+   "cloth",
+   "the",
+   "Buddha,",
+   "and",
+   "the",
+   "1,000",
+   "garments",
+   "the",
+   "Sangha.",
+   "invites",
+   "000",
+   "supplementary",
+   "inspiration,",
+   "KUN)"
+  ]
+ },
+ {
+  "img": "images/09-Jivaka-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     351,
+     132
+    ],
+    "bbox": [
+     1055,
+     393,
+     1590,
+     1081
+    ],
+    "shape": "box",
+    "en": "At Jetavana monastery, the karmic loop closes. The Buddha declares: “Monastics, among my lay disciples who have personal devotion, Jivaka, the adopted son of Prince Abhaya, is the foremost.”",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "WO,"
+  ]
+ }
+]

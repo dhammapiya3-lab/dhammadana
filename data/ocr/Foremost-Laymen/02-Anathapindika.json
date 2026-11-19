@@ -1,0 +1,802 @@
+[
+ {
+  "img": "images/02-Anathapindika-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     238,
+     298
+    ],
+    "bbox": [
+     744,
+     965,
+     1898,
+     1250
+    ],
+    "shape": "box",
+    "en": "The Lives of Anathapindika The Foremost Disciple of Generosity",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Sie",
+   "whe"
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Hamsavati,",
+   "wealthy",
+   "layman",
+   "made",
+   "extraordinary",
+   "offering",
+   "Buddha",
+   "Padumuttara.",
+   "Witnessing",
+   "another",
+   "disciple",
+   "praised",
+   "for",
+   "generosity,",
+   "formed",
+   "powerful",
+   "aspiration",
+   "earn",
+   "that",
+   "same",
+   "foremost",
+   "title.",
+   "His",
+   "profound",
+   "aspiration",
+   "was",
+   "confirmed."
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "After",
+   "100,000",
+   "aeons,",
+   "was",
+   "reborn",
+   "Sudattha.",
+   "Through",
+   "his",
+   "boundless",
+   "compassion",
+   "for",
+   "the",
+   "destitute,",
+   "earned",
+   "the",
+   "legendary",
+   "title",
+   "“one",
+   "who",
+   "gives",
+   "food",
+   "the",
+   "destitute",
+   "INS"
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Visiting",
+   "Rajagaha,",
+   "Anathapindika",
+   "learned",
+   "the",
+   "Buddha",
+   "had",
+   "appeared.",
+   "Overwhelmed",
+   "with",
+   "zeal,",
+   "left",
+   "dawn,",
+   "guided",
+   "Devas.",
+   "Meeting",
+   "the",
+   "Buddha,",
+   "heard",
+   "the",
+   "Dhamma",
+   "and",
+   "attained",
+   "Stream-entry."
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     56,
+     317
+    ],
+    "bbox": [
+     109,
+     1038,
+     1273,
+     1372
+    ],
+    "shape": "box",
+    "en": "Returning to Savatthi, he financed 45-league transit infrastructure for the Buddha's journey. He funded 45 temporary monasteries—one every league—costing 4,500,000 pieces of money, ensuring Sate passage for the Sangha.",
+    "conf": 63
+   }
+  ],
+  "loose": [
+   "HE,"
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "build",
+   "grand",
+   "sanctuary",
+   "Savatthi,",
+   "bought",
+   "Prince",
+   "Jeta’s",
+   "pleasure",
+   "park.",
+   "The",
+   "extraordinary",
+   "price?",
+   "Covering",
+   "the",
+   "entire",
+   "ground",
+   "with",
+   "180",
+   "million",
+   "gold",
+   "coins,",
+   "their",
+   "rims",
+   "touching",
+   "KOKO}",
+   "build"
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     220,
+     39
+    ],
+    "bbox": [
+     503,
+     119,
+     2139,
+     483
+    ],
+    "shape": "box",
+    "en": "The Jetavana project was monumental: Land Purchase: 180 Million Golden Monastery: 180 Million Dedication Feast: 180 Million ate Totaling 540 million, it became the ultimate refuge for the Sangha.",
+    "conf": 41
+   },
+   {
+    "seed": [
+     97,
+     384
+    ],
+    "bbox": [
+     261,
+     1266,
+     737,
+     1359
+    ],
+    "shape": "box",
+    "en": "Land Purchase",
+    "conf": 97
+   },
+   {
+    "seed": [
+     335,
+     384
+    ],
+    "bbox": [
+     1084,
+     1266,
+     1557,
+     1359
+    ],
+    "shape": "box",
+    "en": "Gol Monastery",
+    "conf": 83
+   },
+   {
+    "seed": [
+     646,
+     388
+    ],
+    "bbox": [
+     1904,
+     1266,
+     2380,
+     1359
+    ],
+    "shape": "box",
+    "en": "cation Fea",
+    "conf": 97
+   }
+  ],
+  "loose": [
+   "ING"
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     231,
+     40
+    ],
+    "bbox": [
+     605,
+     119,
+     2037,
+     552
+    ],
+    "shape": "box",
+    "en": "His daily giving was highly systemic, supporting specific groups of 500 monastics Ticket-system alms Lunar phase offerings Provisions for new, traveling, or sick monastics His house always held 500 seats ready",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "all",
+   "Or)"
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     416,
+     117
+    ],
+    "bbox": [
+     1313,
+     367,
+     1782,
+     1078
+    ],
+    "shape": "box",
+    "en": "Recognizing his unmatched matched merit, the Buddha declared Etad-aggam bikkkhave mama savakanarn updsakanam kanam dayakanam yad-idath idarn Sudatto gahapati Anathapindiko Among my lay disciples who delight in giving, Sudattha is the foremost",
+    "conf": 61
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Anathapindika-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     425,
+     70
+    ],
+    "bbox": [
+     1329,
+     218,
+     2423,
+     668
+    ],
+    "shape": "box",
+    "en": "Gravely ill in Savatthi, Anathapindika the householder was in agonizing pain. He called his attendant, saying: “Go to the Fortunate One and Ven. Sariputta. Bow at their feet in my name, and beg Ven. Sariputta to visit me out of compassion.”",
+    "conf": 40
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Anathapindika-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     91,
+     99
+    ],
+    "bbox": [
+     251,
+     255,
+     1127,
+     1227
+    ],
+    "shape": "box",
+    "en": "The attendant delivered the message. Near sunset, Ven. Sariputta silently accepted the request. Wearing his double robe and carrying his alms bowl, he walked to the householder’s home, accompanied by Ven. Ananda as his attendant.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Anathapindika-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     130,
+     329
+    ],
+    "bbox": [
+     255,
+     1045,
+     2387,
+     1399
+    ],
+    "shape": "box",
+    "en": "Taking his seat, Ven. Sariputta asked about the pain. Anathapindika replied his agony was only increasing. Knowing the illness was terminal and uncontrollable, Ven. Sariputta decided to deliver profound discourse of ultimate benefit.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "WW."
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Householder,",
+   "you",
+   "should",
+   "practise",
+   "thus:",
+   "ave",
+   "for",
+   "the",
+   "ear,",
+   "nose,",
+   "tongue,",
+   "body,",
+   "mind.",
+   "will",
+   "have",
+   "subtle",
+   "fondness",
+   "for",
+   "them,",
+   "nor",
+   "for",
+   "the",
+   "consciousness",
+   "and",
+   "contacts",
+   "dependent",
+   "upon",
+   "them.”",
+   "have",
+   "attachment"
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     577,
+     49
+    ],
+    "bbox": [
+     1904,
+     109,
+     2539,
+     1065
+    ],
+    "shape": "bubble",
+    "en": "Practise thus: will have no attachment for the elements of solidity, cohesion, heat, motion, space, or consciousness. will not cling to corporeality, sensation, sensation, perception, or volitions.”",
+    "conf": 53
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Anathapindika-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     86,
+     158
+    ],
+    "bbox": [
+     102,
+     463,
+     794,
+     1283
+    ],
+    "shape": "bubble",
+    "en": "Practise thus: Twill will have no attachment for the jhanas of infinite space, consciousness, or nothingness. will have no subtle fondness for this present world, nor for the hereafter.’",
+    "conf": 78
+   }
+  ],
+  "loose": [
+   "VAN",
+   "ASS"
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     43,
+     170
+    ],
+    "bbox": [
+     102,
+     529,
+     916,
+     1346
+    ],
+    "shape": "bubble",
+    "en": "Hearing this, Andthapindika Anathapindika wept bitterly. Ven. Ananda asked, “Are you attached to possessions or wavering in faith?” “No,” he replied, have served the Buddha long, but have never heard such profound Dhamma.”",
+    "conf": 72
+   }
+  ],
+  "loose": [
+   "ENG"
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ven.",
+   "Sariputta",
+   "noted",
+   "such",
+   "teachings",
+   "were",
+   "usually",
+   "for",
+   "monastics.",
+   "Anathapindika",
+   "pleaded:",
+   "“Let",
+   "this",
+   "Dhamma",
+   "given",
+   "the",
+   "laity!",
+   "There",
+   "are",
+   "many",
+   "with",
+   "unclouded",
+   "minds",
+   "who",
+   "will",
+   "fully",
+   "understand",
+   "and",
+   "become",
+   "Arahats",
+   "only",
+   "hear",
+   "it.”",
+   "NOY.",
+   "NES",
+   "they"
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     115,
+     301
+    ],
+    "bbox": [
+     274,
+     995,
+     2367,
+     1260
+    ],
+    "shape": "box",
+    "en": "Shortly after the venerable monks departed, Anathapindika passed away. Through his vast merit and pure mind, he was immediately reborn in the glorious Tusita Realm as radiant Deva.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Anathapindika-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     147,
+     369
+    ],
+    "bbox": [
+     423,
+     1154,
+     2218,
+     1455
+    ],
+    "shape": "box",
+    "en": "In the middle watch of the night, Deva Anathapindika descended from Tusita. He approached the Buddha at the Jetavana monastery, illuminating the grounds with his divine light, and bowed with deep reverence to speak four verses.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "ada",
+   "ect"
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Venerable",
+   "sir,",
+   "this",
+   "Jetavana",
+   "monastery,",
+   "inhabited",
+   "the",
+   "Sangha",
+   "and",
+   "the",
+   "Fortunate",
+   "One,",
+   "eternal",
+   "delight.",
+   "the",
+   "sanctuary",
+   "Arahats",
+   "and",
+   "those",
+   "training",
+   "for",
+   "Awakening.",
+   "LY)",
+   "this",
+   "monastery,"
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     140,
+     359
+    ],
+    "bbox": [
+     423,
+     1154,
+     2218,
+     1455
+    ],
+    "shape": "box",
+    "en": "It is through right action, profound knowledge, the Dhamma, and virtuous living based on morality that beings are truly purified. They are never purified merely by lineage or wealth.",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "€@3"
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "\"The",
+   "wise",
+   "discernin",
+   "their",
+   "Nibbana,",
+   "should",
+   "contemplate",
+   "the",
+   "impermanence,",
+   "suffering,",
+   "and",
+   "unsubstantiality",
+   "the",
+   "five",
+   "aggregates.",
+   "Through",
+   "this",
+   "realization",
+   "the",
+   "four",
+   "noble",
+   "truths,",
+   "one",
+   "person,",
+   "own",
+   "welfare",
+   "towards"
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     255,
+     105
+    ],
+    "bbox": [
+     674,
+     268,
+     1494,
+     1217
+    ],
+    "shape": "box",
+    "en": "“Any monastic who reaches the further shore of Nibbana 1s equal to Ven. Sariputta. Yet through his supreme wisdom, morality, and perfect calm, he remains the noblest among them.”",
+    "conf": 68
+   }
+  ],
+  "loose": [
+   "(KS",
+   "Cys",
+   "LYS",
+   "WAR",
+   "Cys",
+   "Cys",
+   "Cys"
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     127,
+     364
+    ],
+    "bbox": [
+     314,
+     1147,
+     2328,
+     1389
+    ],
+    "shape": "box",
+    "en": "The Buddha listened silently, approving. The Deva vanished joyfully. Next morning, the Buddha repeated these verses to the monastics. Instantly, Ven. Ananda knew: “That Deva was surely Anathapindika!” The Buddha smiled, affirming his intuition.",
+    "conf": 85
+   }
+  ],
+  "loose": [
+   "VON"
+  ]
+ }
+]

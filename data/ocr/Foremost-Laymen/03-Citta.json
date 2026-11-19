@@ -1,0 +1,1044 @@
+[
+ {
+  "img": "images/03-Citta-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     266,
+     150
+    ],
+    "bbox": [
+     622,
+     350,
+     2023,
+     1121
+    ],
+    "shape": "bubble",
+    "en": "~The Lives ves of Citta the Ffousebolder Tale oO of Virtue and Aspiration oF oO eo)",
+    "conf": 31
+   }
+  ],
+  "loose": [
+   "Val"
+  ]
+ },
+ {
+  "img": "images/03-Citta-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "OVA",
+   "Hamsavati,",
+   "during",
+   "Buddha",
+   "Padumuttara’s",
+   "time,",
+   "worthy",
+   "man",
+   "heard",
+   "the",
+   "Buddha",
+   "name",
+   "disciple",
+   "foremost",
+   "expounding",
+   "the",
+   "doctrine.",
+   "king",
+   "extraordinary",
+   "offering,",
+   "aspired",
+   "earn",
+   "this",
+   "very",
+   "distinction",
+   "future",
+   "life.",
+   "His",
+   "wish",
+   "was",
+   "confirmed.",
+   "Making"
+  ]
+ },
+ {
+  "img": "images/03-Citta-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     276,
+     292
+    ],
+    "bbox": [
+     840,
+     952,
+     1802,
+     1349
+    ],
+    "shape": "box",
+    "en": "Reborn as 3 hunter’s 3 son during Buddha 3 3 Kassapa’s era, he hunted in the forest. One rainy day, he spotted monastic wearing dirt-rags meditating in cavern. Filled with reverence, he rushed home to cook pots of rice and meat.",
+    "conf": 47
+   }
+  ],
+  "loose": [
+   "YER",
+   "ip:",
+   "ays"
+  ]
+ },
+ {
+  "img": "images/03-Citta-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     306,
+     293
+    ],
+    "bbox": [
+     840,
+     952,
+     1802,
+     1349
+    ],
+    "shape": "box",
+    "en": "Two monastics arrived at his house for alms. He welcomed them, took their bowls, and seated them respectfully. Leaving his family to offer them the cooked food, he hurried back to the forest to serve the meditating monastic.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "als"
+  ]
+ },
+ {
+  "img": "images/03-Citta-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     63,
+     60
+    ],
+    "bbox": [
+     159,
+     172,
+     1319,
+     605
+    ],
+    "shape": "box",
+    "en": "Carrying rice and meat covered with banana leaves, he gathered wild flowers along the way Reaching the natural cavern, he reverentially offered the filled alms bowl and the wrapped flowers to the meditating monastic",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "OS)"
+  ]
+ },
+ {
+  "img": "images/03-Citta-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     257,
+     309
+    ],
+    "bbox": [
+     754,
+     1015,
+     1888,
+     1349
+    ],
+    "shape": "box",
+    "en": "Sitting 2 beside the monastic, he made Ss wish: 2 “Just as this 2 delicious aS food is} 3 and 3 flowers bring 2 me joy, may be blessed with gifts in future existences through Samsara. ara. May flowers of five hues shower down upon me!”",
+    "conf": 45
+   }
+  ],
+  "loose": [
+   "als",
+   "An,"
+  ]
+ },
+ {
+  "img": "images/03-Citta-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     322,
+     309
+    ],
+    "bbox": [
+     754,
+     1015,
+     1888,
+     1349
+    ],
+    "shape": "box",
+    "en": "Seeing the hunter would attain path and fruit, the monastic taught him to contemplate the 32 parts of the body. Living life of good deeds, he was reborn as Deva, blessed by knee-deep showers of flowers",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-Citta-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "During",
+   "Buddha",
+   "Gotama’s",
+   "time,",
+   "was",
+   "reborn",
+   "Macchikasanda.",
+   "birth,",
+   "wondrous",
+   "five-hued",
+   "rained",
+   "knee-deep",
+   "across",
+   "the",
+   "town.",
+   "Delighting",
+   "everyone,",
+   "his",
+   "parents",
+   "named",
+   "him",
+   "Citta.",
+   "Coming",
+   "age,",
+   "succeeded",
+   "his",
+   "father",
+   "wealthy",
+   "merchant.",
+   "acchikasanda."
+  ]
+ },
+ {
+  "img": "images/03-Citta-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     573,
+     68
+    ],
+    "bbox": [
+     1842,
+     192,
+     2470,
+     1293
+    ],
+    "shape": "box",
+    "en": "Ven. Mahanama, one of the Group-of-Five ascetics, visited Macchikasanda. Captivated by his serenity, Citta invited him home for alms. Afterward, Citta built the Ambataka monastery in his orchard, requesting Ven. Mahanama to reside there and accept ae alms.",
+    "conf": 48
+   }
+  ],
+  "loose": [
+   "ING"
+  ]
+ },
+ {
+  "img": "images/03-Citta-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     488,
+     66
+    ],
+    "bbox": [
+     1389,
+     96,
+     1627,
+     264
+    ],
+    "shape": "bubble",
+    "en": "Wis oS oc",
+    "conf": 50
+   },
+   {
+    "seed": [
+     551,
+     41
+    ],
+    "bbox": [
+     1782,
+     122,
+     2536,
+     579
+    ],
+    "shape": "box",
+    "en": "Seeing Citta’s potential as person of middling intelligence, Ven. Mahanama taught him extensively about the six internal and external sense spheres. This suited Citta, who had cultivated insight into impermanence across his past lives.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "Gyr",
+   "form"
+  ]
+ },
+ {
+  "img": "images/03-Citta-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     518,
+     300
+    ],
+    "bbox": [
+     542,
+     906,
+     2490,
+     1392
+    ],
+    "shape": "bubble",
+    "en": "We Me Through insight-meditation on the sense spheres, Citta realized My the impermanence and unsubstantiality of mind and matter. His diligent efforts led him to attain the advanced spiritual stage of acd RZ Non-returner (Anagami). Vee",
+    "conf": 31
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-Citta-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WAS",
+   "Attaining",
+   "the",
+   "state",
+   "Non-returner,",
+   "Citta",
+   "resolved",
+   "meet",
+   "the",
+   "Buddha.",
+   "gathered",
+   "500",
+   "carts",
+   "provisions",
+   "and",
+   "invited",
+   "the",
+   "people",
+   "Macchikasanda",
+   "join",
+   "his",
+   "pilgrimage",
+   "Savatthi"
+  ]
+ },
+ {
+  "img": "images/03-Citta-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "grand",
+   "assembly",
+   "3,000",
+   "ilgrims",
+   "formed,",
+   "including",
+   "500",
+   "monks,",
+   "500",
+   "nuns,",
+   "and",
+   "1,000",
+   "lay",
+   "disciples.",
+   "Citta",
+   "ensured",
+   "every",
+   "pilgrim’s",
+   "needs",
+   "were",
+   "met",
+   "for",
+   "the",
+   "30-league",
+   "journey",
+   "pilg",
+   "3,000"
+  ]
+ },
+ {
+  "img": "images/03-Citta-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "During",
+   "the",
+   "month-long",
+   "journey,",
+   "Devas",
+   "welcomed",
+   "them",
+   "every",
+   "league",
+   "with",
+   "celestial",
+   "food",
+   "and",
+   "shelter.",
+   "Consequently,",
+   "Citta’s",
+   "original",
+   "500",
+   "cartloads",
+   "provisions",
+   "remained",
+   "entirely",
+   "untouched."
+  ]
+ },
+ {
+  "img": "images/03-Citta-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Savatthi,",
+   "the",
+   "Buddha",
+   "told",
+   "Ven.",
+   "Ananda",
+   "Citta’s",
+   "arrival.",
+   "foretold",
+   "great",
+   "miracle:",
+   "five-hued",
+   "floral",
+   "rain",
+   "would",
+   "fall",
+   "knee-deep",
+   "over",
+   "fourteen",
+   "acres",
+   "honor",
+   "the",
+   "noble",
+   "disciple."
+  ]
+ },
+ {
+  "img": "images/03-Citta-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Approaching",
+   "Jetavana,",
+   "1,000",
+   "monastics",
+   "led",
+   "the",
+   "way.",
+   "Citta",
+   "entered",
+   "with",
+   "500",
+   "laymen",
+   "The",
+   "gathered",
+   "citizens",
+   "murmured",
+   "awe",
+   "That",
+   "Citta",
+   "the",
+   "householder!”",
+   "became",
+   "thrilling",
+   "sight",
+   "the",
+   "crowd",
+   "“That",
+   "Nit",
+   "proaching",
+   "Jetavana,",
+   "monastics",
+   "way.",
+   "the",
+   "AWS"
+  ]
+ },
+ {
+  "img": "images/03-Citta-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ONG",
+   "LAVA",
+   "nveloped",
+   "six",
+   "Citta",
+   "stroked",
+   "the",
+   "Buddha’s",
+   "ankles",
+   "with",
+   "deep",
+   "reveren",
+   "Instantly,",
+   "the",
+   "promised",
+   "floral",
+   "rained",
+   "down",
+   "upon",
+   "the",
+   "vast",
+   "gathe",
+   "diances,",
+   "Buddha’s",
+   "six",
+   "Buddha-",
+   "kles",
+   "deep",
+   "-colored",
+   "tribute"
+  ]
+ },
+ {
+  "img": "images/03-Citta-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "For",
+   "month,",
+   "Citta",
+   "attended",
+   "closely",
+   "the",
+   "Yet",
+   "again,",
+   "Devas",
+   "and",
+   "humans",
+   "provided",
+   "endless",
+   "gifts",
+   "sustain",
+   "the",
+   "pilgrims.",
+   "His",
+   "original",
+   "500",
+   "cartloads",
+   "provisions",
+   "remained",
+   "completely",
+   "unused."
+  ]
+ },
+ {
+  "img": "images/03-Citta-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "his",
+   "own",
+   "supplies,",
+   "Citta",
+   "offered",
+   "his",
+   "500",
+   "cartloads",
+   "entirely",
+   "the",
+   "Sang.",
+   "his",
+   "vast",
+   "material",
+   "wealth",
+   "behind,",
+   "thej",
+   "home",
+   "with",
+   "carts.",
+   "Leaving",
+   "journey",
+   "own"
+  ]
+ },
+ {
+  "img": "images/03-Citta-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     648,
+     177
+    ],
+    "bbox": [
+     1203,
+     281,
+     2513,
+     1349
+    ],
+    "shape": "bubble",
+    "en": "wd CZ “hy OY 7. SOEs 0 It Seeing the empty carts, Devas mildly rebuked him in jest, then miraculously filled all 500 carts with the seven kinds of treasures. Citta returned home in immense comfort.",
+    "conf": 41
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-Citta-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ven.",
+   "such",
+   "immense",
+   "honor",
+   "would",
+   "follow",
+   "Citta",
+   "elsewhere.",
+   "The",
+   "confirmed",
+   "would,",
+   "revealing",
+   "the",
+   "invisible",
+   "root",
+   "this",
+   "profound",
+   "whel",
+   "Buddha",
+   "root"
+  ]
+ },
+ {
+  "img": "images/03-Citta-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     480,
+     163
+    ],
+    "bbox": [
+     1537,
+     473,
+     2400,
+     1012
+    ],
+    "shape": "box",
+    "en": "“As an Anagami and foremost lay expounder of the Dhamma, Citta the householder lay terminally ill. Giant Devas—guardians of the forest, trees, and herbs—gathered closely beside his bed.”",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-Citta-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     52,
+     309
+    ],
+    "bbox": [
+     145,
+     883,
+     1220,
+     1339
+    ],
+    "shape": "bubble",
+    "en": "The Devas urged him: “Make wish to be reborn as Universal Monarch.” Citta firmly replied: “Being Universal Monarch is impermanent permanent and unstable. It is something one must ultimately leave behind.”",
+    "conf": 87
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-Citta-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     74,
+     309
+    ],
+    "bbox": [
+     145,
+     906,
+     1180,
+     1339
+    ],
+    "shape": "bubble",
+    "en": "Unable to see the Devas, his family heard only his side of the conversation. Fearing he had slipped into delirium, they pleaded: leaded: “Lord, be careful; do not talk absent-mindedly.”",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-Citta-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     470,
+     309
+    ],
+    "bbox": [
+     1359,
+     922,
+     2496,
+     1339
+    ],
+    "shape": "bubble",
+    "en": "Citta tta asked what words had alarmed them. When they repeated his Is rejection ion of the Universal iversal Monarch, he clarified: ified “Il am not absent-minded. was responding to the forest Devas urging ing me to wish for that worldly rebirth.” irth.”",
+    "conf": 50
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-Citta-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "CON",
+   "His",
+   "relatives",
+   "asked",
+   "why",
+   "the",
+   "Devas",
+   "made",
+   "request.",
+   "Citta",
+   "explained:",
+   "“They",
+   "see",
+   "pure",
+   "morality.",
+   "For",
+   "the",
+   "righteous,",
+   "wishes",
+   "are",
+   "easily",
+   "fulfilled.",
+   "But",
+   "know",
+   "even",
+   "ultimate",
+   "worldly",
+   "power",
+   "impermanent.”",
+   "hes",
+   "ima",
+   "itta",
+   "Ifilled",
+   "ity.",
+   "quest.",
+   "plained:"
+  ]
+ },
+ {
+  "img": "images/03-Citta-27-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Understanding",
+   "his",
+   "total",
+   "clarity",
+   "mind,",
+   "his",
+   "requested",
+   "final",
+   "admonition.",
+   "With",
+   "his",
+   "last",
+   "breaths,",
+   "Citta",
+   "delivered",
+   "his",
+   "closin",
+   "discourse,",
+   "urging",
+   "them",
+   "establish",
+   "perfect,",
+   "confidence",
+   "the",
+   "Triple",
+   "Gem.",
+   "family",
+   "rstand",
+   "ing",
+   "dence",
+   "itt"
+  ]
+ },
+ {
+  "img": "images/03-Citta-28-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Have",
+   "perfect",
+   "confidence",
+   "the",
+   "Buddha.",
+   "endowed",
+   "with",
+   "supreme",
+   "wisdom",
+   "and",
+   "pure",
+   "conduct,",
+   "the",
+   "incomparable",
+   "teacher",
+   "Devas",
+   "and",
+   "humans.",
+   "perfectly",
+   "knows",
+   "the",
+   "three",
+   "worlds",
+   "and",
+   "reveals",
+   "the",
+   "Four",
+   "Noble",
+   "Truths.”"
+  ]
+ },
+ {
+  "img": "images/03-Citta-29-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Have",
+   "perfect",
+   "the",
+   "Dhamma.",
+   "The",
+   "are",
+   "and",
+   "evident.",
+   "They",
+   "yield",
+   "immediate",
+   "results,",
+   "invite",
+   "thorough",
+   "investigation,",
+   "and",
+   "can",
+   "realized",
+   "noble",
+   "ones",
+   "their",
+   "own",
+   "diligent",
+   "effort.”",
+   "confi",
+   "teachings",
+   "well-expounded"
+  ]
+ },
+ {
+  "img": "images/03-Citta-30-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "perfect",
+   "confidence",
+   "the",
+   "Sangha.",
+   "The",
+   "eight",
+   "categories",
+   "disciples",
+   "possess",
+   "straightforward",
+   "uprightness",
+   "and",
+   "right",
+   "conduct.",
+   "They",
+   "are",
+   "worthy",
+   "ably",
+   "fertile",
+   "field",
+   "all",
+   "sow",
+   "the",
+   "seed",
+   "merit.”",
+   "(Sy",
+   "incomparably",
+   "the",
+   "nse"
+  ]
+ },
+ {
+  "img": "images/03-Citta-31-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     504,
+     109
+    ],
+    "bbox": [
+     668,
+     288,
+     2056,
+     1253
+    ],
+    "shape": "bubble",
+    "en": "SS wy 0 ef Vir OS WN eo always “Finally, practice with share this everything resolve: We shall have with recipients generously who possess pure morality.” Having firmly established his family in faith and generosity, Citta peacefully expired. ‘gyi La Ve",
+    "conf": 43
+   }
+  ],
+  "loose": []
+ }
+]
