@@ -1,0 +1,278 @@
+[
+ {
+  "img": "images/35-Preceptors-Duties-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     368,
+     606,
+     440
+    ],
+    "ko": "은사의 살아 있는 부조\n출가 스승과 제자의 거룩한 유대를 되살리다",
+    "cover": [
+     197,
+     151,
+     107
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/35-Preceptors-Duties-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     316,
+     70,
+     480,
+     362
+    ],
+    "ko": "그때 은사들은 함께\n사는 제자들에게\n바르게 행하지\n않았습니다.\n\n젊은 비구들은 발우도\n가사도 가르침도 없이\n버려졌습니다.\n“어찌 은사들이\n제자들에게 바르게\n행하지 않는가?”\n마음챙기는 이들이\n불평했습니다.",
+    "cover": [
+     229,
+     197,
+     150
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/35-Preceptors-Duties-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     352,
+     742,
+     436
+    ],
+    "ko": "세존께서 소홀한 장로들을 꾸짖으시고 법을 설하셨습니다. “은사의 의무를\n정하겠다.” 하고 선언하셨습니다. “함께 사는 제자를 독송과 질문과\n훈계와 가르침으로 받쳐 주고 도와야 한다.”",
+    "cover": [
+     200,
+     162,
+     122
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/35-Preceptors-Duties-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     52,
+     746,
+     150
+    ],
+    "ko": "받쳐 줌의 토대\n제자에게 발우나 가사나 필수품이 없으면 은사가 마련해 주거나 힘써야 합니다.\n“어떻게 하면 내 제자에게 이것이 생길까?”",
+    "cover": [
+     212,
+     178,
+     135
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/35-Preceptors-Duties-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     152,
+     370,
+     304
+    ],
+    "ko": "아침의 의무와 겸손\n제자가 병들면 은사가 일찍\n일어나 치목과 물을 올립니다.\n그릇을 긁지 않고 잘 씻고,\n쌀죽을 올리고, 거처가\n더러우면 쓸어 줍니다.",
+    "cover": [
+     214,
+     177,
+     136
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/35-Preceptors-Duties-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     262,
+     374,
+     402
+    ],
+    "ko": "탁발에서 돌아올 때\n은사는 자리와 물을 마련하고\n발우를 받아 듭니다.\n가사를 갤 때는 가운데가 접히지\n않도록 귀퉁이를 네 치 들어 올리고,\n허리띠는 접힌 사이에 넣습니다.",
+    "cover": [
+     196,
+     163,
+     127
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/35-Preceptors-Duties-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     46,
+     734,
+     146
+    ],
+    "ko": "목욕과 한증실\n목욕 가루를 반죽하고 진흙을 적십니다. 한증실 안과 물속에서 은사는\n제자를 문질러 주고, 몸의 물기를 닦아 주고 새 옷을 내줍니다.",
+    "cover": [
+     206,
+     184,
+     156
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/35-Preceptors-Duties-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     418,
+     262,
+     746,
+     402
+    ],
+    "ko": "거처를 돌봄\n제자의 거처가 더러우면 은사가\n치워 주어야 합니다.\n치울 때는 먼저 발우와 가사를 내어\n안전하게 두어야 합니다. 헹굼\n그릇에는 물을 채워 두어야 합니다.",
+    "cover": [
+     209,
+     177,
+     140
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/35-Preceptors-Duties-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     322,
+     746,
+     404
+    ],
+    "ko": "마음을 낫게 함\n영적인 병이 생기면 처방은 하나입니다.\n불만: 은사는 그를 떼어 놓아야 합니다.  후회: 은사는 그것을 풀어야 합니다.\n그릇된 견해: 은사는 그를 말려야 합니다. 어떤 경우든 법을 설해 주어야 합니다.",
+    "cover": [
+     208,
+     175,
+     137
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/35-Preceptors-Duties-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     52,
+     450,
+     146
+    ],
+    "ko": "은사의 방패\n제자가 범계하면 은사가 그의 편이 되어 줍니다.\n승가가 별주·마나타·출죄를 주도록 힘쓰고,\n제자에 대한 갈마가 가벼워지거나\n거두어지도록 합니다.",
+    "cover": [
+     201,
+     169,
+     136
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/35-Preceptors-Duties-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     546,
+     46,
+     746,
+     294
+    ],
+    "ko": "가사 짓는 솜씨\n은사는 가사를\n짓고 물들이는 법을\n가르쳐야 합니다.\n천을 잘 물들이고\n거듭 뒤집어야\n합니다. 물감이\n떨어지는 동안\n통 곁을 떠나지\n않습니다.",
+    "cover": [
+     216,
+     192,
+     163
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/35-Preceptors-Duties-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     350,
+     746,
+     442
+    ],
+    "ko": "평생의 유대\n“함께 사는 제자가 병들면 목숨이 다할 때까지 돌보아야 하고,\n그가 낫기를 기다려야 한다.”",
+    "cover": [
+     207,
+     175,
+     146
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
