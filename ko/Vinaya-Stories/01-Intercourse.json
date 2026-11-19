@@ -1,0 +1,857 @@
+[
+ {
+  "img": "images/01-Intercourse-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     364,
+     628,
+     404
+    ],
+    "ko": "수딘나가 겪은 시련의 시작",
+    "cover": [
+     196,
+     166,
+     132
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     176,
+     404,
+     628,
+     430
+    ],
+    "ko": "고행과 가족의 의무, 청정범행의 시련을 그린 이야기",
+    "cover": [
+     197,
+     166,
+     131
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     256,
+     268,
+     546,
+     434
+    ],
+    "ko": "웨살리에서 수딘나는 세존께서 법을\n설하시는 것을 들었습니다. 깊은 깨달음이\n일었습니다. 소라 껍데기처럼 희고 깨끗한\n청정범행은 집에 사는 사람으로서는\n할 수 없다는 것이었습니다. 그는 머리를\n깎고 출가하기로 마음먹었습니다.",
+    "cover": [
+     193,
+     164,
+     131
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     46,
+     390,
+     154
+    ],
+    "ko": "“여기서 죽든지, 출가하든지 하겠습니다.”\n수딘나는 맨땅에 누워 아무것도 먹지 않고\n이레를 꼬박 굶었습니다. 부모와 친구들은\n일어나서 감각적 즐거움을 누리며\n공덕을 지으라고 간청했습니다.",
+    "cover": [
+     223,
+     203,
+     175
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     188,
+     326,
+     616,
+     446
+    ],
+    "ko": "친구들이 이치를 따져 거들었습니다. “허락하지 않으면\n수딘나는 여기서 죽을 것입니다. 허락하면 적어도 살아\n있는 모습은 볼 수 있습니다. 고행을 못 견디면 돌아올 것입니다.”\n떠나보낼지 죽게 할지 사이에서 부모는 마침내 허락했습니다.",
+    "cover": [
+     208,
+     182,
+     150
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     582,
+     52,
+     770,
+     404
+    ],
+    "ko": "기쁨에 찬 수딘나는\n구족계를 받았습니다.\n그는 가장 엄격한\n두타행을 닦았습니다.\n\n• 깊은 숲에 머묾\n• 탁발 음식만 먹음\n• 버려진 천으로 지은\n   분소의를 입음\n• 차례대로 집집마다\n   탁발함\n\n왓지의 한 마을에만\n기대어 홀로 굳세게\n살았습니다.",
+    "cover": [
+     212,
+     187,
+     157
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     26,
+     564,
+     166
+    ],
+    "ko": "왓지에 재앙이 닥쳤습니다. 기근으로\n흰 뼈가 땅에 널렸고 배급표로\n겨우 살아갔습니다. 숲속 비구는 이삭을\n주워 연명할 수도 없게 되자, 수딘나\n장로는 외딴 수행을 다시 생각했습니다.",
+    "cover": [
+     211,
+     191,
+     162
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     276,
+     334,
+     434
+    ],
+    "ko": "수딘나에게는 웨살리에 큰 부자\n친척들이 있었습니다. 그는 생각했습니다.\n“그들 가까이 머물면 그들은 보시하여\n공덕을 짓고, 비구들은 공양을 얻고,\n나도 굶지 않겠지.” 발우와 가사를\n들고 그는 중각강당으로 갔습니다.",
+    "cover": [
+     209,
+     185,
+     157
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     544,
+     52,
+     772,
+     386
+    ],
+    "ko": "아버지 집에서 탁발할 때\n한 하녀가 지난밤 남은\n쉰 밀가루 음식을 버리려던\n참이었습니다. 그것을\n수딘나의 발우에 부어 주다가\n하녀는 그의 손과 발과\n목소리를 알아보고\n어머니에게 달려가\n알렸습니다.",
+    "cover": [
+     205,
+     183,
+     159
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     318,
+     716,
+     432
+    ],
+    "ko": "일에서 돌아온 수딘나의 아버지는 아들이 벽에 기대어\n버려진 쉰 반죽을 먹는 것을 보고 깜짝 놀라 물었습니다.\n“제 집에 오면 될 것을, 정말 쉰 밀가루를 먹느냐?”\n“이 음식은 바로 그 집에서 나온 것입니다.” 수딘나가 대답했습니다.",
+    "cover": [
+     206,
+     181,
+     152
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     370,
+     658,
+     438
+    ],
+    "ko": "결심을 꺾으려고 어머니는 큰 유혹을 꾸몄습니다. 금을 사람 키를\n넘게 산더미처럼 쌓고, 수딘나의 옛 아내에게 그가 가장\n사랑하던 때처럼 꾸미게 했습니다.",
+    "cover": [
+     207,
+     182,
+     153
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     256,
+     64,
+     534,
+     190
+    ],
+    "ko": "아버지가 집안 재산을 펼쳐 보이며\n세속으로 돌아오라고 하자, 수딘나는\n뜻밖의 대답을 했습니다. “이 금을\n자루에 담아 강가 강에 버리십시오.\n두려움과 걱정과 공포와 지킬\n근심만 가져올 뿐입니다.”",
+    "cover": [
+     211,
+     186,
+     158
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     32,
+     346,
+     158
+    ],
+    "ko": "옛 아내가 그의 발을 붙잡고 물었습니다.\n“당신은 어떤 선녀들 때문에\n청정범행을 닦나요?”\n“누이여, 나는 선녀 때문에 청정범행을\n닦지 않습니다.” 사랑하는 남편이 자신을\n‘누이’라고 부르자 그녀는 기절했습니다.",
+    "cover": [
+     208,
+     184,
+     157
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     324,
+     196,
+     688,
+     328
+    ],
+    "ko": "어머니는 방법을 바꾸어 좋은 음식을 올린 뒤\n애원했습니다. “돌아오지 않겠다면 씨앗이라도\n남겨 다오. 대를 이을 이 없는 우리 큰 재산을\n릿차위족이 빼앗아 가지 않게 해 다오.”\n가문의 앞날이 그 대답에 걸려 있었습니다.",
+    "cover": [
+     210,
+     182,
+     146
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     14,
+     278,
+     394,
+     440
+    ],
+    "ko": "대를 이을 이 없는 재산을 빼앗길까 두려워\n수딘나의 어머니는 며느리에게 비구를\n유혹하라고 간청했습니다. “씨앗이라도\n남겨 다오.” 어머니는 그렇게 졸라\n수딘나가 대를 잇게 하려 했습니다.",
+    "cover": [
+     198,
+     157,
+     118
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     492,
+     86,
+     782,
+     410
+    ],
+    "ko": "그들은 큰 숲으로\n찾아갔습니다. 어머니는\n세 번이나 재산으로\n돌아오라고 애원했지만\n수딘나는 청정범행이\n기쁘다며 거절했습니다.\n그러나 대를 이을 씨앗만이라도\n남겨 달라는 간청에\n마침내 그는 따랐습니다.",
+    "cover": [
+     201,
+     164,
+     126
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     242,
+     16,
+     552,
+     84
+    ],
+    "ko": "범계",
+    "cover": [
+     224,
+     186,
+     144
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     26,
+     196,
+     346,
+     434
+    ],
+    "ko": "아직 학습 계율이 정해지지\n않았기에 수딘나는 그 허물을\n보지 못했습니다.\n\n큰 숲으로 돌아온 그는 옛 아내와\n세 번 음행했고, 아이가\n들어섰습니다.",
+    "cover": [
+     209,
+     166,
+     127
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     38,
+     322,
+     102
+    ],
+    "ko": "“승가가 참으로\n위태로워졌구나.",
+    "cover": [
+     222,
+     187,
+     151
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     486,
+     38,
+     712,
+     102
+    ],
+    "ko": "수딘나가 재앙을\n일으켰구나!”",
+    "cover": [
+     211,
+     169,
+     131
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     28,
+     300,
+     334,
+     424
+    ],
+    "ko": "그 범계는 온 세상을 울렸습니다.\n땅의 신들이 외치자 그 소리는\n곧바로 범천의 세계까지\n퍼져 나갔습니다.",
+    "cover": [
+     205,
+     164,
+     126
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     322,
+     46,
+     484,
+     406
+    ],
+    "ko": "태아는 자라\n아들 비자까가\n되었습니다.\n범계로 태어났지만\n비자까와 그 어머니는\n뒤에 출가했습니다.\n\n계율을 따라 둘 다\n마침내 아라한이\n되어 참된 영적\n혈통을 이었습니다.",
+    "cover": [
+     216,
+     182,
+     147
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     520,
+     36,
+     758,
+     420
+    ],
+    "ko": "깊은 뉘우침이\n수딘나를 사로잡았습니다.\n“나는 참으로 잃었구나!\n청정범행을 온전하고\n깨끗하게 닦지\n못했구나.”\n\n후회에 시달린 그는\n야위고 창백하고\n거칠어졌으며, 온몸에\n핏줄이 드러났습니다.",
+    "cover": [
+     204,
+     169,
+     134
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     322,
+     48,
+     480,
+     412
+    ],
+    "ko": "친구들이 그의\n시든 모습을 보고\n물었습니다.\n“전에는 얼굴빛이\n밝더니, 기쁨 없이\n지내는가?”\n\n수딘나는 자기의\n나쁜 행위를\n털어놓으며 청정을\n지키지 못한 큰\n잘못을 인정했습니다.",
+    "cover": [
+     213,
+     177,
+     144
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     16,
+     700,
+     80
+    ],
+    "ko": "비구들은 그의 행동을 세존의 길과 견주며\n그를 꾸짖었습니다.",
+    "cover": [
+     207,
+     174,
+     147
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     90,
+     248,
+     350,
+     292
+    ],
+    "ko": "가르침:",
+    "cover": [
+     209,
+     176,
+     142
+    ],
+    "align": "center",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     470,
+     248,
+     740,
+     292
+    ],
+    "ko": "수딘나의 의도:",
+    "cover": [
+     199,
+     165,
+     130
+    ],
+    "align": "center",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     82,
+     298,
+     372,
+     336
+    ],
+    "ko": "• 욕망을 떠남",
+    "cover": [
+     208,
+     175,
+     139
+    ],
+    "align": "left",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     82,
+     338,
+     372,
+     376
+    ],
+    "ko": "• 속박에서 벗어남",
+    "cover": [
+     202,
+     169,
+     134
+    ],
+    "align": "left",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     82,
+     378,
+     372,
+     418
+    ],
+    "ko": "• 집착하지 않음",
+    "cover": [
+     200,
+     162,
+     126
+    ],
+    "align": "left",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     505,
+     298,
+     700,
+     336
+    ],
+    "ko": "• 욕망",
+    "cover": [
+     201,
+     167,
+     130
+    ],
+    "align": "left",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     505,
+     338,
+     700,
+     376
+    ],
+    "ko": "• 속박",
+    "cover": [
+     197,
+     163,
+     127
+    ],
+    "align": "left",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     505,
+     378,
+     700,
+     418
+    ],
+    "ko": "• 집착",
+    "cover": [
+     192,
+     154,
+     119
+    ],
+    "align": "left",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     354,
+     772,
+     444
+    ],
+    "ko": "세존께서 승가를 모으시고 수딘나에게 직접 물으셨습니다.\n“수딘나여, 네가 옛 아내와 음행했다는 것이 사실이냐?”\n“사실입니다, 세존이시여.”",
+    "cover": [
+     219,
+     179,
+     141
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     62,
+     342,
+     390
+    ],
+    "ko": "세존께서 그를 엄하게\n꾸짖으셨습니다.\n“어리석은 자여, 알맞지\n않고 사문답지 않다.\n내가 감각적 쾌락을 버리고\n갈증을 없애고 감각적\n욕망의 열기를 가라앉히라고\n설하지 않았느냐?”",
+    "cover": [
+     213,
+     177,
+     140
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     16,
+     780,
+     82
+    ],
+    "ko": "부처님께서 무서운 비유를 드셨습니다. “남근을 여인에게 넣기보다 차라리\n독사나 검은 독사의 입, 활활 타는 숯불 구덩이에 넣는 것이 낫다.”",
+    "cover": [
+     211,
+     176,
+     141
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     196,
+     780,
+     264
+    ],
+    "ko": "“왜 몸의 죽음이 차라리 나은가? 죽음은 이번 생을 끝낼 뿐이다. 그러나\n해로운 상태에 굴복하면 괴로운 곳, 나쁜 곳, 지옥에 다시 태어난다.”",
+    "cover": [
+     207,
+     172,
+     137
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-27-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     48,
+     604,
+     130
+    ],
+    "ko": "정법이 오래 머묾",
+    "cover": [
+     204,
+     161,
+     120
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     268,
+     174,
+     562,
+     356
+    ],
+    "ko": "부처님께서는 열 가지 이유로\n승가를 지키려고 계율을\n정하셨습니다. 그 가운데는\n• 승가의 훌륭함\n• 번뇌의 단속\n• 사람들의 신심\n• 정법이 오래 머묾",
+    "cover": [
+     207,
+     168,
+     130
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-28-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     216,
+     522,
+     422
+    ],
+    "ko": "세존께서 모든 비구가\n지켜야 할 계율을\n정하셨습니다. “어떤\n비구든 음행을 하면\n빠라지까이니, 함께\n살 수 없다.”\n청정범행의 마지막\n경계선이 그어졌습니다.",
+    "cover": [
+     211,
+     172,
+     133
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
