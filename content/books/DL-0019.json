@@ -166,5 +166,15 @@
         "https://buddhistuniversity.net/content/booklets/dana_bodhi-et-al"
       ]
     }
+  ],
+  "parallel_editions": [
+    {
+      "lang": "en",
+      "title": "DĀNA — The Practice of Giving: Selected Essays",
+      "by": "Edited by Bhikkhu Bodhi",
+      "edition": "Buddhist Publication Society, Kandy • Sri Lanka · The Wheel Publication No. 367–9 · First published 1990, Second Edition 2003, Reprinted 2005 · BPS Online Edition © 2011 (PDF 86쪽)",
+      "url": "https://buddhistuniversity.net/content/booklets/dana_bodhi-et-al",
+      "note": "한국어판은 개정 2판(1994)을 옮긴 것이라 몇 곳 글이 다를 수 있음. 원서의 지은이 소개(About the Contributors)는 한국어판에서 장마다 각주로 실림."
+    }
   ]
 }
