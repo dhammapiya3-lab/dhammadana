@@ -1,0 +1,368 @@
+[
+ {
+  "img": "images/17-Reconciliation-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     234,
+     366,
+     572,
+     438
+    ],
+    "ko": "깟사빠곳따 이야기\n초기 테라와다 승가의 환대와\n성급한 판단과 화해의 이야기",
+    "cover": [
+     216,
+     188,
+     155
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     106,
+     42,
+     358,
+     144
+    ],
+    "ko": "까시 지방 와사바가마 마을에\n깟사빠곳따 비구가 살았습니다.\n그는 행실 바른 비구들이 와서\n편히 머물며 처소가 번성하기를\n바라며 열심히 지냈습니다.",
+    "cover": [
+     219,
+     194,
+     157
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     358,
+     752,
+     412
+    ],
+    "ko": "떠돌던 비구들이 오자 깟사빠곳따는 반갑게 맞았습니다. 그는 발을 씻겨 주고\n발우를 받아 들고, 죽과 음식과 따뜻한 목욕물을 마련하느라 기진맥진했습니다.",
+    "cover": [
+     214,
+     178,
+     140
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     444,
+     58,
+     740,
+     158
+    ],
+    "ko": "손님들이 쉬어 기운을 차리고 마을의\n탁발처에도 익숙해지자 깟사빠곳따는\n수고를 멈추었습니다. 집집마다 끝없이\n얻으러 다니는 것이 큰 짐임을 알기에\n그는 자기의 소박한 수행으로 돌아갔습니다.",
+    "cover": [
+     230,
+     211,
+     181
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     340,
+     742,
+     402
+    ],
+    "ko": "찾아온 비구들은 갑자기 잔치가 없어진 것을 알아챘습니다. 앞서의 너그러움과 자기들의\n능력은 보지 못하고 “이 상주 비구는 타락했다”고 단정했습니다. 근거 없는 의심의 씨앗이 뿌리내렸습니다.",
+    "cover": [
+     228,
+     204,
+     172
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     46,
+     318,
+     150
+    ],
+    "ko": "그들은 깟사빠곳따가 범계했다고\n몰아세웠습니다. “제가 보아야 할\n범계는 없습니다.” 그가 솔직히\n답하자, 손님들은 그 부인을 빌미로\n권리정지 갈마를 했습니다.",
+    "cover": [
+     238,
+     202,
+     167
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     298,
+     48,
+     474,
+     100
+    ],
+    "ko": "유효한 갈마",
+    "cover": [
+     223,
+     201,
+     169
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     504,
+     48,
+     682,
+     100
+    ],
+    "ko": "흔들리는 갈마",
+    "cover": [
+     223,
+     200,
+     167
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     220,
+     330,
+     752,
+     420
+    ],
+    "ko": "쫓겨난 깟사빠곳따는 그 결정을 의심했습니다. 이 권리정지가\n법에 맞는 것인가, 아니면 설 수 없는 흔들리는 갈마인가?\n진실을 찾아 그는 세존께 여쭈려고 짬빠로 떠났습니다.",
+    "cover": [
+     219,
+     194,
+     160
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     54,
+     354,
+     174
+    ],
+    "ko": "짬빠의 각가라 연못가에서 깟사빠곳따가\n세존을 찾아뵈었습니다. 늘 하듯 정다운\n인사를 나눈 뒤, 비구는 자기의 환대와\n손님들의 가혹한 판단과 부당한\n권리정지를 말씀드렸습니다.",
+    "cover": [
+     229,
+     210,
+     182
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     378,
+     128,
+     698,
+     248
+    ],
+    "ko": "세존께서 분명하게 말씀하셨습니다.\n“이것은 범계가 아니다. 너는 권리정지되지\n않았다. 그 갈마는 흔들리는 것이고 법에\n맞지 않는다. 비구여, 가서 바로 그곳\n와사바가마에 머물러라.”",
+    "cover": [
+     214,
+     175,
+     134
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     184,
+     46,
+     512,
+     150
+    ],
+    "ko": "한편 찾아왔던 비구들은 무거운 뉘우침을\n느꼈습니다. 깨끗한 비구를 까닭 없이\n권리정지했음을 깨달은 것입니다. 해로운\n잘못을 씻으려고 그들은 짬빠로 길을 떠났습니다.",
+    "cover": [
+     218,
+     184,
+     146
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     56,
+     504,
+     170
+    ],
+    "ko": "부처님께서 그들을 엄하게 꾸짖으셨습니다.\n“알맞지 않다, 어리석은 자들이여. 어찌\n깨끗한 비구를 까닭 없이 권리정지했느냐?”\n부끄러워진 비구들은 잘못을 고백하고\n세존의 발아래 엎드렸습니다.",
+    "cover": [
+     225,
+     193,
+     157
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     222,
+     104,
+     332,
+     154
+    ],
+    "ko": "잘못을\n봄",
+    "cover": [
+     238,
+     219,
+     185
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     466,
+     112,
+     572,
+     160
+    ],
+    "ko": "바로잡음",
+    "cover": [
+     235,
+     212,
+     179
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     346,
+     302,
+     456,
+     350
+    ],
+    "ko": "앞으로\n단속함",
+    "cover": [
+     231,
+     205,
+     170
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     46,
+     380,
+     756,
+     446
+    ],
+    "ko": "부처님께서 그들의 고백을 받아들이셨습니다. “성자의 율에서는 이것이 성장이다.\n잘못을 보고, 법에 따라 바로잡고, 앞으로 단속하는 것이다.”",
+    "cover": [
+     217,
+     188,
+     153
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
