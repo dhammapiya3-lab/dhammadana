@@ -95,16 +95,19 @@ def apply(ids, write):
                 if a.strip() == A: miss.append(key); continue
                 cut = pa[1] - len(A)
                 while cut > pa[0] and body[cut - 1] == ' ': cut -= 1
-                body = body[:na[0]] + A + body[na[0]:]
-                body = body[:cut] + body[pa[1]:]
+                odd = A.count('**') % 2 == 1   # 굵게 표시가 홀수인 조각 → 앞 쪽에는 닫는 표시를 남기고 다음 쪽에서 다시 엶 (2026-11-19)
+                body = body[:na[0]] + ('**' if odd else '') + A + body[na[0]:]
+                body = body[:cut] + ('**' if odd else '') + body[pa[1]:]
                 back += 1
             else:
                 drop = len(B)
                 if body[na[0] + drop:na[0] + drop + 1] == ' ': drop += 1
                 elif body[na[0] + drop:na[0] + drop + 1] == '\n': drop += 1
-                body = body[:na[0]] + body[na[0] + drop:]
-                body = body[:pa[1]] + B + body[pa[1]:]
+                odd = B.count('**') % 2 == 1   # 굵게 표시가 홀수인 조각 → 앞 쪽에서 닫고 다음 쪽에서 다시 엶 (2026-11-19)
+                body = body[:na[0]] + ('**' if odd else '') + body[na[0] + drop:]
+                body = body[:pa[1]] + B + ('**' if odd else '') + body[pa[1]:]
                 done += 1
+        body = body.replace('****', '')   # 굵게 낱말 두 조각을 붙이면 생기는 '**…앞****뒤…**' 는 하나로 (2026-11-19)
         left = [k for k, v in todo.items() if v > 0]
         already = [k for k in left if any(toks(body, pa, na)[0].endswith(k[2] + k[3]) or toks(body, pa, na)[1].startswith(k[2] + k[3]) for pl, nl, pa, na in boundaries(body) if (pl, nl) == k[:2])]
         left = [k for k in left if k not in already]
@@ -114,7 +117,7 @@ def apply(ids, write):
         def norm(t):
             t = re.sub(r'^===.*===\s*$', '', t, flags=re.M)
             t = '\n\n'.join(x for x in re.split(r'\n\s*\n', t) if not x.strip().startswith('[^'))
-            return re.sub(r'\s', '', t)
+            return re.sub(r'\s', '', t).replace('**', '')   # 굵게 표시 자리만 바뀌는 것은 괜찮음
         if norm(body) != norm(T['body']): sys.exit(bid + ': 빈칸·쪽 표시·각주 말고 글자가 달라짐 — 멈춤')
         if write and body != T['body']:
             T['body'] = body

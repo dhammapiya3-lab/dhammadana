@@ -32,6 +32,10 @@ STROKE = set()
 LP = {}           # 줄(id) → 문단 번호 (body_paras 가 적음)
 BOXT = set()      # 인쇄본에서 □ 안에 번호가 찍힌 제목 (□ 를 되살려 화면에서 네모 테두리 번호로 — 운영자 요청, 2026-11-16)
 GUNG = set()      # 궁서체(굵게 보이는 글꼴) 글자 자리
+# 인쇄본에서 굵게(진하게) 보이는 글꼴 — 쪽 그림으로 하나씩 확인 (2026-11-19 다시 검수): 궁서체(경전 인용·번역 줄), 휴먼옛체·HY견명조(제목·용어),
+# T2·T25(☸ 출처 줄의 경 이름 — 굵은 고딕). 가는 글꼴: T3·T11·T12·T13·T18·T21(바탕 — 풀이·괄호), 굴림·굴림체(소리 줄·출처), 돋움
+HEAVY = ('Gungsuh', 'ÈÞ', 'HYcys', 'T2', 'T25')
+def heavy(f): return f.startswith(HEAVY) and f not in ('T21',)
 
 
 WD = {3: '❖', 4: '📖', 5: '❶', 6: '❷', 7: '①', 8: '②', 9: '③', 10: '④', 11: '⑤', 12: '⑥', 13: '⑦', 14: '⑧', 15: '❸',
@@ -100,7 +104,7 @@ def lines_of(page, bold=False):
             for c in sg:
                 if prev is not None and c[0] != ' ' and not t.endswith(' ') and c[1] - prev[2] > 0.08 * min(prev[4], c[4]): t += ' '
                 if bold and c[0].strip():
-                    b = (round(c[1]), round(c[3])) in STROKE or (bold == 'all' and (round(c[1]), round(c[3])) in GUNG)
+                    b = (round(c[1]), round(c[3])) in STROKE or (bold == 'all' and (round(c[1]), round(c[3])) in GUNG) or (bold == 'heavy' and heavy(c[5]))
                     if b != inb:
                         if inb and t.endswith(' '): t = t[:-1] + '** '
                         else: t += '**'
@@ -120,7 +124,8 @@ def lines_of(page, bold=False):
             if (hf >= 0.4 * sum(fonts.values()) or big) and not f.startswith(('ÈÞ', 'HYcys')):     # 제목 글꼴이 섞인 줄(로마자는 다른 글꼴)
                 f, sz, col = max(((k, v) for k, v in fonts.items() if k[0].startswith(('ÈÞ', 'HYcys'))), key=lambda kv: kv[1])[0]
             fc = next((c[6] for c in sg if c[0].strip() and c[0] not in '📖❖'), '000000')     # 첫 글자 색(아이콘 뒤)
-            L.append({'fc': fc, 't': t, 'trail': trail, 'x0': sg[0][1], 'x1': max(c[2] for c in sg if c[0].strip()), 'y': r['y'], 'font': f, 'size': sz, 'color': col,
+            fh = next((heavy(c[5]) for c in sg if c[0].strip() and c[0] not in '📖❖'), False)  # 첫 글자(아이콘 뒤)가 굵은 글꼴인지
+            L.append({'fc': fc, 'fh': fh, 't': t, 'trail': trail, 'x0': sg[0][1], 'x1': max(c[2] for c in sg if c[0].strip()), 'y': r['y'], 'font': f, 'size': sz, 'color': col,
                       'fonts': fonts, 'maxsz': max(c[4] for c in sg if c[0].strip())})
     # 장식: 같은 글이 겹쳐 찍힌 줄(그림자) — 같은 글, 가까운 자리
     out = []
@@ -194,15 +199,28 @@ def body_paras(L, ys=None):
         k = kind(l); t = l['t']
         box = re.match(r'□\s*(\d+)\s*(.*)', t)
         if box: t = box.group(1) + ' ' + box.group(2); k = 'head'; BOXT.add(t)
+        # 소제목 줄 가려내기 (2026-11-19 다시 검수 — 쪽 그림과 대조): 색 글씨·제목 글꼴 줄이라도
+        #  ① ❖ 로 시작하는 줄은 알림·항목 문단(굵은 글꼴 부분만 굵게) — '❖ 디가니까야는 23단계…', '❖ 근접삼매 수행(10) : …'
+        #  ② 첫 글자가 가는 글꼴인 색 글씨 줄은 보통 문단('세존께서 오온을 … 말씀하셨다.' 같은 남색 이야기 글), 다만
+        #     제목 바로 아래 괄호 줄('(위빳사나 냐나, vipassanā-ñāṇa)')은 그 제목에 붙이고, 가운데 맞춤 괄호 줄은 가운데 보통 글
+        if k in ('head', 'chead') and l['maxsz'] < 12.5 and not box:
+            if t.startswith('❖'): k = 'note'
+            elif not l['fh'] and not (t.startswith('(') and out and out[-1].startswith('^^ ')):
+                if t.startswith('(') and out and out[-1].startswith('## ') and cur is None and prev is not None and prev[1] in ('head', 'chead') and l['y'] - prev[0]['y'] < 1.9 * l['size'] and not is_center(l):
+                    out[-1] += ' ' + t; prev = (l, prev[1]); continue
+                k = 'text'
         if k == 'chead' and prev is not None and prev[1] not in ('head', 'chead') and l['y'] - prev[0]['y'] < 1.9 * l['size'] and prev[0]['x1'] >= RIGHT - 22:
             k = 'tr' if 'Gungsuh' in l['font'] else 'text'                          # 끝까지 찬 줄에 이어지는 줄 — 문단 가운데의 색 글자일 뿐
         if k == 'chead':
             # 장 제목(^^) 바로 아래 괄호 풀이 줄은 장 제목에 붙임
             if out and out[-1].startswith('^^ ') and prev is not None and prev[1] == 'head' and t.startswith('('):
                 out[-1] += ' ' + t; prev = (l, 'head'); continue
-            if out and cur is None and prev is not None and prev[1] == 'chead' and l['y'] - prev[0]['y'] < 1.9 * l['size'] and out[-1].endswith('**'):
-                out[-1] = out[-1][:-2] + (wrap_sep(out[-1][:-2], t, prev[0]) if prev[0]['x1'] >= RIGHT - 22 else ' ') + t + '**'   # 두 줄로 찍힌 색 소제목
-            else: out.append((':: ' if is_center(l) else '') + '**' + t + '**')
+            # 색 소제목 줄(📖·❖ 항목 등)은 휴먼옛체 제목 줄과 같은 인쇄 모양이라 똑같이 ## 소제목으로 (2026-11-19 다시 검수 — 전에는 ## 와 **…** 가 섞여 있었음).
+            # 가운데 맞춤 괄호 풀이 줄('(삼마 상깝빠, …)')은 인쇄본에서 가는 글씨라 굵게 하지 않음
+            if is_center(l) and t.startswith('('): out.append(':: ' + t)
+            elif out and cur is None and prev is not None and prev[1] == 'chead' and l['y'] - prev[0]['y'] < 1.9 * l['size'] and out[-1].startswith('## '):
+                out[-1] = out[-1] + (wrap_sep(out[-1], t, prev[0]) if prev[0]['x1'] >= RIGHT - 22 else ' ') + t   # 두 줄로 찍힌 색 소제목
+            else: out.append('## ' + t)
             cur = None; prev = (l, 'chead'); continue
         if k == 'head':
             if ' ☸' in t:
@@ -215,7 +233,7 @@ def body_paras(L, ys=None):
                 cur = None
             prev = (l, 'head'); continue
         if k in ('src', 'note') or (prev is not None and prev[1] == 'note' and k != 'src' and l['x0'] > prev[0]['x0'] + 5 and l['y'] - prev[0]['y'] < 1.9 * l['size']):
-            if k in ('note', 'src') or cur is None: out.append(t); cur = len(out) - 1; meta[cur] = [(l, k)]
+            if k in ('note', 'src') or cur is None: out.append((':: ' if k == 'note' and abs((l['x0'] + l['x1']) / 2 - 209.5) < 18 and l['x0'] > 65 else '') + t); cur = len(out) - 1; meta[cur] = [(l, k)]
             else: out[cur] += '\n' + t; meta.setdefault(cur, []).append((l, 'note'))
             prev = (l, 'note' if k == 'note' or (prev is not None and prev[1] == 'note') else k); LP[id(l)] = cur; continue
         new = cur is None or prev is None
@@ -223,6 +241,7 @@ def body_paras(L, ys=None):
             pl, pk = prev; gap = l['y'] - pl['y']
             # 이 책: 보통 줄 사이 17~18pt, 게송·가운데 맞춤 인용 22pt, 문단 사이 30pt 넘음
             if gap > 2.3 * l['size']: new = True
+            elif pk == 'note' and pl['t'].startswith('❖') and not (abs((l['x0'] + l['x1']) / 2 - 209.5) < 18 and abs((pl['x0'] + pl['x1']) / 2 - 209.5) < 18 and pl['x0'] > 65): new = True   # 가운데 맞춘 두 줄 ❖ 알림은 한 문단                                          # ❖ 줄 다음의 들여쓰지 않은 줄은 새 문단('❖ 상가의 의미' 다음 본문)
             elif pk == 'tr' and k in ('pron', 'roman') and gap > 1.9 * l['size']: new = True      # 독송 묶음(번역 줄 뒤 다음 소리·로마자 줄)
             elif k == 'pron' and pk not in ('pron',): new = True
             elif NUMSTART.match(t) and k != 'tr' and pk not in ('pron',) and not (k == 'roman' and pk == 'pron') and gap > 1.9 * l['size']: new = True
@@ -258,6 +277,7 @@ def wrap_sep(a, b, pl):
     줄을 바꿈('남|방에서는', '성취하신|성인들'). 한글끼리는 형태소 분석(kiwi)으로 붙인 꼴과 띄운 꼴 중 자연스러운 쪽을 고름"""
     global KIWI
     if pl['trail'] or re.search(r'[.?!,:;]$', a): return ' '
+    if re.match(r'[‘“]', b) and re.search(r'[가-힣A-Za-z0-9]$', a): return ' '      # 다음 줄이 여는 따옴표·괄호로 시작('빅쿠들은|‘오와다')
     if a.endswith(')') and not re.match(r'[을를이가은는의에과와도로]', b): return ' '
     if re.search(r'[A-Za-zāīūṃṅñṭḍṇḷ]$', a) and re.match(r'[가-힣]', b): return ' '
     if re.search(r'[가-힣]$', a) and re.match(r'[가-힣]', b):
@@ -374,21 +394,10 @@ def build(pdf):
             if i == TOC_PAGES[0]: pages.append((lab, ['## 차 례', toc_block(T)]))   # 차례 8쪽은 한 화면으로
             continue
         ys = []; LP.clear(); ps = body_paras(L, ys)
-        Lb = lines_of(d[i - 1], bold=True); Lg = lines_of(d[i - 1], bold='all')
-        # 보통 글(바탕) 줄 사이에 섞인 궁서체 낱말('① **무거운 업**(가루까, garuka)')은 인쇄본에서 굵게 보임 → 굵게.
-        # 줄 전체가 궁서체인 경전 인용은 그대로(DL-0031 과 같은 원칙)
-        def mixed(l):
-            g = sum(v for (f, _, _), v in l['fonts'].items() if 'Gungsuh' in f); a = sum(l['fonts'].values())
-            return 0 < g < 0.6 * a
-        gs = collections.Counter(); al = collections.Counter()
-        for l in L:
-            k = LP.get(id(l))
-            if k is None: continue
-            al[k] += sum(l['fonts'].values()); gs[k] += sum(v for (f, _, _), v in l['fonts'].items() if 'Gungsuh' in f)
-        okp = {k for k in al if gs[k] < 0.4 * al[k]}      # 문단 전체가 대부분 바탕 글일 때만
-        Lm = [lg if LP.get(id(l)) in okp and mixed(lg) and ps[LP[id(l)]].count(lb['t'].replace('**', '').strip()) == 1 else lb
-              for l, lb, lg in zip(L, Lb, Lg)] if len(L) == len(Lb) == len(Lg) else Lb
-        mark_bold(ps, L, Lm, Lm, i)
+        # 인쇄본에서 굵게 보이는 글꼴(HEAVY)로 찍힌 글자는 모두 굵게, 가는 글꼴은 보통 — 문단 종류와 상관없이 같은 원칙 (2026-11-19 다시 검수:
+        # 전에는 바탕 문단 속 궁서체만 굵게 해서 경전 인용 문단은 보통 글이었음 — 운영자 지적 '강조된 곳이 어떤 곳은 굵게, 어떤 곳은 아님')
+        Lh = lines_of(d[i - 1], bold='heavy')
+        mark_bold(ps, L, Lh, Lh, i)
         for y0, h in sorted(WH.get(i, [])):
             k = next((n for n, y in enumerate(ys) if y > y0), len(ps))
             ps.insert(k, f'![{PICS[h][1]}](/uploads/{PICS[h][0]})'); ys.insert(k, y0)
@@ -400,39 +409,33 @@ BOLDMISS = []
 
 
 def mark_bold(ps, L, Lb, Lg, pn):
-    """인쇄본에서 굵게 찍힌 글자를 본문에 **…** 로 (운영자 요청, 2026-11-15·16) — 글자는 그대로, ** 만 더함.
-    ① 테두리를 덧그려 굵게 찍은 글자(texttrace type 1)
-    ② 굴림 산문 사이에 섞인 궁서체 글(‘테라와다 불교’ 쪽의 경전 인용 등 — 궁서체는 굵게 보임). 번역 줄(소리·로마자 줄과 한 묶음)은 늘 궁서체라 ②를 넣지 않음.
-    제목(## 줄)·쪽 번호·머리글은 건드리지 않음. 문장부호만 굵은 곳('**.**')은 뺌."""
-    if not (len(L) == len(Lb) == len(Lg)): BOLDMISS.append((pn, '줄 수 다름')); return
-    where = [LP.get(id(l)) for l in L]
-    prose = set()
-    for l, k in zip(L, where):
-        if k is None: continue
-        black = sum(v for (f, _, col), v in l['fonts'].items() if f.startswith('Gulim') and col == '000000')
-        if black >= 3 and HAN.search(l['t']): prose.add(k)
-    prose -= {k for l, k in zip(L, where) if kind(l) in ('pron', 'roman')}    # 소리·로마자 줄이 있는 묶음(번역 줄은 늘 궁서체)은 빼기
-    for l, lb, lg, k in zip(L, Lb, Lg, where):
-        t = (lg if k in prose else lb)['t']
-        if '**' not in t or k is None: continue
-        plain = t.replace('**', '')
-        if plain.strip() != l['t'].strip(): continue
-        if l['y'] < 55 and l['size'] <= 9.5 or re.fullmatch(r'-\s*\d+\s*-', plain): continue
-        if kind(l) == 'head' or plain.startswith('□'): continue
-        segs = re.split(r'(\*\*.*?\*\*)', t); out = ''
+    """인쇄본에서 굵게 보이는 글꼴(HEAVY)로 찍힌 글자를 본문에 **…** 로 — 글자는 그대로, ** 만 더함.
+    제목(## ^^ %% 문단)·쪽 번호·머리글은 건드리지 않음. 문장부호·빈칸만 굵은 조각은 뺌. 한 문단 안에서 앞 줄 다음 자리부터 찾음(같은 줄이 되풀이되는 독송)."""
+    if not (len(L) == len(Lb)): BOLDMISS.append((pn, '줄 수 다름')); return
+    pos = collections.Counter()
+    for l, lb in zip(L, Lb):
+        k = LP.get(id(l))
+        if k is None or ps[k].startswith(('## ', '^^ ', '%% ')): continue
+        t = lb['t']
+        plain = re.sub(r' {2,}', ' ', t.replace('**', '')).strip()
+        if plain != l['t'].strip(): BOLDMISS.append((pn, '글자 다름', plain)); continue
+        j = ps[k].find(plain, pos[k])
+        if j < 0: BOLDMISS.append((pn, plain)); continue
+        if '**' not in t: pos[k] = j + len(plain); continue
+        segs = re.split(r'(\*\*.*?\*\*)', t.strip()); out = ''
         for sg in segs:
             if sg.startswith('**') and sg.endswith('**') and len(sg) >= 4:
                 inner = sg[2:-2]; core = inner.strip()
-                if not core or re.fullmatch(r'[\s.,·:;!?()\-]+', core): out += inner; continue
+                if not core or re.fullmatch(r'[\s.,·:;!?()\-‘’“”\[\]]+', core): out += inner; continue
                 lead = inner[:len(inner) - len(inner.lstrip())]; tail = inner[len(inner.rstrip()):]
                 out += lead + '**' + core + '**' + tail
             else: out += sg
-        out = out.strip()
-        if out.replace('**', '') != plain.strip() or '**' not in out: continue
-        j = ps[k].find(plain.strip())
-        if j < 0: BOLDMISS.append((pn, plain)); continue
-        ps[k] = ps[k][:j] + out + ps[k][j + len(plain.strip()):]
-        ps[k] = ps[k].replace('****', '').replace('** **', ' ')
+        out = re.sub(r' {2,}', ' ', out).strip()
+        if out.replace('**', '') != plain: BOLDMISS.append((pn, '표시 어긋남', plain)); continue
+        ps[k] = ps[k][:j] + out + ps[k][j + len(plain):]
+        pos[k] = j + len(out)
+    for k in range(len(ps)):
+        ps[k] = re.sub(r'\*\*(\s*)\*\*', r'\1', ps[k])     # 줄이 바뀌어도 이어지는 굵게는 하나로
 
 
 def toc_block(T):
@@ -569,18 +572,10 @@ if __name__ == '__main__':
         return out + t[pos:]
     for n, (lab, ps) in enumerate(pages):
         for k, p in enumerate(ps):
-            if '**' in p and not p.startswith(('## ', '^^ ', '%% ')) and not re.fullmatch(r'(:: )?\*\*[^*]+\*\*', p): ps[k] = unmid(p)
-    # 쪽 경계에서 이어지는 낱말(pageword_fixes)의 앞뒤 조각에 걸친 굵게도 뺌
-    for n in range(1, len(pages)):
-        prev, cur = pages[n - 1][1], pages[n][1]
-        if not prev or not cur: continue
-        A = re.search(r'(\S+)$', prev[-1]); B = re.match(r'(\S+)', cur[0])
-        if not A or not B or (A.group(1).replace('*', ''), B.group(1).replace('*', '')) not in PW: continue
-        m = re.match(r'\*\*([^*]+?)\*\*', cur[0])
-        if m: cur[0] = m.group(1) + cur[0][m.end():]
-        m = re.search(r'\*\*([^*]+?)\*\*$', prev[-1])
-        if m and not re.fullmatch(r'(:: )?\*\*[^*]+\*\*', prev[-1]): prev[-1] = prev[-1][:m.start()] + m.group(1)
+            pass   # 2026-11-19: 낱말 가운데에서 바뀌는 굵게도 인쇄본 그대로 둠(궁서체 낱말 + 바탕 괄호 + 궁서체 조사: '**여래**(스승)**를**')
     body = '\n\n'.join(f'=== {lab} ===\n' + '\n\n'.join(ps) for lab, ps in pages)
+    # 한글 바로 뒤의 여는 따옴표는 띄어 씀 — 궁서체 ‘ 는 글자 안에 빈 자리가 있어 인쇄본에서는 띄어 보이고, 줄이 바뀌는 곳은 빈칸으로 이었음 (2026-11-19 다시 검수)
+    body = re.sub(r'([가-힣])(\*\*)?‘', lambda m: m.group(1) + (m.group(2) or '') + ' ‘', body)
     # 줄 첫머리 번호와 글이 붙은 곳('10.따뽀 …', '14.아침경')은 번호 뒤에 빈칸 (운영자 요청, 2026-11-15 — 교정)
     NUMSP = re.compile(r'(?m)^((?:## |\^\^ |:: |%% |-{1,3} |\*\*)?)(\d{1,3})\.(?=[^\s\d.])')
     body = NUMSP.sub(r'\1\2. ', body)
