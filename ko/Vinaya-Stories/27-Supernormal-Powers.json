@@ -1,0 +1,319 @@
+[
+ {
+  "img": "images/27-Supernormal-Powers-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     80,
+     700,
+     140
+    ],
+    "ko": "라자가하의 전단향 발우",
+    "cover": [
+     220,
+     187,
+     135
+    ],
+    "align": "center",
+    "em": 36,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     96,
+     346,
+     704,
+     386
+    ],
+    "ko": "신통과 사람들의 구경거리, 그리고 부처님의 계율 이야기",
+    "cover": [
+     178,
+     132,
+     90
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Supernormal-Powers-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     62,
+     432,
+     216
+    ],
+    "ko": "부호의 도전\n라자가하의 한 부호가 값비싼 전단향으로 발우를\n깎았습니다. 그것을 높은 대나무 위에 매달고\n선언했습니다. “신통을 지닌 아라한인\n수행자가 있다면 날아올라 가져가라.”",
+    "cover": [
+     241,
+     209,
+     158
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Supernormal-Powers-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     62,
+     730,
+     150
+    ],
+    "ko": "흉내 내는 이들\n이름난 여섯 고행자 스승이 아라한이라며 발우를 내놓으라고 했습니다.\n신통이 없어 날지 못했고, 상은 그대로 남았습니다.",
+    "cover": [
+     235,
+     201,
+     147
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Supernormal-Powers-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     62,
+     382,
+     236
+    ],
+    "ko": "탁발\n마하목갈라나 장로와\n삔돌라바라드와자 장로가\n탁발하러 라자가하에 들어갔습니다.\n도전 소식을 들은 둘은\n곧바로 서로의 큰 영적\n힘을 알아보았습니다.",
+    "cover": [
+     236,
+     202,
+     148
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Supernormal-Powers-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     306,
+     728,
+     404
+    ],
+    "ko": "미룸\n마하목갈라나가 말했습니다. ‘벗 바라드와자여, 그대는 신통이 있으니\n가서 저 발우를 내려오시오. 그대의 것이오.’ 삔돌라바라드와자가 받아들였습니다.",
+    "cover": [
+     227,
+     192,
+     141
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Supernormal-Powers-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     62,
+     382,
+     236
+    ],
+    "ko": "신통의 위업\n하늘로 날아오른\n삔돌라바라드와자 장로가\n발우를 가졌습니다. 깊은 인간을\n넘어선 성취를 드러내며\n라자가하 성을 위에서\n세 바퀴 돌았습니다.",
+    "cover": [
+     234,
+     204,
+     155
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Supernormal-Powers-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     320,
+     722,
+     402
+    ],
+    "ko": "신심의 구경거리\n크게 놀란 부호는 고귀한 비구에게 내려오시라고 청했습니다.\n합장하여 예를 올리고 전단향 발우를 값진 음식으로 채워 올렸습니다.",
+    "cover": [
+     224,
+     188,
+     138
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Supernormal-Powers-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     40,
+     734,
+     130
+    ],
+    "ko": "소동\n사람들이 터져 나왔습니다. “고귀한 삔돌라바라드와자께서 발우를 내려오셨다!”\n큰 무리가 그를 바싹 따르며 시끄럽게 떠들썩했습니다.",
+    "cover": [
+     225,
+     193,
+     145
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Supernormal-Powers-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     180,
+     372,
+     348
+    ],
+    "ko": "부처님께서 물으시다\n세존께서 큰 소리를 들으셨습니다.\n“아난다여, 저 소동은 무엇이냐?”\n아난다는 신통을 드러낸 일과\n뒤따른 구경거리를\n말씀드렸습니다.",
+    "cover": [
+     230,
+     203,
+     159
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Supernormal-Powers-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     40,
+     370,
+     160
+    ],
+    "ko": "모임\n부처님께서 승가를 모으시고\n삔돌라바라드와자에게 물으셨습니다.\n“네가 발우를 내렸다는 것이 사실이냐?”\n“사실입니다, 세존이시여.” 그가 인정했습니다.",
+    "cover": [
+     227,
+     201,
+     158
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Supernormal-Powers-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     326,
+     752,
+     404
+    ],
+    "ko": "꾸짖음\n부처님께서 꾸짖으셨습니다. “알맞지 않고 어울리지 않는다. 어찌 하찮은 나무 발우를 위해\n재가자들에게 인간을 넘어선 신통을 드러냈느냐? 푼돈에 몸을 드러내는 여인과 같다.”",
+    "cover": [
+     217,
+     176,
+     129
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Supernormal-Powers-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     436,
+     40,
+     756,
+     170
+    ],
+    "ko": "부숨\n구경거리에 대한 집착을 끊으시려고\n부처님께서 발우를 부수게 하셨습니다.\n“조각조각 깨뜨려라.” “비구들에게 주어\n갈아서 안약으로 쓰게 하라.”",
+    "cover": [
+     223,
+     192,
+     150
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Supernormal-Powers-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     108,
+     40,
+     692,
+     150
+    ],
+    "ko": "두 가지 판정\n그래서 부처님께서 두 가지 엄격한 규칙을 정하셨습니다.\n1. 재가자들에게 신통의 기적을 드러내서는 안 된다.\n2. 비구는 나무 발우를 지니거나 가지고 다녀서는 안 된다.",
+    "cover": [
+     217,
+     184,
+     141
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
