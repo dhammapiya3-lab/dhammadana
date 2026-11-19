@@ -1,0 +1,309 @@
+[
+ {
+  "img": "images/04-False-Claims-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     222,
+     370,
+     580,
+     442
+    ],
+    "ko": "거짓 성취 주장을 금하는\n계율의 기원",
+    "cover": [
+     197,
+     172,
+     147
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-False-Claims-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     62,
+     468,
+     180
+    ],
+    "ko": "왓지에 기근이 들었습니다.\n흰 뼈가 땅에 널렸습니다.\n배급표로 연명하니 이삭 줍기도 어려웠습니다.\n왁구무다 강 근처에서 안거에 든\n비구들은 굶주림에 시달렸습니다.",
+    "cover": [
+     203,
+     183,
+     161
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-False-Claims-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     124,
+     292,
+     304
+    ],
+    "ko": "공양을 얻으려고 비구들은\n살아남을 방법을 의논했습니다.\n재가자의 일을 해 줄까? 아니다.\n심부름을 해 줄까? 아니다.\n있지도 않은 서로의 인간을\n넘어선 성취를 칭찬할까? 그렇다.\n속임수가 선택되었습니다.",
+    "cover": [
+     195,
+     174,
+     152
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     378,
+     128,
+     450,
+     158
+    ],
+    "ko": "길 1",
+    "cover": [
+     225,
+     194,
+     153
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     388,
+     206,
+     452,
+     236
+    ],
+    "ko": "길 2",
+    "cover": [
+     210,
+     182,
+     146
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     438,
+     318,
+     500,
+     348
+    ],
+    "ko": "길 3",
+    "cover": [
+     206,
+     172,
+     135
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-False-Claims-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     286,
+     156,
+     510,
+     286
+    ],
+    "ko": "선정을 얻었다는 거짓말이\n재가자들에게 흘러가고,\n그 대가로 좋은 음식이\n돌아왔습니다. 신심 깊은\n집안들은 자식과 부모와\n하인을 굶기며 사기꾼들을\n먹였습니다.",
+    "cover": [
+     203,
+     177,
+     153
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-False-Claims-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     54,
+     650,
+     130
+    ],
+    "ko": "안거를 마친 비구들이 웨살리로 부처님을 찾아뵈었습니다.\n대비가 뚜렷했습니다. 정직한 비구들은 야위고 초라하며 핏줄이\n드러났고, 왁구무다의 비구들은 살찌고 얼굴빛이 밝으며\n감관이 생생했습니다.",
+    "cover": [
+     185,
+     171,
+     147
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-False-Claims-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     286,
+     276,
+     512,
+     394
+    ],
+    "ko": "부처님께서 그들을 꾸짖으셨습니다.\n“어리석은 자들이여, 배를 위해\n인간을 넘어선 성취를 거짓으로\n칭찬하느니 차라리 날카로운\n백정의 칼로 배를 가르는 편이\n낫다.”",
+    "cover": [
+     199,
+     177,
+     153
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-False-Claims-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     50,
+     188,
+     422
+    ],
+    "ko": "부처님께서\n세상의 큰 도둑을\n밝히셨습니다.\n\n첫째: 무리를\n거느리고 다니며\n탁발하는 비구,\n사나운 도적과\n같습니다.\n\n둘째: 부처님의\n가르침을 제 것이라\n하는 악한 비구.",
+    "cover": [
+     193,
+     164,
+     134
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-False-Claims-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     50,
+     188,
+     422
+    ],
+    "ko": "셋째: 청정한\n수행자를 근거 없이\n음행했다고 몰아\n망치는 악한 비구.\n\n넷째: 동산·침상·\n구리 단지·도끼 같은\n승가의 재산으로\n재가자의 환심을\n사는 비구.",
+    "cover": [
+     191,
+     160,
+     131
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-False-Claims-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     6,
+     604,
+     82
+    ],
+    "ko": "으뜸가는 도둑\n있지도 않고 사실도 아닌 인간을 넘어선 성취를\n자랑하는 자. 이 사기꾼은 순전히 도둑질로\n온 나라의 탁발 음식을 먹어 치웁니다.",
+    "cover": [
+     201,
+     178,
+     156
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-False-Claims-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     6,
+     604,
+     82
+    ],
+    "ko": "업의 결과\n절제 없고 계를 지키지 않는 사기꾼이 나라의 탁발\n음식을 먹느니 차라리 달군 쇠구슬을 삼키는 것이\n낫습니다. 속임은 반드시 나쁜 곳에 태어나게 합니다.",
+    "cover": [
+     195,
+     172,
+     150
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-False-Claims-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     268,
+     96,
+     580,
+     296
+    ],
+    "ko": "네 번째 빠라지까\n\n어떤 비구든 인간을 넘어선\n성취를 자기에게 있다고\n“이렇게 안다, 이렇게 본다”\n하고 거짓으로 주장하면\n영원히 빠라지까이니\n함께 살 수 없습니다.\n이렇게 계율이 정해졌습니다.",
+    "cover": [
+     205,
+     188,
+     166
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
