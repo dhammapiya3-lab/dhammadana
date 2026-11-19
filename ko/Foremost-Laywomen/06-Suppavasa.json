@@ -1,0 +1,417 @@
+[
+ {
+  "img": "images/06-Suppavasa-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     304,
+     690,
+     404
+    ],
+    "ko": "꼴리야의 숩빠와사:\n가장 좋은 공양의 으뜸",
+    "cover": null,
+    "align": "center",
+    "em": 40,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Suppavasa-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     40,
+     690,
+     114
+    ],
+    "ko": "한 번의 서원이 영원을 잇습니다. 옛 도시 함사와띠에서 꼴리야까지,\n인간과 천상에서 다시 태어나기를 십만 겁, 남다른 서원의\n업의 씨앗이 마침내 온전한 열매를 맺습니다.",
+    "cover": null,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     30,
+     342,
+     170,
+     372
+    ],
+    "ko": "함사와띠",
+    "cover": null,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     660,
+     342,
+     760,
+     372
+    ],
+    "ko": "꼴리야",
+    "cover": null,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Suppavasa-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     474,
+     96,
+     776,
+     350
+    ],
+    "ko": "옛 함사와띠에서 한 귀부인이\n빠두뭇따라 부처님께서 한 우바이를\n뛰어난 공양의 으뜸이라 이르시는\n것을 보았습니다. 감화된 그녀는\n특별한 공양을 올리며 바로 그\n칭호를 얻기를 당당히 서원했고,\n부처님께서 그 성취를\n예언하셨습니다.",
+    "cover": [
+     240,
+     225,
+     199
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Suppavasa-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     42,
+     390,
+     148
+    ],
+    "ko": "다시 태어나 수다원이 되다\n십만 겁 뒤 그녀는 꼴리야의 숩빠와사 공주로\n다시 태어났습니다. 사꺄족 집안의 아내가 된\n그녀는 고따마 부처님의 법문을 듣고\n수다원과를 얻었습니다.",
+    "cover": [
+     235,
+     183,
+     94
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     410,
+     42,
+     780,
+     118
+    ],
+    "ko": "어머니가 되어 열매를 맺다\n뒷날 그녀는 존경받는\n시왈리 장로의 어머니가 되었습니다.",
+    "cover": [
+     235,
+     182,
+     90
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Suppavasa-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     368,
+     720,
+     430
+    ],
+    "ko": "승가를 공경하려고 숩빠와사 공주는 가장 좋고 귀한 음식을 올렸습니다.\n이 훌륭한 보시가 옛 서원을 그대로 비추었고,\n부처님께서는 업의 공덕에 관한 깊은 가르침을 주셨습니다.",
+    "cover": null,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Suppavasa-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     292,
+     150,
+     320
+    ],
+    "ko": "수명",
+    "cover": null,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     176,
+     292,
+     296,
+     338
+    ],
+    "ko": "좋은\n용모",
+    "cover": null,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     514,
+     292,
+     614,
+     320
+    ],
+    "ko": "힘",
+    "cover": null,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     630,
+     292,
+     746,
+     320
+    ],
+    "ko": "지혜",
+    "cover": null,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     290,
+     404,
+     520,
+     438
+    ],
+    "ko": "공덕의 짜임",
+    "cover": null,
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Suppavasa-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     40,
+     594,
+     120
+    ],
+    "ko": "보시가 열매를 정합니다.\n음식으로 이 다섯 가지를 베푸는 이는 장수와 빛나는 용모,\n깊은 행복과 힘과 밝은 지혜를 거둡니다.\n천상에 나든 인간으로 나든.",
+    "cover": null,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     350,
+     126,
+     454,
+     156
+    ],
+    "ko": "천상 세계",
+    "cover": [
+     214,
+     172,
+     98
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     350,
+     278,
+     454,
+     308
+    ],
+    "ko": "인간 세계",
+    "cover": [
+     220,
+     173,
+     95
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Suppavasa-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     40,
+     664,
+     162
+    ],
+    "ko": "제따와나 승원에서 부처님께서 그녀의 옛 서원을 이루어 주셨습니다.\n‘Etad-aggaṁ bhikkhave mama sāvikānaṁ upāsikānaṁ\npaṇīta-dāyikānaṁ yad-idaṁ Suppavāsā Koliya-dhītā.’\n비구들이여, 가장 좋은 것을 보시하는 나의 우바이 가운데\n꼴리야의 딸 숩빠와사가 으뜸이다.",
+    "cover": null,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Suppavasa-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     300,
+     50,
+     500,
+     84
+    ],
+    "ko": "인과의 사슬",
+    "cover": null,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     86,
+     86,
+     266,
+     116
+    ],
+    "ko": "처음의 서원",
+    "cover": null,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     316,
+     86,
+     486,
+     116
+    ],
+    "ko": "시간의 흐름",
+    "cover": null,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     550,
+     86,
+     750,
+     116
+    ],
+    "ko": "궁극의 열매",
+    "cover": null,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     70,
+     334,
+     280,
+     362
+    ],
+    "ko": "함사와띠의 서원",
+    "cover": null,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     330,
+     334,
+     470,
+     362
+    ],
+    "ko": "십만 겁",
+    "cover": null,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     520,
+     334,
+     750,
+     362
+    ],
+    "ko": "가장 좋은 공양·으뜸 칭호",
+    "cover": null,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     86,
+     362,
+     714,
+     424
+    ],
+    "ko": "숩빠와사의 여정은 흠 없는 업의 짜임을 보여 줍니다. 십만 겁에 걸쳐 기른\n순수한 서원은 마침내 궁극의 영적인 열매로 익습니다.\n으뜸 제자는 한없는 시간과 견줄 데 없는 보시로 빚어집니다.",
+    "cover": null,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
