@@ -5,7 +5,7 @@ from PIL import Image
 sys.path.insert(0, os.path.dirname(__file__))
 from fetch_ocr import get, BASE
 cat = json.load(open("data/catalog.json", encoding="utf-8"))
-slug = sys.argv[1]; only = set(sys.argv[2:])
+slug = sys.argv[1]; only = set(sys.argv[2:]); fails = 0
 for sf, st in cat["books"][slug]["stories"].items():
     if only and sf not in only: continue
     sid = sf.rsplit(".", 1)[0]
@@ -21,7 +21,11 @@ for sf, st in cat["books"][slug]["stories"].items():
                 im = Image.open(c).convert("RGB")
         except Exception as e:
             # 한 장을 못 받아도 다른 책·이야기 미리보기는 계속 만든다
-            print("그림을 못 받음:", it["img"], e, flush=True); continue
+            print("그림을 못 받음:", it["img"], e, flush=True); fails += 1
+            if fails >= 3:
+                print(slug, ": 세 장 연속 못 받아 이 책 미리보기는 멈춤", flush=True); sys.exit(0)
+            continue
+        fails = 0
         im = im.resize((800, round(im.height * 800 / im.width)), Image.LANCZOS)
         o = f"review/{slug}/{sid}/{n:02d}.jpg"; os.makedirs(os.path.dirname(o), exist_ok=True); im.save(o, quality=80)
     print(sid, flush=True)
