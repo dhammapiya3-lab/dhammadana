@@ -19,6 +19,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TX = os.path.join(ROOT, 'content/texts/DL-0026.json')
 LAT = re.compile(r'[A-Za-zĀ-ſḀ-ỿ]{2}')
 HAN = re.compile(r'[가-힣]')
+TRANS_W = ['니다', '습니', '하고', '하며', '하여', '하는', '하게', '에게', '에서', '으로', '로써', '이다', '이며', '기를', '하시', '께서', '께 ', '들이', '들은', '들의', '들을', '하니', '지만', '하면', '에는', '이요', '이니', '함께', '모든', '부처님', '담마를', '담마에', '담마는', '담마의', '상가에', '상가를', '상가는', '상가의', '상가이', '스님', '것', '분,', '분.', '분이', '계를', '의 ', '는 ', '을 ', '를 ', '은 ']   # 번역 줄에 흔한 말 (한글 소리 줄에는 거의 없음)
 PAREN = re.compile(r'^[(（][^()（）]*[)）]$')
 
 def strip(l):
@@ -47,7 +48,7 @@ def items(n, ps):
             if not t: k += 1; continue
             if LAT.search(t) and (not HAN.search(re.sub(r'\([^)]*\)', '', t)) or re.match(r'^[^A-Za-zĀ-ſḀ-ỿ가-힣]*[A-Za-zĀ-ſḀ-ỿ]', t)):
                 grp = [(s, k)]; txt = [t]; k += 1
-                while k < len(ls) and HAN.search(strip(ls[k])) and not LAT.search(re.sub(r'\([^)]*\)', '', strip(ls[k]))) and not strip(ls[k]).startswith('['):
+                while k < len(ls) and HAN.search(strip(ls[k])) and not LAT.search(re.sub(r'\([^)]*\)', '', strip(ls[k]))) and not strip(ls[k]).startswith('[') and not (PAREN.match(strip(ls[k])) and '-' not in strip(ls[k])):
                     grp.append((s, k)); k += 1   # 한글 소리 줄
                 res.append((grp, ' / '.join(txt), True))
             else:
@@ -55,6 +56,33 @@ def items(n, ps):
                     res[-1][0].append((s, k))   # 다른 문단에 따로 놓인 한글 소리 줄은 앞 로마자 항목에 딸림
                 elif not PAREN.match(t): res.append(([(s, k)], t, False))
                 k += 1
+    # 로마자 줄 여러 개 뒤에 한글 소리 줄이 몰려 있으면 차례대로 한 줄씩 나눠 줌, 소리 줄 뒤에 이어진 번역 줄은
+    # 맨 끝 항목으로 따로 둠 (앞 항목 번호는 그대로) — 2026-11-19 내용 검수
+    def is_trans(sk):
+        t = strip(ps[sk[0]].split('\n')[sk[1]])
+        return '-' not in t and not t.startswith('(') and any(w in t for w in TRANS_W)
+    j = 0; extra = []
+    while j < len(res):
+        k = j
+        while k < len(res) and res[k][2] and len(res[k][0]) == 1 and res[k][0][0][0] == res[j][0][0][0]: k += 1
+        if k < len(res) and res[k][2] and res[k][0][0][0] == res[j][0][0][0]:
+            run = res[j:k + 1]; snd = run[-1][0][1:]
+            if all(x[0][0][1] == run[0][0][0][1] + n for n, x in enumerate(run)) and snd and snd[0][1] == run[-1][0][0][1] + 1:
+                n_s = 0
+                while n_s < len(snd) and not is_trans(snd[n_s]): n_s += 1
+                sounds, trans = snd[:n_s], snd[n_s:]
+                lead = j - 1 if (j > 0 and res[j - 1][2] and len(res[j - 1][0]) == 1 and res[j - 1][0][0][0] == run[0][0][0][0] - 1) else None
+                if len(sounds) == len(run) and len(run) > 1:
+                    for n, x in enumerate(run): res[j + n] = ([x[0][0], sounds[n]], x[1], x[2])
+                elif lead is not None and len(sounds) == len(run) + 1:
+                    res[lead] = (res[lead][0] + [sounds[0]], res[lead][1], res[lead][2])
+                    for n, x in enumerate(run): res[j + n] = ([x[0][0], sounds[n + 1]], x[1], x[2])
+                else:
+                    res[k] = ([res[k][0][0]] + sounds, res[k][1], res[k][2])
+                extra += trans
+            j = k + 1
+        else: j = max(k, j + 1)
+    for s0, k0 in extra: res.append(([(s0, k0)], strip(ps[s0].split('\n')[k0]), False))
     return [(i + 1, g, t, lat) for i, (g, t, lat) in enumerate(res)]
 
 def rlines(n, ps):
@@ -66,6 +94,12 @@ def rlines(n, ps):
             if not t or PAREN.match(t) or re.fullmatch(r'[-~]+', t): continue
             res.append((s, k, t))
     return [(i + 1, s, k, t) for i, (s, k, t) in enumerate(res)]
+
+_PG = None
+def body_line(n, s, k):
+    global _PG
+    if _PG is None: _PG = {x[0]: x[2] for x in pages()}
+    return _PG[n][s].split('\n')[k]
 
 def spreads():
     P = pages(); by = {n: (lab, ps) for n, lab, ps in P}
@@ -135,6 +169,13 @@ def build():
                     lg = []
                     for i in lt.split('+'):
                         if i[:1] == 'r': lg += [[n + 1] + r for r in parse_r(i[1:], R)]; continue   # 오른쪽 쪽 안의 짝 (r7=r8)
+                        m = re.fullmatch(r'(\d+)([<>].+)', i)   # 왼쪽 항목 로마자 줄의 한 토막: 5<sādhu · 5>sādhu (소리 줄은 앞 토막에 딸림)
+                        if m:
+                            it = L[int(m.group(1)) - 1]; s0, k0 = it[1][0]; cut = m.group(2).replace('_', ' ')
+                            t0 = strip(body_line(n, s0, k0)); ws = [w for w in re.split(r'[<>]', cut) if w]
+                            if not all(w in t0 for w in ws): raise ValueError(f'L{m.group(1)} 에 "{cut}" 없음: {t0}')
+                            lg.append([n, s0, k0, cut]); lg += [[n, s, k] for s, k in it[1][1:]] if cut[0] == '<' else []
+                            continue
                         if ':' in i: n2, i2 = i.split(':'); lg += [[int(n2), s, k] for s, k in SP[int(n2)][0][int(i2) - 1][1]]   # 다른 펼친 면의 왼쪽 항목
                         else: lg += [[n, s, k] for s, k in L[int(i) - 1][1]]
                     rg = []
@@ -143,6 +184,11 @@ def build():
                         if x[:1] == 'l':   # 왼쪽 쪽 안의 짝 (l3=l4, 왼쪽 항목 번호)
                             a, _, b = x[1:].partition('-'); b = b or a
                             for i in range(int(a), int(b) + 1): rg += [[n, s, k] for s, k in L[i - 1][1]]
+                            continue
+                        m = re.fullmatch(r'(\d+):l(\d+)(?:-(\d+))?', x)   # 다른 펼친 면의 왼쪽 항목 (476:l14-15)
+                        if m:
+                            n2 = int(m.group(1)); a2 = int(m.group(2)); b2 = int(m.group(3) or a2)
+                            for i in range(a2, b2 + 1): rg += [[n2, s, k] for s, k in SP[n2][0][i - 1][1]]
                             continue
                         if re.fullmatch(r'\d+:.+', x): rg += parse_r(x, R, SP)
                         else: rg += [[n + 1] + r for r in parse_r(x, R)]
