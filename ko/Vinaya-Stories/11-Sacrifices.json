@@ -1,0 +1,416 @@
+[
+ {
+  "img": "images/11-Sacrifices-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     58,
+     650,
+     150
+    ],
+    "ko": "고행자와 계율\n율장에 나오는 께니야 이야기",
+    "cover": [
+     222,
+     191,
+     151
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sacrifices-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     72,
+     650,
+     152
+    ],
+    "ko": "세존께서 아빠나에 이르셨습니다.\n바라문 전통을 따르는 결발 수행자 께니야는 사문 고따마의\n흠 없는 명성을 듣고 무엇을 올리면 좋을지 생각했습니다.",
+    "cover": [
+     217,
+     176,
+     128
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sacrifices-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     136,
+     66,
+     700,
+     170
+    ],
+    "ko": "열 분의 옛 선인 앗타까, 와마까, 와마데와, 웻사밋따,\n야마딱기, 앙기라사, 바라드와자, 와셋타, 깟사빠, 바구는\n저녁에 마실 것을 드셨습니다.",
+    "cover": [
+     213,
+     171,
+     124
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     248,
+     326,
+     710,
+     364
+    ],
+    "ko": "고따마도 똑같이 단식하시니, 즙은 받으실 수 있다.",
+    "cover": [
+     205,
+     160,
+     111
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sacrifices-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     72,
+     668,
+     152
+    ],
+    "ko": "께니야가 마실 것을 넉넉히 올립니다. 계율을 꼼꼼히 지키는\n비구들은 오후에 올린 것을 거절합니다.\n부처님께서 이르십니다. “비구들이여, 받아서 마셔라.”",
+    "cover": [
+     205,
+     166,
+     124
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     82,
+     290,
+     152,
+     320
+    ],
+    "ko": "즙",
+    "cover": [
+     226,
+     190,
+     150
+    ],
+    "align": "center",
+    "em": 17,
+    "label": true,
+    "dark": false,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     268,
+     290,
+     338,
+     320
+    ],
+    "ko": "즙",
+    "cover": [
+     226,
+     190,
+     150
+    ],
+    "align": "center",
+    "em": 17,
+    "label": true,
+    "dark": false,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sacrifices-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     72,
+     690,
+     128
+    ],
+    "ko": "께니야가 부처님과 비구 천이백오십 명을 내일 공양에 청합니다.\n부처님께서는 께니야가 바라문을 따르는 것을 헤아려 망설이십니다.",
+    "cover": [
+     198,
+     160,
+     124
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     240,
+     336,
+     720,
+     372
+    ],
+    "ko": "께니야가 세 번 청하자 세존께서 침묵으로 허락하십니다.",
+    "cover": [
+     195,
+     152,
+     110
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sacrifices-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     532,
+     82,
+     752,
+     358
+    ],
+    "ko": "부처님께서 출가\n규칙을 정하시어\n오후에 마실 수 있는\n여덟 가지를\n허락하셨습니다.\n• 망고\n• 잠부 열매\n• 씨 있는 바나나\n• 씨 없는 바나나\n• 마두까\n• 포도\n• 연뿌리\n• 달콤한 로위로위",
+    "cover": [
+     214,
+     174,
+     130
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sacrifices-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     88,
+     214,
+     398,
+     410
+    ],
+    "ko": "허락됨:\n과일즙(곡물은 제외)\n잎즙(채소는 제외)\n꽃즙(마두까는 제외)\n사탕수수즙",
+    "cover": [
+     199,
+     158,
+     117
+    ],
+    "align": "left",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     450,
+     214,
+     712,
+     340
+    ],
+    "ko": "금지됨:\n곡물즙\n채소즙\n마두까 꽃즙",
+    "cover": [
+     213,
+     170,
+     128
+    ],
+    "align": "left",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sacrifices-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     72,
+     564,
+     140
+    ],
+    "ko": "새벽에 께니야는 자기 암자에서\n훌륭한 음식을 마련해 부처님을 비롯한\n큰 승가에 손수 공양을 올렸습니다.",
+    "cover": [
+     212,
+     176,
+     138
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sacrifices-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     56,
+     740,
+     148
+    ],
+    "ko": "부처님께서 감사하시며 세상에서 으뜸인 것들을 밝히셨습니다.\n제사에는 불, 운율에는 사윗띠, 사람 가운데는 왕,\n강 가운데는 바다, 그리고 달과 해.",
+    "cover": [
+     202,
+     168,
+     127
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     470,
+     170,
+     640,
+     198
+    ],
+    "ko": "달과 해",
+    "cover": [
+     205,
+     172,
+     134
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     224,
+     684,
+     254
+    ],
+    "ko": "사람 가운데 왕",
+    "cover": [
+     201,
+     167,
+     130
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     532,
+     280,
+     744,
+     312
+    ],
+    "ko": "운율 가운데 사윗띠",
+    "cover": [
+     198,
+     163,
+     126
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     566,
+     340,
+     740,
+     370
+    ],
+    "ko": "제사에는 불",
+    "cover": [
+     192,
+     155,
+     120
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     598,
+     398,
+     750,
+     430
+    ],
+    "ko": "강 가운데 바다",
+    "cover": [
+     186,
+     149,
+     114
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sacrifices-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     56,
+     710,
+     148
+    ],
+    "ko": "“공덕을 바라며 제사 지내는 이들에게\n승가야말로 으뜸이다.”\n승가는 이 영적 차례의 가장 높은 꼭대기에 있습니다.",
+    "cover": [
+     199,
+     165,
+     127
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
