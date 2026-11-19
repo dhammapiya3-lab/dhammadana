@@ -51,6 +51,18 @@ def main():
     keep = set(sys.argv[sys.argv.index("--keep") + 1:]) if "--keep" in sys.argv else set()
     only = set(sys.argv[sys.argv.index("--only") + 1:]) if "--only" in sys.argv else set()
     b = cat["books"][slug]
+    # 먼저 그림 한 장만 받아 본다. 원 사이트가 그림을 안 주면 그 책은 건너뛴다 (2026-11-19: 율장 이야기에서
+    # 그림마다 2분씩 세 번 기다리느라 작업 전체가 한 시간 가까이 걸렸음)
+    first = next((i["img"] for st in b["stories"].values() for i in st["items"] if "img" in i), None)
+    if first and not os.environ.get("NOPROBE"):
+        try:
+            req = urllib.request.Request(BASE + slug + "/" + first, headers={"User-Agent": "dhammadana-korean-translation (CC BY-SA)"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                head = r.read(200); ctype = r.headers.get("Content-Type"); code = r.status
+        except Exception as e:
+            print(f"{slug}: 원 사이트에서 첫 그림을 받지 못해 이 책은 건너뜀 — {e!r}", flush=True); return
+        if head[:3] != b"\xff\xd8\xff" and head[:4] != b"\x89PNG":
+            print(f"{slug}: 첫 그림 주소가 그림이 아님 — 상태 {code}, 종류 {ctype}, 앞부분 {head[:160]!r}", flush=True); return
     for sf, st in b["stories"].items():
         if keep and sf not in keep:
             continue
