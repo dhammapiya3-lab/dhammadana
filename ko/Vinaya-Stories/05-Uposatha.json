@@ -1,0 +1,720 @@
+[
+ {
+  "img": "images/05-Uposatha-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     112,
+     352,
+     160
+    ],
+    "ko": "포살",
+    "cover": [
+     237,
+     206,
+     158
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     112,
+     646,
+     160
+    ],
+    "ko": "빠띠목카",
+    "cover": [
+     219,
+     184,
+     137
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     308,
+     330,
+     510,
+     392
+    ],
+    "ko": "보름마다 하는\n모임의 기원",
+    "cover": [
+     218,
+     181,
+     129
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     160,
+     354,
+     282
+    ],
+    "ko": "배경: 라자가하\n세존께서 라자가하의 독수리봉\n(깃자꾸따)에 머무셨습니다. 초기\n승가는 커 가고 있었지만 함께\n모이는 틀은 아직 없었습니다.",
+    "cover": [
+     218,
+     187,
+     149
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     150,
+     362,
+     264
+    ],
+    "ko": "외도 수행자들의 모임\n외도 수행자들은 보름 중 열나흘·\n보름·여드레에 모여 가르쳤습니다.\n사람들은 그들의 말을 들으러 몰려들어\n깊은 애정과 신뢰를 품었습니다.",
+    "cover": [
+     216,
+     185,
+     148
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     118,
+     160,
+     342,
+     262
+    ],
+    "ko": "왕의 생각\n홀로 있을 때 세니야 빔비사라\n왕은 생각했습니다. 성자들도\n이런 재일에 모이면\n어떨까?",
+    "cover": [
+     217,
+     188,
+     152
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     160,
+     360,
+     268
+    ],
+    "ko": "왕의 청\n빔비사라 왕이 생각을 말씀드리자\n부처님께서는 깊은 법문으로 왕을\n가르치고 북돋우고 고무하고\n기쁘게 하셨습니다.",
+    "cover": [
+     220,
+     190,
+     152
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     112,
+     160,
+     358,
+     268
+    ],
+    "ko": "첫 번째 허락\n왕이 떠난 뒤 부처님께서 비구들에게\n말씀하셨습니다. “비구들이여,\n보름 중 열나흘과 보름과 여드레에\n모이는 것을 허락한다.”",
+    "cover": [
+     217,
+     187,
+     149
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     116,
+     160,
+     352,
+     262
+    ],
+    "ko": "기대하는 재가자들\n가르치라는 분명한 말씀이 없어\n비구들은 모여서 그저 꼼짝 않고\n말없이 앉아 있었습니다.",
+    "cover": [
+     215,
+     183,
+     144
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     462,
+     128,
+     708,
+     166
+    ],
+    "ko": "말없는 비구들",
+    "cover": [
+     221,
+     188,
+     145
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     456,
+     76,
+     706,
+     180
+    ],
+    "ko": "사람들의 원성\n크게 실망한 사람들이 투덜댔습니다.\n“어찌 사꺄의 아들들은 벙어리 돼지처럼\n말없이 앉아 있는가? 법을\n말해야 하지 않는가?”",
+    "cover": [
+     214,
+     179,
+     143
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     112,
+     418,
+     212
+    ],
+    "ko": "승가의 대응\n출가 수행과 재가자의 기대 사이에\n어긋남이 있음을 안 비구들은\n사람들의 불평을 곧바로\n세존께 말씀드렸습니다.",
+    "cover": [
+     217,
+     183,
+     145
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     112,
+     436,
+     212
+    ],
+    "ko": "두 번째 허락\n부처님께서 모임에 가르침을 더해\n규칙을 다듬으셨습니다. “비구들이여,\n보름 중 정한 날에 모여서\n법을 설하는 것을 허락한다.”",
+    "cover": [
+     213,
+     179,
+     140
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     104,
+     616,
+     192
+    ],
+    "ko": "관찰:\n외도들은 재일에\n가르쳐 번성합니다.",
+    "cover": [
+     216,
+     183,
+     143
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     204,
+     616,
+     288
+    ],
+    "ko": "실행:\n비구들이 말없이 모이자\n재가자들이 외면합니다.",
+    "cover": [
+     213,
+     179,
+     142
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     302,
+     616,
+     394
+    ],
+    "ko": "다듬음:\n부처님께서 모임에\n법의 설함을 더하십니다.",
+    "cover": [
+     207,
+     172,
+     137
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     128,
+     116,
+     440,
+     222
+    ],
+    "ko": "포살의 토대\n이렇게 맞추어 간 것이 포살의 토대가\n되었습니다. 정기 모임에 가르침을 더해\n승가는 안으로 화합하고 재가자의\n신뢰도 이어졌습니다.",
+    "cover": [
+     213,
+     175,
+     138
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     110,
+     368,
+     334
+    ],
+    "ko": "홀로 머무시며 부처님께서\n깊은 이치를 아셨습니다.\n정해진 학습 계율을\n독송하는 것이 곧 포살의\n갈마가 된다는 것입니다.\n\n빠띠목카는 승가의 청정을\n지키려고 생겨났습니다.",
+    "cover": [
+     216,
+     193,
+     164
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     110,
+     364,
+     334
+    ],
+    "ko": "빠띠목카는 그저\n법조문의 목록이 아닙니다.\n\n그것은 유익한 마음\n상태의 시작이며, 입구이며,\n으뜸입니다.",
+    "cover": [
+     213,
+     189,
+     159
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     112,
+     368,
+     176
+    ],
+    "ko": "독송은 정해진\n절차를 따릅니다.",
+    "cover": [
+     211,
+     188,
+     158
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     118,
+     204,
+     326,
+     240
+    ],
+    "ko": "1. 모임을 부름",
+    "cover": [
+     210,
+     185,
+     152
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     96,
+     252,
+     356,
+     288
+    ],
+    "ko": "2. 청정을 밝힘",
+    "cover": [
+     209,
+     181,
+     147
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     82,
+     302,
+     372,
+     338
+    ],
+    "ko": "3. 계목을 독송함",
+    "cover": [
+     205,
+     176,
+     142
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     66,
+     350,
+     384,
+     388
+    ],
+    "ko": "4. 세 번 물음",
+    "cover": [
+     203,
+     175,
+     143
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     218,
+     46,
+     576,
+     104
+    ],
+    "ko": "세 번 물을 때 비구들은\n둘 가운데 하나를 택해야 합니다.",
+    "cover": [
+     216,
+     178,
+     140
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     116,
+     358,
+     296,
+     400
+    ],
+    "ko": "침묵:\n온전히 청정함을 뜻함.",
+    "cover": [
+     213,
+     172,
+     131
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     358,
+     684,
+     400
+    ],
+    "ko": "고백:\n있는 범계를 드러냄.",
+    "cover": [
+     215,
+     173,
+     132
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     94,
+     384,
+     332
+    ],
+    "ko": "드러내지 않은 범계를\n지닌 채 침묵하는 것은\n알면서 하는 거짓말입니다.\n\n이 무거운 장애는\n선정(자나)과 유익한 마음\n상태의 성취를 가로막습니다.",
+    "cover": [
+     210,
+     195,
+     180
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     94,
+     394,
+     332
+    ],
+    "ko": "있는 범계를 드러내면\n장애가 부서집니다.\n\n고백은 청정을 되찾아 주고\n선정과 궁극의 해탈을\n이루는 데 필요한\n편안함을 곧바로 줍니다.",
+    "cover": [
+     211,
+     196,
+     180
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     94,
+     394,
+     332
+    ],
+    "ko": "화합하려면 무리가\n갈라지지 않도록\n경계가 필요했습니다.\n\n부처님께서는 화합을 엄밀히\n정하셨습니다. 한 처소 안의\n모든 비구는 하나의 모임으로\n모여야 합니다.",
+    "cover": [
+     210,
+     194,
+     177
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     94,
+     394,
+     332
+    ],
+    "ko": "부처님께서는 승가의 영적\n여정을 지키려고 시간과\n공간과 행위를 빈틈없이\n엮으셨습니다.\n\n말: 빠띠목카 독송\n때: 보름마다\n곳: 한 처소",
+    "cover": [
+     211,
+     196,
+     178
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     396,
+     140,
+     446,
+     164
+    ],
+    "ko": "말",
+    "cover": [
+     236,
+     226,
+     204
+    ],
+    "align": "center",
+    "em": 15,
+    "label": true,
+    "dark": false,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     694,
+     140,
+     744,
+     164
+    ],
+    "ko": "때",
+    "cover": [
+     236,
+     226,
+     204
+    ],
+    "align": "center",
+    "em": 15,
+    "label": true,
+    "dark": false,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     620,
+     350,
+     670,
+     374
+    ],
+    "ko": "곳",
+    "cover": [
+     236,
+     226,
+     204
+    ],
+    "align": "center",
+    "em": 15,
+    "label": true,
+    "dark": false,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
