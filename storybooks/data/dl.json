@@ -72,11 +72,11 @@
 "zip": 11986001
 },
 "Foremost-Laymen": {
-"n": 38,
-"pdf": 56333779,
-"pdfs": 5984353,
-"stories": 2,
-"zip": 56063906
+"n": 69,
+"pdf": 103612273,
+"pdfs": 10943729,
+"stories": 3,
+"zip": 103330935
 },
 "Foremost-Laymen/01-Tapussa-and-Bhallika": {
 "n": 14,
@@ -87,6 +87,11 @@
 "n": 24,
 "pdf": 36206593,
 "zip": 35928167
+},
+"Foremost-Laymen/03-Citta": {
+"n": 31,
+"pdf": 47551270,
+"zip": 47266327
 },
 "Foremost-Laywomen": {
 "n": 175,
