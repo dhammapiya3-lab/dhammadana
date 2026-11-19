@@ -1,0 +1,347 @@
+[
+ {
+  "img": "images/18-Kosambi-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     312,
+     598,
+     398
+    ],
+    "ko": "꼬삼비의 분열\n옛 율장에 나오는 분열과 평화의 이야기",
+    "cover": [
+     221,
+     183,
+     132
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Kosambi-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     222,
+     342,
+     578,
+     432
+    ],
+    "ko": "한 비구가 범계를 인정하지 않았습니다.\n다른 이들은 그것을 분명히 보았습니다.\n작은 이견으로 시작된 일이 곧\n꼬삼비 승원의 화합을 깨뜨렸습니다.",
+    "cover": [
+     213,
+     177,
+     132
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Kosambi-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     232,
+     322,
+     566,
+     428
+    ],
+    "ko": "화합을 바라며 승가는 그 비구에게\n권리정지 갈마를 했습니다. 그러나 그는\n법과 율에 해박했기에 그 판정을\n말없이 받아들이지 않았습니다.",
+    "cover": [
+     210,
+     173,
+     131
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Kosambi-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     344,
+     742,
+     410
+    ],
+    "ko": "그는 권리정지가 무효라며 시골의 친구들을 모았습니다. 곧 두 무리가\n서로 옳다고 확신하며 꿈쩍 않고 맞섰습니다. 승가가 갈라졌습니다.",
+    "cover": [
+     216,
+     168,
+     112
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Kosambi-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     340,
+     742,
+     406
+    ],
+    "ko": "분열 소식을 들으신 부처님께서 나서셨습니다. 권리정지를 한 비구들에게는\n분열의 큰 위험을 경고하시고, 권리정지된 쪽에는 잘못을 바로잡으라고 권하셨습니다.",
+    "cover": [
+     209,
+     164,
+     115
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Kosambi-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     336,
+     742,
+     410
+    ],
+    "ko": "경고는 소용이 없었습니다. 두 무리는 함께 수행하기를 거부하고 거룩한 포살을\n따로 했습니다. 부처님께서는 서로의 교류가 완전히 끊겼기에 두 갈마 모두\n유효하다고 하셨습니다.",
+    "cover": [
+     210,
+     162,
+     110
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Kosambi-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     46,
+     690,
+     138
+    ],
+    "ko": "법을 둘러싼 다툼이 식당에서의 몸싸움으로 번졌습니다.\n놀란 사람들이 불평했습니다. “어찌 사꺄의 아들들이\n이런 볼썽사나운 짓을 하는가?”",
+    "cover": [
+     210,
+     163,
+     110
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Kosambi-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     336,
+     742,
+     412
+    ],
+    "ko": "부처님께서 폭력을 꾸짖으시고 새 규칙을 정하셨습니다. 승가가 갈라져\n적의가 가득할 때에는 몸이 닿지 않도록 비구들은\n사이에 빈자리를 하나 두고 앉아야 합니다.",
+    "cover": [
+     205,
+     158,
+     108
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Kosambi-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     336,
+     742,
+     410
+    ],
+    "ko": "그래도 다툼은 계속되었습니다. 손으로 치지 못하게 되자 그들은 말의 칼로\n서로를 찔렀습니다. 승가는 마비되어 법적 문제를 해결하지 못했습니다.",
+    "cover": [
+     198,
+     152,
+     106
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Kosambi-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     476,
+     76,
+     742,
+     360
+    ],
+    "ko": "“그만하라, 비구들이여.”\n부처님께서 간곡히 말씀하셨습니다.\n“다투지 말고, 논쟁하지 마라.”\n\n그러나 고집 센 비구가\n대답했습니다. “기다리십시오,\n세존이시여. 편히 지내십시오.\n이 다툼으로 알려지는 것은\n저희뿐입니다.”",
+    "cover": [
+     223,
+     186,
+     134
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Kosambi-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     242,
+     598,
+     384
+    ],
+    "ko": "부처님께서는 그들의 눈멂에 놀라셨습니다.\n“뼈를 부러뜨리는 이들과 소도둑들도\n어울려 지낸다. 어찌 너희에게는 화합이\n없겠느냐? 원한은 원한으로\n결코 가라앉지 않는다.”",
+    "cover": [
+     224,
+     191,
+     141
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Kosambi-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     470,
+     104,
+     740,
+     348
+    ],
+    "ko": "“그가 나를 욕했고,\n나를 때렸고,\n나를 이겼다.”\n\n이런 생각을 품는\n이에게 미움은 결코\n그치지 않는다.\n원한 없음으로만\n가라앉으니,\n이것은 영원한 법이다.",
+    "cover": [
+     221,
+     185,
+     134
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Kosambi-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     82,
+     568,
+     180
+    ],
+    "ko": "부처님께서 가르치셨습니다. 지혜롭고\n신중한 벗이자 길동무를 만나면\n기꺼이 함께 걸으며\n모든 위험을 함께 이겨 내라고.",
+    "cover": [
+     233,
+     206,
+     163
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Kosambi-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     420,
+     286,
+     740,
+     394
+    ],
+    "ko": "그러나 지혜로운 벗을 만나지 못하면\n갈라진 왕국을 떠나야 한다고\n하셨습니다. 부처님께서는 발우와\n가사를 들고 다툼을 뒤로하셨습니다.",
+    "cover": [
+     229,
+     192,
+     140
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Kosambi-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     316,
+     746,
+     432
+    ],
+    "ko": "“홀로 사는 삶이 낫다. 어리석은 이와는 벗할 수 없다.\n숲속의 코끼리처럼 편안히 지내며\n홀로 다니고 악을 짓지 마라.”",
+    "cover": [
+     219,
+     176,
+     122
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
