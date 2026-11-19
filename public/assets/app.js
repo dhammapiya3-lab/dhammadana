@@ -1008,9 +1008,9 @@ function renderReader() {
     </div></div>
     ${R.hl.length ? `<div class="variant-note" style="border-radius:0">찾은 말을 표시하고 있습니다. <button id="hlOff">표시 끄기</button></div>` : ''}
     <div class="r-body" id="rBody">${R.view === 'page' ? pageHtml(p) : reflowHtml()}</div>
-    <div class="r-bottom"><button class="tbtn" id="rPrev" ${(R.view === 'text' ? chapterOf(n) === 0 && !chHasSubs(n) : R.i === 0) ? 'disabled' : ''} aria-label="${R.view === 'text' ? '앞 소제목·이전 장' : '이전 쪽'}">‹</button>
+    <div class="r-bottom"><button class="tbtn" id="rPrev" ${(R.view === 'text' ? chapterOf(n) === 0 && !chHasSubs(n) && stepUnit() !== 'sent' && stepUnit() !== 'para' && stepUnit() !== 'page' : R.i === 0) ? 'disabled' : ''} aria-label="${R.view === 'text' ? stepName(-1) : '이전 쪽'}">‹</button>
       <label for="rRange" class="sr">쪽 이동</label><input type="range" id="rRange" min="1" max="${N}" value="${n}">
-      <span class="pg">${p.label ? esc(p.label) + '쪽 · ' : ''}${n} / ${N}</span><button class="tbtn" id="rNext" ${(R.view === 'text' ? chapterOf(n) >= chapters().length - 1 && !chHasSubs(n) : R.i === N - 1) ? 'disabled' : ''} aria-label="${R.view === 'text' ? '다음 소제목·다음 장' : '다음 쪽'}">›</button></div>
+      <span class="pg">${p.label ? esc(p.label) + '쪽 · ' : ''}${n} / ${N}</span><button class="tbtn" id="rNext" ${(R.view === 'text' ? chapterOf(n) >= chapters().length - 1 && !chHasSubs(n) && stepUnit() !== 'sent' && stepUnit() !== 'para' && stepUnit() !== 'page' : R.i === N - 1) ? 'disabled' : ''} aria-label="${R.view === 'text' ? stepName(1) : '다음 쪽'}">›</button></div>
     <div class="panel" id="p-find"><h5>이 책에서 찾기</h5>
       <form id="findForm" class="row" style="gap:6px"><input id="findQ" placeholder="찾을 말" aria-label="찾을 말" value="${esc(R.findQ || '')}" style="flex:1;height:36px;border:1px solid var(--line);border-radius:8px;padding:0 10px;background:var(--paper)"><button class="tbtn" type="submit">찾기</button></form>
       <div id="findRes">${R.findRes || '<p class="note">낱말을 넣으면 이 책의 모든 쪽에서 찾습니다. 위빳사나·vipassanā처럼 다른 표기도 함께 찾습니다.</p>'}</div></div>
@@ -1028,7 +1028,7 @@ function renderReader() {
     <div class="panel" id="p-tts">${ttsPanel()}</div>
     ${R.par.length ? `<div class="panel" id="p-par"><h5>⇄ 원서 대조</h5><div class="seg">${[['off', '끄기'], ['para', '문단 나란히'], ['sent', '문장마다']].map(([k, v]) => `<button data-parm="${k}" class="${R.parMode === k ? 'on' : ''}">${v}</button>`).join('')}</div>
       <p class="note">문단 나란히: 한국어 문단 옆(휴대폰은 아래)에 원서 문단. 문장마다: 한국어 문장과 원서 문장을 번갈아. 짝은 자동으로 맞춘 것이라 조금 어긋난 곳이 있을 수 있습니다.</p></div>` : ''}
-    <div class="panel" id="p-mode"><h5>화면 모드</h5><div class="seg">${[['day', '기본'], ['mono', '흑백'], ['night', '밤'], ['contrast', '고대비']].map(([k, v]) => `<button data-rmode="${k}" class="${store.get('mode', 'auto') === k ? 'on' : ''}">${v}</button>`).join('')}</div><p class="note">고른 모드는 사이트 전체에 적용되고 다음에 와도 유지됩니다.</p></div>
+    <div class="panel" id="p-mode"><h5>화면 모드</h5><div class="seg">${[['day', '기본'], ['mono', '흑백'], ['night', '밤'], ['contrast', '고대비']].map(([k, v]) => `<button data-rmode="${k}" class="${store.get('mode', 'auto') === k ? 'on' : ''}">${v}</button>`).join('')}</div><p class="note">고른 모드는 사이트 전체에 적용되고 다음에 와도 유지됩니다.</p>${R.view === 'text' ? `<h5 class="rstep-h">‹ › 넘기는 단위</h5><div class="seg" role="group" aria-label="‹ › 넘기는 단위">${STEP_UNITS.map(([k, v]) => `<button data-rstep="${k}" class="${stepUnit() === k ? 'on' : ''}">${v}</button>`).join('')}</div><p class="note">아래 바의 ‹ › 단추를 누르면 이 단위로 넘어갑니다. 쪽 막대를 끌어 옮기는 것은 그대로입니다.</p>` : ''}</div>
     <div class="panel" id="p-ul"><h5>이 책의 밑줄</h5><ul>${uls().filter(h => h.id === R.id).sort((a, b) => a.p - b.p).map(h => `<li style="display:block"><button class="link" data-go="${h.p}">${esc(h.pl || h.p)}쪽</button><div class="quote" style="font-size:13.5px">${esc(h.text)}</div>${h.note ? `<div class="small muted">${esc(h.note)}</div>` : ''}</li>`).join('') || '<li class="muted">글을 끌어서 고르면 밑줄을 그을 수 있습니다.</li>'}</ul>
       <div class="row"><a class="tbtn" href="/mynotes/">내 서재에서 모두 보기</a></div></div>
     <div class="panel" id="p-share"><h5>고른 글 공유하기</h5><div class="quote" id="shText" style="font-size:13.5px;white-space:pre-wrap"></div>
@@ -1109,7 +1109,92 @@ function bindReader() {
     }
   };
   el._stepSub = stepSub;  // Alt+Shift+↓↑ 단축키가 씀
-  $('#rPrev').onclick = () => R.view === 'text' ? stepSub(-1) : go(R.i); $('#rNext').onclick = () => R.view === 'text' ? stepSub(1) : go(R.i + 2); $('#rRange').onchange = e => go(+e.target.value);
+  // ‹ › 넘기는 단위 — 문장·문단·쪽·소제목·장 (운영자 요청, 2026-11-19: '화면' 창에서 고름, 처음 값 소제목, 이 기기에 기억)
+  const body0 = () => $('#rBody');
+  const yOf = e => { const b = body0(); return e.getBoundingClientRect().top - b.getBoundingClientRect().top + b.scrollTop - navOff(); };
+  const paraEls = () => $$('#rBody .reflow [data-pg][data-s]').filter(x => x.matches('p,div.r-toc,div.tbl,table,figure,div') && !x.matches('.fn,.ch-dup,.orn,[data-skip]') && !x.closest('.fn,.ch-dup') && x.getClientRects().length && (x.textContent || '').trim());
+  const speakFrom = e => {  // 듣는 중이면 옮긴 자리의 문단부터 이어 읽음
+    if (!e) return; const all = paraEls(); const p = e.matches && e.matches('[data-pg][data-s]') ? e : all.find(x => x === e || (e.compareDocumentPosition(x) & 4));
+    if (!p) return; stopSpeak(false); R.i = +p.dataset.pg - 1; speak(+p.dataset.s);
+  };
+  const flash = e => { if (!e || !e.classList) return; e.classList.add('found'); setTimeout(() => e.classList.remove('found'), 1400); };
+  const paraStep = d => {
+    const b = body0(), cur = b.scrollTop, all = paraEls();
+    const sp = R.speaking && $('#rBody .speaking');
+    let t = null;
+    if (sp) { const i = all.indexOf(sp); t = i < 0 ? null : all[i + d]; if (t) { speakFrom(t); return; } stepCh(d); setTimeout(() => speak(), 60); return; }  // 듣는 중: 앞·다음 문단부터 읽음, 장 끝·처음이면 다음·앞 장 처음부터
+    const ys = all.map(e => ({ e, y: yOf(e) }));
+    if (d > 0) t = ys.find(v => v.y > cur + 6); else t = ys.filter(v => v.y < cur - 6).pop();
+    if (!t) { if (d > 0) stepCh(1); else if (cur > 12) b.scrollTop = 0; else stepCh(-1); return; }
+    pin(t.e); flash(t.e); kbFocus(t.e);
+  };
+  const pageStep = d => {
+    const b = body0(), cur = b.scrollTop, ms = $$('#rBody .pmark').map(e => ({ e, y: yOf(e), n: +e.id.slice(3) }));
+    const spk = R.speaking && $('#rBody .speaking');
+    let t;
+    if (spk) { const pg = +spk.dataset.pg, first = paraEls().find(x => +x.dataset.pg === pg) === spk;  // 듣는 중: 쪽 처음에서 ‹ 면 앞 쪽, 쪽 중간이면 이 쪽 처음
+      t = d > 0 ? ms.find(v => v.n > pg) : first ? ms.filter(v => v.n < pg).pop() : ms.find(v => v.n === pg); }
+    else t = d > 0 ? ms.find(v => v.y > cur + 6) : ms.filter(v => v.y < cur - 6).pop();
+    if (t) { pin(t.e); kbFocus(t.e); if (R.speaking) speakFrom(t.e); return; }
+    if (d < 0 && cur > 12) { b.scrollTop = 0; return; }
+    const n = (ms.length ? (d > 0 ? ms[ms.length - 1].n : ms[0].n) : R.i + 1) + d;
+    if (n < 1 || n > R.pages.length) { toast(d > 0 ? '책의 끝입니다' : '책의 처음입니다'); return; }
+    const was = R.speaking; go(n);
+    setTimeout(() => { const m = $('#pm-' + n); if (m && m.getClientRects().length) { pin(m); kbFocus(m); } if (was) { R.i = n - 1; speak(); } }, 120);
+  };
+  const chStep = d => {
+    const b = body0(); if (d < 0 && b.scrollTop > 12) { b.scrollTop = 0; if (R.speaking) { const c = chapters()[chapterOf(R.i + 1)]; stopSpeak(false); if (c) R.i = c.from - 1; speak(); } return; }
+    const was = R.speaking; stepCh(d); if (was) setTimeout(() => speak(), 60);
+  };
+  // 문장: 문단 글을 '듣기'와 같은 규칙(splitSents)으로 나눠 그 문장에 노란 표시. 듣는 중이면 앞·다음 문장을 읽음
+  const sentRanges = p => {
+    const tw = document.createTreeWalker(p, NodeFilter.SHOW_TEXT), nodes = []; let n, all = '';
+    while ((n = tw.nextNode())) { nodes.push([n, all.length]); all += n.data; }
+    const ss = splitSents(all), out = []; let at = 0;
+    ss.forEach(x => { const i = all.indexOf(x.trim().slice(0, 4), at); const st = i < 0 ? at : i; const en = st + x.trim().length; at = en; out.push([st, en]); });
+    const pos = off => { for (let j = nodes.length - 1; j >= 0; j--) if (nodes[j][1] <= off) return [nodes[j][0], Math.min(off - nodes[j][1], nodes[j][0].data.length)]; return [p, 0]; };
+    return out.map(([a, z]) => { const r = document.createRange(); try { r.setStart(...pos(a)); r.setEnd(...pos(Math.max(a, z))); } catch (e) {} return r; });
+  };
+  const markSent = r => { try { if (window.CSS && CSS.highlights && window.Highlight) { if (r) CSS.highlights.set('rsent', new Highlight(r)); else CSS.highlights.delete('rsent'); } } catch (e) {} };
+  const sentStep = d => {
+    if (R.speaking && TT.jump) { TT.jump(d); return; }
+    const b = body0(), all = paraEls(), bt = b.getBoundingClientRect().top + navOff();
+    let st = R.sentAt && document.contains(R.sentAt.p) && all.includes(R.sentAt.p) ? R.sentAt : null;
+    if (st) { const r = sentRanges(st.p)[st.i]; const rc = r && r.getBoundingClientRect(); if (!rc || rc.bottom < bt - 4 || rc.top > b.getBoundingClientRect().bottom) st = null; }  // 화면에서 벗어났으면 지금 화면에서 다시
+    let p, i;
+    if (st) { p = st.p; i = st.i + d; let rs = sentRanges(p);
+      while (i < 0 || i >= rs.length) { const k = all.indexOf(p) + (i < 0 ? -1 : 1); if (k < 0 || k >= all.length) { markSent(null); R.sentAt = null; if (d > 0) stepCh(1); else stepCh(-1); return; } p = all[k]; rs = sentRanges(p); i = i < 0 ? rs.length - 1 : 0; }
+    } else {
+      // 지금 화면 맨 위(메뉴 아래)에 보이는 첫 문장 — › 는 그 문장, ‹ 는 그 앞 문장
+      let hit = null;
+      for (const e of all) { const rs = sentRanges(e); for (let j = 0; j < rs.length; j++) { const rc = rs[j].getBoundingClientRect(); if (rc.height && rc.top >= bt - 2) { hit = [e, j]; break; } } if (hit) break; }
+      if (!hit) { if (d > 0) stepCh(1); else stepCh(-1); return; }
+      [p, i] = hit; if (d < 0) { i--; if (i < 0) { const k = all.indexOf(p) - 1; if (k < 0) { if (b.scrollTop > 12) b.scrollTop = 0; else stepCh(-1); return; } p = all[k]; i = sentRanges(p).length - 1; } }
+    }
+    const r = sentRanges(p)[i]; if (!r) return; R.sentAt = { p, i }; markSent(r);
+    const rc = r.getBoundingClientRect(), bb = b.getBoundingClientRect(), bot = $('.r-bottom', el), lim = bb.bottom - (bot && !el.classList.contains('chrome-off') ? bot.offsetHeight : 0) - 8;
+    if (rc.top < bt || rc.bottom > lim) b.scrollTop += rc.top - bt - 4;  // 화면 밖이면 그 문장이 위쪽에 오게
+    kbFocus(p);
+  };
+  const stepBy = d => {
+    if (R.view !== 'text') { go(R.i + 1 + d); return; }
+    const u = stepUnit(); if (u !== 'sent') { markSent(null); R.sentAt = null; }
+    if (!R.speaking || u !== 'sent') toast(stepName(d));  // 먼저 알림 — 옮기다 '책의 끝입니다' 등이 뜨면 그 알림이 보이게
+    // 듣는 중이면 읽고 있는 문단 자리를 기준으로(화면이 다른 곳에 있어도) — 쪽·소제목이 듣는 곳에서 앞뒤로
+    const spk = R.speaking && $('#rBody .speaking'); if (spk && u === 'sub') { body0().scrollTop = Math.max(0, yOf(spk) + 2); R.lastPin = null; }
+    if (u === 'sent') sentStep(d);
+    else if (u === 'para') paraStep(d);
+    else if (u === 'page') pageStep(d);
+    else {
+      const ci = chapterOf(R.i + 1), was = R.speaking; R.pinEl = null;
+      if (u === 'ch') chStep(d); else stepSub(d);
+      // 옮긴 소제목·장 제목에 커서 — 화면 낭독기가 거기서부터 읽게(Alt+Shift+↓↑ 와 같음)
+      setTimeout(() => { const e = R.pinEl && document.contains(R.pinEl) ? R.pinEl : null, t = e || (chapterOf(R.i + 1) !== ci || u === 'ch' ? $('.ch-head h3') : null); if (!R.speaking) kbFocus(t); if (was && u === 'sub' && e) speakFrom(e); }, 160);
+    }
+  };
+  el._stepBy = stepBy;
+  $('#rPrev').onclick = () => stepBy(-1); $('#rNext').onclick = () => stepBy(1);
+  $$('[data-rstep]', el).forEach(b => b.onclick = () => { store.set('rstep', b.dataset.rstep); $$('[data-rstep]', el).forEach(x => x.classList.toggle('on', x === b)); const a = $('#rPrev'), z = $('#rNext'); if (a) a.setAttribute('aria-label', stepName(-1)); if (z) z.setAttribute('aria-label', stepName(1)); markSent(null); R.sentAt = null; sayKey(`‹ › 넘기는 단위: ${b.textContent}`); }); $('#rRange').onchange = e => go(+e.target.value);
   const ff = $('#findForm'); if (ff) ff.onsubmit = async ev => {
     ev.preventDefault(); const q = $('#findQ').value.trim(); R.findQ = q; if (!q) return;
     let V = []; try { V = (await data()).variants; } catch (e) {}
@@ -2698,7 +2783,7 @@ function panelA11y(el) {
   const mk = $('#rMark'); if (mk) mk.setAttribute('aria-keyshortcuts', 'Alt+Shift+B');
 }
 // 단축키: 브라우저·화면 낭독기 키와 겹치지 않게 Alt+Shift+글자 (WCAG 2.1.4 — 한 글자 키는 쓰지 않음)
-const KEYS = [['→', '다음 쪽'], ['←', '앞 쪽'], ['↓', '다음 목차 (소제목·장)'], ['↑', '앞 목차 (소제목·장)'], ['M', '메뉴 열기 (닫기 단추로 커서)'], ['P', '토글: 듣기 시작·멈춤 (듣는 동안 커서가 읽는 문단을 따라감)'], ['C', '지금 읽는 문단을 클립보드에 복사'], ['', '듣는 중에 → ← (Alt·Shift 없이): 다음 문장·앞 문장'], ['S', '토글: 듣기 설정 창 열기·닫기'], ['V', '토글: 화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['F', '토글: 글씨 창 열기·닫기 (크기·굵기·줄 간격·글꼴)'], ['N', '토글: 목차 창 열기·닫기'], ['B', '토글: 이 쪽에 책갈피 넣기·빼기'], ['L', '토글: 책갈피 목록 열기·닫기'], ['K', '지금 읽는 곳 알리기'], ['A', '토글: 오디오북 재생기로 가기 (오디오북이 있는 책 — 재생을 시작하고 커서를 재생 단추로, 다시 누르면 본문으로)'], ['H', '토글: 단축키 안내 열기·닫기']];
+const KEYS = [['→', '다음 쪽'], ['←', '앞 쪽'], ['↓', '다음 목차 (소제목·장)'], ['↑', '앞 목차 (소제목·장)'], ['M', '메뉴 열기 (닫기 단추로 커서)'], ['P', '토글: 듣기 시작·멈춤 (듣는 동안 커서가 읽는 문단을 따라감)'], ['C', '지금 읽는 문단을 클립보드에 복사'], ['', '듣는 중에 → ← (Alt·Shift 없이): 다음 문장·앞 문장'], ['S', '토글: 듣기 설정 창 열기·닫기'], ['V', '토글: 화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['F', '토글: 글씨 창 열기·닫기 (크기·굵기·줄 간격·글꼴)'], ['N', '토글: 목차 창 열기·닫기'], ['B', '토글: 이 쪽에 책갈피 넣기·빼기'], ['L', '토글: 책갈피 목록 열기·닫기'], ['K', '지금 읽는 곳 알리기'], ['U', '아래 바 ‹ › 넘기는 단위 바꾸기 (누를 때마다 문장 → 문단 → 쪽 → 소제목 → 장)'], ['A', '토글: 오디오북 재생기로 가기 (오디오북이 있는 책 — 재생을 시작하고 커서를 재생 단추로, 다시 누르면 본문으로)'], ['H', '토글: 단축키 안내 열기·닫기']];
 // 듣는 동안 커서(포커스)가 읽는 문단을 따라감 (운영자 요청, 2026-11-18 — 시각장애인 이용자: 듣던 문장을 바로 Shift+→ 로 골라 복사할 수 있게).
 // 커서가 본문·듣기 단추·앞서 읽던 문단에 있을 때만 옮김 — 설정 창 등 다른 곳에서 일하는 중이면 건드리지 않음
 // TTS(기기 목소리 '▶ 듣기')로 듣던 자리 — 책마다 하나, 읽던 자리(pos-·hist)·오디오북 자리(abpos-)와 따로 기억 (운영자 요청, 2026-11-18: 한 책이라도 TTS 로 듣던 곳과 오디오북으로 듣던 곳을 각각 이어 듣게)
@@ -2726,6 +2811,9 @@ function copyNow(root) {
 }
 // 쪽·목차 넘기기 단축키 (운영자 요청, 2026-11-18 — 시각장애인 이용자: 다음·앞 쪽, 다음·앞 목차)
 // 옮긴 뒤 커서를 그 쪽 표시(또는 제목)에 두어 화면 낭독기가 거기서부터 읽게 함
+var STEP_UNITS = [['sent', '문장'], ['para', '문단'], ['page', '쪽'], ['sub', '소제목'], ['ch', '장']];
+function stepUnit() { const u = store.get('rstep', 'sub'); return STEP_UNITS.some(x => x[0] === u) ? u : 'sub'; }
+function stepName(d) { const u = stepUnit(); return d > 0 ? ({ sent: '다음 문장', para: '다음 문단', page: '다음 쪽', sub: '다음 소제목', ch: '다음 장' })[u] : ({ sent: '앞 문장', para: '앞 문단', page: '앞 쪽', sub: '앞 소제목', ch: '앞 장' })[u]; }
 function kbFocus(t) { if (!t) return; if (!t.hasAttribute('tabindex')) t.tabIndex = -1; try { t.focus({ preventScroll: true }); } catch (e) {} }
 function kbPage(d) {
   const n = R.i + 1 + d; if (n < 1 || n > R.pages.length) { toast(d > 0 ? '책의 끝입니다' : '책의 처음입니다'); return; }
@@ -2772,6 +2860,7 @@ function readerKey(e) {
   const say = m => sayKey(m);
   switch (k) {
     case 'A': abFocus(); return true;
+    case 'U': { if (R.view !== 'text') { say('이 화면에서는 쪽 단위로만 넘어갑니다'); return true; } const i = STEP_UNITS.findIndex(x => x[0] === stepUnit()), u = STEP_UNITS[(i + 1) % STEP_UNITS.length]; store.set('rstep', u[0]); $$('[data-rstep]', el).forEach(x => x.classList.toggle('on', x.dataset.rstep === u[0])); const a = $('#rPrev'), z = $('#rNext'); if (a) a.setAttribute('aria-label', stepName(-1)); if (z) z.setAttribute('aria-label', stepName(1)); say(`‹ › 넘기는 단위: ${u[1]}`); return true; }  // 누를 때마다 문장 → 문단 → 쪽 → 소제목 → 장 (2026-11-19)
     case 'M': sayKey('메뉴'); el.classList.remove('chrome-off'); $$('.panel', el).forEach(x => x.classList.remove('open')); setTimeout(() => { const b = $('#rClose'); if (b) b.focus(); }, 30); return true;
     case 'P': { const b = $('#rSpeak'); if (!b) { say('이 화면에서는 듣기를 쓸 수 없습니다'); return true; } if (R.ttsLocked) { say('듣기가 잠겨 있습니다'); return true; } if (R.speaking) { stopSpeak(true); say('듣기 멈춤'); } else speak(); return true; }
     // 창 단축키는 켜고 끄기: 한 번 더 누르면 창을 닫고 연 단추로 커서가 돌아감 (운영자 요청, 2026-11-18 — Esc 도 그대로)

@@ -1367,3 +1367,8 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 .panel .fig-only{display:flex;align-items:center;gap:6px;font-size:13px;margin:0 0 8px;cursor:pointer}
 :root.mode-night .panel .fig-k,:root.mode-contrast .panel .fig-k{color:#ffd77a;border-color:rgba(255,215,122,.5)}
 :root.mode-night .panel li.fig,:root.mode-contrast .panel li.fig{background:rgba(255,215,122,.06)}
+
+/* ‹ › 넘기는 단위 — 문장 표시 (운영자 요청, 2026-11-19) */
+::highlight(rsent){background-color:#fff176;color:#1a1a1a}
+:root.mode-night ::highlight(rsent){background-color:#7a6a00;color:#fff}
+.panel .rstep-h{margin-top:14px}
