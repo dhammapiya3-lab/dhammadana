@@ -1372,3 +1372,9 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 ::highlight(rsent){background-color:#fff176;color:#1a1a1a}
 :root.mode-night ::highlight(rsent){background-color:#7a6a00;color:#fff}
 .panel .rstep-h{margin-top:14px}
+/* 양쪽으로 보기: 마우스를 올린 줄과 맞은편 짝 줄 강조 (운영자 요청, 2026-11-19) */
+.reflow.spread .spr-pg{position:relative}
+.reflow.spread .spr-pg>p{position:relative;z-index:1}
+.reflow.spread .spr-hl{position:absolute;z-index:0;pointer-events:none;background:rgba(255,210,0,.32);border:2px solid #e0a800;border-radius:6px}
+:root.mode-mono .reflow.spread .spr-hl{background:rgba(0,0,0,.10);border-color:#555}
+:root.mode-night .reflow.spread .spr-hl,:root.mode-contrast .reflow.spread .spr-hl{background:rgba(255,215,0,.18);border-color:#ffd700}

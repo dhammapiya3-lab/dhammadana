@@ -677,7 +677,7 @@ async function initReaderPage() {
   const pages = man.pages.map((p, i) => ({ n: i + 1, label: p.label || '', img: p.img ? base + p.img : '', big: p.big ? base + p.big : '', w: p.w, h: p.h, text: p.text || '' }));
   const last = store.get('pos-' + id, 1);
   R = {
-    id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, cover: root.dataset.cover || '', kakao: root.dataset.kakao || '', noCopy: root.dataset.nocopy === '1', pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, fnSite: man.fn_site || {}, spreadOk: (man.pages || []).some(p => p.text), spreadPali: !!man.spread, ly: man.ly || null,  // tdl: 표 그림 내려받기 (표 첫 칸 글 → 그림 주소, 운영자 요청 2026-11-12)
+    id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, cover: root.dataset.cover || '', kakao: root.dataset.kakao || '', noCopy: root.dataset.nocopy === '1', spFile: root.dataset.sp === '1', pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, fnSite: man.fn_site || {}, spreadOk: (man.pages || []).some(p => p.text), spreadPali: !!man.spread, ly: man.ly || null,  // tdl: 표 그림 내려받기 (표 첫 칸 글 → 그림 주소, 운영자 요청 2026-11-12)
      // say: 그림·표를 소리로 읽을 글 (그림 주소 → 글, 운영자 요청 2026-11-10)
    
     i: Math.min(Math.max(want || (last > 1 ? last : 0) || firstContent(pages, man.toc || []), 1), pages.length) - 1,
@@ -875,6 +875,74 @@ function sprAlign() {
 let sprAlignT = null;
 window.addEventListener('resize', () => { clearTimeout(sprAlignT); sprAlignT = setTimeout(() => { if (R && R.ly && spreadOn()) sprAlign(); }, 150); });
 if (document.fonts) document.fonts.addEventListener('loadingdone', () => { if (R && R.ly && spreadOn()) sprAlign(); });
+// 양쪽으로 보기에서 마우스를 올린 빠알리 줄과 그 뜻의 번역 줄(또는 줄 일부)을 함께 강조 (운영자 요청, 2026-11-19 — 이용자 건의)
+// 짝은 뜻으로 하나하나 지은 짝 자료 /parallel/<책>.spread.json (tools/dl0026_pairs.py) — units [{L:[[쪽,문단,줄]…], R:[[쪽,문단,줄,('<글'|'>글')?]…]}]
+// 인쇄본 줄 높이로 짝지으면 줄 수가 다른 묶음에서 틀리므로(2026-11-19 검사) 짝 자료가 있는 줄만 강조
+const SPH = { id: '', units: null, idx: null, loading: false };
+function sprHlData() {
+  if (!R || !R.id || !R.spFile) return null;
+  if (SPH.id === R.id) return SPH.idx;
+  if (SPH.loading === R.id) return null;
+  SPH.loading = R.id;
+  fetch(`/parallel/${R.id}.spread.json`).then(r => r.ok ? r.json() : null).then(j => {
+    SPH.id = SPH.loading; SPH.loading = false; SPH.units = j && j.units || []; SPH.idx = new Map();
+    SPH.units.forEach((u, i) => [...u.L, ...u.R].forEach(x => { const k = x[0] + ':' + x[1] + ':' + x[2]; (SPH.idx.get(k) || SPH.idx.set(k, []).get(k)).push(i); }));
+    if (sprHlLastE) sprHlMove(sprHlLastE);  // 짝 자료를 받는 동안 올려 둔 마우스 자리도 바로 강조
+  }).catch(() => { SPH.id = SPH.loading; SPH.loading = false; SPH.idx = new Map(); });
+  return null;
+}
+const sprHlClear = () => $$('#rBody .spr-hl').forEach(x => x.remove());
+const sprLineRange = (p, a, e) => { const brs = p.querySelectorAll('br'), r = document.createRange(); if (a > 0 && brs[a - 1]) r.setStartAfter(brs[a - 1]); else r.setStart(p, 0); if (brs[e]) r.setEndBefore(brs[e]); else r.setEnd(p, p.childNodes.length); return r; };
+function sprCutRange(p, k, cut) {  // 줄 k 안에서 '<글'(글 앞까지)·'>글'(글부터 끝까지) 자리
+  const r = sprLineRange(p, k, k), txt = r.toString();
+  let from = 0, to = txt.length; const m = /^>(.*?)(?:<(.*))?$/.exec(cut);
+  if (m) { const a = txt.indexOf(m[1]); if (a < 0) return r; from = a; if (m[2] != null) { const b = txt.indexOf(m[2], a); if (b >= 0) to = b; } }
+  else { const b = txt.indexOf(cut.slice(1)); if (b < 0) return r; to = b; }
+  const pos = n => { const tw = document.createTreeWalker(r.commonAncestorContainer.nodeType === 1 ? r.commonAncestorContainer : p, NodeFilter.SHOW_TEXT); let c = 0;
+    for (let t = tw.nextNode(); t; t = tw.nextNode()) { if (!r.intersectsNode(t)) continue; const s0 = t === r.startContainer ? r.startOffset : 0, e0 = t === r.endContainer ? r.endOffset : t.nodeValue.length; if (c + (e0 - s0) >= n) return [t, s0 + n - c]; c += e0 - s0; } return null; };
+  const A = pos(from), B = pos(to); if (A && B) { r.setStart(A[0], A[1]); r.setEnd(B[0], B[1]); } return r;
+}
+function sprHlBox(p, rng) {
+  const col = p.closest('.spr-pg'); if (!col) return;
+  const bs = [...rng.getClientRects()].filter(b => b.width > 1 && b.height > 1); if (!bs.length) return;
+  const c = col.getBoundingClientRect(), L = Math.min(...bs.map(b => b.left)), Rr = Math.max(...bs.map(b => b.right)), T = Math.min(...bs.map(b => b.top)), B = Math.max(...bs.map(b => b.bottom));
+  const d = document.createElement('div'); d.className = 'spr-hl'; d.setAttribute('aria-hidden', 'true');
+  Object.assign(d.style, { left: (L - c.left - 5) + 'px', top: (T - c.top - 2) + 'px', width: (Rr - L + 10) + 'px', height: (B - T + 4) + 'px' });
+  col.appendChild(d);
+}
+function sprHlUnitDraw(u) {
+  const body = $('#rBody'); if (!body) return;
+  const pOf = (n, s) => body.querySelector(`.spr-pg p[data-pg="${n}"][data-s="${s}"]`);
+  for (const side of [u.L, u.R]) {
+    const whole = side.filter(x => !x[3]), cuts = side.filter(x => x[3]);
+    const groups = []; whole.forEach(x => { const g = groups[groups.length - 1]; if (g && g.n === x[0] && g.s === x[1] && g.e === x[2] - 1) g.e = x[2]; else groups.push({ n: x[0], s: x[1], a: x[2], e: x[2] }); });
+    groups.forEach(g => { const p = pOf(g.n, g.s); if (p && p.offsetParent) sprHlBox(p, sprLineRange(p, g.a, g.e)); });
+    cuts.forEach(x => { const p = pOf(x[0], x[1]); if (p && p.offsetParent) sprHlBox(p, sprCutRange(p, x[2], x[3])); });
+  }
+}
+function sprHlPick(p, k, x, y) {  // 이 줄에 걸린 짝 가운데 마우스가 있는 쪽 (한 줄을 둘로 나눈 번역 줄)
+  const ids = (SPH.idx && SPH.idx.get(p.dataset.pg + ':' + p.dataset.s + ':' + k)) || []; if (ids.length < 2) return ids[0];
+  for (const i of ids) { const seg = [...SPH.units[i].L, ...SPH.units[i].R].find(z => z[0] == p.dataset.pg && z[1] == p.dataset.s && z[2] == k);
+    if (seg && seg[3] && [...sprCutRange(p, k, seg[3]).getClientRects()].some(b => x >= b.left - 2 && x <= b.right + 2 && y >= b.top - 2 && y <= b.bottom + 2)) return i; }
+  return ids[0];
+}
+let sprHlKey = '', sprHlRaf = 0;
+let sprHlLastE = null;
+function sprHlMove(e) {
+  sprHlLastE = e;
+  if (sprHlRaf) return;
+  sprHlRaf = requestAnimationFrame(() => {
+    sprHlRaf = 0;
+    const p = e.target && e.target.closest && e.target.closest('#rBody .reflow.spread .spr-pg p[data-s]');
+    if (!p || !R || !spreadOn() || (window.getSelection() + '') || !sprHlData()) { if (sprHlKey) { sprHlClear(); sprHlKey = ''; } return; }
+    const tops = lineTops(p); let k = 0; tops.forEach((t, i) => { if (t != null && t <= e.clientY + 2) k = i; });
+    const u = sprHlPick(p, k, e.clientX, e.clientY), key = u == null ? '' : 'u' + u;
+    if (key === sprHlKey) return;
+    sprHlClear(); sprHlKey = key; if (u != null) sprHlUnitDraw(SPH.units[u]);
+  });
+}
+document.addEventListener('mousemove', sprHlMove, { passive: true });
+document.addEventListener('mouseleave', () => { sprHlClear(); sprHlKey = ''; });
 function reflowHtml() {
   const cs = chapters(), ci = Math.max(0, chapterOf(R.i + 1)), c = cs[ci];
   const subs = R.toc.filter(t => /^\s/.test(t.title) && t.page >= c.from && t.page <= c.to);
