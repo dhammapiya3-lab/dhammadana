@@ -1,0 +1,435 @@
+[
+ {
+  "img": "images/14-Robes-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     330,
+     620,
+     398
+    ],
+    "ko": "출가자의 가사\n초기 승가의 규율과 한도와 간수",
+    "cover": [
+     207,
+     167,
+     125
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Robes-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     326,
+     160,
+     476,
+     300
+    ],
+    "ko": "가사의 일생\n세존께서는 가사를\n다스리는 네 기둥을\n세우셨습니다. 얻음,\n관리, 한도,\n간수입니다.",
+    "cover": [
+     223,
+     189,
+     147
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Robes-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     146,
+     366,
+     656,
+     438
+    ],
+    "ko": "비구들이 공동묘지에서 버려진 천을 모을 때는 함께 간 모두가 몫을\n받습니다. 늦게 오거나 밖에서 기다리거나 오지 못한 이에게도,\n천을 찾은 이는 마지못해서라도 몫을 나누어 주어야 합니다.",
+    "cover": [
+     220,
+     170,
+     126
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Robes-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     98,
+     236,
+     340
+    ],
+    "ko": "잃어버린 보시\n\n재가자들이 승원에 가사를\n가져왔지만 받을 이가 없어\n그냥 두고 갔습니다.\n가사는 버려지고\n잃어버렸습니다.\n\n낭비를 막으려고\n세존께서는 가사 받는\n이를 정식으로 뽑게\n하셨습니다.",
+    "cover": [
+     221,
+     179,
+     131
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Robes-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     368,
+     654,
+     440
+    ],
+    "ko": "다섯 가지 자격. 승가가 뽑은 가사 지기는 다섯 가지를 갖추어야 합니다.\n욕망·성냄·어리석음·두려움으로 치우치지 않아야 하고,\n받은 것과 보관한 것을 다 알아야 합니다.",
+    "cover": [
+     215,
+     168,
+     124
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Robes-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     500,
+     64,
+     736,
+     170
+    ],
+    "ko": "지나침의 짐\n비구들이 무거운 가사 꾸러미를 머리와\n어깨와 허리에 동여매고 다니는 것을\n보신 세존께서 사치로 되돌아감을\n아셨습니다. 굳은 한도가 필요했습니다.",
+    "cover": [
+     218,
+     183,
+     145
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Robes-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     130,
+     342,
+     250,
+     374
+    ],
+    "ko": "한데",
+    "cover": [
+     209,
+     163,
+     119
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     280,
+     342,
+     390,
+     374
+    ],
+    "ko": "초야",
+    "cover": [
+     224,
+     182,
+     132
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     416,
+     342,
+     560,
+     374
+    ],
+    "ko": "중야",
+    "cover": [
+     226,
+     185,
+     135
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     576,
+     342,
+     710,
+     374
+    ],
+    "ko": "새벽",
+    "cover": [
+     214,
+     170,
+     120
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     140,
+     376,
+     662,
+     442
+    ],
+    "ko": "겨울 추위를 시험하다. 몹시 추운 겨울 여드레 동안 세존께서는 한데 앉아\n밤의 한 때마다 가사를 한 벌씩 더하셨습니다. 새벽에는 네 벌이 필요했지만,\n추위를 타는 비구들도 세 벌이면 견딜 수 있다고 헤아리셨습니다.",
+    "cover": [
+     210,
+     163,
+     124
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Robes-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     64,
+     198,
+     308
+    ],
+    "ko": "세 가지\n가사의 허락\n\n세존께서 승가에\n엄격한 한도를\n정하셨습니다.\n두 겹의 겹가사,\n한 겹의 상의,\n한 겹의 하의입니다.",
+    "cover": [
+     218,
+     190,
+     160
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     520,
+     130,
+     676,
+     166
+    ],
+    "ko": "하의",
+    "cover": [
+     225,
+     186,
+     136
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     520,
+     222,
+     676,
+     256
+    ],
+    "ko": "상의",
+    "cover": [
+     221,
+     182,
+     135
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     560,
+     328,
+     746,
+     364
+    ],
+    "ko": "두 겹의 겹가사",
+    "cover": [
+     215,
+     172,
+     125
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Robes-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     368,
+     654,
+     442
+    ],
+    "ko": "열흘의 규칙\n여분의 가사는 두어서는 안 됩니다. 다만 그 자리에 없는\n동료에게 줄 여분의 가사라면 길어야 열흘까지 둘 수 있습니다.",
+    "cover": [
+     208,
+     163,
+     122
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Robes-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     400,
+     98,
+     508,
+     148
+    ],
+    "ko": "새 천:",
+    "cover": [
+     215,
+     175,
+     129
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     400,
+     184,
+     508,
+     240
+    ],
+    "ko": "철이 지나\n해진 천:",
+    "cover": [
+     214,
+     175,
+     130
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     400,
+     272,
+     508,
+     316
+    ],
+    "ko": "분소의:",
+    "cover": [
+     208,
+     166,
+     124
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     144,
+     366,
+     654,
+     442
+    ],
+    "ko": "깁고 겹쳐 대기\n세존께서는 깁는 것을 칭찬하셨습니다. 새 천은 정해진 겹을 지키고,\n철이 지나 해진 천은 두 겹으로 댈 수 있으며, 분소의는 원하는 만큼\n겹쳐 대도 됩니다. 덧대기와 허리띠도 권하셨습니다.",
+    "cover": [
+     204,
+     161,
+     121
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Robes-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     246,
+     62,
+     554,
+     150
+    ],
+    "ko": "가사의 중도\n가사의 규율은 중도를 보여 줍니다.\n쌓아 두는 사치는 막으면서도 승가가\n따뜻하고 보호받으며 잘 간수되게 합니다.",
+    "cover": [
+     216,
+     177,
+     138
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
