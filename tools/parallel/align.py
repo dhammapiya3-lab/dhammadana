@@ -141,7 +141,7 @@ def _kt(k): return tuple(map(int, k.split(':')))
 _SEG = []
 for sg in A.seg:
     kk, oo = sg.split('=')
-    oi = _oi(oo)
+    kk = kk.split('+')[0]; oi = _oi(oo.split('+')[0])   # 여러 문단 핀('A+B=@x+@y')이면 첫 문단이 경계
     _SEG.append((_kt(kk), oi))
 KSg = [sum(1 for k, _ in _SEG if _kt(KO_DP[x[0]]['key']) >= k) for x in KS]
 _POS = {i: n for n, i in enumerate(ORDER)}   # --move 뒤의 원서 순서
