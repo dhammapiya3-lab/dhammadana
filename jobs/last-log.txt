@@ -1,4 +1,5 @@
 Foremost-Laymen 04-Hatthaka-Alavaka 10 장
+Foremost-Laymen 05-Mahanama 14 장
 검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자3 [자리] 한글이 원래 글 자리(504,1041-620,1130)에서 벗어남 (809,1087)
 검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자4 [자리] 한글이 원래 글 자리(1997,1043-2042,1136)에서 벗어남 (1834,1087)
 Foremost-Nuns 03-Uppalavanna 37 장
@@ -32,11 +33,51 @@ Pannasa 42-Sucika 15 장
 Pannasa 46-Dukamma 13 장
 The-Great-Emancipation 29-The-Last-Meal 10 장
 The-Great-Emancipation 43-The-Story-Concerning-Mahakassapa 12 장
-자동 검수: 문제 의심 6 곳
-R2 에 올림: 942 개 / 한글판 이야기 179 편
+Vinaya-Stories 00-Veranja 37 장
+검수 Vinaya-Stories/01-Intercourse 21번 그림 상자7 [자리] 한글이 원래 글 자리(1692,1014-1889,1073)에서 벗어남 (1991,1047)
+Vinaya-Stories 01-Intercourse 27 장
+Vinaya-Stories 02-Theft 14 장
+Vinaya-Stories 03-Killing 15 장
+Vinaya-Stories 04-False-Claims 11 장
+Vinaya-Stories 05-Uposatha 20 장
+Vinaya-Stories 06-Rains 12 장
+Vinaya-Stories 07-Invitation 15 장
+Vinaya-Stories 08-Allowances 14 장
+Vinaya-Stories 09-Luxury 12 장
+Vinaya-Stories 10-Meat 15 장
+Vinaya-Stories 11-Sacrifices 10 장
+Vinaya-Stories 12-Kathina 11 장
+Vinaya-Stories 13-Jivaka 47 장
+Vinaya-Stories 14-Robes 11 장
+Vinaya-Stories 15-Visakha 15 장
+Vinaya-Stories 16-Sick 10 장
+Vinaya-Stories 17-Reconciliation 12 장
+Vinaya-Stories 18-Kosambi 15 장
+Vinaya-Stories 19-Dighavu 15 장
+Vinaya-Stories 20-Bamboo-Park 13 장
+Vinaya-Stories 21-Palileyyaka 10 장
+Vinaya-Stories 22-Banishment 11 장
+Vinaya-Stories 23-Reconciliation 14 장
+Vinaya-Stories 24-Suspension 11 장
+Vinaya-Stories 25-Views 15 장
+Vinaya-Stories 26-Innocence 14 장
+Vinaya-Stories 27-Supernormal-Powers 13 장
+Vinaya-Stories 28-Overturning-the-Bowl 10 장
+Vinaya-Stories 29-Dwellings 15 장
+Vinaya-Stories 30-Anathapindika 11 장
+Vinaya-Stories 31-Seniority 11 장
+Vinaya-Stories 32-Schism 62 장
+Vinaya-Stories 33-Pindapata 14 장
+Vinaya-Stories 34-Pupils-Duties 13 장
+Vinaya-Stories 35-Preceptors-Duties 12 장
+Vinaya-Stories 36-Patimokkha 14 장
+Vinaya-Stories 37-Bhikkhuni-Ordination 25 장
+자동 검수: 문제 의심 7 곳
+R2 에 올림: 2222 개 / 한글판 이야기 218 편
 공개 주소 확인: 200 1349727바이트
 이야기 Foremost-Laymen/04-Hatthaka-Alavaka {'pdf': 15152075, 'zip': 14876942, 'n': 10}
-책 Foremost-Laymen {'pdf': 118492567, 'pdfs': 12530697, 'zip': 118207491, 'stories': 4, 'n': 79}
+이야기 Foremost-Laymen/05-Mahanama {'pdf': 19291685, 'zip': 19009010, 'n': 14}
+책 Foremost-Laymen {'pdf': 137506599, 'pdfs': 14428383, 'zip': 137216542, 'stories': 5, 'n': 93}
 이야기 Foremost-Nuns/03-Uppalavanna {'pdf': 48945394, 'zip': 48665212, 'n': 37}
 책 Foremost-Nuns {'pdf': 385703536, 'pdfs': 40800199, 'zip': 385350851, 'stories': 13, 'n': 283}
 이야기 Jataka/012-The-Golden-Deer {'pdf': 18814472, 'zip': 18550255, 'n': 14}
@@ -68,28 +109,47 @@ R2 에 올림: 942 개 / 한글판 이야기 179 편
 이야기 The-Great-Emancipation/29-The-Last-Meal {'pdf': 9945475, 'zip': 9684873, 'n': 10}
 이야기 The-Great-Emancipation/43-The-Story-Concerning-Mahakassapa {'pdf': 13111346, 'zip': 12846676, 'n': 12}
 책 The-Great-Emancipation {'pdf': 247118492, 'pdfs': 25100760, 'zip': 246787278, 'stories': 20, 'n': 234}
-내려받기 파일: 33 묶음 새로 만듦
-글로 보기: 179 이야기
-To https://github.com/dhammapiya3-lab/dhammadana
- ! [rejected]        storybooks -> storybooks (fetch first)
-error: failed to push some refs to 'https://github.com/dhammapiya3-lab/dhammadana'
-hint: Updates were rejected because the remote contains work that you do not
-hint: have locally. This is usually caused by another repository pushing to
-hint: the same ref. If you want to integrate the remote changes, use
-hint: 'git pull' before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-Committer identity unknown
-
-*** Please tell me who you are.
-
-Run
-
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
-
-to set your account's default identity.
-Omit --global to set the identity only in this repository.
-
-fatal: empty ident name (for <runner@runnervm0hi8g.tmrcckyg3riehbbdw0tjeliahb.cx.internal.cloudapp.net>) not allowed
-error: cannot pull with rebase: Your index contains uncommitted changes.
-error: Please commit or stash them.
+이야기 Vinaya-Stories/00-Veranja {'pdf': 38199887, 'zip': 37930059, 'n': 37}
+이야기 Vinaya-Stories/01-Intercourse {'pdf': 29999364, 'zip': 29728948, 'n': 27}
+이야기 Vinaya-Stories/02-Theft {'pdf': 15943252, 'zip': 15677331, 'n': 14}
+이야기 Vinaya-Stories/03-Killing {'pdf': 17572136, 'zip': 17305873, 'n': 15}
+이야기 Vinaya-Stories/04-False-Claims {'pdf': 13881769, 'zip': 13611295, 'n': 11}
+이야기 Vinaya-Stories/05-Uposatha {'pdf': 24718682, 'zip': 24452966, 'n': 20}
+이야기 Vinaya-Stories/06-Rains {'pdf': 14017872, 'zip': 13762139, 'n': 12}
+이야기 Vinaya-Stories/07-Invitation {'pdf': 17254234, 'zip': 16998003, 'n': 15}
+이야기 Vinaya-Stories/08-Allowances {'pdf': 16784450, 'zip': 16514520, 'n': 14}
+이야기 Vinaya-Stories/09-Luxury {'pdf': 15368496, 'zip': 15105358, 'n': 12}
+이야기 Vinaya-Stories/10-Meat {'pdf': 17976750, 'zip': 17710366, 'n': 15}
+이야기 Vinaya-Stories/11-Sacrifices {'pdf': 11574993, 'zip': 11316993, 'n': 10}
+이야기 Vinaya-Stories/12-Kathina {'pdf': 13023952, 'zip': 12768448, 'n': 11}
+이야기 Vinaya-Stories/13-Jivaka {'pdf': 55487420, 'zip': 55213432, 'n': 47}
+이야기 Vinaya-Stories/14-Robes {'pdf': 13788773, 'zip': 13526254, 'n': 11}
+이야기 Vinaya-Stories/15-Visakha {'pdf': 17944799, 'zip': 17676509, 'n': 15}
+이야기 Vinaya-Stories/16-Sick {'pdf': 11529926, 'zip': 11268821, 'n': 10}
+이야기 Vinaya-Stories/17-Reconciliation {'pdf': 14230453, 'zip': 13975774, 'n': 12}
+이야기 Vinaya-Stories/18-Kosambi {'pdf': 17894689, 'zip': 17632472, 'n': 15}
+이야기 Vinaya-Stories/19-Dighavu {'pdf': 18265402, 'zip': 18004591, 'n': 15}
+이야기 Vinaya-Stories/20-Bamboo-Park {'pdf': 15416572, 'zip': 15153247, 'n': 13}
+이야기 Vinaya-Stories/21-Palileyyaka {'pdf': 11802891, 'zip': 11538391, 'n': 10}
+이야기 Vinaya-Stories/22-Banishment {'pdf': 14882989, 'zip': 14624547, 'n': 11}
+이야기 Vinaya-Stories/23-Reconciliation {'pdf': 16441967, 'zip': 16177563, 'n': 14}
+이야기 Vinaya-Stories/24-Suspension {'pdf': 11827934, 'zip': 11568477, 'n': 11}
+이야기 Vinaya-Stories/25-Views {'pdf': 18001180, 'zip': 17739680, 'n': 15}
+이야기 Vinaya-Stories/26-Innocence {'pdf': 17422109, 'zip': 17161303, 'n': 14}
+이야기 Vinaya-Stories/27-Supernormal-Powers {'pdf': 14906585, 'zip': 14644767, 'n': 13}
+이야기 Vinaya-Stories/28-Overturning-the-Bowl {'pdf': 12703203, 'zip': 12443085, 'n': 10}
+이야기 Vinaya-Stories/29-Dwellings {'pdf': 17559169, 'zip': 17293997, 'n': 15}
+이야기 Vinaya-Stories/30-Anathapindika {'pdf': 13566122, 'zip': 13299096, 'n': 11}
+이야기 Vinaya-Stories/31-Seniority {'pdf': 13444308, 'zip': 13182045, 'n': 11}
+이야기 Vinaya-Stories/32-Schism {'pdf': 74040491, 'zip': 73751360, 'n': 62}
+이야기 Vinaya-Stories/33-Pindapata {'pdf': 17210782, 'zip': 16950526, 'n': 14}
+이야기 Vinaya-Stories/34-Pupils-Duties {'pdf': 14742917, 'zip': 14475598, 'n': 13}
+이야기 Vinaya-Stories/35-Preceptors-Duties {'pdf': 13868127, 'zip': 13601022, 'n': 12}
+이야기 Vinaya-Stories/36-Patimokkha {'pdf': 17490984, 'zip': 17228018, 'n': 14}
+이야기 Vinaya-Stories/37-Bhikkhuni-Ordination {'pdf': 28518193, 'zip': 28253090, 'n': 25}
+책 Vinaya-Stories {'pdf': 729745872, 'pdfs': 73535691, 'zip': 729267404, 'stories': 38, 'n': 626}
+내려받기 파일: 73 묶음 새로 만듦
+글로 보기: 218 이야기
+10-Nakulapitu
+10-Kali
+39-Second-Council
