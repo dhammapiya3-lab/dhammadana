@@ -158,11 +158,18 @@
         "created": ""
       },
       "reader": false,
-      "sources": [],
-      "collection": "",
+      "sources": [
+        {
+          "file": "pdf",
+          "url": "http://www.calmvoice.org/book/view.asp?idx=20&cate=1",
+          "checked": "2026년 11월 19일",
+          "archive": ""
+        }
+      ],
+      "collection": "고요한소리 홈페이지",
       "collected": "",
-      "permission_status": "",
-      "notice": "",
+      "permission_status": "confirmed",
+      "notice": "법보시 게시를 허락해주신 고요한소리에 감사드립니다.",
       "permission_note": "",
       "permission_image": "",
       "permissions": [],
