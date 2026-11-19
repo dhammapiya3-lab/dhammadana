@@ -1,0 +1,496 @@
+[
+ {
+  "img": "images/08-Allowances-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     352,
+     616,
+     438
+    ],
+    "ko": "소나 꾸띠깐나의 여정과 다섯 가지 허락\n초기 불교 승가의 계율이 지역에 맞추어\n달라진 모습을 그림으로 살펴봅니다.",
+    "cover": [
+     215,
+     170,
+     124
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Allowances-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     356,
+     632,
+     432
+    ],
+    "ko": "청정범행을 닦고 싶은 마음이 일었습니다. 장자 소나 꾸띠깐나가\n마하깟짜나 장로에게 출가를 청했습니다. 장로는 출가의 길이\n몹시 어렵다며 서두르지 말라고 일렀습니다.",
+    "cover": [
+     204,
+     162,
+     124
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Allowances-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     356,
+     636,
+     432
+    ],
+    "ko": "남쪽 아완띠 지방에는 비구가 몹시 모자랐습니다.\n소나의 구족계에 필요한 비구 열 명을 모으는 데\n힘든 여정 끝에 삼 년이 걸렸습니다.",
+    "cover": [
+     200,
+     157,
+     122
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Allowances-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     356,
+     640,
+     432
+    ],
+    "ko": "안거를 마친 소나는 부처님을 뵙고 싶었습니다.\n마하깟짜나 장로는 험한 변방을 위한 다섯 가지\n청을 맡겨 그를 사왓티로 보냈습니다.",
+    "cover": [
+     198,
+     156,
+     121
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Allowances-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     64,
+     342,
+     736,
+     394
+    ],
+    "ko": "제따 숲에 이른 소나를 아난다 장로가 맞이했습니다. 찾아온 이의\n뜻을 아신 부처님께서는 그날 밤 소나에게 당신의 거처에 머물게 하셨습니다.",
+    "cover": [
+     214,
+     172,
+     130
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Allowances-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     356,
+     746,
+     444
+    ],
+    "ko": "새벽에 부처님께서 소나에게 말해 보라고 하셨습니다. 소나는\n‘앗타까 품(여덟 게송의 품)’을 아름답게 독송했습니다. 부처님께서는\n맑고 흠 없는 독송과 깊은 이해를 칭찬하셨습니다.",
+    "cover": [
+     197,
+     157,
+     114
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Allowances-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     356,
+     746,
+     444
+    ],
+    "ko": "소나는 절하고 마하깟짜나 장로의 말씀을 전했습니다. 그는 아완띠\n지방의 험한 지리와 풍습에 맞추어 계율을 다섯 가지로\n바꾸어 주시기를 청했습니다.",
+    "cover": [
+     201,
+     161,
+     118
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Allowances-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     346,
+     166,
+     494,
+     262
+    ],
+    "ko": "중국\n(중심 지역)",
+    "cover": [
+     221,
+     185,
+     138
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     336,
+     100,
+     460,
+     154
+    ],
+    "ko": "우시라다자\n(북)",
+    "cover": [
+     226,
+     190,
+     150
+    ],
+    "align": "center",
+    "em": 15,
+    "label": true,
+    "dark": false,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     508,
+     134,
+     620,
+     188
+    ],
+    "ko": "가장갈라\n(동)",
+    "cover": [
+     226,
+     190,
+     150
+    ],
+    "align": "center",
+    "em": 15,
+    "label": true,
+    "dark": false,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     196,
+     176,
+     286,
+     230
+    ],
+    "ko": "투나\n(서)",
+    "cover": [
+     226,
+     190,
+     150
+    ],
+    "align": "center",
+    "em": 15,
+    "label": true,
+    "dark": false,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     236,
+     614,
+     292
+    ],
+    "ko": "살라와띠\n(동남)",
+    "cover": [
+     226,
+     190,
+     150
+    ],
+    "align": "center",
+    "em": 15,
+    "label": true,
+    "dark": false,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     216,
+     286,
+     346,
+     338
+    ],
+    "ko": "세따깐니까\n(남)",
+    "cover": [
+     226,
+     190,
+     150
+    ],
+    "align": "center",
+    "em": 15,
+    "label": true,
+    "dark": false,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     60,
+     356,
+     746,
+     444
+    ],
+    "ko": "부처님께서 지리적 경계를 정하셨습니다. 중국(중심 지역)은 다섯 곳의\n경계 마을로 둘러싸여 있고, 그 밖은 변방으로 새로 맞춘\n규칙을 따릅니다.",
+    "cover": [
+     199,
+     159,
+     117
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Allowances-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     136,
+     70,
+     298,
+     106
+    ],
+    "ko": "중국",
+    "cover": [
+     211,
+     163,
+     115
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     494,
+     70,
+     662,
+     106
+    ],
+    "ko": "변방",
+    "cover": [
+     217,
+     168,
+     118
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     66,
+     322,
+     736,
+     384
+    ],
+    "ko": "첫째 허락: 구족계의 정족수. 중국에서는 비구 열 명이 있어야 구족계를 줄 수 있지만,\n변방에서는 율에 밝은 이 한 명을 포함해 비구 다섯 명이면 됩니다.",
+    "cover": [
+     221,
+     172,
+     122
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Allowances-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     382,
+     744,
+     436
+    ],
+    "ko": "둘째 허락: 발을 지키는 신발. 아완띠의 거칠고 검은 흙은 소 발굽에 심하게 패어 있습니다.\n다치지 않도록 부처님께서 변방에서는 여러 겹 바닥의 신발을 허락하셨습니다.",
+    "cover": [
+     216,
+     170,
+     124
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Allowances-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     384,
+     744,
+     436
+    ],
+    "ko": "셋째 허락: 물로 씻기. 아완띠 사람들은 목욕을 문화적으로나 몸으로나 크게 중요하게 여깁니다.\n이 지역의 필요를 아신 부처님께서 변방의 비구들에게 자주 목욕하는 것을 허락하셨습니다.",
+    "cover": [
+     213,
+     167,
+     122
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Allowances-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     268,
+     346,
+     304
+    ],
+    "ko": "에라구, 모라구, 맛자루, 잔뚜",
+    "cover": [
+     199,
+     162,
+     121
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     52,
+     334,
+     746,
+     388
+    ],
+    "ko": "넷째 허락: 깔개. 중국에서는 에라구나 잔뚜 같은 부드러운 풀을 쓰지만 아완띠에서는\n튼튼한 짐승 가죽이 필요합니다. 부처님께서 양·염소·사슴 가죽 깔개를 허락하셨습니다.",
+    "cover": [
+     208,
+     169,
+     124
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Allowances-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     78,
+     302,
+     722,
+     388
+    ],
+    "ko": "다섯째 허락: 가사 나누기. 시주가 경계 밖에 있는 비구에게 가사를 보냈을 때\n꼼꼼한 비구들은 그것을 잃을까 걱정했습니다. 부처님께서는 손에 들어오기\n전까지는 그 가사를 세지 않는다고 정하셨습니다.",
+    "cover": [
+     210,
+     175,
+     132
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Allowances-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     352,
+     730,
+     438
+    ],
+    "ko": "율은 땅에 맞추어 달라집니다. 소나의 여정을 통해 부처님께서는\n출가 규율이 원칙에서는 청정하게 지켜지면서도, 지역에 따라\n바뀌어 쓸데없는 고생을 덜게 하셨습니다.",
+    "cover": [
+     211,
+     165,
+     123
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
