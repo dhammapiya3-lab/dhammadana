@@ -1,0 +1,418 @@
+[
+ {
+  "img": "images/09-Nakulamata-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     256,
+     154,
+     546,
+     312
+    ],
+    "ko": "영원한 인연\n나꿀라삐따와 나꿀라마따의\n십만 겁에 걸친 업의 여정,\n그리고 생을 넘어 이어지는 관계에 관한\n부처님의 변치 않는 가르침",
+    "cover": [
+     247,
+     235,
+     212
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     258,
+     144,
+     544,
+     324
+    ],
+    "ko": "헌신의 씨앗\n함사와띠에서 빠두뭇따라 부처님께서\n한 제자를 으뜸이라 선언하시는 것을 본\n뒷날의 나꿀라삐따는 특별한 공양을\n올렸습니다. 그는 바로 그 칭호를 얻기를\n깊이 서원했고, 앞날을 예언하는\n축복을 받았습니다.",
+    "cover": [
+     230,
+     182,
+     110
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     446,
+     56,
+     754,
+     212
+    ],
+    "ko": "겁의 흐름\n그는 십만 겁 동안 천상과 인간 세계를\n오갔습니다. 마침내 고따마 부처님\n시대에, 영원한 짝 나꿀라마따와\n함께 부유한 집안에 태어났습니다.",
+    "cover": [
+     227,
+     180,
+     110
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     26,
+     598,
+     132
+    ],
+    "ko": "숭수마라기리에 오시다\n부처님께서 악어 울음에서 이름 난 숭수마라기리의\n베사깔라 숲(여자 귀신이 다스리는 숲)에 머무시자,\n부부는 마을 사람들과 함께 그분을 뵈러 갔습니다.",
+    "cover": [
+     238,
+     219,
+     185
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     370,
+     54,
+     752,
+     214
+    ],
+    "ko": "“아들아, 어디 갔다 이제 왔느냐?”\n타고난 부모의 사랑에 북받친 부부는\n부처님 발아래 엎드려 울었습니다.\n깊은 연민으로 부처님께서는 그들의\n기쁨이 가라앉을 때까지 발을\n붙들고 있게 두셨습니다.",
+    "cover": [
+     236,
+     219,
+     183
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     32,
+     656,
+     128
+    ],
+    "ko": "애정의 뿌리\n그 깊은 가족의 정은 보살과 함께한 지난 이천 생에서 왔습니다.\n• 오백 생: 아버지와 어머니   • 오백 생: 작은아버지와 작은어머니\n• 오백 생: 큰아버지와 큰어머니   • 오백 생: 외삼촌과 고모",
+    "cover": [
+     236,
+     217,
+     181
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     44,
+     596,
+     196
+    ],
+    "ko": "평정에서 깨달음으로\n북받친 감정이 평정으로 가라앉자 부처님께서\n그들의 마음 성향에 꼭 맞는 법문을 하셨습니다.\n가르침이 끝날 때 나꿀라삐따와 나꿀라마따는\n둘 다 수다원과를 얻었습니다.",
+    "cover": [
+     242,
+     233,
+     200
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     204,
+     42,
+     598,
+     164
+    ],
+    "ko": "영원을 바라는 소원\n늙도록 생각으로도 행동으로도 서로를 저버린 적이\n없는 부부가 부처님께 공양을 올리며 여쭈었습니다.\n“세존이시여, 어떻게 하면 지금 이 생에서도\n앞으로 오는 모든 생에서도 함께할 수 있습니까?”",
+    "cover": [
+     117,
+     88,
+     44
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     104,
+     266,
+     356
+    ],
+    "ko": "네 가지 조건\n부처님께서 ‘첫 번째 함께\n사는 이들 경’을 설하셨습니다.\n여러 생에 걸쳐 함께하려면\n부부의 업의 길이 맞아야\n합니다. 생과 생 사이를\n잇는 네 가지 덕을 꼭 같은\n만큼 지녀야 합니다.",
+    "cover": [
+     126,
+     76,
+     1
+    ],
+    "align": "center",
+    "em": 15,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     18,
+     690,
+     88
+    ],
+    "ko": "믿음과 계\n1. 같은 믿음: 가르침에 대한 믿음이 같음. 2. 같은 계: 생각·말·행동을 삼감.\n계가 같은 부부는 바르게 살고 다정하게 말하며 적대하는 이들의 악의에서 저절로 지켜집니다.",
+    "cover": [
+     223,
+     200,
+     159
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     26,
+     110,
+     124,
+     142
+    ],
+    "ko": "믿음",
+    "cover": [
+     174,
+     116,
+     47
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     420,
+     110,
+     500,
+     142
+    ],
+    "ko": "계",
+    "cover": [
+     173,
+     116,
+     47
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     30,
+     646,
+     82
+    ],
+    "ko": "보시와 지혜",
+    "cover": [
+     170,
+     107,
+     7
+    ],
+    "align": "center",
+    "em": 34,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     30,
+     96,
+     770,
+     178
+    ],
+    "ko": "3. 같은 보시: 도움을 구하는 이에게 함께 너그러운 마음.\n4. 같은 지혜: 실상에 대한 지혜가 같음. 지혜와 베푸는 손이 고루 맞으면\n부부는 세상과 법의 길을 참으로 나란히 걸어갑니다.",
+    "cover": [
+     240,
+     233,
+     215
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     102,
+     140,
+     126
+    ],
+    "ko": "저 세상",
+    "cover": [
+     127,
+     76,
+     16
+    ],
+    "align": "center",
+    "em": 15,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     44,
+     318,
+     140,
+     342
+    ],
+    "ko": "이 세상",
+    "cover": [
+     118,
+     70,
+     16
+    ],
+    "align": "center",
+    "em": 15,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     466,
+     154,
+     758,
+     312
+    ],
+    "ko": "이 세상과 저 세상의 이익\n네 덕이 맞는 부부가 법대로 살면\n이익이 불어납니다. 이 세상에서\n큰 기쁨을 누리고, 다음에는\n천상에서 함께 기뻐합니다.",
+    "cover": [
+     249,
+     242,
+     220
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     462,
+     150,
+     756,
+     306
+    ],
+    "ko": "예언이 이루어지다\n뒷날 제따와나에서 그 남다른 정과\n깊은 신뢰를 아신 부처님께서\n선언하셨습니다. “비구들이여,\n나와 가까운 우바이 가운데\n나꿀라마따가 으뜸이다.”",
+    "cover": [
+     246,
+     239,
+     215
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     354,
+     594,
+     448
+    ],
+    "ko": "고루 맞는 헌신의 길\n두 사람의 영원한 인연은 믿음·계·보시·지혜를\n함께 지닌 깊은 사랑이 궁극의 깨달음으로\n가는 힘센 수레가 됨을 보여 줍니다.",
+    "cover": [
+     215,
+     190,
+     146
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
