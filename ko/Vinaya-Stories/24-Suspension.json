@@ -1,0 +1,309 @@
+[
+ {
+  "img": "images/24-Suspension-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     316,
+     146,
+     560,
+     284
+    ],
+    "ko": "찬나의 권리정지\n꼬삼비의 승가 규율 이야기",
+    "cover": [
+     226,
+     199,
+     169
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Suspension-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     316,
+     36,
+     574,
+     182
+    ],
+    "ko": "세존께서 꼬삼비의 고시따 동산에\n머무셨습니다.\n\n승가에 둘러싸인 고요한 숲은\n신심과 고요한 관조로 가득했습니다.",
+    "cover": [
+     230,
+     212,
+     187
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Suspension-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     390,
+     90,
+     704,
+     358
+    ],
+    "ko": "찬나 장로가\n범계했습니다.\n\n그는 고집스럽게 참회를\n거부했습니다. 승가의 정해진\n규칙을 무시하고 출가의\n규율을 통째로\n저버렸습니다.",
+    "cover": [
+     216,
+     191,
+     161
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Suspension-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     400,
+     90,
+     724,
+     330
+    ],
+    "ko": "욕심 적은 비구들이\n투덜대며 불평했습니다.\n\n“어찌 찬나 장로는\n범계하고도 참회하려\n하지 않는가?” 그들은\n당황하여 서로 물었습니다.",
+    "cover": [
+     222,
+     198,
+     168
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Suspension-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     400,
+     82,
+     696,
+     224
+    ],
+    "ko": "걱정한 비구들이\n세존을 찾아뵙고\n가르침을 청했습니다.\n\n찬나가 자기 행동을 인정하고\n바로잡기를 고집스레 거부한다고\n말씀드렸습니다.",
+    "cover": [
+     226,
+     197,
+     160
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Suspension-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     420,
+     62,
+     698,
+     206
+    ],
+    "ko": "부처님께서 승가를\n모으셨습니다.\n\n“비구들이여, 찬나가 참회하려\n하지 않는다는 것이 사실이냐?”\n부처님께서 물으셨습니다.\n“사실입니다, 세존이시여.”",
+    "cover": [
+     230,
+     197,
+     153
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Suspension-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     400,
+     80,
+     670,
+     152
+    ],
+    "ko": "부처님께서 엄하게\n꾸짖으셨습니다.",
+    "cover": [
+     244,
+     228,
+     203
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     140,
+     184,
+     524,
+     366
+    ],
+    "ko": "“어찌 그 어리석은 자가\n참회하려 하지 않는가?\n이는 믿음 없는 이에게\n믿음을 주지 못한다.”",
+    "cover": [
+     243,
+     227,
+     201
+    ],
+    "align": "center",
+    "em": 23,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Suspension-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     24,
+     760,
+     130
+    ],
+    "ko": "부처님께서 승가에 새 기준을 정하셨습니다. 찬나 비구에게\n정식으로 권리정지 갈마를 하라.\n벌: 승가와 함께 먹지 못한다.",
+    "cover": [
+     221,
+     195,
+     167
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Suspension-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     330,
+     724,
+     358
+    ],
+    "ko": "부처님께서 정확한 절차를 밝히셨습니다.",
+    "cover": [
+     220,
+     188,
+     146
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     96,
+     358,
+     400,
+     402
+    ],
+    "ko": "1. 비구를 고발해야 한다.\n2. 계율을 일깨워야 한다.",
+    "cover": [
+     221,
+     189,
+     149
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     410,
+     358,
+     724,
+     402
+    ],
+    "ko": "3. 범계를 지워야 한다.\n4. 승가에 알려야 한다.",
+    "cover": [
+     221,
+     188,
+     151
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Suspension-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     290,
+     120,
+     720,
+     320
+    ],
+    "ko": "유능한 비구가 제안했습니다.\n\n“승가는 찬나를 권리정지한다.\n동의하는 이는 침묵하고,\n동의하지 않는 이는 말하라.”\n\n승가는 침묵했습니다.",
+    "cover": [
+     222,
+     191,
+     157
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/24-Suspension-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     336,
+     60,
+     724,
+     240
+    ],
+    "ko": "갈마가 받아들여졌습니다.\n\n비구들은 처소마다 다니며\n승가가 찬나를 정식으로\n권리정지했음을\n모두에게 알렸습니다.",
+    "cover": [
+     238,
+     217,
+     184
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
