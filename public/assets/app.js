@@ -3180,7 +3180,8 @@ function sListbox(ul) {
     const want = i; i = Math.max(0, Math.min(items.length - 1, i));
     if (focus && i === sel && want !== i) toast(want < 0 ? '목록의 처음입니다' : '목록의 끝입니다');  // 더 갈 곳이 없을 때도 소리로 알림
     sel = i;
-    items.forEach((li, k) => { const on = k === i; li.setAttribute('aria-selected', on ? 'true' : 'false'); li.tabIndex = on ? 0 : -1; li.classList.toggle('sel', on); });
+    // 고른 줄에만 aria-selected — 다른 줄에 'false' 를 두면 낭독기가 줄마다 '선택 안 됨'을 덧붙여 읽음 (운영자 요청 2026-11-19)
+    items.forEach((li, k) => { const on = k === i; if (on) li.setAttribute('aria-selected', 'true'); else li.removeAttribute('aria-selected'); li.tabIndex = on ? 0 : -1; li.classList.toggle('sel', on); });
     try { sessionStorage.setItem(key, i); } catch (e) {}
     if (focus) { try { items[i].focus({ preventScroll: true }); } catch (e) {} }
     const r = items[i].getBoundingClientRect(); if (r.top < 70 || r.bottom > innerHeight - 50) items[i].scrollIntoView({ block: 'center' });
