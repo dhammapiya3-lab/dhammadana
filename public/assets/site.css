@@ -1378,3 +1378,9 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 .reflow.spread .spr-hl{position:absolute;z-index:0;pointer-events:none;background:rgba(255,210,0,.32);border:2px solid #e0a800;border-radius:6px}
 :root.mode-mono .reflow.spread .spr-hl{background:rgba(0,0,0,.10);border-color:#555}
 :root.mode-night .reflow.spread .spr-hl,:root.mode-contrast .reflow.spread .spr-hl{background:rgba(255,215,0,.18);border-color:#ffd700}
+
+/* 각주 크기만 따로 (운영자 요청, 2026-11-20 — 읽기 화면 '글씨' 창 '각주 크기', app.js fnfsNow): 쪽 아래 각주와 각주 창 */
+.reflow p.fn{font-size:calc(.82em * var(--fnfs,1))}
+#fnPop{font-size:calc(15px * var(--fnfs,1))}
+#fnPop p{font-size:calc(15px * var(--fnfs,1))}
+#fnPop .r-tbl{font-size:calc(13px * var(--fnfs,1))}

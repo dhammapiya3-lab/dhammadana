@@ -711,7 +711,7 @@ function markUl(s, n) {
   return out + esc(s.slice(p));
 }
 function pageHtml(p) {
-  if (!p.img) return `<div class="reflow ${fontCls()}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${paras(p.text).map((s, k) => `<p data-pg="${p.n}" data-s="${k}">${markUl(s, p.n)}</p>`).join('') || '<p class="muted">빈 쪽입니다.</p>'}</div>`;
+  if (!p.img) return `<div class="reflow ${fontCls()}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--fnfs:${fnfsNow()};--lh:${R.lh};--mw:${R.mw}em">${paras(p.text).map((s, k) => `<p data-pg="${p.n}" data-s="${k}">${markUl(s, p.n)}</p>`).join('') || '<p class="muted">빈 쪽입니다.</p>'}</div>`;
   const src = R.zoom > 1.2 && p.big ? p.big : p.img;
   return `<div class="page-sheet img-sheet" style="width:min(${Math.round(560 * R.zoom)}px,100%);${p.w && p.h ? `aspect-ratio:${p.w}/${p.h}` : ''}"><img src="${esc(src)}" alt="${esc(R.title)} ${esc(pageName(p))}" draggable="false"></div>`;
 }
@@ -735,6 +735,11 @@ function chapters() {
   R._chs = out; R._chsToc = R.toc; return out;
 }
 // 목차 항목의 at(쪽 중간 시작 글)이 있으면 그 쪽에서 몇 번째 문단인지
+// 각주 글자 크기 — 본문 글자 크기와 따로 (운영자 요청, 2026-11-20). 100% = 예전 각주 크기, 이 기기에 기억(localStorage dd-rfnfs)
+const FNFS = [0.8, 0.9, 1, 1.15, 1.3, 1.5, 1.75, 2];
+function fnfsNow() { const v = +store.get('rfnfs', 1); return FNFS.includes(v) ? v : 1; }
+function fnfsApply() { document.documentElement.style.setProperty('--fnfs', fnfsNow()); }
+fnfsApply();
 function paraIdx(t) {
   if (!t || !t.at) return 0;
   const ps = paras((R.pages[t.page - 1] || {}).text), key = String(t.at).replace(/\s/g, '');
@@ -956,7 +961,7 @@ function reflowHtml() {
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}" data-ci="${ci - 1}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}" data-ci="${ci + 1}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   // 장 제목과 같아 숨긴 본문 제목에 각주 번호가 붙어 있으면(예: '보시의 실천⁷') 위의 큰 장 제목에 그 번호를 붙여 보임 (2026-11-11)
   const dupFn = [...body.matchAll(/<p [^>]*class="ch-dup"[^>]*>(.*?)<\/p>/g)].flatMap(m => m[1].match(/<sup class="fn-ref"[^>]*>[^<]*<\/sup>/g) || []).join('');
-  return `<div class="reflow ${fontCls()}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}${spreadOn() ? ' spread' : ''}${R.centerHeads ? ' chead' : ''}" style="--fs:${R.fs};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${boxNum(esc(c.title))}${dupFn}</h3></div>` : ''}${spreadOn() ? `<div class="spr">${body}</div>` : body}${nav}</div>`;
+  return `<div class="reflow ${fontCls()}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}${spreadOn() ? ' spread' : ''}${R.centerHeads ? ' chead' : ''}" style="--fs:${R.fs};--fnfs:${fnfsNow()};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${boxNum(esc(c.title))}${dupFn}</h3></div>` : ''}${spreadOn() ? `<div class="spr">${body}</div>` : body}${nav}</div>`;
 }
 // 이 장 안의 소제목 자리(화면의 문단) 목록
 // 굵은 글씨 한 줄만으로 된 짧은 문단(예: '[1. 사성제]', '수행이란 무엇인가?')도 소제목으로 봄 — 문장(. ! 로 끝남)·따옴표·괄호로 시작하는 강조 글은 빼고
@@ -1087,6 +1092,7 @@ function renderReader() {
     <div class="panel" id="p-font"><h5>글씨</h5>
       ${R.view === 'page' && hasImg ? `<div class="row">쪽 확대 <span><button class="tbtn" data-zoom="-1" aria-label="쪽 축소">−</button> ${Math.round(R.zoom * 100)}% <button class="tbtn" data-zoom="1" aria-label="쪽 확대">+</button></span></div>${hasText ? '<p class="note">쪽 보기에서는 원본 쪽을 확대합니다. 글자만 크게 보거나 밑줄을 그으려면 ‘글로 보기’로 바꾸세요.</p>' : ''}` :
       `<div class="row">글자 크기 <span class="fs-step"><button class="tbtn" data-fsd="-1" aria-label="글자 작게">가−</button><b aria-live="polite">${Math.round(R.fs * 100)}%</b><button class="tbtn" data-fsd="1" aria-label="글자 크게">가+</button></span></div>
+       <div class="row">각주 크기 <span class="fs-step"><button class="tbtn" data-fnd="-1" aria-label="각주 글자 작게">가−</button><b aria-live="polite">${Math.round(fnfsNow() * 100)}%</b><button class="tbtn" data-fnd="1" aria-label="각주 글자 크게">가+</button></span></div>
        <div class="row row-col">빨리 고르기 <span class="seg seg-grid">${[1, 1.5, 2, 3, 4].map(v => `<button data-fs="${v}" class="${R.fs === v ? 'on' : ''}" aria-label="글자 ${v * 100}%">${v * 100}%</button>`).join('')}</span></div>
        <div class="row">글자 굵기 <span class="seg"><button data-bold="0" class="${R.bold ? '' : 'on'}">보통</button><button data-bold="1" class="${R.bold ? 'on' : ''}">굵게</button></span></div>
        <div class="row">줄 간격 <span class="seg">${[[1.6, '좁게'], [1.9, '보통'], [2.2, '넓게']].map(([v, l]) => `<button data-lh="${v}" class="${R.lh === v ? 'on' : ''}">${l}</button>`).join('')}</span></div>
@@ -1369,6 +1375,8 @@ function bindReader() {
   const FS = [0.85, 1, 1.15, 1.3, 1.5, 1.75, 2, 2.25, 2.5, 3, 3.5, 4];
   $$('[data-fsd]', el).forEach(b => b.onclick = () => { const up = +b.dataset.fsd > 0; const v = up ? FS.find(x => x > R.fs + 0.001) : [...FS].reverse().find(x => x < R.fs - 0.001); if (v) { R.fs = v; store.set('rfs', R.fs); renderReader(); reopen('p-font'); } });
   $$('[data-bold]', el).forEach(b => b.onclick = () => { R.bold = b.dataset.bold === '1'; store.set('rbold', R.bold); renderReader(); reopen('p-font'); });
+  // 각주 크기만 따로 (운영자 요청, 2026-11-20) — 본문 글자 크기에 곱함, 쪽 아래 각주와 각주 창 모두
+  $$('[data-fnd]', el).forEach(b => b.onclick = () => { const cur = fnfsNow(), up = +b.dataset.fnd > 0; const v = up ? FNFS.find(x => x > cur + 0.001) : [...FNFS].reverse().find(x => x < cur - 0.001); if (v) { store.set('rfnfs', v); fnfsApply(); renderReader(); reopen('p-font'); toast('각주 크기 ' + Math.round(v * 100) + '%'); } });
   $$('[data-lh]', el).forEach(b => b.onclick = () => { R.lh = +b.dataset.lh; store.set('rlh', R.lh); renderReader(); reopen('p-font'); });
   $$('[data-font]', el).forEach(b => b.onclick = () => { R.font = b.dataset.font; loadReadFont(R.font); store.set('rfont', R.font); renderReader(); reopen('p-font'); });
   $$('[data-mw]', el).forEach(b => b.onclick = () => { R.mw = +b.dataset.mw; store.set('rmw', R.mw); renderReader(); reopen('p-font'); });
