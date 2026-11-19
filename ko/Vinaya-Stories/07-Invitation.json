@@ -1,0 +1,581 @@
+[
+ {
+  "img": "images/07-Invitation-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     300,
+     124,
+     690,
+     170
+    ],
+    "ko": "불편한 머묾",
+    "cover": [
+     240,
+     216,
+     179
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     320,
+     174,
+     672,
+     222
+    ],
+    "ko": "침묵의 서약에서 서로 일깨움으로\n사왓티에서 시작된 자자(빠와라나)의 기원",
+    "cover": [
+     240,
+     216,
+     179
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Invitation-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     62,
+     388,
+     212
+    ],
+    "ko": "다툼 없는 기쁨을 찾아\n서로 아는 비구들이 꼬살라에서\n안거에 들었습니다. 다툼도\n탁발 걱정도 없이 평화롭게\n지내고 싶어, 온전히 화합할\n방법을 찾았습니다.",
+    "cover": [
+     224,
+     193,
+     155
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Invitation-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     64,
+     340,
+     212
+    ],
+    "ko": "침묵의 서약\n비구들은 정했습니다.\n“서로 말하지 않으면\n화합해 지낼 수 있겠지.”\n그들은 손짓에만 기대어\n입을 닫기로 했습니다.",
+    "cover": [
+     226,
+     196,
+     158
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Invitation-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     280,
+     46,
+     520,
+     92
+    ],
+    "ko": "차가운 능률",
+    "cover": [
+     230,
+     202,
+     171
+    ],
+    "align": "center",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     70,
+     88,
+     730,
+     138
+    ],
+    "ko": "먼저 온 이는 자리와 물을 마련하고, 늦게 온 이는 남은 음식을 먹고 쓸고 치웠습니다.\n무거운 단지도 말없이 손짓만으로 함께 들었습니다.",
+    "cover": [
+     231,
+     203,
+     169
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Invitation-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     62,
+     396,
+     176
+    ],
+    "ko": "스승께 돌아가다\n석 달 안거를 마친 비구들은\n처소를 정돈하고 발우와 가사를\n들고 세존께 예를 올리려\n사왓티로 갔습니다.",
+    "cover": [
+     233,
+     205,
+     170
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Invitation-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     252,
+     64,
+     548,
+     180
+    ],
+    "ko": "여래의 물음\n부처님들은 늘 찾아온 비구들과 정답게\n인사를 나누십니다. 세존께서 물으셨습니다.\n“견딜 만하였느냐? 화합하고 기뻐하며\n다투지 않고 편안히 안거를 지냈느냐?”",
+    "cover": [
+     231,
+     203,
+     167
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Invitation-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     10,
+     640,
+     56
+    ],
+    "ko": "거짓 편안함을 내세우다",
+    "cover": [
+     227,
+     198,
+     169
+    ],
+    "align": "center",
+    "em": 29,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     96,
+     66,
+     704,
+     130
+    ],
+    "ko": "비구들은 자랑스럽게 잘 지냈다고 말씀드렸습니다. 철저한 침묵과\n손짓으로 지낸 방식을 설명하며 참으로 기쁘고 화합한 머묾을\n이루었다고 굳게 믿었습니다.",
+    "cover": [
+     225,
+     195,
+     165
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Invitation-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     10,
+     600,
+     56
+    ],
+    "ko": "가축처럼 함께 사는 것",
+    "cover": [
+     227,
+     198,
+     167
+    ],
+    "align": "center",
+    "em": 29,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     60,
+     388,
+     750,
+     444
+    ],
+    "ko": "부처님께서 엄하게 꾸짖으셨습니다. “어리석은 자들이 편안하다고 하나 실은 불편하게 지냈구나!\n소처럼, 염소처럼, 원수처럼 살았구나! 어찌 외도의 벙어리 서약을 했느냐?”",
+    "cover": [
+     221,
+     191,
+     160
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Invitation-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     346,
+     590,
+     394
+    ],
+    "ko": "침묵의 해독제",
+    "cover": [
+     222,
+     191,
+     162
+    ],
+    "align": "center",
+    "em": 29,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     60,
+     394,
+     750,
+     446
+    ],
+    "ko": "부처님께서는 벙어리 서약을 악작죄로 금하셨습니다. 대신 자자(빠와라나)를 정하시어\n열린 대화로 서로 따르게 하고 승가의 규율을 앞세우셨습니다.",
+    "cover": [
+     222,
+     192,
+     164
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Invitation-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     8,
+     630,
+     56
+    ],
+    "ko": "회피보다 책임을",
+    "cover": [
+     224,
+     195,
+     165
+    ],
+    "align": "center",
+    "em": 29,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     120,
+     64,
+     680,
+     112
+    ],
+    "ko": "안거를 마친 비구들은 세 가지 근거로\n승가에게 일깨워 달라고 청해야 합니다.",
+    "cover": [
+     223,
+     194,
+     166
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     82,
+     348,
+     258,
+     388
+    ],
+    "ko": "1. 본 것으로",
+    "cover": [
+     219,
+     188,
+     157
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     300,
+     348,
+     494,
+     388
+    ],
+    "ko": "2. 들은 것으로",
+    "cover": [
+     224,
+     194,
+     164
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     530,
+     348,
+     714,
+     388
+    ],
+    "ko": "3. 의심한 것으로",
+    "cover": [
+     218,
+     186,
+     154
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Invitation-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     8,
+     620,
+     56
+    ],
+    "ko": "자비로운 일깨움을 청함",
+    "cover": [
+     223,
+     189,
+     160
+    ],
+    "align": "center",
+    "em": 29,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     86,
+     64,
+     714,
+     114
+    ],
+    "ko": "“저는 본 것과 들은 것과 의심한 것으로 저를 일깨워 주시기를 승가에 청합니다.\n존자들께서 연민으로 말씀해 주십시오. 보면 바로잡겠습니다.”",
+    "cover": [
+     223,
+     191,
+     170
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Invitation-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     8,
+     600,
+     56
+    ],
+    "ko": "여섯 비구의 반항",
+    "cover": [
+     221,
+     191,
+     161
+    ],
+    "align": "center",
+    "em": 29,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     70,
+     64,
+     730,
+     114
+    ],
+    "ko": "장로 비구들은 겸손히 쪼그려 앉아 일깨움을 청했지만, 이름난 여섯 비구 무리는\n오만하게 자리에 앉아 있었습니다. 겸손한 비구들이 곧바로 세존께 알렸습니다.",
+    "cover": [
+     219,
+     189,
+     162
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Invitation-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     8,
+     560,
+     56
+    ],
+    "ko": "공경을 규칙으로",
+    "cover": [
+     221,
+     189,
+     157
+    ],
+    "align": "center",
+    "em": 29,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     70,
+     62,
+     730,
+     114
+    ],
+    "ko": "부처님께서 오만한 이들을 꾸짖으셨습니다. “장로 비구들이 쪼그려 앉아 있는데\n자리에 앉아 있어서는 안 된다.” 겸손한 자세를 거부하면 곧 악작죄가 된다고 정하셨습니다.",
+    "cover": [
+     216,
+     185,
+     158
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Invitation-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     8,
+     640,
+     56
+    ],
+    "ko": "규율과 연민의 균형",
+    "cover": [
+     219,
+     187,
+     154
+    ],
+    "align": "center",
+    "em": 29,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     60,
+     62,
+     740,
+     114
+    ],
+    "ko": "늙고 쇠약한 비구가 쪼그려 앉아 기다리다 기절했습니다. 사람의 연약함을 아신\n부처님께서 규칙을 고치셨습니다. 쪼그려 앉아 일깨움을 청하되, 청한 뒤에는 앉아도 된다.",
+    "cover": [
+     213,
+     181,
+     154
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Invitation-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     50,
+     704,
+     140
+    ],
+    "ko": "참여로 이루는 참된 화합\n참된 화합은 말을 피하는 데서가 아니라 체계 있고 자비로운\n책임에서 생깁니다. 자자는 불편한 머묾을 깊이 화합한 승가로 바꾸었습니다.",
+    "cover": [
+     234,
+     207,
+     169
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
