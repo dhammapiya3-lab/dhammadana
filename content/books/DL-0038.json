@@ -1,8 +1,8 @@
 {
   "id": "DL-0038",
-  "title": "테라와다(Theravāda) 불교사 (법문 교재)",
+  "title": "테라와다 불교사 (법문 교재)",
   "subtitle": "",
-  "cover": "",
+  "cover": "/uploads/테라와다_불교사_법문_교재_(B5).jpg",
   "byline": "아짠 빤냐와로 마하테로 법문",
   "translator": "",
   "teacher": "panyavaro",
@@ -114,10 +114,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "pdf/DL-0038/DL-0038_개정판.pdf"
+        "url": "pdf/DL-0038/DL-0038_개정판.pdf",
+        "site": "",
+        "created": ""
       },
       "pdf_print": {
         "mode": "none",
@@ -138,10 +138,10 @@
         "created": ""
       },
       "hwp": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "hwp/DL-0038/DL-0038_개정판.hwp"
+        "url": "hwp/DL-0038/DL-0038_개정판.hwp",
+        "site": "",
+        "created": ""
       },
       "reader": false,
       "sources": [
