@@ -1,0 +1,419 @@
+[
+ {
+  "img": "images/29-Dwellings-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     52,
+     648,
+     108
+    ],
+    "ko": "거처의 보시",
+    "cover": [
+     224,
+     191,
+     145
+    ],
+    "align": "center",
+    "em": 36,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     92,
+     346,
+     708,
+     402
+    ],
+    "ko": "라자가하에서 시작된 승가 거처의 기원",
+    "cover": [
+     220,
+     182,
+     136
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Dwellings-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     270,
+     164,
+     532,
+     282
+    ],
+    "ko": "거처가 허락되기 전에\n비구들은 자연에서 지냈습니다.\n깊은 숲, 산속 동굴, 공동묘지,\n오래된 나무 아래에서\n머물 곳을 찾았습니다.",
+    "cover": [
+     233,
+     192,
+     142
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Dwellings-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     310,
+     44,
+     740,
+     128
+    ],
+    "ko": "이른 아침 나서는 비구들은 흠 없는 위의로\n걸었습니다. 눈을 내리깔고 앞을 보며 걷는\n마음챙긴 몸가짐에서 고요함이 퍼졌습니다.",
+    "cover": [
+     231,
+     194,
+     144
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Dwellings-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     350,
+     44,
+     740,
+     128
+    ],
+    "ko": "라자가하의 부호가 그들의 조용한 위엄과\n평온한 몸가짐을 보았습니다. 그들을 보자\n그의 마음은 깊은 믿음으로 가득 찼습니다.",
+    "cover": [
+     229,
+     192,
+     144
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Dwellings-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     218,
+     274,
+     388,
+     370
+    ],
+    "ko": "스님들이시여,\n제가 거처를 지으면\n그곳에 머무시겠습니까?",
+    "cover": [
+     219,
+     180,
+     134
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     398,
+     274,
+     592,
+     370
+    ],
+    "ko": "장자여, 거처는\n아직 세존께서\n허락하지 않으셨습니다.",
+    "cover": [
+     224,
+     186,
+     138
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Dwellings-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     340,
+     758,
+     404
+    ],
+    "ko": "비구들은 대나무 숲에서 세존을 찾아뵙고 부호의 너그러운 뜻을 전했습니다.\n부처님께서는 법을 설하시어 그들을 이끄셨습니다.",
+    "cover": [
+     214,
+     171,
+     126
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Dwellings-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     62,
+     340,
+     152
+    ],
+    "ko": "부처님께서 선언하셨습니다.\n“비구들이여, 다섯 가지 바위\n거처를 허락한다. 정사,",
+    "cover": [
+     218,
+     179,
+     135
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     470,
+     62,
+     720,
+     152
+    ],
+    "ko": "반지붕 집, 누각,\n긴 건물, 그리고\n동굴이다.”",
+    "cover": [
+     227,
+     190,
+     143
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Dwellings-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     384,
+     740,
+     446
+    ],
+    "ko": "세존의 허락을 기뻐한 라자가하의 부호는\n하루 만에 거처 예순 채를 서둘러 세웠습니다.",
+    "cover": [
+     228,
+     191,
+     149
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Dwellings-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     68,
+     64,
+     440,
+     170
+    ],
+    "ko": "승원이 다 지어지자 부호는 승가에 공양을\n올리는 영광을 청했습니다.\n세존께서는 침묵으로 허락하셨습니다.",
+    "cover": [
+     230,
+     198,
+     156
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Dwellings-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     326,
+     694,
+     404
+    ],
+    "ko": "다음 날 부호는 부처님을 비롯한 승가에\n손수 훌륭한 음식을 올렸습니다. 공양을 마치시고\n부처님께서 발우에서 손을 떼셨습니다.",
+    "cover": [
+     226,
+     191,
+     149
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Dwellings-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     62,
+     288,
+     152
+    ],
+    "ko": "“이 승원 예순 채를\n어떻게 하면\n좋겠습니까?”",
+    "cover": [
+     232,
+     201,
+     156
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     512,
+     62,
+     742,
+     162
+    ],
+    "ko": "“사방승가를 위해,\n이미 온 이와 아직 오지\n않은 이를 위해\n세우십시오.”",
+    "cover": [
+     223,
+     187,
+     147
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Dwellings-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     46,
+     700,
+     124
+    ],
+    "ko": "부처님께서 감사의 게송을 읊으셨습니다.\n“추위와 더위와 맹수를 막아 주고,\n기는 것들과 모기, 찬 계절의 비를 막아 준다.”",
+    "cover": [
+     224,
+     191,
+     151
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Dwellings-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     338,
+     706,
+     402
+    ],
+    "ko": "편안함을 넘어 참된 목적은 영적인 것입니다.\n거처는 명상하고 통찰을 닦는 데 머물 곳을 줍니다.",
+    "cover": [
+     218,
+     182,
+     141
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Dwellings-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     338,
+     708,
+     402
+    ],
+    "ko": "승가에 거처를 보시하는 것을 부처님께서는 으뜸이라 찬탄하셨습니다.\n지혜로운 이는 그곳에 많이 배운 이들을 머물게 해야 합니다.",
+    "cover": [
+     215,
+     178,
+     137
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/29-Dwellings-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     64,
+     460,
+     172
+    ],
+    "ko": "바른 이들을 받들면 보시자는 모든 괴로움을\n없애는 가르침을 듣습니다. 이 가르침을\n깨달은 이는 번뇌 없이\n마지막 열반(닙바나)에 이릅니다.",
+    "cover": [
+     227,
+     195,
+     156
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
