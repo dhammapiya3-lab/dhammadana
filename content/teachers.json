@@ -136,6 +136,25 @@
       "rank": 380
     },
     {
+      "id": "nyanaponika",
+      "name": "냐나뽀니까 스님",
+      "roman": "Ñāṇapoṇika",
+      "aliases": [
+        "Nyanaponika",
+        "Nyanaponika Thera",
+        "Ñāṇapoṇika Thera",
+        "냐나뽀니까 테라",
+        "냐나포니카"
+      ],
+      "country": [
+        "서양"
+      ],
+      "tradition": "srilanka-etc",
+      "bio": "",
+      "photo": "",
+      "rank": 385
+    },
+    {
       "id": "nanamoli",
       "name": "냐나몰리 스님",
       "roman": "Ñāṇamoli",

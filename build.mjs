@@ -680,7 +680,7 @@ put('press/support/index.html', layout({ title: '후원계좌', nav: 'press', pa
 const PUBS = () => { const m = new Map(); for (const b of LIB()) for (const p of pubsAll(b)) { const o = m.get(p.key) || { key: p.key, names: {}, n: 0 }; o.names[p.name] = (o.names[p.name] || 0) + 1; o.n++; m.set(p.key, o); }
   return [...m.values()].filter(o => { const p = provOfPub(o.key); return !(p && p.coop === false); })  // 협력 단체가 아닌 출판사(불교시대사 등)는 찾아보기에 안 넣음 (운영자 요청, 2026-11-12)
     .map(o => ({ key: o.key, name: provOfPub(o.key)?.filter_name || Object.entries(o.names).sort((a, b) => b[1] - a[1])[0][0], n: o.n })).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, 'ko')); };
-const BTYPES = ['경전', '예불집', '법문집', '해설서', '잠언집', '수행기', '사전'];
+const BTYPES = ['경전', '예불집', '법문집', '해설서', '잠언집', '수행기', '일대기', '사전'];
 const LANGS = ['빠알리어', '영어', '미얀마어', '태국어', '싱할라어', '한국어', '기타'].filter(l => LIB().some(b => langsOf(b).includes(l)));
 function libraryBody() {
   const chk = (set, val, label, n, extra = '') => `<label class="${n === 0 ? 'zero' : ''}"><input type="checkbox" data-f="${set}" value="${esc(val)}">${label}${extra}<span class="n">${n}</span></label>`;
