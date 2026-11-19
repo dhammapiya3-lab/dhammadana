@@ -71,6 +71,58 @@
 "pdf": 12272198,
 "zip": 11986001
 },
+"Foremost-Laywomen": {
+"n": 175,
+"pdf": 455905878,
+"pdfs": 26713247,
+"stories": 9,
+"zip": 455589338
+},
+"Foremost-Laywomen/01-Sujata": {
+"n": 15,
+"pdf": 21655910,
+"zip": 21376916
+},
+"Foremost-Laywomen/02-Visakha": {
+"n": 44,
+"pdf": 182515318,
+"zip": 182220940
+},
+"Foremost-Laywomen/03-04-Khujjuttara-Samavati": {
+"n": 40,
+"pdf": 151416181,
+"zip": 150566038
+},
+"Foremost-Laywomen/05-Uttara-Nandamata": {
+"n": 14,
+"pdf": 20725981,
+"zip": 20452963
+},
+"Foremost-Laywomen/06-Suppavasa": {
+"n": 9,
+"pdf": 11632274,
+"zip": 11355409
+},
+"Foremost-Laywomen/07-Suppiya": {
+"n": 13,
+"pdf": 18022970,
+"zip": 17745820
+},
+"Foremost-Laywomen/08-Katiyani": {
+"n": 14,
+"pdf": 19978971,
+"zip": 19697170
+},
+"Foremost-Laywomen/09-Nakulamata": {
+"n": 14,
+"pdf": 16505743,
+"zip": 16235015
+},
+"Foremost-Laywomen/10-Kali": {
+"n": 12,
+"pdf": 16207089,
+"zip": 15933397
+},
 "Foremost-Monks": {
 "n": 802,
 "pdf": 1121534741,
@@ -270,10 +322,10 @@
 },
 "Foremost-Nuns": {
 "n": 283,
-"pdf": 385819325,
-"pdfs": 40815084,
+"pdf": 385726253,
+"pdfs": 40803996,
 "stories": 13,
-"zip": 385466640
+"zip": 385373568
 },
 "Foremost-Nuns/01-Maha-Pajapati-Gotami": {
 "n": 30,
@@ -287,8 +339,8 @@
 },
 "Foremost-Nuns/03-Uppalavanna": {
 "n": 37,
-"pdf": 49061183,
-"zip": 48781001
+"pdf": 48968111,
+"zip": 48687929
 },
 "Foremost-Nuns/04-Patacara": {
 "n": 30,
