@@ -1,0 +1,304 @@
+[
+ {
+  "img": "images/28-Overturning-the-Bowl-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     234,
+     356,
+     566,
+     388
+    ],
+    "ko": "엎어진 발우",
+    "cover": [
+     213,
+     177,
+     134
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     234,
+     388,
+     566,
+     430
+    ],
+    "ko": "옛 승가 규율에 나오는 잘못과\n되찾음의 이야기",
+    "cover": [
+     207,
+     165,
+     124
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Overturning-the-Bowl-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     320,
+     282,
+     348
+    ],
+    "ko": "첫 번째 예",
+    "cover": [
+     215,
+     173,
+     122
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     316,
+     320,
+     506,
+     348
+    ],
+    "ko": "두 번째 예",
+    "cover": [
+     219,
+     178,
+     128
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     538,
+     320,
+     724,
+     348
+    ],
+    "ko": "세 번째 예",
+    "cover": [
+     219,
+     178,
+     127
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     72,
+     348,
+     734,
+     392
+    ],
+    "ko": "릿차위족 왓다는 벗인 멧띠야 비구와 부마자까 비구에게 거듭 예를 올렸습니다.\n세 번 예를 올렸지만 세 번 다 그들은 일부러 침묵했습니다.",
+    "cover": [
+     213,
+     173,
+     128
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Overturning-the-Bowl-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     498,
+     90,
+     722,
+     358
+    ],
+    "ko": "불만을 품은\n비구들은 말라족 답바가\n자기들을 모질게\n괴롭힌다고 했습니다.\n왓다의 의리를 이용해,\n답바를 당장 쫓아내려고\n큰 죄를 지었다고 거짓으로\n고발하게 했습니다.",
+    "cover": [
+     214,
+     174,
+     126
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Overturning-the-Bowl-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     346,
+     734,
+     400
+    ],
+    "ko": "왓다는 세존께 나아가 무서운 거짓말을 했습니다. 고귀한 말라족 답바가 자기 아내를\n범했다는 것이었습니다. “물이 타오르는 듯합니다.” 고요하던 곳에 폭풍을 일으켰습니다.",
+    "cover": [
+     209,
+     166,
+     125
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Overturning-the-Bowl-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     76,
+     80,
+     312,
+     346
+    ],
+    "ko": "세존께서 물으시자\n답바는 고발을 굳게\n부인했습니다. “저는\n태어난 뒤로 꿈속에서도\n음행한 기억이\n없습니다. 하물며 깨어\n있을 때야 말할 것도\n없습니다!”",
+    "cover": [
+     212,
+     172,
+     124
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Overturning-the-Bowl-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     344,
+     734,
+     396
+    ],
+    "ko": "세존께서 승가에 왓다에게 발우를 엎으라고 이르셨습니다. 이 가장 무거운 처분은 비구들이\n그의 공양을 받지 않는다는 뜻으로, 영적·물질적 교류를 완전히 끊는 것입니다.",
+    "cover": [
+     206,
+     165,
+     123
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Overturning-the-Bowl-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     344,
+     734,
+     400
+    ],
+    "ko": "아난다 장로가 왓다의 집에 그 판정을 전했습니다. 파문의 무게를 깨달은\n릿차위족 왓다는 기절하여 그 자리에 쓰러졌습니다.",
+    "cover": [
+     205,
+     163,
+     121
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Overturning-the-Bowl-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     496,
+     128,
+     738,
+     358
+    ],
+    "ko": "가족의 권유로 크게\n상심한 왓다가 돌아왔습니다.\n젖은 옷과 젖은 머리로,\n극도의 괴로움과 정화의\n표시를 하고서 부처님의\n발아래 엎드려 어리석은\n잘못을 고백했습니다.",
+    "cover": [
+     216,
+     176,
+     131
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Overturning-the-Bowl-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     342,
+     734,
+     398
+    ],
+    "ko": "성자의 율에서 성장은 완벽함이 아니라 바로잡음입니다. 잘못을 보고 가르침에 따라\n바로잡으며 앞으로 단속하는 것입니다. 세존께서 그의 뉘우침을 받아들이셨습니다.",
+    "cover": [
+     200,
+     159,
+     119
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/28-Overturning-the-Bowl-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     254,
+     76,
+     546,
+     198
+    ],
+    "ko": "왓다의 정식 요청에 따라\n승가는 발우를 바로 놓았습니다.\n그와의 단절이 끝나고, 영적 가르침과\n물질적 후원이 오가는 소중한\n유대가 곧바로 되살아났습니다.",
+    "cover": [
+     235,
+     199,
+     153
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
