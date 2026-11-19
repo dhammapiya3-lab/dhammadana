@@ -1,0 +1,291 @@
+[
+ {
+  "img": "images/31-Seniority-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     312,
+     620,
+     354
+    ],
+    "ko": "장로의 자리",
+    "cover": [
+     211,
+     170,
+     120
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     180,
+     354,
+     620,
+     388
+    ],
+    "ko": "법랍과 공경과 반얀나무 이야기",
+    "cover": [
+     209,
+     166,
+     120
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Seniority-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     66,
+     352,
+     156
+    ],
+    "ko": "사왓티로 가는 길에 버릇없는 비구들이\n부처님 일행보다 앞서 달려갔습니다.\n그들은 저희와 스승들을 위해 가장 좋은\n승원과 처소를 제멋대로 차지했습니다.",
+    "cover": [
+     234,
+     199,
+     156
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Seniority-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     62,
+     392,
+     148
+    ],
+    "ko": "사리뿟따 장로는 늦게\n도착했습니다. 처소가 모두\n차 있음을 알고, 위대한\n장로는",
+    "cover": [
+     241,
+     211,
+     171
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     356,
+     186,
+     500,
+     252
+    ],
+    "ko": "겸손히 나무 아래\n앉아 밤을\n지냈습니다.",
+    "cover": [
+     243,
+     212,
+     170
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Seniority-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     46,
+     700,
+     130
+    ],
+    "ko": "이를 아신 세존께서 이기적인 비구들을 꾸짖으셨습니다.\n승가를 모으시고 물으셨습니다. “가장 좋은 자리와\n가장 좋은 물과 가장 좋은 탁발 음식은 누가 받아야 하는가?”",
+    "cover": [
+     214,
+     170,
+     125
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Seniority-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     58,
+     430,
+     198
+    ],
+    "ko": "부처님께서 이야기로 바로잡으셨습니다.\n“옛날 히말라야에 큰 반얀나무가\n있었다. 그 곁에 자고새와 원숭이와\n수코끼리가 살았다.”",
+    "cover": [
+     217,
+     175,
+     130
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Seniority-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     42,
+     60,
+     456,
+     170
+    ],
+    "ko": "“처음에 그들은 서로 공경하지 않고 살았다.\n잘못을 깨닫고, 태어난 순서로 누가 맏이인지\n알아내어 그를 늘 공경하고 받들기로\n약속했다.”",
+    "cover": [
+     214,
+     172,
+     128
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Seniority-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     58,
+     392,
+     174
+    ],
+    "ko": "“그들이 코끼리에게 물었다. 코끼리가\n말했다. ‘내가 어린 새끼였을 때\n이 반얀나무 위를 걸어 넘었는데,\n맨 위 새순이 내 배에 겨우 닿았다.’”",
+    "cover": [
+     214,
+     172,
+     129
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Seniority-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     58,
+     392,
+     174
+    ],
+    "ko": "“그들이 원숭이에게 물었다. 원숭이가\n말했다. ‘내가 어렸을 때 땅에 앉은 채로\n이 나무의 맨 위 새순을\n쉽게 따 먹을 수 있었다.’”",
+    "cover": [
+     214,
+     171,
+     130
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Seniority-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     48,
+     436,
+     140
+    ],
+    "ko": "“그들이 자고새에게 물었다. 자고새가 말했다.\n‘나는 예전에 큰 반얀나무 열매를 먹고\n바로 이 자리에 씨를 누었다.\n그 씨에서 이 나무가 태어났다.’”",
+    "cover": [
+     215,
+     179,
+     136
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Seniority-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     48,
+     322,
+     192
+    ],
+    "ko": "“태어나기로 자고새가 맏이였다.\n큰 코끼리와 원숭이가 그를\n공경했다. 자고새는 그들을\n오계에 굳게 세워 하늘에\n태어나게 이끌었다.”",
+    "cover": [
+     213,
+     170,
+     130
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/31-Seniority-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     58,
+     452,
+     170
+    ],
+    "ko": "“짐승들도 공경하며 산다.\n이 율에서는 오직 법랍에 따라 가장 좋은\n자리를 허락한다. 그러나 승가의 재산은\n결코 막아서는 안 된다.”",
+    "cover": [
+     224,
+     185,
+     141
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
