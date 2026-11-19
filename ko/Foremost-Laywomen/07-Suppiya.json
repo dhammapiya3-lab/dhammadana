@@ -1,0 +1,320 @@
+[
+ {
+  "img": "images/07-Suppiya-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     38,
+     570,
+     148
+    ],
+    "ko": "위대한 연대기:\n병든 이를 돌본 숩삐야\n지극한 신심이 기적을 부르고\n승가 전체의 계율을 세운 한 우바이의 업의 여정",
+    "cover": [
+     236,
+     176,
+     55
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Suppiya-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     362,
+     712,
+     446
+    ],
+    "ko": "옛 함사와띠에서 한 우바이가 빠두뭇따라 부처님께서 병든 이를 돌본\n제자를 기리시는 것을 보았습니다. 감화된 그녀는 큰 공양을 올리며\n십만 겁에 걸쳐 바로 그 영예를 얻기를 서원했습니다.",
+    "cover": [
+     35,
+     44,
+     69
+    ],
+    "align": "center",
+    "em": 15,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Suppiya-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     454,
+     26,
+     796,
+     136
+    ],
+    "ko": "십만 겁 뒤 그녀는 바라나시의 숩삐야로\n다시 태어납니다. 이시빠따나 사슴 동산에서\n고따마 부처님을 뵙고 법문을 들어\n곧바로 수다원과를 얻습니다.",
+    "cover": [
+     51,
+     59,
+     84
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Suppiya-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     164,
+     342,
+     636,
+     440
+    ],
+    "ko": "사슴 동산의 거처를 돌아보던 숩삐야는 설사약 때문에\n쇠약해진 비구를 봅니다. 무엇이 나으면 좋겠느냐고 묻자\n비구는 고깃국을 청합니다. 숩삐야는 꼭 마련하겠다고\n굳게 약속합니다.",
+    "cover": [
+     54,
+     66,
+     96
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Suppiya-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     16,
+     24,
+     394,
+     146
+    ],
+    "ko": "이튿날 숩삐야의 하인이 시장을 뒤지지만\n아무에게나 파는 고기가 없습니다.\n살 고기가 없으니 병든 비구에게 한\n숩삐야의 거룩한 약속이 위태롭습니다.",
+    "cover": [
+     53,
+     60,
+     85
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Suppiya-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     450,
+     28,
+     780,
+     144
+    ],
+    "ko": "‘내가 약속을 지키지 않으면\n그분이 편치 않으시리라.’\n굳게 마음먹은 숩삐야는 침실로\n들어가 자기 허벅지 살을 한 점 베어\n약속을 지킵니다.",
+    "cover": [
+     50,
+     59,
+     83
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Suppiya-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     312,
+     646,
+     408
+    ],
+    "ko": "공양을 준비하는 과정\n1. 준비: 살을 고추와 양파로 요리해 출처를 감춥니다.\n2. 전달: 하녀가 병든 비구에게 올립니다.\n3. 둘러댐: 하녀는 숩삐야가 아프다고 말합니다.",
+    "cover": [
+     48,
+     59,
+     84
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Suppiya-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     28,
+     640,
+     120
+    ],
+    "ko": "부처님께서 날마다 하시는 탁발로 숩삐야의 집에 오십니다.\n그녀가 보이지 않자 남편에게 물으십니다. 아파서 걷지\n못한다는 말을 들으시고 이르십니다. “내게 오게 하라. 업어 오너라.”",
+    "cover": [
+     55,
+     62,
+     79
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Suppiya-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     314,
+     618,
+     404
+    ],
+    "ko": "숩삐야가 세존을 우러러보는 순간 깊은 상처가\n사라집니다. 허벅지는 털까지 난 본래의 살로\n기적처럼 되돌아오고, 기쁨에 찬 그녀는\n승가에 큰 공양을 올립니다.",
+    "cover": [
+     59,
+     64,
+     79
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Suppiya-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     276,
+     68,
+     744,
+     162
+    ],
+    "ko": "승원으로 돌아오신 부처님께서 비구들을 모으시고\n병든 비구에게 물으십니다. 비구는 고깃국이 무엇이며\n어디서 왔는지 한 번도 묻지 않고 먹었다고 털어놓습니다.",
+    "cover": [
+     52,
+     53,
+     77
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Suppiya-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     232,
+     22,
+     568,
+     60
+    ],
+    "ko": "승가 계율의 시작",
+    "cover": [
+     67,
+     67,
+     83
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     358,
+     84,
+     622,
+     206
+    ],
+    "ko": "계율 1: 사람의 살\n사람의 살을 먹는 것은 엄격히\n금합니다. 벌: 투랏짜야\n(무거운 죄).",
+    "cover": [
+     44,
+     46,
+     77
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     358,
+     278,
+     622,
+     404
+    ],
+    "ko": "계율 2: 확인하지 않은 고기\n출처를 묻지 않고 고기를 먹는\n것은 마땅치 않습니다.\n벌: 둑까따(잘못).",
+    "cover": [
+     49,
+     51,
+     79
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Suppiya-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     244,
+     312,
+     558,
+     432
+    ],
+    "ko": "‘Etad-aggaṁ bhikkhave mama sāvikānaṁ\nupāsikānaṁ gilānupaṭṭhākīnaṁ yad-idaṁ Suppiyā.’\n제따와나에서 부처님께서 숩삐야가 병든 비구를\n돌보는 우바이의 으뜸이라 선언하시니,\n십만 겁의 옛 서원이 이루어졌습니다.",
+    "cover": [
+     39,
+     36,
+     51
+    ],
+    "align": "center",
+    "em": 14,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Suppiya-13-Original.jpg",
+  "boxes": []
+ }
+]
