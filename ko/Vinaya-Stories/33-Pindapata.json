@@ -1,0 +1,378 @@
+[
+ {
+  "img": "images/33-Pindapata-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     222,
+     306,
+     580,
+     384
+    ],
+    "ko": "탁발의 규칙\n옛 테라와다 전통의 탁발 이야기와 규칙",
+    "cover": [
+     221,
+     172,
+     125
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Pindapata-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     364,
+     628,
+     416
+    ],
+    "ko": "탁발 규칙이 정해지기 전, 옷차림이 바르지 않은 부주의한 비구가 탁발을\n다녔습니다. 둘레를 살피지 않다가 그만 남의 안방에 들어갔습니다.",
+    "cover": [
+     225,
+     171,
+     123
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Pindapata-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     366,
+     610,
+     428
+    ],
+    "ko": "안에는 한 여인이 맨몸으로 누워 쉬고 있었습니다. 그것을 본 남편은\n최악의 일을 짐작했습니다. 비구가 제 안방에 있는 것에 격분한\n그는 비구를 붙잡아 때렸습니다.",
+    "cover": [
+     220,
+     166,
+     120
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Pindapata-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     366,
+     630,
+     428
+    ],
+    "ko": "소란에 깬 아내가 나섰습니다. “왜 때려요? 나는 아무 일도 없었어요.\n이 비구는 잘못이 없어요.” 그녀는 곧바로 풀어 주라고 했습니다.",
+    "cover": [
+     219,
+     167,
+     119
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Pindapata-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     362,
+     628,
+     422
+    ],
+    "ko": "얻어맞은 비구가 승원으로 돌아왔습니다. 그가 부주의하게 다닌 것을\n들은 규율 바른 비구들이 투덜대며 나무랐고, 곧 이 부끄러운 일을\n세존께 알렸습니다.",
+    "cover": [
+     217,
+     168,
+     117
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Pindapata-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     362,
+     632,
+     422
+    ],
+    "ko": "부처님께서 사실을 확인하셨습니다. 부주의한 행동을 꾸짖으시고\n승가를 모으시어, 거룩한 탁발(삔다빠따)의 의무에 관한\n분명한 행동 규범을 정하셨습니다.",
+    "cover": [
+     213,
+     164,
+     115
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Pindapata-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     168,
+     350,
+     628,
+     424
+    ],
+    "ko": "의무는 떠나기 전부터 시작됩니다. 비구는 세 둘레를 덮고, 옷을\n갖추어 입고, 허리띠를 매고, 겹가사를 단단히 하고, 발우를 씻어야\n합니다. 그래야 마을에 들어갈 수 있습니다.",
+    "cover": [
+     205,
+     156,
+     116
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Pindapata-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     96,
+     354,
+     140
+    ],
+    "ko": "공손히\n내리뜬 눈",
+    "cover": [
+     224,
+     182,
+     132
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     214,
+     160,
+     340,
+     210
+    ],
+    "ko": "온몸을\n잘 덮음",
+    "cover": [
+     226,
+     189,
+     134
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     462,
+     160,
+     600,
+     210
+    ],
+    "ko": "곧고\n바른 자세",
+    "cover": [
+     224,
+     185,
+     130
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     168,
+     358,
+     630,
+     422
+    ],
+    "ko": "사람 사는 곳에 들어갈 때는 지극히 단속해야 합니다. 비구는 몸을\n잘 덮고, 조용히, 눈을 아래로 두고, 조심스레 서두르지 않고 걷습니다.",
+    "cover": [
+     207,
+     157,
+     112
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Pindapata-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     172,
+     350,
+     628,
+     428
+    ],
+    "ko": "집에 이르면 들어가고 나갈 길을 살핍니다.\n너무 서둘러 다가가거나, 너무 멀리 서거나,\n너무 가까이 서거나, 너무 오래 머물지 않습니다.",
+    "cover": [
+     215,
+     171,
+     128
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Pindapata-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     296,
+     746,
+     394
+    ],
+    "ko": "시주가 주려는지 조용히 살핍니다. 일을 멈추거나, 자리에서 일어나거나,\n국자를 만지거나, 그릇을 만지면 비구는 공양을 올리려는 줄\n알고 서 있어야 합니다.",
+    "cover": [
+     210,
+     172,
+     133
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Pindapata-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     350,
+     628,
+     436
+    ],
+    "ko": "공양을 받을 때는 결코 시주의 얼굴을 올려다보지 않습니다.\n왼손으로 겹가사를 들고 오른손으로 발우를 내밀어\n두 손으로 공양을 받습니다.",
+    "cover": [
+     207,
+     169,
+     133
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Pindapata-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     350,
+     628,
+     436
+    ],
+    "ko": "공양을 받으면 비구는 겹가사로 발우를 덮어야 합니다.\n조심스레 서두르지 않고\n승원으로 발길을 돌립니다.",
+    "cover": [
+     204,
+     169,
+     132
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Pindapata-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     350,
+     630,
+     434
+    ],
+    "ko": "먼저 돌아온 비구는 자리를 마련합니다. 자리를 펴고,\n발 씻을 물과 발 받침을 놓고,\n개숫물 그릇과 마실 물을 준비합니다.",
+    "cover": [
+     203,
+     167,
+     131
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/33-Pindapata-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     350,
+     630,
+     434
+    ],
+    "ko": "마지막에 돌아온 이는 남은 음식을 먹거나, 풀이 적은 곳이나\n생명 없는 물에 조심스레 버립니다.\n그런 뒤 그릇을 치우고 식당을 쓸어 의무를 마칩니다.",
+    "cover": [
+     199,
+     163,
+     129
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
