@@ -1,0 +1,332 @@
+[
+ {
+  "img": "images/06-Rains-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     412,
+     98,
+     712,
+     156
+    ],
+    "ko": "안거(왓사)의 기원",
+    "cover": [
+     210,
+     160,
+     99
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     196,
+     712,
+     276
+    ],
+    "ko": "안거를\n정하심",
+    "cover": [
+     205,
+     156,
+     98
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     456,
+     302,
+     700,
+     370
+    ],
+    "ko": "율장 107·108\n규칙에서",
+    "cover": [
+     198,
+     147,
+     90
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Rains-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     74,
+     86,
+     246,
+     302
+    ],
+    "ko": "부처님께서\n라자가하에 머무셨습니다.\n처음에는 우기 동안\n머무는 규칙이\n없었습니다. 비구들은\n겨울에도 여름에도\n우기에도 아무런\n제한 없이 계속\n떠돌았습니다.",
+    "cover": [
+     229,
+     191,
+     144
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Rains-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     106,
+     340,
+     340
+    ],
+    "ko": "사람들이 화를 냈습니다.\n떠도는 비구들이 우기에\n푸른 풀을 짓밟고, 감관이\n하나뿐인 생명을 해치며,\n수많은 작은 생명을\n죽인다고 불평했습니다.",
+    "cover": [
+     226,
+     189,
+     143
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Rains-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     58,
+     738,
+     108
+    ],
+    "ko": "사람들의 원성: 새들도 나무 위 둥지에 머물고, 잘못 설해진 가르침을 따르는\n외도들도 가만히 머무는데, 어찌 사꺄의 아들들만 떠돌며 생명을 해치는가?",
+    "cover": [
+     217,
+     183,
+     141
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Rains-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     96,
+     340,
+     330
+    ],
+    "ko": "사람들의 불평을 듣고\n비구들이 세존께\n말씀드렸습니다. 법을\n설하신 뒤 부처님께서\n정하셨습니다.\n“비구들이여, 안거에\n드는 것을 허락한다.”",
+    "cover": [
+     226,
+     187,
+     140
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Rains-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     96,
+     346,
+     330
+    ],
+    "ko": "언제 들어가는가?\n부처님께서 두 시기를\n정하셨습니다.\n\n1. 앞 안거: 아살하\n보름 다음 날\n2. 뒤 안거: 그로부터\n한 달 뒤",
+    "cover": [
+     224,
+     185,
+     138
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Rains-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     452,
+     96,
+     742,
+     330
+    ],
+    "ko": "‘여섯 비구 무리’가\n빈틈을 찾았습니다.\n그들은 안거에 들었다고\n해 놓고 곧바로\n우기에 길을 떠났습니다.",
+    "cover": [
+     220,
+     184,
+     140
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Rains-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     450,
+     96,
+     744,
+     330
+    ],
+    "ko": "겸손한 비구들과 사람들이\n불평하자 부처님께서\n규칙을 고치셨습니다.\n앞이나 뒤의 석 달을\n머물지 않고 떠나서는\n안 된다. 떠나면\n악작죄이다.",
+    "cover": [
+     218,
+     182,
+     137
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Rains-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     466,
+     96,
+     736,
+     262
+    ],
+    "ko": "석 달 동안 머물기\n싫었던 여섯 비구 무리는\n아예 안거에 들기를\n거부했습니다.",
+    "cover": [
+     220,
+     183,
+     138
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     520,
+     258,
+     680,
+     286
+    ],
+    "ko": " ",
+    "cover": [
+     215,
+     175,
+     131
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Rains-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     70,
+     690,
+     320
+    ],
+    "ko": "비구들이 이 회피를 말씀드리자\n부처님께서 정하셨습니다.\n“비구들이여, 안거에 들어야 한다.”\n들지 않으면 악작죄입니다.",
+    "cover": [
+     230,
+     181,
+     125
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Rains-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     76,
+     70,
+     394,
+     338
+    ],
+    "ko": "억지로 안거에 들게 된\n여섯 비구 무리는\n마지막 꾀를 냈습니다.\n안거에 드는 바로 그날\n일부러 처소의 경계\n밖으로 나가 안거를\n무효로 만들려 했습니다.",
+    "cover": [
+     223,
+     180,
+     129
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Rains-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     322,
+     742,
+     436
+    ],
+    "ko": "부처님께서 마지막 빈틈을 막으셨습니다. 안거를 피하려고 안거에\n드는 날 일부러 처소 밖으로 나가서는 안 됩니다. 그렇게 하면\n악작죄입니다. 이렇게 안거의 규칙이 갖추어졌습니다.",
+    "cover": [
+     218,
+     173,
+     126
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
