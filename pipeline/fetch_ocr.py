@@ -62,6 +62,17 @@ def main():
         imgs = [i["img"] for i in st["items"] if "img" in i]
         with ThreadPoolExecutor(4) as ex:
             res = list(ex.map(lambda i: one(slug, sf, i, sf in keep), imgs))
+        bad = sum(1 for r in res if r.get("bad"))
+        if bad:
+            # 그림을 못 받은 이야기는 저장하지 않고 다음 작업 때 다시 받는다. 원 사이트의 실제 그림 주소를 보여 줌(진단용)
+            import re
+            try:
+                page = get(BASE + slug + "/" + sf).decode("utf-8", "replace")
+                srcs = re.findall(r'(?:src|href)="([^"]+\.(?:jpe?g|png|webp))"', page)[:4]
+            except Exception as e:
+                srcs = [f"이야기 쪽도 못 받음: {e}"]
+            print(f"{sf}: 그림 {len(res)}장 중 {bad}장 못 받음 — 저장 안 함. 원 사이트 그림 주소 예: {srcs}", flush=True)
+            continue
         os.makedirs(os.path.dirname(out), exist_ok=True)
         json.dump(res, open(out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         nb = sum(len(r["boxes"]) for r in res); nl = sum(len(r["loose"]) for r in res)
