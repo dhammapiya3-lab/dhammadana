@@ -855,10 +855,9 @@ a.paper-request:hover{filter:brightness(1.08)}
 .r-fig:has(img[src*="DL-0011-bridge2"]){margin:2.6em 0}
 .r-fig .fig-btn img[alt="장식"]{max-height:26px;border:0;background:none;border-radius:0}
 
-/* 글로 읽기: 색 강조(==글==, 원본의 하늘색), 속표지 큰 제목(^^ 글) */
-.hl{color:#00aeef}
+/* 글로 읽기: 색 강조(==글==)는 기본으로 색 없이 검은 글자(운영자 요청, 2026-11-20 — 예전 원본 하늘색 #00aeef 는 쓰지 않음), 속표지 큰 제목(^^ 글) */
+.hl{color:inherit}
 .faint{color:#9a9a9a}  /* {{…}} 인쇄본의 희미한 글자 */
-:root.mode-mono .hl,:root.mode-contrast .hl{color:inherit;text-decoration:underline}
 .reflow p.r-ctitle{white-space:normal;overflow:visible;word-break:keep-all;font-size:1.7em;font-weight:700;text-align:center;text-indent:0;line-height:1.45;margin:2.2em 0 1.6em}
 /* DL-0010: 연꽃 구분 장식(작게), 사야도 서명(오른쪽) */
 .r-fig .fig-btn img[src*="DL-0010-aa"]{max-height:34px;border:0;border-radius:0}
