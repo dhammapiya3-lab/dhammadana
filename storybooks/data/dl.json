@@ -72,11 +72,11 @@
 "zip": 11986001
 },
 "Foremost-Laymen": {
-"n": 69,
-"pdf": 103612273,
-"pdfs": 10943729,
-"stories": 3,
-"zip": 103330935
+"n": 93,
+"pdf": 137506599,
+"pdfs": 14428383,
+"stories": 5,
+"zip": 137216542
 },
 "Foremost-Laymen/01-Tapussa-and-Bhallika": {
 "n": 14,
@@ -92,6 +92,16 @@
 "n": 31,
 "pdf": 47551270,
 "zip": 47266327
+},
+"Foremost-Laymen/04-Hatthaka-Alavaka": {
+"n": 10,
+"pdf": 15152075,
+"zip": 14876942
+},
+"Foremost-Laymen/05-Mahanama": {
+"n": 14,
+"pdf": 19291685,
+"zip": 19009010
 },
 "Foremost-Laywomen": {
 "n": 175,
@@ -344,10 +354,10 @@
 },
 "Foremost-Nuns": {
 "n": 283,
-"pdf": 385726253,
-"pdfs": 40803996,
+"pdf": 385703536,
+"pdfs": 40800199,
 "stories": 13,
-"zip": 385373568
+"zip": 385350851
 },
 "Foremost-Nuns/01-Maha-Pajapati-Gotami": {
 "n": 30,
@@ -361,8 +371,8 @@
 },
 "Foremost-Nuns/03-Uppalavanna": {
 "n": 37,
-"pdf": 48968111,
-"zip": 48687929
+"pdf": 48945394,
+"zip": 48665212
 },
 "Foremost-Nuns/04-Patacara": {
 "n": 30,
@@ -416,10 +426,10 @@
 },
 "Jataka": {
 "n": 422,
-"pdf": 496168663,
-"pdfs": 50497431,
+"pdf": 496144069,
+"pdfs": 50496763,
 "stories": 32,
-"zip": 495758903
+"zip": 495734309
 },
 "Jataka/001-The-Waterless-Desert": {
 "n": 15,
@@ -468,8 +478,8 @@
 },
 "Jataka/012-The-Golden-Deer": {
 "n": 14,
-"pdf": 18821017,
-"zip": 18556800
+"pdf": 18814472,
+"zip": 18550255
 },
 "Jataka/014-The-Wind-Deer": {
 "n": 9,
@@ -478,13 +488,13 @@
 },
 "Jataka/018-The-Sacrificial-Goat": {
 "n": 14,
-"pdf": 16420641,
-"zip": 16150258
+"pdf": 16415314,
+"zip": 16144931
 },
 "Jataka/022-The-Teaching-of-the-Dog": {
 "n": 14,
-"pdf": 17750388,
-"zip": 17485188
+"pdf": 17745147,
+"zip": 17479947
 },
 "Jataka/023-The-Noble-Warhorse": {
 "n": 14,
@@ -498,13 +508,13 @@
 },
 "Jataka/027-Elephant-and-Dog": {
 "n": 13,
-"pdf": 16873727,
-"zip": 16608896
+"pdf": 16869465,
+"zip": 16604634
 },
 "Jataka/028-Nandivisala": {
 "n": 12,
-"pdf": 14872536,
-"zip": 14604361
+"pdf": 14861683,
+"zip": 14593508
 },
 "Jataka/029-Grannys-Blackie": {
 "n": 12,
@@ -548,8 +558,8 @@
 },
 "Jataka/041-The-Unfortunate-Monk": {
 "n": 15,
-"pdf": 17957211,
-"zip": 17691319
+"pdf": 17954232,
+"zip": 17688340
 },
 "Jataka/043-The-Monk-and-the-Viper": {
 "n": 10,
@@ -568,8 +578,8 @@
 },
 "Jataka/048-The-Rain-of-Ruin": {
 "n": 15,
-"pdf": 16669093,
-"zip": 16404613
+"pdf": 16679706,
+"zip": 16415226
 },
 "Jataka/049-The-Lucky-Star": {
 "n": 14,
@@ -583,15 +593,15 @@
 },
 "Pannasa": {
 "n": 803,
-"pdf": 1034215464,
-"pdfs": 99411208,
+"pdf": 1033746367,
+"pdfs": 99395866,
 "stories": 50,
-"zip": 1033664671
+"zip": 1033195574
 },
 "Pannasa/01-King-Aditta": {
 "n": 15,
-"pdf": 19971683,
-"zip": 19709196
+"pdf": 19968930,
+"zip": 19706443
 },
 "Pannasa/02-Tulakapandita": {
 "n": 15,
@@ -605,8 +615,8 @@
 },
 "Pannasa/04-Arindama": {
 "n": 12,
-"pdf": 16465970,
-"zip": 16203512
+"pdf": 16342965,
+"zip": 16080507
 },
 "Pannasa/05-Sumbhamitta": {
 "n": 15,
@@ -615,8 +625,8 @@
 },
 "Pannasa/06-Samuddaghosa": {
 "n": 15,
-"pdf": 20706967,
-"zip": 20440576
+"pdf": 20684845,
+"zip": 20418454
 },
 "Pannasa/07-Cagadana": {
 "n": 13,
@@ -625,8 +635,8 @@
 },
 "Pannasa/08-Dhammikapandita": {
 "n": 12,
-"pdf": 14956192,
-"zip": 14689845
+"pdf": 14906299,
+"zip": 14639952
 },
 "Pannasa/09-Siridhara": {
 "n": 13,
@@ -680,8 +690,8 @@
 },
 "Pannasa/19-Sirivipulakitti": {
 "n": 15,
-"pdf": 20093738,
-"zip": 19824963
+"pdf": 20097824,
+"zip": 19829049
 },
 "Pannasa/20-Sattadhanu": {
 "n": 27,
@@ -700,33 +710,33 @@
 },
 "Pannasa/23-Ratanapajjota": {
 "n": 14,
-"pdf": 17047568,
-"zip": 16778652
+"pdf": 17029382,
+"zip": 16760466
 },
 "Pannasa/24-Two-Headed-Swan": {
 "n": 13,
-"pdf": 18863086,
-"zip": 18597285
+"pdf": 18836427,
+"zip": 18570625
 },
 "Pannasa/25-Viriyapandita": {
 "n": 15,
-"pdf": 18660858,
-"zip": 18395224
+"pdf": 18623984,
+"zip": 18358350
 },
 "Pannasa/26-Vipularaja": {
 "n": 13,
-"pdf": 18717838,
-"zip": 18454218
+"pdf": 18718707,
+"zip": 18455087
 },
 "Pannasa/27-Mahapaduma": {
 "n": 27,
-"pdf": 34139049,
-"zip": 33868266
+"pdf": 34060695,
+"zip": 33789912
 },
 "Pannasa/28-Mahasurasena": {
 "n": 15,
-"pdf": 18524003,
-"zip": 18257331
+"pdf": 18515467,
+"zip": 18248796
 },
 "Pannasa/29-Brahmaghosa": {
 "n": 15,
@@ -735,8 +745,8 @@
 },
 "Pannasa/30-White-Mouse": {
 "n": 15,
-"pdf": 20826558,
-"zip": 20564456
+"pdf": 20805997,
+"zip": 20543895
 },
 "Pannasa/31-Ariyachatta": {
 "n": 15,
@@ -745,8 +755,8 @@
 },
 "Pannasa/32-Subhadda": {
 "n": 15,
-"pdf": 18946559,
-"zip": 18683172
+"pdf": 18804707,
+"zip": 18541319
 },
 "Pannasa/33-Bahalaputta": {
 "n": 15,
@@ -770,8 +780,8 @@
 },
 "Pannasa/37-Vattanguli": {
 "n": 30,
-"pdf": 38989889,
-"zip": 38718299
+"pdf": 39028656,
+"zip": 38757066
 },
 "Pannasa/38-Sirasakumara": {
 "n": 24,
@@ -780,8 +790,8 @@
 },
 "Pannasa/39-Sonananda": {
 "n": 28,
-"pdf": 34948264,
-"zip": 34677902
+"pdf": 34938966,
+"zip": 34668604
 },
 "Pannasa/40-Suvannakumara": {
 "n": 23,
@@ -795,8 +805,8 @@
 },
 "Pannasa/42-Sucika": {
 "n": 15,
-"pdf": 18650427,
-"zip": 18384642
+"pdf": 18666712,
+"zip": 18400928
 },
 "Pannasa/43-Writing": {
 "n": 15,
@@ -815,8 +825,8 @@
 },
 "Pannasa/46-Dukamma": {
 "n": 13,
-"pdf": 15967842,
-"zip": 15704236
+"pdf": 15976830,
+"zip": 15713225
 },
 "Pannasa/47-Quarrelsomeness": {
 "n": 12,
@@ -840,10 +850,10 @@
 },
 "The-Great-Emancipation": {
 "n": 234,
-"pdf": 247067584,
-"pdfs": 25096628,
+"pdf": 247118492,
+"pdfs": 25100760,
 "stories": 20,
-"zip": 246736370
+"zip": 246787278
 },
 "The-Great-Emancipation/15-The-Courtesan-Ambapali": {
 "n": 12,
@@ -867,8 +877,8 @@
 },
 "The-Great-Emancipation/29-The-Last-Meal": {
 "n": 10,
-"pdf": 9927231,
-"zip": 9666629
+"pdf": 9945475,
+"zip": 9684873
 },
 "The-Great-Emancipation/30-Bringing-Drinking-Water": {
 "n": 12,
@@ -937,12 +947,209 @@
 },
 "The-Great-Emancipation/43-The-Story-Concerning-Mahakassapa": {
 "n": 12,
-"pdf": 13078682,
-"zip": 12814012
+"pdf": 13111346,
+"zip": 12846676
 },
 "The-Great-Emancipation/44-The-Distribution-of-the-Relics": {
 "n": 10,
 "pdf": 12681047,
 "zip": 12422307
+},
+"Vinaya-Stories": {
+"n": 626,
+"pdf": 729745872,
+"pdfs": 73535691,
+"stories": 38,
+"zip": 729267404
+},
+"Vinaya-Stories/00-Veranja": {
+"n": 37,
+"pdf": 38199887,
+"zip": 37930059
+},
+"Vinaya-Stories/01-Intercourse": {
+"n": 27,
+"pdf": 29999364,
+"zip": 29728948
+},
+"Vinaya-Stories/02-Theft": {
+"n": 14,
+"pdf": 15943252,
+"zip": 15677331
+},
+"Vinaya-Stories/03-Killing": {
+"n": 15,
+"pdf": 17572136,
+"zip": 17305873
+},
+"Vinaya-Stories/04-False-Claims": {
+"n": 11,
+"pdf": 13881769,
+"zip": 13611295
+},
+"Vinaya-Stories/05-Uposatha": {
+"n": 20,
+"pdf": 24718682,
+"zip": 24452966
+},
+"Vinaya-Stories/06-Rains": {
+"n": 12,
+"pdf": 14017872,
+"zip": 13762139
+},
+"Vinaya-Stories/07-Invitation": {
+"n": 15,
+"pdf": 17254234,
+"zip": 16998003
+},
+"Vinaya-Stories/08-Allowances": {
+"n": 14,
+"pdf": 16784450,
+"zip": 16514520
+},
+"Vinaya-Stories/09-Luxury": {
+"n": 12,
+"pdf": 15368496,
+"zip": 15105358
+},
+"Vinaya-Stories/10-Meat": {
+"n": 15,
+"pdf": 17976750,
+"zip": 17710366
+},
+"Vinaya-Stories/11-Sacrifices": {
+"n": 10,
+"pdf": 11574993,
+"zip": 11316993
+},
+"Vinaya-Stories/12-Kathina": {
+"n": 11,
+"pdf": 13023952,
+"zip": 12768448
+},
+"Vinaya-Stories/13-Jivaka": {
+"n": 47,
+"pdf": 55487420,
+"zip": 55213432
+},
+"Vinaya-Stories/14-Robes": {
+"n": 11,
+"pdf": 13788773,
+"zip": 13526254
+},
+"Vinaya-Stories/15-Visakha": {
+"n": 15,
+"pdf": 17944799,
+"zip": 17676509
+},
+"Vinaya-Stories/16-Sick": {
+"n": 10,
+"pdf": 11529926,
+"zip": 11268821
+},
+"Vinaya-Stories/17-Reconciliation": {
+"n": 12,
+"pdf": 14230453,
+"zip": 13975774
+},
+"Vinaya-Stories/18-Kosambi": {
+"n": 15,
+"pdf": 17894689,
+"zip": 17632472
+},
+"Vinaya-Stories/19-Dighavu": {
+"n": 15,
+"pdf": 18265402,
+"zip": 18004591
+},
+"Vinaya-Stories/20-Bamboo-Park": {
+"n": 13,
+"pdf": 15416572,
+"zip": 15153247
+},
+"Vinaya-Stories/21-Palileyyaka": {
+"n": 10,
+"pdf": 11802891,
+"zip": 11538391
+},
+"Vinaya-Stories/22-Banishment": {
+"n": 11,
+"pdf": 14882989,
+"zip": 14624547
+},
+"Vinaya-Stories/23-Reconciliation": {
+"n": 14,
+"pdf": 16441967,
+"zip": 16177563
+},
+"Vinaya-Stories/24-Suspension": {
+"n": 11,
+"pdf": 11827934,
+"zip": 11568477
+},
+"Vinaya-Stories/25-Views": {
+"n": 15,
+"pdf": 18001180,
+"zip": 17739680
+},
+"Vinaya-Stories/26-Innocence": {
+"n": 14,
+"pdf": 17422109,
+"zip": 17161303
+},
+"Vinaya-Stories/27-Supernormal-Powers": {
+"n": 13,
+"pdf": 14906585,
+"zip": 14644767
+},
+"Vinaya-Stories/28-Overturning-the-Bowl": {
+"n": 10,
+"pdf": 12703203,
+"zip": 12443085
+},
+"Vinaya-Stories/29-Dwellings": {
+"n": 15,
+"pdf": 17559169,
+"zip": 17293997
+},
+"Vinaya-Stories/30-Anathapindika": {
+"n": 11,
+"pdf": 13566122,
+"zip": 13299096
+},
+"Vinaya-Stories/31-Seniority": {
+"n": 11,
+"pdf": 13444308,
+"zip": 13182045
+},
+"Vinaya-Stories/32-Schism": {
+"n": 62,
+"pdf": 74040491,
+"zip": 73751360
+},
+"Vinaya-Stories/33-Pindapata": {
+"n": 14,
+"pdf": 17210782,
+"zip": 16950526
+},
+"Vinaya-Stories/34-Pupils-Duties": {
+"n": 13,
+"pdf": 14742917,
+"zip": 14475598
+},
+"Vinaya-Stories/35-Preceptors-Duties": {
+"n": 12,
+"pdf": 13868127,
+"zip": 13601022
+},
+"Vinaya-Stories/36-Patimokkha": {
+"n": 14,
+"pdf": 17490984,
+"zip": 17228018
+},
+"Vinaya-Stories/37-Bhikkhuni-Ordination": {
+"n": 25,
+"pdf": 28518193,
+"zip": 28253090
 }
 }
