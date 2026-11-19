@@ -1,34 +1,12 @@
 Foremost-Laymen 01-Tapussa-and-Bhallika 14 장
-Foremost-Laywomen 01-Sujata 15 장
-Foremost-Laywomen 02-Visakha 44 장
-Foremost-Laywomen 03-04-Khujjuttara-Samavati 40 장
-Foremost-Laywomen 05-Uttara-Nandamata 14 장
-Foremost-Laywomen 06-Suppavasa 9 장
-Foremost-Laywomen 07-Suppiya 13 장
-Foremost-Laywomen 08-Katiyani 14 장
-Foremost-Laywomen 09-Nakulamata 14 장
-Foremost-Laywomen 10-Kali 12 장
-검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자3 [자리] 한글이 원래 글 자리(504,1041-620,1130)에서 벗어남 (809,1087)
-검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자4 [자리] 한글이 원래 글 자리(1997,1043-2042,1136)에서 벗어남 (1834,1087)
-Foremost-Nuns 03-Uppalavanna 37 장
-자동 검수: 문제 의심 2 곳
-R2 에 올림: 498 개 / 한글판 이야기 176 편
+Foremost-Laymen 02-Anathapindika 24 장
+자동 검수: 문제 의심 0 곳
+R2 에 올림: 122 개 / 한글판 이야기 177 편
 공개 주소 확인: 200 1649805바이트
 이야기 Foremost-Laymen/01-Tapussa-and-Bhallika {'pdf': 20412533, 'zip': 20134884, 'n': 14}
-책 Foremost-Laymen {'pdf': 20396462, 'pdfs': 2211763, 'zip': 20135528, 'stories': 1, 'n': 14}
-이야기 Foremost-Laywomen/01-Sujata {'pdf': 21655910, 'zip': 21376916, 'n': 15}
-이야기 Foremost-Laywomen/02-Visakha {'pdf': 182515318, 'zip': 182220940, 'n': 44}
-이야기 Foremost-Laywomen/03-04-Khujjuttara-Samavati {'pdf': 151416181, 'zip': 150566038, 'n': 40}
-이야기 Foremost-Laywomen/05-Uttara-Nandamata {'pdf': 20725981, 'zip': 20452963, 'n': 14}
-이야기 Foremost-Laywomen/06-Suppavasa {'pdf': 11632274, 'zip': 11355409, 'n': 9}
-이야기 Foremost-Laywomen/07-Suppiya {'pdf': 18022970, 'zip': 17745820, 'n': 13}
-이야기 Foremost-Laywomen/08-Katiyani {'pdf': 19978971, 'zip': 19697170, 'n': 14}
-이야기 Foremost-Laywomen/09-Nakulamata {'pdf': 16505743, 'zip': 16235015, 'n': 14}
-이야기 Foremost-Laywomen/10-Kali {'pdf': 16207089, 'zip': 15933397, 'n': 12}
-책 Foremost-Laywomen {'pdf': 455905878, 'pdfs': 26713247, 'zip': 455589338, 'stories': 9, 'n': 175}
-이야기 Foremost-Nuns/03-Uppalavanna {'pdf': 48968111, 'zip': 48687929, 'n': 37}
-책 Foremost-Nuns {'pdf': 385726253, 'pdfs': 40803996, 'zip': 385373568, 'stories': 13, 'n': 283}
-내려받기 파일: 14 묶음 새로 만듦
-글로 보기: 176 이야기
+이야기 Foremost-Laymen/02-Anathapindika {'pdf': 36206593, 'zip': 35928167, 'n': 24}
+책 Foremost-Laymen {'pdf': 56333779, 'pdfs': 5984353, 'zip': 56063906, 'stories': 2, 'n': 38}
+내려받기 파일: 3 묶음 새로 만듦
+글로 보기: 177 이야기
 10-Nakulapitu
 10-Kali
