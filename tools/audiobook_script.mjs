@@ -40,6 +40,7 @@ if (t.ph) t.body = t.body.replace(/[\u302c\u302d\u1dc7\u032b\u034c\u2033\u1dfe\u
 const parts = t.body.split(/^=== (.+?) ===$/m); // [앞, 이름1, 글1, 이름2, 글2 …]
 const pages = []; for (let i = 1; i < parts.length; i += 2) pages.push({ label: parts[i], text: parts[i + 1] || '' });
 const top = (t.toc || []).filter(x => !x.sub && !/^\s/.test(x.title)).sort((x, y) => x.page - y.page);
+const BODY_FLAT = t.body.replace(/[\u3400-\u9FFF\uF900-\uFAFF]+/g, '').replace(/\*\*|°°|==|\[\^[^\]]*\]/g, '').replace(/\s+/g, ' ');  // 쪽 끝에서 갈린 낱말을 붙일지 볼 때 씀
 const outDir = path.join(root, 'tools/out/audiobook', ID); fs.mkdirSync(outDir, { recursive: true });
 for (const f of fs.readdirSync(outDir)) fs.unlinkSync(path.join(outDir, f));
 
@@ -146,7 +147,8 @@ top.forEach((c, k) => {
       pre = pre.replace(/([가-힣][A-Za-zÀ-ÖØ-öø-žḀ-ỿ]+(?:[ -][A-Za-zÀ-ÖØ-öø-žḀ-ỿ]+)*) [\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]+/g, '$1');
       pre = pre.replace(HAN_RUN, (w, ...a) => { const k = w.replace(/\s+/g, ''), at = a.find(x => typeof x === 'number');
         // 바로 앞 한글 낱말과 소리가 같은 한자는 풀이라 뺌: '(살 殺)'·'무채 無債'·'물거르개수낭 水囊' (DL-0018, 2026-11-18)
-        if (HSAY[k] && new RegExp((HSAY[k].length < 2 ? '(?:^|[^가-힣])' : '') + HSAY[k] + '[\\s(]*$').test(pre.slice(Math.max(0, at - HSAY[k].length - 4), at))) return '';  // 한 글자는 낱말 전체가 같을 때만 ('무상하고 苦이며' 의 苦는 읽음)
+        const ctx = (/^[\s(\[]*$/.test(pre.slice(0, at)) ? (paras[paras.length - 1] || '') + ' ' : '') + pre.slice(0, at);  // 쪽이 넘어가며 갈라진 '여의족 / 如意足'은 앞 문단 끝과 비교 (DL-0015, 2026-11-19)
+        if (HSAY[k] && new RegExp((HSAY[k].length < 2 ? '(?:^|[^가-힣])' : '') + HSAY[k] + '[\\s(\\[]*$').test(ctx.slice(Math.max(0, ctx.length - HSAY[k].length - 4)))) return '';  // '색[色: …]' 의 [ 도  // 한 글자는 낱말 전체가 같을 때만 ('무상하고 苦이며' 의 苦는 읽음)
         HAN.add(k); return HSAY[k] != null ? HSAY[k] : w; });
       // 책에 잘못 인쇄된 빨리어 철자는 읽을 때만 바른 철자로 (책 본문은 그대로) — 운영자 확인, 2026-11-09
       for (const [bad, good] of SPELL) pre = pre.split(bad).join(good);
@@ -166,7 +168,10 @@ top.forEach((c, k) => {
       (pre.match(LAT) || []).forEach(w => { const s = lib.PALI(w.replace(/[’'-]/g, '')); if (s && lib.langOf(w) !== 'E') changes.set(w, s); });
       if (!said) return;
       // 쪽이 바뀌며 끊긴 문장은 앞 문단에 이어 붙임 (쪽 첫 문단이고, 앞 문단이 문장 끝맺음 없이 끝났을 때)
-      if (first && paras.length && !lastHead && !END.test(paras[paras.length - 1])) paras[paras.length - 1] += ' ' + said;
+      //  쪽 끝에서 낱말 가운데가 갈린 곳('괴로움 / 의 소멸', '중 / 요하다')은 빈칸 없이 — 붙인 꼴이 책 안에 띄어 쓴 꼴보다 많으면 붙임 (DL-0015, 2026-11-19)
+      if (first && paras.length && !lastHead && !END.test(paras[paras.length - 1])) { const a = (paras[paras.length - 1].match(/[가-힣]+$/) || [''])[0], b = (said.match(/^[가-힣]+/) || [''])[0];
+        const cnt = w => BODY_FLAT.split(w).length - 1;
+        paras[paras.length - 1] += (a && b && cnt(a + b) > cnt(a + ' ' + b) ? '' : ' ') + said; }
       else push(said, p, rIdx(pi));
       lastHead = /^## /.test(par); first = false;
     });
