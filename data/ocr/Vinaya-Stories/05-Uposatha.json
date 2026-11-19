@@ -1,0 +1,637 @@
+[
+ {
+  "img": "images/05-Uposatha-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     235,
+     122
+    ],
+    "bbox": [
+     559,
+     384,
+     1184,
+     529
+    ],
+    "shape": "box",
+    "en": "Uposatha",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Origins",
+   "the",
+   "and",
+   "Patimokkha",
+   "the"
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     170,
+     180
+    ],
+    "bbox": [
+     311,
+     393,
+     1174,
+     956
+    ],
+    "shape": "bubble",
+    "en": "The Setting: Rajaga ha The Blessed One dwelt at Rajagaha on Vulture’s Vulture's Peak (Gijjhaktta). The early monastic community was growing, yet the structure of _their communal gatherings remained unformed.",
+    "conf": 50
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Uposatha-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Ascetic",
+   "Gatherings",
+   "Heterodox",
+   "ascetics",
+   "assembled",
+   "the",
+   "fourteenth,",
+   "fifteenth,",
+   "and",
+   "eighth",
+   "the",
+   "lunar",
+   "fortnight",
+   "teach.",
+   "People",
+   "flocked",
+   "hear",
+   "them,",
+   "gaining",
+   "deep",
+   "affection",
+   "and",
+   "confidence."
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     289,
+     180
+    ],
+    "bbox": [
+     311,
+     400,
+     1174,
+     956
+    ],
+    "shape": "bubble",
+    "en": "The King’s Insig ht In seclusion, King Seniya Bimbisara reflected: What if the noble ones too assembled on these lunar days?",
+    "conf": 41
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Uposatha-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Petition",
+   "King",
+   "proposed",
+   "his",
+   "idea.",
+   "The",
+   "Buddha",
+   "instructed,",
+   "encouraged,",
+   "inspired",
+   "and",
+   "gladdened",
+   "the",
+   "King",
+   "with",
+   "profound",
+   "discourse",
+   "the",
+   "Teaching",
+   "The"
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "First",
+   "Allowance",
+   "Following",
+   "the",
+   "King's",
+   "departure,",
+   "the",
+   "Buddha",
+   "the",
+   "monastics:",
+   "allow,",
+   "monks,",
+   "assemble",
+   "the",
+   "fourteenth,",
+   "the",
+   "fifteenth,",
+   "and",
+   "the",
+   "eighth",
+   "the",
+   "fortnight.",
+   "addressed"
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Silent",
+   "Monks",
+   "Expectant",
+   "Laity",
+   "Lacking",
+   "explicit",
+   "instructions",
+   "teach",
+   "the",
+   "monks",
+   "gathered",
+   "and",
+   "simply",
+   "sat",
+   "absolute,",
+   "rigid",
+   "silence",
+   "The"
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Deeply",
+   "disappointed,",
+   "the",
+   "people",
+   "complained:",
+   "How",
+   "can",
+   "the",
+   "disciples",
+   "the",
+   "Sakyan",
+   "sit",
+   "silence",
+   "like",
+   "dumb",
+   "pigs?",
+   "Surely",
+   "the",
+   "Teaching",
+   "should",
+   "spoken.",
+   "The",
+   "Public",
+   "Outcry"
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Responds",
+   "Recognizing",
+   "the",
+   "friction",
+   "between",
+   "monastic",
+   "practice",
+   "and",
+   "lay",
+   "expectations,",
+   "the",
+   "monks",
+   "immediately",
+   "reported",
+   "the",
+   "complaints",
+   "the",
+   "Blessed",
+   "One.",
+   "Samgha"
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Second",
+   "Allowance",
+   "The",
+   "Buddha",
+   "refined",
+   "the",
+   "rule,",
+   "aligning",
+   "assembly",
+   "with",
+   "instruction:",
+   "allow,",
+   "monks,",
+   "having",
+   "assembled",
+   "the",
+   "appointed",
+   "days",
+   "the",
+   "fortnight,",
+   "speak",
+   "the",
+   "Teaching."
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     463,
+     113
+    ],
+    "bbox": [
+     1442,
+     337,
+     2040,
+     635
+    ],
+    "shape": "box",
+    "en": "Observation: Ascetics thrive by teaching on lunar days.",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "Implementation",
+   "Monks",
+   "gather",
+   "silently;",
+   "laypeople",
+   "reject",
+   "this.",
+   "The",
+   "aligns",
+   "assembly",
+   "with",
+   "the",
+   "speaking",
+   "the",
+   "Dhamma.",
+   "Refinement:"
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Foundation",
+   "the",
+   "Uposatha",
+   "dialectical",
+   "adaptation",
+   "laid",
+   "the",
+   "groundwork",
+   "for",
+   "the",
+   "Uposatha.",
+   "Integrating",
+   "regular",
+   "assembly",
+   "with",
+   "active",
+   "instruction",
+   "ensured",
+   "internal",
+   "Sarngha",
+   "cohesion",
+   "and",
+   "sustained",
+   "lay",
+   "confidence."
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     114,
+     120
+    ],
+    "bbox": [
+     261,
+     370,
+     1210,
+     1108
+    ],
+    "shape": "box",
+    "en": "In seclusion, the Buddha recognized profound mechanism: reciting established training io! rules becomes je) WN the 0) legal act 5 of Observance oO The Patimokkha was born to safeguard communal purity",
+    "conf": 49
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Uposatha-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     114,
+     119
+    ],
+    "bbox": [
+     264,
+     357,
+     1223,
+     1108
+    ],
+    "shape": "box",
+    "en": "The Patimokkha is not merely legal list. It is the beginning, the entrance, and the chief of wholesome mental states.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Uposatha-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     110,
+     119
+    ],
+    "bbox": [
+     251,
+     370,
+     1210,
+     608
+    ],
+    "shape": "box",
+    "en": "The recitation follows precise legal script",
+    "conf": 95
+   },
+   {
+    "seed": [
+     95,
+     312
+    ],
+    "bbox": [
+     245,
+     989,
+     1230,
+     1151
+    ],
+    "shape": "box",
+    "en": "3. Recitation of the Code",
+    "conf": 58
+   },
+   {
+    "seed": [
+     124,
+     359
+    ],
+    "bbox": [
+     185,
+     1151,
+     1293,
+     1303
+    ],
+    "shape": "box",
+    "en": "4. Threefold Proclamation",
+    "conf": 31
+   }
+  ],
+  "loose": [
+   "Assembly",
+   "Declaration"
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ring",
+   "the",
+   "threefold",
+   "proclam",
+   "ation,",
+   "monastics",
+   "face",
+   "strict",
+   "binary.",
+   "Silence",
+   "absolute",
+   "purity."
+  ]
+ },
+ {
+  "img": "images/05-Uposatha-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     198,
+     120
+    ],
+    "bbox": [
+     307,
+     350,
+     1250,
+     1101
+    ],
+    "shape": "box",
+    "en": "Remaining silent with an unrevealed offence constitutes conscious lying This heavy obstruction blocks the achievement of meditative absorptions (jhana) and wholesome mental states",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Uposatha-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     209,
+     119
+    ],
+    "bbox": [
+     304,
+     347,
+     1283,
+     1104
+    ],
+    "shape": "box",
+    "en": "Revealing an existing offence shatters the obstruction Confession restores purity, providing the immediate comfort required to achieve the jhanas and ultimate deliverances",
+    "conf": 82
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Uposatha-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     208,
+     119
+    ],
+    "bbox": [
+     304,
+     347,
+     1286,
+     1101
+    ],
+    "shape": "box",
+    "en": "Concord demanded boundary to prevent fragmented groups. The Buddha defined unity strictly: all monastics within single residence must gather _as as one unified assembly.",
+    "conf": 57
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/05-Uposatha-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     129,
+     118
+    ],
+    "bbox": [
+     304,
+     347,
+     1286,
+     1104
+    ],
+    "shape": "box",
+    "en": "The Buddha engineered perfect intersection of Time, Space, and Action to protect the sarngha’s spiritual trajectory. The Word: Patimokkha Recitation The Time: Fortnightly qe Space: Single Residence",
+    "conf": 52
+   }
+  ],
+  "loose": []
+ }
+]

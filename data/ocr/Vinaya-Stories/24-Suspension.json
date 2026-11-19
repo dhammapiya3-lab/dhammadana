@@ -1,0 +1,336 @@
+[
+ {
+  "img": "images/24-Suspension-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     323,
+     151
+    ],
+    "bbox": [
+     612,
+     222,
+     2304,
+     1250
+    ],
+    "shape": "bubble",
+    "en": "iy. The Suspension of Channa WAY Tale of Monastic Discipline at Kosambi",
+    "conf": 53
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/24-Suspension-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     335,
+     89
+    ],
+    "bbox": [
+     674,
+     149,
+     2189,
+     846
+    ],
+    "shape": "bubble",
+    "en": "\"The Blessed One dwelt at Kosambi in Ghosita’s park. Surrounded by the Community, the serene grove flourished with devotion and quiet contemplation.",
+    "conf": 45
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/24-Suspension-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "committed",
+   "offence.",
+   "Stubbornly,",
+   "refused",
+   "make",
+   "amends.",
+   "Ignoring",
+   "the",
+   "established",
+   "rules",
+   "the",
+   "Community,",
+   "monastic",
+   "entirely.",
+   "Channa",
+   "discipline"
+  ]
+ },
+ {
+  "img": "images/24-Suspension-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Monks",
+   "few",
+   "wishes",
+   "grumbled",
+   "and",
+   "complained",
+   "“How",
+   "could",
+   "the",
+   "Venerable",
+   "Channa,",
+   "having",
+   "committed",
+   "offence,",
+   "not",
+   "wish",
+   "make",
+   "amends?”",
+   "they",
+   "asked",
+   "one",
+   "another",
+   "dismay."
+  ]
+ },
+ {
+  "img": "images/24-Suspension-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Seeking",
+   "guidance,",
+   "the",
+   "concerned",
+   "monks",
+   "approached",
+   "the",
+   "Blessed",
+   "One.",
+   "They",
+   "reported",
+   "Channa’s",
+   "stubborn",
+   "refusal",
+   "acknowledge",
+   "and",
+   "correct",
+   "his",
+   "behaviour.",
+   "ACY,"
+  ]
+ },
+ {
+  "img": "images/24-Suspension-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     482,
+     67
+    ],
+    "bbox": [
+     760,
+     142,
+     2500,
+     820
+    ],
+    "shape": "bubble",
+    "en": "The Buddha assembled the Community. \"Is it true, monks, that Channa does not wish to make amends?\" he asked. \"True, Blessed One,\" they replied.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/24-Suspension-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "delivered",
+   "stern",
+   "rebuke:",
+   "could",
+   "that",
+   "foolish",
+   "man",
+   "not",
+   "wish",
+   "make",
+   "amends?",
+   "This",
+   "does",
+   "not",
+   "inspire",
+   "confidence",
+   "those",
+   "without",
+   "confidence"
+  ]
+ },
+ {
+  "img": "images/24-Suspension-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "decreed",
+   "new",
+   "for",
+   "Perform",
+   "formal",
+   "legal",
+   "act",
+   "suspension",
+   "the",
+   "monk",
+   "Channa.",
+   "The",
+   "non-eating",
+   "with",
+   "the",
+   "Community.",
+   "standard",
+   "the",
+   "Commu",
+   "penalty:",
+   "the",
+   "for",
+   "eating"
+  ]
+ },
+ {
+  "img": "images/24-Suspension-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "outlined",
+   "the",
+   "exact",
+   "procedure:",
+   "The",
+   "monk",
+   "must",
+   "accused.",
+   "must",
+   "charged.",
+   "must",
+   "reminded.",
+   "Community",
+   "must",
+   "informed."
+  ]
+ },
+ {
+  "img": "images/24-Suspension-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "competent",
+   "monk",
+   "presented",
+   "the",
+   "motion",
+   "“The",
+   "Community",
+   "suspends",
+   "Channa.",
+   "whom",
+   "this",
+   "agreeable",
+   "should",
+   "remain",
+   "silent;",
+   "who",
+   "disagrees",
+   "should",
+   "spea",
+   "The",
+   "Community",
+   "remained",
+   "silent",
+   "Acompetent"
+  ]
+ },
+ {
+  "img": "images/24-Suspension-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "act",
+   "was",
+   "agreeable.",
+   "The",
+   "monks",
+   "travelled",
+   "outward",
+   "from",
+   "residence",
+   "residence,",
+   "informing",
+   "all",
+   "that",
+   "Channa",
+   "had",
+   "been",
+   "formally",
+   "suspended",
+   "the",
+   "Community.",
+   "NY,"
+  ]
+ }
+]

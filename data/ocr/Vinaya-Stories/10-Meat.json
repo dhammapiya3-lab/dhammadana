@@ -1,0 +1,520 @@
+[
+ {
+  "img": "images/10-Meat-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     265,
+     306
+    ],
+    "bbox": [
+     691,
+     956,
+     1954,
+     1273
+    ],
+    "shape": "bubble",
+    "en": "Th The Vinaya on Meat Origins of Monastic Consumption Rules",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/10-Meat-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Bar",
+   "the",
+   "devoted",
+   "lay",
+   "follower",
+   "Suppiya",
+   "sought",
+   "meat",
+   "broth",
+   "for",
+   "sick",
+   "monk.",
+   "However,",
+   "her",
+   "servant",
+   "scoured",
+   "the",
+   "city",
+   "and",
+   "found",
+   "none.",
+   "was",
+   "day.",
+   "non-slaughter",
+   "the",
+   "roth",
+   "However,"
+  ]
+ },
+ {
+  "img": "images/10-Meat-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "rat",
+   "Fearing",
+   "the",
+   "monk",
+   "would",
+   "die",
+   "without",
+   "food,",
+   "Suppiya",
+   "made",
+   "the",
+   "ultimate",
+   "sacrifice",
+   "She",
+   "cut",
+   "flesh",
+   "from",
+   "her",
+   "own",
+   "thigh,",
+   "ordering",
+   "her",
+   "servant",
+   "prepare",
+   "for",
+   "the",
+   "sick",
+   "monk",
+   "TAR"
+  ]
+ },
+ {
+  "img": "images/10-Meat-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "monk",
+   "the",
+   "meat",
+   "examining",
+   "its",
+   "Upon",
+   "discovering",
+   "Suppiya’s",
+   "hidden",
+   "wound,",
+   "the",
+   "Buddha",
+   "miraculously",
+   "healed",
+   "but",
+   "rebuked",
+   "the",
+   "monk.",
+   "consumed",
+   "source.",
+   "Net"
+  ]
+ },
+ {
+  "img": "images/10-Meat-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     165,
+     254
+    ],
+    "bbox": [
+     407,
+     777,
+     2242,
+     1280
+    ],
+    "shape": "box",
+    "en": "The Buddha established two absolute rules: 1. Human flesh must never be consumed grave offence) 2. Monks must never consume meat without first examining its source. (An offence of wrong-doing). eri",
+    "conf": 31
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/10-Meat-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Societal",
+   "Taboos",
+   "Royal",
+   "Property:",
+   "Elephants",
+   "and",
+   "horses.",
+   "Kings",
+   "would",
+   "displeased.",
+   "Loathsome:",
+   "Dogs",
+   "and",
+   "snakes.",
+   "king",
+   "serpents,",
+   "warned",
+   "that",
+   "faithless",
+   "snakes",
+   "might",
+   "attack",
+   "monks.",
+   "ocietal",
+   "Supassa,"
+  ]
+ },
+ {
+  "img": "images/10-Meat-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     579,
+     61
+    ],
+    "bbox": [
+     1402,
+     165,
+     2476,
+     575
+    ],
+    "shape": "box",
+    "en": "Forest Dangers Hunters offered predator meat to monks. However, the lingering odor of lion, tiger, panther, bear, and hyena meat attracted living predators to attack the monks in the forest.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/10-Meat-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Vesali,",
+   "General",
+   "Siha—a",
+   "Jain",
+   "follower—heard",
+   "the",
+   "Licchavis",
+   "praising",
+   "the",
+   "Buddha.",
+   "warnings",
+   "from",
+   "his",
+   "Jain",
+   "teachers",
+   "that",
+   "the",
+   "Buddha",
+   "non-",
+   "approached",
+   "investigate.",
+   "taught",
+   "Sy,",
+   "proached"
+  ]
+ },
+ {
+  "img": "images/10-Meat-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "clarified",
+   "his",
+   "stance",
+   "action:",
+   "teaches",
+   "the",
+   "non-doing",
+   "bodily,",
+   "verbal,",
+   "and",
+   "mental",
+   "misconduct.",
+   "teaches",
+   "the",
+   "doing",
+   "wholesome",
+   "mental",
+   "states,",
+   "and",
+   "the",
+   "annihilation",
+   "lust,",
+   "hate,",
+   "and",
+   "delusion."
+  ]
+ },
+ {
+  "img": "images/10-Meat-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Overjoyed,",
+   "took",
+   "refuge",
+   "the",
+   "Triple",
+   "Gem.",
+   "Demonstrating",
+   "immense",
+   "compassion,",
+   "the",
+   "Buddha",
+   "instructed",
+   "continue",
+   "offering",
+   "almsfood",
+   "the",
+   "Jains",
+   "who",
+   "visited",
+   "his",
+   "home."
+  ]
+ },
+ {
+  "img": "images/10-Meat-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Siha",
+   "ordered",
+   "servant",
+   "purchase",
+   "‘available",
+   "meat’",
+   "for",
+   "feast",
+   "honoring",
+   "the",
+   "Buddha.",
+   "Jealous",
+   "Jains",
+   "flooded",
+   "the",
+   "crossroads,",
+   "falsely",
+   "crying",
+   "out",
+   "that",
+   "Stha",
+   "had",
+   "intentionally",
+   "fat",
+   "beast",
+   "for",
+   "the",
+   "ascetic",
+   "Gotama.",
+   "slaughtered",
+   "fil",
+   "tered"
+  ]
+ },
+ {
+  "img": "images/10-Meat-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     273,
+     68
+    ],
+    "bbox": [
+     678,
+     142,
+     1974,
+     436
+    ],
+    "shape": "box",
+    "en": "Siha faith. dismissed He stated the rumors, he would £9 declaring never 5 intentionally his unwavering op oD deprive living being of life, even to save his own. He served the Community with pure intentions.",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "LAS"
+  ]
+ },
+ {
+  "img": "images/10-Meat-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Buddha",
+   "established",
+   "the",
+   "final",
+   "rule",
+   "for",
+   "consuming",
+   "meat.",
+   "allowed",
+   "only",
+   "pure",
+   "three",
+   "aspects:",
+   "Not",
+   "heard",
+   "killed",
+   "for",
+   "the",
+   "monk.",
+   "Not",
+   "seen",
+   "killed",
+   "for",
+   "the",
+   "monk.",
+   "Not",
+   "suspected",
+   "killed",
+   "for",
+   "the",
+   "monk."
+  ]
+ },
+ {
+  "img": "images/10-Meat-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Vinaya",
+   "meat",
+   "navigates",
+   "between",
+   "extremes.",
+   "rejects",
+   "the",
+   "harm",
+   "intentional",
+   "slaughter",
+   "and",
+   "dangerous",
+   "devotion,",
+   "yet",
+   "avoids",
+   "strict",
+   "dogmatic",
+   "dietary",
+   "paralysis,",
+   "allowing",
+   "monks",
+   "live",
+   "simply",
+   "what",
+   "freely",
+   "offered."
+  ]
+ },
+ {
+  "img": "images/10-Meat-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Monks,",
+   "meat",
+   "specifically",
+   "prepared",
+   "not",
+   "consumed",
+   "one",
+   "knows",
+   "it...",
+   "allow",
+   "fish",
+   "and",
+   "meat",
+   "that",
+   "pure",
+   "three",
+   "aspects.”",
+   "The",
+   "rules",
+   "alms",
+   "are",
+   "shield",
+   "should",
+   "compassion.",
+   "TAK",
+   "fey"
+  ]
+ }
+]

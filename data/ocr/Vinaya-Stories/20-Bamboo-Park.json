@@ -1,0 +1,401 @@
+[
+ {
+  "img": "images/20-Bamboo-Park-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Park:",
+   "Sto",
+   "Based",
+   "the",
+   "discourses",
+   "the",
+   "Buddha.",
+   "Bambo",
+   "Unity."
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "grove-keeper",
+   "saw",
+   "the",
+   "Blessed",
+   "One",
+   "approaching",
+   "not",
+   "enter,",
+   "ascetic,”",
+   "warned",
+   "Three",
+   "sons",
+   "good",
+   "family",
+   "dwell",
+   "here,",
+   "intent",
+   "their",
+   "welfare",
+   "not",
+   "cause",
+   "them",
+   "discomfort",
+   "(an",
+   "INE"
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Venerable",
+   "Anuruddha",
+   "heard",
+   "the",
+   "exchange",
+   "“Do",
+   "not",
+   "obstruct",
+   "him,",
+   "friend,”",
+   "said.",
+   "“Our",
+   "Teacher",
+   "has",
+   "arrived",
+   "then",
+   "called",
+   "Venerable",
+   "Nandiya",
+   "and",
+   "Venerable",
+   "Kimila",
+   "come",
+   "forth."
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "three",
+   "monks",
+   "went",
+   "forward",
+   "meet",
+   "him",
+   "One",
+   "received",
+   "his",
+   "bowl",
+   "and",
+   "robe,",
+   "one",
+   "prepared",
+   "seat,",
+   "and",
+   "one",
+   "set",
+   "out",
+   "water",
+   "and",
+   "footstool",
+   "The",
+   "Blessed",
+   "One",
+   "sat",
+   "and",
+   "washed",
+   "his",
+   "feet",
+   "meet"
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     360,
+     84
+    ],
+    "bbox": [
+     1068,
+     278,
+     2172,
+     559
+    ],
+    "shape": "box",
+    "en": "After asking of their welfare, fhe the Blessed One asked: “Do you, Anuruddha, dwell in unity, joyful, without contention, blended like milk and water, regarding one another with eyes of affection?”",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/20-Bamboo-Park-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     328,
+     329
+    ],
+    "bbox": [
+     998,
+     989,
+     2483,
+     1322
+    ],
+    "shape": "box",
+    "en": "Truly, venerable sir, we dwell in unity, joyful, and without contention. We are blended like milk and water, regarding one another with eyes of affection.",
+    "conf": 87
+   }
+  ],
+  "loose": [
+   "Gye"
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     143,
+     344
+    ],
+    "bbox": [
+     357,
+     1078,
+     2281,
+     1306
+    ],
+    "shape": "box",
+    "en": "set aside my own mind and act according to the mind of these venerable ones. For our bodies are indeed different, venerable sir, but our minds, methinks, are one.",
+    "conf": 61
+   }
+  ],
+  "loose": [
+   "jac"
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     500,
+     222
+    ],
+    "bbox": [
+     1432,
+     648,
+     2361,
+     1306
+    ],
+    "shape": "box",
+    "en": "The Blessed One then asked: “But do you, Anuruddha, dwell diligent, ardent, and resolute?” Truly we, venerable sir, dwell diligent, ardent, and resolute.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/20-Bamboo-Park-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     218,
+     334
+    ],
+    "bbox": [
+     354,
+     1068,
+     2301,
+     1306
+    ],
+    "shape": "box",
+    "en": "Whoever returns first from the village alms-round prepares the seats sets out water for washing, and arranges the drinking water.",
+    "conf": 48
+   }
+  ],
+  "loose": [
+   "YOu"
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "returns",
+   "last",
+   "eats",
+   "the",
+   "leftover",
+   "food",
+   "wishes.",
+   "Otherwise,",
+   "drops",
+   "safely",
+   "where",
+   "there",
+   "little",
+   "green",
+   "vegetation",
+   "lifeless",
+   "water",
+   "then",
+   "sweeps",
+   "the",
+   "UNG",
+   "refectory",
+   "Whoever",
+   "the"
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "water",
+   "pot",
+   "empty",
+   "and",
+   "too",
+   "heavy",
+   "for",
+   "one,",
+   "calls",
+   "second",
+   "hand",
+   "gesture.",
+   "set",
+   "hands,",
+   "but",
+   "never",
+   "they",
+   "break",
+   "into",
+   "They",
+   "joining",
+   "that",
+   "account",
+   "speech."
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "five",
+   "for",
+   "the",
+   "Thus",
+   "indeed",
+   "dwell",
+   "diligent,",
+   "Teaching.”",
+   "ardent,",
+   "and",
+   "resolute.”",
+   "every",
+   "we,",
+   "sit",
+   "erable"
+  ]
+ },
+ {
+  "img": "images/20-Bamboo-Park-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "harmony:",
+   "Mindful",
+   "affection",
+   "for",
+   "one",
+   "another.",
+   "Surrendering",
+   "the",
+   "self",
+   "Sharing",
+   "labor",
+   "noble",
+   "silence.",
+   "diligent",
+   "study.",
+   "Sangha",
+   "tothe",
+   "community.",
+   "Gathering",
+   "the"
+  ]
+ }
+]

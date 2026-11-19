@@ -1,0 +1,328 @@
+[
+ {
+  "img": "images/04-False-Claims-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     356,
+     376
+    ],
+    "bbox": [
+     678,
+     1160,
+     1914,
+     1471
+    ],
+    "shape": "bubble",
+    "en": "Sas Rule About The Not Origin Making of False the Claims",
+    "conf": 37
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-False-Claims-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     214,
+     86
+    ],
+    "bbox": [
+     572,
+     215,
+     1541,
+     575
+    ],
+    "shape": "box",
+    "en": "The Vajjis were afflicted byt by famine White bones scattered the earth Subsisting by food tickets, it was difficult to glean. Monks entering the rains retreat near the river Vaggumuda faced starvation",
+    "conf": 36
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-False-Claims-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     77,
+     168
+    ],
+    "bbox": [
+     198,
+     291,
+     1170,
+     985
+    ],
+    "shape": "bubble",
+    "en": "To secure almsfood, the monks debated survival strategy. Undertake work for laypeople? No Carry messages? No Praise each other’s non-existent super-human achievements? Yes The deception was chosen",
+    "conf": 70
+   }
+  ],
+  "loose": [
+   "tee",
+   "Path",
+   "Path"
+  ]
+ },
+ {
+  "img": "images/04-False-Claims-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "False",
+   "claims",
+   "jhana",
+   "flowed",
+   "the",
+   "laypeople.",
+   "return,",
+   "premium",
+   "food",
+   "flowed",
+   "back.",
+   "Devout",
+   "families",
+   "starved",
+   "their",
+   "own",
+   "children,",
+   "parents,",
+   "and",
+   "servants",
+   "feed",
+   "the",
+   "fraudsters."
+  ]
+ },
+ {
+  "img": "images/04-False-Claims-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     255,
+     80
+    ],
+    "bbox": [
+     612,
+     192,
+     2033,
+     407
+    ],
+    "shape": "box",
+    "en": "After the retreat, retreat, the fronts monks approached the Buddha at Vesaili. The contrast was absolute. Honest monks: lean, miserable, veins showing. tile. Vaggumuda monks: plump, bright complexion, full faculties.",
+    "conf": 39
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-False-Claims-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "‘Foolish",
+   "men,",
+   "better",
+   "your",
+   "belly",
+   "cut",
+   "open",
+   "with",
+   "sharp",
+   "butcher’s",
+   "knife",
+   "than",
+   "praise",
+   "false",
+   "super-",
+   "human",
+   "achievements",
+   "for",
+   "the",
+   "sake",
+   "rebuked",
+   "the",
+   "belly.’"
+  ]
+ },
+ {
+  "img": "images/04-False-Claims-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     86,
+     71
+    ],
+    "bbox": [
+     185,
+     182,
+     602,
+     1296
+    ],
+    "shape": "box",
+    "en": "The Buddha detailed the great thieves of the world. First: The monk wandering with entourages for alms, mirroring violent lent bandit. Second: The evil monk onk claiming the Buddha’s Teaching ching as his own.",
+    "conf": 84
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-False-Claims-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     110,
+     80
+    ],
+    "bbox": [
+     185,
+     182,
+     602,
+     1296
+    ],
+    "shape": "box",
+    "en": "Third: The evil monk who ruins pure practitioner with unfounded accusations of __unchastity unchastity. Fourth: The monk who uses Sangha property—parks beds, copper pots, axes—to entice householders. householders holders",
+    "conf": 35
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-False-Claims-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     334,
+     9
+    ],
+    "bbox": [
+     628,
+     17,
+     2014,
+     264
+    ],
+    "shape": "box",
+    "en": "The Foremost Thief: Whoever extols super-human achievement that is non-existent and not factual. This fraudster consumes the entire country’s almsfood through sheer theft.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/04-False-Claims-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Karmic",
+   "Consequence.",
+   "Better",
+   "swallow",
+   "heated,",
+   "flaming",
+   "iron",
+   "ball",
+   "than",
+   "for",
+   "unrestrained,",
+   "immoral",
+   "fraudster",
+   "consume",
+   "the",
+   "country’s",
+   "almsfood.",
+   "Deceit",
+   "guarantees",
+   "rebirth",
+   "nether",
+   "world."
+  ]
+ },
+ {
+  "img": "images/04-False-Claims-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Fourth",
+   "Expuls",
+   "Whatever",
+   "monk",
+   "falsely",
+   "claims",
+   "super-human",
+   "achievement—",
+   "bringing",
+   "upon",
+   "himself,",
+   "\"Thus",
+   "know,",
+   "thus",
+   "see\"—is",
+   "permanently",
+   "expelled,",
+   "not",
+   "communion.",
+   "The",
+   "law",
+   "was",
+   "set",
+   "Fourth"
+  ]
+ }
+]

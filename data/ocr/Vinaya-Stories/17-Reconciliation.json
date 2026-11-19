@@ -1,0 +1,457 @@
+[
+ {
+  "img": "images/17-Reconciliation-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     255,
+     366
+    ],
+    "bbox": [
+     767,
+     1207,
+     1875,
+     1455
+    ],
+    "shape": "box",
+    "en": "The Tale of Kant story of hospitality, hasty judgment, and reconciliation within the early Theravada Sangha",
+    "conf": 31
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Reconciliation-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     140,
+     57
+    ],
+    "bbox": [
+     387,
+     149,
+     1167,
+     440
+    ],
+    "shape": "box",
+    "en": "In the village of Vasabhagama, within the Kasi country, resided the monk Kassapagotta. He lived with profound zeal, desiring that well-behaved monks should arrive and dwell comfortably, allowing his residence to flourish.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "liy",
+   "000"
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "When",
+   "wandering",
+   "monks",
+   "arrived,",
+   "Kassapagotta",
+   "greeted",
+   "them",
+   "eagerly.",
+   "washed",
+   "their",
+   "feet,",
+   "collected",
+   "their",
+   "bowls",
+   "and",
+   "exhausted",
+   "himself",
+   "securing",
+   "rice",
+   "gruel,",
+   "solid",
+   "food,",
+   "and",
+   "warm",
+   "baths",
+   "for",
+   "his",
+   "visiting",
+   "guests."
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     505,
+     68
+    ],
+    "bbox": [
+     1485,
+     212,
+     2433,
+     549
+    ],
+    "shape": "box",
+    "en": "Seeing the visitors rested and familiar with the local food resort, Kassapagotta paused his exertions. Knowing that begging endlessly among families was heavy burden, he returned to his own simple practice",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "ASS"
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "visiting",
+   "monks",
+   "noticed",
+   "the",
+   "sudden",
+   "absence",
+   "feasts.",
+   "Blind",
+   "his",
+   "earlier",
+   "generosity",
+   "and",
+   "their",
+   "own",
+   "capability,",
+   "they",
+   "concluded:",
+   "“This",
+   "resident",
+   "monk",
+   "corrupted.”",
+   "seed",
+   "unwarranted",
+   "suspicion",
+   "took",
+   "root"
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     114,
+     52
+    ],
+    "bbox": [
+     165,
+     165,
+     979,
+     463
+    ],
+    "shape": "box",
+    "en": "accused Kassapagotta of an offence. When he truthfully replied, “There is no offence that should see,” the visitors weaponized his denial to formally suspend him from the Sangha",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Wis"
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     631,
+     49
+    ],
+    "bbox": [
+     1706,
+     162,
+     2228,
+     288
+    ],
+    "shape": "box",
+    "en": "LA Shakable act]",
+    "conf": 76
+   },
+   {
+    "seed": [
+     235,
+     361
+    ],
+    "bbox": [
+     767,
+     1137,
+     2470,
+     1395
+    ],
+    "shape": "box",
+    "en": "Cast out, Kassapagotta questioned the decree. Was this suspension legally valid, or was it shakable act not worthy of standing? Seeking truth, he departed for Campa to ask the Blessed One.",
+    "conf": 74
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Reconciliation-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     72,
+     73
+    ],
+    "bbox": [
+     202,
+     175,
+     1243,
+     555
+    ],
+    "shape": "box",
+    "en": "At the Gaggara pond in Campa, Kassapagotta approached the Blessed One. Following the habitual exchange of friendly greetings, the monk recounted his hospitality, the visitors’ harsh judgment, and his unjust suspension.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Reconciliation-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Blessed",
+   "One",
+   "spoke",
+   "with",
+   "absolute",
+   "clarity",
+   "This",
+   "offence.",
+   "You",
+   "are",
+   "not",
+   "suspended.",
+   "The",
+   "act",
+   "shakable",
+   "and",
+   "not",
+   "legally",
+   "valid.",
+   "Go,",
+   "monk",
+   "take",
+   "residence",
+   "right",
+   "there",
+   "Vasabhagama"
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Meanwhile,",
+   "the",
+   "visiting",
+   "monks",
+   "felt",
+   "the",
+   "heavy",
+   "weight",
+   "remorse.",
+   "They",
+   "realized",
+   "they",
+   "had",
+   "suspended",
+   "pure",
+   "monk",
+   "without",
+   "cause.",
+   "Seeking",
+   "cleanse",
+   "their",
+   "unwholesome",
+   "transgression,",
+   "they",
+   "set",
+   "out",
+   "for",
+   "Campa."
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "rebuked",
+   "them",
+   "fiercely:",
+   "“Unsuitable,",
+   "foolish",
+   "men.",
+   "How",
+   "could",
+   "you",
+   "suspend",
+   "pure",
+   "mon",
+   "without",
+   "cause?”",
+   "Ashamed,",
+   "the",
+   "monks",
+   "confessed",
+   "their",
+   "confusion",
+   "and",
+   "fell",
+   "the",
+   "Blessed",
+   "One’s",
+   "feet.",
+   "AVA"
+  ]
+ },
+ {
+  "img": "images/17-Reconciliation-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     274,
+     117
+    ],
+    "bbox": [
+     787,
+     334,
+     1131,
+     694
+    ],
+    "shape": "bubble",
+    "en": "See the Transgression",
+    "conf": 97
+   },
+   {
+    "seed": [
+     496,
+     123
+    ],
+    "bbox": [
+     1518,
+     341,
+     1852,
+     658
+    ],
+    "shape": "bubble",
+    "en": "Make",
+    "conf": 97
+   },
+   {
+    "seed": [
+     362,
+     310
+    ],
+    "bbox": [
+     1160,
+     995,
+     1465,
+     1256
+    ],
+    "shape": "bubble",
+    "en": "Genta Commit to Restraint",
+    "conf": 33
+   }
+  ],
+  "loose": [
+   "The",
+   "Buddha",
+   "accepted",
+   "their",
+   "confession:",
+   "“For",
+   "this",
+   "growth",
+   "the",
+   "Noble",
+   "One’s",
+   "discipline:",
+   "seeing",
+   "transgression,",
+   "making",
+   "amends",
+   "according",
+   "the",
+   "Teaching,",
+   "and",
+   "committing",
+   "restraint",
+   "the",
+   "future",
+   "Gyr"
+  ]
+ }
+]

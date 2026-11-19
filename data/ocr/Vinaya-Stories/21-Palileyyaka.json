@@ -1,0 +1,294 @@
+[
+ {
+  "img": "images/21-Palileyyaka-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "We,"
+  ]
+ },
+ {
+  "img": "images/21-Palileyyaka-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     556,
+     89
+    ],
+    "bbox": [
+     1736,
+     225,
+     2427,
+     483
+    ],
+    "shape": "box",
+    "en": "The Blessed One depa Kosambi, ere behind makers of quarrels, disputes, and contention. Seeking peace, he journeyed to the Protected Forest Grove at Palileyyaka.",
+    "conf": 35
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/21-Palileyyaka-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     604,
+     78
+    ],
+    "bbox": [
+     1736,
+     215,
+     2440,
+     483
+    ],
+    "shape": "box",
+    "en": "Elsewhere, noble bull elephant felt similarly crowded. His herd ate his branches, drank his water, and granted him no peace. He longed to withdraw from the group",
+    "conf": 61
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/21-Palileyyaka-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     395,
+     17
+    ],
+    "bbox": [
+     668,
+     20,
+     1977,
+     354
+    ],
+    "shape": "box",
+    "en": "Two Noble Beings, One Thal Shared Burden: The Sage: Crowded by disputes and legal cases. The Elephant: Crowded by calves and demanding herd. Both sought the joy of dwelling alone.",
+    "conf": 31
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/21-Palileyyaka-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     135,
+     90
+    ],
+    "bbox": [
+     231,
+     228,
+     1190,
+     499
+    ],
+    "shape": "box",
+    "en": "Arriving at Palileyyaka, the Blessed One found seclusion at the foot of the Bhaddasala tree. He reflected on the happiness and comfort of dwelling without companions.",
+    "conf": 82
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/21-Palileyyaka-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "DAY",
+   "The",
+   "bull",
+   "elephant",
+   "also",
+   "departed",
+   "his",
+   "herd",
+   "for",
+   "Palileyyaka",
+   "proaching",
+   "the",
+   "Blessed",
+   "One,",
+   "provided",
+   "drinking",
+   "water",
+   "and",
+   "kept",
+   "the",
+   "ground",
+   "free",
+   "green",
+   "vegetation"
+  ]
+ },
+ {
+  "img": "images/21-Palileyyaka-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Understanding",
+   "their",
+   "shared",
+   "solitude",
+   "the",
+   "Buddha",
+   "uttered:",
+   "‘The",
+   "mind",
+   "the",
+   "large",
+   "bull",
+   "elephant,",
+   "with",
+   "tusks",
+   "long",
+   "chariot",
+   "poles,",
+   "accords",
+   "with",
+   "the",
+   "mind",
+   "the",
+   "sage,",
+   "since",
+   "each",
+   "alone,",
+   "delights",
+   "the",
+   "forest"
+  ]
+ },
+ {
+  "img": "images/21-Palileyyaka-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Having",
+   "dwelt",
+   "Palileyyaka",
+   "long",
+   "liked,",
+   "the",
+   "Blessed",
+   "One",
+   "journeyed",
+   "taking",
+   "residence",
+   "Jeta’s",
+   "Grove,",
+   "park."
+  ]
+ },
+ {
+  "img": "images/21-Palileyyaka-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "lay",
+   "followers",
+   "Kosambi",
+   "realized",
+   "the",
+   "quarrelsome",
+   "monks",
+   "had",
+   "driven",
+   "the",
+   "Buddha",
+   "away.",
+   "They",
+   "refused",
+   "pay",
+   "salute,",
+   "offer",
+   "single",
+   "lump",
+   "food",
+   "the",
+   "monks.",
+   "respect,"
+  ]
+ },
+ {
+  "img": "images/21-Palileyyaka-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Treated",
+   "without",
+   "honor",
+   "and",
+   "lacking",
+   "support,",
+   "the",
+   "unvenerated",
+   "monks",
+   "Kosambi",
+   "realized",
+   "their",
+   "error",
+   "“Come,",
+   "friends,”",
+   "they",
+   "said,",
+   "“let",
+   "Savatthi",
+   "and",
+   "settle",
+   "this",
+   "legal",
+   "case",
+   "the",
+   "presence",
+   "the",
+   "Blessed",
+   "One"
+  ]
+ }
+]

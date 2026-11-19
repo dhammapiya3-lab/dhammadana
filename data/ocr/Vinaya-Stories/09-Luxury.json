@@ -1,0 +1,398 @@
+[
+ {
+  "img": "images/09-Luxury-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "UNS",
+   "The",
+   "Origin",
+   "the",
+   "classical",
+   "Vinaya",
+   "narrative",
+   "detailing",
+   "how",
+   "king’s",
+   "forgotten",
+   "promise,",
+   "miraculous",
+   "golden",
+   "garland,",
+   "and",
+   "unchecked",
+   "public",
+   "devotion",
+   "led",
+   "the",
+   "the",
+   "hoarding",
+   "medicines",
+   "Seven-Day",
+   "Medicine",
+   "Buddha",
+   "restrict",
+   "monastic"
+  ]
+ },
+ {
+  "img": "images/09-Luxury-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Cave-Dwelling",
+   "Monk",
+   "Venerable",
+   "Pilindavaccha",
+   "cleared",
+   "cave",
+   "Rajagaha.",
+   "Recognizing",
+   "his",
+   "effort,",
+   "King",
+   "Seniya",
+   "Bimbisara",
+   "offered",
+   "monastery",
+   "attendant",
+   "assist",
+   "him.",
+   "The",
+   "Buddha",
+   "permitted",
+   "this,",
+   "but",
+   "the",
+   "King",
+   "soon",
+   "forgot",
+   "his",
+   "promise",
+   "entirely.",
+   "Promise"
+  ]
+ },
+ {
+  "img": "images/09-Luxury-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WAY",
+   "VAS",
+   "Five",
+   "Nights",
+   "Five",
+   "hundred",
+   "nights",
+   "passed.",
+   "When",
+   "chief",
+   "minister",
+   "finally",
+   "recounted",
+   "the",
+   "days",
+   "and",
+   "reminded",
+   "him",
+   "the",
+   "forgotten",
+   "promise,",
+   "realized",
+   "the",
+   "massive",
+   "scale",
+   "his",
+   "oversight.",
+   "Hundred",
+   "For"
+  ]
+ },
+ {
+  "img": "images/09-Luxury-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Overcompensation",
+   "Creates",
+   "New",
+   "Village",
+   "overcompensate",
+   "for",
+   "the",
+   "severe",
+   "delay,",
+   "King",
+   "Bimbisara",
+   "granted",
+   "five",
+   "hundred",
+   "attendants.",
+   "They",
+   "established",
+   "separate,",
+   "sprawling",
+   "settlement",
+   "named",
+   "Pilindagama",
+   "exclusively",
+   "support",
+   "the",
+   "Venerable",
+   "Pilindavaccha.",
+   "Uy,",
+   "(Gi",
+   "GES"
+  ]
+ },
+ {
+  "img": "images/09-Luxury-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     468,
+     80
+    ],
+    "bbox": [
+     1465,
+     182,
+     2466,
+     522
+    ],
+    "shape": "box",
+    "en": "Poor Child Weeps at the Festival During village festival, poor female attendant’s daughter wept, desiring the beautiful garlands worn by the other children. Her destitute family possessed absolutely nothing to offer her.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Luxury-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     316,
+     374
+    ],
+    "bbox": [
+     727,
+     1233,
+     1944,
+     1481
+    ],
+    "shape": "box",
+    "en": "Pad of Grass Becomes Solid id Gold Pilindavaccha instructed the mother to place simple pad of grass upon the girl’s head. Miraculously, 2 the vu grass transformed asm into oO golden garland more splendid than any found in the King’s inner palace eee",
+    "conf": 30
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Luxury-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     63,
+     61
+    ],
+    "bbox": [
+     175,
+     179,
+     1412,
+     526
+    ],
+    "shape": "box",
+    "en": "Miraculous Wealth Brings suspicion and Chains Such immense, unexplained wealth in poor household immediately aroused suspicion. Believing the magnificent garland was brought by theft, King Bimbisara ordered the attendant’s entire family imprisoned.",
+    "conf": 54
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Luxury-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     342,
+     379
+    ],
+    "bbox": [
+     727,
+     1233,
+     1941,
+     1481
+    ],
+    "shape": "box",
+    "en": "Golden Palace moe 7 the Miracle To secure their release, Pilindavaccha visited the King. Using his supernormal power, he resolved upon Bimbisara’s mansion, turning the entire structure into solid gold. The astounded King ng immediately released the fami Nae",
+    "conf": 31
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Luxury-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     125,
+     68
+    ],
+    "bbox": [
+     195,
+     195,
+     1283,
+     466
+    ],
+    "shape": "box",
+    "en": "Flood of Devotion Brings Abundant Offerings Awestruck by this super-human achievement, the people showered Pilindavaccha with confidence and devotion. They brought endless streams of the five medicines: ghee, butter, oil, honey, and Lem} molasses. 3 wn",
+    "conf": 40
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Luxury-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     224,
+     379
+    ],
+    "bbox": [
+     727,
+     1233,
+     1941,
+     1481
+    ],
+    "shape": "box",
+    "en": "The Consequence of Unchecked Monastic Luxury ury Aculture culture of luxury infected the samgha. Instead of relying on simple alms, the monks hoarded excess medicines in large jars, hung dripping ba igs in the windows, and attracted swarms of rats.",
+    "conf": 58
+   }
+  ],
+  "loose": [
+   "Ascetic",
+   "Ideal",
+   "Unintended",
+   "Excess",
+   "Ascetic"
+  ]
+ },
+ {
+  "img": "images/09-Luxury-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     229,
+     378
+    ],
+    "bbox": [
+     727,
+     1230,
+     1941,
+     1481
+    ],
+    "shape": "box",
+    "en": "The Public ic Condemns the Royal Storeroo ms Visitors criticized the monks for keeping indoor storerooms just like King Seniya Bimbisara. ara. Monastics of few wishes rebuked this luxurious living and urgently reported the excess to the Blessed One.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Luxury-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "Establishes",
+   "the",
+   "Seven-Day",
+   "Boundary",
+   "curb",
+   "excess,",
+   "the",
+   "Buddha",
+   "established",
+   "strict",
+   "boundary.",
+   "Sick",
+   "monks",
+   "may",
+   "receive",
+   "the",
+   "five",
+   "medicines,",
+   "but",
+   "they",
+   "must",
+   "consumed",
+   "within",
+   "seven",
+   "days",
+   "most.",
+   "Exceeding",
+   "this",
+   "boundary",
+   "becomes",
+   "offense.",
+   "Buddha"
+  ]
+ }
+]

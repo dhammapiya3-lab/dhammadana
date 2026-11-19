@@ -1,0 +1,899 @@
+[
+ {
+  "img": "images/01-Intercourse-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "visual",
+   "history",
+   "asceticism,",
+   "familial",
+   "duty,",
+   "and",
+   "the",
+   "trials",
+   "the",
+   "holy",
+   "life.",
+   "Struggle",
+   "The",
+   "Origin",
+   "Sudinna’s"
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Vesali,",
+   "Sudinna",
+   "heard",
+   "the",
+   "Blessed",
+   "One",
+   "expounding",
+   "the",
+   "Teaching.",
+   "profound",
+   "realization",
+   "arose:",
+   "the",
+   "holly",
+   "life,",
+   "pure",
+   "and",
+   "polished",
+   "like",
+   "conch",
+   "shell",
+   "impossible",
+   "for",
+   "householder.",
+   "resolved",
+   "shave",
+   "his",
+   "head",
+   "and",
+   "forth",
+   "into",
+   "homelessness"
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     145,
+     69
+    ],
+    "bbox": [
+     298,
+     175,
+     1263,
+     526
+    ],
+    "shape": "box",
+    "en": "“Either my death will be here, or my going forth.” Sudinna lay on the bare earth, refusing all meals, stretching his fast to seven full days. His parents and friends pleaded, urging him to rise, enjoy eos pleasures, and make merit. oes",
+    "conf": 34
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Intercourse-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     242,
+     339
+    ],
+    "bbox": [
+     618,
+     1071,
+     2027,
+     1448
+    ],
+    "shape": "box",
+    "en": "“His friends intervened with pure logic: If denied, sui Sudinna will die here. If permitted, you will at least see him alive. If he fails at asceticism, he will return. Realizing they must choose between his absence and his death, his parents consente",
+    "conf": 40
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Intercourse-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     643,
+     65
+    ],
+    "bbox": [
+     1928,
+     119,
+     2536,
+     1372
+    ],
+    "shape": "box",
+    "en": "Joyful, Sudinna received full ordination. He adopted the most severe ascetic practices: Dwelling deep in the forest Eating only almsfood Wearing discarded rag-robes Begging successively house-to-house He lived fiercely independent, relying only on Vajjian village.",
+    "conf": 71
+   }
+  ],
+  "loose": [
+   "(NGF",
+   "SSS"
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     307,
+     49
+    ],
+    "bbox": [
+     803,
+     96,
+     1848,
+     460
+    ],
+    "shape": "box",
+    "en": "“Disaster “Disaster struck the Vaijis. Vajjis. Famine ravaged the land. land. White bones scattered the earth. Surviva Survival depended on rationed food tickets. For forest- dwelling monk, sustaining oneself by gleaning became impossible. Venerable Sudinna was forced to rethink his extreme isolation.",
+    "conf": 55
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Intercourse-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     143,
+     298
+    ],
+    "bbox": [
+     182,
+     962,
+     1108,
+     1322
+    ],
+    "shape": "box",
+    "en": "Sudinna possessed incredibly wealthy ttt relatives in Vesali. He reasoned: “If dwell near them, they will give gifts and make merit. The monks will obtain material gain, and will not starve.” Taking bowl and robe, he journeyed to the Pinnacled Hall.",
+    "conf": 32
+   }
+  ],
+  "loose": [
+   "IN?",
+   "(Gs"
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     557,
+     78
+    ],
+    "bbox": [
+     1818,
+     119,
+     2506,
+     1332
+    ],
+    "shape": "box",
+    "en": "While seeking alms at his father’s estate, female slave was discarding stale flour from the previous evening. As she poured the scraps into Sudinna’s bowl, she recognized the distinct signs of his hands, feet and voice, rushing to inform his mother",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Intercourse-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     211,
+     344
+    ],
+    "bbox": [
+     317,
+     1101,
+     2314,
+     1445
+    ],
+    "shape": "box",
+    "en": "Returning from work, Sudinna’s father found his son leanne against wall, eating discarded, stale dough. Horrified, he asked, “Will you truly eat stale flour when you could come to your own home?” Sudinna replied, “This food is from the re.” Ste arate ita",
+    "conf": 32
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Intercourse-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     162,
+     391
+    ],
+    "bbox": [
+     479,
+     1237,
+     2152,
+     1425
+    ],
+    "shape": "box",
+    "en": "Determined Az to break fal his resolve, wn 3 dee his 2 mother te mH orchestrated oO wn 2 grand temptation. 2 She piled gold into heaps so massive they blocked man’s view. She then ordered Sudinna’s former wife to adorn herself exactly as when Sudinna loved her most.",
+    "conf": 37
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Intercourse-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "His",
+   "the",
+   "maternal",
+   "and",
+   "paternal",
+   "wealth,",
+   "urging",
+   "him",
+   "return",
+   "the",
+   "lower",
+   "life.",
+   "Sudinna’s",
+   "reply",
+   "shocked",
+   "him:",
+   "“Pack",
+   "this",
+   "gold",
+   "into",
+   "sacks",
+   "and",
+   "drop",
+   "into",
+   "the",
+   "Ganges.",
+   "brings",
+   "only",
+   "fear,",
+   "trepidation,",
+   "terror,",
+   "and",
+   "safeguarding.”",
+   "father",
+   "unveiled"
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     88,
+     49
+    ],
+    "bbox": [
+     261,
+     129,
+     1058,
+     529
+    ],
+    "shape": "box",
+    "en": "His former wife grasped his feet asking, “What are the nymphs like for whom you live the holy life? do not live the holy life for nymphs sister.” Hearing her beloved husband address her merely as ‘sister,’ she fainted",
+    "conf": 94
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Intercourse-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     398,
+     212
+    ],
+    "bbox": [
+     1104,
+     668,
+     2245,
+     1068
+    ],
+    "shape": "box",
+    "en": "Defeated, the mother changed tactics, serving him superior food. Then, she begged: “If you will not return, give us at least seed. Do not let the Licchavis confiscate our vast, heirless property.” The fate of the lineage hung suspended.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Intercourse-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "seizure",
+   "their",
+   "heirless",
+   "wealth,",
+   "Sudinna’s",
+   "mother",
+   "implored",
+   "her",
+   "daughter-in-law",
+   "seduce",
+   "the",
+   "monk.",
+   "“Give",
+   "least",
+   "seed,”",
+   "she",
+   "pleaded,",
+   "urging",
+   "Sudinna",
+   "secure",
+   "the",
+   "family",
+   "lineage.",
+   "WS.",
+   "Fearing"
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "They",
+   "approached",
+   "the",
+   "Great",
+   "Wood.",
+   "Thrice",
+   "his",
+   "mother",
+   "begged",
+   "him",
+   "return",
+   "wealth.",
+   "Sudinna",
+   "refused,",
+   "declaring",
+   "his",
+   "delight",
+   "the",
+   "holy",
+   "life",
+   "Yet,pressed",
+   "provide",
+   "mere",
+   "seed",
+   "save",
+   "the",
+   "lineage,",
+   "finally",
+   "yielded"
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "VF,",
+   "Because",
+   "formal",
+   "training",
+   "rule",
+   "had",
+   "not",
+   "yet",
+   "been",
+   "laid",
+   "down",
+   "Sudinna",
+   "did",
+   "not",
+   "perceive",
+   "the",
+   "danger",
+   "Returning",
+   "the",
+   "Great",
+   "Wood,",
+   "engaged",
+   "sexual",
+   "intercourse",
+   "with",
+   "his",
+   "former",
+   "wife",
+   "three",
+   "times.",
+   "embryo",
+   "was",
+   "conceived"
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“The",
+   "community",
+   "was",
+   "indeed",
+   "danger.",
+   "has",
+   "been",
+   "produced!”",
+   "The",
+   "transgression",
+   "triggered",
+   "cosmic",
+   "alarm.",
+   "Terrestrial",
+   "gods",
+   "cried",
+   "out,",
+   "rippling",
+   "instantly",
+   "the",
+   "Brahma",
+   "world",
+   "Sudinna,",
+   "trouble",
+   "“The"
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "embryo",
+   "matured",
+   "into",
+   "son,",
+   "Bijaka",
+   "Though",
+   "born",
+   "transgression",
+   "Bijaka",
+   "and",
+   "his",
+   "mother",
+   "later",
+   "went",
+   "forth",
+   "into",
+   "homelessness",
+   "Following",
+   "the",
+   "discipline,",
+   "both",
+   "ultimately",
+   "realised",
+   "arahantship,",
+   "securing",
+   "true",
+   "spiritual",
+   "lineage"
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Deep",
+   "remorse",
+   "consumed",
+   "Sudinna",
+   "“It",
+   "loss",
+   "for",
+   "indeed!",
+   "was",
+   "not",
+   "able",
+   "live",
+   "the",
+   "holy",
+   "complete",
+   "and",
+   "pure.",
+   "Afflicted",
+   "regret",
+   "grew",
+   "lean,",
+   "pale",
+   "and",
+   "rough,",
+   "with",
+   "veins",
+   "showing",
+   "all",
+   "over",
+   "his",
+   "body."
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "His",
+   "friends",
+   "noticed",
+   "his",
+   "withered",
+   "state",
+   "“Before,",
+   "you",
+   "bright",
+   "complexion.",
+   "Are",
+   "you",
+   "living",
+   "without",
+   "delight?”",
+   "Sudinna",
+   "confessed",
+   "his",
+   "evil",
+   "deed",
+   "admitting",
+   "his",
+   "devastating",
+   "failure",
+   "Maintain",
+   "purity"
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "monks",
+   "rebuked",
+   "him,",
+   "contrasting",
+   "his",
+   "actions",
+   "with",
+   "the",
+   "Blessed",
+   "One’s",
+   "The",
+   "Teaching:",
+   "Sudinna’s",
+   "Dispassion",
+   "Lust",
+   "Bondage",
+   "Separation",
+   "from",
+   "Non-",
+   "bondage",
+   "path.",
+   "Intent:",
+   "Clinging"
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Blessed",
+   "One",
+   "the",
+   "directly.",
+   "“Is",
+   "true,",
+   "Sudinna,",
+   "that",
+   "you",
+   "engaged",
+   "sexual",
+   "intercourse",
+   "with",
+   "your",
+   "former",
+   "wife?”",
+   "“True,",
+   "Blessed",
+   "One.”",
+   "assembled",
+   "and",
+   "questioned"
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Blessed",
+   "One",
+   "rebuked",
+   "him",
+   "severely",
+   "Unsuitable,",
+   "foolish",
+   "man,",
+   "unbecoming",
+   "recluse",
+   "Have",
+   "not",
+   "declared",
+   "the",
+   "abandoning",
+   "sensual",
+   "pleasures,",
+   "the",
+   "removal",
+   "thirst,",
+   "and",
+   "the",
+   "appeasement",
+   "the",
+   "fever",
+   "sensuality?”"
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“The",
+   "Buddha",
+   "offered",
+   "terrifying",
+   "analogy:",
+   "Better",
+   "put",
+   "one’s",
+   "genitals",
+   "into",
+   "the",
+   "mouth",
+   "venomous",
+   "snake,",
+   "black",
+   "viper,",
+   "blazing",
+   "charcoal",
+   "pit,",
+   "than",
+   "into",
+   "woman.”"
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Why",
+   "preferable?",
+   "only",
+   "unwholesome",
+   "states",
+   "leads",
+   "rebirth",
+   "realm",
+   "misery,",
+   "nether",
+   "world,",
+   "physical",
+   "death",
+   "Death",
+   "brings",
+   "the",
+   "end",
+   "this"
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-27-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "Good",
+   "Buddha",
+   "laid",
+   "down",
+   "rule",
+   "protect",
+   "the",
+   "based",
+   "ten",
+   "reasons,",
+   "including:",
+   "Excellence",
+   "the",
+   "Samgha",
+   "Restraint",
+   "mental",
+   "corruptions",
+   "Confidence",
+   "the",
+   "people",
+   "Duration",
+   "the",
+   "Good",
+   "Teaching”",
+   "chip"
+  ]
+ },
+ {
+  "img": "images/01-Intercourse-28-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ess",
+   "laid",
+   "definitive",
+   "training",
+   "rule",
+   "all",
+   "monks:",
+   "“Whatever",
+   "monk",
+   "should",
+   "engage",
+   "sexual",
+   "intercourse,",
+   "expelled,",
+   "not",
+   "communion.”",
+   "The",
+   "ultimate",
+   "boundary",
+   "holy",
+   "life",
+   "was",
+   "drawn.",
+   "Ble"
+  ]
+ }
+]
