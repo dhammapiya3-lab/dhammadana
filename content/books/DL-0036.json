@@ -68,10 +68,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "pdf/DL-0036/DL-0036_이판.pdf"
+        "url": "pdf/DL-0036/DL-0036_이판.pdf",
+        "site": "",
+        "created": "2026년 11월 17일"
       },
       "pdf_print": {
         "mode": "none",
@@ -80,10 +80,10 @@
         "created": ""
       },
       "pdf_cover": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "pdf/DL-0036/DL-0036_이판_인쇄용표지.pdf"
+        "url": "pdf/DL-0036/DL-0036_이판_인쇄용표지.pdf",
+        "site": "",
+        "created": "2026년 11월 17일"
       },
       "epub": {
         "mode": "none",
