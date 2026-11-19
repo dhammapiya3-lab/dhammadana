@@ -1,0 +1,232 @@
+[
+ {
+  "img": "images/21-Palileyyaka-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     482,
+     196,
+     740,
+     260
+    ],
+    "ko": "빨릴레이야까로 가는 길\n홀로 머묾과 화합, 그리고 다툼의 결과",
+    "cover": [
+     226,
+     187,
+     142
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Palileyyaka-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     512,
+     58,
+     744,
+     162
+    ],
+    "ko": "세존께서 다툼과 논쟁과 언쟁을\n일삼는 이들을 뒤로하고 꼬삼비를\n떠나셨습니다. 평화를 찾아\n빨릴레이야까의 보호받는\n숲으로 가셨습니다.",
+    "cover": [
+     236,
+     207,
+     167
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Palileyyaka-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     512,
+     56,
+     752,
+     160
+    ],
+    "ko": "한편 한 고귀한 수코끼리도 몹시\n붐빈다고 느꼈습니다. 무리가 그의\n가지를 먹고 물을 마셔 그에게는\n평화가 없었습니다. 그는 무리에서\n벗어나고 싶었습니다.",
+    "cover": [
+     232,
+     203,
+     163
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Palileyyaka-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     194,
+     6,
+     604,
+     104
+    ],
+    "ko": "고귀한 두 존재, 같은 짐\n• 성자: 다툼과 법적 문제로 붐볐습니다.\n• 코끼리: 새끼들과 시끄러운 무리로 붐볐습니다.\n둘 다 홀로 머무는 기쁨을 찾았습니다.",
+    "cover": [
+     226,
+     195,
+     152
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Palileyyaka-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     62,
+     362,
+     160
+    ],
+    "ko": "빨릴레이야까에 이르신 세존께서는\n밧다살라 나무 아래에서 홀로\n머무셨습니다. 벗 없이 지내는\n행복과 편안함을 돌아보셨습니다.",
+    "cover": [
+     227,
+     194,
+     152
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Palileyyaka-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     154,
+     302,
+     312
+    ],
+    "ko": "수코끼리도 무리를\n떠나 빨릴레이야까로\n왔습니다. 세존께\n다가가 마실 물을\n올리고 둘레의 풀을\n깨끗이 치웠습니다.",
+    "cover": [
+     225,
+     183,
+     133
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Palileyyaka-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     494,
+     170,
+     756,
+     322
+    ],
+    "ko": "둘이 함께 홀로 머묾을\n아신 부처님께서 읊으셨습니다.\n“수레 채만큼 긴 엄니를 지닌\n큰 수코끼리의 마음은\n성자의 마음과 같다. 저마다\n홀로 숲을 즐기기 때문이다.”",
+    "cover": [
+     219,
+     178,
+     130
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Palileyyaka-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     62,
+     316,
+     182
+    ],
+    "ko": "빨릴레이야까에서 원하시는\n만큼 머무신 세존께서는\n사왓티로 가시어 아나타삔디까의\n동산인 제따 숲에\n머무셨습니다.",
+    "cover": [
+     219,
+     178,
+     131
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Palileyyaka-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     64,
+     584,
+     156
+    ],
+    "ko": "꼬삼비의 재가 신자들은 다투는 비구들이\n부처님을 떠나시게 한 것을 알았습니다.\n그들은 비구들에게 예도 인사도 하지 않고\n밥 한 덩이도 올리지 않았습니다.",
+    "cover": [
+     221,
+     180,
+     133
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-Palileyyaka-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     194,
+     82,
+     606,
+     178
+    ],
+    "ko": "공경도 후원도 받지 못하자 꼬삼비의 비구들은\n잘못을 깨달았습니다. “벗들이여,” 그들이 말했습니다.\n“사왓티로 가서 세존 앞에서\n이 법적 문제를 해결합시다.”",
+    "cover": [
+     238,
+     226,
+     209
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
