@@ -24,14 +24,25 @@ def get(url):
 def one(slug, sf, img, keep):
     url = BASE + slug + "/" + img
     cache = os.path.join("cache/orig", slug, img)
-    if not os.path.exists(cache):
+    def ok(path):
+        try:
+            return open(path, "rb").read(3) == b"\xff\xd8\xff" or cv2.imread(path) is not None
+        except OSError:
+            return False
+    if not os.path.exists(cache) or not ok(cache):
+        # 보관함에 깨진 파일(그림이 아닌 것)이 있으면 다시 받는다
         os.makedirs(os.path.dirname(cache), exist_ok=True)
-        open(cache, "wb").write(get(url))
+        data = get(url)
+        open(cache, "wb").write(data)
+        if not ok(cache):
+            print(f"그림이 아님: {url} ({len(data)}바이트, 앞부분 {data[:60]!r})", flush=True)
     if keep:
         k = os.path.join("work/orig", slug, img)
         os.makedirs(os.path.dirname(k), exist_ok=True)
         open(k, "wb").write(open(cache, "rb").read())
     im = cv2.imread(cache)
+    if im is None:
+        return {"img": img, "boxes": [], "loose": [], "bad": True}
     return {"img": img, **detect(im)}
 
 
