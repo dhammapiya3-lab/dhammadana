@@ -1194,7 +1194,8 @@ function bindReader() {
   };
   el._stepBy = stepBy;
   $('#rPrev').onclick = () => stepBy(-1); $('#rNext').onclick = () => stepBy(1);
-  $$('[data-rstep]', el).forEach(b => b.onclick = () => { store.set('rstep', b.dataset.rstep); $$('[data-rstep]', el).forEach(x => x.classList.toggle('on', x === b)); const a = $('#rPrev'), z = $('#rNext'); if (a) a.setAttribute('aria-label', stepName(-1)); if (z) z.setAttribute('aria-label', stepName(1)); markSent(null); R.sentAt = null; sayKey(`‹ › 넘기는 단위: ${b.textContent}`); }); $('#rRange').onchange = e => go(+e.target.value);
+  $$('[data-rstep]', el).forEach(b => b.onclick = () => { store.set('rstep', b.dataset.rstep); $$('[data-rstep]', el).forEach(x => x.classList.toggle('on', x === b)); const a = $('#rPrev'), z = $('#rNext'); if (a) a.setAttribute('aria-label', stepName(-1)); if (z) z.setAttribute('aria-label', stepName(1)); markSent(null); R.sentAt = null; toast(`‹ › 넘기는 단위: ${b.textContent}`); });   // 화면 단추는 알림 글만 — 소리 알림은 단축키(Alt+Shift+U)에서만
+  $('#rRange').onchange = e => go(+e.target.value);
   const ff = $('#findForm'); if (ff) ff.onsubmit = async ev => {
     ev.preventDefault(); const q = $('#findQ').value.trim(); R.findQ = q; if (!q) return;
     let V = []; try { V = (await data()).variants; } catch (e) {}
