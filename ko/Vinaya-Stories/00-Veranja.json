@@ -1,0 +1,1303 @@
+[
+ {
+  "img": "images/00-Veranja-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     280,
+     356,
+     520,
+     420
+    ],
+    "ko": "웨란자의 기근\n껍질을 깨뜨림",
+    "cover": [
+     198,
+     149,
+     106
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     228,
+     340,
+     572,
+     436
+    ],
+    "ko": "세존께서 웨란자의 날레루 뿌찌만다\n나무 아래에 머무셨습니다.\n비구와 비구니 오백 명쯤의\n큰 승가가 함께했습니다.",
+    "cover": [
+     214,
+     171,
+     135
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     154,
+     390,
+     312
+    ],
+    "ko": "가장 높은 바른 깨달음을 이루신 분이라는\n부처님의 명성을 듣고 바라문 웨란자가\n찾아왔습니다. 정답게 인사를 나눈 뒤\n한쪽에 앉았는데, 마음속에는\n세속의 의심을 품고 있었습니다.",
+    "cover": [
+     224,
+     190,
+     152
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     228,
+     340,
+     572,
+     436
+    ],
+    "ko": "“고따마 님, 당신은 나이 든 바라문들에게\n절하지도 않고 일어나 자리를\n권하지도 않는다고 들었습니다.\n이는 옳지 않습니다.”",
+    "cover": [
+     217,
+     182,
+     144
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     342,
+     590,
+     436
+    ],
+    "ko": "“바라문이여, 신들과 마라와 범천이 있는\n이 세상에서 내가 일어나 맞아야 할 이를\n나는 보지 못한다. 여래가 그렇게 공경한다면\n그의 머리가 깨져 버릴 것이다.”",
+    "cover": [
+     217,
+     178,
+     141
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     342,
+     616,
+     436
+    ],
+    "ko": "그 절대적인 권위에 발끈한 바라문은\n세속의 욕설로 여덟 가지 비난을 퍼부었습니다.\n부처님께서는 하나하나 받아서\n깨달음을 뜻하는 말로 바꾸어 놓으셨습니다.",
+    "cover": [
+     216,
+     180,
+     144
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     24,
+     360,
+     72
+    ],
+    "ko": "맛이 없는 이",
+    "cover": [
+     216,
+     172,
+     128
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     24,
+     714,
+     72
+    ],
+    "ko": "즐길 줄 모르는 이",
+    "cover": [
+     215,
+     171,
+     129
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     86,
+     94,
+     360,
+     160
+    ],
+    "ko": "웨란자: 세련됨이\n없다.",
+    "cover": [
+     219,
+     176,
+     134
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     94,
+     714,
+     160
+    ],
+    "ko": "웨란자: 즐거움이\n없다.",
+    "cover": [
+     219,
+     176,
+     134
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     86,
+     182,
+     360,
+     276
+    ],
+    "ko": "부처님: 형색과 소리와\n맛에 대한 맛을\n버렸다.",
+    "cover": [
+     218,
+     176,
+     134
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     182,
+     714,
+     276
+    ],
+    "ko": "부처님: 감각의 집착을\n뿌리 뽑아 야자 그루터기처럼\n잘라 버렸다.",
+    "cover": [
+     219,
+     177,
+     137
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     24,
+     360,
+     72
+    ],
+    "ko": "행위의 효력을 부정하는 이",
+    "cover": [
+     213,
+     169,
+     129
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     24,
+     714,
+     72
+    ],
+    "ko": "혐오하는 이",
+    "cover": [
+     212,
+     167,
+     126
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     86,
+     94,
+     360,
+     160
+    ],
+    "ko": "웨란자: 업을\n부정한다.",
+    "cover": [
+     217,
+     173,
+     131
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     94,
+     714,
+     160
+    ],
+    "ko": "웨란자: 미워한다.",
+    "cover": [
+     219,
+     174,
+     131
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     86,
+     182,
+     360,
+     276
+    ],
+    "ko": "부처님: 몸과 말과 마음의\n나쁜 행위를 하지 말라고\n가르친다.",
+    "cover": [
+     216,
+     173,
+     135
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     182,
+     714,
+     276
+    ],
+    "ko": "부처님: 오직 악하고\n해로운 마음 상태만\n혐오한다.",
+    "cover": [
+     217,
+     173,
+     133
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     24,
+     360,
+     76
+    ],
+    "ko": "없애는 이, 제거하는 이",
+    "cover": [
+     213,
+     168,
+     129
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     24,
+     714,
+     76
+    ],
+    "ko": "엄격한 고행자",
+    "cover": [
+     212,
+     167,
+     125
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     86,
+     94,
+     360,
+     162
+    ],
+    "ko": "웨란자: 생명을\n없앤다.",
+    "cover": [
+     216,
+     171,
+     129
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     94,
+     714,
+     162
+    ],
+    "ko": "웨란자: 혹독하게\n자신을 괴롭힌다.",
+    "cover": [
+     217,
+     172,
+     130
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     86,
+     182,
+     360,
+     276
+    ],
+    "ko": "부처님: 탐욕과 성냄과\n어리석음을 없애고\n제거한다.",
+    "cover": [
+     215,
+     172,
+     133
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     182,
+     714,
+     276
+    ],
+    "ko": "부처님: 후회를 일으키는\n모든 상태를 버렸다.",
+    "cover": [
+     216,
+     172,
+     132
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     442,
+     64,
+     714,
+     354
+    ],
+    "ko": "“고따마 님은\n모태에 들지 않는\n분입니까?”\n\n그렇습니다. 여래에게\n앞으로 모태에 들어\n다시 태어나는 일은\n버려졌고, 뿌리가 잘렸으며,\n다시 일어나지 않게\n되었습니다.",
+    "cover": [
+     215,
+     171,
+     131
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     518,
+     82,
+     730,
+     368
+    ],
+    "ko": "당신이 가장 높음을\n설명하시려고 부처님께서\n비유를 드셨습니다.\n\n“암탉의 알이\n여덟 개나 열 개나\n열두 개 있는데,\n어미가 잘 품어\n따뜻하게 하고\n잘 부화시켰다고 하자.”",
+    "cover": [
+     218,
+     183,
+     147
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     362,
+     740,
+     452
+    ],
+    "ko": "“그 병아리들 가운데 발톱이나 부리로 알껍데기를 가장 먼저 무사히 깨고 나온\n병아리를 무엇이라 불러야 하겠는가? 맏이인가, 막내인가?”\n“맏이입니다.” 웨란자가 대답했습니다.",
+    "cover": [
+     191,
+     128,
+     78
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     298,
+     758,
+     404
+    ],
+    "ko": "“바라문이여, 이와 같이 이 세대는 알 속에 갇혀 있다.\n나 홀로 세상에서 무명의 껍질을 깨고\n위없는 바른 깨달음을 완전히 깨달았다.”",
+    "cover": [
+     219,
+     178,
+     138
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     128,
+     382,
+     678,
+     446
+    ],
+    "ko": "“바라문이여, 그러므로 나는 세상에서 맏이요, 가장 높은 이다.”\n나이가 아니라 지혜로 참된 손위가 정해집니다.",
+    "cover": [
+     204,
+     157,
+     115
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     514,
+     178,
+     672,
+     388
+    ],
+    "ko": "“바라문이여,\n나는 정진을 일으켜\n게으르지 않았고,\n마음챙김을 확립해\n흐트러지지 않았으며,\n몸은 고요해\n들뜨지 않았고,\n마음은 삼매에 들어\n한곳에 모였다.”",
+    "cover": [
+     228,
+     187,
+     137
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     22,
+     728,
+     82
+    ],
+    "ko": "삼매에 들어 청정하고 다루기 쉬워진 마음을 세 가지 참된 앎으로\n차례로 기울여 무명의 껍질을 깨뜨립니다.",
+    "cover": [
+     231,
+     194,
+     150
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     368,
+     564,
+     396
+    ],
+    "ko": "초야: 전생을 기억함",
+    "cover": [
+     226,
+     188,
+     146
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     140,
+     396,
+     660,
+     442
+    ],
+    "ko": "마음이 넓어져, 우주가 수축하고 팽창하는 여러 겁에 걸친\n수많은 전생을 기억합니다. 첫 번째로 깨고 나옴입니다.",
+    "cover": [
+     222,
+     183,
+     140
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     270,
+     368,
+     530,
+     396
+    ],
+    "ko": "중야: 하늘 눈",
+    "cover": [
+     218,
+     181,
+     141
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     110,
+     396,
+     690,
+     442
+    ],
+    "ko": "인간을 넘어선 청정한 눈으로 중생이 죽고 태어나는 것을 보고, 그들이\n지은 업에 따라 가는 길을 압니다. 두 번째로 깨고 나옴입니다.",
+    "cover": [
+     219,
+     179,
+     137
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     20,
+     596,
+     88
+    ],
+    "ko": "다시 태어남의 원리\n나쁜 행위와 그릇된 견해는 괴로운 곳으로,\n좋은 행위와 바른 견해는 하늘 세계로 이끕니다.",
+    "cover": [
+     226,
+     189,
+     146
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     516,
+     158,
+     660,
+     336
+    ],
+    "ko": "후야: 번뇌의 소멸\n\n괴로움과\n그 일어남과\n그 소멸과\n소멸로 이끄는 길을\n있는 그대로\n바로 압니다.",
+    "cover": [
+     225,
+     185,
+     140
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     336,
+     604,
+     438
+    ],
+    "ko": "“태어남은 다했고, 청정범행은 이루어졌으며…\n이 상태가 더는 없다.”\n마음이 감각적 욕망과 존재와 무명의 번뇌에서\n풀려납니다. 세 번째로 깨고 나옴입니다.",
+    "cover": [
+     217,
+     177,
+     134
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     536,
+     136,
+     690,
+     318
+    ],
+    "ko": "“훌륭하십니다,\n고따마 님!\n\n넘어진 것을\n일으켜 세우듯…\n\n어둠 속에\n등불을 비추듯…\n가르침이\n밝혀졌습니다.”",
+    "cover": [
+     228,
+     190,
+     148
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     538,
+     132,
+     698,
+     298
+    ],
+    "ko": "바라문은 귀의하고\n웨란자에서\n안거(왓사)를\n지내 주시기를\n청합니다.\n\n세존께서는\n침묵으로\n허락하십니다.",
+    "cover": [
+     226,
+     188,
+     146
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     30,
+     382,
+     116
+    ],
+    "ko": "웨란자에 심한 기근이 들었습니다. 탁발을\n할 수 없게 된 비구들은 북쪽 말장수들이\n나누어 준 말 먹이 곡식으로 연명했습니다.\n돌절구에 질긴 곡식을 빻아 청정범행을 이어 갔습니다.",
+    "cover": [
+     221,
+     198,
+     169
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     370,
+     752,
+     434
+    ],
+    "ko": "절구 소리를 들으신 부처님께서 그들의 굳건함을 칭찬하셨습니다.\n“장하다, 아난다여! 훌륭한 너희가 이겨 냈다.\n뒷날 사람들은 고기 곁들인 쌀밥도 하찮게 여길 것이다.”",
+    "cover": [
+     210,
+     182,
+     150
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     408,
+     46,
+     748,
+     154
+    ],
+    "ko": "굶주림을 보다 못한 마하목갈라나 장로가 신통으로\n벗어날 길을 내놓았습니다. 땅을 뒤집어 달고 영양 많은\n땅 껍질을 먹게 하거나, 승가 전체를 전설의\n웃따라꾸루로 옮겨 탁발하게 하자는 것이었습니다.",
+    "cover": [
+     231,
+     206,
+     172
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-27-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     404,
+     52,
+     766,
+     320
+    ],
+    "ko": "세존께서는 단호히 거절하셨습니다.\n땅을 뒤집으면 거기 기대 사는\n생명들이 해를 입고 사람들이\n미혹된다. 승가는 신통으로 피하지\n말고 타고난 굳건함으로 기근을\n견뎌야 한다고 하셨습니다.",
+    "cover": [
+     221,
+     199,
+     170
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-28-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     354,
+     740,
+     442
+    ],
+    "ko": "홀로 머물던 사리뿟따 장로는 지난 역사를 곰곰이 생각했습니다.\n“어떤 옛 부처님들의 청정범행은 오래갔고,\n어떤 부처님들의 청정범행은 곧 사라졌는가?”",
+    "cover": [
+     192,
+     165,
+     137
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-29-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     126,
+     66,
+     684,
+     132
+    ],
+    "ko": "지난 부처님들이 남기신 것",
+    "cover": [
+     232,
+     209,
+     180
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     100,
+     140,
+     398,
+     214
+    ],
+    "ko": "짧게 간 가르침: 위빳시,\n시키, 웻사부",
+    "cover": [
+     228,
+     205,
+     176
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     404,
+     140,
+     712,
+     214
+    ],
+    "ko": "오래간 가르침: 까꾸산다,\n꼬나가마나, 깟사빠",
+    "cover": [
+     229,
+     204,
+     173
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     100,
+     240,
+     346,
+     280
+    ],
+    "ko": "• 자세한 가르침:",
+    "cover": [
+     215,
+     193,
+     166
+    ],
+    "align": "left",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     100,
+     282,
+     346,
+     322
+    ],
+    "ko": "• 학습 계율 제정:",
+    "cover": [
+     209,
+     185,
+     159
+    ],
+    "align": "left",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     100,
+     324,
+     346,
+     366
+    ],
+    "ko": "• 빠띠목카 독송:",
+    "cover": [
+     203,
+     178,
+     153
+    ],
+    "align": "left",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     412,
+     240,
+     660,
+     280
+    ],
+    "ko": "• 자세한 가르침:",
+    "cover": [
+     217,
+     192,
+     164
+    ],
+    "align": "left",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     412,
+     282,
+     660,
+     322
+    ],
+    "ko": "• 학습 계율 제정:",
+    "cover": [
+     211,
+     185,
+     158
+    ],
+    "align": "left",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     412,
+     324,
+     660,
+     366
+    ],
+    "ko": "• 빠띠목카 독송:",
+    "cover": [
+     204,
+     178,
+     150
+    ],
+    "align": "left",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-30-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     322,
+     738,
+     418
+    ],
+    "ko": "계율이 없는 가르침은 시간의 바람에 흩어지는 낱 꽃과 같습니다.\n빠띠목카로 묶인 가르침은 실에 꿴 꽃처럼 흩어지지 않습니다.",
+    "cover": [
+     192,
+     168,
+     143
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-31-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     314,
+     222,
+     778,
+     426
+    ],
+    "ko": "법의 틀이 필요함을 깨달은 사리뿟따\n장로가 세존께 간곡히 청했습니다.\n\n“지금이 학습 계율을 정하시고\n빠띠목카를 독송하실 때입니다.\n그래야 이 청정범행이 오래갈 것입니다.”",
+    "cover": [
+     204,
+     178,
+     151
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-32-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     92,
+     254,
+     362
+    ],
+    "ko": "“기다려라,\n사리뿟따여.”\n\n부처님께서는 서둘러\n계율을 정하지 않으셨습니다.\n“스승은 승가에\n번뇌를 일으키는 조건이\n실제로 나타나기\n전에는 학습 계율을\n정하지 않는다.”",
+    "cover": [
+     211,
+     178,
+     147
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-33-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     40,
+     322,
+     212
+    ],
+    "ko": "번뇌가 생기는 계단\n\n승가가 네 단계로 커질 때에야\n계율이 필요합니다.\n1. 오래됨\n2. 커짐\n3. 이익이 가장 많아짐\n4. 많이 배움",
+    "cover": [
+     219,
+     194,
+     166
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-34-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     346,
+     780,
+     430
+    ],
+    "ko": "지금은 계율이 필요 없었습니다. 지금의 승가 오백 명은 청정하고\n흠 없이 핵심에 굳게 서 있었습니다. 그 가운데 가장 낮은 이도\n이미 수다원이어서 갈 곳이 정해져 있었습니다.",
+    "cover": [
+     210,
+     186,
+     157
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-35-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     326,
+     458,
+     430
+    ],
+    "ko": "관례대로 여래는 안거를 마치면\n청한 이에게 알리지 않고 떠나지 않습니다.\n부처님과 아난다는 바라문 웨란자를\n찾아가 떠난다는 것을 알렸습니다.",
+    "cover": [
+     203,
+     177,
+     150
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-36-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     48,
+     660,
+     130
+    ],
+    "ko": "웨란자는 기근 동안 공양을 올리지 못한 것을 사과했습니다.\n다음 날 그는 승가에 손수 훌륭한 공양을 올리고\n모두에게 새 가사를 입혀 드렸습니다.",
+    "cover": [
+     221,
+     195,
+     170
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Veranja-37-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     326,
+     548,
+     432
+    ],
+    "ko": "청한 이를 가르치신 뒤 세존께서는 길을 떠나셨습니다.\n빠야가빠띳타나에서 강가 강을 건너 바라나시를 거쳐\n마침내 웨살리 큰 숲의 중각강당에 이르셨습니다.",
+    "cover": [
+     202,
+     175,
+     147
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
