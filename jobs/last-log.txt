@@ -1,12 +1,95 @@
-Foremost-Laymen 03-Citta 31 장
-자동 검수: 문제 의심 0 곳
-R2 에 올림: 108 개 / 한글판 이야기 178 편
-공개 주소 확인: 200 1379324바이트
-이야기 Foremost-Laymen/03-Citta {'pdf': 47551270, 'zip': 47266327, 'n': 31}
-책 Foremost-Laymen {'pdf': 103612273, 'pdfs': 10943729, 'zip': 103330935, 'stories': 3, 'n': 69}
-내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 178 이야기
-10-Nakulapitu
-10-Kali
-39-Second-Council.htm: 그림 39 상자 8 상자밖글 776
-39-Second-Council
+Foremost-Laymen 04-Hatthaka-Alavaka 10 장
+검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자3 [자리] 한글이 원래 글 자리(504,1041-620,1130)에서 벗어남 (809,1087)
+검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자4 [자리] 한글이 원래 글 자리(1997,1043-2042,1136)에서 벗어남 (1834,1087)
+Foremost-Nuns 03-Uppalavanna 37 장
+Jataka 012-The-Golden-Deer 14 장
+검수 Jataka/018-The-Sacrificial-Goat 05번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+검수 Jataka/018-The-Sacrificial-Goat 06번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+Jataka 018-The-Sacrificial-Goat 14 장
+Jataka 022-The-Teaching-of-the-Dog 14 장
+검수 Jataka/027-Elephant-and-Dog 04번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 5px)
+검수 Jataka/027-Elephant-and-Dog 06번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 5px)
+Jataka 027-Elephant-and-Dog 13 장
+Jataka 028-Nandivisala 12 장
+Jataka 041-The-Unfortunate-Monk 15 장
+Jataka 048-The-Rain-of-Ruin 15 장
+Pannasa 01-King-Aditta 15 장
+Pannasa 04-Arindama 12 장
+Pannasa 06-Samuddaghosa 15 장
+Pannasa 08-Dhammikapandita 12 장
+Pannasa 19-Sirivipulakitti 15 장
+Pannasa 23-Ratanapajjota 14 장
+Pannasa 24-Two-Headed-Swan 13 장
+Pannasa 25-Viriyapandita 15 장
+Pannasa 26-Vipularaja 13 장
+Pannasa 27-Mahapaduma 27 장
+Pannasa 28-Mahasurasena 15 장
+Pannasa 30-White-Mouse 15 장
+Pannasa 32-Subhadda 15 장
+Pannasa 37-Vattanguli 30 장
+Pannasa 39-Sonananda 28 장
+Pannasa 42-Sucika 15 장
+Pannasa 46-Dukamma 13 장
+The-Great-Emancipation 29-The-Last-Meal 10 장
+The-Great-Emancipation 43-The-Story-Concerning-Mahakassapa 12 장
+자동 검수: 문제 의심 6 곳
+R2 에 올림: 942 개 / 한글판 이야기 179 편
+공개 주소 확인: 200 1349727바이트
+이야기 Foremost-Laymen/04-Hatthaka-Alavaka {'pdf': 15152075, 'zip': 14876942, 'n': 10}
+책 Foremost-Laymen {'pdf': 118492567, 'pdfs': 12530697, 'zip': 118207491, 'stories': 4, 'n': 79}
+이야기 Foremost-Nuns/03-Uppalavanna {'pdf': 48945394, 'zip': 48665212, 'n': 37}
+책 Foremost-Nuns {'pdf': 385703536, 'pdfs': 40800199, 'zip': 385350851, 'stories': 13, 'n': 283}
+이야기 Jataka/012-The-Golden-Deer {'pdf': 18814472, 'zip': 18550255, 'n': 14}
+이야기 Jataka/018-The-Sacrificial-Goat {'pdf': 16415314, 'zip': 16144931, 'n': 14}
+이야기 Jataka/022-The-Teaching-of-the-Dog {'pdf': 17745147, 'zip': 17479947, 'n': 14}
+이야기 Jataka/027-Elephant-and-Dog {'pdf': 16869465, 'zip': 16604634, 'n': 13}
+이야기 Jataka/028-Nandivisala {'pdf': 14861683, 'zip': 14593508, 'n': 12}
+이야기 Jataka/041-The-Unfortunate-Monk {'pdf': 17954232, 'zip': 17688340, 'n': 15}
+이야기 Jataka/048-The-Rain-of-Ruin {'pdf': 16679706, 'zip': 16415226, 'n': 15}
+책 Jataka {'pdf': 496144069, 'pdfs': 50496763, 'zip': 495734309, 'stories': 32, 'n': 422}
+이야기 Pannasa/01-King-Aditta {'pdf': 19968930, 'zip': 19706443, 'n': 15}
+이야기 Pannasa/04-Arindama {'pdf': 16342965, 'zip': 16080507, 'n': 12}
+이야기 Pannasa/06-Samuddaghosa {'pdf': 20684845, 'zip': 20418454, 'n': 15}
+이야기 Pannasa/08-Dhammikapandita {'pdf': 14906299, 'zip': 14639952, 'n': 12}
+이야기 Pannasa/19-Sirivipulakitti {'pdf': 20097824, 'zip': 19829049, 'n': 15}
+이야기 Pannasa/23-Ratanapajjota {'pdf': 17029382, 'zip': 16760466, 'n': 14}
+이야기 Pannasa/24-Two-Headed-Swan {'pdf': 18836427, 'zip': 18570625, 'n': 13}
+이야기 Pannasa/25-Viriyapandita {'pdf': 18623984, 'zip': 18358350, 'n': 15}
+이야기 Pannasa/26-Vipularaja {'pdf': 18718707, 'zip': 18455087, 'n': 13}
+이야기 Pannasa/27-Mahapaduma {'pdf': 34060695, 'zip': 33789912, 'n': 27}
+이야기 Pannasa/28-Mahasurasena {'pdf': 18515467, 'zip': 18248796, 'n': 15}
+이야기 Pannasa/30-White-Mouse {'pdf': 20805997, 'zip': 20543895, 'n': 15}
+이야기 Pannasa/32-Subhadda {'pdf': 18804707, 'zip': 18541319, 'n': 15}
+이야기 Pannasa/37-Vattanguli {'pdf': 39028656, 'zip': 38757066, 'n': 30}
+이야기 Pannasa/39-Sonananda {'pdf': 34938966, 'zip': 34668604, 'n': 28}
+이야기 Pannasa/42-Sucika {'pdf': 18666712, 'zip': 18400928, 'n': 15}
+이야기 Pannasa/46-Dukamma {'pdf': 15976830, 'zip': 15713225, 'n': 13}
+책 Pannasa {'pdf': 1033746367, 'pdfs': 99395866, 'zip': 1033195574, 'stories': 50, 'n': 803}
+이야기 The-Great-Emancipation/29-The-Last-Meal {'pdf': 9945475, 'zip': 9684873, 'n': 10}
+이야기 The-Great-Emancipation/43-The-Story-Concerning-Mahakassapa {'pdf': 13111346, 'zip': 12846676, 'n': 12}
+책 The-Great-Emancipation {'pdf': 247118492, 'pdfs': 25100760, 'zip': 246787278, 'stories': 20, 'n': 234}
+내려받기 파일: 33 묶음 새로 만듦
+글로 보기: 179 이야기
+To https://github.com/dhammapiya3-lab/dhammadana
+ ! [rejected]        storybooks -> storybooks (fetch first)
+error: failed to push some refs to 'https://github.com/dhammapiya3-lab/dhammadana'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Committer identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <runner@runnervm0hi8g.tmrcckyg3riehbbdw0tjeliahb.cx.internal.cloudapp.net>) not allowed
+error: cannot pull with rebase: Your index contains uncommitted changes.
+error: Please commit or stash them.
