@@ -215,6 +215,19 @@
       ]
     },
     {
+      "id": "mahabodhi",
+      "name": "마하보디 선원",
+      "kind": "승원·사원",
+      "urls": [
+        "https://cafe.naver.com/mahabodhikorea"
+      ],
+      "partner": true,
+      "note": "네이버 카페 · cafe.naver.com/mahabodhikorea",
+      "aliases": [
+        "마하보디선원"
+      ]
+    },
+    {
       "id": "shweoomin-mm",
       "name": "쉐우민 수행센터",
       "kind": "출판사",
