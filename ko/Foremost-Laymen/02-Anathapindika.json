@@ -1,0 +1,662 @@
+[
+ {
+  "img": "images/02-Anathapindika-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     216,
+     286,
+     584,
+     386
+    ],
+    "ko": "아나타삔디까의 생애\n보시 제일의 우바새",
+    "cover": [
+     248,
+     241,
+     215
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     276,
+     590,
+     404
+    ],
+    "ko": "함사와띠에서 한 부유한 우바새가 빠두뭇따라 부처님께 특별한 공양을 올렸습니다. 다른 제자가 보시로 칭찬받는 것을 보고, 자신도 같은 으뜸의 칭호를 얻겠다고 굳게 서원했고, 그 서원은 확언을 받았습니다.",
+    "cover": [
+     237,
+     200,
+     124
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     292,
+     586,
+     404
+    ],
+    "ko": "십만 겁 뒤 그는 사왓티에서 수닷따로 태어났습니다. 가난한 이들을 향한 끝없는 연민으로 전설적인 칭호를 얻었습니다.\n아나타삔디까: “의지할 데 없는 이에게 밥을 주는 사람”",
+    "cover": [
+     236,
+     199,
+     123
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     306,
+     350,
+     420
+    ],
+    "ko": "라자가하에 간 아나타삔디까는 부처님께서 세상에 나셨다는 것을 알았습니다. 기쁨에 넘쳐 새벽에 길을 나섰고, 천신들의 인도를 받아 부처님을 뵙고 법을 들어 수다원과를 얻었습니다.",
+    "cover": [
+     36,
+     40,
+     76
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     310,
+     390,
+     418
+    ],
+    "ko": "사왓티로 돌아온 그는 부처님께서 오실 45요자나 길을 마련했습니다. 1요자나마다 하나씩 임시 승원 45곳을 지어 4백50만 냥을 들였고, 승가가 무사히 오도록 했습니다.",
+    "cover": [
+     243,
+     236,
+     210
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     428,
+     36,
+     754,
+     160
+    ],
+    "ko": "사왓티에 큰 정사를 지으려고 그는 제따 왕자의 동산을 샀습니다. 놀라운 값은 이것이었습니다. 땅 전체를 금화 1억 8천만 닢으로 가장자리가 맞닿게 덮는 것.",
+    "cover": [
+     150,
+     30,
+     50
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     28,
+     652,
+     152
+    ],
+    "ko": "제따와나 불사는 엄청난 일이었습니다.\n• 땅 사기: 1억 8천만\n• 황금 승원: 1억 8천만\n• 낙성 공양: 1억 8천만\n모두 5억 4천만을 들여 승가의 가장 큰 의지처가 되었습니다.",
+    "cover": [
+     242,
+     235,
+     212
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     74,
+     378,
+     238,
+     414
+    ],
+    "ko": "땅 사기",
+    "cover": [
+     242,
+     235,
+     209
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     304,
+     378,
+     500,
+     414
+    ],
+    "ko": "황금 승원",
+    "cover": [
+     241,
+     234,
+     207
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     554,
+     378,
+     748,
+     414
+    ],
+    "ko": "낙성 공양",
+    "cover": [
+     241,
+     234,
+     207
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     178,
+     30,
+     624,
+     174
+    ],
+    "ko": "그의 날마다의 보시는 잘 짜여 있어,\n비구 5백 명씩 무리를 정해 받들었습니다.\n• 표를 나누어 주는 탁발 공양\n• 달의 차고 기욺에 맞춘 공양\n• 새로 온 이·떠나는 이·아픈 이를 위한 필수품\n그의 집에는 늘 자리 5백 개가 마련되어 있었습니다.",
+    "cover": [
+     240,
+     233,
+     205
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     384,
+     88,
+     548,
+     328
+    ],
+    "ko": "그 견줄 데 없는 공덕을 알아보신 부처님께서 선언하셨습니다.\nEtad-aggaṃ bhikkhave mama sāvakānaṃ upāsakānaṃ dāyakānaṃ yad-idaṃ Sudatto gahapati Anāthapiṇḍiko.\n“보시를 즐기는 나의 우바새 제자들 가운데 수닷따 장자가 으뜸이다.”",
+    "cover": [
+     246,
+     232,
+     201
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     398,
+     60,
+     738,
+     208
+    ],
+    "ko": "사왓티에서 아나타삔디까 장자가 중병에 걸려 몹시 아팠습니다. 그는 시자를 불러 일렀습니다. “세존과 사리뿟따 장로께 가서 내 이름으로 발에 절하고, 연민으로 와 주시기를 사리뿟따 장로께 청하여라.”",
+    "cover": [
+     230,
+     208,
+     173
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     76,
+     76,
+     344,
+     374
+    ],
+    "ko": "시자가 말을 전했습니다. 해 질 무렵 사리뿟따 장로는 말없이 청을 받아들였습니다. 겹가사를 입고 발우를 들고, 아난다 장로를 시자로 데리고 장자의 집으로 걸어갔습니다.",
+    "cover": [
+     240,
+     224,
+     190
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     74,
+     316,
+     726,
+     398
+    ],
+    "ko": "자리에 앉은 사리뿟따 장로가 아픔이 어떤지 물었습니다. 아나타삔디까는 고통이 점점 심해진다고 답했습니다. 병이 깊어 어찌할 수 없음을 안 사리뿟따 장로는 궁극의 이익이 되는 깊은 법을 설하기로 했습니다.",
+    "cover": [
+     238,
+     223,
+     189
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     98,
+     330,
+     710,
+     418
+    ],
+    "ko": "“장자여, 이렇게 닦아야 합니다. ‘나는 눈·귀·코·혀·몸·마음에 집착하지 않으리라. 그것들에, 또 그것들을 의지한 의식과 접촉에도 미세한 애착을 두지 않으리라.’”",
+    "cover": [
+     235,
+     219,
+     186
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     574,
+     44,
+     766,
+     214
+    ],
+    "ko": "“이렇게 닦으십시오. ‘나는 땅·물·불·바람·허공·의식의 요소에 집착하지 않으리라. 물질·느낌·인식·형성에 매달리지 않으리라.’”",
+    "cover": [
+     232,
+     216,
+     184
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     146,
+     228,
+     390
+    ],
+    "ko": "“이렇게 닦으십시오. ‘나는 공무변처·식무변처·무소유처의 선정에 집착하지 않으리라. 이 세상에도, 저세상에도 미세한 애착을 두지 않으리라.’”",
+    "cover": [
+     229,
+     213,
+     180
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     38,
+     152,
+     258,
+     406
+    ],
+    "ko": "이를 들은 아나타삔디까는 몹시 울었습니다. 아난다 장로가 물었습니다. “재물에 집착하십니까, 믿음이 흔들리십니까?” 그가 답했습니다. “아닙니다. 오래 부처님을 섬겼지만 이렇게 깊은 법은 들어 본 적이 없습니다.”",
+    "cover": [
+     226,
+     207,
+     175
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     316,
+     762,
+     404
+    ],
+    "ko": "사리뿟따 장로는 이런 가르침은 보통 출가자에게 설한다고 말했습니다. 아나타삔디까가 간청했습니다. “이 법을 재가자에게도 설해 주십시오! 마음에 티끌이 적어 듣기만 하면 온전히 알고 아라한이 될 이가 많습니다.”",
+    "cover": [
+     223,
+     206,
+     174
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     82,
+     298,
+     720,
+     386
+    ],
+    "ko": "두 장로가 떠나고 얼마 뒤 아나타삔디까는 세상을 떠났습니다. 큰 공덕과 맑은 마음으로 그는 곧바로 영광스러운 뚜시따 천상에 빛나는 천신으로 태어났습니다.",
+    "cover": [
+     236,
+     214,
+     176
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     124,
+     346,
+     676,
+     444
+    ],
+    "ko": "한밤중에 아나타삔디까 천신이 뚜시따에서 내려왔습니다. 제따와나 승원의 부처님께 다가가 천상의 빛으로 경내를 밝히고, 깊이 공경하며 절한 뒤 게송 넷을 읊었습니다.",
+    "cover": [
+     236,
+     213,
+     171
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     46,
+     750,
+     154
+    ],
+    "ko": "“존자시여, 승가와 세존께서 머무시는 이 제따와나는 저의 영원한 기쁨입니다. 아라한들과 깨달음을 향해 배우는 이들의 안식처입니다.”",
+    "cover": [
+     234,
+     218,
+     179
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     124,
+     344,
+     676,
+     442
+    ],
+    "ko": "“업과 지혜와 법, 그리고 계에 바탕한 바른 삶으로 중생은 참으로 깨끗해집니다. 가문이나 재물만으로는 결코 깨끗해지지 않습니다.”",
+    "cover": [
+     233,
+     213,
+     175
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     38,
+     334,
+     762,
+     408
+    ],
+    "ko": "“열반을 향한 자기의 이익을 아는 지혜로운 이는 오온의 무상·괴로움·무아를 관찰해야 합니다. 이렇게 사성제를 깨달아 깨끗해집니다.”",
+    "cover": [
+     236,
+     212,
+     171
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     202,
+     80,
+     454,
+     376
+    ],
+    "ko": "“열반의 저 언덕에 이른 비구는 누구나 사리뿟따 장로와 같습니다. 그러나 뛰어난 지혜와 계와 완전한 고요함으로 그분은 그들 가운데 가장 고귀합니다.”",
+    "cover": [
+     236,
+     215,
+     178
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Anathapindika-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     98,
+     346,
+     722,
+     438
+    ],
+    "ko": "부처님께서는 말없이 들으시며 인정하셨습니다. 천신은 기뻐하며 사라졌습니다. 다음 날 아침 부처님께서 비구들에게 이 게송을 다시 읊으시자, 아난다 장로가 곧 알았습니다. “그 천신은 틀림없이 아나타삔디까입니다!” 부처님께서 미소 지으며 그 짐작이 맞다고 하셨습니다.",
+    "cover": [
+     234,
+     209,
+     164
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
