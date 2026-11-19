@@ -150,7 +150,7 @@ async function loadBooks(){
   $('#book').innerHTML='<option value="">— 책을 고르세요 —</option>'+ids.map(id=>`<option value="${id}">${id} · ${esc(titles[id]||'(숨김 또는 새 책)')}</option>`).join('');
   const want=new URLSearchParams(location.search).get('book'); if(want&&ids.includes(want)){ $('#book').value=want; pickBook(); }
 }
-$('#book').onchange=pickBook;
+$('#book').onchange=e=>{ if(typeof APOOL!=='undefined'&&APOOL.length&&APOOL_BOOK!==$('#book').value){ APOOL=[]; AFILES=[]; $('#apicked').textContent=''; $('#ago').disabled=true; } return pickBook(e); };
 async function pickBook(){
   const id=$('#book').value; BOOK=null; $('#ed').innerHTML=''; $('#ed').disabled=true; upd();
   if(!id) return;
@@ -291,9 +291,16 @@ function upBig(key,file,onp){
       await send({'x-mp':'complete','x-upload-id':uploadId,'content-type':'application/json'},JSON.stringify(parts),1,0);
     }catch(e){ try{ await send({'x-mp':'abort','x-upload-id':uploadId},'',0,0); }catch(_){} throw e; } })();
 }
+// 고른 파일은 올리기 전까지 모아 둠 — 4개를 넣고 다시 5개를 넣으면 9개 (운영자 요청, 2026-11-20).
+// 같은 번호의 장을 다시 넣으면 나중에 넣은 파일로 바뀜. 다른 책을 고르거나 올리기를 마치거나 '비우기'를 누르면 비움.
+let APOOL=[], APOOL_BOOK='';
 async function pickAudio(list){
-  AFILES=[...list].filter(f=>/\.mp3$/i.test(f.name)); $('#ago').disabled=true;
   const id=$('#book').value; if(!id){ ashow('err','먼저 위 1번에서 책을 골라 주세요.'); return; }
+  if(APOOL_BOOK!==id){ APOOL=[]; APOOL_BOOK=id; }
+  const num=f=>(f.name.normalize('NFC').match(/^(\d{2})/)||[])[1]||f.name;
+  for(const f of [...list].filter(f=>/\.mp3$/i.test(f.name))){ const k=num(f); APOOL=APOOL.filter(g=>num(g)!==k); APOOL.push(f); }
+  $('#afile').value='';
+  AFILES=APOOL.slice(); $('#ago').disabled=true;
   const r=await gh(`/contents/content/audiobooks/${id}.json?ref=main&t=${Date.now()}`,{cache:'no-store'});
   if(!r.ok){ ashow('err','이 책의 오디오북 정보가 아직 없습니다. Claude에게 오디오북 정보를 먼저 만들어 달라고 해 주세요.'); return; }
   const j=await r.json(); AINFO={sha:j.sha,data:JSON.parse(dec(j.content))};
@@ -302,8 +309,9 @@ async function pickAudio(list){
   const miss=want.filter(n=>!got[n]), extra=AFILES.filter(f=>{const m=f.name.match(/^(\d{2})/); return !m||!want.includes(m[1]);});
   AFILES=want.filter(n=>got[n]).map(n=>({n,file:got[n],key:`audio/${id}/${n}.mp3`}));
   const mb=AFILES.reduce((a,x)=>a+x.file.size,0)/1048576;
-  $('#apicked').innerHTML=`고른 파일 ${AFILES.length}개 / 필요한 장 ${want.length}개 (${mb.toFixed(0)}MB)`+(miss.length?`<br><b style="color:#8A2E1C">빠진 장: ${miss.join(', ')}번</b>`:'')+(extra.length?`<br>번호가 맞지 않아 빼는 파일: ${extra.map(f=>esc(f.name)).join(', ')}`:'');
+  $('#apicked').innerHTML=`고른 파일 ${AFILES.length}개 / 필요한 장 ${want.length}개 (${mb.toFixed(0)}MB) <button type="button" class="btn ghost" id="aclear" style="padding:2px 10px;margin-left:6px">고른 파일 비우기</button><br><span class="small">더 넣으려면 위 상자를 다시 눌러 고르거나 끌어다 놓으세요 — 앞에 고른 파일에 더해집니다.</span>`+(miss.length?`<br><b style="color:#8A2E1C">빠진 장: ${miss.join(', ')}번</b>`:'')+(extra.length?`<br>번호가 맞지 않아 빼는 파일: ${extra.map(f=>esc(f.name)).join(', ')}`:'');
   $('#aout').innerHTML=''; $('#ago').disabled=!AFILES.length;
+  const c=$('#aclear'); if(c) c.onclick=()=>{ APOOL=[]; AFILES=[]; $('#apicked').textContent=''; $('#aout').innerHTML=''; $('#ago').disabled=true; };
 }
 const adrop=$('#adrop');
 adrop.onclick=()=>$('#afile').click(); adrop.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();$('#afile').click();}};
@@ -328,7 +336,7 @@ $('#ago').onclick=async()=>{
       const put=await gh(`/contents/content/audiobooks/${id}.json`,{method:'PUT',headers:{'content-type':'application/json'},body:JSON.stringify({message:`오디오북 소리 파일 올림: ${id}`,content:enc(JSON.stringify(d)+'\n'),sha:j.sha,branch:'main'})});
       ok=put.ok; }
     ashow('ok',`다 됐습니다! ${list.length}개 장을 올렸습니다. 3~5분 뒤 <a href="/read/${id}/" target="_blank" rel="noopener">읽기 화면 ↗</a>에 '🎧 오디오북' 단추가 나타납니다.`+(ok?'':'<br>(사이트에 알리는 것은 실패했습니다. Claude에게 알려 주세요.)'));
-    AFILES=[]; $('#apicked').textContent=''; $('#afile').value='';
+    AFILES=[]; APOOL=[]; $('#apicked').textContent=''; $('#afile').value='';
   }catch(e){ ashow('err',esc(e.message)+'<br>같은 파일들을 다시 골라 한 번 더 올려 주세요.'); }
   finally{ $('#aprog').hidden=true; $('#ago').disabled=!AFILES.length; }
 };

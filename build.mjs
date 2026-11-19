@@ -59,7 +59,7 @@ if (fs.existsSync(C('texts'))) for (const f of fs.readdirSync(C('texts')).filter
   while ((m = re.exec(body))) { if (last) last.text = body.slice(last.start, m.index).trim(); last = { label: m[1].replace(/\s*쪽$/, ''), start: re.lastIndex }; pages.push(last); }
   if (last) last.text = body.slice(last.start).trim();
   if (!pages.length) pages.push({ label: '', text: body.trim() });
-  TEXTS[t.book] = { spread: !!t.spread, center_heads: !!t.center_heads, ly: t.ly || null, say: t.say || null, ph: t.ph || null, table_dl: t.table_dl || null, fn_site: t.fn_site || null, edition: t.edition || '', pages: pages.map(p => ({ label: p.label, text: p.text })), toc: (t.toc || []).filter(x => x && x.title && x.page).map(x => ({ title: (x.sub ? '  ' : '') + x.title, page: +x.page, label: (pages[+x.page - 1] || {}).label || '', ...(x.at ? { at: String(x.at) } : {}), ...(x.toc_title ? { list: String(x.toc_title) } : {}) })) };
+  TEXTS[t.book] = { spread: !!t.spread, center_heads: !!t.center_heads, ly: t.ly || null, say: t.say || null, ph: t.ph || null, table_dl: t.table_dl || null, fn_site: t.fn_site || null, edition: t.edition || '', pages: pages.map(p => ({ label: p.label, text: p.text })), toc: (t.toc || []).filter(x => x && x.title && x.page).map(x => ({ title: (x.sub ? '  ' : '') + x.title, page: +x.page, label: (pages[+x.page - 1] || {}).label || '', ...(x.at ? { at: String(x.at) } : {}), ...(x.toc_title ? { list: String(x.toc_title) } : {}), ...(x.bold ? { bold: true } : {}) })) };
 }
 // 원서 대조 짝 자료 (운영자 요청, 2026-11-15): content/parallel/<ID>.<말>.json — 읽기 화면 '⇄ 원서 대조'
 const PARALLEL = {};
@@ -180,13 +180,15 @@ function contentsHtml(t) {
   const rows = t.split('\n').map(l => l.replace(/\s+$/, '')).filter(l => l.trim()).map(l => {
     const sub = /^(\s{2,}|\t|-\s)/.test(l); let x = l.replace(/^[\s\-]+/, '');
     let pg = ''; const m = x.match(/^(.*?\S)(?:\s*[.·…]{2,}\s*|\s*\|\s*|\s+)(\d{1,4})$/); if (m) { x = m[1]; pg = m[2]; }
-    let lv = BIG.test(x) ? 0 : MID.test(x) ? 1 : SMALL.test(x) ? 2 : sub ? Math.min(last + 1, 2) : seenBig ? 1 : 0;
+    // **…** 로 감싼 줄은 굵게, 큰 단계 (묶음 제목 — 예: DL-0038 '【 테라와다 불교사 교재】', 운영자 요청 2026-11-20)
+    const bold = /^\*\*(.+)\*\*$/.test(x); if (bold) x = x.slice(2, -2).trim();
+    let lv = bold || BIG.test(x) ? 0 : MID.test(x) ? 1 : SMALL.test(x) ? 2 : sub ? Math.min(last + 1, 2) : seenBig ? 1 : 0;
     if (lv === 0) seenBig = true;
     if (!sub && !SMALL.test(x)) last = lv;
-    return { lv, x, pg };
+    return { lv, x, pg, bold };
   });
   const min = Math.min(...rows.map(r => r.lv));
-  return `<ol class="toc static">${rows.map(r => `<li class="lv${r.lv - min}"><span>${boxNum(esc(r.x))}</span>${r.pg ? `<span>${esc(r.pg)}</span>` : ''}</li>`).join('')}</ol>`;
+  return `<ol class="toc static">${rows.map(r => `<li class="lv${r.lv - min}"><span>${r.bold ? `<b>${boxNum(esc(r.x))}</b>` : boxNum(esc(r.x))}</span>${r.pg ? `<span>${esc(r.pg)}</span>` : ''}</li>`).join('')}</ol>`;
 }
 
 // 책 페이지 아래쪽: 책 소개 · 저자 소개 · 옮긴이 소개 · 목차
@@ -1144,7 +1146,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     rows.push({ href: `/book/${b.id}/?ui=normal`, ic: '↩', kind: 'normal', cols: ['일반 화면에서 이 책 보기', '표지 그림이 있는 책 소개 화면'] });
     put(`simple/book/${b.id}/index.html`, simpleLayout({ title: b.title, path: P, up: '/simple/recent/', normal: `/book/${b.id}/`, status: sBy(b),
       body: `<p class="s-sub">${esc([sBy(b), pubLine(b), edText(e)].filter(Boolean).join(' · '))}</p>${sList(`${b.title}, ${rows.length}개`, ['이름', '내용'], rows)}` }));
-    const cl = (Array.isArray(b.contents) ? b.contents.map(c => typeof c === 'string' ? c : c.title || '') : String(b.contents || '').split('\n')).map(x => x.trim()).filter(Boolean);
+    const cl = (Array.isArray(b.contents) ? b.contents.map(c => typeof c === 'string' ? c : c.title || '') : String(b.contents || '').split('\n')).map(x => x.trim().replace(/^\*\*(.+)\*\*$/, '$1').trim()).filter(Boolean);
     const toc = cl.length ? `<h2>차례</h2><ul class="s-toc">${cl.map(c => `<li>${boxNum(esc(c))}</li>`).join('')}</ul>` : '';
     put(`simple/book/${b.id}/about/index.html`, simpleLayout({ title: `${b.title} – 책 소개`, path: [...P.slice(0, 1), [b.title, `/simple/book/${b.id}/`], ['책 소개', '']], up: `/simple/book/${b.id}/`, normal: `/book/${b.id}/`, page: 'simple-text',
       body: `<div class="s-prose"><dl class="s-dl">${[['제목', b.title + (b.subtitle ? ' – ' + b.subtitle : '')], ['지은이', b.byline], ['옮긴이', b.translator], ['펴낸 곳', pubLine(b)], ['판', edText(e)], ['원서', b.original_title]].filter(x => x[1]).map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>
