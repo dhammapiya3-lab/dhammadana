@@ -1,12 +1,136 @@
-Foremost-Laymen 01-Tapussa-and-Bhallika 14 장
-Foremost-Laymen 02-Anathapindika 24 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 122 개 / 한글판 이야기 177 편
-공개 주소 확인: 200 1649805바이트
-이야기 Foremost-Laymen/01-Tapussa-and-Bhallika {'pdf': 20412533, 'zip': 20134884, 'n': 14}
-이야기 Foremost-Laymen/02-Anathapindika {'pdf': 36206593, 'zip': 35928167, 'n': 24}
-책 Foremost-Laymen {'pdf': 56333779, 'pdfs': 5984353, 'zip': 56063906, 'stories': 2, 'n': 38}
-내려받기 파일: 3 묶음 새로 만듦
+On branch storybooks-qa
+Your branch is up to date with 'origin/storybooks-qa'.
+
+nothing to commit, working tree clean
+R2 에 올림: 46 개 / 한글판 이야기 177 편
+공개 주소 확인: 404 27150바이트
+내려받기 파일: 0 묶음 새로 만듦
 글로 보기: 177 이야기
 10-Nakulapitu
 10-Kali
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/urllib/request.py", line 1321, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/client.py", line 1367, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/client.py", line 1413, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/client.py", line 1362, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/http/client.py", line 1122, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/usr/lib/python3.14/http/client.py", line 1066, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/client.py", line 1501, in connect
+    super().connect()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/http/client.py", line 1032, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/dhammadana/dhammadana/pipeline/fetch_ocr.py", line 72, in <module>
+    main()
+    ~~~~^^
+  File "/home/runner/work/dhammadana/dhammadana/pipeline/fetch_ocr.py", line 64, in main
+    res = list(ex.map(lambda i: one(slug, sf, i, sf in keep), imgs))
+  File "/usr/lib/python3.14/concurrent/futures/_base.py", line 639, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.14/concurrent/futures/_base.py", line 311, in _result_or_cancel
+    return fut.result(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3.14/concurrent/futures/_base.py", line 450, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/concurrent/futures/_base.py", line 395, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/home/runner/work/dhammadana/dhammadana/pipeline/fetch_ocr.py", line 64, in <lambda>
+    res = list(ex.map(lambda i: one(slug, sf, i, sf in keep), imgs))
+                                ~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/dhammadana/dhammadana/pipeline/fetch_ocr.py", line 35, in one
+    data = get(url)
+  File "/home/runner/work/dhammadana/dhammadana/pipeline/fetch_ocr.py", line 21, in get
+    raise err
+  File "/home/runner/work/dhammadana/dhammadana/pipeline/fetch_ocr.py", line 17, in get
+    with urllib.request.urlopen(req, timeout=120) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 487, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.14/urllib/request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 1369, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 1324, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error timed out>
+그림이 아님: https://dharma-storybooks.net/Vinaya-Stories/images/04-False-Claims-08-Original.jpg (12090바이트, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf')
+Traceback (most recent call last):
+  File "/home/runner/work/dhammadana/dhammadana/pipeline/preview.py", line 17, in <module>
+    im = Image.open(c).convert("RGB")
+         ~~~~~~~~~~^^^
+  File "/home/runner/.local/lib/python3.14/site-packages/PIL/Image.py", line 3730, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file 'cache/orig/Vinaya-Stories/images/00-Veranja-01-Original.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/dhammadana/dhammadana/pipeline/preview.py", line 19, in <module>
+    open(c, "wb").write(get(BASE + slug + "/" + it["img"]))
+                        ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/dhammadana/dhammadana/pipeline/fetch_ocr.py", line 21, in get
+    raise err
+  File "/home/runner/work/dhammadana/dhammadana/pipeline/fetch_ocr.py", line 17, in get
+    with urllib.request.urlopen(req, timeout=120) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 487, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.14/urllib/request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.14/urllib/request.py", line 1369, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/urllib/request.py", line 1324, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error timed out>
