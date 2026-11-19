@@ -1,0 +1,419 @@
+[
+ {
+  "img": "images/25-Views-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     258,
+     302,
+     544,
+     384
+    ],
+    "ko": "아릿타의 권리정지:\n나쁜 견해의 사례",
+    "cover": [
+     210,
+     175,
+     136
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Views-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     492,
+     118,
+     740,
+     328
+    ],
+    "ko": "사왓티에서\n전에 독수리를 잡던\n아릿타 비구에게\n위험하고 그릇된\n견해가\n생겼습니다.",
+    "cover": [
+     226,
+     185,
+     139
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Views-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     354,
+     754,
+     440
+    ],
+    "ko": "그의 견해: “나는 부처님께서 장애라고 하신 것들이\n그것을 즐기는 이에게 실제로는 장애가 되지 않는다는 뜻으로 가르침을 이해한다.”",
+    "cover": [
+     212,
+     168,
+     125
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Views-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     130,
+     46,
+     676,
+     104
+    ],
+    "ko": "이를 들은 여러 비구가 아릿타를 찾아가, 세존을 잘못 전하거나\n그 가르침을 헐뜯지 말라고 타일렀습니다.",
+    "cover": [
+     217,
+     177,
+     139
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Views-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     56,
+     160,
+     374
+    ],
+    "ko": "비구들이\n일깨웠습니다.\n부처님께서\n감각적\n쾌락을\n해골, 타는\n숯불 구덩이,\n뱀 머리와\n같다고\n하셨다.\n즐거움은\n적고\n괴로움과\n위험은\n크다고.",
+    "cover": [
+     211,
+     168,
+     128
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Views-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     588,
+     56,
+     756,
+     232
+    ],
+    "ko": "경고에도 아릿타는\n나쁘고 그릇된\n견해를 고집하며\n승가의 만류를\n받아들이지\n않았습니다.",
+    "cover": [
+     219,
+     176,
+     137
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Views-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     48,
+     266,
+     182
+    ],
+    "ko": "그의 마음을\n돌리지 못한 비구들은\n세존을 찾아뵙고\n아릿타가 그릇된\n견해를 고집한다고\n말씀드렸습니다.",
+    "cover": [
+     211,
+     168,
+     130
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Views-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     380,
+     616,
+     444
+    ],
+    "ko": "부처님께서 승가를 모으시고 아릿타에게 직접\n그 견해를 지녔는지 물으셨습니다.\n아릿타는 대담하게 그렇다고 했습니다.",
+    "cover": [
+     205,
+     160,
+     123
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Views-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     62,
+     262,
+     316
+    ],
+    "ko": "“어리석은 자여,\n내가 누구에게 법을\n그렇게 설했다고\n이해하느냐? 내가\n여러 방법으로\n장애는 참으로\n장애라고\n말하지 않았느냐?”",
+    "cover": [
+     207,
+     164,
+     126
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Views-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     48,
+     666,
+     130
+    ],
+    "ko": "“너는 스스로 잘못 이해하여 우리를 잘못 전한다.\n스스로 땅을 파고 큰 악덕을 지으니,\n그것은 오래도록 해로움과 괴로움을 가져올 것이다.”",
+    "cover": [
+     209,
+     166,
+     130
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Views-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     346,
+     742,
+     402
+    ],
+    "ko": "꾸짖으신 뒤 부처님께서 비구들에게 이르셨습니다. ‘나쁜 견해를 버리지 않은\n아릿타에게 승가는 권리정지 갈마를 하라.’",
+    "cover": [
+     202,
+     157,
+     123
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Views-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     46,
+     600,
+     88
+    ],
+    "ko": "권리정지의 절차",
+    "cover": [
+     201,
+     156,
+     120
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     266,
+     104,
+     636,
+     148
+    ],
+    "ko": "1. 범계한 이를 고발한다.",
+    "cover": [
+     216,
+     175,
+     140
+    ],
+    "align": "left",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     266,
+     180,
+     636,
+     222
+    ],
+    "ko": "2. 계율을 일깨운다.",
+    "cover": [
+     213,
+     173,
+     133
+    ],
+    "align": "left",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     266,
+     256,
+     636,
+     302
+    ],
+    "ko": "3. 범계를 지운다.",
+    "cover": [
+     211,
+     167,
+     129
+    ],
+    "align": "left",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     266,
+     334,
+     636,
+     380
+    ],
+    "ko": "4. 승가에 알린다.",
+    "cover": [
+     204,
+     160,
+     121
+    ],
+    "align": "left",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Views-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     52,
+     614,
+     160
+    ],
+    "ko": "경험 많은 비구가 승가에 제안했습니다.\n“아릿타는 견해를 버리지 않는다. 승가는\n권리정지 갈마를 한다. 승가와 함께 먹지 못한다.”",
+    "cover": [
+     208,
+     165,
+     131
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Views-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     112,
+     396,
+     686,
+     446
+    ],
+    "ko": "제안을 세 번 독송했습니다. 동의하면 침묵하고, 아니면 말하라고\n승가에 물었습니다. 승가는 침묵했습니다.",
+    "cover": [
+     166,
+     121,
+     85
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Views-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     58,
+     604,
+     138
+    ],
+    "ko": "갈마가 이루어졌습니다. 부처님께서 처소마다 알리라고\n이르셨습니다. 아릿타는 승가에서\n권리정지되었습니다.",
+    "cover": [
+     208,
+     166,
+     128
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
