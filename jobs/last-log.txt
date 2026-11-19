@@ -1,12 +1,35 @@
+Foremost-Laywomen 01-Sujata 15 장
+Foremost-Laywomen 02-Visakha 44 장
+Foremost-Laywomen 03-04-Khujjuttara-Samavati 40 장
+Foremost-Laywomen 05-Uttara-Nandamata 14 장
+Foremost-Laywomen 06-Suppavasa 9 장
+Foremost-Laywomen 07-Suppiya 13 장
+Foremost-Laywomen 08-Katiyani 14 장
+Foremost-Laywomen 09-Nakulamata 14 장
+Foremost-Laywomen 10-Kali 12 장
+검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자3 [자리] 한글이 원래 글 자리(504,1041-620,1130)에서 벗어남 (809,1087)
+검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자4 [자리] 한글이 원래 글 자리(1997,1043-2042,1136)에서 벗어남 (1834,1087)
+Foremost-Nuns 03-Uppalavanna 37 장
 Pannasa 26-Vipularaja 13 장
-자동 검수: 문제 의심 0 곳
-R2 에 올림: 72 개 / 한글판 이야기 166 편
-공개 주소 확인: 200 1599817바이트
+자동 검수: 문제 의심 2 곳
+R2 에 올림: 496 개 / 한글판 이야기 175 편
+공개 주소 확인: 200 1411800바이트
+이야기 Foremost-Laywomen/01-Sujata {'pdf': 21655910, 'zip': 21376916, 'n': 15}
+이야기 Foremost-Laywomen/02-Visakha {'pdf': 182515318, 'zip': 182220940, 'n': 44}
+이야기 Foremost-Laywomen/03-04-Khujjuttara-Samavati {'pdf': 151416181, 'zip': 150566038, 'n': 40}
+이야기 Foremost-Laywomen/05-Uttara-Nandamata {'pdf': 20725981, 'zip': 20452963, 'n': 14}
+이야기 Foremost-Laywomen/06-Suppavasa {'pdf': 11632274, 'zip': 11355409, 'n': 9}
+이야기 Foremost-Laywomen/07-Suppiya {'pdf': 18022970, 'zip': 17745820, 'n': 13}
+이야기 Foremost-Laywomen/08-Katiyani {'pdf': 19978971, 'zip': 19697170, 'n': 14}
+이야기 Foremost-Laywomen/09-Nakulamata {'pdf': 16505743, 'zip': 16235015, 'n': 14}
+이야기 Foremost-Laywomen/10-Kali {'pdf': 16207089, 'zip': 15933397, 'n': 12}
+책 Foremost-Laywomen {'pdf': 455905878, 'pdfs': 26713247, 'zip': 455589338, 'stories': 9, 'n': 175}
+이야기 Foremost-Nuns/03-Uppalavanna {'pdf': 48968111, 'zip': 48687929, 'n': 37}
+책 Foremost-Nuns {'pdf': 385726253, 'pdfs': 40803996, 'zip': 385373568, 'stories': 13, 'n': 283}
 이야기 Pannasa/26-Vipularaja {'pdf': 18717838, 'zip': 18454218, 'n': 13}
 책 Pannasa {'pdf': 1034215464, 'pdfs': 99411208, 'zip': 1033664671, 'stories': 50, 'n': 803}
-내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 166 이야기
+내려받기 파일: 14 묶음 새로 만듦
+글로 보기: 175 이야기
 10-Nakulapitu.htm: 그림 10 상자 17 상자밖글 45
 10-Nakulapitu
-10-Kali.htm: 그림 12 상자 9 상자밖글 121
 10-Kali
