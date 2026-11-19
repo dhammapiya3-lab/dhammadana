@@ -128,10 +128,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "file",
-        "url": "pdf/DL-0037/DL-0037_초판.pdf",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0037/DL-0037_2판6쇄.pdf"
       },
       "pdf_print": {
         "mode": "none",
