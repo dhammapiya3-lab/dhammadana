@@ -489,6 +489,13 @@ function pubsOf(b) {
 function pubsAll(b) {
   const out = pubsOf(b), prov = b.provider_chip ? providerById(b.provider) : null;
   if (prov && !out.some(x => x.key === pubKey(prov.name))) out.push({ name: prov.name, key: pubKey(prov.name), kinds: ['만듦'] });
+  for (const q of alsoChips(b)) if (!out.some(x => x.key === pubKey(q.name))) out.push({ name: q.name, key: pubKey(q.name), kinds: ['만듦'] });
+  return out;
+}
+// 출판사가 펴낸 책에 함께 붙일 '○○ 출간' 표시 — providers.json 의 pub_also (예: 붓다의 길따라 선원 → (사)한국테라와다불교, 운영자 요청 2026-11-20)
+function alsoChips(b) {
+  const out = [];
+  for (const x of pubsOf(b)) for (const id of [].concat(provOfPub(x.key)?.pub_also || [])) { const q = providerById(id); if (q && !out.includes(q)) out.push(q); }
   return out;
 }
 // 출판사·단체 페이지(/publisher/<아이디>/): 책의 출판사 이름을 자료 제공처 목록(providers.json)의 이름·다른 이름과 맞춰 찾음 (운영자 요청, 2026-11-11)
@@ -758,7 +765,7 @@ for (const b of BOOKS) {
     ${brlOf(b).length ? `<div class="small muted brl-info">${brlOf(b).map(x => `<div><b>점자 파일${brlOf(b).length > 1 ? ` (${esc(x.F)})` : ''}</b> — ${brlInfoHtml(x)}</div>`).join('')}</div>` : ''}
     ${extF.length ? `<div class="small muted" style="margin-bottom:4px">↗ 표시된 파일은 ${esc(extF[0].site)}로 넘어가서 내려받습니다.</div>` : ''}
     <dl class="gb-kv"><dt>판</dt><dd>${esc((e.label_display || '').trim() || (e.label || '').trim() || '—')}</dd>${e.page_count ? `<dt>쪽수</dt><dd>${esc(e.page_count)}쪽</dd>` : ''}${edHistory(b).length ? `<dt>펴낸 이력</dt><dd>${edHistory(b).map(esc).join('<br>')}</dd>` : ''}<dt>라이선스</dt><dd>${licHtml(b.license)}</dd><dt>자료번호</dt><dd>${b.id}</dd></dl></div></aside><div class="d-rest">
-    <div class="labels">${b.book_type ? `<a class="t" href="/library/?btype=${encodeURIComponent(b.book_type)}">${esc(b.book_type)}</a>` : ''}${(b.main || []).map(m => `<a class="t" href="/library/?main=${slugT(m)}">${esc(m)}</a>`).join('')}${(b.topics || []).map(x => `<a class="t" href="/library/?topic=${slugT(x)}">${esc(x)}</a>`).join('')}${tr ? `<a href="/library/?trad=${tr.id}">${esc(tr.name)}</a>` : ''}${b.press && !(b.provider_chip && prov) ? `<a href="/press/">我無말들 출간</a>` : ''}${b.provider_chip && prov ? `<a href="${pubHref(pubKey(prov.name))}">${esc(prov.name)} 출간</a>` : ''}${(b.partner_chips || []).map(providerById).filter(Boolean).map(p => `<a href="/publisher/${p.id}/">${esc(p.name)}</a>`).join('')}</div>
+    <div class="labels">${b.book_type ? `<a class="t" href="/library/?btype=${encodeURIComponent(b.book_type)}">${esc(b.book_type)}</a>` : ''}${(b.main || []).map(m => `<a class="t" href="/library/?main=${slugT(m)}">${esc(m)}</a>`).join('')}${(b.topics || []).map(x => `<a class="t" href="/library/?topic=${slugT(x)}">${esc(x)}</a>`).join('')}${tr ? `<a href="/library/?trad=${tr.id}">${esc(tr.name)}</a>` : ''}${b.press && !(b.provider_chip && prov) ? `<a href="/press/">我無말들 출간</a>` : ''}${b.provider_chip && prov ? `<a href="${pubHref(pubKey(prov.name))}">${esc(prov.name)} 출간</a>` : ''}${alsoChips(b).filter(q => !(b.provider_chip && prov && q.id === prov.id)).map(q => `<a href="${pubHref(pubKey(q.name))}">${esc(q.name)} 출간</a>`).join('')}${(b.partner_chips || []).map(providerById).filter(Boolean).map(p => `<a href="/publisher/${p.id}/">${esc(p.name)}</a>`).join('')}</div>
     ${bookSections(b, e, t)}
     <details class="record"><summary>자료 기록 (출처 · 판 · 라이선스)</summary><div class="record-body">
       <dl class="kv"><dt>자료번호</dt><dd>${b.id}</dd>
