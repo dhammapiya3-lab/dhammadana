@@ -80,10 +80,10 @@
         "created": ""
       },
       "pdf_cover": {
-        "mode": "none",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0036/DL-0036_이판_인쇄용표지.pdf"
       },
       "epub": {
         "mode": "none",
