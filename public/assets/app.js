@@ -2830,9 +2830,13 @@ function kbToc(d) {
 const MODES = [['day', '기본'], ['mono', '흑백'], ['night', '밤'], ['contrast', '고대비']];
 // 단축키를 누르면 알림 글을 '▶ 듣기' 목소리로 읽어 줌 (운영자 요청, 2026-11-18 — 시각장애인 이용자: 화면 낭독기와 겹쳐도 됨).
 // 듣는 중이면 알림을 읽은 뒤 읽던 문장부터 다시. after 가 있으면 다 읽은 뒤(또는 2.5초 뒤) 실행 — 다른 화면으로 갈 때
+// 소리 알림은 Alt+Shift 단축키를 누른 뒤(3초 안)에만 — 화면 단추·고르기·쪽 찾기 칸 등은 알림 글만(화면 낭독기가 알림 글을 읽으므로 같은 말을 두 번 듣지 않게, 운영자 요청 2026-11-19)
+var KEYNOW = 0;
+['click', 'submit'].forEach(t => document.addEventListener(t, e => { if (e.isTrusted) KEYNOW = 0; }, true));
+document.addEventListener('keydown', e => { if (!(e.altKey && e.shiftKey)) KEYNOW = 0; }, true);
 function sayKey(msg, after) {
   toast(msg); const o = ttsOpt();
-  if (o.keySay === false || !('speechSynthesis' in window)) { if (after) after(); return; }
+  if (o.keySay === false || !('speechSynthesis' in window) || Date.now() - KEYNOW > 3000) { if (after) after(); return; }
   const go = () => {
     const resume = ((R && R.speaking) || SR.speaking) ? TT.jump : null;
     TT.gen++; try { speechSynthesis.cancel(); } catch (e) {}
@@ -2856,6 +2860,7 @@ function cycleMode() {
   applyMode(n[0]); sayKey(`${n[1]} 화면`); return n;
 }
 function readerKey(e) {
+  KEYNOW = Date.now();
   const k = (e.code || '').replace(/^Key/, ''); const el = $('#reader'); if (!el) return false;
   if (/^Arrow/.test(k)) { if (R.ttsLocked) { say('듣기가 잠겨 있습니다'); return true; } ({ ArrowRight: () => kbPage(1), ArrowLeft: () => kbPage(-1), ArrowDown: () => kbToc(1), ArrowUp: () => kbToc(-1) })[k](); return true; }
   const say = m => sayKey(m);
@@ -3476,6 +3481,7 @@ function sChap(d, toEnd) {
   });
 }
 function simpleKey(e) {
+  KEYNOW = Date.now();
   const k = (e.code || '').replace(/^Key/, ''), reading = !!(SR.r && $('#sSpeak'));
   if (/^Arrow/.test(k)) { if (!reading) { sayKey('쪽·장 넘기기는 책의 장 글 화면에서 쓸 수 있습니다'); return true; } ({ ArrowRight: () => sPage(1), ArrowLeft: () => sPage(-1), ArrowDown: () => sChap(1), ArrowUp: () => sChap(-1) })[k](); return true; }
   switch (k) {
