@@ -172,7 +172,8 @@
     "whole": true,
     "cover": true,
     "align": "center",
-    "em": 16
+    "em": 16,
+    "dark": false
    },
    {
     "seed": [

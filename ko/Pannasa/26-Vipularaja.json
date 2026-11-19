@@ -42,14 +42,14 @@
    {
     "rect": [
      254,
-     202,
+     190,
      344,
-     226
+     230
     ],
-    "ko": " ",
+    "ko": "날마다\n육십만 닢",
     "cover": false,
     "align": "center",
-    "em": 10,
+    "em": 12,
     "shape": "box",
     "manual": true,
     "whole": true,
@@ -58,14 +58,14 @@
    {
     "rect": [
      454,
-     200,
+     190,
      540,
-     226
+     230
     ],
-    "ko": " ",
+    "ko": "날마다\n육십만 닢",
     "cover": false,
     "align": "center",
-    "em": 10,
+    "em": 12,
     "shape": "box",
     "manual": true,
     "whole": true,

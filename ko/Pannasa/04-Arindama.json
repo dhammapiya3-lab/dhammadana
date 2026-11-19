@@ -315,7 +315,7 @@
      520,
      420
     ],
-    "ko": "왕의 값\n성문지기로 자신을\n500냥에 팔아 빚을 갚음.",
+    "ko": "왕의 값\n성문지기로 팔려\n500냥 빚을 갚음.",
     "cover": false,
     "align": "center",
     "em": 12,
@@ -543,7 +543,11 @@
      136
     ],
     "ko": "업의 계보표",
-    "cover": false,
+    "cover": [
+     100,
+     72,
+     50
+    ],
     "align": "center",
     "em": 24,
     "shape": "box",
@@ -559,7 +563,11 @@
      176
     ],
     "ko": "자따까를 마치며 부처님께서는 과거의 인물들을 지금의 인물들과 이으셨습니다.",
-    "cover": false,
+    "cover": [
+     105,
+     76,
+     53
+    ],
     "align": "center",
     "em": 15,
     "shape": "box",
@@ -575,7 +583,11 @@
      210
     ],
     "ko": "과거 (수찌)",
-    "cover": false,
+    "cover": [
+     107,
+     76,
+     51
+    ],
     "align": "center",
     "em": 15,
     "shape": "box",
@@ -590,7 +602,11 @@
      210
     ],
     "ko": "현재",
-    "cover": false,
+    "cover": [
+     114,
+     81,
+     57
+    ],
     "align": "center",
     "em": 15,
     "shape": "box",
@@ -605,7 +621,11 @@
      237
     ],
     "ko": "삭까",
-    "cover": false,
+    "cover": [
+     111,
+     77,
+     52
+    ],
     "align": "center",
     "em": 15,
     "shape": "box",
@@ -620,7 +640,11 @@
      237
     ],
     "ko": "아누룻다",
-    "cover": false,
+    "cover": [
+     106,
+     77,
+     53
+    ],
     "align": "center",
     "em": 15,
     "shape": "box",
@@ -635,7 +659,11 @@
      265
     ],
     "ko": "수완나갑바 왕비",
-    "cover": false,
+    "cover": [
+     92,
+     64,
+     42
+    ],
     "align": "center",
     "em": 15,
     "shape": "box",
@@ -650,7 +678,11 @@
      265
     ],
     "ko": "야소다라",
-    "cover": false,
+    "cover": [
+     110,
+     78,
+     53
+    ],
     "align": "center",
     "em": 15,
     "shape": "box",
@@ -665,7 +697,11 @@
      293
     ],
     "ko": "아들",
-    "cover": false,
+    "cover": [
+     108,
+     73,
+     48
+    ],
     "align": "center",
     "em": 15,
     "shape": "box",
@@ -680,7 +716,11 @@
      293
     ],
     "ko": "라훌라",
-    "cover": false,
+    "cover": [
+     110,
+     77,
+     52
+    ],
     "align": "center",
     "em": 15,
     "shape": "box",
@@ -695,7 +735,11 @@
      321
     ],
     "ko": "백성",
-    "cover": false,
+    "cover": [
+     93,
+     61,
+     39
+    ],
     "align": "center",
     "em": 15,
     "shape": "box",
@@ -710,7 +754,11 @@
      321
     ],
     "ko": "부처님의 대중",
-    "cover": false,
+    "cover": [
+     89,
+     60,
+     39
+    ],
     "align": "center",
     "em": 15,
     "shape": "box",
@@ -725,7 +773,11 @@
      349
     ],
     "ko": "아린다마 왕",
-    "cover": false,
+    "cover": [
+     87,
+     56,
+     35
+    ],
     "align": "center",
     "em": 15,
     "shape": "box",
@@ -740,7 +792,11 @@
      349
     ],
     "ko": "깨달으신 분",
-    "cover": false,
+    "cover": [
+     89,
+     60,
+     39
+    ],
     "align": "center",
     "em": 15,
     "shape": "box",

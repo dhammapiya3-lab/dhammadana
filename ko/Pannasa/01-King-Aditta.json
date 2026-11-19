@@ -486,6 +486,40 @@
     "shape": "box",
     "manual": true,
     "whole": true
+   },
+   {
+    "rect": [
+     184,
+     84,
+     212,
+     126
+    ],
+    "ko": " ",
+    "cover": [
+     226,
+     203,
+     166
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     494,
+     58,
+     510,
+     76
+    ],
+    "ko": " ",
+    "cover": [
+     249,
+     212,
+     145
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
    }
   ]
  },

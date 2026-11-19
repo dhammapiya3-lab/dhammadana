@@ -162,7 +162,21 @@
     ],
     "shape": "box",
     "en": "To prevent needless wounding from random hunts, the kings agreed on tragic lottery.",
-    "ko": "마구잡이 사냥으로 쓸데없이 다치는 일을 막으려고, 두 사슴 왕은 슬픈 제비뽑기에 합의했습니다."
+    "ko": "마구잡이 사냥으로 쓸데없이 다치는 일을 막으려고, 두 사슴 왕은 슬픈 제비뽑기에 합의했습니다.",
+    "rect": [
+     252,
+     64,
+     546,
+     112
+    ],
+    "cover": [
+     238,
+     223,
+     194
+    ],
+    "whole": true,
+    "em": 13,
+    "align": "center"
    },
    {
     "seed": [

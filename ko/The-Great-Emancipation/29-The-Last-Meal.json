@@ -325,14 +325,11 @@
      182
     ],
     "ko": " ",
-    "cover": [
-     220,
-     180,
-     139
-    ],
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "whole": true,
+    "dark": false
    },
    {
     "rect": [
@@ -342,14 +339,11 @@
      182
     ],
     "ko": " ",
-    "cover": [
-     219,
-     177,
-     134
-    ],
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "whole": true,
+    "dark": false
    },
    {
     "rect": [

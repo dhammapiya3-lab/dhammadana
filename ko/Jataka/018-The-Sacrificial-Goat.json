@@ -303,14 +303,20 @@
     "en": "ie Let no one touch this creature!",
     "ko": "아무도 이 염소를 건드리지 마라!",
     "rect": [
-     541,
-     90,
-     637,
-     125
+     514,
+     80,
+     664,
+     136
     ],
     "em": 14,
     "align": "center",
-    "whole": true
+    "whole": true,
+    "ellipse": true,
+    "cover": [
+     246,
+     238,
+     221
+    ]
    }
   ]
  },

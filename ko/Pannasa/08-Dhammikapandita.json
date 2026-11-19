@@ -455,7 +455,11 @@
      88
     ],
     "ko": "사성제의 수레바퀴",
-    "cover": false,
+    "cover": [
+     110,
+     71,
+     49
+    ],
     "align": "center",
     "em": 24,
     "shape": "box",
@@ -471,7 +475,11 @@
      114
     ],
     "ko": "부처님께서는 궁극의 법을 가르치며 마치셨습니다:",
-    "cover": false,
+    "cover": [
+     101,
+     61,
+     41
+    ],
     "align": "center",
     "em": 15,
     "shape": "box",
@@ -487,7 +495,11 @@
      190
     ],
     "ko": "1. 괴로움\n(세 가지 존재의 괴로움)",
-    "cover": false,
+    "cover": [
+     111,
+     79,
+     54
+    ],
     "align": "center",
     "em": 14,
     "shape": "box",
@@ -503,7 +515,11 @@
      190
     ],
     "ko": "2. 일어남\n(갈애)",
-    "cover": false,
+    "cover": [
+     117,
+     76,
+     51
+    ],
     "align": "center",
     "em": 15,
     "shape": "box",
@@ -519,7 +535,11 @@
      304
     ],
     "ko": "3. 소멸\n(열반)",
-    "cover": false,
+    "cover": [
+     84,
+     70,
+     63
+    ],
     "align": "center",
     "em": 15,
     "shape": "box",
@@ -535,7 +555,11 @@
      304
     ],
     "ko": "4. 길\n(성스러운 팔정도)",
-    "cover": false,
+    "cover": [
+     86,
+     76,
+     51
+    ],
     "align": "center",
     "em": 15,
     "shape": "box",
