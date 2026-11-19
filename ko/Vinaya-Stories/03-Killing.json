@@ -1,0 +1,473 @@
+[
+ {
+  "img": "images/03-Killing-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     72,
+     700,
+     116
+    ],
+    "ko": "세 번째 빠라지까: 웨살리의 위기",
+    "cover": [
+     218,
+     178,
+     128
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Killing-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     54,
+     48,
+     746,
+     108
+    ],
+    "ko": "세존께서 웨살리 중각강당에 머무시며 비구들에게 몸의 더러움에 대한 명상을\n칭찬하셨습니다. 그리고 보름 동안 탁발 음식을 가져오는 이 말고는 아무도\n만나지 않고 홀로 지내셨습니다.",
+    "cover": [
+     225,
+     185,
+     131
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Killing-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     44,
+     746,
+     102
+    ],
+    "ko": "이끌어 줄 이가 없자 비구들은 더러움에 대한 명상을 지나치게 닦아 자기 몸을\n부끄러워했습니다. 치장을 좋아하는 젊은이의 목에 개나 뱀의 시체가 걸린 것 같았습니다.",
+    "cover": [
+     224,
+     182,
+     132
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Killing-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     50,
+     746,
+     106
+    ],
+    "ko": "삶을 싫어하게 된 비구들은 스스로 목숨을 끊거나 서로 목숨을 빼앗았습니다. 그들은 가짜\n수행자 미갈란디까를 찾아가 발우와 가사를 주며 죽여 달라고 했습니다.",
+    "cover": [
+     208,
+     165,
+     119
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Killing-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     54,
+     746,
+     108
+    ],
+    "ko": "왁구무다 강에서 미갈란디까는 피 묻은 칼을 씻다가 뉘우침에 사로잡혔습니다.\n“아, 나는 손해를 보았다. 큰 악덕을 지었다. 덕 있는 비구들의 목숨을 빼앗았구나.”",
+    "cover": [
+     207,
+     166,
+     125
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Killing-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     64,
+     390,
+     208
+    ],
+    "ko": "마라의 무리에 속한 신이 나타났습니다.\n“착한 이여, 그대는 이익을 얻었다!\n큰 공덕을 지었다. 건너지 못한 이들을\n건너게 도와주었다.”\n미갈란디까는 그 거짓말을 믿었습니다.",
+    "cover": [
+     214,
+     196,
+     173
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Killing-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     68,
+     386,
+     212
+    ],
+    "ko": "그릇된 정의감에 사로잡힌 미갈란디까는\n방마다 다니며 외쳤습니다.\n“누구를 건너게 해 줄까?”\n죽은 이는 빠르게 늘었습니다. 하루에\n한 명, 다섯 명, 스무 명에서\n예순 명까지 이르렀습니다.",
+    "cover": [
+     215,
+     198,
+     174
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Killing-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     64,
+     370,
+     144
+    ],
+    "ko": "탐욕을 여의지 못한 비구들:\n두려움과 떨림과\n공포를 겪었습니다.",
+    "cover": [
+     208,
+     189,
+     163
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     488,
+     64,
+     702,
+     144
+    ],
+    "ko": "탐욕을 여읜 비구들:\n두려움도 떨림도\n공포도 없었습니다.",
+    "cover": [
+     207,
+     190,
+     166
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Killing-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     208,
+     60,
+     638,
+     172
+    ],
+    "ko": "보름이 지나 부처님께서 홀로 머무심을 마치고 나오셨습니다.\n텅 빈 것을 보시고 물으셨습니다. “아난다여,\n왜 승가가 줄어든 것 같으냐?”\n아난다 장로는 더러움에 대한 명상을 잘못 닦아\n일어난 비극을 말씀드렸습니다.",
+    "cover": [
+     210,
+     189,
+     163
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Killing-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     116,
+     60,
+     378,
+     130
+    ],
+    "ko": "아난다는 승가가 구경의\n지혜에 이를 새 방법을\n청했습니다.",
+    "cover": [
+     203,
+     179,
+     155
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     416,
+     60,
+     692,
+     130
+    ],
+    "ko": "부처님께서는 웨살리에 기대\n사는 비구들을 모두\n강당에 모으셨습니다.",
+    "cover": [
+     206,
+     182,
+     158
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Killing-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     140,
+     298,
+     282
+    ],
+    "ko": "부처님께서는\n들숨날숨에 마음챙김하는\n삼매를 가르치셨습니다.\n“이것을 닦고\n많이 익히면",
+    "cover": [
+     221,
+     178,
+     127
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     506,
+     196,
+     716,
+     332
+    ],
+    "ko": "고요하고 수승하며\n섞임 없는 즐거운\n머묾이 된다. 악하고\n해로운 마음 상태를\n사라지게 한다.”",
+    "cover": [
+     222,
+     178,
+     127
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Killing-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     272,
+     136,
+     530,
+     282
+    ],
+    "ko": "때아닌 큰비구름이\n여름에 일어난 먼지와\n티끌을 가라앉히듯,\n들숨날숨에 마음챙김은\n해로운 마음 상태를\n씻어 냅니다.",
+    "cover": [
+     224,
+     187,
+     138
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Killing-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     62,
+     262,
+     96
+    ],
+    "ko": "수행의 틀",
+    "cover": [
+     213,
+     183,
+     143
+    ],
+    "align": "left",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     68,
+     106,
+     212,
+     154
+    ],
+    "ko": "1. 몸: 몸의 작용을\n가라앉힘",
+    "cover": [
+     228,
+     196,
+     155
+    ],
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     604,
+     88,
+     724,
+     174
+    ],
+    "ko": "2. 느낌:\n희열과 행복을\n경험함",
+    "cover": [
+     195,
+     156,
+     117
+    ],
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     68,
+     264,
+     214,
+     352
+    ],
+    "ko": "3. 마음:\n마음을 기쁘게\n하고 삼매에\n들게 함",
+    "cover": [
+     213,
+     179,
+     134
+    ],
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     588,
+     258,
+     738,
+     362
+    ],
+    "ko": "4. 놓아 버림:\n무상과 욕망의\n빛바램과 소멸을\n관찰함",
+    "cover": [
+     189,
+     147,
+     106
+    ],
+    "align": "left",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Killing-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     278,
+     82,
+     742,
+     184
+    ],
+    "ko": "부처님께서는 비구들에게 자객을 고용한 일을\n물으셨습니다. 사실임을 확인하시고 엄하게\n꾸짖으셨습니다. “알맞지 않고, 사문답지 않으며,\n허락되지 않고, 해서는 안 될 일이다.”",
+    "cover": [
+     206,
+     172,
+     134
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Killing-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     172,
+     208,
+     644,
+     364
+    ],
+    "ko": "승가를 지키려고 부처님께서는 새 학습 계율\n(빠라지까)을 정하셨습니다. “어떤 비구든 일부러\n사람의 목숨을 빼앗거나 자객을 구하면,\n그는 빠라지까이니 함께 살 수 없다.”",
+    "cover": [
+     208,
+     175,
+     135
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
