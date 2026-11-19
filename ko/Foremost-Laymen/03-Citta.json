@@ -1,0 +1,877 @@
+[
+ {
+  "img": "images/03-Citta-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     140,
+     614,
+     300
+    ],
+    "ko": "찟따 장자의 생애\n계와 서원의 이야기",
+    "cover": [
+     234,
+     210,
+     166
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     274,
+     136,
+     526,
+     320
+    ],
+    "ko": "함사와띠에서 빠두뭇따라 부처님 시대에 한 훌륭한 사람이, 부처님께서 법을 설하는 데 으뜸인 제자를 일컬으시는 것을 들었습니다.\n특별한 공양을 올리며 그는 미래 생에 바로 그 영예를 얻기를 서원했고, 그 서원은 확언을 받았습니다.",
+    "cover": [
+     237,
+     215,
+     179
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     292,
+     532,
+     402
+    ],
+    "ko": "깟사빠 부처님 시대에 그는 사냥꾼의 아들로 태어나 숲에서 사냥했습니다. 비 오는 어느 날, 누더기를 입고 동굴에서 명상하는 비구를 보았습니다. 공경심이 가득한 그는 집으로 달려가 밥과 고기를 지었습니다.",
+    "cover": [
+     231,
+     208,
+     170
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     246,
+     280,
+     554,
+     408
+    ],
+    "ko": "비구 두 분이 탁발하러 그의 집에 왔습니다. 그는 반갑게 맞아 발우를 받고 공손히 자리에 모셨습니다. 지은 음식은 가족이 올리게 하고, 자신은 명상하는 비구를 모시러 숲으로 서둘러 돌아갔습니다.",
+    "cover": [
+     230,
+     205,
+     168
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     48,
+     388,
+     176
+    ],
+    "ko": "밥과 고기를 바나나 잎으로 덮어 들고 가는 길에 들꽃을 모았습니다. 동굴에 이르러, 음식을 채운 발우와 꽃다발을 명상하는 비구께 공손히 올렸습니다.",
+    "cover": [
+     234,
+     212,
+     177
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     228,
+     298,
+     562,
+     412
+    ],
+    "ko": "비구 곁에 앉아 그는 서원했습니다. “이 맛있는 음식과 꽃이 제게 기쁨을 주듯, 윤회하는 미래의 생마다 선물을 받기를. 다섯 빛깔 꽃비가 제 위에 내리기를!”",
+    "cover": [
+     227,
+     204,
+     165
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     304,
+     552,
+     412
+    ],
+    "ko": "사냥꾼이 도와 과를 얻으리라는 것을 본 비구는 몸의 서른두 부분을 관찰하라고 가르쳤습니다. 선행을 하며 산 그는 천신으로 태어나, 무릎까지 쌓이는 꽃비의 복을 받았습니다.",
+    "cover": [
+     224,
+     200,
+     161
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     184,
+     48,
+     614,
+     168
+    ],
+    "ko": "고따마 부처님 시대에 그는 맛치까산다에 태어났습니다. 태어날 때 신기한 다섯 빛깔 꽃이 온 마을에 무릎 높이로 쏟아졌습니다. 모두가 기뻐했고 부모는 그를 찟따라 이름 지었습니다. 자라서 그는 아버지를 이어 부유한 상인이 되었습니다.",
+    "cover": [
+     232,
+     216,
+     185
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     554,
+     56,
+     752,
+     398
+    ],
+    "ko": "오비구 가운데 한 분인 마하나마 장로가 맛치까산다에 왔습니다. 장로의 고요함에 마음이 끌린 찟따는 집으로 모셔 공양을 올렸습니다. 그 뒤 찟따는 자기 망고 동산에 암바따까 승원을 짓고, 장로께 그곳에 머물며 날마다 공양을 받아 주시기를 청했습니다.",
+    "cover": [
+     235,
+     215,
+     175
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     538,
+     34,
+     770,
+     180
+    ],
+    "ko": "찟따가 중간 정도의 근기를 지녔음을 본 마하나마 장로는 안팎의 여섯 감각 장소를 자세히 가르쳤습니다. 지난 생들에서 무상을 꿰뚫어 보는 통찰을 닦아 온 찟따에게 꼭 맞는 가르침이었습니다.",
+    "cover": [
+     233,
+     210,
+     170
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     94,
+     202,
+     146,
+     222
+    ],
+    "ko": "형색",
+    "cover": [
+     249,
+     236,
+     201
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     140,
+     256,
+     194,
+     276
+    ],
+    "ko": "소리",
+    "cover": [
+     241,
+     226,
+     193
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     236,
+     246,
+     284,
+     266
+    ],
+    "ko": "냄새",
+    "cover": [
+     239,
+     226,
+     193
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     302,
+     248,
+     344,
+     268
+    ],
+    "ko": "맛",
+    "cover": [
+     246,
+     231,
+     197
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     358,
+     254,
+     410,
+     274
+    ],
+    "ko": "감촉",
+    "cover": [
+     242,
+     229,
+     194
+    ],
+    "align": "center",
+    "em": 11,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     318,
+     642,
+     410
+    ],
+    "ko": "감각 장소에 대한 위빳사나 수행으로 찟따는 정신과 물질의 무상과 무아를 깨달았습니다. 부지런히 노력하여 높은 성자의 경지인 아나함(anāgāmī)을 얻었습니다.",
+    "cover": [
+     230,
+     208,
+     166
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     162,
+     102,
+     408,
+     348
+    ],
+    "ko": "아나함이 된 찟따는 부처님을 뵙기로 마음먹었습니다. 그는 양식을 실은 수레 5백 대를 마련하고, 맛치까산다 사람들을 사왓티 순례에 초대했습니다.",
+    "cover": [
+     205,
+     129,
+     85
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     118,
+     338,
+     692,
+     422
+    ],
+    "ko": "비구 5백, 비구니 5백, 재가 신자 1천을 비롯해 순례자 3천 명이 큰 무리를 이루었습니다. 찟따는 30요자나 길을 가는 동안 순례자 모두의 필요를 채워 주었습니다.",
+    "cover": [
+     229,
+     193,
+     137
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     320,
+     356,
+     410
+    ],
+    "ko": "한 달 동안의 여정 내내 천신들이 1요자나마다 천상의 음식과 쉴 곳을 마련해 맞이했습니다. 그래서 찟따가 처음 실은 양식 5백 수레는 고스란히 남았습니다.",
+    "cover": [
+     212,
+     142,
+     96
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     194,
+     28,
+     608,
+     108
+    ],
+    "ko": "사왓티에서 부처님께서 아난다 장로에게 찟따가 곧 온다고 말씀하셨습니다. 그리고 큰 기적을 예언하셨습니다. 이 고귀한 제자를 기려 다섯 빛깔 꽃비가 열네 에이커 넓이에 무릎 높이로 내리리라는 것이었습니다.",
+    "cover": [
+     205,
+     137,
+     96
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     538,
+     300,
+     772,
+     418
+    ],
+    "ko": "제따와나에 다가가자 비구 1천 명이 앞장섰습니다. 찟따는 재가자 5백 명과 함께 들어섰습니다. 모인 사람들이 감탄하며 수군거렸습니다. “저분이 찟따 장자다!” 그는 군중의 눈길을 사로잡았습니다.",
+    "cover": [
+     216,
+     137,
+     100
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     152,
+     358,
+     656,
+     412
+    ],
+    "ko": "부처님의 여섯 빛깔 광명에 휩싸인 찟따가 깊이 공경하며 부처님 발목을 어루만졌습니다. 그 순간 예언된 다섯 빛깔 꽃비가 큰 대중 위로 쏟아졌습니다.",
+    "cover": [
+     205,
+     123,
+     86
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     52,
+     310,
+     170
+    ],
+    "ko": "한 달 동안 찟따는 부처님을 가까이 모셨습니다. 이번에도 천신과 사람들이 끝없이 선물을 바쳐 순례자들을 먹였고, 처음 실은 양식 5백 수레는 전혀 쓰이지 않았습니다.",
+    "cover": [
+     184,
+     96,
+     67
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     152,
+     358,
+     646,
+     416
+    ],
+    "ko": "자기 양식을 다 쓸 수 없었던 찟따는 5백 수레를 모두 승가에 바쳤습니다. 많은 재물을 남겨 두고 그는 빈 수레로 집에 돌아가는 길에 올랐습니다.",
+    "cover": [
+     196,
+     118,
+     90
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     446,
+     294,
+     756,
+     406
+    ],
+    "ko": "빈 수레를 본 천신들이 짐짓 가볍게 나무라고는, 5백 수레를 모두 일곱 가지 보배로 신기하게 채웠습니다. 찟따는 아주 편안하게 집에 돌아갔습니다.",
+    "cover": [
+     178,
+     96,
+     71
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     152,
+     358,
+     648,
+     414
+    ],
+    "ko": "아난다 장로가 이런 큰 영예가 다른 곳에서도 찟따를 따르는지 여쭈었습니다. 부처님께서 그렇다고 하시며, 이 깊은 복의 보이지 않는 뿌리를 밝혀 주셨습니다.",
+    "cover": [
+     196,
+     120,
+     89
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     460,
+     140,
+     730,
+     308
+    ],
+    "ko": "“아나함이자 법을 설하는 데 으뜸인 우바새, 찟따 장자가 죽음을 앞두고 누워 있었습니다. 숲과 나무와 약초를 지키는 거대한 천신들이 그의 침상 곁에 가까이 모여들었습니다.”",
+    "cover": [
+     241,
+     224,
+     192
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     38,
+     298,
+     358,
+     408
+    ],
+    "ko": "천신들이 권했습니다. “전륜성왕으로 태어나기를 서원하십시오.” 찟따가 단호히 답했습니다. “전륜성왕도 무상하고 불안정합니다. 결국 버리고 떠나야 하는 것입니다.”",
+    "cover": [
+     242,
+     230,
+     205
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     38,
+     298,
+     358,
+     408
+    ],
+    "ko": "천신들을 볼 수 없는 가족에게는 그의 말만 들렸습니다. 그가 정신이 흐려졌을까 걱정하여 간청했습니다. “주인님, 정신을 차리십시오. 헛소리를 하지 마십시오.”",
+    "cover": [
+     241,
+     228,
+     201
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     426,
+     296,
+     758,
+     410
+    ],
+    "ko": "찟따가 무슨 말에 놀랐느냐고 물었습니다. 가족이 전륜성왕을 거절한 말을 되풀이하자 그가 밝혔습니다. “나는 정신이 흐려진 것이 아니다. 그런 세상의 태어남을 서원하라고 권하는 숲의 천신들에게 대답한 것이다.”",
+    "cover": [
+     239,
+     225,
+     199
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     252,
+     298,
+     566,
+     410
+    ],
+    "ko": "친척들이 천신들이 왜 그런 청을 했느냐고 물었습니다. 찟따가 설명했습니다. “내 청정한 계를 보았기 때문이다. 바르게 사는 이는 바라는 것이 쉽게 이루어진다. 그러나 나는 가장 높은 세상의 권력도 무상함을 안다.”",
+    "cover": [
+     206,
+     157,
+     71
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-27-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     426,
+     38,
+     758,
+     152
+    ],
+    "ko": "그의 마음이 아주 맑다는 것을 안 가족이 마지막 가르침을 청했습니다. 찟따는 마지막 숨을 쉬며 법을 설하고, 삼보에 대해 완전하고 흔들림 없는 믿음을 세우라고 당부했습니다.",
+    "cover": [
+     205,
+     156,
+     77
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-28-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     328,
+     754,
+     410
+    ],
+    "ko": "“부처님께 완전한 믿음을 가지라. 그분은 가장 높은 지혜와 청정한 행을 갖추신, 천신과 인간의 견줄 데 없는 스승이시다. 세 세계를 완전히 아시고 사성제를 드러내신다.”",
+    "cover": [
+     233,
+     207,
+     161
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-29-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     326,
+     754,
+     410
+    ],
+    "ko": "“법에 완전한 믿음을 가지라. 가르침은 잘 설해졌고 분명하다. 곧바로 결과를 주고, 와서 자세히 살펴보라고 하며, 성자들이 스스로 부지런히 노력하여 직접 깨달을 수 있다.”",
+    "cover": [
+     228,
+     201,
+     156
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-30-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     46,
+     754,
+     132
+    ],
+    "ko": "“승가에 완전한 믿음을 가지라. 여덟 부류의 성스러운 제자들은 곧고 바르게 행한다. 크게 공경받을 만하며, 모두가 공덕의 씨앗을 뿌릴 견줄 데 없는 기름진 밭이다.”",
+    "cover": [
+     225,
+     197,
+     154
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Citta-31-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     198,
+     156,
+     602,
+     286
+    ],
+    "ko": "“끝으로 이렇게 다짐하며 닦으라. ‘우리는 가진 모든 것을 청정한 계를 지닌 이들과 언제나 넉넉히 나누리라.’”\n가족을 믿음과 보시에 굳게 세운 뒤, 찟따는 평안히 숨을 거두었습니다.",
+    "cover": [
+     222,
+     194,
+     152
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
