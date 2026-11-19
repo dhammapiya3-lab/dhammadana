@@ -1,0 +1,446 @@
+[
+ {
+  "img": "images/08-Katiyani-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     288,
+     333
+    ],
+    "bbox": [
+     589,
+     1068,
+     2060,
+     1418
+    ],
+    "shape": "box",
+    "en": "Katiyani of Unsbakab Conviction Tale of Dhamma, Danger, and Ultimate Forgiveness ead from the Great Chronicles)",
+    "conf": 32
+   }
+  ],
+  "loose": [
+   "ale",
+   "el?",
+   "elt"
+  ]
+ },
+ {
+  "img": "images/08-Katiyani-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     222,
+     99
+    ],
+    "bbox": [
+     565,
+     264,
+     1319,
+     711
+    ],
+    "shape": "box",
+    "en": "Eons ago in Harhsavati, laywoman witnessed disciple praised for unshakable conviction",
+    "conf": 85
+   },
+   {
+    "seed": [
+     290,
+     259
+    ],
+    "bbox": [
+     926,
+     794,
+     1689,
+     1270
+    ],
+    "shape": "box",
+    "en": "Offering extraordinary gifts to Buddha Padumuttara she aspired to achieve this same foremost title in the future",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Katiyani-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "After",
+   "100,000",
+   "eons",
+   "rebirth,",
+   "she",
+   "was",
+   "born",
+   "Katiyani",
+   "Kuraraghara",
+   "during",
+   "the",
+   "era",
+   "Buddha",
+   "Gotama.",
+   "She",
+   "formed",
+   "deep",
+   "bond",
+   "with",
+   "Kali,",
+   "alt",
+   "devout",
+   "lay",
+   "woman."
+  ]
+ },
+ {
+  "img": "images/08-Katiyani-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ven.",
+   "Sona",
+   "Kutikanna",
+   "from",
+   "the",
+   "monastery",
+   "reproduced",
+   "the",
+   "exact",
+   "words",
+   "Katiyani",
+   "arrived",
+   "the",
+   "assembly,",
+   "taking",
+   "her",
+   "seat",
+   "listen",
+   "with",
+   "pure",
+   "devotion"
+  ]
+ },
+ {
+  "img": "images/08-Katiyani-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "While",
+   "she",
+   "listened,",
+   "five",
+   "hundred",
+   "robbers",
+   "dug",
+   "secret",
+   "tunnel",
+   "into",
+   "her",
+   "home.",
+   "Their",
+   "Chief",
+   "lurked",
+   "the",
+   "back",
+   "the",
+   "assembly,",
+   "monitoring",
+   "Katiyani",
+   "closely."
+  ]
+ },
+ {
+  "img": "images/08-Katiyani-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     82,
+     130
+    ],
+    "bbox": [
+     231,
+     347,
+     916,
+     1187
+    ],
+    "shape": "box",
+    "en": "“Sent to fetch oil for the lamps, Katiyani’s maid discovered the robbers Terrified, she fled back empty-handed whispering: “Madam robbers have dug tunnel into our compound!”",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "NG)"
+  ]
+ },
+ {
+  "img": "images/08-Katiyani-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     489,
+     54
+    ],
+    "bbox": [
+     592,
+     145,
+     2066,
+     334
+    ],
+    "shape": "box",
+    "en": "Overhearing the maid, the Chief hief vowed:",
+    "conf": 92
+   },
+   {
+    "seed": [
+     243,
+     356
+    ],
+    "bbox": [
+     694,
+     1118,
+     1273,
+     1382
+    ],
+    "shape": "box",
+    "en": "If she leaves: will cut off her head.",
+    "conf": 95
+   },
+   {
+    "seed": [
+     572,
+     316
+    ],
+    "bbox": [
+     1769,
+     1008,
+     2347,
+     1270
+    ],
+    "shape": "box",
+    "en": "If she stays: Iw will ill return all the looted property. ai",
+    "conf": 51
+   }
+  ],
+  "loose": [
+   "NIK"
+  ]
+ },
+ {
+  "img": "images/08-Katiyani-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     493,
+     163
+    ],
+    "bbox": [
+     1623,
+     503,
+     2205,
+     995
+    ],
+    "shape": "box",
+    "en": "Without 3 hesitation, 3 Katiyani atiyani whispered back: “Hush! They will only take what is in the house. Iam listening to the Dhamma. Do not disturb me!”",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Katiyani-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     486,
+     71
+    ],
+    "bbox": [
+     1570,
+     215,
+     2460,
+     493
+    ],
+    "shape": "box",
+    "en": "Struck by her devotion, the Chief thought ‘If take from such meritorious lady, the earth would devour me.” He instantly ordered his men to return the wealth VN",
+    "conf": 64
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Katiyani-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     120,
+     111
+    ],
+    "bbox": [
+     231,
+     281,
+     1025,
+     1230
+    ],
+    "shape": "box",
+    "en": "Ignorant of her restored wealth but rich in spiritual focus, Katiyani continued to listen. As the discourse concluded, she achieved the profound realizatation of Stream-entry.",
+    "conf": 57
+   }
+  ],
+  "loose": [
+   "Cry",
+   "mas"
+  ]
+ },
+ {
+  "img": "images/08-Katiyani-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     65,
+     72
+    ],
+    "bbox": [
+     192,
+     235,
+     1061,
+     1270
+    ],
+    "shape": "box",
+    "en": "ES SV SAY ROP ROMS At dawn, the Chief SN fell at her feet. iS confessing their plot. SS ZA NS Hearing the truth 7, she did not harbor anger. She simply replied QWs BS forgive you all.” WEI EWES",
+    "conf": 34
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Katiyani-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     297,
+     78
+    ],
+    "bbox": [
+     698,
+     215,
+     1954,
+     618
+    ],
+    "shape": "box",
+    "en": "Seeking true exoneration, the Chief asked for ordination. Katiyani sponsored all their requisites. Ven. Sona Kutikanna admitted all 500 men into the Sangha as novices.",
+    "conf": 50
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Katiyani-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     121,
+     111
+    ],
+    "bbox": [
+     218,
+     284,
+     1028,
+     1233
+    ],
+    "shape": "box",
+    "en": "Striving diligently, the former thieves purified their minds. Ultimately, all 500 monks attained Arahatship—the hi hest spiritual liberation— stemming from one woman's unwavering focus.",
+    "conf": 83
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/08-Katiyani-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     526,
+     111
+    ],
+    "bbox": [
+     1607,
+     281,
+     2450,
+     1233
+    ],
+    "shape": "box",
+    "en": "Later, at Jetavana Monastery, the Buddha declared “Etad-aggam bhikkhave Katiyani Monastics, among my female lay disciples who have unshakable conviction in the teaching, Katiyani is the foremost.”",
+    "conf": 88
+   }
+  ],
+  "loose": [
+   "AYA"
+  ]
+ }
+]

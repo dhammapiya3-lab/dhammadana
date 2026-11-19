@@ -1,0 +1,468 @@
+[
+ {
+  "img": "images/09-Nakulamata-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     281,
+     175
+    ],
+    "bbox": [
+     870,
+     536,
+     1779,
+     1005
+    ],
+    "shape": "box",
+    "en": "The Eternal Bond. The 100,000-aeon karmic journey of Nakulapitu and Nakulamatu, and the Buddha’s timeless framework for relationships lasting across lifetimes.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "aha",
+   "CHINN"
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Seed",
+   "Devotion",
+   "Hamsavati,",
+   "witnessing",
+   "Buddha",
+   "declare",
+   "disciple",
+   "foremost,",
+   "the",
+   "future",
+   "Nakulapitu",
+   "made",
+   "extraordinary",
+   "offerings.",
+   "formed",
+   "profound",
+   "aspiration",
+   "achieve",
+   "this",
+   "title,",
+   "securing",
+   "prophetic",
+   "blessing",
+   "for",
+   "the",
+   "future."
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Passage",
+   "Aeons.",
+   "For",
+   "100,000",
+   "aeons,",
+   "cycled",
+   "through",
+   "Deva",
+   "and",
+   "human",
+   "realms.",
+   "Eventually,",
+   "during",
+   "Buddha",
+   "era,",
+   "was",
+   "reborn",
+   "into",
+   "wealthy",
+   "family",
+   "alongside",
+   "his",
+   "eternal",
+   "companion,",
+   "Nakulamatu.",
+   "ASS"
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     295,
+     44
+    ],
+    "bbox": [
+     704,
+     122,
+     1944,
+     403
+    ],
+    "shape": "box",
+    "en": "Arrival at Susumaragira. Buddha Gotama arrived at Susumaragira—named for founding crocodile’s roar. He sojourned in the Bhesakala Forest, the domain of female demon. The couple traveled with townsfolk to visit him.",
+    "conf": 68
+   }
+  ],
+  "loose": [
+   "DSA",
+   "Mizz"
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     407,
+     77
+    ],
+    "bbox": [
+     1250,
+     218,
+     2463,
+     691
+    ],
+    "shape": "box",
+    "en": "Dear son, where have you been? Struck by instinctual parental love, the couple collapsed, weeping at the Buddha's feet. Demonstrating deep compassion, the Buddha patiently allowed them to hold his feet until their emotional joy subsided.",
+    "conf": 67
+   }
+  ],
+  "loose": [
+   "Ye)",
+   "LY,"
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     285,
+     42
+    ],
+    "bbox": [
+     539,
+     122,
+     2146,
+     407
+    ],
+    "shape": "box",
+    "en": "The Roots of Affection. Their intense familial love stemmed from 2,000 shared past existences with the Bodhisatta: 500 Lives: Father Mother 500 Lives: Junior Uncle Aunt +500 Lives: Senior Uncle Aunt 500 Lives: Maternal Uncle Paternal Aunt",
+    "conf": 76
+   }
+  ],
+  "loose": [
+   "WAN"
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     221,
+     53
+    ],
+    "bbox": [
+     691,
+     152,
+     1957,
+     645
+    ],
+    "shape": "box",
+    "en": "From Equanimity to Awakening Once their intense emotion settled into equanimity, the Buddha delivered discourse tailored to their exact mental inclination. By the teaching’s conclusion, both Nakulapitu and Nakulamatu attained the fruition of Stream-entry knowledge.",
+    "conf": 78
+   }
+  ],
+  "loose": [
+   "AY,"
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Wish",
+   "for",
+   "Eternity.",
+   "their",
+   "twilight",
+   "years,",
+   "having",
+   "never",
+   "been",
+   "disloyal",
+   "thought",
+   "deed,",
+   "they",
+   "offered",
+   "the",
+   "Buddha",
+   "meal.",
+   "They",
+   "asked:",
+   "sir,",
+   "how",
+   "can",
+   "remain",
+   "united",
+   "this",
+   "present",
+   "existence",
+   "and",
+   "all",
+   "future",
+   "existences?”"
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "(62",
+   "The",
+   "Four",
+   "Conditions.",
+   "The",
+   "Buddha",
+   "revealed",
+   "the",
+   "Pathama-sama-jivi-sutta",
+   "remain",
+   "united",
+   "across",
+   "lifetimes,",
+   "couple’s",
+   "karmic",
+   "trajectories",
+   "must",
+   "align.",
+   "They",
+   "must",
+   "share",
+   "the",
+   "exact",
+   "same",
+   "degree",
+   "four",
+   "essential",
+   "qualities",
+   "bridge",
+   "the",
+   "gap",
+   "between",
+   "lives."
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     291,
+     17
+    ],
+    "bbox": [
+     278,
+     50,
+     2374,
+     301
+    ],
+    "shape": "box",
+    "en": "Conviction Morality 1. Equal Conviction: Matched faith in the teachings. 2. Equal Morality: Restraint in thought, word, and deed Couples with matched ethics lead righteous lives, use kind words, and organically protect themselves from the malice of unfriendly people",
+    "conf": 74
+   }
+  ],
+  "loose": [
+   "Conviction",
+   "Morality"
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Generosity",
+   "Intelligence.",
+   "Equal",
+   "Generosity:",
+   "shared",
+   "liberal",
+   "mind",
+   "toward",
+   "those",
+   "seeking",
+   "help.",
+   "Equal",
+   "Intelligence:",
+   "Matched",
+   "wisdom",
+   "regarding",
+   "reality.",
+   "perfectly",
+   "balanced",
+   "intellect",
+   "and",
+   "open",
+   "hand",
+   "ensure",
+   "the",
+   "couple",
+   "navigates",
+   "the",
+   "world",
+   "and",
+   "the",
+   "true",
+   "equals."
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     498,
+     173
+    ],
+    "bbox": [
+     1567,
+     536,
+     2453,
+     979
+    ],
+    "shape": "box",
+    "en": "Benefits in This World and Beyond. For couple living according to the Dhamma with these four matched qualities, benefits multiply. They find great delight in this present world and rejoice together in the Deva realm hereafter.",
+    "conf": 84
+   }
+  ],
+  "loose": [
+   "tag",
+   "Beyond",
+   "(ss",
+   "This",
+   "World"
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     516,
+     173
+    ],
+    "bbox": [
+     1567,
+     536,
+     2453,
+     979
+    ],
+    "shape": "box",
+    "en": "The Prophecy Fulfilled. Ifill Later at Jetavana monastery, recognizing their unmatched filial bond and profound 18 trust (vissasikanam), the Buddha ia declared: \"Monastics, among the female lay disciples who are close to me, Nakulamatu is the foremost.”",
+    "conf": 51
+   }
+  ],
+  "loose": [
+   "LEN"
+  ]
+ },
+ {
+  "img": "images/09-Nakulamata-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     272,
+     364
+    ],
+    "bbox": [
+     698,
+     1194,
+     1944,
+     1481
+    ],
+    "shape": "box",
+    "en": "The Path of Balanced Devotion. The eternal bond of Nakulapitu and Nakulamatu proves that deep worldly love, grounded in shared conviction, morality, generosity, and intelligence, becomes powerful vehicle for ultimate spiritual awakening.",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "KES"
+  ]
+ }
+]

@@ -1,0 +1,502 @@
+[
+ {
+  "img": "images/01-Sujata-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     307,
+     179
+    ],
+    "bbox": [
+     840,
+     486,
+     1835,
+     1111
+    ],
+    "shape": "box",
+    "en": "Great Chronicles: Sujata The Foremost Female Lay Disciple The story of golden offering, the Buddha’s awakening, and the path to the Three Refuges",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "WAS"
+  ]
+ },
+ {
+  "img": "images/01-Sujata-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Ancient",
+   "Aspiration",
+   "During",
+   "the",
+   "era",
+   "Buddha",
+   "Padumuttara",
+   "Hamsavati,",
+   "the",
+   "future",
+   "witnessed",
+   "woman",
+   "named",
+   "foremost",
+   "taking",
+   "the",
+   "Three",
+   "Refuges.",
+   "She",
+   "made",
+   "extraordinary",
+   "offering",
+   "aspiring",
+   "for",
+   "this",
+   "exact",
+   "title",
+   "across",
+   "aeons",
+   "WZ."
+  ]
+ },
+ {
+  "img": "images/01-Sujata-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     440,
+     306
+    ],
+    "bbox": [
+     1316,
+     952,
+     2536,
+     1375
+    ],
+    "shape": "box",
+    "en": "The Banyan Tree Vow Reborn to the wealthy Seniya family near the Uruvela forest, young Sujata approached sacred banyan tree. ee. She vowed annual offerings to its spirit if blessed with an equal marriage and firstborn son.",
+    "conf": 44
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Sujata-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Mother’s",
+   "Fulfilment",
+   "Her",
+   "wish",
+   "was",
+   "granted.",
+   "Married",
+   "into",
+   "wealthy",
+   "family,",
+   "she",
+   "birthed",
+   "boy",
+   "named",
+   "Yasa.",
+   "Honoring",
+   "her",
+   "promise",
+   "Sujata",
+   "faithfully",
+   "returned",
+   "the",
+   "banyan",
+   "tree,",
+   "making",
+   "rich",
+   "annual",
+   "offerings",
+   "for",
+   "twenty",
+   "years",
+   "Fulfilment",
+   "nent"
+  ]
+ },
+ {
+  "img": "images/01-Sujata-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     491,
+     63
+    ],
+    "bbox": [
+     1432,
+     165,
+     2536,
+     612
+    ],
+    "shape": "box",
+    "en": "The Miraculous Milk (528 (528 BCE) BCE) On the full moon of Vesakha, 528 BCE, auspicious signs appeared. Calves abstained from drinking, and cows freely yielded milk unprompted. Recognizing the miracle, Sujata personally collected the milk for her annual offering.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "Cee"
+  ]
+ },
+ {
+  "img": "images/01-Sujata-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     71,
+     141
+    ],
+    "bbox": [
+     145,
+     274,
+     843,
+     1240
+    ],
+    "shape": "bubble",
+    "en": "Celestial Preparation. As the rice-milk boiled, extra- large bubbles rotated perfectly clockwise without spilling. Devas joined the effort: Maha Brahma held white umbrella, Sakka tenika tended the fire, and others infused celestial nutrients from four continents.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Sujata-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     501,
+     328
+    ],
+    "bbox": [
+     896,
+     1084,
+     2506,
+     1372
+    ],
+    "shape": "box",
+    "en": "Mistaking the Master Mistaking the Master Sujata sent her maid, Punna, to clean the tree’s precinct. Resting before his alms round sat the Bodhisatta. Radiant and still, Punna mistook him for the tree’s guardian spirit and rushed back with joyous news.",
+    "conf": 86
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Sujata-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Gol",
+   "Sujata",
+   "presented",
+   "the",
+   "celestial",
+   "milk-rice",
+   "golden",
+   "vessel",
+   "worth",
+   "100,000",
+   "pieces",
+   "money.",
+   "Bowing",
+   "with",
+   "joyous",
+   "reverence,",
+   "she",
+   "declared:",
+   "desire",
+   "come",
+   "fulfilment",
+   "has",
+   "mine!”",
+   "“May",
+   "your",
+   "Offering"
+  ]
+ },
+ {
+  "img": "images/01-Sujata-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     542,
+     208
+    ],
+    "bbox": [
+     1613,
+     645,
+     2490,
+     1081
+    ],
+    "shape": "box",
+    "en": "The River Neranjara The Bodhisatta carried the vessel to the River Nerafjara, consumed the rice-milk in 49 morsels, and set the bowl upon the water. Miraculously, it floated against the river's current before sinking.",
+    "conf": 82
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Sujata-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Perfect",
+   "Sujata’s",
+   "offering,",
+   "sat",
+   "beneath",
+   "the",
+   "Bodhi",
+   "tree",
+   "and",
+   "elf-Awakening.",
+   "The",
+   "Buddha",
+   "spent",
+   "days",
+   "blissful",
+   "before",
+   "turning",
+   "the",
+   "Wheel",
+   "Dhamma",
+   "Isipatana.",
+   "ect",
+   "Self-Aw",
+   "htl",
+   "ran",
+   "Nhe"
+  ]
+ },
+ {
+  "img": "images/01-Sujata-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     158,
+     65
+    ],
+    "bbox": [
+     145,
+     185,
+     1299,
+     569
+    ],
+    "shape": "box",
+    "en": "The Son Awakens Meanwhile, Sujata’s son, Yasa, lived in immense luxury. Awaking at midnight, he saw the tormented reality of his sleeping harem. Disgusted by the suffering of worldly defilements, he fled into the night.",
+    "conf": 80
+   }
+  ],
+  "loose": [
+   "Dy)"
+  ]
+ },
+ {
+  "img": "images/01-Sujata-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Ordination",
+   "Yasa",
+   "ountered",
+   "the",
+   "Buddha,",
+   "realized",
+   "the",
+   "Dhamma,",
+   "and",
+   "attained",
+   "Arahatsh",
+   "summoned:",
+   "'Come,",
+   "monastic.'",
+   "Instantly,",
+   "Yasa",
+   "transformed,",
+   "recei",
+   "shaved",
+   "head,",
+   "alms",
+   "bowl,",
+   "and",
+   "mind-made",
+   "robes.",
+   "6))",
+   "CAS",
+   "Yasa",
+   "encountered",
+   "The",
+   "Buddha"
+  ]
+ },
+ {
+  "img": "images/01-Sujata-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     463,
+     67
+    ],
+    "bbox": [
+     1296,
+     175,
+     2486,
+     542
+    ],
+    "shape": "box",
+    "en": "fiperation Liberation 10n of the Family The next day, the Buddha and Venerable Yasa visited Sujata’s 1 home. Hearing the discourse, Sujata ata and her daughter-in-law in- law took the Three Reluge Ss and achieved cake Stream-entry. entry.",
+    "conf": 48
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-Sujata-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     77,
+     265
+    ],
+    "bbox": [
+     192,
+     794,
+     840,
+     1041
+    ],
+    "shape": "box",
+    "en": "The Bodhisatta sought spiritual awakening at the Bodhi tree.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     451,
+     369
+    ],
+    "bbox": [
+     1336,
+     1203,
+     2238,
+     1365
+    ],
+    "shape": "box",
+    "en": "Their heir parallel paths converged through golden offering to ignite the Sangha.",
+    "conf": 82
+   }
+  ],
+  "loose": [
+   "Sujata",
+   "sought",
+   "worldly",
+   "fulfilment",
+   "the",
+   "banyan",
+   "tree.",
+   "Two",
+   "Aspirations,",
+   "One",
+   "Destiny"
+  ]
+ },
+ {
+  "img": "images/01-Sujata-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     316,
+     355
+    ],
+    "bbox": [
+     582,
+     1131,
+     2073,
+     1465
+    ],
+    "shape": "box",
+    "en": "The Foremost Title ‘Monastics, among my female lay-disciples who were the earliest to get established in the refuges, Sujata, daughter of Seniya... is the foremost.’ The Buddha (Anguttara-nikaya) An ancient vow fulfilled.",
+    "conf": 54
+   }
+  ],
+  "loose": [
+   "Gyr",
+   "GyS"
+  ]
+ }
+]

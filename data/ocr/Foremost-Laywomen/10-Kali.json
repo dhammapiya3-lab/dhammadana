@@ -1,0 +1,395 @@
+[
+ {
+  "img": "images/10-Kali-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     217,
+     372
+    ],
+    "bbox": [
+     575,
+     1197,
+     2073,
+     1481
+    ],
+    "shape": "box",
+    "en": "Great Chronicles: icles Kali 1 of Kuraraghara The Foremost io) Female Lay Disciple isciple in Unseen Devotion. tale “4 of faith across 2) aeons.",
+    "conf": 47
+   }
+  ],
+  "loose": [
+   "RYE"
+  ]
+ },
+ {
+  "img": "images/10-Kali-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     226,
+     333
+    ],
+    "bbox": [
+     582,
+     1078,
+     2133,
+     1442
+    ],
+    "shape": "box",
+    "en": "In Hamsavati, before Buddha Padumuttara, woman witnessed disciple praised for unseen devotion. Making great offerings, she formed powerful aspiration to achieve this very title in the future.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/10-Kali-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     213,
+     354
+    ],
+    "bbox": [
+     582,
+     1078,
+     2133,
+     1442
+    ],
+    "shape": "box",
+    "en": "100, 000 aeons Wiser The woman was reborn in Rajagaha during Buddha Gotama’s era and named Kali. The ancient karmic seed prepared to bloom",
+    "conf": 32
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/10-Kali-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     152,
+     87
+    ],
+    "bbox": [
+     205,
+     251,
+     1151,
+     797
+    ],
+    "shape": "box",
+    "en": "Coming of age, Kali married householder’s son from Kuraraghara. Relocating to this distant market town in Avanti, vanti, she immersed herself in worldly family duties.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "ING",
+   "Rajagaha",
+   "Kuraraghara",
+   "Avanti"
+  ]
+ },
+ {
+  "img": "images/10-Kali-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     84,
+     110
+    ],
+    "bbox": [
+     208,
+     251,
+     1643,
+     645
+    ],
+    "shape": "box",
+    "en": "As her pregnancy advanced, Kali considered it unwise to deliver away from her parents. She journeyed back to her familial home in Rajagaha to give birth safely",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "£43"
+  ]
+ },
+ {
+  "img": "images/10-Kali-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Her",
+   "arrival",
+   "perfectly",
+   "aligned",
+   "with",
+   "cosmic",
+   "timing.",
+   "the",
+   "full",
+   "moon",
+   "528",
+   "BCE,",
+   "the",
+   "historic",
+   "Dhamma-cakkappavattana-sutta",
+   "was",
+   "taught",
+   "the",
+   "Buddha",
+   "far",
+   "away.",
+   "WAS",
+   "LEN"
+  ]
+ },
+ {
+  "img": "images/10-Kali-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     541,
+     274
+    ],
+    "bbox": [
+     1630,
+     850,
+     2539,
+     1375
+    ],
+    "shape": "box",
+    "en": "At midnight, Devas Satagiri and Hemavata hovered above her mansion. Discussing the salutary effects of the Three Treasures, their celestial voices drifted down. Resting below, Kali overheard them.",
+    "conf": 88
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/10-Kali-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     197,
+     58
+    ],
+    "bbox": [
+     420,
+     142,
+     873,
+     241
+    ],
+    "shape": "box",
+    "en": "een",
+    "conf": 95
+   },
+   {
+    "seed": [
+     587,
+     53
+    ],
+    "bbox": [
+     1772,
+     142,
+     2222,
+     241
+    ],
+    "shape": "box",
+    "en": "Unseen",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "als",
+   "Most",
+   "disciples",
+   "awaken",
+   "the",
+   "Master’s",
+   "feet.",
+   "path",
+   "was",
+   "hearsay.",
+   "Physical",
+   "distance",
+   "was",
+   "bridged",
+   "divine",
+   "auditory",
+   "transmission,",
+   "instantly",
+   "instilling",
+   "profound",
+   "faith."
+  ]
+ },
+ {
+  "img": "images/10-Kali-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Hearing",
+   "the",
+   "Devas,",
+   "pure",
+   "faith",
+   "blossomed.",
+   "Without",
+   "ever",
+   "meeting",
+   "Buddha",
+   "Gotama,",
+   "Kali",
+   "attained",
+   "Sotapatti-magga",
+   "(Stream-entry).",
+   "She",
+   "became",
+   "noble",
+   "disciple—the",
+   "very",
+   "first",
+   "among",
+   "females",
+   "WANT"
+  ]
+ },
+ {
+  "img": "images/10-Kali-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "That",
+   "very",
+   "night,",
+   "Kali",
+   "gave",
+   "birth.",
+   "Her",
+   "son",
+   "would",
+   "eventually",
+   "ordain",
+   "Venerable",
+   "Sona",
+   "Kutikanna.",
+   "Having",
+   "fulfilled",
+   "her",
+   "worldly",
+   "duties,",
+   "she",
+   "later",
+   "returned",
+   "Kuraraghara."
+  ]
+ },
+ {
+  "img": "images/10-Kali-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     162,
+     342
+    ],
+    "bbox": [
+     354,
+     1088,
+     2295,
+     1458
+    ],
+    "shape": "box",
+    "en": "In the Jetavana monastery, Buddha Gotama declared: “Monastics, among my female lay disciples devoted to me without having met me, Kali of Kuraraghara is the foremost.”",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "(Gy"
+  ]
+ },
+ {
+  "img": "images/10-Kali-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ale",
+   "Across",
+   "100,000",
+   "aeons,",
+   "single",
+   "pure",
+   "intention",
+   "ripened.",
+   "journey",
+   "proves",
+   "that",
+   "genuine",
+   "spiritual",
+   "awakening",
+   "transcends",
+   "physical",
+   "proximity,",
+   "relying",
+   "entirely",
+   "the",
+   "clarity",
+   "unseen",
+   "devotion."
+  ]
+ }
+]

@@ -1,0 +1,1525 @@
+[
+ {
+  "img": "images/02-Visakha-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     215,
+     35
+    ],
+    "bbox": [
+     628,
+     76,
+     2020,
+     446
+    ],
+    "shape": "box",
+    "en": "Visakha: Builder of Pubbarama. The Epic of the Foremost Female Lay Disciple in Generosity.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Visakha-02-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     406,
+     315
+    ],
+    "bbox": [
+     2716,
+     2100,
+     5396,
+     2695
+    ],
+    "shape": "box",
+    "en": "In the city of Hamsavati, during Buddha Padumuttara’s time, wealthy woman witnessed the Buddha honor chief female disciple of generosity. She made grand offering and an enduring aspiration to achieve that exact distinction.",
+    "conf": 77
+   }
+  ],
+  "loose": [
+   "Or,"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-03-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "For",
+   "100,000",
+   "aeons,",
+   "she",
+   "cycled",
+   "through",
+   "Deva",
+   "and",
+   "human",
+   "realms.",
+   "During",
+   "Buddha",
+   "Kassapa’s",
+   "era,",
+   "she",
+   "was",
+   "reborn",
+   "Princess",
+   "youngest",
+   "King",
+   "Kiki’s",
+   "seven",
+   "daughters,",
+   "meticulously",
+   "continuing",
+   "her",
+   "spiritual",
+   "preparation",
+   "across",
+   "vast",
+   "ages."
+  ]
+ },
+ {
+  "img": "images/02-Visakha-04-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Buddha",
+   "Gotama’s",
+   "era,",
+   "her",
+   "final",
+   "existence",
+   "began",
+   "Bhaddiya",
+   "Born",
+   "and",
+   "Sumanadevi,",
+   "and",
+   "granddaughter",
+   "the",
+   "immensely",
+   "wealthy",
+   "Mendaka",
+   "Visakha",
+   "entered",
+   "lineage",
+   "defined",
+   "extraordinary",
+   "prosperity",
+   "and",
+   "profound",
+   "devoutness",
+   "Mendaka",
+   "Dhanafijayaand"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-05-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "When",
+   "Visakha",
+   "was",
+   "seven,",
+   "Buddha",
+   "Gotama",
+   "arrived",
+   "Bhaddiya",
+   "awaken",
+   "those",
+   "with",
+   "ripened",
+   "merit.",
+   "Recognizing",
+   "this",
+   "momentous",
+   "occasion,",
+   "her",
+   "grandfather",
+   "Mendaka",
+   "dispatched",
+   "young",
+   "Visakha",
+   "and",
+   "500",
+   "maidens",
+   "grand",
+   "coaches",
+   "welcome",
+   "the",
+   "Buddha.",
+   "Lip"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-06-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Displaying",
+   "innate",
+   "wisdom,",
+   "seven-year-old",
+   "considered",
+   "improper",
+   "ride",
+   "grand",
+   "coach",
+   "into",
+   "the",
+   "Buddha’s",
+   "presence.",
+   "She",
+   "dismounted",
+   "early",
+   "and",
+   "approached",
+   "foot,",
+   "demonstrating",
+   "profound",
+   "spiritual",
+   "respect",
+   "over",
+   "worldly",
+   "status."
+  ]
+ },
+ {
+  "img": "images/02-Visakha-07-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "fay",
+   "bal",
+   "The",
+   "Buddha",
+   "delivered",
+   "discourse",
+   "perfectly",
+   "suited",
+   "for",
+   "child's",
+   "mind.",
+   "Upon",
+   "hearing",
+   "it,",
+   "Visakha",
+   "and",
+   "her",
+   "500",
+   "attendants",
+   "attained",
+   "Stream-entry",
+   "(Sotapatti).",
+   "Mendaka",
+   "also",
+   "attained",
+   "this",
+   "awakening,",
+   "hosting",
+   "the",
+   "Sangha",
+   "lavishly",
+   "for",
+   "fifteen",
+   "continuous",
+   "days."
+  ]
+ },
+ {
+  "img": "images/02-Visakha-08-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Nig",
+   "Bhaddiya",
+   "Political",
+   "reshaped",
+   "her",
+   "world.",
+   "satisfy",
+   "King",
+   "Pasenadis",
+   "request",
+   "for",
+   "wealthy",
+   "householder,",
+   "Savatthi",
+   "Saketa",
+   "King",
+   "Bimbisara",
+   "sent",
+   "father",
+   "Kosala.",
+   "Finding",
+   "Savatthi",
+   "too",
+   "small",
+   "for",
+   "his",
+   "vast",
+   "retinue,",
+   "Dhananjaya",
+   "founded",
+   "the",
+   "prosperous",
+   "town",
+   "Saketa.",
+   "asenad",
+   "uest",
+   "tth",
+   "vatth",
+   "aya"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-09-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Savatthi,",
+   "scouts",
+   "for",
+   "the",
+   "wealthy",
+   "householder",
+   "Migara",
+   "sought",
+   "bride",
+   "equal",
+   "status",
+   "for",
+   "his",
+   "son,",
+   "Punnavaddhana.",
+   "Finding",
+   "suitable",
+   "peers",
+   "locally,",
+   "their",
+   "search",
+   "led",
+   "them",
+   "the",
+   "gates",
+   "Saketa.",
+   "(2)"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-10-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "HIN",
+   "ENG",
+   "sudden",
+   "rainstorm",
+   "caught",
+   "Visakha",
+   "and",
+   "her",
+   "maidens",
+   "lake.",
+   "While",
+   "others",
+   "ran",
+   "wildly",
+   "seek",
+   "shelter,",
+   "Visakha",
+   "walked",
+   "calm,",
+   "deliberate",
+   "pace,",
+   "entirely",
+   "ignoring",
+   "the",
+   "pouring",
+   "rain.",
+   "The",
+   "scouts",
+   "watched",
+   "her",
+   "wonder"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-11-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     293,
+     302
+    ],
+    "bbox": [
+     1949,
+     1985,
+     3777,
+     2895
+    ],
+    "shape": "box",
+    "en": "Migara and the Kosalan King arrived in Saketa for the betrothal. Dhanafijaya hosted the massive entourage lavishly. During the three-month rainy season, when firewood ran out, he resourcefully dismantled stables and soaked coarse cloth in oil to ensure the royal guests were flawlessly accommodated",
+    "conf": 86
+   }
+  ],
+  "loose": [
+   "Ger",
+   "tly",
+   "($2",
+   "‘Th",
+   "AAS"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-12-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     477,
+     93
+    ],
+    "bbox": [
+     3261,
+     387,
+     4837,
+     1491
+    ],
+    "shape": "bubble",
+    "en": "Before her departure, Dhanafijaya imparted ten cryptic principles to Visakha for her new household governing fire, lending, respect, and duty. He also appointed eight learned 1. ahh householders as her trustees to settle any future disputes Ns, cy",
+    "conf": 47
+   },
+   {
+    "seed": [
+     91,
+     95
+    ],
+    "bbox": [
+     330,
+     530,
+     1082,
+     1591
+    ],
+    "shape": "bubble",
+    "en": "MWK WAYNE wis",
+    "conf": 50
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Visakha-13-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "aly",
+   "Adorned",
+   "the",
+   "90-million-value",
+   "maha-lata",
+   "dress,",
+   "Visakha",
+   "departed",
+   "with",
+   "immense",
+   "wealth.",
+   "Miraculously,",
+   "strong",
+   "bulls",
+   "leaped",
+   "fences",
+   "follow",
+   "her",
+   "procession—the",
+   "fruit",
+   "her",
+   "past",
+   "merit",
+   "offering",
+   "delicacies",
+   "the",
+   "Sangha",
+   "during",
+   "Buddha",
+   "Kassapa’s",
+   "time.",
+   "tie",
+   "“Ti",
+   "all",
+   "AG)"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-14-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     123,
+     116
+    ],
+    "bbox": [
+     695,
+     659,
+     2394,
+     1942
+    ],
+    "shape": "box",
+    "en": "Entering Savatthi, Visakha stood proudly in her chariot, her magnificent maha-lata dress dazzling the citizens. Remembering her father’s lavish hospitality, the city showered her with gifts. She generously redistributed them to every household, soaking Savatthi in her grace.",
+    "conf": 84
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Visakha-15-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     82,
+     270
+    ],
+    "bbox": [
+     236,
+     1892,
+     2114,
+     2967
+    ],
+    "shape": "box",
+    "en": "50 On her first night, Visakha dutifully assisted ted mare delivering ivering foal. Days ays later, Migara invited naked ascetics to the wedding feast. noble Stream-enterer, rer Visakha is akh eagerly sought “Arahats,’ but turned away in deep disgust at their shamelessnes 4 6",
+    "conf": 60
+   }
+  ],
+  "loose": [
+   "VAN",
+   "ili"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-16-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     163,
+     365
+    ],
+    "bbox": [
+     932,
+     2501,
+     4794,
+     2931
+    ],
+    "shape": "box",
+    "en": "While Migara ate rich milk-rice, he ignored Buddhist monastic at the door. Visakha respectfully addressed the monastic: “Empty-handed, pay homage. My father-in-law lives only on old food.” Infuriated by this perceived insult, Migara ordered her expelled",
+    "conf": 84
+   }
+  ],
+  "loose": [
+   "Fe:"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-17-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "household",
+   "servants",
+   "refused",
+   "touch",
+   "Visakha.",
+   "Unfazed,",
+   "she",
+   "declared",
+   "she",
+   "was",
+   "mere",
+   "water-carrier",
+   "unlawfully",
+   "banished.",
+   "She",
+   "summoned",
+   "the",
+   "eight",
+   "learned",
+   "trustees,",
+   "appointed",
+   "her",
+   "father,",
+   "hear",
+   "the",
+   "case",
+   "and",
+   "deliver",
+   "righteous",
+   "judgment.",
+   "rier",
+   "ted"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-18-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     323,
+     144
+    ],
+    "bbox": [
+     2042,
+     982,
+     3683,
+     2100
+    ],
+    "shape": "box",
+    "en": "The Eight Elders reviewed Migara’s charges: Claim: Insulting him as eating excreta. Truth: “Old food” meant living solely on past merit without making new merit. Claim: Wandering at night. Truth: Dutifully supervising foal’s birth in the stables.",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "RIN"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-19-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     168,
+     108
+    ],
+    "bbox": [
+     552,
+     537,
+     1999,
+     2659
+    ],
+    "shape": "box",
+    "en": "Migara questioned Dhanafijaya’s cryptic rules: Rule 1: ‘Don’t take inside fire out.’ Meaning: Keep family matters private. Rule 2: ‘Don’t bring outside fire in.’ Meaning: Ignore outsiders’ gossip. Rule 9: ‘Tend the fire.’ Meaning: Revere parents- in-law and husband.",
+    "conf": 44
+   }
+  ],
+  "loose": [
+   "TES"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-20-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     526,
+     104
+    ],
+    "bbox": [
+     3597,
+     394,
+     5325,
+     2802
+    ],
+    "shape": "box",
+    "en": "Rules 3-5: Lend only to those who repay; give freely to poor relatives. Rules 6-8: Sit, eat, and sleep peacefully—meaning show deference, eat only after elders have eaten, and sleep only after tending to the family’s needs.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Visakha-21-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     100,
+     88
+    ],
+    "bbox": [
+     258,
+     308,
+     1792,
+     2623
+    ],
+    "shape": "bubble",
+    "en": "\"oF Visakha invites the Buddha and his Sangha for meal While the monastics fill the house, naked ascetics gather outside, peering in with keen, envious interest at the unfolding devotion Lo",
+    "conf": 56
+   }
+  ],
+  "loose": [
+   "EBs",
+   "tat"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-22-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     89,
+     314
+    ],
+    "bbox": [
+     516,
+     2243,
+     5210,
+     2874
+    ],
+    "shape": "box",
+    "en": "Influenced by ascetic teachers Migara ara refuses to attend the Buddha personally. When an inner urge ol compels him to listen cP) to the discourse 1scourse 0) his servants draw curtain so he can hear without being seen.",
+    "conf": 30
+   }
+  ],
+  "loose": [
+   "KY)"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-23-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     549,
+     42
+    ],
+    "bbox": [
+     3468,
+     265,
+     5439,
+     1125
+    ],
+    "shape": "box",
+    "en": "The Buddha directs his teaching toward Migara. ara. Like golden fruit shaken 25 from og «3 mango any tree, the discourse on morality, 2 giving, and magga-phala effortlessly penetrates the intricate fabric of the screen",
+    "conf": 37
+   }
+  ],
+  "loose": [
+   "VAN"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-24-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     81,
+     317
+    ],
+    "bbox": [
+     516,
+     2243,
+     5210,
+     2874
+    ],
+    "shape": "box",
+    "en": "At the discourse’s end, Migara attains the fruition of Ser: He throws back the screen and prostrates at the Buddha’s feet, his hands Knees, and forehead eee the ground in profound reverence.",
+    "conf": 34
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Visakha-25-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     196,
+     40
+    ],
+    "bbox": [
+     1218,
+     287,
+     4508,
+     1010
+    ],
+    "shape": "box",
+    "en": "Migara Ics adopts Ww his Ww 8) in-law as El co is spiritual itual mother. Hands clasped in deep gratitude, itude, he declares eclares she has saved dh him im from wretched destinations inat ions Forever after, she is renowned das as ‘Migara’s igara mother 3",
+    "conf": 32
+   }
+  ],
+  "loose": [
+   "als",
+   "Bike"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-26-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     72,
+     317
+    ],
+    "bbox": [
+     516,
+     2243,
+     5210,
+     2874
+    ],
+    "shape": "box",
+    "en": "The arrival of noble person facilitates oO it ates +4 Ww the path to Nibbana ana for all residents dents The next day, Visakha’s akh mother-in-law In- law also becomes Stream-enterer and the aD) household Ww tes (2) ac doors Ww are thrown completely peed open aD) to the Sangha. ngha",
+    "conf": 42
+   }
+  ],
+  "loose": [
+   "thi"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-27-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     645,
+     34
+    ],
+    "bbox": [
+     3805,
+     244,
+     4672,
+     408
+    ],
+    "shape": "box",
+    "en": "ghana-matth -matthaka as",
+    "conf": 54
+   }
+  ],
+  "loose": [
+   "repay",
+   "his",
+   "debt",
+   "gratitude,",
+   "Migara",
+   "replaces",
+   "Visakha’s",
+   "cumbersome",
+   "maha-",
+   "bridal",
+   "gown.",
+   "commissions",
+   "artisans",
+   "forge",
+   "the",
+   "ghana-n",
+   "-matthaka—a",
+   "flexible,",
+   "highly",
+   "practical",
+   "garment",
+   "crafted",
+   "from",
+   "100,000",
+   "pieces",
+   "solid",
+   "silver.",
+   "ha’s",
+   "cumbersome",
+   "bridal"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-28-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     269,
+     41
+    ],
+    "bbox": [
+     1913,
+     272,
+     3812,
+     960
+    ],
+    "shape": "box",
+    "en": "Bathed oO from sixteen pots of iF) water, iss) Visakha akha wears her new radiant lan silver dress to pay homage to the Buddha. She secures her enduring legacy as profoundly generous female lay supporter",
+    "conf": 45
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Visakha-29-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Visakha’s",
+   "merit",
+   "multiplies",
+   "into",
+   "sprawling",
+   "lineage.",
+   "and",
+   "eight",
+   "thousand",
+   "great-grandchildren",
+   "Her",
+   "family",
+   "tree",
+   "branches",
+   "into",
+   "twenty",
+   "children,",
+   "all",
+   "stemming",
+   "from",
+   "single",
+   "virtuous",
+   "root",
+   "four",
+   "hundred",
+   "grandchildren",
+   "Renowned",
+   "throughout",
+   "Jambudipa",
+   "BRS"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-30-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     260,
+     37
+    ],
+    "bbox": [
+     1634,
+     258,
+     4092,
+     960
+    ],
+    "shape": "box",
+    "en": "Living to one hundred and twenty years, Visakha possesses the eternal, graceful vitality of sixteen- year-old. Standing amidst her sprawling descendants, she remains entirely devoid of grey hair and visually indistinguishable from her great-grandchildren.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "Wat"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-31-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     693,
+     37
+    ],
+    "bbox": [
+     3225,
+     265,
+     5446,
+     960
+    ],
+    "shape": "box",
+    "en": "to her reputed physical mite the King of Kosala releases massive, mena- cing elephant bull. As the beast charges with an uplifted trunk, Visakha’s five hundred companion ace girls scatter in utter terror.",
+    "conf": 31
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Visakha-32-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     592,
+     342
+    ],
+    "bbox": [
+     3167,
+     2451,
+     5446,
+     2931
+    ],
+    "shape": "box",
+    "en": "Refusing flee, Visakha gently pinch the massive trunk with just two fingers. Possessing the raw physical strength of five great elephant bulls, she effortlessly sends the charging animal cabbie reeling backward in defeat",
+    "conf": 36
+   }
+  ],
+  "loose": [
+   "AS)"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-33-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "SKA",
+   "Leaving",
+   "Jetavana",
+   "simpler",
+   "attire,",
+   "Visakha’s",
+   "maid",
+   "accidentally",
+   "left",
+   "her",
+   "immensely",
+   "heavy",
+   "maha-lata",
+   "dress",
+   "behind.",
+   "Ven.",
+   "Ananda,",
+   "dutifully",
+   "securing",
+   "forgotten",
+   "items,",
+   "hung",
+   "the",
+   "priceless",
+   "garment",
+   "the",
+   "stairway.",
+   "(6)"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-34-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     297,
+     180
+    ],
+    "bbox": [
+     2071,
+     1182,
+     3662,
+     2007
+    ],
+    "shape": "box",
+    "en": "Upon realizing Ae 6D the oversight, aot Visakha Boe ics refused to reclaim the dress have no desire to wear it after Ven. Ananda has handled it. deem it donated.” She resolved to sell it for the Sangha",
+    "conf": 32
+   }
+  ],
+  "loose": [
+   "tit"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-35-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     341,
+     166
+    ],
+    "bbox": [
+     2071,
+     1182,
+     3662,
+     2007
+    ],
+    "shape": "box",
+    "en": "The Maha-lata Dress Value: 90 Million (Material) 100,000 (Work) Wearers: Only three women could bear its sheer 1. Visakha 2. Mallika 3. King of Baranasi’s daughter Result: Visakha bought it back herself",
+    "conf": 58
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Visakha-36-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     253,
+     317
+    ],
+    "bbox": [
+     1763,
+     2257,
+     3970,
+     2866
+    ],
+    "shape": "box",
+    "en": "With 90,100,000 pieces of money ready for the Sangha, Visakha asked the Buddha how best to utilize it. The Buddha advised: “It would be fitting if you built monastery near the eastern gate of Savatthi.”",
+    "conf": 86
+   }
+  ],
+  "loose": [
+   "NSS",
+   "ANY",
+   "(7a"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-37-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     249,
+     317
+    ],
+    "bbox": [
+     1763,
+     2257,
+     3970,
+     2866
+    ],
+    "shape": "box",
+    "en": "The Awakening. Buddha departed Visakha Savatthi requested to guide supervisor disciple for toward the construction. From 500 monastics, she chose Ven. Maha Moggallana, knowing his great powers would ensure expeditious completion",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "ZO)",
+   "ZAN",
+   "COS",
+   "On."
+  ]
+ },
+ {
+  "img": "images/02-Visakha-38-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     269,
+     316
+    ],
+    "bbox": [
+     1763,
+     2257,
+     3970,
+     2866
+    ],
+    "shape": "box",
+    "en": "eliminate Using his great reat all construction powers, Ven. hardships. Maha Moggallana Building materials traversed fifty to sixty leagues daily. Carts never suffered broken axles, rapidly accelerating the grand project's completion over nine months.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "NEA",
+   "CEM"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-39-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     77,
+     87
+    ],
+    "bbox": [
+     473,
+     523,
+     2358,
+     1749
+    ],
+    "shape": "box",
+    "en": "Pubbarama: The Eastern Monastery Completed on level eight-acre site Two storeys, seven-tiers 500 ground-floor chambers SOO first-floor chambers 500 meditation cells dwellings 500 stairways",
+    "conf": 83
+   }
+  ],
+  "loose": [
+   "ity"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-40-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     262,
+     316
+    ],
+    "bbox": [
+     1763,
+     2257,
+     3977,
+     2866
+    ],
+    "shape": "box",
+    "en": "During in the grand four-month donation on ceremony, afr friend end wept, ept, finding no uncovered floor for her 100,000-value 000 -value carpet. Ven. Ananda graciously usly directed her to the foot-washing t-washin spot at the stairway—a (Way—a highly meritorious torious place ce overlooked by Visakha.",
+    "conf": 36
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Visakha-41-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     142,
+     84
+    ],
+    "bbox": [
+     294,
+     387,
+     4386,
+     2114
+    ],
+    "shape": "bubble",
+    "en": "te rk Ge jes Fa hi Tih pe 4 Cie aha, red 46 is WS Mas, 7h pre 4 feo Gn, ao If ala oe 1 fag rer were rr ofa ere whe rig ae ay Laat il it tall hr ay 4 iF Die cae 1 war ta ll ale Me aT Wee be at ae ayer ae fons ors,",
+    "conf": 33
+   }
+  ],
+  "loose": [
+   "The",
+   "Scale",
+   "Offering",
+   "Land",
+   "Site:",
+   "Million",
+   "Construction:",
+   "Million",
+   "Four-Month",
+   "Ceremony:",
+   "Million",
+   "Total:",
+   "270",
+   "Million",
+   "pieces",
+   "money.",
+   "monumental",
+   "act",
+   "generosity",
+   "achieved",
+   "while",
+   "living",
+   "amongst",
+   "non-believers.",
+   "ill",
+   "levers",
+   "Month",
+   "Ing",
+   "ing",
+   "llion",
+   "ieved",
+   "ion",
+   "ill",
+   "ity",
+   "ion",
+   "ion",
+   "bel"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-42-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "sheer",
+   "exultation,",
+   "Visakha",
+   "sang",
+   "five",
+   "verses.",
+   "Her",
+   "ambition—set",
+   "100,000",
+   "aeons",
+   "ago",
+   "during",
+   "Buddha",
+   "Padumuttara’s",
+   "time—was",
+   "fulfilled",
+   "donating",
+   "Amonastery",
+   "Quality",
+   "robes",
+   "Furnishings",
+   "Medicinal",
+   "requisites",
+   "Nutritious",
+   "food",
+   "‘te"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-43-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Mornin",
+   "Afternoon",
+   "Life",
+   "Replete",
+   "with",
+   "Merit",
+   "Morning:",
+   "Her",
+   "home",
+   "constantly",
+   "fed",
+   "travelling,",
+   "sick,",
+   "and",
+   "visiting",
+   "monastics",
+   "Afternoon:",
+   "She",
+   "visited",
+   "the",
+   "monastery,",
+   "personally",
+   "delivering",
+   "ghee,",
+   "honey,",
+   "and",
+   "eight",
+   "medicinal",
+   "fruit",
+   "beverages",
+   "the",
+   "Sangha",
+   "before",
+   "listening",
+   "the",
+   "Dhamma",
+   "Ful",
+   "lete",
+   "lal",
+   "rages",
+   "ning"
+  ]
+ },
+ {
+  "img": "images/02-Visakha-44-Original.jpg",
+  "size": [
+   5733,
+   3200
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Observing",
+   "her",
+   "boundless",
+   "devotion,",
+   "the",
+   "Buddha",
+   "declared",
+   "“Etad-aggam",
+   "bihkkhave",
+   "mama",
+   "savikanam",
+   "upasikanam",
+   "dayikanam",
+   "yad-idam",
+   "Visakha",
+   "Migaramata.",
+   "“Monastics,",
+   "among",
+   "female",
+   "lay",
+   "disciples",
+   "who",
+   "delight",
+   "generosity,",
+   "Visakha,",
+   "Migara’s",
+   "mother,",
+   "the",
+   "foremost"
+  ]
+ }
+]

@@ -7,7 +7,6 @@ R2 에 올림: 46 개 / 한글판 이야기 166 편
 공개 주소 확인: 404 27150바이트
 내려받기 파일: 0 묶음 새로 만듦
 글로 보기: 166 이야기
-44-The-Distribution-of-the-Relics
 Traceback (most recent call last):
   File "/home/runner/work/dhammadana/dhammadana/pipeline/fetch_ocr.py", line 61, in <module>
     main()
@@ -20,7 +19,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.14/concurrent/futures/_base.py", line 311, in _result_or_cancel
     return fut.result(timeout)
            ~~~~~~~~~~^^^^^^^^^
-  File "/usr/lib/python3.14/concurrent/futures/_base.py", line 450, in result
+  File "/usr/lib/python3.14/concurrent/futures/_base.py", line 443, in result
     return self.__get_result()
            ~~~~~~~~~~~~~~~~~^^
   File "/usr/lib/python3.14/concurrent/futures/_base.py", line 395, in __get_result
@@ -49,3 +48,5 @@ Traceback (most recent call last):
   File "/home/runner/.local/lib/python3.14/site-packages/PIL/Image.py", line 3730, in open
     raise UnidentifiedImageError(msg)
 PIL.UnidentifiedImageError: cannot identify image file 'cache/orig/Foremost-Laymen/images/01-Tapussa-and-Bhallika-01-Original.jpg'
+10-Kali.htm: 그림 12 상자 9 상자밖글 121
+10-Kali
