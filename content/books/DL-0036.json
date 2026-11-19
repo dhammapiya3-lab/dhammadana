@@ -97,7 +97,7 @@
         "site": "",
         "created": ""
       },
-      "reader": false,
+      "reader": true,
       "sources": [],
       "collection": "저자에게서 직접 받음",
       "collected": "2026년 11월 17일",

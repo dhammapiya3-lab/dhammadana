@@ -25,7 +25,13 @@ localStorage.setItem('dd-tts', JSON.stringify({pause:0}));
 han = lambda s: re.sub(r'[^가-힣]', '', s or '')
 def same(said, title):
     h = han(title)
-    if h: return h in han(said) and len(han(said)) <= len(h) * 3 + 10
+    if h:
+        if h in han(said) and len(han(said)) <= len(h) * 3 + 10: return True
+        # 제목 가운데의 로마자(buddha)는 한글 소리(붓다)로 읽힘 → 제목의 한글 조각들이 차례대로 들어 있으면 같은 것 (2026-11-19, DL-0036)
+        if re.search(r'[A-Za-z]', title):
+            pat = '.*?'.join(re.escape(x) for x in re.findall(r'[가-힣]+', title))
+            return bool(re.search(pat, han(said))) and len(han(said)) <= len(h) * 3 + 10
+        return False
     k = lambda s: re.sub(r'[^0-9A-Za-z]', '', s or '').lower()
     return difflib.SequenceMatcher(None, k(said), k(title)).ratio() >= 0.6
 
