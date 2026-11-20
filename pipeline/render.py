@@ -118,6 +118,9 @@ def wrap(draw, text, fonts, maxw):
     return out
 
 
+TARGET = 16  # 그림 속 글자 크기 목표 (800px 기준)
+
+
 def fit(draw, text, w, h, maxsize):
     for size in range(maxsize, 9, -1):
         f = Fonts(size)
@@ -252,7 +255,7 @@ def render(src_path, boxes):
                 if um is None:
                     um = np.zeros((H, W), np.uint8); cv2.ellipse(um, ((tb[0] + tb[2]) // 2, (tb[1] + tb[3]) // 2), ((tb[2] - tb[0]) // 2, (tb[3] - tb[1]) // 2), 0, 0, 360, 1, -1)
                 sc_ = 2 if W < 1600 else 1; d_ = ImageDraw.Draw(Image.new("RGB", (8, 8)))
-                cap_ = int(W * sc_ / 24); cap_ = min(cap_, max(10, int((b.get("em") or 14) * W / 800 * sc_ * 1.05)))
+                cap_ = int(W * sc_ / 24); cap_ = min(cap_, max(10, int(max(b.get("em") or 0, TARGET) * W / 800 * sc_ * 1.05)))
                 best = None
                 for asp in (0.9, 1.2, 1.5, 1.9, 2.4, 3.0, 4.0):  # 여러 모양 중 글자가 가장 크게 들어가는 네모
                     r_ = inscribed(um > 0, asp, W)
@@ -277,11 +280,11 @@ def render(src_path, boxes):
     d = ImageDraw.Draw(pil)
     drawn = []
     for (x0, y0, x1, y1), ko, align, em, dark in layout:
-        pad = max(2, W // 500)
+        pad = max(2, W // 250)  # 글이 테두리에 붙지 않게 (약 3px)
         X0, Y0, X1, Y1 = [v * scale for v in (x0 + pad, y0 + pad, x1 - pad, y1 - pad)]
         cap = int(W * scale / 24)
-        if em:
-            cap = min(cap, max(10, int(em * scale * 1.05)))
+        # 글자 크기 목표 16 (800px 기준, 운영자 결정 2026-11-21) — 자리가 모자라면 fit 이 알아서 줄임
+        cap = min(cap, max(10, int(max(em or 0, TARGET * W / 800) * scale * 1.05)))
         f, lines, lh = fit(d, ko, X1 - X0, Y1 - Y0, cap)
         y = Y0 + ((Y1 - Y0) - lh * len(lines)) / 2
         drawn.append(dict(size=f.size / scale, box=[(x0 + pad), y0 + pad, x1 - pad, y1 - pad], ty=(y / scale, (y + lh * len(lines)) / scale),

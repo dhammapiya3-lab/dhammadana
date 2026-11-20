@@ -11,7 +11,8 @@ done = json.load(open("data/rendered.json")) if os.path.exists("data/rendered.js
 stamp = json.load(open("data/rendered_stamp.json")) if os.path.exists("data/rendered_stamp.json") else {}
 for f in sorted(glob.glob("ko/*/*.json")):
     key = f[3:-5]; book, story = key.split("/")
-    h = __import__("hashlib").md5(open(f, "rb").read()).hexdigest()
+    ver = (json.load(open("data/render_ver.json")) if os.path.exists("data/render_ver.json") else {}).get(book, "")
+    h = __import__("hashlib").md5(open(f, "rb").read() + ver.encode()).hexdigest()  # render_ver: 책 전체를 다시 그릴 때 올림
     if key not in done or stamp.get(key) != h:
         print(book, story)
 PY
