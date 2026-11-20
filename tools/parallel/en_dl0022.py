@@ -154,7 +154,7 @@ def locate(paras, draft):
 
 
 notes = {}
-NF = os.path.join(REPO, 'tools/parallel/dl0022_notes.txt')
+NF = os.environ.get('DL22_NOTES') or os.path.join(REPO, 'tools/parallel/dl0022_notes.txt')
 if os.path.exists(NF):
     cur = None
     for line in open(NF, encoding='utf-8'):

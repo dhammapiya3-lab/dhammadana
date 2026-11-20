@@ -53,6 +53,7 @@ for j, (mn, ki, title) in enumerate(ko_su):
             args += ['--seg', f"{KO[kn[n][0]][0]}={on[n][0]}"]   # 단락 번호는 경계로만(쪽을 넘어 이어지는 한국어 문단도 함께 짝지어지게)
 # 소제목 짝: 경마다 한국어 '## ' 소제목 ↔ 원서 소제목을 차례대로 (수가 다른 경은 손으로)
 HEADS = {38: {'Setting': None},   # 한국어판에 없는 소제목
+         10: {'(CONTEMPLATION OF THE BODY)': None, '(CONTEMPLATION OF MIND-OBJECTS)': None},   # 한국어판은 '몸에 대한 관찰: 1. …' 처럼 합쳐 적음
          118: {'서품': 'Introductory Section', '호흡 알아차림': 'Mindfulness of Breathing',
                '알아차림의 네 가지 토대 - 사념처의 실현': 'Fulfilment of the Four Foundations of Mindfulness',
                '일곱 깨달음의 요소(七覺支)의 실현': 'Fulfilment of the Seven Enlightenment Factors',
