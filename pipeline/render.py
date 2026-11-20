@@ -25,6 +25,12 @@ try:
     KO_CMAP = set(_TT(FONT).getBestCmap())
 except Exception:
     KO_CMAP = None
+# 한자(戒壇 등)·「」 는 한글 글꼴에 없어 네모로 깨지므로 한자 글꼴로 섞어 그림 (KS X 1001 한자 4,888자, 2026-11-21)
+HANJA = os.path.join(HERE, "fonts", "NotoSansKR-Hanja.otf")
+try:
+    HJ_CMAP = set(_TT(HANJA).getBestCmap()) if os.path.exists(HANJA) else set()
+except Exception:
+    HJ_CMAP = set()
 
 
 class Fonts:
@@ -33,6 +39,7 @@ class Fonts:
         self.ko = ImageFont.truetype(FONT, size)
         self.la = ImageFont.truetype(LATIN, max(9, round(size * 0.92)))
         self.up = ImageFont.truetype(UPRIGHT, max(9, round(size * 0.9))) if os.path.exists(UPRIGHT) else self.ko
+        self.hj = ImageFont.truetype(HANJA, max(9, round(size * 0.95))) if HJ_CMAP else self.up
 
     def pick(self, t):
         return self.la if is_latin(t) else self.ko
@@ -43,7 +50,7 @@ class Fonts:
             return [(t, f)]
         out = []
         for ch in t:
-            g = self.ko if (ord(ch) in KO_CMAP or ch.isspace()) else self.up
+            g = self.ko if (ord(ch) in KO_CMAP or ch.isspace()) else (self.hj if ord(ch) in HJ_CMAP else self.up)
             if out and out[-1][1] is g: out[-1][0] += ch
             else: out.append([ch, g])
         return [tuple(r) for r in out]
