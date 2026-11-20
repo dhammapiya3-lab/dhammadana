@@ -551,14 +551,11 @@ const PEOPLE = (() => {
 })();
 const peopleOf = b => [...new Set(PEOPLE.raw.filter(x => x.b === b).map(x => x.key))];
 let _ord; const LIB_ORD = () => _ord || (_ord = new Map(libOrder().map((b, i) => [b.id, i])));
-// 도서관 목록: 같은 저자의 책은 모아서 나란히 — 저자 묶음은 그 저자의 가장 최근 책 순서로, 묶음 안은 등록 순서대로 (운영자 요청, 2026-11-15)
+// 도서관 목록 '최근 등록순': 같은 저자끼리 모으지 않고 등록 순서 그대로 (운영자 요청, 2026-11-20 — 2026-11-15 의 '같은 저자 모아 보기'를 되돌림)
 // 저자 가나다순에 쓸 저자 이름: 첫 스승 이름, 없으면 첫 지은이 이름, 없으면 책에 적힌 지은이 (운영자 요청, 2026-11-15)
 const authorName = b => tIds(b)[0] ? (teacherById(tIds(b)[0])?.name || '') : (peopleOf(b)[0] ? (PEOPLE.by.get(peopleOf(b)[0])?.name || peopleOf(b)[0]) : (b.byline || ''));
-const authorKey = b => tIds(b)[0] ? 't:' + tIds(b)[0] : (peopleOf(b)[0] ? 'p:' + peopleOf(b)[0] : 'b:' + b.id);
 function libOrder() {
-  const L = LIB(), first = new Map();
-  L.forEach((b, i) => { const k = authorKey(b); if (!first.has(k)) first.set(k, i); });
-  return L.map((b, i) => ({ b, i, g: first.get(authorKey(b)) })).sort((x, y) => x.g - y.g || x.i - y.i).map(x => x.b);
+  return LIB();   // BOOKS 는 이미 등록 날짜(added) 최근 순
 }
 // 책 소개의 지은이 줄: 이름마다 그 사람의 책 모아 보기 링크 (글자는 그대로)
 // 스승 목록에 있는 분은 스승 소개 페이지로 (운영자 요청, 2026-11-12)
