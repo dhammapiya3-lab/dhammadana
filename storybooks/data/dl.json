@@ -72,11 +72,11 @@
 "zip": 11986001
 },
 "Foremost-Laymen": {
-"n": 93,
-"pdf": 137506599,
-"pdfs": 14428383,
-"stories": 5,
-"zip": 137216542
+"n": 121,
+"pdf": 177746224,
+"pdfs": 18755127,
+"stories": 7,
+"zip": 177445807
 },
 "Foremost-Laymen/01-Tapussa-and-Bhallika": {
 "n": 14,
@@ -102,6 +102,16 @@
 "n": 14,
 "pdf": 19291685,
 "zip": 19009010
+},
+"Foremost-Laymen/06-Ugga": {
+"n": 15,
+"pdf": 21554160,
+"zip": 21275295
+},
+"Foremost-Laymen/07-Uggata": {
+"n": 13,
+"pdf": 19232584,
+"zip": 18954270
 },
 "Foremost-Laywomen": {
 "n": 175,
@@ -956,11 +966,11 @@
 "zip": 12422307
 },
 "Vinaya-Stories": {
-"n": 626,
-"pdf": 729738977,
-"pdfs": 73535908,
-"stories": 38,
-"zip": 729260510
+"n": 667,
+"pdf": 775466861,
+"pdfs": 78102787,
+"stories": 39,
+"zip": 774972387
 },
 "Vinaya-Stories/00-Veranja": {
 "n": 37,
@@ -1151,5 +1161,10 @@
 "n": 25,
 "pdf": 28517471,
 "zip": 28252368
+},
+"Vinaya-Stories/38-First-Council": {
+"n": 41,
+"pdf": 45983069,
+"zip": 45711218
 }
 }
