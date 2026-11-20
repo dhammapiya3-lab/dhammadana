@@ -1,0 +1,677 @@
+[
+ {
+  "img": "images/06-Ugga-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     308,
+     604,
+     358
+    ],
+    "ko": "욱가 장자",
+    "cover": [
+     236,
+     206,
+     152
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     196,
+     358,
+     604,
+     424
+    ],
+    "ko": "마음에 드는 것을 보시하는 데 으뜸인 이\n큰 연대기를 그림으로 따라가는 여행",
+    "cover": [
+     236,
+     208,
+     155
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Ugga-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     358,
+     54,
+     728,
+     86
+    ],
+    "ko": "서원의 씨앗",
+    "cover": [
+     224,
+     182,
+     115
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     358,
+     86,
+     728,
+     174
+    ],
+    "ko": "먼 옛날 함사와띠에서 뒷날의 욱가는 빠두뭇따라 부처님께서 한 제자의 보시를 칭찬하시는 것을 들었습니다. 그는 언젠가 마음에 드는 것을 보시하는 이들 가운데 으뜸이 되겠다고 깊이 서원했습니다.",
+    "cover": [
+     231,
+     193,
+     132
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Ugga-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     410,
+     54,
+     744,
+     86
+    ],
+    "ko": "힘센 장자",
+    "cover": [
+     221,
+     177,
+     115
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     410,
+     86,
+     744,
+     174
+    ],
+    "ko": "십만 겁이 지나 그는 고따마 부처님 시대에 웨살리에 태어났습니다. 훌륭하고 당당한 몸을 지녀 사람들은 그를 그냥 욱가, 곧 ‘힘센 장자’라 불렀습니다.",
+    "cover": [
+     229,
+     190,
+     131
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Ugga-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     382,
+     50,
+     742,
+     82
+    ],
+    "ko": "법의 눈",
+    "cover": [
+     216,
+     175,
+     112
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     382,
+     82,
+     742,
+     172
+    ],
+    "ko": "고따마 부처님을 처음 뵙자마자 욱가의 마음은 장애에서 완전히 벗어났습니다. 사성제를 듣고 그 자리에서 수다원의 지혜를 얻었습니다.",
+    "cover": [
+     226,
+     187,
+     128
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Ugga-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     382,
+     54,
+     742,
+     86
+    ],
+    "ko": "이루어진 바람",
+    "cover": [
+     214,
+     173,
+     110
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     382,
+     86,
+     742,
+     174
+    ],
+    "ko": "늘그막에 욱가는 자기가 가장 아끼는 것만 올리기로 마음먹었습니다. 부처님께서 이 생각을 아시기를 바라자, 세존께서 신통으로 그의 문 앞에 나타나셨습니다.",
+    "cover": [
+     224,
+     184,
+     127
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Ugga-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     126,
+     44,
+     676,
+     84
+    ],
+    "ko": "마음에 드는 공양",
+    "cover": [
+     227,
+     189,
+     118
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     126,
+     84,
+     676,
+     160
+    ],
+    "ko": "욱가는 십만 냥짜리 귀한 전단향 자리를 비롯해 가장 좋은 물건들을 올렸습니다. 아끼는 것을 주는 이는 아끼는 이익을 거둔다는 것을 알았기 때문입니다.",
+    "cover": [
+     227,
+     188,
+     122
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Ugga-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     72,
+     396,
+     132
+    ],
+    "ko": "가장 높은 칭호",
+    "cover": [
+     190,
+     135,
+     53
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     50,
+     132,
+     396,
+     384
+    ],
+    "ko": "그의 끝없는 보시를 아신 부처님께서 선언하셨습니다.\n\n“마음에 드는 것을 늘 보시하는 나의 우바새 제자들 가운데 웨살리의 욱가 장자가 으뜸이다.”",
+    "cover": [
+     190,
+     135,
+     55
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Ugga-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     118,
+     334,
+     684,
+     372
+    ],
+    "ko": "숨은 경이로움",
+    "cover": [
+     225,
+     185,
+     118
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     118,
+     372,
+     684,
+     428
+    ],
+    "ko": "찾아온 비구가 묻자, 욱가는 자신에게 여덟 가지 놀랍고 드문 덕이 있다고 밝혔습니다. 세상 사람의 눈에는 전혀 보이지 않는 덕이었습니다.",
+    "cover": [
+     224,
+     185,
+     119
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Ugga-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     26,
+     38,
+     400,
+     92
+    ],
+    "ko": "흔들림 없는 믿음",
+    "cover": [
+     236,
+     201,
+     148
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     26,
+     92,
+     400,
+     230
+    ],
+    "ko": "1. 부처님을 처음 뵙자마자 흔들림 없는 믿음이 생김\n2. 아나함(anāgāmī)이 되어 평생 범행(brahma-cariya)을 지키기로 서원함",
+    "cover": [
+     237,
+     208,
+     161
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Ugga-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     134,
+     334,
+     668,
+     368
+    ],
+    "ko": "철저한 놓아 버림",
+    "cover": [
+     220,
+     172,
+     100
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     134,
+     368,
+     668,
+     446
+    ],
+    "ko": "3. 집착을 놓아 버림\n아나함이 되자 그는 네 아내를 자유롭게 놓아 주었습니다. 첫째 아내가 다시 혼인하겠다고 하자, 집착 없는 마음으로 그 혼인을 축복했습니다.",
+    "cover": [
+     220,
+     172,
+     100
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Ugga-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     38,
+     444,
+     92
+    ],
+    "ko": "승가에 대한 헌신",
+    "cover": [
+     234,
+     199,
+     147
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     22,
+     92,
+     444,
+     230
+    ],
+    "ko": "4. 모든 재산을 승가의 것으로 여김\n5. 깊이 공경하며 비구들을 받듦\n6. 그들의 가르침을 공손히 듣고, 비구가 법을 설하지 않으면 자기가 설함",
+    "cover": [
+     236,
+     207,
+     160
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Ugga-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     218,
+     354,
+     268
+    ],
+    "ko": "세상 너머",
+    "cover": [
+     237,
+     204,
+     145
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     44,
+     268,
+     354,
+     398
+    ],
+    "ko": "7. 천신이 찾아와도 들뜨지 않음\n8. 다섯 가지 낮은 족쇄를 끊어 다시는 욕계에 나지 않음",
+    "cover": [
+     241,
+     211,
+     156
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Ugga-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     26,
+     38,
+     434,
+     86
+    ],
+    "ko": "정거천에 태어남",
+    "cover": [
+     229,
+     194,
+     142
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     26,
+     86,
+     434,
+     208
+    ],
+    "ko": "죽은 뒤 욱가는 정거천에 태어났습니다. 한밤중에 그가 부처님께 다가가자, 찬란한 빛이 제따와나 승원을 가득 채웠습니다.",
+    "cover": [
+     232,
+     202,
+     155
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Ugga-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     218,
+     354,
+     264
+    ],
+    "ko": "궁극의 성취",
+    "cover": [
+     232,
+     198,
+     138
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     44,
+     264,
+     354,
+     402
+    ],
+    "ko": "부처님께서 물으셨습니다. “바라던 것을 이루었는가?” 욱가 범천이 답했습니다. “제 바람은 참으로 이루어졌습니다.” 놀라운 보시와 출리의 길을 걸어 욱가는 마침내 아라한이 되었습니다.",
+    "cover": [
+     237,
+     206,
+     154
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Ugga-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     232,
+     160,
+     570,
+     202
+    ],
+    "ko": "보시의 열매",
+    "cover": [
+     226,
+     181,
+     117
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     232,
+     202,
+     570,
+     306
+    ],
+    "ko": "마음에 드는 것을 주는 이는 마음에 드는 것을 얻고,\n가장 좋은 것을 주는 이는 가장 좋은 것을 얻는다.\n— 고따마 부처님",
+    "cover": [
+     226,
+     181,
+     116
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
