@@ -27,6 +27,8 @@ ap.add_argument('--move', action='append', default=[], help='한국어판이 원
 ap.add_argument('--base', type=float, default=0.0, help='짝짓기 점수에서 뺄 바탕 뜻 비슷함 — 미얀마어처럼 관계없는 문장도 뜻 비슷함이 높게 나오는 말에서, 줄여 옮긴 곳을 억지로 짝짓지 않고 건너뛰게 (DL-0001: 0.25)')
 ap.add_argument('--my-comma', action='store_true', help="미얀마어 원서의 말끝(…တယ်၊ …ဘူး၊ 등) 뒤 '၊' 에서도 문장을 나눔 — 법문을 받아 적은 책은 '။' 대신 '၊' 로 말을 이어 적어 한 문단이 한 문장이 됨 (DL-0001)")
 ap.add_argument('--en-semi', action='store_true', help="원서 문장을 쌍반점(;) 뒤에서도 나눔 — 보디 스님 니까야 번역처럼 되풀이 구절을 ; 로 길게 이은 원서를 한국어판이 여러 문장으로 옮긴 곳 (DL-0022)")
+ap.add_argument('--en-drop', action='append', default=[], help='한국어판에 없는 원서 문장(정규식, 문장 첫머리부터)은 짝짓기에서 빼고 원서만 있는 줄로 둠 — 예 MN10 의 선반공 비유 (DL-0022)')
+ap.add_argument('--ko-join', action='store_true', help='쪽이 넘어가며 한국어 문장이 두 문단으로 갈라진 곳(앞 문단이 문장 끝 부호 없이 끝남)은 한 문장으로 짝지음 (DL-0022)')
 ap.add_argument('--ko-dots', action='store_true', help="한국어의 줄임표 '...'·'…' 뒤에서는 문장이 끝난 말(…다·…요·…까 등) 뒤가 아니면 나누지 않음 — 되풀이를 줄임표로 줄인 번역 (DL-0022)")
 ap.add_argument('--band', type=int, default=40, help='2단계 짝짓기 띠 너비(문장 수)')
 ap.add_argument('--seg', action='append', default=[], help='짝짓기를 넘지 않을 경계: "한국어 열쇠=원서 번호 또는 @글 첫머리" — 여러 권을 묶은 책에서 권마다 따로 짝지음 (DL-0001)')
@@ -85,6 +87,7 @@ if _nopin: KO_DP = [p for p in KO_DP if p['key'] not in _nopin]
 if A.ko_none: KO_DP = [p for p in KO_DP if not any(re.search(r, p['t']) for r in A.ko_none)]
 SPL = re.compile(r'(?<=[.?!。…။])(?:[”’"\')\]]*)\s+|\n')
 if A.my_comma: SPL = re.compile(r'(?<=[.?!。…။])(?:[”’"\')\]]*)\s+|\n|(?<=၊)\s+')
+if A.ko_join: SPL = re.compile(r'(?<=[.?!。…။])(?:[”’"\')\]]*)(?:\[\^[^\]]+\])*\s+|(?<=[^.][.?!][’”])(?=[가-힣])(?!(?:라고|라는|라며|라면서|라든가|라든지|라거나|라도|란|이라|하고|하며|하면서|하는|하니|하자|하여|해서|했|한다|할|고\b|고 |는|며|면서|와|과|도|만|까지|에서|에게|로|을|를|이|가|의))|\n')   # 문장 끝 뒤 각주 번호('…것이다.’[^88] 비구들이여') 뒤에서도 나눔 (DL-0022)
 MYEND = re.compile(r'(တယ်|ဘူး|ပဲ|ပေါ့|လဲ|တုန်း|နော်|လေ|တာ|မယ်|သလား|ကော|ရော|ရဲ့|တဲ့|ပါ|သည်)၊$')
 
 
@@ -97,6 +100,7 @@ def sents(t, lang):
             for m in re.finditer(r';\s+|(?<=[?!.’”])—(?=[“‘])', t[a:b]):   # 쌍반점, 말하는 이가 바뀌는 '…?”—“…'
                 y = a + m.end()
                 mn_ = 40 if m.group(0).startswith(';') else 12   # 짧은 조각('with contact as condition, feeling;')은 나누지 않음
+                if m.group(0).startswith(';') and len(re.findall(r';\s+with\b', t[a:b])) >= 4 and re.search(r'\bwith\b', t[x:a + m.start()]) and re.match(r'with\b', t[y:]): continue   # 연기 공식 사슬('with X as condition, Y; with Y …')은 한 문장으로 — 한국어판은 늘 한 문장
                 if len(t[x:a + m.start()].strip()) >= mn_ and len(t[y:b].strip()) >= mn_: out.append((x, a + m.start() + (1 if m.group(0).startswith(';') else 0))); x = y
             out.append((x, b))
         return out
@@ -104,6 +108,16 @@ def sents(t, lang):
 
 
 def _sents(t, lang):
+    out = __sents(t, lang)
+    if lang == 'en':
+        for k in range(1, len(out)):
+            a, b = out[k]
+            if t[a:a + 1] in '’”' and t[a + 1:a + 2] == ' ' and out[k - 1][1] <= a:
+                out[k - 1] = (out[k - 1][0], a + 1); out[k] = (a + 2, b)
+    return out
+
+
+def __sents(t, lang):
     out = []; a = 0
     for m in SPL.finditer(t):
         b = m.start() if t[m.start()] == '\n' else m.end()
@@ -119,6 +133,10 @@ def _sents(t, lang):
             if re.search(r'\b(e\.g|i\.e|etc|Mr|Mrs|Dr|cf|vs|No|v|vv|pp)\.$', t[a:m.start() + 1].strip()) or (nx and nx.islower()): continue
             # 경전·책 약어('B. Dict.' 'Vis. M.' 'S. XXII.' 'Dhp.' 'Comm.') 뒤, 생략 점('. . .')에서는 나누지 않음 (DL-0015)
             if re.search(r'(?:^|[\s(])(?:[A-Z]|B|Vis|Dict|Comm|Dhp|Snp|Ud|Fund|Vol|ff|lit|Cf|[IVX]+)\.$', t[a:m.start() + 1].strip()) and not re.search(r'[a-z]{3}\.$', t[a:m.start() + 1].strip()[-5:]) or nx == '.': continue
+        # 따옴표 뒤 이음말('…존재한다.’ 거나', '…’ 라고')은 앞 문장에 (DL-0022, --ko-join)
+        if lang == 'ko' and A.ko_join and m.group(0) != '\n' and re.match(r'(거나|라고|하고|라는|이라고|라며|하면서)[\s,]', t[m.end():m.end() + 6]): continue
+        # '“알았습니다. 세존이시여”' 처럼 짧은 대답 뒤 부르는 말(…이여·…시여·…님)은 같은 문장 (DL-0022, --ko-join)
+        if lang == 'ko' and A.ko_join and m.group(0) != '\n' and len(seg) <= 12 and re.match(r'\s*[가-힣 ]{1,12}(이여|시여|님)[.?!”’"\'』」]', t[m.end() - 1:m.end() + 20]): continue
         # 로마자 이름 첫 글자('호너I. B. Horner')에서는 나누지 않음 — 한국어 문장 속 로마자 머리글자 (DL-0019)
         if lang == 'ko' and m.group(0) != '\n' and re.search(r'(?:^|[^A-Za-z])[A-Z]\.$', t[a:m.start() + 1].strip()) and re.match(r'\s*[A-Z]', t[m.end() - 1:m.end() + 2]): continue
         if (lang == 'en' or re.fullmatch(r'[’”\'"\s.…]+', seg)) and seg and not re.search(r'\w', seg) and out: out[-1] = (out[-1][0], a + len(t[a:b].rstrip())); a = m.end(); continue   # 점만 있는 조각은 앞 문장에
@@ -130,10 +148,15 @@ def _sents(t, lang):
     return out
 
 
-KS = []   # (para index, a, b, text)
+KS = []   # (para index, a, b, text, [이어진 조각 (para index, a, b)…])
 for i, p in enumerate(KO_DP):
-    for a, b in sents(p['t'], 'ko'):
-        if plain(p['t'][a:b]).strip(): KS.append((i, a, b, plain(p['t'][a:b]).strip()))
+    for n_, (a, b) in enumerate(sents(p['t'], 'ko')):
+        tx = plain(p['t'][a:b]).strip()
+        if not tx: continue
+        if A.ko_join and n_ == 0 and KS and KS[-1][0] == i - 1 and KO_DP[i - 1]['key'].split(':')[0] != p['key'].split(':')[0] \
+           and not re.search(r'[.?!。…”’"\')\]]$', KS[-1][3]) and not re.match(r'(## |%% |\^\^ |:: |>> )', p['t']) and not re.match(r'(## |%% |\^\^ |:: |>> )', KO_DP[i - 1]['t']):
+            q = KS[-1]; KS[-1] = (q[0], q[1], q[2], q[3] + ' ' + tx, q[4] + [(i, a, b)]); continue   # 쪽이 넘어가며 갈라진 문장은 앞 문장에
+        KS.append((i, a, b, tx, []))
 ORDER = list(range(len(ORIG))); MOVED = {}
 def _oi(x):
     """원서 문단: 번호, '@글 첫머리', 같은 첫머리가 여럿이면 '@글 첫머리~N'(N 번째, 1부터 — DL-0015 'CONJOINED WITH OTHER FACTORS')"""
@@ -148,7 +171,7 @@ for mv in A.move:
     blk = [i for i in ORDER if a <= i <= b]; rest = [i for i in ORDER if not a <= i <= b]
     k = rest.index(c); ORDER = rest[:k] + blk + rest[k:]
     for i in blk: MOVED[i] = (a, b)
-ES = []
+ES = []; EDROP = []
 # 원서 쪽만 '짝 없음'(--pin "=원서 번호 또는 @글 첫머리+…")도 짝짓기 전에 뺌 — 한국어판에 없는 원서 풀이 글이 둘레 문장을 끌어당기지 않게 (DL-0015)
 _onopin = {_oi(k) for x in A.pin if x.startswith('=') for k in x[1:].split('+') if k}
 for i in ORDER:
@@ -156,7 +179,9 @@ for i in ORDER:
     if i in _onopin: continue
     if p['k'] in ('toc', 'gl', 'pq', 'fn', 'sep', 'cite'): continue      # 원서 차례 쪽·용어 풀이·인용 상자(본문을 크게 다시 실은 것)·여백 출처(cite)는 문장 짝짓기에서 뺌 (한국어 차례도 %% 라 뺌)
     for a, b in sents(p['t'], 'en'):
-        if plain(p['t'][a:b]).strip(): ES.append((i, a, b, plain(p['t'][a:b]).strip()))
+        if not plain(p['t'][a:b]).strip(): continue
+        if any(re.match(r, plain(p['t'][a:b]).strip()) for r in A.en_drop): EDROP.append((i, a, b)); continue
+        ES.append((i, a, b, plain(p['t'][a:b]).strip()))
 # --seg: 경계 앞뒤 문장은 서로 짝짓지 않음 (뜻 비슷함을 -1 로)
 def _kt(k): return tuple(map(int, k.split(':')))
 _SEG = []
@@ -212,7 +237,7 @@ W = A.band
 
 # ---------- 2단계: 묶음까지 허용한 짝짓기 (띠 안에서) ----------
 BEADS = [(1, 1), (1, 2), (2, 1), (2, 2), (1, 3), (3, 1), (1, 0), (0, 1)]
-if A.en_semi: BEADS += [(1, 4), (1, 5), (1, 6), (4, 1), (5, 1), (2, 3), (3, 2)]   # 쌍반점으로 잘게 나눈 원서 조각 여럿 ↔ 한국어 한 문장 (DL-0022)
+if A.en_semi: BEADS += [(1, 4), (1, 5), (1, 6), (1, 7), (1, 8), (1, 9), (1, 10), (4, 1), (5, 1), (2, 3), (3, 2)]   # 긴 목록('abstention from … is wholesome;' ×10)을 한국어 한 문장에   # 쌍반점으로 잘게 나눈 원서 조각 여럿 ↔ 한국어 한 문장 (DL-0022)
 cK = np.vstack([np.zeros(KE.shape[1]), np.cumsum(KE, 0)]); cE = np.vstack([np.zeros(EE.shape[1]), np.cumsum(EE, 0)])
 def sim(i0, i1, j0, j1):
     if _SEG and i1 > i0 and j1 > j0 and len({KSg[i0], KSg[i1 - 1], ESg[j0], ESg[j1 - 1]}) > 1: return -1.0
@@ -247,7 +272,7 @@ beads.reverse()
 # ---------- 문단 묶음 ----------
 groups = []   # [set ko paras, set en paras, beads]
 for i0, i1, j0, j1 in beads:
-    kp = {KS[k][0] for k in range(i0, i1)}; ep = {ES[k][0] for k in range(j0, j1)}
+    kp = {KS[k][0] for k in range(i0, i1)} | {x[0] for k in range(i0, i1) for x in KS[k][4]}; ep = {ES[k][0] for k in range(j0, j1)}
     if groups and ((kp & groups[-1][0]) or (ep & groups[-1][1])):
         groups[-1][0] |= kp; groups[-1][1] |= ep; groups[-1][2].append((i0, i1, j0, j1))
     else: groups.append([set(kp), set(ep), [(i0, i1, j0, j1)]])
@@ -257,7 +282,7 @@ for kp, ep, bs in groups:
     sent = []
     for i0, i1, j0, j1 in bs:
         sc = round(sim(i0, i1, j0, j1), 3) if i1 > i0 and j1 > j0 else None
-        sent.append({'ko': [[KO_DP[KS[k][0]]['key'], KS[k][1], KS[k][2]] for k in range(i0, i1)],
+        sent.append({'ko': [y for k in range(i0, i1) for y in [[KO_DP[KS[k][0]]['key'], KS[k][1], KS[k][2]]] + [[KO_DP[x[0]]['key'], x[1], x[2]] for x in KS[k][4]]],
                      'or': [[ES[k][0], ES[k][1], ES[k][2]] for k in range(j0, j1)], **({'sc': sc} if sc is not None else {})})
     out.append({'ko': [KO_DP[k]['key'] for k in sorted(kp)], 'or': sorted(ep),
                 'ka': plain(KO_DP[min(kp)]['t'])[:24] if kp else '', 's': sent})
@@ -299,6 +324,14 @@ if A.en_semi:   # 쌍반점으로 나눈 원서 조각이 짝 없이 남으면 �
                 if k > 0 and S[k - 1]['ko'] and S[k - 1]['or'] and S[k - 1]['or'][-1][0] == st['or'][-1][0]:
                     S[k - 1]['or'] = S[k - 1]['or'] + st['or']; del S[k]; continue
             k += 1
+for i, a, b in EDROP:   # --en-drop: 같은 원서 문단의 앞 문장 바로 뒤(없으면 뒤 문장 앞)에 원서만 있는 줄로
+    for g in out:
+        if i not in g['or']: continue
+        S = g['s']; at = None
+        for k, st in enumerate(S):
+            if any(o == i and y <= a for o, x, y in st['or']): at = k + 1
+        if at is None: at = next((k for k, st in enumerate(S) if any(o == i for o, _, _ in st['or'])), len(S))
+        S.insert(at, {'ko': [], 'or': [[i, a, b]]}); break
 # 여백 출처(cite, DL-0015 'M. 26'): 바로 다음 원서 문단이 든 묶음 앞에 붙임 (문단 나란히 보기에서 출처가 보이게)
 _og = {o: g for g in out if not g.get('toc') for o in g['or']}
 for i, p in enumerate(ORIG):

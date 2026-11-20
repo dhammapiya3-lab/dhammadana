@@ -74,6 +74,8 @@ for j, (mn, ki, title) in enumerate(ko_su):
         prs = list(zip(kh, oh))
     for k, o in prs:
         if (str(mn), O[o]['t']) in SKIPH: continue
+        if mn == 10 and o > 0 and O[o - 1]['t'] in HEADS[10]:   # '몸에 대한 관찰: 1. 호흡 알아차림' ↔ '(CONTEMPLATION OF THE BODY)' + '(1. Mindfulness of Breathing)'
+            args += ['--pin', f'{KO[k][0]}={o - 1}+{o}', '--seg', f'{KO[k][0]}={o - 1}']; continue
         args += ['--pin', f'{KO[k][0]}={o}', '--seg', f'{KO[k][0]}={o}']
 # 원서가 '…as Sutta 27, §§11-18…' 처럼 줄여 적어 단락 번호가 없는 곳: 한국어 단락 ↔ 원서 소제목을 경계로
 #   MN38 §31~38: 한국어판은 전문을 옮겼고 원서는 소제목 + '…as Sutta 27, §§11-18…' 한 문단 → 묶음 하나로 짝지음

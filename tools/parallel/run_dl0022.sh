@@ -14,6 +14,9 @@ $(python3 tools/parallel/pins_dl0022.py)
 EOT
 python3 tools/parallel/align.py DL-0022 en "$P" "$@" \
   --title "The Middle Length Discourses of the Buddha" --by "Bhikkhu Ñāṇamoli & Bhikkhu Bodhi" \
-  --source "SuttaCentral (Bhikkhu Bodhi, MN, © Wisdom Publications, CC BY-NC-ND 3.0)" \
-  --en-semi --ko-dots --ko-skip '^\^\^ 붓다의 깨달음$|^## 1 성스러운 구도' \
-  --ko-skip '^## 옮긴이의 말$|'
+  --source "Bhikkhu Bodhi, MLDB (© Wisdom Publications) — 19개 경 SuttaCentral(CC BY-NC-ND 3.0), 7개 경·미주는 인쇄본(1995)에서 옮겨 적음(옮긴이를 통해 보디 스님 허락)" \
+  --en-semi --ko-dots --ko-join --ko-skip '^\^\^ 붓다의 깨달음$|^## 1 성스러운 구도' \
+  --ko-skip '^## 옮긴이의 말$|' \
+  --fnpin "18=26.312" --fnpin "23=26.317" --fnpin "24=26.318" --fnpin "62=95.893" \
+  --fnpin "137=112.1056" --fnpin "153=105.995" --fnpin "188=10.157" --fnpin "232=" --fnpin "107=" --fnpin "161=" \
+  --en-drop "Just as a skilled turner" --en-drop "or, when making a short turn" --en-drop "so too, breathing in long, a bhikkhu"
