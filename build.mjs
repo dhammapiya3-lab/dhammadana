@@ -1072,6 +1072,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
   const pList = PUBS();
   const topList = [...new Set(lib.flatMap(b => b.topics || []))].map(l => ({ l, n: lib.filter(b => (b.topics || []).includes(l)).length })).sort((a, b) => b.n - a.n || a.l.localeCompare(b.l, 'ko'));
   const audio = lib.filter(b => AUDIO[b.id] && curEd(b).reader);
+  const brl = lib.filter(b => brlOf(b).length);  // 점자 파일이 있는 책 (운영자 요청, 2026-11-20)
   const mList = TOPICS.main.filter(m => countMain(m));  // 주요 자료(니까야 경전·부처님의 생애 …) — 도서관 찾아보기와 같은 묶음 (운영자 요청, 2026-11-18)
   const F = (title, href, cnt, ic = '📁', kind = 'folder', type = '폴더') => ({ href, ic, kind, cols: [title, type, cnt] });
   sFolderPage('simple/index.html', { title: '단순 화면 첫 화면', normal: '/', rows: [
@@ -1085,6 +1086,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     F('출판사·단체별로 보기', '/simple/pubs/', `${pList.length}곳`),
     F('주제별로 보기', '/simple/topics/', `${topList.length}가지`),
     ...(audio.length ? [F('오디오북이 있는 책', '/simple/audio/', `${audio.length}권`)] : []),
+    ...(brl.length ? [F('점자 파일이 있는 책', '/simple/braille/', `${brl.length}권`)] : []),
     F('법문 바로 듣기', '/simple/talks/', `선원 ${PLAYLISTS.length}곳`, '🎙'),
     F('소식', '/simple/news/', `글 ${NEWS.length}개`),
     F('로그인 · 회원가입', '/simple/account/', '다른 기기에서도 이어 읽기·듣기', '👤', 'acct', '회원'),  // 로그인했으면 app.js sAcctRow 가 '내 계정: 아이디'로 (운영자 요청, 2026-11-18 — 2026-11-19 맨 아래 소개 위로 내림, 위쪽 파란 줄에도 단추)
@@ -1128,6 +1130,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     });
   }
   if (audio.length) sBooksPage('simple/audio/index.html', { title: '오디오북이 있는 책', path: [['오디오북이 있는 책', '/simple/audio/']], up: '/simple/', normal: '/library/', books: audio });
+  if (brl.length) sBooksPage('simple/braille/index.html', { title: '점자 파일이 있는 책', path: [['점자 파일이 있는 책', '/simple/braille/']], up: '/simple/', normal: '/library/', books: brl });
   // 책 하나 = 폴더
   for (const b of lib) {
     const e = curEd(b), f = formats(b).filter(x => x.url), P = [['최근 올라온 책', '/simple/recent/'], [b.title, '']];
