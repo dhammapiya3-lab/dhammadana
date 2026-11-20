@@ -1,89 +1,25 @@
-Foremost-Laymen 05-Mahanama 14 장
-Vinaya-Stories 00-Veranja 37 장
-검수 Vinaya-Stories/01-Intercourse 21번 그림 상자7 [자리] 한글이 원래 글 자리(1692,1014-1889,1073)에서 벗어남 (1991,1047)
-Vinaya-Stories 01-Intercourse 27 장
-Vinaya-Stories 02-Theft 14 장
-Vinaya-Stories 03-Killing 15 장
-Vinaya-Stories 04-False-Claims 11 장
-Vinaya-Stories 05-Uposatha 20 장
-Vinaya-Stories 06-Rains 12 장
-Vinaya-Stories 07-Invitation 15 장
+Foremost-Laymen 06-Ugga 15 장
+Foremost-Laymen 07-Uggata 13 장
+Foremost-Monks 17-Sona-Kutikanna 26 장
+검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자3 [자리] 한글이 원래 글 자리(504,1041-620,1130)에서 벗어남 (809,1087)
+검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자4 [자리] 한글이 원래 글 자리(1997,1043-2042,1136)에서 벗어남 (1834,1087)
+Foremost-Nuns 03-Uppalavanna 37 장
 Vinaya-Stories 08-Allowances 14 장
-Vinaya-Stories 09-Luxury 12 장
-Vinaya-Stories 10-Meat 15 장
-Vinaya-Stories 11-Sacrifices 10 장
-Vinaya-Stories 12-Kathina 11 장
-Vinaya-Stories 13-Jivaka 47 장
-Vinaya-Stories 14-Robes 11 장
-Vinaya-Stories 15-Visakha 15 장
-Vinaya-Stories 16-Sick 10 장
-Vinaya-Stories 17-Reconciliation 12 장
-Vinaya-Stories 18-Kosambi 15 장
-Vinaya-Stories 19-Dighavu 15 장
-Vinaya-Stories 20-Bamboo-Park 13 장
-Vinaya-Stories 21-Palileyyaka 10 장
-Vinaya-Stories 22-Banishment 11 장
-Vinaya-Stories 23-Reconciliation 14 장
-Vinaya-Stories 24-Suspension 11 장
-Vinaya-Stories 25-Views 15 장
-Vinaya-Stories 26-Innocence 14 장
-Vinaya-Stories 27-Supernormal-Powers 13 장
-Vinaya-Stories 28-Overturning-the-Bowl 10 장
-Vinaya-Stories 29-Dwellings 15 장
-Vinaya-Stories 30-Anathapindika 11 장
-Vinaya-Stories 31-Seniority 11 장
-Vinaya-Stories 32-Schism 62 장
-Vinaya-Stories 33-Pindapata 14 장
-Vinaya-Stories 34-Pupils-Duties 13 장
-Vinaya-Stories 35-Preceptors-Duties 12 장
-Vinaya-Stories 36-Patimokkha 14 장
-Vinaya-Stories 37-Bhikkhuni-Ordination 25 장
-자동 검수: 문제 의심 1 곳
-R2 에 올림: 1326 개 / 한글판 이야기 218 편
-공개 주소 확인: 200 1368112바이트
-이야기 Foremost-Laymen/05-Mahanama {'pdf': 19291685, 'zip': 19009010, 'n': 14}
-책 Foremost-Laymen {'pdf': 137506599, 'pdfs': 14428383, 'zip': 137216542, 'stories': 5, 'n': 93}
-이야기 Vinaya-Stories/00-Veranja {'pdf': 38198718, 'zip': 37928890, 'n': 37}
-이야기 Vinaya-Stories/01-Intercourse {'pdf': 29998703, 'zip': 29728287, 'n': 27}
-이야기 Vinaya-Stories/02-Theft {'pdf': 15943143, 'zip': 15677222, 'n': 14}
-이야기 Vinaya-Stories/03-Killing {'pdf': 17571936, 'zip': 17305673, 'n': 15}
-이야기 Vinaya-Stories/04-False-Claims {'pdf': 13881769, 'zip': 13611295, 'n': 11}
-이야기 Vinaya-Stories/05-Uposatha {'pdf': 24718682, 'zip': 24452966, 'n': 20}
-이야기 Vinaya-Stories/06-Rains {'pdf': 14017872, 'zip': 13762139, 'n': 12}
-이야기 Vinaya-Stories/07-Invitation {'pdf': 17254234, 'zip': 16998003, 'n': 15}
-이야기 Vinaya-Stories/08-Allowances {'pdf': 16783594, 'zip': 16513665, 'n': 14}
-이야기 Vinaya-Stories/09-Luxury {'pdf': 15367669, 'zip': 15104531, 'n': 12}
-이야기 Vinaya-Stories/10-Meat {'pdf': 17976750, 'zip': 17710366, 'n': 15}
-이야기 Vinaya-Stories/11-Sacrifices {'pdf': 11574993, 'zip': 11316993, 'n': 10}
-이야기 Vinaya-Stories/12-Kathina {'pdf': 13023952, 'zip': 12768448, 'n': 11}
-이야기 Vinaya-Stories/13-Jivaka {'pdf': 55487725, 'zip': 55213737, 'n': 47}
-이야기 Vinaya-Stories/14-Robes {'pdf': 13788773, 'zip': 13526254, 'n': 11}
-이야기 Vinaya-Stories/15-Visakha {'pdf': 17944799, 'zip': 17676509, 'n': 15}
-이야기 Vinaya-Stories/16-Sick {'pdf': 11530337, 'zip': 11269232, 'n': 10}
-이야기 Vinaya-Stories/17-Reconciliation {'pdf': 14230453, 'zip': 13975774, 'n': 12}
-이야기 Vinaya-Stories/18-Kosambi {'pdf': 17894689, 'zip': 17632472, 'n': 15}
-이야기 Vinaya-Stories/19-Dighavu {'pdf': 18265402, 'zip': 18004591, 'n': 15}
-이야기 Vinaya-Stories/20-Bamboo-Park {'pdf': 15416072, 'zip': 15152747, 'n': 13}
-이야기 Vinaya-Stories/21-Palileyyaka {'pdf': 11802891, 'zip': 11538391, 'n': 10}
-이야기 Vinaya-Stories/22-Banishment {'pdf': 14882989, 'zip': 14624547, 'n': 11}
-이야기 Vinaya-Stories/23-Reconciliation {'pdf': 16442641, 'zip': 16178237, 'n': 14}
-이야기 Vinaya-Stories/24-Suspension {'pdf': 11827453, 'zip': 11567996, 'n': 11}
-이야기 Vinaya-Stories/25-Views {'pdf': 18001180, 'zip': 17739680, 'n': 15}
-이야기 Vinaya-Stories/26-Innocence {'pdf': 17421517, 'zip': 17160711, 'n': 14}
-이야기 Vinaya-Stories/27-Supernormal-Powers {'pdf': 14906003, 'zip': 14644185, 'n': 13}
-이야기 Vinaya-Stories/28-Overturning-the-Bowl {'pdf': 12702322, 'zip': 12442204, 'n': 10}
-이야기 Vinaya-Stories/29-Dwellings {'pdf': 17559169, 'zip': 17293997, 'n': 15}
-이야기 Vinaya-Stories/30-Anathapindika {'pdf': 13566122, 'zip': 13299096, 'n': 11}
-이야기 Vinaya-Stories/31-Seniority {'pdf': 13443980, 'zip': 13181717, 'n': 11}
-이야기 Vinaya-Stories/32-Schism {'pdf': 74040661, 'zip': 73751530, 'n': 62}
-이야기 Vinaya-Stories/33-Pindapata {'pdf': 17210782, 'zip': 16950526, 'n': 14}
-이야기 Vinaya-Stories/34-Pupils-Duties {'pdf': 14742917, 'zip': 14475598, 'n': 13}
-이야기 Vinaya-Stories/35-Preceptors-Duties {'pdf': 13868127, 'zip': 13601022, 'n': 12}
-이야기 Vinaya-Stories/36-Patimokkha {'pdf': 17490436, 'zip': 17227471, 'n': 14}
-이야기 Vinaya-Stories/37-Bhikkhuni-Ordination {'pdf': 28517471, 'zip': 28252368, 'n': 25}
-책 Vinaya-Stories {'pdf': 729738977, 'pdfs': 73535908, 'zip': 729260510, 'stories': 38, 'n': 626}
-내려받기 파일: 41 묶음 새로 만듦
-글로 보기: 218 이야기
-10-Nakulapitu
-10-Kali
-39-Second-Council
+Vinaya-Stories 38-First-Council 41 장
+Vinaya-Stories 39-Second-Council 39 장
+자동 검수: 문제 의심 2 곳
+R2 에 올림: 416 개 / 한글판 이야기 222 편
+공개 주소 확인: 200 1753308바이트
+Traceback (most recent call last):
+  File "/home/runner/work/dhammadana/dhammadana/pipeline/bundles.py", line 18, in <module>
+    KO = json.load(open(f"{SITE}/storybooks/data/ko.json", encoding="utf-8"))
+                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/site/storybooks/data/ko.json'
+내려받기 파일 만들기 실패 — 다음 작업 때 다시
+Traceback (most recent call last):
+  File "/home/runner/work/dhammadana/dhammadana/pipeline/texts.py", line 34, in <module>
+    json.dump(out, open(f"{SITE}/storybooks/data/texts.json", "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"), sort_keys=True)
+                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/site/storybooks/data/texts.json'
+글로 보기 글 모으기 실패
+cp: cannot create regular file '/tmp/site/storybooks/data/ready.json': No such file or directory
