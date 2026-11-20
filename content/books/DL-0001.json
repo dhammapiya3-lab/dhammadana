@@ -72,7 +72,21 @@
       "site": ""
     }
   ],
-  "braille": [],
+  "braille": [
+    {
+      "note": "",
+      "format": "ZIP",
+      "mode": "file",
+      "url": "braille/DL-0001/DL-0001_점자.zip",
+      "site": "",
+      "org": "성북점자도서관",
+      "sponsor": "담마디빠 선원",
+      "year": "2022년",
+      "collection": "점자도서관에 의뢰해 제작",
+      "made": "2025-12-15",
+      "updated": "2025-12-15"
+    }
+  ],
   "series": "난다말라 사야도 시리즈 ①",
   "main": [
     "테라와다불교 입문서"
