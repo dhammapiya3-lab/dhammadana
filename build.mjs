@@ -629,7 +629,7 @@ put('index.html', layout({ simple: '/simple/', ld: { '@context': 'https://schema
   <ul class="trad-grid" role="list">${TRADS.filter(t => t.representatives?.length).sort((a, b) => countTrad(b.id) - countTrad(a.id)).map(t => `<li><a class="trad${countTrad(t.id) ? '' : ' empty'}" href="/library/?trad=${t.id}" aria-label="${esc([t.region, t.name, t.representatives.map(id => teacherById(id)?.name || '').join(' · '), countTrad(t.id) ? '자료 ' + countTrad(t.id) + '권' : '준비 중'].join(' '))}"><div class="k">${esc(t.region)}</div> <div class="nm">${esc(t.name)}</div> <div class="ts">${t.representatives.map(id => esc(teacherById(id)?.name || '')).join(' · ')}</div> <div class="ts" style="margin-top:6px">${countTrad(t.id) ? `자료 ${countTrad(t.id)}권` : '준비 중'}</div></a></li>`).join('')}</ul></section>
 <section class="section wrap two">
   <div><div class="section-head"><h2>我無말들 출판사</h2><a class="more" href="/press/">출판사 코너 →</a></div>
-    ${cardList(BOOKS.filter(b => b.press).slice(0, 3), 'three')}</div>
+    ${cardList(BOOKS.filter(b => b.press && !brlOnly(b)).slice(0, 3), 'three')}</div>
   <div><div class="section-head"><h2>소식</h2><a class="more" href="/news/">전체 소식 →</a></div>
     <ul class="news-list">${NEWS.slice(0, 5).map(n => `<li><div class="dd"><span class="pill ${n.category === 'press' ? 'robe' : ''}">${n.category === 'press' ? '我無말들' : '도서관'}</span> ${esc(n.date || '')}${updTag(n)}</div><a class="tt" href="/news/${n.slug}/">${esc(n.title)}</a></li>`).join('') || '<li class="muted">아직 소식이 없습니다.</li>'}</ul></div>
 </section>`
@@ -658,7 +658,7 @@ function paperBadge(b) {
   }
   return `<span class="paper paper-${k}">${k === 'request' ? '📖 ' : ''}${PAPER[k]}</span>`;
 }
-put('press/index.html', layout({ title: '我無말들 출판사', nav: 'press', page: 'press', body: pressShell('all', `<ul class="grid press-grid" role="list">${BOOKS.filter(b => b.press).map(b => `<li class="pbook">${coverCard(b)}${paperBadge(b)}</li>`).join('')}</ul>`) }));
+put('press/index.html', layout({ title: '我無말들 출판사', nav: 'press', page: 'press', body: pressShell('all', `<ul class="grid press-grid" role="list">${BOOKS.filter(b => b.press && !brlOnly(b)).map(b => `<li class="pbook">${coverCard(b)}${paperBadge(b)}</li>`).join('')}</ul>`) }));
 // 종이책 보시 신청 게시판 (비밀글): 동작은 /assets/paper.js, 저장은 functions/api/paper.js
 const PAPER_BOOKS = BOOKS.filter(b => b.press && b.paper === 'request' && !/^https?:\/\//.test(String(b.paper_url || '').trim())).map(b => ({ id: b.id, title: b.title }));
 put('paper-books.json', JSON.stringify(PAPER_BOOKS));
