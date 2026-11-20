@@ -1,0 +1,547 @@
+[
+ {
+  "img": "images/07-Uggata-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     54,
+     104,
+     454,
+     204
+    ],
+    "ko": "큰 연대기:\n욱가따 장자",
+    "cover": [
+     243,
+     220,
+     172
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     54,
+     204,
+     454,
+     272
+    ],
+    "ko": "가리지 않고 승가를 받드는 데 으뜸인 제자",
+    "cover": [
+     243,
+     219,
+     170
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Uggata-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     92,
+     262,
+     712,
+     298
+    ],
+    "ko": "함사와띠의 서원",
+    "cover": [
+     246,
+     223,
+     171
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     92,
+     298,
+     712,
+     426
+    ],
+    "ko": "먼 옛날 빠두뭇따라 부처님 아래에서 욱가따는 승가를 가리지 않고 받들어 칭찬받는 우바새를 보았습니다. 감동한 그는 큰 공양을 올리며, 미래에 바로 그 영예를 얻겠다고 깊이 서원했습니다.",
+    "cover": [
+     247,
+     224,
+     175
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Uggata-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     92,
+     262,
+     712,
+     298
+    ],
+    "ko": "핫티가마에서의 만남",
+    "cover": [
+     244,
+     221,
+     170
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     92,
+     298,
+     712,
+     426
+    ],
+    "ko": "부유하게 태어난 욱가따는 나가 동산에서 이레 동안 술을 마시고 있었습니다. 그런데 문득 고따마 부처님을 뵈었습니다. 크게 감동한 그는 곧바로 술이 깼고, 맑은 믿음과 깊은 헌신으로 다가갔습니다.",
+    "cover": [
+     244,
+     221,
+     170
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Uggata-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     124,
+     568,
+     194
+    ],
+    "ko": "아나함이 되다",
+    "cover": [
+     241,
+     220,
+     166
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     240,
+     194,
+     568,
+     428
+    ],
+    "ko": "부처님께서 차례대로 설하시며 사성제를 밝히셨습니다. 욱가따의 마음은 부드럽고 맑아졌습니다. 그는 곧바로 아나함(anāgāmī)의 과를 얻고, 평생 범행(brahma-cariya)을 지키기로 서원했습니다.",
+    "cover": [
+     241,
+     219,
+     167
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Uggata-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     216,
+     252,
+     594,
+     290
+    ],
+    "ko": "부처님의 선언",
+    "cover": [
+     238,
+     207,
+     154
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     216,
+     290,
+     594,
+     402
+    ],
+    "ko": "제따와나 승원에서 부처님께서 비구들에게 말씀하시며, 승가를 가리지 않고 정성껏 받드는 우바새 제자들 가운데 핫티가마의 욱가따가 으뜸이라고 선언하셨습니다.",
+    "cover": [
+     239,
+     207,
+     156
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Uggata-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     216,
+     286,
+     594,
+     320
+    ],
+    "ko": "여덟 가지 놀라운 덕",
+    "cover": [
+     236,
+     205,
+     154
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     216,
+     320,
+     594,
+     406
+    ],
+    "ko": "부처님께서 욱가따가 여덟 가지 놀라운 덕을 지녔다고 말씀하셨습니다. 뒷날 한 비구가 탁발하러 와서 그 덕을 물었고, 욱가따는 겸손히 자기가 겪은 일을 들려주었습니다.",
+    "cover": [
+     235,
+     205,
+     156
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Uggata-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     252,
+     600,
+     412
+    ],
+    "ko": "1. 즉시 생긴 믿음: 부처님을 처음 뵙자마자 술이 깨고 헌신이 생김\n\n2. 즉시 얻은 깨달음: 한 번의 설법으로 아나함과를 얻고, 완전한 범행을 비롯한 오계를 평생 지키기로 서원함",
+    "cover": [
+     235,
+     203,
+     154
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Uggata-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     216,
+     286,
+     594,
+     316
+    ],
+    "ko": "3. 집착을 놓아 버림",
+    "cover": [
+     233,
+     201,
+     151
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     216,
+     316,
+     594,
+     412
+    ],
+    "ko": "욱가따는 젊은 네 아내에게 자유나 재물을 주겠다고 했습니다. 첫째 아내가 새 남편을 고르자, 그는 흔들림 없이 집착 없는 마음으로 물을 부어 그녀를 보내 주었습니다.",
+    "cover": [
+     232,
+     201,
+     153
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Uggata-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     216,
+     286,
+     594,
+     318
+    ],
+    "ko": "4. 승가에 아낌없이",
+    "cover": [
+     231,
+     199,
+     150
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     216,
+     318,
+     594,
+     426
+    ],
+    "ko": "욱가따는 부유한 집안의 모든 재산을 덕 있는 비구들의 것으로 여겼습니다. 그는 승가에 무엇 하나 아끼지 않았습니다.",
+    "cover": [
+     230,
+     199,
+     149
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Uggata-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     216,
+     284,
+     596,
+     318
+    ],
+    "ko": "5. 서로 공경함",
+    "cover": [
+     228,
+     196,
+     146
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     216,
+     318,
+     596,
+     410
+    ],
+    "ko": "그는 모든 비구를 몸소 공손히 받들었습니다. 비구가 법을 설하면 깊이 공경하며 들었고, 설하지 않으면 욱가따가 법을 설해 드렸습니다.",
+    "cover": [
+     227,
+     197,
+     149
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Uggata-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     302,
+     598,
+     332
+    ],
+    "ko": "6. 흠 없는 평등심",
+    "cover": [
+     236,
+     209,
+     166
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     214,
+     332,
+     598,
+     430
+    ],
+    "ko": "천신들이 어느 비구가 덕 있고 어느 비구가 계가 없는지 몰래 일러 주었습니다. 욱가따는 개의치 않고 덕 있는 비구에게나 그렇지 않은 비구에게나 똑같이 공경하며 큰 공양을 올렸습니다.",
+    "cover": [
+     236,
+     209,
+     166
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Uggata-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     310,
+     600,
+     426
+    ],
+    "ko": "7. 천신에 흔들리지 않음: 천신이 찾아와도 흔들리지 않고 오직 법만 믿음\n8. 족쇄에서 벗어남: 욕계에 다시 태어나게 하는 족쇄가 하나도 없다는 부처님의 보증을 받음",
+    "cover": [
+     232,
+     206,
+     161
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Uggata-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     212,
+     302,
+     596,
+     336
+    ],
+    "ko": "평등의 길",
+    "cover": [
+     233,
+     205,
+     160
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     212,
+     336,
+     596,
+     432
+    ],
+    "ko": "욱가따의 위대함은 조금도 가리지 않는 데 있었습니다. 판단과 세상 집착을 넘어선 그의 끝없는 물질 보시는, 족쇄에서 벗어난 깊은 해탈을 그대로 비추는 거울이 되었습니다.",
+    "cover": [
+     232,
+     204,
+     160
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
