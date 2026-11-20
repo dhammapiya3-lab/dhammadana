@@ -13,7 +13,9 @@
   "provider": "buddhayana",
   "press": false,
   "provider_chip": false,
-  "partner_chips": [],
+  "partner_chips": [
+    "theravada-kr"
+  ],
   "paper": "",
   "paper_url": "",
   "stores": [],
