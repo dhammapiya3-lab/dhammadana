@@ -168,5 +168,22 @@
         "https://www.urbandharma.org/pdf/wordofbuddha.pdf"
       ]
     }
+  ],
+  "braille": [
+    {
+      "note": "",
+      "format": "ZIP",
+      "mode": "file",
+      "url": "braille/DL-0015/DL-0015_점자.zip",
+      "site": "",
+      "org": "대한맹인복지회",
+      "sponsor": "(사)한국테라와다불교 '담마디빠' 시각장애인 도서 봉사모임",
+      "year": "2026년",
+      "collection": "시각장애인 단체에 의뢰해 제작",
+      "made": "2026-07-08",
+      "updated": "2026-07-08",
+      "inner": "BRF",
+      "files": 2
+    }
   ]
 }
