@@ -128,8 +128,10 @@ const origsOf = b => (b.originals || []).filter(o => o && o.lang && o.mode !== '
 // 점자 파일 (운영자 요청, 2026-11-19): 책 JSON braille [{format, mode: file|link, url, site, org, sponsor, year, collection, made, updated, note}] → 일반·단순 화면 '점자 파일 내려받기'
 const brlOf = b => { const L = (b.braille || []).filter(o => o && o.mode !== 'none' && String(o.url || '').trim()); return L.map(o => {
   const u = String(o.url).trim(), x = (/\.(\w+)$/.exec(u) || [, 'brf'])[1].toLowerCase(), F = String(o.format || x).toUpperCase();
-  const label = L.length > 1 ? `점자 파일(${F}) 내려받기` : '점자 파일 내려받기';
-  const info = [['파일 형식', F], ['제작 기관', o.org], ['제작 후원 기관', o.sponsor], ['제작 연도', o.year], ['수집 경로', o.collection], ['파일 만든 날짜', o.made], ['파일 수정한 날짜', o.updated], ['알림', o.note]].map(([k, v]) => [k, String(v || '').trim()]).filter(([, v]) => v);
+  // zip 으로 묶은 점자 파일은 실제 파일 형식(inner, 예: BBF)과 파일 수(files)를 보임 (운영자 요청, 2026-11-20 — 'ZIP' 이 아니라 BBF·BRF 같은 실제 형식)
+  const IN = String(o.inner || '').trim().toUpperCase(), FD = IN || F, FI = IN ? `${IN}${+o.files > 1 ? ` ${+o.files}개 파일` : ''} (zip 으로 묶음)` : F;
+  const label = L.length > 1 ? `점자 파일(${FD}) 내려받기` : '점자 파일 내려받기';
+  const info = [['파일 형식', FI], ['제작 기관', o.org], ['제작 후원 기관', o.sponsor], ['제작 연도', o.year], ['수집 경로', o.collection], ['파일 만든 날짜', o.made], ['파일 수정한 날짜', o.updated], ['알림', o.note]].map(([k, v]) => [k, String(v || '').trim()]).filter(([, v]) => v);
   if (o.mode === 'link' || /^https?:\/\//.test(u)) return { F, label, info, url: fileUrl(u), ext: o.mode === 'link', site: o.site || '' };
   const kind = 'braille_' + (x.replace(/[^a-z]/g, '').slice(0, 5) || 'brf');
   (DOWNLOADS[b.id] = DOWNLOADS[b.id] || {})[kind] = { key: u.replace(/^\//, ''), name: safeName(`${b.title}_점자`) + (L.length > 1 && x !== F.toLowerCase() ? '_' + F : '') + '.' + x };
@@ -775,7 +777,7 @@ for (const b of BOOKS) {
       ${parEds(b).length ? `<dt>원서 대조 판본</dt><dd>${parEds(b).map(x => `${x.title ? `<i>${esc(x.title)}</i>` : ''}${x.by ? ' · ' + esc(x.by) : ''}${x.edition ? ` <span class="muted small">(${esc(x.edition)})</span>` : ''}${x.url ? ` · <a href="${esc(x.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>` : ''}`).join('<br>')}</dd>` : ''}
       <dt>자료 제공</dt><dd>${prov ? esc(prov.name) + (prov.urls || []).map(u => ` <a href="${esc(u)}" target="_blank" rel="noopener">↗</a>`).join('') : '—'}</dd>
       <dt>원본 출처</dt><dd>${(e.sources || []).length ? e.sources.map(s => `${SRC_FILE[s.file] ? `<span class="muted small">${SRC_FILE[s.file]}:</span> ` : ''}<a href="${esc(s.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>${s.checked ? ` <span class="muted small">(${esc(s.checked)} 확인)</span>` : ''}${s.archive ? ` · <a href="${esc(s.archive)}" target="_blank" rel="noopener">보관본</a>` : ''}`).join('<br>') : '—'}</dd>
-      ${brlOf(b).length ? `<dt>점자 파일</dt><dd>${brlOf(b).map(brlInfoHtml).join('<br>')}</dd>` : ''}
+      ${brlOf(b).length ? `<dt>점자 파일</dt><dd><span class="muted small">${brlOf(b).map(brlInfoHtml).join('<br>')}</span></dd>` : ''}
       ${AUDIO[b.id] && abInfoHtml(b) ? `<dt>오디오북</dt><dd>${abInfoHtml(b)}</dd>` : ''}
       <dt>수집 경로</dt><dd>${esc(e.collection || '—')}${e.collected ? ` <span class="muted small">(${esc(e.collected)})</span>` : ''}</dd>
       <dt>게시 허락</dt><dd>${permLabel || e.permission_note || e.permission_image ? `${permLabel}${perms.filter(p => p.image && p.image_public).map(p => ` · <button class="link-btn" data-permit="${esc(p.image)}" data-title="${esc(b.title)}">허락서 보기</button>`).join('')}${e.permission_image ? `${permLabel ? ' · ' : ''}<button class="link-btn" data-permit="${esc(e.permission_image)}" data-title="${esc(b.title)}">허락서 보기</button>` : ''}${e.permission_note ? `<blockquote class="perm-note">${esc(e.permission_note).replace(/\n/g, '<br>')}</blockquote>` : ''}` : '—'}</dd>

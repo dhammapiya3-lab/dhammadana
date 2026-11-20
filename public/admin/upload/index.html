@@ -188,6 +188,7 @@ function setFile(f){
   else if(ext==='epub') document.querySelector('input[name=kind][value=epub]').checked=true;
   else if(ext==='hwp'||ext==='hwpx') document.querySelector('input[name=kind][value=hwp]').checked=true;
   else if(kind()==='epub'||kind()==='hwp') document.querySelector('input[name=kind][value=pdf]').checked=true;
+  ZINNER=null; if(isB&&ext==='zip') zipNames(f).then(n=>{ if(FILE===f) ZINNER=zipInner(n); });
   FILE=f; $('#picked').textContent=`고른 파일: ${f.name} (${(f.size/1048576).toFixed(1)}MB)`; $('#out').innerHTML=''; brlFill(); upd();
 }
 function upd(){ $('#go').disabled=!(BOOK&&FILE&&!$('#ed').disabled); }
@@ -198,6 +199,10 @@ $('#file').onchange=e=>setFiles(e.target.files);
 ['dragleave','drop'].forEach(t=>drop.addEventListener(t,e=>{e.preventDefault();drop.classList.remove('over');}));
 drop.addEventListener('drop',e=>setFiles(e.dataTransfer.files));
 // 원서 파일이 여러 개면 브라우저에서 zip 하나로 묶음 (운영자 요청, 2026-11-18) — 다른 종류는 첫 파일만
+// zip 안 파일의 실제 형식 (운영자 요청, 2026-11-20 — 책 소개에 'ZIP' 대신 'BBF 2개 파일' 처럼): 점자 zip 을 올리면 책 JSON braille 의 inner·files 에 적음
+let ZINNER=null;
+function zipInner(names){ names=names.filter(n=>!/\/$/.test(n)&&!/(^|\/)(__MACOSX|\.)/.test(n)); const X=[...new Set(names.map(n=>(n.split('.').pop()||'').toUpperCase()).filter(Boolean))]; return names.length?{inner:X.join('·'),files:names.length}:null; }
+async function zipNames(f){ try{ const ff=await loadFflate(), names=[]; ff.unzipSync(new Uint8Array(await f.arrayBuffer()),{filter:x=>{names.push(x.name);return false;}}); return names; }catch(e){ return []; } }
 async function setFiles(list){
   const fs=[...(list||[])]; if(!fs.length) return;
   if(fs.length===1) return setFile(fs[0]);
@@ -211,7 +216,7 @@ async function setFiles(list){
     for(const f of fs){ let n=f.name; if(seen[n]){ const i=n.lastIndexOf('.'); n=(i>0?n.slice(0,i):n)+'_'+(++seen[f.name])+(i>0?n.slice(i):''); } else seen[n]=1; data[n]=[new Uint8Array(await f.arrayBuffer()),{level:/\.(txt|doc|hwp)$/i.test(n)?6:0}]; }
     const z=ff.zipSync(data), OL=$('#olang').value;
     const zf=new File([z],kind()==='braille'?`${BOOK.id}_점자.zip`:`${BOOK.id}_원서_${OL}.zip`,{type:'application/zip',lastModified:Math.max(...fs.map(f=>f.lastModified||0))||Date.now()});
-    setFile(zf);
+    setFile(zf); ZINNER=zipInner(Object.keys(data));
     $('#picked').textContent=`고른 파일 ${fs.length}개를 묶음: ${zf.name} (${(zf.size/1048576).toFixed(1)}MB) — ${fs.map(f=>f.name).join(', ')}`;
   }catch(e){ show('err','zip 으로 묶지 못했습니다: '+e.message); }
 }
@@ -259,7 +264,7 @@ $('#go').onclick=async()=>{
       b=JSON.parse(dec(j.content)); e2=b.editions[ei];
       if(k==='braille'){ const F=ext.toUpperCase(), old=(b.braille||[]).find(x=>x&&String(x.format||'').toUpperCase()===F)||{};
         const v=id=>$('#'+id).value.trim();
-        b.braille=[...(b.braille||[]).filter(x=>x&&String(x.format||'').toUpperCase()!==F),{note:'',...old,format:F,mode:'file',url:key,site:'',org:v('bOrg'),sponsor:v('bSp'),year:v('bYear'),collection:v('bCol'),made:v('bMade'),updated:v('bUpd')}]; e2={label:''}; }
+        b.braille=[...(b.braille||[]).filter(x=>x&&String(x.format||'').toUpperCase()!==F),{note:'',...old,format:F,mode:'file',url:key,site:'',org:v('bOrg'),sponsor:v('bSp'),year:v('bYear'),collection:v('bCol'),made:v('bMade'),updated:v('bUpd'),...(ext==='zip'&&ZINNER?ZINNER:{inner:'',files:''})}]; e2={label:''}; }
       else if(k==='orig'){ const old=(b.originals||[]).find(x=>x&&x.lang===OL)||{}; b.originals=[...(b.originals||[]).filter(x=>x&&x.lang!==OL),{...old,lang:OL,mode:'file',url:key}]; e2={label:''}; }
       else { e2[k]={site:'',created:'',...(e2[k]||{}),mode:'file',url:key};
       delete e2.file_created; delete e2.file_created_print; }
