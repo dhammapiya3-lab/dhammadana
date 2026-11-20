@@ -123,6 +123,7 @@ for (const slug of Object.keys(CAT.books).filter(b => PUB.has(b))) {
   <p class="cnt">${esc(b.style)} · ${b.unit} ${b.nStory}편 · ${U.posters} ${b.nImg.toLocaleString()}장</p>
   <p class="tags">${b.tags.map(t => `<span>${esc(t)}</span>`).join('')}</p></div></div>
   ${KO.about_work?.[slug]?.length ? `<aside class="work"><h2>문헌 정보</h2><dl>${KO.about_work[slug].map(([a, v]) => `<dt>${esc(a)}</dt><dd>${esc(v)}</dd>`).join('')}</dl></aside>` : ''}
+  ${KO.notes?.[slug]?.length ? `<aside class="work note"><h2>일러두기</h2>${KO.notes[slug].map(t => `<p>${esc(t)}</p>`).join('')}</aside>` : ''}
   <div class="prose">${b.intro ? paras(b.intro) : `<p class="muted">책 소개를 우리말로 옮기는 중입니다. 아래는 영어 원문입니다.</p><p lang="en">${esc(b.introEn)}</p>`}</div>
   <div id="resume" data-slug="${esc(slug)}" hidden></div>
   ${DL[slug] ? `<aside class="dl"><h2>책 전체 내려받기</h2><p class="muted">한글판 이야기 ${DL[slug].stories}편, 그림 ${DL[slug].n}장. 맨 끝에 출처(CC BY-SA 4.0) 쪽이 있습니다.</p>

@@ -103,6 +103,8 @@ footer.site p{margin:0 0 6px} .sadhu{color:var(--robe)}
 .work h2{font-size:16px;margin:0 0 8px;color:var(--robe)}
 .work dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;margin:0;font-size:14.5px}
 .work dt{color:var(--ink-soft);font-weight:500}.work dd{margin:0}
+/* 일러두기 — 문헌 정보 바로 아래 (운영자 요청, 2026-11-21) */
+.work.note p{margin:0 0 6px;font-size:14.5px;line-height:1.7}.work.note p:last-child{margin-bottom:0}
 @media (max-width:520px){.work dl{grid-template-columns:1fr;gap:2px}.work dd{margin-bottom:6px}}
 
 /* 휴대폰: 가로로 크게 보기 */
