@@ -112,10 +112,10 @@ for n in range(1, N + 1):
         gap = l['y0'] - prev['y0'] if prev else 99
         head = n < PART2 and l['bold'] and l['x1'] < FULL     # 교재 부분 굵은 한 줄 = 소제목처럼 따로
         if prev is not None and not prev.get('h') and not head and not prev.get('hd') and gap < 25:
-            if prev['x1'] > FULL:
+            if prev['x1'] > FULL and not re.match(r'\s*\(\d+\)\s', l['t']):   # '(3) 출가는…' 번호 항목은 앞 줄이 차도 줄 바꿈 (13쪽)
                 paras[-1] = join(paras[-1], mt); log['이음'] += 1
             else:
-                paras[-1] = paras[-1].rstrip() + '\n' + mt.strip(); log['줄 바꿈'] += 1
+                paras[-1] = paras[-1].rstrip() + '\n' + mt.lstrip(); log['줄 바꿈'] += 1   # 줄 끝 빈칸은 남김 — 다음 줄을 이어 붙일 때 띄어 씀(2026-11-20 고침: 지우면 '수|있습니다' 가 붙었음)
         else:
             paras.append(mt)
         prev = dict(l, hd=head)
