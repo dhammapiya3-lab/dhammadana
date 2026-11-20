@@ -127,7 +127,7 @@ def main():
     bad = 0
     for st, f, n in log:
         if st not in ('고침', '이미 고침') and not st.startswith('일부 쪽'): bad += 1   # 쪽 목록은 대강 적은 것 — 여러 쪽 중 일부만 있어도 됨
-        if st != '고침' or '-v' in sys.argv: print(f'{st:10} {n:3}  {f.get("p") or "전체"}  {f["a"]!r} → {f["b"]!r}')
+        if st != '고침' or '-v' in sys.argv: print(f'{st:10} {n:3}  {f.get("p") or "전체"}  {f.get("a", f.get("op"))!r} → {f.get("b", "")!r}')
     bad += len(miss)
     print(f'목록 {len(fixes)}줄 · 고친 곳 {sum(n for st,f,n in log)} · 읽기 목차 {tch}줄 · 확인할 것 {bad}')
     if '--write' in sys.argv:
