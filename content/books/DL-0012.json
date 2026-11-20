@@ -117,5 +117,22 @@
       "mode": "file",
       "url": "orig/DL-0012/DL-0012_원서_영어.pdf"
     }
+  ],
+  "braille": [
+    {
+      "note": "",
+      "format": "BBF",
+      "mode": "file",
+      "url": "braille/DL-0012/DL-0012_점자.bbf",
+      "site": "",
+      "org": "서울시각장애인복지관",
+      "sponsor": "我無말들 출판사",
+      "year": "2026년",
+      "collection": "서울시각장애인복지관에서 받음",
+      "made": "2026-03-09",
+      "updated": "2026-03-09",
+      "inner": "",
+      "files": ""
+    }
   ]
 }
