@@ -264,7 +264,10 @@ function dlName(b, e, kind) {
 const hasText = b => { const e = curEd(b), t = TEXTS[b.id]; return !!(t && (!t.edition || t.edition === e.label)); };
 // 법보시 도서관에 보일 책: 온라인 읽기나 내려받을 파일이 하나라도 있는 책 (없는 책은 我無말들 출판사 쪽에만)
 const LIB_OK = b => hasText(b) || formats(b).length > 0;
-const LIB = () => BOOKS.filter(LIB_OK);
+// 점자 파일만 등록한 책(온라인 읽기·PDF 등 없이 점자 파일만)은 단순 화면 목록에만 보임 — 단순 화면을 만드는 동안만 LIB_SIMPLE 을 켬 (운영자 요청, 2026-11-20)
+let LIB_SIMPLE = false;
+const brlOnly = b => !LIB_OK(b) && (b.braille || []).some(o => o && o.mode !== 'none' && String(o.url || '').trim());
+const LIB = () => BOOKS.filter(b => LIB_OK(b) || (LIB_SIMPLE && brlOnly(b)));
 // 글 파일(TXT) — 점자정보단말기(한소네 등)·데이지 플레이어·화면 낭독기용, 본문 글에서 저절로 만듦 (운영자 요청, 2026-11-18)
 // 꾸밈 표시(** °° @@ == §§ {{ }})는 빼고 글자는 그대로, 장 제목 '■', 쪽 표시 '[N쪽]', 각주 '[각주 N]', 그림은 설명만, 구분선·장식 그림은 뺌
 const TXT_DECO = /^(구분 ?장식|구분선|장식|꾸밈|무늬|법륜|사자상 그림|보리수 잎 그림)$/;
@@ -1065,6 +1068,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
   put(file, simpleLayout({ title, path, up, normal, status: `${what} ${rows.length}`, body: sList(`${title}, ${rows.length}개`, ['이름', '유형', '내용'], rows) }));
 }
 {
+  LIB_SIMPLE = true;  // 이 묶음(단순 화면) 안에서만 점자 파일만 있는 책도 목록에
   const lib = LIB();
   // 스승·전통·출판사·주제 묶음
   const tList = TEACHERS.filter(t => countTeacher(t.id));
@@ -1183,6 +1187,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
   const findData = JSON.stringify(sByAdded(lib).map(b => [b.id, b.title, sBy(b), b.added || '', sFmt(b), [b.subtitle, b.original_title, ...(b.topics || [])].filter(Boolean).join(' ')])).replace(/</g, '\\u003c');
   put('simple/find/index.html', simpleLayout({ title: '책 제목으로 찾기', path: [['책 제목으로 찾기', '']], up: '/simple/', normal: '/search/', page: 'simple-find',
     body: `<div class="s-find"><label for="sQ">찾을 말 (책 제목·지은이·옮긴이)</label><input id="sQ" type="search" autocomplete="off"><p id="sFindMsg" class="s-sub" role="status" aria-live="polite"></p></div><div id="sFindList"></div><script type="application/json" id="sFindData">${findData}</script>` }));
+  LIB_SIMPLE = false;
 }
 
 /* ---------- 쓰기 ---------- */
