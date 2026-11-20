@@ -1383,3 +1383,9 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 #fnPop{font-size:calc(15px * var(--fnfs,1))}
 #fnPop p{font-size:calc(15px * var(--fnfs,1))}
 #fnPop .r-tbl{font-size:calc(13px * var(--fnfs,1))}
+
+/* 쪽 아래 각주 옆·아래 원서 각주 (운영자 요청, 2026-11-20) */
+.reflow .par-or.par-fnor{font-size:calc(.78em * var(--fnfs,1));line-height:1.6}
+.reflow.par1 .par-or.par-fnor{margin:-.2em 0 .8em 2.6em;padding:.5em .8em .2em}
+.reflow.par2 > .par-or.par-fnor{margin-bottom:.55em}
+.par-or .par-fnh{font-family:var(--sans);font-size:.85em;font-weight:700;margin:0 0 .3em}

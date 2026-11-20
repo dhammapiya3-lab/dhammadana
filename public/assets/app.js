@@ -2750,6 +2750,17 @@ function parApply() {
       last.after(box);
     }
   });
+  // 쪽 아래 각주에도 원서 각주를 함께 (운영자 요청, 2026-11-20 — DL-0022 보디 스님 미주)
+  if (D.fn) rf.querySelectorAll('p.fn').forEach(fp => {
+    const no = fp.querySelector('.fn-no'), n = no && no.dataset.fnno, i = n != null ? D.fn[n] : null;
+    if (i == null || !O[i]) return;
+    const o = O[i], m = o.t.match(/^\[\^([^\]]+)\]:\s*/);
+    const box = document.createElement('div'); box.className = 'par-or par-fnor'; box.lang = D.lang;
+    box.innerHTML = `<p class="par-fnh" lang="ko">${esc(lang)} 원서 각주 ${esc(m ? m[1] : '')}${o.pg ? ` · 원서 ${esc(o.pg)}쪽` : ''}</p><p>${oHtml(o.t.replace(/^\[\^[^\]]+\]:\s*/, ''))}</p>`;
+    if (R.parMode === 'para' && wide) { fp.classList.add('par-k'); fp.after(box); }
+    else { let t = fp; while (t.nextElementSibling && t.nextElementSibling.dataset && t.nextElementSibling.dataset.pg === fp.dataset.pg && !t.nextElementSibling.classList.contains('fn') && t.nextElementSibling.matches('figure, .r-tbl')) t = t.nextElementSibling; t.after(box); }
+    shown++;
+  });
   if (!shown) return;
 }
 
