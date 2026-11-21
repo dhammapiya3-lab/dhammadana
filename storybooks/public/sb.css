@@ -227,3 +227,12 @@ body.sb-text .sv, body.sb-text .sv-thumbs{display:none}
 
 /* 이어 읽기: 한글판·영어판 따로 (2026-11-22) */
 .resume{flex-direction:column;align-items:stretch}.resume-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.resume-row+.resume-row{margin-top:8px;padding-top:8px;border-top:1px dashed var(--line)}
+
+/* 전체 화면: 그림이 꽉 차고 아래 바는 숨었다가 마우스를 아래에 대거나 가운데를 누르면 나타남 (2026-11-22) */
+.sv:fullscreen .sv-page{height:100vh}
+.sv.sv-max .sv-page{height:100dvh}
+.sv.sv-rot .sv-page{height:100vw}
+.sv:fullscreen .sv-bar,.sv.sv-max .sv-bar,.sv.sv-rot .sv-bar{position:absolute;left:0;right:0;bottom:0;z-index:5;background:rgba(31,27,24,.88);opacity:0;pointer-events:none;transition:opacity .25s}
+.sv:fullscreen.bar-on .sv-bar,.sv.sv-max.bar-on .sv-bar,.sv.sv-rot.bar-on .sv-bar{opacity:1;pointer-events:auto}
+.sv:fullscreen:not(.bar-on) .sv-btn,.sv.sv-max:not(.bar-on) .sv-btn{opacity:0}
+.sv:fullscreen .sv-btn:hover,.sv.sv-max .sv-btn:hover{opacity:.9}

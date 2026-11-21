@@ -386,7 +386,24 @@
     if (Z.s > 1 || Date.now() - (Z.dbl || 0) < 400) return;  // 확대 중이거나 두 번 톡톡 직후에는 넘기지 않음
     const r = track.getBoundingClientRect(), x = sv.classList.contains('sv-rot') ? (e.clientY - r.top) / r.height : (e.clientX - r.left) / r.width;
     if (x < 0.25) go(cur - 1); else if (x > 0.75) go(cur + 1);
+    else if (isFull()) barShow(!sv.classList.contains('bar-on'));  // 전체 화면: 가운데를 누르면 아래 바가 나타나거나 숨음
   });
+  // 전체 화면에서는 아래 바를 숨겨 그림이 화면을 꽉 채우게 함 — 마우스를 아래쪽에 가까이 대거나(바 위 포함),
+  // 손가락 화면은 그림 가운데를 누르면 나타남. 4초 동안 건드리지 않으면 다시 숨음 (운영자 요청, 2026-11-22)
+  const isFull = () => document.fullscreenElement === sv || sv.classList.contains('sv-max') || sv.classList.contains('sv-rot');
+  let barT = null;
+  const barShow = on => {
+    clearTimeout(barT); sv.classList.toggle('bar-on', !!on);
+    if (on) barT = setTimeout(() => { if (!sv.querySelector('.sv-bar:hover, .sv-bar :focus-visible')) sv.classList.remove('bar-on'); else barShow(true); }, 4000);
+  };
+  sv.addEventListener('mousemove', e => {
+    if (!isFull() || !mouse()) return;
+    const r = sv.getBoundingClientRect(), near = sv.classList.contains('sv-rot') ? r.right - e.clientX < 90 : r.bottom - e.clientY < 90;
+    if (near || e.target.closest('.sv-bar')) barShow(true); else if (sv.classList.contains('bar-on')) { clearTimeout(barT); barT = setTimeout(() => sv.classList.remove('bar-on'), 700); }
+  });
+  sv.addEventListener('mouseleave', () => { if (isFull()) { clearTimeout(barT); sv.classList.remove('bar-on'); } });
+  sv.addEventListener('focusin', e => { if (isFull() && e.target.closest('.sv-bar')) barShow(true); });
+  document.addEventListener('fullscreenchange', () => { sv.classList.remove('bar-on'); });
   autoBtn.onclick = () => {
     if (!timer && V.on) vStop();
     if (timer) { clearInterval(timer); timer = null; autoBtn.setAttribute('aria-pressed', 'false'); autoBtn.innerHTML = '▶ 자동<span class="lg"> 넘김</span>'; return; }
