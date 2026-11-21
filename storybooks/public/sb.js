@@ -223,7 +223,9 @@
       setup();
       if (saveBtn.getAttribute('aria-pressed') === 'true') setSave(true);
       cur = -1;
+      { const ns = nv.querySelector('.sv-say'); if (sayBtn) sayBtn.hidden = !ns; }
       if (back) requestAnimationFrame(() => go(pages.length - 1, false)); else { track.scrollTo({ left: 0 }); show(0); }
+      if (V.on) vLoad().then(ok => ok ? vPage(0) : vStop('다음 이야기에는 읽어 줄 글이 아직 없습니다.'));
     } catch (e) { location.href = url; }
     sv.classList.remove('loading');
   };
@@ -258,6 +260,7 @@
     try { localStorage.setItem(KEY, i); } catch (e) {}
     if (i < pages.length) shelfSave(i);
     markShow();
+    if (V.on && !V.self && i < pages.length && i !== V.i) vPage(i);  // 읽는 중에 손으로 넘기면 그 쪽부터 읽음
   };
   // 내 서재: 책마다 마지막으로 읽던 이야기와 쪽 (운영자 요청, 2026-11-14)
   const shelfSave = i => {
@@ -385,10 +388,65 @@
     if (x < 0.25) go(cur - 1); else if (x > 0.75) go(cur + 1);
   });
   autoBtn.onclick = () => {
+    if (!timer && V.on) vStop();
     if (timer) { clearInterval(timer); timer = null; autoBtn.setAttribute('aria-pressed', 'false'); autoBtn.innerHTML = '▶ 자동<span class="lg"> 넘김</span>'; return; }
     autoBtn.setAttribute('aria-pressed', 'true'); autoBtn.textContent = '❚❚ 멈춤';
     timer = setInterval(() => { if (cur >= pages.length && endCard) loadNext(); else if (cur >= last()) autoBtn.onclick(); else go(cur + 1); }, 6000);
   };
+  // ── 그림 보기의 '읽어 주기': 쪽마다 글을 소리 내어 읽고 다 읽으면 다음 그림으로 넘어감.
+  //    전체 화면에서도 그대로, 이야기 끝에서는 다음 이야기로 이어서 읽음 (운영자 요청, 2026-11-22)
+  //    목소리·빠르기 등은 '글과 함께 보기'의 듣기 설정(sb-tts)을 그대로 씀
+  const sayBtn = sv.querySelector('.sv-say');
+  const V = { on: false, i: -1, q: [], data: null, key: '', self: false, lock: null };
+  const vToast = m => { const t = document.createElement('div'); t.className = 'sv-toast'; t.textContent = m; sv.append(t); setTimeout(() => t.remove(), 4000); };
+  const vBtn = () => { if (!sayBtn) return; sayBtn.setAttribute('aria-pressed', V.on ? 'true' : 'false'); sayBtn.innerHTML = V.on ? '❚❚ 멈춤' : '🔊 읽어<span class="lg"> 주기</span>'; };
+  const vStop = m => {
+    V.on = false; V.q = []; V.i = -1; clearTimeout(V.t); try { speechSynthesis.cancel(); } catch (e) {}
+    try { V.lock?.release(); } catch (e) {} V.lock = null; vBtn(); if (m) vToast(m);
+  };
+  const vLoad = async () => {
+    if (V.key === sv.dataset.key && V.data) return true;
+    try { V.data = await (await fetch('/t/' + sv.dataset.key + '.json')).json(); V.key = sv.dataset.key; return true; } catch (e) { V.data = null; return false; }
+  };
+  const vEn = () => /-en$/.test(sv.dataset.key || '');
+  const vPage = i => {
+    if (!V.on) return;
+    clearTimeout(V.t); try { speechSynthesis.cancel(); } catch (e) {}
+    if (i >= pages.length) {
+      if (endCard && sv.dataset.next) { V.self = true; go(pages.length); V.self = false; V.t = setTimeout(() => V.on && loadNext(), 1500); }
+      else vStop('이야기를 다 읽었습니다.');
+      return;
+    }
+    V.i = i;
+    if (cur !== i) { V.self = true; go(i); V.self = false; }
+    const raw = (V.data?.[i] || []).flatMap(t => String(t).split(/\n\s*\n/));
+    V.q = (vEn() ? raw.map(t => t.replace(/\s+/g, ' ').trim()) : raw.map(sayable)).filter(Boolean)
+      .flatMap(t => t.match(/[^.!?。]+[.!?。]*\s*/g) || [t]).map(x => x.trim()).filter(Boolean);
+    if (!V.q.length) { V.t = setTimeout(() => V.on && vPage(i + 1), 3000); return; }  // 글 없는 그림은 3초 보여 주고 넘어감
+    vNext(i);
+  };
+  const vNext = i => {
+    if (!V.on || V.i !== i) return;
+    if (!V.q.length) { V.t = setTimeout(() => V.on && V.i === i && vPage(i + 1), Math.max(0.7, topt().gap) * 1000); return; }
+    const u = new SpeechSynthesisUtterance(V.q.shift()), o = topt();
+    u.rate = o.rate; u.pitch = o.pitch; u.volume = o.vol;
+    if (vEn()) { u.lang = 'en-US'; const ev = speechSynthesis.getVoices().filter(v => /^en/i.test(v.lang)); const v = ev.find(v => /google|natural|neural|online/i.test(v.name)) || ev[0]; if (v) u.voice = v; }
+    else { u.lang = 'ko-KR'; const v = koVoice(); if (v) u.voice = v; }
+    u.onend = () => vNext(i);
+    u.onerror = e => { if (e.error !== 'interrupted' && e.error !== 'canceled') vNext(i); };
+    speechSynthesis.speak(u);
+  };
+  if (sayBtn) sayBtn.onclick = async () => {
+    if (V.on) { vStop(); return; }
+    if (!('speechSynthesis' in window)) { vToast('이 브라우저에서는 읽어 주기를 쓸 수 없습니다. 크롬·삼성 인터넷·사파리로 열어 주세요.'); return; }
+    if (timer) autoBtn.onclick();
+    if (!await vLoad()) { vToast('이 이야기에는 읽어 줄 글이 없습니다.'); return; }
+    V.on = true; vBtn();
+    try { navigator.wakeLock?.request('screen').then(l => { V.lock = l; }).catch(() => {}); } catch (e) {}
+    vPage(cur >= pages.length ? 0 : Math.max(0, cur));
+    setTimeout(() => { if (V.on && !vEn() && !speechSynthesis.speaking && !speechSynthesis.pending && !koVoice()) vToast('이 기기에 한국어 음성이 없어 소리가 나지 않을 수 있습니다. 기기 설정의 ‘텍스트 음성 변환(TTS)’에서 한국어 음성을 받아 주세요.'); }, 2500);
+  };
+  addEventListener('pagehide', () => vStop());
   // ── 글로 보기: 그림 아래에 그 그림의 글을 큰 글씨로, 세로로 넘겨 읽기 (운영자 요청, 2026-11-15)
   //    글자 크기 5단계(가− 가+)와 보기 방식은 이 기기에 기억함
   const SIZES = [16, 18, 21, 24, 28];
@@ -529,6 +587,7 @@ const PALI = (() => {
     let data;
     try { data = await (await fetch('/t/' + sv.dataset.key + '.json')).json(); } catch (e) { return; }
     if (timer) autoBtn.onclick();
+    if (V.on) vStop();
     if (document.fullscreenElement) document.exitFullscreen?.().catch(() => {});
     sv.classList.remove('sv-max', 'sv-rot');
     sayStop();
