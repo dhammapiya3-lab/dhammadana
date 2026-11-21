@@ -1,12 +1,13 @@
-Jatakamala 20-Treasurer 15 장
-자동 검수: 문제 의심 0 곳
-R2 에 올림: 77 개 / 한글판 이야기 276 편
+검수 Jatakamala/21-Cuddabodhi 06번 그림 상자1 [자리] 한글이 원래 글 자리(145,292-565,383)에서 벗어남 (694,347)
+Jatakamala 21-Cuddabodhi 13 장
+자동 검수: 문제 의심 1 곳
+R2 에 올림: 73 개 / 한글판 이야기 277 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 774257바이트
-이야기 Jatakamala/20-Treasurer {'pdf': 10457537, 'zip': 10178024, 'n': 15}
-책 Jatakamala {'pdf': 257866075, 'pdfs': 25771057, 'zip': 257501000, 'stories': 20, 'n': 294}
+공개 주소 확인: 200 771178바이트
+이야기 Jatakamala/21-Cuddabodhi {'pdf': 10067968, 'zip': 9792391, 'n': 13}
+책 Jatakamala {'pdf': 267663065, 'pdfs': 26814735, 'zip': 267293184, 'stories': 21, 'n': 307}
 내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 276 이야기
+글로 보기: 277 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
