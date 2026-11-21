@@ -1,0 +1,627 @@
+[
+ {
+  "img": "images/21-Cuddabodhi-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     130,
+     100,
+     560,
+     178
+    ],
+    "ko": "“본생 이야기 꽃다발:\n쭐라보디 이야기”",
+    "cover": [
+     248,
+     238,
+     220
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     140,
+     178,
+     520,
+     204
+    ],
+    "ko": "인욕과 성냄을 이기는 이야기",
+    "cover": [
+     249,
+     238,
+     218
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-Cuddabodhi-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     420,
+     70,
+     776,
+     120
+    ],
+    "ko": "출가",
+    "cover": [
+     247,
+     244,
+     233
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     420,
+     120,
+     776,
+     370
+    ],
+    "ko": "고귀한 바라문으로 태어난 쭐라보디는 세상이 다툼으로 가득함을 깨닫고 수행자의 삶을 택했습니다. 깊이 사랑한 아내도 머리를 깎고 그를 따랐습니다.\n“세속의 즐거움을 독 든 음식처럼 피하고… 그는 수행자의 빛나는 삶을 받아들였다.”",
+    "cover": [
+     247,
+     244,
+     233
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-Cuddabodhi-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     40,
+     394,
+     84
+    ],
+    "ko": "만류",
+    "cover": [
+     246,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     44,
+     84,
+     394,
+     200
+    ],
+    "ko": "쭐라보디는 숲의 위험, 곧 사나운 짐승과 외로운 밤을 들어 아내를 말렸습니다. 아내는 그의 곁을 떠나지 않겠다고 했습니다.",
+    "cover": [
+     247,
+     244,
+     232
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     418,
+     288,
+     760,
+     394
+    ],
+    "ko": "“묘지와 산과 사나운 짐승이 사는 숲… 당신 없이는 살 수 없으니, 말을 듣지 않는 저를 용서하세요.”",
+    "cover": [
+     245,
+     243,
+     230
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-Cuddabodhi-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     308,
+     680,
+     348
+    ],
+    "ko": "봄의 숲",
+    "cover": [
+     247,
+     245,
+     233
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     120,
+     348,
+     680,
+     446
+    ],
+    "ko": "그들은 봄에 아름다운 숲에 자리 잡았습니다. 숲에는 벌들이 윙윙대고 꽃향기가 가득했습니다.\n“봄이었다… 수컷 뻐꾸기와 공작이 노래하고… 연꽃이 못을 가득 채울 때.”",
+    "cover": [
+     249,
+     247,
+     235
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-Cuddabodhi-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     420,
+     34,
+     790,
+     76
+    ],
+    "ko": "왕의 침입",
+    "cover": [
+     246,
+     243,
+     228
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     420,
+     76,
+     790,
+     182
+    ],
+    "ko": "숲을 돌아보던 왕이 아름다운 여자 수행자를 보았습니다. 그 모습에 마음이 흔들렸지만, 거룩한 이의 저주가 두려워 망설였습니다.",
+    "cover": [
+     246,
+     243,
+     228
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     416,
+     376,
+     792,
+     448
+    ],
+    "ko": "“그녀의 아름다움이 그의 마음을 어지럽혔다… 그러나 수행자들의 뛰어난 힘을 들었기에 무모한 짓은 삼갔다.”",
+    "cover": [
+     245,
+     242,
+     226
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-Cuddabodhi-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     80,
+     380,
+     130
+    ],
+    "ko": "시험",
+    "cover": [
+     244,
+     240,
+     222
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     130,
+     380,
+     370
+    ],
+    "ko": "왕은 수행자가 아직 세속에 집착하는지 보려고 숲이 안전하냐며 비웃었습니다.\n“누가 그녀를 해친다면… 그대는 울부짖는 것 말고 무엇을 하겠소? 수행자에게 여인과 함께함이 무슨 소용이오?”",
+    "cover": [
+     244,
+     241,
+     223
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-Cuddabodhi-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     270,
+     740,
+     310
+    ],
+    "ko": "보살의 수수께끼",
+    "cover": [
+     244,
+     239,
+     220
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     310,
+     740,
+     448
+    ],
+    "ko": "보살은 원수를 그냥 놓아주지 않겠다고 경고했습니다. 왕은 이를 폭력으로 맞서겠다는 위협으로 오해했습니다.\n“그런 경우 내게 맞서 행하는 자가 있다면… 참으로 나는 살아 있는 동안 그를 놓아주지 않으리라.”",
+    "cover": [
+     244,
+     239,
+     220
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-Cuddabodhi-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     80,
+     396,
+     130
+    ],
+    "ko": "납치",
+    "cover": [
+     236,
+     234,
+     214
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     130,
+     396,
+     430
+    ],
+    "ko": "수행자가 힘이 없다고 여긴 왕은 아내를 데려가라 명했습니다. 그녀는 세상의 수호신들을 부르짖었지만 남편은 잠자코 있었습니다.\n“아내가 이렇게 해를 입는데도 그는 침묵을 깨지 않는구나!… 그러나 보살은 전처럼 누더기를 기우고 있었다.”",
+    "cover": [
+     237,
+     233,
+     214
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-Cuddabodhi-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     80,
+     790,
+     130
+    ],
+    "ko": "조롱",
+    "cover": [
+     243,
+     240,
+     220
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     430,
+     130,
+     790,
+     400
+    ],
+    "ko": "왕은 보살이 ‘힘’도 ‘성냄’도 쓰지 않는다며 비웃었습니다.\n“눈앞에서 그 아름다운 이를 빼앗기는 것을 보고도 잠자코 있구려… 그대는 위엄을 잃었소.”",
+    "cover": [
+     242,
+     238,
+     217
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-Cuddabodhi-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     36,
+     466,
+     86
+    ],
+    "ko": "수수께끼의 풀이",
+    "cover": [
+     248,
+     245,
+     233
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     86,
+     408,
+     424
+    ],
+    "ko": "보살은 자신이 약속을 지켰다고 설명했습니다. 그는 참된 원수, 곧 마음속에 일어나는 성냄과 싸워 그것을 눌렀습니다.\n“그때 내게 맞서려던 자… 나는 그를 놓아주지 않았다. 그를 눌러 억지로 잠잠하게 했다.”",
+    "cover": [
+     248,
+     245,
+     232
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-Cuddabodhi-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     0,
+     340,
+     800,
+     382
+    ],
+    "ko": "마찰의 불",
+    "cover": [
+     243,
+     231,
+     202
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     0,
+     382,
+     800,
+     448
+    ],
+    "ko": "“나무를 비벼 일어난 불이 바로 그 나무를 태우듯, 성냄은 그것이 일어난 사람을 망친다. 그릇된 생각으로 그를 완전히 무너뜨린다.”",
+    "cover": [
+     242,
+     228,
+     198
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-Cuddabodhi-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     560,
+     30,
+     794,
+     108
+    ],
+    "ko": "왕의 뉘우침",
+    "cover": [
+     245,
+     241,
+     226
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     560,
+     108,
+     794,
+     416
+    ],
+    "ko": "이 자제력에 고개 숙인 왕은 죄를 고백하고 아내를 돌려주었습니다.\n“그의 발아래 엎드려 죄를 고백했다. 그리고 여자 수행자에게도 용서를 빌고 돌려보냈다.”",
+    "cover": [
+     245,
+     242,
+     227
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-Cuddabodhi-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     30,
+     650,
+     90
+    ],
+    "ko": "맺음",
+    "cover": [
+     245,
+     243,
+     219
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     150,
+     90,
+     650,
+     260
+    ],
+    "ko": "성냄을 다스리면 원수를 달랠 수 있고, 성냄을 풀어놓으면 원수를 더 성나게 할 뿐입니다.\n“성냄을 누르면 사람은 원수를 달래지만, 그렇지 않으면 원수를 더 타오르게 한다.”",
+    "cover": [
+     244,
+     241,
+     218
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
