@@ -1495,3 +1495,5 @@ body.simple-ui{font-size:28px}
 /* 문단 정렬·문단 사이 간격 (운영자 요청, 2026-11-21) — 보통 본문 문단(class 없는 p)만. 가운데·오른쪽 맞춤·게송·차례·제목 문단은 그대로 */
 .reflow.al-just :where(p:not([class])),.reflow.al-just :where(p.ch-dup){text-align:justify;text-justify:auto}
 .reflow.pgap :where(p:not([class])){margin-bottom:var(--pgap,1em)}
+/* 아주 큰 글자(175% 넘게 — .big, 낱말 단위로만 줄을 바꿈)에서는 양쪽 정렬하면 낱말 사이가 크게 벌어지므로 왼쪽 정렬 (2026-11-22) */
+.reflow.big.al-just :where(p:not([class])),.reflow.big.al-just :where(p.ch-dup){text-align:start}
