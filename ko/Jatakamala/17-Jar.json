@@ -1,0 +1,457 @@
+[
+ {
+  "img": "images/17-Jar-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     334,
+     600,
+     384
+    ],
+    "ko": "술 항아리 이야기",
+    "cover": [
+     249,
+     244,
+     233
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     200,
+     384,
+     600,
+     446
+    ],
+    "ko": "(『자따까말라』 17)\n연민, 그리고 거꾸로 하는 장사 이야기",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-Jar-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     300,
+     700,
+     332
+    ],
+    "ko": "천신들의 왕위에 있을 때도",
+    "cover": [
+     251,
+     245,
+     231
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     100,
+     332,
+     700,
+     400
+    ],
+    "ko": "보살의 연민은 쉬지 않았습니다. 그는 다스리는 이로서만이 아니라 괴로워하는 모든 중생의 친척으로서 세상을 지켜보았습니다. 남들이 번영의 술에 취해 있을 때 그는 맑고 깨어 있었습니다.",
+    "cover": [
+     251,
+     243,
+     228
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-Jar-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     322,
+     650,
+     424
+    ],
+    "ko": "‘모든 이의 벗’이라는 뜻의 삽바밋따 왕이 스스로의 원수가 되려 하고 있었습니다. 나쁜 벗들에게 휘둘려 백성에게 독한 술 마시는 버릇을 들이려 했습니다. 이 달콤한 길이 해탈에서 멀어지는 길임을 몰랐습니다.",
+    "cover": [
+     240,
+     224,
+     196
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-Jar-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     500,
+     170,
+     780,
+     316
+    ],
+    "ko": "위험을 본 대사는 엄한 바라문 고행자의 모습으로 내려왔습니다. 땋은 머리에 나무껍질 옷을 입고 옆구리에 항아리를 찬 채 대중 앞 허공에 떠 있었습니다. 술 마시던 이들은 얼어붙어 문득 공경하며 합장했습니다.",
+    "cover": [
+     243,
+     231,
+     207
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-Jar-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     50,
+     620,
+     94
+    ],
+    "ko": "목까지 가득 찬 이 훌륭한 항아리를 보시오!",
+    "cover": [
+     251,
+     247,
+     239
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     270,
+     370,
+     530,
+     450
+    ],
+    "ko": "가장자리에는 꽃이 웃고\n여린 잎으로 단장했소.\n누가 이 항아리를 사겠소?",
+    "cover": [
+     252,
+     249,
+     242
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-Jar-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     330,
+     146,
+     680,
+     280
+    ],
+    "ko": "왕이 물었습니다.\n“그대는 아침 해처럼 빛나는데 장사꾼처럼 항아리를 파시오? 모습은 성자(muni) 같은데 하는 일은 흔하구려. 거룩한 분이여, 그대는 누구이며 이 그릇에는 무엇이 들었소?”",
+    "cover": [
+     60,
+     44,
+     40
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Jar-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     128,
+     712,
+     352
+    ],
+    "ko": "“이 안에는 빗물도, 꿀도, 우유도 들지 않았소.\n사람이 자제력을 잃게 하는 것이 들었소.\n이것을 마시면 평평한 땅에서 비틀거리고 짐승처럼 금지된 음식을 먹으리라.\n\n사시오! 이 가장 나쁜 항아리를 팝니다!”",
+    "cover": [
+     249,
+     245,
+     232
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-Jar-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     370,
+     700,
+     436
+    ],
+    "ko": "이 물은 그대의 정신을 훔치오. 원수들 앞에서 춤추게 하고 제 입으로 장단을 맞추게 하오. 그대를 미워하는 이들의 놀림감이 되게 하오. 누가 이런 광기를 사려 하겠소?",
+    "cover": [
+     248,
+     243,
+     227
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-Jar-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     60,
+     690,
+     134
+    ],
+    "ko": "부끄럼 많던 이도 부끄러움을 잃고 사람 붐비는 큰길을 벌거벗고 다니오. 사람들은 길바닥에 정신을 잃고 쓰러져 토사물 묻은 얼굴을 뻔뻔한 개가 핥게 되오. 이 항아리의 술이 이토록 ‘아름답소’!",
+    "cover": [
+     219,
+     227,
+     225
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-Jar-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     66,
+     540,
+     196
+    ],
+    "ko": "이것은 친척끼리 몽둥이로 서로 때려죽이게 한 술이오. 여인으로 하여금 남편을 업신여기고 부모를 나무에 묶게 하오. 부유한 가문을 망하게 하오.",
+    "cover": [
+     244,
+     239,
+     221
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-Jar-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     350,
+     690,
+     432
+    ],
+    "ko": "이 안에는 저주가 몸을 얻은 듯한 여인이 누워 있소. 그녀는 거짓말을 당당히 하게 하고 금지된 짓을 저지르게 하오. 이것은 죄의 어머니요 마음의 무서운 어둠이오. 몸을 얻은 이 재앙을 내게서 사시오!",
+    "cover": [
+     246,
+     242,
+     226
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-Jar-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     70,
+     560,
+     206
+    ],
+    "ko": "이 악덕은 좋은 행실을 무너뜨리고 무서운 아위찌 지옥이나 아귀의 세계로 이끄오. 덕을 죽이고 부끄러움을 몰아내오. 왕이여, 어찌 이것을 마시려 하시오?",
+    "cover": [
+     243,
+     239,
+     219
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-Jar-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     350,
+     710,
+     440
+    ],
+    "ko": "진실에 깨우친 왕은 욕망을 내던졌습니다.\n“그대는 아버지가 아들에게 하듯 말씀하셨소. 이 유익한 말씀에 마을 다섯과 소 수백 마리, 수레 열 대를 드리겠소. 그대는 나의 스승이시오.”",
+    "cover": [
+     243,
+     238,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-Jar-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     110,
+     300,
+     252
+    ],
+    "ko": "“나는 마을을 바라지 않소. 나는 천신들의 왕 삭까요.\n\n유익한 말에 대한 참된 값은 그대로 행하는 것이오.",
+    "cover": [
+     231,
+     226,
+     204
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     520,
+     170,
+     740,
+     252
+    ],
+    "ko": "이 버릇을 버리고 바른 법을 굳게 지키면 내 천상을 함께 누리리라.”",
+    "cover": [
+     232,
+     227,
+     207
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-Jar-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     118,
+     600,
+     194
+    ],
+    "ko": "왕과 백성은 그 악덕을 끊었습니다. 이처럼 덕 있는 이는 술의 해로움을 알기에 이웃을 죄에서 막아 주니, 하물며 자기 자신이야 더 말할 나위가 있겠습니까?",
+    "cover": [
+     241,
+     229,
+     194
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
