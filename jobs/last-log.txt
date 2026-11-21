@@ -1,43 +1,12 @@
-검수 Jataka/001-The-Waterless-Desert 13번 그림 상자2 [자리] 한글 글(2151,1214)이 상자 점(1762,1051)에서 멀리 그려짐
-Jataka 001-The-Waterless-Desert 15 장
-Jataka 002-The-Well-of-Perseverance 15 장
-Jataka 003-The-Golden-Bowl 14 장
-검수 Jataka/004-The-Dead-Mouse 09번 그림 상자2 [자리] 한글 글(2228,1294)이 상자 점(2030,1107)에서 멀리 그려짐
-Jataka 004-The-Dead-Mouse 15 장
-Jataka 006-The-Water-Rakkhasa 15 장
-Jataka 010-Bliss-of-Renunciation 14 장
-Jataka 011-The-Wisdom-of-Lakkhana 10 장
-Jataka 014-The-Wind-Deer 9 장
-Jataka 018-The-Sacrificial-Goat 14 장
-Jataka 023-The-Noble-Warhorse 14 장
-Jataka 032-The-Peacocks-Dance 12 장
-검수 Jataka/033-The-Quails-and-the-Net 09번 그림 상자2 [자리] 한글 글(1343,693)이 상자 점(1167,538)에서 멀리 그려짐
-Jataka 033-The-Quails-and-the-Net 14 장
-Jataka 040-The-Fiery-Pit 12 장
-Jataka 044-The-Son-and-the-Mosquito 13 장
-Jataka 046-The-Folly-of-the-Monkeys 13 장
-자동 검수: 문제 의심 3 곳
-R2 에 올림: 445 개 / 한글판 이야기 278 편
+Jatakamala 23-Mahabodhi 15 장
+자동 검수: 문제 의심 0 곳
+R2 에 올림: 77 개 / 한글판 이야기 279 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1160954바이트
-이야기 Jataka/001-The-Waterless-Desert {'pdf': 14342865, 'zip': 14077504, 'n': 15}
-이야기 Jataka/002-The-Well-of-Perseverance {'pdf': 17831704, 'zip': 17563581, 'n': 15}
-이야기 Jataka/003-The-Golden-Bowl {'pdf': 15809024, 'zip': 15544036, 'n': 14}
-이야기 Jataka/004-The-Dead-Mouse {'pdf': 17567100, 'zip': 17303664, 'n': 15}
-이야기 Jataka/006-The-Water-Rakkhasa {'pdf': 19118553, 'zip': 18852134, 'n': 15}
-이야기 Jataka/010-Bliss-of-Renunciation {'pdf': 17051430, 'zip': 16785043, 'n': 14}
-이야기 Jataka/011-The-Wisdom-of-Lakkhana {'pdf': 12209273, 'zip': 11945304, 'n': 10}
-이야기 Jataka/014-The-Wind-Deer {'pdf': 9636337, 'zip': 9374918, 'n': 9}
-이야기 Jataka/018-The-Sacrificial-Goat {'pdf': 16410478, 'zip': 16140095, 'n': 14}
-이야기 Jataka/023-The-Noble-Warhorse {'pdf': 17058383, 'zip': 16793088, 'n': 14}
-이야기 Jataka/032-The-Peacocks-Dance {'pdf': 16796722, 'zip': 16532297, 'n': 12}
-이야기 Jataka/033-The-Quails-and-the-Net {'pdf': 15959022, 'zip': 15690868, 'n': 14}
-이야기 Jataka/046-The-Folly-of-the-Monkeys {'pdf': 15979605, 'zip': 15707449, 'n': 13}
-이야기 Jataka/040-The-Fiery-Pit {'pdf': 12670263, 'zip': 12406519, 'n': 12}
-이야기 Jataka/044-The-Son-and-the-Mosquito {'pdf': 15079110, 'zip': 14809693, 'n': 13}
-책 Jataka {'pdf': 496466100, 'pdfs': 50592342, 'zip': 496056340, 'stories': 32, 'n': 422}
-내려받기 파일: 16 묶음 새로 만듦
-글로 보기: 278 이야기
+공개 주소 확인: 200 922786바이트
+이야기 Jatakamala/23-Mahabodhi {'pdf': 14783733, 'zip': 14506563, 'n': 15}
+책 Jatakamala {'pdf': 295406325, 'pdfs': 29632776, 'zip': 295025844, 'stories': 23, 'n': 335}
+내려받기 파일: 2 묶음 새로 만듦
+글로 보기: 279 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
