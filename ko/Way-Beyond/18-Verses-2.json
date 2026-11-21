@@ -1,0 +1,192 @@
+[
+ {
+  "img": "images/18-Verses-2-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     176,
+     650,
+     286
+    ],
+    "ko": "피안으로 가는 길.\n삥기야의 마지막 깨달음.",
+    "cover": null,
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Verses-2-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     116,
+     60,
+     398,
+     172
+    ],
+    "ko": "고따마 이전 옛 스승들은 말했습니다.\n“예전에 이러했고 앞으로 이러하리라.”\n그것은 전해 들은 말일 뿐, 메마른\n숲에서 끝없는 생각만 늘렸습니다.",
+    "cover": null,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Verses-2-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     386,
+     650,
+     442
+    ],
+    "ko": "저는 메마른 숲을 떠나 열매 맺는 숲으로 왔습니다.\n큰 바다에 이른 백조처럼 지혜가 작은 이들을 떠났습니다.",
+    "cover": null,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Verses-2-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     162,
+     450,
+     296
+    ],
+    "ko": "그리고 어둠을 몰아내시는 분을\n뵈었습니다. 삼마삼붓다께서는\n지금 여기서 볼 수 있고 시간을 넘어선\n진리, 모든 갈애의 끝을 가르치셨습니다.",
+    "cover": null,
+    "align": "left",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Verses-2-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     384,
+     680,
+     442
+    ],
+    "ko": "바와리가 물었습니다. “그런데 삥기야여, 어찌하여 잠시라도\n그분을 떠나 있는가? 큰 지혜를 지닌 분을 어찌 떠나왔는가?”",
+    "cover": null,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Verses-2-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     108,
+     430,
+     312
+    ],
+    "ko": "“저는 떠나 있지\n않습니다.” 삥기야가\n답했습니다. “마음으로\n눈으로 보듯 그분을 뵙고,\n밤낮으로 공경하니\n떨어져 있지 않습니다.”",
+    "cover": null,
+    "align": "left",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Verses-2-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     108,
+     680,
+     232
+    ],
+    "ko": "“저는 늙고 쇠약하여 힘이 없습니다.\n떨면서 이 섬에서 저 섬으로 떠돌다가\n괴로움의 어두운 수렁에 누워 있었습니다.”",
+    "cover": null,
+    "align": "left",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Verses-2-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     60,
+     660,
+     280
+    ],
+    "ko": "“몸은 움직일 수 없으나 생각으로 애써 늘 갑니다.\n큰 지혜를 지니신 분이 걸음을 옮기시는\n곳마다 제 마음이 그리로 향합니다.”",
+    "cover": null,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Verses-2-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     160,
+     430,
+     296
+    ],
+    "ko": "“왁깔리가 믿음을 내었듯\n그대도 그렇게 해야 한다, 삥기야여.\n믿음을 내라. 그러면 그대는\n죽음의 영역을 넘어가리라.”",
+    "cover": null,
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Verses-2-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     356,
+     656,
+     420
+    ],
+    "ko": "성자의 말씀을 듣고 모든 의심이 사라졌습니다.\n마음이 영원히 열반으로 향한 이로 저를 기억해 주십시오.",
+    "cover": null,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

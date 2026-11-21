@@ -1,0 +1,230 @@
+[
+ {
+  "img": "images/17-Verses-1-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     140,
+     400,
+     280
+    ],
+    "ko": "복되신 분께서는\n마가다의 빠사나까\n탑묘에 머무셨습니다.",
+    "cover": null,
+    "align": "left",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Verses-1-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     272,
+     126,
+     556,
+     330
+    ],
+    "ko": "질문 하나하나의\n뜻을 알고 가르침에\n맞게 실천하면\n참으로 늙음과 죽음\n너머로 갑니다.",
+    "cover": null,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Verses-1-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     70,
+     712,
+     172
+    ],
+    "ko": "아지따, 띳사 멧떼야, 뿐나까, 멧따구,\n도따까, 우빠시와, 난다, 헤마까.",
+    "cover": null,
+    "align": "center",
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Verses-1-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     74,
+     750,
+     210
+    ],
+    "ko": "또데야, 깝빠, 지혜로운 자뚜깐니, 바드라우다,\n우다야, 바라문 뽀살라, 슬기로운 모가라자,\n그리고 큰 선인 삥기야.",
+    "cover": null,
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Verses-1-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     72,
+     620,
+     212
+    ],
+    "ko": "이 열여섯 시자 바라문들은\n행실이 완전한 선인이신 부처님께 가서\n미묘한 질문을 드렸습니다.",
+    "cover": null,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Verses-1-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     116,
+     366,
+     340
+    ],
+    "ko": "그들은 가장\n높으신 부처님께 가서\n미묘한 질문으로\n궁극의 진리를\n구했습니다.",
+    "cover": null,
+    "align": "center",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Verses-1-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     372,
+     116,
+     764,
+     326
+    ],
+    "ko": "부처님께서는 질문에\n있는 그대로 답하셨습니다.\n질문에 답하시어 성자께서는\n그 바라문들을\n흡족하게 하셨습니다.",
+    "cover": null,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Verses-1-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     116,
+     384,
+     246
+    ],
+    "ko": "눈 있는 분,\n태양의 후예께\n흡족해진 그들은…",
+    "cover": null,
+    "align": "center",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Verses-1-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     288,
+     575,
+     408
+    ],
+    "ko": "뛰어난 지혜를 지니신 분\n아래에서 청정한 삶을\n살았습니다.",
+    "cover": null,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Verses-1-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     136,
+     166,
+     666,
+     292
+    ],
+    "ko": "그분은 질문마다 하나하나\n답하여 가르치셨습니다. 이렇게 실천하는\n이는 여기서 저 너머로 갈 수 있습니다.",
+    "cover": null,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Verses-1-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     164,
+     510,
+     292
+    ],
+    "ko": "여기서 저 너머로,\n으뜸가는 길을 닦아\n갈 수 있습니다.",
+    "cover": null,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Verses-1-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     288,
+     676,
+     412
+    ],
+    "ko": "이것이 저 너머로 가는 길입니다.\n그래서 이 가르침을 ‘피안으로 가는 길’,\n빠라야나 왁가라고 부릅니다.",
+    "cover": null,
+    "align": "center",
+    "em": 25,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

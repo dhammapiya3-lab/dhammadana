@@ -1,0 +1,206 @@
+[
+ {
+  "img": "images/16-Pingiya-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     136,
+     640,
+     250
+    ],
+    "ko": "삥기야의 질문:\n피안으로 가는 길",
+    "cover": null,
+    "align": "left",
+    "em": 40,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     170,
+     252,
+     640,
+     310
+    ],
+    "ko": "시간이 다하기 전에 한 노인이 구한,\n죽을 몸의 쇠락을 넘어서는 길에 관한 문답",
+    "cover": null,
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     166,
+     38,
+     636,
+     104
+    ],
+    "ko": "“저는 늙고 힘이 없으며 안색도 좋지 않습니다.\n눈은 흐리고 귀도 잘 들리지 않습니다.”",
+    "cover": null,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     36,
+     642,
+     130
+    ],
+    "ko": "“아라한과에 이르지 못하고 도중에 어리석은 채\n죽지 않게 하소서! 태어남과 늙음을 버리는 법을\n알 수 있도록 가르침을 설명해 주십시오.”",
+    "cover": null,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     40,
+     610,
+     130
+    ],
+    "ko": "“사람들이 물질 때문에 해를 입고,\n방일한 이들이 물질 때문에 고통받는 것을 보고…”",
+    "cover": null,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     500,
+     136,
+     780,
+     222
+    ],
+    "ko": "“…삥기야여, 방일하지 말고\n물질(rūpaṃ)을 버려라.\n그러면 다시 태어나지 않으리라.”",
+    "cover": null,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     64,
+     660,
+     130
+    ],
+    "ko": "“시방세계에서 당신께서 보지 못하고 듣지 못하고\n느끼지 못하고 알지 못하는 것은 하나도 없습니다!”",
+    "cover": null,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     526,
+     40,
+     736,
+     292
+    ],
+    "ko": "태어남과\n늙음을\n완전히\n버리는 것을\n알 수 있도록\n가르침을\n설명해\n주십시오.",
+    "cover": null,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     398,
+     752,
+     436
+    ],
+    "ko": "“사람들이 갈애의 희생자가 되어 고통받고 쇠락에 짓눌리는 것을 보고…”",
+    "cover": null,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     376,
+     710,
+     440
+    ],
+    "ko": "…삥기야여, 방일하지 말고 갈애(taṇhaṃ)를 버려라.\n그러면 다시 태어나지 않으리라.",
+    "cover": null,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     358,
+     752,
+     432
+    ],
+    "ko": "피안에 이르려면 방일하지 않는 마음이 몸의 물질(rūpaṃ)과\n우리를 묶는 갈애(taṇhaṃ)를 놓아 버려야 합니다.",
+    "cover": null,
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
