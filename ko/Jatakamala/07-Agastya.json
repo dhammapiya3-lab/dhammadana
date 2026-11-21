@@ -1,0 +1,677 @@
+[
+ {
+  "img": "images/07-Agastya-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     130,
+     26,
+     670,
+     132
+    ],
+    "ko": "본생 이야기 꽃다발:\n아낏띠 이야기 (보시)",
+    "cover": [
+     239,
+     239,
+     230
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     140,
+     134,
+     660,
+     160
+    ],
+    "ko": "“용감하게 베푸는 일은 수행자에게도 장식이 됩니다…”",
+    "cover": [
+     246,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Agastya-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     82,
+     338,
+     152
+    ],
+    "ko": "보살의 고귀한 탄생과\n넉넉한 베풂",
+    "cover": [
+     242,
+     229,
+     208
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     52,
+     152,
+     338,
+     356
+    ],
+    "ko": "아득한 옛날 보살은 이름난 바라문 집안에 태어났습니다. 가을 달이 하늘을 꾸미듯 그의 행실은 맑았습니다. 베다에 밝았고 재산은 헤아릴 수 없었습니다.\n그러나 그는 쌓아 두지 않았습니다. 메마른 들에 비를 뿌리는 큰 구름처럼, 넉넉한 베풂으로 친척과 벗과 괴로운 이들을 기쁘게 했습니다.",
+    "cover": [
+     241,
+     229,
+     207
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Agastya-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     20,
+     760,
+     70
+    ],
+    "ko": "위대한 출가",
+    "cover": [
+     242,
+     240,
+     227
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     70,
+     760,
+     170
+    ],
+    "ko": "위대한 마음의 분은 집에 사는 삶이 괴로움의 근원이며, 방일과 고생의 집이라는 것을 알았습니다.\n\n출가가 참된 편안함을 준다고 확신한 그는 많은 재산을 지푸라기처럼 버렸습니다. 세상을 떠나 절제와 자제의 고요함을 찾아 나섰습니다.",
+    "cover": [
+     244,
+     242,
+     230
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Agastya-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     50,
+     346,
+     110
+    ],
+    "ko": "섬의 암자",
+    "cover": [
+     246,
+     238,
+     221
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     44,
+     110,
+     346,
+     384
+    ],
+    "ko": "그는 남쪽 바다의 까라 섬으로 갔습니다. 흰 모래와 사파이어 빛 물결의 땅입니다.\n그곳에서 그는 고행으로 몸이 야위었지만 초승달처럼 빛나며 살았습니다.\n\n들짐승들도 그의 고요함을 알아보았습니다. 작은 지혜로나마 그 평화를 느끼고 그의 차분한 몸가짐을 따라 했습니다.",
+    "cover": [
+     247,
+     240,
+     224
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Agastya-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     420,
+     246,
+     774,
+     286
+    ],
+    "ko": "궁핍의 시험",
+    "cover": [
+     237,
+     225,
+     204
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     420,
+     286,
+     774,
+     434
+    ],
+    "ko": "천신들의 왕 삭까가 그의 한결같음을 시험하려 했습니다. 뿌리와 열매를 모두 사라지게 했습니다. 음식에 마음 두지 않는 보살은 어린 잎을 불에 끓였습니다. 그는 불평 없이 먹으며 여전히 고요했습니다.\n\n“절제하며 사는 이에게 살림은 어디서도 어렵지 않다… 풀과 잎과 못이 없는 곳이 어디 있겠는가?”",
+    "cover": [
+     236,
+     224,
+     202
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Agastya-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     50,
+     352,
+     112
+    ],
+    "ko": "바람의 시험",
+    "cover": [
+     242,
+     234,
+     216
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     44,
+     112,
+     352,
+     300
+    ],
+    "ko": "그러자 삭까는 여름 바람처럼 나무의 잎을 모두 떨어뜨렸습니다.\n\n보살은 떨어진 잎을 주워 끓여 먹었습니다. 선정의 행복을 기뻐하며 마치 감로를 먹은 듯 지냈습니다.\n\n만족이야말로 수행자의 가장 큰 보배입니다.",
+    "cover": [
+     244,
+     238,
+     220
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Agastya-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     436,
+     266,
+     792,
+     304
+    ],
+    "ko": "흔들리지 않는 보시",
+    "cover": [
+     246,
+     242,
+     227
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     436,
+     304,
+     792,
+     446
+    ],
+    "ko": "닷새 동안 삭까는 보살이 막 먹으려 할 때마다 손님으로 나타났습니다. 끓인 잎뿐이었지만 대사는 끼니를 모두 손님에게 주고 기쁨만으로 배를 채웠습니다.\n\n“어떤 괴로움도 덕 있는 이로 하여금 베풂을 향한 사랑을 꺾게 하지 못한다.”",
+    "cover": [
+     242,
+     233,
+     213
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Agastya-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     52,
+     350,
+     112
+    ],
+    "ko": "하늘의 물음",
+    "cover": [
+     242,
+     235,
+     215
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     44,
+     112,
+     350,
+     396
+    ],
+    "ko": "놀라움에 사로잡힌 삭까가 하늘의 모습을 드러내 물었습니다.\n“그대는 무엇에 희망을 두는가? 왜 사랑하는 친척을 떠나 이 고된 삶을 사는가? 바라는 것이 무엇인가?”\n\n보살이 대답했습니다. “거듭 태어남은 큰 괴로움으로 이어집니다… 저는 그 고통에서 중생을 건지기로 결심했습니다.”",
+    "cover": [
+     244,
+     238,
+     220
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Agastya-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     278,
+     740,
+     324
+    ],
+    "ko": "탐욕의 불을 끄는 소원",
+    "cover": [
+     245,
+     241,
+     223
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     324,
+     740,
+     444
+    ],
+    "ko": "고행자가 세속의 권세를 바라지 않음을 기뻐한 삭까는 소원을 들어주겠다고 했습니다. 보살이 골랐습니다.\n\n“아내와 자식, 권세와 재물을 얻고도 만족할 줄 모르고 사람의 마음을 계속 달구는 탐욕의 불이 제 마음에 결코 들어오지 않기를!”",
+    "cover": [
+     241,
+     234,
+     214
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Agastya-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     470,
+     104,
+     776,
+     168
+    ],
+    "ko": "성냄을 멀리하는 소원",
+    "cover": [
+     241,
+     235,
+     216
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     470,
+     168,
+     776,
+     330
+    ],
+    "ko": "삭까가 두 번째 소원을 들어주겠다고 했습니다.\n“중생이 그에 사로잡혀 재산과 신분과 명성을 잃게 되는 성냄의 불이… 저에게서 멀리 있기를!”",
+    "cover": [
+     241,
+     235,
+     215
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Agastya-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     96,
+     358,
+     168
+    ],
+    "ko": "어리석은 이를\n피하는 소원",
+    "cover": [
+     242,
+     235,
+     216
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     34,
+     168,
+     358,
+     356
+    ],
+    "ko": "“어리석은 이를 듣지도, 보지도, 그와 말하지도 않기를.”\n\n삭까는 왜 어리석은 이를 가엾게 여기지 않느냐고 물었습니다. 보살이 대답했습니다. “그를 도울 길이 없습니다. 그는 그릇된 길을 가며 남까지 잘못 이끌고, 잘되라고 일러 주면 화를 냅니다.”",
+    "cover": [
+     241,
+     234,
+     212
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Agastya-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     456,
+     96,
+     780,
+     168
+    ],
+    "ko": "지혜로운 이를\n찾는 소원",
+    "cover": [
+     240,
+     234,
+     212
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     456,
+     168,
+     780,
+     402
+    ],
+    "ko": "“지혜로운 이를 보고, 그의 말을 듣고, 그와 함께 살기를.” 왜일까요?\n“그는 스스로 덕의 길을 걷고 남도 그 길로 이끕니다. 그를 위해 하는 말이면 거칠어도 언짢아하지 않습니다.”",
+    "cover": [
+     241,
+     235,
+     214
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Agastya-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     40,
+     372,
+     64
+    ],
+    "ko": "참된 보시의 소원",
+    "cover": [
+     232,
+     212,
+     149
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     214,
+     64,
+     372,
+     200
+    ],
+    "ko": "삭까가 자신을 위한 것을 청하라 하자 보살이 청했습니다. “제 음식이 다하지 않고 마음이 보시로 아름다우며, 늘 합당한 걸식자를 먹일 수 있기를.” 재물이 아니라 베풀 힘을 청한 것입니다.",
+    "cover": [
+     237,
+     215,
+     156
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Agastya-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     522,
+     30,
+     790,
+     86
+    ],
+    "ko": "마지막 청",
+    "cover": [
+     247,
+     242,
+     229
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     522,
+     86,
+     790,
+     412
+    ],
+    "ko": "마지막 소원으로 보살이 말했습니다.\n“저에게 소원을 주신다면… 이 눈부신 광채로 다시 찾아오지 마십시오.”\n\n“그 놀라운 모습을 바라보면 두렵습니다… 제 고행이 느슨해질까 해서입니다.”",
+    "cover": [
+     247,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/07-Agastya-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     344,
+     760,
+     376
+    ],
+    "ko": "맺음",
+    "cover": [
+     247,
+     242,
+     230
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     376,
+     760,
+     448
+    ],
+    "ko": "삭까는 절하고 사라졌습니다. 새벽이 되자 하늘의 음식이 나타나고 거룩한 선인 수백 명이 찾아왔습니다. 그들의 필요를 채워 드리며 성자(muni)는 숭고한 기쁨을 얻었습니다.\n용감하게 베푸는 일은 수행자에게도 장식이 되거늘, 하물며 집에 사는 이에게야 더 말할 나위가 있겠습니까?",
+    "cover": [
+     247,
+     239,
+     226
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
