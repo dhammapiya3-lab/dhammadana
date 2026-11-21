@@ -272,20 +272,36 @@ def render(src_path, boxes):
                 elif best and best[0][0] >= f0.size - 1.5 * sc_: tb = best[1]
                 else: tb = r0
             layout.append((tb, b["ko"], b.get("align", "center"), em, dark)); continue
-        layout.append((inner_rect(full, tb), b["ko"], b.get("align", "left" if b.get("shape") == "box" else "center"), em, dark))
+        layout.append((inner_rect(full, tb), b["ko"], b.get("align", "left" if b.get("shape") == "box" else "center"), em, dark,
+                       (full > 0) if not b.get("cover") else None))  # 말풍선 모양: 글줄이 안에 드는지 그릴 때 확인
     scale = 2 if W < 1600 else 1
     pil = Image.fromarray(cv2.cvtColor(out, cv2.COLOR_BGR2RGB))
     if scale > 1:
         pil = pil.resize((W * scale, H * scale), Image.LANCZOS)
     d = ImageDraw.Draw(pil)
     drawn = []
-    for (x0, y0, x1, y1), ko, align, em, dark in layout:
+    for it in layout:
+        (x0, y0, x1, y1), ko, align, em, dark = it[:5]; shp = it[5] if len(it) > 5 else None
         pad = max(2, W // 250)  # 글이 테두리에 붙지 않게 (약 3px)
         X0, Y0, X1, Y1 = [v * scale for v in (x0 + pad, y0 + pad, x1 - pad, y1 - pad)]
         cap = int(W * scale / 24)
         # 글자 크기 목표 16 (800px 기준, 운영자 결정 2026-11-21) — 자리가 모자라면 fit 이 알아서 줄임
         cap = min(cap, max(10, int(max(em or 0, TARGET * W / 800) * scale * 1.05)))
         f, lines, lh = fit(d, ko, X1 - X0, Y1 - Y0, cap)
+        if shp is not None:  # 글줄 끝이 말풍선 테두리에 닿으면 한 단계씩 줄임 (2026-11-21, 글자 16 목표로 키운 뒤 생긴 일)
+            dist_ = cv2.distanceTransform(shp.astype(np.uint8), cv2.DIST_L2, 3); mg_ = max(3.0, W * 0.004)
+            def touches(f_, ls_, lh_):
+                yy_ = Y0 + ((Y1 - Y0) - lh_ * len(ls_)) / 2
+                for l_ in ls_:
+                    lw_ = f_.width(d, l_); xa_ = X0 if align == "left" else X0 + ((X1 - X0) - lw_) / 2
+                    for px_, py_ in ((xa_, yy_ + lh_ * .15), (xa_ + lw_, yy_ + lh_ * .15), (xa_, yy_ + lh_ * .85), (xa_ + lw_, yy_ + lh_ * .85)):
+                        px_, py_ = int(min(W - 1, max(0, px_ / scale))), int(min(H - 1, max(0, py_ / scale)))
+                        if dist_[py_, px_] < mg_: return True
+                    yy_ += lh_
+                return False
+            floor_ = max(10, int(11 * W / 800 * scale))  # 800px 기준 11 아래로는 줄이지 않음
+            while f.size > floor_ and touches(f, lines, lh):
+                f, lines, lh = fit(d, ko, X1 - X0, Y1 - Y0, f.size - 1)
         y = Y0 + ((Y1 - Y0) - lh * len(lines)) / 2
         drawn.append(dict(size=f.size / scale, box=[(x0 + pad), y0 + pad, x1 - pad, y1 - pad], ty=(y / scale, (y + lh * len(lines)) / scale),
                           tw=max((f.width(d, l) for l in lines), default=0) / scale, overflow=lh * len(lines) > (Y1 - Y0) + 1))
