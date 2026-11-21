@@ -55,7 +55,7 @@
     {
       "label": "초판",
       "label_display": "",
-      "current": false,
+      "current": true,
       "public": false,
       "page_count": 398,
       "published": "2000년 4월 5일",
