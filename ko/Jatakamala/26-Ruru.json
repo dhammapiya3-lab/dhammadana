@@ -1,0 +1,653 @@
+[
+ {
+  "img": "images/26-Ruru-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     290,
+     130,
+     510,
+     200
+    ],
+    "ko": "황금 사슴의 길",
+    "cover": [
+     245,
+     237,
+     222
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     290,
+     200,
+     510,
+     316
+    ],
+    "ko": "배신과 자비(dayā)의 자따까\n\n덕 있는 이에게는 남의 괴로움 말고는 괴로움이 없습니다.",
+    "cover": [
+     244,
+     237,
+     220
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Ruru-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     16,
+     70,
+     270,
+     368
+    ],
+    "ko": "사람이 다니는 길에서 먼 깊은 숲에 보살이 루루 사슴으로 살았습니다. 그 몸은 순금처럼 빛나고 녹주석과 루비처럼 반짝이는 점무늬로 꾸며져 있었습니다.\n그는 ‘걸어 다니는 보석 창고’였고, 지혜롭고 조심스러웠으며 숲짐승들의 스승이자 아버지로 살았습니다.",
+    "cover": [
+     246,
+     244,
+     238
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Ruru-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     490,
+     50,
+     790,
+     90
+    ],
+    "ko": "“구해 달라는 외침”",
+    "cover": [
+     246,
+     244,
+     235
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     490,
+     90,
+     790,
+     176
+    ],
+    "ko": "“거세게 불어난 물살이 나를 휩쓸어 가는데 도와줄 이가 없구나… 가엾이 여기는 이들이여, 어서 와서 이 불쌍한 자를 구해 주오.”",
+    "cover": [
+     245,
+     243,
+     234
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Ruru-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     366,
+     770,
+     424
+    ],
+    "ko": "대사는 자기 목숨의 위험도 아랑곳하지 않고 거센 물속으로 들어갔습니다. 그는 사람을 등에 업고 힘차게 물살과 싸워 마침내 안전한 강둑에 이르렀습니다.",
+    "cover": [
+     243,
+     242,
+     230
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Ruru-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     380,
+     26,
+     790,
+     62
+    ],
+    "ko": "약속",
+    "cover": [
+     245,
+     245,
+     233
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     380,
+     62,
+     790,
+     180
+    ],
+    "ko": "그 사람은 비밀을 지키겠다고 맹세했지만 사슴은 그에게 일렀습니다.\n“은혜를 아는 것은 점잖은 이의 본성입니다. 그러나 사람의 마음에는 자비가 적을 때가 많습니다. 내가 여기 있다는 것을 아무에게도 말하지 마십시오. 아름다운 모습 때문에 나는 탐나는 사냥감이 됩니다.”",
+    "cover": [
+     244,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Ruru-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     526,
+     66,
+     790,
+     112
+    ],
+    "ko": "왕비의 꿈",
+    "cover": [
+     242,
+     242,
+     228
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     526,
+     112,
+     790,
+     370
+    ],
+    "ko": "한 왕비가 꿈을 꾸었습니다. 눈부시게 빛나는 루루 사슴이 사람의 말로 법을 설하고 있었습니다.\n“대왕이시여, 그 사슴을 얻으십시오. 이 보석 사슴이 있으면 대왕의 내궁은 사슴자리 별이 뜬 하늘처럼 빛날 것입니다.”",
+    "cover": [
+     242,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Ruru-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     80,
+     250,
+     126
+    ],
+    "ko": "탐욕의 시험",
+    "cover": [
+     240,
+     239,
+     223
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     126,
+     250,
+     372
+    ],
+    "ko": "“그 사슴을 보여 주는 이에게 왕께서 아주 부유한 마을과 아름다운 여인 열 명을 주신다.”\n그 사람은 가난했습니다. 그는 덕과 재물을 저울질했습니다. 탐욕에 져서 그는 사슴 대신 세속을 택했습니다.",
+    "cover": [
+     240,
+     239,
+     222
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Ruru-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     544,
+     60,
+     790,
+     106
+    ],
+    "ko": "배신",
+    "cover": [
+     240,
+     241,
+     227
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     544,
+     106,
+     790,
+     370
+    ],
+    "ko": "왕은 군대로 숲을 에워쌌습니다. 배신자의 안내를 받아 몇 사람만 데리고 덤불로 들어갔습니다.\n“여기입니다! 여기 그 귀한 사슴이 있습니다, 대왕이시여.” 그 사람은 상을 받으려고 외쳤습니다.",
+    "cover": [
+     239,
+     237,
+     220
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Ruru-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     80,
+     260,
+     126
+    ],
+    "ko": "‘업의 일격’",
+    "cover": [
+     239,
+     239,
+     222
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     126,
+     260,
+     368
+    ],
+    "ko": "“그가 사슴을 가리키려고 서둘러 팔을 들자, 보라, 그의 손이 팔에서 떨어져 나갔다.”\n“뛰어난 행위로 거룩해진 업은 곧바로 열매를 맺는다.”",
+    "cover": [
+     238,
+     237,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Ruru-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     26,
+     620,
+     70
+    ],
+    "ko": "왕과 사슴",
+    "cover": [
+     201,
+     182,
+     96
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     100,
+     356,
+     700,
+     450
+    ],
+    "ko": "왕은 보석 창고처럼 빛나는 그 몸을 보고 화살을 쏘려 했습니다.\n“멈추십시오, 강한 왕이시여!” 사슴이 또렷한 사람의 말로 말했습니다. “사람의 길에서 먼 내 거처를 누가 대왕께 알려 주었습니까?”",
+    "cover": [
+     242,
+     243,
+     227
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Ruru-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     500,
+     60,
+     790,
+     114
+    ],
+    "ko": "“드러남”",
+    "cover": [
+     246,
+     247,
+     242
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     500,
+     114,
+     790,
+     380
+    ],
+    "ko": "왕이 그 사람을 가리켰습니다. 보살은 그를 곧바로 알아보았습니다.\n“부끄러운 자로다! ‘배은망덕한 사람을 구하느니 물에서 통나무를 건지는 편이 낫다’는 말이 참으로 옳구나.”",
+    "cover": [
+     245,
+     245,
+     240
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Ruru-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     16,
+     30,
+     394,
+     88
+    ],
+    "ko": "왕의 분노",
+    "cover": [
+     246,
+     246,
+     241
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     16,
+     88,
+     394,
+     426
+    ],
+    "ko": "그 사람은 부끄러워하며 고백했습니다. 왕이 외쳤습니다. “하찮은 일로 여기지 마라! 이런 노고에도 마음이 누그러지지 않는 자는 사람 가운데 가장 비천한 자다.”\n왕은 배은망덕한 자를 죽이려고 활을 당겼습니다.",
+    "cover": [
+     247,
+     247,
+     241
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Ruru-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     530,
+     60,
+     770,
+     90
+    ],
+    "ko": "용서를 빌다",
+    "cover": [
+     248,
+     249,
+     243
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     530,
+     90,
+     770,
+     218
+    ],
+    "ko": "“멈추십시오, 대왕이시여! 이미 벌을 받은 이를 치지 마십시오… 그는 머리를 숙이고 명을 기다리고 있습니다.”\n“무언가를 얻으려고 그랬다면, 그 무모한 행위가 바라던 보상을 받게 하소서.”",
+    "cover": [
+     247,
+     248,
+     242
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Ruru-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     330,
+     376,
+     400,
+     404
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     16,
+     300,
+     340,
+     334
+    ],
+    "ko": "왕의 귀환",
+    "cover": [
+     247,
+     248,
+     242
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     16,
+     334,
+     340,
+     440
+    ],
+    "ko": "사슴의 자비에 왕의 마음이 바뀌었습니다. 그는 배신자에게 바라던 재물을 주고, 사슴을 스승으로 받들어 도성으로 모셨습니다.",
+    "cover": [
+     248,
+     248,
+     242
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/26-Ruru-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     306,
+     560,
+     346
+    ],
+    "ko": "자비의 설법",
+    "cover": [
+     242,
+     238,
+     223
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     346,
+     560,
+     440
+    ],
+    "ko": "“자비는 단비가 곡식을 기르듯 덕을 낳는다… 자비 안에 바른 법이 모두 담겨 있다.”\n덕 있는 이에게는 남의 괴로움만이 참된 괴로움입니다.",
+    "cover": [
+     244,
+     239,
+     226
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
