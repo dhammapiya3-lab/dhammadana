@@ -1,0 +1,652 @@
+[
+ {
+  "img": "images/18-Childless-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     26,
+     620,
+     72
+    ],
+    "ko": "자식 없는 이 이야기",
+    "cover": [
+     244,
+     240,
+     229
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     190,
+     72,
+     620,
+     104
+    ],
+    "ko": "『자따까말라(본생 이야기 꽃다발)』에서",
+    "cover": [
+     243,
+     239,
+     227
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     200,
+     370,
+     600,
+     440
+    ],
+    "ko": "보살의 탄생과 부유한 유산을 버린 출가, 그리고 집안 살림의 짐보다 수행자의 삶이 낫다는 것을 밝히는 이야기입니다.",
+    "cover": [
+     244,
+     240,
+     228
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/18-Childless-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     548,
+     104,
+     790,
+     150
+    ],
+    "ko": "시원한 우물",
+    "cover": [
+     246,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     548,
+     150,
+     790,
+     360
+    ],
+    "ko": "부유한 집안에 태어난 보살은 학식과 용모로 존경받았습니다. 그는 친척들에게 ‘시원한 우물’ 같았습니다. 그의 집은 벗과 가난한 이와 걸식하는 이에게 똑같이 열려 있었고, 그는 곳간의 재물로 그들을 도왔습니다.",
+    "cover": [
+     246,
+     241,
+     227
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/18-Childless-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     106,
+     310,
+     152
+    ],
+    "ko": "깨달음",
+    "cover": [
+     245,
+     245,
+     235
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     152,
+     310,
+     340
+    ],
+    "ko": "어머니와 아버지가 세상을 떠나자 그는 마음속으로 놀랐습니다. 집에 사는 삶은 ‘수행을 거스르는 일들로 둘러싸여 있음’을 깨달았습니다. 이익을 좇는 괴로움과 고행림의 행복을 견주어 알았습니다.",
+    "cover": [
+     245,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/18-Childless-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     40,
+     610,
+     82
+    ],
+    "ko": "위대한 떠남",
+    "cover": [
+     241,
+     239,
+     231
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     190,
+     82,
+     610,
+     150
+    ],
+    "ko": "그는 수십만에 이르는 훌륭한 집과 재산을 버려 벗들과 가난한 이들에게 알맞게 나누어 주었습니다. 그리고 집을 떠나 숲의 고요 속에 머물렀습니다.",
+    "cover": [
+     235,
+     234,
+     223
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/18-Childless-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     104,
+     290,
+     178
+    ],
+    "ko": "숲의 수행자",
+    "cover": [
+     250,
+     247,
+     242
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     178,
+     290,
+     364
+    ],
+    "ko": "그는 고요함으로 두드러졌습니다. 오랜 선정 수행으로 감각이 가라앉았습니다. 그의 말에는 ‘이익을 바라는 비참하고 성가신 마음’이 없어, 숲을 찾은 이들의 마음과 귀를 기쁘게 했습니다.",
+    "cover": [
+     250,
+     248,
+     242
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/18-Childless-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     266,
+     54,
+     520,
+     94
+    ],
+    "ko": "“설득”",
+    "cover": [
+     248,
+     246,
+     238
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     266,
+     94,
+     520,
+     346
+    ],
+    "ko": "아버지의 벗이 찾아왔습니다. 그를 존경했지만 그 선택은 이해하지 못했습니다. “스님께서는 생각 없이 행동하신 듯합니다… 왜 부유한 집을 떠나셨습니까? 덕 있는 삶을 사는 이는 숲에서처럼 집에서도 이 법을 지킬 수 있지 않습니까?”",
+    "cover": [
+     247,
+     246,
+     238
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/18-Childless-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     100,
+     290,
+     170
+    ],
+    "ko": "돌아오라는 간청",
+    "cover": [
+     251,
+     248,
+     241
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     24,
+     170,
+     290,
+     392
+    ],
+    "ko": "“어찌 괴로운 삶에 몸을 맡기고 가난이 몸을 얻은 듯한 이 처지를 받아들이십니까? 떠돌이보다 조금도 더 존중받지 못하십니다. 아버지의 집으로 돌아오십시오… 품팔이에게도 제집은 편안하거늘, 하물며 호화로운 집이야 어떻겠습니까!”",
+    "cover": [
+     250,
+     248,
+     239
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/18-Childless-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     120,
+     760,
+     166
+    ],
+    "ko": "편안함이라는 착각",
+    "cover": [
+     241,
+     236,
+     221
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     430,
+     166,
+     760,
+     350
+    ],
+    "ko": "“세상에 사는 이를 두고 ‘편안함’이라는 말을 쓰지 마십시오. 집에 사는 삶은 큰 불안의 삶입니다. 부자는 재산을 지키는 수고에, 가난한 이는 재산을 버는 수고에 시달립니다.”",
+    "cover": [
+     240,
+     234,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/18-Childless-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     104,
+     340,
+     174
+    ],
+    "ko": "법과 어울리지 않음",
+    "cover": [
+     236,
+     230,
+     213
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     174,
+     340,
+     396
+    ],
+    "ko": "“집에 사는 삶은 아무것도 바라지 않는 이에게도, 거짓말하지 않는 이에게도 맞지 않습니다. 성공하려면 대담한 모험이 필요하지만, 법은 고요함에서 맛이 납니다. 둘을 함께 섬길 수는 없습니다.”",
+    "cover": [
+     236,
+     230,
+     211
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/18-Childless-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     120,
+     776,
+     166
+    ],
+    "ko": "채울 수 없는 목마름",
+    "cover": [
+     238,
+     234,
+     216
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     430,
+     166,
+     776,
+     344
+    ],
+    "ko": "“왕이라도 재물에 만족하지 못하니, 바다가 소나기에 만족하지 못하는 것과 같습니다. 재물의 번영은 집에 사는 이를 교만하게 만듭니다. 그런 사람은 상처를 문질러서 낫게 하려는 것과 같습니다.”",
+    "cover": [
+     237,
+     232,
+     213
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/18-Childless-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     336,
+     740,
+     368
+    ],
+    "ko": "‘세 마리 뱀’",
+    "cover": [
+     248,
+     247,
+     246
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     368,
+     740,
+     446
+    ],
+    "ko": "“집은 많은 무거운 괴로움이 사는 곳입니다. 거만, 교만, 어리석음이라는 뱀들이 들끓습니다. 그 안에서 고요함의 아름다운 행복은 무너집니다. 그러니 누가 무너짐으로 이끄는 그 거처를 고르겠습니까?”",
+    "cover": [
+     247,
+     247,
+     245
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/18-Childless-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     132,
+     370,
+     178
+    ],
+    "ko": "떠남의 기쁨",
+    "cover": [
+     235,
+     230,
+     212
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     178,
+     370,
+     352
+    ],
+    "ko": "“숲에서는 마음이 고요합니다. 누더기를 걸쳤어도 나는 숲속에서 기쁩니다. 바르지 못함에 물든 행복은 바라지 않습니다. 독 묻은 음식처럼 그것을 싫어합니다.”",
+    "cover": [
+     234,
+     228,
+     209
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/18-Childless-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     460,
+     130,
+     780,
+     180
+    ],
+    "ko": "공경을 올리다",
+    "cover": [
+     234,
+     229,
+     207
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     460,
+     180,
+     780,
+     350
+    ],
+    "ko": "설득력 있는 말이 아버지의 벗에게 깊은 감명을 주었습니다. 그는 더없이 정성스러운 공양으로 대사를 대접하며 높은 존경을 표했습니다.",
+    "cover": [
+     231,
+     226,
+     203
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/18-Childless-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     50,
+     630,
+     96
+    ],
+    "ko": "출리(nekkhamma)의 덕",
+    "cover": [
+     238,
+     236,
+     219
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     170,
+     96,
+     630,
+     204
+    ],
+    "ko": "이 이야기는 세상을 떠나는 덕, 곧 출리(nekkhamma)를 권하는 이야기입니다. 떠남의 행복을 한 번 맛본 이는 집에 사는 삶이 고요함과 맞지 않음을 알기에 세상으로 돌아가지 않습니다.",
+    "cover": [
+     232,
+     226,
+     200
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
