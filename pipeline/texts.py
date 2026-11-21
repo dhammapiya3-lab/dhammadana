@@ -7,7 +7,11 @@ READY = json.load(open("data/rendered.json"))
 out = {}
 for key in sorted(READY):
     try: pages = json.load(open(f"ko/{key}.json", encoding="utf-8"))
-    except FileNotFoundError: continue
+    except FileNotFoundError:
+        try: cap = json.load(open(f"new/{key}/captions.json", encoding="utf-8"))  # 새로 그린 책: 그림마다 해설 한 줄
+        except FileNotFoundError: continue
+        out[key] = [[cap.get(str(i), "")] if cap.get(str(i)) else [] for i in range(1, READY[key] + 1)]
+        continue
     res = []
     for p in pages[:READY[key]]:
         items = []

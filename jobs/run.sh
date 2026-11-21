@@ -34,6 +34,7 @@ for d in out/img/*/*; do [ -d "$d/s" ] || continue; k=${d#out/img/}; rm -rf "/tm
 cp reports/qa.md /tmp/qa/qa.md
 (cd /tmp/qa && git add -A && git -c user.name=storybooks-bot -c user.email=actions@users.noreply.github.com commit -qm "검수용 한글 그림 [skip ci]" && git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}" storybooks-qa) || true
 python3 pipeline/upload_r2.py
+python3 pipeline/new_books.py   # 새로 그린 그림책 (new/) — 바뀐 이야기만
 # 공개 주소로 잘 보이는지 확인
 first=$(ls -d out/img/*/* 2>/dev/null | head -1 | sed 's#out/img/##')
 curl -s -o /dev/null -w "공개 주소 확인: %{http_code} %{size_download}바이트\n" "https://files.dhammadana.kr/storybooks/$first/big/01.jpg"

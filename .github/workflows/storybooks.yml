@@ -3,7 +3,7 @@ name: storybooks-pipeline
 on:
   push:
     branches: [storybooks-src]
-    paths: ["jobs/**", "ko/**"]
+    paths: ["jobs/**", "ko/**", "new/**"]
 permissions:
   contents: write
 concurrency: { group: storybooks, cancel-in-progress: false }

@@ -53,7 +53,15 @@ def credit(size, lines):  # 출처 쪽 (그림과 같은 크기)
         y += int((f.size) * (2.0 if i == 0 else 1.7))
     b = io.BytesIO(); im.save(b, "JPEG", quality=90); return b.getvalue()
 
+CUR = {"book": ""}  # 지금 만드는 책 — 우리가 새로 그린 책(catalog own)은 출처 쪽이 다름
 def credit_lines(title):
+    if CAT["books"].get(CUR["book"], {}).get("own"):
+        return [title, "", "붓다담마 그림책 (storybooks.dhammadana.kr) — 붓다담마 법보시 도서관이 새로 만듦",
+                "원전: 『자따까』와 그 주석서 (빠알리 삼장 6차 결집본)",
+                "그림: Google Gemini로 그림 · 해설: Anthropic의 AI Claude를 사용해 짓고 검수함", "",
+                "크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 (CC BY-SA 4.0)",
+                "출처를 밝히면 누구나 자유롭게 나누고 고쳐 쓸 수 있으며, 고친 것도 같은 라이선스로 나누어야 합니다.",
+                "https://creativecommons.org/licenses/by-sa/4.0/deed.ko", "", "이 법보시의 공덕을 모든 존재와 함께 나눕니다."]
     return [title, "", "원작: Dharma Storybooks (dharma-storybooks.net)", "기획·지도: 아난다조띠 스님 (Bhante Ānandajoti)",
             "한국어판: 붓다담마 그림책 (storybooks.dhammadana.kr) — 붓다담마 법보시 도서관 옮김",
             "번역: Anthropic의 AI Claude를 사용해 옮기고 검수함", "",
@@ -77,6 +85,7 @@ tmp = tempfile.mkdtemp()
 books = sorted({k.split("/")[0] for k in READY})
 n = 0
 for book in books:
+    CUR["book"] = book
     sts = stories(book)
     if not sts: continue
     bt = btitle(book)
