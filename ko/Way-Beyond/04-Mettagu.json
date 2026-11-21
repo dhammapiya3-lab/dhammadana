@@ -1,0 +1,230 @@
+[
+ {
+  "img": "images/04-Mettagu-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     36,
+     500,
+     192
+    ],
+    "ko": "빠라야나 왁가\n괴로움과 집착,\n거센 물을 건넘에 관한 문답",
+    "cover": null,
+    "align": "left",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Mettagu-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     46,
+     770,
+     150
+    ],
+    "ko": "“세상에 있는 이들에게 이 수많은 괴로움은\n어떻게 생겨났습니까?”",
+    "cover": [
+     242,
+     238,
+     228
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Mettagu-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     16,
+     48,
+     556,
+     204
+    ],
+    "ko": "“괴로움은 모두 바탕(우빠디)에\n집착하는 데서 생긴다. 괴로움의\n참된 근원을 보아 집착하지 말아라.”",
+    "cover": [
+     243,
+     240,
+     230
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Mettagu-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     20,
+     380,
+     152
+    ],
+    "ko": "어리석은 이\n바탕에 집착하고\n괴로움으로 돌아간다.",
+    "cover": [
+     241,
+     237,
+     226
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     430,
+     20,
+     786,
+     152
+    ],
+    "ko": "지혜로운 이\n근원을 알고\n집착을 삼간다.",
+    "cover": [
+     241,
+     235,
+     224
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Mettagu-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     276,
+     74,
+     744,
+     156
+    ],
+    "ko": "지혜로운 이는 태어남과 늙음과 슬픔과\n비탄의 거센 물을 어떻게 건넙니까?",
+    "cover": null,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Mettagu-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     74,
+     450,
+     216
+    ],
+    "ko": "이 가르침을 알고\n마음챙기며 살아가면\n세상에 대한 집착을\n완전히 건널 수 있다.",
+    "cover": null,
+    "align": "center",
+    "em": 23,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Mettagu-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     76,
+     24,
+     748,
+     110
+    ],
+    "ko": "위와 아래와 그 사이 가운데의 것들, 그리고\n의식에 대한 즐김을 떨쳐 버려라.",
+    "cover": [
+     247,
+     245,
+     234
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Mettagu-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     284,
+     24,
+     770,
+     156
+    ],
+    "ko": "사랑하는 것들을 버리고\n마음챙기며 살아가는 이는\n바로 여기서 슬픔과 괴로움을 버린다.",
+    "cover": [
+     249,
+     246,
+     235
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Mettagu-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     38,
+     480,
+     112
+    ],
+    "ko": "집착을 여읨이 잘 설해졌습니다.\n힘 있는 분을 뵙고 저는 그분께 예배합니다.",
+    "cover": null,
+    "align": "left",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Mettagu-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     38,
+     690,
+     112
+    ],
+    "ko": "깨달은 바라문은 아무것도 붙잡지 않고 윤회의 족쇄를 풀었습니다.\n갈애를 여읜 그는 저 너머로 건너갔습니다.",
+    "cover": null,
+    "align": "left",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
