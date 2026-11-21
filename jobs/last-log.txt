@@ -1,12 +1,12 @@
-Jatakamala 14-Suparaga 15 장
+Jatakamala 15-Fish 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 77 개 / 한글판 이야기 270 편
+R2 에 올림: 77 개 / 한글판 이야기 271 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 802338바이트
-이야기 Jatakamala/14-Suparaga {'pdf': 14033906, 'zip': 13756657, 'n': 15}
-책 Jatakamala {'pdf': 180825071, 'pdfs': 18055074, 'zip': 180491435, 'stories': 14, 'n': 207}
+공개 주소 확인: 200 737610바이트
+이야기 Jatakamala/15-Fish {'pdf': 14488076, 'zip': 14213327, 'n': 15}
+책 Jatakamala {'pdf': 195043832, 'pdfs': 19416127, 'zip': 194704568, 'stories': 15, 'n': 222}
 내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 270 이야기
+글로 보기: 271 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
