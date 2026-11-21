@@ -1,0 +1,597 @@
+[
+ {
+  "img": "images/15-Fish-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     160,
+     600,
+     250
+    ],
+    "ko": "본생 이야기 꽃다발:\n물고기 이야기",
+    "cover": [
+     245,
+     241,
+     227
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     200,
+     250,
+     600,
+     290
+    ],
+    "ko": "진실(sacca)의 힘을 보여 주는 자따까",
+    "cover": [
+     244,
+     240,
+     228
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-Fish-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     30,
+     590,
+     104
+    ],
+    "ko": "들어가는 말\n바른 행실을 닦는 이의 뜻은 이 세상에서도 이루어지고 번성하니, 다음 세상에서야 더 말할 나위가 있겠습니까?",
+    "cover": [
+     232,
+     242,
+     236
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     230,
+     392,
+     570,
+     434
+    ],
+    "ko": "그러므로 완전히 맑은 행실을 힘써 닦아야 합니다.",
+    "cover": [
+     228,
+     239,
+     232
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-Fish-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     30,
+     400,
+     100
+    ],
+    "ko": "보살은 연꽃과 수련으로 꾸민 아름다운 호수에서 물고기들의 우두머리로 살았습니다.",
+    "cover": [
+     243,
+     236,
+     221
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     506,
+     354,
+     790,
+     440
+    ],
+    "ko": "물고기로 태어났지만 그는 오로지 남을 이롭게 하는 일에 몸을 바쳤습니다. 여러 전생에서 남을 돕던 버릇 때문이었습니다.",
+    "cover": [
+     248,
+     238,
+     221
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-Fish-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     10,
+     50,
+     222,
+     350
+    ],
+    "ko": "그는 물고기 떼를 제 자식처럼 사랑했습니다.\n\n그의 감화로 물고기들은 서로 잡아먹는 잔인한 본성을 잊었습니다.\n\n그는 그들이 서로 해치지 않게 하고 서로의 정을 키워 주었습니다.",
+    "cover": [
+     246,
+     239,
+     225
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     624,
+     180,
+     790,
+     290
+    ],
+    "ko": "물고기 떼는 바른 왕 아래 도시가 번영하듯 번성했습니다.",
+    "cover": [
+     245,
+     238,
+     221
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-Fish-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     80,
+     254,
+     166
+    ],
+    "ko": "그러나 행운은 덧없습니다. 비의 신들이 맡은 일을 소홀히 했습니다.",
+    "cover": [
+     245,
+     230,
+     180
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     540,
+     80,
+     790,
+     180
+    ],
+    "ko": "더운 철이 왔습니다. 지쳐 버린 햇살이 날마다 호수의 물을 마셨습니다.",
+    "cover": [
+     246,
+     230,
+     184
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-Fish-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     380,
+     316,
+     440
+    ],
+    "ko": "더위에 들뜬 땅과 바람도 해와 함께 물을 삼켰습니다.",
+    "cover": [
+     235,
+     218,
+     180
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     426,
+     380,
+     790,
+     440
+    ],
+    "ko": "제 성냄을 달래려는 듯 물을 말려 버렸고, 아름다운 호수는 진흙 웅덩이가 되었습니다.",
+    "cover": [
+     239,
+     219,
+     185
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-Fish-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     30,
+     250,
+     100
+    ],
+    "ko": "물고기 떼는 비참해졌습니다. 그저 누워 헐떡일 수밖에 없었습니다.",
+    "cover": [
+     247,
+     239,
+     221
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     596,
+     312,
+     790,
+     446
+    ],
+    "ko": "우리의 불행을 보고 원수들이 몰려들었습니다. 물이 다 마르기를 기다렸다가 우리를 삼키려 합니다.",
+    "cover": [
+     248,
+     239,
+     222
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-Fish-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     50,
+     366,
+     104
+    ],
+    "ko": "보살은 무리의 괴로움을 보았습니다. 구할 길은 오직 하나, 자신의 진실함이었습니다.",
+    "cover": [
+     238,
+     219,
+     187
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     460,
+     50,
+     756,
+     104
+    ],
+    "ko": "깊은 한숨을 쉬고 그는 하늘을 우러러 더없는 진실을 말하려 했습니다.",
+    "cover": [
+     242,
+     219,
+     190
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-Fish-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     56,
+     610,
+     156
+    ],
+    "ko": "“아무리 돌아보아도, 아무리 괴로울 때라도 살아 있는 존재를 해친 적이 있다고 떠올릴 수 없으니…”",
+    "cover": [
+     241,
+     235,
+     220
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     180,
+     158,
+     620,
+     222
+    ],
+    "ko": "“…이 진실의 힘으로 천신들의 왕께서 비를 내려 못들을 채워 주시기를.”",
+    "cover": [
+     244,
+     234,
+     217
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-Fish-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     410,
+     40,
+     790,
+     220
+    ],
+    "ko": "놀랍다! 기적이다! 진실의 힘으로 철 아닌 때에 비구름이 나타났습니다.\n\n깊은 천둥이 울리고 번갯불이 검푸른 구름 꼭대기를 꾸몄습니다.",
+    "cover": [
+     231,
+     218,
+     193
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-Fish-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     100,
+     320,
+     240
+    ],
+    "ko": "빗줄기가 쏟아졌습니다. 젖은 흙 냄새가 가득했습니다.\n\n우르릉거리는 천둥에 공작들이 기뻐 울며 춤을 추었습니다.",
+    "cover": [
+     240,
+     229,
+     204
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-Fish-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     10,
+     50,
+     330,
+     150
+    ],
+    "ko": "물고기 떼는 살 희망을 되찾았습니다. 그러나 보살은 비가 너무 일찍 그칠까 걱정했습니다.",
+    "cover": [
+     243,
+     232,
+     212
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     280,
+     330,
+     664,
+     446
+    ],
+    "ko": "“울려라, 빳준나여! 까마귀들의 기쁨을 흩어 버려라! 번갯불의 불꽃 같은 빛을 지닌 보석처럼 너의 물을 쏟아부어라!”",
+    "cover": [
+     241,
+     229,
+     208
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-Fish-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     420,
+     140,
+     784,
+     282
+    ],
+    "ko": "물고기의 힘에 놀란 삭까가 몸소 나타났습니다.\n“이 비구름이 물을 쏟아붓는 것은 틀림없이, 힘센 물고기의 왕이여, 그대의 뛰어난 진실함 덕분이로다.”",
+    "cover": [
+     238,
+     227,
+     203
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-Fish-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     450,
+     226,
+     780,
+     296
+    ],
+    "ko": "“나는 덕 있는 이를 도와야 한다. 이 땅에 다시는 이런 재앙이 찾아오지 않으리라.”",
+    "cover": [
+     238,
+     230,
+     211
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     450,
+     340,
+     780,
+     412
+    ],
+    "ko": "물고기를 찬탄한 뒤 신은 사라졌습니다. 호수에는 물이 아주 많이 불어났습니다.",
+    "cover": [
+     240,
+     231,
+     212
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-Fish-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     136,
+     570,
+     236
+    ],
+    "ko": "이처럼 바른 행실을 닦는 이의 뜻은 이루어집니다.\n\n물고기 이야기는 가르칩니다. 완전히 맑은 행실을 힘써 닦아야 합니다.",
+    "cover": [
+     244,
+     237,
+     219
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
