@@ -1,12 +1,12 @@
-Jatakamala 09-Visvantara 15 장
+Jatakamala 10-Sacrifice 14 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 77 개 / 한글판 이야기 265 편
+R2 에 올림: 75 개 / 한글판 이야기 266 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 961491바이트
-이야기 Jatakamala/09-Visvantara {'pdf': 11611059, 'zip': 11333205, 'n': 15}
-책 Jatakamala {'pdf': 115247324, 'pdfs': 11501975, 'zip': 114941357, 'stories': 9, 'n': 133}
+공개 주소 확인: 200 1081003바이트
+이야기 Jatakamala/10-Sacrifice {'pdf': 12354153, 'zip': 12082366, 'n': 14}
+책 Jatakamala {'pdf': 127334706, 'pdfs': 12756726, 'zip': 127023323, 'stories': 10, 'n': 147}
 내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 265 이야기
+글로 보기: 266 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
