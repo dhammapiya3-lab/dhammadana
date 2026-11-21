@@ -476,6 +476,11 @@ for Q in PAGES:
     body += f"=== {Q['lab']} ===\n\n" + '\n\n'.join(Q['paras']) + '\n\n'
 body = body.rstrip() + '\n'
 out = os.path.join(REPO, 'content/texts', f'{BK}.json')
+# 운영자가 정한 교정 (인쇄본과 다름) — 2026-11-22: 7쪽 역자 서문 띄어쓰기
+FIXES = [('위빠싸나를 재현하는데 도움이', '위빠싸나를 재현하는 데 도움이')]
+for a, b2 in FIXES:
+    assert body.count(a) == 1, a
+    body = body.replace(a, b2)
 json.dump({'book': BK, 'edition': ED, 'toc': toc, 'images': [], 'body': body}, open(out, 'w'), ensure_ascii=False, indent=1)
 miss = [(pg, t) for lv, t, pg in TOCP if lv == 1 and pg and not any(t == w for _, w in found_sub)]
 print(dict(log)); print('장', len(chapters), '소제목', len(subs), '각주', len(FN), '쪽', len(PAGES))
