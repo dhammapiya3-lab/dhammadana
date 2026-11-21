@@ -1,0 +1,581 @@
+[
+ {
+  "img": "images/26-Ruru-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "the",
+   "Golden",
+   "Deer",
+   "Jataka",
+   "Tale",
+   "Betrayal",
+   "and",
+   "Mercy",
+   "(Daya)",
+   "the",
+   "virtuous,",
+   "suffering",
+   "exists",
+   "but",
+   "that",
+   "others."
+  ]
+ },
+ {
+  "img": "images/26-Ruru-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Deep",
+   "the",
+   "wilderness,",
+   "far",
+   "from",
+   "human",
+   "paths,",
+   "lived",
+   "the",
+   "Bodhisattva",
+   "Ruru-deer.",
+   "His",
+   "body",
+   "shone",
+   "like",
+   "pure",
+   "gold,",
+   "adorned",
+   "spots",
+   "that",
+   "gleamed",
+   "like",
+   "beryls",
+   "and",
+   "rubies.",
+   "was",
+   "“moving",
+   "treasury",
+   "jewels,”",
+   "wise",
+   "and",
+   "cautious,",
+   "living",
+   "teacher",
+   "and",
+   "father",
+   "the",
+   "forest",
+   "animals."
+  ]
+ },
+ {
+  "img": "images/26-Ruru-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     495,
+     91
+    ],
+    "bbox": [
+     1075,
+     215,
+     2301,
+     856
+    ],
+    "shape": "bubble",
+    "en": "‘The rapid and swollen stream me away, and there is Come to me, pitiful quickly to rescue",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "carries",
+   "help...",
+   "people;",
+   "come",
+   "wretch.’"
+  ]
+ },
+ {
+  "img": "images/26-Ruru-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Without",
+   "minding",
+   "the",
+   "risk",
+   "his",
+   "own",
+   "life,",
+   "the",
+   "Great",
+   "Being",
+   "entered",
+   "the",
+   "rushing",
+   "water.",
+   "bore",
+   "the",
+   "man’s",
+   "weight,",
+   "fighting",
+   "the",
+   "current",
+   "with",
+   "high",
+   "vigour",
+   "until",
+   "they",
+   "reached",
+   "the",
+   "safety",
+   "the",
+   "bank."
+  ]
+ },
+ {
+  "img": "images/26-Ruru-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     387,
+     54
+    ],
+    "bbox": [
+     731,
+     129,
+     2533,
+     1184
+    ],
+    "shape": "bubble",
+    "en": "23 The man vowed secrecy, but the Deer warned him: “Gratitude is natural to gentleman. But the of men often possess little mercy. Do not tell anyone am here. My beautiful figure makes me too desirable prey.” “all",
+    "conf": 56
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/26-Ruru-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Queen’s",
+   "Dream",
+   "Queen",
+   "beheld",
+   "vision:",
+   "Ruru-deer",
+   "resplendent",
+   "brilliancy",
+   "preaching",
+   "the",
+   "Law",
+   "voice.",
+   "“Endeavour",
+   "obtain",
+   "that",
+   "deer,",
+   "lord.",
+   "Adorned",
+   "with",
+   "this",
+   "jewel-deer,",
+   "your",
+   "zenana",
+   "would",
+   "resplendent",
+   "the",
+   "sky",
+   "with",
+   "the",
+   "Deer-asterism.”"
+  ]
+ },
+ {
+  "img": "images/26-Ruru-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     72,
+     85
+    ],
+    "bbox": [
+     182,
+     99,
+     929,
+     1465
+    ],
+    "shape": "bubble",
+    "en": "Test of Greed “Whosoever will show deer to him the king avery rich village full ten lovely women.” man was poor. He weighed Virtue against Wealth. Overcome by cupidity, he chose the over the deer.",
+    "conf": 88
+   }
+  ],
+  "loose": [
+   "The",
+   "that",
+   "gives",
+   "and",
+   "The"
+  ]
+ },
+ {
+  "img": "images/26-Ruru-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Betrayal",
+   "The",
+   "King",
+   "encircled",
+   "the",
+   "forest",
+   "with",
+   "his",
+   "army.",
+   "Guided",
+   "the",
+   "traitor,",
+   "entered",
+   "the",
+   "thicket",
+   "with",
+   "select",
+   "few.",
+   "“Here!",
+   "Here",
+   "that",
+   "precious",
+   "deer,",
+   "Your",
+   "Majesty,’",
+   "the",
+   "man",
+   "cried",
+   "out,",
+   "eager",
+   "for",
+   "his",
+   "reward."
+  ]
+ },
+ {
+  "img": "images/26-Ruru-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Karmic",
+   "Strike’",
+   "“He",
+   "raised",
+   "his",
+   "arm,",
+   "eager",
+   "was",
+   "point",
+   "the",
+   "deer,",
+   "and",
+   "lo,",
+   "lo,",
+   "his",
+   "hand",
+   "fell",
+   "down",
+   "off",
+   "his",
+   "arm.”",
+   "“Actions",
+   "hallowed",
+   "extraordinary",
+   "performance",
+   "ripen",
+   "immediately.”"
+  ]
+ },
+ {
+  "img": "images/26-Ruru-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "King",
+   "saw",
+   "lustre",
+   "treasury",
+   "jewels.",
+   "prepared",
+   "loose",
+   "his",
+   "arrow.",
+   "“Stop,",
+   "mighty",
+   "prince!”",
+   "the",
+   "Deer",
+   "said",
+   "clear",
+   "human",
+   "voice",
+   "“Who",
+   "discovered",
+   "abode",
+   "thee,",
+   "far",
+   "from",
+   "the",
+   "paths",
+   "men?”",
+   "shinging",
+   "the"
+  ]
+ },
+ {
+  "img": "images/26-Ruru-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Exposure”",
+   "The",
+   "King",
+   "pointed",
+   "the",
+   "man.",
+   "The",
+   "Bodhisattva",
+   "recognized",
+   "him",
+   "immediately.",
+   "“Fie",
+   "upon",
+   "him!",
+   "true",
+   "saying:",
+   "Better",
+   "take",
+   "log",
+   "out",
+   "the",
+   "water",
+   "than",
+   "save",
+   "ungrateful",
+   "person.”"
+  ]
+ },
+ {
+  "img": "images/26-Ruru-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "King’s",
+   "Wrath",
+   "The",
+   "man",
+   "confessed",
+   "shame.",
+   "The",
+   "King",
+   "cried,",
+   "“Do",
+   "not",
+   "think",
+   "trifle!",
+   "whose",
+   "heart",
+   "not",
+   "softened",
+   "such",
+   "exertion",
+   "vile",
+   "representative",
+   "his",
+   "fellow-",
+   "creatures.”",
+   "The",
+   "King",
+   "bent",
+   "his",
+   "bow",
+   "kill",
+   "the",
+   "ungrateful",
+   "man."
+  ]
+ },
+ {
+  "img": "images/26-Ruru-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Intercession",
+   "‘Stop,",
+   "Your",
+   "Majesty!",
+   "not",
+   "strike",
+   "one",
+   "already",
+   "standing",
+   "here",
+   "with",
+   "bent",
+   "head",
+   "awaiting",
+   "thy",
+   "wanted",
+   "obtain",
+   "something",
+   "acting",
+   "so,",
+   "let",
+   "not",
+   "his",
+   "rash",
+   "deed",
+   "lack",
+   "that"
+  ]
+ },
+ {
+  "img": "images/26-Ruru-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     253,
+     346
+    ],
+    "bbox": [
+     681,
+     969,
+     1276,
+     1332
+    ],
+    "shape": "bubble",
+    "en": "by the traitor the’ his as",
+    "conf": 72
+   }
+  ],
+  "loose": [
+   "The",
+   "Royal",
+   "Return",
+   "The",
+   "King’s",
+   "heart",
+   "was",
+   "Deer’s",
+   "mercy.",
+   "gave",
+   "the",
+   "wealth",
+   "coveted",
+   "and",
+   "teacher,",
+   "leading",
+   "him",
+   "the",
+   "capital."
+  ]
+ },
+ {
+  "img": "images/26-Ruru-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Sermon",
+   "Mercy",
+   "‘Mercy",
+   "engenders",
+   "virtues,",
+   "fructifying",
+   "rain",
+   "makes",
+   "the",
+   "crops",
+   "grow...",
+   "Mercy,",
+   "the",
+   "whole",
+   "Righteousness",
+   "contained.’",
+   "the",
+   "virtuous,",
+   "the",
+   "suffering",
+   "others",
+   "the",
+   "only",
+   "true",
+   "suffering."
+  ]
+ }
+]

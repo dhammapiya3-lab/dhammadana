@@ -1,0 +1,678 @@
+[
+ {
+  "img": "images/28-Ksantivadin-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     541,
+     71
+    ],
+    "bbox": [
+     1663,
+     231,
+     2394,
+     311
+    ],
+    "shape": "box",
+    "en": "The Preacher of Forbearance Soe",
+    "conf": 34
+   }
+  ],
+  "loose": [
+   "Ina",
+   "forest",
+   "lovely",
+   "its",
+   "solitude,",
+   "lived",
+   "ascetic",
+   "known",
+   "Ksantivadin.",
+   "Having",
+   "forsaken",
+   "the",
+   "householder",
+   "life,",
+   "which",
+   "beset",
+   "passion",
+   "and",
+   "material",
+   "interest,",
+   "sought",
+   "the",
+   "peace",
+   "the",
+   "homeless",
+   "state",
+   "those",
+   "who",
+   "have",
+   "wholly",
+   "imbibed",
+   "the",
+   "virtue",
+   "forbearance",
+   "and",
+   "are",
+   "great",
+   "keeping",
+   "their",
+   "there",
+   "nothing",
+   "unbearable.",
+   "tranquillity,"
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     128,
+     99
+    ],
+    "bbox": [
+     136,
+     179,
+     2043,
+     1041
+    ],
+    "shape": "bubble",
+    "en": "Ohe ‘Royal al Antrusion nr Tt was the height of summer. The King of ae the land, seized by longing to play in the water, brought his harem to the forest. ERI While he was rambling in the wood... ba he embellished lished its splendour by the ri rich display of the graceful sport of himself and his wanton retinue.",
+    "conf": 32
+   }
+  ],
+  "loose": [
+   "fey"
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     391,
+     333
+    ],
+    "bbox": [
+     734,
+     1071,
+     1921,
+     1422
+    ],
+    "shape": "box",
+    "en": "Ohe Sfumber of Antoxication Tired from incessant playing and overcome by drunkenness, the King fell into deep sleep. His wives, enchanted by the manifold loveliness of the forest and no longer watched, wandered away to admire the woods. “Disregarding the entreaties of the female servants, they greedily laid hands pen the lovely flowers lowers and twigs... prompted by their petulance.” nce.”",
+    "conf": 43
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/28-Ksantivadin-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     215,
+     67
+    ],
+    "bbox": [
+     136,
+     159,
+     1852,
+     992
+    ],
+    "shape": "bubble",
+    "en": "@he Encounter in the Grove wth CWandering through the trees, the queens discovered the hermitage. The very sight of the Muni’s tranquility subdued their frivality They bowed and sat around hin, listening as he offered them the hospitality of wisdom",
+    "conf": 36
+   },
+   {
+    "seed": [
+     273,
+     398
+    ],
+    "bbox": [
+     767,
+     1303,
+     1921,
+     1432
+    ],
+    "shape": "box",
+    "en": "The lustre of his penance subdued the minds of those royal wives... they went to him in humble attitude.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/28-Ksantivadin-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     672,
+     228
+    ],
+    "bbox": [
+     1971,
+     717,
+     2523,
+     1313
+    ],
+    "shape": "bubble",
+    "en": "are the ornaments of trees, it is flashes of lightning that adorn the big rain-clouds... but virtues brought to perfection are the proper ornament of living beings.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "Crue",
+   "Adornment",
+   "taught",
+   "them",
+   "that",
+   "beauty",
+   "and",
+   "high",
+   "birth",
+   "are",
+   "fleeting,",
+   "but",
+   "virtue",
+   "the",
+   "only",
+   "true",
+   "decoration",
+   "for",
+   "buman",
+   "being."
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     122,
+     252
+    ],
+    "bbox": [
+     264,
+     777,
+     1108,
+     1015
+    ],
+    "shape": "box",
+    "en": "His colour altere drops of sweat appeared on his face... his eyes tinged reddish, squinted, rolled, stared.",
+    "conf": 50
+   }
+  ],
+  "loose": [
+   "Wrathful",
+   "Awakening",
+   "The",
+   "King",
+   "awoke",
+   "find",
+   "his",
+   "side",
+   "empty.",
+   "Jealousy",
+   "and",
+   "lingering",
+   "intoxication",
+   "clouded",
+   "his",
+   "mind.",
+   "tracked",
+   "the",
+   "trail",
+   "discarded",
+   "flowers",
+   "and",
+   "betel-nut",
+   "juice",
+   "until",
+   "found",
+   "his",
+   "wives",
+   "sitting",
+   "before",
+   "the",
+   "ascetic."
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     502,
+     306
+    ],
+    "bbox": [
+     1458,
+     965,
+     2447,
+     1309
+    ],
+    "shape": "bubble",
+    "en": "he Aecusation Seeing the Sage surrounded by his wives, the King lost all countenance. He accused the holy man of being lecher in disguise.",
+    "conf": 33
+   },
+   {
+    "seed": [
+     485,
+     400
+    ],
+    "bbox": [
+     1544,
+     1263,
+     2367,
+     1385
+    ],
+    "shape": "box",
+    "en": "Who is that knave who injures our majesty casting his eyes on our wives? Under the disguise of",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Muni",
+   "this",
+   "hypocrite",
+   "acts",
+   "like",
+   "fowler."
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     123,
+     263
+    ],
+    "bbox": [
+     264,
+     777,
+     1108,
+     1071
+    ],
+    "shape": "box",
+    "en": "man speaks only of forbearance, but he does not practise it... What has this man with unrestrained senses to do in the penance-forest?",
+    "conf": 57
+   }
+  ],
+  "loose": [
+   "Plea",
+   "Rejected",
+   "The",
+   "queens",
+   "begged",
+   "the",
+   "King",
+   "not",
+   "reckless",
+   "act,",
+   "identifying",
+   "the",
+   "man",
+   "the",
+   "holy",
+   "Ksantivadin.",
+   "But",
+   "their",
+   "defense",
+   "only",
+   "convinced",
+   "the",
+   "King",
+   "that",
+   "the",
+   "Sage",
+   "had",
+   "already",
+   "won",
+   "their",
+   "affections.",
+   "Wed",
+   "lan"
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     509,
+     304
+    ],
+    "bbox": [
+     1458,
+     969,
+     2447,
+     1309
+    ],
+    "shape": "bubble",
+    "en": "Ghe Counsel of Reflection The Bodhisattva was not disturbed. He pitied the monarch and advised him against rashness, warning that truth cannot be discerned through anger.",
+    "conf": 88
+   },
+   {
+    "seed": [
+     484,
+     397
+    ],
+    "bbox": [
+     1541,
+     1260,
+     2367,
+     1389
+    ],
+    "shape": "box",
+    "en": "To such as you... it never behoves to do any rash action. You should rather follow, therefore,",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "the",
+   "way",
+   "reflection."
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     121,
+     294
+    ],
+    "bbox": [
+     205,
+     860,
+     1200,
+     1286
+    ],
+    "shape": "box",
+    "en": "Ghe Gest of Torben Scornfully, the King cried, ‘Let us see your attachment to forbearance!” He struck the Sage’s outstretched hand, severing it like lotus from its stalk. Yet the Bodhisattva did not feel so much pain... as sorrow concerning the cutter, whose future misfortune he saw.",
+    "conf": 36
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/28-Ksantivadin-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Unshakable",
+   "Vow",
+   "Finding",
+   "the",
+   "Sage",
+   "silent",
+   "and",
+   "defiant",
+   "his",
+   "patience,",
+   "the",
+   "King",
+   "cut",
+   "off",
+   "his",
+   "other",
+   "hand,",
+   "his",
+   "arms,",
+   "ears,",
+   "nose,",
+   "and",
+   "feet.",
+   "Yet",
+   "the",
+   "Sage",
+   "felt",
+   "anger,",
+   "only",
+   "deep",
+   "pity",
+   "for",
+   "destroying",
+   "his",
+   "own",
+   "karma",
+   "His",
+   "knowledge",
+   "that",
+   "the",
+   "machinery",
+   "his",
+   "body",
+   "must",
+   "eventually",
+   "come",
+   "end,",
+   "and",
+   "his",
+   "habitual",
+   "practice",
+   "forbearance",
+   "against",
+   "everybody",
+   "made",
+   "him",
+   "aman"
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     145,
+     70
+    ],
+    "bbox": [
+     195,
+     182,
+     1068,
+     602
+    ],
+    "shape": "box",
+    "en": "Ghe Earth Recoils The King fell into fire-like fever. As he stepped away, the earth itself could not bear his wickedness It opened, and flames swallowed him whole “But the king, after performing that cruel deed. on sudden earth opened and swallowed him",
+    "conf": 89
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/28-Ksantivadin-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     575,
+     327
+    ],
+    "bbox": [
+     1696,
+     985,
+     2638,
+     1468
+    ],
+    "shape": "box",
+    "en": "Fear and Reassurance The ministers, fearing the Sage’s power would burn their country, begged for mercy. The Sage assured them he held no ill will toward the King or the kingdom. “May that king live long and no evil befall him! being subject to sorrow... is person to be pitied. Who ought to get angry with such one?”",
+    "conf": 39
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/28-Ksantivadin-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Logic",
+   "Compassion",
+   "The",
+   "Sage",
+   "reasoned:",
+   "Why",
+   "lose",
+   "the",
+   "jewel",
+   "forbearance",
+   "for",
+   "the",
+   "straw",
+   "broken",
+   "body?",
+   "Death",
+   "inevitable",
+   "for",
+   "all;",
+   "only",
+   "the",
+   "state",
+   "one's",
+   "mind",
+   "matters.",
+   "“For",
+   "many",
+   "kalpas",
+   "have",
+   "lost",
+   "worthless",
+   "body",
+   "manifold",
+   "ways...",
+   "How",
+   "that",
+   "should",
+   "give",
+   "forbearance",
+   "account",
+   "the",
+   "destruction",
+   "that",
+   "frame?”"
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ginal",
+   "Ascension",
+   "Having",
+   "instructed",
+   "the",
+   "witnesses",
+   "the",
+   "Law",
+   "Piety,",
+   "the",
+   "Great",
+   "Being,",
+   "unshaken",
+   "his",
+   "vow,",
+   "left",
+   "his",
+   "earthly",
+   "residence",
+   "and",
+   "mounted",
+   "Heaven",
+   "“Truly,",
+   "those",
+   "who",
+   "have",
+   "wholly",
+   "imbibed",
+   "the",
+   "virtue",
+   "forbearance",
+   "and",
+   "are",
+   "great",
+   "keeping",
+   "their",
+   "tranquillity",
+   "there",
+   "nothing",
+   "unbearable.”"
+  ]
+ }
+]

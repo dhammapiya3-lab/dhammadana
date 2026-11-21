@@ -1,0 +1,508 @@
+[
+ {
+  "img": "images/22-Swans-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Story",
+   "the",
+   "Holy",
+   "Swans",
+   "(Jatakamala",
+   "22)",
+   "the",
+   "pristine",
+   "waters",
+   "Lake",
+   "Manasa",
+   "lived",
+   "the",
+   "Bodhisattva",
+   "and",
+   "King",
+   "Swans,",
+   "and",
+   "Sumukha,",
+   "his",
+   "loyal",
+   "Commander-in-Chief.",
+   "They",
+   "were",
+   "ordinary",
+   "birds;",
+   "their",
+   "golden",
+   "plumage",
+   "reflected",
+   "wisdom",
+   "that",
+   "commanded",
+   "the",
+   "respect",
+   "their",
+   "flock",
+   "and",
+   "the",
+   "admiration",
+   "the",
+   "heavens"
+  ]
+ },
+ {
+  "img": "images/22-Swans-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "They",
+   "instructed",
+   "their",
+   "tribe",
+   "with",
+   "the",
+   "care",
+   "father",
+   "teaching",
+   "his",
+   "sons,",
+   "inculcating",
+   "peace",
+   "and",
+   "righteousness.",
+   "Their",
+   "virtue",
+   "was",
+   "radiant",
+   "that",
+   "even",
+   "celestial",
+   "beings",
+   "gathered",
+   "witness",
+   "their",
+   "conduct.",
+   "Whosoever",
+   "they",
+   "may",
+   "be,",
+   "cl)",
+   "they",
+   "bear",
+   "but",
+   "the",
+   "shape",
+   "swans."
+  ]
+ },
+ {
+  "img": "images/22-Swans-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Rumors",
+   "the",
+   "swans’",
+   "wisdom",
+   "reached",
+   "King",
+   "Brahmadatta",
+   "Benares",
+   "Entranced",
+   "descriptions",
+   "their",
+   "glory,",
+   "commanded",
+   "his",
+   "ministers",
+   "devise",
+   "way",
+   "bring",
+   "these",
+   "distant",
+   "legends",
+   "his",
+   "court.",
+   "Happiness...",
+   "rests",
+   "upon",
+   "hearsay...",
+   "and",
+   "fascinates",
+   "the",
+   "mind,",
+   "because",
+   "remote",
+   "from",
+   "the",
+   "eyes."
+  ]
+ },
+ {
+  "img": "images/22-Swans-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     176,
+     343
+    ],
+    "bbox": [
+     555,
+     1075,
+     2086,
+     1481
+    ],
+    "shape": "box",
+    "en": "To lure the swans, the King constructed lake surpassing Manasa in splendor, filled with exotic lotuses and free from danger by royal decree. Deceived by the beauty and the promise of safety, the Bodhisattva led his flock into the trap. YS Trustfulness, indeed, is pernicious... It first obliterates the suspicion of danger, then displays carelessness.",
+    "conf": 53
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/22-Swans-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "While",
+   "wandering",
+   "unsuspecting,",
+   "the",
+   "King",
+   "Swans",
+   "was",
+   "caught",
+   "hidden",
+   "snare.",
+   "issued",
+   "the",
+   "cry",
+   "alarm.",
+   "The",
+   "flock,",
+   "terrified",
+   "the",
+   "capture",
+   "their",
+   "lord,",
+   "fled",
+   "into",
+   "the",
+   "sky,",
+   "leaving",
+   "their",
+   "master",
+   "behind."
+  ]
+ },
+ {
+  "img": "images/22-Swans-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     207,
+     345
+    ],
+    "bbox": [
+     555,
+     1131,
+     2086,
+     1481
+    ],
+    "shape": "box",
+    "en": "Only Sumukha remained. Though free to fly, he refused to abandon his trapped master, valuing loyalty over his own life. SSP SISO always attended on thee in thy prosperity. How, master, should be capable of leaving thee in thy calamity?",
+    "conf": 38
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/22-Swans-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "fowler",
+   "arrived",
+   "expecting",
+   "catch,",
+   "but",
+   "found",
+   "mystery.",
+   "saw",
+   "one",
+   "bird",
+   "trapped",
+   "and",
+   "another",
+   "standing",
+   "guard,",
+   "unbound",
+   "and",
+   "strong.",
+   "asked",
+   "why",
+   "the",
+   "free",
+   "bird",
+   "did",
+   "not",
+   "flee.",
+   "“Thou",
+   "who",
+   "art",
+   "not",
+   "fastened...",
+   "why",
+   "dost",
+   "thou",
+   "not",
+   "hastily",
+   "fly",
+   "the",
+   "sky",
+   "arrival?”"
+  ]
+ },
+ {
+  "img": "images/22-Swans-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     208,
+     344
+    ],
+    "bbox": [
+     555,
+     1131,
+     2086,
+     1481
+    ],
+    "shape": "box",
+    "en": "Sumukha spoke in human voice, offering his own body as ransom for his King. He argued that since their bodies were of equal size and age, the hunter would lose no profit in the exchange. “Take me as ransom for him... thou wilt not lose thy profit.”",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "fet"
+  ]
+ },
+ {
+  "img": "images/22-Swans-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "hard-hearted",
+   "fowler",
+   "was",
+   "melted",
+   "such",
+   "self-sacrifice.",
+   "realized",
+   "that",
+   "harming",
+   "such",
+   "being",
+   "would",
+   "bring",
+   "evil",
+   "upon",
+   "him.",
+   "honored",
+   "the",
+   "birds",
+   "and",
+   "set",
+   "the",
+   "King",
+   "free.",
+   "will",
+   "pay",
+   "thee",
+   "homage,",
+   "therefore,",
+   "and",
+   "set",
+   "free",
+   "thy",
+   "king.”"
+  ]
+ },
+ {
+  "img": "images/22-Swans-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     204,
+     366
+    ],
+    "bbox": [
+     430,
+     1200,
+     2212,
+     1455
+    ],
+    "shape": "box",
+    "en": "Sumukha ced insisted they be oben to King Brahmadatta, so the fowler mercy cy would not go unrewarded. They traveled to the palace not as captives, but as honored gues carried by the man who once sought to kill them.",
+    "conf": 33
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/22-Swans-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     602,
+     96
+    ],
+    "bbox": [
+     1875,
+     288,
+     2443,
+     1207
+    ],
+    "shape": "box",
+    "en": "The King was struck with wonder to see the swans unbound. The fowler recounted the story of the capture, the offer of self-sacrifice, and his own conversion to compassion. was converted to tenderness, and dismissed his lord together with my own cruel temper.”",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/22-Swans-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Swan",
+   "King",
+   "questioned",
+   "the",
+   "Human",
+   "you",
+   "rule",
+   "with",
+   "justice?",
+   "you",
+   "protect",
+   "your",
+   "subjects?",
+   "taught",
+   "that",
+   "true",
+   "sovereignty",
+   "rests",
+   "not",
+   "power,",
+   "but",
+   "virtue.",
+   "“Virtues",
+   "alone",
+   "are",
+   "the",
+   "sources",
+   "glory...",
+   "The",
+   "virtuous",
+   "alone",
+   "attain",
+   "humility.”"
+  ]
+ },
+ {
+  "img": "images/22-Swans-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Having",
+   "established",
+   "the",
+   "Law",
+   "Righteousness",
+   "the",
+   "court",
+   "and",
+   "ensured",
+   "the",
+   "fowler’s",
+   "reward,",
+   "the",
+   "swans",
+   "returned",
+   "Lake",
+   "Manasa",
+   "The",
+   "virtuous,",
+   "even",
+   "when",
+   "distress,",
+   "behave",
+   "such",
+   "manner",
+   "cannot",
+   "imitated",
+   "the",
+   "impious.",
+   "hed"
+  ]
+ }
+]

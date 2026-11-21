@@ -1,0 +1,645 @@
+[
+ {
+  "img": "images/20-Treasurer-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Story",
+   "the",
+   "Treasurer,",
+   "How",
+   "unfounded",
+   "reputation",
+   "acts",
+   "spur",
+   "the",
+   "virtuous.",
+   "This",
+   "the",
+   "tale",
+   "man",
+   "who,",
+   "when",
+   "accidental",
+   "gossip",
+   "granted",
+   "him",
+   "holiness",
+   "had",
+   "not",
+   "yet",
+   "earned,",
+   "chose",
+   "rise",
+   "the",
+   "occasion",
+   "rather",
+   "than",
+   "correct",
+   "the",
+   "mistake."
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     231,
+     27
+    ],
+    "bbox": [
+     440,
+     17,
+     2218,
+     665
+    ],
+    "shape": "bubble",
+    "en": "The Jewel of Householders Bodhisattva was King’s Treasurer, illustrious for his learning and modest large estate, he made the bliss of his wealth flow in all directions He was adorned by sacred learning and loved honest practices in",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "The",
+   "behaviour.",
+   "Possessing",
+   "through",
+   "charity."
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     245,
+     104
+    ],
+    "bbox": [
+     757,
+     301,
+     1891,
+     479
+    ],
+    "shape": "bubble",
+    "en": "“Virtuous conduct such as his is hardly to mother caught",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "Whisper",
+   "Misheard",
+   "When",
+   "the",
+   "mother-in-law",
+   "well,",
+   "the",
+   "wife,",
+   "shy",
+   "and",
+   "modest,",
+   "whispered:",
+   "met",
+   "with",
+   "even",
+   "ina",
+   "monk.'",
+   "The",
+   "hard-of-hearing",
+   "and",
+   "the",
+   "hush",
+   "shame"
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     274,
+     99
+    ],
+    "bbox": [
+     744,
+     294,
+     1924,
+     863
+    ],
+    "shape": "bubble",
+    "en": "for the forest-life?’ Her weeping convinced that the Treasurer had indeed renounced",
+    "conf": 86
+   }
+  ],
+  "loose": [
+   "The",
+   "Rumour",
+   "Ignites",
+   "‘Why",
+   "has",
+   "left",
+   "the",
+   "favourite",
+   "the",
+   "King—why",
+   "feel",
+   "the",
+   "household",
+   "and",
+   "neighbours",
+   "the",
+   "world."
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     189,
+     99
+    ],
+    "bbox": [
+     622,
+     294,
+     1997,
+     800
+    ],
+    "shape": "bubble",
+    "en": "broke the news: ‘It has been rumoured, do not Honour has given up his wealthy home to become for",
+    "conf": 48
+   }
+  ],
+  "loose": [
+   "The",
+   "Return",
+   "Home",
+   "Returning",
+   "from",
+   "crowd",
+   "his",
+   "gate.",
+   "servant",
+   "what",
+   "way,",
+   "that",
+   "Your",
+   "mendicant.’"
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     251,
+     105
+    ],
+    "bbox": [
+     817,
+     294,
+     1822,
+     618
+    ],
+    "shape": "bubble",
+    "en": "of such high virtue, he would be this high opinion... should cling",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "The",
+   "Internal",
+   "Spur",
+   "felt",
+   "shock",
+   "people",
+   "believed",
+   "him",
+   "capable",
+   "coward.",
+   "“If",
+   "after",
+   "obtaining",
+   "the",
+   "home-life,",
+   "should",
+   "not",
+   "honour",
+   "them",
+   "it.”",
+   "(Verse",
+   "10)"
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Audience",
+   "with",
+   "the",
+   "King",
+   "immediately",
+   "returned",
+   "the",
+   "palace.",
+   "desire",
+   "renounce",
+   "the",
+   "world,’",
+   "announced.",
+   "The",
+   "King",
+   "was",
+   "shocked,",
+   "unable",
+   "understand",
+   "why",
+   "man",
+   "such",
+   "would",
+   "leave",
+   "without",
+   "cause.",
+   "standing"
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     302,
+     110
+    ],
+    "bbox": [
+     774,
+     294,
+     1815,
+     618
+    ],
+    "shape": "bubble",
+    "en": "funds or secret grief. as if were unable to relieve you from",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "The",
+   "King’s",
+   "Offer",
+   "The",
+   "King",
+   "pleaded,",
+   "from",
+   "lack",
+   "“What",
+   "ails",
+   "you...",
+   "that",
+   "pain",
+   "wealth",
+   "power?",
+   "side.”",
+   "(Verse",
+   "13)"
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     201,
+     162
+    ],
+    "bbox": [
+     638,
+     512,
+     2014,
+     1342
+    ],
+    "shape": "bubble",
+    "en": "to take upon himself the burden of that virtue.” (Verse 18) 4 48 ee",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "The",
+   "Philosophy",
+   "Reputation",
+   "The",
+   "Treasurer",
+   "explained",
+   "that",
+   "high",
+   "opinion",
+   "must",
+   "acted",
+   "to.",
+   "remain",
+   "behind",
+   "one's",
+   "reputation",
+   "like",
+   "dried-up",
+   "well.",
+   "“When",
+   "him"
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     288,
+     147
+    ],
+    "bbox": [
+     820,
+     341,
+     2410,
+     1326
+    ],
+    "shape": "bubble",
+    "en": "are the root of strife... like black-hooded snakes with wrath-raised heads.” (Verse 21) Onl SS",
+    "conf": 54
+   }
+  ],
+  "loose": [
+   "The",
+   "Snare",
+   "Worldly",
+   "Goods",
+   "refused",
+   "the",
+   "“Family",
+   "and"
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     222,
+     109
+    ],
+    "bbox": [
+     698,
+     341,
+     1957,
+     724
+    ],
+    "shape": "bubble",
+    "en": "back. They argued that the householder life was the",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "The",
+   "Barrier",
+   "Affection",
+   "Friends",
+   "and",
+   "violence’",
+   "drag",
+   "him",
+   "holiest",
+   "state."
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Expectation",
+   "Friendship",
+   "questioned",
+   "their",
+   "tears.",
+   "they",
+   "truly",
+   "loved",
+   "him,",
+   "the",
+   "separation",
+   "was",
+   "the",
+   "true",
+   "cause",
+   "their",
+   "sorrow,",
+   "they",
+   "would",
+   "join",
+   "him",
+   "“Suppose",
+   "the",
+   "separation",
+   "from",
+   "should",
+   "the",
+   "cause",
+   "their",
+   "sorrow,",
+   "why",
+   "will",
+   "they",
+   "not",
+   "dwell",
+   "the",
+   "forest",
+   "with",
+   "me?”",
+   "(Verse",
+   "26)"
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Solitude",
+   "the",
+   "Path",
+   "realized",
+   "that",
+   "while",
+   "friends",
+   "flock",
+   "the",
+   "distressed,",
+   "they",
+   "abandon",
+   "the",
+   "one",
+   "seeking",
+   "higher",
+   "virtue.",
+   "“If",
+   "anybody",
+   "distress...",
+   "friends",
+   "will",
+   "keep",
+   "with",
+   "him.",
+   "But",
+   "for",
+   "man",
+   "setting",
+   "out",
+   "for",
+   "the",
+   "forest,",
+   "oh!",
+   "hard",
+   "get",
+   "one",
+   "comrade!”",
+   "(Verse",
+   "31)",
+   "single"
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Departure",
+   "Putting",
+   "aside",
+   "the",
+   "entreaties",
+   "his",
+   "friends,",
+   "entered",
+   "the",
+   "penance-forest.",
+   "had",
+   "transformed",
+   "from",
+   "wealthy",
+   "Treasurer",
+   "into",
+   "true",
+   "Ascetic,",
+   "driven",
+   "the",
+   "the",
+   "need",
+   "validate",
+   "the",
+   "world’s",
+   "belief",
+   "him.",
+   "at,"
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Moral",
+   "unfounded",
+   "opinion",
+   "virtue",
+   "acts",
+   "upon",
+   "the",
+   "virtuous",
+   "like",
+   "stirring",
+   "spur.",
+   "One",
+   "must",
+   "strive",
+   "realize",
+   "the",
+   "virtues",
+   "others",
+   "attribute",
+   "them."
+  ]
+ }
+]

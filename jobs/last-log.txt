@@ -1,100 +1,21 @@
-Foremost-Nuns 02-Khema 37 장
-Foremost-Nuns 04-Patacara 30 장
-Foremost-Nuns 05-Dhammadinna 22 장
-Foremost-Nuns 12-Kisa-Gotami 23 장
-Foremost-Nuns 13-Singalakamata 13 장
-검수 Jataka/001-The-Waterless-Desert 13번 그림 상자2 [자리] 한글 글(2151,1214)이 상자 점(1762,1051)에서 멀리 그려짐
-Jataka 001-The-Waterless-Desert 15 장
-검수 Jataka/002-The-Well-of-Perseverance 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-Jataka 002-The-Well-of-Perseverance 15 장
-검수 Jataka/003-The-Golden-Bowl 02번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 4px)
-검수 Jataka/003-The-Golden-Bowl 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 6px)
-Jataka 003-The-Golden-Bowl 14 장
-검수 Jataka/004-The-Dead-Mouse 04번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 4px)
-검수 Jataka/004-The-Dead-Mouse 09번 그림 상자2 [자리] 한글 글(2228,1294)이 상자 점(2030,1107)에서 멀리 그려짐
-Jataka 004-The-Dead-Mouse 15 장
-검수 Jataka/006-The-Water-Rakkhasa 06번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 6px)
-Jataka 006-The-Water-Rakkhasa 15 장
-Jataka 010-Bliss-of-Renunciation 14 장
-Jataka 011-The-Wisdom-of-Lakkhana 10 장
-Jataka 014-The-Wind-Deer 9 장
-검수 Jataka/018-The-Sacrificial-Goat 05번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Jataka/018-The-Sacrificial-Goat 05번 그림 상자3 [작음] 글자 크기 36 (원래 132)
-Jataka 018-The-Sacrificial-Goat 14 장
-검수 Jataka/023-The-Noble-Warhorse 02번 그림 상자5 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Jataka/023-The-Noble-Warhorse 02번 그림 상자5 [작음] 글자 크기 36 (원래 329)
-Jataka 023-The-Noble-Warhorse 14 장
-검수 Jataka/026-The-State-Elephant 10번 그림 상자2 [자리] 한글이 원래 글 자리(1178,1205-1275,1254)에서 벗어남 (836,1239)
-Jataka 026-The-State-Elephant 13 장
-Jataka 032-The-Peacocks-Dance 12 장
-검수 Jataka/033-The-Quails-and-the-Net 09번 그림 상자2 [자리] 한글 글(1343,693)이 상자 점(1167,538)에서 멀리 그려짐
-Jataka 033-The-Quails-and-the-Net 14 장
-Jataka 040-The-Fiery-Pit 12 장
-검수 Jataka/044-The-Son-and-the-Mosquito 01번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Jataka/044-The-Son-and-the-Mosquito 01번 그림 상자1 [작음] 글자 크기 36 (원래 201)
-Jataka 044-The-Son-and-the-Mosquito 13 장
-검수 Jataka/046-The-Folly-of-the-Monkeys 06번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 5px)
-Jataka 046-The-Folly-of-the-Monkeys 13 장
-Jataka 049-The-Lucky-Star 14 장
-Jataka 050-The-Kings-Stratagem 15 장
-Pannasa 09-Siridhara 13 장
-Pannasa 12-Narajiva 13 장
-Pannasa 15-Kambala 15 장
-자동 검수: 문제 의심 16 곳
-R2 에 올림: 861 개 / 한글판 이야기 245 편
-새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 855254바이트
-이야기 Foremost-Nuns/02-Khema {'pdf': 52988466, 'zip': 52713571, 'n': 37}
-이야기 Foremost-Nuns/04-Patacara {'pdf': 36894500, 'zip': 36619969, 'n': 30}
-이야기 Foremost-Nuns/05-Dhammadinna {'pdf': 29276001, 'zip': 29005673, 'n': 22}
-이야기 Foremost-Nuns/12-Kisa-Gotami {'pdf': 34719749, 'zip': 34448123, 'n': 23}
-이야기 Foremost-Nuns/13-Singalakamata {'pdf': 18845820, 'zip': 18575237, 'n': 13}
-책 Foremost-Nuns {'pdf': 385825982, 'pdfs': 40833505, 'zip': 385473300, 'stories': 13, 'n': 283}
-이야기 Jataka/001-The-Waterless-Desert {'pdf': 14363120, 'zip': 14097759, 'n': 15}
-이야기 Jataka/002-The-Well-of-Perseverance {'pdf': 17821764, 'zip': 17553641, 'n': 15}
-이야기 Jataka/003-The-Golden-Bowl {'pdf': 15760663, 'zip': 15495675, 'n': 14}
-이야기 Jataka/004-The-Dead-Mouse {'pdf': 17534576, 'zip': 17271141, 'n': 15}
-이야기 Jataka/006-The-Water-Rakkhasa {'pdf': 19104126, 'zip': 18837707, 'n': 15}
-이야기 Jataka/010-Bliss-of-Renunciation {'pdf': 17047806, 'zip': 16781419, 'n': 14}
-이야기 Jataka/011-The-Wisdom-of-Lakkhana {'pdf': 12220878, 'zip': 11956908, 'n': 10}
-이야기 Jataka/014-The-Wind-Deer {'pdf': 9633388, 'zip': 9371969, 'n': 9}
-이야기 Jataka/018-The-Sacrificial-Goat {'pdf': 16413933, 'zip': 16143550, 'n': 14}
-이야기 Jataka/023-The-Noble-Warhorse {'pdf': 17040175, 'zip': 16774880, 'n': 14}
-이야기 Jataka/026-The-State-Elephant {'pdf': 16557032, 'zip': 16290863, 'n': 13}
-이야기 Jataka/032-The-Peacocks-Dance {'pdf': 16828960, 'zip': 16564535, 'n': 12}
-이야기 Jataka/033-The-Quails-and-the-Net {'pdf': 15954771, 'zip': 15686616, 'n': 14}
-이야기 Jataka/046-The-Folly-of-the-Monkeys {'pdf': 15971936, 'zip': 15699780, 'n': 13}
-이야기 Jataka/040-The-Fiery-Pit {'pdf': 12668566, 'zip': 12404822, 'n': 12}
-이야기 Jataka/044-The-Son-and-the-Mosquito {'pdf': 15036997, 'zip': 14767581, 'n': 13}
-이야기 Jataka/049-The-Lucky-Star {'pdf': 16475296, 'zip': 16210422, 'n': 14}
-이야기 Jataka/050-The-Kings-Stratagem {'pdf': 19093680, 'zip': 18828023, 'n': 15}
-책 Jataka {'pdf': 496347891, 'pdfs': 50553122, 'zip': 495938130, 'stories': 32, 'n': 422}
-이야기 Pannasa/09-Siridhara {'pdf': 15526093, 'zip': 15262423, 'n': 13}
-이야기 Pannasa/12-Narajiva {'pdf': 16071961, 'zip': 15811511, 'n': 13}
-이야기 Pannasa/15-Kambala {'pdf': 19840230, 'zip': 19577832, 'n': 15}
-책 Pannasa {'pdf': 1033928940, 'pdfs': 99435970, 'zip': 1033378150, 'stories': 50, 'n': 803}
-내려받기 파일: 29 묶음 새로 만듦
-글로 보기: 245 이야기
-To https://github.com/dhammapiya3-lab/dhammadana
- ! [rejected]        storybooks -> storybooks (fetch first)
-error: failed to push some refs to 'https://github.com/dhammapiya3-lab/dhammadana'
-hint: Updates were rejected because the remote contains work that you do not
-hint: have locally. This is usually caused by another repository pushing to
-hint: the same ref. If you want to integrate the remote changes, use
-hint: 'git pull' before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-Committer identity unknown
-
-*** Please tell me who you are.
-
-Run
-
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
-
-to set your account's default identity.
-Omit --global to set the identity only in this repository.
-
-fatal: empty ident name (for <runner@runnervm0hi8g.vpnmwxmxptlulpeox0lfu5xxud.jx.internal.cloudapp.net>) not allowed
-error: cannot pull with rebase: Your index contains uncommitted changes.
-error: Please commit or stash them.
+Light-of-Asia 01-Light-of-Asia 15 장
+Light-of-Asia 02-Light-of-Asia 15 장
+Light-of-Asia 03-Light-of-Asia 14 장
+Light-of-Asia 04-Light-of-Asia 14 장
+자동 검수: 문제 의심 0 곳
+R2 에 올림: 163 개 / 한글판 이야기 249 편
+새 그림책 올림: New-Jataka/002-Vannupatha-en 24 장
+새 그림책: 올린 그림 24 장
+공개 주소 확인: 200 523200바이트
+이야기 Light-of-Asia/01-Light-of-Asia {'pdf': 9492563, 'zip': 9226248, 'n': 15}
+이야기 Light-of-Asia/02-Light-of-Asia {'pdf': 9058717, 'zip': 8789859, 'n': 15}
+이야기 Light-of-Asia/03-Light-of-Asia {'pdf': 8841532, 'zip': 8575579, 'n': 14}
+이야기 Light-of-Asia/04-Light-of-Asia {'pdf': 7360800, 'zip': 7094229, 'n': 14}
+책 Light-of-Asia {'pdf': 33958647, 'pdfs': 5489186, 'zip': 33685202, 'stories': 4, 'n': 58}
+내려받기 파일: 5 묶음 새로 만듦
+글로 보기: 250 이야기
+18-Verses-2
+08-Light-of-Asia
+04-Kalavaliya-the-Treasurer
+34-Woodpecker.htm: 그림 15 상자 0 상자밖글 403
+34-Woodpecker

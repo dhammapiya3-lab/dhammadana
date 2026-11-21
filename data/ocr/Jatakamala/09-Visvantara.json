@@ -1,0 +1,614 @@
+[
+ {
+  "img": "images/09-Visvantara-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     98,
+     387
+    ],
+    "bbox": [
+     291,
+     1008,
+     2367,
+     1445
+    ],
+    "shape": "bubble",
+    "en": "He could not endure the proud prevalence of calamities and other causes of sufferings among mankind. It was against these foes that he waged war and fought in battle, shooting from his which had",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "The",
+   "Virtue",
+   "Compassion"
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "We,",
+   "The",
+   "First",
+   "Test:",
+   "The",
+   "White",
+   "Elephant",
+   "That",
+   "splendid",
+   "animal,",
+   "whose",
+   "face,",
+   "being",
+   "fragrant",
+   "with",
+   "the",
+   "scent",
+   "the",
+   "flowing",
+   "juice,",
+   "intoxicates",
+   "crowds",
+   "humming",
+   "bees...",
+   "that",
+   "embodied",
+   "victory",
+   "has",
+   "been",
+   "given",
+   "away",
+   "Visvantara."
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     539,
+     211
+    ],
+    "bbox": [
+     579,
+     347,
+     2007,
+     1399
+    ],
+    "shape": "bubble",
+    "en": "\\4] ary Vea. oe The Outrage and Banishment to Righteousness did not allow him to be frightened by the lie our foremost elephant, the pledge of glorious victory, is an",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "The",
+   "adherence",
+   "political",
+   "wisdom",
+   "“Parting",
+   "with",
+   "excess",
+   "charity.",
+   "Visvantara",
+   "not",
+   "fit",
+   "bearer",
+   "the",
+   "troublesome",
+   "burden",
+   "royalty.”"
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     291,
+     325
+    ],
+    "bbox": [
+     575,
+     886,
+     2076,
+     1359
+    ],
+    "shape": "bubble",
+    "en": "The Departure Sibis kill me or banish me, shall not desist from charity for that his very",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "Let",
+   "all",
+   "reason",
+   "himself,",
+   "drove",
+   "the",
+   "direction",
+   "Mount",
+   "Vanka."
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "fod",
+   "The",
+   "Gift",
+   "Horses",
+   "And",
+   "the",
+   "Bodhisattva,",
+   "was",
+   "indifferent",
+   "his",
+   "own",
+   "comfort,",
+   "but",
+   "the",
+   "beggars",
+   "loving",
+   "kinsman,",
+   "fulfilled",
+   "the",
+   "wish",
+   "that",
+   "Brahman.",
+   "gladly",
+   "caused",
+   "his",
+   "family",
+   "alight",
+   "from",
+   "the",
+   "chariot,",
+   "presented",
+   "the",
+   "Brahman",
+   "with",
+   "it,",
+   "and",
+   "continued",
+   "his",
+   "way",
+   "foot."
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "trees,",
+   "stretching",
+   "out",
+   "him",
+   "their",
+   "branches",
+   "adorned",
+   "their",
+   "ends",
+   "with",
+   "charming",
+   "fruits,",
+   "invited",
+   "him,",
+   "were,",
+   "enjoy",
+   "their",
+   "hospitality,",
+   "and",
+   "paying",
+   "homage",
+   "his",
+   "merit-obtained",
+   "dignity,",
+   "bowed",
+   "him",
+   "like",
+   "obedient",
+   "disciples.",
+   "Nature’s",
+   "Welcome"
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     233,
+     335
+    ],
+    "bbox": [
+     645,
+     370,
+     2017,
+     1385
+    ],
+    "shape": "bubble",
+    "en": "Life in the Hermitage his beloved wife, enjoying the artless and sweet talk of his royalty... he that",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "Attended",
+   "children,",
+   "not",
+   "thinking",
+   "the",
+   "for",
+   "half",
+   "year."
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     250,
+     318
+    ],
+    "bbox": [
+     631,
+     922,
+     2017,
+     1389
+    ],
+    "shape": "bubble",
+    "en": "bare: of thie Mendicant children to be my attendants.’ Being so addressed, the habit",
+    "conf": 31
+   }
+  ],
+  "loose": [
+   "‘Give",
+   "both",
+   "Bodhisattva,",
+   "was",
+   "the",
+   "say",
+   "no,",
+   "bravely",
+   "said",
+   "that",
+   "would",
+   "give",
+   "even",
+   "both",
+   "his",
+   "darlings."
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     236,
+     348
+    ],
+    "bbox": [
+     754,
+     539,
+     1951,
+     1432
+    ],
+    "shape": "bubble",
+    "en": "Wy’ The Agony of Giving effort, the water poured down from the pot, and at dark",
+    "conf": 52
+   }
+  ],
+  "loose": [
+   "Yielding",
+   "his",
+   "the",
+   "same",
+   "time",
+   "tears",
+   "fell",
+   "lotus-petals."
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     309,
+     311
+    ],
+    "bbox": [
+     665,
+     850,
+     1848,
+     1389
+    ],
+    "shape": "bubble",
+    "en": "The Separation father, hurts me with creeper... It is an do",
+    "conf": 76
+   }
+  ],
+  "loose": [
+   "‘This",
+   "cruel",
+   "ogre",
+   "under",
+   "the",
+   "guise",
+   "Brahman.’",
+   "Brahman,",
+   "the",
+   "absence",
+   "mother.’"
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     534,
+     311
+    ],
+    "bbox": [
+     724,
+     873,
+     1997,
+     1392
+    ],
+    "shape": "bubble",
+    "en": "Cad The feel Battle that this man did not scruple to strike my very Nevertheless, on",
+    "conf": 40
+   }
+  ],
+  "loose": [
+   "‘How",
+   "possible",
+   "heart",
+   "before",
+   "very",
+   "eyes",
+   "righteous",
+   "conduct",
+   "the",
+   "virtuous,",
+   "would",
+   "give",
+   "way"
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     290,
+     321
+    ],
+    "bbox": [
+     674,
+     909,
+     1974,
+     1313
+    ],
+    "shape": "bubble",
+    "en": "rink Despair at",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "Visvantara",
+   "pierced",
+   "the",
+   "dart",
+   "sorrow...",
+   "When",
+   "asked",
+   "for",
+   "life,",
+   "should",
+   "able",
+   "withhold",
+   "it?",
+   "Approve",
+   "the",
+   "gift",
+   "have",
+   "made",
+   "the",
+   "children.”"
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Final",
+   "Test:",
+   "Sakra’s",
+   "Request",
+   "“Her,",
+   "thy",
+   "wife,",
+   "give",
+   "me,",
+   "pray",
+   "thee.’",
+   "Taking",
+   "Madri",
+   "with",
+   "his",
+   "left",
+   "hand",
+   "and",
+   "the",
+   "waterpot",
+   "with",
+   "his",
+   "right,",
+   "poured",
+   "down",
+   "water...",
+   "anger",
+   "arose",
+   "Madri’s",
+   "breast,",
+   "nor",
+   "did",
+   "she",
+   "weep,",
+   "for",
+   "she",
+   "knew",
+   "her",
+   "husband’s",
+   "nature."
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Revelation",
+   "“Even",
+   "now",
+   "this",
+   "superhuman",
+   "fact",
+   "thine",
+   "praisingly",
+   "approved",
+   "the",
+   "Yaksas,",
+   "the",
+   "Gandharvas,",
+   "and",
+   "the",
+   "Devas.",
+   "thee",
+   "now",
+   "give",
+   "back",
+   "Where",
+   "else",
+   "should",
+   "moonshine",
+   "stay",
+   "but",
+   "with",
+   "the",
+   "moon?”"
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     331,
+     332
+    ],
+    "bbox": [
+     483,
+     992,
+     2166,
+     1389
+    ],
+    "shape": "bubble",
+    "en": "Ra Restoration and Legacy Sibis, their hearts soft with tenderness, redeemed the children and reinstated falling",
+    "conf": 52
+   }
+  ],
+  "loose": [
+   "The",
+   "make",
+   "the",
+   "sky",
+   "appear",
+   "were",
+   "illuminated",
+   "lightnings.”"
+  ]
+ }
+]

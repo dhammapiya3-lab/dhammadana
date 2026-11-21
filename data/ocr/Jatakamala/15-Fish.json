@@ -1,0 +1,563 @@
+[
+ {
+  "img": "images/15-Fish-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Garland",
+   "Birth",
+   "Stories",
+   "The",
+   "Story",
+   "the",
+   "Fish",
+   "Jataka",
+   "Tale",
+   "the",
+   "Power",
+   "Truth",
+   "(Satya)",
+   "The"
+  ]
+ },
+ {
+  "img": "images/15-Fish-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "dormorant",
+   "Garamond",
+   "The",
+   "designs",
+   "those",
+   "who",
+   "practise",
+   "good",
+   "conduct",
+   "will",
+   "successful",
+   "and",
+   "thrive",
+   "even",
+   "this",
+   "world,",
+   "how",
+   "much",
+   "more",
+   "the",
+   "next.",
+   "For",
+   "this",
+   "reason,",
+   "perfect",
+   "pureness",
+   "ought",
+   "striven",
+   "after.",
+   "even",
+   "nex",
+   "ess"
+  ]
+ },
+ {
+  "img": "images/15-Fish-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Bodhisattva",
+   "lived",
+   "chief",
+   "fishes",
+   "lovely",
+   "lake",
+   "embellished",
+   "with",
+   "lotuses",
+   "and",
+   "water-lilies.",
+   "Though",
+   "born",
+   "fish,",
+   "was",
+   "wholly",
+   "given",
+   "the",
+   "business",
+   "procuring",
+   "good",
+   "for",
+   "others,",
+   "driven",
+   "the",
+   "habit",
+   "helping",
+   "others",
+   "many",
+   "previous",
+   "births."
+  ]
+ },
+ {
+  "img": "images/15-Fish-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     78,
+     115
+    ],
+    "bbox": [
+     139,
+     350,
+     1676,
+     1200
+    ],
+    "shape": "bubble",
+    "en": "his own offspring. Under his influence, the forgot their cruel nature of devouring one another. restrained them from injury and made their mutual affection grow.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "The",
+   "shoal",
+   "prospered,",
+   "just",
+   "town",
+   "thrives",
+   "under",
+   "righteous",
+   "king."
+  ]
+ },
+ {
+  "img": "images/15-Fish-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     593,
+     82
+    ],
+    "bbox": [
+     1494,
+     83,
+     2562,
+     1104
+    ],
+    "shape": "bubble",
+    "en": "The hot season arrived. The burning rays of the sun, exhausted with fatigue, drank from the lake day after day. “Bs at 7h.",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "But",
+   "fortune",
+   "fickle.",
+   "The",
+   "gods",
+   "rain",
+   "neglected",
+   "their",
+   "charge."
+  ]
+ },
+ {
+  "img": "images/15-Fish-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     591,
+     394
+    ],
+    "bbox": [
+     1187,
+     1127,
+     2612,
+     1445
+    ],
+    "shape": "bubble",
+    "en": "They dried up th waters as if allay his comm wrath. The beautiful lake was reduced to mere mud pool.",
+    "conf": 34
+   },
+   {
+    "seed": [
+     141,
+     404
+    ],
+    "bbox": [
+     3,
+     1210,
+     1065,
+     1442
+    ],
+    "shape": "bubble",
+    "en": "The Earth and Wind, feverish with heat, joined the Sun in consuming the water. 2",
+    "conf": 31
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-Fish-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     41,
+     32
+    ],
+    "bbox": [
+     3,
+     3,
+     1746,
+     592
+    ],
+    "shape": "bubble",
+    "en": "The shoal fell into misery. They could do nothing but lie and gasp.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     762,
+     262
+    ],
+    "bbox": [
+     1557,
+     853,
+     2638,
+     1481
+    ],
+    "shape": "bubble",
+    "en": "wit Our enemies, invited by our calamity, throng together against us. They wait for the water to vanish completely so they can devour us.",
+    "conf": 42
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-Fish-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Bodhisattva",
+   "perceived",
+   "the",
+   "affliction",
+   "his",
+   "Heaving",
+   "deep",
+   "upwards",
+   "the",
+   "saw",
+   "only",
+   "one",
+   "means",
+   "relief:",
+   "his",
+   "own",
+   "veracity.",
+   "sky",
+   "and",
+   "prepared",
+   "speak",
+   "the",
+   "ultimate",
+   "truth.",
+   "tribe.",
+   "looked"
+  ]
+ },
+ {
+  "img": "images/15-Fish-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“As",
+   "truly",
+   "Ido",
+   "not",
+   "pondering,",
+   "that",
+   "ever",
+   "did",
+   "harm",
+   "any",
+   "living",
+   "being,",
+   "not",
+   "even",
+   "the",
+   "highest",
+   "distress...”",
+   "the",
+   "power",
+   "this",
+   "truth",
+   "may",
+   "the",
+   "King",
+   "the",
+   "fill",
+   "the",
+   "water-basins",
+   "with",
+   "the",
+   "water",
+   "his",
+   "rains.”",
+   "recollect,",
+   "however"
+  ]
+ },
+ {
+  "img": "images/15-Fish-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     505,
+     113
+    ],
+    "bbox": [
+     1369,
+     40,
+     2638,
+     787
+    ],
+    "shape": "bubble",
+    "en": "Amiracle! miracle! Occasioned by the power of veracity, rain-clouds appeared out of season. Deep thunder resounded, and flashes of lightning’ adorned the dark-blue tops of the clouds.",
+    "conf": 56
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-Fish-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Streams",
+   "rain",
+   "fell.",
+   "The",
+   "smell",
+   "wet",
+   "earth",
+   "filled",
+   "the",
+   "air.",
+   "The",
+   "rumbling",
+   "thunder",
+   "induced",
+   "the",
+   "peacocks",
+   "utter",
+   "cries",
+   "and",
+   "perform",
+   "their",
+   "dances."
+  ]
+ },
+ {
+  "img": "images/15-Fish-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     355,
+     350
+    ],
+    "bbox": [
+     870,
+     1002,
+     2212,
+     1415
+    ],
+    "shape": "bubble",
+    "en": "Roar, Parjanya! Dispel the joy of the crows! Pour out thy waters like jewels endowed with the flaming brilliancy of lightning!",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "The",
+   "crowds",
+   "fish",
+   "recovered",
+   "the",
+   "hope",
+   "life.",
+   "But",
+   "the",
+   "Bodhisattva",
+   "feared",
+   "the",
+   "rain",
+   "might",
+   "stop",
+   "too",
+   "soon."
+  ]
+ },
+ {
+  "img": "images/15-Fish-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sakra,",
+   "astonished",
+   "the",
+   "fish’s",
+   "power,",
+   "appeared",
+   "person.",
+   "Surely,",
+   "the",
+   "effect",
+   "thy",
+   "transcendent",
+   "veracity,",
+   "mighty",
+   "lord",
+   "fishes,",
+   "that",
+   "makes",
+   "these",
+   "rain-clouds",
+   "pour",
+   "out",
+   "their",
+   "waters."
+  ]
+ },
+ {
+  "img": "images/15-Fish-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "bound",
+   "assist",
+   "the",
+   "virtuous.",
+   "Never",
+   "shall",
+   "this",
+   "bya",
+   "After",
+   "praising",
+   "the",
+   "fish,",
+   "the",
+   "god",
+   "lake",
+   "obtained",
+   "very",
+   "large",
+   "increase",
+   "water.",
+   "region",
+   "visited",
+   "similar",
+   "plague.”",
+   "disappeared.",
+   "us."
+  ]
+ },
+ {
+  "img": "images/15-Fish-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "this",
+   "manner,",
+   "the",
+   "designs",
+   "those",
+   "who",
+   "practise",
+   "good",
+   "conduct",
+   "will",
+   "successful.",
+   "The",
+   "Story",
+   "the",
+   "Fish",
+   "teaches",
+   "us:",
+   "Perfect",
+   "pureness",
+   "conduct",
+   "ought",
+   "striven",
+   "after.",
+   "the"
+  ]
+ }
+]
