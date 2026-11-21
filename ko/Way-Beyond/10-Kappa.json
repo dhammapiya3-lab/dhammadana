@@ -1,0 +1,175 @@
+[
+ {
+  "img": "images/10-Kappa-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     170,
+     580,
+     280
+    ],
+    "ko": "깝빠의 질문\n피안으로 가는 길에 관한 문답\n빠라야나 왁가에서",
+    "cover": null,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Kappa-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     376,
+     756,
+     440
+    ],
+    "ko": "윤회의 거센 물\n“호수 한가운데 서 있는 이들, 무서운 거센 물이 일어났을 때…”",
+    "cover": null,
+    "align": "center",
+    "em": 20,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Kappa-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     400,
+     610,
+     442
+    ],
+    "ko": "“…늙음과 죽음에 짓눌린 이들에게…”",
+    "cover": null,
+    "align": "center",
+    "em": 22,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Kappa-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     418,
+     140,
+     690,
+     216
+    ],
+    "ko": "“…섬을 말씀해 주십시오, 존귀한 분이시여.\n이 뒤로 다시는 없도록\n저에게 섬을 설명해 주십시오.”",
+    "cover": null,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Kappa-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     418,
+     140,
+     700,
+     214
+    ],
+    "ko": "“호수 한가운데 서 있는 이들,\n무서운 거센 물이 일어났을 때,\n늙음과 죽음에 짓눌린 이들에게…”",
+    "cover": null,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Kappa-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     46,
+     560,
+     116
+    ],
+    "ko": "“…깝빠여, 섬을 말하겠다. 아무것도 없고\n집착이 없는 것, 이것이 그 너머가 없는 섬이다.”",
+    "cover": null,
+    "align": "left",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Kappa-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     416,
+     146,
+     700,
+     202
+    ],
+    "ko": "이것을 열반이라 한다.\n늙음과 죽음의 완전한 끝이다.",
+    "cover": null,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Kappa-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     46,
+     520,
+     116
+    ],
+    "ko": "이것을 알고 마음챙기는 이들,\n지금 이 삶에서 고요해진 이들이 있다.",
+    "cover": null,
+    "align": "left",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Kappa-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     386,
+     310,
+     770,
+     380
+    ],
+    "ko": "그들은 마라의 지배를 받지 않는다.\n그들은 마라의 하인이 아니다.",
+    "cover": null,
+    "align": "right",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

@@ -1,0 +1,231 @@
+[
+ {
+  "img": "images/11-Jatukanni-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     276,
+     126,
+     530,
+     268
+    ],
+    "ko": "자뚜깐니의\n질문\n피안으로 가는 길",
+    "cover": null,
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     44,
+     446,
+     132
+    ],
+    "ko": "“감각적 쾌락을 바라지 않는 영웅이\n계시다고 듣고, 거센 물을 건너신\n바람 없는 분께 여쭈러 왔습니다…”",
+    "cover": null,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     126,
+     172,
+     400,
+     288
+    ],
+    "ko": "“…평화의 경지를\n있는 그대로 말씀해 주십시오.\n복되신 분이시여,\n저에게 일러 주십시오.”",
+    "cover": null,
+    "align": "left",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     386,
+     680,
+     442
+    ],
+    "ko": "복되신 분은 감각적 욕망을 이기고 다니십니다.\n찬란한 해가 그 빛으로 땅을 이기듯이.",
+    "cover": null,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     84,
+     604,
+     166
+    ],
+    "ko": "지혜가 작은 저에게, 큰 지혜를 지니신 분이시여,\n제가 여기서 태어남과 늙음을 완전히 버리는 것을\n알 수 있도록 가르침을 설명해 주십시오.",
+    "cover": null,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     164,
+     556,
+     242
+    ],
+    "ko": "감각적 쾌락에 대한 탐욕을 없애라.\n출리에 안온함이 있음을 보고서…",
+    "cover": null,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     84,
+     600,
+     142
+    ],
+    "ko": "…붙잡은 것이든 아직 내려놓을 것이든\n그대 안에서 아무것도 발견되지 않게 하라.",
+    "cover": null,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     186,
+     316,
+     250
+    ],
+    "ko": "지나간 것을\n말려 없애라…",
+    "cover": null,
+    "align": "center",
+    "em": 18,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     352,
+     208,
+     690,
+     244
+    ],
+    "ko": "…미래에도 아무것도 두지 말아라…",
+    "cover": null,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     40,
+     700,
+     190
+    ],
+    "ko": "…현재에 아무것도 붙잡지 않으면\n그대는 고요히 살아가리라.",
+    "cover": null,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     346,
+     612,
+     424
+    ],
+    "ko": "바라문이여, 정신과 물질에 대한\n탐욕이 모두 없는 이에게는…",
+    "cover": null,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     84,
+     566,
+     142
+    ],
+    "ko": "…죽음의 지배를 받게 할\n번뇌가 발견되지 않는다.",
+    "cover": null,
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
