@@ -1,0 +1,273 @@
+{
+  "groups": [
+    {
+      "name": "국내 법보시 사이트",
+      "desc": "우리말 법보시 자료를 나누는 곳입니다.",
+      "items": [
+        {
+          "name": "붓다의 고귀한 제자들",
+          "url": "https://dhammayut-kor.org/books-list/",
+          "note": "태국 숲속 전통 스승들의 번역 서적과 수행 자료"
+        },
+        {
+          "name": "에왐메수땅 (Theravadin)",
+          "url": "https://evammesutam.com/",
+          "note": "누구나 무료로, 회원가입 없이 테라와다불교를 차례대로 공부하는 온라인 강좌 · 입문(부처님의 생애와 가르침), 아비담마, 빠알리어 강의 공개, 경전 읽기·수행(사마타·위빳사나) 과목 준비 중"
+        },
+        {
+          "name": "이와 같이 (니까야 만화)",
+          "url": "https://nikayacomic.pages.dev/",
+          "note": "빠알리 니까야(디가·맛지마·상윳따·앙굿따라·쿳다까)의 주요 경전을 쉬운 만화로 풀어 그린 무료 사이트 · 경전 목록·마음 상태별·주제별로 찾아 읽기 (100편 준비 중)",
+          "img": "/uploads/link-nikayacomic.png"
+        }
+      ]
+    },
+    {
+      "name": "해외 법보시 사이트",
+      "desc": "외국어 법문과 전자책을 나누는 곳입니다.",
+      "items": [
+        {
+          "name": "Reading Faithfully",
+          "url": "https://readingfaithfully.org/",
+          "note": "빠알리 경전(숫따)을 날마다 직접 읽도록 돕는 영어 사이트 · 무료 전자책·음성 자료와 경전 찾기 도구",
+          "lang": "영어"
+        },
+        {
+          "name": "Ancient Buddhist Texts",
+          "url": "https://ancient-buddhist-texts.net/",
+          "note": "아난다조띠 스님이 운영하는 초기 불교 경전·주석서의 원문과 영어 번역, 전자책·음성 자료",
+          "lang": "영어"
+        },
+        {
+          "name": "Dharma Storybooks",
+          "url": "https://dharma-storybooks.net/",
+          "note": "아난다조띠 스님의 그림으로 보는 불교 이야기책",
+          "lang": "영어"
+        },
+        {
+          "name": "dhammadownload.com",
+          "url": "https://www.dhammadownload.com/index.htm",
+          "note": "미얀마 스님들의 법문 음성·영상·전자책 무료 도서관",
+          "lang": "미얀마어"
+        },
+        {
+          "name": "Buddhist Publication Society (BPS)",
+          "url": "https://www.bps.lk/",
+          "note": "스리랑카 캔디의 테라와다불교 영어 출판사 · 빠알리 경전 번역·입문서·아비담마 책을 펴내며, 일부 책은 온라인으로 무료로 읽을 수 있음",
+          "lang": "영어"
+        },
+        {
+          "name": "Buddho.org",
+          "url": "https://buddho.org/books/",
+          "note": "네덜란드 붓도 재단(Buddho Foundation)의 테라와다불교·명상 책 디지털 도서관 · 아잔 차, 아잔 리, 마하시 사야도, 레디 사야도, 냐나뽀니까 스님, 비구 보디 스님 등의 책과 짧은 소개",
+          "lang": "영어"
+        },
+        {
+          "name": "The Open Buddhist University",
+          "url": "https://buddhistuniversity.net/",
+          "note": "불교학 전반의 기초를 익히도록 강좌와 학술 자료를 엮어 둔 곳 · 모두 무료이고 오픈 소스",
+          "lang": "영어"
+        },
+        {
+          "name": "Dharma Documentaries",
+          "url": "https://dharma-documentaries.net/",
+          "note": "불교의 역사·수행·문화를 다룬 다큐멘터리 영상 천여 편을 모아 둔 곳 · 테라와다·대승·티베트 불교와 인도·중국·실크로드 등",
+          "lang": "영어",
+          "last": true
+        },
+        {
+          "name": "Dhamma Source",
+          "url": "https://dhammasource.com/",
+          "note": "테라와다불교 수행자를 위한 무료 자료 모음 · 빠알리 경전 읽기·내려받기, 법 서적, 수행 영상·다큐멘터리, 사원·수행 모임 지도",
+          "lang": "영어"
+        },
+        {
+          "name": "Buddhism for Beginners",
+          "url": "https://buddhismforbeginnersgroup.wordpress.com/",
+          "note": "보시·계·업·사성제·명상 등을 다룬 초심자용 글과 경전 이야기, 법문, 내려받는 전자책 · 마하시 사야도·모곡 사야도 등 미얀마 스승들의 가르침도 소개",
+          "lang": "영어"
+        },
+        {
+          "name": "DPPS e-Library (kbrl.gov.mm)",
+          "url": "https://kbrl.gov.mm/old/Catalog/Featured",
+          "note": "미얀마 정부 교법 전파국(Department of Propagation of Sasana)의 전자 도서관 · 빠알리 삼장·주석서·복주서, 미얀마어·영어 번역, 빠알리-미얀마어 사전, 법문 음성, 영어 불교 서적 약 900권",
+          "lang": "미얀마어"
+        },
+        {
+          "name": "WinMetta",
+          "url": "https://winmetta.org/dhamma-download/",
+          "note": "마하시 사야도, 레디 사야도, 모곡 사야도, 밍군 사야도, 파욱 사야도 등 미얀마 스승들의 미얀마어·영어 법 서적과 아비담마·삼장 번역 내려받기, 삼장 읽기·사전 앱",
+          "lang": "미얀마어"
+        },
+        {
+          "name": "Mahadhamma Pala Society",
+          "url": "http://mahadhammapala.org/",
+          "note": "불교 서적과 법문을 전자 자료로 모아 지키고 누구나 볼 수 있게 하려는 미얀마 마하담마빨라 협회의 전자 도서관 · 법 서적 책장·삼장·찾기, 마하시 수행센터(바한) 도서관의 미얀마어 책 333권과 영어 책 86권을 스캔해 올림",
+          "lang": "미얀마어"
+        },
+        {
+          "name": "Association for Insight Meditation (aimwell.org)",
+          "url": "https://aimwell.org/",
+          "note": "마하시 사야도에게 출가한 영국인 비구 뻬살라 스님이 엮은 마하시 사야도·레디 사야도 등의 책을 HTML·PDF로 무료 공개 · 마하시 사야도의 생애와 위빳사나 수행법, 빠알리 용어 풀이",
+          "lang": "영어"
+        },
+        {
+          "name": "Pariyatti",
+          "url": "https://pariyatti.org/",
+          "note": "미국의 비영리 단체 · 고엔까 선생님 전통의 위빳사나 자료, 무료 전자책·오디오북·음성·영상, 빠알리 삼장과 빠알리어 공부 자료 (책 판매도 함께 함)",
+          "lang": "영어"
+        },
+        {
+          "name": "Vipassana Research Institute (VRI)",
+          "url": "https://www.vridhamma.org/free-books",
+          "note": "고엔까 선생님이 세운 위빳사나 연구소의 무료 PDF 책 · 빠알리어 입문서, 법구경, 레디 사야도 해설서, 고엔까 선생님 법문, 삼장 관련 책 (영어·힌디어 등)",
+          "lang": "영어"
+        },
+        {
+          "name": "Access to Insight",
+          "url": "https://accesstoinsight.org/",
+          "note": "빠알리 경전 1,000여 편의 영어 번역(경전·주제·이름·비유·번역자별 찾기)과 테라와다 문고, 태국 숲속 전통 글, 공부 안내, PDF 책 · 바레 불교학 센터(Barre Center for Buddhist Studies) 운영",
+          "lang": "영어"
+        },
+        {
+          "name": "BuddhaNet",
+          "url": "https://www.buddhanet.net/",
+          "note": "비영리 단체 Buddha Dharma Education Association 의 불교 사이트 · 불교 전자 도서관(Buddhist eLibrary)과 세계 불교 단체 안내(World Buddhist Directory), 법문 음성 자료",
+          "lang": "영어"
+        },
+        {
+          "name": "Lotus Library",
+          "url": "https://www.lotuslibrary.com/ebook-tradition/theravada-s-e-asian/",
+          "note": "테라와다(동남아시아) 불교 전자책 목록 · 아잔 수메도, 마하시 사야도, 아야 케마, 냐나띨로까 스님 등의 책을 기본 개념·수행·업·경전 등 갈래로 나눔",
+          "lang": "영어"
+        },
+        {
+          "name": "Wisdom Library (Theravada)",
+          "url": "https://www.wisdomlib.org/theravada",
+          "note": "디가·맛지마·상윳따·앙굿따라 니까야, 율장, 법구경, 밀린다빤하, 청정도론 등의 영어 번역과 아비담마·수행 관련 책을 온라인으로 읽는 곳 · 테라와다 용어 풀이(A–Z)",
+          "lang": "영어"
+        },
+        {
+          "name": "BudSas (Buddhasasana)",
+          "url": "https://www.budsas.org/ebud/ebidx.htm",
+          "note": "빈 안슨(Binh Anson) 박사가 운영하는 베트남 불교 사이트의 영어 자료실 · 주로 테라와다의 책·경전·수행 안내·법문 글을 저자·번역자와 함께 정리 (베트남어판도 있음)",
+          "lang": "영어"
+        },
+        {
+          "name": "Abhidhamma.com",
+          "url": "https://www.abhidhamma.com/",
+          "note": "아비담마 공부 자료 모음 · 아비담마 삐따까와 아비담맛타상가하 기초, 용어 풀이, 도표, 전자책(PTS 아비담마 번역을 찾기 쉬운 PDF로), 온라인 강좌와 강의 영상",
+          "lang": "영어"
+        },
+        {
+          "name": "Classical Theravāda – Books Basket",
+          "url": "https://classicaltheravada.org/t/books-basket-fruits-basket-reference/907",
+          "note": "정통 테라와다 토론 모임(포럼)에서 회원들이 모아 둔 PDF 책 목록 · 레디 사야도, 마하시 사야도, 비구 뻬살라, 니나 반 고르콤, 냐나몰리 스님, 나라다 스님 등 지은이별 내려받기와 관련 사이트 링크",
+          "lang": "영어"
+        },
+        {
+          "name": "Forest Dhamma",
+          "url": "https://forestdhamma.org/",
+          "note": "아잔 마하 부와 스님의 법맥을 잇는 미국 버지니아의 숲속 사원 · 아잔 마하 부와 스님 책의 영어 번역(여러 나라 말 판도 있음)과 오디오북, 아잔 빤냐왓도 스님 법문",
+          "lang": "영어"
+        }
+      ]
+    },
+    {
+      "name": "빠알리 삼장·사전 도구",
+      "desc": "원문과 사전을 찾아볼 때 쓰는 곳입니다.",
+      "items": [
+        {
+          "name": "tipitaka.org",
+          "url": "https://tipitaka.org/",
+          "note": "6차 결집본 빠알리 삼장 원문",
+          "lang": "빠알리 삼장 & 번역"
+        },
+        {
+          "name": "Digital Pāli Reader",
+          "url": "https://www.digitalpalireader.online/",
+          "note": "빠알리 삼장을 읽으며 낱말을 눌러 사전 뜻과 문법을 바로 찾아보는 도구",
+          "lang": "빠알리 삼장 & 번역"
+        },
+        {
+          "name": "SuttaCentral",
+          "url": "https://suttacentral.net/",
+          "note": "초기불교 경전 원문(빠알리 등)과 여러 나라 말 번역을 함께 보는 곳",
+          "lang": "빠알리 삼장 & 번역"
+        },
+        {
+          "name": "BuddhaDust",
+          "url": "https://buddhadust.net/backmatter/indexes/sutta/sutta_toc.htm",
+          "note": "디가·맛지마·상윳따·앙굿따라·쿳다까 니까야와 율장·논장, 밀린다빤하의 경전 목록 · 경마다 짧은 소개, 빠알리 원문(1995년 스리랑카 붓다 자얀띠 판을 다듬음)과 리즈 데이비즈·호너·비구 보디·타니사로 스님 등 여러 영어 번역을 서로 이어 대조",
+          "lang": "빠알리 삼장 & 번역"
+        },
+        {
+          "name": "GRETIL",
+          "url": "https://gretil.sub.uni-goettingen.de/gretil.html#Suttapit",
+          "note": "독일 괴팅겐 대학 도서관의 인도 고전어 전자 원문 모음 · 빠알리 삼장(율장·경장·논장)과 주석서·복주서·연대기·문법서 등 원문 파일, 빠알리 전체 한 번에 내려받기",
+          "lang": "빠알리 삼장 & 번역"
+        },
+        {
+          "name": "OpenTipitaka",
+          "url": "https://www.opentipitaka.org/ko",
+          "note": "빠알리 삼장 원문과 여러 나라 말 번역을 문단마다 나란히 보고, 찾기·사전·음성 듣기를 쓰는 곳 (AI 번역)",
+          "lang": "여러 나라 말 번역 (AI 번역)"
+        },
+        {
+          "name": "E-Piṭaka",
+          "url": "https://epitaka.org/ko/",
+          "note": "6차 결집본 빠알리 삼장을 문장마다 한국어 등 여러 나라 말 번역과 함께 보는 곳 (AI 번역)",
+          "lang": "여러 나라 말 번역 (AI 번역)"
+        },
+        {
+          "name": "TipiṭakaPali.org",
+          "url": "https://tipitakapali.org/",
+          "note": "6차 결집본 빠알리 삼장 전체 원문과 찾기, 디지털 빠알리 사전(DPD), 여러 나라 말 번역 (AI 번역)",
+          "lang": "여러 나라 말 번역 (AI 번역)"
+        },
+        {
+          "name": "Dharmamitra 번역기",
+          "url": "https://dharmamitra.org/ko/translate",
+          "note": "빠알리어·산스끄리뜨어·티베트어·한문 불교 원문을 여러 나라 말로 옮겨 보는 AI 번역 도구 · UC 버클리 AI 연구소, 일본 도호쿠 대학, 짜드라 재단의 공동 사업 (AI 번역)",
+          "lang": "여러 나라 말 번역 (AI 번역)"
+        },
+        {
+          "name": "광명사 경장",
+          "url": "https://komyojikyozo.web.fc2.com/",
+          "note": "빠알리 경전(장부·중부·상응부·증지부·소부)을 문장마다 낱말로 나누어 어근·품사·성·수·격·뜻을 표로 풀고 일본어 번역을 붙인 문법 해설",
+          "lang": "일본어"
+        },
+        {
+          "name": "Sariputta.com",
+          "url": "https://www.sariputta.com/",
+          "note": "인도네시아 불교 사이트 · 빠알리 삼장과 주석서·복주서를 로마자·태국·미얀마·싱할라 문자와 인도네시아어·영어·중국어 등으로 보는 곳, 법구경·빠릿따(호경) 모음과 휴대폰 앱도 있음",
+          "lang": "인도네시아어"
+        },
+        {
+          "name": "Digital Pāḷi Dictionary (DPD)",
+          "url": "https://www.dpdict.net/",
+          "note": "빠알리어-영어 디지털 사전 · 낱말마다 문법·어근·연음(산디) 풀이, 6차 결집본 삼장에서 굵은 글씨로 정의된 용어 찾기, 삼장 원문·번역 찾기 (영어·러시아어 화면)",
+          "lang": "사전"
+        },
+        {
+          "name": "A Dictionary of Pāli (Gandhari.org)",
+          "url": "https://gandhari.org/dictionary?section=dop",
+          "note": "마가렛 콘(Margaret Cone)의 『A Dictionary of Pāli』(빠알리성전협회 허락)를 온라인으로 찾아보는 곳 · 낱말마다 경전·주석서 용례와 출처, PTS 사전 등 다른 사전도 함께",
+          "lang": "사전"
+        },
+        {
+          "name": "Pāli Dictionary (dictionary.sutta.org)",
+          "url": "https://dictionary.sutta.org/",
+          "note": "빠알리어 낱말을 영어·중국어·일본어·베트남어·미얀마어 사전에서 한꺼번에 찾는 온라인 사전 · 빠알리 글자 입력판, 내려받아 쓰는 프로그램도 있음",
+          "lang": "사전"
+        },
+        {
+          "name": "Dictionary of Pāli Proper Names (DPPN)",
+          "url": "https://aimwell.org/DPPN/index.html",
+          "note": "말랄라세께라(G.P. Malalasekera)의 빠알리 고유명사 사전 온라인판 · 사람·곳·경 이름 약 4천 항목의 짧은 설명, 자따까·디가·맛지마·숫따니빠따·상윳따 색인, 통째로 내려받기 (aimwell.org)",
+          "lang": "사전"
+        }
+      ]
+    }
+  ]
+}

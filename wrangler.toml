@@ -1,0 +1,18 @@
+# Cloudflare Pages 설정 (R2 저장소 연결)
+name = "dhammadana"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-11-01"
+
+[[r2_buckets]]
+binding = "FILES"
+bucket_name = "dhammadana-files"
+
+# 학습 자료실 전용 창고 (공개 주소를 연결하지 않음)
+[[r2_buckets]]
+binding = "MEMBERS"
+bucket_name = "dhammadana-study"
+
+# 종이책 보시 신청 보관 창고 (공개 주소를 연결하지 않음 — 받는 분 이름·연락처·주소가 들어 있음)
+[[r2_buckets]]
+binding = "PAPER"
+bucket_name = "dhammadana-paper"

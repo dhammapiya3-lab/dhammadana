@@ -1,0 +1,9 @@
+# 그림책 사이트 전용 Cloudflare Pages 설정 (도서관의 wrangler.toml 을 읽지 않도록)
+name = "dhamma-storybooks"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-11-01"
+
+# 내려받기(/dl/…): 그림·PDF·ZIP 을 R2 에서 꺼내 한글 파일 이름으로 내려줌
+[[r2_buckets]]
+binding = "FILES"
+bucket_name = "dhammadana-files"
