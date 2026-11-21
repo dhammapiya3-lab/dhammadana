@@ -319,6 +319,21 @@
       ],
       "note": "도서 안내 · cafe.daum.net/vipassanacenter",
       "coop": false
+    },
+    {
+      "id": "mahavipassana",
+      "name": "마하 위빠싸나 명상원",
+      "kind": "승원·사원",
+      "urls": [
+        "https://cafe.daum.net/bulwon/OKwy"
+      ],
+      "partner": true,
+      "note": "다음 카페 · cafe.daum.net/bulwon",
+      "image": "/uploads/partner-mahavipassana.png",
+      "aliases": [
+        "마하위빠싸나명상원",
+        "마하 위빠싸나명상원"
+      ]
     }
   ]
 }
