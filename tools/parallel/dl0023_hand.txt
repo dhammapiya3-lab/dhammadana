@@ -1,0 +1,93 @@
+# 『법구경 이야기』 1~3권 원서 대조 — 손으로 정한 짝 (pins_dl0023.py 가 읽음, 칸은 TAB)
+# 책	종류	한국어	원서	[원서 끝]
+#   seg  : 한국어 문단 첫머리 ↔ 원서 문단 첫머리가 함께 새 마디를 시작
+#   none : 원서 문단(첫머리 ~ 끝 문단 첫머리)을 짝짓지 않음 — 한국어판이 줄여 옮겨 원서에만 있는 부분
+#   spin : 문장 짝 — 한국어 문장 첫머리 ↔ 원서 문장 첫머리, 한쪽이 비면 그 문장은 짝 없음 (같은 첫머리가 여럿이면 '글~N')
+
+# 1권 3.1 메기야 — 원서는 메기야 경 전체를 인용, 한국어판은 '이 장로의 이야기는 메기야 경에 자세히 나온다' + 줄거리
+DL-0023	seg	어느 때 메기야 장로가 망고 숲에	Then venerable Meghiya went to the Fortunate One
+
+# 3권 25.3 꼬깔리까 — 한국어판은 꼬깔리까가 죽어 지옥에 태어난 뒤부터, 원서는 앞 사연 전체
+DL-0025	none		During one rainy season the two chief disciples	A great cry arose, and reached even to the Brahma Realm
+# 3권 26.14 욱가세나 — 한국어판은 '게송 348번 이야기에 자세히 나온다', 원서는 이야기를 다시 실음
+DL-0025	seg	그때 비구들이 부처님께 말씀드렸다.	At that time, when the bhikkhus said to the Teacher
+DL-0025	none		It seems that once a year, or once every six months, five hundred acrobats used to visit Rājagaha and give performances for seven days before~2	At the end of the teaching 84,000 living beings
+DL-0025	none		The rich man’s son straightaway descended from the pole~2
+# 3권 26.29 레와따 — 한국어판은 '게송 98번 이야기에서 이미 자세히 설명했다', 원서는 이야기를 다시 실음
+DL-0025	seg	어느 날 비구들이 법담을 나누고 있었다.	Again another day the bhikkhus began a discussion
+DL-0025	none		9a Revata Becomes a Bhikkhu	Because he committed this act, he was reborn at the end of his life in Avīci
+# 3권 26.39 앙굴리말라 — 한국어판은 '게송 177번 이야기에 자세히', 원서는 견줄 데 없는 보시 이야기를 실음
+DL-0025	seg	비구들은 앙굴리말라에게 물었다.	The bhikkhus asked Aṅgulimāla
+DL-0025	none		For once upon a time the Teacher returned from an almsround with his retinue of five hundred	The king waited upon the Saṅgha of bhikkhus presided over by the Buddha. Having so done
+
+# 1권 1.12 데와닷따 — 한국어판이 자따까를 줄거리로 쓰거나(실라와 나가·칸띠와디·쭐라 담마빨라) 차례를 바꾼 곳
+DL-0023	spin	그를 딱하게 여긴 실라와는	
+DL-0023	spin	부처님께서는 같은 주제로 이야기를 계속하셨다.	The discussion reverting to the same subject again
+DL-0023	spin	데와닷따가 깔라부 왕으로 있을 때	The discussion reverting to the same subject again
+DL-0023	spin	보살이 칸띠와디라는 이름으로	
+DL-0023	spin	부모가 죽자 그는 많은 재산을	
+DL-0023	spin	세월이 흘러 그는 까시로 되돌아와	
+DL-0023	spin	어느 날 베나레스의 깔라부 왕	
+DL-0023	spin	후궁들은 잠든 왕의 곁을 떠나	
+DL-0023	spin	잠에서 깬 왕은 여인들이 보이지 않자	
+DL-0023	spin	그는 은둔수행자가 인내(khanti)에 대해	
+DL-0023	spin	왕은 그에게 여러 가지로 고통을 가했으나	
+DL-0023	spin	그런데 왕이 공원을 떠나는 순간	
+DL-0023	spin	총사령관은 무슨 일이 일어났는지	
+DL-0023	spin	은둔수행자는 왕에게 전혀 악의가 없다면서	
+DL-0023	spin	부처님께서는 또 데와닷따가 마하빠따빠 왕으로	Again, in order to illustrate the swallowing up of Devadatta by the earth in his existence as Mahāpatāparājā
+DL-0023	spin	보살이 베나레스를 통치하고 있는 마하빠따빠 왕	
+DL-0023	spin	왕비는 짠다(마하빠자빠띠)였다.	
+DL-0023	spin	어느 날 왕비가 일곱 살 난 아들과	
+DL-0023	spin	왕에게 질투가 불같이 일어났다.	
+DL-0023	spin	왕은 사형집행인에게	
+DL-0023	spin	왕비는 비탄에 잠겨 울다가	
+DL-0023	spin	그러자 아비지옥의 불길이 솟아올라	
+DL-0023	spin	무자비함과 잔인함 때문에	And when he had thus spoken, to illustrate the rejoicing of the populace at the death of King Piṅgala
+DL-0023	spin	마하삥갈라(데와닷따)는 베나레스의 왕이었다.	In the past a wicked and unjust king named Mahāpiṅgala
+DL-0023	spin	그는 아주 악하고 잔인했다.	With taxes and fines, and many mutilations
+DL-0023	spin	그가 죽자 국민들이 모두 기뻐하며	When he died all the citizens of Benares were overjoyed
+DL-0023	spin	그러고 나서 그의 아들(보살)을 왕으로 추대했다.	When he died all the citizens of Benares were overjoyed
+DL-0023	spin	모든 사람들이 즐거워하는데 궁전의 문지기만이	But one doorkeeper, standing not far from the king
+DL-0023	spin	그러자 보살은 문지기에게	
+DL-0023	spin	모든 사람들이 삥갈라의 손에 괴로움을 겪다가	
+DL-0023	spin	그가 죽자 신뢰를 회복하고 기뻐하는데	
+DL-0023	spin	문지기여, 왜 우는 것이냐?	
+DL-0023	spin	노란 눈을 가진 그가 너만 잘 대해	
+DL-0023	spin	노란 눈을 가진 그가 나를 잘 대해 준 것이 아니고	The one with tawny eyes wasn’t dear to me
+
+# 1권 4.5 꼬시야 — 일리사 자따까를 줄거리로, 차례를 바꿔 씀
+DL-0023	spin	이와 같이 수행자도	so should the seer roam in village
+DL-0023	spin	마을에 피해를 주지 않고	so should the seer roam in village
+DL-0023	spin	탁발하며 살아가야 하리라.(49)	so should the seer roam in village
+DL-0023	spin	뜻하지 않은 횡재를 한 사람들 중에는	And the crowd seized on the riches there stored
+DL-0023	spin	그는 마차에 재물을 가득 싣고	And the crowd seized on the riches there stored
+DL-0023	spin	일리사는 모든 희망이 무너져 내리자	
+DL-0023	spin	그러자 삭까가 자기 모습을 드러내며	
+DL-0023	spin	이 모든 재산은 자기가 모은 것이지	
+DL-0023	spin	일리사는 그의 충고를 받아들여	
+
+# 2권 14.2 쌍신변 — 자따까 줄거리 끝, 게송 줄
+DL-0024	spin	부처님께서 자따까를 설하시고서 공중에 보배 경행대를	Now when the Teacher had related these Birth Stories
+DL-0024	spin	어리석음이 없는 사람에게 보시하면	given to those without delusion
+DL-0024	spin	큰 이로움을 얻으리라.(358)	given to those without delusion
+DL-0024	spin		Dhp 359.
+DL-0023	spin	온 세계를 준다 해도	still would never be satisfied
+DL-0023	spin	그러나 이 사악한 사람은 다시 돌아왔다.	
+DL-0023	spin	결국 실라와는 어금니를 뿌리까지	
+DL-0023	spin	이 사악한 자가 베나레스로 돌아오자	
+DL-0023	spin	그는 보살을 죽인 죄로	As the man passed out of sight of the Great Being
+DL-0023	spin	부처님께서는 실라와 나가 자따까를	{1.149} The Teacher then completed the Sīlavanāga Birth Story
+DL-0023	spin	이 광경을 지켜본 목신(사리뿟따)이	
+DL-0023	spin	은혜를 모르고 항상 기회를 노리는 자에게	The ungrateful person, always
+DL-0023	spin	하지만 그 사람은 세 번씩이나 되돌아와	He directed aright a man who had lost his way
+DL-0023	spin	코끼리가 숲속에서 길을 잃은 어떤 사람을	He directed aright a man who had lost his way
+DL-0023	spin	그러자 부처님께서 그에게 말씀하셨다.~2	The Teacher addressed him as follows
+DL-0023	spin	“메기야여, 너는 큰 잘못을 저질렀다.	The Teacher addressed him as follows
+DL-0023	spin	위라까여, 그대는 공작처럼 우아하고	Have you seen, O Vīraka,
+DL-0023	spin	꾀꼬리처럼 매혹적인 목소리를 가진 새를	Have you seen, O Vīraka,
+DL-0023	spin	그때 보살은 목신木神이었는데	Now when the Tree Devatā saw how misfortune
+DL-0024	spin	이교도들이 이 말을 듣고 서로 상의했다.	When the sectarians heard these words
+DL-0024	spin	게다가 그가 몸소 신통을 보이겠다고 말했다.	When the sectarians heard these words
+DL-0024	spin	“자.	So now seated on the pole
+DL-0024	spin	나의 훌륭한 친구여, 당겨라!”	So now seated on the pole

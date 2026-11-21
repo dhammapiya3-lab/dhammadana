@@ -70,12 +70,35 @@ for n, k, e in sorted(vs, key=lambda x: _key(x[1])):
     if _key(k) <= lk or e <= le: continue
     args += ['--seg', f'{k}={e}']; lk, le = _key(k), e; nv += 1
 print('게송 경계', nv, '/ 한국어 게송', len(kvs), '원서 게송', len(evs), file=sys.stderr)
-# 손으로 더한 경계: (책, 한국어 문단 글 첫머리, 원서 문단 글 첫머리) — 한국어 문단과 원서 문단이 함께 새 마디를 시작
-HAND = [
-    ('DL-0023', '어느 때 메기야 장로가 망고 숲에', 'Then venerable Meghiya went to the Fortunate One'),   # 3.1 원서는 메기야 경 전체를 인용, 한국어판은 '이 장로의 이야기는 메기야 경에 자세히 나온다' + 줄거리
-]
-for b, kt, et in HAND:
-    if b != B: continue
-    k = next(k for k, p in KO if p.startswith(kt)); e = next(i for i, o in enumerate(O) if o['t'].startswith(et))
-    args += ['--seg', f'{k}={e}']
+# 손으로 정한 것: tools/parallel/dl0023_hand.txt (책<TAB>종류<TAB>한국어<TAB>원서[<TAB>원서 끝])
+#   seg  — 한국어 문단(글 첫머리)과 원서 문단(글 첫머리)이 함께 새 마디를 시작(같은 한국어 문단의 저절로 만든 경계는 뺌)
+#   none — 원서 문단(글 첫머리, 끝 문단까지)을 짝짓지 않음: 한국어판이 줄여 옮겨 원서에만 있는 부분
+#   spin — 문장 짝(align.py --spin): '한국어 문장 첫머리'·'원서 문장 첫머리', 한쪽이 비면 그 문장은 짝 없음
+def _nth(t):
+    m = re.match(r'(.*)~(\d+)$', t); return (m.group(1), int(m.group(2))) if m else (t, 0)
+def _ki(t):
+    t, n = _nth(t); L = [k for k, p in KO if p.startswith(t)]
+    assert (len(L) == 1 and not n) or (n and len(L) >= n), ('한국어 문단', t, len(L)); return L[max(n, 1) - 1]
+def _ei(t):
+    t, n = _nth(t); L = [i for i, o in enumerate(O) if o['t'].startswith(t)]
+    assert (len(L) == 1 and not n) or (n and len(L) >= n), ('원서 문단 (같은 글이 여럿이면 ~N)', t, len(L)); return L[max(n, 1) - 1]
+HF = os.path.join(REPO, 'tools/parallel/dl0023_hand.txt')
+for ln in open(HF, encoding='utf-8'):
+    if not ln.strip() or ln.startswith('#'): continue
+    c = ln.rstrip('\n').split('\t')
+    if c[0] != B: continue
+    kind = c[1]
+    if kind == 'seg':
+        k, e = _ki(c[2]), _ei(c[3])
+        for i in range(len(args) - 2, -1, -2):
+            if args[i] == '--seg' and args[i + 1].split('=')[0] == k: del args[i:i + 2]
+        args += ['--seg', f'{k}={e}']
+    elif kind == 'none':
+        e0 = _ei(c[3]); e1 = next(i for i in range(e0, len(O)) if O[i]['t'].startswith(_nth(c[4])[0])) if len(c) > 4 and c[4] else e0   # 끝 문단은 첫 문단 뒤에서 처음 맞는 것
+        args += ['--pin', '=' + '+'.join(str(i) for i in range(e0, e1 + 1))]
+    elif kind == 'spin':
+        args += ['--spin', f'{c[2]}={c[3]}']
+segs = sorted(((_key(args[i + 1].split('=')[0]), int(args[i + 1].split('=')[1])) for i in range(0, len(args), 2) if args[i] == '--seg'))
+bad = [(a, b) for a, b in zip(segs, segs[1:]) if b[1] < a[1]]
+assert not bad, ('경계 차례가 어긋남', bad[:3])
 print('\n'.join(args))

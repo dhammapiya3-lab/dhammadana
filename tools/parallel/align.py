@@ -22,6 +22,8 @@ ap.add_argument('--gl-start', default=None, help='용어 풀이가 시작하는 
 ap.add_argument('--gl-end', default=None, help='용어 풀이가 끝난 뒤 첫 한국어 문단(정규식) — 그 뒤(역자 후기·판권지 등)는 짝짓지 않음')
 ap.add_argument('--gl-nl', action='store_true', help="용어 풀이가 '낱말(roman)⏎풀이' 모양(DL-0011) — 쪽에서 잘린 낱말 조각('**웨**' + '**다나(vedanā)**')도 이어 읽음")
 ap.add_argument('--pin', action='append', default=[], help='짝을 손으로 정함: "한국어 열쇠+…=원서 번호+…" (예 "1:0=0+1" 속표지 ↔ 원서 제목·지은이). 원서 쪽을 비우면("2:0+2:1=") 그 한국어 문단은 짝 없음');
+ap.add_argument('--spin', action='append', default=[], help='문장 짝을 손으로: "한국어 문장 첫머리=원서 문장 첫머리" — 그 두 문장을 반드시 짝지음, "한국어 첫머리=" 는 그 한국어 문장을 짝짓지 않음, "=원서 첫머리" 는 그 원서 문장을 짝짓지 않음 (DL-0023~25: 한국어판이 줄여 옮긴 이야기를 읽고 정함). 첫머리가 둘 이상 맞으면 "글~N"(N 번째)');
+ap.add_argument('--none-show', action='store_true', help='"=원서" 로 짝짓지 않은 원서 문단도 앞 묶음 원서 칸 끝에 원서만으로 보임(문장마다 보기에서도) — DL-0023~25: 한국어판이 줄여 옮긴 이야기의 원서 글');
 ap.add_argument('--fnpin', action='append', default=[], help='각주 짝을 손으로: "한국어 각주 번호=원서 각주 번호" (예 "40=33"), 짝 없음은 "14=" 또는 "=3"');
 ap.add_argument('--move', action='append', default=[], help='한국어판이 원서와 순서를 바꿔 옮긴 곳: "원서 A-B>C" — 원서 문단 A~B 를 C(번호 또는 @글 첫머리) 앞으로 옮겨 짝짓고, 그 묶음에 순서가 다르다는 메모(note)를 붙임 (DL-0001 Ⅳ장)')
 ap.add_argument('--base', type=float, default=0.0, help='짝짓기 점수에서 뺄 바탕 뜻 비슷함 — 미얀마어처럼 관계없는 문장도 뜻 비슷함이 높게 나오는 말에서, 줄여 옮긴 곳을 억지로 짝짓지 않고 건너뛰게 (DL-0001: 0.25)')
@@ -212,6 +214,29 @@ if _SEG: S[np.array(KSg)[:, None] != np.array(ESg)[None, :]] = -1.0
 KB = {k: float(v) for k, v in (x.split('=') for x in A.kind_base)}
 PEN = np.array([KB.get(ORIG[x[0]]['k'], 0.0) for x in ES]) if ES else np.zeros(0)
 S1 = S - A.base - PEN[None, :]   # 1단계(대강의 길)용
+# --spin: 손으로 정한 문장 짝·짝 없음
+def _norm(t): return re.sub(r'\s+', ' ', t).strip()
+def _find(L, x, what):
+    m = re.match(r'(.*)~(\d+)$', x); t, n = (m.group(1), int(m.group(2))) if m else (x, 1)
+    t = _norm(t); hits = [i for i, y in enumerate(L) if _norm(y[3]).startswith(t)]
+    if len(hits) < n or (not m and len(hits) > 1): SPFAIL.append(f'{what} 문장 찾기 실패({len(hits)}개 맞음): {x}'); return None
+    return hits[n - 1]
+SPFAIL = []
+SPIN, SPINR, NOK, NOE = {}, {}, set(), set()
+for x in A.spin:
+    k, e = x.split('=', 1)
+    ki = _find(KS, k, '한국어') if k.strip() else None
+    ei = _find(ES, e, '원서') if e.strip() else None
+    if (k.strip() and ki is None) or (e.strip() and ei is None): continue
+    if ki is not None and ei is not None: SPIN[ki] = ei; SPINR.setdefault(ei, set()).add(ki)   # 한국어 여럿 → 원서 하나도 됨(2:1 묶음)
+    elif ki is not None: NOK.add(ki)
+    elif ei is not None: NOE.add(ei)
+for i in NOK: S1[i, :] = -1.0
+for j in NOE: S1[:, j] = -1.0
+for i, j in SPIN.items(): S1[i, :] = -1.0; S1[:, j] = -1.0
+for i, j in SPIN.items(): S1[i, j] = 2.0
+if SPFAIL: sys.exit('--spin 확인할 것:\n  ' + '\n  '.join(SPFAIL))
+if A.spin: print('손으로 정한 문장 짝', len(SPIN), '/ 짝 없음 한국어', len(NOK), '원서', len(NOE))
 
 # ---------- 1단계: 대강의 길(1:1·건너뛰기)로 띠 찾기 ----------
 SK = 0.05
@@ -241,6 +266,19 @@ BEADS = [(1, 1), (1, 2), (2, 1), (2, 2), (1, 3), (3, 1), (1, 0), (0, 1)]
 if A.en_semi: BEADS += [(1, 4), (1, 5), (1, 6), (1, 7), (1, 8), (1, 9), (1, 10), (4, 1), (5, 1), (2, 3), (3, 2)]   # 긴 목록('abstention from … is wholesome;' ×10)을 한국어 한 문장에   # 쌍반점으로 잘게 나눈 원서 조각 여럿 ↔ 한국어 한 문장 (DL-0022)
 cK = np.vstack([np.zeros(KE.shape[1]), np.cumsum(KE, 0)]); cE = np.vstack([np.zeros(EE.shape[1]), np.cumsum(EE, 0)])
 def sim(i0, i1, j0, j1):
+    if SPIN or NOK or NOE:
+        bonus = 0.0
+        for i in range(i0, i1):
+            if i in NOK: return -1.0
+            if i in SPIN:
+                if not j0 <= SPIN[i] < j1: return -1.0
+                bonus = 1.0
+        for j in range(j0, j1):
+            if j in NOE: return -1.0
+            if j in SPINR and not all(i0 <= x < i1 for x in SPINR[j]): return -1.0
+        if bonus: return _sim(i0, i1, j0, j1) + bonus
+    return _sim(i0, i1, j0, j1)
+def _sim(i0, i1, j0, j1):
     if _SEG and i1 > i0 and j1 > j0 and len({KSg[i0], KSg[i1 - 1], ESg[j0], ESg[j1 - 1]}) > 1: return -1.0
     a = cK[i1] - cK[i0]; b = cE[j1] - cE[j0]
     return float(a @ b / (np.linalg.norm(a) * np.linalg.norm(b) + 1e-9))
@@ -261,11 +299,17 @@ def _sr(i):
 def lo(i):
     if not N: return 0
     v = min(center[max(0, min(i, N - 1) - 1)], center[min(i, N - 1)]) - W; r = _sr(i)
-    return max(0, min(v, r[0]) if r else v)
+    v = min(v, r[0]) if r else v
+    for x in (i - 1, i):
+        if x in SPIN: v = min(v, SPIN[x] - 2)
+    return max(0, v)
 def hi(i):
     if not N: return M
     v = max(center[min(i, N - 1)], center[min(i + 1, N - 1)]) + W; r = _sr(i)
-    return min(M, max(v, r[1]) if r else v)
+    v = max(v, r[1]) if r else v
+    for x in (i - 1, i):
+        if x in SPIN: v = max(v, SPIN[x] + 3)
+    return min(M, v)
 for i in range(0, N + 1):
     for j in range(lo(i), hi(i) + 1):
         if (i, j) == (0, 0): continue
@@ -298,7 +342,7 @@ out = []
 for kp, ep, bs in groups:
     sent = []
     for i0, i1, j0, j1 in bs:
-        sc = round(sim(i0, i1, j0, j1), 3) if i1 > i0 and j1 > j0 else None
+        sc = round(_sim(i0, i1, j0, j1), 3) if i1 > i0 and j1 > j0 else None
         sent.append({'ko': [y for k in range(i0, i1) for y in [[KO_DP[KS[k][0]]['key'], KS[k][1], KS[k][2]]] + [[KO_DP[x[0]]['key'], x[1], x[2]] for x in KS[k][4]]],
                      'or': [[ES[k][0], ES[k][1], ES[k][2]] for k in range(j0, j1)], **({'sc': sc} if sc is not None else {})})
     out.append({'ko': [KO_DP[k]['key'] for k in sorted(kp)], 'or': sorted(ep),
@@ -356,6 +400,20 @@ for i, p in enumerate(ORIG):
     j = i + 1
     while j < len(ORIG) and ORIG[j]['k'] in ('cite', 'pv', 'hv', 'fn'): j += 1
     if j < len(ORIG) and j in _og and i not in _og[j]['or']: _og[j]['or'] = sorted(set(_og[j]['or']) | {i})
+if A.none_show and _onopin:   # 짝짓지 않은 원서 문단을 앞 묶음(없으면 뒤 묶음) 원서 칸에 원서만으로
+    _own = {}
+    for g in out:
+        if g.get('toc'): continue
+        for o in g['or']: _own[o] = g
+    for i in sorted(_onopin):
+        if ORIG[i]['k'] in ('fn', 'pq', 'sep', 'toc', 'gl'): continue   # 각주·머리 정보는 그대로(원서 글의 [^n] 을 누르면 각주)
+        g = next((_own[x] for x in range(i - 1, -1, -1) if x in _own), None)
+        if g is None: g = next((_own[x] for x in range(i + 1, len(ORIG)) if x in _own), None)
+        if g is None: continue
+        g['or'] = sorted(set(g['or']) | {i}); _own[i] = g
+        row = {'ko': [], 'or': [[i, 0, len(ORIG[i]['t'])]]}
+        pos = next((n for n, r in enumerate(g['s']) if r['or'] and r['or'][0][0] > i), len(g['s']))
+        g['s'].insert(pos, row)
 for g in out:   # --move 로 옮긴 원서 문단과 짝지은 묶음: 순서가 다르다는 메모
     if g['or'] and not g.get('pin') and all(o in MOVED for o in g['or']):
         o = ORIG[g['or'][0]]

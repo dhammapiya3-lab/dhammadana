@@ -22,6 +22,6 @@ EOT
     --title "The Dhamma Verses Commentary" --by "E W Burlingame, Ānandajoti Bhikkhu" \
     --source "Ancient Buddhist Texts (2024, Public Domain)" \
     --gl-start '^NO-GLOSSARY$' --ko-join --ko-skip '.|^## 제[0-9]+장' --ko-skip "$BACK" \
-    --ko-none '^\^\^ 제[0-9]+장' --ko-none '^:: [A-Za-zĀ-ž ]*[Vv]agga$' \
-    --fn-cost 9 --base 0.2 $ALIGN_EXTRA
+    --ko-none '^(\+\+ )?\([A-Za-zĀ-ž ]+ Jātaka, J[0-9]+\)$'     --ko-none '^\^\^ 제[0-9]+장' --ko-none '^:: [A-Za-zĀ-ž ]*[Vv]agga$' \
+    --fn-cost 9 --base 0.2 --none-show $ALIGN_EXTRA
 done
