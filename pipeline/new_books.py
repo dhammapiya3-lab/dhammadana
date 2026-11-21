@@ -37,6 +37,10 @@ for d in sorted(glob.glob("new/*/*/")):
         n += 1
     rd[key] = len(files); st[key] = h
     print("새 그림책 올림:", key, len(files), "장")
+# new/ 에서 옮기거나 지운 이야기(번역 파일도 없는 것)는 목록에서 뺌 — 예: 별도 책이던 New-Jataka-EN → New-Jataka/<이야기>-en
+for key in list(rd):
+    if not os.path.exists(f"ko/{key}.json") and not os.path.isdir(f"new/{key}"):
+        print("목록에서 뺌:", key); rd.pop(key); st.pop(key, None)
 json.dump(rd, open("data/rendered.json", "w"), ensure_ascii=False, indent=1, sort_keys=True)
 json.dump(st, open("data/rendered_stamp.json", "w"), indent=1, sort_keys=True)
 print("새 그림책: 올린 그림", n, "장")

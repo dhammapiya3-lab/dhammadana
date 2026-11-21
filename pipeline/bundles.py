@@ -55,13 +55,6 @@ def credit(size, lines):  # 출처 쪽 (그림과 같은 크기)
 
 CUR = {"book": ""}  # 지금 만드는 책 — 우리가 새로 그린 책(catalog own)은 출처 쪽이 다름
 def credit_lines(title):
-    if CAT["books"].get(CUR["book"], {}).get("lang") == "en":
-        return [title, "", "Buddhadhamma Storybooks (storybooks.dhammadana.kr) - newly made by the Buddhadhamma Dhamma-dana Library",
-                "Source: the Jataka and its commentary (Pali Tipitaka, Sixth Council edition)",
-                "Pictures made with Google Gemini; captions written and checked with Anthropic's AI Claude", "",
-                "Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)",
-                "You may share and adapt this work freely with attribution; adaptations must use the same license.",
-                "https://creativecommons.org/licenses/by-sa/4.0/", "", "May the merit of this Dhamma gift be shared with all beings."]
     if CAT["books"].get(CUR["book"], {}).get("own"):
         return [title, "", "붓다담마 그림책 (storybooks.dhammadana.kr) — 붓다담마 법보시 도서관이 새로 만듦",
                 "원전: 『자따까』와 그 주석서 (빠알리 삼장 6차 결집본)",
@@ -92,6 +85,7 @@ tmp = tempfile.mkdtemp()
 books = sorted({k.split("/")[0] for k in READY})
 n = 0
 for book in books:
+    if book not in CAT["books"]: continue  # 목록에 없는 책(예전 키)은 건너뜀
     CUR["book"] = book
     sts = stories(book)
     if not sts: continue
