@@ -7,7 +7,9 @@
   "translator": "",
   "teacher": "panyavaro",
   "co_teachers": [],
-  "country": [],
+  "country": [
+    "한국"
+  ],
   "provider": "buddhayana",
   "press": false,
   "provider_chip": false,
