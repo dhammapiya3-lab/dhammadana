@@ -50,5 +50,19 @@
   "a": "(Ehi|Tisaraṇa|Upasampadā) bhikkhū\\)",
   "b": "\\1 bhikkhu)",
   "re": true
+ },
+ {
+  "p": [
+   "142쪽"
+  ],
+  "a": "그러면 araham인데",
+  "b": "그러면 arahaṁ인데"
+ },
+ {
+  "p": [
+   "137쪽"
+  ],
+  "a": "'왓지뿟따까(Vajjiputtaka')라",
+  "b": "'왓지뿟따까(Vajjiputtaka)'라"
  }
 ]
