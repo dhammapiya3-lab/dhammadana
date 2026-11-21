@@ -1,67 +1,12 @@
-검수 Jataka/001-The-Waterless-Desert 13번 그림 상자2 [자리] 한글 글(2151,1214)이 상자 점(1762,1051)에서 멀리 그려짐
-Jataka 001-The-Waterless-Desert 15 장
-Jataka 002-The-Well-of-Perseverance 15 장
-검수 Jataka/003-The-Golden-Bowl 02번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 4px)
-검수 Jataka/003-The-Golden-Bowl 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 6px)
-검수 Jataka/003-The-Golden-Bowl 07번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 6px)
-검수 Jataka/003-The-Golden-Bowl 08번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 6px)
-Jataka 003-The-Golden-Bowl 14 장
-검수 Jataka/004-The-Dead-Mouse 04번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Jataka/004-The-Dead-Mouse 09번 그림 상자2 [자리] 한글 글(2228,1294)이 상자 점(2030,1107)에서 멀리 그려짐
-검수 Jataka/004-The-Dead-Mouse 11번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 2px)
-Jataka 004-The-Dead-Mouse 15 장
-검수 Jataka/006-The-Water-Rakkhasa 02번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 4px)
-Jataka 006-The-Water-Rakkhasa 15 장
-검수 Jataka/010-Bliss-of-Renunciation 08번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-Jataka 010-Bliss-of-Renunciation 14 장
-검수 Jataka/011-The-Wisdom-of-Lakkhana 04번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 5px)
-Jataka 011-The-Wisdom-of-Lakkhana 10 장
-검수 Jataka/014-The-Wind-Deer 02번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 4px)
-Jataka 014-The-Wind-Deer 9 장
-검수 Jataka/018-The-Sacrificial-Goat 06번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-Jataka 018-The-Sacrificial-Goat 14 장
-Jataka 023-The-Noble-Warhorse 14 장
-검수 Jataka/032-The-Peacocks-Dance 08번 그림 상자2 [자리] 한글 글(2036,1048)이 상자 점(1831,869)에서 멀리 그려짐
-Jataka 032-The-Peacocks-Dance 12 장
-검수 Jataka/033-The-Quails-and-the-Net 09번 그림 상자2 [자리] 한글 글(1343,693)이 상자 점(1167,538)에서 멀리 그려짐
-Jataka 033-The-Quails-and-the-Net 14 장
-검수 Jataka/040-The-Fiery-Pit 04번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-Jataka 040-The-Fiery-Pit 12 장
-검수 Jataka/044-The-Son-and-the-Mosquito 01번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Jataka/044-The-Son-and-the-Mosquito 04번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 5px)
-Jataka 044-The-Son-and-the-Mosquito 13 장
-검수 Jataka/046-The-Folly-of-the-Monkeys 06번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 3px)
-Jataka 046-The-Folly-of-the-Monkeys 13 장
-검수 Jatakamala/02-Sibi 11번 그림 상자1 [자리] 한글이 원래 글 자리(283,299-583,373)에서 벗어남 (678,327)
-Jatakamala 02-Sibi 15 장
-Jatakamala 03-Gruel 15 장
-자동 검수: 문제 의심 20 곳
-R2 에 올림: 505 개 / 한글판 이야기 257 편
+Jatakamala 04-Guild 15 장
+자동 검수: 문제 의심 0 곳
+R2 에 올림: 77 개 / 한글판 이야기 258 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1160954바이트
-이야기 Jataka/001-The-Waterless-Desert {'pdf': 14359093, 'zip': 14093732, 'n': 15}
-이야기 Jataka/002-The-Well-of-Perseverance {'pdf': 17829493, 'zip': 17561370, 'n': 15}
-이야기 Jataka/003-The-Golden-Bowl {'pdf': 15786238, 'zip': 15521250, 'n': 14}
-이야기 Jataka/004-The-Dead-Mouse {'pdf': 17535798, 'zip': 17272362, 'n': 15}
-이야기 Jataka/006-The-Water-Rakkhasa {'pdf': 19117089, 'zip': 18850670, 'n': 15}
-이야기 Jataka/010-Bliss-of-Renunciation {'pdf': 17049831, 'zip': 16783444, 'n': 14}
-이야기 Jataka/011-The-Wisdom-of-Lakkhana {'pdf': 12221451, 'zip': 11957481, 'n': 10}
-이야기 Jataka/014-The-Wind-Deer {'pdf': 9634404, 'zip': 9372985, 'n': 9}
-이야기 Jataka/018-The-Sacrificial-Goat {'pdf': 16415143, 'zip': 16144760, 'n': 14}
-이야기 Jataka/023-The-Noble-Warhorse {'pdf': 17046361, 'zip': 16781066, 'n': 14}
-이야기 Jataka/032-The-Peacocks-Dance {'pdf': 16822054, 'zip': 16557629, 'n': 12}
-이야기 Jataka/033-The-Quails-and-the-Net {'pdf': 15953670, 'zip': 15685516, 'n': 14}
-이야기 Jataka/046-The-Folly-of-the-Monkeys {'pdf': 15975306, 'zip': 15703150, 'n': 13}
-이야기 Jataka/040-The-Fiery-Pit {'pdf': 12668799, 'zip': 12405055, 'n': 12}
-이야기 Jataka/044-The-Son-and-the-Mosquito {'pdf': 15060197, 'zip': 14790779, 'n': 13}
-책 Jataka {'pdf': 496421157, 'pdfs': 50565572, 'zip': 496011396, 'stories': 32, 'n': 422}
-이야기 Jatakamala/02-Sibi {'pdf': 14064251, 'zip': 13776156, 'n': 15}
-이야기 Jatakamala/03-Gruel {'pdf': 13364966, 'zip': 13078390, 'n': 15}
-책 Jatakamala {'pdf': 40480560, 'pdfs': 4063269, 'zip': 40207381, 'stories': 3, 'n': 45}
-이야기 New-Jataka/002-Vannupatha-en {'pdf': 15799503, 'zip': 15602822, 'n': 24}
-책 New-Jataka-en {'pdf': 15795392, 'pdfs': 3279341, 'zip': 15605416, 'stories': 1, 'n': 24}
-내려받기 파일: 21 묶음 새로 만듦
-글로 보기: 257 이야기
+공개 주소 확인: 200 945237바이트
+이야기 Jatakamala/04-Guild {'pdf': 12415062, 'zip': 12129038, 'n': 15}
+책 Jatakamala {'pdf': 52615001, 'pdfs': 5326880, 'zip': 52336863, 'stories': 4, 'n': 60}
+내려받기 파일: 2 묶음 새로 만듦
+글로 보기: 258 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
