@@ -1,0 +1,387 @@
+[
+ {
+  "img": "images/Light-of-Asia-03-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     510,
+     36,
+     794,
+     74
+    ],
+    "ko": "제3권: 깨어남",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     510,
+     74,
+     794,
+     226
+    ],
+    "ko": "행복한 빛과 사랑이 가득한 고요한 집에서\n싯닷타 왕자는 슬픔도 모자람도 아픔도\n죽음도 모른 채 지냈습니다. 놋쇠 문과\n왕의 사랑에 지켜진 변함없는 기쁨의\n삶이었습니다. 그러나 그는 자주 잠에서\n깨어 외쳤습니다. “나의 세상이여!\n오, 세상이여! 듣는다! 안다! 간다!”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-03-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     136,
+     34,
+     520,
+     76
+    ],
+    "ko": "바람 하프의 노래",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     136,
+     80,
+     520,
+     212
+    ],
+    "ko": "창턱에 바람 하프가 놓여 있었고\n바람은 은빛 줄 위를 맴돌았습니다.\n궁의 사람들에게는 그저 거친 소리였지만\n싯닷타 왕자는 천신들의 연주를 들었습니다.\n떠도는 바람과 그가 본 적 없는\n세상의 슬픔을 노래하는 소리였습니다.\n“일어나라, 마야의 아들이여! 깨어나라!\n다시 잠들지 말라!”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-03-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     130,
+     84,
+     420,
+     176
+    ],
+    "ko": "우리는 떠도는 바람의 목소리,\n쉬기를 바라 신음하나 쉴 곳을 찾지 못하네.\n보라! 바람처럼 죽을 목숨도 그러하니\n신음과 한숨과 흐느낌, 폭풍과 다툼이라네.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     480,
+     170,
+     790,
+     290
+    ],
+    "ko": "오 마야의 아들이여! 우리는 땅을 떠돌기에\n이 줄 위에서 신음할 뿐 웃지 못하네.\n수많은 땅에서 수많은 슬픔을 보았네,\n눈물 흐르는 눈과 비틀어 쥔 손들을.\n\n그러나 구원할 그대여, 그대의 때가 가까웠네!\n슬픈 세상이 괴로움 속에서 기다리네.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-03-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     126,
+     300,
+     390
+    ],
+    "ko": "“우리 놋쇠 문 너머에 무엇이\n있는지 말해 주십시오.”\n왕자가 청했습니다.\n\n숫도다나 왕은 청을 들어주었으나\n도성을 꿈나라의 서울처럼 꾸미라고\n명했습니다. “눈먼 이, 불구인 이,\n병든 이, 몹시 늙은 이는 아무도\n나오지 말라.”\n\n삶의 거친 현실은 쓸려 나가\n왕자에게서 진실이 가려졌습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-03-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     420,
+     18,
+     758,
+     150
+    ],
+    "ko": "“세상은 아름답구나.” 왕자가 말했습니다.\n“마음에 든다! 왕이 아닌 이 사람들도\n밝고 친절하구나.”\n\n그는 웃음 가득한 도성을 보았을 뿐, 병든 이와\n늙은 이가 닫힌 문 뒤에 숨겨진 줄 몰랐습니다.\n그는 소박한 즐거움이면 삶이 좋다고 믿었습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-03-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     428,
+     294,
+     710,
+     444
+    ],
+    "ko": "그때 누더기를 걸친 가엾은 이가\n기어 나왔습니다. “적선하십시오!” 그는\n신음했습니다. 허리는 굽고 묵은 눈물에\n눈가는 붉게 짓물렀고 숨을 헐떡였습니다.\n\n“찬나여! 사람처럼 보이는 이것은\n무엇이냐?” 왕자가 외쳤습니다.\n“사람이 때로 이렇게 태어나느냐?”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-03-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     80,
+     424,
+     352
+    ],
+    "ko": "“이는 다름 아닌 늙은이입니다.”\n찬나가 설명했습니다. “도둑 같은 세월이\n그의 진액을 빨아 갔습니다.”\n“이것이 다른 이들에게도, 모두에게도\n오느냐?” 왕자가 물었습니다.\n“모두에게 옵니다, 왕자님.”\n싯닷타는 두려움으로 마음이 어두워져\n돌아섰습니다. 사랑하는 야소다라도\n언젠가 사랑스러움을 잃고 약해지고\n늙으리라.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-03-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     22,
+     600,
+     56
+    ],
+    "ko": "숫도다나 왕은 불길한 꿈 일곱 가지를 꾸었습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     466,
+     292,
+     792,
+     446
+    ],
+    "ko": "숫도다나 왕은 불길한 꿈 일곱 가지를\n꾸었습니다. 찢긴 깃발, 열 마리 코끼리,\n불타는 수레, 도는 금바퀴, 큰북, 보석을\n쏟는 탑, 그리고 우는 여섯 사람.\n사슴 가죽을 입은 은자가 말했습니다.\n‘왕자님의 복은 왕국보다 큽니다.’\n꿈은 진리로 세상이 흔들릴 것을 알렸습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-03-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     88,
+     36,
+     404,
+     176
+    ],
+    "ko": "“백성과 거리와 그들의 소박한\n삶을 알고 싶습니다.” 왕자가\n간청했습니다. 그는 상인 옷으로\n변장하고 다시 나갔습니다. 평범한\n길을 걸으며 짐꾼의 땀과 대장장이\n숯불의 열기와 살려는 몸부림을\n보았습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-03-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     40,
+     560,
+     90
+    ],
+    "ko": "‘형제여, 무엇이 아프오?’",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     28,
+     130,
+     330,
+     374
+    ],
+    "ko": "그 사람은 헐떡였습니다. 찬나가\n말했습니다. “이 사람은 역병에\n걸렸습니다. 피가 끓어오르니\n병이 그의 몸을 휩쓸었습니다.”\n“다른 이들도 그러하냐?”\n“슬픔과 상처, 병과 열은 모든\n몸에 닥칩니다.” 찬나가 답했습니다.\n“교활한 뱀처럼 보이지 않게 옵니다.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-03-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     30,
+     420,
+     72
+    ],
+    "ko": "‘보소서, 죽은 이가 옵니다!’",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     28,
+     82,
+     420,
+     214
+    ],
+    "ko": "울부짖는 사람들이 상여를 메고 강가로 갔습니다.\n그들은 장작에 붉은 불을 붙였습니다.\n‘살아 있는 모든 이에게 오는 끝이 이것이냐?’\n‘이것이 끝입니다.’ 찬나가 말했습니다.\n‘높은 이도 낮은 이도, 착한 이도 악한 이도\n모두 죽습니다.’",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-03-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     26,
+     440,
+     80
+    ],
+    "ko": "‘오! 괴로운 세상이여!’",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     28,
+     80,
+     448,
+     244
+    ],
+    "ko": "“죽음과 슬픔이라는 이 같은 그물에 걸렸구나!”\n싯닷타가 외쳤습니다. 그는 땅의 괴로움이\n얼마나 큰지 보았습니다. 즐거움은 아픔으로,\n젊음은 늙음으로, 삶은 싫은 죽음으로 끝납니다.\n그의 눈을 가렸던 너울이 찢어졌습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-03-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     462,
+     104,
+     790,
+     404
+    ],
+    "ko": "‘나도 이 미끼에 속았구나.\n신들에게 울부짖어도 응답받지\n못하는 이 모든 사람과 나는\n같다. 그러나 도움이 있어야 한다!\n내가 구할 수 있는 이는 한 사람도\n울게 두지 않으리!’ 그는 전능한\n신이 어찌 세상을 이토록 비참하게\n두는지 물었습니다. ‘전능하다면\n선하지 않고, 전능하지 않다면\n신이 아니다.’",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-03-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     10,
+     788,
+     140
+    ],
+    "ko": "‘찬나여! 다시 집으로 가자! 이제 됐다! 충분히 보았다!’\n왕자는 돌아왔으나 궁의 안전으로 돌아온 것이 아니라 그의 사명이\n시작되는 곳으로 돌아왔습니다. 왕은 운명을 막으려 문마다 세 겹으로\n지키게 했습니다. 그러나 왕자의 마음은 움직였고 꿈의 날들은 다해 가고 있었습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
