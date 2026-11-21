@@ -26,15 +26,18 @@ FONT = "pipeline/fonts/GowunDodum-Regular.ttf"
 S = KO["site"]
 
 sid = lambda f: f.rsplit(".", 1)[0]
-def stories(book):  # 차례 순서대로, 한글 그림이 있는 이야기만
+def stories(book, sfx=""):  # 차례 순서대로, 그림이 있는 이야기만 (sfx="-en": 우리가 새로 그린 책의 영어판)
     out = []
     for s in CAT["books"][book]["stories"].values():
-        k = f"{book}/{sid(s['file'])}"
+        k = f"{book}/{sid(s['file'])}{sfx}"
         if READY.get(k):
-            t = KO.get("book_detail", {}).get(book, {}).get("stories", {}).get(s["file"], {}).get("title") or s["title"]
+            d = KO.get("book_detail", {}).get(book, {}).get("stories", {}).get(s["file"], {})
+            t = (d.get("title_en") if sfx else d.get("title")) or s["title"]
             out.append((k, t, READY[k]))
     return out
-btitle = lambda b: KO.get("books", {}).get(b, {}).get("title") or CAT["books"][b]["title"]
+btitle = lambda b: CAT["books"][b]["title"] if CUR.get("en") else (KO.get("books", {}).get(b, {}).get("title") or CAT["books"][b]["title"])
+import unicodedata
+ascii_ = lambda t: unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode().replace("  ", " ")  # 출처 쪽 글꼴에 없는 빠알리 부호는 뺌
 
 cache = {}
 def get(key):
@@ -53,8 +56,15 @@ def credit(size, lines):  # 출처 쪽 (그림과 같은 크기)
         y += int((f.size) * (2.0 if i == 0 else 1.7))
     b = io.BytesIO(); im.save(b, "JPEG", quality=90); return b.getvalue()
 
-CUR = {"book": ""}  # 지금 만드는 책 — 우리가 새로 그린 책(catalog own)은 출처 쪽이 다름
+CUR = {"book": "", "en": False}  # 지금 만드는 책 — 우리가 새로 그린 책(catalog own)은 출처 쪽이 다름
 def credit_lines(title):
+    if CUR["en"]:
+        return [ascii_(title), "", "Buddhadhamma Storybooks (storybooks.dhammadana.kr)", "Newly made by the Buddhadhamma Dhamma-dana Library",
+                "Source: the Jataka and its commentary (Pali Tipitaka, Sixth Council edition)",
+                "Pictures made with Google Gemini; captions written and checked with Anthropic's AI Claude", "",
+                "Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)",
+                "You may share and adapt this work freely with attribution; adaptations must use the same license.",
+                "https://creativecommons.org/licenses/by-sa/4.0/", "", "May the merit of this gift of the Dhamma be shared with all beings."]
     if CAT["books"].get(CUR["book"], {}).get("own"):
         return [title, "", "붓다담마 그림책 (storybooks.dhammadana.kr) — 붓다담마 법보시 도서관이 새로 만듦",
                 "원전: 『자따까』와 그 주석서 (빠알리 삼장 6차 결집본)",
@@ -84,11 +94,13 @@ def size_of(jpg):
 tmp = tempfile.mkdtemp()
 books = sorted({k.split("/")[0] for k in READY})
 n = 0
-for book in books:
+eds = [(b, "") for b in books] + [(b, "-en") for b in books if b in CAT["books"] and CAT["books"][b].get("own")]
+for book, sfx in eds:
     if book not in CAT["books"]: continue  # 목록에 없는 책(예전 키)은 건너뜀
-    CUR["book"] = book
-    sts = stories(book)
+    CUR["book"] = book; CUR["en"] = bool(sfx)
+    sts = stories(book, sfx)
     if not sts: continue
+    BK = book + sfx  # dl.json 의 책 키 (영어판: <책>-en)
     bt = btitle(book)
     changed = False
     for k, t, cnt in sts:
@@ -100,12 +112,12 @@ for book in books:
         pdf(big + [cred], p)
         with zipfile.ZipFile(z, "w", zipfile.ZIP_STORED) as zf:
             for i, b in enumerate(big, 1): zf.writestr(f"{i:02d}.jpg", b)
-            zf.writestr("출처_라이선스.txt", README(f"{bt} — {t}"))
+            zf.writestr("LICENSE.txt" if sfx else "출처_라이선스.txt", README(f"{bt} — {t}"))
         DL[k] = {"pdf": put(p, f"{book}/{st}.pdf", "application/pdf"), "zip": put(z, f"{book}/{st}.zip", "application/zip"), "n": cnt}
         DONE[k] = STAMP.get(k); changed = True; n += 1
         print("이야기", k, DL[k])
     have = {k for k, _, _ in sts}
-    if changed or book not in DL or DL[book].get("stories") != len(sts):
+    if changed or BK not in DL or DL[BK].get("stories") != len(sts):
         big, small = [], []
         z = f"{tmp}/b.zip"
         with zipfile.ZipFile(z, "w", zipfile.ZIP_STORED) as zf:
@@ -114,13 +126,13 @@ for book in books:
                 for i in range(1, cnt + 1):
                     b = get(f"{k}/big/{i:02d}.jpg"); big.append(b); zf.writestr(f"{folder}/{i:02d}.jpg", b)
                     small.append(get(f"{k}/s/{i:02d}.jpg"))
-            zf.writestr("출처_라이선스.txt", README(bt))
+            zf.writestr("LICENSE.txt" if sfx else "출처_라이선스.txt", README(bt))
         p1, p2 = f"{tmp}/b1.pdf", f"{tmp}/b2.pdf"
         pdf(big + [credit(size_of(big[0]), credit_lines(bt))], p1)
         pdf(small + [credit(size_of(small[0]), credit_lines(bt))], p2)
-        DL[book] = {"pdf": put(p1, f"{book}/_book.pdf", "application/pdf"), "pdfs": put(p2, f"{book}/_book_s.pdf", "application/pdf"),
-                    "zip": put(z, f"{book}/_book.zip", "application/zip"), "stories": len(sts), "n": len(big)}
-        print("책", book, DL[book]); n += 1
+        DL[BK] = {"pdf": put(p1, f"{book}/_book{sfx}.pdf", "application/pdf"), "pdfs": put(p2, f"{book}/_book_s{sfx}.pdf", "application/pdf"),
+                    "zip": put(z, f"{book}/_book{sfx}.zip", "application/zip"), "stories": len(sts), "n": len(big)}
+        print("책", BK, DL[BK]); n += 1
     cache.clear()
 json.dump(DONE, open("data/bundles.json", "w"), indent=1, sort_keys=True)
 json.dump(DL, open(DLF, "w"), ensure_ascii=False, indent=0, sort_keys=True)
