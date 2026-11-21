@@ -1,0 +1,173 @@
+[
+ {
+  "img": "images/08-Hemaka-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     52,
+     650,
+     230
+    ],
+    "ko": "피안으로 가는 길\n헤마까의 질문",
+    "cover": null,
+    "align": "center",
+    "em": 40,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Hemaka-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     366,
+     256,
+     772,
+     424
+    ],
+    "ko": "“고따마의 가르침 이전에\n지난날 저에게 설명해 준\n이들은 ‘예전에 이러했고\n앞으로 이러하리라’ 했지만…”",
+    "cover": null,
+    "align": "right",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Hemaka-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     396,
+     256,
+     774,
+     428
+    ],
+    "ko": "“…그것은 모두 전해 들은\n말일 뿐, 모두 제 생각만\n늘려 놓았고, 저는 거기서\n기쁨을 찾지 못했습니다.”",
+    "cover": null,
+    "align": "right",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Hemaka-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     36,
+     770,
+     206
+    ],
+    "ko": "“성자시여, 저에게\n가르침을 설명해\n주십시오. 갈애의\n부서짐을…”",
+    "cover": null,
+    "align": "right",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Hemaka-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     36,
+     770,
+     162
+    ],
+    "ko": "“…그것을 알고 마음챙기며 살아가면\n세상에 대한 집착(위삿띠까)을\n건널 수 있는 것을.”",
+    "cover": null,
+    "align": "right",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Hemaka-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     36,
+     660,
+     126
+    ],
+    "ko": "“보고 듣고 느끼고 안 것 가운데\n좋아하는 것들에 대하여, 헤마까여…”",
+    "cover": null,
+    "align": "left",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Hemaka-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     36,
+     640,
+     128
+    ],
+    "ko": "“…그것들에 대한 열망과 탐욕을 없애는 것,\n이것이 죽음 없는 열반이다.”",
+    "cover": null,
+    "align": "left",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Hemaka-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     410,
+     104,
+     776,
+     348
+    ],
+    "ko": "“이것을 알고\n마음챙기는 이들,\n지금 이 삶에서\n완전히 고요해진\n(아비닙부따) 이들…”",
+    "cover": null,
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Hemaka-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     46,
+     730,
+     150
+    ],
+    "ko": "“…늘 평화로운 이들은 세상에 대한\n집착(위삿띠까)을 건넜다.”",
+    "cover": null,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
