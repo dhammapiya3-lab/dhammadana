@@ -1389,3 +1389,48 @@ body.simple-ui{scroll-padding-top:calc(var(--sbar,64px) + 8px)}
 .reflow.par1 .par-or.par-fnor{margin:-.2em 0 .8em 2.6em;padding:.5em .8em .2em}
 .reflow.par2 > .par-or.par-fnor{margin-bottom:.55em}
 .par-or .par-fnh{font-family:var(--sans);font-size:.85em;font-weight:700;margin:0 0 .3em}
+
+/* 단순 화면 기본 글자 크게 (운영자 요청, 2026-11-21 — 큰 글자 인쇄 기준 18pt = 24px 를 바탕 글자로;
+   전에는 바탕 20px·본문 21px. 저시력 이용자가 브라우저 확대 없이도 읽기 쉽게, 화면 낭독기와는 상관없음) */
+body.simple-ui{font-size:24px}
+.simple-ui .s-h1{font-size:32px}
+.simple-ui .s-sub{font-size:20px}
+.simple-ui .s-btn{font-size:20px}
+.simple-ui .s-path{font-size:20px}
+.simple-ui .s-bar .s-tog{font-size:18px}
+.s-head{font-size:19px}
+.s-row .s-c4{font-size:19px}
+.simple-ui .s-stat{font-size:19px}
+.simple-ui .s-chnav .s-btn{font-size:20px}
+.simple-ui .s-text .reflow{font-size:calc(26px * var(--fs,1))}
+.simple-ui .s-text .pmark{font-size:18px}
+.simple-ui .s-prose h2{font-size:27px}
+.simple-ui .s-find input{font-size:26px}
+.simple-ui .s-rate,.simple-ui .s-rate select,.simple-ui .s-time{font-size:18px}
+.simple-ui .s-player .s-btn{font-size:20px}
+.simple-ui .s-player.top .s-now{font-size:18px}
+.simple-ui .s-player.top .s-btn{font-size:22px;min-height:44px}
+.simple-ui .s-player.top .s-btn.s-goto{font-size:17px}
+.simple-ui .s-player.top .s-rate select,.simple-ui .s-player.top .s-time{font-size:17px}
+.simple-ui.s-docked .s-main{padding-bottom:200px}
+.simple-ui .s-pgform{font-size:20px}
+.simple-ui .s-pgform input{font-size:22px}
+.simple-ui .s-pgform .s-btn{font-size:20px}
+.simple-ui .s-acct-note{font-size:20px}
+.simple-ui .s-acct{font-size:22px}
+.simple-ui .s-acct .acct-form input{font-size:22px}
+.simple-ui .s-acct .acct-tabs a{font-size:20px}
+.simple-ui .s-del-row .s-btn,.simple-ui .s-delask .s-btn{font-size:20px}
+@media (max-width:700px){
+  body.simple-ui{font-size:21px}
+  .simple-ui .s-h1{font-size:27px}
+  .simple-ui .s-sub{font-size:18px}
+  .simple-ui .s-btn,.simple-ui .s-chnav .s-btn{font-size:18px}
+  .simple-ui .s-path{font-size:17px}
+  .s-row .s-c:not(.s-c1){font-size:18px}
+  .simple-ui .s-stat{font-size:17px}
+  .simple-ui .s-text .reflow{font-size:calc(22px * var(--fs,1))}
+  .simple-ui .s-player.top .s-btn{font-size:20px}
+  .simple-ui .s-player.top .s-now{font-size:16px}
+}
+.s-tbl{--cols:minmax(0,2.2fr) minmax(0,2fr) 190px minmax(0,1.4fr)}  /* 글자가 커져 '2026-11-20 등록'이 두 줄로 접히지 않게 */
