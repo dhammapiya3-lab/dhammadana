@@ -1368,8 +1368,7 @@
             "After-Awakening",
             "The-Great-Emancipation",
             "Vinaya-Stories",
-            "Way-Beyond",
-            "Light-of-Asia"
+            "Way-Beyond"
           ]
         ],
         [
@@ -1429,13 +1428,14 @@
     },
     {
       "name": "대승 불교와 여러 전통",
-      "note": "산스끄리뜨·타밀 불교 문학과 중국·티베트 불교의 이야기입니다.",
+      "note": "산스끄리뜨·타밀 불교 문학, 부처님의 생애를 노래한 영어 서사시, 중국·티베트 불교의 이야기입니다.",
       "sections": [
         [
           "본생 이야기와 서사시",
           [
             "Jatakamala",
-            "Manimekhalai"
+            "Manimekhalai",
+            "Light-of-Asia"
           ]
         ],
         [
