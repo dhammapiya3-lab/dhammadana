@@ -1,0 +1,677 @@
+[
+ {
+  "img": "images/24-Great-Ape-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     18,
+     700,
+     50
+    ],
+    "ko": "큰 원숭이 이야기 (anukampā, 연민)",
+    "cover": [
+     248,
+     247,
+     242
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     100,
+     50,
+     700,
+     130
+    ],
+    "ko": "광맥이 반짝이는 흙과 검은 비단 같은 숲이 있는 복된 히마완따 땅에 큰 원숭이가 살았습니다. 홀로였지만 법을 놓친 적이 없었습니다. 그는 성품이 고귀하고 참을성이 있었으며, 그를 떠나지 않는 연민이 그를 이끌었습니다.\n『자따까말라(본생 이야기 꽃다발)』에서",
+    "cover": [
+     247,
+     245,
+     240
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/24-Great-Ape-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     520,
+     96,
+     790,
+     146
+    ],
+    "ko": "숲속의 수행자",
+    "cover": [
+     247,
+     246,
+     241
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     520,
+     146,
+     790,
+     362
+    ],
+    "ko": "“숲과 산이 있는 이 땅은 수백 번 무너졌으나… 보살의 큰 연민은 결코 무너지지 않는다.”\n고귀한 마음의 그는 수행자처럼 소박한 잎과 열매로 살며 윗자다라들의 놀이터에서 지냈습니다. 모든 생명을 가엾이 여기며, 바깥세상이 끼어들기 전까지 홀로 만족했습니다.",
+    "cover": [
+     247,
+     246,
+     240
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/24-Great-Ape-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     520,
+     94,
+     790,
+     140
+    ],
+    "ko": "침입자의 탐욕",
+    "cover": [
+     246,
+     246,
+     238
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     520,
+     140,
+     790,
+     362
+    ],
+    "ko": "길 잃은 소를 찾던 한 사람이 숲에서 헤맸습니다. 굶주림과 ‘슬픔의 불’에 지친 그는 띤두까 나무를 보았습니다. 잘 익은 열매가 깊은 폭포 위 가지에 달려 있었습니다. 위험이 뻔했지만 갈망이 조심성을 잠재웠습니다. 그는 나무에 올라 벼랑 위로 뻗은 가지 끝까지 기어갔습니다.",
+    "cover": [
+     245,
+     245,
+     235
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/24-Great-Ape-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     110,
+     340,
+     156
+    ],
+    "ko": "떨어짐",
+    "cover": [
+     250,
+     248,
+     236
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     156,
+     340,
+     346
+    ],
+    "ko": "“그러자 갑자기 아래로 처진 그 가지가 너무 무거운 짐을 견디지 못하고, 도끼로 찍은 듯 소리를 내며 부러져 떨어졌다.”\n그는 가파른 바위벽에 둘러싸인 깊은 구덩이로 떨어졌습니다. 바닥의 물 덕분에 살았지만, 죽음만 드나들 수 있는 감옥에 갇히고 말았습니다.",
+    "cover": [
+     250,
+     248,
+     236
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/24-Great-Ape-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     130,
+     110,
+     370,
+     156
+    ],
+    "ko": "탄식",
+    "cover": [
+     248,
+     246,
+     233
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     130,
+     156,
+     370,
+     406
+    ],
+    "ko": "‘심장을 꿰뚫는 무거운 슬픔의 화살’에 짓눌린 그는 울었습니다. “구덩이에 빠진 들짐승처럼 떨어진 나를 누가 여기서 꺼내 주랴? 곁에는 친척도 벗도 없고, 내 피를 빠는 모기떼뿐이다. 짙은 어둠이 나를 둘러싸고 있다.”",
+    "cover": [
+     247,
+     245,
+     232
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/24-Great-Ape-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     464,
+     106,
+     774,
+     146
+    ],
+    "ko": "발견",
+    "cover": [
+     248,
+     246,
+     233
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     464,
+     146,
+     774,
+     356
+    ],
+    "ko": "바람에 흔들리는 가지에 이끌려 큰 원숭이가 벼랑에 올랐습니다. 내려다보니 눈은 꺼지고 팔다리는 야위고 굶주려 창백한 사람이 보였습니다. 그 비참한 모습에 보살의 연민이 곧바로 일었습니다. 자기 먹을 것도 잊고 그는 사람의 말로 외쳤습니다. “사람이 닿을 수 없는 이 벼랑에 있는 그대는 누구인가?”",
+    "cover": [
+     247,
+     244,
+     230
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/24-Great-Ape-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     320,
+     242,
+     594,
+     282
+    ],
+    "ko": "약속",
+    "cover": [
+     247,
+     244,
+     232
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     320,
+     282,
+     594,
+     404
+    ],
+    "ko": "“원숭이 무리의 보호자시여, 저의 보호자도 되어 주십시오.” 이 말에 대사의 끝없는 연민이 일었습니다. “괴로워하지 마라.” 원숭이가 대답했습니다. “친구와 친척이 그대에게 해 줄 일을 내가 다 하리라. 두려워하지 마라.”",
+    "cover": [
+     246,
+     242,
+     230
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/24-Great-Ape-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     110,
+     330,
+     150
+    ],
+    "ko": "올라감",
+    "cover": [
+     245,
+     242,
+     228
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     150,
+     330,
+     350
+    ],
+    "ko": "원숭이는 먼저 무거운 돌로 힘을 시험했습니다. 그리고 구덩이로 내려가 사람에게 등을 내주었습니다.\n“내 등에 올라라… 그대도 꺼내고 내 몸도 쓸모 있게 하리라.”\n몹시 무거워 몸이 굽었지만 흔들림 없는 마음으로 보살은 그를 안전한 곳으로 데려왔습니다.",
+    "cover": [
+     243,
+     239,
+     223
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/24-Great-Ape-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     106,
+     330,
+     146
+    ],
+    "ko": "믿음",
+    "cover": [
+     222,
+     232,
+     227
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     146,
+     330,
+     348
+    ],
+    "ko": "구출에 지친 원숭이는 쉬어야 했습니다. 그는 구해 준 사람을 믿고 말했습니다.\n“이 숲에는 사나운 짐승이 있다. 사방을 살피며 나를 지켜 다오… 몸이 몹시 지쳤다.”\n그 사람은 지키겠다고 약속했습니다. “주무십시오… 제가 여기 있겠습니다.”",
+    "cover": [
+     242,
+     230,
+     210
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/24-Great-Ape-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     484,
+     114,
+     760,
+     154
+    ],
+    "ko": "배신",
+    "cover": [
+     185,
+     187,
+     197
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     484,
+     154,
+     760,
+     342
+    ],
+    "ko": "대사가 믿음 속에 잠들자 그 사람의 마음이 악해졌습니다.\n“뿌리는 찾기 어렵다. 이 원숭이 몸이면 이 황야를 지나갈 넉넉한 먹을거리가 된다. 내게 은혜를 베풀었지만… 어려운 때의 법도가 적용된다. 지금 죽여야 한다. 맞붙어 싸우면 사자도 그를 이기지 못하리라.”",
+    "cover": [
+     239,
+     225,
+     202
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/24-Great-Ape-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     400,
+     326,
+     792,
+     352
+    ],
+    "ko": "“일격”",
+    "cover": [
+     246,
+     240,
+     224
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     400,
+     352,
+     792,
+     430
+    ],
+    "ko": "탐욕에 이끌렸지만 쇠약해 떨던 그는 돌을 떨어뜨렸습니다. 돌은 빗맞아 원숭이의 머리에 상처만 내고 죽이지는 못했습니다. 피를 흘리며 벌떡 일어난 보살이 공격한 이를 찾아보니, 자기가 구해 준 그 사람이 겁에 질려 창백한 얼굴로 부끄러운 듯 서 있었습니다.",
+    "cover": [
+     248,
+     238,
+     222
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/24-Great-Ape-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     462,
+     244,
+     766,
+     274
+    ],
+    "ko": "성냄이 아닌 슬픔",
+    "cover": [
+     241,
+     237,
+     224
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     462,
+     274,
+     766,
+     420
+    ],
+    "ko": "원숭이는 성내지 않고 제 덕을 무너뜨린 그 사람을 가엾이 여겼습니다. 눈물 젖은 눈으로 탄식했습니다.\n“벗이여, 사람인 그대가 어찌 이런 짓을 하는가? 겨우 한 벼랑에서 구해졌는데 또 다른 벼랑에 떨어지는구나.” “어리석음이여! 나 때문에 그대가 악에 빠졌구나.”",
+    "cover": [
+     245,
+     237,
+     220
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/24-Great-Ape-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     50,
+     484,
+     80
+    ],
+    "ko": "“마지막 길 안내”",
+    "cover": [
+     151,
+     163,
+     176
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     186,
+     80,
+     484,
+     210
+    ],
+    "ko": "“나와 함께 가자… 하지만 늘 내 눈에 보이는 곳에 있어라. 그대를 믿기 어렵구나.”\n배신을 당하고도 보살은 할 일을 다했습니다. 그를 숲의 위험에서 데리고 나와 사람 사는 곳으로 가는 길에 올려 주고, 잘 가라 빈 뒤 숲의 고요로 돌아갔습니다.",
+    "cover": [
+     225,
+     205,
+     173
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/24-Great-Ape-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     466,
+     250,
+     770,
+     280
+    ],
+    "ko": "업의 열매",
+    "cover": [
+     240,
+     237,
+     222
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     466,
+     280,
+     770,
+     422
+    ],
+    "ko": "‘타오르는 뉘우침의 불’에 시달린 그 사람은 나병에 걸려, 걸어 다니는 유령처럼 끔찍한 모습이 되었습니다. 어느 왕이 그를 보고 도깨비냐 악귀냐 묻자 그가 고백했습니다. “이 괴로움은 벗을 배신한 그 행위로 심은 나무의 꽃일 뿐입니다.”",
+    "cover": [
+     243,
+     237,
+     220
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/24-Great-Ape-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     50,
+     570,
+     82
+    ],
+    "ko": "가르침",
+    "cover": [
+     243,
+     241,
+     228
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     230,
+     82,
+     570,
+     194
+    ],
+    "ko": "“벗에게 적의를 품는 이는 이런 비참한 처지에 이른다.”\n자애가 마음에 가득한 이는 좋은 이름을 얻고 마침내 천상에 머뭅니다. 덕 있는 이는 자기 아픔보다 해친 이가 잃는 행복을 더 슬퍼합니다.",
+    "cover": [
+     241,
+     234,
+     217
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
