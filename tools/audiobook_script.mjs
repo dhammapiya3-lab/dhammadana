@@ -111,7 +111,8 @@ const NATIVE = n => { n = +n; if (n < 1 || n > 99) return null; const T = ['', '
 const CIRC = c => { const u = c.codePointAt(0); return u >= 0x2460 && u <= 0x2473 ? u - 0x245F : u >= 0x2780 && u <= 0x2789 ? u - 0x277F : u >= 0x2776 && u <= 0x277F ? u - 0x2775 : u >= 0x278A && u <= 0x2793 ? u - 0x2789 : 0; };
 const circNum = s => s.replace(/(^|\n)\s*([\u2460-\u2473\u2776-\u2793])\s*/g, (m, a, c) => a + CIRC(c) + '. ').replace(/([.,?!:;]?)[,\s]*([\u2460-\u2473\u2776-\u2793])\s*(?=(.{0,2}))/g, (m, p, c, nx) => (p ? p + ' ' : ', ') + CIRC(c) + (!nx || /^[~,.)\]]|^번|^[의과와이가은는을를도](?![가-힣])/.test(nx) ? '' : ', ')).replace(/,(\s*,)+/g, ',').replace(/^, /, '');   // 글 가운데: 앞뒤로 짧게 쉼 ('…그것은, 일, 태어남, 이, 늙음 …'), 바로 뒤에 '번·의' 등이 붙으면 쉬지 않음
 const cite = s => lib.citeSay(s);   // 경전 출처 읽기는 app.js citeSay 를 함께 씀 (사이트 '듣기'와 같게)
-const sayNum = s => circNum(s).replace(/(\d)\s?:\s?(?=\d)/g, '$1, ').replace(/\d+(?=(\s?)(개(?!월)|명|마리|살|번째|번|가지)?)/g, (d, sp, unit) => {
+const ROMAN = { 'Ⅰ': '일', 'Ⅱ': '이', 'Ⅲ': '삼', 'Ⅳ': '사', 'Ⅴ': '오', 'Ⅵ': '육', 'Ⅶ': '칠', 'Ⅷ': '팔', 'Ⅸ': '구', 'Ⅹ': '십' };  // 장 번호 로마 숫자 'Ⅲ. 자애경' → '삼. 자애경' (DL-0001, 2026-11-21)
+const sayNum = s => circNum(s.replace(/(^|\n)([ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ])(?=[.\s]|$)/g, (m, a, r) => a + ROMAN[r] + '.').replace(/\.\./g, '.')).replace(/(\d)\s?:\s?(?=\d)/g, '$1, ').replace(/\d+(?=(\s?)(개(?!월)|명|마리|살|번째|번|가지)?)/g, (d, sp, unit) => {
   if (d.length > 1 && d[0] === '0') return d.split('').map(c => '영일이삼사오육칠팔구'[+c]).join(' ');
   if (unit && unit !== '번' && NATIVE(d)) return NATIVE(d);
   return sino(d); });
@@ -169,7 +170,7 @@ top.forEach((c, k) => {
       if (!said) return;
       // 쪽이 바뀌며 끊긴 문장은 앞 문단에 이어 붙임 (쪽 첫 문단이고, 앞 문단이 문장 끝맺음 없이 끝났을 때)
       //  쪽 끝에서 낱말 가운데가 갈린 곳('괴로움 / 의 소멸', '중 / 요하다')은 빈칸 없이 — 붙인 꼴이 책 안에 띄어 쓴 꼴보다 많으면 붙임 (DL-0015, 2026-11-19)
-      if (first && paras.length && !lastHead && !END.test(paras[paras.length - 1])) { const a = (paras[paras.length - 1].match(/[가-힣]+$/) || [''])[0], b = (said.match(/^[가-힣]+/) || [''])[0];
+      if (first && paras.length && !lastHead && !/^## /.test(par) && !END.test(paras[paras.length - 1])) { const a = (paras[paras.length - 1].match(/[가-힣]+$/) || [''])[0], b = (said.match(/^[가-힣]+/) || [''])[0];
         const cnt = w => BODY_FLAT.split(w).length - 1;
         paras[paras.length - 1] += (a && b && cnt(a + b) > cnt(a + ' ' + b) ? '' : ' ') + said; }
       else push(said, p, rIdx(pi));
@@ -179,6 +180,8 @@ top.forEach((c, k) => {
   // 장 첫머리에 장 제목과 같은 글이 또 있으면 한 번만 (사이트 듣기와 같음)
   const title = lib.sayable(c.title, OPT);
   while (paras.length && (same(paras[0], c.title) || same(paras[0], title))) { paras.shift(); map.shift(); }
+  // 장 표지처럼 제목이 여러 문단으로 갈라져 있으면('Ⅰ' + '껍데기는 버리고…') 이어 붙여 같을 때 모두 뺌 (DL-0001, 2026-11-21)
+  for (let k = Math.min(3, paras.length); k >= 1; k--) { const j = paras.slice(0, k).join(''); const nj = j.replace(/[\s·.,()\[\]]/g, ''), nt = title.replace(/[\s·.,()\[\]]/g, ''); if (same(j, c.title) || same(j, title) || (nj.length >= 4 && nt.startsWith(nj) && /^[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ](\s|$)/.test(paras[0].trim()))) { paras.splice(0, k); map.splice(0, k); break; } }
   if (SKIP.test(c.title.replace(/\s/g, '')) && !flags.includes('--all')) { skipped.push(c.title); return; }
   if (!paras.length && !title) return;
   n++;
