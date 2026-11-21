@@ -1,0 +1,677 @@
+[
+ {
+  "img": "images/09-Visvantara-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     14,
+     640,
+     70
+    ],
+    "ko": "연민의 덕",
+    "cover": [
+     248,
+     245,
+     235
+    ],
+    "align": "center",
+    "em": 32,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     80,
+     386,
+     720,
+     448
+    ],
+    "ko": "그는 인간 세상에 재앙과 괴로움의 원인들이 거만하게 퍼져 있는 것을 견딜 수 없었습니다. 그는 바로 이 적들과 싸웠습니다. 연민의 큰 활에서 보시의 모습을 한 화살을 수없이 쏘면서.",
+    "cover": [
+     247,
+     245,
+     235
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     360,
+     740,
+     400
+    ],
+    "ko": "첫 번째 시험: 흰 코끼리",
+    "cover": [
+     248,
+     247,
+     237
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     400,
+     740,
+     448
+    ],
+    "ko": "흘러내리는 즙의 향기로 얼굴이 향긋해 윙윙대는 벌 떼를 취하게 하는 그 훌륭한 짐승… 승리 그 자체였던 코끼리를 웻산따라가 내주고 말았다.",
+    "cover": [
+     247,
+     246,
+     235
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     328,
+     740,
+     372
+    ],
+    "ko": "분노와 추방",
+    "cover": [
+     246,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     372,
+     740,
+     448
+    ],
+    "ko": "바른 법을 지키는 그는 처세술의 거짓말에 겁먹지 않았습니다.\n“영광스러운 승리의 담보인 으뜸 코끼리를 내준 것은 지나친 보시다. 웻산따라는 왕위라는 무거운 짐을 질 사람이 못 된다.”",
+    "cover": [
+     247,
+     243,
+     232
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     334,
+     740,
+     374
+    ],
+    "ko": "떠남",
+    "cover": [
+     247,
+     245,
+     232
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     374,
+     740,
+     448
+    ],
+    "ko": "“시위 사람들이 나를 죽이든 내쫓든, 그 때문에 보시를 그만두지는 않겠다.” 그는 재산을 남김없이 내주었습니다… 그러고는 손수 고삐를 잡고 웡까 산 쪽으로 수레를 몰았습니다.",
+    "cover": [
+     246,
+     244,
+     231
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     334,
+     740,
+     374
+    ],
+    "ko": "말의 보시",
+    "cover": [
+     246,
+     245,
+     239
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     374,
+     740,
+     448
+    ],
+    "ko": "제 편안함에는 마음 두지 않고 걸인들에게는 다정한 친척과 같았던 보살은 그 바라문의 소원을 들어주었습니다. 기꺼이 가족을 수레에서 내리게 하여 바라문에게 수레를 주고 걸어서 길을 이어 갔습니다.",
+    "cover": [
+     246,
+     244,
+     237
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     336,
+     740,
+     376
+    ],
+    "ko": "자연의 환대",
+    "cover": [
+     248,
+     246,
+     236
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     376,
+     740,
+     448
+    ],
+    "ko": "나무들은 끝에 고운 열매가 달린 가지를 그에게 뻗어 대접을 받으라 청하는 듯했습니다. 공덕으로 얻은 그의 위엄에 경의를 표하며, 말 잘 듣는 제자처럼 그에게 몸을 숙였습니다.",
+    "cover": [
+     249,
+     246,
+     236
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     338,
+     740,
+     378
+    ],
+    "ko": "암자의 삶",
+    "cover": [
+     242,
+     239,
+     224
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     378,
+     740,
+     448
+    ],
+    "ko": "사랑하는 아내와 함께 아이들의 꾸밈없고 다정한 재잘거림을 즐기며, 왕위의 근심은 생각지 않고… 그는 그 숲에서 반년 동안 굳센 고행을 닦았습니다.",
+    "cover": [
+     244,
+     242,
+     229
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     336,
+     740,
+     376
+    ],
+    "ko": "걸인이 찾아오다",
+    "cover": [
+     243,
+     240,
+     223
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     376,
+     740,
+     448
+    ],
+    "ko": "“그대의 두 아이를 내 시종으로 주시오.” 이 말을 들은 보살은 늘 기쁘게 걸인에게 베풀고 ‘안 된다’는 말을 배운 적이 없었기에, 사랑하는 두 아이라도 주겠다고 용감하게 말했습니다.",
+    "cover": [
+     244,
+     241,
+     227
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     344,
+     740,
+     384
+    ],
+    "ko": "베풂의 아픔",
+    "cover": [
+     247,
+     245,
+     233
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     384,
+     740,
+     448
+    ],
+    "ko": "애써 기울이자 물병에서 물이 쏟아졌습니다. 그와 동시에 검붉은 연꽃잎 같은 그의 두 눈에서 저절로 눈물이 떨어졌습니다.",
+    "cover": [
+     248,
+     246,
+     233
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     336,
+     740,
+     376
+    ],
+    "ko": "헤어짐",
+    "cover": [
+     248,
+     246,
+     233
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     376,
+     740,
+     448
+    ],
+    "ko": "“아버지, 이 잔인한 바라문이 덩굴로 저를 때려요… 바라문 탈을 쓴 도깨비예요.” “이 바라문이 때리는 것보다 어머니가 안 계신 것이 더 아파요.”",
+    "cover": [
+     247,
+     245,
+     232
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     334,
+     740,
+     374
+    ],
+    "ko": "마음속 싸움",
+    "cover": [
+     248,
+     246,
+     232
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     374,
+     740,
+     448
+    ],
+    "ko": "“이 사람은 어찌 내 눈앞에서 내 아이들을 때리며 내 심장을 치는 것을 서슴지 않는가? 그러나 덕 있는 이의 바른 행실을 붙든 이가 어찌 뉘우침에 지겠는가?”",
+    "cover": [
+     247,
+     245,
+     231
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     340,
+     740,
+     380
+    ],
+    "ko": "맛디의 절망",
+    "cover": [
+     247,
+     245,
+     232
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     380,
+     740,
+     448
+    ],
+    "ko": "웻산따라가 말했습니다. “맛디여, 나를 보시오… 슬픔의 화살에 이미 찔린 내 가슴을 다시 치지 마오… 내 목숨을 청해도 거절하지 못할 내가 아니오? 아이들을 준 내 보시를 기뻐해 주오.”",
+    "cover": [
+     247,
+     245,
+     232
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     338,
+     740,
+     378
+    ],
+    "ko": "마지막 시험: 삭까의 청",
+    "cover": [
+     247,
+     245,
+     231
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     378,
+     740,
+     448
+    ],
+    "ko": "“그대의 아내를 내게 주시오.” 왼손으로 맛디를, 오른손으로 물병을 잡고 그는 물을 부었습니다… 맛디의 가슴에는 성냄이 일지 않았고, 울지도 않았습니다. 남편의 성품을 알았기 때문입니다.",
+    "cover": [
+     246,
+     244,
+     231
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     336,
+     740,
+     376
+    ],
+    "ko": "드러난 참모습",
+    "cover": [
+     247,
+     244,
+     230
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     376,
+     740,
+     448
+    ],
+    "ko": "“지금 그대의 이 사람을 넘어선 행위를 약카와 간답바와 천신들이 찬탄한다. 이제 맛디를 그대에게 돌려주노라… 달빛이 달 말고 어디에 머물겠는가?”",
+    "cover": [
+     246,
+     244,
+     230
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/09-Visvantara-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     348,
+     740,
+     388
+    ],
+    "ko": "되찾음과 남긴 것",
+    "cover": [
+     248,
+     246,
+     234
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     388,
+     740,
+     448
+    ],
+    "ko": "시위 사람들은 다정해진 마음으로 아이들을 되찾아 오고 웻산따라를 왕위에 다시 모셨습니다. “땅은 기뻐 떨며 흔들리고… 하늘에서 떨어지는 황금 꽃은 번개가 비추듯 하늘을 밝혔다.”",
+    "cover": [
+     248,
+     246,
+     233
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
