@@ -1,0 +1,632 @@
+[
+ {
+  "img": "images/10-Sacrifice-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     88,
+     402,
+     134
+    ],
+    "ko": "보살 왕",
+    "cover": [
+     251,
+     248,
+     233
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     86,
+     134,
+     402,
+     322
+    ],
+    "ko": "먼 옛날 보살은 맞설 이 없는 나라를 다스렸습니다. 감각적 욕망을 다스렸고 오직 법을 행동의 목적으로 삼았습니다. 백성이 지도자를 본받는다는 것을 알기에 성자처럼 행동하며 인욕을 닦고 모든 중생의 이익을 위해 애썼습니다. 그는 힘이 아니라 공덕의 힘으로 다스리며 법이 몸을 얻은 듯했습니다.",
+    "cover": [
+     251,
+     246,
+     232
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sacrifice-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     40,
+     462,
+     84
+    ],
+    "ko": "가뭄의 그림자",
+    "cover": [
+     246,
+     233,
+     201
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     84,
+     462,
+     196
+    ],
+    "ko": "왕의 보호에도 나라는 심한 가뭄을 겪었습니다. 백성의 잘못된 행위 때문인지, 비를 맡은 신들의 부주의 때문인지 땅은 메말랐습니다. 이 재앙이 법을 어긴 결과라 여긴 왕은 백성의 괴로움을 마음에 두고 원로 바라문들에게 조언을 구했습니다.",
+    "cover": [
+     247,
+     237,
+     211
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sacrifice-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     36,
+     760,
+     78
+    ],
+    "ko": "그릇된 처방",
+    "cover": [
+     36,
+     30,
+     34
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     40,
+     78,
+     760,
+     176
+    ],
+    "ko": "베다의 규정을 굳게 믿는 조언자들이 끔찍한 처방을 내놓았습니다. 천신들을 달래려면 짐승 수백 마리를 죽이는 엄숙한 제사를 지내야 한다는 것이었습니다. 왕이 신들에게 진 빚을 갚아야 비가 온다고 했습니다. 타고난 연민 때문에 왕은 그 살생을 받아들일 수 없었지만, 거칠게 거절해 그들을 언짢게 하고 싶지 않아 잠자코 있었습니다.",
+    "cover": [
+     36,
+     30,
+     34
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sacrifice-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     38,
+     428,
+     80
+    ],
+    "ko": "마음속 갈등",
+    "cover": [
+     244,
+     235,
+     207
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     80,
+     428,
+     268
+    ],
+    "ko": "왕은 생각했습니다. “법과 짐승을 해치는 일이 무슨 상관이 있는가? 제물이 천상에 간다고 하지만, 그게 사실이라면 바라문들이 스스로 제물이 되지 않겠는가? 감로에 익숙한 천신들이 가엾은 제물의 살육을 기뻐할 리 없다.”\n\n귀의처라 자처하는 이들이 법의 논리를 빌려 해를 끼치는 일이 많다는 것을 그는 깨달았습니다.",
+    "cover": [
+     245,
+     235,
+     210
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sacrifice-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     38,
+     424,
+     80
+    ],
+    "ko": "계책",
+    "cover": [
+     36,
+     30,
+     34
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     40,
+     80,
+     424,
+     214
+    ],
+    "ko": "제사를 서두르는 척하며 왕이 선포했습니다. “신들의 가장 큰 은혜를 얻도록 천 명을 바치는 인간 제사(purisamedha)를 지내겠다.” 그는 관리들에게 제사 터를 마련하라 명하고, 백성이 동요할까 걱정하는 대신들에게는 자기가 다스리겠다며 잠재웠습니다.",
+    "cover": [
+     36,
+     30,
+     34
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sacrifice-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     40,
+     348,
+     80
+    ],
+    "ko": "조건",
+    "cover": [
+     243,
+     232,
+     201
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     80,
+     348,
+     314
+    ],
+    "ko": "왕이 선포했습니다. “나는 천 명의 제물이 필요하다. 그러나 정직한 사람은 데려가지 않겠다. 계를 어기거나 왕명을 업신여기는 자를 보면 누구든 제물로 잡아들이게 하리라.”\n\n악행하는 자를 살피려고 사신들을 보냈습니다. 악인은 ‘집안의 얼룩’이니 제단에나 어울린다고 했습니다.",
+    "cover": [
+     243,
+     233,
+     205
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sacrifice-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     40,
+     348,
+     78
+    ],
+    "ko": "달라진 백성",
+    "cover": [
+     247,
+     243,
+     225
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     78,
+     348,
+     328
+    ],
+    "ko": "선포는 날마다 되풀이되었습니다. “나쁜 짓을 하는 자는 누구든 제사 기둥에 묶이리라.”\n\n이를 들은 백성은 나쁜 행실에 대한 애착을 모두 버렸습니다. 다툼을 풀고 서로 아끼며 손님을 대접했습니다. 죽음의 두려움은 다음 세상을 생각하게 했고, 마음이 맑아지자 부끄러움도 굳건해졌습니다.",
+    "cover": [
+     245,
+     239,
+     220
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sacrifice-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     58,
+     402,
+     124
+    ],
+    "ko": "황금시대",
+    "cover": [
+     251,
+     232,
+     188
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     24,
+     124,
+     402,
+     412
+    ],
+    "ko": "순종과 너그러움과 겸손이 넘쳤습니다. 왕의 신하들은 쉬지 않고 살폈지만 잡아들일 사람이 없었습니다. 두려움에서 시작했지만 백성은 계와 자제를 엄격히 지키는 데 마음을 쏟게 되었습니다. 나라는 몰라보게 바뀌어 끄리따 유가(황금시대)가 땅에 돌아온 듯했습니다.",
+    "cover": [
+     250,
+     233,
+     194
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sacrifice-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     58,
+     402,
+     124
+    ],
+    "ko": "왕의 기쁨",
+    "cover": [
+     249,
+     230,
+     185
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     24,
+     124,
+     402,
+     394
+    ],
+    "ko": "악행하는 자를 한 사람도 찾지 못했다는 것을 안 왕은 기뻐하며 사신들에게 상을 내리고 대신들에게 말했습니다. “내 백성은 이제 제사의 보시를 받을 만한 이들이 되었다. 제사를 위해 마련한 재물은 이제 그들의 행복을 위한 땔감이 될 것이다.”",
+    "cover": [
+     247,
+     230,
+     188
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sacrifice-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     26,
+     426,
+     86
+    ],
+    "ko": "참된 제사",
+    "cover": [
+     244,
+     220,
+     159
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     24,
+     86,
+     426,
+     390
+    ],
+    "ko": "왕은 자기 제사의 참뜻을 밝혔습니다. 모든 마을과 도시에 보시당을 세우게 했습니다. 살육에 쓰려던 많은 재물은 가난한 이들에게 나누어졌습니다. “돈이 필요한 이는 누구든 와서 마음껏 가져가라.” 왕은 이렇게 명하여 나라를 괴롭히던 가난을 몰아냈습니다.",
+    "cover": [
+     246,
+     227,
+     178
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sacrifice-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     28,
+     404,
+     88
+    ],
+    "ko": "보시당",
+    "cover": [
+     242,
+     218,
+     156
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     24,
+     88,
+     404,
+     392
+    ],
+    "ko": "가난이 사라졌습니다. 왕의 선물로 꾸민 백성은 축제날처럼 빛났습니다. 왕의 영광은 물결에 실린 꽃가루처럼 사방으로 퍼졌습니다.\n결핍을 없애 왕은 괴로움의 뿌리를 없앴습니다.",
+    "cover": [
+     244,
+     225,
+     174
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sacrifice-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     76,
+     376,
+     136
+    ],
+    "ko": "자연의 응답",
+    "cover": [
+     219,
+     239,
+     231
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     136,
+     376,
+     390
+    ],
+    "ko": "백성이 덕 있는 행실을 굳게 지키자 재앙이 사라졌습니다. 계절은 제 질서를 되찾았습니다. 땅은 곡식을 넉넉히 내고, 몬순은 제때 불었으며, 약초는 효험을 되찾았습니다. 자연도 왕과 백성의 올바름을 따랐습니다.",
+    "cover": [
+     221,
+     239,
+     232
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sacrifice-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     48,
+     432,
+     114
+    ],
+    "ko": "대신의 깨달음",
+    "cover": [
+     248,
+     240,
+     222
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     24,
+     114,
+     432,
+     428
+    ],
+    "ko": "한 대신이 말했습니다. “대왕께서는 성자들의 지혜를 넘어서셨습니다. 짐승을 죽이는 죄 없이 백성의 행복과 가뭄의 끝을 얻으셨습니다. 제사 지내는 이의 영양 가죽을 걸치셨지만, 대왕의 영광은 파괴가 아니라 보호에서 옵니다. 대왕은 어느 아버지보다 나은 보호자이십니다.”",
+    "cover": [
+     247,
+     240,
+     223
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Sacrifice-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     48,
+     422,
+     114
+    ],
+    "ko": "가르침",
+    "cover": [
+     248,
+     240,
+     222
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     24,
+     114,
+     422,
+     432
+    ],
+    "ko": "왕은 참된 제사란 자기 이익을 내려놓고 생명을 보호하는 것임을 보여 주었습니다.\n“마음이 맑은 이는 악한 자의 꾐에 넘어가지 않는다.”\n이 이야기는 맑은 마음을 힘써 닦아야 하며, 왕의 으뜸가는 일은 백성의 구제와 행복임을 가르칩니다.",
+    "cover": [
+     247,
+     239,
+     221
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
