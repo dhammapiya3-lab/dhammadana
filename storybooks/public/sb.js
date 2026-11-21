@@ -225,7 +225,7 @@
       cur = -1;
       { const ns = nv.querySelector('.sv-say'); if (sayBtn) sayBtn.hidden = !ns; }
       if (back) requestAnimationFrame(() => go(pages.length - 1, false)); else { track.scrollTo({ left: 0 }); show(0); }
-      if (V.on) vLoad().then(ok => ok ? vPage(0) : vStop('다음 이야기에는 읽어 줄 글이 아직 없습니다.'));
+      if (V.on) { V.title = true; V.i = -1; vLoad().then(ok => ok ? vPage(0) : vStop('다음 이야기에는 읽어 줄 글이 아직 없습니다.')); }
     } catch (e) { location.href = url; }
     sv.classList.remove('loading');
   };
@@ -397,7 +397,7 @@
   //    전체 화면에서도 그대로, 이야기 끝에서는 다음 이야기로 이어서 읽음 (운영자 요청, 2026-11-22)
   //    목소리·빠르기 등은 '글과 함께 보기'의 듣기 설정(sb-tts)을 그대로 씀
   const sayBtn = sv.querySelector('.sv-say');
-  const V = { on: false, i: -1, q: [], data: null, key: '', self: false, lock: null };
+  const V = { on: false, i: -1, q: [], data: null, key: '', self: false, lock: null, title: false };
   const vToast = m => { const t = document.createElement('div'); t.className = 'sv-toast'; t.textContent = m; sv.append(t); setTimeout(() => t.remove(), 4000); };
   const vBtn = () => { if (!sayBtn) return; sayBtn.setAttribute('aria-pressed', V.on ? 'true' : 'false'); sayBtn.innerHTML = V.on ? '❚❚ 멈춤' : '🔊 읽어<span class="lg"> 주기</span>'; };
   const vStop = m => {
@@ -422,6 +422,13 @@
     const raw = (V.data?.[i] || []).flatMap(t => String(t).split(/\n\s*\n/));
     V.q = (vEn() ? raw.map(t => t.replace(/\s+/g, ' ').trim()) : raw.map(sayable)).filter(Boolean)
       .flatMap(t => t.match(/[^.!?。]+[.!?。]*\s*/g) || [t]).map(x => x.trim()).filter(Boolean);
+    // 이야기 처음부터 읽을 때는 제목을 먼저 읽음 — 앞 번호는 '제N화', '—'는 쉼 (운영자 요청, 2026-11-22)
+    if (i === 0 && V.title) {
+      V.title = false;
+      const t0 = String(sv.dataset.title || '').replace(/^0*(\d+)\s+/, vEn() ? 'Story $1. ' : '제$1화. ').replace(/\s*[—–]\s*/g, '. ');
+      const say0 = vEn() ? t0 : sayable(t0);
+      if (say0) V.q.unshift(say0);
+    }
     if (!V.q.length) { V.t = setTimeout(() => V.on && vPage(i + 1), 3000); return; }  // 글 없는 그림은 3초 보여 주고 넘어감
     vNext(i);
   };
@@ -443,7 +450,7 @@
     if (!await vLoad()) { vToast('이 이야기에는 읽어 줄 글이 없습니다.'); return; }
     V.on = true; vBtn();
     try { navigator.wakeLock?.request('screen').then(l => { V.lock = l; }).catch(() => {}); } catch (e) {}
-    vPage(cur >= pages.length ? 0 : Math.max(0, cur));
+    const s0 = cur >= pages.length ? 0 : Math.max(0, cur); V.title = s0 === 0; vPage(s0);
     setTimeout(() => { if (V.on && !vEn() && !speechSynthesis.speaking && !speechSynthesis.pending && !koVoice()) vToast('이 기기에 한국어 음성이 없어 소리가 나지 않을 수 있습니다. 기기 설정의 ‘텍스트 음성 변환(TTS)’에서 한국어 음성을 받아 주세요.'); }, 2500);
   };
   addEventListener('pagehide', () => vStop());
