@@ -1,0 +1,857 @@
+[
+ {
+  "img": "images/06-Hare-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     338,
+     600,
+     412
+    ],
+    "ko": "달 속의 토끼\n『자따까말라』: 더없는 보시 이야기",
+    "cover": [
+     247,
+     245,
+     232
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     280,
+     424,
+     520,
+     448
+    ],
+    "ko": "보시(dāna)의 이야기 | 여섯 번째 이야기",
+    "cover": [
+     248,
+     246,
+     233
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Hare-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     66,
+     774,
+     148
+    ],
+    "ko": "옛사람들은 왜 달을\n샤샹까라 불렀을까",
+    "cover": [
+     245,
+     243,
+     232
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     440,
+     148,
+     774,
+     372
+    ],
+    "ko": "산스끄리뜨 전승에서 달은 흔히 샤샹까(Śaśāṅka), 곧 ‘토끼 무늬를 지닌 것’이라 불립니다. 이것은 빛과 그림자의 장난이 아니라 더없는 희생을 기리는 하늘의 기념비입니다.\n\n전설에 따르면 그 무늬는, 전생에 짐승으로 살았지만 사람을 넘어서는 덕을 닦은 보살을 영원히 새겨 둔 것입니다.",
+    "cover": [
+     245,
+     243,
+     232
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Hare-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     8,
+     296,
+     396,
+     336
+    ],
+    "ko": "짐승의 모습을 한 보살",
+    "cover": [
+     244,
+     242,
+     230
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     8,
+     336,
+     396,
+     396
+    ],
+    "ko": "수행자들이 자주 찾는 숲에서 보살은 토끼로 살았습니다. ‘빼어난 모습’과 ‘뛰어난 힘’을 지녀 짐승들의 왕처럼 지냈습니다.",
+    "cover": [
+     244,
+     241,
+     229
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     452,
+     280,
+     776,
+     400
+    ],
+    "ko": "눈여겨볼 점: 그는 성자(muni)처럼 살았습니다. 수행자의 가죽옷 대신 제 가죽을, 나무껍질 옷 대신 제 털을 입었습니다. 풀잎만 먹으며 아무도 해치지 않았습니다.",
+    "cover": [
+     245,
+     242,
+     229
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Hare-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     296,
+     760,
+     332
+    ],
+    "ko": "본능을 누른 벗들",
+    "cover": [
+     243,
+     241,
+     228
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     332,
+     760,
+     380
+    ],
+    "ko": "토끼의 덕에 이끌려 수달과 자칼과 원숭이, 세 벗이 함께했습니다. 짐승으로 태어났지만 타고난 탐욕을 끄고 훔치는 버릇도 잊었습니다.",
+    "cover": [
+     242,
+     239,
+     226
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     392,
+     740,
+     440
+    ],
+    "ko": "“짐승의 본성과 달리 그들은 살아 있는 존재에게 연민을 보였습니다.”",
+    "cover": [
+     243,
+     240,
+     227
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Hare-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     354,
+     54,
+     770,
+     136
+    ],
+    "ko": "“목숨은 번갯불처럼\n약하고 덧없다”",
+    "cover": [
+     242,
+     239,
+     224
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     354,
+     136,
+     770,
+     210
+    ],
+    "ko": "열나흗날을 향해 차오르는 달을 보고 토끼는 다가오는 포살(uposatha)을 알렸습니다. 벗들에게 단식하며 거룩한 날을 지키고, 손님에게 음식을 대접한 뒤에 먹으라고 일렀습니다.",
+    "cover": [
+     240,
+     238,
+     222
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     354,
+     236,
+     598,
+     276
+    ],
+    "ko": "가르침",
+    "cover": [
+     243,
+     241,
+     228
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     354,
+     276,
+     598,
+     378
+    ],
+    "ko": "• 높은 지위는 추락으로 끝난다.\n• 만남은 헤어짐으로 끝난다.\n• 방일을 경계하고 보시로 공덕을 늘려라.",
+    "cover": [
+     240,
+     237,
+     221
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Hare-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     26,
+     290,
+     340,
+     330
+    ],
+    "ko": "신들의 시험",
+    "cover": [
+     248,
+     245,
+     236
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     26,
+     330,
+     340,
+     438
+    ],
+    "ko": "천신들의 왕 삭까가 그들의 덕을 시험하려 했습니다. 길 잃은 바라문의 모습으로, 매미 우는 한낮의 더위 속에서 외쳤습니다.\n\n“홀로 길을 잃어… 더위와 목마름과 피로에 시달립니다. 누가 다정한 말과 대접으로 나를 기쁘게 해 주겠습니까?”",
+    "cover": [
+     248,
+     245,
+     235
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Hare-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     26,
+     288,
+     404,
+     362
+    ],
+    "ko": "수달: 어부들이 잊고 간, 마른 땅 위에 꼼짝 않고 놓인 로히따 물고기 일곱 마리를 바쳤습니다.",
+    "cover": [
+     245,
+     242,
+     228
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     428,
+     288,
+     790,
+     348
+    ],
+    "ko": "자칼: 도마뱀 한 마리와 나그네가 두고 간 신 우유 한 그릇을 바쳤습니다.",
+    "cover": [
+     244,
+     242,
+     227
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     70,
+     386,
+     734,
+     416
+    ],
+    "ko": "주워 온 이와 사냥한 이의 공양",
+    "cover": [
+     245,
+     242,
+     228
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     70,
+     416,
+     734,
+     446
+    ],
+    "ko": "그들은 손님을 섬길 길을 찾았다고 여기며 크게 기뻐하는 마음으로 이것들을 바쳤습니다.",
+    "cover": [
+     243,
+     240,
+     222
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Hare-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     404,
+     104,
+     770,
+     184
+    ],
+    "ko": "거두어 온 열매의 공양",
+    "cover": [
+     245,
+     243,
+     230
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     404,
+     184,
+     770,
+     346
+    ],
+    "ko": "원숭이는 붉은 석황으로 물들인 듯 부드럽고 짙은 주황빛 망고를 바쳤습니다.\n\n“잘 익은 망고, 맛난 물, 좋은 벗과 함께하는 즐거움처럼 시원한 그늘… 드시고 오늘 밤 여기서 묵으십시오.”",
+    "cover": [
+     245,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Hare-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     64,
+     104,
+     352,
+     180
+    ],
+    "ko": "섬기지 못하는 목숨이\n무슨 소용인가",
+    "cover": [
+     244,
+     242,
+     229
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     64,
+     180,
+     352,
+     368
+    ],
+    "ko": "토끼는 제 딱한 처지를 돌아보았습니다. 자기가 먹는 쓴 풀을 손님께 드릴 수는 없었습니다. 그는 어찌할 바를 몰랐습니다.\n\n“아! 나는 얼마나 무력한가!… 손님이… 이렇게 서운해하신다면, 이 목숨이 내게 무슨 소용인가!”",
+    "cover": [
+     244,
+     241,
+     229
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Hare-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     64,
+     136,
+     352,
+     182
+    ],
+    "ko": "“나에게는 몸이 있다”",
+    "cover": [
+     242,
+     240,
+     225
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     64,
+     182,
+     352,
+     400
+    ],
+    "ko": "문득 깨달음이 왔습니다. 그의 재산은 제 살이었습니다. 흠잡을 데 없고 누구의 것도 아니었습니다.\n\n“이 하찮은 몸으로 손님을 대접하리라… 마음이여, 슬픔을 버려라!”\n\n그는 큰 보배를 얻은 듯 더없이 기뻤습니다.",
+    "cover": [
+     243,
+     241,
+     227
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Hare-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     64,
+     100,
+     366,
+     146
+    ],
+    "ko": "연기 없는 황금 불",
+    "cover": [
+     242,
+     240,
+     225
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     64,
+     146,
+     366,
+     384
+    ],
+    "ko": "삭까는 토끼의 뜻을 알고 신통으로 불을 만들었습니다.\n\n토끼는 기뻐했습니다. “당신께 호의를 보일 길을 찾았습니다… 이 몸을 불로 익히겠습니다.”\n\n토끼는 이것을 드문 기회로 보았습니다. ‘합당한 손님’과 기꺼운 마음은 함께 만나기 어렵기 때문입니다.",
+    "cover": [
+     241,
+     240,
+     223
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Hare-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     64,
+     98,
+     352,
+     170
+    ],
+    "ko": "연꽃 연못에 뛰어드는\n백조처럼",
+    "cover": [
+     240,
+     239,
+     221
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     64,
+     170,
+     352,
+     384
+    ],
+    "ko": "위대한 마음의 분은 털을 털어 벌레들을 떨어냈습니다(함께 죽지 않도록). 그리고 활활 타는 불 속으로 몸을 던졌습니다.\n\n경전은 그 뛰어듦을 죽음이 아니라 ‘웃는 연꽃이 핀 연못으로 뛰어드는 으뜸가는 함사(haṃsa, 백조)’로 그립니다.",
+    "cover": [
+     239,
+     239,
+     220
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Hare-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     64,
+     104,
+     352,
+     148
+    ],
+    "ko": "덕의 시원함",
+    "cover": [
+     239,
+     238,
+     218
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     64,
+     148,
+     352,
+     380
+    ],
+    "ko": "토끼에게 불은 얼음처럼 시원했습니다. 놀란 천신들은 꽃가루 가득한 하늘 꽃을 비처럼 내렸습니다.\n\n삭까는 참모습을 드러내 그 ‘영웅다운 행위’를 찬탄하고, ‘보석 장신구처럼 빛나는’ 두 손으로 토끼를 들어 올렸습니다.",
+    "cover": [
+     238,
+     238,
+     218
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Hare-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     284,
+     50,
+     310,
+     110
+    ],
+    "ko": " ",
+    "cover": [
+     245,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     50,
+     50,
+     282,
+     152
+    ],
+    "ko": "흔들리는 마음을\n꾸짖다",
+    "cover": [
+     245,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     50,
+     152,
+     282,
+     352
+    ],
+    "ko": "삭까는 마음이 흔들리는 사람은 시든 꽃 한 송이도 떨지 않고 내주지 못하는데, 이 짐승은 망설임 없이 목숨을 내주었다고 말했습니다.",
+    "cover": [
+     246,
+     244,
+     232
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     296,
+     162,
+     466,
+     344
+    ],
+    "ko": "철학적 풀이\n이 이야기는 니띠(nīti, 처세의 지혜·이기적 계산)를 분명히 비판하며, 참된 공덕이 세속의 셈보다 무겁다는 것을 보여 줍니다.",
+    "cover": [
+     241,
+     238,
+     225
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/06-Hare-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     100,
+     352,
+     150
+    ],
+    "ko": "영원한 기념비",
+    "cover": [
+     242,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     150,
+     352,
+     340
+    ],
+    "ko": "이 행위를 기리려고 삭까는 자기 궁전(웨자얀따와 수담마)의 꼭대기와 둥근 달에 토끼의 모습을 새겼습니다.",
+    "cover": [
+     243,
+     240,
+     228
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     50,
+     360,
+     760,
+     412
+    ],
+    "ko": "위대한 마음의 분은 짐승일 때도 보시를 실천하셨습니다. 그러니 사람으로서 누가 베풀지 않겠습니까?",
+    "cover": [
+     241,
+     238,
+     222
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
