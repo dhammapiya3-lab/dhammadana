@@ -1,0 +1,677 @@
+[
+ {
+  "img": "images/03-Gruel-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     360,
+     684,
+     405
+    ],
+    "ko": "죽 한 그릇 이야기",
+    "cover": [
+     248,
+     244,
+     235
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     200,
+     406,
+     604,
+     446
+    ],
+    "ko": "보살과 믿음으로 한 작은 행위의 무게, 그리고 업의 수확을 다룬 『자따까말라』의 이야기",
+    "cover": [
+     248,
+     245,
+     236
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Gruel-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     26,
+     56,
+     352,
+     166
+    ],
+    "ko": "행운이\n사랑한 왕",
+    "cover": [
+     249,
+     248,
+     243
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     26,
+     166,
+     352,
+     400
+    ],
+    "ko": "먼 옛날 보살은 꼬살라를 다스렸습니다. 기운과 분별과 위엄을 갖추었지만, 무엇보다 큰 복이 그를 두드러지게 했습니다. 행운의 여신이 교만한 적들을 버리고 오직 그에게만 머무는 듯했습니다. 그가 법답게 다스리니 따르는 이들이 그를 깊이 사랑하여, 적들은 발붙일 곳이 없었습니다.",
+    "cover": [
+     250,
+     248,
+     243
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Gruel-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     26,
+     56,
+     334,
+     166
+    ],
+    "ko": "왕의\n수수께끼",
+    "cover": [
+     249,
+     249,
+     241
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     26,
+     166,
+     334,
+     412
+    ],
+    "ko": "영광 속에서도 왕에게는 이상한 버릇이 있었습니다. 접견실에서나 안채에서나 늘 ‘소금도 없는 거친 죽’에 관한 게송을 읊었습니다. 대신과 백성들은 궁금해 견딜 수 없었지만, 왕의 위엄에 눌려 그 노래의 뜻을 감히 묻지 못했습니다.",
+    "cover": [
+     249,
+     248,
+     240
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Gruel-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     28,
+     570,
+     74
+    ],
+    "ko": "죽의 노래",
+    "cover": [
+     250,
+     251,
+     246
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     78,
+     380,
+     716,
+     446
+    ],
+    "ko": "왕이 읊었습니다. “보라, 소금도 없이 마르고 거친 불그스름한 죽 조금이 맺은 이 풍성한 열매를. 검푸른 무리를 이룬 사나운 코끼리의 큰 군대, 온 땅의 통치권, 많은 재물, 그리고 고귀한 아내… 거친 죽 조금이 맺은 이 열매 더미의 아름다움을 보라.”",
+    "cover": [
+     249,
+     250,
+     245
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Gruel-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     466,
+     50,
+     790,
+     146
+    ],
+    "ko": "왕비가\n침묵을 깨다",
+    "cover": [
+     249,
+     251,
+     245
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     466,
+     146,
+     790,
+     366
+    ],
+    "ko": "되풀이되는 노래에 용기를 얻은 왕비가 마침내 말했습니다. “대왕이시여, 기쁨을 쏟아 내듯 이 노래를 읊으시지만 제 마음은 궁금해 어지럽습니다. 비밀이라면 이렇게 드러내지 않으실 테지요. 제가 들어도 된다면 그 뜻을 말씀해 주십시오.”",
+    "cover": [
+     249,
+     250,
+     244
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Gruel-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     102,
+     352,
+     162
+    ],
+    "ko": "하인의 삶",
+    "cover": [
+     241,
+     227,
+     201
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     162,
+     352,
+     352
+    ],
+    "ko": "왕이 미소 지으며 설명했습니다. “나는 전생을 기억하오. 바로 이 도성에서 하인으로 살았소. 바르게 행했지만 품을 팔아 고단하게 살았고, 고생과 멸시 속에서 가족을 먹여 살리려 애썼소.”",
+    "cover": [
+     237,
+     221,
+     193
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Gruel-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     570,
+     62,
+     778,
+     152
+    ],
+    "ko": "네 분의\n스님",
+    "cover": [
+     249,
+     250,
+     244
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     570,
+     152,
+     778,
+     360
+    ],
+    "ko": "어느 날 일하러 가던 길에, 감각을 다스리고 출가의 기쁨으로 빛나는 네 분의 사문이 탁발하는 것을 보았소. 내 마음은 곧바로 믿음으로 부드러워졌소.",
+    "cover": [
+     248,
+     249,
+     242
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Gruel-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     28,
+     322,
+     66
+    ],
+    "ko": "믿음의 보시",
+    "cover": [
+     247,
+     247,
+     241
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     22,
+     66,
+     322,
+     150
+    ],
+    "ko": "나는 그분들을 공손히 집으로 모셨소. 드릴 것은 작은 죽 한 그릇뿐이었지만 온 마음으로 드렸소. 그 싹에서 이 큰 영광의 나무가 자라났소.",
+    "cover": [
+     246,
+     245,
+     239
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Gruel-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     560,
+     112,
+     784,
+     162
+    ],
+    "ko": "공덕의 그림자",
+    "cover": [
+     245,
+     244,
+     239
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     560,
+     162,
+     784,
+     300
+    ],
+    "ko": "그 보시 덕분에 이제 다른 왕들 관의 보석이 내 발의 먼지에 비치오. 이를 생각하며 나는 이 게송을 읊소. 공덕 있는 행위의 힘을 떠올리며 흡족해하는 것이오.",
+    "cover": [
+     244,
+     243,
+     238
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Gruel-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     22,
+     300,
+     98
+    ],
+    "ko": "왕비의 기억",
+    "cover": [
+     247,
+     248,
+     242
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     22,
+     98,
+     300,
+     312
+    ],
+    "ko": "왕비의 얼굴이 기쁨으로 환해졌습니다.\n“저도 기억합니다. 저는 여종이었습니다. 번뇌가 꺼진 성자(muni)께 그릇에 남은 음식을 드렸지요. 그 유익한 행위로 대왕을 남편으로 얻고 이 나라를 함께 누립니다.”",
+    "cover": [
+     244,
+     245,
+     239
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Gruel-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     358,
+     760,
+     402
+    ],
+    "ko": "공덕으로 맺어지다",
+    "cover": [
+     245,
+     245,
+     240
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     402,
+     760,
+     444
+    ],
+    "ko": "왕비는 성자께서 해 주신 말씀을 전했습니다. “거룩한 분께 드린 이익은 결코 작지 않다.” 두 사람이 함께 누리는 나라와 사랑은 운명의 우연이 아니라, 저마다 지난날 베푼 보시가 맺은 열매였습니다.",
+    "cover": [
+     244,
+     244,
+     237
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Gruel-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     378,
+     30,
+     794,
+     80
+    ],
+    "ko": "왕의 선언",
+    "cover": [
+     245,
+     246,
+     240
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     378,
+     80,
+     794,
+     202
+    ],
+    "ko": "왕이 놀란 대중에게 말했습니다.\n“이 결과를 보고서 누가 보시에 마음을 쏟지 않겠소? 믿음으로 합당한 이에게 드린 보시는 결코 작지 않소. 인색의 어둠에 싸여 베풀기를 마다하는 사람은 돌아볼 가치도 없소.”",
+    "cover": [
+     242,
+     242,
+     235
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Gruel-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     22,
+     664,
+     62
+    ],
+    "ko": "없어지지 않는 보배",
+    "cover": [
+     247,
+     246,
+     241
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     140,
+     62,
+     664,
+     134
+    ],
+    "ko": "보시는 늘 우리와 함께하며 도둑도 손댈 수 없는 보배입니다. 마음에서 이기심을 씻어 내고, 갖가지 즐거움과 편안함을 가져다주는 가장 좋은 벗입니다.",
+    "cover": [
+     242,
+     241,
+     236
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Gruel-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     362,
+     760,
+     402
+    ],
+    "ko": "모든 소원의 근원",
+    "cover": [
+     248,
+     246,
+     238
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     402,
+     760,
+     444
+    ],
+    "ko": "재물도 권세도 아름다움도 모두 보시로 얻습니다. 그러니 인색의 어둠에 싸이지 마십시오. 단순한 사람이 드린 누더기라도 믿음으로 드리면 잘 베푼 보시입니다.",
+    "cover": [
+     245,
+     238,
+     224
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/03-Gruel-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     22,
+     550,
+     74
+    ],
+    "ko": "맺음",
+    "cover": [
+     247,
+     245,
+     238
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     100,
+     352,
+     700,
+     418
+    ],
+    "ko": "왕의 말에 감화된 백성들은 믿음 어린 마음이 어떤 보시든 훌륭하게 만든다는 것을 알고 보시에 마음을 기울였습니다.",
+    "cover": [
+     244,
+     237,
+     223
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
