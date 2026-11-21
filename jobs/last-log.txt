@@ -1,3 +1,8 @@
+Foremost-Nuns 02-Khema 37 장
+Foremost-Nuns 04-Patacara 30 장
+Foremost-Nuns 05-Dhammadinna 22 장
+Foremost-Nuns 12-Kisa-Gotami 23 장
+Foremost-Nuns 13-Singalakamata 13 장
 검수 Jataka/001-The-Waterless-Desert 13번 그림 상자2 [자리] 한글 글(2151,1214)이 상자 점(1762,1051)에서 멀리 그려짐
 Jataka 001-The-Waterless-Desert 15 장
 검수 Jataka/002-The-Well-of-Perseverance 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
@@ -32,30 +37,19 @@ Jataka 044-The-Son-and-the-Mosquito 13 장
 Jataka 046-The-Folly-of-the-Monkeys 13 장
 Jataka 049-The-Lucky-Star 14 장
 Jataka 050-The-Kings-Stratagem 15 장
-Way-Beyond 00-Introduction 38 장
-Way-Beyond 01-Ajita 10 장
-Way-Beyond 02-Tissa-Metteyya 11 장
-Way-Beyond 03-Punnaka 11 장
-Way-Beyond 04-Mettagu 10 장
-Way-Beyond 05-Dhotaka 15 장
-Way-Beyond 06-Upasiva 10 장
-Way-Beyond 07-Nanda 10 장
-Way-Beyond 08-Hemaka 9 장
-Way-Beyond 09-Todeyya 8 장
-Way-Beyond 10-Kappa 9 장
-Way-Beyond 11-Jatukanni 12 장
-Way-Beyond 12-Bhadravuddha 10 장
-Way-Beyond 13-Udaya 13 장
-Way-Beyond 14-Posala 7 장
-Way-Beyond 15-Mogharaja 8 장
-Way-Beyond 16-Pingiya 10 장
-Way-Beyond 17-Verses-1 12 장
-Way-Beyond 18-Verses-2 10 장
+Pannasa 09-Siridhara 13 장
+Pannasa 12-Narajiva 13 장
+Pannasa 15-Kambala 15 장
 자동 검수: 문제 의심 16 곳
-R2 에 올림: 975 개 / 한글판 이야기 244 편
-새 그림책 올림: New-Jataka/002-Vannupatha 24 장
-새 그림책: 올린 그림 24 장
-공개 주소 확인: 200 1160954바이트
+R2 에 올림: 861 개 / 한글판 이야기 245 편
+새 그림책: 올린 그림 0 장
+공개 주소 확인: 200 855254바이트
+이야기 Foremost-Nuns/02-Khema {'pdf': 52988466, 'zip': 52713571, 'n': 37}
+이야기 Foremost-Nuns/04-Patacara {'pdf': 36894500, 'zip': 36619969, 'n': 30}
+이야기 Foremost-Nuns/05-Dhammadinna {'pdf': 29276001, 'zip': 29005673, 'n': 22}
+이야기 Foremost-Nuns/12-Kisa-Gotami {'pdf': 34719749, 'zip': 34448123, 'n': 23}
+이야기 Foremost-Nuns/13-Singalakamata {'pdf': 18845820, 'zip': 18575237, 'n': 13}
+책 Foremost-Nuns {'pdf': 385825982, 'pdfs': 40833505, 'zip': 385473300, 'stories': 13, 'n': 283}
 이야기 Jataka/001-The-Waterless-Desert {'pdf': 14363120, 'zip': 14097759, 'n': 15}
 이야기 Jataka/002-The-Well-of-Perseverance {'pdf': 17821764, 'zip': 17553641, 'n': 15}
 이야기 Jataka/003-The-Golden-Bowl {'pdf': 15760663, 'zip': 15495675, 'n': 14}
@@ -75,30 +69,32 @@ R2 에 올림: 975 개 / 한글판 이야기 244 편
 이야기 Jataka/049-The-Lucky-Star {'pdf': 16475296, 'zip': 16210422, 'n': 14}
 이야기 Jataka/050-The-Kings-Stratagem {'pdf': 19093680, 'zip': 18828023, 'n': 15}
 책 Jataka {'pdf': 496347891, 'pdfs': 50553122, 'zip': 495938130, 'stories': 32, 'n': 422}
-이야기 New-Jataka/002-Vannupatha {'pdf': 15786848, 'zip': 15611711, 'n': 24}
-책 New-Jataka {'pdf': 15772010, 'pdfs': 3259457, 'zip': 15614104, 'stories': 1, 'n': 24}
-이야기 Way-Beyond/00-Introduction {'pdf': 25934917, 'zip': 25669488, 'n': 38}
-이야기 Way-Beyond/01-Ajita {'pdf': 5960246, 'zip': 5699487, 'n': 10}
-이야기 Way-Beyond/02-Tissa-Metteyya {'pdf': 7378223, 'zip': 7112938, 'n': 11}
-이야기 Way-Beyond/03-Punnaka {'pdf': 7255089, 'zip': 6991844, 'n': 11}
-이야기 Way-Beyond/04-Mettagu {'pdf': 6923146, 'zip': 6661448, 'n': 10}
-이야기 Way-Beyond/05-Dhotaka {'pdf': 10250467, 'zip': 9986729, 'n': 15}
-이야기 Way-Beyond/06-Upasiva {'pdf': 6941648, 'zip': 6678669, 'n': 10}
-이야기 Way-Beyond/07-Nanda {'pdf': 7085902, 'zip': 6825695, 'n': 10}
-이야기 Way-Beyond/08-Hemaka {'pdf': 6568093, 'zip': 6305789, 'n': 9}
-이야기 Way-Beyond/09-Todeyya {'pdf': 5150927, 'zip': 4889656, 'n': 8}
-이야기 Way-Beyond/10-Kappa {'pdf': 7291204, 'zip': 7031488, 'n': 9}
-이야기 Way-Beyond/11-Jatukanni {'pdf': 8064874, 'zip': 7802342, 'n': 12}
-이야기 Way-Beyond/12-Bhadravuddha {'pdf': 7662890, 'zip': 7399889, 'n': 10}
-이야기 Way-Beyond/13-Udaya {'pdf': 8512584, 'zip': 8250631, 'n': 13}
-이야기 Way-Beyond/14-Posala {'pdf': 4854819, 'zip': 4593970, 'n': 7}
-이야기 Way-Beyond/15-Mogharaja {'pdf': 6073920, 'zip': 5812647, 'n': 8}
-이야기 Way-Beyond/16-Pingiya {'pdf': 7455782, 'zip': 7193665, 'n': 10}
-이야기 Way-Beyond/17-Verses-1 {'pdf': 10025624, 'zip': 9755609, 'n': 12}
-이야기 Way-Beyond/18-Verses-2 {'pdf': 7785610, 'zip': 7517154, 'n': 10}
-책 Way-Beyond {'pdf': 152504429, 'pdfs': 12962877, 'zip': 152174396, 'stories': 19, 'n': 223}
-내려받기 파일: 41 묶음 새로 만듦
+이야기 Pannasa/09-Siridhara {'pdf': 15526093, 'zip': 15262423, 'n': 13}
+이야기 Pannasa/12-Narajiva {'pdf': 16071961, 'zip': 15811511, 'n': 13}
+이야기 Pannasa/15-Kambala {'pdf': 19840230, 'zip': 19577832, 'n': 15}
+책 Pannasa {'pdf': 1033928940, 'pdfs': 99435970, 'zip': 1033378150, 'stories': 50, 'n': 803}
+내려받기 파일: 29 묶음 새로 만듦
 글로 보기: 245 이야기
-18-Verses-2
-08-Light-of-Asia
-04-Kalavaliya-the-Treasurer
+To https://github.com/dhammapiya3-lab/dhammadana
+ ! [rejected]        storybooks -> storybooks (fetch first)
+error: failed to push some refs to 'https://github.com/dhammapiya3-lab/dhammadana'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Committer identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <runner@runnervm0hi8g.vpnmwxmxptlulpeox0lfu5xxud.jx.internal.cloudapp.net>) not allowed
+error: cannot pull with rebase: Your index contains uncommitted changes.
+error: Please commit or stash them.
