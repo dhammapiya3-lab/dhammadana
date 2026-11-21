@@ -1,0 +1,603 @@
+[
+ {
+  "img": "images/05-Avisahya-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     350,
+     762,
+     384
+    ],
+    "ko": "이길 수 없는 이",
+    "cover": [
+     247,
+     244,
+     231
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     384,
+     762,
+     448
+    ],
+    "ko": "보살 시절 이야기입니다. 아위샤햐라는 상인이 있었습니다. 꾸웨라만큼 재산이 많았지만, 끝없이 이어지는 제사처럼 그것을 베풀었습니다. 그가 ‘이길 수 없는 이’로 불린 것은 땅을 정복해서가 아니라, 그의 보시를 이기심도 악덕도 이길 수 없었기 때문입니다.",
+    "cover": [
+     247,
+     242,
+     229
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/05-Avisahya-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     58,
+     254,
+     148
+    ],
+    "ko": "재물이라는\n짐",
+    "cover": [
+     249,
+     246,
+     235
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     56,
+     148,
+     254,
+     376
+    ],
+    "ko": "아위샤햐에게 걸식하는 이를 보는 것은 기쁨이었습니다. 그는 재물을 나누지 않으면 재앙이 되는, 불행으로 가는 길 위의 짐수레로 보았습니다.\n\n재물이 집 밖으로 실려 나가 무거운 짐에서 남의 기쁨으로 바뀔 때 그의 기쁨은 가장 컸습니다.",
+    "cover": [
+     249,
+     245,
+     234
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/05-Avisahya-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     90,
+     290,
+     136
+    ],
+    "ko": "하늘의 시험",
+    "cover": [
+     248,
+     245,
+     232
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     56,
+     136,
+     290,
+     376
+    ],
+    "ko": "천신들의 왕 삭까는 놀라움과 의심으로 내려다보며 상인의 결심이 얼마나 굳은지 시험하려 했습니다.\n\n“가난이 두려우면 결국 제 이익을 챙기겠지.” 삭까는 날마다 상인의 돈과 곡식과 보석을 허공으로 사라지게 했습니다.",
+    "cover": [
+     247,
+     245,
+     231
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/05-Avisahya-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     96,
+     290,
+     142
+    ],
+    "ko": "텅 빈 집",
+    "cover": [
+     247,
+     245,
+     231
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     56,
+     142,
+     290,
+     392
+    ],
+    "ko": "어느 날 아침, 아위샤햐가 깨어 보니 집이 도깨비에게 약탈당한 듯 텅 비어 있었습니다. 남은 것은 밧줄 하나와 낫 하나뿐이었습니다. 그는 잃은 재산 때문에 울지 않았습니다.\n\n그 대신 곧 찾아올 걸인들 생각에 마음이 아팠습니다. “목마른 사람이 말라 버린 연못에 오는 것 같지 않겠는가?”",
+    "cover": [
+     246,
+     243,
+     229
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/05-Avisahya-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     290,
+     100,
+     400,
+     142
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     56,
+     102,
+     290,
+     148
+    ],
+    "ko": "자비의 노동",
+    "cover": [
+     246,
+     244,
+     228
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     56,
+     148,
+     290,
+     380
+    ],
+    "ko": "아무도 빈손으로 돌려보낼 수 없었던 고귀한 마음의 그는 낫과 밧줄을 들고 풀을 베어 팔았습니다. 그만한 신분의 사람에게 힘든 일이었지만 자비심은 오히려 커졌습니다.\n\n풀을 팔아 번 몇 푼으로 그는 계속 걸식하는 이들을 맞았습니다. 금 상자를 내주던 곳에서 이제 작은 정성으로 맞이했습니다.",
+    "cover": [
+     246,
+     241,
+     225
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/05-Avisahya-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     100,
+     290,
+     146
+    ],
+    "ko": "삭까의 만류",
+    "cover": [
+     246,
+     244,
+     226
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     56,
+     146,
+     290,
+     398
+    ],
+    "ko": "삭까가 허공에 머물며 보살을 말렸습니다.\n“장자여, 도둑도 불도 그대 것을 빼앗지 않았다. 그대를 이렇게 만든 것은 그대 자신의 넉넉한 베풂이다. 보시를 향한 열정을 누르라. 먼저 재산을 되찾으라. 재물은 쓰면 줄고, 개미 언덕은 모아야 높아진다.”",
+    "cover": [
+     245,
+     241,
+     223
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/05-Avisahya-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     532,
+     90,
+     760,
+     136
+    ],
+    "ko": "거절",
+    "cover": [
+     243,
+     238,
+     219
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     532,
+     136,
+     760,
+     384
+    ],
+    "ko": "아위샤햐가 대답했습니다.\n“점잖은 이는 아무리 궁해도 비천한 짓을 하지 않습니다. 천 개의 눈을 가진 분이시여, 인색하게 살아야 얻을 재물이라면 제 것이 되지 않기를 바랍니다. 저는 가련한 이들을 거절이라는 벼락으로 치지 않겠습니다.”",
+    "cover": [
+     243,
+     238,
+     219
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/05-Avisahya-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     336,
+     712,
+     376
+    ],
+    "ko": "번개처럼 덧없는 재물",
+    "cover": [
+     243,
+     239,
+     220
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     90,
+     376,
+     712,
+     434
+    ],
+    "ko": "재물은 번갯불처럼 덧없고 숱한 재앙의 원인입니다. 그러나 보시는 행복의 근원입니다. 이기심만 키우는 받기는 탈을 쓴 재앙입니다. 그런데 어찌 고귀한 이가 이기심에 매달리겠습니까?",
+    "cover": [
+     245,
+     236,
+     215
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/05-Avisahya-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     318,
+     740,
+     358
+    ],
+    "ko": "앞날의 이익이라는 유혹",
+    "cover": [
+     241,
+     235,
+     213
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     358,
+     740,
+     440
+    ],
+    "ko": "삭까가 몰아붙였습니다.\n“그대 처지에 맞지 않는 행동이다. 깃이 덜 자란 새는 날지 못한다. 절제하고 작은 일을 하며 재물을 모아야 한다. 보시하려는 바람은 버리라. 가진 게 없을 때 주지 않는 것이 무슨 인색함이겠는가?”",
+    "cover": [
+     241,
+     235,
+     213
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/05-Avisahya-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     392,
+     46,
+     760,
+     82
+    ],
+    "ko": "자신을 내주다",
+    "cover": [
+     249,
+     247,
+     234
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     392,
+     82,
+     760,
+     186
+    ],
+    "ko": "“저를 재촉하지 마십시오. 자기만 아끼는 사람도 베풀어야 합니다. 저는 제 몸이라도 내주겠습니다. 재물은 천상으로 이끌지 못하지만 보시는 이끕니다. 골라야 한다면, 저는 이 덕의 길을 버리고 그릇된 길로 수레를 몰지 않겠습니다.”",
+    "cover": [
+     250,
+     247,
+     234
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/05-Avisahya-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     404,
+     44,
+     744,
+     84
+    ],
+    "ko": "눈부신 설산",
+    "cover": [
+     218,
+     207,
+     222
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     404,
+     84,
+     744,
+     186
+    ],
+    "ko": "흡족해진 삭까가 외쳤습니다.\n“훌륭하다! 그대는 재산을 잃어도, 내가 유혹해도 개의치 않는구나. 그대 마음은 이기심의 어둠을 씻어 냈다. 그대는 바람에도 흔들리지 않는 눈부신 설산과 같다.”",
+    "cover": [
+     235,
+     217,
+     216
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/05-Avisahya-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     326,
+     42,
+     606,
+     82
+    ],
+    "ko": "비구름",
+    "cover": [
+     157,
+     187,
+     218
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     326,
+     82,
+     606,
+     252
+    ],
+    "ko": "“그대의 명성을 드높이려고 시험 삼아 재산을 감추었을 뿐이다.” 삭까가 털어놓았습니다. “이제 비구름이 못을 채우듯 걸식하는 이들에게 보시를 쏟아 주라.”\n삭까는 재산을 되돌려 놓고 사라졌고, 이길 수 없는 이는 다시 제 일을 이어 갔습니다.",
+    "cover": [
+     198,
+     204,
+     216
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/05-Avisahya-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     364,
+     42,
+     724,
+     82
+    ],
+    "ko": "흔들리지 않는 길",
+    "cover": [
+     244,
+     234,
+     214
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     364,
+     82,
+     724,
+     172
+    ],
+    "ko": "이처럼 덕 있는 이는 재산을 잃어도, 재물을 얻을 앞날이 보여도 보시의 덕을 조금도 소홀히 하지 않습니다. 참된 재산은 베풀려는 마음입니다.",
+    "cover": [
+     244,
+     232,
+     209
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
