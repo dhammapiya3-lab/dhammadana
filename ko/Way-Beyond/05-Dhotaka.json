@@ -1,0 +1,287 @@
+[
+ {
+  "img": "images/05-Dhotaka-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     150,
+     608,
+     270
+    ],
+    "ko": "“도따까의 질문:\n의심의 거센 물을 건너다”\n빠라야나 왁가의 이야기",
+    "cover": null,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     380,
+     42,
+     728,
+     200
+    ],
+    "ko": "“복되신 분이시여, 여쭈오니\n저에게 말씀해 주십시오.\n큰 선인이시여, 당신의\n말씀을 기다립니다…”",
+    "cover": null,
+    "align": "right",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     50,
+     344,
+     228
+    ],
+    "ko": "“…당신의 말씀을\n듣고 저 자신의\n열반을 위해\n닦을 수 있도록.”",
+    "cover": null,
+    "align": "left",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     50,
+     570,
+     186
+    ],
+    "ko": "“그렇다면 그대는 바로 여기서\n열심히, 슬기롭게, 마음챙겨\n이제부터…”",
+    "cover": null,
+    "align": "right",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     92,
+     50,
+     692,
+     142
+    ],
+    "ko": "“…이 말을 듣고 그대 자신의\n열반을 위해 닦아야 한다.”",
+    "cover": null,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     74,
+     50,
+     570,
+     186
+    ],
+    "ko": "“세상에서 아무것도 지니지 않고\n다니는 바라문을 봅니다. 그래서 저는\n눈 있는 분, 사꺄족이신 당신께 예배합니다.”",
+    "cover": null,
+    "align": "right",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     76,
+     50,
+     344,
+     144
+    ],
+    "ko": "“저를 의심에서\n풀어 주십시오.”",
+    "cover": null,
+    "align": "left",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     396,
+     48,
+     592,
+     252
+    ],
+    "ko": "“도따까여,\n세상에서 의심하는\n누구도 나는\n풀어 줄 수\n없다…”",
+    "cover": null,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     116,
+     500,
+     370
+    ],
+    "ko": "“…그러나\n가장 높은\n가르침을 알면\n이렇게\n거센 물을\n건널 것이다.”",
+    "cover": null,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     30,
+     770,
+     150
+    ],
+    "ko": "“연민으로 제가 알아야 할 떠남의 경지를 가르쳐 주십시오.\n그러면 저는 허공처럼 흔들림 없이…”",
+    "cover": null,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     348,
+     700,
+     420
+    ],
+    "ko": "“…바로 여기서 고요히, 의지함 없이 살겠습니다.”\n“세상에서 전해 들은 것이 아닌 평화를 그대에게 밝히겠다…”",
+    "cover": null,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     40,
+     710,
+     124
+    ],
+    "ko": "“…그것을 알고 마음챙기며 살아가면\n세상에 대한 집착을 건널 수 있다.”",
+    "cover": null,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     326,
+     182,
+     766,
+     340
+    ],
+    "ko": "“큰 선인이시여, 그 가장 높은 평화를\n저는 크게 기뻐합니다. 그것을 알고\n마음챙기며 살아가면\n집착을 건널 수 있습니다…”",
+    "cover": null,
+    "align": "center",
+    "em": 23,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     344,
+     716,
+     420
+    ],
+    "ko": "“위와 아래와 그 사이 가운데에서 그대가 아는 무엇이든\n그것이 세상의 족쇄라는 것을 알고서…”",
+    "cover": null,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     100,
+     580,
+     178
+    ],
+    "ko": "“…거듭되는 존재를\n갈애하지 말아야 한다.”",
+    "cover": null,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
