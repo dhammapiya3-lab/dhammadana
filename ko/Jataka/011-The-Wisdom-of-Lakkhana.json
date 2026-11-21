@@ -90,7 +90,8 @@
     ],
     "shape": "bubble",
     "en": "Many deer meet their death at this season. You must retire with your herds to the mountainous tracts. Return only when the crops are carried",
-    "ko": "이맘때면 많은 사슴이 목숨을 잃는다. 너희는 무리를 이끌고 산속으로 가 있거라. 곡식을 다 거두어들인 뒤에야 돌아오너라."
+    "ko": "이맘때면 많은 사슴이 목숨을 잃는다. 너희는 무리를 이끌고 산속으로 가 있거라. 곡식을 다 거두어들인 뒤에야 돌아오너라.",
+    "max": 14
    }
   ]
  },

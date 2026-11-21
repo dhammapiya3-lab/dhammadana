@@ -149,7 +149,8 @@
     ],
     "shape": "bubble",
     "en": "It is always raining yonder! Lakes overflow with lotuses. Break your heavy water jars to lighten your carts. You will travel easier.",
-    "ko": "저 앞에는 늘 비가 내린다오! 호수마다 연꽃이 넘쳐 나지요. 무거운 물 항아리를 깨뜨려 수레를 가볍게 하시오. 그러면 한결 수월하게 갈 것이오."
+    "ko": "저 앞에는 늘 비가 내린다오! 호수마다 연꽃이 넘쳐 나지요. 무거운 물 항아리를 깨뜨려 수레를 가볍게 하시오. 그러면 한결 수월하게 갈 것이오.",
+    "max": 14
    }
   ]
  },

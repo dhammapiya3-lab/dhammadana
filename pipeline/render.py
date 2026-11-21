@@ -281,7 +281,7 @@ def render(src_path, boxes):
                 else: tb = r0
             layout.append((tb, b["ko"], b.get("align", "center"), em, dark)); continue
         layout.append((inner_rect(full, tb), b["ko"], b.get("align", "left" if b.get("shape") == "box" else "center"), em, dark,
-                       solid(full) if not b.get("cover") else None))  # 말풍선 모양(구멍 메움): 글줄이 안에 드는지 그릴 때 확인
+                       solid(full) if not b.get("cover") else None, b.get("max")))  # max: 이 상자 글자 상한(800px 기준)  # 말풍선 모양(구멍 메움): 글줄이 안에 드는지 그릴 때 확인
     scale = 2 if W < 1600 else 1
     pil = Image.fromarray(cv2.cvtColor(out, cv2.COLOR_BGR2RGB))
     if scale > 1:
@@ -290,11 +290,13 @@ def render(src_path, boxes):
     drawn = []
     for it in layout:
         (x0, y0, x1, y1), ko, align, em, dark = it[:5]; shp = it[5] if len(it) > 5 else None
+        mx = it[6] if len(it) > 6 else None
         pad = max(2, W // 250)  # 글이 테두리에 붙지 않게 (약 3px)
         X0, Y0, X1, Y1 = [v * scale for v in (x0 + pad, y0 + pad, x1 - pad, y1 - pad)]
         cap = int(W * scale / 24)
         # 글자 크기 목표 16 (800px 기준, 운영자 결정 2026-11-21) — 자리가 모자라면 fit 이 알아서 줄임
         cap = min(cap, max(10, int(max(em or 0, TARGET * W / 800) * scale * 1.05)))
+        if mx: cap = min(cap, max(10, int(mx * W / 800 * scale)))
         f, lines, lh = fit(d, ko, X1 - X0, Y1 - Y0, cap)
         if shp is not None:  # 글줄 끝이 말풍선 테두리에 닿으면 한 단계씩 줄임 (2026-11-21, 글자 16 목표로 키운 뒤 생긴 일)
             dist_ = cv2.distanceTransform(shp.astype(np.uint8), cv2.DIST_L2, 3); mg_ = max(3.0, W * 0.004)
@@ -314,6 +316,7 @@ def render(src_path, boxes):
             floor_ = fit(d, ko, X1 - X0, Y1 - Y0, cap_old)[0].size
             ia, ib, ic, id_ = [int(v / scale) for v in (X0, Y0, X1, Y1)]
             inside_ = shp[max(0, ib):max(ib + 1, id_), max(0, ia):max(ia + 1, ic)].mean() if id_ > ib and ic > ia else 0
+            if mx: floor_ = min(floor_, cap)
             while inside_ >= 0.9 and f.size > floor_ and touches(f, lines, lh):
                 f, lines, lh = fit(d, ko, X1 - X0, Y1 - Y0, f.size - 1)
         y = Y0 + ((Y1 - Y0) - lh * len(lines)) / 2

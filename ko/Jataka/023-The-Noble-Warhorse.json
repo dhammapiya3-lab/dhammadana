@@ -64,7 +64,8 @@
     "ko": "늘 타는 향유 등불",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "max": 14
    }
   ]
  },
@@ -78,7 +79,8 @@
     ],
     "shape": "bubble",
     "en": "Thei missive offered no compromi se: wo” “Yield up your kingdom to us, or give battle.”",
-    "ko": "그들의 편지는 타협을 허락하지 않았습니다.\n“나라를 내놓든지, 아니면 싸우자.”"
+    "ko": "그들의 편지는 타협을 허락하지 않았습니다.\n“나라를 내놓든지, 아니면 싸우자.”",
+    "max": 14
    },
    {
     "rect": [

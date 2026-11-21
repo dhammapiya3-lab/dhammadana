@@ -173,7 +173,8 @@
     ],
     "shape": "bubble",
     "en": "What am to do, my lord?",
-    "ko": "어떻게 할까요, 나리?"
+    "ko": "어떻게 할까요, 나리?",
+    "max": 14
    },
    {
     "seed": [

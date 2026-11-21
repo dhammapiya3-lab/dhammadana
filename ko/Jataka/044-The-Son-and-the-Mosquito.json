@@ -9,7 +9,8 @@
     ],
     "shape": "box",
     "en": "The Mosquito and the Axe. hm tale of misplaced intentions awe from the Jataka.",
-    "ko": "모기와 도끼\n자따까에 나오는 빗나간 선의 이야기"
+    "ko": "모기와 도끼\n자따까에 나오는 빗나간 선의 이야기",
+    "max": 14
    }
   ]
  },
@@ -51,7 +52,8 @@
     ],
     "shape": "box",
     "en": "Drawn to the gleam, mosquito settled on his scalp and struck with its dart-like sting",
-    "ko": "반짝임에 이끌린 모기 한 마리가 그의 머리에 앉아 화살 같은 침을 꽂았습니다."
+    "ko": "반짝임에 이끌린 모기 한 마리가 그의 머리에 앉아 화살 같은 침을 꽂았습니다.",
+    "max": 14
    }
   ]
  },
