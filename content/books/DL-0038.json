@@ -138,10 +138,10 @@
         "created": ""
       },
       "hwp": {
-        "mode": "file",
-        "url": "hwp/DL-0038/DL-0038_개정판.hwp",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "hwp/DL-0038/DL-0038_개정판.hwp"
       },
       "reader": false,
       "sources": [
