@@ -1,0 +1,677 @@
+[
+ {
+  "img": "images/13-Unmadayanti-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     20,
+     710,
+     70
+    ],
+    "ko": "본생 이야기 꽃다발: 움마단띠 이야기",
+    "cover": [
+     248,
+     244,
+     232
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     90,
+     70,
+     710,
+     146
+    ],
+    "ko": "눈부신 아름다움과 위험한 집착, 그리고 바른 법의 승리를 그린 이야기입니다. 보살의 본생 이야기에서 가져왔습니다.",
+    "cover": [
+     247,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/13-Unmadayanti-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     78,
+     300,
+     128
+    ],
+    "ko": "바른 왕",
+    "cover": [
+     248,
+     245,
+     234
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     36,
+     128,
+     300,
+     390
+    ],
+    "ko": "먼 옛날 보살은 시위 나라를 다스렸습니다. 그는 바른 법 그 자체로서, 아버지가 아들을 대하듯 백성을 대했습니다.\n\n그의 다스림은 악의 길을 막는 ‘하늘로 오르는 꽃 사다리’였습니다. 그는 백성의 행복 말고는 다른 목적을 몰랐습니다.",
+    "cover": [
+     248,
+     245,
+     234
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/13-Unmadayanti-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     266,
+     740,
+     304
+    ],
+    "ko": "여인 중의 진주",
+    "cover": [
+     244,
+     225,
+     198
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     80,
+     304,
+     740,
+     392
+    ],
+    "ko": "도성에 아름다움이 압사라(천녀)에 견줄 만한 상인의 딸이 살았습니다. 그녀를 보고 넋을 잃지 않는 남자가 없어, 친척들은 그녀를 움마단띠, 곧 ‘미치게 하는 여인’이라 불렀습니다. 왕은 그녀와 혼인할 생각으로 먼저 바라문들을 보내 알맞은지 살피게 했습니다.",
+    "cover": [
+     243,
+     219,
+     187
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/13-Unmadayanti-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     72,
+     362,
+     118
+    ],
+    "ko": "넋을 잃은 바라문들",
+    "cover": [
+     247,
+     244,
+     231
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     36,
+     118,
+     362,
+     350
+    ],
+    "ko": "그녀를 보자 사랑의 신이 바라문들의 굳은 마음을 꺾었습니다. 그들은 그녀의 아름다움에 취해 엄숙한 표정도 지키지 못하고 밥조차 먹지 못했습니다.\n\n그들은 그녀의 매력이 왕의 직무를 흐트러뜨릴 마법 주문 같다고 여겼습니다.",
+    "cover": [
+     247,
+     244,
+     231
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/13-Unmadayanti-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     30,
+     360,
+     76
+    ],
+    "ko": "속임수",
+    "cover": [
+     250,
+     247,
+     241
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     24,
+     76,
+     360,
+     330
+    ],
+    "ko": "왕이 그런 아름다움에 사로잡혀 나랏일을 소홀히 할까 두려워 바라문들은 거짓말을 했습니다. “그녀에게는 불길한 상이 있습니다. 파멸의 징조입니다.”\n왕은 마음을 접었고, 그녀는 왕의 신하 아비빠라까와 혼인했습니다.",
+    "cover": [
+     249,
+     246,
+     240
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/13-Unmadayanti-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     424,
+     26,
+     770,
+     60
+    ],
+    "ko": "꼬무디 축제",
+    "cover": [
+     247,
+     248,
+     245
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     424,
+     60,
+     770,
+     176
+    ],
+    "ko": "가을 축제 동안 도성은 꽃과 깃발로 꾸며졌습니다. 향과 노랫소리가 가득했습니다. 왕은 그 화려함을 보려고 왕의 전차에 올라 기쁨에 찬 도성을 돌았습니다.",
+    "cover": [
+     248,
+     247,
+     242
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/13-Unmadayanti-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     206,
+     360,
+     246
+    ],
+    "ko": "번갯불처럼",
+    "cover": [
+     250,
+     248,
+     235
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     246,
+     360,
+     358
+    ],
+    "ko": "거절당한 데 성이 난 움마단띠는 왕이 지나는 길목에 나섰습니다. 그녀는 ‘구름 속 번갯불처럼’ 지붕을 환히 밝혔습니다. 절제로 다듬은 왕의 눈도 어쩔 수 없었습니다. 왕은 오래 바라보았고 굳은 마음이 흔들렸습니다.",
+    "cover": [
+     250,
+     248,
+     235
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/13-Unmadayanti-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     514,
+     126,
+     744,
+     160
+    ],
+    "ko": "집착의 병",
+    "cover": [
+     248,
+     246,
+     232
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     514,
+     160,
+     744,
+     354
+    ],
+    "ko": "“그녀가 나를 거의 미치게 했다.” 왕은 넋이 나간 채 궁전으로 돌아왔습니다. 시간을 알리는 징 소리에도 화가 났습니다. 감추려 했지만 야윈 팔다리와 굳은 눈빛이 상사병을 드러냈습니다.",
+    "cover": [
+     248,
+     245,
+     232
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/13-Unmadayanti-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     212,
+     24,
+     610,
+     56
+    ],
+    "ko": "신하의 충성",
+    "cover": [
+     248,
+     242,
+     229
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     212,
+     56,
+     610,
+     142
+    ],
+    "ko": "얼굴빛을 잘 읽는 아비빠라까는 왕의 남모를 슬픔을 알아차렸습니다. 주인에게 충성스러운 그는 남몰래 찾아가 말했습니다. “근심의 까닭을 압니다. 괴로워하지 마십시오. 제 손으로 그녀를 받아 주십시오. 그녀는 대왕께 드리는 저의 선물입니다.”",
+    "cover": [
+     248,
+     243,
+     229
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/13-Unmadayanti-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     106,
+     290,
+     152
+    ],
+    "ko": "왕의 거절",
+    "cover": [
+     248,
+     245,
+     229
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     58,
+     152,
+     290,
+     348
+    ],
+    "ko": "왕이 거절했습니다.\n“아니다, 그럴 수는 없다. 나는 내가 죽지 않는 몸이 아님을 안다. 악행은 남몰래 해도 마른풀을 태우는 불처럼 마음을 태운다. 지혜로운 이는 결코 그런 일을 하지 않는다.”",
+    "cover": [
+     247,
+     244,
+     227
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/13-Unmadayanti-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     500,
+     104,
+     740,
+     156
+    ],
+    "ko": "아무도 모른다는 말",
+    "cover": [
+     246,
+     242,
+     224
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     500,
+     156,
+     740,
+     346
+    ],
+    "ko": "“두려워 마십시오.” 아비빠라까가 재촉했습니다. “이것은 우리 둘 사이의 일이니 아무도 알 필요가 없습니다. 대왕께서 비난받지 않으실 것입니다. 남편인 제가 기꺼이 드리는데 무슨 죄가 되겠습니까?”",
+    "cover": [
+     246,
+     241,
+     222
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/13-Unmadayanti-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     278,
+     272,
+     524,
+     302
+    ],
+    "ko": "보이지 않는 증인들",
+    "cover": [
+     245,
+     241,
+     221
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     278,
+     302,
+     524,
+     438
+    ],
+    "ko": "“그만!” 왕이 외쳤습니다. “누가 아무도 모르게 악행을 저지르겠는가? 남몰래 독을 먹는 것과 같다. 눈 맑은 천신들과 거룩한 수행자들이 반드시 본다. 나는 바른 법을 거스를 수 없다.”",
+    "cover": [
+     244,
+     240,
+     219
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/13-Unmadayanti-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     262,
+     298,
+     290
+    ],
+    "ko": "필사의 제안",
+    "cover": [
+     241,
+     238,
+     216
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     290,
+     298,
+     418
+    ],
+    "ko": "“그러면 그녀에게 기녀로 살라 명하겠습니다.” 아비빠라까가 말했습니다. “그러면 죄 없이 구하실 수 있습니다.”\n“미쳤느냐?” 왕이 대답했습니다. “죄 없는 아내를 버리면 이 세상과 다음 세상에서 피할 수 없는 슬픔을 겪으리라.”",
+    "cover": [
+     242,
+     238,
+     213
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/13-Unmadayanti-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     36,
+     552,
+     72
+    ],
+    "ko": "황소와 소 떼",
+    "cover": [
+     209,
+     226,
+     227
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     250,
+     72,
+     552,
+     176
+    ],
+    "ko": "“백성은 다스리는 이의 행실에 기댄다. 소들이 황소의 발자국을 따라가듯 백성은 왕을 본받는다. 나는 백성의 지도자요 무리의 황소다. 경건한 이의 길을 걸어야 한다.”",
+    "cover": [
+     239,
+     239,
+     225
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/13-Unmadayanti-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     576,
+     84,
+     784,
+     160
+    ],
+    "ko": "한결같음의 승리",
+    "cover": [
+     249,
+     247,
+     234
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     576,
+     160,
+     784,
+     406
+    ],
+    "ko": "왕의 한결같음에 마음이 풀린 아비빠라까가 절했습니다. “이 백성은 참으로 복이 많습니다. 대왕께는 ‘위대한’이라는 이름이 빛나는 장식입니다.”\n\n덕 있는 이는 슬픔에 병들어도 비천한 이의 길을 따르지 않습니다.",
+    "cover": [
+     249,
+     247,
+     234
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
