@@ -43,12 +43,10 @@ Jataka 046-The-Folly-of-the-Monkeys 13 장
 Jataka 049-The-Lucky-Star 14 장
 Jataka 050-The-Kings-Stratagem 15 장
 Jatakamala 01-Tigress 15 장
-Light-of-Asia 05-Light-of-Asia 15 장
-Light-of-Asia 06-Light-of-Asia 15 장
-Light-of-Asia 07-Light-of-Asia 15 장
-Light-of-Asia 08-Light-of-Asia 15 장
-자동 검수: 문제 의심 26 곳
-R2 에 올림: 679 개 / 한글판 이야기 255 편
+검수 Jatakamala/02-Sibi 11번 그림 상자1 [자리] 한글이 원래 글 자리(283,299-583,373)에서 벗어남 (678,327)
+Jatakamala 02-Sibi 15 장
+자동 검수: 문제 의심 27 곳
+R2 에 올림: 589 개 / 한글판 이야기 256 편
 새 그림책: 올린 그림 0 장
 공개 주소 확인: 200 1160954바이트
 이야기 Jataka/001-The-Waterless-Desert {'pdf': 14366579, 'zip': 14101218, 'n': 15}
@@ -71,14 +69,10 @@ R2 에 올림: 679 개 / 한글판 이야기 255 편
 이야기 Jataka/050-The-Kings-Stratagem {'pdf': 19093680, 'zip': 18828023, 'n': 15}
 책 Jataka {'pdf': 496507842, 'pdfs': 50584101, 'zip': 496098081, 'stories': 32, 'n': 422}
 이야기 Jatakamala/01-Tigress {'pdf': 13636352, 'zip': 13350617, 'n': 15}
-책 Jatakamala {'pdf': 13615280, 'pdfs': 1394358, 'zip': 13351657, 'stories': 1, 'n': 15}
-이야기 Light-of-Asia/05-Light-of-Asia {'pdf': 8184406, 'zip': 7922132, 'n': 15}
-이야기 Light-of-Asia/06-Light-of-Asia {'pdf': 15020843, 'zip': 14758292, 'n': 15}
-이야기 Light-of-Asia/07-Light-of-Asia {'pdf': 15015111, 'zip': 14753081, 'n': 15}
-이야기 Light-of-Asia/08-Light-of-Asia {'pdf': 13484030, 'zip': 13221311, 'n': 15}
-책 Light-of-Asia {'pdf': 84635311, 'pdfs': 10941834, 'zip': 84336816, 'stories': 8, 'n': 118}
-내려받기 파일: 26 묶음 새로 만듦
-글로 보기: 255 이야기
+이야기 Jatakamala/02-Sibi {'pdf': 14064251, 'zip': 13776156, 'n': 15}
+책 Jatakamala {'pdf': 27396741, 'pdfs': 2827743, 'zip': 27128344, 'stories': 2, 'n': 30}
+내려받기 파일: 22 묶음 새로 만듦
+글로 보기: 256 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
