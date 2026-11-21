@@ -1,0 +1,234 @@
+[
+ {
+  "img": "images/06-Upasiva-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     116,
+     560,
+     250
+    ],
+    "ko": "우빠시와의 질문:\n큰 거센 물을 건너다",
+    "cover": null,
+    "align": "left",
+    "em": 42,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     436,
+     74,
+     772,
+     372
+    ],
+    "ko": "“의지할 것 없이\n홀로는 큰 존재의\n거센 물을 건널 수\n없습니다. 눈 있는\n분이시여, 건너갈\n의지처를\n말씀해 주십시오.”",
+    "cover": null,
+    "align": "right",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     326,
+     36,
+     772,
+     288
+    ],
+    "ko": "“아무것도 없음을 바라보며\n마음챙겨 거센 물을 건너라.\n감각적 쾌락을 버리고\n쓸데없는 말을 삼가며\n괴로움의 끝을 살펴라.”\n— 부처님",
+    "cover": null,
+    "align": "right",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     360,
+     76,
+     772,
+     380
+    ],
+    "ko": "“모든 탐욕을 여의고\n아무것도 없음에 의지하여\n가장 높은 해탈에 마음을\n둔 이는 떠나지 않고\n그곳에 머물겠습니까?”\n우빠시와가 아나함에\n대해 여쭈었습니다.",
+    "cover": null,
+    "align": "right",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     338,
+     76,
+     772,
+     370
+    ],
+    "ko": "“모든 감각적 쾌락에\n탐욕을 여의고\n아무것도 없음에 의지하여\n가장 높은 해탈에 마음을\n둔 이는 이 세상으로\n돌아오지 않고\n그곳에 머문다.”",
+    "cover": null,
+    "align": "right",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     320,
+     30,
+     772,
+     164
+    ],
+    "ko": "“눈 있는 분이시여, 그가 그곳에\n여러 해 머문다면, 바로 그곳에서\n시원해지고 해탈하겠습니까,",
+    "cover": null,
+    "align": "right",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     160,
+     772,
+     250
+    ],
+    "ko": "아니면 그의 의식이\n사라지겠습니까?”",
+    "cover": null,
+    "align": "right",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     136,
+     36,
+     594,
+     292
+    ],
+    "ko": "“바람에 꺼진 불꽃이\n가라앉아 헤아릴 수\n없게 되듯, 정신의 몸에서\n풀려난 성자는 가라앉아\n헤아릴 수 없게 된다.”",
+    "cover": null,
+    "align": "right",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     306,
+     774,
+     376
+    ],
+    "ko": "“가라앉은 이는 없는 것입니까,\n아니면 영원히 건강한 것입니까?”",
+    "cover": null,
+    "align": "right",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     276,
+     376,
+     774,
+     436
+    ],
+    "ko": "우빠시와는 단멸(웃체다)이나\n영원한 삶(삿사따)이라는 생각을 붙잡습니다.",
+    "cover": null,
+    "align": "right",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     32,
+     28,
+     672,
+     146
+    ],
+    "ko": "“가라앉은 이에게는 잴 것이 없다.\n모든 것이 완전히 없어지면\n말의 길도 모두 없어진다.”",
+    "cover": null,
+    "align": "left",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     356,
+     40,
+     770,
+     100
+    ],
+    "ko": "피안으로 가는 길:",
+    "cover": null,
+    "align": "left",
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     356,
+     150,
+     796,
+     410
+    ],
+    "ko": "1. 거센 물 (존재)\n\n2. 의지처 (ākiñcaññāyatana, 무소유처)\n\n3. 풀려남\n\n4. 형성되지 않은 것 (잴 수 없음)",
+    "cover": null,
+    "align": "left",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

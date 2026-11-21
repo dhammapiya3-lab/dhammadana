@@ -1,0 +1,262 @@
+[
+ {
+  "img": "images/07-Nanda-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     50,
+     440,
+     166
+    ],
+    "ko": "난다의 질문:\n거센 물을 건너다",
+    "cover": null,
+    "align": "left",
+    "em": 38,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     40,
+     170,
+     400,
+     226
+    ],
+    "ko": "밖의 수행에서 안의 해탈로",
+    "cover": null,
+    "align": "left",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Nanda-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     416,
+     116,
+     760,
+     350
+    ],
+    "ko": "고행자 난다가 묻습니다.\n\n성자는 많이 아는 것으로\n정해집니까, 아니면\n엄격하게 사는\n삶으로 정해집니까?",
+    "cover": null,
+    "align": "left",
+    "em": 25,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Nanda-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     24,
+     300,
+     104
+    ],
+    "ko": "부처님께서 성자를 새로 정하십니다.\n전통이나 견해가 아니라\n안의 고요함으로.",
+    "cover": null,
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     530,
+     104,
+     770,
+     146
+    ],
+    "ko": "• 무리 짓지 않음",
+    "cover": null,
+    "align": "left",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     530,
+     204,
+     770,
+     246
+    ],
+    "ko": "• 괴로움이 없음",
+    "cover": null,
+    "align": "left",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     530,
+     306,
+     770,
+     348
+    ],
+    "ko": "• 바람이 없음",
+    "cover": null,
+    "align": "left",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Nanda-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     424,
+     24,
+     778,
+     170
+    ],
+    "ko": "난다는 계율과 서원, 그리고\n길한 징조를 가리킵니다.\n\n이런 방식에 엄격히 묶인 이들은\n태어남과 늙음을 건넜습니까?",
+    "cover": null,
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Nanda-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     24,
+     360,
+     170
+    ],
+    "ko": "부처님께서 답하십니다. 아니다.\n\n그들이 아무리 엄격히 절제해도\n이런 밖의 의지처는 뗏목이 아니라\n닻이 되니, 거센 물을 건너지 못한다.",
+    "cover": null,
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Nanda-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     24,
+     370,
+     156
+    ],
+    "ko": "난다는 절망합니다.\n\n가장 엄격한 고행자들도 태어남과\n늙음에 덮여 있다면, 세상에서 누가\n건넌 적이 있습니까?",
+    "cover": null,
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Nanda-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     24,
+     350,
+     156
+    ],
+    "ko": "부처님께서 참된 거센 물을 밝히십니다.\n\n그 강은 늙어 감이라는 몸의 일이\n아니라, 안에서 움켜쥐는 갈애의\n급류다.",
+    "cover": null,
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Nanda-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     24,
+     372,
+     156
+    ],
+    "ko": "청정은 덜어 내는 것입니다.\n\n번뇌를 여의려면 본 것, 들은 것,\n계율과 서원에 기대는 마음을\n완전히 버려야 한다.",
+    "cover": null,
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Nanda-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     24,
+     330,
+     156
+    ],
+    "ko": "청정이라는 착각\n\n견해와 길한 징조와\n계율과 서원에 기댐.\n결과: 태어남에 덮임.",
+    "cover": null,
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     460,
+     24,
+     772,
+     156
+    ],
+    "ko": "피안\n\n갈애를 완전히 알고, 기댐을\n버리고, 번뇌를 여읨.\n결과: 거센 물을 건넘.",
+    "cover": null,
+    "align": "right",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Nanda-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     24,
+     390,
+     180
+    ],
+    "ko": "난다가 기뻐합니다.\n\n참된 집착 여읨이 설해졌습니다!\n갈애를 완전히 알고 밖의 의지처를\n내려놓으면 거센 물을 건넙니다.",
+    "cover": null,
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
