@@ -1,0 +1,713 @@
+[
+ {
+  "img": "images/11-Sakra-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     370,
+     640,
+     404
+    ],
+    "ko": "“삭까 이야기”",
+    "cover": [
+     249,
+     243,
+     229
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     50,
+     404,
+     750,
+     448
+    ],
+    "ko": "고귀한 이의 연민은 역경도, 왕권의 눈부심도 누그러뜨리지 못합니다.\n연민(karuṇā)의 자따까",
+    "cover": [
+     246,
+     238,
+     221
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sakra-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     12,
+     66,
+     282,
+     136
+    ],
+    "ko": "천신들의 왕",
+    "cover": [
+     245,
+     236,
+     217
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     12,
+     136,
+     282,
+     372
+    ],
+    "ko": "보살은 삭까로 태어나 하늘과 땅을 다스렸습니다. 천신들의 왕다운 영화를 누렸지만 그 행복이 마음을 교만으로 물들이지 않았습니다. 여전히 베풀고, 자신을 다스리고, 연민했습니다.\n\n“천신들의 왕의 영화는 더욱 빛났다… 새로 칠한 궁전이 달빛에 더 빛나듯.”",
+    "cover": [
+     244,
+     236,
+     217
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sakra-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     548,
+     66,
+     790,
+     136
+    ],
+    "ko": "아수라들의 시기",
+    "cover": [
+     244,
+     235,
+     216
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     548,
+     136,
+     790,
+     360
+    ],
+    "ko": "아수라들은 삭까가 누리는 명성과 놀라운 행복을 견딜 수 없었습니다. 시기심에 사로잡혀 코끼리와 전차와 기마병의 큰 군대를 이끌고 그에게 맞서 진군했습니다.\n\n그들은 위풍당당하게 진을 쳤고, 그 소리는 사나운 바다처럼 무시무시했습니다.",
+    "cover": [
+     242,
+     233,
+     213
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sakra-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     62,
+     282,
+     132
+    ],
+    "ko": "황금 전차",
+    "cover": [
+     242,
+     234,
+     214
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     28,
+     132,
+     282,
+     358
+    ],
+    "ko": "바른 법을 따르는 삭까였지만 백성을 지키려 싸울 채비를 했습니다. 보석으로 꾸미고 아라한의 모습을 그린 깃발을 단 황금 전차에 올랐습니다.\n\n날카롭게 벼린 불타는 무기들이 전차 양옆에서 번쩍였습니다.",
+    "cover": [
+     241,
+     233,
+     213
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sakra-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     48,
+     562,
+     82
+    ],
+    "ko": "바닷가의 격돌",
+    "cover": [
+     239,
+     230,
+     204
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     248,
+     82,
+     562,
+     194
+    ],
+    "ko": "대사는 바다 끝 경계에서 아수라의 군대와 맞섰습니다. 겁 많은 이의 굳셈을 무너뜨리는 싸움이었습니다.\n\n양쪽 코끼리가 서로 달려드는 모습은… 세상이 무너지는 때의 바람에 산들이 휩쓸리는 듯한 끔찍한 광경이었습니다.",
+    "cover": [
+     240,
+     231,
+     205
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sakra-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     66,
+     274,
+     130
+    ],
+    "ko": "화살의 폭풍",
+    "cover": [
+     240,
+     232,
+     209
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     56,
+     130,
+     274,
+     248
+    ],
+    "ko": "날카로운 화살이 두 군대 위로 날아 머리와 방패를 가리지 않고 맞혔습니다. 북소리와 무기 부딪는 소리에 하늘이 흔들렸습니다.",
+    "cover": [
+     239,
+     231,
+     209
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     566,
+     362,
+     756,
+     408
+    ],
+    "ko": "멈춰라! 그렇게는 안 돼!\n여기다! 조심해! 쳐라!",
+    "cover": [
+     240,
+     232,
+     210
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sakra-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     36,
+     566,
+     72
+    ],
+    "ko": "“전열이 무너지다”",
+    "cover": [
+     243,
+     227,
+     195
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     36,
+     72,
+     566,
+     148
+    ],
+    "ko": "아수라의 불타는 칼에 겁먹은 삭까의 군대는 달아났습니다. 천신들의 왕만 홀로 전장에 남아 전차 하나로 적의 무리를 막아섰습니다.",
+    "cover": [
+     244,
+     231,
+     203
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sakra-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     400,
+     340,
+     500,
+     380
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     270,
+     404,
+     310
+    ],
+    "ko": "물러남",
+    "cover": [
+     239,
+     230,
+     204
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     310,
+     404,
+     410
+    ],
+    "ko": "마부 마딸리는 천신들이 달아나고 아수라들이 승리에 기세등등한 것을 보고 전차를 돌려 물러났습니다.\n“오랜만에 마침내 천신들을 이기고 있는 저 적의 무리가 바로 뒤에 있습니다.”",
+    "cover": [
+     240,
+     231,
+     205
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sakra-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     36,
+     424,
+     72
+    ],
+    "ko": "“목화나무”",
+    "cover": [
+     238,
+     223,
+     188
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     36,
+     72,
+     424,
+     236
+    ],
+    "ko": "오르막을 오르던 삭까는 전차 끌채가 향하는 바로 그 길목, 목화나무에 놓인 독수리 둥지들을 보았습니다.\n“둥지마다 아직 날개도 나지 않은 새끼들이 있다. 이 둥지들이 떨어져 부서지지 않도록 전차를 몰아라.”",
+    "cover": [
+     242,
+     230,
+     202
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sakra-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     396,
+     52,
+     624,
+     78
+    ],
+    "ko": "불가능한 선택",
+    "cover": [
+     241,
+     226,
+     196
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     396,
+     78,
+     624,
+     240
+    ],
+    "ko": "마딸리가 경고했습니다. “아수라 무리가 우리를 따라잡을 것입니다. 전차를 돌리는 것밖에는 새들을 구할 길이 없습니다.”\n\n전차를 돌리면 곧장 적의 몽둥이 속으로 들어갑니다. 계속 가면 죄 없는 생명을 죽입니다.",
+    "cover": [
+     243,
+     230,
+     203
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sakra-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     316,
+     790,
+     360
+    ],
+    "ko": "연민의 승리",
+    "cover": [
+     231,
+     213,
+     178
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     36,
+     360,
+     790,
+     432
+    ],
+    "ko": "“그 가엾은 겁먹은 새끼들을 죽이고 비난과 치욕 속에 사느니, 차라리 아수라 우두머리들의 무서운 몽둥이에 맞아 죽는 편이 낫다.” 삭까는 전차를 돌리라고 명했습니다.",
+    "cover": [
+     235,
+     219,
+     185
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sakra-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     216,
+     26,
+     566,
+     64
+    ],
+    "ko": "돌아섬",
+    "cover": [
+     243,
+     228,
+     198
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     216,
+     64,
+     566,
+     204
+    ],
+    "ko": "마딸리는 명을 따르겠다며, 천 마리 말이 끄는 수레를 돌려 쫓아오는 적과 정면으로 마주했습니다. 홀로 적에게 얼굴을 돌린 한 사람이, 뜻밖의 영웅다운 용기로 승리자들의 교만을 꺾을 수 있습니다.",
+    "cover": [
+     244,
+     230,
+     202
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sakra-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     244,
+     26,
+     556,
+     58
+    ],
+    "ko": "패주",
+    "cover": [
+     241,
+     226,
+     193
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     244,
+     58,
+     556,
+     154
+    ],
+    "ko": "그의 용기와 갑작스러운 반격을 본 적들은 두려움에 사로잡혔습니다. 원군이나 함정이 있다고 여긴 것입니다. 그들의 대열은 혼란 속에 무너졌고, 아수라들은 다시 모일 생각도 못 하고 달아났습니다.",
+    "cover": [
+     242,
+     228,
+     197
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sakra-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     28,
+     564,
+     62
+    ],
+    "ko": "왕의 귀환",
+    "cover": [
+     239,
+     223,
+     188
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     236,
+     62,
+     564,
+     156
+    ],
+    "ko": "무너진 적군을 본 천신들은 용기를 얻어 돌아왔습니다. 그들은 왕께 경배했습니다. 승리의 빛으로 찬란하고 아름다운 삭까는 조용히 자기 도성으로 돌아갔습니다.",
+    "cover": [
+     240,
+     225,
+     190
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-Sakra-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     22,
+     650,
+     58
+    ],
+    "ko": "바른 법의 경계",
+    "cover": [
+     246,
+     235,
+     214
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     150,
+     58,
+     650,
+     150
+    ],
+    "ko": "덕 있는 이는 목숨이 위태로워도, 바다가 제 경계를 넘지 못하듯 자기의 바른 행실을 넘어서지 못합니다.\nDhammo have rakkhati dhammacāriṃ.\n법은 참으로 법을 행하는 이를 지켜 줍니다.",
+    "cover": [
+     247,
+     238,
+     221
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
