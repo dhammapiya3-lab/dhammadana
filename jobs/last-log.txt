@@ -1,29 +1,85 @@
-Light-of-Asia 01-Light-of-Asia 15 장
-Light-of-Asia 02-Light-of-Asia 15 장
-Light-of-Asia 03-Light-of-Asia 14 장
-Light-of-Asia 04-Light-of-Asia 14 장
+검수 Jataka/001-The-Waterless-Desert 06번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 2px)
+검수 Jataka/001-The-Waterless-Desert 13번 그림 상자2 [자리] 한글 글(2151,1214)이 상자 점(1762,1051)에서 멀리 그려짐
+Jataka 001-The-Waterless-Desert 15 장
+Jataka 002-The-Well-of-Perseverance 15 장
+검수 Jataka/003-The-Golden-Bowl 02번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 4px)
+검수 Jataka/003-The-Golden-Bowl 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 6px)
+검수 Jataka/003-The-Golden-Bowl 05번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+검수 Jataka/003-The-Golden-Bowl 07번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 6px)
+검수 Jataka/003-The-Golden-Bowl 08번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 3px)
+Jataka 003-The-Golden-Bowl 14 장
+검수 Jataka/004-The-Dead-Mouse 01번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 1px)
+검수 Jataka/004-The-Dead-Mouse 04번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+검수 Jataka/004-The-Dead-Mouse 09번 그림 상자2 [자리] 한글 글(2228,1294)이 상자 점(2030,1107)에서 멀리 그려짐
+검수 Jataka/004-The-Dead-Mouse 11번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 2px)
+Jataka 004-The-Dead-Mouse 15 장
+검수 Jataka/006-The-Water-Rakkhasa 02번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 4px)
+Jataka 006-The-Water-Rakkhasa 15 장
+검수 Jataka/010-Bliss-of-Renunciation 08번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+Jataka 010-Bliss-of-Renunciation 14 장
+검수 Jataka/011-The-Wisdom-of-Lakkhana 04번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 1px)
+Jataka 011-The-Wisdom-of-Lakkhana 10 장
+검수 Jataka/014-The-Wind-Deer 02번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 4px)
+Jataka 014-The-Wind-Deer 9 장
+검수 Jataka/018-The-Sacrificial-Goat 06번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+Jataka 018-The-Sacrificial-Goat 14 장
+검수 Jataka/023-The-Noble-Warhorse 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+Jataka 023-The-Noble-Warhorse 14 장
+검수 Jataka/026-The-State-Elephant 10번 그림 상자2 [자리] 한글이 원래 글 자리(1178,1205-1275,1254)에서 벗어남 (836,1239)
+Jataka 026-The-State-Elephant 13 장
+검수 Jataka/032-The-Peacocks-Dance 08번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+Jataka 032-The-Peacocks-Dance 12 장
+검수 Jataka/033-The-Quails-and-the-Net 01번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+검수 Jataka/033-The-Quails-and-the-Net 09번 그림 상자2 [자리] 한글 글(1343,693)이 상자 점(1167,538)에서 멀리 그려짐
+Jataka 033-The-Quails-and-the-Net 14 장
+검수 Jataka/040-The-Fiery-Pit 04번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+Jataka 040-The-Fiery-Pit 12 장
+검수 Jataka/044-The-Son-and-the-Mosquito 01번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+검수 Jataka/044-The-Son-and-the-Mosquito 04번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 5px)
+Jataka 044-The-Son-and-the-Mosquito 13 장
+검수 Jataka/046-The-Folly-of-the-Monkeys 06번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 3px)
+검수 Jataka/046-The-Folly-of-the-Monkeys 09번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 3px)
+Jataka 046-The-Folly-of-the-Monkeys 13 장
+Jataka 049-The-Lucky-Star 14 장
+Jataka 050-The-Kings-Stratagem 15 장
+Jatakamala 01-Tigress 15 장
 Light-of-Asia 05-Light-of-Asia 15 장
 Light-of-Asia 06-Light-of-Asia 15 장
 Light-of-Asia 07-Light-of-Asia 15 장
 Light-of-Asia 08-Light-of-Asia 15 장
-자동 검수: 문제 의심 0 곳
-R2 에 올림: 283 개 / 한글판 이야기 253 편
-새 그림책 올림: New-Jataka/002-Vannupatha-en 24 장
-새 그림책: 올린 그림 24 장
-공개 주소 확인: 200 523200바이트
-이야기 Light-of-Asia/01-Light-of-Asia {'pdf': 9487270, 'zip': 9226241, 'n': 15}
-이야기 Light-of-Asia/02-Light-of-Asia {'pdf': 9052276, 'zip': 8789851, 'n': 15}
-이야기 Light-of-Asia/03-Light-of-Asia {'pdf': 8837639, 'zip': 8575572, 'n': 14}
-이야기 Light-of-Asia/04-Light-of-Asia {'pdf': 7356014, 'zip': 7094221, 'n': 14}
+자동 검수: 문제 의심 26 곳
+R2 에 올림: 679 개 / 한글판 이야기 255 편
+새 그림책: 올린 그림 0 장
+공개 주소 확인: 200 1160954바이트
+이야기 Jataka/001-The-Waterless-Desert {'pdf': 14366579, 'zip': 14101218, 'n': 15}
+이야기 Jataka/002-The-Well-of-Perseverance {'pdf': 17830035, 'zip': 17561912, 'n': 15}
+이야기 Jataka/003-The-Golden-Bowl {'pdf': 15802528, 'zip': 15537540, 'n': 14}
+이야기 Jataka/004-The-Dead-Mouse {'pdf': 17555670, 'zip': 17292235, 'n': 15}
+이야기 Jataka/006-The-Water-Rakkhasa {'pdf': 19117089, 'zip': 18850670, 'n': 15}
+이야기 Jataka/010-Bliss-of-Renunciation {'pdf': 17049739, 'zip': 16783352, 'n': 14}
+이야기 Jataka/011-The-Wisdom-of-Lakkhana {'pdf': 12221958, 'zip': 11957988, 'n': 10}
+이야기 Jataka/014-The-Wind-Deer {'pdf': 9634404, 'zip': 9372985, 'n': 9}
+이야기 Jataka/018-The-Sacrificial-Goat {'pdf': 16415175, 'zip': 16144792, 'n': 14}
+이야기 Jataka/023-The-Noble-Warhorse {'pdf': 17058559, 'zip': 16793264, 'n': 14}
+이야기 Jataka/026-The-State-Elephant {'pdf': 16557032, 'zip': 16290863, 'n': 13}
+이야기 Jataka/032-The-Peacocks-Dance {'pdf': 16829701, 'zip': 16565275, 'n': 12}
+이야기 Jataka/033-The-Quails-and-the-Net {'pdf': 15960702, 'zip': 15692547, 'n': 14}
+이야기 Jataka/046-The-Folly-of-the-Monkeys {'pdf': 15980287, 'zip': 15708131, 'n': 13}
+이야기 Jataka/040-The-Fiery-Pit {'pdf': 12668799, 'zip': 12405055, 'n': 12}
+이야기 Jataka/044-The-Son-and-the-Mosquito {'pdf': 15070387, 'zip': 14800970, 'n': 13}
+이야기 Jataka/049-The-Lucky-Star {'pdf': 16475296, 'zip': 16210422, 'n': 14}
+이야기 Jataka/050-The-Kings-Stratagem {'pdf': 19093680, 'zip': 18828023, 'n': 15}
+책 Jataka {'pdf': 496507842, 'pdfs': 50584101, 'zip': 496098081, 'stories': 32, 'n': 422}
+이야기 Jatakamala/01-Tigress {'pdf': 13636352, 'zip': 13350617, 'n': 15}
+책 Jatakamala {'pdf': 13615280, 'pdfs': 1394358, 'zip': 13351657, 'stories': 1, 'n': 15}
 이야기 Light-of-Asia/05-Light-of-Asia {'pdf': 8184406, 'zip': 7922132, 'n': 15}
 이야기 Light-of-Asia/06-Light-of-Asia {'pdf': 15020843, 'zip': 14758292, 'n': 15}
 이야기 Light-of-Asia/07-Light-of-Asia {'pdf': 15015111, 'zip': 14753081, 'n': 15}
 이야기 Light-of-Asia/08-Light-of-Asia {'pdf': 13484030, 'zip': 13221311, 'n': 15}
 책 Light-of-Asia {'pdf': 84635311, 'pdfs': 10941834, 'zip': 84336816, 'stories': 8, 'n': 118}
-내려받기 파일: 9 묶음 새로 만듦
-글로 보기: 254 이야기
+내려받기 파일: 26 묶음 새로 만듦
+글로 보기: 255 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
-34-Woodpecker.htm: 그림 15 상자 0 상자밖글 403
 34-Woodpecker
