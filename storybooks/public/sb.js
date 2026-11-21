@@ -37,12 +37,23 @@
     };
     let tm; q.addEventListener('input', () => { clearTimeout(tm); tm = setTimeout(run, 150); });
     q.addEventListener('focus', load, { once: true });
-    document.querySelectorAll('.qex .qtog').forEach(x => x.onclick = () => { // 묶음마다 '더 보기' ↔ '접기' (운영자 요청, 2026-11-21)
-      const open = x.classList.toggle('on'), row = x.parentNode; row.querySelectorAll('.qmore').forEach(b => b.hidden = !open);
-      // 펼치면 가나다 순, 접으면 처음(많이 나오는) 순서로 (운영자 요청, 2026-11-21)
-      const bs = [...row.querySelectorAll('button[data-q]')].sort(open ? (a, b) => a.textContent.localeCompare(b.textContent, 'ko') : (a, b) => a.dataset.i - b.dataset.i);
-      bs.forEach(b => row.insertBefore(b, x));
-      x.textContent = open ? '－ 접기' : '＋ 더 보기'; });
+    // 찾기 단추: 접어 두면 묶음마다 한 줄만(들어가는 만큼, 많이 나오는 순서), 펼치면 전체를 가나다 순 (운영자 요청, 2026-11-21)
+    const fitRow = row => {
+      const tog = row.querySelector('.qtog'); if (!tog) return;
+      const bs = [...row.querySelectorAll('button[data-q]')].sort((a, b) => a.dataset.i - b.dataset.i);
+      bs.forEach(b => row.insertBefore(b, tog));
+      if (tog.classList.contains('on')) { bs.sort((a, b) => a.textContent.localeCompare(b.textContent, 'ko')).forEach(b => { b.hidden = false; row.insertBefore(b, tog); }); tog.hidden = false; return; }
+      bs.forEach(b => b.hidden = false); tog.hidden = true;
+      const top = bs[0].offsetTop, over = () => bs.some(b => !b.hidden && b.offsetTop > top + 4);
+      if (!over()) return;
+      tog.hidden = false;
+      for (let k = bs.length - 1; k > 0 && (over() || tog.offsetTop > top + 4); k--) bs[k].hidden = true;
+    };
+    const rows = [...document.querySelectorAll('.qex .qrow')];
+    const fitAll = () => rows.forEach(fitRow);
+    fitAll(); document.fonts?.ready.then(fitAll);
+    let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(fitAll, 120); });
+    rows.forEach(row => { const x = row.querySelector('.qtog'); if (x) x.onclick = () => { const open = x.classList.toggle('on'); x.textContent = open ? '－ 접기' : '＋ 더 보기'; fitRow(row); }; });
     document.querySelectorAll('.qex button:not(.qtog)').forEach(x => x.onclick = () => { q.value = x.dataset.q; run(); document.getElementById('sres').scrollIntoView({ behavior: 'smooth', block: 'start' }); });
     document.getElementById('qReset').onclick = () => { q.value = ''; run(); q.focus(); };
   }
