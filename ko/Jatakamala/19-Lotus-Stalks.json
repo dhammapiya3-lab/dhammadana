@@ -1,0 +1,717 @@
+[
+ {
+  "img": "images/19-Lotus-Stalks-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     60,
+     690,
+     116
+    ],
+    "ko": "연뿌리 이야기",
+    "cover": [
+     247,
+     245,
+     234
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     110,
+     116,
+     690,
+     152
+    ],
+    "ko": "진실과 집착 없음을 보여 주는 자따까",
+    "cover": [
+     247,
+     245,
+     233
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-Lotus-Stalks-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     520,
+     50,
+     790,
+     100
+    ],
+    "ko": "출리",
+    "cover": [
+     248,
+     245,
+     238
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     520,
+     100,
+     790,
+     400
+    ],
+    "ko": "이름난 바라문 집안에 태어난 보살은 큰 덕을 지녔습니다. 부모가 세상을 떠나자 헤어짐의 아픔을 깨달았습니다.\n“죽음은 우리의 원수다.” 그는 친척들에게 말했습니다. “죽음이 우리를 붙잡기 전에 해탈의 길을 걷자.”\n일곱 형제와 누이 하나, 충실한 하인 셋이 함께 재산을 버리고 숲의 삶을 택했습니다.",
+    "cover": [
+     247,
+     244,
+     236
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-Lotus-Stalks-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     306,
+     700,
+     350
+    ],
+    "ko": "호수의 고요",
+    "cover": [
+     249,
+     246,
+     239
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     100,
+     350,
+     700,
+     436
+    ],
+    "ko": "그들은 맑고 푸른 호숫가에 잎으로 오두막을 지었습니다. 홀로 지내며 명상하고 닷새에 한 번만 모여 법을 들었습니다. 여종은 연뿌리를 캐어 잎 위에 나누어 놓고 나무를 두드려 식사 때를 알렸습니다. 수행자들은 마음을 모으려고 서로 마주치지도 않고 말없이 제 몫을 가져갔습니다.",
+    "cover": [
+     249,
+     246,
+     238
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-Lotus-Stalks-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     516,
+     54,
+     790,
+     98
+    ],
+    "ko": "삭까의 시험",
+    "cover": [
+     247,
+     245,
+     233
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     516,
+     98,
+     790,
+     400
+    ],
+    "ko": "그들의 덕이 천신들의 왕 삭까의 눈길을 끌었습니다. 집착 없음을 시험하려고 삭까는 보살 몫의 연뿌리를 사라지게 했습니다.\n보살은 “누가 내 음식을 가져갔구나” 하고 성내지 않고 명상으로 돌아갔습니다.\n이 일이 닷새 동안 이어졌습니다. 그는 야위었지만 평온은 흔들리지 않았습니다.",
+    "cover": [
+     246,
+     244,
+     232
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-Lotus-Stalks-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     40,
+     764,
+     88
+    ],
+    "ko": "의심의 그림자",
+    "cover": [
+     247,
+     244,
+     231
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     88,
+     764,
+     200
+    ],
+    "ko": "야윈 그를 본 형제들은 놀랐습니다. 보살이 끼니를 잃은 일을 말하자, 모두 자기들 가운데 도둑이 있을까 부끄러워했습니다. 결백을 밝히려고 저마다 도둑에게 내리는 저주의 맹세를 했습니다. 그런데 이 수행자들에게 가장 무서운 저주는 세속의 성공이었습니다.",
+    "cover": [
+     247,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-Lotus-Stalks-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     234,
+     576,
+     264
+    ],
+    "ko": "재물이라는 짐",
+    "cover": [
+     246,
+     246,
+     236
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     262,
+     264,
+     576,
+     406
+    ],
+    "ko": "첫째 형제의 맹세: “그대의 연뿌리를 가져간 자는 부잣집과 마음에 드는 아내와 많은 자식을 얻기를!”\n둘째 형제의 맹세: “세상에 깊이 집착하여 꽃다발과 전단 가루로 꾸미고, 노는 자식들에 둘러싸이기를!”",
+    "cover": [
+     246,
+     245,
+     235
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-Lotus-Stalks-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     230,
+     572,
+     260
+    ],
+    "ko": "“권력의 덫”",
+    "cover": [
+     244,
+     245,
+     233
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     262,
+     260,
+     572,
+     404
+    ],
+    "ko": "셋째 형제의 맹세: “도둑이 농부가 되어 아이들 재잘거림을 즐기며 세상을 떠날 생각은 하지 않기를!”\n넷째 형제의 맹세: “가져간 자가 온 땅의 군주가 되어, 떨며 머리 숙이는 왕들의 섬김을 받기를!”",
+    "cover": [
+     244,
+     244,
+     231
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-Lotus-Stalks-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     446,
+     278,
+     790,
+     318
+    ],
+    "ko": "명성의 사슬",
+    "cover": [
+     248,
+     244,
+     232
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     446,
+     318,
+     790,
+     434
+    ],
+    "ko": "다섯째 형제의 맹세: “만트라를 지닌 왕의 가문 사제가 되어 왕에게 극진한 대접을 받기를!”\n여섯째 형제의 맹세: “베다에 밝은 이름난 스승이 되어, 몰려드는 사람들의 숭배를 누리기를!”",
+    "cover": [
+     247,
+     244,
+     231
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-Lotus-Stalks-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     324,
+     260,
+     790,
+     300
+    ],
+    "ko": "신분의 저주",
+    "cover": [
+     246,
+     244,
+     232
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     324,
+     300,
+     790,
+     406
+    ],
+    "ko": "벗의 맹세: “왕에게서 부유한 마을을 얻고, 욕망을 다스리지 못한 채 죽기를!”\n누이의 맹세: “도둑이 빼어나게 아름다운 여인이 되어, 천 명의 여인을 거느린 왕의 첫째 왕비가 되기를!”",
+    "cover": [
+     245,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-Lotus-Stalks-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     446,
+     108,
+     790,
+     178
+    ],
+    "ko": "탐식의 독",
+    "cover": [
+     247,
+     245,
+     232
+    ],
+    "align": "center",
+    "em": 32,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     446,
+     178,
+     790,
+     370
+    ],
+    "ko": "여종의 맹세: “그대의 연뿌리에 마음을 둔 그 여인은 경건한 이들을 아랑곳하지 않고 남몰래 혼자 단것을 즐겨 먹으며, 맛난 음식을 얻으면 크게 기뻐하기를!”",
+    "cover": [
+     247,
+     244,
+     232
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-Lotus-Stalks-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     26,
+     600,
+     76
+    ],
+    "ko": "숲의 증인들",
+    "cover": [
+     250,
+     247,
+     240
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     392,
+     94,
+     614,
+     144
+    ],
+    "ko": "코끼리: “사슬에 묶여 몰이꾼에게 찔리며 이 숲에서 사람들 사이로 끌려가기를!”",
+    "cover": [
+     250,
+     248,
+     239
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     266,
+     170,
+     440,
+     222
+    ],
+    "ko": "약카: “도둑이 절을 짓되 날마다 창 하나씩 내야 하기를!”",
+    "cover": [
+     250,
+     247,
+     239
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     320,
+     234,
+     470,
+     314
+    ],
+    "ko": "원숭이: “양철 목걸이를 차고 막대기로 맞으며 뱀 앞에서 재주를 부리기를!”",
+    "cover": [
+     250,
+     247,
+     239
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-Lotus-Stalks-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     450,
+     120,
+     790,
+     176
+    ],
+    "ko": "성자의 판결",
+    "cover": [
+     245,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     450,
+     176,
+     790,
+     332
+    ],
+    "ko": "자신도 집착 없음을 보이려고 보살이 마지막으로 말했습니다. “연뿌리를 갖고 있으면서 ‘없어졌다’고 거짓말한 자는 마음껏 세속의 즐거움을 얻고 재가자로 죽기를!”",
+    "cover": [
+     245,
+     242,
+     230
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-Lotus-Stalks-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     36,
+     310,
+     76
+    ],
+    "ko": "드러난 신",
+    "cover": [
+     247,
+     244,
+     233
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     24,
+     76,
+     310,
+     432
+    ],
+    "ko": "그들이 즐거움을 이토록 싫어하는 데 놀란 삭까가 모습을 드러냈습니다.\n“그대들을 시험하려고 내가 연뿌리를 감추었소.” 그가 털어놓았습니다. “이런 성자들을 지닌 세상은 얼마나 복된가.”\n그가 연뿌리를 돌려주자 보살이 꾸짖었습니다. “천신들의 왕이여, 우리는 그대의 광대가 아닙니다. 선인(isi)들을 놀리는 것은 옳지 않습니다.”",
+    "cover": [
+     247,
+     244,
+     233
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-Lotus-Stalks-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     80,
+     790,
+     140
+    ],
+    "ko": "신의 사죄",
+    "cover": [
+     245,
+     242,
+     235
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     440,
+     140,
+     790,
+     362
+    ],
+    "ko": "삭까는 제자가 스승에게 하듯 용서를 빌었습니다.\n“지혜롭지 못한 이는 허물을 짓고 지혜로운 이는 용서하는 것이 마땅합니다. 마음에 성내지 마소서.”\n성자를 달랜 뒤 삭까는 사라졌습니다.",
+    "cover": [
+     244,
+     242,
+     235
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-Lotus-Stalks-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     60,
+     620,
+     104
+    ],
+    "ko": "물들지 않는 연꽃",
+    "cover": [
+     62,
+     70,
+     110
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     230,
+     104,
+     620,
+     212
+    ],
+    "ko": "떠남의 행복을 아는 이는 세속의 즐거움을 해로움이요 속임이요 덫으로 봅니다. 진흙에서 피어나도 진흙에 물들지 않는 연꽃처럼, 지혜로운 이는 세상의 욕망에 물들지 않습니다.",
+    "cover": [
+     62,
+     70,
+     110
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ }
+]
