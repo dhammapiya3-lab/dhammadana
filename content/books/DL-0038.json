@@ -114,10 +114,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "file",
-        "url": "pdf/DL-0038/DL-0038_개정판.pdf",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0038/DL-0038_개정판.pdf"
       },
       "pdf_print": {
         "mode": "none",
