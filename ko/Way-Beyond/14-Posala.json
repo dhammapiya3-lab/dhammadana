@@ -1,0 +1,135 @@
+[
+ {
+  "img": "images/14-Posala-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     44,
+     500,
+     212
+    ],
+    "ko": "뽀살라의 질문\n고행자 뽀살라가 부처님께 다가가\n물질의 세계와 인식의 한계를 넘어선\n길을 여쭈었습니다.",
+    "cover": null,
+    "align": "left",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Posala-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     60,
+     732,
+     162
+    ],
+    "ko": "“지난 일을 밝혀 주시고 의심을 끊으셨으며\n모든 것에 완전하신 흔들림 없는 분께\n질문을 가지고 왔습니다.”",
+    "cover": null,
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Posala-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     330,
+     652,
+     428
+    ],
+    "ko": "“물질에 대한 인식이 사라지고 안팎으로\n‘아무것도 없다’고 보는 이,\n무소유처에 든 이…”",
+    "cover": null,
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Posala-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     190,
+     600,
+     270
+    ],
+    "ko": "“사꺄족이신 분이시여, 그의 앎을 여쭙니다.\n그런 이는 어떻게 더 나아갑니까?”",
+    "cover": null,
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Posala-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     160,
+     620,
+     296
+    ],
+    "ko": "부처님께서 답하셨습니다. “여래는\n의식이 머무는 모든 곳을 안다. 그가 어디에\n서 있고, 무엇에 마음을 두며,\n어디로 가고 있는지를 안다.”",
+    "cover": null,
+    "align": "left",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Posala-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     322,
+     730,
+     404
+    ],
+    "ko": "“아무것도 없음의 근원을 알고, 그는\n이 경지를 즐기는 것이 족쇄임을 깊이 본다.”",
+    "cover": null,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Posala-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     48,
+     596,
+     176
+    ],
+    "ko": "“이것을 꿰뚫어 보는 것,\n이것이 그에게 참된 앎이다.\n완성을 이루고 저 너머로 간\n바라문에게.”",
+    "cover": null,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

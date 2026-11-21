@@ -1,0 +1,154 @@
+[
+ {
+  "img": "images/15-Mogharaja-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     80,
+     560,
+     176
+    ],
+    "ko": "모가라자의 질문\n빠라야나 왁가를 다시 들려줌",
+    "cover": null,
+    "align": "left",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Mogharaja-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     226,
+     460,
+     396
+    ],
+    "ko": "모가라자가 두 번 사꺄족께 여쭈었으나\n눈 있는 분은 답하지 않으셨습니다.\n고행자가 아직 준비되지 않은 줄\n아시고, 부처님께서는 그가\n무르익기를 기다리셨습니다.",
+    "cover": null,
+    "align": "left",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Mogharaja-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     500,
+     64,
+     772,
+     204
+    ],
+    "ko": "세 번째로 다가가\n모가라자가 말했습니다.\n“이 세상, 저 세상,\n신들과 함께하는 범천의 세계—\n명성 높은 고따마께서 이를\n어떻게 보시는지 모르겠습니다.”",
+    "cover": null,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Mogharaja-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     256,
+     14,
+     772,
+     94
+    ],
+    "ko": "“그래서 뛰어난 눈을 지니신 분께\n질문을 가지고 왔습니다.”",
+    "cover": null,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Mogharaja-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     302,
+     610,
+     418
+    ],
+    "ko": "“세상을 어떻게 바라보아야\n죽음의 왕이 그를 보지 못합니까?”",
+    "cover": null,
+    "align": "left",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Mogharaja-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     158,
+     650,
+     296
+    ],
+    "ko": "부처님께서 답하셨습니다.\n“모가라자여, 늘 마음챙기며\n세상을 공한 것으로 보아라.”",
+    "cover": null,
+    "align": "center",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Mogharaja-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     380,
+     166,
+     774,
+     290
+    ],
+    "ko": "“자아가 있다는 그릇된\n견해를 없애면, 이렇게\n죽음을 넘어서리라.”",
+    "cover": null,
+    "align": "center",
+    "em": 25,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-Mogharaja-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     356,
+     702,
+     442
+    ],
+    "ko": "“세상을 이렇게 바라볼 때\n죽음의 왕은 그를 보지 못한다.”",
+    "cover": null,
+    "align": "center",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
