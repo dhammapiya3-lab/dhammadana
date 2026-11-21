@@ -1,0 +1,677 @@
+[
+ {
+  "img": "images/20-Treasurer-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     22,
+     760,
+     68
+    ],
+    "ko": "재정관 이야기",
+    "cover": [
+     249,
+     246,
+     235
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     68,
+     760,
+     160
+    ],
+    "ko": "근거 없는 명성이 덕 있는 이에게 박차가 되는 이야기\n뜻밖의 소문 덕에 아직 얻지 못한 거룩함을 얻게 된 사람이, 오해를 바로잡기보다 그 명성에 걸맞게 살기로 한 이야기입니다.",
+    "cover": [
+     249,
+     246,
+     235
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     22,
+     760,
+     66
+    ],
+    "ko": "재가자의 보배",
+    "cover": [
+     249,
+     244,
+     233
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     66,
+     760,
+     150
+    ],
+    "ko": "보살은 학식과 겸손한 행실로 이름난 왕의 재정관이었습니다. 큰 재산을 지닌 그는 보시로 재물의 복을 사방에 흐르게 했습니다. 거룩한 학문으로 빛났고 장사에서도 정직한 방식을 사랑했습니다.",
+    "cover": [
+     250,
+     246,
+     236
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     22,
+     760,
+     66
+    ],
+    "ko": "잘못 들은 속삭임",
+    "cover": [
+     249,
+     246,
+     241
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     66,
+     760,
+     156
+    ],
+    "ko": "장모가 재정관이 딸을 잘 대해 주느냐고 묻자, 부끄럼 많고 얌전한 아내가 속삭였습니다. “그이 같은 덕행은 출가자에게서도 보기 드물어요.” 귀가 어두운 어머니는 ‘출가자’라는 말과 부끄러운 듯한 속삭임만 알아들었습니다.",
+    "cover": [
+     249,
+     245,
+     237
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     22,
+     760,
+     66
+    ],
+    "ko": "번지는 소문",
+    "cover": [
+     248,
+     246,
+     239
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     66,
+     760,
+     150
+    ],
+    "ko": "“왜 세상을 버렸단 말인가?” 어머니가 울부짖었습니다. “젊고 잘생기고 왕의 총애를 받는데 어찌 숲의 삶에 뜻을 두었는가?” 그 울음에 집안사람들과 이웃들은 재정관이 정말 세상을 버렸다고 믿었습니다.",
+    "cover": [
+     249,
+     245,
+     235
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     22,
+     760,
+     66
+    ],
+    "ko": "집으로 돌아오다",
+    "cover": [
+     248,
+     247,
+     236
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     66,
+     760,
+     150
+    ],
+    "ko": "궁에서 돌아오던 재정관은 문 앞에서 슬피 우는 사람들을 만났습니다. 하인이 소식을 전했습니다. “어찌 된 일인지는 모르나, 나리께서 부유한 집을 버리고 출가하셨다는 소문이 돌았습니다.”",
+    "cover": [
+     249,
+     244,
+     232
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     22,
+     760,
+     66
+    ],
+    "ko": "마음속 박차",
+    "cover": [
+     249,
+     247,
+     235
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     66,
+     760,
+     196
+    ],
+    "ko": "그는 부끄러움에 충격을 받았습니다. 사람들이 그만한 덕이 있다고 믿는데도 집에 매달린다면 그는 비겁한 사람이 될 것이었습니다.\n“이런 높은 평을 얻고도… 집에 매달린다면 나는 비겁한 자가 아니겠는가? 그 평을 이루어 그들에게 보답하리라.” (게송 10)",
+    "cover": [
+     248,
+     245,
+     232
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     22,
+     760,
+     66
+    ],
+    "ko": "왕을 뵙다",
+    "cover": [
+     249,
+     248,
+     234
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     66,
+     760,
+     150
+    ],
+    "ko": "그는 곧바로 궁으로 돌아갔습니다. “세상을 버리고자 합니다.” 그가 아뢰었습니다. 왕은 놀랐습니다. 그런 지위의 사람이 까닭 없이 떠나려는 이유를 알 수 없었습니다.",
+    "cover": [
+     248,
+     244,
+     230
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     22,
+     760,
+     66
+    ],
+    "ko": "왕의 제안",
+    "cover": [
+     248,
+     248,
+     234
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     66,
+     760,
+     200
+    ],
+    "ko": "왕은 재정관이 돈이 모자라거나 남모를 슬픔이 있는 줄 알고 간청했습니다.\n“무슨 괴로움이 있소… 마치 내가 재물이나 권세로 그대의 괴로움을 덜어 주지 못하는 것처럼? 돈이 필요하면 내 곁에서 가져가시오.” (게송 13)",
+    "cover": [
+     248,
+     245,
+     229
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     22,
+     760,
+     72
+    ],
+    "ko": "명성의 철학",
+    "cover": [
+     248,
+     245,
+     236
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     72,
+     760,
+     190
+    ],
+    "ko": "재정관은 높은 평가에는 그만큼 행해야 한다고 설명했습니다. 명성에 못 미치는 것은 말라 버린 우물과 같습니다.\n“사람이 거룩하다고 이름나면… 바로 그 부끄러움이 그로 하여금 그 덕의 짐을 지게 해야 한다.” (게송 18)",
+    "cover": [
+     248,
+     244,
+     236
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     22,
+     760,
+     66
+    ],
+    "ko": "재물이라는 덫",
+    "cover": [
+     248,
+     245,
+     234
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     66,
+     760,
+     190
+    ],
+    "ko": "그는 왕의 금을 사양했습니다. 다툼의 뿌리를 어찌 평화로운 삶에 가져가겠습니까?\n“가족과 재산은 다툼의 뿌리다… 성나 머리를 쳐든 검은 두건의 뱀과 같다.” (게송 21)",
+    "cover": [
+     247,
+     244,
+     233
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     22,
+     760,
+     66
+    ],
+    "ko": "정이라는 장벽",
+    "cover": [
+     248,
+     245,
+     233
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     66,
+     760,
+     140
+    ],
+    "ko": "벗들과 친척들이 길을 막고 눈물을 흘리며 ‘부드러운 폭력’으로 그를 붙잡았습니다. 그들은 집에 사는 삶이 가장 거룩한 삶이라고 우겼습니다.",
+    "cover": [
+     248,
+     244,
+     230
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     22,
+     760,
+     66
+    ],
+    "ko": "벗에 대한 기대",
+    "cover": [
+     248,
+     246,
+     232
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     66,
+     760,
+     192
+    ],
+    "ko": "그는 그들의 눈물을 되물었습니다. 정말 그를 사랑한다면, 헤어짐이 슬픔의 참된 까닭이라면 그들도 함께 갈 것입니다.\n“나와 헤어지는 것이 슬픔의 까닭이라면, 왜 그들은 나와 함께 숲에서 살지 않는가?” (게송 26)",
+    "cover": [
+     247,
+     244,
+     230
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     22,
+     760,
+     66
+    ],
+    "ko": "길의 외로움",
+    "cover": [
+     248,
+     244,
+     232
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     66,
+     760,
+     202
+    ],
+    "ko": "그는 벗들이 괴로운 이에게는 몰려들지만 더 높은 덕을 찾는 이는 버린다는 것을 깨달았습니다.\n“누가 괴로움에 빠지면… 벗들이 곁에 있다. 그러나 숲으로 떠나는 이에게는, 아! 길벗 하나 얻기도 이토록 어렵구나!” (게송 31)",
+    "cover": [
+     247,
+     244,
+     232
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     22,
+     760,
+     66
+    ],
+    "ko": "떠남",
+    "cover": [
+     248,
+     244,
+     232
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     66,
+     760,
+     152
+    ],
+    "ko": "벗들의 간청을 뒤로하고 그는 고행의 숲으로 들어갔습니다. 세상이 그에게 걸었던 믿음을 참되게 하려는 마음에 이끌려, 부유한 재정관은 참된 수행자가 되었습니다.",
+    "cover": [
+     248,
+     243,
+     230
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/20-Treasurer-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     22,
+     760,
+     66
+    ],
+    "ko": "가르침",
+    "cover": [
+     249,
+     245,
+     231
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     66,
+     760,
+     136
+    ],
+    "ko": "근거 없는 덕의 명성은 덕 있는 이에게 힘찬 박차가 됩니다. 남이 자신에게 있다고 여기는 덕을 실제로 이루도록 힘써야 합니다.",
+    "cover": [
+     248,
+     243,
+     229
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
