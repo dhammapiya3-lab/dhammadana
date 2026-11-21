@@ -28,7 +28,9 @@
   "originals": [],
   "braille": [],
   "series": "",
-  "main": [],
+  "main": [
+    "테라와다 불교사"
+  ],
   "topics": [],
   "description": "2013년 담마스쿨 2학기에 설하신 '테라와다 불교사' 법문을 녹취하여 엮은 법문집입니다.",
   "author_intro": "한국테라와다불교 초대 이사장 아짠 빤냐와로 마하테로는 1983년 해인사로 출가해 뿐냐산또(도성) 큰스님을 은사로 사미계(수계 법명: 진용)를 수지했다. 1987년부터 부처님 원음을 찾아 스리랑카와 태국에서 수행하다가 1988년 4월 10일 태국 왓람쁭 사원 아짠 통 큰스님을 은사로 테라와다 비구계를 받았다.\n\n현재 울주 붓다의길따라 선원장이자 (사)한국테라와다불교 상가 의장으로서 테라와다불교 전법과 수행지도에 전념하고 있다.",
@@ -53,10 +55,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "pdf/DL-0039/DL-0039_초판.pdf"
+        "url": "pdf/DL-0039/DL-0039_초판.pdf",
+        "site": "",
+        "created": ""
       },
       "pdf_print": {
         "mode": "none",
@@ -77,10 +79,10 @@
         "created": ""
       },
       "hwp": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "hwp/DL-0039/DL-0039_초판.hwp"
+        "url": "hwp/DL-0039/DL-0039_초판.hwp",
+        "site": "",
+        "created": ""
       },
       "reader": false,
       "sources": [
