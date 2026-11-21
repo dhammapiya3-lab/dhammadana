@@ -1,0 +1,206 @@
+[
+ {
+  "img": "images/12-Bhadravuddha-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     166,
+     520,
+     290
+    ],
+    "ko": "피안으로 가는 길:\n바드라우다의 질문\n빠라야나 왁가를 다시 들려줌",
+    "cover": null,
+    "align": "left",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Bhadravuddha-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     270,
+     30,
+     676,
+     136
+    ],
+    "ko": "집을 떠난 분,\n갈애를 끊은 분,",
+    "cover": null,
+    "align": "center",
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     330,
+     320,
+     690,
+     416
+    ],
+    "ko": "흔들림 없는 분,\n즐김을 버린 분…",
+    "cover": null,
+    "align": "center",
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Bhadravuddha-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     336,
+     774,
+     436
+    ],
+    "ko": "…거센 물을 건넌 분, 자유로운 분, 사변을 떠난 분,\n슬기로운 분, 그분께 저는 청합니다.",
+    "cover": null,
+    "align": "center",
+    "em": 29,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Bhadravuddha-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     330,
+     36,
+     770,
+     216
+    ],
+    "ko": "여러 나라에서 갖가지\n사람들이 와서 당신의\n말씀을 기다리고 있습니다,\n영웅이시여…",
+    "cover": null,
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Bhadravuddha-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     306,
+     352,
+     776,
+     420
+    ],
+    "ko": "…그들에게 가르침을 바르게 설명해 주십시오.\n당신께서는 이 가르침을 깨달으셨으니.",
+    "cover": null,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Bhadravuddha-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     36,
+     340,
+     198
+    ],
+    "ko": "위와 아래와 그 사이\n가운데에서 갈애에\n대한 모든 집착을\n없애야 한다…",
+    "cover": null,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Bhadravuddha-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     36,
+     360,
+     198
+    ],
+    "ko": "…세상에서 무엇에\n집착하든, 바로 그것으로\n마라가 사람을\n따라다니기 때문이다.",
+    "cover": null,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Bhadravuddha-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     26,
+     36,
+     390,
+     206
+    ],
+    "ko": "그러므로 이것을 알아\n마음챙기는 비구는\n세상의 어떤 것에도\n집착하지 말아야 한다…",
+    "cover": null,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Bhadravuddha-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     36,
+     370,
+     236
+    ],
+    "ko": "…집착과 붙잡음이라는\n것으로 이 사람들이\n죽음의 영역에 매달려\n있음을 보면서.",
+    "cover": null,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-Bhadravuddha-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     36,
+     380,
+     160
+    ],
+    "ko": "거센 물을 건너려면\n마라가 붙잡을 것을\n하나도 남기지 말아야 한다.",
+    "cover": null,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

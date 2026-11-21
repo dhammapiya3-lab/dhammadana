@@ -1,0 +1,323 @@
+[
+ {
+  "img": "images/13-Udaya-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     36,
+     470,
+     196
+    ],
+    "ko": "우다야의 질문\n피안으로 가는 길\n무명을 깨뜨림에 관한 문답",
+    "cover": null,
+    "align": "left",
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Udaya-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     126,
+     566,
+     298
+    ],
+    "ko": "우다야가 부처님께 다가갑니다.\n\n“티끌 없고 번뇌 없이\n할 일을 마치고 앉아 계신\n선정 수행자께 질문을\n가지고 왔습니다.”",
+    "cover": null,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Udaya-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     370,
+     140,
+     730,
+     318
+    ],
+    "ko": "“앎으로 얻는\n해탈, 무명을\n깨뜨림을\n말씀해 주십시오.”",
+    "cover": null,
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Udaya-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     40,
+     420,
+     194
+    ],
+    "ko": "부처님께서 답하십니다.\n“해탈은 감각적 욕망과 근심을\n버리고, 해태를 떨치고,\n후회를 억누르는 데서 시작한다.”",
+    "cover": null,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Udaya-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     130,
+     304,
+     670,
+     418
+    ],
+    "ko": "이것은 평온과 마음챙김을 통한 청정으로\n이어지며, 그에 앞서 모든 것이\n무상하다는 깨달음이 있습니다.",
+    "cover": null,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Udaya-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     370,
+     40,
+     724,
+     190
+    ],
+    "ko": "우다야가 묻습니다.\n“세상은 무엇에 묶여 있습니까?\n무엇으로 돌아다닙니까?\n무엇을 완전히 버려야\n열반이 있습니까?”",
+    "cover": null,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Udaya-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     44,
+     366,
+     176
+    ],
+    "ko": "부처님께서 답하십니다.\n“세상은 즐김에 묶여 있고,\n생각으로 돌아다닌다.”",
+    "cover": null,
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Udaya-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     44,
+     320,
+     170
+    ],
+    "ko": "“갈애를\n완전히 버리면\n열반이라는 것이\n있다.”",
+    "cover": null,
+    "align": "center",
+    "em": 23,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Udaya-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     172,
+     590,
+     272
+    ],
+    "ko": "우다야가 마지막으로 묻습니다.\n“마음챙기며 사는 이에게\n의식은 어떻게 소멸합니까?”",
+    "cover": null,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Udaya-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     326,
+     686,
+     432
+    ],
+    "ko": "“안으로도 밖으로도 느낌을 즐기지 않는 이,\n이렇게 마음챙기며 사는 이에게\n의식은 참으로 소멸한다.”",
+    "cover": null,
+    "align": "center",
+    "em": 23,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Udaya-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     280,
+     286,
+     650,
+     374
+    ],
+    "ko": "이 으뜸가는 놓아 버림으로\n다시 태어나게 하는 의식이\n꺼집니다.",
+    "cover": null,
+    "align": "left",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     280,
+     378,
+     560,
+     418
+    ],
+    "ko": "윤회는 끊어집니다.",
+    "cover": null,
+    "align": "left",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Udaya-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     26,
+     730,
+     110
+    ],
+    "ko": "피안으로 가는 길",
+    "cover": [
+     247,
+     247,
+     242
+    ],
+    "align": "center",
+    "em": 44,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     20,
+     196,
+     182,
+     292
+    ],
+    "ko": "문제:\n묶인 세상",
+    "cover": null,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     216,
+     196,
+     380,
+     292
+    ],
+    "ko": "원인:\n즐김과 갈애",
+    "cover": null,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     408,
+     196,
+     588,
+     292
+    ],
+    "ko": "처방:\n무상과 마음챙김",
+    "cover": null,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     620,
+     196,
+     780,
+     292
+    ],
+    "ko": "결과:\n열반",
+    "cover": null,
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Udaya-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     46,
+     690,
+     170
+    ],
+    "ko": "앎으로 갈애를 버립니다.\n무명은 깨집니다.\n피안으로 가는 길이 열립니다.",
+    "cover": null,
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
