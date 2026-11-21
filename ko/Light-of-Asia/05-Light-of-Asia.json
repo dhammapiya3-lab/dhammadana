@@ -1,0 +1,587 @@
+[
+ {
+  "img": "images/Light-of-Asia-05-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     36,
+     580,
+     90
+    ],
+    "ko": "아시아의 빛",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 40,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     260,
+     92,
+     540,
+     120
+    ],
+    "ko": "제5권",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     24,
+     124,
+     360,
+     210
+    ],
+    "ko": "라자가하 둘레에는 아름다운 다섯 산이\n빔비사라 왕의 숲속 도성을 지킵니다.\n웨바라 산은 레몬그라스로 푸르고, 그늘진\n따뽀완은 검은 바위를 비추며, 동쪽에는\n보석의 산 라뜨나기리가 솟아 있습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     466,
+     124,
+     792,
+     212
+    ],
+    "ko": "발에 닳은 판석을 깐 굽은 길이 젖빛 흰\n바위 줄기와 정글 꽃밭을 지나갑니다.\n이곳에선 발걸음을 살며시. 산 어깨가\n들무화과로 덮인 동굴 위로 드리운 곳,\n넓은 이 땅 어디보다 소중하고 거룩한 곳.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-05-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     150,
+     212,
+     310
+    ],
+    "ko": "부처님께서는 여기 앉아\n뜨거운 여름과 퍼붓는\n비를 견디셨습니다.\n\n노란 가사를 입고\n걸식한 적은 음식을\n드시며, 행복을 위해\n태어난 그 고운 몸을\n단식과 치열한 탐구로\n다스리셨습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     576,
+     140,
+     792,
+     330
+    ],
+    "ko": "그분이 미동도 없이\n사유하시니, 겁 많은\n메추라기가 새끼들을\n발 사이로 데려갔습니다.\n타는 해도, 아래 도성의\n북소리도 알아채지\n않으셨습니다.\n\n그분은 생각의 실을\n예리하게 풀어내는 데\n온전히 잠겨 계셨습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-05-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     22,
+     660,
+     70
+    ],
+    "ko": "라뜨나기리 중턱에는 수척하고 슬픈 무리가 따로 살았습니다.\n이 요기들은 몸을 영혼의 적으로, 쓰라린 고통으로 길들일 짐승으로 여겼습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     60,
+     330,
+     370,
+     438
+    ],
+    "ko": "어떤 이는 밤낮으로 팔을 들고 서서\n관절이 죽은 나뭇가지처럼 굳었습니다.\n어떤 이는 못 박힌 신을 신고 걷거나\n부싯돌로 살을 그었습니다. 그런 고통이\n죄의 찌꺼기를 씻어 영혼을 영광의 하늘로\n날려 보내리라 바라면서.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     398,
+     720,
+     432
+    ],
+    "ko": "지옥이 해치는 것보다 더 세게 고통받다니.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-05-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     20,
+     380,
+     96
+    ],
+    "ko": "“크게 고통받는 분이여.” 왕자가 물었습니다.\n“이토록 괴로운 삶에 어찌 고통을 더합니까?”\n성자가 답했습니다. “고통은 더 큰 기쁨을 삽니다.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     410,
+     310,
+     790,
+     440
+    ],
+    "ko": "“저 구름은 바다에서 일었다.” 왕자가 답했습니다.\n“비로 내려 강으로 흘러 다시 바다로 돌아간다.\n지옥의 험한 장터에서 피로 하늘을 산다 해도\n거래가 끝나면 수고는 다시 시작된다.\n영혼을 사랑한다며 이 고운 몸의 집을 허물려는가?\n그 창으로 들어오는 빛으로 더 나은 길을 찾는데?”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-05-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     70,
+     400,
+     400
+    ],
+    "ko": "“오, 들의 꽃들이여!” 싯닷타가 말했습니다.\n“해를 향해 여린 얼굴을 돌리는 너희는\n아무도 온전한 삶을 놓치지 않고, 아무도\n행복한 아름다움을 망치지 않는구나.”\n\n“야자나무는 바람을 마시려 솟고, 앵무새와\n비둘기는 나무에서 즐겁게 산다.”\n\n“오직 사람만이 자기를 죽이며, 필요를\n끊어야 더 나아진다 여긴다. 피로 기른\n지혜가 자기를 괴롭힘에서 나오는구나.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-05-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     26,
+     390,
+     130
+    ],
+    "ko": "스승께서 말씀하실 때 바삐 걷는 발들의\n먼지가 불어왔습니다. 목동들이 빔비사라\n왕의 제사에 바칠 염소와 양 떼를\n몰고 오고 있었습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     340,
+     308,
+     794,
+     444
+    ],
+    "ko": "다리 저는 새끼 양이 피 흘리며 뒤처졌습니다.\n보살은 다정히 그 양을 목에 둘러업었습니다.\n“가엾은 어미 양아, 걱정 마라! 네가 가는 곳까지\n내가 네 짐을 지마. 저 동굴에 앉아 세상의 슬픔을\n지켜보는 것만큼, 한 짐승의 슬픔을 덜어 주는 것도\n좋으리라.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-05-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     16,
+     548,
+     130
+    ],
+    "ko": "한 여인이 몸을 깊이 숙여 절했습니다.\n“스승님! 제 아이가 뱀과 놀다가 이제\n창백하게 꼼짝도 않습니다. 거룩한 분이라\n들었습니다. 어떤 약이 아이 눈에 빛을\n되돌릴 수 있을지 말씀해 주십시오.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     420,
+     316,
+     790,
+     440
+    ],
+    "ko": "스승께서 부드러운 눈으로 바라보셨습니다.\n“그래, 누이여. 검은 겨자씨 한 똘라를\n구해 오너라. 다만, 아버지나 어머니나\n아이나 종이 죽은 적이 있는 집에서는\n받지 말아라.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-05-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     270,
+     240,
+     374
+    ],
+    "ko": "“집집마다 물었습니다.” 그녀가\n말했습니다. “그런데 산 이는 적고\n죽은 이는 많았습니다. 아무도\n죽지 않은 집은 한 집도\n찾지 못했습니다.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     560,
+     262,
+     790,
+     398
+    ],
+    "ko": "“누이여! 너는 그 쓰라린 약을\n찾았구나.” 스승께서 말씀하셨습니다.\n“모든 이가 함께 지는 슬픔은\n한 사람에게는 덜하다.”\n“나는 이런 눈물을 그치게 할\n비밀을 찾는다. 아이를 묻어 주어라.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-05-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     28,
+     560,
+     148
+    ],
+    "ko": "해가 강을 금빛으로 물들일 때 그들은\n도성에 들어섰습니다. 대장장이는 망치를,\n베 짜는 이는 베틀을, 서기는 두루마리를\n놓았습니다. 장터의 말다툼도 멈추고\n그 온화한 얼굴을 바라보았습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     190,
+     378,
+     610,
+     440
+    ],
+    "ko": "“저분은 누구지?” 여인들이 속삭였습니다. “삭까일까? 천신의 왕일까?”\n그러나 부처님께서는 생각하며 걸으셨습니다. “아, 목자 없이\n칼을 향해 눈먼 채 울며 가는 나의 모든 양들이여.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-05-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     34,
+     350,
+     80
+    ],
+    "ko": "왕의 제사당",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     16,
+     86,
+     206,
+     304
+    ],
+    "ko": "왕이 당에 서\n있었습니다.\n\n바라문들은 만뜨라를\n중얼거리며 불에\n버터기름과 향료를\n부었습니다.\n\n느릿하고 진한\n붉은 물줄기가\n연기를 내며\n흘렀습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     600,
+     52,
+     790,
+     330
+    ],
+    "ko": "얼룩 염소 한 마리가\n문자 풀에 묶여\n목을 늘인 채\n누워 있었습니다.\n\n한 사제가 중얼거렸습니다.\n‘두려운 신들이여,\n이것을 왕의 관처럼\n받으소서. 왕의 죄를\n이 염소에게 지우고\n불이 그것을 태우게\n하소서.’",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-05-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     312,
+     700,
+     380
+    ],
+    "ko": "“대왕이여, 치지 말게 하시오!”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     20,
+     382,
+     780,
+     448
+    ],
+    "ko": "부처님께서 제물의 끈을 살며시 푸셨으나 그 위엄에 아무도 막지 못했습니다. 그분은 누구나\n빼앗을 수 있으나 아무도 줄 수 없는 생명을 말씀하셨습니다. 모든 생명이 사랑하고\n지키려 애쓰는 생명, 가장 낮은 것에게도 놀랍고 소중하고 즐거운 생명을.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-05-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     40,
+     230,
+     80
+    ],
+    "ko": "보살",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     24,
+     92,
+     200,
+     170
+    ],
+    "ko": "“자비를 비는 사람이\n자기를 믿는 이들에게는\n자비가 없구나.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     600,
+     20,
+     790,
+     400
+    ],
+    "ko": "피로 영혼을 씻어\n깨끗이 할 수도 없다.\n\n저마다 홀로 서서\n우주의 정해진 셈을\n치른다. 그 셈은\n선에는 선으로,\n악에는 악으로 갚는다.\n\n되로 주면 되로 받는다.\n늘 지켜보고 알며\n어김없고 흔들림 없이\n모든 미래를 모든 과거의\n열매로 만든다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-05-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     8,
+     700,
+     64
+    ],
+    "ko": "아주 먼 옛날 나는 굶주린 암호랑이를 보았다. 젖이 말라 제 새끼를 잡아먹으려 했다.\n나는 생각했다. ‘내가 저를 먹이면 잃는 이는 나 말고 누구랴?’",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     80,
+     398,
+     720,
+     450
+    ],
+    "ko": "나는 기꺼이 제물이 되어 땅에 몸을 던졌다. 큰 고양이의 뜨거운 숨이 두려움 없는\n사랑의 마지막 숨과 섞였다. 끝까지 제 본성대로 행하는 사랑이 어찌 잃을 수 있으랴?",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-05-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     18,
+     122,
+     180,
+     300
+    ],
+    "ko": "사제들은 살육으로\n붉어진 손을 옷으로\n덮었습니다.\n왕은 절했습니다.\n부드러움의 힘이\n그들을 이겼습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     648,
+     24,
+     778,
+     336
+    ],
+    "ko": "온 나라에\n명이 내려져\n바위와 기둥에\n새겨졌습니다.\n\n“이제부터\n아무도 생명의\n피를 흘리지\n말라. 앎은\n자라고 생명은\n하나이며, 자비는\n자비로운 이에게\n오나니.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-05-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     56,
+     280,
+     124
+    ],
+    "ko": "빔비사라 왕이 간청했습니다.\n“저와 함께 머무소서!\n제 나라에 지혜를 가르치소서.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     450,
+     272,
+     790,
+     424
+    ],
+    "ko": "그러나 싯닷타가 답했습니다.\n“나는 법의 나라를 세우러 간다.\n그 빛은 여기서도, 몸이 쓰러질 때까지\n견디는 단식에서도 오지 않는다.”\n\n“나는 진리를 찾아 우루웰라로 간다.\n아직도 찾고 있고, 끝내 찾으리라.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
