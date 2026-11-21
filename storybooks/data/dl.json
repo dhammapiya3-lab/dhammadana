@@ -72,11 +72,11 @@
 "zip": 11986001
 },
 "Foremost-Laymen": {
-"n": 121,
-"pdf": 177746224,
-"pdfs": 18755127,
-"stories": 7,
-"zip": 177445807
+"n": 157,
+"pdf": 228694949,
+"pdfs": 24147216,
+"stories": 10,
+"zip": 228381612
 },
 "Foremost-Laymen/01-Tapussa-and-Bhallika": {
 "n": 14,
@@ -105,13 +105,28 @@
 },
 "Foremost-Laymen/06-Ugga": {
 "n": 15,
-"pdf": 21554160,
-"zip": 21275295
+"pdf": 21633119,
+"zip": 21354254
 },
 "Foremost-Laymen/07-Uggata": {
 "n": 13,
-"pdf": 19232584,
-"zip": 18954270
+"pdf": 19299057,
+"zip": 19020745
+},
+"Foremost-Laymen/08-Surambattha": {
+"n": 15,
+"pdf": 18539642,
+"zip": 18254995
+},
+"Foremost-Laymen/09-Jivaka": {
+"n": 11,
+"pdf": 21205201,
+"zip": 20369589
+},
+"Foremost-Laymen/10-Nakulapitu": {
+"n": 10,
+"pdf": 12446042,
+"zip": 12166117
 },
 "Foremost-Laywomen": {
 "n": 175,
@@ -167,10 +182,10 @@
 },
 "Foremost-Monks": {
 "n": 802,
-"pdf": 1121534741,
-"pdfs": 118138904,
+"pdf": 1121599321,
+"pdfs": 118156004,
 "stories": 38,
-"zip": 1120991892
+"zip": 1121056472
 },
 "Foremost-Monks/01-Kondanna": {
 "n": 38,
@@ -244,8 +259,8 @@
 },
 "Foremost-Monks/17-Sona-Kutikanna": {
 "n": 26,
-"pdf": 37386452,
-"zip": 37114607
+"pdf": 37451033,
+"zip": 37179187
 },
 "Foremost-Monks/18-Sivali": {
 "n": 15,
@@ -364,10 +379,10 @@
 },
 "Foremost-Nuns": {
 "n": 283,
-"pdf": 385703536,
-"pdfs": 40800199,
+"pdf": 385759403,
+"pdfs": 40811673,
 "stories": 13,
-"zip": 385350851
+"zip": 385406720
 },
 "Foremost-Nuns/01-Maha-Pajapati-Gotami": {
 "n": 30,
@@ -381,8 +396,8 @@
 },
 "Foremost-Nuns/03-Uppalavanna": {
 "n": 37,
-"pdf": 48945394,
-"zip": 48665212
+"pdf": 49001262,
+"zip": 48721081
 },
 "Foremost-Nuns/04-Patacara": {
 "n": 30,
@@ -436,170 +451,170 @@
 },
 "Jataka": {
 "n": 422,
-"pdf": 496144069,
-"pdfs": 50496763,
+"pdf": 496557548,
+"pdfs": 50595944,
 "stories": 32,
-"zip": 495734309
+"zip": 496147787
 },
 "Jataka/001-The-Waterless-Desert": {
 "n": 15,
-"pdf": 14360282,
-"zip": 14094920
+"pdf": 14366772,
+"zip": 14101411
 },
 "Jataka/002-The-Well-of-Perseverance": {
 "n": 15,
-"pdf": 17802706,
-"zip": 17534585
+"pdf": 17830035,
+"zip": 17561912
 },
 "Jataka/003-The-Golden-Bowl": {
 "n": 14,
-"pdf": 15793801,
-"zip": 15528813
+"pdf": 15809170,
+"zip": 15544182
 },
 "Jataka/004-The-Dead-Mouse": {
 "n": 15,
-"pdf": 17535492,
-"zip": 17272056
+"pdf": 17560165,
+"zip": 17296730
 },
 "Jataka/005-The-Measure-of-Rice": {
 "n": 14,
-"pdf": 17248064,
-"zip": 16984680
+"pdf": 17286887,
+"zip": 17023504
 },
 "Jataka/006-The-Water-Rakkhasa": {
 "n": 15,
-"pdf": 19125055,
-"zip": 18858633
+"pdf": 19133289,
+"zip": 18866869
 },
 "Jataka/009-The-Kings-Grey-Hair": {
 "n": 14,
-"pdf": 15468356,
-"zip": 15201491
+"pdf": 15479728,
+"zip": 15212862
 },
 "Jataka/010-Bliss-of-Renunciation": {
 "n": 14,
-"pdf": 17025857,
-"zip": 16759470
+"pdf": 17050814,
+"zip": 16784427
 },
 "Jataka/011-The-Wisdom-of-Lakkhana": {
 "n": 10,
-"pdf": 12222691,
-"zip": 11958722
+"pdf": 12221958,
+"zip": 11957988
 },
 "Jataka/012-The-Golden-Deer": {
 "n": 14,
-"pdf": 18814472,
-"zip": 18550255
+"pdf": 18826100,
+"zip": 18561883
 },
 "Jataka/014-The-Wind-Deer": {
 "n": 9,
-"pdf": 9629635,
-"zip": 9368217
+"pdf": 9635403,
+"zip": 9373984
 },
 "Jataka/018-The-Sacrificial-Goat": {
 "n": 14,
-"pdf": 16415314,
-"zip": 16144931
+"pdf": 16415928,
+"zip": 16145545
 },
 "Jataka/022-The-Teaching-of-the-Dog": {
 "n": 14,
-"pdf": 17745147,
-"zip": 17479947
+"pdf": 17729269,
+"zip": 17464070
 },
 "Jataka/023-The-Noble-Warhorse": {
 "n": 14,
-"pdf": 17034712,
-"zip": 16769417
+"pdf": 17058559,
+"zip": 16793264
 },
 "Jataka/026-The-State-Elephant": {
 "n": 13,
-"pdf": 16553604,
-"zip": 16287435
+"pdf": 16558930,
+"zip": 16292761
 },
 "Jataka/027-Elephant-and-Dog": {
 "n": 13,
-"pdf": 16869465,
-"zip": 16604634
+"pdf": 16858461,
+"zip": 16593629
 },
 "Jataka/028-Nandivisala": {
 "n": 12,
-"pdf": 14861683,
-"zip": 14593508
+"pdf": 14876817,
+"zip": 14608640
 },
 "Jataka/029-Grannys-Blackie": {
 "n": 12,
-"pdf": 13838909,
-"zip": 13571144
+"pdf": 13864515,
+"zip": 13596750
 },
 "Jataka/030-Deadly-Food": {
 "n": 11,
-"pdf": 13385711,
-"zip": 13116897
+"pdf": 13401646,
+"zip": 13132833
 },
 "Jataka/032-The-Peacocks-Dance": {
 "n": 12,
-"pdf": 16808978,
-"zip": 16544552
+"pdf": 16830913,
+"zip": 16566488
 },
 "Jataka/033-The-Quails-and-the-Net": {
 "n": 14,
-"pdf": 15934816,
-"zip": 15666662
+"pdf": 15960702,
+"zip": 15692547
 },
 "Jataka/034-The-Amorous-Fish": {
 "n": 13,
-"pdf": 15143340,
-"zip": 14874278
+"pdf": 15151635,
+"zip": 14882571
 },
 "Jataka/037-The-Senior-Partridge": {
 "n": 12,
-"pdf": 15747510,
-"zip": 15483665
+"pdf": 15743702,
+"zip": 15479858
 },
 "Jataka/039-Nanda-and-the-Hoard": {
 "n": 12,
-"pdf": 13817730,
-"zip": 13548312
+"pdf": 13819472,
+"zip": 13550053
 },
 "Jataka/040-The-Fiery-Pit": {
 "n": 12,
-"pdf": 12647276,
-"zip": 12383533
+"pdf": 12668799,
+"zip": 12405055
 },
 "Jataka/041-The-Unfortunate-Monk": {
 "n": 15,
-"pdf": 17954232,
-"zip": 17688340
+"pdf": 17992923,
+"zip": 17727032
 },
 "Jataka/043-The-Monk-and-the-Viper": {
 "n": 10,
-"pdf": 11142178,
-"zip": 10878886
+"pdf": 11178977,
+"zip": 10915687
 },
 "Jataka/044-The-Son-and-the-Mosquito": {
 "n": 13,
-"pdf": 15070772,
-"zip": 14801355
+"pdf": 15082330,
+"zip": 14812914
 },
 "Jataka/046-The-Folly-of-the-Monkeys": {
 "n": 13,
-"pdf": 15974526,
-"zip": 15702371
+"pdf": 15980287,
+"zip": 15708131
 },
 "Jataka/048-The-Rain-of-Ruin": {
 "n": 15,
-"pdf": 16679706,
-"zip": 16415226
+"pdf": 16723601,
+"zip": 16459122
 },
 "Jataka/049-The-Lucky-Star": {
 "n": 14,
-"pdf": 16483769,
-"zip": 16218896
+"pdf": 16475760,
+"zip": 16210886
 },
 "Jataka/050-The-Kings-Stratagem": {
 "n": 15,
-"pdf": 19104490,
-"zip": 18838833
+"pdf": 19097511,
+"zip": 18831854
 },
 "Pannasa": {
 "n": 803,
@@ -966,11 +981,11 @@
 "zip": 12422307
 },
 "Vinaya-Stories": {
-"n": 667,
-"pdf": 775466861,
-"pdfs": 78102787,
-"stories": 39,
-"zip": 774972387
+"n": 706,
+"pdf": 822209148,
+"pdfs": 82863592,
+"stories": 40,
+"zip": 821699435
 },
 "Vinaya-Stories/00-Veranja": {
 "n": 37,
@@ -999,8 +1014,8 @@
 },
 "Vinaya-Stories/05-Uposatha": {
 "n": 20,
-"pdf": 24718682,
-"zip": 24452966
+"pdf": 24733752,
+"zip": 24468036
 },
 "Vinaya-Stories/06-Rains": {
 "n": 12,
@@ -1014,8 +1029,8 @@
 },
 "Vinaya-Stories/08-Allowances": {
 "n": 14,
-"pdf": 16783594,
-"zip": 16513665
+"pdf": 16787495,
+"zip": 16517566
 },
 "Vinaya-Stories/09-Luxury": {
 "n": 12,
@@ -1164,7 +1179,12 @@
 },
 "Vinaya-Stories/38-First-Council": {
 "n": 41,
-"pdf": 45983069,
-"zip": 45711218
+"pdf": 46049224,
+"zip": 45777373
+},
+"Vinaya-Stories/39-Second-Council": {
+"n": 39,
+"pdf": 46913247,
+"zip": 46641335
 }
 }
