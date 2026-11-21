@@ -1,0 +1,677 @@
+[
+ {
+  "img": "images/14-Suparaga-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     284,
+     640,
+     358
+    ],
+    "ko": "숩빠라까 이야기\n진실의 힘을 보여 주는 자따까",
+    "cover": [
+     250,
+     231,
+     197
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     170,
+     358,
+     640,
+     422
+    ],
+    "ko": "북적이는 항구 바루깟차에서 상인들이 황금 땅으로 가는 위험한 항해를 준비합니다. 그들이 찾는 것은 뱃길잡이만이 아니라 축복입니다.",
+    "cover": [
+     249,
+     239,
+     218
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/14-Suparaga-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     46,
+     342,
+     106
+    ],
+    "ko": "뛰어난 뱃사람",
+    "cover": [
+     247,
+     248,
+     243
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     24,
+     106,
+     342,
+     404
+    ],
+    "ko": "대사 숩빠라까는 한때 세상에서 가장 솜씨 좋은 키잡이였습니다. 별과 물고기와 물빛을 알았습니다. 이제 늙어 눈이 어두워지고 힘도 빠졌지만 지혜는 끝이 없었습니다.",
+    "cover": [
+     246,
+     247,
+     242
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/14-Suparaga-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     474,
+     40,
+     784,
+     100
+    ],
+    "ko": "상인들의 간청",
+    "cover": [
+     247,
+     248,
+     242
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     474,
+     100,
+     784,
+     384
+    ],
+    "ko": "“어르신의 힘이 다한 것은 압니다.” 상인들이 털어놓았습니다. “그래도 어르신의 연꽃 같은 발에 닿은 먼지가 우리 배에 길상이 될 것입니다.”\n연민에 마음이 움직인 눈먼 보살은 키를 잡으러가 아니라 축복하러 배에 오르기로 했습니다.",
+    "cover": [
+     245,
+     246,
+     240
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/14-Suparaga-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     38,
+     346,
+     98
+    ],
+    "ko": "사파이어 빛 깊은 바다로",
+    "cover": [
+     247,
+     248,
+     242
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     98,
+     346,
+     362
+    ],
+    "ko": "육지가 보이지 않게 되자마자 거센 바람이 일었습니다. 사파이어 더미처럼 검푸른 바다가 세상이 무너지는 때의 땅처럼 들끓었습니다. 배는 폭풍에 밀려 낯선 바다로 하릴없이 떠내려갔습니다.",
+    "cover": [
+     245,
+     246,
+     240
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/14-Suparaga-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     446,
+     268,
+     790,
+     312
+    ],
+    "ko": "은빛 갑옷의 바다 (쿠라말라)",
+    "cover": [
+     244,
+     245,
+     237
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     446,
+     312,
+     790,
+     448
+    ],
+    "ko": "며칠을 떠돌자 물이 은빛으로 바뀌었습니다. 은빛 갑옷을 입은 전사처럼 말발굽 같은 코를 가진 이상한 존재들이 물결에서 놀았습니다. “이곳은 쿠라말라 바다다.” 숩빠라까가 경고했습니다. “우리는 뱃길에서 한참 벗어났다. 돌아가도록 해 보아야 한다.”",
+    "cover": [
+     245,
+     245,
+     239
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/14-Suparaga-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     26,
+     690,
+     74
+    ],
+    "ko": "우유의 바다 (다디말라)",
+    "cover": [
+     239,
+     240,
+     235
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     110,
+     74,
+     690,
+     196
+    ],
+    "ko": "바람은 그들을 더 멀리 밀었습니다. 바다는 고운 흰 비단을 두른 듯, 흐르는 달빛 같았습니다. 그 모습을 들은 숩빠라까가 말했습니다. “아, 이곳은 우유의 바다 다디말라다. 더 가는 것은 지혜롭지 않다.”",
+    "cover": [
+     241,
+     242,
+     235
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/14-Suparaga-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     12,
+     324,
+     412,
+     358
+    ],
+    "ko": "불의 바다 (악기말라)",
+    "cover": [
+     70,
+     30,
+     20
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     12,
+     358,
+     412,
+     440
+    ],
+    "ko": "이어서 물이 떠오르는 해처럼, 불의 바다처럼 타올랐습니다. “악기말라, 불 화환의 바다다.” 숩빠라까는 이름만 말하고 큰 위험은 뱃사람들에게 감추었습니다. “지금 돌아가는 것이 참으로 현명하겠다.”",
+    "cover": [
+     70,
+     30,
+     20
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Suparaga-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     30,
+     792,
+     70
+    ],
+    "ko": "깊은 바다의 풀밭",
+    "cover": [
+     40,
+     78,
+     66
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     440,
+     70,
+     792,
+     202
+    ],
+    "ko": "그들은 황옥처럼 빛나는 꾸사 풀의 바다를 지나 에메랄드빛 갈대의 바다 날라말라로 들어섰습니다. 숩빠라까가 깊은 한숨을 쉬었습니다. “너무 멀리 왔다. 세상 끝에 거의 다 왔다.”",
+    "cover": [
+     40,
+     78,
+     66
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Suparaga-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     114,
+     238,
+     184
+    ],
+    "ko": "암말 입의 심연",
+    "cover": [
+     244,
+     244,
+     239
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     184,
+     238,
+     398
+    ],
+    "ko": "대나무가 타닥타닥 터지는 듯한 소리가 귀를 찔렀습니다. 바닷물이 무시무시한 구렁으로 쏟아져 들어갔습니다. 죽음의 암말 입, 왈라바무카였습니다. “이곳은 아무도 돌아오지 못하는 곳이다.” 숩빠라까가 말했습니다.",
+    "cover": [
+     245,
+     245,
+     240
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/14-Suparaga-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     352,
+     760,
+     394
+    ],
+    "ko": "기도와 절망",
+    "cover": [
+     244,
+     244,
+     239
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     394,
+     760,
+     448
+    ],
+    "ko": "희망이 사라졌습니다. 뱃사람들은 울며 저마다 신의 이름을 불렀습니다. “지혜로운 분이시여, 구해 주십시오!” 그들은 숩빠라까에게 애원했습니다. “바다는 어르신의 명을 따릅니다. 바다의 성냄을 멈춰 주십시오.”",
+    "cover": [
+     244,
+     245,
+     239
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/14-Suparaga-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     530,
+     82,
+     790,
+     142
+    ],
+    "ko": "진실의 서원",
+    "cover": [
+     248,
+     249,
+     244
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     530,
+     142,
+     790,
+     370
+    ],
+    "ko": "숩빠라까는 여래들께 절하고 진실의 서원(saccakiriyā)을 했습니다.\n“철이 든 뒤로 저는 살아 있는 존재를 한 번도 해친 적이 없습니다. 이 진실의 힘으로 배가 무사히 돌아가기를.”",
+    "cover": [
+     248,
+     249,
+     244
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/14-Suparaga-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     28,
+     342,
+     72
+    ],
+    "ko": "자연이 따르다",
+    "cover": [
+     248,
+     249,
+     243
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     72,
+     342,
+     226
+    ],
+    "ko": "대사의 진실한 말의 힘이 어찌나 강했던지 바람과 물살이 곧바로 거꾸로 흘렀습니다. 배는 ‘맑은 하늘의 홍학처럼’ 죽음의 문턱에서 날듯이 돌아왔습니다.",
+    "cover": [
+     247,
+     248,
+     242
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/14-Suparaga-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     346,
+     760,
+     388
+    ],
+    "ko": "신들이 채워 준 바닥짐",
+    "cover": [
+     247,
+     248,
+     242
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     388,
+     760,
+     448
+    ],
+    "ko": "밤을 틈타 숩빠라까는 뱃사람들에게 바닥짐으로 모래와 돌을 배에 실으라 일렀습니다. 그들은 모르는 사이에 지나온 신비한 바다들의 녹주석과 금과 사파이어로 배를 채웠습니다.",
+    "cover": [
+     247,
+     248,
+     242
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/14-Suparaga-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     466,
+     30,
+     792,
+     72
+    ],
+    "ko": "진실의 보배",
+    "cover": [
+     246,
+     223,
+     218
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     466,
+     72,
+     792,
+     214
+    ],
+    "ko": "단 하룻밤에 배는 고향으로 돌아왔습니다. 날이 밝자 상인들은 배에 모래가 아니라 보물이 가득한 것을 보았습니다. 그들은 자신들의 목숨과 재산을 눈먼 이의 덕이 구했음을 깨달았습니다.",
+    "cover": [
+     248,
+     228,
+     209
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/14-Suparaga-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     362,
+     740,
+     402
+    ],
+    "ko": "“바른 법의 힘”",
+    "cover": [
+     247,
+     248,
+     241
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     402,
+     740,
+     448
+    ],
+    "ko": "“바른 법에 바탕을 두고 진실을 말하는 것만으로도 재앙을 물리치기에 충분하다.” 그러므로 지혜로운 이는 법을 지킵니다. 진실이야말로 가장 큰 보호자이기 때문입니다.",
+    "cover": [
+     246,
+     248,
+     240
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
