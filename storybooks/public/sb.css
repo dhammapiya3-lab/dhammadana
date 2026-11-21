@@ -212,3 +212,9 @@ body.sb-text .sv, body.sb-text .sv-thumbs{display:none}
 .mk-item figcaption{padding:8px 10px;font-size:14px;line-height:1.5}
 .mk-item button{float:right;background:none;border:1px solid var(--line);border-radius:6px;padding:2px 8px;color:var(--ink-soft);cursor:pointer;font:inherit;font-size:12.5px}
 @media (max-width:520px){.sv-bar{flex-wrap:wrap;row-gap:6px;padding:6px 4px}.sv-bar button,.sv-bar .sv-dl{padding:3px 10px}}
+/* 새로 그린 책: 한국어/English 바꿔 보기 (2026-11-21) */
+.badge.en{background:var(--paper-2);color:var(--ink-soft);text-decoration:none;margin-left:6px}
+.langsw{margin:.2em 0 .8em;font-size:15px}
+.langsw b,.langsw a{display:inline-block;padding:3px 14px;border-radius:999px;border:1px solid var(--leaf);text-decoration:none}
+.langsw b{background:var(--leaf);color:#fff;font-weight:500}
+.langsw a{color:var(--leaf)}
