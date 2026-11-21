@@ -37,7 +37,7 @@ function bookInfo(slug) {
   const nImg = stories.reduce((n, s) => n + s.items.filter(i => i.img).length, 0);
   const ready = stories.filter(s => READY[`${slug}/${sid(s.file)}`]).length;
   return {
-    slug, en: b.title, title: k.title || b.title, sub: k.sub ?? '', style: KO.styles[b.style] || b.style,
+    slug, lang: b.lang || 'ko', en: b.title, title: k.title || b.title, sub: k.sub ?? '', style: KO.styles[b.style] || b.style,
     intro: d.intro || '', introEn: b.intro, unit, nStory: stories.length, nImg, ready,
     tags: (h.tags || []).map(t => KO.tags[t] || t), cover: `${S.img_base}/covers/${slug}.jpg`, d,
   };
@@ -108,7 +108,7 @@ const card = b => `<a class="bcard" href="/${b.slug}/" data-q="${esc([b.title, b
   <div class="bcover"><img src="${esc(b.cover)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('nocover')"><span class="ph">${esc(b.title)}</span></div>
   <div class="bmeta"><h3>${esc(b.title)}</h3>${b.sub ? `<p class="sub">${esc(b.sub)}</p>` : ''}
   <p class="cnt">${esc(b.style)} · ${b.unit} ${b.nStory}편 · ${U.posters} ${b.nImg.toLocaleString()}장</p>
-  ${b.ready ? `<span class="badge ko">${U.ko_ready} ${b.ready}편</span>` : `<span class="badge">${U.en_only}</span>`}</div></a>`;
+  ${b.ready ? `<span class="badge ko">${b.lang === 'en' ? '영어판' : U.ko_ready} ${b.ready}편</span>` : `<span class="badge">${U.en_only}</span>`}</div></a>`;
 
 // 첫 화면
 put('index.html', layout({ page: 'home', body: `<section class="hero"><div class="wrap">
@@ -136,7 +136,7 @@ for (const slug of Object.keys(CAT.books).filter(b => PUB.has(b))) {
   const toc = B.toc.filter(t => t.h || t.story).map(t => t.h
     ? `<li class="sec">${esc(d.sections?.[t.h] || t.h)}</li>`
     : (() => { const s = B.stories[t.story]; const r = READY[`${slug}/${sid(s.file)}`];
-      return `<li><a href="/${slug}/${sid(s.file)}/">${esc(storyTitle(slug, s))}</a>${r ? `<span class="badge ko">${U.ko_ready}</span>` : ''}</li>`; })()).join('');
+      return `<li><a href="/${slug}/${sid(s.file)}/">${esc(storyTitle(slug, s))}</a>${r ? `<span class="badge ko">${B.lang === 'en' ? '영어판' : U.ko_ready}</span>` : ''}</li>`; })()).join('');
   put(`${slug}/index.html`, layout({ title: b.title, page: 'book', desc: b.sub || b.title, body: `<div class="wrap book">
   <nav class="crumb"><a href="/">${U.home}</a></nav>
   <div class="book-head"><div class="bcover big"><img src="${esc(b.cover)}" alt="" onerror="this.parentNode.classList.add('nocover')"><span class="ph">${esc(b.title)}</span></div>
@@ -147,7 +147,7 @@ for (const slug of Object.keys(CAT.books).filter(b => PUB.has(b))) {
   ${KO.notes?.[slug]?.length ? `<aside class="work note"><h2>일러두기</h2>${KO.notes[slug].map(t => `<p>${esc(t)}</p>`).join('')}</aside>` : ''}
   <div class="prose">${b.intro || B.own ? paras(b.intro) : `<p class="muted">책 소개를 우리말로 옮기는 중입니다. 아래는 영어 원문입니다.</p><p lang="en">${esc(b.introEn)}</p>`}</div>
   <div id="resume" data-slug="${esc(slug)}" hidden></div>
-  ${DL[slug] ? `<aside class="dl"><h2>책 전체 내려받기</h2><p class="muted">한글판 이야기 ${DL[slug].stories}편, 그림 ${DL[slug].n}장. 맨 끝에 출처(CC BY-SA 4.0) 쪽이 있습니다.</p>
+  ${DL[slug] ? `<aside class="dl"><h2>책 전체 내려받기</h2><p class="muted">${B.lang === 'en' ? '영어판' : '한글판'} 이야기 ${DL[slug].stories}편, 그림 ${DL[slug].n}장. 맨 끝에 출처(CC BY-SA 4.0) 쪽이 있습니다.</p>
   <p class="dl-row"><a class="btn" href="${dlUrl(`${slug}/_book.pdf`, `${b.title} (인쇄용).pdf`)}">PDF 인쇄용 <small>${mb(DL[slug].pdf)}</small></a><a class="btn" href="${dlUrl(`${slug}/_book_s.pdf`, `${b.title} (보기용).pdf`)}">PDF 보기용 <small>${mb(DL[slug].pdfs)} · 작은 그림</small></a><a class="btn" href="${dlUrl(`${slug}/_book.zip`, `${b.title} (그림 파일).zip`)}">그림 파일 ZIP <small>${mb(DL[slug].zip)}</small></a></p></aside>` : ''}
   <h2>차례</h2><ol class="toc">${toc}</ol>
   ${B.own ? '' : `<p class="orig"><a href="${S.orig_url}${slug}/index.htm">${U.en_link} ↗</a></p>`}</div>` }));

@@ -307,6 +307,10 @@
     "New-Jataka": {
       "title": "새로 그린 자따까",
       "sub": "빠알리 주석서 원문을 따라 한 장면씩 새로 그린 그림책"
+    },
+    "New-Jataka-EN": {
+      "title": "새로 그린 자따까 (영어판)",
+      "sub": "Jātaka Stories — Newly Illustrated · English Edition"
     }
   },
   "book_detail": {
@@ -1305,6 +1309,20 @@
           "intro": "명상 주제를 받아 숲에 들어갔다가 석 달 만에 정진을 놓아 버린 비구에게 부처님께서 옛이야기를 들려주셨습니다. 옛날 보살은 수레 오백 대를 이끄는 상단 우두머리였습니다. 사막을 건너던 밤 길잡이가 잠든 사이 소들이 왔던 길로 되돌아가, 물과 땔감을 버린 상단은 죽을 고비를 맞았습니다. 보살은 포기하지 않고 풀 덤불 아래를 파게 했고, 모두가 그만둔 바위를 어린 시종이 끝까지 내리쳐 물줄기가 솟아올랐습니다. 그때의 어린 시종이 바로 그 비구였습니다."
         }
       }
+    },
+    "New-Jataka-EN": {
+      "intro": "「새로 그린 자따까」의 영어판입니다. 같은 그림에 영어 해설을 붙였습니다. 불교 용어와 이름은 모두 빠알리형(Dhamma, kamma, Nibbāna, Bodhisatta 등)으로 썼습니다.\n\nThis is the English edition of our newly illustrated Jātaka picture books. Following the Pāḷi commentary (Sixth Council edition), each picture shows one event of the story, with an English caption. All Buddhist terms and names are given in their Pāḷi forms.",
+      "sections": {},
+      "stories": {
+        "001-Apannaka.htm": {
+          "title": "01 Apaṇṇaka Jātaka — The Waterless Desert",
+          "intro": "Anāthapiṇḍika’s five hundred friends went for refuge to the Buddha, but when he left for Rājagaha they returned to their old teachers. The Buddha told them a story of the past. Long ago in Bārāṇasī, the wise Bodhisatta and a foolish merchant each led five hundred carts across a waterless desert. Deceived by a yakkha who claimed that rain lay ahead, the foolish merchant threw away his water and was devoured with all his men. The Bodhisatta saw the yakkha’s red eyes and that he cast no shadow, kept his water, and crossed the desert safely."
+        },
+        "002-Vannupatha.htm": {
+          "title": "02 Vaṇṇupatha Jātaka — The Well of Perseverance",
+          "intro": "To a monk who gave up his effort after three months of meditation in the forest, the Buddha told a story of the past. The Bodhisatta was then a caravan leader with five hundred carts. While crossing a desert, the pilot fell asleep and the oxen turned back, so the caravan, having thrown away its water and firewood, faced death. The Bodhisatta did not give up. He had the men dig beneath a clump of grass, and when everyone else stopped at a rock, a young servant kept striking until water gushed up. That young servant was the monk."
+        }
+      }
     }
   },
   "tiers": [
@@ -1316,6 +1334,7 @@
           "보살",
           [
             "New-Jataka",
+            "New-Jataka-EN",
             "Jataka",
             "Pannasa"
           ]
@@ -2195,6 +2214,24 @@
       [
         "라이선스",
         "크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 (CC BY-SA 4.0)"
+      ]
+    ],
+    "New-Jataka-EN": [
+      [
+        "원전 / Source",
+        "『자따까(Jātaka)』와 그 주석서 — 빠알리 삼장 6차 결집본 / The Jātaka and its commentary, Sixth Council edition"
+      ],
+      [
+        "그림 / Pictures",
+        "붓다담마 법보시 도서관, Google Gemini로 그림"
+      ],
+      [
+        "영어 해설 / English captions",
+        "빠알리 원문과 우리말 해설을 대조해 영어로 지음 (Anthropic의 AI Claude를 사용하고 검수함)"
+      ],
+      [
+        "라이선스 / License",
+        "CC BY-SA 4.0"
       ]
     ]
   },
