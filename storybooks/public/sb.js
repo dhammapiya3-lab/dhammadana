@@ -60,6 +60,10 @@
 
   // 내 서재 화면 · 책 화면의 '이어 읽기'
   const shelfAll = () => { try { return JSON.parse(localStorage.getItem('sb-shelf') || '{}'); } catch (e) { return {}; } };
+  // 예전에 한 칸에 저장된 영어판 기록은 '<책>.en' 칸으로 옮김 (2026-11-22)
+  try { const a0 = shelfAll(); let ch = false;
+    for (const [k, r] of Object.entries(a0)) if (!k.endsWith('.en') && r && !r.del && /-en\/$/.test(r.url || '')) { if (!a0[k + '.en'] || (a0[k + '.en'].t || 0) < r.t) a0[k + '.en'] = { ...r, lang: 'en' }; a0[k] = { del: true, t: r.t }; ch = true; }
+    if (ch) localStorage.setItem('sb-shelf', JSON.stringify(a0)); } catch (e) {}
   // 그림 책갈피 (운영자 요청, 2026-11-21): 법문·어린이 법회에서 다시 보여 줄 그림을 ☆ 로 표시해 두고 내 서재에서 모아 봄.
   // sb-marks = { '<책>/<이야기>#<쪽>': {book, bookTitle, story, url, page, n, img, t} 또는 {del:true, t} }
   const marksAll = () => { try { return JSON.parse(localStorage.getItem('sb-marks') || '{}'); } catch (e) { return {}; } };
@@ -136,12 +140,12 @@
       const all = shelfAll(), list = Object.entries(all).filter(([, r]) => !r.del).sort((a, b) => b[1].t - a[1].t);
       const lg = document.getElementById('shelfLogin'); if (lg) lg.hidden = !!acct.token;
       document.getElementById('shelfEmpty').hidden = list.length > 0;
-      shelfEl.innerHTML = list.map(([slug, r]) => `<div class="sh-item">
+      shelfEl.innerHTML = list.map(([id, r]) => { const slug = id.replace(/\.en$/, ''), en = id !== slug; return `<div class="sh-item">
         <a class="sh-cover" href="/${h(slug)}/"><img src="${h(r.cover)}" alt="" loading="lazy" onerror="this.remove()"></a>
-        <div class="sh-meta"><h2><a href="/${h(slug)}/">${h(r.book)}</a></h2>
+        <div class="sh-meta"><h2><a href="/${h(slug)}/">${h(r.book)}</a>${en ? ' <span class="badge en" lang="en">English</span>' : ''}</h2>
         <p>읽던 이야기: <b>${h(r.story)}</b> · ${r.page} / ${r.n}쪽</p>
         <p class="muted">${new Date(r.t).toLocaleDateString('ko-KR')}에 읽음</p>
-        <p class="sh-act"><a class="btn" href="${h(r.url)}">▶ 이어 읽기</a> <button type="button" data-del="${h(slug)}">목록에서 빼기</button></p></div></div>`).join('');
+        <p class="sh-act"><a class="btn" href="${h(r.url)}">▶ 이어 읽기</a> <button type="button" data-del="${h(id)}">목록에서 빼기</button></p></div></div>`; }).join('');
       shelfEl.querySelectorAll('[data-del]').forEach(b => b.onclick = () => {
         const a = shelfAll(); a[b.dataset.del] = { del: true, t: Date.now() };
         ls('sb-shelf', JSON.stringify(a)); window.sbSyncSoon();
@@ -164,8 +168,10 @@
   }
   const resume = document.getElementById('resume');
   if (resume) {
-    const show = () => { const r = shelfAll()[resume.dataset.slug];
-    if (r && !r.del) { resume.hidden = false; resume.className = 'resume'; resume.innerHTML = `<span>읽던 곳: <b>${h(r.story)}</b> · ${r.page} / ${r.n}쪽</span><a class="btn" href="${h(r.url)}">▶ 이어 읽기</a>`; } };
+    const show = () => { const a = shelfAll(), s0 = resume.dataset.slug;
+      const rs = [[a[s0], ''], [a[s0 + '.en'], 'English']].filter(([r]) => r && !r.del);
+      resume.hidden = !rs.length; resume.className = 'resume';
+      resume.innerHTML = rs.map(([r, l]) => `<div class="resume-row"><span>${l ? `<span class="badge en" lang="en">${l}</span> ` : ''}읽던 곳: <b>${h(r.story)}</b> · ${r.page} / ${r.n}쪽</span><a class="btn" href="${h(r.url)}">▶ 이어 읽기</a></div>`).join(''); };
     show(); document.addEventListener('sb-shelf', show);
   }
 
@@ -258,7 +264,9 @@
     const d = sv.dataset; if (!d.book) return;
     try {
       const all = JSON.parse(localStorage.getItem('sb-shelf') || '{}');
-      all[d.book] = { book: d.bookTitle, cover: d.cover, story: d.title, url: '/' + d.key + '/', page: i + 1, n: pages.length, t: Date.now() };
+      // 영어판(키 끝 -en)은 한글판과 따로 저장 — 칸 이름 '<책>.en' (운영자 요청, 2026-11-22)
+      const en = /-en$/.test(d.key || '');
+      all[d.book + (en ? '.en' : '')] = { book: d.bookTitle, lang: en ? 'en' : 'ko', cover: d.cover, story: d.title, url: '/' + d.key + '/', page: i + 1, n: pages.length, t: Date.now() };
       localStorage.setItem('sb-shelf', JSON.stringify(all));
     } catch (e) {}
     window.sbSyncSoon && window.sbSyncSoon();

@@ -224,3 +224,6 @@ body.sb-text .sv, body.sb-text .sv-thumbs{display:none}
 .making table{border-collapse:collapse;width:100%;margin:.6em 0}.making td,.making th{border:1px solid var(--paper-2);padding:6px 8px;text-align:left;vertical-align:top}
 .making details{border-bottom:1px solid var(--paper-2);padding:6px 0}.making summary{cursor:pointer}
 .making .mk-cap{font-size:14px;margin:.3em 0}.making .mk-toc{font-size:14px;line-height:1.9}
+
+/* 이어 읽기: 한글판·영어판 따로 (2026-11-22) */
+.resume{flex-direction:column;align-items:stretch}.resume-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.resume-row+.resume-row{margin-top:8px;padding-top:8px;border-top:1px dashed var(--line)}
