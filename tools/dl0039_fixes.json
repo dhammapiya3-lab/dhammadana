@@ -41,5 +41,14 @@
   ],
   "a": "아짜리아",
   "b": "아짜리야"
+ },
+ {
+  "p": [
+   "19쪽",
+   "20쪽"
+  ],
+  "a": "(Ehi|Tisaraṇa|Upasampadā) bhikkhū\\)",
+  "b": "\\1 bhikkhu)",
+  "re": true
  }
 ]
