@@ -1,0 +1,233 @@
+[
+ {
+  "img": "images/03-Punnaka-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     34,
+     410,
+     170
+    ],
+    "ko": "뿐나까의 질문\n제사와 건넘에 관한 문답",
+    "cover": null,
+    "align": "left",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     276,
+     128,
+     528,
+     320
+    ],
+    "ko": "“흔들림 없는 선인께\n질문을 가지고 왔습니다.\n이 세상의 선인과 왕족과\n바라문들은 무엇 때문에\n신들께 그토록 많은\n제사를 지냅니까?”",
+    "cover": null,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     252,
+     130,
+     548,
+     324
+    ],
+    "ko": "“그들이 제사를 지내는 것은\n이 세상의 존재를\n바라기 때문이다.\n늙음의 두려움에 쫓겨,\n뿐나까여, 그들은 세속의\n삶을 늘리려 한다.”",
+    "cover": null,
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     116,
+     470,
+     220
+    ],
+    "ko": "사람들의 제사는 늙음을 벗어나려는\n바람에서 나오지만, 오히려 제사 지내는 이를\n늙어 가는 바로 그 세상에 묶어 둡니다.",
+    "cover": null,
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     156,
+     586,
+     276
+    ],
+    "ko": "“복되신 분이시여, 제사의 길에\n힘쓰는 이 제사꾼들은 그 공양으로\n정말 태어남과 늙음을 건넜습니까?”",
+    "cover": null,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     316,
+     572,
+     412
+    ],
+    "ko": "“아니다. 그들은 감각적 쾌락을\n갈망한다. 존재에 대한 탐욕에 들떠\n바라고 찬양할 뿐, 태어남과\n늙음을 건너지 못했다.”",
+    "cover": null,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     238,
+     150,
+     526,
+     296
+    ],
+    "ko": "이익과 갈망에서 나온\n제사는 존재에 대한\n탐욕을 더 깊게 하여\n끝없는 윤회의\n바퀴를 돌린다.",
+    "cover": null,
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     108,
+     684,
+     216
+    ],
+    "ko": "“제사 지내는 이들이 건너지 못했다면, 존귀한 분이시여,\n신과 인간의 세상에서 누가\n참으로 태어남과 늙음을 건넜습니까?”",
+    "cover": null,
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     132,
+     208,
+     662,
+     306
+    ],
+    "ko": "“세상의 멀고 가까운 것을 다 알아 동요가 없고,\n고요하며 성냄도 괴로움도 바람도 없는 이,\n그가 태어남과 늙음을 건넜다.”",
+    "cover": [
+     249,
+     248,
+     243
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     40,
+     352,
+     140
+    ],
+    "ko": "제사 지내는 이\n바라고 괴로워하며\n태어남과 늙음에 묶인 이",
+    "cover": null,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     410,
+     40,
+     712,
+     140
+    ],
+    "ko": "성자\n흔들림 없고 고요하며\n동요가 없는 이",
+    "cover": null,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     136,
+     188,
+     664,
+     262
+    ],
+    "ko": "건넌다는 것은 세상에 더 바치는 것이 아니라\n세상을 향한 바람을 완전히 그치는 것입니다.",
+    "cover": [
+     249,
+     245,
+     235
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
