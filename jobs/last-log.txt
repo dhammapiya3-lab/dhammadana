@@ -1,12 +1,12 @@
-Jatakamala 23-Mahabodhi 15 장
+Jatakamala 24-Great-Ape 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 77 개 / 한글판 이야기 279 편
+R2 에 올림: 77 개 / 한글판 이야기 280 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 922786바이트
-이야기 Jatakamala/23-Mahabodhi {'pdf': 14783733, 'zip': 14506563, 'n': 15}
-책 Jatakamala {'pdf': 295406325, 'pdfs': 29632776, 'zip': 295025844, 'stories': 23, 'n': 335}
+공개 주소 확인: 200 1045150바이트
+이야기 Jatakamala/24-Great-Ape {'pdf': 16077113, 'zip': 15799624, 'n': 15}
+책 Jatakamala {'pdf': 311211488, 'pdfs': 31198121, 'zip': 310825390, 'stories': 24, 'n': 350}
 내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 279 이야기
+글로 보기: 280 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
