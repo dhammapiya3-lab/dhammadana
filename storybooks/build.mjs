@@ -47,27 +47,25 @@ const ONLY = S.only_ready !== false;
 const PUB = new Set(Object.keys(CAT.books).filter(slug => !ONLY || Object.values(CAT.books[slug].stories).some(s => READY[`${slug}/${sid(s.file)}`])));
 const storyTitle = (slug, s) => KO.book_detail[slug]?.stories?.[s.file]?.title || s.title;
 
-// 첫 화면 찾기 보기 단추 (인물·주제·동물) — 공개한 이야기의 제목·줄거리에서 많이 나오는 낱말을 저절로 고름 (운영자 요청, 2026-11-21)
-// 후보는 ko.json search_terms. 새 시리즈가 공개되면 아직 단추에 잡히지 않은 책의 이야기에 가산점(2배)을 주어 그 시리즈 낱말이 들어옴.
-const qnorm = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[\s·.,:;!?'"“”‘’()\[\]『』「」<>~—–-]+/g, '');
+// 첫 화면 찾기 단추 (인물·주제·동물) — 공개한 이야기의 제목·줄거리에 나오는 낱말을 모두 단추로 (운영자 요청, 2026-11-21)
+// 후보는 ko.json search_terms (min: 나와야 하는 이야기 수 — 현생 인물 1편, 전생·과거 인물 2편). 새 시리즈가 공개되면 빌드 때 저절로 늘어남.
+const qnorm = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[\s·.,:;!?'"“”‘’()\[\]『』「」<>~—–-]+/g, '');
 const EXAMPLES = (() => {
-  const T = KO.search_terms; if (!T?.groups) return KO.search_examples || [];
+  const T = KO.search_terms; if (!T?.groups) return (KO.search_examples || []).map(([g, ws]) => ({ g, ws: ws.map(w => ({ w, q: w })), show: 99 }));
   const docs = [...PUB].flatMap(slug => Object.values(CAT.books[slug].stories).map(s => ({ slug, n: qnorm(storyTitle(slug, s) + ' ' + (KO.book_detail[slug]?.stories?.[s.file]?.intro || '')) })));
-  const stat = w => { const ws = String(w).trim().split(/\s+/).map(qnorm).filter(Boolean), by = {}; let tot = 0;
-    for (const d of docs) if (ws.every(x => d.n.includes(x))) { by[d.slug] = (by[d.slug] || 0) + 1; tot++; } return { w, by, tot }; };
-  const G = T.groups.map(([g, ws]) => [g, ws.map(stat).filter(c => c.tot >= (T.min ?? 2))]), N = T.n || 5;
-  const covered = new Set(), pick = G.map(([g]) => [g, []]);
-  const score = c => Object.entries(c.by).reduce((a, [b, n]) => a + Math.sqrt(n) * (covered.has(b) ? 1 : 2), 0);
-  const same = (x, y) => qnorm(x).includes(qnorm(y)) || qnorm(y).includes(qnorm(x)); // 깟사빠·마하깟사빠처럼 겹치면 하나만
-  for (let r = 0; r < N; r++) G.forEach(([, cs], i) => {
-    cs.sort((a, b) => score(b) - score(a) || b.tot - a.tot);
-    const c = cs.find(c => !pick[i][1].some(w => same(w, c.w))); if (!c) return;
-    cs.splice(cs.indexOf(c), 1); pick[i][1].push(c.w);
-    for (const [b, n] of Object.entries(c.by)) if (n >= 2) covered.add(b);
-  });
-  console.log('찾기 보기 단추:', pick.map(([g, ws]) => `${g} ${ws.join('·')}`).join(' / '));
-  const miss = [...PUB].filter(b => !covered.has(b)); if (miss.length) console.warn('찾기 보기 단추에 잡히지 않은 책:', miss.join(', '), '— ko.json search_terms 에 그 책의 인물·주제·동물을 더하세요');
-  return pick.filter(([, ws]) => ws.length);
+  const covered = new Set();
+  const out = T.groups.map(G => {
+    let cs = G.lists.flatMap(L => L.words.map(w => { const q = qnorm(w); const hit = docs.filter(d => d.n.includes(q)); return { w, q, n: hit.length, hit, min: L.min ?? 1 }; }))
+      .filter(c => c.q && c.n >= c.min);
+    // 한 낱말이 다른 낱말을 품으면(목갈라나 ⊂ 마하목갈라나) 짧은 것만 — 짧은 것으로 찾으면 긴 것의 이야기도 다 나옴
+    cs = cs.filter((c, i) => !cs.some((o, j) => j !== i && o.q !== c.q && c.q.includes(o.q)) && cs.findIndex(o => o.q === c.q) === i);
+    cs.sort((a, b) => b.n - a.n || a.w.localeCompare(b.w, 'ko'));
+    cs.forEach(c => c.hit.forEach(d => covered.add(d.slug)));
+    return { g: G.name, ws: cs.map(({ w }) => ({ w, q: w.replace(/\s+/g, '') })), show: T.show || 12 };
+  }).filter(x => x.ws.length);
+  console.log('찾기 단추:', out.map(x => `${x.g} ${x.ws.length}개`).join(' · '));
+  const miss = [...PUB].filter(b => !covered.has(b)); if (miss.length) console.warn('찾기 단추에 잡히지 않은 책:', miss.join(', '), '— ko.json search_terms 에 그 책의 인물·주제·동물을 더하세요');
+  return out;
 })();
 
 function layout({ title, body, desc = '', page = '', image = '', noindex = false }) {
@@ -116,7 +114,7 @@ const card = b => `<a class="bcard" href="/${b.slug}/" data-q="${esc([b.title, b
 put('index.html', layout({ page: 'home', body: `<section class="hero"><div class="wrap">
   <h1>법을 담은 그림책</h1><p>${esc(S.intro)}</p>
   <div class="filter"><input id="q" type="search" placeholder="${U.filter}" aria-label="${U.filter}"><button id="qReset" type="button">${U.reset}</button></div>
-  ${EXAMPLES.length ? `<p class="qex">${EXAMPLES.map(([g, ws]) => `<span class="qg">${esc(g)}</span>${ws.map(w => `<button type="button" data-q="${esc(w)}">${esc(w)}</button>`).join('')}`).join('')}</p>` : ''}
+  ${EXAMPLES.length ? `<div class="qex">${EXAMPLES.map(({ g, ws, show }) => `<p class="qrow"><span class="qg">${esc(g)}</span>${ws.map(({ w, q }, i) => `<button type="button" data-q="${esc(q)}"${i >= show ? ' class="qmore" hidden' : ''}>${esc(w)}</button>`).join('')}${ws.length > show ? `<button type="button" class="qtog" data-n="${ws.length - show}">＋ ${ws.length - show}개 더 보기</button>` : ''}</p>`).join('')}</div>` : ''}
 </div></section>
 <div class="wrap"><section id="sres" hidden><h2 class="tier-h">이야기 <span id="sresN"></span></h2><ol class="sres"></ol></section></div>
 <div class="wrap">${(() => { const listed = new Set(KO.tiers.flatMap(t => t.sections.flatMap(x => x[1]))); const fresh = Object.keys(CAT.books).filter(b => !listed.has(b) && PUB.has(b));

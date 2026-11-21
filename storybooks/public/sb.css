@@ -152,8 +152,10 @@ html.sv-lock,html.sv-lock body{overflow:hidden}
 .sres li{padding:9px 12px;border-radius:8px}.sres li:hover{background:var(--paper-2)}
 .sres li a{color:var(--ink)}.sres li p{margin:3px 0 0;font-size:14px;color:var(--ink-soft)}
 .sres mark{background:#f3d9a4;color:inherit;padding:0 1px;border-radius:2px}
-.qex{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:12px 0 0!important;font-size:13.5px}
-.qex .qg{color:var(--ink-soft);margin:0 2px 0 8px}.qex .qg:first-child{margin-left:0}
+.qex{margin:12px 0 0;font-size:13.5px}
+.qex .qrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 8px!important}
+.qex .qg{color:var(--ink-soft);margin:0 4px 0 0;min-width:2.6em;font-weight:600}
+.qex .qtog{background:none!important;border-style:dashed!important;color:var(--ink-soft)!important}
 .qex button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:3px 11px;cursor:pointer;font:inherit}
 .qex button:hover{border-color:var(--robe)}
 /* 내려받기 */

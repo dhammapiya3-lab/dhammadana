@@ -37,7 +37,10 @@
     };
     let tm; q.addEventListener('input', () => { clearTimeout(tm); tm = setTimeout(run, 150); });
     q.addEventListener('focus', load, { once: true });
-    document.querySelectorAll('.qex button').forEach(x => x.onclick = () => { q.value = x.dataset.q; run(); document.getElementById('sres').scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+    document.querySelectorAll('.qex .qtog').forEach(x => x.onclick = () => { // 묶음마다 '더 보기' ↔ '접기' (운영자 요청, 2026-11-21)
+      const open = x.classList.toggle('on'); x.parentNode.querySelectorAll('.qmore').forEach(b => b.hidden = !open);
+      x.textContent = open ? '－ 접기' : `＋ ${x.dataset.n}개 더 보기`; });
+    document.querySelectorAll('.qex button:not(.qtog)').forEach(x => x.onclick = () => { q.value = x.dataset.q; run(); document.getElementById('sres').scrollIntoView({ behavior: 'smooth', block: 'start' }); });
     document.getElementById('qReset').onclick = () => { q.value = ''; run(); q.focus(); };
   }
 
