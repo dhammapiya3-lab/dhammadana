@@ -1,0 +1,437 @@
+[
+ {
+  "img": "images/08-Maitribala-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     38,
+     730,
+     118
+    ],
+    "ko": "본생 이야기 꽃다발: 마이뜨리발라 왕 이야기\n자애의 힘",
+    "cover": [
+     249,
+     247,
+     235
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     270,
+     420,
+     530,
+     444
+    ],
+    "ko": "『자따까말라』 여덟 번째 이야기에서",
+    "cover": [
+     249,
+     247,
+     236
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Maitribala-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     520,
+     126,
+     790,
+     172
+    ],
+    "ko": "마이뜨리발라 왕",
+    "cover": [
+     249,
+     247,
+     235
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     520,
+     172,
+     790,
+     340
+    ],
+    "ko": "마이뜨리발라 왕은 백성의 기쁨과 슬픔을 제 일처럼 여겼습니다. 칼을 찼지만 장식일 뿐, 참된 무기는 법이었습니다. 백성을 지키려는 그의 뜻만으로도 재앙을 막는 벽이 되어, 백성들은 즐거움과 축제만 아는 나라에서 살았습니다.",
+    "cover": [
+     249,
+     245,
+     233
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Maitribala-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     8,
+     290,
+     214,
+     442
+    ],
+    "ko": "꾸웨라에게 쫓겨난 ‘기운을 빼앗는’ 약카 다섯이 번성하는 백성의 기운을 먹으러 왔습니다. 죽이는 재주가 뛰어났지만 그들은 아무 힘도 쓰지 못했습니다. 왕의 지키는 덕이 너무도 두터워 한 사람도 약하게 만들 수 없었습니다.",
+    "cover": [
+     40,
+     38,
+     44
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-Maitribala-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     380,
+     744,
+     444
+    ],
+    "ko": "애가 탄 약카들은 바라문으로 변장해 깊은 숲속에서 홀로 있는 소치기에게 다가갔습니다. “무서운 이 숲을 혼자 다니면서 어찌 도깨비가 두렵지 않으냐?” 소치기는 웃으며 새끼줄을 계속 꼬았습니다. “저는 강력한 스와스띠야야나(svastyayana), 곧 으뜸가는 주문의 보호를 받습니다.”",
+    "cover": [
+     250,
+     242,
+     224
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Maitribala-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     102,
+     344,
+     240
+    ],
+    "ko": "“저희의 주문은 바로 임금님이십니다.” 소치기가 밝혔습니다. “가슴은 황금산만큼 넓고 팔은 황금 몽둥이 같은 분이시지요. 그분의 바른 다스림이 저희를 빈틈없이 지켜 주시니, 천신들의 왕도 저희를 해칠 수 없거늘 하물며 사람 고기 먹는 도깨비이겠습니까?”",
+    "cover": [
+     249,
+     245,
+     232
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Maitribala-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     460,
+     344,
+     790,
+     444
+    ],
+    "ko": "그 힘을 시기한 약카들이 궁정에 들어가 음식을 청했습니다. 왕의 진수성찬이 나오자 호랑이가 풀을 마다하듯 물리쳤습니다. “우리는 그런 것을 먹지 않소.” 이름난 왕의 너그러움을 시험하며 그들이 비웃었습니다.",
+    "cover": [
+     247,
+     241,
+     223
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Maitribala-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     12,
+     54,
+     300,
+     162
+    ],
+    "ko": "변장을 벗자 참모습이 드러났습니다. 불타는 머리털에 사나운 이빨의 입이었습니다. “갓 베어 따뜻한 사람 고기와 사람의 피를 내놓아라. 연꽃 눈의 왕이여, 이것이 약카의 음식이다.”",
+    "cover": [
+     245,
+     239,
+     216
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Maitribala-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     300,
+     410,
+     414
+    ],
+    "ko": "왕은 두려움 없이 오직 연민만 느꼈습니다. 그들을 먹이려고 다른 생명을 해칠 수는 없다는 것을 알았습니다.\n“이 몸은 괴로움의 집이요 늘 병들어 있다. 더없이 아름다운 일에 써서 슬픔을 돌려주리라. 내 살을 그들에게 주겠다.”",
+    "cover": [
+     249,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Maitribala-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     344,
+     660,
+     446
+    ],
+    "ko": "궁정이 반대로 들끓었습니다. “다섯을 위해 많은 이의 보호자를 잃게 하지 마십시오!” 대신들이 애원했습니다. “차라리 저희 살을 쓰십시오!” 그러나 왕은 거절했습니다. “나는 남의 고통도 견디지 못하는데 어찌 그대들에게 고통을 겪으라 하겠소? 그들이 청한 것은 나요.”",
+    "cover": [
+     250,
+     245,
+     232
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Maitribala-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     28,
+     782,
+     172
+    ],
+    "ko": "다섯 혈관을 열었습니다.\n약카들은 향긋한 붉은 전단처럼 검붉은 피를 마셨습니다. 그래도 왕은 시들지 않았습니다. 베푸는 기쁨에 떠받쳐 수미산처럼 빛났습니다. 보시의 기쁨이 몸의 손실을 이겼습니다.",
+    "cover": [
+     249,
+     244,
+     227
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Maitribala-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     106,
+     420,
+     356
+    ],
+    "ko": "목마름이 가시자 왕은 푸른 연꽃잎처럼 푸른 날의 날카로운 칼을 들어 제 몸에서 단단한 살을 베어 냈습니다. 칼질마다 밀려드는 고통은 크나큰 기쁨에 밀려나 그의 마음에 스며들지 못했습니다.",
+    "cover": [
+     250,
+     244,
+     228
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Maitribala-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     370,
+     650,
+     450
+    ],
+    "ko": "흔들림 없는 평온을 본 약카들의 마음이 무너졌습니다. 미움의 불은 다정함의 황금으로 바뀌었습니다. “놀랍다! 기적이다!” 그들은 눈물에 젖어 외쳤습니다. “몸을 그만 해치십시오! 저희는 배부릅니다.”",
+    "cover": [
+     248,
+     245,
+     230
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Maitribala-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     12,
+     30,
+     396,
+     166
+    ],
+    "ko": "“나는 온 땅의 통치권도, 삭까의 지위도 바라지 않는다.” 왕이 선언했습니다. “일체지를 얻으려고 이 몸을 바친다. 늙음·병·죽음의 물결이 이는 거친 존재의 바다에서 모든 중생을 건지고 싶다.”",
+    "cover": [
+     247,
+     243,
+     225
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Maitribala-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     400,
+     312,
+     794,
+     342
+    ],
+    "ko": "온 우주가 응답하다",
+    "cover": [
+     244,
+     236,
+     220
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     400,
+     342,
+     794,
+     446
+    ],
+    "ko": "우주가 응답했습니다. 땅이 흔들리고 황금산이 출렁였으며 큰 바다가 들끓었습니다. 꽃이 비처럼 하늘에서 내려, 모든 것을 내준 왕 위로 덮개를 이루었습니다.",
+    "cover": [
+     244,
+     236,
+     220
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Maitribala-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     362,
+     760,
+     446
+    ],
+    "ko": "천신들의 왕 삭까가 내려와 하늘의 약초로 왕의 몸을 고쳐 주었습니다. 마음을 돌린 약카들은 해치는 일을 그만두겠다고 서원했습니다.\n이 다섯 약카는 뒷날 부처님의 법을 처음 듣는 다섯 제자로 태어납니다.",
+    "cover": [
+     247,
+     241,
+     222
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
