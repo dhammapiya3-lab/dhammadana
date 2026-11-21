@@ -617,11 +617,11 @@
 "zip": 18828023
 },
 "Jatakamala": {
-"n": 103,
-"pdf": 90921356,
-"pdfs": 9204501,
-"stories": 7,
-"zip": 90626155
+"n": 118,
+"pdf": 103908696,
+"pdfs": 10470921,
+"stories": 8,
+"zip": 103608259
 },
 "Jatakamala/01-Tigress": {
 "n": 15,
@@ -657,6 +657,11 @@
 "n": 15,
 "pdf": 13346802,
 "zip": 13071906
+},
+"Jatakamala/08-Maitribala": {
+"n": 15,
+"pdf": 13263361,
+"zip": 12981921
 },
 "Light-of-Asia": {
 "n": 118,
