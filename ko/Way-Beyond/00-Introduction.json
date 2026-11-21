@@ -1,0 +1,986 @@
+[
+ {
+  "img": "images/00-Introduction-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     140,
+     490,
+     305
+    ],
+    "ko": "빠라야나 왁가:\n열여섯 고행자의\n여정",
+    "cover": [
+     247,
+     247,
+     242
+    ],
+    "align": "left",
+    "em": 36,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     96,
+     744,
+     232
+    ],
+    "ko": "세 베다에 통달한 한 바라문이\n남쪽 지방으로 갔습니다.\n가진 것 없이 이삭과 열매로 살며\n앗사까의 고다와리 강가에\n머물렀습니다.",
+    "cover": [
+     246,
+     244,
+     234
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     384,
+     720,
+     442
+    ],
+    "ko": "큰 마을의 도움으로 바와리는 큰 제사를 올렸습니다.\n할 일을 마친 고요한 고행자는 조용한 암자로 돌아갔습니다.",
+    "cover": [
+     250,
+     250,
+     250
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     410,
+     20,
+     784,
+     130
+    ],
+    "ko": "또 다른 바라문이 다가왔습니다.\n목마르고 발은 부르트고 이는 더럽고\n머리에는 먼지를 뒤집어쓴 채, 고요한\n성자에게 금화 오백 냥을 내놓으라 했습니다.",
+    "cover": [
+     245,
+     243,
+     236
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     384,
+     778,
+     446
+    ],
+    "ko": "바와리는 자리를 권하고 안부를 물은 뒤 부드럽게 말했습니다. “가진 것은\n모두 이미 보시했습니다. 미안하오만 나에게는 금화가 없습니다.”",
+    "cover": [
+     238,
+     235,
+     224
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     318,
+     410,
+     414
+    ],
+    "ko": "성난 사기꾼이 무서운 말을 퍼부었습니다.\n“내가 구하는 것을 주지 않는다면\n이레 안에 그대의 머리가\n일곱 조각으로 갈라지리라!”",
+    "cover": [
+     246,
+     242,
+     234
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     322,
+     300,
+     408
+    ],
+    "ko": "두려움과 괴로움에 빠진\n바와리는 음식을 끊고\n몸이 바싹 말라 갔습니다.",
+    "cover": [
+     245,
+     241,
+     230
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     322,
+     760,
+     410
+    ],
+    "ko": "슬픔의 화살에 맞은\n괴로운 마음은 더 이상\n선정을 즐기지 못했습니다.",
+    "cover": [
+     246,
+     243,
+     232
+    ],
+    "align": "right",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     44,
+     566,
+     140
+    ],
+    "ko": "그의 두려움을 본 자비로운 천신이\n다가왔습니다. 오직 그의 안녕을 바라는\n빛나는 천신은 고행자의 무거운 짐을\n덜어 주려고 부드럽게 말했습니다.",
+    "cover": [
+     248,
+     246,
+     237
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     320,
+     400,
+     412
+    ],
+    "ko": "“그는 머리를 알지 못하오.\n재물을 노리는 사기꾼일 뿐,\n머리도, 머리가 갈라짐도\n참으로 알지 못하오.”",
+    "cover": [
+     246,
+     243,
+     231
+    ],
+    "align": "left",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     44,
+     566,
+     160
+    ],
+    "ko": "“나 역시 그것을 알지 못하오.”\n천신이 털어놓았습니다. 바와리가 간청했습니다.\n“그러면 이 땅에서 누가 머리와\n머리가 갈라짐을 참으로 압니까?”",
+    "cover": [
+     247,
+     247,
+     238
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     342,
+     740,
+     428
+    ],
+    "ko": "“까삘라왓투에서 빛을 밝히는 분이 나오셨소. 으뜸가는 눈을 갖추시고\n집착을 여의신 삼마삼붓다만이 이 진리를 보시오.\n그분은 부처님, 복되신 분이오.”",
+    "cover": [
+     245,
+     243,
+     236
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     46,
+     436,
+     166
+    ],
+    "ko": "‘삼마삼붓다’라는 말을 듣자 바와리는\n기뻐 날뛰었습니다. 무거운 슬픔의 화살이\n사라지고, 벅찬 기쁨과 그분을 꼭\n찾아뵙고 싶은 마음이 솟았습니다.",
+    "cover": [
+     246,
+     244,
+     233
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     330,
+     320,
+     770,
+     428
+    ],
+    "ko": "“승리자께서는 사왓티에 계시오. 사람 가운데\n황소이신 그분은 번뇌가 없고 머리가 갈라짐을\n아시오.” 마음이 고양된 바와리는\n가장 높은 분을 향해 눈길을 돌렸습니다.",
+    "cover": [
+     248,
+     248,
+     241
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     36,
+     712,
+     142
+    ],
+    "ko": "바라문 바와리가 제자들에게 말했습니다.\n“늘 만나기 어려운 분이 세상에 나타나셨다. 어서 사왓티로 가서\n가장 높은 분, 삼마삼붓다를 뵈어라.”",
+    "cover": [
+     247,
+     247,
+     241
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     270,
+     36,
+     762,
+     172
+    ],
+    "ko": "세 베다에 통달한 고행자 제자들이 물었습니다.\n“스승님, 그분을 뵙더라도 그분이 부처님이신 줄\n저희가 어떻게 알겠습니까? 알아보는 법을\n일러 주십시오.”",
+    "cover": [
+     246,
+     247,
+     241
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     152,
+     646,
+     300
+    ],
+    "ko": "바와리가 옛 지혜를 밝혔습니다.\n“베다는 대장부의 서른두 가지\n특징을 설명한다. 이 완전한 특징을\n갖춘 이에게는 두 갈래 길만 있다.”",
+    "cover": [
+     246,
+     247,
+     242
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-17-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     326,
+     36,
+     630,
+     110
+    ],
+    "ko": "“집에 머물면 칼 없이\n법으로 온 땅을 다스리고,",
+    "cover": [
+     245,
+     246,
+     240
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     472,
+     350,
+     518,
+     388
+    ],
+    "ko": " ",
+    "cover": [
+     246,
+     247,
+     241
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     40,
+     318,
+     476,
+     426
+    ],
+    "ko": "집을 떠나 출가하면\n덮개를 걷어 내는 이, 삼마삼붓다,\n위없는 아라한이 된다.”",
+    "cover": [
+     246,
+     246,
+     241
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-18-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     54,
+     446,
+     300
+    ],
+    "ko": "참된 시험:\n“질문을 소리 내어\n묻지 말아라. 그분의\n걸림 없는 눈을 시험하도록\n마음속으로만 조용히\n물어라.”",
+    "cover": [
+     247,
+     247,
+     242
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-19-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     314,
+     704,
+     428
+    ],
+    "ko": "“나의 태어남과 가문과 특징을 여쭈어라.\n나의 가르침과 제자들을 여쭈어라. 마지막으로\n머리와 머리가 갈라짐을 여쭈어라.”",
+    "cover": [
+     246,
+     247,
+     241
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-20-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     130,
+     280,
+     672,
+     428
+    ],
+    "ko": "마음을 읽는 증거:\n“그분이 참으로 부처님이시라면 너희가\n마음속으로 조용히 한 질문을 들으시고\n소리 내어 말로 답하실 것이다.”",
+    "cover": [
+     247,
+     247,
+     242
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-21-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     10,
+     358,
+     790,
+     430
+    ],
+    "ko": "이 말을 듣고 이름난 선정 수행자들이 길 떠날 채비를 했습니다. 아지따,\n띳사 멧떼야, 뿐나까, 멧따구, 도따까, 우빠시와, 난다, 헤마까,",
+    "cover": [
+     247,
+     247,
+     242
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-22-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     10,
+     358,
+     790,
+     430
+    ],
+    "ko": "그리고 또데야, 깝빠, 지혜로운 자뚜깐니, 바드라우다, 우다야,\n바라문 뽀살라, 슬기로운 모가라자, 큰 선인 삥기야가 함께했습니다.",
+    "cover": [
+     246,
+     247,
+     241
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-23-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     46,
+     450,
+     172
+    ],
+    "ko": "열여섯 고행자는 바와리께 예배하고\n스승의 둘레를 오른쪽으로 돌았습니다.\n전통대로 상투를 틀고 사슴 가죽을\n걸친 그들은 북쪽으로 길을 떠났습니다.",
+    "cover": [
+     248,
+     249,
+     243
+    ],
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-24-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     134,
+     156,
+     492,
+     290
+    ],
+    "ko": "물라까에서 출발하여\n빠띳타나, 마힛사띠, 웃제니,\n고낫다, 웨디사, 와나사,\n꼬삼비,",
+    "cover": [
+     247,
+     247,
+     241
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     498,
+     244,
+     652,
+     342
+    ],
+    "ko": "사께따, 그리고\n으뜸 도시\n사왓티로.",
+    "cover": [
+     247,
+     248,
+     242
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-25-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     300,
+     348,
+     760,
+     402
+    ],
+    "ko": "사왓티에서 그들은 세따비야, 까삘라왓투, 꾸시나라, 빠와,\n보가나가라, 웨살리, 마가다의 도시 라자가하로 갔습니다.",
+    "cover": [
+     248,
+     248,
+     242
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-26-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     124,
+     420,
+     206
+    ],
+    "ko": "마침내 그들은 빠사나까 탑묘에 닿았습니다.\n마음을 참으로 기쁘게 하는 즐거운 곳,\n마지막 시험이 기다리는 곳이었습니다.",
+    "cover": [
+     248,
+     249,
+     243
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-27-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     124,
+     500,
+     206
+    ],
+    "ko": "열여섯 구도자는 채비를 마쳤습니다. 그들 앞에는\n육계(uṇhīsa)를 지니신 가장 높은 분이 계셨습니다.\n그분은 그들의 조용한 마음속 질문에 답하시려 기다리셨습니다.",
+    "cover": [
+     248,
+     248,
+     242
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-28-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     64,
+     96,
+     360,
+     198
+    ],
+    "ko": "목마른 이가 시원한 물을 찾듯,\n더위에 탄 이가 그늘을 찾듯,\n고행자들은 몹시 서둘러\n산을 올랐습니다.",
+    "cover": [
+     246,
+     240,
+     228
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-29-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     96,
+     720,
+     194
+    ],
+    "ko": "복되신 분께서 대중 앞에 앉아\n법을 설하고 계셨습니다. 그분은\n백 줄기 빛의 해처럼 빛나고\n보름달처럼 고요하셨습니다.",
+    "cover": [
+     247,
+     240,
+     228
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-30-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     96,
+     750,
+     216
+    ],
+    "ko": "아지따는 삼마삼붓다의 완전함을\n보았습니다. 한쪽에 서서 그는 마음속으로만\n여쭈었습니다. “제 스승의 태어남과 특징,\n베다에 통달함과 제자들에 대해\n말씀해 주십시오.”",
+    "cover": [
+     247,
+     240,
+     227
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-31-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     96,
+     446,
+     194
+    ],
+    "ko": "말씀 없이 부처님께서 조용한 생각에\n답하셨습니다. “바와리는 백이십 살이다.\n세 베다에 통달하여 오백 명의\n제자를 가르친다.”",
+    "cover": [
+     248,
+     240,
+     228
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-32-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     96,
+     720,
+     198
+    ],
+    "ko": "아지따가 말없는 시험을 이어 갔습니다.\n“갈애를 끊으신 분이시여, 바와리의\n몸의 특징을 밝혀 주십시오.\n저희가 의심하지 않도록.”",
+    "cover": [
+     247,
+     239,
+     223
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-33-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     96,
+     436,
+     196
+    ],
+    "ko": "부처님의 마음이 답하셨습니다.\n‘그는 혀로 얼굴을 덮는다. 두 눈썹\n사이에 털이 나 있다. 옷으로 가리는\n곳은 몸 안에 감추어져 있다.’",
+    "cover": [
+     247,
+     239,
+     225
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-34-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     188,
+     100,
+     640,
+     182
+    ],
+    "ko": "들리지 않은 질문에 답하시는 것을 듣고 대중은\n놀라 손을 들었습니다. “신일까, 범천일까, 인다일까?\n누가 그분의 마음에 말했을까?”",
+    "cover": [
+     246,
+     240,
+     227
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-35-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     166,
+     420,
+     268
+    ],
+    "ko": "아지따가 스승의 마지막, 가장 깊은\n질문을 여쭈었습니다. “머리와 머리가\n갈라짐에 대하여, 복되신 분이시여,\n저희의 의심을 없애 주십시오.”",
+    "cover": [
+     242,
+     242,
+     242
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-36-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     470,
+     196,
+     650,
+     256
+    ],
+    "ko": "지혜가\n머리를 가르는 것,",
+    "cover": [
+     247,
+     241,
+     229
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     180,
+     348,
+     310,
+     402
+    ],
+    "ko": "무명이\n머리이니,",
+    "cover": [
+     246,
+     239,
+     227
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     24,
+     24,
+     236,
+     140
+    ],
+    "ko": "Confidence  믿음\nMindfulness  마음챙김\nConcentration  삼매\nDesire  열의\nEnergy  정진",
+    "cover": [
+     247,
+     239,
+     224
+    ],
+    "align": "left",
+    "em": 15,
+    "thr": -5,
+    "dark": false,
+    "label": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-37-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     166,
+     420,
+     272
+    ],
+    "ko": "굳은 마음으로 기뻐하며 아지따는\n어깨에서 사슴 가죽을 내리고\n부처님 발에 머리를 대어, 바와리의\n기쁜 예경을 올렸습니다.",
+    "cover": [
+     248,
+     241,
+     229
+    ],
+    "align": "left",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/00-Introduction-38-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     300,
+     194,
+     690,
+     276
+    ],
+    "ko": "“바와리와 그의 제자들, 그리고 그대가\n행복하기를. 그대들의 의심을 모두 받아 주겠다.\n마음속에 알고 싶은 것을 무엇이든 물어라.”",
+    "cover": [
+     248,
+     240,
+     228
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
