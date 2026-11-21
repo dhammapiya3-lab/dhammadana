@@ -1,131 +1,92 @@
 Foremost-Laymen 08-Surambattha 15 장
 Foremost-Laymen 09-Jivaka 11 장
 Foremost-Laymen 10-Nakulapitu 10 장
-검수 Jataka/001-The-Waterless-Desert 06번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 2px)
 검수 Jataka/001-The-Waterless-Desert 13번 그림 상자2 [자리] 한글 글(2151,1214)이 상자 점(1762,1051)에서 멀리 그려짐
 Jataka 001-The-Waterless-Desert 15 장
 검수 Jataka/002-The-Well-of-Perseverance 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Jataka 002-The-Well-of-Perseverance 15 장
 검수 Jataka/003-The-Golden-Bowl 02번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 4px)
 검수 Jataka/003-The-Golden-Bowl 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 6px)
-검수 Jataka/003-The-Golden-Bowl 05번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Jataka/003-The-Golden-Bowl 07번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 6px)
-검수 Jataka/003-The-Golden-Bowl 08번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 3px)
 Jataka 003-The-Golden-Bowl 14 장
-검수 Jataka/004-The-Dead-Mouse 01번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 1px)
-검수 Jataka/004-The-Dead-Mouse 04번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+검수 Jataka/004-The-Dead-Mouse 04번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 4px)
 검수 Jataka/004-The-Dead-Mouse 09번 그림 상자2 [자리] 한글 글(2228,1294)이 상자 점(2030,1107)에서 멀리 그려짐
-검수 Jataka/004-The-Dead-Mouse 11번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 2px)
 Jataka 004-The-Dead-Mouse 15 장
-Jataka 005-The-Measure-of-Rice 14 장
-검수 Jataka/006-The-Water-Rakkhasa 02번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 2px)
-검수 Jataka/006-The-Water-Rakkhasa 06번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+검수 Jataka/006-The-Water-Rakkhasa 06번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 6px)
 Jataka 006-The-Water-Rakkhasa 15 장
-Jataka 009-The-Kings-Grey-Hair 14 장
-검수 Jataka/010-Bliss-of-Renunciation 08번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Jataka 010-Bliss-of-Renunciation 14 장
-검수 Jataka/011-The-Wisdom-of-Lakkhana 04번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 1px)
 Jataka 011-The-Wisdom-of-Lakkhana 10 장
-Jataka 012-The-Golden-Deer 14 장
-검수 Jataka/014-The-Wind-Deer 02번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Jataka 014-The-Wind-Deer 9 장
-검수 Jataka/018-The-Sacrificial-Goat 05번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 3px)
 검수 Jataka/018-The-Sacrificial-Goat 05번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Jataka/018-The-Sacrificial-Goat 06번 그림 상자3 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+검수 Jataka/018-The-Sacrificial-Goat 05번 그림 상자3 [작음] 글자 크기 36 (원래 132)
 Jataka 018-The-Sacrificial-Goat 14 장
-Jataka 022-The-Teaching-of-the-Dog 14 장
 검수 Jataka/023-The-Noble-Warhorse 02번 그림 상자5 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Jataka/023-The-Noble-Warhorse 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
+검수 Jataka/023-The-Noble-Warhorse 02번 그림 상자5 [작음] 글자 크기 36 (원래 329)
 Jataka 023-The-Noble-Warhorse 14 장
-검수 Jataka/026-The-State-Elephant 08번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 검수 Jataka/026-The-State-Elephant 10번 그림 상자2 [자리] 한글이 원래 글 자리(1178,1205-1275,1254)에서 벗어남 (836,1239)
 Jataka 026-The-State-Elephant 13 장
-Jataka 027-Elephant-and-Dog 13 장
-Jataka 028-Nandivisala 12 장
-Jataka 029-Grannys-Blackie 12 장
-Jataka 030-Deadly-Food 11 장
-검수 Jataka/032-The-Peacocks-Dance 08번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Jataka/032-The-Peacocks-Dance 10번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Jataka 032-The-Peacocks-Dance 12 장
-검수 Jataka/033-The-Quails-and-the-Net 01번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 검수 Jataka/033-The-Quails-and-the-Net 09번 그림 상자2 [자리] 한글 글(1343,693)이 상자 점(1167,538)에서 멀리 그려짐
 Jataka 033-The-Quails-and-the-Net 14 장
-Jataka 034-The-Amorous-Fish 13 장
-Jataka 037-The-Senior-Partridge 12 장
-Jataka 039-Nanda-and-the-Hoard 12 장
-검수 Jataka/040-The-Fiery-Pit 04번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Jataka 040-The-Fiery-Pit 12 장
-Jataka 041-The-Unfortunate-Monk 15 장
-Jataka 043-The-Monk-and-the-Viper 10 장
 검수 Jataka/044-The-Son-and-the-Mosquito 01번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Jataka/044-The-Son-and-the-Mosquito 03번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 6px)
-검수 Jataka/044-The-Son-and-the-Mosquito 04번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 4px)
+검수 Jataka/044-The-Son-and-the-Mosquito 01번 그림 상자1 [작음] 글자 크기 36 (원래 201)
 Jataka 044-The-Son-and-the-Mosquito 13 장
-검수 Jataka/046-The-Folly-of-the-Monkeys 06번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 3px)
-검수 Jataka/046-The-Folly-of-the-Monkeys 09번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 3px)
+검수 Jataka/046-The-Folly-of-the-Monkeys 06번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 5px)
 Jataka 046-The-Folly-of-the-Monkeys 13 장
-Jataka 048-The-Rain-of-Ruin 15 장
-검수 Jataka/049-The-Lucky-Star 09번 그림 상자2 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Jataka 049-The-Lucky-Star 14 장
-검수 Jataka/050-The-Kings-Stratagem 06번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Jataka 050-The-Kings-Stratagem 15 장
-Vinaya-Stories 05-Uposatha 20 장
-자동 검수: 문제 의심 36 곳
-R2 에 올림: 1002 개 / 한글판 이야기 225 편
+자동 검수: 문제 의심 16 곳
+R2 에 올림: 601 개 / 한글판 이야기 225 편
+새 그림책 올림: New-Jataka/002-Vannupatha 24 장
+새 그림책: 올린 그림 24 장
 공개 주소 확인: 200 1678190바이트
-이야기 Foremost-Laymen/06-Ugga {'pdf': 21633119, 'zip': 21354254, 'n': 15}
-이야기 Foremost-Laymen/07-Uggata {'pdf': 19299057, 'zip': 19020745, 'n': 13}
 이야기 Foremost-Laymen/08-Surambattha {'pdf': 18539642, 'zip': 18254995, 'n': 15}
 이야기 Foremost-Laymen/09-Jivaka {'pdf': 21205201, 'zip': 20369589, 'n': 11}
 이야기 Foremost-Laymen/10-Nakulapitu {'pdf': 12446042, 'zip': 12166117, 'n': 10}
 책 Foremost-Laymen {'pdf': 228694949, 'pdfs': 24147216, 'zip': 228381612, 'stories': 10, 'n': 157}
-이야기 Foremost-Monks/17-Sona-Kutikanna {'pdf': 37451033, 'zip': 37179187, 'n': 26}
-책 Foremost-Monks {'pdf': 1121599321, 'pdfs': 118156004, 'zip': 1121056472, 'stories': 38, 'n': 802}
-이야기 Foremost-Nuns/03-Uppalavanna {'pdf': 49001262, 'zip': 48721081, 'n': 37}
-책 Foremost-Nuns {'pdf': 385759403, 'pdfs': 40811673, 'zip': 385406720, 'stories': 13, 'n': 283}
-이야기 Jataka/001-The-Waterless-Desert {'pdf': 14366772, 'zip': 14101411, 'n': 15}
-이야기 Jataka/002-The-Well-of-Perseverance {'pdf': 17830035, 'zip': 17561912, 'n': 15}
-이야기 Jataka/003-The-Golden-Bowl {'pdf': 15809170, 'zip': 15544182, 'n': 14}
-이야기 Jataka/004-The-Dead-Mouse {'pdf': 17560165, 'zip': 17296730, 'n': 15}
-이야기 Jataka/005-The-Measure-of-Rice {'pdf': 17286887, 'zip': 17023504, 'n': 14}
-이야기 Jataka/006-The-Water-Rakkhasa {'pdf': 19133289, 'zip': 18866869, 'n': 15}
-이야기 Jataka/009-The-Kings-Grey-Hair {'pdf': 15479728, 'zip': 15212862, 'n': 14}
-이야기 Jataka/010-Bliss-of-Renunciation {'pdf': 17050814, 'zip': 16784427, 'n': 14}
-이야기 Jataka/011-The-Wisdom-of-Lakkhana {'pdf': 12221958, 'zip': 11957988, 'n': 10}
-이야기 Jataka/012-The-Golden-Deer {'pdf': 18826100, 'zip': 18561883, 'n': 14}
-이야기 Jataka/014-The-Wind-Deer {'pdf': 9635403, 'zip': 9373984, 'n': 9}
-이야기 Jataka/018-The-Sacrificial-Goat {'pdf': 16415928, 'zip': 16145545, 'n': 14}
-이야기 Jataka/022-The-Teaching-of-the-Dog {'pdf': 17729269, 'zip': 17464070, 'n': 14}
-이야기 Jataka/023-The-Noble-Warhorse {'pdf': 17058559, 'zip': 16793264, 'n': 14}
-이야기 Jataka/026-The-State-Elephant {'pdf': 16558930, 'zip': 16292761, 'n': 13}
-이야기 Jataka/027-Elephant-and-Dog {'pdf': 16858461, 'zip': 16593629, 'n': 13}
-이야기 Jataka/028-Nandivisala {'pdf': 14876817, 'zip': 14608640, 'n': 12}
-이야기 Jataka/029-Grannys-Blackie {'pdf': 13864515, 'zip': 13596750, 'n': 12}
-이야기 Jataka/030-Deadly-Food {'pdf': 13401646, 'zip': 13132833, 'n': 11}
-이야기 Jataka/032-The-Peacocks-Dance {'pdf': 16830913, 'zip': 16566488, 'n': 12}
-이야기 Jataka/033-The-Quails-and-the-Net {'pdf': 15960702, 'zip': 15692547, 'n': 14}
-이야기 Jataka/034-The-Amorous-Fish {'pdf': 15151635, 'zip': 14882571, 'n': 13}
-이야기 Jataka/037-The-Senior-Partridge {'pdf': 15743702, 'zip': 15479858, 'n': 12}
-이야기 Jataka/046-The-Folly-of-the-Monkeys {'pdf': 15980287, 'zip': 15708131, 'n': 13}
-이야기 Jataka/039-Nanda-and-the-Hoard {'pdf': 13819472, 'zip': 13550053, 'n': 12}
-이야기 Jataka/040-The-Fiery-Pit {'pdf': 12668799, 'zip': 12405055, 'n': 12}
-이야기 Jataka/041-The-Unfortunate-Monk {'pdf': 17992923, 'zip': 17727032, 'n': 15}
-이야기 Jataka/043-The-Monk-and-the-Viper {'pdf': 11178977, 'zip': 10915687, 'n': 10}
-이야기 Jataka/044-The-Son-and-the-Mosquito {'pdf': 15082330, 'zip': 14812914, 'n': 13}
-이야기 Jataka/048-The-Rain-of-Ruin {'pdf': 16723601, 'zip': 16459122, 'n': 15}
-이야기 Jataka/049-The-Lucky-Star {'pdf': 16475760, 'zip': 16210886, 'n': 14}
-이야기 Jataka/050-The-Kings-Stratagem {'pdf': 19097511, 'zip': 18831854, 'n': 15}
-책 Jataka {'pdf': 496557548, 'pdfs': 50595944, 'zip': 496147787, 'stories': 32, 'n': 422}
-이야기 Vinaya-Stories/05-Uposatha {'pdf': 24733752, 'zip': 24468036, 'n': 20}
-이야기 Vinaya-Stories/08-Allowances {'pdf': 16787495, 'zip': 16517566, 'n': 14}
-이야기 Vinaya-Stories/38-First-Council {'pdf': 46049224, 'zip': 45777373, 'n': 41}
-이야기 Vinaya-Stories/39-Second-Council {'pdf': 46913247, 'zip': 46641335, 'n': 39}
-책 Vinaya-Stories {'pdf': 822209148, 'pdfs': 82863592, 'zip': 821699435, 'stories': 40, 'n': 706}
-내려받기 파일: 48 묶음 새로 만듦
-글로 보기: 225 이야기
-18-Verses-2.htm: 그림 10 상자 1 상자밖글 137
-18-Verses-2
-08-Light-of-Asia.htm: 그림 15 상자 0 상자밖글 721
-08-Light-of-Asia
-04-Kalavaliya-the-Treasurer.htm: 그림 13 상자 1 상자밖글 341
-04-Kalavaliya-the-Treasurer
+이야기 Jataka/001-The-Waterless-Desert {'pdf': 14363120, 'zip': 14097759, 'n': 15}
+이야기 Jataka/002-The-Well-of-Perseverance {'pdf': 17821764, 'zip': 17553641, 'n': 15}
+이야기 Jataka/003-The-Golden-Bowl {'pdf': 15760663, 'zip': 15495675, 'n': 14}
+이야기 Jataka/004-The-Dead-Mouse {'pdf': 17534576, 'zip': 17271141, 'n': 15}
+이야기 Jataka/006-The-Water-Rakkhasa {'pdf': 19104126, 'zip': 18837707, 'n': 15}
+이야기 Jataka/010-Bliss-of-Renunciation {'pdf': 17047806, 'zip': 16781419, 'n': 14}
+이야기 Jataka/011-The-Wisdom-of-Lakkhana {'pdf': 12220878, 'zip': 11956908, 'n': 10}
+이야기 Jataka/014-The-Wind-Deer {'pdf': 9633388, 'zip': 9371969, 'n': 9}
+이야기 Jataka/018-The-Sacrificial-Goat {'pdf': 16413933, 'zip': 16143550, 'n': 14}
+이야기 Jataka/023-The-Noble-Warhorse {'pdf': 17040175, 'zip': 16774880, 'n': 14}
+이야기 Jataka/026-The-State-Elephant {'pdf': 16557032, 'zip': 16290863, 'n': 13}
+이야기 Jataka/032-The-Peacocks-Dance {'pdf': 16828960, 'zip': 16564535, 'n': 12}
+이야기 Jataka/033-The-Quails-and-the-Net {'pdf': 15954771, 'zip': 15686616, 'n': 14}
+이야기 Jataka/046-The-Folly-of-the-Monkeys {'pdf': 15971936, 'zip': 15699780, 'n': 13}
+이야기 Jataka/040-The-Fiery-Pit {'pdf': 12668566, 'zip': 12404822, 'n': 12}
+이야기 Jataka/044-The-Son-and-the-Mosquito {'pdf': 15036997, 'zip': 14767581, 'n': 13}
+이야기 Jataka/049-The-Lucky-Star {'pdf': 16475296, 'zip': 16210422, 'n': 14}
+이야기 Jataka/050-The-Kings-Stratagem {'pdf': 19093680, 'zip': 18828023, 'n': 15}
+책 Jataka {'pdf': 496347891, 'pdfs': 50553122, 'zip': 495938130, 'stories': 32, 'n': 422}
+이야기 New-Jataka/002-Vannupatha {'pdf': 15786848, 'zip': 15611711, 'n': 24}
+책 New-Jataka {'pdf': 15772010, 'pdfs': 3259457, 'zip': 15614104, 'stories': 1, 'n': 24}
+내려받기 파일: 25 묶음 새로 만듦
+글로 보기: 226 이야기
+To https://github.com/dhammapiya3-lab/dhammadana
+ ! [rejected]        storybooks -> storybooks (fetch first)
+error: failed to push some refs to 'https://github.com/dhammapiya3-lab/dhammadana'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Committer identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <runner@ip-10-0-135-77.us-west-2.compute.internal>) not allowed
+error: cannot pull with rebase: Your index contains uncommitted changes.
+error: Please commit or stash them.
