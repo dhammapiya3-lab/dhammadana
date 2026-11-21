@@ -199,3 +199,14 @@ body.sb-text .sv, body.sb-text .sv-thumbs{display:none}
 .sp-btns .sp-try{border-color:var(--robe);color:var(--robe)}
 .sp-note{margin:10px 0 0;font-size:13px;color:var(--ink-soft);line-height:1.6}
 @media (max-width:520px){.sp-row{grid-template-columns:5.5em 1fr 3.8em;gap:6px}}
+
+/* 그림 책갈피 (운영자 요청, 2026-11-21) */
+.sv-bar .sv-mark[aria-pressed="true"]{background:#d9a21b;border-color:#d9a21b;color:#1f1b18}
+.sv-toast{position:absolute;left:50%;bottom:64px;transform:translateX(-50%);background:#1f1b18e6;color:#fff;padding:8px 16px;border-radius:999px;font-size:14px;z-index:9;pointer-events:none}
+#marksWrap{margin-top:34px}#marksWrap h2{font-size:20px;margin:0 0 4px}
+.mk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-top:12px}
+.mk-item{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff8}
+.mk-item img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.mk-item figcaption{padding:8px 10px;font-size:14px;line-height:1.5}
+.mk-item button{float:right;background:none;border:1px solid var(--line);border-radius:6px;padding:2px 8px;color:var(--ink-soft);cursor:pointer;font:inherit;font-size:12.5px}
+@media (max-width:520px){.sv-bar{flex-wrap:wrap;row-gap:6px;padding:6px 4px}.sv-bar button,.sv-bar .sv-dl{padding:3px 10px}}

@@ -43,6 +43,11 @@
 
   // 내 서재 화면 · 책 화면의 '이어 읽기'
   const shelfAll = () => { try { return JSON.parse(localStorage.getItem('sb-shelf') || '{}'); } catch (e) { return {}; } };
+  // 그림 책갈피 (운영자 요청, 2026-11-21): 법문·어린이 법회에서 다시 보여 줄 그림을 ☆ 로 표시해 두고 내 서재에서 모아 봄.
+  // sb-marks = { '<책>/<이야기>#<쪽>': {book, bookTitle, story, url, page, n, img, t} 또는 {del:true, t} }
+  const marksAll = () => { try { return JSON.parse(localStorage.getItem('sb-marks') || '{}'); } catch (e) { return {}; } };
+  const marksPut = m => { try { localStorage.setItem('sb-marks', JSON.stringify(m)); localStorage.setItem('sb-marks-t', String(Date.now())); } catch (e) {} };
+  const marksMerge = (a, b) => { const o = { ...a }; for (const [k, v] of Object.entries(b || {})) if (!o[k] || (v.t || 0) > (o[k].t || 0)) o[k] = v; return o; };
   // 회원: 법보시 도서관(dhammadana.kr)과 같은 회원. 책마다 'sb-b-<책>' 으로 맞춤 (나중에 읽은 쪽이 이김)
   const API = 'https://dhammadana.kr/api/account';
   const ls = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { return null; } };
@@ -62,10 +67,17 @@
     try {
       const all = shelfAll(), data = {};
       for (const [slug, r] of Object.entries(all)) data['sb-b-' + slug] = { v: r.del ? null : r, t: r.t || 1 };
+      data['sb-b-_marks'] = { v: marksAll(), t: +(ls('sb-marks-t') || 1) };
       const j = await api('sync', { data, only: 'sb' });
       let changed = false; const cur = shelfAll();
       for (const [k, x] of Object.entries(j.data || {})) {
         if (!k.startsWith('sb-b-')) continue;
+        if (k === 'sb-b-_marks') {  // 책갈피: 기기마다 더한 것을 모두 살림
+          const mine = marksAll(), m = marksMerge(mine, x.v || {});
+          if (JSON.stringify(m) !== JSON.stringify(mine)) { ls('sb-marks', JSON.stringify(m)); document.dispatchEvent(new Event('sb-marks')); }
+          if (JSON.stringify(m) !== JSON.stringify(x.v || {})) { ls('sb-marks-t', String(Date.now())); window.sbSyncSoon && setTimeout(window.sbSyncSoon, 0); }
+          continue;
+        }
         const slug = k.slice(5), mine = cur[slug];
         if (mine && (mine.t || 0) >= x.t) continue;
         if (x.v) { cur[slug] = { ...x.v, t: x.t }; const key = String(x.v.url || '').replace(/^\/|\/$/g, ''); if (key) ls('sb-pos-' + key, String((x.v.page || 1) - 1)); }
@@ -120,6 +132,18 @@
       });
     };
     draw(); document.addEventListener('sb-shelf', draw);
+    const mk = document.getElementById('marks');
+    if (mk) {
+      const drawM = () => {
+        const list = Object.entries(marksAll()).filter(([, r]) => !r.del).sort((a, b) => b[1].t - a[1].t);
+        document.getElementById('marksWrap').hidden = !list.length;
+        mk.innerHTML = list.map(([id, r]) => `<figure class="mk-item"><a href="${h(r.url)}#p${r.page}"><img src="${h(r.img)}" alt="" loading="lazy"></a>
+          <figcaption><b>${h(r.story)}</b> · ${r.page}쪽<br><span class="muted">${h(r.bookTitle)}</span>
+          <button type="button" data-mdel="${h(id)}" title="책갈피 지우기">✕ 지우기</button></figcaption></figure>`).join('');
+        mk.querySelectorAll('[data-mdel]').forEach(b => b.onclick = () => { const m = marksAll(); m[b.dataset.mdel] = { del: true, t: Date.now() }; marksPut(m); window.sbSyncSoon(); drawM(); });
+      };
+      drawM(); document.addEventListener('sb-marks', drawM);
+    }
   }
   const resume = document.getElementById('resume');
   if (resume) {
@@ -188,6 +212,20 @@
     i = Math.max(0, Math.min(last(), i));
     track.scrollTo({ left: i * track.clientWidth, behavior: smooth ? 'smooth' : 'auto' });
   };
+  const markBtn = sv.querySelector('.sv-mark');
+  const markId = i => `${sv.dataset.key}#${i + 1}`;
+  const markShow = () => { if (!markBtn) return; const r = marksAll()[markId(cur)], on = !!(r && !r.del) && cur < pages.length;
+    markBtn.setAttribute('aria-pressed', on ? 'true' : 'false'); markBtn.firstChild.textContent = on ? '★' : '☆'; markBtn.hidden = cur >= pages.length; };
+  if (markBtn) markBtn.onclick = () => {
+    if (cur >= pages.length) return;
+    const m = marksAll(), id = markId(cur), r = m[id], d = sv.dataset, im = pages[cur].querySelector('img');
+    if (r && !r.del) m[id] = { del: true, t: Date.now() };
+    else m[id] = { book: d.book, bookTitle: d.bookTitle, story: d.title, url: '/' + d.key + '/', page: cur + 1, n: pages.length, img: im?.dataset.s || im?.src, t: Date.now() };
+    marksPut(m); markShow(); window.sbSyncSoon && window.sbSyncSoon();
+    const t = document.createElement('div'); t.className = 'sv-toast'; t.textContent = (r && !r.del) ? '책갈피를 지웠습니다' : '책갈피에 넣었습니다 — 내 서재에서 모아 봅니다';
+    sv.append(t); setTimeout(() => t.remove(), 1800);
+  };
+  document.addEventListener('sb-marks', () => markShow());
   const show = i => {
     if (i !== cur) zReset();
     cur = i;
@@ -196,6 +234,7 @@
     thumbs[i]?.scrollIntoView({ block: 'nearest', inline: 'nearest' });
     try { localStorage.setItem(KEY, i); } catch (e) {}
     if (i < pages.length) shelfSave(i);
+    markShow();
   };
   // 내 서재: 책마다 마지막으로 읽던 이야기와 쪽 (운영자 요청, 2026-11-14)
   const shelfSave = i => {
@@ -590,6 +629,7 @@ const PALI = (() => {
   setup();
   let start = 0;
   try { start = +localStorage.getItem(KEY) || 0; } catch (e) {}
+  { const m = location.hash.match(/^#p(\d+)$/); if (m) { start = +m[1] - 1; history.replaceState(null, '', location.pathname + location.search); } }
   if (start > 0 && start < pages.length) requestAnimationFrame(() => go(start, false));
   show(start < pages.length ? start : 0);
 })();
