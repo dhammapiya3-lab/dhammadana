@@ -25,8 +25,19 @@ lib.LEX.pali = words('pali-words.txt'); lib.LEX.en = words('en-words.txt');
 const OPT = { pali: true, gloss: flags.includes('--gloss'), en: true, hanja: false, fn: false, sym: false, paren: true, brack: true, enVoice: false };
 const t = JSON.parse(fs.readFileSync(path.join(root, 'content/texts', ID + '.json'), 'utf8'));
 // 오디오북에서만 바꿔 읽을 곳(책 본문은 그대로): 텍스트 JSON 의 audio_fix [[찾을 글, 바꿀 글], …] — 영어 이름을 한글 소리로, 읽을 수 없는 일본어 제목 빼기 등 (운영자와 상의해 정함)
-const origParts = t.body.split(/^=== (.+?) ===$/m);  // 고치기(audio_fix) 전 글 — 읽기 화면 문단 번호를 알아내는 데 씀
+const origParts = t.body.split(/^===\s*(.*?)\s*===\s*$/m);  // 고치기(audio_fix) 전 글 — 읽기 화면 문단 번호를 알아내는 데 씀
 for (const [a, b] of (t.audio_fix || [])) t.body = t.body.split(a).join(b);
+// 표 번호 '표 1a'·'5b-1'·'3a/3b' 의 붙은 영어 글자는 로마자 풀이로 빠져 '표 일'만 남았음 → 영어 글자 이름으로 (DL-0034, 2026-11-21)
+// 오디오북에서만 정규식으로 바꿀 곳: 텍스트 JSON 의 audio_re [[정규식, 바꿀 글], …] (gm 깃발) — 기호·출전 약어 빼기 등 (DL-0034, 2026-11-21)
+//   그림 소리 글(say)에도 똑같이 씀
+const AB = { a: '에이', b: '비', c: '씨', d: '디', e: '이', f: '에프', g: '쥐', h: '에이치' };
+const RMN = { I: 'Ⅰ', II: 'Ⅱ', III: 'Ⅲ', IV: 'Ⅳ', V: 'Ⅴ', VI: 'Ⅵ', VII: 'Ⅶ', VIII: 'Ⅷ', IX: 'Ⅸ', X: 'Ⅹ' };
+const romanFix = s => s.replace(/^((?:## )?)(VIII|VII|VI|IV|IX|V|III|II|I|X)(\.\s|\s-\s)/gm, (m, h, r) => h + RMN[r] + '. ');  // 장 제목의 로마자 장 번호 'IV.' → 'Ⅳ.' (→ '사장.')
+const audioFx = s => { for (const [re, to] of (t.audio_re || [])) s = s.replace(new RegExp(re, 'gm'), to);
+  return romanFix(s).replace(/(?<![A-Za-z\u00C0-\u024F\d])(\d{1,2})([a-h])(?:-(\d))?(?![A-Za-z\u00C0-\u024F\d])/g, (m, n, l, k) => n + ' ' + AB[l] + (k ? ' 다시 ' + k : '')); };
+t.body = audioFx(t.body);
+if (t.say) for (const k in t.say) t.say[k] = audioFx(t.say[k]);
+for (const c of (t.toc || [])) if (c.title) c.title = romanFix(c.title);
 // 오디오북에서만 통째로 뺄 곳: 텍스트 JSON 의 audio_cut [[시작 글, 끝 글], …] — 시작 글부터 끝 글 앞까지 빼되 쪽 표시(=== N쪽 ===)는 남김
 //   예: DL-0018 '빠알리어의 발음과 표기'의 부호 설명(소리로는 뜻이 통하지 않음 — 운영자 결정, 2026-11-18)
 for (const [a, b] of (t.audio_cut || [])) {
@@ -37,9 +48,18 @@ for (const [a, b] of (t.audio_cut || [])) {
 // 빠알리어 한글 표기의 발음 부호(〬 〭 ᷇ ̫ ͌ ″ ᷾ ᷃ ˑ ˔ ˕, 혼자 쓰인 부호 글자)는 소리가 없으므로 원고에서 뺌 — 글꼴 사전(ph)이 있는 책만 (DL-0018, 2026-11-18)
 //   빼야 '붓당〬Buddhaṁ' 처럼 한글 뒤에 붙은 로마자 풀이도 다른 책과 같이 빠짐
 if (t.ph) t.body = t.body.replace(/[\u302c\u302d\u1dc7\u032b\u034c\u2033\u1dfe\u1dc3\u02d1\u02d4\u02d5\ue900-\ue907]|\u{f0801}/gu, '');
-const parts = t.body.split(/^=== (.+?) ===$/m); // [앞, 이름1, 글1, 이름2, 글2 …]
+const parts = t.body.split(/^===\s*(.*?)\s*===\s*$/m); // [앞, 이름1, 글1, 이름2, 글2 …]
 const pages = []; for (let i = 1; i < parts.length; i += 2) pages.push({ label: parts[i], text: parts[i + 1] || '' });
 const top = (t.toc || []).filter(x => !x.sub && !/^\s/.test(x.title)).sort((x, y) => x.page - y.page);
+// 너무 긴 장은 오디오북에서만 여러 파일로 나눔: 텍스트 JSON 의 audio_split [[아랫단계 목차 제목, 쪽 순번], …] — 그 쪽 첫머리에서 시작하는 소제목이어야 함 (DL-0034, 2026-11-21)
+//   파일 이름·재생 목록 제목은 '장 제목 (2) 소제목', 첫머리에 읽는 제목은 소제목만
+for (const [st, sp] of (t.audio_split || [])) {
+  const y = (t.toc || []).find(x => x.sub && x.title === st && x.page === sp);
+  if (!y) { console.error('audio_split 를 목차에서 찾지 못함: ' + st); process.exit(1); }
+  top.push({ ...y, split: true });
+}
+top.sort((x, y) => x.page - y.page || (x.split ? 1 : 0) - (y.split ? 1 : 0));
+{ let par = null, k = 1; for (const c of top) { if (!c.split) { par = c; k = 1; c.disp = c.title; } else { k++; if (k === 2) par.disp = par.title + ' (1)'; c.disp = par.title + ' (' + k + ') ' + c.title; } } }
 const BODY_FLAT = t.body.replace(/[\u3400-\u9FFF\uF900-\uFAFF]+/g, '').replace(/\*\*|°°|==|\[\^[^\]]*\]/g, '').replace(/\s+/g, ' ');  // 쪽 끝에서 갈린 낱말을 붙일지 볼 때 씀
 const outDir = path.join(root, 'tools/out/audiobook', ID); fs.mkdirSync(outDir, { recursive: true });
 for (const f of fs.readdirSync(outDir)) fs.unlinkSync(path.join(outDir, f));
@@ -182,13 +202,13 @@ top.forEach((c, k) => {
   while (paras.length && (same(paras[0], c.title) || same(paras[0], title))) { paras.shift(); map.shift(); }
   // 장 표지처럼 제목이 여러 문단으로 갈라져 있으면('Ⅰ' + '껍데기는 버리고…') 이어 붙여 같을 때 모두 뺌 (DL-0001, 2026-11-21)
   for (let k = Math.min(3, paras.length); k >= 1; k--) { const j = paras.slice(0, k).join(''); const nj = j.replace(/[\s·.,()\[\]]/g, ''), nt = title.replace(/[\s·.,()\[\]]/g, ''); if (same(j, c.title) || same(j, title) || (nj.length >= 4 && nt.startsWith(nj) && /^[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ](\s|$)/.test(paras[0].trim()))) { paras.splice(0, k); map.splice(0, k); break; } }
-  if (SKIP.test(c.title.replace(/\s/g, '')) && !flags.includes('--all')) { skipped.push(c.title); return; }
+  if ((SKIP.test(c.title.replace(/\s/g, '')) || (t.audio_skip || []).includes(c.title)) && !flags.includes('--all')) { skipped.push(c.title); return; }
   if (!paras.length && !title) return;
   n++;
-  const name = String(n).padStart(2, '0') + '_' + c.title.replace(/[\u3400-\u9FFF]+/g, '').replace(/\(\s*\)/g, '').replace(/[\\/:*?"<>|]/g, '').slice(0, 40).trim() + '.txt';
+  const name = String(n).padStart(2, '0') + '_' + c.disp.replace(/[\u3400-\u9FFF]+/g, '').replace(/\(\s*\)/g, '').replace(/[\\/:*?"<>|]/g, '').slice(0, 40).trim() + '.txt';
   fs.writeFileSync(path.join(outDir, name), [title, ...paras].map(sayNum).join('\n\n') + '\n');
   // 소리 문단 → 읽기 화면 자리 [쪽 순번, 문단 순번] (첫 줄 = 장 제목 → 장 처음, 문단 -1) — 오디오북을 들으며 글 따라가기에 씀
-  fs.writeFileSync(path.join(outDir, name.replace(/\.txt$/, '.map.json')), JSON.stringify({ title: c.title, page: from, to, map: [[from, -1], ...map] }));
+  fs.writeFileSync(path.join(outDir, name.replace(/\.txt$/, '.map.json')), JSON.stringify({ title: c.disp, page: from, to, map: [[from, -1], ...map] }));
 });
 const tsv = ['원문\t소리', ...[...changes].sort((x, y) => x[0].localeCompare(y[0])).map(([w, s]) => `${w}\t${s}`)].join('\n');
 fs.writeFileSync(path.join(outDir, '빨리어_소리_확인.tsv'), tsv + '\n');
