@@ -451,30 +451,30 @@
 },
 "Jataka": {
 "n": 422,
-"pdf": 496347891,
-"pdfs": 50553122,
+"pdf": 496507842,
+"pdfs": 50584101,
 "stories": 32,
-"zip": 495938130
+"zip": 496098081
 },
 "Jataka/001-The-Waterless-Desert": {
 "n": 15,
-"pdf": 14363120,
-"zip": 14097759
+"pdf": 14366579,
+"zip": 14101218
 },
 "Jataka/002-The-Well-of-Perseverance": {
 "n": 15,
-"pdf": 17821764,
-"zip": 17553641
+"pdf": 17830035,
+"zip": 17561912
 },
 "Jataka/003-The-Golden-Bowl": {
 "n": 14,
-"pdf": 15760663,
-"zip": 15495675
+"pdf": 15802528,
+"zip": 15537540
 },
 "Jataka/004-The-Dead-Mouse": {
 "n": 15,
-"pdf": 17534576,
-"zip": 17271141
+"pdf": 17555670,
+"zip": 17292235
 },
 "Jataka/005-The-Measure-of-Rice": {
 "n": 14,
@@ -483,8 +483,8 @@
 },
 "Jataka/006-The-Water-Rakkhasa": {
 "n": 15,
-"pdf": 19104126,
-"zip": 18837707
+"pdf": 19117089,
+"zip": 18850670
 },
 "Jataka/009-The-Kings-Grey-Hair": {
 "n": 14,
@@ -493,13 +493,13 @@
 },
 "Jataka/010-Bliss-of-Renunciation": {
 "n": 14,
-"pdf": 17047806,
-"zip": 16781419
+"pdf": 17049739,
+"zip": 16783352
 },
 "Jataka/011-The-Wisdom-of-Lakkhana": {
 "n": 10,
-"pdf": 12220878,
-"zip": 11956908
+"pdf": 12221958,
+"zip": 11957988
 },
 "Jataka/012-The-Golden-Deer": {
 "n": 14,
@@ -508,13 +508,13 @@
 },
 "Jataka/014-The-Wind-Deer": {
 "n": 9,
-"pdf": 9633388,
-"zip": 9371969
+"pdf": 9634404,
+"zip": 9372985
 },
 "Jataka/018-The-Sacrificial-Goat": {
 "n": 14,
-"pdf": 16413933,
-"zip": 16143550
+"pdf": 16415175,
+"zip": 16144792
 },
 "Jataka/022-The-Teaching-of-the-Dog": {
 "n": 14,
@@ -523,8 +523,8 @@
 },
 "Jataka/023-The-Noble-Warhorse": {
 "n": 14,
-"pdf": 17040175,
-"zip": 16774880
+"pdf": 17058559,
+"zip": 16793264
 },
 "Jataka/026-The-State-Elephant": {
 "n": 13,
@@ -553,13 +553,13 @@
 },
 "Jataka/032-The-Peacocks-Dance": {
 "n": 12,
-"pdf": 16828960,
-"zip": 16564535
+"pdf": 16829701,
+"zip": 16565275
 },
 "Jataka/033-The-Quails-and-the-Net": {
 "n": 14,
-"pdf": 15954771,
-"zip": 15686616
+"pdf": 15960702,
+"zip": 15692547
 },
 "Jataka/034-The-Amorous-Fish": {
 "n": 13,
@@ -578,8 +578,8 @@
 },
 "Jataka/040-The-Fiery-Pit": {
 "n": 12,
-"pdf": 12668566,
-"zip": 12404822
+"pdf": 12668799,
+"zip": 12405055
 },
 "Jataka/041-The-Unfortunate-Monk": {
 "n": 15,
@@ -593,13 +593,13 @@
 },
 "Jataka/044-The-Son-and-the-Mosquito": {
 "n": 13,
-"pdf": 15036997,
-"zip": 14767581
+"pdf": 15070387,
+"zip": 14800970
 },
 "Jataka/046-The-Folly-of-the-Monkeys": {
 "n": 13,
-"pdf": 15971936,
-"zip": 15699780
+"pdf": 15980287,
+"zip": 15708131
 },
 "Jataka/048-The-Rain-of-Ruin": {
 "n": 15,
@@ -615,6 +615,18 @@
 "n": 15,
 "pdf": 19093680,
 "zip": 18828023
+},
+"Jatakamala": {
+"n": 15,
+"pdf": 13615280,
+"pdfs": 1394358,
+"stories": 1,
+"zip": 13351657
+},
+"Jatakamala/01-Tigress": {
+"n": 15,
+"pdf": 13636352,
+"zip": 13350617
 },
 "Light-of-Asia": {
 "n": 118,
