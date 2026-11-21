@@ -1,0 +1,677 @@
+[
+ {
+  "img": "images/25-Sarabha-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     16,
+     30,
+     320,
+     60
+    ],
+    "ko": "사라바 사슴 이야기 (anukampā, 연민)",
+    "cover": [
+     220,
+     216,
+     200
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     16,
+     60,
+     320,
+     168
+    ],
+    "ko": "사람이 다니지 않는 숲에서 보살은 사라바 사슴으로 살았습니다. 그는 평범한 사슴이 아니라 코끼리와도 싸울 만큼 힘세고 기운찬 존재였습니다. 그러나 그는 요기(yogī)처럼 홀로 지내며 만족이라는 덕으로 꾸몄습니다.",
+    "cover": [
+     218,
+     213,
+     198
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Sarabha-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     530,
+     80,
+     790,
+     146
+    ],
+    "ko": "짐승의 탈을 쓴 수행자",
+    "cover": [
+     246,
+     243,
+     236
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     530,
+     146,
+     790,
+     362
+    ],
+    "ko": "그는 숲짐승의 모습이었지만 사람의 지혜를 지녔습니다. 모든 생명에게 다정한 마음을 품었습니다. 풀과 잎과 물만으로 살며 연민을 닦고 세상에서 완전히 벗어나기를 바랐습니다.",
+    "cover": [
+     245,
+     242,
+     234
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Sarabha-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     264,
+     390,
+     304
+    ],
+    "ko": "침입",
+    "cover": [
+     247,
+     245,
+     234
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     304,
+     390,
+     420
+    ],
+    "ko": "그 나라의 왕이 훌륭한 말을 타고 왔습니다. 코끼리와 전차의 군대에서 떨어져 사냥의 흥분에 사로잡힌 그는 대사를 보았습니다. 무예를 시험하고 싶어 말을 몰았고, 죽이기로 마음먹었습니다.",
+    "cover": [
+     245,
+     241,
+     229
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Sarabha-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     314,
+     680,
+     354
+    ],
+    "ko": "“추격”",
+    "cover": [
+     239,
+     234,
+     219
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     120,
+     354,
+     680,
+     432
+    ],
+    "ko": "보살은 있는 힘껏 빨리 달아났습니다. 싸울 힘이 없어서가 아니라 폭력을 끊었기 때문이었습니다. 말의 빠르기에 휩쓸린 왕은 앞의 위험한 땅을 모른 채 마구 달렸습니다.",
+    "cover": [
+     237,
+     232,
+     215
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Sarabha-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     410,
+     20,
+     794,
+     50
+    ],
+    "ko": "“구덩이”",
+    "cover": [
+     238,
+     235,
+     219
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     410,
+     50,
+     794,
+     150
+    ],
+    "ko": "큰 구덩이가 길을 가로막고 있었습니다. 사라바는 ‘작은 물웅덩이인 듯’ 뛰어넘었습니다. 그러나 너무 늦게 구덩이를 본 말은 벼랑 끝에서 갑자기 멈추었습니다. 탄 이에게는 그 기세가 너무 컸습니다.",
+    "cover": [
+     244,
+     239,
+     218
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Sarabha-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     110,
+     290,
+     156
+    ],
+    "ko": "“떨어짐”",
+    "cover": [
+     246,
+     244,
+     232
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     156,
+     290,
+     336
+    ],
+    "ko": "갑자기 멈추자 왕은 안장에서 튕겨 나갔습니다. ‘다이띠야 전사가 바다에 가라앉듯’ 깊은 구덩이로 곤두박질쳤습니다. 사냥꾼은 스스로 살피지 못한 탓에 보지 못한 덫으로 굴러떨어졌습니다.",
+    "cover": [
+     245,
+     242,
+     228
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Sarabha-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     50,
+     572,
+     90
+    ],
+    "ko": "침묵",
+    "cover": [
+     184,
+     213,
+     224
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     230,
+     90,
+     572,
+     200
+    ],
+    "ko": "발굽 소리가 그쳤습니다. 뒤돌아본 보살은 탄 이 없는 말을 보았습니다. 그는 생각했습니다. “틀림없이 왕이 떨어졌다. 여기에는 그늘을 줄 나무도 목욕할 못도 없다. 분명 이 구덩이에 떨어졌으리라.”",
+    "cover": [
+     203,
+     222,
+     228
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Sarabha-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     520,
+     110,
+     784,
+     162
+    ],
+    "ko": "“연민이 일다”",
+    "cover": [
+     245,
+     245,
+     232
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     520,
+     162,
+     784,
+     360
+    ],
+    "ko": "안도하는 대신 고귀한 마음의 그는 큰 연민을 느꼈습니다. 얼마 전까지 왕의 일산 아래 신처럼 섬김받던 왕이 이제 흙먼지 속에 뼈가 부러진 채 누워 있다고 생각했습니다. “그를 운명에 맡겨 버리는 것은 옳지 않다.”",
+    "cover": [
+     244,
+     241,
+     227
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Sarabha-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     376,
+     160,
+     760,
+     200
+    ],
+    "ko": "위에서 들려온 목소리",
+    "cover": [
+     40,
+     34,
+     28
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     376,
+     200,
+     760,
+     340
+    ],
+    "ko": "사라바가 벼랑 끝에 서서 또렷한 사람의 말로 말했습니다. “대왕이시여, 다치지는 않으셨습니까? 아픔은 벌써 덜하십니까?” 그는 원수에게 겸손하고 다정한 말로 말을 건넸습니다.",
+    "cover": [
+     40,
+     34,
+     28
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Sarabha-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     110,
+     420,
+     150
+    ],
+    "ko": "구해 주겠다는 제안",
+    "cover": [
+     246,
+     246,
+     238
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     24,
+     150,
+     420,
+     340
+    ],
+    "ko": "“저는 도깨비가 아니라 대왕의 풀을 먹고 자란 숲짐승입니다. 저를 믿으신다면 구해 드리겠습니다.”\n왕은 이 부드러움에 어리둥절했습니다. 부끄러움이 일었습니다. “짐승은 나다. 저분은 사라바의 모습만 지닌 어떤 존재로구나.”",
+    "cover": [
+     244,
+     240,
+     224
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Sarabha-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     120,
+     344,
+     160
+    ],
+    "ko": "내려감",
+    "cover": [
+     40,
+     34,
+     28
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     24,
+     160,
+     344,
+     340
+    ],
+    "ko": "사라바는 먼저 사람 무게의 돌을 지고 힘을 시험했습니다. 자신이 생기자 ‘지옥 같은’ 구덩이로 내려가, 죽이려는 것이 아니라 구하려고 왕에게 다가갔습니다. “부디 제 몸에 손대시는 것을 참아 주십시오.”",
+    "cover": [
+     40,
+     34,
+     28
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Sarabha-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     120,
+     340,
+     160
+    ],
+    "ko": "올라감",
+    "cover": [
+     40,
+     34,
+     28
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     24,
+     160,
+     340,
+     362
+    ],
+    "ko": "왕이 짐승의 등에 올랐습니다. 사라바는 뛰어난 힘과 빠르기로 위로 올라갔습니다. ‘아치 위에 솟은 돌코끼리’ 같았습니다. 그는 왕을 그 닿을 수 없는 곳에서 꺼내 말과 다시 만나게 했습니다.",
+    "cover": [
+     40,
+     34,
+     28
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/25-Sarabha-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     510,
+     20,
+     790,
+     64
+    ],
+    "ko": "왕의 감사",
+    "cover": [
+     232,
+     216,
+     173
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     510,
+     64,
+     790,
+     200
+    ],
+    "ko": "감격한 왕은 나라를 바쳤습니다. “내 목숨은 그대 뜻대로 하시오.” 그는 숲의 위험(비, 더위, 사냥꾼)이 은인에게 너무 가혹하다고 여겨, 사라바에게 도성으로 와 달라고 빌었습니다.",
+    "cover": [
+     236,
+     221,
+     179
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Sarabha-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     114,
+     330,
+     156
+    ],
+    "ko": "가르침",
+    "cover": [
+     244,
+     237,
+     219
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     24,
+     156,
+     330,
+     390
+    ],
+    "ko": "보살은 사양했습니다. “사람의 즐거움이 다르고 숲짐승의 즐거움이 다릅니다.”\n그의 마지막 가르침은 이러했습니다. “영웅이시여, 사냥을 영원히 그만두십시오. 짐승도 사람과 똑같이 아픔을 느낍니다. 자기에게 싫은 일을 남에게 하지 마십시오.”",
+    "cover": [
+     244,
+     237,
+     219
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-Sarabha-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     10,
+     332,
+     790,
+     364
+    ],
+    "ko": "맺음",
+    "cover": [
+     242,
+     235,
+     215
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     10,
+     364,
+     790,
+     446
+    ],
+    "ko": "왕은 달라진 사람이 되어 궁으로 돌아가 보시와 바른 행실에 힘썼습니다. 사라바는 고요한 숲으로 돌아갔습니다.\n가르침: 깊이 연민하는 이는 자기 목숨을 노린 자에게도 그가 어려울 때 연민을 보입니다.",
+    "cover": [
+     242,
+     235,
+     214
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
