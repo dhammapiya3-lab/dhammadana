@@ -120,7 +120,7 @@ for P in PAGES[3:]:
     for k, p in enumerate(P['paras']):
         if p.startswith('## '):
             t = p[3:].strip()
-            e = dict(title=re.sub(r'\s+', ' ', re.sub(r'^\*\s*', '', t)), page=idx[P['n']], sub=False)
+            e = dict(title=re.sub(r'\s*_빤[냐나]와로.*$', '', re.sub(r'\s+', ' ', re.sub(r'^\*\s*', '', t))).strip(), page=idx[P['n']], sub=False)  # 목차 이름은 '_빤냐와로 스님법문_담마스쿨_날짜' 앞까지 (운영자 요청, 2026-11-21)
             if k: e['at'] = t[:20]
             toc.append(e)
 
@@ -130,6 +130,6 @@ for P in PAGES:
 body = body.rstrip() + '\n'
 out = os.path.join(REPO, 'content/texts', f'{BK}.json')
 json.dump({'book': BK, 'edition': ED, 'toc': toc, 'images': [], 'body': body},
-          open(out, 'w'), ensure_ascii=False, indent=1)
+          open(out, 'w'), ensure_ascii=False, indent=2)
 for k, v in log.items(): print(v, k)
 print('장', len(toc), '쪽', len(PAGES), '→', out)
