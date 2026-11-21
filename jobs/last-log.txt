@@ -1,12 +1,12 @@
-Jatakamala 18-Childless 14 장
+Jatakamala 19-Lotus-Stalks 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 75 개 / 한글판 이야기 274 편
+R2 에 올림: 77 개 / 한글판 이야기 275 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 869743바이트
-이야기 Jatakamala/18-Childless {'pdf': 11032032, 'zip': 10751247, 'n': 14}
-책 Jatakamala {'pdf': 234837957, 'pdfs': 23464991, 'zip': 234483735, 'stories': 18, 'n': 264}
+공개 주소 확인: 200 860094바이트
+이야기 Jatakamala/19-Lotus-Stalks {'pdf': 13117498, 'zip': 12839252, 'n': 15}
+책 Jatakamala {'pdf': 247682631, 'pdfs': 24767507, 'zip': 247322996, 'stories': 19, 'n': 279}
 내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 274 이야기
+글로 보기: 275 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
