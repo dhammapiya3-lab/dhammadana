@@ -1,6 +1,45 @@
 [
- {"p": ["147쪽"], "a": "우빠시까(upāsika)", "b": "우빠시까(upāsikā)"},
- {"p": ["147쪽"], "a": "브라흐마짜리니(brahmacārī)", "b": "브라흐마짜리니(brahmacārinī)"},
- {"p": ["104쪽"], "a": "adhikaraṇa samuppāda ūpasama kusalo", "b": "adhikaraṇa samuppāda vūpasama kusalo"},
- {"p": ["143쪽"], "a": "준 usb에는", "b": "준 USB에는"}
+ {
+  "p": [
+   "147쪽"
+  ],
+  "a": "우빠시까(upāsika)",
+  "b": "우빠시까(upāsikā)"
+ },
+ {
+  "p": [
+   "147쪽"
+  ],
+  "a": "브라흐마짜리니(brahmacārī)",
+  "b": "브라흐마짜리니(brahmacārinī)"
+ },
+ {
+  "p": [
+   "104쪽"
+  ],
+  "a": "adhikaraṇa samuppāda ūpasama kusalo",
+  "b": "adhikaraṇa samuppāda vūpasama kusalo"
+ },
+ {
+  "p": [
+   "143쪽"
+  ],
+  "a": "준 usb에는",
+  "b": "준 USB에는"
+ },
+ {
+  "p": [
+   "38쪽"
+  ],
+  "a": "아살라하(āsāḷhā)",
+  "b": "아살라하(Āsāḷhā)"
+ },
+ {
+  "p": [
+   "94쪽",
+   "95쪽"
+  ],
+  "a": "아짜리아",
+  "b": "아짜리야"
+ }
 ]
