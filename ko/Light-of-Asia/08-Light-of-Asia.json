@@ -1,0 +1,732 @@
+[
+ {
+  "img": "images/Light-of-Asia-08-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     100,
+     600,
+     196
+    ],
+    "ko": "아시아의 빛:\n나가라의 가르침",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     230,
+     196,
+     570,
+     246
+    ],
+    "ko": "에드윈 아놀드 경의 서사시\n제8권을 그림으로 따라가는 여행",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     230,
+     386,
+     580,
+     444
+    ],
+    "ko": "연꽃 위에 이슬이 맺혔네! 떠올라라, 큰 해여!\n내 잎을 들어 올려 나를 물결과 섞어 다오.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-08-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     12,
+     20,
+     460,
+     66
+    ],
+    "ko": "강가의 동산",
+    "cover": [
+     20,
+     29,
+     47
+    ],
+    "align": "center",
+    "em": 26,
+    "whole": true,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     12,
+     66,
+     460,
+     190
+    ],
+    "ko": "나가라 도성에서 해가 금빛과 푸른빛 저녁으로 질 때\n부처님께서는 아버지와 가족을 다시 만나 법을\n설하십니다. 왕들과 대신들과 ‘노란 가사를 입은\n고요한 형제들’이 모입니다. 호랑이와 늑대와 비둘기\n같은 짐승들도 ‘온 세상을 품는 큰 사랑’을 느끼고\n해묵은 두려움을 떨치고 귀를 기울입니다.",
+    "cover": [
+     39,
+     45,
+     55
+    ],
+    "align": "center",
+    "em": 15,
+    "whole": true,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-08-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     480,
+     36,
+     790,
+     82
+    ],
+    "ko": "쉼 없는 바퀴",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     560,
+     96,
+     792,
+     360
+    ],
+    "ko": "존재는 처음도 끝도 없는\n강입니다. 별들은 휩쓸려\n돌고 세계는 바뀌며, 삶은\n‘다툼과 시달림의 거대한\n소용돌이 바퀴’ 속에\n움직입니다. 우리는 쉼 없는\n변화의 굴레에 갇혀,\n어느 것도 멈추지 않고\n평화는 머물지 않습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     20,
+     370,
+     520,
+     440
+    ],
+    "ko": "기도하지 말라! 어둠은 밝아지지 않으리라!\n침묵에게 아무것도 구하지 말라. 그것은 말할 수 없으니!",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-08-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     170,
+     36,
+     630,
+     82
+    ],
+    "ko": "우리를 만드는 이는 우리 자신",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     210,
+     176,
+     470,
+     250
+    ],
+    "ko": "“사람은 저마다 자기 감옥을 짓나니…\n지난 일이 다가올 일을 낳는다.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     20,
+     382,
+     780,
+     448
+    ],
+    "ko": "어떤 신도 악마도 우리 운명을 다스리지 않습니다. 해탈은 안에서 찾아야 합니다. 지금의 기쁨과\n괴로움은 지난 행위의 열매입니다. 참깨를 뿌리면 참깨를 거두고 옥수수를 뿌리면 옥수수를 거둡니다.\n우리는 지난 생에 뿌린 것을 거두는 이들입니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-08-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     30,
+     330,
+     76
+    ],
+    "ko": "첫째 진리: 괴로움",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     20,
+     90,
+     210,
+     432
+    ],
+    "ko": "삶은 잠깐의 즐거움이\n있어도 괴로움(둑카)에\n묶여 있습니다.\n\n‘태어나는 아픔, 힘없는\n날들의 아픔… 차갑고\n잿빛인 세월의 아픔.’\n\n즐거움은 ‘내려앉았다\n날아가는 새’일 뿐입니다.\n\n사랑마저 죽음으로\n헤어지며 끝나고,\n‘독수리가 장수와 왕의\n뼈마디를 쫀다.’",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-08-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     560,
+     40,
+     790,
+     124
+    ],
+    "ko": "둘째 진리:\n원인은 갈망",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     556,
+     140,
+     796,
+     318
+    ],
+    "ko": "괴로움은 갈애(땅하)에서\n솟습니다. 그것은 ‘거짓 자아’와\n물질세계의 그림자에 대한\n사나운 집착입니다. 이 목마름이\n영혼을 마비시켜 새 속임수를\n좇게 하고 다시 다툼 속에\n태어나게 합니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     556,
+     318,
+     796,
+     446
+    ],
+    "ko": "그리하여 땅의 전쟁을 일으키는\n다툼과 욕정이 자라고…\n그리하여 비란 잡초가\n악한 뿌리와 함께 퍼지네.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-08-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     14,
+     24,
+     336,
+     116
+    ],
+    "ko": "셋째 진리:\n자아가 그침",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     20,
+     120,
+     310,
+     330
+    ],
+    "ko": "자기에 대한 사랑과 삶에 대한\n욕망을 이기면 다툼이 끝납니다.\n\n‘자아의 거짓과 욕정’을 씻어\n내면 오래된 슬픈 셈이\n깨끗해집니다.\n\n윤회를 굴리던 연료가\n다했기에 괴로움이 끝납니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     20,
+     350,
+     310,
+     420
+    ],
+    "ko": "기름이 다한 등불이\n어찌 깜박이겠는가?",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-08-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     556,
+     36,
+     796,
+     132
+    ],
+    "ko": "넷째 진리:\n바탕",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     556,
+     132,
+     796,
+     236
+    ],
+    "ko": "팔정도는 평화로 가는 길입니다.\n모두에게 열려 있으니 ‘모든 발이\n밟기에 평탄한 길’입니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     560,
+     228,
+     792,
+     446
+    ],
+    "ko": "첫걸음:\n1. 바른 견해: 법을 두려워하고\n   업을 살펴라.\n2. 바른 사유: 모두에게 선의를,\n   불친절은 사라지게 하라.\n3. 바른 말: 입술을 다스려 말을\n   고요하고 공정하게 하라.\n4. 바른 행위: 모든 행위가 공덕을\n   기르게 하라.",
+    "cover": null,
+    "align": "left",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-08-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     40,
+     380,
+     116
+    ],
+    "ko": "햇빛 비치는 설산으로\n오르는 길",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     14,
+     120,
+     388,
+     174
+    ],
+    "ko": "더 높은 길은 ‘세상일을 마친’ 이들을\n위한 것입니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     14,
+     174,
+     388,
+     338
+    ],
+    "ko": "높은 걸음:\n5. 바른 생계: 마음을 깨끗이 함.\n6. 바른 정진: 생각을 다스림.\n7. 바른 마음챙김: ‘바른 홀로 있음’,\n   둥지를 떠남.\n8. 바른 삼매: 감각의 사슬을 끊음.",
+    "cover": null,
+    "align": "left",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     14,
+     338,
+     388,
+     446
+    ],
+    "ko": "굳센 영혼은 서두르고\n약한 이는 머뭇거리나, 모두\n햇빛 비치는 설산에 이르리라.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-08-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     560,
+     40,
+     790,
+     124
+    ],
+    "ko": "나아감의\n네 단계",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     560,
+     132,
+     796,
+     190
+    ],
+    "ko": "길에 먼지처럼 깔린 ‘열 가지\n죄’와 벌이는 싸움입니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     560,
+     192,
+     796,
+     446
+    ],
+    "ko": "1. 수다원: 진리를 압니다.\n2. 사다함: 의심에서 벗어나\n   한 번만 더 태어납니다.\n3. 아나함: 미움과 욕정을\n   씻어 모든 것을 온전한\n   평화 속에 사랑합니다.\n4. 아라한: 자만과 그릇된\n   견해와 교만까지 모든 죄가\n   사라집니다. ‘우주가\n   나와 하나가 됩니다.’",
+    "cover": null,
+    "align": "left",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-08-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     300,
+     36,
+     500,
+     90
+    ],
+    "ko": "열반",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     8,
+     364,
+     792,
+     448
+    ],
+    "ko": "소멸이 아니라 갈라짐의 끝입니다. 그것은 ‘생명도 시간도 없는 지복’입니다.\n열반을 그저 없어지는 것이라 가르치는 이가 있다면 그는 거짓을 말한다고 하라.\n‘이슬방울이 빛나는 바다로 미끄러져 든다!’ 한정된 모습으로 ‘있기’를\n그치면서 삶과 하나가 되는 역설입니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-08-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     10,
+     40,
+     300,
+     124
+    ],
+    "ko": "올바름의\n다섯 가지 규칙",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     10,
+     128,
+     300,
+     444
+    ],
+    "ko": "보석보다 값진 삶의 규칙:\n1. 죽이지 말라:\n   연민으로.\n2. 아낌없이 주라:\n   탐욕이나 힘으로\n   빼앗지 말라.\n3. 거짓 증언을 하지 말라:\n   진실은 안의 깨끗함이다.\n4. 약과 술을 멀리하라:\n   맑은 마음은 소마즙이\n   필요 없다.\n5. 이웃의 아내를 범하지\n   말라: 그릇된 육신의\n   죄를 피하라.",
+    "cover": null,
+    "align": "left",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-08-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     24,
+     796,
+     90
+    ],
+    "ko": "재가자의 길",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     96,
+     792,
+     190
+    ],
+    "ko": "‘높은 길을 걷기에 발이 너무\n약한’ 이들에게도 공덕의\n길이 있습니다.\n여섯 방향: 하늘에 쌀을 뿌리는\n대신 이들에게 사랑을 바쳐라.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     192,
+     792,
+     330
+    ],
+    "ko": "• 부모 (동쪽)\n• 스승 (남쪽)\n• 아내와 자식 (서쪽)\n• 벗 (북쪽)\n• 가장 낮은 것들 (아래),\n  성자와 천신 (위)",
+    "cover": null,
+    "align": "left",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     334,
+     792,
+     430
+    ],
+    "ko": "깨끗하고 너그럽고 공경하는\n삶은 다음 생에 ‘풍성한\n수확’을 만듭니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-08-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     30,
+     560,
+     90
+    ],
+    "ko": "노란 가사의 승가",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     14,
+     94,
+     470,
+     196
+    ],
+    "ko": "승가의 바탕, ‘삶의 낮은 골짜기를 업신여기며\n높이 나는’ 이들.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     20,
+     160,
+     440,
+     440
+    ],
+    "ko": "승가의 규칙:\n• 소유물: 세 벌 가사(노랗게 물들여\n  기운 것), 허리띠, 발우, 물 거르개.\n• 수행: 열 가지 계율, 세 가지 문\n  (몸·말·마음), 네 가지 선정.\n• 사명: 재물의 덫에서 벗어나\n  자유롭게 살며 세상을 돕는 것.",
+    "cover": null,
+    "align": "left",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-08-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     18,
+     650,
+     66
+    ],
+    "ko": "귀의",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     120,
+     66,
+     680,
+     128
+    ],
+    "ko": "왕은 절하며 ‘가장 낮고 작은 이’가 되기를 청합니다.\n야소다라는 아들 라훌라를 위해 ‘왕국의 보배’를 청합니다.\n그날 밤부터 아시아의 빛이 퍼져 나갔습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     170,
+     376,
+     630,
+     450
+    ],
+    "ko": "옴 마니 빠드메 훔, 해가 떠오르네!\n이슬방울이 빛나는 바다로 미끄러져 드네!",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
