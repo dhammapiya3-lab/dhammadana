@@ -1,0 +1,957 @@
+[
+ {
+  "img": "images/12-Brahman-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     20,
+     620,
+     66
+    ],
+    "ko": "바라문 이야기 (부끄러움)",
+    "cover": [
+     225,
+     203,
+     171
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     180,
+     66,
+     620,
+     164
+    ],
+    "ko": "옛날 보살은 가문과 행실로 이름난 바라문 집안에 태어났습니다. 베다를 배우려 스승의 집에 머물며, 고요함과 바른 몸가짐으로 두드러졌습니다.",
+    "cover": [
+     243,
+     231,
+     210
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/12-Brahman-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     20,
+     600,
+     66
+    ],
+    "ko": "덕 있는 제자",
+    "cover": [
+     247,
+     242,
+     229
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     200,
+     66,
+     600,
+     216
+    ],
+    "ko": "경전을 빨리 익히고,\n정성껏 따르며,\n바르게 행동하여\n스승의 마음을 얻었습니다.",
+    "cover": [
+     248,
+     243,
+     230
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     100,
+     410,
+     700,
+     448
+    ],
+    "ko": "끊임없이 닦은 덕은 마법의 부적과 같습니다.",
+    "cover": [
+     248,
+     242,
+     229
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/12-Brahman-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     20,
+     740,
+     64
+    ],
+    "ko": "스승의 슬픔",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     64,
+     740,
+     152
+    ],
+    "ko": "가족도 그를 돕지 않고\n기쁨도 없으니…\n가난한 이의 소원이 어찌 이루어지랴?",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     394,
+     760,
+     448
+    ],
+    "ko": "제자들의 됨됨이를 시험하려고 스승은 자주 괴로움을 하소연했습니다.\n돈 없는 사람의 처지는 업신여김의 집이요 고생의 거처라고 한탄했습니다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/12-Brahman-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     20,
+     740,
+     64
+    ],
+    "ko": "탁발을 물리치다",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     64,
+     740,
+     150
+    ],
+    "ko": "굶주림은 음식으로 쫓아낸다…\n그러나 가난의 고통은 재물로만 없어지니,\n재물이야말로 친척에게 존경받는 까닭이다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     380,
+     760,
+     448
+    ],
+    "ko": "제자들이 애써 탁발해 왔지만 스승은 거절했습니다.\n빌어먹는 것으로는 가난의 괴로움을 고칠 수 없으며, 큰 재물을 얻어야만 괴로움이 끝난다고 우겼습니다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/12-Brahman-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     20,
+     740,
+     64
+    ],
+    "ko": "어두운 제안",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     64,
+     740,
+     150
+    ],
+    "ko": "어려운 때를 위한 법도에 따르면\n도둑질은 바라문에게 허락된 생계이다…\n그러니 우리가 남의 재물을 누려도 죄가 아니다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     400,
+     760,
+     448
+    ],
+    "ko": "스승은 법전에서 해법을 내놓았습니다.\n아빳다르마(āpaddharma, 어려운 때의 행동 법도)였습니다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/12-Brahman-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     20,
+     740,
+     64
+    ],
+    "ko": "핑계",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     64,
+     740,
+     118
+    ],
+    "ko": "이 모든 재물은 참으로\n바라문의 것이다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     388,
+     760,
+     448
+    ],
+    "ko": "스승은 바라문이 땅의 정당한 주인이니, 몹시 어려울 때 재물을 가져오는 것은 죄가 아니라 제 재산을 되찾는 일이라고 주장했습니다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/12-Brahman-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     20,
+     740,
+     64
+    ],
+    "ko": "비밀이라는 조건",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     64,
+     740,
+     116
+    ],
+    "ko": "평판을 생각해 그런 방식으로 가져가서는 안 된다.\n그러니 너희는 외진 곳, 외진 때에 힘을 써야 한다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     386,
+     760,
+     448
+    ],
+    "ko": "폭력을 말린 것은 그것이 그릇되어서가 아니라 평판을 해치기 때문이었습니다. 명령은 분명했습니다. 아무도 보지 않는 곳에서 훔쳐라.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/12-Brahman-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     20,
+     740,
+     64
+    ],
+    "ko": "말없는 거절",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     64,
+     740,
+     118
+    ],
+    "ko": "타고난 선함이 그로 하여금 스승의 말을 따르지 못하게 했습니다…\n그는 부끄러워 눈을 내리깔고 가만히 한숨지으며 말없이 있었습니다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     388,
+     760,
+     448
+    ],
+    "ko": "이런 말로 스승은 제자들의 고삐를 풀어 주었습니다.\n모두 그 일에 동의했지만 한 사람만은 그러지 않았습니다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/12-Brahman-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     20,
+     740,
+     64
+    ],
+    "ko": "나무람",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     64,
+     740,
+     118
+    ],
+    "ko": "너에게서는 게으름과 둔함밖에 보이지 않는구나.\n우리의 괴로움이 너에게는 아무렇지도 않은 모양이다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     390,
+     760,
+     448
+    ],
+    "ko": "스승은 왜 보살이 잠자코 있는지 따져 물었습니다.\n용기가 없어서인가? 아니면 스승의 괴로움에 마음이 없어서인가?",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/12-Brahman-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     20,
+     740,
+     64
+    ],
+    "ko": "반론",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     64,
+     740,
+     118
+    ],
+    "ko": "제가 물러서 있는 것은\n애정이 없거나 마음이 모질어서가 아닙니다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     384,
+     760,
+     448
+    ],
+    "ko": "보살은 스승이 말한 방식은 실행할 수 없다고 설명했습니다.\n아무도 보지 않게 악행을 저지르는 것은 불가능하기 때문입니다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/12-Brahman-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     20,
+     740,
+     64
+    ],
+    "ko": "세상의 눈",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     64,
+     740,
+     118
+    ],
+    "ko": "아닙니다. 악행하는 이에게 세상 어디에도 외진 곳은 없습니다.\n보이지 않는 존재들과 청정한 성자들이 사람의 행위를 지켜보지 않습니까?",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     388,
+     760,
+     448
+    ],
+    "ko": "어리석은 이는 혼자라 여기고 죄를 짓습니다.\n하늘의 눈이 몸의 눈을 넘어서는 힘을 지녔음을 모르기 때문입니다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/12-Brahman-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     20,
+     740,
+     64
+    ],
+    "ko": "안의 증인",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     64,
+     740,
+     118
+    ],
+    "ko": "나쁜 행위에 대해서는 나 자신이\n누구보다 눈 밝은 증인입니다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     386,
+     760,
+     448
+    ],
+    "ko": "아무도 보이지 않는 곳이라 해서 나 자신마저 없는 곳이겠습니까?\n내가 악을 행하고 있음을 나 자신은 확실히 압니다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/12-Brahman-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     20,
+     740,
+     64
+    ],
+    "ko": "선택",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     64,
+     740,
+     118
+    ],
+    "ko": "차라리 발우를 들고 남루한 옷을 입는 편이 낫습니다…\n부끄러움 없이 바른 법을 죽이는 데 마음을 굽히는 것보다는.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     388,
+     760,
+     448
+    ],
+    "ko": "그는 재물을 위해 바른 법을 죽이기를 거부합니다.\n죄의 부끄러움보다 가난을 택합니다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/12-Brahman-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     20,
+     740,
+     64
+    ],
+    "ko": "드러난 뜻",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     64,
+     740,
+     118
+    ],
+    "ko": "가을에 떠오른 달이 하늘을 꾸미듯\n그대는 티 없는 그대 가문의 장식이로다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     388,
+     760,
+     448
+    ],
+    "ko": "기쁨에 넘친 스승이 외쳤습니다. “훌륭하다!”\n그것은 시험이었습니다. 그를 가르친 수고는 헛되지 않았습니다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/12-Brahman-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     20,
+     740,
+     64
+    ],
+    "ko": "부끄러움(hiri)의 가르침",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     64,
+     740,
+     118
+    ],
+    "ko": "이처럼 마음속 자신에 대한 부끄러움이야말로\n덕 있는 이가 바른 행실의 경계를 넘지 못하게 합니다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     406,
+     760,
+     448
+    ],
+    "ko": "경건한 이는 부끄러움이라는 든든한 피난처를 지녀야 합니다.",
+    "cover": [
+     242,
+     236,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
