@@ -1,0 +1,582 @@
+[
+ {
+  "img": "images/Light-of-Asia-04-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     338,
+     600,
+     380
+    ],
+    "ko": "아시아의 빛",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 40,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     150,
+     382,
+     650,
+     408
+    ],
+    "ko": "제4권: 위대한 출가",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     60,
+     410,
+     740,
+     448
+    ],
+    "ko": "인도의 밤이 들판에 부드럽게 내려앉습니다. 짜이뜨라 달의 보름입니다. 망고와 아소까 꽃봉오리\n향이 바람에 달고, 궁전은 은빛 달 아래 잠들어 있습니다. 승냥이만 돌아다닐 뿐, 세상은 기다립니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-04-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     30,
+     790,
+     90
+    ],
+    "ko": "금빛 새장",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 36,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     430,
+     100,
+     792,
+     444
+    ],
+    "ko": "위스람완 안에서 달빛은 무늬 창살\n사이로 반짝이며 진주조개를 박은\n벽과 대리석 바닥을 비춥니다. 은으로\n새긴 등불이 설화석고 천장에 매달려\n흔들리며, 잠든 궁의 사람들 위에\n부드러운 빛과 그늘을 드리웁니다.\n\n여기에는 왕자가 고른 사람들이\n보석 박힌 벽 너머의 세상을\n모른 채 잠들어 있습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-04-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     20,
+     530,
+     90
+    ],
+    "ko": "영원하다는 착각",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 36,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     20,
+     100,
+     400,
+     430
+    ],
+    "ko": "그들은 무심히 우아하게 누워 있습니다.\n팔다리는 반쯤 가려지고 머리는 금과\n재스민으로 묶었습니다. 한 사람은 반쯤\n먹은 장미를 쥐었고, 또 한 사람은\n마노와 산호 목걸이를 꿰다가 마지막\n터키석 구슬을 꿰지 못한 채 잠들었습니다.\n\n즐거운 꿈에 잠긴 그들은 낮을 아름답게\n할 새벽을 기다립니다. 그들의 주인이\n깨어나고 있는 줄도 모른 채.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-04-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     26,
+     640,
+     80
+    ],
+    "ko": "아내의 악몽",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     30,
+     86,
+     392,
+     196
+    ],
+    "ko": "야소다라는 세 가지 꿈에 놀라 깹니다.\n흰 황소가 외양간을 부수고 나가고,\n왕의 깃발이 낯선 지혜를 적은 보석\n두루마리로 바뀌고, 신방의 침상이\n땅속으로 꺼지는 꿈입니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     412,
+     86,
+     770,
+     170
+    ],
+    "ko": "“발찌가 떨어지고 금팔찌가 갈라졌어요…\n이런 꿈이 무엇을 뜻하겠어요? 제가\n죽거나, 아니면 더 나쁘게, 당신이\n저를 떠나시는 것 말고는?”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-04-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     20,
+     420,
+     72
+    ],
+    "ko": "“더 큰 사랑”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     20,
+     90,
+     410,
+     430
+    ],
+    "ko": "싯닷타는 그녀를 달랩니다. 떠나는\n것만이 그녀가 두려워하는 괴로움에서\n그녀를 구할 길임을 알기 때문입니다.\n그는 그녀를 사랑하지만, 자기를 부르는\n세상의 슬픈 울음을 듣습니다.\n\n“나는 야소다라를 사랑했고 지금도\n사랑하오… 그러나 내 영혼이 알지 못하는\n영혼들을 위해 이토록 애타게 그리워한다면,\n높이 나는 내 생각이 여기를 얼마나\n맴돌지 헤아려 보오.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-04-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     350,
+     36,
+     790,
+     112
+    ],
+    "ko": "온 세상의 부름",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     350,
+     116,
+     780,
+     440
+    ],
+    "ko": "야소다라는 잠듭니다. 싯닷타는 창가로\n몸을 돌립니다. 달은 게자리 곁에 빛나고\n별들은 은빛 차례로 늘어서서 때가\n왔다고 속삭입니다.\n\n바로 오늘 밤이다! 큰 영화의 길이냐,\n선의 길이냐를 골라라. 왕 중의 왕으로\n다스릴 것이냐, 세상을 돕기 위해 왕관도\n집도 없이 홀로 떠돌 것이냐.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-04-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     20,
+     620,
+     70
+    ],
+    "ko": "세상의 슬픔",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     10,
+     362,
+     300,
+     440
+    ],
+    "ko": "그는 삶의 슬픈 울음을 듣습니다. 하루살이\n부터 신에 이르기까지 모두가 변화의 바퀴에\n묶여 있음을 봅니다. 기도에는 의지처가\n없습니다. 신들조차 약하기 때문입니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     362,
+     790,
+     440
+    ],
+    "ko": "누군가 사람을 이 저주에서 구할 수\n있다면 온 세상이 이 무명의 공포를\n덜리라. 조상들이 부싯돌에서 불을\n얻었듯, 그는 그 불씨를 찾으러 떠납니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-04-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     10,
+     10,
+     420,
+     90
+    ],
+    "ko": "말없는 작별",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     20,
+     96,
+     392,
+     440
+    ],
+    "ko": "그는 잠든 아내와 아이에게 애틋한\n눈길로 작별을 고합니다. 안아 주고\n싶지만, 안으면 깨우게 되고 깨우면\n뜻을 이루지 못함을 압니다.\n\n“다시는 저기 눕지 않으리! 나는\n젊음과 왕좌와 즐거움을 내려놓소…\n그리고 그대의 품도, 사랑하는\n왕비여! 다른 무엇보다 내려놓기\n어려운 그 품을!”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-04-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     40,
+     792,
+     100
+    ],
+    "ko": "환영과의 작별",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     430,
+     110,
+     790,
+     380
+    ],
+    "ko": "그는 잠든 궁의 사람들, 강가와\n고따미를 지나갑니다. 그는 그들을\n즐거움의 대상이 아니라, 시간의 도끼를\n기다리는 덧없는 목숨으로 봅니다.\n\n“장미가 지면 그 향기와 빛은 어디로\n가는가?… 밤이여, 무겁게 내려앉아라!\n저들의 감긴 눈꺼풀 위에. 어떤 눈물도\n나를 붙잡지 못하게.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-04-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     20,
+     600,
+     68
+    ],
+    "ko": "부름",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     30,
+     76,
+     390,
+     180
+    ],
+    "ko": "바깥뜰의 어둠 속에서 싯닷타는\n마부를 깨웁니다. “찬나여, 일어나라!\n깐타까를 데려오너라!”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     412,
+     70,
+     796,
+     200
+    ],
+    "ko": "찬나가 만류합니다. “이곳을 떠나\n풍요로운 세상을 놓고 거지의 발우를\n드시렵니까?” 왕자가 답합니다. “내가\n바라는 나라는 수많은 왕국보다 크다…\n깐타까를 데려오너라!”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-04-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     16,
+     420,
+     70
+    ],
+    "ko": "신비로운 탈출",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     20,
+     370,
+     370,
+     440
+    ],
+    "ko": "“불이 되고 바람이 되어라, 내 말아!\n오늘 밤 나는 진리를 찾으러 말에 오른다.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     436,
+     326,
+     796,
+     446
+    ],
+    "ko": "깐타까가 뛰어나갑니다. 편자 박은 발굽이\n돌 위에서 불꽃을 튀깁니다. 그러나 땅은\n고요합니다. 정령들이 붉은 모라 꽃을 따서\n발밑에 두텁게 뿌리고, 약카들이 마법의\n천을 깔아 울리는 재갈 소리를 막습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-04-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     420,
+     20,
+     796,
+     76
+    ],
+    "ko": "문이 열리다",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     2,
+     56,
+     190,
+     440
+    ],
+    "ko": "백 사람이 밀어야\n움직이고 천둥처럼\n울리는 거대한 문이\n소리 없이 열립니다.\n잠의 들판보다 더\n졸린 바람이 장수와\n병사들을 깊은 잠에\n빠뜨렸습니다.\n\n싯닷타는 궁을\n벗어나 밤 속으로\n자유롭게 나갑니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-04-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     26,
+     400,
+     84
+    ],
+    "ko": "샛별",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     20,
+     130,
+     400,
+     350
+    ],
+    "ko": "아노마 강 위로 새벽이 밝습니다.\n왕자의 여정은 끝나고 구도자의\n여정이 시작됩니다.\n\n“그는 흰 깐타까의 두 귀 사이에\n입 맞추고 찬나에게 다정히 말했습니다.\n‘네가 한 일은 네게 복이 되리라…\n네 사랑 때문에 나는 너를 언제나\n사랑하리라.’”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-04-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     420,
+     20,
+     796,
+     76
+    ],
+    "ko": "위대한 출가",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     4,
+     330,
+     300,
+     446
+    ],
+    "ko": "왕께 모두 드리고, 싯닷타가\n왕다운 지혜를 얻어 열 배나\n나은 왕자로 돌아올 때까지\n자기를 잊어 달라고\n청한다고 전해 다오.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     380,
+     374,
+     796,
+     446
+    ],
+    "ko": "세상을 구하려고 나의 세상을 버린다.\n사람의 희망은 오직 사람에게 있다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
