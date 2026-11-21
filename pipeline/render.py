@@ -85,6 +85,14 @@ def inscribed(mask, aspect, W):
     return (int(cx - hw), int(cy - lo), int(cx + hw), int(cy + lo))
 
 
+def solid(mask):
+    """말풍선 모양의 바깥 테두리만 남기고 안의 구멍(지운 글자 자리·무늬)은 메움 — 가장자리 거리 잴 때 구멍을 테두리로 보지 않게"""
+    m = (mask > 0).astype(np.uint8); out = np.zeros_like(m)
+    cs, _ = cv2.findContours(m, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    if cs: cv2.drawContours(out, cs, -1, 1, -1)
+    return out > 0
+
+
 def inner_rect(full, tb):
     x0, y0, x1, y1 = tb
     m = max(3, full.shape[1] // 300)
@@ -273,7 +281,7 @@ def render(src_path, boxes):
                 else: tb = r0
             layout.append((tb, b["ko"], b.get("align", "center"), em, dark)); continue
         layout.append((inner_rect(full, tb), b["ko"], b.get("align", "left" if b.get("shape") == "box" else "center"), em, dark,
-                       (full > 0) if not b.get("cover") else None))  # 말풍선 모양: 글줄이 안에 드는지 그릴 때 확인
+                       solid(full) if not b.get("cover") else None))  # 말풍선 모양(구멍 메움): 글줄이 안에 드는지 그릴 때 확인
     scale = 2 if W < 1600 else 1
     pil = Image.fromarray(cv2.cvtColor(out, cv2.COLOR_BGR2RGB))
     if scale > 1:
@@ -350,7 +358,7 @@ def check(img, out, QA, drawn, W, H):
             if abs(cy - sy) > max(0.1 * H, bh) or abs(cx - sx) > max(0.3 * W, dr["tw"]):
                 bad.append((n, "자리", f"한글 글({int(cx)},{int(cy)})이 상자 점({int(sx)},{int(sy)})에서 멀리 그려짐"))
         if q.get("mask") is not None:  # 글 줄이 말풍선(상자) 가장자리에 너무 붙거나 밖으로 나갔는지
-            dist = cv2.distanceTransform(q["mask"].astype(np.uint8), cv2.DIST_L2, 3)
+            dist = cv2.distanceTransform(solid(q["mask"]).astype(np.uint8), cv2.DIST_L2, 3)  # 구멍은 메우고
             lim = max(1.5, W * 0.0022)
             worst = 1e9
             for lx0, ly0, lx1, ly1 in dr.get("lines", []):
