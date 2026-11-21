@@ -451,30 +451,30 @@
 },
 "Jataka": {
 "n": 422,
-"pdf": 496557548,
-"pdfs": 50595944,
+"pdf": 496347891,
+"pdfs": 50553122,
 "stories": 32,
-"zip": 496147787
+"zip": 495938130
 },
 "Jataka/001-The-Waterless-Desert": {
 "n": 15,
-"pdf": 14366772,
-"zip": 14101411
+"pdf": 14363120,
+"zip": 14097759
 },
 "Jataka/002-The-Well-of-Perseverance": {
 "n": 15,
-"pdf": 17830035,
-"zip": 17561912
+"pdf": 17821764,
+"zip": 17553641
 },
 "Jataka/003-The-Golden-Bowl": {
 "n": 14,
-"pdf": 15809170,
-"zip": 15544182
+"pdf": 15760663,
+"zip": 15495675
 },
 "Jataka/004-The-Dead-Mouse": {
 "n": 15,
-"pdf": 17560165,
-"zip": 17296730
+"pdf": 17534576,
+"zip": 17271141
 },
 "Jataka/005-The-Measure-of-Rice": {
 "n": 14,
@@ -483,8 +483,8 @@
 },
 "Jataka/006-The-Water-Rakkhasa": {
 "n": 15,
-"pdf": 19133289,
-"zip": 18866869
+"pdf": 19104126,
+"zip": 18837707
 },
 "Jataka/009-The-Kings-Grey-Hair": {
 "n": 14,
@@ -493,13 +493,13 @@
 },
 "Jataka/010-Bliss-of-Renunciation": {
 "n": 14,
-"pdf": 17050814,
-"zip": 16784427
+"pdf": 17047806,
+"zip": 16781419
 },
 "Jataka/011-The-Wisdom-of-Lakkhana": {
 "n": 10,
-"pdf": 12221958,
-"zip": 11957988
+"pdf": 12220878,
+"zip": 11956908
 },
 "Jataka/012-The-Golden-Deer": {
 "n": 14,
@@ -508,13 +508,13 @@
 },
 "Jataka/014-The-Wind-Deer": {
 "n": 9,
-"pdf": 9635403,
-"zip": 9373984
+"pdf": 9633388,
+"zip": 9371969
 },
 "Jataka/018-The-Sacrificial-Goat": {
 "n": 14,
-"pdf": 16415928,
-"zip": 16145545
+"pdf": 16413933,
+"zip": 16143550
 },
 "Jataka/022-The-Teaching-of-the-Dog": {
 "n": 14,
@@ -523,13 +523,13 @@
 },
 "Jataka/023-The-Noble-Warhorse": {
 "n": 14,
-"pdf": 17058559,
-"zip": 16793264
+"pdf": 17040175,
+"zip": 16774880
 },
 "Jataka/026-The-State-Elephant": {
 "n": 13,
-"pdf": 16558930,
-"zip": 16292761
+"pdf": 16557032,
+"zip": 16290863
 },
 "Jataka/027-Elephant-and-Dog": {
 "n": 13,
@@ -553,13 +553,13 @@
 },
 "Jataka/032-The-Peacocks-Dance": {
 "n": 12,
-"pdf": 16830913,
-"zip": 16566488
+"pdf": 16828960,
+"zip": 16564535
 },
 "Jataka/033-The-Quails-and-the-Net": {
 "n": 14,
-"pdf": 15960702,
-"zip": 15692547
+"pdf": 15954771,
+"zip": 15686616
 },
 "Jataka/034-The-Amorous-Fish": {
 "n": 13,
@@ -578,8 +578,8 @@
 },
 "Jataka/040-The-Fiery-Pit": {
 "n": 12,
-"pdf": 12668799,
-"zip": 12405055
+"pdf": 12668566,
+"zip": 12404822
 },
 "Jataka/041-The-Unfortunate-Monk": {
 "n": 15,
@@ -593,13 +593,13 @@
 },
 "Jataka/044-The-Son-and-the-Mosquito": {
 "n": 13,
-"pdf": 15082330,
-"zip": 14812914
+"pdf": 15036997,
+"zip": 14767581
 },
 "Jataka/046-The-Folly-of-the-Monkeys": {
 "n": 13,
-"pdf": 15980287,
-"zip": 15708131
+"pdf": 15971936,
+"zip": 15699780
 },
 "Jataka/048-The-Rain-of-Ruin": {
 "n": 15,
@@ -608,13 +608,25 @@
 },
 "Jataka/049-The-Lucky-Star": {
 "n": 14,
-"pdf": 16475760,
-"zip": 16210886
+"pdf": 16475296,
+"zip": 16210422
 },
 "Jataka/050-The-Kings-Stratagem": {
 "n": 15,
-"pdf": 19097511,
-"zip": 18831854
+"pdf": 19093680,
+"zip": 18828023
+},
+"New-Jataka": {
+"n": 24,
+"pdf": 15772010,
+"pdfs": 3259457,
+"stories": 1,
+"zip": 15614104
+},
+"New-Jataka/002-Vannupatha": {
+"n": 24,
+"pdf": 15786848,
+"zip": 15611711
 },
 "Pannasa": {
 "n": 803,
@@ -1186,5 +1198,107 @@
 "n": 39,
 "pdf": 46913247,
 "zip": 46641335
+},
+"Way-Beyond": {
+"n": 223,
+"pdf": 152504429,
+"pdfs": 12962877,
+"stories": 19,
+"zip": 152174396
+},
+"Way-Beyond/00-Introduction": {
+"n": 38,
+"pdf": 25934917,
+"zip": 25669488
+},
+"Way-Beyond/01-Ajita": {
+"n": 10,
+"pdf": 5960246,
+"zip": 5699487
+},
+"Way-Beyond/02-Tissa-Metteyya": {
+"n": 11,
+"pdf": 7378223,
+"zip": 7112938
+},
+"Way-Beyond/03-Punnaka": {
+"n": 11,
+"pdf": 7255089,
+"zip": 6991844
+},
+"Way-Beyond/04-Mettagu": {
+"n": 10,
+"pdf": 6923146,
+"zip": 6661448
+},
+"Way-Beyond/05-Dhotaka": {
+"n": 15,
+"pdf": 10250467,
+"zip": 9986729
+},
+"Way-Beyond/06-Upasiva": {
+"n": 10,
+"pdf": 6941648,
+"zip": 6678669
+},
+"Way-Beyond/07-Nanda": {
+"n": 10,
+"pdf": 7085902,
+"zip": 6825695
+},
+"Way-Beyond/08-Hemaka": {
+"n": 9,
+"pdf": 6568093,
+"zip": 6305789
+},
+"Way-Beyond/09-Todeyya": {
+"n": 8,
+"pdf": 5150927,
+"zip": 4889656
+},
+"Way-Beyond/10-Kappa": {
+"n": 9,
+"pdf": 7291204,
+"zip": 7031488
+},
+"Way-Beyond/11-Jatukanni": {
+"n": 12,
+"pdf": 8064874,
+"zip": 7802342
+},
+"Way-Beyond/12-Bhadravuddha": {
+"n": 10,
+"pdf": 7662890,
+"zip": 7399889
+},
+"Way-Beyond/13-Udaya": {
+"n": 13,
+"pdf": 8512584,
+"zip": 8250631
+},
+"Way-Beyond/14-Posala": {
+"n": 7,
+"pdf": 4854819,
+"zip": 4593970
+},
+"Way-Beyond/15-Mogharaja": {
+"n": 8,
+"pdf": 6073920,
+"zip": 5812647
+},
+"Way-Beyond/16-Pingiya": {
+"n": 10,
+"pdf": 7455782,
+"zip": 7193665
+},
+"Way-Beyond/17-Verses-1": {
+"n": 12,
+"pdf": 10025624,
+"zip": 9755609
+},
+"Way-Beyond/18-Verses-2": {
+"n": 10,
+"pdf": 7785610,
+"zip": 7517154
 }
 }
