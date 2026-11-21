@@ -1,0 +1,653 @@
+[
+ {
+  "img": "images/23-Mahabodhi-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     560,
+     60,
+     790,
+     120
+    ],
+    "ko": "마하보디 이야기",
+    "cover": [
+     245,
+     240,
+     224
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     560,
+     120,
+     790,
+     410
+    ],
+    "ko": "지혜와 인욕을 보여 주는 자따까\n\n먼 옛날 대사는 ‘큰 지혜를 지닌 이’라는 뜻의 마하보디라는 떠돌이 수행자였습니다. 법과 기예와 명상에 통달한 그는 남을 이롭게 하려고 세상을 떠돌았고, 학식 있는 이와 경건한 이 모두 그와 함께하기를 소중히 여겼습니다.",
+    "cover": [
+     246,
+     240,
+     225
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Mahabodhi-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     50,
+     600,
+     190
+    ],
+    "ko": "왕은 마하보디의 명성을 듣고 그를 왕의 정원에 맞아들였습니다. 그는 다스리는 이가 아니라 스승을 모시는 제자처럼 수행자를 섬겼습니다.\n덕을 사랑하는 이에게, 덕 있는 손님이 믿고 재물 넉넉한 집에 찾아오는 것은 일종의 잔치입니다.",
+    "cover": [
+     250,
+     229,
+     181
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Mahabodhi-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     76,
+     372,
+     120
+    ],
+    "ko": "시기의 속삭임",
+    "cover": [
+     241,
+     223,
+     188
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     80,
+     120,
+     372,
+     350
+    ],
+    "ko": "질투가 왕의 다섯 대신의 마음을 물들였습니다. 논쟁으로 마하보디를 이길 수 없자 그들은 왕의 귀에 독을 부었습니다.\n“대왕이시여, 이 출가자는 첩자입니다. 자비와 부끄러움을 가르쳐 대왕의 힘을 약하게 합니다. 왕의 직무에 맞지 않는 버릇으로 꾀면서, 남몰래 정치적 배신의 책들을 알고 있습니다.”",
+    "cover": [
+     241,
+     222,
+     188
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Mahabodhi-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     556,
+     80,
+     748,
+     356
+    ],
+    "ko": "왕의 애정이 식었습니다. 그 변화를 본 마하보디는 떠날 채비를 했습니다.\n“전에는 이 개가 나를 반기곤 했는데… 이제 짖는 소리로 왕의 마음을 드러냅니다. 꾸밀 줄 모르기 때문이지요. 주인의 빵을 먹는 하인들의 행실이 이러합니다.”",
+    "cover": [
+     239,
+     222,
+     188
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Mahabodhi-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     548,
+     44,
+     750,
+     100
+    ],
+    "ko": "왕의 타락",
+    "cover": [
+     236,
+     220,
+     183
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     548,
+     100,
+     750,
+     396
+    ],
+    "ko": "숲에서 마하보디는 다섯 가지 그릇된 견해에 이끌려 몰락하는 왕을 보았습니다.\n1. 원인을 부정함\n2. 최고신이 모든 것을 한다는 견해(사람의 책임을 없앰)\n3. 숙명론(모든 것이 과거의 업)\n4. 단멸론(쾌락만 좇음)\n5. 권모술수의 정치(잔인함이 의무)",
+    "cover": [
+     236,
+     220,
+     185
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Mahabodhi-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     10,
+     570,
+     58
+    ],
+    "ko": "현자의 귀환",
+    "cover": [
+     239,
+     221,
+     188
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     168,
+     362,
+     632,
+     447
+    ],
+    "ko": "마하보디는 원숭이 가죽을 입고 왕을 구하러 돌아왔습니다. 편히 쓰려고 그 짐승을 죽였다고 했습니다. 대신들은 기회를 잡아 비웃었습니다. “얼마나 굳센 분인가! 고행으로 야윈 몸으로 혼자서 저렇게 큰 원숭이를 잡다니 놀랍구려!”",
+    "cover": [
+     241,
+     225,
+     195
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Mahabodhi-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     548,
+     40,
+     790,
+     102
+    ],
+    "ko": "반론 1: 원인 부정론자",
+    "cover": [
+     235,
+     219,
+     182
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     548,
+     102,
+     790,
+     384
+    ],
+    "ko": "세상이 아무렇게나 생겨났고 자연에 원인이 없다면, 원숭이의 죽음에도 원인이 없습니다. 왜 죽인 이를 탓합니까?\n“연꽃이 어떤 원인의 결과가 아니라면 언제 어디서나 있지 않겠는가? 그러나 연꽃은 물속의 씨에서 난다. 그 조건이 있는 곳에 나타난다.”",
+    "cover": [
+     236,
+     219,
+     185
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Mahabodhi-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     312,
+     530,
+     346
+    ],
+    "ko": "반론 2: 유신론자와 숙명론자",
+    "cover": [
+     248,
+     239,
+     221
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     346,
+     530,
+     440
+    ],
+    "ko": "신이 모든 것을 한다면 원숭이를 죽인 것도 신입니다. 오직 과거의 업뿐이라면 원숭이는 죽을 운명이었습니다.\n“주재자가 모든 것을 한다면… 그 원숭이를 죽인 이는 그분뿐이다. 어찌 남의 허물로 나를 탓하는 몰인정을 견디는가?”",
+    "cover": [
+     247,
+     235,
+     216
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Mahabodhi-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     548,
+     40,
+     790,
+     102
+    ],
+    "ko": "반론 3: 허무론자",
+    "cover": [
+     234,
+     217,
+     177
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     548,
+     102,
+     790,
+     394
+    ],
+    "ko": "죽음이 끝이고 쾌락만 중요하다면, 가죽을 편히 쓰려고 원숭이를 죽이는 것도 이치에 맞습니다.\n“나무 조각은… 한 번 사라지면 다시 자라지 않는다. 단멸론에 매달린다면 무슨 까닭으로 죽인 이를 나무라는가?”",
+    "cover": [
+     234,
+     217,
+     180
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Mahabodhi-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     40,
+     340,
+     102
+    ],
+    "ko": "반론 4: 배신을 가르치는 이",
+    "cover": [
+     237,
+     223,
+     188
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     102,
+     340,
+     428
+    ],
+    "ko": "그대는 자기 이익이 으뜸이며 이익을 위해 벗을 버려도 된다고 가르칩니다. 나는 자기 이익을 위해 원숭이를 죽였습니다. 그대가 가르친 그대로.\n“그대의 책에서도 가르치는 방책을 실천했는데… 무슨 까닭으로 나를 나무라는가? 아! 사람을 업신여겨 권위 있는 법전이라며 불의를 내세우는 뻔뻔한 이들이여!”",
+    "cover": [
+     235,
+     220,
+     185
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Mahabodhi-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     326,
+     770,
+     366
+    ],
+    "ko": "드러난 환영",
+    "cover": [
+     236,
+     222,
+     189
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     366,
+     770,
+     430
+    ],
+    "ko": "논쟁이 잠잠해지자 마하보디가 진실을 밝혔습니다. “나는 살아 있는 존재를 죽인 적이 없습니다. 신통으로 만들어 냈을 뿐입니다. 이 가죽은 바로 이 대화의 이야깃거리로 삼으려고 내가 만든 원숭이에게서 벗긴 것입니다.”",
+    "cover": [
+     231,
+     216,
+     179
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Mahabodhi-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     486,
+     48,
+     790,
+     100
+    ],
+    "ko": "참된 법",
+    "cover": [
+     235,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     486,
+     100,
+     790,
+     436
+    ],
+    "ko": "마하보디는 참된 길을 가르쳤습니다. 우리에게는 스스로 고르는 힘이 있고, 원인에는 결과가 따르며, 연민이 바른 법의 뿌리입니다.\n“사람의 믿음은… 그에 맞는 행동으로 이끄는 동기다. 원인을 부정하는 이들의 엇갈린 목소리는, 자칼이 울음소리로 드러나듯 그들의 본성을 드러낸다.”",
+    "cover": [
+     231,
+     216,
+     180
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Mahabodhi-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     30,
+     640,
+     66
+    ],
+    "ko": "왕의 의무",
+    "cover": [
+     249,
+     223,
+     162
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     160,
+     66,
+     640,
+     184
+    ],
+    "ko": "농부와 상인을 보호하고, 법에 어긋난 세금을 걷지 마십시오.\n“익지 않은 열매를 따는 이가 씨까지 죽이듯… 법에 어긋난 세금을 걷는 왕은 나라를 망친다. 다스리는 이가 잘 보호하는 나라는 그에게 법과 재물과 즐거움, 세 가지 번영을 안겨 준다.”",
+    "cover": [
+     250,
+     232,
+     179
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-Mahabodhi-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     90,
+     420,
+     140
+    ],
+    "ko": "사귐의 지혜",
+    "cover": [
+     24,
+     28,
+     46
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     40,
+     140,
+     420,
+     370
+    ],
+    "ko": "지혜로운 이처럼 꾸미고 그릇된 견해로 순박한 이들을 망치는 나쁜 조언자를 멀리하십시오.\n“달조차 우중충한 겨울날과 만나 더럽혀지면 아름다움을 잃는다.”",
+    "cover": [
+     24,
+     28,
+     46
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/23-Mahabodhi-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     380,
+     100,
+     580,
+     150
+    ],
+    "ko": " ",
+    "cover": false,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     90,
+     384,
+     140
+    ],
+    "ko": "맺음: 인욕의 힘",
+    "cover": [
+     254,
+     254,
+     254
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     140,
+     384,
+     366
+    ],
+    "ko": "마하보디는 벗을 몰락에서 구하고 숲으로 돌아갔습니다.\n“덕 있는 이가 한때 자신을 도와준 이에게 품은 연민은, 그에게서 해를 입어도 줄어들지 않는다.”",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
