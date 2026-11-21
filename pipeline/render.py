@@ -307,8 +307,14 @@ def render(src_path, boxes):
                         if dist_[py_, px_] < mg_: return True
                     yy_ += lh_
                 return False
-            floor_ = max(10, int(11 * W / 800 * scale))  # 800px 기준 11 아래로는 줄이지 않음
-            while f.size > floor_ and touches(f, lines, lh):
+            # 지키는 선 (2026-11-21): ① 16 으로 바꾸기 전 크기(원래 영어 크기 상한)보다 작게는 줄이지 않음
+            # ② 말풍선 모양을 믿을 수 있을 때만(글 네모의 90% 이상이 그 안) — 모양을 잘못 잡은 상자에서 글이 지나치게 작아졌던 일
+            cap_old = int(W * scale / 24)
+            if em: cap_old = min(cap_old, max(10, int(em * scale * 1.05)))
+            floor_ = fit(d, ko, X1 - X0, Y1 - Y0, cap_old)[0].size
+            ia, ib, ic, id_ = [int(v / scale) for v in (X0, Y0, X1, Y1)]
+            inside_ = shp[max(0, ib):max(ib + 1, id_), max(0, ia):max(ia + 1, ic)].mean() if id_ > ib and ic > ia else 0
+            while inside_ >= 0.9 and f.size > floor_ and touches(f, lines, lh):
                 f, lines, lh = fit(d, ko, X1 - X0, Y1 - Y0, f.size - 1)
         y = Y0 + ((Y1 - Y0) - lh * len(lines)) / 2
         drawn.append(dict(size=f.size / scale, box=[(x0 + pad), y0 + pad, x1 - pad, y1 - pad], ty=(y / scale, (y + lh * len(lines)) / scale),
@@ -365,7 +371,9 @@ def check(img, out, QA, drawn, W, H):
                 for px, py in ((lx0, ly0), (lx1, ly0), (lx0, ly1), (lx1, ly1), (lx0, (ly0+ly1)/2), (lx1, (ly0+ly1)/2)):
                     px, py = int(min(W - 1, max(0, px))), int(min(H - 1, max(0, py)))
                     worst = min(worst, float(dist[py, px]))
-            if worst < lim:
+            x0_, y0_, x1_, y1_ = [int(v) for v in dr["box"]]
+            trust = solid(q["mask"])[y0_:max(y0_ + 1, y1_), x0_:max(x0_ + 1, x1_)].mean() >= 0.9
+            if worst < lim and trust:
                 bad.append((n, "삐져나옴", f"글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 {worst:.0f}px)"))
         tb_area = max(1, tw_ * th_)
         if not q["rect"] and q["area"] > 6 * tb_area and q["area"] > 0.06 * W * H:
