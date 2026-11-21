@@ -298,7 +298,7 @@ def render(src_path, boxes):
         cap = min(cap, max(10, int(max(em or 0, TARGET * W / 800) * scale * 1.05)))
         if mx: cap = min(cap, max(10, int(mx * W / 800 * scale)))
         f, lines, lh = fit(d, ko, X1 - X0, Y1 - Y0, cap)
-        if shp is not None:  # 글줄 끝이 말풍선 테두리에 닿으면 한 단계씩 줄임 (2026-11-21, 글자 16 목표로 키운 뒤 생긴 일)
+        if shp is not None and not mx:  # max 를 정한 상자는 자동으로 줄이지 않음. 글줄 끝이 말풍선 테두리에 닿으면 한 단계씩 줄임 (2026-11-21, 글자 16 목표로 키운 뒤 생긴 일)
             dist_ = cv2.distanceTransform(shp.astype(np.uint8), cv2.DIST_L2, 3); mg_ = max(3.0, W * 0.004)
             def touches(f_, ls_, lh_):
                 yy_ = Y0 + ((Y1 - Y0) - lh_ * len(ls_)) / 2
