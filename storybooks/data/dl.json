@@ -617,31 +617,51 @@
 "zip": 18828023
 },
 "Light-of-Asia": {
-"n": 58,
-"pdf": 33958647,
-"pdfs": 5489186,
-"stories": 4,
-"zip": 33685202
+"n": 118,
+"pdf": 84635311,
+"pdfs": 10941834,
+"stories": 8,
+"zip": 84336816
 },
 "Light-of-Asia/01-Light-of-Asia": {
 "n": 15,
-"pdf": 9492563,
-"zip": 9226248
+"pdf": 9487270,
+"zip": 9226241
 },
 "Light-of-Asia/02-Light-of-Asia": {
 "n": 15,
-"pdf": 9058717,
-"zip": 8789859
+"pdf": 9052276,
+"zip": 8789851
 },
 "Light-of-Asia/03-Light-of-Asia": {
 "n": 14,
-"pdf": 8841532,
-"zip": 8575579
+"pdf": 8837639,
+"zip": 8575572
 },
 "Light-of-Asia/04-Light-of-Asia": {
 "n": 14,
-"pdf": 7360800,
-"zip": 7094229
+"pdf": 7356014,
+"zip": 7094221
+},
+"Light-of-Asia/05-Light-of-Asia": {
+"n": 15,
+"pdf": 8184406,
+"zip": 7922132
+},
+"Light-of-Asia/06-Light-of-Asia": {
+"n": 15,
+"pdf": 15020843,
+"zip": 14758292
+},
+"Light-of-Asia/07-Light-of-Asia": {
+"n": 15,
+"pdf": 15015111,
+"zip": 14753081
+},
+"Light-of-Asia/08-Light-of-Asia": {
+"n": 15,
+"pdf": 13484030,
+"zip": 13221311
 },
 "New-Jataka": {
 "n": 24,
