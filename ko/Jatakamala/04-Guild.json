@@ -1,0 +1,677 @@
+[
+ {
+  "img": "images/04-Guild-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     58,
+     664,
+     98
+    ],
+    "ko": "본생 이야기 꽃다발: 상인 조합의 우두머리",
+    "cover": [
+     250,
+     230,
+     200
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     140,
+     98,
+     664,
+     196
+    ],
+    "ko": "먼 옛날 대사(mahāsatta)께서 인도에서 상인 조합의 우두머리로 태어나셨습니다. 큰 재산과 맑은 마음을 지녀 왕에게 존경받고 백성에게 사랑받았습니다. 그는 어떤 청도 거절하지 않고 청하는 모든 이와 넉넉함을 나누었습니다.\n\n위험이 눈앞에 닥쳐도 보시하려는 경건한 바람",
+    "cover": [
+     249,
+     238,
+     220
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Guild-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     54,
+     352,
+     158
+    ],
+    "ko": "널리 알려진\n베푸는 사람",
+    "cover": [
+     248,
+     244,
+     232
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     158,
+     352,
+     398
+    ],
+    "ko": "공정한 장사로 큰 재산을 모았지만, 즐거움이나 인색함 때문에 쌓아 두지 않았습니다. 남의 괴로움을 차마 보지 못했습니다.\n\n그를 사랑하는 걸식하는 이들이 그 이름을 널리 칭송했습니다… 그 앞에서는 어떤 가난한 이도 ‘주실까, 안 주실까’ 하는 의심의 그네에 흔들리지 않았습니다.",
+    "cover": [
+     248,
+     244,
+     234
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Guild-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     54,
+     380,
+     158
+    ],
+    "ko": "말없는 성자가\n찾아오다",
+    "cover": [
+     246,
+     242,
+     229
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     158,
+     380,
+     398
+    ],
+    "ko": "식사 때, 향긋한 음식이 막 차려졌을 때 한 분의 벽지불이 나타났습니다. 지혜의 불로 타고난 번뇌를 모두 태워 없앤 그분은 그 집의 공덕을 늘려 주고자 조용히 문 앞에 섰습니다.\n\n두려움도 흔들림도 없이… 연꽃처럼 흰 손가락으로 발우를 받쳐 들고 서 계셨습니다.",
+    "cover": [
+     246,
+     242,
+     230
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Guild-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     52,
+     380,
+     112
+    ],
+    "ko": "악한 이의 방해",
+    "cover": [
+     245,
+     241,
+     227
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     112,
+     380,
+     380
+    ],
+    "ko": "마라는 이 보시를 막으려고 신통으로 문과 스님 사이에 무시무시한 지옥을 만들었습니다. 너비가 몇 길이나 되는 그 지옥은 으르렁거리는 불길과 비명으로 가득했습니다.\n\n악한 이 마라는 보살이 보시의 기쁨을 누리는 것을 견딜 수 없었습니다.",
+    "cover": [
+     244,
+     241,
+     226
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Guild-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     386,
+     52,
+     790,
+     100
+    ],
+    "ko": "문턱의 공포",
+    "cover": [
+     243,
+     240,
+     223
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     386,
+     100,
+     790,
+     290
+    ],
+    "ko": "보살은 아내에게 스님께 공양을 올리라고 했습니다. 아내는 좋은 음식을 들고 다가가다가 지옥 구덩이를 보고 겁에 질려 달아났습니다. 거룩한 분이 빈손으로 떠나실까 염려한 보살은 손수 음식을 들고 불길을 향해 걸어갔습니다.",
+    "cover": [
+     243,
+     240,
+     225
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Guild-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     386,
+     52,
+     790,
+     100
+    ],
+    "ko": "마하로루와 지옥의 환영",
+    "cover": [
+     241,
+     238,
+     219
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     386,
+     100,
+     790,
+     360
+    ],
+    "ko": "마라가 신의 모습을 드러내 허공에서 말했습니다. “장자여, 이것은 큰 지옥 마하로루와다. 칭찬을 탐해 보시로 재산을 탕진하는 자들이 사는 곳이다.”\n\n여기는 빠져나오기 어려운 곳… 보시라는 못된 욕망에 빠진 자들이 사는 곳이다.",
+    "cover": [
+     241,
+     238,
+     219
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Guild-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     386,
+     46,
+     790,
+     94
+    ],
+    "ko": "악한 이의 그릇된 논리",
+    "cover": [
+     239,
+     236,
+     216
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     386,
+     94,
+     790,
+     300
+    ],
+    "ko": "“재물의 번영이 바른 삶의 뿌리다. 그것을 내주면 너는 네 덕을 해치는 것이다. 그만두어라. 그러지 않으면 당장 이 불혀 날름거리는 지옥에 떨어지리라!\n\n너는 죄를 지었다… 그래서 이 불길의 지옥이… 너를 삼키려고 마주 왔느니라.”",
+    "cover": [
+     239,
+     237,
+     217
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Guild-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     386,
+     46,
+     790,
+     94
+    ],
+    "ko": "고칠 수 없는 열정",
+    "cover": [
+     237,
+     234,
+     212
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     386,
+     94,
+     790,
+     300
+    ],
+    "ko": "보살은 그가 악한 이임을 알아보았습니다. 그는 부드럽게 대답했습니다. “길을 가르쳐 주시니 고맙습니다. 그러나 보시를 향한 제 열정은 이미 고칠 수 없을 만큼 번졌습니다.\n\n그대가 무어라 하든 제 마음은 결코 보시에서 물러서지 않을 것입니다.”",
+    "cover": [
+     237,
+     235,
+     213
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Guild-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     386,
+     46,
+     790,
+     94
+    ],
+    "ko": "참된 덕을 지키다",
+    "cover": [
+     236,
+     233,
+     210
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     386,
+     94,
+     790,
+     300
+    ],
+    "ko": "“보시 없는 재물이 어찌 덕의 길이 되겠습니까? 재물은 언젠가 도둑이나 물이나 불에 잃고 맙니다. 나는 내 행복을 위해서가 아니라 세상을 이롭게 하려고 줍니다.”\n\n주는 이는 지옥에 가고 받는 이는 천상에 간다 해도… 그대는 오히려 보시를 향한 내 바람을 더 키웠을 뿐입니다.",
+    "cover": [
+     236,
+     234,
+     211
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Guild-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     434,
+     36,
+     790,
+     90
+    ],
+    "ko": "희생을 고르다",
+    "cover": [
+     242,
+     226,
+     194
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     434,
+     90,
+     790,
+     396
+    ],
+    "ko": "마라가 말했습니다. “그럼 정하라. 내 말을 듣고 행복하든지, 보시하고 뉘우치든지.”\n\n보살이 대답했습니다. “나는 걸식하는 이들을 저버리는 허물을 짓느니… 차라리 스스로 이 활활 타는 지옥으로 들어가겠습니다.”",
+    "cover": [
+     243,
+     227,
+     198
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Guild-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     522,
+     62,
+     790,
+     182
+    ],
+    "ko": "불 속으로\n걸어 들어가다",
+    "cover": [
+     243,
+     231,
+     207
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     522,
+     182,
+     790,
+     400
+    ],
+    "ko": "보살은 자기 운명의 힘을 믿고 두려움에 아랑곳하지 않은 채 지옥을 가로질러 걸어갔습니다. 보시하려는 마음이 죽음의 두려움보다 컸습니다.",
+    "cover": [
+     243,
+     230,
+     208
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Guild-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     522,
+     62,
+     790,
+     136
+    ],
+    "ko": "불길 속의 연꽃",
+    "cover": [
+     241,
+     228,
+     201
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     522,
+     136,
+     790,
+     414
+    ],
+    "ko": "그 순간 보살의 공덕의 힘으로 지옥 한가운데서 연꽃 한 송이가 솟아났습니다. 진흙에 뿌리내리지 않은 그 연꽃의 꽃가루는 마라를 비웃는 듯했습니다.\n\n이빨처럼 늘어선 수술을 드러내며 마라를 업신여겨 웃는 듯했습니다.",
+    "cover": [
+     241,
+     229,
+     202
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Guild-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     522,
+     62,
+     790,
+     174
+    ],
+    "ko": "공덕의 승리",
+    "cover": [
+     240,
+     227,
+     198
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     522,
+     174,
+     790,
+     370
+    ],
+    "ko": "연꽃이 떠받쳐 주어 보살은 스님께 이르러 기쁨이 가득한 마음으로 발우에 음식을 채워 드렸습니다. 지옥의 속임수는 그의 덕이라는 진실을 이겨 내지 못했습니다.",
+    "cover": [
+     239,
+     226,
+     199
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Guild-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     522,
+     50,
+     790,
+     162
+    ],
+    "ko": "환영이\n사라지다",
+    "cover": [
+     239,
+     225,
+     195
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     522,
+     162,
+     790,
+     390
+    ],
+    "ko": "스님은 만족함을 보이려고 허공으로 날아올라, 번개가 번쩍이는 구름처럼 빛을 내뿜었습니다.\n마라는 계략이 뒤집힌 것을 보고 빛을 잃은 채 제 지옥과 함께 사라졌습니다.",
+    "cover": [
+     237,
+     224,
+     194
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/04-Guild-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     130,
+     312,
+     674,
+     356
+    ],
+    "ko": "“상인 조합 우두머리의 가르침”",
+    "cover": [
+     229,
+     214,
+     196
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     130,
+     356,
+     674,
+     442
+    ],
+    "ko": "덕 있는 이는 두려움으로도 그릇된 길로 이끌 수 없습니다.\n\n경건한 이가 위험이 닥쳐도 보시하려 한다면, 안전할 때 누가 베풀지 않겠습니까?",
+    "cover": [
+     229,
+     213,
+     193
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
