@@ -54,6 +54,23 @@ async function getDay(env, d, today, B) {
   return sum;
 }
 
+// 회원 수 (운영자 요청, 2026-11-22): acct/users/ 목록을 세고, 가입한 날(created)은 stats/acct.json 에 아이디 열쇠별로 기억해 두어
+// 새로 생긴 회원 파일만 읽음(회원 정보 가운데 가입한 날짜만 씀 — 아이디·이메일은 돌려주지 않음). 탈퇴한 회원은 목록에서 빠짐.
+async function members(env) {
+  const keys = []; let cursor;
+  do { const l = await env.PAPER.list({ prefix: 'acct/users/', cursor, limit: 1000 }); for (const o of l.objects) keys.push(o.key); cursor = l.truncated ? l.cursor : null; } while (cursor);
+  const old = (await getJ(env, 'stats/acct.json')) || {}, c = {}; let changed = false;
+  const need = keys.filter(k => !old[k]).slice(0, 300);
+  for (let i = 0; i < need.length; i += 50) {
+    const part = need.slice(i, i + 50), us = await Promise.all(part.map(k => getJ(env, k)));
+    part.forEach((k, j) => { const t = us[j] && us[j].created; old[k] = t ? new Date(Date.parse(t) + 9 * 3600e3).toISOString().slice(0, 10) : '?'; changed = true; });
+  }
+  for (const k of keys) if (old[k]) c[k] = old[k];
+  if (changed || Object.keys(old).length !== Object.keys(c).length) await env.PAPER.put('stats/acct.json', JSON.stringify(c));
+  const byDay = {}; for (const k in c) byDay[c[k]] = (byDay[c[k]] || 0) + 1;
+  return { total: keys.length, byDay };
+}
+
 export async function onRequestGet({ request, env }) {
   const tok = (request.headers.get('authorization') || '').replace(/^Bearer\s+/i, '');
   if (!(await canWrite(tok))) return json({ error: '관리자 열쇠가 맞지 않습니다.' }, 401);
@@ -64,9 +81,10 @@ export async function onRequestGet({ request, env }) {
   const ds = []; for (let i = n - 1; i >= 0; i--) ds.push(addDay(today, -i));
   const res = [];
   for (let i = 0; i < ds.length; i += 31) res.push(...await Promise.all(ds.slice(i, i + 31).map(d => getDay(env, d, today, B))));  // 여러 날을 한꺼번에 (1년도 빨리)
+  const mem = await members(env).catch(() => null);
   ds.forEach((d, i) => {
     const s = res[i];
-    days.push({ date: d, views: s.views, visitors: s.vids.length, read: s.read || 0, sread: s.sread || 0, svisitors: (s.svids || []).length });
+    days.push({ date: d, views: s.views, visitors: s.vids.length, read: s.read || 0, sread: s.sread || 0, svisitors: (s.svids || []).length, joined: mem ? mem.byDay[d] || 0 : 0 });
     (s.svids || []).forEach(v => sall.add(v));
     add(books, s.books || {}); Object.assign(btitles, s.btitles || {});
     for (const b in (s.breaders || {})) { const set = breaders[b] || (breaders[b] = new Set()); s.breaders[b].forEach(v => set.add(v)); }
@@ -78,6 +96,6 @@ export async function onRequestGet({ request, env }) {
   for (const p in pages) { const m = p.match(/^\/(?:simple\/book\/([A-Z]{1,4}-\d+)\/read|read\/([A-Z]{1,4}-\d+))/); if (m) m[1] = m[1] || m[2]; if (m) { opens[m[1]] = (opens[m[1]] || 0) + pages[p]; if (!btitles[m[1]] && titles[p]) btitles[m[1]] = titles[p].replace(/\s*읽기$/, ''); } }
   const bk = [...new Set([...Object.keys(books), ...Object.keys(opens)])].map(b => ({ id: b, title: btitles[b] || b, read: books[b] || 0, readers: breaders[b] ? breaders[b].size : 0, opens: opens[b] || 0 }))
     .sort((a, b) => b.read - a.read || b.readers - a.readers || b.opens - a.opens);
-  return json({ ready: true, more: B.left, today, days, visitors: all.size, views: days.reduce((a, b) => a + b.views, 0), read: days.reduce((a, b) => a + b.read, 0), sread: days.reduce((a, b) => a + (b.sread || 0), 0), svisitors: sall.size, books: bk,
+  return json({ ready: true, more: B.left, today, days, visitors: all.size, views: days.reduce((a, b) => a + b.views, 0), read: days.reduce((a, b) => a + b.read, 0), sread: days.reduce((a, b) => a + (b.sread || 0), 0), svisitors: sall.size, books: bk, members: mem ? { total: mem.total, joined: ds.reduce((a, d) => a + (mem.byDay[d] || 0), 0), first: Object.keys(mem.byDay).filter(d => d !== '?').sort()[0] || '' } : null,
     pages: top(pages).map(([p, c]) => [p, c, titles[p] || '']), refs: top(refs, 20), dev, ctry: top(ctry, 10) });
 }

@@ -123,6 +123,10 @@ async function load(){
   <div class="card"><h2>단순 모드 (시각장애인용)</h2><div class="kpi" style="margin:0"><div><b>${num(j.svisitors||0)}</b><span>단순 모드를 쓴 기기</span></div><div><b>${num(j.sread||0)}</b><span>단순 모드에서 읽은 쪽 수</span></div>
     <div><b>${num(j.days[j.days.length-1].svisitors||0)}</b><span>오늘 단순 모드 기기</span></div><div><b>${num(j.days[j.days.length-1].sread||0)}</b><span>오늘 단순 모드 읽은 쪽</span></div></div>
     <p class="note">단순 모드 화면(/simple/)을 연 기기 수와, 단순 모드 '온라인으로 읽기'에서 한 쪽을 15초 넘게 펼쳐 둔 쪽 수입니다(2026년 11월 18일부터 셈). 이 쪽 수는 위 '읽은 쪽 수'와 아래 책 순위에도 함께 들어 있습니다. 화면 낭독기를 쓰는지는 브라우저가 알려 주지 않아 따로 셀 수 없습니다.</p></div>
+  ${j.members?`<div class="card"><h2>회원</h2><div class="kpi" style="margin:0"><div><b>${num(j.members.total)}</b><span>지금 회원 수 (전체)</span></div><div><b>${num(j.members.joined)}</b><span>${DAYS===1?'오늘':'이 기간에'} 새로 가입</span></div>
+    <div><b>${num(j.days[j.days.length-1].joined||0)}</b><span>오늘 가입</span></div></div>
+    ${DAYS>1&&j.members.joined?`<p class="note" style="margin-top:10px">가입한 날: ${j.days.filter(d=>d.joined).reverse().map(d=>`${md(d.date)} ${d.joined}명`).join(' · ')}</p>`:''}
+    <p class="note">'독서 기록 이어 보기' 회원(/account/)입니다. 탈퇴한 회원은 빠집니다. 아이디·이메일 같은 회원 정보는 여기에 보이지 않고, 가입한 날짜만 셉니다.${j.members.first?` 첫 회원 가입: ${esc(j.members.first)}.`:''}</p></div>`:''}
   ${j.days.length>1?`<div class="card"><h2>날짜별</h2><div class="lg"><span><i style="background:var(--robe)"></i>방문자</span><span><i style="background:var(--robe-soft)"></i>읽은 쪽 수</span></div>
     <div class="chart">${j.days.map(d=>`<div class="c" title="${d.date} · 방문자 ${d.visitors} · 읽은 쪽 ${R(d)}"><div class="v" style="height:${R(d)/mx*100}%"></div><div class="u" style="height:${d.visitors/mx*100}%"></div></div>`).join('')}</div>
     <div class="axis"><span>${md(j.days[0].date)}</span><span>${md(j.days[j.days.length-1].date)}</span></div></div>`:''}
