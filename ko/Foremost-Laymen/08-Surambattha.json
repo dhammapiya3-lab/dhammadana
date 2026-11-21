@@ -1,0 +1,455 @@
+[
+ {
+  "img": "images/08-Surambattha-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     208,
+     50,
+     594,
+     150
+    ],
+    "ko": "지혜의 시험:\n수람밧타의 흔들림 없는 믿음\n분별과 무상, 그리고 마라를 물리친 이야기",
+    "cover": [
+     246,
+     231,
+     200
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     382,
+     66,
+     740,
+     206
+    ],
+    "ko": "옛 도시 함사와띠에서 서원이 생겨났습니다.\n\n빠두뭇따라 부처님께서 흔들림 없는 믿음으로 한 우바새를 기리시는 것을 보고, 신심 깊은 한 장자가 큰 공양을 올리며 미래 생에 바로 그 영예를 얻겠다고 서원합니다.",
+    "cover": [
+     241,
+     210,
+     127
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     424,
+     46,
+     772,
+     170
+    ],
+    "ko": "십만 겁 뒤 그는 사왓티에서 수람밧타로 태어납니다. 큰 인연을 지녔지만 세속의 장자로 살면서, 부처님 가르침 밖의 고행자들을 아낌없이 후원합니다.",
+    "cover": [
+     240,
+     214,
+     177
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     288,
+     484,
+     418
+    ],
+    "ko": "새벽에 고따마 부처님께서 세상을 살피십니다. 하늘 눈으로 수람밧타가 수다원도(Sotāpatti-magga)를 얻을 업의 때가 무르익은 것을 보시고, 그의 문 앞으로 걸어가십니다.",
+    "cover": [
+     237,
+     213,
+     172
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     46,
+     382,
+     160
+    ],
+    "ko": "고귀한 분이 오신 것을 안 수람밧타는 세존을 공손히 맞이합니다. 발에 절하고 발우를 받아 들고, 크게 공경받는 분만을 위한 높은 자리를 내어 드립니다.",
+    "cover": [
+     235,
+     211,
+     171
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     452,
+     286,
+     782,
+     416
+    ],
+    "ko": "부처님께서 그에게 맞는 법을 설하십니다. 장자의 세속적 인식이 부서집니다. 그는 수다원과(Sotāpatti-phala)를 얻어, 다시는 돌아오지 않는 흐름을 건너 성자(ariya)의 세계에 들어섭니다.",
+    "cover": [
+     234,
+     209,
+     169
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     366,
+     118,
+     740,
+     350
+    ],
+    "ko": "악한 마라가 허둥댑니다. “수람밧타는 내 편이다! 그가 내 감각적 욕망의 세계에서 벗어났단 말인가?” 마라는 자기 추종자를 되찾으려고 신통으로 속일 계략을 꾸밉니다.",
+    "cover": [
+     192,
+     159,
+     143
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     402,
+     286,
+     782,
+     420
+    ],
+    "ko": "마라가 감쪽같이 부처님으로 변장합니다. 위대한 분의 서른두 가지 상호를 갖추고 수람밧타의 문 앞에 섭니다. 부처님께서 왜 다시 오셨을까 궁금해하며, 수람밧타는 깊이 공경하며 다가갑니다.",
+    "cover": [
+     227,
+     199,
+     160
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     40,
+     734,
+     118
+    ],
+    "ko": "가짜가 잘못이 있었다고 말합니다. “지난번 설법에서 내가 말실수를 했다.” 이 속임수에 무엇이 걸려 있는지 곧바로 드러납니다.",
+    "cover": [
+     221,
+     195,
+     158
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     28,
+     332,
+     376,
+     426
+    ],
+    "ko": "참된 법:\n다섯 무더기는 모두 무상하고 괴로우며 실체가 없다.",
+    "cover": [
+     223,
+     195,
+     158
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     424,
+     332,
+     774,
+     426
+    ],
+    "ko": "마라의 거짓:\n어떤 무더기는 영원하고 변치 않으며 늘 있다.",
+    "cover": [
+     224,
+     195,
+     157
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     52,
+     396,
+     96
+    ],
+    "ko": "부처님의 말씀은 완전하시다.",
+    "cover": [
+     213,
+     181,
+     143
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     86,
+     128,
+     372,
+     172
+    ],
+    "ko": "부처님은 결코 말을 잘못하지 않으신다.",
+    "cover": [
+     216,
+     186,
+     145
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     50,
+     202,
+     412,
+     246
+    ],
+    "ko": "이 자는 무상의 가르침과 어긋나게 말한다.",
+    "cover": [
+     217,
+     186,
+     146
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     108,
+     278,
+     352,
+     320
+    ],
+    "ko": "그러므로 이 자는 마라다.",
+    "cover": [
+     218,
+     186,
+     147
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     26,
+     332,
+     440,
+     428
+    ],
+    "ko": "수람밧타는 그 말을 따져 봅니다. 수다원의 마음은 환영에 속지 않고, 흔들림 없는 법의 이치에 의지합니다.",
+    "cover": [
+     219,
+     191,
+     152
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     144,
+     46,
+     664,
+     144
+    ],
+    "ko": "“그대는 마라가 아닌가?” 수람밧타가 손가락을 튕기며 꾸짖습니다. “악한 마라여, 너 같은 자가 천이 와도 내 믿음을 흔들 수 없다. 형성된 것은 모두 무상하다. 물러가라!”",
+    "cover": [
+     227,
+     192,
+     157
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     392,
+     310,
+     764,
+     426
+    ],
+    "ko": "성자에게 진 마라는 변장이 깨져 사라집니다. 그날 저녁 수람밧타는 승원으로 가서, 믿음을 시험받은 이 일을 참된 세존께 아룁니다.",
+    "cover": [
+     215,
+     186,
+     149
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     182,
+     52,
+     620,
+     154
+    ],
+    "ko": "제따와나에서 고따마 부처님께서 대중 앞에서 수람밧타를 높이십니다. ‘비구들이여, 나의 가르침에 흔들림 없는 믿음을 지닌 우바새 제자들 가운데 수람밧타가 으뜸이다.’",
+    "cover": [
+     227,
+     196,
+     150
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/08-Surambattha-14-Original.jpg",
+  "boxes": []
+ },
+ {
+  "img": "images/08-Surambattha-15-Original.jpg",
+  "boxes": []
+ }
+]
