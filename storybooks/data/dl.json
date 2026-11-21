@@ -696,18 +696,28 @@
 "zip": 13221311
 },
 "New-Jataka": {
-"n": 24,
-"pdf": 15772010,
-"pdfs": 3259457,
-"stories": 1,
-"zip": 15614104
+"n": 54,
+"pdf": 37514809,
+"pdfs": 7300875,
+"stories": 2,
+"zip": 37347565
 },
 "New-Jataka-en": {
-"n": 24,
-"pdf": 15795392,
-"pdfs": 3279341,
-"stories": 1,
-"zip": 15605416
+"n": 54,
+"pdf": 37582493,
+"pdfs": 7356832,
+"stories": 2,
+"zip": 37383239
+},
+"New-Jataka/001-Apannaka": {
+"n": 30,
+"pdf": 21909493,
+"zip": 21731428
+},
+"New-Jataka/001-Apannaka-en": {
+"n": 30,
+"pdf": 21976328,
+"zip": 21775646
 },
 "New-Jataka/002-Vannupatha": {
 "n": 24,
