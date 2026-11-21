@@ -711,7 +711,7 @@ function markUl(s, n) {
   return out + esc(s.slice(p));
 }
 function pageHtml(p) {
-  if (!p.img) return `<div class="reflow ${fontCls()}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}" style="--fs:${R.fs};--fnfs:${fnfsNow()};--lh:${R.lh};--mw:${R.mw}em">${paras(p.text).map((s, k) => `<p data-pg="${p.n}" data-s="${k}">${markUl(s, p.n)}</p>`).join('') || '<p class="muted">빈 쪽입니다.</p>'}</div>`;
+  if (!p.img) return `<div class="reflow ${fontCls()}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}${layCls()}" style="--fs:${R.fs};--fnfs:${fnfsNow()};--lh:${R.lh};--mw:${R.mw}em;--pgap:${pgapNow()}em">${paras(p.text).map((s, k) => `<p data-pg="${p.n}" data-s="${k}">${markUl(s, p.n)}</p>`).join('') || '<p class="muted">빈 쪽입니다.</p>'}</div>`;
   const src = R.zoom > 1.2 && p.big ? p.big : p.img;
   return `<div class="page-sheet img-sheet" style="width:min(${Math.round(560 * R.zoom)}px,100%);${p.w && p.h ? `aspect-ratio:${p.w}/${p.h}` : ''}"><img src="${esc(src)}" alt="${esc(R.title)} ${esc(pageName(p))}" draggable="false"></div>`;
 }
@@ -961,7 +961,7 @@ function reflowHtml() {
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}" data-ci="${ci - 1}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}" data-ci="${ci + 1}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   // 장 제목과 같아 숨긴 본문 제목에 각주 번호가 붙어 있으면(예: '보시의 실천⁷') 위의 큰 장 제목에 그 번호를 붙여 보임 (2026-11-11)
   const dupFn = [...body.matchAll(/<p [^>]*class="ch-dup"[^>]*>(.*?)<\/p>/g)].flatMap(m => m[1].match(/<sup class="fn-ref"[^>]*>[^<]*<\/sup>/g) || []).join('');
-  return `<div class="reflow ${fontCls()}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}${spreadOn() ? ' spread' : ''}${R.centerHeads ? ' chead' : ''}" style="--fs:${R.fs};--fnfs:${fnfsNow()};--lh:${R.lh};--mw:${R.mw}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${boxNum(esc(c.title))}${dupFn}</h3></div>` : ''}${spreadOn() ? `<div class="spr">${body}</div>` : body}${nav}</div>`;
+  return `<div class="reflow ${fontCls()}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}${spreadOn() ? ' spread' : ''}${R.centerHeads ? ' chead' : ''}${layCls()}" style="--fs:${R.fs};--fnfs:${fnfsNow()};--lh:${R.lh};--mw:${R.mw}em;--pgap:${pgapNow()}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${boxNum(esc(c.title))}${dupFn}</h3></div>` : ''}${spreadOn() ? `<div class="spr">${body}</div>` : body}${nav}</div>`;
 }
 // 이 장 안의 소제목 자리(화면의 문단) 목록
 // 굵은 글씨 한 줄만으로 된 짧은 문단(예: '[1. 사성제]', '수행이란 무엇인가?')도 소제목으로 봄 — 문장(. ! 로 끝남)·따옴표·괄호로 시작하는 강조 글은 빼고
@@ -1100,7 +1100,9 @@ function renderReader() {
     <div class="panel" id="p-tts">${ttsPanel()}</div>
     ${R.par.length ? `<div class="panel" id="p-par"><h5>⇄ 원서 대조</h5><div class="seg">${[['off', '끄기'], ['para', '문단 나란히'], ['sent', '문장마다']].map(([k, v]) => `<button data-parm="${k}" class="${R.parMode === k ? 'on' : ''}">${v}</button>`).join('')}</div>
       <p class="note">문단 나란히: 한국어 문단 옆(휴대폰은 아래)에 원서 문단. 문장마다: 한국어 문장과 원서 문장을 번갈아. 짝은 자동으로 맞춘 것이라 조금 어긋난 곳이 있을 수 있습니다.</p></div>` : ''}
-    <div class="panel" id="p-mode"><h5>화면 모드</h5><div class="seg">${[['day', '기본'], ['mono', '흑백'], ['night', '밤'], ['contrast', '고대비']].map(([k, v]) => `<button data-rmode="${k}" class="${store.get('mode', 'auto') === k ? 'on' : ''}">${v}</button>`).join('')}</div><p class="note">고른 모드는 사이트 전체에 적용되고 다음에 와도 유지됩니다.</p>${R.view === 'page' && hasImg ? '' : `<div class="row mw-row">글 너비 <span class="seg">${[[28, '좁게'], [36, '보통'], [46, '넓게'], [70, '화면 가득']].map(([v, l]) => `<button data-mw="${v}" class="${R.mw === v ? 'on' : ''}">${l}</button>`).join('')}</span></div>${R.spreadOk && spreadWide() ? `
+    <div class="panel" id="p-mode"><h5>화면 모드</h5><div class="seg">${[['day', '기본'], ['mono', '흑백'], ['night', '밤'], ['contrast', '고대비']].map(([k, v]) => `<button data-rmode="${k}" class="${store.get('mode', 'auto') === k ? 'on' : ''}">${v}</button>`).join('')}</div><p class="note">고른 모드는 사이트 전체에 적용되고 다음에 와도 유지됩니다.</p>${R.view === 'page' && hasImg ? '' : `<div class="row mw-row">글 너비 <span class="seg">${[[28, '좁게'], [36, '보통'], [46, '넓게'], [70, '화면 가득']].map(([v, l]) => `<button data-mw="${v}" class="${R.mw === v ? 'on' : ''}">${l}</button>`).join('')}</span></div>
+       <div class="row">문단 정렬 <span class="seg" role="group" aria-label="문단 정렬"><button data-ral="left" class="${alignNow() === 'left' ? 'on' : ''}">왼쪽 정렬</button><button data-ral="just" class="${alignNow() === 'just' ? 'on' : ''}">양쪽 정렬</button></span></div>
+       <div class="row">문단 사이 <span class="seg" role="group" aria-label="문단 사이 간격">${PGAPS.map(([v, l]) => `<button data-pgap="${v}" class="${pgapNow() === v ? 'on' : ''}" aria-label="문단 사이 ${l}">${l}</button>`).join('')}</span></div>${R.spreadOk && spreadWide() ? `
        <div class="row">쪽 보기 <span class="seg"><button data-spread="0" class="${R.spread ? '' : 'on'}">한쪽씩</button><button data-spread="1" class="${R.spread ? 'on' : ''}">양쪽으로</button></span></div>` : ''}`}${R.view === 'text' ? `<h5 class="rstep-h">‹ › 넘기는 단위</h5><div class="seg" role="group" aria-label="‹ › 넘기는 단위">${STEP_UNITS.map(([k, v]) => `<button data-rstep="${k}" class="${stepUnit() === k ? 'on' : ''}">${v}</button>`).join('')}</div><p class="note">아래 바의 ‹ › 단추를 누르면 이 단위로 넘어갑니다. 쪽 막대를 끌어 옮기는 것은 그대로입니다.</p>` : ''}</div>
     <div class="panel" id="p-ul"><h5>이 책의 밑줄</h5><ul>${uls().filter(h => h.id === R.id).sort((a, b) => a.p - b.p).map(h => `<li style="display:block"><button class="link" data-go="${h.p}">${esc(h.pl || h.p)}쪽</button><div class="quote" style="font-size:13.5px">${esc(h.text)}</div>${h.note ? `<div class="small muted">${esc(h.note)}</div>` : ''}</li>`).join('') || '<li class="muted">글을 끌어서 고르면 밑줄을 그을 수 있습니다.</li>'}</ul>
       <div class="row"><a class="tbtn" href="/mynotes/">내 서재에서 모두 보기</a></div></div>
@@ -1379,6 +1381,8 @@ function bindReader() {
   $$('[data-lh]', el).forEach(b => b.onclick = () => { R.lh = +b.dataset.lh; store.set('rlh', R.lh); renderReader(); reopen('p-font'); });
   $$('[data-font]', el).forEach(b => b.onclick = () => { R.font = b.dataset.font; loadReadFont(R.font); store.set('rfont', R.font); renderReader(); reopen('p-font'); });
   $$('[data-mw]', el).forEach(b => b.onclick = () => { R.mw = +b.dataset.mw; store.set('rmw', R.mw); renderReader(); reopen('p-mode'); });
+  $$('[data-ral]', el).forEach(b => b.onclick = () => { store.set('ralign', b.dataset.ral); renderReader(); reopen('p-mode'); toast(b.dataset.ral === 'just' ? '양쪽 정렬' : '왼쪽 정렬'); });
+  $$('[data-pgap]', el).forEach(b => b.onclick = () => { store.set('rpgap', +b.dataset.pgap); renderReader(); reopen('p-mode'); toast('문단 사이 ' + b.textContent); });
   $$('[data-parm]', el).forEach(b => b.onclick = async () => {
     const m = b.dataset.parm;
     if (m !== 'off' && !R.parD) { try { toast('원서를 불러오는 중입니다…'); R.parD = await (await fetch('/parallel/' + R.id + '.' + R.par[0] + '.json')).json(); } catch (e) { toast('원서를 불러오지 못했습니다'); return; } }
@@ -2841,7 +2845,7 @@ function parToc(g, O, kText, oHtml, wide) {
 
 /* ---------- 화면 낭독기: 고른 단추 알리기 (운영자 요청, 2026-11-17 — 화면은 그대로) ---------- */
 (function a11yPressed() {
-  const SEL = '.seg button, [data-spread], [data-bold], [data-font], [data-lh], [data-mw], [data-parm], [data-rmode]';
+  const SEL = '.seg button, [data-spread], [data-bold], [data-font], [data-lh], [data-mw], [data-ral], [data-pgap], [data-parm], [data-rmode]';
   const sync = root => { if (!root || !root.querySelectorAll) return; (root.matches && root.matches(SEL) ? [root] : []).concat([...root.querySelectorAll(SEL)]).forEach(b => { if (b.tagName !== 'BUTTON' || b.getAttribute('role')) return; const v = String(b.classList.contains('on')); if (b.getAttribute('aria-pressed') !== v) b.setAttribute('aria-pressed', v); }); };
   sync(document.body);
   new MutationObserver(ms => { for (const m of ms) { if (m.type === 'attributes') { if (m.target.matches && m.target.matches(SEL)) sync(m.target); } else m.addedNodes.forEach(n => n.nodeType === 1 && sync(n)); } })
@@ -2986,6 +2990,11 @@ function readerKey(e) {
 /* ---------- 읽기 글꼴 (저시력, 운영자 요청 2026-11-17): 명조·고딕 + 나눔명조·나눔고딕(구글 글꼴) + KoPub 바탕·돋움(public/fonts/kopub, 한국출판인회의 무료 글꼴 — 원본 그대로, LICENSE.md) ---------- */
 // 단추 이름은 그 글꼴로 보임 — 이름 글자만 담은 작은 글꼴(나눔은 구글 text=, KoPub 은 label-*.woff2). 본문 글꼴은 고를 때만 받음
 const RFONTS = [['serif', '명조', 'var(--serif)'], ['sans', '고딕', 'var(--sans)'], ['nanum-myeongjo', '나눔명조', "'Nanum Myeongjo',var(--serif)"], ['nanum-gothic', '나눔고딕', "'Nanum Gothic',var(--sans)"], ['kopub-batang', 'KoPub 바탕', "'dd-kpb-label','KoPubWorld Batang',var(--serif)"], ['kopub-dotum', 'KoPub 돋움', "'dd-kpd-label','KoPubWorld Dotum',var(--sans)"]];
+// 문단 정렬·문단 사이 간격 (운영자 요청, 2026-11-21) — 이 기기에 기억, 모든 책 같음, 단순 화면 글도 같게
+const PGAPS = [[0.5, '좁게'], [1, '보통'], [1.6, '넓게']];
+function alignNow() { return store.get('ralign', 'left') === 'just' ? 'just' : 'left'; }
+function pgapNow() { const v = +store.get('rpgap', 1); return PGAPS.some(g => g[0] === v) ? v : 1; }
+function layCls() { return (alignNow() === 'just' ? ' al-just' : '') + (pgapNow() !== 1 ? ' pgap' : ''); }
 function fontCls() { return R.font === 'sans' ? 'sans' : R.font && R.font !== 'serif' ? 'f-' + R.font : ''; }
 function addCss(id, href) { if (document.getElementById(id)) return; const l = document.createElement('link'); l.id = id; l.rel = 'stylesheet'; l.href = href; document.head.appendChild(l); }
 function loadReadFont(f) {
