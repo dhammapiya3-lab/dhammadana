@@ -12,6 +12,7 @@
     "ko": "아시아의 빛",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 44,
     "shape": "box",
     "manual": true
@@ -26,6 +27,7 @@
     "ko": "싯닷타 왕자의 전설",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 22,
     "shape": "box",
     "manual": true
@@ -40,6 +42,7 @@
     "ko": "세상을 구하신 분의 경전,\n지상에서는 싯닷타 왕자라 불린 부처님,\n땅과 하늘과 지옥에서 견줄 이 없고\n가장 존귀하고 지혜롭고 자비로우신 분,\n열반과 법을 가르치신 스승의 이야기.",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 15,
     "shape": "box",
     "manual": true
@@ -59,6 +62,7 @@
     "ko": "거룩한 하강",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 30,
     "shape": "box",
     "manual": true
@@ -73,6 +77,7 @@
     "ko": "하늘 높은 곳에서 보살은 때를\n기다렸습니다. 천신으로서의 삶이 다해 가는\n다섯 가지 징조를 보고 신들에게\n떠남을 알렸습니다.\n\n“이제 나는 세상을 도우러 간다.\n이번이 마지막이다. 나와 나의 법을\n배우는 이들에게 태어남과 죽음은 끝나리라.”\n\n그는 땅을 내려다보고 히말라야 눈 아래,\n숫도다나 왕이 정의롭게 다스리는\n사꺄족 가운데 태어나기로 했습니다.",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 15,
     "shape": "box",
     "manual": true
@@ -92,6 +97,7 @@
     "ko": "마야 왕비의 꿈",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 28,
     "shape": "box",
     "manual": true
@@ -106,6 +112,7 @@
     "ko": "그날 밤 마야 왕비는 별 하나와\n우유처럼 흰 여섯 상아의 흰 코끼리가\n태 안으로 들어오는 꿈을 꾸었습니다.\n깨어나자 가슴에 기쁨이 가득했습니다.\n\n온 세계가 출렁였습니다. 산이 흔들리고\n물결이 잔잔해지고, 부드러운 속삭임이\n깊은 곳까지 퍼졌습니다.\n“죽었다 살아날 이들이여,\n살다 죽을 이들이여,\n일어나 듣고 희망하라!\n부처님이 오셨다!”",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 15,
     "shape": "box",
     "manual": true
@@ -125,6 +132,7 @@
     "ko": "기적 같은 탄생\n\n빨라사 나무 아래에서 아기는\n고통 없이 태어났습니다.\n서른두 가지 상호를 지닌\n아기의 가마를 멘 이들은\n사람으로 변장한 사방의\n사천왕이었습니다.",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 15,
     "shape": "box",
     "manual": true
@@ -144,6 +152,7 @@
     "ko": "아시따의 예언",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 28,
     "shape": "box",
     "manual": true
@@ -158,6 +167,7 @@
     "ko": "성자 아시따는 슬퍼서가 아니라,\n아기가 부처님이 되시기 전에 자기가\n죽게 될 것이기에 울었습니다.\n그는 왕에게 말했습니다.\n\n“이 아이는 인간이라는 나무에\n수없는 세월에 한 번 피는 꽃입니다.”\n\n그러나 그는 앞날을 일러 주었습니다.\n“이 아이 때문에 칼이 왕의 가슴을\n찌르리라.” 왕자가 세상을 구하려고\n왕가의 뿌리를 떠날 것이기 때문이었습니다.",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 15,
     "shape": "box",
     "manual": true
@@ -177,6 +187,7 @@
     "ko": "모든 것을 아는 학생",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 28,
     "shape": "box",
     "manual": true
@@ -191,6 +202,7 @@
     "ko": "글을 배우게 되었을 때 어린 왕자는\n글자만 익힌 것이 아니었습니다.\n세상의 모든 글자로 거룩한 게송\n가야뜨리를 외웠습니다. 나가리 글자와\n남쪽 글자, 동굴 사람과 바닷사람의\n기호로 썼고, 뱀을 섬기는 이들과\n불을 섬기는 이들의 글자도\n알았습니다. 스승 위스와미뜨라는\n이 아이가 ‘책 없이도’ 지혜를\n지녔음을 깨달았습니다.",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 17,
     "shape": "box",
     "manual": true
@@ -210,6 +222,7 @@
     "ko": "숫자의 달인",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 24,
     "shape": "box",
     "manual": true
@@ -224,6 +237,7 @@
     "ko": "왕자는 십만(락) 너머 밤하늘의 별(까타)과\n겁(안따깝빠)까지 세었습니다. 극미(빠라마누)가 어떻게\n우주를 이루는지 설명하자 위스와미뜨라는 바닥에 엎드려\n외쳤습니다. “당신은 스승들의 스승이십니다.\n제가 아니라 당신이 참스승이십니다.”",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 15,
     "shape": "box",
     "manual": true
@@ -243,6 +257,7 @@
     "ko": "백조 사건",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 30,
     "shape": "box",
     "manual": true
@@ -257,6 +272,7 @@
     "ko": "데와닷따가 백조를 쏘았으나\n싯닷타가 받아 안았습니다. 왕자는\n새를 달래고 쇠 화살을 뽑았습니다.\n새의 아픔을 알려고 그는 화살촉을\n자기 손목에 눌러 보고 ‘따가움에\n움찔했습니다’. 그는 새를 내주지\n않고, 죽인 이는 죽은 것을 가질 수\n있어도 생명은 살린 이의 것이라고\n말했습니다.",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 19,
     "shape": "box",
     "manual": true
@@ -271,6 +287,7 @@
     "ko": " ",
     "cover": null,
     "align": "center",
+    "whole": true,
     "shape": "box",
     "manual": true
    }
@@ -289,6 +306,7 @@
     "ko": "자비로운 판결\n다툼은 대신들 앞에 올라갔습니다. 낯선 사제가\n왕자의 운명을 정할 판결을 내렸습니다.\n“살린 이가 죽이려 한 이보다 그 생명을 더\n가진다.” 판결은 받아들여졌고, 사제는 사라졌습니다.\n그는 기어가는 뱀, 변장한 신이었습니다.",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 14,
     "shape": "box",
     "manual": true
@@ -308,6 +326,7 @@
     "ko": "밭갈이 축제\n‘부처의 영광과 괴로움’을 감추려고 왕은 왕자를 ‘봄 동산’으로\n데려갔습니다. 마을엔 등불이 걸리고 들판엔 씨 뿌리는 이와 춤추는\n이들이 가득했습니다. “모든 것이 평화와 풍요를 말했고 왕자는 보고\n기뻐했습니다.” 그러나 곧 그 밑에 있는 것에 눈뜨게 됩니다.",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 14,
     "shape": "box",
     "manual": true
@@ -327,6 +346,7 @@
     "ko": "자연의 참모습",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 20,
     "shape": "box",
     "manual": true
@@ -341,6 +361,7 @@
     "ko": "더 깊이 보던 싯닷타는\n‘삶이라는 장미에 돋은 가시’를\n보았습니다. 풀숲에서 서로\n죽이는 모습이었습니다.\n“도마뱀은 개미를, 뱀은\n도마뱀을, 솔개는 둘 다를\n먹으니… 죽이는 자가 또\n죽임을 당하며 삶은 죽음을\n먹고 산다.” 그는 아름다운\n축제 밑에 살아남으려는\n무서운 다툼이 숨어 있음을\n깨달았습니다.",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 15,
     "shape": "box",
     "manual": true
@@ -360,6 +381,7 @@
     "ko": "존재의 슬픔",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 26,
     "shape": "box",
     "manual": true
@@ -374,6 +396,7 @@
     "ko": "그는 품삯을 벌려 땀 흘리는\n농부와 ‘쓰라린 멍에에 목살이\n부르튼’ 소들을 보았습니다.\n그는 한숨지었습니다.\n\n“이것이 나를 보여 주려고\n데려온 행복한 세상인가?\n농부의 빵은 땀으로 얼마나 짠가!\n살려는 몸부림이 모든 생명을\n다투게 하는구나.”\n\n괴로움에 겨워 그는 이 슬픔을\n명상할 자리를 찾았습니다.",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 16,
     "shape": "box",
     "manual": true
@@ -393,6 +416,7 @@
     "ko": "첫 선정\n\n잠부나무 아래 앉아 그는\n‘삶의 깊은 병’을 명상했습니다.\n큰 연민으로 감각과 자아를\n씻어 내고, 깨달음으로 가는\n첫걸음인 선정(jhāna)에\n들었습니다.",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 15,
     "shape": "box",
     "manual": true
@@ -412,6 +436,7 @@
     "ko": "그림자의 기적\n\n해가 서쪽으로 기울자 다른 나무들의\n그림자는 옮겨 갔지만 잠부나무의\n그림자는 왕자를 지키려 그대로\n머물렀습니다. 하늘을 날던 다섯\n선인이 그의 힘에 멈추어 내려다보고,\n‘장밋빛 광륜’을 두른 왕자를 보며\n찬탄을 노래했습니다.",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 14,
     "shape": "box",
     "manual": true
@@ -431,6 +456,7 @@
     "ko": "예언이 이루어지다\n꽃들 속에서 한 목소리가 말했습니다. ‘내 그림자는 그의 곁을 떠나지 않으리.’\n왕자는 일을 시작했습니다. 다친 백조와 땀 흘리는 농부를 향한 연민이\n그를 피할 수 없는 길로 이끌었습니다. 세상을 무명에서 건질 부처님이 되는 길로.",
     "cover": null,
     "align": "center",
+    "whole": true,
     "em": 16,
     "shape": "box",
     "manual": true

@@ -1,0 +1,519 @@
+[
+ {
+  "img": "images/Light-of-Asia-02-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     26,
+     610,
+     90
+    ],
+    "ko": "아시아의 빛 제2권\n왕자, 겨루기, 그리고 금빛 새장",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     70,
+     384,
+     730,
+     448
+    ],
+    "ko": "열여덟 살의 싯닷타 왕자는 진실을 가리도록 꾸민 세상에서 살았습니다.\n아버지 숫도다나 왕은 아들이 왕좌를 떠나리라는 예언을 두려워하여\n‘명상의 그림자’와 삶의 거친 현실에서 아들을 떼어 두려 했습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-02-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     10,
+     16,
+     792,
+     45
+    ],
+    "ko": "완벽한 세 궁전",
+    "cover": null,
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     10,
+     47,
+     792,
+     92
+    ],
+    "ko": "왕자를 땅에 묶어 두려고 왕은 세 궁전을 지었습니다. 겨울에 따뜻한 수바, 여름에 시원한 수람마, 우기의 람마.\n시시각각 새 즐거움이 이어지고 ‘시들지 않는 꽃’으로 흐르는 세월을 가렸습니다.",
+    "cover": null,
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-02-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     552,
+     80,
+     788,
+     116
+    ],
+    "ko": "왕의 두려움",
+    "cover": null,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     552,
+     118,
+     788,
+     366
+    ],
+    "ko": "호화로운 가운데서도 왕자의\n눈은 자주 쓸쓸해졌습니다.\n\n왕은 예언을 떠올렸습니다.\n아들은 ‘왕 중의 왕’이 되어\n적의 목을 밟거나, 자기를\n버리는 낮은 길을 걸으리라.\n\n앞의 길이 되기를 바란 왕은\n조언을 구했습니다. 어떻게\n아이의 마음을 하늘에서\n땅으로 돌릴 수 있을까?",
+    "cover": null,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-02-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     92,
+     336,
+     131
+    ],
+    "ko": "사랑의 끈",
+    "cover": null,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     36,
+     133,
+     336,
+     392
+    ],
+    "ko": "대신들은 “사랑이 이 가벼운\n병을 고치리라”고 했습니다.\n놋쇠 사슬도 마음을 묶지 못하나\n“소녀의 머리카락은 가볍게\n묶는다”는 것이었습니다.\n\n그들은 나라의 처녀들이 왕자의\n마음을 얻으려 겨루는 아름다움의\n잔치를 열어, 왕자를 슬쩍\n행복으로 이끌자고 했습니다.",
+    "cover": null,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-02-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     56,
+     326,
+     95
+    ],
+    "ko": "처녀들의 잔치",
+    "cover": null,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     36,
+     97,
+     326,
+     394
+    ],
+    "ko": "‘도시의 꽃들’이 목욕하고 향을\n바르고 단장하여 문으로 몰려왔습니다.\n그들은 왕자의 거룩한 기품에\n떨며 왕좌 앞을 지나갔습니다.\n\n그러나 싯닷타는 흔들리지\n않았습니다. 부드러운 손으로\n선물을 주었으나 그의 마음은\n구름에 은빛으로 덮인 호수처럼\n비어 있었습니다.",
+    "cover": null,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-02-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     476,
+     270,
+     796,
+     300
+    ],
+    "ko": "눈길이 마주치다",
+    "cover": null,
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     476,
+     302,
+     796,
+     432
+    ],
+    "ko": "그때 야소다라가 왔습니다. 그녀만이\n왕자의 눈을 똑바로 보았습니다.\n“제 선물은 없나요?” “선물은 다 나갔소.\n대신 이것을 받으시오.” 그는 에메랄드\n목걸이를 풀어 그녀 허리에 둘러\n주었습니다. 눈길이 마주쳤고,\n그 눈길에서 사랑이 피어났습니다.",
+    "cover": null,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-02-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     22,
+     650,
+     64
+    ],
+    "ko": "태어남과 죽음의 바퀴",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     96,
+     66,
+     704,
+     160
+    ],
+    "ko": "이것은 새 사랑이 아니었습니다. 아주 먼 옛날 그들은 사냥꾼과 숲속\n소녀였고, 또 다른 삶에서는 호랑이와 암호랑이였습니다. ‘이미 있었던 것은\n우리 둘 사이에 있어야 하리.’ 비 온 뒤 숨은 씨앗이 싹트듯 옛 인연이 곧 피어났습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-02-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     116,
+     306,
+     152
+    ],
+    "ko": "무예 겨루기",
+    "cover": null,
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     30,
+     154,
+     306,
+     324
+    ],
+    "ko": "야소다라의 아버지는 ‘궁에만\n갇혀 지낸’ 왕자에게 딸을 줄 수\n없다고 했습니다. 사꺄족 법에\n따라 신랑은 무예에서 뛰어남을\n보여야 했습니다. 싯닷타는 나직이\n웃으며 받아들이고 온 나라를\n불러 모았습니다.",
+    "cover": null,
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-02-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     528,
+     100,
+     788,
+     140
+    ],
+    "ko": "싱하하누의 활",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     528,
+     150,
+     788,
+     418
+    ],
+    "ko": "다른 이들은 먼 과녁을\n맞혔으나 싯닷타는 겨우 보이는\n과녁을 청했습니다. 그는 사원에\n여러 대 동안 시위를 걸지 않고\n모셔 둔 싱하하누의 옛 활을\n가져오게 했습니다. 검은 쇠\n활을 ‘들소 뿔처럼’ 휘자\n화살은 하늘을 가르며\n보이지 않게 사라졌습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-02-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     36,
+     292,
+     75
+    ],
+    "ko": "칼의 일격",
+    "cover": null,
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     22,
+     77,
+     292,
+     386
+    ],
+    "ko": "난다는 아홉 줄기를\n베었으나, 싯닷타 앞에는 함께\n자란 두 나무가 있었습니다.\n\n그의 칼은 너무 날카롭고\n매끄럽게 베어 줄기들이 그대로\n서 있었습니다.\n\n사람들은 베었는지 의심했으나\n남풍이 불자 두 큰 나무가\n모래 위로 쓰러졌습니다.",
+    "cover": null,
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-02-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     420,
+     40,
+     790,
+     86
+    ],
+    "ko": "검은 말 길들이기",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     420,
+     88,
+     792,
+     206
+    ],
+    "ko": "‘밤처럼 검은’ 말이 끌려 나왔습니다. 다른\n기수들을 짓밟은 말이었습니다. 남들은 채찍을\n썼으나 싯닷타는 갈기를 쓰다듬으며 나직이\n속삭였습니다. ‘사나운 머리’가 숙여지고, 말은\n주인을 알아보고 얌전히 섰습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-02-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     336,
+     620,
+     372
+    ],
+    "ko": "승리의 관",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     96,
+     374,
+     794,
+     438
+    ],
+    "ko": "야소다라는 모두 앞에서 그를 택해 향기로운 화환을 목에 걸었습니다. 길한 날에\n불과 물로 혼례를 올렸습니다. ‘흰머리 아버지’가 축복했고, 한동안 사랑이 모든 것이었습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-02-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     18,
+     26,
+     376,
+     58
+    ],
+    "ko": "위스람완: 즐거움의 궁전",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     14,
+     62,
+     420,
+     160
+    ],
+    "ko": "그러나 왕은 사랑만 믿지 않았습니다. 그는 세상의\n경이인 새 ‘감옥’ 위스람완을 지었습니다. 기둥 늘어선\n회랑과 수정 분수와 순한 가젤이 있는 낙원으로,\n마음을 잠재우고 세상을 막도록 지은 곳이었습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-02-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     536,
+     124,
+     784,
+     166
+    ],
+    "ko": "금지된 진실",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     536,
+     170,
+     784,
+     330
+    ],
+    "ko": "이 궁에는 엄한 명이 있었습니다.\n죽음, 늙음, 슬픔, 아픔을 입에\n올리지 말라. 시든 꽃이나 슬픈\n얼굴 같은 ‘죄 없는 죄인’은 곧바로\n쫓겨났습니다. 왕자는 늘 ‘지금’에\n살며 ‘생각의 빈 알’을 품지\n않도록 지켜졌습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Light-of-Asia-02-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     262,
+     174,
+     542,
+     206
+    ],
+    "ko": "청동 문",
+    "cover": [
+     207,
+     182,
+     138
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     262,
+     208,
+     542,
+     346
+    ],
+    "ko": "왕은 세 겹 성벽을 쌓았습니다.\n바깥 놋쇠 문은 백 사람이\n밀어야 움직였습니다. 명은 엄했습니다.\n‘누구도 지나가지 못하게 하라.\n내 아들이라도.’\n새장은 잠겼고 왕자는 안전했습니다.\n왕은 그렇게 믿었습니다.",
+    "cover": [
+     213,
+     192,
+     154
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
