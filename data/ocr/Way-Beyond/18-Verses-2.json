@@ -1,0 +1,264 @@
+[
+ {
+  "img": "images/18-Verses-2-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Way",
+   "the",
+   "Beyond.",
+   "The",
+   "final",
+   "realization",
+   "Pingiya."
+  ]
+ },
+ {
+  "img": "images/18-Verses-2-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     160,
+     72
+    ],
+    "bbox": [
+     251,
+     3,
+     1590,
+     956
+    ],
+    "shape": "bubble",
+    "en": "Before 2 iD) Gotama, rar ancient teachers 3 iP) said, “Tt was so, and so it will be.” This was mere hearsay, multiplying endless thoughts in barren woodland. wan",
+    "conf": 45
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/18-Verses-2-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "abandoned",
+   "the",
+   "barren",
+   "woodland",
+   "for",
+   "fruitful",
+   "forest.",
+   "left",
+   "those",
+   "little",
+   "wisdom,",
+   "like",
+   "swan",
+   "reaching",
+   "the",
+   "great",
+   "sea."
+  ]
+ },
+ {
+  "img": "images/18-Verses-2-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Then",
+   "saw",
+   "the",
+   "Darkness-Dispeller.",
+   "The",
+   "Sambuddha",
+   "taught",
+   "truth",
+   "visible",
+   "here",
+   "and",
+   "now,",
+   "beyond",
+   "time,",
+   "the",
+   "end",
+   "all",
+   "craving."
+  ]
+ },
+ {
+  "img": "images/18-Verses-2-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Bavari",
+   "asked,",
+   "“Then",
+   "why",
+   "you",
+   "dwell",
+   "apart",
+   "from",
+   "him,",
+   "even",
+   "for",
+   "second,",
+   "Pingiya?",
+   "Why",
+   "leave",
+   "the",
+   "one",
+   "great",
+   "intelligence?”"
+  ]
+ },
+ {
+  "img": "images/18-Verses-2-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "not",
+   "dwell",
+   "apart,”",
+   "Pingiya",
+   "replied.",
+   "see",
+   "him",
+   "mind",
+   "with",
+   "the",
+   "eye.",
+   "Revering",
+   "him",
+   "night",
+   "and",
+   "day,",
+   "there",
+   "separation.”"
+  ]
+ },
+ {
+  "img": "images/18-Verses-2-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Tam",
+   "old,",
+   "feeble,",
+   "and",
+   "without",
+   "strength.",
+   "Trembling,",
+   "drifted",
+   "from",
+   "island",
+   "island,",
+   "lying",
+   "down",
+   "dark",
+   "quagmire",
+   "suffering.”"
+  ]
+ },
+ {
+  "img": "images/18-Verses-2-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "cannot",
+   "move,",
+   "but",
+   "take",
+   "One",
+   "Great",
+   "Wisdom",
+   "One",
+   "eat"
+  ]
+ },
+ {
+  "img": "images/18-Verses-2-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Just",
+   "Vakkali",
+   "released",
+   "his",
+   "confidence,",
+   "must",
+   "you,",
+   "Pingiya.",
+   "Release",
+   "your",
+   "confidence,",
+   "and",
+   "you",
+   "will",
+   "beyond",
+   "the",
+   "realm",
+   "Death.”"
+  ]
+ },
+ {
+  "img": "images/18-Verses-2-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Hearing",
+   "the",
+   "sage,",
+   "all",
+   "doubt",
+   "vanished.",
+   "Bear",
+   "mind",
+   "one",
+   "whose",
+   "heart",
+   "forever",
+   "intent",
+   "Nibbanam."
+  ]
+ }
+]

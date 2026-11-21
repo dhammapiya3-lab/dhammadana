@@ -1,0 +1,467 @@
+[
+ {
+  "img": "images/03-Jatila-the-Treasurer-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     95,
+     156
+    ],
+    "bbox": [
+     208,
+     469,
+     1081,
+     1075
+    ],
+    "shape": "box",
+    "en": "Jatila: The Karmic Tapestry of the Golden Hill. The precise architecture of merit, wealth, and true liberation.",
+    "conf": 46
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     128,
+     370
+    ],
+    "bbox": [
+     387,
+     1217,
+     2261,
+     1471
+    ],
+    "shape": "box",
+    "en": "In Buddha Kassapa’s era, frustrated goldsmith was asked for gold for sacred shrine. Angered by domestic quarrel, he cursed visiting Arahat: ‘Go throw your Buddha image into ane water!’ This single verbal misdeed altered his destiny.",
+    "conf": 56
+   }
+  ],
+  "loose": [
+   "(VA",
+   "WA\\"
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     412,
+     70
+    ],
+    "bbox": [
+     1346,
+     222,
+     2480,
+     598
+    ],
+    "shape": "box",
+    "en": "Rebuked by his wife, spiritual urgency (sarmvega) struck the goldsmith. To atone, he crafted three golden flower vessels for the shrine. He asked his three sons to share in this meritorious deed, unknowingly setting the stage for their future.",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     99,
+     122
+    ],
+    "bbox": [
+     314,
+     403,
+     2334,
+     724
+    ],
+    "shape": "box",
+    "en": "if WAYS CAN WYRE hes Xe he WNT GF. Yor ING NG he lA Eldest Son: “You vilified the Buddha alone.” Za NX: Tex Liye EWN. 2 FLT WL RRS PoE",
+    "conf": 33
+   },
+   {
+    "seed": [
+     95,
+     243
+    ],
+    "bbox": [
+     314,
+     767,
+     2334,
+     1078
+    ],
+    "shape": "box",
+    "en": "Leg TAS of wes SENG fae aN ESS OES by OU lal wl? 1 SY Ne Middle Son: “Do it yourself.” La Ns Vey OCIS: GES WIEBE NS LES CT ZnS IG mike ot tine UG",
+    "conf": 31
+   },
+   {
+    "seed": [
+     275,
+     340
+    ],
+    "bbox": [
+     314,
+     1121,
+     2334,
+     1432
+    ],
+    "shape": "box",
+    "en": "NY ESN ILS ESTES Gia PEI WIE OY, BOS ES ey) ap Youngest Son: “It is my duty to help bi VEZ) ex is ul ers WGA ah £20 ON OLE OD PFN",
+    "conf": 31
+   }
+  ],
+  "loose": [
+   "The",
+   "Matrix",
+   "Intent",
+   "Our",
+   "weave",
+   "the",
+   "strict",
+   "fabric",
+   "our",
+   "karmic",
+   "future.",
+   "choices",
+   "re.",
+   "Matrix",
+   "als"
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     39,
+     287
+    ],
+    "bbox": [
+     30,
+     899,
+     1263,
+     1445
+    ],
+    "shape": "box",
+    "en": "For his grave words, the goldsmith drifted on the river of Samsara for seven lifetimes In Baranasi, merchant’s daughter and sky-faring Vijjadhara secretly conceived child. To hide the birth, the infant was sent adrift in an earthen pot.",
+    "conf": 89
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "downstream",
+   "follower",
+   "Ven.",
+   "Maha",
+   "Kaccayana,",
+   "the",
+   "unbathed",
+   "infant’s",
+   "hair",
+   "grew",
+   "matted,",
+   "earning",
+   "him",
+   "the",
+   "name",
+   "Jatila",
+   "(‘knotted",
+   "hair’).",
+   "Recognizing",
+   "his",
+   "immense",
+   "past",
+   "merit,",
+   "the",
+   "monk",
+   "placed",
+   "him",
+   "with",
+   "merchant",
+   "AWW"
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     102,
+     58
+    ],
+    "bbox": [
+     99,
+     159,
+     1104,
+     499
+    ],
+    "shape": "box",
+    "en": "Entrusted with shop of unsellable goods, the young boy’s karmic fortune compelled the town’s guardian spirits to direct all buyers to him. Twelve years of dead stock sold in single day, proving his supernatural merit.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "NEE"
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     80,
+     60
+    ],
+    "bbox": [
+     99,
+     159,
+     1104,
+     499
+    ],
+    "shape": "box",
+    "en": "Upon entering his newly built home, solid golden hill, 80 cubits high, erupted from the earth in his backyard. King Bimbisara named him: Lord of the Golden Hill.",
+    "conf": 84
+   }
+  ],
+  "loose": [
+   "ial"
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     312,
+     168
+    ],
+    "bbox": [
+     784,
+     522,
+     1865,
+     1012
+    ],
+    "shape": "box",
+    "en": "Seeking peers to take over his duties, Jatila mapped the ultimate karmic wealth of Jambudipa: Jatila: The 80-Cubit Golden Hill Mendaka: Flocks of Golden Goats Jotika: The 100,000-coin velvet foot-rug",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "ill",
+   "All"
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     274,
+     23
+    ],
+    "bbox": [
+     595,
+     56,
+     2056,
+     291
+    ],
+    "shape": "box",
+    "en": "The Matrix of Fruition The hill only yielded to those who helped build it.",
+    "conf": 91
+   },
+   {
+    "seed": [
+     540,
+     136
+    ],
+    "bbox": [
+     1766,
+     433,
+     2526,
+     562
+    ],
+    "shape": "box",
+    "en": "Eldest: Eldest: Strikes solid granite",
+    "conf": 42
+   },
+   {
+    "seed": [
+     543,
+     254
+    ],
+    "bbox": [
+     1762,
+     823,
+     2526,
+     952
+    ],
+    "shape": "box",
+    "en": "Middle: Strikes solid granite.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     550,
+     361
+    ],
+    "bbox": [
+     1762,
+     1177,
+     2526,
+     1372
+    ],
+    "shape": "box",
+    "en": "Youngest: Strikes soft clay, harvesting vesting gold easily.",
+    "conf": 75
+   }
+  ],
+  "loose": [
+   "TEMG,"
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Realizing",
+   "the",
+   "exactitude",
+   "karma,",
+   "Jatila",
+   "relinquished",
+   "the",
+   "golden",
+   "hill",
+   "his",
+   "youngest",
+   "son.",
+   "renounced",
+   "his",
+   "unfatho-",
+   "mable",
+   "wealth,",
+   "joined",
+   "the",
+   "Sangha,",
+   "and",
+   "attained",
+   "Arahatship",
+   "mere",
+   "days—breaking",
+   "the",
+   "cycle",
+   "Sarhsara",
+   "last."
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "SSS",
+   "Monastics",
+   "doubted",
+   "Jatila’s",
+   "Awakening,",
+   "assuming",
+   "still",
+   "craved",
+   "his",
+   "wealth.",
+   "The",
+   "Buddha",
+   "clarified:",
+   "‘He",
+   "who",
+   "has",
+   "exhausted",
+   "craving",
+   "for",
+   "existence,",
+   "and",
+   "made",
+   "end",
+   "all",
+   "forms",
+   "existence,",
+   "him",
+   "call",
+   "Brahmin.’",
+   "True",
+   "liberation",
+   "leaves",
+   "threads",
+   "attached.",
+   "his",
+   "The"
+  ]
+ }
+]

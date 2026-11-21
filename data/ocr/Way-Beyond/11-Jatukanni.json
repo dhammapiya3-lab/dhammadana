@@ -1,0 +1,269 @@
+[
+ {
+  "img": "images/11-Jatukanni-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     302,
+     178
+    ],
+    "bbox": [
+     539,
+     496,
+     2245,
+     1349
+    ],
+    "shape": "bubble",
+    "en": "Questions The Way to the Beyond",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-Jatukanni-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Having",
+   "heard",
+   "hero",
+   "who",
+   "has",
+   "desire",
+   "for",
+   "pleasure,",
+   "came",
+   "ask",
+   "that",
+   "desireless",
+   "one",
+   "who",
+   "beyond",
+   "the",
+   "flood...”"
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "..please",
+   "speak",
+   "the",
+   "peace,",
+   "really",
+   "is,",
+   "Fortunate",
+   "One,",
+   "please",
+   "tell",
+   "this."
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "One",
+   "moves",
+   "about",
+   "having",
+   "vanquished",
+   "sense",
+   "desires,",
+   "the",
+   "splendid",
+   "sun",
+   "vanquishes",
+   "the",
+   "earth",
+   "with",
+   "its",
+   "splendour.",
+   "Fortunate"
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "little",
+   "wisdom,",
+   "One",
+   "Great",
+   "Wisdom,",
+   "explain",
+   "the",
+   "Teaching",
+   "that",
+   "may",
+   "know",
+   "the",
+   "complete",
+   "giving",
+   "birth",
+   "and",
+   "old",
+   "age",
+   "here."
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Remove",
+   "the",
+   "greed",
+   "for",
+   "sense",
+   "pleasures,",
+   "having",
+   "seen",
+   "there",
+   "safety",
+   "renunciation..."
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "...let",
+   "there",
+   "nothing",
+   "found",
+   "you",
+   "that",
+   "has",
+   "been",
+   "taken",
+   "still",
+   "put",
+   "down."
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "You",
+   "should",
+   "which",
+   "past...",
+   "erase",
+   "that"
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "have",
+   "nothing",
+   "for",
+   "the",
+   "future..."
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "present"
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "For",
+   "one",
+   "altogether",
+   "without",
+   "greed",
+   "for",
+   "mind",
+   "and",
+   "body,",
+   "brahmin..."
+  ]
+ },
+ {
+  "img": "images/11-Jatukanni-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "pollutants",
+   "are",
+   "found",
+   "whereby",
+   "can",
+   "come",
+   "under",
+   "Death’s",
+   "control."
+  ]
+ }
+]

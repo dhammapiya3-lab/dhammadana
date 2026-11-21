@@ -1,0 +1,292 @@
+[
+ {
+  "img": "images/01-Ajita-01-Original.jpg",
+  "size": [
+   2645,
+   1495
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ajita’s",
+   "Questions",
+   "dialogue",
+   "ignorance,",
+   "mindfulness,",
+   "and",
+   "the",
+   "cessation",
+   "consciousness."
+  ]
+ },
+ {
+  "img": "images/01-Ajita-02-Original.jpg",
+  "size": [
+   2645,
+   1494
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“By",
+   "what",
+   "the",
+   "world",
+   "enveloped?",
+   "Why",
+   "does",
+   "not",
+   "become",
+   "clear?",
+   "What",
+   "you",
+   "say",
+   "its",
+   "defilement?",
+   "What",
+   "the",
+   "world’s",
+   "great",
+   "fear?”"
+  ]
+ },
+ {
+  "img": "images/01-Ajita-03-Original.jpg",
+  "size": [
+   2645,
+   1494
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“The",
+   "world",
+   "enveloped",
+   "ignorance,",
+   "because",
+   "heedlessness",
+   "and",
+   "meanness",
+   "does",
+   "not",
+   "become",
+   "clear.",
+   "Hunger",
+   "its",
+   "defilement,",
+   "say;",
+   "suffering",
+   "the",
+   "world’s",
+   "great",
+   "fear.”"
+  ]
+ },
+ {
+  "img": "images/01-Ajita-04-Original.jpg",
+  "size": [
+   2645,
+   1495
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Streams",
+   "are",
+   "flowing",
+   "everywhere,",
+   "what",
+   "the",
+   "constraint",
+   "for",
+   "streams?",
+   "Tell",
+   "the",
+   "restraint",
+   "for",
+   "streams;",
+   "what",
+   "are",
+   "the",
+   "streams",
+   "shut",
+   "off?”"
+  ]
+ },
+ {
+  "img": "images/01-Ajita-05-Original.jpg",
+  "size": [
+   2645,
+   1495
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Whatever",
+   "streams",
+   "there",
+   "are",
+   "the",
+   "world,",
+   "mindfulness",
+   "the",
+   "constraint",
+   "for",
+   "them.",
+   "That",
+   "the",
+   "restraint",
+   "for",
+   "streams,",
+   "say;",
+   "wisdom",
+   "they",
+   "are",
+   "shut",
+   "off.”"
+  ]
+ },
+ {
+  "img": "images/01-Ajita-06-Original.jpg",
+  "size": [
+   2645,
+   1494
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Wisdom",
+   "and",
+   "mindfulness,",
+   "and",
+   "mind",
+   "and",
+   "body,",
+   "dear",
+   "Sir,",
+   "please",
+   "tell",
+   "this",
+   "when",
+   "asked",
+   "where",
+   "these",
+   "things",
+   "cease?”"
+  ]
+ },
+ {
+  "img": "images/01-Ajita-07-Original.jpg",
+  "size": [
+   2645,
+   1495
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“As",
+   "where",
+   "mind",
+   "and",
+   "body",
+   "ceases",
+   "without",
+   "remainder:",
+   "with",
+   "the",
+   "cessation",
+   "consciousness,",
+   "this",
+   "place",
+   "ceases.”"
+  ]
+ },
+ {
+  "img": "images/01-Ajita-08-Original.jpg",
+  "size": [
+   2645,
+   1495
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     204,
+     100
+    ],
+    "bbox": [
+     529,
+     251,
+     2295,
+     698
+    ],
+    "shape": "bubble",
+    "en": "the many in training SVT ask the prudent one, Vy conduct.”",
+    "conf": 38
+   }
+  ],
+  "loose": [
+   "“Those",
+   "Teaching,",
+   "here,",
+   "when",
+   "please"
+  ]
+ },
+ {
+  "img": "images/01-Ajita-09-Original.jpg",
+  "size": [
+   2645,
+   1495
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "should",
+   "not",
+   "greedy",
+   "for",
+   "sense",
+   "pleasures,",
+   "disturbed",
+   "mind.",
+   "Being",
+   "skilful",
+   "all",
+   "things,",
+   "mindfully",
+   "the",
+   "monk",
+   "should",
+   "wander.”"
+  ]
+ },
+ {
+  "img": "images/01-Ajita-10-Original.jpg",
+  "size": [
+   2645,
+   1494
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ignorance",
+   "blinds",
+   "the",
+   "world.",
+   "Mindfulness",
+   "restrains",
+   "the",
+   "streams.",
+   "Wisdom",
+   "ceases",
+   "the",
+   "tangled",
+   "phenomena.",
+   "Mindfully,",
+   "the",
+   "wise",
+   "wander."
+  ]
+ }
+]

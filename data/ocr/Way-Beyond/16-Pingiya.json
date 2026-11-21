@@ -1,0 +1,256 @@
+[
+ {
+  "img": "images/16-Pingiya-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     178,
+     192
+    ],
+    "bbox": [
+     288,
+     589,
+     2261,
+     985
+    ],
+    "shape": "box",
+    "en": "The Way to the Beyond dialogue on transcending the decay of the mortal sought by an before runs out.",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "Pingiya’s",
+   "Questions:"
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "old,",
+   "without",
+   "strength,",
+   "with",
+   "poor",
+   "complexion.",
+   "eyes",
+   "are",
+   "unclear,",
+   "and",
+   "hearing",
+   "difficult.”"
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“May",
+   "not",
+   "perish",
+   "fool",
+   "mid-way,",
+   "short",
+   "arahattam!",
+   "Explain",
+   "the",
+   "Teaching",
+   "may",
+   "know",
+   "how",
+   "give",
+   "birth",
+   "and",
+   "old",
+   "age.”"
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Having",
+   "seen",
+   "people",
+   "struck",
+   "down",
+   "amid",
+   "forms,",
+   "and",
+   "that",
+   "the",
+   "heedless",
+   "are",
+   "pained",
+   "amid",
+   "forms...”",
+   "aving"
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "heedful,",
+   "Pingiya,",
+   "you",
+   "must",
+   "give",
+   "form",
+   "and",
+   "not",
+   "come",
+   "into",
+   "existence",
+   "again."
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“In",
+   "the",
+   "ten",
+   "directions,",
+   "there",
+   "nothing",
+   "unseen,",
+   "unheard,",
+   "unsensed,",
+   "uncognized",
+   "you",
+   "the",
+   "world!”"
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Explain",
+   "the",
+   "Teaching",
+   "me,",
+   "that",
+   "Imay",
+   "know",
+   "the",
+   "complete",
+   "giving",
+   "birth",
+   "and",
+   "old",
+   "age."
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Seeing",
+   "human",
+   "beings,",
+   "victims",
+   "craving,",
+   "are",
+   "tormented,",
+   "and",
+   "overcome",
+   "decay...”"
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "being",
+   "heedful,",
+   "Pingiya,",
+   "you",
+   "must",
+   "give",
+   "craving",
+   "and",
+   "not",
+   "come",
+   "into",
+   "existence",
+   "again.",
+   "...being"
+  ]
+ },
+ {
+  "img": "images/16-Pingiya-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "reach",
+   "the",
+   "Beyond,",
+   "the",
+   "heedful",
+   "mind",
+   "must",
+   "relinquish",
+   "physical",
+   "form",
+   "and",
+   "the",
+   "craving",
+   "(tanham)",
+   "that",
+   "binds",
+   "us."
+  ]
+ }
+]

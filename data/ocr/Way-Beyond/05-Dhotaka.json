@@ -1,0 +1,337 @@
+[
+ {
+  "img": "images/05-Dhotaka-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Questions:",
+   "Crossing",
+   "the",
+   "Flood",
+   "Doubt.”",
+   "story",
+   "from",
+   "the",
+   "Parayanavagga."
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ask",
+   "you,",
+   "Fortunate",
+   "One,",
+   "please",
+   "tell",
+   "this",
+   "me,",
+   "waiting",
+   "for",
+   "word",
+   "yours,",
+   "Great",
+   "Seer...”"
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "having",
+   "heard",
+   "your",
+   "utterance",
+   "could",
+   "train",
+   "for",
+   "own",
+   "Nibbana"
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Then",
+   "you",
+   "must",
+   "become",
+   "ardent,",
+   "being",
+   "prudent",
+   "and",
+   "mindful",
+   "right",
+   "here,",
+   "henceforth...”"
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "after",
+   "hearing",
+   "this",
+   "utterance",
+   "you",
+   "should",
+   "train",
+   "for",
+   "your",
+   "own",
+   "Nibbana.”"
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "see",
+   "the",
+   "world",
+   "brahmin",
+   "who",
+   "moves",
+   "about",
+   "having",
+   "nothing,",
+   "therefore",
+   "revere",
+   "you,",
+   "Visionary",
+   "One,",
+   "Sakyan.”"
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Please",
+   "free",
+   "from",
+   "doubts.”"
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "unable",
+   "free",
+   "anyone",
+   "the",
+   "world",
+   "who",
+   "having",
+   "doubts,"
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "best",
+   "Teaching,",
+   "this",
+   "way",
+   "you",
+   "can",
+   "the",
+   "knowing"
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "teach",
+   "the",
+   "state",
+   "undisturbed,",
+   "just",
+   "like",
+   "Sho",
+   "detachme"
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "live",
+   "peaceful",
+   "and",
+   "independent",
+   "right",
+   "here.”",
+   "proclaim",
+   "the",
+   "peace",
+   "you,",
+   "which",
+   "not",
+   "hearsay",
+   "here",
+   "the",
+   "world...”",
+   "“Tshall"
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "having",
+   "understood,",
+   "and",
+   "living",
+   "mindfully,",
+   "one",
+   "can",
+   "cross",
+   "over",
+   "clinging",
+   "the",
+   "world.”"
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     343,
+     214
+    ],
+    "bbox": [
+     777,
+     638,
+     2638,
+     903
+    ],
+    "shape": "bubble",
+    "en": "Great Seer, which, having understood,",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "cross",
+   "over"
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Whatever",
+   "you",
+   "know,",
+   "above,",
+   "below,",
+   "and",
+   "across",
+   "the",
+   "middle,",
+   "having",
+   "understood",
+   "this",
+   "called",
+   "shackle",
+   "the",
+   "world...”"
+  ]
+ },
+ {
+  "img": "images/05-Dhotaka-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "must",
+   "not",
+   "have",
+   "craving",
+   "for",
+   "repeated",
+   "existence.”",
+   "“you"
+  ]
+ }
+]

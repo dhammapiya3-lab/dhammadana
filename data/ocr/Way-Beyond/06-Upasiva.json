@@ -1,0 +1,305 @@
+[
+ {
+  "img": "images/06-Upasiva-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Questions:",
+   "Crossing",
+   "the",
+   "Great",
+   "Flood"
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Alone,",
+   "with",
+   "nothing",
+   "depend",
+   "on,",
+   "cannot",
+   "cross",
+   "the",
+   "great",
+   "flood",
+   "existence.",
+   "Tell",
+   "support,",
+   "Visionary",
+   "One,",
+   "cross",
+   "over.”"
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Looking",
+   "nothingness,",
+   "being",
+   "mindful,",
+   "cross",
+   "the",
+   "flood.",
+   "Give",
+   "sense",
+   "pleasures,",
+   "abstain",
+   "from",
+   "talk,",
+   "and",
+   "look",
+   "for",
+   "the",
+   "end",
+   "suffering.”",
+   "The",
+   "Buddha"
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“One",
+   "who",
+   "passionless,",
+   "depending",
+   "nothingness,",
+   "intent",
+   "the",
+   "highest",
+   "freedom—will",
+   "remain",
+   "there",
+   "without",
+   "going",
+   "away?”",
+   "asks",
+   "Upasiva",
+   "regarding",
+   "the"
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“He",
+   "who",
+   "passionless",
+   "regarding",
+   "all",
+   "sense",
+   "pleasures,",
+   "depending",
+   "nothingness,",
+   "intent",
+   "the",
+   "highest",
+   "freedom—he",
+   "will",
+   "remain",
+   "there",
+   "without",
+   "returning",
+   "this"
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     326,
+     119
+    ],
+    "bbox": [
+     466,
+     367,
+     1458,
+     724
+    ],
+    "shape": "bubble",
+    "en": "cool and ra",
+    "conf": 48
+   }
+  ],
+  "loose": [
+   "“If",
+   "remains",
+   "there",
+   "for",
+   "years",
+   "Visionary",
+   "One,",
+   "will",
+   "become",
+   "there,",
+   "will",
+   "his",
+   "consciousness",
+   "fall",
+   "away?”",
+   "his"
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“As",
+   "flame",
+   "overthrown",
+   "wind",
+   "goes",
+   "rest",
+   "and",
+   "cannot",
+   "discerned,",
+   "the",
+   "sage",
+   "free",
+   "from",
+   "the",
+   "body",
+   "goes",
+   "rest",
+   "and",
+   "discerned.”",
+   "ental",
+   "Sif"
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     452,
+     310
+    ],
+    "bbox": [
+     1326,
+     810,
+     2387,
+     1164
+    ],
+    "shape": "bubble",
+    "en": "“Is the one who rests",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "eternally",
+   "healthy?”",
+   "Upasiva",
+   "grasps",
+   "for",
+   "concepts",
+   "annihilation",
+   "(uccheda)",
+   "eternal",
+   "life",
+   "(sassata)."
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“There",
+   "measure",
+   "one",
+   "who",
+   "has",
+   "come",
+   "rest.",
+   "When",
+   "everything",
+   "completely",
+   "removed,",
+   "all",
+   "pathways",
+   "for",
+   "speech",
+   "are",
+   "removed.”"
+  ]
+ },
+ {
+  "img": "images/06-Upasiva-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Path",
+   "the",
+   "Beyond",
+   "The",
+   "Flood",
+   "(Existence)",
+   "The",
+   "Support",
+   "The",
+   "Release",
+   "The",
+   "Unconditioned",
+   "(Beyond",
+   "measure)",
+   "The"
+  ]
+ }
+]

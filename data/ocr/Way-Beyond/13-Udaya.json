@@ -1,0 +1,354 @@
+[
+ {
+  "img": "images/13-Udaya-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Udaya’s",
+   "Questions",
+   "The",
+   "Way",
+   "the",
+   "Beyond",
+   "dialogue",
+   "the",
+   "breaking",
+   "ignorance"
+  ]
+ },
+ {
+  "img": "images/13-Udaya-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Udaya",
+   "approaches",
+   "the",
+   "Buddha:",
+   "“To",
+   "the",
+   "meditator",
+   "who",
+   "sits",
+   "dust-free,",
+   "pollutant-free,",
+   "with",
+   "duty",
+   "done,",
+   "come",
+   "need",
+   "with",
+   "question.”"
+  ]
+ },
+ {
+  "img": "images/13-Udaya-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Please",
+   "tell",
+   "freedom",
+   "Wy,",
+   "through",
+   "knowledge,",
+   "the",
+   "breaking",
+   "ignorance.”"
+  ]
+ },
+ {
+  "img": "images/13-Udaya-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "answers:",
+   "“Freedom",
+   "begins",
+   "with",
+   "the",
+   "giving",
+   "sensual",
+   "desire",
+   "and",
+   "sorrow,",
+   "the",
+   "dispelling",
+   "sloth,",
+   "and",
+   "the",
+   "constraint",
+   "worry.”"
+  ]
+ },
+ {
+  "img": "images/13-Udaya-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "This",
+   "leads",
+   "purity",
+   "through",
+   "equanimity",
+   "and",
+   "mindfulness,",
+   "preceded",
+   "the",
+   "realization",
+   "that",
+   "all",
+   "things",
+   "are",
+   "impermanent"
+  ]
+ },
+ {
+  "img": "images/13-Udaya-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Udaya",
+   "asks",
+   "“By",
+   "what",
+   "the",
+   "world",
+   "fettered?",
+   "what",
+   "does",
+   "roam",
+   "about?",
+   "completely",
+   "giving",
+   "what,",
+   "there",
+   "Nibbana?”"
+  ]
+ },
+ {
+  "img": "images/13-Udaya-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "replies:",
+   "“The",
+   "world",
+   "fettered",
+   "enjoyment.",
+   "roams",
+   "about",
+   "through",
+   "reflections.”"
+  ]
+ },
+ {
+  "img": "images/13-Udaya-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“By",
+   "completely",
+   "giving",
+   "craving,",
+   "there",
+   "that",
+   "thing",
+   "called",
+   "Nibbana.”"
+  ]
+ },
+ {
+  "img": "images/13-Udaya-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     263,
+     245
+    ],
+    "bbox": [
+     453,
+     770,
+     1977,
+     870
+    ],
+    "shape": "bubble",
+    "en": "is it ceases?”",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "Udaya",
+   "asks",
+   "final",
+   "question",
+   "For",
+   "who",
+   "lives",
+   "mindfully,"
+  ]
+ },
+ {
+  "img": "images/13-Udaya-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Without",
+   "rejoicing",
+   "over",
+   "feeling",
+   "the",
+   "inside",
+   "outside—for",
+   "who",
+   "lives",
+   "mindfully",
+   "this",
+   "way,",
+   "consciousness",
+   "surely",
+   "ceases.”"
+  ]
+ },
+ {
+  "img": "images/13-Udaya-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Through",
+   "this",
+   "supreme",
+   "rebirth-consciousness",
+   "extinguished.",
+   "The",
+   "cycle",
+   "broken.",
+   "letting",
+   "go,"
+  ]
+ },
+ {
+  "img": "images/13-Udaya-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     252,
+     198
+    ],
+    "bbox": [
+     618,
+     205,
+     1293,
+     836
+    ],
+    "shape": "bubble",
+    "en": "Cause",
+    "conf": 96
+   },
+   {
+    "seed": [
+     461,
+     198
+    ],
+    "bbox": [
+     1356,
+     205,
+     1964,
+     836
+    ],
+    "shape": "bubble",
+    "en": "Cure: Impermanence",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "The",
+   "Beyond",
+   "Problem",
+   "Result",
+   "Fettered",
+   "Nibbana",
+   "World",
+   "Craving",
+   "Mindfulness",
+   "Beyond",
+   "the"
+  ]
+ },
+ {
+  "img": "images/13-Udaya-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Through",
+   "knowledge,",
+   "craving",
+   "abandoned.",
+   "Ignorance",
+   "broken.",
+   "The",
+   "way",
+   "the",
+   "beyond",
+   "open."
+  ]
+ }
+]

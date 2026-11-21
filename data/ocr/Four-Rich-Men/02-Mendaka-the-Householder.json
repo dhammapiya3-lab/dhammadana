@@ -1,0 +1,503 @@
+[
+ {
+  "img": "images/02-Mendaka-the-Householder-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     237,
+     323
+    ],
+    "bbox": [
+     509,
+     1051,
+     2139,
+     1356
+    ],
+    "shape": "box",
+    "en": "The Kamma of Mendaka Chronicle of Radical Generosity in the Samsara.",
+    "conf": 63
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     293,
+     185
+    ],
+    "bbox": [
+     922,
+     589,
+     1729,
+     956
+    ],
+    "shape": "box",
+    "en": "The mechanics of kamma echo across aeons. single seed of merit, incubated in extreme scarcity and nurtured by radical generosity, blossoms into supernormal Sha abundance.",
+    "conf": 32
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "aeons",
+   "ago,",
+   "Aparajita",
+   "Junior",
+   "built",
+   "magnificent",
+   "portico",
+   "for",
+   "Buddha",
+   "adorned",
+   "the",
+   "Buddha’s",
+   "golden",
+   "seating",
+   "platform",
+   "with",
+   "intricate",
+   "statues",
+   "golden",
+   "goats",
+   "(mendaka).",
+   "Vipassi."
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     291,
+     190
+    ],
+    "bbox": [
+     922,
+     589,
+     1729,
+     956
+    ],
+    "shape": "box",
+    "en": "Reborn in Baranasi, the rich man received grim prophecy: devastating famine would strike Jambudipa in three years",
+    "conf": 39
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     246,
+     102
+    ],
+    "bbox": [
+     655,
+     337,
+     1091,
+     463
+    ],
+    "shape": "box",
+    "en": "art 1,250 Storehouses",
+    "conf": 53
+   },
+   {
+    "seed": [
+     559,
+     133
+    ],
+    "bbox": [
+     1832,
+     350,
+     2417,
+     1194
+    ],
+    "shape": "box",
+    "en": "He hoarded grain, but the famine dragged on. His wealth dwindled down the funnel of scarcity until only final quarter-measure of rice remained salvaged from the mud walls",
+    "conf": 92
+   },
+   {
+    "seed": [
+     229,
+     197
+    ],
+    "bbox": [
+     711,
+     598,
+     1035,
+     717
+    ],
+    "shape": "box",
+    "en": "ATS OX Large Jars",
+    "conf": 53
+   }
+  ],
+  "loose": [
+   "Timeline",
+   "Depletion"
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     199,
+     49
+    ],
+    "bbox": [
+     618,
+     136,
+     2047,
+     390
+    ],
+    "shape": "box",
+    "en": "Facing imminent starvation, the rich man ordered the final salvaged grains cooked. “This is our last source of food Let us eat to the full and face death,” he declared",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     187,
+     355
+    ],
+    "bbox": [
+     440,
+     1151,
+     2212,
+     1405
+    ],
+    "shape": "box",
+    "en": "Paccekabuddha arrived seeking alms. Realizing his past lack of charity caused his present suffering, the rich man joyfully surrendered his final, life-saving meal to secure his welfare in the hereafter. 1",
+    "conf": 54
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     135,
+     48
+    ],
+    "bbox": [
+     334,
+     139,
+     2321,
+     314
+    ],
+    "shape": "box",
+    "en": "Inspired, the entire household surrendered their final meals. Each made vow to never starve again, to possess endless bounty, and to remain united as family across Samsara",
+    "conf": 93
+   },
+   {
+    "seed": [
+     619,
+     187
+    ],
+    "bbox": [
+     1349,
+     542,
+     2599,
+     777
+    ],
+    "shape": "bubble",
+    "en": "Endless Rice Vessel",
+    "conf": 96
+   },
+   {
+    "seed": [
+     615,
+     255
+    ],
+    "bbox": [
+     1349,
+     764,
+     2599,
+     1002
+    ],
+    "shape": "bubble",
+    "en": "Endless Bag of Silver 2S",
+    "conf": 69
+   },
+   {
+    "seed": [
+     616,
+     322
+    ],
+    "bbox": [
+     1346,
+     989,
+     2599,
+     1227
+    ],
+    "shape": "bubble",
+    "en": "Endless Grain Basket",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "1,250",
+   "Storehouses",
+   "Sevenfold",
+   "Plow"
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     485,
+     177
+    ],
+    "bbox": [
+     1451,
+     536,
+     2503,
+     1028
+    ],
+    "shape": "box",
+    "en": "Kamma ripened by evening. The washed pot miraculously filled with fragrant, cooked rice resembling cluster of jasmine buds. The rich man fed all of Jambudipa, breaking the famine.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     200,
+     352
+    ],
+    "bbox": [
+     562,
+     1127,
+     2086,
+     1442
+    ],
+    "shape": "box",
+    "en": "Faring through Sarnsara, the family reunited during the era of Buddha Gotama. The rich man, now named Mendaka, took his destined place alongside his wife Candapaduma, son Dhananjaya, daughter-in-law Sumanadevi, and servant Punna.",
+    "conf": 81
+   }
+  ],
+  "loose": [
+   "als"
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     503,
+     65
+    ],
+    "bbox": [
+     1630,
+     192,
+     2506,
+     602
+    ],
+    "shape": "box",
+    "en": "Behind his house emerged miraculous herd of golden goat statues. Pulling five-colored cotton stoppers from their mouths yielded an endless supply of garments, gold, silver, and ghee for the populace.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "COTTON",
+   "BALL,",
+   "COTTON",
+   "STOPPER",
+   "GARMENTS,",
+   "GOLD,",
+   "SILVER,",
+   "GHEE",
+   "ROOTED",
+   "GOLDEN",
+   "SOIL",
+   "Anatomy",
+   "the",
+   "Golden",
+   "Goat"
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     270,
+     208
+    ],
+    "bbox": [
+     840,
+     585,
+     1812,
+     959
+    ],
+    "shape": "box",
+    "en": "Their ancient aspirations manifested perfectly. Candapaduma wielded an endless rice vessel, Dhananjaya boundless silver purse, Sumanadevi an inexhaustible grain basket, and Punna miraculous sevenfold plow.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     97,
+     330
+    ],
+    "bbox": [
+     126,
+     1061,
+     1385,
+     1369
+    ],
+    "shape": "box",
+    "en": "Mendaka visited Buddha Gotama, overcoming the slander of rival ascetics. Hearing the Dnamma directly, the rich man attained Stream-entry, securing an imperishable spiritual wealth.",
+    "conf": 55
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     85,
+     137
+    ],
+    "bbox": [
+     195,
+     281,
+     1151,
+     1217
+    ],
+    "shape": "box",
+    "en": "Addressing the rival ascetics’ slander, the Buddha taught: “It is easy to see the faults of others, but difficult to see one’s own. One spreads the faults of others like winnower winnowing chaff.”",
+    "conf": 88
+   }
+  ],
+  "loose": [
+   "0009",
+   "0,0"
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     278,
+     166
+    ],
+    "bbox": [
+     787,
+     489,
+     1861,
+     1038
+    ],
+    "shape": "box",
+    "en": "Action, intention, and result are woven into an unbreakable thread. Mendaka’s chronicle proves that radical generosity can transform extreme scarcity into boundless, timeless abundance.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ }
+]

@@ -1,0 +1,333 @@
+[
+ {
+  "img": "images/03-Punnaka-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Punnaka’s",
+   "Questions",
+   "Dialogue",
+   "Sacrifice",
+   "and",
+   "Crossing",
+   "Over"
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“To",
+   "the",
+   "unmoved",
+   "seer,",
+   "Net",
+   "come",
+   "with",
+   "question.",
+   "Why",
+   "seers,",
+   "nobles,",
+   "and",
+   "brahmins",
+   "this",
+   "world",
+   "offer",
+   "many",
+   "sacrifices",
+   "the",
+   "Gods?”"
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“They",
+   "offer",
+   "sacrifices",
+   "because",
+   "they",
+   "yearn",
+   "for",
+   "mundane",
+   "existence.",
+   "Driven",
+   "the",
+   "fear",
+   "old",
+   "age,",
+   "Punnaka,",
+   "they",
+   "seek",
+   "prolong",
+   "their",
+   "worldly",
+   "lives.”"
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     460,
+     117
+    ],
+    "bbox": [
+     1263,
+     7,
+     1789,
+     1058
+    ],
+    "shape": "bubble",
+    "en": "4 desire sacrificer",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "The",
+   "rituals",
+   "men",
+   "are",
+   "fueled",
+   "the",
+   "escape",
+   "aging,",
+   "yet",
+   "they",
+   "bind",
+   "the",
+   "the",
+   "very",
+   "world",
+   "that",
+   "ages."
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“But",
+   "Fortunate",
+   "One,",
+   "have",
+   "these",
+   "sacrificers—heedful",
+   "the",
+   "path",
+   "ritual—",
+   "actually",
+   "crossed",
+   "over",
+   "birth",
+   "and",
+   "old",
+   "age",
+   "through",
+   "their",
+   "offerings?”"
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“No.",
+   "They",
+   "hunger",
+   "for",
+   "sense",
+   "Excited",
+   "the",
+   "passion",
+   "for",
+   "existence,",
+   "they",
+   "yearn",
+   "and",
+   "praise.",
+   "They",
+   "have",
+   "over",
+   "birth",
+   "and",
+   "old",
+   "age.”",
+   "pleasures.",
+   "not",
+   "crossed"
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     282,
+     158
+    ],
+    "bbox": [
+     767,
+     231,
+     1871,
+     1283
+    ],
+    "shape": "bubble",
+    "en": "Sacrifice driven by gain and hunger only deepens the passion for existence, fueling the endless wheel of samsara.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-Punnaka-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“If",
+   "those",
+   "engaged",
+   "sacrifice",
+   "have",
+   "failed,",
+   "dear",
+   "Sir,",
+   "then",
+   "who",
+   "the",
+   "world",
+   "Gods",
+   "and",
+   "men",
+   "has",
+   "truly",
+   "crossed",
+   "over",
+   "birth",
+   "and",
+   "old",
+   "age?”"
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“The",
+   "one",
+   "who",
+   "discerns",
+   "far",
+   "and",
+   "near,",
+   "with",
+   "turmoil",
+   "Peaceful,",
+   "not",
+   "incensed,",
+   "troubled,",
+   "yearning—",
+   "has",
+   "crossed",
+   "over",
+   "birth",
+   "and",
+   "old",
+   "age.”"
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Sacrificer",
+   "The",
+   "Sage",
+   "Yearning,",
+   "troubled,",
+   "bound",
+   "Unmoved,",
+   "peaceful,",
+   "birth",
+   "and",
+   "old",
+   "age.",
+   "devoid",
+   "turmoil."
+  ]
+ },
+ {
+  "img": "images/03-Punnaka-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "cross",
+   "over",
+   "not",
+   "offer",
+   "more",
+   "the",
+   "world,",
+   "but",
+   "cease",
+   "yearning",
+   "for",
+   "entirely."
+  ]
+ }
+]

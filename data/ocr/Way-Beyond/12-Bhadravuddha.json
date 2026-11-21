@@ -1,0 +1,266 @@
+[
+ {
+  "img": "images/12-Bhadravuddha-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     187,
+     254
+    ],
+    "bbox": [
+     380,
+     741,
+     1937,
+     1309
+    ],
+    "shape": "bubble",
+    "en": "retelling from the Parayanavagga.",
+    "conf": 71
+   }
+  ],
+  "loose": [
+   "The",
+   "Way",
+   "the",
+   "Beyond:"
+  ]
+ },
+ {
+  "img": "images/12-Bhadravuddha-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "one",
+   "who",
+   "left",
+   "home,",
+   "the",
+   "craving-cutter,",
+   "the",
+   "unmoved",
+   "one,",
+   "the"
+  ]
+ },
+ {
+  "img": "images/12-Bhadravuddha-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   ".the",
+   "flood-crosser,",
+   "the",
+   "one",
+   "who",
+   "free,",
+   "the",
+   "one",
+   "who",
+   "left",
+   "off",
+   "speculation,",
+   "the",
+   "intelligent",
+   "one—him",
+   "beg."
+  ]
+ },
+ {
+  "img": "images/12-Bhadravuddha-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Various",
+   "people",
+   "have",
+   "come",
+   "from",
+   "the",
+   "Countries,",
+   "and",
+   "are",
+   "waiting",
+   "for",
+   "your",
+   "saying,",
+   "Heroic",
+   "One..."
+  ]
+ },
+ {
+  "img": "images/12-Bhadravuddha-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     419,
+     384
+    ],
+    "bbox": [
+     889,
+     1217,
+     2635,
+     1346
+    ],
+    "shape": "bubble",
+    "en": "Teaching been",
+    "conf": 97
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-Bhadravuddha-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "You",
+   "must",
+   "remove",
+   "all",
+   "attachment",
+   "craving,",
+   "above,",
+   "below,",
+   "and",
+   "across",
+   "the",
+   "middle..."
+  ]
+ },
+ {
+  "img": "images/12-Bhadravuddha-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "for",
+   "with",
+   "whatever",
+   "they",
+   "are",
+   "attached",
+   "the",
+   "world,",
+   "with",
+   "just",
+   "that",
+   "Mara",
+   "follows",
+   "man.",
+   "...for"
+  ]
+ },
+ {
+  "img": "images/12-Bhadravuddha-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Therefore",
+   "knowing",
+   "this,",
+   "the",
+   "mindful",
+   "monk",
+   "should",
+   "not",
+   "attached",
+   "anything",
+   "the",
+   "world..."
+  ]
+ },
+ {
+  "img": "images/12-Bhadravuddha-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     313,
+     161
+    ],
+    "bbox": [
+     896,
+     185,
+     1570,
+     1022
+    ],
+    "shape": "bubble",
+    "en": "to Death. 3",
+    "conf": 45
+   }
+  ],
+  "loose": [
+   ".seeing",
+   "that",
+   "with",
+   "called",
+   "attachment",
+   "and",
+   "clinging,",
+   "people",
+   "are",
+   "clinging",
+   "the",
+   "realm"
+  ]
+ },
+ {
+  "img": "images/12-Bhadravuddha-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "cross",
+   "the",
+   "flood,",
+   "one",
+   "must",
+   "leave",
+   "nothing",
+   "for",
+   "Mara",
+   "hold."
+  ]
+ }
+]

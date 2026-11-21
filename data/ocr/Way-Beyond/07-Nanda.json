@@ -1,0 +1,298 @@
+[
+ {
+  "img": "images/07-Nanda-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Nanda’s",
+   "Questions",
+   "Crossing",
+   "the",
+   "Flood",
+   "The",
+   "shift",
+   "from",
+   "external",
+   "practice",
+   "internal",
+   "liberation."
+  ]
+ },
+ {
+  "img": "images/07-Nanda-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "ascetic",
+   "Nanda",
+   "asks",
+   "Are",
+   "sages",
+   "defined",
+   "their",
+   "vast",
+   "knowledge,",
+   "the",
+   "strictness",
+   "the",
+   "lives",
+   "they",
+   "lead?"
+  ]
+ },
+ {
+  "img": "images/07-Nanda-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "redefines",
+   "the",
+   "sage",
+   "Not",
+   "tradition",
+   "views,",
+   "but",
+   "internal",
+   "quietude",
+   "Without",
+   "company",
+   "Not",
+   "troubled",
+   "Not",
+   "yearning"
+  ]
+ },
+ {
+  "img": "images/07-Nanda-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Nanda",
+   "points",
+   "virtue",
+   "and",
+   "practices—and",
+   "auspicious",
+   "sights.",
+   "Can",
+   "those",
+   "strictly",
+   "bound",
+   "these",
+   "ways",
+   "cross",
+   "over",
+   "birth",
+   "and",
+   "old",
+   "age?"
+  ]
+ },
+ {
+  "img": "images/07-Nanda-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "replies:",
+   "No.",
+   "Despite",
+   "their",
+   "strict",
+   "restraint,",
+   "these",
+   "external",
+   "reliances",
+   "act",
+   "anchors,",
+   "not",
+   "rafts.",
+   "They",
+   "cannot",
+   "cross",
+   "the",
+   "flood."
+  ]
+ },
+ {
+  "img": "images/07-Nanda-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Despair",
+   "strikes",
+   "Nanda.",
+   "the",
+   "most",
+   "disciplined",
+   "ascetics",
+   "remain",
+   "enveloped",
+   "birth",
+   "and",
+   "old",
+   "age,",
+   "who",
+   "the",
+   "world",
+   "has",
+   "ever",
+   "crossed?"
+  ]
+ },
+ {
+  "img": "images/07-Nanda-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "reveals",
+   "the",
+   "true",
+   "flood.",
+   "The",
+   "river",
+   "not",
+   "physical",
+   "reality",
+   "aging,",
+   "but",
+   "the",
+   "internal,",
+   "grasping",
+   "torrent",
+   "craving."
+  ]
+ },
+ {
+  "img": "images/07-Nanda-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Purity",
+   "subtraction.",
+   "become",
+   "pollutant-free,",
+   "one",
+   "must",
+   "entirely",
+   "give",
+   "reliance",
+   "what",
+   "seen,",
+   "heard,",
+   "and",
+   "virtue",
+   "and",
+   "practices."
+  ]
+ },
+ {
+  "img": "images/07-Nanda-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     41,
+     97
+    ],
+    "bbox": [
+     3,
+     317,
+     1428,
+     1481
+    ],
+    "shape": "bubble",
+    "en": "sights, and virtue and practices. Result: Enveloped in birth. EX",
+    "conf": 64
+   }
+  ],
+  "loose": [
+   "The",
+   "Purity",
+   "The",
+   "Beyond",
+   "Reliance",
+   "views,",
+   "auspicious",
+   "Fully",
+   "knowing",
+   "craving,",
+   "giving",
+   "reliance,",
+   "pollutant-free.",
+   "Result:",
+   "Crossing",
+   "the",
+   "flood."
+  ]
+ },
+ {
+  "img": "images/07-Nanda-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Nanda",
+   "rejoices.",
+   "True",
+   "freedom",
+   "from",
+   "clinging",
+   "proclaimed!",
+   "fully",
+   "knowing",
+   "craving",
+   "and",
+   "dropping",
+   "external",
+   "reliance,",
+   "the",
+   "flood",
+   "crossed."
+  ]
+ }
+]

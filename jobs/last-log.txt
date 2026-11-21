@@ -1,9 +1,6 @@
-Foremost-Laymen 06-Ugga 15 장
-Foremost-Laymen 07-Uggata 13 장
-Foremost-Monks 17-Sona-Kutikanna 26 장
-검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자3 [자리] 한글이 원래 글 자리(504,1041-620,1130)에서 벗어남 (809,1087)
-검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자4 [자리] 한글이 원래 글 자리(1997,1043-2042,1136)에서 벗어남 (1834,1087)
-Foremost-Nuns 03-Uppalavanna 37 장
+Foremost-Laymen 08-Surambattha 15 장
+Foremost-Laymen 09-Jivaka 11 장
+Foremost-Laymen 10-Nakulapitu 10 장
 검수 Jataka/001-The-Waterless-Desert 06번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 2px)
 검수 Jataka/001-The-Waterless-Desert 13번 그림 상자2 [자리] 한글 글(2151,1214)이 상자 점(1762,1051)에서 멀리 그려짐
 Jataka 001-The-Waterless-Desert 15 장
@@ -73,15 +70,15 @@ Jataka 049-The-Lucky-Star 14 장
 검수 Jataka/050-The-Kings-Stratagem 06번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Jataka 050-The-Kings-Stratagem 15 장
 Vinaya-Stories 05-Uposatha 20 장
-Vinaya-Stories 08-Allowances 14 장
-Vinaya-Stories 38-First-Council 41 장
-Vinaya-Stories 39-Second-Council 39 장
-자동 검수: 문제 의심 38 곳
-R2 에 올림: 1300 개 / 한글판 이야기 222 편
-공개 주소 확인: 200 1753308바이트
+자동 검수: 문제 의심 36 곳
+R2 에 올림: 1002 개 / 한글판 이야기 225 편
+공개 주소 확인: 200 1678190바이트
 이야기 Foremost-Laymen/06-Ugga {'pdf': 21633119, 'zip': 21354254, 'n': 15}
 이야기 Foremost-Laymen/07-Uggata {'pdf': 19299057, 'zip': 19020745, 'n': 13}
-책 Foremost-Laymen {'pdf': 177891658, 'pdfs': 18789435, 'zip': 177591241, 'stories': 7, 'n': 121}
+이야기 Foremost-Laymen/08-Surambattha {'pdf': 18539642, 'zip': 18254995, 'n': 15}
+이야기 Foremost-Laymen/09-Jivaka {'pdf': 21205201, 'zip': 20369589, 'n': 11}
+이야기 Foremost-Laymen/10-Nakulapitu {'pdf': 12446042, 'zip': 12166117, 'n': 10}
+책 Foremost-Laymen {'pdf': 228694949, 'pdfs': 24147216, 'zip': 228381612, 'stories': 10, 'n': 157}
 이야기 Foremost-Monks/17-Sona-Kutikanna {'pdf': 37451033, 'zip': 37179187, 'n': 26}
 책 Foremost-Monks {'pdf': 1121599321, 'pdfs': 118156004, 'zip': 1121056472, 'stories': 38, 'n': 802}
 이야기 Foremost-Nuns/03-Uppalavanna {'pdf': 49001262, 'zip': 48721081, 'n': 37}
@@ -124,28 +121,11 @@ R2 에 올림: 1300 개 / 한글판 이야기 222 편
 이야기 Vinaya-Stories/38-First-Council {'pdf': 46049224, 'zip': 45777373, 'n': 41}
 이야기 Vinaya-Stories/39-Second-Council {'pdf': 46913247, 'zip': 46641335, 'n': 39}
 책 Vinaya-Stories {'pdf': 822209148, 'pdfs': 82863592, 'zip': 821699435, 'stories': 40, 'n': 706}
-내려받기 파일: 45 묶음 새로 만듦
-글로 보기: 222 이야기
-To https://github.com/dhammapiya3-lab/dhammadana
- ! [rejected]        storybooks -> storybooks (fetch first)
-error: failed to push some refs to 'https://github.com/dhammapiya3-lab/dhammadana'
-hint: Updates were rejected because the remote contains work that you do not
-hint: have locally. This is usually caused by another repository pushing to
-hint: the same ref. If you want to integrate the remote changes, use
-hint: 'git pull' before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-Committer identity unknown
-
-*** Please tell me who you are.
-
-Run
-
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
-
-to set your account's default identity.
-Omit --global to set the identity only in this repository.
-
-fatal: empty ident name (for <runner@runnervmccnms.lu2k2iqby2zepddv4ohl0zumee.gx.internal.cloudapp.net>) not allowed
-error: cannot pull with rebase: Your index contains uncommitted changes.
-error: Please commit or stash them.
+내려받기 파일: 48 묶음 새로 만듦
+글로 보기: 225 이야기
+18-Verses-2.htm: 그림 10 상자 1 상자밖글 137
+18-Verses-2
+08-Light-of-Asia.htm: 그림 15 상자 0 상자밖글 721
+08-Light-of-Asia
+04-Kalavaliya-the-Treasurer.htm: 그림 13 상자 1 상자밖글 341
+04-Kalavaliya-the-Treasurer

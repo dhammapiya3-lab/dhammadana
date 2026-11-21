@@ -1,0 +1,1189 @@
+[
+ {
+  "img": "images/00-Introduction-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Parayanavagga:",
+   "The",
+   "Journey",
+   "the",
+   "Sixteen",
+   "Ascetics"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "brahmin",
+   "perfect",
+   "the",
+   "went",
+   "the",
+   "Southern",
+   "Seeki",
+   "possessions,",
+   "fruit",
+   "near",
+   "the",
+   "bank",
+   "gleanings",
+   "the",
+   "Assaka.",
+   "and"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Supported",
+   "large",
+   "village,",
+   "Bavari",
+   "offered",
+   "great",
+   "sacrifice.",
+   "With",
+   "his",
+   "duties",
+   "complete,",
+   "the",
+   "serene",
+   "ascetic",
+   "returned",
+   "the",
+   "quiet",
+   "his",
+   "hermitage.",
+   "Gemini",
+   "Notebook"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Another",
+   "brahmin",
+   "approached—thirsty,",
+   "feet",
+   "sore,",
+   "teeth",
+   "dirty,",
+   "dust",
+   "upon",
+   "his",
+   "head.",
+   "Confronting",
+   "the",
+   "peaceful",
+   "sage,",
+   "the",
+   "intruder",
+   "demanded",
+   "gift",
+   "five",
+   "hundred",
+   "coins."
+  ]
+ },
+ {
+  "img": "images/00-Introduction-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Bavari",
+   "offered",
+   "seat",
+   "and",
+   "asked",
+   "his",
+   "welfare,",
+   "gently",
+   "“Whatever",
+   "gift",
+   "had,",
+   "all",
+   "has",
+   "been",
+   "given",
+   "away.",
+   "Please",
+   "excuse",
+   "me,",
+   "have",
+   "coins.”",
+   "explaining,"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Enraged,",
+   "the",
+   "dishonest",
+   "man",
+   "made",
+   "fearful",
+   "proclamation:",
+   "“If",
+   "your",
+   "honour",
+   "will",
+   "not",
+   "give",
+   "what",
+   "beg,",
+   "within",
+   "seven",
+   "days",
+   "may",
+   "your",
+   "head",
+   "split",
+   "into",
+   "seven",
+   "pieces!”"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     44,
+     322
+    ],
+    "bbox": [
+     30,
+     734,
+     1022,
+     1260
+    ],
+    "shape": "bubble",
+    "en": "Terrified and miserable, Bavari refused food and",
+    "conf": 92
+   },
+   {
+    "seed": [
+     540,
+     322
+    ],
+    "bbox": [
+     1299,
+     622,
+     2609,
+     1260
+    ],
+    "shape": "bubble",
+    "en": "Struck by the dart of grief, his troubled mind could no longer",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "meditation."
+  ]
+ },
+ {
+  "img": "images/00-Introduction-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Seeing",
+   "his",
+   "terror,",
+   "benevolent",
+   "deity",
+   "approached.",
+   "Desiring",
+   "only",
+   "his",
+   "welfare,",
+   "the",
+   "radiant",
+   "figure",
+   "spoke",
+   "softly",
+   "ease",
+   "the",
+   "ascetic’s",
+   "heavy",
+   "burden."
+  ]
+ },
+ {
+  "img": "images/00-Introduction-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“He",
+   "does",
+   "not",
+   "know",
+   "the",
+   "head.",
+   "dishonest",
+   "man",
+   "seeking",
+   "wealth,",
+   "lacking",
+   "any",
+   "true",
+   "knowledge",
+   "the",
+   "head",
+   "head-splitting.”"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "also",
+   "not",
+   "have",
+   "this",
+   "knowledge,”",
+   "the",
+   "deity",
+   "confessed.",
+   "Pleading,",
+   "Bavari",
+   "asked,",
+   "“Then",
+   "who",
+   "earth",
+   "truly",
+   "understands",
+   "the",
+   "head",
+   "and",
+   "head-splitting?”"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“From",
+   "Kapilavatthu",
+   "comes",
+   "Light-Maker.",
+   "Endowed",
+   "with",
+   "supreme",
+   "vision",
+   "and",
+   "free",
+   "from",
+   "clinging,",
+   "the",
+   "Sambuddha",
+   "alone",
+   "sees",
+   "this",
+   "truth.",
+   "the",
+   "Buddha,",
+   "the",
+   "Fortunate",
+   "One.”"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Hearing",
+   "the",
+   "word",
+   "Bavari",
+   "became",
+   "elated.",
+   "The",
+   "heavy",
+   "dart",
+   "grief",
+   "vanished,",
+   "replaced",
+   "overwhelming,",
+   "enthusiastic",
+   "joy",
+   "and",
+   "desperate",
+   "need",
+   "find",
+   "him"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“The",
+   "Victor",
+   "Savatthi.",
+   "That",
+   "Bull",
+   "Man",
+   "free",
+   "from",
+   "pollutant,",
+   "understands",
+   "head-splitting",
+   "Uplifted,",
+   "Bavari",
+   "turned",
+   "his",
+   "gaze",
+   "toward",
+   "the",
+   "supreme",
+   "human",
+   "being"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "brahmin",
+   "Bavari",
+   "addressed",
+   "his",
+   "students:",
+   "“He",
+   "whose",
+   "manifestation",
+   "always",
+   "rare",
+   "has",
+   "arisen.",
+   "quickly",
+   "Savatthi",
+   "see",
+   "the",
+   "Supreme",
+   "Human",
+   "Being,",
+   "the",
+   "Sambuddha.”"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "ascetic",
+   "students,",
+   "perfect",
+   "the",
+   "Vedas,",
+   "asked",
+   "brahmin,",
+   "having",
+   "seen",
+   "him,",
+   "how",
+   "will",
+   "know",
+   "that",
+   "the",
+   "Buddha?",
+   "Tell",
+   "how",
+   "recognize",
+   "him.”"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-16-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Bavari",
+   "revealed",
+   "the",
+   "ancient",
+   "knowledge:",
+   "“The",
+   "Vedas",
+   "explain",
+   "the",
+   "thirty-two",
+   "marks",
+   "Great",
+   "Man.",
+   "Whoever",
+   "bears",
+   "these",
+   "perfect",
+   "signs",
+   "has",
+   "only",
+   "two",
+   "destinies.”"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-17-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "house,",
+   "rules",
+   "the",
+   "earth",
+   "peacefully",
+   "without",
+   "sword.",
+   "“Going",
+   "forth",
+   "into",
+   "homelessness,",
+   "becomes",
+   "cover-remover,",
+   "Sambuddha,",
+   "Worthy",
+   "One,",
+   "unexcelled.”"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-18-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "True",
+   "Test:",
+   "“You",
+   "must",
+   "not",
+   "ask",
+   "your",
+   "questions",
+   "aloud.",
+   "Formulate",
+   "your",
+   "inquiries",
+   "silently",
+   "within",
+   "your",
+   "own",
+   "mind",
+   "test",
+   "his",
+   "unobstructed",
+   "vision.”"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-19-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Ask",
+   "about",
+   "birth,",
+   "family,",
+   "and",
+   "marks.",
+   "Ask",
+   "about",
+   "teaching",
+   "and",
+   "students.",
+   "Finally,",
+   "ask",
+   "about",
+   "the",
+   "head",
+   "and",
+   "the",
+   "head-splitting.”"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-20-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Telepathic",
+   "Proof:",
+   "“Tf",
+   "truly",
+   "Buddha,",
+   "will",
+   "hear",
+   "the",
+   "questions",
+   "asked",
+   "silently",
+   "your",
+   "mind",
+   "and",
+   "answer",
+   "them",
+   "aloud",
+   "way",
+   "speech.”"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-21-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Hearing",
+   "these",
+   "words,",
+   "renowned",
+   "meditators",
+   "prepared",
+   "depart:",
+   "Ajita,",
+   "Tissa",
+   "Metteyya,",
+   "Punnaka,",
+   "Mettagu,",
+   "Dhotaka,",
+   "Upasiva,",
+   "Nanda,",
+   "and",
+   "Hemaka",
+   "Ay,"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-22-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Joining",
+   "them",
+   "were",
+   "Todeyya,",
+   "Kappa,",
+   "the",
+   "wise",
+   "Jatukanni,",
+   "Bhadravudha,",
+   "Udaya,",
+   "the",
+   "brahmin",
+   "Posala,",
+   "the",
+   "intelligent",
+   "Mogharaja,",
+   "and",
+   "the",
+   "Great",
+   "Seer",
+   "Pingiya."
+  ]
+ },
+ {
+  "img": "images/00-Introduction-23-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Worshipping",
+   "Bavari,",
+   "the",
+   "sixteen",
+   "ascetics",
+   "circumambulated",
+   "their",
+   "master.",
+   "Wearing",
+   "their",
+   "traditional",
+   "matted",
+   "hair",
+   "and",
+   "deer-skins,",
+   "they",
+   "set",
+   "out",
+   "for",
+   "the",
+   "North."
+  ]
+ },
+ {
+  "img": "images/00-Introduction-24-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     203,
+     159
+    ],
+    "bbox": [
+     374,
+     364,
+     1716,
+     1316
+    ],
+    "shape": "bubble",
+    "en": "From Mulaka they traveled to Patitthana, Mahissati, Ujjeni Vedisa, Vanasa,",
+    "conf": 91
+   },
+   {
+    "seed": [
+     502,
+     307
+    ],
+    "bbox": [
+     1567,
+     688,
+     1779,
+     1197
+    ],
+    "shape": "bubble",
+    "en": "city",
+    "conf": 97
+   }
+  ],
+  "loose": [
+   "Saketa,",
+   "and",
+   "Savatthi,",
+   "the",
+   "supreme"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-25-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     612,
+     183
+    ],
+    "bbox": [
+     1418,
+     522,
+     2083,
+     1273
+    ],
+    "shape": "bubble",
+    "en": "it on to Setabya, Kapilavatthu, Vesali,",
+    "conf": 52
+   }
+  ],
+  "loose": [
+   "From",
+   "they",
+   "city",
+   "Kusinara,",
+   "Pava,",
+   "Bhoganagara,",
+   "Rajagaha."
+  ]
+ },
+ {
+  "img": "images/00-Introduction-26-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Finally,",
+   "they",
+   "reached",
+   "the",
+   "Pasanaka",
+   "Shrine.",
+   "was",
+   "delightful",
+   "place,",
+   "the",
+   "true",
+   "delight",
+   "the",
+   "mind,",
+   "where",
+   "the",
+   "ultimate",
+   "test",
+   "awaited."
+  ]
+ },
+ {
+  "img": "images/00-Introduction-27-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "sixteen",
+   "seekers",
+   "stood",
+   "ready.",
+   "Before",
+   "them",
+   "was",
+   "the",
+   "Supreme",
+   "Human",
+   "Being,",
+   "bearing",
+   "the",
+   "usnisa,",
+   "waiting",
+   "answer",
+   "the",
+   "silent",
+   "questions",
+   "their",
+   "minds."
+  ]
+ },
+ {
+  "img": "images/00-Introduction-28-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Like",
+   "thirsty",
+   "men",
+   "seeking",
+   "cool",
+   "water,",
+   "those",
+   "scorched",
+   "heat",
+   "seeking",
+   "shade,",
+   "the",
+   "ascetics",
+   "climbed",
+   "the",
+   "mountain",
+   "with",
+   "fierce",
+   "urgency."
+  ]
+ },
+ {
+  "img": "images/00-Introduction-29-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Forunate",
+   "One",
+   "sat",
+   "before",
+   "the",
+   "assembly,",
+   "teaching",
+   "the",
+   "Dhamma.",
+   "sat",
+   "brilliant",
+   "hundred-rayed",
+   "sun,",
+   "serene",
+   "the",
+   "full",
+   "moon."
+  ]
+ },
+ {
+  "img": "images/00-Introduction-30-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ajita",
+   "saw",
+   "the",
+   "Sambuddha’s",
+   "perfection.",
+   "Standing",
+   "aside,",
+   "asked",
+   "his",
+   "mind",
+   "alone:",
+   "“Speak",
+   "master’s",
+   "birth,",
+   "his",
+   "marks,",
+   "his",
+   "mastery",
+   "the",
+   "Vedas,",
+   "and",
+   "his",
+   "students.”"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-31-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Without",
+   "speaking,",
+   "the",
+   "Buddha",
+   "answered",
+   "the",
+   "silent",
+   "thought:",
+   "“Bavari",
+   "one",
+   "hundred",
+   "and",
+   "twenty.",
+   "Perfect",
+   "three",
+   "Vedas,",
+   "schools",
+   "five",
+   "hundred.”"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-32-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ajita",
+   "pressed",
+   "the",
+   "unspoken",
+   "test:",
+   "Craving-Cutter,",
+   "make",
+   "physical",
+   "marks",
+   "clear,",
+   "that",
+   "are",
+   "not",
+   "left",
+   "doubting.”"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-33-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha’s",
+   "mind",
+   "replied:",
+   "“He",
+   "covers",
+   "his",
+   "face",
+   "with",
+   "his",
+   "tongue.",
+   "Hair",
+   "grows",
+   "between",
+   "his",
+   "eyebrows.",
+   "What",
+   "covered",
+   "cloth",
+   "ensheathed.”"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-34-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Hearing",
+   "the",
+   "answers",
+   "unheard",
+   "questions,",
+   "the",
+   "assembly",
+   "raised",
+   "their",
+   "hands",
+   "awe.",
+   "“Was",
+   "God,",
+   "Brahma,",
+   "Inda",
+   "who",
+   "spoke",
+   "his",
+   "mind?”"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-35-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ajita",
+   "asked",
+   "the",
+   "final,",
+   "deepest",
+   "question",
+   "his",
+   "master:",
+   "“About",
+   "the",
+   "head",
+   "and",
+   "the",
+   "head-splitting,",
+   "Fortunate",
+   "One,",
+   "please",
+   "remove",
+   "our",
+   "doubts.”"
+  ]
+ },
+ {
+  "img": "images/00-Introduction-36-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Confidence",
+   "Understanding",
+   "the",
+   "head-splitter,",
+   "Ignorance",
+   "the",
+   "head."
+  ]
+ },
+ {
+  "img": "images/00-Introduction-37-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Resolute",
+   "and",
+   "elated,",
+   "Ajita",
+   "dropped",
+   "his",
+   "deer-skin",
+   "from",
+   "his",
+   "shoulder",
+   "and",
+   "placed",
+   "his",
+   "head",
+   "the",
+   "Buddha’s",
+   "feet,",
+   "delivering",
+   "Bavari’s",
+   "joyful",
+   "homage."
+  ]
+ },
+ {
+  "img": "images/00-Introduction-38-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“May",
+   "Bavari,",
+   "his",
+   "students,",
+   "and",
+   "you",
+   "happy.",
+   "All",
+   "your",
+   "doubts",
+   "are",
+   "received.",
+   "Ask",
+   "whatever",
+   "you",
+   "long",
+   "know",
+   "your",
+   "mind.”"
+  ]
+ }
+]
