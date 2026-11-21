@@ -1,0 +1,286 @@
+[
+ {
+  "img": "images/02-Tissa-Metteyya-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     40,
+     600,
+     110
+    ],
+    "ko": "띳사 멧떼야의 질문",
+    "cover": [
+     246,
+     240,
+     228
+    ],
+    "align": "left",
+    "em": 42,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tissa-Metteyya-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     170,
+     572,
+     276
+    ],
+    "ko": "구도자가 묻는\n윤회의 끝에 관한 문답",
+    "cover": [
+     238,
+     229,
+     216
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tissa-Metteyya-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     32,
+     790,
+     160
+    ],
+    "ko": "“이 세상에서 누가\n만족합니까? 누구에게\n동요가 없습니까?”",
+    "cover": [
+     239,
+     230,
+     217
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tissa-Metteyya-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     282,
+     276,
+     786,
+     410
+    ],
+    "ko": "“감각적 쾌락에서 청정하게 살고\n갈애를 여의고 늘 마음챙기며\n잘 살펴 아는 비구는 해탈하였으니\n그에게는 동요가 없다.”",
+    "cover": [
+     234,
+     224,
+     208
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tissa-Metteyya-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     28,
+     756,
+     112
+    ],
+    "ko": "“누가 양 끝을 알고\n그 가운데에도 물들지 않는 지혜로운 이입니까?”",
+    "cover": [
+     239,
+     230,
+     216
+    ],
+    "align": "center",
+    "em": 27,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tissa-Metteyya-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     326,
+     708,
+     404
+    ],
+    "ko": "“양 끝을 알고 그 가운데에도\n물들지 않는 이, 그가 지혜로운 이다.”",
+    "cover": [
+     233,
+     223,
+     206
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tissa-Metteyya-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     300,
+     90,
+     404,
+     138
+    ],
+    "ko": " ",
+    "cover": [
+     240,
+     231,
+     216
+    ],
+    "align": "center",
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     14,
+     90,
+     342,
+     206
+    ],
+    "ko": "“누구를 대장부라 하십니까?\n누가 여기서 바느질하는\n여인을 넘어섰습니까?”",
+    "cover": [
+     238,
+     228,
+     213
+    ],
+    "align": "left",
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tissa-Metteyya-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     426,
+     170,
+     790,
+     232
+    ],
+    "ko": "갈애의 실",
+    "cover": [
+     236,
+     226,
+     209
+    ],
+    "align": "center",
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tissa-Metteyya-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     0,
+     90,
+     302,
+     214
+    ],
+    "ko": "“그를 나는\n대장부라 한다.\n그는 여기서 바느질하는\n여인을 넘어섰다.”",
+    "cover": [
+     236,
+     226,
+     210
+    ],
+    "align": "left",
+    "em": 23,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tissa-Metteyya-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     14,
+     146,
+     322,
+     296
+    ],
+    "ko": "세속의 상태:\n감각적 쾌락\n바느질하는 여인에게 묶임\n동요",
+    "cover": [
+     212,
+     201,
+     185
+    ],
+    "align": "center",
+    "em": 25,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     460,
+     150,
+     776,
+     300
+    ],
+    "ko": "해탈한 비구:\n갈애를 여읨\n잘 살펴 앎\n가운데에도 물들지 않음",
+    "cover": [
+     244,
+     245,
+     244
+    ],
+    "align": "center",
+    "em": 25,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Tissa-Metteyya-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     366,
+     576,
+     448
+    ],
+    "ko": "해탈.",
+    "cover": null,
+    "align": "center",
+    "em": 60,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
