@@ -1434,3 +1434,41 @@ body.simple-ui{font-size:24px}
   .simple-ui .s-player.top .s-now{font-size:16px}
 }
 .s-tbl{--cols:minmax(0,2.2fr) minmax(0,2fr) 190px minmax(0,1.4fr)}  /* 글자가 커져 '2026-11-20 등록'이 두 줄로 접히지 않게 */
+
+/* 단순 화면 글자 3pt(4px) 더 크게 (운영자 요청, 2026-11-21 '지금보다 3pt 더') — 바탕 24→28px, 장 글 26→30px */
+body.simple-ui{font-size:28px}
+.simple-ui .s-h1{font-size:36px}
+.simple-ui .s-sub{font-size:24px}
+.simple-ui .s-btn,.simple-ui .s-chnav .s-btn,.simple-ui .s-player .s-btn,.simple-ui .s-pgform .s-btn,.simple-ui .s-del-row .s-btn,.simple-ui .s-delask .s-btn{font-size:24px}
+.simple-ui .s-path{font-size:24px}
+.simple-ui .s-bar .s-tog{font-size:22px}
+.s-head,.s-row .s-c4,.simple-ui .s-stat{font-size:23px}
+.simple-ui .s-text .reflow{font-size:calc(30px * var(--fs,1))}
+.simple-ui .s-text .pmark{font-size:22px}
+.simple-ui .s-prose h2{font-size:31px}
+.simple-ui .s-find input{font-size:30px}
+.simple-ui .s-rate,.simple-ui .s-rate select,.simple-ui .s-time{font-size:22px}
+.simple-ui .s-player.top .s-now{font-size:22px}
+.simple-ui .s-player.top .s-btn{font-size:26px;min-height:48px}
+.simple-ui .s-player.top .s-btn.s-goto{font-size:21px}
+.simple-ui .s-player.top .s-rate select,.simple-ui .s-player.top .s-time{font-size:21px}
+.simple-ui .s-pgform{font-size:24px}
+.simple-ui .s-pgform input{font-size:26px}
+.simple-ui .s-acct-note{font-size:24px}
+.simple-ui .s-acct,.simple-ui .s-acct .acct-form input{font-size:26px}
+.simple-ui .s-acct .acct-tabs a{font-size:24px}
+.s-tbl{--cols:minmax(0,2.2fr) minmax(0,2fr) 220px minmax(0,1.4fr)}
+.simple-ui.s-docked .s-main{padding-bottom:230px}
+@media (max-width:700px){
+  body.simple-ui{font-size:25px}
+  .simple-ui .s-h1{font-size:31px}
+  .simple-ui .s-sub{font-size:22px}
+  .simple-ui .s-btn,.simple-ui .s-chnav .s-btn{font-size:22px}
+  .simple-ui .s-path{font-size:21px}
+  .s-row .s-c:not(.s-c1){font-size:22px}
+  .simple-ui .s-stat{font-size:21px}
+  .simple-ui .s-text .reflow{font-size:calc(26px * var(--fs,1))}
+  .simple-ui .s-player.top .s-btn{font-size:24px}
+  .simple-ui .s-player.top .s-now{font-size:20px}
+}
+.simple-ui .s-main{max-width:1400px}  /* 글자가 커진 만큼 표를 넓게 */
