@@ -1,0 +1,268 @@
+[
+ {
+  "img": "images/01-Ajita-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     158,
+     626,
+     228
+    ],
+    "ko": "아지따의 질문",
+    "cover": [
+     245,
+     242,
+     237
+    ],
+    "align": "center",
+    "em": 40,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     216,
+     232,
+     610,
+     294
+    ],
+    "ko": "무명과 마음챙김, 의식의 소멸에 관한 문답",
+    "cover": [
+     245,
+     243,
+     237
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Ajita-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     392,
+     302,
+     788,
+     440
+    ],
+    "ko": "“세상은 무엇에 덮여 있습니까?\n왜 세상은 빛나지 않습니까?\n무엇이 세상을 더럽힌다고 하십니까?\n무엇이 세상의 큰 두려움입니까?”",
+    "cover": [
+     245,
+     239,
+     226
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Ajita-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     94,
+     394,
+     368
+    ],
+    "ko": "“세상은 무명에\n덮여 있다. 방일과\n인색함 때문에\n빛나지 않는다.\n갈망이 세상의 더러움이라\n나는 말한다. 괴로움이\n세상의 큰 두려움이다.”",
+    "cover": [
+     247,
+     240,
+     227
+    ],
+    "align": "center",
+    "em": 23,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Ajita-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     76,
+     10,
+     494,
+     152
+    ],
+    "ko": "“흐름은 모든 곳으로 흐릅니다.\n흐름을 막는 것은 무엇입니까?\n흐름을 다스리는 것을 말씀해 주십시오.\n무엇으로 흐름이 닫힙니까?”",
+    "cover": [
+     243,
+     240,
+     234
+    ],
+    "align": "left",
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Ajita-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     2,
+     26,
+     432,
+     158
+    ],
+    "ko": "“세상의 어떤 흐름이든\n마음챙김이 그것을 막는다.\n이것이 흐름을 다스리는 것이라 나는 말한다.\n지혜로 그 흐름은 닫힌다.”",
+    "cover": [
+     244,
+     244,
+     239
+    ],
+    "align": "left",
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Ajita-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     290,
+     122,
+     786,
+     312
+    ],
+    "ko": "“지혜와 마음챙김,\n그리고 정신과 물질은, 존귀한 분이시여,\n여쭈오니 말씀해 주십시오.\n이것들은 어디에서 소멸합니까?”",
+    "cover": [
+     246,
+     246,
+     242
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Ajita-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     144,
+     660,
+     280
+    ],
+    "ko": "“정신과 물질이 남김없이 소멸하는 곳,\n의식이 소멸하면\n바로 여기에서 그것이 소멸한다.”",
+    "cover": [
+     246,
+     246,
+     241
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Ajita-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     6,
+     54,
+     490,
+     232
+    ],
+    "ko": "“법을 꿰뚫어 안 이들과\n여기서 아직 배우는 많은 이들,\n슬기로운 분께 여쭈오니\n그들의 행실을 말씀해 주십시오.”",
+    "cover": [
+     247,
+     247,
+     242
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Ajita-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     274,
+     54,
+     778,
+     224
+    ],
+    "ko": "“감각적 쾌락을 탐하지 말고\n마음이 흐려지지 않아야 한다.\n모든 법에 능숙하여 마음챙기며\n비구는 유행해야 한다.”",
+    "cover": [
+     246,
+     247,
+     241
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Ajita-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     290,
+     752,
+     374
+    ],
+    "ko": "무명은 세상의 눈을 가립니다. 마음챙김은 흐름을 다스립니다.\n지혜는 얽힌 현상을 소멸시킵니다.",
+    "cover": [
+     248,
+     249,
+     244
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     200,
+     394,
+     600,
+     442
+    ],
+    "ko": "지혜로운 이는 마음챙기며 유행합니다.",
+    "cover": [
+     248,
+     249,
+     244
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
