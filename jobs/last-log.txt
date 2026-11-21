@@ -1,8 +1,18 @@
 자동 검수: 문제 의심 0 곳
+On branch storybooks-qa
+Your branch is up to date with 'origin/storybooks-qa'.
+
+nothing to commit, working tree clean
 R2 에 올림: 47 개 / 한글판 이야기 277 편
-새 그림책: 올린 그림 0 장
+새 그림책 올림: New-Jataka/001-Apannaka-en 30 장
+새 그림책 올림: New-Jataka/001-Apannaka 30 장
+새 그림책: 올린 그림 60 장
 공개 주소 확인: 404 27150바이트
-내려받기 파일: 0 묶음 새로 만듦
+이야기 New-Jataka/001-Apannaka {'pdf': 21895246, 'zip': 21717181, 'n': 30}
+책 New-Jataka {'pdf': 37500562, 'pdfs': 7300190, 'zip': 37333318, 'stories': 2, 'n': 54}
+이야기 New-Jataka/001-Apannaka-en {'pdf': 21962392, 'zip': 21761710, 'n': 30}
+책 New-Jataka-en {'pdf': 37568557, 'pdfs': 7356153, 'zip': 37369303, 'stories': 2, 'n': 54}
+내려받기 파일: 4 묶음 새로 만듦
 글로 보기: 277 이야기
 18-Verses-2
 08-Light-of-Asia
