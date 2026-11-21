@@ -53,10 +53,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "none",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0039/DL-0039_초판.pdf"
       },
       "pdf_print": {
         "mode": "none",
