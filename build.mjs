@@ -185,7 +185,7 @@ function contentsHtml(t) {
     // **…** 로 감싼 줄은 굵게, 큰 단계 (묶음 제목 — 예: DL-0038 '【 테라와다 불교사 교재】', 운영자 요청 2026-11-20)
     const bold = /^\*\*(.+)\*\*$/.test(x); if (bold) x = x.slice(2, -2).trim();
     let lv = bold || BIG.test(x) ? 0 : MID.test(x) ? 1 : SMALL.test(x) ? 2 : sub ? Math.min(last + 1, 2) : seenBig ? 1 : 0;
-    if (lv === 0) seenBig = true;
+    if (bold || BIG.test(x)) seenBig = true;  // 표시 없는 첫 줄들(• 역자 서문 · • 프라 아짠 문…)은 같은 단계로 (운영자 요청, 2026-11-21 DL-0040)
     if (!sub && !SMALL.test(x)) last = lv;
     return { lv, x, pg, bold };
   });
