@@ -1,0 +1,221 @@
+# DL-0029『부처님, 그분』 문장 짝을 손으로 (한국어 문장 첫머리=원서 문장 첫머리) — run_dl0029.sh 가 줄마다 --spin 으로 씀
+#   '한국어=' 는 그 한국어 문장 짝 없음(한국어판에만 있음), '=원서' 는 그 원서 문장 짝 없음. 같은 첫머리가 여럿이면 '글~N'
+# 서론 — 첫 인용(네루가 인용한 바르트의 말까지 한 문단)
+세월은 끊임없이=“The ages roll by
+그리하여 이생에서=“The ages roll by
+인격은 예나=Personality counts
+바르트Barth가=Personality counts
+그리고 모든 편견에서=Personality counts
+그분의 메시지는=“His message
+# 2회차에 더한 짝 (짝마다 뜻을 읽고 정함)
+=(Julian Huxley
+따라서 바로 첫 번째 법문=Thus, in his very first sermon
+비구들이여, ‘이것은 괴로움의 성스러운=Thus, in his very first sermon
+이렇게 알고 이렇게=Knowing thus, seeing thus
+그리고 그는 다음과 같은 사실을=Knowing thus, seeing thus
+태어남[生]은 소진=Knowing thus, seeing thus
+이것이 고의 멸에 이르는 도道=He understood as it really is: “This is suffering
+이것이 번뇌의 일어남=He understood as it really is: “These
+이것이 번뇌의 멸이다=He understood as it really is: “These
+이것이 번뇌의 멸에 이르는=He understood as it really is: “These
+이것의 생기와 더불어=When this is, that comes to be; with the arising of this, that arises; when
+이것이 없으면 저것이 있게 되지 않는다.=When this is, that comes to be; with the arising of this, that arises; when
+이것의 멸함과 더불어=When this is, that comes to be; with the arising of this, that arises; when
+즉 무지[無明]를 조건으로=When this is, that comes to be; with the arising of this, that arises; when
+그러나 불안佛眼=Pondering thus
+이리하여 마침내 부처님께서는 다음과=The Master then declared
+그때 부처님은 게송으로=The Buddha replied: “I have no teacher
+무지가 군림하고=In a world where
+이렇게 지고하신 부처님께서는=Thus did the Supreme Buddha proclaim
+이 첫 법문, 녹야원의=This first discourse
+고苦 dukkha는 병이다=Suffering (dukkha) is the illness
+왜 그러느냐 하면, 아아난다여=Addressing the disciple Ānanda
+세상에 드문 분이시지만=A Buddha is an extreme rarity
+자유사상의 최초 헌장=In no uncertain terms
+여래께서 그 원인을=The Tathāgata has explained the cause
+또 그것들의 멸진에=Its cessation too
+이것이 대 사문의=This is the teaching of the Supreme Sage
+=(yaṃ kiñci
+=(Udāna 55)
+이에 부처님께서 대답하셨다=Replied the Buddha
+그러고는 법을 설하여=Then explaining the Dhamma
+마침내 그는 법을 이해한=And so the king became
+저에게 상속물을=And when the Blessed One had finished
+라아훌라야! 더불어 기뻐함=Cultivate the meditation on appreciative joy
+더불어 기뻐하는 마음을 닦으면=Cultivate the meditation on appreciative joy
+라아훌라야! 평온함=Cultivate the meditation on equanimity
+평온을 닦으면=Cultivate the meditation on equanimity
+더러움을 관하는 공부를 닦으면=Cultivate the meditation on impurity
+무상의 인식을 관하는 공부를 닦으면=Cultivate the meditation on the concept
+사왓티 태생인=
+몸이 너무나 야위고=
+비구들이여! 부디=Be earnest then
+# 탄생 — 여덟 현자의 예언
+그 바라문들은 심사숙고=The brahmins deliberated
+그러나 만약 세속을=The brahmins deliberated
+그러나 그 중 가장 현명=But Koṇḍañña
+그래서 최상의 깨달음을 얻은 분이 될 것입니다=But Koṇḍañña
+# 네 가지 충격적인 체험 — 늙은이의 외침
+어느 날 왕자가 마부=On one occasion, when the prince
+왕자님, 도와주세요=On one occasion, when the prince
+나를 일으켜 세워주세요=On one occasion, when the prince
+제발, 좀 도와주세요=On one occasion, when the prince
+집에도 못 가고=Or I shall die
+# 마침내 깨치시다 — 사성제·번뇌를 여실히 앎
+그는 여실히 깨달았다.~1=He understood as it really is: “This is suffering
+즉 ‘이것이 고苦=He understood as it really is: “This is suffering
+이것이 고의 일어남[集]=He understood as it really is: “This is suffering
+이것이 고의 멸滅=He understood as it really is: “This is suffering
+그는 여실히 깨달았다.~2=He understood as it really is: “These
+‘이들이 번뇌다=He understood as it really is: “These
+청정한 삶[梵行~1=Knowing thus, seeing thus
+다시는 이런 상태에=Knowing thus, seeing thus
+이것이 새벽녘=This was the third knowledge
+# 오해 — 첫 법문 인용
+이것은 괴로움의 일어남이다.~1=Thus, in his very first sermon
+이것은 괴로움의 멸진이다.~1=Thus, in his very first sermon
+이것은 괴로움의 멸진에 이르는 도이다’라는=Thus, in his very first sermon
+다시, 위없는 완전한=Again, while making clear
+그리고 힌두교는 이 위대한=However, referring to the Buddha, Mahatma Gandhi
+=(Mahādev Desai
+# 연기 — 순관·역관
+이것이 있으면 저것이 있게 된다.=When this is, that comes to be; with the arising of this, that arises; when
+# 처음으로 법의 바퀴를 굴리시다 — 범천의 권청 게송(한국어판은 번역이 앞, 원서는 빠알리가 앞)
+불사不死의 문은 열려=Open are the doors
+귀 있는 자들이여=Let those that have ears
+Apārutā tesaṁ=
+Ye sotavanto pamuñcantu saddhaṁ=
+=Apārutā tesaṃ
+=Ye sotavanto pamuñcantu saddhaṃ
+# 우빠까에게 한 게송
+나는 비길 데 없는 스승이며=The Buddha replied: “I have no teacher
+나 홀로 완전히=I alone am
+열반의 고요를=Quenching all
+나는 법의 바퀴[法輪]를=I go to the city
+# 중도 — 팔정도
+그것은 바로 성스러운 여덟=It is this Noble Eightfold
+정사(正思=It is this Noble Eightfold
+정어(正語=It is this Noble Eightfold
+정업(正業=It is this Noble Eightfold
+정명(正命=It is this Noble Eightfold
+정정진(正精進=It is this Noble Eightfold
+정념(正念=It is this Noble Eightfold
+정정(正定=It is this Noble Eightfold
+다시 부처님은 그들에게 사성제=Then the Buddha explained
+# 부처님의 교화사업 — 12년째
+=(Read The Book of Protection by this author
+12년째=12th year: Verañja
+웨란자 마을: 부처님께서=The introduction of the Vinaya
+그리고 바라문 웨란자의=It was also during this retreat
+# 정법의 특징 — 필딩 홀(한국어판의 조셉 웨인 인용은 원서에 없음)
+이렇듯 붓다와 그분의 가르침은=He and his faith
+붓다야말로 사랑으로=He was the preacher
+기독교 성직자 조셉 웨인=
+불교는 통제가 아니라=
+태양 아래 가장=
+교법의 전파 과정=
+신앙이 다르다고=
+이는 기독교가=
+붓다는 사람들에게 오늘을=
+제자들에게 법을 전하는 데서도=When communicating the Dhamma
+# 깔라마 경(한국어판이 문답을 더 길게 옮김)
+그렇소, 까알라아마인들이여!~1=“Come, Kālāmas.
+그대들이 의심하는 것은=“Come, Kālāmas.
+그대들은 세상의 평이나 구전口傳=Do not go by oral
+당신들 스스로 생각해서=But when you know for yourselves
+그리고 스스로 생각해서=And when you know for yourselves
+그런 다음 부처님은 물으셨다=
+자, 까알라아마인들이여, 그대들은=
+여기 어떤 사람에게 탐욕=
+이런 것은 그 사람에게=
+탓할 일이겠소=
+존사尊師시여!=
+자, 까알라아마인들이여!=
+이것은 어떻게 생각하시오=
+어떤 사람이 탐욕=
+이것은 그에게 이득이겠소=
+존사시여! 그에게=
+그렇소, 까알라아마인들이여!~2=
+방금 내가 그대들에게=
+건전하고, 나무랄 데 없고=
+무엇인가 전적으로 믿기=To take anything on trust
+그래서 부처님과 제자들 간에는=To take anything on trust
+(나의 가르침을) 알고=To take anything on trust
+아닙니다. 세존이시여!~1=To take anything on trust
+그렇다면 비구들이여!=—“That which you affirm
+그대들은 스스로 알고=—“That which you affirm
+네, 그렇습니다. 세존이시여!=– “Yes, Lord.”
+부처님은 항상 사실을=The Buddha faced facts
+# 섬이 되라(한국어판이 대반열반경 구절을 더 실음)
+여래들은 다만 길을=The Tathāgatas point out
+그대 스스로가 자신의 섬이=
+남을 피난처로=
+법을 섬으로 삼고, 굳건히=
+법을 피난처로 삼고, 굳건히=
+그 밖에 다른 어떤 피난처에도=
+분발하라, 일어나라=Bestir yourselves
+# 참된 청정 — 바후까 강(한국어판의 《법구경》 165게송은 원서에 없음)
+만일 그대가 거짓말을=If you do not speak falsehood
+그대 집에 있는 우물물=Your well at home
+《법구경》 165게송은=
+악을 행하는 것도 자신이요=
+스스로를 더럽히는 것도=
+악을 범하지 않는 것도=
+스스로를 정화시키는 것도=
+청정과 더러움이=
+아무도 남을 청정하게=
+# 카스트 문제
+하고 부처님을 모욕한=“Stop, you shaveling!
+# 수제자들 — 앗사지의 게송(한국어판은 번역이 앞, 원서는 빠알리가 앞)
+그러자 아라한 앗사지는=Then the arahat Assaji
+원인에서 발생하는=Whatever from a cause
+Ye dhammā hetuppabhavā=
+tesaṁ hetuṁ=
+Tesañ ca yo=
+Evaṁ vādi=
+=Ye dhammā hetuppabhavā
+=Tesaṃ hetuṃ
+=Tesaṃ ca yo
+=Evaṃvādi
+우빠띳사는 이 게송을 듣자=Upatissa instantly grasped
+‘생겨나는 성질을=Upatissa instantly grasped
+# 까삘라왓투에서
+법다이 사십시오=Then explaining the Dhamma
+그런 다음 부처님께서는 궁전으로=The Buddha was then conducted
+그 말을 듣자 세존은=At that the Blessed One spoke
+(육신의) 더러움[不淨]을=Cultivate the meditation on impurity
+라아훌라야! 무상의 인식=Cultivate the meditation on the concept
+라아훌라야! 호흡에 대한 마음챙김[入出息念=Cultivate the meditation on mindfulness
+# 불전에 나오는 여인들 — 암바빨리·끼사고따미(한국어판이 이야기를 더 실음)
+그 가르침을 받고 깊이=She was immediately
+그리고 열심히 정진한=Ardent and strenuous
+부처님이 그 크신 자비심으로=Kisāgotamī was another
+불교의 지혜와 자비를=Her story is one
+이 밖에도 부처님께서 삶의=Many more are the instances
+불교는 인도의 바라나시=Buddhism had its birth
+갈애가 병의 발생=Suffering (dukkha) is the illness
+갈애를 없앰으로써=Suffering (dukkha) is the illness
+그것이 치유이다=Suffering (dukkha) is the illness
+여덟 가지 성스러운 도는 그 처방=Suffering (dukkha) is the illness
+그리하여 사아리뿟따는=Then the Venerable Sāriputta gave
+연민을 닦으면=Cultivate the meditation on compassion
+# 3회차에 더한 짝
+불교도들이 강제로=Conversion by compulsion was unknown among the
+부처님께서 몸소 그녀에게=The Buddha went to her
+그러자 부처님께서는 전생담=Then relating the Candakinnara
+현자시여, 당신의 그늘은=Prince Rāhula went
+어린 라아훌라에게=The discourses are entirely
+그 중 〈마하라아훌라와다=Here is an extract
+자애를 닦으면=Cultivate the meditation on loving
+# 4회차에 더한 짝
+그런 일은 부처님이나=Conversion by compulsion was unknown among the
+가서 너의 상속물을=When the Buddha was in the palace
+불교가 다른 종교를 헐뜯는=No decrying
+그처럼 평화로웠기=Buddhism was thus able
+또, 다른 나라에 전파되는=Furthermore, Buddhism penetrated
+종교사에서 유례가=Buddhist missions
+리스 데이비즈 박사=“There is no record
+내가 알기로는, 불교의=“There is no record
+그들이 사용한 유일한=The only weapon
+그러나 그 밖에도 불교의=But there were other factors
+전법을 담당한=But there were other factors

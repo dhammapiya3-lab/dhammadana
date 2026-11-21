@@ -13,7 +13,7 @@ content/parallel/<ID>.<말>.json 을 만든다. (운영자 요청, 2026-11-15 �
 5. 짝마다 점수(0~1, 뜻이 얼마나 같은지)를 남기고 낮은 짝은 확인 목록(report)으로.
 글자는 한국어 본문도 원서도 한 자도 바꾸지 않음 — 짝 자료에는 각 문장이 문단의 몇 번째 글자부터 몇 번째까지인지만 적음.
 """
-import sys, re, json, os, argparse, datetime
+import sys, re, json, os, argparse, datetime, unicodedata
 import numpy as np
 
 ap = argparse.ArgumentParser()
@@ -39,6 +39,7 @@ ap.add_argument('--ko-none', action='append', default=[], help="이 정규식에
 ap.add_argument('--kind-base', action='append', default=[], help="원서 문단 종류마다 짝짓기 점수에서 더 뺄 값: '종류=값' — 예 DL-0015 'note=0.15' (편자의 풀이 글은 한국어판이 일부만 옮겨 덜 끌어당기게)")
 ap.add_argument('--toc', action='store_true', help='차례도 줄마다 짝지음 — 한국어 차례(%% 문단)의 제목 줄 ↔ 원서 차례(k toc) 항목, 쪽 번호는 빼고 제목끼리 (운영자 요청, 2026-11-17)')
 ap.add_argument('--fn-cost', type=float, default=0.2, help='각주 짝짓기에서 짝마다 뺄 값 — 한국어판이 원서와 다른 각주를 단 책(DL-0023~25: 한국어는 DPPN 풀이, 원서는 편자 주)은 크게 해서 뜻이 아주 가까운 것만 짝');
+ap.add_argument('--ko-short', type=int, default=0, help='한국어 문장 조각이 이 글자 수(표시 기호 뺌) 안이면 같은 문단의 다음 문장과 하나로 — 부르는 말·짧은 외침(‘오!’ ‘왕이시여!’ ‘비구들이여!’)이 따로 짝지어지지 않게 (DL-0029)')
 ap.add_argument('--title', default=''); ap.add_argument('--by', default=''); ap.add_argument('--source', default='')
 A = ap.parse_args()
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -112,6 +113,15 @@ def sents(t, lang):
 
 def _sents(t, lang):
     out = __sents(t, lang)
+    if lang == 'ko' and A.ko_short and len(out) > 1:   # 짧은 외침·부르는 말은 다음 문장과 하나로 (문단 끝이면 앞 문장에)
+        m = []; k = 0
+        while k < len(out):
+            a, b = out[k]
+            while k + 1 < len(out) and len(plain(t[a:out[k][1]]).strip(' *+')) <= A.ko_short:
+                k += 1
+            m.append((a, out[k][1])); k += 1
+        if len(m) > 1 and len(plain(t[m[-1][0]:m[-1][1]]).strip(' *+')) <= A.ko_short: m[-2:] = [(m[-2][0], m[-1][1])]
+        out = m
     if lang == 'en':
         for k in range(1, len(out)):
             a, b = out[k]
@@ -133,20 +143,24 @@ def __sents(t, lang):
         if lang == 'en' and m.group(0) != '\n':
             # 'e.g. ' 'i.e. ' 'Mr. ' 'U. ' 같은 약어 뒤나 다음 글자가 소문자면 나누지 않음
             nx = t[m.end():m.end() + 1]
-            if re.search(r'\b(e\.g|i\.e|etc|Mr|Mrs|Dr|cf|vs|No|v|vv|pp)\.$', t[a:m.start() + 1].strip()) or (nx and nx.islower()): continue
+            if re.search(r'\b(e\.g|i\.e|etc|Mr|Mrs|Dr|cf|vs|No|Nos|v|vv|pp)\.$', t[a:m.start() + 1].strip()) or (nx and nx.islower()): continue
             # 경전·책 약어('B. Dict.' 'Vis. M.' 'S. XXII.' 'Dhp.' 'Comm.') 뒤, 생략 점('. . .')에서는 나누지 않음 (DL-0015)
             if re.search(r'(?:^|[\s(])(?:[A-Z]|B|Vis|Dict|Comm|Dhp|Snp|Ud|Fund|Vol|ff|lit|Cf|[IVX]+)\.$', t[a:m.start() + 1].strip()) and not re.search(r'[a-z]{3}\.$', t[a:m.start() + 1].strip()[-5:]) or nx == '.': continue
+            if re.search(r'(?:^|[\s(])(?:[A-Z]\.){2,3}$', t[a:m.start() + 1].strip()): continue   # 이름 머리글자 'T.W. Rhys Davids'·'C.A.F.' (DL-0029)
         # 따옴표 뒤 이음말('…존재한다.’ 거나', '…’ 라고')은 앞 문장에 (DL-0022, --ko-join)
         if lang == 'ko' and A.ko_join and m.group(0) != '\n' and re.match(r'(거나|라고|하고|라는|이라고|라며|하면서)[\s,]', t[m.end():m.end() + 6]): continue
         # '“알았습니다. 세존이시여”' 처럼 짧은 대답 뒤 부르는 말(…이여·…시여·…님)은 같은 문장 (DL-0022, --ko-join)
         if lang == 'ko' and A.ko_join and m.group(0) != '\n' and len(seg) <= 12 and re.match(r'\s*[가-힣 ]{1,12}(이여|시여|님)[.?!”’"\'』」]', t[m.end() - 1:m.end() + 20]): continue
         # 로마자 이름 첫 글자('호너I. B. Horner')에서는 나누지 않음 — 한국어 문장 속 로마자 머리글자 (DL-0019)
         if lang == 'ko' and m.group(0) != '\n' and re.search(r'(?:^|[^A-Za-z])[A-Z]\.$', t[a:m.start() + 1].strip()) and re.match(r'\s*[A-Z]', t[m.end() - 1:m.end() + 2]): continue
+        if lang == 'ko' and m.group(0) != '\n' and re.search(r'(?:^|\s)[A-Z]\.$', t[a:m.start() + 1].strip()) and re.match(r'\s*[가-힣]{2,}', t[m.end() - 1:m.end() + 6]) and not re.search(r'[.?!。…]\s+[A-Z]\.$', t[a:m.start() + 1]): continue   # 한국어 문장 속 머리글자 + 한글 이름('S. 라다크리슈난'·'C. 벵카타 라만') (DL-0029)
+        if lang == 'en' and out and re.fullmatch(r'[’”“\'"\s]*(\[\^\d+\])+[’”\s]*', seg): out[-1] = (out[-1][0], a + len(t[a:b].rstrip())); a = m.end(); continue   # 따옴표 + 주 번호만 남은 조각('“[^24]')은 앞 문장에 (DL-0029)
         if (lang == 'en' or re.fullmatch(r'[’”\'"\s.…]+', seg)) and seg and not re.search(r'\w', seg) and out: out[-1] = (out[-1][0], a + len(t[a:b].rstrip())); a = m.end(); continue   # 점만 있는 조각은 앞 문장에
         if lang == 'en' and re.fullmatch(r'((\[\d+\]|\[\d+\.\d+\]|\{\d+\.\d+\})\s*)+', seg): continue   # PTS 쪽 표시 '[169]'(DL-0022)·'{1.283}'·'[28.325]'(DL-0023~25 — 원서 판·번역 쪽) 만 있는 조각은 다음 문장과 함께
         if seg: out.append((a + len(t[a:b]) - len(t[a:b].lstrip()), a + len(t[a:b].rstrip())))
         a = m.end()
     if out and (lang == 'en' and re.fullmatch(r'((\[\d+\]|\[\d+\.\d+\]|\{\d+\.\d+\})\s*)+', t[a:].strip()) or re.fullmatch(r'[’”\'"\s.…]+', t[a:].strip())): out[-1] = (out[-1][0], len(t.rstrip())); return out
+    if lang == 'en' and out and re.fullmatch(r'[’”“\'"\s]*(\[\^\d+\])+[’”\s]*', t[a:].strip()): out[-1] = (out[-1][0], len(t.rstrip())); return out   # 끝에 남은 '“[^24]' (DL-0029)
     if t[a:].strip(): out.append((a + len(t[a:]) - len(t[a:].lstrip()), len(t.rstrip())))
     return out
 
@@ -215,7 +229,7 @@ KB = {k: float(v) for k, v in (x.split('=') for x in A.kind_base)}
 PEN = np.array([KB.get(ORIG[x[0]]['k'], 0.0) for x in ES]) if ES else np.zeros(0)
 S1 = S - A.base - PEN[None, :]   # 1단계(대강의 길)용
 # --spin: 손으로 정한 문장 짝·짝 없음
-def _norm(t): return re.sub(r'\s+', ' ', t).strip()
+def _norm(t): return re.sub(r'\s+', ' ', unicodedata.normalize('NFKC', t)).strip()   # 호환 한자(不 U+F967 등)도 같은 글자로
 def _find(L, x, what):
     m = re.match(r'(.*)~(\d+)$', x); t, n = (m.group(1), int(m.group(2))) if m else (x, 1)
     t = _norm(t); hits = [i for i, y in enumerate(L) if _norm(y[3]).startswith(t)]
@@ -264,6 +278,9 @@ W = A.band
 # ---------- 2단계: 묶음까지 허용한 짝짓기 (띠 안에서) ----------
 BEADS = [(1, 1), (1, 2), (2, 1), (2, 2), (1, 3), (3, 1), (1, 0), (0, 1)]
 if A.en_semi: BEADS += [(1, 4), (1, 5), (1, 6), (1, 7), (1, 8), (1, 9), (1, 10), (4, 1), (5, 1), (2, 3), (3, 2)]   # 긴 목록('abstention from … is wholesome;' ×10)을 한국어 한 문장에   # 쌍반점으로 잘게 나눈 원서 조각 여럿 ↔ 한국어 한 문장 (DL-0022)
+if SPINR:   # 손으로 한국어 여러 문장을 원서 한 문장에 묶었으면(--spin) 그만큼 큰 묶음도 허용 (DL-0029: 팔정도 여덟 줄 ↔ 원서 한 문장)
+    _mx = max(max(v) - min(v) + 1 for v in SPINR.values())
+    BEADS += [(k, 1) for k in range(4, _mx + 1) if (k, 1) not in BEADS]
 cK = np.vstack([np.zeros(KE.shape[1]), np.cumsum(KE, 0)]); cE = np.vstack([np.zeros(EE.shape[1]), np.cumsum(EE, 0)])
 def sim(i0, i1, j0, j1):
     if SPIN or NOK or NOE:
@@ -317,6 +334,7 @@ for i in range(0, N + 1):
         for a, b in BEADS:
             pi, pj = i - a, j - b
             if pi < 0 or pj < 0 or (pi, pj) not in V: continue
+            if a > 3 and b == 1 and not A.en_semi and not (j - 1 in SPINR and pi == min(SPINR[j - 1]) and i == max(SPINR[j - 1]) + 1): continue   # 큰 묶음은 손으로 묶은 범위 그대로만
             if a and b:
                 sc = (sim(pi, i, pj, j) - A.base - (PEN[pj:j].max() if j > pj and KB else 0.0)) * (a + b) / 2 - MERGE * (max(a, b) - 1 + (a > 1 and b > 1))
             else:

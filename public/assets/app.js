@@ -2710,6 +2710,17 @@ document.addEventListener('keydown', e => {
 // ---------- 원서 대조 (운영자 요청, 2026-11-15) ----------
 // 짝 자료 /parallel/<ID>.<말>.json : groups[].ko = 한국어 문단 열쇠 '쪽 순번:문단 순번', or = 원서 문단 번호, s = 문장 짝(문단 열쇠·번호, 시작·끝 글자)
 async function parEnsure() { if (R && R.par.length && R.parMode !== 'off' && !R.parD) { try { R.parD = await (await fetch('/parallel/' + R.id + '.' + R.par[0] + '.json')).json(); renderReader(); } catch (e) { R.parMode = 'off'; } } }
+// 문장마다 보기: 문장 조각이 굵게·기울임 표시(** °° == §§ @@)의 가운데에서 시작하거나 끝나면 조각 안에서 짝을 맞춤
+//   (DL-0029 앗사지 게송: 문단 전체를 감싼 '**…**' 가 첫 줄·끝 줄 조각에만 한쪽씩 남아 '**' 가 글자로 보이던 것, 2026-11-21)
+function parBal(t, a, b) {
+  let x = t.slice(a, b);
+  for (const m of ['**', '°°', '==', '§§', '@@']) {
+    const before = t.slice(0, a).split(m).length - 1;
+    if (before % 2) x = x.startsWith(m) ? x.slice(m.length) : m + x;   // 앞에서 열린 채 들어옴 (조각이 바로 닫는 표시로 시작하면 그 표시만 뺌)
+    if ((x.split(m).length - 1) % 2) x = x.endsWith(m) ? x.slice(0, -m.length) : x + m;
+  }
+  return x;
+}
 function parApply() {
   const body = $('#rBody'), rf = body && $('.reflow', body);
   if (!rf || !R || !R.par.length || R.parMode === 'off' || R.view === 'page') return;
@@ -2742,7 +2753,7 @@ function parApply() {
       const heads = els.filter(e => e.classList.contains('sub-h') || e.classList.contains('ch-dup'));
       const box = document.createElement('div'); box.className = 'par-sent'; box.dataset.g = gi;
       box.innerHTML = g.s.map(p => {
-        const ko = p.ko.map(([k, a, b]) => kText(k).slice(a, b)).join(' '), or = p.or.map(([i, a, b]) => O[i].t.slice(a, b)).join(' ');
+        const ko = p.ko.map(([k, a, b]) => parBal(kText(k), a, b)).join(' '), or = p.or.map(([i, a, b]) => parBal(O[i].t, a, b)).join(' ');
         const onlyHead = p.ko.length && p.ko.every(([k]) => heads.some(e => `${e.dataset.pg}:${e.dataset.s}` === k));
         return onlyHead ? (or ? `<div class="ps ps-hd"><div class="ps-o" lang="${D.lang}">${oHtml(or)}</div></div>` : '') : `<div class="ps">${ko ? `<div class="ps-k">${kHtml(ko)}</div>` : ''}${or ? `<div class="ps-o" lang="${D.lang}">${oHtml(or)}</div>` : ''}</div>`;
       }).join('') + (g.note ? `<p class="par-note">※ ${esc(g.note)}</p>` : '');
