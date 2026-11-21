@@ -1026,7 +1026,7 @@ function simpleLayout({ title, path = [], up = '', normal = '/', body, status = 
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#1f3b8a">
 <link rel="stylesheet" href="/assets/site.css?v=${V.css}">
-<script>try{if(new URLSearchParams(location.search).get('ui')==='simple')localStorage.setItem('dd-ui',JSON.stringify('simple'));var m=localStorage.getItem('dd-mode');m=m?JSON.parse(m):'auto';if(m!=='auto')document.documentElement.classList.add('mode-'+m);var f=JSON.parse(localStorage.getItem('dd-sitefs')||'0');if(f>0)document.documentElement.classList.add('sfs-'+f)}catch(e){}</script>
+<script>try{if(new URLSearchParams(location.search).get('ui')==='simple')localStorage.setItem('dd-ui',JSON.stringify('simple'));var m=localStorage.getItem('dd-mode');m=m?JSON.parse(m):'auto';if(m!=='auto')document.documentElement.classList.add('mode-'+m);var z=JSON.parse(localStorage.getItem('dd-sfz')||'0');if(!z){var f=+JSON.parse(localStorage.getItem('dd-sitefs')||'0');z=f==2?130:f==1?115:100}if(z!=100)document.documentElement.style.setProperty('--sz',z/100)}catch(e){}</script>
 </head>
 <body data-page="${page}" class="simple-ui">
 <div class="s-bar" role="banner">
@@ -1034,6 +1034,7 @@ function simpleLayout({ title, path = [], up = '', normal = '/', body, status = 
   ${up ? `<button type="button" class="s-btn" id="sBack" aria-label="뒤로 (이전 화면)">◀ 뒤로</button>` : `<a class="s-btn" href="/simple/account/" id="sAcctTop" aria-label="로그인 · 회원가입">👤 로그인</a>`}${/* 첫 화면(위 목록이 없는 화면)에는 '◀ 뒤로'를 두지 않음 — 운영자 요청 2026-11-18; 브라우저 뒤로 가기는 그대로 */''}
   ${up ? `<a class="s-btn" href="/simple/" id="sHome" aria-label="홈으로 (첫 화면)">🏠 홈으로</a><a href="${esc(up)}" id="sUp" hidden>위로</a>` : ''}${/* 위쪽 줄 '▲ 위로'를 '🏠 홈으로'로 (운영자 요청, 2026-11-19) — 한 단계 위는 목록 맨 위 '▲ 위로' 줄·Backspace 로, #sUp 은 그 주소를 담은 숨은 링크 */''}
   <nav class="s-path" aria-label="지금 위치">${crumbs.map(([n, h], i) => i === crumbs.length - 1 && i ? `<span aria-current="page">${esc(n)}</span>` : `<a href="${esc(h)}">${esc(n)}</a>`).join('<span aria-hidden="true"> › </span>')}</nav>
+  <span class="s-zoom" role="group" aria-label="글자 크기"><button type="button" class="s-btn" data-sz="-1"><span aria-hidden="true">가−</span><span class="sr">글자</span><span class="s-zl"> 작게</span><span class="sr s-zp"></span></button><button type="button" class="s-btn" data-sz="1"><span aria-hidden="true">가+</span><span class="sr">글자</span><span class="s-zl"> 크게</span><span class="sr s-zp"></span></button></span>${/* 글자 크게·작게 (운영자 요청, 2026-11-21 — 국립장애인도서관처럼): 본문(.s-main)만 키움, 파란 줄·재생기는 그대로. Tab 순서는 맨 뒤, 화면에서는 '단순|일반' 왼쪽. 일반 화면 '가가'(dd-sitefs)는 단순 화면에 쓰지 않고 처음 값만 거기서 가져옴 */''}
 </div>
 <main id="app" class="s-main">
 <h1 class="s-h1" tabindex="-1">${esc(title)}</h1>

@@ -1472,3 +1472,20 @@ body.simple-ui{font-size:28px}
   .simple-ui .s-player.top .s-now{font-size:20px}
 }
 .simple-ui .s-main{max-width:1400px}  /* 글자가 커진 만큼 표를 넓게 */
+
+/* 단순 화면 '글자 크게·작게' (운영자 요청, 2026-11-21) — 본문(.s-main)만 키움(--sz: 0.8~2), 위쪽 파란 줄·재생기·상태 줄은 그대로 */
+.simple-ui .s-main{zoom:var(--sz,1)}
+.simple-ui .s-bar .s-zoom{order:8;display:inline-flex;gap:6px;margin-left:auto}
+.simple-ui .s-bar .s-zoom + *{margin-left:0}
+.simple-ui .s-bar .s-zoom .s-btn{font-size:22px;padding:2px 12px;min-width:48px;min-height:44px;white-space:nowrap}
+.simple-ui .s-bar .s-zoom .s-btn[aria-disabled=true]{opacity:.5;cursor:default}
+.simple-ui .s-bar .s-tog{margin-left:0}
+@media (max-width:700px){ .simple-ui .s-bar .s-zoom .s-zl{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap} .simple-ui .s-bar .s-zoom .s-btn{font-size:20px;padding:2px 8px;min-width:44px} }
+.simple-ui .s-main{overflow-wrap:break-word}  /* 긴 주소(http://…)가 휴대폰 화면 밖으로 나가 옆으로 밀리던 것 (2026-11-21) */
+/* 단순 화면 각주 창도 크게 — 본문 글자 크기·'글자 크게' 단추(--sz)·각주 크기(--fnfs)에 맞춤 (2026-11-21, 전에는 15px) */
+.simple-ui #fnPop{font-size:calc(24px * var(--sz,1) * var(--fnfs,1));max-height:60vh;padding:14px 18px}
+.simple-ui #fnPop p{font-size:inherit}
+.simple-ui #fnPop .fnpop-h{font-size:calc(20px * var(--sz,1))}
+.simple-ui #fnPop .fnpop-x{font-size:calc(24px * var(--sz,1));min-width:44px;min-height:44px}
+.simple-ui #fnPop .link-btn{font-size:calc(20px * var(--sz,1))}
+.simple-ui #fnPop .r-tbl,.simple-ui #fnPop .fnpop-oh{font-size:calc(19px * var(--sz,1) * var(--fnfs,1))}

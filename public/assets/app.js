@@ -2623,7 +2623,7 @@ document.addEventListener('click', e => {
   }
   parFnAdd(pop, n, null);
   document.body.appendChild(pop);
-  const z = bodyZoom(), r = sup.getBoundingClientRect(), W = Math.min(420 * z, innerWidth - 24);
+  const z = bodyZoom(), r = sup.getBoundingClientRect(), W = Math.min((SIMPLE_UI ? 640 * szNow() / 100 : 420) * z, innerWidth - 24);  /* 단순 화면은 글자가 커서 넓게 (2026-11-21) */
   pop.style.width = W / z + 'px'; pop.style.left = Math.max(12, Math.min(innerWidth - W - 12, r.left - W / 2)) / z + 'px';
   const below = r.bottom + 8, h = pop.offsetHeight * z;
   pop.style.top = (below + h < innerHeight - 8 ? below : Math.max(8, r.top - h - 8)) / z + 'px';
@@ -2791,7 +2791,7 @@ document.addEventListener('click', e => {
   const kn = D && D.fn ? Object.keys(D.fn).find(k => D.fn[k] === oi) : null;
   if (kn) { const b = document.createElement('button'); b.className = 'link-btn small'; b.textContent = `한국어 각주 ${kn} 보기`; b.onclick = () => { const r = document.querySelector(`.reflow .fn-ref[data-fn="${CSS.escape(kn)}"]`); pop.remove(); if (r) r.click(); else toast('한국어 각주가 다른 장에 있습니다'); }; pop.appendChild(b); }
   document.body.appendChild(pop);
-  const z = bodyZoom(), r = sup.getBoundingClientRect(), W = Math.min(420 * z, innerWidth - 24);
+  const z = bodyZoom(), r = sup.getBoundingClientRect(), W = Math.min((SIMPLE_UI ? 640 * szNow() / 100 : 420) * z, innerWidth - 24);  /* 단순 화면은 글자가 커서 넓게 (2026-11-21) */
   pop.style.width = W / z + 'px'; pop.style.left = Math.max(12, Math.min(innerWidth - W - 12, r.left - W / 2)) / z + 'px';
   const below = r.bottom + 8, h = pop.offsetHeight * z;
   pop.style.top = (below + h < innerHeight - 8 ? below : Math.max(8, r.top - h - 8)) / z + 'px';
@@ -3543,6 +3543,22 @@ function simpleHelp() {
   });
 }
 // 위쪽 파란 줄(◀ 뒤로·▲ 위로·지금 위치) 높이 — 쪽 표시가 그 뒤로 숨지 않게 그만큼 내려 둠 (운영자 요청, 2026-11-18)
+// 단순 화면 '글자 크게·작게' 단추 (운영자 요청, 2026-11-21) — 본문만 키움(site.css .s-main zoom), 이 기기에 기억(dd-sfz),
+// 처음 값은 일반 화면 '가가'(dd-sitefs)에서 — build.mjs 머리 스크립트와 같은 규칙. 화면 낭독기에는 알림 글로 '글자 130%'
+const SZ_STEPS = [80, 90, 100, 115, 130, 150, 175, 200];
+const szNow = () => { let z = +store.get('sfz', 0); if (!z) { const f = +store.get('sitefs', 0) || 0; z = f === 2 ? 130 : f === 1 ? 115 : 100; } return SZ_STEPS.includes(z) ? z : 100; };
+function szApply(z) {
+  document.documentElement.style.setProperty('--sz', z / 100);
+  $$('.s-zoom [data-sz]').forEach(b => { const d = +b.dataset.sz; b.setAttribute('aria-disabled', d < 0 ? z <= SZ_STEPS[0] : z >= SZ_STEPS[SZ_STEPS.length - 1]); /* disabled 는 Tab 에서 빠지므로 aria-disabled */ const sp = b.querySelector('.s-zp'); if (sp) sp.textContent = ' (지금 ' + z + '%)';  /* 이름은 보이는 글 '작게'를 품게 aria-label 대신 숨은 글로 */ });
+}
+if (SIMPLE_UI) {
+  document.addEventListener('click', e => {
+    const b = e.target.closest('.s-zoom [data-sz]'); if (!b) return;
+    const z = szNow(), i = SZ_STEPS.indexOf(z), n = SZ_STEPS[Math.max(0, Math.min(SZ_STEPS.length - 1, i + +b.dataset.sz))];
+    if (n === z) { toast(n >= 200 ? '가장 큰 글자입니다 (200%)' : '가장 작은 글자입니다 (80%)'); return; }
+    store.set('sfz', n); szApply(n); toast('글자 ' + n + '%');
+  });
+}
 const sBarH = () => { const b = $('.s-bar'); const h = b ? Math.ceil(b.getBoundingClientRect().bottom) : 0; document.documentElement.style.setProperty('--sbar', h + 'px'); return h; };
 function sGoMark(m) {
   SR.pm = m.id; sBarH(); m.scrollIntoView({ block: 'start' });  // CSS scroll-margin-top 이 파란 줄 높이만큼 띄움
@@ -3634,6 +3650,7 @@ function sGoPage(v) {
 }
 // 단순 화면 한 장을 열 때마다 (처음 열 때·sGo 로 본문만 바꿀 때)
 function sPageInit() {
+  szApply(szNow());
   const back = $('#sBack'); if (back) back.onclick = () => { if (history.length > 1 && (document.referrer.startsWith(location.origin) || STALK.playing())) history.back(); else sGo(($('#sUp') || {}).href || '/simple/'); };
   const pg = document.body.dataset.page;
   STALK.pageList = null;
