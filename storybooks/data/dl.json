@@ -451,10 +451,10 @@
 },
 "Jataka": {
 "n": 422,
-"pdf": 496421157,
-"pdfs": 50565572,
+"pdf": 496431754,
+"pdfs": 50567728,
 "stories": 32,
-"zip": 496011396
+"zip": 496021993
 },
 "Jataka/001-The-Waterless-Desert": {
 "n": 15,
@@ -468,8 +468,8 @@
 },
 "Jataka/003-The-Golden-Bowl": {
 "n": 14,
-"pdf": 15786238,
-"zip": 15521250
+"pdf": 15787833,
+"zip": 15522845
 },
 "Jataka/004-The-Dead-Mouse": {
 "n": 15,
@@ -483,8 +483,8 @@
 },
 "Jataka/006-The-Water-Rakkhasa": {
 "n": 15,
-"pdf": 19117089,
-"zip": 18850670
+"pdf": 19123574,
+"zip": 18857155
 },
 "Jataka/009-The-Kings-Grey-Hair": {
 "n": 14,
@@ -508,8 +508,8 @@
 },
 "Jataka/014-The-Wind-Deer": {
 "n": 9,
-"pdf": 9634404,
-"zip": 9372985
+"pdf": 9635403,
+"zip": 9373984
 },
 "Jataka/018-The-Sacrificial-Goat": {
 "n": 14,
@@ -593,8 +593,8 @@
 },
 "Jataka/044-The-Son-and-the-Mosquito": {
 "n": 13,
-"pdf": 15060197,
-"zip": 14790779
+"pdf": 15061715,
+"zip": 14792297
 },
 "Jataka/046-The-Folly-of-the-Monkeys": {
 "n": 13,
@@ -617,11 +617,11 @@
 "zip": 18828023
 },
 "Jatakamala": {
-"n": 60,
-"pdf": 52615001,
-"pdfs": 5326880,
-"stories": 4,
-"zip": 52336863
+"n": 73,
+"pdf": 65424806,
+"pdfs": 6619914,
+"stories": 5,
+"zip": 65142676
 },
 "Jatakamala/01-Tigress": {
 "n": 15,
@@ -642,6 +642,11 @@
 "n": 15,
 "pdf": 12415062,
 "zip": 12129038
+},
+"Jatakamala/05-Avisahya": {
+"n": 13,
+"pdf": 13090882,
+"zip": 12805245
 },
 "Light-of-Asia": {
 "n": 118,
