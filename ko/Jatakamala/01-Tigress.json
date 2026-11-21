@@ -1,0 +1,657 @@
+[
+ {
+  "img": "images/01-Tigress-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     82,
+     588,
+     134
+    ],
+    "ko": "어미 호랑이 이야기",
+    "cover": [
+     248,
+     244,
+     233
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     214,
+     134,
+     588,
+     242
+    ],
+    "ko": "지난 여러 생에서도 세존께서는 모든 중생에게 바라는 것 없는 크나큰 사랑을 보이셨습니다. 이것은 연민이 산을 뒤흔들 만큼 컸던 위대한 마음의 분(Mahātman)의 이야기로, 보시(dāna) 바라밀을 보여 줍니다.",
+    "cover": [
+     250,
+     243,
+     231
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tigress-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     112,
+     268,
+     192
+    ],
+    "ko": "열여덟 가지\n학문의 스승",
+    "cover": [
+     247,
+     244,
+     235
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     34,
+     192,
+     268,
+     332
+    ],
+    "ko": "이름난 바라문 집안에 태어나 열여덟 가지 학문과 모든 기예를 익혔습니다. 바라문들에게는 성전처럼, 캇띠야들에게는 왕처럼 존경받았습니다. 그러나 재산과 명성 속에서도 그의 마음은 법으로 맑았습니다.",
+    "cover": [
+     247,
+     244,
+     235
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tigress-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     514,
+     112,
+     778,
+     196
+    ],
+    "ko": "세상의 병을\n벗어 버리다",
+    "cover": [
+     233,
+     234,
+     220
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     514,
+     196,
+     778,
+     318
+    ],
+    "ko": "세속의 즐거움에 따르는 허물을 보고, 그는 집안 살림을 병처럼 떨쳐 버렸습니다. 세상의 그릇된 일보다 지혜로운 이의 고요함을 좋아하여 산 위 고원으로 물러났습니다.",
+    "cover": [
+     241,
+     239,
+     227
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tigress-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     14,
+     312,
+     350,
+     350
+    ],
+    "ko": "수행자의 평화",
+    "cover": [
+     233,
+     224,
+     205
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     14,
+     350,
+     350,
+     432
+    ],
+    "ko": "자애 가득한 그의 고요함은 사나운 짐승들의 마음에까지 스며들었습니다. 그의 감화로 짐승들은 서로 해치지 않고 수행자처럼 살았습니다. 그는 모르는 이에게도 벗이 되었습니다.",
+    "cover": [
+     235,
+     227,
+     207
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tigress-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     52,
+     362,
+     94
+    ],
+    "ko": "길을 가르치는 스승",
+    "cover": [
+     52,
+     44,
+     40
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     44,
+     94,
+     362,
+     188
+    ],
+    "ko": "제자들은 해탈을 몸으로 보여 주는 분께 모이듯 그에게 모여들었습니다. 그는 청정한 삶과 자제, 자애(mettā)에 마음을 모으는 법을 가르쳤습니다. 행복으로 가는 큰길을 열고 악의 문을 닫았습니다.",
+    "cover": [
+     52,
+     44,
+     40
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tigress-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     328,
+     30,
+     770,
+     104
+    ],
+    "ko": "굶주린 어미",
+    "cover": [
+     247,
+     248,
+     243
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     328,
+     104,
+     770,
+     300
+    ],
+    "ko": "위대한 마음의 분은 제자 아지따와 함께 동굴들을 거닐다가 어린 암호랑이를 보았습니다. 새끼를 낳느라 지쳐 거의 움직이지 못했습니다. 눈은 움푹 꺼지고 배는 홀쭉했으며 굶주림은 극에 달해 있었습니다.",
+    "cover": [
+     239,
+     238,
+     233
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tigress-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     402,
+     250,
+     768,
+     292
+    ],
+    "ko": "사랑의 법을 어기다",
+    "cover": [
+     229,
+     228,
+     220
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     402,
+     292,
+     768,
+     414
+    ],
+    "ko": "굶주림 때문에 어미는 제 새끼를 먹이로 보았습니다. 새끼들이 젖을 찾아 겁 없이 다가왔지만, 어미는 낯선 것을 보듯 으르렁거렸습니다. 사나운 제 몸 사랑이 어미로 하여금 제 새끼로 끼니를 삼으려 하게 했습니다.",
+    "cover": [
+     227,
+     226,
+     215
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tigress-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     40,
+     412,
+     114
+    ],
+    "ko": "수미산처럼 흔들리다",
+    "cover": [
+     248,
+     249,
+     243
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     24,
+     114,
+     412,
+     416
+    ],
+    "ko": "늘 침착하던 보살이었지만, 짐승의 괴로움 앞에서 지진에 흔들리는 수미산처럼 흔들렸습니다.\n\n“아! 윤회(saṃsāra)의 덧없음을 보라! 굶주림이 어미로 하여금 법을 어기게 하는구나. 누가 ‘제 몸 사랑’이라는 원수를 기르려 하겠는가?”",
+    "cover": [
+     238,
+     238,
+     232
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tigress-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     40,
+     352,
+     114
+    ],
+    "ko": "핑계",
+    "cover": [
+     248,
+     249,
+     243
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     24,
+     114,
+     352,
+     418
+    ],
+    "ko": "“어서 가거라.” 그는 아지따에게 일렀습니다. “어미의 굶주림을 달랠 방도를 찾아보아라. 어미가 새끼와 제 몸을 해치지 않도록. 나도 이 성급한 일을 막도록 애써 보겠다.”\n\n이는 제자를 멀리 보내려는 핑계였습니다.",
+    "cover": [
+     236,
+     236,
+     226
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tigress-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     222,
+     102,
+     578,
+     152
+    ],
+    "ko": "희생의 이치",
+    "cover": [
+     211,
+     214,
+     209
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     222,
+     152,
+     578,
+     296
+    ],
+    "ko": "“내 몸이 여기 있는데 왜 남에게서 고기를 찾겠는가? 이 몸은 연약하고 알맹이 없으며 은혜도 모른다. 남의 슬픔을 외면할 까닭은 둘뿐이다. 즐거움에 대한 집착, 아니면 도울 힘이 없음. 나는 둘 다 없다. 그런데 어찌 모른 체하겠는가?”",
+    "cover": [
+     230,
+     220,
+     200
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tigress-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     218,
+     414,
+     268
+    ],
+    "ko": "마라의 군대를 물리치다",
+    "cover": [
+     231,
+     212,
+     182
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     268,
+     414,
+     416
+    ],
+    "ko": "“이 하찮은 몸을 버려 암호랑이를 살리겠다. 이 일로 나약한 이에게 용기를 주고, 선한 이를 북돋우며, 마라의 큰 군대를 낙담시키리라. 보시하는 이들이 하늘로 가는 큰길을 닦으리라.”",
+    "cover": [
+     232,
+     216,
+     185
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tigress-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     396,
+     740,
+     448
+    ],
+    "ko": "몸이 떨어지는 소리에 암호랑이가 몸을 일으켰습니다. 숨이 끊어진 몸을 보고 그리로 달려들었고, 새끼들을 해치려던 것을 그만두었습니다.",
+    "cover": [
+     242,
+     233,
+     206
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tigress-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     2,
+     740,
+     70
+    ],
+    "ko": "빈손으로 돌아온 아지따는 그 뒤의 광경을 보았습니다. 그 행위의 놀라운 위대함에 감탄하는 마음이 슬픔을 밀어냈습니다.",
+    "cover": [
+     241,
+     230,
+     198
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     100,
+     396,
+     700,
+     448
+    ],
+    "ko": "그분은 덕을 붙들고서 영웅답고 두려움 없는 크나큰 사랑을 보이셨구나! 위대한 마음의 분은 얼마나 자비로우셨는가!",
+    "cover": [
+     239,
+     230,
+     202
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tigress-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     2,
+     700,
+     70
+    ],
+    "ko": "간답바와 약카, 뱀들과 천신의 우두머리들이 감탄했습니다.",
+    "cover": [
+     239,
+     230,
+     196
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     100,
+     396,
+     700,
+     448
+    ],
+    "ko": "그들은 그분의 유골이라는 보배가 놓인 땅을 꽃다발과 보석으로 가득 덮었습니다.",
+    "cover": [
+     236,
+     228,
+     196
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-Tigress-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     2,
+     720,
+     70
+    ],
+    "ko": "이처럼 세존께서는 지난 여러 생에서도 모든 중생에게 타고난, 바라는 것 없는 크나큰 사랑을 보이셨습니다.",
+    "cover": [
+     237,
+     227,
+     192
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     150,
+     396,
+     650,
+     448
+    ],
+    "ko": "그러므로 우리는 부처님, 세존께 더없는 믿음을 지녀야 합니다.",
+    "cover": [
+     234,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
