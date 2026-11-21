@@ -1,0 +1,677 @@
+[
+ {
+  "img": "images/02-Sibi-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     296,
+     680,
+     388
+    ],
+    "ko": "시위 왕 이야기\n더없는 보시를 보여 주는 자따까",
+    "cover": [
+     250,
+     248,
+     236
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     190,
+     402,
+     610,
+     442
+    ],
+    "ko": "『자따까말라(본생 이야기 꽃다발)』에 바탕을 둔 이야기",
+    "cover": [
+     250,
+     248,
+     237
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Sibi-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     528,
+     66,
+     774,
+     194
+    ],
+    "ko": "뛰어난 법을 설할 때는\n귀 기울여 들어야\n합니다.",
+    "cover": [
+     249,
+     246,
+     235
+    ],
+    "align": "center",
+    "em": 21,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     528,
+     194,
+     774,
+     382
+    ],
+    "ko": "먼 옛날 부처님께서는 시위 왕으로 태어나셨습니다. 그는 아득한 옛적부터 공덕을 쌓아 왔습니다. 백성을 제 자식처럼 다스리며 위엄에 겸손과 학식을 함께 갖추었습니다.",
+    "cover": [
+     249,
+     247,
+     237
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Sibi-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     28,
+     444,
+     66
+    ],
+    "ko": "보시하는 왕",
+    "cover": [
+     247,
+     244,
+     235
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     24,
+     66,
+     444,
+     154
+    ],
+    "ko": "시위 왕은 보시를 기뻐했습니다. 도성 곳곳에 보시당을 지어 구름이 비를 뿌리듯 베풀었습니다. 청하는 이에게는 누구에게나 음식과 마실 것, 은과 금을 주었습니다. 그 보시의 명성이 널리 퍼지자 걸식하는 이들이 큰 호수로 몰려드는 들코끼리처럼 그 나라로 몰려들었습니다.",
+    "cover": [
+     247,
+     244,
+     235
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Sibi-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     98,
+     350,
+     138
+    ],
+    "ko": "더 높은 결심",
+    "cover": [
+     249,
+     246,
+     234
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     138,
+     350,
+     372
+    ],
+    "ko": "그런데 왕은 무언가 모자라다고 느꼈습니다. “가난한 이들은 재물만 청하는구나. 제 몸을 내주는 이야말로 복되도다!”\n\n그는 누가 청한다면 제 살이라도 내주리라 마음먹었습니다. 이 높은 생각이 얼마나 강했던지 땅이 흔들리고 산들의 왕 수미산이 출렁여 하늘 세계에 알려졌습니다.",
+    "cover": [
+     248,
+     246,
+     234
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Sibi-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     470,
+     138,
+     784,
+     178
+    ],
+    "ko": "신의 시험",
+    "cover": [
+     248,
+     246,
+     233
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     470,
+     178,
+     784,
+     372
+    ],
+    "ko": "천신들의 왕 삭까가 왕의 결심을 알아차렸습니다. “정말 그만한 굳은 마음이 있을까? 시험해 보리라.”\n\n삭까는 늙고 눈먼 바라문으로 모습을 바꾸어, 왕이 보물에 둘러싸여 앉아 있는 궁정으로 들어갔습니다.",
+    "cover": [
+     247,
+     245,
+     231
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Sibi-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     310,
+     18,
+     490,
+     60
+    ],
+    "ko": "간청",
+    "cover": [
+     248,
+     246,
+     232
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     120,
+     356,
+     690,
+     450
+    ],
+    "ko": "“먼 데서 왔습니다. 눈 하나를 빌러 왔습니다.” 눈먼 바라문이 말했습니다. “연꽃 눈의 대왕이시여, 세상을 다스리는 데는 눈 하나로 넉넉합니다.” 왕은 기뻐 가슴이 뛰었습니다. 바라던 기회를 만난 것입니다. “누가 내게 이것을 청하라 하던가?” 왕이 부드럽게 물었습니다.",
+    "cover": [
+     246,
+     244,
+     228
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Sibi-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     458,
+     138,
+     786,
+     176
+    ],
+    "ko": "약속",
+    "cover": [
+     245,
+     244,
+     229
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     458,
+     176,
+     786,
+     372
+    ],
+    "ko": "“삭까께서 시키셨습니다.” 바라문이 대답했습니다. 신의 이름을 듣자 왕이 선언했습니다. “바라문이여, 그대의 소원을 들어주리라. 그대는 눈 하나를 바라지만 나는 둘 다 주겠다! 그대 얼굴을 연꽃 같은 두 눈으로 꾸며 주리니, 보는 이마다 놀라게 하며 길을 가라.”",
+    "cover": [
+     244,
+     242,
+     226
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Sibi-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     326,
+     706,
+     360
+    ],
+    "ko": "반대",
+    "cover": [
+     243,
+     241,
+     220
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     96,
+     360,
+     706,
+     444
+    ],
+    "ko": "대신들은 질겁했습니다. “대왕이시여, 눈을 내주지 마십시오! 차라리 재물과 보석, 코끼리를 주십시오. 대왕께서는 세상의 눈이십니다. 저희를 어둠 속에 두지 마십시오.” “가난한 자에게 눈이 무슨 소용입니까?” “이런 무모한 일을 하지 마십시오!”",
+    "cover": [
+     244,
+     242,
+     222
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Sibi-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     468,
+     138,
+     792,
+     176
+    ],
+    "ko": "왕의 대답",
+    "cover": [
+     245,
+     244,
+     227
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     468,
+     176,
+     792,
+     348
+    ],
+    "ko": "“약속하고서 주지 않는 자는 탐욕에 묶인 자요.” 왕이 대답했습니다. “나는 세상의 영광도, 천상도, 권세도 바라지 않소. 세상을 구하는 이가 되려는 뜻으로 눈을 주는 것이오.” 왕은 그들이 이 놀라운 보시를 가로막지 못하게 했습니다.",
+    "cover": [
+     244,
+     242,
+     223
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Sibi-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     328,
+     734,
+     360
+    ],
+    "ko": "희생",
+    "cover": [
+     241,
+     238,
+     216
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     66,
+     360,
+     734,
+     448
+    ],
+    "ko": "왕은 제 눈을 빼게 하여 더없이 기쁜 마음으로 걸인에게 건넸습니다. 삭까의 신통으로 바라문은 곧바로 앞을 보게 되었습니다. 눈먼 왕은 연꽃이 없는 연못 같았지만, 그 얼굴에는 우는 백성들이 이해하지 못할 만족이 서려 있었습니다.",
+    "cover": [
+     241,
+     239,
+     216
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Sibi-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     74,
+     82,
+     336,
+     116
+    ],
+    "ko": "홀로 있음",
+    "cover": [
+     241,
+     242,
+     222
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     74,
+     116,
+     336,
+     372
+    ],
+    "ko": "왕은 동산으로 물러나 명상했습니다. 그때 삭까가 하늘의 빛을 뿜으며 신의 모습으로 나타났습니다.\n\n“나는 삭까다. 거룩한 왕이여, 소원을 하나 고르라.”\n\n왕이 대답했습니다. “눈이 멀고 나니 죽음이 반갑습니다. 이제 제가 돕는 이들 얼굴의 기쁨을 볼 수 없습니다.”",
+    "cover": [
+     242,
+     238,
+     214
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Sibi-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     394,
+     58,
+     790,
+     110
+    ],
+    "ko": "진실의 서원",
+    "cover": [
+     244,
+     243,
+     223
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     394,
+     110,
+     790,
+     410
+    ],
+    "ko": "삭까는 진실을 말하라고 권했습니다. 왕은 진실의 서원(saccakiriyā)을 했습니다.\n\n“구걸하는 이들의 청하는 말이 지금이나 예전이나 축복의 소리처럼 내 귀에 즐거웠던 것이 진실이라면, 그 진실로 눈 하나가 생겨나기를!”",
+    "cover": [
+     242,
+     239,
+     218
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Sibi-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     128,
+     316,
+     684,
+     356
+    ],
+    "ko": "눈을 되찾다",
+    "cover": [
+     240,
+     235,
+     205
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     128,
+     356,
+     684,
+     442
+    ],
+    "ko": "곧바로 첫 번째 눈이 생겼습니다. 왕이 다시 말했습니다. “두 눈을 줄 때 오직 기쁨만 느꼈던 것이 진실이라면, 다른 눈도 얻기를!” 두 번째 눈이 생겼습니다. 땅이 흔들리고 하늘에서 북이 울렸으며, 해는 가을날처럼 밝게 빛났습니다.",
+    "cover": [
+     241,
+     237,
+     213
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Sibi-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     74,
+     46,
+     424,
+     86
+    ],
+    "ko": "하늘의 눈",
+    "cover": [
+     240,
+     238,
+     217
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     74,
+     86,
+     424,
+     214
+    ],
+    "ko": "“그대의 참마음은 내게 숨겨지지 않았다.” 삭까가 말했습니다. “내가 이 눈을 돌려주었노라. 이제 그대는 산 너머 백 요자나까지 보는 하늘의 눈을 지녔다.”\n\n왕은 놀라움에 눈을 크게 뜬 채, 기쁨의 축제 속에 도성으로 돌아왔습니다.",
+    "cover": [
+     241,
+     236,
+     211
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/02-Sibi-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     438,
+     58,
+     772,
+     130
+    ],
+    "ko": "가르침",
+    "cover": [
+     251,
+     248,
+     241
+    ],
+    "align": "center",
+    "em": 36,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     438,
+     130,
+     772,
+     392
+    ],
+    "ko": "왕은 백성에게 법을 설했습니다.\n\n“누가 베풀기를 망설이겠는가? 사람의 눈을 내주고서 나는 하늘의 눈을 얻었다.”\n\n“재물은 베풀기 전에는 알맹이가 없다. 베풂으로 재물이 열매 맺게 하라. 이것이 행복으로 가는 길이다.”",
+    "cover": [
+     251,
+     248,
+     241
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
