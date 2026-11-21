@@ -30,7 +30,16 @@
   ],
   "content_languages": [],
   "original_source": "Buddhist Legends Dhammapada Commentary by Eugene Watson Burlingame, Originally copyright, 1921 Harvard University Press (Cambridge, Mass.) Now Public Domain",
-  "parallel_editions": [],
+  "parallel_editions": [
+    {
+      "lang": "en",
+      "title": "The Dhamma Verses Commentary — A Revised Translation of the Dhammapada Aṭṭhakathā together with a New Translation of All the Verse Texts",
+      "by": "E W Burlingame (translation), Ānandajoti Bhikkhu (revised translation)",
+      "edition": "Ancient Buddhist Texts, August 2024 (PDF 1,156쪽, PDF 쪽 = 인쇄 쪽 + 8) — Burlingame 의 Buddhist Legends(Harvard Oriental Series, 1921)를 고쳐 옮긴 것, Public Domain",
+      "url": "https://ancient-buddhist-texts.net/English-Texts/Dhamma-Verses-Comm/",
+      "note": "이 권에 해당하는 1~4품(Yamakavagga ~ Pupphavagga), 원서 3~342쪽. 원서 글은 PDF 글자 그대로 — 다만 PDF 글꼴 때문에 따옴표가 ‖(’)·―(‘)로 찍힌 곳만 바른 따옴표로 바꿈. 이야기마다 편자가 붙인 머리 정보(Dhp 번호·Burlingame 제목·Compare·줄거리·Cast·Keywords)는 한국어판에 없어 넣지 않음, 빠알리 게송은 원서 칸에만(짝짓지 않음)."
+    }
+  ],
   "originals": [
     {
       "lang": "영어",

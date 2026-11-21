@@ -2730,7 +2730,7 @@ function parApply() {
     const last = els[els.length - 1];
     if (R.parMode === 'para') {
       const box = document.createElement('div'); box.className = 'par-or'; box.lang = D.lang; box.dataset.g = gi;
-      box.innerHTML = g.or.map(i => { const o = O[i]; return `<p class="${o.k === 'h' ? 'par-h' : o.k === 'gl' ? 'par-gl' : o.k === 'cite' ? 'par-cite' : ''}">${oHtml(o.t)}</p>`; }).join('') + (O[g.or[0]].pg !== lastPg && !g.note ? `<span class="par-pg" aria-hidden="true">${esc(lang)} 원서 ${esc(O[g.or[0]].pg ? O[g.or[0]].pg + '쪽' : '')}${O[g.or[0]].pdf && O[g.or[0]].pdf !== O[g.or[0]].pg ? ` (PDF ${esc(O[g.or[0]].pdf)}쪽)` : ''}</span>` : '') + (g.note ? `<p class="par-note" lang="ko">※ ${esc(g.note)}</p>` : '');   // 원서와 순서가 다른 짝 메모 (운영자 요청, 2026-11-17 — DL-0005)
+      box.innerHTML = g.or.map(i => { const o = O[i]; return `<p class="${o.k === 'h' ? 'par-h' : o.k === 'gl' ? 'par-gl' : o.k === 'cite' ? 'par-cite' : o.k === 'pv' ? 'par-pv' : ''}">${oHtml(o.t)}</p>`; }).join('') + (O[g.or[0]].pg !== lastPg && !g.note ? `<span class="par-pg" aria-hidden="true">${esc(lang)} 원서 ${esc(O[g.or[0]].pg ? O[g.or[0]].pg + '쪽' : '')}${O[g.or[0]].pdf && O[g.or[0]].pdf !== O[g.or[0]].pg ? ` (PDF ${esc(O[g.or[0]].pdf)}쪽)` : ''}</span>` : '') + (g.note ? `<p class="par-note" lang="ko">※ ${esc(g.note)}</p>` : '');   // 원서와 순서가 다른 짝 메모 (운영자 요청, 2026-11-17 — DL-0005)
       lastPg = O[g.or[g.or.length - 1]].pg;
       const vis = els.filter(e => e.getClientRects().length);   // 장 제목과 같아 숨긴 글(ch-dup)은 빼고
       if (wide && vis.length) {   // 넓은 화면: 같은 줄 오른쪽 칸 (한국어 문단 수만큼 줄을 차지)

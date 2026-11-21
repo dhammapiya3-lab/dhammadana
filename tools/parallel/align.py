@@ -36,6 +36,7 @@ ap.add_argument('--ko-skip', action='append', default=[], help="원서에 없는
 ap.add_argument('--ko-none', action='append', default=[], help="이 정규식에 맞는 한국어 문단은 짝짓지 않음 — 예 DL-0015 '^>> 《' (한국어판이 인용 끝에 단 경전 출처 줄)")
 ap.add_argument('--kind-base', action='append', default=[], help="원서 문단 종류마다 짝짓기 점수에서 더 뺄 값: '종류=값' — 예 DL-0015 'note=0.15' (편자의 풀이 글은 한국어판이 일부만 옮겨 덜 끌어당기게)")
 ap.add_argument('--toc', action='store_true', help='차례도 줄마다 짝지음 — 한국어 차례(%% 문단)의 제목 줄 ↔ 원서 차례(k toc) 항목, 쪽 번호는 빼고 제목끼리 (운영자 요청, 2026-11-17)')
+ap.add_argument('--fn-cost', type=float, default=0.2, help='각주 짝짓기에서 짝마다 뺄 값 — 한국어판이 원서와 다른 각주를 단 책(DL-0023~25: 한국어는 DPPN 풀이, 원서는 편자 주)은 크게 해서 뜻이 아주 가까운 것만 짝');
 ap.add_argument('--title', default=''); ap.add_argument('--by', default=''); ap.add_argument('--source', default='')
 A = ap.parse_args()
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -140,10 +141,10 @@ def __sents(t, lang):
         # 로마자 이름 첫 글자('호너I. B. Horner')에서는 나누지 않음 — 한국어 문장 속 로마자 머리글자 (DL-0019)
         if lang == 'ko' and m.group(0) != '\n' and re.search(r'(?:^|[^A-Za-z])[A-Z]\.$', t[a:m.start() + 1].strip()) and re.match(r'\s*[A-Z]', t[m.end() - 1:m.end() + 2]): continue
         if (lang == 'en' or re.fullmatch(r'[’”\'"\s.…]+', seg)) and seg and not re.search(r'\w', seg) and out: out[-1] = (out[-1][0], a + len(t[a:b].rstrip())); a = m.end(); continue   # 점만 있는 조각은 앞 문장에
-        if lang == 'en' and re.fullmatch(r'(\[\d+\]\s*)+', seg): continue   # PTS 쪽 표시 '[169]' 만 있는 조각은 다음 문장과 함께 (DL-0022)
+        if lang == 'en' and re.fullmatch(r'((\[\d+\]|\[\d+\.\d+\]|\{\d+\.\d+\})\s*)+', seg): continue   # PTS 쪽 표시 '[169]'(DL-0022)·'{1.283}'·'[28.325]'(DL-0023~25 — 원서 판·번역 쪽) 만 있는 조각은 다음 문장과 함께
         if seg: out.append((a + len(t[a:b]) - len(t[a:b].lstrip()), a + len(t[a:b].rstrip())))
         a = m.end()
-    if out and (lang == 'en' and re.fullmatch(r'(\[\d+\]\s*)+', t[a:].strip()) or re.fullmatch(r'[’”\'"\s.…]+', t[a:].strip())): out[-1] = (out[-1][0], len(t.rstrip())); return out
+    if out and (lang == 'en' and re.fullmatch(r'((\[\d+\]|\[\d+\.\d+\]|\{\d+\.\d+\})\s*)+', t[a:].strip()) or re.fullmatch(r'[’”\'"\s.…]+', t[a:].strip())): out[-1] = (out[-1][0], len(t.rstrip())); return out
     if t[a:].strip(): out.append((a + len(t[a:]) - len(t[a:].lstrip()), len(t.rstrip())))
     return out
 
@@ -177,7 +178,7 @@ _onopin = {_oi(k) for x in A.pin if x.startswith('=') for k in x[1:].split('+') 
 for i in ORDER:
     p = ORIG[i]
     if i in _onopin: continue
-    if p['k'] in ('toc', 'gl', 'pq', 'fn', 'sep', 'cite'): continue      # 원서 차례 쪽·용어 풀이·인용 상자(본문을 크게 다시 실은 것)·여백 출처(cite)는 문장 짝짓기에서 뺌 (한국어 차례도 %% 라 뺌)
+    if p['k'] in ('toc', 'gl', 'pq', 'fn', 'sep', 'cite', 'pv', 'hv'): continue      # pv 빠알리 게송·hv 이야기 첫머리 게송(DL-0023) — 원서 차례 쪽·용어 풀이·인용 상자(본문을 크게 다시 실은 것)·여백 출처(cite)는 문장 짝짓기에서 뺌 (한국어 차례도 %% 라 뺌)
     for a, b in sents(p['t'], 'en'):
         if not plain(p['t'][a:b]).strip(): continue
         if any(re.match(r, plain(p['t'][a:b]).strip()) for r in A.en_drop): EDROP.append((i, a, b)); continue
@@ -219,10 +220,10 @@ for i in range(1, N + 1):
     row = D[i]; prev = D[i - 1]; s = S1[i - 1]
     diag = prev[:-1] + s; up = prev[1:] - SK
     best = np.maximum(diag, up)
-    # 왼쪽(원서 건너뛰기)은 차례로
-    for j in range(1, M + 1):
-        v = best[j - 1]; l = row[j - 1] - SK
-        row[j] = v if v > l else l
+    # 왼쪽(원서 건너뛰기): row[j] = max(best[j-1], row[j-1]-SK) — 누적 최댓값으로 한 번에 (DL-0023: 문장이 많아 줄마다 돌면 수십 분)
+    jj = np.arange(M + 1, dtype=float)
+    cand = np.empty(M + 1); cand[0] = row[0]; cand[1:] = best
+    row[:] = np.maximum.accumulate(cand + SK * jj) - SK * jj
 path = []; i, j = N, M
 while i > 0 and j > 0:
     if abs(D[i, j] - (D[i - 1, j - 1] + S1[i - 1, j - 1])) < 1e-9: path.append((i - 1, j - 1)); i -= 1; j -= 1
@@ -247,8 +248,24 @@ SKIP = -0.15; MERGE = 0.10
 INF = -1e18
 V = {}; B = {}
 V[(0, 0)] = 0.0
-def lo(i): return max(0, center[min(i, N - 1)] - W) if N else 0
-def hi(i): return min(M, center[min(i, N - 1)] + W) if N else M
+# 띠: 줄마다 대강의 길 둘레 ±W — 앞뒤 줄의 길까지 넣어, 길이 한 줄에서 원서를 크게 건너뛰는 곳(한국어판이 줄여 쓴 이야기 — DL-0025 26.29 레와따)도 띠 안에 들게
+# --seg 를 쓰면 마디마다 원서 문장 범위 전체도 띠에 넣음(마디가 600 문장 아래일 때) — 한국어판이 줄여 쓴 이야기에서 맞는 원서 문장이 대강의 길에서 멀리 있어도 찾게 (DL-0025 26.39 앙굴리말라)
+SEGR = {}
+if _SEG:
+    for j, g in enumerate(ESg): SEGR.setdefault(g, [j, j + 1]); SEGR[g][1] = j + 1
+    SEGR = {g: r for g, r in SEGR.items() if r[1] - r[0] <= 600}
+def _sr(i):
+    gs = {KSg[x] for x in (i - 1, i) if 0 <= x < N}
+    rs = [SEGR[g] for g in gs if g in SEGR]
+    return (min(r[0] for r in rs), max(r[1] for r in rs)) if rs else None
+def lo(i):
+    if not N: return 0
+    v = min(center[max(0, min(i, N - 1) - 1)], center[min(i, N - 1)]) - W; r = _sr(i)
+    return max(0, min(v, r[0]) if r else v)
+def hi(i):
+    if not N: return M
+    v = max(center[min(i, N - 1)], center[min(i + 1, N - 1)]) + W; r = _sr(i)
+    return min(M, max(v, r[1]) if r else v)
 for i in range(0, N + 1):
     for j in range(lo(i), hi(i) + 1):
         if (i, j) == (0, 0): continue
@@ -335,9 +352,9 @@ for i, a, b in EDROP:   # --en-drop: 같은 원서 문단의 앞 문장 바로 �
 # 여백 출처(cite, DL-0015 'M. 26'): 바로 다음 원서 문단이 든 묶음 앞에 붙임 (문단 나란히 보기에서 출처가 보이게)
 _og = {o: g for g in out if not g.get('toc') for o in g['or']}
 for i, p in enumerate(ORIG):
-    if p['k'] != 'cite': continue
+    if p['k'] not in ('cite', 'pv', 'hv'): continue   # 빠알리 게송(pv)·첫머리 게송(hv)도 다음 묶음에 붙여 보임 (DL-0023)
     j = i + 1
-    while j < len(ORIG) and ORIG[j]['k'] == 'cite': j += 1
+    while j < len(ORIG) and ORIG[j]['k'] in ('cite', 'pv', 'hv', 'fn'): j += 1
     if j < len(ORIG) and j in _og and i not in _og[j]['or']: _og[j]['or'] = sorted(set(_og[j]['or']) | {i})
 for g in out:   # --move 로 옮긴 원서 문단과 짝지은 묶음: 순서가 다르다는 메모
     if g['or'] and not g.get('pin') and all(o in MOVED for o in g['or']):
@@ -396,7 +413,7 @@ if KF and EF:
         for j in range(m1 + 1):
             if i == 0 and j == 0: continue
             c = []
-            if i and j: c.append((G[i - 1, j - 1] + FS[i - 1, j - 1] - (0.6 if KF[i - 1][0] in YK else 0.2), 'd'))
+            if i and j: c.append((G[i - 1, j - 1] + FS[i - 1, j - 1] - (0.6 if KF[i - 1][0] in YK else A.fn_cost), 'd'))
             if i: c.append((G[i - 1, j], 'u'))
             if j: c.append((G[i, j - 1], 'l'))
             G[i, j], BK[(i, j)] = max(c)

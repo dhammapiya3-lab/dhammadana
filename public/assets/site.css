@@ -1489,3 +1489,5 @@ body.simple-ui{font-size:28px}
 .simple-ui #fnPop .fnpop-x{font-size:calc(24px * var(--sz,1));min-width:44px;min-height:44px}
 .simple-ui #fnPop .link-btn{font-size:calc(20px * var(--sz,1))}
 .simple-ui #fnPop .r-tbl,.simple-ui #fnPop .fnpop-oh{font-size:calc(19px * var(--sz,1) * var(--fnfs,1))}
+/* 원서 대조 — 빠알리 게송(DL-0023~25 『법구경 이야기』, 원서에 굵게 인쇄) */
+.par-or .par-pv{font-weight:700;font-style:italic}
