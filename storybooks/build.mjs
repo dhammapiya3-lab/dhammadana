@@ -147,8 +147,11 @@ for (const slug of Object.keys(CAT.books).filter(b => PUB.has(b))) {
   ${KO.notes?.[slug]?.length ? `<aside class="work note"><h2>일러두기</h2>${KO.notes[slug].map(t => `<p>${esc(t)}</p>`).join('')}</aside>` : ''}
   <div class="prose">${b.intro || B.own ? paras(b.intro) : `<p class="muted">책 소개를 우리말로 옮기는 중입니다. 아래는 영어 원문입니다.</p><p lang="en">${esc(b.introEn)}</p>`}</div>
   <div id="resume" data-slug="${esc(slug)}" hidden></div>
+  ${fs.existsSync(path.join(ROOT, 'data', 'making', `${slug}.html`)) ? `<p class="making-link"><a class="btn" href="/${slug}/making/">이 그림책을 만든 방법 · 프롬프트 공개 →</a></p>` : ''}
   ${DL[slug] ? `<aside class="dl"><h2>책 전체 내려받기</h2><p class="muted">한글판 이야기 ${DL[slug].stories}편, 그림 ${DL[slug].n}장. 맨 끝에 출처(CC BY-SA 4.0) 쪽이 있습니다.</p>
-  <p class="dl-row"><a class="btn" href="${dlUrl(`${slug}/_book.pdf`, `${b.title} (인쇄용).pdf`)}">PDF 인쇄용 <small>${mb(DL[slug].pdf)}</small></a><a class="btn" href="${dlUrl(`${slug}/_book_s.pdf`, `${b.title} (보기용).pdf`)}">PDF 보기용 <small>${mb(DL[slug].pdfs)} · 작은 그림</small></a><a class="btn" href="${dlUrl(`${slug}/_book.zip`, `${b.title} (그림 파일).zip`)}">그림 파일 ZIP <small>${mb(DL[slug].zip)}</small></a></p></aside>` : ''}
+  <p class="dl-row"><a class="btn" href="${dlUrl(`${slug}/_book.pdf`, `${b.title} (인쇄용).pdf`)}">PDF 인쇄용 <small>${mb(DL[slug].pdf)}</small></a><a class="btn" href="${dlUrl(`${slug}/_book_s.pdf`, `${b.title} (보기용).pdf`)}">PDF 보기용 <small>${mb(DL[slug].pdfs)} · 작은 그림</small></a><a class="btn" href="${dlUrl(`${slug}/_book.zip`, `${b.title} (그림 파일).zip`)}">그림 파일 ZIP <small>${mb(DL[slug].zip)}</small></a></p>${DL[`${slug}-en`] ? `
+  <p class="muted">영어판 (English edition) — 이야기 ${DL[`${slug}-en`].stories}편, 그림 ${DL[`${slug}-en`].n}장</p>
+  <p class="dl-row" lang="en"><a class="btn" href="${dlUrl(`${slug}/_book-en.pdf`, `${B.title} (print).pdf`)}">PDF for print <small>${mb(DL[`${slug}-en`].pdf)}</small></a><a class="btn" href="${dlUrl(`${slug}/_book_s-en.pdf`, `${B.title} (screen).pdf`)}">PDF for screen <small>${mb(DL[`${slug}-en`].pdfs)}</small></a><a class="btn" href="${dlUrl(`${slug}/_book-en.zip`, `${B.title} (images).zip`)}">Images ZIP <small>${mb(DL[`${slug}-en`].zip)}</small></a></p>` : ''}</aside>` : ''}
   <h2>차례</h2><ol class="toc">${toc}</ol>
   ${B.own ? '' : `<p class="orig"><a href="${S.orig_url}${slug}/index.htm">${U.en_link} ↗</a></p>`}</div>` }));
 
@@ -175,12 +178,20 @@ for (const slug of Object.keys(CAT.books).filter(b => PUB.has(b))) {
   <h1${lang === 'en' ? ' lang="en"' : ''}>${esc(ST(s))}</h1>
   ${langsw}
   ${viewer}
-  ${n && DL[key] ? `<p class="dl-row story-dl"><span class="muted">이 이야기 내려받기</span><a class="btn" href="${dlUrl(`${key}.pdf`, `${b.title} - ${ST(s)}.pdf`)}">PDF <small>${mb(DL[key].pdf)}</small></a><a class="btn" href="${dlUrl(`${key}.zip`, `${b.title} - ${ST(s)} (그림 파일).zip`)}">그림 파일 ZIP <small>${mb(DL[key].zip)}</small></a></p>` : ''}
+  ${n && DL[key] ? (lang === 'en' ? `<p class="dl-row story-dl" lang="en"><span class="muted">Download this story</span><a class="btn" href="${dlUrl(`${key}.pdf`, `${B.title} - ${ST(s)}.pdf`)}">PDF <small>${mb(DL[key].pdf)}</small></a><a class="btn" href="${dlUrl(`${key}.zip`, `${B.title} - ${ST(s)} (images).zip`)}">Images ZIP <small>${mb(DL[key].zip)}</small></a></p>`
+    : `<p class="dl-row story-dl"><span class="muted">이 이야기 내려받기</span><a class="btn" href="${dlUrl(`${key}.pdf`, `${b.title} - ${ST(s)}.pdf`)}">PDF <small>${mb(DL[key].pdf)}</small></a><a class="btn" href="${dlUrl(`${key}.zip`, `${b.title} - ${ST(s)} (그림 파일).zip`)}">그림 파일 ZIP <small>${mb(DL[key].zip)}</small></a></p>`) : ''}
   <div class="prose"${lang === 'en' ? ' lang="en"' : ''}>${k.intro ? paras(k.intro) : (s.intro ? `<p lang="en" class="muted">${esc(s.intro)}</p>` : '')}</div>
   <nav class="pn">${prev ? `<a href="${href(prev)}">← ${esc(ST(prev))}</a>` : '<span></span>'}${next ? `<a href="${href(next)}">${esc(ST(next))} →</a>` : '<span></span>'}</nav>
   ${B.own ? '' : `<p class="orig"><a href="${S.orig_url}${slug}/${s.file}">${U.en_link} ↗</a></p>`}</div>` }));
     }
   });
+}
+
+// 우리가 새로 그린 책: 만든 방법·프롬프트 공개 쪽 (data/making/<책>.html, 운영자 요청 2026-11-21)
+for (const slug of Object.keys(CAT.books).filter(b => PUB.has(b))) {
+  const f = path.join(ROOT, 'data', 'making', `${slug}.html`); if (!fs.existsSync(f)) continue;
+  const b = bookInfo(slug);
+  put(`${slug}/making/index.html`, layout({ title: `만든 방법 — ${b.title}`, page: 'making', desc: `${b.title}을 만든 지침과 프롬프트`, body: `<div class="wrap"><nav class="crumb"><a href="/">${U.home}</a> › <a href="/${slug}/">${esc(b.title)}</a></nav><article class="prose making">${fs.readFileSync(f, 'utf8')}</article></div>` }));
 }
 
 // 소개

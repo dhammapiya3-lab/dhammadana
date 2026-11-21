@@ -218,3 +218,9 @@ body.sb-text .sv, body.sb-text .sv-thumbs{display:none}
 .langsw b,.langsw a{display:inline-block;padding:3px 14px;border-radius:999px;border:1px solid var(--leaf);text-decoration:none}
 .langsw b{background:var(--leaf);color:#fff;font-weight:500}
 .langsw a{color:var(--leaf)}
+/* 만든 방법·프롬프트 공개 쪽 */
+.making-link{margin:1em 0}
+.making pre.prompt{white-space:pre-wrap;word-break:break-word;background:var(--paper-2);border-radius:8px;padding:12px 14px;font-size:13.5px;line-height:1.55;overflow-x:auto}
+.making table{border-collapse:collapse;width:100%;margin:.6em 0}.making td,.making th{border:1px solid var(--paper-2);padding:6px 8px;text-align:left;vertical-align:top}
+.making details{border-bottom:1px solid var(--paper-2);padding:6px 0}.making summary{cursor:pointer}
+.making .mk-cap{font-size:14px;margin:.3em 0}.making .mk-toc{font-size:14px;line-height:1.9}
