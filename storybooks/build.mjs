@@ -114,7 +114,7 @@ const card = b => `<a class="bcard" href="/${b.slug}/" data-q="${esc([b.title, b
 put('index.html', layout({ page: 'home', body: `<section class="hero"><div class="wrap">
   <h1>법을 담은 그림책</h1><p>${esc(S.intro)}</p>
   <div class="filter"><input id="q" type="search" placeholder="${U.filter}" aria-label="${U.filter}"><button id="qReset" type="button">${U.reset}</button></div>
-  ${EXAMPLES.length ? `<div class="qex">${EXAMPLES.map(({ g, ws, show }) => `<p class="qrow"><span class="qg">${esc(g)}</span>${ws.map(({ w, q }, i) => `<button type="button" data-q="${esc(q)}"${i >= show ? ' class="qmore" hidden' : ''}>${esc(w)}</button>`).join('')}${ws.length > show ? `<button type="button" class="qtog" data-n="${ws.length - show}">＋ ${ws.length - show}개 더 보기</button>` : ''}</p>`).join('')}</div>` : ''}
+  ${EXAMPLES.length ? `<div class="qex">${EXAMPLES.map(({ g, ws, show }) => `<p class="qrow"><span class="qg">${esc(g)}</span>${ws.map(({ w, q }, i) => `<button type="button" data-q="${esc(q)}" data-i="${i}"${i >= show ? ' class="qmore" hidden' : ''}>${esc(w)}</button>`).join('')}${ws.length > show ? `<button type="button" class="qtog">＋ 더 보기</button>` : ''}</p>`).join('')}</div>` : ''}
 </div></section>
 <div class="wrap"><section id="sres" hidden><h2 class="tier-h">이야기 <span id="sresN"></span></h2><ol class="sres"></ol></section></div>
 <div class="wrap">${(() => { const listed = new Set(KO.tiers.flatMap(t => t.sections.flatMap(x => x[1]))); const fresh = Object.keys(CAT.books).filter(b => !listed.has(b) && PUB.has(b));
