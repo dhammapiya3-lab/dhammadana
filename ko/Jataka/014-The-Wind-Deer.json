@@ -35,13 +35,17 @@
     "ko": "산자야가 이 날쌘 손님을 아뢰었습니다."
    },
    {
-    "seed": [
-     206,
-     106
-    ],
     "shape": "bubble",
     "en": "“Could you catch it?” asks the King.",
-    "ko": "“잡을 수 있겠느냐?” 왕이 물었습니다."
+    "ko": "“잡을 수 있겠느냐?” 왕이 물었습니다.",
+    "rect": [
+     205,
+     93,
+     335,
+     137
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "seed": [

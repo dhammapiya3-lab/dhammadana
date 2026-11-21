@@ -200,13 +200,23 @@
     "ko": "너무 기쁘고 교만해진 공작이 외쳤습니다."
    },
    {
+    "shape": "bubble",
+    "en": "“Until this day you~ you have never seen how active Iam!”",
+    "ko": "“오늘까지 너희는 내가 얼마나 날렵한지 본 적이 없을 것이다!”",
+    "rect": [
+     520,
+     256,
+     746,
+     388
+    ],
+    "whole": true,
+    "ellipse": true,
+    "cover": true,
+    "outline": true,
     "seed": [
      554,
      263
-    ],
-    "shape": "bubble",
-    "en": "“Until this day you~ you have never seen how active Iam!”",
-    "ko": "“오늘까지 너희는 내가 얼마나 날렵한지 본 적이 없을 것이다!”"
+    ]
    }
   ]
  },

@@ -3,13 +3,17 @@
   "img": "images/004-The-Dead-Mouse-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     221,
-     80
-    ],
     "shape": "box",
     "en": "The Mouse Merchant Jataka Tale of Compounding Value",
-    "ko": "쥐 장수 자따까: 불어나는 가치 이야기"
+    "ko": "쥐 장수 자따까: 불어나는 가치 이야기",
+    "rect": [
+     198,
+     40,
+     600,
+     120
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -81,13 +85,16 @@
     "ko": "그는 그 한 푼으로 당밀과 물을 샀습니다. 숲에서 돌아오는 지친 꽃 따는 사람들에게 마실 것을 주었고, 그들은 꽃으로 값을 치렀습니다."
    },
    {
-    "seed": [
-     604,
-     373
-    ],
     "shape": "box",
     "en": "Selling the flowers grew his capital to eight pennies.",
-    "ko": "꽃을 팔아 밑천이 8닢으로 늘었습니다."
+    "ko": "꽃을 팔아 밑천이 8닢으로 늘었습니다.",
+    "rect": [
+     530,
+     355,
+     756,
+     406
+    ],
+    "whole": true
    }
   ]
  },
@@ -384,13 +391,16 @@
   "img": "images/004-The-Dead-Mouse-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     42,
-     46
-    ],
     "ko": "그는 천막을 치고 문지기 셋을 차례로 세웠습니다. 짐을 사러 온 상인 백 명은 ‘큰 상인’이 이미 샀다는 말을 듣고 발길을 돌려야 했습니다.",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     20,
+     49,
+     774,
+     97
+    ],
+    "whole": true
    }
   ]
  },

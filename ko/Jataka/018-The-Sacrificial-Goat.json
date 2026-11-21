@@ -127,14 +127,24 @@
     "ko": "염소야, 너는 웃을 때도 울 때도 소리가 크구나. 왜 그러니?"
    },
    {
-    "seed": [
-     663,
-     281
-    ],
     "ko": "*흑흑*",
     "align": "center",
     "shape": "bubble",
-    "manual": true
+    "manual": true,
+    "rect": [
+     638,
+     260,
+     704,
+     322
+    ],
+    "whole": true,
+    "ellipse": true,
+    "cover": true,
+    "outline": true,
+    "seed": [
+     663,
+     281
+    ]
    }
   ]
  },
@@ -176,13 +186,23 @@
     "em": 14
    },
    {
+    "shape": "bubble",
+    "en": "Speak, peak, beast. Why did you laugh, and why did you weep?",
+    "ko": "말해 보아라, 짐승아. 왜 웃었고 왜 울었느냐?",
+    "rect": [
+     590,
+     180,
+     724,
+     246
+    ],
+    "whole": true,
+    "ellipse": true,
+    "cover": true,
+    "outline": true,
     "seed": [
      638,
      187
-    ],
-    "shape": "bubble",
-    "en": "Speak, peak, beast. Why did you laugh, and why did you weep?",
-    "ko": "말해 보아라, 짐승아. 왜 웃었고 왜 울었느냐?"
+    ]
    }
   ]
  },

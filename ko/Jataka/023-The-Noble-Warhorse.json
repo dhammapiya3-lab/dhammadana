@@ -57,14 +57,17 @@
     "manual": true
    },
    {
-    "seed": [
-     624,
-     330
-    ],
     "ko": "늘 타는 향유 등불",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     609,
+     333,
+     727,
+     371
+    ],
+    "whole": true
    }
   ]
  },
@@ -72,13 +75,17 @@
   "img": "images/023-The-Noble-Warhorse-03-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     266,
-     372
-    ],
     "shape": "bubble",
     "en": "Thei missive offered no compromi se: wo” “Yield up your kingdom to us, or give battle.”",
-    "ko": "그들의 편지는 타협을 허락하지 않았습니다.\n“나라를 내놓든지, 아니면 싸우자.”"
+    "ko": "그들의 편지는 타협을 허락하지 않았습니다.\n“나라를 내놓든지, 아니면 싸우자.”",
+    "rect": [
+     238,
+     371,
+     568,
+     437
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "rect": [

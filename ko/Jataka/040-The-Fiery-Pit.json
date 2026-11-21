@@ -167,13 +167,17 @@
     "em": 14
    },
    {
-    "seed": [
-     630,
-     81
-    ],
     "shape": "bubble",
     "en": "What am to do, my lord?",
-    "ko": "어떻게 할까요, 나리?"
+    "ko": "어떻게 할까요, 나리?",
+    "rect": [
+     628,
+     80,
+     712,
+     122
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "seed": [
