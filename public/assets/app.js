@@ -957,7 +957,7 @@ function reflowHtml() {
     const keep = k => !(p.n === c.from && k < (c.k0 || 0)) && !(p.n === c.to && c.kEnd != null && k >= c.kEnd);
     const heads = new Set(R.toc.filter(t => t.page === p.n || t.page === p.n - 1).map(t => headKey(t.title)));
     if (!ps.length) return `<span id="pm-${p.n}"></span>`;
-    return (spreadOn() ? `<div class="spr-pg ${p.n % 2 ? 'spr-r' : 'spr-l'}">` : '') + `<span class="pmark${p.label ? '' : ' nolabel'}" id="pm-${p.n}">${p.label ? esc(pageName(p)) : ''}</span>${ps.map((s, k) => !keep(k) ? '' : (blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : isChDup(s, p.n, c, k) ? ' class="ch-dup"' : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : /^\^\^ /.test(s) ? ' class="r-ctitle"' : /^:: /.test(s) ? ' class="r-center"' : /^>> /.test(s) ? ' class="r-right"' : /^\+\+ /.test(s) ? (/^\+\+ \d+\. /.test(s) ? ' class="r-ind r-num"' : ' class="r-ind"') : /^● /.test(s) ? ' class="r-bul"' : /^\|\| /.test(s) ? ' class="r-bul-c"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? ' class="sub-h" role="heading" aria-level="4"' : ''}>${fnMark(phMark(boldMark(markUl(s.replace(/^## |^\^\^ |^:: |^>> |^\|\| |^\+\+ /, '').replace(/\n(?:\^\^|::|>>) /g, '\n'), p.n)))).replace(/\n/g, '<br>').replace(/<br>● /g, /^● /.test(s) ? '<br><span class="bul-n">●</span> ' : '<br>● ')}</p>`) + pSiteHtml(s)).join('') || ''}` + (spreadOn() ? '</div>' : '');
+    return (spreadOn() ? `<div class="spr-pg ${p.n % 2 ? 'spr-r' : 'spr-l'}">` : '') + `<span class="pmark${p.label ? '' : ' nolabel'}" id="pm-${p.n}">${p.label ? esc(pageName(p)) : ''}</span>${ps.map((s, k) => !keep(k) ? '' : pSiteIn(s, (blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : isChDup(s, p.n, c, k) ? ' class="ch-dup"' : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : /^\^\^ /.test(s) ? ' class="r-ctitle"' : /^:: /.test(s) ? ' class="r-center"' : /^>> /.test(s) ? ' class="r-right"' : /^\+\+ /.test(s) ? (/^\+\+ \d+\. /.test(s) ? ' class="r-ind r-num"' : ' class="r-ind"') : /^● /.test(s) ? ' class="r-bul"' : /^\|\| /.test(s) ? ' class="r-bul-c"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? ' class="sub-h" role="heading" aria-level="4"' : ''}>${fnMark(phMark(boldMark(markUl(s.replace(/^## |^\^\^ |^:: |^>> |^\|\| |^\+\+ /, '').replace(/\n(?:\^\^|::|>>) /g, '\n'), p.n)))).replace(/\n/g, '<br>').replace(/<br>● /g, /^● /.test(s) ? '<br><span class="bul-n">●</span> ' : '<br>● ')}</p>`), p.n) + pSiteHtml(s)).join('') || ''}` + (spreadOn() ? '</div>' : '');
   }).join('');
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}" data-ci="${ci - 1}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}" data-ci="${ci + 1}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   // 장 제목과 같아 숨긴 본문 제목에 각주 번호가 붙어 있으면(예: '보시의 실천⁷') 위의 큰 장 제목에 그 번호를 붙여 보임 (2026-11-11)
@@ -2592,10 +2592,22 @@ try {
 } catch (e) {}
 
 // 문단에 붙인 사이트 안내 — 텍스트 JSON p_site (build.mjs pSiteOf 가 링크 주소를 만듦), 책 글과 헷갈리지 않게 점선 상자 'ⓘ 사이트 안내' (운영자 요청, 2026-11-22 — 『테라와다 불교사 (녹취 법문집)』)
+// 줄 바로 아래에 두는 사이트 안내(line: true) — 문단(<p>) 안 첫 줄 다음 <br> 뒤에 블록으로. 글자는 CSS ::before(data-t)로만 보여
+// 밑줄·책갈피·복사·듣기의 글자 자리(문단 글)를 건드리지 않음 (운영자 요청, 2026-11-22 '안내 위치를 이 문장 바로 아래로')
+function pSiteIn(s, h, n) {
+  const L = (R && R.pSite) || []; if (!L.length || !/<br>/.test(h)) return h;
+  const t = String(s).replace(/\*\*|°°|==/g, '');
+  for (const x of L) {
+    if (!x.line || !x.at || !t.startsWith(x.at)) continue;
+    const box = `<span class="fn-site p-site p-site-in" role="note" aria-label="사이트 안내"><span class="fn-site-tag" data-t="ⓘ 사이트 안내 —"></span><span data-t=" ${esc(x.text)}"></span>${x.href ? `<span class="p-site-link"><a href="${esc(R.simple && x.shref ? x.shref : x.href)}" data-t="→ ${esc(x.label)}" aria-label="${esc(x.label)}"></a></span>` : ''}</span>`;
+    h = h.replace('<br>', '<br>' + box);
+  }
+  return h;
+}
 function pSiteHtml(s) {
   const L = (R && R.pSite) || []; if (!L.length) return '';
   const t = String(s).replace(/\*\*|°°|==/g, '');
-  return L.filter(x => x.at && t.startsWith(x.at)).map(x => `<aside class="fn-site p-site" role="note" aria-label="사이트 안내"><p><span class="fn-site-tag">ⓘ 사이트 안내 —</span> ${esc(x.text)}</p>${x.href ? `<p class="p-site-link"><a href="${esc(R.simple && x.shref ? x.shref : x.href)}">→ ${esc(x.label)}</a></p>` : ''}</aside>`).join('');
+  return L.filter(x => x.at && !x.line && t.startsWith(x.at)).map(x => `<aside class="fn-site p-site" role="note" aria-label="사이트 안내"><p><span class="fn-site-tag">ⓘ 사이트 안내 —</span> ${esc(x.text)}</p>${x.href ? `<p class="p-site-link"><a href="${esc(R.simple && x.shref ? x.shref : x.href)}">→ ${esc(x.label)}</a></p>` : ''}</aside>`).join('');
 }
 // 다른 곳에서 문단으로 바로 온 링크(?s=문단, ?listen 없이): 그 문단을 보여 주고 잠시 노란 테두리, 커서도 거기에 (2026-11-22)
 function linkAt(sel) {

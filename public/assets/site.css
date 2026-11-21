@@ -1502,3 +1502,7 @@ body.simple-ui{font-size:28px}
 .reflow .p-site p{margin:.15em 0;text-align:start;text-indent:0}
 .p-site-link a{color:#7a4f00;font-weight:600}
 :root.mode-night .p-site-link a,:root.mode-contrast .p-site-link a{color:#ffd77a}
+/* 줄 바로 아래 사이트 안내 (p_site line, 2026-11-22) — 글자는 ::before 로만 (문단 글자 자리를 건드리지 않게) */
+.reflow .p-site-in{display:block;margin:.35em 0 .6em;font-size:.88em;line-height:1.6;text-align:start;text-indent:0;font-weight:400;user-select:none;-webkit-user-select:none}
+.p-site-in [data-t]::before{content:attr(data-t)}
+.p-site-in .p-site-link{display:block;margin-top:.15em}

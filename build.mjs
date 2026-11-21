@@ -287,14 +287,14 @@ function pSiteOf(id) {
   const t = TEXTS[id]; if (!t || !t.p_site) return null;
   const paraSplit = x => String(x || '').split(/\n\s*\n/).map(q => q.trim().split('\n').map(l => l.trim()).join('\n')).filter(Boolean);
   return t.p_site.map(x => {
-    const o = { at: String(x.at || ''), text: String(x.text || '') };
+    const o = { at: String(x.at || ''), text: String(x.text || ''), ...(x.line ? { line: true } : {}) };  // line: 문단 전체 뒤가 아니라 at 으로 시작하는 줄 바로 아래 (2026-11-22)
     const L = x.link;
     if (L && L.book && L.at) {
       const tt = TEXTS[L.book]; let hit = null;
       if (tt) tt.pages.forEach((pg, i) => paraSplit(pg.text).forEach((q, k) => { if (!hit && q.replace(/\*\*|°°|==/g, '').startsWith(L.at)) hit = { n: i + 1, k }; }));
       if (!hit) throw new Error(`p_site 링크 문단을 찾지 못함: ${id} → ${L.book} '${L.at}'`);
       o.label = String(L.label || '연결된 문단 보기'); o.book = L.book;
-      o.href = `/read/${L.book}/${hit.n}/?s=${hit.k}`; o.shref = `/simple/book/${L.book}/read/?p=${hit.n}&s=${hit.k}`;
+      o.href = `/read/${L.book}/${hit.n}?s=${hit.k}`;  // 끝에 / 를 붙이면 _redirects(/read/:id/:page)에 맞지 않아 404 (2026-11-22) o.shref = `/simple/book/${L.book}/read/?p=${hit.n}&s=${hit.k}`;
     }
     return o;
   });
@@ -342,8 +342,9 @@ function bookTxt(b) {
         l = l.replace(/^\[\^([^\]]+)\]:\s*/, '[각주 $1] ').replace(/^(##|\^\^|::|>>|\+\+|\|\|)\s*/, '').replace(/^\|\s+(?=[^|]*$)/, '');  // '>> | 숫자는 게송 번호임'처럼 구분 막대로 시작하는 한 줄 (2026-11-18 다시 검수)
         lines.push(txtInline(l));
       }
+      for (const ps of pSiteOf(b.id) || []) if (ps.line && raw0.startsWith(ps.at) && lines.length > 1) lines.splice(1, 0, `[사이트 안내] ${ps.text}${ps.href ? ` (${ps.label}: ${SITE_URL}${ps.href})` : ''}`);  // 첫 줄 바로 아래 (2026-11-22)
       out.push(lines.join('\n').trim(), '');
-      for (const ps of pSiteOf(b.id) || []) if (raw0.startsWith(ps.at)) out.push(`[사이트 안내] ${ps.text}${ps.href ? ` (${ps.label}: ${SITE_URL}${ps.href})` : ''}`, '');  // 문단에 붙인 사이트 안내 (2026-11-22)
+      for (const ps of pSiteOf(b.id) || []) if (raw0.startsWith(ps.at) && !ps.line) out.push(`[사이트 안내] ${ps.text}${ps.href ? ` (${ps.label}: ${SITE_URL}${ps.href})` : ''}`, '');  // 문단에 붙인 사이트 안내 (2026-11-22)
       for (const [fn, note] of Object.entries(t.fn_site || {})) if (raw0.includes(`[^${fn}]`) && !raw0.includes(`[^${fn}]:`)) out.push(`[각주 ${fn} — 사이트 안내] ${note}`, '');  // 인쇄본에 풀이가 없는 각주 (2026-11-19)
     }
   });
