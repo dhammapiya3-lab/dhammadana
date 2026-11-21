@@ -677,7 +677,7 @@ async function initReaderPage() {
   const pages = man.pages.map((p, i) => ({ n: i + 1, label: p.label || '', img: p.img ? base + p.img : '', big: p.big ? base + p.big : '', w: p.w, h: p.h, text: p.text || '' }));
   const last = store.get('pos-' + id, 1);
   R = {
-    id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, cover: root.dataset.cover || '', kakao: root.dataset.kakao || '', noCopy: root.dataset.nocopy === '1', spFile: root.dataset.sp === '1', pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, fnSite: man.fn_site || {}, spreadOk: (man.pages || []).some(p => p.text), spreadPali: !!man.spread, ly: man.ly || null,  // tdl: 표 그림 내려받기 (표 첫 칸 글 → 그림 주소, 운영자 요청 2026-11-12)
+    id, title: root.dataset.title, by: root.dataset.teacher || root.dataset.byline, cover: root.dataset.cover || '', kakao: root.dataset.kakao || '', noCopy: root.dataset.nocopy === '1', spFile: root.dataset.sp === '1', pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, fnSite: man.fn_site || {}, pSite: man.p_site || [], spreadOk: (man.pages || []).some(p => p.text), spreadPali: !!man.spread, ly: man.ly || null,  // tdl: 표 그림 내려받기 (표 첫 칸 글 → 그림 주소, 운영자 요청 2026-11-12)
      // say: 그림·표를 소리로 읽을 글 (그림 주소 → 글, 운영자 요청 2026-11-10)
    
     i: Math.min(Math.max(want || (last > 1 ? last : 0) || firstContent(pages, man.toc || []), 1), pages.length) - 1,
@@ -693,7 +693,8 @@ async function initReaderPage() {
   if (root.dataset.audio) abLoad(root.dataset.audio);  // 오디오북이 있는 책만 🎧 단추
   // 내 서재 'TTS 이어 듣기' 줄: ?listen=1&s=문단 → 그 문단을 보여 주고 '▶ 듣기'에 커서, 누르면 그 문단부터 (운영자 요청, 2026-11-19)
   { const q = new URLSearchParams(location.search); if (q.has('listen')) { R.resumeAt = { i: R.i, k: +q.get('s') || 0 }; history.replaceState(history.state, '', location.pathname);
-    setTimeout(() => { const el = $(`#rBody p[data-pg="${R.i + 1}"][data-s="${R.resumeAt ? R.resumeAt.k : 0}"]`); if (el) { el.scrollIntoView({ block: 'center' }); el.classList.add('resume-at'); } const rd = $('#reader'); if (rd) rd.classList.remove('chrome-off'); const b = $('#rSpeak'); if (b) b.focus(); toast('▶ TTS 듣기를 누르면 듣던 문단부터 이어서 읽습니다'); }, 400); } }
+    setTimeout(() => { const el = $(`#rBody p[data-pg="${R.i + 1}"][data-s="${R.resumeAt ? R.resumeAt.k : 0}"]`); if (el) { el.scrollIntoView({ block: 'center' }); el.classList.add('resume-at'); } const rd = $('#reader'); if (rd) rd.classList.remove('chrome-off'); const b = $('#rSpeak'); if (b) b.focus(); toast('▶ TTS 듣기를 누르면 듣던 문단부터 이어서 읽습니다'); }, 400); }
+    else if (q.has('s')) { const k = +q.get('s') || 0; history.replaceState(history.state, '', location.pathname); setTimeout(() => linkAt(`#rBody p[data-pg="${R.i + 1}"][data-s="${k}"]`), 400); } }
   saveBookOffline(id, man);
   if ('serviceWorker' in navigator && navigator.serviceWorker.controller && !store.get('off-' + id)) { store.set('off-' + id, 1); setTimeout(() => toast('이 책을 이 기기에 저장했습니다. 이제 인터넷 없이도 읽을 수 있습니다'), 1500); }
   if (!want && last > 1) toast(`지난번에 읽던 ${pageName(R.pages[R.i])}을 열었습니다`);
@@ -956,7 +957,7 @@ function reflowHtml() {
     const keep = k => !(p.n === c.from && k < (c.k0 || 0)) && !(p.n === c.to && c.kEnd != null && k >= c.kEnd);
     const heads = new Set(R.toc.filter(t => t.page === p.n || t.page === p.n - 1).map(t => headKey(t.title)));
     if (!ps.length) return `<span id="pm-${p.n}"></span>`;
-    return (spreadOn() ? `<div class="spr-pg ${p.n % 2 ? 'spr-r' : 'spr-l'}">` : '') + `<span class="pmark${p.label ? '' : ' nolabel'}" id="pm-${p.n}">${p.label ? esc(pageName(p)) : ''}</span>${ps.map((s, k) => !keep(k) ? '' : blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : isChDup(s, p.n, c, k) ? ' class="ch-dup"' : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : /^\^\^ /.test(s) ? ' class="r-ctitle"' : /^:: /.test(s) ? ' class="r-center"' : /^>> /.test(s) ? ' class="r-right"' : /^\+\+ /.test(s) ? (/^\+\+ \d+\. /.test(s) ? ' class="r-ind r-num"' : ' class="r-ind"') : /^● /.test(s) ? ' class="r-bul"' : /^\|\| /.test(s) ? ' class="r-bul-c"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? ' class="sub-h" role="heading" aria-level="4"' : ''}>${fnMark(phMark(boldMark(markUl(s.replace(/^## |^\^\^ |^:: |^>> |^\|\| |^\+\+ /, '').replace(/\n(?:\^\^|::|>>) /g, '\n'), p.n)))).replace(/\n/g, '<br>').replace(/<br>● /g, /^● /.test(s) ? '<br><span class="bul-n">●</span> ' : '<br>● ')}</p>`).join('') || ''}` + (spreadOn() ? '</div>' : '');
+    return (spreadOn() ? `<div class="spr-pg ${p.n % 2 ? 'spr-r' : 'spr-l'}">` : '') + `<span class="pmark${p.label ? '' : ' nolabel'}" id="pm-${p.n}">${p.label ? esc(pageName(p)) : ''}</span>${ps.map((s, k) => !keep(k) ? '' : (blockHtml(s, p.n, k) || `<p data-pg="${p.n}" data-s="${k}"${isFootnote(s) ? ` class="fn${k === ps.findIndex(isFootnote) ? ' fn-first' : ''}"` : isChDup(s, p.n, c, k) ? ' class="ch-dup"' : /^[❦❧✿❀＊*·•◆◇]+$/.test(s.trim()) ? ' class="orn" aria-hidden="true"' : /^\^\^ /.test(s) ? ' class="r-ctitle"' : /^:: /.test(s) ? ' class="r-center"' : /^>> /.test(s) ? ' class="r-right"' : /^\+\+ /.test(s) ? (/^\+\+ \d+\. /.test(s) ? ' class="r-ind r-num"' : ' class="r-ind"') : /^● /.test(s) ? ' class="r-bul"' : /^\|\| /.test(s) ? ' class="r-bul-c"' : (isHead(s) || heads.has(headKey(s))) && s.length < 120 ? ' class="sub-h" role="heading" aria-level="4"' : ''}>${fnMark(phMark(boldMark(markUl(s.replace(/^## |^\^\^ |^:: |^>> |^\|\| |^\+\+ /, '').replace(/\n(?:\^\^|::|>>) /g, '\n'), p.n)))).replace(/\n/g, '<br>').replace(/<br>● /g, /^● /.test(s) ? '<br><span class="bul-n">●</span> ' : '<br>● ')}</p>`) + pSiteHtml(s)).join('') || ''}` + (spreadOn() ? '</div>' : '');
   }).join('');
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}" data-ci="${ci - 1}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}" data-ci="${ci + 1}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   // 장 제목과 같아 숨긴 본문 제목에 각주 번호가 붙어 있으면(예: '보시의 실천⁷') 위의 큰 장 제목에 그 번호를 붙여 보임 (2026-11-11)
@@ -2590,6 +2591,18 @@ try {
   }
 } catch (e) {}
 
+// 문단에 붙인 사이트 안내 — 텍스트 JSON p_site (build.mjs pSiteOf 가 링크 주소를 만듦), 책 글과 헷갈리지 않게 점선 상자 'ⓘ 사이트 안내' (운영자 요청, 2026-11-22 — 『테라와다 불교사 (녹취 법문집)』)
+function pSiteHtml(s) {
+  const L = (R && R.pSite) || []; if (!L.length) return '';
+  const t = String(s).replace(/\*\*|°°|==/g, '');
+  return L.filter(x => x.at && t.startsWith(x.at)).map(x => `<aside class="fn-site p-site" role="note" aria-label="사이트 안내"><p><span class="fn-site-tag">ⓘ 사이트 안내 —</span> ${esc(x.text)}</p>${x.href ? `<p class="p-site-link"><a href="${esc(R.simple && x.shref ? x.shref : x.href)}">→ ${esc(x.label)}</a></p>` : ''}</aside>`).join('');
+}
+// 다른 곳에서 문단으로 바로 온 링크(?s=문단, ?listen 없이): 그 문단을 보여 주고 잠시 노란 테두리, 커서도 거기에 (2026-11-22)
+function linkAt(sel) {
+  const el = $(sel); if (!el) return;
+  el.scrollIntoView({ block: 'center' }); el.classList.add('resume-at'); el.setAttribute('tabindex', '-1'); try { el.focus({ preventScroll: true }); } catch (e) {}
+  setTimeout(() => el.classList.remove('resume-at'), 6000);
+}
 // 인쇄본에 풀이가 없는 각주 — 텍스트 JSON fn_site {번호: 설명} 의 사이트 안내 글을, 책 글과 헷갈리지 않게 '사이트 안내' 표시를 붙여 보임 (운영자 요청, 2026-11-19)
 function fnSiteHtml(RB, n) {
   const t = RB && RB.fnSite && RB.fnSite[n]; if (!t) return '';
@@ -3269,7 +3282,7 @@ async function initSimpleRead() {
   const id = root.dataset.book, title = root.dataset.title;
   let man; try { man = await manifest(root.dataset.manifest); } catch (e) { root.innerHTML = '<p>읽기 자료를 불러오지 못했습니다. 잠시 뒤 다시 열어 주세요.</p>'; return; }
   const pages = man.pages.map((p, i) => ({ n: i + 1, label: p.label || '', img: '', big: '', text: p.text || '' }));
-  SR.r = { id, title, by: root.dataset.by, pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, fnSite: man.fn_site || {}, spreadOk: false, spread: false, ly: null, i: 0, view: 'text', zoom: 1, fs: 1, bold: false, lh: 1.9, font: 'serif', mw: 40, centerHeads: !!man.center_heads, hl: [], speaking: false, par: [], parMode: 'off', parD: null, parEd: [], ix: man.index || null, ixPart: 0, ixQ: '', simple: true };
+  SR.r = { id, title, by: root.dataset.by, pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, fnSite: man.fn_site || {}, pSite: man.p_site || [], spreadOk: false, spread: false, ly: null, i: 0, view: 'text', zoom: 1, fs: 1, bold: false, lh: 1.9, font: 'serif', mw: 40, centerHeads: !!man.center_heads, hl: [], speaking: false, par: [], parMode: 'off', parD: null, parEd: [], ix: man.index || null, ixPart: 0, ixQ: '', simple: true };
   SR.id = id; SR.title = title; SR.cs = withR(() => chapters());
   if (!SR.scrollHook) { SR.scrollHook = 1; let tt = 0; addEventListener('scroll', () => { if (SR.speaking || scrollY <= 40 || !$('#sRead .s-text')) return; clearTimeout(tt); tt = setTimeout(() => { const head = (STALK.el && STALK.el.isConnected ? STALK.el.getBoundingClientRect().bottom : sBarH()) + 4; const el = $$('.s-text [data-pg][data-s]').find(x => x.getBoundingClientRect().bottom > head); if (el) SR.anchor = +el.dataset.pg; }, 250); }, { passive: true }); }  // 마지막으로 보던 쪽
   const q = new URLSearchParams(location.search), c = +q.get('c') || 0, listen = q.has('listen'), audio = q.has('audio') && root.dataset.audio;
@@ -3282,6 +3295,7 @@ async function initSimpleRead() {
   const ci = c ? Math.min(c, SR.cs.length) - 1 : withR(() => chapterOf(Math.min(pp, pages.length)));
   srChapter(ci, pp && !c ? Math.min(pp, pages.length) : 0, false);
   if (pp && !c && ps != null) SR.anchorS = { p: Math.min(pp, pages.length), s: ps };  // ▶ 듣기가 그 문단부터
+  if (pp && !c && ps != null && !listen && !audio) setTimeout(() => linkAt(`#sRead p[data-pg="${Math.min(pp, pages.length)}"][data-s="${ps}"]`), 400);  // 사이트 안내 링크 등으로 문단에 바로 옴 (2026-11-22)
   if (audio) { const fa = () => { const b = $('#sAb'); if (b) { b.focus(); toast('🎧 오디오북 단추입니다. Enter 를 누르면 맨 위 재생기에서 재생합니다'); } }; if (document.readyState === 'complete') setTimeout(fa, 300); else addEventListener('load', () => setTimeout(fa, 300), { once: true }); }
   if (listen) { const fb = () => { const b = $('#sSpeak'); if (b) { b.focus(); toast(`▶ TTS 듣기 단추입니다. Enter 를 누르면 ${SR.anchorS ? '듣던 곳부터 ' : ''}읽기 시작합니다`); } }; if (document.readyState === 'complete') setTimeout(fb, 300); else addEventListener('load', () => setTimeout(fb, 300), { once: true }); }
   SR.ci0 = c || pp ? ci : null; SR.p0 = pp && !c ? Math.min(pp, pages.length) : 0;

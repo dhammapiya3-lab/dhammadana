@@ -1497,3 +1497,8 @@ body.simple-ui{font-size:28px}
 .reflow.pgap :where(p:not([class])){margin-bottom:var(--pgap,1em)}
 /* 아주 큰 글자(175% 넘게 — .big, 낱말 단위로만 줄을 바꿈)에서는 양쪽 정렬하면 낱말 사이가 크게 벌어지므로 왼쪽 정렬 (2026-11-22) */
 .reflow.big.al-just :where(p:not([class])),.reflow.big.al-just :where(p.ch-dup){text-align:start}
+/* 문단에 붙인 사이트 안내 (p_site, 2026-11-22) — 본문 글과 구별되는 점선 상자 */
+.reflow .p-site{margin:.4em 0 1.2em;font-size:.88em;line-height:1.6;text-align:start;text-indent:0}
+.reflow .p-site p{margin:.15em 0;text-align:start;text-indent:0}
+.p-site-link a{color:#7a4f00;font-weight:600}
+:root.mode-night .p-site-link a,:root.mode-contrast .p-site-link a{color:#ffd77a}
