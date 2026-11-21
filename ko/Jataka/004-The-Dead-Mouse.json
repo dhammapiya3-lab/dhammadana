@@ -9,8 +9,7 @@
     ],
     "shape": "box",
     "en": "The Mouse Merchant Jataka Tale of Compounding Value",
-    "ko": "쥐 장수 자따까: 불어나는 가치 이야기",
-    "max": 14
+    "ko": "쥐 장수 자따까: 불어나는 가치 이야기"
    },
    {
     "seed": [
@@ -88,8 +87,7 @@
     ],
     "shape": "box",
     "en": "Selling the flowers grew his capital to eight pennies.",
-    "ko": "꽃을 팔아 밑천이 8닢으로 늘었습니다.",
-    "max": 14
+    "ko": "꽃을 팔아 밑천이 8닢으로 늘었습니다."
    }
   ]
  },
@@ -392,8 +390,7 @@
     ],
     "ko": "그는 천막을 치고 문지기 셋을 차례로 세웠습니다. 짐을 사러 온 상인 백 명은 ‘큰 상인’이 이미 샀다는 말을 듣고 발길을 돌려야 했습니다.",
     "shape": "box",
-    "manual": true,
-    "max": 14
+    "manual": true
    }
   ]
  },

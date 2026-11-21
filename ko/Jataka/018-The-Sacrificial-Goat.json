@@ -134,8 +134,7 @@
     "ko": "*흑흑*",
     "align": "center",
     "shape": "bubble",
-    "manual": true,
-    "max": 14
+    "manual": true
    }
   ]
  },
@@ -183,8 +182,7 @@
     ],
     "shape": "bubble",
     "en": "Speak, peak, beast. Why did you laugh, and why did you weep?",
-    "ko": "말해 보아라, 짐승아. 왜 웃었고 왜 울었느냐?",
-    "max": 14
+    "ko": "말해 보아라, 짐승아. 왜 웃었고 왜 울었느냐?"
    }
   ]
  },
