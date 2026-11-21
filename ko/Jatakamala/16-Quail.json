@@ -1,0 +1,587 @@
+[
+ {
+  "img": "images/16-Quail-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     20,
+     650,
+     104
+    ],
+    "ko": "메추라기 새끼 이야기\n진실(sacca)의 힘",
+    "cover": [
+     246,
+     243,
+     234
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     150,
+     104,
+     650,
+     156
+    ],
+    "ko": "진실로 맑아진 말은 불도 넘어서지 못합니다.",
+    "cover": [
+     246,
+     243,
+     237
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/16-Quail-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     40,
+     362,
+     120
+    ],
+    "ko": "몸의 연약함",
+    "cover": [
+     243,
+     242,
+     236
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     22,
+     120,
+     362,
+     334
+    ],
+    "ko": "보살은 숲에서 어린 메추라기로 살았습니다. 알에서 나온 지 며칠 밤밖에 되지 않아 팔다리도 잘 보이지 않았습니다.\n날지도 못했습니다. 여린 날개는 아직 자라야 했습니다.",
+    "cover": [
+     238,
+     238,
+     233
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/16-Quail-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     40,
+     360,
+     300
+    ],
+    "ko": "“법의 가르침을 마음에 두지 않고 무엇이든 먹는 자는 편히 자라겠지만, 가르침에 따라 생계를 구하는 이는… 이 세상에서 괴로움을 견디리라.”\n\n법을 향한 마음이 그와 함께했습니다. 그는 부모가 물어다 준 풀과 열매만 먹었습니다. 그래서 몸이 잘 자라지 못했습니다.",
+    "cover": [
+     242,
+     239,
+     229
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     436,
+     30,
+     790,
+     86
+    ],
+    "ko": "법의 힘",
+    "cover": [
+     245,
+     242,
+     234
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/16-Quail-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     30,
+     440,
+     80
+    ],
+    "ko": "숲의 큰불",
+    "cover": [
+     238,
+     231,
+     217
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     24,
+     80,
+     440,
+     170
+    ],
+    "ko": "큰불이 났습니다. 끊임없는 굉음과 피어오르는 연기 구름이 일었습니다. 불길에서 튄 불똥이 숲과 덤불을 망가뜨렸습니다.",
+    "cover": [
+     241,
+     235,
+     221
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/16-Quail-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     450,
+     30,
+     790,
+     140
+    ],
+    "ko": "바람에 휘몰린 불은… 널리 뻗은 불꽃 팔을 휘두르고, 흐트러진 연기 머리채를 흔들며 뛰어올라, 타닥거리며 짐승들의 용기와 힘을 앗아 갔습니다.",
+    "cover": [
+     62,
+     60,
+     66
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     460,
+     380,
+     790,
+     444
+    ],
+    "ko": "불의 신 악기의 춤",
+    "cover": [
+     246,
+     243,
+     232
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/16-Quail-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     30,
+     580,
+     82
+    ],
+    "ko": "고통의 울부짖음",
+    "cover": [
+     241,
+     236,
+     220
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     220,
+     82,
+     580,
+     160
+    ],
+    "ko": "숲 자체가 겁에 질려 날아다니는 새 떼와 함께… 날카롭게 타닥거리는 불소리로 고통스럽게 울부짖는 듯했습니다.",
+    "cover": [
+     240,
+     234,
+     218
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/16-Quail-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     10,
+     330,
+     404,
+     370
+    ],
+    "ko": "덤불에 남겨지다",
+    "cover": [
+     50,
+     30,
+     22
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     10,
+     370,
+     404,
+     448
+    ],
+    "ko": "불이 다가오자 어린 메추라기들은 어지럽게 울부짖었습니다. 저마다 제 몸만 챙길 뿐 남은 돌보지 않고 함께 날아올랐습니다. 날개 없는 보살만 그러지 못했습니다.",
+    "cover": [
+     50,
+     30,
+     22
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Quail-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     540,
+     50,
+     790,
+     96
+    ],
+    "ko": "진실의 힘",
+    "cover": [
+     244,
+     244,
+     238
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     540,
+     96,
+     790,
+     186
+    ],
+    "ko": "대사는 자기 힘을 알았기에 흔들리지 않았습니다. 불이 거세게 다가오자 그는 불을 달래는 말로 불렀습니다.",
+    "cover": [
+     244,
+     243,
+     237
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/16-Quail-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     36,
+     340,
+     82
+    ],
+    "ko": "불에게 하는 말",
+    "cover": [
+     242,
+     242,
+     237
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     82,
+     340,
+     214
+    ],
+    "ko": "“내 발은 발이라 부를 만큼 튼튼하지 못하고, 날개도 날 수 없다… 여기에는 그대 같은 손님께 드릴 만한 것이 없다. 그러니 악기여, 여기서 돌아가는 것이 마땅하다.”",
+    "cover": [
+     243,
+     242,
+     237
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/16-Quail-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     360,
+     650,
+     400
+    ],
+    "ko": "물러남",
+    "cover": [
+     242,
+     242,
+     236
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     150,
+     400,
+     650,
+     446
+    ],
+    "ko": "대사가 진실의 힘으로 거룩해진 말을 하자 그 불은… 불어난 강에 이른 듯 갑자기 수그러들었습니다.",
+    "cover": [
+     242,
+     242,
+     236
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/16-Quail-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     480,
+     40,
+     790,
+     80
+    ],
+    "ko": "전설이 된 곳",
+    "cover": [
+     242,
+     242,
+     236
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     480,
+     80,
+     790,
+     166
+    ],
+    "ko": "오늘날까지도 숲의 큰불이 히말라야의 그 이름난 곳에 이르면… 주문에 걸린 여러 머리 뱀처럼 불길을 줄이고 기세를 늦춥니다.",
+    "cover": [
+     241,
+     241,
+     234
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/16-Quail-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     34,
+     354,
+     80
+    ],
+    "ko": "진실한 이의 경계",
+    "cover": [
+     245,
+     246,
+     240
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     22,
+     80,
+     354,
+     182
+    ],
+    "ko": "넘실대는 바다가 해안을 넘지 못하듯… 불도 진실한 이의 명을 넘지 못합니다.",
+    "cover": [
+     244,
+     245,
+     239
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/16-Quail-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     322,
+     650,
+     364
+    ],
+    "ko": "가르침",
+    "cover": [
+     242,
+     243,
+     237
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     150,
+     364,
+     650,
+     410
+    ],
+    "ko": "진실로 맑아진 말은 불도 넘어서지 못합니다.\n그러므로 진실을 말하는 데 힘써야 합니다.",
+    "cover": [
+     242,
+     242,
+     232
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
