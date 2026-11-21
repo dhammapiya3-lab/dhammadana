@@ -1,0 +1,532 @@
+[
+ {
+  "img": "images/10-Nakulapitu-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     202,
+     60,
+     600,
+     124
+    ],
+    "ko": "나꿀라삐따 장자\n가장 가까운 이 가운데 으뜸",
+    "cover": [
+     223,
+     196,
+     128
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     228,
+     354,
+     574,
+     410
+    ],
+    "ko": "큰 연대기가 전하는 우주적 인연과 영원한 헌신의 이야기",
+    "cover": [
+     223,
+     196,
+     130
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Nakulapitu-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     228,
+     72,
+     574,
+     174
+    ],
+    "ko": "먼 옛날 함사와띠에서 신심 깊은 한 사람이 빠두뭇따라 부처님께서 가장 가까운 우바새를 기리시는 것을 보았습니다. 그는 특별한 공양을 올리며 언젠가 바로 그 칭호를 얻겠다고 서원했고, 부처님께서 이루어지리라 예언하셨습니다.",
+    "cover": [
+     239,
+     225,
+     194
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Nakulapitu-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     456,
+     72,
+     748,
+     376
+    ],
+    "ko": "십만 겁 동안 천상과 인간 세상을 떠돈 끝에 그는 수수마라기라에 태어났습니다.\n\n그와 헌신하는 아내는 아들의 이름을 따서 나꿀라삐따(나꿀라의 아버지)와 나꿀라마따(나꿀라의 어머니)라고만 불렸습니다.",
+    "cover": [
+     245,
+     231,
+     204
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Nakulapitu-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     456,
+     76,
+     752,
+     352
+    ],
+    "ko": "고따마 부처님께서 베사깔라 숲에 오시자, 부부는 곧바로 그분을 자기 아들로 여겼습니다.\n\n발아래 엎드려 울며 말했습니다. “아들아, 그 긴 세월 동안 어디 있었느냐?”",
+    "cover": [
+     243,
+     229,
+     200
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Nakulapitu-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     178,
+     324,
+     212
+    ],
+    "ko": "아버지 (5백 번)",
+    "cover": [
+     243,
+     228,
+     199
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     104,
+     218,
+     324,
+     252
+    ],
+    "ko": "작은아버지 (5백 번)",
+    "cover": [
+     240,
+     226,
+     198
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     104,
+     259,
+     324,
+     293
+    ],
+    "ko": "큰아버지 (5백 번)",
+    "cover": [
+     240,
+     226,
+     199
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     104,
+     300,
+     324,
+     334
+    ],
+    "ko": "외삼촌 (5백 번)",
+    "cover": [
+     239,
+     226,
+     200
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     480,
+     178,
+     700,
+     212
+    ],
+    "ko": "어머니 (5백 번)",
+    "cover": [
+     241,
+     226,
+     197
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     480,
+     218,
+     700,
+     252
+    ],
+    "ko": "작은어머니 (5백 번)",
+    "cover": [
+     239,
+     226,
+     197
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     480,
+     259,
+     700,
+     293
+    ],
+    "ko": "큰어머니 (5백 번)",
+    "cover": [
+     239,
+     226,
+     197
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     480,
+     300,
+     700,
+     334
+    ],
+    "ko": "고모 (5백 번)",
+    "cover": [
+     239,
+     226,
+     199
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     78,
+     344,
+     724,
+     440
+    ],
+    "ko": "그들의 부모 같은 사랑은 우연이 아니었습니다. 2천 생에 걸쳐 부부는 거듭 보살의 가장 가까운 혈육이었습니다.\n이 크나큰 업의 끌림이 그들의 마음을 부처님께 영원히 묶어 주었습니다.",
+    "cover": [
+     243,
+     229,
+     200
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Nakulapitu-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     388,
+     140,
+     752,
+     320
+    ],
+    "ko": "부처님께서는 그들의 기쁨이 평온으로 가라앉을 때까지 발을 붙잡게 두셨습니다.\n\n그 깊은 정을 아시고 법을 설하시자, 두 사람은 곧바로 수다원과를 얻었습니다.",
+    "cover": [
+     244,
+     233,
+     205
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Nakulapitu-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     346,
+     730,
+     412
+    ],
+    "ko": "늘그막에 이르도록 행동으로도 생각으로도 서로를 저버린 적이 없는 두 사람이 부처님께 여쭈었습니다. “저희는 이 생에서도, 앞으로의 모든 생에서도 서로를 만나고 싶습니다. 어떻게 하면 되겠습니까?”",
+    "cover": [
+     246,
+     231,
+     198
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Nakulapitu-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     60,
+     716,
+     112
+    ],
+    "ko": "첫째 함께 사는 경(Paṭhama-sama-jīvī-sutta)에서 부처님께서 영원히 다시 만나는 네 가지 조건을 밝히셨습니다. 부부가 똑같은 만큼 갖추어야 하는 것은:",
+    "cover": [
+     244,
+     230,
+     200
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     84,
+     376,
+     206,
+     408
+    ],
+    "ko": "믿음",
+    "cover": [
+     245,
+     229,
+     200
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     252,
+     376,
+     380,
+     408
+    ],
+    "ko": "계",
+    "cover": [
+     245,
+     229,
+     199
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     420,
+     376,
+     556,
+     408
+    ],
+    "ko": "보시",
+    "cover": [
+     245,
+     230,
+     202
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     600,
+     376,
+     732,
+     408
+    ],
+    "ko": "지혜",
+    "cover": [
+     245,
+     231,
+     203
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Nakulapitu-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     212,
+     194,
+     588,
+     276
+    ],
+    "ko": "“계와 좋은 행실이 같고 법답게 사는 부부는… 두 사람 모두 이 세상에서 즐거워하고 천상에서 기뻐한다.”",
+    "cover": [
+     235,
+     205,
+     142
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/10-Nakulapitu-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     88,
+     574,
+     158
+    ],
+    "ko": "제따와나 승원에서 마침내 옛 서원이 이루어졌습니다.",
+    "cover": [
+     248,
+     240,
+     220
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     220,
+     286,
+     584,
+     398
+    ],
+    "ko": "부처님께서 선언하셨습니다.\n“비구들이여, 부처님과 가까운 나의 우바새 제자들 가운데 나꿀라삐따 장자가 으뜸이다.”",
+    "cover": [
+     249,
+     241,
+     220
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
