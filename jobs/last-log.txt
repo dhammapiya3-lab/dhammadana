@@ -1,20 +1,11 @@
-Jataka 027-Elephant-and-Dog 13 장
-Jataka 034-The-Amorous-Fish 13 장
-Rasavahini 15-The-Gracious-Tiger 15 장
-Rasavahini 17-Ingratitude 13 장
-Rasavahini 18-Marutta-and-His-Dog 13 장
+Jataka 009-The-Kings-Grey-Hair 14 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 181 개 / 한글판 이야기 316 편
+R2 에 올림: 75 개 / 한글판 이야기 316 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1437081바이트
-이야기 Jataka/027-Elephant-and-Dog {'pdf': 16855961, 'zip': 16591129, 'n': 13}
-이야기 Jataka/034-The-Amorous-Fish {'pdf': 15141700, 'zip': 14872636, 'n': 13}
-책 Jataka {'pdf': 496434411, 'pdfs': 50594796, 'zip': 496024651, 'stories': 32, 'n': 422}
-이야기 Rasavahini/15-The-Gracious-Tiger {'pdf': 14796083, 'zip': 14513239, 'n': 15}
-이야기 Rasavahini/17-Ingratitude {'pdf': 12750201, 'zip': 12471810, 'n': 13}
-이야기 Rasavahini/18-Marutta-and-His-Dog {'pdf': 13395516, 'zip': 13115610, 'n': 13}
-책 Rasavahini {'pdf': 269610665, 'pdfs': 30796828, 'zip': 269248054, 'stories': 20, 'n': 259}
-내려받기 파일: 7 묶음 새로 만듦
+공개 주소 확인: 200 1251711바이트
+이야기 Jataka/009-The-Kings-Grey-Hair {'pdf': 15480577, 'zip': 15213711, 'n': 14}
+책 Jataka {'pdf': 496435260, 'pdfs': 50594890, 'zip': 496025500, 'stories': 32, 'n': 422}
+내려받기 파일: 2 묶음 새로 만듦
 글로 보기: 316 이야기
 18-Verses-2
 08-Light-of-Asia
