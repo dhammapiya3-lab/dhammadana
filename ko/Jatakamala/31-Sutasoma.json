@@ -1,0 +1,677 @@
+[
+ {
+  "img": "images/31-Sutasoma-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     310,
+     740,
+     348
+    ],
+    "ko": "수따소마 이야기",
+    "cover": [
+     250,
+     248,
+     238
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     348,
+     740,
+     448
+    ],
+    "ko": "『자따까말라』에서 가져온 진실과 희생과 구원의 이야기\n\n꼬라비야 가문에 태어난 수따소마 왕자는 달의 신처럼 아름다웠습니다. 그의 얼굴은 수백 가지 덕의 후광으로 빛났습니다. 그는 보시와 자제의 벗이었고, 그의 우아함은 차오르는 보름달처럼 날로 커졌습니다.",
+    "cover": [
+     251,
+     249,
+     238
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Sutasoma-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     400,
+     100,
+     650,
+     132
+    ],
+    "ko": "지혜를 사랑한 이",
+    "cover": [
+     252,
+     249,
+     236
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     400,
+     132,
+     650,
+     360
+    ],
+    "ko": "꽃 피는 철이었습니다. 왕의 정원에는 뻐꾸기 소리와 벌들의 윙윙거림이 가득했습니다. 그러나 수따소마의 가장 큰 기쁨은 지혜였습니다. 그는 ‘잘 지은 말씀(subhāsita)’을 사랑하여 거룩한 게송을 가져오는 이에게 큰 상을 내렸습니다. 궁의 즐거움 속에서도 그의 마음은 법을 찾았습니다.",
+    "cover": [
+     251,
+     248,
+     235
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Sutasoma-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     94,
+     390,
+     124
+    ],
+    "ko": "식인귀가 오다",
+    "cover": [
+     250,
+     247,
+     230
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     96,
+     124,
+     390,
+     264
+    ],
+    "ko": "갑자기 봄날의 기쁨이 깨졌습니다. 경비병들이 겁에 질려 달아났습니다. “식인귀 깜마사빠다가 온다!” 그들이 외쳤습니다. 암사자와 왕 사이에서 태어난 수다사의 아들이 식인귀가 되어 있었습니다. 이제 무서운 락카사의 모습으로 그는 제물로 삼을 왕자를 잡으려고 회오리바람처럼 다가왔습니다.",
+    "cover": [
+     249,
+     243,
+     225
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Sutasoma-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     296,
+     660,
+     336
+    ],
+    "ko": "사로잡힘",
+    "cover": [
+     249,
+     244,
+     229
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     140,
+     336,
+     660,
+     400
+    ],
+    "ko": "수따소마는 무기도 없이 두려움 없이 섰습니다. “내가 여기 있다.” 그가 말했습니다. 이런 먹잇감을 얻어 기뻐한 괴물은 보살을 낚아채 소굴로 달려갔습니다. 그는 왕자를 사람이 아니라 어두운 제사에 바칠 제물로 데려갔습니다.",
+    "cover": [
+     250,
+     242,
+     227
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Sutasoma-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     380,
+     44,
+     790,
+     90
+    ],
+    "ko": "도살장",
+    "cover": [
+     241,
+     241,
+     235
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     380,
+     90,
+     790,
+     224
+    ],
+    "ko": "그들은 피와 연기로 젖은, 묘지처럼 끔찍한 곳에 이르렀습니다. 수따소마는 울었습니다. 괴물이 웃었습니다. “지혜로 이름난 자가 아이처럼 우는가? 목숨이 아까운가, 재물이 아까운가, 왕의 자리가 아까운가? 슬플 때는 배움도 소용없나 보군.”",
+    "cover": [
+     240,
+     236,
+     230
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Sutasoma-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     228,
+     250,
+     566,
+     282
+    ],
+    "ko": "진실의 약속",
+    "cover": [
+     250,
+     245,
+     227
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     228,
+     282,
+     566,
+     448
+    ],
+    "ko": "“나는 목숨이 아까워 우는 것이 아니다.” 수따소마가 대답했습니다. “한 바라문에게 거룩한 게송의 값을 주기로 약속했는데, 지금 죽으면 약속을 어기게 된다. 가서 값을 치르게 해 다오. 돌아와 먹히겠다고 약속하마.” 이런 터무니없는 정직이 궁금해진 괴물이 허락했습니다. “가라. 하지만 서둘러라. 화장 장작불이 꺼지기 전에.”",
+    "cover": [
+     250,
+     244,
+     226
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Sutasoma-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     100,
+     790,
+     146
+    ],
+    "ko": "게송 한 구절의 값",
+    "cover": [
+     250,
+     242,
+     223
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     440,
+     146,
+     790,
+     346
+    ],
+    "ko": "수따소마는 집으로 돌아갔습니다. 그는 바라문의 잘 지은 말씀을 마시듯 들으며 게송 한 구절마다 금화 수천 닢을 치렀습니다. 그는 지혜를 나라보다 귀히 여겼습니다.\n“거룩한 가르침은 가장 좋은 조언자요, 슬픔이라는 병의 약이다.” 그가 선언했습니다.",
+    "cover": [
+     251,
+     242,
+     224
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Sutasoma-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     20,
+     700,
+     54
+    ],
+    "ko": "정직함의 시험",
+    "cover": [
+     249,
+     243,
+     229
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     100,
+     54,
+     700,
+     118
+    ],
+    "ko": "아버지가 애원했습니다. “군대를 데려가라! 괴물을 죽여라! 죽음의 입으로 돌아가지 마라!”\n수따소마는 거절했습니다. “진실은 저의 목숨입니다. 식인귀에게라도 약속을 어길 수 없습니다. 약속대로 홀로, 무기 없이 돌아가겠습니다.”",
+    "cover": [
+     249,
+     241,
+     227
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Sutasoma-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     0,
+     362,
+     800,
+     396
+    ],
+    "ko": "놀라움 중의 놀라움",
+    "cover": [
+     249,
+     241,
+     222
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     0,
+     396,
+     800,
+     448
+    ],
+    "ko": "두려움 없이 홀로 수따소마가 도살장으로 돌아왔습니다. 식인귀는 놀랐습니다.\n“놀라움 중의 놀라움이로다! 약속을 지키려고 죽음의 입으로 돌아오다니. 얼마나 한결같은 진실함인가!”",
+    "cover": [
+     248,
+     237,
+     215
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Sutasoma-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     360,
+     22,
+     790,
+     62
+    ],
+    "ko": "법에 대한 굶주림",
+    "cover": [
+     246,
+     235,
+     208
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     360,
+     62,
+     790,
+     160
+    ],
+    "ko": "“나를 먹어라.” 수따소마가 말했습니다. “아직은 아니다.” 괴물이 대답했습니다. “네가 목숨 걸고 산 그 게송을 듣고 싶다.” 수따소마는 먼저 그를 꾸짖고, 병자가 의사의 말을 듣듯 공경하며 들으라고 일렀습니다. 괴물은 고개를 숙였습니다.",
+    "cover": [
+     246,
+     235,
+     211
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Sutasoma-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     46,
+     530,
+     116
+    ],
+    "ko": "첫 번째 게송",
+    "cover": [
+     249,
+     239,
+     205
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     116,
+     530,
+     310
+    ],
+    "ko": "덕 있는 이를 단 한 번 만나도\n영원한 우정이 되기에 넉넉하다.\n덕 있는 이에게서 결코 멀어지지 말라.\n향기를 퍼뜨리는 그들의 덕은\n꽃가루처럼 곁에 선 이에게 스며든다.",
+    "cover": [
+     249,
+     245,
+     232
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Sutasoma-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     370,
+     20,
+     760,
+     66
+    ],
+    "ko": "변하지 않는 선함",
+    "cover": [
+     248,
+     246,
+     233
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     370,
+     66,
+     760,
+     196
+    ],
+    "ko": "보석과 금으로 빛나는 왕의 수레도\n늙어 가며 아름다움을 잃는다.\n그러나 경건한 행실에는 늙음이 찾아오지 않는다.\n경건한 이가 지닌 덕의 사랑은 그토록 굳세다.",
+    "cover": [
+     248,
+     245,
+     232
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Sutasoma-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     366,
+     790,
+     400
+    ],
+    "ko": "소원을 주겠다는 제안",
+    "cover": [
+     249,
+     241,
+     222
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     400,
+     790,
+     448
+    ],
+    "ko": "식인귀는 감동해 눈물을 흘렸습니다. “그대의 말은 감로요. 소원 네 가지를 주겠소. 무엇이든 고르시오!” 수따소마가 대답했습니다. “제 죄에 묶인 그대가 무슨 소원을 주겠는가? 자신도 다스리지 못하면서 어찌 줄 수 있겠는가?”",
+    "cover": [
+     250,
+     237,
+     215
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Sutasoma-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     340,
+     740,
+     374
+    ],
+    "ko": "네 번째 소원",
+    "cover": [
+     247,
+     242,
+     230
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     374,
+     740,
+     446
+    ],
+    "ko": "수따소마가 청했습니다. 1. 진실함 2. 해치지 않음 3. 모든 포로를 풀어 줌.\n“네 번째를 골라라!” 괴물이 외쳤습니다. “사람 고기를 먹지 마라.” 수따소마가 말했습니다. “그건 못 하오! 이 맛 때문에 나라까지 버렸소!” 수다사의 아들이 외쳤습니다.",
+    "cover": [
+     248,
+     241,
+     228
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/31-Sutasoma-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     0,
+     346,
+     800,
+     372
+    ],
+    "ko": "되찾음",
+    "cover": [
+     248,
+     242,
+     225
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     0,
+     372,
+     800,
+     448
+    ],
+    "ko": "“제 욕망 앞에서 겁쟁이가 되지 마라.” 수따소마가 권했습니다. 괴물이 굴복했습니다. “그대가 나의 스승이오. 다시는 고기를 먹지 않겠소.” 왕자들이 풀려났고, 수따소마는 그들에게 왕위를, 식인귀에게 사람다움을 되찾아 주었습니다. 덕 있는 이와의 만남은 해탈로 이끕니다.",
+    "cover": [
+     249,
+     245,
+     230
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
