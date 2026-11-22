@@ -1,0 +1,323 @@
+[
+ {
+  "img": "images/20-The-Brahmin-Soma-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     290,
+     170,
+     514,
+     304
+    ],
+    "ko": "소마 바라문의 희생\n\n업과 공덕과\n궁극의 우정 이야기",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     228,
+     359,
+     572,
+     437
+    ],
+    "ko": "부처님 열반 뒤 사왓티의 이야기입니다.\n신분이 다른 두 바라문 벗의 우정이\n베풂의 한계를 시험합니다.",
+    "cover": [
+     218,
+     160,
+     49
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     340,
+     604,
+     436
+    ],
+    "ko": "노름판에서 소마닷따가 벗의 하나뿐인 옷과\n도장 반지를 억지로 빼앗습니다. 소마 바라문은\n순순히 내주며 남다른 인내를 보입니다.\n그의 성품이 어떠한지 미리 보여 주는 일입니다.",
+    "cover": [
+     216,
+     162,
+     61
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     544,
+     167,
+     780,
+     299
+    ],
+    "ko": "시체에 몰려드는 짐승처럼\n죄인은 악행을 끊지 못합니다.\n왕은 소마닷따의 죄를 세 번\n용서했지만, 네 번째에는\n사형을 명했습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     248,
+     272,
+     412
+    ],
+    "ko": "벗이 형장으로 끌려가는 것을\n본 소마 바라문이 나섰습니다.\n그는 소마닷따 대신 자기\n목숨을 내놓았고, 왕이\n받아들였습니다. 지극한\n희생이 치러졌습니다.",
+    "cover": [
+     209,
+     153,
+     59
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     199,
+     656,
+     271
+    ],
+    "ko": "소마 바라문은 황금 궁전에서 천신으로 깨어났습니다.\n땅에서는 슬픔에 잠긴 소마닷따가 보시를 하며\n그 공덕을 자기를 살려 준 벗에게 회향했습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     164,
+     190,
+     640,
+     276
+    ],
+    "ko": "회향받은 공덕으로 소마데와(천신 소마)의 힘이\n더 커졌습니다. 깊이 감사한 그는 모습을 바꾸어\n내려와 소마닷따를 이레 동안 천신의 세계로\n데려가 그 복을 누리게 했습니다.",
+    "cover": [
+     205,
+     152,
+     63
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     322,
+     618,
+     440
+    ],
+    "ko": "땅으로 돌아오자 사람 세상의 재물이\n싫기만 했습니다. 하늘의 완벽함을 잊지 못한\n소마닷따는 창백하고 위태롭게 여위어 갔습니다.",
+    "cover": [
+     252,
+     253,
+     253
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     578,
+     64,
+     772,
+     408
+    ],
+    "ko": "사람은 그런 슬픔을\n견딜 수 없음을 안\n소마데와는 여의주를\n주었습니다.\n그 힘으로\n소마닷따의 아내를\n하늘 같은 아름다움을\n지닌 이로 바꾸어\n땅에 하늘을\n가져왔습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     308,
+     143,
+     492,
+     271
+    ],
+    "ko": "은혜 갚음(우빠까라)\n의 순환: 내준 목숨이\n공덕을 낳고, 공덕이\n감사와 어우러져\n신의 도움을 부릅니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     180,
+     187,
+     276,
+     211
+    ],
+    "ko": "희생",
+    "cover": [
+     254,
+     254,
+     253
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     540,
+     187,
+     620,
+     211
+    ],
+    "ko": "감사",
+    "cover": [
+     254,
+     254,
+     253
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     370,
+     413,
+     432,
+     435
+    ],
+    "ko": "보상",
+    "cover": [
+     253,
+     253,
+     251
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     356,
+     624,
+     442
+    ],
+    "ko": "도와준 이를 배신하지 마십시오. 좋은 사람은\n목숨까지 내놓습니다. 덕과 감사로 맺어진\n두 벗은 마침내 하늘 세계에서 다시 만났습니다.",
+    "cover": [
+     209,
+     162,
+     58
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
