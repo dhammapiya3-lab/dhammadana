@@ -55526,6 +55526,10 @@
     {
      "story": "002-Vannupatha.htm",
      "label": "02 Vaṇṇupatha Jātaka"
+    },
+    {
+     "story": "003-Serivanija.htm",
+     "label": "03 Serivāṇija Jātaka"
     }
    ],
    "stories": {
@@ -55704,6 +55708,89 @@
       },
       {
        "img": "images/002-Vannupatha-24.jpg"
+      }
+     ]
+    },
+    "003-Serivanija.htm": {
+     "file": "003-Serivanija.htm",
+     "title": "03 Serivāṇija Jātaka",
+     "summary": "",
+     "intro": "",
+     "items": [
+      {
+       "img": "images/003-Serivanija-01.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-02.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-03.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-04.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-05.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-06.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-07.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-08.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-09.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-10.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-11.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-12.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-13.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-14.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-15.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-16.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-17.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-18.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-19.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-20.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-21.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-22.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-23.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-24.jpg"
+      },
+      {
+       "img": "images/003-Serivanija-25.jpg"
       }
      ]
     }
