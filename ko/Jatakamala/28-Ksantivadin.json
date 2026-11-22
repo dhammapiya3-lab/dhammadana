@@ -1,0 +1,697 @@
+[
+ {
+  "img": "images/28-Ksantivadin-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     490,
+     60,
+     770,
+     90
+    ],
+    "ko": "인욕을 설하는 이",
+    "cover": [
+     250,
+     247,
+     229
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     490,
+     90,
+     770,
+     232
+    ],
+    "ko": "외딴 숲이 고요해 아름다운 곳에 칸띠와디라는 수행자가 살았습니다. 욕망과 재물의 이해에 둘러싸인 집안 살림을 버리고 그는 집 없는 이의 평화를 찾았습니다.\n인욕의 덕을 온전히 몸에 익혀 고요함을 지키는 데 뛰어난 이에게는 견디지 못할 것이 없습니다.",
+    "cover": [
+     251,
+     249,
+     235
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     60,
+     316,
+     100
+    ],
+    "ko": "왕의 침입",
+    "cover": [
+     250,
+     236,
+     205
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     100,
+     316,
+     262
+    ],
+    "ko": "한여름이었습니다. 그 나라의 왕이 물놀이를 하고 싶어 후궁들을 데리고 숲에 왔습니다.\n“그가 숲을 거닐며… 자신과 들뜬 일행의 우아한 놀이로 숲의 아름다움을 더했다.”",
+    "cover": [
+     251,
+     238,
+     210
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     228,
+     316,
+     572,
+     344
+    ],
+    "ko": "취해 잠든 왕",
+    "cover": [
+     243,
+     227,
+     193
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     228,
+     344,
+     572,
+     440
+    ],
+    "ko": "끝없는 놀이에 지치고 술에 취한 왕은 깊이 잠들었습니다. 숲의 갖가지 아름다움에 반한 왕비들은 아무도 지켜보지 않자 숲을 구경하러 흩어졌습니다.\n“시녀들의 만류에도… 들뜬 마음에 고운 꽃과 가지를 탐내어 꺾었다.”",
+    "cover": [
+     246,
+     232,
+     203
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     24,
+     400,
+     58
+    ],
+    "ko": "숲속의 만남",
+    "cover": [
+     221,
+     191,
+     132
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     70,
+     58,
+     400,
+     200
+    ],
+    "ko": "나무 사이를 거닐던 왕비들이 암자를 발견했습니다. 성자(muni)의 고요함을 보기만 해도 들뜬 마음이 가라앉았습니다. 그들은 절하고 그를 둘러앉아, 그가 지혜로 베푸는 대접에 귀 기울였습니다.",
+    "cover": [
+     242,
+     233,
+     204
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     240,
+     396,
+     560,
+     436
+    ],
+    "ko": "“그의 고행의 빛이 왕비들의 마음을 누그러뜨려… 그들은 겸손한 태도로 그에게 다가갔다.”",
+    "cover": [
+     237,
+     223,
+     189
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     600,
+     60,
+     776,
+     94
+    ],
+    "ko": "참된 장식",
+    "cover": [
+     240,
+     222,
+     185
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     600,
+     94,
+     776,
+     396
+    ],
+    "ko": "그는 몸의 아름다움과 높은 가문은 덧없고, 덕만이 사람의 참된 장식이라고 가르쳤습니다.\n“꽃은 나무의 장식이요 번갯불은 큰 비구름의 장식이나… 완성된 덕이야말로 살아 있는 이의 마땅한 장식이다.”",
+    "cover": [
+     239,
+     220,
+     187
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     66,
+     350,
+     100
+    ],
+    "ko": "성나서 깨어나다",
+    "cover": [
+     241,
+     227,
+     199
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     70,
+     100,
+     350,
+     228
+    ],
+    "ko": "깨어난 왕은 곁이 빈 것을 알았습니다. 질투와 남은 취기가 마음을 흐렸습니다. 그는 버려진 꽃과 빈랑즙의 자취를 따라가 수행자 앞에 앉은 왕비들을 찾아냈습니다.",
+    "cover": [
+     242,
+     228,
+     202
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     70,
+     230,
+     350,
+     306
+    ],
+    "ko": "“그의 얼굴빛이 변하고 땀방울이 맺혔다… 눈은 붉어져 흘겨보고 굴리고 노려보았다.”",
+    "cover": [
+     236,
+     217,
+     182
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     446,
+     286,
+     772,
+     446
+    ],
+    "ko": "나무람\n\n왕비들에게 둘러싸인 성자를 본 왕은 체면을 다 잃고, 거룩한 이를 탈을 쓴 호색한이라 몰아붙였습니다.\n“우리 아내들을 넘보는 저 악당은 누구냐? 성자의 탈을 쓴 위선자가 새 사냥꾼처럼 구는구나.”",
+    "cover": [
+     242,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     70,
+     66,
+     340,
+     100
+    ],
+    "ko": "물리친 간청",
+    "cover": [
+     240,
+     224,
+     193
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     70,
+     100,
+     340,
+     226
+    ],
+    "ko": "왕비들은 무모한 짓을 하지 말라 빌며 그가 거룩한 칸띠와디라고 밝혔습니다. 그러나 그들의 변호는 성자가 이미 그들의 마음을 얻었다고 왕을 더 굳게 믿게 했을 뿐입니다.",
+    "cover": [
+     239,
+     224,
+     196
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     80,
+     236,
+     340,
+     324
+    ],
+    "ko": "“이자는 인욕을 말만 할 뿐 행하지 않는다… 감각을 다스리지 못하는 이런 자가 고행의 숲에서 무엇을 하는가?”",
+    "cover": [
+     230,
+     211,
+     170
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     286,
+     754,
+     446
+    ],
+    "ko": "숙고하라는 충고\n\n보살은 흔들리지 않고 왕을 가엾이 여겨, 성냄으로는 진실을 가릴 수 없다며 성급함을 경계했습니다.\n“그대 같은 분이 성급한 짓을 하는 것은 마땅하지 않습니다. 숙고의 길을 따르십시오.”",
+    "cover": [
+     239,
+     223,
+     191
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     246,
+     384,
+     276
+    ],
+    "ko": "인욕의 시험",
+    "cover": [
+     234,
+     214,
+     169
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     46,
+     276,
+     384,
+     380
+    ],
+    "ko": "왕이 비웃으며 외쳤습니다. “네 인욕에 대한 집착을 보자!” 그는 성자가 내민 손을 연꽃 줄기 끊듯 베었습니다.\n그러나 보살은 아픔보다… 앞날의 불행이 보이는 베는 이를 더 슬퍼했습니다.",
+    "cover": [
+     233,
+     216,
+     179
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     60,
+     770,
+     90
+    ],
+    "ko": "흔들리지 않는 서원",
+    "cover": [
+     246,
+     229,
+     162
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     440,
+     90,
+     770,
+     210
+    ],
+    "ko": "성자가 말없이 참는 것을 본 왕은 다른 손과 두 팔, 두 귀와 코와 두 발까지 베었습니다. 그러나 성자는 성내지 않고 제 업을 망치는 그 사람을 깊이 가엾이 여길 뿐이었습니다.\n몸이라는 기계는 언젠가 끝나리라는 앎과, 누구에게나 참는 오랜 수행이 그를 그토록 굳세게 했습니다.",
+    "cover": [
+     246,
+     235,
+     193
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     40,
+     340,
+     70
+    ],
+    "ko": "땅이 물러서다",
+    "cover": [
+     240,
+     226,
+     182
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     66,
+     70,
+     340,
+     174
+    ],
+    "ko": "왕은 불같은 열병에 걸렸습니다. 그가 돌아서자 땅조차 그의 악행을 견디지 못해 갈라졌고, 불길이 그를 삼켰습니다.\n“그 잔인한 짓을 한 왕을… 갑자기 땅이 갈라져 삼켜 버렸다.”",
+    "cover": [
+     229,
+     212,
+     172
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     518,
+     300,
+     796,
+     324
+    ],
+    "ko": "두려움과 안심",
+    "cover": [
+     229,
+     206,
+     164
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     518,
+     324,
+     796,
+     444
+    ],
+    "ko": "성자의 힘이 나라를 태울까 두려워한 대신들이 자비를 빌었습니다. 성자는 왕에게도 나라에도 나쁜 마음이 없다고 그들을 안심시켰습니다.\n“그 왕이 오래 살고 화를 입지 않기를!… 슬픔에 묶인 이는 가엾은 사람이니, 누가 그에게 성내겠는가?”",
+    "cover": [
+     234,
+     214,
+     177
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     340,
+     110,
+     760,
+     162
+    ],
+    "ko": "연민의 이치",
+    "cover": [
+     248,
+     243,
+     224
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     340,
+     162,
+     760,
+     370
+    ],
+    "ko": "성자는 생각했습니다. 부서진 몸이라는 지푸라기 때문에 왜 인욕이라는 보석을 잃겠는가? 죽음은 누구에게나 피할 수 없고, 오직 마음의 상태가 중요합니다.\n“여러 겁 동안 나는 이 하찮은 몸을 갖가지로 잃어 왔다… 그 몸이 부서진다고 어찌 인욕을 버리겠는가?”",
+    "cover": [
+     246,
+     238,
+     221
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/28-Ksantivadin-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     258,
+     296,
+     540,
+     324
+    ],
+    "ko": "마지막 오름",
+    "cover": [
+     227,
+     208,
+     165
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     258,
+     324,
+     540,
+     446
+    ],
+    "ko": "지켜본 이들에게 경건한 법을 가르친 뒤 대사는 서원을 흔들림 없이 지키며 이승을 떠나 천상에 올랐습니다.\n“참으로 인욕의 덕을 온전히 익혀 고요함을 지키는 데 뛰어난 이에게는 견디지 못할 것이 없다.”",
+    "cover": [
+     230,
+     211,
+     170
+    ],
+    "align": "center",
+    "em": 12,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
