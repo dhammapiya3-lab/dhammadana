@@ -1,17 +1,35 @@
 Jataka 006-The-Water-Rakkhasa 15 장
+Pannasa 01-King-Aditta 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 77 개 / 한글판 이야기 301 편
+R2 에 올림: 107 개 / 한글판 이야기 301 편
 새 그림책: 올린 그림 0 장
 공개 주소 확인: 200 1417170바이트
-이야기 Jataka/006-The-Water-Rakkhasa {'pdf': 19101101, 'zip': 18834682, 'n': 15}
-책 Jataka {'pdf': 496448648, 'pdfs': 50591706, 'zip': 496038888, 'stories': 32, 'n': 422}
-이야기 Jatakamala/32-Ayogrha {'pdf': 15084211, 'zip': 14805211, 'n': 15}
-책 Jatakamala {'pdf': 429345351, 'pdfs': 42975891, 'zip': 428915837, 'stories': 32, 'n': 470}
+이야기 Jataka/006-The-Water-Rakkhasa {'pdf': 19099301, 'zip': 18832880, 'n': 15}
+책 Jataka {'pdf': 496446846, 'pdfs': 50592464, 'zip': 496037086, 'stories': 32, 'n': 422}
+이야기 Pannasa/01-King-Aditta {'pdf': 19995300, 'zip': 19732814, 'n': 15}
+책 Pannasa {'pdf': 1033955312, 'pdfs': 99442495, 'zip': 1033404521, 'stories': 50, 'n': 803}
 내려받기 파일: 4 묶음 새로 만듦
 글로 보기: 301 이야기
-18-Verses-2
-08-Light-of-Asia
-04-Kalavaliya-the-Treasurer
-34-Woodpecker
-20-The-Brahmin-Soma
-29-30-Escape-from-Samsara
+To https://github.com/dhammapiya3-lab/dhammadana
+ ! [rejected]        storybooks -> storybooks (fetch first)
+error: failed to push some refs to 'https://github.com/dhammapiya3-lab/dhammadana'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Committer identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <runner@runnervm0hi8g.u4cjkfzw03fevnztpfdmtgt5za.cx.internal.cloudapp.net>) not allowed
+error: cannot pull with rebase: Your index contains uncommitted changes.
+error: Please commit or stash them.
