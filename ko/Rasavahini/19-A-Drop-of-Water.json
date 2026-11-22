@@ -1,0 +1,632 @@
+[
+ {
+  "img": "images/19-A-Drop-of-Water-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     356,
+     112,
+     748,
+     216
+    ],
+    "ko": "물 한 모금\n보시의 보상",
+    "cover": [
+     243,
+     220,
+     155
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     356,
+     220,
+     748,
+     352
+    ],
+    "ko": "자비와 은혜, 그리고 참사람의 법\n(삽뿌리사 담마)의 변치 않는 힘에\n관한 옛이야기\n\n『라사와히니』에서",
+    "cover": [
+     243,
+     219,
+     155
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     37,
+     784,
+     99
+    ],
+    "ko": "운명의 뱃길",
+    "cover": [
+     241,
+     221,
+     160
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     440,
+     99,
+     784,
+     263
+    ],
+    "ko": "한 나그네가 배를 타고 거센 짠다바가\n강을 건너고 있었습니다. 곁에는 고향으로\n돌아가는 임신부가 앉아 있었습니다.\n\n강 한가운데서 갑자기 심한 진통이\n왔습니다. 그녀는 안전하게 아이를\n낳을 수 없는 처지에 갇혔습니다.",
+    "cover": [
+     241,
+     221,
+     161
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     44,
+     372,
+     92
+    ],
+    "ko": "외면한 사람들",
+    "cover": [
+     239,
+     219,
+     157
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     24,
+     96,
+     372,
+     260
+    ],
+    "ko": "지치고 고통스러운 여인은 함께 탄\n사람들에게 물 한 방울만 달라고\n빌었습니다.\n\n제 걱정에 빠진 사람들은 그녀의\n애원을 외면했습니다. 그녀는 홀로\n고통을 견뎌야 했습니다.",
+    "cover": [
+     239,
+     219,
+     158
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     76,
+     303,
+     724,
+     343
+    ],
+    "ko": "나그네의 친절",
+    "cover": [
+     240,
+     222,
+     171
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     76,
+     346,
+     724,
+     427
+    ],
+    "ko": "깊은 연민에 움직인 나그네는 물을 떠서 그녀의 입에 부어 주었습니다.\n이 작은 은혜로 기운을 되찾은 그녀는 무사히 아이를 낳았습니다.\n두 사람은 헤어져 각자의 삶으로 돌아갔습니다.",
+    "cover": [
+     241,
+     224,
+     175
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     242,
+     90,
+     570,
+     132
+    ],
+    "ko": "세월이 흘러: 누명",
+    "cover": [
+     237,
+     218,
+     159
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     242,
+     134,
+     570,
+     260
+    ],
+    "ko": "나그네가 마침내 그녀의 도시에 왔습니다.\n묵을 곳을 찾지 못해 공회당에서 잤습니다.\n그날 밤 도망치던 도둑들이 훔친 왕실 보물을\n그의 곁에 버렸습니다. 왕의 병사들이 와서\n잠든 나그네를 도둑으로 붙잡았습니다.",
+    "cover": [
+     237,
+     218,
+     160
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     382,
+     55,
+     722,
+     99
+    ],
+    "ko": "사형 선고",
+    "cover": [
+     236,
+     216,
+     156
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     382,
+     101,
+     722,
+     215
+    ],
+    "ko": "왕 앞에 끌려간 나그네는 결백을 호소했습니다.\n“저는 도둑이 아니라 나그네일 뿐입니다.”\n믿지 않고 노한 왕은 그를 처형하라고\n명했습니다. 죄 없는 사람이 형장으로\n끌려갔습니다.",
+    "cover": [
+     235,
+     216,
+     157
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     382,
+     54,
+     722,
+     94
+    ],
+    "ko": "잊지 않은 얼굴",
+    "cover": [
+     234,
+     214,
+     153
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     382,
+     96,
+     722,
+     216
+    ],
+    "ko": "형장으로 끌려가는 그를 그 여인이 길에서\n보았습니다. 가슴이 떨렸습니다.\n여러 해 전 강에서 자기 목숨을 살려 준\n나그네임을 단번에 알아본 그녀는\n왕궁으로 달려갔습니다.",
+    "cover": [
+     233,
+     213,
+     155
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     370,
+     704,
+     395
+    ],
+    "ko": "목숨의 값",
+    "cover": [
+     233,
+     213,
+     153
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     100,
+     395,
+     704,
+     439
+    ],
+    "ko": "“그는 도둑이 아닙니다!” 왕이 몸값을 요구하자 그녀가 외쳤습니다.\n“저와 일곱 아들을 종으로 삼으시고 이 사람을 살려 주십시오!”",
+    "cover": [
+     233,
+     213,
+     159
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     254,
+     50,
+     594,
+     96
+    ],
+    "ko": "왕의 의문",
+    "cover": [
+     232,
+     213,
+     149
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     254,
+     98,
+     594,
+     180
+    ],
+    "ko": "놀란 왕이 까닭을 물었습니다.\n왕: “그가 네 오라비냐? 아비냐? 남편이냐?”",
+    "cover": [
+     231,
+     212,
+     152
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     272,
+     284,
+     596,
+     414
+    ],
+    "ko": "여인: “아닙니다, 대왕이시여.”\n\n왕: “빚을 준 사람이냐? 어찌하여\n생판 모르는 사람의 목숨과 가족의\n자유를 바꾸려 하느냐?”",
+    "cover": [
+     232,
+     212,
+     151
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     480,
+     131,
+     776,
+     175
+    ],
+    "ko": "참사람의 덕",
+    "cover": [
+     230,
+     209,
+     149
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     480,
+     179,
+     776,
+     295
+    ],
+    "ko": "“모두가 외면할 때 그만이 연민을\n보여 제 목숨을 살렸습니다. 좋은\n사람은 은혜를 잊지 않습니다.\n그 덕에 제 가족이 있으니\n그를 살려야 합니다.”",
+    "cover": [
+     230,
+     209,
+     154
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     124,
+     212,
+     220,
+     240
+    ],
+    "ko": "씨앗",
+    "cover": [
+     164,
+     73,
+     55
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     352,
+     171,
+     452,
+     200
+    ],
+    "ko": "결과",
+    "cover": [
+     174,
+     84,
+     61
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     584,
+     212,
+     680,
+     240
+    ],
+    "ko": "거둠",
+    "cover": [
+     173,
+     103,
+     86
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     136,
+     268,
+     224,
+     408
+    ],
+    "ko": "나그네가\n죽어 가는\n어머니에게\n물 한 방울을\n줌",
+    "cover": [
+     239,
+     220,
+     166
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     268,
+     258,
+     538,
+     294
+    ],
+    "ko": "업의 짜임",
+    "cover": [
+     238,
+     221,
+     167
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     268,
+     296,
+     538,
+     432
+    ],
+    "ko": "이 깊은 법의 모습에 감동한\n왕은 곧바로 죄 없는 사람을\n풀어 주었습니다.\n\n그들의 비범한 덕을 알아본\n왕은 두 사람에게 큰 재물을\n내렸습니다.",
+    "cover": [
+     239,
+     221,
+     165
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     582,
+     268,
+     672,
+     408
+    ],
+    "ko": "어머니가\n자기 자유를\n내놓아\n죽어 가는\n나그네를\n살림",
+    "cover": [
+     238,
+     220,
+     165
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     380,
+     146,
+     768,
+     187
+    ],
+    "ko": "변치 않는 법의 법칙",
+    "cover": [
+     229,
+     208,
+     148
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     380,
+     189,
+     768,
+     299
+    ],
+    "ko": "두 사람은 선행을 하며 남은 날을 보내고\n마침내 하늘 세계에 태어났습니다.\n“법에 굳게 선 여인도 재물과 칭송을 얻습니다.\n마음을 법과 바른 행실에 두고\n늘 깨끗하게 행하십시오.”",
+    "cover": [
+     229,
+     208,
+     152
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
