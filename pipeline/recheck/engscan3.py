@@ -9,6 +9,7 @@ for book in sorted(os.listdir('/tmp/qa')):
     for sid in sorted(os.listdir(f'/tmp/qa/{book}')):
         p=f'/home/claude/sb/data/ocr/{book}/{sid}.json'
         if not os.path.exists(p): continue
+        if (book,sid)<=tuple(os.environ.get('START','').split('/')+[''])[:2] and os.environ.get('START'): continue
         o=json.load(open(p))
         for n,pg in enumerate(o,1):
             f=f'/tmp/qa/{book}/{sid}/{n:02d}.jpg'
