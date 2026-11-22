@@ -1,0 +1,609 @@
+[
+ {
+  "img": "images/06-The-Elder-Sarana-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     188,
+     290,
+     616,
+     344
+    ],
+    "ko": "사라나 장로의 덕",
+    "cover": [
+     238,
+     220,
+     189
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     188,
+     346,
+     616,
+     418
+    ],
+    "ko": "배신과 신들의 도움,\n그리고 궁극의 귀의처 이야기",
+    "cover": [
+     239,
+     221,
+     189
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     98,
+     364,
+     750,
+     436
+    ],
+    "ko": "사왓티에 부모를 여읜 오누이가 함께 세상을 살아갔습니다. 부모의 마지막 당부를 따라\n오빠는 누이를 돌보다가 훌륭한 남편에게 시집보냈습니다. 그러나 운명의 물결이\n곧 이 가족의 인연을 시험하게 됩니다.",
+    "cover": [
+     231,
+     210,
+     173
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     98,
+     362,
+     750,
+     438
+    ],
+    "ko": "어느 날 누이와 남편은 여섯 빛깔의 빛을 내시는 부처님을 뵈었습니다.\n그들의 그릇을 보신 부처님께서 두 사람을 계와 귀의에 굳게 세우시고\n깊은 가르침을 주셨습니다. “괴로움이 일어날 때마다 여래를 생각하라.”",
+    "cover": [
+     228,
+     206,
+     170
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     146,
+     16,
+     662,
+     46
+    ],
+    "ko": "깨달으신 분의 보호",
+    "cover": [
+     234,
+     210,
+     169
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     146,
+     46,
+     662,
+     74
+    ],
+    "ko": "참된 귀의는 세상의 모든 위험에서 마음을 지켜 줍니다.",
+    "cover": [
+     233,
+     210,
+     173
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     90,
+     234,
+     230,
+     258
+    ],
+    "ko": "• 폭군과 도둑",
+    "cover": [
+     232,
+     206,
+     168
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     330,
+     234,
+     478,
+     258
+    ],
+    "ko": "• 해로운 귀신",
+    "cover": [
+     231,
+     206,
+     167
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     570,
+     234,
+     710,
+     258
+    ],
+    "ko": "• 사나운 짐승",
+    "cover": [
+     233,
+     206,
+     163
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     90,
+     412,
+     230,
+     438
+    ],
+    "ko": "• 자연재해",
+    "cover": [
+     234,
+     208,
+     166
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     330,
+     412,
+     478,
+     438
+    ],
+    "ko": "• 몸이 마르는 병",
+    "cover": [
+     232,
+     207,
+     165
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     570,
+     412,
+     710,
+     438
+    ],
+    "ko": "• 죽음의 두려움",
+    "cover": [
+     232,
+     207,
+     166
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     410,
+     338,
+     754,
+     438
+    ],
+    "ko": "한편 오빠의 아내는 누이의 재산을 몹시 시기했습니다.\n중병에 걸린 척하며 음식을 모두 물리쳤습니다.\n애가 탄 남편이 어떻게 하면 낫겠느냐고 빌자,\n그녀는 끔찍한 조건을 말하려 했습니다.",
+    "cover": [
+     226,
+     203,
+     169
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     74,
+     328,
+     726,
+     436
+    ],
+    "ko": "그녀는 있을 수 없는 것을 요구했습니다. 바로 시누이의 살이었습니다.\n“그것을 얻지 못하면 나는 죽을 거예요.” 그녀가 위협했습니다. 끔찍한 죄였지만\n오빠의 마음은 애욕과 어리석음에 완전히 가려 있었습니다.\n그는 상상할 수 없는 일을 하겠다고 했습니다.",
+    "cover": [
+     233,
+     216,
+     182
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     130,
+     18,
+     670,
+     52
+    ],
+    "ko": "눈먼 마음의 몰락",
+    "cover": [
+     229,
+     213,
+     179
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     130,
+     54,
+     670,
+     88
+    ],
+    "ko": "해로운 애욕에 굴복하면 이성과 도덕이 모두 무너집니다.",
+    "cover": [
+     229,
+     213,
+     182
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     186,
+     126,
+     618,
+     170
+    ],
+    "ko": "1. 재산을 잃음: 세상과 영적인 목표가 썩어 감.",
+    "cover": [
+     230,
+     214,
+     180
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     186,
+     198,
+     618,
+     246
+    ],
+    "ko": "2. 공경을 잃음: 부모와 어른을 저버림.",
+    "cover": [
+     231,
+     213,
+     179
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     178,
+     270,
+     622,
+     318
+    ],
+    "ko": "3. 도덕을 잃음: 도둑질과 거짓말과 폭력이 뿌리내림.",
+    "cover": [
+     230,
+     212,
+     177
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     138,
+     342,
+     662,
+     394
+    ],
+    "ko": "4. 궁극의 배신: 자기 피붙이를 죽이려 함.",
+    "cover": [
+     230,
+     213,
+     177
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     478,
+     52,
+     770,
+     192
+    ],
+    "ko": "빚을 받으러 간다는 핑계로\n오빠는 아이를 밴 누이를 깊고\n외진 숲으로 데려갔습니다.\n수레를 세우고 누이의 머리채를\n움켜쥐고는, 칼을 뽑아 목숨을\n빼앗아 아내의 시기를 채우려\n했습니다.",
+    "cover": [
+     229,
+     208,
+     173
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     478,
+     274,
+     766,
+     414
+    ],
+    "ko": "무서운 습격에 놀라 갑자기\n진통이 왔습니다. 숲 바닥에서\n그녀는 아들을 낳았습니다.\n갓 태어난 조카를 보고 자비를\n베풀어 달라고 오빠에게 빌었지만,\n그의 마음은 굳게 닫혀 있었습니다.",
+    "cover": [
+     226,
+     204,
+     168
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     160,
+     550,
+     304
+    ],
+    "ko": "오빠가 이성을 잃었음을 안\n그녀는 세상의 도움을 구하지\n않았습니다. 말없이 궁극의\n귀의처에 자신을 맡겼습니다.\n마음을 오롯이 부처님께 두고\n깨달으신 분께 깊고 흔들림\n없이 귀의했습니다.",
+    "cover": [
+     225,
+     202,
+     168
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     358,
+     754,
+     430
+    ],
+    "ko": "그녀의 깊은 믿음이 온 우주를 움직였습니다. 큰 반얀나무의 신이 나타나 오빠를\n겁주어 쫓아 버리고 누이를 위로했습니다. 신의 힘으로 그녀와 아기는\n순식간에 사왓티의 안전한 곳으로 옮겨졌습니다.",
+    "cover": [
+     224,
+     201,
+     166
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     238,
+     48,
+     566,
+     188
+    ],
+    "ko": "그녀가 무사히 돌아온 것을 안 남편은\n어떻게 살아났는지 물었습니다. 그녀는\n오빠의 배신과 숲속의 기적이라는\n비극적인 진실을 털어놓았습니다.\n경외와 두려움에 찬 남편은 그녀의 덕이\n지닌 큰 힘을 깨달았습니다.",
+    "cover": [
+     220,
+     198,
+     163
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     354,
+     754,
+     430
+    ],
+    "ko": "깊이 감사한 부부는 부처님과 승가를 모셔 큰 공양을 올렸습니다. 누이는\n계와 귀의 덕분에 살아난 이야기를 아뢰었습니다. 법을 듣고 남편과 아내는\n모두 깨달음의 첫 단계에 이르렀습니다.",
+    "cover": [
+     220,
+     197,
+     161
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     46,
+     360,
+     754,
+     436
+    ],
+    "ko": "숲에서 태어난 아이는 ‘귀의’라는 뜻의 사라나라는 이름을 얻었습니다. 스무 살에 그는\n부처님의 교단에 출가했습니다. 깊은 통찰과 흔들림 없는 평화를 닦아 아라한과를\n얻고 큰 장로 사라나 테라가 되었습니다.",
+    "cover": [
+     219,
+     196,
+     161
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     284,
+     614,
+     420
+    ],
+    "ko": "깨달으신 분을 향한 참된 마음챙김은\n단 한순간이라도 가장 높은 귀의처가 됩니다.\n부처님의 끝없는 덕을 알고\n늘 계라는 귀의처를 구해야 합니다.\n모든 방법으로, 언제나.",
+    "cover": [
+     237,
+     213,
+     169
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

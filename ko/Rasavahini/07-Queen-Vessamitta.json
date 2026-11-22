@@ -1,0 +1,400 @@
+[
+ {
+  "img": "images/07-Queen-Vessamitta-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     152,
+     610,
+     296
+    ],
+    "ko": "웻사밋따의 신심\n삼보에서 찾은\n궁극의 귀의처",
+    "cover": [
+     245,
+     235,
+     218
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     210,
+     312,
+     590,
+     426
+    ],
+    "ko": "꼬삼비에서 웻사밋따 왕비는 부처님의\n설법을 들었습니다. 견줄 데 없는 그분의\n거룩함에 감동하여 깊은 믿음을 얻었습니다.\n삼보에 귀의하여 깨달으신 분의 신심 깊은\n제자가 되었습니다.",
+    "cover": [
+     238,
+     217,
+     179
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     76,
+     264,
+     732,
+     420
+    ],
+    "ko": "이웃 나라 왕이 “나라를 내놓든지 싸우든지 하라.”\n하고 요구하여 평화가 깨졌습니다. 꼬삼비의 왕은\n전쟁에 나서며 웻사밋따에게 일렀습니다. “내가 지면\n붉은 깃발을 올리겠소. 그것을 보면 곧바로 피하시오.”",
+    "cover": [
+     240,
+     226,
+     199
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     116,
+     300,
+     696,
+     430
+    ],
+    "ko": "왕은 용감히 싸웠지만 패배가 다가왔음을 알았습니다.\n쓰러지기 직전에 붉은 깃발을 올렸습니다. 붉은 신호를 본\n웻사밋따는 겁에 질려 정복자들을 피해 집을 떠났습니다.",
+    "cover": [
+     241,
+     227,
+     195
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     164,
+     320,
+     688,
+     418
+    ],
+    "ko": "적군이 웻사밋따를 붙잡아 승리한 왕 앞에 데려갔습니다.\n그녀의 아름다움에 반한 왕은 마음을 빼앗겼습니다.\n대신들에게 그녀를 새 정비로 곧바로 맞을 즉위식을\n준비하라고 명했습니다.",
+    "cover": [
+     240,
+     225,
+     195
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     308,
+     272,
+     736,
+     426
+    ],
+    "ko": "웻사밋따는 왕비 자리를 거절했습니다.\n“남편은 죽었습니다. 제 마음은 슬픔의 불로\n타고 있습니다. 지혜로운 이라면 어찌 활활\n타는 불에 마른 짚을 던지겠습니까? 세상의\n권력으로는 이 아픔에서 벗어날 수 없습니다.”",
+    "cover": [
+     238,
+     223,
+     192
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     224,
+     470,
+     382
+    ],
+    "ko": "거절에 노한 왕은 무서운 최후통첩을\n내렸습니다. 즉위식을 받아들이든지,\n활활 타는 불에 던져지든지 하라는 것\n이었습니다. 웻사밋따는 죄 없는 이를\n죽이면 어두운 업을 짓는다고 일렀지만\n왕은 듣지 않았습니다.",
+    "cover": [
+     227,
+     203,
+     158
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     424,
+     272,
+     756,
+     424
+    ],
+    "ko": "‘이제 세상에 나를 지켜 줄 이가 없다.’ 그녀는\n생각했습니다. 불길에 던져지면서 그녀는 자신을\n온전히 맡겼습니다. 마음을 삼보에 두고 외었습니다.\n“부처님과 담마와 상가께 귀의합니다.”",
+    "cover": [
+     239,
+     218,
+     176
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     116,
+     302,
+     684,
+     410
+    ],
+    "ko": "타오르는 불도 그녀의 살갗 한 땀구멍조차 데우지 못했습니다.\n삼보가 그녀를 지켰습니다. 웻사밋따에게는 활활 타는 불길\n한가운데 앉아 있는 것이 연꽃 속에 편히 쉬는 것처럼\n시원하고 고요했습니다.",
+    "cover": [
+     239,
+     217,
+     175
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     104,
+     392,
+     234
+    ],
+    "ko": "두려움과 놀라움에 찬 왕이 달려\n나왔습니다. 그녀를 조심스레 불길에서\n들어 올려 가장 높은 자리에 앉히고\n절했습니다. “어찌하여 불이 그대를 태우지\n않았소?” 진실을 들으려고 왕이 간청했습니다.",
+    "cover": [
+     236,
+     214,
+     174
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     34,
+     696,
+     112
+    ],
+    "ko": "웻사밋따가 설명했습니다. 궁극의 두려움이 닥칠 때 부모와\n재산과 군대와 신들조차, 세상의 힘은 지켜 주지 못합니다.\n오직 삼보만이 존재의 가장 깊은 불을 막는 뚫을 수 없는\n방패가 됩니다.",
+    "cover": [
+     234,
+     212,
+     171
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     148,
+     132,
+     348,
+     164
+    ],
+    "ko": "거짓 귀의처",
+    "cover": [
+     232,
+     209,
+     170
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     478,
+     132,
+     662,
+     164
+    ],
+    "ko": "참된 귀의처",
+    "cover": [
+     232,
+     208,
+     171
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     128,
+     318,
+     696,
+     412
+    ],
+    "ko": "그녀는 왕에게 비밀을 일러 주었습니다. “나는 부처님께 귀의했습니다.\n담마에 귀의했습니다. 상가에 귀의했습니다.\n그 힘으로 불이 나를 태우지 못했습니다.”",
+    "cover": [
+     233,
+     209,
+     167
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     330,
+     700,
+     410
+    ],
+    "ko": "세 가지 귀의처를 굳게 붙잡는 이는 궁극의 괴로움에 떨어지지 않습니다.\n귀의는 슬픔을 없애고 온전한 안전을 주며 가장 높은 행복을 줍니다.\n그것이 불에서 연꽃으로 가는 오직 하나의 길입니다.",
+    "cover": [
+     230,
+     207,
+     168
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     318,
+     696,
+     412
+    ],
+    "ko": "마음이 맑아진 왕은 용서를 빌었습니다. 그는 웻사밋따를 자기\n어머니처럼 모시겠다고 선언했습니다. 그녀의 깊은 본보기를 따라\n왕과 온 나라가 삼보에 귀의하여 덕행의 길로 들어섰습니다.",
+    "cover": [
+     228,
+     203,
+     163
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     182,
+     180,
+     618,
+     272
+    ],
+    "ko": "가장 높은 귀의처를 붙잡아 웻사밋따는\n타오르는 불 한가운데서 시원한 평화를 찾았습니다.\n그대도 가장 높은 귀의처의 덕을 지킨다면\n어찌 궁극의 해탈이라는 시원한 평화를 얻지 못하겠습니까?",
+    "cover": [
+     236,
+     221,
+     192
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
