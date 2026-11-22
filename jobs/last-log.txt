@@ -1,11 +1,35 @@
-Foremost-Nuns 04-Patacara 30 장
+After-Awakening 01-03-After-Awakening 14 장
+After-Awakening 04-Tapussa-Bhallika 11 장
+After-Awakening 05-Brahmas-Request 12 장
+After-Awakening 06-08-First-Teachings 15 장
+After-Awakening 10-11-Further-Attainments 12 장
+After-Awakening 12-Yasas-Going-Forth 11 장
+After-Awakening 13-14-Yasas-Parents 15 장
+After-Awakening 15-16-Yasas-Friends 11 장
+After-Awakening 20-Good-Group-of-Friends 10 장
+After-Awakening 21-35-Miracles 13 장
+After-Awakening 36-38-Kassapa-Brothers 15 장
+After-Awakening 39-40-King-Bimbisara 12 장
+After-Awakening 41-42-Sariputta-and-Others 13 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 107 개 / 한글판 이야기 316 편
+R2 에 올림: 375 개 / 한글판 이야기 316 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1516930바이트
-이야기 Foremost-Nuns/04-Patacara {'pdf': 36893185, 'zip': 36618654, 'n': 30}
-책 Foremost-Nuns {'pdf': 385963196, 'pdfs': 40858360, 'zip': 385610515, 'stories': 13, 'n': 283}
-내려받기 파일: 2 묶음 새로 만듦
+공개 주소 확인: 200 1370538바이트
+이야기 After-Awakening/01-03-After-Awakening {'pdf': 16565822, 'zip': 16296798, 'n': 14}
+이야기 After-Awakening/04-Tapussa-Bhallika {'pdf': 11621917, 'zip': 11348935, 'n': 11}
+이야기 After-Awakening/05-Brahmas-Request {'pdf': 12319417, 'zip': 12047653, 'n': 12}
+이야기 After-Awakening/06-08-First-Teachings {'pdf': 16147008, 'zip': 15874260, 'n': 15}
+이야기 After-Awakening/10-11-Further-Attainments {'pdf': 12386134, 'zip': 12113998, 'n': 12}
+이야기 After-Awakening/12-Yasas-Going-Forth {'pdf': 12983306, 'zip': 12714610, 'n': 11}
+이야기 After-Awakening/13-14-Yasas-Parents {'pdf': 15778120, 'zip': 15506913, 'n': 15}
+이야기 After-Awakening/15-16-Yasas-Friends {'pdf': 11350480, 'zip': 11079432, 'n': 11}
+이야기 After-Awakening/20-Good-Group-of-Friends {'pdf': 12610099, 'zip': 12335406, 'n': 10}
+이야기 After-Awakening/21-35-Miracles {'pdf': 13920593, 'zip': 13645464, 'n': 13}
+이야기 After-Awakening/36-38-Kassapa-Brothers {'pdf': 17743994, 'zip': 17462395, 'n': 15}
+이야기 After-Awakening/39-40-King-Bimbisara {'pdf': 14627645, 'zip': 14348461, 'n': 12}
+이야기 After-Awakening/41-42-Sariputta-and-Others {'pdf': 12269202, 'zip': 11983005, 'n': 13}
+책 After-Awakening {'pdf': 177071107, 'pdfs': 18100214, 'zip': 176756423, 'stories': 13, 'n': 164}
+내려받기 파일: 14 묶음 새로 만듦
 글로 보기: 316 이야기
 18-Verses-2
 08-Light-of-Asia
