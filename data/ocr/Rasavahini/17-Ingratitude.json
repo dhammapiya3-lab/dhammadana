@@ -1,0 +1,446 @@
+[
+ {
+  "img": "images/17-Ingratitude-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     109,
+     338
+    ],
+    "bbox": [
+     307,
+     1065,
+     2341,
+     1299
+    ],
+    "shape": "box",
+    "en": "The Virtue of Loyalty The Peril of Ingratitude Tale of Betrayal, Survival, and Cosmic Justice from Buddhist Literature",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Ingratitude-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "NOY",
+   "Life",
+   "Led",
+   "Astray",
+   "Following",
+   "the",
+   "Buddha’s",
+   "passing,",
+   "destitute",
+   "man",
+   "wandered",
+   "into",
+   "border",
+   "village,",
+   "finding",
+   "shelter",
+   "and",
+   "making",
+   "friends",
+   "Later,",
+   "turned",
+   "thievery",
+   "survive.",
+   "Captured",
+   "the",
+   "King’s",
+   "guards,",
+   "was",
+   "thrown",
+   "into",
+   "harsh",
+   "prison,",
+   "bound",
+   "heavy",
+   "iron",
+   "chains",
+   "for",
+   "twelve",
+   "long",
+   "years"
+  ]
+ },
+ {
+  "img": "images/17-Ingratitude-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Loyal",
+   "Swap",
+   "After",
+   "twelve",
+   "years,",
+   "his",
+   "old",
+   "friend",
+   "visited",
+   "the",
+   "prison.",
+   "Weeping,",
+   "the",
+   "friend",
+   "promised",
+   "help.",
+   "Desperate",
+   "for",
+   "single",
+   "decent",
+   "meal,",
+   "the",
+   "prisoner",
+   "convinced",
+   "the",
+   "guards",
+   "let",
+   "his",
+   "friend",
+   "fetch",
+   "food,",
+   "offering",
+   "wear",
+   "double",
+   "chains",
+   "and",
+   "take",
+   "his",
+   "place",
+   "collateral."
+  ]
+ },
+ {
+  "img": "images/17-Ingratitude-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     281,
+     112
+    ],
+    "bbox": [
+     883,
+     245,
+     1749,
+     1253
+    ],
+    "shape": "bubble",
+    "en": "The Illusion of Friendship The friend never returned. The protagonist realized bitter truth: Beauty Intellect: Meaningless if devoid of virtue Wealth: Useless if it lacks generosity Friendship: Worthless if the friend turns their back during times of hardship.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Ingratitude-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     42,
+     301
+    ],
+    "bbox": [
+     102,
+     985,
+     1237,
+     1395
+    ],
+    "shape": "box",
+    "en": "Freedom in Isolation Twelve more years passed. When royal prince was born the King declared general amnesty, freeing all prisoners and animals. Though the doors opened, the betrayed man stayed behind. Frail and ashamed, he had no trusted friends left in the city to offer him food.",
+    "conf": 87
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Ingratitude-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     482,
+     59
+    ],
+    "bbox": [
+     1458,
+     172,
+     2536,
+     565
+    ],
+    "shape": "box",
+    "en": "Desperate Feast Driven by starvation, he crept into terrifying charnel ground at night. Finding fresh corpse, he built fire, created hearth from skulls, and began boiling human flesh just it to survive the agonizing hunger.",
+    "conf": 61
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Ingratitude-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     449,
+     57
+    ],
+    "bbox": [
+     1461,
+     172,
+     2536,
+     509
+    ],
+    "shape": "box",
+    "en": "The Divine Witness Atree tree deity witnessed this act. Deity: “In this terrifying darkness, why do you cook human flesh?”",
+    "conf": 65
+   },
+   {
+    "seed": [
+     310,
+     347
+    ],
+    "bbox": [
+     979,
+     1121,
+     1670,
+     1362
+    ],
+    "shape": "box",
+    "en": "Man: “Not for ritual, nor for charity. There is no affliction equal to hunger cook to destroy my starvation",
+    "conf": 75
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Ingratitude-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     240,
+     317
+    ],
+    "bbox": [
+     784,
+     1038,
+     1964,
+     1402
+    ],
+    "shape": "box",
+    "en": "Shielding from the Tainted The deity asked why he used rag to block the wind. ind fi Man: “If the wind ind touches Icnes my ungrateful, ra treacherous ch friend, and then en touches Ti ii me, it brings only suffering. erin wear this rag to block the poison of his existence.”",
+    "conf": 51
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Ingratitude-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Ultimate",
+   "Danger",
+   "Worldly",
+   "threats",
+   "are",
+   "limited,",
+   "but",
+   "the",
+   "ungrateful",
+   "person",
+   "embodies",
+   "them",
+   "all.",
+   "Kings:",
+   "Confiscate",
+   "wealth.",
+   "Thieves:",
+   "Steal",
+   "belongings.",
+   "Fire",
+   "Water:",
+   "Destroy",
+   "homes.",
+   "The",
+   "Ungrateful:",
+   "Bring",
+   "all",
+   "these",
+   "ruins",
+   "simultaneously.",
+   "They",
+   "are",
+   "avoided",
+   "from",
+   "afar."
+  ]
+ },
+ {
+  "img": "images/17-Ingratitude-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Root",
+   "All",
+   "Vices",
+   "The",
+   "ungrateful",
+   "person",
+   "not",
+   "just",
+   "disloyal;",
+   "their",
+   "lack",
+   "virtue",
+   "invites",
+   "infinite",
+   "suffering.",
+   "Association",
+   "inevitably",
+   "leads",
+   "the",
+   "destruction",
+   "morality:",
+   "theft,",
+   "violence,",
+   "deception,",
+   "intoxication,",
+   "and",
+   "endless",
+   "conflict.",
+   "They",
+   "bring",
+   "misfortune."
+  ]
+ },
+ {
+  "img": "images/17-Ingratitude-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     329,
+     301
+    ],
+    "bbox": [
+     879,
+     959,
+     2430,
+     1428
+    ],
+    "shape": "box",
+    "en": "Echoes of the Mangala Sutta The deity realized the mortal’s wisdom mirrored the Buddha’s highest teachings. 1 heard the Master preach the Mangala Sutta: To avoid fools, to associate with the wise, and to honor those worthy of honor—this is the highest blessing.”",
+    "conf": 53
+   }
+  ],
+  "loose": [
+   "HIN"
+  ]
+ },
+ {
+  "img": "images/17-Ingratitude-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     509,
+     80
+    ],
+    "bbox": [
+     1604,
+     231,
+     2460,
+     830
+    ],
+    "shape": "box",
+    "en": "From Prisoner to King Moved by his profound understanding of virtue, the deity rewarded the man. Transported to celestial mansion, bathed, and dressed in divine garments, he was crowned king of that realm by the deity’s power. He ruled righteously.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-Ingratitude-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     301,
+     340
+    ],
+    "bbox": [
+     301,
+     1108,
+     2347,
+     1458
+    ],
+    "shape": "box",
+    "en": "The Path of the Wise Abandon Seek the company of the wicked and ungrateful. Seek the fellowship of the pure and wise. Fulfill wholesome some deeds, this such and as generosity. Through these actions, one secures peace eace in this life and the ultimate bliss of heavenly realms",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ }
+]

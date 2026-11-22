@@ -1,0 +1,435 @@
+[
+ {
+  "img": "images/03-04-In-the-Garden-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Pavilion",
+   "Journey",
+   "Tamil",
+   "Buddhist",
+   "Epic",
+   "tal",
+   "Crystal",
+   "Books"
+  ]
+ },
+ {
+  "img": "images/03-04-In-the-Garden-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Manimekhalai",
+   "wept",
+   "for",
+   "the",
+   "tragic",
+   "fate",
+   "her",
+   "father,",
+   "Kovalan.",
+   "Her",
+   "sorrowful",
+   "tears",
+   "fell",
+   "upon",
+   "flower",
+   "garland",
+   "she",
+   "wove,",
+   "contaminating",
+   "it.",
+   "distract",
+   "her",
+   "from",
+   "grief,",
+   "she",
+   "was",
+   "directed",
+   "gather",
+   "fresh",
+   "flowers."
+  ]
+ },
+ {
+  "img": "images/03-04-In-the-Garden-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Her",
+   "companion",
+   "Sutamati",
+   "warned",
+   "against",
+   "wandering",
+   "the",
+   "city",
+   "alone.",
+   "She",
+   "recounted",
+   "her",
+   "own",
+   "abduction",
+   "Vidyadhara",
+   "during",
+   "festival",
+   "Indra",
+   "Knowing",
+   "the",
+   "dangers",
+   "that",
+   "beset",
+   "solitary",
+   "young",
+   "women",
+   "Sutamati",
+   "offered",
+   "escort",
+   "her.",
+   "flying",
+   "ying",
+   "(INS"
+  ]
+ },
+ {
+  "img": "images/03-04-In-the-Garden-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ecting",
+   "unsafe",
+   "city",
+   "parks,",
+   "led",
+   "her",
+   "sacred",
+   "garden",
+   "outside",
+   "the",
+   "city",
+   "walls.",
+   "Dedicated",
+   "the",
+   "Buddha,",
+   "the",
+   "garden",
+   "housed",
+   "miraculous",
+   "crystal",
+   "pavilion",
+   "containing",
+   "pristine",
+   "lotus",
+   "seat",
+   "with",
+   "the",
+   "Master’s",
+   "footmarks.",
+   "ING"
+  ]
+ },
+ {
+  "img": "images/03-04-In-the-Garden-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "architect",
+   "Maya,",
+   "the",
+   "min",
+   "Pure",
+   "Focus:",
+   "Flowers",
+   "bloom",
+   "instantly.",
+   "Unwavering",
+   "Will:",
+   "Blossoms",
+   "never",
+   "fade.",
+   "Distracted",
+   "Mind:",
+   "Actions",
+   "bear",
+   "fruit;",
+   "flowers",
+   "cannot",
+   "leave",
+   "the"
+  ]
+ },
+ {
+  "img": "images/03-04-In-the-Garden-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     347,
+     124
+    ],
+    "bbox": [
+     1025,
+     337,
+     1623,
+     1203
+    ],
+    "shape": "box",
+    "en": "While the nuns sought peace, the city erupted in chaos. The state elephant, Kalavégam, went into destructive must. The Cola prince, Udayakumara, yakumara, rode out with his royal guard, successfully taming the beast and restoring order.",
+    "conf": 50
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-04-In-the-Garden-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Returning",
+   "victorious,",
+   "the",
+   "Prince",
+   "saw",
+   "merchant",
+   "frozen",
+   "mid-song",
+   "with",
+   "his",
+   "vina.",
+   "The",
+   "merchant",
+   "explained:",
+   "seeing",
+   "Manimékhalai",
+   "novitiate",
+   "garb",
+   "triggered",
+   "tragic",
+   "memories",
+   "Plunged",
+   "into",
+   "sorrow,",
+   "his",
+   "fingers",
+   "struck",
+   "the",
+   "wrong",
+   "string."
+  ]
+ },
+ {
+  "img": "images/03-04-In-the-Garden-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Realizing",
+   "Manimékhalai",
+   "was",
+   "near,",
+   "Prince",
+   "Udayakumara",
+   "abandoned",
+   "his",
+   "procession.",
+   "fe:",
+   "Driven",
+   "deep",
+   "infatuation,",
+   "turned",
+   "his",
+   "chariot",
+   "toward",
+   "the",
+   "flower",
+   "garden,",
+   "determined",
+   "bring",
+   "the",
+   "young",
+   "novitiate",
+   "back",
+   "with",
+   "him."
+  ]
+ },
+ {
+  "img": "images/03-04-In-the-Garden-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     90,
+     67
+    ],
+    "bbox": [
+     73,
+     122,
+     876,
+     1412
+    ],
+    "shape": "bubble",
+    "en": "Hearing the rattle of approaching wheels, Manimekhalai knew the Prince was coming. Following Sutamati’s urgent advice, she locked herself safely inside the crystal pavilion. Sutamati took her stand outside, ready to face the Prince.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/03-04-In-the-Garden-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Prince",
+   "confronted",
+   "Sutamati",
+   "“Has",
+   "she",
+   "attained",
+   "the",
+   "wisdom",
+   "she",
+   "sought?",
+   "Have",
+   "her",
+   "enchanting",
+   "eyes",
+   "returned?",
+   "Why",
+   "has",
+   "she",
+   "abandoned",
+   "the",
+   "vihara",
+   "for",
+   "this",
+   "garden?”",
+   "Trapped",
+   "his",
+   "gaze,",
+   "Sutamati",
+   "prepared",
+   "speak",
+   "undeniable",
+   "truth"
+  ]
+ },
+ {
+  "img": "images/03-04-In-the-Garden-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sutamati",
+   "challenged",
+   "the",
+   "Cola",
+   "wisdom:",
+   "buman",
+   "body",
+   "illusion.",
+   "Strip",
+   "away",
+   "its",
+   "decorations,",
+   "and",
+   "merely",
+   "flesh.",
+   "vessel",
+   "decay,",
+   "disease,",
+   "hatred,",
+   "and",
+   "endless",
+   "suffering.",
+   "Gurn",
+   "from",
+   "this",
+   "attachment.”"
+  ]
+ },
+ {
+  "img": "images/03-04-In-the-Garden-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "LOD",
+   "Before",
+   "profound",
+   "words",
+   "could",
+   "fully",
+   "penetrate",
+   "his",
+   "mind,",
+   "the",
+   "Prince",
+   "looked",
+   "past",
+   "ber.",
+   "Ghere,",
+   "enshrined",
+   "within",
+   "the",
+   "impenetrable",
+   "crystal",
+   "chamber,",
+   "saw",
+   "the",
+   "serene",
+   "and",
+   "untouchable",
+   "form",
+   "Manimekhalai.",
+   "Before"
+  ]
+ }
+]

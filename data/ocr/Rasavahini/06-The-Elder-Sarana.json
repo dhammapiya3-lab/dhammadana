@@ -1,0 +1,552 @@
+[
+ {
+  "img": "images/06-The-Elder-Sarana-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     261,
+     325
+    ],
+    "bbox": [
+     602,
+     942,
+     2050,
+     1392
+    ],
+    "shape": "box",
+    "en": "Vir tue of Saranattherd Tale of Betrayal, Divine Intervention, and the Ultimate Sanctuary",
+    "conf": 31
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     121,
+     388
+    ],
+    "bbox": [
+     341,
+     1217,
+     2301,
+     1451
+    ],
+    "shape": "box",
+    "en": "In Savatthi, an orphaned brother and sister faced the world together. Honoring their parents’ final wishes, the brother cared for his sister until she was wed to worthy husband. Yet, the currents of fate would soon test their family bonds.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "VAS"
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     112,
+     372
+    ],
+    "bbox": [
+     341,
+     1217,
+     2301,
+     1451
+    ],
+    "shape": "box",
+    "en": "One day, the sister and her husband encountered the Buddha, radiating six-colored light. Seeing their potential, he established them in the Precepts and Refuges. He imparted profound teaching: “Whenever suffering arises, remember the Tathagata.”",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     207,
+     24
+    ],
+    "bbox": [
+     469,
+     46,
+     2195,
+     238
+    ],
+    "shape": "box",
+    "en": "The he Protections of the Awakened One True tue refuge offers sanctuary of mind against all worldly perils:",
+    "conf": 83
+   },
+   {
+    "seed": [
+     155,
+     239
+    ],
+    "bbox": [
+     314,
+     764,
+     747,
+     846
+    ],
+    "shape": "bubble",
+    "en": "Tyrants and Thieves",
+    "conf": 96
+   },
+   {
+    "seed": [
+     346,
+     239
+    ],
+    "bbox": [
+     1108,
+     767,
+     1534,
+     846
+    ],
+    "shape": "box",
+    "en": "Malevolent Spirits",
+    "conf": 96
+   },
+   {
+    "seed": [
+     603,
+     240
+    ],
+    "bbox": [
+     1894,
+     767,
+     2328,
+     846
+    ],
+    "shape": "bubble",
+    "en": "Wild Beasts",
+    "conf": 96
+   },
+   {
+    "seed": [
+     586,
+     425
+    ],
+    "bbox": [
+     1898,
+     1356,
+     2324,
+     1438
+    ],
+    "shape": "bubble",
+    "en": "The Fear of Death",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "Diseases"
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     420,
+     343
+    ],
+    "bbox": [
+     1346,
+     1127,
+     2480,
+     1451
+    ],
+    "shape": "box",
+    "en": "Meanwhile, the brother’s own wife grew consumed by toxic jealousy over the sister’s wealth. Feigning grave illness, she refused all food. When her desperate husband begged to know how to cure her, she prepared to reveal her dark condition.",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "ANY",
+   "WAS"
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     94,
+     343
+    ],
+    "bbox": [
+     261,
+     1098,
+     2380,
+     1418
+    ],
+    "shape": "box",
+    "en": "She demanded the impossible: the flesh of his sister. “If do not get it, will die,” she threatened. Though heinous crime, the brother’s mind was clouded entirely by infatuation and delusion. He agreed to the unthinkable.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     212,
+     42
+    ],
+    "bbox": [
+     450,
+     69,
+     2199,
+     281
+    ],
+    "shape": "box",
+    "en": "The Downfall of the Blinded Mind Yielding to toxic infatuation destroys all reason and morality",
+    "conf": 76
+   },
+   {
+    "seed": [
+     216,
+     216
+    ],
+    "bbox": [
+     628,
+     674,
+     2020,
+     797
+    ],
+    "shape": "box",
+    "en": "2. Loss of Parents and are discarded.",
+    "conf": 95
+   },
+   {
+    "seed": [
+     209,
+     297
+    ],
+    "bbox": [
+     605,
+     916,
+     2043,
+     1041
+    ],
+    "shape": "box",
+    "en": "3. Loss of Morality: Theft, lies, and violence take root.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     578,
+     372
+    ],
+    "bbox": [
+     466,
+     1157,
+     2182,
+     1293
+    ],
+    "shape": "box",
+    "en": "4. The Ultimate Betrayal: Willingness to murder one’s OW kin.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     485,
+     53
+    ],
+    "bbox": [
+     1580,
+     162,
+     2539,
+     625
+    ],
+    "shape": "box",
+    "en": "Under the guise of collecting debt, the brother lured his pregnant sister into deep, secluded forest. Stopping 5 their cart, he seized her by the hair, drawing weapon to end her life and satisfy his wife’s jealousy.",
+    "conf": 87
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     494,
+     281
+    ],
+    "bbox": [
+     1580,
+     913,
+     2539,
+     1375
+    ],
+    "shape": "box",
+    "en": "The sheer terror of the assault triggered sudden labor. On the forest floor, she gave birth to son. She begged her brother to look at his newborn nephew and find mercy, but his heart remained hardened against her cries",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     261,
+     160
+    ],
+    "bbox": [
+     830,
+     509,
+     1818,
+     1002
+    ],
+    "shape": "box",
+    "en": "Realizing her brother was beyond reason, she sought no worldly help. In silence, she surrendered to the ultimate sanctuary. She focused her mind entirely on the Buddha, taking profound and unshakable Bees in the Awakened One.",
+    "conf": 46
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Her",
+   "faith",
+   "moved",
+   "the",
+   "cosmos.",
+   "The",
+   "deity",
+   "the",
+   "great",
+   "Banyan",
+   "tree",
+   "manifested,",
+   "terrified",
+   "the",
+   "brother",
+   "into",
+   "flight,",
+   "and",
+   "comforted",
+   "the",
+   "sister.",
+   "Through",
+   "divine",
+   "power,",
+   "she",
+   "and",
+   "her",
+   "child",
+   "were",
+   "instantly",
+   "transported",
+   "safety",
+   "Savatthi.",
+   "profound"
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     264,
+     49
+    ],
+    "bbox": [
+     784,
+     152,
+     1865,
+     615
+    ],
+    "shape": "box",
+    "en": "Discovering her safe return, her husband questioned how she survived. She revealed the tragic truth of her brother’s betrayal and the miracle in the forest. Filled with awe and dread, the husband realized the immense power of her virtue.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "gratitude,",
+   "the",
+   "couple",
+   "invited",
+   "the",
+   "Buddha",
+   "and",
+   "Sangha",
+   "for",
+   "great",
+   "The",
+   "sister",
+   "recounted",
+   "her",
+   "survival",
+   "through",
+   "the",
+   "Precepts",
+   "and",
+   "Refuge.",
+   "Upon",
+   "hearing",
+   "the",
+   "Dharma,",
+   "both",
+   "husband",
+   "and",
+   "wife",
+   "attained",
+   "the",
+   "first",
+   "stage",
+   "Awakening."
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "child",
+   "born",
+   "the",
+   "forest",
+   "was",
+   "named",
+   "Sarana—meaning",
+   "‘Refuge.’",
+   "twenty,",
+   "the",
+   "Buddha’s",
+   "dispensation.",
+   "Cultivating",
+   "deep",
+   "insight",
+   "and",
+   "unshakeable",
+   "peace,",
+   "attained",
+   "becoming",
+   "the",
+   "great",
+   "elder",
+   "Saranatthera.",
+   "The",
+   "Arahatship,"
+  ]
+ },
+ {
+  "img": "images/06-The-Elder-Sarana-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     306,
+     289
+    ],
+    "bbox": [
+     582,
+     913,
+     2066,
+     1438
+    ],
+    "shape": "bubble",
+    "en": "single moment of true mindfulness directed toward the Awakened One offers the highest sanctuary. Knowing the boundless virtues of the Buddba, one should always seek the refuge of morality. In all ways, at all times.",
+    "conf": 51
+   }
+  ],
+  "loose": []
+ }
+]

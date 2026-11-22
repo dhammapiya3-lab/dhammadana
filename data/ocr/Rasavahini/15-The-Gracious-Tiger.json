@@ -1,0 +1,613 @@
+[
+ {
+  "img": "images/15-The-Gracious-Tiger-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "[BS",
+   "The",
+   "Virtue",
+   "the",
+   "Gracious",
+   "Tiger",
+   "tale",
+   "savage",
+   "men",
+   "civilized",
+   "beasts"
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     518,
+     69
+    ],
+    "bbox": [
+     1670,
+     195,
+     2506,
+     969
+    ],
+    "shape": "box",
+    "en": "Deep in the forests of Jambudipa, beyond Varanasi, an unlikely fellowship bloomed. fearsome tiger lived only to care for his blind father. At the forest edge lived Tundila, the parrot. parrot. Two beasts bound by absolute, unwavering friendship.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Beloved",
+   "Friends)"
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "harmony",
+   "was",
+   "broken",
+   "intruder",
+   "from",
+   "the",
+   "border",
+   "village.",
+   "Fleeing",
+   "bitter",
+   "domestic",
+   "quarrel,",
+   "man",
+   "stormed",
+   "blindly",
+   "into",
+   "the",
+   "wilderness.",
+   "carried",
+   "his",
+   "anger",
+   "into",
+   "domain",
+   "did",
+   "not",
+   "understand."
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     256,
+     65
+    ],
+    "bbox": [
+     817,
+     179,
+     1445,
+     384
+    ],
+    "shape": "bubble",
+    "en": "Metta Seeing (Loving-kindness): (Loving-kindness): the man’s distress.",
+    "conf": 73
+   },
+   {
+    "seed": [
+     340,
+     140
+    ],
+    "bbox": [
+     860,
+     446,
+     1438,
+     671
+    ],
+    "shape": "bubble",
+    "en": "Kampamanahadayo (Trembling Heart): Feeling deep empathy.",
+    "conf": 48
+   },
+   {
+    "seed": [
+     302,
+     231
+    ],
+    "bbox": [
+     909,
+     737,
+     1442,
+     962
+    ],
+    "shape": "bubble",
+    "en": "The Warning: Do not enter! fierce tiger rules this wood.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "=(6)",
+   "The",
+   "Voice",
+   "Compassion",
+   "Tundila",
+   "saw",
+   "the",
+   "miserable",
+   "traveler.",
+   "His",
+   "heart",
+   "trembled",
+   "with",
+   "pity.",
+   "warned",
+   "the",
+   "man",
+   "the",
+   "deadly",
+   "tiger",
+   "ahead,",
+   "urging",
+   "him",
+   "turn",
+   "back.",
+   "But",
+   "corrupted",
+   "mind",
+   "hears",
+   "only",
+   "what",
+   "wishes."
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ghe",
+   "First",
+   "Gransgression",
+   "Ignoring",
+   "the",
+   "warning,",
+   "the",
+   "ungrateful",
+   "man",
+   "struck",
+   "Tundila",
+   "down",
+   "and",
+   "devoured",
+   "him.",
+   "The",
+   "wise",
+   "warn:",
+   "embracing",
+   "the",
+   "wicked",
+   "like",
+   "hugging",
+   "fire.",
+   "Feeding",
+   "the",
+   "ungrateful",
+   "like",
+   "nursing",
+   "viper."
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     519,
+     45
+    ],
+    "bbox": [
+     1597,
+     132,
+     2566,
+     747
+    ],
+    "shape": "box",
+    "en": "Ghe Deception Encountering the roaring tiger, the man’s courage vanished Trembling, he forged desperate lie “am sent by your beloved friend, Tundila.” Upon hearing his friend’s name, the tiger’s wrath instantly dissolved",
+    "conf": 59
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     227,
+     330
+    ],
+    "bbox": [
+     311,
+     1084,
+     2341,
+     1415
+    ],
+    "shape": "box",
+    "en": "6 Che Hospitality of the Beast Rejoicing at news of his friend, the tiger welcomed the stranger. He fed the murderer lavish feast, offering him the safety of the cave. Leaving the guest with his blind father, the tiger departed to hunt.",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     62,
+     355
+    ],
+    "bbox": [
+     86,
+     1151,
+     1164,
+     1408
+    ],
+    "shape": "box",
+    "en": "The blind father heard the stranger’s crude words and deduced the tragic truth.",
+    "conf": 92
+   },
+   {
+    "seed": [
+     493,
+     351
+    ],
+    "bbox": [
+     1491,
+     1151,
+     2566,
+     1408
+    ],
+    "shape": "box",
+    "en": "Deep in the forest, the son found the green feathers of his slain friend.",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     122,
+     89
+    ],
+    "bbox": [
+     182,
+     245,
+     1213,
+     916
+    ],
+    "shape": "bubble",
+    "en": "The Ultimate Betrayal Realizing his lie was exposed, the wicked man struck the blind father dead with stone. He then hid in the shadows, waiting to ambush the grieving son. There is no bottom to the depravity of the wicked",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ghe",
+   "Moment",
+   "Judgment",
+   "Ghe",
+   "son",
+   "returned",
+   "find",
+   "bis",
+   "father",
+   "murdered.",
+   "Gerrified",
+   "the",
+   "overwhelming",
+   "majesty,",
+   "the",
+   "treacherous",
+   "man",
+   "threw",
+   "himself",
+   "the",
+   "feet,",
+   "begging",
+   "for",
+   "life.",
+   "Ghe"
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     301,
+     330
+    ],
+    "bbox": [
+     225,
+     1088,
+     2423,
+     1329
+    ],
+    "shape": "box",
+    "en": "The Virtuous Choice The tiger looked upon the murderer of his father and best friend. Yet, he extinguished the fire in his heart You came bearing the name of my friend. You are my guest. It is not right to betray you. He let the killer walk free.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     189,
+     33
+    ],
+    "bbox": [
+     489,
+     96,
+     2162,
+     387
+    ],
+    "shape": "box",
+    "en": "Ghe Reversal of Nature Virtue is defined by action, not by birth or form",
+    "conf": 92
+   },
+   {
+    "seed": [
+     490,
+     207
+    ],
+    "bbox": [
+     1478,
+     605,
+     2427,
+     942
+    ],
+    "shape": "box",
+    "en": "Savage (Asappurisa) Murderer, Betrayer, Ungrateful",
+    "conf": 92
+   },
+   {
+    "seed": [
+     488,
+     337
+    ],
+    "bbox": [
+     1478,
+     1051,
+     2427,
+     1372
+    ],
+    "shape": "box",
+    "en": "Civilized (Sappurisa) Gracious, Forgiving, Honorable",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "The",
+   "Villager",
+   "Cwilized",
+   "Human",
+   "The",
+   "Tiger",
+   "Savage",
+   "Beast",
+   "Outward",
+   "Form",
+   "Inward",
+   "Action"
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     301,
+     209
+    ],
+    "bbox": [
+     992,
+     648,
+     1326,
+     813
+    ],
+    "shape": "box",
+    "en": "Association iation with the Good (Sappurisa)",
+    "conf": 56
+   },
+   {
+    "seed": [
+     464,
+     194
+    ],
+    "bbox": [
+     1478,
+     641,
+     1842,
+     764
+    ],
+    "shape": "box",
+    "en": "Dispels Suffering Unending Peace",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "The",
+   "Law",
+   "Association",
+   "The",
+   "wise",
+   "counsel",
+   "carefully",
+   "choose",
+   "our",
+   "company.",
+   "Who",
+   "associate",
+   "with",
+   "determines",
+   "our",
+   "ultimate",
+   "destination.",
+   "Association",
+   "with",
+   "the",
+   "Wicked",
+   "(Asappurisa)",
+   "Deception",
+   "Betrayal",
+   "Ruin",
+   "this",
+   "world",
+   "and",
+   "the",
+   "next"
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Reward",
+   "Compassion",
+   "Even",
+   "fierce",
+   "beast,",
+   "bound",
+   "diet",
+   "flesh,",
+   "achieved",
+   "heaven",
+   "through",
+   "unrelenting",
+   "compassion",
+   "honoring",
+   "his",
+   "guest",
+   "over",
+   "his",
+   "grief,",
+   "the",
+   "gracious",
+   "tiger",
+   "secured",
+   "his",
+   "place",
+   "the",
+   "celestial",
+   "realms"
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Therefore,",
+   "cultivate",
+   "compassion",
+   "constantly",
+   "for",
+   "all",
+   "beings.",
+   "this",
+   "unending",
+   "grace",
+   "that",
+   "grants",
+   "true",
+   "wealth",
+   "across",
+   "all",
+   "existences.",
+   "The",
+   "Buddha"
+  ]
+ }
+]

@@ -1,0 +1,575 @@
+[
+ {
+  "img": "images/16-Deliverance-and-Gratitude-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     127,
+     245
+    ],
+    "bbox": [
+     367,
+     714,
+     2285,
+     1200
+    ],
+    "shape": "box",
+    "en": "The Plank a4 of Deliverance oO [Ss (SI tale of the karmic power of gratitude and virtue",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "road",
+   "the",
+   "Northern",
+   "Country,",
+   "two",
+   "travelers",
+   "rested",
+   "under",
+   "tree",
+   "escape",
+   "the",
+   "punishing",
+   "mid-day",
+   "sun.",
+   "One",
+   "man",
+   "chewed",
+   "betel",
+   "leaf,",
+   "finding",
+   "small",
+   "comfort",
+   "the",
+   "stifling",
+   "heat"
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     430,
+     279
+    ],
+    "bbox": [
+     1164,
+     909,
+     2526,
+     1372
+    ],
+    "shape": "box",
+    "en": "The second traveler, exhausted and parched, begged for water. have none,” the first replied “Then please, share betel leaf,” the thirsty man asked Again, he was refused",
+    "conf": 71
+   }
+  ],
+  "loose": [
+   "€03"
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Desperate,",
+   "man",
+   "offered",
+   "four",
+   "kahapanas.",
+   "Only",
+   "then",
+   "did",
+   "the",
+   "first",
+   "man",
+   "hand",
+   "over",
+   "single",
+   "betel",
+   "leaf.",
+   "The",
+   "buyer",
+   "chewed",
+   "the",
+   "leaf,",
+   "quenched",
+   "his",
+   "thirst,",
+   "and",
+   "forged",
+   "unexpected",
+   "bond.",
+   "the",
+   "parched",
+   "NOY"
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     165,
+     33
+    ],
+    "bbox": [
+     407,
+     69,
+     2242,
+     512
+    ],
+    "shape": "box",
+    "en": "Seven days later, both men found themselves on merchant ship far out at sea. Disaster struck. The ship shattered, leaving the crew to the mercy of the ocean, fish, and turtles.",
+    "conf": 73
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "SSS",
+   "The",
+   "man",
+   "who",
+   "had",
+   "bought",
+   "the",
+   "betel",
+   "leaf",
+   "secured",
+   "small",
+   "plank",
+   "wood,",
+   "clinging",
+   "for",
+   "survival.",
+   "Soon,",
+   "spotted",
+   "the",
+   "other",
+   "traveler—exhausted,",
+   "sinking,",
+   "and",
+   "with",
+   "nothing",
+   "hold",
+   "onto."
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     142,
+     32
+    ],
+    "bbox": [
+     407,
+     69,
+     2242,
+     512
+    ],
+    "shape": "box",
+    "en": "He remembered the betel leaf. Though he had paid for it, it had saved him from thirst. Driven by deep gratitude for that past relief, he surrendered his only plank to the sinking man.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "NG)"
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     381,
+     315
+    ],
+    "bbox": [
+     1194,
+     1022,
+     2539,
+     1392
+    ],
+    "shape": "box",
+    "en": "As the virtuous man began to drown, the sea goddess Manimekhala witnessed his sacrifice. Moved by his profound gratitude and goodness, she descended to intervene.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     144,
+     31
+    ],
+    "bbox": [
+     407,
+     69,
+     2242,
+     512
+    ],
+    "shape": "box",
+    "en": "Through her divine power, the goddess carried the virtuous man to the shore. Remarkably, through the sheer merit of the virtuous man’s actions, the second traveler was also guided safely to land.",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "NG)",
+   "MOSS"
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     482,
+     100
+    ],
+    "bbox": [
+     1537,
+     258,
+     2466,
+     1283
+    ],
+    "shape": "box",
+    "en": "The man on the plank arrived, stunned to see his savior already on the beach. “How did you arrive before me?” he asked. The goddess revealed herself, explaining the unseen forces that saved them both.",
+    "conf": 57
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     185,
+     90
+    ],
+    "bbox": [
+     179,
+     268,
+     803,
+     896
+    ],
+    "shape": "bubble",
+    "en": "GaGa Gp hy He, 2 ESA, 2. 2 4 ioe 3 eat Sy pus “Sy",
+    "conf": 39
+   },
+   {
+    "seed": [
+     588,
+     106
+    ],
+    "bbox": [
+     1845,
+     268,
+     2470,
+     896
+    ],
+    "shape": "bubble",
+    "en": "AS ky LE) 2. LAA 2 Ay Or Ww)",
+    "conf": 47
+   }
+  ],
+  "loose": [
+   "The",
+   "Mechanics",
+   "Deliverance",
+   "purchased",
+   "leaf",
+   "inspired",
+   "gratitude.",
+   "Gratitude",
+   "inspired",
+   "selfless",
+   "sacrifice",
+   "That",
+   "sacrifice",
+   "generated",
+   "the",
+   "merit",
+   "required",
+   "for",
+   "divine",
+   "salvation.",
+   "transaction",
+   "coins",
+   "became",
+   "transaction",
+   "virtue."
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     280,
+     168
+    ],
+    "bbox": [
+     840,
+     539,
+     2430,
+     674
+    ],
+    "shape": "box",
+    "en": "11. Caring for parents",
+    "conf": 61
+   },
+   {
+    "seed": [
+     261,
+     219
+    ],
+    "bbox": [
+     840,
+     704,
+     2430,
+     840
+    ],
+    "shape": "box",
+    "en": "2. Refuge in Buddha, Dhamma, and Sangha",
+    "conf": 96
+   },
+   {
+    "seed": [
+     261,
+     270
+    ],
+    "bbox": [
+     840,
+     873,
+     2430,
+     1005
+    ],
+    "shape": "box",
+    "en": "3. Guarding the",
+    "conf": 77
+   },
+   {
+    "seed": [
+     290,
+     368
+    ],
+    "bbox": [
+     840,
+     1200,
+     2430,
+     1332
+    ],
+    "shape": "box",
+    "en": "Unwavering gratitude",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Who",
+   "The",
+   "Gods",
+   "Protect?",
+   "The",
+   "goddess",
+   "revealed",
+   "five",
+   "paths",
+   "virtue:",
+   "and",
+   "CANS)"
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     208,
+     187
+    ],
+    "bbox": [
+     264,
+     575,
+     1309,
+     1352
+    ],
+    "shape": "box",
+    "en": "Acted purely on commerce. commerce. (FE Held tightly to what was his Saved only by proximity to virtue",
+    "conf": 78
+   },
+   {
+    "seed": [
+     547,
+     187
+    ],
+    "bbox": [
+     1342,
+     575,
+     2384,
+     1352
+    ],
+    "shape": "box",
+    "en": "«Actedon Acted on gratitude Ake Let go of his only as lifeline Earned direct divine deliverance",
+    "conf": 45
+   }
+  ],
+  "loose": [
+   "The",
+   "Paths"
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Transported",
+   "back",
+   "Savatthi",
+   "the",
+   "goddess",
+   "and",
+   "adorned",
+   "divine",
+   "garments,",
+   "the",
+   "men",
+   "were",
+   "forever",
+   "changed.",
+   "They",
+   "dedicated",
+   "the",
+   "rest",
+   "their",
+   "days",
+   "charity,",
+   "guarding",
+   "the",
+   "precepts,",
+   "and",
+   "practicing",
+   "virtue",
+   "until",
+   "their",
+   "end."
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Even",
+   "small",
+   "act",
+   "goodness",
+   "the",
+   "vast",
+   "ocean",
+   "can",
+   "bring",
+   "divine",
+   "refuge.",
+   "Never",
+   "destroy",
+   "your",
+   "goodness.",
+   "Never",
+   "negligent",
+   "your",
+   "pursuit",
+   "virtue."
+  ]
+ }
+]

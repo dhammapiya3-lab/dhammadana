@@ -1,0 +1,408 @@
+[
+ {
+  "img": "images/14-Princess-Kancanadevi-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     218,
+     40
+    ],
+    "bbox": [
+     665,
+     106,
+     1984,
+     499
+    ],
+    "shape": "box",
+    "en": "The Devotion Deliverance of Princess Kancanadevi Tale of Virtue, Miracles, and Ultimate Liberation. Based on classical Pali accounts of devotion and the Dhamma’s power.",
+    "conf": 73
+   }
+  ],
+  "loose": [
+   "Ave"
+  ]
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     518,
+     66
+    ],
+    "bbox": [
+     1623,
+     136,
+     2566,
+     651
+    ],
+    "shape": "box",
+    "en": "Ghe Pattamaha Festival In Devaputtanagara, citizens held grand seven-day festival honoring the Buddba’s sacred stone alms bowl Ghe city became heavenly realm. magnificent chariot drawn by four white borses paraded the relic. On the seventh day, grand pavilion was erected to preach the Great Dhamma",
+    "conf": 41
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     263,
+     325
+    ],
+    "bbox": [
+     499,
+     1045,
+     2152,
+     1395
+    ],
+    "shape": "box",
+    "en": "Lust Tams to Violence Among the listeners was Naga aga King in disguise. Enchanted by maiden focused entirely on the Dhamma, his lust ist turned to wrath when she ignored him. him. Reverting to his serpent form, he coiled around her body and prepared to strike. Yet, protected by her deep concentration, she felt no harm.",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "fe)"
+  ]
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     272,
+     10
+    ],
+    "bbox": [
+     787,
+     30,
+     1861,
+     248
+    ],
+    "shape": "box",
+    "en": "The Saccakiriya (Act of Truth) At dawn, she invoked an Act of Truth to bind the Naga, declaring five absolute realities:",
+    "conf": 91
+   },
+   {
+    "seed": [
+     333,
+     140
+    ],
+    "bbox": [
+     1078,
+     377,
+     1570,
+     489
+    ],
+    "shape": "box",
+    "en": "1. Her perfect celibacy.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     113,
+     209
+    ],
+    "bbox": [
+     374,
+     668,
+     879,
+     794
+    ],
+    "shape": "box",
+    "en": "5. Her unbroken attentio to every syllable preached.",
+    "conf": 93
+   },
+   {
+    "seed": [
+     501,
+     327
+    ],
+    "bbox": [
+     1623,
+     1065,
+     2129,
+     1217
+    ],
+    "shape": "box",
+    "en": "3. Her total absence of anger toward her attacker.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "EOX"
+  ]
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     66,
+     89
+    ],
+    "bbox": [
+     129,
+     208,
+     866,
+     655
+    ],
+    "shape": "box",
+    "en": "The Power of virtue Overcome by her truth, the Naga's anger vanished. Manifesting hundred-headed hood to shelter her, he performed sacred water offering. Awe-struck citizens showered her with eighteen crores of wealth. There is no friend in the world equal to faith.",
+    "conf": 52
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     273,
+     325
+    ],
+    "bbox": [
+     248,
+     1068,
+     2400,
+     1372
+    ],
+    "shape": "box",
+    "en": "Renunciation in the World Though blessed with immense riches, the maiden remained untouched by worldly desires She lived her entire life as generous, celibate laywoman dedicated to the Triple Gem. Upon her peaceful passing, the karmic momentum of her unbroken virtue prepared her for an extraordinary rebirth.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     509,
+     43
+    ],
+    "bbox": [
+     1561,
+     106,
+     2612,
+     651
+    ],
+    "shape": "box",
+    "en": "The Miraculous Rebirth She was reborn in the womb of the Chief Queen. Upon her birth ten months later, later, miraculous rain of jewels blanketed Devaputtanagara. Devaputtanagara. Named Princess Kaficanadevi, her radiant form was entirely shaped ped by the power of her past devotion.",
+    "conf": 88
+   }
+  ],
+  "loose": [
+   "Ips"
+  ]
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     277,
+     34
+    ],
+    "bbox": [
+     625,
+     93,
+     2027,
+     393
+    ],
+    "shape": "box",
+    "en": "The Anatomy of Merit Kaficanadevi’s physical form directly manifested her past spiritual purity:",
+    "conf": 65
+   },
+   {
+    "seed": [
+     67,
+     204
+    ],
+    "bbox": [
+     179,
+     641,
+     906,
+     936
+    ],
+    "shape": "box",
+    "en": "Breath of the Blue Lotus: Her mouth naturally exhaled sweet floral fragrances.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     569,
+     205
+    ],
+    "bbox": [
+     1818,
+     641,
+     2480,
+     932
+    ],
+    "shape": "box",
+    "en": "Scent of Sandalwood: Her body emitted pure, rich perfumes.",
+    "conf": 96
+   },
+   {
+    "seed": [
+     316,
+     373
+    ],
+    "bbox": [
+     879,
+     1217,
+     1775,
+     1461
+    ],
+    "shape": "box",
+    "en": "Radiance the Sun: Her skin glowed so brightly that lamps were never needed.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     284,
+     32
+    ],
+    "bbox": [
+     671,
+     36,
+     1980,
+     450
+    ],
+    "shape": "box",
+    "en": "The Ultimate 2 Choice Fame vo of her beauty tay) spread 2 me} across Jambudipa. 3 Kings from distant 2 lands sent lavish tributes, desperate to claim her as their bride. Untouched by the five sensual pleasures and recognizing the emptiness of royalty, Kaficanadevi neana devi sought her father’s permission to renounce the world.",
+    "conf": 39
+   }
+  ],
+  "loose": [
+   "INC",
+   "INC",
+   "Gy?",
+   "[SS"
+  ]
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     53,
+     319
+    ],
+    "bbox": [
+     129,
+     1035,
+     820,
+     1375
+    ],
+    "shape": "box",
+    "en": "Attaining the Deathless Entering nunnery, Kaficanadevi diligently cultivated Vipassana (insight meditation). Fueled by lifetimes of pure merit, she quickly attained Arahantship and the Patisambhida (analytical knowledges). By piercing the veil of ignorance, she permanently ended the cycle of rebirth.",
+    "conf": 43
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     256,
+     83
+    ],
+    "bbox": [
+     674,
+     155,
+     1977,
+     780
+    ],
+    "shape": "box",
+    "en": "The Path of Wisdom Pure virtue (Sila) naturally yields worldly blessings, immense beauty, and vast wealth—but these rewards are impermanent The ultimate purpose of merit is not to enjoy fleeting royal pleasures, but to forge the discipline required to achieve true liberation. Do not be negligent in wholesome deeds.",
+    "conf": 91
+   },
+   {
+    "seed": [
+     155,
+     396
+    ],
+    "bbox": [
+     255,
+     1266,
+     1091,
+     1392
+    ],
+    "shape": "box",
+    "en": "The Worldly Reward",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "ance"
+  ]
+ }
+]

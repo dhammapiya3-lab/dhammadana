@@ -1,0 +1,438 @@
+[
+ {
+  "img": "images/09-Merchant-Buddhavamma-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Miraculous",
+   "Reward",
+   "the",
+   "Merchant",
+   "Buddhavamma",
+   "visual",
+   "study",
+   "acintaniya",
+   "(immeasurable)",
+   "merit",
+   "tracing",
+   "the",
+   "karmic",
+   "mechanics",
+   "single",
+   "pure",
+   "offering"
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     233,
+     72
+    ],
+    "bbox": [
+     678,
+     225,
+     2050,
+     608
+    ],
+    "shape": "box",
+    "en": "In the prosperous city of Pataliputta, the merchant Buddhavamma encountered the Buddha wandering with great assembly of monastics. Overcome with joy at the sight of the Buddha, who shone like golden mountain, Buddhavamma immediately invited him for an evening meal.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     497,
+     114
+    ],
+    "bbox": [
+     1551,
+     354,
+     2397,
+     1078
+    ],
+    "shape": "box",
+    "en": "The Buddha declined the evening meal, explaining core monastic discipline: vikalabhojana. The Tathagata and his monastics strictly abstain from consuming food at the wrong time—specifically, after midday Seeking another way to offer sustenance, the merchant asked what provisions were permissible during these hours.",
+    "conf": 89
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     187,
+     67
+    ],
+    "bbox": [
+     589,
+     212,
+     2060,
+     450
+    ],
+    "shape": "box",
+    "en": "The Eight Allowable Drinks (Atthavidha Pana) The Buddha explained that eight specific preparations are permitted for monastics to consume after midday.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Learning",
+   "the",
+   "rule,",
+   "Buddhavamma",
+   "immediately",
+   "prepared",
+   "muddikapana—a",
+   "rich",
+   "grape",
+   "juice",
+   "containing",
+   "all",
+   "eight",
+   "permissible",
+   "tastes.",
+   "offered",
+   "the",
+   "Buddha",
+   "and",
+   "the",
+   "monastic",
+   "assembly.",
+   "After",
+   "consuming",
+   "the",
+   "pure",
+   "offering,",
+   "the",
+   "Buddha",
+   "delivered",
+   "Dhamma",
+   "discourse",
+   "and",
+   "departed",
+   "his",
+   "journey."
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     551,
+     66
+    ],
+    "bbox": [
+     1782,
+     212,
+     2500,
+     499
+    ],
+    "shape": "box",
+    "en": "Buddhavamma later led his trading as caravans wn deep Qo into the Mahavattaniya oe avattan lya wasteland. vasteland. In the heart of this dangerous terrain, crisis struck: the caravans ran entirely out of water.",
+    "conf": 46
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     164,
+     70
+    ],
+    "bbox": [
+     489,
+     218,
+     2159,
+     532
+    ],
+    "shape": "box",
+    "en": "The supply was completely exhausted (parikkhayamagamasi). With no water left for the men or the oxen, Buddhavamma wandered desperately among the carts, overwhelmed by thirst, searching for any remaining drops.",
+    "conf": 83
+   }
+  ],
+  "loose": [
+   "Lif"
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     447,
+     115
+    ],
+    "bbox": [
+     1432,
+     304,
+     2420,
+     1220
+    ],
+    "shape": "box",
+    "en": "Another merchant offered him tiny remainder of water from small pot. As Buddhavamma drank, he recognized the distinct, rich taste of the muddikapana grape juice he had offered to the Buddha. He realized the merit of his past action was bearing fruit today.",
+    "conf": 84
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     175,
+     70
+    ],
+    "bbox": [
+     453,
+     222,
+     2195,
+     539
+    ],
+    "shape": "box",
+    "en": "Opening the main storage pot, he witnessed miracle The vessel was entirely overflowing with divine, inexhaustible grape juice. The single bowl he had offered in Pataliputta had multiplied into an endless, life-saving fountain",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     84,
+     69
+    ],
+    "bbox": [
+     192,
+     222,
+     1316,
+     618
+    ],
+    "shape": "box",
+    "en": "The reward was visible and immediate (sanditthika makalikam). Buddhavamma called the entire caravan to drink. Hundreds of men and oxen drank deeply from the sweet, cooling liquid, yet the vessel never emptied.",
+    "conf": 46
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     268,
+     68
+    ],
+    "bbox": [
+     407,
+     222,
+     2242,
+     476
+    ],
+    "shape": "box",
+    "en": "The Mechanics of Merit The merchant’s story demonstrates the exponential nature of karmic return when an offering is planted in the fertile field of the Buddha",
+    "conf": 90
+   },
+   {
+    "seed": [
+     73,
+     366
+    ],
+    "bbox": [
+     198,
+     1210,
+     1227,
+     1336
+    ],
+    "shape": "box",
+    "en": "One bowl of grape juice. Given to the virtuous Offered with pure mind",
+    "conf": 67
+   },
+   {
+    "seed": [
+     441,
+     368
+    ],
+    "bbox": [
+     1425,
+     1210,
+     2450,
+     1336
+    ],
+    "shape": "box",
+    "en": "Inexhaustible survival for an entire caravan. Rebirth in 12-yojana golden mansion.",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "WES"
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     284,
+     80
+    ],
+    "bbox": [
+     760,
+     222,
+     1891,
+     681
+    ],
+    "shape": "box",
+    "en": "Returning safely from the wasteland, Buddhavamma sought out the Buddha at the Veluvana grove. He recounted the miraculous survival of his caravan, confirming the immense power of giving. After hearing the Dhamma, he spent the rest of his life performing great acts of charity.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     201,
+     341
+    ],
+    "bbox": [
+     360,
+     1121,
+     2288,
+     1342
+    ],
+    "shape": "box",
+    "en": "Upon his passing, the ultimate fruit of his merit ripened. He was reborn in magnificent twelve-yojana golden mansion in the Deva realm. Everywhere he looked, jeweled vessels spontaneously overflowed with divine grape juice.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Nad"
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Knowing",
+   "this,",
+   "who",
+   "would",
+   "not",
+   "give?",
+   "Even",
+   "the",
+   "gift",
+   "mere",
+   "drink",
+   "the",
+   "highest",
+   "victors",
+   "yields",
+   "vast",
+   "wealth.",
+   "Understand",
+   "these",
+   "virtues:",
+   "you",
+   "will",
+   "receive",
+   "distinction",
+   "giving",
+   "the",
+   "virtuous."
+  ]
+ }
+]

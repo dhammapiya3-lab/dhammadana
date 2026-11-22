@@ -1,0 +1,275 @@
+[
+ {
+  "img": "images/15-16-Adirai-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     165,
+     368
+    ],
+    "bbox": [
+     393,
+     1180,
+     2255,
+     1458
+    ],
+    "shape": "box",
+    "en": "Man animeékhalai: 1m ekhala 1 The Bowl of Ge Compassion 8. tale of Karma, Purity, and the quest to end world hunger.",
+    "conf": 31
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-16-Adirai-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Der",
+   "Rebirth",
+   "tra",
+   "noble",
+   "cow",
+   "fostered",
+   "infant",
+   "Aputra.",
+   "Rewarded",
+   "Karma,",
+   "from",
+   "ber",
+   "golden",
+   "egg,",
+   "Aputra",
+   "was",
+   "reborn",
+   "King",
+   "miraculous",
+   "drizzle",
+   "holy",
+   "water",
+   "heralded",
+   "full",
+   "moon.",
+   "the"
+  ]
+ },
+ {
+  "img": "images/15-16-Adirai-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     523,
+     178
+    ],
+    "bbox": [
+     1379,
+     486,
+     2470,
+     1071
+    ],
+    "shape": "box",
+    "en": "World Starves ‘While the Kavéri flows, the people suffer,” spoke sage Aravana Adigal. “Do not leave your divine boon unused.” Manimekhalai took ber bowl stepping into the streets of Pubar as humble bhiksuni.",
+    "conf": 30
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-16-Adirai-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     581,
+     313
+    ],
+    "bbox": [
+     1418,
+     840,
+     2566,
+     1481
+    ],
+    "shape": "bubble",
+    "en": "Seeking True Chastity To activate the bowl’s magic, the first alms must come from the purest soul. Kayasandikai pointed to the home of Adirai: woman whose virtue could command the very clouds O27",
+    "conf": 72
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-16-Adirai-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     526,
+     72
+    ],
+    "bbox": [
+     1365,
+     132,
+     2516,
+     674
+    ],
+    "shape": "box",
+    "en": "The Lost Husbant Adirai’s husband, Saduvan, sought fortune overseas but suffered catastrophic shipwreck. Survivors returned to Kavéripattinam, proclaiming him dead. Clinging to broken mast, Saduvan drifted toward an unknown island.",
+    "conf": 34
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-16-Adirai-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     218,
+     369
+    ],
+    "bbox": [
+     704,
+     1108,
+     1951,
+     1471
+    ],
+    "shape": "box",
+    "en": "fy Believing Saduvan ‘The dead, Crone Unburning the devoted Adirai stepped Fir into blazing pyres pyre. Miraculously, the flames refused to burn her. heavenly voice revealed Saduvan lived, and would return with the merchant Candradatta. 7",
+    "conf": 34
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-16-Adirai-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     190,
+     342
+    ],
+    "bbox": [
+     215,
+     1065,
+     1326,
+     1471
+    ],
+    "shape": "box",
+    "en": "\"Stranded Among Cannibals Washing ashore, Saduvan was captured by naked Nagas. Their fierce chieftain, surrounded by bones and brewing beer, demanded to know if anything was better than meat and women. ener",
+    "conf": 34
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-16-Adirai-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     247,
+     380
+    ],
+    "bbox": [
+     704,
+     1108,
+     1951,
+     1471
+    ],
+    "shape": "box",
+    "en": "Wisdom Overcomes Ignorance Saduvan duvan spoke their tongue: “Intoxication and taking life bring evil. 1 Life travels from body to body, like dreamer wandering in sleep.” Moved by logic, the angry chieftain fell to his feet. ip PE ae",
+    "conf": 50
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-16-Adirai-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     618,
+     63
+    ],
+    "bbox": [
+     1418,
+     198,
+     2304,
+     618
+    ],
+    "shape": "box",
+    "en": "(Bas PETAR Vow of Compassion TERS SiO “We cannot survive without meat,” the chief wept. “Eat at only what dies naturally, and protect the shipwrecked,’ Saduvan taught. The Nagas vowed to follow the Dharma showering him with treasures. Os",
+    "conf": 33
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/15-16-Adirai-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     305,
+     359
+    ],
+    "bbox": [
+     704,
+     1108,
+     1951,
+     1471
+    ],
+    "shape": "box",
+    "en": "“The First Alms Reunited with Saduvan, Adirai’s virtue was absolute. Manimékhalai stood before her. Adirai filled the bowl, praying the pangs of hunger would vanish from the living world forever. Stator Ser",
+    "conf": 31
+   }
+  ],
+  "loose": [
+   "AYA"
+  ]
+ }
+]

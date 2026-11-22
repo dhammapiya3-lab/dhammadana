@@ -1,0 +1,417 @@
+[
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     376,
+     363
+    ],
+    "bbox": [
+     440,
+     1151,
+     2228,
+     1481
+    ],
+    "shape": "box",
+    "en": "The Ma gic ic Boul The Dharma of Mercy Visual Translation of the Tamil Buddhist Epic",
+    "conf": 61
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     53,
+     98
+    ],
+    "bbox": [
+     149,
+     248,
+     833,
+     1316
+    ],
+    "shape": "box",
+    "en": "Tivatilakai, guardian of the island’s Dharma-seat, reveals profound truth: those who offer sincere worship here awaken the hidden memories of their previous births.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     292,
+     329
+    ],
+    "bbox": [
+     205,
+     1088,
+     2443,
+     1399
+    ],
+    "shape": "box",
+    "en": "The Thread of Karma Past: Laksmi, devoted wife of Prince Rahula. Present: Manimekhallai, daughter of Madhavi. Recognizing the actions of our past unlocks our true spiritual destiny in the present.",
+    "conf": 64
+   }
+  ],
+  "loose": [
+   "PAST:",
+   "LAKSMI"
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "Buddha’s",
+   "birthday,",
+   "the",
+   "inexhaustible",
+   "begging-bowl",
+   "Amuda-Surabi",
+   "emerges",
+   "from",
+   "the",
+   "lily",
+   "pond,",
+   "turning",
+   "clockwise",
+   "worthy",
+   "hands."
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     284,
+     345
+    ],
+    "bbox": [
+     823,
+     1134,
+     2619,
+     1379
+    ],
+    "shape": "box",
+    "en": "Nail to the Perfectly Wise, who gives others the eye 7 of wisdom. Nail to the Nero who destroyed the evil path and vanquished suffering.",
+    "conf": 47
+   }
+  ],
+  "loose": [
+   "ANG)"
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Sinful",
+   "Craving",
+   "Hunger",
+   "destroys",
+   "good",
+   "birth,",
+   "kills",
+   "nobility,",
+   "and",
+   "strips",
+   "away",
+   "shame.",
+   "Even",
+   "the",
+   "greatest",
+   "sages",
+   "fall",
+   "sin",
+   "and",
+   "ruin",
+   "when",
+   "starving."
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     279,
+     342
+    ],
+    "bbox": [
+     589,
+     1131,
+     2053,
+     1448
+    ],
+    "shape": "box",
+    "en": "The Mane Nature atu re of Charity harity ity Charity Sold: Giving food to those who can afford it. True Charity: Giving food to the helpless and starving. Those who give food, give lif",
+    "conf": 68
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     143,
+     355
+    ],
+    "bbox": [
+     278,
+     1141,
+     2374,
+     1475
+    ],
+    "shape": "box",
+    "en": "Like mother’s breast vieldin mi Ik to hungry child, Manimékhalai vows to provide inexhaustible nourishment to those wandering in scorching sun or driving rain.",
+    "conf": 33
+   }
+  ],
+  "loose": [
+   "NESS"
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     131,
+     356
+    ],
+    "bbox": [
+     278,
+     1141,
+     2374,
+     1475
+    ],
+    "shape": "box",
+    "en": "Empowered by sacred mantra, she flies across the sky, returning to the Cola capital of Kavéripattinam to unite her divine git with cartully purpose.",
+    "conf": 58
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "city",
+   "awaits",
+   "the",
+   "venerable",
+   "sage",
+   "Aravana",
+   "Adigal.",
+   "Through",
+   "ages",
+   "diminishing",
+   "righteousness,",
+   "tirelessly",
+   "teaches",
+   "the",
+   "Dharma",
+   "those",
+   "ready",
+   "hear."
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     235,
+     350
+    ],
+    "bbox": [
+     278,
+     1141,
+     2371,
+     1475
+    ],
+    "shape": "box",
+    "en": "Actors in New Dis uise The sage reveals the nuns’ past lives as tragic queens. Their previous worship now opens direct path to Nirvana. Nirvana.",
+    "conf": 85
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     45,
+     313
+    ],
+    "bbox": [
+     33,
+     1035,
+     1141,
+     1461
+    ],
+    "shape": "box",
+    "en": "AY The of 9 The Prophecy of 1616 As the world forgets mercy, the dévas will call upon the next Buddha to descend from Tusita Heaven and restore the Dharma. 2)",
+    "conf": 48
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     286,
+     80
+    ],
+    "bbox": [
+     241,
+     248,
+     1101,
+     1342
+    ],
+    "shape": "box",
+    "en": "NG ors ‘di The Golden Age 3 The Sun of Buddha appears. Rains never fail; the earth yields abundance. Natural enmity ceases. The cycle of rebirth is broken forever.",
+    "conf": 44
+   }
+  ],
+  "loose": [
+   "ill"
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     89,
+     388
+    ],
+    "bbox": [
+     218,
+     1263,
+     2430,
+     1481
+    ],
+    "shape": "box",
+    "en": "Before seeking her own enlightenment, Manimékhalai receives her final command: she must first use this elixir of life to execute her highest duty to humanity.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     179,
+     37
+    ],
+    "bbox": [
+     288,
+     83,
+     2361,
+     410
+    ],
+    "shape": "box",
+    "en": "The Supreme Act of Dh Dharma arma the universe, for gods or humans, there is ultimately only true act of charity: if ity: the relief of suffering from hunger nger.",
+    "conf": 61
+   }
+  ],
+  "loose": [
+   "Across",
+   "one"
+  ]
+ }
+]

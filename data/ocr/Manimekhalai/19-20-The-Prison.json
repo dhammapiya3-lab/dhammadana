@@ -1,0 +1,358 @@
+[
+ {
+  "img": "images/19-20-The-Prison-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     275,
+     339
+    ],
+    "bbox": [
+     512,
+     1045,
+     2136,
+     1402
+    ],
+    "shape": "box",
+    "en": "The Epic of Manimékhalai Books XIX XX: The Path of Dharma and the Price of Attachment Tale of Charity, Disguise, and Destiny.",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "HIN",
+   "elt"
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Three",
+   "paths",
+   "collide",
+   "through",
+   "Manimekhalai:",
+   "Buddhist",
+   "nun",
+   "serving",
+   "Dharma.",
+   "Prince",
+   "Udayakumara:",
+   "Driven",
+   "blind",
+   "lust",
+   "for",
+   "the",
+   "nun.",
+   "Vidyadhara",
+   "searching",
+   "for",
+   "his",
+   "lost",
+   "wife,",
+   "KayaSandikai",
+   "hree"
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "escape",
+   "Udayakumara’s",
+   "Manimekhalai",
+   "alters",
+   "her",
+   "form",
+   "Assuming",
+   "the",
+   "guise",
+   "KayaSandikai,",
+   "she",
+   "takes",
+   "her",
+   "miraculous,",
+   "inexhaustible",
+   "bowl",
+   "feed",
+   "the",
+   "starving",
+   "across",
+   "the",
+   "city.",
+   "relentless"
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     577,
+     38
+    ],
+    "bbox": [
+     1709,
+     86,
+     2622,
+     506
+    ],
+    "shape": "box",
+    "en": "She enters the heavily guarded state penitentiary. With profound kindness, she feeds every suffering prisoner from single vessel. The guards, witnessing this impossible miracle, rush to inform the King.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "(ly"
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "King",
+   "Mavankilla",
+   "summons",
+   "her.",
+   "Revealing",
+   "the",
+   "bowl",
+   "cures",
+   "‘elephant-hunger,",
+   "she",
+   "requests",
+   "boon:",
+   "‘Destroy",
+   "the",
+   "prison,",
+   "and",
+   "erect",
+   "tenements",
+   "for",
+   "those",
+   "following",
+   "Dharma.’",
+   "Moved",
+   "her",
+   "virtue,",
+   "the",
+   "King",
+   "commands",
+   "the",
+   "transformation."
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "becomes",
+   "The",
+   "grounds",
+   "now",
+   "host",
+   "shrines",
+   "for",
+   "truth,",
+   "cooking",
+   "halls,",
+   "and",
+   "rooms",
+   "for",
+   "practicing",
+   "good",
+   "deeds.",
+   "Yet,",
+   "worldly",
+   "peace.",
+   "house",
+   "sanctuary",
+   "threaten",
+   "this"
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Prince",
+   "waits",
+   "outside,",
+   "determined",
+   "possess",
+   "her.",
+   "Simultaneously,",
+   "Kaficana",
+   "arrives,",
+   "finding",
+   "the",
+   "woman",
+   "believes",
+   "his",
+   "wife.",
+   "Seeing",
+   "her",
+   "speak",
+   "with",
+   "the",
+   "Prince,",
+   "toxic",
+   "jealousy",
+   "takes",
+   "root."
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     172,
+     60
+    ],
+    "bbox": [
+     93,
+     136,
+     1127,
+     704
+    ],
+    "shape": "box",
+    "en": "Manimékhalai attempts to save the Prince to from lust. Pointing om to 0) an elderly woman, she warns that youthful beauty is delusion of flesh and ornaments. The body inevitably decays.",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "LO)"
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WAL)",
+   "midnight,",
+   "the",
+   "Prince",
+   "returns",
+   "claim",
+   "Kaficana,",
+   "consumed",
+   "the",
+   "delusion",
+   "that",
+   "the",
+   "Prince",
+   "his",
+   "wife’s",
+   "secret",
+   "lover,",
+   "draws",
+   "his",
+   "sword",
+   "the",
+   "dark",
+   "and",
+   "strikes",
+   "him",
+   "dead.",
+   "her."
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     119,
+     301
+    ],
+    "bbox": [
+     225,
+     936,
+     1349,
+     1438
+    ],
+    "shape": "box",
+    "en": "As Kaficana tries to flee with hen her, magical statue awakens: “Approach not! This is Manimekhalai. Your real wife offended Goddess Durga and was devoured. Past deeds bring this tr",
+    "conf": 70
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/19-20-The-Prison-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     115,
+     87
+    ],
+    "bbox": [
+     235,
+     225,
+     979,
+     1352
+    ],
+    "shape": "box",
+    "en": "The Wheel of Karma spares no one: Lust led the Prince to his doom. Delusion made Kancana murderer. Dharma allowed Manimekhalai to transform prison into beacon of eternal charity.",
+    "conf": 90
+   }
+  ],
+  "loose": []
+ }
+]

@@ -1,0 +1,370 @@
+[
+ {
+  "img": "images/17-18-Kayasandikai-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     485,
+     142
+    ],
+    "bbox": [
+     1151,
+     469,
+     2387,
+     1088
+    ],
+    "shape": "box",
+    "en": "Se Ma nimekh ala 7 The Epic of Compassion Renunciation ALES",
+    "conf": 33
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-18-Kayasandikai-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     504,
+     121
+    ],
+    "bbox": [
+     1303,
+     344,
+     2281,
+     962
+    ],
+    "shape": "box",
+    "en": "Manimekbalai anime kbala carried divine begging bowl that was never empty. She distributed its endless food freely, satisfying the immense hunger of the destitute. True wealth lies in boundless virtue.",
+    "conf": 42
+   }
+  ],
+  "loose": [
+   "tha"
+  ]
+ },
+ {
+  "img": "images/17-18-Kayasandikai-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     317,
+     80
+    ],
+    "bbox": [
+     595,
+     179,
+     1630,
+     552
+    ],
+    "shape": "bubble",
+    "en": "The Viayadhara Vidyadhara woman Kayasandile suffered from elepbant-bunger. Endless food vanished inside her without relief, like stones dropped into the ocean. She begged the nun for mercy.",
+    "conf": 58
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-18-Kayasandikai-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Weight",
+   "Mistake:",
+   "Accidentally",
+   "crushing",
+   "divine,",
+   "once-in-12-years",
+   "fruit.",
+   "Curse:",
+   "Condemned",
+   "unquenchable",
+   "bunger",
+   "the",
+   "ascetic",
+   "Vyscika.",
+   "Loss:",
+   "Stripped",
+   "her",
+   "magic",
+   "flight",
+   "mantra,",
+   "trapped",
+   "the",
+   "realm",
+   "Karm",
+   "ro}"
+  ]
+ },
+ {
+  "img": "images/17-18-Kayasandikai-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     177,
+     104
+    ],
+    "bbox": [
+     374,
+     271,
+     946,
+     1203
+    ],
+    "shape": "box",
+    "en": "itha single handful’ of food from the divine bowl, Manimékhalai instantly destroyed the twelve-year curse. Her hunger quenched, grateful Kayasandikai departed for her northern homeland Ait",
+    "conf": 43
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-18-Kayasandikai-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "city",
+   "Puhar,",
+   "the",
+   "rest-",
+   "her",
+   "domain",
+   "out",
+   "the",
+   "the",
+   "grand",
+   "stone",
+   "hall",
+   "echoed",
+   "the}",
+   "endless",
+   "charity.",
+   "ouse",
+   "Entering",
+   "Manimékhalai",
+   "Cakravalakottam",
+   "Calling",
+   "destitute,",
+   "perpetually",
+   "with",
+   "Manimekhalai",
+   "the"
+  ]
+ },
+ {
+  "img": "images/17-18-Kayasandikai-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     479,
+     298
+    ],
+    "bbox": [
+     1352,
+     929,
+     2638,
+     1471
+    ],
+    "shape": "box",
+    "en": "News of Manimékhalai’s asceticism enraged ber grandmother, Chitrapatt. Viewing the nun’s robes as humiliating insult to their courtesan lineage, she vowed to drag her back to her rightful life.",
+    "conf": 59
+   }
+  ],
+  "loose": [
+   "Jol",
+   "cy’"
+  ]
+ },
+ {
+  "img": "images/17-18-Kayasandikai-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     98,
+     112
+    ],
+    "bbox": [
+     198,
+     298,
+     1094,
+     1266
+    ],
+    "shape": "box",
+    "en": "To reclaim her granddaughter, Chitrapati manipulated Prince Udayakumara, stoking his lingering obsession. She dismissed divine warnings, arguing that even the highest gods, ‘like Indra and Agni, surrender to illicit love. £6",
+    "conf": 53
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-18-Kayasandikai-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     267,
+     350
+    ],
+    "bbox": [
+     638,
+     1048,
+     2010,
+     1428
+    ],
+    "shape": "box",
+    "en": "Driven by lust, the Prince confronted Manimékhalai in the rest-house, demanding why she chose asceticism. Though he was her husband in past life, she remained gem pletely unswayed by his royal opulence.",
+    "conf": 44
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-18-Kayasandikai-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     264,
+     337
+    ],
+    "bbox": [
+     638,
+     1048,
+     2010,
+     1428
+    ],
+    "shape": "box",
+    "en": "\"Birth, “Birth, growth and decay, disease ending in death; th these es are the sufferings of the human body.\" Understanding this inevitable pain, she rejected his advances, dedicating her life solely to permanent charity.",
+    "conf": 79
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-18-Kayasandikai-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     104,
+     86
+    ],
+    "bbox": [
+     235,
+     238,
+     1055,
+     688
+    ],
+    "shape": "box",
+    "en": "To escape me Prince’s relentless pursuit, Manimékhalai retreated into the temple of Champapati. Reciting secret divine incantation, she shape-shifted, assuming the exact form of the Vidyadhara woman, Kayasandikai. dikai. ts",
+    "conf": 36
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-18-Kayasandikai-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     194,
+     360
+    ],
+    "bbox": [
+     304,
+     1114,
+     2344,
+     1471
+    ],
+    "shape": "box",
+    "en": "by the illusion, the Prince vowed to starve at the godde SS feet until Manimekhalai was revealed. Blinded by attachment, he remained trapped, while she walked. free in disguise.",
+    "conf": 62
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/17-18-Kayasandikai-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     208,
+     352
+    ],
+    "bbox": [
+     311,
+     1124,
+     2344,
+     1461
+    ],
+    "shape": "box",
+    "en": "Spiritual duty supersedes worldly lineage. Neither the legacy of her father, Kovalan, nor the schemes of her grandmother could break.a mind anchored in compassion and the alleviation of suffering. aa",
+    "conf": 54
+   }
+  ],
+  "loose": [
+   "ed)"
+  ]
+ }
+]

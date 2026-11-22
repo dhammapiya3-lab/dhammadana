@@ -1,0 +1,427 @@
+[
+ {
+  "img": "images/12-A-Certain-Man-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Alchemy",
+   "Intention",
+   "visual",
+   "exploration",
+   "karma,",
+   "dana,",
+   "and",
+   "The",
+   "Merit",
+   "the",
+   "Poor",
+   "Man’s",
+   "Raiment."
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     88,
+     118
+    ],
+    "bbox": [
+     162,
+     218,
+     1104,
+     1322
+    ],
+    "shape": "bubble",
+    "en": "poor man departs village near oO rae] Pataliputta oF carrying boo two oa simple Eo garments. 3 As he enters tH Ww vast, dense forest, an unseen thief follows close behind, resolved to steal the clothes by force.",
+    "conf": 43
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-A-Certain-Man-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "man",
+   "realizes",
+   "utterly",
+   "powerless.",
+   "can",
+   "neither",
+   "defeat",
+   "the",
+   "thief",
+   "combat",
+   "nor",
+   "outrun",
+   "him.",
+   "His",
+   "garments",
+   "will",
+   "inevitably",
+   "taken",
+   "against",
+   "his",
+   "will,",
+   "rendering",
+   "the",
+   "loss",
+   "completely",
+   "meaningless.",
+   "WAR"
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Stolen",
+   "Given",
+   "Freely",
+   "Merit",
+   "and",
+   "Future",
+   "Peace",
+   "Rather",
+   "than",
+   "theft,",
+   "executes",
+   "profound",
+   "deliberately",
+   "choosing",
+   "give",
+   "the",
+   "clothes",
+   "away",
+   "freely,",
+   "transforms",
+   "suffering",
+   "mental",
+   "pivot.",
+   "act",
+   "violence",
+   "into",
+   "act",
+   "dana",
+   "(generosity)."
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "surrenders",
+   "his",
+   "only",
+   "garments",
+   "the",
+   "thief",
+   "with",
+   "purified",
+   "mind,",
+   "silently",
+   "resolving:",
+   "“May",
+   "this",
+   "gift",
+   "condition",
+   "for",
+   "future",
+   "happiness",
+   "and",
+   "wealth.”",
+   "The",
+   "act",
+   "giving",
+   "now",
+   "complete."
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Stripped",
+   "his",
+   "clothes,",
+   "the",
+   "man",
+   "leaves",
+   "the",
+   "main",
+   "road",
+   "for",
+   "rugged,",
+   "overgrown",
+   "path.",
+   "There,",
+   "fatally",
+   "bitten",
+   "venomous",
+   "snake,",
+   "instantly",
+   "ending",
+   "his",
+   "earthly",
+   "journey."
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Fueled",
+   "the",
+   "pure",
+   "intention",
+   "his",
+   "final",
+   "instantly",
+   "reborn",
+   "into",
+   "the",
+   "majestic",
+   "Himalayan",
+   "region,",
+   "endowed",
+   "with",
+   "unimaginable",
+   "divine",
+   "wealth",
+   "and",
+   "celestial",
+   "companions",
+   "act,"
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     117,
+     386
+    ],
+    "bbox": [
+     367,
+     1260,
+     2281,
+     1399
+    ],
+    "shape": "box",
+    "en": "His humble gift of plain cloth manifests as sprawling, 12-yojana golden mansion, complete with pure canopies and magical wish-granting trees that provide endlessly.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Pure",
+   "beautifully",
+   "ado",
+   "Divine",
+   "garments",
+   "hanging",
+   "the",
+   "wind",
+   "Wish-granting",
+   "trees",
+   "sprouting",
+   "3-yojana",
+   "radius",
+   "lal"
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Within",
+   "this",
+   "heavenly",
+   "mansion,",
+   "rejoices",
+   "eternally.",
+   "entertained",
+   "the",
+   "songs,",
+   "dances,",
+   "and",
+   "music",
+   "thousands",
+   "divine",
+   "the",
+   "sweet",
+   "fruit",
+   "single,",
+   "pure",
+   "thought.",
+   "reaping",
+   "attendants"
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     199,
+     394
+    ],
+    "bbox": [
+     562,
+     1286,
+     2080,
+     1442
+    ],
+    "shape": "box",
+    "en": "The Karmic Multiplier: It is not the material value of the gift that dictates the reward, but the purity of the mind. humble offering, filtered through pure intention, yields boundless divine power",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-A-Certain-Man-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     107,
+     56
+    ],
+    "bbox": [
+     109,
+     165,
+     1213,
+     1160
+    ],
+    "shape": "bubble",
+    "en": "The Unworthy Field",
+    "conf": 92
+   },
+   {
+    "seed": [
+     518,
+     56
+    ],
+    "bbox": [
+     1458,
+     165,
+     2539,
+     1157
+    ],
+    "shape": "bubble",
+    "en": "The Worthy Field",
+    "conf": 97
+   },
+   {
+    "seed": [
+     74,
+     365
+    ],
+    "bbox": [
+     109,
+     1190,
+     1213,
+     1375
+    ],
+    "shape": "box",
+    "en": "Giving to non-field thief) out of mere relinquishment produced 12-yojana golden palace",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/12-A-Certain-Man-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "ultimate",
+   "instruction:",
+   "Cultivate",
+   "pure",
+   "mind",
+   "and",
+   "give",
+   "generously",
+   "the",
+   "virtuous.",
+   "sowing",
+   "seeds",
+   "perfect",
+   "field",
+   "merit,",
+   "one",
+   "secures",
+   "extraordinary",
+   "blessings",
+   "and",
+   "walks",
+   "the",
+   "path",
+   "liberation"
+  ]
+ }
+]

@@ -1,0 +1,410 @@
+[
+ {
+  "img": "images/07-08-On-an-Island-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     304,
+     183
+    ],
+    "bbox": [
+     856,
+     469,
+     1795,
+     1065
+    ],
+    "shape": "box",
+    "en": "The Epic of Manimékhalai The Spiriting Away and the Miraculous Buddha Seat",
+    "conf": 72
+   }
+  ],
+  "loose": [
+   "all"
+  ]
+ },
+ {
+  "img": "images/07-08-On-an-Island-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     211,
+     379
+    ],
+    "bbox": [
+     327,
+     1151,
+     2321,
+     1481
+    ],
+    "shape": "box",
+    "en": "Goddess Manimékhala appears to Prince Udayakumara in midnight vision. She warns the Cola prince: “Cast away evil thoughts. If king strays from righteousness, planets shift, rain fails, and life ceases. Manimékhalai has chosen celibate life.”",
+    "conf": 71
+   }
+  ],
+  "loose": [
+   "lig"
+  ]
+ },
+ {
+  "img": "images/07-08-On-an-Island-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     199,
+     380
+    ],
+    "bbox": [
+     331,
+     1015,
+     2321,
+     1481
+    ],
+    "shape": "bubble",
+    "en": "The Goddess wakes Sutamati in the garden. She reveals have taken Manimekhalai to the island of Manipallavam to learn her past lives Do not fear. She will return in seven days to follow the Buddha’s path.”",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "fd)"
+  ]
+ },
+ {
+  "img": "images/07-08-On-an-Island-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Goddess",
+   "instructs",
+   "Madhavi",
+   "old",
+   "dream.",
+   "When",
+   "Kovalan",
+   "named",
+   "his",
+   "daughter,",
+   "the",
+   "Goddess",
+   "foretold",
+   "she",
+   "would",
+   "live",
+   "life",
+   "strict",
+   "penance,",
+   "forever",
+   "rendering",
+   "the",
+   "God",
+   "Passion",
+   "helpless.",
+   "Sutamati",
+   "remind"
+  ]
+ },
+ {
+  "img": "images/07-08-On-an-Island-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     236,
+     75
+    ],
+    "bbox": [
+     397,
+     198,
+     2255,
+     562
+    ],
+    "shape": "box",
+    "en": "Terrified by the roaring noises of the burning-ghat, Sutamati flees to the Dharmasala in Cakravalakottam. Suddenly, statue on pillar speaks with divine voice, ready to reveal the deep karmic secrets of her soul.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/07-08-On-an-Island-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     173,
+     63
+    ],
+    "bbox": [
+     466,
+     188,
+     1170,
+     314
+    ],
+    "shape": "box",
+    "en": "past Births (Karalar)",
+    "conf": 79
+   },
+   {
+    "seed": [
+     497,
+     63
+    ],
+    "bbox": [
+     1481,
+     188,
+     2182,
+     314
+    ],
+    "shape": "box",
+    "en": "Present Life",
+    "conf": 97
+   }
+  ],
+  "loose": [
+   "The",
+   "statue",
+   "their",
+   "intertwined",
+   "destinies",
+   "the",
+   "Sutamati",
+   "was",
+   "once",
+   "Virai,",
+   "whose",
+   "tragic",
+   "death",
+   "elephant",
+   "caused",
+   "the",
+   "death",
+   "her",
+   "sister,",
+   "Tarai.",
+   "Tarai",
+   "now",
+   "reborn",
+   "Manimékhalai.",
+   "reveals",
+   "among"
+  ]
+ },
+ {
+  "img": "images/07-08-On-an-Island-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "dawn,",
+   "Sutamati",
+   "recounts",
+   "the",
+   "night’s",
+   "events.",
+   "Knowing",
+   "Manimékhalai",
+   "has",
+   "vanished,",
+   "stricken",
+   "with",
+   "grief—feeling",
+   "like",
+   "royal",
+   "cobra",
+   "that",
+   "has",
+   "lost",
+   "its",
+   "crest",
+   "jewel.",
+   "Sutamati",
+   "remains",
+   "paralyzed",
+   "Gi."
+  ]
+ },
+ {
+  "img": "images/07-08-On-an-Island-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Miles",
+   "away,",
+   "Manimékhalai",
+   "wakes",
+   "alone",
+   "the",
+   "strange,",
+   "sandy",
+   "beaches",
+   "Manipallavam.",
+   "Confused",
+   "and",
+   "terrified,",
+   "she",
+   "cries",
+   "out",
+   "for",
+   "Sutamati,",
+   "wondering",
+   "she",
+   "trapped",
+   "dream",
+   "magician’s",
+   "grand",
+   "illusion."
+  ]
+ },
+ {
+  "img": "images/07-08-On-an-Island-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Wandering",
+   "the",
+   "shores,",
+   "she",
+   "weeps",
+   "bitterly",
+   "for",
+   "her",
+   "father,",
+   "Kovalan.",
+   "She",
+   "mourns",
+   "his",
+   "tragic,",
+   "unjust",
+   "execution",
+   "the",
+   "sword",
+   "authority",
+   "foreign",
+   "kingdom.",
+   "Lost",
+   "and",
+   "alone,",
+   "she",
+   "seeks",
+   "answers",
+   "the",
+   "sand"
+  ]
+ },
+ {
+  "img": "images/07-08-On-an-Island-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Her",
+   "wandering",
+   "leads",
+   "her",
+   "radiant",
+   "Buddha",
+   "Seat,",
+   "miraculously",
+   "placed",
+   "there",
+   "Indra",
+   "This",
+   "extraordinary",
+   "throne",
+   "possesses",
+   "the",
+   "divine",
+   "power",
+   "reveal",
+   "the",
+   "past",
+   "lives",
+   "anyone",
+   "who",
+   "worships",
+   "before",
+   "SSS"
+  ]
+ },
+ {
+  "img": "images/07-08-On-an-Island-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha,",
+   "bearing",
+   "his",
+   "sacred",
+   "usnisa,",
+   "once",
+   "sat",
+   "upon",
+   "this",
+   "very",
+   "seat",
+   "preach",
+   "sermon",
+   "peace,",
+   "stopping",
+   "destructive",
+   "war",
+   "between",
+   "two",
+   "rival",
+   "Naga",
+   "chiefs",
+   "Here,",
+   "Manimékhalai’s",
+   "true",
+   "path",
+   "enlightenment",
+   "begins"
+  ]
+ }
+]

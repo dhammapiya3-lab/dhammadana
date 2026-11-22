@@ -1,0 +1,350 @@
+[
+ {
+  "img": "images/20-The-Brahmin-Soma-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     312,
+     181
+    ],
+    "bbox": [
+     975,
+     579,
+     1673,
+     972
+    ],
+    "shape": "box",
+    "en": "Che Sacrifice of Somabrahmana Cale of Karma, Merit and Ultimate Friendship",
+    "conf": 48
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "NOY",
+   "After",
+   "the",
+   "passing",
+   "Savatthi,",
+   "his",
+   "teachings",
+   "supreme",
+   "sacrifice",
+   "and",
+   "karmic",
+   "law",
+   "endure.",
+   "This",
+   "the",
+   "tale",
+   "two",
+   "friends",
+   "whose",
+   "unequal",
+   "bond",
+   "would",
+   "test",
+   "the",
+   "limits",
+   "mortal",
+   "generosity.",
+   "mortal",
+   "ity.",
+   "uld"
+  ]
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "During",
+   "game,",
+   "Somadatta",
+   "aggressively",
+   "claims",
+   "his",
+   "peacefully,",
+   "demonstrating",
+   "unnatural",
+   "patience",
+   "that",
+   "only",
+   "garment",
+   "and",
+   "signet",
+   "ring.",
+   "Somabrahmana",
+   "yields",
+   "foreshadows",
+   "his",
+   "ultimate",
+   "character."
+  ]
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     567,
+     175
+    ],
+    "bbox": [
+     1828,
+     559,
+     2562,
+     985
+    ],
+    "shape": "box",
+    "en": "Like beasts drawn to corpse, sinner cannot be kept from vice The King pardons Somadatta’s transgressions three times On the fourth, the decree is absolute: execution.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "ING"
+  ]
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "(CA",
+   "Witnessing",
+   "his",
+   "friend",
+   "being",
+   "led",
+   "the",
+   "execution",
+   "ground,",
+   "Somabrahmana",
+   "steps",
+   "forward.",
+   "offers",
+   "his",
+   "own",
+   "life",
+   "exchange",
+   "for",
+   "Somadatta’s.",
+   "The",
+   "King",
+   "accepts.",
+   "The",
+   "ultimate",
+   "sacrifice",
+   "paid.",
+   "xecution",
+   "ard",
+   "‘Th",
+   "imate",
+   "acrifice"
+  ]
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     179,
+     199
+    ],
+    "bbox": [
+     496,
+     651,
+     2156,
+     893
+    ],
+    "shape": "box",
+    "en": "Somabrahmana awakens as Deva in golden mansion. On earth, grief-stricken Somadatta performs generous deeds, transferring ansferring the karmic merit directly to his savior.",
+    "conf": 87
+   }
+  ],
+  "loose": [
+   "wan"
+  ]
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "transferred",
+   "merit",
+   "amplifies",
+   "divine",
+   "power.",
+   "profound",
+   "gratitude,",
+   "descends",
+   "disguise,",
+   "taking",
+   "Somadatta",
+   "\\AA",
+   "experience",
+   "the",
+   "bliss",
+   "the",
+   "Deva",
+   "realm",
+   "for",
+   "seven",
+   "days",
+   "Bas",
+   "ence"
+  ]
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     204,
+     377
+    ],
+    "bbox": [
+     645,
+     1240,
+     1997,
+     1448
+    ],
+    "shape": "box",
+    "en": "Returning to earth, mortal wealth feels entirely repulsive. Consumed by the memory of divine perfection, Somadatta wastes away, becoming pale and dangerously emaciated.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     591,
+     90
+    ],
+    "bbox": [
+     1951,
+     264,
+     2509,
+     1296
+    ],
+    "shape": "box",
+    "en": "Knowing human cannot survive such sorrow, Somadeva bestows wish-granting gem Through its power, he transforms Somadatta’s wife into being of divine beauty, bringing heaven to earth.",
+    "conf": 65
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     330,
+     174
+    ],
+    "bbox": [
+     1051,
+     503,
+     1594,
+     879
+    ],
+    "shape": "box",
+    "en": "The Cycle of Upakara life given freely generates immense merit. That merit endowed with gratitude invites divine intervention An unbroken karmic loop",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "Reward",
+   "Gratitude"
+  ]
+ },
+ {
+  "img": "images/20-The-Brahmin-Soma-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "not",
+   "helper.",
+   "Good",
+   "people",
+   "give",
+   "even",
+   "their",
+   "lives.",
+   "Bound",
+   "mutual",
+   "virtue",
+   "and",
+   "supreme",
+   "gratitude,",
+   "the",
+   "friends",
+   "are",
+   "ultimately",
+   "reunited",
+   "the",
+   "heavenly",
+   "realms.",
+   "betray"
+  ]
+ }
+]

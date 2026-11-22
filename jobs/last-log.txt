@@ -1,52 +1,17 @@
-Foremost-Nuns 01-Maha-Pajapati-Gotami 30 장
-Foremost-Nuns 02-Khema 37 장
-검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자3 [자리] 한글이 원래 글 자리(504,1041-620,1130)에서 벗어남 (809,1087)
-검수 Foremost-Nuns/03-Uppalavanna 22번 그림 상자4 [자리] 한글이 원래 글 자리(1997,1043-2042,1136)에서 벗어남 (1834,1087)
-Foremost-Nuns 03-Uppalavanna 37 장
-Foremost-Nuns 04-Patacara 30 장
-Foremost-Nuns 05-Dhammadinna 22 장
-검수 Foremost-Nuns/06-Nanda 07번 그림 상자4 [자리] 한글이 원래 글 자리(1490,583-1559,660)에서 벗어남 (1166,621)
-Foremost-Nuns 06-Nanda 12 장
-Foremost-Nuns 07-Sona 15 장
-Foremost-Nuns 08-Sakula 15 장
-Foremost-Nuns 09-Bhadda-Kundalakesa 25 장
-Foremost-Nuns 10-Bhadda-Kapilani 11 장
-Foremost-Nuns 11-Bhadda-Kaccana 13 장
-Foremost-Nuns 12-Kisa-Gotami 23 장
-Foremost-Nuns 13-Singalakamata 13 장
-Four-Rich-Men 01-Jotika-the-Householder 15 장
-Four-Rich-Men 02-Mendaka-the-Householder 15 장
-Four-Rich-Men 03-Jatila-the-Treasurer 12 장
-Four-Rich-Men 04-Kalavaliya-the-Treasurer 13 장
-Jatakamala 28-Ksantivadin 15 장
-자동 검수: 문제 의심 3 곳
-R2 에 올림: 753 개 / 한글판 이야기 288 편
+Jatakamala 29-Brahmaloka 15 장
+자동 검수: 문제 의심 0 곳
+R2 에 올림: 77 개 / 한글판 이야기 289 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1380409바이트
-이야기 Foremost-Nuns/01-Maha-Pajapati-Gotami {'pdf': 42632700, 'zip': 42352652, 'n': 30}
-이야기 Foremost-Nuns/02-Khema {'pdf': 52988466, 'zip': 52713571, 'n': 37}
-이야기 Foremost-Nuns/03-Uppalavanna {'pdf': 49001262, 'zip': 48721081, 'n': 37}
-이야기 Foremost-Nuns/04-Patacara {'pdf': 36894500, 'zip': 36619969, 'n': 30}
-이야기 Foremost-Nuns/05-Dhammadinna {'pdf': 29276001, 'zip': 29005673, 'n': 22}
-이야기 Foremost-Nuns/06-Nanda {'pdf': 14599026, 'zip': 14334874, 'n': 12}
-이야기 Foremost-Nuns/07-Sona {'pdf': 18518037, 'zip': 18253287, 'n': 15}
-이야기 Foremost-Nuns/08-Sakula {'pdf': 24087462, 'zip': 23820046, 'n': 15}
-이야기 Foremost-Nuns/09-Bhadda-Kundalakesa {'pdf': 33238188, 'zip': 32960439, 'n': 25}
-이야기 Foremost-Nuns/10-Bhadda-Kapilani {'pdf': 14124308, 'zip': 13855285, 'n': 11}
-이야기 Foremost-Nuns/11-Bhadda-Kaccana {'pdf': 20190882, 'zip': 19922656, 'n': 13}
-이야기 Foremost-Nuns/12-Kisa-Gotami {'pdf': 34719749, 'zip': 34448123, 'n': 23}
-이야기 Foremost-Nuns/13-Singalakamata {'pdf': 18845820, 'zip': 18575237, 'n': 13}
-책 Foremost-Nuns {'pdf': 385941598, 'pdfs': 40856389, 'zip': 385588916, 'stories': 13, 'n': 283}
-이야기 Four-Rich-Men/01-Jotika-the-Householder {'pdf': 19165860, 'zip': 18897249, 'n': 15}
-이야기 Four-Rich-Men/02-Mendaka-the-Householder {'pdf': 16419020, 'zip': 16150440, 'n': 15}
-이야기 Four-Rich-Men/03-Jatila-the-Treasurer {'pdf': 17835020, 'zip': 17565066, 'n': 12}
-이야기 Four-Rich-Men/04-Kalavaliya-the-Treasurer {'pdf': 18125608, 'zip': 17851521, 'n': 13}
-책 Four-Rich-Men {'pdf': 70740120, 'pdfs': 7381108, 'zip': 70463899, 'stories': 4, 'n': 55}
-이야기 Jatakamala/28-Ksantivadin {'pdf': 17044666, 'zip': 16766985, 'n': 15}
-책 Jatakamala {'pdf': 374443258, 'pdfs': 37586367, 'zip': 374035352, 'stories': 28, 'n': 410}
-내려받기 파일: 21 묶음 새로 만듦
-글로 보기: 288 이야기
+공개 주소 확인: 200 953990바이트
+이야기 Jatakamala/29-Brahmaloka {'pdf': 13761087, 'zip': 13476753, 'n': 15}
+책 Jatakamala {'pdf': 387925530, 'pdfs': 38881005, 'zip': 387512520, 'stories': 29, 'n': 425}
+내려받기 파일: 2 묶음 새로 만듦
+글로 보기: 289 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
 34-Woodpecker
+20-The-Brahmin-Soma.htm: 그림 11 상자 6 상자밖글 134
+20-The-Brahmin-Soma
+29-30-Escape-from-Samsara.htm: 그림 16 상자 2 상자밖글 451
+29-30-Escape-from-Samsara

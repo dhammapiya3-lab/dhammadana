@@ -1,0 +1,468 @@
+[
+ {
+  "img": "images/02-The-Hunter-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     127,
+     64
+    ],
+    "bbox": [
+     162,
+     205,
+     1408,
+     615
+    ],
+    "shape": "box",
+    "en": "The Migaluddaka Transformation",
+    "conf": 51
+   },
+   {
+    "seed": [
+     405,
+     351
+    ],
+    "bbox": [
+     1256,
+     1041,
+     2490,
+     1339
+    ],
+    "shape": "box",
+    "en": "Case Sith; on the Compounding Merit of the Dhamma",
+    "conf": 39
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-The-Hunter-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Eon",
+   "Sikhi",
+   "Thirty-one",
+   "eons",
+   "ago,",
+   "the",
+   "world",
+   "was",
+   "illuminated",
+   "Buddha",
+   "Sikhi",
+   "Seeking",
+   "solitude,",
+   "entered",
+   "magnificent,",
+   "blossoming",
+   "forest.",
+   "Seated",
+   "upon",
+   "cool",
+   "stone,",
+   "radiating",
+   "six-colored",
+   "light,",
+   "the",
+   "Buddha",
+   "began",
+   "preach",
+   "the",
+   "Four",
+   "Noble",
+   "Truths",
+   "assembly",
+   "heavenly",
+   "beings."
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WAS",
+   "The",
+   "Hunter’s",
+   "Arrival",
+   "Migaluddaka",
+   "was",
+   "hunter,",
+   "surviving",
+   "taking",
+   "the",
+   "lives",
+   "forest",
+   "deer",
+   "and",
+   "wild",
+   "boars",
+   "feed",
+   "his",
+   "family.",
+   "Wandering",
+   "deep",
+   "into",
+   "the",
+   "woods",
+   "with",
+   "his",
+   "bow",
+   "and",
+   "arrows,",
+   "stumbled",
+   "upon",
+   "the",
+   "divine",
+   "assembly.",
+   "saw",
+   "the",
+   "Buddha",
+   "shining",
+   "like",
+   "the",
+   "sun.",
+   "DAN"
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WAS",
+   "The",
+   "Spark",
+   "Merit",
+   "Transformation:",
+   "His",
+   "mind",
+   "filled",
+   "Proximity:",
+   "stood",
+   "one",
+   "side,",
+   "Receptivity:",
+   "For",
+   "just",
+   "brief",
+   "moment,",
+   "listened",
+   "the",
+   "supreme",
+   "Dhamma.",
+   "with",
+   "profound",
+   "faith",
+   "and",
+   "joy.",
+   "dropping",
+   "his"
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Wheel",
+   "Rebirth",
+   "The",
+   "Seed:",
+   "single",
+   "moment",
+   "joyful",
+   "faith",
+   "The",
+   "Return:",
+   "Rebirth",
+   "this",
+   "auspicious",
+   "eon",
+   "into",
+   "vastly",
+   "wealthy",
+   "family",
+   "Savatthi",
+   "The",
+   "Harvest",
+   "(31",
+   "Eons):",
+   "Rebirth",
+   "exclusively",
+   "heavenly",
+   "realms.",
+   "suffering",
+   "lower",
+   "worlds.",
+   "Human",
+   "ee,"
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Golden",
+   "Era",
+   "Gotama",
+   "Protected",
+   "his",
+   "merit,",
+   "was",
+   "reborn",
+   "the",
+   "supreme",
+   "city",
+   "Savatthi.",
+   "Now",
+   "young",
+   "man",
+   "immense",
+   "wealth",
+   "and",
+   "influence,",
+   "grew",
+   "maturity",
+   "surrounded",
+   "massive",
+   "retinue,",
+   "enjoying",
+   "the",
+   "finest",
+   "human",
+   "pleasures."
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Encounter",
+   "While",
+   "wandering,",
+   "the",
+   "young",
+   "man",
+   "arrived",
+   "the",
+   "Jetavana",
+   "monastery.",
+   "History",
+   "repeated",
+   "itself:",
+   "saw",
+   "the",
+   "Buddha",
+   "sitting",
+   "with",
+   "his",
+   "disciples",
+   "and",
+   "heard",
+   "the",
+   "sweet",
+   "teaching",
+   "the",
+   "Four",
+   "Noble",
+   "Truths.",
+   "The",
+   "karmic",
+   "seed,",
+   "planted",
+   "eons",
+   "ago,",
+   "was",
+   "ready",
+   "blossom.",
+   "Jetavana"
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Renunciation",
+   "and",
+   "Awakenin",
+   "Hearing",
+   "the",
+   "Dhamma,",
+   "renounced",
+   "his",
+   "immense",
+   "wealth",
+   "ordain",
+   "the",
+   "Buddha's",
+   "dispensation.",
+   "single",
+   "day,",
+   "mastered",
+   "the",
+   "teachings,",
+   "destroyed",
+   "all",
+   "defilements,",
+   "and",
+   "attained",
+   "the",
+   "supreme,",
+   "unaging,",
+   "undying",
+   "peace",
+   "Nibbana."
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     192,
+     308
+    ],
+    "bbox": [
+     278,
+     565,
+     1296,
+     1322
+    ],
+    "shape": "box",
+    "en": "Wild Forest Sparked Faith Heavenly Rebirth",
+    "conf": 93
+   },
+   {
+    "seed": [
+     475,
+     310
+    ],
+    "bbox": [
+     1352,
+     565,
+     2384,
+     1322
+    ],
+    "shape": "box",
+    "en": "Jetavana Monastery. Renunciation Ultimate Nibbana",
+    "conf": 83
+   }
+  ],
+  "loose": [
+   "The",
+   "Karmic",
+   "Mirror",
+   "Mirror"
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     426,
+     74
+    ],
+    "bbox": [
+     1025,
+     202,
+     2407,
+     688
+    ],
+    "shape": "bubble",
+    "en": "The Arahant’s Declaration Standing amidst the assembly of monks and nuns, he declared his past deeds with immense joy. “Because listened to the perfectly taught Dhamma for just one moment, never again feared rebirth in realms of misery.” vo",
+    "conf": 51
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/02-The-Hunter-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Ultimate",
+   "Lesson",
+   "not",
+   "lazy.",
+   "Hearing",
+   "the",
+   "Dhamma",
+   "incredibly",
+   "rare.",
+   "Just",
+   "brief",
+   "moment",
+   "listening",
+   "yields",
+   "unimaginable",
+   "wealth",
+   "and",
+   "ultimate",
+   "peace.",
+   "Abandon",
+   "hesitation.",
+   "Seek",
+   "the",
+   "Dhamma.",
+   "Itimate"
+  ]
+ }
+]

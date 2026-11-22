@@ -1,0 +1,470 @@
+[
+ {
+  "img": "images/01-02-The-Setting-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Manimekhalai:",
+   "The",
+   "Epic",
+   "Puhar",
+   "tale",
+   "Indra’s",
+   "grand",
+   "festival,",
+   "the",
+   "illusion",
+   "worldly",
+   "joy,",
+   "and",
+   "the",
+   "profound",
+   "path",
+   "awakening.",
+   "awakening."
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     171,
+     250
+    ],
+    "bbox": [
+     314,
+     688,
+     1676,
+     1309
+    ],
+    "shape": "box",
+    "en": "Seeking to elevate his ancient city’s fame, the victorious Cola king prayed to Indra. The great god consented to grace Puhar with his presence for magnificent twenty-eight-day festival.",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "Gee"
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     331,
+     160
+    ],
+    "bbox": [
+     817,
+     456,
+     1835,
+     1309
+    ],
+    "shape": "box",
+    "en": "Puhar swelled with greatness. Teachers of absolute truth, expert astrologers, royal ministers, and glowing gods in disguise all gathered. The city became vibrant center of cosmic and worldly celebration.",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/01-02-The-Setting-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     450,
+     138
+    ],
+    "bbox": [
+     1177,
+     367,
+     2066,
+     1342
+    ],
+    "shape": "box",
+    "en": "‘To app the guardian deities, warriors ano cavalry escorted the royal elephant. By the rhythmic beat of the prosperous royal drum, the grano festival was announced to the entire kingdom.",
+    "conf": 68
+   }
+  ],
+  "loose": [
+   "ape"
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "royal",
+   "city",
+   "prepared",
+   "for",
+   "the",
+   "gods:",
+   "Streets",
+   "covered",
+   "fresh",
+   "sand",
+   "Gateways",
+   "adorned",
+   "with",
+   "flags",
+   "Golden",
+   "statues",
+   "bright",
+   "lamps",
+   "Temples",
+   "draped",
+   "pearls"
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "royal",
+   "proclamation",
+   "demanded",
+   "universal",
+   "peace.",
+   "For",
+   "twenty-eight",
+   "days,",
+   "old",
+   "enemies",
+   "forgave",
+   "each",
+   "Gods",
+   "and",
+   "mortals",
+   "mingled",
+   "joyously",
+   "flower",
+   "islets,",
+   "and",
+   "gardens,",
+   "joyously"
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Despite",
+   "the",
+   "joyous",
+   "celebrations,",
+   "the",
+   "celebrated",
+   "courtesan",
+   "and",
+   "ber",
+   "were",
+   "absent.",
+   "their",
+   "ascetic",
+   "appearance,",
+   "was",
+   "sent",
+   "question",
+   "their",
+   "drawal",
+   "from",
+   "the",
+   "world.",
+   "withdrawal"
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Vasantamala",
+   "scolded",
+   "Madhavi",
+   "for",
+   "abandoning",
+   "her",
+   "arts.",
+   "Madhavi",
+   "replied",
+   "that",
+   "the",
+   "tragic",
+   "death",
+   "her",
+   "beloved",
+   "Kovalan",
+   "had",
+   "shattered",
+   "her.",
+   "She",
+   "longer",
+   "cared",
+   "for",
+   "the",
+   "esteem",
+   "worldly",
+   "shame."
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Madhavi",
+   "explained",
+   "the",
+   "fate",
+   "chaste",
+   "widows.",
+   "While",
+   "(Te",
+   "Kovalan’s",
+   "wife",
+   "Kannaki",
+   "burned",
+   "the",
+   "Pandya",
+   "city",
+   "fiery",
+   "grief,",
+   "chose",
+   "guiet",
+   "penance,",
+   "wearing",
+   "body",
+   "away",
+   "ascetic",
+   "prayer."
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "PLZ",
+   "the",
+   "Manimekbalai",
+   "was",
+   "meant",
+   "for",
+   "pursuits.",
+   "Madhavi",
+   "declared",
+   "her",
+   "daughter",
+   "fit",
+   "only",
+   "for",
+   "the",
+   "pure",
+   "life",
+   "ascetic,",
+   "rejecting",
+   "the",
+   "evil",
+   "life",
+   "courtesan.",
+   "daughter"
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Driven",
+   "extreme",
+   "sorrow,",
+   "Madhavi",
+   "sought",
+   "the",
+   "hermitage",
+   "the",
+   "holy",
+   "ones",
+   "She",
+   "threw",
+   "herself",
+   "the",
+   "feet",
+   "the",
+   "venerable",
+   "Buddhist",
+   "sage",
+   "Aravana",
+   "Adigal,",
+   "accepting",
+   "him",
+   "her",
+   "only",
+   "saviour.",
+   "SSS"
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Bliss",
+   "Suffering",
+   "The",
+   "revealed",
+   "the",
+   "absolute",
+   "truth:",
+   "Attachment",
+   "binds",
+   "the",
+   "cycle",
+   "birth",
+   "and",
+   "growing",
+   "suffering.",
+   "Detachment",
+   "ends",
+   "rebirth,",
+   "unlocking",
+   "unending,",
+   "supreme",
+   "bliss.",
+   "chm",
+   "fering",
+   "truth;"
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "sage",
+   "expounded",
+   "the",
+   "sacred",
+   "silas—",
+   "the",
+   "strict",
+   "discipline",
+   "moral",
+   "conduct.",
+   "assured",
+   "Madhavi",
+   "that",
+   "giving",
+   "worldly",
+   "attachment",
+   "was",
+   "the",
+   "only",
+   "true",
+   "path",
+   "save",
+   "herself",
+   "from",
+   "unending",
+   "grief."
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Unable",
+   "grasp",
+   "this",
+   "profound",
+   "spiritual",
+   "Vasantamala",
+   "retreated",
+   "sorrow.",
+   "She",
+   "departed",
+   "feeling",
+   "though",
+   "she",
+   "had",
+   "dropped",
+   "jewel",
+   "immeasurable,",
+   "divine",
+   "value",
+   "into",
+   "the",
+   "unforgiving",
+   "sea.",
+   "awakening,"
+  ]
+ }
+]

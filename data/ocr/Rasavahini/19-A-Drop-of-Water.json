@@ -1,0 +1,463 @@
+[
+ {
+  "img": "images/19-A-Drop-of-Water-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Reward",
+   "the",
+   "Gift",
+   "Water",
+   "the",
+   "enduring",
+   "power",
+   "Sappurisa",
+   "(the",
+   "way",
+   "the",
+   "Adapted",
+   "from",
+   "Ras",
+   "vahin",
+   "the",
+   "good).",
+   "ancient",
+   "tale",
+   "compassion,",
+   "gratitude,",
+   "and",
+   "enduring",
+   "The"
+  ]
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     508,
+     47
+    ],
+    "bbox": [
+     1412,
+     79,
+     2619,
+     896
+    ],
+    "shape": "box",
+    "en": "Fateful Crossing traveler was crossing the turbulent Candabhaga river by boat. Beside him sat pregnant woman returning to her city. Midway across the water, sudden and severe labor pains struck her. She was trapped, unable to safely deliver her child.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     47,
+     47
+    ],
+    "bbox": [
+     33,
+     56,
+     1260,
+     883
+    ],
+    "shape": "box",
+    "en": "Ignored by the Crowd Exhausted and in agony, the woman begged the other passengers for single drop of water. Consumed by their own concerns, the crowd ignored her pleas. She was left entirely alone in her suffering.",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Stranger’s",
+   "Kindness",
+   "Moved",
+   "deep",
+   "compassion,",
+   "the",
+   "traveler",
+   "drew",
+   "water",
+   "and",
+   "poured",
+   "into",
+   "her",
+   "mouth.",
+   "Revived",
+   "this",
+   "simple",
+   "act",
+   "grace,",
+   "she",
+   "safely",
+   "delivered",
+   "her",
+   "child.",
+   "They",
+   "parted",
+   "ways,",
+   "returning",
+   "their",
+   "separate",
+   "lives."
+  ]
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     268,
+     97
+    ],
+    "bbox": [
+     780,
+     264,
+     1898,
+     879
+    ],
+    "shape": "box",
+    "en": "Years Later: The Accusation The traveler eventually visited the woman's city. Unable to find lodging, he slept in public hall. That night, fleeing thieves dumped stolen royal treasure beside him. The King’s guards arrived, found the sleeping traveler, and arrested him as the thief.",
+    "conf": 51
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     441,
+     57
+    ],
+    "bbox": [
+     1233,
+     136,
+     2404,
+     734
+    ],
+    "shape": "box",
+    "en": "Condemned to Death Brought before the King, the traveler pleaded his innocence: am not thief, just visitor.\" Unconvinced and angry, the King ordered his execution. The innocent man was led away to the slaughter.",
+    "conf": 87
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Face",
+   "Remembered",
+   "was",
+   "led",
+   "the",
+   "execution",
+   "block,",
+   "the",
+   "woman",
+   "saw",
+   "him",
+   "the",
+   "street.",
+   "Her",
+   "heart",
+   "trembled.",
+   "She",
+   "instantly",
+   "recognized",
+   "the",
+   "stranger",
+   "who",
+   "had",
+   "saved",
+   "her",
+   "life",
+   "the",
+   "river",
+   "years",
+   "ago.",
+   "She",
+   "rushed",
+   "toward",
+   "the",
+   "King’s",
+   "court."
+  ]
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     318,
+     381
+    ],
+    "bbox": [
+     327,
+     1233,
+     2324,
+     1458
+    ],
+    "shape": "box",
+    "en": "The Price of Life “Lord, he is no thief! Please release him,” she begged. The King demanded ransom she could not pay. Without hesitation, she offered the ultimate sacrifice: “Make me and my seven sons your slaves, but spare this man!”",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "King’s",
+   "Confusion",
+   "Astonished,",
+   "the",
+   "King",
+   "questioned",
+   "her",
+   "motives.",
+   "King:",
+   "“Is",
+   "your",
+   "brother?",
+   "usband?",
+   "Your",
+   "father?",
+   "Your",
+   "Woman:",
+   "“No,",
+   "Lord.”",
+   "King:",
+   "“Is",
+   "your",
+   "creditor?",
+   "Why",
+   "would",
+   "you",
+   "trade",
+   "your",
+   "family’s",
+   "freedom",
+   "for",
+   "total",
+   "stranger’s",
+   "life?”",
+   "husband?”"
+  ]
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Virtue",
+   "the",
+   "Good",
+   "She",
+   "explained:",
+   "“He",
+   "saved",
+   "life",
+   "when",
+   "was",
+   "suffering.",
+   "When",
+   "the",
+   "world",
+   "turned",
+   "away,",
+   "alone",
+   "showed",
+   "compassion",
+   "Good",
+   "people",
+   "not",
+   "forget.",
+   "righteous",
+   "person",
+   "tracks",
+   "down",
+   "their",
+   "benefactor.",
+   "Because",
+   "him,",
+   "family",
+   "exists.",
+   "must",
+   "save",
+   "him"
+  ]
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     161,
+     291
+    ],
+    "bbox": [
+     463,
+     903,
+     711,
+     1336
+    ],
+    "shape": "box",
+    "en": "Astranger stranger gives drop of water toa dying mother",
+    "conf": 73
+   },
+   {
+    "seed": [
+     288,
+     260
+    ],
+    "bbox": [
+     903,
+     807,
+     1818,
+     1445
+    ],
+    "shape": "box",
+    "en": "The Anatomy of Kamma Moved by this profound display of Dhamma, the King immediately freed the innocent man Recognizing their extraordinary virtue, he bestowed massive royal wealth upon them both",
+    "conf": 91
+   },
+   {
+    "seed": [
+     606,
+     289
+    ],
+    "bbox": [
+     1937,
+     903,
+     2189,
+     1336
+    ],
+    "shape": "box",
+    "en": "mother gives her total freedom tosavea dying stranger.",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "The",
+   "Re:",
+   "Harvest",
+   "Bat"
+  ]
+ },
+ {
+  "img": "images/19-A-Drop-of-Water-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ery",
+   "The",
+   "Enduring",
+   "Law",
+   "Dhamma",
+   "Both",
+   "lived",
+   "out",
+   "their",
+   "days",
+   "performing",
+   "good",
+   "deeds",
+   "and",
+   "eventually",
+   "attained",
+   "the",
+   "heavenly",
+   "realms.",
+   "“Even",
+   "women",
+   "established",
+   "Dhamma",
+   "attain",
+   "wealth",
+   "and",
+   "praise.",
+   "Keep",
+   "your",
+   "mind",
+   "the",
+   "Dhamma",
+   "and",
+   "good",
+   "conduct,",
+   "and",
+   "always",
+   "act",
+   "with",
+   "purity.”"
+  ]
+ }
+]

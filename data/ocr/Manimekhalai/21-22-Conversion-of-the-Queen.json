@@ -1,0 +1,385 @@
+[
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     547,
+     183
+    ],
+    "bbox": [
+     1451,
+     503,
+     2324,
+     1032
+    ],
+    "shape": "box",
+    "en": "The Epic of Manimeékhalai Karma, Justice, and the Path to Nirvana",
+    "conf": 55
+   }
+  ],
+  "loose": [
+   "(4,"
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Awakenin",
+   "Manimékhalai",
+   "awakens",
+   "find",
+   "Prince",
+   "slain",
+   "Vidyadhara.",
+   "The",
+   "Pillar",
+   "God",
+   "Tuvadikan",
+   "reveals",
+   "they",
+   "were",
+   "married",
+   "across",
+   "countless",
+   "past",
+   "lives",
+   "Death",
+   "merely",
+   "consequence."
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Cause",
+   "and",
+   "Past:",
+   "Prince",
+   "Rahula",
+   "angrily",
+   "strikes",
+   "his",
+   "cook",
+   "for",
+   "delaying",
+   "Rishi’s",
+   "breakfast.",
+   "Present:",
+   "Karmic",
+   "debt",
+   "manifests.",
+   "Prince",
+   "Udayakumara",
+   "falls",
+   "sword.",
+   "god",
+   "can",
+   "erase",
+   "past",
+   "deeds.",
+   "Effect",
+   "Effect"
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Imprisoned",
+   "the",
+   "Cola",
+   "King.",
+   "Freed",
+   "sage",
+   "Aravana",
+   "Adigal.",
+   "Journeys",
+   "Savaham.",
+   "Feeds",
+   "starving",
+   "masses",
+   "avaham.",
+   "The",
+   "Prophecy"
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     140,
+     133
+    ],
+    "bbox": [
+     222,
+     238,
+     899,
+     1309
+    ],
+    "shape": "box",
+    "en": "The Ultimate Liberation Guided by Aravana Adigal, Manimékhalai sheds her karmic burden through dharma. Reborn as aman man in North Magadha, he becomes the Buddha’s first disciple and achieves Nirvana.",
+    "conf": 77
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     416,
+     81
+    ],
+    "bbox": [
+     764,
+     159,
+     1891,
+     691
+    ],
+    "shape": "bubble",
+    "en": "Earthly Law ne Awakens Following the Prince’s death, ascetics advise the Cola King. ob They recount parables Far Le oO proving earthly rulers must mirror cosmic justice by ruthlessly punishing guilty passion.",
+    "conf": 36
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Pow",
+   "Chastity",
+   "lal",
+   "tion.",
+   "arudi:",
+   "Pure,",
+   "but",
+   "distracted",
+   "Visakai:",
+   "Unyielding",
+   "devo",
+   "festivals.",
+   "Executed",
+   "her",
+   "harasser",
+   "Her",
+   "pure",
+   "aura",
+   "physically",
+   "froze",
+   "King",
+   "Kakand",
+   "prince’s",
+   "arm",
+   "mid-air.",
+   "Marudi:",
+   "an.",
+   "through",
+   "attacking"
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "King’s",
+   "Duty",
+   "Ancient",
+   "kings",
+   "ruthlessly",
+   "protected",
+   "chaste",
+   "women.",
+   "When",
+   "prince",
+   "let",
+   "passion",
+   "corrupt",
+   "his",
+   "mind,",
+   "King",
+   "Kakandan",
+   "did",
+   "not",
+   "hesitate.",
+   "uphold",
+   "dharma,",
+   "the",
+   "king",
+   "executed",
+   "his",
+   "own",
+   "son",
+   "ind,"
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Life",
+   "Visakai",
+   "and",
+   "Dharmadatta",
+   "forsook",
+   "earthly",
+   "marriage.",
+   "Reuniting",
+   "age",
+   "sixty,",
+   "she",
+   "taught",
+   "him:",
+   "Youth",
+   "and",
+   "beauty",
+   "fade.",
+   "Only",
+   "great",
+   "acts",
+   "charity",
+   "follow",
+   "into",
+   "the",
+   "next",
+   "life.",
+   "Wealth",
+   "for",
+   "the"
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Root",
+   "Untruth",
+   "All",
+   "Suffering",
+   "Wise",
+   "sages",
+   "condemn",
+   "five",
+   "evils:",
+   "drink,",
+   "untruth,",
+   "theft,",
+   "and",
+   "murder.",
+   "These",
+   "can",
+   "controlled.",
+   "Unbridled",
+   "Passion",
+   "the",
+   "foundation.",
+   "Drink",
+   "Until",
+   "passion",
+   "destroyed,",
+   "hell",
+   "remains",
+   "inevitable.",
+   "SSION",
+   "The",
+   "Root",
+   "ruth",
+   "rin"
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Hearing",
+   "Kovalan’s",
+   "daughter,",
+   "the",
+   "King",
+   "sheds",
+   "tears",
+   "for",
+   "his",
+   "slain",
+   "son.",
+   "Vidyadhara",
+   "did",
+   "duty.’",
+   "orders",
+   "his",
+   "son",
+   "cremated",
+   "and",
+   "Manimekhalai",
+   "protected.",
+   "ice",
+   "igns",
+   "lan",
+   "dhara",
+   "WOR,"
+  ]
+ }
+]

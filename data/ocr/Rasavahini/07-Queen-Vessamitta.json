@@ -1,0 +1,463 @@
+[
+ {
+  "img": "images/07-Queen-Vessamitta-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     253,
+     170
+    ],
+    "bbox": [
+     635,
+     506,
+     2007,
+     979
+    ],
+    "shape": "box",
+    "en": "The Sci Devotion of Mipsis Vessamitta amitta 7 Finding the Ultimate Refuge in the Triple Gem",
+    "conf": 31
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     293,
+     325
+    ],
+    "bbox": [
+     711,
+     1022,
+     1931,
+     1435
+    ],
+    "shape": "box",
+    "en": "Inthe the city of Kosambi, Queen Vessamitta itt heard vo the Buddha 3 is] preach. Moved 5 by his 2 peerless grace, she found profound faith. She took refuge in the Triple Gem, becoming ga devoted disciple of the Awakened One",
+    "conf": 49
+   }
+  ],
+  "loose": [
+   "ale"
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Peace",
+   "was",
+   "shattered",
+   "when",
+   "rival",
+   "king",
+   "demanded:",
+   "“Surrender",
+   "the",
+   "kingdom",
+   "fight.”",
+   "The",
+   "King",
+   "Kosambi",
+   "marched",
+   "war,",
+   "warning",
+   "Vessamitta:",
+   "“If",
+   "defeated,",
+   "will",
+   "raise",
+   "red",
+   "flag.",
+   "When",
+   "you",
+   "see",
+   "it,",
+   "flee",
+   "immediately.”"
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     154,
+     328
+    ],
+    "bbox": [
+     460,
+     1061,
+     2232,
+     1375
+    ],
+    "shape": "box",
+    "en": "The King fought bravely but realized defeat was imminent. He raised the red flag just before falling in battle. Seeing the crimson signal, terrified Vessamitta fled her home to escape the conquerors.",
+    "conf": 87
+   }
+  ],
+  "loose": [
+   "Wir",
+   "Gi-"
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     172,
+     302
+    ],
+    "bbox": [
+     380,
+     998,
+     2311,
+     1451
+    ],
+    "shape": "box",
+    "en": "Seo be ESF is EAE GEESE AS Sin Lar WLIO “AN Enemy soldiers captured Vessamitta and presented her to the Aa leo victorious king. Smitten by her beauty, his heart became AN bound to her. He ordered his ministers to prepare her for lye immediate anointment as his new chief consort. coo. oo Yer WS NEF, Si CAC ae Ff IOS 7a WY, fe Say $33",
+    "conf": 33
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     391,
+     296
+    ],
+    "bbox": [
+     1094,
+     965,
+     2354,
+     1375
+    ],
+    "shape": "box",
+    "en": "Vessamitta Ics refused OD the oO throne. oS “My husband is dead. My mind burns with the fire of sorrow. What wise person erson would throw dry straw into blazing azing fire? Worldly power cannot free me from this pain.”",
+    "conf": 51
+   }
+  ],
+  "loose": [
+   "Gyr",
+   "(TY)",
+   "ayo"
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     143,
+     262
+    ],
+    "bbox": [
+     182,
+     810,
+     1461,
+     1270
+    ],
+    "shape": "box",
+    "en": "Enraged by her refusal, the king issued brutal ultimatum: submit to the anointment or be thrown into roaring fire. Vessamitta warned him that killing the innocent yields dark karma, but the king refused to listen.",
+    "conf": 90
+   }
+  ],
+  "loose": [
+   "NotebookLM"
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     453,
+     300
+    ],
+    "bbox": [
+     1402,
+     893,
+     2500,
+     1339
+    ],
+    "shape": "box",
+    "en": "have no worldly protector left, she thought. As she was thrown into the flames, she surrendered completely. She fixed her mind entirely on the Triple Gem, reciting: take refuge in the Buddha, Dhamma, and Sangha.”",
+    "conf": 59
+   }
+  ],
+  "loose": [
+   "NotebookLM"
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     140,
+     344
+    ],
+    "bbox": [
+     387,
+     1015,
+     2258,
+     1342
+    ],
+    "shape": "box",
+    "en": "The roaring fire could not heat even single pore of her skin. The Triple Gem shielded her. To Vessamitta, sitting in the heart of the blazing inferno felt as cool and peaceful as resting safely inside lotus womb.",
+    "conf": 87
+   }
+  ],
+  "loose": [
+   "NotebookLM"
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     355,
+     105
+    ],
+    "bbox": [
+     175,
+     344,
+     1306,
+     820
+    ],
+    "shape": "box",
+    "en": "Leo Terrified and awestruck, the king rushed forward. He carefully lifted her from the flames, placed her upon the highest throne, and bowed. “Why did the fire not burn you?” he pleaded, ready to hear the truth.",
+    "conf": 43
+   }
+  ],
+  "loose": [
+   "Ses.",
+   "NotebookLM"
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     133,
+     65
+    ],
+    "bbox": [
+     337,
+     129,
+     2304,
+     380
+    ],
+    "shape": "box",
+    "en": "res Vessamitta explained: When ultimate fear arrives, worldly powers—parents, ts, wealth, ealth, armies, or even gods—cannot save you. Only the Triple Gem offers an impenetrable shield against the deepest fires of existence.",
+    "conf": 54
+   },
+   {
+    "seed": [
+     102,
+     126
+    ],
+    "bbox": [
+     337,
+     417,
+     1313,
+     1356
+    ],
+    "shape": "box",
+    "en": "NG Wee CY, FALSE REFUGE ey ees SS 4 7 Ae dy SS qy 4. Sen Aes ASI, ai rid",
+    "conf": 31
+   },
+   {
+    "seed": [
+     402,
+     126
+    ],
+    "bbox": [
+     1329,
+     417,
+     2304,
+     1356
+    ],
+    "shape": "box",
+    "en": "SY Gs Ah TRUE REFUGE Dor OWS Ss <7 NYP SS NI LS Ww ip",
+    "conf": 45
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     137,
+     350
+    ],
+    "bbox": [
+     337,
+     1058,
+     2304,
+     1356
+    ],
+    "shape": "box",
+    "en": "She taught the king her secret: went to the Buddha as my refuge. went to the Dhamma as my refuge. went to the Sangha as my refuge. By that power, the fire did not burn me.’ LG",
+    "conf": 52
+   }
+  ],
+  "loose": [
+   "SS)",
+   "NotebookLM"
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     146,
+     346
+    ],
+    "bbox": [
+     337,
+     1058,
+     2304,
+     1356
+    ],
+    "shape": "box",
+    "en": "Whoever firmly embraces the Threefol Refuge will not fall into ultimate suffering. It destroys sorrow, provides absolute safety, and grants the highest bliss. It is the only path from the fire into the lotus.",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "Aw)",
+   "NotebookLM"
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     131,
+     350
+    ],
+    "bbox": [
+     337,
+     1058,
+     2304,
+     1356
+    ],
+    "shape": "box",
+    "en": "His mind purified, the king asked for forgiveness. He declared Vessamitta to be like his own mother. Following her profound example, the king and his entire tire kingdom took refuge in the Triple Gem, embracing the path of virtue.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "NotebookLM"
+  ]
+ },
+ {
+  "img": "images/07-Queen-Vessamitta-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     223,
+     184
+    ],
+    "bbox": [
+     598,
+     582,
+     2043,
+     903
+    ],
+    "shape": "box",
+    "en": "By grasping the supreme refuge, Vessamitta found cooling peace in the midst of roaring fire. If you, too, protect the virtue of the highest refuge, how could you not attain the cooling peace of ultimate liberation?",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ }
+]

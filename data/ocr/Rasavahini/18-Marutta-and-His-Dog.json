@@ -1,0 +1,529 @@
+[
+ {
+  "img": "images/18-Marutta-and-His-Dog-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     123,
+     209
+    ],
+    "bbox": [
+     364,
+     555,
+     1180,
+     989
+    ],
+    "shape": "box",
+    "en": "The Faithful Hound of Marutta Brahmin",
+    "conf": 92
+   },
+   {
+    "seed": [
+     486,
+     197
+    ],
+    "bbox": [
+     1405,
+     552,
+     2285,
+     989
+    ],
+    "shape": "bubble",
+    "en": "Tale of Compassion, Loyalty and Forgiveness",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "WAN",
+   "aya",
+   "Via"
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     418,
+     60
+    ],
+    "bbox": [
+     1346,
+     169,
+     2536,
+     655
+    ],
+    "shape": "box",
+    "en": "The AS Seed of Compassion In ancient Jambudipa, Marutta Brahmin encountered stray dog suffering from severe skin disease. Moved by deep compassion, he crushed medicinal blue creepers and herbs, curing the animal. Recognizing this kindness, the healed dog vowed never to leave his side.",
+    "conf": 84
+   }
+  ],
+  "loose": [
+   "NSS",
+   "TON"
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Shattering",
+   "Tragedy",
+   "Tragedy",
+   "soon",
+   "struck",
+   "Marutta’s",
+   "home.",
+   "During",
+   "childbirth,",
+   "his",
+   "wife",
+   "suffered",
+   "catastrophic",
+   "complication.",
+   "The",
+   "unborn",
+   "child",
+   "perished",
+   "and",
+   "required",
+   "harrowing",
+   "extraction",
+   "save",
+   "her",
+   "life",
+   "Broken-hearted",
+   "this",
+   "profound",
+   "suffering,",
+   "Marutta",
+   "lost",
+   "all",
+   "desire",
+   "for",
+   "the",
+   "worldly",
+   "life."
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     56,
+     264
+    ],
+    "bbox": [
+     122,
+     827,
+     1518,
+     1359
+    ],
+    "shape": "box",
+    "en": "The Path of Renunciation Abandoning his wealth, Marutta retreated into the deep forest. He became an ascetic sage, living life of quiet meditation. The faithful hound followed him into the wilderness, remaining his sole, vigilant companion.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Roots",
+   "Malice",
+   "Back",
+   "the",
+   "village,",
+   "Marutta’s",
+   "wife",
+   "took",
+   "new",
+   "lover.",
+   "Filled",
+   "with",
+   "spite",
+   "toward",
+   "the",
+   "husband",
+   "who",
+   "had",
+   "left",
+   "her",
+   "behind,",
+   "her",
+   "heart",
+   "blackened.",
+   "She",
+   "conspired",
+   "with",
+   "her",
+   "new",
+   "partner,",
+   "whispering:",
+   "“You",
+   "must",
+   "the",
+   "forest",
+   "and",
+   "kill",
+   "the",
+   "ascetic.”"
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     41,
+     76
+    ],
+    "bbox": [
+     112,
+     212,
+     1144,
+     711
+    ],
+    "shape": "box",
+    "en": "The Assassin in the Foliage Armed with heavy bow and quiver of arrows, the wicked man crept into the forest While the sage was away gathering wild fruits the assassin hid in the dense foliage, waiting to strike upon his return",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Silent",
+   "Protector",
+   "The",
+   "vigilant",
+   "dog",
+   "sensed",
+   "the",
+   "impending",
+   "danger.",
+   "While",
+   "the",
+   "assassin",
+   "was",
+   "distracted,",
+   "the",
+   "faithful",
+   "hound",
+   "crept",
+   "forward",
+   "and",
+   "silently",
+   "chewed",
+   "through",
+   "the",
+   "taut",
+   "bowstring.",
+   "Every",
+   "time",
+   "the",
+   "assassin",
+   "attempted",
+   "re-string",
+   "the",
+   "weapon,",
+   "the",
+   "dog",
+   "severed",
+   "its",
+   "power.",
+   "GON"
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     446,
+     64
+    ],
+    "bbox": [
+     1365,
+     179,
+     2397,
+     734
+    ],
+    "shape": "box",
+    "en": "The Fierce Defense Realizing his bow was useless, the villain lunged toward the returning sage. Instantly, the dog sprang! He bit the assassin’s foot, brought him crashing to the ground, and fiercely defended his master, rendering the attacker completely helpless.",
+    "conf": 81
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     80,
+     82
+    ],
+    "bbox": [
+     182,
+     218,
+     1494,
+     840
+    ],
+    "shape": "box",
+    "en": "The Cycle of Compassion Hearing the commotion, the sage approached Rather than anger toward his would-be killer. his heart swelled with pity. He gently called off the dog, dressed the man’s bleeding wounds and nourished him back to strength",
+    "conf": 81
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     386,
+     349
+    ],
+    "bbox": [
+     889,
+     1141,
+     1759,
+     1465
+    ],
+    "shape": "box",
+    "en": "Liberation act of forgiveness, the sage purified absorptions and higher knowledge. reborn in the exalted, peaceful",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "Through",
+   "this",
+   "ultimate",
+   "his",
+   "mind",
+   "completely.",
+   "attained",
+   "deep",
+   "the",
+   "end",
+   "his",
+   "days,",
+   "was",
+   "realm."
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     145,
+     30
+    ],
+    "bbox": [
+     337,
+     93,
+     2314,
+     311
+    ],
+    "shape": "box",
+    "en": "The Karm Cha In of Compass single act of mercy echoes through time, creating protective shield of virtue",
+    "conf": 67
+   },
+   {
+    "seed": [
+     392,
+     137
+    ],
+    "bbox": [
+     1022,
+     423,
+     1627,
+     565
+    ],
+    "shape": "box",
+    "en": "Ascetic heals Dog",
+    "conf": 96
+   },
+   {
+    "seed": [
+     373,
+     197
+    ],
+    "bbox": [
+     1022,
+     651,
+     1627,
+     794
+    ],
+    "shape": "box",
+    "en": "Dog cultivates Gratitude",
+    "conf": 93
+   },
+   {
+    "seed": [
+     378,
+     279
+    ],
+    "bbox": [
+     1022,
+     883,
+     1627,
+     1025
+    ],
+    "shape": "box",
+    "en": "Dog disables Assassin",
+    "conf": 96
+   },
+   {
+    "seed": [
+     417,
+     336
+    ],
+    "bbox": [
+     1022,
+     1111,
+     1627,
+     1253
+    ],
+    "shape": "box",
+    "en": "CL Ascetic survives fil and forgives",
+    "conf": 51
+   },
+   {
+    "seed": [
+     369,
+     411
+    ],
+    "bbox": [
+     1022,
+     1342,
+     1627,
+     1481
+    ],
+    "shape": "box",
+    "en": "Fie vile, Ascetic achieves Liberation",
+    "conf": 47
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     369,
+     108
+    ],
+    "bbox": [
+     992,
+     271,
+     1656,
+     1276
+    ],
+    "shape": "box",
+    "en": "The Wisdom of Gratitude tt ODO 800 “The dog, remembering the kindness done to him showed his gratitude Striking down the enemy, he saved the sage’s life Even animals know the value of good deed. Therefore let all wise beings cultivate gratitude",
+    "conf": 43
+   }
+  ],
+  "loose": [
+   "EAE"
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     349,
+     153
+    ],
+    "bbox": [
+     979,
+     440,
+     1670,
+     1131
+    ],
+    "shape": "bubble",
+    "en": "The Path of Prosperity and Peace net Having heard of the faithful hound’s gratitude, and the sage’s boundless mercy, you too should act rightly. Show compassion and help others. This will forever be the source your prosperity and peace.”,",
+    "conf": 30
+   }
+  ],
+  "loose": [
+   "NY,"
+  ]
+ }
+]

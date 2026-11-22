@@ -1,0 +1,549 @@
+[
+ {
+  "img": "images/13-14-Aputra-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Tale",
+   "Aputra:",
+   "The",
+   "Boy",
+   "the",
+   "Cow.",
+   "From",
+   "the",
+   "Tamil",
+   "Buddhist",
+   "Epic",
+   "Manimekhalai.",
+   "Set",
+   "the",
+   "lands",
+   "the",
+   "Cola",
+   "and",
+   "Pandya,",
+   "following",
+   "the",
+   "legacy",
+   "Kovalan",
+   "wig"
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "venerable",
+   "Aputra’s",
+   "life.",
+   "Born",
+   "secret",
+   "near",
+   "Korkai",
+   "Brahmin",
+   "woman,",
+   "Sali,",
+   "who",
+   "had",
+   "fallen",
+   "from",
+   "her",
+   "station,",
+   "the",
+   "infant",
+   "was",
+   "abandoned",
+   "without",
+   "pity",
+   "sequestered",
+   "plantain",
+   "garden",
+   "Adigal",
+   "recou"
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     482,
+     97
+    ],
+    "bbox": [
+     1461,
+     245,
+     2404,
+     688
+    ],
+    "shape": "bubble",
+    "en": "Hearing the infant’s weeping, gentle cow approached. She licked the boy, fed him her milk, and stayed by his side for seven days, protecting him from all harm. Thus, he survived.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "als"
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Brahmin",
+   "traveler",
+   "named",
+   "Ilam",
+   "heard",
+   "the",
+   "child.",
+   "Pitying",
+   "the",
+   "forlorn",
+   "baby,",
+   "they",
+   "dopted",
+   "him",
+   "divine",
+   "blessing,",
+   "providing",
+   "him",
+   "rigorous",
+   "education",
+   "their",
+   "village.",
+   "and",
+   "his",
+   "huti",
+   "traveler",
+   "nam",
+   "iff",
+   "cation"
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "grand",
+   "village",
+   "sacrifice,",
+   "the",
+   "young",
+   "boy",
+   "discovered",
+   "cow",
+   "deep",
+   "distress.",
+   "His",
+   "innate",
+   "compassion",
+   "ignited.",
+   "Under",
+   "the",
+   "cover",
+   "night,",
+   "stole",
+   "cow,",
+   "leading",
+   "her",
+   "save",
+   "her",
+   "life.",
+   "decorated",
+   "the",
+   "away",
+   "ading"
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "priests",
+   "caught",
+   "and",
+   "beat",
+   "Defending",
+   "the",
+   "cow",
+   "attacked",
+   "them.",
+   "feed",
+   "the",
+   "world;",
+   "the",
+   "boy",
+   "argued.",
+   "‘Why",
+   "harm",
+   "them?’",
+   "Rejecting",
+   "his",
+   "wisdom,",
+   "the",
+   "angry",
+   "priests",
+   "cast",
+   "him",
+   "out,",
+   "mocking",
+   "him",
+   "‘Aputra",
+   "—the",
+   "Cow’s",
+   "Son.",
+   "her",
+   "savior,",
+   "efending"
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Exiled",
+   "Southern",
+   "Madura,",
+   "Aputra",
+   "temple",
+   "courtyard",
+   "his",
+   "home.",
+   "Daily,",
+   "begged",
+   "alms,",
+   "faithfully",
+   "feeding",
+   "the",
+   "blind,",
+   "deaf,",
+   "and",
+   "sick",
+   "before",
+   "eating",
+   "whatever",
+   "remained.",
+   "slept",
+   "with",
+   "his",
+   "begging-bowl",
+   "his",
+   "pillow.",
+   "whe"
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "sed",
+   "his",
+   "inabili",
+   "midnight",
+   "wanderers,",
+   "Aputra",
+   "prayed.",
+   "The",
+   "Goddess",
+   "Sarasvati",
+   "appeared,",
+   "gifting",
+   "him",
+   "divine",
+   "bowl.",
+   "‘It",
+   "will",
+   "never",
+   "empty,’",
+   "she",
+   "promised,",
+   "‘unless",
+   "the",
+   "receiving",
+   "hands",
+   "tire.’",
+   "Distressed",
+   "feed",
+   "sta"
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "ple",
+   "yard",
+   "transformed.",
+   "Peo",
+   "animals,",
+   "and",
+   "birds",
+   "gathered",
+   "endlessly.",
+   "The",
+   "miraculous",
+   "bowl",
+   "poured",
+   "forth",
+   "boundless",
+   "food,",
+   "establishing",
+   "the",
+   "Cow’s",
+   "gry",
+   "beings.",
+   "Son",
+   "the",
+   "all",
+   "living,",
+   "hun",
+   "Aputra’s",
+   "supreme",
+   "protector"
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sensing",
+   "this",
+   "immense",
+   "merit,",
+   "God",
+   "Indra",
+   "appeared",
+   "old",
+   "Brahmin,",
+   "offering",
+   "heavenly",
+   "boon.",
+   "Aputra",
+   "laughed.",
+   "seek",
+   "heaven.",
+   "Feeding",
+   "the",
+   "hungry",
+   "only",
+   "reward.",
+   "Keep",
+   "your",
+   "boons.”"
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     379,
+     183
+    ],
+    "bbox": [
+     555,
+     595,
+     2093,
+     949
+    ],
+    "shape": "box",
+    "en": "Angered, Indra summoned endless rains. The Pandya lands prospered, leaving no creature wanting sustenance. Without starving souls to feed, Aputra’s divine bowl lost its purpose. His charity was defeated by overwhelming abundance.",
+    "conf": 83
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/13-14-Aputra-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Hearing",
+   "deadly",
+   "famine",
+   "Savakam,",
+   "Aputra",
+   "boarded",
+   "ship",
+   "help.",
+   "During",
+   "severe",
+   "storm,",
+   "the",
+   "ship",
+   "anchored",
+   "island.",
+   "Tragically,",
+   "sailed",
+   "away",
+   "the",
+   "dead",
+   "night",
+   "leaving",
+   "him",
+   "stranded"
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Unable",
+   "help",
+   "others,",
+   "Aputra",
+   "the",
+   "divine",
+   "bowl",
+   "into",
+   "cow-shaped",
+   "pond.",
+   "prayed:",
+   "“May",
+   "this",
+   "bowl",
+   "emerge",
+   "yearly,",
+   "and",
+   "pass",
+   "only",
+   "one",
+   "whose",
+   "life-work",
+   "protect",
+   "all",
+   "beings.”",
+   "placed"
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "His",
+   "life’",
+   "mission",
+   "thwarted,",
+   "Aputra",
+   "lay",
+   "down",
+   "without",
+   "food",
+   "drink.",
+   "Through",
+   "profound",
+   "ascetic",
+   "discipline,",
+   "abandoned",
+   "his",
+   "physical",
+   "form,",
+   "passing",
+   "peacefully",
+   "out",
+   "existence",
+   "the",
+   "isolated",
+   "shores",
+   "His"
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     150,
+     364
+    ],
+    "bbox": [
+     420,
+     1203,
+     2235,
+     1435
+    ],
+    "shape": "box",
+    "en": "Yet, true compassion never dies. Aputra was reborn in the land of Savakam from the King’s sacred cow. Like the sun setting only to rise again, he returned to banish the world’ darkness.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ }
+]
