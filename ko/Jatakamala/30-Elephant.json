@@ -1,0 +1,557 @@
+[
+ {
+  "img": "images/30-Elephant-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     540,
+     110,
+     794,
+     148
+    ],
+    "ko": "보살의 고독",
+    "cover": [
+     247,
+     239,
+     221
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     540,
+     148,
+     794,
+     300
+    ],
+    "ko": "보살은 어린 싹과 깊은 호수로 꾸민 숲에 큰 코끼리로 살았습니다. 물 없는 사막에 둘러싸여 홀로 지내며 잎과 연뿌리와 고요함의 덕에 만족했습니다. 그는 사람 세상과 떨어져 사는 대사였습니다. 그 세상이 밀려 들어오기 전까지는.",
+    "cover": [
+     248,
+     240,
+     223
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-Elephant-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     16,
+     20,
+     400,
+     50
+    ],
+    "ko": "황야에서 소리가 들려왔습니다.",
+    "cover": [
+     248,
+     242,
+     230
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     16,
+     50,
+     400,
+     224
+    ],
+    "ko": "사냥꾼 무리의 함성도, 들코끼리 떼의 울음도 아니었습니다. 크나큰 슬픔에 짓눌려 우는 사람들의 힘없는 소리였습니다.\n연민에 이끌려 대사는 달아나지 않고 슬픔을 향해 달려갔습니다.",
+    "cover": [
+     248,
+     242,
+     230
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-Elephant-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     460,
+     24,
+     794,
+     58
+    ],
+    "ko": "칠백 명이 죽음의 문턱에 서 있었습니다.",
+    "cover": [
+     246,
+     241,
+     228
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     460,
+     58,
+     794,
+     214
+    ],
+    "ko": "굶주림과 목마름과 피로에 지쳐 있었습니다. 바람에 몰리는 먹구름처럼 다가오는 코끼리를 보고 그들은 두려움에 얼어붙었습니다.\n“아! 이제 끝이로구나!” 너무 지쳐 달아나지도 못한 그들은 짐승에게 밟혀 죽으리라 여겼습니다.",
+    "cover": [
+     244,
+     238,
+     225
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-Elephant-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     26,
+     470,
+     76
+    ],
+    "ko": "“두려워하지 마라.” 코끼리가 사람의 말로 말했습니다. “나를 두려워할 것은 없다.”",
+    "cover": [
+     246,
+     238,
+     217
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     76,
+     470,
+     142
+    ],
+    "ko": "사람들은 그가 귀의처임을 알고 처지를 말했습니다. “왕의 분노가 터져 이곳으로 쫓겨났습니다. 죽으라고 버려졌지만, 당신을 보니 아직 행운이 우리 편인 듯합니다.”",
+    "cover": [
+     247,
+     234,
+     209
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-Elephant-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     296,
+     566,
+     328
+    ],
+    "ko": "코끼리는 그들을 위해 울었습니다.",
+    "cover": [
+     245,
+     238,
+     218
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     220,
+     328,
+     566,
+     446
+    ],
+    "ko": "“다음 세상을 무시하는 왕의 마음은 얼마나 부끄러움을 모르는가!”\n그러나 연민만으로는 그들을 구할 수 없었습니다. 숲에는 칠백 명을 먹일 음식이 없었습니다. 먹을거리가 없으면 그들은 사막에서 죽을 것이었습니다.",
+    "cover": [
+     244,
+     233,
+     209
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-Elephant-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     24,
+     370,
+     88
+    ],
+    "ko": "한 생각이 굳어졌습니다.\n‘이 몸은 병의 그릇일 뿐. 마침내 제대로 쓰일 때가 왔다.’",
+    "cover": [
+     244,
+     235,
+     213
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     88,
+     370,
+     160
+    ],
+    "ko": "그는 그들이 괴로움의 바다를 건너는 뗏목이 되기로 결심했습니다. 자기 목숨을 내주어 그들이 살아남는 데 필요한 고기와 물주머니를 마련하려 한 것입니다.",
+    "cover": [
+     243,
+     231,
+     204
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-Elephant-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     370,
+     780,
+     394
+    ],
+    "ko": "속뜻을 감추고 그는 그들에게 말했습니다.",
+    "cover": [
+     249,
+     247,
+     234
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     394,
+     780,
+     448
+    ],
+    "ko": "“저 산 아래로 가라. 연꽃 호수가 있고, 그 곁에 고원에서 떨어진 코끼리의 주검이 있을 것이다. 그 살을 먹고 창자를 물주머니로 써라. 그러면 황야를 건널 것이다.”",
+    "cover": [
+     249,
+     246,
+     234
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-Elephant-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     10,
+     306,
+     420,
+     446
+    ],
+    "ko": "사람들을 보낸 뒤 고귀한 마음의 그는 홀로 봉우리에 올랐습니다. 왕권도 천상의 행복도 바라지 않고 오직 이 떠돌이들을 구하려고 마음을 굳혔습니다.\n“내가 세상의 구원자가 되기를.” 그는 서원했습니다.",
+    "cover": [
+     100,
+     80,
+     70
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/30-Elephant-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     510,
+     174,
+     790,
+     280
+    ],
+    "ko": "그는 깊은 벼랑 아래로 몸을 던졌습니다. 그 소리는 회오리바람 같았고, 땅이 흔들리고 마라의 마음이 떨렸습니다. 그가 떨어질 때 놀란 숲의 신들이 향기로운 꽃과 금 장식을 비처럼 뿌려 그를 덮었습니다.",
+    "cover": [
+     245,
+     237,
+     220
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-Elephant-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     300,
+     30,
+     790,
+     100
+    ],
+    "ko": "사람들은 말한 대로 주검을 찾았습니다. 그러나 멈칫했습니다. “우리를 이끌어 준 대사의 모습을 닮았구나.” 그들이 속삭였습니다. 흰 발톱이 있는 거북이 같은 발, 꿀빛 상아, 손가락처럼 긴 끝이 달린 코가 눈에 띄었습니다.",
+    "cover": [
+     245,
+     237,
+     218
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-Elephant-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     318,
+     794,
+     446
+    ],
+    "ko": "“우리가 들은 소리는 그분이 떨어지신 소리였구나.” 그들이 외쳤습니다. “낯선 이요 쫓겨난 우리를 위해 목숨을 바치셨다.” 고마움과 두려움에 사로잡혀 그들은 주검에 손대려 하지 않았습니다. “이토록 덕 있는 분을 어찌 먹겠는가? 화장하여 장례로 은혜를 갚자.”",
+    "cover": [
+     242,
+     233,
+     212
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-Elephant-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     30,
+     400,
+     112
+    ],
+    "ko": "그러나 그들 가운데 지혜로운 이가 말했습니다. ‘그분은 바로 우리를 살리려고 몸을 내주셨다. 그 보시를 거절하면 크나큰 희생을 헛되게 한다. 그분이 목숨 바쳐 마련하신 먹을거리를 태우지 말고, 그 뜻을 이루어 드리는 것이 가장 큰 공경이다.’",
+    "cover": [
+     244,
+     236,
+     216
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-Elephant-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     456,
+     344,
+     794,
+     446
+    ],
+    "ko": "그들은 스승의 말씀을 받들듯 보살의 대접을 받아들였습니다. 살을 취하고 창자에 물을 채웠습니다. 그 명을 따름으로써 그의 바람을 받들었습니다.",
+    "cover": [
+     240,
+     232,
+     205
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-Elephant-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     36,
+     404,
+     86
+    ],
+    "ko": "그가 가리킨 길을 따라 그들은 무사히 황야를 건넜습니다.",
+    "cover": [
+     236,
+     222,
+     196
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     86,
+     404,
+     214
+    ],
+    "ko": "그들은 코끼리의 생명을 몸에 품고 갔습니다. 남의 행복을 자기 목숨보다 귀히 여긴 낯선 이가 그들을 살렸습니다.",
+    "cover": [
+     241,
+     219,
+     184
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/30-Elephant-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     144,
+     600,
+     188
+    ],
+    "ko": "맺음",
+    "cover": [
+     245,
+     243,
+     233
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     200,
+     188,
+     600,
+     304
+    ],
+    "ko": "대사가 마련해 준 먹을거리와 물주머니로 그들은 무사히 황야를 건넜습니다.\n게송: “이처럼 바른 이는 그로써 남의 행복을 이룰 수 있다면 괴로움조차 이익처럼 귀히 여긴다.”",
+    "cover": [
+     245,
+     242,
+     231
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
