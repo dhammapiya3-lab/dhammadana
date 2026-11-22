@@ -275,7 +275,7 @@ const txtSafe = s => String(s || '').replace(/[\\/:*?"<>|\u0000-\u001f]/g, ' ').
 const txtName = b => `${txtSafe(b.title)}.txt`;
 const txtOk = b => hasText(b) && !b.no_copy;
 // 짝을 이룬 꾸밈 표시만 뺌 — 읽기 화면 boldMark 와 같은 규칙(문단 단위), 인쇄된 '***선원'·'불기 **년'·'§§16~18' 같은 글자는 그대로 (2026-11-18 검수)
-const txtPairs = s => String(s).replace(/\*\*(?!\s|\*\*)([\s\S]*?[^\s*])\*\*/g, '$1').replace(/==(?=\S)([\s\S]*?\S)==/g, '$1').replace(/\{\{([\s\S]*?)\}\}/g, '$1').replace(/@@([\s\S]*?)@@/g, '$1').replace(/°°([\s\S]*?)°°/g, '$1').replace(/§§([\s\S]*?)§§/g, '$1');
+const txtPairs = s => String(s).replace(/__(?=[^_\s])([\s\S]*?[^_\s])__/g, '$1').replace(/\*\*(?!\s|\*\*)([\s\S]*?[^\s*])\*\*/g, '$1').replace(/==(?=\S)([\s\S]*?\S)==/g, '$1').replace(/\{\{([\s\S]*?)\}\}/g, '$1').replace(/@@([\s\S]*?)@@/g, '$1').replace(/°°([\s\S]*?)°°/g, '$1').replace(/§§([\s\S]*?)§§/g, '$1');
 function txtInline(s) {
   const t = txtPairs(String(s));
   return t.replace(/\[\^([^\]]+)\]/g, '[각주 $1]').replace(/ㆍ/g, '·');

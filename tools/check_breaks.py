@@ -14,7 +14,7 @@ signal.signal(signal.SIGPIPE, signal.SIG_DFL)
 END = re.compile(r'[.?!。…:;)\]」』”’"\'>*=°§@}~]\s*$|다\s*$|요\s*$|음\s*$|함\s*$|임\s*$|됨\s*$|짐\s*$|참조\s*$|참고\s*$|\d\s*$')
 SKIP = ('++', '::', '>>', '^^', '%%', '|', '##', '![', '[^', '~', '||', '@@', '°°', '{{', '§§', '[[')
 LINES = {'DL-0026', 'DL-0031'}   # 인쇄본 줄을 그대로 두는 독송집 — ② 는 보지 않음
-def plain(s): return re.sub(r'\*\*|==|°°|§§|@@|\{\{|\}\}', '', s).strip()
+def plain(s): return re.sub(r'\*\*|__|==|°°|§§|@@|\{\{|\}\}', '', s).strip()
 def check(bk, show):
     p = f'content/texts/{bk}.json'
     if not os.path.exists(p): return 0, 0

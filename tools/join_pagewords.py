@@ -20,7 +20,7 @@ import sys, os, re, json, glob, collections
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FIX = os.path.join(REPO, 'tools/pageword_fixes.json')
 SKIP_START = ('[^', '![', '%%', '## ', '|', '>>', '::', '^^', '++', '**', '°°', '@@', '{{', '==', '§§')
-MARK = r'\*\*|°°|@@|==|§§|\{\{|\}\}|\[\^[^\]]+\]'
+MARK = r'\*\*|__|°°|@@|==|§§|\{\{|\}\}|\[\^[^\]]+\]'
 
 
 def pages(body):

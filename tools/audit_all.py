@@ -14,7 +14,7 @@
 import json, re, sys, glob, os, collections
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
-MK = re.compile(r'\*\*|==|°°|§§|@@|\{\{|\}\}')
+MK = re.compile(r'\*\*|__|==|°°|§§|@@|\{\{|\}\}')
 def plain(s): return MK.sub('', s)
 PUA_OK = {'DL-0018'}   # PaliHangul 은 ph 사전에만 — 본문에는 없어야 하지만 혹시 있으면 알림
 def audit(bk):
@@ -30,10 +30,12 @@ def audit(bk):
     for k in sorted(set(defs) - refs, key=lambda x: (len(x), x)): out['① 풀이만 있고 본문 번호 없음'].append(f'[^{k}]')
     for m in re.finditer(r'(?m)^\[\^([^\]\s]+)\]:[ \t]*$', b): out['① 빈 풀이'].append(f'[^{m.group(1)}]')
     # ② 표시 짝
+    ULB = re.search(r'__(?=[^_\s])[^\n]*?[^_\s]__', b) is not None
     for name, t in P:
         for para in re.split(r'\n\s*\n', t):
             if para.startswith('|'): continue
-            for mk in ('**', '°°', '@@', '==', '§§'):
+            for mk in ('**', '__', '°°', '@@', '==', '§§'):
+                if mk == '__' and not ULB: continue   # 밑줄 표시 __…__ 를 쓰는 책만 (다른 책의 '___' 는 인쇄된 글자)
                 c = para.count(mk)
                 if c % 2: out[f'② {mk} 짝 안 맞음'].append(f'{name}: {plain(para)[:40]}…')
             if para.count('{{') != para.count('}}'): out['② {{ }} 짝 안 맞음'].append(f'{name}: {plain(para)[:40]}…')

@@ -90,7 +90,7 @@
         "mode": "file",
         "url": "hwp/DL-0041/DL-0041_초판.hwp"
       },
-      "reader": false,
+      "reader": true,
       "sources": [
         {
           "file": "pdf",
