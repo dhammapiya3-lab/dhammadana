@@ -1,0 +1,677 @@
+[
+ {
+  "img": "images/32-Ayogrha-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     60,
+     470,
+     110
+    ],
+    "ko": "아요가라 이야기",
+    "cover": [
+     239,
+     239,
+     233
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     110,
+     470,
+     200
+    ],
+    "ko": "경각심(saṃvega)에 사로잡힌 이에게는 왕위의 눈부심도 해탈의 길을 막지 못합니다. 이것은 쇠벽 안이 아니라, 모든 것이 덧없음을 깨달음으로써 자유를 찾은 한 왕자의 이야기입니다.",
+    "cover": [
+     247,
+     238,
+     220
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/32-Ayogrha-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     470,
+     150,
+     790,
+     200
+    ],
+    "ko": "잃어버린 대",
+    "cover": [
+     244,
+     241,
+     229
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     470,
+     200,
+     790,
+     360
+    ],
+    "ko": "왕에게서 태어난 왕자마다 어려서 죽었습니다. 이 비극이 도깨비들의 짓이라 믿은 왕의 마음은 슬픔으로 무거웠습니다. 그는 운명을 거슬러 대를 지킬 방도를 찾았고, 다음 아들의 목숨만은 살리려고 애를 태웠습니다.",
+    "cover": [
+     242,
+     238,
+     226
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/32-Ayogrha-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     118,
+     400,
+     168
+    ],
+    "ko": "쇠로 된 성채",
+    "cover": [
+     235,
+     239,
+     235
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     168,
+     400,
+     306
+    ],
+    "ko": "갓 태어날 아들을 살리려고 왕은 온통 쇠로 된 산실, 아요가라(쇠 집)를 짓게 했습니다. 쇠와 보호의 의식으로 단단히 하여 도깨비를 쫓으려 한 것입니다. 왕자는 이곳에서 태어났습니다.",
+    "cover": [
+     245,
+     239,
+     224
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/32-Ayogrha-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     496,
+     104,
+     784,
+     154
+    ],
+    "ko": "보호받은 왕자",
+    "cover": [
+     246,
+     239,
+     222
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     496,
+     154,
+     784,
+     362
+    ],
+    "ko": "쇠와 덕의 보호 속에 왕자는 초승달이 차오르듯 자랐습니다. 거룩한 경전을 배우고 백성의 사랑을 얻었습니다. 아버지는 쇠벽이 마침내 죽음을 이겼다고 믿고 근심을 놓았습니다.",
+    "cover": [
+     244,
+     231,
+     209
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/32-Ayogrha-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     50,
+     112,
+     380,
+     162
+    ],
+    "ko": "꼬무디 축제",
+    "cover": [
+     245,
+     242,
+     230
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     50,
+     162,
+     380,
+     268
+    ],
+    "ko": "도성의 아름다움을 보고 싶어 왕자는 세상으로 나섰습니다. 거리에는 음악이 울리고 땅은 향가루로 덮였습니다. 살아남은 왕자를 기리며 온 도성이 기쁨에 취해 있었습니다.",
+    "cover": [
+     245,
+     232,
+     212
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/32-Ayogrha-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     116,
+     380,
+     166
+    ],
+    "ko": "영원하다는 착각",
+    "cover": [
+     245,
+     245,
+     240
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     166,
+     380,
+     340
+    ],
+    "ko": "“아! 세상은 덧없구나.” 왕자는 구름이 흩어지고 강이 마르고 불이 꺼지는 것을 보았습니다. 이 눈부신 축제도 한순간일 뿐이었습니다. 도성이 기뻐하는 동안에도 그림자마다 죽음이 기다리고 있음을 그는 깨달았습니다.",
+    "cover": [
+     245,
+     244,
+     238
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/32-Ayogrha-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     170,
+     520,
+     204
+    ],
+    "ko": "숲으로 가겠다는 청",
+    "cover": [
+     247,
+     247,
+     242
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     240,
+     204,
+     520,
+     346
+    ],
+    "ko": "왕자는 세상을 떠나겠다고 청했습니다. 슬픔에 떨며 왕이 거절했습니다. “왜 우리를 떠나려 하느냐? 여기에는 아무 위험도 없다.” 왕자는 성이 나서가 아니라, 어떤 쇠 집도 막을 수 없는 죽음의 위험 때문에 떠난다고 대답했습니다.",
+    "cover": [
+     247,
+     247,
+     241
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/32-Ayogrha-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     16,
+     40,
+     410,
+     80
+    ],
+    "ko": "군대를 무찌름",
+    "cover": [
+     247,
+     248,
+     242
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     16,
+     80,
+     410,
+     176
+    ],
+    "ko": "교만한 왕자들은 멋진 진을 친 군대를 통째로 무찌릅니다. 그러나 가장 강한 정복자도 죽음이라는 단 하나의 적은 이기지 못합니다. 그 앞에서는 어떤 성채도 버티지 못합니다.",
+    "cover": [
+     247,
+     247,
+     242
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/32-Ayogrha-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     294,
+     540,
+     334
+    ],
+    "ko": "궁수의 실패",
+    "cover": [
+     245,
+     246,
+     240
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     240,
+     334,
+     540,
+     446
+    ],
+    "ko": "솜씨 좋은 궁수는 두꺼운 갑옷 뒤에 숨은 적도 멀리서 꿰뚫습니다. 그러나 죽음이라는 오랜 적은 결코 맞히지 못합니다. 어떤 화살도 세월을 쓰러뜨리지 못하고, 어떤 방패도 늙음을 막지 못합니다.",
+    "cover": [
+     245,
+     245,
+     238
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/32-Ayogrha-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     520,
+     26,
+     790,
+     66
+    ],
+    "ko": "짐승의 교만",
+    "cover": [
+     247,
+     247,
+     245
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     520,
+     66,
+     790,
+     172
+    ],
+    "ko": "사자와 호랑이는 코끼리의 위세를 꺾을지 모릅니다. 그러나 죽음을 만나면 그 오만이 꺾입니다. 그들은 잠들 듯 쓰러지고, 힘은 아무 소용이 없습니다.",
+    "cover": [
+     247,
+     247,
+     245
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/32-Ayogrha-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     44,
+     350,
+     124
+    ],
+    "ko": "막을 수 없는 뱀",
+    "cover": [
+     248,
+     249,
+     244
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     124,
+     350,
+     410
+    ],
+    "ko": "의사는 주문과 약초로 독을 다스립니다.\n그러나 죽음은 썩지 않는 이빨과 막을 수 없는 독을 지닌 뱀입니다.\n의사의 약도, 주술사의 주문도 그를 누르지 못합니다.",
+    "cover": [
+     249,
+     249,
+     244
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/32-Ayogrha-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     24,
+     600,
+     64
+    ],
+    "ko": "방일의 집",
+    "cover": [
+     247,
+     248,
+     243
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     200,
+     64,
+     600,
+     146
+    ],
+    "ko": "집은 재물을 지키느라 마음이 흩어지는 방일의 거처입니다. 숲은 고요의 자리입니다. 사람을 지키는 것은 재물이 아니라 바른 법입니다. 바른 이에게 죽음은 두려움이 되지 않습니다.",
+    "cover": [
+     246,
+     246,
+     241
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/32-Ayogrha-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     30,
+     400,
+     74
+    ],
+    "ko": "출리",
+    "cover": [
+     236,
+     226,
+     206
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     74,
+     400,
+     160
+    ],
+    "ko": "쇠 집이 참된 적을 막아 주지 못함을 깨달은 왕자는 왕의 행복을 지푸라기처럼 버렸습니다. 진실에 설득된 왕은 허락했습니다.",
+    "cover": [
+     236,
+     226,
+     206
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/32-Ayogrha-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     470,
+     166,
+     790,
+     210
+    ],
+    "ko": "선정(jhāna)의 길",
+    "cover": [
+     237,
+     218,
+     174
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     470,
+     210,
+     790,
+     352
+    ],
+    "ko": "고행의 숲에서 재물의 성가신 근심을 벗어난 그는 선정을 얻었습니다. 그는 자신 안에 바른 법을 세우고, 궁에서는 누리지 못한 안온을 찾았습니다.",
+    "cover": [
+     234,
+     214,
+     167
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/32-Ayogrha-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     44,
+     640,
+     92
+    ],
+    "ko": "“깨달음”",
+    "cover": [
+     245,
+     245,
+     239
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     160,
+     92,
+     640,
+     160
+    ],
+    "ko": "경각심(saṃvega)에 사로잡힌 이에게는 왕위의 눈부심도 해탈의 길을 막지 못합니다. 참된 안온은 쇠벽이 아니라 덕 있는 삶에 있습니다.",
+    "cover": [
+     245,
+     243,
+     235
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
