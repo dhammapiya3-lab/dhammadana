@@ -868,18 +868,18 @@
 "zip": 13221311
 },
 "New-Jataka": {
-"n": 54,
-"pdf": 37500562,
-"pdfs": 7300190,
-"stories": 2,
-"zip": 37333318
+"n": 79,
+"pdf": 56632070,
+"pdfs": 10681665,
+"stories": 3,
+"zip": 56456985
 },
 "New-Jataka-en": {
-"n": 54,
-"pdf": 37568557,
-"pdfs": 7356153,
-"stories": 2,
-"zip": 37369303
+"n": 79,
+"pdf": 56602795,
+"pdfs": 10745780,
+"stories": 3,
+"zip": 56395600
 },
 "New-Jataka/001-Apannaka": {
 "n": 30,
@@ -900,6 +900,16 @@
 "n": 24,
 "pdf": 15799503,
 "zip": 15602822
+},
+"New-Jataka/003-Serivanija": {
+"n": 25,
+"pdf": 19297729,
+"zip": 19122163
+},
+"New-Jataka/003-Serivanija-en": {
+"n": 25,
+"pdf": 19223571,
+"zip": 19024807
 },
 "Pannasa": {
 "n": 803,
