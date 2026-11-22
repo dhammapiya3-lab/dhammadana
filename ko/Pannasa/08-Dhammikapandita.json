@@ -600,7 +600,8 @@
     "em": 18,
     "shape": "box",
     "manual": true,
-    "whole": true
+    "whole": true,
+    "dark": false
    },
    {
     "rect": [
@@ -646,7 +647,8 @@
     "em": 15,
     "shape": "box",
     "manual": true,
-    "whole": true
+    "whole": true,
+    "dark": false
    },
    {
     "rect": [

@@ -462,7 +462,7 @@
     "shape": "box",
     "manual": true,
     "whole": true,
-    "dark": true
+    "dark": false
    },
    {
     "rect": [
@@ -494,7 +494,7 @@
     "shape": "box",
     "manual": true,
     "whole": true,
-    "dark": true
+    "dark": false
    },
    {
     "rect": [

@@ -163,6 +163,10 @@ def render(src_path, boxes):
         g = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         bg = np.median(g[inner > 0])
         dark = b.get("dark", bg < 110)  # 어두운 말풍선: 밝은 글자
+        if "dark" not in b and isinstance(b.get("cover"), (list, tuple)):  # 칠할 색이 정해져 있으면 그 색과의 명암비로 글자색을 고름 (2026-11-22, 밝은 바탕에 흰 글자가 나오던 일)
+            c_ = np.asarray(b["cover"], float) / 255; c_ = np.where(c_ <= 0.03928, c_ / 12.92, ((c_ + 0.055) / 1.055) ** 2.4)
+            L_ = 0.2126 * c_[0] + 0.7152 * c_[1] + 0.0722 * c_[2]
+            dark = (1.05 / (L_ + 0.05)) > ((L_ + 0.05) / 0.05)
         if dark:
             text_px = ((g > bg + 45) & (inner > 0)).astype(np.uint8) * 255
         else:  # 상자 안쪽에서 바탕보다 뚜렷이 어두운 픽셀 = 글자

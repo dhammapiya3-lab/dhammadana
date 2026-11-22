@@ -195,7 +195,7 @@
     "shape": "box",
     "manual": true,
     "whole": true,
-    "dark": false
+    "dark": true
    }
   ]
  },
