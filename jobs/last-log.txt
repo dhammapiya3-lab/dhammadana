@@ -1,12 +1,31 @@
 Jatakamala 30-Elephant 15 장
+Rasavahini 01-King-Dhammasondaka 12 장
+Rasavahini 02-The-Hunter 11 장
+Rasavahini 03-Three-Characters 15 장
+Rasavahini 04-The-Wise-Buddheni 11 장
+Rasavahini 05-The-Snake-Charmer 10 장
+Rasavahini 06-The-Elder-Sarana 15 장
+Rasavahini 07-Queen-Vessamitta 15 장
+Rasavahini 08-King-Mandhata 14 장
+Rasavahini 09-Merchant-Buddhavamma 14 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 77 개 / 한글판 이야기 290 편
+R2 에 올림: 311 개 / 한글판 이야기 299 편
 새 그림책: 올린 그림 0 장
 공개 주소 확인: 200 1090684바이트
 이야기 Jatakamala/30-Elephant {'pdf': 13845342, 'zip': 13569546, 'n': 15}
 책 Jatakamala {'pdf': 401500614, 'pdfs': 40222907, 'zip': 401081872, 'stories': 30, 'n': 440}
-내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 290 이야기
+이야기 Rasavahini/01-King-Dhammasondaka {'pdf': 12429060, 'zip': 12147553, 'n': 12}
+이야기 Rasavahini/02-The-Hunter {'pdf': 12322851, 'zip': 12051235, 'n': 11}
+이야기 Rasavahini/03-Three-Characters {'pdf': 15276103, 'zip': 14996747, 'n': 15}
+이야기 Rasavahini/04-The-Wise-Buddheni {'pdf': 13086524, 'zip': 12808518, 'n': 11}
+이야기 Rasavahini/05-The-Snake-Charmer {'pdf': 9695214, 'zip': 9417706, 'n': 10}
+이야기 Rasavahini/06-The-Elder-Sarana {'pdf': 16133084, 'zip': 15856648, 'n': 15}
+이야기 Rasavahini/07-Queen-Vessamitta {'pdf': 18782018, 'zip': 18501240, 'n': 15}
+이야기 Rasavahini/08-King-Mandhata {'pdf': 14559762, 'zip': 14280234, 'n': 14}
+이야기 Rasavahini/09-Merchant-Buddhavamma {'pdf': 12866710, 'zip': 12580690, 'n': 14}
+책 Rasavahini {'pdf': 122941721, 'pdfs': 13919730, 'zip': 122638673, 'stories': 9, 'n': 117}
+내려받기 파일: 12 묶음 새로 만듦
+글로 보기: 299 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
