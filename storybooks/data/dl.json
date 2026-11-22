@@ -478,10 +478,10 @@
 },
 "Jataka": {
 "n": 422,
-"pdf": 496466100,
-"pdfs": 50592342,
+"pdf": 496448648,
+"pdfs": 50591706,
 "stories": 32,
-"zip": 496056340
+"zip": 496038888
 },
 "Jataka/001-The-Waterless-Desert": {
 "n": 15,
@@ -510,8 +510,8 @@
 },
 "Jataka/006-The-Water-Rakkhasa": {
 "n": 15,
-"pdf": 19118553,
-"zip": 18852134
+"pdf": 19101101,
+"zip": 18834682
 },
 "Jataka/009-The-Kings-Grey-Hair": {
 "n": 14,
@@ -644,11 +644,11 @@
 "zip": 18828023
 },
 "Jatakamala": {
-"n": 455,
-"pdf": 414534608,
-"pdfs": 41518314,
-"stories": 31,
-"zip": 414110646
+"n": 470,
+"pdf": 429345351,
+"pdfs": 42975891,
+"stories": 32,
+"zip": 428915837
 },
 "Jatakamala/01-Tigress": {
 "n": 15,
@@ -804,6 +804,11 @@
 "n": 15,
 "pdf": 13311404,
 "zip": 13028475
+},
+"Jatakamala/32-Ayogrha": {
+"n": 15,
+"pdf": 15084211,
+"zip": 14805211
 },
 "Light-of-Asia": {
 "n": 118,
