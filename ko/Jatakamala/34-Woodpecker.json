@@ -1,0 +1,677 @@
+[
+ {
+  "img": "images/34-Woodpecker-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     90,
+     40,
+     710,
+     96
+    ],
+    "ko": "딱따구리 이야기 (인욕의 자따까)",
+    "cover": [
+     245,
+     236,
+     219
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     90,
+     96,
+     710,
+     130
+    ],
+    "ko": "은혜와 인욕의 이야기",
+    "cover": [
+     246,
+     238,
+     220
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Woodpecker-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     18,
+     780,
+     52
+    ],
+    "ko": "깃털 입은 성자",
+    "cover": [
+     246,
+     231,
+     203
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     52,
+     780,
+     104
+    ],
+    "ko": "보살은 새로 태어났지만 성자의 마음을 지녔습니다. 동족의 거친 방식을 버리고 어린 싹과 꽃과 열매만 먹고 살았습니다. 그는 숲의 뭇 생명에게 스승이자 친척이자 의사였습니다.",
+    "cover": [
+     245,
+     233,
+     206
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Woodpecker-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     18,
+     780,
+     52
+    ],
+    "ko": "쓰러진 짐승의 왕",
+    "cover": [
+     245,
+     230,
+     200
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     52,
+     780,
+     104
+    ],
+    "ko": "딱따구리는 독화살에 맞은 듯 땅에 누워 큰 고통에 시달리는 사자를 보았습니다. 연민에 이끌린 새가 물었습니다. “왕이여, 사냥에 지쳤습니까, 아니면 병이 들었습니까?”",
+    "cover": [
+     243,
+     230,
+     201
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Woodpecker-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     328,
+     740,
+     362
+    ],
+    "ko": "목에 걸린 가시",
+    "cover": [
+     244,
+     233,
+     204
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     362,
+     740,
+     414
+    ],
+    "ko": "“사냥꾼의 화살이 아니오.” 사자가 털어놓았습니다. “뼛조각이 목에 걸려 삼킬 수도 뱉을 수도 없소.” 그는 다시 건강해지도록 벗들의 도움을 청했습니다.",
+    "cover": [
+     244,
+     232,
+     202
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Woodpecker-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     330,
+     740,
+     364
+    ],
+    "ko": "슬기로운 방법",
+    "cover": [
+     244,
+     231,
+     201
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     364,
+     740,
+     414
+    ],
+    "ko": "보살은 뼈를 안전하게 빼낼 방법을 생각해 냈습니다. 사자의 턱을 버틸 만큼 단단한 나무토막을 찾았습니다. “입을 할 수 있는 만큼 크게 벌리시오.” 그가 일렀습니다.",
+    "cover": [
+     242,
+     229,
+     197
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Woodpecker-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     330,
+     740,
+     364
+    ],
+    "ko": "수술",
+    "cover": [
+     243,
+     229,
+     196
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     60,
+     364,
+     740,
+     414
+    ],
+    "ko": "나무토막을 이 사이에 괴어 놓고 새는 입 안으로 들어갔습니다. 부리 끝으로 목에 가로 걸린 뼈를 잡아 흔들어 빼냈습니다.",
+    "cover": [
+     240,
+     227,
+     192
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Woodpecker-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     320,
+     770,
+     354
+    ],
+    "ko": "대가 없는 구원",
+    "cover": [
+     247,
+     228,
+     189
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     354,
+     770,
+     422
+    ],
+    "ko": "사자가 나은 것을 기뻐한 것 못지않게 새도 동료를 구한 것을 기뻐했습니다. 그는 아무것도 바라지 않고 작별한 뒤 제 길을 갔습니다.",
+    "cover": [
+     247,
+     231,
+     199
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Woodpecker-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     324,
+     770,
+     354
+    ],
+    "ko": "굶주림의 철",
+    "cover": [
+     244,
+     225,
+     184
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     354,
+     770,
+     422
+    ],
+    "ko": "시간이 흘렀습니다. 먹이를 찾지 못한 딱따구리는 ‘팔다리를 태우는’ 굶주림에 사로잡혔습니다. 살아남으려면 도움이 필요했습니다.",
+    "cover": [
+     245,
+     228,
+     192
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Woodpecker-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     318,
+     770,
+     350
+    ],
+    "ko": "붉은 잔치",
+    "cover": [
+     235,
+     210,
+     164
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     350,
+     770,
+     420
+    ],
+    "ko": "그는 예전에 고쳐 준 사자가 신선한 고기를 먹는 것을 보았습니다. 갈기가 피로 물든 사자는 ‘노을빛에 잠긴 가을 구름 조각’ 같았습니다.",
+    "cover": [
+     243,
+     226,
+     189
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Woodpecker-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     322,
+     770,
+     352
+    ],
+    "ko": "겸손한 청",
+    "cover": [
+     229,
+     200,
+     155
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     352,
+     770,
+     422
+    ],
+    "ko": "사자의 은인이었지만 새는 수줍었습니다. 그는 축복하며 다가갔습니다. “네 발 짐승의 왕이시여, 많이 드시기를! 걸식하는 이에게 베풀어 주십시오.”",
+    "cover": [
+     241,
+     224,
+     183
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Woodpecker-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     322,
+     770,
+     352
+    ],
+    "ko": "은혜를 모르는 포효",
+    "cover": [
+     240,
+     225,
+     190
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     352,
+     770,
+     422
+    ],
+    "ko": "사자는 불타는 눈으로 그를 흘겨보았습니다. “나 같은 짐승의 입에 들어갔다가 살아 나온 것으로 모자라느냐? 저세상을 보고 싶으냐?”",
+    "cover": [
+     238,
+     222,
+     180
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Woodpecker-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     320,
+     770,
+     352
+    ],
+    "ko": "말없는 떠남",
+    "cover": [
+     238,
+     226,
+     196
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     352,
+     770,
+     426
+    ],
+    "ko": "매정한 거절에 부끄러워진 보살은 따지지 않았습니다. 그는 곧장 위로 날아올라, 날갯짓으로만 사자에게 떠났음을 알렸습니다.",
+    "cover": [
+     238,
+     226,
+     196
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Woodpecker-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     322,
+     770,
+     352
+    ],
+    "ko": "여신의 물음",
+    "cover": [
+     239,
+     225,
+     188
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     352,
+     770,
+     422
+    ],
+    "ko": "부당함에 분개한 숲의 여신이 물었습니다. “왜 이런 모욕을 참는가? 그대는 그의 눈을 멀게 하거나 이빨 사이에서 고기를 빼앗을 힘이 있다. 왜 이런 뻔뻔함을 눈감아 주는가?”",
+    "cover": [
+     235,
+     219,
+     174
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Woodpecker-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     322,
+     770,
+     352
+    ],
+    "ko": "인욕의 지혜",
+    "cover": [
+     234,
+     220,
+     178
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     352,
+     770,
+     422
+    ],
+    "ko": "“덕 있는 이가 괴로운 이를 돕는 것은 이익을 바라서가 아니라 연민 때문입니다.” 새가 대답했습니다. “보답을 받으려고 베푼 도움은 도움이 아니라 빚입니다.”",
+    "cover": [
+     232,
+     215,
+     168
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/34-Woodpecker-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     322,
+     770,
+     352
+    ],
+    "ko": "지혜로운 이의 길",
+    "cover": [
+     236,
+     225,
+     184
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     352,
+     770,
+     426
+    ],
+    "ko": "‘도움을 받고도 우정이 일지 않는 이는 거칠지 않게 조용히 떠나보내야 한다.’\n덕 있는 이는 악한 이에게서 악을 배우지 않습니다. 그저 떠날 뿐입니다.",
+    "cover": [
+     231,
+     214,
+     166
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
