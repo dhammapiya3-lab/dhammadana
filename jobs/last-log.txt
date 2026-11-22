@@ -3,8 +3,8 @@ Jataka 009-The-Kings-Grey-Hair 14 장
 R2 에 올림: 75 개 / 한글판 이야기 316 편
 새 그림책: 올린 그림 0 장
 공개 주소 확인: 200 1251711바이트
-이야기 Jataka/009-The-Kings-Grey-Hair {'pdf': 15480577, 'zip': 15213711, 'n': 14}
-책 Jataka {'pdf': 496435260, 'pdfs': 50594890, 'zip': 496025500, 'stories': 32, 'n': 422}
+이야기 Jataka/009-The-Kings-Grey-Hair {'pdf': 15480495, 'zip': 15213629, 'n': 14}
+책 Jataka {'pdf': 496435178, 'pdfs': 50594889, 'zip': 496025418, 'stories': 32, 'n': 422}
 내려받기 파일: 2 묶음 새로 만듦
 글로 보기: 316 이야기
 18-Verses-2
