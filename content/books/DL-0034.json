@@ -29,7 +29,16 @@
   ],
   "content_languages": [],
   "original_source": "미얀파 파아옥 명상센터 선원장인 우 아찐나 스님의 The Workings of kamma 영문 개정판(싱가폴, PMAC, 2009년 11월 15일)을 번역한 것입니다.",
-  "parallel_editions": [],
+  "parallel_editions": [
+    {
+      "lang": "en",
+      "title": "The Workings of Kamma",
+      "by": "The Pa-Auk Tawya Sayadaw",
+      "edition": "© 2007 · 'A GIFT – NOT FOR SALE' (법보시판, public domain) · 웹판 PDF (504쪽)",
+      "url": "https://dhammatalks.net/Books8/Pa_Auk_Workings_of_Kamma.pdf",
+      "note": "한국어판은 싱가폴 PMAC 영문 개정판을 옮김(일러두기) — 대조한 원서는 2007 웹판이라 글이 조금 다를 수 있음. 원서 미주를 한국어판은 일부만 각주로 옮김. 원서의 표는 한국어판처럼 그림이라 대조하지 않음."
+    }
+  ],
   "originals": [
     {
       "lang": "영어",

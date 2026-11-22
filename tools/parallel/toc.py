@@ -47,9 +47,26 @@ def toc_group(body, orig, groups, enc, log=print, book=None):
         ET.append((i, 0, m.end(1), m.group(1)))
     if not KT or not ET: log('차례: 한국어 차례', len(KT), '원서 차례', len(ET), '— 짝지을 것 없음'); return None
     ET = [x for x in ET if not re.fullmatch(r'(Table of )?Contents', x[3].strip(), flags=re.I)]   # 원서 차례 쪽 자기 제목
+    pins0 = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'toc_pins.json'))).get(book, []) if book else []
+    for kp, ep in pins0:   # ["@move", "A|B"] — 원서 차례에서 A 부터 B 앞까지를 끝으로 옮겨 짝지음 (차례 묶음 순서가 한국어판과 다를 때, DL-0034 표 차례)
+        if kp != '@move': continue
+        a, b = ep.split('|'); ia = next(k for k, x in enumerate(ET) if x[3].strip() == a); ib = next(k for k, x in enumerate(ET) if k > ia and x[3].strip() == b)
+        ET = ET[:ia] + ET[ib:] + ET[ia:ib]; log('  원서 차례 순서 옮김:', a, '…', ET[-1][3], '→ 끝으로')
     # 뜻 비교는 앞 번호('1.' '4)' 'I.' '●' '6 ')를 떼고
     core = lambda t: re.sub(r'^\s*(?:[●•]\s*)?(?:[0-9]+[.)]?|[၀-၉]+။|[IVXⅠ-Ⅻ]+\.)\s+', '', t).strip() or t
-    TK, TE = enc([core(x[3]) for x in KT]), enc([core(x[3]) for x in ET]); TS = TK @ TE.T
+    # 원서 차례의 되풀이 표시 '—"—'(앞 줄과 같은 말)는 뜻 비교할 때만 앞 줄 글로 채움 (DL-0034 '2) Appearance —"—', '3) —"— Present Result')
+    def ditto(xs):
+        out = []; last = ''
+        for t in xs:
+            m = re.match(r'^(\s*[0-9]+\)\s*)(.*)$', t); body = m.group(2) if m else t
+            if '—"—' in body and last:
+                if body.strip().startswith('—"—'): body = (re.match(r'^[^,]*,', last) or re.match(r'^.*', last)).group(0) + body.replace('—"—', '', 1)
+                else:
+                    w = re.split(r'[- ]', last, 1); body = body.replace('—"—', ('-' + w[1]) if len(w) > 1 else '').replace(' -', '-')
+            last = body
+            out.append(body)
+        return out
+    TK, TE = enc([core(x[3]) for x in KT]), enc(ditto([core(x[3]) for x in ET])); TS = TK @ TE.T
     # 본문 소제목 짝으로 이어진 줄
     nz = lambda t: re.sub(r'[\W_]+', '', _plain(t).lower())
     para_t = {}
@@ -68,14 +85,21 @@ def toc_group(body, orig, groups, enc, log=print, book=None):
         for j, y in enumerate(ET):
             if nz(y[3]) in hl.get(nz(x[3]), ()): TS[i, j] = max(TS[i, j], 0.95); link += 1
     pins = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'toc_pins.json'))).get(book, []) if book else []
-    for kp, ep in pins:   # 손으로 정한 짝(toc_pins.json) — 원서 쪽이 빈 글("")이면 그 한국어 줄은 짝 없음
+    NOPAIR = set()
+    def _nth(t):   # '제목~2' — 같은 제목이 여럿일 때 몇 번째인지 (DL-0034)
+        m = re.match(r'^(.*)~(\d+)$', t); return (m.group(1), int(m.group(2))) if m else (t, 0)
+    for kp, ep in [p for p in pins if p[0] != "@move"]:   # 손으로 정한 짝(toc_pins.json) — 원서 쪽이 빈 글("")이면 그 한국어 줄은 짝 없음
+        kp, kn = _nth(kp)
+        ki = [i for i, x in enumerate(KT) if _plain(x[3]).strip() == kp]
+        if kn: ki = ki[kn - 1:kn]
         if not ep:
-            for i, x in enumerate(KT):
-                if _plain(x[3]).strip() == kp: TS[i, :] = -1.0; log('  짝 없음으로 정함:', kp)
+            for i in ki: TS[i, :] = -1.0; NOPAIR.add(i); log('  짝 없음으로 정함:', kp)
             continue
-        for i, x in enumerate(KT):
-            for j, y in enumerate(ET):
-                if _plain(x[3]).strip() == kp and y[3].strip() == ep: TS[i, :] = -1.0; TS[:, j] = -1.0; TS[i, j] = 1.0; log('  손으로 정한 짝:', kp, '↔', ep)
+        ep, en = _nth(ep)
+        ej = [j for j, y in enumerate(ET) if y[3].strip() == ep]
+        if en: ej = ej[en - 1:en]
+        for i, j in zip(ki, ej): TS[i, :] = -1.0; TS[:, j] = -1.0; TS[i, j] = 1.0; log('  손으로 정한 짝:', kp, '↔', ep)
+    TS0 = TS.copy()
     TS[TS < 0.2] = -1.0      # 뜻이 거의 안 닮은 줄은 짝짓지 않음 (원서 'About the publisher' ↔ '다섯 행선지' 같은 것)
     # 순서를 지키는 1:1 짝짓기 (건너뛰기 −0.15)
     SKIP = -0.15; N, M = len(KT), len(ET); V = {(0, 0): 0.0}; B = {}
@@ -92,6 +116,19 @@ def toc_group(body, orig, groups, enc, log=print, book=None):
     while (i, j) != (0, 0):
         a, b = B[(i, j)]; tb.append((i - a, i, j - b, j)); i, j = i - a, j - b
     tb.reverse()
+    # 짝 사이에 짝 없는 한국어 줄과 원서 항목이 1~2개씩 같은 수로 남으면 차례대로 짝지음 — LaBSE 가 짧은 제목('(2) 돕는 업' ↔ 'Reinforcing Kamma')을 못 알아볼 때 (DL-0034)
+    out = []; run = []
+    for st in tb + [None]:
+        if st is not None and not (st[1] > st[0] and st[3] > st[2]): run.append(st); continue
+        ks = [r for r in run if r[1] > r[0] and r[0] not in NOPAIR]; es = [r for r in run if r[3] > r[2] and not ET[r[2]][3].startswith('Table ')]
+        if 1 <= len(ks) == len(es) <= 2 and out:
+            for a, b in zip(ks, es):
+                out.append((a[0], a[1], b[2], b[3])); TS[a[0], b[2]] = max(float(TS0[a[0], b[2]]), 0.0)
+                log('  [차례 끼움]', KT[a[0]][3], '↔', ET[b[2]][3])
+        else: out += run
+        run = []
+        if st is not None: out.append(st)
+    tb = out
     ts = []; lastk = None
     for i0, i1, j0, j1 in tb:
         if i1 > i0 and j1 > j0: ts.append({'ko': [list(KT[i0][:3])], 'or': [list(ET[j0][:3])], 'sc': round(float(TS[i0, j0]), 3)})
