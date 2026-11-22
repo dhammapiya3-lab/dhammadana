@@ -1,0 +1,637 @@
+[
+ {
+  "img": "images/33-Buffalo-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     30,
+     560,
+     86
+    ],
+    "ko": "물소 이야기",
+    "cover": [
+     238,
+     238,
+     225
+    ],
+    "align": "center",
+    "em": 34,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     86,
+     560,
+     118
+    ],
+    "ko": "『자따까말라』에서 배우는 참된 인욕(khanti)",
+    "cover": [
+     245,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/33-Buffalo-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     490,
+     140,
+     790,
+     182
+    ],
+    "ko": "물소의 지혜",
+    "cover": [
+     247,
+     247,
+     242
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     490,
+     182,
+     790,
+     330
+    ],
+    "ko": "보살은 한때 들물소로 태어났습니다. 어둠과 어리석음의 세계인 짐승의 몸에 갇혔지만 그의 밝은 이해는 그대로였습니다. 그는 산 같은 힘을 지녔고, 그 힘을 연민의 마음이 다스렸습니다.",
+    "cover": [
+     248,
+     246,
+     241
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/33-Buffalo-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     480,
+     34,
+     790,
+     76
+    ],
+    "ko": "못된 원숭이",
+    "cover": [
+     246,
+     246,
+     240
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     480,
+     76,
+     790,
+     232
+    ],
+    "ko": "못된 원숭이 한 마리가 물소의 끝없는 인내를 지켜보았습니다. 이 덕을 약함으로 여긴 원숭이는 그것을 이용하기로 했습니다.\n“저놈에게서는 두려울 게 없다.” 원숭이는 생각했습니다. 악당은 자비로운 이 앞에서 가장 뻔뻔해지기 때문입니다.",
+    "cover": [
+     246,
+     245,
+     239
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/33-Buffalo-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     14,
+     324,
+     410,
+     364
+    ],
+    "ko": "원숭이는 대담해졌습니다.",
+    "cover": [
+     248,
+     247,
+     241
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     14,
+     364,
+     410,
+     446
+    ],
+    "ko": "대사가 잠들면 등에 뛰어오르고, 배고플 때 길을 막고, 말처럼 올라타서 막대기를 휘두르며 죽음의 왕 야마를 흉내 냈습니다.",
+    "cover": [
+     248,
+     246,
+     241
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/33-Buffalo-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     530,
+     106,
+     794,
+     170
+    ],
+    "ko": "대사는 이 모든 것을 성내지 않고 참았습니다.",
+    "cover": [
+     249,
+     248,
+     242
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     530,
+     170,
+     794,
+     360
+    ],
+    "ko": "그는 이것을 괴로움이 아니라 이익, 곧 인욕을 닦을 드문 기회로 여겼습니다.\n덕 있는 이에게 인내는 지고 갈 짐이 아니라 걸어갈 길입니다.",
+    "cover": [
+     249,
+     246,
+     240
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/33-Buffalo-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     14,
+     64,
+     270,
+     114
+    ],
+    "ko": "“그대는 노예인가?”",
+    "cover": [
+     249,
+     248,
+     240
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     14,
+     114,
+     270,
+     244
+    ],
+    "ko": "그가 따졌습니다. “자기 힘을 모르는가? 왜 저 악당이 그대를 돈 주고 산 것처럼 올라타게 두는가?”",
+    "cover": [
+     249,
+     246,
+     237
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     486,
+     390,
+     730,
+     440
+    ],
+    "ko": "그 광경에 분개한 약카가 그들의 길을 막아섰습니다.",
+    "cover": [
+     248,
+     246,
+     239
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/33-Buffalo-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     530,
+     106,
+     790,
+     330
+    ],
+    "ko": "“그대의 뿔은 금강석도 꿰뚫고, 그대의 발굽은 바위도 부순다! 그대의 근육은 돌처럼 단단해 사자도 두려워한다.\n그런데 왜 이 해충 앞에서 힘없는 것처럼 구는가?”",
+    "cover": [
+     247,
+     244,
+     232
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/33-Buffalo-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     86,
+     76,
+     440,
+     120
+    ],
+    "ko": "“발굽으로 짓밟아라!”",
+    "cover": [
+     240,
+     170,
+     150
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     86,
+     120,
+     440,
+     254
+    ],
+    "ko": "그 뻔뻔함을 부숴라! 악한 자에게 친절은 약이 되지 못하고, 병처럼 그 오만을 키울 뿐이다. 그에게는 맵고 뜨거운 처방이 필요하다.",
+    "cover": [
+     240,
+     170,
+     150
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/33-Buffalo-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     530,
+     108,
+     794,
+     188
+    ],
+    "ko": "“자기보다 센 자를 참는 것이 무슨 덕인가? 그건 두려움일 뿐이다.”",
+    "cover": [
+     244,
+     241,
+     230
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     530,
+     188,
+     794,
+     320
+    ],
+    "ko": "보살이 부드럽게 대답했습니다. “그가 악한 줄 압니다. 그러니 바로 그 때문에 그를 참아야 합니다.”",
+    "cover": [
+     245,
+     241,
+     228
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/33-Buffalo-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     36,
+     600,
+     100
+    ],
+    "ko": "힘없는 자의 괴롭힘이\n참된 힘의 시험입니다.",
+    "cover": [
+     245,
+     246,
+     240
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     200,
+     100,
+     600,
+     146
+    ],
+    "ko": "갚을 힘이 있어도 약한 이의 해코지는 참아야 합니다. 자기 덕을 버리느니 모욕을 견디는 편이 낫습니다.",
+    "cover": [
+     244,
+     244,
+     239
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/33-Buffalo-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     44,
+     500,
+     110
+    ],
+    "ko": "“인욕할 기회는 남에게 달려 있기에 드뭅니다. 왜 이 선물을 헛되이 버리겠습니까?”",
+    "cover": [
+     242,
+     243,
+     237
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     410,
+     322,
+     790,
+     408
+    ],
+    "ko": "“그를 막을 힘이 있는 내가 성냄을 택한다면, 누가 남아서 인내를 가르치겠습니까?”",
+    "cover": [
+     246,
+     244,
+     235
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/33-Buffalo-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     50,
+     380,
+     192
+    ],
+    "ko": "“나의 인내는 말 없는 꾸짖음입니다. 그가 나에게서 배우지 못하면, 언젠가 성미 급한 누군가를 건드려 벌을 받게 될 것입니다.”",
+    "cover": [
+     244,
+     241,
+     230
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     460,
+     350,
+     790,
+     410
+    ],
+    "ko": "“그렇게 나는 손을 더럽히지 않고 그에게서 벗어납니다.”",
+    "cover": [
+     247,
+     245,
+     235
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/33-Buffalo-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     30,
+     400,
+     94
+    ],
+    "ko": "이 지혜에 감동한 약카가 외쳤습니다. “훌륭하다!”",
+    "cover": [
+     247,
+     248,
+     242
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     94,
+     400,
+     184
+    ],
+    "ko": "“그는 이것이 평범한 짐승이 아니라 짐승의 모습으로 고행하는 성자임을 알았다.”",
+    "cover": [
+     246,
+     246,
+     241
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/33-Buffalo-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     372,
+     780,
+     440
+    ],
+    "ko": "찬탄을 마친 약카는 못된 원숭이를 물소 등에서 내던지고, 대사에게 보호의 주문을 가르쳐 준 뒤 사라졌습니다.",
+    "cover": [
+     250,
+     251,
+     246
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/33-Buffalo-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     76,
+     640,
+     190
+    ],
+    "ko": "인욕은 그것을 보일 기회가 있을 때에만 그 이름에 걸맞습니다.\n덕 있는 이는 자기를 해치는 이조차 수행의 이익으로 여겨 고마워합니다.",
+    "cover": [
+     70,
+     80,
+     120
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ }
+]
