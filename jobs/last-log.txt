@@ -1,11 +1,14 @@
 Foremost-Laymen 03-Citta 31 장
+Pannasa 01-King-Aditta 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 109 개 / 한글판 이야기 303 편
+R2 에 올림: 139 개 / 한글판 이야기 303 편
 새 그림책: 올린 그림 0 장
 공개 주소 확인: 200 1379324바이트
 이야기 Foremost-Laymen/03-Citta {'pdf': 47790981, 'zip': 47512696, 'n': 31}
 책 Foremost-Laymen {'pdf': 228941326, 'pdfs': 24197658, 'zip': 228626691, 'stories': 10, 'n': 157}
-내려받기 파일: 2 묶음 새로 만듦
+이야기 Pannasa/01-King-Aditta {'pdf': 19993566, 'zip': 19731080, 'n': 15}
+책 Pannasa {'pdf': 1034109228, 'pdfs': 99473682, 'zip': 1033558441, 'stories': 50, 'n': 803}
+내려받기 파일: 4 묶음 새로 만듦
 글로 보기: 303 이야기
 18-Verses-2
 08-Light-of-Asia
