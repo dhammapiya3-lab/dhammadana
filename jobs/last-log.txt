@@ -1,15 +1,37 @@
-Foremost-Laymen 03-Citta 31 장
+Pannasa 02-Tulakapandita 15 장
+Pannasa 15-Kambala 15 장
+Rasavahini 06-The-Elder-Sarana 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 109 개 / 한글판 이야기 305 편
+R2 에 올림: 137 개 / 한글판 이야기 305 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1379324바이트
-이야기 Foremost-Laymen/03-Citta {'pdf': 47786369, 'zip': 47508084, 'n': 31}
-책 Foremost-Laymen {'pdf': 228936714, 'pdfs': 24197628, 'zip': 228622079, 'stories': 10, 'n': 157}
-내려받기 파일: 2 묶음 새로 만듦
+공개 주소 확인: 200 1459477바이트
+이야기 Pannasa/02-Tulakapandita {'pdf': 19719570, 'zip': 19447023, 'n': 15}
+이야기 Pannasa/15-Kambala {'pdf': 19840561, 'zip': 19578162, 'n': 15}
+책 Pannasa {'pdf': 1034133964, 'pdfs': 99479229, 'zip': 1033583176, 'stories': 50, 'n': 803}
+이야기 Rasavahini/06-The-Elder-Sarana {'pdf': 16137724, 'zip': 15856503, 'n': 15}
+책 Rasavahini {'pdf': 122948395, 'pdfs': 13921165, 'zip': 122639374, 'stories': 9, 'n': 117}
+내려받기 파일: 5 묶음 새로 만듦
 글로 보기: 305 이야기
-18-Verses-2
-08-Light-of-Asia
-04-Kalavaliya-the-Treasurer
-34-Woodpecker
-20-The-Brahmin-Soma
-29-30-Escape-from-Samsara
+To https://github.com/dhammapiya3-lab/dhammadana
+ ! [rejected]        storybooks -> storybooks (fetch first)
+error: failed to push some refs to 'https://github.com/dhammapiya3-lab/dhammadana'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Committer identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <runner@ip-10-0-139-134.us-west-2.compute.internal>) not allowed
+error: cannot pull with rebase: Your index contains uncommitted changes.
+error: Please commit or stash them.
