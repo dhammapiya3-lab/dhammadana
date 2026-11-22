@@ -1511,3 +1511,5 @@ body.simple-ui{font-size:28px}
 .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 18%}
 /* 인쇄본의 밑줄 __…__ (DL-0041: '혼자일 때'·'여러 명' 등 바꿔 읽는 곳, 운영자 요청 2026-11-22) */
 u.pu { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; }
+/* 제목은 낱말 가운데에서 줄을 바꾸지 않음 — 『테라와다 불교의 신 / 행생활』 (운영자 요청, 2026-11-23) */
+h1,h2,h3,.ch-head,.s-h1{word-break:keep-all;overflow-wrap:break-word}
