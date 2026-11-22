@@ -1,0 +1,604 @@
+[
+ {
+  "img": "images/08-King-Mandhata-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     224,
+     156,
+     576,
+     292
+    ],
+    "ko": "만다따 왕의\n끝없는 야망\n\n우주를 정복한 이야기와\n욕망의 마음속 경계",
+    "cover": [
+     228,
+     199,
+     127
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-King-Mandhata-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     327,
+     632,
+     435
+    ],
+    "ko": "91겁 전, 반두마띠의 가난한 재봉사가 동전 한 닢을\n공중에 던졌습니다. 깨끗한 신심 덕분에 동전은 신기하게도\n불어나 위빳시 부처님과 승가의 발우를 가득 채웠습니다.",
+    "cover": [
+     226,
+     198,
+     132
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-King-Mandhata-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     328,
+     632,
+     436
+    ],
+    "ko": "공덕에 크게 기뻐한 재봉사는 운명을 가를 서원을\n세웠습니다. 앞으로 모든 생에서 감각적 즐거움을 가장\n크게 누리고, 손뼉 한 번에 세상의 일곱 보배를\n비처럼 내리게 하기를 바랐습니다.",
+    "cover": [
+     225,
+     195,
+     129
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-King-Mandhata-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     108,
+     147,
+     376,
+     307
+    ],
+    "ko": "여러 겁을 거듭 태어나며\n그는 높아졌습니다. 이 좋은 겁에\n그는 우주 왕가의 꼭대기에\n태어나, 상상할 수 없는\n세상의 권세를 지닌\n전륜성왕이 되었습니다.",
+    "cover": [
+     223,
+     195,
+     131
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-King-Mandhata-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     88,
+     352,
+     728,
+     436
+    ],
+    "ko": "재봉사의 옛 소원이 그대로 이루어졌습니다. 손뼉만 치면 만다따는 보석을 폭우처럼\n쏟아지게 했습니다. 그는 25만 2천 년 동안 세상의 온갖 보배를 지니고 호화롭게 다스렸습니다.",
+    "cover": [
+     243,
+     223,
+     165
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-King-Mandhata-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     327,
+     712,
+     435
+    ],
+    "ko": "세상의 왕국으로는 모자랐습니다. 깊은 불만에 사로잡힌 그는\n사람의 재물로는 더 이상 업의 욕구를 채울 수 없음을\n깨달았습니다. 그는 대신들에게 물었습니다.\n“이보다 더 즐거운 곳이 어디 있느냐?”",
+    "cover": [
+     221,
+     188,
+     114
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-King-Mandhata-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     344,
+     736,
+     436
+    ],
+    "ko": "만다따는 사대왕천에 올랐습니다. 사대천왕이 그를 맞이하여 곧바로 하늘 세계를\n그의 다스림에 내주었습니다. 그러나 끝없는 세월이 흐르자 즐거움의 쳇바퀴가 다시 돌았습니다.",
+    "cover": [
+     242,
+     225,
+     163
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-King-Mandhata-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     216,
+     331,
+     584,
+     435
+    ],
+    "ko": "갈애가 더해 가자 만다따는 다시\n삼십삼천에 올랐습니다. 신들의 왕 삭까는\n자기 하늘 나라를 꼭 절반으로 나누었습니다.\n만다따는 이제 가장 높은 신들과 나란히\n다스렸습니다.",
+    "cover": [
+     230,
+     203,
+     138
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-King-Mandhata-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     128,
+     288,
+     336
+    ],
+    "ko": "신들도 죽습니다.\n영원 같은 세월이 흐르며\n서른여섯 명의 삭까가\n차례로 긴 수명을 다하고\n죽었습니다.\n\n지난 공덕의 큰 힘에\n힘입어 만다따는 살아남아\n사람의 몸으로 하늘을\n다스렸습니다.",
+    "cover": [
+     228,
+     199,
+     135
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-King-Mandhata-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     44,
+     744,
+     112
+    ],
+    "ko": "쌓음의 역설: 만다따의 정복지는 끝없이 위로 넓어졌지만\n영적인 만족은 그대로였습니다.",
+    "cover": [
+     221,
+     190,
+     121
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     272,
+     157,
+     528,
+     183
+    ],
+    "ko": "3단계: 삼십삼천",
+    "cover": [
+     220,
+     191,
+     124
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     264,
+     183,
+     424,
+     219
+    ],
+    "ko": "가진 것:\n높은 신들과 함께 다스림",
+    "cover": [
+     222,
+     190,
+     117
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     424,
+     183,
+     536,
+     219
+    ],
+    "ko": "만족:\n없음",
+    "cover": [
+     222,
+     190,
+     119
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     264,
+     238,
+     536,
+     263
+    ],
+    "ko": "2단계: 사대왕천",
+    "cover": [
+     218,
+     191,
+     132
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     264,
+     263,
+     424,
+     301
+    ],
+    "ko": "가진 것:\n낮은 하늘을 다스림",
+    "cover": [
+     223,
+     190,
+     115
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     424,
+     263,
+     536,
+     301
+    ],
+    "ko": "만족:\n없음",
+    "cover": [
+     223,
+     190,
+     121
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     264,
+     317,
+     536,
+     343
+    ],
+    "ko": "1단계: 반두마띠(땅)",
+    "cover": [
+     219,
+     190,
+     125
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     264,
+     343,
+     424,
+     381
+    ],
+    "ko": "가진 것:\n세상의 일곱 보배",
+    "cover": [
+     223,
+     190,
+     115
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     424,
+     343,
+     536,
+     381
+    ],
+    "ko": "만족:\n없음",
+    "cover": [
+     223,
+     190,
+     116
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-King-Mandhata-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     376,
+     72,
+     424,
+     100
+    ],
+    "ko": "재물",
+    "cover": [
+     179,
+     92,
+     83
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     284,
+     156,
+     356,
+     188
+    ],
+    "ko": "배신",
+    "cover": [
+     173,
+     68,
+     55
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     452,
+     156,
+     516,
+     188
+    ],
+    "ko": "싫증",
+    "cover": [
+     175,
+     67,
+     59
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     366,
+     240,
+     436,
+     268
+    ],
+    "ko": "오름",
+    "cover": [
+     179,
+     84,
+     77
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     360,
+     128,
+     440,
+     204
+    ],
+    "ko": "갈애의\n바퀴",
+    "cover": [
+     171,
+     40,
+     38
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     144,
+     360,
+     664,
+     428
+    ],
+    "ko": "싫증은 배신하는 욕망으로 바뀌었습니다. “어찌 절반에 만족하랴?” 만다따는\n생각했습니다. “삭까를 죽이고 혼자 다스리겠다.” 그러나 갈애는 업을 이기지\n못합니다. 이 살의가 그의 공덕의 바탕을 단번에 무너뜨렸습니다.",
+    "cover": [
+     221,
+     190,
+     125
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-King-Mandhata-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     99,
+     372,
+     323
+    ],
+    "ko": "하늘 세계에서는 사람의 몸이\n부서지지 않습니다. 끝없는\n탐욕으로 업의 생명력을\n잃자 마침내 늙음이 그를\n덮쳤습니다. 만다따는 가장\n높은 하늘에서 곤두박질쳐\n처음의 인간 세상 왕궁\n정원으로 떨어졌습니다.",
+    "cover": [
+     221,
+     188,
+     119
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-King-Mandhata-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     352,
+     760,
+     432
+    ],
+    "ko": "죽음을 앞둔 위대한 정복자는 사람들에게 마지막 경고를 남겼습니다.\n“만다따 왕은 네 대륙과 낮은 하늘을 다스렸고, 서른여섯 삭까의\n수명 동안 가장 높은 하늘을 함께 다스렸다. 그러나 끝내 만족하지 못하고 죽었다.”",
+    "cover": [
+     226,
+     203,
+     141
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/08-King-Mandhata-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     124,
+     263,
+     676,
+     415
+    ],
+    "ko": "부처님께서 궁극의 진리를 밝히셨습니다.\n금화의 비가 내려도 갈애는 채워지지 않는다.\n윤회의 즐거움의 쳇바퀴는 괴로움만 낳는다.\n지혜로운 제자는 다스릴 땅을 넓히려 하지 않고\n욕망이 남김없이 꺼지기를 구한다.",
+    "cover": [
+     226,
+     198,
+     126
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

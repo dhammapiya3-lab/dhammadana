@@ -1,0 +1,566 @@
+[
+ {
+  "img": "images/09-Merchant-Buddhavamma-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     62,
+     708,
+     166
+    ],
+    "ko": "상인 붓다왐마가 받은 놀라운 보상\n아찐띠야(acintanīya, 헤아릴 수 없는) 공덕 —\n깨끗한 공양 한 번이 낳은 업의 작용",
+    "cover": [
+     230,
+     204,
+     144
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     204,
+     67,
+     624,
+     187
+    ],
+    "ko": "번영하는 도시 빠딸리뿟따에서 상인 붓다왐마는\n많은 비구들과 함께 다니시는 부처님을 뵈었습니다.\n\n금빛 산처럼 빛나시는 부처님을 뵙고 기쁨에 넘친\n그는 곧바로 저녁 공양에 모시겠다고 청했습니다.",
+    "cover": [
+     235,
+     221,
+     188
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     462,
+     100,
+     732,
+     330
+    ],
+    "ko": "부처님께서는 저녁 공양을\n사양하시며 출가자의 중요한\n계율을 설명하셨습니다.\n위깔라보자나(때 아닌 때 먹기)\n\n여래와 비구들은 때 아닌 때,\n곧 정오가 지나면 음식을\n먹지 않습니다.\n\n다른 공양 방법을 찾던 상인은\n이 시간에 무엇을 드릴 수\n있는지 여쭈었습니다.",
+    "cover": [
+     233,
+     219,
+     185
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     63,
+     624,
+     139
+    ],
+    "ko": "여덟 가지 허락된 음료(앗타위다 빠나)\n부처님께서는 정오가 지나도 비구들이 마실 수 있는\n여덟 가지가 있다고 설명하셨습니다.",
+    "cover": [
+     231,
+     216,
+     184
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     154,
+     174,
+     206,
+     199
+    ],
+    "ko": "망고",
+    "cover": [
+     230,
+     214,
+     183
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     316,
+     174,
+     392,
+     199
+    ],
+    "ko": "잠부 열매",
+    "cover": [
+     230,
+     215,
+     185
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     512,
+     174,
+     573,
+     199
+    ],
+    "ko": "바나나",
+    "cover": [
+     228,
+     213,
+     181
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     688,
+     174,
+     756,
+     199
+    ],
+    "ko": "파초 열매",
+    "cover": [
+     230,
+     213,
+     182
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 12,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     128,
+     304,
+     206,
+     330
+    ],
+    "ko": "단 장과",
+    "cover": [
+     228,
+     211,
+     180
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     328,
+     304,
+     382,
+     330
+    ],
+    "ko": "꿀",
+    "cover": [
+     228,
+     211,
+     179
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     502,
+     304,
+     573,
+     330
+    ],
+    "ko": "포도",
+    "cover": [
+     228,
+     212,
+     178
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     693,
+     304,
+     749,
+     330
+    ],
+    "ko": "연근",
+    "cover": [
+     229,
+     211,
+     178
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     48,
+     736,
+     180
+    ],
+    "ko": "규칙을 알게 된 붓다왐마는 곧바로 여덟 가지 맛을 모두 담은\n진한 포도즙 묵디까빠나를 만들어 부처님과 비구들에게 올렸습니다.\n\n깨끗한 공양을 드신 뒤 부처님께서는 법을 설하시고 길을 떠나셨습니다.",
+    "cover": [
+     237,
+     226,
+     196
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     520,
+     60,
+     772,
+     190
+    ],
+    "ko": "뒷날 붓다왐마는 대상을\n이끌고 마하왓따니야 황야\n깊이 들어갔습니다. 그 험한\n땅 한가운데서 대상의 물이\n완전히 떨어졌습니다.",
+    "cover": [
+     229,
+     213,
+     178
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     152,
+     62,
+     652,
+     164
+    ],
+    "ko": "물이 완전히 바닥났습니다(빠릭카야마가마시).\n사람도 소도 마실 물이 없자 붓다왐마는 목마름에\n시달리며 수레들 사이를 헤매고 남은 물 한 방울이라도\n애타게 찾았습니다.",
+    "cover": [
+     236,
+     223,
+     189
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     432,
+     91,
+     732,
+     367
+    ],
+    "ko": "다른 상인이 작은 단지에\n남은 물을 조금 건넸습니다.\n\n물을 마신 붓다왐마는\n부처님께 올렸던 포도즙\n묵디까빠나의 진한 맛을\n알아보았습니다. 지난 행위의\n공덕이 오늘 열매 맺고 있음을\n깨달았습니다.",
+    "cover": [
+     242,
+     227,
+     192
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     136,
+     64,
+     668,
+     164
+    ],
+    "ko": "큰 저장 단지를 열자 기적이 보였습니다.\n단지에서 하늘의 포도즙이 끝없이 넘쳐흐르고 있었습니다.\n빠딸리뿟따에서 올린 한 사발이 생명을 살리는\n마르지 않는 샘으로 불어난 것입니다.",
+    "cover": [
+     240,
+     225,
+     192
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     58,
+     400,
+     222
+    ],
+    "ko": "보상은 눈에 보이고 곧바로\n왔습니다(산딧티까 아깔리까).\n\n붓다왐마는 대상 모두를 불러\n마시게 했습니다. 수백 명의\n사람과 소가 달고 시원한 음료를\n실컷 마셨지만 단지는 결코\n비지 않았습니다.",
+    "cover": [
+     237,
+     223,
+     188
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     128,
+     64,
+     676,
+     148
+    ],
+    "ko": "공덕의 작용\n상인의 이야기는 부처님이라는 기름진 밭에 공양을 심을 때\n업의 열매가 얼마나 크게 불어나는지 보여 줍니다.",
+    "cover": [
+     237,
+     222,
+     187
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     132,
+     166,
+     296,
+     210
+    ],
+    "ko": "씨앗",
+    "cover": [
+     236,
+     220,
+     188
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     508,
+     166,
+     664,
+     210
+    ],
+    "ko": "열매",
+    "cover": [
+     237,
+     221,
+     188
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     56,
+     364,
+     380,
+     410
+    ],
+    "ko": "포도즙 한 사발.\n덕 있는 분께, 깨끗한 마음으로.",
+    "cover": [
+     237,
+     221,
+     187
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     428,
+     364,
+     744,
+     410
+    ],
+    "ko": "온 대상이 끝없이 살아남음.\n12요자나 황금 저택에 태어남.",
+    "cover": [
+     239,
+     222,
+     190
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     244,
+     59,
+     552,
+     211
+    ],
+    "ko": "황야에서 무사히 돌아온 붓다왐마는\n웰루와나 숲으로 부처님을 찾아뵈었습니다.\n대상이 기적처럼 살아난 이야기를 아뢰며\n보시의 큰 힘을 확인했습니다. 법을 들은\n그는 남은 생 동안 큰 보시를 행했습니다.",
+    "cover": [
+     236,
+     218,
+     185
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     112,
+     336,
+     688,
+     410
+    ],
+    "ko": "그가 세상을 떠나자 공덕의 궁극의 열매가 익었습니다.\n그는 하늘 세계의 12요자나나 되는 훌륭한 황금 저택에 태어났습니다.\n어디를 보아도 보석 그릇에서 하늘의 포도즙이 저절로 넘쳐흘렀습니다.",
+    "cover": [
+     235,
+     218,
+     185
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-Merchant-Buddhavamma-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     132,
+     600,
+     334
+    ],
+    "ko": "이것을 알면 누가\n보시하지 않겠습니까?\n\n가장 높은 승리자께 음료 한 잔을 올려도\n큰 재물을 얻습니다. 이 덕을 아십시오.\n덕 있는 이에게 베풀면 뛰어난 이가 됩니다.",
+    "cover": [
+     231,
+     216,
+     180
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
