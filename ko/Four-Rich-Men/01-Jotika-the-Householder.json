@@ -1,0 +1,662 @@
+[
+ {
+  "img": "images/01-Jotika-the-Householder-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     70,
+     700,
+     122
+    ],
+    "ko": "업의 장부: 조띠까 이야기",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     180,
+     120,
+     620,
+     152
+    ],
+    "ko": "91겁에 걸친 행위와 결과",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Jotika-the-Householder-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     40,
+     550,
+     80
+    ],
+    "ko": "보시의 흐름",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     70,
+     80,
+     730,
+     150
+    ],
+    "ko": "깨끗한 마음으로 올린 사탕수수즙 한 잔이 저절로 불어납니다.\n벽지불 한 분에게서 시작된 공덕이 간다마다나 산의 오백 분께로\n넘쳐흘러, 끝없는 업의 사슬이 움직이기 시작합니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Jotika-the-Householder-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     38,
+     580,
+     82
+    ],
+    "ko": "서원의 갈림길",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     272,
+     94,
+     560,
+     120
+    ],
+    "ko": "보시: 함께 나눈 사탕수수즙",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     110,
+     136,
+     290,
+     172
+    ],
+    "ko": "형",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     500,
+     136,
+     700,
+     172
+    ],
+    "ko": "아우",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     46,
+     355,
+     340,
+     417
+    ],
+    "ko": "• 서원: 곧바로 깨달음\n• 결과: 다음 생에 아라한과",
+    "cover": null,
+    "align": "left",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     430,
+     355,
+     780,
+     417
+    ],
+    "ko": "• 서원: 세상의 영광, 그다음 깨달음\n• 결과: 91겁의 부, 그다음 아라한과",
+    "cover": null,
+    "align": "left",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Jotika-the-Householder-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     40,
+     550,
+     80
+    ],
+    "ko": "두 길이 갈라지다",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     105,
+     82,
+     700,
+     150
+    ],
+    "ko": "위빳시 부처님 시대에 세나는 출가하여 곧 아라한이 됩니다.\n감각적 즐거움에 아직 묶여 있던 아빠라지따는 재가자로 남아\n승가를 위해 장엄한 향실을 짓기로 합니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Jotika-the-Householder-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     44,
+     580,
+     88
+    ],
+    "ko": "큰 보시",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     110,
+     90,
+     700,
+     152
+    ],
+    "ko": "아빠라지따는 승원 마당에 보석을 무릎 높이까지 깝니다. 마당을\n세 번이나 다시 채우며 가난한 이와 부자 모두에게 보석을 마음껏\n가져가게 하자, 많은 사람이 법을 들으러 모여듭니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Jotika-the-Householder-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     40,
+     580,
+     82
+    ],
+    "ko": "지키는 서원",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     150,
+     86,
+     660,
+     150
+    ],
+    "ko": "값진 루비를 도둑맞고 마음이 흔들린 아빠라지따는 굳은 서원을\n세웁니다. “왕이든 도둑이든 누구도 내 재산을 힘으로 빼앗지\n못하게 하소서. 불이 태우지 못하고 물이 쓸어 가지 못하게 하소서.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Jotika-the-Householder-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     34,
+     690,
+     82
+    ],
+    "ko": "91겁 뒤에 나타난 과보",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     55,
+     358,
+     745,
+     432
+    ],
+    "ko": "라자가하에 조띠까로 다시 태어나자 지난 생의 큰 공덕이 곧바로 나타납니다.\n온 도성의 무기와 장신구가 영문도 모르게 빛을 뿜습니다.\n빔비사라 왕은 아이를 기르는 데 쓰라고 날마다 천 냥을 내립니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Jotika-the-Householder-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     38,
+     580,
+     78
+    ],
+    "ko": "공덕의 설계도",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     170,
+     78,
+     630,
+     104
+    ],
+    "ko": "삭까가 조띠까의 공덕에 걸맞은 집을 지어 줍니다:",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     24,
+     112,
+     304,
+     208
+    ],
+    "ko": "• 보석으로 꾸민 7층 저택\n• 약카 군대가 지키는 7겹 성벽\n• 순금 사탕수수 4그루\n• 마르지 않는 황금 보물 항아리 4개",
+    "cover": null,
+    "align": "left",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Jotika-the-Householder-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     36,
+     570,
+     78
+    ],
+    "ko": "장부가 맞아떨어지다",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     260,
+     78,
+     540,
+     104
+    ],
+    "ko": "업의 결과는 정확합니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     66,
+     204,
+     262,
+     270
+    ],
+    "ko": "아빠라지따는 무릎 높이의\n보석을 나누어 주었고",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     466,
+     202,
+     774,
+     252
+    ],
+    "ko": "조띠까의 황금 항아리는\n마르지 않습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     95,
+     380,
+     260,
+     428
+    ],
+    "ko": "그의 가족은 보통의\n불을 쓰지 않았고",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     405,
+     382,
+     775,
+     428
+    ],
+    "ko": "사꿀라까이는 웃따라꾸루에서 신비한 열을 내는\n수정과 끝없이 나오는 쌀을 받습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Jotika-the-Householder-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     36,
+     570,
+     76
+    ],
+    "ko": "왕의 방문",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     55,
+     78,
+     745,
+     148
+    ],
+    "ko": "빔비사라 왕은 자기보다 큰 부에 놀라고, 비질하는 하녀들을 조띠까의\n아내들로 잘못 압니다. 왕의 등불에서 나는 거친 연기에 사꿀라까이가\n눈물을 흘리자, 조띠까는 맑은 빛을 내는 루비를 왕에게 바칩니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Jotika-the-Householder-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     30,
+     580,
+     74
+    ],
+    "ko": "서원의 방패가 움직이다",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     55,
+     70,
+     745,
+     140
+    ],
+    "ko": "왕위를 빼앗은 아자따삿뚜가 조띠까의 저택을 빼앗으러 옵니다. 지키는 서원은\n그대로 이루어져, 약카 경비병들이 순식간에 왕의 군대를 물리칩니다.\n그동안 조띠까는 조금도 흔들림 없이 승원에 앉아 법을 듣고 있습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Jotika-the-Householder-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     32,
+     660,
+     80
+    ],
+    "ko": "서원이 작용하는 방식",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     90,
+     76,
+     710,
+     138
+    ],
+    "ko": "아자따삿뚜는 큰 힘으로도 조띠까의 손가락에서 반지 하나 빼내지 못합니다.\n그러나 조띠까가 마음먹자 반지들이 저절로 천 위로 떨어집니다.\n지난 서원의 법칙은 피할 수 없음을 보여 줍니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Jotika-the-Householder-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     56,
+     570,
+     94
+    ],
+    "ko": "절박한 마음",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     75,
+     92,
+     725,
+     174
+    ],
+    "ko": "왕의 눈먼 탐욕을 본 조띠까는 깊은 절박감을 느낍니다.\n아무리 많고 아무리 잘 지켜진 재산이라도 사람을 괴로움에\n묶어 두는 끈임을 깨닫고, 왕에게 출가를 허락해 달라고 청합니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Jotika-the-Householder-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     40,
+     660,
+     90
+    ],
+    "ko": "위대한 출가",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     100,
+     88,
+     700,
+     152
+    ],
+    "ko": "조띠까는 아라한과를 얻습니다. 마음에서 존재에 대한 갈애가 꺼지자\n재산을 받쳐 주던 업의 연료도 다합니다. 장엄한 저택과 황금 항아리와\n빛나는 수정이 한순간에 사라집니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-Jotika-the-Householder-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     42,
+     640,
+     102
+    ],
+    "ko": "가장 큰 재산",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     45,
+     102,
+     755,
+     184
+    ],
+    "ko": "“여섯 감각의 문에서 갈애를 버리고 집 없이 떠났으며,\n모든 존재에 대한 갈애를 다한 이, 그를 나는 바라문이라 부른다.”\n— 부처님 (법구경 416)",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

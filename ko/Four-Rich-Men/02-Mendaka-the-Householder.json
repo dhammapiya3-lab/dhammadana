@@ -1,0 +1,607 @@
+[
+ {
+  "img": "images/02-Mendaka-the-Householder-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     321,
+     640,
+     366
+    ],
+    "ko": "멘다까의 업",
+    "cover": [
+     247,
+     240,
+     222
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     160,
+     366,
+     640,
+     408
+    ],
+    "ko": "윤회 속 아낌없는 보시의 연대기",
+    "cover": [
+     247,
+     240,
+     224
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     286,
+     180,
+     518,
+     282
+    ],
+    "ko": "업의 작용은 여러 겁에 걸쳐\n메아리칩니다. 극심한 궁핍 속에서\n품고 아낌없는 보시로 기른\n공덕의 씨앗 하나가\n놀라운 풍요로 피어납니다.",
+    "cover": [
+     248,
+     236,
+     211
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     192,
+     368,
+     612,
+     446
+    ],
+    "ko": "91겁 전, 작은 아빠라지따는 위빳시 부처님께 훌륭한\n주랑을 지어 올렸습니다. 부처님의 금빛 자리는 정교한\n황금 염소(멘다까) 상들로 꾸몄습니다.",
+    "cover": [
+     245,
+     234,
+     207
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     284,
+     182,
+     520,
+     284
+    ],
+    "ko": "바라나시에 다시 태어난 부자는\n무서운 예언을 듣습니다.\n3년 뒤 잠부디빠에 끔찍한\n기근이 닥치리라는 것입니다.",
+    "cover": [
+     243,
+     232,
+     205
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     40,
+     390,
+     74
+    ],
+    "ko": "줄어드는 재산",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     206,
+     108,
+     322,
+     140
+    ],
+    "ko": "곳간 1,250채",
+    "cover": [
+     242,
+     224,
+     187
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     214,
+     178,
+     298,
+     218
+    ],
+    "ko": "큰 항아리",
+    "cover": [
+     242,
+     224,
+     183
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     208,
+     250,
+     320,
+     272
+    ],
+    "ko": "땅속에 묻은 것",
+    "cover": [
+     242,
+     226,
+     193
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     230,
+     332,
+     298,
+     352
+    ],
+    "ko": "흙벽",
+    "cover": [
+     239,
+     223,
+     191
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     558,
+     104,
+     734,
+     368
+    ],
+    "ko": "곡식을 쌓아 두었지만\n기근은 길게\n이어졌습니다.\n재산은 궁핍의 깔때기를\n따라 줄어들어, 마침내\n흙벽에서 긁어낸\n쌀 4분의 1되만\n남았습니다.",
+    "cover": [
+     243,
+     224,
+     181
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     42,
+     618,
+     118
+    ],
+    "ko": "굶어 죽을 날이 다가오자 부자는 마지막으로 긁어모은\n곡식으로 밥을 짓게 했습니다. “이것이 우리의 마지막\n먹을거리다. 배불리 먹고 죽음을 맞이하자.”",
+    "cover": [
+     244,
+     232,
+     205
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     138,
+     352,
+     666,
+     432
+    ],
+    "ko": "벽지불 한 분이 탁발을 오셨습니다. 지난날 베풀지 않은 탓에\n지금 괴로움을 겪는다는 것을 깨달은 부자는, 목숨을 이어 줄\n마지막 밥을 기쁘게 올려 내세의 안녕을 마련했습니다.",
+    "cover": [
+     243,
+     229,
+     201
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     42,
+     704,
+     96
+    ],
+    "ko": "이에 감동한 온 집안이 마지막 밥을 올렸습니다. 저마다 다시는 굶지 않고,\n끝없는 풍요를 누리며, 윤회 속에서 늘 한 가족으로 함께하기를 서원했습니다.",
+    "cover": [
+     240,
+     227,
+     199
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     616,
+     122,
+     770,
+     146
+    ],
+    "ko": "곳간 1,250채",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     614,
+     188,
+     774,
+     214
+    ],
+    "ko": "끝없는 쌀 그릇",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     614,
+     256,
+     776,
+     282
+    ],
+    "ko": "끝없는 은자루",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     614,
+     324,
+     776,
+     350
+    ],
+    "ko": "끝없는 곡식 바구니",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     630,
+     388,
+     770,
+     414
+    ],
+    "ko": "일곱 고랑 쟁기",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     444,
+     168,
+     752,
+     308
+    ],
+    "ko": "저녁이 되자 업이 익었습니다.\n씻어 둔 솥이 신기하게도 재스민\n꽃봉오리 같은 향기로운 밥으로\n가득 찼습니다. 부자는 잠부디빠의\n모든 사람을 먹여 기근을 끝냈습니다.",
+    "cover": [
+     240,
+     226,
+     198
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     343,
+     630,
+     433
+    ],
+    "ko": "윤회를 거쳐 온 가족은 고따마 부처님 시대에 다시\n만났습니다. 이제 멘다까라는 이름의 부자는 아내 짠다빠두마,\n아들 다난자야, 며느리 수마나데위, 하인 뿐나와 함께\n정해진 자리에 섰습니다.",
+    "cover": [
+     246,
+     231,
+     192
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     250,
+     8,
+     554,
+     33
+    ],
+    "ko": "황금 염소의 생김새",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     494,
+     60,
+     758,
+     180
+    ],
+    "ko": "집 뒤에 황금 염소 상들이\n기적처럼 무리 지어 나타났습니다.\n입에 물린 다섯 빛깔 솜마개를 뽑으면\n옷과 금과 은과 버터기름이\n끝없이 나와 사람들에게 돌아갔습니다.",
+    "cover": [
+     243,
+     229,
+     192
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     94,
+     122,
+     216,
+     168
+    ],
+    "ko": "솜마개",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     250,
+     284,
+     352,
+     344
+    ],
+    "ko": "옷·금·은·\n버터기름",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     626,
+     336,
+     722,
+     384
+    ],
+    "ko": "황금 땅에\n뿌리내림",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     258,
+     182,
+     546,
+     288
+    ],
+    "ko": "오랜 옛 서원이 그대로 이루어졌습니다.\n짠다빠두마는 끝없는 쌀 그릇을,\n다난자야는 마르지 않는 은 주머니를,\n수마나데위는 끝없는 곡식 바구니를,\n뿐나는 신기한 일곱 고랑 쟁기를 얻었습니다.",
+    "cover": [
+     243,
+     229,
+     194
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     42,
+     324,
+     416,
+     412
+    ],
+    "ko": "멘다까는 다른 수행자들의 헐뜯음을 물리치고\n고따마 부처님을 뵈었습니다. 부처님께 직접\n법을 듣고 수다원과를 얻어, 사라지지 않는\n영적인 재산을 얻었습니다.",
+    "cover": [
+     242,
+     227,
+     189
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     92,
+     342,
+     360
+    ],
+    "ko": "다른 수행자들의 헐뜯음을\n두고 부처님께서\n말씀하셨습니다.\n“남의 허물은 보기 쉽고\n자기 허물은 보기 어렵다.\n키질하는 이가 겨를\n날리듯 남의 허물은\n퍼뜨린다.”",
+    "cover": [
+     242,
+     227,
+     192
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-Mendaka-the-Householder-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     242,
+     152,
+     558,
+     312
+    ],
+    "ko": "행위와 의도와 결과는 끊을 수 없는\n하나의 실로 엮여 있습니다.\n멘다까의 이야기는 아낌없는 보시가\n극심한 궁핍을 끝없고 영원한\n풍요로 바꿀 수 있음을 보여 줍니다.",
+    "cover": [
+     240,
+     224,
+     186
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

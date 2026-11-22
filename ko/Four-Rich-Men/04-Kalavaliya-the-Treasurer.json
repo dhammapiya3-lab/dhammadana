@@ -1,0 +1,490 @@
+[
+ {
+  "img": "images/04-Kalavaliya-the-Treasurer-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     256,
+     166,
+     544,
+     252
+    ],
+    "ko": "깔라왈리야가 받은\n이레의 보상",
+    "cover": [
+     243,
+     231,
+     208
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     256,
+     254,
+     544,
+     320
+    ],
+    "ko": "아낌없는 보시와\n두려움 없는 행동의 이야기",
+    "cover": [
+     241,
+     226,
+     201
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Kalavaliya-the-Treasurer-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     134,
+     340,
+     674,
+     430
+    ],
+    "ko": "라자가하의 가난한 깔라왈리야 부부에게는 쉰 죽밖에 없었습니다.\n마하깟사빠 존자께서 탁발을 오시자 아내는 끼니를 남김없이 다\n올렸습니다. 이것이 남김없는 보시(니라와세사 다나)입니다.",
+    "cover": [
+     228,
+     199,
+     149
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     396,
+     226,
+     456,
+     248
+    ],
+    "ko": "쉰 죽",
+    "cover": [
+     244,
+     236,
+     214
+    ],
+    "align": "center",
+    "em": 13,
+    "label": true,
+    "dark": false,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Kalavaliya-the-Treasurer-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     134,
+     343,
+     674,
+     429
+    ],
+    "ko": "마하깟사빠 존자께서 그 죽을 부처님께 올렸습니다. 가난한 부부의\n깨끗한 희생을 알아보신 부처님께서 예언하셨습니다. “이레 안에\n깔라왈리야는 왕실의 재정관이 될 것이다.”",
+    "cover": [
+     225,
+     195,
+     147
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Kalavaliya-the-Treasurer-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     134,
+     343,
+     674,
+     429
+    ],
+    "ko": "빔비사라 왕은 귀신이 들끓는 도성 밖 말뚝에 묶인 죄수에게\n왕의 저녁밥을 주겠다고 덜컥 약속했습니다. 밤이 되자 어떤\n신하도 어둠 속으로 밥을 가져가려 하지 않았습니다.",
+    "cover": [
+     222,
+     192,
+     144
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Kalavaliya-the-Treasurer-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     456,
+     46,
+     700,
+     186
+    ],
+    "ko": "두 번이나 사람을 불러도 나서는\n이가 없자, 깔라왈리야의 아내가\n1,000냥을 받고 그 일을 맡았습니다.\n다섯 가지 무기를 든 남자 전사로\n꾸미고 위험한 밤길을 용감하게\n나섰습니다.",
+    "cover": [
+     220,
+     189,
+     145
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Kalavaliya-the-Treasurer-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     134,
+     343,
+     674,
+     429
+    ],
+    "ko": "나무 신 디가딸라와 맞닥뜨린 그녀는 먹잇감이 되기를 거절했습니다.\n오히려 아들이 태어났다는 그의 기쁜 소식을 전해 주는 대가로\n황금 일곱 단지를 받기로 당차게 약속했습니다.",
+    "cover": [
+     219,
+     188,
+     141
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Kalavaliya-the-Treasurer-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     134,
+     343,
+     674,
+     429
+    ],
+    "ko": "깔리와 디가딸라에게 아들이 태어났다는 기쁜 소식을 외치며\n그녀는 신들의 우두머리 수마나에게 이르렀습니다. 기뻐한 수마나는\n큰 나무 아래 묻힌 많은 황금 보물을 그녀에게 주었습니다.",
+    "cover": [
+     214,
+     183,
+     137
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Kalavaliya-the-Treasurer-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     580,
+     40,
+     710,
+     408
+    ],
+    "ko": "죄수에게\n이르러 손으로\n밥을 먹여\n주었습니다.\n여자의 손길을\n알아챈 그는\n그녀의 상투를\n물어 붙잡으려\n했습니다.\n그녀는 침착하게\n칼을 뽑아\n머리를 자르고\n빠져나왔습니다.",
+    "cover": [
+     211,
+     179,
+     133
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Kalavaliya-the-Treasurer-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     134,
+     343,
+     674,
+     429
+    ],
+    "ko": "빔비사라 왕에게 돌아온 그녀는 용감한 일을 해낸 틀림없는\n증거로 잘라 온 상투를 바쳤습니다. 그리고 신들이 내려 준\n하늘의 황금이 숨겨진 곳들을 알려 드렸습니다.",
+    "cover": [
+     210,
+     178,
+     134
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Kalavaliya-the-Treasurer-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     60,
+     578,
+     158
+    ],
+    "ko": "왕의 신하들이 디가딸라와 수마나의\n큰 보물을 캐냈습니다. 하룻밤 사이에\n가난한 부부는 나라에서 가장 큰 부자가\n되어, 부처님의 이레 예언이 그대로\n이루어졌습니다.",
+    "cover": [
+     36,
+     19,
+     4
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Kalavaliya-the-Treasurer-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     134,
+     343,
+     674,
+     429
+    ],
+    "ko": "견줄 데 없는 그들의 재산과 공덕을 알아본 빔비사라 왕은\n깔라왈리야를 사왓티의 재정관으로 임명하고, 왕의 인장과\n칭호와 벼슬을 나타내는 흰 일산을 내렸습니다.",
+    "cover": [
+     206,
+     174,
+     129
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Kalavaliya-the-Treasurer-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     20,
+     564,
+     58
+    ],
+    "ko": "번영으로 가는 두 길",
+    "cover": [
+     212,
+     170,
+     100
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     108,
+     194,
+     316,
+     324
+    ],
+    "ko": "영적인 길:\n니라와세사 다나\n(남김없는 희생)\n→ 업의 공덕과\n부처님의 예언을 낳음",
+    "cover": [
+     205,
+     173,
+     127
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     484,
+     194,
+     692,
+     324
+    ],
+    "ko": "세간의 길:\n두려움 없는 행동\n(밤의 심부름)\n→ 실제 재산과\n인품의 증거를 얻음",
+    "cover": [
+     205,
+     173,
+     127
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     166,
+     398,
+     634,
+     428
+    ],
+    "ko": "공덕이 무대를 마련하고, 용기가 보상을 거둡니다.",
+    "cover": [
+     200,
+     169,
+     128
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-Kalavaliya-the-Treasurer-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     18,
+     564,
+     56
+    ],
+    "ko": "깨어남의 순환",
+    "cover": [
+     209,
+     168,
+     102
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     122,
+     98,
+     208,
+     166
+    ],
+    "ko": "1.\n순수한 의도\n(남김없는\n보시)",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     578,
+     100,
+     692,
+     164
+    ],
+    "ko": "2.\n업의 축복\n(예언)",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     578,
+     256,
+     692,
+     324
+    ],
+    "ko": "3.\n두려움 없는\n행동\n(밤길)",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     110,
+     246,
+     210,
+     324
+    ],
+    "ko": "4.\n물질로\n나타남\n(재정관)",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     170,
+     406,
+     634,
+     434
+    ],
+    "ko": "운명은 영적인 내려놓음과 두려움 없는 행동을 함께 요구합니다.",
+    "cover": [
+     196,
+     165,
+     126
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

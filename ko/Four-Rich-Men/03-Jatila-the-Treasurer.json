@@ -1,0 +1,461 @@
+[
+ {
+  "img": "images/03-Jatila-the-Treasurer-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     142,
+     326,
+     252
+    ],
+    "ko": "자띨라:\n황금 언덕에 짜인\n업의 무늬",
+    "cover": [
+     238,
+     222,
+     188
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     66,
+     254,
+     326,
+     322
+    ],
+    "ko": "공덕과 재산과\n참된 해탈의 정밀한 짜임새",
+    "cover": [
+     238,
+     223,
+     189
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     122,
+     370,
+     682,
+     440
+    ],
+    "ko": "깟사빠 부처님 시대, 짜증이 나 있던 금세공인에게 성소에 쓸 금을 청했습니다.\n집안 다툼으로 화가 난 그는 찾아온 아라한에게 “당신네 부처 상이나 물에\n던져 버리시오!” 하고 퍼부었습니다. 이 악한 말 한마디가 그의 운명을 바꾸었습니다.",
+    "cover": [
+     241,
+     226,
+     194
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     408,
+     68,
+     748,
+     180
+    ],
+    "ko": "아내에게 꾸짖음을 듣자 금세공인에게 절박한\n마음(삼웨가)이 일었습니다. 허물을 씻으려고\n성소에 올릴 황금 꽃병 세 개를 만들고,\n세 아들에게도 이 공덕에 함께하자고 했습니다.\n이것이 아들들의 앞날을 정할 줄은 몰랐습니다.",
+    "cover": [
+     237,
+     222,
+     191
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     38,
+     774,
+     80
+    ],
+    "ko": "의도가 가른 길",
+    "cover": [
+     233,
+     208,
+     156
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     30,
+     80,
+     774,
+     106
+    ],
+    "ko": "우리의 선택이 업의 앞날을 엄격하게 짜 나갑니다.",
+    "cover": [
+     233,
+     208,
+     163
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     284,
+     146,
+     688,
+     192
+    ],
+    "ko": "맏아들: “아버지 혼자 부처님을 욕하셨잖아요.”",
+    "cover": [
+     234,
+     208,
+     158
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     284,
+     254,
+     688,
+     300
+    ],
+    "ko": "둘째 아들: “아버지가 직접 하세요.”",
+    "cover": [
+     233,
+     208,
+     154
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     284,
+     362,
+     688,
+     408
+    ],
+    "ko": "막내아들: “돕는 것이 제 도리입니다.”",
+    "cover": [
+     233,
+     207,
+     154
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     32,
+     284,
+     376,
+     420
+    ],
+    "ko": "그 거친 말 때문에 금세공인은 일곱 생 동안\n윤회의 강을 떠돌았습니다. 바라나시에서\n한 상인의 딸이 하늘을 나는 위자다라와\n몰래 아이를 가졌습니다. 출생을 숨기려고\n아기를 질그릇 단지에 담아 강물에 띄웠습니다.",
+    "cover": [
+     234,
+     217,
+     184
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     348,
+     774,
+     432
+    ],
+    "ko": "마하깟짜야나 존자의 신도가 하류에서 아기를 건졌습니다. 씻기지 않은\n아기의 머리카락이 엉켜 자띨라(‘엉킨 머리’)라는 이름을 얻었습니다. 아기의\n큰 지난 공덕을 알아본 존자는 아기를 딱까실라의 한 상인에게 맡겼습니다.",
+    "cover": [
+     232,
+     215,
+     181
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     32,
+     48,
+     332,
+     148
+    ],
+    "ko": "팔리지 않는 물건이 가득한 가게를 맡자,\n소년의 업의 복이 도성의 수호신들을\n움직여 모든 손님을 그에게 보냈습니다.\n12년 묵은 재고가 하루 만에 다 팔려\n놀라운 공덕을 드러냈습니다.",
+    "cover": [
+     234,
+     214,
+     176
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     32,
+     48,
+     332,
+     148
+    ],
+    "ko": "새로 지은 집에 들어서자 높이 80완척의\n순금 언덕이 뒤뜰 땅에서 솟아올랐습니다.\n빔비사라 왕은 그를 ‘황금 언덕의\n주인’이라 불렀습니다.",
+    "cover": [
+     230,
+     208,
+     170
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     160,
+     560,
+     304
+    ],
+    "ko": "자기 일을 넘겨받을 만한 이를 찾던\n자띨라는 잠부디빠에서 가장 큰\n업의 재산들을 살펴보았습니다:\n• 자띨라: 80완척 황금 언덕\n• 멘다까: 황금 염소 떼\n• 조띠까: 10만 냥짜리 벨벳 발깔개",
+    "cover": [
+     230,
+     207,
+     169
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     22,
+     616,
+     56
+    ],
+    "ko": "열매가 가른 길",
+    "cover": [
+     227,
+     204,
+     155
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     180,
+     56,
+     616,
+     88
+    ],
+    "ko": "언덕은 짓는 데 도운 이에게만 내주었습니다.",
+    "cover": [
+     226,
+     205,
+     161
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     536,
+     125,
+     762,
+     164
+    ],
+    "ko": "맏아들: 단단한 화강암에 막힘",
+    "cover": [
+     227,
+     205,
+     158
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     536,
+     248,
+     762,
+     288
+    ],
+    "ko": "둘째 아들: 단단한 화강암에 막힘",
+    "cover": [
+     228,
+     205,
+     157
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     536,
+     349,
+     762,
+     411
+    ],
+    "ko": "막내아들: 부드러운 흙을 쳐서\n금을 쉽게 캐냄",
+    "cover": [
+     227,
+     204,
+     158
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     16,
+     372,
+     788,
+     434
+    ],
+    "ko": "업의 정확함을 깨달은 자띨라는 황금 언덕을 막내아들에게 물려주었습니다. 헤아릴 수 없는\n재산을 버리고 승가에 들어가 며칠 만에 아라한과를 얻어, 마침내 윤회의 고리를 끊었습니다.",
+    "cover": [
+     224,
+     202,
+     157
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Jatila-the-Treasurer-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     354,
+     748,
+     446
+    ],
+    "ko": "비구들은 자띨라가 아직 재산을 갈망하리라 여겨 그의 깨달음을 의심했습니다.\n부처님께서 밝히셨습니다. ‘존재에 대한 갈애를 다하고 모든 존재의 끝에 이른 이,\n그를 나는 바라문이라 부른다.’ 참된 해탈에는 매인 실이 하나도 남지 않습니다.",
+    "cover": [
+     244,
+     228,
+     198
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
