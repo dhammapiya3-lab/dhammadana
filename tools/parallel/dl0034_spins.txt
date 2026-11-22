@@ -1,47 +1,19 @@
 # DL-0034 문장 손 짝 (run_dl0034.sh 가 --spin 으로 넘김) — '한국어 문장 첫머리=원서 문장 첫머리', 한쪽이 비면 짝 없음
-# 107~110쪽: 한국어판 '참고사항 : 표 5a' 풀이(원서는 표 안 글이라 대조하지 않음) 뒤의 본문 짝
-지옥, 아귀, 축생계의 마음은=In the hells, the ghost world
-어리석음은 악처의 세계에서=Delusion is very strong in the lower
-그러므로 낮은 세계의 중생들이=That is why it is almost impossible for beings
-그럼에도 불구하고 배우지 못한 범부들의=Nonetheless, among the great majority
-단지 가끔씩 때때로=Only occasionally do wholesome
-배우지 못한 범부들의 어리석음은=And among the uneducated, ordinary people, delusion
-그래서 사람이 죽으면 대부분=That is why, when human beings pass away
-# 161~162쪽: 한국어판에 더한 중부 인용 뒤
-왜냐하면 이러한 도의 지혜를 얻으면=Because to attain this Path-Knowledge
-# 239쪽: 열 가지 위빳사나 경계
-다른 경우는 통찰지를 계속 닦아=One may also progress through the insight-knowledges
-# 270쪽: 사견이 완성되는 두 요인
-2개의 요인이 완성될 때만이=It becomes an accomplished kamma only
-1) 사물을 받아들이는 토대=1) Taking the thing in a distorted way
-2) 이러한 토대에 기초하여=2) The manner in which it is taken
-# 296~297쪽: 원서의 열한 가지 세간 통찰지 목록은 한국어판이 230~234쪽에 따로 실음 — 그 뒤 지혜와 공덕 결론
-결론적으로 지혜와 공덕은=It also concludes our explanation of knowledge
-과거의 생에서 그러한 지혜를 개발한=Please try to keep it in mind
-유익한 것에 관한 설명을 마치기전에=Properly to conclude our explanation
-1) 보시, 지계, 마음집중=1) The one who has practised conduct
-2) 5가지 무더기에 관한=2) The one who has practised knowledge
-3) 지혜도 닦지 않고=3) The one who has practised neither
-# 305쪽: 과보의 시기 네 범주 (한국어판은 한 문단에 이어 씀, 원서는 항목마다 문단)
-2) 죽는 순간에=2) Kamma effective upon rebirth
-3) 정해진 기한이 없이=3) Indefinitely-effective kamma
-4) 소멸된 업~1=4) Lapsed kamma
-# 416쪽: 한국어판이 이야기를 줄이고 풀이를 더함 — 원서의 이야기 문장은 짝짓지 않음
-=The Buddha also knew that in those two weeks
-깨닫지 못한 비구들은 어떠한 방식으로든=After two weeks, the five hundred bhikkhus
-=When The Buddha returned, He asked the Venerable Ānanda
-=The Venerable Ānanda told Him it was because
-=And the Venerable Ānanda suggested
-# 193쪽: 사대요소
-1) 사대요소=THE FOUR GREAT ESSENTIALS
-사대요소(cattāro ca mahā·bhūtā)는=The four great essentials (cattāro ca mahā·bhūtā) are
-# 2회차: 103·108쪽, 296쪽
-이러한 세 가지 해로운 뿌리가운데=Kamma with one of the three unwholesome roots leads
-(17 마음순간 앞에 있는)=
-그러므로 생의 첫 번째 인식과정에서=
-지혜는 통찰지이다=Knowledge (vijjā) is insight knowledge
-지혜는 다시 태어남을 만들지=
-# 3회차: 표 제목 줄 (원서는 표 안 글)
+# 원서: 개정 2판(PAMC 2018). 표 제목 줄 (원서는 표 안 글이라 대조하지 않음)
 표 1a : 해로운 과보의 마음=
 참고사항 : 표 5a=
-그러나 정말로 비구들이여, 마음으로=But it is indeed possible, bhikkhus, it is known that one of mental
+# 254~256쪽: 실없는 소리 — 원서의 이야기 종류 목록(두 단)은 한국어판이 그림으로 실음
+실없는 소리를 하는 사람이란=A prattler one is:
+때 아닌 때에 말하는 자이다=• a speaker of the untimely,
+실없는 소리는 탐욕과 어리석음 혹은=Prattle is because of either greed
+실없음에는 다음과 같은 저급한=Explaining prattle, The Buddha speaks
+이것들은 우리들이 언제나=This is what we talk about all the time
+# 274쪽: 잘못된 성행위를 하지 않음 — 한국어판은 열 가지를 한 문장으로
+잘못된 성행위를 자제하는 것은 탐욕 없음과=Here again, to abstain from sexual misconduct
+그리고 다시, 어떤 사람이 다른 사람을 해롭게 하지 않으려는=And again, one may abstain from sexual misconduct out of kindness
+# 415~416쪽: 500명의 비구 — 한국어판이 원서의 두 주 동안·미가란디까 이야기를 줄임
+여기서 우리는 이 이야기를 아주 신중하게=Here we need to be very careful
+=The Buddha also knew that in those two weeks
+=There was an ascetic known as Migalaṇḍika
+=Even Migalaṇḍika the fake ascetic thought
+=And when all the bhikkhus had died, The Buddha returned

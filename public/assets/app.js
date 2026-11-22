@@ -2756,7 +2756,7 @@ function parApply() {
   if (!R.parD) { parEnsure(); return; }
   const D = R.parD, O = D.orig, wide = innerWidth >= 900, ptx = {};
   const kText = key => { if (!(key in ptx)) { const [n, k] = key.split(':').map(Number); ptx[key] = (paras((R.pages[n - 1] || {}).text)[k]) || ''; } return ptx[key]; };
-  const oHtml = (t, h) => boldMark(esc(t)).replace(/\[\^([^\]\s]+)\]/g, (m, n) => `<sup class="par-fn" role="button" tabindex="0" data-ofn="${n}" aria-label="${esc(lang)} 원서 각주 ${n}">${n}</sup>`).replace(/\n/g, '<br>');  // 원서 각주 번호 [^n] → 작은 위첨자, 누르면 원서 각주  // 원서 각주 번호 [^n] → 작은 위첨자
+  const oHtml = (t, h) => boldMark(esc(t)).replace(/\[\^([^\]\s]+)\]/g, (m, n) => `<sup class="par-fn" role="button" tabindex="0" data-ofn="${n}" aria-label="${esc(lang)} 원서 ${ofnLab(n)}">${ofnSup(n)}</sup>`).replace(/\n/g, '<br>');  // 원서 각주 번호 [^n] → 작은 위첨자, 누르면 원서 각주  // 원서 각주 번호 [^n] → 작은 위첨자
   const kHtml = t => fnMark(phMark(boldMark(esc(t.replace(/^## |^\^\^ |^:: |^>> |^\|\| |^\+\+ /gm, ''))))).replace(/\n/g, '<br>');
   const lang = { en: '영어', my: '미얀마어', pi: '빠알리어', th: '태국어' }[D.lang] || D.lang;
   rf.classList.add('par-on', R.parMode === 'para' && wide ? 'par2' : 'par1');
@@ -2796,7 +2796,7 @@ function parApply() {
     if (i == null || !O[i]) return;
     const o = O[i], m = o.t.match(/^\[\^([^\]]+)\]:\s*/);
     const box = document.createElement('div'); box.className = 'par-or par-fnor'; box.lang = D.lang;
-    box.innerHTML = `<p class="par-fnh" lang="ko">${esc(lang)} 원서 각주 ${esc(m ? m[1] : '')}${o.pg ? ` · 원서 ${esc(o.pg)}쪽` : ''}</p><p>${oHtml(o.t.replace(/^\[\^[^\]]+\]:\s*/, ''))}</p>`;
+    box.innerHTML = `<p class="par-fnh" lang="ko">${esc(lang)} 원서 ${esc(m ? ofnLab(m[1]) : '각주')}${o.pg ? ` · 원서 ${esc(o.pg)}쪽` : ''}</p><p>${oHtml(o.t.replace(/^\[\^[^\]]+\]:\s*/, ''))}</p>`;
     if (R.parMode === 'para' && wide) { fp.classList.add('par-k'); fp.after(box); }
     else { let t = fp; while (t.nextElementSibling && t.nextElementSibling.dataset && t.nextElementSibling.dataset.pg === fp.dataset.pg && !t.nextElementSibling.classList.contains('fn') && t.nextElementSibling.matches('figure, .r-tbl')) t = t.nextElementSibling; t.after(box); }
     shown++;
@@ -2813,17 +2813,20 @@ function parFnAdd(pop, koN, origN, koPg) {
   const lang = { en: '영어', my: '미얀마어', pi: '빠알리어', th: '태국어' }[D.lang] || D.lang;
   const m = O[i].t.match(/^\[\^([^\]]+)\]:\s*/), on = m ? m[1] : '';
   const box = document.createElement('div'); box.className = 'fnpop-or'; box.lang = D.lang;
-  box.innerHTML = `<div class="fnpop-oh">${esc(lang)} 원서 각주 ${esc(on)}${O[i].pg ? ` · 원서 ${esc(O[i].pg)}쪽` : ''}</div><p>${boldMark(esc(O[i].t.replace(/^\[\^[^\]]+\]:\s*/, '')))}</p>`;
+  box.innerHTML = `<div class="fnpop-oh">${esc(lang)} 원서 ${esc(ofnLab(on))}${O[i].pg ? ` · 원서 ${esc(O[i].pg)}쪽` : ''}</div><p>${boldMark(esc(O[i].t.replace(/^\[\^[^\]]+\]:\s*/, '')))}</p>`;
   pop.appendChild(box);
 }
+// 원서 주 번호 이름: 'e12' 는 미주 12 (DL-0034 개정 2판 — 쪽 아래 각주와 장 끝 미주가 따로 번호, 2026-11-22)
+function ofnLab(n) { return /^e\d+$/.test(n) ? '미주 ' + n.slice(1) : '각주 ' + n; }
+function ofnSup(n) { return /^e\d+$/.test(n) ? n.slice(1) : n; }
 document.addEventListener('click', e => {
   const sup = e.target.closest && e.target.closest('.par-fn[data-ofn]');
   if (!sup) return;
   e.preventDefault(); e.stopPropagation();
   const old = document.getElementById('fnPop'); if (old) old.remove();
   const n = sup.dataset.ofn, lang = { en: '영어', my: '미얀마어', pi: '빠알리어', th: '태국어' }[(R && R.parD || {}).lang] || '';
-  const pop = document.createElement('div'); pop.id = 'fnPop'; pop.setAttribute('role', 'dialog'); pop.setAttribute('aria-label', lang + ' 원서 각주 ' + n);
-  pop.innerHTML = `<div class="fnpop-h">${esc(lang)} 원서 각주 ${esc(n)}<button class="fnpop-x" aria-label="닫기">✕</button></div>`;
+  const pop = document.createElement('div'); pop.id = 'fnPop'; pop.setAttribute('role', 'dialog'); pop.setAttribute('aria-label', lang + ' 원서 ' + ofnLab(n));
+  pop.innerHTML = `<div class="fnpop-h">${esc(lang)} 원서 ${esc(ofnLab(n))}<button class="fnpop-x" aria-label="닫기">✕</button></div>`;
   parFnAdd(pop, null, n);
   const box = pop.querySelector('.fnpop-or'); if (box) box.querySelector('.fnpop-oh').remove(), box.classList.add('only'); else pop.insertAdjacentHTML('beforeend', '<p class="muted">원서 각주를 찾지 못했습니다.</p>');
   // 짝지은 한국어 각주
