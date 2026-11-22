@@ -34,9 +34,9 @@
       "lang": "en",
       "title": "The Workings of Kamma",
       "by": "The Pa-Auk Tawya Sayadaw",
-      "edition": "© 2007 · 'A GIFT – NOT FOR SALE' (법보시판, public domain) · 웹판 PDF (504쪽)",
+      "edition": "",
       "url": "https://dhammatalks.net/Books8/Pa_Auk_Workings_of_Kamma.pdf",
-      "note": "한국어판은 싱가폴 PMAC 영문 개정판을 옮김(일러두기) — 대조한 원서는 2007 웹판이라 글이 조금 다를 수 있음. 원서 미주를 한국어판은 일부만 각주로 옮김. 원서의 표는 한국어판처럼 그림이라 대조하지 않음."
+      "note": ""
     }
   ],
   "originals": [
@@ -44,11 +44,13 @@
       "lang": "영어",
       "mode": "file",
       "url": "orig/DL-0034/DL-0034_원서_영어.pdf",
+      "site": "",
       "sources": [
-        "https://dhammatalks.net/Books8/Pa_Auk_Workings_of_Kamma.pdf"
+        "https://www.paaukthailand.org/wp-content/uploads/2022/05/1PAS-02-The-Workings-of-Kamma-2nd-Rev-Ed-pamc-032018.pdf"
       ]
     }
   ],
+  "braille": [],
   "series": "",
   "main": [],
   "topics": [
