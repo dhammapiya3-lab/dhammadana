@@ -1,0 +1,399 @@
+[
+ {
+  "img": "images/11-King-Nandiya-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     320,
+     600,
+     416
+    ],
+    "ko": "난디야의 공덕\n마하깟사빠 장로의 길",
+    "cover": [
+     216,
+     177,
+     118
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-King-Nandiya-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     192,
+     27,
+     620,
+     85
+    ],
+    "ko": "부처님께서는 엄격한 두타행이 재가자의\n가장 큰 보시보다 뛰어나다고 가르치셨습니다.",
+    "cover": [
+     222,
+     188,
+     131
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     94,
+     386,
+     308,
+     426
+    ],
+    "ko": "재가의 안락: 궁전,\n맛있는 음식, 비단옷",
+    "cover": [
+     226,
+     190,
+     137
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     492,
+     386,
+     718,
+     426
+    ],
+    "ko": "두타행의 청정: 무덤가,\n발우, 분소의",
+    "cover": [
+     224,
+     191,
+     140
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-King-Nandiya-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     478,
+     94,
+     724,
+     250
+    ],
+    "ko": "와사바 존자의 고행에 감동한\n부유한 재가자가 빠두뭇따라\n부처님 발아래서 서원을 세웁니다.\n부처님께서 예언하십니다.\n“10만 겁 뒤 이 사람은 고따마\n부처님 아래에서 두타행 제일\n마하깟사빠가 되리라.”",
+    "cover": [
+     226,
+     196,
+     141
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-King-Nandiya-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     237,
+     354,
+     563,
+     434
+    ],
+    "ko": "여러 생 뒤, 가사를 꿰매기 힘들어하는\n벽지불을 만나 망설임 없이 윗옷을\n올렸습니다. 이 작은 보시가 큰 업의\n씨앗이 됩니다.",
+    "cover": [
+     227,
+     194,
+     137
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-King-Nandiya-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     84,
+     308,
+     244
+    ],
+    "ko": "바라나시 가까이에서 난디야로\n다시 태어난 그는 세상일을 하지\n않았습니다. 큰일을 할 운명이었습니다.\n\n한 귀족의 집에서 쉬던 그는\n자기 창자가 잠부디빠 대륙 전체를\n휘감는 꿈을 꿉니다. 곧 큰 왕위에\n오르리라는 예언이었습니다.",
+    "cover": [
+     223,
+     193,
+     137
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-King-Nandiya-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     244,
+     39,
+     560,
+     101
+    ],
+    "ko": "바라나시 왕이 후사 없이 죽었습니다.\n대신들은 알맞은 왕을 찾으려고\n풋사라타(왕의 수레)를 내보냈습니다.",
+    "cover": [
+     215,
+     184,
+     117
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     160,
+     117,
+     276,
+     146
+    ],
+    "ko": "1. 왕의 표지를 실음",
+    "cover": [
+     214,
+     184,
+     120
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     486,
+     203,
+     594,
+     234
+    ],
+    "ko": "2. 동문을 나감",
+    "cover": [
+     215,
+     187,
+     126
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     238,
+     326,
+     360,
+     357
+    ],
+    "ko": "3. 알맞은 이를 찾음",
+    "cover": [
+     215,
+     188,
+     128
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-King-Nandiya-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     164,
+     372,
+     644,
+     432
+    ],
+    "ko": "신성한 수레는 왕궁 정원의 돌판 위에서 잠든 난디야를 찾았습니다.\n그의 큰 공덕을 알아본 수레가 그의 둘레를 돌았습니다. 대신들은\n난디야를 깨워 곧바로 왕관과 바라나시 나라를 바쳤습니다.",
+    "cover": [
+     211,
+     179,
+     120
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-King-Nandiya-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     228,
+     35,
+     576,
+     88
+    ],
+    "ko": "작은 겨자씨에서 큰 반얀나무가 자라듯\n깨끗한 공덕은 크게 불어납니다.",
+    "cover": [
+     207,
+     177,
+     117
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     78,
+     341,
+     211,
+     373
+    ],
+    "ko": "원인: 천 한 벌",
+    "cover": [
+     208,
+     178,
+     117
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     613,
+     390,
+     778,
+     429
+    ],
+    "ko": "결과: 소원 나무\n(깝빠룩카) 64그루",
+    "cover": [
+     206,
+     177,
+     123
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-King-Nandiya-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     254,
+     228,
+     432,
+     426
+    ],
+    "ko": "큰 재산을 지녔지만 왕비는\n난디야에게 무상을\n일깨웠습니다.\n\n앞날을 대비하여 그녀는\n꽃을 하늘로 던졌습니다.\n꽃은 신기하게 히말라야로\n날아가 벽지불 오백 분을\n궁전으로 모시는 사자가\n되었습니다.",
+    "cover": [
+     205,
+     175,
+     119
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-King-Nandiya-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     258,
+     309,
+     544,
+     423
+    ],
+    "ko": "평생 벽지불을 모신 난디야 왕과\n왕비는 죽음을 피할 수 없음을\n깨닫고 나라를 내려놓고 출가하여\n깊은 선정(jhāna)에 들었습니다.",
+    "cover": [
+     201,
+     168,
+     120
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/11-King-Nandiya-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     264,
+     316,
+     544,
+     428
+    ],
+    "ko": "업의 대서사시는 고따마 부처님 시대에\n끝납니다. 난디야는 마하깟사빠로,\n왕비는 밧다까삘라니로 태어났습니다.\n\n옛 서원을 이루어 마하깟사빠는\n두타행(dhutaṅga) 제일의 제자가 됩니다.",
+    "cover": [
+     200,
+     168,
+     116
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
