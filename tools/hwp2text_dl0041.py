@@ -252,6 +252,8 @@ for t, n, j in subs:
     toc.append(dict(title=t, page=idx[n] + 1, sub=True, **({'at': t[:20]} if j > 0 else {})))
 pos = {(t, idx[n] + 1): j for t, n, j in chapters + subs}
 toc.sort(key=lambda x: (x['page'], pos.get((x['title'], x['page']), 0), x['sub']))
+for x in toc:   # 목차 이름만 '삼귀의'로 — 본문의 인쇄된 '삼 귀 의' 줄은 그대로 (운영자 요청, 2026-11-23)
+    if x['title'] == '삼 귀 의': x['title'] = '삼귀의'
 
 body = ''
 for n in order:
