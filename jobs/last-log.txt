@@ -18,8 +18,9 @@ Four-Rich-Men 01-Jotika-the-Householder 15 장
 Four-Rich-Men 02-Mendaka-the-Householder 15 장
 Four-Rich-Men 03-Jatila-the-Treasurer 12 장
 Four-Rich-Men 04-Kalavaliya-the-Treasurer 13 장
+Jatakamala 28-Ksantivadin 15 장
 자동 검수: 문제 의심 3 곳
-R2 에 올림: 723 개 / 한글판 이야기 287 편
+R2 에 올림: 753 개 / 한글판 이야기 288 편
 새 그림책: 올린 그림 0 장
 공개 주소 확인: 200 1380409바이트
 이야기 Foremost-Nuns/01-Maha-Pajapati-Gotami {'pdf': 42632700, 'zip': 42352652, 'n': 30}
@@ -41,8 +42,10 @@ R2 에 올림: 723 개 / 한글판 이야기 287 편
 이야기 Four-Rich-Men/03-Jatila-the-Treasurer {'pdf': 17835020, 'zip': 17565066, 'n': 12}
 이야기 Four-Rich-Men/04-Kalavaliya-the-Treasurer {'pdf': 18125608, 'zip': 17851521, 'n': 13}
 책 Four-Rich-Men {'pdf': 70740120, 'pdfs': 7381108, 'zip': 70463899, 'stories': 4, 'n': 55}
-내려받기 파일: 19 묶음 새로 만듦
-글로 보기: 287 이야기
+이야기 Jatakamala/28-Ksantivadin {'pdf': 17044666, 'zip': 16766985, 'n': 15}
+책 Jatakamala {'pdf': 374443258, 'pdfs': 37586367, 'zip': 374035352, 'stories': 28, 'n': 410}
+내려받기 파일: 21 묶음 새로 만듦
+글로 보기: 288 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
