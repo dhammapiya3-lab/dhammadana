@@ -1,0 +1,627 @@
+[
+ {
+  "img": "images/14-Princess-Kancanadevi-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     198,
+     30,
+     608,
+     156
+    ],
+    "ko": "깐짜나데위 공주의\n신심과 해탈\n\n덕과 기적, 궁극의 해탈 이야기\n신심과 법의 힘을 전하는 빠알리 전승에서",
+    "cover": [
+     235,
+     221,
+     187
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     484,
+     37,
+     782,
+     75
+    ],
+    "ko": "빳따마하 축제",
+    "cover": [
+     231,
+     212,
+     172
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     484,
+     75,
+     782,
+     215
+    ],
+    "ko": "데와뿟따나가라 사람들이 부처님의\n돌 발우를 기리는 이레 축제를 열었습니다.\n흰 말 네 마리가 끄는 수레가 사리를\n모시고 행진했고, 이레째에는\n큰 법회를 열 정자를 세웠습니다.",
+    "cover": [
+     234,
+     215,
+     178
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     152,
+     318,
+     656,
+     352
+    ],
+    "ko": "애욕이 폭력으로",
+    "cover": [
+     236,
+     221,
+     188
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     152,
+     352,
+     656,
+     424
+    ],
+    "ko": "모습을 숨긴 나가 왕이 법을 듣던 처녀에게 반했습니다.\n그녀가 돌아보지 않자 화가 나 뱀이 되어 그녀를 휘감았지만,\n깊은 집중에 보호받은 그녀는 아무 해도 입지 않았습니다.",
+    "cover": [
+     237,
+     222,
+     192
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     10,
+     568,
+     77
+    ],
+    "ko": "진실의 서원(삿짜끼리야)\n새벽에 그녀는 나가를 묶으려고 진실의 서원을\n하며 다섯 가지 진실을 선언했습니다.",
+    "cover": [
+     237,
+     218,
+     179
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     324,
+     111,
+     480,
+     154
+    ],
+    "ko": "1. 온전한 범행",
+    "cover": [
+     237,
+     217,
+     176
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     534,
+     199,
+     688,
+     243
+    ],
+    "ko": "2. 그의 애욕을\n단호히 물리침",
+    "cover": [
+     237,
+     216,
+     175
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     490,
+     323,
+     646,
+     371
+    ],
+    "ko": "3. 해치려는 이에게\n성냄이 전혀 없음",
+    "cover": [
+     237,
+     216,
+     176
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     160,
+     323,
+     320,
+     371
+    ],
+    "ko": "4. 법에 대한\n깊은 공경",
+    "cover": [
+     236,
+     215,
+     175
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     108,
+     199,
+     264,
+     243
+    ],
+    "ko": "5. 설법의 한 마디도\n놓치지 않은 마음",
+    "cover": [
+     237,
+     218,
+     179
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     64,
+     276,
+     94
+    ],
+    "ko": "덕의 힘",
+    "cover": [
+     227,
+     208,
+     167
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     44,
+     94,
+     276,
+     200
+    ],
+    "ko": "그녀의 진실에 나가의 분노가\n사라졌습니다. 나가는 머리 백 개로\n그녀를 가리고 물을 부어 공경했고,\n사람들은 18꼬띠의 재물을 바쳤습니다.\n믿음만 한 벗은 세상에 없습니다.",
+    "cover": [
+     232,
+     214,
+     174
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     148,
+     325,
+     652,
+     355
+    ],
+    "ko": "세상 속의 내려놓음",
+    "cover": [
+     233,
+     213,
+     175
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     96,
+     355,
+     704,
+     421
+    ],
+    "ko": "큰 재물을 얻었지만 처녀는 세상의 욕망에 물들지 않았습니다.\n평생 범행을 지키며 삼보에 헌신한 너그러운 재가 신자로 살았고,\n평화롭게 세상을 떠나자 그 덕이 특별한 다시 태어남을 마련했습니다.",
+    "cover": [
+     233,
+     214,
+     175
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     474,
+     48,
+     778,
+     80
+    ],
+    "ko": "기적 같은 다시 태어남",
+    "cover": [
+     237,
+     215,
+     173
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     474,
+     80,
+     778,
+     186
+    ],
+    "ko": "그녀는 첫째 왕비의 태에 들었습니다.\n열 달 뒤 태어나자 기적처럼 보석 비가\n내려 데와뿟따나가라를 덮었습니다.\n깐짜나데위 공주라 이름 지어진 그녀의\n빛나는 모습은 지난 신심의 힘이 빚은\n것이었습니다.",
+    "cover": [
+     236,
+     215,
+     173
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     39,
+     614,
+     71
+    ],
+    "ko": "공덕의 모습",
+    "cover": [
+     234,
+     213,
+     171
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     196,
+     71,
+     614,
+     119
+    ],
+    "ko": "깐짜나데위의 몸에는 지난 생의\n영적 깨끗함이 그대로 나타났습니다.",
+    "cover": [
+     234,
+     213,
+     172
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     48,
+     179,
+     280,
+     271
+    ],
+    "ko": "푸른 연꽃의 숨결:\n입에서 저절로 달콤한\n꽃향기가 났습니다.",
+    "cover": [
+     233,
+     213,
+     172
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     544,
+     179,
+     760,
+     271
+    ],
+    "ko": "전단향 내음:\n몸에서 맑고 짙은\n향기가 났습니다.",
+    "cover": [
+     234,
+     213,
+     171
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     268,
+     362,
+     536,
+     434
+    ],
+    "ko": "해의 빛:\n살갗이 밝게 빛나 등불이\n필요 없었습니다.",
+    "cover": [
+     234,
+     213,
+     172
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     18,
+     606,
+     50
+    ],
+    "ko": "마지막 선택",
+    "cover": [
+     236,
+     218,
+     178
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     206,
+     51,
+     606,
+     136
+    ],
+    "ko": "그녀의 아름다움은 잠부디빠에 널리 알려졌습니다.\n먼 나라 왕들이 그녀를 신부로 맞으려고 값진 예물을\n보냈습니다. 다섯 가지 감각적 즐거움에 물들지 않고\n왕위의 공허함을 안 깐짜나데위는 아버지에게\n출가를 허락해 달라고 청했습니다.",
+    "cover": [
+     237,
+     219,
+     180
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     34,
+     311,
+     254,
+     341
+    ],
+    "ko": "죽음 없음을 얻다",
+    "cover": [
+     236,
+     222,
+     190
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     34,
+     341,
+     254,
+     422
+    ],
+    "ko": "비구니가 된 깐짜나데위는\n위빳사나를 부지런히 닦아\n곧 아라한과와 사무애해를\n얻고 윤회를 끝냈습니다.",
+    "cover": [
+     237,
+     222,
+     188
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/14-Princess-Kancanadevi-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     50,
+     604,
+     100
+    ],
+    "ko": "지혜의 길",
+    "cover": [
+     232,
+     205,
+     158
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     200,
+     100,
+     604,
+     240
+    ],
+    "ko": "깨끗한 계(sīla)는 저절로 세상의 복과 큰 아름다움과\n많은 재물을 낳지만, 이 보상은 덧없습니다.\n공덕의 궁극의 목적은 덧없는 왕실의 즐거움을 누리는\n것이 아니라 참된 해탈에 필요한 계율을 닦는 것입니다.\n선업에 게으르지 마십시오.",
+    "cover": [
+     235,
+     208,
+     164
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     76,
+     380,
+     328,
+     424
+    ],
+    "ko": "세상의 보상",
+    "cover": [
+     232,
+     204,
+     157
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     472,
+     380,
+     724,
+     424
+    ],
+    "ko": "궁극의 해탈",
+    "cover": [
+     232,
+     203,
+     156
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
