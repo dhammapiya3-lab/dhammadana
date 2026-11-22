@@ -1,0 +1,628 @@
+[
+ {
+  "img": "images/16-Deliverance-and-Gratitude-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     210,
+     696,
+     364
+    ],
+    "ko": "구원의 널빤지\n은혜와 덕이 지닌 업의 힘 이야기",
+    "cover": [
+     240,
+     230,
+     202
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     327,
+     760,
+     434
+    ],
+    "ko": "북쪽 나라로 가던 두 나그네가 뙤약볕을 피해 나무 아래서 쉬었습니다.\n한 사람은 구장 잎을 씹으며 더위를 달래고 있었습니다.",
+    "cover": [
+     238,
+     229,
+     199
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     344,
+     264,
+     772,
+     424
+    ],
+    "ko": "지치고 목마른 다른 나그네가\n물을 청했습니다. “물은 없소.”\n앞사람이 대답했습니다. “그럼 구장 잎\n하나만 나눠 주시오.” 목마른 이가\n부탁했지만 또 거절당했습니다.",
+    "cover": [
+     239,
+     231,
+     210
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     32,
+     327,
+     768,
+     434
+    ],
+    "ko": "애가 탄 목마른 이가 4까하빠나를 내놓자 그제야 앞사람이\n구장 잎 한 장을 건넸습니다. 잎을 씹어 목마름을 달랜 그에게\n뜻밖의 인연이 맺어졌습니다.",
+    "cover": [
+     239,
+     229,
+     203
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     20,
+     680,
+     156
+    ],
+    "ko": "이레 뒤, 두 사람은 바다 멀리 나간 한 상선에 함께\n타고 있었습니다. 재앙이 닥쳤습니다. 배가 부서져\n선원들은 바다와 물고기와 거북에게 내맡겨졌습니다.",
+    "cover": [
+     240,
+     233,
+     209
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     32,
+     327,
+     768,
+     434
+    ],
+    "ko": "구장 잎을 산 사람은 작은 널빤지에 매달려 살아남았습니다.\n곧 그는 붙잡을 것 하나 없이 지쳐 가라앉는\n다른 나그네를 보았습니다.",
+    "cover": [
+     238,
+     227,
+     200
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     20,
+     680,
+     156
+    ],
+    "ko": "그는 구장 잎을 떠올렸습니다. 값을 치렀지만 그 잎이\n목마름을 덜어 주었습니다. 그때의 고마움을 깊이 새긴\n그는 하나뿐인 널빤지를 가라앉는 이에게 내주었습니다.",
+    "cover": [
+     238,
+     231,
+     204
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     364,
+     259,
+     774,
+     419
+    ],
+    "ko": "덕 있는 사람이 가라앉기 시작하자\n바다의 여신 마니메칼라가 그의 희생을\n보았습니다. 깊은 은혜와 선함에\n감동한 여신은 그를 도우러 내려왔습니다.",
+    "cover": [
+     236,
+     229,
+     202
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     20,
+     680,
+     156
+    ],
+    "ko": "여신은 신통으로 덕 있는 사람을 바닷가로 데려갔습니다.\n놀랍게도 덕 있는 사람의 행위가 지닌 공덕 덕분에\n다른 나그네도 무사히 뭍에 닿았습니다.",
+    "cover": [
+     236,
+     229,
+     201
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     464,
+     67,
+     772,
+     395
+    ],
+    "ko": "널빤지에 매달린 사람이\n도착해 보니, 자기를 살린\n이가 벌써 바닷가에 있어\n깜짝 놀랐습니다. “어떻게\n나보다 먼저 왔소?”\n그가 물었습니다. 여신이\n모습을 드러내어 두 사람을\n살린 보이지 않는 힘을\n밝혀 주었습니다.",
+    "cover": [
+     237,
+     223,
+     188
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     308,
+     740,
+     340
+    ],
+    "ko": "구원이 이루어진 방식",
+    "cover": [
+     237,
+     224,
+     194
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     60,
+     340,
+     740,
+     406
+    ],
+    "ko": "산 잎이 은혜를 일깨우고, 은혜가 희생을 낳고,\n희생이 구원의 공덕을 지었습니다.\n동전의 거래가 덕의 거래가 되었습니다.",
+    "cover": [
+     236,
+     223,
+     191
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     51,
+     680,
+     147
+    ],
+    "ko": "신들은 누구를 지켜 주는가?\n여신이 밝힌 다섯 가지 덕의 길",
+    "cover": [
+     240,
+     229,
+     198
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     256,
+     163,
+     736,
+     203
+    ],
+    "ko": "1. 부모를 모심",
+    "cover": [
+     240,
+     229,
+     197
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     256,
+     213,
+     736,
+     253
+    ],
+    "ko": "2. 부처님과 담마와 상가에 귀의함",
+    "cover": [
+     241,
+     229,
+     200
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     256,
+     262,
+     736,
+     302
+    ],
+    "ko": "3. 계를 지킴",
+    "cover": [
+     240,
+     229,
+     197
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     256,
+     312,
+     736,
+     352
+    ],
+    "ko": "4. 몸과 말과 마음으로 바르게 행함",
+    "cover": [
+     240,
+     229,
+     199
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     256,
+     362,
+     736,
+     402
+    ],
+    "ko": "5. 흔들림 없는 은혜 앎",
+    "cover": [
+     240,
+     229,
+     197
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     192,
+     60,
+     608,
+     112
+    ],
+    "ko": "갈라진 두 길",
+    "cover": [
+     239,
+     226,
+     196
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 38,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     80,
+     128,
+     396,
+     164
+    ],
+    "ko": "판 사람:",
+    "cover": [
+     238,
+     226,
+     196
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     408,
+     128,
+     724,
+     164
+    ],
+    "ko": "산 사람:",
+    "cover": [
+     237,
+     226,
+     196
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     180,
+     188,
+     396,
+     240
+    ],
+    "ko": "• 오로지 장사로만\n  행동함",
+    "cover": [
+     239,
+     227,
+     196
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     180,
+     260,
+     396,
+     312
+    ],
+    "ko": "• 자기 것을 꽉\n  움켜쥠",
+    "cover": [
+     239,
+     226,
+     196
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     180,
+     332,
+     396,
+     384
+    ],
+    "ko": "• 덕 있는 이 곁에\n  있어 살아남음",
+    "cover": [
+     239,
+     226,
+     198
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     516,
+     188,
+     720,
+     240
+    ],
+    "ko": "• 은혜를 알아\n  행동함",
+    "cover": [
+     239,
+     227,
+     196
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     516,
+     260,
+     720,
+     312
+    ],
+    "ko": "• 하나뿐인 생명줄을\n  내려놓음",
+    "cover": [
+     239,
+     227,
+     196
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     516,
+     332,
+     720,
+     384
+    ],
+    "ko": "• 신의 구원을\n  직접 얻음",
+    "cover": [
+     239,
+     227,
+     198
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     327,
+     764,
+     434
+    ],
+    "ko": "여신의 도움으로 사왓티에 돌아온 두 사람은\n아주 달라졌습니다. 남은 날을 보시하고\n계를 지키며 덕을 닦았습니다.",
+    "cover": [
+     238,
+     225,
+     193
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/16-Deliverance-and-Gratitude-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     404,
+     52,
+     772,
+     416
+    ],
+    "ko": "넓은 바다에서도 작은 선행\n하나가 신의 보호를\n불러옵니다. 자기의 선함을\n결코 무너뜨리지 마십시오.\n덕을 닦는 일에 결코\n게으르지 마십시오.",
+    "cover": [
+     238,
+     225,
+     193
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
