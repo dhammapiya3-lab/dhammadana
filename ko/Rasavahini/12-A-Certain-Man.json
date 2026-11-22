@@ -1,0 +1,461 @@
+[
+ {
+  "img": "images/12-A-Certain-Man-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     144,
+     56,
+     656,
+     104
+    ],
+    "ko": "의도의 연금술",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 36,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     224,
+     108,
+     576,
+     156
+    ],
+    "ko": "업과 보시(dāna), 그리고\n가난한 사람이 내준 옷의 공덕",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     67,
+     292,
+     395
+    ],
+    "ko": "가난한 사람이 빠딸리뿟따\n가까운 마을을 떠납니다.\n가진 것은 소박한 옷 두\n벌뿐이었습니다. 그가 크고\n울창한 숲에 들어서자,\n보이지 않는 도둑이 바짝\n뒤따라왔습니다. 힘으로\n옷을 빼앗을 작정이었습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     328,
+     744,
+     400
+    ],
+    "ko": "그는 자기가 아무 힘도 없음을 깨닫습니다. 싸워 이길 수도, 달아날 수도\n없습니다. 옷은 끝내 억지로 빼앗길 것이고, 그 잃음은 아무 뜻이 없을 것입니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     460,
+     67,
+     736,
+     99
+    ],
+    "ko": "빼앗김 = 뜻 없는 괴로움",
+    "cover": [
+     254,
+     254,
+     253
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     404,
+     207,
+     736,
+     235
+    ],
+    "ko": "기꺼이 줌 = 공덕과 앞날의 평화",
+    "cover": [
+     254,
+     254,
+     253
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     56,
+     327,
+     744,
+     402
+    ],
+    "ko": "도둑맞는 괴로움 대신 그는 마음을 크게 돌렸습니다.\n옷을 기꺼이 내주기로 마음먹어, 폭력의 순간을\n보시(dāna)의 행위로 바꾸었습니다.",
+    "cover": [
+     255,
+     255,
+     254
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     24,
+     624,
+     100
+    ],
+    "ko": "그는 깨끗한 마음으로 하나뿐인 옷을 도둑에게 내주며\n속으로 다짐했습니다. “이 보시가 앞날의 행복과\n재물의 바탕이 되기를.” 보시가 이루어졌습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     404,
+     43,
+     756,
+     263
+    ],
+    "ko": "옷을 잃은 그는 큰길을 벗어나\n험하고 수풀 우거진 길로\n들어섰습니다. 거기서 독사에게\n물려 그 자리에서 세상의\n삶을 마쳤습니다.",
+    "cover": [
+     255,
+     255,
+     254
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     32,
+     364,
+     768,
+     428
+    ],
+    "ko": "마지막 행위의 깨끗한 의도에 힘입어 그는 곧바로 장엄한 히말라야\n지역에 태어나 헤아릴 수 없는 하늘의 재물과 하늘의 벗들을 얻었습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     71,
+     276,
+     131
+    ],
+    "ko": "위따네히: 깨끗하고\n아름답게 꾸민 차양",
+    "cover": [
+     246,
+     245,
+     241
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     592,
+     103,
+     748,
+     159
+    ],
+    "ko": "딥바왓타니: 바람에\n나부끼는 하늘의 옷",
+    "cover": [
+     245,
+     245,
+     241
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     224,
+     323,
+     696,
+     357
+    ],
+    "ko": "수라빠다빠: 3요자나 둘레에 돋아난 소원 나무",
+    "cover": [
+     247,
+     247,
+     242
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     112,
+     375,
+     696,
+     423
+    ],
+    "ko": "소박한 천 한 벌의 보시가 12요자나의 큰 황금 궁전으로\n나타났습니다. 깨끗한 차양과 끝없이 베푸는 소원 나무까지.",
+    "cover": [
+     246,
+     245,
+     241
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     32,
+     44,
+     768,
+     100
+    ],
+    "ko": "이 하늘 궁전에서 그는 끝없이 기뻐합니다. 수많은 하늘 시종들의 노래와\n춤과 음악을 즐기며, 깨끗한 생각 하나가 맺은 달콤한 열매를 누립니다.",
+    "cover": [
+     248,
+     248,
+     244
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     343,
+     660,
+     427
+    ],
+    "ko": "업을 불리는 힘: 보상을 정하는 것은 물건의 값이 아니라\n마음의 깨끗함입니다. 깨끗한 의도를 거친 소박한 보시는\n끝없는 하늘의 힘을 낳습니다.",
+    "cover": [
+     241,
+     241,
+     236
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     60,
+     360,
+     100
+    ],
+    "ko": "알맞지 않은 밭",
+    "cover": [
+     241,
+     241,
+     236
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     460,
+     60,
+     764,
+     100
+    ],
+    "ko": "알맞은 밭",
+    "cover": [
+     241,
+     241,
+     236
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     36,
+     364,
+     364,
+     416
+    ],
+    "ko": "밭이 아닌 이(도둑)에게 그저 내려놓은\n보시도 12요자나 황금 궁전을 낳았습니다.",
+    "cover": [
+     239,
+     238,
+     233
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     444,
+     364,
+     768,
+     416
+    ],
+    "ko": "그렇다면 덕이 깨끗한 알맞은 밭에\n마음 내어 베푼 보시의 열매는 얼마나 크겠습니까?",
+    "cover": [
+     239,
+     239,
+     233
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/12-A-Certain-Man-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     76,
+     67,
+     724,
+     167
+    ],
+    "ko": "궁극의 가르침: 마음을 깨끗이 하고 덕 있는 이에게 아낌없이\n베푸십시오. 완전한 복밭에 씨앗을 뿌리면 놀라운 복을 얻고\n해탈의 길을 걷게 됩니다.",
+    "cover": [
+     241,
+     236,
+     221
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
