@@ -1,0 +1,656 @@
+[
+ {
+  "img": "images/18-Marutta-and-His-Dog-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     112,
+     192,
+     340,
+     280
+    ],
+    "ko": "바라문 마룻따의\n충직한 개",
+    "cover": [
+     251,
+     234,
+     209
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     464,
+     192,
+     688,
+     280
+    ],
+    "ko": "자비와 충직함과\n용서의 이야기",
+    "cover": [
+     252,
+     236,
+     212
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     412,
+     59,
+     764,
+     99
+    ],
+    "ko": "자비의 씨앗",
+    "cover": [
+     242,
+     231,
+     203
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     412,
+     99,
+     764,
+     211
+    ],
+    "ko": "옛날 잠부디빠에서 바라문 마룻따는 심한\n피부병을 앓는 떠돌이 개를 만났습니다.\n깊은 연민으로 푸른 약초를 빻아 개를\n고쳐 주었습니다. 그 친절을 잊지 않은 개는\n결코 그의 곁을 떠나지 않겠다고 다짐했습니다.",
+    "cover": [
+     241,
+     232,
+     205
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     186,
+     128,
+     622,
+     172
+    ],
+    "ko": "무너진 행복",
+    "cover": [
+     241,
+     227,
+     192
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     186,
+     176,
+     622,
+     352
+    ],
+    "ko": "곧 마룻따의 집에 비극이 닥쳤습니다.\n아내가 아이를 낳다가 큰 탈이 나서\n뱃속의 아이가 죽었고, 아내를 살리려고\n힘겨운 처치를 해야 했습니다.\n깊은 슬픔에 마음이 무너진 마룻따는\n세상의 삶에 대한 모든 바람을 잃었습니다.",
+    "cover": [
+     242,
+     227,
+     193
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     243,
+     480,
+     307
+    ],
+    "ko": "출가의 길",
+    "cover": [
+     240,
+     224,
+     190
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     28,
+     299,
+     474,
+     427
+    ],
+    "ko": "재산을 버린 마룻따는 깊은 숲으로\n들어가 고요히 명상하는 수행자가\n되었습니다. 충직한 개는 그를 따라\n숲으로 가서 그의 하나뿐인 벗이자\n파수꾼이 되었습니다.",
+    "cover": [
+     240,
+     225,
+     192
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     360,
+     104,
+     756,
+     160
+    ],
+    "ko": "앙심의 뿌리",
+    "cover": [
+     243,
+     229,
+     197
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     360,
+     168,
+     756,
+     400
+    ],
+    "ko": "마을에 남은 마룻따의 아내는\n새 정인을 두었습니다. 자기를 버리고\n떠난 남편을 원망하며 마음이\n검게 물든 그녀는 새 사내와 함께\n음모를 꾸미며 속삭였습니다.\n“숲에 가서 그 수행자를 죽여요.”",
+    "cover": [
+     243,
+     231,
+     199
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     59,
+     356,
+     107
+    ],
+    "ko": "숲속의 자객",
+    "cover": [
+     237,
+     223,
+     188
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     30,
+     111,
+     356,
+     223
+    ],
+    "ko": "무거운 활과 화살통을 멘 악한\n사내가 숲으로 숨어들었습니다.\n수행자가 열매를 따러 간 사이\n자객은 우거진 수풀에 숨어\n그가 돌아오면 쏘려고 기다렸습니다.",
+    "cover": [
+     238,
+     223,
+     189
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     32,
+     316,
+     768,
+     360
+    ],
+    "ko": "말없는 수호자",
+    "cover": [
+     236,
+     220,
+     186
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     32,
+     360,
+     768,
+     436
+    ],
+    "ko": "눈치 빠른 개는 다가오는 위험을 알아챘습니다. 자객이 한눈파는 사이\n충직한 개는 살금살금 다가가 팽팽한 활시위를 소리 없이 물어 끊었습니다.\n자객이 시위를 다시 맬 때마다 개는 또 끊어 버렸습니다.",
+    "cover": [
+     237,
+     221,
+     188
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     408,
+     55,
+     740,
+     99
+    ],
+    "ko": "사나운 방어",
+    "cover": [
+     235,
+     219,
+     185
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     408,
+     101,
+     740,
+     227
+    ],
+    "ko": "활이 쓸모없게 되자 악당은 돌아오는\n수행자에게 덤벼들었습니다. 그 순간\n개가 뛰어올라 자객의 발을 물어\n땅에 넘어뜨리고 주인을 사납게 지켜\n자객을 꼼짝 못 하게 했습니다.",
+    "cover": [
+     236,
+     217,
+     185
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     72,
+     452,
+     120
+    ],
+    "ko": "자비의 고리",
+    "cover": [
+     240,
+     225,
+     193
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     56,
+     124,
+     452,
+     240
+    ],
+    "ko": "소란을 듣고 수행자가 다가왔습니다.\n자기를 죽이려던 자에게 화를 내는 대신\n연민이 가득 찼습니다. 개를 부드럽게\n물리고 피 흘리는 상처를 감싸 주고\n기운을 차리도록 먹여 주었습니다.",
+    "cover": [
+     239,
+     225,
+     192
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     331,
+     720,
+     375
+    ],
+    "ko": "영적인 해탈",
+    "cover": [
+     243,
+     232,
+     200
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     80,
+     375,
+     720,
+     437
+    ],
+    "ko": "이 용서로 마음을 온전히 깨끗이 한 수행자는\n깊은 선정과 신통을 얻고, 목숨을 마치자 범천의 세계에 태어났습니다.",
+    "cover": [
+     245,
+     233,
+     202
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     32,
+     712,
+     72
+    ],
+    "ko": "자비가 낳은 업의 사슬",
+    "cover": [
+     236,
+     220,
+     188
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     100,
+     70,
+     712,
+     100
+    ],
+    "ko": "한 번의 자비가 덕의 방패가 됩니다.",
+    "cover": [
+     237,
+     220,
+     190
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     356,
+     128,
+     496,
+     170
+    ],
+    "ko": "수행자가\n개를 고침",
+    "cover": [
+     236,
+     220,
+     188
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     364,
+     200,
+     492,
+     244
+    ],
+    "ko": "개가 은혜를\n새김",
+    "cover": [
+     236,
+     219,
+     188
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     364,
+     268,
+     492,
+     312
+    ],
+    "ko": "개가 자객을\n무력하게 함",
+    "cover": [
+     236,
+     220,
+     189
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     364,
+     336,
+     492,
+     380
+    ],
+    "ko": "수행자가 살아나\n용서함",
+    "cover": [
+     237,
+     221,
+     191
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     364,
+     404,
+     492,
+     444
+    ],
+    "ko": "수행자가\n해탈함",
+    "cover": [
+     237,
+     220,
+     189
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     304,
+     107,
+     498,
+     175
+    ],
+    "ko": "은혜를 아는\n지혜",
+    "cover": [
+     244,
+     227,
+     193
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     304,
+     203,
+     498,
+     387
+    ],
+    "ko": "“개는 받은 친절을\n기억하여 은혜를\n갚았습니다. 적을 쓰러뜨려\n수행자의 목숨을 구했습니다.\n짐승도 선행의 가치를\n압니다. 그러니 지혜로운\n이는 모두 은혜를\n닦으십시오.”",
+    "cover": [
+     243,
+     227,
+     192
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/18-Marutta-and-His-Dog-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     304,
+     156,
+     498,
+     244
+    ],
+    "ko": "풍요와\n평화의 길",
+    "cover": [
+     243,
+     228,
+     194
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     298,
+     250,
+     502,
+     332
+    ],
+    "ko": "“그대도 바르게 행하십시오.\n자비를 보이고 남을 도우면\n늘 풍요와 평화의\n근원이 됩니다.”",
+    "cover": [
+     243,
+     227,
+     194
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
