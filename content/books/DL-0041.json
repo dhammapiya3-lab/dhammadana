@@ -10,7 +10,7 @@
   "country": [
     "한국"
   ],
-  "provider": "theravada-kr",
+  "provider": "buddhayana",
   "press": false,
   "provider_chip": false,
   "partner_chips": [],
@@ -61,10 +61,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "pdf/DL-0041/DL-0041_초판.pdf"
+        "url": "pdf/DL-0041/DL-0041_초판.pdf",
+        "site": "",
+        "created": ""
       },
       "pdf_print": {
         "mode": "none",
@@ -85,10 +85,10 @@
         "created": ""
       },
       "hwp": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "hwp/DL-0041/DL-0041_초판.hwp"
+        "url": "hwp/DL-0041/DL-0041_초판.hwp",
+        "site": "",
+        "created": ""
       },
       "reader": true,
       "sources": [
