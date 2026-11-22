@@ -1,0 +1,580 @@
+[
+ {
+  "img": "images/17-Ingratitude-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     88,
+     316,
+     712,
+     398
+    ],
+    "ko": "충직함의 덕과 배은망덕의 위험\n배신과 생존, 그리고 우주의 정의 — 불교 문헌의 이야기",
+    "cover": [
+     241,
+     220,
+     168
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Ingratitude-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     224,
+     327,
+     576,
+     367
+    ],
+    "ko": "잘못 든 삶",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     32,
+     365,
+     768,
+     431
+    ],
+    "ko": "부처님 열반 뒤, 가난한 사람이 국경 마을에서 벗을 얻었습니다.\n뒷날 도둑질을 하다 붙잡혀 쇠사슬에 묶인 채\n열두 해를 감옥에서 보냈습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Ingratitude-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     32,
+     32,
+     314,
+     66
+    ],
+    "ko": "충직한 맞바꿈",
+    "cover": [
+     229,
+     180,
+     78
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     32,
+     68,
+     314,
+     204
+    ],
+    "ko": "열두 해 뒤 옛 벗이 감옥에 찾아와\n울며 돕겠다고 했습니다. 제대로 된\n밥 한 끼가 간절했던 죄수는 옥졸을\n설득해 벗이 음식을 가지러 가게\n하고, 자기가 사슬을 두 겹으로 차고\n담보가 되겠다고 했습니다.",
+    "cover": [
+     228,
+     181,
+     88
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Ingratitude-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     280,
+     111,
+     528,
+     143
+    ],
+    "ko": "우정이라는 헛것",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     280,
+     147,
+     528,
+     375
+    ],
+    "ko": "벗은 돌아오지 않았습니다.\n주인공은 쓰라린 진실을\n깨달았습니다.\n• 아름다움과 지성: 덕이\n  없으면 아무 뜻이 없다.\n• 재물: 베풂이 없으면\n  쓸모없다.\n• 우정: 어려울 때 등을\n  돌리면 값어치가 없다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Ingratitude-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     32,
+     302,
+     376,
+     340
+    ],
+    "ko": "외로운 자유",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     32,
+     340,
+     376,
+     424
+    ],
+    "ko": "다시 열두 해 뒤, 왕자가 태어나 왕이\n모든 죄수를 풀어 주었습니다. 문은\n열렸지만 배신당한 그는 쇠약하고\n부끄러웠고, 도와줄 벗이 없었습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Ingratitude-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     442,
+     53,
+     768,
+     91
+    ],
+    "ko": "절박한 식사",
+    "cover": [
+     240,
+     222,
+     170
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     442,
+     91,
+     768,
+     171
+    ],
+    "ko": "굶주림에 몰린 그는 밤에 무서운\n화장터로 숨어들었습니다. 막 죽은 시신을\n찾아 불을 피우고 해골로 화덕을 만들어\n살아남으려 사람의 살을 삶았습니다.",
+    "cover": [
+     240,
+     223,
+     175
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Ingratitude-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     442,
+     50,
+     768,
+     86
+    ],
+    "ko": "신의 목격",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     442,
+     86,
+     768,
+     156
+    ],
+    "ko": "나무 신이 이 일을 보았습니다.\n신: “이 무서운 어둠 속에서 왜\n사람의 살을 삶느냐?”",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     292,
+     332,
+     508,
+     416
+    ],
+    "ko": "사람: “제사도 보시도 아닙니다.\n굶주림만 한 고통은 없습니다.\n굶주림을 없애려고 삶습니다.”",
+    "cover": [
+     238,
+     222,
+     170
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Ingratitude-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     311,
+     600,
+     343
+    ],
+    "ko": "더럽혀진 것을 막다",
+    "cover": [
+     255,
+     255,
+     254
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     230,
+     343,
+     600,
+     427
+    ],
+    "ko": "신이 왜 누더기로 바람을 막느냐고 묻자\n사람이 답했습니다. “배신자 벗에게 닿은\n바람이 내게 닿으면 괴로움뿐이라,\n그의 독을 막으려고 두릅니다.”",
+    "cover": [
+     255,
+     255,
+     254
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Ingratitude-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     552,
+     62,
+     772,
+     96
+    ],
+    "ko": "가장 큰 위험",
+    "cover": [
+     234,
+     196,
+     130
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     552,
+     100,
+     772,
+     420
+    ],
+    "ko": "세상의 위험에는 한계가\n있지만 은혜를 모르는\n사람은 그 모두를 품습니다.\n\n• 왕: 재산을 빼앗음\n• 도둑: 물건을 훔침\n• 불과 물: 집을 무너뜨림\n• 은혜를 모르는 이: 이 모든\n  파멸을 한꺼번에 가져옴.\n  멀리서부터 피해야 합니다.",
+    "cover": [
+     237,
+     198,
+     127
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Ingratitude-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     260,
+     69,
+     548,
+     103
+    ],
+    "ko": "모든 악덕의 뿌리",
+    "cover": [
+     232,
+     195,
+     127
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     254,
+     101,
+     554,
+     141
+    ],
+    "ko": "배은망덕한 이는 덕이 없어\n끝없는 괴로움을 부릅니다.",
+    "cover": [
+     232,
+     196,
+     132
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     240,
+     195,
+     568,
+     287
+    ],
+    "ko": "그와 사귀면 결국 도덕이 무너집니다.\n도둑질, 폭력, 속임, 술 취함,\n끝없는 다툼으로 이어져\n마지막에 큰 불행을 가져옵니다.",
+    "cover": [
+     234,
+     197,
+     130
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Ingratitude-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     272,
+     300,
+     752,
+     336
+    ],
+    "ko": "『길상경』의 메아리",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     272,
+     336,
+     752,
+     428
+    ],
+    "ko": "신은 이 사람의 지혜가 부처님의 가장 높은 가르침과 같음을\n알았습니다. “나는 스승께서 『길상경』을 설하시는 것을\n들었다. 어리석은 이를 멀리하고 지혜로운 이를 가까이하며\n공경할 만한 이를 공경하는 것, 이것이 으뜸가는 길상이다.”",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Ingratitude-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     480,
+     66,
+     752,
+     107
+    ],
+    "ko": "죄수에서 왕으로",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     484,
+     107,
+     748,
+     251
+    ],
+    "ko": "덕을 깊이 아는 그의 마음에 감동한\n신은 그에게 상을 내렸습니다. 하늘의\n궁전으로 데려가 씻기고 하늘의 옷을\n입혀 신의 힘으로 그 나라의 왕위에\n앉혔습니다. 그는 바르게 다스렸습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-Ingratitude-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     340,
+     696,
+     372
+    ],
+    "ko": "지혜로운 이의 길",
+    "cover": [
+     235,
+     214,
+     159
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     96,
+     372,
+     704,
+     442
+    ],
+    "ko": "악하고 배은망덕한 이를 멀리하고, 지혜로운 이와 벗하며\n보시 같은 선행을 하십시오. 그러면 이생의 평화와\n하늘 세계의 큰 행복을 얻습니다.",
+    "cover": [
+     235,
+     214,
+     159
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
