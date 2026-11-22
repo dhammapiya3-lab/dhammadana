@@ -4,9 +4,9 @@ Foremost-Nuns 04-Patacara 30 장
 R2 에 올림: 167 개 / 한글판 이야기 316 편
 새 그림책: 올린 그림 0 장
 공개 주소 확인: 200 1380409바이트
-이야기 Foremost-Nuns/01-Maha-Pajapati-Gotami {'pdf': 42641841, 'zip': 42361793, 'n': 30}
+이야기 Foremost-Nuns/01-Maha-Pajapati-Gotami {'pdf': 42646615, 'zip': 42366567, 'n': 30}
 이야기 Foremost-Nuns/04-Patacara {'pdf': 36893291, 'zip': 36618760, 'n': 30}
-책 Foremost-Nuns {'pdf': 385949530, 'pdfs': 40857640, 'zip': 385596848, 'stories': 13, 'n': 283}
+책 Foremost-Nuns {'pdf': 385954304, 'pdfs': 40857895, 'zip': 385601622, 'stories': 13, 'n': 283}
 내려받기 파일: 3 묶음 새로 만듦
 글로 보기: 316 이야기
 18-Verses-2
