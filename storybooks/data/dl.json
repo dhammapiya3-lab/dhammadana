@@ -182,10 +182,10 @@
 },
 "Foremost-Monks": {
 "n": 802,
-"pdf": 1121599321,
-"pdfs": 118156004,
+"pdf": 1121776526,
+"pdfs": 118192315,
 "stories": 38,
-"zip": 1121056472
+"zip": 1121233679
 },
 "Foremost-Monks/01-Kondanna": {
 "n": 38,
@@ -199,8 +199,8 @@
 },
 "Foremost-Monks/04-Maha-Kassapa": {
 "n": 41,
-"pdf": 57277192,
-"zip": 56998280
+"pdf": 57454398,
+"zip": 57175487
 },
 "Foremost-Monks/05-Anuruddha": {
 "n": 53,
@@ -478,10 +478,10 @@
 },
 "Jataka": {
 "n": 422,
-"pdf": 496446846,
-"pdfs": 50592464,
+"pdf": 496455166,
+"pdfs": 50592930,
 "stories": 32,
-"zip": 496037086
+"zip": 496045406
 },
 "Jataka/001-The-Waterless-Desert": {
 "n": 15,
@@ -560,8 +560,8 @@
 },
 "Jataka/027-Elephant-and-Dog": {
 "n": 13,
-"pdf": 16858461,
-"zip": 16593629
+"pdf": 16863611,
+"zip": 16598779
 },
 "Jataka/028-Nandivisala": {
 "n": 12,
@@ -590,8 +590,8 @@
 },
 "Jataka/034-The-Amorous-Fish": {
 "n": 13,
-"pdf": 15151635,
-"zip": 14882571
+"pdf": 15154805,
+"zip": 14885741
 },
 "Jataka/037-The-Senior-Partridge": {
 "n": 12,
@@ -913,10 +913,10 @@
 },
 "Pannasa": {
 "n": 803,
-"pdf": 1034109228,
-"pdfs": 99473682,
+"pdf": 1034133964,
+"pdfs": 99479229,
 "stories": 50,
-"zip": 1033558441
+"zip": 1033583176
 },
 "Pannasa/01-King-Aditta": {
 "n": 15,
@@ -925,8 +925,8 @@
 },
 "Pannasa/02-Tulakapandita": {
 "n": 15,
-"pdf": 19695165,
-"zip": 19422618
+"pdf": 19719570,
+"zip": 19447023
 },
 "Pannasa/03-Sammajiva": {
 "n": 15,
@@ -990,8 +990,8 @@
 },
 "Pannasa/15-Kambala": {
 "n": 15,
-"pdf": 19736578,
-"zip": 19474180
+"pdf": 19840561,
+"zip": 19578162
 },
 "Pannasa/16-Cowherds-Hut": {
 "n": 13,
@@ -1169,26 +1169,26 @@
 "zip": 18778875
 },
 "Rasavahini": {
-"n": 117,
-"pdf": 122941721,
-"pdfs": 13919730,
-"stories": 9,
-"zip": 122638673
+"n": 259,
+"pdf": 269641980,
+"pdfs": 30800805,
+"stories": 20,
+"zip": 269279369
 },
 "Rasavahini/01-King-Dhammasondaka": {
 "n": 12,
-"pdf": 12429060,
-"zip": 12147553
+"pdf": 12400594,
+"zip": 12119993
 },
 "Rasavahini/02-The-Hunter": {
 "n": 11,
-"pdf": 12322851,
-"zip": 12051235
+"pdf": 12309687,
+"zip": 12032503
 },
 "Rasavahini/03-Three-Characters": {
 "n": 15,
-"pdf": 15276103,
-"zip": 14996747
+"pdf": 15277489,
+"zip": 14988225
 },
 "Rasavahini/04-The-Wise-Buddheni": {
 "n": 11,
@@ -1202,8 +1202,8 @@
 },
 "Rasavahini/06-The-Elder-Sarana": {
 "n": 15,
-"pdf": 16133084,
-"zip": 15856648
+"pdf": 16137724,
+"zip": 15856503
 },
 "Rasavahini/07-Queen-Vessamitta": {
 "n": 15,
@@ -1219,6 +1219,61 @@
 "n": 14,
 "pdf": 12866710,
 "zip": 12580690
+},
+"Rasavahini/10-Rupadevi": {
+"n": 15,
+"pdf": 15153959,
+"zip": 14873985
+},
+"Rasavahini/11-King-Nandiya": {
+"n": 11,
+"pdf": 13159811,
+"zip": 12882876
+},
+"Rasavahini/12-A-Certain-Man": {
+"n": 12,
+"pdf": 13070702,
+"zip": 12792864
+},
+"Rasavahini/13-Prince-Visamaloma": {
+"n": 14,
+"pdf": 13466279,
+"zip": 13182894
+},
+"Rasavahini/14-Princess-Kancanadevi": {
+"n": 11,
+"pdf": 13290040,
+"zip": 13007490
+},
+"Rasavahini/15-The-Gracious-Tiger": {
+"n": 15,
+"pdf": 14816175,
+"zip": 14533331
+},
+"Rasavahini/16-Deliverance-and-Gratitude": {
+"n": 15,
+"pdf": 15091402,
+"zip": 14806871
+},
+"Rasavahini/17-Ingratitude": {
+"n": 13,
+"pdf": 12755149,
+"zip": 12476758
+},
+"Rasavahini/18-Marutta-and-His-Dog": {
+"n": 13,
+"pdf": 13401792,
+"zip": 13121885
+},
+"Rasavahini/19-A-Drop-of-Water": {
+"n": 12,
+"pdf": 11239371,
+"zip": 10959661
+},
+"Rasavahini/20-The-Brahmin-Soma": {
+"n": 11,
+"pdf": 14339248,
+"zip": 14059823
 },
 "The-Great-Emancipation": {
 "n": 234,
