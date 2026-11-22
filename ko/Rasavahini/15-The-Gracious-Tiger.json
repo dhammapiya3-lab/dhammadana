@@ -1,0 +1,913 @@
+[
+ {
+  "img": "images/15-The-Gracious-Tiger-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     192,
+     356,
+     608,
+     424
+    ],
+    "ko": "너그러운 호랑이의 덕\n짐승보다 못한 사람과 사람다운 짐승 이야기",
+    "cover": [
+     194,
+     134,
+     55
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     500,
+     51,
+     776,
+     295
+    ],
+    "ko": "바라나시 너머 잠부디빠의\n깊은 숲에 뜻밖의 우정이\n피어났습니다.\n\n사나운 호랑이 한 마리가\n오로지 눈먼 아버지를 모시며\n살았습니다. 숲 가장자리에는\n앵무새 뚠딜라가 살았습니다.\n\n두 짐승은 흔들림 없는\n우정으로 맺어져 있었습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     328,
+     215,
+     464,
+     255
+    ],
+    "ko": "삐야사하야\n(사랑하는 벗)",
+    "cover": [
+     255,
+     253,
+     251
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     344,
+     740,
+     416
+    ],
+    "ko": "국경 마을에서 온 침입자가 평화를 깨뜨렸습니다.\n집안의 모진 다툼을 피해 한 남자가 앞뒤 가리지 않고 숲으로 들어섰습니다.\n그는 알지 못하는 곳에 분노를 품고 들어왔습니다.",
+    "cover": [
+     255,
+     254,
+     252
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     238,
+     42,
+     436,
+     109
+    ],
+    "ko": "멧따(자애):\n남자의 괴로움을 봄",
+    "cover": [
+     254,
+     253,
+     251
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     238,
+     118,
+     438,
+     197
+    ],
+    "ko": "깜빠마나하다요\n(떨리는 마음):\n깊이 함께 아파함",
+    "cover": [
+     253,
+     251,
+     248
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     274,
+     221,
+     438,
+     294
+    ],
+    "ko": "경고: 들어가지\n마오! 사나운\n호랑이의 숲이오.",
+    "cover": [
+     255,
+     254,
+     251
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     216,
+     315,
+     584,
+     351
+    ],
+    "ko": "연민의 목소리",
+    "cover": [
+     206,
+     151,
+     69
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     32,
+     351,
+     768,
+     423
+    ],
+    "ko": "뚠딜라는 비참한 나그네를 보고 연민으로 마음이 떨렸습니다.\n앞에 무서운 호랑이가 있다고 알리며 돌아가라고 일렀습니다.\n그러나 비뚤어진 마음은 듣고 싶은 것만 듣습니다.",
+    "cover": [
+     207,
+     150,
+     61
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     64,
+     320,
+     736,
+     360
+    ],
+    "ko": "첫 번째 죄",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     64,
+     360,
+     736,
+     416
+    ],
+    "ko": "남자는 경고를 무시하고 뚠딜라를 잡아먹었습니다. 지혜로운 이들은 말합니다.\n악인을 안는 것은 불을 안는 것이요, 배은망덕한 이를 먹이는 것은 독사를 기르는 것이라고.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     486,
+     43,
+     774,
+     79
+    ],
+    "ko": "거짓말",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     486,
+     79,
+     774,
+     226
+    ],
+    "ko": "으르렁대는 호랑이를 만나자\n남자는 용기를 잃었습니다.\n벌벌 떨며 그는 거짓말을 꾸몄습니다.\n“당신의 벗 뚠딜라가 나를 보냈소.”\n벗의 이름을 듣자 호랑이의\n분노는 곧바로 사라졌습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     328,
+     680,
+     364
+    ],
+    "ko": "짐승의 환대",
+    "cover": [
+     233,
+     207,
+     154
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     96,
+     364,
+     704,
+     432
+    ],
+    "ko": "벗의 소식에 기뻐한 호랑이는 낯선 이를 반겼습니다.\n살인자에게 푸짐한 음식을 대접하고 굴을 안전한 쉼터로 내주었습니다.\n손님을 눈먼 아버지와 함께 두고 호랑이는 사냥을 나갔습니다.",
+    "cover": [
+     233,
+     207,
+     158
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     339,
+     356,
+     423
+    ],
+    "ko": "눈먼 아버지는 낯선 이의\n거친 말을 듣고 슬픈\n진실을 알아챘습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     444,
+     339,
+     780,
+     423
+    ],
+    "ko": "숲 깊은 곳에서 아들은\n죽은 벗의 초록 깃털을\n발견했습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     88,
+     356,
+     124
+    ],
+    "ko": "가장 큰 배신",
+    "cover": [
+     255,
+     254,
+     253
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     72,
+     124,
+     356,
+     252
+    ],
+    "ko": "거짓이 드러난 것을 안 악인은\n눈먼 아버지를 돌로 쳐 죽였습니다.\n그러고는 그늘에 숨어 슬퍼할\n아들을 덮치려고 기다렸습니다.\n\n악인의 타락에는 끝이 없습니다.",
+    "cover": [
+     255,
+     255,
+     254
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     43,
+     360,
+     79
+    ],
+    "ko": "심판의 순간",
+    "cover": [
+     197,
+     141,
+     64
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     28,
+     79,
+     360,
+     179
+    ],
+    "ko": "돌아온 아들은 아버지가 죽은 것을\n보았습니다. 짐승의 압도하는 위엄에\n겁에 질린 배신자는 호랑이 발아래\n엎드려 목숨을 빌었습니다.",
+    "cover": [
+     197,
+     142,
+     66
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     288,
+     320,
+     512,
+     350
+    ],
+    "ko": "덕 있는 선택",
+    "cover": [
+     255,
+     254,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     76,
+     348,
+     732,
+     412
+    ],
+    "ko": "호랑이는 아버지와 벗을 죽인 자를 바라보았지만 마음의 불을 껐습니다.\n“너는 내 벗의 이름으로 온 손님이다. 너를 저버릴 수는 없다.”\n호랑이는 살인자를 그냥 보내 주었습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     31,
+     640,
+     83
+    ],
+    "ko": "본성이 뒤바뀌다",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 38,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     160,
+     85,
+     640,
+     115
+    ],
+    "ko": "덕은 태어남이나 모습이 아니라 행동으로 정해집니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     228,
+     135,
+     416,
+     173
+    ],
+    "ko": "겉모습",
+    "cover": [
+     192,
+     137,
+     68
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     512,
+     135,
+     672,
+     173
+    ],
+    "ko": "속마음의 행동",
+    "cover": [
+     194,
+     138,
+     70
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     64,
+     191,
+     152,
+     275
+    ],
+    "ko": "마을\n사람",
+    "cover": [
+     198,
+     138,
+     60
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     64,
+     319,
+     152,
+     395
+    ],
+    "ko": "호랑이",
+    "cover": [
+     196,
+     137,
+     59
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     192,
+     259,
+     408,
+     287
+    ],
+    "ko": "교양 있는 사람",
+    "cover": [
+     197,
+     139,
+     62
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     192,
+     387,
+     408,
+     415
+    ],
+    "ko": "사나운 짐승",
+    "cover": [
+     198,
+     137,
+     57
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     448,
+     187,
+     732,
+     279
+    ],
+    "ko": "짐승 같은 이(아삽뿌리사)\n살인자, 배신자, 배은망덕",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     448,
+     319,
+     732,
+     411
+    ],
+    "ko": "참사람(삽뿌리사)\n너그러움, 용서, 명예",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     64,
+     468,
+     108
+    ],
+    "ko": "사귐의 법칙",
+    "cover": [
+     222,
+     157,
+     70
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 36,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     60,
+     108,
+     468,
+     148
+    ],
+    "ko": "벗을 신중히 고르십시오.\n누구와 사귀느냐가 갈 길을 정합니다.",
+    "cover": [
+     221,
+     157,
+     76
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     192,
+     200,
+     268,
+     238
+    ],
+    "ko": "길 A",
+    "cover": [
+     224,
+     179,
+     119
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     192,
+     298,
+     268,
+     336
+    ],
+    "ko": "길 B",
+    "cover": [
+     174,
+     72,
+     48
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     296,
+     189,
+     404,
+     251
+    ],
+    "ko": "선한 이와 사귐\n(삽뿌리사)",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     442,
+     190,
+     564,
+     237
+    ],
+    "ko": "괴로움을 없앰\n→ 끝없는 평화",
+    "cover": [
+     255,
+     254,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     296,
+     310,
+     408,
+     371
+    ],
+    "ko": "악한 이와 사귐\n(아삽뿌리사)",
+    "cover": [
+     39,
+     21,
+     21
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     432,
+     352,
+     564,
+     410
+    ],
+    "ko": "속임과 배신\n→ 이생과 다음 생\n의 파멸",
+    "cover": [
+     34,
+     32,
+     32
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     396,
+     279,
+     768,
+     319
+    ],
+    "ko": "자비의 보상",
+    "cover": [
+     219,
+     153,
+     72
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     396,
+     319,
+     768,
+     415
+    ],
+    "ko": "고기를 먹어야 사는 사나운 짐승도 끊임없는\n자비로 하늘 세계에 이르렀습니다. 슬픔보다\n손님을 더 귀히 여긴 너그러운 호랑이는\n하늘 세계에 자리를 얻었습니다.",
+    "cover": [
+     219,
+     154,
+     72
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/15-The-Gracious-Tiger-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     324,
+     760,
+     420
+    ],
+    "ko": "그러므로 모든 존재에게 늘 자비를 닦으십시오.\n이 끝없는 은혜가 모든 생에 걸쳐 참된 재물을 줍니다.\n— 부처님",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
