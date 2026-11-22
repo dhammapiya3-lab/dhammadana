@@ -2650,7 +2650,7 @@ document.addEventListener('click', e => {
     for (const pgx of (RB && RB.pages) || []) for (const q of paras(pgx.text)) if (q.startsWith('[^' + n + ']:') && (!best || Math.abs(pgx.n - hp) < Math.abs(best.n - hp))) best = { n: pgx.n, q };
     pop.innerHTML = `<div class="fnpop-h">각주 ${n}<button class="fnpop-x" aria-label="닫기">✕</button></div>` + (best ? `<p>${(RB === R ? (f => f()) : withR)(() => phMark(boldMark(esc(best.q.replace(/^\[\^[^\]]+\]:\s*/, '')))))}</p>` : fnSiteHtml(RB, n) || '<p class="muted">이 각주의 풀이를 이 책에서 찾지 못했습니다.</p>');
   }
-  parFnAdd(pop, n, null);
+  parFnAdd(pop, n, null, tgt ? tgt.closest('[data-pg]').dataset.pg : (here ? here.dataset.pg : null));
   document.body.appendChild(pop);
   const z = bodyZoom(), r = sup.getBoundingClientRect(), W = Math.min((SIMPLE_UI ? 640 * szNow() / 100 : 420) * z, innerWidth - 24);  /* 단순 화면은 글자가 커서 넓게 (2026-11-21) */
   pop.style.width = W / z + 'px'; pop.style.left = Math.max(12, Math.min(innerWidth - W - 12, r.left - W / 2)) / z + 'px';
@@ -2792,7 +2792,7 @@ function parApply() {
   });
   // 쪽 아래 각주에도 원서 각주를 함께 (운영자 요청, 2026-11-20 — DL-0022 보디 스님 미주)
   if (D.fn) rf.querySelectorAll('p.fn').forEach(fp => {
-    const no = fp.querySelector('.fn-no'), n = no && no.dataset.fnno, i = n != null ? D.fn[n] : null;
+    const no = fp.querySelector('.fn-no'), n = no && no.dataset.fnno, i = n != null && !(D.fnpg && D.fnpg[n] && +fp.dataset.pg !== D.fnpg[n]) ? D.fn[n] : null;
     if (i == null || !O[i]) return;
     const o = O[i], m = o.t.match(/^\[\^([^\]]+)\]:\s*/);
     const box = document.createElement('div'); box.className = 'par-or par-fnor'; box.lang = D.lang;
@@ -2805,10 +2805,10 @@ function parApply() {
 }
 
 /* ---------- 원서 대조 중 각주: 한국어 각주 창에 원서 각주도, 원서 위첨자 번호를 누르면 원서 각주 (운영자 요청, 2026-11-17) ---------- */
-function parFnAdd(pop, koN, origN) {
+function parFnAdd(pop, koN, origN, koPg) {
   if (!R || !R.parD || !R.parMode || R.parMode === 'off') return;
   const D = R.parD, O = D.orig || [];
-  const i = origN != null ? O.findIndex(o => o.k === 'fn' && o.t.startsWith('[^' + origN + ']:')) : (D.fn && D.fn[koN] != null ? D.fn[koN] : -1);
+  const i = origN != null ? O.findIndex(o => o.k === 'fn' && o.t.startsWith('[^' + origN + ']:')) : (D.fn && D.fn[koN] != null && !(D.fnpg && D.fnpg[koN] && koPg != null && +koPg !== D.fnpg[koN]) ? D.fn[koN] : -1);   // fnpg: 같은 번호 각주가 여럿인 책은 짝지은 쪽의 각주에만 (DL-0030 머리말·본문 [^1])
   if (i < 0 || !O[i]) return;
   const lang = { en: '영어', my: '미얀마어', pi: '빠알리어', th: '태국어' }[D.lang] || D.lang;
   const m = O[i].t.match(/^\[\^([^\]]+)\]:\s*/), on = m ? m[1] : '';

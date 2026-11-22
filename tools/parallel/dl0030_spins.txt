@@ -1,0 +1,45 @@
+# DL-0030『붓다의 일생』 문장 짝 손으로 (한국어 문장 첫머리=원서 문장 첫머리) — run_dl0030.sh 가 --spin 으로 씀
+# 1회차 (2026-11-22)
+나는 ‘이것이 번뇌이다.’=I had direct knowledge, as it actually is, that ‘These are taints
+즉 명색은 식이 있게 되는=That is to say: It is with name-and-form
+‘이것이 내가 이제 도달한 깨달음에=“I thought: ‘This is the path to enlightenment that I have now reached
+이레째 되는 날, 붓다께서는 선정에서=At the end of the seven days~1
+그리고 초야初夜에=At the end of the seven days~1
+그날 새벽녘 후야後夜에=In the third watch of the night
+두 번째로 저는 붓다께=For the second time~1
+세 번째로 저는 붓다께=For the third time~1
+# 2회차 (2026-11-22)
+빠알리어 단어와 이름의 발음은=The pronunciation of Pāli
+ñ는 onion=The pronunciation of Pāli
+나는 ‘이것이 고苦이다.’=I had direct knowledge, as it actually is, that ‘This is suffering
+그리고 ‘이것이 고의 멸에 이르는 길[道]이다.’~1=I had direct knowledge, as it actually is, that ‘This is suffering
+그런 다음 합장하고 무릎을=Then kneeling with the hands
+저는 승가에 귀의합니다.~1=Then kneeling with the hands
+저는 승가에 귀의합니다.~2=For the second time~1
+저는 승가에 귀의합니다.~3=For the third time~1
+이와 같이 삼보에 귀의했으므로=I allow the going forth and the admission to be given by the Triple
+# 3회차 (2026-11-22)
+“내 마음이 집중되어 순일해졌을=I directed, I inclined my mind to the knowledge of exhaustion
+‘이것이 고의 원인[集起]이다.’=I had direct knowledge, as it actually is, that ‘This is suffering
+‘이것이 고의 멸滅이다.’~1=I had direct knowledge, as it actually is, that ‘This is suffering
+‘이것이 번뇌의 원인이다.’=I had direct knowledge, as it actually is, that ‘These are taints
+‘이것이 번뇌의 멸이다.’=I had direct knowledge, as it actually is, that ‘These are taints
+그리고 ‘이것이 번뇌의 멸에=Knowing thus and seeing thus, my heart
+해탈했을 때, ‘해탈했다=When liberated, there came
+그러고 나서 황색 승복=Then after putting on the yellow robe
+세존께서 바아라아나시에서 우기를=Now when the Blessed One had spent the rains
+“비구들이여, 지혜로운 주의 기울임과=“Bhikkhus, it is with ordered attention
+‘태어남은 다했다, 청정한=I had direct knowledge: ‘Birth is exhausted
+비구들이여, 그대들도 지혜로운=It is with ordered attention, with ordered effort, that you also
+그때 사악한 마아라가 세존께 다가와 게송을=Then Māra the Evil One came to the Blessed One and spoke to him in stanzas~2
+이것이 후야後夜에 얻은 세 번째=This was the third true knowledge attained by me
+방일하지 않고 열심히 스스로 정진하는 자에게~3=Ignorance was banished and true knowledge arose~3
+하지만 내 안에서 일어난 그러한~3=But I allowed no such pleasant feeling~6
+“인간의 것이든 신의 것이든~3=“You are bound by Māra’s shackles
+그대는 마아라의 족쇄에=“You are bound by Māra’s shackles
+그대는 마아라의 속박에=You are bound by Māra’s bonds
+그대는 내게서 달아날 수 없소=And you shall not escape me~2
+“여래는 마아라의 족쇄에서=“I am free from Māra’s shackles
+그것이 인간의 것이든 신의 것이든=Whether human or divine~4
+마아라의 속박에서 풀려났소=Free from Māra’s bonds
+그러니 이제 그대는 패배했소=Are vanquished now~3

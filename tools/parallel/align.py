@@ -131,6 +131,7 @@ def _sents(t, lang):
 
 
 def __sents(t, lang):
+    if lang == 'en' and len(t) < 70 and re.match(r'(cf\. )?(Vin|D|M|S|A|Sn|Ud|Dh|Thag|Thig|Iti|Khp|J|Comy)\. \S', t): return [(0, len(t.rstrip()))]   # 경전 출처 줄('D. 16; Vin. Mv. 6:29')은 한 문장 (DL-0030)
     out = []; a = 0
     for m in SPL.finditer(t):
         b = m.start() if t[m.start()] == '\n' else m.end()
@@ -143,9 +144,9 @@ def __sents(t, lang):
         if lang == 'en' and m.group(0) != '\n':
             # 'e.g. ' 'i.e. ' 'Mr. ' 'U. ' 같은 약어 뒤나 다음 글자가 소문자면 나누지 않음
             nx = t[m.end():m.end() + 1]
-            if re.search(r'\b(e\.g|i\.e|etc|Mr|Mrs|Dr|cf|vs|No|Nos|v|vv|pp)\.$', t[a:m.start() + 1].strip()) or (nx and nx.islower()): continue
+            if re.search(r'\b(e\.g|i\.e|etc|Mr|Mrs|Dr|cf|vs|No|Nos|v|vv|pp|p|ed|Trans|vols)\.$', t[a:m.start() + 1].strip()) or (nx and nx.islower()): continue
             # 경전·책 약어('B. Dict.' 'Vis. M.' 'S. XXII.' 'Dhp.' 'Comm.') 뒤, 생략 점('. . .')에서는 나누지 않음 (DL-0015)
-            if re.search(r'(?:^|[\s(])(?:[A-Z]|B|Vis|Dict|Comm|Dhp|Snp|Ud|Fund|Vol|ff|lit|Cf|[IVX]+)\.$', t[a:m.start() + 1].strip()) and not re.search(r'[a-z]{3}\.$', t[a:m.start() + 1].strip()[-5:]) or nx == '.': continue
+            if re.search(r'(?:^|[\s(])(?:[A-Z]|B|Vis|Dict|Comm|Dhp|Snp|Ud|Fund|Vol|ff|lit|Cf|[IVX]+|Vin|Mv|Cv|Iti|Dh|Sn|Thag|Thig|Khp|Comy|Ch|Sv|Pārā|Pāc|Sangh)\.$', t[a:m.start() + 1].strip()) and not re.search(r'[a-z]{3}\.$', t[a:m.start() + 1].strip()[-5:]) or nx == '.': continue
             if re.search(r'(?:^|[\s(])(?:[A-Z]\.){2,3}$', t[a:m.start() + 1].strip()): continue   # 이름 머리글자 'T.W. Rhys Davids'·'C.A.F.' (DL-0029)
         # 따옴표 뒤 이음말('…존재한다.’ 거나', '…’ 라고')은 앞 문장에 (DL-0022, --ko-join)
         if lang == 'ko' and A.ko_join and m.group(0) != '\n' and re.match(r'(거나|라고|하고|라는|이라고|라며|하면서)[\s,]', t[m.end():m.end() + 6]): continue
@@ -334,7 +335,7 @@ for i in range(0, N + 1):
         for a, b in BEADS:
             pi, pj = i - a, j - b
             if pi < 0 or pj < 0 or (pi, pj) not in V: continue
-            if a > 3 and b == 1 and not A.en_semi and not (j - 1 in SPINR and pi == min(SPINR[j - 1]) and i == max(SPINR[j - 1]) + 1): continue   # 큰 묶음은 손으로 묶은 범위 그대로만
+            if a > (5 if A.en_semi else 3) and b == 1 and not (j - 1 in SPINR and pi == min(SPINR[j - 1]) and i == max(SPINR[j - 1]) + 1): continue   # 큰 묶음은 손으로 묶은 범위 그대로만
             if a and b:
                 sc = (sim(pi, i, pj, j) - A.base - (PEN[pj:j].max() if j > pj and KB else 0.0)) * (a + b) / 2 - MERGE * (max(a, b) - 1 + (a > 1 and b > 1))
             else:
@@ -477,7 +478,7 @@ for p in KO_GL:
         frag = []
 print('용어 풀이 짝', gl_ok, '못 찾음', gl_no)
 # ---------- 각주 짝 (운영자 요청, 2026-11-17): 한국어 각주([^n]:, [역주] 는 뺌) ↔ 원서 각주('fn' 문단) — 뜻 벡터 + 순서 지키는 짝짓기 ----------
-FN = {}; fn_rep = []
+FN = {}; fn_rep = []; FNPG = {}
 KF = [(m.group(1), m.group(2).strip()) for m in re.finditer(r'^\[\^([^\]]+)\]:\s*(.*(?:\n(?!\[\^|===).*)*)', body, flags=re.M)]
 YK = {n for n, t in KF if t.lstrip('*').startswith('[역주]')}   # 역자 각주: 원서 각주를 풀어 쓴 것도 있어 뜻이 아주 가까울 때만 짝
 EF = [(i, re.sub(r'^\[\^[^\]]+\]:\s*', '', p['t'])) for i, p in enumerate(ORIG) if p['k'] == 'fn']
@@ -508,12 +509,23 @@ if KF and EF:
         if not kn: FN = {k: v for k, v in FN.items() if v != ei}; fn_rep = [r for r in fn_rep if r[1][0] != ei]; continue   # "=3" 원서 각주 3 은 짝 없음
         FN = {k: v for k, v in FN.items() if v != ei}; FN[kn] = ei
         fn_rep = [r for r in fn_rep if r[1][0] != ei and r[0][0] != kn] + [((kn, dict(KF)[kn]), (ei, ORIG[ei]['t']), 1.0)]
-    print('각주 짝', len(FN), '/ 한국어 각주', len(KF), '(역주', len(YK), ') / 원서 각주', len(EF))
+    # 같은 번호의 한국어 각주가 둘 이상이면(머리말 [^1]·본문 [^1] — DL-0030) 짝지은 각주가 정의된 쪽 순번을 fnpg 에 — 화면은 그 쪽의 각주에만 원서 각주를 붙임
+    _kpg = {}
+    for n_, (lab, _, txt) in enumerate(pages, 1):
+        for m in re.finditer(r'^\[\^([^\]]+)\]:', txt, flags=re.M): _kpg.setdefault(m.group(1), []).append(n_)
+    FNPG = {}
+    for kn in FN:
+        if len(_kpg.get(kn, [])) > 1:
+            hit = [r for r in fn_rep if r[0][0] == kn]
+            kt = hit[-1][0][1] if hit else None
+            for n_ in _kpg[kn]:
+                if kt is not None and any(m.group(1).startswith(kt[:40]) for m in re.finditer(r'^\[\^' + re.escape(kn) + r'\]:\s*(.*)', pages[n_ - 1][2], flags=re.M)): FNPG[kn] = n_
+    print('각주 짝', len(FN), '/ 한국어 각주', len(KF), '(역주', len(YK), ') / 원서 각주', len(EF), '/ 번호가 겹친 각주 쪽', FNPG)
 scores = [s['sc'] for g in out if not g.get('toc') for s in g['s'] if 'sc' in s]
 res = {'book': A.book, 'lang': A.lang, 'title': A.title, 'by': A.by, 'source': A.source,
        'made': datetime.date.today().isoformat(), 'method': 'LaBSE 문장 뜻 비교 + 순서 지키는 짝짓기(1:1·1:2·2:1·2:2·1:3·3:1·건너뛰기)',
        'note': '짝 자료: groups[].ko = 한국어 문단 열쇠 "쪽 순번:문단 순번"(content/texts 본문 기준), or = 원서 문단 번호, s = 문장 짝 [문단 열쇠·번호, 시작 글자, 끝 글자], sc = 뜻 비슷함(0~1)',
-       'orig': [{'pg': p['pg'], 'k': p['k'], 't': p['t'], **({'pdf': p['pdf']} if p.get('pdf') else {})} for p in ORIG], 'groups': out, **({'fn': FN} if FN else {})}
+       'orig': [{'pg': p['pg'], 'k': p['k'], 't': p['t'], **({'pdf': p['pdf']} if p.get('pdf') else {})} for p in ORIG], 'groups': out, **({'fn': FN} if FN else {}), **({'fnpg': FNPG} if KF and EF and FNPG else {})}
 os.makedirs(os.path.join(REPO, 'content/parallel'), exist_ok=True)
 json.dump(res, open(os.path.join(REPO, 'content/parallel', f'{A.book}.{A.lang}.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
 low = [(g, s) for g in out for s in g['s'] if not g.get('gl') and not g.get('toc') and not g.get('pin') and (s.get('sc', 1) < 0.5 or 'sc' not in s)]   # 용어 풀이·차례·손으로 정한 짝은 확인 목록에서 뺌

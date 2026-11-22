@@ -27,7 +27,16 @@
     "영어"
   ],
   "original_source": "《붓다의 일생 The Life of the Buddha》은 BPS에서 1972년에 처음 출간되었고, 본 역서는 BPS의 Pariyatti Edition 2001년 판을 저본으로 했다.",
-  "parallel_editions": [],
+  "parallel_editions": [
+    {
+      "lang": "en",
+      "title": "The Life of the Buddha according to the Pāli Canon",
+      "by": "Bhikkhu Ñāṇamoli",
+      "edition": "BPS Pariyatti Editions · First BPS Pariyatti Edition, 2001 · ©1972, 1992 Buddhist Publication Society (Published by Buddhist Publication Society, Kandy, Sri Lanka, 1972, 1978, 1992 — 3판, 비구 보디) · Pariyatti 전자책 PDF (400쪽)",
+      "url": "https://buddhistuniversity.net/content/monographs/life-of-the-buddha_nyanamoli",
+      "note": "한국어판은 원서 미주를 각주로 옮겼고 역주를 더함(원서 미주는 장마다 1부터 셈). 원서의 경전 출처 목록·찾아보기는 대조하지 않음."
+    }
+  ],
   "series": "",
   "main": [
     "부처님의 생애",
