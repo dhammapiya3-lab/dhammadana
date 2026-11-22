@@ -30,7 +30,7 @@ for s,e,r in ops:
     li=bisect.bisect_left(keys,s); L=keys[li-1] if li>0 else None
     R=keys[bisect.bisect_left(keys,e)]
     gap=list(range(A[L]+1,A[R])) if L is not None else []
-    rc=r.replace('**','').replace('°°','').replace('==','')
+    rc=r.replace('**','').replace('°°','').replace('==','').replace('__','')
     if mapped:
         lo=A[mapped[0]]; hi=A[mapped[-1]]
         if old[:1].isspace():
@@ -49,7 +49,7 @@ for s,e,r in ops:
         if not rc.strip(): BLUE.update(([A[L]] if L is not None else [])+[A[R]])
         else: INSBLUE[lo]=True
     else:
-        o_ws=old.replace('**','').replace('°°','')
+        o_ws=old.replace('**','').replace('°°','').replace('__','')
         if o_ws.strip()=='' and rc.strip()=='':
             if len(rc)>len(o_ws):   # insert space
                 if not gap: INS[A[R]]+=rc; BLUE.update([A[L],A[R]])

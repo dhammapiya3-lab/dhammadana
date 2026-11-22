@@ -13,7 +13,7 @@ def hwp_chars(rs):
             elif k=='b' and v in (24,30,31): H.append((ri,wi,' '))
         H.append((ri,None,'\n'))
     return H
-MARK=re.compile(r'^=== [^\n]*===$|^(\^\^|::|>>|##|\+\+|%%|\|\|) |\*\*|°°|==|!\[[^\]]*\]\([^)]*\)|\[\^[^\]]+\]:?|^~$',re.M)
+MARK=re.compile(r'^=== [^\n]*===$|^(\^\^|::|>>|##|\+\+|%%|\|\|) |\*\*|°°|==|__|!\[[^\]]*\]\([^)]*\)|\[\^[^\]]+\]:?|^~$',re.M)
 def body_mask(B):
     m=[True]*len(B)
     for x in MARK.finditer(B):
