@@ -379,20 +379,20 @@
 },
 "Foremost-Nuns": {
 "n": 283,
-"pdf": 385759403,
-"pdfs": 40811673,
+"pdf": 385941598,
+"pdfs": 40856389,
 "stories": 13,
-"zip": 385406720
+"zip": 385588916
 },
 "Foremost-Nuns/01-Maha-Pajapati-Gotami": {
 "n": 30,
-"pdf": 42615009,
-"zip": 42334961
+"pdf": 42632700,
+"zip": 42352652
 },
 "Foremost-Nuns/02-Khema": {
 "n": 37,
-"pdf": 52994403,
-"zip": 52719509
+"pdf": 52988466,
+"zip": 52713571
 },
 "Foremost-Nuns/03-Uppalavanna": {
 "n": 37,
@@ -401,53 +401,80 @@
 },
 "Foremost-Nuns/04-Patacara": {
 "n": 30,
-"pdf": 36870910,
-"zip": 36596379
+"pdf": 36894500,
+"zip": 36619969
 },
 "Foremost-Nuns/05-Dhammadinna": {
 "n": 22,
-"pdf": 29279296,
-"zip": 29008966
+"pdf": 29276001,
+"zip": 29005673
 },
 "Foremost-Nuns/06-Nanda": {
 "n": 12,
-"pdf": 14593957,
-"zip": 14329805
+"pdf": 14599026,
+"zip": 14334874
 },
 "Foremost-Nuns/07-Sona": {
 "n": 15,
-"pdf": 18516129,
-"zip": 18251380
+"pdf": 18518037,
+"zip": 18253287
 },
 "Foremost-Nuns/08-Sakula": {
 "n": 15,
-"pdf": 24089633,
-"zip": 23822219
+"pdf": 24087462,
+"zip": 23820046
 },
 "Foremost-Nuns/09-Bhadda-Kundalakesa": {
 "n": 25,
-"pdf": 33182668,
-"zip": 32904918
+"pdf": 33238188,
+"zip": 32960439
 },
 "Foremost-Nuns/10-Bhadda-Kapilani": {
 "n": 11,
-"pdf": 14122444,
-"zip": 13853421
+"pdf": 14124308,
+"zip": 13855285
 },
 "Foremost-Nuns/11-Bhadda-Kaccana": {
 "n": 13,
-"pdf": 20155144,
-"zip": 19886919
+"pdf": 20190882,
+"zip": 19922656
 },
 "Foremost-Nuns/12-Kisa-Gotami": {
 "n": 23,
-"pdf": 34654474,
-"zip": 34382847
+"pdf": 34719749,
+"zip": 34448123
 },
 "Foremost-Nuns/13-Singalakamata": {
 "n": 13,
-"pdf": 18858875,
-"zip": 18588292
+"pdf": 18845820,
+"zip": 18575237
+},
+"Four-Rich-Men": {
+"n": 55,
+"pdf": 70740120,
+"pdfs": 7381108,
+"stories": 4,
+"zip": 70463899
+},
+"Four-Rich-Men/01-Jotika-the-Householder": {
+"n": 15,
+"pdf": 19165860,
+"zip": 18897249
+},
+"Four-Rich-Men/02-Mendaka-the-Householder": {
+"n": 15,
+"pdf": 16419020,
+"zip": 16150440
+},
+"Four-Rich-Men/03-Jatila-the-Treasurer": {
+"n": 12,
+"pdf": 17835020,
+"zip": 17565066
+},
+"Four-Rich-Men/04-Kalavaliya-the-Treasurer": {
+"n": 13,
+"pdf": 18125608,
+"zip": 17851521
 },
 "Jataka": {
 "n": 422,
