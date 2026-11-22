@@ -1,12 +1,12 @@
-Jatakamala 26-Ruru 15 장
+Jatakamala 27-Great-Monkey 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 77 개 / 한글판 이야기 282 편
+R2 에 올림: 77 개 / 한글판 이야기 283 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1241889바이트
-이야기 Jatakamala/26-Ruru {'pdf': 16756012, 'zip': 16478920, 'n': 15}
-책 Jatakamala {'pdf': 342667834, 'pdfs': 34312942, 'zip': 342270594, 'stories': 26, 'n': 380}
+공개 주소 확인: 200 815007바이트
+이야기 Jatakamala/27-Great-Monkey {'pdf': 15283898, 'zip': 14997378, 'n': 15}
+책 Jatakamala {'pdf': 357670731, 'pdfs': 35829351, 'zip': 357268474, 'stories': 27, 'n': 395}
 내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 282 이야기
+글로 보기: 283 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
