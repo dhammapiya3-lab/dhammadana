@@ -1,0 +1,677 @@
+[
+ {
+  "img": "images/27-Great-Monkey-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     30,
+     650,
+     110
+    ],
+    "ko": "큰 원숭이 이야기\n(『자따까말라』 27)",
+    "cover": [
+     248,
+     245,
+     237
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     150,
+     110,
+     650,
+     146
+    ],
+    "ko": "지도자의 길과 희생, 그리고 왕의 지혜에 관한 이야기",
+    "cover": [
+     246,
+     243,
+     237
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Great-Monkey-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     408,
+     300,
+     800,
+     330
+    ],
+    "ko": "보살과 니그로다 나무",
+    "cover": [
+     241,
+     237,
+     229
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     408,
+     330,
+     800,
+     442
+    ],
+    "ko": "히마완따 한가운데에서 보살은 원숭이 무리의 우두머리로 살았습니다. 그는 하늘을 향해 우뚝 솟아 달고 큰 열매가 가득 열린 니그로다 나무에 살았습니다.\n짐승으로 태어났지만 그의 마음에는 시기와 이기심이 없었고, 동족을 향한 베풂과 연민이 가득했습니다.",
+    "cover": [
+     247,
+     247,
+     240
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Great-Monkey-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     524,
+     110,
+     790,
+     146
+    ],
+    "ko": "경고",
+    "cover": [
+     252,
+     252,
+     250
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     524,
+     146,
+     790,
+     322
+    ],
+    "ko": "“이 가지에 열매가 열리지 않게 하지 않으면, 너희 가운데 누구도 다시는 열매를 먹지 못하리라.”\n위험을 내다본 보살은 무리에게 강 위로 뻗은 가지의 열매 싹을 없애라고 일렀습니다. 물이 그들의 비밀을 사람의 세상으로 실어 가리라는 것을 알았습니다.",
+    "cover": [
+     253,
+     253,
+     250
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Great-Monkey-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     478,
+     50,
+     790,
+     96
+    ],
+    "ko": "숨은 열매",
+    "cover": [
+     246,
+     247,
+     241
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     478,
+     96,
+     790,
+     226
+    ],
+    "ko": "개미가 구부려 놓은 잎 속에 숨은 열매 하나를 놓치고 말았습니다. 그 열매는 익어서 강에 떨어져 떠내려갔습니다. 마침내 후궁들과 물놀이하던 사람의 왕의 그물에 걸렸습니다.",
+    "cover": [
+     246,
+     246,
+     241
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Great-Monkey-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     494,
+     70,
+     790,
+     126
+    ],
+    "ko": "왕의 욕망",
+    "cover": [
+     246,
+     246,
+     241
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     494,
+     126,
+     790,
+     370
+    ],
+    "ko": "열매의 빼어난 향기에 꽃다발과 향수 냄새가 사라졌습니다. 맛을 본 왕은 그 맛에 대한 갈망으로 들끓었습니다.\n“이런 열매를 먹지 못한다면 왕위가 무슨 소용인가?”\n그 맛에 대한 갈망에 이끌려 왕은 열매가 난 곳을 찾기로 했습니다.",
+    "cover": [
+     246,
+     246,
+     241
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-Great-Monkey-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     556,
+     250,
+     794,
+     290
+    ],
+    "ko": "“원정”",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     556,
+     290,
+     794,
+     436
+    ],
+    "ko": "왕은 물놀이를 그만두고 무장한 큰 무리를 이끌고 강을 거슬러 올라갔습니다. 덤불을 베어 내고 북소리로 짐승들을 겁주었습니다. 열매가 난 곳을 찾아 폭풍처럼 나무들의 왕을 향해 나아갔습니다.",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Great-Monkey-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     556,
+     254,
+     798,
+     294
+    ],
+    "ko": "“발견”",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     556,
+     294,
+     798,
+     446
+    ],
+    "ko": "왕은 구름 덩어리 같은 나무에 원숭이들이 가득해 자기가 바라는 것을 빼앗고 있는 것을 보았습니다.\n“쳐라! 없애라! 저 악당들이 내 즐거움을 훔친다!”\n왕은 적의 요새를 치듯 나무를 공격하라고 궁수들에게 명했습니다.",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Great-Monkey-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     556,
+     250,
+     794,
+     290
+    ],
+    "ko": "“공격”",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     556,
+     290,
+     794,
+     442
+    ],
+    "ko": "화살과 창이 비처럼 나무에 쏟아졌습니다. 원숭이들은 겁에 질려 어지럽게 울부짖을 뿐, 창백한 얼굴로 우두머리만 바라보았습니다.\n그러나 보살은 자기 걱정은 없이 동족에 대한 더없는 연민으로 마음이 움직였습니다.",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Great-Monkey-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     556,
+     250,
+     794,
+     290
+    ],
+    "ko": "“도약”",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     556,
+     290,
+     794,
+     400
+    ],
+    "ko": "동족을 구하려고 대사는 아무도 건널 수 없는 거리를 뛰어 산봉우리로 건너갔습니다.\n“연민이 그의 결심을 길렀고, 용기가 그것을 완성했다.”",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Great-Monkey-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     556,
+     252,
+     794,
+     292
+    ],
+    "ko": "“살아 있는 다리”",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     556,
+     292,
+     794,
+     446
+    ],
+    "ko": "등나무 줄기가 너무 짧았습니다. 그는 손으로 가지를 잡고 발로 줄기를 붙들어 제 몸을 다리로 삼았습니다.\n있는 힘을 다해 줄기를 팽팽히 당기며 무리에게 신호했습니다. “어서 오너라!”",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Great-Monkey-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     556,
+     254,
+     794,
+     294
+    ],
+    "ko": "“탈출”",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     556,
+     294,
+     794,
+     450
+    ],
+    "ko": "겁에 질린 원숭이들은 그의 몸 위로 끊임없이 밟고 지나갔습니다. 살이 찢겼지만 그의 마음은 놀라운 굳셈을 잃지 않았습니다.\n왕은 놀라 지켜보았습니다. “이런 자기희생은 보는 이 모두를 놀라게 하리라.”",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Great-Monkey-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     570,
+     52,
+     790,
+     98
+    ],
+    "ko": "“구조”",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     570,
+     98,
+     790,
+     400
+    ],
+    "ko": "왕은 원숭이를 조심스레 내려오게 하라 명했습니다. 부드러운 침상에 누이고 상처에 약을 발랐습니다. 대사가 정신을 차리자 왕이 물었습니다.\n“그대는 제 목숨도 아끼지 않고 몸을 다리로 삼았소. 그대는 그들에게, 그들은 그대에게 무엇이오?”",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Great-Monkey-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     570,
+     60,
+     790,
+     130
+    ],
+    "ko": "“지도자란”",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     570,
+     130,
+     790,
+     400
+    ],
+    "ko": "“그들은 내게 다스리는 이의 짐을 맡겼습니다. 나는 아버지가 자식에게 품는 정으로 그들과 묶여 있습니다.”\n“나는 그들이 내게 준 번영에 보답했습니다. 그들의 아픔을 외면하는 것은 내 죽음보다 더 괴롭습니다.”",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Great-Monkey-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     570,
+     66,
+     790,
+     138
+    ],
+    "ko": "“왕의 가르침\n(rājanīti)”",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     570,
+     138,
+     790,
+     450
+    ],
+    "ko": "“왕은 아버지처럼 백성과 군대와 짐승까지 행복하게 해야 합니다.”\n“덕이 없는 왕은 지옥에 갑니다. 바르게 다스리십시오. 행운은 덧없고 덕만이 남습니다.”",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/27-Great-Monkey-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     570,
+     90,
+     790,
+     146
+    ],
+    "ko": "“남긴 것”",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     570,
+     146,
+     790,
+     400
+    ],
+    "ko": "왕을 가르친 뒤 대사는 천상에 올랐습니다. 왕은 덕 있는 이를 본받아 연민으로 나라를 다스렸습니다.\n덕 있는 이의 행실을 따르는 이는 원수의 마음까지 얻습니다.",
+    "cover": [
+     30,
+     30,
+     30
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ }
+]
