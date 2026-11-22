@@ -1,0 +1,452 @@
+[
+ {
+  "img": "images/13-Prince-Visamaloma-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     364,
+     640,
+     436
+    ],
+    "ko": "위사말로마의 공덕과 힘\n업과 용기, 참된 힘의 이야기",
+    "cover": [
+     208,
+     158,
+     48
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Prince-Visamaloma-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     295,
+     352,
+     427
+    ],
+    "ko": "깟사빠 부처님 시대에 한 평범한\n사람이 가장 높은 법을 들었습니다.\n감동한 그는 평생 아낌없는\n보시의 길을 걸었습니다.",
+    "cover": [
+     228,
+     172,
+     60
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Prince-Visamaloma-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     324,
+     56,
+     480,
+     400
+    ],
+    "ko": "승가에 보시한 것:\n\n• 음식과 물\n• 가사와 허리띠\n• 약과 지팡이\n• 담요와 침상\n\n이 깨끗한 행위가\n큰 힘의 씨앗이\n되었습니다.",
+    "cover": [
+     213,
+     167,
+     92
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Prince-Visamaloma-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     67,
+     316,
+     395
+    ],
+    "ko": "깨끗한 행위 덕분에\n그는 훌륭한 하늘\n세계에 태어났습니다.\n\n하늘의 시종들에게\n둘러싸여 한평생 큰\n행복을 누리며, 세상에서\n베푼 보시의 달콤한\n열매를 거두었습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Prince-Visamaloma-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     344,
+     88,
+     780,
+     388
+    ],
+    "ko": "하늘에서 수명을 다한 그는 빠딸리뿟따의\n담마소까 왕의 첫째 왕비에게서\n태어났습니다.\n\n털이 고르지 않게 난 채 태어나\n위사말로마꾸마라라는 이름을\n얻었습니다. 그는 빼어난 생김새와\n견줄 데 없는 힘을 지닌 젊은이로\n자랐습니다.",
+    "cover": [
+     214,
+     160,
+     52
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Prince-Visamaloma-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     50,
+     780,
+     143
+    ],
+    "ko": "담마소까 왕의 큰 군대가 물이 불어난 짠다바가 강에 막혔습니다.\n사나운 악어가 우글거려 건널 수 없었습니다. 젊은 위사말로마가\n나서며 아뢰었습니다. “대왕이시여, 제가 이 거센 강을 건너겠습니다.”",
+    "cover": [
+     210,
+     159,
+     59
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Prince-Visamaloma-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     128,
+     364,
+     660,
+     444
+    ],
+    "ko": "위사말로마는 머리를 묶고 열여덟 완척을 뛰어올랐습니다.\n거센 물살로 곧장 뛰어들어 맨손으로 사나운 악어 120마리를\n부수고는, 가볍게 왕의 발 앞으로 돌아왔습니다.",
+    "cover": [
+     209,
+     157,
+     57
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Prince-Visamaloma-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     214,
+     157,
+     584,
+     311
+    ],
+    "ko": "신과 같은 힘을 본 담마소까 왕은\n두려워졌습니다. ‘저자는 쉽게 나를 죽이고\n나라를 빼앗을 수 있다.’ 의심에 사로잡힌\n왕은 죄 없는 영웅을 어두운 감옥에\n넉 달 동안 가두었습니다.",
+    "cover": [
+     231,
+     180,
+     51
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Prince-Visamaloma-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     64,
+     336,
+     404
+    ],
+    "ko": "모진 넉 달이 지나자\n왕은 죽음의 시험을\n꾸몄습니다. 굶주린\n위사말로마에게 두꺼운\n대나무 다발 예순 개를\n칼 한 번에 베라고 명했습니다.\n그러나 대나무 속에는\n단단한 쇠막대가 숨겨져\n있었습니다.",
+    "cover": [
+     217,
+     160,
+     57
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Prince-Visamaloma-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     364,
+     79,
+     716,
+     211
+    ],
+    "ko": "굶주렸지만 위사말로마는 연못물을 마시고\n기운을 되찾았습니다. 여든여덟 완척을\n뛰어올라 힘껏 내리쳤습니다. 칼은 대나무를\n매끄럽게 베었지만, 숨겨진 쇠심에 부딪혀\n쨍 하고 큰 소리가 났습니다.",
+    "cover": [
+     193,
+     150,
+     61
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Prince-Visamaloma-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     340,
+     732,
+     436
+    ],
+    "ko": "칼을 떨어뜨린 무적의 젊은이가 울기 시작했습니다. 왕의 신하들이 까닭을 묻자\n그가 탄식했습니다. “이 많은 사람 가운데 참된 벗이 하나도 없구나.\n벗이 있었다면 쇠가 있다고 알려 주어, 조심해서 내리쳤을 텐데.”",
+    "cover": [
+     244,
+     237,
+     222
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Prince-Visamaloma-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     35,
+     752,
+     123
+    ],
+    "ko": "젊은이의 깨끗한 마음을 안 담마소까 왕은 뉘우치고 그를 부왕으로 높였습니다.\n새로 얻은 재산과 힘으로 위사말로마는 지난 생의 옛 습관인 승가에 대한\n아낌없는 보시를 기쁘게 다시 시작했습니다.",
+    "cover": [
+     216,
+     169,
+     55
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Prince-Visamaloma-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     88,
+     60,
+     720,
+     108
+    ],
+    "ko": "참된 힘은 어디에서 오는가?",
+    "cover": [
+     211,
+     160,
+     64
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     120,
+     112,
+     360,
+     144
+    ],
+    "ko": "거짓 근원",
+    "cover": [
+     213,
+     160,
+     58
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     416,
+     112,
+     720,
+     144
+    ],
+    "ko": "참된 근원(업의 힘)",
+    "cover": [
+     206,
+     160,
+     71
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     120,
+     296,
+     368,
+     372
+    ],
+    "ko": "• 태어남과 신분\n• 고귀한 가문\n• 폭력과 악행",
+    "cover": [
+     213,
+     160,
+     59
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     416,
+     296,
+     724,
+     372
+    ],
+    "ko": "• 승가에 대한 보시(dāna)\n• 계(sīla)\n• 흔들림 없는 믿음",
+    "cover": [
+     213,
+     160,
+     58
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     120,
+     372,
+     720,
+     408
+    ],
+    "ko": "참된 힘은 핏줄이 아니라 공덕에서 나옵니다.",
+    "cover": [
+     212,
+     160,
+     59
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-Prince-Visamaloma-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     172,
+     203,
+     624,
+     243
+    ],
+    "ko": "평화로 가는 길",
+    "cover": [
+     217,
+     164,
+     51
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     172,
+     243,
+     624,
+     327
+    ],
+    "ko": "세상의 힘은 덧없지만 선행의 열매는\n여러 생에 걸쳐 이어집니다. 공덕을 쌓고\n계를 지키며 열반(Nibbāna)의 평화로\n가는 성스러운 길을 걸으십시오.",
+    "cover": [
+     216,
+     164,
+     56
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
