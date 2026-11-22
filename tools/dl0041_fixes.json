@@ -309,7 +309,7 @@
    "82쪽"
   ],
   "a": "(5) 불기어(pisuṇāya vācāya)",
-  "b": "(5) 불양설(pisuṇāya vācāya)",
+  "b": "(5) 불양설(pisuṇāya vācāya veramaṇī)",
   "n": 1
  },
  {
@@ -317,7 +317,7 @@
    "82쪽"
   ],
   "a": "(7) 불양설(samphappalāpā)",
-  "b": "(7) 불기어(samphappalāpā)",
+  "b": "(7) 불기어(samphappalāpā veramaṇī)",
   "n": 1
  },
  {
@@ -795,7 +795,7 @@
  {
   "p": null,
   "a": "(kāmesumicchācārā)",
-  "b": "(kāmesu micchācārā)",
+  "b": "(kāmesu micchācārā veramaṇī)",
   "n": 1,
   "g": "교정 목록 1-2번(2026-11-22)"
  },
@@ -3508,5 +3508,76 @@
   "b": "또 다른 상응부 경전 35:87경에서는 격렬한 통증을",
   "n": 1,
   "g": "교정 목록 10번 경전 출처(2026-11-22)"
+ },
+ {
+  "p": "82쪽",
+  "a": "불살생(pāṇātipātā)",
+  "b": "불살생(pāṇātipātā veramaṇī)",
+  "n": 1,
+  "g": "2015년 판 대조 — 82쪽 veramaṇī(2026-11-22)"
+ },
+ {
+  "p": "82쪽",
+  "a": "불투도(adinnādānā)",
+  "b": "불투도(adinnādānā veramaṇī)",
+  "n": 1,
+  "g": "2015년 판 대조 — 82쪽 veramaṇī(2026-11-22)"
+ },
+ {
+  "p": "82쪽",
+  "a": "불망어(musāvādā)",
+  "b": "불망어(musāvādā veramaṇī)",
+  "n": 1,
+  "g": "2015년 판 대조 — 82쪽 veramaṇī(2026-11-22)"
+ },
+ {
+  "p": "82쪽",
+  "a": "불악구(pharusāya vācāya)",
+  "b": "불악구(pharusāya vācāya veramaṇī)",
+  "n": 1,
+  "g": "2015년 판 대조 — 82쪽 veramaṇī(2026-11-22)"
+ },
+ {
+  "p": "84쪽",
+  "a": "(Sammāsambuddhas)",
+  "b": "(Sammāsambuddhā)",
+  "n": 1,
+  "g": "2015년 판 대조 — 84~85쪽 -buddhā(2026-11-22)"
+ },
+ {
+  "p": "84쪽",
+  "a": "(Paccekabuddhas)",
+  "b": "(Paccekabuddhā)",
+  "n": 1,
+  "g": "2015년 판 대조 — 84~85쪽 -buddhā(2026-11-22)"
+ },
+ {
+  "p": "85쪽",
+  "a": "(Sāvakabuddhas)",
+  "b": "(Sāvakabuddhā)",
+  "n": 1,
+  "g": "2015년 판 대조 — 84~85쪽 -buddhā(2026-11-22)"
+ },
+ {
+  "p": "85쪽",
+  "a": "(Bahussutabuddhas)",
+  "b": "(Bahussutabuddhā)",
+  "n": 1,
+  "g": "2015년 판 대조 — 84~85쪽 -buddhā(2026-11-22)"
+ },
+ {
+  "p": null,
+  "a": "(?<=\\*\\*)Namo tassa bhagavato arahato sammāsambuddhassa\\.(?=\\*\\*)",
+  "b": "Namo tassa Bhagavato Arahato Sammāsambuddhassa.",
+  "n": 1,
+  "re": true,
+  "g": "3쪽 삼귀의 대문자(2026-11-22)"
+ },
+ {
+  "p": "137쪽",
+  "a": "필요가 생긴 것일 것입니다.",
+  "b": "필요가 생긴 것입니다.",
+  "n": 1,
+  "g": "2015년 판 대조 — 문장 다듬기(2026-11-22)"
  }
 ]
