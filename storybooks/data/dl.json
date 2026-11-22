@@ -644,11 +644,11 @@
 "zip": 18828023
 },
 "Jatakamala": {
-"n": 485,
-"pdf": 443084524,
-"pdfs": 44263230,
-"stories": 33,
-"zip": 442649194
+"n": 500,
+"pdf": 457469008,
+"pdfs": 45738811,
+"stories": 34,
+"zip": 457028038
 },
 "Jatakamala/01-Tigress": {
 "n": 15,
@@ -815,6 +815,11 @@
 "pdf": 14009134,
 "zip": 13733638
 },
+"Jatakamala/34-Woodpecker": {
+"n": 15,
+"pdf": 14656362,
+"zip": 14378951
+},
 "Light-of-Asia": {
 "n": 118,
 "pdf": 84635311,
@@ -898,10 +903,10 @@
 },
 "Pannasa": {
 "n": 803,
-"pdf": 1033955312,
-"pdfs": 99442495,
+"pdf": 1034110963,
+"pdfs": 99473909,
 "stories": 50,
-"zip": 1033404521
+"zip": 1033560175
 },
 "Pannasa/01-King-Aditta": {
 "n": 15,
@@ -940,8 +945,8 @@
 },
 "Pannasa/08-Dhammikapandita": {
 "n": 12,
-"pdf": 14906299,
-"zip": 14639952
+"pdf": 14913322,
+"zip": 14646974
 },
 "Pannasa/09-Siridhara": {
 "n": 13,
@@ -1040,8 +1045,8 @@
 },
 "Pannasa/28-Mahasurasena": {
 "n": 15,
-"pdf": 18515467,
-"zip": 18248796
+"pdf": 18521564,
+"zip": 18254893
 },
 "Pannasa/29-Brahmaghosa": {
 "n": 15,
@@ -1080,8 +1085,8 @@
 },
 "Pannasa/36-Velama": {
 "n": 14,
-"pdf": 18749832,
-"zip": 18484615
+"pdf": 18892368,
+"zip": 18627150
 },
 "Pannasa/37-Vattanguli": {
 "n": 30,
@@ -1207,10 +1212,10 @@
 },
 "The-Great-Emancipation": {
 "n": 234,
-"pdf": 247118492,
-"pdfs": 25100760,
+"pdf": 247130249,
+"pdfs": 25103453,
 "stories": 20,
-"zip": 246787278
+"zip": 246799035
 },
 "The-Great-Emancipation/15-The-Courtesan-Ambapali": {
 "n": 12,
@@ -1299,8 +1304,8 @@
 },
 "The-Great-Emancipation/42-The-Preparation-of-the-Body": {
 "n": 15,
-"pdf": 16686247,
-"zip": 16416433
+"pdf": 16698004,
+"zip": 16428190
 },
 "The-Great-Emancipation/43-The-Story-Concerning-Mahakassapa": {
 "n": 12,
