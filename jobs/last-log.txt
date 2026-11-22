@@ -1,18 +1,24 @@
-Jataka 006-The-Water-Rakkhasa 15 장
 Jatakamala 33-Buffalo 15 장
-Pannasa 01-King-Aditta 15 장
+Jatakamala 34-Woodpecker 15 장
+Pannasa 08-Dhammikapandita 12 장
+Pannasa 28-Mahasurasena 15 장
+Pannasa 36-Velama 14 장
+The-Great-Emancipation 42-The-Preparation-of-the-Body 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 137 개 / 한글판 이야기 302 편
+R2 에 올림: 219 개 / 한글판 이야기 303 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1417170바이트
-이야기 Jataka/006-The-Water-Rakkhasa {'pdf': 19099301, 'zip': 18832880, 'n': 15}
-책 Jataka {'pdf': 496446846, 'pdfs': 50592464, 'zip': 496037086, 'stories': 32, 'n': 422}
+공개 주소 확인: 200 1039915바이트
 이야기 Jatakamala/33-Buffalo {'pdf': 14009134, 'zip': 13733638, 'n': 15}
-책 Jatakamala {'pdf': 443084524, 'pdfs': 44263230, 'zip': 442649194, 'stories': 33, 'n': 485}
-이야기 Pannasa/01-King-Aditta {'pdf': 19995300, 'zip': 19732814, 'n': 15}
-책 Pannasa {'pdf': 1033955312, 'pdfs': 99442495, 'zip': 1033404521, 'stories': 50, 'n': 803}
-내려받기 파일: 6 묶음 새로 만듦
-글로 보기: 302 이야기
+이야기 Jatakamala/34-Woodpecker {'pdf': 14656362, 'zip': 14378951, 'n': 15}
+책 Jatakamala {'pdf': 457469008, 'pdfs': 45738811, 'zip': 457028038, 'stories': 34, 'n': 500}
+이야기 Pannasa/08-Dhammikapandita {'pdf': 14913322, 'zip': 14646974, 'n': 12}
+이야기 Pannasa/28-Mahasurasena {'pdf': 18521564, 'zip': 18254893, 'n': 15}
+이야기 Pannasa/36-Velama {'pdf': 18892368, 'zip': 18627150, 'n': 14}
+책 Pannasa {'pdf': 1034110963, 'pdfs': 99473909, 'zip': 1033560175, 'stories': 50, 'n': 803}
+이야기 The-Great-Emancipation/42-The-Preparation-of-the-Body {'pdf': 16698004, 'zip': 16428190, 'n': 15}
+책 The-Great-Emancipation {'pdf': 247130249, 'pdfs': 25103453, 'zip': 246799035, 'stories': 20, 'n': 234}
+내려받기 파일: 9 묶음 새로 만듦
+글로 보기: 303 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
