@@ -17,13 +17,22 @@
   "img": "images/034-The-Amorous-Fish-02-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     79,
-     83
-    ],
     "shape": "box",
     "en": "Under King Brahmadatta of ancient Benares, the Bodhisatta served as the royal family priest.",
-    "ko": "옛날 바라나시의 브라흐마닷따 왕 때, 보살은 왕실의 사제였습니다."
+    "ko": "옛날 바라나시의 브라흐마닷따 왕 때, 보살은 왕실의 사제였습니다.",
+    "rect": [
+     58,
+     52,
+     262,
+     122
+    ],
+    "whole": true,
+    "align": "center",
+    "cover": [
+     249,
+     231,
+     195
+    ]
    },
    {
     "seed": [
