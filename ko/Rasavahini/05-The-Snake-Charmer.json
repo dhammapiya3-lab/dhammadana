@@ -1,0 +1,500 @@
+[
+ {
+  "img": "images/05-The-Snake-Charmer-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     60,
+     756,
+     112
+    ],
+    "ko": "뱀 부리는 사람과 삼보",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     340,
+     116,
+     366,
+     142
+    ],
+    "ko": " ",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 10,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     44,
+     118,
+     350,
+     280
+    ],
+    "ko": "오래전 깟사빠 부처님께서 열반에\n드신 뒤, 신심 깊은 사람들이 훌륭한\n탑을 세웠습니다. 비구와 비구니와\n재가자들이 모여 금 벽돌과 보석을\n바치며 그분을 기렸습니다. 그러나\n모두가 믿음의 힘을 안 것은\n아니었습니다.",
+    "cover": null,
+    "align": "left",
+    "whole": true,
+    "grow": 5,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-The-Snake-Charmer-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     66,
+     650,
+     114
+    ],
+    "ko": "세상일에 빠진 삶",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     150,
+     112,
+     640,
+     144
+    ],
+    "ko": "떠돌이 뱀 부리는 사람이 마을을 돌며 재주로 먹고살았습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     576,
+     148,
+     594,
+     174
+    ],
+    "ko": " ",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 10,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     200,
+     146,
+     574,
+     236
+    ],
+    "ko": "마을 사람들은 삼보에 깊이 귀의하여\n잠들기 전에 늘 “나모 붓다야”를 외었습니다.\n그러나 뱀 부리는 사람은 그릇된 견해를\n지니고 있었습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     330,
+     246,
+     560,
+     356
+    ],
+    "ko": "그 외는 말의 참된 힘을\n모른 채, 뱀과 놀면서\n장난으로 “나모 붓다야”를\n흉내 내곤 했습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-The-Snake-Charmer-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     62,
+     564,
+     104
+    ],
+    "ko": "신심 깊은 뱀",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     256,
+     110,
+     282,
+     136
+    ],
+    "ko": " ",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 10,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     276,
+     110,
+     530,
+     272
+    ],
+    "ko": "어느 날 힘센 나가 왕이 큰 탑에\n와서 깟사빠 부처님께 예배했습니다.\n깊이 공경하며 절한 뒤, 그 훌륭한\n뱀은 쉬려고 가까운 개미집으로\n조용히 물러나 고요히\n명상했습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-The-Snake-Charmer-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     222,
+     322,
+     578,
+     354
+    ],
+    "ko": "어리석은 붙잡기",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     50,
+     354,
+     750,
+     418
+    ],
+    "ko": "더 큰 뱀을 찾아다니던 뱀 부리는 사람이 나가 왕이 쉬는 곳을 알아냈습니다.\n탐욕에 눈먼 그는 개미집으로 달려가 나가 왕을 묶는 주문을 걸었습니다.\n주문 소리에 깨어난 나가 왕은 사람의 큰 무례에 몹시 노했습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-The-Snake-Charmer-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     246,
+     48,
+     554,
+     90
+    ],
+    "ko": "뜻밖의 외침",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     196,
+     94,
+     604,
+     216
+    ],
+    "ko": "침입자를 죽이려고 성난 나가 왕이 뱀 부리는 사람을\n쫓았습니다. 겁에 질려 달아나던 그는 무거운 돌에 걸려\n넘어졌습니다. 땅에 구르는 순간 장난삼아 하던 버릇이\n나왔습니다. 극도의 공포 속에서 거룩한 말이 입에서\n흘러나왔습니다. “나모 붓다야” — 부처님께 귀의합니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-The-Snake-Charmer-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     246,
+     50,
+     554,
+     94
+    ],
+    "ko": "노여움이 평화로",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     196,
+     98,
+     604,
+     200
+    ],
+    "ko": "그 말이 감로처럼 나가 왕의 귀에 닿았습니다.\n사나운 노여움이 단번에 사라졌습니다. 삼보를 깊이\n공경하여 그는 마음을 완전히 가라앉혔습니다.\n나가가 말했습니다. “두려워 마라. 나는 삼보의 힘에\n묶여 있다. 너를 무는 것은 옳지 않다.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-The-Snake-Charmer-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     226,
+     48,
+     574,
+     90
+    ],
+    "ko": "바뀜의 선물",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     196,
+     94,
+     612,
+     212
+    ],
+    "ko": "거룩한 이름에 마음이 누그러진 나가 왕은 겸손해진 그에게\n아름다운 황금 꽃 세 송이를 주었습니다. “하나는 네 공덕을\n위해, 하나는 나를 위해 올려라.” 나가가 일렀습니다.\n“셋째는 가족을 먹여 살리는 데 써라. 그릇된 견해를 버리고\n해로운 일을 그만두고 보시하며 살아라.”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-The-Snake-Charmer-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     50,
+     560,
+     94
+    ],
+    "ko": "보시의 길",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     196,
+     96,
+     612,
+     194
+    ],
+    "ko": "그는 그대로 따랐습니다. 황금 꽃 두 송이는 탑에 올리고\n셋째는 팔아 큰 재물을 얻었습니다. 뱀 부리는 일은 영영\n그만두었습니다. 그 대신 가족을 돌보고 비구와 비구니와\n가난한 이들에게 아낌없이 보시하며, 다음 생에\n하늘 세계에 태어날 길을 닦았습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-The-Snake-Charmer-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     216,
+     50,
+     584,
+     98
+    ],
+    "ko": "가장 높은 귀의처",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     124,
+     308,
+     276,
+     370
+    ],
+    "ko": "붓다:\n가장 고귀한 말,\n귀에 감로",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     320,
+     308,
+     484,
+     370
+    ],
+    "ko": "담마:\n세상에 견줄 데 없는\n궁극의 길",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     522,
+     308,
+     676,
+     370
+    ],
+    "ko": "상가:\n평화를 이룬\n가장 높은 공동체",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     80,
+     376,
+     724,
+     422
+    ],
+    "ko": "이 말을 하고 듣고 마음에 새기면 몸이 바뀝니다. 그 낱말들은 뚫을 수 없는\n갑옷이요, 소원을 이루는 보석이요, 하늘 나무가 되어 끝없는 보호를 줍니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-The-Snake-Charmer-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     444,
+     146,
+     772,
+     190
+    ],
+    "ko": "이름의 공덕",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     450,
+     196,
+     768,
+     332
+    ],
+    "ko": "어리석은 사람이 깨끗한 마음 없이\n부처님의 이름을 불러도 그 견줄 데\n없는 힘으로 목숨을 건지고 삶이\n바뀌었습니다. 하물며 그 뜻을 참으로\n알고 신심 어린 마음으로 거룩한\n이름을 부르는 이의 복은 얼마나\n크겠습니까?",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

@@ -1,0 +1,323 @@
+[
+ {
+  "img": "images/04-The-Wise-Buddheni-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     244,
+     322,
+     556,
+     442
+    ],
+    "ko": "붓데니의 신심과 오름\n재물과 공덕과 하늘을 나는 말 이야기\n옛 빠딸리뿟따를 그림으로 따라가는 여행",
+    "cover": [
+     228,
+     167,
+     60
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-The-Wise-Buddheni-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     308,
+     126,
+     492,
+     344
+    ],
+    "ko": "옛 빠딸리뿟따에서 붓데니라는\n어린 소녀가 부모를 여의고\n8억 7천만 냥의 큰 재산을\n물려받았습니다.\n\n빛나고 신심 깊은 그녀에게\n왕과 장군들이 청혼했지만\n모두 거절했습니다. 세상의\n집착은 재산과 마음을 망칠\n뿐임을 알았기 때문입니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-The-Wise-Buddheni-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     268,
+     398,
+     412
+    ],
+    "ko": "“남편을 구해 무엇 하리? 내 재산을\n부처님의 가르침에 바치겠다.”\n\n붓데니는 훌륭한 공양 회관을 지었습니다.\n깨끗한 마음과 손으로 거룩한 비구와\n비구니들에게 큰 공양을 올리고, 오계를\n굳게 지키며 집을 성소로 바꾸었습니다.",
+    "cover": [
+     235,
+     180,
+     42
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-The-Wise-Buddheni-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     516,
+     96,
+     720,
+     380
+    ],
+    "ko": "어느 날 떠돌이 말 장수가\n그녀의 집에서 쉬었습니다.\n그녀의 친절에 감동한 그는\n무리 가운데 어떤 말이든\n고르라고 했습니다.\n\n붓데니는 기운찬 신두\n망아지를 골랐습니다.\n\n“정성껏 돌보세요.” 말 장수가\n당부했습니다. 망아지를 기르며\n그녀는 곧 놀라운 비밀을\n알게 되었습니다. 그 말은\n하늘을 날 수 있었습니다.",
+    "cover": [
+     163,
+     78,
+     57
+    ],
+    "align": "center",
+    "em": 15,
+    "whole": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-The-Wise-Buddheni-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     416,
+     270,
+     762,
+     414
+    ],
+    "ko": "신기한 벗을 얻은 붓데니의 신심은 더욱\n높아졌습니다.\n\n그녀는 금은으로 훌륭한 꽃다발을 만들었습니다.\n하늘을 나는 말을 타고 곧장 큰 보리수로\n날아갔습니다. 부처님께서 마라를 물리치신\n거룩한 자리입니다.",
+    "cover": [
+     227,
+     175,
+     72
+    ],
+    "align": "center",
+    "em": 15,
+    "whole": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-The-Wise-Buddheni-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     330,
+     292,
+     762,
+     414
+    ],
+    "ko": "거룩한 보리수 뜰에 머물며 그녀는 하늘을 향해 외쳤습니다.\n“부처님의 거룩한 제자들이여, 오셔서 예배하소서!”\n\n그녀의 맑은 부름을 듣고 많은 거룩한 비구들이 하늘을 날아\n왔습니다. 그들은 함께 큰 보리수를 금빛 꽃다발로 꾸미며\n지극한 신심을 바쳤습니다.",
+    "cover": [
+     225,
+     172,
+     76
+    ],
+    "align": "center",
+    "em": 15,
+    "whole": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-The-Wise-Buddheni-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     466,
+     58,
+     762,
+     206
+    ],
+    "ko": "그녀의 잦은 신기한 나들이는 눈에\n띄었습니다. 그녀의 아름다움에 반한\n숲지기들이 왕에게 알렸습니다.\n\n욕망에 사로잡힌 왕이 말했습니다.\n“신에게나 어울릴 여인이니 내 왕비로\n삼겠다!” 왕은 사나운 자들을 보내\n보리수 가까이 숨어 그녀를 잡게 했습니다.",
+    "cover": [
+     227,
+     197,
+     130
+    ],
+    "align": "center",
+    "em": 15,
+    "whole": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-The-Wise-Buddheni-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     330,
+     296,
+     762,
+     416
+    ],
+    "ko": "붓데니가 아라한들과 함께 꽃 공양을 마치자\n담마락키따 존자께서 다가와 다급히 일러 주셨습니다.\n\n“누이여, 도둑들이 그대를 잡으려고 길목에 숨어 있습니다.\n어서 피하고 조심하십시오!” 그녀가 말을 재촉해 달아나자\n도둑들이 그늘에서 뛰쳐나와 뒤쫓았습니다.",
+    "cover": [
+     222,
+     170,
+     79
+    ],
+    "align": "center",
+    "em": 15,
+    "whole": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-The-Wise-Buddheni-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     250,
+     762,
+     404
+    ],
+    "ko": "말이 놀라운 속도로 하늘로 솟구쳤습니다.\n그 힘을 견디지 못한 붓데니는 미끄러져\n떨어지기 시작했습니다.\n\n“내가 베푼 도움을 기억하렴, 아들아!”\n그녀가 외쳤습니다.\n\n그 소리를 들은 고귀한 말은 다시 날아 내려와\n그녀를 등에 받아 무사히 집으로 데려갔습니다.",
+    "cover": [
+     254,
+     254,
+     254
+    ],
+    "align": "center",
+    "em": 15,
+    "whole": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-The-Wise-Buddheni-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     124,
+     76,
+     676,
+     122
+    ],
+    "ko": "붓데니의 여정에 담긴 업의 작용",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     50,
+     272,
+     274,
+     410
+    ],
+    "ko": "1. 보시(dāna)\n\n행동: 8억 7천만 냥을\n비구·비구니께 바침.\n\n결과: 세상의 파멸에서\n완전히 벗어남.",
+    "cover": [
+     221,
+     167,
+     72
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     286,
+     272,
+     514,
+     410
+    ],
+    "ko": "2. 신심(saddhā)\n\n행동: 보리수에 바칠\n금 꽃다발을 만듦.\n\n결과: 깨달은 아라한들과\n함께함.",
+    "cover": [
+     221,
+     167,
+     72
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     530,
+     272,
+     754,
+     410
+    ],
+    "ko": "3. 은혜를 앎(kataññutā)\n\n행동: 신두 망아지를\n정성껏 돌봄.\n\n결과: 붙잡힘과 죽음에서\n기적처럼 구조됨.",
+    "cover": [
+     221,
+     167,
+     73
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/04-The-Wise-Buddheni-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     218,
+     274,
+     586,
+     406
+    ],
+    "ko": "붓데니는 남은 생을 계를 지키며\n부처님의 가르침을 보호했습니다.\n\n목숨을 마치자 꿈에서 깨듯\n가볍게 하늘 세계에서 깨어났습니다.\n\n젊은 여인도 공덕으로 하늘에 이를 수 있다면,\n누가 보시와 덕행에 무관심할 수 있겠습니까?",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
