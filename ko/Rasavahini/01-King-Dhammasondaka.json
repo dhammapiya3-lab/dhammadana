@@ -1,0 +1,632 @@
+[
+ {
+  "img": "images/01-King-Dhammasondaka-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     212,
+     68,
+     590,
+     144
+    ],
+    "ko": "담마손다까 왕의 희생\n궁극의 진리 이야기",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Dhammasondaka-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     92,
+     140,
+     334,
+     320
+    ],
+    "ko": "담마손다까 왕은 큰 부를\n누리며 바라나시를\n다스렸습니다. 그러나\n부처님의 가르침이 세상에서\n사라지자 호화로운 궁전에\n깊은 공허가 감돌았습니다.\n진리 없는 권력은\n아무 뜻이 없었습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Dhammasondaka-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     10,
+     604,
+     54
+    ],
+    "ko": "법이 없는 나라",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     312,
+     82,
+     496,
+     110
+    ],
+    "ko": "하늘 — 해가 없음",
+    "cover": [
+     254,
+     254,
+     254
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     300,
+     168,
+     506,
+     198
+    ],
+    "ko": "밤 — 달이 없음",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     290,
+     258,
+     514,
+     288
+    ],
+    "ko": "코끼리 — 상아가 없음",
+    "cover": [
+     255,
+     254,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     294,
+     346,
+     512,
+     376
+    ],
+    "ko": "바다 — 기슭이 없음",
+    "cover": [
+     254,
+     254,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     182,
+     414,
+     620,
+     444
+    ],
+    "ko": "진리 없는 다스림에는 영광이 없습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Dhammasondaka-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     22,
+     580,
+     66
+    ],
+    "ko": "더해 가는 희생",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     480,
+     104,
+     732,
+     160
+    ],
+    "ko": "3. 나라: 대신들에게\n왕위를 내주었습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     480,
+     214,
+     732,
+     270
+    ],
+    "ko": "2. 신분: 스승의 종이\n되겠다고 했습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     480,
+     312,
+     732,
+     380
+    ],
+    "ko": "1. 재물: 가르침 한 마디에\n큰 황금을 내걸었습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     240,
+     400,
+     560,
+     436
+    ],
+    "ko": "법을 찾지 못한 왕은 숲으로 들어갔습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Dhammasondaka-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     44,
+     26,
+     394,
+     144
+    ],
+    "ko": "왕은 사나운 짐승이 가득한 어두운 숲\n깊이 들어갔습니다. 그의 큰 공덕 때문에\n신들의 왕 삭까의 돌 옥좌가 뜨거워졌습니다.\n삭까는 이 놀라운 구도자를 시험해\n보기로 했습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Dhammasondaka-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     450,
+     59,
+     768,
+     141
+    ],
+    "ko": "삭까의 환영",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 32,
+    "whole": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     456,
+     174,
+     652,
+     197
+    ],
+    "ko": "타는 눈: 불처럼 이글거림",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 15,
+    "whole": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     448,
+     223,
+     758,
+     250
+    ],
+    "ko": "구리 엄니: 큰 입에서 튀어나옴",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 15,
+    "whole": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     448,
+     277,
+     652,
+     303
+    ],
+    "ko": "푸른 배: 짙고 무서운 빛깔",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 15,
+    "whole": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     448,
+     331,
+     690,
+     359
+    ],
+    "ko": "피 묻은 칼: 큰 손에 쥠",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 15,
+    "whole": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     450,
+     386,
+     766,
+     422
+    ],
+    "ko": "왕의 결심을 가르는 무서운 시험",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "em": 16,
+    "whole": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Dhammasondaka-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     164,
+     322,
+     668,
+     424
+    ],
+    "ko": "왕은 두려움 없이 약카에게 법을 청했습니다.\n\n약카가 대답했습니다. “나는 성스러운 게송 하나를 알지만\n몹시 굶주렸다. 네 피로 목을 축이기 전에는 말할 수 없다.”",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Dhammasondaka-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     48,
+     296,
+     140
+    ],
+    "ko": "왕은 난처했습니다.\n“네가 나를 먼저 먹으면\n내가 어떻게 법을\n듣겠는가?”",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     560,
+     160,
+     766,
+     334
+    ],
+    "ko": "약카가 높이 솟은\n산을 만들어 내고\n조건을 내걸었습니다.\n“내 입으로 뛰어들어라.\n네가 떨어지는 동안\n게송을 읊어 주마.”",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Dhammasondaka-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     244,
+     26,
+     488,
+     170
+    ],
+    "ko": "셀 수 없는 지난 생에서\n그의 몸은 헛되이 버려졌습니다.\n- 사나운 짐승에게\n- 갑작스러운 추락으로\n- 모진 병으로",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     396,
+     354,
+     760,
+     424
+    ],
+    "ko": "오늘 그는 기뻐했습니다. 잠깐뿐인\n이 몸을 마침내 영원한 진리와\n바꾸게 되었기 때문입니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Dhammasondaka-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     264,
+     48,
+     536,
+     78
+    ],
+    "ko": "우주적 교환",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     264,
+     78,
+     536,
+     148
+    ],
+    "ko": "몸의 희생: 왕이 기꺼이 죽음으로 뛰어듭니다.\n영적인 깨달음: 약카가 사라집니다. 삭까가 빛나는\n하늘 모습을 드러내어 떨어지는 왕을 받아 안고\n성스러운 가르침을 전합니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 12,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Dhammasondaka-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     92,
+     728,
+     338
+    ],
+    "ko": "Aniccā vata saṅkhārā,\nuppādavayadhammino.\n형성된 것들은 참으로 무상하여\n일어나고 사라지는 법을 지녔다.\n일어났다가는 소멸하나니,\n그들의 가라앉음이 참된 행복이다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/01-King-Dhammasondaka-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     84,
+     308,
+     178
+    ],
+    "ko": "무상의 진리로 깨친 왕은\n다시 나라로 돌아와\n완전한 지혜로\n다스렸습니다.",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     492,
+     84,
+     708,
+     178
+    ],
+    "ko": "그분이 법을 위해 목숨까지\n바치려 했다면, 우리가\n어찌 게으를 수 있겠는가?",
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

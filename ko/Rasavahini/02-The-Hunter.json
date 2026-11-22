@@ -1,0 +1,600 @@
+[
+ {
+  "img": "images/02-The-Hunter-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     60,
+     428,
+     188
+    ],
+    "ko": "사냥꾼\n미갈룻다까의 변화",
+    "cover": [
+     245,
+     237,
+     218
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     380,
+     316,
+     752,
+     408
+    ],
+    "ko": "법의 공덕이 불어나는\n이야기",
+    "cover": [
+     245,
+     236,
+     218
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     488,
+     110,
+     752,
+     150
+    ],
+    "ko": "시키 부처님의 시대",
+    "cover": [
+     247,
+     239,
+     224
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     488,
+     152,
+     752,
+     356
+    ],
+    "ko": "31겁 전, 시키 부처님께서\n세상을 밝히셨습니다. 홀로\n머물고자 꽃이 만발한 아름다운\n숲에 드셨습니다. 시원한 돌\n위에 앉으시어 여섯 빛깔의\n빛을 내시며 천신들의 모임에\n사성제를 설하기 시작하셨습니다.",
+    "cover": [
+     246,
+     239,
+     223
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     112,
+     352,
+     148
+    ],
+    "ko": "사냥꾼이 오다",
+    "cover": [
+     247,
+     242,
+     225
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     72,
+     156,
+     356,
+     344
+    ],
+    "ko": "미갈룻다까는 숲속의 사슴과\n멧돼지를 잡아 가족을 먹여\n살리는 사냥꾼이었습니다.\n활과 화살을 들고 숲 깊이\n헤매다가 천신들의 모임과\n마주쳤습니다. 그는 해처럼\n빛나시는 부처님을 보았습니다.",
+    "cover": [
+     246,
+     241,
+     225
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     292,
+     325,
+     512,
+     357
+    ],
+    "ko": "공덕의 불씨",
+    "cover": [
+     247,
+     238,
+     221
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     56,
+     355,
+     266,
+     391
+    ],
+    "ko": "1. 다가감: 무기를 내려놓고\n한쪽에 섰습니다.",
+    "cover": [
+     245,
+     238,
+     221
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     284,
+     355,
+     528,
+     391
+    ],
+    "ko": "2. 받아들임: 잠깐 동안\n가장 높은 법을 들었습니다.",
+    "cover": [
+     245,
+     238,
+     222
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     532,
+     355,
+     748,
+     391
+    ],
+    "ko": "3. 바뀜: 마음이 깊은\n믿음과 기쁨으로 찼습니다.",
+    "cover": [
+     245,
+     238,
+     222
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     48,
+     296,
+     90
+    ],
+    "ko": "윤회의 바퀴",
+    "cover": [
+     251,
+     247,
+     235
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     320,
+     110,
+     490,
+     150
+    ],
+    "ko": "씨앗:\n잠깐의 기쁜 믿음",
+    "cover": [
+     251,
+     247,
+     235
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     296,
+     286,
+     520,
+     362
+    ],
+    "ko": "다시 사람으로:\n이 좋은 겁에 사왓티의\n큰 부잣집에 태어남",
+    "cover": [
+     251,
+     248,
+     236
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     546,
+     360,
+     770,
+     420
+    ],
+    "ko": "거둠(31겁):\n오직 하늘 세계에만 태어남.\n낮은 세계의 괴로움은 없음.",
+    "cover": [
+     250,
+     245,
+     232
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     236,
+     49,
+     564,
+     89
+    ],
+    "ko": "고따마 부처님의 황금시대",
+    "cover": [
+     250,
+     245,
+     233
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     180,
+     91,
+     620,
+     161
+    ],
+    "ko": "공덕에 지켜져 그는 으뜸가는 도시 사왓티에 태어났습니다.\n큰 부와 힘을 지닌 젊은이가 되어, 많은 시종에 둘러싸여\n사람이 누릴 수 있는 가장 좋은 즐거움을 누리며 자랐습니다.",
+    "cover": [
+     251,
+     247,
+     235
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     260,
+     50,
+     540,
+     86
+    ],
+    "ko": "제따와나에서의 만남",
+    "cover": [
+     249,
+     244,
+     231
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     262,
+     88,
+     546,
+     300
+    ],
+    "ko": "젊은이는 거닐다가\n제따와나 승원에 이르렀습니다.\n\n옛일이 되풀이되었습니다.\n부처님께서 제자들과 앉아 계신\n것을 보고 사성제의 감미로운\n가르침을 들었습니다.\n31겁 전에 심은 업의 씨앗이\n꽃필 때가 되었습니다.",
+    "cover": [
+     251,
+     248,
+     235
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     336,
+     572,
+     388
+    ],
+    "ko": "출가와 깨달음",
+    "cover": [
+     250,
+     246,
+     231
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     60,
+     386,
+     744,
+     428
+    ],
+    "ko": "법을 듣고 그는 큰 재산을 버리고 부처님의 교단에 출가했습니다. 하루 만에 가르침을\n익히고 모든 번뇌를 부수어, 늙지 않고 죽지 않는 열반의 가장 높은 평화를 얻었습니다.",
+    "cover": [
+     248,
+     240,
+     225
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     280,
+     50,
+     520,
+     86
+    ],
+    "ko": "업의 거울",
+    "cover": [
+     248,
+     243,
+     229
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     86,
+     106,
+     394,
+     150
+    ],
+    "ko": "원인 (시키 부처님 시대)",
+    "cover": [
+     248,
+     244,
+     231
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     410,
+     106,
+     716,
+     150
+    ],
+    "ko": "결과 (고따마 부처님 시대)",
+    "cover": [
+     249,
+     245,
+     232
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     140,
+     304,
+     352,
+     392
+    ],
+    "ko": "거친 숲.\n믿음의 불씨.\n하늘에 태어남.",
+    "cover": [
+     250,
+     246,
+     234
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     466,
+     310,
+     696,
+     384
+    ],
+    "ko": "제따와나 승원.\n출가.\n궁극의 열반.",
+    "cover": [
+     250,
+     245,
+     231
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     420,
+     74,
+     712,
+     102
+    ],
+    "ko": "아라한의 선언",
+    "cover": [
+     245,
+     236,
+     224
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     398,
+     104,
+     716,
+     192
+    ],
+    "ko": "비구와 비구니들의 모임 가운데 서서\n그는 크게 기뻐하며 지난 행위를 밝혔습니다.\n“잘 설해진 법을 단 한 순간 들었기에\n나는 다시는 괴로운 세계에 태어날까\n두려워하지 않았습니다.”",
+    "cover": [
+     243,
+     238,
+     226
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/02-The-Hunter-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     306,
+     128,
+     498,
+     182
+    ],
+    "ko": "궁극의\n가르침",
+    "cover": null,
+    "align": "center",
+    "em": 22,
+    "whole": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     306,
+     178,
+     498,
+     334
+    ],
+    "ko": "게으르지 마십시오. 법을\n듣기란 참으로 드뭅니다.\n잠깐 듣는 것만으로도\n헤아릴 수 없는 재물과\n궁극의 평화를 얻습니다.\n망설임을 버리고\n법을 구하십시오.",
+    "cover": null,
+    "align": "center",
+    "em": 14,
+    "whole": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]

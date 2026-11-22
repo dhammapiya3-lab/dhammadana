@@ -1,0 +1,735 @@
+[
+ {
+  "img": "images/03-Three-Characters-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     56,
+     78,
+     744,
+     178
+    ],
+    "ko": "은혜를 모르는 사람과 동물 은인들\n배신과 참된 우정 이야기",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Three-Characters-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     420,
+     96,
+     752,
+     136
+    ],
+    "ko": "이야기의 바탕",
+    "cover": [
+     217,
+     162,
+     59
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     420,
+     140,
+     752,
+     386
+    ],
+    "ko": "오래전 깨달으신 분께서 제자들에게\n감사의 참뜻에 대한 이야기를\n들려주셨습니다.\n\n지난 시대 잠부디빠(인도)에서\n가장 높은 덕이 때로는 사람이\n아니라 길들지 않은 숲속\n짐승에게서 발견된다는 것을\n보여 주신 이야기입니다.",
+    "cover": [
+     218,
+     162,
+     56
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Three-Characters-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     228,
+     162,
+     576,
+     200
+    ],
+    "ko": "해가 태운 땅",
+    "cover": [
+     243,
+     224,
+     183
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     228,
+     202,
+     576,
+     350
+    ],
+    "ko": "큰 가뭄이 잠부디빠를 덮쳤습니다.\n강과 호수와 산골 물이 말라 버렸습니다.\n\n나무는 시들고 땅은 갈라졌습니다.\n목마름에 미친 사람과 짐승들이\n신기루를 좇아 메마른 숲을 헤매며\n애타게 물을 찾았습니다.",
+    "cover": [
+     243,
+     223,
+     182
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Three-Characters-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     98,
+     432,
+     142
+    ],
+    "ko": "깊은 구덩이에 갇히다",
+    "cover": [
+     236,
+     194,
+     96
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     72,
+     150,
+     438,
+     344
+    ],
+    "ko": "희미한 물 냄새에 이끌려\n앵무새와 뱀과 사람 하나가\n깊은 구덩이로 내려갔습니다.\n\n다시 올라올 힘이 없어 그들은\n꼼짝없이 함께 갇혔습니다.\n죽음을 두려워하며 어둠 속에\n앉아 마지막을 기다렸습니다.",
+    "cover": [
+     236,
+     194,
+     95
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Three-Characters-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     444,
+     100,
+     742,
+     140
+    ],
+    "ko": "구해 내다",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     444,
+     150,
+     744,
+     348
+    ],
+    "ko": "바라나시에서 온 지친 나그네가\n구덩이에 다가왔습니다. 그들의\n딱한 처지를 보고 연민이\n가득해졌습니다.\n\n덩굴로 바구니를 엮어 깊은 곳에\n내려 보내, 새와 뱀과 사람\n셋을 모두 안전하게 끌어올렸습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Three-Characters-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     376,
+     90,
+     700,
+     128
+    ],
+    "ko": "약속",
+    "cover": [
+     224,
+     181,
+     112
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     376,
+     136,
+     750,
+     406
+    ],
+    "ko": "기쁨에 넘친 이들은 은인에게\n평생 우정을 맹세했습니다.\n\n• 앵무새: 도움이 필요하면 반얀나무에\n  와서 내 이름을 부르세요.\n• 뱀: 그 나무 가까이 내 개미집을\n  찾아와 나를 부르세요.\n• 사람: 어려울 때면 언제든 바라나시\n  우리 집으로 오세요.",
+    "cover": [
+     225,
+     182,
+     109
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Three-Characters-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     82,
+     448,
+     118
+    ],
+    "ko": "우정의 첫 시험",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     60,
+     126,
+     448,
+     300
+    ],
+    "ko": "뒷날 큰 어려움에 처한 은인은\n동물 친구들을 찾아갔습니다.\n\n그의 부탁을 들은 충직한 앵무새는\n왕의 정원으로 날아갔습니다. 왕이\n목욕하는 것을 보고 왕의 진주 목걸이를\n물어 와 은인의 손에 살며시 떨어뜨렸습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Three-Characters-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     76,
+     106,
+     406,
+     146
+    ],
+    "ko": "사람의 배신",
+    "cover": [
+     201,
+     151,
+     74
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     76,
+     152,
+     410,
+     350
+    ],
+    "ko": "목걸이를 숨길 안전한 곳이\n필요했던 은인은 바라나시의\n사람 친구를 믿었습니다.\n\n그러나 구해 준 사람의 마음은\n탐욕에 물들어 있었습니다. 왕의\n포상 소식을 듣자 자기 목숨을\n살려 준 이를 왕의 병사들에게\n밀고했습니다.",
+    "cover": [
+     203,
+     151,
+     69
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Three-Characters-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     50,
+     440,
+     96
+    ],
+    "ko": "말뚝형에 처해지다",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     36,
+     96,
+     712,
+     152
+    ],
+    "ko": "도둑맞은 일에 노한 왕은 죄 없는 은인을 남쪽 문에서 말뚝에 꿰어 죽이라고 명했습니다.\n병사들에게 끌려가며 은인은 마지막 약속을 떠올렸습니다.\n개미집에 다가가 뱀을 불렀습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Three-Characters-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     322,
+     600,
+     366
+    ],
+    "ko": "뱀의 꾀",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     46,
+     366,
+     756,
+     417
+    ],
+    "ko": "고마움을 아는 뱀이 나와 기막힌 꾀를 냈습니다. 뱀이 속삭였습니다.\n“내가 왕비를 물겠습니다. 어떤 왕실 의사도 고치지 못할 겁니다. 이 비밀 약으로\n내 독을 빼내는 당신만이 왕비의 목숨과 당신의 목숨을 구할 수 있습니다.”",
+    "cover": [
+     132,
+     36,
+     23
+    ],
+    "align": "center",
+    "em": 13,
+    "whole": true,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Three-Characters-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     56,
+     304,
+     96
+    ],
+    "ko": "왕비를 고치다",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     40,
+     100,
+     304,
+     280
+    ],
+    "ko": "뱀은 꾀한 대로 물었습니다.\n왕비가 정신을 잃자 나라의\n의사들은 어쩔 줄 몰랐습니다.\n\n은인이 나섰습니다. 뱀의 비밀\n약을 쓰자 독이 곧바로 사라졌습니다.\n왕비는 깨끗이 나아 깨어났고,\n왕은 고마움에 넘쳤습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Three-Characters-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     261,
+     544,
+     297
+    ],
+    "ko": "배신이 드러나다",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     232,
+     299,
+     552,
+     398
+    ],
+    "ko": "왕을 뵙게 된 은인은 모든 진실을 아뢰었습니다.\n\n가뭄과 구덩이와 구출, 충직한 동물들, 그리고\n순전히 탐욕 때문에 자기를 거짓으로 고발한\n은혜를 모르는 사람의 쓰라린 배신까지\n모두 이야기했습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Three-Characters-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     44,
+     660,
+     112
+    ],
+    "ko": "감사의 저울",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     60,
+     124,
+     222,
+     160
+    ],
+    "ko": "존재",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     236,
+     124,
+     398,
+     160
+    ],
+    "ko": "약속",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     412,
+     124,
+     570,
+     160
+    ],
+    "ko": "행동",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     588,
+     124,
+     748,
+     160
+    ],
+    "ko": "충직함",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     236,
+     176,
+     398,
+     228
+    ],
+    "ko": "부르면 응하겠다",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     412,
+     176,
+     570,
+     228
+    ],
+    "ko": "목숨을 걸고\n왕의 보물을 가져옴",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     236,
+     262,
+     398,
+     314
+    ],
+    "ko": "부르면 응하겠다",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     412,
+     262,
+     570,
+     314
+    ],
+    "ko": "멋진 꾀로\n은인을 구해 냄",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     236,
+     340,
+     398,
+     394
+    ],
+    "ko": "피난처가 되겠다",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     412,
+     340,
+     570,
+     394
+    ],
+    "ko": "포상을 받으려\n은인을 팔아넘김",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 14,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Three-Characters-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     277,
+     560,
+     317
+    ],
+    "ko": "배은망덕의 독",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     248,
+     317,
+     552,
+     337
+    ],
+    "ko": "옛 게송은 깊은 진리를 가르칩니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     150,
+     341,
+     650,
+     417
+    ],
+    "ko": "뱀의 독은 몸을 해치지만, 은혜를 모르는 마음의 독은 영혼을\n무너뜨립니다. 사람은 스스로를 더 낫다고 여기지만, 참된 고귀함은\n오로지 행동과 충직함과 감사로 가늠합니다. 이 덕은 오히려\n숲의 짐승들이 잘 갖추고 있습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/03-Three-Characters-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     220,
+     56,
+     600,
+     104
+    ],
+    "ko": "화목한 삶",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     190,
+     104,
+     612,
+     198
+    ],
+    "ko": "참된 덕을 알아본 왕은 배신자를 엄히 벌했습니다.\n\n그리고 은인에게 큰 재산을 내리고 반얀나무와\n개미집 사이에 훌륭한 집을 지어 주었습니다. 그곳에서\n그는 참된 동물 친구들과 평생 기쁘고 화목하게 살았습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 5,
+    "em": 13,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
