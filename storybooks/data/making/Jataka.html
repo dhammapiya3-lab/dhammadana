@@ -1,0 +1,86 @@
+<h1>우리말로 그림책 만들기</h1>
+<p class="lead">「빠알리 자따까 이야기」는 아래와 같은 방법으로 만들어졌으며, 프롬프트만 이 책에 맞게 바뀌었습니다. 이 쪽은 원작 사이트 Dharma Storybooks의 안내 「Make Storybooks In Your Own Language」(아난다조띠 스님)를 우리말로 옮긴 것입니다. 원작자는 「깨달음에서 두 상수제자까지」의 첫 장을 <b>한국어</b>로 다시 만드는 과정을 예로 들어, 누구나 자기 나라 말로 이런 그림책을 만들 수 있도록 방법과 프롬프트를 공개했습니다. 원문: <a href="https://dharma-storybooks.net/guide/index.htm" target="_blank" rel="noopener">dharma-storybooks.net/guide</a> (CC BY-SA 4.0)</p>
+
+<p>이 사이트에 있는 것과 같은 그림책을 여러분의 말로 만들어 보고 싶은 분이 계실 것 같아 짧은 안내를 썼습니다. 여기서는 <a href="/After-Awakening/">「깨달음에서 두 상수제자까지」</a>의 첫 장을 한국어로 다시 만드는 것을 예로 듭니다.</p>
+
+<p>먼저 <a href="https://notebook.google.com/" target="_blank" rel="noopener">Gemini Notebook</a>으로 갑니다. 구글 계정이 없으면 하나 만들어야 합니다. 로그인합니다.</p>
+
+<p>그다음 화면 위쪽의 <b>새 노트북</b>(New Notebook)을 누릅니다.</p>
+<img src="/making/After-Awakening/Tutorial-01.jpg" alt="새 노트북 만들기" loading="lazy">
+
+<p>이렇게 자료(소스)를 더하는 화면이 열릴 수도 있고,</p>
+<img src="/making/After-Awakening/Tutorial-02.jpg" alt="자료 더하기 화면" loading="lazy">
+
+<p>곧바로 자료를 더하는 창이 나올 수도 있습니다.</p>
+<img src="/making/After-Awakening/Tutorial-03.jpg" alt="자료 더하기 창" loading="lazy">
+
+<p>여기서는 <b>웹사이트</b>(Websites)를 누릅니다. 텍스트 파일, 워드 파일, PDF 등 원하는 자료를 어디서든 더할 수도 있습니다.</p>
+
+<p>이 예에서는 다음 웹 주소들을 더합니다.</p>
+<pre>https://ancient-buddhist-texts.net/et/Great-Chapter/01-Awakening-Tree.htm
+https://ancient-buddhist-texts.net/et/Great-Chapter/02-Grumbling-Brahmana.htm
+https://ancient-buddhist-texts.net/et/Great-Chapter/03-Mucalinda.htm</pre>
+
+<p>여러 가지 자료를 섞어 넣을 수도 있습니다. 예를 들어 그림 양식의 본보기가 될 사진이나, 그릴 인물의 본보기가 될 사람 사진을 넣어도 됩니다.</p>
+<img src="/making/After-Awakening/Tutorial-04.jpg" alt="자료를 더한 모습" loading="lazy">
+
+<p>결과물의 언어는 두 곳에서 정할 수 있습니다. 첫째, 가장 쉬운 방법은 설정에서 아예 자기 나라 말로 정해 두는 것입니다. 보통은 컴퓨터(운영 체제) 언어에 맞춰 저절로 정해지지만, 그렇지 않으면 톱니바퀴를 누르고 <b>출력 언어</b>(Output language)를 고릅니다. 그러면 그다음부터 나오는 모든 결과물의 기본 언어가 됩니다.</p>
+<img src="/making/After-Awakening/Tutorial-05.jpg" alt="출력 언어 설정" loading="lazy">
+
+<p>이 예에서는 목록 맨 아래로 내려가 한국어를 고릅니다.</p>
+<img src="/making/After-Awakening/Tutorial-06.jpg" alt="기본 출력 언어를 한국어로" loading="lazy">
+
+<p>중요한 점: 자료와 프롬프트는 어떤 말로 넣어도 됩니다. 빠알리어, 산스끄리뜨어, 중국어 등도 괜찮으며, <i>결과물의 언어와 달라도 됩니다</i>. Gemini는 대부분의 옛 불교 언어를 잘 이해합니다.</p>
+
+<p>또는 <b>슬라이드 자료</b>(Slide Deck)를 눌러 열린 창에서 언어를 정할 수도 있습니다(이 경우에는 지금 만드는 슬라이드에만 적용됩니다).</p>
+<img src="/making/After-Awakening/Tutorial-07.jpg" alt="슬라이드 자료의 언어 설정" loading="lazy">
+
+<p>그다음 프롬프트를 붙여 넣습니다. 그림 양식을 고르고 지시를 분명하게 주면 결과가 크게 달라집니다. 이 예의 프롬프트는 다음과 같습니다.</p>
+<pre>Make the slides like a graphic novel.
+The slides should be more figurative and less abstract.
+Always add a patterned border to the slide, around 8% of canvas size, and keep text and text boxes away from the edges.
+A maximum of 50 words on each slide.
+There should be consistency in the appearance of the characters.
+Nuns should also have their right shoulder covered by a blouse under their outer robe.
+The Buddha and Paccekabuddhas should always have a uṣṇiṣa and black curly hair.
+The Bodhisatta should look like an ordinary person/animal, he should not have Buddha markings yet.
+Monks and nuns should dress like Theravāda monks and nuns, with shaved, uncovered heads, orange robes.
+Use the correct diacritics only with fonts that support Sanskrit transliteration, unicode compliant.
+Use dot over m (ṁ) for niggahīta.
+Monastics should never have any markers on their foreheads.</pre>
+<p>우리말로 옮기면:</p>
+<ul>
+<li>슬라이드를 그래픽 노블(만화 소설)처럼 만들 것.</li>
+<li>추상적이기보다 구체적인 그림으로 할 것.</li>
+<li>슬라이드마다 화면 크기의 8% 안팎으로 무늬 테두리를 두르고, 글과 글 상자는 가장자리에서 떨어뜨려 둘 것.</li>
+<li>슬라이드마다 글은 많아야 50낱말.</li>
+<li>인물들의 생김새가 처음부터 끝까지 한결같을 것.</li>
+<li>비구니는 겉가사 안에 입은 웃옷으로 오른쪽 어깨도 가릴 것.</li>
+<li>부처님과 벽지불께는 늘 육계(uṣṇīṣa)와 검은 곱슬머리가 있을 것.</li>
+<li>보살은 평범한 사람이나 동물로 그리고, 아직 부처님의 상호를 갖추지 않게 할 것.</li>
+<li>비구와 비구니는 테라와다 비구·비구니처럼 입힐 것 — 머리를 깎아 가리지 않고, 주황색 가사.</li>
+<li>발음 기호는 산스끄리뜨 로마자 표기를 지원하는(유니코드에 맞는) 글꼴에서만 바르게 쓸 것.</li>
+<li>닉가히따(niggahīta)는 점이 위에 찍힌 m(ṁ)으로 쓸 것.</li>
+<li>출가자의 이마에는 어떤 표시도 그리지 말 것.</li>
+</ul>
+<p class="muted">프롬프트는 원문(영어) 그대로 넣어도 됩니다. 앞에서 말했듯 프롬프트의 언어와 결과물의 언어는 달라도 됩니다.</p>
+<img src="/making/After-Awakening/Tutorial-08.jpg" alt="프롬프트 넣기" loading="lazy">
+
+<p>다 되었으면 <b>생성</b>(Generate)을 누릅니다.</p>
+
+<p>결과물의 예는 <a href="https://notebook.google.com/notebook/1558710d-67cd-46dc-b8f7-d052cb6c7dda" target="_blank" rel="noopener">여기에서 볼 수 있습니다</a>.</p>
+
+<p>한 가지 중요한 점: 대개는 몇 번 살펴보고 고쳐야 제대로 됩니다. 예를 들어 처음 만들어진 슬라이드의 첫 장은 글 상자가 부처님 머리의 절반을 가리고 있는데, 이것은 바라는 모습이 아닙니다.</p>
+
+<p>그럴 때는 점 세 개 "…"를 누르고 <b>수정</b>(Revise)을 골라 글 상자를 아래로 옮기라고 말합니다. 슬라이드를 한 장씩 넘기며 맞춤법, 제목 등 고치고 싶은 것을 알려 줍니다.</p>
+<img src="/making/After-Awakening/Tutorial-11.jpg" alt="수정 1" loading="lazy">
+<img src="/making/After-Awakening/Tutorial-09.jpg" alt="수정 2" loading="lazy">
+
+<p>모두 마음에 들면 결과물을 여러 형식으로 내려받을 수 있습니다. 원작자는 PDF로 내려받는다고 합니다.</p>
+<img src="/making/After-Awakening/Tutorial-10.jpg" alt="내려받기" loading="lazy">
+
+<p>원작자는 그림을 따로 꺼내 컴퓨터에서 편집해 오른쪽 아래의 표시(워터마크)도 지운다고 합니다. 그다음을 어떻게 할지는 여러분의 쓰임과 필요에 달려 있습니다.</p>
+
+<p>함께 담마를 널리 나누고, 특히 어린이들이 쉽게 만날 수 있게 하여, 다음 세대도 부처님의 가르침에서 이익을 얻고 불교의 역사에서 영감을 받을 수 있기를 바랍니다.</p>
+
+<p class="muted">원문: 아난다조띠 스님, 「Make Storybooks In Your Own Language」, Dharma Storybooks — 크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0(CC BY-SA 4.0). 이 우리말 번역도 같은 조건으로 자유롭게 쓰실 수 있습니다.</p>
