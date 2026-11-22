@@ -397,24 +397,6 @@
     "em": 10,
     "shape": "box",
     "manual": true
-   },
-   {
-    "rect": [
-     138,
-     108,
-     174,
-     178
-    ],
-    "ko": " ",
-    "cover": [
-     251,
-     244,
-     227
-    ],
-    "align": "center",
-    "em": 10,
-    "shape": "box",
-    "manual": true
    }
   ]
  },
