@@ -1,17 +1,15 @@
-Jatakamala 29-Brahmaloka 15 장
+Jatakamala 30-Elephant 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 77 개 / 한글판 이야기 289 편
+R2 에 올림: 77 개 / 한글판 이야기 290 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 953990바이트
-이야기 Jatakamala/29-Brahmaloka {'pdf': 13761087, 'zip': 13476753, 'n': 15}
-책 Jatakamala {'pdf': 387925530, 'pdfs': 38881005, 'zip': 387512520, 'stories': 29, 'n': 425}
+공개 주소 확인: 200 1090684바이트
+이야기 Jatakamala/30-Elephant {'pdf': 13845342, 'zip': 13569546, 'n': 15}
+책 Jatakamala {'pdf': 401500614, 'pdfs': 40222907, 'zip': 401081872, 'stories': 30, 'n': 440}
 내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 289 이야기
+글로 보기: 290 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
 34-Woodpecker
-20-The-Brahmin-Soma.htm: 그림 11 상자 6 상자밖글 134
 20-The-Brahmin-Soma
-29-30-Escape-from-Samsara.htm: 그림 16 상자 2 상자밖글 451
 29-30-Escape-from-Samsara
