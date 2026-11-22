@@ -100,16 +100,21 @@
     ],
     "shape": "box",
     "en": "The Rakkhasa’s Rule:",
-    "ko": "락카사가 지킬 규칙:"
+    "ko": "락카사가 지킬 규칙:",
+    "align": "center"
    },
    {
-    "seed": [
-     93,
-     385
-    ],
-    "shape": "bubble",
+    "shape": "box",
     "en": "He may devour anyone entering the water who does not know the “true Deva-nature.” Those who know it, or stay on land, are safe.",
-    "ko": "‘참된 천신의 성품’을 모르는 채 물에 들어오는 자는 잡아먹어도 된다. 그것을 아는 자나 뭍에 있는 자는 해치지 못한다."
+    "ko": "‘참된 천신의 성품’을 모르는 채 물에 들어오는 자는 잡아먹어도 된다. 그것을 아는 자나 뭍에 있는 자는 해치지 못한다.",
+    "rect": [
+     78,
+     383,
+     736,
+     423
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
