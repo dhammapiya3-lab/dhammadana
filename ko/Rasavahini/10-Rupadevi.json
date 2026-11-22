@@ -1,0 +1,733 @@
+[
+ {
+  "img": "images/10-Rupadevi-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     112,
+     56,
+     688,
+     156
+    ],
+    "ko": "루빠데위의 공덕\n병을 고쳐 준 보시와 업의 작용",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Rupadevi-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     206,
+     50,
+     594,
+     98
+    ],
+    "ko": "91겁에 걸친 여정",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     200,
+     91,
+     600,
+     183
+    ],
+    "ko": "이것은 91겁에 걸친 원인과 결과의 이야기입니다.\n먼 옛날 위빳시 부처님 시대에서 시작하여",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     206,
+     327,
+     594,
+     415
+    ],
+    "ko": "하늘 세계에서 여섯 부처님 시대를 지나\n우리 역사 속의 고따마 부처님 시대에 이르러\n열매를 맺습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Rupadevi-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     438,
+     44,
+     760,
+     140
+    ],
+    "ko": "자비의 한순간",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     438,
+     136,
+     756,
+     416
+    ],
+    "ko": "옛 도시의 한 소녀가 승원 가까이를\n지나다가 병들어 창백하고 숨을\n가쁘게 쉬는 부처님의 제자를\n보았습니다.\n\n안타까움에 떨며 다가간 소녀가\n여쭈었습니다. “스님, 어디가\n편찮으십니까?”",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Rupadevi-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     32,
+     311,
+     768,
+     351
+    ],
+    "ko": "깨끗한 공양",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 28,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     32,
+     354,
+     768,
+     421
+    ],
+    "ko": "스님의 병이 깊다는 것을 안 소녀는 고쳐 드리겠다고 약속했습니다. 부모의 허락을 받아\n여러 맛의 약을 지었습니다. 이튿날 스님이 문 앞에 오시자 기쁘게 자리와 약과 음식을 올렸습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Rupadevi-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     432,
+     96,
+     728,
+     184
+    ],
+    "ko": "병이 낫다",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 3,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     432,
+     192,
+     728,
+     398
+    ],
+    "ko": "소녀의 믿음과 약의 힘으로 스님의\n병은 곧바로 나았습니다. 이튿날\n스님이 탁발을 오지 않자 소녀가\n승원에 가서 여쭈었습니다.\n스님이 부드럽게 말씀하셨습니다.\n“누이여, 병이 나았습니다.”\n소녀는 크게 기뻐했습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 3,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Rupadevi-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     24,
+     59,
+     376,
+     163
+    ],
+    "ko": "하늘 세계에\n태어나다",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     24,
+     167,
+     376,
+     419
+    ],
+    "ko": "기쁜 마음으로 세상을 떠난\n그녀는 하늘 세계에 태어났습니다.\n공덕의 힘으로 12요자나나 되는\n큰 황금 궁전이 나타났습니다.\n보석으로 꾸미고 하늘의 노래와\n연꽃 정원이 가득했습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Rupadevi-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     436,
+     56,
+     764,
+     140
+    ],
+    "ko": "고따마 부처님\n시대에 태어나다",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     436,
+     156,
+     764,
+     420
+    ],
+    "ko": "여섯 부처님 시대 동안 하늘의\n행복을 누린 뒤, 그녀는 잠부디빠\n(인도)의 이름난 바라문 집안에\n태어났습니다. 몸에서 빛이 나는\n듯 아름다워 부모는 그녀를\n‘아름다움의 여신’이라는 뜻으로\n루빠데위라 불렀습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Rupadevi-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     32,
+     51,
+     432,
+     179
+    ],
+    "ko": "공덕이 나타나다",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 36,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     32,
+     175,
+     416,
+     423
+    ],
+    "ko": "태어난 날부터 그녀의 먹을거리는\n신기하게 저절로 생겼습니다.\n밥을 지을 때면 쌀 한 되로\n솥마다 반찬과 꿀과 우유가\n곧바로 가득 찼습니다. 그녀가\n손댄 음식은 결코 상하지\n않았습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Rupadevi-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     56,
+     752,
+     108
+    ],
+    "ko": "끝없는 보시",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     48,
+     112,
+     752,
+     186
+    ],
+    "ko": "한 솥으로 온 도시를 먹여도 결코 비지 않았습니다.\n이 다함없는 공덕을 지닌 루빠데위는 비구 오백 명을 집으로\n모셔 날마다 훌륭한 공양을 올렸습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Rupadevi-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     32,
+     75,
+     432,
+     147
+    ],
+    "ko": "하늘눈",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 36,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     32,
+     163,
+     432,
+     395
+    ],
+    "ko": "비구들 가운데 분석적 지혜에\n뛰어난 마하상가락키따 장로가\n계셨습니다. 장로는 하늘눈으로\n그녀의 큰 공덕을 보았습니다.\n그녀가 이 놀라운 복의 옛 원인을\n모른다는 것을 알고, 그것을\n밝혀 주기로 했습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Rupadevi-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     48,
+     608,
+     104
+    ],
+    "ko": "지난 생을 밝히다",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     48,
+     344,
+     760,
+     432
+    ],
+    "ko": "“누이여, 지난날 무슨 일을 했는지 아십니까?” 장로가 물었습니다.\n“모릅니다, 스님. 듣고 싶습니다.” 그녀가 대답했습니다.\n장로는 게송을 읊어 91겁 전 그녀의 소박한 삶을 밝혀 주었습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Rupadevi-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     47,
+     640,
+     107
+    ],
+    "ko": "업의 장부",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     36,
+     117,
+     368,
+     165
+    ],
+    "ko": "씨앗(과거)",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     432,
+     117,
+     764,
+     165
+    ],
+    "ko": "열매(현재)",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 22,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     36,
+     173,
+     280,
+     251
+    ],
+    "ko": "병든 비구 한 분께\n약을 드림",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     432,
+     173,
+     764,
+     251
+    ],
+    "ko": "상하지 않는 끝없는\n음식과 재물",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     36,
+     255,
+     280,
+     335
+    ],
+    "ko": "창백한 이에게 깊은\n연민을 느낌",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     432,
+     255,
+     764,
+     335
+    ],
+    "ko": "견줄 데 없는 아름다움\n(루빠데위)",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     36,
+     339,
+     280,
+     419
+    ],
+    "ko": "소박한 시골\n오두막에서 삶",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     432,
+     339,
+     764,
+     419
+    ],
+    "ko": "12요자나\n황금 궁전이 나타남",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Rupadevi-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     48,
+     464,
+     128
+    ],
+    "ko": "공덕의 짜임",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     24,
+     118,
+     400,
+     194
+    ],
+    "ko": "업의 열매는 왜\n그토록 컸을까요?",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     40,
+     180,
+     400,
+     420
+    ],
+    "ko": "1. 알맞은 때: 스님이 몹시\n어려운 처지였습니다.\n\n2. 기쁨: 연민의 마음으로 베풀고\n베푼 뒤에도 기뻐했습니다.\n\n3. 깨끗함: 받는 이가 계를 지키는\n부처님의 제자였습니다.",
+    "cover": null,
+    "align": "left",
+    "whole": true,
+    "grow": 6,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     512,
+     116,
+     656,
+     192
+    ],
+    "ko": "주는 이",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     456,
+     256,
+     544,
+     328
+    ],
+    "ko": "주는\n물건",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     596,
+     256,
+     720,
+     328
+    ],
+    "ko": "받는 이",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Rupadevi-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     303,
+     680,
+     355
+    ],
+    "ko": "수다원이 되다",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     48,
+     357,
+     752,
+     423
+    ],
+    "ko": "장로가 말을 맺었습니다. ‘공덕은 늘 행복을 가져오니 선업을 기뻐하라.’\n이 깊은 진리를 듣고 루빠데위는 큰 기쁨에 넘쳤고, 바로 그 마음으로 수다원이 되었습니다.",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/10-Rupadevi-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     164,
+     60,
+     636,
+     104
+    ],
+    "ko": "병을 고쳐 준 보시의 열매",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 26,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     164,
+     106,
+     636,
+     188
+    ],
+    "ko": "자기 덕이 얼마나 큰지도 모른 어린 소녀가 스님께 소박한\n보시를 하고 하늘과 사람 세상의 복을 얻었다면, 선업의\n열매를 참으로 아는 이는 얼마나 큰 평화를 얻겠습니까?",
+    "cover": null,
+    "align": "center",
+    "whole": true,
+    "grow": 6,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
