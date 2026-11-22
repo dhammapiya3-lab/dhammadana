@@ -3,13 +3,17 @@
   "img": "images/006-The-Water-Rakkhasa-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     319,
-     270
-    ],
     "shape": "box",
     "en": "The True Deva-Nature Tale of Three Princes and the Water Rakkhasa",
-    "ko": "참된 천신의 성품\n세 왕자와 물의 락카사 이야기"
+    "ko": "참된 천신의 성품\n세 왕자와 물의 락카사 이야기",
+    "rect": [
+     272,
+     247,
+     524,
+     297
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
