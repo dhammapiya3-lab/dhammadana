@@ -478,10 +478,10 @@
 },
 "Jataka": {
 "n": 422,
-"pdf": 496448648,
-"pdfs": 50591706,
+"pdf": 496446846,
+"pdfs": 50592464,
 "stories": 32,
-"zip": 496038888
+"zip": 496037086
 },
 "Jataka/001-The-Waterless-Desert": {
 "n": 15,
@@ -510,8 +510,8 @@
 },
 "Jataka/006-The-Water-Rakkhasa": {
 "n": 15,
-"pdf": 19101101,
-"zip": 18834682
+"pdf": 19099301,
+"zip": 18832880
 },
 "Jataka/009-The-Kings-Grey-Hair": {
 "n": 14,
@@ -644,11 +644,11 @@
 "zip": 18828023
 },
 "Jatakamala": {
-"n": 470,
-"pdf": 429345351,
-"pdfs": 42975891,
-"stories": 32,
-"zip": 428915837
+"n": 485,
+"pdf": 443084524,
+"pdfs": 44263230,
+"stories": 33,
+"zip": 442649194
 },
 "Jatakamala/01-Tigress": {
 "n": 15,
@@ -810,6 +810,11 @@
 "pdf": 15084211,
 "zip": 14805211
 },
+"Jatakamala/33-Buffalo": {
+"n": 15,
+"pdf": 14009134,
+"zip": 13733638
+},
 "Light-of-Asia": {
 "n": 118,
 "pdf": 84635311,
@@ -893,15 +898,15 @@
 },
 "Pannasa": {
 "n": 803,
-"pdf": 1033746367,
-"pdfs": 99395866,
+"pdf": 1033955312,
+"pdfs": 99442495,
 "stories": 50,
-"zip": 1033195574
+"zip": 1033404521
 },
 "Pannasa/01-King-Aditta": {
 "n": 15,
-"pdf": 19968930,
-"zip": 19706443
+"pdf": 19995300,
+"zip": 19732814
 },
 "Pannasa/02-Tulakapandita": {
 "n": 15,
