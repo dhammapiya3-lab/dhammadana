@@ -1,12 +1,13 @@
+Foremost-Nuns 01-Maha-Pajapati-Gotami 30 장
+Foremost-Nuns 04-Patacara 30 장
 자동 검수: 문제 의심 0 곳
-On branch storybooks-qa
-Your branch is up to date with 'origin/storybooks-qa'.
-
-nothing to commit, working tree clean
-R2 에 올림: 47 개 / 한글판 이야기 316 편
+R2 에 올림: 167 개 / 한글판 이야기 316 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 404 27150바이트
-내려받기 파일: 0 묶음 새로 만듦
+공개 주소 확인: 200 1380409바이트
+이야기 Foremost-Nuns/01-Maha-Pajapati-Gotami {'pdf': 42641841, 'zip': 42361793, 'n': 30}
+이야기 Foremost-Nuns/04-Patacara {'pdf': 36893291, 'zip': 36618760, 'n': 30}
+책 Foremost-Nuns {'pdf': 385949530, 'pdfs': 40857640, 'zip': 385596848, 'stories': 13, 'n': 283}
+내려받기 파일: 3 묶음 새로 만듦
 글로 보기: 316 이야기
 18-Verses-2
 08-Light-of-Asia
@@ -14,4 +15,3 @@ R2 에 올림: 47 개 / 한글판 이야기 316 편
 34-Woodpecker
 20-The-Brahmin-Soma
 29-30-Escape-from-Samsara
-12-Kisa-Gotami
