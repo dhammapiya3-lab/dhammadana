@@ -17,3 +17,81 @@
 =There was an ascetic known as Migalaṇḍika
 =Even Migalaṇḍika the fake ascetic thought
 =And when all the bhikkhus had died, The Buddha returned
+# 2026-11-22 높은 점수 짝까지 다시 검수 — 한국어 문장 경계가 원서와 달라 한 칸씩 밀린 곳, 원서에만 있는 글이 한국어 문장을 끌어간 곳
+무명이 있으면 오로지 관습적=It means that ignorance sees only
+이러한 것들은 궁극적 진리로서=These things, which are ultimate truth~2
+차꼬경에 붓다는 중생들이 생과 생을=And as we also explained in connection with the
+# 122쪽: 원서의 깐하디빠야나 본생담(70쪽)은 한국어판이 이 자리에 싣지 않음 (run_dl0034.sh 에서 원서 문단을 짝 없음으로)
+만약 업의 작용에 관한 이해를 가지고 한다면=If one does understand the workings of kamma, it is associated also with non-delusion (a∙moha), but even so the interspersion of countless unwholesome consciousnesses make one's offering
+그렇더라도 셀 수도 없는 해로운 마음들이 이 사람의 보시를=If one does understand the workings of kamma, it is associated also with non-delusion (a∙moha), but even so the interspersion of countless unwholesome consciousnesses make one's offering
+보시할 때의 마음이 뿌리가 세 개=If one does understand the workings of kamma, it is associated also with non-delusion (a∙moha), but even so the interspersion of countless unwholesome consciousnesses make one's offering
+# 144쪽: 한국어판이 미주(무명경 인용)를 본문에 넣음 — 원서 본문에 없음
+바른 의도가 있으면 말을 바르게 한다=
+바른 생계 중의 하나에서 바른 정진이=
+바른 정진 중의 하나에서 바른 마음 챙김이=
+① 바른 견해, 正見=1) Right View . . .
+# 200쪽: 표 4
+견고하게 보이는 물질을 해체하고=To be able to practise insight, and understand materiality
+추상적인 물질은 물질의 무더기에=
+표 4 : 28가지 물질=4: The Twenty-Eight Types of Materiality
+사대요소 (mahā·bhūta):=FOUR GREAT ESSENTIALS (mahā∙bhūta):
+붓다께서 말씀하신 해로운 업 10가지는 무엇이고=Let us then take His explanation of the ten courses
+붓다께서는 먼저 몸으로 짓는 해로운 업 3가지에=First, He explains the three types of unwholesome bodily conduct
+잘못된 성행위를 포기한다고 하는 것은=Abandoning sexual misconduct, one is an abstainer
+사실 손가락을 한번 튕기는=Before we continue, please remember
+아버지도 없다.='There is no offering, there is no almsgiving, there is no sacrifice
+# 398쪽: 미가란디까 이야기(원서)는 한국어판에 없음
+바로 붓다는 그들을 돕는 유일한=And with that wholesome kamma, they would attain rebirth in the deva world
+그래서 붓다는 그들에게 부정관=So The Buddha told them to take foulness
+=And those bhikkhus who were still ordinary people (puthujjana), either got him
+=First he killed a number of bhikkhus
+=And because he believed the deva
+그렇게 도덕성을 갖춘 왕이 통치하는=To be reborn at the time of such virtuous kings
+이 경에서 붓다는 전륜성왕의=The Buddha explains that there was a lineage of Wheel-Turning Kings
+그가 닦은 도의 지혜는 수없이 많은 해로운=His Path Knowledge disabled
+붓다는 그를 사분석지의 제일=The Buddha declared him foremost among those skilled
+예를 들어 그는 어리석음과 지혜에=In this sutta, the Venerable Mahākoṭṭhika asks
+이것은 과거, 현재 그리고 미래 업의 완전한=It is the complete unworking of kamma
+아라한이 죽을 때 더 이상 마음의 흐름은=At the Arahant's death, there is no further flow
+이것이 무더기의 반열반=At the Arahant's death, there is no further flow
+붓다는 두 번째 차꼬경의 끝에서=As The Buddha says at the end of the second
+# 682~683쪽 부록 2: 원서의 스물네 부처님 목록·표는 한국어판이 그림으로 실음 (run_dl0034.sh 에서 원서 문단 짝 없음)
+그때로부터 고따마 붓다가 깨달음을=From then till his attainment of Buddhahood
+그는 24분의 다른 부처님 밑에서=That included training under twenty-four
+때로는 수행자로서 때로는 비구=That included training under twenty-four
+24분의 부처님들은 붓다-계보-경=The twenty-four Buddhas are explained
+이 경에는 부처님들의 태어남=It explains their birth
+그리고 어디서 대열반을 성취하였는지=Each account explains also where
+이 부처님-계보-경에는 미래의 부처님인=Included in The Buddha∙Lineage Text
+고따마 부처님 이전의 여섯 부처님들에=The six Buddhas before The Buddha Gotama
+# 2회차
+바른 마음 챙김 중의 하나에서 바른 마음집중이=
+붓다는 이것을 중부(위대한 40경)에서=
+그의 마음은 성스럽고, 청정하고=
+왜냐하면 이러한 도의 지혜를 얻으면 원인을=To attain this Path Knowledge, one will namely
+④ 필수품에 관한 계청정=d) Purification through requisite-related morality
+11) 지혜(paññā) : 통찰지가=11) Wisdom (paññā)
+4) 소멸된 업(ahosi·kamma) : 이 업은 금생에=4) Lapsed kamma (ahosi∙kamma) : it fails~1
+소멸된 업이라 한다.=It is is presently- or subsequently-effective kamma that is defunct~1
+어머니와 아버지도 없다.='There is no offering, there is no almsgiving, there is no sacrifice
+화생하는 중생도 없고=This person consists of the four great essentials
+# 3회차
+이런 식으로 보는 것은 잘못이다.=It is wrong to see in this way
+있는 그대로(yathā-bhūta) 본다는 말은=The things that do exist according to reality, however~2
+간단히 말해서 네 가지 성스러운 진리인=The things that do exist according to reality, however~2
+위빳사나를 수행할 때, 심지어 갈애가=So long as one is not an Arahant, then even though
+거기에는 여전히 업을 짓는 마음이=So long as one is not an Arahant, then even though
+이것을 뒤에(내생에) 효과가 있는=2) Subsequently-effective kamma (upapajja∙vedanīya∙kamma) : it takes effect~1
+3) 정해진 기한이 없이 효과가=3) Indefinitely-effective kamma (apar∙āpariya∙vedanīya∙kamma) : it takes effect~1
+유익한 그리고 해로운 업들의 열배도='There is no offering, there is no almsgiving, there is no sacrifice
+이 세상도 없고 저 세상도 없다.='There is no offering, there is no almsgiving, there is no sacrifice
+# 4회차
+즉 여자, 남자, 어머니, 아버지, 아내=It means that ignorance sees only
+이런 것들을 있는 그대로(yathā·bhūta, 여실지견) 보게 되면=These things do not exist according to reality
+효과가 무기한인 업이라 부른다.=3) Indefinitely-effective kamma (apar∙āpariya∙vedanīya∙kamma) : it takes effect~1
+# 5회차
+단지 무더기(khandha), 요소(dhātu)=The things that do exist according to reality, however~1
+무명이라는 것은 단지 관념적 진리=It means that ignorance (delusion) sees only
+# 6회차
+이런 궁극적 진리는 무명 때문에=These things, which are ultimate truth~1
+즉 남자와 여자, 어머니와 아버지=It means that ignorance (delusion) sees only

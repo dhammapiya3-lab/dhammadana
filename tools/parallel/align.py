@@ -89,7 +89,7 @@ for sk in A.ko_skip:   # 원서에 없는 부분(--ko-skip)
 _nopin = {k for x in A.pin if x.endswith('=') for k in x[:-1].split('+') if k}
 if _nopin: KO_DP = [p for p in KO_DP if p['key'] not in _nopin]
 if A.ko_none: KO_DP = [p for p in KO_DP if not any(re.search(r, p['t']) for r in A.ko_none)]
-SPL = re.compile(r'(?<=[.?!。…။])(?:[”’"\')\]]*)\s+|\n')
+SPL = re.compile(r'(?<=[.?!。…။])(?:[”’"\')\]]*)(?:\[\^[^\]]+\])*\s+|\n')   # 문장 끝 뒤 각주 번호('…Truths.[^129] These') 뒤에서도 나눔 (DL-0034 — 전에는 각주 번호가 붙은 문장 끝에서 나누지 않았음)
 if A.my_comma: SPL = re.compile(r'(?<=[.?!。…။])(?:[”’"\')\]]*)\s+|\n|(?<=၊)\s+')
 if A.ko_join: SPL = re.compile(r'(?<=[.?!。…။])(?:[”’"\')\]]*)(?:\[\^[^\]]+\])*\s+|(?<=[^.][.?!][’”])(?=[가-힣])(?!(?:라고|라는|라며|라면서|라든가|라든지|라거나|라도|란|이라|하고|하며|하면서|하는|하니|하자|하여|해서|했|한다|할|고\b|고 |는|며|면서|와|과|도|만|까지|에서|에게|로|을|를|이|가|의))|\n')   # 문장 끝 뒤 각주 번호('…것이다.’[^88] 비구들이여') 뒤에서도 나눔 (DL-0022)
 MYEND = re.compile(r'(တယ်|ဘူး|ပဲ|ပေါ့|လဲ|တုန်း|နော်|လေ|တာ|မယ်|သလား|ကော|ရော|ရဲ့|တဲ့|ပါ|သည်)၊$')
@@ -144,10 +144,11 @@ def __sents(t, lang):
         if lang == 'en' and m.group(0) != '\n':
             # 'e.g. ' 'i.e. ' 'Mr. ' 'U. ' 같은 약어 뒤나 다음 글자가 소문자면 나누지 않음
             nx = t[m.end():m.end() + 1]
-            if re.search(r'\b(e\.g|i\.e|etc|Mr|Mrs|Dr|cf|vs|No|Nos|v|vv|pp|p|ed|Trans|vols)\.$', t[a:m.start() + 1].strip()) or (nx and nx.islower()): continue
+            if not (re.search(r'\betc\.$', t[a:m.start() + 1].strip()) and re.match(r'(These|This|That|Those|The|And|But|So|Thus|It|We|One|In|If|When|Such|Then|They|He|She|There|Here|Why|How|What|Again|Also|For|As|With|Now|Let)\b', t[m.end():m.end() + 6])) and re.search(r'\b(e\.g|i\.e|etc|Mr|Mrs|Dr|cf|vs|No|Nos|v|vv|pp|p|ed|Trans|vols)\.$', t[a:m.start() + 1].strip()) or (nx and nx.islower() and not re.match(r'([ivx]{1,4}|[a-h])\) ', t[m.end():m.end() + 6]) and not (m.group(0).endswith('\n') and re.match(r'[a-h]\) ', t[m.end():m.end() + 4]))): continue   # 'ii) …' 로마 숫자 항목은 소문자여도 새 문장 (DL-0034)
             # 경전·책 약어('B. Dict.' 'Vis. M.' 'S. XXII.' 'Dhp.' 'Comm.') 뒤, 생략 점('. . .')에서는 나누지 않음 (DL-0015)
             if re.search(r'(?:^|[\s(])(?:[A-Z]|B|Vis|Dict|Comm|Dhp|Snp|Ud|Fund|Vol|ff|lit|Cf|[IVX]+|Vin|Mv|Cv|Iti|Dh|Sn|Thag|Thig|Khp|Comy|Ch|Sv|Pārā|Pāc|Sangh)\.$', t[a:m.start() + 1].strip()) and not re.search(r'[a-z]{3}\.$', t[a:m.start() + 1].strip()[-5:]) or nx == '.': continue
-            if re.search(r'(?:^|[\s(])(?:[A-Z]\.){2,3}$', t[a:m.start() + 1].strip()): continue   # 이름 머리글자 'T.W. Rhys Davids'·'C.A.F.' (DL-0029)
+            if re.search(r'(?:^|[\s(])(?:[A-Z]\.){2,3}$', t[a:m.start() + 1].strip()): continue
+            if re.search(r'\.\s?\.$', t[a:m.start()]) and nx == '(': continue   # 점선 목록 '1) Earth element . . . (pathavī∙dhātu)' 의 점선 끝 (DL-0034)   # 이름 머리글자 'T.W. Rhys Davids'·'C.A.F.' (DL-0029)
         # 따옴표 뒤 이음말('…존재한다.’ 거나', '…’ 라고')은 앞 문장에 (DL-0022, --ko-join)
         if lang == 'ko' and A.ko_join and m.group(0) != '\n' and re.match(r'(거나|라고|하고|라는|이라고|라며|하면서)[\s,]', t[m.end():m.end() + 6]): continue
         # '“알았습니다. 세존이시여”' 처럼 짧은 대답 뒤 부르는 말(…이여·…시여·…님)은 같은 문장 (DL-0022, --ko-join)
@@ -191,7 +192,12 @@ for mv in A.move:
     for i in blk: MOVED[i] = (a, b)
 ES = []; EDROP = []
 # 원서 쪽만 '짝 없음'(--pin "=원서 번호 또는 @글 첫머리+…")도 짝짓기 전에 뺌 — 한국어판에 없는 원서 풀이 글이 둘레 문장을 끌어당기지 않게 (DL-0015)
-_onopin = {_oi(k) for x in A.pin if x.startswith('=') for k in x[1:].split('+') if k}
+_onopin = set()
+for x in A.pin:
+    if not x.startswith('='): continue
+    for k in x[1:].split('+'):
+        if re.fullmatch(r'\d+-\d+', k): a_, b_ = map(int, k.split('-')); _onopin.update(range(a_, b_ + 1))   # 원서 문단 범위 'A-B' (DL-0034 표 풀이·편집자 글)
+        elif k: _onopin.add(_oi(k))
 for i in ORDER:
     p = ORIG[i]
     if i in _onopin: continue
@@ -370,9 +376,10 @@ for kp, ep, bs in groups:
 for pin in A.pin:
     kk, oo = pin.split('=')
     kk = [x for x in kk.split('+') if x]
-    def oidx(x):   # 원서 문단: 번호 또는 '@글 첫머리'
-        return _oi(x)
-    oo = [oidx(x) for x in oo.split('+') if x]
+    def oidx(x):   # 원서 문단: 번호, 'A-B' 범위 또는 '@글 첫머리'
+        if re.fullmatch(r'\d+-\d+', x): a_, b_ = map(int, x.split('-')); return list(range(a_, b_ + 1))
+        return [_oi(x)]
+    oo = [o for x in oo.split('+') if x for o in oidx(x)]
     for g in out:
         g['ko'] = [k for k in g['ko'] if k not in kk]; g['or'] = [o for o in g['or'] if o not in oo]
         for st in g['s']:

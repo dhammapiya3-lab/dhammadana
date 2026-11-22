@@ -142,8 +142,36 @@ for pn in sorted(bypage):
     for x in L0:     # 같은 높이(3pt 안)에 있는 줄은 왼쪽부터 ('xxx5)' 번호 줄이 글 줄보다 2pt 낮게 찍힌 곳, 360쪽)
         if L and abs(x['bb'][1] - L[-1][-1]['bb'][1]) <= 3: L[-1].append(x)
         else: L.append([x])
-    L = [y for g in L for y in sorted(g, key=lambda z: z['bb'][0])]
     margin = 58 if pn % 2 == 0 else 36
+    L = [sorted(g, key=lambda z: z['bb'][0]) for g in L]
+    # 두 단으로 놓은 목록('1) Earth element . . . (pathavī∙dhātu)   3) Fire element …') — 줄마다 왼쪽·오른쪽을 번갈아 읽으면
+    # 번호가 1, 3, 2, 4 로 섞이므로, 두 단 줄이 이어진 곳은 왼쪽 단을 위에서 아래로 다 읽은 뒤 오른쪽 단을 읽음 (2026-11-22 검수)
+    LST = re.compile(r'(xxx[\d-]+\)|\d+(-\d+)?\)\.?|\[\d+\]|[×•→✓]|[ivx]+\))\s')
+    def two(g): return (len(g) >= 2 and g[0]['bb'][0] < margin + 70 and any(z['bb'][0] > margin + 80 for z in g[1:]) and not g[0]['fn']
+                        and any(LST.match(re.sub(r'\s+', ' ', z['t']).strip()) or re.search(r'\. \. \.', z['t']) for z in g))
+    out = []; k = 0
+    while k < len(L):
+        if two(L[k]):
+            j = k
+            while j + 1 < len(L) and L[j + 1][0]['bb'][1] - L[j][0]['bb'][1] < 18 and (two(L[j + 1]) or (len(L[j + 1]) <= 2 and not L[j + 1][0]['fn'] and all(z['bb'][0] >= margin + 12 or LST.match(re.sub(r'\s+', ' ', z['t']).strip()) for z in L[j + 1]) and j + 2 < len(L) and two(L[j + 2]))): j += 1
+            while j + 1 < len(L) and L[j + 1] and all(z['bb'][0] > margin + 80 and not z['fn'] for z in L[j + 1]) and L[j + 1][0]['bb'][1] - L[j][0]['bb'][1] < 16: j += 1   # 오른쪽 단만 남은 끝 줄들 (126쪽 [10] 의 이어진 줄)
+            while j + 1 < len(L) and len(L[j + 1]) == 1 and L[j + 1][0]['bb'][0] < margin + 70 and not L[j + 1][0]['fn'] and LST.match(re.sub(r'\s+', ' ', L[j + 1][0]['t']).strip()) and L[j + 1][0]['bb'][1] - L[j][0]['bb'][1] < 16: j += 1   # 왼쪽 단에만 남은 마지막 항목 ('3) …' — 홀수 항목 목록)
+            rows = L[k:j + 1]
+            if sum(1 for g in rows if two(g)) >= 1 and len(rows) >= 2:
+                # 단의 첫머리 자리: 두 단 줄들의 글 시작 x 를 모아 15pt 넘게 떨어진 곳마다 새 단 (세 단 목록도 — 124쪽 실없는 이야기)
+                xs = sorted(z['bb'][0] for g in rows if two(g) for z in g)
+                cols = [xs[0]]
+                for x_ in xs[1:]:
+                    if x_ - cols[-1] > 60: cols.append(x_)
+                def col(z): return max(c for c in range(len(cols)) if cols[c] <= z['bb'][0] + 5) if z['bb'][0] + 5 >= cols[0] else 0
+                band = [z for g in rows for z in g]
+                for c in range(len(cols)):
+                    dx = cols[c] - cols[0]
+                    out.append([dict(z, bb=[z['bb'][0] - dx, z['bb'][1], z['bb'][2] - dx, z['bb'][3]], bstart=abs(z['bb'][0] - cols[c]) <= 3) for z in band if col(z) == c])   # 오른쪽 단은 왼쪽 단 자리로 옮겨 봄 (들여 쓴 게송으로 잘못 보지 않게), 단 첫머리 줄은 새 문단
+                if j + 1 < len(L): L[j + 1] = [dict(L[j + 1][0], bstart=True)] + L[j + 1][1:]   # 목록 다음 줄은 새 문단
+                k = j + 1; continue
+        out.append(L[k]); k += 1
+    L = [y for g in out for y in g]
     pg = pname(pn)
     tables = []
     # 이 쪽 각주 번호들 (각주 줄 첫머리 6.5pt 숫자) — 본문 번호가 이 쪽에 있어도 각주 글은 다음 쪽에 찍힌 것이 있어(27→28쪽 각주 32) 다음 쪽 것도 함께
@@ -223,18 +251,23 @@ for pn in sorted(bypage):
                 cur = {'pg': pg, 'k': 'h', 't': t}; paras.append(cur)
                 if big: cur['big'] = 1
             prev = x; continue
-        listy = bool(re.match(r'(xxx[\d-]+\)|\d+(-\d+)?\)\.?|\[\d+\]|[×•→✓]|\([a-z]\)|[a-z]\)|[ivx]+\))\s', t)) or t[:1] in '×•'
+        listy = bool(re.match(r'(xxx[\d-]+\)|xxx\uf084|X(?= [A-Z])|\d+(-\d+)?\)\.?|\[\d+\]|[×•→✓]|\([a-z]\)|[a-z]\)|[ivx]+\))\s', t)) or t[:1] in '×•'
         indent = margin + 4 < x0 <= margin + 10
         hang = x0 > margin + 10
         if cur is not None and cur.get('lx') is not None and not listy and x0 - margin > cur['lx'] + 4 and gap <= 18 and not jump:   # 쪽이 넘어가도 (여백 기준)
             indent = False; hang = False                      # 번호 항목의 매달린 줄
         verse = hang and not (cur is not None and cur.get('lx') is not None and x0 - margin > cur['lx'] + 4 and not jump)
         if verse:
-            if cur is not None and cur.get('v') and not jump and (gap <= 15 or newpage) and abs(x0 - margin - cur['vx']) < 40: cur['t'] += '\n' + t
+            if cur is not None and cur.get('v') and not jump and (gap <= 15 or newpage) and not x.get('bstart') and abs(x0 - margin - cur['vx']) < 40:
+                last = cur['t'].rsplit('\n', 1)[-1]
+                # 들여 쓴 산문 묶음(인용·번호 항목 풀이)의 꽉 찬 줄은 산문처럼 잇기 — 게송 줄(짧거나 문장부호로 끝남)·번호 항목 줄은 줄 바꿈 그대로
+                if (re.search(r'[A-Za-zāīūṁṃṅñṭḍṇḷ]-$', last) and re.match(r'[a-zāīūṁṃṅñṭḍṇḷ∙]', t)) or (len(last) >= 60 and not listy and not re.search(r'[.;:!?’”\'"]$', last)):
+                    cur['t'] = cur['t'][:len(cur['t']) - len(last)] + join(last, t, pg)
+                else: cur['t'] += '\n' + t
             else: cur = {'pg': pg, 'k': 'p', 't': t, 'v': 1, 'vx': x0 - margin}; paras.append(cur)
             prev = x; continue
         boldchg = cur is not None and cur['k'] == 'p' and prev is not None and prev['bold'] != x['bold'] and not newpage and re.search(r'[.:;?!\'’"…]\s*$', prev['raw']) is not None and not (cur.get('lx') is not None and x0 - margin > cur['lx'] + 4)
-        if cur is None or cur['k'] != 'p' or cur.get('v') or listy or indent or gap > 18 or boldchg or jump or (pn in (382, 383) and prev is not None and prev['bb'][2] - prev['bb'][0] < 320):   # 부록 1 목록은 줄마다
+        if cur is None or cur['k'] != 'p' or cur.get('v') or listy or x.get('bstart') or indent or gap > 18 or boldchg or jump or (pn in (382, 383) and prev is not None and prev['bb'][2] - prev['bb'][0] < 320):   # 부록 1 목록은 줄마다
             cur = {'pg': pg, 'k': 'p', 't': t}; paras.append(cur)
             if listy: cur['lx'] = x0 - margin
         else:
