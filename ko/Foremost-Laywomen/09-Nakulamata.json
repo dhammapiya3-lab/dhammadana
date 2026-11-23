@@ -224,7 +224,6 @@
      159
     ],
     "align": "center",
-    "em": 14,
     "shape": "box",
     "manual": true
    },
@@ -236,11 +235,7 @@
      142
     ],
     "ko": "믿음",
-    "cover": [
-     174,
-     116,
-     47
-    ],
+    "cover": null,
     "align": "center",
     "em": 17,
     "shape": "box",
@@ -254,11 +249,7 @@
      142
     ],
     "ko": "계",
-    "cover": [
-     173,
-     116,
-     47
-    ],
+    "cover": null,
     "align": "center",
     "em": 17,
     "shape": "box",
