@@ -1,18 +1,12 @@
-Foremost-Monks 02-03-Sariputta-Moggallana 57 장
-검수 Foremost-Monks/04-Maha-Kassapa 36번 그림 상자1 [자리] 한글 글(1989,772)이 상자 점(1795,357)에서 멀리 그려짐
-Foremost-Monks 04-Maha-Kassapa 41 장
-검수 Foremost-Monks/05-Anuruddha 21번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-검수 Foremost-Monks/05-Anuruddha 50번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 1px)
-Foremost-Monks 05-Anuruddha 53 장
-자동 검수: 문제 의심 3 곳
-R2 에 올림: 349 개 / 한글판 이야기 318 편
+검수 Jataka/004-The-Dead-Mouse 09번 그림 상자2 [자리] 한글 글(2228,1294)이 상자 점(2030,1107)에서 멀리 그려짐
+Jataka 004-The-Dead-Mouse 15 장
+자동 검수: 문제 의심 1 곳
+R2 에 올림: 77 개 / 한글판 이야기 318 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1735306바이트
-이야기 Foremost-Monks/02-03-Sariputta-Moggallana {'pdf': 85418311, 'zip': 85121687, 'n': 57}
-이야기 Foremost-Monks/04-Maha-Kassapa {'pdf': 57433814, 'zip': 57154903, 'n': 41}
-이야기 Foremost-Monks/05-Anuruddha {'pdf': 71877067, 'zip': 71595261, 'n': 53}
-책 Foremost-Monks {'pdf': 1122438835, 'pdfs': 118343818, 'zip': 1121895984, 'stories': 38, 'n': 802}
-내려받기 파일: 4 묶음 새로 만듦
+공개 주소 확인: 200 1105040바이트
+이야기 Jataka/004-The-Dead-Mouse {'pdf': 17560867, 'zip': 17297431, 'n': 15}
+책 Jataka {'pdf': 496428945, 'pdfs': 50595921, 'zip': 496019185, 'stories': 32, 'n': 422}
+내려받기 파일: 2 묶음 새로 만듦
 글로 보기: 318 이야기
 18-Verses-2
 08-Light-of-Asia
