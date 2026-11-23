@@ -1,7 +1,7 @@
 {
   "id": "DL-0041",
   "title": "테라와다 불교의 신행생활 (법문 교재)",
-  "subtitle": "",
+  "subtitle": "(테라와다 불교의범 및 신행생활)",
   "cover": "/uploads/테라와다_불교의_신행생활_표지.jpg",
   "byline": "아짠 빤냐와로 마하테로 법문",
   "translator": "",
@@ -26,8 +26,9 @@
   "originals": [],
   "braille": [
     {
-      "note": "",
       "format": "ZIP",
+      "inner": "BRF",
+      "files": 3,
       "mode": "file",
       "url": "braille/DL-0041/DL-0041_점자.zip",
       "site": "",
@@ -37,8 +38,7 @@
       "collection": "점자도서관에 의뢰해 제작",
       "made": "2024-08-24",
       "updated": "2024-08-24",
-      "inner": "BRF",
-      "files": 3
+      "note": ""
     }
   ],
   "series": "",
