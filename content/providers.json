@@ -257,7 +257,9 @@
       "id": "bulbangil",
       "name": "불방일",
       "kind": "출판사",
-      "urls": [],
+      "urls": [
+        "한국마하시 선원 | https://www.youtube.com/@TV-qo8nl"
+      ],
       "partner": false,
       "note": "",
       "bio": "도서출판 불방일은 한국마하시선원에서 설립한 출판사입니다.\n\n거룩하신 부처님의 가르침과 존경하는 레디 사야도, 마하시 사야도 등 여러 큰스님들의 가르침, 그리고 한국마하시선원 선원장이신 우 소다나 사야도와 우 담마간다 스님의 가르침을 더욱 체계적으로 펼치고자 ‘불방일’이라는 이름으로 출판사를 설립했습니다.",
@@ -267,9 +269,11 @@
       "id": "metta-insight",
       "name": "자애통찰명상원",
       "kind": "승원·사원",
-      "urls": [],
-      "partner": false,
-      "note": ""
+      "urls": [
+        "https://www.youtube.com/@mettaa4u"
+      ],
+      "partner": true,
+      "note": "유튜브 · 김재성명상TV"
     },
     {
       "id": "bulgyosidae",

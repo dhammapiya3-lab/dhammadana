@@ -523,7 +523,7 @@ collections:
               - { name: name, label: 이름 }
               - { name: filter_name, label: 도서관 찾아보기에 보일 이름, required: false, hint: "출판사 이름이 책마다 다르게 적혀 있을 때 도서관 찾아보기 '출판사'에서 이 이름 하나로 보입니다. 비워 두면 책에 적힌 이름." }
               - { name: kind, label: 종류, widget: select, options: [출판사, 단체, 승원·사원, 개인, 기타] }
-              - { name: urls, label: 사이트 주소들, widget: list, required: false }
+              - { name: urls, label: 사이트 주소들, widget: list, required: false, hint: "유튜브 주소를 넣으면 협력 단체는 '법문 바로 듣기' 유튜브 채널 목록에도 들어갑니다. 단추 이름을 따로 붙이려면 '이름 | 주소' (예: 한국마하시 선원 | https://www.youtube.com/@TV-qo8nl)." }
               - { name: partner, label: 협력 단체로 보이기, widget: boolean, default: false }
               - { name: coop, label: "도서관 찾아보기 '협력 단체'에 넣기", widget: boolean, default: true, required: false, hint: "끄면 찾아보기 목록에 안 나오고, 이곳 페이지에 '협력 단체' 대신 '출판사'로 보입니다 (예: 불교시대사)." }
               - { name: pub_also, label: "이곳이 펴낸 책에 함께 붙일 '○○ 출간' 표시", widget: relation, collection: lists, file: providers, search_fields: ["items.*.name"], value_field: "items.*.id", display_fields: ["items.*.name"], multiple: true, required: false, hint: "이곳에서 펴낸 책의 책 소개 주제어 옆에 고른 단체의 '○○ 출간' 표시도 붙고, 그 단체 페이지에도 책이 나옵니다 (예: 붓다의 길따라 선원 → (사)한국테라와다불교)." }

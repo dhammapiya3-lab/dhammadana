@@ -801,7 +801,7 @@ for (const b of BOOKS) {
       ${langsOf(b).length ? `<dt>원서의 언어</dt><dd>${esc(langsOf(b).join(', '))}</dd>` : ''}
       ${b.original_source || origSrcs(b).length ? `<dt>원서 정보</dt><dd>${esc(b.original_source || '')}${origSrcs(b).map((x, k) => `${b.original_source || k ? ' · ' : ''}<a href="${esc(x.url)}" target="_blank" rel="noopener">원서${x.lang ? `(${esc(x.lang)})` : ''} 원본 출처 ↗</a> <span class="muted small">${esc(x.host)}</span>`).join('')}</dd>` : ''}
       ${parEds(b).length ? `<dt>원서 대조 판본</dt><dd>${parEds(b).map(x => `${x.title ? `<i>${esc(x.title)}</i>` : ''}${x.by ? ' · ' + esc(x.by) : ''}${x.edition ? ` <span class="muted small">(${esc(x.edition)})</span>` : ''}${x.url ? ` · <a href="${esc(x.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>` : ''}`).join('<br>')}</dd>` : ''}
-      <dt>자료 제공</dt><dd>${prov ? esc(prov.name) + (prov.urls || []).map(u => ` <a href="${esc(u)}" target="_blank" rel="noopener">↗</a>`).join('') : '—'}</dd>
+      <dt>자료 제공</dt><dd>${prov ? esc(prov.name) + (prov.urls || []).map(u => ` <a href="${esc(String(u).replace(/^.*\|\s*(?=https?:)/, ''))}" target="_blank" rel="noopener">↗</a>`).join('') : '—'}</dd>
       <dt>원본 출처</dt><dd>${(e.sources || []).length ? e.sources.map(s => `${SRC_FILE[s.file] ? `<span class="muted small">${SRC_FILE[s.file]}:</span> ` : ''}<a href="${esc(s.url)}" target="_blank" rel="noopener">원본 출처 ↗</a>${s.checked ? ` <span class="muted small">(${esc(s.checked)} 확인)</span>` : ''}${s.archive ? ` · <a href="${esc(s.archive)}" target="_blank" rel="noopener">보관본</a>` : ''}`).join('<br>') : '—'}</dd>
       ${brlOf(b).length ? `<dt>점자 파일</dt><dd><span class="muted small">${brlOf(b).map(brlInfoHtml).join('<br>')}</span></dd>` : ''}
       ${AUDIO[b.id] && abInfoHtml(b) ? `<dt>오디오북</dt><dd>${abInfoHtml(b)}</dd>` : ''}
@@ -854,7 +854,7 @@ for (const t of TEACHERS) {
     <div><div class="small muted"><a href="/library/">법보시 도서관</a> · ${p.coop === false ? '출판사' : '협력 단체'}</div>
     <h1 class="h-page">${esc(p.name)}</h1>
     ${p.bio ? `<div class="desc small">${marked.parse(p.bio)}</div>` : '<p class="small muted">소개 글은 준비 중입니다.</p>'}
-    ${(p.urls || []).length ? `<p style="margin:8px 0 0">${p.urls.map((u, i) => `<a class="btn sm ghost pub-site" href="${esc(u)}" target="_blank" rel="noopener">${/youtube\.com|youtu\.be/.test(u) ? '▶ 유튜브 채널' : esc((!i && p.note) || u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))} ↗</a>`).join(' ')}</p>` : ''}</div></div>
+    ${(p.urls || []).length ? `<p style="margin:8px 0 0">${p.urls.map((x, i) => { const m = String(x).match(/^(.*?)\s*\|\s*(https?:\/\/\S+)$/); const u = m ? m[2] : x, nm = m ? m[1] : ''; return `<a class="btn sm ghost pub-site" href="${esc(u)}" target="_blank" rel="noopener">${/youtube\.com|youtu\.be/.test(u) ? '▶ ' + (nm ? esc(nm) + ' ' : '') + '유튜브 채널' : nm ? esc(nm) : esc((!i && p.note) || u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))} ↗</a>`; }).join(' ')}</p>` : ''}</div></div>
     <div class="section-head" style="margin-top:20px"><h2>${esc(p.name)}${rel ? ' 관련 책' : '에서 펴낸 책'} ${books.length}권</h2></div>
     ${cardList(books)}
     <div class="section-head" style="margin-top:36px"><h2>다른 출판사·단체</h2></div>
