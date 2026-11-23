@@ -601,7 +601,7 @@ collections:
               - { name: download, label: mp3 다운받기 주소, required: false, hint: "넣으면 채널 단추 왼쪽에 'mp3 다운받기' 단추가 생깁니다 (예: 구글 드라이브 폴더 주소)" }
               - { name: podbbang, label: 팟빵 채널 번호, required: false, hint: "팟빵 채널 주소 podbbang.com/channels/1793926 의 숫자. 넣어 두면 사이트를 새로 만들 때마다 새 법문이 자동으로 들어옵니다" }
               - { name: rss, label: 팟캐스트 RSS 주소 (팟빵 말고 다른 곳), required: false }
-              - { name: order, label: '전체 법문' 목록 순서, widget: select, options: [{ label: '최근 올린 순 (처음 값)', value: '' }, { label: '처음 올린 것부터', value: 'asc' }], required: false, hint: "팟빵 채널의 '전체 법문' 목록을 처음 올린 것부터 보이게 하려면 고르세요 (재생목록은 늘 1강부터)" }
+              - { name: order, label: "'전체 법문' 목록 순서", widget: select, options: [{ label: '최근 올린 순 (처음 값)', value: '' }, { label: '처음 올린 것부터', value: 'asc' }], required: false, hint: "팟빵 채널의 '전체 법문' 목록을 처음 올린 것부터 보이게 하려면 고르세요 (재생목록은 늘 1강부터)" }
               - name: episodes
                 label: 직접 넣는 법문 (RSS가 없을 때)
                 widget: list
