@@ -1542,3 +1542,10 @@ h1,h2,h3,.ch-head,.s-h1{word-break:keep-all;overflow-wrap:break-word}
 .yt-ic{color:#C4302B;font-size:12px}
 .yt-nm{flex:1;min-width:0;overflow-wrap:anywhere}
 @media (max-width:760px){.pl-yt{margin-top:16px}}
+
+/* 추천·협력 사이트 협력 단체 카드의 유튜브 채널 단추 (2026-11-24) */
+.lc-wrap{position:relative;display:flex}
+.lc-wrap>.link-card{flex:1;padding-bottom:46px}
+.lc-yt{position:absolute;left:86px;bottom:12px;font-size:13px;padding:3px 10px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink)}
+.lc-yt span[aria-hidden]{color:#C4302B;font-size:11px}
+.lc-yt:hover{border-color:var(--robe);text-decoration:none}
