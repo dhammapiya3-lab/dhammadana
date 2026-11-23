@@ -44,8 +44,19 @@ def boundaries(body):
     for i in range(len(P) - 1):
         ps = [s for s in para_spans(body, P[i][1], P[i][2]) if not body[s[0]:s[1]].lstrip().startswith(('[^', '![', '%%', '## ', '|'))]
         nx = para_spans(body, P[i + 1][1], P[i + 1][2])
-        if not ps or not nx: continue
-        yield P[i][0], P[i + 1][0], ps[-1], nx[0]
+        if not ps: continue
+        if nx: yield P[i][0], P[i + 1][0], ps[-1], nx[0]
+        # 사이에 본문이 없는 쪽(빈 쪽·각주만 있는 쪽)을 건너 그다음 본문 쪽과도 (2026-11-23 — DL-0030 '바후 | (빈 617쪽) | 뿟타')
+        j = i + 1
+        while j < len(P):
+            nj = [s for s in para_spans(body, P[j][1], P[j][2]) if not re.match(r'\[\^[^\]]+\]:', body[s[0]:s[1]].lstrip())]
+            if nj: break
+            j += 1
+        if j > i + 1 and j < len(P) and (not nx or nj[0] != nx[0]):
+            # 이때 앞 쪽 끝은 첫 각주 풀이 앞의 본문 문단(각주 뒤에 붙은 표·출처 줄은 각주 쪽 글 — DL-0030 310쪽)
+            allp = para_spans(body, P[i][1], P[i][2]); fi = next((k for k, s2 in enumerate(allp) if re.match(r'\[\^[^\]]+\]:', body[s2[0]:s2[1]].lstrip())), len(allp))
+            pb = [s2 for s2 in allp[:fi] if s2 in ps]
+            if pb: yield P[i][0], P[j][0], pb[-1], nj[0]
 
 
 def toks(body, pa, na):
@@ -115,14 +126,20 @@ def apply(ids, write):
         print(bid, '뒷조각을 앞 쪽으로', done, '/ 앞 조각을 다음 쪽으로', back, ('/ 이미 고침 %d' % len(already)) if already else '', ('/ 못 찾음(본문이 바뀜 — 확인) %d' % len(left)) if left else '', ('/ 건너뜀 %d' % len(miss)) if miss else '')
         for k in left[:5]: print('   못 찾음:', k)
         # 글자 대조: 빈칸·줄바꿈 말고 같은지
-        def norm(t):
-            t = re.sub(r'^===.*===\s*$', '', t, flags=re.M)
-            t = '\n\n'.join(x for x in re.split(r'\n\s*\n', t) if not x.strip().startswith('[^'))
+        def norm(t, fn=False):
+            # 쪽마다 첫 각주 풀이부터 쪽 끝까지는 각주 구역(각주 뒤에 붙은 표·그림·출처 줄 포함) — 본문 글과 각주 구역 글을 따로 대조 (2026-11-23)
+            body_t, fn_t = [], []
+            for pg in re.split(r'^===.*===\s*$', t, flags=re.M):
+                infn = False
+                for x in re.split(r'\n\s*\n', pg):
+                    if x.strip().startswith('[^') and re.match(r'\[\^[^\]]+\]:', x.strip()): infn = True
+                    (fn_t if infn else body_t).append(x)
+            t = '\n\n'.join(fn_t if fn else body_t)
             return re.sub(r'\s', '', t).replace('**', '').replace('==', '')   # 굵게·색 표시 자리만 바뀌는 것은 괜찮음
-        if norm(body) != norm(T['body']): sys.exit(bid + ': 빈칸·쪽 표시·각주 말고 글자가 달라짐 — 멈춤')
+        if norm(body) != norm(T['body']) or norm(body, True) != norm(T['body'], True): sys.exit(bid + ': 빈칸·쪽 표시·각주 말고 글자가 달라짐 — 멈춤')
         if write and body != T['body']:
             T['body'] = body
-            open(p, 'w').write(json.dumps(T, ensure_ascii=False, indent=2 if '\n  "' in s else None) + ('\n' if s.endswith('\n') else ''))
+            open(p, 'w').write(json.dumps(T, ensure_ascii=False, indent=(2 if '\n  "' in s else 1 if '\n "' in s else None)) + ('\n' if s.endswith('\n') else ''))
 
 
 if __name__ == '__main__':

@@ -34,7 +34,7 @@ for f in glob.glob(os.path.join(REPO, 'content/parallel', bk + '.*.json')):
     for g in d['groups']:
         for s in g.get('s', []):
             for r in s.get('ko', []):
-                if isinstance(r, list) and r and r[0] in maps: r[1], r[2] = maps[r[0]][r[1]], maps[r[0]][r[2]]; n += 1
+                if isinstance(r, list) and r and r[0] in maps: r[1], r[2] = maps[r[0]][r[1]], (len(B[r[0]]) if r[2] == len(A[r[0]]) else maps[r[0]][r[2]]); n += 1   # 문단 끝까지인 자리는 늘 새 문단 끝까지(쪽 경계 낱말을 앞 문단 끝에 붙인 때 — 2026-11-23)
         if g.get('ko') and g['ko'][0] in ch and g.get('ka') not in ('차례', None): g['ka'] = plain(B[g['ko'][0]])[:24]
     ind = re.match(r'\{\n( *)"', raw); ind = len(ind.group(1)) if ind else None
     open(f, 'w').write(json.dumps(d, ensure_ascii=False, indent=ind, separators=None if ind else (',', ':')) + ('\n' if raw.endswith('\n') else ''))
