@@ -624,7 +624,7 @@ function initTalks() {
   };
   $$('.pl').forEach(b => b.onclick = () => show(b.dataset.pl));
   $$('[data-sub]').forEach(c => c.onclick = () => showSub(c.dataset.sub));
-  $$('.ep').forEach(e => { const go = () => playEp(e.dataset.epl, +e.dataset.ep); e.onclick = go; e.onkeydown = k => { if (k.key === 'Enter' || k.key === ' ') { k.preventDefault(); go(); } }; });
+  $$('.ep').forEach(e => { const go = () => playEp(e.dataset.epl, +e.dataset.ep); e.onclick = ev => { if (ev.target.closest('a')) return; go(); }; e.onkeydown = k => { if (k.target !== e) return; if (k.key === 'Enter' || k.key === ' ') { k.preventDefault(); go(); } }; });  // 줄 안의 '📄 강의자료' 링크는 재생하지 않고 내려받음 (2026-11-23)
   $$('[data-playall]').forEach(b => b.onclick = () => playEp(b.dataset.playall, 0));
   // 스크롤하면 50개씩 더 보이기
   const more = btn => { const panel = btn.closest('.sub-panel'); $$('[data-later][hidden]', panel).slice(0, 50).forEach(x => x.hidden = false); if (!$('[data-later][hidden]', panel)) btn.parentElement.remove(); };

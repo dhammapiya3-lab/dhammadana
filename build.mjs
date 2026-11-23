@@ -113,6 +113,8 @@ const wideCover = c => { const z = imgSize(c); return z && z.w > z.h * 1.15 ? z 
 // 펼친 표지가 아닌데 가로가 넓은(세로보다 0.9배 넘게) 표지는 책 카드에서 가운데가 보이게 (운영자 요청, 2026-11-16 — 『불자수첩』)
 const ctrCover = c => { const z = imgSize(c); return z && z.w > z.h * 0.9 && z.w <= z.h * 1.15 ? ' style="object-position:center"' : ''; };
 const fileUrl = u => !u ? '' : /^https?:\/\//.test(u) ? u : S.files_base.replace(/\/$/, '') + '/' + u.replace(/^\//, '');
+// 법문 영상 링크 (운영자 요청, 2026-11-23 — 책 JSON videos [{name, url}]): '이 책 읽어보기' 칸에 '법문 영상 바로 보기' 단추
+const vidsOf = b => (b.videos || []).filter(x => x && /^https?:\/\//.test(String(x.url || '').trim())).map(x => ({ url: String(x.url).trim(), label: (x.name || '').trim() || '법문 영상 바로 보기' }));
 // 원서 파일 (운영자 요청, 2026-11-18): 책 JSON originals [{lang, mode: file|link, url, site, source(원서 원본 출처 주소 — 2026-11-19)}] → 책 소개 '원서(미얀마어) 내려받기'
 // 원서 원본 출처 주소 (운영자 요청, 2026-11-19 — 여러 개): originals[].sources [주소…] (예전 source 하나도 읽음), 원서 언어가 둘 넘을 때만 언어를 붙임
 const origSrcs = b => { const os = (b.originals || []).filter(o => o && o.lang); const many = new Set(os.map(o => o.lang)).size > 1;
@@ -785,6 +787,7 @@ for (const b of BOOKS) {
       ${origsOf(b).map(x => x.ext ? `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">원서(${esc(x.lang)}) 내려받기 ↗</a>` : `<a class="btn ghost" href="${esc(x.url)}" download>원서(${esc(x.lang)}) 내려받기</a>`).join('')}
       ${brlOf(b).map(x => `<a class="btn ghost" href="${esc(x.url)}"${x.ext ? ' target="_blank" rel="noopener"' : ' download'}>${esc(x.label)}${x.ext ? ' ↗' : ''}</a>`).join('')}
       ${(b.stores || []).filter(x => x && /^https?:\/\//.test(String(x.url || '').trim())).map(x => `<a class="btn ghost" href="${esc(String(x.url).trim())}" target="_blank" rel="noopener">${esc((x.name || '').trim() ? x.name.trim() + ' 바로가기' : '인터넷 서점 바로가기')} ↗</a>`).join('')}
+      ${vidsOf(b).map(x => `<a class="btn ghost" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)} ↗</a>`).join('')}
       ${!f.length && !brlOf(b).length ? `<div class="soon-box">파일을 준비하고 있습니다.<br><span class="small">소식에서 올라오는 대로 알려 드립니다.</span></div>` : ''}</div>
     ${extF.length ? `<div class="small muted" style="margin-bottom:4px">↗ 표시된 파일은 ${esc(extF[0].site)}로 넘어가서 내려받습니다.</div>` : ''}
     <dl class="gb-kv"><dt>판</dt><dd>${esc((e.label_display || '').trim() || (e.label || '').trim() || '—')}</dd>${e.page_count ? `<dt>쪽수</dt><dd>${esc(e.page_count)}쪽</dd>` : ''}${edHistory(b).length ? `<dt>펴낸 이력</dt><dd>${edHistory(b).map(esc).join('<br>')}</dd>` : ''}<dt>라이선스</dt><dd>${licHtml(b.license)}</dd><dt>자료번호</dt><dd>${b.id}</dd></dl></div></aside><div class="d-rest">
@@ -938,9 +941,15 @@ for (const p of PLAYLISTS) {
   if (p.order === 'asc' && subs[0].id === 'all') { subs[0].list = [...subs[0].list].reverse().sort((x, y) => (x.t || x.date || '').localeCompare(y.t || y.date || '')); subs[0].asc = true; } // 처음 올린 것부터 (playlists.json order: asc)
   p.subs = subs; p.list = subs[0].list;
 }
+// 강의자료 (운영자 요청, 2026-11-23): playlists.json 항목의 materials [{ep, title, name, url}] — 강의(법문)마다 내려받을 파일.
+// ep = 팟빵 법문 번호(없으면 음성 주소로 만든 열쇠). 파일은 관리자 화면 /admin/upload/ '📄 법문 강의자료 올리기'로 R2 talk/<재생목록>/<ep>/ 에.
+const epKey = e => e.id != null && e.id !== '' ? String(e.id) : 'h' + crypto.createHash('md5').update(String(e.audio || e.title || '')).digest('hex').slice(0, 10);
+const matsOf = (p, e) => (p.materials || []).filter(m => m && m.url && String(m.ep) === epKey(e));
+const matExt = m => (String(m.url).split('?')[0].split('.').pop() || '').toUpperCase();
+const matHtml = (p, e) => { const L = matsOf(p, e); return L.map(m => ` <a class="ep-mat" href="${esc(fileUrl(m.url))}" download target="_blank" rel="noopener">📄 ${L.length > 1 ? esc(m.name) : '강의자료'} <span class="sr">${esc(e.title)} 강의자료 내려받기, </span>(${esc(matExt(m))})</a>`).join(''); };
 function talksBody() {
   let g = '';
-  const row = (p, s, e, i) => `<div class="ep" role="listitem" tabindex="0" data-ep="${i}" data-epl="${p.id}:${s.id}" data-sp="/simple/talks/${p.id}/${p.subs.indexOf(s) + 1}/" data-audio="${esc(e.audio)}" data-title="${esc(e.title)}" data-plname="${esc(p.name + (s.id === 'all' ? '' : ' · ' + s.name))}"${i >= 50 ? ' hidden data-later' : ''}><span class="no">${i + 1}</span><span><span class="et">${esc(e.title)}</span><br><span class="em">${esc(e.date)}</span></span><span class="ed">${esc(e.duration)}</span></div>`;
+  const row = (p, s, e, i) => `<div class="ep" role="listitem" tabindex="0" data-ep="${i}" data-epl="${p.id}:${s.id}" data-sp="/simple/talks/${p.id}/${p.subs.indexOf(s) + 1}/" data-audio="${esc(e.audio)}" data-title="${esc(e.title)}" data-plname="${esc(p.name + (s.id === 'all' ? '' : ' · ' + s.name))}"${i >= 50 ? ' hidden data-later' : ''}><span class="no">${i + 1}</span><span><span class="et">${esc(e.title)}</span><br><span class="em">${esc(e.date)}</span>${matHtml(p, e)}</span><span class="ed">${esc(e.duration)}</span></div>`;
   return `<div class="wrap"><div class="prose" style="padding-bottom:0"><h1>법문 바로 듣기</h1><p class="muted">재생목록에서 법문을 골라 바로 들을 수 있습니다. 다른 메뉴로 옮겨 가도 아래 재생기는 계속 재생됩니다.</p></div>
   <div class="talks"><nav class="pl-list" aria-label="법문 모음">${PLAYLISTS.map(x => (x.group !== g ? `<div class="pl-group">${esc(g = x.group)}</div>` : '') + `<button class="pl" data-pl="${x.id}" style="--pl-c:${['#9C5A2E', '#6B7F4E', '#4F6B8A', '#8A5A7A', '#A0812F', '#5E7F7A'][PLAYLISTS.indexOf(x) % 6]}"><span class="n">${esc(x.name)}</span><span class="s">${x.list.length}개${x.subs.length > 1 ? ` · 재생목록 ${x.subs.length - 1}개` : ''} · ${esc(x.source || '')}</span></button>`).join('')}</nav>
   <section>${PLAYLISTS.map(p => `<div class="pl-panel" data-panel="${p.id}" hidden>
@@ -1149,10 +1158,11 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
       rows: p.subs.map((x, i) => F(x.name, `/simple/talks/${p.id}/${i + 1}/`, `${x.list.length}개${x.id === 'all' ? (x.asc ? ' · 1강부터' : ' · 최근 올린 순') : ' · 1강부터'}`, '🎧')) });
     p.subs.forEach((x, i) => {
       const nm = p.name + (x.id === 'all' ? '' : ' · ' + x.name);
-      const rows = x.list.map((e, j) => ({ href: e.audio, ic: '▶', kind: 'ep', data: { t: e.title, pl: nm, n: j + 1 }, cols: [e.title, e.date || '', e.duration || ''] }));
+      const rows = x.list.flatMap((e, j) => [{ href: e.audio, ic: '▶', kind: 'ep', data: { t: e.title, pl: nm, n: j + 1 }, cols: [e.title, e.date || '', e.duration || ''] },
+        ...matsOf(p, e).map(m => ({ href: fileUrl(m.url), ic: '📄', kind: 'mat', dl: true, ext: true, cols: [`강의자료 · ${m.name}`, '', `${matExt(m)} 내려받기`] }))]);  // 강의자료 줄은 그 법문 줄 바로 아래 (2026-11-23)
       put(`simple/talks/${p.id}/${i + 1}/index.html`, simpleLayout({ title: nm, path: [...P1, [x.name, '']], up: `/simple/talks/${p.id}/`, normal: `/dhammatalk/?pl=${p.id}`, page: 'simple-talk', status: `법문 ${x.list.length}`,
         body: `<div id="sPlayerSlot"></div>
-` + (rows.length ? sList(`${nm}, 법문 ${rows.length}개`, ['제목', '올린 날', '길이'], rows) : '<p>법문 목록을 불러오지 못했습니다. 잠시 뒤 다시 확인해 주세요.</p>') }));
+` + (rows.length ? sList(`${nm}, 법문 ${x.list.length}개`, ['제목', '올린 날', '길이'], rows) : '<p>법문 목록을 불러오지 못했습니다. 잠시 뒤 다시 확인해 주세요.</p>') }));
     });
   }
   if (audio.length) sBooksPage('simple/audio/index.html', { title: '오디오북이 있는 책', path: [['오디오북이 있는 책', '/simple/audio/']], up: '/simple/', normal: '/library/', books: audio });
@@ -1168,6 +1178,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
     if (txtOk(b)) rows.push({ href: `/txt/${b.id}/${encodeURIComponent(txtName(b))}`, ic: '📃', kind: 'file', dl: true, cols: ['글 파일(TXT) 내려받기', '본문 글만 담은 파일 — 점자정보단말기·데이지 플레이어·메모장에서 읽기'] });
     for (const x of f) rows.push({ href: x.url, ic: x.k === 'PDF' ? '📄' : x.k === 'EPUB' ? '📘' : '📝', kind: 'file', dl: !x.ext, ext: x.ext, cols: [`${x.name} ${x.ext ? '(다른 사이트에서)' : '내려받기'}`, x.ext ? x.site : '파일'] });
     for (const x of origsOf(b)) rows.push({ href: x.url, ic: '🌐', kind: 'file', dl: !x.ext, ext: x.ext, cols: [`원서(${x.lang}) ${x.ext ? '(다른 사이트에서)' : '내려받기'}`, x.ext ? (x.site || '다른 사이트') : '번역의 바탕이 된 원서 파일'] });  // 원서 파일 — 일반 화면처럼 PDF·EPUB·HWP 다음 (2026-11-19 검수: 단순 화면에 빠져 있던 것)
+    for (const x of vidsOf(b)) rows.push({ href: x.url, ic: '🎬', kind: 'file', ext: true, cols: [x.label + ' (다른 사이트에서)', (() => { try { return new URL(x.url).hostname.replace(/^www\./, ''); } catch (e) { return ''; } })()] });  // 법문 영상 (2026-11-23)
     rows.push({ href: `/simple/book/${b.id}/about/`, ic: 'ℹ️', kind: 'about', cols: ['책 소개', '지은이·옮긴이·펴낸 곳·소개 글·차례'] });
     rows.push({ href: `/simple/book/${b.id}/license/`, ic: '⚖️', kind: 'license', cols: ['라이선스', b.license ? `이용 조건: ${b.license}` : '이용 조건'] });
     rows.push({ href: `/book/${b.id}/?ui=normal`, ic: '↩', kind: 'normal', cols: ['일반 화면에서 이 책 보기', '표지 그림이 있는 책 소개 화면'] });
@@ -1253,6 +1264,8 @@ fs.mkdirSync(path.join(OUT, 'texts'), { recursive: true });
 if (fs.existsSync(C('parallel'))) { fs.mkdirSync(path.join(OUT, 'parallel'), { recursive: true }); for (const f of fs.readdirSync(C('parallel')).filter(f => /\.json$/.test(f))) fs.copyFileSync(C('parallel/' + f), path.join(OUT, 'parallel', f)); }
 // 색인처럼 표로 된 자료: content/indexes/<자료번호>.json (본문의 [[색인]] 자리에 찾기·순서 바꾸기가 되는 표로 보임)
 const indexOf = id => { const f = C('indexes/' + id + '.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : null; };
+// 관리자 화면 '법문 강의자료 올리기'가 강의를 고를 때 쓰는 목록 (2026-11-23)
+fs.writeFileSync(path.join(OUT, 'data/talk-eps.json'), JSON.stringify(PLAYLISTS.map(p => ({ id: p.id, name: p.name, subs: p.subs.map(x => ({ id: x.id, name: x.name, eps: x.list.map(e => ({ k: epKey(e), t: e.title, d: e.date || '' })) })) }))));
 fs.mkdirSync(path.join(OUT, 'data/audio'), { recursive: true });
 for (const [id, a] of Object.entries(AUDIO)) fs.writeFileSync(path.join(OUT, 'data/audio', id + '.json'), JSON.stringify({ book: id, voice: a.voice || '', chapters: a.chapters.map(c => ({ ...c, url: fileUrl(c.file) + '?v=' + (c.size || '') + (a.up && a.up[c.n] ? '-' + a.up[c.n] : '') }))  /* 같은 이름으로 새 파일을 올려도 옛 파일을 저장해 둔 기기·저장소가 새 파일을 받게 */ }));
 for (const [id, t] of Object.entries(TEXTS)) { const ix = indexOf(id); fs.writeFileSync(path.join(OUT, 'texts', id + '.json'), JSON.stringify({ book: id, edition: t.edition, pages: t.pages, toc: t.toc, ...(t.say ? { say: t.say } : {}), ...(t.ph ? { ph: t.ph } : {}), ...(t.table_dl ? { table_dl: t.table_dl } : {}), ...(t.fn_site ? { fn_site: t.fn_site } : {}), ...(t.p_site ? { p_site: pSiteOf(id) } : {}), ...(t.spread ? { spread: true } : {}), ...(t.center_heads ? { center_heads: true } : {}), ...(t.ly ? { ly: t.ly } : {}), ...(ix ? { index: { colnames: ix.colnames, parts: ix.parts } } : {}) })); }

@@ -96,6 +96,20 @@
       <progress id="aprog" max="100" value="0" hidden style="margin-top:12px"></progress>
       <div id="aout"></div>
     </div>
+    <div class="card" id="tmCard">
+      <h2>📄 법문 강의자료 올리기</h2>
+      <p class="note">'법문 바로 듣기'의 강의(1강·2강…)마다 강의자료를 붙입니다. 재생목록 → 묶음 → 강의를 고른 뒤 파일을 올리면, 그 강의 줄에 <b>'📄 강의자료'</b> 내려받기 단추가 생깁니다(일반·단순 화면 모두, 1~2분 뒤). 한 강의에 여러 파일을 붙여도 되고, 같은 이름의 파일을 다시 올리면 새 파일로 바뀝니다. PDF·HWP·DOCX·PPTX·XLSX·ZIP·TXT·JPG·PNG. 이 책 고르기(위 1번)와는 상관없습니다.</p>
+      <div class="row"><label for="tmPl">재생목록</label><select id="tmPl"><option value="">불러오는 중…</option></select></div>
+      <div class="row"><label for="tmSub">묶음</label><select id="tmSub" disabled></select></div>
+      <div class="row"><label for="tmEp">강의</label><select id="tmEp" disabled></select></div>
+      <div id="tmHave" class="note" style="margin-top:6px"></div>
+      <div class="drop" id="tmDrop" tabindex="0" role="button" style="margin-top:10px"><b>여기를 눌러 강의자료 파일을 고르거나</b><br>끌어다 놓으세요 (여러 개도 됨)</div>
+      <input type="file" id="tmFile" accept=".pdf,.hwp,.hwpx,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.zip,.txt,.jpg,.jpeg,.png" multiple hidden>
+      <div id="tmPicked" class="note" style="margin-top:10px"></div>
+      <button class="btn" id="tmGo" style="margin-top:12px;width:100%" disabled>올리기</button>
+      <progress id="tmProg" max="100" value="0" hidden style="margin-top:12px"></progress>
+      <div id="tmOut"></div>
+    </div>
     <div class="card">
       <h2>창고 정리 (잘못 올라간 파일 지우기)</h2>
       <p class="note">책을 고르면 파일 창고에 있는 그 책의 파일 묶음이 나옵니다. <b>이름이 깨진 묶음</b>은 미리 골라져 있습니다. 지운 파일은 되살릴 수 없으니 확인하고 누르세요.</p>
@@ -131,12 +145,12 @@ async function check(t){
 }
 async function start(){
   TOKEN=findToken();
-  if(TOKEN && await check(TOKEN)){ $('#main').hidden=false; loadBooks(); }
+  if(TOKEN && await check(TOKEN)){ $('#main').hidden=false; loadBooks(); tmLoad(); }
   else { $('#tokCard').hidden=false; }
 }
 $('#tokSave').onclick=async()=>{
   const t=$('#tok').value.trim(); $('#tokMsg').innerHTML='<p class="note">확인 중…</p>';
-  if(await check(t)){ TOKEN=t; try{localStorage.setItem('dd-gh-token',t)}catch(e){} $('#tokCard').hidden=true; $('#main').hidden=false; loadBooks(); }
+  if(await check(t)){ TOKEN=t; try{localStorage.setItem('dd-gh-token',t)}catch(e){} $('#tokCard').hidden=true; $('#main').hidden=false; loadBooks(); tmLoad(); }
   else $('#tokMsg').innerHTML='<div class="msg err">이 열쇠로는 사이트를 고칠 수 없습니다. 열쇠가 맞는지, 기한이 지나지 않았는지 확인해 주세요.</div>';
 };
 $('#logout').onclick=()=>{try{localStorage.removeItem('dd-gh-token')}catch(e){} location.reload();};
@@ -278,6 +292,81 @@ $('#go').onclick=async()=>{
     pickBook();
   }catch(err){ show('err',esc(err.message)); }
   finally{ $('#prog').hidden=true; upd(); }
+};
+
+/* ---- 법문 강의자료 (운영자 요청, 2026-11-23): content/playlists.json 항목의 materials [{ep, title, name, url}] ---- */
+let TM=null, TMFILES=[];
+const tmShow=(cls,html)=>{ $('#tmOut').innerHTML=`<div class="msg ${cls}">${html}</div>`; };
+const tmSafe=n=>n.normalize('NFC').replace(/[\/\\?#%*:|"<>\u0000-\u001f]+/g,'_').replace(/\s+/g,' ').trim().slice(-110);
+const TM_EXT=/\.(pdf|hwpx?|docx?|pptx?|xlsx?|zip|txt|jpe?g|png)$/i;
+async function tmPlaylists(){ const r=await gh(`/contents/content/playlists.json?ref=main&t=${Date.now()}`,{cache:'no-store'}); const j=await r.json(); return {sha:j.sha, d:JSON.parse(dec(j.content))}; }
+async function tmLoad(){
+  try{
+    const [eps,pl]=await Promise.all([fetch('/data/talk-eps.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()), tmPlaylists()]);
+    TM={eps, pl:pl.d};
+    $('#tmPl').innerHTML='<option value="">— 재생목록을 고르세요 —</option>'+eps.map(p=>`<option value="${esc(p.id)}">${esc(p.name)}</option>`).join('');
+  }catch(e){ $('#tmPl').innerHTML='<option value="">목록을 불러오지 못했습니다</option>'; tmShow('err','법문 목록을 불러오지 못했습니다: '+esc(e.message)); }
+}
+const tmP=()=>TM&&TM.eps.find(p=>p.id===$('#tmPl').value);
+const tmS=()=>{ const p=tmP(); return p&&p.subs[+$('#tmSub').value]; };
+const tmE=()=>{ const s=tmS(); return s&&s.eps[+$('#tmEp').value]; };
+const tmMats=()=>{ const p=tmP(), e=tmE(); if(!p||!e) return []; const it=(TM.pl.items||[]).find(x=>x.id===p.id); return ((it&&it.materials)||[]).filter(m=>m&&String(m.ep)===e.k); };
+function tmHave(){
+  const L=tmMats(), e=tmE();
+  $('#tmHave').innerHTML=!e?'':L.length?'이 강의에 붙은 강의자료: '+L.map((m,i)=>`<b>${esc(m.name)}</b> <button class="link-btn" data-tmdel="${i}">연결 빼기</button>`).join(' · '):'이 강의에는 아직 강의자료가 없습니다.';
+  $('#tmHave').querySelectorAll('[data-tmdel]').forEach(b=>b.onclick=()=>tmUnlink(L[+b.dataset.tmdel]));
+  tmUpd();
+}
+function tmUpd(){ $('#tmGo').disabled=!(tmE()&&TMFILES.length); }
+$('#tmPl').onchange=()=>{ const p=tmP(); $('#tmSub').disabled=!p; $('#tmSub').innerHTML=p?p.subs.map((s,i)=>`<option value="${i}">${esc(s.name)} (${s.eps.length}개)</option>`).join(''):''; $('#tmSub').onchange(); };
+$('#tmSub').onchange=()=>{ const s=tmS(), p=tmP(); $('#tmEp').disabled=!s;
+  const it=p&&(TM.pl.items||[]).find(x=>x.id===p.id), have=new Set(((it&&it.materials)||[]).map(m=>String(m.ep)));
+  $('#tmEp').innerHTML=s?'<option value="">— 강의를 고르세요 —</option>'+s.eps.map((e,i)=>`<option value="${i}">${i+1}. ${esc(e.t)}${e.d?' · '+esc(e.d):''}${have.has(e.k)?' 📄':''}</option>`).join(''):''; tmHave(); };
+$('#tmEp').onchange=tmHave;
+function tmSetFiles(list){
+  const fs=[...list], bad=fs.filter(f=>!TM_EXT.test(f.name));
+  if(bad.length){ tmShow('err','올릴 수 없는 파일 종류입니다: '+esc(bad.map(f=>f.name).join(', '))); return; }
+  TMFILES=fs; $('#tmOut').innerHTML='';
+  $('#tmPicked').innerHTML=fs.map(f=>`${esc(f.name)} (${(f.size/1048576).toFixed(1)}MB)`).join('<br>'); tmUpd();
+}
+$('#tmDrop').onclick=()=>$('#tmFile').click(); $('#tmDrop').onkeydown=e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); $('#tmFile').click(); } };
+$('#tmFile').onchange=()=>tmSetFiles($('#tmFile').files);
+$('#tmDrop').ondragover=e=>{ e.preventDefault(); }; $('#tmDrop').ondrop=e=>{ e.preventDefault(); tmSetFiles(e.dataTransfer.files); };
+// 재생목록 정보(playlists.json)를 최신으로 받아 고친 뒤 저장 — 겹치면 몇 번 다시 시도
+async function tmSave(fix,msg){
+  for(let t=0;t<4;t++){
+    if(t) await new Promise(r=>setTimeout(r,1500*t));
+    const {sha,d}=await tmPlaylists(); fix(d);
+    const put=await gh(`/contents/content/playlists.json`,{method:'PUT',headers:{'content-type':'application/json'},body:JSON.stringify({message:msg,content:enc(JSON.stringify(d,null,2)+'\n'),sha,branch:'main'})});
+    if(put.ok){ TM.pl=d; return true; }
+  }
+  return false;
+}
+async function tmUnlink(m){
+  if(!m||!confirm(`'${m.name}' 강의자료 연결을 뺄까요? (파일은 창고에 남습니다)`)) return;
+  const p=tmP(), ok=await tmSave(d=>{ const it=d.items.find(x=>x.id===p.id); it.materials=(it.materials||[]).filter(x=>!(x&&String(x.ep)===String(m.ep)&&x.url===m.url)); if(!it.materials.length) delete it.materials; }, `법문 강의자료 연결 빼기: ${p.id} ${m.name}`);
+  tmShow(ok?'ok':'err',ok?`'${esc(m.name)}' 연결을 뺐습니다. 1~2분 뒤 사이트에서 단추가 사라집니다.`:'연결을 빼지 못했습니다. 잠시 뒤 다시 해 주세요.'); $('#tmSub').onchange(); }
+$('#tmGo').onclick=async()=>{
+  const p=tmP(), s=tmS(), e=tmE(); if(!p||!e||!TMFILES.length) return;
+  $('#tmGo').disabled=true; $('#tmProg').hidden=false; $('#tmProg').value=0;
+  const done=[];
+  try{
+    for(let i=0;i<TMFILES.length;i++){
+      const f=TMFILES[i], name=tmSafe(f.name), key=`talk/${p.id}/${e.k}/${name}`;
+      tmShow('',`올리는 중… (${i+1}/${TMFILES.length}) ${esc(name)}`);
+      await upBig(key,f,v=>{ $('#tmProg').value=(i+v)/TMFILES.length*100; });
+      done.push({ep:e.k,title:e.t,name,url:key});
+    }
+    tmShow('','파일을 올렸습니다. 강의에 연결하는 중…');
+    const ok=await tmSave(d=>{ const it=d.items.find(x=>x.id===p.id); if(!it) throw new Error('재생목록을 찾지 못했습니다: '+p.id);
+      const L=(it.materials||[]).filter(x=>x&&!done.some(n=>n.url===x.url)); it.materials=[...L,...done]; },
+      `법문 강의자료 연결: ${p.id} ${e.t} — ${done.map(x=>x.name).join(', ')}`);
+    if(!ok) throw new Error('파일은 올렸지만 강의에 연결하지 못했습니다. 관리자 화면 법문 재생목록의 \'강의자료\'에 '+done.map(x=>x.url).join(', ')+' 를 적어 주세요.');
+    TMFILES=[]; $('#tmFile').value=''; $('#tmPicked').textContent='';
+    tmShow('ok',`다 됐습니다! 「${esc(e.t)}」에 강의자료 ${done.length}개를 붙였습니다.<br>1~2분 뒤 <a href="/dhammatalk/?pl=${esc(p.id)}" target="_blank" rel="noopener">법문 바로 듣기 ↗</a>의 그 강의 줄에 '📄 강의자료' 단추가 나타납니다.<br><b>관리자 화면이 다른 창에 열려 있다면, 법문 재생목록을 고치기 전에 꼭 새로고침(F5)해 주세요.</b>`);
+    $('#tmSub').onchange();
+  }catch(err){ tmShow('err',esc(err.message)); }
+  finally{ $('#tmProg').hidden=true; tmUpd(); }
 };
 
 /* ---- 오디오북 소리 파일 (운영자 요청, 2026-11-10) ---- */

@@ -6,8 +6,9 @@ const ORIG_RE = /^orig\/DL-\d{4}\/[^/\\]{1,120}\.(pdf|epub|hwpx?|docx?|zip|txt)$
 const BRL_RE = /^braille\/DL-\d{4}\/[^/\\]{1,120}\.(brf|brl|bbf|dxb|pdf|hwpx?|docx?|zip|txt)$/i;  // 점자 파일 (운영자 요청, 2026-11-19)
 const READER_RE = /^reader\/DL-\d{4}\/[^/\\]{1,40}\/(manifest\.json|(p|big)\/\d{4}\.webp)$/;
 const AUDIO_RE = /^audio\/DL-\d{4}\/\d{2}\.mp3$/;  // 오디오북 장 소리 파일
-const okKey = k => KEY_RE.test(k) || ORIG_RE.test(k) || BRL_RE.test(k) || READER_RE.test(k) || AUDIO_RE.test(k);
-const TYPES = { mp3: 'audio/mpeg', pdf: 'application/pdf', epub: 'application/epub+zip', hwp: 'application/x-hwp', hwpx: 'application/hwp+zip', docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', doc: 'application/msword', zip: 'application/zip', txt: 'text/plain; charset=utf-8', webp: 'image/webp', json: 'application/json; charset=utf-8' };
+const TALK_RE = /^talk\/[a-z0-9-]{1,40}\/[A-Za-z0-9_-]{1,40}\/[^/\\]{1,120}\.(pdf|hwpx?|docx?|pptx?|xlsx?|zip|txt|jpe?g|png)$/i;  // 법문 강의자료 (운영자 요청, 2026-11-23)
+const okKey = k => KEY_RE.test(k) || ORIG_RE.test(k) || BRL_RE.test(k) || READER_RE.test(k) || AUDIO_RE.test(k) || TALK_RE.test(k);
+const TYPES = { mp3: 'audio/mpeg', pdf: 'application/pdf', epub: 'application/epub+zip', hwp: 'application/x-hwp', hwpx: 'application/hwp+zip', docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', doc: 'application/msword', zip: 'application/zip', txt: 'text/plain; charset=utf-8', pptx: 'application/vnd.openxmlformats-officedocument.presentationml.presentation', ppt: 'application/vnd.ms-powerpoint', xlsx: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', xls: 'application/vnd.ms-excel', jpg: 'image/jpeg', jpeg: 'image/jpeg', png: 'image/png', webp: 'image/webp', json: 'application/json; charset=utf-8' };
 const json = (o, status = 200) => new Response(JSON.stringify(o), { status, headers: { 'content-type': 'application/json; charset=utf-8' } });
 
 export async function onRequestPost({ request, env }) {
@@ -20,6 +21,8 @@ export async function onRequestPost({ request, env }) {
   const ext = key.split('.').pop().toLowerCase();
   const cache = ext === 'webp' ? 'public, max-age=31536000' : ext === 'json' ? 'public, max-age=300' : 'public, max-age=86400';
   const meta = { httpMetadata: { contentType: TYPES[ext] || 'application/octet-stream', cacheControl: cache } };
+  // 강의자료는 누르면 열지 않고 파일 이름 그대로 내려받게 — 법문 재생기가 있는 화면을 떠나지 않도록
+  if (TALK_RE.test(key)) meta.httpMetadata.contentDisposition = `attachment; filename*=UTF-8''${encodeURIComponent(key.split('/').pop())}`;
   // 큰 파일(100MB 넘음)은 여러 조각으로 나눠 올림: create → part(1,2,…) → complete
   const mp = request.headers.get('x-mp');
   if (mp) {

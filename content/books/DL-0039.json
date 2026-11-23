@@ -115,5 +115,11 @@
   "order": null,
   "hidden": false,
   "no_copy": false,
-  "hide_update": false
+  "hide_update": false,
+  "videos": [
+    {
+      "name": "",
+      "url": "https://www.youtube.com/playlist?list=PLyVKSjiM41EKvurkVVTC5ckHz-snsLdfr"
+    }
+  ]
 }
