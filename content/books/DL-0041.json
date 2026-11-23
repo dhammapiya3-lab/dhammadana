@@ -85,10 +85,10 @@
         "created": ""
       },
       "hwp": {
-        "mode": "file",
-        "url": "hwp/DL-0041/DL-0041_초판.hwp",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "hwp/DL-0041/DL-0041_초판.hwp"
       },
       "reader": true,
       "sources": [
