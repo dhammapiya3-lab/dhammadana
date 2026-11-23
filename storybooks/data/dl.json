@@ -73,20 +73,20 @@
 },
 "Foremost-Laymen": {
 "n": 157,
-"pdf": 228936714,
-"pdfs": 24197628,
+"pdf": 229252185,
+"pdfs": 24266814,
 "stories": 10,
-"zip": 228622079
+"zip": 228937550
 },
 "Foremost-Laymen/01-Tapussa-and-Bhallika": {
 "n": 14,
-"pdf": 20412533,
-"zip": 20134884
+"pdf": 20439104,
+"zip": 20164779
 },
 "Foremost-Laymen/02-Anathapindika": {
 "n": 24,
-"pdf": 36206593,
-"zip": 35928167
+"pdf": 36389466,
+"zip": 36114076
 },
 "Foremost-Laymen/03-Citta": {
 "n": 31,
@@ -95,38 +95,38 @@
 },
 "Foremost-Laymen/04-Hatthaka-Alavaka": {
 "n": 10,
-"pdf": 15152075,
-"zip": 14876942
+"pdf": 15194745,
+"zip": 14922215
 },
 "Foremost-Laymen/05-Mahanama": {
 "n": 14,
-"pdf": 19291685,
-"zip": 19009010
+"pdf": 19340743,
+"zip": 19063410
 },
 "Foremost-Laymen/06-Ugga": {
 "n": 15,
-"pdf": 21633119,
-"zip": 21354254
+"pdf": 21624407,
+"zip": 21354247
 },
 "Foremost-Laymen/07-Uggata": {
 "n": 13,
-"pdf": 19299057,
-"zip": 19020745
+"pdf": 19291639,
+"zip": 19020739
 },
 "Foremost-Laymen/08-Surambattha": {
 "n": 15,
-"pdf": 18539642,
-"zip": 18254995
+"pdf": 18528594,
+"zip": 18254982
 },
 "Foremost-Laymen/09-Jivaka": {
 "n": 11,
-"pdf": 21205201,
-"zip": 20369589
+"pdf": 21187427,
+"zip": 20369584
 },
 "Foremost-Laymen/10-Nakulapitu": {
 "n": 10,
-"pdf": 12446042,
-"zip": 12166117
+"pdf": 12438260,
+"zip": 12166113
 },
 "Foremost-Laywomen": {
 "n": 175,
@@ -182,10 +182,10 @@
 },
 "Foremost-Monks": {
 "n": 802,
-"pdf": 1122491196,
-"pdfs": 118342141,
+"pdf": 1122450365,
+"pdfs": 118340143,
 "stories": 38,
-"zip": 1121948347
+"zip": 1121907514
 },
 "Foremost-Monks/01-Kondanna": {
 "n": 38,
@@ -204,8 +204,8 @@
 },
 "Foremost-Monks/05-Anuruddha": {
 "n": 53,
-"pdf": 71903648,
-"zip": 71621843
+"pdf": 71862815,
+"zip": 71581010
 },
 "Foremost-Monks/06-Bhaddiya": {
 "n": 15,
