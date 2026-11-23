@@ -9,9 +9,9 @@ R2 에 올림: 349 개 / 한글판 이야기 318 편
 새 그림책: 올린 그림 0 장
 공개 주소 확인: 200 1735306바이트
 이야기 Foremost-Monks/02-03-Sariputta-Moggallana {'pdf': 85418311, 'zip': 85121687, 'n': 57}
-이야기 Foremost-Monks/04-Maha-Kassapa {'pdf': 57433761, 'zip': 57154850, 'n': 41}
+이야기 Foremost-Monks/04-Maha-Kassapa {'pdf': 57433814, 'zip': 57154903, 'n': 41}
 이야기 Foremost-Monks/05-Anuruddha {'pdf': 71877067, 'zip': 71595261, 'n': 53}
-책 Foremost-Monks {'pdf': 1122438782, 'pdfs': 118344124, 'zip': 1121895931, 'stories': 38, 'n': 802}
+책 Foremost-Monks {'pdf': 1122438835, 'pdfs': 118343818, 'zip': 1121895984, 'stories': 38, 'n': 802}
 내려받기 파일: 4 묶음 새로 만듦
 글로 보기: 318 이야기
 18-Verses-2
