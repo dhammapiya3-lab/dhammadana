@@ -1,3 +1,13 @@
+Foremost-Laymen 01-Tapussa-and-Bhallika 14 장
+Foremost-Laymen 02-Anathapindika 24 장
+Foremost-Laymen 03-Citta 31 장
+Foremost-Laymen 04-Hatthaka-Alavaka 10 장
+Foremost-Laymen 05-Mahanama 14 장
+Foremost-Laymen 06-Ugga 15 장
+Foremost-Laymen 07-Uggata 13 장
+Foremost-Laymen 08-Surambattha 15 장
+Foremost-Laymen 09-Jivaka 11 장
+Foremost-Laymen 10-Nakulapitu 10 장
 검수 Foremost-Monks/01-Kondanna 33번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Foremost-Monks 01-Kondanna 38 장
 Foremost-Monks 02-03-Sariputta-Moggallana 57 장
@@ -47,15 +57,24 @@ Foremost-Monks 40-Radha 14 장
 Foremost-Monks 41-Mogharaja 53 장
 Pannasa 10-Sankhapatta 29 장
 자동 검수: 문제 의심 9 곳
-R2 에 올림: 1709 개 / 한글판 이야기 316 편
-새 그림책 올림: New-Jataka/004-Culasetthi-en 30 장
-새 그림책 올림: New-Jataka/004-Culasetthi 30 장
-새 그림책: 올린 그림 60 장
-공개 주소 확인: 200 1673434바이트
+R2 에 올림: 2023 개 / 한글판 이야기 318 편
+새 그림책: 올린 그림 0 장
+공개 주소 확인: 200 1649805바이트
+이야기 Foremost-Laymen/01-Tapussa-and-Bhallika {'pdf': 20439104, 'zip': 20164779, 'n': 14}
+이야기 Foremost-Laymen/02-Anathapindika {'pdf': 36389466, 'zip': 36114076, 'n': 24}
+이야기 Foremost-Laymen/03-Citta {'pdf': 47786369, 'zip': 47508084, 'n': 31}
+이야기 Foremost-Laymen/04-Hatthaka-Alavaka {'pdf': 15194745, 'zip': 14922215, 'n': 10}
+이야기 Foremost-Laymen/05-Mahanama {'pdf': 19340743, 'zip': 19063410, 'n': 14}
+이야기 Foremost-Laymen/06-Ugga {'pdf': 21624407, 'zip': 21354247, 'n': 15}
+이야기 Foremost-Laymen/07-Uggata {'pdf': 19291639, 'zip': 19020739, 'n': 13}
+이야기 Foremost-Laymen/08-Surambattha {'pdf': 18528594, 'zip': 18254982, 'n': 15}
+이야기 Foremost-Laymen/09-Jivaka {'pdf': 21187427, 'zip': 20369584, 'n': 11}
+이야기 Foremost-Laymen/10-Nakulapitu {'pdf': 12438260, 'zip': 12166113, 'n': 10}
+책 Foremost-Laymen {'pdf': 229252185, 'pdfs': 24266814, 'zip': 228937550, 'stories': 10, 'n': 157}
 이야기 Foremost-Monks/01-Kondanna {'pdf': 61871142, 'zip': 61594235, 'n': 38}
 이야기 Foremost-Monks/02-03-Sariputta-Moggallana {'pdf': 85401682, 'zip': 85105058, 'n': 57}
 이야기 Foremost-Monks/04-Maha-Kassapa {'pdf': 57454398, 'zip': 57175487, 'n': 41}
-이야기 Foremost-Monks/05-Anuruddha {'pdf': 71903648, 'zip': 71621843, 'n': 53}
+이야기 Foremost-Monks/05-Anuruddha {'pdf': 71862815, 'zip': 71581010, 'n': 53}
 이야기 Foremost-Monks/06-Bhaddiya {'pdf': 20451443, 'zip': 20177609, 'n': 15}
 이야기 Foremost-Monks/07-Lakundaka {'pdf': 16527322, 'zip': 16257315, 'n': 13}
 이야기 Foremost-Monks/08-Pindola {'pdf': 10465048, 'zip': 10195075, 'n': 9}
@@ -90,14 +109,10 @@ R2 에 올림: 1709 개 / 한글판 이야기 316 편
 이야기 Foremost-Monks/39-Sagata {'pdf': 16775467, 'zip': 16511756, 'n': 11}
 이야기 Foremost-Monks/40-Radha {'pdf': 17480904, 'zip': 17218080, 'n': 14}
 이야기 Foremost-Monks/41-Mogharaja {'pdf': 77937761, 'zip': 77656867, 'n': 53}
-책 Foremost-Monks {'pdf': 1122491196, 'pdfs': 118342141, 'zip': 1121948347, 'stories': 38, 'n': 802}
-이야기 New-Jataka/004-Culasetthi {'pdf': 25130188, 'zip': 24951909, 'n': 30}
-책 New-Jataka {'pdf': 81595361, 'pdfs': 15149037, 'zip': 81411163, 'stories': 4, 'n': 109}
+책 Foremost-Monks {'pdf': 1122450365, 'pdfs': 118340143, 'zip': 1121907514, 'stories': 38, 'n': 802}
 이야기 Pannasa/10-Sankhapatta {'pdf': 37004725, 'zip': 36734458, 'n': 29}
 책 Pannasa {'pdf': 1037250912, 'pdfs': 100142607, 'zip': 1036700118, 'stories': 50, 'n': 803}
-이야기 New-Jataka/004-Culasetthi-en {'pdf': 25095742, 'zip': 24895448, 'n': 30}
-책 New-Jataka-en {'pdf': 81509717, 'pdfs': 15234064, 'zip': 81293169, 'stories': 4, 'n': 109}
-내려받기 파일: 45 묶음 새로 만듦
+내려받기 파일: 52 묶음 새로 만듦
 글로 보기: 318 이야기
 18-Verses-2
 08-Light-of-Asia
