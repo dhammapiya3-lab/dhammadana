@@ -361,13 +361,17 @@
   "img": "images/003-The-Golden-Bowl-13-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     195,
-     393
-    ],
     "shape": "box",
     "en": "Gazing at the retreating boat, blood gushed from bis lips. Nis heart cracked like the mud of dried-up tank. Ne perished then and there. Gbus, Devadatta conceived his first grudge against the Bodhisatta.",
-    "ko": "멀어지는 배를 바라보던 그의 입에서 피가 쏟아졌습니다. 가슴은 말라붙은 연못 바닥처럼 갈라졌고, 그는 그 자리에서 숨을 거두었습니다. 이렇게 데와닷따는 처음으로 보살에게 원한을 품게 되었습니다."
+    "ko": "멀어지는 배를 바라보던 그의 입에서 피가 쏟아졌습니다. 가슴은 말라붙은 연못 바닥처럼 갈라졌고, 그는 그 자리에서 숨을 거두었습니다. 이렇게 데와닷따는 처음으로 보살에게 원한을 품게 되었습니다.",
+    "rect": [
+     182,
+     382,
+     615,
+     438
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },
@@ -375,13 +379,17 @@
   "img": "images/003-The-Golden-Bowl-15-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     248,
-     390
-    ],
     "shape": "box",
     "en": "Ghe Supreme Buddha concluded 3 his lesson: If bere you miss being certain of results in the Grue Dhamma, For along long time you will suffer, Like the merchant in Seriva.",
-    "ko": "부처님께서 가르침을 이렇게 맺으셨습니다.\n“참된 법에서 확실한 결과를 놓친다면 오랫동안 괴로워하리라. 세리와의 그 상인처럼.”"
+    "ko": "부처님께서 가르침을 이렇게 맺으셨습니다.\n“참된 법에서 확실한 결과를 놓친다면 오랫동안 괴로워하리라. 세리와의 그 상인처럼.”",
+    "rect": [
+     182,
+     382,
+     615,
+     438
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  }

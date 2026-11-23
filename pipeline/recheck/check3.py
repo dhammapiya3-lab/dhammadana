@@ -8,7 +8,7 @@ sys.path.insert(0, '/home/claude/sb/pipeline')
 import render
 
 QA = '/home/claude/qa'
-SKIP = {'Four-Rich-Men', 'Light-of-Asia', 'Rasavahini', 'Way-Beyond'}
+SKIP = {'Manimekhalai'}
 JANGNO = {'Foremost-Monks', 'Foremost-Nuns', 'Foremost-Laymen'}  # 장로/장로니 쓰는 책
 BAD = ['사리불', '목건련', '목련존자', '가섭', '수보리', '부루나', '우바리', '아나율', '가전연', '교진여', '라후라', '정반왕', '마야부인',
        '급고독', '예류', '일래', '불환', '풋타', '푸트라', '카사파', '베살리', '바이샬리', '왕사성', '사위성', '사밧티', '코살라', '비사카']

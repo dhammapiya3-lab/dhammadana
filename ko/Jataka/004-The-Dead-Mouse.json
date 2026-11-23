@@ -30,13 +30,17 @@
   "img": "images/004-The-Dead-Mouse-02-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     67,
-     70
-    ],
     "shape": "box",
     "en": "In ancient Benares, Cullakasetthi the wise Treasurer, read the stars above dead mouse.",
-    "ko": "옛 바라나시에서 지혜로운 재무관 쭐라까셋티가 별을 읽고 죽은 쥐를 보며 말했습니다."
+    "ko": "옛 바라나시에서 지혜로운 재무관 쭐라까셋티가 별을 읽고 죽은 쥐를 보며 말했습니다.",
+    "rect": [
+     41,
+     63,
+     293,
+     122
+    ],
+    "whole": true,
+    "cover": true
    },
    {
     "seed": [

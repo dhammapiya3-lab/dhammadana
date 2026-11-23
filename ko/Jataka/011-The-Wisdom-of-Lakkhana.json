@@ -132,13 +132,17 @@
   "img": "images/011-The-Wisdom-of-Lakkhana-06-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     284,
-     381
-    ],
     "shape": "box",
     "en": "Ignorant of when to travel, the dullard Kala marched at dawn and dusk. By approaching the very confines of the sich he invited mass destruction.",
-    "ko": "언제 움직여야 할지 몰랐던 둔한 깔라는 새벽과 해 질 녘에 길을 나섰습니다. 마을 가까이로 지나가는 바람에 많은 사슴을 잃었습니다."
+    "ko": "언제 움직여야 할지 몰랐던 둔한 깔라는 새벽과 해 질 녘에 길을 나섰습니다. 마을 가까이로 지나가는 바람에 많은 사슴을 잃었습니다.",
+    "rect": [
+     226,
+     384,
+     574,
+     431
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },
@@ -146,13 +150,17 @@
   "img": "images/011-The-Wisdom-of-Lakkhana-07-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     296,
-     388
-    ],
     "shape": "box",
     "en": "Lakkhana possessed astute skill in means. By traveling only in the dead of night and avoiding village confines, he reached the fores without losing single head.",
-    "ko": "락카나에게는 뛰어난 방편의 지혜가 있었습니다. 한밤중에만 움직이고 마을 가까이를 피해서, 한 마리도 잃지 않고 숲에 이르렀습니다."
+    "ko": "락카나에게는 뛰어난 방편의 지혜가 있었습니다. 한밤중에만 움직이고 마을 가까이를 피해서, 한 마리도 잃지 않고 숲에 이르렀습니다.",
+    "rect": [
+     226,
+     384,
+     574,
+     431
+    ],
+    "whole": true,
+    "cover": true
    },
    {
     "rect": [

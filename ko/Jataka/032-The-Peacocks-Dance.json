@@ -54,13 +54,17 @@
     "em": 14
    },
    {
-    "seed": [
-     610,
-     365
-    ],
     "shape": "box",
     "en": "The ee chose the Golden Mallard.",
-    "ko": "새들은 황금 물오리를 뽑았습니다."
+    "ko": "새들은 황금 물오리를 뽑았습니다.",
+    "rect": [
+     574,
+     352,
+     704,
+     383
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },

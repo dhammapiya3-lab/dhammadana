@@ -201,13 +201,17 @@
     "ko": "상인은 천 냥을 받아 갔습니다."
    },
    {
-    "seed": [
-     491,
-     362
-    ],
     "shape": "box",
     "en": "His “His money gone, the brahmin lay be. down in an agony of grief.",
-    "ko": "돈을 잃은 바라문은 괴로움에 몸져누웠습니다."
+    "ko": "돈을 잃은 바라문은 괴로움에 몸져누웠습니다.",
+    "rect": [
+     444,
+     358,
+     715,
+     397
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },

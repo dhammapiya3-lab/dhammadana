@@ -91,13 +91,17 @@
     "ko": "어리석은 상인이 60요자나 황야로 들어섰습니다."
    },
    {
-    "seed": [
-     495,
-     348
-    ],
     "shape": "box",
     "en": "It was deso late place, plagued by drought and haunted by flesh-eating Amanussas. They carried heavy water jars to survive.",
-    "ko": "그곳은 가뭄에 시달리고 사람을 잡아먹는 귀신(아마눗사)이 들끓는 황량한 땅이었습니다. 일행은 살아남으려고 무거운 물 항아리를 싣고 갔습니다."
+    "ko": "그곳은 가뭄에 시달리고 사람을 잡아먹는 귀신(아마눗사)이 들끓는 황량한 땅이었습니다. 일행은 살아남으려고 무거운 물 항아리를 싣고 갔습니다.",
+    "rect": [
+     484,
+     349,
+     763,
+     410
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },
@@ -105,13 +109,17 @@
   "img": "images/001-The-Waterless-Desert-05-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     263,
-     36
-    ],
     "shape": "box",
     "en": "Yakkha created magnificent illusion: dripping carriage adorned with water-lilies.",
-    "ko": "약카가 놀라운 환영을 만들어 냈습니다. 수련으로 꾸민, 물이 뚝뚝 떨어지는 수레였습니다."
+    "ko": "약카가 놀라운 환영을 만들어 냈습니다. 수련으로 꾸민, 물이 뚝뚝 떨어지는 수레였습니다.",
+    "rect": [
+     217,
+     39,
+     523,
+     81
+    ],
+    "whole": true,
+    "cover": true
    },
    {
     "seed": [

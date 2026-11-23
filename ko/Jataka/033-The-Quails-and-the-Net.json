@@ -337,14 +337,18 @@
     "ko": "분열. …그래서 새잡이 아내의 얼굴에 웃음꽃이 피었습니다."
    },
    {
-    "seed": [
-     108,
-     358
-    ],
     "ko": "화합. 새들은 기뻐하며 함께 그물을 들고 날아가고…",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     111,
+     350,
+     323,
+     383
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  }

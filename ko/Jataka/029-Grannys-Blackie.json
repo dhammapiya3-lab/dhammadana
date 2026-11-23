@@ -49,13 +49,17 @@
   "img": "images/029-Grannys-Blackie-03-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     91,
-     39
-    ],
     "shape": "box",
     "en": "Growing up jet-black and strong, Kalaka roamed the village",
-    "ko": "새까맣고 튼튼하게 자란 깔라까는 마을을 돌아다녔습니다."
+    "ko": "새까맣고 튼튼하게 자란 깔라까는 마을을 돌아다녔습니다.",
+    "rect": [
+     91,
+     42,
+     297,
+     78
+    ],
+    "whole": true,
+    "cover": true
    },
    {
     "seed": [

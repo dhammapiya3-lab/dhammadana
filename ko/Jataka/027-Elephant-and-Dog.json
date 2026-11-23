@@ -110,13 +110,17 @@
     "em": 14
    },
    {
-    "seed": [
-     439,
-     368
-    ],
     "shape": "box",
     "en": "His majesty dispatched the Bodhisatta hisatta to investigate ate,",
-    "ko": "왕은 보살을 보내 살펴보게 했습니다."
+    "ko": "왕은 보살을 보내 살펴보게 했습니다.",
+    "rect": [
+     425,
+     365,
+     676,
+     382
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },
