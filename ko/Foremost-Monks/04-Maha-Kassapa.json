@@ -760,14 +760,18 @@
   "img": "images/04-Maha-Kassapa-42-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     195,
-     366
-    ],
     "shape": "box",
     "en": "The Buddha declared him foremost (efad-agga): “Monks, among my disciples who practice and teach the excellent ascetic practices (dhutanga) which shake off defilements, 3 Maha Kassapa is the foremost.”",
     "ko": "부처님께서 그를 으뜸(etadagga)으로 선언하셨습니다. “비구들이여, 번뇌를 털어 내는 두타행을 닦고 가르치는 나의 제자 가운데 마하깟사빠가 으뜸이다.”",
-    "align": "center"
+    "align": "center",
+    "whole": true,
+    "cover": true,
+    "rect": [
+     140,
+     362,
+     660,
+     428
+    ]
    }
   ]
  }

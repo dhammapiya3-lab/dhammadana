@@ -621,14 +621,18 @@
   "img": "images/01-Kondanna-35-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     88,
-     79
-    ],
     "shape": "bubble",
     "en": "At Veluvana monastery, Kondafifia bowed, tightly gripping and kissing the Buddha’s feet. “Exalted Buddha! am Kondafinia; Gracious One! am Kondafiia.” The assembly watched this profound unprecedented display in reverent silence",
     "ko": "웰루와나 승원에서 꼰단냐는 부처님 발에 엎드려 발을 꼭 잡고 입 맞추었습니다. “세존이시여, 저는 꼰단냐입니다. 선서시여, 저는 꼰단냐입니다.” 대중은 이 모습을 숙연히 지켜보았습니다.",
-    "align": "center"
+    "align": "center",
+    "whole": true,
+    "cover": true,
+    "rect": [
+     72,
+     64,
+     378,
+     178
+    ]
    }
   ]
  },

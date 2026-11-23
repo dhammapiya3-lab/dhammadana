@@ -261,15 +261,19 @@
   "img": "images/33-Bakula-10-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     324,
-     48
-    ],
     "shape": "bubble",
     "en": "The Mass Antidote. Seeing the Sangha afflicted, the recluse independently gathered herbs, prepared the exact 2 medicine, and immediately cured the multitudes. Zz",
     "ko": "한꺼번에 낫게 한 약\n승가가 앓자 은자는 홀로 약초를 모아\n꼭 맞는 약을 지어 곧바로 낫게 했습니다.",
     "align": "center",
-    "em": 15
+    "em": 15,
+    "whole": true,
+    "cover": true,
+    "rect": [
+     210,
+     48,
+     590,
+     142
+    ]
    }
   ]
  },
