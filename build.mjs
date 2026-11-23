@@ -949,7 +949,7 @@ function talksBody() {
     ${!p.list.length ? `<p class="muted">법문 목록을 불러오지 못했습니다. 잠시 뒤 다시 확인해 주세요.</p>` : ''}
     ${p.subs.length > 1 ? `<div class="chips sub-chips" role="tablist" aria-label="재생목록">${p.subs.map(s => `<button class="chip" role="tab" data-sub="${p.id}:${s.id}">${esc(s.name)}<span class="n">${s.list.length}</span></button>`).join('')}</div>` : ''}
     ${p.subs.map(s => `<div class="sub-panel" data-subpanel="${p.id}:${s.id}" hidden>
-      <div class="sub-head"><b>${esc(s.name)}</b> <span class="muted small">${s.list.length}개${s.id === 'all' ? (s.asc ? ' · 처음 올린 순' : ' · 최근 올린 순') : ' · 1강부터'}</span>${s.list.length ? ` <button class="btn sm" data-playall="${p.id}:${s.id}">▶ 처음부터 모두 듣기</button>` : ''}</div>
+      <div class="sub-head"><b>${esc(s.name)}</b> <span class="muted small">${s.list.length}개${s.id === 'all' ? (s.asc ? ' · 1강부터' : ' · 최근 올린 순') : ' · 1강부터'}</span>${s.list.length ? ` <button class="btn sm" data-playall="${p.id}:${s.id}">▶ 처음부터 모두 듣기</button>` : ''}</div>
       <div role="list">${s.list.map((e, i) => row(p, s, e, i)).join('')}</div>
       ${s.list.length > 50 ? `<div class="more-wrap"><button class="btn sm ghost" data-more>더 보기</button></div>` : ''}
     </div>`).join('')}
@@ -1146,7 +1146,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
   for (const p of PLAYLISTS) {
     const P1 = [['법문 바로 듣기', '/simple/talks/'], [p.name, `/simple/talks/${p.id}/`]];
     sFolderPage(`simple/talks/${p.id}/index.html`, { title: p.name, path: P1, up: '/simple/talks/', normal: `/dhammatalk/?pl=${p.id}`, what: '재생목록',
-      rows: p.subs.map((x, i) => F(x.name, `/simple/talks/${p.id}/${i + 1}/`, `${x.list.length}개${x.id === 'all' ? (x.asc ? ' · 처음 올린 순' : ' · 최근 올린 순') : ' · 1강부터'}`, '🎧')) });
+      rows: p.subs.map((x, i) => F(x.name, `/simple/talks/${p.id}/${i + 1}/`, `${x.list.length}개${x.id === 'all' ? (x.asc ? ' · 1강부터' : ' · 최근 올린 순') : ' · 1강부터'}`, '🎧')) });
     p.subs.forEach((x, i) => {
       const nm = p.name + (x.id === 'all' ? '' : ' · ' + x.name);
       const rows = x.list.map((e, j) => ({ href: e.audio, ic: '▶', kind: 'ep', data: { t: e.title, pl: nm, n: j + 1 }, cols: [e.title, e.date || '', e.duration || ''] }));
