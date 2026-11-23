@@ -408,13 +408,18 @@
   "img": "images/004-The-Dead-Mouse-12-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     201,
-     56
-    ],
     "shape": "box",
     "en": "To buy share in the ship, and then buy him out entirely, the 100 merchants paid massive premium.",
-    "ko": "배의 몫을 사고 다시 그의 몫을 통째로 사들이느라 상인 백 명은 큰 웃돈을 치렀습니다."
+    "ko": "배의 몫을 사고 다시 그의 몫을 통째로 사들이느라 상인 백 명은 큰 웃돈을 치렀습니다.",
+    "rect": [
+     174,
+     48,
+     628,
+     100
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
