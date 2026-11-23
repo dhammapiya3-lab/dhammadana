@@ -32,7 +32,13 @@
   "content_languages": [],
   "original_source": "Compiled by The Venerable Phra Acharn Maha Boowa Nyanasampanno Of Wat Pa Barn Tard, Udorn Thani Translated into English By M Siri Buddhasukh, 1976년.",
   "parallel_editions": [],
-  "originals": [],
+  "originals": [
+    {
+      "lang": "영어",
+      "mode": "file",
+      "url": "orig/DL-0040/DL-0040_원서_영어.pdf"
+    }
+  ],
   "braille": [],
   "series": "",
   "main": [
