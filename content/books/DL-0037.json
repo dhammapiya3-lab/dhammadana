@@ -30,7 +30,13 @@
   "content_languages": [],
   "original_source": "(The Wheel Publication No. 90∼92) Buddhist Publication Society Kandy, Sri Lank. 1987",
   "parallel_editions": [],
-  "originals": [],
+  "originals": [
+    {
+      "lang": "영어",
+      "mode": "file",
+      "url": "orig/DL-0037/DL-0037_원서_영어.pdf"
+    }
+  ],
   "braille": [],
   "series": "",
   "main": [
