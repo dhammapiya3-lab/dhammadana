@@ -2,8 +2,9 @@ import json,subprocess,re,os,sys
 from concurrent.futures import ThreadPoolExecutor
 STOP=set('this that with from have were they them their there what when which will would your about into been than then also such only very more most some'.split())
 jobs=[]
-SKIP={'Four-Rich-Men','Jatakamala','Light-of-Asia','Rasavahini','Way-Beyond'}
+SKIP={'Four-Rich-Men','Light-of-Asia','Rasavahini','Way-Beyond'}
 for book in sorted(os.listdir('/tmp/qa')):
+    if os.environ.get('BOOK') and book!=os.environ['BOOK']: continue
     if book in SKIP: continue
     if not os.path.isdir(f'/tmp/qa/{book}'): continue
     for sid in sorted(os.listdir(f'/tmp/qa/{book}')):
