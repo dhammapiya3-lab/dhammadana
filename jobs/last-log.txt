@@ -1,32 +1,21 @@
-검수 Jataka/001-The-Waterless-Desert 13번 그림 상자2 [자리] 한글 글(2151,1214)이 상자 점(1762,1051)에서 멀리 그려짐
-Jataka 001-The-Waterless-Desert 15 장
-Jataka 003-The-Golden-Bowl 14 장
-검수 Jataka/004-The-Dead-Mouse 09번 그림 상자2 [자리] 한글 글(2228,1294)이 상자 점(2030,1107)에서 멀리 그려짐
-Jataka 004-The-Dead-Mouse 15 장
-Jataka 011-The-Wisdom-of-Lakkhana 10 장
+검수 Jataka/026-The-State-Elephant 10번 그림 상자2 [자리] 한글이 원래 글 자리(1178,1205-1275,1254)에서 벗어남 (836,1239)
+Jataka 026-The-State-Elephant 13 장
 Jataka 027-Elephant-and-Dog 13 장
-Jataka 028-Nandivisala 12 장
-Jataka 029-Grannys-Blackie 12 장
-Jataka 032-The-Peacocks-Dance 12 장
 검수 Jataka/033-The-Quails-and-the-Net 09번 그림 상자2 [자리] 한글 글(1343,693)이 상자 점(1167,538)에서 멀리 그려짐
 Jataka 033-The-Quails-and-the-Net 14 장
+Jataka 039-Nanda-and-the-Hoard 12 장
 Jataka 040-The-Fiery-Pit 12 장
-자동 검수: 문제 의심 3 곳
-R2 에 올림: 305 개 / 한글판 이야기 318 편
+자동 검수: 문제 의심 2 곳
+R2 에 올림: 175 개 / 한글판 이야기 318 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1160954바이트
-이야기 Jataka/001-The-Waterless-Desert {'pdf': 14338695, 'zip': 14073334, 'n': 15}
-이야기 Jataka/003-The-Golden-Bowl {'pdf': 15790538, 'zip': 15525551, 'n': 14}
-이야기 Jataka/004-The-Dead-Mouse {'pdf': 17555285, 'zip': 17291849, 'n': 15}
-이야기 Jataka/011-The-Wisdom-of-Lakkhana {'pdf': 12195512, 'zip': 11931543, 'n': 10}
-이야기 Jataka/027-Elephant-and-Dog {'pdf': 16853750, 'zip': 16588918, 'n': 13}
-이야기 Jataka/028-Nandivisala {'pdf': 14871898, 'zip': 14603721, 'n': 12}
-이야기 Jataka/029-Grannys-Blackie {'pdf': 13859401, 'zip': 13591636, 'n': 12}
-이야기 Jataka/032-The-Peacocks-Dance {'pdf': 16793469, 'zip': 16529044, 'n': 12}
-이야기 Jataka/033-The-Quails-and-the-Net {'pdf': 15956177, 'zip': 15688023, 'n': 14}
-이야기 Jataka/040-The-Fiery-Pit {'pdf': 12653937, 'zip': 12390193, 'n': 12}
-책 Jataka {'pdf': 496352280, 'pdfs': 50596399, 'zip': 495942519, 'stories': 32, 'n': 422}
-내려받기 파일: 11 묶음 새로 만듦
+공개 주소 확인: 200 1380666바이트
+이야기 Jataka/026-The-State-Elephant {'pdf': 16551105, 'zip': 16284936, 'n': 13}
+이야기 Jataka/027-Elephant-and-Dog {'pdf': 16853650, 'zip': 16588818, 'n': 13}
+이야기 Jataka/033-The-Quails-and-the-Net {'pdf': 15956883, 'zip': 15688729, 'n': 14}
+이야기 Jataka/039-Nanda-and-the-Hoard {'pdf': 13817373, 'zip': 13547954, 'n': 12}
+이야기 Jataka/040-The-Fiery-Pit {'pdf': 12659032, 'zip': 12395288, 'n': 12}
+책 Jataka {'pdf': 496349955, 'pdfs': 50600777, 'zip': 495940194, 'stories': 32, 'n': 422}
+내려받기 파일: 6 묶음 새로 만듦
 글로 보기: 318 이야기
 18-Verses-2
 08-Light-of-Asia
