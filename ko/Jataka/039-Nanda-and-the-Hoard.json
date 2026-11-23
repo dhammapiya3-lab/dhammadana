@@ -193,13 +193,17 @@
   "img": "images/039-Nanda-and-the-Hoard-06-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     68,
-     60
-    ],
     "shape": "box",
     "en": "Pretending not to hear, the heir calmly returned home. Days later, they tried again. The exact same pattern repeated.",
-    "ko": "아들은 못 들은 척하고 조용히 집으로 돌아왔습니다. 며칠 뒤 다시 가 보았지만 똑같은 일이 되풀이되었습니다."
+    "ko": "아들은 못 들은 척하고 조용히 집으로 돌아왔습니다. 며칠 뒤 다시 가 보았지만 똑같은 일이 되풀이되었습니다.",
+    "rect": [
+     66,
+     61,
+     423,
+     99
+    ],
+    "whole": true,
+    "cover": true
    },
    {
     "seed": [

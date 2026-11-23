@@ -273,13 +273,17 @@
   "img": "images/026-The-State-Elephant-10-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     114,
-     59
-    ],
     "shape": "box",
     "en": "Just as before, the elephant internalized his environment. Believing this to be his new instruction, he shed his cruelty and embraced peace.",
-    "ko": "이번에도 코끼리는 들은 말을 그대로 받아들였습니다. 그것이 새 가르침이라 믿고 잔인함을 버리고 평화를 품었습니다."
+    "ko": "이번에도 코끼리는 들은 말을 그대로 받아들였습니다. 그것이 새 가르침이라 믿고 잔인함을 버리고 평화를 품었습니다.",
+    "rect": [
+     112,
+     61,
+     566,
+     98
+    ],
+    "whole": true,
+    "cover": true
    },
    {
     "rect": [
