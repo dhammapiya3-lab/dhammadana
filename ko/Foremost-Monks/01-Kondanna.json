@@ -633,6 +633,21 @@
      378,
      178
     ]
+   },
+   {
+    "rect": [
+     376,
+     80,
+     414,
+     136
+    ],
+    "ko": " ",
+    "cover": true,
+    "align": "center",
+    "em": 10,
+    "shape": "box",
+    "manual": true,
+    "whole": true
    }
   ]
  },
