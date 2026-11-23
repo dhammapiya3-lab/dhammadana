@@ -24,7 +24,23 @@
   "original_source": "",
   "parallel_editions": [],
   "originals": [],
-  "braille": [],
+  "braille": [
+    {
+      "note": "",
+      "format": "ZIP",
+      "mode": "file",
+      "url": "braille/DL-0041/DL-0041_점자.zip",
+      "site": "",
+      "org": "성북점자도서관",
+      "sponsor": "사)한국테라와다불교 '담마디빠' 시각장애인 도서 봉사모임",
+      "year": "2024년",
+      "collection": "점자도서관에 의뢰해 제작",
+      "made": "2024-08-24",
+      "updated": "2024-08-24",
+      "inner": "BRF",
+      "files": 3
+    }
+  ],
   "series": "",
   "main": [
     "테라와다불교 입문서"
