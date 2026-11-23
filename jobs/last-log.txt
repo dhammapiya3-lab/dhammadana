@@ -1,129 +1,19 @@
-Foremost-Laywomen 01-Sujata 15 장
-Foremost-Laywomen 02-Visakha 44 장
-Foremost-Laywomen 03-04-Khujjuttara-Samavati 40 장
-Foremost-Laywomen 05-Uttara-Nandamata 14 장
-Foremost-Laywomen 06-Suppavasa 9 장
-Foremost-Laywomen 07-Suppiya 13 장
-Foremost-Laywomen 08-Katiyani 14 장
-Foremost-Laywomen 09-Nakulamata 14 장
-Foremost-Laywomen 10-Kali 12 장
-Pannasa 01-King-Aditta 15 장
-Pannasa 02-Tulakapandita 15 장
-Pannasa 03-Sammajiva 15 장
-Pannasa 04-Arindama 12 장
-Pannasa 05-Sumbhamitta 15 장
-Pannasa 06-Samuddaghosa 15 장
-Pannasa 07-Cagadana 13 장
-Pannasa 08-Dhammikapandita 12 장
-Pannasa 09-Siridhara 13 장
-Pannasa 10-Sankhapatta 29 장
-Pannasa 11-Sudhana 26 장
-Pannasa 12-Narajiva 13 장
-Pannasa 13-Suvannakumara 13 장
-Pannasa 14-Surupa 15 장
-Pannasa 15-Kambala 15 장
-Pannasa 16-Cowherds-Hut 13 장
-Pannasa 17-Siricudamani 13 장
-Pannasa 18-The-Eight-Requisites 15 장
-Pannasa 19-Sirivipulakitti 15 장
-Pannasa 20-Sattadhanu 27 장
-Pannasa 21-Candakumara 14 장
-Pannasa 22-Sadhita 11 장
-Pannasa 23-Ratanapajjota 14 장
-Pannasa 24-Two-Headed-Swan 13 장
-Pannasa 25-Viriyapandita 15 장
-Pannasa 26-Vipularaja 13 장
-Pannasa 27-Mahapaduma 27 장
-Pannasa 28-Mahasurasena 15 장
-Pannasa 29-Brahmaghosa 15 장
-Pannasa 30-White-Mouse 15 장
-Pannasa 31-Ariyachatta 15 장
-Pannasa 32-Subhadda 15 장
-Pannasa 33-Bahalaputta 15 장
-Pannasa 34-Four-Deaf-People 13 장
-Pannasa 35-Gift-of-Lamps 15 장
-Pannasa 36-Velama 14 장
-Pannasa 37-Vattanguli 30 장
-Pannasa 38-Sirasakumara 24 장
-Pannasa 39-Sonananda 28 장
-Pannasa 40-Suvannakumara 23 장
-Pannasa 41-Brahmakumara 13 장
-Pannasa 42-Sucika 15 장
-Pannasa 43-Writing 15 장
-Pannasa 44-Vaddhana 13 장
-Pannasa 45-Ungratefulness 14 장
-Pannasa 46-Dukamma 13 장
-Pannasa 47-Quarrelsomeness 12 장
-Pannasa 48-Siddhisara 15 장
-Pannasa 49-Precepts 15 장
-Pannasa 50-Mahasudassana 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 2003 개 / 한글판 이야기 316 편
-새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1411800바이트
-이야기 Foremost-Laywomen/01-Sujata {'pdf': 21715469, 'zip': 21436475, 'n': 15}
-이야기 Foremost-Laywomen/02-Visakha {'pdf': 182759209, 'zip': 182464830, 'n': 44}
-이야기 Foremost-Laywomen/03-04-Khujjuttara-Samavati {'pdf': 151814506, 'zip': 150964365, 'n': 40}
-이야기 Foremost-Laywomen/05-Uttara-Nandamata {'pdf': 20790064, 'zip': 20517048, 'n': 14}
-이야기 Foremost-Laywomen/06-Suppavasa {'pdf': 11625305, 'zip': 11348440, 'n': 9}
-이야기 Foremost-Laywomen/07-Suppiya {'pdf': 18060986, 'zip': 17783836, 'n': 13}
-이야기 Foremost-Laywomen/08-Katiyani {'pdf': 20000854, 'zip': 19719053, 'n': 14}
-이야기 Foremost-Laywomen/09-Nakulamata {'pdf': 16566383, 'zip': 16295656, 'n': 14}
-이야기 Foremost-Laywomen/10-Kali {'pdf': 16227091, 'zip': 15953398, 'n': 12}
-책 Foremost-Laywomen {'pdf': 456805310, 'pdfs': 26826184, 'zip': 456488771, 'stories': 9, 'n': 175}
-이야기 Pannasa/01-King-Aditta {'pdf': 19993566, 'zip': 19731080, 'n': 15}
-이야기 Pannasa/02-Tulakapandita {'pdf': 19719570, 'zip': 19447023, 'n': 15}
-이야기 Pannasa/03-Sammajiva {'pdf': 18928947, 'zip': 18659195, 'n': 15}
-이야기 Pannasa/04-Arindama {'pdf': 16356266, 'zip': 16093807, 'n': 12}
-이야기 Pannasa/05-Sumbhamitta {'pdf': 20142421, 'zip': 19878048, 'n': 15}
-이야기 Pannasa/06-Samuddaghosa {'pdf': 20668797, 'zip': 20402405, 'n': 15}
-이야기 Pannasa/07-Cagadana {'pdf': 17243742, 'zip': 16975682, 'n': 13}
-이야기 Pannasa/08-Dhammikapandita {'pdf': 14913322, 'zip': 14646974, 'n': 12}
-이야기 Pannasa/09-Siridhara {'pdf': 15526093, 'zip': 15262423, 'n': 13}
-이야기 Pannasa/10-Sankhapatta {'pdf': 36991801, 'zip': 36721534, 'n': 29}
-이야기 Pannasa/11-Sudhana {'pdf': 35459850, 'zip': 35192755, 'n': 26}
-이야기 Pannasa/12-Narajiva {'pdf': 16071961, 'zip': 15811511, 'n': 13}
-이야기 Pannasa/13-Suvannakumara {'pdf': 16879058, 'zip': 16616109, 'n': 13}
-이야기 Pannasa/14-Surupa {'pdf': 18571656, 'zip': 18309428, 'n': 15}
-이야기 Pannasa/15-Kambala {'pdf': 19840561, 'zip': 19578162, 'n': 15}
-이야기 Pannasa/16-Cowherds-Hut {'pdf': 16525626, 'zip': 16261377, 'n': 13}
-이야기 Pannasa/17-Siricudamani {'pdf': 18298730, 'zip': 18034120, 'n': 13}
-이야기 Pannasa/18-The-Eight-Requisites {'pdf': 19818940, 'zip': 19552558, 'n': 15}
-이야기 Pannasa/19-Sirivipulakitti {'pdf': 20123571, 'zip': 19854797, 'n': 15}
-이야기 Pannasa/20-Sattadhanu {'pdf': 33050251, 'zip': 32780043, 'n': 27}
-이야기 Pannasa/21-Candakumara {'pdf': 18954742, 'zip': 18692490, 'n': 14}
-이야기 Pannasa/22-Sadhita {'pdf': 15613501, 'zip': 15352399, 'n': 11}
-이야기 Pannasa/23-Ratanapajjota {'pdf': 17043872, 'zip': 16774956, 'n': 14}
-이야기 Pannasa/24-Two-Headed-Swan {'pdf': 18869605, 'zip': 18603803, 'n': 13}
-이야기 Pannasa/25-Viriyapandita {'pdf': 18645267, 'zip': 18379632, 'n': 15}
-이야기 Pannasa/26-Vipularaja {'pdf': 18725034, 'zip': 18461414, 'n': 13}
-이야기 Pannasa/27-Mahapaduma {'pdf': 34143409, 'zip': 33872625, 'n': 27}
-이야기 Pannasa/28-Mahasurasena {'pdf': 18521564, 'zip': 18254893, 'n': 15}
-이야기 Pannasa/29-Brahmaghosa {'pdf': 20891725, 'zip': 20625229, 'n': 15}
-이야기 Pannasa/30-White-Mouse {'pdf': 20823054, 'zip': 20560952, 'n': 15}
-이야기 Pannasa/31-Ariyachatta {'pdf': 20524284, 'zip': 20260922, 'n': 15}
-이야기 Pannasa/32-Subhadda {'pdf': 18846518, 'zip': 18583131, 'n': 15}
-이야기 Pannasa/33-Bahalaputta {'pdf': 19623007, 'zip': 19353450, 'n': 15}
-이야기 Pannasa/34-Four-Deaf-People {'pdf': 15285724, 'zip': 15022156, 'n': 13}
-이야기 Pannasa/35-Gift-of-Lamps {'pdf': 18212709, 'zip': 17948989, 'n': 15}
-이야기 Pannasa/36-Velama {'pdf': 18892368, 'zip': 18627150, 'n': 14}
-이야기 Pannasa/37-Vattanguli {'pdf': 39277374, 'zip': 39005784, 'n': 30}
-이야기 Pannasa/38-Sirasakumara {'pdf': 32040934, 'zip': 31773293, 'n': 24}
-이야기 Pannasa/39-Sonananda {'pdf': 35140795, 'zip': 34870433, 'n': 28}
-이야기 Pannasa/40-Suvannakumara {'pdf': 32132481, 'zip': 31860632, 'n': 23}
-이야기 Pannasa/41-Brahmakumara {'pdf': 17210489, 'zip': 16943046, 'n': 13}
-이야기 Pannasa/42-Sucika {'pdf': 18718306, 'zip': 18452521, 'n': 15}
-이야기 Pannasa/43-Writing {'pdf': 18721608, 'zip': 18454339, 'n': 15}
-이야기 Pannasa/44-Vaddhana {'pdf': 17876250, 'zip': 17613606, 'n': 13}
-이야기 Pannasa/45-Ungratefulness {'pdf': 18157225, 'zip': 17890401, 'n': 14}
-이야기 Pannasa/46-Dukamma {'pdf': 16051995, 'zip': 15788389, 'n': 13}
-이야기 Pannasa/47-Quarrelsomeness {'pdf': 15644025, 'zip': 15376427, 'n': 12}
-이야기 Pannasa/48-Siddhisara {'pdf': 20935789, 'zip': 20669848, 'n': 15}
-이야기 Pannasa/49-Precepts {'pdf': 20200400, 'zip': 19933168, 'n': 15}
-이야기 Pannasa/50-Mahasudassana {'pdf': 19141471, 'zip': 18875018, 'n': 15}
-책 Pannasa {'pdf': 1037237987, 'pdfs': 100141514, 'zip': 1036687194, 'stories': 50, 'n': 803}
-내려받기 파일: 61 묶음 새로 만듦
-글로 보기: 316 이야기
+On branch storybooks-qa
+Your branch is up to date with 'origin/storybooks-qa'.
+
+nothing to commit, working tree clean
+R2 에 올림: 47 개 / 한글판 이야기 316 편
+새 그림책 올림: New-Jataka/004-Culasetthi-en 30 장
+새 그림책 올림: New-Jataka/004-Culasetthi 30 장
+새 그림책: 올린 그림 60 장
+공개 주소 확인: 404 27150바이트
+이야기 New-Jataka/004-Culasetthi {'pdf': 25130188, 'zip': 24951909, 'n': 30}
+책 New-Jataka {'pdf': 81595361, 'pdfs': 15149037, 'zip': 81411163, 'stories': 4, 'n': 109}
+이야기 New-Jataka/004-Culasetthi-en {'pdf': 25095742, 'zip': 24895448, 'n': 30}
+책 New-Jataka-en {'pdf': 81509717, 'pdfs': 15234064, 'zip': 81293169, 'stories': 4, 'n': 109}
+내려받기 파일: 4 묶음 새로 만듦
+글로 보기: 318 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
