@@ -334,6 +334,21 @@
         "마하위빠싸나명상원",
         "마하 위빠싸나명상원"
       ]
+    },
+    {
+      "id": "kptsoc",
+      "name": "초기불전연구원",
+      "kind": "단체",
+      "urls": [
+        "https://tipitaka.or.kr/"
+      ],
+      "partner": true,
+      "note": "tipitaka.or.kr",
+      "aliases": [
+        "초기불전 연구원"
+      ],
+      "logo": "https://cdn.imweb.me/thumbnail/20220920/bc4e7c127af0c.png",
+      "bio": "부처님 원음(빠알리어)을 초기불전연구원이 우리말로 옮깁니다."
     }
   ]
 }
