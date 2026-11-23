@@ -211,14 +211,13 @@
     "ko": "가난하게 살던 안나바라는 부유한 상인 수마나 밑에서 일했습니다. 수마나는 대문 앞에서 나그네와 거지에게 아낌없이 베풀었습니다.",
     "align": "center",
     "rect": [
-     266,
-     372,
-     534,
-     430
+     236,
+     368,
+     552,
+     432
     ],
     "whole": true,
-    "cover": true,
-    "em": 14
+    "cover": true
    }
   ]
  },
@@ -604,14 +603,18 @@
   "img": "images/05-Anuruddha-25-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     258,
-     385
-    ],
     "shape": "box",
     "en": "Annabhara’s instant rise to Maha Dhanasetthi required three pillars: recipient emerging from cessation, pure intention, and joyful sha:",
     "ko": "안나바라가 단숨에 큰 부호가 된 데에는 세 기둥이 있었습니다.\n멸진정에서 나온 받는 이, 청정한 의도, 기쁘게 나눔.",
-    "align": "center"
+    "align": "center",
+    "rect": [
+     180,
+     388,
+     720,
+     434
+    ],
+    "whole": true,
+    "cover": true
    },
    {
     "rect": [
