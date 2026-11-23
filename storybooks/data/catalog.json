@@ -55530,6 +55530,10 @@
     {
      "story": "003-Serivanija.htm",
      "label": "03 Serivāṇija Jātaka"
+    },
+    {
+     "story": "004-Culasetthi.htm",
+     "label": "04 Cūḷaseṭṭhi Jātaka"
     }
    ],
    "stories": {
@@ -55791,6 +55795,104 @@
       },
       {
        "img": "images/003-Serivanija-25.jpg"
+      }
+     ]
+    },
+    "004-Culasetthi.htm": {
+     "file": "004-Culasetthi.htm",
+     "title": "04 Cūḷaseṭṭhi Jātaka",
+     "summary": "",
+     "intro": "",
+     "items": [
+      {
+       "img": "images/004-Culasetthi-01.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-02.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-03.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-04.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-05.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-06.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-07.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-08.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-09.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-10.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-11.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-12.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-13.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-14.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-15.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-16.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-17.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-18.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-19.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-20.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-21.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-22.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-23.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-24.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-25.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-26.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-27.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-28.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-29.jpg"
+      },
+      {
+       "img": "images/004-Culasetthi-30.jpg"
       }
      ]
     }
