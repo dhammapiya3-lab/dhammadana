@@ -1,4 +1,8 @@
 자동 검수: 문제 의심 0 곳
+On branch storybooks-qa
+Your branch is up to date with 'origin/storybooks-qa'.
+
+nothing to commit, working tree clean
 R2 에 올림: 47 개 / 한글판 이야기 318 편
 새 그림책: 올린 그림 0 장
 공개 주소 확인: 404 27150바이트
@@ -10,13 +14,3 @@ R2 에 올림: 47 개 / 한글판 이야기 318 편
 34-Woodpecker
 20-The-Brahmin-Soma
 29-30-Escape-from-Samsara
-027-Elephant-and-Dog
-20-Sattadhanu
-08-Pindola
-12-Kisa-Gotami
-13-14-Yasas-Parents
-40-The-Last-Instructions-of-the-Realised-One
-03-04-Khujjuttara-Samavati
-02-Anathapindika
-04-False-Claims
-02-Sibi
