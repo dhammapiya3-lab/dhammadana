@@ -1,3 +1,12 @@
+Foremost-Laywomen 01-Sujata 15 장
+Foremost-Laywomen 02-Visakha 44 장
+Foremost-Laywomen 03-04-Khujjuttara-Samavati 40 장
+Foremost-Laywomen 05-Uttara-Nandamata 14 장
+Foremost-Laywomen 06-Suppavasa 9 장
+Foremost-Laywomen 07-Suppiya 13 장
+Foremost-Laywomen 08-Katiyani 14 장
+Foremost-Laywomen 09-Nakulamata 14 장
+Foremost-Laywomen 10-Kali 12 장
 The-Great-Emancipation 15-The-Courtesan-Ambapali 12 장
 The-Great-Emancipation 16-The-Fortunate-Ones-Sickness 12 장
 The-Great-Emancipation 17-Anandas-Failure 11 장
@@ -18,9 +27,19 @@ The-Great-Emancipation 41-The-Final-Emancipation 13 장
 The-Great-Emancipation 43-The-Story-Concerning-Mahakassapa 12 장
 The-Great-Emancipation 44-The-Distribution-of-the-Relics 10 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 485 개 / 한글판 이야기 316 편
+R2 에 올림: 835 개 / 한글판 이야기 316 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1052844바이트
+공개 주소 확인: 200 1411800바이트
+이야기 Foremost-Laywomen/01-Sujata {'pdf': 21715469, 'zip': 21436475, 'n': 15}
+이야기 Foremost-Laywomen/02-Visakha {'pdf': 182759209, 'zip': 182464830, 'n': 44}
+이야기 Foremost-Laywomen/03-04-Khujjuttara-Samavati {'pdf': 151814506, 'zip': 150964365, 'n': 40}
+이야기 Foremost-Laywomen/05-Uttara-Nandamata {'pdf': 20790064, 'zip': 20517048, 'n': 14}
+이야기 Foremost-Laywomen/06-Suppavasa {'pdf': 11625305, 'zip': 11348440, 'n': 9}
+이야기 Foremost-Laywomen/07-Suppiya {'pdf': 18060986, 'zip': 17783836, 'n': 13}
+이야기 Foremost-Laywomen/08-Katiyani {'pdf': 20000854, 'zip': 19719053, 'n': 14}
+이야기 Foremost-Laywomen/09-Nakulamata {'pdf': 16565499, 'zip': 16294772, 'n': 14}
+이야기 Foremost-Laywomen/10-Kali {'pdf': 16227091, 'zip': 15953398, 'n': 12}
+책 Foremost-Laywomen {'pdf': 456804427, 'pdfs': 26826059, 'zip': 456487887, 'stories': 9, 'n': 175}
 이야기 The-Great-Emancipation/15-The-Courtesan-Ambapali {'pdf': 13526606, 'zip': 13266236, 'n': 12}
 이야기 The-Great-Emancipation/16-The-Fortunate-Ones-Sickness {'pdf': 12053149, 'zip': 11791945, 'n': 12}
 이야기 The-Great-Emancipation/17-Anandas-Failure {'pdf': 12010413, 'zip': 11750016, 'n': 11}
@@ -41,7 +60,7 @@ R2 에 올림: 485 개 / 한글판 이야기 316 편
 이야기 The-Great-Emancipation/43-The-Story-Concerning-Mahakassapa {'pdf': 13121887, 'zip': 12857217, 'n': 12}
 이야기 The-Great-Emancipation/44-The-Distribution-of-the-Relics {'pdf': 12707285, 'zip': 12448545, 'n': 10}
 책 The-Great-Emancipation {'pdf': 247224879, 'pdfs': 25124031, 'zip': 246893665, 'stories': 20, 'n': 234}
-내려받기 파일: 20 묶음 새로 만듦
+내려받기 파일: 30 묶음 새로 만듦
 글로 보기: 316 이야기
 18-Verses-2
 08-Light-of-Asia
