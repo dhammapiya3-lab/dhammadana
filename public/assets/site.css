@@ -1513,3 +1513,8 @@ body.simple-ui{font-size:28px}
 u.pu { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; }
 /* 제목은 낱말 가운데에서 줄을 바꾸지 않음 — 『테라와다 불교의 신 / 행생활』 (운영자 요청, 2026-11-23) */
 h1,h2,h3,.ch-head,.s-h1{word-break:keep-all;overflow-wrap:break-word}
+
+/* 단순 화면 재생기 '재생 위치' 막대 (운영자 요청, 2026-11-23) */
+.simple-ui .s-player .s-seek{flex:1 1 220px;min-width:140px;height:32px;accent-color:#1f3b8a;margin:0 4px;cursor:pointer}
+.simple-ui .s-player .s-seek:focus-visible{outline:3px solid #1f3b8a;outline-offset:2px}
+:root.mode-night .simple-ui .s-player .s-seek,:root.mode-contrast .simple-ui .s-player .s-seek{accent-color:#ffe36b}

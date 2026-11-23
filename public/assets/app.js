@@ -3048,8 +3048,16 @@ function sPlayerMake() {
 <audio id="sAudio" preload="none"></audio>
 <div class="s-pbtns"><button type="button" class="s-btn" id="sPrev" aria-label="앞 법문" title="앞 법문">⏮</button><button type="button" class="s-btn" id="sBack15" aria-label="15초 뒤로" title="15초 뒤로">⏪</button><button type="button" class="s-btn s-pplay" id="sPlay" aria-label="재생">▶</button><button type="button" class="s-btn" id="sFwd15" aria-label="15초 앞으로" title="15초 앞으로">⏩</button><button type="button" class="s-btn" id="sNext" aria-label="다음 법문" title="다음 법문">⏭</button>
 <label class="s-rate"><span class="sr">빠르기</span><select id="sRate" aria-label="빠르기">${[0.8, 1, 1.2, 1.5, 1.8, 2, 2.2, 2.5].map(r => `<option value="${r}">${r}배</option>`).join('')}</select></label>
-<span id="sTime" class="s-time" aria-hidden="true"></span><a class="s-btn s-goto" id="sGoList" href="/simple/talks/" hidden>재생 목록으로</a><button type="button" class="s-btn s-close" id="sClose" aria-label="재생기 닫기, 재생 멈춤">✕ 닫기</button></div>`;
+<span id="sTime" class="s-time" aria-hidden="true"></span><input type="range" id="sSeek" class="s-seek" min="0" max="0" step="5" value="0" aria-label="재생 위치"><a class="s-btn s-goto" id="sGoList" href="/simple/talks/" hidden>재생 목록으로</a><button type="button" class="s-btn s-close" id="sClose" aria-label="재생기 닫기, 재생 멈춤">✕ 닫기</button></div>`;
   STALK.el = el; const au = STALK.au = $('#sAudio', el), q = x => $(x, el), now = q('#sNow'), bP = q('#sPlay');
+  // 재생 위치 막대 (운영자 요청, 2026-11-23 — 이용자 의견): 화살표 5초·PageUp/Down 크게, 낭독기는 '3분 20초, 전체 1시간 13분'으로 읽음.
+  // 커서가 막대에 있거나 끄는 중에는 저절로 움직이지 않음(낭독기가 위치를 계속 읽어 소리가 겹치지 않게 — 일반 화면 #pSeek 와 같음)
+  const sk = q('#sSeek'); let skDrag = false;
+  const skSay = t => { t = Math.floor(t || 0); const h = Math.floor(t / 3600), m = Math.floor(t / 60) % 60, x = t % 60; return [h && h + '시간', m && m + '분', (x || !(h || m)) && x + '초'].filter(Boolean).join(' '); };
+  const skSync = force => { if (!force && (skDrag || document.activeElement === sk)) return; const d = au.duration; sk.max = isFinite(d) && d > 0 ? Math.floor(d) : 0; sk.value = Math.floor(au.currentTime || 0); sk.setAttribute('aria-valuetext', `${skSay(au.currentTime)}, 전체 ${isFinite(d) && d > 0 ? skSay(d) : '알 수 없음'}`); };
+  sk.addEventListener('pointerdown', () => { skDrag = true; }); addEventListener('pointerup', () => { skDrag = false; });
+  sk.addEventListener('input', () => { if (!cur()) return; try { au.currentTime = +sk.value; } catch (x) {} sk.setAttribute('aria-valuetext', `${skSay(+sk.value)}, 전체 ${skSay(au.duration)}`); });
+  au.addEventListener('loadedmetadata', () => skSync(true)); au.addEventListener('emptied', () => skSync(true));
   const SK = 'stalk'; let lastSave = 0;
   const rate = store.get('stalk-rate', 1); q('#sRate').value = String(rate); au.playbackRate = rate;
   // '✕ 닫기'는 멈춘 동안에만 보임 — 듣다가 손이 스쳐 꺼지지 않게 (운영자 요청, 2026-11-19)
@@ -3058,6 +3066,7 @@ function sPlayerMake() {
   const cur = () => STALK.list[STALK.idx];
   const play = (list, i, from = 0, page = location.pathname) => {
     const e = list[i]; if (!e) return;
+    const prevIdx = STALK.list === list ? STALK.idx : -1;
     if (STALK.closed) { STALK.closed = false; sPlayerPlace(true); }  // 닫아 둔 재생기는 다시 재생할 때 나타남
     if (STALK.list === list && STALK.idx === i && au.src) { au.play().catch(() => {}); return; }
     STALK.list = list; STALK.idx = i; STALK.page = page; au.src = e.a; au.playbackRate = +q('#sRate').value || 1;
@@ -3070,7 +3079,7 @@ function sPlayerMake() {
     now.textContent = `${ab ? `오디오북: ${e.pl} – ` : '재생: '}${e.t} (${i + 1}/${list.length})${from ? `, ${sFmtT(from)}부터 이어 듣기` : ''}`;
     STALK.abk = -1;
     const g = q('#sGoList'); g.href = page; g.hidden = page === location.pathname;
-    sTalkMark();
+    sTalkMark(); sTalkFollow(prevIdx);
     if ('mediaSession' in navigator) { try { navigator.mediaSession.metadata = new MediaMetadata({ title: e.t, artist: e.pl || '', album: (e.ab ? '오디오북' : '법문 바로 듣기') + ' · 붓다담마 법보시 도서관' }); } catch (x) {} }
   };
   const step = d => { const j = STALK.idx + d; if (!STALK.list.length || j < 0 || j >= STALK.list.length) { sayKey(cur() && cur().ab ? (d > 0 ? '마지막 장입니다' : '첫 장입니다') : (d > 0 ? '마지막 법문입니다' : '첫 법문입니다')); return; } play(STALK.list, j, 0, STALK.page); };
@@ -3091,7 +3100,7 @@ function sPlayerMake() {
   q('#sBack15').onclick = () => { au.currentTime = Math.max(0, au.currentTime - 15); }; q('#sFwd15').onclick = () => { au.currentTime = Math.min(au.duration || 1e9, au.currentTime + 15); };
   q('#sRate').onchange = e => { au.playbackRate = +e.target.value || 1; store.set('stalk-rate', au.playbackRate); };
   au.addEventListener('play', setBtn); au.addEventListener('pause', setBtn);
-  au.addEventListener('timeupdate', () => { q('#sTime').textContent = `${sFmtT(au.currentTime)} / ${sFmtT(au.duration)}`; if (cur() && Date.now() - lastSave > 5000) { lastSave = Date.now(); if (cur().ab) sAbSave(cur(), au.currentTime); else { store.set(SK, { a: cur().a, t: au.currentTime, p: STALK.page }); if (au.currentTime > 3) sHistSave(cur(), STALK.page, au.currentTime, au.duration); } } if (cur() && cur().ab) { sAbFollow(cur(), au.currentTime); } });
+  au.addEventListener('timeupdate', () => { q('#sTime').textContent = `${sFmtT(au.currentTime)} / ${sFmtT(au.duration)}`; skSync(); if (cur() && Date.now() - lastSave > 5000) { lastSave = Date.now(); if (cur().ab) sAbSave(cur(), au.currentTime); else { store.set(SK, { a: cur().a, t: au.currentTime, p: STALK.page }); if (au.currentTime > 3) sHistSave(cur(), STALK.page, au.currentTime, au.duration); } } if (cur() && cur().ab) { sAbFollow(cur(), au.currentTime); } });
   au.addEventListener('ended', () => { if (cur() && cur().ab) { if (STALK.idx + 1 >= STALK.list.length) store.set('abpos-' + cur().ab.id, null); } else { store.set(SK, null); if (cur()) sHistDel(cur().a); } if (STALK.idx + 1 < STALK.list.length) play(STALK.list, STALK.idx + 1, 0, STALK.page); else { now.textContent = '목록의 마지막 법문까지 들었습니다'; setBtn(); } });
   if ('mediaSession' in navigator) { const h = (k, f) => { try { navigator.mediaSession.setActionHandler(k, f); } catch (x) {} }; h('play', () => au.play()); h('pause', () => au.pause()); h('previoustrack', () => step(-1)); h('nexttrack', () => step(1)); h('seekbackward', () => q('#sBack15').click()); h('seekforward', () => q('#sFwd15').click()); }
   return el;
@@ -3101,6 +3110,17 @@ function sTalkMark() {
   const same = STALK.page === location.pathname;
   $$('.s-list > li.k-ep').forEach((li, i) => { const on = same && i === STALK.idx; li.classList.toggle('playing', on); if (on) li.setAttribute('aria-current', 'true'); else li.removeAttribute('aria-current'); });
   if (STALK.el) { const g = $('#sGoList', STALK.el); g.hidden = same || !STALK.list.length; g.href = STALK.page || '/simple/talks/'; }
+}
+// 다음 법문으로 넘어가면 목록의 고른 줄도 따라감 (운영자 요청, 2026-11-23 — 이용자 의견 '1강 다음 2강이 나올 때 포커스가 그대로'):
+// 커서가 방금까지 듣던 줄(또는 아무 데도 없음)에 있으면 새 줄로 커서를 옮겨 낭독기가 읽게 하고, 커서가 재생기 단추 등 목록 밖이면
+// 고른 줄만 바꿈(Tab 으로 목록에 돌아오면 듣는 줄), 목록의 다른 줄을 보고 있으면 건드리지 않음. force: 이어 듣기로 이 화면에 왔을 때
+function sTalkFollow(prevIdx, force) {
+  if (STALK.page !== location.pathname) return;
+  const ul = $$('.s-list').find(u => $(':scope > li.k-ep', u)); if (!ul || !ul._lb) return;
+  const all = $$(':scope > li', ul), eps = $$(':scope > li.k-ep', ul), li = eps[STALK.idx]; if (!li) return;
+  const j = all.indexOf(li), ae = document.activeElement, onRow = !!ae && ae.parentNode === ul;
+  if (force || (onRow && eps.indexOf(ae) === prevIdx && prevIdx !== STALK.idx) || !ae || ae === document.body) ul._lb.pick(j, true);
+  else if (!onRow) ul._lb.pick(j, false);
 }
 // 재생기 자리: 법문 목록 화면이면 위쪽 자리, 다른 화면이면 듣는 법문이 있을 때만 아래쪽에 붙임
 function sPlayerPlace(force) {
@@ -3189,6 +3209,19 @@ function sResumePlay(li) {
   const e = { a: li.dataset.href, t: li.dataset.t, pl: li.dataset.pl }, src = li.dataset.src, pos = +li.dataset.pos || 0;
   sPlayerPlace(true);  // 내 서재처럼 재생기 자리가 없는 화면이면 아래쪽에 붙임(재생 전에 — 재생 중 옮기면 이어 듣기 자리를 놓침)
   STALK.play([e], 0, pos > 5 ? pos : 0, src);  // 바로 재생(누른 즉시 소리가 나게)
+  // 내 서재·이어 듣기 폴더에서 골랐으면 그 법문이 있는 '법문 바로 듣기' 목록 화면으로 옮겨 가 듣는 줄에 커서 (운영자 요청, 2026-11-23 — 이용자 의견)
+  let su; try { su = new URL(src, location.href); } catch (x) {}
+  if (su && /^\/simple\/talks\/[^/]+\/\d+\/$/.test(su.pathname) && su.pathname !== location.pathname && STALK.playing()) {
+    sGo(su.href).then(() => {
+      if (location.pathname !== su.pathname || STALK.list[0] !== e) return;
+      const list = sTalkPageList().map(x => ({ ...x, a: x.a ? new URL(x.a, location.href).href : '' }));
+      const i = list.findIndex(x => x.a === new URL(e.a, location.href).href); if (i < 0) return;
+      list[i] = e; STALK.list = list; STALK.idx = i; STALK.pageList = list; STALK.page = location.pathname;
+      const nw = $('#sNow'); if (nw) nw.textContent = nw.textContent.replace('(1/1)', `(${i + 1}/${list.length})`);
+      sTalkMark(); setTimeout(() => sTalkFollow(-1, true), 60);
+    });
+    return;
+  }
   fetch(src).then(r => r.ok ? r.text() : '').then(t => {  // 원래 재생목록을 받아 다음 법문으로 이어지게
     if (!t || STALK.list[0] !== e) return;
     const d = new DOMParser().parseFromString(t, 'text/html');
