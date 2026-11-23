@@ -1075,7 +1075,7 @@ const sDateHtml = c => /\d{4}-\d{1,2}-\d{1,2}/.test(c) ? `<span aria-hidden="tru
 // 칸 글의 ' | '·' · ' 는 화면에는 그대로, 화면 낭독기에는 쉼표로 — '세로 막대'·'가운뎃점'을 읽지 않게 (2026-11-19 검수)
 const sSep = h => h.replace(/ ([|·]) /g, ' <span aria-hidden="true">$1</span><span class="sr">,</span> ').replace(/(\d쪽)~(?=\d)/g, '$1<span aria-hidden="true">~</span><span class="sr">부터 </span>');  // '1쪽~6쪽' 은 '1쪽부터 6쪽' (물결표를 읽지 않게)
 const sCols = cols => cols.map((c, i) => `${i && c ? '<span class="sr">, </span>' : ''}<span class="s-c s-c${i + 1}">${sDateHtml(c || '')}</span>`).join('');
-const S_COLS = { 2: 'minmax(0,2fr) minmax(0,3fr)', 3: 'minmax(0,3fr) 110px minmax(0,2fr)' };
+const S_COLS = { 2: 'minmax(0,2fr) minmax(0,3fr)', 3: 'minmax(0,3fr) 190px minmax(0,2fr)' };
 const sList = (label, head, rows, cols = S_COLS[head.length]) => `<div class="s-tbl"${cols ? ` style="--cols:${cols}"` : ''}><div class="s-head" aria-hidden="true">${head.map((h, i) => `<span class="s-c s-c${i + 1}">${esc(h)}</span>`).join('')}</div>
 <ul class="s-list" data-label="${esc(label)}">${rows.map(r => `<li class="s-row${r.kind ? ' k-' + r.kind : ''}"${r.data ? Object.entries(r.data).map(([k, v]) => ` data-${k}="${esc(v)}"`).join('') : ''}><a href="${esc(r.href)}"${r.dl ? ' download' : ''}${r.ext ? ' target="_blank" rel="noopener"' : ''}><span class="s-ic" aria-hidden="true">${r.ic || '📁'}</span>${sCols(r.cols)}</a></li>`).join('')}</ul></div>`;
 const sBy = b => [b.byline, b.translator].filter(Boolean).join(' | ');

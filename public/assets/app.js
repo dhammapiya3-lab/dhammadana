@@ -3264,7 +3264,7 @@ function sListbox(ul) {
   const upA = $('#sUp');
   if (upA && !ul.closest('.s-find, #sFindList') && !$(':scope > li.k-up', ul)) {
     const pa = $$('.s-path a'), pn = pa.length ? pa[pa.length - 1].textContent.trim() : '';
-    ul.insertAdjacentHTML('afterbegin', sRow(upA.getAttribute('href'), ['▲ 위로', pn ? `한 단계 위: ${pn}` : '한 단계 위 목록'], '', 'up'));
+    ul.insertAdjacentHTML('afterbegin', sRow(upA.getAttribute('href'), [pn ? `▲ 위로 · 한 단계 위: ${pn}` : '▲ 위로 · 한 단계 위 목록'], '', 'up')  /* 한 칸으로 줄 전체에 — 표의 제목·올린 날 칸에 나눠 들어가 칸 이름과 맞지 않고 좁은 칸에서 줄이 밀리던 것 (운영자 요청, 2026-11-23) */);
   }
   const items = $$(':scope > li', ul); if (!items.length) return null;
   const hasUp = items[0].classList.contains('k-up');
