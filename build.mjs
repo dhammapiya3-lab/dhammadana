@@ -598,8 +598,8 @@ function peopleLinks(b, text, fld) {
   return h;
 }
 
-// 사람이 녹음한 오디오북이 있는 책: 책 카드 형식 줄과 도서관 찾아보기 '형식'에 '오디오북' (운영자 요청, 2026-11-11)
-const fmtsCard = b => { const u = uniqK(formats(b)); const e = curEd(b); return e && e.reader && AUDIO[b.id] && AUDIO[b.id].human ? [...u, { k: '오디오북' }] : u; };
+// 오디오북이 있는 책(사람 녹음·기계 음성 모두): 책 카드 형식 줄과 도서관 찾아보기 '형식'에 '오디오북' (운영자 요청, 2026-11-11 — 2026-11-24 기계 음성도)
+const fmtsCard = b => { const u = uniqK(formats(b)); const e = curEd(b); return e && e.reader && AUDIO[b.id] ? [...u, { k: '오디오북' }] : u; };
 // 원서의 언어는 여러 개 고를 수 있음 (운영자 요청, 2026-11-15) — 예전 글자 하나도 그대로 읽음
 // 원서 대조에 쓴 원서 판본 (운영자 요청, 2026-11-15): 책 JSON parallel_editions [{lang,title,by,edition,url,note}] — 짝 자료(content/parallel)가 있는 말만
 function parEds(b) { return (b.parallel_editions || []).filter(x => x && (PARALLEL[b.id] || []).includes(x.lang || 'en')); }
