@@ -868,18 +868,18 @@
 "zip": 13221311
 },
 "New-Jataka": {
-"n": 79,
-"pdf": 56632070,
-"pdfs": 10681665,
-"stories": 3,
-"zip": 56456985
+"n": 109,
+"pdf": 81595361,
+"pdfs": 15149037,
+"stories": 4,
+"zip": 81411163
 },
 "New-Jataka-en": {
-"n": 79,
-"pdf": 56602795,
-"pdfs": 10745780,
-"stories": 3,
-"zip": 56395600
+"n": 109,
+"pdf": 81509717,
+"pdfs": 15234064,
+"stories": 4,
+"zip": 81293169
 },
 "New-Jataka/001-Apannaka": {
 "n": 30,
@@ -910,6 +910,16 @@
 "n": 25,
 "pdf": 19223571,
 "zip": 19024807
+},
+"New-Jataka/004-Culasetthi": {
+"n": 30,
+"pdf": 25130188,
+"zip": 24951909
+},
+"New-Jataka/004-Culasetthi-en": {
+"n": 30,
+"pdf": 25095742,
+"zip": 24895448
 },
 "Pannasa": {
 "n": 803,
