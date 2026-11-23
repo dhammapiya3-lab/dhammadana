@@ -8,56 +8,16 @@ Foremost-Laymen 07-Uggata 13 장
 Foremost-Laymen 08-Surambattha 15 장
 Foremost-Laymen 09-Jivaka 11 장
 Foremost-Laymen 10-Nakulapitu 10 장
-검수 Foremost-Monks/01-Kondanna 33번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Foremost-Monks 01-Kondanna 38 장
-Foremost-Monks 02-03-Sariputta-Moggallana 57 장
 검수 Foremost-Monks/04-Maha-Kassapa 36번 그림 상자1 [자리] 한글 글(1989,772)이 상자 점(1795,357)에서 멀리 그려짐
-검수 Foremost-Monks/04-Maha-Kassapa 41번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Foremost-Monks 04-Maha-Kassapa 41 장
 검수 Foremost-Monks/05-Anuruddha 21번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 검수 Foremost-Monks/05-Anuruddha 50번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 1px)
 Foremost-Monks 05-Anuruddha 53 장
-Foremost-Monks 06-Bhaddiya 15 장
-Foremost-Monks 07-Lakundaka 13 장
-Foremost-Monks 08-Pindola 9 장
-Foremost-Monks 09-Punna 15 장
-Foremost-Monks 10-Kaccana 15 장
-Foremost-Monks 11-12-Panthakas 12 장
-Foremost-Monks 13-Subhuti 13 장
-Foremost-Monks 14-Khadiravaniya-Revata 25 장
-Foremost-Monks 15-Kankha-Revata 13 장
-Foremost-Monks 16-Sona-Kolivisa 18 장
-Foremost-Monks 17-Sona-Kutikanna 26 장
-Foremost-Monks 18-Sivali 15 장
-Foremost-Monks 19-Vakkali 11 장
-검수 Foremost-Monks/20-21-Rahula-Ratthapala 26번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
-Foremost-Monks 20-21-Rahula-Ratthapala 34 장
-Foremost-Monks 22-Kundadhana 15 장
-Foremost-Monks 23-Vangisa 14 장
-Foremost-Monks 24-Upasena-Vangantaputta 15 장
-Foremost-Monks 25-Dabba 15 장
-Foremost-Monks 26-Pilinda-Vaccha 12 장
-Foremost-Monks 27-Bahiya-Daruciriya 26 장
-Foremost-Monks 28-Kumara-Kassapa 13 장
-Foremost-Monks 29-Maha-Kotthita 12 장
-Foremost-Monks 30-Ananda 34 장
-Foremost-Monks 31-Uruvela-Kassapa 15 장
-Foremost-Monks 32-Kaludayi 12 장
-검수 Foremost-Monks/33-Bakula 10번 그림 상자1 [자리] 한글 글(1323,491)이 상자 점(1071,158)에서 멀리 그려짐
 검수 Foremost-Monks/33-Bakula 16번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 0px)
 Foremost-Monks 33-Bakula 28 장
-Foremost-Monks 34-Sobhita 14 장
-Foremost-Monks 35-Upali 15 장
-Foremost-Monks 36-Nandaka 13 장
-Foremost-Monks 37-Nanda 13 장
-Foremost-Monks 38-Maha-Kappina 35 장
-Foremost-Monks 39-Sagata 11 장
-Foremost-Monks 40-Radha 14 장
-검수 Foremost-Monks/41-Mogharaja 48번 그림 상자1 [삐져나옴] 글이 말풍선·상자 가장자리에 닿거나 밖으로 나감 (여백 2px)
-Foremost-Monks 41-Mogharaja 53 장
-Pannasa 10-Sankhapatta 29 장
-자동 검수: 문제 의심 9 곳
-R2 에 올림: 2023 개 / 한글판 이야기 318 편
+자동 검수: 문제 의심 4 곳
+R2 에 올림: 681 개 / 한글판 이야기 318 편
 새 그림책: 올린 그림 0 장
 공개 주소 확인: 200 1649805바이트
 이야기 Foremost-Laymen/01-Tapussa-and-Bhallika {'pdf': 20439104, 'zip': 20164779, 'n': 14}
@@ -71,48 +31,12 @@ R2 에 올림: 2023 개 / 한글판 이야기 318 편
 이야기 Foremost-Laymen/09-Jivaka {'pdf': 21187427, 'zip': 20369584, 'n': 11}
 이야기 Foremost-Laymen/10-Nakulapitu {'pdf': 12438260, 'zip': 12166113, 'n': 10}
 책 Foremost-Laymen {'pdf': 229252185, 'pdfs': 24266814, 'zip': 228937550, 'stories': 10, 'n': 157}
-이야기 Foremost-Monks/01-Kondanna {'pdf': 61871142, 'zip': 61594235, 'n': 38}
-이야기 Foremost-Monks/02-03-Sariputta-Moggallana {'pdf': 85401682, 'zip': 85105058, 'n': 57}
-이야기 Foremost-Monks/04-Maha-Kassapa {'pdf': 57454398, 'zip': 57175487, 'n': 41}
+이야기 Foremost-Monks/01-Kondanna {'pdf': 61869308, 'zip': 61592401, 'n': 38}
+이야기 Foremost-Monks/04-Maha-Kassapa {'pdf': 57439297, 'zip': 57160386, 'n': 41}
 이야기 Foremost-Monks/05-Anuruddha {'pdf': 71862815, 'zip': 71581010, 'n': 53}
-이야기 Foremost-Monks/06-Bhaddiya {'pdf': 20451443, 'zip': 20177609, 'n': 15}
-이야기 Foremost-Monks/07-Lakundaka {'pdf': 16527322, 'zip': 16257315, 'n': 13}
-이야기 Foremost-Monks/08-Pindola {'pdf': 10465048, 'zip': 10195075, 'n': 9}
-이야기 Foremost-Monks/09-Punna {'pdf': 21109353, 'zip': 20838329, 'n': 15}
-이야기 Foremost-Monks/10-Kaccana {'pdf': 23115925, 'zip': 22848151, 'n': 15}
-이야기 Foremost-Monks/11-12-Panthakas {'pdf': 14074404, 'zip': 13793781, 'n': 12}
-이야기 Foremost-Monks/13-Subhuti {'pdf': 18849665, 'zip': 18586134, 'n': 13}
-이야기 Foremost-Monks/14-Khadiravaniya-Revata {'pdf': 36110699, 'zip': 35834111, 'n': 25}
-이야기 Foremost-Monks/15-Kankha-Revata {'pdf': 19149424, 'zip': 18882482, 'n': 13}
-이야기 Foremost-Monks/16-Sona-Kolivisa {'pdf': 24831996, 'zip': 24561833, 'n': 18}
-이야기 Foremost-Monks/17-Sona-Kutikanna {'pdf': 37451033, 'zip': 37179187, 'n': 26}
-이야기 Foremost-Monks/18-Sivali {'pdf': 22567209, 'zip': 22302191, 'n': 15}
-이야기 Foremost-Monks/19-Vakkali {'pdf': 12397369, 'zip': 12133256, 'n': 11}
-이야기 Foremost-Monks/20-21-Rahula-Ratthapala {'pdf': 48909203, 'zip': 48623812, 'n': 34}
-이야기 Foremost-Monks/22-Kundadhana {'pdf': 22460456, 'zip': 22194682, 'n': 15}
-이야기 Foremost-Monks/23-Vangisa {'pdf': 18624622, 'zip': 18359647, 'n': 14}
-이야기 Foremost-Monks/24-Upasena-Vangantaputta {'pdf': 22185719, 'zip': 21911390, 'n': 15}
-이야기 Foremost-Monks/25-Dabba {'pdf': 18754848, 'zip': 18484993, 'n': 15}
-이야기 Foremost-Monks/26-Pilinda-Vaccha {'pdf': 18723651, 'zip': 18456100, 'n': 12}
-이야기 Foremost-Monks/27-Bahiya-Daruciriya {'pdf': 33931488, 'zip': 33655658, 'n': 26}
-이야기 Foremost-Monks/28-Kumara-Kassapa {'pdf': 17225336, 'zip': 16956590, 'n': 13}
-이야기 Foremost-Monks/29-Maha-Kotthita {'pdf': 18686706, 'zip': 18419100, 'n': 12}
-이야기 Foremost-Monks/30-Ananda {'pdf': 44203814, 'zip': 43931240, 'n': 34}
-이야기 Foremost-Monks/31-Uruvela-Kassapa {'pdf': 17975068, 'zip': 17703672, 'n': 15}
-이야기 Foremost-Monks/32-Kaludayi {'pdf': 14659379, 'zip': 14394177, 'n': 12}
-이야기 Foremost-Monks/33-Bakula {'pdf': 38366816, 'zip': 38096002, 'n': 28}
-이야기 Foremost-Monks/34-Sobhita {'pdf': 23170096, 'zip': 22906358, 'n': 14}
-이야기 Foremost-Monks/35-Upali {'pdf': 20443277, 'zip': 20177978, 'n': 15}
-이야기 Foremost-Monks/36-Nandaka {'pdf': 20487846, 'zip': 20223547, 'n': 13}
-이야기 Foremost-Monks/37-Nanda {'pdf': 21090201, 'zip': 20827945, 'n': 13}
-이야기 Foremost-Monks/38-Maha-Kappina {'pdf': 46413721, 'zip': 46137028, 'n': 35}
-이야기 Foremost-Monks/39-Sagata {'pdf': 16775467, 'zip': 16511756, 'n': 11}
-이야기 Foremost-Monks/40-Radha {'pdf': 17480904, 'zip': 17218080, 'n': 14}
-이야기 Foremost-Monks/41-Mogharaja {'pdf': 77937761, 'zip': 77656867, 'n': 53}
-책 Foremost-Monks {'pdf': 1122450365, 'pdfs': 118340143, 'zip': 1121907514, 'stories': 38, 'n': 802}
-이야기 Pannasa/10-Sankhapatta {'pdf': 37004725, 'zip': 36734458, 'n': 29}
-책 Pannasa {'pdf': 1037250912, 'pdfs': 100142607, 'zip': 1036700118, 'stories': 50, 'n': 803}
-내려받기 파일: 52 묶음 새로 만듦
+이야기 Foremost-Monks/33-Bakula {'pdf': 38353008, 'zip': 38082194, 'n': 28}
+책 Foremost-Monks {'pdf': 1122419621, 'pdfs': 118341666, 'zip': 1121876771, 'stories': 38, 'n': 802}
+내려받기 파일: 16 묶음 새로 만듦
 글로 보기: 318 이야기
 18-Verses-2
 08-Light-of-Asia
