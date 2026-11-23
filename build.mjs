@@ -599,7 +599,8 @@ function peopleLinks(b, text, fld) {
 }
 
 // 오디오북이 있는 책(사람 녹음·기계 음성 모두): 책 카드 형식 줄과 도서관 찾아보기 '형식'에 '오디오북' (운영자 요청, 2026-11-11 — 2026-11-24 기계 음성도)
-const fmtsCard = b => { const u = uniqK(formats(b)); const e = curEd(b); return e && e.reader && AUDIO[b.id] ? [...u, { k: '오디오북' }] : u; };
+// 점자 파일이 있는 책은 '점자'도 (운영자 요청, 2026-11-24)
+const fmtsCard = b => { const u = uniqK(formats(b)); const e = curEd(b); const a = e && e.reader && AUDIO[b.id] ? [...u, { k: '오디오북' }] : u; return brlOf(b).length ? [...a, { k: '점자' }] : a; };
 // 원서의 언어는 여러 개 고를 수 있음 (운영자 요청, 2026-11-15) — 예전 글자 하나도 그대로 읽음
 // 원서 대조에 쓴 원서 판본 (운영자 요청, 2026-11-15): 책 JSON parallel_editions [{lang,title,by,edition,url,note}] — 짝 자료(content/parallel)가 있는 말만
 function parEds(b) { return (b.parallel_editions || []).filter(x => x && (PARALLEL[b.id] || []).includes(x.lang || 'en')); }
@@ -736,7 +737,7 @@ function libraryBody() {
     <h3>협력 단체</h3>${PUBS().map(x => chk('pub', x.key, esc(x.name), LIB().filter(b => pubsAll(b).some(p => p.key === x.key)).length)).join('')}
     <h3>책 형식</h3>${BTYPES.map(k => chk('btype', k, esc(k), LIB().filter(b => b.book_type === k).length)).join('')}
     ${LANGS.length ? `<h3>원서의 언어</h3>${LANGS.map(l => chk('lang', l, esc(l), LIB().filter(b => langsOf(b).includes(l)).length)).join('')}` : ''}
-    <h3>형식</h3>${['PDF', 'EPUB', 'HWP', '온라인 읽기', '오디오북'].map(f => [f, LIB().filter(b => fmtsCard(b).some(x => x.k === f)).length]).filter(([f, n]) => n).map(([f, n]) => chk('fmt', f, f, n)).join('')}
+    <h3>형식</h3>${['PDF', 'EPUB', 'HWP', '온라인 읽기', '오디오북', '점자'].map(f => [f, LIB().filter(b => fmtsCard(b).some(x => x.k === f)).length]).filter(([f, n]) => n).map(([f, n]) => chk('fmt', f, f, n)).join('')}
   </div></details>
   <section><div class="toolbar"><div><h1 class="h-page">법보시 도서관</h1><div class="muted small">자료 <span id="libCount">${LIB().length}</span>권</div></div>
     <label class="small">정렬 <select id="sort"><option value="new">최근 등록순</option><option value="title">제목 가나다순</option><option value="author">저자 가나다순</option></select></label></div>
