@@ -6,9 +6,14 @@
   "byline": "비구 일창 담마간다",
   "translator": "",
   "teacher": "dhammaganda",
+  "co_teachers": [],
+  "country": [],
   "provider": "koreamahasi",
   "press": false,
   "provider_chip": false,
+  "partner_chips": [
+    "koreamahasi"
+  ],
   "paper": "",
   "paper_url": "",
   "stores": [
@@ -17,10 +22,15 @@
       "url": "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=275547511"
     }
   ],
+  "videos": [],
   "book_type": "해설서",
   "original_title": "",
   "original_language": [],
+  "content_languages": [],
   "original_source": "",
+  "parallel_editions": [],
+  "originals": [],
+  "braille": [],
   "series": "",
   "main": [
     "테라와다불교 입문서"
@@ -54,9 +64,11 @@
       "page_count": 455,
       "published": "2017년 10월 20일",
       "publisher_print": "불방일",
+      "publisher_print_show": "",
       "isbn": "979-11-95685-05-9",
       "published_ebook": "",
       "publisher_ebook": "",
+      "ebook_note": "",
       "isbn_ebook": "",
       "changes": "",
       "hide_update": false,
@@ -79,6 +91,12 @@
         "created": ""
       },
       "epub": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "hwp": {
         "mode": "none",
         "url": "",
         "site": "",
@@ -103,9 +121,11 @@
       "page_count": 456,
       "published": "2021년 7월 23일",
       "publisher_print": "불방일",
+      "publisher_print_show": "",
       "isbn": "979-11-970021-3-7",
       "published_ebook": "",
       "publisher_ebook": "",
+      "ebook_note": "",
       "isbn_ebook": "",
       "changes": "",
       "hide_update": false,
@@ -133,6 +153,12 @@
         "site": "",
         "created": ""
       },
+      "hwp": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
       "reader": true,
       "sources": [],
       "collection": "저자에게서 직접 받음",
@@ -145,9 +171,11 @@
       "note": ""
     }
   ],
+  "audiobook": null,
   "license": "CC BY-NC-ND",
   "added": "2026-11-09",
   "order": null,
   "hidden": false,
+  "no_copy": false,
   "hide_update": false
 }
