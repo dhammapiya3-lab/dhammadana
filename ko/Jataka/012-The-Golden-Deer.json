@@ -544,10 +544,10 @@
     "shape": "box",
     "manual": true,
     "rect": [
-     56,
-     58,
-     300,
-     104
+     62,
+     62,
+     246,
+     101
     ],
     "whole": true,
     "cover": true,
