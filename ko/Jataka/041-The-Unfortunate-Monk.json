@@ -3,13 +3,18 @@
   "img": "images/041-The-Unfortunate-Monk-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     218,
-     74
-    ],
     "shape": "box",
     "en": "The Karmic Ledger Toa of Mittavindaka",
-    "ko": "밋따윈다까의 업의 장부"
+    "ko": "밋따윈다까의 업의 장부",
+    "rect": [
+     187,
+     71,
+     613,
+     108
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "rect": [
@@ -32,13 +37,18 @@
   "img": "images/041-The-Unfortunate-Monk-02-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     130,
-     395
-    ],
     "shape": "box",
     "en": "During the era of Kassapa Buddha, village monk grew deeply jealous. He feared visiting Arahat would permanently steal the devotion and alms of his patron.",
-    "ko": "깟사빠 부처님 시대에 한 마을 비구가 몹시 질투했습니다. 찾아온 아라한이 시주의 공경과 공양을 영영 빼앗아 갈까 두려웠던 것입니다."
+    "ko": "깟사빠 부처님 시대에 한 마을 비구가 몹시 질투했습니다. 찾아온 아라한이 시주의 공경과 공양을 영영 빼앗아 갈까 두려웠던 것입니다.",
+    "rect": [
+     49,
+     51,
+     751,
+     403
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -141,13 +151,18 @@
     "align": "center"
    },
    {
-    "seed": [
-     599,
-     215
-    ],
     "shape": "box",
     "en": "Yakkha: 500 births, starving save for one meal of offal.",
-    "ko": "• 약카: 500생 동안 굶주리며 내장 한 끼만 먹음"
+    "ko": "• 약카: 500생 동안 굶주리며 내장 한 끼만 먹음",
+    "rect": [
+     413,
+     54,
+     744,
+     404
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "shape": "box",
@@ -169,13 +184,18 @@
   "img": "images/041-The-Unfortunate-Monk-05-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     173,
-     362
-    ],
     "shape": "box",
     "en": "Finally reborn human in Kasi beggar family, family, Mittavindaka brought them total ruin. Beaten and driven out, he became wandering curse.",
-    "ko": "마침내 까시국의 거지 집안에 사람으로 태어난 밋따윈다까는 집안을 완전히 망하게 했습니다. 매 맞고 쫓겨난 그는 떠도는 저주가 되었습니다."
+    "ko": "마침내 까시국의 거지 집안에 사람으로 태어난 밋따윈다까는 집안을 완전히 망하게 했습니다. 매 맞고 쫓겨난 그는 떠도는 저주가 되었습니다.",
+    "rect": [
+     68,
+     65,
+     732,
+     411
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -183,13 +203,18 @@
   "img": "images/041-The-Unfortunate-Monk-06-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     153,
-     364
-    ],
     "shape": "box",
     "en": "In Benares, the Bodhisatta—a renowned, ordinary teacher—took him in. But Mittavindaka was fierce, intractable, and rejected his master’s reproofs. He ran away.",
-    "ko": "바라나시에서 이름난 스승이었던 보살이 그를 받아 주었습니다. 그러나 밋따윈다까는 사납고 고집 세서 스승의 꾸중을 듣지 않았고, 결국 달아났습니다."
+    "ko": "바라나시에서 이름난 스승이었던 보살이 그를 받아 주었습니다. 그러나 밋따윈다까는 사납고 고집 세서 스승의 꾸중을 듣지 않았고, 결국 달아났습니다.",
+    "rect": [
+     129,
+     366,
+     671,
+     404
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -227,24 +252,32 @@
     "cover": true
    },
    {
-    "seed": [
-     67,
-     243
-    ],
     "ko": "• 물탱크 일곱 개가 말라 버림",
-    "align": "left",
+    "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     69,
+     242,
+     392,
+     279
+    ],
+    "whole": true,
+    "cover": true
    },
    {
-    "seed": [
-     288,
-     405
-    ],
     "ko": "다시 쫓겨났습니다.",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     283,
+     396,
+     517,
+     436
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },
@@ -252,13 +285,18 @@
   "img": "images/041-The-Unfortunate-Monk-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     157,
-     56
-    ],
     "shape": "box",
     "en": "ship in mid-ocean, The math of karma, arma, not chance: seven consecutive times, the cursed lot fell to Mittavindaka.",
-    "ko": "배가 바다 한가운데서 멈춰 섰습니다. 우연이 아니라 업의 셈법이었습니다. 일곱 번 연달아 불운의 제비가 밋따윈다까에게 떨어졌습니다."
+    "ko": "배가 바다 한가운데서 멈춰 섰습니다. 우연이 아니라 업의 셈법이었습니다. 일곱 번 연달아 불운의 제비가 밋따윈다까에게 떨어졌습니다.",
+    "rect": [
+     69,
+     59,
+     346,
+     109
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -289,13 +327,18 @@
     "align": "center"
    },
    {
-    "seed": [
-     453,
-     102
-    ],
     "shape": "box",
     "en": "Crystal 4 Devadhita 7 Days",
-    "ko": "수정 궁전\n천녀 넷\n이레"
+    "ko": "수정 궁전\n천녀 넷\n이레",
+    "rect": [
+     409,
+     90,
+     558,
+     148
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "shape": "box",
@@ -312,31 +355,46 @@
     "align": "center"
    },
    {
-    "seed": [
-     457,
-     245
-    ],
     "shape": "box",
     "en": "Jewel 16 Devadhita 7 Days aA",
-    "ko": "보석 궁전\n천녀 열여섯\n이레"
+    "ko": "보석 궁전\n천녀 열여섯\n이레",
+    "rect": [
+     410,
+     243,
+     558,
+     304
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     462,
-     326
-    ],
     "shape": "box",
     "en": "Gold 32 Devadhita 7 Days",
-    "ko": "황금 궁전\n천녀 서른둘\n이레"
+    "ko": "황금 궁전\n천녀 서른둘\n이레",
+    "rect": [
+     409,
+     321,
+     558,
+     377
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     294,
-     410
-    ],
     "shape": "box",
     "en": "Yet, as material terial wealth ealth and Devadhita exponentially multiplied, his restless greed forced him to abandon every palace in search of more.",
-    "ko": "그러나 재물과 천녀가 갑절로 늘어날수록 그칠 줄 모르는 탐욕에 그는 궁전마다 버리고 더 많은 것을 찾아 떠났습니다."
+    "ko": "그러나 재물과 천녀가 갑절로 늘어날수록 그칠 줄 모르는 탐욕에 그는 궁전마다 버리고 더 많은 것을 찾아 떠났습니다.",
+    "rect": [
+     180,
+     391,
+     622,
+     428
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -344,13 +402,18 @@
   "img": "images/041-The-Unfortunate-Monk-10-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     171,
-     385
-    ],
     "shape": "box",
     "en": "Ignoring the Devadhita’s warnings, he sailed to Yakkha city. Blinded by insatiable greed, he seized what he believed was mere goat for dinner.",
-    "ko": "천녀들의 경고를 무시하고 그는 약카의 도시로 갔습니다. 끝없는 탐욕에 눈먼 그는 저녁거리 염소인 줄 알고 무언가를 붙잡았습니다."
+    "ko": "천녀들의 경고를 무시하고 그는 약카의 도시로 갔습니다. 끝없는 탐욕에 눈먼 그는 저녁거리 염소인 줄 알고 무언가를 붙잡았습니다.",
+    "rect": [
+     146,
+     386,
+     654,
+     431
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -358,13 +421,18 @@
   "img": "images/041-The-Unfortunate-Monk-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     292,
-     289
-    ],
     "shape": "box",
     "en": "It was Yakkhini in disguise. By her Yakkha- nature, she hurled him across the ocean, dropping him violently into the dry moat of Benares.",
-    "ko": "그것은 염소로 변한 약키니였습니다. 약카의 성질대로 약키니는 그를 바다 건너로 내던졌고, 그는 바라나시의 마른 해자에 거칠게 떨어졌습니다."
+    "ko": "그것은 염소로 변한 약키니였습니다. 약카의 성질대로 약키니는 그를 바다 건너로 내던졌고, 그는 바라나시의 마른 해자에 거칠게 떨어졌습니다.",
+    "rect": [
+     279,
+     266,
+     520,
+     345
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -396,13 +464,18 @@
   "img": "images/041-The-Unfortunate-Monk-13-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     253,
-     369
-    ],
     "shape": "box",
     "en": "The Bodhisatta, passing by, recognized his former runaway pupil. Intervening, he claimed the thief as his own slave to save him from execution.",
-    "ko": "지나가던 보살이 달아났던 옛 제자를 알아보았습니다. 보살은 그 도둑을 자기 종이라 하여 처형을 면하게 했습니다."
+    "ko": "지나가던 보살이 달아났던 옛 제자를 알아보았습니다. 보살은 그 도둑을 자기 종이라 하여 처형을 면하게 했습니다.",
+    "rect": [
+     243,
+     372,
+     560,
+     426
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -410,14 +483,18 @@
   "img": "images/041-The-Unfortunate-Monk-14-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     228,
-     20
-    ],
     "ko": "괴로움의 해부: 지혜를 거부함",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     219,
+     17,
+     583,
+     43
+    ],
+    "whole": true,
+    "cover": true
    },
    {
     "rect": [
@@ -465,14 +542,18 @@
     "cover": true
    },
    {
-    "seed": [
-     248,
-     405
-    ],
     "ko": "교만은 업의 빚을 불린다.",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     240,
+     402,
+     563,
+     434
+    ],
+    "whole": true,
+    "cover": true
    },
    {
     "rect": [

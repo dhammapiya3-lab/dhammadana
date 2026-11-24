@@ -269,13 +269,18 @@
   "img": "images/027-Elephant-and-Dog-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     104,
-     57
-    ],
     "shape": "box",
     "en": "Hearing the royal proclamation, the terrified villager promptly let the dog loose. Away ran the dog at once, making straight path back to the palace.",
-    "ko": "왕의 포고를 들은 마을 사람은 겁이 나서 곧바로 개를 풀어 주었습니다. 개는 그 길로 곧장 궁으로 달려갔습니다."
+    "ko": "왕의 포고를 들은 마을 사람은 겁이 나서 곧바로 개를 풀어 주었습니다. 개는 그 길로 곧장 궁으로 달려갔습니다.",
+    "rect": [
+     108,
+     44,
+     694,
+     82
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

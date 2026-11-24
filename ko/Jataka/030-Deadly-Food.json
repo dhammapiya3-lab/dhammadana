@@ -3,31 +3,46 @@
   "img": "images/030-Deadly-Food-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     274,
-     10
-    ],
     "shape": "box",
     "en": "Deadly Food",
-    "ko": "죽음을 부르는 먹이"
+    "ko": "죽음을 부르는 먹이",
+    "rect": [
+     202,
+     11,
+     598,
+     62
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     78,
-     78
-    ],
     "shape": "box",
     "en": "Long ago in Benares, two brothers did all the draught-work for family.",
-    "ko": "옛 바라나시에서 두 형제가 한 집안의 짐 끄는 일을 도맡았습니다."
+    "ko": "옛 바라나시에서 두 형제가 한 집안의 짐 끄는 일을 도맡았습니다.",
+    "rect": [
+     82,
+     78,
+     302,
+     117
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     445,
-     324
-    ],
     "shape": "box",
     "en": "Mahalohita, the Bodhisatta, and young Cullalohita.",
-    "ko": "보살인 마할로히따와 동생 쭐랄로히따였습니다."
+    "ko": "보살인 마할로히따와 동생 쭐랄로히따였습니다.",
+    "rect": [
+     450,
+     319,
+     608,
+     360
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -68,22 +83,32 @@
   "img": "images/030-Deadly-Food-03-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     97,
-     55
-    ],
     "shape": "box",
     "en": "marriage was arranged for the householder’s daughter",
-    "ko": "주인집 딸의 혼인이 정해졌습니다."
+    "ko": "주인집 딸의 혼인이 정해졌습니다.",
+    "rect": [
+     67,
+     39,
+     308,
+     78
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     515,
-     329
-    ],
     "shape": "box",
     "en": "To provide dainty fare for the wedding guests, they began to fatten pig named Munika",
-    "ko": "잔치 손님들에게 맛있는 음식을 내려고, 무니까라는 돼지를 살찌우기 시작했습니다."
+    "ko": "잔치 손님들에게 맛있는 음식을 내려고, 무니까라는 돼지를 살찌우기 시작했습니다.",
+    "rect": [
+     513,
+     330,
+     718,
+     389
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -91,13 +116,18 @@
   "img": "images/030-Deadly-Food-04-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     489,
-     364
-    ],
     "shape": "box",
     "en": "He feasted daily on the finest rice",
-    "ko": "무니까는 날마다 가장 좋은 쌀밥을 먹었습니다."
+    "ko": "무니까는 날마다 가장 좋은 쌀밥을 먹었습니다.",
+    "rect": [
+     476,
+     361,
+     721,
+     392
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -236,13 +266,18 @@
     "align": "center"
    },
    {
-    "seed": [
-     130,
-     136
-    ],
     "shape": "box",
     "en": "The time of feasting had aa come.",
-    "ko": "잔치 때가 되었습니다."
+    "ko": "잔치 때가 되었습니다.",
+    "rect": [
+     128,
+     135,
+     284,
+     183
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

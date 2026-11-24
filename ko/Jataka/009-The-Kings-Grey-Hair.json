@@ -17,23 +17,32 @@
     "align": "center"
    },
    {
-    "seed": [
-     351,
-     186
-    ],
     "shape": "box",
     "en": "The Story of Kins Makhadeva of Mithila",
-    "ko": "미틸라의\n마카데와 왕 이야기"
+    "ko": "미틸라의\n마카데와 왕 이야기",
+    "rect": [
+     307,
+     187,
+     493,
+     267
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     310,
-     320
-    ],
     "align": "center",
     "ko": "출가와 시간에 관한\n그림 이야기",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     69,
+     67,
+     731,
+     385
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },
@@ -112,13 +121,18 @@
   "img": "images/009-The-Kings-Grey-Hair-04-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     94,
-     39
-    ],
     "shape": "box",
     "en": "Ye and years afte",
-    "ko": "그리고 세월이 흐르고 흘러…"
+    "ko": "그리고 세월이 흐르고 흘러…",
+    "rect": [
+     36,
+     37,
+     255,
+     72
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -215,13 +229,18 @@
     "ko": "어리석은 마카데와여! 번뇌를 다 버리기도 전에 흰머리가 찾아왔구나."
    },
    {
-    "seed": [
-     59,
-     365
-    ],
     "shape": "box",
     "en": "He within, His raiment",
-    "ko": "몸속이 불타는 듯했고, 왕의 옷이 견딜 수 없이 무겁게 느껴졌습니다."
+    "ko": "몸속이 불타는 듯했고, 왕의 옷이 견딜 수 없이 무겁게 느껴졌습니다.",
+    "rect": [
+     61,
+     363,
+     485,
+     391
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

@@ -3,13 +3,18 @@
   "img": "images/039-Nanda-and-the-Hoard-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     78,
-     65
-    ],
     "shape": "box",
     "en": "Ses In ancient Benares, an aging householder feared his young wife would squander his wealth after his death, leaving his infant son with nothing.",
-    "ko": "옛 바라나시의 늙은 가장은 자기가 죽은 뒤 젊은 아내가 재산을 탕진해 어린 아들이 빈손이 될까 걱정했습니다."
+    "ko": "옛 바라나시의 늙은 가장은 자기가 죽은 뒤 젊은 아내가 재산을 탕진해 어린 아들이 빈손이 될까 걱정했습니다.",
+    "rect": [
+     63,
+     59,
+     325,
+     123
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -50,13 +55,18 @@
   "img": "images/039-Nanda-and-the-Hoard-03-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     67,
-     61
-    ],
     "shape": "box",
     "en": "The old man passed away. Years later, the son came of age, and his mother revealed the secret.",
-    "ko": "노인이 세상을 떠났습니다. 세월이 흘러 아들이 자라자 어머니가 비밀을 알려 주었습니다."
+    "ko": "노인이 세상을 떠났습니다. 세월이 흘러 아들이 자라자 어머니가 비밀을 알려 주었습니다.",
+    "rect": [
+     67,
+     61,
+     414,
+     99
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -234,13 +244,18 @@
   "img": "images/039-Nanda-and-the-Hoard-07-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     137,
-     73
-    ],
     "shape": "box",
     "en": "Seeking answers, the son visited his father’s wise friend—the Bodhisatta.",
-    "ko": "답을 찾으려고 아들은 아버지의 지혜로운 벗, 보살을 찾아갔습니다."
+    "ko": "답을 찾으려고 아들은 아버지의 지혜로운 벗, 보살을 찾아갔습니다.",
+    "rect": [
+     139,
+     72,
+     372,
+     110
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -319,13 +334,18 @@
   "img": "images/039-Nanda-and-the-Hoard-09-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     176,
-     315
-    ],
     "shape": "box",
     "en": "7 TI know that the valuable stack is where aie slave-born servant Nandaka stands and loudly curses!”",
-    "ko": "“종의 자식 난다까가 서서 큰 소리로 욕하는 곳, 그곳에 보물 더미가 있음을 나는 안다!”"
+    "ko": "“종의 자식 난다까가 서서 큰 소리로 욕하는 곳, 그곳에 보물 더미가 있음을 나는 안다!”",
+    "rect": [
+     158,
+     316,
+     642,
+     368
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "rect": [
@@ -372,13 +392,18 @@
   "img": "images/039-Nanda-and-the-Hoard-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     580,
-     142
-    ],
     "shape": "box",
     "en": "He pulled Nanda ae) from his literal high horse, took the spade, and dug exactly where the slave had been standing. The family ily treasure was unearthed.",
-    "ko": "아들은 높은 데서 큰소리치던 난다를 끌어내리고, 삽을 들어 종이 서 있던 바로 그 자리를 팠습니다. 집안의 보물이 나왔습니다."
+    "ko": "아들은 높은 데서 큰소리치던 난다를 끌어내리고, 삽을 들어 종이 서 있던 바로 그 자리를 팠습니다. 집안의 보물이 나왔습니다.",
+    "rect": [
+     572,
+     118,
+     704,
+     346
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

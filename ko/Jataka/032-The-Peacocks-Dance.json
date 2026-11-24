@@ -3,13 +3,18 @@
   "img": "images/032-The-Peacocks-Dance-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     134,
-     307
-    ],
     "shape": "box",
     "en": "The Golden Mallard. Mallard. tale of modesty, pride, and the first cycle of the world’s history.",
-    "ko": "황금 물오리\n겸손과 교만, 그리고 세상의 첫 시대 이야기"
+    "ko": "황금 물오리\n겸손과 교만, 그리고 세상의 첫 시대 이야기",
+    "rect": [
+     81,
+     298,
+     269,
+     373
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -82,13 +87,18 @@
   "img": "images/032-The-Peacocks-Dance-03-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     152,
-     84
-    ],
     "shape": "box",
     "en": "King Mallard granted his beloved daughter any boon she desired. ed.",
-    "ko": "물오리 왕은 사랑하는 딸에게 무엇이든 소원 하나를 들어주겠다고 했습니다."
+    "ko": "물오리 왕은 사랑하는 딸에게 무엇이든 소원 하나를 들어주겠다고 했습니다.",
+    "rect": [
+     113,
+     72,
+     184,
+     103
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -145,13 +155,18 @@
   "img": "images/032-The-Peacocks-Dance-05-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     288,
-     210
-    ],
     "shape": "box",
     "en": "“Go, ‘0, choose husband after your own heart,” he bade de her. She reviewed the great assembly, searching the endless crowd for the right companion",
-    "ko": "“가서 네 마음에 드는 남편을 고르거라.” 왕이 말했습니다. 공주는 끝없이 모인 새들을 둘러보며 알맞은 짝을 찾았습니다."
+    "ko": "“가서 네 마음에 드는 남편을 고르거라.” 왕이 말했습니다. 공주는 끝없이 모인 새들을 둘러보며 알맞은 짝을 찾았습니다.",
+    "rect": [
+     243,
+     202,
+     558,
+     277
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -159,13 +174,18 @@
   "img": "images/032-The-Peacocks-Dance-06-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     96,
-     70
-    ],
     "shape": "box",
     "en": "Her eye lighted upon the peacock, with his neck of jewelled sheen and tail of varied hue.",
-    "ko": "공주의 눈길이 공작에게 머물렀습니다. 보석처럼 빛나는 목과 여러 빛깔 꼬리를 지닌 새였습니다."
+    "ko": "공주의 눈길이 공작에게 머물렀습니다. 보석처럼 빛나는 목과 여러 빛깔 꼬리를 지닌 새였습니다.",
+    "rect": [
+     64,
+     62,
+     287,
+     124
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -248,13 +268,18 @@
   "img": "images/032-The-Peacocks-Dance-09-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     574,
-     316
-    ],
     "shape": "box",
     "en": "In defiance of all decency, he sprea his is wings and an began egan to dance wildly. In his frenzied display, he exposed himself before the entire assembly.",
-    "ko": "예의도 잊은 채 공작은 날개를 펴고 미친 듯이 춤추기 시작했습니다. 정신없이 춤추다가 모두가 보는 앞에서 부끄러운 곳까지 드러냈습니다."
+    "ko": "예의도 잊은 채 공작은 날개를 펴고 미친 듯이 춤추기 시작했습니다. 정신없이 춤추다가 모두가 보는 앞에서 부끄러운 곳까지 드러냈습니다.",
+    "rect": [
+     558,
+     310,
+     734,
+     408
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -307,13 +332,18 @@
   "img": "images/032-The-Peacocks-Dance-12-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     466,
-     101
-    ],
     "shape": "box",
     "en": "Right in the face of the gathering, the King gave his daughter to modest young mallard, nephew of his. Covered in shame, the peacock fled into the sky.",
-    "ko": "모두가 보는 앞에서 왕은 딸을 자기 조카인 겸손한 젊은 물오리에게 주었습니다. 부끄러움을 뒤집어쓴 공작은 하늘로 달아났습니다."
+    "ko": "모두가 보는 앞에서 왕은 딸을 자기 조카인 겸손한 젊은 물오리에게 주었습니다. 부끄러움을 뒤집어쓴 공작은 하늘로 달아났습니다.",
+    "rect": [
+     417,
+     81,
+     727,
+     161
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  }

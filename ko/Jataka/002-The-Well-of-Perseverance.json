@@ -103,13 +103,18 @@
   "img": "images/002-The-Well-of-Perseverance-06-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     79,
-     98
-    ],
     "shape": "box",
     "en": "At dawn, the pilot woke. It was too late. The day broke on yesterday’s cual",
-    "ko": "새벽에 길잡이가 깨어났지만 이미 늦었습니다. 날이 밝고 보니 어제 머문 야영지였습니다."
+    "ko": "새벽에 길잡이가 깨어났지만 이미 늦었습니다. 날이 밝고 보니 어제 머문 야영지였습니다.",
+    "rect": [
+     77,
+     78,
+     302,
+     140
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -164,13 +169,18 @@
   "img": "images/002-The-Well-of-Perseverance-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     100,
-     76
-    ],
     "shape": "box",
     "en": "Pacing the cool morning sand, he spotted solitary clump of kusa grass",
-    "ko": "보살은 서늘한 아침 모래 위를 걷다가 꾸사 풀 한 포기를 발견했습니다."
+    "ko": "보살은 서늘한 아침 모래 위를 걷다가 꾸사 풀 한 포기를 발견했습니다.",
+    "rect": [
+     77,
+     78,
+     360,
+     120
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -187,13 +197,18 @@
   "img": "images/002-The-Well-of-Perseverance-09-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     42,
-     36
-    ],
     "shape": "box",
     "en": "Grass meant water below. They dug shaft sixty cubits deep, only to strike an impenetrable layer of solid rock. The caravan lost heart.",
-    "ko": "풀이 있다는 것은 땅 밑에 물이 있다는 뜻입니다. 일행은 60완척 깊이로 땅을 팠지만 단단한 바위층에 막혔습니다. 대상은 용기를 잃었습니다."
+    "ko": "풀이 있다는 것은 땅 밑에 물이 있다는 뜻입니다. 일행은 60완척 깊이로 땅을 팠지만 단단한 바위층에 막혔습니다. 대상은 용기를 잃었습니다.",
+    "rect": [
+     40,
+     39,
+     310,
+     114
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -201,13 +216,18 @@
   "img": "images/002-The-Well-of-Perseverance-10-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     461,
-     71
-    ],
     "shape": "box",
     "en": "Certain that water flowed beneath, the Bodhisatta descended. He pressed his ear to the cold stone—and heard the rush of hidden stream.",
-    "ko": "보살은 아래에 물이 흐른다고 확신하고 구덩이로 내려갔습니다. 차가운 바위에 귀를 대자 숨은 물줄기 소리가 들렸습니다."
+    "ko": "보살은 아래에 물이 흐른다고 확신하고 구덩이로 내려갔습니다. 차가운 바위에 귀를 대자 숨은 물줄기 소리가 들렸습니다.",
+    "rect": [
+     448,
+     66,
+     736,
+     160
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

@@ -22,13 +22,18 @@
   "img": "images/005-The-Measure-of-Rice-02-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     60,
-     58
-    ],
     "shape": "box",
     "en": "King Brahmadatta reigned in Kasi. The Bodhisatta served as his royal valuer.",
-    "ko": "브라흐마닷따 왕이 까시국을 다스렸습니다. 보살은 왕의 값매김 관리였습니다."
+    "ko": "브라흐마닷따 왕이 까시국을 다스렸습니다. 보살은 왕의 값매김 관리였습니다.",
+    "rect": [
+     61,
+     59,
+     320,
+     99
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -45,13 +50,18 @@
   "img": "images/005-The-Measure-of-Rice-03-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     536,
-     57
-    ],
     "shape": "box",
     "en": "The King was consumed by greed.",
-    "ko": "그런데 왕은 탐욕에 사로잡혔습니다."
+    "ko": "그런데 왕은 탐욕에 사로잡혔습니다.",
+    "rect": [
+     529,
+     56,
+     743,
+     84
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -84,13 +94,18 @@
   "img": "images/005-The-Measure-of-Rice-04-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     48,
-     44
-    ],
     "shape": "box",
     "en": "Looking into the courtyard, he espied stupid, greedy candidate",
-    "ko": "뜰을 내려다보던 왕은 어리석고 욕심 많은 사람을 하나 눈여겨보았습니다."
+    "ko": "뜰을 내려다보던 왕은 어리석고 욕심 많은 사람을 하나 눈여겨보았습니다.",
+    "rect": [
+     50,
+     45,
+     306,
+     94
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -160,13 +175,18 @@
     "align": "center"
    },
    {
-    "seed": [
-     550,
-     318
-    ],
     "shape": "box",
     "en": "The Fool Method: Arbitrary fancy Motive: Pleasing the King Result: Economic chaos",
-    "ko": "어리석은 자의 방식\n바탕: 제멋대로인 생각\n동기: 왕의 비위 맞추기\n결과: 경제 혼란"
+    "ko": "어리석은 자의 방식\n바탕: 제멋대로인 생각\n동기: 왕의 비위 맞추기\n결과: 경제 혼란",
+    "rect": [
+     473,
+     320,
+     713,
+     407
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -174,13 +194,18 @@
   "img": "images/005-The-Measure-of-Rice-06-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     171,
-     364
-    ],
     "shape": "box",
     "en": "horse-dealer arrived from the north country with 500 magnificent horses. The King summoned oned his new valuer to set the price.",
-    "ko": "북쪽 지방에서 말 장수가 훌륭한 말 500마리를 끌고 왔습니다. 왕은 새 관리를 불러 값을 정하게 했습니다."
+    "ko": "북쪽 지방에서 말 장수가 훌륭한 말 500마리를 끌고 왔습니다. 왕은 새 관리를 불러 값을 정하게 했습니다.",
+    "rect": [
+     132,
+     363,
+     668,
+     414
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -335,13 +360,18 @@
     "ko": "쌀 한 되는 바라나시 성 안팎을 다 합친 값어치입니다!"
    },
    {
-    "seed": [
-     261,
-     380
-    ],
     "shape": "box",
     "en": "Acity city three hundred leagues round, priced datas at single measure of rice. ice",
-    "ko": "둘레가 300요자나인 도시가 쌀 한 되 값으로 매겨졌습니다."
+    "ko": "둘레가 300요자나인 도시가 쌀 한 되 값으로 매겨졌습니다.",
+    "rect": [
+     248,
+     377,
+     553,
+     435
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -377,13 +407,18 @@
     "align": "center"
    },
    {
-    "seed": [
-     269,
-     359
-    ],
     "shape": "box",
     "en": "Do 10 you speak of the price of horses, king? Benares, he values at measure of rice!",
-    "ko": "왕이시여, 말 값을 물으셨습니까? 이 사람은 바라나시 성 안팎을 통틀어 쌀 한 되로 값을 매겼습니다!"
+    "ko": "왕이시여, 말 값을 물으셨습니까? 이 사람은 바라나시 성 안팎을 통틀어 쌀 한 되로 값을 매겼습니다!",
+    "rect": [
+     186,
+     358,
+     618,
+     403
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  }

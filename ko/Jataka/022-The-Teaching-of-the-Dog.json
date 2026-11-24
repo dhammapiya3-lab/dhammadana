@@ -3,15 +3,19 @@
   "img": "images/022-The-Teaching-of-the-Dog-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     176,
-     326
-    ],
     "ko": "개의 가르침\n자따까에 나오는 정의 이야기",
     "align": "center",
     "shape": "box",
     "dark": true,
-    "manual": true
+    "manual": true,
+    "rect": [
+     74,
+     326,
+     306,
+     383
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },
@@ -346,13 +350,18 @@
   "img": "images/022-The-Teaching-of-the-Dog-10-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     174,
-     361
-    ],
     "shape": "box",
     "en": "The Bodhisatta ordered the kusa grass mashed into buttermilk. buttermilk. The royal dogs drank greedily, then vomited the intact bits of leather. af",
-    "ko": "보살은 꾸사 풀을 버터밀크에 으깨어 넣게 했습니다. 왕궁의 개들이 그것을 허겁지겁 마시고는 삼킨 가죽 조각을 그대로 토해 냈습니다."
+    "ko": "보살은 꾸사 풀을 버터밀크에 으깨어 넣게 했습니다. 왕궁의 개들이 그것을 허겁지겁 마시고는 삼킨 가죽 조각을 그대로 토해 냈습니다.",
+    "rect": [
+     75,
+     364,
+     725,
+     405
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -424,13 +433,18 @@
   "img": "images/022-The-Teaching-of-the-Dog-13-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     493,
-     51
-    ],
     "shape": "box",
     "en": "Having established the king in the Five Precepts, the Bodhisatta handed back the white te umbrella of kingship gsh ip.",
-    "ko": "보살은 왕을 오계에 굳게 세운 뒤 왕권의 상징인 흰 일산을 돌려주었습니다."
+    "ko": "보살은 왕을 오계에 굳게 세운 뒤 왕권의 상징인 흰 일산을 돌려주었습니다.",
+    "rect": [
+     451,
+     52,
+     718,
+     107
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -438,13 +452,18 @@
   "img": "images/022-The-Teaching-of-the-Dog-14-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     102,
-     51
-    ],
     "shape": "box",
     "en": "The king commanded all creatures be safe from harm pan The street dogs received constant supply of royal food",
-    "ko": "왕은 모든 생명이 해를 입지 않게 하라고 명했습니다. 떠돌이 개들은 늘 왕실 음식을 받게 되었습니다."
+    "ko": "왕은 모든 생명이 해를 입지 않게 하라고 명했습니다. 떠돌이 개들은 늘 왕실 음식을 받게 되었습니다.",
+    "rect": [
+     83,
+     52,
+     473,
+     93
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  }

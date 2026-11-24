@@ -273,13 +273,18 @@
   "img": "images/040-The-Fiery-Pit-07-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     49,
-     48
-    ],
     "shape": "box",
     "en": "The attendants approached the abyss and recoiled. Panic-stricken by the blazing heat of the red-hot embers, they abandoned the alms and ran away as fast as their legs would carry them.",
-    "ko": "하인들이 구덩이로 다가갔다가 놀라 물러섰습니다. 시뻘건 숯불의 열기에 질린 그들은 음식을 내던지고 걸음아 날 살려라 달아났습니다."
+    "ko": "하인들이 구덩이로 다가갔다가 놀라 물러섰습니다. 시뻘건 숯불의 열기에 질린 그들은 음식을 내던지고 걸음아 날 살려라 달아났습니다.",
+    "rect": [
+     54,
+     50,
+     458,
+     96
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -344,13 +349,18 @@
   "img": "images/040-The-Fiery-Pit-09-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     113,
-     362
-    ],
     "shape": "box",
     "en": "will not permit you to do either. have yet to learn that can be shaken by hundred, or thousand Maras. Today we will see whose might is greater.”",
-    "ko": "“나는 그 어느 것도 허락하지 않으리라. 백 명, 천 명의 마라라 해도 나를 흔들 수는 없다. 오늘 누구의 힘이 더 큰지 보자.”"
+    "ko": "“나는 그 어느 것도 허락하지 않으리라. 백 명, 천 명의 마라라 해도 나를 흔들 수는 없다. 오늘 누구의 힘이 더 큰지 보자.”",
+    "rect": [
+     89,
+     353,
+     711,
+     423
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -402,13 +412,18 @@
   "img": "images/040-The-Fiery-Pit-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     193,
-     353
-    ],
     "shape": "box",
     "en": "Grasping Qy the bowl 3 of dainty food, lo} the Bodhisatta strode with undaunted resolution right onto the surface of the terrifying pit of fire",
-    "ko": "보살은 맛있는 음식을 담은 발우를 들고 흔들림 없는 결심으로 무시무시한 불구덩이 위로 걸어 들어갔습니다."
+    "ko": "보살은 맛있는 음식을 담은 발우를 들고 흔들림 없는 결심으로 무시무시한 불구덩이 위로 걸어 들어갔습니다.",
+    "rect": [
+     89,
+     353,
+     711,
+     423
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -416,13 +431,18 @@
   "img": "images/040-The-Fiery-Pit-12-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     584,
-     54
-    ],
     "shape": "box",
     "en": "Instantly, peerless lotus erupted through all eighty cubits of the abyss, receiving the feet of the Great Being. shower of pollen dusted his whole body with gold.",
-    "ko": "그 순간, 더없이 아름다운 연꽃 한 송이가 80완척 깊이의 구덩이를 뚫고 솟아올라 위대한 존재의 발을 받쳤습니다. 꽃가루가 쏟아져 온몸을 금빛으로 물들였습니다."
+    "ko": "그 순간, 더없이 아름다운 연꽃 한 송이가 80완척 깊이의 구덩이를 뚫고 솟아올라 위대한 존재의 발을 받쳤습니다. 꽃가루가 쏟아져 온몸을 금빛으로 물들였습니다.",
+    "rect": [
+     474,
+     55,
+     744,
+     176
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  }

@@ -21,13 +21,18 @@
   "img": "images/033-The-Quails-and-the-Net-02-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     218,
-     57
-    ],
     "shape": "box",
     "en": "imitate if the past, note when of Brahmadatta quail. Luring thousands was king of Benares, birds Benares, together, fowler he learned would fling to his net over them, huddle them in heap, and cram them into his basket to sell 4",
-    "ko": "옛날 브라흐마닷따 왕이 바라나시를 다스리던 때, 한 새잡이가 메추라기 울음소리를 흉내 내는 법을 익혔습니다. 수천 마리 새를 꾀어 모아 그물을 던지고, 한데 몰아 바구니에 밀어 넣어 팔았습니다."
+    "ko": "옛날 브라흐마닷따 왕이 바라나시를 다스리던 때, 한 새잡이가 메추라기 울음소리를 흉내 내는 법을 익혔습니다. 수천 마리 새를 꾀어 모아 그물을 던지고, 한데 몰아 바구니에 밀어 넣어 팔았습니다.",
+    "rect": [
+     177,
+     33,
+     624,
+     117
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -107,14 +112,18 @@
     "em": 14
    },
    {
-    "seed": [
-     132,
-     385
-    ],
     "ko": "이튿날 메추라기들은 보살이 이른 대로 했습니다.",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     121,
+     384,
+     680,
+     414
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },
@@ -122,13 +131,18 @@
   "img": "images/033-The-Quails-and-the-Net-05-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     123,
-     64
-    ],
     "shape": "box",
     "en": "Fvening Evening came on while the fowler was still disentangling his net, and he went away empty-handed. On following days, the quails played the same trick. It became the regular thing for him to be engaged till sunset, returning home with nothing",
-    "ko": "새잡이가 그물을 푸는 사이 날이 저물었고, 그는 빈손으로 돌아갔습니다. 다음 날도, 그다음 날도 메추라기들은 같은 꾀를 썼습니다. 새잡이는 날마다 해 질 녘까지 그물만 풀다가 빈손으로 돌아오곤 했습니다."
+    "ko": "새잡이가 그물을 푸는 사이 날이 저물었고, 그는 빈손으로 돌아갔습니다. 다음 날도, 그다음 날도 메추라기들은 같은 꾀를 썼습니다. 새잡이는 날마다 해 질 녘까지 그물만 풀다가 빈손으로 돌아오곤 했습니다.",
+    "rect": [
+     72,
+     54,
+     332,
+     163
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -186,13 +200,18 @@
   "img": "images/033-The-Quails-and-the-Net-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     264,
-     66
-    ],
     "shape": "box",
     "en": "Not long after, one atl alighting on their feedi ng ground, trod by accident on another’s head.",
-    "ko": "얼마 뒤 메추라기 한 마리가 먹이터에 내려앉다가 그만 다른 메추라기의 머리를 밟았습니다."
+    "ko": "얼마 뒤 메추라기 한 마리가 먹이터에 내려앉다가 그만 다른 메추라기의 머리를 밟았습니다.",
+    "rect": [
+     220,
+     66,
+     580,
+     114
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -218,13 +237,18 @@
   "img": "images/033-The-Quails-and-the-Net-09-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     208,
-     53
-    ],
     "shape": "box",
     "en": "Notwithstanding the apology, the other remained angry. Continuing to answer one another, they began to swap taunts.",
-    "ko": "사과를 했는데도 상대는 화를 풀지 않았습니다. 말이 오가며 둘은 서로 비꼬기 시작했습니다."
+    "ko": "사과를 했는데도 상대는 화를 풀지 않았습니다. 말이 오가며 둘은 서로 비꼬기 시작했습니다.",
+    "rect": [
+     178,
+     56,
+     622,
+     99
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -274,13 +298,18 @@
   "img": "images/033-The-Quails-and-the-Net-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     54,
-     48
-    ],
     "shape": "box",
     "en": "Sure enough, the fowler came back few days later. Collecting them together by imitating the note of quail, he flung his net over the squabbling flock",
-    "ko": "아니나 다를까, 며칠 뒤 새잡이가 다시 왔습니다. 메추라기 울음소리를 흉내 내어 새들을 모은 그는 다투고 있는 무리 위로 그물을 던졌습니다."
+    "ko": "아니나 다를까, 며칠 뒤 새잡이가 다시 왔습니다. 메추라기 울음소리를 흉내 내어 새들을 모은 그는 다투고 있는 무리 위로 그물을 던졌습니다.",
+    "rect": [
+     53,
+     50,
+     282,
+     145
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -320,13 +349,18 @@
   "img": "images/033-The-Quails-and-the-Net-13-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     113,
-     69
-    ],
     "shape": "box",
     "en": "While they were each inviting the other to lift the net, the fowler himself lifted it for them. He crammed them in heap into his basket and bore them off home",
-    "ko": "서로 그물을 들라고 미루는 사이, 새잡이가 직접 그물을 들어 올렸습니다. 그는 새들을 바구니에 몰아넣고 집으로 가져갔습니다."
+    "ko": "서로 그물을 들라고 미루는 사이, 새잡이가 직접 그물을 들어 올렸습니다. 그는 새들을 바구니에 몰아넣고 집으로 가져갔습니다.",
+    "rect": [
+     73,
+     66,
+     316,
+     140
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

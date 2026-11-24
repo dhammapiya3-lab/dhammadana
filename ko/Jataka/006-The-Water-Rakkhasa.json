@@ -38,13 +38,18 @@
   "img": "images/006-The-Water-Rakkhasa-03-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     118,
-     93
-    ],
     "shape": "box",
     "en": "Years later, the Queen demanded her boon the throne for Striyakumara. The King refused. Fearing the Queen’s wicked plots, he ordered his elder sons into exile. fis",
-    "ko": "세월이 흘러 왕비는 그 약속을 내세워 수리야 왕자에게 왕위를 달라고 했습니다. 왕은 거절했지만, 왕비가 음모를 꾸밀까 두려워 큰아들들을 멀리 떠나보냈습니다."
+    "ko": "세월이 흘러 왕비는 그 약속을 내세워 수리야 왕자에게 왕위를 달라고 했습니다. 왕은 거절했지만, 왕비가 음모를 꾸밀까 두려워 큰아들들을 멀리 떠나보냈습니다.",
+    "rect": [
+     86,
+     78,
+     331,
+     159
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -108,14 +113,18 @@
   "img": "images/006-The-Water-Rakkhasa-06-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     313,
-     81
-    ],
     "shape": "box",
     "en": "The Rakkhasa’s Rule:",
     "ko": "락카사가 지킬 규칙:",
-    "align": "center"
+    "align": "center",
+    "rect": [
+     245,
+     58,
+     555,
+     98
+    ],
+    "whole": true,
+    "cover": true
    },
    {
     "shape": "box",
@@ -184,13 +193,18 @@
   "img": "images/006-The-Water-Rakkhasa-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     132,
-     82
-    ],
     "shape": "box",
     "en": "When Siriya didn’t return, Mahimsasa sent ent Canda. He too was seized",
-    "ko": "수리야가 돌아오지 않자 마힘사사는 짠다를 보냈습니다. 짠다도 붙잡혔습니다."
+    "ko": "수리야가 돌아오지 않자 마힘사사는 짠다를 보냈습니다. 짠다도 붙잡혔습니다.",
+    "rect": [
+     84,
+     77,
+     360,
+     121
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -388,13 +402,18 @@
   "img": "images/006-The-Water-Rakkhasa-13-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     172,
-     385
-    ],
     "shape": "box",
     "en": "Endowed with conscience and concern, possessing an unsullied nature—these jature—these virtuous people in the world are said to have Deva-nature. wena",
-    "ko": "양심과 수치심을 갖추고 깨끗한 법을 지닌 세상의 고요한 참사람들, 그들을 ‘천신의 성품을 지닌 이’라 부른다."
+    "ko": "양심과 수치심을 갖추고 깨끗한 법을 지닌 세상의 고요한 참사람들, 그들을 ‘천신의 성품을 지닌 이’라 부른다.",
+    "rect": [
+     122,
+     364,
+     677,
+     408
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "rect": [
@@ -415,13 +434,18 @@
   "img": "images/006-The-Water-Rakkhasa-14-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     350,
-     47
-    ],
     "shape": "box",
     "en": "Test Analyzed; ize:",
-    "ko": "시험 풀이"
+    "ko": "시험 풀이",
+    "rect": [
+     305,
+     23,
+     496,
+     61
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "shape": "box",
@@ -479,13 +503,18 @@
   "img": "images/006-The-Water-Rakkhasa-15-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     634,
-     368
-    ],
     "shape": "box",
     "en": "Through wisdom and caution, the Bodhisatta conquered the demon without striking blow. TED By understanding the inner truth of conscience eas (hiri) and moral concern (ottappa), he saved everyone.",
-    "ko": "보살은 지혜와 신중함으로 칼 한 번 휘두르지 않고 악귀를 이겼습니다. 양심(히리)과 수치심(옷땁빠)이라는 내면의 진리를 이해했기에 모두를 구할 수 있었습니다."
+    "ko": "보살은 지혜와 신중함으로 칼 한 번 휘두르지 않고 악귀를 이겼습니다. 양심(히리)과 수치심(옷땁빠)이라는 내면의 진리를 이해했기에 모두를 구할 수 있었습니다.",
+    "rect": [
+     123,
+     364,
+     676,
+     411
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  }

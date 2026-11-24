@@ -3,22 +3,32 @@
   "img": "images/046-The-Folly-of-the-Monkeys-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     114,
-     82
-    ],
     "shape": "box",
     "en": "Long ago in Varanasi, King Brahmadatta proclaimed grand festival.",
-    "ko": "옛날 바라나시의 브라흐마닷따 왕이 큰 축제를 열었습니다."
+    "ko": "옛날 바라나시의 브라흐마닷따 왕이 큰 축제를 열었습니다.",
+    "rect": [
+     78,
+     75,
+     245,
+     131
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     579,
-     326
-    ],
     "shape": "box",
     "en": "The joyous summoning notes of the festal drum echoed down bic the royal pleasure gardens. afi",
-    "ko": "축제를 알리는 흥겨운 북소리가 왕의 정원까지 울려 퍼졌습니다."
+    "ko": "축제를 알리는 흥겨운 북소리가 왕의 정원까지 울려 퍼졌습니다.",
+    "rect": [
+     539,
+     315,
+     726,
+     379
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -26,13 +36,18 @@
   "img": "images/046-The-Folly-of-the-Monkeys-02-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     102,
-     65
-    ],
     "shape": "box",
     "en": "The king’s gardener longed to join the he holiday-making townsfolk.",
-    "ko": "왕의 정원지기는 축제를 즐기는 성 안 사람들과 어울리고 싶었습니다."
+    "ko": "왕의 정원지기는 축제를 즐기는 성 안 사람들과 어울리고 싶었습니다.",
+    "rect": [
+     56,
+     56,
+     269,
+     104
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -76,13 +91,18 @@
   "img": "images/046-The-Folly-of-the-Monkeys-04-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     292,
-     60
-    ],
     "shape": "box",
     "en": "The gardener 7s 5 handed over 2 5 the water-skins 3 5 and watering-pots, pots, entirely abdicating his responsibility.",
-    "ko": "정원지기는 물주머니와 물동이를 넘겨주고, 맡은 일을 통째로 떠넘겼습니다."
+    "ko": "정원지기는 물주머니와 물동이를 넘겨주고, 맡은 일을 통째로 떠넘겼습니다.",
+    "rect": [
+     245,
+     56,
+     551,
+     104
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -247,13 +267,18 @@
   "img": "images/046-The-Folly-of-the-Monkeys-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     232,
-     363
-    ],
     "shape": "box",
     "en": "At this juncture, wise man entered the pleasure gardens, He witnessed the devastating execution of the gardener’s delegation.",
-    "ko": "그때 한 지혜로운 사람이 정원에 들어왔습니다. 그는 정원지기의 부탁이 낳은 끔찍한 결과를 보았습니다."
+    "ko": "그때 한 지혜로운 사람이 정원에 들어왔습니다. 그는 정원지기의 부탁이 낳은 끔찍한 결과를 보았습니다.",
+    "rect": [
+     209,
+     342,
+     740,
+     391
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -288,13 +313,18 @@
     "ko": "우리 왕께서 그렇게 명하셨기 때문이오."
    },
    {
-    "seed": [
-     247,
-     348
-    ],
     "shape": "box",
     "en": "flawless execution of fundamentally (wen strategy.",
-    "ko": "근본부터 잘못된 계획을 빈틈없이 실행했습니다."
+    "ko": "근본부터 잘못된 계획을 빈틈없이 실행했습니다.",
+    "rect": [
+     209,
+     342,
+     743,
+     394
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

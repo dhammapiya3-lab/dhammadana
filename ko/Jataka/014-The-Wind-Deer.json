@@ -3,13 +3,18 @@
   "img": "images/014-The-Wind-Deer-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     280,
-     15
-    ],
     "shape": "box",
     "en": "The Wind Deer",
-    "ko": "바람 사슴"
+    "ko": "바람 사슴",
+    "rect": [
+     69,
+     18,
+     731,
+     64
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -26,13 +31,18 @@
   "img": "images/014-The-Wind-Deer-02-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     281,
-     31
-    ],
     "shape": "box",
     "en": "Safijaya reports the elusive visitor.",
-    "ko": "산자야가 이 날쌘 손님을 아뢰었습니다."
+    "ko": "산자야가 이 날쌘 손님을 아뢰었습니다.",
+    "rect": [
+     238,
+     16,
+     562,
+     44
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "shape": "bubble",
@@ -62,13 +72,18 @@
   "img": "images/014-The-Wind-Deer-03-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     459,
-     77
-    ],
     "shape": "box",
     "en": "Armed with the king’s honey, Sanjaya sets to work. He anoints the grass at the deer’s favorite spots, then hides in the brush. The snare is not made of rope or wood, but of pure sweetness.",
-    "ko": "왕의 꿀을 받은 산자야는 일을 시작했습니다. 사슴이 즐겨 찾는 곳의 풀에 꿀을 바르고 덤불에 숨었습니다. 덫은 밧줄도 나무도 아닌, 오직 달콤함이었습니다."
+    "ko": "왕의 꿀을 받은 산자야는 일을 시작했습니다. 사슴이 즐겨 찾는 곳의 풀에 꿀을 바르고 덤불에 숨었습니다. 덫은 밧줄도 나무도 아닌, 오직 달콤함이었습니다.",
+    "rect": [
+     452,
+     77,
+     721,
+     149
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -104,13 +119,18 @@
     "align": "center"
    },
    {
-    "seed": [
-     614,
-     78
-    ],
     "shape": "box",
     "en": "Gradually, the gardener reveals himself. As craving for honey increases, the deer’s natural survival instincts dissolve. Familiarity breeds false trust. Soon, the wild creature eats directly from the man’s hand.",
-    "ko": "정원지기는 조금씩 모습을 드러냈습니다. 꿀에 대한 갈망이 커질수록 사슴이 타고난 생존 본능은 녹아 없어졌습니다.\n\n익숙해지자 그릇된 믿음이 생겼습니다.\n\n곧 야생 사슴은 사람 손에 든 먹이를 받아먹게 되었습니다."
+    "ko": "정원지기는 조금씩 모습을 드러냈습니다. 꿀에 대한 갈망이 커질수록 사슴이 타고난 생존 본능은 녹아 없어졌습니다.\n\n익숙해지자 그릇된 믿음이 생겼습니다.\n\n곧 야생 사슴은 사람 손에 든 먹이를 받아먹게 되었습니다.",
+    "rect": [
+     581,
+     78,
+     722,
+     373
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "shape": "box",
@@ -198,14 +218,18 @@
     "whole": true
    },
    {
-    "seed": [
-     128,
-     73
-    ],
     "ko": "왕이 내려왔습니다.",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     78,
+     72,
+     200,
+     99
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },

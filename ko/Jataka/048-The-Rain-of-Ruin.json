@@ -142,13 +142,18 @@
     "em": 14
    },
    {
-    "seed": [
-     130,
-     327
-    ],
     "shape": "box",
     "en": "The robbers ira) 2 scrambled, 3 wrapping 5 on the unimaginable on ra) 2 ann wealth into their cloaks. 4 Marching away with their heavy booty, the brahmin followed safely behind. Or so he thought.",
-    "ko": "도적들은 앞다투어 엄청난 재물을 옷에 싸 담았습니다. 무거운 보물을 지고 떠나는 도적들 뒤를 바라문은 무사히 따라갔습니다. 그렇게 생각했지요."
+    "ko": "도적들은 앞다투어 엄청난 재물을 옷에 싸 담았습니다. 무거운 보물을 지고 떠나는 도적들 뒤를 바라문은 무사히 따라갔습니다. 그렇게 생각했지요.",
+    "rect": [
+     114,
+     59,
+     687,
+     392
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -265,13 +270,18 @@
   "img": "images/048-The-Rain-of-Ruin-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     165,
-     98
-    ],
     "shape": "box",
     "en": "The massacre began. The second band slaughtered the first. Then, fighting over the booty, they divided and slaughtered each other. 1,000 robbers fought. Then 500. Then 250. Down and down they fought, until only two men remained alive.",
-    "ko": "살육이 시작되었습니다. 둘째 무리가 첫째 무리를 죽였습니다.\n\n그다음엔 보물을 두고 다투다 패가 갈려 서로 죽였습니다.\n\n천 명이 싸웠습니다.\n\n그다음엔 오백 명.\n\n그다음엔 이백오십 명.\n\n싸우고 또 싸워, 마침내 두 사람만 살아남았습니다."
+    "ko": "살육이 시작되었습니다. 둘째 무리가 첫째 무리를 죽였습니다.\n\n그다음엔 보물을 두고 다투다 패가 갈려 서로 죽였습니다.\n\n천 명이 싸웠습니다.\n\n그다음엔 오백 명.\n\n그다음엔 이백오십 명.\n\n싸우고 또 싸워, 마침내 두 사람만 살아남았습니다.",
+    "rect": [
+     136,
+     88,
+     289,
+     363
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -316,13 +326,18 @@
   "img": "images/048-The-Rain-of-Ruin-10-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     165,
-     96
-    ],
     "shape": "box",
     "en": "The moment the forager returned, the guard cut him down. Alone with the vast treasure, the murderer sat down to eat his poisoned prize. He died then and there.",
-    "ko": "먹을 것을 구하러 간 자가 돌아오자마자 지키던 자가 그를 베었습니다.\n\n엄청난 보물을 홀로 차지한 살인자는 앉아서 독이 든 밥을 먹었습니다.\n\n그는 그 자리에서 죽었습니다."
+    "ko": "먹을 것을 구하러 간 자가 돌아오자마자 지키던 자가 그를 베었습니다.\n\n엄청난 보물을 홀로 차지한 살인자는 앉아서 독이 든 밥을 먹었습니다.\n\n그는 그 자리에서 죽었습니다.",
+    "rect": [
+     136,
+     88,
+     289,
+     239
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -339,13 +354,18 @@
   "img": "images/048-The-Rain-of-Ruin-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     171,
-     109
-    ],
     "shape": "box",
     "en": "Days later, the Bodhisatta returned with the ransom Finding treasure strewn about and his master’s cloven body, his heart sank His warning had been unheeded With gathered sticks and wild flowers, he built pyre and burnt his master.",
-    "ko": "며칠 뒤 보살이 몸값을 가지고 돌아왔습니다.\n\n보물이 흩어져 있고 스승의 몸이 두 동강 나 있는 것을 보자 마음이 무너졌습니다. 경고를 듣지 않으셨구나.\n\n보살은 나뭇가지와 들꽃을 모아 장작더미를 쌓고 스승을 화장했습니다."
+    "ko": "며칠 뒤 보살이 몸값을 가지고 돌아왔습니다.\n\n보물이 흩어져 있고 스승의 몸이 두 동강 나 있는 것을 보자 마음이 무너졌습니다. 경고를 듣지 않으셨구나.\n\n보살은 나뭇가지와 들꽃을 모아 장작더미를 쌓고 스승을 화장했습니다.",
+    "rect": [
+     136,
+     88,
+     289,
+     269
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -353,13 +373,18 @@
   "img": "images/048-The-Rain-of-Ruin-12-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     201,
-     98
-    ],
     "shape": "box",
     "en": "Following the bloody road, he found the bodies of the five hundred “Dispatchers.” Then two hundred and fifty. Marking how the thousand had perished, he knew two must have survived. He pressed into the jungle to find them.",
-    "ko": "피로 물든 길을 따라가다 ‘보내는 자들’ 오백 명의 시신을 보았습니다. 그다음엔 이백오십 명. 천 명이 어떻게 죽어 갔는지 헤아려 보고, 두 사람이 살아남았음을 알았습니다. 보살은 그들을 찾아 밀림 속으로 들어갔습니다."
+    "ko": "피로 물든 길을 따라가다 ‘보내는 자들’ 오백 명의 시신을 보았습니다. 그다음엔 이백오십 명. 천 명이 어떻게 죽어 갔는지 헤아려 보고, 두 사람이 살아남았음을 알았습니다. 보살은 그들을 찾아 밀림 속으로 들어갔습니다.",
+    "rect": [
+     136,
+     88,
+     289,
+     269
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -367,22 +392,32 @@
   "img": "images/048-The-Rain-of-Ruin-13-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     546,
-     56
-    ],
     "shape": "box",
     "en": "At the secret spot, he found ne treasure, the slain forager, and the poisoned guard",
-    "ko": "숨겨 둔 곳에서 보살은 보물과 베인 자와 독을 먹은 자를 보았습니다."
+    "ko": "숨겨 둔 곳에서 보살은 보물과 베인 자와 독을 먹은 자를 보았습니다.",
+    "rect": [
+     541,
+     55,
+     745,
+     118
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     111,
-     322
-    ],
     "shape": "box",
     "en": "Realising the entire story at glance, he mused on the tragedy. Truly, misguided effort destroys not just oneself, but all others involved.",
-    "ko": "한눈에 모든 일을 알아차리고 보살은 이 비극을 곰곰이 생각했습니다. 참으로, 그릇된 방법으로 애쓰면 자기만 망치는 것이 아니라 함께한 모두를 망칩니다."
+    "ko": "한눈에 모든 일을 알아차리고 보살은 이 비극을 곰곰이 생각했습니다. 참으로, 그릇된 방법으로 애쓰면 자기만 망치는 것이 아니라 함께한 모두를 망칩니다.",
+    "rect": [
+     55,
+     319,
+     286,
+     398
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -437,13 +472,18 @@
     "align": "center"
    },
    {
-    "seed": [
-     51,
-     316
-    ],
     "shape": "box",
     "en": "Unlike his master, he did not let greed consume him. He lived out his term of life in the exercise of boundless generosity and good works, utilizing the wealth Ith correctly",
-    "ko": "스승과 달리 보살은 탐욕에 휘둘리지 않았습니다. 그는 끝없는 보시와 선행을 행하며 재물을 바르게 쓰고 수명을 다했습니다."
+    "ko": "스승과 달리 보살은 탐욕에 휘둘리지 않았습니다. 그는 끝없는 보시와 선행을 행하며 재물을 바르게 쓰고 수명을 다했습니다.",
+    "rect": [
+     55,
+     319,
+     383,
+     398
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  }

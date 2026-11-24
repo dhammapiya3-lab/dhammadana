@@ -87,13 +87,18 @@
     "em": 14
    },
    {
-    "seed": [
-     505,
-     363
-    ],
     "shape": "box",
     "en": "And so, he staked thousand pices. pieces",
-    "ko": "그렇게 그는 천 냥을 걸었습니다."
+    "ko": "그렇게 그는 천 냥을 걸었습니다.",
+    "rect": [
+     470,
+     355,
+     701,
+     390
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -211,13 +216,18 @@
   "img": "images/028-Nandivisala-07-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     114,
-     371
-    ],
     "shape": "box",
     "en": "The merchant made him pay over the thousand pieces. ad",
-    "ko": "상인은 천 냥을 받아 갔습니다."
+    "ko": "상인은 천 냥을 받아 갔습니다.",
+    "rect": [
+     87,
+     357,
+     356,
+     397
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "shape": "box",
@@ -389,13 +399,18 @@
   "img": "images/028-Nandivisala-12-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     213,
-     384
-    ],
     "shape": "box",
     "en": "The merchant paid the two thousand. Other folks gave large sums too. Thus did the ely gain greatly.",
-    "ko": "상인은 이천 냥을 내주었습니다. 구경하던 사람들도 큰돈을 주었습니다. 이렇게 바라문은 큰 이익을 얻었습니다."
+    "ko": "상인은 이천 냥을 내주었습니다. 구경하던 사람들도 큰돈을 주었습니다. 이렇게 바라문은 큰 이익을 얻었습니다.",
+    "rect": [
+     190,
+     382,
+     628,
+     423
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  }

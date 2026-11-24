@@ -76,13 +76,18 @@
     "align": "center"
    },
    {
-    "seed": [
-     674,
-     352
-    ],
     "shape": "box",
     "en": "Capital acquired: One Farthing.",
-    "ko": "번 돈: 한 푼"
+    "ko": "번 돈: 한 푼",
+    "rect": [
+     615,
+     349,
+     747,
+     404
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -90,13 +95,18 @@
   "img": "images/004-The-Dead-Mouse-04-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     92,
-     73
-    ],
     "shape": "box",
     "en": "With his farthing, he bought molasses and waten water. He refreshed tired flower-gatherers returning from the forest, who paid him in blooms.",
-    "ko": "그는 그 한 푼으로 당밀과 물을 샀습니다. 숲에서 돌아오는 지친 꽃 따는 사람들에게 마실 것을 주었고, 그들은 꽃으로 값을 치렀습니다."
+    "ko": "그는 그 한 푼으로 당밀과 물을 샀습니다. 숲에서 돌아오는 지친 꽃 따는 사람들에게 마실 것을 주었고, 그들은 꽃으로 값을 치렀습니다.",
+    "rect": [
+     43,
+     64,
+     436,
+     137
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "shape": "box",
@@ -116,13 +126,18 @@
   "img": "images/004-The-Dead-Mouse-05-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     106,
-     70
-    ],
     "shape": "box",
     "en": "severe storm littered the king’s garden with debris.",
-    "ko": "거센 폭풍이 지나가자 왕의 정원에 나뭇가지가 어지럽게 널렸습니다."
+    "ko": "거센 폭풍이 지나가자 왕의 정원에 나뭇가지가 어지럽게 널렸습니다.",
+    "rect": [
+     40,
+     61,
+     459,
+     96
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -152,13 +167,18 @@
   "img": "images/004-The-Dead-Mouse-06-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     75,
-     71
-    ],
     "shape": "box",
     "en": "To clear the heavy branches quickly, he leveraged his remaining molasses. He bribed ribed the local children, turning monumental task into playground game.",
-    "ko": "무거운 나뭇가지를 빨리 치우려고 그는 남은 당밀을 썼습니다. 아이들에게 당밀을 나누어 주자 고된 일이 즐거운 놀이가 되었습니다."
+    "ko": "무거운 나뭇가지를 빨리 치우려고 그는 남은 당밀을 썼습니다. 아이들에게 당밀을 나누어 주자 고된 일이 즐거운 놀이가 되었습니다.",
+    "rect": [
+     43,
+     63,
+     680,
+     120
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -166,13 +186,18 @@
   "img": "images/004-The-Dead-Mouse-07-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     84,
-     71
-    ],
     "shape": "box",
     "en": "The king’s potter desperately needed fuel to fire palace bowls. He bought the gathered wood on the spot",
-    "ko": "왕실 옹기장이는 궁궐 그릇을 구울 땔감이 몹시 필요했습니다. 그는 모아 둔 나무를 그 자리에서 샀습니다."
+    "ko": "왕실 옹기장이는 궁궐 그릇을 구울 땔감이 몹시 필요했습니다. 그는 모아 둔 나무를 그 자리에서 샀습니다.",
+    "rect": [
+     44,
+     65,
+     498,
+     119
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "ko": "번 돈: 16닢과 그릇 다섯 개\n합계: 24닢",
@@ -194,13 +219,18 @@
   "img": "images/004-The-Dead-Mouse-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     109,
-     68
-    ],
     "shape": "box",
     "en": "He used his vessels to hydrate 500 grass mowers, asking for nothing in return. His strategic generosity caught the eye of highly influential land and sea traders.",
-    "ko": "그는 그릇에 물을 담아 풀 베는 사람 500명에게 대가 없이 나누어 주었습니다. 이 지혜로운 베풂은 힘 있는 육상·해상 상인들의 눈에 띄었습니다."
+    "ko": "그는 그릇에 물을 담아 풀 베는 사람 500명에게 대가 없이 나누어 주었습니다. 이 지혜로운 베풂은 힘 있는 육상·해상 상인들의 눈에 띄었습니다.",
+    "rect": [
+     70,
+     55,
+     730,
+     120
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -208,13 +238,18 @@
   "img": "images/004-The-Dead-Mouse-09-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     68,
-     44
-    ],
     "shape": "box",
     "en": "Hearing horse dealer was arriving, he called in favor. Each mower gave him one bundle of grass, promising to hold their own inventory.",
-    "ko": "말 장수가 온다는 소식을 듣자 그는 풀 베는 사람들에게 부탁했습니다. 그들은 저마다 풀 한 단씩을 주고, 자기 풀은 팔지 않기로 약속했습니다."
+    "ko": "말 장수가 온다는 소식을 듣자 그는 풀 베는 사람들에게 부탁했습니다. 그들은 저마다 풀 한 단씩을 주고, 자기 풀은 팔지 않기로 약속했습니다.",
+    "rect": [
+     24,
+     45,
+     354,
+     104
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "ko": "풀을 혼자 도맡아 판 덕분에 그는 무려 천 냥을 벌었습니다.",
@@ -388,13 +423,18 @@
     "align": "center"
    },
    {
-    "seed": [
-     244,
-     378
-    ],
     "ko": "네 달 만에 죽은 쥐 한 마리가 차근차근 20만 냥으로 불어났습니다.",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     200,
+     376,
+     610,
+     427
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -516,13 +556,18 @@
   "img": "images/004-The-Dead-Mouse-13-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     183,
-     370
-    ],
     "shape": "box",
     "en": "He returned to Cullakase tthi with half his wealth Ith to show deep gratitude. Impressed by his brilliance, the wise Treasurer married the young man to his daughter and made him his sole heir.",
-    "ko": "그는 재산의 절반을 들고 쭐라까셋티를 찾아가 깊이 감사드렸습니다. 젊은이의 슬기에 감탄한 재무관은 그를 딸과 혼인시키고 유일한 상속자로 삼았습니다."
+    "ko": "그는 재산의 절반을 들고 쭐라까셋티를 찾아가 깊이 감사드렸습니다. 젊은이의 슬기에 감탄한 재무관은 그를 딸과 혼인시키고 유일한 상속자로 삼았습니다.",
+    "rect": [
+     133,
+     354,
+     666,
+     422
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -530,13 +575,18 @@
   "img": "images/004-The-Dead-Mouse-14-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     283,
-     52
-    ],
     "shape": "box",
     "en": "Lifetimes later, having attained Supreme Awakening, the Buddha recounted this past life to his assembly of monks and nuns, revealing timeless truth of the universe.",
-    "ko": "여러 생이 지나 위없는 깨달음을 이루신 부처님께서 비구와 비구니 대중에게 이 전생 이야기를 들려주시며, 변치 않는 진리를 드러내셨습니다."
+    "ko": "여러 생이 지나 위없는 깨달음을 이루신 부처님께서 비구와 비구니 대중에게 이 전생 이야기를 들려주시며, 변치 않는 진리를 드러내셨습니다.",
+    "rect": [
+     216,
+     53,
+     584,
+     112
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

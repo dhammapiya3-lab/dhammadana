@@ -3,22 +3,32 @@
   "img": "images/001-The-Waterless-Desert-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     85,
-     42
-    ],
     "shape": "box",
     "en": "“Thus it was in times past...” The Buddha spoke to layman about the fatuous path versus the truth.",
-    "ko": "“옛날 옛적에…” 부처님께서 한 재가 신자에게 어리석은 길과 진리의 길에 대해 말씀하셨습니다."
+    "ko": "“옛날 옛적에…” 부처님께서 한 재가 신자에게 어리석은 길과 진리의 길에 대해 말씀하셨습니다.",
+    "rect": [
+     36,
+     36,
+     247,
+     116
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     656,
-     379
-    ],
     "shape": "box",
     "en": "Our story begins in ancient Benares.",
-    "ko": "이야기는 옛 바라나시에서 시작됩니다."
+    "ko": "이야기는 옛 바라나시에서 시작됩니다.",
+    "rect": [
+     621,
+     372,
+     765,
+     417
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -26,13 +36,18 @@
   "img": "images/001-The-Waterless-Desert-02-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     75,
-     41
-    ],
     "shape": "box",
     "en": "Two merchants, each With 500 carts, prepared to cross the wilderness. sil",
-    "ko": "두 상인이 각자 수레 500대를 이끌고 황야를 건널 채비를 했습니다."
+    "ko": "두 상인이 각자 수레 500대를 이끌고 황야를 건널 채비를 했습니다.",
+    "rect": [
+     36,
+     33,
+     252,
+     109
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -49,22 +64,32 @@
   "img": "images/001-The-Waterless-Desert-03-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     66,
-     36
-    ],
     "shape": "box",
     "en": "The Fool’s Logic: Uncut roads, first pick of grass, dictate prices.",
-    "ko": "어리석은 상인의 셈: 아무도 지나지 않은 길, 먼저 차지하는 풀, 내 마음대로 매기는 값."
+    "ko": "어리석은 상인의 셈: 아무도 지나지 않은 길, 먼저 차지하는 풀, 내 마음대로 매기는 값.",
+    "rect": [
+     36,
+     33,
+     252,
+     109
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     71,
-     254
-    ],
     "shape": "box",
     "en": "The Wise Man’s Logic: Leveled roads, sweet regrowth, pre-dug wells, established prices.",
-    "ko": "지혜로운 상인의 셈: 다져진 길, 새로 돋은 연한 풀, 미리 파 둔 우물, 이미 정해진 값."
+    "ko": "지혜로운 상인의 셈: 다져진 길, 새로 돋은 연한 풀, 미리 파 둔 우물, 이미 정해진 값.",
+    "rect": [
+     36,
+     246,
+     227,
+     335
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -194,13 +219,18 @@
     "align": "center"
    },
    {
-    "seed": [
-     527,
-     339
-    ],
     "shape": "box",
     "en": "Finding no water, the exhausted caravan collapsed at dusk. Under the cover of night, the Yakkhas feasted, leaving only bare bones.",
-    "ko": "물을 찾지 못한 일행은 지쳐서 해 질 녘에 쓰러졌습니다. 밤이 되자 약카들이 몰려와 잔치를 벌였고, 남은 것은 앙상한 뼈뿐이었습니다."
+    "ko": "물을 찾지 못한 일행은 지쳐서 해 질 녘에 쓰러졌습니다. 밤이 되자 약카들이 몰려와 잔치를 벌였고, 남은 것은 앙상한 뼈뿐이었습니다.",
+    "rect": [
+     463,
+     320,
+     765,
+     416
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -384,13 +414,18 @@
     "align": "center"
    },
    {
-    "seed": [
-     533,
-     318
-    ],
     "shape": "box",
     "en": "The Bodhisatta fortified corral, standing guard through three watches of the night.",
-    "ko": "보살은 수레로 튼튼한 울타리를 치고 밤새도록 망을 보았습니다."
+    "ko": "보살은 수레로 튼튼한 울타리를 치고 밤새도록 망을 보았습니다.",
+    "rect": [
+     529,
+     311,
+     770,
+     423
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -398,22 +433,32 @@
   "img": "images/001-The-Waterless-Desert-14-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     33,
-     45
-    ],
     "shape": "box",
     "en": "At dawn, they swapped their weak carts for stronger ones, and common goods for costly derelict wares.",
-    "ko": "새벽이 되자 일행은 약한 수레를 튼튼한 수레로, 흔한 물건을 버려진 값진 물건으로 바꾸었습니다."
+    "ko": "새벽이 되자 일행은 약한 수레를 튼튼한 수레로, 흔한 물건을 버려진 값진 물건으로 바꾸었습니다.",
+    "rect": [
+     28,
+     48,
+     306,
+     115
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     524,
-     397
-    ],
     "shape": "box",
     "en": "value, returning home safely.",
-    "ko": "그리고 물건을 모두 세 배 값에 팔아 무사히 집으로 돌아왔습니다."
+    "ko": "그리고 물건을 모두 세 배 값에 팔아 무사히 집으로 돌아왔습니다.",
+    "rect": [
+     521,
+     376,
+     770,
+     425
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -421,22 +466,32 @@
   "img": "images/001-The-Waterless-Desert-15-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     43,
-     42
-    ],
     "shape": "box",
     "en": "Thus the fatuous met destruction, while those who clave to the truth reached their goal",
-    "ko": "이렇게 어리석은 이는 파멸을 맞았고, 진리를 굳게 지킨 이는 목적지에 이르렀습니다."
+    "ko": "이렇게 어리석은 이는 파멸을 맞았고, 진리를 굳게 지킨 이는 목적지에 이르렀습니다.",
+    "rect": [
+     44,
+     43,
+     288,
+     103
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     548,
-     343
-    ],
     "shape": "box",
     "en": "Some have an unquestionable basis... is... the intelligent should take hold of the unquestionable",
-    "ko": "“어떤 이는 확실한 것을 의지한다… 지혜로운 이는 확실한 것을 붙잡아야 한다.”"
+    "ko": "“어떤 이는 확실한 것을 의지한다… 지혜로운 이는 확실한 것을 붙잡아야 한다.”",
+    "rect": [
+     538,
+     344,
+     767,
+     407
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  }

@@ -191,14 +191,18 @@
   "img": "images/026-The-State-Elephant-06-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     86,
-     328
-    ],
     "ko": "보살은 근본 원인을 살폈습니다. 몸에는 병이 없음을 알고, 마음에 원인이 있다고 보았습니다. 코끼리가 귀로 들은 말에 물든 것이었습니다.",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     51,
+     324,
+     749,
+     400
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },
@@ -206,13 +210,18 @@
   "img": "images/026-The-State-Elephant-07-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     130,
-     51
-    ],
     "shape": "box",
     "en": "The keepers confirmed the hypothesis.",
-    "ko": "사육사들이 그 짐작이 맞다고 확인해 주었습니다."
+    "ko": "사육사들이 그 짐작이 맞다고 확인해 주었습니다.",
+    "rect": [
+     117,
+     50,
+     401,
+     82
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -229,13 +238,18 @@
   "img": "images/026-The-State-Elephant-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     116,
-     51
-    ],
     "shape": "box",
     "en": "To cure the corruption, the Bodhisatta prescribed an antidote of equal and opposite force.",
-    "ko": "그 물듦을 고치려고 보살은 똑같이 강한, 정반대의 약을 처방했습니다."
+    "ko": "그 물듦을 고치려고 보살은 똑같이 강한, 정반대의 약을 처방했습니다.",
+    "rect": [
+     120,
+     53,
+     467,
+     97
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -313,14 +327,18 @@
   "img": "images/026-The-State-Elephant-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     168,
-     59
-    ],
     "shape": "box",
     "en": "The Mec hanics of Influence: Behavior is the output of the data we consume. Thieves Cruelty Murder Sages Mercy Peace",
     "ko": "영향의 원리: 행동은 우리가 받아들인 것에서 나온다.\n도둑 — 잔인함 — 살생   /   현자 — 자비 — 평화",
-    "align": "center"
+    "align": "center",
+    "rect": [
+     108,
+     59,
+     692,
+     397
+    ],
+    "whole": true,
+    "cover": true
    },
    {
     "rect": [

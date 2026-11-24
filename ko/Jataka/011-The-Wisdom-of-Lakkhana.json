@@ -233,13 +233,18 @@
   "img": "images/011-The-Wisdom-of-Lakkhana-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     551,
-     322
-    ],
     "shape": "box",
     "en": "For four long months, the surviving herds remained safely in the hills. They did not descend until the valley crops were fully carried.",
-    "ko": "넉 달 동안 살아남은 무리는 산에서 무사히 지냈습니다. 골짜기의 곡식을 다 거두어들일 때까지 내려오지 않았습니다."
+    "ko": "넉 달 동안 살아남은 무리는 산에서 무사히 지냈습니다. 골짜기의 곡식을 다 거두어들일 때까지 내려오지 않았습니다.",
+    "rect": [
+     521,
+     322,
+     739,
+     390
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

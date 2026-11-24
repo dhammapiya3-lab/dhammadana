@@ -3,13 +3,18 @@
   "img": "images/034-The-Amorous-Fish-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     310,
-     196
-    ],
     "shape": "box",
     "en": "Tale The of Oss Passion, gE Fish HAs Delusion, fatale, and Liberation Sat 2a (Based on the Tales of ancient Benares)",
-    "ko": "물고기 자따까\n애욕과 미혹, 그리고 해탈 이야기\n(옛 바라나시 이야기에서)"
+    "ko": "물고기 자따까\n애욕과 미혹, 그리고 해탈 이야기\n(옛 바라나시 이야기에서)",
+    "rect": [
+     282,
+     194,
+     518,
+     256
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -311,13 +316,18 @@
   "img": "images/034-The-Amorous-Fish-10-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     290,
-     66
-    ],
     "shape": "box",
     "en": "The priest approached the ca",
-    "ko": "사제가 어부들에게 다가갔습니다."
+    "ko": "사제가 어부들에게 다가갔습니다.",
+    "rect": [
+     268,
+     65,
+     532,
+     95
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -352,13 +362,18 @@
   "img": "images/034-The-Amorous-Fish-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     174,
-     97
-    ],
     "shape": "box",
     "en": "“We don’t need any but this one,” the priest said. “Only give us this one.”",
-    "ko": "“다른 건 필요 없고 이 물고기만 주게.” 사제가 말했습니다."
+    "ko": "“다른 건 필요 없고 이 물고기만 주게.” 사제가 말했습니다.",
+    "rect": [
+     177,
+     91,
+     292,
+     152
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -445,13 +460,18 @@
     "em": 14
    },
    {
-    "seed": [
-     104,
-     324
-    ],
     "shape": "box",
     "en": "The fish was saved from the fire, and from himself.",
-    "ko": "물고기는 불에서, 그리고 자기 자신에게서 구원받았습니다."
+    "ko": "물고기는 불에서, 그리고 자기 자신에게서 구원받았습니다.",
+    "rect": [
+     70,
+     66,
+     731,
+     384
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  }

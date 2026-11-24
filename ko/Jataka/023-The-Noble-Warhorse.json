@@ -57,14 +57,18 @@
     "manual": true
    },
    {
-    "seed": [
-     74,
-     136
-    ],
     "ko": "십만 냥짜리 금 접시에 담은 3년 묵은 쌀",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     78,
+     105,
+     181,
+     172
+    ],
+    "whole": true,
+    "cover": true
    },
    {
     "ko": "늘 타는 향유 등불",
@@ -162,14 +166,18 @@
   "img": "images/023-The-Noble-Warhorse-05-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     84,
-     351
-    ],
     "ko": "왕이 허락했습니다. 고귀한 군마를 끌어내 무거운 갑옷을 입혔습니다. 기사는 머리부터 발끝까지 무장하고 칼을 찼습니다. 둘은 함께 성문을 나섰습니다.",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     84,
+     351,
+     716,
+     388
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },
@@ -194,13 +202,18 @@
   "img": "images/023-The-Noble-Warhorse-07-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     154,
-     391
-    ],
     "shape": "box",
     "en": "They ey orn broke the sixth camp and captured the sixth ie But an ar TOW tnd ae warhorse. deep wound streamed with blood, bringing sharp, agonizing pain.",
-    "ko": "여섯째 진을 부수고 여섯째 왕을 사로잡았습니다. 그러나 화살 하나가 군마에 꽂혔습니다. 깊은 상처에서 피가 흘렀고 날카로운 고통이 밀려왔습니다."
+    "ko": "여섯째 진을 부수고 여섯째 왕을 사로잡았습니다. 그러나 화살 하나가 군마에 꽂혔습니다. 깊은 상처에서 피가 흘렀고 날카로운 고통이 밀려왔습니다.",
+    "rect": [
+     139,
+     372,
+     287,
+     436
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -208,13 +221,18 @@
   "img": "images/023-The-Noble-Warhorse-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     170,
-     384
-    ],
     "shape": "box",
     "en": "At aie king’s gate, wie knight loosened Ale Sindh’ mail. oie fhe. grievous wound, he set about arming another iors for the final battle",
-    "ko": "왕의 성문에서 기사는 신두 말의 갑옷을 풀었습니다. 깊은 상처를 본 그는 마지막 싸움을 위해 다른 말을 무장시키기 시작했습니다."
+    "ko": "왕의 성문에서 기사는 신두 말의 갑옷을 풀었습니다. 깊은 상처를 본 그는 마지막 싸움을 위해 다른 말을 무장시키기 시작했습니다.",
+    "rect": [
+     153,
+     382,
+     647,
+     429
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -296,13 +314,18 @@
   "img": "images/023-The-Noble-Warhorse-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     95,
-     390
-    ],
     "shape": "box",
     "en": "Wound bound and re-armed, the Bodhisatta surged forward. In one final, impossible charge, they broke the seventh camp and brought back the seventh king alive.",
-    "ko": "상처를 싸매고 다시 무장한 보살이 앞으로 내달렸습니다. 마지막, 불가능해 보이던 돌격으로 일곱째 진을 부수고 일곱째 왕을 산 채로 데려왔습니다."
+    "ko": "상처를 싸매고 다시 무장한 보살이 앞으로 내달렸습니다. 마지막, 불가능해 보이던 돌격으로 일곱째 진을 부수고 일곱째 왕을 산 채로 데려왔습니다.",
+    "rect": [
+     96,
+     392,
+     704,
+     435
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -397,13 +420,18 @@
   "img": "images/023-The-Noble-Warhorse-13-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     109,
-     372
-    ],
     "shape": "box",
     "en": "His duty fulfilled, the soldiers began taking off his mail piecemeal. Before the last piece fell, the magnificent Sindh closed his eyes and passed away",
-    "ko": "의무를 다하자 병사들이 갑옷을 하나씩 벗겼습니다. 마지막 조각이 떨어지기 전에, 위대한 신두 말은 눈을 감고 숨을 거두었습니다."
+    "ko": "의무를 다하자 병사들이 갑옷을 하나씩 벗겼습니다. 마지막 조각이 떨어지기 전에, 위대한 신두 말은 눈을 감고 숨을 거두었습니다.",
+    "rect": [
+     96,
+     371,
+     704,
+     423
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -411,14 +439,18 @@
   "img": "images/023-The-Noble-Warhorse-14-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     100,
-     70
-    ],
     "ko": "왕은 깊은 존경을 담아 말의 장례를 치렀습니다. 기사는 큰 상을 받았습니다. 일곱 왕은 다시는 전쟁하지 않겠다고 맹세하고 평화롭게 돌아갔습니다.",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     99,
+     60,
+     707,
+     99
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  }

@@ -3,14 +3,18 @@
   "img": "images/049-The-Lucky-Star-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     186,
-     272
-    ],
     "shape": "box",
     "en": "Nakkhatta Jataka In the past, when Brahmadatta reigned in Benares, two families forged promising alliance.",
     "ko": "낙캇따 자따까\n\n옛날 브라흐마닷따 왕이 바라나시를 다스릴 때, 두 집안이 좋은 혼사를 맺기로 했습니다.",
-    "align": "center"
+    "align": "center",
+    "rect": [
+     76,
+     265,
+     304,
+     376
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },
@@ -207,13 +211,18 @@
   "img": "images/049-The-Lucky-Star-10-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     134,
-     88
-    ],
     "shape": "box",
     "en": "As they wrangled, wise man—a traveling merchant on business—intervened. He listened to the townsfolk blame their absence on the unfavourable disposition of the stars.",
-    "ko": "그들이 다투고 있을 때, 장사하러 다니던 지혜로운 상인이 끼어들었습니다. 그는 도시 사람들이 오지 못한 탓을 별자리가 나빴던 데로 돌리는 말을 들었습니다."
+    "ko": "그들이 다투고 있을 때, 장사하러 다니던 지혜로운 상인이 끼어들었습니다. 그는 도시 사람들이 오지 못한 탓을 별자리가 나빴던 데로 돌리는 말을 들었습니다.",
+    "rect": [
+     88,
+     73,
+     714,
+     125
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -235,14 +244,18 @@
   "img": "images/049-The-Lucky-Star-12-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     202,
-     335
-    ],
     "shape": "box",
     "en": "Nakkhatam patimanentam atho balan balam upaccaga. While waiting on his lucky stars, benefit passes the fool by.",
     "ko": "Nakkhattaṃ patimānentaṃ attho bālaṃ upaccagā.\n행운의 별을 기다리는 사이, 이익은 어리석은 이를 지나쳐 간다.",
-    "align": "center"
+    "align": "center",
+    "rect": [
+     90,
+     325,
+     714,
+     378
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },

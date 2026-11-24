@@ -91,13 +91,18 @@
     "whole": true
    },
    {
-    "seed": [
-     519,
-     333
-    ],
     "shape": "box",
     "en": "They lived by grueling hired labor. Hidden among their rusted pots lay forgotten, dirt-encrusted golden bowl—a relic of their past.",
-    "ko": "두 사람은 고된 품팔이로 살았습니다. 녹슨 냄비들 사이에 흙때 낀 황금 그릇 하나가 잊힌 채 놓여 있었습니다. 지난날의 흔적이었습니다."
+    "ko": "두 사람은 고된 품팔이로 살았습니다. 녹슨 냄비들 사이에 흙때 낀 황금 그릇 하나가 잊힌 채 놓여 있었습니다. 지난날의 흔적이었습니다.",
+    "rect": [
+     467,
+     326,
+     741,
+     393
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -132,13 +137,18 @@
     "ko": "“할머니, 장신구 하나만 사 주세요!”"
    },
    {
-    "seed": [
-     621,
-     138
-    ],
     "shape": "box",
     "en": "“We are poor, child What can we offer?”",
-    "ko": "“얘야, 우리는 가난하단다. 무엇을 내줄 수 있겠니?”"
+    "ko": "“얘야, 우리는 가난하단다. 무엇을 내줄 수 있겠니?”",
+    "rect": [
+     613,
+     133,
+     744,
+     176
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -181,13 +191,18 @@
     "ko": "“이게 무슨 값어치가 있다고?” 그가 내뱉었습니다. “반 푼어치도 안 되겠네!”"
    },
    {
-    "seed": [
-     463,
-     355
-    ],
     "shape": "box",
     "en": "He hurled the into the dit dirt am and stormed out, to return when they were",
-    "ko": "그는 황금 그릇을 흙바닥에 내던지고 씩씩거리며 나갔습니다. 두 사람이 다급해지면 다시 올 속셈이었습니다."
+    "ko": "그는 황금 그릇을 흙바닥에 내던지고 씩씩거리며 나갔습니다. 두 사람이 다급해지면 다시 올 속셈이었습니다.",
+    "rect": [
+     437,
+     351,
+     756,
+     405
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -333,13 +348,18 @@
     "ko": "“그자가 내 십만 냥을 훔쳐 갔다!”"
    },
    {
-    "seed": [
-     66,
-     305
-    ],
     "shape": "box",
     "en": "Intense sorrow and rage consumed him Losing all senses, he flung away his goods stripped off his clothes, and seized his scale-beam as club",
-    "ko": "극심한 슬픔과 분노가 그를 삼켰습니다. 정신을 잃은 그는 물건을 내던지고 옷을 찢어 벗고는 저울대를 몽둥이처럼 움켜쥐었습니다."
+    "ko": "극심한 슬픔과 분노가 그를 삼켰습니다. 정신을 잃은 그는 물건을 내던지고 옷을 찢어 벗고는 저울대를 몽둥이처럼 움켜쥐었습니다.",
+    "rect": [
+     51,
+     296,
+     333,
+     400
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

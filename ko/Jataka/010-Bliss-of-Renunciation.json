@@ -40,13 +40,18 @@
   "img": "images/010-Bliss-of-Renunciation-02-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     226,
-     78
-    ],
     "shape": "box",
     "en": "Through intense practice, Pay the Bodhisatta Ss mastered 3 the eight Attainments. Drawn by his profound wisdom, five hundred ascetics gathered in the mountains to follow his noble path.",
-    "ko": "보살은 치열한 수행으로 여덟 가지 증득을 이루었습니다. 그의 깊은 지혜에 이끌려 수행자 500명이 산으로 모여들어 그 거룩한 길을 따랐습니다."
+    "ko": "보살은 치열한 수행으로 여덟 가지 증득을 이루었습니다. 그의 깊은 지혜에 이끌려 수행자 500명이 산으로 모여들어 그 거룩한 길을 따랐습니다.",
+    "rect": [
+     70,
+     70,
+     730,
+     380
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -120,14 +125,18 @@
     "ko": "이들과 함께 히말라야로 가거라. 나는 여기 머물겠다."
    },
    {
-    "seed": [
-     190,
-     46
-    ],
     "align": "center",
     "ko": "보살은 제자들을 가장 나이 많은 제자에게 맡겼습니다.",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     73,
+     46,
+     727,
+     390
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },
@@ -135,13 +144,18 @@
   "img": "images/010-Bliss-of-Renunciation-07-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     153,
-     366
-    ],
     "shape": "box",
     "en": "This oldest disciple had once given up enn kingdom to become monk. Mas- tering the eight Attainments, deep longing soon arose to see his beloved master again.",
-    "ko": "이 맏제자는 한때 큰 나라를 버리고 출가한 왕이었습니다. 여덟 가지 증득을 이룬 그는 곧 사랑하는 스승을 다시 뵙고 싶은 마음이 깊어졌습니다."
+    "ko": "이 맏제자는 한때 큰 나라를 버리고 출가한 왕이었습니다. 여덟 가지 증득을 이룬 그는 곧 사랑하는 스승을 다시 뵙고 싶은 마음이 깊어졌습니다.",
+    "rect": [
+     105,
+     369,
+     697,
+     409
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -149,13 +163,18 @@
   "img": "images/010-Bliss-of-Renunciation-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     74,
-     68
-    ],
     "shape": "box",
     "en": "[fn ona He returned mat beside to Benares his master, to pay he his uttered respects. joyful Lying cry. happily",
-    "ko": "그는 스승께 예를 올리러 바라나시로 돌아왔습니다. 스승 곁 돗자리에 편히 누운 그는 기쁨에 겨워 외쳤습니다."
+    "ko": "그는 스승께 예를 올리러 바라나시로 돌아왔습니다. 스승 곁 돗자리에 편히 누운 그는 기쁨에 겨워 외쳤습니다.",
+    "rect": [
+     77,
+     70,
+     454,
+     111
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "shape": "bubble",
@@ -176,13 +195,18 @@
   "img": "images/010-Bliss-of-Renunciation-09-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     74,
-     68
-    ],
     "shape": "box",
     "en": "King Brahmadatta arrived. Displeased that the ascetic, though seeing him, forbore ie rise, the king spoke.",
-    "ko": "브라흐마닷따 왕이 찾아왔습니다. 수행자가 왕을 보고도 일어나지 않자, 언짢아진 왕이 말했습니다."
+    "ko": "브라흐마닷따 왕이 찾아왔습니다. 수행자가 왕을 보고도 일어나지 않자, 언짢아진 왕이 말했습니다.",
+    "rect": [
+     77,
+     70,
+     454,
+     111
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -213,13 +237,18 @@
   "img": "images/010-Bliss-of-Renunciation-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     143,
-     346
-    ],
     "shape": "box",
     "en": "He remembers living in regal pomp, guarded by men-at-arms, never knowing peace. Now, possessing nothing, he rests in complete, unguarded security",
-    "ko": "그는 무장한 병사들에게 둘러싸여 화려하게 살면서도 한 번도 평안하지 못했던 때를 기억합니다. 이제 가진 것 하나 없는 그는 지키는 이 없이도 온전히 평안하게 쉽니다."
+    "ko": "그는 무장한 병사들에게 둘러싸여 화려하게 살면서도 한 번도 평안하지 못했던 때를 기억합니다. 이제 가진 것 하나 없는 그는 지키는 이 없이도 온전히 평안하게 쉽니다.",
+    "rect": [
+     143,
+     345,
+     656,
+     388
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -255,13 +284,18 @@
   "img": "images/010-Bliss-of-Renunciation-13-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     118,
-     341
-    ],
     "shape": "box",
     "en": "aes by the lesson in Dhamma thus taught him, the king made his salutation and returned to his palace. The disciple also took his leave and returned to the Himalayas.",
-    "ko": "이렇게 가르침을 받은 왕은 절을 올리고 궁으로 돌아갔습니다. 맏제자도 작별을 고하고 히말라야로 돌아갔습니다."
+    "ko": "이렇게 가르침을 받은 왕은 절을 올리고 궁으로 돌아갔습니다. 맏제자도 작별을 고하고 히말라야로 돌아갔습니다.",
+    "rect": [
+     70,
+     58,
+     730,
+     398
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -269,13 +303,18 @@
   "img": "images/010-Bliss-of-Renunciation-14-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     183,
-     345
-    ],
     "shape": "box",
     "en": "The Bodhisatta continued to dwell on there. Dying with Absorption full and unbroken, he was reborn in the transcendent Realm of Brahma.",
-    "ko": "보살은 그곳에 머물렀습니다. 선정이 온전하고 끊어지지 않은 채 숨을 거둔 그는 범천의 세계에 다시 태어났습니다."
+    "ko": "보살은 그곳에 머물렀습니다. 선정이 온전하고 끊어지지 않은 채 숨을 거둔 그는 범천의 세계에 다시 태어났습니다.",
+    "rect": [
+     148,
+     345,
+     652,
+     388
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  }
