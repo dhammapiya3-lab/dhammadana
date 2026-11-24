@@ -68,10 +68,10 @@
     "en": "The Fool’s Logic: Uncut roads, first pick of grass, dictate prices.",
     "ko": "어리석은 상인의 셈: 아무도 지나지 않은 길, 먼저 차지하는 풀, 내 마음대로 매기는 값.",
     "rect": [
-     36,
-     33,
-     252,
-     109
+     44,
+     40,
+     244,
+     104
     ],
     "whole": true,
     "cover": true,
@@ -82,10 +82,10 @@
     "en": "The Wise Man’s Logic: Leveled roads, sweet regrowth, pre-dug wells, established prices.",
     "ko": "지혜로운 상인의 셈: 다져진 길, 새로 돋은 연한 풀, 미리 파 둔 우물, 이미 정해진 값.",
     "rect": [
-     36,
-     246,
-     227,
-     335
+     44,
+     253,
+     219,
+     329
     ],
     "whole": true,
     "cover": true,
