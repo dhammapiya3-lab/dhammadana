@@ -388,13 +388,18 @@
   "img": "images/026-The-State-Elephant-12-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     223,
-     62
-    ],
     "shape": "box",
     "en": "Puranacorana’ vaco nisamma, Mahilamukho pothayam-anvacari. Considering the thieves’ words, he lashed out. Considering the words of the restrained, the elephant was established in all virtues.",
-    "ko": "Porāṇacorāna vaco nisamma, Mahiḷāmukho pothayam-anvacārī.\n도둑들의 말을 듣고 코끼리는 사람을 해쳤고, 절제하는 이들의 말을 듣고 모든 덕에 굳게 섰다."
+    "ko": "Porāṇacorāna vaco nisamma, Mahiḷāmukho pothayam-anvacārī.\n도둑들의 말을 듣고 코끼리는 사람을 해쳤고, 절제하는 이들의 말을 듣고 모든 덕에 굳게 섰다.",
+    "rect": [
+     120,
+     62,
+     550,
+     116
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
