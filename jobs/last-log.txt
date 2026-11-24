@@ -1,11 +1,38 @@
+검수 Jataka/001-The-Waterless-Desert 13번 그림 상자2 [자리] 한글 글(2151,1214)이 상자 점(1762,1051)에서 멀리 그려짐
+Jataka 001-The-Waterless-Desert 15 장
+검수 Jataka/004-The-Dead-Mouse 09번 그림 상자2 [자리] 한글 글(2228,1294)이 상자 점(2030,1107)에서 멀리 그려짐
+Jataka 004-The-Dead-Mouse 15 장
 Jataka 005-The-Measure-of-Rice 14 장
-자동 검수: 문제 의심 0 곳
-R2 에 올림: 75 개 / 한글판 이야기 318 편
+Jataka 006-The-Water-Rakkhasa 15 장
+Jataka 009-The-Kings-Grey-Hair 14 장
+Jataka 012-The-Golden-Deer 14 장
+Jataka 014-The-Wind-Deer 9 장
+Jataka 018-The-Sacrificial-Goat 14 장
+Jataka 023-The-Noble-Warhorse 14 장
+Jataka 032-The-Peacocks-Dance 12 장
+검수 Jataka/033-The-Quails-and-the-Net 09번 그림 상자2 [자리] 한글 글(1343,693)이 상자 점(1167,538)에서 멀리 그려짐
+Jataka 033-The-Quails-and-the-Net 14 장
+Jataka 039-Nanda-and-the-Hoard 12 장
+Jataka 041-The-Unfortunate-Monk 15 장
+자동 검수: 문제 의심 3 곳
+R2 에 올림: 401 개 / 한글판 이야기 318 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1436714바이트
+공개 주소 확인: 200 1160954바이트
+이야기 Jataka/001-The-Waterless-Desert {'pdf': 14328474, 'zip': 14063113, 'n': 15}
+이야기 Jataka/004-The-Dead-Mouse {'pdf': 17539706, 'zip': 17276270, 'n': 15}
 이야기 Jataka/005-The-Measure-of-Rice {'pdf': 17266899, 'zip': 17003516, 'n': 14}
-책 Jataka {'pdf': 496329967, 'pdfs': 50600123, 'zip': 495920206, 'stories': 32, 'n': 422}
-내려받기 파일: 2 묶음 새로 만듦
+이야기 Jataka/006-The-Water-Rakkhasa {'pdf': 19082766, 'zip': 18816345, 'n': 15}
+이야기 Jataka/009-The-Kings-Grey-Hair {'pdf': 15461769, 'zip': 15194904, 'n': 14}
+이야기 Jataka/012-The-Golden-Deer {'pdf': 18820937, 'zip': 18556720, 'n': 14}
+이야기 Jataka/014-The-Wind-Deer {'pdf': 9631213, 'zip': 9369794, 'n': 9}
+이야기 Jataka/018-The-Sacrificial-Goat {'pdf': 16407973, 'zip': 16137590, 'n': 14}
+이야기 Jataka/023-The-Noble-Warhorse {'pdf': 17063529, 'zip': 16798234, 'n': 14}
+이야기 Jataka/032-The-Peacocks-Dance {'pdf': 16779591, 'zip': 16515166, 'n': 12}
+이야기 Jataka/033-The-Quails-and-the-Net {'pdf': 15953630, 'zip': 15685476, 'n': 14}
+이야기 Jataka/039-Nanda-and-the-Hoard {'pdf': 13813370, 'zip': 13543951, 'n': 12}
+이야기 Jataka/041-The-Unfortunate-Monk {'pdf': 17989804, 'zip': 17723913, 'n': 15}
+책 Jataka {'pdf': 496237007, 'pdfs': 50595425, 'zip': 495827247, 'stories': 32, 'n': 422}
+내려받기 파일: 14 묶음 새로 만듦
 글로 보기: 318 이야기
 18-Verses-2
 08-Light-of-Asia
