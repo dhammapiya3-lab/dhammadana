@@ -73,7 +73,7 @@ header.site{border-bottom:1px solid var(--line)}
 
 /* 그림책 뷰어 */
 .sv{position:relative;background:#141210;border-radius:10px;overflow:hidden;outline:none;user-select:none}
-.sv-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.sv-track{display:flex;overflow-x:auto;touch-action:pan-x pan-y pinch-zoom;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .sv-track::-webkit-scrollbar{display:none}
 .sv-page{flex:0 0 100%;scroll-snap-align:center;margin:0;display:flex;align-items:center;justify-content:center;aspect-ratio:16/9}
 .sv-page img{max-width:100%;max-height:100%;display:block}
@@ -125,7 +125,8 @@ html.sv-lock,html.sv-lock body{overflow:hidden}
 .sv-end .e3{font-size:13px;opacity:.6;margin:12px 0 0}
 .sv.loading{opacity:.6;pointer-events:none}
 /* 손가락으로 확대 */
-.sv-page img{transition:transform .05s linear;transform-origin:center center;will-change:transform}
+.sv-page img{transition:transform .05s linear;transform-origin:center center}
+.sv.sv-zoom .sv-page img{will-change:transform}  /* 확대할 때만 — 모든 그림에 두면 휴대폰이 큰 그림마다 따로 화면 층을 만들어 넘기기가 버벅임 (2026-11-24) */
 .sv.sv-zoom .sv-track{overflow:hidden;touch-action:none}
 .sv.sv-zoom .sv-page{overflow:visible;z-index:2}
 .sv.sv-max .sv-track,.sv:fullscreen .sv-track{touch-action:pan-x}

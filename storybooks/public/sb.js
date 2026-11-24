@@ -261,7 +261,12 @@
     if (i < pages.length) shelfSave(i);
     markShow();
     if (V.on && !V.self && i < pages.length && i !== V.i) vPage(i);  // 읽는 중에 손으로 넘기면 그 쪽부터 읽음
+    warm(i);
   };
+  // 넘기기 빠르게 (운영자 요청, 2026-11-24 '핸드폰에서 넘기는 반응이 느려짐'): 지금 그림 앞뒤 그림을 미리 받아 풀어 둠 —
+  // 'loading=lazy' 그림은 화면에 거의 들어올 때에야 받기 시작해(한 장 약 1MB) 넘긴 뒤 한동안 빈 화면이었음
+  const warm = i => { for (const j of [i + 1, i + 2, i - 1, i + 3]) { const im = pages[j]?.querySelector('img'); if (!im || im.dataset.w) continue;
+    im.dataset.w = '1'; im.loading = 'eager'; if (im.decode) im.decode().catch(() => {}); } };
   // 내 서재: 책마다 마지막으로 읽던 이야기와 쪽 (운영자 요청, 2026-11-14)
   const shelfSave = i => {
     const d = sv.dataset; if (!d.book) return;
