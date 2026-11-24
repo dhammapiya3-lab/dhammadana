@@ -558,6 +558,17 @@ collections:
         label: 추천 사이트
         file: content/links.json
         fields:
+          - name: own
+            label: 함께 운영하는 사이트 (맨 위)
+            widget: list
+            required: false
+            summary: "{{fields.name}}"
+            fields:
+              - { name: name, label: 이름 }
+              - { name: url, label: 주소 }
+              - { name: note, label: 한 줄 소개, required: false }
+              - { name: img, label: 그림 (선택), widget: image, required: false }
+              - { name: sb, label: 그림책 사이트 (그림·규모를 저절로 채움), widget: boolean, required: false }
           - name: groups
             label: 묶음
             widget: list

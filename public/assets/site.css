@@ -1577,15 +1577,12 @@ h1,h2,h3,.ch-head,.s-h1{word-break:keep-all;overflow-wrap:break-word}
 @media (max-width:1000px){.sbn-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:700px){.sbn-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0 -16px;padding:0 16px 4px}.sbn-grid::-webkit-scrollbar{display:none}.sbn-grid li{flex:0 0 62%;scroll-snap-align:start}}
 
-/* 추천·협력 사이트 맨 위 '함께 운영하는 사이트' (운영자 요청, 2026-11-24) */
-.own-card{border:1px solid var(--line);border-radius:10px;background:var(--paper-2);overflow:hidden}
-.own-covers{display:grid;grid-template-columns:repeat(5,1fr);gap:2px}
-.own-covers img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
-.own-body{padding:18px 22px 20px}
-.own-body h3{margin:0 0 8px;font-size:21px}.own-body h3 .small{font-family:var(--sans);font-weight:400;font-size:13px;margin-left:6px}
-.own-body h3 a{color:var(--ink)}
-.own-body p{margin:0 0 10px;line-height:1.6}
-.own-n{font-weight:500}
-.own-feat{list-style:none;padding:0;margin:0 0 16px;display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--ink-soft);font-size:14.5px}
-.own-credit{margin:14px 0 0!important}
-@media (max-width:700px){.own-covers{grid-template-columns:repeat(3,1fr)}.own-covers img:nth-child(n+4){display:none}.own-body{padding:16px}.own-feat{flex-direction:column}}
+/* 추천·협력 사이트 맨 위 '함께 운영하는 사이트' (운영자 요청, 2026-11-24 — 간략하게, 여러 곳을 나란히) */
+.own-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
+.own-card{display:flex;gap:14px;align-items:center;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--paper-2);color:var(--ink);text-decoration:none}
+.own-card:hover{text-decoration:none;border-color:var(--robe)}
+.own-img{width:120px;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:6px;flex:none}
+.own-txt{display:flex;flex-direction:column;gap:2px;min-width:0}
+.own-txt b{font-size:16px}
+.own-n{color:var(--ink-soft)}
+@media (max-width:420px){.own-grid{grid-template-columns:1fr}.own-img{width:96px}}

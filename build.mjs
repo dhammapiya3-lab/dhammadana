@@ -1010,18 +1010,12 @@ async function cafeImage(url) {
 }
 for (const p of partners) p._img = p.image || await cafeImage((p.urls || [])[0]);
 const linkGroups = [{ name: '협력 단체', desc: '도서관과 함께 법보시 자료를 나누는 단체입니다.', items: partners.map(p => ({ name: p.name, url: (p.urls || [])[0] || '#', note: p.note || '', img: p._img || '', yt: (p.urls || []).slice(1).find(u => /youtube\.com|youtu\.be/i.test(u)) || '' })) }, ...LINKS];
+// 추천·협력 사이트 맨 위 '함께 운영하는 사이트' (운영자 요청, 2026-11-24 — 다른 사이트도 더할 것이라 간략하게): content/links.json 의 own 목록
+const OWN = (readJSON('links.json').own || []).map(o => o.sb ? { ...o, img: o.img || SB_NEW[0]?.cover || '', stat: SB_DATA.total ? `그림책 ${SB_DATA.total.books}권 · 이야기 ${SB_DATA.total.stories}편` : '' } : o);
 put('links/index.html', layout({
   title: '추천·협력 사이트', nav: 'links', page: 'links', body: `<div class="wrap"><div class="prose" style="padding-bottom:4px"><h1>추천·협력 사이트</h1><p class="muted">함께 법을 나누는 곳들을 종류별로 모았습니다.</p></div>
-  <section style="margin-top:30px" aria-labelledby="ownH"><div class="section-head" style="margin-bottom:12px"><h2 id="ownH">함께 운영하는 사이트</h2></div>
-   <div class="own-card">
-    ${SB_NEW.length ? `<a class="own-covers" href="${SB_URL}/" tabindex="-1" aria-hidden="true">${SB_NEW.slice(0, 5).map(b => `<img src="${esc(b.cover)}" alt="" loading="lazy" width="800" height="450">`).join('')}</a>` : ''}
-    <div class="own-body"><h3><a href="${SB_URL}/">붓다담마 그림책</a> <span class="small muted">storybooks.dhammadana.kr</span></h3>
-     <p>부처님의 전생 이야기와 자따까, 부처님과 으뜸 제자들의 생애를 그림으로 보는 한국어 그림책입니다.</p>
-     ${SB_DATA.total ? `<p class="own-n">그림책 ${SB_DATA.total.books}권 · 이야기 ${SB_DATA.total.stories}편 · 그림 ${Math.floor(SB_DATA.total.images / 100) * 100}여 장</p>` : ''}
-     <ul class="own-feat"><li>🔊 읽어 주기</li><li>☆ 그림 책갈피 (법회·어린이 법회에서 다시 보여 주기)</li><li>⛶ 전체 화면 보기</li><li>도서관 회원 아이디로 그대로 로그인</li></ul>
-     <a class="btn" href="${SB_URL}/">그림책 보러 가기 →</a>
-     <p class="small muted own-credit">원작: 아난다조띠 스님의 Dharma Storybooks · 한국어판도 CC BY-SA 4.0</p></div>
-   </div></section>
+  ${OWN.length ? `<section style="margin-top:30px" aria-labelledby="ownH"><div class="section-head" style="margin-bottom:12px"><h2 id="ownH">함께 운영하는 사이트</h2></div>
+   <div class="own-grid">${OWN.map(o => `<a class="own-card" href="${esc(o.url)}">${o.img ? `<img class="own-img" src="${esc(o.img)}" alt="" loading="lazy" width="160" height="90">` : ''}<span class="own-txt"><b>${esc(o.name)} →</b><span class="small muted">${esc(o.note || '')}</span>${o.stat ? `<span class="small own-n">${esc(o.stat)}</span>` : ''}</span></a>`).join('')}</div></section>` : ''}
   ${linkGroups.filter(g => g.items.length).map(g => `<section style="margin-top:30px"><div class="section-head" style="margin-bottom:12px"><h2>${esc(g.name)}</h2><span class="small muted">${g.items.length}곳</span></div>
    <p class="small muted" style="margin:-4px 0 14px">${esc(g.desc || '')}</p>
    ${(() => { const langs = [...new Set(g.items.map(l => l.lang || ''))]; const grid = list => `<div class="link-grid">${list.map(l => `${l.yt ? '<div class="lc-wrap">' : ''}<a class="link-card${l.yt ? ' has-yt' : ''}${l.img ? ' has-img' : ''}" href="${esc(l.url)}" target="_blank" rel="noopener">${l.img ? `<img class="lc-ico lc-img" src="${esc(l.img)}" alt="" width="56" height="56" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.closest('.link-card').classList.remove('has-img');this.className='lc-ico';this.width=28;this.height=28;this.src='https://www.google.com/s2/favicons?sz=64&domain=${encodeURIComponent((l.url.match(/\/\/([^/]+)/) || [])[1] || '')}'">` : `<img class="lc-ico" src="https://www.google.com/s2/favicons?sz=64&domain=${encodeURIComponent((l.url.match(/\/\/([^/]+)/) || [])[1] || '')}" alt="" width="28" height="28" loading="lazy" onerror="this.style.visibility='hidden'">`}<b class="lc-name">${esc(l.name)} ↗</b><span class="small muted">${esc(l.note || '')}</span></a>${l.yt ? `<a class="lc-yt" href="${esc(l.yt)}" target="_blank" rel="noopener"><span aria-hidden="true">▶ </span>유튜브 채널 ↗<span class="sr"> (${esc(l.name)}, 새 창)</span></a></div>` : ''}`).join('')}</div>`; const row = lg => `<div class="lang-row">${lg ? `<h3 class="lang-h">${esc(lg)}</h3>` : ''}${grid(g.items.filter(l => (l.lang || '') === lg))}</div>`;

@@ -1,4 +1,12 @@
 {
+  "own": [
+    {
+      "name": "붓다담마 그림책",
+      "url": "https://storybooks.dhammadana.kr/",
+      "note": "부처님의 전생 이야기와 제자들의 생애를 그림으로 보는 한국어 그림책",
+      "sb": true
+    }
+  ],
   "groups": [
     {
       "name": "국내 법보시 사이트",
