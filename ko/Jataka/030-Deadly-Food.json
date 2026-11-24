@@ -318,13 +318,17 @@
   "img": "images/030-Deadly-Food-10-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     122,
-     66
-    ],
     "shape": "bubble",
     "en": "you see Munika, dear brother?",
-    "ko": "무니까를 보았느냐, 아우야?"
+    "ko": "무니까를 보았느냐, 아우야?",
+    "rect": [
+     92,
+     64,
+     254,
+     106
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -332,22 +336,30 @@
   "img": "images/030-Deadly-Food-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     94,
-     62
-    ],
     "shape": "bubble",
     "en": "[have seen the outcome of his feasting",
-    "ko": "저 잔치가 어떻게 끝나는지 보았습니다."
+    "ko": "저 잔치가 어떻게\n끝나는지 보았습니다.",
+    "rect": [
+     84,
+     64,
+     274,
+     106
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
-    "seed": [
-     499,
-     65
-    ],
     "shape": "bubble",
     "en": "Better thousand times is our meager chaff. Our fare harms us not, and pledges our lives will not be cut short",
-    "ko": "우리의 보잘것없는 겨가 천 배나 낫습니다. 우리 먹이는 우리를 해치지 않고, 목숨이 끊기지 않게 지켜 줍니다."
+    "ko": "우리의 보잘것없는 겨가 천 배나 낫습니다. 우리 먹이는 우리를 해치지 않고, 목숨이 끊기지 않게 지켜 줍니다.",
+    "rect": [
+     486,
+     76,
+     716,
+     150
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  }
