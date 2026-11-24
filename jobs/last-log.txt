@@ -6,13 +6,25 @@ nothing to commit, working tree clean
 R2 에 올림: 47 개 / 한글판 이야기 320 편
 새 그림책 올림: New-Jataka/001-Apannaka-en 30 장
 새 그림책 올림: New-Jataka/001-Apannaka 30 장
-새 그림책: 올린 그림 60 장
+새 그림책 올림: New-Jataka/002-Vannupatha-en 24 장
+새 그림책 올림: New-Jataka/002-Vannupatha 24 장
+새 그림책 올림: New-Jataka/003-Serivanija-en 25 장
+새 그림책 올림: New-Jataka/003-Serivanija 25 장
+새 그림책 올림: New-Jataka/004-Culasetthi-en 34 장
+새 그림책 올림: New-Jataka/004-Culasetthi 34 장
+새 그림책: 올린 그림 226 장
 공개 주소 확인: 404 27150바이트
 이야기 New-Jataka/001-Apannaka {'pdf': 22179871, 'zip': 22001806, 'n': 30}
-책 New-Jataka {'pdf': 104829060, 'pdfs': 19293665, 'zip': 104636341, 'stories': 5, 'n': 136}
+이야기 New-Jataka/002-Vannupatha {'pdf': 16007541, 'zip': 15832405, 'n': 24}
+이야기 New-Jataka/003-Serivanija {'pdf': 19488624, 'zip': 19313058, 'n': 25}
+이야기 New-Jataka/004-Culasetthi {'pdf': 28353623, 'zip': 28173684, 'n': 34}
+책 New-Jataka {'pdf': 104825506, 'pdfs': 19293742, 'zip': 104632788, 'stories': 5, 'n': 136}
 이야기 New-Jataka/001-Apannaka-en {'pdf': 22187805, 'zip': 21987124, 'n': 30}
-책 New-Jataka-en {'pdf': 104835308, 'pdfs': 19451686, 'zip': 104610620, 'stories': 5, 'n': 136}
-내려받기 파일: 4 묶음 새로 만듦
+이야기 New-Jataka/002-Vannupatha-en {'pdf': 16031287, 'zip': 15834606, 'n': 24}
+이야기 New-Jataka/003-Serivanija-en {'pdf': 19481286, 'zip': 19282523, 'n': 25}
+이야기 New-Jataka/004-Culasetthi-en {'pdf': 28367898, 'zip': 28165943, 'n': 34}
+책 New-Jataka-en {'pdf': 104804676, 'pdfs': 19446621, 'zip': 104579988, 'stories': 5, 'n': 136}
+내려받기 파일: 10 묶음 새로 만듦
 글로 보기: 320 이야기
 18-Verses-2
 08-Light-of-Asia
