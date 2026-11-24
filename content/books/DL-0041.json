@@ -13,10 +13,13 @@
   "provider": "buddhayana",
   "press": false,
   "provider_chip": false,
-  "partner_chips": [],
+  "partner_chips": [
+    "theravada-kr"
+  ],
   "paper": "",
   "paper_url": "",
   "stores": [],
+  "videos": [],
   "book_type": "해설서",
   "original_title": "",
   "original_language": [],
