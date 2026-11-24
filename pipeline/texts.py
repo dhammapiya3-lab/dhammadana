@@ -10,7 +10,7 @@ for key in sorted(READY):
     except FileNotFoundError:
         try: cap = json.load(open(f"new/{key}/captions.json", encoding="utf-8"))  # 새로 그린 책: 그림마다 해설 한 줄
         except FileNotFoundError: continue
-        out[key] = [[cap.get(str(i), "")] if cap.get(str(i)) else [] for i in range(1, READY[key] + 1)]
+        out[key] = [[cap.get(str(i), "").replace("\n", " ")] if cap.get(str(i)) else [] for i in range(1, READY[key] + 1)]
         continue
     res = []
     for p in pages[:READY[key]]:
