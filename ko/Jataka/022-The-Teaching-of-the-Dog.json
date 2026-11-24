@@ -368,33 +368,30 @@
     "en": "It is like judgment of Perfect Buddha himself!",
     "ko": "완전한 부처님의 판결과도 같구나!",
     "rect": [
-     320,
-     54,
-     458,
-     98
+     310,
+     48,
+     464,
+     104
     ],
-    "em": 14,
     "align": "center",
     "whole": true,
     "ellipse": true,
-    "cover": true
+    "cover": true,
+    "outline": true
    },
    {
-    "seed": [
-     453,
-     363
-    ],
     "shape": "box",
     "en": "Overjoyed, the king offered 2s the royal white umbrella 2 to the ordinary street dog od",
     "ko": "크게 기뻐한 왕은 왕의 흰 일산을 평범한 떠돌이 개에게 바쳤습니다.",
     "rect": [
      444,
-     367,
+     364,
      722,
-     403
+     408
     ],
-    "em": 14,
-    "align": "center"
+    "align": "center",
+    "whole": true,
+    "cover": true
    }
   ]
  },
