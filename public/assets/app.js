@@ -2345,8 +2345,18 @@ function renderNotes() {
       <div class="small">${esc(x.ch ? x.ch + ' · ' : '')}${esc(x.pl || x.p)}쪽 · ${x.pct}%</div>
       <div class="small muted">마지막으로 읽은 날 ${esc(x.d)}${x.first && x.first !== x.d ? ` · 처음 읽은 날 ${esc(x.first)}` : ''}</div>
       <div class="acts"><label class="pick"><input type="checkbox" data-pk="hist:${esc(x.id)}"${nPicked.has('hist:' + x.id) ? ' checked' : ''}> 고르기<span class="sr">: 『${esc(x.t)}』</span></label><a class="btn sm" href="/read/${x.id}/${x.p}">이어 읽기</a><button data-hdel="${k}">기록 지우기</button></div></div></div>`).join('')}</div>` : '<p class="muted">아직 읽은 책이 없습니다. 책 페이지에서 ‘온라인으로 읽기’를 누르면 여기에 모입니다.</p>';
-  root.innerHTML = `<div class="tabs" role="tablist"><button role="tab" data-ntb="read" class="${notesTab === 'read' ? 'on' : ''}">읽은 책 ${H.length}</button><button role="tab" data-ntb="listen" class="${notesTab === 'listen' ? 'on' : ''}">이어 듣기 ${LS.length}</button><button role="tab" data-ntb="ul" class="${notesTab === 'ul' ? 'on' : ''}">밑줄 ${U.length}</button><button role="tab" data-ntb="bm" class="${notesTab === 'bm' ? 'on' : ''}">책갈피 ${B.length}</button><button role="tab" data-ntb="io" class="${notesTab === 'io' ? 'on' : ''}">옮기기</button></div>
-   <div style="max-width:760px">${notesTab === 'read' ? pkBar(H.length) + histHtml : notesTab === 'listen' ? pkBar(LS.length) + lsHtml : notesTab === 'ul' ? (U.some(h => !h.nc) ? `<div style="margin:12px 0"><button class="btn sm ghost" id="copyAll">밑줄 모두 복사 (출처 포함)</button></div>` : '') + ulHtml : notesTab === 'bm' ? bmHtml :
+  // 그림책 사이트(storybooks.dhammadana.kr)에서 읽던 기록 (운영자 요청, 2026-11-24): 같은 아이디로 로그인했을 때 회원 동기화로 받아 온 sb-b-<책> 을 dd-sbshelf 에 둔 것(syncNow) — 보기만
+  const SBU = 'https://storybooks.dhammadana.kr', SBL = Object.values(store.get('sbshelf', {})).filter(r => r && r.url && r.book).sort((a, c) => (c.t || 0) - (a.t || 0));
+  const sbAbs = u => /^https?:/.test(u || '') ? u : SBU + (String(u || '').startsWith('/') ? '' : '/') + (u || '');
+  const sbHtml = (SBL.length ? `<div class="hist">${SBL.map(r => `<div class="hist-item"><a class="hist-cover" href="${esc(sbAbs(r.url))}" aria-hidden="true" tabindex="-1">${r.cover ? `<img src="${esc(sbAbs(r.cover))}" alt="" loading="lazy">` : ''}</a><div class="hist-body"><a class="hist-t" href="${esc(sbAbs(r.url))}">『${esc(r.book)}』${r.lang === 'en' ? ' (영어판)' : ''}</a>
+      ${r.story && r.story !== r.book ? `<div class="small muted">${esc(r.story)}</div>` : ''}
+      ${r.n ? `<div class="hist-bar" aria-label="읽은 만큼 ${Math.round(r.page / r.n * 100)}%"><span style="width:${Math.round(r.page / r.n * 100)}%"></span></div><div class="small">${r.page} / ${r.n}쪽</div>` : ''}
+      ${r.t ? `<div class="small muted">마지막으로 읽은 날 ${esc(new Date(r.t).toLocaleDateString('sv-SE'))}</div>` : ''}
+      <div class="acts"><a class="btn sm" href="${esc(sbAbs(r.url))}">그림책에서 이어 읽기 ↗</a></div></div></div>`).join('')}</div>`
+    : `<p class="muted">${store.get('acct-x', null) === null && (() => { try { return localStorage.getItem('dd-acct'); } catch (e) { return ''; } })() ? '아직 그림책 사이트에서 읽은 기록이 없습니다.' : '그림책 사이트에서 읽은 기록은 같은 아이디로 로그인하면 여기에도 보입니다.'}</p>`)
+    + `<p class="small muted" style="margin-top:14px">그림책 사이트(<a href="${SBU}/">storybooks.dhammadana.kr ↗</a>)에서 같은 아이디로 로그인하고 읽은 책이 보입니다. 기록 지우기는 그림책 사이트의 내 서재에서 해 주세요.</p>`;
+  root.innerHTML = `<div class="tabs" role="tablist"><button role="tab" data-ntb="read" class="${notesTab === 'read' ? 'on' : ''}">읽은 책 ${H.length}</button><button role="tab" data-ntb="listen" class="${notesTab === 'listen' ? 'on' : ''}">이어 듣기 ${LS.length}</button><button role="tab" data-ntb="ul" class="${notesTab === 'ul' ? 'on' : ''}">밑줄 ${U.length}</button><button role="tab" data-ntb="bm" class="${notesTab === 'bm' ? 'on' : ''}">책갈피 ${B.length}</button><button role="tab" data-ntb="io" class="${notesTab === 'io' ? 'on' : ''}">옮기기</button><button role="tab" data-ntb="sb" class="${notesTab === 'sb' ? 'on' : ''}">그림책 ${SBL.length}</button></div>
+   <div style="max-width:760px">${notesTab === 'read' ? pkBar(H.length) + histHtml : notesTab === 'listen' ? pkBar(LS.length) + lsHtml : notesTab === 'ul' ? (U.some(h => !h.nc) ? `<div style="margin:12px 0"><button class="btn sm ghost" id="copyAll">밑줄 모두 복사 (출처 포함)</button></div>` : '') + ulHtml : notesTab === 'bm' ? bmHtml : notesTab === 'sb' ? sbHtml :
     `<p>다른 기기로 옮길 때: 아래 ‘내보내기’로 복사한 글을 다른 기기의 이 칸에 붙여넣고 ‘가져오기’를 누르세요. 가져오면 이미 있는 것과 합쳐집니다.</p>
     <div style="display:flex;gap:8px;margin:10px 0"><button class="btn sm ghost" id="ioExport">내보내기 (복사)</button><button class="btn sm" id="ioImport">가져오기</button></div>
     <label for="ioText" class="small muted">붙여넣을 곳</label><textarea class="io" id="ioText"></textarea>`}</div>`;
@@ -2424,7 +2434,7 @@ async function acctApi(op, o = {}) {
   return j;
 }
 function acctSet(id, token) { try { localStorage.setItem('dd-acct', token); localStorage.setItem('dd-acct-id', id); localStorage.removeItem('dd-synced'); } catch (e) {} acctBtn(); }
-function acctClear() { try { localStorage.removeItem('dd-acct'); localStorage.removeItem('dd-acct-id'); } catch (e) {} acctBtn(); }
+function acctClear() { try { localStorage.removeItem('dd-acct'); localStorage.removeItem('dd-acct-id'); localStorage.removeItem('dd-sbshelf'); } catch (e) {} acctBtn(); }
 function acctBtn() { const b = $('#acctBtn'); if (b) b.textContent = ACC.id ? '👤 ' + ACC.id : '로그인'; }
 const LISTS = ['bm', 'ul', 'hist'];
 let syncing = false;
@@ -2458,6 +2468,9 @@ async function syncNow() {
       if (!(k in data) || x.t > (mm[k] || 0)) { const cur = localStorage.getItem('dd-' + k), nv = JSON.stringify(x.v); if (cur !== nv) { localStorage.setItem('dd-' + k, nv); changed = true; } mm[k] = x.t; }
     }
     localStorage.setItem('dd-synct', JSON.stringify(mm));
+    // 그림책 사이트에서 읽던 책(sb-b-<책>, 책갈피 _marks 는 뺌)은 보기만 하는 사본으로 (운영자 요청, 2026-11-24)
+    const sb = {}; for (const [k, x] of Object.entries(j.data || {})) if (k.startsWith('sb-b-') && k !== 'sb-b-_marks' && x && x.v && !x.v.del) sb[k.slice(5)] = x.v;
+    { const nv = JSON.stringify(sb); if (localStorage.getItem('dd-sbshelf') !== nv) { localStorage.setItem('dd-sbshelf', nv); changed = true; } }
     if (changed && $('#app') && $('#app').dataset.page === 'mynotes') renderNotes();
   } catch (e) {} finally { syncing = false; }
 }
