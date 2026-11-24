@@ -431,7 +431,13 @@ function initLibrary() {
   $$('.filters input[data-f]').forEach(c => c.onchange = () => { run(); sync(); });
   showEmpty.onchange = () => { store.set('showEmpty', showEmpty.checked); run(); };
   $('#sort').onchange = sortBy;
-  if (window.innerWidth < 520) $('.filter-toggle').open = false;
+  // 휴대폰: 분류는 이름만 보이고 눌러야 펼침 — 고른 항목이 있는 분류와 ?open= 으로 온 분류만 펼침
+  // (첫 화면 '수행전통으로 둘러보기 → 도서관에서 찾아보기'는 ?open=trad: 찾아보기를 열고 수행전통만 펼침 — 운영자 요청, 2026-11-24)
+  const openSec = q.get('open');
+  if (window.innerWidth < 520) {
+    $('.filter-toggle').open = !!openSec;
+    $$('.filters .fsec').forEach(d => { d.open = d.dataset.sec === openSec || !!$('input[data-f]:checked', d); });
+  } else $$('.filters .fsec > summary').forEach(s => s.addEventListener('click', e => e.preventDefault()));  // 컴퓨터는 늘 펼침
   run();
 }
 

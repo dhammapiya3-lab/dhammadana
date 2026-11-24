@@ -1589,3 +1589,18 @@ h1,h2,h3,.ch-head,.s-h1{word-break:keep-all;overflow-wrap:break-word}
 
 /* 주 메뉴의 다른 사이트 연결(그림책) 화살표 (운영자 요청, 2026-11-24) */
 nav.main a .ext{font-size:.92em;opacity:.75}
+
+/* 찾아보기 분류 접기 — 휴대폰에서만 눌러서 펼침 (운영자 요청, 2026-11-24) */
+.filters .fsec>summary{list-style:none;display:flex;align-items:center}
+.filters .fsec>summary::-webkit-details-marker{display:none}
+.filters .fsec>summary h3{margin:20px 0 8px}
+.filters .fsec:first-child>summary h3{margin-top:0}
+@media (min-width:521px){.filters .fsec>summary{cursor:default}}
+@media (max-width:520px){
+  .filters .fsec{border-bottom:1px solid var(--line)}
+  .filters .fsec>summary{cursor:pointer;padding:12px 2px;justify-content:space-between}
+  .filters .fsec>summary h3{margin:0;font-size:14px;letter-spacing:0;text-transform:none;color:var(--ink)}
+  .filters .fsec>summary::after{content:"▸";font-size:13px;color:var(--ink-soft)}
+  .filters .fsec[open]>summary::after{content:"▾"}
+  .filters .fsec[open]{padding-bottom:10px}
+}

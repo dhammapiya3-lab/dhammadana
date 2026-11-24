@@ -655,7 +655,7 @@ put('index.html', layout({ simple: '/simple/', ld: { '@context': 'https://schema
   <div><div class="section-head"><h2>주제로 둘러보기</h2><a class="more" href="/library/">모든 주제 →</a></div>
     <div class="chips">${TOPICS.groups.flatMap(g => g.labels).filter(t => countTopic(t) > 0).sort((a, b) => countTopic(b) - countTopic(a)).slice(0, 14).map(t => `<a class="chip" href="/library/?topic=${slugT(t)}">${esc(t)}<span class="n">${countTopic(t)}</span></a>`).join('')}</div></div>
 </section>
-<section class="section wrap"><div class="section-head"><h2>수행전통으로 둘러보기</h2><a class="more" href="/library/">도서관에서 찾아보기 →</a></div>
+<section class="section wrap"><div class="section-head"><h2>수행전통으로 둘러보기</h2><a class="more" href="/library/?open=trad">도서관에서 찾아보기 →</a></div>
   <ul class="trad-grid" role="list">${TRADS.filter(t => t.representatives?.length).sort((a, b) => countTrad(b.id) - countTrad(a.id)).map(t => `<li><a class="trad${countTrad(t.id) ? '' : ' empty'}" href="/library/?trad=${t.id}" aria-label="${esc([t.region, t.name, t.representatives.map(id => teacherById(id)?.name || '').join(' · '), countTrad(t.id) ? '자료 ' + countTrad(t.id) + '권' : '준비 중'].join(' '))}"><div class="k">${esc(t.region)}</div> <div class="nm">${esc(t.name)}</div> <div class="ts">${t.representatives.map(id => esc(teacherById(id)?.name || '')).join(' · ')}</div> <div class="ts" style="margin-top:6px">${countTrad(t.id) ? `자료 ${countTrad(t.id)}권` : '준비 중'}</div></a></li>`).join('')}</ul></section>
 <section class="section wrap sb-new" id="sbNew" data-src="${SB_URL}/new.json"${SB_NEW.length ? '' : ' hidden'}><div class="section-head"><h2>새로 올라온 그림책</h2><a class="more" href="${SB_URL}/">그림책 사이트 →</a></div>
   <p class="small muted sbn-note">테라와다 불교 전통의 이야기를 그림으로 보는 한국어 그림책입니다.</p>
@@ -737,17 +737,19 @@ function libraryBody() {
       <div class="sub" hidden>${ts.map(id => chk('teacher', id, esc(teacherById(id).name), countTeacher(id), (t.representatives || []).includes(id) ? '<span class="rep">대표</span>' : '')).join('')}</div></div>`;
   }
   const topics = TOPICS.groups.map((gr, i) => `<details class="fgroup"${gr.labels.some(l => countTopic(l)) ? ' open' : ''}><summary class="group-name">${esc(gr.name)} <span class="n">${gr.labels.reduce((a, l) => a + countTopic(l), 0)}</span></summary>` + gr.labels.map(l => chk('topic', l, esc(l), countTopic(l))).join('') + '</details>').join('');
+  // 분류마다 접고 펼 수 있게(휴대폰에서만 — 컴퓨터는 늘 펼침, app.js initLibrary) (운영자 요청, 2026-11-24)
+  const sec = (id, title, inner) => `<details class="fsec" data-sec="${id}" open><summary class="fsec-h"><h3>${title}</h3></summary>${inner}</details>`;
   return `<div class="wrap lib"><details class="filter-toggle" open><summary>찾아보기</summary><div class="filters">
-    <h3>주요 자료</h3>${TOPICS.main.map(m => chk('main', m, esc(m), countMain(m))).join('')}
-    <h3>수행전통 · 스승 · 저자</h3>${trad}
-    <label class="small muted" style="margin-top:6px"><input type="checkbox" id="showEmpty">준비 중인 전통도 보기</label>
-    <h3>국가 · 지역</h3>${COUNTRIES.map(c => chk('region', c, esc(c), LIB().filter(b => countriesOf(b).includes(c)).length)).join('')}
-    <h3>주제</h3>${topics}
+    ${sec('main', '주요 자료', TOPICS.main.map(m => chk('main', m, esc(m), countMain(m))).join(''))}
+    ${sec('trad', '수행전통 · 스승 · 저자', `${trad}
+    <label class="small muted" style="margin-top:6px"><input type="checkbox" id="showEmpty">준비 중인 전통도 보기</label>`)}
+    ${sec('region', '국가 · 지역', COUNTRIES.map(c => chk('region', c, esc(c), LIB().filter(b => countriesOf(b).includes(c)).length)).join(''))}
+    ${sec('topic', '주제', topics)}
     <details class="fgroup person-group"><summary class="group-name">지은이·옮긴이</summary>${[...PEOPLE.by.values()].map(o => ({ ...o, n: LIB().filter(b => peopleOf(b).includes(o.key)).length })).filter(o => o.n).sort((a, c) => c.n - a.n || a.name.localeCompare(c.name, 'ko')).map(o => chk('person', o.key, esc(o.name), o.n)).join('')}</details>
-    <h3>협력 단체</h3>${PUBS().map(x => chk('pub', x.key, esc(x.name), LIB().filter(b => pubsAll(b).some(p => p.key === x.key)).length)).join('')}
-    <h3>책 형식</h3>${BTYPES.map(k => chk('btype', k, esc(k), LIB().filter(b => b.book_type === k).length)).join('')}
-    ${LANGS.length ? `<h3>원서의 언어</h3>${LANGS.map(l => chk('lang', l, esc(l), LIB().filter(b => langsOf(b).includes(l)).length)).join('')}` : ''}
-    <h3>형식</h3>${['PDF', 'EPUB', 'HWP', '온라인 읽기', '오디오북', '점자'].map(f => [f, LIB().filter(b => fmtsCard(b).some(x => x.k === f)).length]).filter(([f, n]) => n).map(([f, n]) => chk('fmt', f, f, n)).join('')}
+    ${sec('pub', '협력 단체', PUBS().map(x => chk('pub', x.key, esc(x.name), LIB().filter(b => pubsAll(b).some(p => p.key === x.key)).length)).join(''))}
+    ${sec('btype', '책 형식', BTYPES.map(k => chk('btype', k, esc(k), LIB().filter(b => b.book_type === k).length)).join(''))}
+    ${LANGS.length ? sec('lang', '원서의 언어', LANGS.map(l => chk('lang', l, esc(l), LIB().filter(b => langsOf(b).includes(l)).length)).join('')) : ''}
+    ${sec('fmt', '형식', ['PDF', 'EPUB', 'HWP', '온라인 읽기', '오디오북', '점자'].map(f => [f, LIB().filter(b => fmtsCard(b).some(x => x.k === f)).length]).filter(([f, n]) => n).map(([f, n]) => chk('fmt', f, f, n)).join(''))}
   </div></details>
   <section><div class="toolbar"><div><h1 class="h-page">법보시 도서관</h1><div class="muted small">자료 <span id="libCount">${LIB().length}</span>권</div></div>
     <label class="small">정렬 <select id="sort"><option value="new">최근 등록순</option><option value="title">제목 가나다순</option><option value="author">저자 가나다순</option></select></label></div>
