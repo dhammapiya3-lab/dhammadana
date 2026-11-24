@@ -233,7 +233,7 @@ for (const [k, v] of Object.entries(TEXTS)) put(`t/${k}.json`, JSON.stringify(v)
   const miss = th.filter(b => !PD[b]); if (miss.length) console.warn('published.json 에 처음 공개한 날이 없는 책:', miss.join(', '));
   const list = th.map((slug, i) => { const b = bookInfo(slug); return { slug, title: b.title, sub: b.sub, cover: b.cover, ready: b.ready, unit: b.unit, date: PD[slug] || today, url: `${S.url}/${slug}/`, i }; })
     .sort((a, b) => b.date.localeCompare(a.date) || a.i - b.i).map(({ i, ...x }) => x);
-  put('new.json', JSON.stringify({ tier: KO.tiers[0].name, books: list }));
+  put('new.json', JSON.stringify({ tier: KO.tiers[0].name, books: list, total: { books: PUB.size, stories: Object.keys(READY).length, images: Object.values(READY).reduce((a, b) => a + b, 0) } }));  // total: 도서관 '함께 운영하는 사이트' 칸의 규모
   put('_headers', `/new.json\n  Access-Control-Allow-Origin: *\n  Cache-Control: public, max-age=600\n`); }
 put('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${S.url}/sitemap.xml\n`);
 const urls = ['/', '/about/', ...[...PUB].flatMap(s => [`/${s}/`, ...Object.values(CAT.books[s].stories).map(x => `/${s}/${sid(x.file)}/`)])];
