@@ -1586,3 +1586,6 @@ h1,h2,h3,.ch-head,.s-h1{word-break:keep-all;overflow-wrap:break-word}
 .own-txt b{font-size:16px}
 .own-n{color:var(--ink-soft)}
 @media (max-width:420px){.own-grid{grid-template-columns:1fr}.own-img{width:96px}}
+
+/* 주 메뉴의 다른 사이트 연결(그림책) 화살표 (운영자 요청, 2026-11-24) */
+nav.main a .ext{font-size:.92em;opacity:.75}

@@ -474,7 +474,7 @@ ${ld ? `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\
         <div class="mode-pop" id="fsPop" role="menu"><button data-sfs="0">글자 보통</button><button data-sfs="1" style="font-size:16px">글자 크게</button><button data-sfs="2" style="font-size:18px">글자 아주 크게</button></div></div>
     </div>
   </div>
-  <nav class="main" aria-label="주 메뉴">${NAV.map(([h, l, k]) => `<a href="${h}" data-nav="${k}"${k === nav ? ' class="on" aria-current="page"' : ''}>${l}</a>`).join('')}</nav>
+  <nav class="main" aria-label="주 메뉴">${NAV.map(([h, l, k]) => `<a href="${h}" data-nav="${k}"${k === nav ? ' class="on" aria-current="page"' : ''}>${l}${/^https?:/.test(h) ? '<span class="ext" aria-hidden="true"> ↗</span><span class="sr"> (다른 사이트)</span>' : ''}</a>`).join('')}</nav>
 </div></header>
 <main id="app" data-page="${page}" data-nav="${nav}" data-title="${esc(t)}">
 ${body}
