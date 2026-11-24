@@ -1009,7 +1009,7 @@ async function cafeImage(url) {
   return '';
 }
 for (const p of partners) p._img = p.image || await cafeImage((p.urls || [])[0]);
-const linkGroups = [{ name: '협력 단체', desc: '도서관과 함께 법보시 자료를 나누는 단체입니다.', items: partners.map(p => ({ name: p.name, url: (p.urls || [])[0] || '#', note: p.note || '', img: p._img || '', yt: (p.urls || []).slice(1).find(u => /youtube\.com|youtu\.be/i.test(u)) || '' })) }, ...LINKS];
+const linkGroups = [{ name: '협력 단체', desc: '도서관과 함께 법보시 자료를 나누는 단체입니다.', items: partners.map(p => ({ name: p.name, url: (p.urls || [])[0] || '#', note: p.note || '', img: p._img || '', yt: '' })) }, ...LINKS];  // 협력 단체 카드에는 유튜브 채널 단추를 두지 않음 — 유튜브는 '법문 바로 듣기'에서 (운영자 요청, 2026-11-24)
 // 추천·협력 사이트 맨 위 '함께 운영하는 사이트' (운영자 요청, 2026-11-24 — 다른 사이트도 더할 것이라 간략하게): content/links.json 의 own 목록
 const OWN = (readJSON('links.json').own || []).map(o => o.sb ? { ...o, img: o.img || SB_NEW[0]?.cover || '', stat: SB_DATA.total ? `그림책 ${SB_DATA.total.books}권 · 이야기 ${SB_DATA.total.stories}편` : '' } : o);
 put('links/index.html', layout({
