@@ -238,7 +238,16 @@
     ],
     "shape": "bubble",
     "en": "Hear ye! ye! harbors the “eke loved by the state ephant shall face severe penalty!",
-    "ko": "들으시오!\n왕실 코끼리가 아끼는 개를 숨기는 자는 큰 벌을 받으리라!"
+    "ko": "들으시오!\n왕실 코끼리가 아끼는 개를\n숨기는 자는\n큰 벌을 받으리라!",
+    "rect": [
+     436,
+     78,
+     590,
+     154
+    ],
+    "whole": true,
+    "align": "center",
+    "cover": true
    },
    {
     "shape": "box",
