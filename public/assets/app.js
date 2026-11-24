@@ -562,14 +562,22 @@ document.addEventListener('visibilitychange', () => { if (document.visibilitySta
 const PL = { pl: null, i: 0, list: [] };
 const fmtT = s => { if (!isFinite(s)) return '0:00'; s = Math.floor(s); const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = String(s % 60).padStart(2, '0'); return h ? `${h}:${String(m).padStart(2, '0')}:${x}` : `${m}:${x}`; };
 function epList(plId) { return $$(`[data-epl="${CSS.escape(plId)}"]`).map(e => ({ audio: e.dataset.audio, title: e.dataset.title, plname: e.dataset.plname, sp: e.dataset.sp || '' })); }
+// 듣는 법문을 단순 화면 '이어 듣기'(dd-stalk-hist)에 적음 — 시작·멈춤·5초마다, 몇 초를 들었든 (운영자 요청, 2026-11-24)
+function pHist(t) {
+  const a = $('#pAudio'), e = PL.pl && PL.list[PL.i]; if (!e || !a) return;
+  if (t == null) { if (PL.seekPend) return; t = a.currentTime; }
+  sHistSave({ a: e.audio, t: e.title, pl: e.plname }, e.sp || '/simple/talks/', t || 0, a.duration);
+}
 function playEp(plId, i, list) {
   list = list || epList(plId); if (!list[i]) return;
   PL.pl = plId; PL.i = i; PL.list = list;
   const e = list[i], a = $('#pAudio');
   a.src = e.audio; a.playbackRate = +$('#pRate').value;
   const pos = store.get('ppos-' + e.audio, 0);
-  a.onloadedmetadata = () => { if (pos > 5 && pos < a.duration - 5) a.currentTime = pos; };
+  PL.seekPend = pos > 5;
+  a.onloadedmetadata = () => { if (pos > 5 && pos < a.duration - 5) a.currentTime = pos; PL.seekPend = false; };
   a.play().catch(() => toast('재생 단추를 한 번 더 눌러 주세요'));
+  pHist(pos > 5 ? pos : 0);  // 재생을 시작하자마자 '이어 듣기' 기록에 넣음 — 바로 멈춰도 남게 (운영자 요청, 2026-11-24)
   $('#player').classList.add('show'); document.body.classList.add('has-player');
   $('#pTitle').innerHTML = `${esc(e.title)}<small>${esc(e.plname)}</small>`;
   store.set('plast', { pl: plId, i, list });
@@ -615,11 +623,12 @@ function initPlayer() {
     $('#pCur').textContent = fmtT(a.currentTime); $('#pDur').textContent = fmtT(a.duration);
     if (a.duration && document.activeElement !== $('#pSeek')) $('#pSeek').value = a.currentTime / a.duration * 100;  // 커서가 막대에 있으면 움직이지 않음 — 화면 낭독기가 위치를 계속 읽어 소리가 겹치지 않게 (2026-11-17)
     if (PL.pl && Date.now() - last > 3000) { last = Date.now(); const e = PL.list[PL.i]; store.set('ppos-' + e.audio, a.currentTime);
-      if (a.currentTime > 3) sHistSave({ a: e.audio, t: e.title, pl: e.plname }, e.sp || '/simple/talks/', a.currentTime, a.duration); }  // 일반 화면에서 듣던 법문도 단순 화면 '이어 듣기'·내 서재에 (운영자 요청, 2026-11-18)
+      pHist(); }  // 일반 화면에서 듣던 법문도 단순 화면 '이어 듣기'·내 서재에 (운영자 요청, 2026-11-18)
   };
   a.onplay = () => { $('#pPlay').textContent = '❚❚'; $('#pPlay').setAttribute('aria-label', '일시정지'); };
   a.onpause = () => {
     $('#pPlay').textContent = '▶'; $('#pPlay').setAttribute('aria-label', '재생');
+    if (PL.pl && !a.ended) { store.set('ppos-' + PL.list[PL.i].audio, a.currentTime); pHist(); }
     // 잠겨 있는데 저절로 멈추면(이어폰 빠짐 등) 다시 재생
     if (PL.locked && !a.ended && a.src) setTimeout(() => { if (PL.locked && a.paused && !a.ended) a.play().catch(() => {}); }, 400);
     else wake(false, 'player');
@@ -3116,8 +3125,10 @@ function sPlayerMake() {
     if (STALK.list === list && STALK.idx === i && au.src) { au.play().catch(() => {}); return; }
     STALK.list = list; STALK.idx = i; STALK.page = page; au.src = e.a; au.playbackRate = +q('#sRate').value || 1;
     const sv = store.get(SK, null); if (!from && sv && sv.a === e.a && sv.t > 5) from = sv.t;  // 듣다 멈춘 법문이면 그 자리부터
-    if (from) au.addEventListener('loadedmetadata', () => { try { au.currentTime = from; } catch (x) {} }, { once: true });
+    STALK.seekPend = !!from;
+    if (from) au.addEventListener('loadedmetadata', () => { try { au.currentTime = from; } catch (x) {} STALK.seekPend = false; }, { once: true });
     au.play().catch(() => toast('재생하지 못했습니다. 잠시 뒤 다시 눌러 주세요'));
+    if (!e.ab) { sHistSave(e, e.alt || page, from || 0, 0); }  // 재생을 시작하자마자 '이어 듣기' 기록에 — 바로 멈춰도 남게 (운영자 요청, 2026-11-24)
     const ab = !!e.ab, u = ab ? '장' : '법문';
     [['#sPrev', `앞 ${u}`], ['#sNext', `다음 ${u}`]].forEach(([x, l]) => { q(x).setAttribute('aria-label', l); q(x).title = l; });
     q('#sGoList').textContent = ab ? '읽는 화면으로' : '재생 목록으로';
@@ -3129,7 +3140,7 @@ function sPlayerMake() {
   };
   const step = d => { const j = STALK.idx + d; if (!STALK.list.length || j < 0 || j >= STALK.list.length) { sayKey(cur() && cur().ab ? (d > 0 ? '마지막 장입니다' : '첫 장입니다') : (d > 0 ? '마지막 법문입니다' : '첫 법문입니다')); return; } play(STALK.list, j, 0, STALK.page); };
   STALK.play = play;
-  const savePos = () => { if (!cur() || !au.src) return; if (cur().ab) sAbSave(cur(), au.currentTime); else { store.set(SK, { a: cur().a, t: au.currentTime, p: STALK.page }); if (au.currentTime > 3) sHistSave(cur(), cur().alt || STALK.page, au.currentTime, au.duration); } };
+  const savePos = () => { if (!cur() || !au.src) return; if (cur().ab) sAbSave(cur(), au.currentTime); else { if (STALK.seekPend) return; store.set(SK, { a: cur().a, t: au.currentTime, p: STALK.page }); sHistSave(cur(), cur().alt || STALK.page, au.currentTime, au.duration); } };
   q('#sClose').onclick = () => {
     savePos(); au.pause(); STALK.closed = true; el.remove(); document.body.classList.remove('s-docked'); sBarH();
     const old = $('#sReopen'); if (old) old.remove();
@@ -3145,7 +3156,8 @@ function sPlayerMake() {
   q('#sBack15').onclick = () => { au.currentTime = Math.max(0, au.currentTime - 15); }; q('#sFwd15').onclick = () => { au.currentTime = Math.min(au.duration || 1e9, au.currentTime + 15); };
   q('#sRate').onchange = e => { au.playbackRate = +e.target.value || 1; store.set('stalk-rate', au.playbackRate); };
   au.addEventListener('play', setBtn); au.addEventListener('pause', setBtn);
-  au.addEventListener('timeupdate', () => { q('#sTime').textContent = `${sFmtT(au.currentTime)} / ${sFmtT(au.duration)}`; skSync(); if (cur() && Date.now() - lastSave > 5000) { lastSave = Date.now(); if (cur().ab) sAbSave(cur(), au.currentTime); else { store.set(SK, { a: cur().a, t: au.currentTime, p: STALK.page }); if (au.currentTime > 3) sHistSave(cur(), cur().alt || STALK.page, au.currentTime, au.duration); } } if (cur() && cur().ab) { sAbFollow(cur(), au.currentTime); } });
+  au.addEventListener('pause', () => { if (!au.ended) savePos(); });  // 멈추면 그 자리를 바로 '이어 듣기'에 (2026-11-24)
+  au.addEventListener('timeupdate', () => { q('#sTime').textContent = `${sFmtT(au.currentTime)} / ${sFmtT(au.duration)}`; skSync(); if (cur() && Date.now() - lastSave > 5000) { lastSave = Date.now(); if (cur().ab) sAbSave(cur(), au.currentTime); else if (!STALK.seekPend) { store.set(SK, { a: cur().a, t: au.currentTime, p: STALK.page }); sHistSave(cur(), cur().alt || STALK.page, au.currentTime, au.duration); } } if (cur() && cur().ab) { sAbFollow(cur(), au.currentTime); } });
   au.addEventListener('ended', () => { if (cur() && cur().ab) { if (STALK.idx + 1 >= STALK.list.length) store.set('abpos-' + cur().ab.id, null); } else { store.set(SK, null); if (cur()) sHistDel(cur().a); } if (STALK.idx + 1 < STALK.list.length) play(STALK.list, STALK.idx + 1, 0, STALK.page); else { now.textContent = '목록의 마지막 법문까지 들었습니다'; setBtn(); } });
   if ('mediaSession' in navigator) { const h = (k, f) => { try { navigator.mediaSession.setActionHandler(k, f); } catch (x) {} }; h('play', () => au.play()); h('pause', () => au.pause()); h('previoustrack', () => step(-1)); h('nexttrack', () => step(1)); h('seekbackward', () => q('#sBack15').click()); h('seekforward', () => q('#sFwd15').click()); }
   return el;
