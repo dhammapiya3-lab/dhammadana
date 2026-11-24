@@ -3,13 +3,18 @@
   "img": "images/012-The-Golden-Deer-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     68,
-     68
-    ],
     "shape": "box",
     "en": "the den Der",
-    "ko": "황금 사슴"
+    "ko": "황금 사슴",
+    "rect": [
+     66,
+     56,
+     248,
+     104
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
