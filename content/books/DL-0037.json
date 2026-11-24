@@ -29,12 +29,24 @@
   ],
   "content_languages": [],
   "original_source": "(The Wheel Publication No. 90∼92) Buddhist Publication Society Kandy, Sri Lank. 1987",
-  "parallel_editions": [],
+  "parallel_editions": [
+    {
+      "lang": "en",
+      "title": "The Life of Sariputta",
+      "by": "Nyanaponika Thera",
+      "edition": "Buddhist Publication Society, Kandy · The Wheel Publication No. 90/92 · Copyright © 1987 · BPS Online Edition © (2008) · Digital Transcription Source: BPS Transcription Project · PDF (124쪽)",
+      "url": "https://static.sariputta.com/pdf/tipitaka/1154/wh090_nyanaponika_the-life-of-sariiputta.pdf",
+      "note": "한국어판은 원서와 장 짜임이 달라(〈인간 사아리뿟따〉의 소제목 차례 등) 원서 문단을 한국어판 차례대로 다시 늘어놓고 짝지음 — 옮긴 곳은 원서 칸 아래에 원서 위치를 적음. 한국어판에만 있는 부분(숙세의 서원·과거생 이야기, 상수제자 첫머리, 디이가나카 경에서의 깨달음, 본생경 줄거리 일부 등)과 원서에만 있는 부분(성품 요약, 데와다하 경의 정자, 원서 편자 풀이 등)은 한쪽 칸이 비어 있음. 원서 전자판은 빠알리어 부호를 대부분 뺀 글(Sariputta, Nibbana)."
+    }
+  ],
   "originals": [
     {
       "lang": "영어",
       "mode": "file",
-      "url": "orig/DL-0037/DL-0037_원서_영어.pdf"
+      "url": "orig/DL-0037/DL-0037_원서_영어.pdf",
+      "sources": [
+        "https://static.sariputta.com/pdf/tipitaka/1154/wh090_nyanaponika_the-life-of-sariiputta.pdf"
+      ]
     }
   ],
   "braille": [],
