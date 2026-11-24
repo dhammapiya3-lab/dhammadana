@@ -6,18 +6,26 @@ nothing to commit, working tree clean
 R2 에 올림: 47 개 / 한글판 이야기 320 편
 새 그림책 올림: New-Jataka/003-Serivanija-en 25 장
 새 그림책 올림: New-Jataka/003-Serivanija 25 장
-새 그림책 올림: New-Jataka/004-Culasetthi-en 36 장
-새 그림책 올림: New-Jataka/004-Culasetthi 36 장
-새 그림책: 올린 그림 122 장
+새 그림책: 올린 그림 50 장
 공개 주소 확인: 404 27150바이트
-이야기 New-Jataka/003-Serivanija {'pdf': 19529804, 'zip': 19354237, 'n': 25}
-이야기 New-Jataka/004-Culasetthi {'pdf': 29868346, 'zip': 29687592, 'n': 36}
-책 New-Jataka {'pdf': 106380588, 'pdfs': 19569170, 'zip': 106187262, 'stories': 5, 'n': 138}
-이야기 New-Jataka/003-Serivanija-en {'pdf': 19522865, 'zip': 19324101, 'n': 25}
-이야기 New-Jataka/004-Culasetthi-en {'pdf': 29933492, 'zip': 29730722, 'n': 36}
-책 New-Jataka-en {'pdf': 106413036, 'pdfs': 19732322, 'zip': 106187725, 'stories': 5, 'n': 138}
-내려받기 파일: 6 묶음 새로 만듦
+이야기 New-Jataka/003-Serivanija {'pdf': 19522813, 'zip': 19347246, 'n': 25}
+책 New-Jataka {'pdf': 106373597, 'pdfs': 19568469, 'zip': 106180271, 'stories': 5, 'n': 138}
+이야기 New-Jataka/003-Serivanija-en {'pdf': 19515920, 'zip': 19317156, 'n': 25}
+책 New-Jataka-en {'pdf': 106406091, 'pdfs': 19731713, 'zip': 106180780, 'stories': 5, 'n': 138}
+내려받기 파일: 4 묶음 새로 만듦
 글로 보기: 320 이야기
+remote: Internal Server Error        
+remote: Request ID E3C0:2FAAFB:F096F:29AC4C:6B06205F        
+remote: Time 2026-11-24T23:40:15Z
+To https://github.com/dhammapiya3-lab/dhammadana
+ ! [remote rejected] storybooks -> storybooks (Internal Server Error)
+error: failed to push some refs to 'https://github.com/dhammapiya3-lab/dhammadana'
+remote: Internal Server Error        
+remote: Request ID E3C2:E996F:F26E0:29CA61:6B062060        
+remote: Time 2026-11-24T23:40:17Z
+To https://github.com/dhammapiya3-lab/dhammadana
+ ! [remote rejected] storybooks -> storybooks (Internal Server Error)
+error: failed to push some refs to 'https://github.com/dhammapiya3-lab/dhammadana'
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
