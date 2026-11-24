@@ -622,6 +622,14 @@ collections:
                   - { name: title, label: 강의 제목 (확인용), required: false }
                   - { name: name, label: 파일 이름 }
                   - { name: url, label: 파일 위치, hint: "talk/… (바꾸지 마세요)" }
+          - name: youtube
+            label: "협력 단체 목록에 없는 유튜브 채널 (법문 바로 듣기 '협력단체·법보시 유튜브 채널'에 함께)"
+            widget: list
+            required: false
+            summary: "{{fields.name}}"
+            fields:
+              - { name: name, label: 채널 이름 }
+              - { name: url, label: 유튜브 주소 }
       - name: variants
         label: 표기 사전 (검색용)
         file: content/variants.json

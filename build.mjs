@@ -941,6 +941,8 @@ for (const p of PLAYLISTS) {
   if (!p.fetched) subs = [{ id: 'all', name: '전체 법문', list: (p.episodes || []).map(e => ({ title: e.title, date: e.date || '', duration: e.duration || '', audio: e.audio })) }];
   if (p.order === 'asc' && subs[0].id === 'all') { subs[0].list = [...subs[0].list].reverse().sort((x, y) => (x.t || x.date || '').localeCompare(y.t || y.date || '')); subs[0].asc = true; } // 처음 올린 것부터 (playlists.json order: asc)
   p.subs = subs; p.list = subs[0].list;
+  // '최근 올린 순' 전체 법문 목록의 법문이 재생목록(1강부터)에도 있으면 그 재생목록 화면 — 이어 듣기·다음 법문이 거꾸로 가지 않게 (2026-11-24 이용자 의견: 40강 다음에 39강)
+  p.alt = new Map(); subs.forEach((x, i) => { if (i && x.id !== 'all') x.list.forEach(e => { if (e.audio && !p.alt.has(e.audio)) p.alt.set(e.audio, `/simple/talks/${p.id}/${i + 1}/`); }); });
 }
 // 강의자료 (운영자 요청, 2026-11-23): playlists.json 항목의 materials [{ep, title, name, url}] — 강의(법문)마다 내려받을 파일.
 // ep = 팟빵 법문 번호(없으면 음성 주소로 만든 열쇠). 파일은 관리자 화면 /admin/upload/ '📄 법문 강의자료 올리기'로 R2 talk/<재생목록>/<ep>/ 에.
@@ -951,11 +953,13 @@ const matHtml = (p, e) => { const L = matsOf(p, e); return L.map(m => ` <a class
 // 협력단체·유튜브 채널 (운영자 요청, 2026-11-24): '법문 바로 듣기' 팟빵 채널 목록 아래 '협력단체·유튜브 채널' 제목 + '가나다순' 단추 — 누르면 아래로 채널 목록이 펼쳐짐(새 창으로 유튜브).
 // 채널은 providers.json 협력 단체(partner) 주소 가운데 유튜브 주소 — 관리자 화면 '자료 제공처·협력 단체'의 주소 칸에 넣으면 저절로 들어감.
 const YT_CH = PROVIDERS.filter(p => p.partner).flatMap(p => (p.urls || []).filter(u => /youtube\.com|youtu\.be/i.test(u)).map(u => ({ p, url: u.trim(), handle: (u.match(/youtube\.com\/(@[^/?#]+)/i) || [])[1] || '' })))
+  // 협력 단체 목록에 없는 채널은 playlists.json 의 youtube [{name, url}] (관리자 화면 '법문 재생목록' — 운영자 요청 2026-11-24, 예: 마음문지기)
+  .concat((readJSON('playlists.json').youtube || []).filter(y => y && y.name && y.url).map(y => ({ p: { name: y.name }, url: y.url.trim(), handle: (y.url.match(/youtube\.com\/(@[^/?#]+)/i) || [])[1] || '' })))
   .sort((x, y) => x.p.name.localeCompare(y.p.name, 'ko'));
 const ytBox = () => YT_CH.length ? `<div class="pl-yt"><div class="pl-group" id="ytHead">협력단체·법보시 유튜브 채널</div><details class="yt-sort"><summary aria-describedby="ytHead">가나다순 <span class="muted small">(${YT_CH.length}개 채널)</span></summary><ul class="yt-list">${YT_CH.map(c => `<li><a href="${esc(c.url)}" target="_blank" rel="noopener"><span class="yt-ic" aria-hidden="true">▶</span><span class="yt-nm">${esc(c.p.name)}${c.handle ? ` <span class="muted small">${esc(decodeURIComponent(c.handle))}</span>` : ''}</span><span class="sr">, 유튜브 채널, 새 창</span><span aria-hidden="true">↗</span></a></li>`).join('')}</ul></details></div>` : '';
 function talksBody() {
   let g = '';
-  const row = (p, s, e, i) => `<div class="ep" role="listitem" tabindex="0" data-ep="${i}" data-epl="${p.id}:${s.id}" data-sp="/simple/talks/${p.id}/${p.subs.indexOf(s) + 1}/" data-audio="${esc(e.audio)}" data-title="${esc(e.title)}" data-plname="${esc(p.name + (s.id === 'all' ? '' : ' · ' + s.name))}"${i >= 50 ? ' hidden data-later' : ''}><span class="no">${i + 1}</span><span><span class="et">${esc(e.title)}</span><br><span class="em">${esc(e.date)}</span>${matHtml(p, e)}</span><span class="ed">${esc(e.duration)}</span></div>`;
+  const row = (p, s, e, i) => `<div class="ep" role="listitem" tabindex="0" data-ep="${i}" data-epl="${p.id}:${s.id}" data-sp="${s.id === 'all' && !s.asc && p.alt.get(e.audio) || `/simple/talks/${p.id}/${p.subs.indexOf(s) + 1}/`}" data-audio="${esc(e.audio)}" data-title="${esc(e.title)}" data-plname="${esc(p.name + (s.id === 'all' ? '' : ' · ' + s.name))}"${i >= 50 ? ' hidden data-later' : ''}><span class="no">${i + 1}</span><span><span class="et">${esc(e.title)}</span><br><span class="em">${esc(e.date)}</span>${matHtml(p, e)}</span><span class="ed">${esc(e.duration)}</span></div>`;
   return `<div class="wrap"><div class="prose" style="padding-bottom:0"><h1>법문 바로 듣기</h1><p class="muted">재생목록에서 법문을 골라 바로 들을 수 있습니다. 다른 메뉴로 옮겨 가도 아래 재생기는 계속 재생됩니다.</p></div>
   <div class="talks"><div class="pl-side"><nav class="pl-list" aria-label="법문 모음">${PLAYLISTS.map(x => (x.group !== g ? `<div class="pl-group">${esc(g = x.group)}</div>` : '') + `<button class="pl" data-pl="${x.id}" style="--pl-c:${['#9C5A2E', '#6B7F4E', '#4F6B8A', '#8A5A7A', '#A0812F', '#5E7F7A'][PLAYLISTS.indexOf(x) % 6]}"><span class="n">${esc(x.name)}</span><span class="s">${x.list.length}개${x.subs.length > 1 ? ` · 재생목록 ${x.subs.length - 1}개` : ''} · ${esc(x.source || '')}</span></button>`).join('')}</nav>${ytBox()}</div>
   <section>${PLAYLISTS.map(p => `<div class="pl-panel" data-panel="${p.id}" hidden>
@@ -1164,7 +1168,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
       rows: p.subs.map((x, i) => F(x.name, `/simple/talks/${p.id}/${i + 1}/`, `${x.list.length}개${x.id === 'all' ? (x.asc ? ' · 1강부터' : ' · 최근 올린 순') : ' · 1강부터'}`, '🎧')) });
     p.subs.forEach((x, i) => {
       const nm = p.name + (x.id === 'all' ? '' : ' · ' + x.name);
-      const rows = x.list.flatMap((e, j) => [{ href: e.audio, ic: '▶', kind: 'ep', data: { t: e.title, pl: nm, n: j + 1 }, cols: [e.title, e.date || '', e.duration || ''] },
+      const rows = x.list.flatMap((e, j) => [{ href: e.audio, ic: '▶', kind: 'ep', data: { t: e.title, pl: nm, n: j + 1, ...(x.id === 'all' && !x.asc && p.alt.get(e.audio) ? { alt: p.alt.get(e.audio) } : {}) }, cols: [e.title, e.date || '', e.duration || ''] },
         ...matsOf(p, e).map(m => ({ href: fileUrl(m.url), ic: '📄', kind: 'mat', dl: true, ext: true, cols: [`강의자료 · ${m.name}`, '', `${matExt(m)} 내려받기`] }))]);  // 강의자료 줄은 그 법문 줄 바로 아래 (2026-11-23)
       put(`simple/talks/${p.id}/${i + 1}/index.html`, simpleLayout({ title: nm, path: [...P1, [x.name, '']], up: `/simple/talks/${p.id}/`, normal: `/dhammatalk/?pl=${p.id}`, page: 'simple-talk', status: `법문 ${x.list.length}`,
         body: `<div id="sPlayerSlot"></div>

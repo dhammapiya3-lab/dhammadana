@@ -1549,3 +1549,6 @@ h1,h2,h3,.ch-head,.s-h1{word-break:keep-all;overflow-wrap:break-word}
 .lc-yt{position:absolute;left:86px;bottom:12px;font-size:13px;padding:3px 10px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink)}
 .lc-yt span[aria-hidden]{color:#C4302B;font-size:11px}
 .lc-yt:hover{border-color:var(--robe);text-decoration:none}
+/* 내 서재 폴더: 키보드(Shift·Ctrl+↑↓, Ctrl+Space)로 고른 줄 (운영자 요청, 2026-11-24) */
+.simple-ui .s-list.kbsel>li.picked{background:#fde8e6}
+:root.mode-night .simple-ui .s-list.kbsel>li.picked,:root.mode-contrast .simple-ui .s-list.kbsel>li.picked{background:#3a1512}

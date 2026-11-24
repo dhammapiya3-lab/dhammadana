@@ -3084,7 +3084,7 @@ function sPlayerMake() {
   };
   const step = d => { const j = STALK.idx + d; if (!STALK.list.length || j < 0 || j >= STALK.list.length) { sayKey(cur() && cur().ab ? (d > 0 ? '마지막 장입니다' : '첫 장입니다') : (d > 0 ? '마지막 법문입니다' : '첫 법문입니다')); return; } play(STALK.list, j, 0, STALK.page); };
   STALK.play = play;
-  const savePos = () => { if (!cur() || !au.src) return; if (cur().ab) sAbSave(cur(), au.currentTime); else { store.set(SK, { a: cur().a, t: au.currentTime, p: STALK.page }); if (au.currentTime > 3) sHistSave(cur(), STALK.page, au.currentTime, au.duration); } };
+  const savePos = () => { if (!cur() || !au.src) return; if (cur().ab) sAbSave(cur(), au.currentTime); else { store.set(SK, { a: cur().a, t: au.currentTime, p: STALK.page }); if (au.currentTime > 3) sHistSave(cur(), cur().alt || STALK.page, au.currentTime, au.duration); } };
   q('#sClose').onclick = () => {
     savePos(); au.pause(); STALK.closed = true; el.remove(); document.body.classList.remove('s-docked'); sBarH();
     const old = $('#sReopen'); if (old) old.remove();
@@ -3100,12 +3100,12 @@ function sPlayerMake() {
   q('#sBack15').onclick = () => { au.currentTime = Math.max(0, au.currentTime - 15); }; q('#sFwd15').onclick = () => { au.currentTime = Math.min(au.duration || 1e9, au.currentTime + 15); };
   q('#sRate').onchange = e => { au.playbackRate = +e.target.value || 1; store.set('stalk-rate', au.playbackRate); };
   au.addEventListener('play', setBtn); au.addEventListener('pause', setBtn);
-  au.addEventListener('timeupdate', () => { q('#sTime').textContent = `${sFmtT(au.currentTime)} / ${sFmtT(au.duration)}`; skSync(); if (cur() && Date.now() - lastSave > 5000) { lastSave = Date.now(); if (cur().ab) sAbSave(cur(), au.currentTime); else { store.set(SK, { a: cur().a, t: au.currentTime, p: STALK.page }); if (au.currentTime > 3) sHistSave(cur(), STALK.page, au.currentTime, au.duration); } } if (cur() && cur().ab) { sAbFollow(cur(), au.currentTime); } });
+  au.addEventListener('timeupdate', () => { q('#sTime').textContent = `${sFmtT(au.currentTime)} / ${sFmtT(au.duration)}`; skSync(); if (cur() && Date.now() - lastSave > 5000) { lastSave = Date.now(); if (cur().ab) sAbSave(cur(), au.currentTime); else { store.set(SK, { a: cur().a, t: au.currentTime, p: STALK.page }); if (au.currentTime > 3) sHistSave(cur(), cur().alt || STALK.page, au.currentTime, au.duration); } } if (cur() && cur().ab) { sAbFollow(cur(), au.currentTime); } });
   au.addEventListener('ended', () => { if (cur() && cur().ab) { if (STALK.idx + 1 >= STALK.list.length) store.set('abpos-' + cur().ab.id, null); } else { store.set(SK, null); if (cur()) sHistDel(cur().a); } if (STALK.idx + 1 < STALK.list.length) play(STALK.list, STALK.idx + 1, 0, STALK.page); else { now.textContent = '목록의 마지막 법문까지 들었습니다'; setBtn(); } });
   if ('mediaSession' in navigator) { const h = (k, f) => { try { navigator.mediaSession.setActionHandler(k, f); } catch (x) {} }; h('play', () => au.play()); h('pause', () => au.pause()); h('previoustrack', () => step(-1)); h('nexttrack', () => step(1)); h('seekbackward', () => q('#sBack15').click()); h('seekforward', () => q('#sFwd15').click()); }
   return el;
 }
-const sTalkPageList = () => $$('.s-list > li.k-ep').map(li => ({ a: li.dataset.href || ($('a', li) || {}).href, t: li.dataset.t || ($('.s-c1', li) || li).textContent.trim(), pl: li.dataset.pl || '' }));
+const sTalkPageList = () => $$('.s-list > li.k-ep').map(li => ({ a: li.dataset.href || ($('a', li) || {}).href, t: li.dataset.t || ($('.s-c1', li) || li).textContent.trim(), pl: li.dataset.pl || '', ...(li.dataset.alt ? { alt: li.dataset.alt } : {}) }));
 function sTalkMark() {
   const same = STALK.page === location.pathname;
   $$('.s-list > li.k-ep').forEach((li, i) => { const on = same && i === STALK.idx; li.classList.toggle('playing', on); if (on) li.setAttribute('aria-current', 'true'); else li.removeAttribute('aria-current'); });
@@ -3205,10 +3205,21 @@ function sAbBtn() {
   const b = document.createElement('button'); b.type = 'button'; b.className = 's-btn'; b.id = 'sAb'; b.textContent = '🎧 오디오북'; b.setAttribute('aria-label', '오디오북 듣기 (녹음된 소리, 맨 위 재생기에서 재생)');
   (sp ? sp.parentNode : nav).insertBefore(b, sp ? sp.nextSibling : null); b.onclick = sAbStart;
 }
-function sResumePlay(li) {
-  const e = { a: li.dataset.href, t: li.dataset.t, pl: li.dataset.pl }, src = li.dataset.src, pos = +li.dataset.pos || 0;
+// '최근 올린 순' 전체 법문 목록에서 듣던 법문이 재생목록(1강부터)에도 있으면 그 화면 주소 (빌드가 줄에 data-alt — 2026-11-24)
+async function sTalkAlt(src, a) {
+  try {
+    if (!/^\/simple\/talks\/[^/]+\/\d+\/$/.test(new URL(src, location.href).pathname)) return '';
+    const d = new DOMParser().parseFromString(await (await fetch(src)).text(), 'text/html'), ab = new URL(a, location.href).href;
+    const li = [...d.querySelectorAll('.s-list > li.k-ep')].find(x => { const l = x.querySelector('a'); return l && new URL(l.getAttribute('href'), location.href).href === ab; });
+    return (li && li.dataset.alt) || '';
+  } catch (x) { return ''; }
+}
+async function sResumePlay(li) {
+  const e = { a: li.dataset.href, t: li.dataset.t, pl: li.dataset.pl }, pos = +li.dataset.pos || 0;
+  let src = li.dataset.src;
   sPlayerPlace(true);  // 내 서재처럼 재생기 자리가 없는 화면이면 아래쪽에 붙임(재생 전에 — 재생 중 옮기면 이어 듣기 자리를 놓침)
   STALK.play([e], 0, pos > 5 ? pos : 0, src);  // 바로 재생(누른 즉시 소리가 나게)
+  const alt = await sTalkAlt(src, e.a); if (alt) { src = alt; e.alt = alt; if (STALK.list[0] === e) STALK.page = alt; }  // 예전 기록(전체 법문 목록 주소)도 1강부터 목록으로
   // 내 서재·이어 듣기 폴더에서 골랐으면 그 법문이 있는 '법문 바로 듣기' 목록 화면으로 옮겨 가 듣는 줄에 커서 (운영자 요청, 2026-11-23 — 이용자 의견)
   let su; try { su = new URL(src, location.href); } catch (x) {}
   if (su && /^\/simple\/talks\/[^/]+\/\d+\/$/.test(su.pathname) && su.pathname !== location.pathname && STALK.playing()) {
@@ -3292,7 +3303,34 @@ function sListbox(ul) {
     if (li.dataset.dl) { const a = document.createElement('a'); a.href = h; a.download = ''; document.body.appendChild(a); a.click(); a.remove(); toast('파일을 내려받습니다'); return; }
     sGo(h); };
   pick(sel, false);
+  // 여러 개 고르기(내 서재 폴더 — ul._multi): 윈도 목록과 같은 키 (운영자 요청, 2026-11-24)
+  let anchor = null;
+  const canPick = i => !!(items[i] && items[i].dataset.del);
+  const marks = () => items.filter(li => li.dataset.del && sPicked.has(li.dataset.del)).length;
+  const markSay = () => { const n = marks(); toast(n ? `${n}개 골라짐 — Delete 키로 지웁니다` : '고른 것 없음'); };
+  const setMark = (i, on) => { if (!canPick(i)) return; const k = items[i].dataset.del; if (on) sPicked.add(k); else sPicked.delete(k); ul._show(items[i]); };
+  const clearMarks = () => items.forEach((li, i) => { if (li.dataset.del && sPicked.has(li.dataset.del)) setMark(i, false); });
+  const multiKey = e => {
+    const k = e.key, mv = { ArrowDown: sel + 1, ArrowUp: sel - 1, Home: 0, End: items.length - 1, PageDown: sel + 10, PageUp: sel - 10 }[k];
+    if (mv != null && e.shiftKey && !e.ctrlKey) {  // Shift+↑↓: 처음 고른 줄부터 지금 줄까지 이어서 고름
+      if (anchor == null) anchor = sel;
+      pick(mv); const a = Math.min(anchor, sel), b = Math.max(anchor, sel);
+      items.forEach((li, i) => setMark(i, i >= a && i <= b)); markSay(); return true;
+    }
+    if (mv != null && e.ctrlKey && !e.shiftKey) { pick(mv); return true; }  // Ctrl+↑↓: 고른 것은 그대로 두고 커서만
+    if (e.ctrlKey && !e.shiftKey && (k === ' ' || k === 'Spacebar')) {
+      if (!canPick(sel)) { toast('이 줄은 고를 수 없습니다'); return true; }
+      setMark(sel, !sPicked.has(items[sel].dataset.del)); anchor = sel; markSay(); return true;
+    }
+    if (e.ctrlKey && !e.shiftKey && (k === 'a' || k === 'A')) { items.forEach((li, i) => setMark(i, true)); anchor = null; markSay(); return true; }
+    if (e.ctrlKey || e.shiftKey) return false;
+    if (k === 'Escape' && marks()) { clearMarks(); anchor = null; toast('고른 것을 모두 풀었습니다'); return true; }
+    if (k === 'Delete' && marks()) { ul._delMany(items[sel]); return true; }
+    if (mv != null) { anchor = null; if (!ul._clearKeep && marks()) { clearMarks(); toast('고른 것이 풀렸습니다'); } }
+    return false;
+  };
   ul.addEventListener('keydown', e => {
+    if (ul._multi && !e.altKey && !e.metaKey && multiKey(e)) { e.preventDefault(); return; }
     if (e.altKey || e.ctrlKey || e.metaKey) return;
     const k = e.key;
     if (k === 'ArrowDown') pick(sel + 1); else if (k === 'ArrowUp') pick(sel - 1);
@@ -3524,13 +3562,42 @@ function initSimpleMine() {
       for (const k of [...sPicked]) if (!dels.some(li => li.dataset.del === k)) sPicked.delete(k);
       dels.forEach(li => sPickShow(li));
       ul._pick = li => { const k = li.dataset.del, on = !sPicked.has(k); if (on) sPicked.add(k); else sPicked.delete(k); sPickShow(li); sPickBar(); sayKey(`${li.dataset.nm || ''} ${on ? '골라짐' : '고르기 풀림'}. 지금 고른 기록 ${sPicked.size}개`); };
+    } else {
+      // 윈도 목록처럼 키보드로 여러 개 고르기 (운영자 요청, 2026-11-24 — 이용자 의견): Shift+↑↓ 이어서 고르기, Ctrl+↑↓ 고르지 않고 옮기기,
+      // Ctrl+Space 이 줄 고르기·풀기, Ctrl+A 모두, Esc 풀기, Delete 고른 기록 지우기(한 번 더 물음) — '지울 기록 고르기'는 그대로
+      if (!sDelKeep) sPicked.clear();
+      for (const k of [...sPicked]) if (!dels.some(li => li.dataset.del === k)) sPicked.delete(k);
+      dels.forEach(li => { if (sPicked.has(li.dataset.del)) sKbShow(li); });
     }
+    ul._multi = !!f; ul.classList.toggle('kbsel', !!f && !mode);
+    ul._show = li => (mode ? (sPickShow(li), sPickBar()) : sKbShow(li));
+    ul._clearKeep = mode;  // 지울 기록 고르기 중에는 ↑↓ 로 고른 것이 풀리지 않음
+    ul._delMany = back => sDelMany(back);
     if (f) {
       root.insertAdjacentHTML('beforeend', `<div class="s-del-row" id="sDelRow"></div>`);
       sPickBar();
     } else root.insertAdjacentHTML('beforeend', `<p class="s-del-row"><span class="s-del-hint">기록을 여러 개 지우려면 폴더를 열고 '🗑 지울 기록 고르기'를 누르세요. 컴퓨터에서는 줄에서 Delete 키로 그 줄을 지울 수 있습니다.</span></p>`);
   }
+  // 목록은 늘 여기서 키보드 목록으로 — 전에는 '지울 기록 고르기'를 켰다 끄면 목록이 보통 링크로 남아, 법문 줄에서 Enter 를 누르면
+  // 재생기 대신 팟빵 소리 파일 주소로 넘어갔음 (2026-11-24 이용자 의견 '바로 팟빵 링크로 이동')
+  const lul = $('.s-list', root); if (lul && !lul._lb) lul._lb = sListbox(lul);
   sStat(stat); if (!sDelKeep) sFocusFirst();
+}
+// 키보드로 고른 줄 표시(지울 기록 고르기를 켜지 않았을 때): 고르면 ☑, 풀면 원래 아이콘
+function sKbShow(li) {
+  const on = sPicked.has(li.dataset.del), ic = $('.s-ic', li);
+  if (ic) { if (ic.dataset.ic0 == null) ic.dataset.ic0 = ic.textContent; ic.textContent = on ? '☑' : ic.dataset.ic0; }
+  li.classList.toggle('picked', on);
+  let sr = $('.s-pk', li); if (!sr) { sr = document.createElement('span'); sr.className = 'sr s-pk'; (li.firstElementChild || li).appendChild(sr); }
+  sr.textContent = on ? ', 골라짐' : '';
+}
+function sDelMany(back) {
+  const lis = $$('#sMine .s-list > li[data-del]'), ks = [...sPicked].filter(k => lis.some(li => li.dataset.del === k)); if (!ks.length) return;
+  const nms = ks.map(k => (lis.find(li => li.dataset.del === k) || {}).dataset).filter(Boolean).map(d => d.nm);
+  sAsk(ks.length === 1 ? `${nms[0]} 기록을 지울까요?` : `고른 기록 ${ks.length}개를 지울까요? ${nms.slice(0, 6).join(', ')}${nms.length > 6 ? ` 외 ${nms.length - 6}개` : ''}.`, () => {
+    ks.forEach(sDelDo); sPicked.clear(); sDelOn = false;
+    sDelDone(ks.length === 1 ? `${nms[0]} 기록을 지웠습니다` : `기록 ${ks.length}개를 지웠습니다`);
+  }, back);
 }
 let sDelOn = false, sDelKeep = false, sDelF = null;
 const sPicked = new Set();
