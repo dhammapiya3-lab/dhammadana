@@ -31,7 +31,16 @@
   ],
   "content_languages": [],
   "original_source": "Compiled by The Venerable Phra Acharn Maha Boowa Nyanasampanno Of Wat Pa Barn Tard, Udorn Thani Translated into English By M Siri Buddhasukh, 1976년.",
-  "parallel_editions": [],
+  "parallel_editions": [
+    {
+      "lang": "en",
+      "title": "The Venerable Phra Acharn Mun Bhuridatta Thera, Meditation Master",
+      "by": "Phra Acharn Maha Boowa Ñāṇasampanno (compiled) · M. Siri Buddhasukh (English translation)",
+      "edition": "English translation 1976 (Translator's Preface, 22 December 2519/1976) · electronic transcription of the second printing (1982) by Ong Lee Lin, Li Chun and Paul Trafford, 3 April 2002 · FOR FREE DISTRIBUTION · PDF (238쪽)",
+      "url": "",
+      "note": "한국어판은 원서를 줄이거나 차례를 바꿔 옮긴 곳이 많고 소제목은 대부분 역자가 붙인 것 — 차례가 바뀐 원서 문단은 한국어판 차례대로 옮겨 짝짓고 원서 칸 아래에 원서 위치를 적음. 한국어판에만 있는 부분(역자 서문, 장마다 첫머리 시, 장 제목 줄, 판권·명상원 안내 등)과 원서에만 있는 부분(Writer's Note·Translator's Preface·Transcribers' Note·차례, 나가·천인 방문 일과(원서 533~546), 보리수·사진 이야기(원서 1199~1210) 등)은 한쪽 칸이 비어 있음. 원서 전자판은 빠알리어 부호를 대부분 뺀 글."
+    }
+  ],
   "originals": [
     {
       "lang": "영어",
