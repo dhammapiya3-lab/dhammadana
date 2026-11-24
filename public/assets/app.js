@@ -1316,6 +1316,14 @@ function bindReader() {
     }
     const ch = n => { const c = chapters()[chapterOf(n)]; return c && c.title ? c.title : ''; };
     R.findTerms = terms;
+    // 원서 대조를 켜 두었으면 원서 글에서도 찾음 — 결과를 누르면 그 원서 문단(문장마다 보기는 그 문장 줄)으로 (운영자 요청, 2026-11-25)
+    const oHits = [], D = R.parMode && R.parMode !== 'off' && R.parD;
+    if (D) { const O = D.orig || [], seen = new Set();
+      D.groups.forEach(g => { if (g.toc || !g.ko.length) return; const [n, k] = g.ko[0].split(':').map(Number);
+        (g.or || []).forEach(i => { const o = O[i]; if (!o || seen.has(i)) return; seen.add(i); const tx = plainT(o.t);
+          if (terms.some(x => norm(tx).includes(x))) oHits.push({ n, k, o: i, pg: o.pg, s: snippet(tx, terms) || tx.slice(0, 80) }); }); });
+      oHits.sort((a, b) => a.n - b.n || a.k - b.k); }
+    const oLang = D ? ({ en: '영어', my: '미얀마어', pi: '빠알리어', th: '태국어' }[D.lang] || '') : '';
     // 쪽 번호로 찾기: '74', '74쪽', 'p.74', '74페이지' → 그 쪽으로 가는 줄을 맨 위에 (운영자 요청, 2026-11-10)
     const pm = q.replace(/\s+/g, '').match(/^(?:p\.?|pp\.?)?(\d{1,4})(?:쪽|페이지|면|p)?$/i);
     let pgHits = pm ? R.pages.filter(x => String(x.label || '').replace(/쪽$/, '') === pm[1]) : [];
@@ -1337,14 +1345,55 @@ function bindReader() {
     const fnHtml = fnHits.map(x => `<li><button class="link" data-find="${x.n}" data-k="${x.k}"><span class="muted small">${esc(pageName(R.pages[x.n - 1]))}${ch(x.n) ? ' · ' + esc(ch(x.n)) : ''}</span><br><b>${x.def ? '📝 각주 ' + fm[1] + ' 내용' : '📝 각주 ' + fm[1] + ' 본문 자리'}</b> ${phMark(esc(x.s))}${x.def ? '' : '<sup>' + fm[1] + '</sup>'}</button></li>`).join('');
     const pgHtml = pgHits.map(x => `<li><button class="link" data-find="${x.n}" data-k="-1"><b>📄 ${esc(pgVia || pageName(x))}으로 가기</b>${ch(x.n) ? `<br><span class="muted small">${esc(ch(x.n))}</span>` : ''}</button></li>`).join('');
     R.findRes = `<p class="note">${pgHits.length ? `${esc(pgVia || pageName(pgHits[0]))}이 있습니다. ` : ''}${fnHits.length ? `각주 ${fm[1]}번이 있습니다. ` : ''}${hits.length ? `${hits.length}곳을 찾았습니다.` : pgHits.length || fnHits.length ? '' : '찾는 말이 없습니다.'}${group ? ` (${group.map(esc).join(', ')} 함께 찾음)` : ''}</p>
-      <ul class="find-list">${pgHtml}${fnHtml}${hits.slice(0, 200).map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}"><span class="muted small">${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span><br>${phMark(hl(h.s, terms))}</button></li>`).join('')}</ul>${hits.length > 200 ? '<p class="note">앞의 200곳만 보입니다. 더 자세한 말로 찾아보세요.</p>' : ''}`;
+      <ul class="find-list">${pgHtml}${fnHtml}${hits.slice(0, 200).map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}"><span class="muted small">${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span><br>${phMark(hl(h.s, terms))}</button></li>`).join('')}</ul>${hits.length > 200 ? '<p class="note">앞의 200곳만 보입니다. 더 자세한 말로 찾아보세요.</p>' : ''}`
+      + (D ? `<p class="note find-or-h"><b>${esc(oLang)} 원서에서</b> ${oHits.length ? `${oHits.length}곳을 찾았습니다.` : '찾는 말이 없습니다.'}</p>${oHits.length ? `<ul class="find-list find-or" lang="${esc(D.lang || '')}">${oHits.slice(0, 200).map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}" data-o="${h.o}"><span class="muted small" lang="ko">${esc(oLang)} 원서${h.pg ? ' ' + esc(h.pg) + '쪽' : ''} · 번역 ${esc(pageName(R.pages[h.n - 1]))}</span><br>${hl(h.s, terms)}</button></li>`).join('')}</ul>${oHits.length > 200 ? '<p class="note">앞의 200곳만 보입니다.</p>' : ''}` : ''}` : '');
     $('#findRes').innerHTML = R.findRes; bindFind();
   };
   const bindFind = () => $$('[data-find]', el).forEach(b => b.onclick = () => {
     const n = +b.dataset.find, k = +b.dataset.k; R.hl = k < 0 ? [] : (R.findTerms || []);
     R.i = n - 1; stopSpeak(false); renderReader(); if (k >= 0) $('#p-find').classList.add('open');  // 쪽으로 가기는 찾기 창을 닫고 그 쪽 첫머리로
-    const t = k < 0 ? $('#pm-' + n) : $(`[data-pg="${n}"][data-s="${k}"]`); if (t) { t.scrollIntoView({ block: k < 0 ? 'start' : 'center' }); t.classList.add('found'); setTimeout(() => t.classList.remove('found'), 1800); }
+    if (k < 0) { const t = $('#pm-' + n); if (t) { t.scrollIntoView({ block: 'start' }); t.classList.add('found'); setTimeout(() => t.classList.remove('found'), 1800); } return; }
+    findAt(n, k, b.dataset.o != null ? +b.dataset.o : null);
   });
+  // 찾은 문단을 화면 가운데에 — 원서 대조(문단 나란히·문장마다)·그림·글꼴이 늦게 그려져 글이 밀려도 몇 초 동안 자리를 다시 맞춤,
+  // 읽는 분이 직접 넘기면 그만 (운영자 요청, 2026-11-25 — 찾은 곳 대신 그 쪽 첫머리가 보이던 것)
+  const findAt = (n, k, oi) => {
+    const body = $('#rBody'); if (!body) return;
+    const key = `${n}:${k}`, terms = R.findTerms || [];
+    const hasT = e => terms.some(x => norm(e.textContent).includes(x));
+    const target = () => {
+      if (oi != null) {   // 원서에서 찾은 곳: 문단 나란히는 원서 문단, 문장마다는 그 원서 문단의 문장 줄
+        const op = $(`#rBody .par-or p[data-o="${oi}"]`); if (op && op.getClientRects().length) return op;
+        const rows = $$('#rBody .ps[data-o]').filter(r => r.dataset.o.split(' ').includes(String(oi)));
+        const r = rows.find(x => hasT(x.querySelector('.ps-o') || x)) || rows[0]; if (r) return r;
+      }
+      const p = $(`#rBody [data-pg="${n}"][data-s="${k}"]`);
+      if (p && p.getClientRects().length) return p;
+      // 문장마다 보기: 문단은 숨고 문장 줄(.ps)이 보임 — 찾는 말이 든 문장 줄, 없으면 그 문단의 첫 문장 줄
+      const rows = $$('#rBody .ps[data-k]').filter(r => r.dataset.k.split(' ').includes(key));
+      return rows.find(r => hasT(r)) || rows[0] || p;
+    };
+    let t = target(); if (!t) return;
+    // 찾은 말이 있는 줄을 화면 가운데에 (긴 문단은 문단 가운데가 아니라 그 말이 있는 자리로)
+    const hitY = e => {
+      const m = e.querySelector('mark'); if (m) { const b = m.getBoundingClientRect(); if (b.height) return b.top + b.height / 2; }
+      if (!terms.length) return null; const w = document.createTreeWalker(e, NodeFilter.SHOW_TEXT); let nd;
+      while ((nd = w.nextNode())) {   // 글자마다 norm 해서(ā=a) 찾는 말의 첫 글자 자리
+        let flat = '', at = []; for (let i = 0; i < nd.length; i++) { const c = norm(nd.data[i]) || (/\s/.test(nd.data[i]) ? ' ' : ''); for (const _ of c) at.push(i); flat += c; }
+        for (const x of terms) { const j = flat.indexOf(x); if (j >= 0) { const r = document.createRange(); r.setStart(nd, at[j]); r.setEnd(nd, Math.min(nd.length, at[j] + 1)); const b = r.getBoundingClientRect(); if (b.height) return b.top + b.height / 2; } }
+      }
+      return null;
+    };
+    const place = () => { const e = target(); if (!e) return; t = e; const br = body.getBoundingClientRect(), er = e.getBoundingClientRect();
+      const y = hitY(e), mid = y != null ? y : (er.height > body.clientHeight * 0.6 ? er.top + body.clientHeight * 0.3 : er.top + er.height / 2);
+      const want = Math.max(0, mid - br.top + body.scrollTop - body.clientHeight / 2); if (Math.abs(want - body.scrollTop) > 2) body.scrollTop = want; };
+    place(); t.classList.add('found'); setTimeout(() => t.classList.remove('found'), 2500);
+    let on = true; const t0 = Date.now();
+    const stop = () => { on = false; body.removeEventListener('wheel', stop); body.removeEventListener('touchstart', stop); body.removeEventListener('mousedown', stop); };
+    body.addEventListener('wheel', stop, { passive: true }); body.addEventListener('touchstart', stop, { passive: true }); body.addEventListener('mousedown', stop);
+    const tick = () => { if (!on || Date.now() - t0 > 3000) return stop(); place(); requestAnimationFrame(tick); };
+    requestAnimationFrame(tick);
+  };
   bindFind();
   $$('[data-zoom-img]', el).forEach(b => b.onclick = () => zoomView(`<img src="${esc(b.dataset.zoomImg)}" alt="${esc(b.dataset.cap)}">`, b.dataset.cap || '그림'));
   $$('[data-zoom-tbl]', el).forEach(b => b.onclick = () => zoomView(b.parentElement.querySelector('table').outerHTML, '표'));
@@ -2824,7 +2873,7 @@ function parApply() {
     const last = els[els.length - 1];
     if (R.parMode === 'para') {
       const box = document.createElement('div'); box.className = 'par-or'; box.lang = D.lang; box.dataset.g = gi;
-      box.innerHTML = g.or.map(i => { const o = O[i]; return `<p class="${o.k === 'h' ? 'par-h' : o.k === 'gl' ? 'par-gl' : o.k === 'cite' ? 'par-cite' : o.k === 'pv' ? 'par-pv' : ''}">${oHtml(o.t)}</p>`; }).join('') + (O[g.or[0]].pg !== lastPg && !g.note ? `<span class="par-pg" aria-hidden="true">${esc(lang)} 원서 ${esc(O[g.or[0]].pg ? O[g.or[0]].pg + '쪽' : '')}${O[g.or[0]].pdf && O[g.or[0]].pdf !== O[g.or[0]].pg ? ` (PDF ${esc(O[g.or[0]].pdf)}쪽)` : ''}</span>` : '') + (g.note ? `<p class="par-note" lang="ko">※ ${esc(g.note)}</p>` : '');   // 원서와 순서가 다른 짝 메모 (운영자 요청, 2026-11-17 — DL-0005)
+      box.innerHTML = g.or.map(i => { const o = O[i]; return `<p class="${o.k === 'h' ? 'par-h' : o.k === 'gl' ? 'par-gl' : o.k === 'cite' ? 'par-cite' : o.k === 'pv' ? 'par-pv' : ''}" data-o="${i}">${oHtml(o.t)}</p>`; }).join('') + (O[g.or[0]].pg !== lastPg && !g.note ? `<span class="par-pg" aria-hidden="true">${esc(lang)} 원서 ${esc(O[g.or[0]].pg ? O[g.or[0]].pg + '쪽' : '')}${O[g.or[0]].pdf && O[g.or[0]].pdf !== O[g.or[0]].pg ? ` (PDF ${esc(O[g.or[0]].pdf)}쪽)` : ''}</span>` : '') + (g.note ? `<p class="par-note" lang="ko">※ ${esc(g.note)}</p>` : '');   // 원서와 순서가 다른 짝 메모 (운영자 요청, 2026-11-17 — DL-0005)
       lastPg = O[g.or[g.or.length - 1]].pg;
       const vis = els.filter(e => e.getClientRects().length);   // 장 제목과 같아 숨긴 글(ch-dup)은 빼고
       if (wide && vis.length) {   // 넓은 화면: 같은 줄 오른쪽 칸 (한국어 문단 수만큼 줄을 차지)
@@ -2838,7 +2887,8 @@ function parApply() {
       box.innerHTML = g.s.map(p => {
         const ko = p.ko.map(([k, a, b]) => parBal(kText(k), a, b)).join(' '), or = p.or.map(([i, a, b]) => parBal(O[i].t, a, b)).join(' ');
         const onlyHead = p.ko.length && p.ko.every(([k]) => heads.some(e => `${e.dataset.pg}:${e.dataset.s}` === k));
-        return onlyHead ? (or ? `<div class="ps ps-hd"><div class="ps-o" lang="${D.lang}">${oHtml(or)}</div></div>` : '') : `<div class="ps">${ko ? `<div class="ps-k">${kHtml(ko)}</div>` : ''}${or ? `<div class="ps-o" lang="${D.lang}">${oHtml(or)}</div>` : ''}</div>`;
+        const pk = p.ko.map(([k]) => k).join(' '), po = p.or.map(([i]) => i).join(' ');   // 찾기 결과에서 그 문단·원서 문단의 문장 줄을 찾을 수 있게 (2026-11-25)
+        return onlyHead ? (or ? `<div class="ps ps-hd" data-k="${pk}" data-o="${po}"><div class="ps-o" lang="${D.lang}">${oHtml(or)}</div></div>` : '') : `<div class="ps" data-k="${pk}" data-o="${po}">${ko ? `<div class="ps-k">${kHtml(ko)}</div>` : ''}${or ? `<div class="ps-o" lang="${D.lang}">${oHtml(or)}</div>` : ''}</div>`;
       }).join('') + (g.note ? `<p class="par-note">※ ${esc(g.note)}</p>` : '');
       els.forEach(e => { if (!heads.includes(e)) e.classList.add('par-hide'); });
       last.after(box);
