@@ -220,7 +220,7 @@ async function initMembers() {
   if ($('#stQ')) $('#stQ').oninput = run;
   if ($('#stSort')) $('#stSort').onchange = () => { const g = $('#stGrid'), v = $('#stSort').value; $$('.book', g).sort((a, b) => v === 'title' ? a.dataset.title.localeCompare(b.dataset.title, 'ko') : v === 'author' ? ((a.dataset.author || '').localeCompare(b.dataset.author || '', 'ko') || (+a.dataset.ord || 0) - (+b.dataset.ord || 0)) : (b.dataset.added || '').localeCompare(a.dataset.added || '')).forEach(x => g.appendChild(x)); };
   if ($('#stSort')) $('#stSort').onchange();
-  if (window.innerWidth < 520 && $('.filter-toggle', root)) $('.filter-toggle', root).open = false;
+  if (matchMedia('(max-width:520px)').matches && $('.filter-toggle', root)) $('.filter-toggle', root).open = false;
   const detail = () => {
     const hp = decodeURIComponent(location.hash.slice(1)).split('/');
     const it = byId[hp[0]], d = $('#stDetail');
@@ -434,7 +434,8 @@ function initLibrary() {
   // 휴대폰: 분류는 이름만 보이고 눌러야 펼침 — 고른 항목이 있는 분류와 ?open= 으로 온 분류만 펼침
   // (첫 화면 '수행전통으로 둘러보기 → 도서관에서 찾아보기'는 ?open=trad: 찾아보기를 열고 수행전통만 펼침 — 운영자 요청, 2026-11-24)
   const openSec = q.get('open');
-  if (window.innerWidth < 520) {
+  // 휴대폰 판단은 CSS 와 같은 기준(matchMedia) — innerWidth 는 휴대폰에서 화면보다 넓게 나올 때가 있음(가로로 넘치는 메뉴 줄 등, 2026-11-24)
+  if (matchMedia('(max-width:520px)').matches) {
     $('.filter-toggle').open = !!openSec;
     $$('.filters .fsec').forEach(d => { d.open = d.dataset.sec === openSec || !!$('input[data-f]:checked', d); });
   } else $$('.filters .fsec > summary').forEach(s => s.addEventListener('click', e => e.preventDefault()));  // 컴퓨터는 늘 펼침
@@ -2355,11 +2356,12 @@ function renderNotes() {
       <div class="acts"><a class="btn sm" href="${esc(sbAbs(r.url))}">그림책에서 이어 읽기 ↗</a></div></div></div>`).join('')}</div>`
     : `<p class="muted">${store.get('acct-x', null) === null && (() => { try { return localStorage.getItem('dd-acct'); } catch (e) { return ''; } })() ? '아직 그림책 사이트에서 읽은 기록이 없습니다.' : '그림책 사이트에서 읽은 기록은 같은 아이디로 로그인하면 여기에도 보입니다.'}</p>`)
     + `<p class="small muted" style="margin-top:14px">그림책 사이트(<a href="${SBU}/">storybooks.dhammadana.kr ↗</a>)에서 같은 아이디로 로그인하고 읽은 책이 보입니다. 기록 지우기는 그림책 사이트의 내 서재에서 해 주세요.</p>`;
-  root.innerHTML = `<div class="tabs" role="tablist"><button role="tab" data-ntb="read" class="${notesTab === 'read' ? 'on' : ''}">읽은 책 ${H.length}</button><button role="tab" data-ntb="listen" class="${notesTab === 'listen' ? 'on' : ''}">이어 듣기 ${LS.length}</button><button role="tab" data-ntb="ul" class="${notesTab === 'ul' ? 'on' : ''}">밑줄 ${U.length}</button><button role="tab" data-ntb="bm" class="${notesTab === 'bm' ? 'on' : ''}">책갈피 ${B.length}</button><button role="tab" data-ntb="io" class="${notesTab === 'io' ? 'on' : ''}">옮기기</button><button role="tab" data-ntb="sb" class="${notesTab === 'sb' ? 'on' : ''}">그림책 ${SBL.length}</button></div>
+  root.innerHTML = `<div class="tabs" role="tablist"><button role="tab" data-ntb="read" class="${notesTab === 'read' ? 'on' : ''}">읽은 책 ${H.length}</button><button role="tab" data-ntb="listen" class="${notesTab === 'listen' ? 'on' : ''}">이어 듣기 ${LS.length}</button><button role="tab" data-ntb="ul" class="${notesTab === 'ul' ? 'on' : ''}">밑줄 ${U.length}</button><button role="tab" data-ntb="bm" class="${notesTab === 'bm' ? 'on' : ''}">책갈피 ${B.length}</button><button role="tab" data-ntb="sb" class="${notesTab === 'sb' ? 'on' : ''}">그림책 ${SBL.length}</button></div>
    <div style="max-width:760px">${notesTab === 'read' ? pkBar(H.length) + histHtml : notesTab === 'listen' ? pkBar(LS.length) + lsHtml : notesTab === 'ul' ? (U.some(h => !h.nc) ? `<div style="margin:12px 0"><button class="btn sm ghost" id="copyAll">밑줄 모두 복사 (출처 포함)</button></div>` : '') + ulHtml : notesTab === 'bm' ? bmHtml : notesTab === 'sb' ? sbHtml :
-    `<p>다른 기기로 옮길 때: 아래 ‘내보내기’로 복사한 글을 다른 기기의 이 칸에 붙여넣고 ‘가져오기’를 누르세요. 가져오면 이미 있는 것과 합쳐집니다.</p>
+    `<h2 class="io-h">다른 기기로 기록 옮기기</h2><p>다른 기기로 옮길 때: 아래 ‘내보내기’로 복사한 글을 다른 기기의 이 칸에 붙여넣고 ‘가져오기’를 누르세요. 가져오면 이미 있는 것과 합쳐집니다.</p>
     <div style="display:flex;gap:8px;margin:10px 0"><button class="btn sm ghost" id="ioExport">내보내기 (복사)</button><button class="btn sm" id="ioImport">가져오기</button></div>
-    <label for="ioText" class="small muted">붙여넣을 곳</label><textarea class="io" id="ioText"></textarea>`}</div>`;
+    <label for="ioText" class="small muted">붙여넣을 곳</label><textarea class="io" id="ioText"></textarea>`}</div>
+   <div class="notes-io">${notesTab === 'io' ? `<button class="btn sm ghost" data-ntb="read">← 내 서재로 돌아가기</button>` : `<button class="btn sm ghost" data-ntb="io">📦 다른 기기로 기록 옮기기 (내보내기·가져오기)</button>`}</div>`;
   $$('[data-ntb]', root).forEach(b => b.onclick = () => { if (notesTab !== b.dataset.ntb) nPicked.clear(); notesTab = b.dataset.ntb; renderNotes(); });
   // 여러 개 골라 지우기 (운영자 요청, 2026-11-19) — 한꺼번에 지울 때는 한 번 더 물음
   const pkSync = () => { const n = nPicked.size, all = $$('[data-pk]', root); const g = $('#pkDel', root), a = $('#pkAll', root); if (g) { g.textContent = `고른 것 지우기 (${n}개)`; g.disabled = !n; } if (a) a.textContent = n && n === all.length ? '모두 풀기' : '모두 고르기'; };

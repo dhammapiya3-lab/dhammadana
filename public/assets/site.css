@@ -1604,3 +1604,13 @@ nav.main a .ext{font-size:.92em;opacity:.75}
   .filters .fsec[open]>summary::after{content:"▾"}
   .filters .fsec[open]{padding-bottom:10px}
 }
+/* 주 메뉴 '그림책 ↗'의 숨은 낭독기 글(.sr, absolute)이 메뉴 줄 밖으로 나가 휴대폰 화면이 넓어지던 것 (2026-11-24) */
+[data-nav]{position:relative}
+/* 내 서재 칸 줄: 휴대폰에서 글자가 세로로 쪼개지지 않게 한 줄로, 넘치면 옆으로 밀어 봄 (운영자 요청, 2026-11-24) */
+#notesRoot .tabs{overflow-x:auto;scrollbar-width:none;gap:0}
+#notesRoot .tabs::-webkit-scrollbar{display:none}
+#notesRoot .tabs button{white-space:nowrap;flex:none}
+@media (max-width:520px){#notesRoot .tabs button{padding:10px 8px;font-size:14px}#notesRoot .acts{display:flex;flex-wrap:wrap;align-items:center;gap:8px}#notesRoot .acts .btn,#notesRoot .acts button,#notesRoot .acts label{white-space:nowrap}}
+/* 내 서재 '옮기기'는 칸 줄에서 빼고 아래쪽 단추로 (운영자 요청, 2026-11-24) */
+.notes-io{max-width:760px;margin:28px 0 8px;padding-top:14px;border-top:1px dashed var(--line)}
+.io-h{font-size:18px;margin:16px 0 6px}
