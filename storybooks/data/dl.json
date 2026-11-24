@@ -182,20 +182,20 @@
 },
 "Foremost-Monks": {
 "n": 802,
-"pdf": 1122438835,
-"pdfs": 118343818,
+"pdf": 1122358673,
+"pdfs": 118348169,
 "stories": 38,
-"zip": 1121895984
+"zip": 1121815824
 },
 "Foremost-Monks/01-Kondanna": {
 "n": 38,
-"pdf": 61863124,
-"zip": 61586217
+"pdf": 61865957,
+"zip": 61589050
 },
 "Foremost-Monks/02-03-Sariputta-Moggallana": {
 "n": 57,
-"pdf": 85418311,
-"zip": 85121687
+"pdf": 85406490,
+"zip": 85109866
 },
 "Foremost-Monks/04-Maha-Kassapa": {
 "n": 41,
@@ -204,13 +204,13 @@
 },
 "Foremost-Monks/05-Anuruddha": {
 "n": 53,
-"pdf": 71877067,
-"zip": 71595261
+"pdf": 71861369,
+"zip": 71579562
 },
 "Foremost-Monks/06-Bhaddiya": {
 "n": 15,
-"pdf": 20451443,
-"zip": 20177609
+"pdf": 20421775,
+"zip": 20147941
 },
 "Foremost-Monks/07-Lakundaka": {
 "n": 13,
@@ -219,8 +219,8 @@
 },
 "Foremost-Monks/08-Pindola": {
 "n": 9,
-"pdf": 10465048,
-"zip": 10195075
+"pdf": 10515136,
+"zip": 10245163
 },
 "Foremost-Monks/09-Punna": {
 "n": 15,
@@ -254,8 +254,8 @@
 },
 "Foremost-Monks/16-Sona-Kolivisa": {
 "n": 18,
-"pdf": 24831996,
-"zip": 24561833
+"pdf": 24831316,
+"zip": 24561153
 },
 "Foremost-Monks/17-Sona-Kutikanna": {
 "n": 26,
@@ -274,8 +274,8 @@
 },
 "Foremost-Monks/20-21-Rahula-Ratthapala": {
 "n": 34,
-"pdf": 48909203,
-"zip": 48623812
+"pdf": 48847559,
+"zip": 48562168
 },
 "Foremost-Monks/22-Kundadhana": {
 "n": 15,
@@ -294,8 +294,8 @@
 },
 "Foremost-Monks/25-Dabba": {
 "n": 15,
-"pdf": 18754848,
-"zip": 18484993
+"pdf": 18757914,
+"zip": 18488059
 },
 "Foremost-Monks/26-Pilinda-Vaccha": {
 "n": 12,
@@ -334,8 +334,8 @@
 },
 "Foremost-Monks/33-Bakula": {
 "n": 28,
-"pdf": 38353008,
-"zip": 38082194
+"pdf": 38360266,
+"zip": 38089452
 },
 "Foremost-Monks/34-Sobhita": {
 "n": 14,
@@ -374,15 +374,15 @@
 },
 "Foremost-Monks/41-Mogharaja": {
 "n": 53,
-"pdf": 77937761,
-"zip": 77656867
+"pdf": 77913868,
+"zip": 77632974
 },
 "Foremost-Nuns": {
 "n": 283,
-"pdf": 385963196,
-"pdfs": 40858360,
+"pdf": 385985872,
+"pdfs": 40860404,
 "stories": 13,
-"zip": 385610515
+"zip": 385633191
 },
 "Foremost-Nuns/01-Maha-Pajapati-Gotami": {
 "n": 30,
@@ -406,8 +406,8 @@
 },
 "Foremost-Nuns/05-Dhammadinna": {
 "n": 22,
-"pdf": 29276001,
-"zip": 29005673
+"pdf": 29280929,
+"zip": 29010601
 },
 "Foremost-Nuns/06-Nanda": {
 "n": 12,
@@ -416,8 +416,8 @@
 },
 "Foremost-Nuns/07-Sona": {
 "n": 15,
-"pdf": 18518037,
-"zip": 18253287
+"pdf": 18522057,
+"zip": 18257307
 },
 "Foremost-Nuns/08-Sakula": {
 "n": 15,
@@ -441,8 +441,8 @@
 },
 "Foremost-Nuns/12-Kisa-Gotami": {
 "n": 23,
-"pdf": 34719749,
-"zip": 34448123
+"pdf": 34733477,
+"zip": 34461851
 },
 "Foremost-Nuns/13-Singalakamata": {
 "n": 13,
@@ -478,177 +478,177 @@
 },
 "Jataka": {
 "n": 422,
-"pdf": 496202994,
-"pdfs": 50601940,
+"pdf": 489495504,
+"pdfs": 50178755,
 "stories": 32,
-"zip": 495793233
+"zip": 489085754
 },
 "Jataka/001-The-Waterless-Desert": {
 "n": 15,
-"pdf": 14319693,
-"zip": 14054332
+"pdf": 14217697,
+"zip": 13952334
 },
 "Jataka/002-The-Well-of-Perseverance": {
 "n": 15,
-"pdf": 17831704,
-"zip": 17563581
+"pdf": 17786084,
+"zip": 17517962
 },
 "Jataka/003-The-Golden-Bowl": {
 "n": 14,
-"pdf": 15790538,
-"zip": 15525551
+"pdf": 15756367,
+"zip": 15491379
 },
 "Jataka/004-The-Dead-Mouse": {
 "n": 15,
-"pdf": 17531543,
-"zip": 17268108
+"pdf": 17334563,
+"zip": 17071129
 },
 "Jataka/005-The-Measure-of-Rice": {
 "n": 14,
-"pdf": 17266899,
-"zip": 17003516
+"pdf": 17230306,
+"zip": 16966923
 },
 "Jataka/006-The-Water-Rakkhasa": {
 "n": 15,
-"pdf": 19057938,
-"zip": 18791517
+"pdf": 18957852,
+"zip": 18691431
 },
 "Jataka/009-The-Kings-Grey-Hair": {
 "n": 14,
-"pdf": 15469434,
-"zip": 15202568
+"pdf": 14798379,
+"zip": 14531514
 },
 "Jataka/010-Bliss-of-Renunciation": {
 "n": 14,
-"pdf": 17049655,
-"zip": 16783268
+"pdf": 15288538,
+"zip": 15022153
 },
 "Jataka/011-The-Wisdom-of-Lakkhana": {
 "n": 10,
-"pdf": 12195512,
-"zip": 11931543
+"pdf": 12183774,
+"zip": 11919805
 },
 "Jataka/012-The-Golden-Deer": {
 "n": 14,
-"pdf": 18819919,
-"zip": 18555702
+"pdf": 18821670,
+"zip": 18557453
 },
 "Jataka/014-The-Wind-Deer": {
 "n": 9,
-"pdf": 9632711,
-"zip": 9371293
+"pdf": 9587824,
+"zip": 9326405
 },
 "Jataka/018-The-Sacrificial-Goat": {
 "n": 14,
-"pdf": 16406475,
-"zip": 16136092
+"pdf": 16374283,
+"zip": 16103900
 },
 "Jataka/022-The-Teaching-of-the-Dog": {
 "n": 14,
-"pdf": 17729269,
-"zip": 17464070
+"pdf": 17717107,
+"zip": 17451909
 },
 "Jataka/023-The-Noble-Warhorse": {
 "n": 14,
-"pdf": 17064530,
-"zip": 16799235
+"pdf": 17023802,
+"zip": 16758507
 },
 "Jataka/026-The-State-Elephant": {
 "n": 13,
-"pdf": 16551105,
-"zip": 16284936
+"pdf": 16167068,
+"zip": 15900901
 },
 "Jataka/027-Elephant-and-Dog": {
 "n": 13,
-"pdf": 16853650,
-"zip": 16588818
+"pdf": 16836336,
+"zip": 16571505
 },
 "Jataka/028-Nandivisala": {
 "n": 12,
-"pdf": 14871898,
-"zip": 14603721
+"pdf": 14849933,
+"zip": 14581756
 },
 "Jataka/029-Grannys-Blackie": {
 "n": 12,
-"pdf": 13859401,
-"zip": 13591636
+"pdf": 13772470,
+"zip": 13504705
 },
 "Jataka/030-Deadly-Food": {
 "n": 11,
-"pdf": 13401646,
-"zip": 13132833
+"pdf": 13370776,
+"zip": 13101962
 },
 "Jataka/032-The-Peacocks-Dance": {
 "n": 12,
-"pdf": 16780319,
-"zip": 16515894
+"pdf": 16738895,
+"zip": 16474469
 },
 "Jataka/033-The-Quails-and-the-Net": {
 "n": 14,
-"pdf": 15952857,
-"zip": 15684703
+"pdf": 15906729,
+"zip": 15638576
 },
 "Jataka/034-The-Amorous-Fish": {
 "n": 13,
-"pdf": 15141700,
-"zip": 14872636
+"pdf": 14707126,
+"zip": 14438065
 },
 "Jataka/037-The-Senior-Partridge": {
 "n": 12,
-"pdf": 15743702,
-"zip": 15479858
+"pdf": 15698379,
+"zip": 15434535
 },
 "Jataka/039-Nanda-and-the-Hoard": {
 "n": 12,
-"pdf": 13815949,
-"zip": 13546530
+"pdf": 13787174,
+"zip": 13517756
 },
 "Jataka/040-The-Fiery-Pit": {
 "n": 12,
-"pdf": 12659032,
-"zip": 12395288
+"pdf": 12582022,
+"zip": 12318280
 },
 "Jataka/041-The-Unfortunate-Monk": {
 "n": 15,
-"pdf": 17989154,
-"zip": 17723263
+"pdf": 16555233,
+"zip": 16289344
 },
 "Jataka/043-The-Monk-and-the-Viper": {
 "n": 10,
-"pdf": 11178977,
-"zip": 10915687
+"pdf": 11069802,
+"zip": 10806511
 },
 "Jataka/044-The-Son-and-the-Mosquito": {
 "n": 13,
-"pdf": 15079110,
-"zip": 14809693
+"pdf": 14997642,
+"zip": 14728225
 },
 "Jataka/046-The-Folly-of-the-Monkeys": {
 "n": 13,
-"pdf": 15979605,
-"zip": 15707449
+"pdf": 15961363,
+"zip": 15689207
 },
 "Jataka/048-The-Rain-of-Ruin": {
 "n": 15,
-"pdf": 16723601,
-"zip": 16459122
+"pdf": 16179717,
+"zip": 15915238
 },
 "Jataka/049-The-Lucky-Star": {
 "n": 14,
-"pdf": 16475296,
-"zip": 16210422
+"pdf": 16405102,
+"zip": 16140228
 },
 "Jataka/050-The-Kings-Stratagem": {
 "n": 15,
-"pdf": 19093680,
-"zip": 18828023
+"pdf": 18944998,
+"zip": 18679342
 },
 "Jatakamala": {
 "n": 500,
-"pdf": 457469008,
-"pdfs": 45738811,
+"pdf": 457501900,
+"pdfs": 45743010,
 "stories": 34,
-"zip": 457028038
+"zip": 457060930
 },
 "Jatakamala/01-Tigress": {
 "n": 15,
@@ -657,8 +657,8 @@
 },
 "Jatakamala/02-Sibi": {
 "n": 15,
-"pdf": 14064251,
-"zip": 13776156
+"pdf": 14076883,
+"zip": 13801174
 },
 "Jatakamala/03-Gruel": {
 "n": 15,
@@ -777,8 +777,8 @@
 },
 "Jatakamala/26-Ruru": {
 "n": 15,
-"pdf": 16756012,
-"zip": 16478920
+"pdf": 16763862,
+"zip": 16486770
 },
 "Jatakamala/27-Great-Monkey": {
 "n": 15,
@@ -868,65 +868,75 @@
 "zip": 13221311
 },
 "New-Jataka": {
-"n": 109,
-"pdf": 81432384,
-"pdfs": 15129682,
-"stories": 4,
-"zip": 81248186
+"n": 132,
+"pdf": 102124099,
+"pdfs": 18757299,
+"stories": 5,
+"zip": 101932593
 },
 "New-Jataka-en": {
-"n": 109,
-"pdf": 81553335,
-"pdfs": 15253472,
-"stories": 4,
-"zip": 81336787
+"n": 132,
+"pdf": 102029812,
+"pdfs": 18887739,
+"stories": 5,
+"zip": 101806371
 },
 "New-Jataka/001-Apannaka": {
 "n": 30,
-"pdf": 21890424,
-"zip": 21712359
+"pdf": 22270003,
+"zip": 22091938
 },
 "New-Jataka/001-Apannaka-en": {
 "n": 30,
-"pdf": 21967212,
-"zip": 21766531
+"pdf": 22254794,
+"zip": 22054114
 },
 "New-Jataka/002-Vannupatha": {
 "n": 24,
-"pdf": 15754528,
-"zip": 15579392
+"pdf": 16023879,
+"zip": 15848742
 },
 "New-Jataka/002-Vannupatha-en": {
 "n": 24,
-"pdf": 15846979,
-"zip": 15650299
+"pdf": 16032948,
+"zip": 15836267
 },
 "New-Jataka/003-Serivanija": {
 "n": 25,
-"pdf": 19234681,
-"zip": 19059115
+"pdf": 19612467,
+"zip": 19436901
 },
 "New-Jataka/003-Serivanija-en": {
 "n": 25,
-"pdf": 19213769,
-"zip": 19015006
+"pdf": 19603775,
+"zip": 19405012
 },
 "New-Jataka/004-Culasetthi": {
 "n": 30,
-"pdf": 25067399,
-"zip": 24889121
+"pdf": 25319684,
+"zip": 25141406
 },
 "New-Jataka/004-Culasetthi-en": {
 "n": 30,
-"pdf": 25096863,
-"zip": 24896569
+"pdf": 25345923,
+"zip": 25145629
+},
+"New-Jataka/005-Tandulanali": {
+"n": 23,
+"pdf": 19578008,
+"zip": 19404181
+},
+"New-Jataka/005-Tandulanali-en": {
+"n": 23,
+"pdf": 19551959,
+"zip": 19355248
 },
 "Pannasa": {
 "n": 803,
-"pdf": 1037250912,
-"pdfs": 100142607,
+"pdf": 1037272624,
+"pdfs": 100144348,
 "stories": 50,
-"zip": 1036700118
+"zip": 1036721831
 },
 "Pannasa/01-King-Aditta": {
 "n": 15,
@@ -1145,8 +1155,8 @@
 },
 "Pannasa/44-Vaddhana": {
 "n": 13,
-"pdf": 17876250,
-"zip": 17613606
+"pdf": 17897174,
+"zip": 17634530
 },
 "Pannasa/45-Ungratefulness": {
 "n": 14,
@@ -1175,15 +1185,15 @@
 },
 "Pannasa/50-Mahasudassana": {
 "n": 15,
-"pdf": 19141471,
-"zip": 18875018
+"pdf": 19142261,
+"zip": 18875807
 },
 "Rasavahini": {
 "n": 259,
-"pdf": 269610665,
-"pdfs": 30796828,
+"pdf": 269613829,
+"pdfs": 30797193,
 "stories": 20,
-"zip": 269248054
+"zip": 269251218
 },
 "Rasavahini/01-King-Dhammasondaka": {
 "n": 12,
@@ -1222,8 +1232,8 @@
 },
 "Rasavahini/08-King-Mandhata": {
 "n": 14,
-"pdf": 14559762,
-"zip": 14280234
+"pdf": 14563429,
+"zip": 14283409
 },
 "Rasavahini/09-Merchant-Buddhavamma": {
 "n": 14,
