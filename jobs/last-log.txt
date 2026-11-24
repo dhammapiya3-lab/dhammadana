@@ -1,11 +1,14 @@
+Jataka 001-The-Waterless-Desert 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 47 개 / 한글판 이야기 320 편
+R2 에 올림: 77 개 / 한글판 이야기 320 편
 새 그림책 올림: New-Jataka/005-Tandulanali 23 장
 새 그림책: 올린 그림 23 장
-공개 주소 확인: 404 27150바이트
+공개 주소 확인: 200 1160954바이트
+이야기 Jataka/001-The-Waterless-Desert {'pdf': 14227550, 'zip': 13962187, 'n': 15}
+책 Jataka {'pdf': 494100588, 'pdfs': 50568748, 'zip': 493690831, 'stories': 32, 'n': 422}
 이야기 New-Jataka/005-Tandulanali {'pdf': 19573693, 'zip': 19399866, 'n': 23}
 책 New-Jataka {'pdf': 102119784, 'pdfs': 18757085, 'zip': 101928278, 'stories': 5, 'n': 132}
-내려받기 파일: 2 묶음 새로 만듦
+내려받기 파일: 4 묶음 새로 만듦
 글로 보기: 320 이야기
 18-Verses-2
 08-Light-of-Asia
