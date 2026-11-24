@@ -328,19 +328,19 @@
     "parts": [
      {
       "rect": [
-       450,
-       78,
-       534,
-       124
+       448,
+       64,
+       548,
+       118
       ],
-      "ko": "이번엔 이천 냥을\n거십시오."
+      "ko": "이번엔\n이천 냥을\n거십시오."
      },
      {
       "rect": [
        556,
        106,
-       654,
-       154
+       652,
+       156
       ],
       "ko": "다시는 못된 놈이라\n부르지 마세요."
      }
@@ -352,13 +352,17 @@
   "img": "images/028-Nandivisala-10-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     520,
-     80
-    ],
     "shape": "bubble",
     "en": "Now then, my fine fellow! Pull them along, my fine fellow!",
-    "ko": "자, 착하구나!\n끌어라, 착하구나!"
+    "ko": "자, 착하구나!\n끌어라, 착하구나!",
+    "rect": [
+     510,
+     84,
+     636,
+     130
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
