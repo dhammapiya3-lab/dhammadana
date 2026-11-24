@@ -196,6 +196,19 @@
     "shape": "box",
     "manual": true,
     "cover": true
+   },
+   {
+    "rect": [
+     710,
+     54,
+     734,
+     82
+    ],
+    "ko": " ",
+    "cover": true,
+    "shape": "box",
+    "manual": true,
+    "whole": true
    }
   ]
  },
