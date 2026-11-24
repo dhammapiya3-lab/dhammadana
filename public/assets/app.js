@@ -2323,7 +2323,7 @@ function saveHistory(n) {
   h.unshift({ id: R.id, t: R.title, by: R.by, p: n, pl: (R.pages[n - 1] || {}).label || '', ch: c && c.title || '', pct: Math.round(n / R.pages.length * 100), first: (store.get('hist', []).find(x => x.id === R.id) || {}).first || today(), d: today(), ts: Date.now() });
   store.set('hist', h.slice(0, 100));
 }
-let notesTab = 'read';
+let notesTab = 'read', notesPg = 1;  // 읽은 책·이어 듣기는 10개씩 쪽으로 나눔 (운영자 요청, 2026-11-24)
 const nPicked = new Set();
 const pkBar = n => n > 1 ? `<div class="pk-bar"><button class="btn sm ghost" id="pkAll">모두 고르기</button> <button class="btn sm" id="pkDel" disabled>고른 것 지우기 (0개)</button><div id="pkAsk" class="pk-ask" role="alertdialog" aria-labelledby="pkQ" hidden></div></div>` : '';
 function renderNotes() {
@@ -2343,12 +2343,18 @@ function renderNotes() {
     else LS.push({ ts: v.ts, d: v.d, del: 'ab:' + m[2], ic: '🎧', kind: '오디오북', t: `『${v.b}』`, w: `${v.ch || ''}${v.ch ? ' · ' : ''}${fmtT(v.t)}부터`, href: `/read/${m[2]}/?audio=1`, go: '이어 듣기' }); } } catch (e) {}
   store.get('stalk-hist', []).forEach(h => { const pl = /\/simple\/talks\/([^/]+)\//.exec(h.p || ''); LS.push({ ts: h.ts, d: h.d, del: 'ep:' + h.a, ic: '🎙', kind: '법문', t: `「${h.t}」`, w: `${h.pl ? h.pl + ' · ' : ''}${fmtT(h.pos)}${h.dur ? ' / ' + fmtT(h.dur) : ''}`, href: pl ? `/dhammatalk/?pl=${pl[1]}` : '/dhammatalk/', go: '재생목록 열기', play: h.a }); });
   LS.sort((a, c) => (c.ts || Date.parse(c.d || '') || 0) - (a.ts || Date.parse(a.d || '') || 0));
-  const lsHtml = LS.length ? LS.map(x => `<div class="note-item"><div class="meta"><span>${x.ic} ${esc(x.kind)}</span><span>${esc(x.d || '')}</span></div><div><b>${esc(x.t)}</b>${x.w ? ` <span class="small muted">${esc(x.w)}</span>` : ''}</div><div class="acts"><label class="pick"><input type="checkbox" data-pk="${esc(x.del)}"${nPicked.has(x.del) ? ' checked' : ''}> 고르기<span class="sr">: ${esc(x.t + ' ' + x.kind)}</span></label>${x.play ? `<a class="btn sm" href="${esc(x.href)}" role="button" data-lplay="${esc(x.play)}">이어 듣기</a> ` : ''}<a class="btn sm${x.play ? ' ghost' : ''}" href="${esc(x.href)}">${x.go}</a><button data-ldel="${esc(x.del)}" aria-label="${esc(x.t + ' ' + x.kind + ' 기록 지우기')}">기록 지우기</button></div></div>`).join('') : '<p class="muted">아직 듣던 책·법문이 없습니다. ‘▶ 듣기’나 오디오북·법문을 들으면 여기에 이어 들을 곳이 남습니다.</p>';
-  const histHtml = H.length ? `<div class="hist">${H.map((x, k) => `<div class="hist-item"><a class="hist-cover" href="/book/${x.id}/" data-hc="${x.id}" aria-hidden="true" tabindex="-1"></a><div class="hist-body"><a class="hist-t" href="/book/${x.id}/">『${esc(x.t)}』</a><div class="small muted">${esc(x.by)}</div>
+  const NPP = 10, nPages = n => Math.max(1, Math.ceil(n / NPP)), nTot = notesTab === 'listen' ? LS.length : H.length;
+  if (notesPg > nPages(nTot)) notesPg = nPages(nTot); if (notesPg < 1) notesPg = 1;
+  const nOff = (notesPg - 1) * NPP, nPage = a => a.slice(nOff, nOff + NPP);
+  const pager = n => { const last = nPages(n); if (last < 2) return ''; let a = Math.max(1, notesPg - 2), z = Math.min(last, a + 4); a = Math.max(1, z - 4);
+    const nums = []; for (let i = a; i <= z; i++) nums.push(i === notesPg ? `<span class="pg-now" aria-current="page">${i}<span class="sr">쪽 (지금)</span></span>` : `<button data-npg="${i}" aria-label="${i}쪽">${i}</button>`);
+    return `<nav class="pager" aria-label="목록 쪽 (전체 ${last}쪽)"><button data-npg="${notesPg - 1}"${notesPg < 2 ? ' disabled' : ''}>이전</button>${nums.join('')}<button data-npg="${notesPg + 1}"${notesPg >= last ? ' disabled' : ''}>다음</button></nav>`; };
+  const lsHtml = LS.length ? nPage(LS).map(x => `<div class="note-item"><div class="meta"><span>${x.ic} ${esc(x.kind)}</span><span>${esc(x.d || '')}</span></div><div><b>${esc(x.t)}</b>${x.w ? ` <span class="small muted">${esc(x.w)}</span>` : ''}</div><div class="acts"><label class="pick"><input type="checkbox" data-pk="${esc(x.del)}"${nPicked.has(x.del) ? ' checked' : ''}> 고르기<span class="sr">: ${esc(x.t + ' ' + x.kind)}</span></label>${x.play ? `<a class="btn sm" href="${esc(x.href)}" role="button" data-lplay="${esc(x.play)}">이어 듣기</a> ` : ''}<a class="btn sm${x.play ? ' ghost' : ''}" href="${esc(x.href)}">${x.go}</a><button data-ldel="${esc(x.del)}" aria-label="${esc(x.t + ' ' + x.kind + ' 기록 지우기')}">기록 지우기</button></div></div>`).join('') + pager(LS.length) : '<p class="muted">아직 듣던 책·법문이 없습니다. ‘▶ 듣기’나 오디오북·법문을 들으면 여기에 이어 들을 곳이 남습니다.</p>';
+  const histHtml = H.length ? `<div class="hist">${nPage(H).map((x, k0) => { const k = k0 + nOff; return `<div class="hist-item"><a class="hist-cover" href="/book/${x.id}/" data-hc="${x.id}" aria-hidden="true" tabindex="-1"></a><div class="hist-body"><a class="hist-t" href="/book/${x.id}/">『${esc(x.t)}』</a><div class="small muted">${esc(x.by)}</div>
       <div class="hist-bar" aria-label="읽은 만큼 ${x.pct}%"><span style="width:${x.pct}%"></span></div>
       <div class="small">${esc(x.ch ? x.ch + ' · ' : '')}${esc(x.pl || x.p)}쪽 · ${x.pct}%</div>
       <div class="small muted">마지막으로 읽은 날 ${esc(x.d)}${x.first && x.first !== x.d ? ` · 처음 읽은 날 ${esc(x.first)}` : ''}</div>
-      <div class="acts"><label class="pick"><input type="checkbox" data-pk="hist:${esc(x.id)}"${nPicked.has('hist:' + x.id) ? ' checked' : ''}> 고르기<span class="sr">: 『${esc(x.t)}』</span></label><a class="btn sm" href="/read/${x.id}/${x.p}">이어 읽기</a><button data-hdel="${k}">기록 지우기</button></div></div></div>`).join('')}</div>` : '<p class="muted">아직 읽은 책이 없습니다. 책 페이지에서 ‘온라인으로 읽기’를 누르면 여기에 모입니다.</p>';
+      <div class="acts"><label class="pick"><input type="checkbox" data-pk="hist:${esc(x.id)}"${nPicked.has('hist:' + x.id) ? ' checked' : ''}> 고르기<span class="sr">: 『${esc(x.t)}』</span></label><a class="btn sm" href="/read/${x.id}/${x.p}">이어 읽기</a><button data-hdel="${k}">기록 지우기</button></div></div></div>`; }).join('')}</div>${pager(H.length)}` : '<p class="muted">아직 읽은 책이 없습니다. 책 페이지에서 ‘온라인으로 읽기’를 누르면 여기에 모입니다.</p>';
   // 그림책 사이트(storybooks.dhammadana.kr)에서 읽던 기록 (운영자 요청, 2026-11-24): 같은 아이디로 로그인했을 때 회원 동기화로 받아 온 sb-b-<책> 을 dd-sbshelf 에 둔 것(syncNow) — 보기만
   const SBU = 'https://storybooks.dhammadana.kr', SBL = Object.values(store.get('sbshelf', {})).filter(r => r && r.url && r.book).sort((a, c) => (c.t || 0) - (a.t || 0));
   const sbAbs = u => /^https?:/.test(u || '') ? u : SBU + (String(u || '').startsWith('/') ? '' : '/') + (u || '');
@@ -2365,7 +2371,8 @@ function renderNotes() {
     <div style="display:flex;gap:8px;margin:10px 0"><button class="btn sm ghost" id="ioExport">내보내기 (복사)</button><button class="btn sm" id="ioImport">가져오기</button></div>
     <label for="ioText" class="small muted">붙여넣을 곳</label><textarea class="io" id="ioText"></textarea>`}</div>
    <div class="notes-io">${notesTab === 'io' ? `<button class="btn sm ghost" data-ntb="read">← 내 서재로 돌아가기</button>` : `<button class="btn sm ghost" data-ntb="io">📦 다른 기기로 기록 옮기기 (내보내기·가져오기)</button>`}</div>`;
-  $$('[data-ntb]', root).forEach(b => b.onclick = () => { if (notesTab !== b.dataset.ntb) nPicked.clear(); notesTab = b.dataset.ntb; renderNotes(); });
+  $$('[data-ntb]', root).forEach(b => b.onclick = () => { if (notesTab !== b.dataset.ntb) { nPicked.clear(); notesPg = 1; } notesTab = b.dataset.ntb; renderNotes(); });
+  $$('[data-npg]', root).forEach(b => b.onclick = () => { notesPg = +b.dataset.npg; nPicked.clear(); renderNotes(); const t = $('.pg-now', root); if (t) { const r = $('.tabs', root); (r || root).scrollIntoView({ block: 'start' }); t.setAttribute('tabindex', '-1'); t.focus({ preventScroll: true }); } });
   // 여러 개 골라 지우기 (운영자 요청, 2026-11-19) — 한꺼번에 지울 때는 한 번 더 물음
   const pkSync = () => { const n = nPicked.size, all = $$('[data-pk]', root); const g = $('#pkDel', root), a = $('#pkAll', root); if (g) { g.textContent = `고른 것 지우기 (${n}개)`; g.disabled = !n; } if (a) a.textContent = n && n === all.length ? '모두 풀기' : '모두 고르기'; };
   $$('[data-pk]', root).forEach(c => c.onchange = () => { if (c.checked) nPicked.add(c.dataset.pk); else nPicked.delete(c.dataset.pk); pkSync(); });

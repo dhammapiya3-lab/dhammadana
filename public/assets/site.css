@@ -1632,3 +1632,9 @@ nav.main a .ext{font-size:.92em;opacity:.75}
   .filters .fsec[open]{border:1px solid var(--line);border-radius:10px;background:var(--card);padding-bottom:10px}
   .filters .fsec[open]>summary,details.filter-toggle[open] .fsec[open]>summary{border:0;border-bottom:1px solid var(--line)}
 }
+/* 내 서재 '읽은 책'·'이어 듣기' 10개씩 쪽 나눔 (운영자 요청, 2026-11-24) */
+.pager{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px;margin:22px 0 6px}
+.pager button,.pager .pg-now{min-width:40px;height:40px;padding:0 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit;font-size:15px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.pager .pg-now{background:var(--robe);border-color:var(--robe);color:#fff;font-weight:600;outline-offset:2px}
+.pager button:disabled{opacity:.4;cursor:default}
+@media (max-width:520px){.pager{gap:4px}.pager button,.pager .pg-now{min-width:36px;height:38px;padding:0 8px;font-size:14px}}
