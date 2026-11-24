@@ -26,24 +26,27 @@
     "en": "My sons, bathe this goat in the river, garland it, and bring it back.",
     "ko": "얘들아, 이 염소를 강에서 씻기고 꽃목걸이를 걸어서 데려오너라.",
     "rect": [
-     382,
-     63,
-     525,
-     129
+     380,
+     62,
+     504,
+     124
     ],
-    "em": 14,
     "align": "center",
     "whole": true
    },
    {
-    "seed": [
-     69,
-     56
-    ],
     "ko": "옛 바라나시에서 이름난 바라문이 조상 제사를 준비했습니다.",
-    "align": "left",
+    "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     56,
+     55,
+     278,
+     89
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },
