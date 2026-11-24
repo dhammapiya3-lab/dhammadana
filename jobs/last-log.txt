@@ -1,26 +1,11 @@
+Jataka 010-Bliss-of-Renunciation 14 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 47 개 / 한글판 이야기 318 편
-새 그림책 올림: New-Jataka/001-Apannaka-en 30 장
-새 그림책 올림: New-Jataka/001-Apannaka 30 장
-새 그림책 올림: New-Jataka/002-Vannupatha-en 24 장
-새 그림책 올림: New-Jataka/002-Vannupatha 24 장
-새 그림책 올림: New-Jataka/003-Serivanija-en 25 장
-새 그림책 올림: New-Jataka/003-Serivanija 25 장
-새 그림책 올림: New-Jataka/004-Culasetthi-en 30 장
-새 그림책 올림: New-Jataka/004-Culasetthi 30 장
-새 그림책: 올린 그림 218 장
-공개 주소 확인: 404 27150바이트
-이야기 New-Jataka/001-Apannaka {'pdf': 21890424, 'zip': 21712359, 'n': 30}
-이야기 New-Jataka/002-Vannupatha {'pdf': 15754528, 'zip': 15579392, 'n': 24}
-이야기 New-Jataka/003-Serivanija {'pdf': 19234681, 'zip': 19059115, 'n': 25}
-이야기 New-Jataka/004-Culasetthi {'pdf': 25067399, 'zip': 24889121, 'n': 30}
-책 New-Jataka {'pdf': 81432384, 'pdfs': 15129682, 'zip': 81248186, 'stories': 4, 'n': 109}
-이야기 New-Jataka/001-Apannaka-en {'pdf': 21967212, 'zip': 21766531, 'n': 30}
-이야기 New-Jataka/002-Vannupatha-en {'pdf': 15846979, 'zip': 15650299, 'n': 24}
-이야기 New-Jataka/003-Serivanija-en {'pdf': 19213769, 'zip': 19015006, 'n': 25}
-이야기 New-Jataka/004-Culasetthi-en {'pdf': 25096863, 'zip': 24896569, 'n': 30}
-책 New-Jataka-en {'pdf': 81553335, 'pdfs': 15253472, 'zip': 81336787, 'stories': 4, 'n': 109}
-내려받기 파일: 10 묶음 새로 만듦
+R2 에 올림: 75 개 / 한글판 이야기 318 편
+새 그림책: 올린 그림 0 장
+공개 주소 확인: 200 1227221바이트
+이야기 Jataka/010-Bliss-of-Renunciation {'pdf': 17049655, 'zip': 16783268, 'n': 14}
+책 Jataka {'pdf': 496202994, 'pdfs': 50601940, 'zip': 495793233, 'stories': 32, 'n': 422}
+내려받기 파일: 2 묶음 새로 만듦
 글로 보기: 318 이야기
 18-Verses-2
 08-Light-of-Asia
