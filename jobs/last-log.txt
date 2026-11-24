@@ -4,36 +4,23 @@ Your branch is up to date with 'origin/storybooks-qa'.
 
 nothing to commit, working tree clean
 R2 에 올림: 47 개 / 한글판 이야기 320 편
-새 그림책 올림: New-Jataka/002-Vannupatha-en 24 장
-새 그림책 올림: New-Jataka/002-Vannupatha 24 장
-새 그림책: 올린 그림 48 장
+새 그림책 올림: New-Jataka/003-Serivanija-en 25 장
+새 그림책 올림: New-Jataka/003-Serivanija 25 장
+새 그림책 올림: New-Jataka/004-Culasetthi-en 36 장
+새 그림책 올림: New-Jataka/004-Culasetthi 36 장
+새 그림책: 올린 그림 122 장
 공개 주소 확인: 404 27150바이트
-이야기 New-Jataka/002-Vannupatha {'pdf': 16006720, 'zip': 15831584, 'n': 24}
-책 New-Jataka {'pdf': 104824685, 'pdfs': 19293740, 'zip': 104631967, 'stories': 5, 'n': 136}
-이야기 New-Jataka/002-Vannupatha-en {'pdf': 16032475, 'zip': 15835794, 'n': 24}
-책 New-Jataka-en {'pdf': 104805864, 'pdfs': 19446895, 'zip': 104581176, 'stories': 5, 'n': 136}
-내려받기 파일: 4 묶음 새로 만듦
+이야기 New-Jataka/003-Serivanija {'pdf': 19529804, 'zip': 19354237, 'n': 25}
+이야기 New-Jataka/004-Culasetthi {'pdf': 29868346, 'zip': 29687592, 'n': 36}
+책 New-Jataka {'pdf': 106380588, 'pdfs': 19569170, 'zip': 106187262, 'stories': 5, 'n': 138}
+이야기 New-Jataka/003-Serivanija-en {'pdf': 19522865, 'zip': 19324101, 'n': 25}
+이야기 New-Jataka/004-Culasetthi-en {'pdf': 29933492, 'zip': 29730722, 'n': 36}
+책 New-Jataka-en {'pdf': 106413036, 'pdfs': 19732322, 'zip': 106187725, 'stories': 5, 'n': 138}
+내려받기 파일: 6 묶음 새로 만듦
 글로 보기: 320 이야기
-To https://github.com/dhammapiya3-lab/dhammadana
- ! [rejected]        storybooks -> storybooks (fetch first)
-error: failed to push some refs to 'https://github.com/dhammapiya3-lab/dhammadana'
-hint: Updates were rejected because the remote contains work that you do not
-hint: have locally. This is usually caused by another repository pushing to
-hint: the same ref. If you want to integrate the remote changes, use
-hint: 'git pull' before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-Committer identity unknown
-
-*** Please tell me who you are.
-
-Run
-
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
-
-to set your account's default identity.
-Omit --global to set the identity only in this repository.
-
-fatal: empty ident name (for <runner@ip-10-0-139-112.ec2.internal>) not allowed
-error: cannot pull with rebase: Your index contains uncommitted changes.
-error: Please commit or stash them.
+18-Verses-2
+08-Light-of-Asia
+04-Kalavaliya-the-Treasurer
+34-Woodpecker
+20-The-Brahmin-Soma
+29-30-Escape-from-Samsara
