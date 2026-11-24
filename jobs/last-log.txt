@@ -6,13 +6,17 @@ nothing to commit, working tree clean
 R2 에 올림: 47 개 / 한글판 이야기 320 편
 새 그림책 올림: New-Jataka/003-Serivanija-en 25 장
 새 그림책 올림: New-Jataka/003-Serivanija 25 장
-새 그림책: 올린 그림 50 장
+새 그림책 올림: New-Jataka/004-Culasetthi-en 37 장
+새 그림책 올림: New-Jataka/004-Culasetthi 37 장
+새 그림책: 올린 그림 124 장
 공개 주소 확인: 404 27150바이트
 이야기 New-Jataka/003-Serivanija {'pdf': 19522813, 'zip': 19347246, 'n': 25}
-책 New-Jataka {'pdf': 106373597, 'pdfs': 19568469, 'zip': 106180271, 'stories': 5, 'n': 138}
+이야기 New-Jataka/004-Culasetthi {'pdf': 30608640, 'zip': 30427477, 'n': 37}
+책 New-Jataka {'pdf': 107113891, 'pdfs': 19693204, 'zip': 106920260, 'stories': 5, 'n': 139}
 이야기 New-Jataka/003-Serivanija-en {'pdf': 19515920, 'zip': 19317156, 'n': 25}
-책 New-Jataka-en {'pdf': 106406091, 'pdfs': 19731713, 'zip': 106180780, 'stories': 5, 'n': 138}
-내려받기 파일: 4 묶음 새로 만듦
+이야기 New-Jataka/004-Culasetthi-en {'pdf': 30669433, 'zip': 30466254, 'n': 37}
+책 New-Jataka-en {'pdf': 107142031, 'pdfs': 19855976, 'zip': 106916408, 'stories': 5, 'n': 139}
+내려받기 파일: 6 묶음 새로 만듦
 글로 보기: 320 이야기
 remote: Internal Server Error        
 remote: Request ID E3C0:2FAAFB:F096F:29AC4C:6B06205F        
