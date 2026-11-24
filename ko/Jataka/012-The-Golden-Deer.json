@@ -259,7 +259,22 @@
     ],
     "shape": "bubble",
     "en": "“Go in peace. Iwill will see the turn passes over you.",
-    "ko": "편히 가거라. 네 차례는 내가 넘겨주겠다."
+    "ko": "편히 가거라. 네 차례는 내가 넘겨주겠다.",
+    "rect": [
+     428,
+     124,
+     556,
+     188
+    ],
+    "whole": true,
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     255,
+     255,
+     255
+    ],
+    "align": "center"
    },
    {
     "seed": [
