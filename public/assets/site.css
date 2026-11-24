@@ -1552,3 +1552,15 @@ h1,h2,h3,.ch-head,.s-h1{word-break:keep-all;overflow-wrap:break-word}
 /* 내 서재 폴더: 키보드(Shift·Ctrl+↑↓, Ctrl+Space)로 고른 줄 (운영자 요청, 2026-11-24) */
 .simple-ui .s-list.kbsel>li.picked{background:#fde8e6}
 :root.mode-night .simple-ui .s-list.kbsel>li.picked,:root.mode-contrast .simple-ui .s-list.kbsel>li.picked{background:#3a1512}
+/* 단순 화면 단축키 안내 묶음 (운영자 요청, 2026-11-24) */
+.s-keys .s-kgrp{margin:10px 0 4px}
+.s-keys h3{font-size:1.02rem;margin:12px 0 4px}
+.s-keys .s-kmore{margin:2px 0 6px}
+.s-keys ul[hidden]{display:none}
+/* 단축키 안내 안 단추 — 흰 글씨(위쪽 파란 줄용)가 밝은 바탕에서 보이지 않던 것 (2026-11-24) */
+.simple-ui .s-keys .s-btn{color:#1f3b8a;border:2px solid #1f3b8a;background:#fff}
+.simple-ui .s-keys .s-btn:hover,.simple-ui .s-keys .s-btn:focus-visible{background:#1f3b8a;color:#fff}
+:root.mode-night .simple-ui .s-keys .s-btn,:root.mode-contrast .simple-ui .s-keys .s-btn{color:#ffe36b;border-color:#ffe36b;background:#000}
+:root.mode-night .simple-ui .s-keys .s-btn:focus-visible,:root.mode-contrast .simple-ui .s-keys .s-btn:focus-visible{background:#ffe36b;color:#000}
+.simple-ui .s-keys h2{font-size:1.2em}
+.simple-ui .s-keys h3{font-size:1.05em;margin-top:16px}

@@ -3679,15 +3679,39 @@ function initSimpleFind() {
   q.addEventListener('keydown', e => { if ((e.key === 'ArrowDown' || e.key === 'Enter') && $('.s-list', out)) { e.preventDefault(); $('.s-list', out)._lb.pick(0); } });
   run(); const go = () => q.focus(); if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true });
 }
-const S_KEYS = [['→', '다음 쪽 (장 글 화면에서)'], ['←', '앞 쪽'], ['↓', '다음 장 (목차의 다음 항목)'], ['↑', '앞 장'], ['P', '토글: 듣기 시작·멈춤 (책의 장 글 화면에서, 듣는 동안 커서가 읽는 문단을 따라감 · 법문이 나오고 있으면 먼저 법문을 멈춤 · 그 밖의 화면에서는 법문 재생·멈춤)'], ['A', '토글: 맨 위 재생기(법문·오디오북)로 가기·원래 자리로 돌아오기 — 오디오북이 있는 책의 장 글 화면에서는 오디오북 단추로'], ['.', '다음 법문·다음 장 (점)'], [',', '앞 법문·앞 장 (쉼표)'], [']', '15초 앞으로'], ['[', '15초 뒤로'], ['C', '지금 읽는 문단을 클립보드에 복사'], ['', '듣는 중에 → ← (Alt·Shift 없이): 다음 문장·앞 문장'], ['S', '토글: 듣기 설정 열기·닫기 (장 글 화면에서)'], ['V', '토글: 화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['N', '장 목록으로 (책을 읽을 때)'], ['B', '토글: 지금 읽는 쪽에 책갈피 넣기·빼기'], ['L', '내 서재 (이어 읽기·책갈피)'], ['M', '첫 화면 (폴더 목록)'], ['K', '지금 위치 알리기'], ['H', '토글: 단축키 안내 열기·닫기']];
+// 단순 화면 단축키 안내 — 묶음으로 나눠 지금 화면에 맞는 묶음을 먼저 펼쳐 보임 (운영자 요청, 2026-11-24 — 이용자 의견):
+// 기본(모든 화면) · 책 읽기 · 법문·오디오북 · 내 서재 여러 개 고르기(내 서재 폴더에서만). 접힌 묶음은 'OO 단축키 보기' 단추로 펼침
+const S_KEYGROUPS = [
+  { id: 'base', t: '기본 단축키 (모든 화면)', keys: [['V', '토글: 화면 바꾸기 (누를 때마다 기본 → 흑백 → 밤 → 고대비)'], ['L', '내 서재 (이어 읽기·이어 듣기·책갈피)'], ['M', '첫 화면 (폴더 목록)'], ['K', '지금 위치 알리기'], ['H', '토글: 단축키 안내 열기·닫기'], ['-', '<kbd>↑</kbd> <kbd>↓</kbd> 목록에서 줄 고르기, <kbd>Enter</kbd> 열기, <kbd>Backspace</kbd> 위 목록으로, <kbd>Home</kbd> <kbd>End</kbd> 목록의 처음·끝']] },
+  { id: 'read', t: '책 읽기 화면 단축키', keys: [['→', '다음 쪽 (장 끝이면 다음 장)'], ['←', '앞 쪽'], ['↓', '다음 장 (목차의 다음 항목)'], ['↑', '앞 장'], ['P', '토글: 듣기(TTS) 시작·멈춤 — 듣는 동안 커서가 읽는 문단을 따라감, 법문이 나오고 있으면 먼저 법문을 멈춤'], ['-', '듣는 중에 <kbd>→</kbd> <kbd>←</kbd> (Alt·Shift 없이): 다음 문장·앞 문장'], ['S', '토글: 듣기 설정 열기·닫기'], ['N', '장 목록으로'], ['B', '토글: 지금 읽는 쪽에 책갈피 넣기·빼기'], ['C', '지금 읽는 문단을 클립보드에 복사']] },
+  { id: 'media', t: '음성 법문·오디오북 단축키', keys: [['A', '토글: 맨 위 재생기로 가기·원래 자리로 돌아오기 — 오디오북이 있는 책의 장 글 화면에서는 오디오북 단추로'], ['P', '법문 재생·멈춤 (책의 장 글 화면이 아닐 때)'], ['.', '다음 법문·다음 장 (점)'], [',', '앞 법문·앞 장 (쉼표)'], [']', '15초 앞으로'], ['[', '15초 뒤로']] },
+  { id: 'mine', t: '내 서재 기록 고르기·지우기 단축키', keys: [['-', '<kbd>Shift+↑</kbd> <kbd>Shift+↓</kbd> 이어서 여러 줄 고르기 (<kbd>Shift+Home</kbd> <kbd>Shift+End</kbd> 처음·끝까지)'], ['-', '<kbd>Ctrl+↑</kbd> <kbd>Ctrl+↓</kbd> 고른 것은 그대로 두고 커서만 옮기기'], ['-', '<kbd>Ctrl+Space</kbd> 지금 줄 고르기·풀기'], ['-', '<kbd>Ctrl+A</kbd> 모두 고르기, <kbd>Esc</kbd> 고른 것 모두 풀기'], ['-', '<kbd>Delete</kbd> 고른 기록 지우기 (고른 것이 없으면 지금 줄 — 지울지 한 번 더 묻습니다)'], ['-', 'Shift·Ctrl 없이 <kbd>↑</kbd> <kbd>↓</kbd> 를 누르면 고른 것이 풀립니다 (\'🗑 지울 기록 고르기\'를 켰을 때는 풀리지 않음)']] }
+];
+const S_KEYS = S_KEYGROUPS.flatMap(g => g.keys);
+function sKeyCtx() {
+  const pg = document.body.dataset.page, f = ($('#sMine') || {}).dataset || {};
+  if (pg === 'simple-read') return ($('#sRead') || {dataset: {}}).dataset.audio || STALK.playing() ? ['read', 'media'] : ['read'];  // 오디오북이 있는 책·법문을 듣는 중일 때만 법문·오디오북 묶음도 펼침
+  if (pg === 'simple-mine' && f.f) return ['mine', 'base'];
+  if (pg === 'simple-talk') return ['media', 'base'];
+  return ['base'];
+}
 function simpleHelp() {
   const old = $('#sKeys'); if (old) { old.remove(); const b = $('.s-list [aria-selected="true"]') || $('.s-h1'); if (b) b.focus(); return; }
-  $('.s-h1').insertAdjacentHTML('afterend', `<section id="sKeys" class="s-keys" aria-labelledby="sKeysH"><h2 id="sKeysH" tabindex="-1">단축키 안내</h2><p tabindex="0">Alt 키와 Shift 키를 함께 누른 채로 글자 키를 누릅니다 (맥은 Option + Shift). Tab 키로 한 줄씩 들으실 수 있습니다.</p><ul>${S_KEYS.map(([k, d]) => `<li tabindex="0">${k ? `<kbd>Alt+Shift+${k}</kbd> ` : ''}${d}</li>`).join('')}<li tabindex="0"><kbd>↑</kbd> <kbd>↓</kbd> 목록에서 줄 고르기, <kbd>Enter</kbd> 열기, <kbd>Backspace</kbd> 위 목록으로</li><li tabindex="0"><kbd>Delete</kbd> 내 서재 목록에서 고른 기록 지우기 (지울지 한 번 더 묻습니다)</li></ul><button type="button" class="s-btn" id="sKeysX">단축키 안내 닫기</button></section>`);
+  const open = sKeyCtx(), order = [...open, ...S_KEYGROUPS.map(g => g.id).filter(id => !open.includes(id) && (id !== 'mine' || open.includes('mine')))];
+  const li = ([k, d]) => `<li tabindex="0">${k === '-' ? d : `<kbd>Alt+Shift+${k}</kbd> ${d}`}</li>`;
+  const grp = id => { const g = S_KEYGROUPS.find(x => x.id === id), on = open.includes(id);
+    return `<div class="s-kgrp"><h3 id="sKg-${id}">${g.t}</h3>${on ? '' : `<button type="button" class="s-btn s-kmore" aria-expanded="false" aria-controls="sKl-${id}" data-kg="${id}">▸ ${g.t} 보기 (${g.keys.length}개)</button>`}<ul id="sKl-${id}" aria-labelledby="sKg-${id}"${on ? '' : ' hidden'}>${g.keys.map(li).join('')}</ul></div>`; };
+  $('.s-h1').insertAdjacentHTML('afterend', `<section id="sKeys" class="s-keys" aria-labelledby="sKeysH"><h2 id="sKeysH" tabindex="-1">단축키 안내</h2><p tabindex="0">Alt 키와 Shift 키를 함께 누른 채로 글자 키를 누릅니다 (맥은 Option + Shift). Tab 키로 한 줄씩 들으실 수 있습니다. 이 화면에서 쓰는 단축키를 먼저 보여 드리고, 다른 묶음은 '보기' 단추를 누르면 펼쳐집니다.</p>${order.map(grp).join('')}<button type="button" class="s-btn" id="sKeysX">단축키 안내 닫기</button></section>`);
+  $$('#sKeys [data-kg]').forEach(b => b.onclick = () => {
+    const ul = $('#sKl-' + b.dataset.kg), on = ul.hidden; ul.hidden = !on; b.setAttribute('aria-expanded', on);
+    const g = S_KEYGROUPS.find(x => x.id === b.dataset.kg); b.textContent = `${on ? '▾' : '▸'} ${g.t} ${on ? '접기' : `보기 (${g.keys.length}개)`}`;
+    if (on) { const f = $('li', ul); if (f) f.focus(); }
+  });
   $('#sKeysX').onclick = simpleHelp; $('#sKeysH').focus();
   $('#sKeys').addEventListener('keydown', e => {
     if (e.key === 'Escape') { e.preventDefault(); simpleHelp(); return; }
-    if (e.key !== 'Tab' || e.altKey || e.ctrlKey || e.metaKey) return;  // 안내 안에서 Tab 은 줄마다, 끝에서 처음으로 돎
-    const f = $$('#sKeys [tabindex="0"], #sKeys button'), i = f.indexOf(document.activeElement);
+    if (e.key !== 'Tab' || e.altKey || e.ctrlKey || e.metaKey) return;  // 안내 안에서 Tab 은 줄마다, 끝에서 처음으로 돎 (접힌 묶음의 줄은 건너뜀)
+    const f = $$('#sKeys [tabindex="0"], #sKeys button').filter(x => !x.closest('[hidden]')), i = f.indexOf(document.activeElement);
     if (e.shiftKey ? i <= 0 : i === f.length - 1) { e.preventDefault(); f[e.shiftKey ? f.length - 1 : 0].focus(); }
   });
 }
