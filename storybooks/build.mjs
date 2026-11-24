@@ -226,6 +226,15 @@ put('login/index.html', layout({ title: '로그인', page: 'login', noindex: tru
 </div>` }));
 
 for (const [k, v] of Object.entries(TEXTS)) put(`t/${k}.json`, JSON.stringify(v));  // 글로 보기
+// 도서관(dhammadana.kr) 첫 화면의 '새로 올라온 그림책' 칸이 읽는 목록 — 테라와다 불교 묶음(tiers[0])의 공개한 책만, 처음 공개한 날 늦은 순 (운영자 요청, 2026-11-24)
+// 날짜는 data/published.json (책 이름: 처음 공개한 날). 거기 없는 새 책은 빌드한 날로 보고 경고 — published.json 에 날짜를 더할 것
+{ const PD = rd('published.json'), today = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
+  const th = KO.tiers[0].sections.flatMap(s => s[1]).filter(b => PUB.has(b));
+  const miss = th.filter(b => !PD[b]); if (miss.length) console.warn('published.json 에 처음 공개한 날이 없는 책:', miss.join(', '));
+  const list = th.map((slug, i) => { const b = bookInfo(slug); return { slug, title: b.title, sub: b.sub, cover: b.cover, ready: b.ready, unit: b.unit, date: PD[slug] || today, url: `${S.url}/${slug}/`, i }; })
+    .sort((a, b) => b.date.localeCompare(a.date) || a.i - b.i).map(({ i, ...x }) => x);
+  put('new.json', JSON.stringify({ tier: KO.tiers[0].name, books: list }));
+  put('_headers', `/new.json\n  Access-Control-Allow-Origin: *\n  Cache-Control: public, max-age=600\n`); }
 put('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${S.url}/sitemap.xml\n`);
 const urls = ['/', '/about/', ...[...PUB].flatMap(s => [`/${s}/`, ...Object.values(CAT.books[s].stories).map(x => `/${s}/${sid(x.file)}/`)])];
 put('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(u => `<url><loc>${S.url}${u}</loc></url>`).join('')}</urlset>\n`);
