@@ -60,17 +60,13 @@
   "img": "images/037-The-Senior-Partridge-04-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     129,
+     59
+    ],
     "shape": "bubble",
     "en": "When was baby, this banyan was mere bush. wm As stood astride it, the topmost Qa. branches just reached my belly.",
-    "ko": "내가 새끼였을 때 이 반얀나무는 덤불이었어. 내가 그 위에 올라서면 맨 꼭대기 가지가 내 배에 닿았지.",
-    "rect": [
-     149,
-     73,
-     342,
-     139
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "내가 새끼였을 때 이 반얀나무는 덤불이었어. 내가 그 위에 올라서면 맨 꼭대기 가지가 내 배에 닿았지."
    }
   ]
  },
@@ -78,17 +74,13 @@
   "img": "images/037-The-Senior-Partridge-05-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     119,
+     59
+    ],
     "shape": "bubble",
     "en": "When was youngster, had only to stretch out my neck as sat on the ground and could eat its topmost sprouts",
-    "ko": "내가 어렸을 때는 땅에 앉아서 목만 뻗으면 꼭대기 새순을 따 먹을 수 있었어.",
-    "rect": [
-     149,
-     74,
-     342,
-     140
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "내가 어렸을 때는 땅에 앉아서 목만 뻗으면 꼭대기 새순을 따 먹을 수 있었어."
    }
   ]
  },
@@ -96,17 +88,13 @@
   "img": "images/037-The-Senior-Partridge-06-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     124,
+     60
+    ],
     "shape": "bubble",
     "en": "Tate ate the seeds of another great tree and voided them here. That was the origin of this tree. have knowledge of it from before it was born.",
-    "ko": "나는 다른 큰 나무의 열매를 먹고 여기에 씨를 떨어뜨렸어. 그게 이 나무의 시작이야. 나는 이 나무가 생겨나기 전부터 알고 있었지.",
-    "rect": [
-     153,
-     73,
-     370,
-     139
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "나는 다른 큰 나무의 열매를 먹고 여기에 씨를 떨어뜨렸어. 그게 이 나무의 시작이야. 나는 이 나무가 생겨나기 전부터 알고 있었지."
    }
   ]
  },
@@ -166,17 +154,13 @@
   "img": "images/037-The-Senior-Partridge-10-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     429,
+     86
+    ],
     "shape": "bubble",
     "en": "Henceforth ordain, monks, that to seniority shall be paid respect of word and deed, salutation, and all due service",
-    "ko": "비구들이여, 이제부터 나는 정하노라. 법랍이 높은 이에게 말과 행동으로 공경하고, 절하고, 마땅히 시중들어야 한다.",
-    "rect": [
-     380,
-     98,
-     564,
-     178
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "비구들이여, 이제부터 나는 정하노라. 법랍이 높은 이에게 말과 행동으로 공경하고, 절하고, 마땅히 시중들어야 한다."
    }
   ]
  },

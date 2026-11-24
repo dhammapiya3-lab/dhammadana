@@ -40,30 +40,22 @@
   "img": "images/033-The-Quails-and-the-Net-03-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     433,
+     48
+    ],
     "shape": "bubble",
     "en": "This fowler is making havoc among our kinsfolk. have device. When he throws the net, let each one put his head through mesh.",
-    "ko": "이 새잡이가 우리 친족을 해치고 있다. 내게 방법이 있다. 그가 그물을 던지면 저마다 그물코에 머리를 내밀어라.",
-    "rect": [
-     423,
-     61,
-     670,
-     129
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "이 새잡이가 우리 친족을 해치고 있다. 내게 방법이 있다. 그가 그물을 던지면 저마다 그물코에 머리를 내밀어라."
    },
    {
+    "seed": [
+     461,
+     190
+    ],
     "shape": "bubble",
     "en": "Together, we will fly away with the net and let it down ona thorn-brake.",
-    "ko": "그리고 다 함께 그물을 들고 날아올라 가시덤불 위에 내려놓자.",
-    "rect": [
-     440,
-     188,
-     638,
-     253
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "그리고 다 함께 그물을 들고 날아올라 가시덤불 위에 내려놓자."
    }
   ]
  },
@@ -158,17 +150,13 @@
   "img": "images/033-The-Quails-and-the-Net-06-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     160,
+     64
+    ],
     "shape": "bubble",
     "en": "Day by day you return empty-handed! suppose you've got second establishment to keep up elsewhere.",
-    "ko": "날마다 빈손으로 오시네요! 딴 데 살림이라도 차리셨나 보지요.",
-    "rect": [
-     144,
-     71,
-     314,
-     142
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "날마다 빈손으로 오시네요! 딴 데 살림이라도 차리셨나 보지요."
    },
    {
     "seed": [
@@ -226,30 +214,22 @@
     "align": "center"
    },
    {
+    "seed": [
+     119,
+     301
+    ],
     "shape": "bubble",
     "en": "Who trod on my head?!",
-    "ko": "누가 내 머리를 밟았어?!",
-    "rect": [
-     115,
-     283,
-     263,
-     368
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "누가 내 머리를 밟았어?!"
    },
    {
+    "seed": [
+     591,
+     310
+    ],
     "shape": "bubble",
     "en": "did; but didn’t mean to. Don’t be angry.",
-    "ko": "내가 그랬어. 일부러 그런 건 아니야. 화내지 마.",
-    "rect": [
-     584,
-     293,
-     705,
-     365
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "내가 그랬어. 일부러 그런 건 아니야. 화내지 마."
    }
   ]
  },
@@ -271,17 +251,13 @@
     "align": "center"
    },
    {
+    "seed": [
+     353,
+     163
+    ],
     "shape": "bubble",
     "en": "suppose it is you single-handed who lift up the net!",
-    "ko": "너 혼자서 그물을 다 드는 줄 아나 보지!",
-    "rect": [
-     337,
-     162,
-     478,
-     252
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "너 혼자서 그물을 다 드는 줄 아나 보지!"
    }
   ]
  },
@@ -289,17 +265,13 @@
   "img": "images/033-The-Quails-and-the-Net-10-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     125,
+     73
+    ],
     "shape": "bubble",
     "en": "There’s no safety with one who is quarrelsome. They will no longer lift the net, and thereby come to great destruction. Ican can stay here no longer.",
-    "ko": "다투기 좋아하는 이들과 함께 있으면 안전하지 않다. 저들은 이제 그물을 들지 않을 것이고, 그 때문에 큰 화를 당하리라. 나는 더는 여기 머물 수 없다.",
-    "rect": [
-     123,
-     70,
-     351,
-     158
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "다투기 좋아하는 이들과 함께 있으면 안전하지 않다. 저들은 이제 그물을 들지 않을 것이고, 그 때문에 큰 화를 당하리라. 나는 더는 여기 머물 수 없다."
    },
    {
     "seed": [
@@ -345,17 +317,13 @@
   "img": "images/033-The-Quails-and-the-Net-12-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     112,
+     74
+    ],
     "shape": "bubble",
     "en": "They say when you were lifting the net, the hair of your head fell off. Now’s your our time; lift away!",
-    "ko": "그물 들다가 네 머리털이 다 빠졌다며? 이제 네 차례다, 들어 봐!",
-    "rect": [
-     113,
-     76,
-     259,
-     142
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "그물 들다가 네 머리털이 다 빠졌다며? 이제 네 차례다, 들어 봐!"
    },
    {
     "seed": [

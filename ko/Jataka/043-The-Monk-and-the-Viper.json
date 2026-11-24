@@ -3,17 +3,13 @@
   "img": "images/043-The-Monk-and-the-Viper-01-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     348,
+     181
+    ],
     "shape": "bubble",
     "en": "The Tragedy of Veluka’s Father: Study in Attachment.",
-    "ko": "웰루까 아버지의 비극:\n집착에 관한 이야기",
-    "rect": [
-     345,
-     193,
-     455,
-     258
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "웰루까 아버지의 비극:\n집착에 관한 이야기"
    }
   ]
  },
@@ -196,17 +192,13 @@
   "img": "images/043-The-Monk-and-the-Viper-09-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     197,
+     224
+    ],
     "shape": "bubble",
     "en": "Come, my son; you must be hungry.",
-    "ko": "“자, 내 아들아. 배고프지?”",
-    "rect": [
-     156,
-     200,
-     238,
-     265
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "“자, 내 아들아. 배고프지?”"
    },
    {
     "shape": "box",

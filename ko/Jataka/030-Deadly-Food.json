@@ -83,18 +83,13 @@
   "img": "images/030-Deadly-Food-03-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     97,
+     55
+    ],
     "shape": "box",
     "en": "marriage was arranged for the householder’s daughter",
-    "ko": "주인집 딸의 혼인이 정해졌습니다.",
-    "rect": [
-     67,
-     39,
-     308,
-     78
-    ],
-    "whole": true,
-    "cover": true,
-    "align": "center"
+    "ko": "주인집 딸의 혼인이 정해졌습니다."
    },
    {
     "shape": "box",
@@ -154,30 +149,22 @@
   "img": "images/030-Deadly-Food-05-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     456,
+     58
+    ],
     "shape": "bubble",
     "en": "Brother, we draw all the loads, yet eat only sorry straw",
-    "ko": "형님, 우리는 짐을 다 끄는데 먹는 건 형편없는 짚뿐이에요.",
-    "rect": [
-     456,
-     66,
-     577,
-     129
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "형님, 우리는 짐을 다 끄는데 먹는 건 형편없는 짚뿐이에요."
    },
    {
+    "seed": [
+     563,
+     309
+    ],
     "shape": "bubble",
     "en": "Why is this lazy pig victualled tualled on rich rice? Why is he treated so well?",
-    "ko": "저 게으른 돼지는 왜 기름진 쌀밥을 먹어요? 왜 저렇게 대접받죠?",
-    "rect": [
-     563,
-     310,
-     695,
-     379
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "저 게으른 돼지는 왜 기름진 쌀밥을 먹어요? 왜 저렇게 대접받죠?"
    }
   ]
  },
@@ -214,17 +201,13 @@
     ]
    },
    {
+    "seed": [
+     610,
+     325
+    ],
     "shape": "bubble",
     "en": "The pig eats the food of death",
-    "ko": "저 돼지는 죽음의 먹이를 먹고 있다.",
-    "rect": [
-     610,
-     327,
-     704,
-     383
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "저 돼지는 죽음의 먹이를 먹고 있다."
    }
   ]
  },

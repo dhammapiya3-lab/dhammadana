@@ -41,17 +41,13 @@
     "em": 14
    },
    {
+    "seed": [
+     594,
+     289
+    ],
     "shape": "bubble",
     "en": "Reveal this to my son when Iam am gone",
-    "ko": "내가 죽거든 이것을 내 아들에게 알려 주어라.",
-    "rect": [
-     555,
-     294,
-     667,
-     352
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "내가 죽거든 이것을 내 아들에게 알려 주어라."
    }
   ]
  },
@@ -158,17 +154,13 @@
   "img": "images/039-Nanda-and-the-Hoard-05-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     636,
+     82
+    ],
     "shape": "bubble",
     "en": "You servant of slave-wench’'s son! How should you have any money here?",
-    "ko": "이 종년의 자식 같은 놈아! 네까짓 게 여기 무슨 돈이 있다고?",
-    "rect": [
-     616,
-     87,
-     709,
-     138
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "이 종년의 자식 같은 놈아! 네까짓 게 여기 무슨 돈이 있다고?"
    },
    {
     "seed": [
@@ -266,17 +258,13 @@
     "align": "center"
    },
    {
+    "seed": [
+     337,
+     129
+    ],
     "shape": "bubble",
     "en": "He means to reveal the gold, but the momen he stands there, he abuses me.",
-    "ko": "보물을 알려 주려는 것 같은데, 그 자리에만 서면 저를 욕합니다.",
-    "rect": [
-     329,
-     136,
-     440,
-     187
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "보물을 알려 주려는 것 같은데, 그 자리에만 서면 저를 욕합니다."
    }
   ]
  },
@@ -378,17 +366,13 @@
   "img": "images/039-Nanda-and-the-Hoard-10-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     256,
+     142
+    ],
     "shape": "bubble",
     "en": "Wh om are ta Ik ng to; ou you lave",
-    "ko": "누구한테 하는 말이냐, 이 종놈아?",
-    "rect": [
-     114,
-     151,
-     333,
-     291
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "누구한테 하는 말이냐, 이 종놈아?"
    },
    {
     "rect": [
@@ -408,18 +392,13 @@
   "img": "images/039-Nanda-and-the-Hoard-11-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     580,
+     142
+    ],
     "shape": "box",
     "en": "He pulled Nanda ae) from his literal high horse, took the spade, and dug exactly where the slave had been standing. The family ily treasure was unearthed.",
-    "ko": "아들은 높은 데서 큰소리치던 난다를 끌어내리고, 삽을 들어 종이 서 있던 바로 그 자리를 팠습니다. 집안의 보물이 나왔습니다.",
-    "rect": [
-     572,
-     118,
-     704,
-     346
-    ],
-    "whole": true,
-    "cover": true,
-    "align": "center"
+    "ko": "아들은 높은 데서 큰소리치던 난다를 끌어내리고, 삽을 들어 종이 서 있던 바로 그 자리를 팠습니다. 집안의 보물이 나왔습니다."
    }
   ]
  },

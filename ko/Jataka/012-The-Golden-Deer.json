@@ -113,17 +113,13 @@
     "ko": "바라나시 왕은 사냥을 몹시 좋아했습니다."
    },
    {
+    "seed": [
+     601,
+     196
+    ],
     "shape": "bubble",
     "en": "This king stops all our work! We must work in his pleasure gardens to feed him!",
-    "ko": "이 왕 때문에 일을 못 해! 왕의 정원에서 사냥감을 대느라 우리만 고생이야!",
-    "rect": [
-     592,
-     202,
-     703,
-     255
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "이 왕 때문에 일을 못 해! 왕의 정원에서 사냥감을 대느라 우리만 고생이야!"
    }
   ]
  },
@@ -321,17 +317,13 @@
   "img": "images/012-The-Golden-Deer-07-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     588,
+     95
+    ],
     "shape": "bubble",
     "en": "Why is the ki gof of the deer on the block? must tell the King!",
-    "ko": "사슴의 왕이 왜 도마 위에 있지? 임금님께 알려야겠다!",
-    "rect": [
-     578,
-     93,
-     697,
-     158
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "사슴의 왕이 왜 도마 위에 있지? 임금님께 알려야겠다!"
    },
    {
     "ko": "니그로다는 몸소 처형장으로 갔습니다.",
@@ -353,17 +345,13 @@
   "img": "images/012-The-Golden-Deer-08-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     433,
+     72
+    ],
     "shape": "bubble",
     "en": "My friend, the golden king of the deer! Did not grant you immunity? How comes it that you are lying here?",
-    "ko": "벗이여, 황금 사슴 왕이여! 내가 그대의 목숨은 살려 주지 않았던가? 어찌하여 여기 누워 있는가?",
-    "rect": [
-     401,
-     64,
-     596,
-     169
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "벗이여, 황금 사슴 왕이여! 내가 그대의 목숨은 살려 주지 않았던가? 어찌하여 여기 누워 있는가?"
    }
   ]
  },
@@ -371,17 +359,13 @@
   "img": "images/012-The-Golden-Deer-09-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     472,
+     102
+    ],
     "shape": "bubble",
     "en": "doe prayed me to let her turn fall on another. As could not pass the doom of one onto another, take her doom upon myself.",
-    "ko": "암사슴 하나가 자기 차례를 다른 이에게 넘겨 달라고 빌었습니다. 한 생명의 죽음을 다른 이에게 떠넘길 수 없어, 제가 그 죽음을 대신 지기로 했습니다.",
-    "rect": [
-     452,
-     100,
-     683,
-     203
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "암사슴 하나가 자기 차례를 다른 이에게 넘겨 달라고 빌었습니다. 한 생명의 죽음을 다른 이에게 떠넘길 수 없어, 제가 그 죽음을 대신 지기로 했습니다."
    }
   ]
  },
@@ -508,17 +492,13 @@
   "img": "images/012-The-Golden-Deer-12-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     102,
+     259
+    ],
     "shape": "bubble",
     "en": "Associate with Nigrodha, associate not with Sakha; better is death with Nigrodha, than is having life with Sakha.",
-    "ko": "니그로다를 가까이하고 사카를 가까이하지 마라. 니그로다와 함께 죽는 것이 사카와 함께 사는 것보다 낫다.",
-    "rect": [
-     101,
-     254,
-     285,
-     337
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "니그로다를 가까이하고 사카를 가까이하지 마라. 니그로다와 함께 죽는 것이 사카와 함께 사는 것보다 낫다."
    }
   ]
  },

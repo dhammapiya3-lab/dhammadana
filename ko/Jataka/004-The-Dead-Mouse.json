@@ -48,17 +48,13 @@
     "cover": true
    },
    {
+    "seed": [
+     595,
+     241
+    ],
     "shape": "bubble",
     "en": "clever fellow with his wits about him could start business with just this mouse",
-    "ko": "눈치 빠르고 슬기로운 사람이라면 이 쥐 한 마리로도 장사를 시작할 수 있을 것이다.",
-    "rect": [
-     588,
-     229,
-     690,
-     323
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "눈치 빠르고 슬기로운 사람이라면 이 쥐 한 마리로도 장사를 시작할 수 있을 것이다."
    }
   ]
  },
@@ -144,17 +140,13 @@
     "align": "center"
    },
    {
+    "seed": [
+     252,
+     121
+    ],
     "shape": "bubble",
     "en": "will clear this entirely, if may ke the wood.",
-    "ko": "제가 모두 치워 드리겠습니다. 그 나무를 가져가도 된다면요.",
-    "rect": [
-     264,
-     130,
-     424,
-     178
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "제가 모두 치워 드리겠습니다. 그 나무를 가져가도 된다면요."
    },
    {
     "rect": [
@@ -602,17 +594,13 @@
   "img": "images/004-The-Dead-Mouse-16-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     337,
+     86
+    ],
     "shape": "bubble",
     "en": "Even with little, an intelligent, skilled person, by means of an offering, raises himself up...",
-    "ko": "가진 것이 적어도 지혜롭고 솜씨 있는 사람은 베풂으로 자신을 일으켜 세운다…",
-    "rect": [
-     293,
-     80,
-     507,
-     135
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "가진 것이 적어도 지혜롭고 솜씨 있는 사람은 베풂으로 자신을 일으켜 세운다…"
    },
    {
     "shape": "box",

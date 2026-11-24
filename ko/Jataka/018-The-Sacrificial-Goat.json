@@ -126,17 +126,13 @@
     "em": 14
    },
    {
+    "seed": [
+     136,
+     148
+    ],
     "shape": "bubble",
     "en": "Friend goat, your voice is loud in both laughter and weeping. Why?",
-    "ko": "염소야, 너는 웃을 때도 울 때도 소리가 크구나. 왜 그러니?",
-    "rect": [
-     145,
-     142,
-     264,
-     200
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "염소야, 너는 웃을 때도 울 때도 소리가 크구나. 왜 그러니?"
    },
    {
     "ko": "*흑흑*",
@@ -308,30 +304,22 @@
   "img": "images/018-The-Sacrificial-Goat-09-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     550,
+     82
+    ],
     "shape": "bubble",
     "en": "Fear not, goat! will not kill you. will guard you myself.",
-    "ko": "두려워 마라, 염소야! 너를 죽이지 않겠다. 내가 몸소 지켜 주마.",
-    "rect": [
-     500,
-     88,
-     687,
-     140
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "두려워 마라, 염소야! 너를 죽이지 않겠다. 내가 몸소 지켜 주마."
    },
    {
+    "seed": [
+     458,
+     283
+    ],
     "shape": "bubble",
     "en": "Weak is your protection. Strong is my evil-doing. cannot escape death today.",
-    "ko": "그대의 보호는 약하고 내 악업은 강하오. 오늘 나는 죽음을 피할 수 없소.",
-    "rect": [
-     451,
-     286,
-     632,
-     346
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "그대의 보호는 약하고 내 악업은 강하오. 오늘 나는 죽음을 피할 수 없소."
    }
   ]
  },

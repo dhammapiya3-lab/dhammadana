@@ -46,17 +46,13 @@
     ]
    },
    {
+    "seed": [
+     354,
+     73
+    ],
     "shape": "bubble",
     "en": "Go 0 to merchant. Wager thousand pieces that can draw hundred loaded carts!",
-    "ko": "상인에게 가서, 내가 짐 실은 수레 백 대를 끌 수 있다고 천 냥을 거십시오!",
-    "rect": [
-     348,
-     83,
-     473,
-     161
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "상인에게 가서, 내가 짐 실은 수레 백 대를 끌 수 있다고 천 냥을 거십시오!"
    }
   ]
  },
@@ -64,17 +60,13 @@
   "img": "images/028-Nandivisala-03-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     95,
+     64
+    ],
     "shape": "bubble",
     "en": "have bull at home who can pull hundred loaded carts.",
-    "ko": "우리 집에 짐 실은 수레 백 대를 끄는 황소가 있다오.",
-    "rect": [
-     116,
-     49,
-     314,
-     70
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "우리 집에 짐 실은 수레 백 대를 끄는 황소가 있다오."
    },
    {
     "seed": [
@@ -178,17 +170,13 @@
   "img": "images/028-Nandivisala-05-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     535,
+     92
+    ],
     "shape": "bubble",
     "en": "Now then, Vv you 2 rascal! Pull them along, you rascal!",
-    "ko": "자, 이 못된 놈아!\n끌어라, 이 못된 놈아!",
-    "rect": [
-     315,
-     78,
-     508,
-     148
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "자, 이 못된 놈아!\n끌어라, 이 못된 놈아!"
    }
   ]
  },

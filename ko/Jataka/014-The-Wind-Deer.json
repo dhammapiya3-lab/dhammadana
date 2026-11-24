@@ -58,17 +58,13 @@
     "align": "center"
    },
    {
+    "seed": [
+     605,
+     297
+    ],
     "shape": "bubble",
     "en": "Oh, yess\" yes,” Safijaya smiles. “If had little honey, bring it right into your palace",
-    "ko": "“그럼요.” 산자야가 웃었습니다. “꿀만 조금 있으면 궁 안까지 데려오겠습니다.”",
-    "rect": [
-     603,
-     284,
-     708,
-     350
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "“그럼요.” 산자야가 웃었습니다. “꿀만 조금 있으면 궁 안까지 데려오겠습니다.”"
    }
   ]
  },
@@ -123,18 +119,13 @@
     "align": "center"
    },
    {
+    "seed": [
+     614,
+     78
+    ],
     "shape": "box",
     "en": "Gradually, the gardener reveals himself. As craving for honey increases, the deer’s natural survival instincts dissolve. Familiarity breeds false trust. Soon, the wild creature eats directly from the man’s hand.",
-    "ko": "정원지기는 조금씩 모습을 드러냈습니다. 꿀에 대한 갈망이 커질수록 사슴이 타고난 생존 본능은 녹아 없어졌습니다.\n\n익숙해지자 그릇된 믿음이 생겼습니다.\n\n곧 야생 사슴은 사람 손에 든 먹이를 받아먹게 되었습니다.",
-    "rect": [
-     581,
-     78,
-     722,
-     373
-    ],
-    "whole": true,
-    "cover": true,
-    "align": "center"
+    "ko": "정원지기는 조금씩 모습을 드러냈습니다. 꿀에 대한 갈망이 커질수록 사슴이 타고난 생존 본능은 녹아 없어졌습니다.\n\n익숙해지자 그릇된 믿음이 생겼습니다.\n\n곧 야생 사슴은 사람 손에 든 먹이를 받아먹게 되었습니다."
    },
    {
     "shape": "box",

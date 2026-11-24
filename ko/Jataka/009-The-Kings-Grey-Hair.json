@@ -17,32 +17,23 @@
     "align": "center"
    },
    {
+    "seed": [
+     351,
+     186
+    ],
     "shape": "box",
     "en": "The Story of Kins Makhadeva of Mithila",
-    "ko": "미틸라의\n마카데와 왕 이야기",
-    "rect": [
-     307,
-     187,
-     493,
-     267
-    ],
-    "whole": true,
-    "cover": true,
-    "align": "center"
+    "ko": "미틸라의\n마카데와 왕 이야기"
    },
    {
+    "seed": [
+     310,
+     320
+    ],
     "align": "center",
     "ko": "출가와 시간에 관한\n그림 이야기",
     "shape": "box",
-    "manual": true,
-    "rect": [
-     69,
-     67,
-     731,
-     385
-    ],
-    "whole": true,
-    "cover": true
+    "manual": true
    }
   ]
  },
@@ -107,17 +98,13 @@
   "img": "images/009-The-Kings-Grey-Hair-03-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     422,
+     72
+    ],
     "shape": "bubble",
     "en": "Tell me, friend barber. when you see any grey hairs in my head",
-    "ko": "이발사여, 내 머리에서 흰머리를 보거든 알려 주게.",
-    "rect": [
-     422,
-     73,
-     548,
-     134
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "이발사여, 내 머리에서 흰머리를 보거든 알려 주게."
    }
   ]
  },
@@ -144,30 +131,22 @@
   "img": "images/009-The-Kings-Grey-Hair-05-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     330,
+     72
+    ],
     "shape": "bubble",
     "en": "My lord... have found single grey hair.",
-    "ko": "전하… 흰머리 한 올을 찾았습니다.",
-    "rect": [
-     319,
-     82,
-     422,
-     145
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "전하… 흰머리 한 올을 찾았습니다."
    },
    {
+    "seed": [
+     595,
+     326
+    ],
     "shape": "bubble",
     "en": "Pull it out, my friend, and lay it in my palm.",
-    "ko": "뽑아서 내 손바닥에 올려 주게.",
-    "rect": [
-     608,
-     312,
-     715,
-     365
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "뽑아서 내 손바닥에 올려 주게."
    }
   ]
  },
@@ -232,17 +211,13 @@
   "img": "images/009-The-Kings-Grey-Hair-08-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     105,
+     73
+    ],
     "shape": "bubble",
     "en": "Foolish Makhadeva! Grey hairs have come before you rid yourself of depravities",
-    "ko": "어리석은 마카데와여! 번뇌를 다 버리기도 전에 흰머리가 찾아왔구나.",
-    "rect": [
-     106,
-     76,
-     262,
-     149
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "어리석은 마카데와여! 번뇌를 다 버리기도 전에 흰머리가 찾아왔구나."
    },
    {
     "shape": "box",
@@ -264,17 +239,13 @@
   "img": "images/009-The-Kings-Grey-Hair-09-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     85,
+     212
+    ],
     "shape": "bubble",
     "en": "This very day, will renounce the world for the monk's life.",
-    "ko": "오늘 당장 나는 세상을 버리고 출가하겠다.",
-    "rect": [
-     106,
-     216,
-     276,
-     281
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "오늘 당장 나는 세상을 버리고 출가하겠다."
    },
    {
     "rect": [
@@ -294,17 +265,13 @@
   "img": "images/009-The-Kings-Grey-Hair-10-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     318,
+     75
+    ],
     "shape": "bubble",
     "en": "My son, have had my fill of human joys, and fain would taste the joys divine. Take the sovereignty upon yourself",
-    "ko": "아들아, 나는 인간의 즐거움을 실컷 누렸으니 이제 천상의 즐거움을 맛보고 싶구나. 네가 나라를 맡아라.",
-    "rect": [
-     297,
-     83,
-     485,
-     175
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "아들아, 나는 인간의 즐거움을 실컷 누렸으니 이제 천상의 즐거움을 맛보고 싶구나. 네가 나라를 맡아라."
    },
    {
     "rect": [
@@ -336,17 +303,13 @@
   "img": "images/009-The-Kings-Grey-Hair-11-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     201,
+     70
+    ],
     "shape": "bubble",
     "en": "What is the reason sire, why you adopt the monk's life?",
-    "ko": "전하, 어찌하여 출가하시려는 것입니까?",
-    "rect": [
-     210,
-     77,
-     344,
-     146
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "전하, 어찌하여 출가하시려는 것입니까?"
    },
    {
     "shape": "box",

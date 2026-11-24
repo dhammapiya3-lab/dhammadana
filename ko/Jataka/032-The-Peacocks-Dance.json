@@ -87,18 +87,13 @@
   "img": "images/032-The-Peacocks-Dance-03-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     152,
+     84
+    ],
     "shape": "box",
     "en": "King Mallard granted his beloved daughter any boon she desired. ed.",
-    "ko": "물오리 왕은 사랑하는 딸에게 무엇이든 소원 하나를 들어주겠다고 했습니다.",
-    "rect": [
-     113,
-     72,
-     184,
-     103
-    ],
-    "whole": true,
-    "cover": true,
-    "align": "center"
+    "ko": "물오리 왕은 사랑하는 딸에게 무엇이든 소원 하나를 들어주겠다고 했습니다."
    },
    {
     "seed": [
@@ -188,17 +183,13 @@
     "align": "center"
    },
    {
+    "seed": [
+     582,
+     171
+    ],
     "shape": "bubble",
     "en": "“Let this be my husband,” she declared.",
-    "ko": "“이분을 남편으로 삼겠어요.” 공주가 말했습니다.",
-    "rect": [
-     567,
-     171,
-     699,
-     207
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "“이분을 남편으로 삼겠어요.” 공주가 말했습니다."
    }
   ]
  },
@@ -206,17 +197,13 @@
   "img": "images/032-The-Peacocks-Dance-07-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     112,
+     65
+    ],
     "shape": "bubble",
     "en": "Fond peacock, the princess has fixed her choice on you from among all the birds in the world.",
-    "ko": "공작이여, 공주께서 세상 모든 새 가운데 그대를 고르셨소.",
-    "rect": [
-     91,
-     73,
-     261,
-     125
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "공작이여, 공주께서 세상 모든 새 가운데 그대를 고르셨소."
    },
    {
     "shape": "box",
@@ -295,17 +282,13 @@
   "img": "images/032-The-Peacocks-Dance-10-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     528,
+     212
+    ],
     "shape": "bubble",
     "en": "“This fellow has neither modesty in his heart nor decency in his outward behaviour. will not give my daughter to one so shameless.”",
-    "ko": "“이 자는 마음에 부끄러움도 없고 몸가짐에 예의도 없구나. 이렇게 염치없는 자에게 내 딸을 줄 수 없다.”",
-    "rect": [
-     481,
-     198,
-     684,
-     315
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "“이 자는 마음에 부끄러움도 없고 몸가짐에 예의도 없구나. 이렇게 염치없는 자에게 내 딸을 줄 수 없다.”"
    },
    {
     "rect": [

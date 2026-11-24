@@ -50,17 +50,13 @@
     "align": "center"
    },
    {
+    "seed": [
+     425,
+     58
+    ],
     "shape": "bubble",
     "en": "thousand carts will deplete the road’s resources. One of us must go first.",
-    "ko": "수레 천 대가 한꺼번에 가면 길의 물과 풀이 바닥날 것이오. 우리 중 한 사람이 먼저 떠나야 하오.",
-    "rect": [
-     401,
-     68,
-     565,
-     167
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "수레 천 대가 한꺼번에 가면 길의 물과 풀이 바닥날 것이오. 우리 중 한 사람이 먼저 떠나야 하오."
    }
   ]
  },
@@ -96,18 +92,14 @@
     "align": "center"
    },
    {
+    "seed": [
+     696,
+     32
+    ],
     "shape": "bubble",
     "en": "I will go first!",
     "ko": "내가 먼저 가겠소!",
-    "manual": true,
-    "rect": [
-     560,
-     40,
-     744,
-     102
-    ],
-    "whole": true,
-    "align": "center"
+    "manual": true
    }
   ]
  },
@@ -260,17 +252,13 @@
     "align": "center"
    },
    {
+    "seed": [
+     484,
+     50
+    ],
     "shape": "bubble",
     "en": "Let not palmful be of water wat be used without my sanction. Eat no unknown fruit or leaf without asking ine.",
-    "ko": "내 허락 없이는 물 한 모금도 쓰지 마라. 내게 묻지 않고는 모르는 열매나 잎을 먹지 마라.",
-    "rect": [
-     489,
-     55,
-     683,
-     118
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "내 허락 없이는 물 한 모금도 쓰지 마라. 내게 묻지 않고는 모르는 열매나 잎을 먹지 마라."
    }
   ]
  },
@@ -291,17 +279,13 @@
     "align": "center"
    },
    {
+    "seed": [
+     341,
+     98
+    ],
     "shape": "bubble",
     "en": "Red eyes. Aggressive bearing. No shadow. This is Yakkha.",
-    "ko": "붉은 눈. 사나운 기색. 그림자가 없다. 이것은 약카다.",
-    "rect": [
-     308,
-     107,
-     445,
-     177
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "붉은 눈. 사나운 기색. 그림자가 없다. 이것은 약카다."
    }
   ]
  },
@@ -309,30 +293,22 @@
   "img": "images/001-The-Waterless-Desert-10-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     82,
+     43
+    ],
     "shape": "bubble",
     "en": "Master! They wore wet lotuses. Let us throw away our heavy water and travel light to the rain!",
-    "ko": "주인님! 저들은 젖은 연꽃을 걸치고 있었습니다. 무거운 물을 버리고 가볍게 비 오는 곳으로 가십시다!",
-    "rect": [
-     77,
-     53,
-     258,
-     125
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "주인님! 저들은 젖은 연꽃을 걸치고 있었습니다. 무거운 물을 버리고 가볍게 비 오는 곳으로 가십시다!"
    },
    {
+    "seed": [
+     384,
+     52
+    ],
     "shape": "bubble",
     "en": "Halt. Assemble before me.",
-    "ko": "멈추어라. 모두 내 앞에 모여라.",
-    "rect": [
-     387,
-     56,
-     493,
-     107
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "멈추어라. 모두 내 앞에 모여라."
    }
   ]
  },
@@ -396,17 +372,13 @@
     "align": "center"
    },
    {
+    "seed": [
+     610,
+     293
+    ],
     "shape": "bubble",
     "en": "These are not men. They are Yakkhas. as.",
-    "ko": "저들은 사람이 아니다. 약카들이다.",
-    "rect": [
-     548,
-     294,
-     732,
-     366
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "저들은 사람이 아니다. 약카들이다."
    }
   ]
  },

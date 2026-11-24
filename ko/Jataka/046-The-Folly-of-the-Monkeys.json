@@ -50,17 +50,13 @@
     "align": "center"
    },
    {
+    "seed": [
+     363,
+     70
+    ],
     "shape": "bubble",
     "en": "will get the monkeys to do the watering for me, and be off to enjoy myself.",
-    "ko": "원숭이들한테 물을 주라고 하고 나는 놀러 가야지.",
-    "rect": [
-     319,
-     76,
-     449,
-     144
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "원숭이들한테 물을 주라고 하고 나는 놀러 가야지."
    }
   ]
  },
@@ -68,17 +64,13 @@
   "img": "images/046-The-Folly-of-the-Monkeys-03-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     319,
+     71
+    ],
     "shape": "bubble",
     "en": "You enjoy these flowers and fruits. Today is holiday up in the city. Could you water the young trees while am away?",
-    "ko": "너희는 이 꽃과 열매를 실컷 즐겨라. 오늘 성 안은 축제란다. 내가 없는 동안 어린 나무에 물을 좀 주겠니?",
-    "rect": [
-     299,
-     73,
-     464,
-     143
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "너희는 이 꽃과 열매를 실컷 즐겨라. 오늘 성 안은 축제란다. 내가 없는 동안 어린 나무에 물을 좀 주겠니?"
    },
    {
     "rect": [
@@ -143,17 +135,13 @@
   "img": "images/046-The-Folly-of-the-Monkeys-05-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     143,
+     51
+    ],
     "shape": "bubble",
     "en": "We must be careful not to waste th water. When this water is all gone, we shall be hard put to it to get more.",
-    "ko": "물을 낭비하지 않도록 조심해야 한다. 이 물이 다 떨어지면 다시 구하기 어렵다.",
-    "rect": [
-     147,
-     63,
-     443,
-     136
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "물을 낭비하지 않도록 조심해야 한다. 이 물이 다 떨어지면 다시 구하기 어렵다."
    }
   ]
  },
@@ -173,17 +161,13 @@
     "whole": true
    },
    {
+    "seed": [
+     402,
+     319
+    ],
     "shape": "bubble",
     "en": "First pull each young tree up. up. Look at the size of its roots.",
-    "ko": "먼저 어린 나무를 하나씩 뽑아라. 뿌리 크기를 보아라.",
-    "rect": [
-     405,
-     317,
-     574,
-     368
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "먼저 어린 나무를 하나씩 뽑아라. 뿌리 크기를 보아라."
    },
    {
     "rect": [
@@ -247,17 +231,13 @@
   "img": "images/046-The-Folly-of-the-Monkeys-07-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     243,
+     60
+    ],
     "shape": "bubble",
     "en": "Give plenty of water to those whose roots strike deep, but only little to those with tiny roots. aves",
-    "ko": "뿌리가 깊은 나무에는 물을 넉넉히, 뿌리가 작은 나무에는 조금만 주어라.",
-    "rect": [
-     247,
-     60,
-     553,
-     97
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "뿌리가 깊은 나무에는 물을 넉넉히, 뿌리가 작은 나무에는 조금만 주어라."
    },
    {
     "shape": "bubble",
@@ -324,17 +304,13 @@
   "img": "images/046-The-Folly-of-the-Monkeys-10-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     300,
+     62
+    ],
     "shape": "bubble",
     "en": "Because such are our king’s commands.",
-    "ko": "우리 왕께서 그렇게 명하셨기 때문이오.",
-    "rect": [
-     273,
-     67,
-     451,
-     137
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "우리 왕께서 그렇게 명하셨기 때문이오."
    },
    {
     "shape": "box",
@@ -408,17 +384,13 @@
   "img": "images/046-The-Folly-of-the-Monkeys-13-Original.jpg",
   "boxes": [
    {
+    "seed": [
+     504,
+     346
+    ],
     "shape": "bubble",
     "en": "True wisdom requires understanding the system not just executing the command.",
-    "ko": "참된 지혜는 시킨 일을 해내는 것만이 아니라 전체를 이해하는 것입니다.",
-    "rect": [
-     500,
-     347,
-     704,
-     389
-    ],
-    "whole": true,
-    "align": "center"
+    "ko": "참된 지혜는 시킨 일을 해내는 것만이 아니라 전체를 이해하는 것입니다."
    },
    {
     "rect": [
