@@ -5,12 +5,12 @@
    {
     "shape": "box",
     "en": "The Golden Mallard. Mallard. tale of modesty, pride, and the first cycle of the world’s history.",
-    "ko": "황금 물오리\n겸손과 교만, 그리고 세상의 첫 시대 이야기",
+    "ko": "황금 물오리\n겸손과 교만, 그리고\n세상의 첫 시대 이야기",
     "rect": [
-     81,
+     80,
      298,
-     269,
-     373
+     270,
+     374
     ],
     "whole": true,
     "cover": true,
