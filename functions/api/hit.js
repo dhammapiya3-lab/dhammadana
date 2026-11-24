@@ -5,16 +5,24 @@
 const BOT = /bot|crawl|spider|slurp|preview|headless|lighthouse|facebookexternalhit|kakaotalk-scrap|yeti|daum|python|curl|wget/i;
 const day = () => new Date(Date.now() + 9 * 3600e3).toISOString();  // 한국 시간
 const cut = (s, n) => String(s ?? '').replace(/[\u0000-\u001f]/g, '').slice(0, n);
+// 그림책 사이트(storybooks.dhammadana.kr)의 방문도 따로 셈 (운영자 요청, 2026-11-24) — 그 사이트가 /assets/sbhit.js 를 불러 보냄.
+// 기록에 w:'sb' 를 붙여 도서관 통계와 섞이지 않게(stats.js 가 따로 모음). 개인정보는 도서관과 같이 저장하지 않음.
+const SB = 'https://storybooks.dhammadana.kr';
+const cors = h => ({ 'access-control-allow-origin': SB, 'access-control-allow-methods': 'POST, OPTIONS', 'access-control-allow-headers': 'content-type', 'access-control-max-age': '86400', vary: 'origin', ...h });
+export async function onRequestOptions({ request }) {
+  return new Response(null, { status: 204, headers: request.headers.get('origin') === SB ? cors({}) : {} });
+}
 
 export async function onRequestPost({ request, env }) {
-  const ok = new Response(null, { status: 204 });
+  const sb = request.headers.get('origin') === SB;
+  const ok = new Response(null, { status: 204, headers: sb ? cors({}) : {} });
   if (!env.PAPER) return ok;
   const ua = request.headers.get('user-agent') || '';
   if (!ua || BOT.test(ua)) return ok;
   let b = {};
   try { b = JSON.parse(await request.text()); } catch (e) { return ok; }
   // 읽은 쪽 수 (읽기 화면에서 15초 넘게 머문 쪽): { k:'read', b: 책 번호, t: 책 제목, n: 쪽 수 }
-  if (b.k === 'read') {
+  if (b.k === 'read' && !sb) {
     const id = /^[A-Z]{1,4}-\d{1,6}$/.test(b.b || '') ? b.b : '', n = Math.min(Math.max(parseInt(b.n) || 0, 0), 500);
     if (!id || !n) return ok;
     const v = /^[0-9a-z]{8,24}$/.test(b.v || '') ? b.v : '';
@@ -23,11 +31,12 @@ export async function onRequestPost({ request, env }) {
     return ok;
   }
   const p = cut(b.p, 200);
-  if (!p.startsWith('/') || /^\/(admin|api)\b/.test(p)) return ok;
+  if (b.k || !p.startsWith('/') || (!sb && /^\/(admin|api)\b/.test(p))) return ok;
   let r = '';
-  try { if (b.r) { const h = new URL(b.r).hostname.replace(/^www\./, ''); if (h && h !== 'dhammadana.kr' && !h.endsWith('.dhammadana.pages.dev')) r = h; } } catch (e) {}
+  try { if (b.r) { const h = new URL(b.r).hostname.replace(/^www\./, ''); if (h && h !== (sb ? 'storybooks.dhammadana.kr' : 'dhammadana.kr') && !h.endsWith('.dhammadana.pages.dev')) r = h; } } catch (e) {}
   const v = /^[0-9a-z]{8,24}$/.test(b.v || '') ? b.v : '';
   const rec = { p, t: cut(b.t, 120), r, v, d: /Mobi|Android|iPhone|iPad/i.test(ua) ? 'm' : 'pc', c: (request.cf && request.cf.country) || '' };
+  if (sb) rec.w = 'sb';
   const now = day(), rnd = [...crypto.getRandomValues(new Uint8Array(4))].map(x => x.toString(16).padStart(2, '0')).join('');
   await env.PAPER.put(`stats/raw/${now.slice(0, 10)}/${now.slice(11, 19).replace(/:/g, '')}-${rnd}.json`, JSON.stringify(rec));
   return ok;

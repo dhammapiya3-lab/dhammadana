@@ -32,6 +32,12 @@ async function getDay(env, d, today, B) {
           if (r.s) sum.sread = (sum.sread || 0) + (r.n || 0);  // 단순 모드(시각장애인용)에서 읽은 쪽 (2026-11-18)
           continue;
         }
+        if (r.w === 'sb') {  // 그림책 사이트 방문 — 도서관 숫자와 따로 (2026-11-24)
+          const g = sum.sb || (sum.sb = { views: 0, vids: [], pages: {}, titles: {}, refs: {}, dev: {} });
+          g.views++; if (r.v && !g.vids.includes(r.v)) g.vids.push(r.v);
+          inc(g.pages, r.p); if (r.t && r.p) g.titles[r.p] = r.t; inc(g.refs, r.r); inc(g.dev, r.d);
+          continue;
+        }
         sum.views++; if (r.v) vs.add(r.v);
         if (r.v && /^\/simple\//.test(r.p || '')) { sum.svids = sum.svids || []; if (!sum.svids.includes(r.v)) sum.svids.push(r.v); }  // 단순 모드 화면을 연 기기
         inc(sum.pages, r.p); if (r.t && r.p) sum.titles[r.p] = r.t;
@@ -78,13 +84,15 @@ export async function onRequestGet({ request, env }) {
   const n = Math.min(Math.max(parseInt(new URL(request.url).searchParams.get('days')) || 30, 1), 366);
   const today = kst(), B = { n: 400, left: false }, days = [], all = new Set(), sall = new Set(), pages = {}, titles = {}, refs = {}, dev = {}, ctry = {}, books = {}, breaders = {}, btitles = {};
   const add = (a, b) => { for (const k in b) a[k] = (a[k] || 0) + b[k]; };
+  const sbAll = new Set(), sbPages = {}, sbTitles = {}, sbRefs = {}, sbDev = {};
   const ds = []; for (let i = n - 1; i >= 0; i--) ds.push(addDay(today, -i));
   const res = [];
   for (let i = 0; i < ds.length; i += 31) res.push(...await Promise.all(ds.slice(i, i + 31).map(d => getDay(env, d, today, B))));  // 여러 날을 한꺼번에 (1년도 빨리)
   const mem = await members(env).catch(() => null);
   ds.forEach((d, i) => {
     const s = res[i];
-    days.push({ date: d, views: s.views, visitors: s.vids.length, read: s.read || 0, sread: s.sread || 0, svisitors: (s.svids || []).length, joined: mem ? mem.byDay[d] || 0 : 0 });
+    days.push({ date: d, views: s.views, visitors: s.vids.length, read: s.read || 0, sread: s.sread || 0, svisitors: (s.svids || []).length, joined: mem ? mem.byDay[d] || 0 : 0, sbviews: s.sb ? s.sb.views : 0, sbvisitors: s.sb ? s.sb.vids.length : 0 });
+    if (s.sb) { s.sb.vids.forEach(v => sbAll.add(v)); add(sbPages, s.sb.pages); add(sbRefs, s.sb.refs); add(sbDev, s.sb.dev); Object.assign(sbTitles, s.sb.titles); }
     (s.svids || []).forEach(v => sall.add(v));
     add(books, s.books || {}); Object.assign(btitles, s.btitles || {});
     for (const b in (s.breaders || {})) { const set = breaders[b] || (breaders[b] = new Set()); s.breaders[b].forEach(v => set.add(v)); }
@@ -97,5 +105,6 @@ export async function onRequestGet({ request, env }) {
   const bk = [...new Set([...Object.keys(books), ...Object.keys(opens)])].map(b => ({ id: b, title: btitles[b] || b, read: books[b] || 0, readers: breaders[b] ? breaders[b].size : 0, opens: opens[b] || 0 }))
     .sort((a, b) => b.read - a.read || b.readers - a.readers || b.opens - a.opens);
   return json({ ready: true, more: B.left, today, days, visitors: all.size, views: days.reduce((a, b) => a + b.views, 0), read: days.reduce((a, b) => a + b.read, 0), sread: days.reduce((a, b) => a + (b.sread || 0), 0), svisitors: sall.size, books: bk, members: mem ? { total: mem.total, joined: ds.reduce((a, d) => a + (mem.byDay[d] || 0), 0), first: Object.keys(mem.byDay).filter(d => d !== '?').sort()[0] || '' } : null,
-    pages: top(pages).map(([p, c]) => [p, c, titles[p] || '']), refs: top(refs, 20), dev, ctry: top(ctry, 10) });
+    pages: top(pages).map(([p, c]) => [p, c, titles[p] || '']), refs: top(refs, 20), dev, ctry: top(ctry, 10),
+    sb: { visitors: sbAll.size, views: days.reduce((a, b) => a + b.sbviews, 0), pages: top(sbPages).map(([p, c]) => [p, c, sbTitles[p] || '']), refs: top(sbRefs, 20), dev: sbDev } });
 }

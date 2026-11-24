@@ -102,6 +102,19 @@ function drawRange(){
 const DEV={m:'휴대폰·태블릿',pc:'컴퓨터'};
 const ctName=k=>{try{return new Intl.DisplayNames(['ko'],{type:'region'}).of(k)||k}catch(e){return k}};
 const CT={KR:'한국',US:'미국',JP:'일본',MM:'미얀마',TH:'태국',LK:'스리랑카',CN:'중국',DE:'독일',AU:'호주',CA:'캐나다',GB:'영국',SG:'싱가포르',MY:'말레이시아',VN:'베트남',IN:'인도',TW:'대만',FR:'프랑스',NZ:'뉴질랜드',HK:'홍콩',ID:'인도네시아'};
+// 그림책 사이트(storybooks.dhammadana.kr) — 도서관 숫자와 따로 (2026-11-24)
+const SBU='https://storybooks.dhammadana.kr';
+function sbCard(j){
+  const g=j.sb||{visitors:0,views:0,pages:[],refs:[],dev:{}}, last=j.days[j.days.length-1]||{}, dT=Object.values(g.dev).reduce((a,b)=>a+b,0)||1;
+  const none=!g.views;
+  return `<div class="card"><h2>그림책 사이트 <span class="note" style="font-weight:400">(storybooks.dhammadana.kr)</span></h2>
+    <div class="kpi" style="margin:0"><div><b>${num(g.visitors)}</b><span>방문자 (기기 수)</span></div><div><b>${num(g.views)}</b><span>화면을 연 횟수</span></div>
+    <div><b>${num(last.sbvisitors||0)}</b><span>오늘 방문자</span></div><div><b>${num(last.sbviews||0)}</b><span>오늘 연 횟수</span></div></div>
+    ${none?'':`<div class="two" style="margin-top:12px"><div><h2 style="font-size:15px">많이 연 그림책 화면</h2>${table(g.pages.map(([p,c,t])=>`<tr><td>${esc(t||p)}<br><small><a href="${SBU}${esc(p)}" target="_blank" rel="noopener">${esc(p)}</a></small></td><td class="n">${num(c)}</td></tr>`))}</div>
+      <div><h2 style="font-size:15px">들어온 곳 · 기기</h2>${table([...g.refs.map(([r,c])=>`<tr><td>${esc(r)}</td><td class="n">${num(c)}</td></tr>`),...Object.entries(g.dev).map(([k,c])=>`<tr><td>${DEV[k]||esc(k)}</td><td class="n">${Math.round(c/dT*100)}%</td></tr>`)])}</div></div>`}
+    <p class="note">그림책 사이트의 방문은 위아래 도서관 숫자에 들어가지 않고 여기에만 따로 셉니다(기기마다 무작위 번호만 — 도서관과 그림책 사이트는 주소가 달라 같은 기기도 따로 셈). 그림책 사이트 페이지에 통계 한 줄(&lt;script src="https://dhammadana.kr/assets/sbhit.js" defer&gt;)이 들어간 뒤부터 셉니다.${none?' <b>아직 기록이 없습니다.</b>':''}
+    이 기기의 그림책 사이트 방문을 빼려면 <a href="${SBU}/?dd-notrack=1" target="_blank" rel="noopener">이 링크를 한 번 여세요</a>.</p></div>`;
+}
 function table(rows){ return rows.length?`<table>${rows.join('')}</table>`:'<p class="note">아직 기록이 없습니다.</p>'; }
 async function load(){
   drawRange(); $('#out').innerHTML='<p class="note" style="margin-top:16px">불러오는 중… (처음에는 조금 걸릴 수 있습니다)</p>';
@@ -127,6 +140,7 @@ async function load(){
     <div><b>${num(j.days[j.days.length-1].joined||0)}</b><span>오늘 가입</span></div></div>
     ${DAYS>1&&j.members.joined?`<p class="note" style="margin-top:10px">가입한 날: ${j.days.filter(d=>d.joined).reverse().map(d=>`${md(d.date)} ${d.joined}명`).join(' · ')}</p>`:''}
     <p class="note">'독서 기록 이어 보기' 회원(/account/)입니다. 탈퇴한 회원은 빠집니다. 아이디·이메일 같은 회원 정보는 여기에 보이지 않고, 가입한 날짜만 셉니다.${j.members.first?` 첫 회원 가입: ${esc(j.members.first)}.`:''}</p></div>`:''}
+  ${sbCard(j)}
   ${j.days.length>1?`<div class="card"><h2>날짜별</h2><div class="lg"><span><i style="background:var(--robe)"></i>방문자</span><span><i style="background:var(--robe-soft)"></i>읽은 쪽 수</span></div>
     <div class="chart">${j.days.map(d=>`<div class="c" title="${d.date} · 방문자 ${d.visitors} · 읽은 쪽 ${R(d)}"><div class="v" style="height:${R(d)/mx*100}%"></div><div class="u" style="height:${d.visitors/mx*100}%"></div></div>`).join('')}</div>
     <div class="axis"><span>${md(j.days[0].date)}</span><span>${md(j.days[j.days.length-1].date)}</span></div></div>`:''}
