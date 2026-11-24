@@ -187,6 +187,8 @@
   // 한 화를 다 보면 끝 화면: 전체 화면에서 나가지 않고 다음 이야기를 이 자리에서 이어 봄
   const setup = () => {
     pages = [...sv.querySelectorAll('.sv-page:not(.sv-end)')];
+    if ((matchMedia('(pointer:coarse)').matches || /Android|iPhone|iPad|Mobile/i.test(navigator.userAgent)) && !(document.fullscreenElement === sv || sv.classList.contains('sv-max')))
+      pages.forEach(p => { const im = p.querySelector('img'); if (im && im.dataset.s && !im.complete) im.src = im.dataset.s; });  // 휴대폰 보통 화면은 800px 그림부터 (넘기기 빠르게, 2026-11-24)
     thumbs = [...document.querySelectorAll('.sv-thumbs button')];
     thumbs.forEach(t => t.onclick = () => go(+t.dataset.i));
       KEY = 'sb-pos-' + sv.dataset.key;
@@ -263,10 +265,21 @@
     if (V.on && !V.self && i < pages.length && i !== V.i) vPage(i);  // 읽는 중에 손으로 넘기면 그 쪽부터 읽음
     warm(i);
   };
-  // 넘기기 빠르게 (운영자 요청, 2026-11-24 '핸드폰에서 넘기는 반응이 느려짐'): 지금 그림 앞뒤 그림을 미리 받아 풀어 둠 —
-  // 'loading=lazy' 그림은 화면에 거의 들어올 때에야 받기 시작해(한 장 약 1MB) 넘긴 뒤 한동안 빈 화면이었음
-  const warm = i => { for (const j of [i + 1, i + 2, i - 1, i + 3]) { const im = pages[j]?.querySelector('img'); if (!im || im.dataset.w) continue;
-    im.dataset.w = '1'; im.loading = 'eager'; if (im.decode) im.decode().catch(() => {}); } };
+  // 넘기기 빠르게 (운영자 요청, 2026-11-24 '핸드폰에서 넘기는 반응이 느려짐' — 두 번째): 지금 그림의 앞뒤(앞 1장·다음 3장)를 미리 받아 풀어 둠.
+  // 휴대폰(손가락 화면)에서 전체 화면이 아니고 확대하지 않았을 때는 800px 그림(s, 한 장 약 0.1MB)을 씀 — 원본(big, 약 1MB·2645px)은 화면보다 훨씬 커서
+  // 받고 풀고 그리는 데 오래 걸림. 전체 화면·확대하면 원본으로 바꾸고, 멀리 떨어진 그림은 다시 800px 로 돌려 휴대폰 메모리를 덜 씀.
+  const coarse = matchMedia('(pointer:coarse)').matches || /Android|iPhone|iPad|Mobile/i.test(navigator.userAgent);
+  const fullNow = () => document.fullscreenElement === sv || sv.classList.contains('sv-max') || sv.classList.contains('sv-rot');
+  const wantBig = () => !coarse || fullNow() || Z.s > 1;
+  const setSrc = (im, u) => { if (!u || im.getAttribute('src') === u || im.dataset.want === u) return;
+    im.dataset.want = u; const n = new Image(); n.src = u;
+    (n.decode ? n.decode() : Promise.resolve()).catch(() => {}).then(() => { if (im.dataset.want === u) im.src = u; }); };
+  const warm = i => { const big = wantBig();
+    pages.forEach((pg, j) => { const im = pg.querySelector('img'); if (!im) return; const d = j - i;
+      if (d >= -1 && d <= 3) { im.loading = 'eager'; setSrc(im, big ? im.dataset.big : im.dataset.s); }
+      else if (coarse && Math.abs(d) > 5 && im.getAttribute('src') !== im.dataset.s && im.complete) { im.dataset.want = ''; im.src = im.dataset.s; } }); };
+  new MutationObserver(() => { clearTimeout(warm.t); warm.t = setTimeout(() => cur >= 0 && warm(cur), 120); }).observe(sv, { attributes: true, attributeFilter: ['class'] });
+  document.addEventListener('fullscreenchange', () => setTimeout(() => cur >= 0 && warm(cur), 150));
   // 내 서재: 책마다 마지막으로 읽던 이야기와 쪽 (운영자 요청, 2026-11-14)
   const shelfSave = i => {
     const d = sv.dataset; if (!d.book) return;
@@ -302,6 +315,7 @@
   const zApply = () => {
     if (!Z.img) return;
     Z.img.style.transform = Z.s > 1 ? `translate(${Z.x}px,${Z.y}px) scale(${Z.s})` : '';
+    if (Z.s > 1 && Z.img.dataset.big) setSrc(Z.img, Z.img.dataset.big);  // 확대할 때는 원본 그림으로
     sv.classList.toggle('sv-zoom', Z.s > 1);
   };
   const zReset = () => { if (Z.img) Z.img.style.transform = ''; Z.s = 1; Z.x = Z.y = 0; Z.img = null; sv.classList.remove('sv-zoom'); };
