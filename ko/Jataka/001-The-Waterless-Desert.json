@@ -179,10 +179,10 @@
     "en": "The Fool blindly obeyed.",
     "ko": "어리석은 상인은 그대로 따랐습니다.",
     "rect": [
-     38,
-     34,
-     231,
-     63
+     36,
+     30,
+     233,
+     67
     ],
     "whole": true,
     "cover": true,
@@ -280,10 +280,10 @@
     "en": "Rain wind felt? No.",
     "ko": "비바람? 없다.",
     "rect": [
-     22,
-     23,
-     172,
-     47
+     20,
+     19,
+     174,
+     51
     ],
     "whole": true,
     "cover": true,
@@ -294,10 +294,10 @@
     "en": "Storm clouds seen?",
     "ko": "먹구름? 없다.",
     "rect": [
-     217,
-     23,
-     381,
-     47
+     215,
+     19,
+     383,
+     51
     ],
     "whole": true,
     "cover": true,
@@ -308,10 +308,10 @@
     "en": "Lightning spotted?",
     "ko": "번개? 없다.",
     "rect": [
-     423,
-     23,
-     584,
-     47
+     421,
+     19,
+     586,
+     51
     ],
     "whole": true,
     "cover": true,
@@ -322,10 +322,10 @@
     "en": "Thunder heard? No",
     "ko": "천둥소리? 없다.",
     "rect": [
-     622,
-     23,
-     776,
-     47
+     620,
+     19,
+     778,
+     51
     ],
     "whole": true,
     "cover": true,

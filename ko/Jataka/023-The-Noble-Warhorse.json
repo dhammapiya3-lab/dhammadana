@@ -30,10 +30,10 @@
     "en": "Ground scented with four perfumes.",
     "ko": "향 뿌린 바닥",
     "rect": [
-     80,
-     341,
-     212,
-     375
+     78,
+     337,
+     214,
+     379
     ],
     "whole": true,
     "cover": true,
@@ -259,10 +259,10 @@
     "shape": "box",
     "manual": true,
     "rect": [
-     77,
-     72,
-     252,
-     96
+     75,
+     68,
+     254,
+     100
     ],
     "whole": true,
     "cover": true
