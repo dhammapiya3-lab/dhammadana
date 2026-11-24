@@ -141,24 +141,29 @@
     "en": "Hell: Tormented for hundreds of thousands of years.",
     "ko": "• 지옥: 수십만 년 동안 고통받음",
     "rect": [
-     443,
-     78,
-     730,
-     172
+     544,
+     96,
+     734,
+     142
     ],
     "whole": true,
-    "cover": true,
-    "align": "center"
+    "cover": [
+     244,
+     232,
+     206
+    ],
+    "align": "center",
+    "dark": false
    },
    {
     "shape": "box",
     "en": "Yakkha: 500 births, starving save for one meal of offal.",
     "ko": "• 약카: 500생 동안 굶주리며 내장 한 끼만 먹음",
     "rect": [
-     413,
-     54,
-     744,
-     404
+     544,
+     214,
+     734,
+     258
     ],
     "whole": true,
     "cover": true,
