@@ -1564,3 +1564,28 @@ h1,h2,h3,.ch-head,.s-h1{word-break:keep-all;overflow-wrap:break-word}
 :root.mode-night .simple-ui .s-keys .s-btn:focus-visible,:root.mode-contrast .simple-ui .s-keys .s-btn:focus-visible{background:#ffe36b;color:#000}
 .simple-ui .s-keys h2{font-size:1.2em}
 .simple-ui .s-keys h3{font-size:1.05em;margin-top:16px}
+
+/* 첫 화면 '새로 올라온 그림책' (운영자 요청, 2026-11-24) */
+.sbn-note{margin:-4px 0 14px}
+.sbn-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+.sbn-card{display:flex;flex-direction:column;gap:4px;color:var(--ink);text-decoration:none}
+.sbn-card:hover{text-decoration:none}.sbn-card:hover .sbn-t{text-decoration:underline}
+.sbn-cover{display:block;aspect-ratio:16/9;background:var(--paper-2);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.sbn-cover img{width:100%;height:100%;object-fit:cover;display:block}
+.sbn-t{font-size:14px;line-height:1.35;margin-top:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.sbn-m{font-size:12.5px;color:var(--ink-soft)}
+@media (max-width:1000px){.sbn-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:700px){.sbn-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0 -16px;padding:0 16px 4px}.sbn-grid::-webkit-scrollbar{display:none}.sbn-grid li{flex:0 0 62%;scroll-snap-align:start}}
+
+/* 추천·협력 사이트 맨 위 '함께 운영하는 사이트' (운영자 요청, 2026-11-24) */
+.own-card{border:1px solid var(--line);border-radius:10px;background:var(--paper-2);overflow:hidden}
+.own-covers{display:grid;grid-template-columns:repeat(5,1fr);gap:2px}
+.own-covers img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+.own-body{padding:18px 22px 20px}
+.own-body h3{margin:0 0 8px;font-size:21px}.own-body h3 .small{font-family:var(--sans);font-weight:400;font-size:13px;margin-left:6px}
+.own-body h3 a{color:var(--ink)}
+.own-body p{margin:0 0 10px;line-height:1.6}
+.own-n{font-weight:500}
+.own-feat{list-style:none;padding:0;margin:0 0 16px;display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--ink-soft);font-size:14.5px}
+.own-credit{margin:14px 0 0!important}
+@media (max-width:700px){.own-covers{grid-template-columns:repeat(3,1fr)}.own-covers img:nth-child(n+4){display:none}.own-body{padding:16px}.own-feat{flex-direction:column}}

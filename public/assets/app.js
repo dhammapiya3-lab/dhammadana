@@ -115,8 +115,22 @@ function initPage() {
   if (p === 'book') initBook();
   if (p === 'members') initMembers();
   if (p === 'account') initAccount();
+  if (p === 'home') initSbNew();
   acctBtn();
   $$('[data-permit]').forEach(b => b.onclick = () => lightbox(b.dataset.permit, b.dataset.title));
+}
+
+/* ---------- 첫 화면 '새로 올라온 그림책' (운영자 요청, 2026-11-24) ---------- */
+// 빌드 때 넣은 목록을 그림책 사이트의 최신 new.json 으로 바꿔 씀(테라와다 불교 묶음, 새 책이 앞, 6권). 못 받으면 빌드 때 것 그대로.
+async function initSbNew() {
+  const sec = $('#sbNew'); if (!sec) return;
+  try {
+    const r = await fetch(sec.dataset.src, { cache: 'no-cache' }); if (!r.ok) return;
+    const list = ((await r.json()).books || []).slice(0, 6); if (!list.length) return;
+    const e = x => String(x).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    sec.querySelector('.sbn-grid').innerHTML = list.map(b => `<li><a class="sbn-card" href="${e(b.url)}"><span class="sbn-cover"><img src="${e(b.cover)}" alt="" loading="lazy" width="800" height="450"></span><span class="sbn-t">${e(b.title)}</span><span class="sbn-m">${b.ready}편 · ${e(b.date.slice(5).replace('-', '.'))} 공개</span></a></li>`).join('');
+    sec.hidden = false;
+  } catch (err) {}
 }
 
 /* ---------- 학습 자료실 ---------- */

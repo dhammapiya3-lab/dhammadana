@@ -398,7 +398,8 @@ if (fs.existsSync(C('audiobooks'))) {
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const sayDate = d => String(d || '').replace(/(\d{4})-(\d{1,2})-(\d{1,2})/g, (m, y, mo, da) => `${y}년 ${+mo}월 ${+da}일`);
 const slugT = s => encodeURIComponent(s);
-const NAV = [['/about/', '소개', 'about'], ['/press/', '我無말들 출판사', 'press'], ['/library/', '법보시 도서관', 'library'], ['/dhammatalk/', '법문 바로 듣기', 'dhammatalk'], ['/links/', '추천·협력 사이트', 'links'], ['/news/', '소식', 'news']];
+// 주 메뉴. '그림책'은 그림책 사이트(storybooks.dhammadana.kr)로 감 (운영자 요청, 2026-11-24)
+const NAV = [['/about/', '소개', 'about'], ['/press/', '我無말들 출판사', 'press'], ['/library/', '법보시 도서관', 'library'], ['/dhammatalk/', '법문 바로 듣기', 'dhammatalk'], ['https://storybooks.dhammadana.kr/', '그림책', 'storybooks'], ['/links/', '추천·협력 사이트', 'links'], ['/news/', '소식', 'news']];
 const wheel = cls => `<svg class="${cls}" viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="20" cy="20" r="15"/><circle cx="20" cy="20" r="3.2"/><path d="M20 5v30M5 20h30M9.4 9.4l21.2 21.2M30.6 9.4L9.4 30.6"/></g></svg>`;
 
 // 검색엔진용 책 정보 (schema.org Book). 책 JSON 에 있는 것만 씀 — 없는 정보는 넣지 않음
@@ -635,6 +636,12 @@ function updatesList() {
   for (const b of LIB()) if (!b.hide_update) rows.push({ d: b.added || '', b, c: '등록' });
   return rows.sort((a, b) => b.d.localeCompare(a.d)).slice(0, 8);
 }
+// 첫 화면 '새로 올라온 그림책' 칸 (운영자 요청, 2026-11-24): 그림책 사이트가 만드는 new.json(테라와다 불교 묶음의 책만, 새 책이 앞)을
+// 빌드 때 받아서 그림. 못 받으면 칸을 비워 두고, 화면에서 app.js(initSbNew)가 다시 받아 채움 — 그림책 사이트에 새 책이 나오면 도서관을 다시 빌드하지 않아도 보임
+const SB_URL = 'https://storybooks.dhammadana.kr', SB_JSON = process.env.SB_JSON || SB_URL + '/new.json';  // SB_JSON: 로컬 시험용
+const SB_DATA = await (async () => { try { const ac = new AbortController(); const to = setTimeout(() => ac.abort(), 10000); const r = await fetch(SB_JSON, { signal: ac.signal }); clearTimeout(to); return r.ok ? await r.json() : {}; } catch (e) { console.warn('[그림책] new.json 을 받지 못함 — 화면에서 다시 받음'); return {}; } })();
+const SB_NEW = SB_DATA.books || [];
+const sbCards = list => list.slice(0, 6).map(b => `<li><a class="sbn-card" href="${esc(b.url)}"><span class="sbn-cover"><img src="${esc(b.cover)}" alt="" loading="lazy" width="800" height="450"></span><span class="sbn-t">${esc(b.title)}</span><span class="sbn-m">${b.ready}편 · ${esc(b.date.slice(5).replace('-', '.'))} 공개</span></a></li>`).join('');
 put('index.html', layout({ simple: '/simple/', ld: { '@context': 'https://schema.org', '@type': 'WebSite', name: S.site_name, alternateName: ['테라와다불교 법보시 도서관', 'Dhammadāna Library'], description: '테라와다불교·근본불교 법보시 서적 무료 도서관', url: SITE_URL + '/', inLanguage: 'ko', potentialAction: { '@type': 'SearchAction', target: SITE_URL + '/search/?q={search_term_string}', 'query-input': 'required name=search_term_string' } },
   page: 'home', body: `<h1 class="sr">${esc(S.site_name)}</h1><section class="verse wrap">${wheel('wheel')}
   <div class="pali-line">${esc(S.verse_pali)}</div><div class="ko-line">${esc(S.verse_ko)}</div><div class="cite">${esc(S.verse_cite)}</div>
@@ -650,6 +657,9 @@ put('index.html', layout({ simple: '/simple/', ld: { '@context': 'https://schema
 </section>
 <section class="section wrap"><div class="section-head"><h2>수행전통으로 둘러보기</h2><a class="more" href="/library/">도서관에서 찾아보기 →</a></div>
   <ul class="trad-grid" role="list">${TRADS.filter(t => t.representatives?.length).sort((a, b) => countTrad(b.id) - countTrad(a.id)).map(t => `<li><a class="trad${countTrad(t.id) ? '' : ' empty'}" href="/library/?trad=${t.id}" aria-label="${esc([t.region, t.name, t.representatives.map(id => teacherById(id)?.name || '').join(' · '), countTrad(t.id) ? '자료 ' + countTrad(t.id) + '권' : '준비 중'].join(' '))}"><div class="k">${esc(t.region)}</div> <div class="nm">${esc(t.name)}</div> <div class="ts">${t.representatives.map(id => esc(teacherById(id)?.name || '')).join(' · ')}</div> <div class="ts" style="margin-top:6px">${countTrad(t.id) ? `자료 ${countTrad(t.id)}권` : '준비 중'}</div></a></li>`).join('')}</ul></section>
+<section class="section wrap sb-new" id="sbNew" data-src="${SB_URL}/new.json"${SB_NEW.length ? '' : ' hidden'}><div class="section-head"><h2>새로 올라온 그림책</h2><a class="more" href="${SB_URL}/">그림책 사이트 →</a></div>
+  <p class="small muted sbn-note">테라와다 불교 전통의 이야기를 그림으로 보는 한국어 그림책입니다.</p>
+  <ul class="sbn-grid" role="list">${sbCards(SB_NEW)}</ul></section>
 <section class="section wrap two">
   <div><div class="section-head"><h2>我無말들 출판사</h2><a class="more" href="/press/">출판사 코너 →</a></div>
     ${cardList(BOOKS.filter(b => b.press && !brlOnly(b)).slice(0, 3), 'three')}</div>
@@ -977,7 +987,7 @@ function talksBody() {
 put('dhammatalk/index.html', layout({ title: '법문 바로 듣기', nav: 'dhammatalk', page: 'talks', body: talksBody() }));
 
 // 추천·협력
-const partners = PROVIDERS.filter(p => p.partner);
+const partners = PROVIDERS.filter(p => p.partner && !p.links_hide);  // links_hide: 추천·협력 사이트에는 안 보임(법문 바로 듣기 유튜브 채널은 그대로) — 자애통찰명상원 (운영자 요청, 2026-11-24)
 // 네이버 카페: 카페 대표 이미지를 빌드할 때 자동으로 가져옴 (관리자 화면의 '대표 이미지 주소'가 있으면 그것을 씀)
 async function cafeImage(url) {
   const m = String(url || '').match(/cafe\.naver\.com\/([A-Za-z0-9_-]+)/); if (!m) return '';
@@ -1002,6 +1012,16 @@ for (const p of partners) p._img = p.image || await cafeImage((p.urls || [])[0])
 const linkGroups = [{ name: '협력 단체', desc: '도서관과 함께 법보시 자료를 나누는 단체입니다.', items: partners.map(p => ({ name: p.name, url: (p.urls || [])[0] || '#', note: p.note || '', img: p._img || '', yt: (p.urls || []).slice(1).find(u => /youtube\.com|youtu\.be/i.test(u)) || '' })) }, ...LINKS];
 put('links/index.html', layout({
   title: '추천·협력 사이트', nav: 'links', page: 'links', body: `<div class="wrap"><div class="prose" style="padding-bottom:4px"><h1>추천·협력 사이트</h1><p class="muted">함께 법을 나누는 곳들을 종류별로 모았습니다.</p></div>
+  <section style="margin-top:30px" aria-labelledby="ownH"><div class="section-head" style="margin-bottom:12px"><h2 id="ownH">함께 운영하는 사이트</h2></div>
+   <div class="own-card">
+    ${SB_NEW.length ? `<a class="own-covers" href="${SB_URL}/" tabindex="-1" aria-hidden="true">${SB_NEW.slice(0, 5).map(b => `<img src="${esc(b.cover)}" alt="" loading="lazy" width="800" height="450">`).join('')}</a>` : ''}
+    <div class="own-body"><h3><a href="${SB_URL}/">붓다담마 그림책</a> <span class="small muted">storybooks.dhammadana.kr</span></h3>
+     <p>부처님의 전생 이야기와 자따까, 부처님과 으뜸 제자들의 생애를 그림으로 보는 한국어 그림책입니다.</p>
+     ${SB_DATA.total ? `<p class="own-n">그림책 ${SB_DATA.total.books}권 · 이야기 ${SB_DATA.total.stories}편 · 그림 ${Math.floor(SB_DATA.total.images / 100) * 100}여 장</p>` : ''}
+     <ul class="own-feat"><li>🔊 읽어 주기</li><li>☆ 그림 책갈피 (법회·어린이 법회에서 다시 보여 주기)</li><li>⛶ 전체 화면 보기</li><li>도서관 회원 아이디로 그대로 로그인</li></ul>
+     <a class="btn" href="${SB_URL}/">그림책 보러 가기 →</a>
+     <p class="small muted own-credit">원작: 아난다조띠 스님의 Dharma Storybooks · 한국어판도 CC BY-SA 4.0</p></div>
+   </div></section>
   ${linkGroups.filter(g => g.items.length).map(g => `<section style="margin-top:30px"><div class="section-head" style="margin-bottom:12px"><h2>${esc(g.name)}</h2><span class="small muted">${g.items.length}곳</span></div>
    <p class="small muted" style="margin:-4px 0 14px">${esc(g.desc || '')}</p>
    ${(() => { const langs = [...new Set(g.items.map(l => l.lang || ''))]; const grid = list => `<div class="link-grid">${list.map(l => `${l.yt ? '<div class="lc-wrap">' : ''}<a class="link-card${l.yt ? ' has-yt' : ''}${l.img ? ' has-img' : ''}" href="${esc(l.url)}" target="_blank" rel="noopener">${l.img ? `<img class="lc-ico lc-img" src="${esc(l.img)}" alt="" width="56" height="56" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.closest('.link-card').classList.remove('has-img');this.className='lc-ico';this.width=28;this.height=28;this.src='https://www.google.com/s2/favicons?sz=64&domain=${encodeURIComponent((l.url.match(/\/\/([^/]+)/) || [])[1] || '')}'">` : `<img class="lc-ico" src="https://www.google.com/s2/favicons?sz=64&domain=${encodeURIComponent((l.url.match(/\/\/([^/]+)/) || [])[1] || '')}" alt="" width="28" height="28" loading="lazy" onerror="this.style.visibility='hidden'">`}<b class="lc-name">${esc(l.name)} ↗</b><span class="small muted">${esc(l.note || '')}</span></a>${l.yt ? `<a class="lc-yt" href="${esc(l.yt)}" target="_blank" rel="noopener"><span aria-hidden="true">▶ </span>유튜브 채널 ↗<span class="sr"> (${esc(l.name)}, 새 창)</span></a></div>` : ''}`).join('')}</div>`; const row = lg => `<div class="lang-row">${lg ? `<h3 class="lang-h">${esc(lg)}</h3>` : ''}${grid(g.items.filter(l => (l.lang || '') === lg))}</div>`;
