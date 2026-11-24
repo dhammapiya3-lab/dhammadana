@@ -55534,6 +55534,10 @@
     {
      "story": "004-Culasetthi.htm",
      "label": "04 Cūḷaseṭṭhi Jātaka"
+    },
+    {
+     "story": "005-Tandulanali.htm",
+     "label": "05 Taṇḍulanāḷi Jātaka"
     }
    ],
    "stories": {
@@ -55893,6 +55897,83 @@
       },
       {
        "img": "images/004-Culasetthi-30.jpg"
+      }
+     ]
+    },
+    "005-Tandulanali.htm": {
+     "file": "005-Tandulanali.htm",
+     "title": "05 Taṇḍulanāḷi Jātaka",
+     "summary": "",
+     "intro": "",
+     "items": [
+      {
+       "img": "images/005-Tandulanali-01.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-02.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-03.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-04.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-05.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-06.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-07.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-08.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-09.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-10.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-11.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-12.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-13.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-14.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-15.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-16.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-17.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-18.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-19.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-20.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-21.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-22.jpg"
+      },
+      {
+       "img": "images/005-Tandulanali-23.jpg"
       }
      ]
     }
