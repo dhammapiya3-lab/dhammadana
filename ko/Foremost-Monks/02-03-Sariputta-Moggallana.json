@@ -848,12 +848,14 @@
     "ko": "뒤따르는 생에 익는 악업\n(aparāpariya-akusala-kamma):\n지난 업이 따라잡음.",
     "align": "center",
     "rect": [
-     309,
-     54,
-     490,
-     118
+     264,
+     56,
+     536,
+     120
     ],
-    "em": 14
+    "em": 14,
+    "whole": true,
+    "cover": true
    },
    {
     "rect": [
