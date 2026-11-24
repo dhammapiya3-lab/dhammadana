@@ -368,7 +368,7 @@
     "en": "It is like judgment of Perfect Buddha himself!",
     "ko": "완전한 부처님의 판결과도 같구나!",
     "rect": [
-     324,
+     320,
      54,
      458,
      98
@@ -377,11 +377,7 @@
     "align": "center",
     "whole": true,
     "ellipse": true,
-    "cover": [
-     218,
-     205,
-     179
-    ]
+    "cover": true
    },
    {
     "seed": [
