@@ -321,7 +321,8 @@
     "align": "center",
     "shape": "bubble",
     "manual": true,
-    "em": 15
+    "em": 15,
+    "whole": true
    },
    {
     "rect": [
@@ -335,7 +336,8 @@
     "align": "center",
     "shape": "bubble",
     "manual": true,
-    "em": 16
+    "em": 16,
+    "whole": true
    },
    {
     "rect": [
@@ -349,7 +351,8 @@
     "align": "center",
     "shape": "bubble",
     "manual": true,
-    "em": 16
+    "em": 16,
+    "whole": true
    },
    {
     "rect": [
@@ -363,7 +366,8 @@
     "align": "center",
     "shape": "bubble",
     "manual": true,
-    "em": 16
+    "em": 16,
+    "whole": true
    },
    {
     "rect": [
