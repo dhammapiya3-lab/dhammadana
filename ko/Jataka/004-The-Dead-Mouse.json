@@ -16,13 +16,18 @@
     "align": "center"
    },
    {
-    "seed": [
-     191,
-     398
-    ],
     "shape": "box",
     "en": "How single observation transformed dead mouse into an empire.",
-    "ko": "관찰 하나가 죽은 쥐를 큰 재산으로 바꾼 이야기"
+    "ko": "관찰 하나가 죽은 쥐를 큰 재산으로 바꾼 이야기",
+    "rect": [
+     149,
+     391,
+     655,
+     420
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -57,13 +62,18 @@
   "img": "images/004-The-Dead-Mouse-03-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     113,
-     80
-    ],
     "shape": "box",
     "en": "Trusting the wise man’s logic, poor young man sold the mouse to tavern to feed their cat.",
-    "ko": "지혜로운 이의 말을 믿은 가난한 젊은이가 쥐를 술집에 고양이 먹이로 팔았습니다."
+    "ko": "지혜로운 이의 말을 믿은 가난한 젊은이가 쥐를 술집에 고양이 먹이로 팔았습니다.",
+    "rect": [
+     41,
+     63,
+     464,
+     103
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [

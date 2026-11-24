@@ -234,13 +234,18 @@
     "em": 14
    },
    {
-    "seed": [
-     282,
-     70
-    ],
     "shape": "box",
     "en": "Ordinary Leader vs. The Bodhisatta Leader.",
-    "ko": "보통 지도자와 보살 지도자"
+    "ko": "보통 지도자와 보살 지도자",
+    "rect": [
+     258,
+     72,
+     542,
+     97
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [

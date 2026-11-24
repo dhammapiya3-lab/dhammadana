@@ -26,13 +26,18 @@
     "ko": "진홍 휘장과 금별 박힌 차양"
    },
    {
-    "seed": [
-     115,
-     337
-    ],
     "shape": "bubble",
     "en": "Ground scented with four perfumes.",
-    "ko": "향 뿌린 바닥"
+    "ko": "향 뿌린 바닥",
+    "rect": [
+     80,
+     341,
+     212,
+     375
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "rect": [
@@ -249,14 +254,18 @@
     "em": 14
    },
    {
-    "seed": [
-     79,
-     70
-    ],
     "ko": "보살은 깨달았습니다.",
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     77,
+     72,
+     252,
+     96
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },

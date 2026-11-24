@@ -90,13 +90,18 @@
   "img": "images/014-The-Wind-Deer-05-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     362,
-     140
-    ],
     "shape": "box",
     "en": "High Fear, Low Craving",
-    "ko": "두려움 큼, 갈망 작음"
+    "ko": "두려움 큼, 갈망 작음",
+    "rect": [
+     359,
+     115,
+     545,
+     136
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -108,13 +113,18 @@
     "ko": "정원지기는 조금씩 모습을 드러냈습니다. 꿀에 대한 갈망이 커질수록 사슴이 타고난 생존 본능은 녹아 없어졌습니다.\n\n익숙해지자 그릇된 믿음이 생겼습니다.\n\n곧 야생 사슴은 사람 손에 든 먹이를 받아먹게 되었습니다."
    },
    {
-    "seed": [
-     72,
-     396
-    ],
     "shape": "box",
     "en": "Low ow rear Hig craving",
-    "ko": "두려움 작음, 갈망 큼"
+    "ko": "두려움 작음, 갈망 큼",
+    "rect": [
+     65,
+     397,
+     245,
+     417
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [

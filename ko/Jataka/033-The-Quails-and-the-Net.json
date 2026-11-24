@@ -58,13 +58,18 @@
   "img": "images/033-The-Quails-and-the-Net-04-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     279,
-     23
-    ],
     "shape": "box",
     "en": "The Unity Maneuver",
-    "ko": "화합의 작전"
+    "ko": "화합의 작전",
+    "rect": [
+     273,
+     22,
+     526,
+     47
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [

@@ -187,13 +187,18 @@
     "ko": "하늘의 네 방위요."
    },
    {
-    "seed": [
-     276,
-     386
-    ],
     "shape": "box",
     "en": "He, too, was dragged into the abys:",
-    "ko": "짠다도 깊은 물속으로 끌려갔습니다."
+    "ko": "짠다도 깊은 물속으로 끌려갔습니다.",
+    "rect": [
+     94,
+     386,
+     724,
+     410
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -225,13 +230,18 @@
   "img": "images/006-The-Water-Rakkhasa-10-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     336,
-     91
-    ],
     "shape": "box",
     "en": "The Rakkhasa disguised himself as forester.",
-    "ko": "락카사는 숲지기로 변장했습니다."
+    "ko": "락카사는 숲지기로 변장했습니다.",
+    "rect": [
+     308,
+     89,
+     465,
+     123
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -389,13 +399,18 @@
     "ko": "시험 풀이"
    },
    {
-    "seed": [
-     273,
-     397
-    ],
     "shape": "box",
     "en": "“True divinity 1S moral purity.",
-    "ko": "참된 신성은 도덕적 청정입니다."
+    "ko": "참된 신성은 도덕적 청정입니다.",
+    "rect": [
+     267,
+     388,
+     536,
+     420
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "rect": [

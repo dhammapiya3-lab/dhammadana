@@ -175,13 +175,18 @@
   "img": "images/001-The-Waterless-Desert-07-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     75,
-     40
-    ],
     "shape": "box",
     "en": "The Fool blindly obeyed.",
-    "ko": "어리석은 상인은 그대로 따랐습니다."
+    "ko": "어리석은 상인은 그대로 따랐습니다.",
+    "rect": [
+     38,
+     34,
+     231,
+     63
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -271,40 +276,60 @@
   "img": "images/001-The-Waterless-Desert-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     60,
-     25
-    ],
     "shape": "box",
     "en": "Rain wind felt? No.",
-    "ko": "비바람? 없다."
+    "ko": "비바람? 없다.",
+    "rect": [
+     22,
+     23,
+     172,
+     47
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     265,
-     29
-    ],
     "shape": "box",
     "en": "Storm clouds seen?",
-    "ko": "먹구름? 없다."
+    "ko": "먹구름? 없다.",
+    "rect": [
+     217,
+     23,
+     381,
+     47
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     491,
-     23
-    ],
     "shape": "box",
     "en": "Lightning spotted?",
-    "ko": "번개? 없다."
+    "ko": "번개? 없다.",
+    "rect": [
+     423,
+     23,
+     584,
+     47
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     691,
-     26
-    ],
     "shape": "box",
     "en": "Thunder heard? No",
-    "ko": "천둥소리? 없다."
+    "ko": "천둥소리? 없다.",
+    "rect": [
+     622,
+     23,
+     776,
+     47
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [

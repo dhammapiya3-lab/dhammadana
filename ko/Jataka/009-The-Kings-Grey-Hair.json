@@ -3,13 +3,18 @@
   "img": "images/009-The-Kings-Grey-Hair-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     301,
-     93
-    ],
     "shape": "box",
     "en": "The Divine Messenger.",
-    "ko": "천신의 사자"
+    "ko": "천신의 사자",
+    "rect": [
+     301,
+     96,
+     500,
+     120
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -36,31 +41,46 @@
   "img": "images/009-The-Kings-Grey-Hair-02-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     220,
-     386
-    ],
     "shape": "box",
     "en": "84,000 years Prince. nce.",
-    "ko": "84,000년을 왕자로"
+    "ko": "84,000년을 왕자로",
+    "rect": [
+     38,
+     386,
+     264,
+     407
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     358,
-     382
-    ],
     "shape": "box",
     "en": "years Viceroy.",
-    "ko": "84,000년을 부왕으로"
+    "ko": "84,000년을 부왕으로",
+    "rect": [
+     287,
+     386,
+     513,
+     407
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     608,
-     382
-    ],
     "shape": "box",
     "en": "84,000 years King.",
-    "ko": "84,000년을 왕으로"
+    "ko": "84,000년을 왕으로",
+    "rect": [
+     536,
+     386,
+     762,
+     407
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -272,13 +292,18 @@
     "ko": "전하, 어찌하여 출가하시려는 것입니까?"
    },
    {
-    "seed": [
-     75,
-     376
-    ],
     "shape": "box",
     "en": "Holding le grey hair, fi the King ee answered...",
-    "ko": "흰머리 한 올을 들어 올리며 왕이 대답했습니다…"
+    "ko": "흰머리 한 올을 들어 올리며 왕이 대답했습니다…",
+    "rect": [
+     69,
+     368,
+     480,
+     387
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

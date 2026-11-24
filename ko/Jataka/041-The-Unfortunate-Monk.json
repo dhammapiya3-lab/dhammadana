@@ -108,13 +108,18 @@
   "img": "images/041-The-Unfortunate-Monk-04-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     246,
-     34
-    ],
     "shape": "box",
     "en": "The karmic cost of greedy sabotage",
-    "ko": "탐욕스러운 해코지의 업보:"
+    "ko": "탐욕스러운 해코지의 업보:",
+    "rect": [
+     245,
+     27,
+     555,
+     51
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [

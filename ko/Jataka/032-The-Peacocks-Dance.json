@@ -17,22 +17,32 @@
   "img": "images/032-The-Peacocks-Dance-02-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     203,
-     67
-    ],
     "shape": "box",
     "en": "In the first cycle Ic of the world’s history, the animal chose th leaders,",
-    "ko": "세상의 첫 시대에 동물들은 저마다 우두머리를 뽑았습니다."
+    "ko": "세상의 첫 시대에 동물들은 저마다 우두머리를 뽑았습니다.",
+    "rect": [
+     163,
+     65,
+     641,
+     84
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     185,
-     364
-    ],
     "shape": "box",
     "en": "Quadrupeds chose the Lion.",
-    "ko": "네발짐승은 사자를 뽑았습니다."
+    "ko": "네발짐승은 사자를 뽑았습니다.",
+    "rect": [
+     112,
+     353,
+     225,
+     383
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -181,13 +191,18 @@
     "ko": "공작이여, 공주께서 세상 모든 새 가운데 그대를 고르셨소."
    },
    {
-    "seed": [
-     323,
-     12
-    ],
     "shape": "box",
     "en": "The assembly of approached him.",
-    "ko": "새들이 공작에게 갔습니다."
+    "ko": "새들이 공작에게 갔습니다.",
+    "rect": [
+     272,
+     13,
+     529,
+     44
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
