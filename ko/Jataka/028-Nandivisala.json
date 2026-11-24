@@ -3,13 +3,18 @@
   "img": "images/028-Nandivisala-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     332,
-     202
-    ],
     "shape": "box",
     "en": "He treated the creature like his own child, raising him with great pains on rice and rice-gruel.",
-    "ko": "바라문은 그 송아지를 친자식처럼 아끼며 밥과 죽을 먹여 정성껏 길렀습니다."
+    "ko": "바라문은 한 송아지를 친자식처럼 아끼며 밥과 죽을 먹여 정성껏 길렀습니다.",
+    "rect": [
+     296,
+     192,
+     504,
+     258
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
