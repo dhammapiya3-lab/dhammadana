@@ -71,13 +71,17 @@
   "img": "images/022-The-Teaching-of-the-Dog-03-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     359,
-     68
-    ],
     "shape": "bubble",
     "en": "Street dogs have destroyed my carriage! Kill every dog you see/",
-    "ko": "떠돌이 개들이 내 수레를 망가뜨렸구나! 보이는 개는 모두 죽여라!"
+    "ko": "떠돌이 개들이 내 수레를 망가뜨렸구나! 보이는 개는 모두 죽여라!",
+    "rect": [
+     337,
+     65,
+     510,
+     139
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -104,13 +108,17 @@
   "img": "images/022-The-Teaching-of-the-Dog-04-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     534,
-     76
-    ],
     "shape": "bubble",
     "en": "The guiltless are put to death th while the true culprits remain safe inside the palace. will discover the truth to the king and save my kin",
-    "ko": "죄 없는 개들은 죽어 가고 진짜 범인은 궁 안에서 무사하구나. 내가 왕께 진실을 알리고 동족을 구하리라."
+    "ko": "죄 없는 개들은 죽어 가고 진짜 범인은 궁 안에서 무사하구나. 내가 왕께 진실을 알리고 동족을 구하리라.",
+    "rect": [
+     208,
+     50,
+     545,
+     82
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },

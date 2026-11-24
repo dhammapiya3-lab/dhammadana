@@ -224,13 +224,17 @@
     "align": "center"
    },
    {
-    "seed": [
-     523,
-     279
-    ],
     "shape": "bubble",
     "en": "The beast is not sick in body. His mind has been perverted by overhearing the dark words of thieves",
-    "ko": "이 코끼리는 몸이 아픈 것이 아닙니다. 도둑들의 나쁜 말을 엿듣고 마음이 비뚤어진 것입니다."
+    "ko": "이 코끼리는 몸이 아픈 것이 아닙니다. 도둑들의 나쁜 말을 엿듣고 마음이 비뚤어진 것입니다.",
+    "rect": [
+     495,
+     273,
+     630,
+     361
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -252,13 +256,17 @@
     "align": "center"
    },
    {
-    "seed": [
-     391,
-     258
-    ],
     "shape": "bubble",
     "en": "Order good men, sages and brahmins, to sit in his stall tonight and speak only of goodness.",
-    "ko": "오늘 밤 덕 있는 사람들, 현자와 바라문들을 우리에 앉히고 좋은 말만 하게 하십시오."
+    "ko": "오늘 밤 덕 있는 사람들, 현자와 바라문들을 우리에 앉히고 좋은 말만 하게 하십시오.",
+    "rect": [
+     362,
+     257,
+     486,
+     337
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -275,13 +283,17 @@
     "ko": "현자들이 사나운 코끼리 곁에 자리를 잡았습니다."
    },
    {
-    "seed": [
-     271,
-     128
-    ],
     "shape": "bubble",
     "en": "Neither maltreat nor kill. The good must always be long-suffering, loving, and merciful.",
-    "ko": "괴롭히지도 죽이지도 마라. 선한 이는 언제나 참을성 있고 자애롭고 자비로워야 한다."
+    "ko": "괴롭히지도 죽이지도 마라. 선한 이는 언제나 참을성 있고 자애롭고 자비로워야 한다.",
+    "rect": [
+     260,
+     135,
+     402,
+     205
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -434,13 +446,17 @@
     "ko": "나라는 안전해졌습니다. 지혜와 살핌으로 보살은 큰 영예를 얻었습니다."
    },
    {
-    "seed": [
-     546,
-     111
-    ],
     "shape": "bubble",
     "en": "He can read the mind even of an animal!",
-    "ko": "짐승의 마음까지 읽어 내는구나!"
+    "ko": "짐승의 마음까지 읽어 내는구나!",
+    "rect": [
+     554,
+     118,
+     660,
+     159
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  }

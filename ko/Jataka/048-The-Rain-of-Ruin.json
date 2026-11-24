@@ -66,13 +66,17 @@
   "img": "images/048-The-Rain-of-Ruin-03-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     462,
-     107
-    ],
     "shape": "bubble",
     "en": "will return. 3 Have 5 no fear,” the 2 Bodhisatta warned. “Tonight the planets align. Do not repeat the Vedabbha charm to call down the precious cious rain. If you yield to this mishap, calamity will befall you and these robbers.”",
-    "ko": "“제가 돌아올 테니 두려워 마십시오.” 보살이 일렀습니다. “오늘 밤 별들이 모입니다. 보배 비를 부르는 웨답바 주문을 외지 마십시오. 이 유혹에 넘어가시면 스승님도 이 도적들도 재앙을 만납니다.”"
+    "ko": "“제가 돌아올 테니 두려워 마십시오.” 보살이 일렀습니다. “오늘 밤 별들이 모입니다. 보배 비를 부르는 웨답바 주문을 외지 마십시오. 이 유혹에 넘어가시면 스승님도 이 도적들도 재앙을 만납니다.”",
+    "rect": [
+     432,
+     108,
+     632,
+     221
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },

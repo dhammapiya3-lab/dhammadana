@@ -101,13 +101,17 @@
   "img": "images/029-Grannys-Blackie-04-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     534,
-     49
-    ],
     "shape": "bubble",
     "en": "“My mother is poor. She painfully reared me as her own child. must earn money to ease her hard lot.”",
-    "ko": "“우리 어머니는 가난하다. 나를 친자식처럼 힘들게 기르셨다. 돈을 벌어 어머니의 고생을 덜어 드려야겠다.”"
+    "ko": "“우리 어머니는 가난하다. 나를 친자식처럼 힘들게 기르셨다. 돈을 벌어 어머니의 고생을 덜어 드려야겠다.”",
+    "rect": [
+     513,
+     48,
+     730,
+     160
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "shape": "box",
@@ -185,13 +189,17 @@
     "align": "center"
    },
    {
-    "seed": [
-     285,
-     265
-    ],
     "shape": "bubble",
     "en": "will pay two coins per cart. One thousand coins total,” agreed the merchant.",
-    "ko": "“수레 한 대에 두 닢씩, 모두 천 닢을 주겠다.” 상인이 약속했습니다."
+    "ko": "“수레 한 대에 두 닢씩, 모두 천 닢을 주겠다.” 상인이 약속했습니다.",
+    "rect": [
+     266,
+     264,
+     415,
+     342
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -323,13 +331,17 @@
     "align": "center"
    },
    {
-    "seed": [
-     529,
-     195
-    ],
     "shape": "bubble",
     "en": "Realizing his error, the merchant wrapped the full thousand coins and HES them to the bull.",
-    "ko": "잘못을 깨달은 상인은 천 닢을 다 싸서 황소에게 매어 주었습니다."
+    "ko": "잘못을 깨달은 상인은 천 닢을 다 싸서 황소에게 매어 주었습니다.",
+    "rect": [
+     552,
+     207,
+     714,
+     260
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "shape": "box",
@@ -384,13 +396,17 @@
   "img": "images/029-Grannys-Blackie-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     81,
-     61
-    ],
     "shape": "bubble",
     "en": "“Have any wish to live on your earnings, my child? Why endure this fatigue?”",
-    "ko": "“얘야, 내가 네가 번 돈으로 살고 싶다더냐? 왜 이렇게 고생을 하느냐?”"
+    "ko": "“얘야, 내가 네가 번 돈으로 살고 싶다더냐? 왜 이렇게 고생을 하느냐?”",
+    "rect": [
+     93,
+     76,
+     270,
+     136
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "shape": "box",

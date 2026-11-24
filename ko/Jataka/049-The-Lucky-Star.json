@@ -56,13 +56,17 @@
   "img": "images/049-The-Lucky-Star-04-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     542,
-     84
-    ],
     "shape": "bubble",
     "en": "The stars are not favourable!",
-    "ko": "별자리가 좋지 않다!"
+    "ko": "별자리가 좋지 않다!",
+    "rect": [
+     536,
+     84,
+     648,
+     136
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "rect": [
@@ -165,13 +169,17 @@
     "whole": true
    },
    {
-    "seed": [
-     371,
-     284
-    ],
     "shape": "bubble",
     "en": "You lacked common decency and stayed away. She is another's. How can we marry her twice over?",
-    "ko": "당신들은 예의도 없이 오지 않았소. 그 아이는 이미 남의 사람이오. 어떻게 두 번 시집을 보낸단 말이오?"
+    "ko": "당신들은 예의도 없이 오지 않았소. 그 아이는 이미 남의 사람이오. 어떻게 두 번 시집을 보낸단 말이오?",
+    "rect": [
+     359,
+     287,
+     495,
+     358
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "rect": [
@@ -230,13 +238,17 @@
   "img": "images/049-The-Lucky-Star-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     400,
-     97
-    ],
     "shape": "bubble",
     "en": "\"What, forsooth, do the stars matter?\" the wise man asked. \"Is not the lucky thing to get the girl?\"",
-    "ko": "“별이 대체 무슨 상관이오?” 지혜로운 이가 물었습니다. “처녀를 얻는 것, 그것이 바로 행운 아니겠소?”"
+    "ko": "“별이 대체 무슨 상관이오?” 지혜로운 이가 물었습니다. “처녀를 얻는 것, 그것이 바로 행운 아니겠소?”",
+    "rect": [
+     395,
+     94,
+     663,
+     166
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },

@@ -240,13 +240,17 @@
   "img": "images/034-The-Amorous-Fish-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     266,
-     338
-    ],
     "shape": "bubble",
     "en": "Just then, the priest came to the riverside to bathe. Tuning into the language of animals, he heard the fish's bizarre lamentation over the crackling of the fire.",
-    "ko": "그때 사제가 목욕하러 강가에 왔습니다. 동물의 말에 귀 기울이던 그는, 불 타는 소리 너머로 물고기의 기이한 탄식을 들었습니다."
+    "ko": "그때 사제가 목욕하러 강가에 왔습니다. 동물의 말에 귀 기울이던 그는, 불 타는 소리 너머로 물고기의 기이한 탄식을 들었습니다.",
+    "rect": [
+     271,
+     350,
+     529,
+     404
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -254,14 +258,18 @@
   "img": "images/034-The-Amorous-Fish-09-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     491,
-     85
-    ],
     "shape": "bubble",
     "en": "Impending pending Death",
     "ko": "다가온 죽음",
-    "em": 15
+    "em": 15,
+    "rect": [
+     473,
+     88,
+     590,
+     107
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -302,13 +310,17 @@
     "align": "center"
    },
    {
-    "seed": [
-     258,
-     342
-    ],
     "shape": "bubble",
     "en": "The priest recognized profound spiritual danger. If being dies while its mind is clouded by the unhealthy lament of passion, it cannot escape rebirth in hell. He resolved to intervene.",
-    "ko": "사제는 큰 영적 위험을 알아보았습니다.\n애욕의 해로운 탄식에 마음이 흐려진 채 죽으면 지옥에 다시 태어날 수밖에 없습니다. 그는 나서기로 마음먹었습니다."
+    "ko": "사제는 큰 영적 위험을 알아보았습니다.\n애욕의 해로운 탄식에 마음이 흐려진 채 죽으면 지옥에 다시 태어날 수밖에 없습니다. 그는 나서기로 마음먹었습니다.",
+    "rect": [
+     271,
+     350,
+     529,
+     404
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -330,31 +342,43 @@
     "align": "center"
    },
    {
-    "seed": [
-     310,
-     122
-    ],
     "shape": "bubble",
     "en": "My men, don't you supply us with fish every day for our curry?",
-    "ko": "여보게들, 날마다 우리 반찬으로 물고기를 대 주지 않았나?"
+    "ko": "여보게들, 날마다 우리 반찬으로 물고기를 대 주지 않았나?",
+    "rect": [
+     308,
+     126,
+     462,
+     177
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
-    "seed": [
-     566,
-     130
-    ],
     "shape": "bubble",
     "en": "What do you say, sir? Pray, take any fish you fancy!",
-    "ko": "무슨 말씀이십니까, 나리? 마음에 드는 물고기를 얼마든지 가져가십시오!"
+    "ko": "무슨 말씀이십니까, 나리? 마음에 드는 물고기를 얼마든지 가져가십시오!",
+    "rect": [
+     572,
+     133,
+     699,
+     192
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
-    "seed": [
-     258,
-     342
-    ],
     "shape": "bubble",
     "en": "The priest recognized profound spiritual danger. danger, If being dies while its mind is clouded by the unhealthy lament of passion, it cannot escape rebirth in hell. He resolved to intervene.",
-    "ko": "사제는 큰 영적 위험을 알아보았습니다.\n애욕의 해로운 탄식에 마음이 흐려진 채 죽으면 지옥에 다시 태어날 수밖에 없습니다. 그는 나서기로 마음먹었습니다."
+    "ko": "사제는 큰 영적 위험을 알아보았습니다.\n애욕의 해로운 탄식에 마음이 흐려진 채 죽으면 지옥에 다시 태어날 수밖에 없습니다. 그는 나서기로 마음먹었습니다.",
+    "rect": [
+     271,
+     350,
+     529,
+     404
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },

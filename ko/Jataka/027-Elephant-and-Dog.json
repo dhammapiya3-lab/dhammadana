@@ -133,13 +133,17 @@
   "img": "images/027-Elephant-and-Dog-06-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     475,
-     74
-    ],
     "shape": "bubble",
     "en": "He has no bodily ailment. This is sickness of the heart. He is sorrowing at the loss of friend.",
-    "ko": "몸에는 아무 병이 없다. 마음의 병이다. 벗을 잃고 슬퍼하는 것이다."
+    "ko": "몸에는 아무 병이 없다. 마음의 병이다. 벗을 잃고 슬퍼하는 것이다.",
+    "rect": [
+     478,
+     73,
+     614,
+     132
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -201,13 +205,17 @@
   "img": "images/027-Elephant-and-Dog-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     410,
-     72
-    ],
     "shape": "bubble",
     "en": "There is nothing physically the matter with the elephant, sire He was very friendly with dog It is broken heart that makes him refuse to eat",
-    "ko": "대왕이시여, 코끼리는 몸에 아무 탈이 없습니다. 개 한 마리와 아주 친했는데, 마음이 아파서 먹지 않는 것입니다."
+    "ko": "대왕이시여, 코끼리는 몸에 아무 탈이 없습니다. 개 한 마리와 아주 친했는데, 마음이 아파서 먹지 않는 것입니다.",
+    "rect": [
+     402,
+     79,
+     557,
+     145
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -307,13 +315,17 @@
   "img": "images/027-Elephant-and-Dog-13-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     373,
-     47
-    ],
     "shape": "bubble",
     "en": "Even the minds of animals are known to im.",
-    "ko": "짐승의 마음까지도 이 사람은 아는구나."
+    "ko": "짐승의 마음까지도 이 사람은 아는구나.",
+    "rect": [
+     339,
+     55,
+     459,
+     114
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "seed": [

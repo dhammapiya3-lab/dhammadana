@@ -581,13 +581,17 @@
   "img": "images/041-The-Unfortunate-Monk-15-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     323,
-     67
-    ],
     "shape": "bubble",
     "en": "He who does not take the advice of one who seeks his good, grieves like Mittaka holding onto the goat’s foot.",
-    "ko": "자기를 위해 주는 이의 충고를 듣지 않는 자는 염소 발을 붙잡은 밋따까처럼 슬퍼하게 된다."
+    "ko": "자기를 위해 주는 이의 충고를 듣지 않는 자는 염소 발을 붙잡은 밋따까처럼 슬퍼하게 된다.",
+    "rect": [
+     322,
+     76,
+     481,
+     141
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "seed": [

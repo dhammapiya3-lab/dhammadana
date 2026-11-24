@@ -102,13 +102,17 @@
   "img": "images/010-Bliss-of-Renunciation-05-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     467,
-     45
-    ],
     "shape": "bubble",
     "en": "You are old, venerable sir. Wherefore should you go back to the Himalayas? Send your pupils back there and stop here yourself.",
-    "ko": "스님은 연로하십니다. 어찌 다시 히말라야로 가려 하십니까? 제자들만 보내시고 스님은 여기 머무십시오."
+    "ko": "스님은 연로하십니다. 어찌 다시 히말라야로 가려 하십니까? 제자들만 보내시고 스님은 여기 머무십시오.",
+    "rect": [
+     452,
+     53,
+     712,
+     152
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -116,13 +120,17 @@
   "img": "images/010-Bliss-of-Renunciation-06-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     218,
-     112
-    ],
     "shape": "bubble",
     "en": "Go you with these to the Himalayas; will stop on here.",
-    "ko": "이들과 함께 히말라야로 가거라. 나는 여기 머물겠다."
+    "ko": "이들과 함께 히말라야로 가거라. 나는 여기 머물겠다.",
+    "rect": [
+     213,
+     123,
+     323,
+     173
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "align": "center",
@@ -209,13 +217,17 @@
     "align": "center"
    },
    {
-    "seed": [
-     310,
-     152
-    ],
     "shape": "bubble",
     "en": "nerable sir, this ascet must have had his fill to eat, lying ue so happily!",
-    "ko": "스님, 이 수행자는 배불리 먹었나 봅니다. 저리 편히 누워 있으니!"
+    "ko": "스님, 이 수행자는 배불리 먹었나 봅니다. 저리 편히 누워 있으니!",
+    "rect": [
+     309,
+     162,
+     464,
+     202
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -223,13 +235,17 @@
   "img": "images/010-Bliss-of-Renunciation-10-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     123,
-     153
-    ],
     "shape": "bubble",
     "en": "Sire, of old this ascetic was mighty king as you are. The happiness of the monk’s life, and the happiness that brings, move him to this exalted utterance.",
-    "ko": "대왕이여, 이 수행자는 예전에 그대처럼 큰 왕이었습니다. 출가 생활의 행복과 거기서 오는 기쁨이 그로 하여금 이렇게 감흥을 터뜨리게 한 것입니다."
+    "ko": "대왕이여, 이 수행자는 예전에 그대처럼 큰 왕이었습니다. 출가 생활의 행복과 거기서 오는 기쁨이 그로 하여금 이렇게 감흥을 터뜨리게 한 것입니다.",
+    "rect": [
+     115,
+     139,
+     332,
+     311
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -256,13 +272,17 @@
   "img": "images/010-Bliss-of-Renunciation-12-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     287,
-     98
-    ],
     "shape": "bubble",
     "en": "Yan-ca arine na rakkhanti, yo ca anne na rakkhati, Sa ve raja sukham seti, kamesu anapekkhava ti.",
-    "ko": "Yañ-ca aññe na rakkhanti,\nyo ca aññe na rakkhati,\nSa ve rāja sukhaṃ seti,\nkāmesu anapekkhavā ti."
+    "ko": "Yañ-ca aññe na rakkhanti,\nyo ca aññe na rakkhati,\nSa ve rāja sukhaṃ seti,\nkāmesu anapekkhavā ti.",
+    "rect": [
+     300,
+     97,
+     539,
+     202
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "shape": "box",

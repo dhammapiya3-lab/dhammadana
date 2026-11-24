@@ -76,13 +76,17 @@
   "img": "images/044-The-Son-and-the-Mosquito-05-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     188,
-     74
-    ],
     "shape": "bubble",
     "en": "boy, there’s mosquito stinging me on the head; do drive it away.",
-    "ko": "얘야, 모기가 내 머리를 쏘는구나. 좀 쫓아 다오."
+    "ko": "얘야, 모기가 내 머리를 쏘는구나. 좀 쫓아 다오.",
+    "rect": [
+     181,
+     78,
+     324,
+     133
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -139,13 +143,17 @@
   "img": "images/044-The-Son-and-the-Mosquito-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     94,
-     233
-    ],
     "shape": "bubble",
     "en": "Rid me of it! Rid me of it!",
-    "ko": "어서 쫓아! 어서 쫓아!"
+    "ko": "어서 쫓아! 어서 쫓아!",
+    "rect": [
+     95,
+     239,
+     180,
+     293
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "seed": [

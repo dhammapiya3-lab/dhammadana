@@ -117,13 +117,17 @@
     "align": "center"
    },
    {
-    "seed": [
-     383,
-     306
-    ],
     "shape": "bubble",
     "en": "Turn the carts round!",
-    "ko": "수레를 돌려라!"
+    "ko": "수레를 돌려라!",
+    "rect": [
+     377,
+     303,
+     465,
+     355
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -183,13 +187,17 @@
     "align": "center"
    },
    {
-    "seed": [
-     331,
-     165
-    ],
     "shape": "bubble",
     "en": "If give in every single one will perish",
-    "ko": "내가 포기하면 한 사람도 남김없이 모두 죽는다."
+    "ko": "내가 포기하면 한 사람도 남김없이 모두 죽는다.",
+    "rect": [
+     322,
+     164,
+     433,
+     229
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -235,13 +243,17 @@
   "img": "images/002-The-Well-of-Perseverance-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     115,
-     72
-    ],
     "shape": "bubble",
     "en": "If you give in, we perish. Take courage. Strike the rock with this iron sledge-hammer!",
-    "ko": "네가 포기하면 우리는 모두 죽는다. 용기를 내라. 이 쇠망치로 바위를 내리쳐라!"
+    "ko": "네가 포기하면 우리는 모두 죽는다. 용기를 내라. 이 쇠망치로 바위를 내리쳐라!",
+    "rect": [
+     44,
+     50,
+     108,
+     109
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -291,13 +303,17 @@
   "img": "images/002-The-Well-of-Perseverance-15-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     74,
-     86
-    ],
     "shape": "bubble",
     "en": "Untiring, digging in sandy place, they found drinking water. So the sage, endowed with strength of effort, untiring, finds peace right here in his heart.",
-    "ko": "지치지 않고 모래땅을 파서 그들은 마실 물을 찾았네. 이처럼 정진의 힘을 갖춘 현자는 지치지 않고 바로 자기 마음에서 평화를 찾네."
+    "ko": "지치지 않고 모래땅을 파서 그들은 마실 물을 찾았네. 이처럼 정진의 힘을 갖춘 현자는 지치지 않고 바로 자기 마음에서 평화를 찾네.",
+    "rect": [
+     91,
+     77,
+     305,
+     177
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  }

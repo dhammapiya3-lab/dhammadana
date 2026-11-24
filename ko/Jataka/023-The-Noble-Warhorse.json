@@ -22,13 +22,17 @@
   "img": "images/023-The-Noble-Warhorse-02-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     614,
-     97
-    ],
     "shape": "bubble",
     "en": "Crimson curtains and gold-starred canopy.",
-    "ko": "진홍 휘장과 금별 박힌 차양"
+    "ko": "진홍 휘장과 금별 박힌 차양",
+    "rect": [
+     622,
+     101,
+     714,
+     141
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "shape": "bubble",
@@ -140,13 +144,17 @@
   "img": "images/023-The-Noble-Warhorse-04-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     100,
-     268
-    ],
     "shape": "bubble",
     "en": "“Give me your noble warhorse, and could fight not seven kings only, but all the kings in Jambudipa.”",
-    "ko": "“저 고귀한 군마만 주시면 일곱 왕이 아니라 잠부디빠의 모든 왕과도 싸우겠습니다.”"
+    "ko": "“저 고귀한 군마만 주시면 일곱 왕이 아니라 잠부디빠의 모든 왕과도 싸우겠습니다.”",
+    "rect": [
+     104,
+     277,
+     269,
+     342
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "rect": [

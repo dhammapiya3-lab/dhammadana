@@ -159,33 +159,45 @@
     "align": "center"
    },
    {
-    "seed": [
-     646,
-     189
-    ],
     "shape": "bubble",
     "en": "“The sun and moon!” Siriya guessed.",
-    "ko": "“해와 달이요!” 수리야가 짐작해 말했습니다."
+    "ko": "“해와 달이요!” 수리야가 짐작해 말했습니다.",
+    "rect": [
+     642,
+     183,
+     741,
+     248
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
-    "seed": [
-     155,
-     145
-    ],
     "ko": "“참된 천신의 성품이 무엇이냐?”",
     "dark": true,
     "shape": "bubble",
-    "manual": true
+    "manual": true,
+    "rect": [
+     97,
+     141,
+     252,
+     229
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
-    "seed": [
-     600,
-     325
-    ],
     "ko": "“모르는구나!” 괴물이 으르렁대며 그를 물속 감옥으로 끌고 갔습니다.",
     "dark": true,
     "shape": "bubble",
-    "manual": true
+    "manual": true,
+    "rect": [
+     480,
+     297,
+     712,
+     384
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -207,13 +219,17 @@
     "align": "center"
    },
    {
-    "seed": [
-     619,
-     260
-    ],
     "shape": "bubble",
     "en": "The four quarters of heaven",
-    "ko": "하늘의 네 방위요."
+    "ko": "하늘의 네 방위요.",
+    "rect": [
+     609,
+     253,
+     699,
+     319
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "shape": "box",
@@ -230,14 +246,18 @@
     "align": "center"
    },
    {
-    "seed": [
-     185,
-     162
-    ],
     "ko": "“참된 천신의 성품이 무엇이냐?”",
     "dark": true,
     "shape": "bubble",
-    "manual": true
+    "manual": true,
+    "rect": [
+     95,
+     93,
+     224,
+     190
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -303,13 +323,17 @@
     ]
    },
    {
-    "seed": [
-     414,
-     157
-    ],
     "shape": "bubble",
     "en": "You took my brothers. will tell you the true Deva-nature.",
-    "ko": "네가 내 동생들을 데려갔구나. 참된 천신의 성품을 말해 주겠다."
+    "ko": "네가 내 동생들을 데려갔구나. 참된 천신의 성품을 말해 주겠다.",
+    "rect": [
+     410,
+     165,
+     520,
+     231
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -388,13 +412,17 @@
     "ko": "악귀보다 높은 자리에 앉아 보살은 거룩한 진리를 밝혔습니다."
    },
    {
-    "seed": [
-     340,
-     163
-    ],
     "shape": "bubble",
     "en": "“Hiri-ottappasampanna, sukkadhammasamahita",
-    "ko": "“Hiri-ottappasampannā,\nsukkadhammasamāhitā…”"
+    "ko": "“Hiri-ottappasampannā,\nsukkadhammasamāhitā…”",
+    "rect": [
+     265,
+     147,
+     473,
+     242
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },

@@ -101,22 +101,30 @@
   "img": "images/050-The-Kings-Stratagem-06-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     207,
-     100
-    ],
     "shape": "bubble",
     "en": "“Do you know how made myself king? Have you seen me reverently worshipping the banyan tree?”",
-    "ko": "“내가 어떻게 왕이 되었는지 아는가? 내가 반얀나무를 공손히 섬기는 것을 보았는가?”"
+    "ko": "“내가 어떻게 왕이 되었는지 아는가? 내가 반얀나무를 공손히 섬기는 것을 보았는가?”",
+    "rect": [
+     203,
+     89,
+     404,
+     177
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
-    "seed": [
-     404,
-     230
-    ],
     "shape": "bubble",
     "en": "“Sire, we have.”",
-    "ko": "“보았습니다, 대왕이시여.”"
+    "ko": "“보았습니다, 대왕이시여.”",
+    "rect": [
+     381,
+     230,
+     465,
+     282
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
@@ -143,13 +151,17 @@
   "img": "images/050-The-Kings-Stratagem-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     206,
-     86
-    ],
     "shape": "bubble",
     "en": "“My vow was this: will slay all who are addicted to the Five Defilements and the Ten Paths of Unrighteousness. With their flesh and blood, Iwill will make my offering.”",
-    "ko": "“나의 서원은 이러했다. 다섯 가지 악행과 열 가지 불선업의 길에 빠진 자를 모두 죽여, 그 살과 피로 제물을 바치겠다고.”"
+    "ko": "“나의 서원은 이러했다. 다섯 가지 악행과 열 가지 불선업의 길에 빠진 자를 모두 죽여, 그 살과 피로 제물을 바치겠다고.”",
+    "rect": [
+     162,
+     88,
+     407,
+     208
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
