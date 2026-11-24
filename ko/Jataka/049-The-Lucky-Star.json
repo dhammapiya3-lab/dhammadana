@@ -250,14 +250,18 @@
   "img": "images/049-The-Lucky-Star-13-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     179,
-     339
-    ],
     "shape": "box",
     "en": "Re taraka Attho atthassa nakkhattam, kim karissanti ti? Benefit is benefit’s lucky star, what can the stars achieve?",
     "ko": "Attho atthassa nakkhattaṃ, kiṃ karissanti tārakā ti?\n이익이 곧 이익의 행운의 별, 별들이 무엇을 해 주겠는가?",
-    "align": "center"
+    "align": "center",
+    "rect": [
+     89,
+     326,
+     712,
+     377
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },

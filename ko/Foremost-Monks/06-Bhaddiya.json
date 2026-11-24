@@ -233,14 +233,18 @@
   "img": "images/06-Bhaddiya-13-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     269,
-     47
-    ],
     "shape": "box",
     "en": "Fulfiling Fulfilling vow made 100,000 aeons cone prior, the Buddha. declared Ven. Bhaddiya the absolute foremost among all monastic disciples belonging to anf family.",
     "ko": "10만 겁 전의 서원대로 부처님께서는 밧디야 장로를 높은 가문 출신 제자 가운데 으뜸이라고 선언하셨습니다.",
-    "align": "center"
+    "align": "center",
+    "rect": [
+     166,
+     38,
+     637,
+     121
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },

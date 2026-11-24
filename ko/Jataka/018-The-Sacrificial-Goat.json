@@ -344,13 +344,18 @@
   "img": "images/018-The-Sacrificial-Goat-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     101,
-     80
-    ],
     "shape": "box",
     "en": "Free at last, the goat reached out to browse on leaves near rocky outcrop.",
-    "ko": "마침내 풀려난 염소는 바위 옆 나뭇잎을 뜯으려고 고개를 뻗었습니다."
+    "ko": "마침내 풀려난 염소는 바위 옆 나뭇잎을 뜯으려고 고개를 뻗었습니다.",
+    "rect": [
+     76,
+     76,
+     287,
+     134
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "shape": "box",
@@ -409,13 +414,18 @@
   "img": "images/018-The-Sacrificial-Goat-13-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     261,
-     369
-    ],
     "shape": "box",
     "en": "The mass tore off its head instantly. Fate could not be stopped. People crowded rowded around in awe and fear.",
-    "ko": "그 덩어리가 순식간에 염소의 목을 떨어뜨렸습니다. 운명은 막을 수 없었습니다. 사람들이 놀라고 두려워하며 모여들었습니다."
+    "ko": "그 덩어리가 순식간에 염소의 목을 떨어뜨렸습니다. 운명은 막을 수 없었습니다. 사람들이 놀라고 두려워하며 모여들었습니다.",
+    "rect": [
+     227,
+     363,
+     580,
+     401
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

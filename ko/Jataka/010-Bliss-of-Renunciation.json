@@ -78,13 +78,18 @@
   "img": "images/010-Bliss-of-Renunciation-04-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     107,
-     295
-    ],
     "shape": "box",
     "en": "For the Ri four rainy months, they lived in the royal pleasure gardens. King Brahmadatta, ruling in Benares, generously supported the ascetics with his royal bounty.",
-    "ko": "넉 달의 우기 동안 그들은 왕실 정원에 머물렀습니다. 바라나시를 다스리던 브라흐마닷따 왕은 수행자들을 너그럽게 보살폈습니다."
+    "ko": "넉 달의 우기 동안 그들은 왕실 정원에 머물렀습니다. 바라나시를 다스리던 브라흐마닷따 왕은 수행자들을 너그럽게 보살폈습니다.",
+    "rect": [
+     86,
+     298,
+     333,
+     366
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

@@ -333,13 +333,18 @@
   "img": "images/033-The-Quails-and-the-Net-14-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     535,
-     347
-    ],
     "shape": "box",
     "en": "DIVISION ...so that his wife’s face was wreathed with smiles",
-    "ko": "분열. …그래서 새잡이 아내의 얼굴에 웃음꽃이 피었습니다."
+    "ko": "분열. …그래서 새잡이 아내의 얼굴에 웃음꽃이 피었습니다.",
+    "rect": [
+     474,
+     345,
+     687,
+     387
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "ko": "화합. 새들은 기뻐하며 함께 그물을 들고 날아가고…",

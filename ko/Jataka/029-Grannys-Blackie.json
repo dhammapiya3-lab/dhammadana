@@ -3,13 +3,18 @@
   "img": "images/029-Grannys-Blackie-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     76,
-     65
-    ],
     "shape": "box",
     "en": "Ayyika Kalaka The Story of Granny's Blackie lackie",
-    "ko": "아이야까 깔라까\n할머니의 검둥이 이야기"
+    "ko": "아이야까 깔라까\n할머니의 검둥이 이야기",
+    "rect": [
+     63,
+     60,
+     348,
+     145
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -26,13 +31,18 @@
   "img": "images/029-Grannys-Blackie-02-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     91,
-     47
-    ],
     "shape": "box",
     "en": "Given to poor woman to settle lodging debt, the Bodhisatta was reared like her own child",
-    "ko": "보살은 밀린 숙박비 대신 가난한 할머니에게 맡겨져, 친자식처럼 자랐습니다."
+    "ko": "보살은 밀린 숙박비 대신 가난한 할머니에게 맡겨져, 친자식처럼 자랐습니다.",
+    "rect": [
+     92,
+     41,
+     299,
+     94
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -62,13 +72,18 @@
     "cover": true
    },
    {
-    "seed": [
-     540,
-     350
-    ],
     "shape": "box",
     "en": "Village urchins rode his back and pulled his horns rns in play. He was gentle giant among the herd",
-    "ko": "마을 아이들이 등에 올라타고 뿔을 잡아당기며 놀았지만, 그는 소 떼 가운데 순한 거인이었습니다."
+    "ko": "마을 아이들이 등에 올라타고 뿔을 잡아당기며 놀았지만, 그는 소 떼 가운데 순한 거인이었습니다.",
+    "rect": [
+     539,
+     352,
+     751,
+     406
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -99,13 +114,18 @@
   "img": "images/029-Grannys-Blackie-05-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     246,
-     42
-    ],
     "shape": "box",
     "en": "young merchant arrived with five hundred wagons",
-    "ko": "젊은 상인이 수레 오백 대를 끌고 왔습니다."
+    "ko": "젊은 상인이 수레 오백 대를 끌고 왔습니다.",
+    "rect": [
+     232,
+     38,
+     577,
+     66
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -131,13 +151,18 @@
     "ko": "힘센 황소를 알아본 상인은 그를 끌고 가려 했습니다."
    },
    {
-    "seed": [
-     502,
-     176
-    ],
     "shape": "box",
     "en": "But the Bodhisatta would not budge. He demanded led his pay be fixed first.",
-    "ko": "그러나 보살은 꿈쩍도 하지 않았습니다. 품삯부터 정하라는 것이었습니다."
+    "ko": "그러나 보살은 꿈쩍도 하지 않았습니다. 품삯부터 정하라는 것이었습니다.",
+    "rect": [
+     497,
+     176,
+     738,
+     217
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -154,13 +179,18 @@
   "img": "images/029-Grannys-Blackie-07-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     61,
-     62
-    ],
     "shape": "box",
     "en": "The contract sealed, Kalaka required no force",
-    "ko": "약속이 정해지자 깔라까는 채찍질이 필요 없었습니다."
+    "ko": "약속이 정해지자 깔라까는 채찍질이 필요 없었습니다.",
+    "rect": [
+     63,
+     63,
+     255,
+     103
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [

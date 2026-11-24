@@ -71,13 +71,18 @@
   "img": "images/027-Elephant-and-Dog-04-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     511,
-     81
-    ],
     "shape": "box",
     "en": "his is friend, the great elephant fell into dee his despair. He refused his food, ignored is water, and turned away from his bath.",
-    "ko": "벗을 잃은 큰 코끼리는 깊은 슬픔에 빠졌습니다. 먹이도 물도 마다하고 목욕도 하지 않았습니다."
+    "ko": "벗을 잃은 큰 코끼리는 깊은 슬픔에 빠졌습니다. 먹이도 물도 마다하고 목욕도 하지 않았습니다.",
+    "rect": [
+     479,
+     66,
+     675,
+     120
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -236,13 +241,18 @@
     "ko": "들으시오!\n왕실 코끼리가 아끼는 개를 숨기는 자는 큰 벌을 받으리라!"
    },
    {
-    "seed": [
-     533,
-     347
-    ],
     "shape": "box",
     "en": "The King acted swiftly on the sage’s advice.",
-    "ko": "왕은 현자의 조언대로 서둘러 움직였습니다."
+    "ko": "왕은 현자의 조언대로 서둘러 움직였습니다.",
+    "rect": [
+     533,
+     349,
+     686,
+     386
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -264,13 +274,18 @@
   "img": "images/027-Elephant-and-Dog-12-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     142,
-     387
-    ],
     "shape": "box",
     "en": "The elephant took the up in his trunk, placed him head, and wept",
-    "ko": "코끼리는 개를 코로 들어 올려 머리 위에 올려놓고 눈물을 흘렸습니다."
+    "ko": "코끼리는 개를 코로 들어 올려 머리 위에 올려놓고 눈물을 흘렸습니다.",
+    "rect": [
+     133,
+     387,
+     678,
+     425
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

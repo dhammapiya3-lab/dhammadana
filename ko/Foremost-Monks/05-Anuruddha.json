@@ -152,14 +152,18 @@
     "align": "center"
    },
    {
-    "seed": [
-     188,
-     225
-    ],
     "shape": "box",
     "en": "Padumuttara Era: Offered forests of illuminated trees to ignite the aspiration.",
     "ko": "빠두뭇따라 부처님 때:\n등불 나무 숲을 올려 서원을 일으킴.",
-    "align": "center"
+    "align": "center",
+    "rect": [
+     63,
+     217,
+     378,
+     267
+    ],
+    "whole": true,
+    "cover": true
    },
    {
     "seed": [
@@ -678,14 +682,18 @@
   "img": "images/05-Anuruddha-26-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     117,
-     323
-    ],
     "shape": "box",
     "en": "Anuruddha’s Awakening: The Path to the Divine Eye. The ascetic journey of Sakyan prince from gifted monk to enlightened Arahat.",
     "ko": "아누룻다의 깨달음: 하늘눈에 이르는 길\n사꺄족 왕자가 뛰어난 비구를 거쳐 깨달은 아라한이 되기까지",
-    "align": "center"
+    "align": "center",
+    "rect": [
+     97,
+     323,
+     710,
+     379
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },
@@ -1311,14 +1319,18 @@
   "img": "images/05-Anuruddha-47-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     415,
-     332
-    ],
     "shape": "box",
     "en": "The Truth: Anuruddha asked for nothing; the abundance was manifested by deity’s power.",
     "ko": "사실: 아누룻다는 아무것도 청하지 않았고,\n천신의 힘으로 넉넉해졌다.",
-    "align": "center"
+    "align": "center",
+    "rect": [
+     415,
+     328,
+     733,
+     372
+    ],
+    "whole": true,
+    "cover": true
    },
    {
     "rect": [

@@ -35,22 +35,32 @@
   "img": "images/030-Deadly-Food-02-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     84,
-     54
-    ],
     "shape": "box",
     "en": "Their days were filled with heavy burdens",
-    "ko": "날마다 무거운 짐을 졌습니다."
+    "ko": "날마다 무거운 짐을 졌습니다.",
+    "rect": [
+     86,
+     53,
+     236,
+     94
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     88,
-     247
-    ],
     "shape": "box",
     "en": "Their reward was mere grass and chaff.",
-    "ko": "받는 것은 풀과 겨뿐이었습니다."
+    "ko": "받는 것은 풀과 겨뿐이었습니다.",
+    "rect": [
+     85,
+     249,
+     248,
+     290
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -212,13 +222,18 @@
   "img": "images/030-Deadly-Food-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     88,
-     63
-    ],
     "shape": "box",
     "en": "Not long afterwards, the guests arrived.",
-    "ko": "얼마 뒤 손님들이 왔습니다."
+    "ko": "얼마 뒤 손님들이 왔습니다.",
+    "rect": [
+     89,
+     60,
+     246,
+     108
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -235,22 +250,32 @@
   "img": "images/030-Deadly-Food-09-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     129,
-     62
-    ],
     "shape": "box",
     "en": "Munika was taken from his pen.",
-    "ko": "무니까는 우리에서 끌려 나왔습니다."
+    "ko": "무니까는 우리에서 끌려 나왔습니다.",
+    "rect": [
+     89,
+     60,
+     231,
+     108
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     399,
-     62
-    ],
     "shape": "box",
     "en": "Killed, and converted into all manner of dishes.",
-    "ko": "잡혀서 온갖 음식으로 차려졌습니다."
+    "ko": "잡혀서 온갖 음식으로 차려졌습니다.",
+    "rect": [
+     400,
+     60,
+     599,
+     108
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

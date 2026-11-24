@@ -82,13 +82,18 @@
   "img": "images/001-The-Waterless-Desert-04-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     38,
-     36
-    ],
     "shape": "box",
     "en": "The Foolish Merchant entered the sixty-league wilderness.",
-    "ko": "어리석은 상인이 60요자나 황야로 들어섰습니다."
+    "ko": "어리석은 상인이 60요자나 황야로 들어섰습니다.",
+    "rect": [
+     42,
+     38,
+     241,
+     79
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "shape": "box",
@@ -203,13 +208,18 @@
   "img": "images/001-The-Waterless-Desert-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     46,
-     40
-    ],
     "shape": "box",
     "en": "Six weeks later, the Bodhisatta departed.",
-    "ko": "한 달 반 뒤, 보살이 길을 떠났습니다."
+    "ko": "한 달 반 뒤, 보살이 길을 떠났습니다.",
+    "rect": [
+     48,
+     41,
+     212,
+     83
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -360,13 +370,18 @@
   "img": "images/001-The-Waterless-Desert-13-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     81,
-     30
-    ],
     "shape": "box",
     "en": "found the 500 derelict carts and skeletons.",
-    "ko": "그들은 버려진 수레 500대와 해골들을 찾았습니다."
+    "ko": "그들은 버려진 수레 500대와 해골들을 찾았습니다.",
+    "rect": [
+     29,
+     26,
+     293,
+     87
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [

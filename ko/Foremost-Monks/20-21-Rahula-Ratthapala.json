@@ -877,15 +877,19 @@
   "img": "images/20-21-Rahula-Ratthapala-34-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     270,
-     130
-    ],
     "ko": "세계가 다른 두 친구가\n법으로 하나 되었습니다.\n\n지혜를 한 알 한 알\n차분히 쌓아서든,\n흔들림 없는 믿음으로\n단번에 뛰어올라서든,\n두 사람 모두 궁극의\n목표에 이르렀습니다.",
     "align": "center",
     "em": 16,
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     129,
+     88,
+     392,
+     324
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  }

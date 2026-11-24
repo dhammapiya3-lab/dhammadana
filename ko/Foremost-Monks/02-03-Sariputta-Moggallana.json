@@ -715,13 +715,17 @@
    {
     "ko": "마하목갈라나 장로의 업의 순환",
     "em": 22,
-    "seed": [
-     209,
-     399
-    ],
     "align": "center",
     "shape": "box",
-    "manual": true
+    "manual": true,
+    "rect": [
+     211,
+     395,
+     589,
+     435
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },

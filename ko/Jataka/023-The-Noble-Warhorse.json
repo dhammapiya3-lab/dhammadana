@@ -3,13 +3,18 @@
   "img": "images/023-The-Noble-Warhorse-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     229,
-     377
-    ],
     "shape": "box",
     "en": "The Noble Sindh: Tale of Jambudipa. classical Jataka of duty, sacrifice, and the ultimate charge.",
-    "ko": "고귀한 신두 말: 잠부디빠 이야기\n의무와 희생, 마지막 돌격을 그린 자따까"
+    "ko": "고귀한 신두 말: 잠부디빠 이야기\n의무와 희생, 마지막 돌격을 그린 자따까",
+    "rect": [
+     201,
+     376,
+     599,
+     431
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

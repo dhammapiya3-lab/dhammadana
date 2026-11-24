@@ -229,13 +229,18 @@
   "img": "images/002-The-Well-of-Perseverance-12-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     458,
-     72
-    ],
     "shape": "box",
     "en": "The rock split asunder! Water rose as high as palm tree. The caravan drank, bathed, rejoiced, and fed their oxen.",
-    "ko": "바위가 쩍 갈라졌습니다! 물이 야자나무 높이만큼 솟아올랐습니다. 일행은 물을 마시고 몸을 씻으며 기뻐했고, 소들에게도 먹이를 주었습니다."
+    "ko": "바위가 쩍 갈라졌습니다! 물이 야자나무 높이만큼 솟아올랐습니다. 일행은 물을 마시고 몸을 씻으며 기뻐했고, 소들에게도 먹이를 주었습니다.",
+    "rect": [
+     345,
+     66,
+     736,
+     141
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -247,13 +252,18 @@
   "img": "images/002-The-Well-of-Perseverance-14-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     128,
-     345
-    ],
     "shape": "box",
     "en": "The Physical Path: Digging untiringly through stone yields life-saving water. The Spiritual Path: Striving untiringly through ignorance yields the ultimate peace.",
-    "ko": "몸의 길: 지치지 않고 돌을 파면 생명을 살리는 물을 얻습니다.\n마음의 길: 지치지 않고 무명을 헤쳐 나가면 궁극의 평화를 얻습니다."
+    "ko": "몸의 길: 지치지 않고 돌을 파면 생명을 살리는 물을 얻습니다.\n마음의 길: 지치지 않고 무명을 헤쳐 나가면 궁극의 평화를 얻습니다.",
+    "rect": [
+     69,
+     340,
+     731,
+     400
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

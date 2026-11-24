@@ -96,13 +96,18 @@
   "img": "images/028-Nandivisala-04-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     305,
-     71
-    ],
     "shape": "box",
     "en": "One hundred carts. Loaded with sand gravel, and stones.",
-    "ko": "수레 백 대. 모래와 자갈과 돌을 실었습니다."
+    "ko": "수레 백 대. 모래와 자갈과 돌을 실었습니다.",
+    "rect": [
+     74,
+     70,
+     421,
+     98
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "rect": [
@@ -347,13 +352,18 @@
   "img": "images/028-Nandivisala-11-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     192,
-     391
-    ],
     "shape": "box",
     "en": "With single pull, he tugged along the whole string of hundred carts.",
-    "ko": "황소는 단번에 수레 백 대를 줄줄이 끌어당겼습니다."
+    "ko": "황소는 단번에 수레 백 대를 줄줄이 끌어당겼습니다.",
+    "rect": [
+     190,
+     382,
+     627,
+     423
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

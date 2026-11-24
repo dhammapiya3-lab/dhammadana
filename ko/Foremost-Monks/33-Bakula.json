@@ -481,15 +481,19 @@
   "img": "images/33-Bakula-15-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     326,
-     271
-    ],
     "shape": "box",
     "en": "Bakula’s Final Existence: The Child of Two Families tale of miraculous survival, past merit, and perfect health.",
     "ko": "바꿀라의 마지막 생:\n두 집안의 아이\n\n기적 같은 생존과 지난 공덕,\n그리고 완전한 건강의 이야기",
     "align": "center",
-    "em": 18
+    "em": 18,
+    "rect": [
+     181,
+     261,
+     619,
+     419
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },
@@ -561,15 +565,19 @@
   "img": "images/33-Bakula-20-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     116,
-     325
-    ],
     "shape": "box",
     "en": "Purchased by wealthy, childless Baranasi merchant, his wife took the fish to the kitchen. Slicing it open from the back, she gleefully discovered the living, golden-hued baby inside.",
     "ko": "자식 없는 바라나시의 부유한 상인이 물고기를 샀고,\n그 아내가 부엌으로 가져갔습니다. 등을 갈라 보니\n금빛 아기가 살아 있어 크게 기뻐했습니다.",
     "align": "center",
-    "em": 17
+    "em": 17,
+    "rect": [
+     40,
+     315,
+     125,
+     411
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },

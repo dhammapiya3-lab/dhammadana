@@ -3,13 +3,18 @@
   "img": "images/011-The-Wisdom-of-Lakkhana-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     315,
-     31
-    ],
     "shape": "box",
     "en": "Che he Wisdom of",
-    "ko": "락카나의 지혜"
+    "ko": "락카나의 지혜",
+    "rect": [
+     272,
+     14,
+     532,
+     50
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [

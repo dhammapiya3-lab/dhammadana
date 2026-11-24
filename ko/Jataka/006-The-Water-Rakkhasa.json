@@ -70,13 +70,18 @@
     "em": 14
    },
    {
-    "seed": [
-     95,
-     386
-    ],
     "shape": "box",
     "en": "As the brothers departed, loyal Suriyakumara ara saw them leaving Las] and chose 8 to share their exile in the Himalayas. Tas]",
-    "ko": "형들이 떠날 때, 마음 착한 수리야 왕자가 그 모습을 보고 형들과 함께 히말라야로 가기로 했습니다."
+    "ko": "형들이 떠날 때, 마음 착한 수리야 왕자가 그 모습을 보고 형들과 함께 히말라야로 가기로 했습니다.",
+    "rect": [
+     76,
+     383,
+     727,
+     413
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -84,13 +89,18 @@
   "img": "images/006-The-Water-Rakkhasa-05-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     172,
-     219
-    ],
     "shape": "box",
     "en": "Deep in the forest, Mahimsasa an sent Suriya for water. Unknown to them, the deity Vessavana had granted this pool to Water Rakklasa, bound by strict condition.",
-    "ko": "깊은 숲속에서 마힘사사는 수리야에게 물을 떠 오라고 보냈습니다. 그들은 몰랐지만, 웻사와나 천왕이 이 못을 물의 락카사에게 주면서 엄한 조건을 붙여 두었습니다."
+    "ko": "깊은 숲속에서 마힘사사는 수리야에게 물을 떠 오라고 보냈습니다. 그들은 몰랐지만, 웻사와나 천왕이 이 못을 물의 락카사에게 주면서 엄한 조건을 붙여 두었습니다.",
+    "rect": [
+     163,
+     204,
+     648,
+     247
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -126,13 +136,18 @@
   "img": "images/006-The-Water-Rakkhasa-07-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     123,
-     66
-    ],
     "shape": "box",
     "en": "Suriya entered the water. water 4 The Rakkhasa struck!",
-    "ko": "수리야가 물에 들어서자 락카사가 덮쳤습니다!"
+    "ko": "수리야가 물에 들어서자 락카사가 덮쳤습니다!",
+    "rect": [
+     69,
+     58,
+     262,
+     106
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -216,13 +231,18 @@
   "img": "images/006-The-Water-Rakkhasa-09-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     163,
-     369
-    ],
     "shape": "box",
     "en": "Realizing his brothers were missing, the Bodhisatta tracked them. Footprints entered the water, but none returned. Grasping his sword and bow, he waited safely on the bank.",
-    "ko": "동생들이 사라진 것을 안 보살은 발자국을 따라갔습니다. 발자국은 물로 들어갔지만 나온 것은 없었습니다. 보살은 칼과 활을 쥐고 물가에서 조심스레 기다렸습니다."
+    "ko": "동생들이 사라진 것을 안 보살은 발자국을 따라갔습니다. 발자국은 물로 들어갔지만 나온 것은 없었습니다. 보살은 칼과 활을 쥐고 물가에서 조심스레 기다렸습니다.",
+    "rect": [
+     79,
+     363,
+     723,
+     411
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -326,13 +346,18 @@
     ]
    },
    {
-    "seed": [
-     230,
-     364
-    ],
     "shape": "box",
     "en": "Desperate for the truth, the monster bathed him, served him food, and prepared beautiful pavilion. The predator became the servant. aA",
-    "ko": "진리가 몹시 알고 싶었던 괴물은 보살을 씻기고 음식을 대접하고 아름다운 정자를 마련했습니다. 사냥꾼이 시중드는 이가 되었습니다."
+    "ko": "진리가 몹시 알고 싶었던 괴물은 보살을 씻기고 음식을 대접하고 아름다운 정자를 마련했습니다. 사냥꾼이 시중드는 이가 되었습니다.",
+    "rect": [
+     81,
+     364,
+     720,
+     411
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

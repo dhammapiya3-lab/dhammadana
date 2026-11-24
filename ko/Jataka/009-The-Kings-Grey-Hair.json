@@ -149,13 +149,18 @@
   "img": "images/009-The-Kings-Grey-Hair-06-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     234,
-     60
-    ],
     "shape": "box",
     "en": "With golden tongs, the barber plucked the hair. The King still had 84,000 years to live, yet...",
-    "ko": "이발사는 금 집게로 그 머리카락을 뽑았습니다. 왕에게는 아직 84,000년의 수명이 남아 있었지만…"
+    "ko": "이발사는 금 집게로 그 머리카락을 뽑았습니다. 왕에게는 아직 84,000년의 수명이 남아 있었지만…",
+    "rect": [
+     233,
+     46,
+     567,
+     84
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -163,13 +168,18 @@
   "img": "images/009-The-Kings-Grey-Hair-07-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     37,
-     37
-    ],
     "shape": "box",
     "en": "...at the sight of that one hair, he was filled with deep emotion.",
-    "ko": "…그 흰머리 한 올을 보는 순간, 깊은 절박감이 밀려왔습니다."
+    "ko": "…그 흰머리 한 올을 보는 순간, 깊은 절박감이 밀려왔습니다.",
+    "rect": [
+     33,
+     35,
+     228,
+     77
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [

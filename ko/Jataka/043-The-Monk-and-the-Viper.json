@@ -185,22 +185,32 @@
   "img": "images/043-The-Monk-and-the-Viper-10-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     242,
-     73
-    ],
     "shape": "box",
     "en": "Yo atthakamassa, hitanukampino ovajjamano na karoti sasanam...",
-    "ko": "Yo atthakāmassa hitānukampino\novajjamāno na karoti sāsanaṃ…"
+    "ko": "Yo atthakāmassa hitānukampino\novajjamāno na karoti sāsanaṃ…",
+    "rect": [
+     241,
+     70,
+     559,
+     115
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
-    "seed": [
-     162,
-     361
-    ],
     "shape": "box",
     "en": "He who does not take the advice of one seeking his welfare, is in this way destroyed, like Veluka’s father.",
-    "ko": "자기를 위해 주는 이의 충고를 듣지 않는 자는\n웰루까의 아버지처럼 이렇게 죽음에 이른다."
+    "ko": "자기를 위해 주는 이의 충고를 듣지 않는 자는\n웰루까의 아버지처럼 이렇게 죽음에 이른다.",
+    "rect": [
+     163,
+     346,
+     638,
+     385
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  }

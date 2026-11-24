@@ -390,14 +390,18 @@
   "img": "images/048-The-Rain-of-Ruin-14-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     556,
-     73
-    ],
     "shape": "box",
     "en": "Anupayena yo attham icchati so Ceta hanimsu Vedabbam, sabbe te byasanam-ajjhagi ti.",
     "ko": "Anupāyena yo atthaṃ\nicchati so vihaññati,\nCetā haniṃsu Vedabbaṃ,\nsabbe te byasanaṃ-ajjhagū ti.",
-    "align": "center"
+    "align": "center",
+    "rect": [
+     534,
+     65,
+     721,
+     169
+    ],
+    "whole": true,
+    "cover": true
    },
    {
     "rect": [
@@ -419,13 +423,18 @@
   "img": "images/048-The-Rain-of-Ruin-15-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     89,
-     60
-    ],
     "shape": "box",
     "en": "The 1e Bodhisatta carried the treasure home.",
-    "ko": "보살은 보물을 집으로 가져갔습니다."
+    "ko": "보살은 보물을 집으로 가져갔습니다.",
+    "rect": [
+     56,
+     55,
+     212,
+     99
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [

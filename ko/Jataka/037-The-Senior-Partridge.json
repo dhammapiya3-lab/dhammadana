@@ -3,13 +3,18 @@
   "img": "images/037-The-Senior-Partridge-01-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     285,
-     198
-    ],
     "shape": "box",
     "en": "The Holiness of the Partridge Jataka Tale 2 of Seniority and Respect",
-    "ko": "자고새의 거룩한 삶\n윗사람을 공경하는 자따까 이야기"
+    "ko": "자고새의 거룩한 삶\n윗사람을 공경하는 자따까 이야기",
+    "rect": [
+     254,
+     194,
+     546,
+     256
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },

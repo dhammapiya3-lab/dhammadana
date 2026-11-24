@@ -210,13 +210,18 @@
   "img": "images/032-The-Peacocks-Dance-08-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     119,
-     68
-    ],
     "shape": "box",
     "en": "Carried away by extreme joy and blinding pride, the peacock exclaimed:",
-    "ko": "너무 기쁘고 교만해진 공작이 외쳤습니다."
+    "ko": "너무 기쁘고 교만해진 공작이 외쳤습니다.",
+    "rect": [
+     64,
+     62,
+     288,
+     122
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "shape": "bubble",

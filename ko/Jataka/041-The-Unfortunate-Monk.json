@@ -46,13 +46,18 @@
   "img": "images/041-The-Unfortunate-Monk-03-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     179,
-     68
-    ],
     "shape": "box",
     "en": "The monk buried alms in an ember pit.",
-    "ko": "질투가 해코지를 낳았습니다.\n비구는 아라한께 올릴 좋은 공양을 숯불 구덩이에 묻어 버렸습니다."
+    "ko": "질투가 해코지를 낳았습니다.\n비구는 아라한께 올릴 좋은 공양을 숯불 구덩이에 묻어 버렸습니다.",
+    "rect": [
+     180,
+     54,
+     627,
+     91
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -122,13 +127,18 @@
     "align": "center"
    },
    {
-    "seed": [
-     553,
-     100
-    ],
     "shape": "box",
     "en": "Hell: Tormented for hundreds of thousands of years.",
-    "ko": "• 지옥: 수십만 년 동안 고통받음"
+    "ko": "• 지옥: 수십만 년 동안 고통받음",
+    "rect": [
+     443,
+     78,
+     730,
+     172
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -140,13 +150,18 @@
     "ko": "• 약카: 500생 동안 굶주리며 내장 한 끼만 먹음"
    },
    {
-    "seed": [
-     553,
-     331
-    ],
     "shape": "box",
     "en": "Dog: 500 births, starving save for one meal of vomit.",
-    "ko": "• 개: 500생 동안 굶주리며 토사물 한 끼만 먹음"
+    "ko": "• 개: 500생 동안 굶주리며 토사물 한 끼만 먹음",
+    "rect": [
+     545,
+     329,
+     731,
+     370
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
@@ -182,13 +197,18 @@
   "img": "images/041-The-Unfortunate-Monk-07-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     211,
-     58
-    ],
     "shape": "box",
     "en": "contagion of misfortune. At border village, ruin followed",
-    "ko": "그는 불운을 옮기는 사람이 되었습니다. 국경 마을에 가자 재앙이 뒤따랐습니다."
+    "ko": "그는 불운을 옮기는 사람이 되었습니다. 국경 마을에 가자 재앙이 뒤따랐습니다.",
+    "rect": [
+     126,
+     54,
+     674,
+     78
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "rect": [
@@ -255,13 +275,18 @@
   "img": "images/041-The-Unfortunate-Monk-09-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     602,
-     58
-    ],
     "shape": "box",
     "en": "Past obedience to Precepts under ler np Kassapa Buddha ripened pen as temporary merit viman",
-    "ko": "깟사빠 부처님 아래서 계를 지킨 지난 공덕이 잠시 동안의 복(위마나 아귀)으로 익었습니다."
+    "ko": "깟사빠 부처님 아래서 계를 지킨 지난 공덕이 잠시 동안의 복(위마나 아귀)으로 익었습니다.",
+    "rect": [
+     105,
+     54,
+     695,
+     78
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [
@@ -273,13 +298,18 @@
     "ko": "수정 궁전\n천녀 넷\n이레"
    },
    {
-    "seed": [
-     458,
-     161
-    ],
     "shape": "box",
     "en": "Silver 8 Devadhita 7 Days",
-    "ko": "은 궁전\n천녀 여덟\n이레"
+    "ko": "은 궁전\n천녀 여덟\n이레",
+    "rect": [
+     68,
+     161,
+     562,
+     230
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    },
    {
     "seed": [

@@ -1109,15 +1109,19 @@
   "img": "images/41-Mogharaja-48-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     199,
-     80
-    ],
     "shape": "box",
     "en": "“Like bird that leaves lowly bushes of scanty fruit and resorts to fruitful grove, so also have left lesser minds Like golden swan, have reached great lake of immense wisdom",
     "ko": "“작은 열매가 드문 덤불을 떠나 열매 많은 숲으로\n가는 새처럼, 나도 좁은 마음들을 떠났습니다.\n금빛 백조처럼 나는 한없는\n지혜의 큰 호수에 이르렀습니다.”",
     "align": "center",
-    "em": 17
+    "em": 17,
+    "rect": [
+     185,
+     72,
+     624,
+     186
+    ],
+    "whole": true,
+    "cover": true
    }
   ]
  },
