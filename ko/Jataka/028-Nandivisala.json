@@ -192,13 +192,18 @@
     "align": "center"
    },
    {
-    "seed": [
-     339,
-     389
-    ],
     "shape": "box",
     "en": "He budged not an atl",
-    "ko": "황소는 꿈쩍도 하지 않았습니다."
+    "ko": "황소는 꿈쩍도 하지 않았습니다.",
+    "rect": [
+     302,
+     386,
+     499,
+     419
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
