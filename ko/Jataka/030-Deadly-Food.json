@@ -358,7 +358,8 @@
      106
     ],
     "whole": true,
-    "align": "center"
+    "align": "center",
+    "cover": true
    },
    {
     "shape": "bubble",
@@ -371,7 +372,8 @@
      150
     ],
     "whole": true,
-    "align": "center"
+    "align": "center",
+    "cover": true
    }
   ]
  }

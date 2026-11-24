@@ -32,11 +32,12 @@
     "rect": [
      380,
      62,
-     504,
+     526,
      124
     ],
     "align": "center",
-    "whole": true
+    "whole": true,
+    "cover": true
    },
    {
     "ko": "옛 바라나시에서 이름난 바라문이 조상 제사를 준비했습니다.",
