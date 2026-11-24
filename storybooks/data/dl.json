@@ -478,15 +478,15 @@
 },
 "Jataka": {
 "n": 422,
-"pdf": 496237007,
-"pdfs": 50595425,
+"pdf": 496204769,
+"pdfs": 50602471,
 "stories": 32,
-"zip": 495827247
+"zip": 495795008
 },
 "Jataka/001-The-Waterless-Desert": {
 "n": 15,
-"pdf": 14328474,
-"zip": 14063113
+"pdf": 14319693,
+"zip": 14054332
 },
 "Jataka/002-The-Well-of-Perseverance": {
 "n": 15,
@@ -500,8 +500,8 @@
 },
 "Jataka/004-The-Dead-Mouse": {
 "n": 15,
-"pdf": 17539706,
-"zip": 17276270
+"pdf": 17531543,
+"zip": 17268108
 },
 "Jataka/005-The-Measure-of-Rice": {
 "n": 14,
@@ -510,13 +510,13 @@
 },
 "Jataka/006-The-Water-Rakkhasa": {
 "n": 15,
-"pdf": 19082766,
-"zip": 18816345
+"pdf": 19057938,
+"zip": 18791517
 },
 "Jataka/009-The-Kings-Grey-Hair": {
 "n": 14,
-"pdf": 15461769,
-"zip": 15194904
+"pdf": 15469434,
+"zip": 15202568
 },
 "Jataka/010-Bliss-of-Renunciation": {
 "n": 14,
@@ -530,18 +530,18 @@
 },
 "Jataka/012-The-Golden-Deer": {
 "n": 14,
-"pdf": 18820937,
-"zip": 18556720
+"pdf": 18819919,
+"zip": 18555702
 },
 "Jataka/014-The-Wind-Deer": {
 "n": 9,
-"pdf": 9631213,
-"zip": 9369794
+"pdf": 9632711,
+"zip": 9371293
 },
 "Jataka/018-The-Sacrificial-Goat": {
 "n": 14,
-"pdf": 16407973,
-"zip": 16137590
+"pdf": 16406475,
+"zip": 16136092
 },
 "Jataka/022-The-Teaching-of-the-Dog": {
 "n": 14,
@@ -550,8 +550,8 @@
 },
 "Jataka/023-The-Noble-Warhorse": {
 "n": 14,
-"pdf": 17063529,
-"zip": 16798234
+"pdf": 17064530,
+"zip": 16799235
 },
 "Jataka/026-The-State-Elephant": {
 "n": 13,
@@ -580,13 +580,13 @@
 },
 "Jataka/032-The-Peacocks-Dance": {
 "n": 12,
-"pdf": 16779591,
-"zip": 16515166
+"pdf": 16780319,
+"zip": 16515894
 },
 "Jataka/033-The-Quails-and-the-Net": {
 "n": 14,
-"pdf": 15953630,
-"zip": 15685476
+"pdf": 15952857,
+"zip": 15684703
 },
 "Jataka/034-The-Amorous-Fish": {
 "n": 13,
@@ -600,8 +600,8 @@
 },
 "Jataka/039-Nanda-and-the-Hoard": {
 "n": 12,
-"pdf": 13813370,
-"zip": 13543951
+"pdf": 13815949,
+"zip": 13546530
 },
 "Jataka/040-The-Fiery-Pit": {
 "n": 12,
@@ -610,8 +610,8 @@
 },
 "Jataka/041-The-Unfortunate-Monk": {
 "n": 15,
-"pdf": 17989804,
-"zip": 17723913
+"pdf": 17989154,
+"zip": 17723263
 },
 "Jataka/043-The-Monk-and-the-Viper": {
 "n": 10,
@@ -869,57 +869,57 @@
 },
 "New-Jataka": {
 "n": 109,
-"pdf": 81571262,
-"pdfs": 15138783,
+"pdf": 81430499,
+"pdfs": 15129529,
 "stories": 4,
-"zip": 81387064
+"zip": 81246301
 },
 "New-Jataka-en": {
 "n": 109,
-"pdf": 81485337,
-"pdfs": 15223878,
+"pdf": 81554494,
+"pdfs": 15253738,
 "stories": 4,
-"zip": 81268789
+"zip": 81337946
 },
 "New-Jataka/001-Apannaka": {
 "n": 30,
-"pdf": 21895246,
-"zip": 21717181
+"pdf": 21890424,
+"zip": 21712359
 },
 "New-Jataka/001-Apannaka-en": {
 "n": 30,
-"pdf": 21962392,
-"zip": 21761710
+"pdf": 21967212,
+"zip": 21766531
 },
 "New-Jataka/002-Vannupatha": {
 "n": 24,
-"pdf": 15786848,
-"zip": 15611711
+"pdf": 15754528,
+"zip": 15579392
 },
 "New-Jataka/002-Vannupatha-en": {
 "n": 24,
-"pdf": 15799503,
-"zip": 15602822
+"pdf": 15846979,
+"zip": 15650299
 },
 "New-Jataka/003-Serivanija": {
 "n": 25,
-"pdf": 19297729,
-"zip": 19122163
+"pdf": 19234302,
+"zip": 19058736
 },
 "New-Jataka/003-Serivanija-en": {
 "n": 25,
-"pdf": 19223571,
-"zip": 19024807
+"pdf": 19214014,
+"zip": 19015251
 },
 "New-Jataka/004-Culasetthi": {
 "n": 30,
-"pdf": 25106089,
-"zip": 24927810
+"pdf": 25065893,
+"zip": 24887615
 },
 "New-Jataka/004-Culasetthi-en": {
 "n": 30,
-"pdf": 25071362,
-"zip": 24871068
+"pdf": 25097777,
+"zip": 24897483
 },
 "Pannasa": {
 "n": 803,
