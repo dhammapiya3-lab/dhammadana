@@ -231,13 +231,18 @@
     "ko": "Yañ-ca aññe na rakkhanti,\nyo ca aññe na rakkhati,\nSa ve rāja sukhaṃ seti,\nkāmesu anapekkhavā ti."
    },
    {
-    "seed": [
-     276,
-     265
-    ],
     "shape": "box",
     "en": "He who others do not guard, also so he who does not guard others, lives easily, king, not having desire for sensual pleasures.",
-    "ko": "남이 지켜 주지 않아도,\n남을 지키지 않아도,\n감각적 욕망을 바라지 않는 이는\n대왕이여, 편안히 잠듭니다."
+    "ko": "남이 지켜 주지 않아도,\n남을 지키지 않아도,\n감각적 욕망을 바라지 않는 이는\n대왕이여, 편안히 잠듭니다.",
+    "rect": [
+     268,
+     260,
+     542,
+     372
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
