@@ -2,7 +2,6 @@
 Jataka 001-The-Waterless-Desert 15 장
 검수 Jataka/004-The-Dead-Mouse 09번 그림 상자2 [자리] 한글 글(2228,1294)이 상자 점(2030,1107)에서 멀리 그려짐
 Jataka 004-The-Dead-Mouse 15 장
-Jataka 005-The-Measure-of-Rice 14 장
 Jataka 006-The-Water-Rakkhasa 15 장
 Jataka 009-The-Kings-Grey-Hair 14 장
 Jataka 012-The-Golden-Deer 14 장
@@ -15,28 +14,44 @@ Jataka 033-The-Quails-and-the-Net 14 장
 Jataka 039-Nanda-and-the-Hoard 12 장
 Jataka 041-The-Unfortunate-Monk 15 장
 자동 검수: 문제 의심 3 곳
-R2 에 올림: 401 개 / 한글판 이야기 318 편
+R2 에 올림: 373 개 / 한글판 이야기 318 편
 새 그림책: 올린 그림 0 장
 공개 주소 확인: 200 1160954바이트
-이야기 Jataka/001-The-Waterless-Desert {'pdf': 14328474, 'zip': 14063113, 'n': 15}
-이야기 Jataka/004-The-Dead-Mouse {'pdf': 17539706, 'zip': 17276270, 'n': 15}
-이야기 Jataka/005-The-Measure-of-Rice {'pdf': 17266899, 'zip': 17003516, 'n': 14}
-이야기 Jataka/006-The-Water-Rakkhasa {'pdf': 19082766, 'zip': 18816345, 'n': 15}
-이야기 Jataka/009-The-Kings-Grey-Hair {'pdf': 15461769, 'zip': 15194904, 'n': 14}
-이야기 Jataka/012-The-Golden-Deer {'pdf': 18820937, 'zip': 18556720, 'n': 14}
-이야기 Jataka/014-The-Wind-Deer {'pdf': 9631213, 'zip': 9369794, 'n': 9}
-이야기 Jataka/018-The-Sacrificial-Goat {'pdf': 16407973, 'zip': 16137590, 'n': 14}
-이야기 Jataka/023-The-Noble-Warhorse {'pdf': 17063529, 'zip': 16798234, 'n': 14}
-이야기 Jataka/032-The-Peacocks-Dance {'pdf': 16779591, 'zip': 16515166, 'n': 12}
-이야기 Jataka/033-The-Quails-and-the-Net {'pdf': 15953630, 'zip': 15685476, 'n': 14}
-이야기 Jataka/039-Nanda-and-the-Hoard {'pdf': 13813370, 'zip': 13543951, 'n': 12}
-이야기 Jataka/041-The-Unfortunate-Monk {'pdf': 17989804, 'zip': 17723913, 'n': 15}
-책 Jataka {'pdf': 496237007, 'pdfs': 50595425, 'zip': 495827247, 'stories': 32, 'n': 422}
-내려받기 파일: 14 묶음 새로 만듦
+이야기 Jataka/001-The-Waterless-Desert {'pdf': 14319693, 'zip': 14054332, 'n': 15}
+이야기 Jataka/004-The-Dead-Mouse {'pdf': 17531543, 'zip': 17268108, 'n': 15}
+이야기 Jataka/006-The-Water-Rakkhasa {'pdf': 19057938, 'zip': 18791517, 'n': 15}
+이야기 Jataka/009-The-Kings-Grey-Hair {'pdf': 15469434, 'zip': 15202568, 'n': 14}
+이야기 Jataka/012-The-Golden-Deer {'pdf': 18819919, 'zip': 18555702, 'n': 14}
+이야기 Jataka/014-The-Wind-Deer {'pdf': 9632711, 'zip': 9371293, 'n': 9}
+이야기 Jataka/018-The-Sacrificial-Goat {'pdf': 16406475, 'zip': 16136092, 'n': 14}
+이야기 Jataka/023-The-Noble-Warhorse {'pdf': 17064530, 'zip': 16799235, 'n': 14}
+이야기 Jataka/032-The-Peacocks-Dance {'pdf': 16780319, 'zip': 16515894, 'n': 12}
+이야기 Jataka/033-The-Quails-and-the-Net {'pdf': 15952857, 'zip': 15684703, 'n': 14}
+이야기 Jataka/039-Nanda-and-the-Hoard {'pdf': 13815949, 'zip': 13546530, 'n': 12}
+이야기 Jataka/041-The-Unfortunate-Monk {'pdf': 17989154, 'zip': 17723263, 'n': 15}
+책 Jataka {'pdf': 496204769, 'pdfs': 50602471, 'zip': 495795008, 'stories': 32, 'n': 422}
+내려받기 파일: 13 묶음 새로 만듦
 글로 보기: 318 이야기
-18-Verses-2
-08-Light-of-Asia
-04-Kalavaliya-the-Treasurer
-34-Woodpecker
-20-The-Brahmin-Soma
-29-30-Escape-from-Samsara
+To https://github.com/dhammapiya3-lab/dhammadana
+ ! [rejected]        storybooks -> storybooks (fetch first)
+error: failed to push some refs to 'https://github.com/dhammapiya3-lab/dhammadana'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Committer identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <runner@runnervm0hi8g.cmcqljcs2eou3cg3rlm0uniraf.gx.internal.cloudapp.net>) not allowed
+error: cannot pull with rebase: Your index contains uncommitted changes.
+error: Please commit or stash them.
