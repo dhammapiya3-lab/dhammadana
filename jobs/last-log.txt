@@ -1,4 +1,3 @@
-Foremost-Monks 02-03-Sariputta-Moggallana 57 장
 Jataka 001-The-Waterless-Desert 15 장
 Jataka 002-The-Well-of-Perseverance 15 장
 Jataka 003-The-Golden-Bowl 14 장
@@ -8,7 +7,6 @@ Jataka 005-The-Measure-of-Rice 14 장
 Jataka 006-The-Water-Rakkhasa 15 장
 Jataka 009-The-Kings-Grey-Hair 14 장
 Jataka 010-Bliss-of-Renunciation 14 장
-Jataka 011-The-Wisdom-of-Lakkhana 10 장
 Jataka 012-The-Golden-Deer 14 장
 Jataka 014-The-Wind-Deer 9 장
 Jataka 018-The-Sacrificial-Goat 14 장
@@ -20,13 +18,12 @@ Jataka 027-Elephant-and-Dog 13 장
 Jataka 028-Nandivisala 12 장
 Jataka 029-Grannys-Blackie 12 장
 Jataka 030-Deadly-Food 11 장
-검수 Jataka/032-The-Peacocks-Dance 03번 그림 상자1 [작음] 글자 크기 17 (원래 38)
 Jataka 032-The-Peacocks-Dance 12 장
+검수 Jataka/033-The-Quails-and-the-Net 09번 그림 상자2 [자리] 한글 글(1343,693)이 상자 점(1167,538)에서 멀리 그려짐
 Jataka 033-The-Quails-and-the-Net 14 장
 Jataka 034-The-Amorous-Fish 13 장
 Jataka 037-The-Senior-Partridge 12 장
 Jataka 039-Nanda-and-the-Hoard 12 장
-Jataka 040-The-Fiery-Pit 12 장
 Jataka 041-The-Unfortunate-Monk 15 장
 Jataka 043-The-Monk-and-the-Viper 10 장
 Jataka 044-The-Son-and-the-Mosquito 13 장
@@ -35,21 +32,9 @@ Jataka 048-The-Rain-of-Ruin 15 장
 Jataka 049-The-Lucky-Star 14 장
 Jataka 050-The-Kings-Stratagem 15 장
 자동 검수: 문제 의심 3 곳
-R2 에 올림: 1005 개 / 한글판 이야기 318 편
-새 그림책 올림: New-Jataka/001-Apannaka-en 30 장
-새 그림책 올림: New-Jataka/001-Apannaka 30 장
-새 그림책 올림: New-Jataka/002-Vannupatha-en 24 장
-새 그림책 올림: New-Jataka/002-Vannupatha 24 장
-새 그림책 올림: New-Jataka/003-Serivanija-en 25 장
-새 그림책 올림: New-Jataka/003-Serivanija 25 장
-새 그림책 올림: New-Jataka/004-Culasetthi-en 30 장
-새 그림책 올림: New-Jataka/004-Culasetthi 30 장
-새 그림책 올림: New-Jataka/005-Tandulanali-en 23 장
-새 그림책 올림: New-Jataka/005-Tandulanali 23 장
-새 그림책: 올린 그림 264 장
-공개 주소 확인: 200 1735306바이트
-이야기 Foremost-Monks/02-03-Sariputta-Moggallana {'pdf': 85406490, 'zip': 85109866, 'n': 57}
-책 Foremost-Monks {'pdf': 1122358673, 'pdfs': 118348169, 'zip': 1121815824, 'stories': 38, 'n': 802}
+R2 에 올림: 847 개 / 한글판 이야기 320 편
+새 그림책: 올린 그림 0 장
+공개 주소 확인: 200 1160954바이트
 이야기 Jataka/001-The-Waterless-Desert {'pdf': 14222742, 'zip': 13957379, 'n': 15}
 이야기 Jataka/002-The-Well-of-Perseverance {'pdf': 17758112, 'zip': 17489989, 'n': 15}
 이야기 Jataka/003-The-Golden-Bowl {'pdf': 15754666, 'zip': 15489678, 'n': 14}
@@ -57,45 +42,31 @@ R2 에 올림: 1005 개 / 한글판 이야기 318 편
 이야기 Jataka/005-The-Measure-of-Rice {'pdf': 17187899, 'zip': 16924515, 'n': 14}
 이야기 Jataka/006-The-Water-Rakkhasa {'pdf': 18956579, 'zip': 18690158, 'n': 15}
 이야기 Jataka/009-The-Kings-Grey-Hair {'pdf': 15452271, 'zip': 15185405, 'n': 14}
-이야기 Jataka/010-Bliss-of-Renunciation {'pdf': 16976136, 'zip': 16709749, 'n': 14}
-이야기 Jataka/011-The-Wisdom-of-Lakkhana {'pdf': 12183774, 'zip': 11919805, 'n': 10}
+이야기 Jataka/010-Bliss-of-Renunciation {'pdf': 16967304, 'zip': 16700917, 'n': 14}
 이야기 Jataka/012-The-Golden-Deer {'pdf': 18808378, 'zip': 18544162, 'n': 14}
 이야기 Jataka/014-The-Wind-Deer {'pdf': 9606003, 'zip': 9344585, 'n': 9}
 이야기 Jataka/018-The-Sacrificial-Goat {'pdf': 16362190, 'zip': 16091806, 'n': 14}
 이야기 Jataka/022-The-Teaching-of-the-Dog {'pdf': 17701187, 'zip': 17435989, 'n': 14}
-이야기 Jataka/023-The-Noble-Warhorse {'pdf': 17016737, 'zip': 16751442, 'n': 14}
+이야기 Jataka/023-The-Noble-Warhorse {'pdf': 17015384, 'zip': 16750089, 'n': 14}
 이야기 Jataka/026-The-State-Elephant {'pdf': 16506524, 'zip': 16240355, 'n': 13}
 이야기 Jataka/027-Elephant-and-Dog {'pdf': 16821277, 'zip': 16556445, 'n': 13}
 이야기 Jataka/028-Nandivisala {'pdf': 14832832, 'zip': 14564655, 'n': 12}
 이야기 Jataka/029-Grannys-Blackie {'pdf': 13765356, 'zip': 13497591, 'n': 12}
-이야기 Jataka/030-Deadly-Food {'pdf': 13359426, 'zip': 13090612, 'n': 11}
+이야기 Jataka/030-Deadly-Food {'pdf': 13356853, 'zip': 13088039, 'n': 11}
 이야기 Jataka/032-The-Peacocks-Dance {'pdf': 16728748, 'zip': 16464323, 'n': 12}
 이야기 Jataka/033-The-Quails-and-the-Net {'pdf': 15889630, 'zip': 15621476, 'n': 14}
 이야기 Jataka/034-The-Amorous-Fish {'pdf': 15132449, 'zip': 14863387, 'n': 13}
 이야기 Jataka/037-The-Senior-Partridge {'pdf': 15673646, 'zip': 15409802, 'n': 12}
 이야기 Jataka/046-The-Folly-of-the-Monkeys {'pdf': 15938903, 'zip': 15666747, 'n': 13}
 이야기 Jataka/039-Nanda-and-the-Hoard {'pdf': 13800479, 'zip': 13531061, 'n': 12}
-이야기 Jataka/040-The-Fiery-Pit {'pdf': 12582022, 'zip': 12318280, 'n': 12}
 이야기 Jataka/041-The-Unfortunate-Monk {'pdf': 17786734, 'zip': 17520842, 'n': 15}
 이야기 Jataka/043-The-Monk-and-the-Viper {'pdf': 11067055, 'zip': 10803764, 'n': 10}
 이야기 Jataka/044-The-Son-and-the-Mosquito {'pdf': 14995066, 'zip': 14725649, 'n': 13}
 이야기 Jataka/048-The-Rain-of-Ruin {'pdf': 16687653, 'zip': 16423173, 'n': 15}
 이야기 Jataka/049-The-Lucky-Star {'pdf': 16388463, 'zip': 16123590, 'n': 14}
 이야기 Jataka/050-The-Kings-Stratagem {'pdf': 18944320, 'zip': 18678664, 'n': 15}
-책 Jataka {'pdf': 494108538, 'pdfs': 50569349, 'zip': 493698781, 'stories': 32, 'n': 422}
-이야기 New-Jataka/001-Apannaka {'pdf': 22270003, 'zip': 22091938, 'n': 30}
-이야기 New-Jataka/002-Vannupatha {'pdf': 16023879, 'zip': 15848742, 'n': 24}
-이야기 New-Jataka/003-Serivanija {'pdf': 19612467, 'zip': 19436901, 'n': 25}
-이야기 New-Jataka/004-Culasetthi {'pdf': 25319684, 'zip': 25141406, 'n': 30}
-이야기 New-Jataka/005-Tandulanali {'pdf': 19578008, 'zip': 19404181, 'n': 23}
-책 New-Jataka {'pdf': 102124099, 'pdfs': 18757299, 'zip': 101932593, 'stories': 5, 'n': 132}
-이야기 New-Jataka/001-Apannaka-en {'pdf': 22254794, 'zip': 22054114, 'n': 30}
-이야기 New-Jataka/002-Vannupatha-en {'pdf': 16032948, 'zip': 15836267, 'n': 24}
-이야기 New-Jataka/003-Serivanija-en {'pdf': 19603775, 'zip': 19405012, 'n': 25}
-이야기 New-Jataka/004-Culasetthi-en {'pdf': 25345923, 'zip': 25145629, 'n': 30}
-이야기 New-Jataka/005-Tandulanali-en {'pdf': 19551959, 'zip': 19355248, 'n': 23}
-책 New-Jataka-en {'pdf': 102029812, 'pdfs': 18887739, 'zip': 101806371, 'stories': 5, 'n': 132}
-내려받기 파일: 47 묶음 새로 만듦
+책 Jataka {'pdf': 494095780, 'pdfs': 50569501, 'zip': 493686023, 'stories': 32, 'n': 422}
+내려받기 파일: 31 묶음 새로 만듦
 글로 보기: 320 이야기
 18-Verses-2
 08-Light-of-Asia
