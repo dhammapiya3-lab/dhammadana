@@ -214,13 +214,18 @@
     "ko": "쌀 한 그릇에 내 말을 모두 빼앗기다니! 어떻게 해야 하나?"
    },
    {
-    "seed": [
-     216,
-     376
-    ],
     "shape": "box",
     "en": "Devastated, oO the dealer sought on fe out the ex-valuer",
-    "ko": "절망한 말 장수는 예전 관리였던 보살을 찾아갔습니다."
+    "ko": "절망한 말 장수는 예전 관리였던 보살을 찾아갔습니다.",
+    "rect": [
+     134,
+     364,
+     668,
+     411
+    ],
+    "whole": true,
+    "cover": true,
+    "align": "center"
    }
   ]
  },
