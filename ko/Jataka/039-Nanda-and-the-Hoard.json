@@ -135,7 +135,7 @@
     "ko": "도련님은 삽과 바구니를 들고 종을 따라갔습니다.",
     "shape": "box",
     "manual": true,
-    "align": "left",
+    "align": "center",
     "em": 14
    }
   ]
@@ -361,7 +361,7 @@
      338,
      100
     ],
-    "align": "left",
+    "align": "center",
     "ko": "보살의 조언대로 아들은 다시 숲으로 갔습니다. 난다가 어김없이 욕을 하기 시작하자, 아들은 참지 않았습니다.",
     "shape": "box",
     "manual": true
