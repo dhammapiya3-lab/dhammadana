@@ -398,8 +398,8 @@ if (fs.existsSync(C('audiobooks'))) {
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const sayDate = d => String(d || '').replace(/(\d{4})-(\d{1,2})-(\d{1,2})/g, (m, y, mo, da) => `${y}년 ${+mo}월 ${+da}일`);
 const slugT = s => encodeURIComponent(s);
-// 주 메뉴. '그림책'은 그림책 사이트(storybooks.dhammadana.kr)로 감 (운영자 요청, 2026-11-24)
-const NAV = [['/about/', '소개', 'about'], ['/press/', '我無말들 출판사', 'press'], ['/library/', '법보시 도서관', 'library'], ['/dhammatalk/', '법문 바로 듣기', 'dhammatalk'], ['https://storybooks.dhammadana.kr/', '그림책', 'storybooks'], ['/links/', '추천·협력 사이트', 'links'], ['/news/', '소식', 'news']];
+// 주 메뉴. 맨 끝 '그림책'은 그림책 사이트(storybooks.dhammadana.kr)로 감 (운영자 요청, 2026-11-24)
+const NAV = [['/about/', '소개', 'about'], ['/press/', '我無말들 출판사', 'press'], ['/library/', '법보시 도서관', 'library'], ['/dhammatalk/', '법문 바로 듣기', 'dhammatalk'], ['/links/', '추천·협력 사이트', 'links'], ['/news/', '소식', 'news'], ['https://storybooks.dhammadana.kr/', '그림책', 'storybooks']];
 const wheel = cls => `<svg class="${cls}" viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="20" cy="20" r="15"/><circle cx="20" cy="20" r="3.2"/><path d="M20 5v30M5 20h30M9.4 9.4l21.2 21.2M30.6 9.4L9.4 30.6"/></g></svg>`;
 
 // 검색엔진용 책 정보 (schema.org Book). 책 JSON 에 있는 것만 씀 — 없는 정보는 넣지 않음
