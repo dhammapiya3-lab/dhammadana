@@ -738,14 +738,14 @@ function libraryBody() {
   }
   const topics = TOPICS.groups.map((gr, i) => `<details class="fgroup"${gr.labels.some(l => countTopic(l)) ? ' open' : ''}><summary class="group-name">${esc(gr.name)} <span class="n">${gr.labels.reduce((a, l) => a + countTopic(l), 0)}</span></summary>` + gr.labels.map(l => chk('topic', l, esc(l), countTopic(l))).join('') + '</details>').join('');
   // 분류마다 접고 펼 수 있게(휴대폰에서만 — 컴퓨터는 늘 펼침, app.js initLibrary) (운영자 요청, 2026-11-24)
-  const sec = (id, title, inner) => `<details class="fsec" data-sec="${id}" open><summary class="fsec-h"><h3>${title}</h3></summary>${inner}</details>`;
+  const sec = (id, title, inner, shut) => `<details class="fsec${shut ? ' fold' : ''}" data-sec="${id}"${shut ? '' : ' open'}><summary class="fsec-h"><h3>${title}</h3></summary>${inner}</details>`;
   return `<div class="wrap lib"><details class="filter-toggle" open><summary>찾아보기</summary><div class="filters">
     ${sec('main', '주요 자료', TOPICS.main.map(m => chk('main', m, esc(m), countMain(m))).join(''))}
     ${sec('trad', '수행전통 · 스승 · 저자', `${trad}
     <label class="small muted" style="margin-top:6px"><input type="checkbox" id="showEmpty">준비 중인 전통도 보기</label>`)}
     ${sec('region', '국가 · 지역', COUNTRIES.map(c => chk('region', c, esc(c), LIB().filter(b => countriesOf(b).includes(c)).length)).join(''))}
     ${sec('topic', '주제', topics)}
-    <details class="fgroup person-group"><summary class="group-name">지은이·옮긴이</summary>${[...PEOPLE.by.values()].map(o => ({ ...o, n: LIB().filter(b => peopleOf(b).includes(o.key)).length })).filter(o => o.n).sort((a, c) => c.n - a.n || a.name.localeCompare(c.name, 'ko')).map(o => chk('person', o.key, esc(o.name), o.n)).join('')}</details>
+    ${sec('person', '지은이·옮긴이', [...PEOPLE.by.values()].map(o => ({ ...o, n: LIB().filter(b => peopleOf(b).includes(o.key)).length })).filter(o => o.n).sort((a, c) => c.n - a.n || a.name.localeCompare(c.name, 'ko')).map(o => chk('person', o.key, esc(o.name), o.n)).join(''), true)}
     ${sec('pub', '협력 단체', PUBS().map(x => chk('pub', x.key, esc(x.name), LIB().filter(b => pubsAll(b).some(p => p.key === x.key)).length)).join(''))}
     ${sec('btype', '책 형식', BTYPES.map(k => chk('btype', k, esc(k), LIB().filter(b => b.book_type === k).length)).join(''))}
     ${LANGS.length ? sec('lang', '원서의 언어', LANGS.map(l => chk('lang', l, esc(l), LIB().filter(b => langsOf(b).includes(l)).length)).join('')) : ''}

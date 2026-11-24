@@ -438,7 +438,10 @@ function initLibrary() {
   if (matchMedia('(max-width:520px)').matches) {
     $('.filter-toggle').open = !!openSec;
     $$('.filters .fsec').forEach(d => { d.open = d.dataset.sec === openSec || !!$('input[data-f]:checked', d); });
-  } else $$('.filters .fsec > summary').forEach(s => s.addEventListener('click', e => e.preventDefault()));  // 컴퓨터는 늘 펼침
+  } else {  // 컴퓨터는 늘 펼침 — 지은이·옮긴이(.fold)만 접어 두고 누르면 펼침(고른 사람이 있으면 펼침)
+    $$('.filters .fsec:not(.fold) > summary').forEach(s => s.addEventListener('click', e => e.preventDefault()));
+    $$('.filters .fsec.fold').forEach(d => { if ($('input[data-f]:checked', d)) d.open = true; });
+  }
   run();
 }
 

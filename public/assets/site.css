@@ -1614,3 +1614,21 @@ nav.main a .ext{font-size:.92em;opacity:.75}
 /* 내 서재 '옮기기'는 칸 줄에서 빼고 아래쪽 단추로 (운영자 요청, 2026-11-24) */
 .notes-io{max-width:760px;margin:28px 0 8px;padding-top:14px;border-top:1px dashed var(--line)}
 .io-h{font-size:18px;margin:16px 0 6px}
+
+/* 찾아보기 분류: 지은이·옮긴이도 같은 모양, 휴대폰은 글자가 왼쪽 테두리에 닿지 않게 (운영자 요청, 2026-11-24) */
+@media (min-width:521px){
+  .filters .fsec.fold>summary{cursor:pointer;justify-content:space-between}
+  .filters .fsec.fold>summary::after{content:"▸";font-size:11px;color:var(--ink-soft)}
+  .filters .fsec.fold[open]>summary::after{content:"▾"}
+}
+@media (max-width:520px){
+  .filters .fsec{border-bottom:0;margin-bottom:10px}
+  .filters .fsec>summary,details.filter-toggle[open] .fsec>summary{border:1px solid var(--line);border-radius:10px;background:var(--card);padding:13px 18px;margin:0}
+  .filters .fsec>summary h3{font-size:15px}
+  .filters .fsec[open]>summary{border-radius:10px 10px 0 0}
+  .filters .fsec[open]{padding-bottom:0}
+  .filters .fsec>summary~*{margin-left:0}
+  .filters .fsec[open]>:not(summary){padding-left:18px;padding-right:18px}
+  .filters .fsec[open]{border:1px solid var(--line);border-radius:10px;background:var(--card);padding-bottom:10px}
+  .filters .fsec[open]>summary,details.filter-toggle[open] .fsec[open]>summary{border:0;border-bottom:1px solid var(--line)}
+}
