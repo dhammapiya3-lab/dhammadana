@@ -179,13 +179,17 @@
   "img": "images/028-Nandivisala-06-Original.jpg",
   "boxes": [
    {
-    "seed": [
-     539,
-     98
-    ],
     "shape": "bubble",
     "en": "not jo} the Vv rascal wn he calls me.",
-    "ko": "나는 저분이 부르는 그런 못된 놈이 아니야."
+    "ko": "나는 저분이 부르는\n그런 못된 놈이\n아니야.",
+    "rect": [
+     508,
+     86,
+     656,
+     152
+    ],
+    "whole": true,
+    "align": "center"
    },
    {
     "seed": [
