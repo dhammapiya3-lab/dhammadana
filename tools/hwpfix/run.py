@@ -33,13 +33,16 @@ for s,e,r in ops:
     rc=r.replace('**','').replace('°°','').replace('==','').replace('__','')
     if mapped:
         lo=A[mapped[0]]; hi=A[mapped[-1]]
+        # 앞뒤 빈칸까지 지울 때: 본문에서 그 빈칸 바깥에 빈칸이 더 남으면(‘함을,  ’아래’ 의 둘째 빈칸만 바꿈) 그만큼만 (2026-11-25 DL-0040)
         if old[:1].isspace():
+            lim=(len(old)-len(old.lstrip())) if (s>0 and B0[s-1].isspace()) else 10**6
             j=lo-1
-            while j>(A[L] if L is not None else -1) and isspace_entry(j): j-=1
+            while j>(A[L] if L is not None else -1) and isspace_entry(j) and lim>0: j-=1; lim-=1
             lo=j+1
         if old[-1:].isspace():
+            lim=(len(old)-len(old.rstrip())) if (e<len(B0) and B0[e].isspace()) else 10**6
             j=hi+1
-            while j<A[R] and isspace_entry(j): j+=1
+            while j<A[R] and isspace_entry(j) and lim>0: j+=1; lim-=1
             hi=j-1
         span=range(lo,hi+1)
         brk=[j for j in span if H[j][1] is None or H[j][2]=='\n']
@@ -58,6 +61,7 @@ for s,e,r in ops:
                 sp=[j for j in gap if isspace_entry(j)]
                 if sp and len(sp)==len(gap):
                     k=len(o_ws)-len(rc)
+                    if rc=='' and not any(c.isspace() for c in B0[(L if L is not None else -1)+1:s]+B0[e:R]): k=len(sp)   # 빈칸이 하나도 안 남는 교정 — 한글 파일의 양쪽 맞춤용 여러 칸도 모두 (2026-11-25 DL-0040 '적멸 (열반)')
                     for j in sp[:k]: DEL.add(j)
                     BLUE.update([A[L],A[R]])
                 elif not gap: pass
