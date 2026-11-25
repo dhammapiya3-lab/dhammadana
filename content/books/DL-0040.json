@@ -145,16 +145,16 @@
       "publisher_print_show": "",
       "isbn": "",
       "published_ebook": "2026년 11월 25일",
-      "publisher_ebook": "마하 위빠싸나 명상원",
+      "publisher_ebook": "마하위빠싸나 명상원",
       "ebook_note": "",
       "isbn_ebook": "",
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "pdf/DL-0040/DL-0040_교정판.pdf"
+        "url": "pdf/DL-0040/DL-0040_교정판.pdf",
+        "site": "",
+        "created": ""
       },
       "pdf_print": {
         "mode": "none",
@@ -175,10 +175,10 @@
         "created": ""
       },
       "hwp": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "hwp/DL-0040/DL-0040_교정판.hwp"
+        "url": "hwp/DL-0040/DL-0040_교정판.hwp",
+        "site": "",
+        "created": ""
       },
       "reader": false,
       "sources": [],
