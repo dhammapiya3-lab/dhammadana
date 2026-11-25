@@ -237,8 +237,13 @@
     if (endCard && i > pages.length && cur >= pages.length) { loadNext(); return; }  // 끝 화면에서 › → 다음 이야기
     if (i < 0 && cur <= 0 && sv.dataset.prev) { loadNext(true); return; }  // 첫 그림에서 ‹ → 이전 이야기의 마지막 그림
     i = Math.max(0, Math.min(last(), i));
+    goT = i; goAt = Date.now();
     track.scrollTo({ left: i * track.clientWidth, behavior: smooth ? 'smooth' : 'auto' });
   };
+  // 빠르게 잇달아 누르기 (운영자 요청, 2026-11-25 '넘기는 반응이 느림' — 세 번째): 넘어가는 동안(부드럽게 미끄러지는 0.3~0.5초) 또 누르면
+  // 아직 바뀌지 않은 cur 기준이라 같은 쪽으로 가서 누른 것이 사라졌음 → 방금 가려던 쪽(goT)을 기준으로 한 장 더
+  let goT = -1, goAt = 0;
+  const base = () => (Date.now() - goAt < 700 && goT >= 0) ? goT : cur;
   const markBtn = sv.querySelector('.sv-mark');
   const markId = i => `${sv.dataset.key}#${i + 1}`;
   const markShow = () => { if (!markBtn) return; const r = marksAll()[markId(cur)], on = !!(r && !r.del) && cur < pages.length;
@@ -302,11 +307,11 @@
     const i = Math.round(track.scrollLeft / track.clientWidth);
     if (i !== cur) show(i);
   }, { passive: true });
-  sv.querySelector('.prev').onclick = () => go(cur - 1);
-  sv.querySelector('.next').onclick = () => go(cur + 1);
+  sv.querySelector('.prev').onclick = () => go(base() - 1);
+  sv.querySelector('.next').onclick = () => go(base() + 1);
   sv.addEventListener('keydown', e => {
-    if (['ArrowRight', 'k', ' ', 'PageDown'].includes(e.key)) { go(cur + 1); e.preventDefault(); }
-    if (['ArrowLeft', 'j', 'PageUp'].includes(e.key)) { go(cur - 1); e.preventDefault(); }
+    if (['ArrowRight', 'k', ' ', 'PageDown'].includes(e.key)) { go(base() + 1); e.preventDefault(); }
+    if (['ArrowLeft', 'j', 'PageUp'].includes(e.key)) { go(base() - 1); e.preventDefault(); }
     if (e.key === 'Home') go(0); if (e.key === 'End') go(pages.length - 1);
     if (e.key === 'Enter' && endCard && cur >= pages.length) loadNext();
   });
@@ -354,6 +359,9 @@
       Z.pan = null; if (Z.s <= 1.02) zReset();
       // 두 번 톡톡: 2배로 키우거나 원래대로
       const now = Date.now();
+      { const t = e.changedTouches[0], r = track.getBoundingClientRect();
+        const x = sv.classList.contains('sv-rot') ? (t.clientY - r.top) / r.height : (t.clientX - r.left) / r.width;
+        if (Z.s <= 1 && (x < 0.25 || x > 0.75)) { Z.tap = 0; return; } }  // 좌우 넘기기 자리: 두 번 톡톡 확대로 세지 않음 (2026-11-25)
       if (!Z.moved && zoomable() && now - Z.tap < 300) {
         const img = pages[cur]?.querySelector('img');
         if (Z.s > 1) zReset(); else if (img) { zReset(); Z.img = img; Z.s = 2; zApply(); }
@@ -398,13 +406,13 @@
   track.addEventListener('touchend', e => {
     if (!t0 || !sv.classList.contains('sv-rot') || Z.s > 1 || Z.moved) { t0 = null; return; }
     const t = e.changedTouches[0], dy = t.clientY - t0.clientY, dx = t.clientX - t0.clientX; t0 = null;
-    if (Math.abs(dy) > 40 && Math.abs(dy) > Math.abs(dx)) go(cur + (dy < 0 ? 1 : -1));
+    if (Math.abs(dy) > 40 && Math.abs(dy) > Math.abs(dx)) go(base() + (dy < 0 ? 1 : -1));
   }, { passive: true });
   // 화면 좌우를 눌러 넘기기 (손가락 화면)
   track.addEventListener('click', e => {
     if (Z.s > 1 || Date.now() - (Z.dbl || 0) < 400) return;  // 확대 중이거나 두 번 톡톡 직후에는 넘기지 않음
     const r = track.getBoundingClientRect(), x = sv.classList.contains('sv-rot') ? (e.clientY - r.top) / r.height : (e.clientX - r.left) / r.width;
-    if (x < 0.25) go(cur - 1); else if (x > 0.75) go(cur + 1);
+    if (x < 0.25) go(base() - 1); else if (x > 0.75) go(base() + 1);
     else if (isFull()) barShow(!sv.classList.contains('bar-on'));  // 전체 화면: 가운데를 누르면 아래 바가 나타나거나 숨음
   });
   // 전체 화면에서는 아래 바를 숨겨 그림이 화면을 꽉 채우게 함 — 마우스를 아래쪽에 가까이 대거나(바 위 포함),
