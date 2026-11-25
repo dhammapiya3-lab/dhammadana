@@ -1323,6 +1323,9 @@ function bindReader() {
         (g.or || []).forEach(i => { const o = O[i]; if (!o || seen.has(i)) return; seen.add(i); const tx = plainT(o.t);
           if (terms.some(x => norm(tx).includes(x))) oHits.push({ n, k, o: i, pg: o.pg, s: snippet(tx, terms) || tx.slice(0, 80) }); }); });
       oHits.sort((a, b) => a.n - b.n || a.k - b.k); }
+    // '※ 원서와 순서가 다릅니다 — 원서 201쪽…' 메모도 찾음 (운영자 요청, 2026-11-25)
+    const nHits = [];
+    if (D) D.groups.forEach((g, gi) => { if (!g.note || !g.ko.length || !terms.some(x => norm(g.note).includes(x))) return; const [n, k] = g.ko[0].split(':').map(Number); nHits.push({ n, k, gi, o: g.or[0], s: g.note }); });
     const oLang = D ? ({ en: '영어', my: '미얀마어', pi: '빠알리어', th: '태국어' }[D.lang] || '') : '';
     // 원서 쪽 번호로 찾기: '74'·'74쪽'·'원서 74'·'p.74'·'XVII' → 그 원서 쪽 첫 문단으로 (운영자 요청, 2026-11-25)
     const oPgHits = [];
@@ -1363,7 +1366,7 @@ function bindReader() {
     const pgHtml = pgHits.map(x => `<li><button class="link" data-find="${x.n}" data-k="-1"><b>📄 ${esc(pgVia || pageName(x))}으로 가기</b>${ch(x.n) ? `<br><span class="muted small">${esc(ch(x.n))}</span>` : ''}</button></li>`).join('');
     R.findRes = `<p class="note">${pgHits.length ? `${esc(pgVia || pageName(pgHits[0]))}이 있습니다. ` : ''}${fnHits.length ? `각주 ${fm[1]}번이 있습니다. ` : ''}${hits.length ? `${hits.length}곳을 찾았습니다.` : pgHits.length || fnHits.length ? '' : '찾는 말이 없습니다.'}${group ? ` (${group.map(esc).join(', ')} 함께 찾음)` : ''}</p>
       <ul class="find-list">${pgHtml}${fnHtml}${hits.slice(0, 200).map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}"><span class="muted small">${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span><br>${phMark(hl(h.s, terms))}</button></li>`).join('')}</ul>${hits.length > 200 ? '<p class="note">앞의 200곳만 보입니다. 더 자세한 말로 찾아보세요.</p>' : ''}`
-      + (D ? `<p class="note find-or-h"><b>${esc(oLang)} 원서에서</b> ${oPgHits.length ? `원서 쪽이 있습니다. ` : ''}${oHits.length ? `${oHits.length}곳을 찾았습니다.` : oPgHits.length ? '' : '찾는 말이 없습니다.'}</p>${oPgHits.length ? `<ul class="find-list find-or-pg">${oPgHits.map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}" data-o="${h.o}" data-pgo="1"><b>📄 ${esc(oLang)} 원서 ${h.pdf != null ? `PDF ${esc(h.pdf)}쪽 (원서 ${esc(h.pg)}쪽)` : esc(h.pg) + '쪽'}으로 가기</b><br><span class="muted small">번역 ${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span></button></li>`).join('')}</ul>` : ''}${oHits.length ? `<ul class="find-list find-or" lang="${esc(D.lang || '')}">${oHits.slice(0, 200).map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}" data-o="${h.o}"><span class="muted small" lang="ko">${esc(oLang)} 원서${h.pg ? ' ' + esc(h.pg) + '쪽' : ''} · 번역 ${esc(pageName(R.pages[h.n - 1]))}</span><br>${hl(h.s, terms)}</button></li>`).join('')}</ul>${oHits.length > 200 ? '<p class="note">앞의 200곳만 보입니다.</p>' : ''}` : ''}` : '');
+      + (D ? `<p class="note find-or-h"><b>${esc(oLang)} 원서에서</b> ${oPgHits.length ? `원서 쪽이 있습니다. ` : ''}${oHits.length ? `${oHits.length}곳을 찾았습니다.` : oPgHits.length ? '' : '찾는 말이 없습니다.'}</p>${oPgHits.length ? `<ul class="find-list find-or-pg">${oPgHits.map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}" data-o="${h.o}" data-pgo="1"><b>📄 ${esc(oLang)} 원서 ${h.pdf != null ? `PDF ${esc(h.pdf)}쪽 (원서 ${esc(h.pg)}쪽)` : esc(h.pg) + '쪽'}으로 가기</b><br><span class="muted small">번역 ${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span></button></li>`).join('')}</ul>` : ''}${oHits.length ? `<ul class="find-list find-or" lang="${esc(D.lang || '')}">${oHits.slice(0, 200).map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}" data-o="${h.o}"><span class="muted small" lang="ko">${esc(oLang)} 원서${h.pg ? ' ' + esc(h.pg) + '쪽' : ''} · 번역 ${esc(pageName(R.pages[h.n - 1]))}</span><br>${hl(h.s, terms)}</button></li>`).join('')}</ul>${oHits.length > 200 ? '<p class="note">앞의 200곳만 보입니다.</p>' : ''}` : ''}${nHits.length ? `<p class="note find-or-h"><b>원서 순서 메모에서</b> ${nHits.length}곳을 찾았습니다.</p><ul class="find-list find-note">${nHits.map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}" data-o="${h.o}" data-ng="${h.gi}"><span class="muted small">번역 ${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span><br>※ ${hl(h.s, terms)}</button></li>`).join('')}</ul>` : ''}` : '');
     $('#findRes').innerHTML = R.findRes; bindFind();
   };
   const bindFind = () => $$('[data-find]', el).forEach(b => b.onclick = () => {
@@ -1371,15 +1374,16 @@ function bindReader() {
     R.i = n - 1; stopSpeak(false); renderReader(); if (k >= 0) $('#p-find').classList.add('open');  // 쪽으로 가기는 찾기 창을 닫고 그 쪽 첫머리로
     if (k < 0) { const t = $('#pm-' + n); if (t) { t.scrollIntoView({ block: 'start' }); t.classList.add('found'); setTimeout(() => t.classList.remove('found'), 1800); } return; }
     const ft = R.findTerms; if (pgo) R.findTerms = [];   // 원서 쪽으로 가기: 찾은 말 표시 없이 그 원서 문단을 가운데에
-    findAt(n, k, b.dataset.o != null ? +b.dataset.o : null); R.findTerms = ft;
+    findAt(n, k, b.dataset.o != null ? +b.dataset.o : null, b.dataset.ng != null ? `#rBody .par-note[data-ng="${b.dataset.ng}"]` : null); R.findTerms = ft;
   });
   // 찾은 문단을 화면 가운데에 — 원서 대조(문단 나란히·문장마다)·그림·글꼴이 늦게 그려져 글이 밀려도 몇 초 동안 자리를 다시 맞춤,
   // 읽는 분이 직접 넘기면 그만 (운영자 요청, 2026-11-25 — 찾은 곳 대신 그 쪽 첫머리가 보이던 것)
-  const findAt = (n, k, oi) => {
+  const findAt = (n, k, oi, sel) => {
     const body = $('#rBody'); if (!body) return;
     const key = `${n}:${k}`, terms = R.findTerms || [];
     const hasT = e => terms.some(x => norm(e.textContent).includes(x));
     const target = () => {
+      if (sel) { const e = $(sel); if (e && e.getClientRects().length) return e; }   // 원서 순서 메모 등 (2026-11-25)
       if (oi != null) {   // 원서에서 찾은 곳: 문단 나란히는 원서 문단, 문장마다는 그 원서 문단의 문장 줄
         const op = $(`#rBody .par-or p[data-o="${oi}"]`); if (op && op.getClientRects().length) return op;
         const rows = $$('#rBody .ps[data-o]').filter(r => r.dataset.o.split(' ').includes(String(oi)));
@@ -2883,7 +2887,7 @@ function parApply() {
   const lang = { en: '영어', my: '미얀마어', pi: '빠알리어', th: '태국어' }[D.lang] || D.lang;
   const pgLab = o => `${esc(lang)} 원서 ${esc(o.pg + '쪽')}${o.pdf && o.pdf !== o.pg ? ` (PDF ${esc(o.pdf)}쪽)` : ''}`;
   // '원서와 순서가 다릅니다 — 원서 201쪽…' 메모의 '원서 201쪽'을 누르면 원서 차례로 그 앞뒤 글이 있는 곳으로 (운영자 요청, 2026-11-25)
-  const noteHtml = (g, gi) => `<p class="par-note" lang="ko">※ ${esc(g.note).replace(/원서 (?:『[^』]*』 )?[0-9]+쪽(?: ?\(PDF [0-9]+쪽\))?/, m => `<button type="button" class="par-ngo link" data-ngo="${gi}" title="원서 차례에서 이 글 앞뒤가 있는 곳으로 가기">${m}</button>`)}</p>`;
+  const noteHtml = (g, gi) => `<p class="par-note" lang="ko" data-ng="${gi}">※ ${esc(g.note).replace(/원서 (?:『[^』]*』 )?[0-9]+쪽(?: ?\(PDF [0-9]+쪽\))?/, m => `<button type="button" class="par-ngo link" data-ngo="${gi}" title="원서 차례에서 이 글 앞뒤가 있는 곳으로 가기">${m}</button>`)}</p>`;
   rf.classList.add('par-on', R.parMode === 'para' && wide ? 'par2' : 'par1');
   if (R.parMode === 'para' && wide) rf.style.maxWidth = `calc(${R.mw}em * 2 + 3em)`;
   let shown = 0, lastPg = null;
