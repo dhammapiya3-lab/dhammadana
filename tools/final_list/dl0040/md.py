@@ -27,7 +27,7 @@ for c in CATS:
         pg=', '.join(pages) if len(pages)<=12 else ', '.join(pages[:12])+f' 외 {len(pages)-12}쪽'
         cnt=f" ({len(ys)}곳)" if len(ys)>1 else ''
         b,a=(ys[0]['before'],ys[0]['after']) if len(ys)==1 else (cb,ca)
-        rd=sorted({('1회차' if '1회차' in s else '2회차' if '2회차' in s else '손 교정') for y in ys for s in y['src'].split('; ')})
+        rd=sorted({('1회차' if '1회차' in s else '2회차' if '2회차' in s else '3회차' if '3회차' in s else '손 교정') for y in ys for s in y['src'].split('; ')})
         lines.append(f"| {esc(pg)}{cnt} | {esc(b)} | {esc(a)} | {'·'.join(rd)} |")
     out[c]=dict(md='\n'.join(lines),rows=len(g),n=len(xs))
     print(c,len(g),len(xs),len(out[c]['md']))
