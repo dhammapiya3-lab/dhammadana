@@ -963,6 +963,12 @@ for (const p of PLAYLISTS) {
 const epKey = e => e.id != null && e.id !== '' ? String(e.id) : 'h' + crypto.createHash('md5').update(String(e.audio || e.title || '')).digest('hex').slice(0, 10);
 const matsOf = (p, e) => (p.materials || []).filter(m => m && m.url && String(m.ep) === epKey(e));
 const matExt = m => (String(m.url).split('?')[0].split('.').pop() || '').toUpperCase();
+// 시리즈(재생목록) 전체 자료 (운영자 요청, 2026-11-25 — 예: '초기불교 교학과 수행' 시리즈 전체의 자료 하나): materials 의 ep 가 's-<재생목록 번호>'(전체 법문은 's-all'), 파일은 R2 talk/<선원>/s-<번호>/
+const serMats = (p, s) => (p.materials || []).filter(m => m && m.url && String(m.ep) === 's-' + s.id);
+// 강의자료 모아 보기: 시리즈 전체 자료 + 강의마다의 자료(강의 차례대로)
+const allMats = (p, s) => [...serMats(p, s).map(m => ({ m, n: 0, t: '' })), ...s.list.flatMap((e, j) => matsOf(p, e).map(m => ({ m, n: j + 1, t: e.title })))];
+const matAllHtml = (p, s) => { const L = allMats(p, s); if (!L.length) return '';
+  return `<details class="mat-all"><summary>📄 강의자료 모아 보기 <span class="muted small">(${L.length}개)</span></summary><ul>${L.map(({ m, n, t }) => `<li><a href="${esc(fileUrl(m.url))}" download target="_blank" rel="noopener"><span class="mk">${n ? `${n}강` : '시리즈 전체'}</span> <span class="mt">${n ? esc(t) + ' — ' : ''}${esc(m.name)}</span> <span class="muted small">(${esc(matExt(m))}<span class="sr"> 내려받기</span>)</span></a></li>`).join('')}</ul></details>`; };
 const matHtml = (p, e) => { const L = matsOf(p, e); return L.map(m => ` <a class="ep-mat" href="${esc(fileUrl(m.url))}" download target="_blank" rel="noopener">📄 ${L.length > 1 ? esc(m.name) : '강의자료'} <span class="sr">${esc(e.title)} 강의자료 내려받기, </span>(${esc(matExt(m))})</a>`).join(''); };
 // 협력단체·유튜브 채널 (운영자 요청, 2026-11-24): '법문 바로 듣기' 팟빵 채널 목록 아래 '협력단체·유튜브 채널' 제목 + '가나다순' 단추 — 누르면 아래로 채널 목록이 펼쳐짐(새 창으로 유튜브).
 // 채널은 providers.json 협력 단체(partner) 주소 가운데 유튜브 주소 — 관리자 화면 '자료 제공처·협력 단체'의 주소 칸에 넣으면 저절로 들어감.
@@ -983,6 +989,7 @@ function talksBody() {
     ${p.subs.length > 1 ? `<div class="chips sub-chips" role="tablist" aria-label="재생목록">${p.subs.map(s => `<button class="chip" role="tab" data-sub="${p.id}:${s.id}">${esc(s.name)}<span class="n">${s.list.length}</span></button>`).join('')}</div>` : ''}
     ${p.subs.map(s => `<div class="sub-panel" data-subpanel="${p.id}:${s.id}" hidden>
       <div class="sub-head"><b>${esc(s.name)}</b> <span class="muted small">${s.list.length}개${s.id === 'all' ? (s.asc ? ' · 1강부터' : ' · 최근 올린 순') : ' · 1강부터'}</span>${s.list.length ? ` <button class="btn sm" data-playall="${p.id}:${s.id}">▶ 처음부터 모두 듣기</button>` : ''}</div>
+      ${matAllHtml(p, s)}
       <div role="list">${s.list.map((e, i) => row(p, s, e, i)).join('')}</div>
       ${s.list.length > 50 ? `<div class="more-wrap"><button class="btn sm ghost" data-more>더 보기</button></div>` : ''}
     </div>`).join('')}
@@ -1188,6 +1195,14 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
       const nm = p.name + (x.id === 'all' ? '' : ' · ' + x.name);
       const rows = x.list.flatMap((e, j) => [{ href: e.audio, ic: '▶', kind: 'ep', data: { t: e.title, pl: nm, n: j + 1, ...(x.id === 'all' && !x.asc && p.alt.get(e.audio) ? { alt: p.alt.get(e.audio) } : {}) }, cols: [e.title, e.date || '', e.duration || ''] },
         ...matsOf(p, e).map(m => ({ href: fileUrl(m.url), ic: '📄', kind: 'mat', dl: true, ext: true, cols: [`강의자료 · ${m.name}`, '', `${matExt(m)} 내려받기`] }))]);  // 강의자료 줄은 그 법문 줄 바로 아래 (2026-11-23)
+      // 시리즈 전체 자료는 목록 맨 위, 강의자료가 둘 넘거나 시리즈 자료와 강의자료가 함께 있으면 '강의자료 모아 보기' 폴더 (2026-11-25)
+      const AM = allMats(p, x), SM = serMats(p, x);
+      if (AM.length > SM.length && AM.length > 1) {
+        rows.unshift({ href: `/simple/talks/${p.id}/${i + 1}/mats/`, ic: '📁', kind: 'folder', cols: ['강의자료 모아 보기', '폴더', `강의자료 ${AM.length}개`] });
+        sFolderPage(`simple/talks/${p.id}/${i + 1}/mats/index.html`, { title: `${nm} 강의자료`, path: [...P1, [x.name, `/simple/talks/${p.id}/${i + 1}/`], ['강의자료 모아 보기', '']], up: `/simple/talks/${p.id}/${i + 1}/`, normal: `/dhammatalk/?pl=${p.id}`, what: '강의자료',
+          rows: AM.map(({ m, n, t }) => ({ href: fileUrl(m.url), ic: '📄', kind: 'mat', dl: true, ext: true, cols: [`${n ? n + '강 · ' + t + ' — ' : '시리즈 전체 · '}${m.name}`, n ? '강의자료' : '시리즈 전체 자료', `${matExt(m)} 내려받기`] })) });
+      }
+      rows.unshift(...SM.map(m => ({ href: fileUrl(m.url), ic: '📄', kind: 'mat', dl: true, ext: true, cols: [`시리즈 전체 강의자료 · ${m.name}`, '', `${matExt(m)} 내려받기`] })));
       put(`simple/talks/${p.id}/${i + 1}/index.html`, simpleLayout({ title: nm, path: [...P1, [x.name, '']], up: `/simple/talks/${p.id}/`, normal: `/dhammatalk/?pl=${p.id}`, page: 'simple-talk', status: `법문 ${x.list.length}`,
         body: `<div id="sPlayerSlot"></div>
 ` + (rows.length ? sList(`${nm}, 법문 ${x.list.length}개`, ['제목', '올린 날', '길이'], rows) : '<p>법문 목록을 불러오지 못했습니다. 잠시 뒤 다시 확인해 주세요.</p>') }));
@@ -1293,7 +1308,7 @@ if (fs.existsSync(C('parallel'))) { fs.mkdirSync(path.join(OUT, 'parallel'), { r
 // 색인처럼 표로 된 자료: content/indexes/<자료번호>.json (본문의 [[색인]] 자리에 찾기·순서 바꾸기가 되는 표로 보임)
 const indexOf = id => { const f = C('indexes/' + id + '.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : null; };
 // 관리자 화면 '법문 강의자료 올리기'가 강의를 고를 때 쓰는 목록 (2026-11-23)
-fs.writeFileSync(path.join(OUT, 'data/talk-eps.json'), JSON.stringify(PLAYLISTS.map(p => ({ id: p.id, name: p.name, subs: p.subs.map(x => ({ id: x.id, name: x.name, eps: x.list.map(e => ({ k: epKey(e), t: e.title, d: e.date || '' })) })) }))));
+fs.writeFileSync(path.join(OUT, 'data/talk-eps.json'), JSON.stringify(PLAYLISTS.map(p => ({ id: p.id, name: p.name, subs: p.subs.map(x => ({ id: x.id, name: x.name, eps: [{ k: 's-' + x.id, t: `(시리즈 전체 자료) ${x.name}`, d: '', ser: 1 }, ...x.list.map(e => ({ k: epKey(e), t: e.title, d: e.date || '' }))] })) }))));
 fs.mkdirSync(path.join(OUT, 'data/audio'), { recursive: true });
 for (const [id, a] of Object.entries(AUDIO)) fs.writeFileSync(path.join(OUT, 'data/audio', id + '.json'), JSON.stringify({ book: id, voice: a.voice || '', chapters: a.chapters.map(c => ({ ...c, url: fileUrl(c.file) + '?v=' + (c.size || '') + (a.up && a.up[c.n] ? '-' + a.up[c.n] : '') }))  /* 같은 이름으로 새 파일을 올려도 옛 파일을 저장해 둔 기기·저장소가 새 파일을 받게 */ }));
 for (const [id, t] of Object.entries(TEXTS)) { const ix = indexOf(id); fs.writeFileSync(path.join(OUT, 'texts', id + '.json'), JSON.stringify({ book: id, edition: t.edition, pages: t.pages, toc: t.toc, ...(t.say ? { say: t.say } : {}), ...(t.ph ? { ph: t.ph } : {}), ...(t.table_dl ? { table_dl: t.table_dl } : {}), ...(t.fn_site ? { fn_site: t.fn_site } : {}), ...(t.p_site ? { p_site: pSiteOf(id) } : {}), ...(t.spread ? { spread: true } : {}), ...(t.center_heads ? { center_heads: true } : {}), ...(t.ly ? { ly: t.ly } : {}), ...(ix ? { index: { colnames: ix.colnames, parts: ix.parts } } : {}) })); }

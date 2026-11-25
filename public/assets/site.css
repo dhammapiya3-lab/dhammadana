@@ -1644,3 +1644,11 @@ nav.main a .ext{font-size:.92em;opacity:.75}
 /* 원서 순서 메모의 '원서 N쪽' 링크·문장마다 보기의 원서 쪽 (운영자 요청, 2026-11-25) */
 .par-note .par-ngo{font:inherit;color:inherit;text-decoration:underline;text-underline-offset:2px;background:none;border:0;padding:0;cursor:pointer}
 .par-sent .ps-pg{margin:.6em 0 .2em}
+/* 강의자료 모아 보기 (운영자 요청, 2026-11-25) — 재생목록 위쪽 */
+.mat-all{margin:8px 0 4px;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+.mat-all>summary{cursor:pointer;padding:8px 12px;font-weight:600;color:var(--robe)}
+.mat-all ul{list-style:none;margin:0;padding:0 12px 10px}
+.mat-all li{padding:5px 0;border-top:1px dashed var(--line)}
+.mat-all a{text-decoration:none;color:inherit;display:block}
+.mat-all a:hover .mt,.mat-all a:focus-visible .mt{text-decoration:underline}
+.mat-all .mk{display:inline-block;min-width:5.6em;font-size:13px;color:var(--robe);font-weight:600}

@@ -98,7 +98,7 @@
     </div>
     <div class="card" id="tmCard">
       <h2>📄 법문 강의자료 올리기</h2>
-      <p class="note">'법문 바로 듣기'의 강의(1강·2강…)마다 강의자료를 붙입니다. 재생목록 → 묶음 → 강의를 고른 뒤 파일을 올리면, 그 강의 줄에 <b>'📄 강의자료'</b> 내려받기 단추가 생깁니다(일반·단순 화면 모두, 1~2분 뒤). 한 강의에 여러 파일을 붙여도 되고, 같은 이름의 파일을 다시 올리면 새 파일로 바뀝니다. PDF·HWP·DOCX·PPTX·XLSX·ZIP·TXT·JPG·PNG. 이 책 고르기(위 1번)와는 상관없습니다.</p>
+      <p class="note">'법문 바로 듣기'의 강의(1강·2강…)마다 강의자료를 붙입니다. 재생목록 → 묶음 → 강의를 고른 뒤 파일을 올리면, 그 강의 줄에 <b>'📄 강의자료'</b> 내려받기 단추가 생깁니다(일반·단순 화면 모두, 1~2분 뒤). 시리즈 전체에 자료가 하나뿐이면 강의 칸에서 맨 위 <b>'📚 이 시리즈 전체 자료'</b>를 고르세요. 재생목록 위쪽 <b>'📄 강의자료 모아 보기'</b>에서 시리즈 자료와 강의마다의 자료를 한꺼번에 볼 수 있습니다. 한 강의에 여러 파일을 붙여도 되고, 같은 이름의 파일을 다시 올리면 새 파일로 바뀝니다. PDF·HWP·DOCX·PPTX·XLSX·ZIP·TXT·JPG·PNG. 이 책 고르기(위 1번)와는 상관없습니다.</p>
       <div class="row"><label for="tmPl">재생목록</label><select id="tmPl"><option value="">불러오는 중…</option></select></div>
       <div class="row"><label for="tmSub">묶음</label><select id="tmSub" disabled></select></div>
       <div class="row"><label for="tmEp">강의</label><select id="tmEp" disabled></select></div>
@@ -313,7 +313,7 @@ const tmE=()=>{ const s=tmS(); return s&&s.eps[+$('#tmEp').value]; };
 const tmMats=()=>{ const p=tmP(), e=tmE(); if(!p||!e) return []; const it=(TM.pl.items||[]).find(x=>x.id===p.id); return ((it&&it.materials)||[]).filter(m=>m&&String(m.ep)===e.k); };
 function tmHave(){
   const L=tmMats(), e=tmE();
-  $('#tmHave').innerHTML=!e?'':L.length?'이 강의에 붙은 강의자료: '+L.map((m,i)=>`<b>${esc(m.name)}</b> <button class="link-btn" data-tmdel="${i}">연결 빼기</button>`).join(' · '):'이 강의에는 아직 강의자료가 없습니다.';
+  $('#tmHave').innerHTML=!e?'':L.length?(e.ser?'이 시리즈 전체에 붙은 자료: ':'이 강의에 붙은 강의자료: ')+L.map((m,i)=>`<b>${esc(m.name)}</b> <button class="link-btn" data-tmdel="${i}">연결 빼기</button>`).join(' · '):e.ser?'이 시리즈에는 아직 시리즈 전체 자료가 없습니다.':'이 강의에는 아직 강의자료가 없습니다.';
   $('#tmHave').querySelectorAll('[data-tmdel]').forEach(b=>b.onclick=()=>tmUnlink(L[+b.dataset.tmdel]));
   tmUpd();
 }
@@ -321,7 +321,7 @@ function tmUpd(){ $('#tmGo').disabled=!(tmE()&&TMFILES.length); }
 $('#tmPl').onchange=()=>{ const p=tmP(); $('#tmSub').disabled=!p; $('#tmSub').innerHTML=p?p.subs.map((s,i)=>`<option value="${i}">${esc(s.name)} (${s.eps.length}개)</option>`).join(''):''; $('#tmSub').onchange(); };
 $('#tmSub').onchange=()=>{ const s=tmS(), p=tmP(); $('#tmEp').disabled=!s;
   const it=p&&(TM.pl.items||[]).find(x=>x.id===p.id), have=new Set(((it&&it.materials)||[]).map(m=>String(m.ep)));
-  $('#tmEp').innerHTML=s?'<option value="">— 강의를 고르세요 —</option>'+s.eps.map((e,i)=>`<option value="${i}">${i+1}. ${esc(e.t)}${e.d?' · '+esc(e.d):''}${have.has(e.k)?' 📄':''}</option>`).join(''):''; tmHave(); };
+  $('#tmEp').innerHTML=s?'<option value="">— 강의를 고르세요 —</option>'+s.eps.map((e,i)=>`<option value="${i}">${e.ser?'📚 이 시리즈 전체 자료 (강의 하나가 아니라 시리즈 전체에 붙임)':(s.eps[0].ser?i:i+1)+'. '+esc(e.t)}${e.d?' · '+esc(e.d):''}${have.has(e.k)?' 📄':''}</option>`).join(''):''; tmHave(); };
 $('#tmEp').onchange=tmHave;
 function tmSetFiles(list){
   const fs=[...list], bad=fs.filter(f=>!TM_EXT.test(f.name));
@@ -363,7 +363,7 @@ $('#tmGo').onclick=async()=>{
       `법문 강의자료 연결: ${p.id} ${e.t} — ${done.map(x=>x.name).join(', ')}`);
     if(!ok) throw new Error('파일은 올렸지만 강의에 연결하지 못했습니다. 관리자 화면 법문 재생목록의 \'강의자료\'에 '+done.map(x=>x.url).join(', ')+' 를 적어 주세요.');
     TMFILES=[]; $('#tmFile').value=''; $('#tmPicked').textContent='';
-    tmShow('ok',`다 됐습니다! 「${esc(e.t)}」에 강의자료 ${done.length}개를 붙였습니다.<br>1~2분 뒤 <a href="/dhammatalk/?pl=${esc(p.id)}" target="_blank" rel="noopener">법문 바로 듣기 ↗</a>의 그 강의 줄에 '📄 강의자료' 단추가 나타납니다.<br><b>관리자 화면이 다른 창에 열려 있다면, 법문 재생목록을 고치기 전에 꼭 새로고침(F5)해 주세요.</b>`);
+    tmShow('ok',`다 됐습니다! 「${esc(e.t)}」에 강의자료 ${done.length}개를 붙였습니다.<br>1~2분 뒤 <a href="/dhammatalk/?pl=${esc(p.id)}" target="_blank" rel="noopener">법문 바로 듣기 ↗</a>의 ${e.ser?'그 재생목록 위쪽 \'📄 강의자료 모아 보기\'에 나타납니다':'그 강의 줄에 \'📄 강의자료\' 단추가 나타나고, 재생목록 위쪽 \'📄 강의자료 모아 보기\'에도 들어갑니다'}.<br><b>관리자 화면이 다른 창에 열려 있다면, 법문 재생목록을 고치기 전에 꼭 새로고침(F5)해 주세요.</b>`);
     $('#tmSub').onchange();
   }catch(err){ tmShow('err',esc(err.message)); }
   finally{ $('#tmProg').hidden=true; tmUpd(); }
