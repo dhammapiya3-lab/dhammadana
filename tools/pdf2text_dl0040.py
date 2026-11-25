@@ -27,7 +27,7 @@ import fitz
 
 pdf = sys.argv[1]
 HWP = sys.argv[2] if len(sys.argv) > 2 else None
-BK, ED = 'DL-0040', '초판'
+BK, ED = 'DL-0040', '교정판'  # 2026-11-25 교정판이 지금 판
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 d = fitz.open(pdf)
 log = collections.Counter()

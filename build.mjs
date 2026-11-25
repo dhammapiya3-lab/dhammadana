@@ -84,7 +84,9 @@ const countriesOf = b => [...new Set([...[].concat(b.country || []), ...tIds(b).
 const tIds = b => [...new Set([b.teacher, ...(b.co_teachers || [])].filter(Boolean))];  // 스승 + 공동 저자 (운영자 요청, 2026-11-12)
 const providerById = id => PROVIDERS.find(p => p.id === id);
 const permById = id => PERMS.find(p => p.id === id);
-const curEd = b => (b.editions || []).find(e => e.current) || (b.editions || [])[0] || {};
+// '지금 판'이 여럿 켜져 있으면 목록에서 가장 뒤(가장 나중에 더한 최신판)를 씀 — 내려받기·책 소개 모두 (운영자 요청, 2026-11-25)
+const curEd = b => (b.editions || []).filter(e => e.current).pop() || (b.editions || [])[0] || {};
+const curLabels = b => (b.editions || []).filter(e => e.current).map(e => e.label);
 // 그림 크기(JPEG·PNG·WebP 머리만 읽음) — 가로로 긴 펼친 표지는 책 소개에서도 오른쪽 앞표지만 (운영자 요청, 2026-11-15)
 function imgSize(webPath) {
   try {
@@ -263,7 +265,7 @@ function dlName(b, e, kind) {
   const d = ymd((e[kind] || {}).created) || ymd(print ? e.file_created_print : e.file_created);
   return safeName(`${b.title}${tag}${d ? '_' + d : ''}`) + '.' + ext;
 }
-const hasText = b => { const e = curEd(b), t = TEXTS[b.id]; return !!(t && (!t.edition || t.edition === e.label)); };
+const hasText = b => { const e = curEd(b), t = TEXTS[b.id]; return !!(t && (!t.edition || t.edition === e.label || curLabels(b).includes(t.edition))); };
 // 법보시 도서관에 보일 책: 온라인 읽기나 내려받을 파일이 하나라도 있는 책 (없는 책은 我無말들 출판사 쪽에만)
 const LIB_OK = b => hasText(b) || formats(b).length > 0;
 // 점자 파일만 등록한 책(온라인 읽기·PDF 등 없이 점자 파일만)은 단순 화면 목록에만 보임 — 단순 화면을 만드는 동안만 LIB_SIMPLE 을 켬 (운영자 요청, 2026-11-20)
