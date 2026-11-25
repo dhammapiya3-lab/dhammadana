@@ -151,10 +151,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "none",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0040/DL-0040_교정판.pdf"
       },
       "pdf_print": {
         "mode": "none",
