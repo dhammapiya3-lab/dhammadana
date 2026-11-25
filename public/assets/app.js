@@ -1394,6 +1394,7 @@ function bindReader() {
     const tick = () => { if (!on || Date.now() - t0 > 3000) return stop(); place(); requestAnimationFrame(tick); };
     requestAnimationFrame(tick);
   };
+  R.findAt = findAt;   // 원서 순서 메모의 '원서 N쪽' 링크도 씀 (2026-11-25)
   bindFind();
   $$('[data-zoom-img]', el).forEach(b => b.onclick = () => zoomView(`<img src="${esc(b.dataset.zoomImg)}" alt="${esc(b.dataset.cap)}">`, b.dataset.cap || '그림'));
   $$('[data-zoom-tbl]', el).forEach(b => b.onclick = () => zoomView(b.parentElement.querySelector('table').outerHTML, '표'));
@@ -2862,6 +2863,9 @@ function parApply() {
   const oHtml = (t, h) => boldMark(esc(t)).replace(/\[\^([^\]\s]+)\]/g, (m, n) => `<sup class="par-fn" role="button" tabindex="0" data-ofn="${n}" aria-label="${esc(lang)} 원서 ${ofnLab(n)}">${ofnSup(n)}</sup>`).replace(/\n/g, '<br>');  // 원서 각주 번호 [^n] → 작은 위첨자, 누르면 원서 각주  // 원서 각주 번호 [^n] → 작은 위첨자
   const kHtml = t => fnMark(phMark(boldMark(esc(t.replace(/^## |^\^\^ |^:: |^>> |^\|\| |^\+\+ /gm, ''))))).replace(/\n/g, '<br>');
   const lang = { en: '영어', my: '미얀마어', pi: '빠알리어', th: '태국어' }[D.lang] || D.lang;
+  const pgLab = o => `${esc(lang)} 원서 ${esc(o.pg + '쪽')}${o.pdf && o.pdf !== o.pg ? ` (PDF ${esc(o.pdf)}쪽)` : ''}`;
+  // '원서와 순서가 다릅니다 — 원서 201쪽…' 메모의 '원서 201쪽'을 누르면 원서 차례로 그 앞뒤 글이 있는 곳으로 (운영자 요청, 2026-11-25)
+  const noteHtml = (g, gi) => `<p class="par-note" lang="ko">※ ${esc(g.note).replace(/원서 (?:『[^』]*』 )?[0-9]+쪽(?: ?\(PDF [0-9]+쪽\))?/, m => `<button type="button" class="par-ngo link" data-ngo="${gi}" title="원서 차례에서 이 글 앞뒤가 있는 곳으로 가기">${m}</button>`)}</p>`;
   rf.classList.add('par-on', R.parMode === 'para' && wide ? 'par2' : 'par1');
   if (R.parMode === 'para' && wide) rf.style.maxWidth = `calc(${R.mw}em * 2 + 3em)`;
   let shown = 0, lastPg = null;
@@ -2873,7 +2877,7 @@ function parApply() {
     const last = els[els.length - 1];
     if (R.parMode === 'para') {
       const box = document.createElement('div'); box.className = 'par-or'; box.lang = D.lang; box.dataset.g = gi;
-      box.innerHTML = g.or.map(i => { const o = O[i]; return `<p class="${o.k === 'h' ? 'par-h' : o.k === 'gl' ? 'par-gl' : o.k === 'cite' ? 'par-cite' : o.k === 'pv' ? 'par-pv' : ''}" data-o="${i}">${oHtml(o.t)}</p>`; }).join('') + (O[g.or[0]].pg !== lastPg && !g.note ? `<span class="par-pg" aria-hidden="true">${esc(lang)} 원서 ${esc(O[g.or[0]].pg ? O[g.or[0]].pg + '쪽' : '')}${O[g.or[0]].pdf && O[g.or[0]].pdf !== O[g.or[0]].pg ? ` (PDF ${esc(O[g.or[0]].pdf)}쪽)` : ''}</span>` : '') + (g.note ? `<p class="par-note" lang="ko">※ ${esc(g.note)}</p>` : '');   // 원서와 순서가 다른 짝 메모 (운영자 요청, 2026-11-17 — DL-0005)
+      box.innerHTML = g.or.map(i => { const o = O[i]; return `<p class="${o.k === 'h' ? 'par-h' : o.k === 'gl' ? 'par-gl' : o.k === 'cite' ? 'par-cite' : o.k === 'pv' ? 'par-pv' : ''}" data-o="${i}">${oHtml(o.t)}</p>`; }).join('') + (O[g.or[0]].pg !== lastPg && !g.note ? `<span class="par-pg" aria-hidden="true">${esc(lang)} 원서 ${esc(O[g.or[0]].pg ? O[g.or[0]].pg + '쪽' : '')}${O[g.or[0]].pdf && O[g.or[0]].pdf !== O[g.or[0]].pg ? ` (PDF ${esc(O[g.or[0]].pdf)}쪽)` : ''}</span>` : '') + (g.note ? noteHtml(g, gi) : '');   // 원서와 순서가 다른 짝 메모 (운영자 요청, 2026-11-17 — DL-0005)
       lastPg = O[g.or[g.or.length - 1]].pg;
       const vis = els.filter(e => e.getClientRects().length);   // 장 제목과 같아 숨긴 글(ch-dup)은 빼고
       if (wide && vis.length) {   // 넓은 화면: 같은 줄 오른쪽 칸 (한국어 문단 수만큼 줄을 차지)
@@ -2888,11 +2892,27 @@ function parApply() {
         const ko = p.ko.map(([k, a, b]) => parBal(kText(k), a, b)).join(' '), or = p.or.map(([i, a, b]) => parBal(O[i].t, a, b)).join(' ');
         const onlyHead = p.ko.length && p.ko.every(([k]) => heads.some(e => `${e.dataset.pg}:${e.dataset.s}` === k));
         const pk = p.ko.map(([k]) => k).join(' '), po = p.or.map(([i]) => i).join(' ');   // 찾기 결과에서 그 문단·원서 문단의 문장 줄을 찾을 수 있게 (2026-11-25)
-        return onlyHead ? (or ? `<div class="ps ps-hd" data-k="${pk}" data-o="${po}"><div class="ps-o" lang="${D.lang}">${oHtml(or)}</div></div>` : '') : `<div class="ps" data-k="${pk}" data-o="${po}">${ko ? `<div class="ps-k">${kHtml(ko)}</div>` : ''}${or ? `<div class="ps-o" lang="${D.lang}">${oHtml(or)}</div>` : ''}</div>`;
-      }).join('') + (g.note ? `<p class="par-note">※ ${esc(g.note)}</p>` : '');
+        const o0 = p.or.length ? O[p.or[0][0]] : null; let pl = '';
+        if (o0 && o0.pg && o0.pg !== lastPg && !g.note) pl = `<span class="par-pg ps-pg" aria-hidden="true">${pgLab(o0)}</span>`;   // 문장마다 보기에도 원서 쪽 (운영자 요청, 2026-11-25)
+        if (o0 && !g.note) lastPg = o0.pg;
+        return pl + (onlyHead ? (or ? `<div class="ps ps-hd" data-k="${pk}" data-o="${po}"><div class="ps-o" lang="${D.lang}">${oHtml(or)}</div></div>` : '') : `<div class="ps" data-k="${pk}" data-o="${po}">${ko ? `<div class="ps-k">${kHtml(ko)}</div>` : ''}${or ? `<div class="ps-o" lang="${D.lang}">${oHtml(or)}</div>` : ''}</div>`);
+      }).join('') + (g.note ? noteHtml(g, gi) : '');
       els.forEach(e => { if (!heads.includes(e)) e.classList.add('par-hide'); });
       last.after(box);
     }
+  });
+  $$('.par-ngo', rf).forEach(b => b.onclick = e => {
+    e.preventDefault(); e.stopPropagation();
+    const g = D.groups[+b.dataset.ngo]; if (!g || !g.or.length) return;
+    const own = {}; D.groups.forEach((x, xi) => { if (!x.toc && !x.note && x.ko.length) x.or.forEach(i => { if (!(i in own)) own[i] = xi; }); });
+    const lo = Math.min(...g.or), hi = Math.max(...g.or); let j = null;
+    for (let i = lo - 1; i >= 0; i--) if (i in own) { j = i; break; }
+    if (j == null) for (let i = hi + 1; i < O.length; i++) if (i in own) { j = i; break; }
+    if (j == null) return;
+    const [n, k] = D.groups[own[j]].ko[0].split(':').map(Number);
+    R.i = n - 1; R.hl = []; R.findTerms = []; stopSpeak(false); renderReader();
+    if (R.findAt) R.findAt(n, k, j);
+    toast(`원서 차례로 ${b.textContent} 앞뒤 글이 있는 곳입니다`);
   });
   // 쪽 아래 각주에도 원서 각주를 함께 (운영자 요청, 2026-11-20 — DL-0022 보디 스님 미주)
   if (D.fn) rf.querySelectorAll('p.fn').forEach(fp => {
