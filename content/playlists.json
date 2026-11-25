@@ -60,7 +60,15 @@
       "source": "팟빵 · 초기불전연구원",
       "podbbang": "1781648",
       "rss": "",
-      "episodes": []
+      "episodes": [],
+      "materials": [
+        {
+          "ep": "s-5038",
+          "title": "(시리즈 전체 자료) 초기불교교학과수행",
+          "name": "초기불교의교학과수행(불교tv강의자료).pdf",
+          "url": "talk/chogi/s-5038/초기불교의교학과수행(불교tv강의자료).pdf"
+        }
+      ]
     },
     {
       "id": "chogi-mahasati",
