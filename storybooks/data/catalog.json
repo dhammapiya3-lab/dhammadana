@@ -55542,6 +55542,10 @@
     {
      "story": "006-Devadhamma.htm",
      "label": "06 Devadhamma Jātaka"
+    },
+    {
+     "story": "007-Katthahari.htm",
+     "label": "07 Kaṭṭhahāri Jātaka"
     }
    ],
    "stories": {
@@ -56073,6 +56077,95 @@
       },
       {
        "img": "images/006-Devadhamma-29.jpg"
+      }
+     ]
+    },
+    "007-Katthahari.htm": {
+     "file": "007-Katthahari.htm",
+     "title": "07 Kaṭṭhahāri Jātaka",
+     "summary": "",
+     "intro": "",
+     "items": [
+      {
+       "img": "images/007-Katthahari-01.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-02.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-03.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-04.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-05.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-06.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-07.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-08.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-09.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-10.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-11.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-12.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-13.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-14.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-15.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-16.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-17.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-18.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-19.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-20.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-21.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-22.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-23.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-24.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-25.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-26.jpg"
+      },
+      {
+       "img": "images/007-Katthahari-27.jpg"
       }
      ]
     }
