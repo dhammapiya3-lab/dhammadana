@@ -61,7 +61,7 @@ def op_fullwidth(b):
 
 def op_quotes(b):
     out = []; n = 0
-    OPEN = set(' \t\n([{‘“-—/·')
+    OPEN = set(' \t\n([{‘“—/·')   # '-'(장음 표시) 뒤 따옴표는 닫는 따옴표
     for i, ch in enumerate(b):
         if ch in '"\'`':
             j = len(out)
