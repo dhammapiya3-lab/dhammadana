@@ -175,10 +175,10 @@
         "created": ""
       },
       "hwp": {
-        "mode": "file",
-        "url": "hwp/DL-0040/DL-0040_교정판.hwp",
         "site": "",
-        "created": "2026년 11월 28일"
+        "created": "2026년 11월 28일",
+        "mode": "file",
+        "url": "hwp/DL-0040/DL-0040_교정판.hwp"
       },
       "reader": false,
       "sources": [],
