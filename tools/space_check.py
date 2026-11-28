@@ -48,6 +48,11 @@ for pg, t in lines:
         if tk.tag.startswith('XS') and tk.form in ('적', '들'): pass
         w0 = re.search(r'(\S+)$', prev).group(1)
         w1 = re.match(r'\S+', t[tk.start:]).group(0)
+        # '문제들 이 10가지는'처럼 혼자 떨어진 '이·그·저' 뒤에 다른 말이 오면 조사가 아니라 가리키는 말(이 10가지)일 수 있음
+        #   → 붙이면 뜻이 바뀌므로 문맥을 읽고 정함 (쉼표를 넣어 '문제들, 이 10가지는'이 맞는 곳이 있음, 2026-11-28)
+        if w1 in ('이', '그', '저') and re.match(r'\s+\S', t[tk.start + len(w1):]):
+            rows.append(('①? 가리키는 말일 수 있음 — 문맥 확인', pg, f'{w0} {w1}', f'{w0}{w1} 또는 {w0}, {w1}', f'{tk.form}/{tk.tag}', t[max(0, tk.start - 25):tk.start + 20]))
+            continue
         rows.append(('① 붙여 쓸 곳', pg, f'{w0} {w1}', f'{w0}{w1}', f'{tk.form}/{tk.tag}', t[max(0, tk.start - 25):tk.start + 20]))
 
 # ② 바로 이어 되풀이된 낱말
