@@ -1,0 +1,452 @@
+[
+ {
+  "img": "images/01-02-The-Setting-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     284,
+     112,
+     520,
+     202
+    ],
+    "ko": "마니메칼라이:\n뿌하르의 서사시",
+    "cover": [
+     236,
+     218,
+     176
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     284,
+     202,
+     520,
+     380
+    ],
+    "ko": "삭까(인드라)의 큰 축제, 세속 기쁨의 허망함, 그리고 깨달음에 이르는 깊은 길을 그린 이야기",
+    "cover": [
+     236,
+     218,
+     176
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     98,
+     210,
+     512,
+     394
+    ],
+    "ko": "옛 도성의 명성을 드높이려고 승리한 쫄라 왕이 삭까(인드라)께 기도했습니다. 큰 신은 스무여드레 동안 이어지는 성대한 축제에 몸소 나타나 뿌하르를 빛내 주기로 했습니다.",
+    "cover": [
+     236,
+     218,
+     176
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     124,
+     560,
+     402
+    ],
+    "ko": "뿌하르는 위엄으로 가득했습니다. 궁극의 진리를 가르치는 스승들, 솜씨 좋은 점성가들, 왕의 대신들, 모습을 감춘 빛나는 신들이 모두 모였습니다. 도성은 하늘과 땅이 함께하는 축제의 중심이 되었습니다.",
+    "cover": [
+     236,
+     218,
+     176
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     356,
+     116,
+     612,
+     392
+    ],
+    "ko": "수호신들을 달래려고 병사와 기병들이 왕의 코끼리를 호위했습니다.\n\n번영을 알리는 왕의 북이 둥둥 울리며 온 나라에 큰 축제를 알렸습니다.",
+    "cover": [
+     236,
+     218,
+     176
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     244,
+     168,
+     596,
+     340
+    ],
+    "ko": "왕의 도성은 신들을 맞을 채비를 했습니다.\n• 거리에는 새 모래를 깔고\n• 성문은 깃발로 꾸미고\n• 금빛 신상들은 밝은 등불을 들고\n• 사원에는 진주를 드리웠습니다.",
+    "cover": [
+     236,
+     218,
+     176
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     356,
+     112,
+     616,
+     404
+    ],
+    "ko": "왕의 포고는 온 누리의 평화를 명했습니다.\n\n스무여드레 동안 오랜 원수들이 서로 용서했습니다. 신들과 사람들이 꽃동산과 작은 섬, 차일을 친 배움의 전당에서 기쁘게 어울렸습니다.",
+    "cover": [
+     236,
+     218,
+     176
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     240,
+     160,
+     584,
+     434
+    ],
+    "ko": "즐거운 축제 가운데에도 이름난 무희 마다위와 그 딸 마니메칼라이는 보이지 않았습니다. 두 사람이 수행자 차림을 했다는 데 놀라, 와산따말라가 그들이 왜 세상을 떠났는지 물으러 보내졌습니다.",
+    "cover": [
+     236,
+     218,
+     176
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     112,
+     332,
+     716,
+     444
+    ],
+    "ko": "와산따말라는 예술을 버린 마다위를 나무랐습니다. 마다위는 사랑하는 꼬왈란의 비참한 죽음이 자신을 무너뜨렸다고 대답했습니다. 그녀는 이제 도성의 칭찬도 세상의 부끄러움도 마음에 두지 않았습니다.",
+    "cover": [
+     236,
+     218,
+     176
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     160,
+     704,
+     410
+    ],
+    "ko": "마다위는 정절을 지킨 과부들의 길을 이야기했습니다. 꼬왈란의 아내 깐나끼가 불같은 슬픔으로 빤디야의 도성을 불태웠을 때, 마다위는 고요한 고행을 택해 수행의 기도로 몸을 닳게 했습니다.",
+    "cover": [
+     236,
+     218,
+     176
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     324,
+     714,
+     446
+    ],
+    "ko": "정절의 깐나끼가 낳은 딸로 여겨지는 마니메칼라이는 더 높은 길을 걸어야 했습니다. 마다위는 딸에게는 무희의 나쁜 삶이 아니라 오직 수행자의 맑은 삶이 맞는다고 선언했습니다.",
+    "cover": [
+     236,
+     218,
+     176
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     98,
+     486,
+     290
+    ],
+    "ko": "깊은 슬픔에 이끌린 마다위는 거룩한 이들의 수행처를 찾았습니다. 그녀는 존경받는 불교 선인 아라와나 아디갈의 발아래 엎드려 그를 유일한 구원자로 받아들였습니다.",
+    "cover": [
+     236,
+     218,
+     176
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     254,
+     110,
+     356,
+     140
+    ],
+    "ko": "집착",
+    "cover": [
+     22,
+     22,
+     62
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     474,
+     102,
+     536,
+     132
+    ],
+    "ko": "지복",
+    "cover": [
+     236,
+     218,
+     176
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     452,
+     240,
+     556,
+     268
+    ],
+    "ko": "놓아 버림",
+    "cover": [
+     22,
+     22,
+     62
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     262,
+     286,
+     346,
+     314
+    ],
+    "ko": "괴로움",
+    "cover": [
+     22,
+     22,
+     62
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     110,
+     328,
+     740,
+     446
+    ],
+    "ko": "선인은 궁극의 진리를 밝혔습니다.\n• 집착은 우리를 태어남과 커져 가는 괴로움의 굴레에 묶는다.\n• 놓아 버리면 다시 태어남이 끝나고, 끝없는 최고의 지복이 열린다.",
+    "cover": [
+     236,
+     218,
+     176
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     140,
+     488,
+     296
+    ],
+    "ko": "선인은 거룩한 계(sīla), 곧 바른 행실의 엄한 규율을 설했습니다. 그는 세속의 집착을 버리는 것만이 끝없는 슬픔에서 자신을 구하는 유일한 참된 길이라고 마다위에게 일러 주었습니다.",
+    "cover": [
+     236,
+     218,
+     176
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/01-02-The-Setting-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     228,
+     296,
+     704,
+     440
+    ],
+    "ko": "이 깊은 영적 깨달음을 이해하지 못한 와산따말라는 슬픔 속에 물러났습니다. 그녀는 헤아릴 수 없이 귀한 보석을 무정한 바다에 떨어뜨린 듯한 마음으로 떠나갔습니다.",
+    "cover": [
+     236,
+     218,
+     176
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
