@@ -1,12 +1,12 @@
-Manimekhalai 21-22-Conversion-of-the-Queen 11 장
+Manimekhalai 23-24-The-Queen-and-Karma 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 69 개 / 한글판 이야기 335 편
+R2 에 올림: 77 개 / 한글판 이야기 336 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1287710바이트
-이야기 Manimekhalai/21-22-Conversion-of-the-Queen {'pdf': 13350704, 'zip': 13083060, 'n': 11}
-책 Manimekhalai {'pdf': 165399196, 'pdfs': 17755139, 'zip': 165092299, 'stories': 12, 'n': 145}
+공개 주소 확인: 200 879144바이트
+이야기 Manimekhalai/23-24-The-Queen-and-Karma {'pdf': 15070376, 'zip': 14801618, 'n': 15}
+책 Manimekhalai {'pdf': 180206265, 'pdfs': 19335941, 'zip': 179893680, 'stories': 13, 'n': 160}
 내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 335 이야기
+글로 보기: 336 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
