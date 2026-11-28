@@ -19,6 +19,7 @@
   "paper": "",
   "paper_url": "",
   "stores": [],
+  "videos": [],
   "book_type": "해설서",
   "original_title": "",
   "original_language": [],
@@ -114,10 +115,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "2026년 11월 21일",
         "mode": "file",
-        "url": "pdf/DL-0038/DL-0038_개정판.pdf"
+        "url": "pdf/DL-0038/DL-0038_개정판.pdf",
+        "site": "",
+        "created": "2026년 11월 28일"
       },
       "pdf_print": {
         "mode": "none",
@@ -138,10 +139,10 @@
         "created": ""
       },
       "hwp": {
-        "site": "",
-        "created": "2026년 11월 21일",
         "mode": "file",
-        "url": "hwp/DL-0038/DL-0038_개정판.hwp"
+        "url": "hwp/DL-0038/DL-0038_개정판.hwp",
+        "site": "",
+        "created": "2026년 11월 28일"
       },
       "reader": false,
       "sources": [
