@@ -70,6 +70,12 @@ def apply(rs,H,DEL,INS,BLUE,INSBLUE,blue_map=None):
                 if q is None: q=min((posmap[x] for x in posmap if x>=p),default=len(new))
                 struct.pack_into('<I',ls,k*36,q)
             out[g[69]][2]=bytes(ls)
-        assert 70 not in g
+        if 70 in g:  # 문단 범위 태그(시작·끝·태그 12바이트씩) 자리도 옮김 (2026-11-28 DL-0042)
+            rt=bytearray(rs[g[70]][2])
+            def mp(p): return posmap[p] if p in posmap else min((posmap[x] for x in posmap if x>=p),default=len(new))
+            for k in range(len(rt)//12):
+                a,b=struct.unpack_from('<II',rt,k*12)
+                struct.pack_into('<II',rt,k*12,mp(a),mp(b))
+            out[g[70]][2]=bytes(rt)
         changed+=1
     return out,changed
