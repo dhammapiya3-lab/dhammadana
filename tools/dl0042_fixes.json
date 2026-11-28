@@ -1,5 +1,34 @@
 [
- {"p": ["6쪽"], "a": "mahā kruṇā", "b": "mahā karuṇā", "n": 1},
- {"p": ["168쪽"], "a": "anññathatā", "b": "anaññathatā", "n": 1},
- {"p": ["168쪽"], "a": "idapaccayatā", "b": "idappaccayatā", "n": 1}
+ {
+  "p": [
+   "6쪽"
+  ],
+  "a": "mahā kruṇā",
+  "b": "mahā karuṇā",
+  "n": 1
+ },
+ {
+  "p": [
+   "168쪽"
+  ],
+  "a": "anññathatā",
+  "b": "anaññathatā",
+  "n": 1
+ },
+ {
+  "p": [
+   "168쪽"
+  ],
+  "a": "idapaccayatā",
+  "b": "idappaccayatā",
+  "n": 1
+ },
+ {
+  "p": [
+   "44쪽"
+  ],
+  "a": "Diravaṁsa",
+  "b": "Dhīravaṁsa",
+  "n": 1
+ }
 ]
