@@ -262,6 +262,11 @@ for n in order:
     lab = f'{CHPG[n]}쪽' if n in CHPG else ''
     body += f"=== {lab} ===\n\n" + '\n\n'.join(pages[n]) + '\n\n'
 body = body.rstrip() + '\n'
+# 운영자가 정한 교정 (2026-11-29)
+FIXES = [('위빠사나를 처음 접하는 독자들에게 알려 드립니다.', '위빠사나를 처음 접하는 독자들에게 알려드립니다.')]
+for a, b in FIXES:
+    body = body.replace(a, b)
+    for t in toc: t['title'] = t['title'].replace(a, b)
 out = os.path.join(REPO, 'content/texts', f'{BK}.json')
 json.dump({'book': BK, 'edition': ED, 'toc': toc, 'images': [], 'body': body}, open(out, 'w'), ensure_ascii=False, indent=1)
 print('장', len(chapters), '소제목', len(subs), '쪽', len(order), '쪽 이름', len(CHPG), '미주', sum(len(v) for v in notes_out.values()), '나눔 표시', len(marks), '→', out)
