@@ -55538,6 +55538,10 @@
     {
      "story": "005-Tandulanali.htm",
      "label": "05 Taṇḍulanāḷi Jātaka"
+    },
+    {
+     "story": "006-Devadhamma.htm",
+     "label": "06 Devadhamma Jātaka"
     }
    ],
    "stories": {
@@ -55974,6 +55978,101 @@
       },
       {
        "img": "images/005-Tandulanali-23.jpg"
+      }
+     ]
+    },
+    "006-Devadhamma.htm": {
+     "file": "006-Devadhamma.htm",
+     "title": "06 Devadhamma Jātaka",
+     "summary": "",
+     "intro": "",
+     "items": [
+      {
+       "img": "images/006-Devadhamma-01.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-02.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-03.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-04.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-05.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-06.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-07.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-08.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-09.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-10.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-11.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-12.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-13.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-14.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-15.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-16.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-17.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-18.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-19.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-20.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-21.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-22.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-23.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-24.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-25.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-26.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-27.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-28.jpg"
+      },
+      {
+       "img": "images/006-Devadhamma-29.jpg"
       }
      ]
     }
