@@ -130,5 +130,8 @@
   "order": null,
   "hidden": false,
   "no_copy": false,
-  "hide_update": false
+  "hide_update": false,
+  "trad_hide": [
+    "shweoomin"
+  ]
 }

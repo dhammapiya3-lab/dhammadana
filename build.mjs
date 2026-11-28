@@ -79,6 +79,8 @@ const tradById = id => TRADS.find(t => t.id === id);
 const tradOfTeacher = id => tradById(teacherById(id)?.tradition);
 const tradIdsOf = x => x ? [x.tradition, ...(x.traditions_also || [])].filter(Boolean) : [];  // 수행전통 여럿 (traditions_also — 운영자 요청 2026-11-17, 예: 묘원 법사 = 마하시·쉐우민)
 const tradsOfTeacher = id => tradIdsOf(teacherById(id)).map(tradById).filter(Boolean);
+// 책의 수행전통 = 스승들의 수행전통 − 책 JSON trad_hide [전통 아이디…] (운영자 요청, 2026-11-28: 『대념처경』은 묘원 법사의 쉐우민 전통에서 뺌)
+const bookTradIds = b => [...new Set(tIds(b).flatMap(x => tradIdsOf(teacherById(x))))].filter(t => !(b.trad_hide || []).includes(t));
 // 국가·지역 (도서관 찾아보기의 따로 된 칸, 스승 목록의 country 로 — 운영자 요청, 2026-11-15)
 const COUNTRIES = ['한국', '서양', '미얀마', '태국', '스리랑카', '인도'];
 const countriesOf = b => [...new Set([...[].concat(b.country || []), ...tIds(b).flatMap(id => [].concat(teacherById(id)?.country || []))])];  // 책에 따로 정한 것(country) + 스승의 것
@@ -619,7 +621,7 @@ function coverCard(b) {
   const f = formats(b), fc = fmtsCard(b);
   const tr = b.teacher ? tradOfTeacher(b.teacher) : null;
   const al = [!f.length ? '준비 중' : '', b.title, (b.byline || '') + (b.translator ? ' | ' + b.translator : ''), pubLine(b), fc.map(x => x.k + (x.ext ? ' ↗' : '')).join(' ')].filter(Boolean).join(' ');  // 보이는 글과 같은 순서·글자(음성 조작에도 맞게)  // 화면 낭독기가 카드 하나를 한 번에 읽게 (2026-11-17)
-  return `<a class="book" href="/book/${b.id}/" aria-label="${esc(al)}" data-book="${b.id}" data-trad="${esc([...new Set(tIds(b).flatMap(id => tradsOfTeacher(id).map(x => x.id)))].join('|'))}" data-teacher="${esc(tIds(b).join('|'))}" data-region="${esc(countriesOf(b).join('|'))}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(fc.map(x => x.k).join('|'))}" data-lang="${esc(langsOf(b).join('|'))}" data-btype="${esc(b.book_type || '')}" data-pub="${esc(pubsAll(b).map(x => x.key).join('|'))}" data-person="${esc(peopleOf(b).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}" data-ord="${LIB_ORD().get(b.id) ?? ''}" data-author="${esc(authorName(b))}">
+  return `<a class="book" href="/book/${b.id}/" aria-label="${esc(al)}" data-book="${b.id}" data-trad="${esc(bookTradIds(b).join('|'))}" data-teacher="${esc(tIds(b).join('|'))}" data-region="${esc(countriesOf(b).join('|'))}" data-topics="${esc((b.topics || []).join('|'))}" data-main="${esc((b.main || []).join('|'))}" data-fmts="${esc(fc.map(x => x.k).join('|'))}" data-lang="${esc(langsOf(b).join('|'))}" data-btype="${esc(b.book_type || '')}" data-pub="${esc(pubsAll(b).map(x => x.key).join('|'))}" data-person="${esc(peopleOf(b).join('|'))}" data-title="${esc(b.title)}" data-added="${esc(b.added || '')}" data-ord="${LIB_ORD().get(b.id) ?? ''}" data-author="${esc(authorName(b))}">
   <div class="cover">${!f.length ? '<span class="soon">준비 중</span>' : ''}${b.cover ? `<img class="cover-img" src="${esc(b.cover)}" alt="${esc(b.title)} 표지" loading="lazy"${ctrCover(b.cover)}>` : `<div class="cover-ph">${esc(b.title)}</div>`}</div>
   <div class="t">${esc(b.title)}</div> <div class="a">${esc(b.byline)}${b.translator ? ' | ' + esc(b.translator) : ''}</div>${pubLine(b) ? ` <div class="a publ">${esc(pubLine(b))}</div>` : ''}
   ${f.length ? ` <div class="fmt">${fc.map(x => `<span>${x.k}${x.ext ? ' ↗' : ''}</span>`).join(' ')}</div>` : ''}</a>`;
@@ -627,7 +629,7 @@ function coverCard(b) {
 const countTopic = t => LIB().filter(b => (b.topics || []).includes(t)).length;
 const countMain = t => LIB().filter(b => (b.main || []).includes(t)).length;
 const countTeacher = id => LIB().filter(b => tIds(b).includes(id)).length;
-const countTrad = id => LIB().filter(b => tIds(b).some(x => tradIdsOf(teacherById(x)).includes(id))).length;
+const countTrad = id => LIB().filter(b => bookTradIds(b).includes(id)).length;
 
 /* ---------- 페이지 ---------- */
 const pages = {};
@@ -1180,7 +1182,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
   for (const t of tList) sBooksPage(`simple/teacher/${t.id}/index.html`, { title: t.name, path: [['스승별로 보기', '/simple/teachers/'], [t.name, '']], up: '/simple/teachers/', normal: `/teacher/${t.id}/`, books: lib.filter(b => tIds(b).includes(t.id)) });
   sFolderPage('simple/trads/index.html', { title: '수행전통별로 보기', path: [['수행전통별로 보기', '/simple/trads/']], up: '/simple/', normal: '/library/', what: '전통',
     rows: trList.map(t => F(`${t.region} ${t.name}`, `/simple/trad/${t.id}/`, `책 ${countTrad(t.id)}권`)) });
-  for (const t of trList) sBooksPage(`simple/trad/${t.id}/index.html`, { title: `${t.region} ${t.name}`, path: [['수행전통별로 보기', '/simple/trads/'], [t.name, '']], up: '/simple/trads/', normal: `/library/?trad=${t.id}`, books: lib.filter(b => tIds(b).some(x => tradIdsOf(teacherById(x)).includes(t.id))) });
+  for (const t of trList) sBooksPage(`simple/trad/${t.id}/index.html`, { title: `${t.region} ${t.name}`, path: [['수행전통별로 보기', '/simple/trads/'], [t.name, '']], up: '/simple/trads/', normal: `/library/?trad=${t.id}`, books: lib.filter(b => bookTradIds(b).includes(t.id)) });
   sFolderPage('simple/pubs/index.html', { title: '출판사·단체별로 보기', path: [['출판사·단체별로 보기', '/simple/pubs/']], up: '/simple/', normal: '/library/', what: '출판사·단체',
     rows: pList.map((p, i) => F(p.name, `/simple/pub/${i + 1}/`, `책 ${p.n}권`, '🏛')) });
   pList.forEach((p, i) => sBooksPage(`simple/pub/${i + 1}/index.html`, { title: p.name, path: [['출판사·단체별로 보기', '/simple/pubs/'], [p.name, '']], up: '/simple/pubs/', normal: pubHref(p.key), books: lib.filter(b => pubsAll(b).some(x => x.key === p.key)) }));

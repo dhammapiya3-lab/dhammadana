@@ -64,6 +64,17 @@ collections:
         multiple: true
         required: false
       - { name: country, label: 국가·지역 (책), widget: select, multiple: true, required: false, options: ["한국", "서양", "미얀마", "태국", "스리랑카", "인도"], hint: "스승 목록에 없는 단체·저자의 책 등, 책을 도서관 찾아보기 '국가 · 지역'에 따로 넣을 때 고릅니다. 스승의 국가·지역은 저절로 들어갑니다." }
+      - name: trad_hide
+        label: 이 책을 넣지 않을 수행전통
+        required: false
+        hint: "스승이 두 전통에 함께 분류되어 있어도 이 책만은 고른 전통의 책 목록에서 뺍니다 (예: 『대념처경』은 쉐우민 전통에서 뺌)."
+        widget: relation
+        collection: lists
+        file: traditions
+        multiple: true
+        value_field: "items.*.id"
+        search_fields: ["items.*.name"]
+        display_fields: ["items.*.name"]
       - name: provider
         label: 자료 제공처
         widget: relation
