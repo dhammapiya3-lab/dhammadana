@@ -1,7 +1,7 @@
 {
   "id": "DL-0042",
   "title": "테라와다 불교의 신행생활 (녹취 법문집)",
-  "subtitle": "",
+  "subtitle": "테라와다 불교의범 및 신행생활",
   "cover": "/uploads/테라와다 불교의 신행생활_표지(A4).jpg",
   "byline": "아짠 빤냐와로 마하테로 법문",
   "translator": "",
@@ -61,10 +61,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "pdf/DL-0042/DL-0042_초판.pdf"
+        "url": "pdf/DL-0042/DL-0042_초판.pdf",
+        "site": "",
+        "created": ""
       },
       "pdf_print": {
         "mode": "none",
@@ -85,10 +85,10 @@
         "created": ""
       },
       "hwp": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "hwp/DL-0042/DL-0042_초판.hwp"
+        "url": "hwp/DL-0042/DL-0042_초판.hwp",
+        "site": "",
+        "created": ""
       },
       "reader": false,
       "sources": [
