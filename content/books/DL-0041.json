@@ -80,10 +80,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "file",
-        "url": "pdf/DL-0041/DL-0041_초판.pdf",
         "site": "",
-        "created": "2026년 11월 23일"
+        "created": "2026년 11월 23일",
+        "mode": "file",
+        "url": "pdf/DL-0041/DL-0041_초판.pdf"
       },
       "pdf_print": {
         "mode": "none",
