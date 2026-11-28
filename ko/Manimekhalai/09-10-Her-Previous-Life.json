@@ -1,0 +1,412 @@
+[
+ {
+  "img": "images/09-10-Her-Previous-Life-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     126,
+     344,
+     674,
+     434
+    ],
+    "ko": "마니메칼라이: 전생의 환영\n따밀 불교 서사시 제9·10편",
+    "cover": [
+     60,
+     14,
+     20
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-10-Her-Previous-Life-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     324,
+     738,
+     358
+    ],
+    "ko": "거룩한 자리",
+    "cover": [
+     20,
+     54,
+     40
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     62,
+     358,
+     738,
+     408
+    ],
+    "ko": "거룩한 자리를 본 마니메칼라이는 기뻐 울었습니다. 그녀는 자리를 세 번 돌고 절했습니다. 그러자 곧 시간의 장막이 걷히고 자신의 전생이 또렷이 떠올랐습니다.",
+    "cover": [
+     20,
+     54,
+     40
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-10-Her-Previous-Life-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     10,
+     362,
+     790,
+     396
+    ],
+    "ko": "이다와얌의 몰락",
+    "cover": [
+     20,
+     54,
+     40
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     10,
+     396,
+     790,
+     440
+    ],
+    "ko": "전생에 브라흐마 담마는 앗띠빠띠 왕에게 지진이 닥치리라고 경고했습니다. 꼭 이레 뒤 땅이 갈라져, 왕의 도성과 사백 요자나의 땅이 바다에 잠겼습니다.",
+    "cover": [
+     20,
+     54,
+     40
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-10-Her-Previous-Life-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     70,
+     384,
+     100
+    ],
+    "ko": "남편의 죽음",
+    "cover": [
+     20,
+     54,
+     40
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     100,
+     100,
+     384,
+     250
+    ],
+    "ko": "마니메칼라이는 자신의 비참했던 최후를 떠올렸습니다. 전생의 남편 라훌라는 열엿새째 되는 날 독사의 눈길에 목숨을 잃었습니다.\n\n상심한 그녀는 그를 따라 화장 불길에 뛰어들었습니다.",
+    "cover": [
+     20,
+     54,
+     40
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-10-Her-Previous-Life-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     66,
+     400,
+     96
+    ],
+    "ko": "여신과의 만남",
+    "cover": [
+     20,
+     54,
+     40
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     100,
+     96,
+     400,
+     250
+    ],
+    "ko": "마니메칼라 여신이 하늘에서 내려와 소녀를 찬탄했습니다.\n\n“너는 좋은 가르침에 귀 막은 세상에 법(Dhamma)이 널리 퍼지게 하려고 태어난, 찬란한 아침 해와 같구나.”",
+    "cover": [
+     20,
+     54,
+     40
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-10-Her-Previous-Life-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     116,
+     306,
+     690,
+     446
+    ],
+    "ko": "업의 인연\n라훌라 → 다시 태어나 우다야꾸마라 왕자\n이 업의 인연이 왕자의 깊은 연정과 그녀에게 남은 집착을 설명해 줍니다. 그녀의 길을 지키려고 여신은 그녀를 이 섬으로 데려왔습니다.",
+    "cover": [
+     20,
+     54,
+     40
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-10-Her-Previous-Life-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     16,
+     270,
+     330,
+     304
+    ],
+    "ko": "보시의 힘",
+    "cover": [
+     20,
+     54,
+     40
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     16,
+     304,
+     330,
+     440
+    ],
+    "ko": "어찌하여 이렇게 복된 몸으로 다시 태어났을까요? 연인끼리 다투었는데도 그들은 하늘을 나는 성자 사두 삭까란께 공손히 음식을 올렸습니다. 이렇게 쌓은 공덕이 마침내 그녀를 윤회에서 벗어나게 할 것입니다.",
+    "cover": [
+     20,
+     54,
+     40
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-10-Her-Previous-Life-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     100,
+     370,
+     700,
+     404
+    ],
+    "ko": "연꽃 발자국",
+    "cover": [
+     20,
+     54,
+     40
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     100,
+     404,
+     700,
+     448
+    ],
+    "ko": "전생의 두 언니는 산 위에 영원히 남은 부처님의 발자국에 예배했습니다. 그 공덕으로 그들은 지금의 어머니와 벗 수따마띠로 다시 태어났습니다.",
+    "cover": [
+     20,
+     54,
+     40
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-10-Her-Previous-Life-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     322,
+     680,
+     356
+    ],
+    "ko": "여신의 선물",
+    "cover": [
+     20,
+     54,
+     40
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     120,
+     356,
+     680,
+     448
+    ],
+    "ko": "여행을 도우려고 여신은 거룩한 주문 셋을 내려 주었습니다.\n1. 하늘을 나는 힘\n2. 마음대로 모습을 바꾸는 힘\n3. 몸의 굶주림을 완전히 이기는 힘",
+    "cover": [
+     20,
+     54,
+     40
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/09-10-Her-Previous-Life-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     340,
+     652,
+     368
+    ],
+    "ko": "길을 받아들이다",
+    "cover": [
+     30,
+     24,
+     56
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     150,
+     368,
+     652,
+     446
+    ],
+    "ko": "“부처님께서 가르치신 법의 길을 따르라.”\n전생을 알고 굶주림을 떨치고 마음에 힘을 얻은 그녀는 다른 가르침을 따르는 이들과 마주할 채비를 했습니다.",
+    "cover": [
+     30,
+     24,
+     56
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ }
+]
