@@ -741,7 +741,7 @@ async function initReaderPage() {
      // say: 그림·표를 소리로 읽을 글 (그림 주소 → 글, 운영자 요청 2026-11-10)
    
     i: Math.min(Math.max(want || (last > 1 ? last : 0) || firstContent(pages, man.toc || []), 1), pages.length) - 1,
-    view: 'text', zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), bold: store.get('rbold', false), lh: store.get('rlh', 1.9), font: RFONTS.some(f => f[0] === store.get('rfont', 'serif')) ? store.get('rfont', 'serif') : 'serif', mw: store.get('rmw', 36), spread: store.get('rspread2-' + id, !!man.spread), centerHeads: !!man.center_heads,  // 텍스트 JSON center_heads: 본문 소제목(## )을 가운데로 — 『불자수첩』 (운영자 요청, 2026-11-16)
+    view: 'text', zoom: store.get('rzoom', 1), fs: store.get('rfs', 1), bold: store.get('rbold', false), lh: store.get('rlh', 1.9), font: RFONTS.some(f => f[0] === store.get('rfont', 'serif')) ? store.get('rfont', 'serif') : 'serif', mw: store.get('rmw', 36), spread: store.get('rspread2-' + id, !!man.spread), centerHeads: !!man.center_heads, spkSmall: !!man.spk_small,  // 텍스트 JSON spk_small: §§말하는 이§§ 를 인쇄본처럼 작은 보통 글씨로 — 『쉐우민의 스승들』 (운영자 요청, 2026-11-28) // 텍스트 JSON center_heads: 본문 소제목(## )을 가운데로 — 『불자수첩』 (운영자 요청, 2026-11-16)
      // 책마다 따로 — 『테라와다 불교의범』처럼 spread 가 있는 책은 처음부터 양쪽으로, 다른 책은 한쪽씩 (운영자 요청, 2026-11-14)
    
     hl: hlp ? hlp.split('|').filter(Boolean) : [], speaking: false,
@@ -1034,7 +1034,7 @@ function reflowHtml() {
   const nav = `<nav class="ch-nav" aria-label="장 이동">${ci > 0 ? `<button class="tbtn" data-go="${cs[ci - 1].from}" data-ci="${ci - 1}">← ${esc(cs[ci - 1].title || '이전 장')}</button>` : '<span></span>'}${ci < cs.length - 1 ? `<button class="tbtn" data-go="${cs[ci + 1].from}" data-ci="${ci + 1}">${esc(cs[ci + 1].title || '다음 장')} →</button>` : '<span></span>'}</nav>`;
   // 장 제목과 같아 숨긴 본문 제목에 각주 번호가 붙어 있으면(예: '보시의 실천⁷') 위의 큰 장 제목에 그 번호를 붙여 보임 (2026-11-11)
   const dupFn = [...body.matchAll(/<p [^>]*class="ch-dup"[^>]*>(.*?)<\/p>/g)].flatMap(m => m[1].match(/<sup class="fn-ref"[^>]*>[^<]*<\/sup>/g) || []).join('');
-  return `<div class="reflow ${fontCls()}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}${spreadOn() ? ' spread' : ''}${R.centerHeads ? ' chead' : ''}${layCls()}" style="--fs:${R.fs};--fnfs:${fnfsNow()};--lh:${R.lh};--mw:${R.mw}em;--pgap:${pgapNow()}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${boxNum(esc(c.title))}${dupFn}</h3></div>` : ''}${spreadOn() ? `<div class="spr">${body}</div>` : body}${nav}</div>`;
+  return `<div class="reflow ${fontCls()}${R.bold ? ' bold' : ''}${R.fs >= 1.75 ? ' big' : ''}${spreadOn() ? ' spread' : ''}${R.centerHeads ? ' chead' : ''}${R.spkSmall ? ' spks' : ''}${layCls()}" style="--fs:${R.fs};--fnfs:${fnfsNow()};--lh:${R.lh};--mw:${R.mw}em;--pgap:${pgapNow()}em">${c.title ? `<div class="ch-head"><span class="small muted">${ci + 1} / ${cs.length}</span><h3>${boxNum(esc(c.title))}${dupFn}</h3></div>` : ''}${spreadOn() ? `<div class="spr">${body}</div>` : body}${nav}</div>`;
 }
 // 이 장 안의 소제목 자리(화면의 문단) 목록
 // 굵은 글씨 한 줄만으로 된 짧은 문단(예: '[1. 사성제]', '수행이란 무엇인가?')도 소제목으로 봄 — 문장(. ! 로 끝남)·따옴표·괄호로 시작하는 강조 글은 빼고
@@ -3611,7 +3611,7 @@ async function initSimpleRead() {
   const id = root.dataset.book, title = root.dataset.title;
   let man; try { man = await manifest(root.dataset.manifest); } catch (e) { root.innerHTML = '<p>읽기 자료를 불러오지 못했습니다. 잠시 뒤 다시 열어 주세요.</p>'; return; }
   const pages = man.pages.map((p, i) => ({ n: i + 1, label: p.label || '', img: '', big: '', text: p.text || '' }));
-  SR.r = { id, title, by: root.dataset.by, pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, fnSite: man.fn_site || {}, pSite: man.p_site || [], spreadOk: false, spread: false, ly: null, i: 0, view: 'text', zoom: 1, fs: 1, bold: false, lh: 1.9, font: 'serif', mw: 40, centerHeads: !!man.center_heads, hl: [], speaking: false, par: [], parMode: 'off', parD: null, parEd: [], ix: man.index || null, ixPart: 0, ixQ: '', simple: true };
+  SR.r = { id, title, by: root.dataset.by, pages, toc: man.toc || [], say: man.say || {}, ph: man.ph || null, tdl: man.table_dl || {}, fnSite: man.fn_site || {}, pSite: man.p_site || [], spreadOk: false, spread: false, ly: null, i: 0, view: 'text', zoom: 1, fs: 1, bold: false, lh: 1.9, font: 'serif', mw: 40, centerHeads: !!man.center_heads, spkSmall: !!man.spk_small, hl: [], speaking: false, par: [], parMode: 'off', parD: null, parEd: [], ix: man.index || null, ixPart: 0, ixQ: '', simple: true };
   SR.id = id; SR.title = title; SR.cs = withR(() => chapters());
   if (!SR.scrollHook) { SR.scrollHook = 1; let tt = 0; addEventListener('scroll', () => { if (SR.speaking || scrollY <= 40 || !$('#sRead .s-text')) return; clearTimeout(tt); tt = setTimeout(() => { const head = (STALK.el && STALK.el.isConnected ? STALK.el.getBoundingClientRect().bottom : sBarH()) + 4; const el = $$('.s-text [data-pg][data-s]').find(x => x.getBoundingClientRect().bottom > head); if (el) SR.anchor = +el.dataset.pg; }, 250); }, { passive: true }); }  // 마지막으로 보던 쪽
   const q = new URLSearchParams(location.search), c = +q.get('c') || 0, listen = q.has('listen'), audio = q.has('audio') && root.dataset.audio;

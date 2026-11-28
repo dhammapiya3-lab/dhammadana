@@ -13,6 +13,7 @@
   13pt 법어록 번호 → ## N (목차에는 넣지 않음), 12pt '1. 마음가짐' → ## (읽기 목차 소제목).
 - '＊ …'·'* …' 7pt 주석 문단 → 각주 [^*k]: (본문의 '*' 표시를 [^*k] 로). 본문에 '*' 가 없는 주석은 그 자리 문단에 남김.
 - 한글 파일의 편집 표시 '(교체)'·'사진'·'(사진)'(사진 넣을 자리 — 인쇄본에는 사진)은 넣지 않음.
+- 문답의 말하는 이 표시(작은 글씨 '수행자'·'사야도'·'통역'·'수행자 일동')는 §§…§§, 텍스트 JSON spk_small: true 로 화면에서 인쇄본처럼 작은 글씨.
 - 굵게 **…**. 글자는 한글 파일 그대로 (U+3000 은 빈칸, 줄 끝 빈칸은 뺌).
 """
 import sys, os, re, json, bisect, collections
@@ -124,6 +125,7 @@ def add(n, s, kind=None):
 
 PARTS = {'우 꼬살라 사야도 법어록', '우 꼬살라 사야도 법문', '우 떼자니아 사야도 법문', '우 떼자니아 사야도의 수행문답'}
 SKIP = {'(교체)', '사진', '(사진)'}
+SPK = {'수행자', '사야도', '통역', '수행자 일동'}
 toc_rows, notes, skipped = [], [], []
 fnk = 0
 last = None   # (쪽, 문단 번호, 모양) — 바로 앞에 넣은 문단
@@ -135,6 +137,13 @@ for i, q in enumerate(P):
     pt = plain(marked(q)).strip()
     if pt in SKIP: skipped.append((n + OFF, pt)); last = None; continue
     s = marked(q)
+    # 문답의 말하는 이 표시(인쇄본에서 9.6pt 작은 글씨 '수행자'·'사야도'·'통역'·'수행자 일동') → §§…§§ (운영자 요청, 2026-11-28)
+    lead = ''
+    for st, cid in q['segs']:
+        if cid and csf(cid)[0] < 1000: lead += st
+        else: break
+    if lead.strip() in SPK and lead.strip() != pt:
+        s = re.sub(r'^(\s*)' + re.escape(lead.strip()), lambda m: m.group(1) + '§§' + lead.strip() + '§§', s, count=1)
     key = (q['align'], q['ml'], q['ind'])
     if n == 1:
         add(n, ('^^ ' if pt == '쉐우민의 스승들' else ':: ') + pt); continue
@@ -203,7 +212,7 @@ for n in order:
     body += f"=== {lab} ===\n\n" + '\n\n'.join(pages[n]) + '\n\n'
 body = body.rstrip() + '\n'
 out = os.path.join(REPO, 'content/texts', f'{BK}.json')
-json.dump({'book': BK, 'edition': ED, 'toc': toc, 'images': [], 'body': body}, open(out, 'w'), ensure_ascii=False, indent=1)
+json.dump({'book': BK, 'edition': ED, 'spk_small': True, 'toc': toc, 'images': [], 'body': body}, open(out, 'w'), ensure_ascii=False, indent=1)
 print('장', len(chapters), '소제목', len(subs), '쪽', len(order), '각주', fnk, '→', out)
 print('넣지 않은 편집 표시:', skipped)
 print('본문 표시를 못 찾은 주석:', unmatched)
