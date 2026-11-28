@@ -1,0 +1,677 @@
+[
+ {
+  "img": "images/27-28-Dharma-and-Compassion-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     58,
+     326,
+     748,
+     376
+    ],
+    "ko": "마니메칼라이의 두 길",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     58,
+     376,
+     748,
+     444
+    ],
+    "ko": "지혜와 자비, 그리고 붓다의 진리\n따밀 서사시 제27·28편 이야기",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-28-Dharma-and-Compassion-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     246,
+     322,
+     556,
+     352
+    ],
+    "ko": "완지의 모임",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     246,
+     352,
+     556,
+     448
+    ],
+    "ko": "궁극의 진리를 찾아 마니메칼라이는 여덟 학파의 스승들을 찾아갔습니다. 그녀는 논리와 창조와 물질에 관한 그들의 정교한 이론을 들었습니다.",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-28-Dharma-and-Compassion-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     342,
+     652,
+     444
+    ],
+    "ko": "• 웨다론자: 열 가지 앎의 수단으로 진리를 안다.\n• 브라흐마론자: 우주는 으뜸가는 우주의 알에서 나왔다.\n• 시와론자: 두 빛과 다섯 원소가 창조신의 놀이를 따른다.",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-28-Dharma-and-Compassion-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     90,
+     516,
+     430
+    ],
+    "ko": "• 아지와까: 원소는 변하지 않고, 운명 자체가 원자이다. 순백의 태어남이 해탈을 가져온다.\n\n• 니간타: 물질은 속박과 해탈을 거치며 영원하고도 무상하게 변한다.",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-28-Dharma-and-Compassion-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     326,
+     654,
+     356
+    ],
+    "ko": "분석가와 유물론자",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     156,
+     356,
+     654,
+     444
+    ],
+    "ko": "상키야는 자연의 전개를 그려 내고, 와이셰시까는 아홉 가지 영원한 실체를 나눕니다. 부따론자는 의식이 원소가 섞여 생길 뿐이라고 말합니다. 흑설탕이 발효하듯이.",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-28-Dharma-and-Compassion-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     106,
+     664,
+     176
+    ],
+    "ko": "헛된 말을 물리치다",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     430,
+     176,
+     664,
+     404
+    ],
+    "ko": "자신의 전생을 실제로 안 마니메칼라이는 웃었습니다.\n\n궁극의 진리를 모르는 이 정교한 이론과 유물론의 부정은 그저 미혹일 뿐이었습니다.",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-28-Dharma-and-Compassion-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     104,
+     334,
+     178
+    ],
+    "ko": "진리의 안식처",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     104,
+     178,
+     334,
+     424
+    ],
+    "ko": "위하라 안에서 그녀는 꼬왈란의 아버지를 만났습니다. 뿌하르가 무너지자 재산을 버린 그는 거룩한 법의 길을 따르고 있었습니다.",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-28-Dharma-and-Compassion-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     330,
+     654,
+     364
+    ],
+    "ko": "왕들의 업",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     156,
+     364,
+     654,
+     448
+    ],
+    "ko": "스님은 지난 공덕이 지금의 복을 정한다고 들려주었습니다. 쩨라 왕은 성자들의 발을 씻었고, 꼬왈란의 조상은 큰 흰 탑을 세웠습니다.",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-28-Dharma-and-Compassion-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     322,
+     654,
+     356
+    ],
+    "ko": "꼬왈란의 운명",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     156,
+     356,
+     654,
+     440
+    ],
+    "ko": "쌓은 공덕으로 꼬왈란과 그 아내는 거룩한 도성 까삘라왓투에 다시 태어나, 부처님의 가르침을 듣고 열반(Nibbāna)을 얻을 것입니다.",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-28-Dharma-and-Compassion-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     412,
+     66,
+     714,
+     100
+    ],
+    "ko": "스승의 부름",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     412,
+     100,
+     714,
+     218
+    ],
+    "ko": "아라와나 아디갈은 깐찌로 갔지만, 황금의 도성은 비가 오지 않아 굶주리고 있었습니다. 자비 없는 철학은 공허합니다. 굶주린 이들이 그녀를 애타게 기다렸습니다.",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     322,
+     176,
+     392,
+     204
+    ],
+    "ko": "완지",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     450,
+     262,
+     520,
+     292
+    ],
+    "ko": "깐찌",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-28-Dharma-and-Compassion-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     326,
+     654,
+     362
+    ],
+    "ko": "자비의 비행",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     156,
+     362,
+     654,
+     444
+    ],
+    "ko": "다함 없는 발우를 들고 그녀는 하늘을 날았습니다. 가난한 도성 깐찌에 그녀는 생명을 살리는 신비로운 단비처럼 내려앉았습니다.",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-28-Dharma-and-Compassion-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     100,
+     268,
+     164
+    ],
+    "ko": "거룩한 터를 세우다",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     84,
+     164,
+     268,
+     404
+    ],
+    "ko": "담마다 숲에 그녀는 에메랄드 잎이 달린 황금 보리수와 거룩한 부처님 자리를 세워, 크나큰 자비를 펼 터를 닦았습니다.",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-28-Dharma-and-Compassion-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     326,
+     654,
+     360
+    ],
+    "ko": "다함 없는 잔치",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     156,
+     360,
+     654,
+     444
+    ],
+    "ko": "열여덟 가지 말을 쓰는 무리가 모였습니다. 그녀가 끝없이 음식을 베푸니 받는 이의 손이 지칠 따름이었습니다. 굶주림을 달랠 약이 내려졌습니다.",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-28-Dharma-and-Compassion-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     100,
+     322,
+     164
+    ],
+    "ko": "땅이 되살아나다",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     120,
+     164,
+     322,
+     430
+    ],
+    "ko": "그녀의 덕에 삭까(인드라)가 비를 내리게 했습니다. 땅은 넘치는 물과 싹트는 씨앗과 돌아온 풍요로 되살아나, 마니빨라왐의 낙원을 닮았습니다.",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/27-28-Dharma-and-Compassion-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     156,
+     326,
+     654,
+     360
+    ],
+    "ko": "참된 법을 하나로",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     156,
+     360,
+     654,
+     444
+    ],
+    "ko": "변장을 벗은 마니메칼라이는 서원을 세웠습니다. 그녀는 완지의 복잡한 철학들이 부처님의 참된 길, 곧 모든 생명을 향한 끝없는 실천의 자비 앞에 빛을 잃음을 깨달았습니다.",
+    "cover": [
+     236,
+     220,
+     184
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
