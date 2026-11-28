@@ -512,6 +512,10 @@ async function runSearch() {
         const hits = (m.pages || []).map((p, i) => ({ ...p, n: i + 1 })).filter(p => p.text && has(plainT(p.text)));
         if (hits.some(p => isToc(p.text)) && scope === 'all') why.push('목차');
         body = hits.filter(p => !isToc(p.text)).slice(0, 60).map(p => ({ n: p.n, label: p.label ? p.label + '쪽' : p.n + '번째', s: snippet(plainT(p.text).replace(/\s+/g, ' '), terms) }));
+        // 사이트 안내(문단·각주에 붙인 안내 글)도 찾음 (2026-11-28)
+        const pgs = (m.pages || []).map((p, i) => ({ ...p, n: i + 1 }));
+        const sh = siteNoteList(pgs, m.p_site, m.fn_site).filter(h => has(h.s)).map(h => { const p = pgs[h.n - 1] || {}; return { n: h.n, label: (p.label ? p.label + '쪽' : h.n + '번째') + ' · 사이트 안내', s: snippet(h.s, terms) || h.s.slice(0, 80) }; });
+        body = [...sh, ...body].slice(0, 60);
         // 색인 표 속 낱말 (제1부 기준, 같은 낱말이 네 부에 되풀이되므로 한 번만)
         if (m.index && m.index.parts && m.index.parts[0]) {
           const ixPage = (m.pages || []).findIndex(p => /\[\[색인\]\]/.test(p.text || '')) + 1;
@@ -738,6 +742,18 @@ function closeReader() { try { if (R && R.spreadLock) screen.orientation.unlock(
 function exitReader() { if (AB.locked) { abLockedMsg(); return; } if (R && R.ttsLocked) { toast('듣기가 잠겨 있습니다. 🔒 잠김 단추를 눌러 풀어 주세요'); return; } const id = R && R.id; closeReader(); location.href = '/book/' + id + '/'; }
 // 빈 줄 = 문단 나눔, 문단 안의 한 줄 바꿈 = 줄 바꿈(게송·회향문처럼 인쇄된 대로)
 const paras = t => String(t || '').split(/\n\s*\n/).map(s => s.trim().split('\n').map(l => l.trim()).join('\n')).filter(Boolean);
+// 사이트 안내(문단 p_site·각주 fn_site)도 찾기에 넣기 — 그 안내가 붙은 쪽·문단과 안내 글 (운영자 요청, 2026-11-28 '모든 책에서 사이트 안내가 검색되게')
+function siteNoteList(pages, pSite, fnSite) {
+  const out = [], P = (pages || []).map((p, i) => ({ n: p.n || i + 1, ps: paras(p.text) }));
+  const clean = t => String(t).replace(/\*\*|°°|==/g, '');
+  for (const x of pSite || []) { if (!x || !x.at || !x.text) continue;
+    for (const pg of P) { const k = pg.ps.findIndex(t => clean(t).startsWith(x.at)); if (k >= 0) { out.push({ n: pg.n, k, s: '사이트 안내 — ' + x.text }); } } }
+  for (const [num, tx] of Object.entries(fnSite || {})) { if (!tx) continue; let hit = null;
+    for (const pg of P) { const k = pg.ps.findIndex(t => t.includes('[^' + num + ']') && !t.startsWith('[^' + num + ']:')); if (k >= 0) { hit = { n: pg.n, k }; break; } }
+    if (!hit) for (const pg of P) { const k = pg.ps.findIndex(t => t.startsWith('[^' + num + ']:')); if (k >= 0) { hit = { n: pg.n, k }; break; } }
+    if (hit) out.push({ ...hit, s: `사이트 안내 (각주 ${num}) — ` + tx }); }
+  return out.sort((a, b) => a.n - b.n || a.k - b.k);
+}
 function markUl(s, n) {
   if (R.hl.length) return hl(s, R.hl);
   const rg = uls().filter(h => h.id === R.id && h.p === n && h.text && s.includes(h.text) && !/\*\*/.test(h.text)).map(h => { const a = s.indexOf(h.text); return [a, a + h.text.length, h.k]; }).sort((x, y) => x[0] - y[0]);
@@ -1316,6 +1332,7 @@ function bindReader() {
     }
     const ch = n => { const c = chapters()[chapterOf(n)]; return c && c.title ? c.title : ''; };
     R.findTerms = terms;
+    const siteHits = siteNoteList(R.pages, R.pSite, R.fnSite).filter(h => terms.some(x => norm(h.s).includes(x)));
     // 원서 대조를 켜 두었으면 원서 글에서도 찾음 — 결과를 누르면 그 원서 문단(문장마다 보기는 그 문장 줄)으로 (운영자 요청, 2026-11-25)
     const oHits = [], D = R.parMode && R.parMode !== 'off' && R.parD;
     if (D) { const O = D.orig || [], seen = new Set();
@@ -1364,8 +1381,8 @@ function bindReader() {
     });
     const fnHtml = fnHits.map(x => `<li><button class="link" data-find="${x.n}" data-k="${x.k}"><span class="muted small">${esc(pageName(R.pages[x.n - 1]))}${ch(x.n) ? ' · ' + esc(ch(x.n)) : ''}</span><br><b>${x.def ? '📝 각주 ' + fm[1] + ' 내용' : '📝 각주 ' + fm[1] + ' 본문 자리'}</b> ${phMark(esc(x.s))}${x.def ? '' : '<sup>' + fm[1] + '</sup>'}</button></li>`).join('');
     const pgHtml = pgHits.map(x => `<li><button class="link" data-find="${x.n}" data-k="-1"><b>📄 ${esc(pgVia || pageName(x))}으로 가기</b>${ch(x.n) ? `<br><span class="muted small">${esc(ch(x.n))}</span>` : ''}</button></li>`).join('');
-    R.findRes = `<p class="note">${pgHits.length ? `${esc(pgVia || pageName(pgHits[0]))}이 있습니다. ` : ''}${fnHits.length ? `각주 ${fm[1]}번이 있습니다. ` : ''}${hits.length ? `${hits.length}곳을 찾았습니다.` : pgHits.length || fnHits.length ? '' : '찾는 말이 없습니다.'}${group ? ` (${group.map(esc).join(', ')} 함께 찾음)` : ''}</p>
-      <ul class="find-list">${pgHtml}${fnHtml}${hits.slice(0, 200).map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}"><span class="muted small">${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span><br>${phMark(hl(h.s, terms))}</button></li>`).join('')}</ul>${hits.length > 200 ? '<p class="note">앞의 200곳만 보입니다. 더 자세한 말로 찾아보세요.</p>' : ''}`
+    R.findRes = `<p class="note">${pgHits.length ? `${esc(pgVia || pageName(pgHits[0]))}이 있습니다. ` : ''}${fnHits.length ? `각주 ${fm[1]}번이 있습니다. ` : ''}${hits.length ? `${hits.length}곳을 찾았습니다.` : pgHits.length || fnHits.length ? '' : siteHits.length ? '본문에는 찾는 말이 없습니다.' : '찾는 말이 없습니다.'}${group ? ` (${group.map(esc).join(', ')} 함께 찾음)` : ''}</p>
+      <ul class="find-list">${pgHtml}${fnHtml}${hits.slice(0, 200).map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}"><span class="muted small">${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span><br>${phMark(hl(h.s, terms))}</button></li>`).join('')}</ul>${hits.length > 200 ? '<p class="note">앞의 200곳만 보입니다. 더 자세한 말로 찾아보세요.</p>' : ''}${siteHits.length ? `<p class="note find-or-h"><b>사이트 안내에서</b> ${siteHits.length}곳을 찾았습니다.</p><ul class="find-list find-site">${siteHits.map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}"><span class="muted small">${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span><br>ⓘ ${hl(snippet(h.s, terms) || h.s.slice(0, 90), terms)}</button></li>`).join('')}</ul>` : ''}`
       + (D ? `<p class="note find-or-h"><b>${esc(oLang)} 원서에서</b> ${oPgHits.length ? `원서 쪽이 있습니다. ` : ''}${oHits.length ? `${oHits.length}곳을 찾았습니다.` : oPgHits.length ? '' : '찾는 말이 없습니다.'}</p>${oPgHits.length ? `<ul class="find-list find-or-pg">${oPgHits.map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}" data-o="${h.o}" data-pgo="1"><b>📄 ${esc(oLang)} 원서 ${h.pdf != null ? `PDF ${esc(h.pdf)}쪽 (원서 ${esc(h.pg)}쪽)` : esc(h.pg) + '쪽'}으로 가기</b><br><span class="muted small">번역 ${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span></button></li>`).join('')}</ul>` : ''}${oHits.length ? `<ul class="find-list find-or" lang="${esc(D.lang || '')}">${oHits.slice(0, 200).map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}" data-o="${h.o}"><span class="muted small" lang="ko">${esc(oLang)} 원서${h.pg ? ' ' + esc(h.pg) + '쪽' : ''} · 번역 ${esc(pageName(R.pages[h.n - 1]))}</span><br>${hl(h.s, terms)}</button></li>`).join('')}</ul>${oHits.length > 200 ? '<p class="note">앞의 200곳만 보입니다.</p>' : ''}` : ''}${nHits.length ? `<p class="note find-or-h"><b>원서 순서 메모에서</b> ${nHits.length}곳을 찾았습니다.</p><ul class="find-list find-note">${nHits.map(h => `<li><button class="link" data-find="${h.n}" data-k="${h.k}" data-o="${h.o}" data-ng="${h.gi}"><span class="muted small">번역 ${esc(pageName(R.pages[h.n - 1]))}${ch(h.n) ? ' · ' + esc(ch(h.n)) : ''}</span><br>※ ${hl(h.s, terms)}</button></li>`).join('')}</ul>` : ''}` : '');
     $('#findRes').innerHTML = R.findRes; bindFind();
   };
