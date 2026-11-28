@@ -234,7 +234,5 @@
   "hidden": false,
   "no_copy": false,
   "hide_update": false,
-  "trad_hide": [
-    "mahasi"
-  ]
+  "trad_hide": []
 }
