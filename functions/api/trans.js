@@ -4,7 +4,8 @@
 //   GET  /api/trans?id=…       → 자료 하나(모든 줄)
 //   PUT  /api/trans?id=…       → 새 자료 넣기 (이미 있으면 &replace=1 일 때만 바꿈)
 //   PUT  /api/trans?id=…&ref=1 → 대조 번역본만 넣기 {kind:'ref', id, title, col, info, rows:{줄id:[대조 글, rc]}} — 우리 번역·고친 기록·메모는 그대로 (2026-11-28)
-//   POST /api/trans?id=…       → 줄 하나 고치기 {row, t?, note?} — 고치기 전 글은 그 줄의 기록(hist)에 남김
+//   PUT  /api/trans?id=…&cm=1  → 교정 의견만 넣기 {kind:'cm', id, title, info, intro, policy, rows:{줄id:[의견…]}} — 우리 번역·고친 기록·메모·넣음 표시(cmDone)는 그대로 (2026-11-28)
+//   POST /api/trans?id=…       → 줄 하나 고치기 {row, t?, note?, cmDone?} — 고치기 전 글은 그 줄의 기록(hist)에 남김
 import { canWriteToken } from './_auth.js';
 const json = (o, status = 200) => new Response(JSON.stringify(o), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
 const tokenOf = r => (r.headers.get('authorization') || '').replace(/^Bearer\s+/i, '');
@@ -19,7 +20,7 @@ async function guard(request, env) {
 }
 async function getJSON(env, key, dflt) { try { const o = await env.MEMBERS.get(key); return o ? await o.json() : dflt; } catch (e) { return dflt; } }
 const putJSON = (env, key, v) => env.MEMBERS.put(key, JSON.stringify(v), { httpMetadata: { contentType: 'application/json; charset=utf-8' } });
-const summary = d => ({ id: d.id, title: d.title, rows: d.rows.length, edited: d.rows.filter(r => r.t !== r.t0).length, notes: d.rows.filter(r => r.note).length, updated: d.updated || d.made || '', cols: d.cols });
+const summary = d => ({ id: d.id, title: d.title, rows: d.rows.length, edited: d.rows.filter(r => r.t !== r.t0).length, notes: d.rows.filter(r => r.note).length, cm: d.rows.reduce((n, r) => n + (r.cm ? r.cm.length : 0), 0), cmDone: d.rows.reduce((n, r) => n + (r.cm && r.cmDone ? r.cmDone.filter(x => r.cm.some(c => c.n === x)).length : 0), 0), updated: d.updated || d.made || '', cols: d.cols });
 async function touchIndex(env, d) {
   const idx = await getJSON(env, INDEX, { items: [] });
   idx.items = (idx.items || []).filter(x => x.id !== d.id); idx.items.push(summary(d));
@@ -56,6 +57,18 @@ export async function onRequestPut({ request, env }) {
     await putJSON(env, KEY(id), cur); await touchIndex(env, cur);
     return json({ ok: true, ref: n, miss, ...summary(cur) });
   }
+  if (u.searchParams.get('cm') === '1') {
+    if (!d || d.kind !== 'cm' || d.id !== id || !d.rows || typeof d.rows !== 'object') return json({ error: '교정 의견 파일 형식이 올바르지 않습니다.' }, 400);
+    const cur = await getJSON(env, KEY(id), null); if (!cur) return json({ error: '이 교정 의견을 넣을 자료가 아직 없습니다. 자료부터 넣어 주세요.' }, 404);
+    if (cur.rows.some(r => r.cm) && u.searchParams.get('replace') !== '1') return json({ error: '이미 교정 의견이 있습니다.', exists: true }, 409);
+    let n = 0, miss = 0; const ids = new Set(cur.rows.map(r => r.id));
+    for (const k of Object.keys(d.rows)) if (!ids.has(k)) miss += d.rows[k].length;
+    cur.rows.forEach(r => { const v = d.rows[r.id]; if (Array.isArray(v) && v.length) { r.cm = v; n += v.length; } else delete r.cm; });
+    cur.cmInfo = { title: d.title || '', info: d.info || '', intro: d.intro || [], policy: d.policy || [], at: new Date().toISOString() };
+    cur.updated = new Date().toISOString();
+    await putJSON(env, KEY(id), cur); await touchIndex(env, cur);
+    return json({ ok: true, cmAdded: n, miss, ...summary(cur) });
+  }
   if (!d || d.id !== id || !Array.isArray(d.rows) || !d.rows.every(r => r && typeof r.id === 'string' && typeof r.t === 'string')) return json({ error: '자료 파일 형식이 올바르지 않습니다.' }, 400);
   const old = await env.MEMBERS.head(KEY(id));
   if (old && u.searchParams.get('replace') !== '1') return json({ error: '같은 이름의 자료가 이미 있습니다.', exists: true }, 409);
@@ -79,6 +92,7 @@ export async function onRequestPost({ request, env }) {
     r.t = b.t; r.at = now;
   }
   if (typeof b.note === 'string' && b.note !== (r.note || '')) { if (b.note.length > 5000) return json({ error: '메모가 너무 깁니다.' }, 400); r.note = b.note; r.noteAt = now; }
+  if (Array.isArray(b.cmDone)) r.cmDone = b.cmDone.filter(x => Number.isInteger(x)).slice(0, 200);
   d.updated = now;
   await putJSON(env, KEY(id), d); await touchIndex(env, d);
   return json({ ok: true, row: r, updated: now });

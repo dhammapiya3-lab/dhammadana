@@ -153,7 +153,7 @@ async function initMembers() {
   const adm = isAdm ? `<div class="st-tabs" role="tablist" aria-label="학습 자료실 보기"><button type="button" role="tab" id="stTabLib" aria-controls="stLibPanel" aria-selected="true">📚 학습 자료</button><button type="button" role="tab" id="stTabTr" aria-controls="stTrans" aria-selected="false" tabindex="-1">✏️ 번역 교정 <span class="small muted">(관리자)</span></button></div>` : '';
   const head = `<div class="prose" style="padding-bottom:0"><h1>학습 자료실</h1><p class="muted">허락받은 분만 보는 곳입니다. 이 곳의 자료는 다른 분께 넘기지 말아 주세요.</p>${who}</div>${adm}`;
   const trPanel = isAdm ? `<div id="stTrans" role="tabpanel" aria-labelledby="stTabTr" hidden></div>` : '';
-  const loadTx = () => window.ddTrans ? Promise.resolve() : new Promise((res, rej) => { const sc = document.createElement('script'); sc.src = '/assets/trans.js?v=20261128f'; sc.onload = res; sc.onerror = rej; document.head.appendChild(sc); });
+  const loadTx = () => window.ddTrans ? Promise.resolve() : new Promise((res, rej) => { const sc = document.createElement('script'); sc.src = '/assets/trans.js?v=20261128g'; sc.onload = res; sc.onerror = rej; document.head.appendChild(sc); });
   const trShow = on => { const tp = $('#stTrans'); if (!tp) return false;
     const a = $('#stTabLib'), b = $('#stTabTr'); a.setAttribute('aria-selected', !on); b.setAttribute('aria-selected', on); a.tabIndex = on ? -1 : 0; b.tabIndex = on ? 0 : -1;
     a.classList.toggle('on', !on); b.classList.toggle('on', on); tp.hidden = !on; const lp = $('#stLibPanel'); if (lp) lp.hidden = on;
