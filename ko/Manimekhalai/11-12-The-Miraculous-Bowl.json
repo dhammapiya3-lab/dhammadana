@@ -1,0 +1,517 @@
+[
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     350,
+     666,
+     446
+    ],
+    "ko": "마니메칼라이: 신비로운 발우와 자비의 법\n따밀 불교 서사시를 그림으로 옮긴 이야기",
+    "cover": [
+     242,
+     232,
+     210
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     50,
+     252,
+     402
+    ],
+    "ko": "섬에 있는 법의 자리를 지키는 띠와띨라까이가 깊은 진리를 밝힙니다. 이곳에서 정성껏 예배하는 이는 숨어 있던 전생의 기억을 일깨운다고.",
+    "cover": [
+     242,
+     232,
+     210
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     30,
+     360,
+     60
+    ],
+    "ko": "전생: 락키",
+    "cover": [
+     242,
+     232,
+     210
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     440,
+     30,
+     720,
+     60
+    ],
+    "ko": "지금: 마니메칼라이",
+    "cover": [
+     242,
+     232,
+     210
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     40,
+     318,
+     760,
+     436
+    ],
+    "ko": "업의 실\n전생: 라훌라 왕자의 헌신적인 아내 락키\n지금: 마다위의 딸 마니메칼라이\n과거의 행위를 알면 지금의 참된 영적 운명이 열립니다.",
+    "cover": [
+     242,
+     232,
+     210
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     456,
+     8,
+     790,
+     164
+    ],
+    "ko": "부처님 탄신일에 다함 없는 발우 아무다수라비가 수련 연못에서 솟아올라 오른쪽으로 돌며 합당한 이의 손에 내려앉습니다.",
+    "cover": [
+     242,
+     232,
+     210
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     260,
+     326,
+     790,
+     412
+    ],
+    "ko": "지혜의 눈을 남에게 주시는 완전히 지혜로운 분께 귀의합니다. 그릇된 길을 무너뜨리고 괴로움을 이기신 영웅께 귀의합니다.",
+    "cover": [
+     242,
+     232,
+     210
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     476,
+     70,
+     752,
+     150
+    ],
+    "ko": "죄를 부르는 갈망",
+    "cover": [
+     209,
+     180,
+     124
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     476,
+     150,
+     752,
+     396
+    ],
+    "ko": "굶주림은 좋은 가문을 무너뜨리고, 고귀함을 죽이고, 부끄러움을 벗겨 냅니다. 가장 위대한 성자도 굶주리면 죄와 몰락에 빠집니다.",
+    "cover": [
+     209,
+     180,
+     124
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     338,
+     624,
+     444
+    ],
+    "ko": "보시의 본성\n팔려 가는 보시: 먹을 수 있는 이에게 음식을 주는 것\n참된 보시: 의지할 데 없이 굶주린 이에게 음식을 주는 것\n음식을 주는 이는 목숨을 주는 것입니다.",
+    "cover": [
+     242,
+     232,
+     210
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     340,
+     720,
+     448
+    ],
+    "ko": "굶주린 아이에게 젖을 내주는 어머니의 젖가슴처럼, 마니메칼라이는 뙤약볕이나 거센 비 속을 헤매는 이들에게 다함 없는 먹을거리를 주겠다고 서원합니다.",
+    "cover": [
+     242,
+     232,
+     210
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     340,
+     720,
+     446
+    ],
+    "ko": "거룩한 주문의 힘으로 그녀는 하늘을 날아 쫄라의 도성 까웨리빳띠남으로 돌아가, 거룩한 선물을 세상을 위한 일과 하나로 잇습니다.",
+    "cover": [
+     242,
+     232,
+     210
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     478,
+     40,
+     776,
+     432
+    ],
+    "ko": "도성에서는 존경받는 선인 아라와나 아디갈이 기다립니다. 바른 법이 기울어 가는 세월 내내 그는 들을 준비가 된 이들에게 지칠 줄 모르고 법을 가르칩니다.",
+    "cover": [
+     242,
+     232,
+     210
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     340,
+     720,
+     380
+    ],
+    "ko": "새 탈을 쓴 배우들",
+    "cover": [
+     242,
+     226,
+     191
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     80,
+     380,
+     720,
+     448
+    ],
+    "ko": "선인은 두 비구니가 전생에 비극을 겪은 왕비들이었음을 밝힙니다. 그들이 전생에 올린 예배가 이제 열반(Nibbāna)으로 곧장 가는 길을 엽니다.",
+    "cover": [
+     242,
+     227,
+     193
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     10,
+     312,
+     350,
+     342
+    ],
+    "ko": "천육백십육 년 뒤의 예언",
+    "cover": [
+     247,
+     238,
+     207
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     10,
+     342,
+     350,
+     442
+    ],
+    "ko": "세상이 자비를 잊을 때, 천신들은 다음 부처님께 뚜시따 천상에서 내려와 법을 되살려 주시기를 청할 것입니다.",
+    "cover": [
+     247,
+     238,
+     209
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     66,
+     70,
+     340,
+     114
+    ],
+    "ko": "황금시대",
+    "cover": [
+     243,
+     233,
+     198
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     66,
+     114,
+     340,
+     410
+    ],
+    "ko": "부처님이라는 해가 떠오릅니다.\n\n비는 그치지 않고 땅은 풍성한 열매를 냅니다.\n\n짐승끼리의 적대가 그칩니다.\n\n태어남의 굴레가 영원히 끊어집니다.",
+    "cover": [
+     243,
+     232,
+     200
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     376,
+     740,
+     448
+    ],
+    "ko": "자신의 깨달음을 찾기 전에 마니메칼라이는 마지막 명을 받습니다. 먼저 이 생명의 감로로 인류를 향한 가장 높은 의무를 다하라는 것입니다.",
+    "cover": [
+     242,
+     232,
+     210
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/11-12-The-Miraculous-Bowl-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     22,
+     782,
+     62
+    ],
+    "ko": "법의 가장 높은 행위",
+    "cover": [
+     245,
+     236,
+     205
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     22,
+     62,
+     782,
+     130
+    ],
+    "ko": "온 우주에서, 신에게나 사람에게나, 참된 보시는 결국 하나뿐입니다. 굶주림의 괴로움을 덜어 주는 것입니다.",
+    "cover": [
+     245,
+     236,
+     206
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
