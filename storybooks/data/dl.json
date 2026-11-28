@@ -880,11 +880,11 @@
 "zip": 13221311
 },
 "Manimekhalai": {
-"n": 85,
-"pdf": 94864647,
-"pdfs": 10117115,
-"stories": 7,
-"zip": 94580771
+"n": 100,
+"pdf": 112481206,
+"pdfs": 12076306,
+"stories": 8,
+"zip": 112191455
 },
 "Manimekhalai/00-Synopsis-of-the-Story": {
 "n": 12,
@@ -920,6 +920,11 @@
 "n": 15,
 "pdf": 14838921,
 "zip": 14565393
+},
+"Manimekhalai/13-14-Aputra": {
+"n": 15,
+"pdf": 17877178,
+"zip": 17611095
 },
 "New-Jataka": {
 "n": 168,
