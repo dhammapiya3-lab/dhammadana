@@ -1,0 +1,397 @@
+[
+ {
+  "img": "images/13-14-Aputra-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     152,
+     308,
+     650,
+     360
+    ],
+    "ko": "아뿌뜨라 이야기: 암소의 아들",
+    "cover": [
+     110,
+     16,
+     18
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     152,
+     360,
+     650,
+     440
+    ],
+    "ko": "따밀 불교 서사시 마니메칼라이에서. 쫄라와 빤디야 땅을 배경으로 꼬왈란의 자취를 따라갑니다.",
+    "cover": [
+     110,
+     16,
+     18
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     352,
+     712,
+     442
+    ],
+    "ko": "존경받는 스님 아라와나 아디갈이 아뿌뜨라의 삶을 들려줍니다. 꼬르까이 가까이에서 신분을 잃은 바라문 여인 살리가 몰래 아기를 낳아 외딴 바나나 밭에 무정하게 버렸습니다.",
+    "cover": [
+     110,
+     16,
+     18
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     450,
+     90,
+     730,
+     228
+    ],
+    "ko": "아기 울음소리를 듣고 순한 암소가 다가왔습니다. 암소는 아기를 핥아 주고 젖을 먹이며 이레 동안 곁에서 온갖 해로움을 막아 주었습니다. 그렇게 아기는 살아남았습니다.",
+    "cover": [
+     242,
+     232,
+     210
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     180,
+     322,
+     618,
+     440
+    ],
+    "ko": "길을 가던 바라문 일람부띠와 그 아내가 아기 울음을 들었습니다. 외로운 아기를 가엾게 여긴 부부는 하늘이 내린 복으로 알고 아기를 거두어, 마을에서 베다를 엄하게 가르쳤습니다.",
+    "cover": [
+     22,
+     22,
+     62
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     108,
+     358,
+     772,
+     440
+    ],
+    "ko": "마을의 큰 제사 때 소년은 꽃으로 꾸민 암소가 몹시 괴로워하는 것을 보았습니다. 타고난 연민이 불타올라, 소년은 밤을 틈타 암소를 데리고 나가 목숨을 구했습니다.",
+    "cover": [
+     22,
+     22,
+     62
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     158,
+     320,
+     648,
+     436
+    ],
+    "ko": "사제들이 소년을 붙잡아 때리자, 암소가 구해 준 이를 지키려고 그들을 들이받았습니다. 소년이 말했습니다. '소는 세상을 먹여 살리는데 왜 해칩니까?' 성난 사제들은 그 지혜를 물리치고 소년을 내쫓으며 '아뿌뜨라', 곧 암소의 아들이라 놀렸습니다.",
+    "cover": [
+     44,
+     32,
+     26
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     92,
+     324,
+     392
+    ],
+    "ko": "남쪽 마두라로 쫓겨난 아뿌뜨라는 사원 뜰을 집으로 삼았습니다. 날마다 밥을 빌어 눈먼 이, 귀먼 이, 병든 이를 먼저 먹이고 남은 것을 먹었습니다. 잠잘 때는 발우를 베개로 삼았습니다.",
+    "cover": [
+     20,
+     54,
+     40
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     386,
+     298,
+     768,
+     430
+    ],
+    "ko": "한밤중에 떠도는 굶주린 이들을 먹일 수 없어 괴로워하던 아뿌뜨라가 기도하자, 사라스와띠 여신이 나타나 신비로운 발우를 주며 약속했습니다. '받는 손이 지치지 않는 한 이 발우는 결코 비지 않으리라.'",
+    "cover": [
+     44,
+     32,
+     26
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     212,
+     318,
+     590,
+     444
+    ],
+    "ko": "아뿌뜨라의 사원 뜰이 달라졌습니다. 사람과 짐승과 새가 끝없이 모여들었고, 신비로운 발우는 한없이 음식을 쏟아 냈습니다. 암소의 아들은 굶주린 모든 생명의 으뜸가는 보호자가 되었습니다.",
+    "cover": [
+     44,
+     32,
+     26
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     152,
+     312,
+     652,
+     444
+    ],
+    "ko": "이 큰 공덕을 알아챈 삭까(인드라)가 늙은 바라문으로 나타나 하늘의 복을 주겠다고 했습니다. 아뿌뜨라는 웃었습니다. “나는 천상을 바라지 않습니다. 굶주린 이를 먹이는 것만이 내 보람입니다. 복은 거두십시오.”",
+    "cover": [
+     110,
+     16,
+     18
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     162,
+     176,
+     638,
+     294
+    ],
+    "ko": "성난 삭까(인드라)는 그치지 않는 비를 내렸습니다. 빤디야 땅은 풍요로워져 먹을 것이 모자란 생명이 하나도 없었습니다. 먹일 굶주린 이가 없으니 아뿌뜨라의 발우는 쓸모를 잃었습니다. 넘치는 풍요가 그의 보시를 꺾은 것입니다.",
+    "cover": [
+     242,
+     232,
+     210
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     432,
+     46,
+     768,
+     220
+    ],
+    "ko": "사와깜에 무서운 기근이 들었다는 소식에 아뿌뜨라는 도우려고 배에 올랐습니다. 거센 폭풍 속에 배는 한 섬에 닻을 내렸는데, 안타깝게도 한밤중에 그를 남겨 둔 채 떠나 버렸습니다.",
+    "cover": [
+     22,
+     22,
+     62
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     162,
+     292,
+     638,
+     418
+    ],
+    "ko": "남을 도울 수 없게 된 아뿌뜨라는 발우를 암소 모양 연못에 넣고 기원했습니다. “이 발우가 해마다 떠오르게 하시고, 모든 생명을 보호하는 일에 삶을 바치는 이에게만 건네지게 하소서.”",
+    "cover": [
+     44,
+     32,
+     26
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     176,
+     44,
+     628,
+     204
+    ],
+    "ko": "삶의 사명이 가로막히자 아뿌뜨라는 먹지도 마시지도 않고 누웠습니다. 깊은 고행의 수행으로 몸을 버리고, 외딴 바닷가에서 평온히 생을 마쳤습니다.",
+    "cover": [
+     110,
+     16,
+     18
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/13-14-Aputra-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     108,
+     352,
+     702,
+     444
+    ],
+    "ko": "그러나 참된 자비는 결코 죽지 않습니다. 아뿌뜨라는 사와깜 땅에서 왕의 거룩한 암소에게서 다시 태어났습니다. 지는 해가 다시 떠오르듯, 그는 세상의 어둠을 걷어 내러 돌아왔습니다.",
+    "cover": [
+     242,
+     232,
+     210
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
