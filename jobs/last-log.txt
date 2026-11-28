@@ -1,23 +1,36 @@
+Dhammapada 01-01 15 장
 Manimekhalai 01-02-The-Setting 14 장
+Manimekhalai 03-04-In-the-Garden 12 장
+Manimekhalai 05-06-Impermanence 11 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 75 개 / 한글판 이야기 322 편
+R2 에 올림: 151 개 / 한글판 이야기 325 편
 새 그림책 올림: New-Jataka/006-Devadhamma-en 29 장
 새 그림책 올림: New-Jataka/006-Devadhamma 29 장
 새 그림책: 올린 그림 58 장
-공개 주소 확인: 200 1254279바이트
+공개 주소 확인: 200 419816바이트
+이야기 Dhammapada/01-01 {'pdf': 7405646, 'zip': 7129905, 'n': 15}
+책 Dhammapada {'pdf': 7385797, 'pdfs': 1128296, 'zip': 7131206, 'stories': 1, 'n': 15}
 이야기 Manimekhalai/01-02-The-Setting {'pdf': 17138724, 'zip': 16869616, 'n': 14}
-책 Manimekhalai {'pdf': 32385588, 'pdfs': 3501349, 'zip': 32123882, 'stories': 2, 'n': 26}
+이야기 Manimekhalai/03-04-In-the-Garden {'pdf': 14258542, 'zip': 13988740, 'n': 12}
+이야기 Manimekhalai/05-06-Impermanence {'pdf': 10147370, 'zip': 9876892, 'n': 11}
+책 Manimekhalai {'pdf': 56259196, 'pdfs': 6099015, 'zip': 55988739, 'stories': 4, 'n': 49}
 이야기 New-Jataka/006-Devadhamma {'pdf': 23171075, 'zip': 22995387, 'n': 29}
 책 New-Jataka {'pdf': 130017090, 'pdfs': 23875859, 'zip': 129814188, 'stories': 6, 'n': 168}
 이야기 New-Jataka/006-Devadhamma-en {'pdf': 23403686, 'zip': 23203324, 'n': 29}
 책 New-Jataka-en {'pdf': 130253683, 'pdfs': 24106924, 'zip': 130018847, 'stories': 6, 'n': 168}
-내려받기 파일: 6 묶음 새로 만듦
-글로 보기: 324 이야기
+내려받기 파일: 10 묶음 새로 만듦
+글로 보기: 327 이야기
+Way-Beyond: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="cstHko6'
 18-Verses-2
+Light-of-Asia: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="uP6UvUQ'
 08-Light-of-Asia
+Four-Rich-Men: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="kXb9X2+'
 04-Kalavaliya-the-Treasurer
+Jatakamala: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="Gx4a7Oa'
 34-Woodpecker
+Rasavahini: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="Eau9eug'
 20-The-Brahmin-Soma
+Manimekhalai: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="Hac6O3d'
 29-30-Escape-from-Samsara
-13-11.htm: 그림 15 상자 1 상자밖글 637
+Dhammapada: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="Fa5w6Xn'
 13-11
