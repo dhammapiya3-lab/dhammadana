@@ -1,0 +1,420 @@
+[
+ {
+  "img": "images/Dhp-a-04-09-Anandas-Questions-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "That",
+   "Travels",
+   "Against",
+   "the",
+   "Wind",
+   "Teaching",
+   "the",
+   "Scent",
+   "Virtue"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-04-09-Anandas-Questions-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     408,
+     370
+    ],
+    "bbox": [
+     1187,
+     737,
+     1746,
+     1289
+    ],
+    "shape": "bubble",
+    "en": "perfumes",
+    "conf": 97
+   }
+  ],
+  "loose": [
+   "“The",
+   "Fortunate",
+   "One",
+   "possesses",
+   "the",
+   "superlative",
+   "excellence...",
+   "Each",
+   "these",
+   "perfumes,",
+   "however,",
+   "goes",
+   "only",
+   "with",
+   "the",
+   "wind.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-04-09-Anandas-Questions-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "there",
+   "possibly",
+   "substance",
+   "whose",
+   "perfume",
+   "goes",
+   "against",
+   "the",
+   "wind,",
+   "there",
+   "possibly",
+   "substance",
+   "whose",
+   "perfume",
+   "goes",
+   "both",
+   "with",
+   "the",
+   "wind",
+   "and",
+   "against",
+   "the",
+   "wind?"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-04-09-Anandas-Questions-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Accordingly",
+   "approached",
+   "the",
+   "Teacher",
+   "and",
+   "put",
+   "the",
+   "question",
+   "him."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-04-09-Anandas-Questions-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ananda,",
+   "there",
+   "substance",
+   "whose",
+   "perfume",
+   "goes",
+   "with",
+   "the",
+   "wind,",
+   "substance",
+   "whose",
+   "perfume",
+   "goes",
+   "both",
+   "with",
+   "the",
+   "wind",
+   "and",
+   "against",
+   "the",
+   "wind."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-04-09-Anandas-Questions-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "any",
+   "village",
+   "market-town",
+   "this",
+   "world",
+   "any",
+   "human",
+   "being,",
+   "whether",
+   "man",
+   "woman,",
+   "seeks",
+   "refuge",
+   "the",
+   "Buddha,",
+   "seeks",
+   "refuge",
+   "the",
+   "Dhamma,",
+   "seeks",
+   "refuge",
+   "the",
+   "Sangha..."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-04-09-Anandas-Questions-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "refrains",
+   "from",
+   "taking",
+   "life,",
+   "from",
+   "taking",
+   "that",
+   "which",
+   "not",
+   "given,",
+   "from",
+   "indulgence",
+   "the",
+   "sensual",
+   "wrongdoings",
+   "and",
+   "from",
+   "lying,",
+   "and",
+   "avoids",
+   "occasions",
+   "heedlessness",
+   "through",
+   "the",
+   "use",
+   "liquor",
+   "spirits",
+   "other",
+   "intoxicants..."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-04-09-Anandas-Questions-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "...if",
+   "lives",
+   "the",
+   "life",
+   "householder",
+   "righteousness,",
+   "with",
+   "heart",
+   "free",
+   "from",
+   "the",
+   "stain",
+   "avarice;",
+   "liberal",
+   "and",
+   "generous,",
+   "open-",
+   "handed,",
+   "takes",
+   "delight",
+   "the",
+   "distribution",
+   "alms..."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-04-09-Anandas-Questions-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "fragrance",
+   "flowers",
+   "goes",
+   "not",
+   "against",
+   "the",
+   "wind,",
+   "nor",
+   "does",
+   "sandalwood",
+   "pinwheel",
+   "white",
+   "jasmine,",
+   "but",
+   "the",
+   "fragrance",
+   "the",
+   "good",
+   "goes",
+   "against",
+   "the",
+   "wind,",
+   "the",
+   "true",
+   "person’s",
+   "fragrance",
+   "permeates",
+   "all",
+   "directions."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-04-09-Anandas-Questions-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "fragrance",
+   "flowers",
+   "goes",
+   "not",
+   "against",
+   "the",
+   "wind,",
+   "nor",
+   "does",
+   "sandalwood",
+   "pinwheel",
+   "white",
+   "jasmine,",
+   "but",
+   "the",
+   "fragrance",
+   "the",
+   "good",
+   "goes",
+   "against",
+   "the",
+   "wind,",
+   "the",
+   "true",
+   "fragrance",
+   "permeates",
+   "all",
+   "directions.",
+   "Sandalwood",
+   "and",
+   "pinwheel",
+   "also,",
+   "water",
+   "lily",
+   "and",
+   "striped",
+   "jasmine,",
+   "amongst",
+   "these",
+   "kinds",
+   "good",
+   "fragrance",
+   "virtue’s",
+   "fragrance",
+   "unsurpassed."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-04-09-Anandas-Questions-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "all",
+   "parts",
+   "the",
+   "world",
+   "ascetics",
+   "and",
+   "Brahmins",
+   "utter",
+   "his",
+   "praise.",
+   "utter",
+   "his",
+   "praise."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-04-09-Anandas-Questions-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "This",
+   "the",
+   "substance",
+   "whose",
+   "perfume",
+   "goes",
+   "both",
+   "with",
+   "the",
+   "wind",
+   "and",
+   "against",
+   "the",
+   "wind."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-04-09-Anandas-Questions-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "fragrances,",
+   "unsurp"
+  ]
+ }
+]

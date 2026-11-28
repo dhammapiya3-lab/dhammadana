@@ -1,0 +1,606 @@
+[
+ {
+  "img": "images/Dhp-a-08-03-Kundalakesi-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "THE",
+   "STORY",
+   "FROM",
+   "WIFE",
+   "ARHAT",
+   "narrative",
+   "passion,",
+   "betrayal,",
+   "and",
+   "the",
+   "ultimate",
+   "victory",
+   "over",
+   "the",
+   "self.",
+   "Based",
+   "the",
+   "Dhammapada",
+   "(8.3",
+   "Commenta"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-03-Kundalakesi-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     57,
+     56
+    ],
+    "bbox": [
+     129,
+     122,
+     1547,
+     569
+    ],
+    "shape": "bubble",
+    "en": "her royal apartment, the merchant's daughter saw robber being led to execution. Though he was bound and lashed, her heart burned with sudden, desire. She refused to eat, telling her parents, “If cannot have him, life is not living; shall die here and now.”",
+    "conf": 88
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-08-03-Kundalakesi-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     65,
+     57
+    ],
+    "bbox": [
+     126,
+     122,
+     1527,
+     628
+    ],
+    "shape": "bubble",
+    "en": "to bear their daughter's grief, her father paid heavy bribe. The guard released the thief and executed an innocent man in his place. The was brought to the palace, washed, and married to the merchant's daughter. Their union began on foundation of blood.",
+    "conf": 72
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-08-03-Kundalakesi-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     48,
+     56
+    ],
+    "bbox": [
+     122,
+     122,
+     1660,
+     1108
+    ],
+    "shape": "bubble",
+    "en": "served him with devotion, but thief’s nature does not change. He resolved to kill her and sell her ornaments to eat at the tavern. He feigned illness, claiming he needed to fulfill vow to mountain deity who saved him. \"Prepare an offering.” he told her. \"Rich rice-porridge with honey and five kinds of flowers.” igs wee",
+    "conf": 39
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-08-03-Kundalakesi-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "THE",
+   "TRAP",
+   "ROBBERS’",
+   "CLIFF",
+   "the",
+   "precipice,",
+   "dismissed",
+   "their",
+   "attendants.",
+   "have",
+   "use",
+   "for",
+   "the",
+   "offering,”",
+   "sneered.",
+   "brought",
+   "you",
+   "here",
+   "kill",
+   "you",
+   "and",
+   "take",
+   "your",
+   "jewels.”",
+   "Her",
+   "pleas",
+   "become",
+   "his",
+   "slave",
+   "mother",
+   "fell",
+   "deaf",
+   "ears.",
+   "“Lament",
+   "not,”",
+   "said",
+   "coldly.",
+   "“Prepare",
+   "die.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-03-Kundalakesi-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "WISDOM",
+   "NOT",
+   "FOR",
+   "EATING",
+   "Panic",
+   "gave",
+   "way",
+   "cold",
+   "wit.",
+   "She",
+   "thought,",
+   "“Wisdom",
+   "was",
+   "not",
+   "made",
+   "cooked",
+   "and",
+   "eaten,",
+   "but",
+   "make",
+   "one",
+   "look",
+   "before",
+   "they",
+   "leap.”",
+   "She",
+   "flattered",
+   "him:",
+   "“You",
+   "were",
+   "bought",
+   "with",
+   "family’s",
+   "gold;",
+   "let",
+   "pay",
+   "you",
+   "final",
+   "respects.”",
+   "She",
+   "circled",
+   "him,",
+   "embracing",
+   "him",
+   "from",
+   "the",
+   "front,",
+   "then",
+   "the",
+   "back."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-03-Kundalakesi-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "THE",
+   "PLUNGE",
+   "stood",
+   "unguarded,",
+   "she",
+   "placed",
+   "one",
+   "hand",
+   "his",
+   "shoulder,",
+   "the",
+   "other",
+   "his",
+   "back,",
+   "and",
+   "flung",
+   "him",
+   "into",
+   "the",
+   "void.",
+   "The",
+   "deity",
+   "the",
+   "mountain",
+   "proclaimed:",
+   "“Wisdom",
+   "not",
+   "found",
+   "men",
+   "alone;",
+   "woman",
+   "shows",
+   "intelligence",
+   "here",
+   "and",
+   "there.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-03-Kundalakesi-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "THE",
+   "ROSE-APPLE",
+   "WANDERER",
+   "She",
+   "could",
+   "not",
+   "return",
+   "home",
+   "widow",
+   "and",
+   "killer.",
+   "She",
+   "cast",
+   "off",
+   "her",
+   "jewels",
+   "and",
+   "entered",
+   "the",
+   "order",
+   "Wanderers.",
+   "Mastering",
+   "thousand",
+   "theological",
+   "views,",
+   "she",
+   "traveled",
+   "Jambudipa,",
+   "challenging",
+   "all",
+   "comers:",
+   "“Let",
+   "him",
+   "who",
+   "dares",
+   "debate",
+   "trample",
+   "this",
+   "branch.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-03-Kundalakesi-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "THE",
+   "CHALLENGE",
+   "ACCEPTED",
+   "Savatthi,",
+   "the",
+   "challenge",
+   "ended.",
+   "Elder",
+   "Sariputta",
+   "instructed",
+   "the",
+   "village",
+   "children",
+   "trample",
+   "the",
+   "branch.",
+   "Kundalakesi",
+   "returned",
+   "find",
+   "her",
+   "challenge",
+   "accepted.",
+   "The",
+   "city",
+   "buzzed.",
+   "The",
+   "great",
+   "debate",
+   "was",
+   "set."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-03-Kundalakesi-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     472,
+     144
+    ],
+    "bbox": [
+     1408,
+     291,
+     2033,
+     1478
+    ],
+    "shape": "bubble",
+    "en": "THE THOUSAND She fired thousand arsenal of knowledge. them all without Finally, her store of “You have asked much,” “Now, “Now, will ask you",
+    "conf": 69
+   }
+  ],
+  "loose": [
+   "QUESTIONS",
+   "questions—her",
+   "entire",
+   "The",
+   "Elder",
+   "answered",
+   "words",
+   "was",
+   "exhausted.",
+   "Sariputta",
+   "said.",
+   "one",
+   "question.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-03-Kundalakesi-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     489,
+     314
+    ],
+    "bbox": [
+     440,
+     906,
+     2103,
+     1246
+    ],
+    "shape": "bubble",
+    "en": "\"What is One?\" She was silenced. For all her arguments, she did not know the answer. “If you wish to know,’ the Elder said, “you must enter our path.”",
+    "conf": 73
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-08-03-Kundalakesi-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "True",
+   "Victory",
+   "She",
+   "renounced",
+   "the",
+   "world",
+   "debate",
+   "for",
+   "the",
+   "world",
+   "insight.",
+   "She",
+   "took",
+   "the",
+   "name",
+   "Kundalakesi",
+   "the",
+   "Nun.",
+   "few",
+   "days,",
+   "she",
+   "attained",
+   "Arahantship",
+   "with",
+   "analytic",
+   "knowledges.",
+   "She",
+   "had",
+   "defeated",
+   "thief",
+   "cliff,",
+   "but",
+   "now",
+   "she",
+   "had",
+   "defeated",
+   "the",
+   "pollutants",
+   "within",
+   "her",
+   "own",
+   "mind."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-03-Kundalakesi-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha’s",
+   "Decree:",
+   "The",
+   "Power",
+   "Truth",
+   "When",
+   "the",
+   "monks",
+   "discussed",
+   "her",
+   "rapid",
+   "conversion,",
+   "the",
+   "Buddha",
+   "explained:",
+   "“Better",
+   "than",
+   "hundred",
+   "verses",
+   "consisting",
+   "quite",
+   "useless",
+   "words,",
+   "one",
+   "verse",
+   "Dhamma,",
+   "hearing",
+   "which",
+   "one",
+   "brought",
+   "peace.”",
+   "(Dhammapada",
+   "102)"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-03-Kundalakesi-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Supreme",
+   "Battle",
+   "The",
+   "Buddha",
+   "continued,",
+   "connecting",
+   "her",
+   "past",
+   "victory",
+   "her",
+   "present",
+   "liberation:",
+   "“One",
+   "may",
+   "conquer",
+   "thousand",
+   "men",
+   "thousand",
+   "times",
+   "battle,",
+   "but",
+   "having",
+   "conquered",
+   "own",
+   "self,",
+   "one",
+   "would",
+   "supreme",
+   "battle.”",
+   "(Dhammapada",
+   "103)",
+   "athousand"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-03-Kundalakesi-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Conclusion",
+   "The",
+   "story",
+   "teaches",
+   "that",
+   "survival",
+   "requires",
+   "wit,",
+   "but",
+   "liberation",
+   "requires",
+   "wisdom.",
+   "One",
+   "may",
+   "know",
+   "thousand",
+   "theories,",
+   "but",
+   "peace",
+   "comes",
+   "only",
+   "from",
+   "conquering",
+   "the",
+   "self.",
+   "xf,",
+   "Kundalakesi"
+  ]
+ }
+]

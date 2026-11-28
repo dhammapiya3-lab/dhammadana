@@ -1,0 +1,373 @@
+[
+ {
+  "img": "images/Dhp-a-12-07-Sanghabheda-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     223,
+     193
+    ],
+    "bbox": [
+     694,
+     572,
+     1954,
+     972
+    ],
+    "shape": "box",
+    "en": "The Story of the Sangha Schism teaching 3 on the nature 8s 3 2 of good and bad from Dhammapada Verse 163",
+    "conf": 60
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-12-07-Sanghabheda-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "While",
+   "residing",
+   "the",
+   "serene",
+   "Veluvana",
+   "grove,",
+   "the",
+   "Buddha",
+   "delivered",
+   "teaching",
+   "regarding",
+   "deep",
+   "fracture",
+   "the",
+   "community.",
+   "The",
+   "monk",
+   "Devadatta",
+   "had",
+   "set",
+   "his",
+   "mind",
+   "destructive",
+   "path:",
+   "intended",
+   "divide",
+   "the",
+   "monastic",
+   "order",
+   "and",
+   "cause",
+   "schism",
+   "the",
+   "Sangha."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-07-Sanghabheda-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "One",
+   "morning,",
+   "Venerable",
+   "Ananda",
+   "took",
+   "his",
+   "bowl",
+   "and",
+   "robe",
+   "and",
+   "entered",
+   "the",
+   "city",
+   "Rajagaha.",
+   "walked",
+   "his",
+   "alms",
+   "round",
+   "among",
+   "the",
+   "local",
+   "householders,",
+   "Devadatta",
+   "spotted",
+   "him",
+   "from",
+   "across",
+   "the",
+   "street",
+   "and",
+   "approached",
+   "with",
+   "dark",
+   "intention."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-07-Sanghabheda-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Devadatta",
+   "did",
+   "not",
+   "hide",
+   "his",
+   "plot.",
+   "declared",
+   "his:",
+   "separation",
+   "directly",
+   "Ananda:",
+   "“From",
+   "this",
+   "day",
+   "forth,",
+   "friend",
+   "Ananda,",
+   "shall",
+   "observe",
+   "the",
+   "Observance",
+   "Day",
+   "and",
+   "carry",
+   "the",
+   "business",
+   "the",
+   "Sangha",
+   "apart",
+   "from",
+   "the",
+   "Fortunate",
+   "One,",
+   "apart",
+   "from",
+   "the",
+   "Sangha",
+   "bhikkhus.”",
+   "AAS"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-07-Sanghabheda-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Heavy",
+   "with",
+   "the",
+   "news,",
+   "Ananda",
+   "returned",
+   "from",
+   "his",
+   "alms",
+   "round",
+   "and",
+   "went",
+   "straight",
+   "the",
+   "Teacher.",
+   "ig)",
+   "recounted",
+   "Devadatta’s",
+   "words:",
+   "“Today,",
+   "Fortunate",
+   "One,",
+   "Devadatta",
+   "will",
+   "rend",
+   "the",
+   "Sangha",
+   "asunder.”",
+   "hy,"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-07-Sanghabheda-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     258,
+     159
+    ],
+    "bbox": [
+     278,
+     397,
+     1270,
+     840
+    ],
+    "shape": "bubble",
+    "en": "For the Good Doing Good: Easy",
+    "conf": 96
+   },
+   {
+    "seed": [
+     613,
+     155
+    ],
+    "bbox": [
+     1375,
+     397,
+     2377,
+     840
+    ],
+    "shape": "bubble",
+    "en": "For the Good Doing Bad Exceedingly Difficult",
+    "conf": 92
+   },
+   {
+    "seed": [
+     259,
+     293
+    ],
+    "bbox": [
+     503,
+     916,
+     1276,
+     1352
+    ],
+    "shape": "bubble",
+    "en": "For the Bad (like Devadatta) Doing Bad Easy 2",
+    "conf": 59
+   },
+   {
+    "seed": [
+     591,
+     293
+    ],
+    "bbox": [
+     1375,
+     916,
+     2384,
+     1352
+    ],
+    "shape": "bubble",
+    "en": "For the Bad (like Devadatta) Doing Good: Exceedingly Difficult ACA",
+    "conf": 56
+   }
+  ],
+  "loose": [
+   "Hearing",
+   "this,",
+   "the",
+   "Buddha",
+   "breathed",
+   "forth",
+   "exalted",
+   "utterance",
+   "human",
+   "nature"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-07-Sanghabheda-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     310,
+     135
+    ],
+    "bbox": [
+     906,
+     364,
+     1746,
+     1180
+    ],
+    "shape": "box",
+    "en": "The Teacher then distilled this truth to Ananda: “What is not good for one, is easy to do; what is good for one, is hard to do.” So saying, he pronounced the following verse.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "fay"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-07-Sanghabheda-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Dhammapada",
+   "163",
+   "Easily",
+   "done",
+   "are",
+   "things",
+   "not",
+   "good,",
+   "unbeneficial",
+   "for",
+   "oneself,",
+   "but",
+   "that",
+   "which",
+   "beneficial",
+   "exceedingly",
+   "hard",
+   "do."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-07-Sanghabheda-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     262,
+     315
+    ],
+    "bbox": [
+     423,
+     823,
+     2205,
+     1468
+    ],
+    "shape": "bubble",
+    "en": "Despite Devadatta’s destructive intentions, the\" Buddha’s wisdom transformed the moment. At the end of this profound teaching on the nature of our choices, many in the assembly—monks, nuns, and householders alike—reached the fruition of Stream-entry.",
+    "conf": 45
+   }
+  ],
+  "loose": []
+ }
+]

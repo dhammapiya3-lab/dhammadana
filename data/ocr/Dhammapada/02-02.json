@@ -1,0 +1,279 @@
+[
+ {
+  "img": "images/Dhp-a-02-02-Kumbhaghosaka-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Voice",
+   "Rich",
+   "Man",
+   "Story",
+   "Worth",
+   "and",
+   "Rightful",
+   "Fame",
+   "AStory",
+   "Hidden"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-02-Kumbhaghosaka-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Flee,",
+   "son.",
+   "Save",
+   "your",
+   "life.",
+   "Our",
+   "treasure",
+   "your",
+   "future."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-02-Kumbhaghosaka-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Years",
+   "Solitude."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-02-Kumbhaghosaka-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "fortune",
+   "400",
+   "million",
+   "burden",
+   "knowledge"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-02-Kumbhaghosaka-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "live",
+   "live",
+   "unknown"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-02-Kumbhaghosaka-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "king’s",
+   "ear",
+   "hears",
+   "what",
+   "cannot",
+   "seen."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-02-Kumbhaghosaka-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "thousand",
+   "coins",
+   "uncover",
+   "one",
+   "man’s",
+   "truth"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-02-Kumbhaghosaka-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "can",
+   "the",
+   "sharpest",
+   "knife.",
+   "Kindness"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-02-Kumbhaghosaka-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "life,",
+   "undone,",
+   "one",
+   "thread",
+   "time."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-02-Kumbhaghosaka-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "first",
+   "crack",
+   "the",
+   "wall",
+   "silence."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-02-Kumbhaghosaka-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "from",
+   "into",
+   "Vas"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-02-Kumbhaghosaka-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     311,
+     346
+    ],
+    "bbox": [
+     665,
+     992,
+     1825,
+     1481
+    ],
+    "shape": "bubble",
+    "en": "So His poverty was choice. His wealth, pha fact. His character, UO his own.",
+    "conf": 36
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-02-02-Kumbhaghosaka-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "the",
+   "The",
+   "Buddha",
+   "revealed",
+   "its",
+   "meaning."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-02-Kumbhaghosaka-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "For",
+   "who",
+   "active,",
+   "mindful",
+   "pure",
+   "deeds",
+   "and",
+   "considerate,",
+   "self-controlled,",
+   "living",
+   "Dhamma,",
+   "his",
+   "increases",
+   "Verse",
+   "fame",
+   "For",
+   "Dhammapada,"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-02-Kumbhaghosaka-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "end,",
+   "honor",
+   "not",
+   "what",
+   "you",
+   "have,",
+   "but",
+   "who",
+   "you",
+   "are"
+  ]
+ }
+]

@@ -1,0 +1,507 @@
+[
+ {
+  "img": "images/Dhp-a-03-04-Nephew-Sangharakkhita-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     466,
+     143
+    ],
+    "bbox": [
+     691,
+     443,
+     1759,
+     1263
+    ],
+    "shape": "bubble",
+    "en": "af re Gh oes The Story",
+    "conf": 38
+   }
+  ],
+  "loose": [
+   "Far-Wandering",
+   "Mind",
+   "Nephew",
+   "Sangharakkhita",
+   "the",
+   "Art",
+   "Restraint"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-04-Nephew-Sangharakkhita-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Gift",
+   "Pure",
+   "Intention",
+   "After",
+   "completing",
+   "his",
+   "rains",
+   "retreat",
+   "the",
+   "young",
+   "monk",
+   "Sangharakkhita",
+   "received",
+   "two",
+   "robes.",
+   "Wishing",
+   "honor",
+   "his",
+   "uncle",
+   "and",
+   "preceptor,",
+   "decides",
+   "offer",
+   "him",
+   "the",
+   "finer",
+   "eight-cubit",
+   "long",
+   "robe—as",
+   "genuine",
+   "act",
+   "devotion"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-04-Nephew-Sangharakkhita-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“My",
+   "set",
+   "robes",
+   "complete.",
+   "You",
+   "wear",
+   "this",
+   "yourself.”",
+   "The",
+   "nephew",
+   "presents",
+   "his",
+   "gift,",
+   "but",
+   "the",
+   "elder",
+   "gently",
+   "refuses.",
+   "The",
+   "nephew",
+   "insists,",
+   "explaining,",
+   "“Great",
+   "will",
+   "the",
+   "fruit",
+   "shall",
+   "receive",
+   "thereby.”",
+   "Yet",
+   "his",
+   "preceptor",
+   "remains",
+   "firm,",
+   "unwilling",
+   "accept",
+   "what",
+   "does",
+   "not",
+   "need"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-04-Nephew-Sangharakkhita-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Uncharitable",
+   "Thought",
+   "the",
+   "nephew",
+   "stands",
+   "fanning",
+   "his",
+   "meditating",
+   "uncle,",
+   "thought",
+   "takes",
+   "root:",
+   "“He",
+   "preceptor,",
+   "yet",
+   "not",
+   "willing",
+   "share",
+   "possessions.",
+   "will",
+   "not",
+   "share",
+   "with",
+   "me,",
+   "why",
+   "should",
+   "remain",
+   "bhikkhu?",
+   "will",
+   "become",
+   "householder",
+   "once",
+   "more"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-04-Nephew-Sangharakkhita-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     277,
+     338
+    ],
+    "bbox": [
+     906,
+     1088,
+     1415,
+     1326
+    ],
+    "shape": "box",
+    "en": "living. this robe",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "New",
+   "ife",
+   "Imagined",
+   "His",
+   "mind",
+   "constructs",
+   "escape.",
+   "must",
+   "find",
+   "way",
+   "make",
+   "The",
+   "thought",
+   "arises:",
+   "will",
+   "sell",
+   "eight",
+   "cubits",
+   "long",
+   "and",
+   "buy"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-04-Nephew-Sangharakkhita-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     327,
+     121
+    ],
+    "bbox": [
+     932,
+     374,
+     2096,
+     962
+    ],
+    "shape": "bubble",
+    "en": "and will 14",
+    "conf": 64
+   }
+  ],
+  "loose": [
+   "The",
+   "Prolific",
+   "Goat",
+   "and",
+   "the",
+   "Phantom",
+   "Family",
+   "The",
+   "daydream",
+   "builds",
+   "momentum.",
+   "“Goats",
+   "are",
+   "thinks.",
+   "will",
+   "sell",
+   "their",
+   "young,",
+   "and",
+   "take",
+   "wife.",
+   "She",
+   "will",
+   "bear",
+   "name",
+   "him",
+   "after",
+   "uncle.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-04-Nephew-Sangharakkhita-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Argument",
+   "Dream",
+   "his",
+   "mind,",
+   "journeys",
+   "cart",
+   "with",
+   "his",
+   "new",
+   "family.",
+   "asks",
+   "his",
+   "wife,",
+   "“Just",
+   "bring",
+   "son;",
+   "wish",
+   "carry",
+   "him.”",
+   "She",
+   "refuses",
+   "and,",
+   "struggling",
+   "with",
+   "the",
+   "child’s",
+   "weight,",
+   "lets",
+   "him",
+   "fall",
+   "near",
+   "the",
+   "cart’s",
+   "wheel."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-04-Nephew-Sangharakkhita-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     278,
+     82
+    ],
+    "bbox": [
+     774,
+     192,
+     1931,
+     417
+    ],
+    "shape": "bubble",
+    "en": "head. The daydream evaporates speaks with calm",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "“What",
+   "has",
+   "beating?”",
+   "The",
+   "fan",
+   "strikes",
+   "the",
+   "instantly.",
+   "The",
+   "elder,",
+   "fully",
+   "aware",
+   "the",
+   "The",
+   "nephew",
+   "frozen,",
+   "horrified",
+   "his",
+   "actions",
+   "and",
+   "the",
+   "his",
+   "thoughts.",
+   "exposure"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-04-Nephew-Sangharakkhita-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Before",
+   "the",
+   "Teacher",
+   "The",
+   "distraught",
+   "nephew",
+   "brought",
+   "before",
+   "the",
+   "Buddha,",
+   "where",
+   "confesses",
+   "his",
+   "entire",
+   "mental",
+   "journey.",
+   "The",
+   "Buddha",
+   "listens,",
+   "then",
+   "explains",
+   "the",
+   "nature",
+   "the",
+   "mind",
+   "has",
+   "just",
+   "experienced:",
+   "roams",
+   "far,",
+   "lonesome",
+   "and",
+   "without",
+   "body,",
+   "dwelling",
+   "the",
+   "hidden",
+   "cave",
+   "the",
+   "heart."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-04-Nephew-Sangharakkhita-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Dhammapada",
+   "Verse",
+   "Durangamam",
+   "ekacaram,",
+   "guhasayam,",
+   "cittam",
+   "essanti,",
+   "mokkhanti",
+   "restrain",
+   "the",
+   "that",
+   "roams",
+   "far",
+   "away,",
+   "and",
+   "lonesome",
+   "without",
+   "body,",
+   "hidden,",
+   "gain",
+   "release",
+   "from",
+   "the",
+   "bonds",
+   "Mara",
+   "Marabandhana.",
+   "who"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-04-Nephew-Sangharakkhita-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     367,
+     381
+    ],
+    "bbox": [
+     1075,
+     1197,
+     1630,
+     1402
+    ],
+    "shape": "bubble",
+    "en": "the overcomes",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "Released",
+   "Upon",
+   "hearing",
+   "this",
+   "Sangharakkhita’s",
+   "mind",
+   "cleared.",
+   "grasps",
+   "the",
+   "lesson,",
+   "discontent,",
+   "and",
+   "attains",
+   "Stream-entry",
+   "Enlightenment.",
+   "Mind",
+   "teaching,"
+  ]
+ }
+]

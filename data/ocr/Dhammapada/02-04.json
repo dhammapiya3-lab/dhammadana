@@ -1,0 +1,367 @@
+[
+ {
+  "img": "images/Dhp-a-02-04-Fools-Festival-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "tale",
+   "two",
+   "paths.",
+   "aff",
+   "Savatthi,"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-04-Fools-Festival-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     574,
+     395
+    ],
+    "bbox": [
+     1703,
+     734,
+     2278,
+     1412
+    ],
+    "shape": "bubble",
+    "en": "For 5 seven days,",
+    "conf": 68
+   }
+  ],
+  "loose": [
+   "fools"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-04-Fools-Festival-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "They",
+   "went",
+   "about",
+   "uttering",
+   "all",
+   "coarse",
+   "talk,",
+   "showing",
+   "respect",
+   "for",
+   "kinsfolk,",
+   "friends,",
+   "bhikkhus.",
+   "manner",
+   "manner"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-04-Fools-Festival-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "who",
+   "could",
+   "not",
+   "endure",
+   "the",
+   "coarse",
+   "talk",
+   "would",
+   "pay",
+   "them",
+   "depart."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-04-Fools-Festival-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "noble",
+   "disciples",
+   "sent",
+   "word",
+   "the",
+   "Teacher:",
+   "“Let",
+   "the",
+   "Fortunate",
+   "One",
+   "refrain",
+   "for",
+   "period",
+   "seven",
+   "days",
+   "from",
+   "entering",
+   "the",
+   "city.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-04-Fools-Festival-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Instead,",
+   "they",
+   "remained",
+   "the",
+   "monastery."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-04-Fools-Festival-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "And",
+   "for",
+   "seven",
+   "days,",
+   "the",
+   "noble",
+   "disciples",
+   "caused",
+   "food",
+   "prepared",
+   "for",
+   "the",
+   "Sangha",
+   "bhikkhus",
+   "and",
+   "sent",
+   "them."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-04-Fools-Festival-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "eighth",
+   "day,",
+   "when",
+   "the",
+   "festival",
+   "was",
+   "end,",
+   "they",
+   "invited",
+   "the",
+   "Sangha",
+   "their",
+   "guests."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-04-Fools-Festival-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     130,
+     386
+    ],
+    "bbox": [
+     331,
+     1091,
+     2308,
+     1428
+    ],
+    "shape": "bubble",
+    "en": "“Venerable Sir, we have spent the past seven days most unpleasantly. ears burst talk foolish folk.”",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-02-04-Fools-Festival-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     205,
+     311
+    ],
+    "bbox": [
+     423,
+     122,
+     1263,
+     1481
+    ],
+    "shape": "bubble",
+    "en": "wee",
+    "conf": 66
+   }
+  ],
+  "loose": [
+   "The",
+   "and",
+   "then",
+   "replied:",
+   "manner",
+   "foolish,",
+   "stupid",
+   "men",
+   "conduct",
+   "But",
+   "they",
+   "that",
+   "are",
+   "intelligent",
+   "their",
+   "greatest",
+   "treasure...",
+   "preserve"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-04-Fools-Festival-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Pama",
+   "mme",
+   "medhavi",
+   "dhanam",
+   "settham",
+   "rakkhati",
+   "Foolish,",
+   "stupid",
+   "people",
+   "cultivate",
+   "heedlessness,",
+   "the",
+   "sage",
+   "guards",
+   "heedfulness",
+   "just",
+   "his",
+   "greatest",
+   "wealth.",
+   "bala"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-04-Fools-Festival-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "‘Ma",
+   "kamaratis",
+   "appamatto",
+   "jhayanto",
+   "pappoti",
+   "vipulam",
+   "sukham.",
+   "not",
+   "cultivate",
+   "heedlessness,",
+   "not",
+   "take",
+   "delight",
+   "pleasure,",
+   "the",
+   "heedful",
+   "one,",
+   "meditating,",
+   "surely",
+   "attains",
+   "great",
+   "happiness."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-04-Fools-Festival-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     128,
+     377
+    ],
+    "bbox": [
+     331,
+     1203,
+     2308,
+     1428
+    ],
+    "shape": "bubble",
+    "en": "the conclusion of the verse, many became Stream-enterers,",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "many"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-04-Fools-Festival-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": []
+ }
+]

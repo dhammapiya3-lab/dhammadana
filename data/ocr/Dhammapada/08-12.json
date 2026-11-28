@@ -1,0 +1,601 @@
+[
+ {
+  "img": "images/Dhp-a-08-12-Patacara-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Story",
+   "Elder",
+   "From",
+   "Madness",
+   "Awakening",
+   "One",
+   "might",
+   "live",
+   "for",
+   "hundred",
+   "years",
+   "without",
+   "seeing",
+   "rise",
+   "and",
+   "fall",
+   "444",
+   "but",
+   "life",
+   "one",
+   "day",
+   "better",
+   "for",
+   "the",
+   "one",
+   "seeing",
+   "rise",
+   "and",
+   "fall"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-12-Patacara-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     78,
+     86
+    ],
+    "bbox": [
+     228,
+     248,
+     1091,
+     1266
+    ],
+    "shape": "box",
+    "en": "The Merchant’s hant’s Daughter fer In Savatthi, Patacara was the daughter of merchant worth four hundred million. Guarded in seven-story palace, she was sixteen and promised to suitor of equal rank. Yet, she chose the heart over status. Disguising herself in soiled garments and smearing her body with red powder, she fled the city with her lover, servant, to live humble life in distant village.",
+    "conf": 39
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-08-12-Patacara-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     534,
+     78
+    ],
+    "bbox": [
+     1604,
+     251,
+     2430,
+     1266
+    ],
+    "shape": "box",
+    "en": "Th Hard oad Far from luxury, she pounded rice and fetched water. When she became pregnant, she begged to return to her parents for the birth, but her husband, fearing her father’s wrath, refused. Twice she tried to leave; twice she gave birth on the road and returned. But as her third pregnancy neared its term, tragedy was gathering on the horizon like storm out of season.",
+    "conf": 95
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-08-12-Patacara-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     40,
+     40
+    ],
+    "bbox": [
+     50,
+     99,
+     1270,
+     774
+    ],
+    "shape": "box",
+    "en": "The Storm and the Snake Caught in fearful storm, Patacara went into labor. Her husband sought shelter to cut wood but was bitten by snake hidden in an anthill. He died instantly, his flesh turning purple. Alone in the wind and rain, she gave birth to her second son. She waited all night, shielding her children with her body, unaware she was already widow.",
+    "conf": 93
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-08-12-Patacara-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     57,
+     40
+    ],
+    "bbox": [
+     50,
+     3,
+     1266,
+     774
+    ],
+    "shape": "bubble",
+    "en": "The Crossing Finding her husband dead, she journeyed on. At the swollen river Aciravati, she could not carry both sons. She left the older boy on the bank and carried the newborn across. As she returned, hawk swooped down on the baby. She screamed, ‘Begone!’ The hawk took the child. The older boy, thinking she called him, stepped into the water and was swept away.",
+    "conf": 64
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-08-12-Patacara-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ashes",
+   "Home",
+   "“One",
+   "son",
+   "carried",
+   "off",
+   "hawk,",
+   "the",
+   "other",
+   "swept",
+   "away.",
+   "the",
+   "roadside",
+   "husband",
+   "lies",
+   "dead.”",
+   "She",
+   "met",
+   "traveler",
+   "from",
+   "Savatthi",
+   "and",
+   "asked",
+   "about",
+   "her",
+   "family.",
+   "hesitated,",
+   "then",
+   "delivered",
+   "the",
+   "final",
+   "blow:",
+   "“The",
+   "storm",
+   "wrecked",
+   "the",
+   "house.",
+   "Your",
+   "parents",
+   "and",
+   "brother",
+   "perished.",
+   "Look",
+   "there—the",
+   "smoke",
+   "their",
+   "funeral"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-12-Patacara-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Madness",
+   "Her",
+   "mind",
+   "shattered.",
+   "She",
+   "wandered",
+   "Savatthi,",
+   "unaware",
+   "her",
+   "clothes",
+   "had",
+   "fallen",
+   "away,",
+   "naked",
+   "her",
+   "birth.",
+   "Crowds",
+   "yelled,",
+   "“Crazy",
+   "fool!”",
+   "and",
+   "pelted",
+   "her",
+   "with",
+   "dust.",
+   "But",
+   "the",
+   "Buddha,",
+   "teaching",
+   "Jetavana,",
+   "saw",
+   "her",
+   "not",
+   "madwoman,",
+   "but",
+   "one",
+   "who",
+   "had",
+   "fulfilled",
+   "the",
+   "perfections",
+   "for",
+   "100,000",
+   "aeons,",
+   "ready",
+   "awaken."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-12-Patacara-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“The",
+   "Refuge”",
+   "The",
+   "Buddha",
+   "said,",
+   "“Sister,",
+   "return",
+   "your",
+   "right",
+   "mind.”",
+   "Instantly,",
+   "she",
+   "recovered",
+   "her",
+   "senses",
+   "and",
+   "shame.",
+   "man",
+   "threw",
+   "her",
+   "cloak.",
+   "She",
+   "bowed",
+   "the",
+   "Teacher’s",
+   "feet,",
+   "recounting",
+   "her",
+   "endless",
+   "loss.",
+   "“Venerable",
+   "Sir,",
+   "refuge.",
+   "family",
+   "gone.",
+   "alone.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-12-Patacara-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Ocean",
+   "Tears",
+   "The",
+   "Buddha",
+   "spoke:",
+   "“Patacara,",
+   "you",
+   "have",
+   "wept",
+   "over",
+   "the",
+   "loss",
+   "sons",
+   "and",
+   "others",
+   "dear",
+   "you,",
+   "shedding",
+   "tears",
+   "more",
+   "abundant",
+   "than",
+   "the",
+   "waters",
+   "the",
+   "four",
+   "oceans.”",
+   "the",
+   "four",
+   "oceans",
+   "water",
+   "little,",
+   "and",
+   "the",
+   "water",
+   "tears",
+   "great,",
+   "not",
+   "small,",
+   "for",
+   "the",
+   "one",
+   "touched",
+   "suffering,",
+   "grieving,",
+   "for",
+   "what",
+   "reason,",
+   "lady,",
+   "are",
+   "you",
+   "heedless?"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-12-Patacara-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“No",
+   "Refuge",
+   "Kin”",
+   "taught",
+   "that",
+   "kin",
+   "can",
+   "shelter",
+   "one",
+   "who",
+   "the",
+   "way",
+   "the",
+   "world",
+   "beyond.",
+   "Children",
+   "are",
+   "not",
+   "true",
+   "refuge,",
+   "nor",
+   "fathers,",
+   "and",
+   "not",
+   "kin,",
+   "for",
+   "one",
+   "overcome",
+   "death",
+   "there",
+   "refuge",
+   "relatives.",
+   "Hearing",
+   "this,",
+   "Patacara",
+   "became",
+   "Stream-enterer",
+   "and",
+   "requested",
+   "ordination."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-12-Patacara-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Lesson",
+   "the",
+   "Water",
+   "Now",
+   "ordained,",
+   "she",
+   "washed",
+   "her",
+   "feet",
+   "one",
+   "day.",
+   "The",
+   "water",
+   "ran",
+   "little",
+   "way",
+   "and",
+   "vanished.",
+   "The",
+   "second",
+   "pour",
+   "went",
+   "farther.",
+   "The",
+   "third,",
+   "farther",
+   "still.",
+   "Insight:",
+   "She",
+   "saw",
+   "the",
+   "truth:",
+   "“So",
+   "mortals",
+   "die—in",
+   "youth,",
+   "prime,",
+   "and",
+   "old",
+   "age.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-12-Patacara-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Vision",
+   "The",
+   "Teacher",
+   "sent",
+   "forth",
+   "radiant",
+   "image",
+   "himself,",
+   "speaking",
+   "directly",
+   "her",
+   "eart:",
+   "“Patacara:",
+   "were",
+   "better",
+   "far",
+   "live",
+   "but",
+   "single",
+   "day,",
+   "but",
+   "single",
+   "moment,",
+   "see",
+   "the",
+   "rise",
+   "and",
+   "fall",
+   "the",
+   "than",
+   "live",
+   "hundred",
+   "years",
+   "and",
+   "not",
+   "see",
+   "them.”",
+   "heart:",
+   "five"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-12-Patacara-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "vassasatam",
+   "jive",
+   "apassam",
+   "udayabbayam,",
+   "ekaham",
+   "jivitam",
+   "seyyo",
+   "passato",
+   "udayabbayam.",
+   "One",
+   "might",
+   "live",
+   "for",
+   "hundred",
+   "years",
+   "without",
+   "seeing",
+   "rise",
+   "and",
+   "fall,",
+   "but",
+   "life",
+   "one",
+   "day’s",
+   "better",
+   "for",
+   "the",
+   "one",
+   "seeing",
+   "rise",
+   "and",
+   "fall",
+   "Dhammapada",
+   "113"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-12-Patacara-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     389,
+     135
+    ],
+    "bbox": [
+     1246,
+     261,
+     1445,
+     549
+    ],
+    "shape": "bubble",
+    "en": "Sec",
+    "conf": 64
+   }
+  ],
+  "loose": [
+   "Awakening"
+  ]
+ }
+]

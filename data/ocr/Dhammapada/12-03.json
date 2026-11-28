@@ -1,0 +1,530 @@
+[
+ {
+  "img": "images/Dhp-a-12-03-Padhanika-Tissa-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     340,
+     162
+    ],
+    "bbox": [
+     939,
+     430,
+     1709,
+     1131
+    ],
+    "shape": "bubble",
+    "en": "The Burden of the Untrained Guide Visual Exploration of Dhammapada Verse 159",
+    "conf": 88
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-12-03-Padhanika-Tissa-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Admonition",
+   "Elder",
+   "Padhanika",
+   "Tissa",
+   "led",
+   "five",
+   "hundred",
+   "monks",
+   "the",
+   "forest.",
+   "commanded",
+   "them:",
+   "You",
+   "have",
+   "obtained",
+   "subject",
+   "meditation",
+   "from",
+   "the",
+   "Living",
+   "Buddha;",
+   "therefore",
+   "heedful.",
+   "Then,",
+   "immediately",
+   "lay",
+   "down",
+   "and",
+   "went",
+   "sleep.",
+   "Empty",
+   "into"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-03-Padhanika-Tissa-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     644,
+     315
+    ],
+    "bbox": [
+     1885,
+     959,
+     2281,
+     1260
+    ],
+    "shape": "bubble",
+    "en": "Elder wakes _only to scold them",
+    "conf": 39
+   }
+  ],
+  "loose": [
+   "The",
+   "Cycle",
+   "Exhaustion",
+   "(First,",
+   "Middle,",
+   "and",
+   "Last",
+   "Watches)",
+   "Monks",
+   "practice.",
+   "Elder",
+   "returns",
+   "sleep",
+   "The",
+   "monks",
+   "found",
+   "neace.",
+   "their",
+   "teacher’s",
+   "diligently"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-03-Padhanika-Tissa-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Consequence",
+   "Poor",
+   "Leadership",
+   "The",
+   "monks",
+   "whispered:",
+   "are",
+   "lost;",
+   "our",
+   "teacher",
+   "declaims",
+   "empty",
+   "declamations.",
+   "Exhausted",
+   "endless",
+   "disruptions",
+   "and",
+   "lack",
+   "sleep,",
+   "their",
+   "minds",
+   "became",
+   "distraught.",
+   "Not",
+   "single",
+   "bhikkhu",
+   "was",
+   "able",
+   "develop",
+   "spiritual",
+   "distinction."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-03-Padhanika-Tissa-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Return",
+   "Jetavana",
+   "Defeated,",
+   "the",
+   "monks",
+   "returned",
+   "the",
+   "Teacher",
+   "and",
+   "recounted",
+   "their",
+   "failure.",
+   "The",
+   "Buddha",
+   "listened,",
+   "then",
+   "revealed",
+   "karmic",
+   "truth:",
+   "This",
+   "not",
+   "the",
+   "first",
+   "time",
+   "this",
+   "elder",
+   "has",
+   "made",
+   "your",
+   "efforts",
+   "miscarry;",
+   "did",
+   "the",
+   "same",
+   "thing",
+   "before."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-03-Padhanika-Tissa-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ancient",
+   "Benares",
+   "past",
+   "life,",
+   "the",
+   "Buddha",
+   "was",
+   "world-renowned",
+   "teacher",
+   "instructing",
+   "five",
+   "hundred",
+   "young",
+   "Brahmins.",
+   "They",
+   "relied",
+   "rooster",
+   "rouse",
+   "them",
+   "betimes",
+   "for",
+   "their",
+   "early",
+   "morning",
+   "studies.",
+   "Then,",
+   "their",
+   "loyal",
+   "rooster",
+   "died."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-03-Padhanika-Tissa-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Cemetery",
+   "Cock",
+   "Seeking",
+   "replacement,",
+   "student",
+   "brought",
+   "home",
+   "wild",
+   "cock",
+   "from",
+   "cemetery-grove.",
+   "Because",
+   "was",
+   "bred",
+   "the",
+   "chaos",
+   "cemetery,",
+   "the",
+   "bird",
+   "possessed",
+   "knowledge",
+   "times",
+   "seasons."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-03-Padhanika-Tissa-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Chaos",
+   "Dawn",
+   "Noon",
+   "Midnight",
+   "Midnight",
+   "(Wrong",
+   "Time):",
+   "Daybreak",
+   "(Right",
+   "Time):",
+   "Broad",
+   "Day",
+   "(Wrong",
+   "Time):",
+   "Awakened",
+   "early,",
+   "students",
+   "Too",
+   "tired",
+   "focus,",
+   "they",
+   "Incessant",
+   "crowing",
+   "prevents",
+   "study",
+   "until",
+   "exhausted.",
+   "fall",
+   "asleep.",
+   "quiet",
+   "repetition.",
+   "The",
+   "students’",
+   "studies",
+   "ground",
+   "complete",
+   "standstill.",
+   "oon"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-03-Padhanika-Tissa-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Exhausted",
+   "and",
+   "The",
+   "Teacher",
+   "noted",
+   "for",
+   "their",
+   "frustrated,",
+   "the",
+   "students",
+   "wrung",
+   "edification:",
+   "“No",
+   "mother",
+   "and",
+   "the",
+   "bird’s",
+   "neck.",
+   "father",
+   "raised",
+   "him,",
+   "not",
+   "under",
+   "teacher’s",
+   "influence,",
+   "neither",
+   "the",
+   "right",
+   "wrong",
+   "time,",
+   "did",
+   "the",
+   "cock",
+   "know",
+   "when",
+   "call",
+   "out.”",
+   "cher"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-03-Padhanika-Tissa-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     160,
+     107
+    ],
+    "bbox": [
+     516,
+     258,
+     2133,
+     936
+    ],
+    "shape": "bubble",
+    "en": "The Nuisance The Victims aye ey RAY Elder Tissa Ti Students",
+    "conf": 31
+   }
+  ],
+  "loose": [
+   "The",
+   "Karmic",
+   "Reveal",
+   "The",
+   "present:",
+   "The",
+   "Monks",
+   "Cock",
+   "Karmic",
+   "Mirro",
+   "onks"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-03-Padhanika-Tissa-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Path",
+   "True",
+   "Leadership",
+   "Subdue",
+   "the",
+   "Self",
+   "Influence",
+   "Others",
+   "One",
+   "cannot",
+   "project",
+   "discipline",
+   "outward",
+   "without",
+   "first",
+   "cultivating",
+   "inward.",
+   "man",
+   "admonish",
+   "others,",
+   "must",
+   "first",
+   "subdue",
+   "himself.",
+   "Only",
+   "well-subdued",
+   "mind",
+   "can",
+   "safely",
+   "guide",
+   "another."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-03-Padhanika-Tissa-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     217,
+     46
+    ],
+    "bbox": [
+     539,
+     102,
+     2156,
+     714
+    ],
+    "shape": "bubble",
+    "en": "-anusdsati, sudanto vata dametha, atta hi kira duddamo. He should do as he would advise another to do then being well-trained, he could train another. for self is difficult to train.",
+    "conf": 50
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-12-03-Padhanika-Tissa-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Final",
+   "Attainment",
+   "Hearing",
+   "this",
+   "profound",
+   "synthesis",
+   "from",
+   "the",
+   "Living",
+   "Buddha,",
+   "the",
+   "heavy",
+   "burden",
+   "poor",
+   "guidance",
+   "was",
+   "lifted",
+   "the",
+   "end",
+   "the",
+   "teaching,",
+   "all",
+   "five",
+   "hundred",
+   "bhikkhus",
+   "reached",
+   "Arahatship"
+  ]
+ }
+]

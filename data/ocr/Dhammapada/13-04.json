@@ -1,0 +1,541 @@
+[
+ {
+  "img": "images/Dhp-a-13-04-Prince-Abhaya-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Story",
+   "Prince’",
+   "journey",
+   "from",
+   "the",
+   "heights",
+   "worldly",
+   "splendor",
+   "the",
+   "profound",
+   "realization",
+   "the",
+   "Dhamma.",
+   "Based",
+   "Dhammapada",
+   "Verse",
+   "171.",
+   "profound",
+   "lesson",
+   "the",
+   "illusions",
+   "power,",
+   "the",
+   "suddenness",
+   "grief,",
+   "and",
+   "ultimate",
+   "awakening."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-13-04-Prince-Abhaya-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     327,
+     51
+    ],
+    "bbox": [
+     691,
+     36,
+     1739,
+     238
+    ],
+    "shape": "bubble",
+    "en": "Royal Reward",
+    "conf": 96
+   },
+   {
+    "seed": [
+     79,
+     386
+    ],
+    "bbox": [
+     192,
+     1240,
+     1025,
+     1468
+    ],
+    "shape": "bubble",
+    "en": "Victory: suppresses aad Prince fierce Abhaya frontier fA cesfily poe cessfully",
+    "conf": 33
+   }
+  ],
+  "loose": [
+   "Greatly",
+   "pleased,",
+   "King",
+   "Bimbisara",
+   "nts",
+   "absolute",
+   "power—conferring",
+   "the",
+   "kingdom",
+   "him",
+   "days,",
+   "alongside",
+   "masterfully",
+   "skilled",
+   "dancing",
+   "Reward:",
+   "grants",
+   "son",
+   "for",
+   "seven"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-13-04-Prince-Abhaya-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     252,
+     356
+    ],
+    "bbox": [
+     321,
+     1147,
+     2328,
+     1438
+    ],
+    "shape": "box",
+    "en": "seven straight days, the prince does not leave his palace. He remains indoo thoroughly enchanted, enjoying the absolute splendor of majesty and the captivating performances of the dancing girl. He is entirely consumed by worldly pleasure.",
+    "conf": 93
+   }
+  ],
+  "loose": [
+   "Days",
+   "even",
+   "Day",
+   "Day",
+   "Day",
+   "Day",
+   "Day",
+   "Day"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-13-04-Prince-Abhaya-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     305,
+     35
+    ],
+    "bbox": [
+     780,
+     23,
+     1822,
+     228
+    ],
+    "shape": "bubble",
+    "en": "om The Eighth Day",
+    "conf": 68
+   }
+  ],
+  "loose": [
+   "Ont",
+   "eighth",
+   "day,",
+   "the",
+   "prince",
+   "enters",
+   "his",
+   "pleasure",
+   "garden.",
+   "the",
+   "girl",
+   "begins",
+   "her",
+   "vibrant",
+   "dance,",
+   "tragedy",
+   "strikes",
+   "without",
+   "warning.",
+   "Severe",
+   "internal",
+   "cutting",
+   "pains",
+   "arise,",
+   "and",
+   "she",
+   "dies",
+   "instantly",
+   "before",
+   "evastation.",
+   "his",
+   "eyes.",
+   "Joy",
+   "abruptly",
+   "replaced",
+   "eighth",
+   "astation."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-13-04-Prince-Abhaya-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     627,
+     301
+    ],
+    "bbox": [
+     1904,
+     922,
+     2572,
+     1256
+    ],
+    "shape": "bubble",
+    "en": "\"The Only Refuge He concludes, “With the single exception of the Teacher, no one can pay extinguish inguish my grief” grief”",
+    "conf": 46
+   }
+  ],
+  "loose": [
+   "understands",
+   "that",
+   "power",
+   "cannot",
+   "cure",
+   "internal",
+   "suffering.",
+   "Sudden",
+   "Loss:",
+   "The",
+   "prince",
+   "paralyzed",
+   "grief.",
+   "Realization:",
+   "devastating",
+   "ure"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-13-04-Prince-Abhaya-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     472,
+     319
+    ],
+    "bbox": [
+     1521,
+     969,
+     2367,
+     1111
+    ],
+    "shape": "bubble",
+    "en": "Approaching the Teacher",
+    "conf": 73
+   }
+  ],
+  "loose": [
+   "The",
+   "prince",
+   "approaches",
+   "the",
+   "desperate",
+   "for",
+   "relief.",
+   "pleads,",
+   "“Venerable",
+   "Sir,",
+   "extinguish",
+   "grief.",
+   "The",
+   "Buddha",
+   "meets",
+   "his",
+   "sorrow",
+   "with",
+   "perfect",
+   "equanimity,",
+   "eparing",
+   "reveal",
+   "profound",
+   "cosmic",
+   "rat",
+   "than",
+   "worldly",
+   "comfort.",
+   "simple",
+   "Buddha,",
+   "Buddha,"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-13-04-Prince-Abhaya-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Ocean",
+   "Tears",
+   "The",
+   "Buddha",
+   "reveals",
+   "the",
+   "vast",
+   "scale",
+   "existence.",
+   "the",
+   "endless",
+   "round",
+   "rebirths,",
+   "there",
+   "counting",
+   "how",
+   "many",
+   "times",
+   "this",
+   "specific",
+   "girl",
+   "has",
+   "died",
+   "this",
+   "exact",
+   "manner.",
+   "The",
+   "tears",
+   "the",
+   "prince",
+   "has",
+   "shed",
+   "for",
+   "her",
+   "over",
+   "countless",
+   "lifetimes",
+   "could",
+   "this",
+   "Ute"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-13-04-Prince-Abhaya-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sinking",
+   "vs.",
+   "The",
+   "Wise:",
+   "Those",
+   "who",
+   "understand",
+   "Fools:",
+   "Simple-minded",
+   "folk",
+   "allow",
+   "nature",
+   "existence",
+   "see",
+   "the",
+   "illusion.",
+   "themselves",
+   "sink",
+   "completely",
+   "into",
+   "the",
+   "Through",
+   "understanding,",
+   "the",
+   "prince’s",
+   "sea",
+   "grief",
+   "when",
+   "faced",
+   "with",
+   "loss.",
+   "profoun",
+   "grief",
+   "begins",
+   "the",
+   "true"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-13-04-Prince-Abhaya-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Etha",
+   "passathimam",
+   "lokam",
+   "cittam",
+   "yattha",
+   "bala",
+   "visidanti",
+   "natthi",
+   "sango",
+   "vijanatam.",
+   "Come,",
+   "look",
+   "upon",
+   "this",
+   "world",
+   "adorned",
+   "like",
+   "gilded",
+   "chariot",
+   "where",
+   "fools",
+   "become",
+   "depressed",
+   "there",
+   "bond",
+   "for",
+   "those",
+   "who",
+   "understand",
+   "Dhammapada",
+   "Verse",
+   "171",
+   "king’s"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-13-04-Prince-Abhaya-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "the",
+   "Cha",
+   "The",
+   "world",
+   "worldly",
+   "pleasures",
+   "exactly",
+   "like",
+   "royal",
+   "chariot—brightly",
+   "painted,",
+   "beautifully",
+   "adorned,",
+   "and",
+   "completely",
+   "captivating",
+   "the",
+   "eye.",
+   "Yet,",
+   "temporary.",
+   "Fools",
+   "are",
+   "mesmerized",
+   "the",
+   "paint",
+   "and",
+   "sink",
+   "into",
+   "despair.",
+   "The",
+   "wise",
+   "see",
+   "through",
+   "the",
+   "adornment",
+   "and",
+   "remain",
+   "unbound."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-13-04-Prince-Abhaya-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Fruition",
+   "Upon",
+   "hearing",
+   "this",
+   "teaching,",
+   "the",
+   "bonds",
+   "grief",
+   "evaporate.",
+   "Prince",
+   "Abhaya",
+   "transcends",
+   "his",
+   "worldly",
+   "sorrow",
+   "and",
+   "established",
+   "the",
+   "fruition",
+   "Stream-entry.",
+   "The",
+   "entire",
+   "assembly,",
+   "having",
+   "witnessed",
+   "this",
+   "transformation,",
+   "reaps",
+   "immense",
+   "benefit",
+   "from",
+   "the",
+   "Understanding"
+  ]
+ }
+]

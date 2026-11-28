@@ -1,0 +1,550 @@
+[
+ {
+  "img": "images/Dhp-a-11-05-Janapada-Kalyani-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Fortress",
+   "Bones"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-11-05-Janapada-Kalyani-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     466,
+     188
+    ],
+    "bbox": [
+     1458,
+     595,
+     2476,
+     1303
+    ],
+    "shape": "box",
+    "en": "follow her family, not out of faith. Known as Joyous Form for her wondrous beauty, she deliberately avoided the Buddha. She knew he taught that physical beauty is impermanent, and she feared his judgment of her pristine appearance.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "Rupananda"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-11-05-Janapada-Kalyani-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "People",
+   "judge",
+   "the",
+   "world",
+   "through",
+   "four",
+   "distinct",
+   "lenses.",
+   "The",
+   "residents",
+   "Savatthi",
+   "praised",
+   "the",
+   "Buddha",
+   "based",
+   "their",
+   "individual",
+   "standards",
+   "satisfaction:",
+   "Sight:",
+   "Sound:",
+   "The",
+   "golden-hued",
+   "The",
+   "voice",
+   "eight",
+   "excellences.",
+   "body.",
+   "Austerity:",
+   "Righteousness:",
+   "The",
+   "austere",
+   "robes.",
+   "Unmatched",
+   "wisdom",
+   "and",
+   "concentration."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-11-05-Janapada-Kalyani-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Intrigued",
+   "the",
+   "endless",
+   "praise",
+   "from",
+   "the",
+   "townspeople,",
+   "decided",
+   "sneak",
+   "into",
+   "the",
+   "monastery.",
+   "She",
+   "hid",
+   "among",
+   "the",
+   "other",
+   "nuns,",
+   "hoping",
+   "observe",
+   "the",
+   "Buddha",
+   "without",
+   "being",
+   "seen",
+   "judged",
+   "for",
+   "her",
+   "beauty."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-11-05-Janapada-Kalyani-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     444,
+     207
+    ],
+    "bbox": [
+     1270,
+     493,
+     1928,
+     1154
+    ],
+    "shape": "bubble",
+    "en": "iad ais",
+    "conf": 38
+   },
+   {
+    "seed": [
+     268,
+     361
+    ],
+    "bbox": [
+     612,
+     777,
+     1928,
+     1362
+    ],
+    "shape": "bubble",
+    "en": "SA knew she was hiding. Recognizing her deep attachment skillful beauty",
+    "conf": 52
+   }
+  ],
+  "loose": [
+   "The",
+   "Buddha",
+   "her",
+   "appearance,",
+   "devised",
+   "using",
+   "beauty",
+   "itself,",
+   "just",
+   "physician",
+   "uses",
+   "one",
+   "thorn",
+   "extract",
+   "another."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-11-05-Janapada-Kalyani-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "projected",
+   "magnificent",
+   "illusion:",
+   "sixteen-year-old",
+   "maiden",
+   "surpassing",
+   "beauty,",
+   "fanning",
+   "him.",
+   "Rupananda",
+   "stared,",
+   "mesmerized",
+   "her",
+   "perfect",
+   "hair",
+   "and",
+   "forehead.",
+   "Comparing",
+   "herself",
+   "the",
+   "phantom,",
+   "she",
+   "felt",
+   "like",
+   "mere",
+   "crow",
+   "standing",
+   "before",
+   "golden",
+   "royal",
+   "goose."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-11-05-Janapada-Kalyani-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "teach",
+   "the",
+   "Dhamma,",
+   "the",
+   "Buddha",
+   "accelerated",
+   "time.",
+   "aged",
+   "the",
+   "phantom",
+   "through",
+   "the",
+   "stages",
+   "life.",
+   "watched",
+   "horror",
+   "the",
+   "pristine",
+   "beauty",
+   "vanished,",
+   "stage",
+   "stage,",
+   "leaving",
+   "only",
+   "trembling,",
+   "decrepit",
+   "shell."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-11-05-Janapada-Kalyani-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     377,
+     38
+    ],
+    "bbox": [
+     1223,
+     102,
+     2159,
+     516
+    ],
+    "shape": "box",
+    "en": "Age then gave way to violent disease. woman dropped her cane, fell to the screaming, and rolled in her own fascination shattered completely, utter disgust at the fragility of the",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "The",
+   "old",
+   "ground",
+   "Ripananda’s",
+   "replaced",
+   "utter",
+   "physical",
+   "form."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-11-05-Janapada-Kalyani-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Finally,",
+   "the",
+   "Buddha",
+   "showed",
+   "the",
+   "phantom’s",
+   "death.",
+   "The",
+   "body",
+   "bloated.",
+   "Pus",
+   "and",
+   "worms",
+   "oozed",
+   "from",
+   "its",
+   "nine",
+   "wound-like",
+   "openings.",
+   "Scavenging",
+   "crows",
+   "and",
+   "dogs",
+   "tore",
+   "the",
+   "flesh",
+   "apart.",
+   "The",
+   "once-glorious",
+   "form",
+   "returned",
+   "violently",
+   "the",
+   "earth."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-11-05-Janapada-Kalyani-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Mirror",
+   "Form",
+   "realized",
+   "her",
+   "own",
+   "body",
+   "shared",
+   "this",
+   "exact",
+   "fate.",
+   "The",
+   "Illusion",
+   "Reality",
+   "The",
+   "body",
+   "permanent,",
+   "beautiful",
+   "The",
+   "body",
+   "impermanent,",
+   "decaying",
+   "asset,",
+   "worthy",
+   "immense",
+   "pride.",
+   "liability,",
+   "destined",
+   "only",
+   "for",
+   "suffering."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-11-05-Janapada-Kalyani-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     211,
+     356
+    ],
+    "bbox": [
+     542,
+     830,
+     2209,
+     1346
+    ],
+    "shape": "bubble",
+    "en": "the three realms of existence appeared to her as burning houses, own body like rotting carrion tied to her neck. Recognizing her realization,",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "her",
+   "but",
+   "knowing",
+   "she",
+   "needed",
+   "external",
+   "support,",
+   "the",
+   "Buddha",
+   "spoke",
+   "directly",
+   "her."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-11-05-Janapada-Kalyani-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Diseased,",
+   "impure,",
+   "putrid,",
+   "behold,",
+   "Nanda,",
+   "the",
+   "body,",
+   "overflowing",
+   "and",
+   "oozing,",
+   "desired",
+   "the",
+   "foolish.",
+   "this,",
+   "that,",
+   "that,",
+   "this.",
+   "Following",
+   "his",
+   "words,",
+   "attained",
+   "the",
+   "fruition",
+   "Stream-entry."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-11-05-Janapada-Kalyani-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "150.",
+   "nagaram",
+   "yattha",
+   "maccu",
+   "ca,",
+   "mano",
+   "makkho",
+   "ohito.",
+   "This",
+   "fortress",
+   "made",
+   "out",
+   "bones,",
+   "plastered",
+   "over",
+   "with",
+   "flesh",
+   "and",
+   "blood,",
+   "but",
+   "hidden",
+   "within",
+   "lie",
+   "old",
+   "age,",
+   "death,",
+   "also",
+   "conceit",
+   "and",
+   "anger."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-11-05-Janapada-Kalyani-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "revealed",
+   "the",
+   "body",
+   "completely",
+   "empty",
+   "essence—a",
+   "mere",
+   "city",
+   "built",
+   "hoisting",
+   "three",
+   "hundred",
+   "bones",
+   "together.",
+   "Upon",
+   "hearing",
+   "this",
+   "final",
+   "synthesis,",
+   "shed",
+   "all",
+   "conceit,",
+   "abandoned",
+   "her",
+   "attachment",
+   "form,",
+   "and",
+   "achieved",
+   "Arahatship."
+  ]
+ }
+]

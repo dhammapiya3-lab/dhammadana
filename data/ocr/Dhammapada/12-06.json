@@ -1,0 +1,310 @@
+[
+ {
+  "img": "images/Dhp-a-12-06-Devadatta-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     269,
+     50
+    ],
+    "bbox": [
+     618,
+     142,
+     2033,
+     493
+    ],
+    "shape": "box",
+    "en": "Ghe Story of Ghe Creeper and the Sala Gree tale of karma, virtue, and self-destruction from the peo (Dhp 162)",
+    "conf": 41
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-12-06-Devadatta-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     166,
+     261
+    ],
+    "bbox": [
+     159,
+     770,
+     1108,
+     1359
+    ],
+    "shape": "box",
+    "en": "eee id fl Whispers in Dhamma Hall At the Veluvana monastery, the Sangha gathered to discuss troubling news. Devadatta, consumed by craving, had been corrupted by wealth from King Ajatasattu. He incited the King to murder his own father. Worse still, conspiring with the King, Devadatta was now seeking to slay the Realised One.",
+    "conf": 31
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-12-06-Devadatta-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     519,
+     113
+    ],
+    "bbox": [
+     1541,
+     245,
+     2447,
+     1286
+    ],
+    "shape": "bubble",
+    "en": "ies _An Ancient Animosity The Teacher approached the assembly and revealed deeper truth: this was not new betrayal. This is not the first time Devadatta has sought to slay me, the Buddha explained. Recounting the Birth Story of the Antelope, he revealed that in past existence, Devadatta was hunter who also sought his life.",
+    "conf": 38
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-12-06-Devadatta-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     333,
+     164
+    ],
+    "bbox": [
+     913,
+     162,
+     1240,
+     1018
+    ],
+    "shape": "bubble",
+    "en": "Stage 2",
+    "conf": 96
+   },
+   {
+    "seed": [
+     562,
+     163
+    ],
+    "bbox": [
+     1719,
+     162,
+     2526,
+     1002
+    ],
+    "shape": "bubble",
+    "en": "Stage 3",
+    "conf": 97
+   },
+   {
+    "seed": [
+     71,
+     163
+    ],
+    "bbox": [
+     122,
+     228,
+     509,
+     1008
+    ],
+    "shape": "bubble",
+    "en": "Stage 1 wl)",
+    "conf": 50
+   }
+  ],
+  "loose": [
+   "The",
+   "Anatomy",
+   "Self-Destruction.",
+   "Wickedness",
+   "does",
+   "not",
+   "destroy",
+   "from",
+   "the",
+   "outside;",
+   "destroys",
+   "from",
+   "within.",
+   "When",
+   "person",
+   "allows",
+   "wicked",
+   "desires",
+   "pass",
+   "beyond",
+   "all",
+   "bounds,",
+   "acts",
+   "like",
+   "parasitic",
+   "plant.",
+   "feeds",
+   "until",
+   "the",
+   "into",
+   "states",
+   "the",
+   "host,",
+   "growing",
+   "ultimately",
+   "person"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-06-Devadatta-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Sala",
+   "Tree",
+   "and",
+   "the",
+   "Maluva",
+   "Creeper",
+   "nature,",
+   "the",
+   "Maluva",
+   "creeper",
+   "wraps",
+   "itself",
+   "around",
+   "the",
+   "mighty",
+   "Sala",
+   "Though",
+   "appears",
+   "merely",
+   "cling",
+   "the",
+   "wood,",
+   "inevitably",
+   "crushes",
+   "the",
+   "tree",
+   "that",
+   "supports",
+   "it.",
+   "The",
+   "Teacher",
+   "used",
+   "this",
+   "powerful",
+   "image",
+   "describe",
+   "mind",
+   "lacking",
+   "virtue."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-06-Devadatta-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "karoti",
+   "tathattanam",
+   "yatha",
+   "nam",
+   "icchati",
+   "diso",
+   "The",
+   "one",
+   "who",
+   "lacks",
+   "virtue,",
+   "like",
+   "deadly",
+   "creeper",
+   "tree,",
+   "makes",
+   "himself",
+   "just",
+   "his",
+   "foe",
+   "wishes",
+   "him",
+   "maluva"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-06-Devadatta-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Fruition",
+   "the",
+   "Teaching",
+   "Hearing",
+   "this",
+   "precise",
+   "distillation",
+   "how",
+   "bad",
+   "character",
+   "brings",
+   "about",
+   "one’s",
+   "own",
+   "ruin,",
+   "the",
+   "minds",
+   "listeners",
+   "were",
+   "elevated.",
+   "the",
+   "end",
+   "the",
+   "teaching,",
+   "many",
+   "the",
+   "assembly",
+   "reached",
+   "the",
+   "profound",
+   "spiritual",
+   "fruition",
+   "Stream-entry,",
+   "their",
+   "understanding",
+   "illuminated",
+   "the",
+   "Teacher’s",
+   "words",
+   "the"
+  ]
+ }
+]

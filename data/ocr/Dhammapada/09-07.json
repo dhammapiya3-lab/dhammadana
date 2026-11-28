@@ -1,0 +1,569 @@
+[
+ {
+  "img": "images/Dhp-a-09-07-Maha-Dhana-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Merchant",
+   "and",
+   "the",
+   "Thieves",
+   "The",
+   "Story",
+   "Dhammapada",
+   "Verse",
+   "123",
+   "wealth,",
+   "danger,",
+   "and",
+   "the",
+   "wisdom",
+   "avoidance",
+   "Anarrative"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-09-07-Maha-Dhana-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Caravan",
+   "Great",
+   "Wealth",
+   "The",
+   "merchant",
+   "Maha",
+   "Dhana",
+   "prepared",
+   "500",
+   "wagons",
+   "filled",
+   "with",
+   "expensive",
+   "wares.",
+   "Hearing",
+   "his",
+   "journey,",
+   "500",
+   "Bhikkhus",
+   "joined",
+   "him,",
+   "accepting",
+   "his",
+   "offer",
+   "food",
+   "and",
+   "protection",
+   "along",
+   "the",
+   "route.",
+   "Wealth",
+   "and",
+   "piety",
+   "set",
+   "out",
+   "together."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-09-07-Maha-Dhana-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Ambush",
+   "News",
+   "the",
+   "wealthy",
+   "caravan",
+   "traveled",
+   "fast.",
+   "Five",
+   "hundred",
+   "thieves,",
+   "hearing",
+   "the",
+   "immense",
+   "loot,",
+   "secreted",
+   "themselves",
+   "the",
+   "forest,",
+   "lying",
+   "wait",
+   "plunder",
+   "the",
+   "merchant",
+   "and",
+   "his",
+   "convoy."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-09-07-Maha-Dhana-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Spy",
+   "The",
+   "merchant",
+   "halted",
+   "village",
+   "organize",
+   "his",
+   "convoy.",
+   "Impatient,",
+   "the",
+   "thieves",
+   "sent",
+   "agent",
+   "discover",
+   "when",
+   "the",
+   "caravan",
+   "would",
+   "move.",
+   "The",
+   "spy",
+   "asked",
+   "local",
+   "villager—a",
+   "friend",
+   "his—for",
+   "the",
+   "departure",
+   "time"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-09-07-Maha-Dhana-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Warning",
+   "Realizing",
+   "the",
+   "danger",
+   "the",
+   "Bhikkhus",
+   "living",
+   "the",
+   "merchant’s",
+   "bounty,",
+   "the",
+   "villager",
+   "warned",
+   "Maha",
+   "Dhana:",
+   "“Do",
+   "not",
+   "forward.",
+   "Five",
+   "hundred",
+   "thieves",
+   "lie",
+   "wait",
+   "the",
+   "forest.",
+   "They",
+   "intend",
+   "rob",
+   "you.”",
+   "The",
+   "merchant",
+   "immediately",
+   "decided",
+   "turn",
+   "back."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-09-07-Maha-Dhana-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     216,
+     134
+    ],
+    "bbox": [
+     605,
+     93,
+     1137,
+     995
+    ],
+    "shape": "bubble",
+    "en": "hiding back",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "The",
+   "Trap",
+   "The",
+   "spy",
+   "reported",
+   "the",
+   "plan",
+   "retreat.",
+   "The",
+   "immediately",
+   "relocated,",
+   "along",
+   "the",
+   "road",
+   "leading",
+   "home.",
+   "Danger",
+   "now",
+   "waited",
+   "and",
+   "behind."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-09-07-Maha-Dhana-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     364,
+     363
+    ],
+    "bbox": [
+     1144,
+     1018,
+     1574,
+     1322
+    ],
+    "shape": "bubble",
+    "en": "also blocked,",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "The",
+   "Stasis",
+   "Warned",
+   "second",
+   "time",
+   "that",
+   "the",
+   "return",
+   "path",
+   "Maha",
+   "Dhana",
+   "made",
+   "decisive",
+   "choice:",
+   "will",
+   "neither",
+   "forward",
+   "nor",
+   "backward.",
+   "will",
+   "chose",
+   "stasis",
+   "preserve",
+   "his",
+   "life",
+   "and",
+   "wealth."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-09-07-Maha-Dhana-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Monks",
+   "Return",
+   "With",
+   "the",
+   "journey",
+   "halted,",
+   "the",
+   "Bhikkhus",
+   "took",
+   "leave",
+   "the",
+   "merchant",
+   "and",
+   "returned",
+   "Savatthi.",
+   "They",
+   "paid",
+   "respects",
+   "the",
+   "Teacher",
+   "and",
+   "explained",
+   "how",
+   "Maha",
+   "Dhana",
+   "was",
+   "surrounded",
+   "thieves",
+   "all",
+   "sides."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-09-07-Maha-Dhana-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Teacher",
+   "Speaks",
+   "“Bhikkhus,",
+   "the",
+   "merchant",
+   "Maha",
+   "Dhana",
+   "avoids",
+   "the",
+   "path",
+   "because",
+   "thieves",
+   "lie",
+   "wait.",
+   "Just",
+   "man",
+   "who",
+   "loves",
+   "life",
+   "avoids",
+   "deadly",
+   "poison,",
+   "should",
+   "Bhikkhu",
+   "avoid",
+   "wicked",
+   "deeds.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-09-07-Maha-Dhana-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Simile",
+   "The",
+   "Merchant:",
+   "With",
+   "great",
+   "wealth",
+   "and",
+   "The",
+   "Man:",
+   "Loving",
+   "life,",
+   "avoids",
+   "few",
+   "friends,",
+   "avoids",
+   "the",
+   "fearful",
+   "path.",
+   "the",
+   "cup",
+   "poison."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-09-07-Maha-Dhana-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     317,
+     331
+    ],
+    "bbox": [
+     337,
+     784,
+     2311,
+     1455
+    ],
+    "shape": "bubble",
+    "en": "The Lesson realms of existence are paths encompassed by thieves. that wicked deeds are as fatal as poison to the spirit. We urgency merchant forest",
+    "conf": 95
+   }
+  ],
+  "loose": [
+   "The",
+   "three",
+   "Wisdom",
+   "recognizing",
+   "must",
+   "avoid"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-09-07-Maha-Dhana-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "DHAMMAPADA",
+   "VERSE",
+   "123",
+   "“Like",
+   "merchant",
+   "fearful",
+   "path,",
+   "with",
+   "few",
+   "friends",
+   "and",
+   "great",
+   "wealth,",
+   "one",
+   "loving",
+   "life",
+   "would",
+   "avoid",
+   "poison,",
+   "should",
+   "one",
+   "avoid",
+   "wicked",
+   "deeds.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-09-07-Maha-Dhana-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     297,
+     326
+    ],
+    "bbox": [
+     440,
+     631,
+     2209,
+     1455
+    ],
+    "shape": "bubble",
+    "en": "The Awakening of the teaching, the Bhikkhus who had traveled with the Arahatship and analytic knowledges. merchant became",
+    "conf": 91
+   }
+  ],
+  "loose": [
+   "the",
+   "end",
+   "merchant",
+   "attained",
+   "The",
+   "story"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-09-07-Maha-Dhana-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Protecting",
+   "Great",
+   "are",
+   "all",
+   "travelers",
+   "with",
+   "“great",
+   "wealth’—our",
+   "potential",
+   "for",
+   "good.",
+   "Just",
+   "would",
+   "not",
+   "walk",
+   "into",
+   "forest",
+   "thieves,",
+   "must",
+   "not",
+   "walk",
+   "into",
+   "situations",
+   "that",
+   "rob",
+   "our",
+   "virtue.",
+   "see",
+   "danger",
+   "and",
+   "avoid",
+   "the",
+   "act",
+   "wise",
+   "one.",
+   "awise",
+   "Wealth"
+  ]
+ }
+]

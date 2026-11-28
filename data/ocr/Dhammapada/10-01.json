@@ -1,0 +1,397 @@
+[
+ {
+  "img": "images/Dhp-a-10-01-Group-of-Six-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     256,
+     230
+    ],
+    "bbox": [
+     436,
+     688,
+     972,
+     876
+    ],
+    "shape": "bubble",
+    "en": "ESSA MWS SSS",
+    "conf": 42
+   }
+  ],
+  "loose": [
+   "The",
+   "Chapter",
+   "about",
+   "the",
+   "Stick",
+   "(Dandavagga)",
+   "narrative",
+   "based",
+   "the",
+   "Dhammapada",
+   "Commentary,",
+   "10.1.",
+   "Avisual"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-10-01-Group-of-Six-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Preparation",
+   "and",
+   "Diligence",
+   "The",
+   "Group",
+   "Seventeen",
+   "monks",
+   "worked",
+   "tirelessly",
+   "prepare",
+   "their",
+   "lodgings.",
+   "They",
+   "swept",
+   "the",
+   "floors",
+   "and",
+   "arranged",
+   "the",
+   "spaces,",
+   "claiming",
+   "their",
+   "right",
+   "the",
+   "rooms",
+   "through",
+   "their",
+   "labor."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-10-01-Group-of-Six-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Arrival",
+   "the",
+   "Six",
+   "The",
+   "Group",
+   "Six",
+   "arrived",
+   "later.",
+   "Asserting",
+   "seniority",
+   "rather",
+   "than",
+   "effort,",
+   "they",
+   "demanded",
+   "the",
+   "rooms",
+   "for",
+   "themselves.",
+   "“We",
+   "are",
+   "older,”",
+   "they",
+   "claimed.",
+   "“This",
+   "belongs",
+   "us.”",
+   "Six"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-10-01-Group-of-Six-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Refusal",
+   "The",
+   "Seventeen",
+   "stood",
+   "their",
+   "ground.",
+   "“We",
+   "will",
+   "not",
+   "give",
+   "you,”",
+   "they",
+   "replied.",
+   "“We",
+   "were",
+   "the",
+   "first",
+   "make",
+   "ready.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-10-01-Group-of-Six-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Strike",
+   "Arguments",
+   "turned",
+   "violence.",
+   "The",
+   "Group",
+   "Six",
+   "struck",
+   "the",
+   "other",
+   "monks"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-10-01-Group-of-Six-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     279,
+     79
+    ],
+    "bbox": [
+     612,
+     238,
+     2040,
+     1028
+    ],
+    "shape": "bubble",
+    "en": "The peace of the monastery was shattered.",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "The",
+   "Cry",
+   "Fear",
+   "Terrified",
+   "lungs."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-10-01-Group-of-Six-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Teacher",
+   "Listens",
+   "The",
+   "noise",
+   "reached",
+   "the",
+   "Buddha.",
+   "“What",
+   "was",
+   "that?”",
+   "asked.",
+   "Upon",
+   "hearing",
+   "the",
+   "story,",
+   "the",
+   "Teacher",
+   "moved",
+   "restore",
+   "order."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-10-01-Group-of-Six-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     261,
+     78
+    ],
+    "bbox": [
+     648,
+     235,
+     2030,
+     1098
+    ],
+    "shape": "bubble",
+    "en": "bhikkhu must not do this; whoever does this is guilty of aft 4 sh Ve “pet",
+    "conf": 43
+   }
+  ],
+  "loose": [
+   "The",
+   "Rule",
+   "Against",
+   "Violence",
+   "The",
+   "“Bhikkhus,",
+   "henceforth",
+   "wrong.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-10-01-Group-of-Six-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     217,
+     96
+    ],
+    "bbox": [
+     641,
+     225,
+     2033,
+     747
+    ],
+    "shape": "bubble",
+    "en": "so also do others tremble at the rod and fear death.” Na Kok OTN EG",
+    "conf": 32
+   }
+  ],
+  "loose": [
+   "The",
+   "Logic",
+   "Empathy",
+   "The"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-10-01-Group-of-Six-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     283,
+     62
+    ],
+    "bbox": [
+     774,
+     202,
+     1894,
+     311
+    ],
+    "shape": "bubble",
+    "en": "at the stick, everyone is in fear of death,",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "Dhammapada",
+   "Verse",
+   "129",
+   "Everyone",
+   "comparing",
+   "oneself",
+   "hurt."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-10-01-Group-of-Six-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Restoration",
+   "and",
+   "Fruition",
+   "The",
+   "dispute",
+   "ended,",
+   "and",
+   "the",
+   "teaching",
+   "took",
+   "root.",
+   "the",
+   "end",
+   "the",
+   "discourse,",
+   "many",
+   "monks",
+   "reached",
+   "the",
+   "fruition",
+   "Stream-entry."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-10-01-Group-of-Six-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Golden",
+   "Rule",
+   "Violence",
+   "born",
+   "from",
+   "forgetting",
+   "our",
+   "shared",
+   "vulnerability.",
+   "Peace",
+   "born",
+   "from",
+   "remembering",
+   "it."
+  ]
+ }
+]

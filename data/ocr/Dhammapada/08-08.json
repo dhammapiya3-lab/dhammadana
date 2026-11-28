@@ -1,0 +1,519 @@
+[
+ {
+  "img": "images/Dhp-a-08-08-Dighayu-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     260,
+     100
+    ],
+    "bbox": [
+     853,
+     3,
+     2126,
+     1339
+    ],
+    "shape": "bubble",
+    "en": "The Story of the’ Youth Dighayu Anarrative narrative from the Dhammapada Commentary on the power of protection and the true cause of longevity. Nt oe Ai et poy",
+    "conf": 35
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-08-08-Dighayu-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Two",
+   "Brahmins",
+   "from",
+   "Dighalambika",
+   "spent",
+   "years",
+   "ascetic",
+   "practice.",
+   "One",
+   "remained",
+   "the",
+   "forest.",
+   "The",
+   "other,",
+   "fearing",
+   "his",
+   "lineage",
+   "would",
+   "perish,",
+   "returned",
+   "the",
+   "world,",
+   "married,",
+   "and",
+   "fathered",
+   "son."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-08-Dighayu-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "When",
+   "the",
+   "parents",
+   "paid",
+   "homage",
+   "the",
+   "ascetic,",
+   "blessed",
+   "them:",
+   "“Live",
+   "long!”",
+   "But",
+   "when",
+   "the",
+   "child",
+   "bowed,",
+   "the",
+   "ascetic",
+   "remained",
+   "silent"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-08-Dighayu-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Venerable",
+   "Sir,",
+   "why",
+   "silence",
+   "for",
+   "the",
+   "boy?”",
+   "“Some",
+   "disaster",
+   "awaits",
+   "him,",
+   "Brahmin.",
+   "has",
+   "only",
+   "seven",
+   "days",
+   "live.",
+   "know",
+   "way",
+   "avert",
+   "this",
+   "“Who",
+   "might",
+   "know?”",
+   "“The",
+   "Ascetic",
+   "Gotama.",
+   "him.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-08-Dighayu-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     426,
+     21
+    ],
+    "bbox": [
+     450,
+     3,
+     2638,
+     731
+    ],
+    "shape": "bubble",
+    "en": "The father rushed to the Teacher. Again, the parents were blessed, but the boy was met with silence. The Buddha confirmed the destiny: the boy’s life was nearly at its end. ‘Is there no way of averting this?’ ‘There might be, Brahmin.",
+    "conf": 62
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-08-08-Dighayu-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Prescription:",
+   "Erect",
+   "pavilion",
+   "the",
+   "door",
+   "the",
+   "house.",
+   "Place",
+   "bench",
+   "the",
+   "center.",
+   "Arrange",
+   "eight",
+   "sixteen",
+   "seats",
+   "circle",
+   "around",
+   "it.",
+   "disciples",
+   "will",
+   "recite",
+   "protective",
+   "texts",
+   "(Paritta)",
+   "uninterruptedly",
+   "for",
+   "seven",
+   "days.",
+   "Bench",
+   "Circle",
+   "Center"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-08-Dighayu-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Brahmin",
+   "prepared",
+   "the",
+   "space",
+   "The",
+   "Buddha",
+   "sent",
+   "his",
+   "bhikkhus.",
+   "The",
+   "boy",
+   "was",
+   "seated",
+   "the",
+   "small",
+   "central",
+   "bench,",
+   "The",
+   "protection",
+   "began."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-08-Dighayu-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "For",
+   "seven",
+   "days",
+   "and",
+   "seven",
+   "nights,",
+   "the",
+   "chanting",
+   "did",
+   "not",
+   "cease",
+   "continuous",
+   "stream",
+   "Paritta",
+   "(protection)",
+   "surrounded",
+   "the",
+   "boy,",
+   "creating",
+   "fortress",
+   "against",
+   "the",
+   "unseen"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-08-Dighayu-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     292,
+     255
+    ],
+    "bbox": [
+     592,
+     727,
+     2060,
+     1481
+    ],
+    "shape": "bubble",
+    "en": "WA thy SS On fhe the final night, the Teacher himself lf arrived. The powerful Devas of the universe gathered to witness him, filling the space so completely that lesser spirits were forced to retreat. Kana",
+    "conf": 32
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-08-08-Dighayu-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Yakkha",
+   "Avaruddhaka,",
+   "who",
+   "had",
+   "served",
+   "the",
+   "god",
+   "Vessavana",
+   "for",
+   "twelve",
+   "years",
+   "earn",
+   "the",
+   "boon",
+   "this",
+   "boy’s",
+   "life,",
+   "stood",
+   "waiting",
+   "But",
+   "the",
+   "presence",
+   "the",
+   "superior",
+   "Devas",
+   "forced",
+   "him",
+   "back",
+   "twelve",
+   "leagues.",
+   "could",
+   "not",
+   "reach",
+   "the",
+   "boy."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-08-Dighayu-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Teacher",
+   "recited",
+   "protective",
+   "texts",
+   "all",
+   "night",
+   "The",
+   "dawn",
+   "the",
+   "eighth",
+   "day",
+   "arrived.",
+   "The",
+   "deadline",
+   "passed.",
+   "Avaruddhaka",
+   "went",
+   "away",
+   "empty-handed."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-08-Dighayu-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "They",
+   "brought",
+   "the",
+   "boy",
+   "the",
+   "Teacher",
+   "“Live",
+   "long!”",
+   "the",
+   "Buddha",
+   "said.",
+   "“How",
+   "long",
+   "will",
+   "live,",
+   "Sir?”",
+   "“For",
+   "120",
+   "years.”",
+   "From",
+   "that",
+   "day,",
+   "was",
+   "named",
+   "Ayuvaddhana—The",
+   "One",
+   "With",
+   "Increasing",
+   "Life."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-08-Dighayu-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "monks",
+   "marveled:",
+   "“Look",
+   "him!",
+   "was",
+   "destined",
+   "die",
+   "week,",
+   "yet",
+   "now",
+   "thrives.",
+   "Surely,",
+   "solely",
+   "because",
+   "the",
+   "protective",
+   "chanting",
+   "that",
+   "his",
+   "lifespan",
+   "increased.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-08-Dighayu-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Teacher",
+   "corrected",
+   "them",
+   "“Bhikkhus,",
+   "not",
+   "matter",
+   "years",
+   "alone.",
+   "not",
+   "just",
+   "the",
+   "ritual",
+   "Longevity",
+   "natural",
+   "fruit",
+   "for",
+   "those",
+   "who",
+   "respect",
+   "the",
+   "virtuous"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-08-Dighayu-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "niccam",
+   "cattaro",
+   "dhamma",
+   "vaddhanti:",
+   "vanno",
+   "sukham",
+   "balam",
+   "For",
+   "the",
+   "one",
+   "who",
+   "constantly",
+   "worshipping",
+   "honourable",
+   "elders,",
+   "four",
+   "things",
+   "increase:",
+   "the",
+   "length",
+   "life,",
+   "beauty,",
+   "happiness,",
+   "and",
+   "strength",
+   "109)",
+   "(Dhammapada",
+   "AG,"
+  ]
+ }
+]

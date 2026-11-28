@@ -1,0 +1,441 @@
+[
+ {
+  "img": "images/Dhp-a-08-05-Sariputtas-Uncle-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Value",
+   "One",
+   "Moment",
+   "The",
+   "Story",
+   "Elder",
+   "Sariputta’s",
+   "Brahmin",
+   "Uncle",
+   "(Dhammapada",
+   "Verse",
+   "106)"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-05-Sariputtas-Uncle-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     457,
+     36
+    ],
+    "bbox": [
+     823,
+     63,
+     2377,
+     503
+    ],
+    "shape": "bubble",
+    "en": "Month after uv month, 6 the Brahmin uncle of Elder Sariputta performed great sacrifice. He gave alms to the value of thousand coins to the Nigantha ascetics. He did this faithfully, believing the sheer volume of his giving would secure his future. Le",
+    "conf": 46
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-08-05-Sariputtas-Uncle-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     425,
+     37
+    ],
+    "bbox": [
+     823,
+     63,
+     2380,
+     503
+    ],
+    "shape": "bubble",
+    "en": "Elder vo Sariputta iss] visited 2 his 2 uncle and asked, ‘Brahmin, do you ever do single good deed?’ The uncle replied, do, venerable Sir. Month after month, give alms to the value of thousand coins.”",
+    "conf": 32
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-08-05-Sariputtas-Uncle-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "what",
+   "you",
+   "hope",
+   "gain",
+   "thereby?’",
+   "asked",
+   "Sariputta.",
+   "gain",
+   "the",
+   "world",
+   "Brahma,”",
+   "the",
+   "uncle",
+   "replied.",
+   "‘But",
+   "this",
+   "the",
+   "way",
+   "reach",
+   "the",
+   "world",
+   "Brahma?’",
+   "‘Yes,",
+   "venerable",
+   "Sir.",
+   "teachers",
+   "told",
+   "so.’"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-05-Sariputtas-Uncle-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Sariputta",
+   "corrected",
+   "him",
+   "gently:",
+   "‘Brahmin,",
+   "neither",
+   "you",
+   "nor",
+   "your",
+   "teachers",
+   "know",
+   "the",
+   "way",
+   "the",
+   "world",
+   "Brahma.",
+   "The",
+   "Teacher",
+   "alone",
+   "knows",
+   "the",
+   "way.",
+   "Come",
+   "with",
+   "me,",
+   "and",
+   "will",
+   "ask",
+   "him",
+   "tell",
+   "you.’"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-05-Sariputtas-Uncle-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Elder",
+   "Sariputta",
+   "took",
+   "his",
+   "uncle",
+   "see",
+   "the",
+   "Buddha.",
+   "explained",
+   "the",
+   "situation:",
+   "‘Venerable",
+   "Sir,",
+   "this",
+   "Brahmin",
+   "gives",
+   "alms",
+   "hopes",
+   "the",
+   "Brahma",
+   "world.",
+   "good",
+   "tell",
+   "him",
+   "the",
+   "way.’",
+   "Veluvana",
+   "see",
+   "plained",
+   "this"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-05-Sariputtas-Uncle-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Teacher",
+   "asked,",
+   "‘Brahmin,",
+   "are",
+   "you",
+   "correctly",
+   "The",
+   "Brahmin",
+   "replied,",
+   "‘Yes,",
+   "dear",
+   "Gotama.’"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-05-Sariputtas-Uncle-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "4\\\\",
+   "The",
+   "Buddha",
+   "declared:",
+   "‘Brahmin,",
+   "though",
+   "you",
+   "should",
+   "give",
+   "alms",
+   "this",
+   "way",
+   "for",
+   "hundred",
+   "years,",
+   "yet",
+   "were",
+   "far",
+   "more",
+   "fruitful",
+   "for",
+   "man,",
+   "with",
+   "believing",
+   "heart,",
+   "for",
+   "but",
+   "single",
+   "instant",
+   "look",
+   "upon",
+   "disciple",
+   "bestow",
+   "upon",
+   "him",
+   "mere",
+   "spoonful",
+   "boiled",
+   "rice.’"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-05-Sariputtas-Uncle-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     116,
+     346
+    ],
+    "bbox": [
+     261,
+     1137,
+     2255,
+     1346
+    ],
+    "shape": "box",
+    "en": "One might give alms impartially with thousand coins of money month by month for hundred years; and one might worship",
+    "conf": 73
+   }
+  ],
+  "loose": [
+   "someone",
+   "with",
+   "developed",
+   "self",
+   "for",
+   "second",
+   "that",
+   "worship",
+   "surely",
+   "better",
+   "than",
+   "the",
+   "hundred-year",
+   "sacrifice"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-05-Sariputtas-Uncle-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "one",
+   "might",
+   "worship",
+   "someone",
+   "with",
+   "developed",
+   "self",
+   "for",
+   "second",
+   "that",
+   "worship",
+   "surely",
+   "better",
+   "than",
+   "the",
+   "hundred-year",
+   "sacrifice.’",
+   "moment",
+   "clear",
+   "seeing",
+   "and",
+   "reverence",
+   "outweighs",
+   "century",
+   "blind",
+   "action.",
+   "Asingle"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-05-Sariputtas-Uncle-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "end",
+   "Brahmin",
+   "uncle",
+   "attained",
+   "the",
+   "fruition",
+   "Stream-entry",
+   "understood",
+   "that",
+   "true",
+   "merit",
+   "comes",
+   "not",
+   "from",
+   "the",
+   "size",
+   "the",
+   "gift,",
+   "but",
+   "from",
+   "the",
+   "purity",
+   "the",
+   "mind",
+   "and",
+   "the",
+   "wisdom",
+   "the",
+   "recipient.",
+   "the",
+   "teaching,"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-05-Sariputtas-Uncle-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Insight",
+   "cannot",
+   "bought.",
+   "cultivated",
+   "through",
+   "reverence",
+   "for",
+   "the",
+   "wise",
+   "and",
+   "the",
+   "purification",
+   "one’s",
+   "own",
+   "view."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-08-05-Sariputtas-Uncle-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Better",
+   "than",
+   "hundred",
+   "years",
+   "sacrifice",
+   "one",
+   "moment",
+   "reverence"
+  ]
+ }
+]

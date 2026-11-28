@@ -1,0 +1,407 @@
+[
+ {
+  "img": "images/Dhp-a-12-10-Attadattha-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Story",
+   "Elder",
+   "Attadattha",
+   "righteousness",
+   "men",
+   "honor",
+   "the",
+   "Buddha.”",
+   "tale",
+   "from",
+   "the",
+   "Dhammapada",
+   "Commentary.",
+   "Atale"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-10-Attadattha-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "time",
+   "the",
+   "Teacher",
+   "was",
+   "coming",
+   "end",
+   "While",
+   "residing",
+   "Jetavana,",
+   "the",
+   "Buddha",
+   "gathered",
+   "his",
+   "disciples",
+   "and",
+   "made",
+   "profound",
+   "announcement.",
+   "“Bhikkhus,",
+   "four",
+   "months",
+   "hence",
+   "shall",
+   "pass",
+   "into",
+   "Parinibbana.”",
+   "VAG"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-10-Attadattha-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     509,
+     50
+    ],
+    "bbox": [
+     1527,
+     106,
+     2552,
+     767
+    ],
+    "shape": "box",
+    "en": "Seven hundred monks fell into panic and grief The bhikkhus who had not yet attained Stream-entry were deeply moved. Never leaving the Teacher’s side, they huddled together and whispered anxiously to each other: “Friends, what are we to do?”",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-12-10-Attadattha-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Elder",
+   "Attadattha",
+   "chose",
+   "the",
+   "solitary",
+   "path",
+   "striving",
+   "thought:",
+   "have",
+   "not",
+   "yet",
+   "freed",
+   "myself",
+   "from",
+   "the",
+   "pollutants.",
+   "long",
+   "the",
+   "Teacher",
+   "remains",
+   "alive,",
+   "will",
+   "strive",
+   "with",
+   "all",
+   "might",
+   "for",
+   "Arahatship.”",
+   "abandoned",
+   "the",
+   "anxious",
+   "crowd",
+   "practice",
+   "alone",
+   "the",
+   "forest."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-10-Attadattha-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     193,
+     40
+    ],
+    "bbox": [
+     549,
+     106,
+     2099,
+     258
+    ],
+    "shape": "box",
+    "en": "Two distinct reactions to impending loss",
+    "conf": 96
+   },
+   {
+    "seed": [
+     71,
+     115
+    ],
+    "bbox": [
+     188,
+     337,
+     1233,
+     734
+    ],
+    "shape": "box",
+    "en": "External Clinging: Remaining constantly by the Teacher. Paralyzed by grief and uncertainty. Seeking comfort in the crowd.",
+    "conf": 91
+   },
+   {
+    "seed": [
+     482,
+     115
+    ],
+    "bbox": [
+     1415,
+     337,
+     2463,
+     734
+    ],
+    "shape": "box",
+    "en": "Internal Practice: Withdrawing into solitude. Motivated by spiritual urgency. Seeking liberation through the Dhamma",
+    "conf": 85
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-12-10-Attadattha-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     263,
+     41
+    ],
+    "bbox": [
+     737,
+     106,
+     1911,
+     734
+    ],
+    "shape": "box",
+    "en": "The majority misunderstood his solitary devotion The anxious monks interrupted his forest practice. “Friend, why is it that you thus avoid our company and no more talk with us?” Believing he lacked respect, they escorted Elder Attadattha to the Buddha to answer for his isolation.",
+    "conf": 92
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-12-10-Attadattha-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     252,
+     41
+    ],
+    "bbox": [
+     741,
+     106,
+     1911,
+     734
+    ],
+    "shape": "box",
+    "en": "Answering to the Teacher at Jetavana The Buddha asked: “Why do you act thus?” Attadattha replied: “Venerable Sir, you pass away in four months. determined that while you yet live, will strive with all my might to attain Arahatship.”",
+    "conf": 91
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-12-10-Attadattha-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Redefining",
+   "what",
+   "means",
+   "honor",
+   "the",
+   "Buddha",
+   "Applauding",
+   "this",
+   "wise",
+   "decision,",
+   "the",
+   "Buddha",
+   "revealed",
+   "profound",
+   "truth",
+   "“Truly",
+   "they",
+   "honor",
+   "not",
+   "who",
+   "honor",
+   "with",
+   "perfumes",
+   "and",
+   "garlands",
+   "They",
+   "only",
+   "honor",
+   "who",
+   "practice",
+   "accordance",
+   "with",
+   "the"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-10-Attadattha-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     42,
+     34
+    ],
+    "bbox": [
+     26,
+     79,
+     1458,
+     598
+    ],
+    "shape": "box",
+    "en": "The solitary striver becomes the ultimate example The Buddha instructed the entire diverse assembly Whosoever sincerely loves me should be like Elder Attadattha Others also should follow his example He then pronounced verse to encapsulate this timeless teaching",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "wil"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-10-Attadattha-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Dhammapada",
+   "Verse",
+   "166",
+   "Atta-d-attham",
+   "parathena",
+   "bahund",
+   "hapaye;",
+   "sa-d-atthapasuto",
+   "“One",
+   "should",
+   "not",
+   "neglect",
+   "one’s",
+   "own",
+   "good",
+   "for",
+   "another’s,",
+   "however",
+   "great;",
+   "knowing",
+   "what",
+   "good",
+   "for",
+   "oneself",
+   "one",
+   "should",
+   "intent",
+   "that",
+   "good.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-12-10-Attadattha-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Guarding",
+   "one’s",
+   "own",
+   "spiritual",
+   "good",
+   "benefits",
+   "all",
+   "the",
+   "end",
+   "the",
+   "teaching,",
+   "Elder",
+   "Attadattha",
+   "was",
+   "established",
+   "Arahatship.",
+   "focusing",
+   "fiercely",
+   "his",
+   "own",
+   "liberation,",
+   "ensured",
+   "that",
+   "the",
+   "assembled",
+   "monks,",
+   "nuns,",
+   "and",
+   "householders",
+   "also",
+   "derived",
+   "profound",
+   "benefit",
+   "from",
+   "the",
+   "Dhamma."
+  ]
+ }
+]

@@ -1,0 +1,510 @@
+[
+ {
+  "img": "images/Dhp-a-03-01-Meghiya-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“The",
+   "Untamed",
+   "Mind”",
+   "Fletcher’s",
+   "Wisdom",
+   "and",
+   "Fish",
+   "Out",
+   "Water:",
+   "The",
+   "Story",
+   "Elder"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-01-Meghiya-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Teacher",
+   "resided",
+   "Calika",
+   "mountain",
+   "with",
+   "his",
+   "attendant,",
+   "the",
+   "Elder",
+   "Meghiya",
+   "this",
+   "place",
+   "stillness,",
+   "monk's",
+   "journey",
+   "would",
+   "begin"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-01-Meghiya-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "While",
+   "returning",
+   "from",
+   "his",
+   "alms-round,",
+   "Meghiya",
+   "saw",
+   "pleasing",
+   "and",
+   "delightful",
+   "mango",
+   "grove.",
+   "occurred",
+   "him:",
+   "“This",
+   "surely",
+   "enough",
+   "for",
+   "son",
+   "good",
+   "family",
+   "who",
+   "needs",
+   "strive"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-01-Meghiya-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     486,
+     356
+    ],
+    "bbox": [
+     830,
+     1131,
+     2420,
+     1332
+    ],
+    "shape": "bubble",
+    "en": "Iam alone, Meghiya, until",
+    "conf": 85
+   }
+  ],
+  "loose": [
+   "“If",
+   "the",
+   "Fortunate",
+   "One",
+   "would",
+   "allow",
+   "me,",
+   "reverend",
+   "Sir,",
+   "could",
+   "that",
+   "mango",
+   "grove",
+   "for",
+   "striving.”",
+   "some"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-01-Meghiya-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“When",
+   "you",
+   "are",
+   "talking",
+   "about",
+   "striving,",
+   "Meghiya,",
+   "what",
+   "can",
+   "say?",
+   "Now",
+   "the",
+   "time",
+   "for",
+   "whatever",
+   "you",
+   "are",
+   "thinking.”",
+   "And",
+   "so,",
+   "after",
+   "worshipping",
+   "the",
+   "Fortunate",
+   "One,",
+   "went."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-01-Meghiya-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "entered",
+   "the",
+   "mango",
+   "grove",
+   "and",
+   "sat",
+   "down",
+   "dwell",
+   "for",
+   "the",
+   "day",
+   "the",
+   "root",
+   "certain",
+   "tree."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-01-Meghiya-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     545,
+     312
+    ],
+    "bbox": [
+     1194,
+     790,
+     2080,
+     1405
+    ],
+    "shape": "bubble",
+    "en": "Then, as he for the most part unwholesome The thought The thought",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "dwelling",
+   "the",
+   "grove,",
+   "only",
+   "three",
+   "bad,",
+   "thoughts",
+   "occurred:",
+   "sensual",
+   "pleasure",
+   "ill-will",
+   "harming"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-01-Meghiya-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“Surely",
+   "wonderful,",
+   "surely",
+   "iti",
+   "that",
+   "who,",
+   "out",
+   "faith,",
+   "have",
+   "gone",
+   "forth",
+   "from",
+   "the",
+   "home",
+   "homelessness,",
+   "should",
+   "then",
+   "ensnared",
+   "these",
+   "three",
+   "bad,",
+   "unwholesome",
+   "thoughts.”",
+   "marvellous,"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-01-Meghiya-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Inthe",
+   "evening,",
+   "having",
+   "risen",
+   "from",
+   "seclusion,",
+   "Meghiya",
+   "returned",
+   "the",
+   "Fortunate",
+   "One",
+   "and",
+   "confessed",
+   "what",
+   "had",
+   "happened",
+   "the",
+   "grove.",
+   "the"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-01-Meghiya-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha’s",
+   "Verse",
+   "(Dhp",
+   "33)",
+   "ujum",
+   "karoti",
+   "medhavi",
+   "tejanam",
+   "agitated",
+   "and",
+   "unsteady",
+   "mind",
+   "difficult",
+   "guard,",
+   "difficult",
+   "ward",
+   "the",
+   "sagacious",
+   "one",
+   "will",
+   "make",
+   "straight",
+   "fletcher",
+   "does",
+   "his",
+   "arrow"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-01-Meghiya-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Like",
+   "the",
+   "fletcher",
+   "who",
+   "skill",
+   "and",
+   "heat",
+   "make",
+   "arrow",
+   "true",
+   "the",
+   "sagacious",
+   "one",
+   "patiently",
+   "and",
+   "wisely",
+   "makes",
+   "the",
+   "mind",
+   "straight",
+   "applies"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-01-Meghiya-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha’s",
+   "Verse",
+   "(Dhp",
+   "34)",
+   "Cormorant",
+   "Garamond",
+   "Varijo",
+   "thale",
+   "khitto,",
+   "oka-m-okata",
+   "ubbhato,",
+   "pariphandatidam",
+   "cittam,",
+   "Maradheyyam",
+   "pahatave.",
+   "Like",
+   "fish",
+   "thrown",
+   "dry",
+   "land,",
+   "pulled",
+   "out",
+   "from",
+   "its",
+   "watery",
+   "home,",
+   "mind",
+   "agitated,",
+   "one",
+   "ought",
+   "throw",
+   "off",
+   "the",
+   "sway",
+   "Mara.",
+   "INS"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-01-Meghiya-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "from",
+   "its",
+   "mind",
+   "Separated",
+   "from",
+   "the",
+   "conditions",
+   "for",
+   "wisdom,",
+   "falls",
+   "under",
+   "the",
+   "sway",
+   "Mara.",
+   "Pulled",
+   "home,",
+   "the"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-01-Meghiya-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "conclusion",
+   "the",
+   "verses,",
+   "the",
+   "Elder",
+   "Meghiya",
+   "was",
+   "established",
+   "the",
+   "fruition",
+   "Stream-entry"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-03-01-Meghiya-15-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     499,
+     219
+    ],
+    "bbox": [
+     886,
+     532,
+     2268,
+     1306
+    ],
+    "shape": "bubble",
+    "en": "4 aii Lae agitated mind, like fish on dry land.",
+    "conf": 34
+   }
+  ],
+  "loose": [
+   "The",
+   "The",
+   "sagacious",
+   "one,",
+   "like",
+   "fletcher",
+   "making",
+   "arrow",
+   "straight.",
+   "This",
+   "the",
+   "path",
+   "from",
+   "restlessness",
+   "wisdom."
+  ]
+ }
+]

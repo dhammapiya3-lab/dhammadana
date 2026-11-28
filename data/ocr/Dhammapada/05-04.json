@@ -1,0 +1,449 @@
+[
+ {
+  "img": "images/Dhp-a-05-04-Thieves-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Parable",
+   "True",
+   "Wealth",
+   "from",
+   "the",
+   "Dhammapada",
+   "*he"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-05-04-Thieves-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Two",
+   "Friends,",
+   "single",
+   "Path",
+   "the",
+   "time",
+   "the",
+   "Buddha,",
+   "two",
+   "men,",
+   "boon",
+   "companions,",
+   "made",
+   "their",
+   "living",
+   "thieves.",
+   "One",
+   "day,",
+   "hearing",
+   "that",
+   "the",
+   "Teacher",
+   "was",
+   "giving",
+   "talk,",
+   "they",
+   "joined",
+   "the",
+   "great",
+   "throng",
+   "making",
+   "its",
+   "way",
+   "the",
+   "Jetavana",
+   "monastery",
+   "listen."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-05-04-Thieves-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     225,
+     324
+    ],
+    "bbox": [
+     281,
+     846,
+     2245,
+     1260
+    ],
+    "shape": "bubble",
+    "en": "An Opportunity for Treasure of",
+    "conf": 96
+   }
+  ],
+  "loose": [
+   "But",
+   "any",
+   "crowd,",
+   "more",
+   "than",
+   "one",
+   "kind",
+   "treasure",
+   "can",
+   "found",
+   "Each",
+   "man",
+   "had",
+   "choose",
+   "which",
+   "one",
+   "would",
+   "seek"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-05-04-Thieves-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Mind",
+   "Turned",
+   "Inward",
+   "The",
+   "first",
+   "man",
+   "listened",
+   "with",
+   "open",
+   "heart.",
+   "The",
+   "Teacher’s",
+   "words",
+   "washed",
+   "over",
+   "him,",
+   "clearing",
+   "the",
+   "dust",
+   "from",
+   "his",
+   "mind.",
+   "that",
+   "moment,",
+   "obtained",
+   "the",
+   "fruition",
+   "Stream-entry,",
+   "the",
+   "first",
+   "stage",
+   "Awakening."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-05-04-Thieves-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     271,
+     323
+    ],
+    "bbox": [
+     651,
+     691,
+     1984,
+     1382
+    ],
+    "shape": "bubble",
+    "en": "Mind tht Outward man ignored the teaching. His eyes found matter tied to man’s clothing. He skillfully undid the knot into pocket, with",
+    "conf": 31
+   }
+  ],
+  "loose": [
+   "The",
+   "five",
+   "and",
+   "slipped",
+   "money"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-05-04-Thieves-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Two",
+   "Men,",
+   "Two",
+   "Treasures",
+   "Both",
+   "men",
+   "returned",
+   "home,",
+   "each",
+   "carrying",
+   "the",
+   "treasure",
+   "had",
+   "sought.",
+   "One",
+   "carried",
+   "invisible",
+   "jewel",
+   "wisdom",
+   "his",
+   "heart.",
+   "The",
+   "other",
+   "carried",
+   "five",
+   "farthings",
+   "his",
+   "hand."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-05-04-Thieves-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "“The",
+   "Price",
+   "Wisdom”",
+   "The",
+   "successful",
+   "thief",
+   "and",
+   "his",
+   "wife",
+   "cooked",
+   "meal.",
+   "Seeing",
+   "food",
+   "his",
+   "friend’s",
+   "house,",
+   "they",
+   "ridiculed",
+   "him,",
+   "saying:",
+   "“Your",
+   "newfound",
+   "wisdom",
+   "has",
+   "left",
+   "you",
+   "with",
+   "empty",
+   "stomach!",
+   "What",
+   "good",
+   "it?”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-05-04-Thieves-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Moment",
+   "Insight",
+   "The",
+   "Stream-enterer",
+   "felt",
+   "anger,",
+   "only",
+   "clear",
+   "understanding.",
+   "thought",
+   "himself:",
+   "“This",
+   "man,",
+   "just",
+   "because",
+   "fool,",
+   "does",
+   "not",
+   "think",
+   "that",
+   "wise.”",
+   "knew",
+   "must",
+   "return",
+   "the",
+   "Teacher."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-05-04-Thieves-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "balo",
+   "balyam,",
+   "pandito",
+   "vapi",
+   "tena",
+   "The",
+   "fool",
+   "who",
+   "knows",
+   "his",
+   "foolishness,",
+   "least",
+   "wise",
+   "matter...",
+   "that"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-05-04-Thieves-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "balo",
+   "vovucai.",
+   "...the",
+   "fool",
+   "proud",
+   "his",
+   "wisdom,",
+   "said",
+   "fool",
+   "indeed."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-05-04-Thieves-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Verse",
+   "The",
+   "fool",
+   "who",
+   "his",
+   "foolishness,",
+   "least",
+   "wise",
+   "that",
+   "matter,",
+   "the",
+   "fool",
+   "who’s",
+   "proud",
+   "his",
+   "wisdom,",
+   "said",
+   "fool",
+   "indeed.",
+   "Dhammapada"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-05-04-Thieves-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Spreading",
+   "Light",
+   "Hearing",
+   "this",
+   "explanation,",
+   "the",
+   "minds",
+   "many",
+   "the",
+   "crowd",
+   "were",
+   "opened.",
+   "The",
+   "man",
+   "who",
+   "had",
+   "sought",
+   "wisdom",
+   "was",
+   "affirmed,",
+   "and",
+   "many",
+   "his",
+   "relatives",
+   "and",
+   "others",
+   "the",
+   "assembly",
+   "also",
+   "attained",
+   "the",
+   "fruition",
+   "Stream-entry",
+   "and",
+   "other",
+   "stages",
+   "Awakening"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-05-04-Thieves-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Where",
+   "you",
+   "seek",
+   "your",
+   "treasure?"
+  ]
+ }
+]

@@ -1,0 +1,464 @@
+[
+ {
+  "img": "images/Dhp-a-02-06-Two-Bhikkhus-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Swift",
+   "Horse",
+   "The",
+   "Wear",
+   "Hack",
+   "Dhamma",
+   "Teaching",
+   "Heedfulness",
+   "from",
+   "the",
+   "Buddha",
+   "Weary"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-06-Two-Bhikkhus-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     265,
+     353
+    ],
+    "bbox": [
+     440,
+     998,
+     2192,
+     1395
+    ],
+    "shape": "bubble",
+    "en": "THE TWO FRIENDS bhikkhus, who were friends, received subject of meditation from the",
+    "conf": 89
+   }
+  ],
+  "loose": [
+   "Two",
+   "Teacher.",
+   "Together,",
+   "they",
+   "went",
+   "forth",
+   "forest",
+   "hermitage",
+   "begin",
+   "their",
+   "practice."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-06-Two-Bhikkhus-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "quiet",
+   "the",
+   "forest,",
+   "their",
+   "paths",
+   "began",
+   "diverge.",
+   "One",
+   "chose",
+   "the",
+   "comfort",
+   "small",
+   "duties",
+   "and",
+   "company.",
+   "The",
+   "other",
+   "chose",
+   "the",
+   "diligence",
+   "solitude",
+   "and",
+   "meditation."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-06-Two-Bhikkhus-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "first",
+   "monk",
+   "brought",
+   "firewood",
+   "and",
+   "sat",
+   "during",
+   "the",
+   "first",
+   "watch",
+   "chatting",
+   "with",
+   "others",
+   "spent",
+   "the",
+   "rest",
+   "his",
+   "time",
+   "utter",
+   "heedlessness,",
+   "mistaking",
+   "deep",
+   "sleep",
+   "for",
+   "rest."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-06-Two-Bhikkhus-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "second",
+   "monk,",
+   "abiding",
+   "heedfulness,",
+   "practiced",
+   "walking",
+   "meditation",
+   "the",
+   "first",
+   "watch.",
+   "After",
+   "resting,",
+   "rose",
+   "the",
+   "last",
+   "watch,",
+   "wakeful",
+   "while",
+   "others",
+   "slept,",
+   "and",
+   "devoted",
+   "himself",
+   "his",
+   "practice."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-06-Two-Bhikkhus-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     268,
+     345
+    ],
+    "bbox": [
+     668,
+     1108,
+     1974,
+     1369
+    ],
+    "shape": "bubble",
+    "en": "there are four states of suffering, as if house.” But the lazy bhikkhu paid no attention.",
+    "conf": 86
+   }
+  ],
+  "loose": [
+   "The",
+   "diligent",
+   "not",
+   "act",
+   "thus.",
+   "For",
+   "heedless",
+   "were",
+   "his",
+   "own",
+   "The",
+   "heedful",
+   "shrouded",
+   "the",
+   "shadows",
+   "heedlessness."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-06-Two-Bhikkhus-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Living",
+   "the",
+   "life",
+   "heedfulness,",
+   "long",
+   "time",
+   "attained",
+   "Arahatship,",
+   "together",
+   "with",
+   "the",
+   "analytic",
+   "knowledges—the",
+   "culmination",
+   "the",
+   "spiritual",
+   "path."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-06-Two-Bhikkhus-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "When",
+   "they",
+   "had",
+   "completed",
+   "their",
+   "residence",
+   "after",
+   "the",
+   "Rains",
+   "Retreat,",
+   "the",
+   "two",
+   "bhikkhus",
+   "returned",
+   "the",
+   "Teacher",
+   "report",
+   "their",
+   "progress."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-06-Two-Bhikkhus-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "his",
+   "case:",
+   "‘Venerable",
+   "Sir,",
+   "how",
+   "can",
+   "this",
+   "said",
+   "heedful?",
+   "From",
+   "the",
+   "time",
+   "left",
+   "you",
+   "has",
+   "done",
+   "nothing",
+   "but",
+   "lie",
+   "and",
+   "sleep.’",
+   "his",
+   "heedless",
+   "bhikkhu",
+   "how"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-06-Two-Bhikkhus-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Teacher",
+   "addressed",
+   "the",
+   "slothful",
+   "bhikkhu:",
+   "‘You",
+   "who",
+   "have",
+   "spent",
+   "your",
+   "time",
+   "time",
+   "heedlessness",
+   "say:",
+   "heedful.’",
+   "You",
+   "mistake",
+   "heedlessness",
+   "for",
+   "heedfulness.",
+   "Compared",
+   "with",
+   "son,",
+   "you",
+   "are",
+   "like",
+   "decrepit",
+   "hack;",
+   "but",
+   "he,",
+   "compared",
+   "with",
+   "you,",
+   "like",
+   "racer.”",
+   "racer.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-06-Two-Bhikkhus-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Heedful",
+   "amongst",
+   "the",
+   "heedless",
+   "ones,",
+   "amongst",
+   "the",
+   "ones",
+   "who",
+   "sleep,",
+   "ike",
+   "swift",
+   "horse",
+   "who",
+   "abandons",
+   "weak",
+   "horse,",
+   "true",
+   "sage",
+   "moves",
+   "on.",
+   "Verse",
+   "ones,",
+   "Dhammapada,"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-06-Two-Bhikkhus-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "conclusion",
+   "verse,",
+   "the",
+   "conclusion",
+   "the",
+   "verse,",
+   "many",
+   "the",
+   "assembly",
+   "were",
+   "deeply",
+   "moved",
+   "and",
+   "reached",
+   "the",
+   "fruition",
+   "Stream-entry,",
+   "their",
+   "own",
+   "minds",
+   "awakened",
+   "the",
+   "truth.",
+   "the",
+   "the"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-06-Two-Bhikkhus-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Heedlessness",
+   "the",
+   "path",
+   "stagnation.",
+   "Heedlessness",
+   "the",
+   "path",
+   "stagnation.",
+   "Heedfulness",
+   "the",
+   "path",
+   "progress.",
+   "The",
+   "wise",
+   "one,",
+   "ever",
+   "wakeful,",
+   "advances,",
+   "leaving",
+   "the",
+   "stagnant",
+   "behind.",
+   "eedlessness"
+  ]
+ }
+]

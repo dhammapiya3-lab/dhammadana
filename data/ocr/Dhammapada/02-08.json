@@ -1,0 +1,423 @@
+[
+ {
+  "img": "images/Dhp-a-02-08-A-Certain-Bhikkhu-01-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Fire",
+   "Knowledge",
+   "Story",
+   "Heedfulness",
+   "from",
+   "the",
+   "Dnammapada"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-08-A-Certain-Bhikkhu-02-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Struggle",
+   "for",
+   "Liberation",
+   "having",
+   "received",
+   "subject",
+   "meditation",
+   "from",
+   "the",
+   "Buddha,",
+   "went",
+   "the",
+   "forest",
+   "practice.",
+   "Despite",
+   "his",
+   "great",
+   "effort—striving",
+   "and",
+   "struggling",
+   "with",
+   "all",
+   "his",
+   "might—he",
+   "could",
+   "make",
+   "progress",
+   "toward",
+   "Arahatship.",
+   "Amonk,"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-08-A-Certain-Bhikkhu-03-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     128,
+     395
+    ],
+    "bbox": [
+     215,
+     1061,
+     2407,
+     1428
+    ],
+    "shape": "bubble",
+    "en": "his chosen path was ill-suited, he resolved to abandon his efforts. will ask the Teacher",
+    "conf": 96
+   }
+  ],
+  "loose": []
+ },
+ {
+  "img": "images/Dhp-a-02-08-A-Certain-Bhikkhu-04-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "his",
+   "way,",
+   "saw",
+   "great",
+   "forest",
+   "fire",
+   "raging."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-08-A-Certain-Bhikkhu-05-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "did",
+   "not",
+   "run.",
+   "Instead,",
+   "climbed",
+   "the",
+   "top",
+   "bald",
+   "mountain",
+   "and",
+   "sat",
+   "down",
+   "watch",
+   "the",
+   "fire",
+   "consume",
+   "the",
+   "forest."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-08-A-Certain-Bhikkhu-06-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "His",
+   "mind,",
+   "concentrated",
+   "the",
+   "sight,",
+   "formed",
+   "powerful",
+   "analogy:",
+   "‘Even",
+   "this",
+   "fire",
+   "advances,",
+   "consuming",
+   "all",
+   "obstacles",
+   "both",
+   "great",
+   "and",
+   "small,",
+   "also",
+   "ought",
+   "advance,",
+   "consuming",
+   "all",
+   "obstacles",
+   "both",
+   "great",
+   "and",
+   "small",
+   "the",
+   "fire",
+   "knowledge",
+   "the",
+   "noble",
+   "path.”"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-08-A-Certain-Bhikkhu-07-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Teacher,",
+   "his",
+   "Perfumed",
+   "Chamber,",
+   "became",
+   "aware",
+   "the",
+   "monk’s",
+   "thoughts.",
+   "And",
+   "sending",
+   "forth",
+   "radiant",
+   "image",
+   "himself,",
+   "appeared",
+   "sitting",
+   "before",
+   "him.",
+   "residing"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-08-A-Certain-Bhikkhu-08-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "Buddha",
+   "spoke,",
+   "his",
+   "voice",
+   "the",
+   "“Bhikkhu,",
+   "this",
+   "precisely",
+   "true.",
+   "Even",
+   "fire",
+   "consumes",
+   "all",
+   "obstacles,",
+   "also",
+   "necessary",
+   "with",
+   "the",
+   "fire",
+   "knowledge",
+   "consume",
+   "and",
+   "utterly",
+   "destroy",
+   "all",
+   "attachments",
+   "which",
+   "arise",
+   "within",
+   "these",
+   "living",
+   "beings",
+   "confirming",
+   "realization:",
+   "the"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-08-A-Certain-Bhikkhu-09-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "Appamadarato",
+   "bhikkhu,",
+   "bhayadassiva,",
+   "samyojanam",
+   "aggiva",
+   "gagchati.",
+   "Dhammapada"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-08-A-Certain-Bhikkhu-10-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [
+   {
+    "seed": [
+     101,
+     306
+    ],
+    "bbox": [
+     202,
+     754,
+     727,
+     1243
+    ],
+    "shape": "bubble",
+    "en": "fetters are the gross, that bind us.",
+    "conf": 92
+   }
+  ],
+  "loose": [
+   "who",
+   "delights",
+   "heedfulness",
+   "seeing",
+   "danger",
+   "heedlessness,",
+   "advances",
+   "like",
+   "fire",
+   "against",
+   "the",
+   "fetter",
+   "(Samyojanam),",
+   "small",
+   "large.",
+   "attachments,",
+   "both",
+   "subtle",
+   "and",
+   "Heedfulness",
+   "the",
+   "diligent,",
+   "mindful",
+   "awareness",
+   "that",
+   "acts",
+   "like",
+   "fire,",
+   "burning",
+   "them",
+   "away."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-08-A-Certain-Bhikkhu-11-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "the",
+   "conclusion",
+   "verse,",
+   "there,",
+   "the",
+   "monk",
+   "consumed",
+   "all",
+   "attachments.",
+   "attained",
+   "Arahatship,",
+   "together",
+   "with",
+   "the",
+   "analytic",
+   "knowledges.",
+   "even"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-08-A-Certain-Bhikkhu-12-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "The",
+   "fire",
+   "passes.",
+   "The",
+   "forest",
+   "cleared.",
+   "Obstacles",
+   "become",
+   "open",
+   "ground"
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-08-A-Certain-Bhikkhu-13-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "unfettered."
+  ]
+ },
+ {
+  "img": "images/Dhp-a-02-08-A-Certain-Bhikkhu-14-Original.jpg",
+  "size": [
+   2645,
+   1488
+  ],
+  "ref": 800,
+  "boxes": [],
+  "loose": [
+   "pr.",
+   "through",
+   "the",
+   "air,",
+   "approached",
+   "the",
+   "golden",
+   "body",
+   "the",
+   "Realise",
+   "Iden",
+   "ity",
+   "arin",
+   "hed"
+  ]
+ }
+]
