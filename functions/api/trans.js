@@ -3,6 +3,7 @@
 //   GET  /api/trans            → 자료 목록
 //   GET  /api/trans?id=…       → 자료 하나(모든 줄)
 //   PUT  /api/trans?id=…       → 새 자료 넣기 (이미 있으면 &replace=1 일 때만 바꿈)
+//   PUT  /api/trans?id=…&ref=1 → 대조 번역본만 넣기 {kind:'ref', id, title, col, info, rows:{줄id:[대조 글, rc]}} — 우리 번역·고친 기록·메모는 그대로 (2026-11-28)
 //   POST /api/trans?id=…       → 줄 하나 고치기 {row, t?, note?} — 고치기 전 글은 그 줄의 기록(hist)에 남김
 import { canWriteToken } from './_auth.js';
 const json = (o, status = 200) => new Response(JSON.stringify(o), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
@@ -42,6 +43,19 @@ export async function onRequestPut({ request, env }) {
   const txt = await request.text();
   if (txt.length > 20000000) return json({ error: '자료가 너무 큽니다.' }, 400);
   let d; try { d = JSON.parse(txt); } catch (e) { return json({ error: '자료 파일 형식이 올바르지 않습니다.' }, 400); }
+  if (u.searchParams.get('ref') === '1') {
+    if (!d || d.kind !== 'ref' || d.id !== id || !d.rows || typeof d.rows !== 'object') return json({ error: '대조 번역본 파일 형식이 올바르지 않습니다.' }, 400);
+    const cur = await getJSON(env, KEY(id), null); if (!cur) return json({ error: '이 대조 번역본을 넣을 자료가 아직 없습니다. 자료부터 넣어 주세요.' }, 404);
+    if (cur.rows.some(r => r.r) && u.searchParams.get('replace') !== '1') return json({ error: '이미 대조 번역본이 있습니다.', exists: true }, 409);
+    let n = 0, miss = 0; const ids = new Set(cur.rows.map(r => r.id));
+    for (const k of Object.keys(d.rows)) if (!ids.has(k)) miss++;
+    cur.rows.forEach(r => { const v = d.rows[r.id]; r.r = v && typeof v[0] === 'string' ? v[0] : ''; if (v && v[1]) r.rc = 1; else delete r.rc; if (r.r) n++; });
+    cur.cols = { ...(cur.cols || {}), r: d.col || (cur.cols && cur.cols.r) || '대조 번역본' };
+    if (d.info) cur.info = { ...(cur.info || {}), r: d.info };
+    cur.updated = new Date().toISOString();
+    await putJSON(env, KEY(id), cur); await touchIndex(env, cur);
+    return json({ ok: true, ref: n, miss, ...summary(cur) });
+  }
   if (!d || d.id !== id || !Array.isArray(d.rows) || !d.rows.every(r => r && typeof r.id === 'string' && typeof r.t === 'string')) return json({ error: '자료 파일 형식이 올바르지 않습니다.' }, 400);
   const old = await env.MEMBERS.head(KEY(id));
   if (old && u.searchParams.get('replace') !== '1') return json({ error: '같은 이름의 자료가 이미 있습니다.', exists: true }, 409);
