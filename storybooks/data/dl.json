@@ -71,6 +71,18 @@
 "pdf": 12269202,
 "zip": 11983005
 },
+"Dhammapada": {
+"n": 15,
+"pdf": 7385797,
+"pdfs": 1128296,
+"stories": 1,
+"zip": 7131206
+},
+"Dhammapada/01-01": {
+"n": 15,
+"pdf": 7405646,
+"zip": 7129905
+},
 "Foremost-Laymen": {
 "n": 157,
 "pdf": 229252185,
@@ -868,11 +880,11 @@
 "zip": 13221311
 },
 "Manimekhalai": {
-"n": 26,
-"pdf": 32385588,
-"pdfs": 3501349,
-"stories": 2,
-"zip": 32123882
+"n": 49,
+"pdf": 56259196,
+"pdfs": 6099015,
+"stories": 4,
+"zip": 55988739
 },
 "Manimekhalai/00-Synopsis-of-the-Story": {
 "n": 12,
@@ -883,6 +895,16 @@
 "n": 14,
 "pdf": 17138724,
 "zip": 16869616
+},
+"Manimekhalai/03-04-In-the-Garden": {
+"n": 12,
+"pdf": 14258542,
+"zip": 13988740
+},
+"Manimekhalai/05-06-Impermanence": {
+"n": 11,
+"pdf": 10147370,
+"zip": 9876892
 },
 "New-Jataka": {
 "n": 168,
