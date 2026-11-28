@@ -61,10 +61,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "pdf/DL-0042/DL-0042_초판.pdf"
+        "url": "pdf/DL-0042/DL-0042_초판.pdf",
+        "site": "",
+        "created": "2026년 11월 28일"
       },
       "pdf_print": {
         "mode": "none",
@@ -85,10 +85,10 @@
         "created": ""
       },
       "hwp": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "hwp/DL-0042/DL-0042_초판.hwp"
+        "url": "hwp/DL-0042/DL-0042_초판.hwp",
+        "site": "",
+        "created": "2026년 11월 28일"
       },
       "reader": false,
       "sources": [
