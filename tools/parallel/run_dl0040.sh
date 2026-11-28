@@ -24,3 +24,6 @@ python3 tools/parallel/align.py DL-0040 en "$P" "$@" \
   --pin "153:0+153:1=" --pin "264:0+264:1=" --pin "265:0=" --pin "279:0+279:1=" --pin "280:0=" \
   --pin "302:0=1596" --seg "302:0=1596" \
   --ko-skip '^:: PDF 무상 배포용|' --pin '308:0=' --ko-short 7 --fnpin 12= $ALIGN_EXTRA
+
+# 태국어 원서 짝(영어 짝을 다리로) — 영어 짝을 다시 만들면 태국어도 다시 (2026-11-28)
+python3 tools/parallel/pivot_th.py

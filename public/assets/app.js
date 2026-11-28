@@ -722,7 +722,7 @@ async function initReaderPage() {
      // 책마다 따로 — 『테라와다 불교의범』처럼 spread 가 있는 책은 처음부터 양쪽으로, 다른 책은 한쪽씩 (운영자 요청, 2026-11-14)
    
     hl: hlp ? hlp.split('|').filter(Boolean) : [], speaking: false,
-    par: root.dataset.par ? root.dataset.par.split(',') : [], parMode: root.dataset.par ? store.get('par-' + id, 'off') : 'off', parD: null, parEd: (() => { try { return JSON.parse(root.dataset.parEd || '[]'); } catch (e) { return []; } })(),  // 원서 대조 (운영자 요청, 2026-11-15)
+    par: root.dataset.par ? root.dataset.par.split(',') : [], parMode: root.dataset.par ? store.get('par-' + id, 'off') : 'off', parD: null, parDs: {}, parDef: root.dataset.parDef ? root.dataset.parDef.split(',') : [], parEd: (() => { try { return JSON.parse(root.dataset.parEd || '[]'); } catch (e) { return []; } })(),  // 원서 대조 (운영자 요청, 2026-11-15)
     ix: man.index || null, ixPart: store.get('ixp-' + id, 0), ixQ: hlp ? hlp.split('|')[0] : ''
   };
   if (!pages.some(p => p.text)) R.view = 'page';
@@ -1148,7 +1148,9 @@ function renderReader() {
        <div class="row">줄 간격 <span class="seg">${[[1.6, '좁게'], [1.9, '보통'], [2.2, '넓게']].map(([v, l]) => `<button data-lh="${v}" class="${R.lh === v ? 'on' : ''}">${l}</button>`).join('')}</span></div>
        <div class="row row-col">글꼴 <span class="seg seg-grid seg-font">${RFONTS.map(([k, l, ff]) => `<button data-font="${k}" class="${R.font === k ? 'on' : ''}" style="font-family:${ff}">${l}</button>`).join('')}</span></div>`}</div>
     <div class="panel" id="p-tts">${ttsPanel()}</div>
-    ${R.par.length ? `<div class="panel" id="p-par"><h5>⇄ 원서 대조</h5><div class="seg">${[['off', '끄기'], ['para', '문단 나란히'], ['sent', '문장마다']].map(([k, v]) => `<button data-parm="${k}" class="${R.parMode === k ? 'on' : ''}">${v}</button>`).join('')}</div>
+    ${R.par.length ? `<div class="panel" id="p-par"><h5>⇄ 원서 대조</h5><div class="seg">${[['off', '끄기'], ['para', '문단 나란히'], ['sent', '문장마다']].map(([k, v]) => `<button data-parm="${k}" class="${R.parMode === k ? 'on' : ''}">${v}</button>`).join('')}</div>${R.par.length > 1 ? `
+      <h5 class="parl-h">대조본</h5><div class="seg" role="group" aria-label="대조할 원서 (여러 개 고를 수 있음)">${R.par.map(l => `<button data-parl="${l}" class="${parSel().includes(l) ? 'on' : ''}">${esc(PAR_LN[l] || l)} 원서</button>`).join('')}</div>
+      <p class="note">여러 원서를 함께 고르면 넓은 화면의 '문단 나란히'는 원서마다 한 칸씩, 휴대폰·'문장마다'는 원서 줄이 차례로 나옵니다. 고른 원서는 이 기기에 기억됩니다.</p>` : ''}
       <p class="note">문단 나란히: 한국어 문단 옆(휴대폰은 아래)에 원서 문단. 문장마다: 한국어 문장과 원서 문장을 번갈아. 짝은 자동으로 맞춘 것이라 조금 어긋난 곳이 있을 수 있습니다.</p></div>` : ''}
     <div class="panel" id="p-mode"><h5>화면 모드</h5><div class="seg">${[['day', '기본'], ['mono', '흑백'], ['night', '밤'], ['contrast', '고대비']].map(([k, v]) => `<button data-rmode="${k}" class="${store.get('mode', 'auto') === k ? 'on' : ''}">${v}</button>`).join('')}</div><p class="note">고른 모드는 사이트 전체에 적용되고 다음에 와도 유지됩니다.</p>${R.view === 'page' && hasImg ? '' : `<div class="row mw-row">글 너비 <span class="seg">${[[28, '좁게'], [36, '보통'], [46, '넓게'], [70, '화면 가득']].map(([v, l]) => `<button data-mw="${v}" class="${R.mw === v ? 'on' : ''}">${l}</button>`).join('')}</span></div>
        <div class="row">문단 정렬 <span class="seg" role="group" aria-label="문단 정렬"><button data-ral="left" class="${alignNow() === 'left' ? 'on' : ''}">왼쪽 정렬</button><button data-ral="just" class="${alignNow() === 'just' ? 'on' : ''}">양쪽 정렬</button></span></div>
@@ -1508,8 +1510,17 @@ function bindReader() {
   $$('[data-pgap]', el).forEach(b => b.onclick = () => { store.set('rpgap', +b.dataset.pgap); renderReader(); reopen('p-mode'); toast('문단 사이 ' + b.textContent); });
   $$('[data-parm]', el).forEach(b => b.onclick = async () => {
     const m = b.dataset.parm;
-    if (m !== 'off' && !R.parD) { try { toast('원서를 불러오는 중입니다…'); R.parD = await (await fetch('/parallel/' + R.id + '.' + R.par[0] + '.json')).json(); } catch (e) { toast('원서를 불러오지 못했습니다'); return; } }
+    if (m !== 'off' && !parSel().every(l => R.parDs[l])) { try { toast('원서를 불러오는 중입니다…'); await parLoad(); } catch (e) { toast('원서를 불러오지 못했습니다'); return; } }
     R.parMode = m; store.set('par-' + R.id, m); renderReader();
+  });
+  // 대조본 고르기 — 여러 원서 함께 (운영자 요청, 2026-11-28): 하나는 늘 남김
+  $$('[data-parl]', el).forEach(b => b.onclick = async () => {
+    const l = b.dataset.parl, cur = parSel(); let nx = cur.includes(l) ? cur.filter(x => x !== l) : cur.concat(l);
+    if (!nx.length) { toast('대조본은 하나 이상 골라야 합니다'); return; }
+    nx = R.par.filter(x => nx.includes(x)); store.set('parl-' + R.id, nx);
+    if (R.parMode === 'off') R.parMode = 'para', store.set('par-' + R.id, 'para');
+    try { toast('원서를 불러오는 중입니다…'); await parLoad(); } catch (e) { toast('원서를 불러오지 못했습니다'); return; }
+    renderReader(); reopen('p-par'); toast('대조본: ' + nx.map(x => PAR_LN[x] || x).join(' · '));
   });
   const spB = $('#rSpread', el); if (spB) spB.onclick = async () => { if (R.spread && !spreadWide()) { spreadRotate(); return; }  // 세로 화면에서 이미 켜져 있으면 가로로만 돌림
     R.spread = !R.spread; store.set('rspread2-' + R.id, R.spread);
@@ -2881,7 +2892,20 @@ document.addEventListener('keydown', e => {
 
 // ---------- 원서 대조 (운영자 요청, 2026-11-15) ----------
 // 짝 자료 /parallel/<ID>.<말>.json : groups[].ko = 한국어 문단 열쇠 '쪽 순번:문단 순번', or = 원서 문단 번호, s = 문장 짝(문단 열쇠·번호, 시작·끝 글자)
-async function parEnsure() { if (R && R.par.length && R.parMode !== 'off' && !R.parD) { try { R.parD = await (await fetch('/parallel/' + R.id + '.' + R.par[0] + '.json')).json(); renderReader(); } catch (e) { R.parMode = 'off'; } } }
+// 여러 원서 함께 대조 (운영자 요청, 2026-11-28 — 『위빠싸나 성자 아짠 문』 영어·태국어): 원서 대조 창에서 대조본을 고름.
+//   기본은 책의 '원서의 언어'(data-par-def) — 이 기기에 기억(dd-parl-<ID>). 첫째로 고른 원서(R.parD)가 찾기·순서 메모·차례 대조의 기준.
+const PAR_LN = { en: '영어', my: '미얀마어', pi: '빠알리어', th: '태국어' };
+function parSel() {
+  if (!R || !R.par.length) return [];
+  let s = store.get('parl-' + R.id, null); if (!Array.isArray(s)) s = R.parDef && R.parDef.length ? R.parDef : [R.par[0]];
+  s = R.par.filter(l => s.includes(l)); return s.length ? s : [R.par[0]];
+}
+async function parLoad() {
+  R.parDs = R.parDs || {};
+  for (const l of parSel()) if (!R.parDs[l]) R.parDs[l] = await (await fetch('/parallel/' + R.id + '.' + l + '.json')).json();
+  R.parD = R.parDs[parSel()[0]]; return R.parD;
+}
+async function parEnsure() { if (R && R.par.length && R.parMode !== 'off' && !parSel().every(l => R.parDs && R.parDs[l])) { try { await parLoad(); renderReader(); } catch (e) { R.parMode = 'off'; } } }
 // 문장마다 보기: 문장 조각이 굵게·기울임 표시(** °° == §§ @@)의 가운데에서 시작하거나 끝나면 조각 안에서 짝을 맞춤
 //   (DL-0029 앗사지 게송: 문단 전체를 감싼 '**…**' 가 첫 줄·끝 줄 조각에만 한쪽씩 남아 '**' 가 글자로 보이던 것, 2026-11-21)
 function parBal(t, a, b) {
@@ -2896,88 +2920,117 @@ function parBal(t, a, b) {
 function parApply() {
   const body = $('#rBody'), rf = body && $('.reflow', body);
   if (!rf || !R || !R.par.length || R.parMode === 'off' || R.view === 'page') return;
-  if (!R.parD) { parEnsure(); return; }
-  const D = R.parD, O = D.orig, wide = innerWidth >= 900, ptx = {};
+  const sel = parSel(), Ds = sel.map(l => R.parDs && R.parDs[l]);
+  if (Ds.some(x => !x)) { parEnsure(); return; }
+  R.parD = Ds[0];
+  const wide = innerWidth >= 900, ptx = {}, multi = Ds.length > 1, two = R.parMode === 'para' && wide;
   const kText = key => { if (!(key in ptx)) { const [n, k] = key.split(':').map(Number); ptx[key] = (paras((R.pages[n - 1] || {}).text)[k]) || ''; } return ptx[key]; };
-  const oHtml = (t, h) => boldMark(esc(t)).replace(/\[\^([^\]\s]+)\]/g, (m, n) => `<sup class="par-fn" role="button" tabindex="0" data-ofn="${n}" aria-label="${esc(lang)} 원서 ${ofnLab(n)}">${ofnSup(n)}</sup>`).replace(/\n/g, '<br>');  // 원서 각주 번호 [^n] → 작은 위첨자, 누르면 원서 각주  // 원서 각주 번호 [^n] → 작은 위첨자
   const kHtml = t => fnMark(phMark(boldMark(esc(t.replace(/^## |^\^\^ |^:: |^>> |^\|\| |^\+\+ /gm, ''))))).replace(/\n/g, '<br>');
-  const lang = { en: '영어', my: '미얀마어', pi: '빠알리어', th: '태국어' }[D.lang] || D.lang;
-  const pgLab = o => `${esc(lang)} 원서 ${esc(o.pg + '쪽')}${o.pdf && o.pdf !== o.pg ? ` (PDF ${esc(o.pdf)}쪽)` : ''}`;
-  // '원서와 순서가 다릅니다 — 원서 201쪽…' 메모의 '원서 201쪽'을 누르면 원서 차례로 그 앞뒤 글이 있는 곳으로 (운영자 요청, 2026-11-25)
-  const noteHtml = (g, gi) => `<p class="par-note" lang="ko" data-ng="${gi}">※ ${esc(g.note).replace(/원서 (?:『[^』]*』 )?[0-9]+쪽(?: ?\(PDF [0-9]+쪽\))?/, m => `<button type="button" class="par-ngo link" data-ngo="${gi}" title="원서 차례에서 이 글 앞뒤가 있는 곳으로 가기">${m}</button>`)}</p>`;
-  rf.classList.add('par-on', R.parMode === 'para' && wide ? 'par2' : 'par1');
-  if (R.parMode === 'para' && wide) rf.style.maxWidth = `calc(${R.mw}em * 2 + 3em)`;
-  let shown = 0, lastPg = null;
-  D.groups.forEach((g, gi) => {
-    if (g.toc) { if (parToc(g, O, kText, oHtml, wide)) shown++; return; }
-    const els = g.ko.map(k => { const [n, s] = k.split(':'); return $(`#rBody [data-pg="${n}"][data-s="${s}"]`); }).filter(Boolean);
-    if (!els.length || !g.or.length) return;
-    shown++;
-    const last = els[els.length - 1];
-    if (R.parMode === 'para') {
-      const box = document.createElement('div'); box.className = 'par-or'; box.lang = D.lang; box.dataset.g = gi;
-      box.innerHTML = g.or.map(i => { const o = O[i]; return `<p class="${o.k === 'h' ? 'par-h' : o.k === 'gl' ? 'par-gl' : o.k === 'cite' ? 'par-cite' : o.k === 'pv' ? 'par-pv' : ''}" data-o="${i}">${oHtml(o.t)}</p>`; }).join('') + (O[g.or[0]].pg !== lastPg && !g.note ? `<span class="par-pg" aria-hidden="true">${esc(lang)} 원서 ${esc(O[g.or[0]].pg ? O[g.or[0]].pg + '쪽' : '')}${O[g.or[0]].pdf && O[g.or[0]].pdf !== O[g.or[0]].pg ? ` (PDF ${esc(O[g.or[0]].pdf)}쪽)` : ''}</span>` : '') + (g.note ? noteHtml(g, gi) : '');   // 원서와 순서가 다른 짝 메모 (운영자 요청, 2026-11-17 — DL-0005)
-      lastPg = O[g.or[g.or.length - 1]].pg;
-      const vis = els.filter(e => e.getClientRects().length);   // 장 제목과 같아 숨긴 글(ch-dup)은 빼고
-      if (wide && vis.length) {   // 넓은 화면: 같은 줄 오른쪽 칸 (한국어 문단 수만큼 줄을 차지)
-        vis.forEach(e => e.classList.add('par-k')); box.style.gridRow = `span ${vis.length}`;
-        const mt = parseFloat(getComputedStyle(vis[0]).marginTop) || 0; if (mt) box.style.marginTop = mt + 'px';   // 소제목처럼 위 여백이 있는 문단과 첫 줄 높이를 맞춤
-        vis[0].after(box);
-      } else (vis[vis.length - 1] || last).after(box);
-    } else {   // 문장마다: 한국어 문장 · 원서 문장을 번갈아 (한국어 문단은 숨기고, 소제목은 그대로)
-      const heads = els.filter(e => e.classList.contains('sub-h') || e.classList.contains('ch-dup'));
-      const box = document.createElement('div'); box.className = 'par-sent'; box.dataset.g = gi;
-      box.innerHTML = g.s.map(p => {
-        const ko = p.ko.map(([k, a, b]) => parBal(kText(k), a, b).replace(/^(?:## |\^\^ |:: |>> |\|\| |\+\+ )/gm, '')).join(' '), or = p.or.map(([i, a, b]) => parBal(O[i].t, a, b)).join(' ');   // 조각마다 줄 첫머리 표시를 뺌 — 두 문단을 이은 문장에서 '++ ' 가 가운데에 남던 것 (DL-0030 90쪽, 2026-11-28)
-        const onlyHead = p.ko.length && p.ko.every(([k]) => heads.some(e => `${e.dataset.pg}:${e.dataset.s}` === k));
-        const pk = p.ko.map(([k]) => k).join(' '), po = p.or.map(([i]) => i).join(' ');   // 찾기 결과에서 그 문단·원서 문단의 문장 줄을 찾을 수 있게 (2026-11-25)
-        const o0 = p.or.length ? O[p.or[0][0]] : null; let pl = '';
-        if (o0 && o0.pg && o0.pg !== lastPg && !g.note) pl = `<span class="par-pg ps-pg" aria-hidden="true">${pgLab(o0)}</span>`;   // 문장마다 보기에도 원서 쪽 (운영자 요청, 2026-11-25)
-        if (o0 && !g.note) lastPg = o0.pg;
-        return pl + (onlyHead ? (or ? `<div class="ps ps-hd" data-k="${pk}" data-o="${po}"><div class="ps-o" lang="${D.lang}">${oHtml(or)}</div></div>` : '') : `<div class="ps" data-k="${pk}" data-o="${po}">${ko ? `<div class="ps-k">${kHtml(ko)}</div>` : ''}${or ? `<div class="ps-o" lang="${D.lang}">${oHtml(or)}</div>` : ''}</div>`);
-      }).join('') + (g.note ? noteHtml(g, gi) : '');
-      els.forEach(e => { if (!heads.includes(e)) e.classList.add('par-hide'); });
-      last.after(box);
-    }
+  const koOf = p => p.ko.map(([k, a, b]) => parBal(kText(k), a, b).replace(/^(?:## |\^\^ |:: |>> |\|\| |\+\+ )/gm, '')).join(' ');   // 조각마다 줄 첫머리 표시를 뺌 — 두 문단을 이은 문장에서 '++ ' 가 가운데에 남던 것 (DL-0030 90쪽, 2026-11-28)
+  const elOf = k => { const [n, x] = k.split(':'); return $(`#rBody [data-pg="${n}"][data-s="${x}"]`); };
+  rf.classList.add('par-on', two ? 'par2' : 'par1'); if (multi) rf.classList.add('par-multi');
+  if (two) { rf.style.maxWidth = `calc(${R.mw}em * ${1 + Ds.length} + ${3 * Ds.length}em)`; rf.style.gridTemplateColumns = `repeat(${1 + Ds.length}, minmax(0,1fr))`; }
+  let shown = 0;
+  const prow = [];   // 문장마다: 첫째 원서 줄의 한국어 글자 자리 — 다른 원서 문장을 같은 줄에 붙일 때
+  Ds.forEach((D, li) => {
+    const O = D.orig, ln = PAR_LN[D.lang] || D.lang, oA = li ? 'data-o2' : 'data-o';   // 둘째 원서부터는 data-o2 (찾기 결과가 첫째 원서 문단으로 가게)
+    const oHtml = t => boldMark(esc(t)).replace(/\[\^([^\]\s]+)\]/g, (m, n) => `<sup class="par-fn" role="button" tabindex="0" data-ofn="${n}" data-ol="${D.lang}" aria-label="${esc(ln)} 원서 ${ofnLab(n)}">${ofnSup(n)}</sup>`).replace(/\n/g, '<br>');  // 원서 각주 번호 [^n] → 작은 위첨자, 누르면 원서 각주
+    const pgLab = o => `${esc(ln)} 원서 ${esc(o.pg + '쪽')}${o.pdf && o.pdf !== o.pg ? ` (PDF ${esc(o.pdf)}쪽)` : ''}`;
+    // '원서와 순서가 다릅니다 — 원서 201쪽…' 메모의 '원서 201쪽'을 누르면 원서 차례로 그 앞뒤 글이 있는 곳으로 (운영자 요청, 2026-11-25)
+    const noteHtml = (g, gi) => `<p class="par-note" lang="ko"${li ? '' : ` data-ng="${gi}"`}>※ ${multi ? esc(ln) + ' ' : ''}${esc(g.note).replace(/원서 (?:『[^』]*』 )?[0-9]+쪽(?: ?\(PDF [0-9]+쪽\))?/, m => `<button type="button" class="par-ngo link" data-ngo="${gi}" data-li="${li}" title="원서 차례에서 이 글 앞뒤가 있는 곳으로 가기">${m}</button>`)}</p>`;
+    const psHtml = (p, pi, heads) => {   // 문장 한 줄 (한국어 + 원서)
+      const ko = koOf(p), or = p.or.map(([i, a, b]) => parBal(O[i].t, a, b)).join(' ');
+      const onlyHead = p.ko.length && p.ko.every(([k]) => heads.some(e => `${e.dataset.pg}:${e.dataset.s}` === k));
+      const pk = p.ko.map(([k]) => k).join(' '), po = p.or.map(([i]) => i).join(' ');   // 찾기 결과에서 그 문단·원서 문단의 문장 줄을 찾을 수 있게 (2026-11-25)
+      const ps = pi != null ? ` data-pi="${pi}"` : '', oL = `<div class="ps-o" lang="${D.lang}" data-ln="${esc(ln)}">${oHtml(or)}</div>`;
+      return onlyHead ? (or ? `<div class="ps ps-hd" data-k="${pk}" ${oA}="${po}"${ps}>${oL}</div>` : '') : `<div class="ps" data-k="${pk}" ${oA}="${po}"${ps}>${ko ? `<div class="ps-k">${kHtml(ko)}</div>` : ''}${or ? oL : ''}</div>`;
+    };
+    let lastPg = null;
+    D.groups.forEach((g, gi) => {
+      if (g.toc) { if (!li && parToc(g, O, kText, oHtml, wide)) shown++; return; }   // 차례 줄 대조는 첫째 원서만
+      const els = g.ko.map(elOf).filter(Boolean);
+      if (!els.length || !g.or.length) return;
+      shown++;
+      const last = els[els.length - 1];
+      if (R.parMode === 'para') {
+        const box = document.createElement('div'); box.className = 'par-or'; box.lang = D.lang; box.dataset.g = gi; box.dataset.li = li; box.dataset.ln = ln;
+        box.innerHTML = g.or.map(i => { const o = O[i]; return `<p class="${o.k === 'h' ? 'par-h' : o.k === 'gl' ? 'par-gl' : o.k === 'cite' ? 'par-cite' : o.k === 'pv' ? 'par-pv' : ''}" ${oA}="${i}">${oHtml(o.t)}</p>`; }).join('') + (O[g.or[0]].pg !== lastPg && !g.note ? `<span class="par-pg" aria-hidden="true">${pgLab(O[g.or[0]])}</span>` : '') + (g.note ? noteHtml(g, gi) : '');   // 원서와 순서가 다른 짝 메모 (운영자 요청, 2026-11-17 — DL-0005)
+        lastPg = O[g.or[g.or.length - 1]].pg;
+        const vis = els.filter(e => e.getClientRects().length);   // 장 제목과 같아 숨긴 글(ch-dup)은 빼고
+        if (wide && vis.length) {   // 넓은 화면: 같은 줄 오른쪽 칸 (한국어 문단 수만큼 줄을 차지, 원서가 여럿이면 원서마다 한 칸)
+          vis.forEach(e => e.classList.add('par-k')); box.style.gridRow = `span ${vis.length}`; box.style.gridColumn = String(2 + li);
+          const mt = parseFloat(getComputedStyle(vis[0]).marginTop) || 0; if (mt) box.style.marginTop = mt + 'px';   // 소제목처럼 위 여백이 있는 문단과 첫 줄 높이를 맞춤
+          let at = vis[0]; while (at.nextElementSibling && at.nextElementSibling.classList.contains('par-or') && +at.nextElementSibling.dataset.li < li) at = at.nextElementSibling;   // 같은 줄의 원서 칸은 원서 차례대로 (격자가 줄을 건너뛰지 않게)
+          at.after(box);
+        } else { let at = vis[vis.length - 1] || last; while (at.nextElementSibling && at.nextElementSibling.classList.contains('par-or') && !at.nextElementSibling.classList.contains('par-fnor') && +at.nextElementSibling.dataset.li < li) at = at.nextElementSibling; at.after(box); }
+      } else if (!li) {   // 문장마다: 한국어 문장 · 원서 문장을 번갈아 (한국어 문단은 숨기고, 소제목은 그대로)
+        const heads = els.filter(e => e.classList.contains('sub-h') || e.classList.contains('ch-dup'));
+        const box = document.createElement('div'); box.className = 'par-sent'; box.dataset.g = gi;
+        box.innerHTML = g.s.map(p => {
+          const o0 = p.or.length ? O[p.or[0][0]] : null; let pl = '';
+          if (o0 && o0.pg && o0.pg !== lastPg && !g.note) pl = `<span class="par-pg ps-pg" aria-hidden="true">${pgLab(o0)}</span>`;   // 문장마다 보기에도 원서 쪽 (운영자 요청, 2026-11-25)
+          if (o0 && !g.note) lastPg = o0.pg;
+          prow.push(p.ko); return pl + psHtml(p, prow.length - 1, heads);
+        }).join('') + (g.note ? noteHtml(g, gi) : '');
+        els.forEach(e => { if (!heads.includes(e)) e.classList.add('par-hide'); });
+        last.after(box);
+      } else {   // 둘째 원서부터: 한국어 글자 자리가 겹치는 첫째 원서 줄 아래에 붙임 — 붙일 줄이 없으면 따로 줄을 만듦
+        const heads = els.filter(e => e.classList.contains('sub-h') || e.classList.contains('ch-dup'));
+        let prev = null, extra = null;
+        g.s.forEach(p => {
+          const or = p.or.map(([i, a, b]) => parBal(O[i].t, a, b)).join(' '); if (!or) return;
+          let row = null;
+          if (p.ko.length) { const pi = prow.findIndex(r => r.some(([k, a, b]) => p.ko.some(([k2, a2, b2]) => k === k2 && a < b2 && a2 < b))); if (pi >= 0) row = $(`#rBody .ps[data-pi="${pi}"]`); }
+          else row = prev;
+          const d = document.createElement('div'); d.className = 'ps-o ps-o2'; d.lang = D.lang; d.dataset.ln = ln; d.setAttribute('data-o2', p.or.map(([i]) => i).join(' ')); d.innerHTML = oHtml(or);
+          if (row) { row.appendChild(d); prev = row; return; }
+          if (!extra) { extra = document.createElement('div'); extra.className = 'par-sent par-sent2'; last.after(extra); }
+          extra.insertAdjacentHTML('beforeend', psHtml(p, null, heads)); prev = extra.lastElementChild;
+          els.forEach(e => { if (!heads.includes(e) && !e.classList.contains('par-hide')) e.classList.add('par-hide'); });
+        });
+        if (g.note) { const n = document.createElement('div'); n.innerHTML = noteHtml(g, gi); (prev || last).after(n.firstChild); }
+      }
+    });
+    $$(`.par-ngo[data-li="${li}"]`, rf).forEach(b => b.onclick = e => {
+      e.preventDefault(); e.stopPropagation();
+      const g = D.groups[+b.dataset.ngo]; if (!g || !g.or.length) return;
+      const own = {}; D.groups.forEach((x, xi) => { if (!x.toc && !x.note && x.ko.length) x.or.forEach(i => { if (!(i in own)) own[i] = xi; }); });
+      const lo = Math.min(...g.or), hi = Math.max(...g.or); let j = null;
+      for (let i = lo - 1; i >= 0; i--) if (i in own) { j = i; break; }
+      if (j == null) for (let i = hi + 1; i < O.length; i++) if (i in own) { j = i; break; }
+      if (j == null) return;
+      const [n, k] = D.groups[own[j]].ko[0].split(':').map(Number);
+      R.i = n - 1; R.hl = []; R.findTerms = []; stopSpeak(false); renderReader();
+      if (R.findAt) R.findAt(n, k, li ? null : j);
+      toast(`원서 차례로 ${b.textContent} 앞뒤 글이 있는 곳입니다`);
+    });
+    // 쪽 아래 각주에도 원서 각주를 함께 (운영자 요청, 2026-11-20 — DL-0022 보디 스님 미주)
+    if (D.fn) rf.querySelectorAll('p.fn').forEach(fp => {
+      const no = fp.querySelector('.fn-no'), n = no && no.dataset.fnno, i = n != null && !(D.fnpg && D.fnpg[n] && +fp.dataset.pg !== D.fnpg[n]) ? D.fn[n] : null;
+      if (i == null || !O[i]) return;
+      const o = O[i], m = o.t.match(/^\[\^([^\]]+)\]:\s*/);
+      const box = document.createElement('div'); box.className = 'par-or par-fnor'; box.lang = D.lang; box.dataset.li = li;
+      box.innerHTML = `<p class="par-fnh" lang="ko">${esc(ln)} 원서 ${esc(m ? ofnLab(m[1]) : '각주')}${o.pg ? ` · 원서 ${esc(o.pg)}쪽` : ''}</p><p>${oHtml(o.t.replace(/^\[\^[^\]]+\]:\s*/, ''))}</p>`;
+      if (two) { fp.classList.add('par-k'); box.style.gridColumn = String(2 + li); let at = fp; while (at.nextElementSibling && at.nextElementSibling.classList.contains('par-fnor')) at = at.nextElementSibling; at.after(box); }
+      else { let t = fp; while (t.nextElementSibling && t.nextElementSibling.dataset && t.nextElementSibling.dataset.pg === fp.dataset.pg && !t.nextElementSibling.classList.contains('fn') && t.nextElementSibling.matches('figure, .r-tbl')) t = t.nextElementSibling; while (t.nextElementSibling && t.nextElementSibling.classList.contains('par-fnor')) t = t.nextElementSibling; t.after(box); }
+      shown++;
+    });
   });
-  $$('.par-ngo', rf).forEach(b => b.onclick = e => {
-    e.preventDefault(); e.stopPropagation();
-    const g = D.groups[+b.dataset.ngo]; if (!g || !g.or.length) return;
-    const own = {}; D.groups.forEach((x, xi) => { if (!x.toc && !x.note && x.ko.length) x.or.forEach(i => { if (!(i in own)) own[i] = xi; }); });
-    const lo = Math.min(...g.or), hi = Math.max(...g.or); let j = null;
-    for (let i = lo - 1; i >= 0; i--) if (i in own) { j = i; break; }
-    if (j == null) for (let i = hi + 1; i < O.length; i++) if (i in own) { j = i; break; }
-    if (j == null) return;
-    const [n, k] = D.groups[own[j]].ko[0].split(':').map(Number);
-    R.i = n - 1; R.hl = []; R.findTerms = []; stopSpeak(false); renderReader();
-    if (R.findAt) R.findAt(n, k, j);
-    toast(`원서 차례로 ${b.textContent} 앞뒤 글이 있는 곳입니다`);
-  });
-  // 쪽 아래 각주에도 원서 각주를 함께 (운영자 요청, 2026-11-20 — DL-0022 보디 스님 미주)
-  if (D.fn) rf.querySelectorAll('p.fn').forEach(fp => {
-    const no = fp.querySelector('.fn-no'), n = no && no.dataset.fnno, i = n != null && !(D.fnpg && D.fnpg[n] && +fp.dataset.pg !== D.fnpg[n]) ? D.fn[n] : null;
-    if (i == null || !O[i]) return;
-    const o = O[i], m = o.t.match(/^\[\^([^\]]+)\]:\s*/);
-    const box = document.createElement('div'); box.className = 'par-or par-fnor'; box.lang = D.lang;
-    box.innerHTML = `<p class="par-fnh" lang="ko">${esc(lang)} 원서 ${esc(m ? ofnLab(m[1]) : '각주')}${o.pg ? ` · 원서 ${esc(o.pg)}쪽` : ''}</p><p>${oHtml(o.t.replace(/^\[\^[^\]]+\]:\s*/, ''))}</p>`;
-    if (R.parMode === 'para' && wide) { fp.classList.add('par-k'); fp.after(box); }
-    else { let t = fp; while (t.nextElementSibling && t.nextElementSibling.dataset && t.nextElementSibling.dataset.pg === fp.dataset.pg && !t.nextElementSibling.classList.contains('fn') && t.nextElementSibling.matches('figure, .r-tbl')) t = t.nextElementSibling; t.after(box); }
-    shown++;
-  });
-  if (!shown) return;
 }
 
 /* ---------- 원서 대조 중 각주: 한국어 각주 창에 원서 각주도, 원서 위첨자 번호를 누르면 원서 각주 (운영자 요청, 2026-11-17) ---------- */
-function parFnAdd(pop, koN, origN, koPg) {
+function parFnAdd(pop, koN, origN, koPg, only) {
   if (!R || !R.parD || !R.parMode || R.parMode === 'off') return;
-  const D = R.parD, O = D.orig || [];
-  const i = origN != null ? O.findIndex(o => o.k === 'fn' && o.t.startsWith('[^' + origN + ']:')) : (D.fn && D.fn[koN] != null && !(D.fnpg && D.fnpg[koN] && koPg != null && +koPg !== D.fnpg[koN]) ? D.fn[koN] : -1);   // fnpg: 같은 번호 각주가 여럿인 책은 짝지은 쪽의 각주에만 (DL-0030 머리말·본문 [^1])
-  if (i < 0 || !O[i]) return;
-  const lang = { en: '영어', my: '미얀마어', pi: '빠알리어', th: '태국어' }[D.lang] || D.lang;
-  const m = O[i].t.match(/^\[\^([^\]]+)\]:\s*/), on = m ? m[1] : '';
-  const box = document.createElement('div'); box.className = 'fnpop-or'; box.lang = D.lang;
-  box.innerHTML = `<div class="fnpop-oh">${esc(lang)} 원서 ${esc(ofnLab(on))}${O[i].pg ? ` · 원서 ${esc(O[i].pg)}쪽` : ''}</div><p>${boldMark(esc(O[i].t.replace(/^\[\^[^\]]+\]:\s*/, '')))}</p>`;
-  pop.appendChild(box);
+  parSel().map(l => R.parDs[l]).filter(D => D && (!only || D.lang === only)).forEach(D => {   // 고른 원서마다 (여러 원서 대조, 2026-11-28)
+    const O = D.orig || [];
+    const i = origN != null ? O.findIndex(o => o.k === 'fn' && o.t.startsWith('[^' + origN + ']:')) : (D.fn && D.fn[koN] != null && !(D.fnpg && D.fnpg[koN] && koPg != null && +koPg !== D.fnpg[koN]) ? D.fn[koN] : -1);   // fnpg: 같은 번호 각주가 여럿인 책은 짝지은 쪽의 각주에만 (DL-0030 머리말·본문 [^1])
+    if (i < 0 || !O[i]) return;
+    const lang = PAR_LN[D.lang] || D.lang;
+    const m = O[i].t.match(/^\[\^([^\]]+)\]:\s*/), on = m ? m[1] : '';
+    const box = document.createElement('div'); box.className = 'fnpop-or'; box.lang = D.lang;
+    box.innerHTML = `<div class="fnpop-oh">${esc(lang)} 원서 ${esc(ofnLab(on))}${O[i].pg ? ` · 원서 ${esc(O[i].pg)}쪽` : ''}</div><p>${boldMark(esc(O[i].t.replace(/^\[\^[^\]]+\]:\s*/, '')))}</p>`;
+    pop.appendChild(box);
+  });
 }
 // 원서 주 번호 이름: 'e12' 는 미주 12 (DL-0034 개정 2판 — 쪽 아래 각주와 장 끝 미주가 따로 번호, 2026-11-22)
 function ofnLab(n) { return /^e\d+$/.test(n) ? '미주 ' + n.slice(1) : '각주 ' + n; }
@@ -2987,13 +3040,14 @@ document.addEventListener('click', e => {
   if (!sup) return;
   e.preventDefault(); e.stopPropagation();
   const old = document.getElementById('fnPop'); if (old) old.remove();
-  const n = sup.dataset.ofn, lang = { en: '영어', my: '미얀마어', pi: '빠알리어', th: '태국어' }[(R && R.parD || {}).lang] || '';
+  const ol = sup.dataset.ol, OD = (R && R.parDs && R.parDs[ol]) || (R && R.parD) || {};
+  const n = sup.dataset.ofn, lang = PAR_LN[OD.lang] || '';
   const pop = document.createElement('div'); pop.id = 'fnPop'; pop.setAttribute('role', 'dialog'); pop.setAttribute('aria-label', lang + ' 원서 ' + ofnLab(n));
   pop.innerHTML = `<div class="fnpop-h">${esc(lang)} 원서 ${esc(ofnLab(n))}<button class="fnpop-x" aria-label="닫기">✕</button></div>`;
-  parFnAdd(pop, null, n);
+  parFnAdd(pop, null, n, null, OD.lang);
   const box = pop.querySelector('.fnpop-or'); if (box) box.querySelector('.fnpop-oh').remove(), box.classList.add('only'); else pop.insertAdjacentHTML('beforeend', '<p class="muted">원서 각주를 찾지 못했습니다.</p>');
   // 짝지은 한국어 각주
-  const D = R && R.parD; const oi = D ? (D.orig || []).findIndex(o => o.k === 'fn' && o.t.startsWith('[^' + n + ']:')) : -1;
+  const D = OD.orig ? OD : null; const oi = D ? (D.orig || []).findIndex(o => o.k === 'fn' && o.t.startsWith('[^' + n + ']:')) : -1;
   const kn = D && D.fn ? Object.keys(D.fn).find(k => D.fn[k] === oi) : null;
   if (kn) { const b = document.createElement('button'); b.className = 'link-btn small'; b.textContent = `한국어 각주 ${kn} 보기`; b.onclick = () => { const r = document.querySelector(`.reflow .fn-ref[data-fn="${CSS.escape(kn)}"]`); pop.remove(); if (r) r.click(); else toast('한국어 각주가 다른 장에 있습니다'); }; pop.appendChild(b); }
   document.body.appendChild(pop);

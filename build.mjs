@@ -64,6 +64,7 @@ if (fs.existsSync(C('texts'))) for (const f of fs.readdirSync(C('texts')).filter
 // 원서 대조 짝 자료 (운영자 요청, 2026-11-15): content/parallel/<ID>.<말>.json — 읽기 화면 '⇄ 원서 대조'
 const PARALLEL = {};
 if (fs.existsSync(C('parallel'))) for (const f of fs.readdirSync(C('parallel'))) { const m = f.match(/^(DL-\d{4})\.([a-z]{2,3})\.json$/); if (m) (PARALLEL[m[1]] = PARALLEL[m[1]] || []).push(m[2]); }
+for (const k in PARALLEL) PARALLEL[k].sort((a, b) => ['en', 'pi', 'my', 'th'].indexOf(a) - ['en', 'pi', 'my', 'th'].indexOf(b));   // 대조본 단추 차례
 const isPin = n => (n.pinned === true || n.pinned === 'true') ? 1 : 0;
 const pinTag = n => isPin(n) ? '<span class="pill pin">주요 공지</span> ' : '';
 const updTag = n => n.updated && n.updated !== n.date ? ` · 고침 ${esc(n.updated)}` : '';
@@ -607,6 +608,9 @@ function peopleLinks(b, text, fld) {
 const fmtsCard = b => { const u = uniqK(formats(b)); const e = curEd(b); const a = e && e.reader && AUDIO[b.id] ? [...u, { k: '오디오북' }] : u; return brlOf(b).length ? [...a, { k: '점자' }] : a; };
 // 원서의 언어는 여러 개 고를 수 있음 (운영자 요청, 2026-11-15) — 예전 글자 하나도 그대로 읽음
 // 원서 대조에 쓴 원서 판본 (운영자 요청, 2026-11-15): 책 JSON parallel_editions [{lang,title,by,edition,url,note}] — 짝 자료(content/parallel)가 있는 말만
+// 원서 대조 기본 대조본 = 책의 '원서의 언어' 가운데 짝 자료가 있는 것 (없으면 첫째) — 여러 원서 함께 대조 (운영자 요청, 2026-11-28)
+const PAR_CODE = { '영어': 'en', '미얀마어': 'my', '빠알리어': 'pi', '태국어': 'th', '싱할라어': 'si' };
+function parDef(b) { const have = PARALLEL[b.id] || [], d = langsOf(b).map(l => PAR_CODE[l]).filter(c => have.includes(c)); return d.length ? d : have.slice(0, 1); }
 function parEds(b) { return (b.parallel_editions || []).filter(x => x && (PARALLEL[b.id] || []).includes(x.lang || 'en')); }
 function langsOf(b) { const v = b.original_language; return (Array.isArray(v) ? v : v ? [v] : []).map(x => String(x).trim()).filter(Boolean); }
 // 책 카드 목록은 화면 낭독기가 '목록, 항목 N개'로 등록 순서대로 하나씩 읽게 ul/li 로 (운영자 요청, 2026-11-17 — 칸으로 나란히 놓인 카드를 건너뛰던 문제)
@@ -833,7 +837,7 @@ for (const b of BOOKS) {
   </div></div></div>`
   }));
   if (e.reader) put(`read/${b.id}/index.html`, layout({
-    title: `${b.title} 읽기`, nav: 'library', page: 'reader', body: `<div id="readerRoot" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}" data-title="${esc(b.title)}" data-byline="${esc(b.byline)}" data-teacher="${esc(t?.name || '')}" data-cover="${esc(b.cover ? (S.site_url || '').replace(/\/$/, '') + b.cover : '')}" data-kakao="${esc(S.kakao_js_key || '')}"${b.no_copy ? ' data-nocopy="1"' : ''}${fs.existsSync(C(`parallel/${b.id}.spread.json`)) ? ' data-sp="1"' : ''}${AUDIO[b.id] ? ` data-audio="/data/audio/${b.id}.json"` : ''}${PARALLEL[b.id] ? ` data-par="${PARALLEL[b.id].join(',')}"` : ''}${parEds(b).length ? ` data-par-ed="${esc(JSON.stringify(parEds(b)))}"` : ''}>
+    title: `${b.title} 읽기`, nav: 'library', page: 'reader', body: `<div id="readerRoot" data-manifest="${esc(readerManifest(b))}" data-book="${b.id}" data-title="${esc(b.title)}" data-byline="${esc(b.byline)}" data-teacher="${esc(t?.name || '')}" data-cover="${esc(b.cover ? (S.site_url || '').replace(/\/$/, '') + b.cover : '')}" data-kakao="${esc(S.kakao_js_key || '')}"${b.no_copy ? ' data-nocopy="1"' : ''}${fs.existsSync(C(`parallel/${b.id}.spread.json`)) ? ' data-sp="1"' : ''}${AUDIO[b.id] ? ` data-audio="/data/audio/${b.id}.json"` : ''}${PARALLEL[b.id] ? ` data-par="${PARALLEL[b.id].join(',')}" data-par-def="${parDef(b).join(',')}"` : ''}${parEds(b).length ? ` data-par-ed="${esc(JSON.stringify(parEds(b)))}"` : ''}>
     <div class="wrap prose"><p class="muted">읽기 화면을 불러오는 중입니다…</p><p><a href="/book/${b.id}/">← 책 정보로 돌아가기</a></p></div></div>`
   }));
 }

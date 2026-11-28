@@ -35,6 +35,7 @@ with sync_playwright() as p:
         pg.add_init_script(f"localStorage.setItem('dd-pos-{bid}','1')")
         if os.environ.get('NAV_SFS'): pg.add_init_script(f"localStorage.setItem('dd-sitefs','{os.environ['NAV_SFS']}')")  # 사이트 글자 크기 1=크게 2=아주 크게
         if os.environ.get('NAV_PAR'): pg.add_init_script(f"localStorage.setItem('dd-par-{bid}', JSON.stringify('{os.environ['NAV_PAR']}'))")  # 원서 대조 보기에서도 검사: para·sent
+        if os.environ.get('NAV_PARL'): pg.add_init_script(f"localStorage.setItem('dd-parl-{bid}', JSON.stringify({json.dumps(os.environ['NAV_PARL'].split(','))}))")  # 여러 원서 함께: NAV_PARL=en,th
         pg.goto(f'{BASE}/read/{bid}/')
         try: pg.wait_for_selector('#rNext', state='attached', timeout=15000)
         except Exception: print(bid, '읽기 화면 없음'); pg.close(); continue

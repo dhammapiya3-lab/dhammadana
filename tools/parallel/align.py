@@ -111,7 +111,25 @@ def sents(t, lang):
     return _sents(t, lang)
 
 
+def th_sents(t):
+    # 태국어: 마침표가 없어 pythainlp 문장 나누기(crfcut)로 — 25자 안 되는 조각은 다음 조각과 하나로 (DL-0040 태국어 원서, 2026-11-28)
+    from pythainlp.tokenize import sent_tokenize
+    out = []; pos = 0
+    for s in sent_tokenize(t, engine='crfcut'):
+        i = t.find(s, pos)
+        if i < 0: continue
+        a, b = i, i + len(s.rstrip()); pos = i + len(s)
+        if b > a: out.append([a, b])
+    m = []
+    for a, b in out:
+        if m and (len(t[m[-1][0]:m[-1][1]]) < 25): m[-1][1] = b
+        else: m.append([a, b])
+    if len(m) > 1 and len(t[m[-1][0]:m[-1][1]]) < 25: m[-2][1] = m[-1][1]; m.pop()
+    return [tuple(x) for x in m] or [(0, len(t.rstrip()))]
+
+
 def _sents(t, lang):
+    if lang == 'th': return th_sents(t)
     out = __sents(t, lang)
     if lang == 'ko' and A.ko_short and len(out) > 1:   # 짧은 외침·부르는 말은 다음 문장과 하나로 (문단 끝이면 앞 문장에)
         m = []; k = 0
@@ -202,7 +220,7 @@ for i in ORDER:
     p = ORIG[i]
     if i in _onopin: continue
     if p['k'] in ('toc', 'gl', 'pq', 'fn', 'sep', 'cite', 'pv', 'hv'): continue      # pv 빠알리 게송·hv 이야기 첫머리 게송(DL-0023) — 원서 차례 쪽·용어 풀이·인용 상자(본문을 크게 다시 실은 것)·여백 출처(cite)는 문장 짝짓기에서 뺌 (한국어 차례도 %% 라 뺌)
-    for a, b in sents(p['t'], 'en'):
+    for a, b in sents(p['t'], 'th' if A.lang == 'th' else 'en'):
         if not plain(p['t'][a:b]).strip(): continue
         if any(re.match(r, plain(p['t'][a:b]).strip()) for r in A.en_drop): EDROP.append((i, a, b)); continue
         ES.append((i, a, b, plain(p['t'][a:b]).strip()))

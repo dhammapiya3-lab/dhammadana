@@ -1652,3 +1652,12 @@ nav.main a .ext{font-size:.92em;opacity:.75}
 .mat-all a{text-decoration:none;color:inherit;display:block}
 .mat-all a:hover .mt,.mat-all a:focus-visible .mt{text-decoration:underline}
 .mat-all .mk{display:inline-block;min-width:5.6em;font-size:13px;color:var(--robe);font-weight:600}
+
+/* 여러 원서 함께 대조 (운영자 요청, 2026-11-28) — 휴대폰·좁은 화면은 원서 이름을 작게, 문장마다는 원서 줄 앞에 이름 */
+.parl-h{margin-top:1em}
+.reflow.par1.par-multi .par-or:not(.par-fnor)::before{content:attr(data-ln) ' 원서';display:block;font-family:var(--sans);font-size:.72em;font-weight:700;color:var(--muted,#888);margin:0 0 .3em}
+.reflow.par-multi .ps-o[data-ln]::before{content:attr(data-ln);font-family:var(--sans);font-size:.7em;font-weight:700;color:var(--muted,#888);margin-right:.5em;vertical-align:.1em}
+.reflow.par-multi .ps-o + .ps-o{margin-top:.3em}
+.reflow.par2.par-multi > .par-or{border-left:1px solid var(--line);padding-left:1.2em;margin-left:-1.2em}
+.par-or:lang(th),.ps-o:lang(th),.fnpop-or:lang(th){font-family:'Noto Sans Thai','Noto Serif Thai','Leelawadee UI','Thonburi',Tahoma,var(--sans);line-height:1.9}
+.par-or:lang(th) p,.ps-o:lang(th){text-align:start!important}   /* 태국어는 낱말 사이 빈칸이 적어 양쪽 정렬하면 구절 사이가 크게 벌어짐 */
