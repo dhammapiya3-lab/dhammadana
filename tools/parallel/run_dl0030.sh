@@ -27,3 +27,4 @@ python3 tools/parallel/align.py DL-0030 en "$P" "$@" \
   --pin "=@There are instances where the Commentaries" --pin "=@PRINCIPAL DATES" --pin "=@Event Date" --pin "712:2=@*Dates" --pin "=@BHIKKHU ÑĀṆAMOLI: A" --pin "715:0+715:1=" \
   --fnpin "170=12.20" --fnpin "181=14.2" --fnpin "28=11.7" \
   --toc --ko-short 7 --en-semi $ALIGN_EXTRA
+python3 tools/parallel/dl0030_fixpairs.py   # 310쪽·90쪽 문장 짝 손질 (2026-11-28)

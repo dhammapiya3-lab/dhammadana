@@ -1,4 +1,5 @@
 # DL-0030『붓다의 일생』 문장 짝 손으로 (한국어 문장 첫머리=원서 문장 첫머리) — run_dl0030.sh 가 --spin 으로 씀
+# 2026-11-28: 616~618쪽 '바후|뿟타'를 붙인 뒤(쪽 경계 낱말) 문장 첫머리에 맞게 고침
 # 1회차 (2026-11-22)
 나는 ‘이것이 번뇌이다.’=I had direct knowledge, as it actually is, that ‘These are taints
 즉 명색은 식이 있게 되는=That is to say: It is with name-and-form
@@ -326,9 +327,8 @@
 그리고 웨사알리에 있을 때에도 …=Once too when I was living here at Vesālī in the Udena Shrin
 우데나 탑묘에서도 …=Once too when I was living here at Vesālī in the Udena Shrin
 고따맛까 탑묘에서도 …=Once too when I was living here at Vesālī in the Udena Shrin
-사땀바 탑묘에서도 … 바후=Once too when I was living here at Vesālī in the Udena Shrin
-뿟타 탑묘에서도 …=Once too when I was living here at Vesālī in the Udena Shrin
-사란다다 탑묘에서도 …=Once too when I was living here at Vesālī in the Udena Shrin
+사땀바 탑묘에서도 … 바후뿟타=Once too when I was living here at Vesālī in the Udena Shrin
+탑묘에서도 …=Once too when I was living here at Vesālī in the Udena Shrin
 그대가 그렇게 했었다면, 여래는 그대 말을 두 번은 거절했을 것이고 세 ~2=Once too when I was living here at Vesālī in the Udena Shrin
 아아난다여, 여래가 그대에게 소중하고 아끼는 모든 것들과는 헤어지기 마련=Have I not already told you, Ānanda, that there is separatio
 태어나고, 존재하게 되고, 형성되고, 쇠락하기 마련인 것이 어떻게 허물어~4=How could it be that what is born, come to being, formed, an~4

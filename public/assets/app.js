@@ -2928,7 +2928,7 @@ function parApply() {
       const heads = els.filter(e => e.classList.contains('sub-h') || e.classList.contains('ch-dup'));
       const box = document.createElement('div'); box.className = 'par-sent'; box.dataset.g = gi;
       box.innerHTML = g.s.map(p => {
-        const ko = p.ko.map(([k, a, b]) => parBal(kText(k), a, b)).join(' '), or = p.or.map(([i, a, b]) => parBal(O[i].t, a, b)).join(' ');
+        const ko = p.ko.map(([k, a, b]) => parBal(kText(k), a, b).replace(/^(?:## |\^\^ |:: |>> |\|\| |\+\+ )/gm, '')).join(' '), or = p.or.map(([i, a, b]) => parBal(O[i].t, a, b)).join(' ');   // 조각마다 줄 첫머리 표시를 뺌 — 두 문단을 이은 문장에서 '++ ' 가 가운데에 남던 것 (DL-0030 90쪽, 2026-11-28)
         const onlyHead = p.ko.length && p.ko.every(([k]) => heads.some(e => `${e.dataset.pg}:${e.dataset.s}` === k));
         const pk = p.ko.map(([k]) => k).join(' '), po = p.or.map(([i]) => i).join(' ');   // 찾기 결과에서 그 문단·원서 문단의 문장 줄을 찾을 수 있게 (2026-11-25)
         const o0 = p.or.length ? O[p.or[0][0]] : null; let pl = '';
