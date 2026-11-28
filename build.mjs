@@ -973,7 +973,7 @@ const serMats = (p, s) => (p.materials || []).filter(m => m && m.url && String(m
 // 강의자료 내려받기(예전 이름 '강의자료 모아 보기', 2026-11-28 바꿈): 시리즈 전체 자료 + 강의마다의 자료(강의 차례대로)
 const allMats = (p, s) => [...serMats(p, s).map(m => ({ m, n: 0, t: '' })), ...s.list.flatMap((e, j) => matsOf(p, e).map(m => ({ m, n: j + 1, t: e.title })))];
 const matAllHtml = (p, s) => { const L = allMats(p, s); if (!L.length) return '';
-  return `<details class="mat-all"><summary>📄 강의자료 내려받기 <span class="muted small">(${L.length}개)</span></summary><ul>${L.map(({ m, n, t }) => `<li><a href="${esc(fileUrl(m.url))}" download target="_blank" rel="noopener"><span class="mk">${n ? esc(t) : '시리즈 전체'}</span> <span class="mt">${esc(m.name)}</span><span class="sr"> 내려받기</span></a></li>`).join('')}</ul></details>`; };
+  return `<details class="mat-all"><summary>📄 강의자료 내려받기 <span class="muted small">(${L.length}개)</span></summary><ul>${L.map(({ m, n, t }) => `<li><a href="${esc(fileUrl(m.url))}" download target="_blank" rel="noopener">${n ? '' : '<span class="mk">시리즈 전체</span> '}<span class="mt">${esc(m.name)}</span><span class="sr"> 내려받기</span></a></li>`).join('')}</ul></details>`; };
 // 강의자료 단추는 늘 '📄 강의자료' 하나 — 누르면 파일 이름 목록이 펼쳐지고 이름을 누르면 내려받음 (운영자 요청, 2026-11-28)
 const matHtml = (p, e) => { const L = matsOf(p, e); if (!L.length) return ''; return ` <details class="ep-mat"><summary>📄 강의자료<span class="sr"> — ${esc(e.title)}, 파일 ${L.length}개</span></summary><ul class="ep-mat-l">${L.map(m => `<li><a href="${esc(fileUrl(m.url))}" download target="_blank" rel="noopener">${esc(m.name)}<span class="sr"> 내려받기</span></a></li>`).join('')}</ul></details>`; };
 // 협력단체·유튜브 채널 (운영자 요청, 2026-11-24): '법문 바로 듣기' 팟빵 채널 목록 아래 '협력단체·유튜브 채널' 제목 + '가나다순' 단추 — 누르면 아래로 채널 목록이 펼쳐짐(새 창으로 유튜브).
@@ -1205,7 +1205,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
       if (AM.length) {
         rows.unshift({ href: `/simple/talks/${p.id}/${i + 1}/mats/`, ic: '📁', kind: 'folder', cols: ['강의자료', '폴더', `파일 ${AM.length}개`] });
         sFolderPage(`simple/talks/${p.id}/${i + 1}/mats/index.html`, { title: `${nm} 강의자료`, path: [...P1, [x.name, `/simple/talks/${p.id}/${i + 1}/`], ['강의자료', '']], up: `/simple/talks/${p.id}/${i + 1}/`, normal: `/dhammatalk/?pl=${p.id}`, what: '강의자료',
-          rows: AM.map(({ m, n, t }) => ({ href: fileUrl(m.url), ic: '📄', kind: 'mat', dl: true, ext: true, cols: [`${n ? t + ' — ' : '시리즈 전체 · '}${m.name}`, n ? '강의자료' : '시리즈 전체 자료', `${matExt(m)} 내려받기`] })) });
+          rows: AM.map(({ m, n, t }) => ({ href: fileUrl(m.url), ic: '📄', kind: 'mat', dl: true, ext: true, cols: [`${n ? '' : '시리즈 전체 · '}${m.name}`, n ? '강의자료' : '시리즈 전체 자료', `${matExt(m)} 내려받기`] })) });
       }
       put(`simple/talks/${p.id}/${i + 1}/index.html`, simpleLayout({ title: nm, path: [...P1, [x.name, '']], up: `/simple/talks/${p.id}/`, normal: `/dhammatalk/?pl=${p.id}`, page: 'simple-talk', status: `법문 ${x.list.length}`,
         body: `<div id="sPlayerSlot"></div>
