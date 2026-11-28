@@ -8,7 +8,7 @@
 import json, re, os, sys, argparse, numpy as np
 REPO = os.path.normpath(os.path.join(os.path.dirname(__file__), '..', '..'))
 sys.path.insert(0, os.path.dirname(__file__))
-ap = argparse.ArgumentParser(); ap.add_argument('--band', type=int, default=200); ap.add_argument('--base', type=float, default=.25)
+ap = argparse.ArgumentParser(); ap.add_argument('--band', type=int, default=200); ap.add_argument('--base', type=float, default=.32)
 ap.add_argument('--title', default='ประวัติท่านพระอาจารย์มั่น ภูริทัตตเถระ'); ap.add_argument('--by', default='ท่านอาจารย์พระมหาบัว ญาณสัมปันโน'); ap.add_argument('--source', default='ประวัติท่านพระอาจารย์มั่น ภูริทัตตเถระ (PDF 287쪽, 글자 인식)')
 A = ap.parse_args()
 EN = json.load(open(os.path.join(REPO, 'content/parallel/DL-0040.en.json')))
