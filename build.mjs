@@ -557,7 +557,7 @@ const T_KEYS = new Map(); for (const t of TEACHERS) for (const n of [t.name, ...
 function peopleRaw(b) {
   const out = [];
   for (const [fld, text] of [['by', b.byline], ['tr', b.translator]]) {
-    for (const part of String(text || '').split(/[,，|;；]|\s{2,}/)) {
+    for (const part of String(text || '').split(/[,，|;；]|\s{2,}|\s+[∙·․]\s+/)) {   // ' ∙ ' 로 나눈 두 지은이도 따로 링크 (운영자 요청, 2026-11-28: 『쉐우민의 스승들』)
       // 이름 뒤 괄호 속 역할('빅쿠 상가락키따 (게송 한글번역)')은 이름에서 뺌 — ';' 로 나뉜 여러 사람도 따로 링크 (운영자 요청, 2026-11-16)
       const name = part.trim().replace(/\s*\([^()]*\)$/, '').replace(PROLE, '').trim(); if (!name) continue;
       out.push({ fld, name });

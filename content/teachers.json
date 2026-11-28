@@ -385,13 +385,15 @@
       "id": "shweoomin",
       "name": "쉐우민 사야도",
       "roman": "Shwe Oo Min Sayadaw",
-      "aliases": [],
+      "aliases": [
+        "우 꼬살라 사야도"
+      ],
       "country": [
         "미얀마"
       ],
       "tradition": "shweoomin",
       "bio": "",
-      "photo": "",
+      "photo": "/uploads/teacher-shweoomin.jpg",
       "rank": 80
     },
     {
@@ -499,7 +501,8 @@
       "name": "우 떼자니야 사야도",
       "roman": "Sayadaw U Tejaniya",
       "aliases": [
-        "아신 떼자니야 사야도"
+        "아신 떼자니야 사야도",
+        "우 떼자니아 사야도"
       ],
       "country": [
         "미얀마"
