@@ -116,10 +116,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "none",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0043/DL-0043_증보판.pdf"
       },
       "pdf_print": {
         "mode": "none",
