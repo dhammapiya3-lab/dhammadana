@@ -149,10 +149,10 @@
         "created": ""
       },
       "hwp": {
-        "mode": "none",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "hwp/DL-0045/DL-0045_1판2쇄.hwp"
       },
       "reader": false,
       "sources": [
