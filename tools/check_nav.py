@@ -39,7 +39,7 @@ with sync_playwright() as p:
         try: pg.wait_for_selector('#rNext', state='attached', timeout=15000)
         except Exception: print(bid, '읽기 화면 없음'); pg.close(); continue
         pg.evaluate("()=>{const c=document.querySelector('#p-toc [data-ci]'); c && c.click()}"); pg.wait_for_timeout(150)
-        stops, prev, same, prevSeen = 0, None, 0, []
+        stops, prev, same, prevSeen = 0, None, 0, []   # 같은 소제목 두 번: 마지막 장의 마지막 소제목에서 '책의 끝입니다' 알림이면 책 끝으로 봄 (2026-11-28, DL-0042)
         for i in range(3000):
             if pg.evaluate("document.querySelector('#rNext').disabled"): break
             # 사람이 메뉴를 띄워 놓고 › 를 누르는 것처럼 (메뉴가 글을 가리는지도 검사)
@@ -48,7 +48,7 @@ with sync_playwright() as p:
             key = (r['ch'], r['text'], r['kind'], r.get('pg'))
             if key == prev:
                 same += 1
-                if same == 1 and r['kind'] in ('sub-h', 'bold') and not pg.evaluate("(()=>{const r=document.querySelector('#rRange');return +r.value>=+r.max-3})()"): bad.append(f"{bid} · {r['ch'].split('·')[-1].strip()} · {r.get('pg')} · 같은 소제목에 두 번 멈춤: {r['text']}")
+                if same == 1 and r['kind'] in ('sub-h', 'bold') and not pg.evaluate("(()=>{const r=document.querySelector('#rRange');return +r.value>=+r.max-3})()") and not pg.evaluate("(()=>[...document.querySelectorAll('.toast,#toast')].some(t=>/책의 끝/.test(t.textContent)))()"): bad.append(f"{bid} · {r['ch'].split('·')[-1].strip()} · {r.get('pg')} · 같은 소제목에 두 번 멈춤: {r['text']}")
                 if same > 3:
                     if pg.evaluate("(()=>{const r=document.querySelector('#rRange');return +r.value>=+r.max-3})()"): break  # 책 끝
                     if pg.evaluate("(()=>[...document.querySelectorAll('.toast,#toast')].some(t=>/책의 끝/.test(t.textContent)))()"): break  # 마지막 장(소제목 없는 긴 미주 등)에서 '책의 끝입니다' 알림 — 책 끝 (2026-11-16, DL-0032)
