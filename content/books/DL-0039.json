@@ -19,6 +19,12 @@
   "paper": "",
   "paper_url": "",
   "stores": [],
+  "videos": [
+    {
+      "name": "",
+      "url": "https://www.youtube.com/playlist?list=PLyVKSjiM41EKvurkVVTC5ckHz-snsLdfr"
+    }
+  ],
   "book_type": "",
   "original_title": "",
   "original_language": [],
@@ -55,10 +61,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "2026년 11월 22일",
         "mode": "file",
-        "url": "pdf/DL-0039/DL-0039_초판.pdf"
+        "url": "pdf/DL-0039/DL-0039_초판.pdf",
+        "site": "",
+        "created": "2026년 11월 28일"
       },
       "pdf_print": {
         "mode": "none",
@@ -79,10 +85,10 @@
         "created": ""
       },
       "hwp": {
-        "site": "",
-        "created": "2026년 11월 22일",
         "mode": "file",
-        "url": "hwp/DL-0039/DL-0039_초판.hwp"
+        "url": "hwp/DL-0039/DL-0039_초판.hwp",
+        "site": "",
+        "created": "2026년 11월 28일"
       },
       "reader": false,
       "sources": [
@@ -115,11 +121,5 @@
   "order": null,
   "hidden": false,
   "no_copy": false,
-  "hide_update": false,
-  "videos": [
-    {
-      "name": "",
-      "url": "https://www.youtube.com/playlist?list=PLyVKSjiM41EKvurkVVTC5ckHz-snsLdfr"
-    }
-  ]
+  "hide_update": false
 }
