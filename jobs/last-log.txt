@@ -1,30 +1,37 @@
+Dhammapada 01-02 15 장
+Dhammapada 01-03 16 장
+Jataka 001-The-Waterless-Desert 15 장
+Manimekhalai 25-26-Karma-and-Rebirth 13 장
 자동 검수: 문제 의심 0 곳
-On branch storybooks-qa
-Your branch is up to date with 'origin/storybooks-qa'.
-
-nothing to commit, working tree clean
-R2 에 올림: 47 개 / 한글판 이야기 336 편
+R2 에 올림: 165 개 / 한글판 이야기 339 편
 새 그림책 올림: New-Jataka/007-Katthahari-en 27 장
 새 그림책 올림: New-Jataka/007-Katthahari 27 장
 새 그림책: 올린 그림 54 장
-공개 주소 확인: 404 27150바이트
+공개 주소 확인: 200 364069바이트
+이야기 Dhammapada/01-02 {'pdf': 5939378, 'zip': 5664539, 'n': 15}
+이야기 Dhammapada/01-03 {'pdf': 5330041, 'zip': 5051382, 'n': 16}
+책 Dhammapada {'pdf': 18112907, 'pdfs': 2649473, 'zip': 17848180, 'stories': 3, 'n': 46}
+이야기 Jataka/001-The-Waterless-Desert {'pdf': 14222662, 'zip': 13957299, 'n': 15}
+책 Jataka {'pdf': 494095700, 'pdfs': 50569323, 'zip': 493685943, 'stories': 32, 'n': 422}
+이야기 Manimekhalai/25-26-Karma-and-Rebirth {'pdf': 16493249, 'zip': 16222112, 'n': 13}
+책 Manimekhalai {'pdf': 196432986, 'pdfs': 21083875, 'zip': 196115725, 'stories': 14, 'n': 173}
 이야기 New-Jataka/007-Katthahari {'pdf': 22615806, 'zip': 22439452, 'n': 27}
 책 New-Jataka {'pdf': 152466701, 'pdfs': 27818823, 'zip': 152255491, 'stories': 7, 'n': 195}
 이야기 New-Jataka/007-Katthahari-en {'pdf': 22645848, 'zip': 22447806, 'n': 27}
 책 New-Jataka-en {'pdf': 152711734, 'pdfs': 28080250, 'zip': 152468590, 'stories': 7, 'n': 195}
-내려받기 파일: 4 묶음 새로 만듦
-글로 보기: 338 이야기
-Way-Beyond: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="rm5yEoO'
+내려받기 파일: 11 묶음 새로 만듦
+글로 보기: 341 이야기
+Way-Beyond: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="t90aos3'
 18-Verses-2
-Light-of-Asia: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="LsHGoM+'
+Light-of-Asia: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="00cjR2p'
 08-Light-of-Asia
-Four-Rich-Men: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="wEETuhp'
+Four-Rich-Men: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="GHv86Ff'
 04-Kalavaliya-the-Treasurer
-Jatakamala: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="ec1KDHd'
+Jatakamala: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="kL5dggt'
 34-Woodpecker
-Rasavahini: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="+ui0Vx5'
+Rasavahini: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="w7b8tGi'
 20-The-Brahmin-Soma
-Manimekhalai: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="019IpTw'
+Manimekhalai: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="yrdEP4F'
 29-30-Escape-from-Samsara
-Dhammapada: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="7eaib6b'
+Dhammapada: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="ecGwjaU'
 13-11
