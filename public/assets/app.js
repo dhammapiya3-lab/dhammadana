@@ -147,7 +147,10 @@ async function initMembers() {
   let j;
   try { const r = await fetch('/study/api/list', { cache: 'no-store' }); if (!r.ok) throw 0; j = await r.json(); } catch (e) { root.innerHTML = '<p class="muted">목록을 불러오지 못했습니다. 새로고침해 주세요.</p>'; return; }
   const who = j.email ? `<p class="small muted">${esc(j.email)} 로 들어왔습니다 · <a href="/cdn-cgi/access/logout">나가기</a></p>` : '';
-  const head = `<div class="prose" style="padding-bottom:0"><h1>학습 자료실</h1><p class="muted">허락받은 분만 보는 곳입니다. 이 곳의 자료는 다른 분께 넘기지 말아 주세요.</p>${who}</div>`;
+  // 번역 교정은 관리자만 — 관리자 열쇠가 있는 브라우저에서만 링크가 보임(운영자 요청, 2026-11-28). 들어가도 서버가 열쇠를 확인해야 글을 줌.
+  let isAdm = false; try { isAdm = !!localStorage.getItem('dd-gh-token') || Object.keys(localStorage).some(k => /sveltia/i.test(k) && /"token"\s*:/.test(localStorage.getItem(k) || '')); } catch (e) {}
+  const adm = isAdm ? `<p class="small"><a href="/study/trans/">✏️ 번역 교정 (관리자)</a></p>` : '';
+  const head = `<div class="prose" style="padding-bottom:0"><h1>학습 자료실</h1><p class="muted">허락받은 분만 보는 곳입니다. 이 곳의 자료는 다른 분께 넘기지 말아 주세요.</p>${who}${adm}</div>`;
   j.files = j.files.filter(f => !/\.gz$/i.test(f.key));
   const fileSet = new Set([...j.files.map(f => f.key), ...((j.catalog || {}).items || []).map(it => it.text).filter(Boolean)]), fileBy = Object.fromEntries(j.files.map(f => [f.key, f]));
   const items = ((j.catalog || {}).items || []).filter(it => it && it.title).map(it => ({ ...it, files: (it.files || []).filter(k => fileSet.has(k)) }));

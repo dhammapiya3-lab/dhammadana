@@ -1,0 +1,41 @@
+{
+ "fix": [
+  {
+   "k": [
+    "2. 편안하게"
+   ],
+   "e": [
+    "3. He/she will wake"
+   ]
+  },
+  {
+   "k": [
+    "3. 악몽"
+   ],
+   "e": [
+    "2. He/she will have good"
+   ]
+  },
+  {
+   "k": [
+    "8. 얼굴"
+   ],
+   "e": [
+    "9. His/her facial"
+   ]
+  },
+  {
+   "k": [
+    "9. 마음이 평온"
+   ],
+   "e": [
+    "8. He/she will be able to concentrate"
+   ]
+  }
+ ],
+ "skip_ko": [
+  "<일러두기>",
+  "- 본서는",
+  "- 저자이신"
+ ]
+}
