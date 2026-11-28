@@ -1,12 +1,12 @@
-Manimekhalai 11-12-The-Miraculous-Bowl 15 장
+Manimekhalai 13-14-Aputra 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 77 개 / 한글판 이야기 330 편
+R2 에 올림: 77 개 / 한글판 이야기 331 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1262733바이트
-이야기 Manimekhalai/11-12-The-Miraculous-Bowl {'pdf': 14838921, 'zip': 14565393, 'n': 15}
-책 Manimekhalai {'pdf': 94864647, 'pdfs': 10117115, 'zip': 94580771, 'stories': 7, 'n': 85}
+공개 주소 확인: 200 1224501바이트
+이야기 Manimekhalai/13-14-Aputra {'pdf': 17877178, 'zip': 17611095, 'n': 15}
+책 Manimekhalai {'pdf': 112481206, 'pdfs': 12076306, 'zip': 112191455, 'stories': 8, 'n': 100}
 내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 330 이야기
+글로 보기: 331 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
