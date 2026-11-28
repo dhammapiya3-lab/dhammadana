@@ -168,7 +168,8 @@ const ymdKey = t => { const m = String(t || '').match(/(\d{4})\D+(\d{1,2})\D+(\d
 function edHistory(b) {
   const out = [];
   for (const e of b.editions || []) {
-    const l = (e.label || '').trim(), p = (e.published || '').trim(), pe = (e.published_ebook || '').trim();
+    // 판 이름에 '종이책'·'전자책'이 이미 있으면 빼고 씀 — '종이책 초판 종이책 발행' 처럼 두 번 나오지 않게 (운영자 요청, 2026-11-28)
+    const l = (e.label || '').replace(/\s*(종이책|전자책)\s*/g, ' ').trim(), p = (e.published || '').trim(), pe = (e.published_ebook || '').trim();
     if (p) out.push({ k: ymdKey(p), t: p.includes('종이책') ? p : l && p.includes(l) ? p.replace(l, `${l} 종이책`) : `${l ? l + ' ' : ''}종이책 발행 ${p}` });
     if (pe) out.push({ k: ymdKey(pe), t: pe.includes('전자책') ? pe : `${l ? l + ' ' : ''}전자책 발행 ${pe}` });
     if (!p && !pe && l) out.push({ k: '', t: l });
