@@ -151,10 +151,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "file",
-        "url": "pdf/DL-0040/DL-0040_교정판.pdf",
         "site": "",
-        "created": "2026년 11월 28일"
+        "created": "2026년 11월 28일",
+        "mode": "file",
+        "url": "pdf/DL-0040/DL-0040_교정판.pdf"
       },
       "pdf_print": {
         "mode": "none",
