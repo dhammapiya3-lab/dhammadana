@@ -80,10 +80,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "2026년 11월 23일",
         "mode": "file",
-        "url": "pdf/DL-0041/DL-0041_초판.pdf"
+        "url": "pdf/DL-0041/DL-0041_초판.pdf",
+        "site": "",
+        "created": "2026년 11월 28일"
       },
       "pdf_print": {
         "mode": "none",
@@ -104,10 +104,10 @@
         "created": ""
       },
       "hwp": {
-        "site": "",
-        "created": "2026년 11월 23일",
         "mode": "file",
-        "url": "hwp/DL-0041/DL-0041_초판.hwp"
+        "url": "hwp/DL-0041/DL-0041_초판.hwp",
+        "site": "",
+        "created": "2026년 11월 28일"
       },
       "reader": true,
       "sources": [
