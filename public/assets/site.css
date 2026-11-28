@@ -1679,4 +1679,4 @@ nav.main a .ext{font-size:.92em;opacity:.75}
 @media (max-width:600px){.ep details.ep-mat{margin:4px 6px 0 0}.ep .ep-mat-l{position:static;margin-top:4px;box-shadow:none}}
 
 /* 문답의 말하는 이 표시를 인쇄본처럼 작은 보통 글씨로 — 텍스트 JSON spk_small (『쉐우민의 스승들』 '수행자'·'사야도', 운영자 요청 2026-11-28) */
-:root .reflow.spks .spk{color:inherit;font-weight:400;font-size:.7em;letter-spacing:0;margin-right:.45em}
+:root .reflow.spks .spk{color:inherit;font-weight:400;font-size:.7em;letter-spacing:0;margin-right:1.1em}
