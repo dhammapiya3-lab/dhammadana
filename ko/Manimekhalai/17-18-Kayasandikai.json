@@ -1,0 +1,347 @@
+[
+ {
+  "img": "images/17-18-Kayasandikai-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     362,
+     148,
+     728,
+     322
+    ],
+    "ko": "마니메칼라이\n자비와 출리의 서사시\n제17·18편",
+    "cover": [
+     238,
+     228,
+     205
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-18-Kayasandikai-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     396,
+     104,
+     726,
+     294
+    ],
+    "ko": "마니메칼라이는 결코 비지 않는 거룩한 발우를 지녔습니다. 그녀는 끝없는 음식을 아낌없이 나누어 가난한 이들의 큰 굶주림을 채웠습니다. 참된 재물은 끝없는 덕에 있습니다.",
+    "cover": [
+     238,
+     228,
+     205
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-18-Kayasandikai-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     184,
+     52,
+     498,
+     172
+    ],
+    "ko": "윗자다라 여인 까야산디까이는 '코끼리 굶주림'에 시달렸습니다. 아무리 먹어도 바다에 던진 돌처럼 사라질 뿐이었습니다. 그녀는 비구니에게 자비를 빌었습니다.",
+    "cover": [
+     238,
+     228,
+     205
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-18-Kayasandikai-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     324,
+     772,
+     364
+    ],
+    "ko": "업의 무게",
+    "cover": [
+     238,
+     228,
+     205
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     28,
+     364,
+     772,
+     446
+    ],
+    "ko": "잘못: 열두 해에 한 번 열리는 거룩한 열매를 실수로 짓밟음\n저주: 고행자 위릇찌까가 채워지지 않는 굶주림의 벌을 내림\n잃은 것: 하늘을 나는 주문을 빼앗기고 사람의 세상에 갇힘",
+    "cover": [
+     238,
+     228,
+     205
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-18-Kayasandikai-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     106,
+     94,
+     290,
+     352
+    ],
+    "ko": "거룩한 발우에서 나온 밥 한 줌으로 마니메칼라이는 열두 해의 저주를 단번에 풀었습니다. 굶주림이 가신 까야산디까이는 고마워하며 북쪽 고향으로 떠났습니다.",
+    "cover": [
+     238,
+     228,
+     205
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-18-Kayasandikai-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     0,
+     4,
+     800,
+     68
+    ],
+    "ko": "큰 도성 뿌하르에 들어선 마니메칼라이는 짝까왈라 꼿담의 쉼터를 자기 자리로 삼았습니다. 가난한 이들을 부르니, 커다란 돌 전각에는 끝없는 보시의 기쁨이 늘 울려 퍼졌습니다.",
+    "cover": [
+     44,
+     30,
+     22
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/17-18-Kayasandikai-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     408,
+     280,
+     798,
+     448
+    ],
+    "ko": "마니메칼라이가 수행자가 되었다는 소식에 할머니 찌뜨라빠띠는 몹시 노했습니다. 비구니의 옷이 무희 집안에 대한 모욕이라 여긴 그녀는, 손녀를 본래의 삶으로 끌어오겠다고 맹세했습니다.",
+    "cover": [
+     238,
+     228,
+     205
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-18-Kayasandikai-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     60,
+     88,
+     342,
+     382
+    ],
+    "ko": "손녀를 되찾으려고 찌뜨라빠띠는 우다야꾸마라 왕자를 부추겨 남은 연정에 불을 지폈습니다. 그녀는 신들의 경고를 무시하며, 삭까(인드라)와 아그니 같은 가장 높은 신들도 그릇된 사랑에 굴복한다고 말했습니다.",
+    "cover": [
+     238,
+     228,
+     205
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-18-Kayasandikai-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     204,
+     314,
+     614,
+     442
+    ],
+    "ko": "애욕에 이끌린 왕자는 쉼터로 마니메칼라이를 찾아와 왜 수행자의 길을 택했느냐고 따졌습니다. 전생에 그녀의 남편이었지만, 그녀는 왕자의 화려함에 조금도 흔들리지 않았습니다.",
+    "cover": [
+     238,
+     228,
+     205
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-18-Kayasandikai-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     314,
+     612,
+     436
+    ],
+    "ko": "“태어남, 자라고 늙음, 죽음으로 끝나는 병, 이것이 사람 몸의 괴로움입니다.” 피할 수 없는 이 괴로움을 알기에 그녀는 왕자의 구애를 물리치고, 오직 끝없는 보시에 삶을 바쳤습니다.",
+    "cover": [
+     238,
+     228,
+     205
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-18-Kayasandikai-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     62,
+     68,
+     322,
+     202
+    ],
+    "ko": "왕자의 끈질긴 추적을 피하려고 마니메칼라이는 짬빠빠띠 여신의 사원으로 갔습니다. 거룩한 주문을 외자 그녀는 윗자다라 여인 까야산디까이와 똑같은 모습으로 바뀌었습니다.",
+    "cover": [
+     238,
+     228,
+     205
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-18-Kayasandikai-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     88,
+     338,
+     740,
+     442
+    ],
+    "ko": "환영에 속은 왕자는 마니메칼라이가 나타날 때까지 여신의 발치에서 굶겠다고 맹세했습니다. 집착에 눈이 먼 그는 그 자리에 갇혔고, 그녀는 다른 모습으로 자유로이 걸어 나갔습니다.",
+    "cover": [
+     238,
+     228,
+     205
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/17-18-Kayasandikai-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     84,
+     328,
+     722,
+     442
+    ],
+    "ko": "영적인 의무는 세속의 혈통보다 앞섭니다. 아버지 꼬왈란의 이름도, 할머니의 꾀도 자비와 괴로움을 덜어 주는 일에 닻을 내린 마음을 꺾지 못했습니다.",
+    "cover": [
+     238,
+     228,
+     205
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
