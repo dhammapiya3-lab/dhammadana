@@ -2,7 +2,7 @@
   "id": "DL-0043",
   "title": "쉐우민의 스승들",
   "subtitle": "",
-  "cover": "",
+  "cover": "/uploads/20261128_201021.png",
   "byline": "우 꼬살라 사야도 ∙ 우 떼자니아 사야도 지음",
   "translator": "묘원 엮음",
   "teacher": "shweoomin",
@@ -116,10 +116,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "pdf/DL-0043/DL-0043_증보판.pdf"
+        "url": "pdf/DL-0043/DL-0043_증보판.pdf",
+        "site": "",
+        "created": ""
       },
       "pdf_print": {
         "mode": "none",
