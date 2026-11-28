@@ -1,0 +1,1111 @@
+[
+ {
+  "img": "images/Dhp-a-01-03-Thulla-Tissa-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     42,
+     38,
+     448,
+     80
+    ],
+    "ko": "원한의 해부",
+    "cover": [
+     249,
+     249,
+     244
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     42,
+     188,
+     560,
+     284
+    ],
+    "ko": "\"그가 나를 욕하고, 나를 때리고,\n나를 이기고, 내 것을 빼앗았다…\"",
+    "cover": [
+     249,
+     249,
+     244
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     432,
+     386,
+     764,
+     428
+    ],
+    "ko": "악의가 마음을 갉아먹는 성질과\n그것을 그치는 길에 관한 부처님의 가르침",
+    "cover": [
+     249,
+     249,
+     244
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Dhp-a-01-03-Thulla-Tissa-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     37,
+     680,
+     85
+    ],
+    "ko": "법당 한가운데 앉은 장로",
+    "cover": [
+     250,
+     249,
+     244
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     48,
+     107,
+     352,
+     427
+    ],
+    "ko": "• 누구: 부처님의 친척으로\n  늙어서 출가한 툴라 띳사 존자.\n\n• 모습: 몸이 몹시 뚱뚱했고,\n  부처님께 바쳐지는 이익과\n  공경을 누리며, 법당에서\n  늘 가장 눈에 띄는 자리에\n  앉았습니다.\n\n• 태도: 크샤트리아(무사 계급)\n  출신이라는 자만을\n  지니고 있었습니다.",
+    "cover": [
+     251,
+     251,
+     245
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Dhp-a-01-03-Thulla-Tissa-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     136,
+     38,
+     664,
+     86
+    ],
+    "ko": "시중을 청했으나 돌아온 침묵",
+    "cover": [
+     250,
+     250,
+     244
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     272,
+     124,
+     748,
+     412
+    ],
+    "ko": "객비구들이 띳사를 큰 장로로 알고, 시중을 들고\n발을 주물러 드리겠다고 했습니다.\n\n띳사는 대꾸하지 않았습니다.\n\n한 젊은 비구가 그의 무례함과 뉘우침 없음을\n따졌습니다. \"안거를 몇 번 지내셨습니까?\"\n띳사의 대답은 \"한 번도 없네.\"였습니다.\n\n자존심이 상한 띳사는 \"너희 일족을 뿌리째\n없애 버리겠다\" 하고는 울며 스승께 갔습니다.",
+    "cover": [
+     249,
+     249,
+     244
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Dhp-a-01-03-Thulla-Tissa-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     39,
+     696,
+     87
+    ],
+    "ko": "스승 앞에 가져온 하소연",
+    "cover": [
+     249,
+     250,
+     244
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     68,
+     101,
+     418,
+     129
+    ],
+    "ko": "띳사: \"세존이시여, 이 비구들이",
+    "cover": [
+     248,
+     249,
+     242
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     68,
+     129,
+     268,
+     155
+    ],
+    "ko": "저를 욕합니다.\"",
+    "cover": [
+     247,
+     247,
+     237
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     376,
+     155,
+     740,
+     183
+    ],
+    "ko": "스승: \"그대는 어디 앉아 있었는가?\"",
+    "cover": [
+     248,
+     249,
+     242
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     68,
+     199,
+     408,
+     227
+    ],
+    "ko": "띳사: \"정사 한가운데 앉아 있었습니다…\"",
+    "cover": [
+     248,
+     249,
+     241
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     384,
+     234,
+     740,
+     323
+    ],
+    "ko": "스승: \"비구들이 왔을 때 그들을 보았는가?\n일어나 맞이했는가? 발우와 가사를\n받아 주겠다고 했는가? 자리를 내주었는가?\"",
+    "cover": [
+     248,
+     249,
+     240
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     68,
+     339,
+     376,
+     367
+    ],
+    "ko": "띳사: \"아닙니다, 세존이시여.\"",
+    "cover": [
+     248,
+     249,
+     241
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     160,
+     383,
+     640,
+     437
+    ],
+    "ko": "\"띳사여, 그대가 그 모든 시중을 들었어야 했다. …\n잘못은 그대에게만 있으니 비구들에게 용서를 구하라.\"",
+    "cover": [
+     248,
+     249,
+     241
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Dhp-a-01-03-Thulla-Tissa-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     38,
+     640,
+     88
+    ],
+    "ko": "고집에서 나온 거절",
+    "cover": [
+     251,
+     248,
+     241
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     120,
+     112,
+     680,
+     144
+    ],
+    "ko": "\"하지만 저들이 저를 욕했습니다, 세존이시여. 저는 용서를 구하지 않겠습니다.\"",
+    "cover": [
+     251,
+     248,
+     241
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     200,
+     156,
+     600,
+     186
+    ],
+    "ko": "\"세존이시여, 저는 용서를 구하지 않겠습니다.\"",
+    "cover": [
+     250,
+     248,
+     241
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 18,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     148,
+     346,
+     652,
+     394
+    ],
+    "ko": "\"비구들이여, 그가 고집을 부린 것은 이번이 처음이 아니다.\n지난 생에도 고집을 부렸다.\"",
+    "cover": [
+     251,
+     248,
+     240
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Dhp-a-01-03-Thulla-Tissa-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     96,
+     135,
+     704,
+     247
+    ],
+    "ko": "지금을 알려면\n지난날을 보아야 한다",
+    "cover": [
+     250,
+     243,
+     230
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 40,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     152,
+     259,
+     648,
+     339
+    ],
+    "ko": "바라나시 왕국. 데왈라와 나라다 두 고행자가\n히말라야 지방에서 여덟 달 동안 홀로 지내다\n돌아왔습니다.",
+    "cover": [
+     250,
+     243,
+     229
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Dhp-a-01-03-Thulla-Tissa-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     136,
+     28,
+     664,
+     72
+    ],
+    "ko": "옹기장이 집에서 두 번의 실수",
+    "cover": [
+     252,
+     249,
+     242
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     42,
+     94,
+     420,
+     244
+    ],
+    "ko": "첫 번째 일\n데왈라가 문간에 가로누웠습니다. 밤에 밖으로\n나가던 나라다가 실수로 그의 땋은 머리를 밟았습니다.\n데왈라가 외쳤습니다. \"가짜 고행자여… 내 머리를\n밟는구나.\" 나라다는 실수였다며 사과했습니다.",
+    "cover": [
+     252,
+     249,
+     243
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     42,
+     272,
+     420,
+     440
+    ],
+    "ko": "두 번째 일\n데왈라가 머리 방향을 바꾸어 누웠습니다. 조심하려\n애쓰며 들어오던 나라다가 실수로 그의 목을 밟았습니다.\n데왈라는 다시 외치며 사과를 받지 않았습니다.\n\"처음엔 내 머리를 밟더니 이번엔 내 목을 밟는구나.\n너를 저주하리라.\"",
+    "cover": [
+     252,
+     249,
+     244
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Dhp-a-01-03-Thulla-Tissa-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     72,
+     31,
+     728,
+     79
+    ],
+    "ko": "죄 없는 이에게 저주, 죄 있는 이에게 저주",
+    "cover": [
+     252,
+     249,
+     240
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     120,
+     186,
+     314,
+     338
+    ],
+    "ko": "천 개의 빛살,\n백 개의 불꽃으로\n해가 어둠을 걷으리니,\n아침에 해가 뜨면\n네 머리가\n일곱 조각 나라.",
+    "cover": [
+     251,
+     249,
+     240
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     570,
+     219,
+     752,
+     299
+    ],
+    "ko": "…죄 있는 자의 머리가\n일곱 조각 나고,\n죄 없는 이의 머리는\n그러지 않기를.",
+    "cover": [
+     251,
+     249,
+     239
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 16,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Dhp-a-01-03-Thulla-Tissa-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     44,
+     600,
+     90
+    ],
+    "ko": "해가 뜨지 않다",
+    "cover": [
+     250,
+     247,
+     240
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     42,
+     328,
+     268,
+     404
+    ],
+    "ko": "나라다의 힘: 큰 신통을 지닌\n나라다는 저주가 데왈라에게\n떨어질 것을 알았습니다.",
+    "cover": [
+     73,
+     60,
+     49
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     296,
+     328,
+     504,
+     404
+    ],
+    "ko": "연민의 행위: 동료 고행자를\n지키려고 신통으로\n해가 뜨지 못하게 했습니다.",
+    "cover": [
+     48,
+     38,
+     29
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     524,
+     328,
+     768,
+     424
+    ],
+    "ko": "어둠에 잠긴 세상: 생업을 잇지\n못한 백성들이 왕궁 앞에 모여\n울부짖었습니다. \"대왕이시여,\n해가 뜨지 않습니다… 해가\n뜨게 해 주십시오.\"",
+    "cover": [
+     72,
+     59,
+     49
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 15,
+    "dark": true,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Dhp-a-01-03-Thulla-Tissa-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     39,
+     600,
+     91
+    ],
+    "ko": "왕이 사정을 묻다",
+    "cover": [
+     251,
+     249,
+     240
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     352,
+     139,
+     748,
+     311
+    ],
+    "ko": "\"잠부디빠에서 생업을\n이어 갈 수 없소. 나라다여,\n어찌하여 세상이\n어두워졌소? 묻거든\n대답해 주시오.\"",
+    "cover": [
+     251,
+     248,
+     240
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 24,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     352,
+     335,
+     748,
+     410
+    ],
+    "ko": "나라다는 일의 전말을 다 이야기하고 해결책을\n밝혔습니다. \"저에게 용서를 빌면 그는 죽음을\n면할 수 있습니다.\"",
+    "cover": [
+     251,
+     248,
+     238
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Dhp-a-01-03-Thulla-Tissa-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     44,
+     688,
+     90
+    ],
+    "ko": "죽음 앞에서도 꺾이지 않는 고집",
+    "cover": [
+     251,
+     248,
+     237
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     64,
+     112,
+     632,
+     420
+    ],
+    "ko": "\"대왕이시여, 이자가 제 땋은 머리와 목을 밟았습니다.\n저는 이 가짜 고행자에게 용서를 빌지 않겠습니다.\"\n\n\"대왕이시여, 저는 그에게 용서를 빌지 않겠습니다.\"\n\n\"그래도 저는 그에게 용서를 빌지 않겠습니다.\"\n\n데왈라가 스스로는 하지 않으리라 여긴 왕은\n그의 손과 발, 배와 목을 붙잡아 나라다의 발 앞에\n억지로 엎드리게 했습니다.",
+    "cover": [
+     251,
+     248,
+     237
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Dhp-a-01-03-Thulla-Tissa-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     43,
+     600,
+     91
+    ],
+    "ko": "쪼개진 진흙 덩이",
+    "cover": [
+     251,
+     249,
+     237
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     64,
+     115,
+     520,
+     415
+    ],
+    "ko": "나라다의 지시\n\"이 고행자가 스스로 용서를 구하지 않으니…\"\n나라다는 왕에게 데왈라를 호수로 데려가\n머리에 진흙 덩이를 얹고 목까지 물에\n잠기게 세우라고 일렀습니다.\n\n빠져나갈 길\n나라다가 데왈라에게 말했습니다. \"[해가 뜨는]\n그 순간 물속으로 잠겼다가 다른 곳에서\n떠올라 그대의 길을 가시오.\"",
+    "cover": [
+     251,
+     249,
+     237
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Dhp-a-01-03-Thulla-Tissa-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     104,
+     38,
+     696,
+     86
+    ],
+    "ko": "세월을 건너 드러난 인물들",
+    "cover": [
+     250,
+     247,
+     241
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     240,
+     100,
+     560,
+     132
+    ],
+    "ko": "\"비구들이여, 그때…\"",
+    "cover": [
+     252,
+     249,
+     244
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     92,
+     154,
+     356,
+     218
+    ],
+    "ko": "데왈라\n(고집 센 고행자)",
+    "cover": [
+     249,
+     245,
+     238
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     480,
+     164,
+     656,
+     204
+    ],
+    "ko": "띳사였고",
+    "cover": [
+     248,
+     246,
+     240
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     92,
+     230,
+     356,
+     294
+    ],
+    "ko": "왕\n(올바른 통치자)",
+    "cover": [
+     241,
+     237,
+     231
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     480,
+     240,
+     664,
+     284
+    ],
+    "ko": "아난다였고",
+    "cover": [
+     240,
+     238,
+     233
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     92,
+     306,
+     356,
+     372
+    ],
+    "ko": "나라다\n(연민 깊은 현자)",
+    "cover": [
+     241,
+     237,
+     230
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     480,
+     316,
+     664,
+     360
+    ],
+    "ko": "바로 나였다.",
+    "cover": [
+     240,
+     238,
+     232
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 20,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     176,
+     392,
+     624,
+     428
+    ],
+    "ko": "\"…그때에도 그는 고집을 부렸다.\"",
+    "cover": [
+     249,
+     246,
+     240
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 19,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Dhp-a-01-03-Thulla-Tissa-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     42,
+     151,
+     376,
+     197
+    ],
+    "ko": "증오의 사슬",
+    "cover": [
+     250,
+     248,
+     242
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 32,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     42,
+     203,
+     384,
+     306
+    ],
+    "ko": "\"그가 나를 욕하고, 나를 때리고,\n나를 이기고, 내 것을 빼앗았다.\"\n이렇게 원한을 품는 이들에게\n증오는 결코 가라앉지 않는다.",
+    "cover": [
+     250,
+     247,
+     241
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Dhp-a-01-03-Thulla-Tissa-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     42,
+     148,
+     356,
+     228
+    ],
+    "ko": "증오가\n가라앉음",
+    "cover": [
+     249,
+     246,
+     241
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 30,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     42,
+     232,
+     356,
+     324
+    ],
+    "ko": "\"그가 나를 욕하고, 나를 때리고,\n나를 이기고, 내 것을 빼앗았다.\"\n이렇게 원한을 품지 않는 이들에게\n증오는 반드시 가라앉는다.",
+    "cover": [
+     250,
+     248,
+     241
+    ],
+    "align": "left",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ },
+ {
+  "img": "images/Dhp-a-01-03-Thulla-Tissa-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     37,
+     680,
+     85
+    ],
+    "ko": "시대를 넘는 가르침의 힘",
+    "cover": [
+     250,
+     247,
+     242
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 34,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     88,
+     88,
+     712,
+     138
+    ],
+    "ko": "이 가르침이 끝나자 비구 십만 명이 수다원과를 얻어\n이 통찰이 얼마나 큰 변화를 가져오는지 보여 주었습니다.",
+    "cover": [
+     250,
+     248,
+     242
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   },
+   {
+    "rect": [
+     136,
+     403,
+     664,
+     437
+    ],
+    "ko": "이것이 말을 듣지 않는 이와 말을 잘 듣는 이의 이야기입니다.",
+    "cover": [
+     252,
+     250,
+     245
+    ],
+    "align": "center",
+    "whole": true,
+    "em": 17,
+    "shape": "box",
+    "manual": true
+   }
+  ]
+ }
+]
