@@ -99,7 +99,22 @@
     "shape": "bubble",
     "en": "I will go first!",
     "ko": "내가 먼저 가겠소!",
-    "manual": true
+    "manual": true,
+    "rect": [
+     665,
+     29,
+     759,
+     101
+    ],
+    "ellipse": true,
+    "outline": true,
+    "cover": [
+     238,
+     222,
+     188
+    ],
+    "whole": true,
+    "align": "center"
    }
   ]
  },
