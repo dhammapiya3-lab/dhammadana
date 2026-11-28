@@ -61,10 +61,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "none",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0042/DL-0042_초판.pdf"
       },
       "pdf_print": {
         "mode": "none",
