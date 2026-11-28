@@ -1,13 +1,18 @@
+Manimekhalai 01-02-The-Setting 14 장
 자동 검수: 문제 의심 0 곳
-On branch storybooks-qa
-Your branch is up to date with 'origin/storybooks-qa'.
-
-nothing to commit, working tree clean
-R2 에 올림: 47 개 / 한글판 이야기 321 편
-새 그림책: 올린 그림 0 장
-공개 주소 확인: 404 27150바이트
-내려받기 파일: 0 묶음 새로 만듦
-글로 보기: 321 이야기
+R2 에 올림: 75 개 / 한글판 이야기 322 편
+새 그림책 올림: New-Jataka/006-Devadhamma-en 29 장
+새 그림책 올림: New-Jataka/006-Devadhamma 29 장
+새 그림책: 올린 그림 58 장
+공개 주소 확인: 200 1254279바이트
+이야기 Manimekhalai/01-02-The-Setting {'pdf': 17138724, 'zip': 16869616, 'n': 14}
+책 Manimekhalai {'pdf': 32385588, 'pdfs': 3501349, 'zip': 32123882, 'stories': 2, 'n': 26}
+이야기 New-Jataka/006-Devadhamma {'pdf': 23171075, 'zip': 22995387, 'n': 29}
+책 New-Jataka {'pdf': 130017090, 'pdfs': 23875859, 'zip': 129814188, 'stories': 6, 'n': 168}
+이야기 New-Jataka/006-Devadhamma-en {'pdf': 23403686, 'zip': 23203324, 'n': 29}
+책 New-Jataka-en {'pdf': 130253683, 'pdfs': 24106924, 'zip': 130018847, 'stories': 6, 'n': 168}
+내려받기 파일: 6 묶음 새로 만듦
+글로 보기: 324 이야기
 18-Verses-2
 08-Light-of-Asia
 04-Kalavaliya-the-Treasurer
