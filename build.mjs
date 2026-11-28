@@ -1193,16 +1193,14 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
       rows: p.subs.map((x, i) => F(x.name, `/simple/talks/${p.id}/${i + 1}/`, `${x.list.length}개${x.id === 'all' ? (x.asc ? ' · 1강부터' : ' · 최근 올린 순') : ' · 1강부터'}`, '🎧')) });
     p.subs.forEach((x, i) => {
       const nm = p.name + (x.id === 'all' ? '' : ' · ' + x.name);
-      const rows = x.list.flatMap((e, j) => [{ href: e.audio, ic: '▶', kind: 'ep', data: { t: e.title, pl: nm, n: j + 1, ...(x.id === 'all' && !x.asc && p.alt.get(e.audio) ? { alt: p.alt.get(e.audio) } : {}) }, cols: [e.title, e.date || '', e.duration || ''] },
-        ...matsOf(p, e).map(m => ({ href: fileUrl(m.url), ic: '📄', kind: 'mat', dl: true, ext: true, cols: [`강의자료 · ${m.name}`, '', `${matExt(m)} 내려받기`] }))]);  // 강의자료 줄은 그 법문 줄 바로 아래 (2026-11-23)
-      // 시리즈 전체 자료는 목록 맨 위, 강의자료가 둘 넘거나 시리즈 자료와 강의자료가 함께 있으면 '강의자료 모아 보기' 폴더 (2026-11-25)
-      const AM = allMats(p, x), SM = serMats(p, x);
-      if (AM.length > SM.length && AM.length > 1) {
-        rows.unshift({ href: `/simple/talks/${p.id}/${i + 1}/mats/`, ic: '📁', kind: 'folder', cols: ['강의자료 모아 보기', '폴더', `강의자료 ${AM.length}개`] });
-        sFolderPage(`simple/talks/${p.id}/${i + 1}/mats/index.html`, { title: `${nm} 강의자료`, path: [...P1, [x.name, `/simple/talks/${p.id}/${i + 1}/`], ['강의자료 모아 보기', '']], up: `/simple/talks/${p.id}/${i + 1}/`, normal: `/dhammatalk/?pl=${p.id}`, what: '강의자료',
+      const rows = x.list.map((e, j) => ({ href: e.audio, ic: '▶', kind: 'ep', data: { t: e.title, pl: nm, n: j + 1, ...(x.id === 'all' && !x.asc && p.alt.get(e.audio) ? { alt: p.alt.get(e.audio) } : {}) }, cols: [e.title, e.date || '', e.duration || ''] }));
+      // 강의자료는 목록에 늘어놓지 않고 맨 위 '📁 강의자료' 폴더 하나로 — 누르면 시리즈 전체 자료·강의마다의 자료 (운영자 요청, 2026-11-28)
+      const AM = allMats(p, x);
+      if (AM.length) {
+        rows.unshift({ href: `/simple/talks/${p.id}/${i + 1}/mats/`, ic: '📁', kind: 'folder', cols: ['강의자료', '폴더', `파일 ${AM.length}개`] });
+        sFolderPage(`simple/talks/${p.id}/${i + 1}/mats/index.html`, { title: `${nm} 강의자료`, path: [...P1, [x.name, `/simple/talks/${p.id}/${i + 1}/`], ['강의자료', '']], up: `/simple/talks/${p.id}/${i + 1}/`, normal: `/dhammatalk/?pl=${p.id}`, what: '강의자료',
           rows: AM.map(({ m, n, t }) => ({ href: fileUrl(m.url), ic: '📄', kind: 'mat', dl: true, ext: true, cols: [`${n ? n + '강 · ' + t + ' — ' : '시리즈 전체 · '}${m.name}`, n ? '강의자료' : '시리즈 전체 자료', `${matExt(m)} 내려받기`] })) });
       }
-      rows.unshift(...SM.map(m => ({ href: fileUrl(m.url), ic: '📄', kind: 'mat', dl: true, ext: true, cols: [`시리즈 전체 강의자료 · ${m.name}`, '', `${matExt(m)} 내려받기`] })));
       put(`simple/talks/${p.id}/${i + 1}/index.html`, simpleLayout({ title: nm, path: [...P1, [x.name, '']], up: `/simple/talks/${p.id}/`, normal: `/dhammatalk/?pl=${p.id}`, page: 'simple-talk', status: `법문 ${x.list.length}`,
         body: `<div id="sPlayerSlot"></div>
 ` + (rows.length ? sList(`${nm}, 법문 ${x.list.length}개`, ['제목', '올린 날', '길이'], rows) : '<p>법문 목록을 불러오지 못했습니다. 잠시 뒤 다시 확인해 주세요.</p>') }));
