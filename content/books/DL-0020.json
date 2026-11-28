@@ -170,5 +170,22 @@
       "url": "https://buddhistuniversity.net/content/booklets/noble-eightfold-path_bodhi",
       "note": "한국어판도 개정 2판(1994)을 옮긴 것. 원서 부록의 팔정도 요소별 분석 표는 한국어판 부록 1 표와 짝짓지 않음. 추천 도서는 한국어판 순서를 따라 원서 순서와 다른 곳이 있음."
     }
+  ],
+  "braille": [
+    {
+      "note": "",
+      "format": "ZIP",
+      "mode": "file",
+      "url": "braille/DL-0020/DL-0020_점자.zip",
+      "site": "",
+      "org": "",
+      "sponsor": "",
+      "year": "",
+      "collection": "",
+      "made": "2026-11-26",
+      "updated": "2026-11-26",
+      "inner": "BRF",
+      "files": 2
+    }
   ]
 }
