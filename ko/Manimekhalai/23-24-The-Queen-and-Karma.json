@@ -1,0 +1,717 @@
+[
+ {
+  "img": "images/23-24-The-Queen-and-Karma-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     338,
+     680,
+     384
+    ],
+    "ko": "마니메칼라이: 제23·24편",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     120,
+     384,
+     680,
+     440
+    ],
+    "ko": "왕비의 복수와 업의 바퀴\n업과 궁극의 지혜를 그린 이야기",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-24-The-Queen-and-Karma-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     8,
+     352,
+     792,
+     448
+    ],
+    "ko": "와산따와이가 왕자의 죽음에 대한 슬픔을 감추라고 이르자, 왕비는 겉으로는 담담한 척했습니다. 그러나 속으로는 비구니 마니메칼라이를 탓했습니다. 어린 비구니를 맡게 된 슬픈 왕비는 궁궐 안에서 무서운 복수를 몰래 꾸몄습니다.",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-24-The-Queen-and-Karma-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     230,
+     22,
+     570,
+     78
+    ],
+    "ko": "덕의 시련",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     8,
+     356,
+     792,
+     446
+    ],
+    "ko": "독 연기: 마니메칼라이의 마음은 조금도 흐려지지 않았습니다.\n겁탈하려 함: 신비롭게 남자 모습으로 바뀌어 덤비던 자를 놀라 달아나게 했습니다.\n뜨거운 방: 신비로운 힘의 보호로 뜨거운 열기 속에서도 아무 탈 없이 나왔습니다.",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-24-The-Queen-and-Karma-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     80,
+     350,
+     170
+    ],
+    "ko": "업의 법칙이 모든 것을 다스립니다",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     22,
+     170,
+     350,
+     370
+    ],
+    "ko": "마니메칼라이는 왕자의 죽음이 우연이 아니라고 밝혔습니다. 전생에 자기 요리사를 죽인 업으로 그는 지난 생에 코브라에게 죽었고, 이번 생에는 윗자다라의 칼에 죽었습니다.",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-24-The-Queen-and-Karma-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     190,
+     40,
+     620,
+     150
+    ],
+    "ko": "굶주린 이를 먹이고 괴로운 이에게 친절한 것, 그것만이 참된 행실입니다.",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     380,
+     770,
+     448
+    ],
+    "ko": "마니메칼라이가 지혜의 물을 왕비의 귀에 부어 불같은 슬픔을 끄자, 깨우친 왕비는 깊이 공경하며 절했습니다.",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-24-The-Queen-and-Karma-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     70,
+     770,
+     200
+    ],
+    "ko": "앞일이 두려워진 늙은 무희 찌뜨라빠띠는 마니메칼라이를 되찾으려 했습니다.",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     430,
+     200,
+     770,
+     395
+    ],
+    "ko": "그녀는 수행자의 삶을 비웃으며 발우를 들고 떠도는 것이 무희 집안의 수치라고 했지만, 속으로는 어린 비구니 때문에 도성이 무너질까 두려워했습니다.",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-24-The-Queen-and-Karma-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     8,
+     352,
+     792,
+     446
+    ],
+    "ko": "찌뜨라빠띠는 남아 있는 재앙을 경고했습니다. 짜라나 선인의 예언에 따르면, 쫄라의 도성이 해마다 여는 삭까(인드라) 축제를 잊으면 마니메칼라 여신이 도성을 저주하고, 바다에서 큰 물이 밀려와 도성을 통째로 삼킨다는 것입니다.",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-24-The-Queen-and-Karma-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     8,
+     356,
+     792,
+     448
+    ],
+    "ko": "왕비는 어린 비구니를 내주지 않았습니다. 왕비는 찌뜨라빠띠를 꾸짖으며, 무희의 삶은 거짓과 고삐 풀린 애욕과 남몰래 품은 생각으로 가득하니 지혜로운 이들이 더 높은 덕을 위해 멀리하는 세속의 악이라고 말했습니다.",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-24-The-Queen-and-Karma-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     326,
+     760,
+     430
+    ],
+    "ko": "구원을 찾는 마다위와 수따마띠가 존경받는 아라와나 아디갈 선인을 모셔 왔습니다. 나이로 몸은 쇠했지만 마음은 빛났습니다. 왕비는 공손히 그의 발을 씻어 드리고, 지혜를 들려주십사 높은 자리에 모셨습니다.",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-24-The-Queen-and-Karma-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     30,
+     308,
+     770,
+     438
+    ],
+    "ko": "선인은 존재의 열두 가지 원인(연기)을 가르쳤습니다. 이 사슬은 무명에서 행으로 이어져 태어남과 늙음과 죽음으로 끝나며 중생을 묶습니다. 이 굴레를 깨달으면 궁극의 행복에 이르고, 깨닫지 못하면 끝없는 지옥의 괴로움에 빠집니다.",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-24-The-Queen-and-Karma-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     30,
+     600,
+     82
+    ],
+    "ko": "악행의 짜임",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     100,
+     100,
+     230,
+     128
+    ],
+    "ko": "기둥 1",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     330,
+     100,
+     470,
+     128
+    ],
+    "ko": "기둥 2",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     570,
+     100,
+     690,
+     128
+    ],
+    "ko": "기둥 3",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     142,
+     150,
+     200,
+     178
+    ],
+    "ko": "몸",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     372,
+     150,
+     430,
+     178
+    ],
+    "ko": "말",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     602,
+     150,
+     660,
+     178
+    ],
+    "ko": "마음",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     80,
+     208,
+     270,
+     254
+    ],
+    "ko": "살생, 도둑질, 고삐 풀린 애욕",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     310,
+     208,
+     500,
+     254
+    ],
+    "ko": "거짓말, 헐뜯는 말, 거친 말, 쓸데없는 말",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     560,
+     208,
+     730,
+     254
+    ],
+    "ko": "탐욕, 성냄, 너그럽지 못함",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     20,
+     398,
+     780,
+     438
+    ],
+    "ko": "이 열 가지 악행을 저지르면 괴로운 낮은 세계에 다시 태어납니다.",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-24-The-Queen-and-Karma-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     40,
+     460,
+     100
+    ],
+    "ko": "더 높은 세계로 가는 길",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     22,
+     108,
+     412,
+     250
+    ],
+    "ko": "1. 열 가지 악행을 피하라.\n2. 다섯 가지 계를 지켜라.\n3. 가난한 이에게 보시하라.",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     22,
+     288,
+     376,
+     410
+    ],
+    "ko": "이 흠 없는 법을 닦으면 천상이나 부유한 사람으로 다시 태어납니다.",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-24-The-Queen-and-Karma-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     42,
+     488,
+     428
+    ],
+    "ko": "왕자의 죽음을 둘러싼 도성의 끝없는 소문을 잠재우려고, 마니메칼라이는 깊이 예를 올렸습니다.\n\n해가 지평선 아래로 지자 그녀는 하늘로 날아올라, 녹은 금이 빛나며 흐르듯 우아하게 하늘을 가로질렀습니다.",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-24-The-Queen-and-Karma-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     50,
+     398,
+     408
+    ],
+    "ko": "그녀는 의로운 뿐냐라자 왕이 다스리는 나가뿌라에 내려섰습니다. 그곳의 은자가 나라의 큰 복을 일러 주었습니다. 왕이 태어난 뒤로 비는 한 번도 그치지 않았고, 땅은 끝없이 풍성한 열매를 내었으며, 몸을 여위게 하는 병은 아무도 몰랐다는 것입니다.",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/23-24-The-Queen-and-Karma-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     78,
+     438,
+     408
+    ],
+    "ko": "복수의 불길에서 깨달음의 하늘로.\n\n마니메칼라이의 여정은 흔들림 없는 덕과 크나큰 자비와 맑은 지혜를 향한 구도가 세상의 슬픔과 업의 괴로움이 끝없이 도는 굴레를 언제나 이긴다는 것을 보여 줍니다.",
+    "cover": [
+     246,
+     240,
+     226
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
