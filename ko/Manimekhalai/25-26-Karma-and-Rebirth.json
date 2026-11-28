@@ -1,0 +1,347 @@
+[
+ {
+  "img": "images/25-26-Karma-and-Rebirth-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     246,
+     324,
+     556,
+     374
+    ],
+    "ko": "마니메칼라이 서사시\n제25·26편",
+    "cover": [
+     242,
+     228,
+     196
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     246,
+     374,
+     556,
+     446
+    ],
+    "ko": "전생과 끊을 수 없는 업의 바퀴, 그리고 보시라는 가장 높은 의무를 그린 따밀 불교 이야기",
+    "cover": [
+     242,
+     228,
+     196
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-26-Karma-and-Rebirth-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     108,
+     318,
+     712,
+     422
+    ],
+    "ko": "뿐냐라자 왕은 비할 데 없이 고요한 비구니 마니메칼라이를 보았습니다. 전생에서 그를 알아본 그녀는, 잊힌 기억을 일깨우도록 마니빨라왐 섬의 신비로운 부처님 자리에 가 보라고 왕에게 권했습니다.",
+    "cover": [
+     242,
+     228,
+     196
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-26-Karma-and-Rebirth-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     112,
+     310,
+     724,
+     422
+    ],
+    "ko": "왕은 왕위를 버리려 했습니다. 대신이 말렸습니다. “왕께서 태어나시자 열두 해의 기근이 끝났습니다. 왕께서 아니 계시면 백성은 죽고 맙니다.” 참된 법은 생명을 지키는 데 있음을 깨달은 왕은 왕관을 지키기로 했습니다.",
+    "cover": [
+     242,
+     228,
+     196
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-26-Karma-and-Rebirth-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     502,
+     90,
+     762,
+     388
+    ],
+    "ko": "마니빨라왐으로 배를 타고 간 왕은 신비로운 부처님 자리를 찾았습니다. 삭까(인드라)가 놓아 둔 이 자리는 완전히 깨달은 부처님만 앉으실 수 있습니다. 그때까지 이 자리는 맑은 마음으로 예배하는 이의 전생을 비추는 거룩한 거울이 됩니다.",
+    "cover": [
+     242,
+     228,
+     196
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-26-Karma-and-Rebirth-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     500,
+     222,
+     766,
+     432
+    ],
+    "ko": "자리 앞에 엎드리자 왕의 전생이 또렷해졌습니다. 그는 남을 먹이려고 목숨까지 내준 큰 보시자였습니다. 기뻐한 왕은 서원했습니다. “나는 결코 생명을 보호하는 일을 버리지 않으리라.”",
+    "cover": [
+     242,
+     228,
+     196
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-26-Karma-and-Rebirth-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     336,
+     712,
+     436
+    ],
+    "ko": "섬의 여신이 나타나 모래 속에 묻힌 뼈를 가리켰습니다. “이들은 그대를 찾다 죽은 충성스러운 신하들이다. 그대가 목숨을 내주었으니, 그들의 목숨도 그대의 책임이 되었다.”",
+    "cover": [
+     242,
+     228,
+     196
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-26-Karma-and-Rebirth-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     406,
+     56,
+     752,
+     190
+    ],
+    "ko": "여신은 까웨리빳띠남의 비극을 밝혔습니다. 쫄라 왕자가 바다에서 실종되자 슬픔에 빠진 왕은 큰 삭까(인드라) 축제를 잊었고, 성난 수호신이 도성을 저주하여 바다가 도성을 통째로 삼켰습니다.",
+    "cover": [
+     242,
+     228,
+     196
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-26-Karma-and-Rebirth-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     342,
+     650,
+     442
+    ],
+    "ko": "왕이 옛 뼈를 묻어 주자, 마니메칼라이는 마지막 가르침을 남기고 하늘로 날아올랐습니다. “가장 높은 보시는 먹을 것과 입을 것과 안전한 거처를 주는 것입니다. 이 진리로 나라를 다스리십시오.”",
+    "cover": [
+     242,
+     228,
+     196
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-26-Karma-and-Rebirth-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     22,
+     258,
+     380,
+     438
+    ],
+    "ko": "마니메칼라이는 완지로 날아가 부모인 깐나끼와 꼬왈란의 거룩한 상에 예배했습니다. 그녀는 울며 물었습니다. 깐나끼는 왜 평온히 세상을 떠나지 않고 정절을 밝히려고 마두라를 불태웠습니까?",
+    "cover": [
+     242,
+     228,
+     196
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-26-Karma-and-Rebirth-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     366,
+     740,
+     438
+    ],
+    "ko": "깐나끼는 업의 법칙을 설명했습니다. 전생에 한 상인이 억울하게 처형되었고, 그 아내가 죽으며 내린 저주가 꼬왈란의 비극과 마두라가 불탄 일을 불렀습니다. “지난 업은 반드시 그 값을 치르게 합니다.”",
+    "cover": [
+     242,
+     228,
+     196
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-26-Karma-and-Rebirth-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     302,
+     256,
+     776,
+     438
+    ],
+    "ko": "“선업 덕분에 우리는 잠시 천상에 머뭅니다.” 깐나끼가 예언했습니다. “머지않아 우리는 마가다에 다시 태어나 깨달은 분께서 사성제를 가르치시는 것을 듣고, 마침내 존재의 굴레를 끊을 것입니다.”",
+    "cover": [
+     242,
+     228,
+     196
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-26-Karma-and-Rebirth-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     196,
+     352,
+     604,
+     446
+    ],
+    "ko": "학자들이 자기를 어리다고 얕볼 줄 안 마니메칼라이는 거룩한 주문을 외어 늙고 초라한 은자로 모습을 바꾸고, 큰 도성 완지를 다니며 여러 종교의 가르침을 배우고 가장 높은 진리를 찾았습니다.",
+    "cover": [
+     242,
+     228,
+     196
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/25-26-Karma-and-Rebirth-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     302,
+     258,
+     778,
+     412
+    ],
+    "ko": "큰 도성 완지에서 이제 늙은 수행자가 된 젊은 비구니가 기다립니다. 전생의 메아리와 업의 절대적인 힘을 본 그녀는, 붓다의 궁극의 가르침을 받으려고 차분히 마음을 가다듬습니다.",
+    "cover": [
+     242,
+     228,
+     196
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
