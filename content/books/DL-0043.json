@@ -9,7 +9,9 @@
   "co_teachers": [
     "tejaniya"
   ],
-  "country": [],
+  "country": [
+    "미얀마"
+  ],
   "provider": "happyforest",
   "press": false,
   "provider_chip": false,
@@ -147,10 +149,10 @@
         "created": ""
       },
       "hwp": {
-        "site": "",
-        "created": "",
         "mode": "file",
-        "url": "hwp/DL-0043/DL-0043_증보판.hwp"
+        "url": "hwp/DL-0043/DL-0043_증보판.hwp",
+        "site": "",
+        "created": ""
       },
       "reader": false,
       "sources": [
