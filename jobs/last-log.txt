@@ -1,16 +1,26 @@
+Jataka 023-The-Noble-Warhorse 14 장
 Manimekhalai 27-28-Dharma-and-Compassion 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 77 개 / 한글판 이야기 342 편
+R2 에 올림: 105 개 / 한글판 이야기 342 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1254613바이트
+공개 주소 확인: 200 1373052바이트
+이야기 Jataka/023-The-Noble-Warhorse {'pdf': 16994429, 'zip': 16729134, 'n': 14}
+책 Jataka {'pdf': 494074745, 'pdfs': 50568647, 'zip': 493664988, 'stories': 32, 'n': 422}
 이야기 Manimekhalai/27-28-Dharma-and-Compassion {'pdf': 18711889, 'zip': 18443680, 'n': 15}
 책 Manimekhalai {'pdf': 214882127, 'pdfs': 23060459, 'zip': 214559168, 'stories': 15, 'n': 188}
-내려받기 파일: 2 묶음 새로 만듦
+내려받기 파일: 4 묶음 새로 만듦
 글로 보기: 342 이야기
+Way-Beyond: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="0q27Hzb'
 18-Verses-2
+Light-of-Asia: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="cdQGw+v'
 08-Light-of-Asia
+Four-Rich-Men: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="mdFiNF7'
 04-Kalavaliya-the-Treasurer
+Jatakamala: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="XaKEifP'
 34-Woodpecker
+Rasavahini: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="yi7Z7TY'
 20-The-Brahmin-Soma
+Manimekhalai: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="Gw8GCu+'
 29-30-Escape-from-Samsara
+Dhammapada: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="2AIpn6a'
 13-11
