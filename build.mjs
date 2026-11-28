@@ -970,10 +970,10 @@ const matsOf = (p, e) => (p.materials || []).filter(m => m && m.url && String(m.
 const matExt = m => (String(m.url).split('?')[0].split('.').pop() || '').toUpperCase();
 // 시리즈(재생목록) 전체 자료 (운영자 요청, 2026-11-25 — 예: '초기불교 교학과 수행' 시리즈 전체의 자료 하나): materials 의 ep 가 's-<재생목록 번호>'(전체 법문은 's-all'), 파일은 R2 talk/<선원>/s-<번호>/
 const serMats = (p, s) => (p.materials || []).filter(m => m && m.url && String(m.ep) === 's-' + s.id);
-// 강의자료 모아 보기: 시리즈 전체 자료 + 강의마다의 자료(강의 차례대로)
+// 강의자료 내려받기(예전 이름 '강의자료 모아 보기', 2026-11-28 바꿈): 시리즈 전체 자료 + 강의마다의 자료(강의 차례대로)
 const allMats = (p, s) => [...serMats(p, s).map(m => ({ m, n: 0, t: '' })), ...s.list.flatMap((e, j) => matsOf(p, e).map(m => ({ m, n: j + 1, t: e.title })))];
 const matAllHtml = (p, s) => { const L = allMats(p, s); if (!L.length) return '';
-  return `<details class="mat-all"><summary>📄 강의자료 모아 보기 <span class="muted small">(${L.length}개)</span></summary><ul>${L.map(({ m, n, t }) => `<li><a href="${esc(fileUrl(m.url))}" download target="_blank" rel="noopener"><span class="mk">${n ? `${n}강` : '시리즈 전체'}</span> <span class="mt">${n ? esc(t) + ' — ' : ''}${esc(m.name)}</span> <span class="muted small">(${esc(matExt(m))}<span class="sr"> 내려받기</span>)</span></a></li>`).join('')}</ul></details>`; };
+  return `<details class="mat-all"><summary>📄 강의자료 내려받기 <span class="muted small">(${L.length}개)</span></summary><ul>${L.map(({ m, n, t }) => `<li><a href="${esc(fileUrl(m.url))}" download target="_blank" rel="noopener"><span class="mk">${n ? esc(t) : '시리즈 전체'}</span> <span class="mt">${esc(m.name)}</span> <span class="muted small">(${esc(matExt(m))}<span class="sr"> 내려받기</span>)</span></a></li>`).join('')}</ul></details>`; };
 const matHtml = (p, e) => { const L = matsOf(p, e); return L.map(m => ` <a class="ep-mat" href="${esc(fileUrl(m.url))}" download target="_blank" rel="noopener">📄 ${L.length > 1 ? esc(m.name) : '강의자료'} <span class="sr">${esc(e.title)} 강의자료 내려받기, </span>(${esc(matExt(m))})</a>`).join(''); };
 // 협력단체·유튜브 채널 (운영자 요청, 2026-11-24): '법문 바로 듣기' 팟빵 채널 목록 아래 '협력단체·유튜브 채널' 제목 + '가나다순' 단추 — 누르면 아래로 채널 목록이 펼쳐짐(새 창으로 유튜브).
 // 채널은 providers.json 협력 단체(partner) 주소 가운데 유튜브 주소 — 관리자 화면 '자료 제공처·협력 단체'의 주소 칸에 넣으면 저절로 들어감.
@@ -1204,7 +1204,7 @@ function sFolderPage(file, { title, path, up, normal, rows, what = '폴더' }) {
       if (AM.length) {
         rows.unshift({ href: `/simple/talks/${p.id}/${i + 1}/mats/`, ic: '📁', kind: 'folder', cols: ['강의자료', '폴더', `파일 ${AM.length}개`] });
         sFolderPage(`simple/talks/${p.id}/${i + 1}/mats/index.html`, { title: `${nm} 강의자료`, path: [...P1, [x.name, `/simple/talks/${p.id}/${i + 1}/`], ['강의자료', '']], up: `/simple/talks/${p.id}/${i + 1}/`, normal: `/dhammatalk/?pl=${p.id}`, what: '강의자료',
-          rows: AM.map(({ m, n, t }) => ({ href: fileUrl(m.url), ic: '📄', kind: 'mat', dl: true, ext: true, cols: [`${n ? n + '강 · ' + t + ' — ' : '시리즈 전체 · '}${m.name}`, n ? '강의자료' : '시리즈 전체 자료', `${matExt(m)} 내려받기`] })) });
+          rows: AM.map(({ m, n, t }) => ({ href: fileUrl(m.url), ic: '📄', kind: 'mat', dl: true, ext: true, cols: [`${n ? t + ' — ' : '시리즈 전체 · '}${m.name}`, n ? '강의자료' : '시리즈 전체 자료', `${matExt(m)} 내려받기`] })) });
       }
       put(`simple/talks/${p.id}/${i + 1}/index.html`, simpleLayout({ title: nm, path: [...P1, [x.name, '']], up: `/simple/talks/${p.id}/`, normal: `/dhammatalk/?pl=${p.id}`, page: 'simple-talk', status: `법문 ${x.list.length}`,
         body: `<div id="sPlayerSlot"></div>
