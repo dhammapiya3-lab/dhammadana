@@ -151,10 +151,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "site": "",
-        "created": "2026년 11월 25일",
         "mode": "file",
-        "url": "pdf/DL-0040/DL-0040_교정판.pdf"
+        "url": "pdf/DL-0040/DL-0040_교정판.pdf",
+        "site": "",
+        "created": "2026년 11월 28일"
       },
       "pdf_print": {
         "mode": "none",
@@ -175,10 +175,10 @@
         "created": ""
       },
       "hwp": {
-        "site": "",
-        "created": "2026년 11월 25일",
         "mode": "file",
-        "url": "hwp/DL-0040/DL-0040_교정판.hwp"
+        "url": "hwp/DL-0040/DL-0040_교정판.hwp",
+        "site": "",
+        "created": "2026년 11월 28일"
       },
       "reader": false,
       "sources": [],
