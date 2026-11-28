@@ -192,6 +192,7 @@ for pg, ch, kind, t in lines:
             if tk.start + s0 == m.start() and tk.form == '다' and (tk.tag == 'EF' or (tk.tag == 'EC' and i_ and toks[i_ - 1].tag in ('EP', 'VCP'))): hit = True
         if hit:
             add('⑤ 마침표 빠짐', pg, t[max(0, m.start() - 15):m.end() + 10], '', "문장을 끝내는 '-다' 뒤에 부호가 없음", t[max(0, m.start() - 50):m.end() + 40])
+BOOKPLAIN = '\n'.join(re.sub(r'\([^()]*\)', '', t) for _, _, _, t in lines)
 # 닫는 괄호 뒤 빈칸 빠짐 — '(sīla)그는'처럼 괄호 뒤에 조사·어미·접미사가 아닌 새 낱말이 바로 붙은 곳
 # (괄호 앞 낱말과 이어 형태소 분석: '산문출송(山門黜送)해야' → 하(XSV) 라 맞음, '열반(涅槃)이다' → 이(VCP))
 OKTAG = re.compile(r'^(J|VCP|XS|E|XPN|ETM|ETN)')
@@ -203,6 +204,8 @@ for pg, ch, kind, t in lines:
         aft = re.match(r'[가-힣A-Za-z]+', t[m.end():]).group()
         if re.match(r'[A-Za-z]', aft) and re.search(r'[A-Za-z]$', pre or 'x'): continue   # 로마자 낱말 사이 괄호 (sutta(s))
         if t[o:m.end()] in ('(사)', '(주)', '(재)'): continue   # (사)한국테라와다불교 같은 법인 표시
+        if not pre: continue   # 낱말 앞에 붙은 괄호('(가사)자금'·'( )원에'·'(1)사실'·'(역자 주)태국') — 괄호 글이 뒤 낱말의 일부·번호라 붙여 씀이 맞음
+        if re.fullmatch(r'[가-힣]+', pre) and re.match(r'(하|할|한|해|했|합|함|될|된|되|됐)', aft): continue   # 다비(茶毘)할 — 명사+하다·되다
         ok = False
         if re.search(r'\d\)$', t[:m.end()]) or re.search(r'\d', t[o:m.end()]):
             if kiwi.tokenize('삼' + aft)[1:2] and kiwi.tokenize('삼' + aft)[1].tag in ('NNB', 'NR'): ok = True   # 1870)년
@@ -214,7 +217,24 @@ for pg, ch, kind, t in lines:
                 if tk.start < len(hd) < tk.start + tk.len: ok = True; break     # 한 낱말 안 (괄호가 낱말 가운데)
                 if tk.start == len(hd): ok = bool(OKTAG.match(tk.tag)); break
         if not ok:
-            add('⑤ 괄호 뒤 빈칸', pg, t[max(0, o - 8):m.end() + 8], '', f"닫는 괄호 바로 뒤에 '{aft[:6]}'(조사·어미가 아님)가 붙어 있음 — 빈칸이 빠졌을 수 있음", t[max(0, o - 40):m.end() + 30])
+            # 일부러 붙여 쓴 꼴인지 스스로 가름 (2026-11-28 운영자 요청): ① 괄호 앞이 접두사(반(半)인간) ② 이 책의 괄호 밖 글에서
+            # 같은 두 말을 붙여 쓴 꼴이 띄어 쓴 꼴보다 많음 ③ 형태소 분석기 띄어쓰기가 그 자리를 띄움/붙임
+            kpre = pre if re.fullmatch(r'[가-힣]+', pre or '') else ''
+            t0 = kiwi.tokenize(aft); stem = aft[:t0[0].start + t0[0].len] if t0 else aft
+            nj = max(0, BOOKPLAIN.count(kpre + stem) - 1) if kpre else 0   # 괄호를 뺀 글에서는 이 자리도 붙임으로 세어지므로 1을 뺌
+            ns = BOOKPLAIN.count(kpre + ' ' + stem) if kpre else 0
+            hd = kpre or '사람'
+            sp = kiwi.space(hd + aft)
+            spaced = sp.startswith(hd + ' ')
+            xpn = bool(kpre) and any(tk.tag == 'XPN' and tk.start + tk.len == len(kpre) for tk in kiwi.tokenize(kpre + aft))
+            if xpn or (nj > ns and nj > 0):
+                why = '일부러 붙여 쓴 꼴일 가능성 큼 — ' + ('괄호 앞이 접두사' if xpn else f"이 책 다른 곳에서 '{kpre}{stem}' 붙임 {nj}곳 · 띄움 {ns}곳")
+                add('⑤ 괄호 뒤 붙임(일부러인 듯)', pg, t[max(0, o - 8):m.end() + 8], '', why, t[max(0, o - 40):m.end() + 30])
+            elif spaced or ns > 0 or (t0 and t0[0].tag in ('NNB',)):
+                why = '빈칸이 빠졌을 가능성 큼 — ' + '; '.join(x for x in [f"이 책 다른 곳에서 '{kpre} {stem}' 띄움 {ns}곳 · 붙임 {nj}곳" if ns else '', '띄어 써야 하는 의존 명사' if t0 and t0[0].tag == 'NNB' else '', '형태소 분석기도 띄움' if spaced else ''] if x)
+                add('⑤ 괄호 뒤 빈칸', pg, t[max(0, o - 8):m.end() + 8], kpre + ' ' + aft if kpre else '', why, t[max(0, o - 40):m.end() + 30])
+            else:
+                add('⑤ 괄호 뒤 빈칸', pg, t[max(0, o - 8):m.end() + 8], '', "판단 어려움 — 닫는 괄호 뒤에 낱말이 바로 붙어 있음", t[max(0, o - 40):m.end() + 30])
 # 쌍점 앞 빈칸은 책마다 꼴이 다름 — 적게 쓴 꼴만
 c1 = [(pg, t, m) for pg, ch, k, t in lines for m in re.finditer(r'[가-힣A-Za-z)] :(?=\s)', t)]
 c2 = [(pg, t, m) for pg, ch, k, t in lines for m in re.finditer(r'[가-힣A-Za-z)]:(?=\s)', t)]
