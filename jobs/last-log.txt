@@ -1,11 +1,12 @@
-Jataka 001-The-Waterless-Desert 15 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 77 개 / 한글판 이야기 343 편
+On branch storybooks-qa
+Your branch is up to date with 'origin/storybooks-qa'.
+
+nothing to commit, working tree clean
+R2 에 올림: 47 개 / 한글판 이야기 343 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1145267바이트
-이야기 Jataka/001-The-Waterless-Desert {'pdf': 14219615, 'zip': 13954252, 'n': 15}
-책 Jataka {'pdf': 494071698, 'pdfs': 50568474, 'zip': 493661941, 'stories': 32, 'n': 422}
-내려받기 파일: 2 묶음 새로 만듦
+공개 주소 확인: 404 27150바이트
+내려받기 파일: 0 묶음 새로 만듦
 글로 보기: 343 이야기
 18-Verses-2
 08-Light-of-Asia
