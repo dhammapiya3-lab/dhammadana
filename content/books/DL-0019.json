@@ -176,5 +176,22 @@
       "url": "https://buddhistuniversity.net/content/booklets/dana_bodhi-et-al",
       "note": "한국어판은 개정 2판(1994)을 옮긴 것이라 몇 곳 글이 다를 수 있음. 원서의 지은이 소개(About the Contributors)는 한국어판에서 장마다 각주로 실림."
     }
+  ],
+  "braille": [
+    {
+      "note": "",
+      "format": "BRF",
+      "mode": "file",
+      "url": "braille/DL-0019/DL-0019_점자.brf",
+      "site": "",
+      "org": "",
+      "sponsor": "",
+      "year": "",
+      "collection": "",
+      "made": "2026-11-26",
+      "updated": "2026-11-26",
+      "inner": "",
+      "files": ""
+    }
   ]
 }
