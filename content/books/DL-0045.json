@@ -125,10 +125,10 @@
       "changes": "",
       "hide_update": false,
       "pdf": {
-        "mode": "none",
-        "url": "",
         "site": "",
-        "created": ""
+        "created": "",
+        "mode": "file",
+        "url": "pdf/DL-0045/DL-0045_1판2쇄.pdf"
       },
       "pdf_print": {
         "mode": "none",
