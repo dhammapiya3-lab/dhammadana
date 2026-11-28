@@ -1,0 +1,457 @@
+[
+ {
+  "img": "images/05-06-Impermanence-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     200,
+     720,
+     380
+    ],
+    "ko": "마니메칼라이\n무상으로 가는 여정\n제5·6편: 유혹, 슬픔, 그리고 화장터\n따밀 불교 서사시를 그림으로 본 줄거리",
+    "cover": [
+     110,
+     16,
+     18
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-06-Impermanence-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     18,
+     366,
+     376,
+     436
+    ],
+    "ko": "욕망과 고행\n우다야꾸마라 왕자는 마니메칼라이를 걸작으로 여기며 그녀를 차지하겠다고 맹세합니다.",
+    "cover": [
+     222,
+     190,
+     120
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     440,
+     340,
+     792,
+     446
+    ],
+    "ko": "욕망과 고행\n수따마띠는 그녀가 고행에 매여 사랑에 흔들리지 않는다고 일렀지만, 왕자는 자기 열정이 그녀의 거룩한 서원을 이길 수 있다고 믿습니다.",
+    "cover": [
+     222,
+     190,
+     120
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/05-06-Impermanence-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     20,
+     30,
+     330,
+     80
+    ],
+    "ko": "슬픔의 내력",
+    "cover": [
+     18,
+     28,
+     78
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     20,
+     80,
+     330,
+     368
+    ],
+    "ko": "수따마띠가 자신의 슬픈 운명을 들려줍니다.\n• 윗자다라 마루따웨가에게 납치됨\n• 뿌하르에서 바라문인 아버지가 그녀를 찾아냄\n• 살기 위해 아버지는 걸식하는 이가 됨\n• 그는 소뿔에 받혀 참혹하게 목숨을 잃음\n\n그들은 의지할 곳을 찾았지만 아무 데도 없었습니다.",
+    "cover": [
+     18,
+     28,
+     78
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-06-Impermanence-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     6,
+     650,
+     52
+    ],
+    "ko": "자이나교의 거절과 불교의 자비",
+    "cover": [
+     28,
+     52,
+     36
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     30,
+     372,
+     380,
+     434
+    ],
+    "ko": "자이나교 수행처는 비극을 겪은 그들을 내쫓았습니다.",
+    "cover": [
+     110,
+     16,
+     18
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     420,
+     350,
+     790,
+     440
+    ],
+    "ko": "불교 비구 상가담마가 그들을 구하고, 붓다의 궁극의 진리를 가르쳤습니다. 삶은 자기 구원만이 아니라 욕망을 이기고 모든 중생을 구하는 데 쓰는 것이라고.",
+    "cover": [
+     28,
+     52,
+     36
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-06-Impermanence-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     120,
+     340,
+     680,
+     372
+    ],
+    "ko": "사랑이라는 허깨비",
+    "cover": [
+     28,
+     52,
+     36
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     120,
+     372,
+     680,
+     440
+    ],
+    "ko": "왕자가 그녀의 덕을 모욕했는데도 마니메칼라이는 그를 향해 마음이 끌리는 것을 느낍니다. 혼란스러워 그녀는 묻습니다.\n“이것이 사랑이라 불리는 것의 본성인가? 그렇다면 무너져 버리기를.”",
+    "cover": [
+     28,
+     52,
+     36
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-06-Impermanence-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     36,
+     188,
+     350,
+     228
+    ],
+    "ko": "여신이 내려오다",
+    "cover": [
+     28,
+     52,
+     36
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     36,
+     228,
+     350,
+     430
+    ],
+    "ko": "해 질 녘, 마니메칼라 여신이 불타는 보석처럼 나타납니다. 여신은 부처님을 찬탄합니다. 그릇된 행실을 이기고 애욕에서 벗어나 천 개의 바퀴살을 지닌 법의 바퀴를 굴리신 거룩한 분이시여.",
+    "cover": [
+     28,
+     52,
+     36
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-06-Impermanence-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     110,
+     36,
+     690,
+     160
+    ],
+    "ko": "화장터의 피난처\n왕자를 피하도록 여신은 그들을 짝까왈라 꼿담으로 보냅니다.\n화장터의 사원이라 불리는 그곳은 끝없는 곡소리와 그치지 않는 소음, 몸이 썩어 가는 세계입니다.",
+    "cover": [
+     18,
+     28,
+     78
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-06-Impermanence-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     246,
+     26,
+     556,
+     240
+    ],
+    "ko": "죽음의 평등\n그곳에는 모든 장례 방식이 있습니다.\n• 장작불 화장\n• 땅에 묻는 무덤과 무덤방\n• 커다란 흙 항아리 무덤\n• 짐승에게 내맡기는 빈터\n죽음은 누구에게나 똑같이 찾아오니, 재물을 믿는 것은 어리석은 일입니다.",
+    "cover": [
+     110,
+     16,
+     18
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-06-Impermanence-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     48,
+     126,
+     390,
+     186
+    ],
+    "ko": "고따미의 슬픔",
+    "cover": [
+     110,
+     16,
+     18
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     48,
+     186,
+     390,
+     366
+    ],
+    "ko": "한 바라문 청년이 악귀를 보고 놀라 죽었습니다. 상심한 어머니 고따미는 아들의 주검을 짬빠빠띠 여신께 가져가 살려 내라고 매달리고, 들어주지 않으면 스스로 목숨을 끊겠다고 합니다.",
+    "cover": [
+     110,
+     16,
+     18
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/05-06-Impermanence-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     140,
+     18,
+     660,
+     46
+    ],
+    "ko": "피할 수 없는 업의 법칙",
+    "cover": [
+     222,
+     190,
+     120
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     140,
+     46,
+     660,
+     112
+    ],
+    "ko": "짬빠빠띠 여신은 어머니의 소원을 들어주려고 모든 신을 불러 모았습니다. 신들은 한목소리로 궁극의 진리를 밝혔습니다. 목숨이 몸을 떠나면 그것은 제 업을 따라간다. 죽음은 되돌릴 수 없다.",
+    "cover": [
+     222,
+     190,
+     120
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/05-06-Impermanence-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     40,
+     134,
+     450,
+     188
+    ],
+    "ko": "운명을 향한 비행",
+    "cover": [
+     18,
+     28,
+     78
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     40,
+     188,
+     450,
+     340
+    ],
+    "ko": "이를 지켜본 마니메칼라이는 삶의 무상함에서 깊은 평화를 얻습니다.\n\n수따마띠가 잠든 사이 마니메칼라 여신이 주문을 걸어, 마니메칼라이를 깊은 잠에 빠뜨리고 남쪽으로 서른 요자나를 날아 그녀의 영적 운명을 향해 데려갑니다.",
+    "cover": [
+     18,
+     28,
+     78
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ }
+]
