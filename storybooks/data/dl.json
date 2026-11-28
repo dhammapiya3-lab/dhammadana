@@ -72,16 +72,26 @@
 "zip": 11983005
 },
 "Dhammapada": {
-"n": 15,
-"pdf": 7385797,
-"pdfs": 1128296,
-"stories": 1,
-"zip": 7131206
+"n": 46,
+"pdf": 18112907,
+"pdfs": 2649473,
+"stories": 3,
+"zip": 17848180
 },
 "Dhammapada/01-01": {
 "n": 15,
 "pdf": 7405646,
 "zip": 7129905
+},
+"Dhammapada/01-02": {
+"n": 15,
+"pdf": 5939378,
+"zip": 5664539
+},
+"Dhammapada/01-03": {
+"n": 16,
+"pdf": 5330041,
+"zip": 5051382
 },
 "Foremost-Laymen": {
 "n": 157,
@@ -490,15 +500,15 @@
 },
 "Jataka": {
 "n": 422,
-"pdf": 494100588,
-"pdfs": 50568748,
+"pdf": 494095700,
+"pdfs": 50569323,
 "stories": 32,
-"zip": 493690831
+"zip": 493685943
 },
 "Jataka/001-The-Waterless-Desert": {
 "n": 15,
-"pdf": 14227550,
-"zip": 13962187
+"pdf": 14222662,
+"zip": 13957299
 },
 "Jataka/002-The-Well-of-Perseverance": {
 "n": 15,
@@ -880,11 +890,11 @@
 "zip": 13221311
 },
 "Manimekhalai": {
-"n": 160,
-"pdf": 180206265,
-"pdfs": 19335941,
-"stories": 13,
-"zip": 179893680
+"n": 173,
+"pdf": 196432986,
+"pdfs": 21083875,
+"stories": 14,
+"zip": 196115725
 },
 "Manimekhalai/00-Synopsis-of-the-Story": {
 "n": 12,
@@ -950,6 +960,11 @@
 "n": 15,
 "pdf": 15070376,
 "zip": 14801618
+},
+"Manimekhalai/25-26-Karma-and-Rebirth": {
+"n": 13,
+"pdf": 16493249,
+"zip": 16222112
 },
 "New-Jataka": {
 "n": 195,
