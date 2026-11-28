@@ -98,7 +98,7 @@
     </div>
     <div class="card" id="tmCard">
       <h2>📄 법문 강의자료 올리기</h2>
-      <p class="note">'법문 바로 듣기'의 강의(1강·2강…)마다 강의자료를 붙입니다. 재생목록 → 묶음 → 강의를 고른 뒤 파일을 올리면, 그 강의 줄에 <b>'📄 강의자료'</b> 내려받기 단추가 생깁니다(일반·단순 화면 모두, 1~2분 뒤). 시리즈 전체에 자료가 하나뿐이면 강의 칸에서 맨 위 <b>'📚 이 시리즈 전체 자료'</b>를 고르세요. 여기에 강의마다의 파일을 한꺼번에 올려도 파일 이름의 강 번호(1강·제2강·03_… 처럼)로 강의를 찾아 저절로 그 강의에 붙입니다 — 올리기 전에 어느 강의로 가는지 목록으로 보여 드립니다. 재생목록 위쪽 <b>'📄 강의자료 모아 보기'</b>에서 시리즈 자료와 강의마다의 자료를 한꺼번에 볼 수 있습니다. 한 강의에 여러 파일을 붙여도 되고, 같은 이름의 파일을 다시 올리면 새 파일로 바뀝니다. PDF·HWP·DOCX·PPTX·XLSX·ZIP·TXT·JPG·PNG. 이 책 고르기(위 1번)와는 상관없습니다.</p>
+      <p class="note">'법문 바로 듣기'의 강의(1강·2강…)마다 강의자료를 붙입니다. 재생목록 → 묶음 → 강의를 고른 뒤 파일을 올리면, 그 강의 줄에 <b>'📄 강의자료'</b> 내려받기 단추가 생깁니다(일반·단순 화면 모두, 1~2분 뒤). 시리즈 전체에 자료가 하나뿐이면 강의 칸에서 맨 위 <b>'📚 이 시리즈 전체 자료'</b>를 고르세요. 여기에 강의마다의 파일을 한꺼번에 올려도 파일 이름의 강 번호(1강·제2강·03_… 처럼)로 강의를 찾아 저절로 그 강의에 붙입니다 — 올리기 전에 어느 강의로 가는지 목록으로 보여 드립니다. <b>zip 파일을 올리면</b> zip 은 시리즈 전체 자료로, 안의 파일은 풀어서 강의마다 저절로 붙입니다(강의를 하나 골랐어도). 재생목록 위쪽 <b>'📄 강의자료 내려받기'</b>에서 시리즈 자료와 강의마다의 자료를 한꺼번에 볼 수 있습니다. 한 강의에 여러 파일을 붙여도 되고, 같은 이름의 파일을 다시 올리면 새 파일로 바뀝니다. PDF·HWP·DOCX·PPTX·XLSX·ZIP·TXT·JPG·PNG. 이 책 고르기(위 1번)와는 상관없습니다.</p>
       <div class="row"><label for="tmPl">재생목록</label><select id="tmPl"><option value="">불러오는 중…</option></select></div>
       <div class="row"><label for="tmSub">묶음</label><select id="tmSub" disabled></select></div>
       <div class="row"><label for="tmEp">강의</label><select id="tmEp" disabled></select></div>
@@ -323,10 +323,28 @@ $('#tmSub').onchange=()=>{ const s=tmS(), p=tmP(); $('#tmEp').disabled=!s;
   const it=p&&(TM.pl.items||[]).find(x=>x.id===p.id), have=new Set(((it&&it.materials)||[]).map(m=>String(m.ep)));
   $('#tmEp').innerHTML=s?'<option value="">— 강의를 고르세요 —</option>'+s.eps.map((e,i)=>`<option value="${i}">${e.ser?'📚 이 시리즈 전체 자료 (강의 하나가 아니라 시리즈 전체에 붙임)':(s.eps[0].ser?i:i+1)+'. '+esc(e.t)}${e.d?' · '+esc(e.d):''}${have.has(e.k)?' 📄':''}</option>`).join(''):''; tmHave(); };
 $('#tmEp').onchange=()=>{ tmHave(); tmPickedShow(); };
-function tmSetFiles(list){
+// zip 을 올리면 저절로 (운영자 요청, 2026-11-29 '앞으로 zip 파일 올리면 따로 말 안 해도 이런 식으로'):
+// zip 은 늘 '시리즈 전체 자료'(강의자료 내려받기 상자)로, 안의 파일은 풀어서 파일 이름의 강 번호로 강의마다 붙임.
+let TMZIP=new Set();
+function tmZipName(n){ // fflate 는 UTF-8 표시가 없는 이름을 latin1 로 읽음 → 바이트로 되돌려 UTF-8, 안 되면 EUC-KR(윈도 압축)
+  if(/[^\u0000-\u00ff]/.test(n)) return n; const b=Uint8Array.from(n,c=>c.charCodeAt(0));
+  try{ return new TextDecoder('utf-8',{fatal:true}).decode(b); }catch(e){ try{ return new TextDecoder('euc-kr').decode(b); }catch(_){ return n; } }
+}
+async function tmSetFiles(list){
   const fs=[...list], bad=fs.filter(f=>!TM_EXT.test(f.name));
   if(bad.length){ tmShow('err','올릴 수 없는 파일 종류입니다: '+esc(bad.map(f=>f.name).join(', '))); return; }
-  TMFILES=fs; $('#tmOut').innerHTML=''; tmPickedShow();
+  const out=[]; TMZIP=new Set();
+  for(const f of fs){ out.push(f); if(!/\.zip$/i.test(f.name)) continue;
+    TMZIP.add(f);
+    try{ tmShow('',`zip 파일을 푸는 중… ${esc(f.name)}`);
+      const ff=await loadFflate(), raw=ff.unzipSync(new Uint8Array(await f.arrayBuffer()));
+      for(const k in raw){ const nm=tmZipName(k).normalize('NFC'), base=nm.split('/').pop();
+        if(!base||nm.endsWith('/')||/(^|\/)(__MACOSX|\.)/.test(nm)||!TM_EXT.test(base)||/\.zip$/i.test(base)) continue;
+        out.push(new File([raw[k]],base,{lastModified:f.lastModified})); }
+      $('#tmOut').innerHTML='';
+    }catch(e){ tmShow('err','zip 파일을 풀지 못했습니다 — zip 하나만 시리즈 전체 자료로 올립니다: '+esc(e.message)); }
+  }
+  TMFILES=out; if(!TMZIP.size) $('#tmOut').innerHTML=''; tmPickedShow();
 }
 // '이 시리즈 전체 자료'에 여러 파일을 올리면 파일 이름의 강 번호(1강·제2강·03_…)로 강의를 찾아 저절로 그 강의에 붙임 (운영자 요청, 2026-11-25)
 // 강의 제목에 같은 'N강'이 있으면 그 강의, 없으면 1강부터인 목록에서 N번째 강의. 번호를 못 찾으면 시리즈 전체 자료로.
@@ -336,10 +354,13 @@ function tmNum(name){
   return m?+m[1]:0;
 }
 function tmPlan(){
-  const s=tmS(), e=tmE();
+  const s=tmS(); let e=tmE();
+  // zip 을 넣었으면 어느 강의를 골랐든 시리즈 전체 자료 기준으로 나눔
+  if(s&&TMZIP.size){ const se=s.eps.find(x=>x.ser); if(se) e=se; }
   if(!s||!e||!e.ser) return TMFILES.map(f=>({f,e}));
   const L=s.eps.filter(x=>!x.ser);
   return TMFILES.map(f=>{
+    if(TMZIP.has(f)) return {f,e};
     const n=tmNum(f.name); if(!n) return {f,e};
     const re=new RegExp('(?:^|[^\\d])0*'+n+'\\s*강');
     const hit=L.filter(x=>re.test(x.t));
@@ -349,7 +370,8 @@ function tmPlan(){
   });
 }
 function tmPickedShow(){
-  const e=tmE(), sz=f=>`(${(f.size/1048576).toFixed(1)}MB)`;
+  const sz=f=>`(${(f.size/1048576).toFixed(1)}MB)`; let e=tmE();
+  if(TMZIP.size){ const s=tmS(), se=s&&s.eps.find(x=>x.ser); if(se) e=se; }
   if(!TMFILES.length){ $('#tmPicked').innerHTML=''; tmUpd(); return; }
   if(!e||!e.ser){ $('#tmPicked').innerHTML=TMFILES.map(f=>`${esc(f.name)} ${sz(f)}`).join('<br>'); tmUpd(); return; }
   const P=tmPlan(), k=P.filter(x=>!x.e.ser).length;
@@ -375,7 +397,7 @@ async function tmUnlink(m){
   const p=tmP(), ok=await tmSave(d=>{ const it=d.items.find(x=>x.id===p.id); it.materials=(it.materials||[]).filter(x=>!(x&&String(x.ep)===String(m.ep)&&x.url===m.url)); if(!it.materials.length) delete it.materials; }, `법문 강의자료 연결 빼기: ${p.id} ${m.name}`);
   tmShow(ok?'ok':'err',ok?`'${esc(m.name)}' 연결을 뺐습니다. 1~2분 뒤 사이트에서 단추가 사라집니다.`:'연결을 빼지 못했습니다. 잠시 뒤 다시 해 주세요.'); $('#tmSub').onchange(); }
 $('#tmGo').onclick=async()=>{
-  const p=tmP(), s=tmS(), e=tmE(); if(!p||!e||!TMFILES.length) return;
+  const p=tmP(), s=tmS(); let e=tmE(); if(!p||!e||!TMFILES.length) return;
   $('#tmGo').disabled=true; $('#tmProg').hidden=false; $('#tmProg').value=0;
   const done=[];
   try{
@@ -391,8 +413,8 @@ $('#tmGo').onclick=async()=>{
       const L=(it.materials||[]).filter(x=>x&&!done.some(n=>n.url===x.url)); it.materials=[...L,...done]; },
       `법문 강의자료 연결: ${p.id} ${e.t} — ${done.map(x=>x.name).join(', ')}`);
     if(!ok) throw new Error('파일은 올렸지만 강의에 연결하지 못했습니다. 관리자 화면 법문 재생목록의 \'강의자료\'에 '+done.map(x=>x.url).join(', ')+' 를 적어 주세요.');
-    TMFILES=[]; $('#tmFile').value=''; $('#tmPicked').textContent='';
-    const nk=done.filter(x=>!String(x.ep).startsWith('s-')).length;
+    TMFILES=[]; TMZIP=new Set(); $('#tmFile').value=''; $('#tmPicked').textContent='';
+    const nk=done.filter(x=>!String(x.ep).startsWith('s-')).length; if(nk<done.length) e={...e,ser:1};
     tmShow('ok',`다 됐습니다! ${e.ser&&nk?`강의마다 ${nk}개, 시리즈 전체 자료 ${done.length-nk}개를 붙였습니다.`:`「${esc(e.t)}」에 강의자료 ${done.length}개를 붙였습니다.`}<br>1~2분 뒤 <a href="/dhammatalk/?pl=${esc(p.id)}" target="_blank" rel="noopener">법문 바로 듣기 ↗</a>의 ${e.ser?'그 재생목록 위쪽 \'📄 강의자료 모아 보기\'에 나타납니다':'그 강의 줄에 \'📄 강의자료\' 단추가 나타나고, 재생목록 위쪽 \'📄 강의자료 모아 보기\'에도 들어갑니다'}.<br><b>관리자 화면이 다른 창에 열려 있다면, 법문 재생목록을 고치기 전에 꼭 새로고침(F5)해 주세요.</b>`);
     $('#tmSub').onchange();
   }catch(err){ tmShow('err',esc(err.message)); }
