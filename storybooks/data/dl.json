@@ -880,11 +880,11 @@
 "zip": 13221311
 },
 "Manimekhalai": {
-"n": 100,
-"pdf": 112481206,
-"pdfs": 12076306,
-"stories": 8,
-"zip": 112191455
+"n": 110,
+"pdf": 125107579,
+"pdfs": 13414912,
+"stories": 9,
+"zip": 124813926
 },
 "Manimekhalai/00-Synopsis-of-the-Story": {
 "n": 12,
@@ -925,6 +925,11 @@
 "n": 15,
 "pdf": 17877178,
 "zip": 17611095
+},
+"Manimekhalai/15-16-Adirai": {
+"n": 10,
+"pdf": 12887354,
+"zip": 12623011
 },
 "New-Jataka": {
 "n": 168,
