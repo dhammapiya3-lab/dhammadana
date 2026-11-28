@@ -1,0 +1,452 @@
+[
+ {
+  "img": "images/15-16-Adirai-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     115,
+     356,
+     690,
+     404
+    ],
+    "ko": "마니메칼라이: 자비의 발우",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     115,
+     404,
+     690,
+     440
+    ],
+    "ko": "업과 정결, 그리고 세상의 굶주림을 없애려는 길을 그린 이야기",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Adirai-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     324,
+     750,
+     362
+    ],
+    "ko": "아뿌뜨라의 다시 태어남",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     52,
+     362,
+     750,
+     440
+    ],
+    "ko": "거룩한 암소가 아기 아뿌뜨라를 길렀습니다. 그 업의 보답으로 아뿌뜨라는 암소의 황금 알에서 부미짠드라 왕의 아들로 다시 태어났습니다. 웨사카 보름날, 신비로운 성수의 보슬비가 그의 탄생을 알렸습니다.",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Adirai-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     415,
+     146,
+     752,
+     186
+    ],
+    "ko": "굶주리는 세상",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     415,
+     186,
+     752,
+     326
+    ],
+    "ko": "아라와나 아디갈 선인이 말했습니다. “까웨리 강이 흘러도 백성은 괴롭다. 거룩한 선물을 묵혀 두지 마라.”\n마니메칼라이는 발우를 들고 겸손한 비구니로서 뿌하르의 거리로 나섰습니다.",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Adirai-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     456,
+     286,
+     778,
+     326
+    ],
+    "ko": "참된 정숙을 찾아서",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     456,
+     326,
+     778,
+     440
+    ],
+    "ko": "발우의 신비한 힘을 깨우려면 첫 공양은 가장 맑은 이에게서 받아야 합니다. 까야산디까이가 아디라이의 집을 가리켰습니다. 그 덕이 구름까지 움직인다는 여인입니다.",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Adirai-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     415,
+     50,
+     765,
+     88
+    ],
+    "ko": "잃어버린 남편",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     415,
+     88,
+     765,
+     200
+    ],
+    "ko": "아디라이의 남편 사두완은 바다 건너 재물을 찾아 나섰다가 큰 난파를 당했습니다. 살아 돌아온 이들은 까웨리빳띠남에 그가 죽었다고 알렸습니다. 사두완은 부러진 돛대를 붙잡고 낯선 섬으로 떠내려갔습니다.",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Adirai-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     332,
+     650,
+     360
+    ],
+    "ko": "타지 않는 불",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     150,
+     360,
+     650,
+     448
+    ],
+    "ko": "사두완이 죽었다고 믿은 아디라이는 타오르는 장작불에 들어갔지만, 불길은 그녀를 태우지 않았습니다. 하늘의 목소리가 사두완이 살아 있으며 상인 짠드라닷따와 함께 돌아오리라고 알렸습니다.",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Adirai-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     65,
+     320,
+     402,
+     354
+    ],
+    "ko": "식인 부족 사이에서",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     65,
+     354,
+     402,
+     445
+    ],
+    "ko": "바닷가에 닿은 사두완은 벌거벗은 나가족에게 붙잡혔습니다. 뼈와 술독에 둘러싸인 사나운 우두머리는 고기와 여자보다 좋은 것이 있느냐고 따졌습니다.",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Adirai-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     195,
+     332,
+     605,
+     360
+    ],
+    "ko": "지혜가 어리석음을 이기다",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     195,
+     360,
+     605,
+     448
+    ],
+    "ko": "사두완은 그들의 말로 말했습니다. “술 취함과 살생은 악을 부르오. 생명은 꿈꾸는 이가 잠 속을 떠돌듯 몸에서 몸으로 옮겨 가오.” 성난 우두머리는 그 이치에 감복해 엎드렸습니다.",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Adirai-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     55,
+     752,
+     83
+    ],
+    "ko": "자비의 서원",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     430,
+     83,
+     752,
+     186
+    ],
+    "ko": "“고기 없이는 살 수 없소.” 우두머리가 울자 사두완이 일렀습니다. “저절로 죽은 것만 먹고, 난파한 이들을 보호하시오.” 나가족은 법을 따르겠다고 서원하며 보물을 바쳤습니다.",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/15-16-Adirai-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     205,
+     332,
+     600,
+     360
+    ],
+    "ko": "첫 공양",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     205,
+     360,
+     600,
+     446
+    ],
+    "ko": "사두완과 다시 만난 아디라이는 흠 없는 덕을 지녔습니다. 마니메칼라이가 그 앞에 서자, 아디라이는 굶주림의 괴로움이 세상에서 영원히 사라지기를 빌며 발우를 채웠습니다.",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
