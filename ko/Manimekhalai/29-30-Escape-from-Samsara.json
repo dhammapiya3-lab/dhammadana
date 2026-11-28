@@ -1,0 +1,782 @@
+[
+ {
+  "img": "images/29-30-Escape-from-Samsara-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     188,
+     318,
+     616,
+     358
+    ],
+    "ko": "마니메칼라이 서사시",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     188,
+     358,
+     616,
+     432
+    ],
+    "ko": "불교 논리와 성스러운 진리\n아라와나 아디갈 성자가 수행자 마니메칼라이에게 들려준 깊은 가르침",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-30-Escape-from-Samsara-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     430,
+     42,
+     702,
+     190
+    ],
+    "ko": "여러 종파의 갖가지 가르침에 실망한 젊은 비구니 마니메칼라이는 궁극의 진리를 찾았습니다.\n그녀는 존경받는 성자 아라와나 아디갈을 찾아가 흠 없는 부처님의 길을 풀어 주십사 청했습니다.",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-30-Escape-from-Samsara-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     8,
+     290,
+     40
+    ],
+    "ko": "직접 지각",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     510,
+     8,
+     650,
+     40
+    ],
+    "ko": "추론",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     112,
+     366,
+     688,
+     450
+    ],
+    "ko": "아라와나 아디갈은 바르게 아는 수단(알라와이)이 둘뿐이라고 가르쳤습니다.\n1. 직접 지각(빳짝카): 대상을 흠 없이 바로 경험하는 것\n2. 추론(아누마나): 결과에서 진리를 헤아리는 것. 연기를 보고 불이 있음을 아는 것처럼",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-30-Escape-from-Samsara-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     340,
+     44,
+     460,
+     100
+    ],
+    "ko": "5. 결론: “그러므로 불이 있다.”",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     310,
+     116,
+     490,
+     162
+    ],
+    "ko": "4. 적용: “이 산도 연기가 난다.”",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     306,
+     176,
+     494,
+     230
+    ],
+    "ko": "3. 보기: “연기 나는 곳엔 불이 있다. 부엌처럼.”",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     318,
+     246,
+     482,
+     292
+    ],
+    "ko": "2. 이유: “연기가 나기 때문이다.”",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     318,
+     312,
+     482,
+     358
+    ],
+    "ko": "1. 주장: “이 산에 불이 있다.”",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 14,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     290,
+     398,
+     510,
+     446
+    ],
+    "ko": "바른 추론에는 다섯 부분이 필요합니다.",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-30-Escape-from-Samsara-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     466,
+     100,
+     694,
+     376
+    ],
+    "ko": "추론은 그릇된 바탕 위에 서면 무너집니다.\n• 그릇된 주장: 직접 경험과 어긋남\n• 증명되지 않은 이유: 불확실하거나 모순된 매개념을 씀\n• 그릇된 보기: 필요한 성질이 없는 것에 견줌",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-30-Escape-from-Samsara-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     108,
+     376,
+     692,
+     448
+    ],
+    "ko": "세속 논리의 한계를 안 마니메칼라이는 바른 행실의 길을 택했습니다. 그녀는 삼보, 곧 붓다와 법과 승가에 예배하고, 오직 붓다의 법의 보호에 자신을 맡겼습니다.",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-30-Escape-from-Samsara-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     80,
+     62,
+     214,
+     384
+    ],
+    "ko": "아라와나 아디갈은 부처님께서 뚜시따 천상에서 내려오시어 보리수 아래 앉으신 일을 들려주었습니다.",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     588,
+     62,
+     722,
+     384
+    ],
+    "ko": "원수 마라를 이기고 모든 허물을 뽑아 버리신 부처님은 위대한 영웅이 되시어, 존재의 바다를 건너는 길을 보여 주셨습니다.",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-30-Escape-from-Samsara-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     124,
+     40,
+     684,
+     150
+    ],
+    "ko": "존재는 열두 가지 연기(nidāna, 조건)가 끝없이 도는 고리입니다. 무명에서 행이 생기고, 행에서 식이 생깁니다. 식은 정신과 물질을 이루고, 거기서 여섯 감각 기관이 자랍니다.",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-30-Escape-from-Samsara-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     160,
+     556,
+     340
+    ],
+    "ko": "고리는 쉼 없이 이어집니다.\n여섯 감각 기관에서 접촉이, 접촉에서 느낌이 생깁니다. 느낌은 갈애를, 갈애는 취착을 낳습니다. 취착에서 존재가, 존재에서 태어남이 생기고, 태어남은 병과 늙음과 죽음을 부릅니다.",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-30-Escape-from-Samsara-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     124,
+     302,
+     678,
+     432
+    ],
+    "ko": "이 차례는 피할 수 없습니다. 하나의 조건이 일어나면 다음이 따라옵니다.\n그러나 이 고리는 부술 수 있습니다. 무명이 사라지면 행이 사라집니다. 첫 고리를 끊으면 괴로움의 사슬 전체가 무너져 영원한 해탈, 열반(Nibbāna)에 이릅니다.",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-30-Escape-from-Samsara-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     558,
+     60,
+     720,
+     412
+    ],
+    "ko": "괴로움에서 벗어나려면 열 가지 악행을 피해야 합니다.\n• 몸: 살생, 도둑질, 삿된 음행\n• 말: 거짓말, 이간질, 거친 말, 쓸데없는 말\n• 마음: 탐욕, 성냄, 어리석음\n이것들은 반드시 중생을 낮은 세계에 묶습니다.",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-30-Escape-from-Samsara-12-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     126,
+     304,
+     676,
+     434
+    ],
+    "ko": "지혜로운 이는 계(sīla)와 보시(dāna)를 받아들여 악을 멀리합니다. 남이 잘되기를 바라는 자애와 친절과 기쁨을 닦으면 성냄과 어리석음이 사라져, 좋은 곳에 태어나거나 궁극의 해탈에 이릅니다.",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-30-Escape-from-Samsara-13-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     26,
+     514,
+     80
+    ],
+    "ko": "으뜸가는 가르침은 네 가지 진리 위에 섭니다.",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     86,
+     108,
+     250,
+     188
+    ],
+    "ko": "2. 괴로움의 원인 (집착·무명)",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     556,
+     108,
+     720,
+     188
+    ],
+    "ko": "3. 괴로움의 소멸 (지복·그침)",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     96,
+     270,
+     240,
+     348
+    ],
+    "ko": "1. 괴로움이 있음 (병)",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     560,
+     268,
+     720,
+     348
+    ],
+    "ko": "4. 그것을 없애는 길 (집착 없음)",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-30-Escape-from-Samsara-14-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     22,
+     660,
+     88
+    ],
+    "ko": "아라와나 아디갈은 물음에 답하는 네 가지 방법을 설명했습니다.",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     16,
+     362,
+     208,
+     428
+    ],
+    "ko": "1. 곧바로 답함 (바로 대답)",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     212,
+     362,
+     398,
+     428
+    ],
+    "ko": "2. 나누어 답함 (갈래지어 풂)",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     404,
+     362,
+     598,
+     428
+    ],
+    "ko": "3. 되물어 답함 (전제를 바로잡음)",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 15,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     604,
+     362,
+     794,
+     428
+    ],
+    "ko": "4. 침묵 (‘허공의 꽃은 늙었나 새것인가?’ 같은 엉터리 물음에)",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 13,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-30-Escape-from-Samsara-15-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     118,
+     336,
+     684,
+     448
+    ],
+    "ko": "이 밝은 가르침을 들은 마니메칼라이는 온전히 수행자의 옷을 입었습니다. 고행과 명상에 온몸을 바쳐, 태어남의 굴레에서 영원히 벗어나려고 길을 나섰습니다.",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/29-30-Escape-from-Samsara-16-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     8,
+     290,
+     40
+    ],
+    "ko": "직접 지각",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     510,
+     8,
+     650,
+     40
+    ],
+    "ko": "추론",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     118,
+     338,
+     682,
+     446
+    ],
+    "ko": "아라와나 아디갈은 바르게 아는 수단(알라와이)이 둘뿐이라고 가르쳤습니다.\n1. 직접 지각(빳짝카): 대상을 흠 없이 바로 경험하는 것\n2. 추론(아누마나): 결과에서 진리를 헤아리는 것. 연기를 보고 불이 있음을 아는 것처럼",
+    "cover": [
+     240,
+     222,
+     178
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
