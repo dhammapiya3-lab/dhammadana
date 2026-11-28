@@ -153,7 +153,7 @@ async function initMembers() {
   const adm = isAdm ? `<div class="st-tabs" role="tablist" aria-label="학습 자료실 보기"><button type="button" role="tab" id="stTabLib" aria-controls="stLibPanel" aria-selected="true">📚 학습 자료</button><button type="button" role="tab" id="stTabTr" aria-controls="stTrans" aria-selected="false" tabindex="-1">✏️ 번역 교정 <span class="small muted">(관리자)</span></button></div>` : '';
   const head = `<div class="prose" style="padding-bottom:0"><h1>학습 자료실</h1><p class="muted">허락받은 분만 보는 곳입니다. 이 곳의 자료는 다른 분께 넘기지 말아 주세요.</p>${who}</div>${adm}`;
   const trPanel = isAdm ? `<div id="stTrans" role="tabpanel" aria-labelledby="stTabTr" hidden></div>` : '';
-  const loadTx = () => window.ddTrans ? Promise.resolve() : new Promise((res, rej) => { const sc = document.createElement('script'); sc.src = '/assets/trans.js?v=20261128b'; sc.onload = res; sc.onerror = rej; document.head.appendChild(sc); });
+  const loadTx = () => window.ddTrans ? Promise.resolve() : new Promise((res, rej) => { const sc = document.createElement('script'); sc.src = '/assets/trans.js?v=20261128c'; sc.onload = res; sc.onerror = rej; document.head.appendChild(sc); });
   const trShow = on => { const tp = $('#stTrans'); if (!tp) return false;
     const a = $('#stTabLib'), b = $('#stTabTr'); a.setAttribute('aria-selected', !on); b.setAttribute('aria-selected', on); a.tabIndex = on ? -1 : 0; b.tabIndex = on ? 0 : -1;
     a.classList.toggle('on', !on); b.classList.toggle('on', on); tp.hidden = !on; const lp = $('#stLibPanel'); if (lp) lp.hidden = on;
@@ -187,7 +187,7 @@ async function initMembers() {
       <h3>주제</h3>${topics}
     </div></details>
     <section><div class="toolbar"><div><div class="muted small">자료 <span id="stCount">${items.length}</span>개</div></div>
-      <label class="small"><input id="stQ" type="search" placeholder="제목·지은이·본문으로 찾기" style="height:34px;padding:0 10px;border:1px solid var(--line);border-radius:8px;background:var(--paper);min-width:180px"></label>
+      <label class="small"><input id="stQ" type="search" autocomplete="off" placeholder="제목·지은이·본문으로 찾기" style="height:34px;padding:0 10px;border:1px solid var(--line);border-radius:8px;background:var(--paper);min-width:180px"></label>
       <label class="small">정렬 <select id="stSort"><option value="new">최근 등록순</option><option value="title">제목 가나다순</option></select></label></div>
       <div class="active-filters" id="stActive"></div><p class="small muted" id="stTx" hidden>책 본문에서 찾는 중…</p>
       <div class="grid" id="stGrid">${items.map(card).join('')}</div>
