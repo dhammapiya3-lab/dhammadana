@@ -49,7 +49,23 @@
       ]
     }
   ],
-  "braille": [],
+  "braille": [
+    {
+      "note": "",
+      "format": "BRF",
+      "mode": "file",
+      "url": "braille/DL-0037/DL-0037_점자.brf",
+      "site": "",
+      "org": "",
+      "sponsor": "",
+      "year": "",
+      "collection": "",
+      "made": "2026-11-26",
+      "updated": "2026-11-26",
+      "inner": "",
+      "files": ""
+    }
+  ],
   "series": "",
   "main": [
     "테라와다 불교사"
