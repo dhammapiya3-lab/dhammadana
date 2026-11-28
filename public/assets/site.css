@@ -1661,3 +1661,9 @@ nav.main a .ext{font-size:.92em;opacity:.75}
 .reflow.par2.par-multi > .par-or{border-left:1px solid var(--line);padding-left:1.2em;margin-left:-1.2em}
 .par-or:lang(th),.ps-o:lang(th),.fnpop-or:lang(th){font-family:'Noto Sans Thai','Noto Serif Thai','Leelawadee UI','Thonburi',Tahoma,var(--sans);line-height:1.9}
 .par-or:lang(th) p,.ps-o:lang(th){text-align:start!important}   /* 태국어는 낱말 사이 빈칸이 적어 양쪽 정렬하면 구절 사이가 크게 벌어짐 */
+
+/* 학습 자료실 '📚 학습 자료 | ✏️ 번역 교정' 탭 — 관리자 브라우저에서만 (운영자 요청, 2026-11-28) */
+.st-tabs{display:flex;gap:4px;border-bottom:2px solid var(--line);margin:14px 0 18px;flex-wrap:wrap}
+.st-tabs button{border:1px solid var(--line);border-bottom:0;background:var(--paper-2);color:var(--ink);padding:9px 16px;font-size:15px;border-radius:10px 10px 0 0;cursor:pointer;margin-bottom:-2px}
+.st-tabs button.on,.st-tabs button[aria-selected=true]{background:var(--paper);border-color:var(--line);border-bottom:2px solid var(--paper);font-weight:600;color:var(--robe)}
+.st-tabs button:focus-visible{outline:2px solid var(--robe);outline-offset:2px}

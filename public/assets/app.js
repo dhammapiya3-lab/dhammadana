@@ -149,8 +149,21 @@ async function initMembers() {
   const who = j.email ? `<p class="small muted">${esc(j.email)} 로 들어왔습니다 · <a href="/cdn-cgi/access/logout">나가기</a></p>` : '';
   // 번역 교정은 관리자만 — 관리자 열쇠가 있는 브라우저에서만 링크가 보임(운영자 요청, 2026-11-28). 들어가도 서버가 열쇠를 확인해야 글을 줌.
   let isAdm = false; try { isAdm = !!localStorage.getItem('dd-gh-token') || Object.keys(localStorage).some(k => /sveltia/i.test(k) && /"token"\s*:/.test(localStorage.getItem(k) || '')); } catch (e) {}
-  const adm = isAdm ? `<p class="small"><a href="/study/trans/">✏️ 번역 교정 (관리자)</a></p>` : '';
-  const head = `<div class="prose" style="padding-bottom:0"><h1>학습 자료실</h1><p class="muted">허락받은 분만 보는 곳입니다. 이 곳의 자료는 다른 분께 넘기지 말아 주세요.</p>${who}${adm}</div>`;
+  // 관리자 브라우저에서는 '📚 학습 자료 | ✏️ 번역 교정' 탭 — 번역 교정은 다른 페이지로 가지 않고 이 페이지 안에서(주소 #trans, #trans/자료ID/r123) (운영자 요청, 2026-11-28)
+  const adm = isAdm ? `<div class="st-tabs" role="tablist" aria-label="학습 자료실 보기"><button type="button" role="tab" id="stTabLib" aria-controls="stLibPanel" aria-selected="true">📚 학습 자료</button><button type="button" role="tab" id="stTabTr" aria-controls="stTrans" aria-selected="false" tabindex="-1">✏️ 번역 교정 <span class="small muted">(관리자)</span></button></div>` : '';
+  const head = `<div class="prose" style="padding-bottom:0"><h1>학습 자료실</h1><p class="muted">허락받은 분만 보는 곳입니다. 이 곳의 자료는 다른 분께 넘기지 말아 주세요.</p>${who}</div>${adm}`;
+  const trPanel = isAdm ? `<div id="stTrans" role="tabpanel" aria-labelledby="stTabTr" hidden></div>` : '';
+  const loadTx = () => window.ddTrans ? Promise.resolve() : new Promise((res, rej) => { const sc = document.createElement('script'); sc.src = '/assets/trans.js?v=20261128b'; sc.onload = res; sc.onerror = rej; document.head.appendChild(sc); });
+  const trShow = on => { const tp = $('#stTrans'); if (!tp) return false;
+    const a = $('#stTabLib'), b = $('#stTabTr'); a.setAttribute('aria-selected', !on); b.setAttribute('aria-selected', on); a.tabIndex = on ? -1 : 0; b.tabIndex = on ? 0 : -1;
+    a.classList.toggle('on', !on); b.classList.toggle('on', on); tp.hidden = !on; const lp = $('#stLibPanel'); if (lp) lp.hidden = on;
+    if (on && !tp._tx) loadTx().then(() => window.ddTrans.mount(tp, { prefix: 'trans' })).then(() => tp.classList.add('in-study')).catch(() => { tp.innerHTML = '<p class="muted">번역 교정 화면을 불러오지 못했습니다. 새로고침해 주세요.</p>'; });
+    return on; };
+  const trTabs = () => { if (!isAdm) return;
+    const go = on => { if (on) { if (!/^#trans(\/|$)/.test(location.hash)) location.hash = '#trans'; } else { history.pushState(null, '', location.pathname + location.search); window.dispatchEvent(new HashChangeEvent('hashchange')); } };
+    $('#stTabLib').onclick = () => go(false); $('#stTabTr').onclick = () => go(true);
+    $('.st-tabs', root).addEventListener('keydown', e => { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); const t = document.activeElement === $('#stTabLib') ? $('#stTabTr') : $('#stTabLib'); t.focus(); t.click(); } }); };
+  const isTrHash = () => isAdm && /^#trans(\/|$)/.test(location.hash);
   j.files = j.files.filter(f => !/\.gz$/i.test(f.key));
   const fileSet = new Set([...j.files.map(f => f.key), ...((j.catalog || {}).items || []).map(it => it.text).filter(Boolean)]), fileBy = Object.fromEntries(j.files.map(f => [f.key, f]));
   const items = ((j.catalog || {}).items || []).filter(it => it && it.title).map(it => ({ ...it, files: (it.files || []).filter(k => fileSet.has(k)) }));
@@ -159,7 +172,7 @@ async function initMembers() {
   const fileRow = f => { const n = f.key.split('/').pop(), au = /\.(mp3|m4a|wav)$/i.test(n); return `<li><span class="mb-ic">${icon(n)}</span><div class="mb-b"><a href="${url(f.key)}" target="_blank" rel="noopener">${esc(n)}</a> <span class="small muted">${size(f.size)}</span> · <a class="small" href="${url(f.key)}?dl">내려받기</a>${au ? `<audio controls preload="none" src="${url(f.key)}"></audio>` : ''}</div></li>`; };
   const looseHtml = () => { if (!loose.length) return ''; const g = {}; loose.forEach(f => { const i = f.key.lastIndexOf('/'); const d = i > 0 ? f.key.slice(0, i) : ''; (g[d] = g[d] || []).push(f); });
     return `<section class="study-loose"><h2 class="mb-h" style="margin-top:36px">분류하지 않은 자료</h2>` + Object.keys(g).sort((a, b) => a.localeCompare(b, 'ko')).map(d => `<section class="mb-group"><h3 class="small muted" style="margin:10px 0 0">📁 ${esc(d || '자료')}</h3><ul class="mb-list">${g[d].sort((a, b) => a.key.localeCompare(b.key, 'ko')).map(fileRow).join('')}</ul></section>`).join('') + '</section>'; };
-  if (!items.length && !loose.length) { root.innerHTML = head + '<p class="muted">아직 올라온 자료가 없습니다.</p>'; return; }
+  if (!items.length && !loose.length) { root.innerHTML = head + '<div id="stLibPanel" role="tabpanel"><p class="muted">아직 올라온 자료가 없습니다.</p></div>' + trPanel; trTabs(); const f = () => trShow(isTrHash()); window.addEventListener('hashchange', f); f(); return; }
   const cnt = (f, v) => items.filter(it => f === 'topic' ? (it.topics || []).includes(v) : it[f] === v).length;
   const chk = (f, v) => { const n = cnt(f, v); return `<label class="${n ? '' : 'zero'}"><input type="checkbox" data-sf="${f}" value="${esc(v)}">${esc(v)}<span class="n">${n}</span></label>`; };
   const others = (f, list) => [...new Set(items.map(it => it[f]).filter(v => v && !list.includes(v)))];
@@ -168,7 +181,7 @@ async function initMembers() {
     <div class="cover">${it.cover && fileSet.has(it.cover) ? `<img class="cover-img" src="${url(it.cover)}" alt="${esc(it.title)} 표지" loading="lazy">` : `<div class="cover-ph">${esc(it.title)}</div>`}</div>
     <div class="t">${esc(it.title)}</div><div class="a">${esc([it.author, it.translator].filter(Boolean).join(' | '))}</div>
     <div class="fmt">${[it.publisher, it.book_type].filter(Boolean).map(x => `<span>${esc(x)}</span>`).join('')}</div>${it.text ? `<div class="small st-cardread" role="link" tabindex="0" data-read="${esc(it.id)}" style="margin-top:4px;color:var(--robe);text-decoration:underline;cursor:pointer">📖 사이트에서 읽기</div>` : ''}<div class="snip small muted" hidden></div></a>`;
-  root.innerHTML = head + (items.length ? `<div class="lib" style="margin-top:18px"><details class="filter-toggle" open><summary>찾아보기</summary><div class="filters">
+  root.innerHTML = head + (isAdm ? '<div id="stLibPanel" role="tabpanel" aria-labelledby="stTabLib">' : '') + (items.length ? `<div class="lib" style="margin-top:18px"><details class="filter-toggle" open><summary>찾아보기</summary><div class="filters">
       <h3>출판사</h3>${[...cfg.publishers, ...others('publisher', cfg.publishers)].map(v => chk('publisher', v)).join('')}
       <h3>책 형식</h3>${[...cfg.book_types, ...others('book_type', cfg.book_types)].map(v => chk('book_type', v)).join('')}
       <h3>주제</h3>${topics}
@@ -179,7 +192,8 @@ async function initMembers() {
       <div class="active-filters" id="stActive"></div><p class="small muted" id="stTx" hidden>책 본문에서 찾는 중…</p>
       <div class="grid" id="stGrid">${items.map(card).join('')}</div>
       <p class="muted" id="stEmpty" hidden>조건에 맞는 자료가 없습니다. 찾아보기를 줄여 보세요.</p>
-    </section></div>` : '') + looseHtml() + `<div id="stDetail" hidden></div>`;
+    </section></div>` : '') + looseHtml() + `<div id="stDetail" hidden></div>` + (isAdm ? '</div>' + trPanel : '');
+  trTabs();
   const byId = Object.fromEntries(items.map(it => [it.id, it]));
   // 본문 찾기: Claude 가 뽑아 둔 본문 글(_text/…txt)을 찾는 순간에만 받아 옴
   const TX = {}, TXF = {}; let txLoading = false;
@@ -226,6 +240,7 @@ async function initMembers() {
   if (matchMedia('(max-width:520px)').matches && $('.filter-toggle', root)) $('.filter-toggle', root).open = false;
   const detail = () => {
     const hp = decodeURIComponent(location.hash.slice(1)).split('/');
+    if (trShow(isTrHash())) return;  // 번역 교정 탭 — 그 안의 주소는 trans.js 가 맡음
     const it = byId[hp[0]], d = $('#stDetail');
     const parts = [$('.lib', root), $('.study-loose', root)].filter(Boolean);
     if (!it) { d.hidden = true; parts.forEach(x => x.hidden = false); return; }
