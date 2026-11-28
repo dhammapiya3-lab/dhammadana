@@ -1,0 +1,125 @@
+{
+  "id": "DL-0042",
+  "title": "테라와다 불교의 신행생활 (녹취 법문집)",
+  "subtitle": "",
+  "cover": "/uploads/테라와다 불교의 신행생활_표지(A4).jpg",
+  "byline": "아짠 빤냐와로 마하테로 법문",
+  "translator": "",
+  "teacher": "panyavaro",
+  "co_teachers": [],
+  "country": [
+    "한국"
+  ],
+  "provider": "buddhayana",
+  "press": false,
+  "provider_chip": false,
+  "partner_chips": [
+    "theravada-kr"
+  ],
+  "paper": "",
+  "paper_url": "",
+  "stores": [],
+  "videos": [
+    {
+      "name": "",
+      "url": "https://youtube.com/playlist?list=PLyVKSjiM41EJ4IZuMsPE2oXiexOa8AvjR&si=qhEzKOHN9z8jDw73"
+    }
+  ],
+  "book_type": "해설서",
+  "original_title": "",
+  "original_language": [],
+  "content_languages": [],
+  "original_source": "",
+  "parallel_editions": [],
+  "originals": [],
+  "braille": [],
+  "series": "",
+  "main": [
+    "테라와다불교 입문서"
+  ],
+  "topics": [],
+  "description": "2013년 담마스쿨 1학기에 설하신 '테라와다 불교의 신행생활' 법문을 녹취하여 엮은 법문집입니다.",
+  "author_intro": "한국테라와다불교 초대 이사장 아짠 빤냐와로 마하테로는 1983년 해인사로 출가해 뿐냐산또(도성) 큰스님을 은사로 사미계(수계 법명: 진용)를 수지했다. 1987년부터 부처님 원음을 찾아 스리랑카와 태국에서 수행하다가 1988년 4월 10일 태국 왓람쁭 사원 아짠 통 큰스님을 은사로 테라와다 비구계를 받았다.\n\n현재 울주 붓다의길따라 선원장이자 (사)한국테라와다불교 상가 의장으로서 테라와다불교 전법과 수행지도에 전념하고 있다.",
+  "translator_intro": "",
+  "translator_intro_title": "",
+  "contents": "담마스쿨 개강법회_「테라와다 불교의 신행 생활」 2\n빠릿따(paritta, 보호경 혹은 보호게송) 9\n빨리어 독송법 28\n빨리어 발음법_테라와다 불교신자가 되는 조건 39\n「삼귀의 삼창」, 절 수행법 50\n복습 및 시험문제 69\n시험문제 풀이, 테라와다의 가르침·진심·기준점 86\n「계를 청하는 방법」 104\n「팔재계」, 오후불식-공양방법 126\n「불교기」, 바른 직업의 기준조건 143\n「붓다의날」의 의미와 재가불자들이 특별하게 하는 일 160\n수다원에 이르는 길, 삼보에 대한 확신이 들려면 170\n테라와다 불교의 제사의례 186\n패엽경-패엽 손질하는 법, 사경 방법 등 204\n불교도들의 3가지 생활 패턴. 테라와다 가사 만드는 방법, 음식 공양방법,\n공양을 올릴 수 있는 품목들 222\n테라와다 스님들에게 필요한 네 가지 물품-거주처, 의약품 241\n까티나 가사 258\n공덕을 만드는 10가지 방법 274",
+  "editions": [
+    {
+      "label": "초판",
+      "label_display": "",
+      "current": true,
+      "public": true,
+      "page_count": 288,
+      "published": "2024년 12월 25일",
+      "publisher_print": "붓다의 길따라 선원",
+      "publisher_print_show": "",
+      "isbn": "",
+      "published_ebook": "",
+      "publisher_ebook": "",
+      "ebook_note": "",
+      "isbn_ebook": "",
+      "changes": "",
+      "hide_update": false,
+      "pdf": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_print": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "pdf_cover": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "epub": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "hwp": {
+        "mode": "none",
+        "url": "",
+        "site": "",
+        "created": ""
+      },
+      "reader": false,
+      "sources": [
+        {
+          "file": "pdf",
+          "url": "https://theravada.co.kr/106/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjc6ImtleXdvcmQiO3M6MTk6Iu2FjOudvOyZgOuLpCDrtojqtZAiO30%3D&bmode=view&idx=167998474&t=board",
+          "checked": "2026년 11월 28일",
+          "archive": ""
+        },
+        {
+          "file": "hwp",
+          "url": "https://theravada.co.kr/106/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjc6ImtleXdvcmQiO3M6MTk6Iu2FjOudvOyZgOuLpCDrtojqtZAiO30%3D&bmode=view&idx=167998474&t=board",
+          "checked": "2026년 11월 28일",
+          "archive": ""
+        }
+      ],
+      "collection": "(사)한국테라와다불교 홈페이지",
+      "collected": "",
+      "permission_status": "confirmed",
+      "notice": "* (사)한국테라와다불교 홈페이지에 공개 배포된 법보시 자료이며, 상가 의장이신 아짠 빤냐와로 스님께도 허락을 따로 구했습니다. 법보시해주신 (사)한국테라와다불교 상가에 감사드립니다.\n\n* 사용 조건(라이선스)에 대해서는 아짠 빤냐와로 스님께 자문을 구해 표기하였습니다. 내용을 그릇되게 왜곡하지 않는 한에서 수정해서 사용해도 된다고 하셨습니다.",
+      "permission_note": "",
+      "permission_image": "",
+      "permissions": [],
+      "note": ""
+    }
+  ],
+  "audiobook": null,
+  "license": "CC BY-NC-SA",
+  "added": "2026-11-28",
+  "order": null,
+  "hidden": false,
+  "no_copy": false,
+  "hide_update": false
+}
