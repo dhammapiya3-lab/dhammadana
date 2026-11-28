@@ -1,0 +1,617 @@
+[
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     410,
+     124,
+     732,
+     224
+    ],
+    "ko": "마니메칼라이 서사시",
+    "cover": [
+     240,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     410,
+     224,
+     732,
+     346
+    ],
+    "ko": "업과 정의, 그리고\n열반(Nibbāna)으로 가는 길",
+    "cover": [
+     240,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 20,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     536,
+     252,
+     756,
+     292
+    ],
+    "ko": "깨어남",
+    "cover": [
+     240,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     536,
+     292,
+     756,
+     440
+    ],
+    "ko": "깨어난 마니메칼라이는 윗자다라의 칼에 죽은 왕자를 봅니다. 기둥의 신 뚜와디깐이 둘은 숱한 전생에 부부였다고 밝힙니다. 죽음은 업의 결과일 뿐입니다.",
+    "cover": [
+     240,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     538,
+     98,
+     740,
+     207
+    ],
+    "ko": "원인과 결과\n과거: 라훌라 왕자가 선인의 아침 공양이 늦었다고 성나 요리사를 벱니다.",
+    "cover": [
+     240,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     536,
+     288,
+     754,
+     402
+    ],
+    "ko": "현재: 업의 빚이 드러납니다. 우다야꾸마라 왕자가 칼에 쓰러집니다. 어떤 신도 지난 업을 지울 수 없습니다.",
+    "cover": [
+     240,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     296,
+     292,
+     536,
+     322
+    ],
+    "ko": "예언",
+    "cover": [
+     112,
+     20,
+     22
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     296,
+     322,
+     536,
+     428
+    ],
+    "ko": "1. 쫄라 왕에게 갇힘\n2. 아라와나 아디갈 선인이 풀어 줌\n3. 사와깜으로 길을 떠남\n4. 깐찌에서 굶주린 이들을 먹임",
+    "cover": [
+     112,
+     20,
+     22
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     52,
+     104,
+     300,
+     174
+    ],
+    "ko": "궁극의 해탈",
+    "cover": [
+     240,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     52,
+     174,
+     300,
+     412
+    ],
+    "ko": "아라와나 아디갈의 가르침으로 마니메칼라이는 법을 통해 업의 짐을 벗습니다. 북쪽 마가다에 남자로 다시 태어나 부처님의 첫 제자가 되고 열반(Nibbāna)을 얻습니다.",
+    "cover": [
+     240,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     248,
+     50,
+     556,
+     90
+    ],
+    "ko": "세상의 법이 깨어나다",
+    "cover": [
+     240,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     248,
+     90,
+     556,
+     226
+    ],
+    "ko": "왕자가 죽은 뒤 고행자들이 쫄라 왕에게 간언합니다. 그들은 비유를 들어, 세상의 왕도 우주의 정의를 따라 죄 있는 애욕을 엄하게 벌해야 한다고 말합니다.",
+    "cover": [
+     240,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     288,
+     44,
+     512,
+     152
+    ],
+    "ko": "정절의 힘",
+    "cover": [
+     240,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 30,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     30,
+     334,
+     366,
+     436
+    ],
+    "ko": "마루디: 정결했지만 축제에 마음을 빼앗김. 자신을 희롱한 자를 까깐단 왕을 통해 벌함.",
+    "cover": [
+     240,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     436,
+     334,
+     772,
+     436
+    ],
+    "ko": "위사까이: 흔들림 없는 정절. 맑은 기운이 덤벼드는 왕자의 팔을 허공에 멈추게 함.",
+    "cover": [
+     240,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     440,
+     18,
+     782,
+     64
+    ],
+    "ko": "왕의 의무",
+    "cover": [
+     112,
+     20,
+     22
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     440,
+     64,
+     782,
+     188
+    ],
+    "ko": "옛 쫄라 왕들은 정숙한 여인을 엄하게 지켰습니다. 왕자가 애욕에 마음을 더럽히자 까깐단 왕은 망설이지 않고, 법을 지키려고 자기 아들을 처형했습니다.",
+    "cover": [
+     112,
+     20,
+     22
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     338,
+     782,
+     374
+    ],
+    "ko": "다음 생을 위한 재물",
+    "cover": [
+     240,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 24,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     28,
+     374,
+     782,
+     440
+    ],
+    "ko": "위사까이와 담마닷따는 세속의 혼인을 버렸습니다. 예순에 다시 만난 그녀는 그에게 일렀습니다. 젊음과 아름다움은 시들고, 큰 보시만이 다음 생까지 우리를 따라옵니다.",
+    "cover": [
+     240,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     484,
+     118,
+     714,
+     188
+    ],
+    "ko": "모든 괴로움의 뿌리",
+    "cover": [
+     112,
+     20,
+     22
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     484,
+     188,
+     714,
+     348
+    ],
+    "ko": "지혜로운 이들은 다섯 가지 악을 꾸짖습니다. 음주, 거짓말, 도둑질, 살생은 다스릴 수 있습니다. 고삐 풀린 애욕이 그 바탕입니다. 애욕을 없애기 전에는 지옥을 피할 수 없습니다.",
+    "cover": [
+     112,
+     20,
+     22
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     268,
+     62,
+     352,
+     108
+    ],
+    "ko": "살생",
+    "cover": [
+     46,
+     42,
+     40
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     270,
+     114,
+     354,
+     162
+    ],
+    "ko": "도둑질",
+    "cover": [
+     46,
+     42,
+     40
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     256,
+     168,
+     382,
+     218
+    ],
+    "ko": "거짓말",
+    "cover": [
+     46,
+     42,
+     40
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     266,
+     224,
+     384,
+     280
+    ],
+    "ko": "음주",
+    "cover": [
+     46,
+     42,
+     40
+    ],
+    "align": "center",
+    "em": 22,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   },
+   {
+    "rect": [
+     246,
+     342,
+     466,
+     404
+    ],
+    "ko": "애욕",
+    "cover": [
+     46,
+     42,
+     40
+    ],
+    "align": "center",
+    "em": 40,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/21-22-Conversion-of-the-Queen-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     28,
+     344,
+     778,
+     384
+    ],
+    "ko": "바로 선 정의",
+    "cover": [
+     240,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 26,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     28,
+     384,
+     778,
+     442
+    ],
+    "ko": "꼬왈란의 딸이라는 말을 들은 왕은 죽은 아들을 위해 눈물을 흘리지 않습니다. “윗자다라가 내 할 일을 했을 뿐이다.” 왕은 아들을 화장하고 마니메칼라이를 보호하라고 명합니다.",
+    "cover": [
+     240,
+     226,
+     192
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
