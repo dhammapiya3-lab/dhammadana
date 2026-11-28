@@ -1,16 +1,23 @@
-Manimekhalai 13-14-Aputra 15 장
+Manimekhalai 15-16-Adirai 10 장
 자동 검수: 문제 의심 0 곳
-R2 에 올림: 77 개 / 한글판 이야기 331 편
+R2 에 올림: 67 개 / 한글판 이야기 332 편
 새 그림책: 올린 그림 0 장
-공개 주소 확인: 200 1224501바이트
-이야기 Manimekhalai/13-14-Aputra {'pdf': 17877178, 'zip': 17611095, 'n': 15}
-책 Manimekhalai {'pdf': 112481206, 'pdfs': 12076306, 'zip': 112191455, 'stories': 8, 'n': 100}
+공개 주소 확인: 200 1352019바이트
+이야기 Manimekhalai/15-16-Adirai {'pdf': 12887354, 'zip': 12623011, 'n': 10}
+책 Manimekhalai {'pdf': 125107579, 'pdfs': 13414912, 'zip': 124813926, 'stories': 9, 'n': 110}
 내려받기 파일: 2 묶음 새로 만듦
-글로 보기: 331 이야기
+글로 보기: 332 이야기
+Way-Beyond: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="6FEKgRr'
 18-Verses-2
+Light-of-Asia: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="ibwc4oO'
 08-Light-of-Asia
+Four-Rich-Men: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="KyZhk64'
 04-Kalavaliya-the-Treasurer
+Jatakamala: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="3L4evDE'
 34-Woodpecker
+Rasavahini: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="vU8yYbB'
 20-The-Brahmin-Soma
+Manimekhalai: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="XpKJdjz'
 29-30-Escape-from-Samsara
+Dhammapada: 첫 그림 주소가 그림이 아님 — 상태 200, 종류 text/html, 앞부분 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="utf8">\n  <meta name="viewport" content="width=device-width,initial-scale=1.0">\n  <script nonce="VShcuan'
 13-11
