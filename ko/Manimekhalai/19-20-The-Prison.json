@@ -1,0 +1,297 @@
+[
+ {
+  "img": "images/19-20-The-Prison-01-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     150,
+     306,
+     655,
+     352
+    ],
+    "ko": "마니메칼라이 서사시",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 28,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   },
+   {
+    "rect": [
+     150,
+     352,
+     655,
+     426
+    ],
+    "ko": "제19·20편: 법의 길과 집착의 값\n보시와 변장과 운명의 이야기",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-02-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     38,
+     344,
+     752,
+     448
+    ],
+    "ko": "잘못 알아본 모습 때문에 세 갈래 길이 엇갈립니다.\n• 마니메칼라이: 법을 따르는 불교 비구니\n• 우다야꾸마라 왕자: 비구니를 향한 눈먼 애욕에 끌림\n• 깐짜나: 잃어버린 아내 까야산디까이를 찾는 윗자다라",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-03-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     38,
+     338,
+     765,
+     450
+    ],
+    "ko": "우다야꾸마라 왕자의 끈질긴 추적을 피하려고 마니메칼라이는 모습을 바꿉니다. 까야산디까이의 모습을 한 그녀는 다함 없는 신비로운 발우를 들고 온 도성의 굶주린 이들을 먹이러 나섭니다.",
+    "cover": [
+     110,
+     18,
+     20
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-04-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     506,
+     10,
+     796,
+     164
+    ],
+    "ko": "그녀는 삼엄하게 지키는 나라의 감옥에 들어갑니다. 깊은 자비로 그릇 하나에서 괴로워하는 죄수 모두를 먹이자, 이 놀라운 기적을 본 간수들이 왕에게 달려가 알립니다.",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 16,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-05-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     45,
+     84,
+     290,
+     412
+    ],
+    "ko": "마완낄리 왕이 그녀를 부릅니다. 발우가 '코끼리 굶주림'도 낫게 함을 보인 그녀는 소원을 청합니다. '감옥을 허물고, 법을 따르는 이들의 집을 지어 주소서.' 그녀의 덕에 감동한 왕은 그대로 바꾸라고 명합니다.",
+    "cover": [
+     22,
+     88,
+     58
+    ],
+    "align": "center",
+    "em": 18,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-06-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     200,
+     344,
+     610,
+     446
+    ],
+    "ko": "잔혹의 집이 보시의 성소가 됩니다. 그곳에 진리를 모신 사당과 음식을 짓는 집, 선행을 닦는 방들이 들어섭니다. 그러나 세속의 집착이 이 평화를 위협합니다.",
+    "cover": [
+     22,
+     26,
+     70
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-07-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     205,
+     290,
+     610,
+     446
+    ],
+    "ko": "우다야꾸마라 왕자는 그녀를 차지하려고 밖에서 기다립니다.\n그때 깐짜나가 와서 자기 아내라고 믿는 여인을 찾아냅니다. 그녀가 왕자와 이야기하는 것을 보자 독한 질투가 뿌리내립니다.",
+    "cover": [
+     110,
+     18,
+     20
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-08-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     10,
+     28,
+     352,
+     222
+    ],
+    "ko": "마니메칼라이는 왕자를 애욕에서 건지려 합니다. 늙은 여인을 가리키며 그녀는 젊은 아름다움이 살덩이와 장신구가 빚은 허깨비라고 일깨웁니다. 몸은 반드시 늙어 무너집니다.",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-09-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     160,
+     352,
+     640,
+     450
+    ],
+    "ko": "한밤중에 왕자가 그녀를 차지하러 돌아옵니다.\n왕자가 아내의 숨은 정부라는 망상에 사로잡힌 깐짜나는 어둠 속에서 칼을 뽑아 왕자를 베어 죽입니다.",
+    "cover": [
+     20,
+     58,
+     36
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": true
+   }
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-10-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     55,
+     268,
+     426,
+     446
+    ],
+    "ko": "깐짜나가 그녀를 데리고 달아나려 하자 신비로운 신상이 깨어납니다. “다가오지 마라! 이는 마니메칼라이다. 네 진짜 아내는 두르가 여신의 노여움을 사서 잡아먹혔다. 지난 업이 이 비극을 불렀다.”",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 17,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ },
+ {
+  "img": "images/19-20-The-Prison-11-Original.jpg",
+  "boxes": [
+   {
+    "rect": [
+     55,
+     48,
+     316,
+     428
+    ],
+    "ko": "업의 바퀴는 누구도 비껴가지 않습니다.\n\n• 애욕은 왕자를 파멸로 이끌었습니다.\n\n• 망상은 깐짜나를 살인자로 만들었습니다.\n\n• 법은 마니메칼라이가 감옥을 영원한 보시의 등불로 바꾸게 했습니다.",
+    "cover": [
+     240,
+     228,
+     200
+    ],
+    "align": "center",
+    "em": 19,
+    "shape": "box",
+    "manual": true,
+    "whole": true,
+    "dark": false
+   }
+  ]
+ }
+]
