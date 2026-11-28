@@ -9,7 +9,7 @@
 ③ 로마자 — 빠알리 사전(DPD 낱말·변화형, public/data/pali-words.txt)과 모든 책의 로마자에 없는 꼴,
    그리고 점·막대를 뺀 꼴은 같은데 부호가 다른 꼴이 모든 책에서 훨씬 많이 쓰이는 낱말(Puraṇa / Purāṇa).
 ④ 같은 문장 되풀이 — 가까운 곳(같은 장)에 같거나 거의 같은 문장이 다시 실린 곳(독송·게송 줄은 뺌).
-⑤ 문장 부호 — 겹친 부호(?. !. ..), 부호 앞 빈칸, 쉼표 뒤 빈칸 없음, 문단 안 괄호·따옴표 짝.
+⑤ 문장 부호 — 겹친 부호(?. !. ..), 부호 앞 빈칸, 쉼표 뒤 빈칸 없음, 닫는 괄호 뒤 빈칸 빠짐(2026-11-28), 문단 안 괄호·따옴표 짝.
 ⑥ 문체 섞임 — 한 장 안에서 '-습니다'와 '-다'가 섞인 곳의 적은 쪽 문장(따옴표 안 글은 뺌). 여쭐 곳.
 
 쓰는 법: python3 tools/proof_check.py <ID> [--out 결과.tsv]
@@ -192,6 +192,29 @@ for pg, ch, kind, t in lines:
             if tk.start + s0 == m.start() and tk.form == '다' and (tk.tag == 'EF' or (tk.tag == 'EC' and i_ and toks[i_ - 1].tag in ('EP', 'VCP'))): hit = True
         if hit:
             add('⑤ 마침표 빠짐', pg, t[max(0, m.start() - 15):m.end() + 10], '', "문장을 끝내는 '-다' 뒤에 부호가 없음", t[max(0, m.start() - 50):m.end() + 40])
+# 닫는 괄호 뒤 빈칸 빠짐 — '(sīla)그는'처럼 괄호 뒤에 조사·어미·접미사가 아닌 새 낱말이 바로 붙은 곳
+# (괄호 앞 낱말과 이어 형태소 분석: '산문출송(山門黜送)해야' → 하(XSV) 라 맞음, '열반(涅槃)이다' → 이(VCP))
+OKTAG = re.compile(r'^(J|VCP|XS|E|XPN|ETM|ETN)')
+for pg, ch, kind, t in lines:
+    for m in re.finditer(r'\)(?=[가-힣A-Za-z])', t):
+        o = t.rfind('(', 0, m.start())
+        if o < 0 or t.count('(', 0, m.start()) <= t.count(')', 0, m.start()): continue   # '1)'·'가)' 같은 번호
+        pre = re.search(r'[가-힣A-Za-z]*$', t[:o]).group()
+        aft = re.match(r'[가-힣A-Za-z]+', t[m.end():]).group()
+        if re.match(r'[A-Za-z]', aft) and re.search(r'[A-Za-z]$', pre or 'x'): continue   # 로마자 낱말 사이 괄호 (sutta(s))
+        if t[o:m.end()] in ('(사)', '(주)', '(재)'): continue   # (사)한국테라와다불교 같은 법인 표시
+        ok = False
+        if re.search(r'\d\)$', t[:m.end()]) or re.search(r'\d', t[o:m.end()]):
+            if kiwi.tokenize('삼' + aft)[1:2] and kiwi.tokenize('삼' + aft)[1].tag in ('NNB', 'NR'): ok = True   # 1870)년
+        # 괄호 앞이 한글이면 그 낱말과, 아니면(로마자·한자·빈칸) 받침 있는 말·없는 말 대신 넣어 봄 — 조사 꼴(를/을)이 받침에 따라 다르므로
+        heads = ([pre] if re.fullmatch(r'[가-힣]+', pre or '') else []) + ['사람', '나무']
+        for hd in heads:
+            if ok: break
+            for tk in kiwi.tokenize(hd + aft):
+                if tk.start < len(hd) < tk.start + tk.len: ok = True; break     # 한 낱말 안 (괄호가 낱말 가운데)
+                if tk.start == len(hd): ok = bool(OKTAG.match(tk.tag)); break
+        if not ok:
+            add('⑤ 괄호 뒤 빈칸', pg, t[max(0, o - 8):m.end() + 8], '', f"닫는 괄호 바로 뒤에 '{aft[:6]}'(조사·어미가 아님)가 붙어 있음 — 빈칸이 빠졌을 수 있음", t[max(0, o - 40):m.end() + 30])
 # 쌍점 앞 빈칸은 책마다 꼴이 다름 — 적게 쓴 꼴만
 c1 = [(pg, t, m) for pg, ch, k, t in lines for m in re.finditer(r'[가-힣A-Za-z)] :(?=\s)', t)]
 c2 = [(pg, t, m) for pg, ch, k, t in lines for m in re.finditer(r'[가-힣A-Za-z)]:(?=\s)', t)]
@@ -236,7 +259,7 @@ for pg, ch, kind, t in lines:
 def noquote(t): return re.sub(r'“[^”]*”|‘[^’]*’|「[^」]*」', '', t)
 def style(s):
     s = s.rstrip(' ”’)')
-    if re.search(r'[니]다[.!]$', s) and len(s) >= 3 and jong(s[-4] if s.endswith(('.', '!')) else s[-3]) == 17: return 'hab'
+    if re.search(r'[니]다[.!]$', s) and len(s) >= 4 and jong(s[-4] if s.endswith(('.', '!')) else s[-3]) == 17: return 'hab'
     if re.search(r'(니까\?|세요[.!]|시오[.!]|까요\?|어요[.!]|아요[.!]|지요[.!]|죠[.!?]|에요[.!]|예요[.!])$', s): return 'hab'
     if re.search(r'다[.!]$|라[.!]$|냐\?$|가\?$|까\?$|는가\?$', s): return 'han'
     return None
